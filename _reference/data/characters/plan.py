@@ -280,8 +280,12 @@ def acquirable(it, L, start, profs):
         if s["kind"] == "quest" and ((s.get("level") or 0) >= 60 or s.get("zone") in ENDGAME or s.get("quest") in COMPLETED):
             continue
         lo, hi = IP.window(it, s)
-        if s["kind"] == "auction":   # listed now: the next few levels only (listings change every hour)
-            hi = start + LOOKAHEAD
+        if s["kind"] == "auction":   # listed now: buy it now (wear it at its level), only for the next few levels (listings change hourly)
+            if (it.get("req") or 0) > start + LOOKAHEAD:
+                continue
+            if GOLD is not None and (s.get("price") or 0) > GOLD:   # more than the character has: not part of the plan
+                continue
+            lo, hi = start, start + LOOKAHEAD
         if s["kind"] == "craft":
             have = profs.get(s["profession"])
             # a recipe the character knows is craftable now (Forever asks no skill to craft a known recipe: Arcea knew and could make
@@ -766,7 +770,10 @@ def consumable_lines(level, wl, profs, school_share):
             if have is not None and have >= rs[sp][1]:
                 reag = reagents_of(sp)
                 mats = sum((unit_price(i) or 0) * n for _, n, i in reag) if PRICES else None
-                how, cost = f"make it ({prof} {rs[sp][1]})", (mats if mats else cost)
+                if mats and (cost is None or mats <= cost):
+                    how, cost = f"make it ({prof} {rs[sp][1]})", mats
+                elif mats:
+                    how = f"buy (cheaper than making it: {AH.money(mats)} in materials)"
             elif have is not None:
                 how = f"buy (you make it at {prof} {rs[sp][1]}; you have {have})"
         per_hour = cost * 60 / minutes if cost and minutes else None

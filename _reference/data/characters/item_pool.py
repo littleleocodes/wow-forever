@@ -322,13 +322,16 @@ def pool(cls, faction, school_share, region="us"):
             if "soldBy" in s:
                 sells.setdefault(s["soldBy"].get("npcId"), set()).update(list(t)[0] for t in x.get("sources") or [])
     quartermasters = {n for n, kinds in sells.items() if kinds & {"rep", "pvp"}}
+    # the Classic required level where the Forever database lists none (2026-11-09: Holy Shroud, Classic level 27, read as wearable
+    # at 26 because its reqLvl is missing)
+    classic_req = {int(r["item"]): int(r["required_level"] or 0) for r in csv.DictReader(open(RAW / "item_names.csv", encoding="utf-8"))}
     out = []
     for it in items:
         st = lab_stats(it, school_share)
         if not st and it.get("type") != 14:
             continue
         srcs = []
-        req = it.get("reqLvl") or 0
+        req = it.get("reqLvl") or classic_req.get(it["id"], 0)
         for s in it.get("sources") or []:
             if "quest" in s:
                 q = s["quest"]
