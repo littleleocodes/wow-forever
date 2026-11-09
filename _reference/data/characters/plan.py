@@ -919,10 +919,16 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
                     if lv + LOOKAHEAD < max(e["get_at"], lv) <= lv + 14]
     CTX["enchants"] = enchant_lines(worn, ench, profs, wl, at, lv)
     o += ["### Enchant", ""] + (enchant_lines(worn, ench, profs, wl, at, lv) or ["- Nothing worth 0.1% faster kills at your Enchanting skill."]) + [""]
-    cl = consumable_lines(lv, wl, profs, cfg["school_share"])
+    tmin, tlv = trip(cfg, snap, at, lv)
+    CTX["trip"] = {"minutes": tmin, "level": tlv}
+    cl = consumable_lines(lv, wl, profs, cfg["school_share"], tmin, at)
     if cl:
         o += ["### Oils, food and elixirs", "", "The best three of each kind you can use now, with today's prices"
-              + (f" (auction house snapshot {PRICES.age_hours():.1f} hours old)" if PRICES and PRICES.age_hours() is not None else "") + ".", ""] + cl + [""]
+              + (f" (auction house snapshot {PRICES.age_hours():.1f} hours old)" if PRICES and PRICES.age_hours() is not None else "")
+              + f". \"For your trip\": enough to keep it up for about {tmin / 60:.1f} hours of play, "
+              + (f"to your next training at level {tlv}" if tlv else "your set time between town visits")
+              + " (character.json \"hours_out\" sets your own). \"Earns its price back\": the play minutes an hour of it saves against "
+              "the play minutes an hour of it costs to earn at your income.", ""] + cl + [""]
     o += action_sections(soon, at, lv)
     runs = dungeon_runs(BONUS)
     sched = dungeon_schedule(cfg, lv, runs)
@@ -1305,6 +1311,11 @@ def resale(item):
     return 0.95 * t[0], min(8, int(t[2]) if len(t) > 2 else 0)   # (value after the cut, at most 8 sold, no more than a day's sales)
 
 
+def net_money(c):
+    """A net cost, or what a step makes when selling its products pays more than their materials."""
+    return AH.money(c) if c >= 0 else f"makes {AH.money(-c)}"
+
+
 def profession_section(profs):
     """Per profession: the cheapest expected way from the character's skill to its rank's cap with the recipes it knows (professions.py),
     with the materials it takes at today's prices."""
@@ -1353,12 +1364,13 @@ def profession_section(profs):
         total = 0.0
         for a, b, r, crafts, c in groups:
             total += c
-            o += [f"| {a}-{b} | {r['name']} | {crafts:.0f} | {AH.money(c)} |"]
+            o += [f"| {a}-{b} | {r['name']} | {crafts:.0f} | {net_money(c)} |"]
         top6 = sorted(mats.items(), key=lambda kv: -(unit_price(kv[0]) or 0) * kv[1])[:6]
         CTX["professions"].append({"name": prof, "skill": skill, "cap": cap, "stop": stop, "total": total,
                                    "steps": [{"from": a, "to": b, "recipe": r["name"], "crafts": round(crafts), "cost": c} for a, b, r, crafts, c in groups],
                                    "mats": [(item_name(i), round(n)) for i, n in top6]})
-        o += ["", f"About {AH.money(total)} net to reach {stop}, if you sell what you make at its usual price (at most 8 of each, and "
+        o += ["", (f"You spend about {AH.money(total)} in all" if total >= 0 else f"You make about {AH.money(-total)} in all")
+              + f" to reach {stop}, after selling what you make at its usual price (at most 8 of each, and "
               "no more than a day's sales; products without a sales history count as unsold)"
               + ("." if stop >= cap else f"; from {stop} no recipe you know gives points: learn new ones at the trainer.")]
         top = sorted(mats.items(), key=lambda kv: -(unit_price(kv[0]) or 0) * kv[1])[:6]
@@ -1400,9 +1412,23 @@ def consumable_effect(c, texts, school_share):
     return st, (int(xp.group(1)) if xp else 0), minutes
 
 
-def consumable_lines(level, wl, profs, school_share):
+def trip(cfg, snap, at, lv):
+    """(minutes of play, level) to your next town visit: the next level with training you need (character.json "hours_out" overrides,
+    in hours of play), from the rest of this level and the play time of the levels between (minutes_per_level)."""
+    if cfg.get("hours_out"):
+        return float(cfg["hours_out"]) * 60, None
+    train, need = training_by_level(cfg["class"]), needed_spells(cfg)
+    nxt = next((L for L in range(lv + 1, 61) if any(n in need for n, c in train.get(L, []))), lv + 2)
+    left = 1 - (snap["profile"].get("experience") or 0) / max(1, XP.get(lv) or kills_per_level(lv) and XP.get(lv, 1) or 1)
+    return max(0.0, left) * minutes_per_level(lv, at) + sum(minutes_per_level(L, at) for L in range(lv + 1, nxt)), nxt
+
+
+def consumable_lines(level, wl, profs, school_share, trip_min=None, at=None):
     """Oils, food, elixirs and scrolls usable now: how much faster kills, how long, what one costs (auction house, or the materials when
-    the character's own profession makes it) and what an hour of leveling with it costs."""
+    the character's own profession makes it), what an hour of leveling with it costs, how many to buy for the time to your next town
+    visit (2026-11-09, user: "can you make it so it says how many to buy? Since they only last so much time and sometime I don't come back
+    to cities for hours") and whether it earns its price back: the play minutes an hour of it saves (faster kills over the share of play
+    spent killing, and a food's extra kill experience) against the play minutes its hour's cost takes to earn."""
     db = IP.sim_db()
     cands = [c for c in db["consumables"] if c.get("type") in CONSUMABLE_KIND and (c.get("lvl") or 0) <= level]
     texts = IP.item_texts([c["id"] for c in cands])
@@ -1434,19 +1460,35 @@ def consumable_lines(level, wl, profs, school_share):
                 how = f"buy (you make it at {prof} {rs[sp][1]}; you have {have})"
         per_hour = cost * 60 / minutes if cost and minutes else None
         rows.append((CONSUMABLE_KIND[c["type"]], c["name"], st, xp, gain, minutes, how, cost, per_hour))
+    import math
+    income_min = (income_per_level(level, QPL) / minutes_per_level(level, at)) if at else None   # copper a minute of play
     out = []
     CTX["consumables"] = []
     for kind in ("Weapon oil", "Food", "Elixir", "Scroll"):
         ks = sorted([r for r in rows if r[0] == kind], key=lambda r: -(r[4] + r[3] / 100 * 0.5))[:3]
+        scored = []
         for k, name, st, xp, gain, minutes, how, cost, per_hour in ks:
+            saved = 60 * (gain * PLAY_KILL_SHARE + xp / 100 * KILL_SHARE)   # play minutes an hour of it saves
+            earn = per_hour / income_min if per_hour and income_min else None   # play minutes its hour's cost takes to earn
+            qty = math.ceil(trip_min / minutes) if trip_min and minutes else None
+            scored.append((k, name, st, xp, gain, minutes, how, cost, per_hour, saved, earn, qty))
+        good = [x for x in scored if x[10] is not None and x[9] >= x[10]]
+        pick = max(good, key=lambda x: x[9] - x[10])[1] if good else None   # the one that saves the most beyond its price
+        for k, name, st, xp, gain, minutes, how, cost, per_hour, saved, earn, qty in scored:
             eff = ", ".join(f"+{v:g} {x.replace('_', ' ')}" for x, v in st.items()) + (f", +{xp}% kill experience" if xp else "")
+            worth = earn is not None and saved >= earn
             CTX["consumables"].append({"kind": kind, "item": name, "effect": eff, "pct": pct(gain), "minutes": minutes, "how": how,
-                                       "cost": cost, "hour": per_hour, "best": name == ks[0][1]})
+                                       "cost": cost, "hour": per_hour, "best": name == (pick or scored[0][1]), "qty": qty,
+                                       "total": qty * cost if qty and cost else None, "saved": saved, "earn": earn, "worth": worth})
+            buy = f"×{qty} ({AH.money(qty * cost)})" if qty and cost else "?"
+            verdict = (f"yes: saves {saved:.1f} min an hour, costs {earn:.1f}" if worth else
+                       f"no: saves {saved:.1f} min an hour, costs {earn:.1f}" if earn is not None else "?")
             out.append(f"| {kind} | {name} | {eff} | {pct(gain)} | {minutes or '?'} min | {how} | {AH.money(cost) if cost else 'no price'} | "
-                       f"{AH.money(per_hour) if per_hour else '?'} |")
+                       f"{buy} | {verdict} |")
     if not out:
         return []
-    return (["| Kind | Item | Effect | Faster kills | Lasts | How | One costs | An hour costs |", "|---|---|---|---|---|---|---|---|"] + out +
+    return (["| Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |",
+             "|---|---|---|---|---|---|---|---|---|"] + out +
             ["", "One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience is extra: a food's +5% speeds up the "
              "experience you get from kills, not from quests. Elixirs: Classic lets several stack; Forever's rule is not confirmed."])
 

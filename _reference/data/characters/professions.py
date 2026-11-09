@@ -161,7 +161,8 @@ def skill_plan(prof, skill, target, known, tri, price, sell=None):
             n = 1 / p
             value, limit = back[r["spell"]]
             sold = max(0.0, min(n, limit - made[r["spell"]]))
-            e = max(0.0, cost[r["spell"]] * n - value * sold)
+            e = cost[r["spell"]] * n - value * sold   # below zero when selling what it makes pays more than its materials (2026-11-09:
+                                                      # Spidersilk Boots made money and read "0c")
             if best is None or e < best[0]:
                 best = (e, r, n)
         if best is None:

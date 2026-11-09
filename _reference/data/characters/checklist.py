@@ -43,6 +43,11 @@ def coins(c):
     return f'<span class="money" aria-label="{" ".join(words)}">' + "".join(parts) + "</span>"
 
 
+def net(c):
+    """A net cost in coins, or what it makes when that is below zero."""
+    return coins(c) if c is None or c >= 0 else f'<span class="gain">makes {coins(-c)}</span>'
+
+
 def tid(*parts):
     return "t" + hashlib.sha1("|".join(map(str, parts)).encode("utf-8")).hexdigest()[:10]
 
@@ -167,10 +172,19 @@ def render(cfg, C):
         if r["kind"] in ("auction", "market"):
             head, sub = upgrade_line(r, lv)
             items.append(todo(f"buy{r['item']}{r['slot']}", head, sub))
+    tr = C.get("trip") or {}
+    hours = f"about {tr['minutes'] / 60:.1f} h of play" + (f", to level {tr['level']}" if tr.get("level") else "") if tr.get("minutes") else ""
     for c in C.get("consumables") or []:
-        if c["best"]:
-            items.append(todo(f"cons{c['item']}", f'{esc(c["item"])} <span class="slot">{esc(c["kind"].lower())}</span> <span class="pct">{esc(c["pct"])} faster</span>',
-                              f"{esc(c['effect'])} · {c['minutes'] or '?'} min · {coins(c['cost'])} each, {coins(c['hour'])} an hour · {esc(c['how'])}"))
+        if not c["best"]:
+            continue
+        head = f'{esc(c["item"])} <span class="slot">{esc(c["kind"].lower())}</span> <span class="pct">{esc(c["pct"])} faster</span>'
+        if c.get("worth") and c.get("qty"):
+            items.append(todo(f"cons{c['item']}", f"Buy ×{c['qty']} {head}",
+                              f"{coins(c['total'])} for {hours} · {esc(c['effect'])} · lasts {c['minutes']} min · {coins(c['cost'])} each · "
+                              f"saves {c['saved']:.1f} min an hour, its price takes {c['earn']:.1f} to earn · {esc(c['how'])}"))
+        else:
+            items.append(info(f"Skip {head}", f"costs more than it saves: {c['saved']:.1f} min an hour saved, "
+                              + (f"{c['earn']:.1f} to earn its price" if c.get("earn") is not None else "no price") + f" · {esc(c['effect'])}"))
     sec.append(("Auction House", "Buy", items))
 
     # professions
@@ -182,10 +196,11 @@ def render(cfg, C):
             items.append(todo(f"rank{p['name']}{p['cap']}", f"{esc(p['name'])} {p['skill']}/{p['cap']} {bar}", "at your rank's cap: train the next rank"))
             continue
         items.append(info(f"{esc(p['name'])} {p['skill']}/{p['cap']} {bar}",
-                          (f"about {coins(p['total'])} net to reach {p['stop']}" if p["steps"] else "no recipe you know gives a point: learn new ones at the trainer")))
+                          ((f"you spend about {coins(p['total'])} in all to reach {p['stop']}" if p["total"] >= 0 else
+                            f"you make about {coins(-p['total'])} in all to reach {p['stop']}") if p["steps"] else "no recipe you know gives a point: learn new ones at the trainer")))
         for st in p["steps"][:4]:
             items.append(todo(f"skill{p['name']}{st['from']}", f"{esc(st['recipe'])} ×{st['crafts']}",
-                              f"{p['name']} {st['from']}–{st['to']} · {coins(st['cost'])} net"))
+                              f"{p['name']} {st['from']}–{st['to']} · {net(st['cost'])}" + (" net" if st["cost"] >= 0 else " after selling them")))
         if p["mats"]:
             items.append(info("Materials for the climb", ", ".join(f"{esc(n)} ×{c}" for n, c in p["mats"])))
     for c in C.get("crafts") or []:
@@ -353,6 +368,7 @@ ul.list {{ list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }}
 .q {{ font-weight: 700; }} .q1 {{ color: var(--q1); }} .q2 {{ color: var(--q2); }} .q3 {{ color: var(--q3); }} .q4 {{ color: var(--q4); }} .q5 {{ color: var(--q5); }}
 .slot, .tag {{ font: 600 .72rem var(--display); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; white-space: nowrap; }}
 .pct {{ font: 600 .92rem var(--display); color: var(--accent); white-space: nowrap; }}
+.gain {{ color: var(--tick); font-weight: 700; }}
 .muted {{ color: var(--muted); }} .small {{ font-size: .85rem; }}
 .skill {{ display: inline-block; width: 90px; height: 7px; border-radius: 4px; background: var(--line); vertical-align: middle; margin-left: 6px; overflow: hidden; }}
 .skill span {{ display: block; height: 100%; background: var(--accent); }}

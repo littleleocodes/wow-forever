@@ -87,19 +87,19 @@ Count a piece's stats in spell power: 1 intellect = 0.22, 1 spirit = 0.27, 1 sta
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 0.3 hours old).
+The best three of each kind you can use now, with today's prices (auction house snapshot 0.4 hours old). "For your trip": enough to keep it up for about 3.1 hours of play, to your next training at level 28 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
-| Kind | Item | Effect | Faster kills | Lasts | How | One costs | An hour costs |
-|---|---|---|---|---|---|---|---|
-| Weapon oil | Minor Wizard Oil | +8 spell power | 4.0% | 30 min | make it (Enchanting 45) | 2s 93c | 5s 86c |
-| Food | Briny Seafood Stew | +14 spell power, +5% kill experience | 6.9% | 15 min | buy | 30s 75c | 1g 23s |
-| Food | Smoked Sagefish | +4 spell power, +5% kill experience | 2.0% | 15 min | buy (cheaper than making it: 2s 94c in materials) | 2s 23c | 8s 92c |
-| Food | Calcified Smoothie | +10 spirit, +5% kill experience | 1.3% | 15 min | buy | 9s 50c | 38s |
-| Elixir | Lesser Arcane Elixir | +15 spell power | 7.4% | 30 min | buy | 8s 94c | 17s 88c |
-| Elixir | Lesser Mageblood Elixir | +6 mp5 | 2.5% | 30 min | buy | 8s 22c | 16s 44c |
-| Elixir | Minor Arcane Elixir | +5 spell power | 2.5% | 30 min | buy | 71c | 1s 42c |
-| Scroll | Scroll of Spirit II | +7 spirit | 0.9% | 30 min | buy | 3s 20c | 6s 40c |
-| Scroll | Scroll of Intellect II | +8 intellect | 0.9% | 30 min | buy | 1s 99c | 3s 98c |
+| Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |
+|---|---|---|---|---|---|---|---|---|
+| Weapon oil | Minor Wizard Oil | +8 spell power | 4.0% | 30 min | make it (Enchanting 45) | 2s 93c | ×7 (20s 51c) | no: saves 1.2 min an hour, costs 1.7 |
+| Food | Briny Seafood Stew | +14 spell power, +5% kill experience | 6.9% | 15 min | buy | 30s 75c | ×13 (3g 99s 75c) | no: saves 3.6 min an hour, costs 35.1 |
+| Food | Smoked Sagefish | +4 spell power, +5% kill experience | 2.0% | 15 min | buy (cheaper than making it: 2s 94c in materials) | 2s 23c | ×13 (28s 99c) | no: saves 2.1 min an hour, costs 2.5 |
+| Food | Calcified Smoothie | +10 spirit, +5% kill experience | 1.3% | 15 min | buy | 9s 50c | ×13 (1g 23s 50c) | no: saves 1.9 min an hour, costs 10.8 |
+| Elixir | Lesser Arcane Elixir | +15 spell power | 7.4% | 30 min | buy | 8s 94c | ×7 (62s 58c) | no: saves 2.2 min an hour, costs 5.1 |
+| Elixir | Lesser Mageblood Elixir | +6 mp5 | 2.5% | 30 min | buy | 8s 22c | ×7 (57s 54c) | no: saves 0.8 min an hour, costs 4.7 |
+| Elixir | Minor Arcane Elixir | +5 spell power | 2.5% | 30 min | buy | 71c | ×7 (4s 97c) | yes: saves 0.7 min an hour, costs 0.4 |
+| Scroll | Scroll of Spirit II | +7 spirit | 0.9% | 30 min | buy | 3s 20c | ×7 (22s 40c) | no: saves 0.3 min an hour, costs 1.8 |
+| Scroll | Scroll of Intellect II | +8 intellect | 0.9% | 30 min | buy | 1s 99c | ×7 (13s 93c) | no: saves 0.3 min an hour, costs 1.1 |
 
 One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience is extra: a food's +5% speeds up the experience you get from kills, not from quests. Elixirs: Classic lets several stack; Forever's rule is not confirmed.
 
@@ -146,8 +146,8 @@ Crafts in your plan:
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 106-114 | Spidersilk Boots | 8 | 0c |
-| 114-117 | Bolt of Silk Cloth | 6 | 0c |
+| 106-114 | Spidersilk Boots | 8 | makes 1g 56s 29c |
+| 114-117 | Bolt of Silk Cloth | 6 | makes 6s 66c |
 | 117-124 | Red Woolen Bag | 8 | 31s 8c |
 | 124-128 | White Woolen Dress | 7 | 35s 6c |
 | 128-131 | Double-stitched Woolen Shoulders | 7 | 44s 34c |
@@ -156,7 +156,7 @@ Crafts in your plan:
 | 135-148 | Red Woolen Bag | 64 | 8g 33s 66c |
 | 148-150 | Spidersilk Boots | 6 | 3g 64s 45c |
 
-About 13g 99s 22c net to reach 150, if you sell what you make at its usual price (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
+You spend about 12g 36s 26c in all to reach 150, after selling what you make at its usual price (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
 Materials: Bolt of Woolen Cloth x363, Spider's Silk x56, Bolt of Silk Cloth x28, Iridescent Pearl x14, Fine Thread x107, Silk Cloth x25.
 
 ### Enchanting 150 to 225
@@ -167,16 +167,16 @@ Materials: Bolt of Woolen Cloth x363, Spider's Silk x56, Bolt of Silk Cloth x28,
 |---|---|---|---|
 | 150-180 | Minor Mana Oil | 82 | 6g 74s 50c |
 
-About 6g 74s 50c net to reach 180, if you sell what you make at its usual price (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 180 no recipe you know gives points: learn new ones at the trainer.
+You spend about 6g 74s 50c in all to reach 180, after selling what you make at its usual price (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 180 no recipe you know gives points: learn new ones at the trainer.
 Materials: Soul Dust x82, Maple Seed x164, Leaded Vial x82.
 
 ### Cooking 149 to 150
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 149-150 | Succulent Pork Ribs | 2 | 0c |
+| 149-150 | Succulent Pork Ribs | 2 | makes 2s 49c |
 
-About 0c net to reach 150, if you sell what you make at its usual price (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
+You make about 2s 49c in all to reach 150, after selling what you make at its usual price (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
 Materials: Boar Ribs x4, Hot Spices x2.
 
 ## Your gear
