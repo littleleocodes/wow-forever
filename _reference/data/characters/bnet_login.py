@@ -48,8 +48,19 @@ def main():
     ap.add_argument("--region", default="us")
     ap.add_argument("--port", type=int, default=8765)
     ap.add_argument("--wait", type=int, default=1800)
+    ap.add_argument("--url", help="the address the browser landed on after approving elsewhere (a phone): its code is traded here")
     a = ap.parse_args()
     redirect = f"http://localhost:{a.port}/callback"
+    if a.url:   # approved on another device: the redirect to that device's localhost failed, but its address holds the code
+        q = urllib.parse.parse_qs(urllib.parse.urlparse(a.url).query)
+        if "code" not in q:
+            sys.exit("no code in that address")
+        tok = exchange(q["code"][0], redirect)
+        TOKEN.write_text(json.dumps({"access_token": tok["access_token"], "expires_at": time.time() + tok.get("expires_in", 86400) - 60,
+                                     "scope": tok.get("scope")}, indent=1), encoding="utf-8")
+        print(f"token saved to {TOKEN} (scope {tok.get('scope')})", flush=True)
+        report(a.region, tok["access_token"])
+        return
     state = secrets.token_urlsafe(16)
     cid, _ = bnet.credentials()
     url = "https://oauth.battle.net/authorize?" + urllib.parse.urlencode(
@@ -83,6 +94,13 @@ def main():
     TOKEN.write_text(json.dumps({"access_token": tok["access_token"], "expires_at": time.time() + tok.get("expires_in", 86400) - 60,
                                  "scope": tok.get("scope")}, indent=1), encoding="utf-8")
     print(f"token saved to {TOKEN} (scope {tok.get('scope')})", flush=True)
+    report(a.region, tok["access_token"])
+
+
+def report(region, access):
+    """The account profile and each character's protected document (gold), printed."""
+    a = argparse.Namespace(region=region)
+    tok = {"access_token": access}
     ns = f"profile-forever-{a.region}"
     st, acct = get(a.region, tok["access_token"], "/profile/user/wow", ns)
     print("account profile:", st, json.dumps(acct)[:600], flush=True)

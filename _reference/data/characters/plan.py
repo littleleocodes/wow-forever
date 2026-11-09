@@ -429,7 +429,8 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
          f"> ([{cfg['spec']}](../../{cfg['class']}/leveling/{cfg['page']}.md), rotation `{rot}`), a model of the beta, not a measurement.", ""]
     race, cls = snap["profile"]["race"]["name"], snap["profile"]["character_class"]["name"]
     o += [f"Level **{lv}** {race} {cls}, {snap['profile']['faction']['name']}. Professions: " +
-          ", ".join(f"{k} {v[0]}/{v[1]}" for k, v in profs.items()) + ".", ""]
+          ", ".join(f"{k} {v[0]}/{v[1]}" for k, v in profs.items()) + "." +
+          (f" Gold: **{AH.money(GOLD)}**." if GOLD is not None else " Gold: unknown (log in with bnet_login.py; the login lasts a day)."), ""]
     # talents
     o += ["## Talents", ""]
     if not tdiff:
@@ -570,8 +571,46 @@ def action_sections(evs, at, L, head="###"):
     if by.get("vendor"):
         o += [f"{head} Buy", ""] + [line(e, at) for e in by["vendor"]] + [""]
     if by.get("auction"):
-        o += [f"{head} Buy on the Auction House (listed now; prices change hourly)", ""] + [line(e, at) for e in by["auction"]] + [""]
+        # best speed per gold first; with the character's gold known, a running total says what it can afford (2026-11-09)
+        price = lambda e: next((s.get("price") for s in e["item"]["sources"] if s["kind"] == "auction"), None) or 1e12
+        evs = sorted(by["auction"], key=lambda e: -e["gain"] / price(e))
+        o += [f"{head} Buy on the Auction House (listed now; prices change hourly; best speed per gold first)", ""]
+        spent = 0
+        for e in evs:   # greedy: a buy that does not fit is skipped, a cheaper one after it can still fit
+            fits = ""
+            if GOLD is not None and spent + price(e) <= GOLD:
+                spent += price(e)
+                fits = f" Fits your gold ({AH.money(GOLD - spent)} left after the buys marked so far)."
+            o += [line(e, at) + fits]
+        o += [""]
     return o
+
+
+GOLD = None   # the character's gold in copper (Blizzard's protected profile, after bnet_login.py), or None
+
+
+def character_gold(cfg):
+    """Gold from the protected profile with the user's login token (~/.wow-forever-tools/blizzard-user-token.json, about 24 hours);
+    None without a valid token."""
+    import time
+    import urllib.parse
+    p = pathlib.Path.home() / ".wow-forever-tools" / "blizzard-user-token.json"
+    if not p.exists():
+        return None
+    t = json.loads(p.read_text(encoding="utf-8"))
+    if t.get("expires_at", 0) < time.time():
+        return None
+    region = cfg.get("region", "us")
+    ns = f"profile-forever-{region}"
+    st, acct = bnet.get(region, t["access_token"], "/profile/user/wow", ns)
+    if st != 200:
+        return None
+    for wa in acct.get("wow_accounts") or []:
+        for ch in wa.get("characters") or []:
+            if f"/character/{cfg['slug']}?" in (ch.get("character") or {}).get("href", "") and ch.get("protected_character"):
+                st2, js = bnet.get(region, t["access_token"], urllib.parse.urlparse(ch["protected_character"]["href"]).path, ns)
+                return js.get("money") if st2 == 200 else None
+    return None
 
 
 CONSUMABLE_KIND = {6: "Weapon oil", 3: "Food", 11: "Elixir", 4: "Scroll"}
@@ -704,7 +743,8 @@ def main():
     pool = IP.pool(cfg["class"], cfg["faction"], cfg["school_share"], cfg.get("region", "us"))
     profs = skills(snap)
     PROFS.update(profs)
-    global MIN_LASTS, PRICES
+    global MIN_LASTS, PRICES, GOLD
+    GOLD = character_gold(cfg)
     MIN_LASTS = int(cfg.get("min_levels", MIN_LASTS))
     ah = cfg.get("ah") or {}
     if ah.get("ahcopy") and pathlib.Path(ah["ahcopy"]).exists():   # the user's ForeverTape add-on, read only
