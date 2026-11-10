@@ -1,9 +1,10 @@
 """The character's RestedXP route, from the guide add-on's saved files (2026-11-09, user: "Lift the restriction"): which guide group the
 character follows, the section it is on (by its saved step) and the sections after it, each with its level range and zones.
 
-Only plain-text metadata is read (section names, level ranges, the next section, the current step). The guides themselves are stored
-encoded and are never decoded, copied or shared (the user's standing rule); nothing from here is written into the repository: the plan
-uses the route to time dungeon runs and to flag quests off it. The files are found by the character's folder name at run time (the
+Only plain-text metadata is read here (section names, level ranges, the next section, the current step). The route step by step comes
+from rxp_guide.py (2026-11-10: the readable guide files the user extracted and keeps outside the repository, read for facts only; the
+user withdrew the earlier never-decode rule for personal, local use). No section name is written into the repository: the plan uses the
+route to time dungeon runs and quest rewards and to flag quests off it. The files are found by the character's folder name at run time (the
 account folder's name is the account's: it is never printed or stored).
 """
 import pathlib

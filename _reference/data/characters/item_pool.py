@@ -130,6 +130,9 @@ def window(it, s):
     """(first, last) character level at which a source can be done for this item: the item is usable from its required level."""
     req = it.get("req") or 0
     if s["kind"] == "quest":
+        if s.get("route_level"):   # the RestedXP route turns the quest in at this level (plan.py, rxp_guide.py; 2026-11-10)
+            f = max(req, s["route_level"])
+            return f, f + 2
         if s.get("level"):
             return max(req, s.get("min_level") or 0, s["level"] - 3), s["level"] + 8
         lo, hi = ZONE_LEVELS.get(s.get("zone") or "", (req, req + 8))

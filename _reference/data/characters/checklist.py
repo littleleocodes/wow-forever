@@ -88,6 +88,8 @@ def upgrade_line(r, lv, why=True):
         sub += f'<br><strong>{md(r["wait"])}</strong>'
     if r.get("off_route"):
         sub += f'<br><span class="why">{md(r["off_route"])}</span>'
+    if r.get("on_route"):
+        sub += f'<br><span class="why">{md(r["on_route"])}</span>'
     if why and r.get("why"):
         sub += f'<br><span class="why">Kept long because: {md(r["why"])}</span>'
     return head, sub
@@ -259,9 +261,10 @@ def steps_html(C, lv):
             items.append(todo(f"quest{r['item']}", f"Quest for {head}", sub))
     for dg in C.get("dungeons") or []:
         if dg["run"] <= lv + 3 and dg.get("verdict") != "skip":
-            qs = [q for q in dg["quests"] if not q["grey"] and not q["log"]]
+            qs = [q for q in dg["quests"] if not q["grey"] and not q["log"] and not q.get("route")]   # the guide picks up the rest
             if qs:
-                items.append(todo(f"dq{dg['zone']}", f"Pick up the quests for {esc(dg['zone'])}",
+                items.append(todo(f"dq{dg['zone']}", f"Pick up the quests for {esc(dg['zone'])}"
+                                  + (" your guide does not" if any(q.get("route") for q in dg["quests"]) else ""),
                                   "; ".join(f"{esc(q['title'])} ({q['level']}{', ' + esc(q['start']) if q['start'] else ''})" for q in qs)))
     steps.append(("Before you leave", "Pick up quests", items))
 
@@ -353,9 +356,11 @@ def render(cfg, C):
             rows.append(f'<li><span class="tag">{KIND[r["kind"]]}</span> {item(r)} <span class="slot">{esc(r["slot"])}</span> '
                         f'<span class="pct">{esc(r["pct"])}</span>{price}<span class="sub">{md(r["where"])}</span></li>')
         for dg in runs_at.get(L, []):
-            n = len([q for q in dg["quests"] if not q["grey"]])
+            n = len([q for q in dg["quests"] if not q["grey"] and not q.get("route")])   # the guide picks up the rest
             rows.append(f'<li><span class="tag">Dungeon</span> Run <strong>{esc(dg["zone"])}</strong>'
-                        f'<span class="sub">{esc(dg.get("why", ""))} · {n} quest{"s" if n != 1 else ""} to pick up first'
+                        f'<span class="sub">{esc(dg.get("why", ""))} · '
+                        + (f'{n} quest{"s" if n != 1 else ""} to pick up first' if n or not any(q.get("route") for q in dg["quests"])
+                           else "your guide picks up its quests")
                         + "".join(f"<br>Drop: {md(x)}" for x in dg["drops"]) + "</span></li>")
         ahead.append(f'<div class="lvl"><div class="lvl-n">{L}</div><ul>{"".join(rows)}</ul></div>')
 

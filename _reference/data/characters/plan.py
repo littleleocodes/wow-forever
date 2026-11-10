@@ -32,6 +32,7 @@ import item_pool as IP  # noqa: E402
 import professions as PF  # noqa: E402
 import market as MK  # noqa: E402
 import rxp  # noqa: E402
+import rxp_guide as RXG  # noqa: E402
 
 UPGRADE = 0.005        # an upgrade worth less than 0.5% of the time per kill is not listed
 MIN_CHANCE = 0.05      # a dungeon drop under 5% is not worth planning around
@@ -281,6 +282,38 @@ def chain_step(q):
     return first, QCHAIN[first][1]
 
 
+def spot_text(s):
+    """"Zone 42.1, 65.9" of a position {zone, x, y} or (zone, x, y)."""
+    if not s:
+        return ""
+    z, x, y = (s.get("zone"), s.get("x"), s.get("y")) if isinstance(s, dict) else s
+    return f"{z} {x:.1f}, {y:.1f}" if z and x is not None else (z or "")
+
+
+def giver_text(q):
+    """Who gives quest q and where: "NPC (Zone x, y)" from RestedXP's dungeon quest guides or the NPC positions the route names
+    (rxp_guide.py, 2026-11-10), else the Classic data's givers; "" when unknown."""
+    if RG:
+        for rows in RG["extra"].values():
+            for r in rows:
+                if r["quest"] == q and r.get("giver"):
+                    return r["giver"] + (f" ({spot_text(r['spot'])})" if r.get("spot") else "")
+        g = RG["givers"].get(q)   # any guide on this PC that takes it
+        if g and g.get("npc"):
+            return g["npc"] + (f" ({spot_text(g)})" if g.get("zone") else "")
+        if g and g.get("zone"):
+            return spot_text(g)
+    chain_step(0)
+    st = QCHAIN.get(q)
+    if st and st[1]:
+        for n in (x.strip() for x in st[1].split(" / ")):
+            sp = (RG or {}).get("npcs", {}).get(n)
+            if sp:
+                return f"{n} ({spot_text(sp)})"
+        return st[1]
+    return ""
+
+
 # ---------------------------------------------------------------------------------------------------------------- the plan
 def sources_text(it):
     out = []
@@ -342,6 +375,7 @@ CTX = {}                  # what the town checklist page (checklist.py) shows, f
 FASTER, SHORT, KILLING = "faster kills", "faster", "min of killing"   # a tank (character.json "metric": "tank"): better tanking
 BONUS = []                # dungeon drops worth chasing on top of the sure plan (bonus_drops)
 ROUTE = None              # the character's RestedXP route (rxp.route), when its saved files are on this PC
+RG = None                 # the route step by step from the readable guide files (rxp_guide.facts), when they are on this PC
 AUCTION_FUTURE = False   # what-if (2026-11-09): treat today's listings as buyable at their level later (how soon cheap AH gear replaces a buy)
 PROFS = {}   # the character's professions, {name: (skill, cap)}: main() fills it for the craft lines
 
@@ -621,11 +655,12 @@ def dungeon_lines(sched):
     for r in sched:
         if r.get("verdict") == "skip":
             continue
-        o += [f"- **{r['zone']}** ({r['lo']}-{r['hi']}), run at level {r['run']}: {r.get('why', '')}"
+        o += [f"- **{r['zone']}** ({r['lo']}-{r['hi']}{', estimated' if r.get('estimated') else ''}), run at level {r['run']}: {r.get('why', '')}"
               + (f"; its drops are worth about {r['worth']} min on average" if r["worth"] and "drops" not in r.get("why", "") else "") + "."]
         if r["quests"]:
             o += ["  - Quests: " + "; ".join(f"{q['title']} ({q['level']}{', in your log' if q['log'] else ''}"
-                                               f"{', ' + q['start'] if q['start'] else ''}{', grey for you by then' if q['grey'] else ''})"
+                                               f"{', your guide picks it up' if q.get('route') else (', ' + q['start'] if q['start'] else '')}"
+                                               f"{', grey for you by then' if q['grey'] else ''})"
                                                for q in r["quests"])]
         o += [f"  - Drop: {x}" for x in r["drops"]]
     if skip:
@@ -690,40 +725,55 @@ def dungeon_schedule(cfg, lv, runs, events=None):
     cls_bit = 1 << (IP.CLASS_ID[cfg["class"]] - 1)
     drops = {r["zone"]: r for r in runs}
     out = []
-    for m, zid in IP.MAP_TO_ZONE.items():
-        if zid not in IP.DUNGEONS:
-            continue
-        name, lo, hi, side = IP.DUNGEONS[zid]
+    todo = [(IP.DUNGEONS[zid], DQ.get(m, []), False) for m, zid in IP.MAP_TO_ZONE.items() if zid in IP.DUNGEONS]
+    extra = {n: [r["quest"] for r in rows] for n, rows in (RG or {}).get("extra", {}).items()}
+    if RG:   # Forever's own dungeons (2026-11-10): the levels of the RestedXP section that runs them, the top of the range estimated
+        known = {d[0][0] for d in todo}
+        todo += [((n, RG["runs"][n][0], RG["runs"][n][1] + 6, None), [], True) for n in extra if n not in known and n in RG["runs"]]
+    fq = IP.forever_quests(sorted({q for v in extra.values() for q in v if q not in CQUESTS})) if extra else {}
+    for (name, lo, hi, side), dq, est in todo:
         if (side and side != cfg["faction"]) or hi < lv:
             continue
         qs = {}
-        for q in DQ.get(m, []):
+        for q in dq + [x for x in extra.get(name, []) if x not in dq]:   # RestedXP's dungeon quest guide adds what the Classic data misses
             r = CQUESTS.get(q)
-            if not r:
+            if r:
+                rr, rc, ql, title = int(r["required_races"] or 0), int(r["required_classes"] or 0), int(r["quest_level"] or 0), r["title"]
+            elif (fq.get(str(q)) or {}).get("title"):   # a quest Forever added: Blizzard's title; its level where the route takes it, else
+                rr = rc = 0                              # one above the level the guide runs the dungeon at
+                title = fq[str(q)]["title"]
+                acc = (RG["quests"].get(q) or {}).get("accept")
+                ql = acc["level"] if acc else (RG["runs"].get(name) or (lo, hi))[0] + 1
+            else:
                 continue
-            rr, rc, ql = int(r["required_races"] or 0), int(r["required_classes"] or 0), int(r["quest_level"] or 0)
             if (rr and not rr & race_mask) or (rc and not rc & cls_bit) or ql >= 60 or ql < lo - 10 or q in COMPLETED:
                 continue   # (a quest far below the dungeon is a data quirk: Rocknot's Ale reads level 1)
-            qs.setdefault(r["title"], (q, ql))
+            qs.setdefault(title, (q, ql))
         levels = sorted(v[1] for v in qs.values() if v[1] > 0)
         run = levels[len(levels) // 2] if levels else (lo + hi) // 2
         dr = drops.get(name)
         if dr:   # a drop you would wear early pulls the run forward (Scarlet Monastery's one Alliance quest is level 40, its Library drop 32)
             run = min(run, dr["first"] + 1)
         run = max(lv, lo + 2, min(run, hi - 2))
-        gl = rxp.dungeon_level(ROUTE, name) if ROUTE else None
-        if gl is not None:   # the RestedXP guide the character follows runs it in that section (2026-11-09)
+        if RG:   # the route step by step (2026-11-10): its own dungeons and the ones ticked in your RestedXP profile, from where you are
+            gl = (RG["dungeons"].get(name) or {}).get("level")
+        else:   # the route's section names (2026-11-09)
+            gl = rxp.dungeon_level(ROUTE, name) if ROUTE else None
+        if gl is not None:
             run = max(lv, gl)
         quests = []
         for title, (q, ql) in sorted(qs.items(), key=lambda kv: kv[1][1]):
             st = chain_step(q)
+            first = st[0] if st and st[0] != q and st[0] not in INLOG else q
+            giver = giver_text(first)
             start = ""
-            if st and st[0] != q and st[0] not in INLOG:
-                first = (CQUESTS.get(st[0]) or {}).get("title", st[0])
-                start = (f"start with part 1" if first == title else f"start with \"{first}\"") + (f" from {st[1]}" if st[1] else "")
-            elif st and st[1]:
-                start = f"from {st[1]}"
-            quests.append({"title": title, "level": ql, "start": start, "grey": ql < run - 5, "log": q in INLOG})
+            if first != q:
+                t1 = (CQUESTS.get(first) or {}).get("title", first)
+                start = (f"start with part 1" if t1 == title else f"start with \"{t1}\"") + (f" from {giver}" if giver else "")
+            elif giver:
+                start = f"from {giver}"
+            quests.append({"title": title, "level": ql, "start": start, "grey": ql < run - 5, "log": q in INLOG,
+                           "route": bool(RG) and "accept" in (RG["quests"].get(q) or {})})
         if not dr and not any(not x["grey"] for x in quests):
             continue
         # do it or not (2026-11-09, user: "I just want to do the ones you deem worth it and that I should actually do or wait for the
@@ -732,8 +782,9 @@ def dungeon_schedule(cfg, lv, runs, events=None):
         full = [q for q in quests if not q["grey"]]
         gear_q = sorted({upgrade_name(e)[0] for e in events or [] if primary(e)["kind"] == "quest" and primary(e).get("zone") == name})
         worth = (dr or {}).get("worth", 0)
+        on = sum(1 for x in quests if x["route"] and not x["grey"])
         if ROUTE and gl is not None:
-            verdict, why = "guide", "your RestedXP guide runs it then"
+            verdict, why = "guide", "your RestedXP guide runs it then" + (f" and picks up {on} of its quests" if on else "")
         elif run >= hi:
             verdict, why = "skip", "you will have outgrown it"
         elif gear_q:
@@ -745,7 +796,11 @@ def dungeon_schedule(cfg, lv, runs, events=None):
         else:
             verdict, why = "skip", (f"only {len(full)} quest{'s' if len(full) != 1 else ''} at full experience" if full else "no quests for you")
             why += " and " + (f"drops worth about {worth} min" if worth else "no drops for you")
-        out.append({"zone": name, "lo": lo, "hi": hi, "run": run, "quests": quests, "drops": (dr or {}).get("items", []),
+        if RG and verdict == "do" and name in RG["taggable"]:
+            why += "; tick it in RestedXP's dungeon settings and the guide picks up its quests on the way"
+        if RG and gl is None and name in RG["runs"] and RG["runs"][name][1] < lv:
+            why += f"; your guide ran it at {RG['runs'][name][0]}-{RG['runs'][name][1]}"
+        out.append({"zone": name, "lo": lo, "hi": hi, "estimated": est, "run": run, "quests": quests, "drops": (dr or {}).get("items", []),
                     "worth": worth, "guide": None if not ROUTE else gl is not None, "verdict": verdict, "why": why})
     return sorted(out, key=lambda x: (x["run"], x["lo"]))
 
@@ -1291,6 +1346,8 @@ def line(e, at):
         out += f" {e['wait']}."
     if e.get("off_route"):
         out += f" {e['off_route']}."
+    if e.get("on_route"):
+        out += f" {e['on_route']}."
     if e.get("passed") and (e["until"] or 60) - e["level"] >= 8:   # a long-held item: why nothing replaces it sooner
         alts = sorted(e["passed"], key=lambda x: -x[2])[:3]
         out += " Why it stays: " + "; ".join(f"{n} at {L}, {why}" for L, n, g, why in sorted(alts)) + "."
@@ -1631,7 +1688,7 @@ def event_row(e, at):
             "minutes": round(saves), "earn": round(earn), "level": e["level"], "get_at": max(e["get_at"], NOW_LV), "until": e["until"],
             "kind": src["kind"], "where": where, "price": pr, "budget": budget, "replaces": e.get("replaces"),
             "fallback": fbt, "miss": "If you do not craft it" if e.get("unsure") == "craft" else "If it does not drop", "why": why,
-            "wait": e.get("wait"), "off_route": e.get("off_route"),
+            "wait": e.get("wait"), "off_route": e.get("off_route"), "on_route": e.get("on_route"),
             "mats": mats}
 
 
@@ -1838,9 +1895,16 @@ def main():
     pool = [p for p in pool if not (lambda n: n and have.get(n[0], 0) < n[1])(needs.get(int(str(p["id"]).split(":")[0])))]
     FULL_BY_ID.update({p["id"]: p for p in pool})
     SCHOOL_SHARE.update(cfg["school_share"])
-    global ROUTE
+    global ROUTE, RG
     wow = cfg.get("wow_dir") or str((cfg.get("ah") or {}).get("ahcopy", "")).split("/Interface/")[0]
     ROUTE = rxp.route(wow, f"{snap['profile']['name']}-{snap['profile'].get('surname', '')}".strip("-")) if wow else None
+    RG = RXG.facts(cfg, snap, wow, ROUTE) if ROUTE else None
+    if RG:   # a quest reward on the route comes when the route turns the quest in (item_pool.window: route_level), 2026-11-10
+        for p in pool:
+            for s in p["sources"]:
+                f = RG["quests"].get(s.get("quest")) if s["kind"] == "quest" else None
+                if f and f.get("turnin"):
+                    s["route_level"] = f["turnin"]["level"]
     sure_pool = [dict(p, sources=[s for s in p["sources"] if s["kind"] != "dungeon"]) for p in pool]
     sure_pool = [p for p in sure_pool if p["sources"]]
     out = set()
@@ -1867,7 +1931,28 @@ def main():
                 e["wait"] = (f"Run {' or '.join(sorted(zones))} first (level {run}): {upgrade_name(b)[0]} ({ch:.0%} drop) beats it; "
                              "buy this only if it does not drop")
                 break
-    if ROUTE:   # a quest reward in a zone the RestedXP route does not visit around its level is a detour
+    if RG:   # the route step by step (2026-11-10): on it, when it turns the quest in; off it, who gives it and where
+        for e in events:
+            s0 = primary(e)
+            if s0["kind"] == "quest" and isinstance(s0.get("quest"), int):
+                f = RG["quests"].get(s0["quest"])
+                if f and f.get("turnin"):
+                    t = f["turnin"]
+                    e["on_route"] = f"Your RestedXP route turns it in at about level {t['level']}" + (f" in {t['zone']}" if t["zone"] else "")
+                else:
+                    chain_step(0)
+                    prev, seen = s0["quest"], set()   # the route may take the chain's start and leave the rest to you
+                    while prev in QCHAIN and QCHAIN[prev][0] and prev not in seen:
+                        seen.add(prev)
+                        prev = QCHAIN[prev][0]
+                        if "accept" in (RG["quests"].get(prev) or {}):
+                            break
+                    took = (RG["quests"].get(prev) or {}).get("accept") if prev != s0["quest"] else None
+                    g = giver_text(s0["quest"])
+                    e["off_route"] = ("Not on your RestedXP route" + (f" (it takes the chain as far as \"{(CQUESTS.get(prev) or {}).get('title', prev)}\", "
+                                                                      f"at about level {took['level']})" if took else "")
+                                      + ": " + (f"from {g}" if g else f"a detour to {s0.get('zone') or 'its zone'}"))
+    elif ROUTE:   # a quest reward in a zone the RestedXP route does not visit around its level is a detour
         for e in events:
             s0 = primary(e)
             if s0["kind"] == "quest" and s0.get("zone"):

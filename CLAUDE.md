@@ -89,10 +89,19 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   `_characters/<name>/checklist.html`, the town checklist: trainer, talents, auction buys, profession steps and recipes, crafts, enchants,
   quests and dungeons, the guide's keys and fight stage, the drop check, gold) and republish that file with the Artifact tool to the
   character's `checklist_url` (user, 2026-11-09: "a page can open every time I say refresh").
-  The RestedXP route (`characters/rxp.py`, user 2026-11-09: "Lift the restriction"): only the plain-text metadata of the guide add-on's
-  saved files (the guide group, the current step, each section's levels, zones and next section) times dungeon runs and flags quests off
-  the route. The guides are stored encoded: never decode, copy or share them (the user's standing rule), and write no section names into
-  the repository; the files are found by character name at run time and the account folder's name (the account's) is never printed.
+  The RestedXP route: `characters/rxp.py` reads the guide add-on's saved files (guide group, current step, each section's levels and
+  zones); since 2026-11-10 `characters/rxp_guide.py` reads the route step by step from the readable guide files the user keeps outside the
+  repository (user: "I am explicitly withdrawing that instruction for my personal, local use ... read the supplied text files as reference
+  material ... Keep the original guide files local. Do not commit them to GitHub or include their text in the published checklist"; the
+  user extracted them, Claude never decrypts anything or runs the decrypt script). It follows the add-on's own step rules (class, race and
+  level filters, the character's RestedXP profile: ticked dungeons, group quests) and gives facts only: the quests the route accepts and
+  turns in with levels, NPCs and map positions (world positions to map percentages by `uimap_bounds.json`, Classic Era's map bounds), the
+  dungeons it runs, RestedXP's per-dungeon quest lists. The plan times a quest reward at the route's turn-in (`item_pool.window`,
+  `route_level`), names where to pick up a quest the route leaves out, marks the dungeon quests the guide picks up, adds Forever's own
+  dungeons at the levels the guide runs them, and says which unticked dungeons the guide would take on if ticked. Rules: the guide files
+  and anything holding their text stay out of the repository (git-ignored in both repositories' `.git/info/exclude`) and nothing extracted
+  is cached; pages carry quest, NPC, zone and level facts, never the guide's wording or its section names; the account folder's name is
+  never printed.
   Each dungeon gets a verdict (user: "I just want to do the ones you deem worth it"): the guide's own; a side trip only for a quest reward
   the gear plan counts on, drops worth 20 minutes on average or three quests at full experience; skipped when outgrown or too thin.
   **A group tank** (Tara, 2026-11-09: a Protection paladin with a healer in her group, raid tank at 60): character.json `metric: tank`
