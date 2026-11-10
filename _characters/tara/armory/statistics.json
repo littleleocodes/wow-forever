@@ -1,0 +1,184 @@
+{
+ "_links": {
+  "self": {
+   "href": "https://us.api.blizzard.com/profile/wow/character/tara-dickhoff/statistics?namespace=profile-forever-us"
+  }
+ },
+ "health": 652,
+ "power": 689,
+ "power_type": {
+  "key": {
+   "href": "https://us.api.blizzard.com/data/wow/power-type/0?namespace=static-1.60.1_70399-forever-us"
+  },
+  "name": "Mana",
+  "id": 0
+ },
+ "speed": {
+  "rating_bonus": 0.0,
+  "value": 0.0,
+  "rating_normalized": 0
+ },
+ "strength": {
+  "base": 45,
+  "effective": 72
+ },
+ "agility": {
+  "base": 32,
+  "effective": 37
+ },
+ "intellect": {
+  "base": 34,
+  "effective": 34
+ },
+ "stamina": {
+  "base": 43,
+  "effective": 61
+ },
+ "melee_crit": {
+  "rating_bonus": 0.0,
+  "value": 9.3578,
+  "rating_normalized": 0
+ },
+ "melee_haste": {
+  "rating_bonus": 0.0,
+  "value": 0.0,
+  "rating_normalized": 0
+ },
+ "mastery": {
+  "rating_bonus": 0.0,
+  "value": 0.0,
+  "rating_normalized": 0
+ },
+ "bonus_armor": 0,
+ "lifesteal": {
+  "rating_bonus": 0.0,
+  "value": 0.0,
+  "rating_normalized": 0
+ },
+ "versatility": 0.0,
+ "versatility_damage_done_bonus": 0.0,
+ "versatility_healing_done_bonus": 0.0,
+ "versatility_damage_taken_bonus": 0.0,
+ "avoidance": {
+  "rating_bonus": 0.0,
+  "value": 0.0,
+  "rating_normalized": 0
+ },
+ "attack_power": 193,
+ "main_hand_damage_min": 68.600006,
+ "main_hand_damage_max": 95.600006,
+ "main_hand_speed": 2.8,
+ "main_hand_dps": 29.321432,
+ "off_hand_damage_min": 0.0,
+ "off_hand_damage_max": 0.0,
+ "off_hand_speed": 2.0,
+ "off_hand_dps": 0.0,
+ "spell_power": 0,
+ "spell_penetration": 0,
+ "spell_crit": {
+  "rating_bonus": 0.0,
+  "value": 9.842999,
+  "rating_normalized": 0
+ },
+ "mana_regen": 50.0,
+ "mana_regen_combat": 0.0,
+ "armor": {
+  "base": 0,
+  "effective": 1155
+ },
+ "dodge": {
+  "rating_bonus": 0.0,
+  "value": 5.1977997,
+  "rating_normalized": 0
+ },
+ "parry": {
+  "rating_bonus": 0.0,
+  "value": 5.08,
+  "rating_normalized": 0
+ },
+ "block": {
+  "rating_bonus": 0.0,
+  "value": 5.08,
+  "rating_normalized": 0
+ },
+ "ranged_crit": {
+  "rating_bonus": 0.0,
+  "value": 2.4778001,
+  "rating_normalized": 0
+ },
+ "ranged_haste": {
+  "rating_bonus": 0.0,
+  "value": 0.0,
+  "rating_normalized": 0
+ },
+ "spell_haste": {
+  "rating_bonus": 0.0,
+  "value": 0.0,
+  "rating_normalized": 0
+ },
+ "character": {
+  "key": {
+   "href": "https://us.api.blizzard.com/profile/wow/character/tara-dickhoff?namespace=profile-forever-us"
+  },
+  "name": "Tara",
+  "id": 16647005,
+  "surname": "Dickhoff",
+  "slug": "tara-dickhoff"
+ },
+ "spirit": {
+  "base": 36,
+  "effective": 40
+ },
+ "defense": {
+  "base": 106,
+  "effective": 112
+ },
+ "fire_resistance": {
+  "base": 0,
+  "effective": 0
+ },
+ "shadow_resistance": {
+  "base": 0,
+  "effective": 0
+ },
+ "nature_resistance": {
+  "base": 0,
+  "effective": 0
+ },
+ "arcane_resistance": {
+  "base": 0,
+  "effective": 0
+ },
+ "frost_resistance": {
+  "base": 0,
+  "effective": 0
+ },
+ "movement_speed": 100.0,
+ "ranged_attack_power": 3,
+ "ranged_damage_min": 1.6000001,
+ "ranged_damage_max": 1.6000001,
+ "expertise": 0.0,
+ "off_hand_expertise": 0.0,
+ "armor_penetration": 0.0,
+ "spell_healing": 0,
+ "melee_hit": {
+  "rating_bonus": 0.0,
+  "value": 0.0,
+  "rating_normalized": 0
+ },
+ "off_hand_hit": {
+  "rating_bonus": 0.0,
+  "value": 0.0,
+  "rating_normalized": 0
+ },
+ "ranged_hit": {
+  "rating_bonus": 0.0,
+  "value": 0.0,
+  "rating_normalized": 0
+ },
+ "spell_hit": {
+  "rating_bonus": 0.0,
+  "value": 0.0,
+  "rating_normalized": 0
+ }
+}

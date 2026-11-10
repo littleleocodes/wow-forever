@@ -16,6 +16,7 @@ import re
 
 HERE = pathlib.Path(__file__).resolve().parent
 DATA = HERE.parent
+SHORT_WORD = "faster"   # "better" for a tank (render sets it from the plan)
 KIND = {"dungeon": "Dungeon", "quest": "Quest", "craft": "Craft", "auction": "Auction House", "market": "Auction House", "vendor": "Vendor"}
 
 
@@ -68,7 +69,7 @@ def item(r):
 
 def upgrade_line(r, lv, why=True):
     when = "now" if r["level"] <= lv else f"wear at {r['level']}"
-    head = f'{item(r)} <span class="slot">{esc(r["slot"])}</span> <span class="pct">{esc(r["pct"])} faster</span>'
+    head = f'{item(r)} <span class="slot">{esc(r["slot"])}</span> <span class="pct">{esc(r["pct"])} {esc(SHORT_WORD)}</span>'
     bits = [f"{when}", f"saves about {r['minutes']} min"]
     if r.get("until"):
         bits.append(f"until {r['until']}")
@@ -150,7 +151,8 @@ def steps_html(C, lv):
     for pp, st in craft_steps:
         for n, k in st.get("mats") or []:
             mats[n] = mats.get(n, 0) + k
-    gear_crafts = [r for r in soon if r["kind"] == "craft" and r["level"] <= lv + 3]
+    can = {cr["item"]: cr["known"] or (cr.get("skill") or 0) <= cr["have"] for cr in C.get("crafts") or []}   # a recipe her skill
+    gear_crafts = [r for r in soon if r["kind"] == "craft" and r["level"] <= lv + 3 and can.get(r["item"], True)]   # allows now
 
     # 1. buy
     items = []
@@ -238,7 +240,10 @@ def steps_html(C, lv):
     if nxt:
         items.append(info(f"Keep {coins(nxt['cost'])} for level {nxt['level']}", ", ".join(esc(n) for n in nxt["need"])))
     tal = C.get("talents") or {}
-    if tal.get("path"):
+    if tal.get("respec"):   # points that follow another build: respec, then the order's points so far
+        items.append(todo(f"respec{lv}", "Respec at a trainer, then take " + ", ".join(f"{esc(t)} {n}" for t, n in tal["respec"]),
+                          "in this order · next: " + " · ".join(f"{L} {esc(n)}" for L, n in tal["path"][:4])))
+    elif tal.get("path"):
         path = " · ".join(f"{L} {esc(n)}" for L, n in tal["path"][:4])
         if tal.get("have", 0) < tal.get("want", 0):
             items.append(todo(f"talent{lv}", "Spend your talent point", path))
@@ -298,9 +303,12 @@ def steps_html(C, lv):
 
 
 def render(cfg, C):
+    global SHORT_WORD
     h = C["head"]
+    SHORT_WORD = h.get("short", "faster")
     lv = h["level"]
-    g = guide(cfg["class"], h["spec"])
+    g = (json.load(open(DATA.parent.parent / cfg["guide"], encoding="utf-8")) if cfg.get("guide") and (DATA.parent.parent / cfg["guide"]).exists()
+         else guide(cfg["class"], h["spec"]))
     soon, later = C.get("soon") or [], C.get("later") or []
     gold = C.get("gold") or {}
     town = steps_html(C, lv)
@@ -362,6 +370,7 @@ def render(cfg, C):
         coming=f'<h4>Coming to your bars</h4><ul class="coming">{coming_html}</ul>' if coming_html else "",
         stage=stage_html(g, lv), jrows=jrows,
         rates=esc(", ".join(f"1 {k.replace('mp5', 'mana per 5 sec')} = {v}" for k, v in rates.items() if k != "armor")),
+        unit=esc(C.get("unit", "spell power")),
         by40=coins(by40), mount=coins(mount), mlevel=gold.get("mount_level", 40), mbar=f"{mbar:.0f}",
         mount_at=(f"enough at level {gold['mount_at']}" if gold.get("mount_at") else "not enough on income alone"),
         share=f"{100 * (gold.get('gear_share') or 0):.0f}%", gear40=coins(gold.get("gear_before40")), at60=coins(max(0, gold.get("at60") or 0)),
@@ -481,7 +490,7 @@ footer {{ color: var(--muted); font-size: .8rem; margin-top: 28px; }}
       <section class="card"><h3><span class="where">Your bars</span>Keys at level {lv}</h3>{bars}{coming}</section>
       <section class="card"><h3><span class="where">The fight</span>What to press</h3>{stage}</section>
       <section class="card"><h3><span class="where">Loot check</span>Is this drop better?</h3>
-        <p class="small muted">Add up a piece's stats in spell power: {rates}; frost damage counts 85%. Wear it when it reaches the bold number.</p>
+        <p class="small muted">Add up a piece's stats in {unit}: {rates}. Wear it when it reaches the bold number.</p>
         <div class="tablewrap"><table><thead><tr><th>Slot</th><th>You wear</th><th class="n">Worth</th><th class="n">Beat with</th></tr></thead><tbody>{jrows}</tbody></table></div>
       </section>
       <section class="card"><h3><span class="where">Gold</span>Mount at {mlevel}</h3>

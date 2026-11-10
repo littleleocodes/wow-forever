@@ -1,0 +1,98 @@
+{
+ "_links": {
+  "self": {
+   "href": "https://us.api.blizzard.com/profile/wow/character/tara-dickhoff/specializations?namespace=profile-forever-us"
+  }
+ },
+ "character": {
+  "key": {
+   "href": "https://us.api.blizzard.com/profile/wow/character/tara-dickhoff?namespace=profile-forever-us"
+  },
+  "name": "Tara",
+  "id": 16647005,
+  "surname": "Dickhoff",
+  "slug": "tara-dickhoff"
+ },
+ "specialization_groups": [
+  {
+   "is_active": true,
+   "specializations": [
+    {
+     "specialization": {
+      "key": {
+       "href": "https://us.api.blizzard.com/data/wow/playable-specialization/184?namespace=static-1.60.1_70399-forever-us"
+      },
+      "name": "Retribution",
+      "id": 184
+     },
+     "talents": [
+      {
+       "talent": {
+        "name": "Benediction",
+        "id": 135236
+       },
+       "spell_tooltip": {
+        "spell": {
+         "name": "Benediction",
+         "id": 20101
+        },
+        "description": "Reduces the Mana cost of all instant cast spells and abilities by 10%.",
+        "cast_time": "Passive"
+       },
+       "talent_rank": 5
+      },
+      {
+       "talent": {
+        "name": "Conviction",
+        "id": 135233
+       },
+       "spell_tooltip": {
+        "spell": {
+         "name": "Conviction",
+         "id": 20117
+        },
+        "description": "Improves your chance to get a critical strike with all spells and attacks by 4%.",
+        "cast_time": "Passive",
+        "power_cost": null
+       },
+       "talent_rank": 2
+      },
+      {
+       "talent": {
+        "name": "Sanctified Judgement",
+        "id": 135231
+       },
+       "spell_tooltip": {
+        "spell": {
+         "name": "Sanctified Judgement",
+         "id": 1311074
+        },
+        "description": "Gives your Judgement ability a 100% chance to return 60% of the Mana cost of the judged seal.",
+        "cast_time": "Passive"
+       },
+       "talent_rank": 3
+      },
+      {
+       "talent": {
+        "name": "Seal of Command",
+        "id": 135226
+       },
+       "spell_tooltip": {
+        "spell": {
+         "name": "Seal of Command",
+         "id": 20375
+        },
+        "description": "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage.  Only one Seal can be active on the Paladin at any one time.  Lasts 30 sec.\r\n\r\nUnleashing this Seal's energy will judge an enemy, instantly causing 52 to 57 Holy damage, 104 to 113 if the target is stunned or incapacitated.",
+        "cast_time": "Instant",
+        "power_cost": "58 Mana"
+       },
+       "talent_rank": 1
+      }
+     ],
+     "specialization_name": "Retribution",
+     "spent_points": 11
+    }
+   ]
+  }
+ ]
+}

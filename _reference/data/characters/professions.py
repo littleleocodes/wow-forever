@@ -44,7 +44,7 @@ def forever_recipes(professions, region="us"):
     cache = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
     today = datetime.date.today()
     todo = [x for x in professions if x in PROFESSION_ID and (x not in cache or (today - datetime.date.fromisoformat(
-        cache[x].get("fetched", "2000-01-01"))).days > 7)]
+        cache[x].get("fetched", "2000-01-01"))).days > 7 or cache[x].get("v", 1) < 2)]   # v2: reagent names kept
     if todo:
         import bnet
         tok = bnet.token(region)
@@ -69,10 +69,10 @@ def forever_recipes(professions, region="us"):
                 for rid, (st, x) in pool.map(one, ids):
                     if st == 200:
                         rec[str(rid)] = {"name": x.get("name"), "item": (x.get("crafted_item") or {}).get("id"),
-                                         "reagents": [[g["reagent"]["id"], g["quantity"]] for g in x.get("reagents") or []]}
+                                         "reagents": [[g["reagent"]["id"], g["quantity"], g["reagent"].get("name")] for g in x.get("reagents") or []]}
                     elif str(rid) in old:   # a failed read keeps last week's copy
                         rec[str(rid)] = old[str(rid)]
-            cache[prof] = {"fetched": today.isoformat(), "recipes": rec}
+            cache[prof] = {"fetched": today.isoformat(), "recipes": rec, "v": 2}
             path.parent.mkdir(exist_ok=True)
             path.write_text(json.dumps(cache, separators=(",", ":")) + "\n", encoding="utf-8")   # saved after each profession
     sla = {int(r["ID"]): (int(r["Spell"]), int(r["TrivialSkillLineRankLow"])) for r in csv.DictReader(open(SLA, encoding="utf-8"))}
@@ -82,7 +82,8 @@ def forever_recipes(professions, region="us"):
             if int(rid) in sla:
                 spell, yellow = sla[int(rid)]
                 out[spell] = {"recipe": int(rid), "profession": prof, "name": r["name"], "item": r["item"],
-                              "reagents": [tuple(g) for g in r["reagents"]], "yellow": yellow}
+                              "reagents": [(g[0], g[1]) for g in r["reagents"]], "yellow": yellow,
+                              "names": {g[0]: g[2] for g in r["reagents"] if len(g) > 2 and g[2]}}
     return out
 
 

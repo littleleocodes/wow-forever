@@ -1,0 +1,126 @@
+{
+ "_links": {
+  "self": {
+   "href": "https://us.api.blizzard.com/profile/wow/character/tara-dickhoff/quests?namespace=profile-forever-us"
+  }
+ },
+ "character": {
+  "key": {
+   "href": "https://us.api.blizzard.com/profile/wow/character/tara-dickhoff?namespace=profile-forever-us"
+  },
+  "name": "Tara",
+  "id": 16647005,
+  "surname": "Dickhoff",
+  "slug": "tara-dickhoff"
+ },
+ "in_progress": [
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/1653?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "The Test of Righteousness",
+   "id": 1653
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/389?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Bazil Thredd",
+   "id": 389
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/948?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Onu",
+   "id": 948
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/3765?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "The Corruption Abroad",
+   "id": 3765
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/1003?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Buzzbox 525",
+   "id": 1003
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/959?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Trouble at the Docks",
+   "id": 959
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/729?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "The Absent Minded Prospector",
+   "id": 729
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/1487?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Deviate Eradication",
+   "id": 1487
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/965?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "The Tower of Althalaxx",
+   "id": 965
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/1491?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Smart Drinks",
+   "id": 1491
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/2139?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Tharnariun's Hope",
+   "id": 2139
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/1486?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Deviate Hides",
+   "id": 1486
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/6981?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "The Glowing Shard",
+   "id": 6981
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/95161?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Remember That I Love You",
+   "id": 95161
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/79008?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "... and that note you found",
+   "id": 79008
+  }
+ ],
+ "completed": {
+  "href": "https://us.api.blizzard.com/profile/wow/character/tara-dickhoff/quests/completed?namespace=profile-forever-us"
+ }
+}

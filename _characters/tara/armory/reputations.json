@@ -1,0 +1,162 @@
+{
+ "_links": {
+  "self": {
+   "href": "https://us.api.blizzard.com/profile/wow/character/tara-dickhoff/reputations?namespace=profile-forever-us"
+  }
+ },
+ "character": {
+  "key": {
+   "href": "https://us.api.blizzard.com/profile/wow/character/tara-dickhoff?namespace=profile-forever-us"
+  },
+  "name": "Tara",
+  "id": 16647005,
+  "surname": "Dickhoff",
+  "slug": "tara-dickhoff"
+ },
+ "reputations": [
+  {
+   "faction": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/reputation-faction/47?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Ironforge",
+    "id": 47
+   },
+   "standing": {
+    "raw": 6258,
+    "value": 3258,
+    "max": 6000,
+    "tier": 4,
+    "name": "Friendly"
+   }
+  },
+  {
+   "faction": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/reputation-faction/577?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Everlook",
+    "id": 577
+   },
+   "standing": {
+    "raw": 625,
+    "value": 625,
+    "max": 3000,
+    "tier": 3,
+    "name": "Neutral"
+   }
+  },
+  {
+   "faction": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/reputation-faction/470?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Ratchet",
+    "id": 470
+   },
+   "standing": {
+    "raw": 750,
+    "value": 750,
+    "max": 3000,
+    "tier": 3,
+    "name": "Neutral"
+   }
+  },
+  {
+   "faction": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/reputation-faction/69?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Darnassus",
+    "id": 69
+   },
+   "standing": {
+    "raw": 5860,
+    "value": 2860,
+    "max": 6000,
+    "tier": 4,
+    "name": "Friendly"
+   }
+  },
+  {
+   "faction": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/reputation-faction/72?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Stormwind",
+    "id": 72
+   },
+   "standing": {
+    "raw": 9921,
+    "value": 921,
+    "max": 12000,
+    "tier": 5,
+    "name": "Honored"
+   }
+  },
+  {
+   "faction": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/reputation-faction/21?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Booty Bay",
+    "id": 21
+   },
+   "standing": {
+    "raw": 625,
+    "value": 625,
+    "max": 3000,
+    "tier": 3,
+    "name": "Neutral"
+   }
+  },
+  {
+   "faction": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/reputation-faction/54?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Gnomeregan Exiles",
+    "id": 54
+   },
+   "standing": {
+    "raw": 5583,
+    "value": 2583,
+    "max": 6000,
+    "tier": 4,
+    "name": "Friendly"
+   }
+  },
+  {
+   "faction": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/reputation-faction/369?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Gadgetzan",
+    "id": 369
+   },
+   "standing": {
+    "raw": 725,
+    "value": 725,
+    "max": 3000,
+    "tier": 3,
+    "name": "Neutral"
+   }
+  },
+  {
+   "faction": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/reputation-faction/2827?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Powderfuse",
+    "id": 2827
+   },
+   "standing": {
+    "raw": 625,
+    "value": 625,
+    "max": 3000,
+    "tier": 3,
+    "name": "Neutral"
+   }
+  }
+ ]
+}

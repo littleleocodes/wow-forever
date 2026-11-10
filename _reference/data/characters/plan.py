@@ -49,7 +49,8 @@ SLOT_ORDER = ["head", "neck", "shoulder", "back", "chest", "wrist", "hands", "wa
               "trinket2", "weapon", "ranged"]
 ENCHANT_SLOT = {"Bracer": "wrist", "Chest": "chest", "Cloak": "back", "Gloves": "hands", "Boots": "feet", "2H Weapon": "weapon2h",
                 "Weapon": "weapon"}
-TEXT_STAT = {"intellect": "intellect", "stamina": "stamina", "spirit": "spirit", "strength": "strength", "agility": "agility",
+TEXT_STAT = {"defense": "defense", "attack power": "attack_power", "block value": "block_value", "block": "block_value",
+             "intellect": "intellect", "stamina": "stamina", "spirit": "spirit", "strength": "strength", "agility": "agility",
              "spell power": "spell_power", "spell damage": "spell_power", "armor": "armor", "mana regeneration per 5 sec": "mp5",
              "mana regen": "mp5"}
 
@@ -75,8 +76,8 @@ def snapshot(cfg, d, refresh):
             if (arm / f"{p}.json").exists()}, (arm / "fetched.txt").read_text(encoding="utf-8").strip()
 
 
-def weights(cls, rot):
-    w = json.load(open(HERE / "weights" / f"{cls}-{rot}.json", encoding="utf-8"))
+def weights(cls, rot, fname=None):
+    w = json.load(open(HERE / "weights" / (fname or f"{cls}-{rot}.json"), encoding="utf-8"))
     lv = sorted(int(k) for k in w["levels"])
     raw = {L: w["levels"][str(L)] for L in lv}
     stats = list(raw[lv[0]]["weights"])
@@ -205,14 +206,27 @@ def enchants(school_share):
 FRECIPES = {}   # Forever's recipe book for the character's professions (professions.forever_recipes, main)
 
 
+RNAMES = {}
+
+
+def reagent_name(i):
+    if not RNAMES:
+        RNAMES.update({int(r["item"]): r["name"] for r in csv.DictReader(open(IP.RAW / "item_names.csv", encoding="utf-8"))})
+        RNAMES.update({it["id"]: it["name"] for it in IP.sim_db()["items"] if it["id"] not in RNAMES})
+    if i not in RNAMES:   # a Forever item neither list has: Blizzard's item API (cached weekly)
+        RNAMES[i] = (IP.item_texts([i]).get(str(i)) or {}).get("name") or f"item {i}"
+    return RNAMES[i]
+
+
 def reagents_of(spell):
     """[(name, count, item id)] of a craft spell: Forever's recipe (Blizzard's API) when known, else the Classic one."""
-    names = {int(r["item"]): r["name"] for r in csv.DictReader(open(IP.RAW / "item_names.csv", encoding="utf-8"))}
     if spell in FRECIPES:
-        return [(names.get(i, str(i)), n, i) for i, n in FRECIPES[spell]["reagents"]]
+        nm = FRECIPES[spell].get("names") or {}
+        return [(nm.get(i) or reagent_name(i), n, i) for i, n in FRECIPES[spell]["reagents"]]
+    names = {}
     for r in csv.DictReader(open(IP.RAW / "craft_spells.csv", encoding="utf-8")):
         if int(r["spell"]) == spell:
-            return [(names.get(int(x.split(":")[0]), x.split(":")[0]), int(x.split(":")[1]), int(x.split(":")[0]))
+            return [(names.get(int(x.split(":")[0])) or reagent_name(int(x.split(":")[0])), int(x.split(":")[1]), int(x.split(":")[0]))
                     for x in r["reagents"].split(";") if x]
     return []
 
@@ -325,6 +339,7 @@ PLANNED = []              # (level, copper) of the buys budget_walk fits, for th
 NOW_LV = 0                # the character's level (main)
 PLAN_EVENTS = []          # the plan's upgrades (main), for the profession section
 CTX = {}                  # what the town checklist page (checklist.py) shows, filled while the README is written
+FASTER, SHORT, KILLING = "faster kills", "faster", "min of killing"   # a tank (character.json "metric": "tank"): better tanking
 BONUS = []                # dungeon drops worth chasing on top of the sure plan (bonus_drops)
 ROUTE = None              # the character's RestedXP route (rxp.route), when its saved files are on this PC
 AUCTION_FUTURE = False   # what-if (2026-11-09): treat today's listings as buyable at their level later (how soon cheap AH gear replaces a buy)
@@ -651,7 +666,7 @@ def dungeon_runs(bonus):
             items.append(f"{what} ({e['slot']}, from level {e['level']}; {' or '.join(x['boss'] for x in ss)}, "
                          f"{ch:.0%} drop{', chance unknown' if not any(x.get('chance') for x in ss) else ''}"
                          + (f"; the other half drops in {oz}, {op:.0%}" if oz else "")
-                         + f"): over your {e['over']}, {pct(e['bonus_gain'])} faster, about {e['bonus_minutes']:.0f} min saved "
+                         + f"): over your {e['over']}, {pct(e['bonus_gain'])} {SHORT}, about {e['bonus_minutes']:.0f} min saved "
                          + ("with both halves" if oz else "if it drops"))
         out.append({"zone": z, "lo": lo, "hi": hi, "worth": round(worth), "own": worth >= MIN_MINUTES, "items": items,
                     "first": min(e["level"] for e, _ in merged.values())})
@@ -840,15 +855,15 @@ def best_chain(evs, at):
         if evs[c]["level"] == evs[k]["level"] and g <= 0:
             continue   # a runner-up at the same level the chain beat outright
         if g < UPGRADE:
-            why = f"only {pct(g)} faster"
+            why = f"only {pct(g)} {SHORT}"
         elif certainty(evs[c], held(k)) < 1 and m >= MIN_MINUTES:
-            why = f"{pct(g)} faster, but a dungeon drop ({certainty(evs[c], held(k)):.0%} in your run): a surer upgrade saves more on average"
+            why = f"{pct(g)} {SHORT}, but a dungeon drop ({certainty(evs[c], held(k)):.0%} in your run): a surer upgrade saves more on average"
         elif m < MIN_MINUTES:
-            why = f"{pct(g)} faster, saves about {m:.0f} min before {'60' if not nxt else 'its next upgrade'}"
+            why = f"{pct(g)} {SHORT}, saves about {m:.0f} min before {'60' if not nxt else 'its next upgrade'}"
         elif price and m < earn:
-            why = f"{pct(g)} faster, saves about {m:.0f} min, but its {AH.money(price)} takes about {earn:.0f} min of play to earn"
+            why = f"{pct(g)} {SHORT}, saves about {m:.0f} min, but its {AH.money(price)} takes about {earn:.0f} min of play to earn"
         else:
-            why = f"{pct(g)} faster, but a later upgrade of the slot saves more without it"
+            why = f"{pct(g)} {SHORT}, but a later upgrade of the slot saves more without it"
         evs[k].setdefault("passed", []).append((evs[c]["level"], evs[c]["item"]["name"], g, why))
     out = []
     for k, c in enumerate(pick):
@@ -863,11 +878,29 @@ def best_chain(evs, at):
 
 
 # ---------------------------------------------------------------------------------------------------------------- page
-def talents_check(cfg, snap, level):
+def pick(cfg):
+    """(build, order, provisional, rotation): the spec's leveling page pick (level_guides.pick), or for a character with
+    "talent_order": {"kind": "tank", "build", "entry", "tree"} that tank build in the tank-first order (2026-11-09, Tara)."""
+    t = cfg.get("talent_order")
+    if t and t.get("kind") == "tank":
+        import tank_order as TO
+        return TO.build_of(cfg["class"], t["build"]), TO.order(cfg["class"], t["build"], t["entry"], t["tree"]), False, t.get("rotation", "group tank")
     sys.path.insert(0, str(DATA))
     import level_guides as LG
-    import run as FR
-    b, order, prov, rot = LG.pick(cfg["class"], cfg["spec"])
+    return LG.pick(cfg["class"], cfg["spec"])
+
+
+def talents_check(cfg, snap, level):
+    sys.path.insert(0, str(DATA))
+    sys.path.insert(0, str(DATA / "fightlab"))   # the fight lab's run.py by its path (a bare "import run" found raidsim's for a tank)
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("fightlab_run", DATA / "fightlab" / "run.py")
+    FR = sys.modules.get("fightlab_run")
+    if FR is None:
+        FR = importlib.util.module_from_spec(spec)
+        sys.modules["fightlab_run"] = FR
+        spec.loader.exec_module(FR)
+    b, order, prov, rot = pick(cfg)
     want = FR.allocation_at({"allocation": b["allocation"], "order": order}, level)
     have = {}
     for g in snap["specializations"].get("specialization_groups") or []:
@@ -891,7 +924,19 @@ def talents_check(cfg, snap, level):
             queue.append(n)
     free = 60 - level
     path = [(level + 1 + i, n) for i, n in enumerate(queue[:free])]
-    return b, rot, rows, sum(have.values()), sum(want.values()), path, queue[free:]
+    # a character whose points mostly follow another build respecs (Tara, Retribution points for a tank, 2026-11-09): the order's points
+    # up to its level to take after the respec, and the order's next points from there
+    respec = []
+    match = sum(min(have.get(n, 0), w) for n, w in want.items())
+    if want and match < 0.5 * sum(want.values()):
+        pts = [n for _, n in FL.expand(order)]
+        for n in pts[:max(0, level - 9)]:
+            if respec and respec[-1][0] == n:
+                respec[-1][1] += 1
+            else:
+                respec.append([n, 1])
+        path = [(10 + i, n) for i, n in enumerate(pts) if 10 + i > level]
+    return b, rot, rows, sum(have.values()), sum(want.values()), path, queue[free:] if not respec else [], respec
 
 
 def pct(x):
@@ -901,18 +946,30 @@ def pct(x):
 def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     lv = snap["profile"]["level"]
     name = f"{snap['profile']['name']} {snap['profile'].get('surname', '')}".strip()
-    b, rot, tdiff, have_n, want_n, tpath, tdrop = talents_check(cfg, snap, lv)
-    o = [f"# {name}", "",
-         f"> Generated by `_reference/data/characters/plan.py {cfg['name']}` from Blizzard's character API (fetched {fetched}). Do not hand-edit:",
-         "> refresh with the same command. Item values are seconds per kill from this project's fight lab for the leveling page build",
-         f"> ([{cfg['spec']}](../../{cfg['class']}/leveling/{cfg['page']}.md), rotation `{rot}`), a model of the beta, not a measurement.", ""]
+    b, rot, tdiff, have_n, want_n, tpath, tdrop, respec = talents_check(cfg, snap, lv)
+    if cfg.get("metric") == "tank":   # a group tank (2026-11-09, Tara)
+        o = [f"# {name}", "",
+             f"> Generated by `_reference/data/characters/plan.py {cfg['name']}` from Blizzard's character API (fetched {fetched}). Do not hand-edit:",
+             "> refresh with the same command. Item values are tank value: threat, damage taken and effective health, from the raid "
+             f"simulator's level-60 build `{b['id']}` in its gear (`characters/weights/{wfile}`), a model of the beta, not a measurement. "
+             "\"Better tanking\" is that share of tank value, and the minutes count it as the same share of faster group play (a better "
+             "tank pulls more and the healer rests less: an assumption). Talents: that build in the tank-first order (`characters/tank_order.py`).", ""]
+    else:
+        o = [f"# {name}", "",
+             f"> Generated by `_reference/data/characters/plan.py {cfg['name']}` from Blizzard's character API (fetched {fetched}). Do not hand-edit:",
+             "> refresh with the same command. Item values are seconds per kill from this project's fight lab for the leveling page build",
+             f"> ([{cfg['spec']}](../../{cfg['class']}/leveling/{cfg['page']}.md), rotation `{rot}`), a model of the beta, not a measurement.", ""]
     race, cls = snap["profile"]["race"]["name"], snap["profile"]["character_class"]["name"]
     o += [f"Level **{lv}** {race} {cls}, {snap['profile']['faction']['name']}. Professions: " +
           ", ".join(f"{k} {v[0]}/{v[1]}" for k, v in profs.items()) + "." +
           (f" Gold: **{AH.money(GOLD)}**." if GOLD is not None else " Gold: unknown (log in with bnet_login.py; the login lasts a day)."), ""]
     # talents
     o += ["## Talents", ""]
-    if not tdiff:
+    if respec:
+        o += [f"Your {have_n} points follow another build. Respec at a trainer, then take these {sum(n for _, n in respec)} points in this order: "
+              + ", ".join(f"**{t}** {n}" for t, n in respec) + ".", "",
+              "Your next talents: " + ", ".join(f"{L} {n}" for L, n in tpath[:6]) + ".", ""]
+    elif not tdiff:
         o += [f"Your {have_n} talent points match the page's order at level {lv}.", ""]
     else:
         o += [f"Against the page's order at level {lv} ({want_n} points; you have {have_n} spent):", "", "| Talent | Yours | The page |", "|---|---|---|"]
@@ -925,8 +982,9 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     o += [f"- {x}" for x in cfg.get("talent_notes", [])] + ([""] if cfg.get("talent_notes") else [])
     CTX.update({"head": {"name": name, "level": lv, "race": race, "class": cls, "gold": GOLD, "fetched": fetched,
                          "faction": snap["profile"]["faction"]["name"], "professions": {k: list(v) for k, v in profs.items()},
-                         "ah_age": PRICES.age_hours() if PRICES else None, "spec": cfg["spec"], "page": cfg["page"]},
-                "talents": {"diff": tdiff, "path": tpath[:6], "drop": tdrop, "have": have_n, "want": want_n}})
+                         "ah_age": PRICES.age_hours() if PRICES else None, "spec": cfg["spec"], "page": cfg["page"],
+                         "short": SHORT, "faster": FASTER},
+                "talents": {"diff": tdiff, "path": tpath[:6], "drop": tdrop, "have": have_n, "want": want_n, "respec": respec}})
     o += change_lines(d, events, lv)
     # now: the upgrades to go after at this level or within LOOKAHEAD levels, by what you do for them
     wl = at(lv)
@@ -950,7 +1008,7 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     CTX["later"] = [event_row(e, at) for e in sorted(events, key=lambda e: (max(e["get_at"], lv), e["level"]))
                     if lv + LOOKAHEAD < max(e["get_at"], lv) <= lv + 14]
     CTX["enchants"] = enchant_lines(worn, ench, profs, wl, at, lv)
-    o += ["### Enchant", ""] + (enchant_lines(worn, ench, profs, wl, at, lv) or ["- Nothing worth 0.1% faster kills at your Enchanting skill."]) + [""]
+    o += ["### Enchant", ""] + (enchant_lines(worn, ench, profs, wl, at, lv) or [f"- Nothing worth 0.1% {FASTER} at your Enchanting skill."]) + [""]
     tmin, tlv = trip(cfg, snap, at, lv)
     CTX["trip"] = {"minutes": tmin, "level": tlv}
     cl = consumable_lines(lv, wl, profs, cfg["school_share"], tmin, at)
@@ -985,11 +1043,11 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
             o += [f"| {slot} | **empty** | 0 | {('level ' + str(rep['level']) + ': ' + rep['item']['name']) if rep else 'nothing worth 0.5% before 60'} |"]
             continue
         v = value(it["stats"], wl) + value(it["enchant_stats"], wl)
-        o += [f"| {slot} | {it['name']}{' (' + ', '.join(it['enchant']) + ')' if it['enchant'] else ''} | {pct(v / wl['time'])} faster kills | "
+        o += [f"| {slot} | {it['name']}{' (' + ', '.join(it['enchant']) + ')' if it['enchant'] else ''} | {pct(v / wl['time'])} {FASTER} | "
               f"{('level ' + str(rep['level']) + ': ' + rep['item']['name']) if rep else 'not before 60 by 0.5%'} |"]
     o += [""]
     # level by level: by the level you act (the earliest the quest, dungeon or recipe allows); "wear at" when it comes later
-    o += ["## Level by level", "", f"Each upgrade worth {UPGRADE:.1%} faster kills or more, under the level at which you can go and get it, "
+    o += ["## Level by level", "", f"Each upgrade worth {UPGRADE:.1%} {FASTER} or more, under the level at which you can go and get it, "
           "with the level you can wear it when that is later. Dungeon drops carry Classic's drop chance and a fallback if they do not drop; "
           "auction house items on later visits are ones the house usually lists, at their usual price.", ""]
     later = [e for e in events if max(e["get_at"], lv) > lv + LOOKAHEAD]
@@ -1030,7 +1088,10 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
 
 
 PLAY_KILL_SHARE = 0.5   # the share of play time spent killing (the rest: travel, quest turn-ins, looting, vendoring): an estimate
-ESSENTIALS = {"mage": {"Arcane Intellect", "Frost Armor", "Ice Armor", "Conjure Water", "Conjure Food", "Frost Nova", "Blink", "Counterspell"}}
+ESSENTIALS = {"mage": {"Arcane Intellect", "Frost Armor", "Ice Armor", "Conjure Water", "Conjure Food", "Frost Nova", "Blink", "Counterspell"},
+              "paladin": {"Devotion Aura", "Righteous Fury", "Seal of Righteousness", "Judgement", "Blessing of Might", "Blessing of Wisdom",
+                          "Holy Light", "Flash of Light", "Lay on Hands", "Hammer of Justice", "Redemption", "Divine Protection",
+                          "Divine Shield", "Blessing of Protection", "Purify", "Cleanse", "Consecration"}}
 MOUNT = {"level": 40, "riding": 200000, "mount": 800000, "discount_rep": "Honored"}   # Classic: riding 20g + mount 80g, 10% off the
                                                                                         # mount at Honored with the race's faction
 
@@ -1047,8 +1108,11 @@ def training_by_level(cls):
 def needed_spells(cfg):
     """The spells the character's rotation and kit use: every bold name of its by-level guide, plus the class's essentials (buffs,
     conjures, the escape and control kit); other trainer spells are optional (a frost mage's fire spells, teleports)."""
-    g = json.load(open(DATA / "level-guides" / f"{cfg['class']}.json", encoding="utf-8"))
-    x = next((x for x in g["guides"] if x["spec"] == cfg["spec"]), {})
+    if cfg.get("guide") and (DATA.parent.parent / cfg["guide"]).exists():   # the character's own guide (Tara the group tank, 2026-11-09)
+        x = json.load(open(DATA.parent.parent / cfg["guide"], encoding="utf-8"))
+    else:
+        g = json.load(open(DATA / "level-guides" / f"{cfg['class']}.json", encoding="utf-8"))
+        x = next((x for x in g["guides"] if x["spec"] == cfg["spec"]), {})
     return set(re.findall(r"\*\*([^*]+)\*\*", json.dumps(x))) | ESSENTIALS.get(cfg["class"], set())
 
 
@@ -1222,7 +1286,7 @@ def line(e, at):
     what, src = upgrade_name(e)
     rep = f", replaces {e['replaces']}" if e.get("replaces") else ""
     until = f"; best until level {e['until']}" if e.get("until") else "; best to the end of leveling"
-    out = f"- **{e['slot']}**: {what}, {pct(e['gain'])} faster kills{rep} ({wear}{until}; saves about {minutes_saved(e, at):.0f} min of killing). {src}."
+    out = f"- **{e['slot']}**: {what}, {pct(e['gain'])} {FASTER}{rep} ({wear}{until}; saves about {minutes_saved(e, at):.0f} {KILLING}). {src}."
     if e.get("wait"):
         out += f" {e['wait']}."
     if e.get("off_route"):
@@ -1236,7 +1300,7 @@ def line(e, at):
         return out + (f" {miss}, keep your {fb['keep']}." if fb["keep"] else "")
     if fb:
         when = f"from level {fb['level']}" if fb["level"] > e["level"] else "instead"
-        out += f" {miss}, wear {fb['item']['name']} {when} ({pct(fb['gain'])} faster kills; {sources_text(fb['item'])})."
+        out += f" {miss}, wear {fb['item']['name']} {when} ({pct(fb['gain'])} {FASTER}; {sources_text(fb['item'])})."
     return out
 
 
@@ -1380,7 +1444,8 @@ def profession_section(profs):
                    f"learn it ({s.get('learn') or 'source unknown'}); Classic asked {s['profession']} {s.get('skill') or '?'}, you have {have}")
             o += [f"- {e['item']['name']} ({e['slot']}, level {e['level']}): {how}."]
         o += [""]
-    for prof in ("Tailoring", "Enchanting", "Cooking"):
+    for prof in [x for x in ("Tailoring", "Blacksmithing", "Leatherworking", "Engineering", "Alchemy", "Enchanting", "Cooking", "First Aid",
+                              "Mining") if x in profs]:
         if prof not in profs:
             continue
         skill, cap = profs[prof]
@@ -1549,7 +1614,7 @@ def event_row(e, at):
     if fb and "keep" in fb:
         fbt = f"keep your {fb['keep']}" if fb["keep"] else None
     elif fb:
-        fbt = f"{fb['item']['name']}, {pct(fb['gain'])} faster ({sources_text(fb['item'])})"
+        fbt = f"{fb['item']['name']}, {pct(fb['gain'])} {SHORT} ({sources_text(fb['item'])})"
     why = None
     if e.get("passed") and (e["until"] or 60) - e["level"] >= 8:
         why = "; ".join(f"{n} at {L}: {w}" for L, n, g, w in sorted(sorted(e["passed"], key=lambda x: -x[2])[:2]))
@@ -1603,18 +1668,32 @@ def judge_lines(worn, events, wl, lv, cfg):
     """A quick test for a random drop or an auction find (2026-11-09, user: "random drops, whatever is available"): per slot what the
     item you will wear adds in spell power equivalents (each stat at this level's value over spell power's) and what a find must add on
     top to save MIN_MINUTES before the plan's next upgrade of the slot (and 0.5% faster kills)."""
-    sp = wl["w"].get("spell_power") or 0
+    unit = "stamina" if cfg.get("metric") == "tank" else "spell_power"   # a tank counts in stamina (2026-11-09, Tara)
+    sp = wl["w"].get(unit) or 0
     if sp <= 0:
         return []
-    rate = {k: wl["w"].get(k, 0.0) / sp for k in ("intellect", "spirit", "stamina", "mp5", "armor")}
-    sch = ", ".join(f"{k} {v:.0%}" for k, v in cfg["school_share"].items())
+    if unit == "spell_power":
+        rate = {k: wl["w"].get(k, 0.0) / sp for k in ("intellect", "spirit", "stamina", "mp5", "armor")}
+        sch = ", ".join(f"{k} {v:.0%}" for k, v in cfg["school_share"].items())
+        how = (f"Count a piece's stats in spell power: 1 intellect = {rate['intellect']:.2f}, 1 spirit = {rate['spirit']:.2f}, 1 stamina = "
+               f"{rate['stamina']:.2f}, 1 mana per 5 sec = {rate['mp5']:.2f}, 100 armor = {100 * rate['armor']:.2f}; school damage counts by "
+               f"your build's share ({sch}: +10 frost damage counts {10 * cfg['school_share'].get('frost', 0):.1f}), \"spell damage and "
+               "healing\" in full.")
+        CTX["rates"] = {**{k: round(v, 2) for k, v in rate.items()}, **{f"{k} damage": round(v, 2) for k, v in cfg["school_share"].items()}}
+    else:
+        names = {"armor": "100 armor", "block_value": "block value", "attack_power": "attack power", "weapon_dps": "weapon damage per second",
+                 "mp5": "mana per 5 sec"}
+        rate = sorted(((k, v / sp * (100 if k == "armor" else 1)) for k, v in wl["w"].items() if k != unit and abs(v / sp) >= 0.005),
+                      key=lambda kv: -abs(kv[1]))[:9]
+        how = "Count a piece's stats in stamina: " + ", ".join(f"1 {names.get(k, k)} = {v:.2f}".replace("1 100 armor", "100 armor")
+                                                             for k, v in rate) + "."
+        CTX["rates"] = {names.get(k, k): round(v, 2) for k, v in rate}
+    label = "spell power" if unit == "spell_power" else "stamina"
+    CTX["unit"] = label
     o = ["### Judging a drop or an auction find", "",
-         f"Count a piece's stats in spell power: 1 intellect = {rate['intellect']:.2f}, 1 spirit = {rate['spirit']:.2f}, 1 stamina = "
-         f"{rate['stamina']:.2f}, 1 mana per 5 sec = {rate['mp5']:.2f}, 100 armor = {100 * rate['armor']:.2f}; school damage counts by your "
-         f"build's share ({sch}: +10 frost damage counts {10 * cfg['school_share'].get('frost', 0):.1f}), \"spell damage and healing\" in "
-         "full. A find is worth wearing when it reaches the number below: enough to save "
+         how + " A find is worth wearing when it reaches the number below: enough to save "
          f"{MIN_MINUTES:.0f} minutes before the plan's next upgrade of the slot.", "",
-         "| Slot | You wear (or the plan's next piece) | Worth (spell power) | A find must reach | Next planned upgrade |", "|---|---|---|---|---|"]
+         f"| Slot | You wear (or the plan's next piece) | Worth ({label}) | A find must reach | Next planned upgrade |", "|---|---|---|---|---|"]
     for slot in SLOT_ORDER:   # against the item the plan has you in over the next levels (the planned one when it comes within LOOKAHEAD)
         it = worn.get(slot)
         since = max(lv, (it or {}).get("planned") or lv)
@@ -1628,7 +1707,6 @@ def judge_lines(worn, events, wl, lv, cfg):
         o += [f"| {slot} | {name} | {have:.0f} | {have + need:.0f} | {nxt if nxt < 60 else '-'} |"]
         CTX.setdefault("judge", []).append({"slot": slot, "item": name, "have": round(have), "need": round(have + need),
                                             "next": nxt if nxt < 60 else None})
-    CTX["rates"] = {k: round(v, 2) for k, v in rate.items()}
     return o + [""]
 
 
@@ -1658,7 +1736,7 @@ def enchant_lines(worn, ench, profs, wl, at=None, lv=None):
                            + (f" at level {it['until']}." if it.get("until") else "."))
                 continue
         if now and (nv - have) / wl["time"] >= 0.001:
-            txt.append(f"{now['name']} (Enchanting {now['skill']}, {now['learn']}), {pct((nv - have) / wl['time'])} faster kills"
+            txt.append(f"{now['name']} (Enchanting {now['skill']}, {now['learn']}), {pct((nv - have) / wl['time'])} {FASTER}"
                        + (f" over its {', '.join(it['enchant'])}" if it.get("enchant") else "") + ". Materials: "
                        + mats_text(now["reagents"]) + ".")
         nxt = sorted([e for e in opts if skill < e["skill"] <= skill + 30 and (value(e["stats"], wl) - max(have, nv)) / wl["time"] >= 0.001], key=lambda e: e["skill"])[:1]
@@ -1666,7 +1744,7 @@ def enchant_lines(worn, ench, profs, wl, at=None, lv=None):
             if at and lv and minutes_saved({"gain": (value(e["stats"], wl) - have) / wl["time"], "level": max(lv, it.get("since") or lv),
                                             "until": it.get("until")}, at) < MIN_MINUTES:
                 continue   # the same 20-minute bar as the enchant you can make now
-            txt.append(f"At Enchanting {e['skill']}: {e['name']} ({e['learn']}), {pct((value(e['stats'], wl) - have) / wl['time'])} faster kills.")
+            txt.append(f"At Enchanting {e['skill']}: {e['name']} ({e['learn']}), {pct((value(e['stats'], wl) - have) / wl['time'])} {FASTER}.")
         if txt:
             out.append(f"- {who}: " + " ".join(txt))
     return out
@@ -1681,10 +1759,12 @@ def main():
     cfg = json.load(open(d / "character.json", encoding="utf-8"))
     snap, fetched = snapshot(cfg, d, not a.no_refresh)
     sys.path.insert(0, str(DATA))
-    import level_guides as LG
-    b, order, prov, rot = LG.pick(cfg["class"], cfg["spec"])
-    wfile = f"{cfg['class']}-{rot}.json"
-    at, wrec = weights(cfg["class"], rot)
+    b, order, prov, rot = pick(cfg)
+    wfile = cfg.get("weights") or f"{cfg['class']}-{rot}.json"
+    at, wrec = weights(cfg["class"], rot, wfile)
+    global FASTER, SHORT, KILLING
+    if cfg.get("metric") == "tank":
+        FASTER, SHORT, KILLING = "better tanking", "better", "min of group play"
     commit, n_items = IP.sim_version()
     DATAVER.update({"sim": commit, "items": n_items, "weights": wrec.get("date"), "weights_build": wrec.get("build")})
     if wrec.get("build") != b["id"]:

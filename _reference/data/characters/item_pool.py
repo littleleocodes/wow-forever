@@ -32,9 +32,15 @@ SKILL_LINE = {"Tailoring": 197, "Enchanting": 333, "Leatherworking": 165, "Black
 # what a class may equip: armor types, weapon types by hand, ranged types (Classic rules; mages: daggers, one-hand swords, staves, wands)
 USE = {"mage": {"armor": {1}, "weapon": {(2, None), (9, 1), (9, 2), (8, 4), (5, 3)}, "ranged": {5}},
        "priest": {"armor": {1}, "weapon": {(2, None), (4, 1), (4, 2), (8, 4), (5, 3)}, "ranged": {5}},
-       "warlock": {"armor": {1}, "weapon": {(2, None), (9, 1), (9, 2), (8, 4), (5, 3)}, "ranged": {5}}}
+       "warlock": {"armor": {1}, "weapon": {(2, None), (9, 1), (9, 2), (8, 4), (5, 3)}, "ranged": {5}},
+       # a paladin tank (2026-11-09, Tara): cloth to plate, one-handed axes, maces and swords with a shield (no two-handers: a tank's
+       # weapon slot is a one-hander and a shield)
+       "paladin": {"armor": {1, 2, 3, 4}, "weapon": {(1, 1), (1, 2), (4, 1), (4, 2), (9, 1), (9, 2), (7, 3)}, "ranged": set()}}
 # stat ids of the database -> fight-lab gear keys; school damage counts by the spec's share of that school (SCHOOL_SHARE)
-STAT = {0: "strength", 1: "agility", 2: "stamina", 3: "intellect", 5: "spell_power", 13: "spirit", 27: "armor", 28: "armor", 31: "mp5"}
+STAT = {0: "strength", 1: "agility", 2: "stamina", 3: "intellect", 5: "spell_power", 13: "spirit", 27: "armor", 28: "armor", 31: "mp5",
+        # tank and melee stats (2026-11-09, Tara the group tank): a caster's stat values carry none of them, so they read zero there
+        4: "healing", 14: "attack_power", 17: "hit", 18: "crit", 19: "haste", 21: "expertise", 22: "defense", 23: "block",
+        24: "block_value", 25: "dodge", 26: "parry"}
 SCHOOLS = {6: "arcane", 7: "fire", 8: "frost", 9: "holy", 10: "nature", 11: "shadow"}
 # Classic's recommended level ranges (the client's dungeon finder of later expansions; Blizzard's level ranges of the Classic dungeons)
 DUNGEONS = {2437: ("Ragefire Chasm", 13, 18, "horde"), 718: ("Wailing Caverns", 17, 24, None), 1581: ("The Deadmines", 17, 26, "alliance"),
@@ -66,7 +72,8 @@ CLASSIC_SLOT = {1: "head", 2: "neck", 3: "shoulder", 5: "chest", 20: "chest", 6:
                 11: "finger", 12: "trinket", 16: "back", 13: "main-hand", 21: "main-hand", 17: "two-hand", 22: "off-hand", 23: "off-hand",
                 15: "ranged", 26: "ranged"}
 # Classic weapon subclasses a class may use (mage: daggers 15, one-hand swords 7, staves 10, wands 19)
-CLASSIC_WEAPONS = {"mage": {15, 7, 10, 19}, "priest": {15, 4, 10, 19}, "warlock": {15, 7, 10, 19}}
+CLASSIC_WEAPONS = {"mage": {15, 7, 10, 19}, "priest": {15, 4, 10, 19}, "warlock": {15, 7, 10, 19}, "paladin": {0, 4, 7}}
+CLASSIC_ARMOR = {"paladin": {0, 1, 2, 3, 4, 6}}   # armor subclasses a class wears besides cloth and misc (6: shields)
 SCHOOL_BITS = {2: "holy", 4: "fire", 8: "nature", 16: "frost", 32: "shadow", 64: "arcane"}
 
 
@@ -87,7 +94,7 @@ def classic_items(cls, school_share):
         mask = int(r["AllowableClass"])
         if mask not in (-1, 0) and not mask & (1 << (CLASS_ID[cls] - 1)):
             continue
-        if c == 4 and sc not in (0, 1):
+        if c == 4 and sc not in CLASSIC_ARMOR.get(cls, {0, 1}):
             continue
         if c == 2 and sc not in CLASSIC_WEAPONS.get(cls, set()):
             continue
@@ -330,6 +337,8 @@ def lab_stats(it, school_share):
             out["stamina"] = out.get("stamina", 0) + v / 10.0
     if it.get("type") == 14 and it.get("rangedWeaponType") == 5 and so.get("weaponDamageMax"):
         out["wand_dps"] = (so["weaponDamageMin"] + so["weaponDamageMax"]) / 2 / (it.get("weaponSpeed") or 1.5)
+    elif it.get("type") == 13 and so.get("weaponDamageMax"):   # a melee weapon's damage per second (a tank's threat and a melee's damage)
+        out["weapon_dps"] = (so["weaponDamageMin"] + so["weaponDamageMax"]) / 2 / (it.get("weaponSpeed") or 2.0)
     return out
 
 

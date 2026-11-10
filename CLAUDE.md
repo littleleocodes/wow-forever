@@ -95,6 +95,12 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   the repository; the files are found by character name at run time and the account folder's name (the account's) is never printed.
   Each dungeon gets a verdict (user: "I just want to do the ones you deem worth it"): the guide's own; a side trip only for a quest reward
   the gear plan counts on, drops worth 20 minutes on average or three quests at full experience; skipped when outgrown or too thin.
+  **A group tank** (Tara, 2026-11-09: a Protection paladin with a healer in her group, raid tank at 60): character.json `metric: tank`
+  values gear by tank value (`characters/tank_weights.py`: the raid simulator's threat and damage-taken stat weights for the spec's tank
+  build, plus effective health it does not score; `weights/<class>-tank.json`), counts a share of tank value as the same share of faster
+  group play, takes the tank build in the tank-first order (`characters/tank_order.py`: own tree first, each point to the legal talent
+  with the most tank value per point by the simulator's removal values), and reads her own guide (`_characters/<name>/guide.json`,
+  hand-kept, the level-guides shape) for the checklist's keys, fight stage and needed spells.
 - File names: lowercase kebab-case. Build ids: `<spec>-<variant>-<content>` (e.g. `fury-dw-raid`, `pvp-frost`, `leveling-arms`).
 - Never put class-specific content in `_reference/`; never put cross-class facts inside a class folder.
 

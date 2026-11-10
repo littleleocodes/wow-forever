@@ -1,0 +1,511 @@
+{
+ "spec": "Protection (group tank)",
+ "intro": "What Tara, a Human Protection paladin, presses from level 22 to 60 as her group's tank, stage by stage. She levels with a healer, quests and dungeons together, and tanks with a one-handed weapon and a shield: **Righteous Fury** always on, **Seal of Fury** kept up, **Judgement** on cooldown and to taunt, **Consecration** on packs, **Holy Shield** from 30. The healer heals; her own heals are for emergencies. The talents follow her tank-first order (one point a level from 10, ordered by tank value in the community's raid simulator), which ends in the 0/35/16 Protection raid build. The rotation is the raid simulator's level-60 tank list as the Protection raid page shows it, cut to the spells she has at each level. What this guide says about packs, pulls, threat on adds and saving the healer is advice: no simulator in this project plays a five-player group. Each stage lists the full priority, so you can jump in at your level.",
+ "stages": [
+  {
+   "from": 22,
+   "title": "Tank for the group",
+   "change": "Respec into the tank order and tank behind a shield: **Righteous Fury** always on, **Seal of Fury** up, **Judgement** on cooldown and to taunt, **Consecration** on packs. **Templar's Bulwark** (22) is your save.",
+   "press": [
+    "Before the pull: **Righteous Fury** on (it lasts 30 minutes) and **Seal of Fury** up (middle mouse). Put the seal back when its 30 seconds run out.",
+    "A mob turns to the healer or another player: tab to it and **Judgement** it (R, 10 yards). With **Seal of Fury** up the judgement taunts it for 3 seconds; then press Q so your swings and **Holy Strike** go to it.",
+    "**Hammer of Justice** (E, 10 yards) a caster that stands back and casts, or a mob still on the healer after the taunt.",
+    "**Judgement** (R) on your target whenever it is ready. It is off the global cooldown: press it with the others.",
+    "**Consecration** (1) when two or more mobs stand on you, and again every 8 seconds while they do. On a single mob, only while your mana is above half.",
+    "**Holy Strike** (Q) whenever it is ready.",
+    "**Exorcism** (2) on an Undead or Demon whenever it is ready."
+   ],
+   "if_hurt": "For when the healer cannot heal you (out of mana, dead, stunned or out of sight) and you drop below about a third of your health: **Templar's Bulwark** (F), then **Holy Light** behind its absorb, or **Flash of Light** below a quarter; a healing potion (C) when the Bulwark is on cooldown. **Lay on Hands** below 15%. **Divine Protection** (Shift+F) only when the group is lost: you cannot attack inside it.",
+   "notes": [
+    "Your points up to 22 are passive except **Templar's Bulwark**: **Redoubt** (10-14) and **Shield Specialization** (20-21) need the shield, and the second gives you 4% of your mana back on a block, once every 3 seconds; **Precision** (15-17) is 3% hit, fewer misses on your threat; **Guardian's Favor** (18) brings **Blessing of Protection** back a minute sooner; **Sacred Duty** (19) brings **Templar's Bulwark** and the bubble back 30 seconds sooner. **Toughness** (23-24): more armor from items.",
+    "**Righteous Fury** adds 33% threat, and 90% more on Holy damage: your seal's swings, **Judgement**, **Consecration** and the Holy part of **Holy Strike**. Keep it on in every group fight, quests included.",
+    "**Consecration** is your only hit on several mobs at once (the first 4 that enter it take the most). It costs 135 mana at rank 1, a lot at this level, hence the mana rule on single mobs. Advice: this project's simulators play one mob or one boss, never a pack.",
+    "**Templar's Bulwark** is off the global cooldown: an absorb as large as your health for 8 seconds, and you keep attacking behind it. It shares Forbearance with **Divine Protection**.",
+    "Saving the healer: **Judgement** (R) taunts, **Hammer of Justice** (E) stuns, **Blessing of Protection** (Shift+Mouse 4) on the healer stops physical hits for 6 seconds (8 from 24) and does not stop their spells. It replaces your hour-long blessing on them: put that back after the fight. In Classic a mob turns from a player it cannot hurt to the next on its threat list, and Forbearance lands on the healer, not on you; neither is checked in Forever."
+   ]
+  },
+  {
+   "from": 25,
+   "title": "Improved Righteous Fury",
+   "change": "**Improved Righteous Fury** (25-27): 3% less damage taken a rank while **Righteous Fury** is on, 9% at 27. Nothing new to press.",
+   "press": [
+    "Before the pull: **Righteous Fury** on (it lasts 30 minutes) and **Seal of Fury** up (middle mouse). Put the seal back when its 30 seconds run out.",
+    "A mob turns to the healer or another player: tab to it and **Judgement** it (R, 10 yards). With **Seal of Fury** up the judgement taunts it for 3 seconds; then press Q so your swings and **Holy Strike** go to it.",
+    "**Hammer of Justice** (E, 10 yards) a caster that stands back and casts, or a mob still on the healer after the taunt.",
+    "**Judgement** (R) on your target whenever it is ready. It is off the global cooldown: press it with the others.",
+    "**Consecration** (1) when two or more mobs stand on you, and again every 8 seconds while they do. On a single mob, only while your mana is above half.",
+    "**Holy Strike** (Q) whenever it is ready.",
+    "**Exorcism** (2) on an Undead or Demon whenever it is ready."
+   ],
+   "if_hurt": "For when the healer cannot heal you (out of mana, dead, stunned or out of sight) and you drop below about a third of your health: **Templar's Bulwark** (F), then **Holy Light** behind its absorb, or **Flash of Light** below a quarter; a healing potion (C) when the Bulwark is on cooldown. **Lay on Hands** below 15%. **Divine Protection** (Shift+F) only when the group is lost: you cannot attack inside it.",
+   "notes": [
+    "Every hit on you is smaller while **Righteous Fury** is on, so the healer's mana goes further: one more reason never to let it drop."
+   ]
+  },
+  {
+   "from": 28,
+   "title": "Swift Judgement, a second taunt",
+   "change": "**Swift Judgement** (28): a free extra **Judgement** once a minute, off the global cooldown and on its own cooldown. With **Seal of Fury** up it is a second taunt.",
+   "press": [
+    "Before the pull: **Righteous Fury** on (it lasts 30 minutes) and **Seal of Fury** up (middle mouse). Put the seal back when its 30 seconds run out.",
+    "A mob turns to the healer or another player: tab to it and **Judgement** it (R, 10 yards), or **Swift Judgement** (Shift+R) when **Judgement** is on cooldown. With **Seal of Fury** up either taunts it for 3 seconds; then press Q so your swings go to it.",
+    "**Hammer of Justice** (E, 10 yards) a caster that stands back and casts, or a mob still on the healer after the taunt.",
+    "**Judgement** (R) on your target whenever it is ready. It is off the global cooldown: press it with the others.",
+    "**Swift Judgement** (Shift+R) whenever it is ready on a single mob or a boss; on a pack, keep it for a taunt.",
+    "**Consecration** (1) when two or more mobs stand on you, and again every 8 seconds while they do. On a single mob, only while your mana is above half.",
+    "**Holy Strike** (Q) whenever it is ready.",
+    "**Exorcism** (2) on an Undead or Demon whenever it is ready."
+   ],
+   "if_hurt": "For when the healer cannot heal you (out of mana, dead, stunned or out of sight) and you drop below about a third of your health: **Templar's Bulwark** (F), then **Holy Light** behind its absorb, or **Flash of Light** below a quarter; a healing potion (C) when the Bulwark is on cooldown. **Lay on Hands** below 15%. **Divine Protection** (Shift+F) only when the group is lost: you cannot attack inside it.",
+   "notes": [
+    "**Swift Judgement** judges your seal without touching **Judgement**'s cooldown, and the seal stays up. Two loose mobs at once: R on the first, Shift+R on the second.",
+    "The raid page says to use **Swift Judgement** whenever it is ready; the raid simulator's tuned list never reached its line, so how much it adds is not measured. Keeping it for taunts on packs is advice.",
+    "**Toughness** (29): more armor from items."
+   ]
+  },
+  {
+   "from": 30,
+   "title": "Holy Shield",
+   "change": "**Holy Shield** (30): 30% more block for 10 seconds and Holy damage with 20% extra threat on each block, 4 charges. Keep it up while mobs hit you.",
+   "press": [
+    "Before the pull: **Righteous Fury** on (it lasts 30 minutes) and **Seal of Fury** up (middle mouse). Put the seal back when its 30 seconds run out.",
+    "A mob turns to the healer or another player: tab to it and **Judgement** it (R, 10 yards), or **Swift Judgement** (Shift+R) when **Judgement** is on cooldown. With **Seal of Fury** up either taunts it for 3 seconds; then press Q so your swings go to it.",
+    "**Hammer of Justice** (E, 10 yards) a caster that stands back and casts, or a mob still on the healer after the taunt.",
+    "**Judgement** (R) on your target whenever it is ready. It is off the global cooldown: press it with the others.",
+    "**Swift Judgement** (Shift+R) whenever it is ready on a single mob or a boss; on a pack, keep it for a taunt.",
+    "**Consecration** (1) when two or more mobs stand on you, and again every 8 seconds while they do. On a single mob, only while your mana is above half.",
+    "**Holy Shield** (3) whenever it is down (its 4 charges used or its 10 seconds over) while mobs are hitting you.",
+    "**Holy Strike** (Q) whenever it is ready.",
+    "**Exorcism** (2) on an Undead or Demon whenever it is ready."
+   ],
+   "if_hurt": "For when the healer cannot heal you (out of mana, dead, stunned or out of sight) and you drop below about a third of your health: **Templar's Bulwark** (F), then **Holy Light** behind its absorb, or **Flash of Light** below a quarter; a healing potion (C) when the Bulwark is on cooldown. **Lay on Hands** below 15%. **Divine Protection** (Shift+F) only when the group is lost: you cannot attack inside it.",
+   "notes": [
+    "**Holy Shield** hurts every mob that hits you, not only your target: with **Consecration** it is what holds a pack. Its blocks also give mana back through **Shield Specialization**.",
+    "Mana: **Holy Shield** costs 100 at rank 1 and **Consecration** 235 at rank 2. When you run low, drop **Consecration** on single mobs first, then **Exorcism**.",
+    "**Toughness** (31-32) and **Reckoning** (33-34) are passive: after a block or a critical hit taken, **Reckoning** can store an extra swing for your next attack.",
+    "**Divine Shield** (34) replaces **Divine Protection** on Shift+F: you can keep attacking inside it, at half damage. Mobs may still leave you for the healer (the Classic rule in the stage at 22), so it stays a last resort.",
+    "**Divine Intervention** (30, Shift+X) on the healer when the group is wiping: you die, the healer is safe for up to 3 minutes and can bring everyone back once the mobs reset. It needs a Symbol of Divinity in your bags."
+   ]
+  },
+  {
+   "from": 35,
+   "title": "Iron Creed",
+   "change": "**Iron Creed** (35-37): **Holy Strike** makes 10% more threat a rank and, while **Righteous Fury** is on, cuts your damage taken by 2% a rank for 6 seconds. Same buttons.",
+   "press": [
+    "Before the pull: **Righteous Fury** on (it lasts 30 minutes) and **Seal of Fury** up (middle mouse). Put the seal back when its 30 seconds run out.",
+    "A mob turns to the healer or another player: tab to it and **Judgement** it (R, 10 yards), or **Swift Judgement** (Shift+R) when **Judgement** is on cooldown. With **Seal of Fury** up either taunts it for 3 seconds; then press Q so your swings go to it.",
+    "**Hammer of Justice** (E, 10 yards) a caster that stands back and casts, or a mob still on the healer after the taunt.",
+    "**Judgement** (R) on your target whenever it is ready. It is off the global cooldown: press it with the others.",
+    "**Swift Judgement** (Shift+R) whenever it is ready on a single mob or a boss; on a pack, keep it for a taunt.",
+    "**Consecration** (1) when two or more mobs stand on you, and again every 8 seconds while they do. On a single mob, only while your mana is above half.",
+    "**Holy Shield** (3) whenever it is down (its 4 charges used or its 10 seconds over) while mobs are hitting you.",
+    "**Holy Strike** (Q) whenever it is ready.",
+    "**Exorcism** (2) on an Undead or Demon whenever it is ready."
+   ],
+   "if_hurt": "For when the healer cannot heal you (out of mana, dead, stunned or out of sight) and you drop below about a third of your health: **Templar's Bulwark** (F), then **Holy Light** behind its absorb, or **Flash of Light** below a quarter; a healing potion (C) when the Bulwark is on cooldown. **Lay on Hands** below 15%. **Divine Shield** (Shift+F) only when the group is lost.",
+   "notes": [
+    "**Holy Strike** comes every 10 seconds, so the 6-second cut covers about 60% of a fight until **Shieldsworn** at 40 shortens the cooldown to 6.",
+    "**Reckoning** (38-39): 4 of its 5 ranks."
+   ]
+  },
+  {
+   "from": 40,
+   "title": "Shieldsworn",
+   "change": "**Shieldsworn** (40): **Holy Strike** every 6 seconds instead of 10, struck with the shield: it triggers **Holy Shield** and **Shield Specialization** without using their charges, and lets you block spells for 6 seconds.",
+   "press": [
+    "Before the pull: **Righteous Fury** on (it lasts 30 minutes) and **Seal of Fury** up (middle mouse). Put the seal back when its 30 seconds run out.",
+    "A mob turns to the healer or another player: tab to it and **Judgement** it (R, 10 yards), or **Swift Judgement** (Shift+R) when **Judgement** is on cooldown. With **Seal of Fury** up either taunts it for 3 seconds; then press Q so your swings go to it.",
+    "**Hammer of Justice** (E, 10 yards) a caster that stands back and casts, or a mob still on the healer after the taunt.",
+    "**Judgement** (R) on your target whenever it is ready. It is off the global cooldown: press it with the others.",
+    "**Swift Judgement** (Shift+R) whenever it is ready on a single mob or a boss; on a pack, keep it for a taunt.",
+    "**Consecration** (1) when two or more mobs stand on you, and again every 8 seconds while they do. On a single mob, only while your mana is above half.",
+    "**Holy Shield** (3) whenever it is down (its 4 charges used or its 10 seconds over) while mobs are hitting you.",
+    "**Holy Strike** (Q) whenever it is ready.",
+    "**Exorcism** (2) on an Undead or Demon whenever it is ready."
+   ],
+   "if_hurt": "For when the healer cannot heal you (out of mana, dead, stunned or out of sight) and you drop below about a third of your health: **Templar's Bulwark** (F), then **Holy Light** behind its absorb, or **Flash of Light** below a quarter; a healing potion (C) when the Bulwark is on cooldown. **Lay on Hands** below 15%. **Divine Shield** (Shift+F) only when the group is lost.",
+   "notes": [
+    "Q comes up every 6 seconds now: pressed on cooldown, it keeps **Iron Creed**'s damage cut up nearly all the time.",
+    "After each **Holy Strike** you can block spells for 6 seconds: against casters on you, keep Q rolling.",
+    "**Reckoning** (41) is complete; **Anticipation** (42-44): 12 more Defense.",
+    "**Cleanse** (42) replaces **Purify** on 4: it also removes a magic effect, on you or anyone in the group."
+   ]
+  },
+  {
+   "from": 44,
+   "title": "Hammer of Wrath, Retribution points",
+   "change": "**Hammer of Wrath** (44): a ranged Holy hit on a mob below 20% health, the raid list's last line. From 45 the points go into Retribution, starting with **Deflection** (45-49).",
+   "press": [
+    "Before the pull: **Righteous Fury** on (it lasts 30 minutes) and **Seal of Fury** up (middle mouse). Put the seal back when its 30 seconds run out.",
+    "A mob turns to the healer or another player: tab to it and **Judgement** it (R, 10 yards), or **Swift Judgement** (Shift+R) when **Judgement** is on cooldown. With **Seal of Fury** up either taunts it for 3 seconds; then press Q so your swings go to it.",
+    "**Hammer of Justice** (E, 10 yards) a caster that stands back and casts, or a mob still on the healer after the taunt.",
+    "**Judgement** (R) on your target whenever it is ready. It is off the global cooldown: press it with the others.",
+    "**Swift Judgement** (Shift+R) whenever it is ready on a single mob or a boss; on a pack, keep it for a taunt.",
+    "**Consecration** (1) when two or more mobs stand on you, and again every 8 seconds while they do. On a single mob, only while your mana is above half.",
+    "**Holy Shield** (3) whenever it is down (its 4 charges used or its 10 seconds over) while mobs are hitting you.",
+    "**Holy Strike** (Q) whenever it is ready.",
+    "**Hammer of Wrath** (Shift+Q) on a mob below 20% health, when nothing above is ready.",
+    "**Exorcism** (2) on an Undead or Demon whenever it is ready."
+   ],
+   "if_hurt": "For when the healer cannot heal you (out of mana, dead, stunned or out of sight) and you drop below about a third of your health: **Templar's Bulwark** (F), then **Holy Light** behind its absorb, or **Flash of Light** below a quarter; a healing potion (C) when the Bulwark is on cooldown. **Lay on Hands** below 15%. **Divine Shield** (Shift+F) only when the group is lost.",
+   "notes": [
+    "**Hammer of Wrath** is a 1-second cast on a 6-second cooldown and costs 295 mana at rank 1: on trash with your mana short, leave the last 20% to the damage dealers.",
+    "**Deflection** (45-49): 5% more parry at 49.",
+    "**Blessing of Sacrifice** (46, Shift+1) on the healer when mobs reach them: 45 damage of each hit on them goes to you for 30 seconds. It replaces your other blessing on them: put **Blessing of Wisdom** back after the fight."
+   ]
+  },
+  {
+   "from": 50,
+   "title": "Improved Judgement",
+   "change": "**Improved Judgement** (50-51): **Judgement** every 8 seconds instead of 10, so more threat and a taunt ready sooner. Nothing new to press.",
+   "press": [
+    "Before the pull: **Righteous Fury** on (it lasts 30 minutes) and **Seal of Fury** up (middle mouse). Put the seal back when its 30 seconds run out.",
+    "A mob turns to the healer or another player: tab to it and **Judgement** it (R, 10 yards), or **Swift Judgement** (Shift+R) when **Judgement** is on cooldown. With **Seal of Fury** up either taunts it for 3 seconds; then press Q so your swings go to it.",
+    "**Hammer of Justice** (E, 10 yards) a caster that stands back and casts, or a mob still on the healer after the taunt.",
+    "**Judgement** (R) on your target whenever it is ready. It is off the global cooldown: press it with the others.",
+    "**Swift Judgement** (Shift+R) whenever it is ready on a single mob or a boss; on a pack, keep it for a taunt.",
+    "**Consecration** (1) when two or more mobs stand on you, and again every 8 seconds while they do. On a single mob, only while your mana is above half.",
+    "**Holy Shield** (3) whenever it is down (its 4 charges used or its 10 seconds over) while mobs are hitting you.",
+    "**Holy Strike** (Q) whenever it is ready.",
+    "**Hammer of Wrath** (Shift+Q) on a mob below 20% health, when nothing above is ready.",
+    "**Exorcism** (2) on an Undead or Demon whenever it is ready."
+   ],
+   "if_hurt": "For when the healer cannot heal you (out of mana, dead, stunned or out of sight) and you drop below about a third of your health: **Templar's Bulwark** (F), then **Holy Light** behind its absorb, or **Flash of Light** below a quarter; a healing potion (C) when the Bulwark is on cooldown. **Lay on Hands** below 15%. **Divine Shield** (Shift+F) only when the group is lost.",
+   "notes": [
+    "**Holy Wrath** (50, Shift+2): Holy damage to every Undead and Demon within 20 yards and a 2-second stun. A 2-second cast for 645 mana: for an Undead or Demon pack only.",
+    "**Conviction** (52-54): 6% more critical strike chance at 54.",
+    "**Greater Blessing of Might** (52) and **Greater Blessing of Wisdom** (54) cover every player of one class for an hour: raid tools. In a five-player group the plain blessings do the same job."
+   ]
+  },
+  {
+   "from": 55,
+   "title": "Sanctified Judgement",
+   "change": "**Sanctified Judgement** (55-57): every **Judgement** returns 60% of the judged seal's mana cost at 3 ranks. **Benediction** (58-59): instant spells cost 4% less.",
+   "press": [
+    "Before the pull: **Righteous Fury** on (it lasts 30 minutes) and **Seal of Fury** up (middle mouse). Put the seal back when its 30 seconds run out.",
+    "A mob turns to the healer or another player: tab to it and **Judgement** it (R, 10 yards), or **Swift Judgement** (Shift+R) when **Judgement** is on cooldown. With **Seal of Fury** up either taunts it for 3 seconds; then press Q so your swings go to it.",
+    "**Hammer of Justice** (E, 10 yards) a caster that stands back and casts, or a mob still on the healer after the taunt.",
+    "**Judgement** (R) on your target whenever it is ready. It is off the global cooldown: press it with the others.",
+    "**Swift Judgement** (Shift+R) whenever it is ready on a single mob or a boss; on a pack, keep it for a taunt.",
+    "**Consecration** (1) when two or more mobs stand on you, and again every 8 seconds while they do. On a single mob, only while your mana is above half.",
+    "**Holy Shield** (3) whenever it is down (its 4 charges used or its 10 seconds over) while mobs are hitting you.",
+    "**Holy Strike** (Q) whenever it is ready.",
+    "**Hammer of Wrath** (Shift+Q) on a mob below 20% health, when nothing above is ready.",
+    "**Exorcism** (2) on an Undead or Demon whenever it is ready."
+   ],
+   "if_hurt": "For when the healer cannot heal you (out of mana, dead, stunned or out of sight) and you drop below about a third of your health: **Templar's Bulwark** (F), then **Holy Light** behind its absorb, or **Flash of Light** below a quarter; a healing potion (C) when the Bulwark is on cooldown. **Lay on Hands** below 15%. **Divine Shield** (Shift+F) only when the group is lost.",
+   "notes": [
+    "With **Seal of Fury** at rank 6 (170 mana) that is about 100 mana back for each **Judgement**: one more reason to press R on cooldown."
+   ]
+  },
+  {
+   "from": 60,
+   "title": "Sacred Arbiter: the raid tank",
+   "change": "**Sacred Arbiter** (60): **Holy Strike** hits 20% harder and refreshes your judgements on the target. The build is complete (0/35/16); the list below is the Protection raid page's order.",
+   "press": [
+    "Before the pull: **Righteous Fury** on (it lasts 30 minutes) and **Seal of Fury** up (middle mouse). Put the seal back when its 30 seconds run out.",
+    "On a boss: **Templar's Bulwark** (F) as it reaches you and again whenever it is ready (the raid simulator's use in a 3-minute fight), or held for a known damage spike.",
+    "A mob turns to the healer or another player: tab to it and **Judgement** it (R, 10 yards), or **Swift Judgement** (Shift+R) when **Judgement** is on cooldown. With **Seal of Fury** up either taunts it for 3 seconds; then press Q so your swings go to it.",
+    "**Judgement** (R) whenever it is ready (off the global cooldown), and **Swift Judgement** (Shift+R) whenever it is ready unless you are keeping it for a taunt.",
+    "**Consecration** (1) whenever it is ready: the raid list casts it on a single boss too.",
+    "**Holy Shield** (3) whenever it is down (its 4 charges used or its 10 seconds over) while mobs are hitting you.",
+    "**Holy Strike** (Q) whenever it is ready.",
+    "**Hammer of Wrath** (Shift+Q) when the target is below 20% health.",
+    "**Exorcism** (2) on an Undead or Demon whenever it is ready."
+   ],
+   "if_hurt": "In a raid the healers keep you up: **Templar's Bulwark** (F) for a spike, **Lay on Hands** (Shift+Mouse 5) when you are about to die (it empties your mana). In a five-player group with the healer down, the lines of the stages before: **Holy Light** behind the Bulwark, **Flash of Light** below a quarter, **Divine Shield** (Shift+F) only when the group is lost.",
+   "notes": [
+    "The raid simulator's boss opener: **Seal of the Crusader** before the pull and its **Judgement** as the first hit (more Holy damage taken for 40 seconds, kept up by your swings and, with **Sacred Arbiter**, by **Holy Strike**), then **Seal of Fury** for the rest of the fight, with **Retribution Aura** and **Righteous Fury** up all fight.",
+    "**Hammer of Justice** (E) stays for trash casters: most bosses cannot be stunned.",
+    "The raid page's caveats: the simulator tanks one boss, so how **Consecration** and **Holy Shield** hold adds was never measured; it runs short of mana for a few seconds a fight, and **Consecration** is the expensive button (565 mana at rank 5)."
+   ]
+  }
+ ],
+ "between": [
+  "**Righteous Fury** on before the first pull, after every death, and when its 30 minutes run out. It costs 30% of your base mana: cast it while you drink.",
+  "Blessings, one from you on each player, an hour each: **Blessing of Kings** on yourself (10% more of every stat), **Blessing of Wisdom** on the healer and other mana users, **Blessing of Might** on warriors and rogues, **Blessing of Kings** on everyone else. A choice, not a measurement.",
+  "Aura: **Devotion Aura**, armor for everyone within 30 yards. The raid simulator tanks at 60 in **Retribution Aura** (about 2% of its threat, from Holy damage to every mob that strikes a group member). Neither was measured in a five-player group.",
+  "Drink with the healer and pull when you both have mana: you need it for **Consecration** and **Judgement** on packs, the healer to keep you up. Top yourself up with **Flash of Light** while the healer drinks, if your mana allows.",
+  "**Seal of Fury** just before each pull (middle mouse). After a wipe, **Redemption** brings the healer back out of combat (a 10-second cast).",
+  "Visit the trainer every even level: new ranks of **Seal of Fury**, **Holy Strike**, **Consecration** and **Holy Light**, and **Holy Shield**'s ranks at 40, 50 and 60."
+ ],
+ "other": [
+  "Pulls (advice, not measured): your only ranged openers are **Judgement** at 10 yards and **Exorcism** at 30 yards on Undead and Demons. Walk in, or pull a pack with casters around a corner so it comes to you and stands in your **Consecration**.",
+  "Marks: a skull on the mob to kill first, a cross on the next. Keep the skull your target and hold the rest with **Consecration** and **Holy Shield**; any mob that leaves you gets a tab and R.",
+  "Healing makes threat on every mob in the fight (the Classic rule), so the healer's first big heal on a fresh pull can draw mobs before you have hit them. Ask for a second or two: **Consecration** and a **Judgement** first.",
+  "Turn the pack away from the group, so melee players hit its backs and nobody stands in front of a cleave.",
+  "Questing together: the same buttons. Keep **Righteous Fury** on there too, so mobs stay on you and off the healer.",
+  "When the healer is dead or out of mana you are a solo Protection paladin: the paladin's Protection level-by-level guide (paladin/leveling/protection-by-level.md) has the solo emergency lines.",
+  "At 60 the build is the Protection raid page's (paladin/raid/protection.md): the same buttons, in the raid simulator's order."
+ ],
+ "keys": {
+  "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, with Shift+X in place of Shift+middle mouse. Keys are for spells you press in a fight and for the things that help you there; **Righteous Fury**, the blessings, the auras, food, drink, the mount and the Hearthstone have no key, you click them between fights. The layout is the paladin one of the other guides (Q the strike you press most, E the stun, R **Judgement**, the thumb buttons the heals, 4 the cure, C the potion), turned for tanking: F holds the tank's save, 1 and 3 the pack threat, the Shift bar the second taunt, the saves for other players and the last resorts. A key keeps its job from 22 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Setup and the macros: the paladin keybinds page (paladin/leveling/keybinds.md) and the paladin macros page (paladin/macros.md).",
+  "bars": [
+   {
+    "title": "Action bar 1: the fight",
+    "slots": [
+     {
+      "key": "Q",
+      "role": "Your strike, on cooldown; the macro also starts your swings, so a tab and Q turns them onto a loose mob",
+      "binds": [
+       {
+        "from": 22,
+        "spell": "Holy Strike"
+       }
+      ]
+     },
+     {
+      "key": "E",
+      "role": "Control: the stun, for a caster or a mob on the healer",
+      "binds": [
+       {
+        "from": 22,
+        "spell": "Hammer of Justice"
+       }
+      ]
+     },
+     {
+      "key": "R",
+      "role": "The payoff and the taunt: Judgement of Seal of Fury taunts for 3 seconds",
+      "binds": [
+       {
+        "from": 22,
+        "spell": "Judgement"
+       }
+      ]
+     },
+     {
+      "key": "F",
+      "role": "Defensive: an absorb as large as your health, and you keep tanking behind it",
+      "binds": [
+       {
+        "from": 22,
+        "spell": "Templar's Bulwark"
+       }
+      ]
+     },
+     {
+      "key": "Mouse 5",
+      "role": "Thumb reaction: the big heal, when the healer cannot",
+      "binds": [
+       {
+        "from": 22,
+        "spell": "Holy Light"
+       }
+      ]
+     },
+     {
+      "key": "Mouse 4",
+      "role": "Thumb reaction: the quick heal, next to the big one",
+      "binds": [
+       {
+        "from": 22,
+        "spell": "Flash of Light"
+       }
+      ]
+     },
+     {
+      "key": "1",
+      "role": "Threat on everything standing on you: packs",
+      "binds": [
+       {
+        "from": 22,
+        "spell": "Consecration"
+       }
+      ]
+     },
+     {
+      "key": "2",
+      "role": "Extra threat on Undead and Demons, and a 30-yard pull on them",
+      "binds": [
+       {
+        "from": 22,
+        "spell": "Exorcism"
+       }
+      ]
+     },
+     {
+      "key": "3",
+      "role": "The shield: more block and Holy damage on every block; keep it up",
+      "binds": [
+       {
+        "from": 30,
+        "spell": "Holy Shield"
+       }
+      ]
+     },
+     {
+      "key": "4",
+      "role": "Cure a poison or a disease (from 42 also magic), on you or the group",
+      "binds": [
+       {
+        "from": 22,
+        "spell": "Purify"
+       },
+       {
+        "from": 42,
+        "spell": "Cleanse"
+       }
+      ]
+     },
+     {
+      "key": "C",
+      "role": "A bad pull: the best healing potion in your bags (one cooldown for every potion)",
+      "binds": [
+       {
+        "from": 22,
+        "text": "Healing potion macro"
+       }
+      ]
+     },
+     {
+      "key": "Middle mouse",
+      "role": "The seal: before each pull and when its 30 seconds run out",
+      "binds": [
+       {
+        "from": 22,
+        "spell": "Seal of Fury"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Action bar 2: the same keys with Shift (second taunt, saves for others, last resorts)",
+    "slots": [
+     {
+      "key": "Shift+Q",
+      "role": "The finisher, below 20% health",
+      "binds": [
+       {
+        "from": 44,
+        "spell": "Hammer of Wrath"
+       }
+      ]
+     },
+     {
+      "key": "Shift+E",
+      "role": "Second control: send an Undead mob running",
+      "binds": [
+       {
+        "from": 24,
+        "spell": "Turn Undead"
+       }
+      ]
+     },
+     {
+      "key": "Shift+R",
+      "role": "The second taunt: a free extra Judgement once a minute",
+      "binds": [
+       {
+        "from": 28,
+        "spell": "Swift Judgement"
+       }
+      ]
+     },
+     {
+      "key": "Shift+F",
+      "role": "Last resort: the bubble, when the group is lost",
+      "binds": [
+       {
+        "from": 22,
+        "spell": "Divine Protection"
+       },
+       {
+        "from": 34,
+        "spell": "Divine Shield"
+       }
+      ]
+     },
+     {
+      "key": "Shift+Mouse 5",
+      "role": "The panic button: a full heal, on you or the healer",
+      "binds": [
+       {
+        "from": 22,
+        "spell": "Lay on Hands"
+       }
+      ]
+     },
+     {
+      "key": "Shift+Mouse 4",
+      "role": "Save a player a mob is hitting: immune to physical attacks",
+      "binds": [
+       {
+        "from": 22,
+        "spell": "Blessing of Protection"
+       }
+      ]
+     },
+     {
+      "key": "Shift+1",
+      "role": "Take part of the healer's hits on yourself",
+      "binds": [
+       {
+        "from": 46,
+        "spell": "Blessing of Sacrifice"
+       }
+      ]
+     },
+     {
+      "key": "Shift+2",
+      "role": "Undead and Demons: the area version",
+      "binds": [
+       {
+        "from": 50,
+        "spell": "Holy Wrath"
+       }
+      ]
+     },
+     {
+      "key": "Shift+3",
+      "role": "Free",
+      "binds": []
+     },
+     {
+      "key": "Shift+4",
+      "role": "Free yourself or a player from roots and slows",
+      "binds": [
+       {
+        "from": 22,
+        "spell": "Blessing of Freedom"
+       }
+      ]
+     },
+     {
+      "key": "Shift+C",
+      "role": "Mana: the best mana potion in your bags (it shares the healing potion's cooldown)",
+      "binds": [
+       {
+        "from": 22,
+        "text": "Mana potion macro"
+       }
+      ]
+     },
+     {
+      "key": "Shift+X",
+      "role": "The wipe: save the healer so they can bring the group back",
+      "binds": [
+       {
+        "from": 30,
+        "spell": "Divine Intervention"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "no_key": [
+   "Righteous Fury"
+  ],
+  "notes": [
+   "Turned for tanking from the paladin layout of the other guides: F holds **Templar's Bulwark** (the save you keep fighting behind) and the bubble moves to Shift+F; 1 holds **Consecration** and 3 **Holy Shield**, both pressed on every pack; the seal has its own key on the middle mouse button and R is plain **Judgement**, with **Swift Judgement** under it on Shift+R; **Blessing of Protection** moves to Shift+Mouse 4, **Turn Undead** to Shift+E (the second control), **Blessing of Freedom** to Shift+4 and **Hammer of Wrath** to Shift+Q.",
+   "R is plain **Judgement**, not the seal-and-Judgement castsequence of the Retribution layout: that macro starts over on every new target, so after a tab its first press casts the seal instead of the taunt. A tank tabs all the time.",
+   "Q is the Holy Strike macro of the paladin keybinds page (`/startattack [harm,nodead]`, then `/cast Holy Strike`): a tab and Q turns your swings onto a loose mob even while **Holy Strike** is on cooldown.",
+   "Mouseover versions for the group spells (optional; not tested in Forever's client): `/cast [@mouseover,help,nodead][] Blessing of Protection` on Shift+Mouse 4, and the same with **Blessing of Sacrifice**, **Blessing of Freedom**, **Cleanse** and **Lay on Hands**: point at a player's frame and press, and your target stays the mob. With Auto Self Cast on (Interface, Combat), the plain heals land on you while a mob is targeted.",
+   "**Templar's Bulwark** and **Swift Judgement** are off the global cooldown, like **Judgement**: press them in the same moment as Q.",
+   "No key: **Righteous Fury**, the blessings, the auras, **Redemption**, food, drink, the mount and the Hearthstone. Put them on a side bar and click them between fights.",
+   "Shift+3 stays free until something earns it."
+  ]
+ }
+}
