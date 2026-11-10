@@ -4,8 +4,8 @@
    "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/statistics?namespace=profile-forever-us"
   }
  },
- "health": 663,
- "power": 1916,
+ "health": 603,
+ "power": 1664,
  "power_type": {
   "key": {
    "href": "https://us.api.blizzard.com/data/wow/power-type/0?namespace=static-1.60.1_70399-forever-us"
@@ -28,11 +28,11 @@
  },
  "intellect": {
   "base": 60,
-  "effective": 106
+  "effective": 90
  },
  "stamina": {
   "base": 27,
-  "effective": 51
+  "effective": 45
  },
  "melee_crit": {
   "rating_bonus": 0.0,
@@ -77,14 +77,14 @@
  "spell_penetration": 0,
  "spell_crit": {
   "rating_bonus": 0.0,
-  "value": 5.0442,
+  "value": 4.3129997,
   "rating_normalized": 0
  },
  "mana_regen": 74.0,
  "mana_regen_combat": 4.0,
  "armor": {
   "base": 0,
-  "effective": 271
+  "effective": 274
  },
  "dodge": {
   "rating_bonus": 0.0,

@@ -219,6 +219,10 @@ def steps_html(C, lv):
 
     # 6. train
     items = []
+    gold = C.get("gold") or {}
+    if gold.get("gold") is not None and gold.get("reserve") and gold["gold"] < gold["reserve"]:
+        items.append(info(f'<strong>You are {coins(gold["reserve"] - gold["gold"])} short of your next training</strong>',
+                          "sell your crafts (step 4) before you buy anything"))
     tr = C.get("training") or []
     here = next((x for x in tr if x["level"] == lv), None)
     if here and here["need"]:

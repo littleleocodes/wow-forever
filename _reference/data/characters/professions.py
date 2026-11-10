@@ -3,7 +3,7 @@
 
 Data:
 - the recipes the character knows: the user's ForeverTape add-on records them from the open profession windows (F:/wow-addons, the
-  duckdb table `recipes`, read only and never between :25 and :28, when its hourly task writes); a copy is kept in
+  duckdb table `recipes`, read only and never between :25 and :30, when its hourly task writes and imports the game's saved file); a copy is kept in
   `_characters/<name>/recipes.json` so a page refresh works while the database is busy. Enchants that make no item are not recorded.
 - each recipe's skill-up range in Forever: the client's SkillLineAbility (raw/2026-11-09-wago-1.60.1.70862/): orange below
   TrivialSkillLineRankLow, yellow from it, green from halfway to TrivialSkillLineRankHigh, grey from there. Forever lists 1 as every
@@ -91,7 +91,7 @@ def known_recipes(char, duckdb_path, cache):
     it can be read now, else the last copy."""
     cache = pathlib.Path(cache)
     m = datetime.datetime.now().minute
-    if duckdb_path and pathlib.Path(duckdb_path).exists() and not 25 <= m <= 28:
+    if duckdb_path and pathlib.Path(duckdb_path).exists() and not 25 <= m <= 30:
         try:
             import duckdb
             con = duckdb.connect(str(duckdb_path), read_only=True)

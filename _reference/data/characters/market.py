@@ -2,7 +2,7 @@
 ... a refresh every couple levels, finding upgrades that make meaningful impacts"): how often each item and random-suffix version is
 listed and at what price, so the plan can count on gear that is usually for sale at a level although nobody lists it this hour.
 
-READ ONLY: duckdb read_only, one short connection, never between :25 and :28 (the add-on's hourly writer). Two series: the add-on's
+READ ONLY: duckdb read_only, one short connection, never between :25 and :30 (the add-on's hourly writer and import). Two series: the add-on's
 in-game scans (`auctions`, variant "b<suffix>", the usable ones) and Blizzard's hourly API files (`api_auctions`, bonus "<suffix>", house
 110: the alliance house AHCopy.lua reads). A window is one scan or one API file; an item's share is the windows it was listed in. Price:
 the median over its windows of the cheapest unit price. Cached in cache/market-<house>.json for a refresh while the database is busy.
@@ -18,7 +18,7 @@ HERE = pathlib.Path(__file__).resolve().parent
 def history(duckdb_path, house=110):
     """{"windows": n, "from": iso, "to": iso, "items": {"<item>:<variant>": [windows listed, median cheapest unit price]}}."""
     cache = HERE / "cache" / f"market-{house}.json"
-    if duckdb_path and pathlib.Path(duckdb_path).exists() and not 25 <= datetime.datetime.now().minute <= 28:
+    if duckdb_path and pathlib.Path(duckdb_path).exists() and not 25 <= datetime.datetime.now().minute <= 30:
         try:
             import duckdb
             con = duckdb.connect(str(duckdb_path), read_only=True)

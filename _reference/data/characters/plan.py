@@ -1109,7 +1109,9 @@ def gold_plan(cfg, snap, at, lv):
                    "income": [(r[0], r[1]) for r in rows[:6]]}
     o = ["## Gold plan", "",
          f"Gold now: **{AH.money(GOLD) if GOLD is not None else 'unknown (log in)'}**. Training you need at the next two levels: "
-         f"**{AH.money(reserve)}**. Free for gear now: **{AH.money(spend) if spend is not None else 'unknown'}**.", "",
+         f"**{AH.money(reserve)}**. Free for gear now: **{AH.money(spend) if spend is not None else 'unknown'}**."
+         + (f" You are **{AH.money(reserve - GOLD)} short** of that training: sell your crafts before you buy anything."
+            if GOLD is not None and GOLD < reserve else ""), "",
          f"Income is an estimate from Classic's data: coin and loot from about {kills_per_level(lv):.0f} kills a level (cloth, greens and "
          "other trade goods at the auction house's usual sale price after its cut, the rest at vendor prices), plus your pace of "
          f"{qpl:.1f} quests a level at Classic's quest money. It assumes you sell what drops or use it in place of buying it. \"Training\" counts the spells your rotation and kit use; optional ones (a frost mage's fire "
@@ -1353,9 +1355,6 @@ def profession_section(profs):
             continue
         groups, stop, mats = PF.skill_plan(prof, skill, cap, RECIPES, tri, unit_price, sell=resale)
         o += [f"### {prof} {skill} to {cap}", ""]
-        if prof == "Enchanting":
-            o += ["(The add-on records only recipes that make an item, so your enchants are not in this list: a skill point from an "
-                  "enchant you know can be cheaper than these.)", ""]
         if not groups:
             CTX["professions"].append({"name": prof, "skill": skill, "cap": cap, "stop": skill, "total": 0, "steps": [], "mats": []})
             o += ["No recipe you know gives a point at your skill: learn new ones at the trainer.", ""]
