@@ -11,6 +11,11 @@ Your 11 points follow another build. Respec at a trainer, then take these 13 poi
 
 Your next talents: 23 Toughness, 24 Toughness, 25 Improved Righteous Fury, 26 Improved Righteous Fury, 27 Improved Righteous Fury, 28 Swift Judgement.
 
+## Since your last refresh (2026-11-10 07:37, level 22)
+
+- Gold: 1g 5s 74c then, 1g 5s 74c now.
+- Nothing new in the plan.
+
 ## Gold plan
 
 Gold now: **1g 5s 74c**. Training you need at the next two levels: **2g 50s**. Free for gear now: **0c**. You are **1g 44s 26c short** of that training: sell your crafts before you buy anything.
@@ -71,7 +76,7 @@ Count a piece's stats in stamina: 100 armor = 5.65, 1 weapon damage per second =
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 0.4 hours old). "For your trip": enough to keep it up for about 1.7 hours of play, to your next training at level 24 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 0.9 hours old). "For your trip": enough to keep it up for about 1.7 hours of play, to your next training at level 24 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|
@@ -98,6 +103,12 @@ Run each once, with its quests in your log first: the quests' experience is the 
   - Quests: What Comes Around... (25, your guide picks it up); Crime and Punishment (26, your guide picks it up); Quell The Uprising (26, your guide picks it up); The Color of Blood (26, your guide picks it up); The Fury Runs Deep (27, start with "The Dark Iron War" from Motley Garmason / Longbraid the Grim / Ashlan Stonesmirk (Wetlands 50.0, 18.2)); The Stockade Riots (29, your guide picks it up); The Curious Visitor (29, your guide picks it up); Shadow of the Past (29, your guide picks it up); Look to an Old Friend (31, your guide picks it up); Infiltrating the Castle (31, your guide picks it up); Items of Some Consequence (31, your guide picks it up); The Attack! (31, your guide picks it up); The Head of the Beast (31, your guide picks it up); Brotherhood's End (31, your guide picks it up); An Audience with the King (31, your guide picks it up)
   - Drop: Jimmied Handcuffs (wrist, from level 24; Bruegal Ironknuckle, 33% drop): over your Bravo's Armbands, 0.6% better, about 24 min saved if it drops
 - Skip: Wailing Caverns (only 1 quest at full experience and no drops for you); The Deadmines (only 2 quests at full experience and no drops for you; your guide ran it at 19-20); Ruins of Lordaeron (only 1 quest at full experience and no drops for you; your guide ran it at 18-19).
+
+### Detours worth taking
+
+Quests your RestedXP route leaves out that pay for the walk (see Detours off your route below).
+
+- **The Corruption Abroad** (clear win): already in your log, around level 22 while your route is in Darkshore. About 1,450 experience for about 1 min (0 of it walking); saves about 3 min against your usual pace.
 
 ### Talents and the rest
 
@@ -245,6 +256,39 @@ Every leveling dungeon you have not outgrown, once, at the level its quests fit:
 - **Dire Maul** (55-60), run at level 57: worth a detour for 3 quests at full experience.
   - Quests: Enticing Negolash (52, from Ruined Lifeboat); Lethtendris's Web (57, from Latronicus Moonspear (Feralas 30.4, 46.2)); Pusillin and the Elder Azj'Tordin (58, from Azj'Tordin (Feralas 76.9, 37.4))
 - Skip: Wailing Caverns (only 1 quest at full experience and no drops for you); The Deadmines (only 2 quests at full experience and no drops for you; your guide ran it at 19-20); Ruins of Lordaeron (only 1 quest at full experience and no drops for you; your guide ran it at 18-19); Scholomance (you will have outgrown it).
+
+## Detours off your route
+
+Quests your RestedXP route leaves out, played as a detour from where the route is at that level: walk to the giver, do it at the nearest spots, hand it in, walk back. Three kinds: **clear win** (20% faster than your usual leveling pace and 3 minutes saved), **worth it if you like it** (at your pace or a bit better), and **for the gear** (its reward is in your gear plan; a little slower than your pace is fine). Estimates: straight-line travel with a margin, Classic's quest positions, your fight-lab time per kill. 152 quests scored; 69 could not be placed (an item starts them, or a target has no known spot); Forever's own quests have no positions here.
+
+### Level 22
+
+- **The Corruption Abroad** (clear win): already in your log, around level 22 while your route is in Darkshore. About 1,450 experience for about 1 min (0 of it walking); saves about 3 min against your usual pace.
+
+### Level 29
+
+- **Lightforge Ingots** (worth it if you like it): from Glorin Steelbrow (Wetlands 10.6, 60.6), around level 29 while your route is in Wetlands. About 2,884 experience for about 5 min (1 of it walking); saves about 2 min against your usual pace.
+
+### Level 33
+
+- **Stromgarde Badges** (clear win): from Captain Nials (Arathi Highlands 45.8, 47.5), around level 33 while your route is in Arathi Highlands. About 5,709 experience for about 11 min (5 of it walking); saves about 3 min against your usual pace.
+
+### Level 40
+
+- **Crushridge Warmongers** (clear win): from Marshal Redpath (Hillsbrad Foothills 49.5, 58.7), around level 40 while your route is in Hillsbrad Foothills. About 7,056 experience for about 13 min (5 of it walking); saves about 3 min against your usual pace.
+- **Fiery Blaze Enchantments** (worth it if you like it): from Sigrun Ironhew (Badlands 53.8, 43.3), around level 40 while your route is in Badlands. About 17,375 experience for about 36 min (2 of it walking); saves about 2 min against your usual pace.
+
+### Level 41
+
+- **Mai'Zoth** (clear win): from Brother Nimetz (Stranglethorn Vale 37.8, 3.6), around level 41 while your route is in Duskwood. About 5,350 experience for about 7 min (6 of it walking); saves about 4 min against your usual pace.
+
+### Level 49
+
+- **Muigin and Larion** (clear win): from Muigin (Un'Goro Crater 42.9, 9.6), around level 49 while your route is in Un'Goro Crater. About 11,489 experience for about 15 min (2 of it walking); saves about 7 min against your usual pace.
+
+### Level 51
+
+- **The Stones That Bind Us** (clear win): from Fallen Hero of the Horde (Swamp of Sorrows 34.3, 66.1), around level 51 while your route is in Swamp of Sorrows. About 13,940 experience for about 20 min (7 of it walking); saves about 5 min against your usual pace.
 
 ## How this is worked out
 

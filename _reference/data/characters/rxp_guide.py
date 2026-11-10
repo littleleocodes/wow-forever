@@ -71,6 +71,21 @@ def blocks(path):
     return [m.group(2) for m in re.finditer(r"RegisterGuide\(\s*(?:\"[^\"]*\"\s*,\s*)?\[(=*)\[(.*?)\]\1\]", text, re.S)]
 
 
+def world(arg, maps):
+    """(continent map id, world x, world y, zone) of a .goto argument, the inverse of `position` for the zone-name form."""
+    m = re.match(r"(\d+)/\d+,(-?[\d.]+),(-?[\d.]+)", arg)
+    if m:
+        b = maps.get(m.group(1))
+        return (b["map"], float(m.group(3)), float(m.group(2)), b["name"]) if b else None
+    m = re.match(r"([A-Za-z][^,]*),([\d.]+),([\d.]+)", arg)
+    if m:
+        b = next((v for v in maps.values() if v["name"] == m.group(1).strip()), None)
+        if b:
+            x, y = float(m.group(2)) / 100, float(m.group(3)) / 100
+            return (b["map"], b["x1"] - y * (b["x1"] - b["x0"]), b["y1"] - x * (b["y1"] - b["y0"]), b["name"])
+    return None
+
+
 def parse_file(text):
     """(header {tag: value}, steps [{"filter", "els": [{"tag", "arg", "filter"}]}]) of one guide text."""
     head, steps, cur = {}, [], None
@@ -312,7 +327,7 @@ def facts(cfg, snap, wow_dir, route):
             return override[t]
         return False if disabled else bool(prof["dungeons"].get(t))
 
-    out = {"quests": {}, "dungeons": {}, "past": set(), "who": who, "profile": prof, "runs": runs, "npcs": {},
+    out = {"quests": {}, "dungeons": {}, "past": set(), "who": who, "profile": prof, "runs": runs, "npcs": {}, "path": [],
            "taggable": {NAMES[t]: t for t in sorted(tagged) if not enabled(t)}}
     for sec in mine.values():   # where each NPC stands (the guide's own positions)
         for st in sec["steps"]:
@@ -338,6 +353,9 @@ def facts(cfg, snap, wow_dir, route):
                 floor = max(floor, min(hi, tags["xp"]))
             spot = where(tags, maps)
             past = i + 1 < cur
+            w = next((x for x in (world(a, maps) for a in reversed(tags.get("goto") or [])) if x), None)
+            if w and not past:   # where the route takes you, level by level (detours.py measures from here)
+                out["path"].append((level, w[0], w[1], w[2], w[3]))
             for op, q in ops:
                 if past:
                     out["past"].add(q)

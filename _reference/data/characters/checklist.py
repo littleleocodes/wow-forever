@@ -281,6 +281,9 @@ def steps_html(C, lv):
                           "once, with its quests · " + esc(dg.get("why", "")) + "".join(f"<br>Drop: {md(x)}" for x in dg["drops"])))
     if skipped:
         items.append(info("Skip", "; ".join(skipped)))
+    for x in C.get("detours") or []:   # quests off the RestedXP route worth a detour (detours.py, 2026-11-10)
+        if x["level"] <= lv + 3:
+            items.append(todo("det" + "-".join(str(q) for q, _ in x["quests"]), f"Detour around level {x['level']}", md(x["text"])))
     for r in soon:
         if r["kind"] in ("auction", "market") and r["get_at"] > lv:
             head, sub = upgrade_line(r, lv, why=False)

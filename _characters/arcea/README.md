@@ -18,12 +18,10 @@ Against the page's order at level 26 (17 points; you have 17 spent):
 Your next talents (the page's order from where you are): 27 Ice Shards, 28 Ice Shards, 29 Shatter, 30 Shatter, 31 Fingers of Frost, 32 Fingers of Frost.
 You stay one point off the page's order; at 60 you go without its last point (Arcane Mind), which measures least of its talents.
 
-## Since your last refresh (2026-11-09 19:01, level 26)
+## Since your last refresh (2026-11-10 07:37, level 26)
 
-- Gold: 67s 5c then, 50s 22c now.
-- New in the plan: Minor Channeling Ring (finger1, level 26), Lesser Mystic Wand (ranged, level 27), Ring of Forlorn Spirits (finger2, level 31), Regal Cuffs of Frozen Wrath (wrist, level 36).
-- Left the plan (worn, replaced by a better choice, or no longer listed): Ring of Forlorn Spirits (finger1), Snake Hoop (finger2), Red Mageweave Headband (head), Gravestone Scepter (ranged), Elder's Sash of Frozen Wrath (waist), Arcane Runed Bracers (wrist).
-- Moved: Conjurer's Hood of Magic (head) level 33 to 31, Robe of Power (chest) level 34 to 33.
+- Gold: 50s 22c then, 50s 22c now.
+- Nothing new in the plan.
 
 ## Gold plan
 
@@ -87,7 +85,7 @@ Count a piece's stats in spell power: 1 intellect = 0.22, 1 spirit = 0.27, 1 sta
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 0.4 hours old). "For your trip": enough to keep it up for about 3.0 hours of play, to your next training at level 28 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 0.8 hours old). "For your trip": enough to keep it up for about 3.0 hours of play, to your next training at level 28 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|
@@ -124,6 +122,13 @@ Run each once, with its quests in your log first: the quests' experience is the 
 - **Excavation Site: Wetlands** (27-35, estimated), run at level 27: your RestedXP guide runs it then and picks up 8 of its quests.
   - Quests: Fire Taboo (23, in your log, from Rethiel the Greenwarden (Wetlands 56.4, 40.4)); Blisters on The Land (26, your guide picks it up); Lost in the Thicket Things (27, your guide picks it up); Highland Hides (27, your guide picks it up); Songblade Search (28, in your log, from Dorin Songblade (Redridge Mountains 30.8, 46.4)); Horrors in the Highland (28, your guide picks it up); Fallen in the Fen (28, your guide picks it up); Heartwoven (28, your guide picks it up); Lost Relic Carry (28, your guide picks it up); Prehistoric Prism (28, your guide picks it up)
 - Skip: The Deadmines (you will have outgrown it; your guide ran it at 19-20).
+
+### Detours worth taking
+
+Quests your RestedXP route leaves out that pay for the walk (see Detours off your route below).
+
+- **High Sorcerer Andromath** (worth it if you like it): from Jennea Cannon (Stormwind City 38.6, 79.3), around level 26 while your route is in Stormwind City. About 1,050 experience for about 1 min (0 of it walking); saves about 3 min against your usual pace.
+- **Lightforge Ingots** (clear win): from Glorin Steelbrow (Wetlands 10.6, 60.6), around level 29 while your route is in Wetlands. About 2,884 experience for about 6 min (1 of it walking); saves about 3 min against your usual pace.
 
 ### Talents and the rest
 
@@ -312,6 +317,22 @@ Every leveling dungeon you have not outgrown, once, at the level its quests fit:
 - **Blackrock Spire** (55-60), run at level 58: worth a detour for 9 quests at full experience.
   - Quests: Poisoned Water (56, from Duke Hydraxis (Azshara 79.3, 73.7)); Stormers and Rumblers (57, from Duke Hydraxis (Azshara 79.3, 73.7)); The Final Tablets (58, start with "Screecher Spirits" from Yeh'kinya (Tanaris 67.0, 22.4)); Confront Yeh'kinya (58, start with "Screecher Spirits" from Yeh'kinya (Tanaris 67.0, 22.4)); Put Her Down (59, from Helendis Riverhorn (Burning Steppes 85.8, 68.9)); Bijou's Belongings (59, from Bijou); Message to Maxwell (59, start with "Bijou's Belongings" from Bijou); En-Ay-Es-Tee-Why (59, from Kibler (Burning Steppes 65.8, 22.0)); Kibler's Exotic Pets (59, from Kibler (Burning Steppes 65.8, 22.0))
 - Skip: The Deadmines (you will have outgrown it; your guide ran it at 19-20); Scholomance (you will have outgrown it).
+
+## Detours off your route
+
+Quests your RestedXP route leaves out, played as a detour from where the route is at that level: walk to the giver, do it at the nearest spots, hand it in, walk back. Three kinds: **clear win** (20% faster than your usual leveling pace and 3 minutes saved), **worth it if you like it** (at your pace or a bit better), and **for the gear** (its reward is in your gear plan; a little slower than your pace is fine). Estimates: straight-line travel with a margin, Classic's quest positions, your fight-lab time per kill. 106 quests scored; 59 could not be placed (an item starts them, or a target has no known spot); Forever's own quests have no positions here.
+
+### Level 26
+
+- **High Sorcerer Andromath** (worth it if you like it): from Jennea Cannon (Stormwind City 38.6, 79.3), around level 26 while your route is in Stormwind City. About 1,050 experience for about 1 min (0 of it walking); saves about 3 min against your usual pace.
+
+### Level 29
+
+- **Lightforge Ingots** (clear win): from Glorin Steelbrow (Wetlands 10.6, 60.6), around level 29 while your route is in Wetlands. About 2,884 experience for about 6 min (1 of it walking); saves about 3 min against your usual pace.
+
+### Level 51
+
+- **The Stones That Bind Us** (clear win): from Fallen Hero of the Horde (Swamp of Sorrows 34.3, 66.1), around level 51 while your route is in Swamp of Sorrows. About 13,940 experience for about 18 min (7 of it walking); saves about 4 min against your usual pace.
 
 ## How this is worked out
 

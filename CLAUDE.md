@@ -102,6 +102,16 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   and anything holding their text stay out of the repository (git-ignored in both repositories' `.git/info/exclude`) and nothing extracted
   is cached; pages carry quest, NPC, zone and level facts, never the guide's wording or its section names; the account folder's name is
   never printed.
+  **Detours** (`characters/detours.py`, 2026-11-10, user: "help me decide when I should pick up quests that are detours ... that aren't
+  included in RestedXP, but that we deem are still worth it because of the time they save"): every quest the character can take that the
+  route leaves out, played from the closest point the route passes at that level (giver, objectives at the nearest spawns, hand-in, back):
+  straight-line yards x 1.4 at running or mounted speed, kills x the fight lab's time per kill x 1.25, collected items over their drop
+  chance; worth = Forever's quest experience (Blizzard's quest API, Classic's reduction when outlevelled) plus the kills' experience at the
+  planner's leveling pace. Positions: `quest_geo_extract.py` (quest_geo.csv, spawns.csv, quest_item_sources.csv from the Classic dump; the
+  guides' NPC positions win). Three tiers (user, the same day: "I don't necessarily want this to be 100% optimized ... if something is
+  slightly less optimal, but it's still fun and somewhat easy to do and makes me stronger and level slightly faster, I'm willing to
+  sacrifice some of the optimization"): clear wins (1.2x the pace, 3 min saved), worth it if you like it (the pace or better), for the gear
+  (a reward the gear plan wears, down to 0.7x). Escorts and scripted events, item-started quests and Forever's own quests are not scored.
   Each dungeon gets a verdict (user: "I just want to do the ones you deem worth it"): the guide's own; a side trip only for a quest reward
   the gear plan counts on, drops worth 20 minutes on average or three quests at full experience; skipped when outgrown or too thin.
   **A group tank** (Tara, 2026-11-09: a Protection paladin with a healer in her group, raid tank at 60): character.json `metric: tank`

@@ -33,6 +33,7 @@ import professions as PF  # noqa: E402
 import market as MK  # noqa: E402
 import rxp  # noqa: E402
 import rxp_guide as RXG  # noqa: E402
+import detours as DT  # noqa: E402
 
 UPGRADE = 0.005        # an upgrade worth less than 0.5% of the time per kill is not listed
 MIN_CHANCE = 0.05      # a dungeon drop under 5% is not worth planning around
@@ -376,6 +377,7 @@ FASTER, SHORT, KILLING = "faster kills", "faster", "min of killing"   # a tank (
 BONUS = []                # dungeon drops worth chasing on top of the sure plan (bonus_drops)
 ROUTE = None              # the character's RestedXP route (rxp.route), when its saved files are on this PC
 RG = None                 # the route step by step from the readable guide files (rxp_guide.facts), when they are on this PC
+DETOURS = {"list": [], "stats": {}}   # quests off the route worth a detour (detours.find), when RG is known
 AUCTION_FUTURE = False   # what-if (2026-11-09): treat today's listings as buyable at their level later (how soon cheap AH gear replaces a buy)
 PROFS = {}   # the character's professions, {name: (skill, cap)}: main() fills it for the craft lines
 
@@ -647,6 +649,22 @@ def bonus_drops(full, events, eq, at):
         over = " + ".join(x["name"] for x in sure_at(d["slot"], L0) if x) or "an empty slot"
         out.append(dict(d, owned=set(), bonus_gain=g, bonus_minutes=m, over=over, until=end if nxt else None))
     return out
+
+
+def detour_text(x):
+    """One detour for the page and the checklist."""
+    names = " → ".join(t for _, t in x["quests"])
+    kind = {"clear": "clear win", "easy": "worth it if you like it", "gear": "for the gear"}[x["tier"]]
+    where = f"from {x['giver']}" if x["giver"] and not x["inlog"] else ("already in your log" if x["inlog"] else "")
+    if x["start"] and not x["inlog"]:
+        where += f" ({x['start'][0]} {x['start'][1]:.1f}, {x['start'][2]:.1f})"
+    near = f" while your route is in {x['near'][0]}" if x.get("near") else ""
+    gain = (f"saves about {x['saves']:.0f} min against your usual pace" if x["saves"] >= 0.5 else
+            f"about {-x['saves']:.0f} min slower than your usual pace" if x["saves"] <= -0.5 else "about your usual pace")
+    gear = f"; rewards {', '.join(x['gear'])} from your gear plan" if x["gear"] else ""
+    parts = f"{len(x['quests'])}-part chain: " if len(x["quests"]) > 1 else ""
+    return (f"**{names}** ({kind}): {parts}{where}, around level {x['level']}{near}. About {x['xp']:,} experience for about "
+            f"{x['minutes']:.0f} min ({x['travel']:.0f} of it walking); {gain}{gear}.")
 
 
 def dungeon_lines(sched):
@@ -1083,6 +1101,11 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
         o += ["### Dungeon runs", "", "Run each once, with its quests in your log first: the quests' experience is the main reward. A drop that "
               "beats what the plan has you wear is a bonus; the plan works without it.", ""]
         o += dungeon_lines(near)
+    soon_d = [x for x in DETOURS["list"] if x["level"] <= lv + LOOKAHEAD]
+    CTX["detours"] = [dict(x, text=detour_text(x)) for x in DETOURS["list"]]
+    if soon_d:
+        o += ["### Detours worth taking", "", "Quests your RestedXP route leaves out that pay for the walk (see Detours off your route below).", ""]
+        o += [f"- {detour_text(x)}" for x in soon_d] + [""]
     o += ["### Talents and the rest", "", "- Talents: see above. Food, drink, bandages: the [by-level guide](../../" +
           f"{cfg['class']}/leveling/{cfg['page']}-by-level.md) for your rotation.", ""]
     o += profession_section(profs)
@@ -1117,6 +1140,22 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
               "are Classic's (25% where it has none); \"about N min\" is a drop's minutes of killing saved over the plan's item, and a "
               f"run's drops are worth that times their chances. Minutes assume {KILL_SHARE:.0%} of your experience comes from kills.", ""]
         o += dungeon_lines(sched)
+    if RG:
+        st = DETOURS["stats"]
+        o += ["## Detours off your route", "",
+              "Quests your RestedXP route leaves out, played as a detour from where the route is at that level: walk to the giver, do it at "
+              "the nearest spots, hand it in, walk back. Three kinds: **clear win** (20% faster than your usual leveling pace and 3 minutes "
+              "saved), **worth it if you like it** (at your pace or a bit better), and **for the gear** (its reward is in your gear plan; a "
+              "little slower than your pace is fine). Estimates: straight-line travel with a margin, Classic's quest positions, your fight-lab "
+              f"time per kill. {st.get('scored', 0)} quests scored; {st.get('unknown', 0)} could not be placed (an item starts them, or a "
+              "target has no known spot); Forever's own quests have no positions here.", ""]
+        by = {}
+        for x in DETOURS["list"]:
+            by.setdefault(x["level"], []).append(x)
+        for L in sorted(by):
+            o += [f"### Level {L}", ""] + [f"- {detour_text(x)}" for x in by[L]] + [""]
+        if not by:
+            o += ["None found: your route already takes every quest that pays for its walk.", ""]
     o += ["## How this is worked out", "",
           f"- Stat values: `_reference/data/characters/weights/{wfile}` (stat_weights.py): the page build in the fight lab at levels 20-60 with each "
           "stat raised, common random numbers; smoothed over neighbouring levels. Spell crit and hit from items, resistances and defense read 0.",
@@ -1980,6 +2019,13 @@ def main():
             e["fallback"] = fb or {"keep": (e["prev"][0] or {}).get("name")}
     ench = enchants(cfg["school_share"])
     PLAN_EVENTS[:] = events
+    if RG:   # quests off the route worth a detour (2026-11-10)
+        kills_per_level(lv0)   # (loads the experience table)
+        gear_of = {primary(e)["quest"]: upgrade_name(e)[0] for e in events
+                   if primary(e)["kind"] == "quest" and isinstance(primary(e).get("quest"), int)}
+        DETOURS["list"], DETOURS["stats"] = DT.find(
+            cfg, snap, lv0, RG, pace=lambda L: XP[L] / max(0.1, minutes_per_level(L, at)), tpk=lambda L: at(L)["time"],
+            completed=COMPLETED, inlog=INLOG, maps=RXG.bounds(), group=cfg.get("group", cfg.get("metric") == "tank"), gear_of=gear_of)
     write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile)
     import checklist   # the town checklist page (2026-11-09, user: "an easy to look at almost to-do list of every time I'm in a city")
     checklist.write(cfg, d, CTX)
