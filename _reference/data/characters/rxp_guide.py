@@ -327,7 +327,7 @@ def facts(cfg, snap, wow_dir, route):
             return override[t]
         return False if disabled else bool(prof["dungeons"].get(t))
 
-    out = {"quests": {}, "dungeons": {}, "past": set(), "who": who, "profile": prof, "runs": runs, "npcs": {}, "path": [],
+    out = {"quests": {}, "dungeons": {}, "past": set(), "who": who, "profile": prof, "runs": runs, "npcs": {}, "path": [], "behind": {},
            "taggable": {NAMES[t]: t for t in sorted(tagged) if not enabled(t)}}
     for sec in mine.values():   # where each NPC stands (the guide's own positions)
         for st in sec["steps"]:
@@ -354,31 +354,37 @@ def facts(cfg, snap, wow_dir, route):
             spot = where(tags, maps)
             past = i + 1 < cur
             w = next((x for x in (world(a, maps) for a in reversed(tags.get("goto") or [])) if x), None)
-            if w and not past:   # where the route takes you, level by level (detours.py measures from here)
-                out["path"].append((level, w[0], w[1], w[2], w[3]))
+            if w and not past:   # where the route takes you, level by level (detours.py measures from here): level, continent, world x, y,
+                out["path"].append((level, w[0], w[1], w[2], w[3], lo, hi, i + 1, tuple(ops),   # zone, the section's levels, the step's
+                                    tags["targets"][0] if tags["targets"] else None, spot))       # number in it, its quests, NPC, map spot
+            pidx = len(out["path"]) - 1   # the route point at or just before this step (a detour's anchor)
+            for el in st["els"]:   # where the guide runs its own dungeon (.enabledungeon); one you have passed is behind you
+                if el["tag"] == "enabledungeon" and el["arg"] and not el["arg"].startswith("!") and applies(el["filter"], who, level):
+                    t = tag_of(el["arg"])
+                    if t and past:
+                        out["behind"][NAMES[t]] = (i + 1, lo, hi)
+                    elif t:
+                        d = out["dungeons"].setdefault(NAMES[t], {"tag": t, "level": None, "quests": []})
+                        d["level"], d["at"] = level, (max(0, pidx), i + 1, lo, hi)
             for op, q in ops:
                 if past:
                     out["past"].add(q)
                     continue
                 e = out["quests"].setdefault(q, {})
                 s = {"level": level, "zone": spot[0] if spot else None, "x": spot[1] if spot else None, "y": spot[2] if spot else None,
-                     "npc": tags["targets"][0] if tags["targets"] else None}
+                     "npc": tags["targets"][0] if tags["targets"] else None, "at": pidx, "step": i + 1, "lo": lo, "hi": hi}
                 if op == "accept" and "accept" not in e:
                     e["accept"] = s
                 elif op == "turnin":
                     e["turnin"] = s
                 elif op == "complete" and "complete" not in e:
-                    e["complete"] = level
+                    e["complete"], e["complete_at"] = level, (pidx, i + 1, lo, hi)
                 if tags["dungeon"]:
                     d = out["dungeons"].setdefault(NAMES[tags["dungeon"]], {"tag": tags["dungeon"], "level": None, "quests": []})
                     if q not in d["quests"]:
                         d["quests"].append(q)
                     if op == "complete" and d["level"] is None:
                         d["level"] = level
-        for t in {tag_of(el["arg"].lstrip("!")) for st in sec["steps"] for el in st["els"] if el["tag"] == "enabledungeon" and el["arg"]}:
-            if t:
-                d = out["dungeons"].setdefault(NAMES[t], {"tag": t, "level": None, "quests": []})
-                d["level"] = d["level"] or lo
     for d in out["dungeons"].values():   # a ticked dungeon is run where the route completes its quests (else at the first turn-in)
         if d["level"] is None:
             lv = sorted(out["quests"][q].get("complete") or (out["quests"][q].get("turnin") or {}).get("level") or 99 for q in d["quests"])

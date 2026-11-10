@@ -111,7 +111,13 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   guides' NPC positions win). Three tiers (user, the same day: "I don't necessarily want this to be 100% optimized ... if something is
   slightly less optimal, but it's still fun and somewhat easy to do and makes me stronger and level slightly faster, I'm willing to
   sacrifice some of the optimization"): clear wins (1.2x the pace, 3 min saved), worth it if you like it (the pace or better), for the gear
-  (a reward the gear plan wears, down to 0.7x). Escorts and scripted events, item-started quests and Forever's own quests are not scored.
+  (its minutes of faster killing over the rest of leveling count with the experience). Escorts and scripted events, item-started quests and
+  Forever's own quests are not scored. **When to leave the guide** (`plan.timeline`, the same day, user: "I want to know at each point in
+  time, according to the RestedXP route, when should I be detouring. And exactly what step of the guide"): the guide's own dungeons at the
+  step it runs them (a dungeon it ran before your step is judged as a side trip), side-trip dungeons the next time the guide has you in the
+  dungeon's zone within four levels of its run level, detours from the route point they start at, and the gear plan's quests the route
+  leaves out (their detour's cost, or the zone to look in); each tied to the quest the guide hands in or picks up there and the step's
+  number in that part (levels and numbers only, never the part's name). Page section and checklist step 8 (the next four levels).
   Each dungeon gets a verdict (user: "I just want to do the ones you deem worth it"): the guide's own; a side trip only for a quest reward
   the gear plan counts on, drops worth 20 minutes on average or three quests at full experience; skipped when outgrown or too thin.
   **A group tank** (Tara, 2026-11-09: a Protection paladin with a healer in her group, raid tank at 60): character.json `metric: tank`

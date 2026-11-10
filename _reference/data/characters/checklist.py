@@ -271,19 +271,22 @@ def steps_html(C, lv):
     # 8. work toward
     items = []
     skipped = []
+    tl = C.get("timeline")
     for dg in C.get("dungeons") or []:
         if dg["run"] > lv + 3:
             continue
         if dg.get("verdict") == "skip":
             skipped.append(f"{esc(dg['zone'])} ({esc(dg['why'])})")
             continue
-        items.append(todo(f"dg{dg['zone']}", f'Run <strong>{esc(dg["zone"])}</strong> at level {dg["run"]} <span class="muted">({dg["lo"]}–{dg["hi"]})</span>',
-                          "once, with its quests · " + esc(dg.get("why", "")) + "".join(f"<br>Drop: {md(x)}" for x in dg["drops"])))
+        if tl is None:   # (no RestedXP route on this PC: the dungeon list by level)
+            items.append(todo(f"dg{dg['zone']}", f'Run <strong>{esc(dg["zone"])}</strong> at level {dg["run"]} <span class="muted">({dg["lo"]}–{dg["hi"]})</span>',
+                              "once, with its quests · " + esc(dg.get("why", "")) + "".join(f"<br>Drop: {md(x)}" for x in dg["drops"])))
+    for r in tl or []:   # when to leave the guide, in the route's order (plan.timeline, 2026-11-10)
+        if r["level"] <= lv + 4:
+            items.append(todo(r["key"], f'Level {r["level"]} · step {r["step"]} of the guide\'s {r["lo"]}–{r["hi"]} part',
+                              f'{md(r["anchor"][0].upper() + r["anchor"][1:])}:<br>{md(r["what"])}'))
     if skipped:
         items.append(info("Skip", "; ".join(skipped)))
-    for x in C.get("detours") or []:   # quests off the RestedXP route worth a detour (detours.py, 2026-11-10)
-        if x["level"] <= lv + 3:
-            items.append(todo("det" + "-".join(str(q) for q, _ in x["quests"]), f"Detour around level {x['level']}", md(x["text"])))
     for r in soon:
         if r["kind"] in ("auction", "market") and r["get_at"] > lv:
             head, sub = upgrade_line(r, lv, why=False)

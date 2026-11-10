@@ -11,7 +11,8 @@ Time: straight-line yards x PATH (terrain, roads) at running speed (x MOUNT_SPEE
 kill at that level x SEARCH (finding the next mob); collected items over their drop chance; objects SECONDS_PER_OBJECT each; TALK seconds
 for each quest's dialogs. Worth: the quest's experience (reduced as in Classic when you are 6+ levels above it) plus its kills' experience,
 in minutes at your leveling pace (the planner's minutes_per_level: same-level kills and quests). Listed in three tiers: clear wins,
-worth it if you like it (at your pace or better), and quests whose reward the gear plan wears (a little slower is fine). All of it is an estimate: straight lines, Classic positions (Forever moved some quests and added its own,
+worth it if you like it (at your pace or better), and for the gear (a reward the gear plan wears: its minutes of faster killing
+over the rest of leveling count with the experience). All of it is an estimate: straight lines, Classic positions (Forever moved some quests and added its own,
 which have no positions here), and an average leveling pace rather than the route's own.
 """
 import csv
@@ -31,7 +32,7 @@ TALK = 30                  # seconds of dialog a quest (accept and hand in)
 # still fun and somewhat easy to do and makes me stronger and level slightly faster, I'm willing to sacrifice some of the optimization"):
 RATIO, MIN_SAVED = 1.2, 3.0            # clear wins: 20% faster than your pace and 3 minutes saved
 EASY_RATIO, EASY_SAVED = 1.0, 1.0      # worth it if you like it: at least your pace, a minute saved
-GEAR_RATIO, GEAR_BONUS = 0.7, 5.0      # a quest whose reward the gear plan wears: up to 30% slower than your pace is fine
+GEAR_SAVED = 1.0                       # for the gear: a reward the gear plan wears, its minutes of faster killing paying for the walk
 MAX_CHAIN = 6
 EXCLUDED_TYPES = {41: "PvP", 62: "raid", 81: "dungeon", 84: "escort"}   # dungeons are planned on their own (plan.dungeon_schedule)
 CLASS_SORT = {-61: "warlock", -81: "warrior", -82: "shaman", -141: "paladin", -161: "mage", -162: "rogue", -261: "hunter", -262: "priest",
@@ -231,6 +232,7 @@ def find(cfg, snap, lv, RG, pace, tpk, completed, inlog, maps, group=False, last
         return zone_of(p, maps, qzone(q))
 
     cands = [q for q in cq if ok(q)]
+    judged = {}
     xp = quest_xp(cands)
     heads = [q for q in cands if ready(q) is not None and xp.get(q)]
     path = RG["path"]
@@ -248,8 +250,7 @@ def find(cfg, snap, lv, RG, pace, tpk, completed, inlog, maps, group=False, last
         for L in range(lmin, min(last, int(r0["quest_level"]) + 4) + 1):
             speed = RUN * (MOUNT_SPEED if L >= MOUNT_LEVEL else 1.0)
             t = tpk(L)
-            route = [(p[1], p[2], p[3]) for p in path if abs(p[0] - L) <= 1]
-            rzone = {(p[1], p[2], p[3]): p[4] for p in path if abs(p[0] - L) <= 1}
+            route = [(p[1], p[2], p[3], n) for n, p in enumerate(path) if abs(p[0] - L) <= 1]   # (continent, x, y, index on the route)
             for cont in {p[0] for p in route}:
                 here = [p for p in route if p[0] == cont]
                 lg = legs(h, here[0], h in inlog, L, t, speed)   # where the quest's first stop is, then from the route point nearest to it
@@ -276,26 +277,31 @@ def find(cfg, snap, lv, RG, pace, tpk, completed, inlog, maps, group=False, last
                     minutes = (travel + work) / 60
                     worth = (gain + kxp) / pace(L)
                     saves, ratio = worth - minutes, worth / max(minutes, 0.1)
-                    gear = sorted({gear_of[q2] for q2 in chain[:k + 1] if q2 in gear_of})
-                    score = saves + (GEAR_BONUS if gear else 0)
+                    gq = {gear_of[q2][0]: gear_of[q2][1] for q2 in chain[:k + 1] if q2 in gear_of}   # rewards the gear plan wears
+                    gear, gmin = sorted(gq), sum(gq.values())
+                    score = saves + gmin
                     if best is None or score > best["score"]:
                         best = {"quests": [(q2, cq[q2]["title"].strip()) for q2 in chain[:k + 1]], "level": L, "xp": round(gain + kxp),
                                 "quest_xp": round(gain), "minutes": round(minutes, 1), "travel": round(travel / 60, 1),
                                 "saves": round(saves, 1), "ratio": round(ratio, 2), "inlog": h in inlog, "gear": gear, "score": score,
+                                "gear_minutes": round(gmin), "anchor": rp[3],
                                 "giver": " / ".join(sorted({NAMES.get((kk, int(ii)), "") for kk, ii in GEO[h]["starts"] if kk in "co"} - {""})),
-                                "start": spot_of(h, stops[0]), "near": zone_of(rp, maps, rzone.get(rp))}
+                                "start": spot_of(h, stops[0]), "near": zone_of(rp, maps, path[rp[3]][4])}
         if not placed:
             unknown += 1
         if not best:
             continue
+        for q2, _ in best["quests"]:   # the gear plan's quests: their detour as judged, worth it or not (the timeline shows the cost)
+            if q2 in gear_of:
+                judged[q2] = best
         if best["ratio"] >= RATIO and best["saves"] >= MIN_SAVED:
             best["tier"] = "clear"
         elif best["ratio"] >= EASY_RATIO and best["saves"] >= EASY_SAVED:
             best["tier"] = "easy"
-        elif best["gear"] and best["ratio"] >= GEAR_RATIO:
+        elif best["gear"] and best["score"] >= GEAR_SAVED:
             best["tier"] = "gear"
         else:
             continue
         out.append(best)
     out.sort(key=lambda d: (d["level"], -d["saves"]))
-    return out, {"scored": len(heads), "unknown": unknown}
+    return out, {"scored": len(heads), "unknown": unknown, "judged": judged}
