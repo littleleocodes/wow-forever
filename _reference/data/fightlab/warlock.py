@@ -272,7 +272,9 @@ PIPELINE = {"variants": [{'spec': 'affliction-leveling', 'opt': 'opt-affliction-
 
 # level-60 demon stats (ElliotWood/Forever pets.go); Str/Agi/Sta/Int/Spi scale from ~20 at level 1, damage with level
 PETS = {
-    "Voidwalker": dict(strength=129, agility=85, stamina=234, intellect=70, spirit=150, mana=1066, dmg=(31, 46), speed=2.0, armor_per_level=60, hp_mult=1.0, caster=False, threat_mult=1.0),
+    # hp_add: Blizzard's hotfix of 2026-11-06, "the base health of the Warlock Voidwalker demon has been increased across all levels"
+    # (about 40 per level band by the trackers' reading; no exact figure published): +40 base health at every level
+    "Voidwalker": dict(strength=129, agility=85, stamina=234, intellect=70, spirit=150, mana=1066, dmg=(31, 46), speed=2.0, armor_per_level=60, hp_mult=1.0, caster=False, threat_mult=1.0, hp_add=40),
     "Imp": dict(strength=122, agility=35, stamina=86, intellect=264, spirit=260, mana=576, dmg=(0, 0), speed=2.0, armor_per_level=20, hp_mult=0.45, caster=True, threat_mult=1.0),
 }
 
@@ -391,7 +393,8 @@ class WarlockModule(BaseModule):
         stat = {k: 20 + (cfg[k] - 20) * f for k in ("strength", "agility", "stamina", "intellect", "spirit")}
         k = tables.PET_SCALING if p is not None else 0.0
         sp = p.spell_power if p is not None else 0.0
-        hp = (pet_health(level) + 10 * stat["stamina"] * 0.5 + k * DEMON_HP_PER_STAMINA * stamina) * cfg["hp_mult"] * (1 + self.tv("Fel Vitality", 0) / 100)
+        hp = (pet_health(level) + cfg.get("hp_add", 0) + 10 * stat["stamina"] * 0.5 + k * DEMON_HP_PER_STAMINA * stamina) * cfg["hp_mult"] \
+            * (1 + self.tv("Fel Vitality", 0) / 100)
         pet = Pet(name=self.pet_name, hp_max=hp, hp=hp, armor=cfg["armor_per_level"] * level + k * 0.35 * (p.armor if p is not None else 0.0),
                   dmg_min=cfg["dmg"][0] * level / 60.0, dmg_max=cfg["dmg"][1] * level / 60.0, speed=cfg["speed"],
                   attack_power=max(0.0, 2 * stat["strength"] - 20) + k * 0.17 * sp,

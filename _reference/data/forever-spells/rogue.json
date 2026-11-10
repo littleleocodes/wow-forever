@@ -712,7 +712,7 @@
       {
        "rank": "Rank 2",
        "id": 8639,
-       "text": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point:\n 1 point : 35 damage over 8 secs\n 2 points: 53 damage over 10 secs\n 3 points: 74 damage over 12 secs\n 4 points: 99 damage over 14 secs\n 5 points: 127 damage over 16 secs",
+       "text": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point:\n 1 point : 35 damage over 8 secs\n 2 points: 55 damage over 10 secs\n 3 points: 72 damage over 12 secs\n 4 points: 98 damage over 14 secs\n 5 points: 128 damage over 16 secs",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -727,12 +727,17 @@
         "status": "changed",
         "text": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point: 1 point : 60 damage over 8 secs 2 points: 90 damage over 10 secs 3 points: 126 damage over 12 secs 4 points: 168 damage over 14 secs 5 points: 216 damage over 16 secs",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point:\n 1 point : 35 damage over 8 secs\n 2 points: 53 damage over 10 secs\n 3 points: 74 damage over 12 secs\n 4 points: 99 damage over 14 secs\n 5 points: 127 damage over 16 secs",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=8639)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 8640,
-       "text": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point:\n 1 point : 53 damage over 8 secs\n 2 points: 79 damage over 10 secs\n 3 points: 109 damage over 12 secs\n 4 points: 143 damage over 14 secs\n 5 points: 183 damage over 16 secs",
+       "text": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point:\n 1 point : 52 damage over 8 secs\n 2 points: 80 damage over 10 secs\n 3 points: 108 damage over 12 secs\n 4 points: 140 damage over 14 secs\n 5 points: 184 damage over 16 secs",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -747,6 +752,11 @@
         "status": "changed",
         "text": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point: 1 point : 88 damage over 8 secs 2 points: 130 damage over 10 secs 3 points: 180 damage over 12 secs 4 points: 238 damage over 14 secs 5 points: 304 damage over 16 secs",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point:\n 1 point : 53 damage over 8 secs\n 2 points: 79 damage over 10 secs\n 3 points: 109 damage over 12 secs\n 4 points: 143 damage over 14 secs\n 5 points: 183 damage over 16 secs",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=8640)"
        }
       },
       {
@@ -887,7 +897,7 @@
       {
        "rank": "Rank 1",
        "id": 53,
-       "text": "Backstab the target, causing 150% weapon damage plus 15 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "text": "Backstab the target, causing 150% weapon damage plus 10 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -900,12 +910,17 @@
        "level": 4,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Backstab the target, causing 150% weapon damage plus 15 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=53)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 2589,
-       "text": "Backstab the target, causing 150% weapon damage plus 30 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "text": "Backstab the target, causing 150% weapon damage plus 20 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -918,12 +933,17 @@
        "level": 12,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Backstab the target, causing 150% weapon damage plus 30 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=2589)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 2590,
-       "text": "Backstab the target, causing 150% weapon damage plus 48 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "text": "Backstab the target, causing 150% weapon damage plus 32 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -936,12 +956,17 @@
        "level": 20,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Backstab the target, causing 150% weapon damage plus 48 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=2590)"
        }
       },
       {
        "rank": "Rank 4",
        "id": 2591,
-       "text": "Backstab the target, causing 150% weapon damage plus 69 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "text": "Backstab the target, causing 150% weapon damage plus 46 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -954,12 +979,17 @@
        "level": 28,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Backstab the target, causing 150% weapon damage plus 69 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=2591)"
        }
       },
       {
        "rank": "Rank 5",
        "id": 8721,
-       "text": "Backstab the target, causing 150% weapon damage plus 90 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "text": "Backstab the target, causing 150% weapon damage plus 60 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -972,12 +1002,17 @@
        "level": 36,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Backstab the target, causing 150% weapon damage plus 90 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=8721)"
        }
       },
       {
        "rank": "Rank 6",
        "id": 11279,
-       "text": "Backstab the target, causing 150% weapon damage plus 135 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "text": "Backstab the target, causing 150% weapon damage plus 90 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -990,12 +1025,17 @@
        "level": 44,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Backstab the target, causing 150% weapon damage plus 135 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=11279)"
        }
       },
       {
        "rank": "Rank 7",
        "id": 11280,
-       "text": "Backstab the target, causing 150% weapon damage plus 165 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "text": "Backstab the target, causing 150% weapon damage plus 110 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1008,12 +1048,17 @@
        "level": 52,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Backstab the target, causing 150% weapon damage plus 165 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=11280)"
        }
       },
       {
        "rank": "Rank 8",
        "id": 11281,
-       "text": "Backstab the target, causing 150% weapon damage plus 210 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "text": "Backstab the target, causing 150% weapon damage plus 140 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1026,12 +1071,17 @@
        "level": 60,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Backstab the target, causing 150% weapon damage plus 210 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=11281)"
        }
       },
       {
        "rank": "Rank 9",
        "id": 25300,
-       "text": "Backstab the target, causing 150% weapon damage plus 225 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "text": "Backstab the target, causing 150% weapon damage plus 150 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1044,6 +1094,11 @@
        "level": 60,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Backstab the target, causing 150% weapon damage plus 225 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=25300)"
        }
       }
      ]
@@ -2241,7 +2296,7 @@
       {
        "rank": "Rank 4",
        "id": 11341,
-       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy which instantly inflicts 45 to 57 Nature damage. 130 charges.",
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy which instantly inflicts 45 to 57 Nature damage. 1800 charges.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2256,6 +2311,11 @@
         "status": "changed",
         "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy which instantly inflicts 67 to 85 Nature damage. 85 charges.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy which instantly inflicts 45 to 57 Nature damage. 130 charges.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=11341)"
        }
       },
       {
@@ -2281,7 +2341,7 @@
       {
        "rank": "Rank 6",
        "id": 11343,
-       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy which instantly inflicts 76 to 100 Nature damage. 175 charges.",
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy which instantly inflicts 76 to 100 Nature damage. 250 charges.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2296,6 +2356,11 @@
         "status": "changed",
         "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy which instantly inflicts 112 to 148 Nature damage. 115 charges.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy which instantly inflicts 76 to 100 Nature damage. 175 charges.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=11343)"
        }
       }
      ]
@@ -2346,7 +2411,7 @@
       {
        "rank": "Rank 3",
        "id": 11400,
-       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy, increasing their casting time by 60% for 14 sec. 150 charges.",
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy, increasing their casting time by 60% for 14 sec. 225 charges.",
        "school": null,
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2361,6 +2426,11 @@
         "status": "changed",
         "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy, increasing their casting time by 60% for 14 sec. 100 charges.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy, increasing their casting time by 60% for 14 sec. 150 charges.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=11400)"
        }
       }
      ]
@@ -2431,7 +2501,7 @@
       {
        "rank": "Rank 4",
        "id": 11358,
-       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy for 72 Nature damage over 12 sec. Stacks up to 5 times on a single target. 160 charges.",
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy for 72 Nature damage over 12 sec. Stacks up to 5 times on a single target. 240 charges.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2446,12 +2516,17 @@
         "status": "changed",
         "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy for 108 Nature damage over 12 sec. Stacks up to 5 times on a single target. 105 charges.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy for 72 Nature damage over 12 sec. Stacks up to 5 times on a single target. 160 charges.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=11358)"
        }
       },
       {
        "rank": "Rank 5",
        "id": 25347,
-       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy for 92 Nature damage over 12 sec. Stacks up to 5 times on a single target. 180 charges.",
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy for 92 Nature damage over 12 sec. Stacks up to 5 times on a single target. 240 charges.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2466,6 +2541,11 @@
         "status": "changed",
         "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy for 136 Nature damage over 12 sec. Stacks up to 5 times on a single target. 120 charges.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy for 92 Nature damage over 12 sec. Stacks up to 5 times on a single target. 180 charges.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=25347)"
        }
       }
      ]
@@ -2536,7 +2616,7 @@
       {
        "rank": "Rank 4",
        "id": 13230,
-       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, reducing all healing effects used on them by 165 for 15 sec. Stacks up to 5 times on a single target. 160 charges.",
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, reducing all healing effects used on them by 165 for 15 sec. Stacks up to 5 times on a single target. 240 charges.",
        "school": null,
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2551,6 +2631,11 @@
         "status": "changed",
         "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, reducing all healing effects used on them by 135 for 15 sec. Stacks up to 5 times on a single target. 105 charges.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, reducing all healing effects used on them by 165 for 15 sec. Stacks up to 5 times on a single target. 160 charges.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=13230)"
        }
       }
      ]

@@ -34,12 +34,12 @@ run() {
 }
 fresh() { if [ -e "$M/$1.started" ]; then echo ""; else touch "$M/$1.started"; echo "--fresh"; fi; }
 race() { python -u $R/run.py $1 --spec $2 --write && python -u $R/run.py $1 --spec $2 --env environments --write; }
-[ "$(git -C "$WOW_FOREVER_SIM" rev-parse --short=9 HEAD)" = "16e85426c" ] || { say "raid: warrior STOP, the third checkout is not at 02bd77cbe"; exit 1; }
+[ "$(git -C "$WOW_FOREVER_SIM" rev-parse --short=9 HEAD)" = "${LANE_PIN:-16e85426c}" ] || { say "raid: warrior STOP, the third checkout is not at 02bd77cbe"; exit 1; }
 # 2026-11-06 (the gear repair, page-audit.md J1-J4): the class sets are re-made first; the step removes this lane markers, so it
 # runs again in the new sets (gear_repair_1103.sh; once per class, marker r1103/gear-warrior)
 bash $L/gear_repair_1103.sh warrior "war-*" || { say "raid: warrior STOP, the gear repair failed (gear-repair.log)"; exit 1; }
 
-say "raid: warrior start (16e85426c in wowsims-forever-y)"
+say "raid: warrior start (${LANE_PIN:-16e85426c} in wowsims-forever-y)"
 for e in $E; do run war-race-$e $LG race warrior $e; done
 for e in $E; do
   run war-apl-$e $LG python -u $R/apl_opt.py warrior --spec $e --write --setting raid --rounds 8 --lookahead 0

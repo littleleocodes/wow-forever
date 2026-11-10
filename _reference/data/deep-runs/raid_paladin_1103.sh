@@ -32,12 +32,12 @@ run() {
   return 0
 }
 race() { python -u $R/run.py $1 --spec $2 --write && python -u $R/run.py $1 --spec $2 --env environments --write; }
-[ "$(git -C "$WOW_FOREVER_SIM" rev-parse --short=9 HEAD)" = "16e85426c" ] || { say "raid: paladin STOP, the second checkout is not at d97252f2a"; exit 1; }
+[ "$(git -C "$WOW_FOREVER_SIM" rev-parse --short=9 HEAD)" = "${LANE_PIN:-16e85426c}" ] || { say "raid: paladin STOP, the second checkout is not at d97252f2a"; exit 1; }
 # 2026-11-06 (the gear repair, page-audit.md J1-J4): the class sets are re-made first; the step removes this lane markers, so it
 # runs again in the new sets (gear_repair_1103.sh; once per class, marker r1103/gear-paladin)
 bash $L/gear_repair_1103.sh paladin "pal-*" || { say "raid: paladin STOP, the gear repair failed (gear-repair.log)"; exit 1; }
 
-say "raid: paladin start (16e85426c in wowsims-forever-y)"
+say "raid: paladin start (${LANE_PIN:-16e85426c} in wowsims-forever-y)"
 for e in ret-dps shockadin-raid prot-tank; do run pal-race-$e $LG race paladin $e; done
 for e in ret-dps shockadin-raid prot-tank; do
   run pal-apl-$e $LG python -u $R/apl_opt.py paladin --spec $e --write --setting raid --rounds 8 --lookahead 0

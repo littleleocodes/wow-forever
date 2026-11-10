@@ -163,7 +163,7 @@ Rank entries: 123 changed, 19 new in Forever, 53 as Classic; tooltips read: 195 
 
 | Spell | Rank | Level | Cost | Cast / cooldown | Effect (beta) | Coefficient | vs Classic |
 |---|---|---|---|---|---|---|---|
-| Blizzard | Rank 1 | 20 | 320 Mana | Channeled | Ice shards pelt the target area doing 192 Frost damage over 8 sec. | 4.2% of spell power (per tick) | changed: Ice shards pelt the target area doing 200 Frost damage over 8 sec. |
+| Blizzard | Rank 1 | 20 | 320 Mana | Channeled | Ice shards pelt the target area doing 196 Frost damage over 8 sec. | 4.2% of spell power (per tick) | changed: Ice shards pelt the target area doing 200 Frost damage over 8 sec. |
 | Blizzard | Rank 2 | 28 | 520 Mana | Channeled | Ice shards pelt the target area doing 344 Frost damage over 8 sec. | 4.2% of spell power (per tick) | changed: Ice shards pelt the target area doing 360 Frost damage over 8 sec. |
 | Blizzard | Rank 3 | 36 | 720 Mana | Channeled | Ice shards pelt the target area doing 504 Frost damage over 8 sec. | 4.2% of spell power (per tick) | changed: Ice shards pelt the target area doing 528 Frost damage over 8 sec. |
 | Blizzard | Rank 4 | 44 | 935 Mana | Channeled | Ice shards pelt the target area doing 704 Frost damage over 8 sec. | 4.2% of spell power (per tick) | changed: Ice shards pelt the target area doing 728 Frost damage over 8 sec. |

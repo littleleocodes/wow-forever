@@ -3097,7 +3097,7 @@
       {
        "rank": "Rank 1",
        "id": 10,
-       "text": "Ice shards pelt the target area doing 192 Frost damage over 8 sec.",
+       "text": "Ice shards pelt the target area doing 196 Frost damage over 8 sec.",
        "school": "Frost",
        "coefficient": "4.2% of spell power (per tick)",
        "tooltip_source": "beta",
@@ -3112,6 +3112,11 @@
         "status": "changed",
         "text": "Ice shards pelt the target area doing 200 Frost damage over 8 sec.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Ice shards pelt the target area doing 192 Frost damage over 8 sec.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=10)"
        }
       },
       {

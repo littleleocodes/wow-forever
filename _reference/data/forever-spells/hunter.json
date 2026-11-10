@@ -2483,7 +2483,7 @@
       {
        "rank": "Rank 1",
        "id": 19306,
-       "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 13 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
+       "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 26 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2503,12 +2503,17 @@
         "classic_cast": "Instant",
         "classic_cooldown": "5 sec cooldown",
         "change_kind": "reworded"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 13 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=19306)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 1242634,
-       "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 20 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
+       "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 40 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2521,12 +2526,17 @@
        "level": 30,
        "classic": {
         "status": "new"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 20 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=1242634)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 20909,
-       "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 35 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
+       "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 70 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2541,12 +2551,17 @@
         "status": "changed",
         "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 70 damage and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
         "change_kind": "reworded"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 35 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=20909)"
        }
       },
       {
        "rank": "Rank 4",
        "id": 20910,
-       "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 55 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
+       "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 110 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2561,6 +2576,11 @@
         "status": "changed",
         "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 110 damage and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
         "change_kind": "reworded"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 55 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=20910)"
        }
       }
      ]
@@ -2999,7 +3019,7 @@
       {
        "rank": "Rank 2",
        "id": 24119,
-       "text": "Wounds the target causing them to bleed for 224 damage over 21 sec.",
+       "text": "Wounds the target causing them to bleed for 230 damage over 21 sec.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -3012,6 +3032,11 @@
        "level": 40,
        "classic": {
         "status": "new"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Wounds the target causing them to bleed for 224 damage over 21 sec.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=24119)"
        }
       },
       {
@@ -3035,7 +3060,7 @@
       {
        "rank": "Rank 4",
        "id": 1299332,
-       "text": "Wounds the target causing them to bleed for 406 damage over 21 sec.",
+       "text": "Wounds the target causing them to bleed for 451 damage over 21 sec.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -3048,6 +3073,11 @@
        "level": 60,
        "classic": {
         "status": "new"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Wounds the target causing them to bleed for 406 damage over 21 sec.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=1299332)"
        }
       }
      ]

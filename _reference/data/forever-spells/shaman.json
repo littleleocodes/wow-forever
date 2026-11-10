@@ -96,7 +96,7 @@
       {
        "rank": "Rank 1",
        "id": 421,
-       "text": "Hurls a lightning bolt at the enemy, dealing 85 to 97 Nature damage and then jumping to additional nearby enemies. Each jump reduces the damage by 30%. Affects 3 total targets.",
+       "text": "Hurls a lightning bolt at the enemy, dealing 208 to 236 Nature damage and then jumping to additional nearby enemies. Each jump reduces the damage by 30%. Affects 3 total targets.",
        "school": "Nature",
        "coefficient": "57.1% of spell power (direct)",
        "tooltip_source": "beta",
@@ -116,12 +116,17 @@
         "classic_cooldown": "6 sec cooldown",
         "coefficient": "71.4% of spell power (direct)",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Hurls a lightning bolt at the enemy, dealing 85 to 97 Nature damage and then jumping to additional nearby enemies. Each jump reduces the damage by 30%. Affects 3 total targets.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=421)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 930,
-       "text": "Hurls a lightning bolt at the enemy, dealing 97 to 109 Nature damage and then jumping to additional nearby enemies. Each jump reduces the damage by 30%. Affects 3 total targets.",
+       "text": "Hurls a lightning bolt at the enemy, dealing 339 to 379 Nature damage and then jumping to additional nearby enemies. Each jump reduces the damage by 30%. Affects 3 total targets.",
        "school": "Nature",
        "coefficient": "57.1% of spell power (direct)",
        "tooltip_source": "beta",
@@ -141,12 +146,17 @@
         "classic_cooldown": "6 sec cooldown",
         "coefficient": "71.4% of spell power (direct)",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Hurls a lightning bolt at the enemy, dealing 97 to 109 Nature damage and then jumping to additional nearby enemies. Each jump reduces the damage by 30%. Affects 3 total targets.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=930)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 2860,
-       "text": "Hurls a lightning bolt at the enemy, dealing 109 to 121 Nature damage and then jumping to additional nearby enemies. Each jump reduces the damage by 30%. Affects 3 total targets.",
+       "text": "Hurls a lightning bolt at the enemy, dealing 417 to 466 Nature damage and then jumping to additional nearby enemies. Each jump reduces the damage by 30%. Affects 3 total targets.",
        "school": "Nature",
        "coefficient": "51.7% of spell power (direct)",
        "tooltip_source": "beta",
@@ -166,12 +176,17 @@
         "classic_cooldown": "6 sec cooldown",
         "coefficient": "71.4% of spell power (direct)",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Hurls a lightning bolt at the enemy, dealing 109 to 121 Nature damage and then jumping to additional nearby enemies. Each jump reduces the damage by 30%. Affects 3 total targets.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=2860)"
        }
       },
       {
        "rank": "Rank 4",
        "id": 10605,
-       "text": "Hurls a lightning bolt at the enemy, dealing 119 to 133 Nature damage and then jumping to additional nearby enemies. Each jump reduces the damage by 30%. Affects 3 total targets.",
+       "text": "Hurls a lightning bolt at the enemy, dealing 494 to 552 Nature damage and then jumping to additional nearby enemies. Each jump reduces the damage by 30%. Affects 3 total targets.",
        "school": "Nature",
        "coefficient": "57.1% of spell power (direct)",
        "tooltip_source": "beta",
@@ -191,6 +206,11 @@
         "classic_cooldown": "6 sec cooldown",
         "coefficient": "71.4% of spell power (direct)",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Hurls a lightning bolt at the enemy, dealing 119 to 133 Nature damage and then jumping to additional nearby enemies. Each jump reduces the damage by 30%. Affects 3 total targets.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=10605)"
        }
       }
      ]
@@ -201,7 +221,7 @@
       {
        "rank": "Rank 1",
        "id": 8042,
-       "text": "Instantly shocks the target with concussive force, causing 19 to 22 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat.",
+       "text": "Instantly shocks the target with concussive force, causing 21 to 24 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat.",
        "school": "Nature",
        "coefficient": "38.6% of spell power (direct)",
        "tooltip_source": "beta",
@@ -217,12 +237,17 @@
         "text": "Instantly shocks the target with concussive force, causing 19 to 21 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat.",
         "coefficient": "15.4% of spell power (direct)",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Instantly shocks the target with concussive force, causing 19 to 22 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=8042)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 8044,
-       "text": "Instantly shocks the target with concussive force, causing 35 to 38 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat.",
+       "text": "Instantly shocks the target with concussive force, causing 38 to 41 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat.",
        "school": "Nature",
        "coefficient": "38.6% of spell power (direct)",
        "tooltip_source": "beta",
@@ -238,12 +263,17 @@
         "text": "Instantly shocks the target with concussive force, causing 35 to 37 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat.",
         "coefficient": "21.2% of spell power (direct)",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Instantly shocks the target with concussive force, causing 35 to 38 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=8044)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 8045,
-       "text": "Instantly shocks the target with concussive force, causing 65 to 69 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat.",
+       "text": "Instantly shocks the target with concussive force, causing 69 to 74 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat.",
        "school": "Nature",
        "coefficient": "38.6% of spell power (direct)",
        "tooltip_source": "beta",
@@ -258,12 +288,17 @@
         "status": "changed",
         "coefficient": "29.9% of spell power (direct)",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Instantly shocks the target with concussive force, causing 65 to 69 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=8045)"
        }
       },
       {
        "rank": "Rank 4",
        "id": 8046,
-       "text": "Instantly shocks the target with concussive force, causing 126 to 134 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat.",
+       "text": "Instantly shocks the target with concussive force, causing 131 to 140 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat.",
        "school": "Nature",
        "coefficient": "38.6% of spell power (direct)",
        "tooltip_source": "beta",
@@ -276,12 +311,17 @@
        "level": 24,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Instantly shocks the target with concussive force, causing 126 to 134 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=8046)"
        }
       },
       {
        "rank": "Rank 5",
        "id": 10412,
-       "text": "Instantly shocks the target with concussive force, causing 235 to 249 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat.",
+       "text": "Instantly shocks the target with concussive force, causing 241 to 256 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat.",
        "school": "Nature",
        "coefficient": "38.6% of spell power (direct)",
        "tooltip_source": "beta",
@@ -294,12 +334,17 @@
        "level": 36,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Instantly shocks the target with concussive force, causing 235 to 249 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=10412)"
        }
       },
       {
        "rank": "Rank 6",
        "id": 10413,
-       "text": "Instantly shocks the target with concussive force, causing 372 to 394 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat.",
+       "text": "Instantly shocks the target with concussive force, causing 380 to 402 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat.",
        "school": "Nature",
        "coefficient": "38.6% of spell power (direct)",
        "tooltip_source": "beta",
@@ -312,6 +357,11 @@
        "level": 48,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Instantly shocks the target with concussive force, causing 372 to 394 Nature damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 2 sec. Causes a high amount of threat.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=10413)"
        }
       },
       {
@@ -458,7 +508,7 @@
       {
        "rank": "Rank 1",
        "id": 8050,
-       "text": "Instantly sears the target with fire, causing 25 Fire damage immediately and 28 Fire damage over 12 sec.",
+       "text": "Instantly sears the target with fire, causing 29 Fire damage immediately and 28 Fire damage over 12 sec.",
        "school": "Fire",
        "coefficient": "21.4% of spell power (direct), 10% of spell power (per tick)",
        "tooltip_source": "beta",
@@ -473,12 +523,17 @@
         "status": "changed",
         "coefficient": "13.4% of spell power (direct), 6.3% of spell power (per tick)",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Instantly sears the target with fire, causing 25 Fire damage immediately and 28 Fire damage over 12 sec.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=8050)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 8052,
-       "text": "Instantly sears the target with fire, causing 51 Fire damage immediately and 48 Fire damage over 12 sec.",
+       "text": "Instantly sears the target with fire, causing 56 Fire damage immediately and 48 Fire damage over 12 sec.",
        "school": "Fire",
        "coefficient": "21.4% of spell power (direct), 10% of spell power (per tick)",
        "tooltip_source": "beta",
@@ -493,12 +548,17 @@
         "status": "changed",
         "coefficient": "19.8% of spell power (direct), 9.3% of spell power (per tick)",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Instantly sears the target with fire, causing 51 Fire damage immediately and 48 Fire damage over 12 sec.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=8052)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 8053,
-       "text": "Instantly sears the target with fire, causing 95 Fire damage immediately and 96 Fire damage over 12 sec.",
+       "text": "Instantly sears the target with fire, causing 101 Fire damage immediately and 96 Fire damage over 12 sec.",
        "school": "Fire",
        "coefficient": "21.4% of spell power (direct), 10% of spell power (per tick)",
        "tooltip_source": "beta",
@@ -513,12 +573,17 @@
         "status": "changed",
         "text": "Instantly sears the target with fire, causing 94 Fire damage immediately and 96 Fire damage over 12 sec.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Instantly sears the target with fire, causing 95 Fire damage immediately and 96 Fire damage over 12 sec.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=8053)"
        }
       },
       {
        "rank": "Rank 4",
        "id": 10447,
-       "text": "Instantly sears the target with fire, causing 164 Fire damage immediately and 168 Fire damage over 12 sec.",
+       "text": "Instantly sears the target with fire, causing 171 Fire damage immediately and 168 Fire damage over 12 sec.",
        "school": "Fire",
        "coefficient": "21.4% of spell power (direct), 10% of spell power (per tick)",
        "tooltip_source": "beta",
@@ -533,12 +598,17 @@
         "status": "changed",
         "text": "Instantly sears the target with fire, causing 163 Fire damage immediately and 168 Fire damage over 12 sec.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Instantly sears the target with fire, causing 164 Fire damage immediately and 168 Fire damage over 12 sec.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=10447)"
        }
       },
       {
        "rank": "Rank 5",
        "id": 10448,
-       "text": "Instantly sears the target with fire, causing 245 Fire damage immediately and 256 Fire damage over 12 sec.",
+       "text": "Instantly sears the target with fire, causing 254 Fire damage immediately and 256 Fire damage over 12 sec.",
        "school": "Fire",
        "coefficient": "21.4% of spell power (direct), 10% of spell power (per tick)",
        "tooltip_source": "beta",
@@ -553,12 +623,17 @@
         "status": "changed",
         "text": "Instantly sears the target with fire, causing 244 Fire damage immediately and 256 Fire damage over 12 sec.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Instantly sears the target with fire, causing 245 Fire damage immediately and 256 Fire damage over 12 sec.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=10448)"
        }
       },
       {
        "rank": "Rank 6",
        "id": 29228,
-       "text": "Instantly sears the target with fire, causing 292 Fire damage immediately and 320 Fire damage over 12 sec.",
+       "text": "Instantly sears the target with fire, causing 292 Fire damage immediately and 292 Fire damage over 12 sec.",
        "school": "Fire",
        "coefficient": "21.4% of spell power (direct), 10% of spell power (per tick)",
        "tooltip_source": "beta",
@@ -571,6 +646,11 @@
        "level": 60,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Instantly sears the target with fire, causing 292 Fire damage immediately and 320 Fire damage over 12 sec.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=29228)"
        }
       }
      ]
@@ -581,7 +661,7 @@
       {
        "rank": "Rank 1",
        "id": 8056,
-       "text": "Instantly shocks the target with frost, causing 95 to 101 Frost damage and slowing movement speed by 50%. Lasts 8 sec.",
+       "text": "Instantly shocks the target with frost, causing 99 to 106 Frost damage and slowing movement speed by 50%. Lasts 8 sec.",
        "school": "Frost",
        "coefficient": "38.6% of spell power (direct)",
        "tooltip_source": "beta",
@@ -594,12 +674,17 @@
        "level": 20,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Instantly shocks the target with frost, causing 95 to 101 Frost damage and slowing movement speed by 50%. Lasts 8 sec.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=8056)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 8058,
-       "text": "Instantly shocks the target with frost, causing 215 to 230 Frost damage and slowing movement speed by 50%. Lasts 8 sec.",
+       "text": "Instantly shocks the target with frost, causing 221 to 236 Frost damage and slowing movement speed by 50%. Lasts 8 sec.",
        "school": "Frost",
        "coefficient": "38.6% of spell power (direct)",
        "tooltip_source": "beta",
@@ -614,12 +699,17 @@
         "status": "changed",
         "text": "Instantly shocks the target with frost, causing 215 to 229 Frost damage and slowing movement speed by 50%. Lasts 8 sec.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Instantly shocks the target with frost, causing 215 to 230 Frost damage and slowing movement speed by 50%. Lasts 8 sec.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=8058)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 10472,
-       "text": "Instantly shocks the target with frost, causing 345 to 366 Frost damage and slowing movement speed by 50%. Lasts 8 sec.",
+       "text": "Instantly shocks the target with frost, causing 352 to 373 Frost damage and slowing movement speed by 50%. Lasts 8 sec.",
        "school": "Frost",
        "coefficient": "38.6% of spell power (direct)",
        "tooltip_source": "beta",
@@ -634,6 +724,11 @@
         "status": "changed",
         "text": "Instantly shocks the target with frost, causing 345 to 365 Frost damage and slowing movement speed by 50%. Lasts 8 sec.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Instantly shocks the target with frost, causing 345 to 366 Frost damage and slowing movement speed by 50%. Lasts 8 sec.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=10472)"
        }
       },
       {
@@ -662,7 +757,7 @@
       {
        "rank": "Rank 1",
        "id": 403,
-       "text": "Casts a bolt of lightning at the target for 14 to 16 Nature damage.",
+       "text": "Casts a bolt of lightning at the target for 15 to 18 Nature damage.",
        "school": "Nature",
        "coefficient": "42.9% of spell power (direct)",
        "tooltip_source": "beta",
@@ -678,12 +773,17 @@
         "text": "Casts a bolt of lightning at the target for 15 to 17 Nature damage.",
         "coefficient": "12.3% of spell power (direct)",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Casts a bolt of lightning at the target for 14 to 16 Nature damage.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=403)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 529,
-       "text": "Casts a bolt of lightning at the target for 25 to 29 Nature damage.",
+       "text": "Casts a bolt of lightning at the target for 28 to 33 Nature damage.",
        "school": "Nature",
        "coefficient": "57.1% of spell power (direct)",
        "tooltip_source": "beta",
@@ -699,12 +799,17 @@
         "text": "Casts a bolt of lightning at the target for 28 to 32 Nature damage.",
         "coefficient": "31.4% of spell power (direct)",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Casts a bolt of lightning at the target for 25 to 29 Nature damage.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=529)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 548,
-       "text": "Casts a bolt of lightning at the target for 42 to 50 Nature damage.",
+       "text": "Casts a bolt of lightning at the target for 49 to 58 Nature damage.",
        "school": "Nature",
        "coefficient": "71.4% of spell power (direct)",
        "tooltip_source": "beta",
@@ -720,12 +825,17 @@
         "text": "Casts a bolt of lightning at the target for 48 to 56 Nature damage.",
         "coefficient": "55.4% of spell power (direct)",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Casts a bolt of lightning at the target for 42 to 50 Nature damage.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=548)"
        }
       },
       {
        "rank": "Rank 4",
        "id": 915,
-       "text": "Casts a bolt of lightning at the target for 59 to 67 Nature damage.",
+       "text": "Casts a bolt of lightning at the target for 71 to 80 Nature damage.",
        "school": "Nature",
        "coefficient": "71.4% of spell power (direct)",
        "tooltip_source": "beta",
@@ -744,12 +854,17 @@
         "classic_cast": "3 sec cast",
         "coefficient": "85.7% of spell power (direct)",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Casts a bolt of lightning at the target for 59 to 67 Nature damage.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=915)"
        }
       },
       {
        "rank": "Rank 5",
        "id": 943,
-       "text": "Casts a bolt of lightning at the target for 78 to 90 Nature damage.",
+       "text": "Casts a bolt of lightning at the target for 105 to 120 Nature damage.",
        "school": "Nature",
        "coefficient": "71.4% of spell power (direct)",
        "tooltip_source": "beta",
@@ -768,12 +883,17 @@
         "classic_cast": "3 sec cast",
         "coefficient": "85.7% of spell power (direct)",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Casts a bolt of lightning at the target for 78 to 90 Nature damage.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=943)"
        }
       },
       {
        "rank": "Rank 6",
        "id": 6041,
-       "text": "Casts a bolt of lightning at the target for 108 to 122 Nature damage.",
+       "text": "Casts a bolt of lightning at the target for 144 to 162 Nature damage.",
        "school": "Nature",
        "coefficient": "71.4% of spell power (direct)",
        "tooltip_source": "beta",
@@ -792,12 +912,17 @@
         "classic_cast": "3 sec cast",
         "coefficient": "85.7% of spell power (direct)",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Casts a bolt of lightning at the target for 108 to 122 Nature damage.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=6041)"
        }
       },
       {
        "rank": "Rank 7",
        "id": 10391,
-       "text": "Casts a bolt of lightning at the target for 142 to 160 Nature damage.",
+       "text": "Casts a bolt of lightning at the target for 188 to 210 Nature damage.",
        "school": "Nature",
        "coefficient": "71.4% of spell power (direct)",
        "tooltip_source": "beta",
@@ -816,12 +941,17 @@
         "classic_cast": "3 sec cast",
         "coefficient": "85.7% of spell power (direct)",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Casts a bolt of lightning at the target for 142 to 160 Nature damage.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=10391)"
        }
       },
       {
        "rank": "Rank 8",
        "id": 10392,
-       "text": "Casts a bolt of lightning at the target for 158 to 176 Nature damage.",
+       "text": "Casts a bolt of lightning at the target for 234 to 261 Nature damage.",
        "school": "Nature",
        "coefficient": "71.4% of spell power (direct)",
        "tooltip_source": "beta",
@@ -840,12 +970,17 @@
         "classic_cast": "3 sec cast",
         "coefficient": "85.7% of spell power (direct)",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Casts a bolt of lightning at the target for 158 to 176 Nature damage.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=10392)"
        }
       },
       {
        "rank": "Rank 9",
        "id": 15207,
-       "text": "Casts a bolt of lightning at the target for 173 to 193 Nature damage.",
+       "text": "Casts a bolt of lightning at the target for 286 to 320 Nature damage.",
        "school": "Nature",
        "coefficient": "71.4% of spell power (direct)",
        "tooltip_source": "beta",
@@ -864,12 +999,17 @@
         "classic_cast": "3 sec cast",
         "coefficient": "85.7% of spell power (direct)",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Casts a bolt of lightning at the target for 173 to 193 Nature damage.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=15207)"
        }
       },
       {
        "rank": "Rank 10",
        "id": 15208,
-       "text": "Casts a bolt of lightning at the target for 189 to 211 Nature damage.",
+       "text": "Casts a bolt of lightning at the target for 342 to 380 Nature damage.",
        "school": "Nature",
        "coefficient": "71.4% of spell power (direct)",
        "tooltip_source": "beta",
@@ -888,6 +1028,11 @@
         "classic_cast": "3 sec cast",
         "coefficient": "85.7% of spell power (direct)",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Casts a bolt of lightning at the target for 189 to 211 Nature damage.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=15208)"
        }
       }
      ]
@@ -1175,7 +1320,7 @@
       {
        "rank": "Rank 1",
        "id": 5730,
-       "text": "Summons a Stoneclaw Totem with 206 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
+       "text": "Summons a Stoneclaw Totem with 50 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1188,12 +1333,17 @@
        "level": 8,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Summons a Stoneclaw Totem with 206 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=5730)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 6390,
-       "text": "Summons a Stoneclaw Totem with 276 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
+       "text": "Summons a Stoneclaw Totem with 150 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1206,12 +1356,17 @@
        "level": 18,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Summons a Stoneclaw Totem with 276 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=6390)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 6391,
-       "text": "Summons a Stoneclaw Totem with 316 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
+       "text": "Summons a Stoneclaw Totem with 220 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1224,12 +1379,17 @@
        "level": 28,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Summons a Stoneclaw Totem with 316 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=6391)"
        }
       },
       {
        "rank": "Rank 4",
        "id": 6392,
-       "text": "Summons a Stoneclaw Totem with 346 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
+       "text": "Summons a Stoneclaw Totem with 280 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1242,12 +1402,17 @@
        "level": 38,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Summons a Stoneclaw Totem with 346 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=6392)"
        }
       },
       {
        "rank": "Rank 5",
        "id": 10427,
-       "text": "Summons a Stoneclaw Totem with 426 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
+       "text": "Summons a Stoneclaw Totem with 390 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1260,6 +1425,11 @@
        "level": 48,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Summons a Stoneclaw Totem with 426 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=10427)"
        }
       },
       {
@@ -1612,7 +1782,7 @@
       {
        "rank": "Rank 6",
        "id": 16342,
-       "text": "Imbue the Shaman's weapon with fire. Each hit causes 35 to 112 additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.",
+       "text": "Imbue the Shaman's weapon with fire. Each hit causes 40 to 125 additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.",
        "school": "Fire",
        "coefficient": "10% of spell power (direct)",
        "tooltip_source": "beta",
@@ -1627,6 +1797,11 @@
         "status": "changed",
         "text": "Imbue the Shaman's weapon with fire. Each hit causes 36 to 112 additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 5 minutes.",
         "change_kind": "reworded"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Imbue the Shaman's weapon with fire. Each hit causes 35 to 112 additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=16342)"
        }
       }
      ]
@@ -1782,7 +1957,7 @@
       {
        "rank": "Rank 5",
        "id": 16356,
-       "text": "Imbue the Shaman's weapon with frost. Each hit has a chance of causing 169 additional Frost damage and slowing the target's movement speed by 25% for 8 sec. Lasts for 60 minutes.",
+       "text": "Imbue the Shaman's weapon with frost. Each hit has a chance of causing 203 additional Frost damage and slowing the target's movement speed by 25% for 8 sec. Lasts for 60 minutes.",
        "school": "Frost",
        "coefficient": "10% of spell power (direct)",
        "tooltip_source": "beta",
@@ -1797,6 +1972,11 @@
         "status": "changed",
         "text": "Imbue the Shaman's weapon with frost. Each hit has a chance of causing 186 additional Frost damage and slowing the target's movement speed by 25% for 8 sec. Lasts for 5 minutes.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Imbue the Shaman's weapon with frost. Each hit has a chance of causing 169 additional Frost damage and slowing the target's movement speed by 25% for 8 sec. Lasts for 60 minutes.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=16356)"
        }
       }
      ]
@@ -2273,7 +2453,7 @@
       {
        "rank": "Rank 7",
        "id": 16316,
-       "text": "Imbue the Shaman's weapon, increasing melee attack power by 653 and allowing melee attacks to cause additional threat when using that weapon. Lasts for 60 minutes.",
+       "text": "Imbue the Shaman's weapon, increasing melee attack power by 686 and allowing melee attacks to cause additional threat when using that weapon. Lasts for 60 minutes.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2288,6 +2468,11 @@
         "status": "changed",
         "text": "Imbue the Shaman's weapon, increasing melee attack power by 653 and allowing melee attacks to cause additional threat when using that weapon. Lasts for 5 minutes.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Imbue the Shaman's weapon, increasing melee attack power by 653 and allowing melee attacks to cause additional threat when using that weapon. Lasts for 60 minutes.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=16316)"
        }
       }
      ]
@@ -2775,7 +2960,7 @@
       {
        "rank": "Rank 4",
        "id": 16362,
-       "text": "Imbue the Shaman's weapon with wind. Each hit has a 20% chance of granting you 2 extra attacks with 333 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.",
+       "text": "Imbue the Shaman's weapon with wind. Each hit has a 20% chance of granting you 2 extra attacks with 433 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2790,6 +2975,11 @@
         "status": "changed",
         "text": "Imbue the Shaman's weapon with wind. Each hit has a 20% chance of granting you 2 extra attacks with 333 extra melee attack power. Lasts for 5 minutes.",
         "change_kind": "reworded"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Imbue the Shaman's weapon with wind. Each hit has a 20% chance of granting you 2 extra attacks with 333 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=16362)"
        }
       }
      ]
@@ -3828,7 +4018,7 @@
       {
        "rank": "Rank 3",
        "id": 1239243,
-       "text": "Heals a friendly target for 805 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%.",
+       "text": "Heals a friendly target for 953 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%.",
        "school": "Nature",
        "coefficient": "21.4% of spell power (heal), 10% of spell power (per tick)",
        "tooltip_source": "beta",
@@ -3841,6 +4031,11 @@
        "level": 60,
        "classic": {
         "status": "new"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Heals a friendly target for 805 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=1239243)"
        }
       }
      ]

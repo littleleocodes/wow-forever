@@ -84,7 +84,10 @@ HEMO_BLEED = re.compile(r"Rupture and Garrote abilities by (\d+)%")             
 # also increased)". These are the strike spells' NORMALIZED_WEAPON_DMG base points in the raid simulator's spell store (wowsims/forever
 # bac92dbd5, client 70707: spells 1310705/399960/1241585/1241586, 23/33/48/67; the 70630 tooltips had said "plus an additional 13/19/27/38
 # with each weapon"), so a lower bound if 70753 raised them again. Replace them when a tooltip or the simulator gives the 70753 number.
-MUT_FLAT_BY_RANK = {1: 23.0, 2: 33.0, 3: 48.0, 4: 67.0}
+# 2026-11-10 (client 70888): the live tooltips give the amount, 40/57/79 for ranks 2-4 (levels 40/50/60; Wowhead's Forever tooltips =
+# the simulator's 44/63/88 base points x the 90% weapon share, applied the same way); rank 1 (1310707) is gone from the client and ranks
+# 2 shares its level 40, so it takes rank 2's amount. Was {1: 23, 2: 33, 3: 48, 4: 67} (bac92dbd5's base points, client 70707).
+MUT_FLAT_BY_RANK = {1: 40.0, 2: 40.0, 3: 57.0, 4: 79.0}
 # Poison attack-power coefficients (Blizzard's notes 2026-11-02; the tooltips show none): Instant Poison 0.01 x attack power per hit (was
 # 0.005), Deadly Poison 0.009 x attack power per stack over its duration (was 0.0045; the raid simulator splits it over the ticks).
 POISON_AP = {"Instant Poison": 0.01, "Deadly Poison": 0.009}

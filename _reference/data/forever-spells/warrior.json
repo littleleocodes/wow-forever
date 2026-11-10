@@ -743,7 +743,7 @@
       {
        "rank": "",
        "id": 1310222,
-       "text": "A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted.",
+       "text": "A brutal attack that deals 75% weapon damage. Deals an additional 75% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -757,6 +757,11 @@
        "not_from_class_trainer": "talent-taught",
        "classic": {
         "status": "new"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=1310222)"
        }
       }
      ]
@@ -1508,7 +1513,7 @@
       {
        "rank": "Rank 5",
        "id": 11556,
-       "text": "Reduces the melee attack power of all enemies within 10 yards by 204 for 45 sec.",
+       "text": "Reduces the melee attack power of all enemies within 10 yards by 210 for 45 sec.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1523,6 +1528,11 @@
         "status": "changed",
         "text": "Reduces the melee attack power of all enemies within 10 yards by 146 for 30 sec.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Reduces the melee attack power of all enemies within 10 yards by 204 for 45 sec.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=11556)"
        }
       }
      ]

@@ -716,6 +716,9 @@ def bonus_drops(full, events, eq, at):
 
 
 MAPS = {}
+# A side-trip dungeon is worth it for this many quests at full experience: 3 until Blizzard's hotfix of 2026-11-09 ("Experience from all
+# dungeon enemy kills increased by 50%"), which makes a run's kills pay too, so 2 since.
+DUNGEON_QUEST_BAR = 2
 CAPITALS = {"Stormwind City", "Ironforge", "Darnassus", "Orgrimmar", "Thunder Bluff", "Undercity"}
 ENTRANCE = {"Ragefire Chasm": "Orgrimmar", "Wailing Caverns": "The Barrens", "The Deadmines": "Westfall", "Shadowfang Keep": "Silverpine Forest",
             "Blackfathom Deeps": "Ashenvale", "The Stockade": "Stormwind City", "Gnomeregan": "Dun Morogh", "Razorfen Kraul": "The Barrens",
@@ -939,9 +942,9 @@ def timeline(sched, events, lv):
                     r["verdict"], r["why"] = "skip", "none of its quests can be in your log by then"
                     continue
                 new = f"{count} quest{'s' if count != 1 else ''} at full experience"
-                if count < 3:   # (2026-11-10, user: "slightly less optimal, but it's still fun and somewhat easy")
+                if count < DUNGEON_QUEST_BAR:   # (2026-11-10, user: "slightly less optimal, but it's still fun and somewhat easy")
                     tag = "worth it if you like it"
-                r["why"] = r["why"].replace(reason, ("worth it if you like it: " if count < 3 else "worth a detour for ") + new, 1)
+                r["why"] = r["why"].replace(reason, ("worth it if you like it: " if count < DUNGEON_QUEST_BAR else "worth a detour for ") + new, 1)
                 reason = new
             reason = reason.replace("worth a detour for ", "")
             notes = [x.strip() for x in r["why"].split(";")[1:]]
@@ -1209,8 +1212,8 @@ def dungeon_schedule(cfg, lv, runs, events=None):
             verdict, why = "do", "worth a detour for " + ", ".join(gear_q) + " from its quests"
         elif worth >= MIN_MINUTES:
             verdict, why = "do", f"worth a detour: its drops are worth about {worth} min on average"
-        elif len(full) >= 3:
-            verdict, why = "do", f"worth a detour for {len(full)} quests at full experience"
+        elif len(full) >= DUNGEON_QUEST_BAR:
+            verdict, why = "do", f"worth a detour for {len(full)} quests at full experience, and its kills give 50% more since 2026-11-09"
         else:
             verdict, why = "skip", (f"only {len(full)} quest{'s' if len(full) != 1 else ''} at full experience" if full else "no quests for you")
             why += " and " + (f"drops worth about {worth} min" if worth else "no drops for you")

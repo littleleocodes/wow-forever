@@ -1097,7 +1097,7 @@
       {
        "rank": "Rank 3",
        "id": 1311595,
-       "text": "Applies Light's Vigil to a friendly target for 30 sec. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for 684 to 724. Only one Vigil per Paladin may be active in each party.",
+       "text": "Applies Light's Vigil to a friendly target for 30 sec. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for 700 to 740. Only one Vigil per Paladin may be active in each party.",
        "school": "Holy",
        "coefficient": "14.3% of spell power (heal)",
        "tooltip_source": "beta",
@@ -1110,6 +1110,11 @@
        "level": 60,
        "classic": {
         "status": "new"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Applies Light's Vigil to a friendly target for 30 sec. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for 684 to 724. Only one Vigil per Paladin may be active in each party.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=1311595)"
        }
       }
      ]
@@ -2570,7 +2575,7 @@
       {
        "rank": "Rank 7",
        "id": 20423,
-       "text": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 35 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 153 to 167 Holy damage to an enemy and taunts the target to attack you for 3 sec.",
+       "text": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 35 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 168 to 182 Holy damage to an enemy and taunts the target to attack you for 3 sec.",
        "school": "Holy",
        "coefficient": "42.9% and 10% of spell power (direct)",
        "tooltip_source": "beta",
@@ -2583,6 +2588,11 @@
        "level": 58,
        "classic": {
         "status": "new"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 35 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 153 to 167 Holy damage to an enemy and taunts the target to attack you for 3 sec.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=20423)"
        }
       }
      ]
@@ -2924,7 +2934,7 @@
       {
        "rank": "Rank 1",
        "id": 679,
-       "text": "An instant strike that causes 25% weapon damage plus an additional 2 to 4 as Holy damage.",
+       "text": "An instant strike that causes 25% weapon damage plus an additional 11 to 14 as Holy damage.",
        "school": "Holy",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2937,12 +2947,17 @@
        "level": 6,
        "classic": {
         "status": "new"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "An instant strike that causes 25% weapon damage plus an additional 2 to 4 as Holy damage.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=679)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 678,
-       "text": "An instant strike that causes 29% weapon damage plus an additional 4 to 6 as Holy damage.",
+       "text": "An instant strike that causes 29% weapon damage plus an additional 15 to 20 as Holy damage.",
        "school": "Holy",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2955,12 +2970,17 @@
        "level": 12,
        "classic": {
         "status": "new"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "An instant strike that causes 29% weapon damage plus an additional 4 to 6 as Holy damage.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=678)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 1866,
-       "text": "An instant strike that causes 32% weapon damage plus an additional 5 to 8 as Holy damage.",
+       "text": "An instant strike that causes 32% weapon damage plus an additional 18 to 22 as Holy damage.",
        "school": "Holy",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2973,12 +2993,17 @@
        "level": 20,
        "classic": {
         "status": "new"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "An instant strike that causes 32% weapon damage plus an additional 5 to 8 as Holy damage.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=1866)"
        }
       },
       {
        "rank": "Rank 4",
        "id": 680,
-       "text": "An instant strike that causes 36% weapon damage plus an additional 7 to 11 as Holy damage.",
+       "text": "An instant strike that causes 36% weapon damage plus an additional 23 to 29 as Holy damage.",
        "school": "Holy",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2991,12 +3016,17 @@
        "level": 28,
        "classic": {
         "status": "new"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "An instant strike that causes 36% weapon damage plus an additional 7 to 11 as Holy damage.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=680)"
        }
       },
       {
        "rank": "Rank 5",
        "id": 2495,
-       "text": "An instant strike that causes 39% weapon damage plus an additional 12 to 16 as Holy damage.",
+       "text": "An instant strike that causes 39% weapon damage plus an additional 32 to 40 as Holy damage.",
        "school": "Holy",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -3009,12 +3039,17 @@
        "level": 36,
        "classic": {
         "status": "new"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "An instant strike that causes 39% weapon damage plus an additional 12 to 16 as Holy damage.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=2495)"
        }
       },
       {
        "rank": "Rank 6",
        "id": 5569,
-       "text": "An instant strike that causes 43% weapon damage plus an additional 22 to 29 as Holy damage.",
+       "text": "An instant strike that causes 43% weapon damage plus an additional 54 to 67 as Holy damage.",
        "school": "Holy",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -3027,12 +3062,17 @@
        "level": 44,
        "classic": {
         "status": "new"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "An instant strike that causes 43% weapon damage plus an additional 22 to 29 as Holy damage.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=5569)"
        }
       },
       {
        "rank": "Rank 7",
        "id": 10332,
-       "text": "An instant strike that causes 46% weapon damage plus an additional 33 to 42 as Holy damage.",
+       "text": "An instant strike that causes 46% weapon damage plus an additional 74 to 91 as Holy damage.",
        "school": "Holy",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -3045,12 +3085,17 @@
        "level": 52,
        "classic": {
         "status": "new"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "An instant strike that causes 46% weapon damage plus an additional 33 to 42 as Holy damage.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=10332)"
        }
       },
       {
        "rank": "Rank 8",
        "id": 10333,
-       "text": "An instant strike that causes 50% weapon damage plus an additional 40 to 53 as Holy damage.",
+       "text": "An instant strike that causes 50% weapon damage plus an additional 81 to 105 as Holy damage.",
        "school": "Holy",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -3063,6 +3108,11 @@
        "level": 60,
        "classic": {
         "status": "new"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "An instant strike that causes 50% weapon damage plus an additional 40 to 53 as Holy damage.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=10333)"
        }
       }
      ]
@@ -3290,7 +3340,7 @@
       {
        "rank": "Rank 5",
        "id": 20920,
-       "text": "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing 169 to 187 Holy damage, 339 to 373 if the target is stunned or incapacitated.",
+       "text": "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing 194 to 211 Holy damage, 388 to 422 if the target is stunned or incapacitated.",
        "school": "Holy",
        "coefficient": "42.9% of spell power (direct)",
        "tooltip_source": "beta",
@@ -3303,6 +3353,11 @@
        "level": 60,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing 169 to 187 Holy damage, 339 to 373 if the target is stunned or incapacitated.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=20920)"
        }
       }
      ]

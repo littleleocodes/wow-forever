@@ -4119,7 +4119,7 @@
       {
        "rank": "Rank 1",
        "id": 3110,
-       "text": "Deals 3 to 5 Fire damage to a target.",
+       "text": "Deals 6 to 8 Fire damage to a target.",
        "school": "Fire",
        "coefficient": "16.4% of spell power (direct)",
        "tooltip_source": "beta",
@@ -4134,12 +4134,17 @@
         "status": "changed",
         "text": "Deals 7 to 9 damage to a target.",
         "change_kind": "reworded"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Deals 3 to 5 Fire damage to a target.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=3110)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 7799,
-       "text": "Deals 7 to 9 Fire damage to a target.",
+       "text": "Deals 12 to 14 Fire damage to a target.",
        "school": "Fire",
        "coefficient": "31.4% of spell power (direct)",
        "tooltip_source": "beta",
@@ -4154,12 +4159,17 @@
         "status": "changed",
         "text": "Deals 14 to 16 damage to a target.",
         "change_kind": "reworded"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Deals 7 to 9 Fire damage to a target.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=7799)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 7800,
-       "text": "Deals 12 to 14 Fire damage to a target.",
+       "text": "Deals 15 to 19 Fire damage to a target.",
        "school": "Fire",
        "coefficient": "52.9% of spell power (direct)",
        "tooltip_source": "beta",
@@ -4174,12 +4184,17 @@
         "status": "changed",
         "text": "Deals 25 to 29 damage to a target.",
         "change_kind": "reworded"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Deals 12 to 14 Fire damage to a target.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=7800)"
        }
       },
       {
        "rank": "Rank 4",
        "id": 7801,
-       "text": "Deals 17 to 19 Fire damage to a target.",
+       "text": "Deals 18 to 22 Fire damage to a target.",
        "school": "Fire",
        "coefficient": "57.1% of spell power (direct)",
        "tooltip_source": "beta",
@@ -4194,6 +4209,11 @@
         "status": "changed",
         "text": "Deals 36 to 40 damage to a target.",
         "change_kind": "reworded"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Deals 17 to 19 Fire damage to a target.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=7801)"
        }
       },
       {

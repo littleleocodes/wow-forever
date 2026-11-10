@@ -237,6 +237,9 @@ def main():
         import hotfix_text as HT   # live hotfix numbers the export has not read yet (2026-10-30)
         for name in HT.apply_spells(cls, obj):
             print(f"  {cls}: {name}: live hotfix numbers of {HT.DATE} written in (hotfix_text.py)")
+        import live_spells as LS   # the live client's numbers the export lacks (2026-11-10; raw/<newest *-live-*>/live_spells.json)
+        for name in LS.apply_spells(cls, obj):
+            print(f"  {cls}: {name}: live client numbers written in (live_spells.py)")
         (OUT / f"{cls}.json").write_text(json.dumps(obj, indent=1, ensure_ascii=False), encoding="utf-8")
         d = ROOT / cls / "research" / "spells"
         d.mkdir(exist_ok=True)

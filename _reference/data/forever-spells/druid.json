@@ -955,7 +955,7 @@
       {
        "rank": "Rank 1",
        "id": 2912,
-       "text": "Causes 79 to 95 Arcane damage to the target.",
+       "text": "Causes 111 to 133 Arcane damage to the target.",
        "school": "Arcane",
        "coefficient": "100% of spell power (direct)",
        "tooltip_source": "beta",
@@ -970,12 +970,17 @@
         "status": "changed",
         "text": "Causes 95 to 115 Arcane damage to the target.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Causes 79 to 95 Arcane damage to the target.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=2912)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 8949,
-       "text": "Causes 108 to 130 Arcane damage to the target.",
+       "text": "Causes 151 to 182 Arcane damage to the target.",
        "school": "Arcane",
        "coefficient": "100% of spell power (direct)",
        "tooltip_source": "beta",
@@ -990,12 +995,17 @@
         "status": "changed",
         "text": "Causes 146 to 176 Arcane damage to the target.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Causes 108 to 130 Arcane damage to the target.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=8949)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 8950,
-       "text": "Causes 140 to 166 Arcane damage to the target.",
+       "text": "Causes 196 to 232 Arcane damage to the target.",
        "school": "Arcane",
        "coefficient": "100% of spell power (direct)",
        "tooltip_source": "beta",
@@ -1010,12 +1020,17 @@
         "status": "changed",
         "text": "Causes 212 to 252 Arcane damage to the target.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Causes 140 to 166 Arcane damage to the target.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=8950)"
        }
       },
       {
        "rank": "Rank 4",
        "id": 8951,
-       "text": "Causes 191 to 225 Arcane damage to the target.",
+       "text": "Causes 268 to 316 Arcane damage to the target.",
        "school": "Arcane",
        "coefficient": "100% of spell power (direct)",
        "tooltip_source": "beta",
@@ -1030,12 +1045,17 @@
         "status": "changed",
         "text": "Causes 293 to 347 Arcane damage to the target.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Causes 191 to 225 Arcane damage to the target.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=8951)"
        }
       },
       {
        "rank": "Rank 5",
        "id": 9875,
-       "text": "Causes 257 to 301 Arcane damage to the target.",
+       "text": "Causes 359 to 421 Arcane damage to the target.",
        "school": "Arcane",
        "coefficient": "100% of spell power (direct)",
        "tooltip_source": "beta",
@@ -1050,12 +1070,17 @@
         "status": "changed",
         "text": "Causes 378 to 444 Arcane damage to the target.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Causes 257 to 301 Arcane damage to the target.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9875)"
        }
       },
       {
        "rank": "Rank 6",
        "id": 9876,
-       "text": "Causes 313 to 369 Arcane damage to the target.",
+       "text": "Causes 438 to 516 Arcane damage to the target.",
        "school": "Arcane",
        "coefficient": "100% of spell power (direct)",
        "tooltip_source": "beta",
@@ -1070,12 +1095,17 @@
         "status": "changed",
         "text": "Causes 451 to 531 Arcane damage to the target.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Causes 313 to 369 Arcane damage to the target.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9876)"
        }
       },
       {
        "rank": "Rank 7",
        "id": 25298,
-       "text": "Causes 350 to 412 Arcane damage to the target.",
+       "text": "Causes 490 to 576 Arcane damage to the target.",
        "school": "Arcane",
        "coefficient": "100% of spell power (direct)",
        "tooltip_source": "beta",
@@ -1090,6 +1120,11 @@
         "status": "changed",
         "text": "Causes 496 to 584 Arcane damage to the target.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Causes 350 to 412 Arcane damage to the target.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=25298)"
        }
       }
      ]
@@ -1516,7 +1551,7 @@
       {
        "rank": "Shapeshift",
        "id": 5487,
-       "text": "Shapeshift into Bear Form, increasing Attack Power by 120, Armor contribution from items by 180%, and Health by 180. Also protects the caster from Polymorph effects and allows the use of various bear abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+       "text": "Shapeshift into Bear Form, increasing Attack Power by 120, Armor contribution from items by 180%, and Health by 560. Also protects the caster from Polymorph effects and allows the use of various bear abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1532,6 +1567,11 @@
         "status": "changed",
         "text": "Shapeshift into a bear, increasing melee attack power by 120, armor contribution from items by 180%, and health by 560. Also protects the caster from Polymorph effects and allows the use of various bear abilities. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
         "change_kind": "reworded"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Shapeshift into Bear Form, increasing Attack Power by 120, Armor contribution from items by 180%, and Health by 180. Also protects the caster from Polymorph effects and allows the use of various bear abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=5487)"
        }
       }
      ]
@@ -1542,7 +1582,7 @@
       {
        "rank": "Shapeshift",
        "id": 768,
-       "text": "Shapeshift into Cat Form, increasing Attack Power by 120 plus Agility. Also protects the caster from Polymorph effects and allows the use of various cat abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+       "text": "Shapeshift into Cat Form, increasing Attack Power by 12 plus Agility. Also protects the caster from Polymorph effects and allows the use of various cat abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1557,6 +1597,11 @@
         "status": "changed",
         "text": "Shapeshift into cat form, increasing melee attack power by 120 plus Agility. Also protects the caster from Polymorph effects and allows the use of various cat abilities. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
         "change_kind": "reworded"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Shapeshift into Cat Form, increasing Attack Power by 120 plus Agility. Also protects the caster from Polymorph effects and allows the use of various cat abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=768)"
        }
       }
      ]
@@ -1590,7 +1635,7 @@
       {
        "rank": "Rank 1",
        "id": 1082,
-       "text": "Claw the enemy for 140% normal damage plus 37. Awards 1 combo point.",
+       "text": "Claw the enemy for 140% normal damage plus 27. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1605,12 +1650,17 @@
         "status": "changed",
         "text": "Claw the enemy, causing 27 additional damage. Awards 1 combo point.",
         "change_kind": "reworded"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Claw the enemy for 140% normal damage plus 37. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=1082)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 3029,
-       "text": "Claw the enemy for 140% normal damage plus 54. Awards 1 combo point.",
+       "text": "Claw the enemy for 140% normal damage plus 39. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1625,12 +1675,17 @@
         "status": "changed",
         "text": "Claw the enemy, causing 39 additional damage. Awards 1 combo point.",
         "change_kind": "reworded"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Claw the enemy for 140% normal damage plus 54. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=3029)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 5201,
-       "text": "Claw the enemy for 140% normal damage plus 79. Awards 1 combo point.",
+       "text": "Claw the enemy for 140% normal damage plus 57. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1645,12 +1700,17 @@
         "status": "changed",
         "text": "Claw the enemy, causing 57 additional damage. Awards 1 combo point.",
         "change_kind": "reworded"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Claw the enemy for 140% normal damage plus 79. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=5201)"
        }
       },
       {
        "rank": "Rank 4",
        "id": 9849,
-       "text": "Claw the enemy for 140% normal damage plus 123. Awards 1 combo point.",
+       "text": "Claw the enemy for 140% normal damage plus 88. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1665,12 +1725,17 @@
         "status": "changed",
         "text": "Claw the enemy, causing 88 additional damage. Awards 1 combo point.",
         "change_kind": "reworded"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Claw the enemy for 140% normal damage plus 123. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9849)"
        }
       },
       {
        "rank": "Rank 5",
        "id": 9850,
-       "text": "Claw the enemy for 140% normal damage plus 161. Awards 1 combo point.",
+       "text": "Claw the enemy for 140% normal damage plus 115. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1685,6 +1750,11 @@
         "status": "changed",
         "text": "Claw the enemy, causing 115 additional damage. Awards 1 combo point.",
         "change_kind": "reworded"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Claw the enemy for 140% normal damage plus 161. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9850)"
        }
       }
      ]
@@ -1900,7 +1970,7 @@
       {
        "rank": "Shapeshift",
        "id": 9634,
-       "text": "Shapeshift into Dire Bear Form, increasing Attack Power by 180, Armor contribution from items by 360%, and Health by 1,240. Also protects the caster from Polymorph effects and allows the use of various bear abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+       "text": "Shapeshift into Dire Bear Form, increasing Attack Power by 210, Armor contribution from items by 360%, and Health by 1560. Also protects the caster from Polymorph effects and allows the use of various bear abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1915,6 +1985,11 @@
         "status": "changed",
         "text": "Shapeshift into a dire bear, increasing melee attack power by 180, armor contribution from items by 360%, and health by 1,240. Also protects the caster from Polymorph effects and allows the use of various bear abilities. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
         "change_kind": "reworded"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Shapeshift into Dire Bear Form, increasing Attack Power by 180, Armor contribution from items by 360%, and Health by 1,240. Also protects the caster from Polymorph effects and allows the use of various bear abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9634)"
        }
       }
      ]
@@ -1999,7 +2074,7 @@
       {
        "rank": "Rank 1",
        "id": 1328618,
-       "text": "Finishing move that causes damage per combo point and converts each extra point of energy into 0.6 additional damage. Damage is increased by your Attack Power.\n 1 point : 33-43 damage\n 2 points: 57-67 damage\n 3 points: 81-91 damage\n 4 points: 105-115 damage\n 5 points: 129-139 damage",
+       "text": "Finishing move that causes damage per combo point and converts each extra point of energy into 0.7 additional damage. Damage is increased by your Attack Power.\n 1 point : 40-54 damage\n 2 points: 70-84 damage\n 3 points: 100-114 damage\n 4 points: 130-144 damage\n 5 points: 160-174 damage",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2012,12 +2087,17 @@
        "level": 24,
        "classic": {
         "status": "new"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Finishing move that causes damage per combo point and converts each extra point of energy into 0.6 additional damage. Damage is increased by your Attack Power.\n 1 point : 33-43 damage\n 2 points: 57-67 damage\n 3 points: 81-91 damage\n 4 points: 105-115 damage\n 5 points: 129-139 damage",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=1328618)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 22568,
-       "text": "Finishing move that causes damage per combo point and converts each extra point of energy into 1.0 additional damage. Damage is increased by your Attack Power.\n 1 point : 50-66 damage\n 2 points: 86-102 damage\n 3 points: 122-138 damage\n 4 points: 158-174 damage\n 5 points: 194-210 damage",
+       "text": "Finishing move that causes damage per combo point and converts each extra point of energy into 1.2 additional damage. Damage is increased by your Attack Power.\n 1 point : 62-82 damage\n 2 points: 107-127 damage\n 3 points: 152-177 damage\n 4 points: 197-217 damage\n 5 points: 242-262 damage",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2030,12 +2110,17 @@
        "level": 32,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Finishing move that causes damage per combo point and converts each extra point of energy into 1.0 additional damage. Damage is increased by your Attack Power.\n 1 point : 50-66 damage\n 2 points: 86-102 damage\n 3 points: 122-138 damage\n 4 points: 158-174 damage\n 5 points: 194-210 damage",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=22568)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 22827,
-       "text": "Finishing move that causes damage per combo point and converts each extra point of energy into 1.5 additional damage. Damage is increased by your Attack Power.\n 1 point : 79-103 damage\n 2 points: 138-162 damage\n 3 points: 197-221 damage\n 4 points: 256-280 damage\n 5 points: 315-339 damage",
+       "text": "Finishing move that causes damage per combo point and converts each extra point of energy into 1.8 additional damage. Damage is increased by your Attack Power.\n 1 point : 99-129 damage\n 2 points: 173-203 damage\n 3 points: 247-277 damage\n 4 points: 321-351 damage\n 5 points: 395-425 damage",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2048,12 +2133,17 @@
        "level": 40,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Finishing move that causes damage per combo point and converts each extra point of energy into 1.5 additional damage. Damage is increased by your Attack Power.\n 1 point : 79-103 damage\n 2 points: 138-162 damage\n 3 points: 197-221 damage\n 4 points: 256-280 damage\n 5 points: 315-339 damage",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=22827)"
        }
       },
       {
        "rank": "Rank 4",
        "id": 22828,
-       "text": "Finishing move that causes damage per combo point and converts each extra point of energy into 2.0 additional damage. Damage is increased by your Attack Power.\n 1 point : 122-162 damage\n 2 points: 214-254 damage\n 3 points: 306-346 damage\n 4 points: 398-438 damage\n 5 points: 490-530 damage",
+       "text": "Finishing move that causes damage per combo point and converts each extra point of energy into 2.5 additional damage. Damage is increased by your Attack Power.\n 1 point : 152-202 damage\n 2 points: 267-317 damage\n 3 points: 382-432 damage\n 4 points: 497-547 damage\n 5 points: 612-662 damage",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2066,12 +2156,17 @@
        "level": 48,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Finishing move that causes damage per combo point and converts each extra point of energy into 2.0 additional damage. Damage is increased by your Attack Power.\n 1 point : 122-162 damage\n 2 points: 214-254 damage\n 3 points: 306-346 damage\n 4 points: 398-438 damage\n 5 points: 490-530 damage",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=22828)"
        }
       },
       {
        "rank": "Rank 5",
        "id": 22829,
-       "text": "Finishing move that causes damage per combo point and converts each extra point of energy into 2.5 additional damage. Damage is increased by your Attack Power.\n 1 point : 173-223 damage\n 2 points: 301-351 damage\n 3 points: 429-479 damage\n 4 points: 557-607 damage\n 5 points: 685-735 damage",
+       "text": "Finishing move that causes damage per combo point and converts each extra point of energy into 3.1 additional damage. Damage is increased by your Attack Power.\n 1 point : 215-279 damage\n 2 points: 375-439 damage\n 3 points: 535-599 damage\n 4 points: 695-759 damage\n 5 points: 855-919 damage",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2084,12 +2179,17 @@
        "level": 56,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Finishing move that causes damage per combo point and converts each extra point of energy into 2.5 additional damage. Damage is increased by your Attack Power.\n 1 point : 173-223 damage\n 2 points: 301-351 damage\n 3 points: 429-479 damage\n 4 points: 557-607 damage\n 5 points: 685-735 damage",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=22829)"
        }
       },
       {
        "rank": "Rank 6",
        "id": 31018,
-       "text": "Finishing move that causes damage per combo point and converts each extra point of energy into 2.7 additional damage. Damage is increased by your Attack Power.\n 1 point : 199-259 damage\n 2 points: 346-406 damage\n 3 points: 493-553 damage\n 4 points: 640-700 damage\n 5 points: 787-847 damage",
+       "text": "Finishing move that causes damage per combo point and converts each extra point of energy into 3.3 additional damage. Damage is increased by your Attack Power.\n 1 point : 245-321 damage\n 2 points: 426-502 damage\n 3 points: 607-683 damage\n 4 points: 788-864 damage\n 5 points: 969-1045 damage",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2102,6 +2202,11 @@
        "level": 60,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Finishing move that causes damage per combo point and converts each extra point of energy into 2.7 additional damage. Damage is increased by your Attack Power.\n 1 point : 199-259 damage\n 2 points: 346-406 damage\n 3 points: 493-553 damage\n 4 points: 640-700 damage\n 5 points: 787-847 damage",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=31018)"
        }
       }
      ]
@@ -2415,7 +2520,7 @@
       {
        "rank": "Rank 1",
        "id": 9005,
-       "text": "Pounce, stunning the target for 2 sec and causing 90 damage over 18 sec. Must be prowling and behind the target. Awards 1 combo point.",
+       "text": "Pounce, stunning the target for 2 sec and causing 114 damage over 18 sec. Must be prowling and behind the target. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2428,12 +2533,17 @@
        "level": 36,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Pounce, stunning the target for 2 sec and causing 90 damage over 18 sec. Must be prowling and behind the target. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9005)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 9823,
-       "text": "Pounce, stunning the target for 2 sec and causing 120 damage over 18 sec. Must be prowling and behind the target. Awards 1 combo point.",
+       "text": "Pounce, stunning the target for 2 sec and causing 150 damage over 18 sec. Must be prowling and behind the target. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2446,12 +2556,17 @@
        "level": 46,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Pounce, stunning the target for 2 sec and causing 120 damage over 18 sec. Must be prowling and behind the target. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9823)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 9827,
-       "text": "Pounce, stunning the target for 2 sec and causing 150 damage over 18 sec. Must be prowling and behind the target. Awards 1 combo point.",
+       "text": "Pounce, stunning the target for 2 sec and causing 186 damage over 18 sec. Must be prowling and behind the target. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2464,6 +2579,11 @@
        "level": 56,
        "classic": {
         "status": "same"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Pounce, stunning the target for 2 sec and causing 150 damage over 18 sec. Must be prowling and behind the target. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9827)"
        }
       }
      ]
@@ -2611,7 +2731,7 @@
       {
        "rank": "Rank 1",
        "id": 1822,
-       "text": "Rake the target for 23 damage and an additional 48 damage over 9 sec. Awards 1 combo point.",
+       "text": "Rake the target for 27 damage and an additional 60 damage over 9 sec. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2626,12 +2746,17 @@
         "status": "changed",
         "text": "Rake the target for 19 damage and an additional 39 damage over 9 sec. Awards 1 combo point.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Rake the target for 23 damage and an additional 48 damage over 9 sec. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=1822)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 1823,
-       "text": "Rake the target for 31 damage and an additional 63 damage over 9 sec. Awards 1 combo point.",
+       "text": "Rake the target for 39 damage and an additional 78 damage over 9 sec. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2646,12 +2771,17 @@
         "status": "changed",
         "text": "Rake the target for 28 damage and an additional 57 damage over 9 sec. Awards 1 combo point.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Rake the target for 31 damage and an additional 63 damage over 9 sec. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=1823)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 1824,
-       "text": "Rake the target for 45 damage and an additional 78 damage over 9 sec. Awards 1 combo point.",
+       "text": "Rake the target for 56 damage and an additional 96 damage over 9 sec. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2666,12 +2796,17 @@
         "status": "changed",
         "text": "Rake the target for 43 damage and an additional 75 damage over 9 sec. Awards 1 combo point.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Rake the target for 45 damage and an additional 78 damage over 9 sec. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=1824)"
        }
       },
       {
        "rank": "Rank 4",
        "id": 9904,
-       "text": "Rake the target for 61 damage and an additional 102 damage over 9 sec. Awards 1 combo point.",
+       "text": "Rake the target for 76 damage and an additional 126 damage over 9 sec. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2686,6 +2821,11 @@
         "status": "changed",
         "text": "Rake the target for 58 damage and an additional 96 damage over 9 sec. Awards 1 combo point.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Rake the target for 61 damage and an additional 102 damage over 9 sec. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9904)"
        }
       }
      ]
@@ -2696,7 +2836,7 @@
       {
        "rank": "Rank 1",
        "id": 6785,
-       "text": "Ravage the target, causing 435% damage plus 182 to the target. Must be prowling and behind the target. Awards 1 combo point.",
+       "text": "Ravage the target, causing 435% damage plus 42 to the target. Must be prowling and behind the target. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2711,12 +2851,17 @@
         "status": "changed",
         "text": "Ravage the target, causing 350% damage plus 147 to the target. Must be prowling and behind the target. Awards 1 combo point.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Ravage the target, causing 435% damage plus 182 to the target. Must be prowling and behind the target. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=6785)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 6787,
-       "text": "Ravage the target, causing 435% damage plus 269 to the target. Must be prowling and behind the target. Awards 1 combo point.",
+       "text": "Ravage the target, causing 435% damage plus 62 to the target. Must be prowling and behind the target. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2731,12 +2876,17 @@
         "status": "changed",
         "text": "Ravage the target, causing 350% damage plus 217 to the target. Must be prowling and behind the target. Awards 1 combo point.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Ravage the target, causing 435% damage plus 269 to the target. Must be prowling and behind the target. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=6787)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 9866,
-       "text": "Ravage the target, causing 435% damage plus 339 to the target. Must be prowling and behind the target. Awards 1 combo point.",
+       "text": "Ravage the target, causing 435% damage plus 78 to the target. Must be prowling and behind the target. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2751,12 +2901,17 @@
         "status": "changed",
         "text": "Ravage the target, causing 350% damage plus 273 to the target. Must be prowling and behind the target. Awards 1 combo point.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Ravage the target, causing 435% damage plus 339 to the target. Must be prowling and behind the target. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9866)"
        }
       },
       {
        "rank": "Rank 4",
        "id": 9867,
-       "text": "Ravage the target, causing 435% damage plus 426 to the target. Must be prowling and behind the target. Awards 1 combo point.",
+       "text": "Ravage the target, causing 435% damage plus 98 to the target. Must be prowling and behind the target. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2771,6 +2926,11 @@
         "status": "changed",
         "text": "Ravage the target, causing 350% damage plus 343 to the target. Must be prowling and behind the target. Awards 1 combo point.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Ravage the target, causing 435% damage plus 426 to the target. Must be prowling and behind the target. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9867)"
        }
       }
      ]
@@ -2781,7 +2941,7 @@
       {
        "rank": "Rank 1",
        "id": 1079,
-       "text": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power:\n 1 point : 44 damage over 12 sec.\n 2 points: 71 damage over 12 sec.\n 3 points: 97 damage over 12 sec.\n 4 points: 124 damage over 12 sec.\n 5 points: 150 damage over 12 sec.",
+       "text": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power:\n 1 point : 57 damage over 12 sec.\n 2 points: 90 damage over 12 sec.\n 3 points: 123 damage over 12 sec.\n 4 points: 156 damage over 12 sec.\n 5 points: 189 damage over 12 sec.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2796,12 +2956,17 @@
         "status": "changed",
         "text": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power: 1 point : 42 damage over 12 sec. 2 points: 66 damage over 12 sec. 3 points: 90 damage over 12 sec. 4 points: 114 damage over 12 sec. 5 points: 138 damage over 12 sec.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power:\n 1 point : 44 damage over 12 sec.\n 2 points: 71 damage over 12 sec.\n 3 points: 97 damage over 12 sec.\n 4 points: 124 damage over 12 sec.\n 5 points: 150 damage over 12 sec.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=1079)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 9492,
-       "text": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power:\n 1 point : 67 damage over 12 sec.\n 2 points: 110 damage over 12 sec.\n 3 points: 154 damage over 12 sec.\n 4 points: 197 damage over 12 sec.\n 5 points: 240 damage over 12 sec.",
+       "text": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power:\n 1 point : 84 damage over 12 sec.\n 2 points: 138 damage over 12 sec.\n 3 points: 192 damage over 12 sec.\n 4 points: 246 damage over 12 sec.\n 5 points: 300 damage over 12 sec.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2816,12 +2981,17 @@
         "status": "changed",
         "text": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power: 1 point : 66 damage over 12 sec. 2 points: 108 damage over 12 sec. 3 points: 150 damage over 12 sec. 4 points: 192 damage over 12 sec. 5 points: 234 damage over 12 sec.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power:\n 1 point : 67 damage over 12 sec.\n 2 points: 110 damage over 12 sec.\n 3 points: 154 damage over 12 sec.\n 4 points: 197 damage over 12 sec.\n 5 points: 240 damage over 12 sec.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9492)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 9493,
-       "text": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power:\n 1 point : 87 damage over 12 sec.\n 2 points: 138 damage over 12 sec.\n 3 points: 189 damage over 12 sec.\n 4 points: 240 damage over 12 sec.\n 5 points: 291 damage over 12 sec.",
+       "text": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power:\n 1 point : 111 damage over 12 sec.\n 2 points: 174 damage over 12 sec.\n 3 points: 237 damage over 12 sec.\n 4 points: 300 damage over 12 sec.\n 5 points: 363 damage over 12 sec.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2836,12 +3006,17 @@
         "status": "changed",
         "text": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power: 1 point : 90 damage over 12 sec. 2 points: 144 damage over 12 sec. 3 points: 198 damage over 12 sec. 4 points: 252 damage over 12 sec. 5 points: 306 damage over 12 sec.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power:\n 1 point : 87 damage over 12 sec.\n 2 points: 138 damage over 12 sec.\n 3 points: 189 damage over 12 sec.\n 4 points: 240 damage over 12 sec.\n 5 points: 291 damage over 12 sec.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9493)"
        }
       },
       {
        "rank": "Rank 4",
        "id": 9752,
-       "text": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power:\n 1 point : 124 damage over 12 sec.\n 2 points: 200 damage over 12 sec.\n 3 points: 277 damage over 12 sec.\n 4 points: 353 damage over 12 sec.\n 5 points: 429 damage over 12 sec.",
+       "text": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power:\n 1 point : 155 damage over 12 sec.\n 2 points: 250 damage over 12 sec.\n 3 points: 344 damage over 12 sec.\n 4 points: 439 damage over 12 sec.\n 5 points: 534 damage over 12 sec.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2856,12 +3031,17 @@
         "status": "changed",
         "text": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power: 1 point : 138 damage over 12 sec. 2 points: 222 damage over 12 sec. 3 points: 306 damage over 12 sec. 4 points: 390 damage over 12 sec. 5 points: 474 damage over 12 sec.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power:\n 1 point : 124 damage over 12 sec.\n 2 points: 200 damage over 12 sec.\n 3 points: 277 damage over 12 sec.\n 4 points: 353 damage over 12 sec.\n 5 points: 429 damage over 12 sec.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9752)"
        }
       },
       {
        "rank": "Rank 5",
        "id": 9894,
-       "text": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power:\n 1 point : 175 damage over 12 sec.\n 2 points: 284 damage over 12 sec.\n 3 points: 394 damage over 12 sec.\n 4 points: 503 damage over 12 sec.\n 5 points: 612 damage over 12 sec.",
+       "text": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power:\n 1 point : 219 damage over 12 sec.\n 2 points: 354 damage over 12 sec.\n 3 points: 489 damage over 12 sec.\n 4 points: 624 damage over 12 sec.\n 5 points: 759 damage over 12 sec.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2876,12 +3056,17 @@
         "status": "changed",
         "text": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power: 1 point : 192 damage over 12 sec. 2 points: 312 damage over 12 sec. 3 points: 432 damage over 12 sec. 4 points: 552 damage over 12 sec. 5 points: 672 damage over 12 sec.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power:\n 1 point : 175 damage over 12 sec.\n 2 points: 284 damage over 12 sec.\n 3 points: 394 damage over 12 sec.\n 4 points: 503 damage over 12 sec.\n 5 points: 612 damage over 12 sec.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9894)"
        }
       },
       {
        "rank": "Rank 6",
        "id": 9896,
-       "text": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power:\n 1 point : 243 damage over 12 sec.\n 2 points: 396 damage over 12 sec.\n 3 points: 549 damage over 12 sec.\n 4 points: 702 damage over 12 sec.\n 5 points: 855 damage over 12 sec.",
+       "text": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power:\n 1 point : 305 damage over 12 sec.\n 2 points: 497 damage over 12 sec.\n 3 points: 688 damage over 12 sec.\n 4 points: 880 damage over 12 sec.\n 5 points: 1071 damage over 12 sec.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2896,6 +3081,11 @@
         "status": "changed",
         "text": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power: 1 point : 270 damage over 12 sec. 2 points: 438 damage over 12 sec. 3 points: 606 damage over 12 sec. 4 points: 774 damage over 12 sec. 5 points: 942 damage over 12 sec.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Finishing move that causes damage over time. Damage increases per combo point and by your Attack Power:\n 1 point : 243 damage over 12 sec.\n 2 points: 396 damage over 12 sec.\n 3 points: 549 damage over 12 sec.\n 4 points: 702 damage over 12 sec.\n 5 points: 855 damage over 12 sec.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9896)"
        }
       }
      ]
@@ -2930,7 +3120,7 @@
       {
        "rank": "Rank 1",
        "id": 5221,
-       "text": "Shred the target, causing 200% damage plus 44 to the target. Must be behind the target. Awards 1 combo point.",
+       "text": "Shred the target, causing 200% damage plus 22 to the target. Must be behind the target. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2945,12 +3135,17 @@
         "status": "changed",
         "text": "Shred the target, causing 225% damage plus 54 to the target. Must be behind the target. Awards 1 combo point.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Shred the target, causing 200% damage plus 44 to the target. Must be behind the target. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=5221)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 6800,
-       "text": "Shred the target, causing 200% damage plus 64 to the target. Must be behind the target. Awards 1 combo point.",
+       "text": "Shred the target, causing 200% damage plus 32 to the target. Must be behind the target. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2965,12 +3160,17 @@
         "status": "changed",
         "text": "Shred the target, causing 225% damage plus 72 to the target. Must be behind the target. Awards 1 combo point.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Shred the target, causing 200% damage plus 64 to the target. Must be behind the target. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=6800)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 8992,
-       "text": "Shred the target, causing 200% damage plus 88 to the target. Must be behind the target. Awards 1 combo point.",
+       "text": "Shred the target, causing 200% damage plus 44 to the target. Must be behind the target. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2985,12 +3185,17 @@
         "status": "changed",
         "text": "Shred the target, causing 225% damage plus 99 to the target. Must be behind the target. Awards 1 combo point.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Shred the target, causing 200% damage plus 88 to the target. Must be behind the target. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=8992)"
        }
       },
       {
        "rank": "Rank 4",
        "id": 9829,
-       "text": "Shred the target, causing 200% damage plus 128 to the target. Must be behind the target. Awards 1 combo point.",
+       "text": "Shred the target, causing 200% damage plus 64 to the target. Must be behind the target. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -3005,12 +3210,17 @@
         "status": "changed",
         "text": "Shred the target, causing 225% damage plus 144 to the target. Must be behind the target. Awards 1 combo point.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Shred the target, causing 200% damage plus 128 to the target. Must be behind the target. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9829)"
        }
       },
       {
        "rank": "Rank 5",
        "id": 9830,
-       "text": "Shred the target, causing 200% damage plus 160 to the target. Must be behind the target. Awards 1 combo point.",
+       "text": "Shred the target, causing 200% damage plus 80 to the target. Must be behind the target. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -3025,6 +3235,11 @@
         "status": "changed",
         "text": "Shred the target, causing 225% damage plus 180 to the target. Must be behind the target. Awards 1 combo point.",
         "change_kind": "numbers"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Shred the target, causing 200% damage plus 160 to the target. Must be behind the target. Awards 1 combo point.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9830)"
        }
       }
      ]
@@ -4521,7 +4736,7 @@
       {
        "rank": "Rank 3",
        "id": 1238215,
-       "text": "Heals the target and their party for 679 over 7 sec. Party members must be within 43.5 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
+       "text": "Heals the target and their party for 769 over 7 sec. Party members must be within 43.5 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
        "school": "Nature",
        "coefficient": "3.3% of spell power (per tick)",
        "tooltip_source": "beta",
@@ -4534,6 +4749,11 @@
        "level": 60,
        "classic": {
         "status": "new"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Heals the target and their party for 679 over 7 sec. Party members must be within 43.5 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=1238215)"
        }
       }
      ]

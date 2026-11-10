@@ -168,6 +168,17 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   `CAPTURED`): code and renderers take it from there, never a literal. Always name the build when quoting it. Every rank's tooltip is the client's level-60 text; `ranks_prev` keeps the previous
   build's text where it changed. Spell numbers: `_reference/data/forever-spells/<class>.json` (build_forever_spells.py)
   rendered to `<class>/research/spells/README.md`. The demo snapshot (2026-09-13) is archived in `raw/2026-09-13-demo/`.
+- **Live client numbers** (`live_spells.py`, 2026-11-10, the client 70862 update): talentsforever's export and Blizzard's notes missed
+  launch-client changes (Lightning Bolt rank 10 196 -> 353 base, Chain Lightning rank 4 123 -> 510, Starfire, the Feral finishers,
+  Backstab's flat 225 -> 150, Holy Strike's Holy damage doubled): the raid simulator had them, the fight lab and the stats model read our
+  stale text. The tool takes every rank's Wowhead Forever tooltip (the live client's wording), brings it to level 60 with the pinned
+  simulator's spell data (Wowhead computes at the spell's MaxLevel: Fireball rank 12 reads 12 high), evaluates its arithmetic and talent
+  switches, and writes the live numbers only where the wording matches ours apart from the numbers, never a 0 over a number (server
+  values the client's tooltip lacks: Oath of Light); each rank keeps `live` {build, before, source}; build_forever_spells.py applies the
+  newest raw/*-live-*/live_spells.json after hotfix_text on every rebuild. Run it at every client or simulator update
+  (`--pull <date>-live-<build> --build <client> --commit <sim commit> --write`) and read raw/<pull>/README.md's not-taken list.
+  The client's own tables per build are on wago.tools (product wowf, `https://wago.tools/db2/<Table>/csv?build=<build>`; the CSVs go to
+  ~/.wow-forever-tools/wago/, never the repository): diff them to see when a change landed.
 - Proposed Forever builds are **hypotheses**: validated for point math only. Mark performance claims as
   unverified and list `open_questions` to check at launch; `python _reference/data/build_launch_checklist.py`
   aggregates them into `_reference/launch-checklist.md`; `build_beta_checklist.py` writes the level-30 beta subset to

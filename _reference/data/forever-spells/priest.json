@@ -2568,7 +2568,7 @@
       {
        "rank": "Rank 6",
        "id": 27801,
-       "text": "Causes an explosion of holy light around the caster, causing 174 to 200 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 288 to 334. These effects cause no threat.\n\nEach time Holy Fire deals damage, you have a 5% chance for your next Holy Nova to cost no Mana.",
+       "text": "Causes an explosion of holy light around the caster, causing 174 to 200 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 294 to 339. These effects cause no threat.\n\nEach time Holy Fire deals damage, you have a 5% chance for your next Holy Nova to cost no Mana.",
        "school": "Holy",
        "coefficient": "10.7% of spell power (direct), 10.7% of spell power (heal)",
        "tooltip_source": "beta",
@@ -2583,6 +2583,11 @@
         "status": "changed",
         "text": "Causes an explosion of holy light around the caster, causing 181 to 209 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 302 to 350. These effects cause no threat.",
         "change_kind": "reworded"
+       },
+       "live": {
+        "build": "1.60.1.70888",
+        "before": "Causes an explosion of holy light around the caster, causing 174 to 200 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 288 to 334. These effects cause no threat.\n\nEach time Holy Fire deals damage, you have a 5% chance for your next Holy Nova to cost no Mana.",
+        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=27801)"
        }
       }
      ]
