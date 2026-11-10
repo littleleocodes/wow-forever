@@ -161,15 +161,20 @@ def steps_html(C, lv):
             tr = C.get("trip") or {}
             items.append(todo(f"cons{cn['item']}", f"Buy ×{cn['qty']} {esc(cn['item'])} <span class=\"slot\">{esc(cn['kind'].lower())}</span>",
                               f"{coins(cn['total'])} · keeps it up for about {tr.get('minutes', 0) / 60:.1f} h of play · {esc(cn['effect'])}"))
-    if mats:
-        items.append(todo("mats", "Buy the materials for your crafts below (less what is in your bags)",
-                          ", ".join(f"{esc(n)} ×{k}" for n, k in sorted(mats.items(), key=lambda kv: -kv[1]))))
+    if mats:   # what the materials cost: the step's net cost plus what selling its products brings back
+        cost = sum(st["cost"] + (st["sell"][0] * min(st["crafts"], st["sell"][1] or st["crafts"]) if st.get("sell") else 0)
+                   for pp, st in craft_steps)
+        gold = (C.get("gold") or {}).get("gold")
+        short = gold is not None and cost > gold
+        items.append(todo("mats", f"Buy the materials for your crafts below, about {coins(cost)} (less what is in your bags)",
+                          ", ".join(f"{esc(n)} ×{k}" for n, k in sorted(mats.items(), key=lambda kv: -kv[1]))
+                          + ("<br><strong>More than your gold:</strong> craft what your bags allow, sell it, then buy the rest" if short else "")))
     steps.append(("Auction House", "Buy", items))
 
     # 2. learn
     items = []
-    for cr in C.get("crafts") or []:
-        if not cr["known"] and cr["level"] <= lv + 8:
+    for cr in C.get("crafts") or []:   # only what your skill lets you learn now (a higher one is a goal under Work toward)
+        if not cr["known"] and cr["level"] <= lv + 8 and (cr.get("skill") or 0) <= cr["have"]:
             items.append(todo(f"learn{cr['item']}", f"Learn {esc(cr['item'])}",
                               f"{esc(cr['profession'])} {cr.get('skill') or '?'} (you have {cr['have']}) · {esc(cr.get('learn') or 'source unknown')} · "
                               f"for your {esc(cr['slot'])} at {cr['level']}"))
@@ -222,7 +227,7 @@ def steps_html(C, lv):
     gold = C.get("gold") or {}
     if gold.get("gold") is not None and gold.get("reserve") and gold["gold"] < gold["reserve"]:
         items.append(info(f'<strong>You are {coins(gold["reserve"] - gold["gold"])} short of your next training</strong>',
-                          "sell your crafts (step 4) before you buy anything"))
+                          "sell your crafts (the Sell step) before you buy anything else"))
     tr = C.get("training") or []
     here = next((x for x in tr if x["level"] == lv), None)
     if here and here["need"]:
@@ -263,6 +268,11 @@ def steps_html(C, lv):
         if r["kind"] in ("auction", "market") and r["get_at"] > lv:
             head, sub = upgrade_line(r, lv, why=False)
             items.append(todo(f"watch{r['item']}", f"At {r['get_at']}: buy {head}", sub))
+    for cr in C.get("crafts") or []:
+        if not cr["known"] and cr["level"] <= lv + 8 and (cr.get("skill") or 0) > cr["have"]:
+            items.append(todo(f"goal{cr['item']}", f"Raise {esc(cr['profession'])} to {cr['skill']} (you have {cr['have']})",
+                              f"to learn {esc(cr['item'])} for your {esc(cr['slot'])} at level {cr['level']} · "
+                              f"{esc(cr.get('learn') or 'source unknown')} · Classic's skill; Forever is often lower, so check the trainer"))
     for r in later[:4]:
         head, sub = upgrade_line(r, lv, why=False)
         items.append(info(f"At {r['get_at']}: {KIND[r['kind']].lower()} {head}", sub))
