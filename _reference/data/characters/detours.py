@@ -40,7 +40,7 @@ CLASS_SORT = {-61: "warlock", -81: "warrior", -82: "shaman", -141: "paladin", -1
 RACE_BIT = {"Human": 1, "Orc": 2, "Dwarf": 4, "Night Elf": 8, "Undead": 16, "Tauren": 32, "Gnome": 64, "Troll": 128}
 ZERO_DIFF = [(8, 5), (10, 6), (12, 7), (16, 8), (20, 9), (30, 11), (40, 12), (45, 13), (50, 14), (55, 15), (61, 16)]
 
-GEO, SPAWNS, NAMES, MOBLV, ISRC = {}, {}, {}, {}, {}
+GEO, SPAWNS, NAMES, MOBLV, ISRC, SRCMAP = {}, {}, {}, {}, {}, {}
 
 
 def load():
@@ -59,6 +59,9 @@ def load():
             MOBLV[int(r["id"])] = (int(r["level_min"]), int(r["level_max"]))
     for r in csv.DictReader(open(IP.RAW / "quest_item_sources.csv", encoding="utf-8")):
         ISRC.setdefault(int(r["item"]), []).append((r["kind"], int(r["id"]), float(r["chance"])))
+        SRCMAP[(r["kind"], int(r["id"]))] = int(r.get("map") or -1)
+    for r in csv.DictReader(open(IP.RAW / "source_names.csv", encoding="utf-8")):
+        NAMES.setdefault((r["kind"], int(r["id"])), r["name"])
 
 
 def quest_xp(ids, region="us"):

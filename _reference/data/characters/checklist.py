@@ -204,6 +204,11 @@ def steps_html(C, lv):
             items.append(info(f"To keep raising {esc(pp['name'])}",
                               f"next {esc(rest[0]['recipe'])} ×{rest[0]['crafts']} ({coins(rest[0]['cost'])}); "
                               f"about {coins(more)} more to reach {pp['stop']}"))
+    if C.get("timeline") is not None:   # (with a route: the goals sit here, the road list holds only what leaves the guide)
+        for cr in C.get("crafts") or []:
+            if not cr["known"] and cr["level"] <= lv + 8 and (cr.get("skill") or 0) > cr["have"]:
+                items.append(info(f"Goal: {esc(cr['profession'])} {cr['skill']} (you have {cr['have']})",
+                                  f"for {esc(cr['item'])} ({esc(cr['slot'])}, level {cr['level']}) · Classic's skill; Forever often asks less"))
     steps.append(("Workbench", "Craft", items))
 
     # 4. sell
@@ -253,13 +258,13 @@ def steps_html(C, lv):
             items.append(info("Next talents", path))
     steps.append(("Class trainer", "Train", items))
 
-    # 7. pick up quests before you leave
+    # 7. pick up quests before you leave (without a RestedXP route on this PC; with one, the road list below says when)
     items = []
-    for r in soon:
+    for r in (soon if C.get("timeline") is None else []):
         if r["kind"] == "quest":
             head, sub = upgrade_line(r, lv, why=False)
             items.append(todo(f"quest{r['item']}", f"Quest for {head}", sub))
-    for dg in C.get("dungeons") or []:
+    for dg in (C.get("dungeons") or []) if C.get("timeline") is None else []:
         if dg["run"] <= lv + 3 and dg.get("verdict") != "skip":
             qs = [q for q in dg["quests"] if not q["grey"] and not q["log"] and not q.get("route")]   # the guide picks up the rest
             if qs:
@@ -281,25 +286,27 @@ def steps_html(C, lv):
         if tl is None:   # (no RestedXP route on this PC: the dungeon list by level)
             items.append(todo(f"dg{dg['zone']}", f'Run <strong>{esc(dg["zone"])}</strong> at level {dg["run"]} <span class="muted">({dg["lo"]}–{dg["hi"]})</span>',
                               "once, with its quests · " + esc(dg.get("why", "")) + "".join(f"<br>Drop: {md(x)}" for x in dg["drops"])))
-    for r in tl or []:   # when to leave the guide, in the route's order (plan.timeline, 2026-11-10)
+    for r in tl or []:   # when to leave the guide, in the route's order (plan.timeline, 2026-11-10): what, when, the facts, what to pick up
         if r["level"] <= lv + 4:
-            items.append(todo(r["key"], f'Level {r["level"]} · step {r["step"]} of the guide\'s {r["lo"]}–{r["hi"]} part',
-                              f'{md(r["anchor"][0].upper() + r["anchor"][1:])}:<br>{md(r["what"])}'))
+            sub = (f'Level {r["level"]}, step {r["step"]} ({r["lo"]}–{r["hi"]} part): {md(r["anchor"])}<br>{md(r["facts"])}'
+                   + (f' · {md(r["where"])}' if r["where"] else "")
+                   + "".join(f"<br>• {md(x)}" for x in r["pickups"]))
+            items.append(todo(r["key"], f'<strong>{esc(r["title"])}</strong> <span class="tag">{esc(r["tag"])}</span>', sub))
     if skipped:
         items.append(info("Skip", "; ".join(skipped)))
-    for r in soon:
+    for r in (soon if tl is None else []):
         if r["kind"] in ("auction", "market") and r["get_at"] > lv:
             head, sub = upgrade_line(r, lv, why=False)
             items.append(todo(f"watch{r['item']}", f"At {r['get_at']}: buy {head}", sub))
-    for cr in C.get("crafts") or []:
+    for cr in (C.get("crafts") or []) if tl is None else []:
         if not cr["known"] and cr["level"] <= lv + 8 and (cr.get("skill") or 0) > cr["have"]:
             items.append(todo(f"goal{cr['item']}", f"Raise {esc(cr['profession'])} to {cr['skill']} (you have {cr['have']})",
                               f"to learn {esc(cr['item'])} for your {esc(cr['slot'])} at level {cr['level']} · "
                               f"{esc(cr.get('learn') or 'source unknown')} · Classic's skill; Forever is often lower, so check the trainer"))
-    for r in later[:4]:
+    for r in (later[:4] if tl is None else []):
         head, sub = upgrade_line(r, lv, why=False)
         items.append(info(f"At {r['get_at']}: {KIND[r['kind']].lower()} {head}", sub))
-    steps.append(("Next levels", "Work toward", items))
+    steps.append(("On the road", "Leave the guide for", items) if tl is not None else ("Next levels", "Work toward", items))
 
     out, n = [], 0
     for where, title, its in steps:
@@ -349,11 +356,16 @@ def render(cfg, C):
     by_level = {}
     for r in later:
         by_level.setdefault(r["get_at"], []).append(r)
-    runs_at = {}
-    for dg in C.get("dungeons") or []:
+    runs_at, road_at = {}, {}
+    tl = C.get("timeline")
+    for dg in (C.get("dungeons") or []) if tl is None else []:
         if dg["run"] > lv + 3 and dg.get("verdict") != "skip":
             runs_at.setdefault(dg["run"], []).append(dg)
             by_level.setdefault(dg["run"], [])
+    for r in tl or []:   # past the road list: the guide-leaving moments at their level
+        if r["level"] > lv + 4:
+            road_at.setdefault(r["level"], []).append(r)
+            by_level.setdefault(r["level"], [])
     ahead = []
     for L in sorted(by_level)[:8]:
         rows = []
@@ -368,6 +380,9 @@ def render(cfg, C):
                         + (f'{n} quest{"s" if n != 1 else ""} to pick up first' if n or not any(q.get("route") for q in dg["quests"])
                            else "your guide picks up its quests")
                         + "".join(f"<br>Drop: {md(x)}" for x in dg["drops"]) + "</span></li>")
+        for r in road_at.get(L, []):
+            rows.append(f'<li><span class="tag">{"Dungeon" if r["kind"] == "dungeon" else "Detour"}</span> <strong>{esc(r["title"])}</strong>'
+                        f'<span class="sub">{esc(r["tag"])} · {md(r["facts"])}</span></li>')
         ahead.append(f'<div class="lvl"><div class="lvl-n">{L}</div><ul>{"".join(rows)}</ul></div>')
 
     refresh = esc(h["fetched"])

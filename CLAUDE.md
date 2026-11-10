@@ -117,7 +117,15 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   step it runs them (a dungeon it ran before your step is judged as a side trip), side-trip dungeons the next time the guide has you in the
   dungeon's zone within four levels of its run level, detours from the route point they start at, and the gear plan's quests the route
   leaves out (their detour's cost, or the zone to look in); each tied to the quest the guide hands in or picks up there and the step's
-  number in that part (levels and numbers only, never the part's name). Page section and checklist step 8 (the next four levels).
+  number in that part (levels and numbers only, never the part's name). Page section and the checklist's "On the road" step (the next four
+  levels; "Before you leave" and the road list's gear and auction repeats are gone when a route is known, profession goals sit at the
+  workbench). **Chains** (the same day, user: the Stockade list held "a mega chain quests that starts in Deadmines from a quest item that
+  drops off the last boss ... do the full research on quest chains like this"): a dungeon's quests are grouped by chain (Classic's
+  PrevQuestId links) and shown once, "First → Last (N parts)", with where the chain starts: an NPC, or an item and the creature that drops
+  it (quest_geo_extract.py: quest_item_sources.csv carries start items and the spawn map, source_names.csv the names). A chain whose item
+  drops only in a dungeon you have outgrown is left out of the list and the count; only the parts the guide does not take are listed; a
+  chain that starts in a questing zone the guide reaches only after the run is left out, one in a capital the route has not passed is
+  listed as "a trip to <city> first".
   Each dungeon gets a verdict (user: "I just want to do the ones you deem worth it"): the guide's own; a side trip only for a quest reward
   the gear plan counts on, drops worth 20 minutes on average or three quests at full experience; skipped when outgrown or too thin.
   **A group tank** (Tara, 2026-11-09: a Protection paladin with a healer in her group, raid tank at 60): character.json `metric: tank`

@@ -291,28 +291,92 @@ def spot_text(s):
     return f"{z} {x:.1f}, {y:.1f}" if z and x is not None else (z or "")
 
 
+def chain_head(q):
+    """The first quest of q's chain by Classic's PrevQuestId links."""
+    chain_step(0)
+    seen = set()
+    while q in QCHAIN and QCHAIN[q][0] and QCHAIN[q][0] in QCHAIN and q not in seen:
+        seen.add(q)
+        q = QCHAIN[q][0]
+    return q
+
+
+def chain_start(head, lv):
+    """(can you start it, how) for a chain's first quest (2026-11-10, user: the Stockade list held "a mega chain quests that starts in
+    Deadmines from a quest item that drops off the last boss"): from an NPC or object (who and where), or from an item (the item, what drops
+    it and where); a chain whose item drops only in a dungeon you have outgrown cannot be started any more."""
+    DT.load()
+    g = DT.GEO.get(head) or {}
+    if head in COMPLETED or head in INLOG:
+        return True, "", None
+    items = [int(i) for k, i in g.get("starts", []) if k == "i"]
+    if items and not any(k in "co" for k, _ in g.get("starts", [])):
+        it = items[0]
+        srcs = sorted(DT.ISRC.get(it, []), key=lambda s: -s[2])
+        if not srcs:
+            return True, f"starts from {reagent_name(it)} (an item; where it drops is not in the data)", None
+        k, sid, ch = srcs[0]
+        m = DT.SRCMAP.get((k, sid), -1)
+        zid = IP.MAP_TO_ZONE.get(m)
+        where = IP.DUNGEONS[zid][0] if zid in IP.DUNGEONS else ""
+        who = DT.NAMES.get((k, sid)) or "a mob"
+        text = f"starts from {reagent_name(it)}, which {who} drops" + (f" in {where}" if where else "") + (f" ({ch:.0f}%)" if ch < 99.5 else "")
+        if zid in IP.DUNGEONS and IP.DUNGEONS[zid][2] <= lv:
+            return False, text + f": you have outgrown {where}", None
+        return True, text, where or None
+    g1, z = giver_spot(head)
+    if " / " in g1 and "(" in g1:   # one step names several NPCs: the first, with the place
+        g1 = g1.split(" / ")[0] + " (" + g1.split(" (", 1)[1]
+    return True, (f"from {g1}" if g1 else ""), z
+
+
+def open_chains(r):
+    """A dungeon's chains as you need them: only the parts the guide does not pick up and that still give full experience."""
+    out = []
+    for c in r.get("chains", []):
+        xs = [x for x in c["quests"] if not x["route"] and not x["grey"]]
+        if xs:
+            out.append(dict(c, quests=xs, log=any(x["log"] for x in xs)))
+    return out
+
+
+def group_text(gr, short=False):
+    """A chain of a dungeon's quests as one entry: "First → Last (N parts, levels a-b), from NPC (Zone x, y)"."""
+    xs = gr["quests"]
+    lv = f"{xs[0]['level']}" if len(xs) == 1 or xs[0]["level"] == xs[-1]["level"] else f"{xs[0]['level']}-{xs[-1]['level']}"
+    name = xs[0]["title"] if len(xs) == 1 else f"{xs[0]['title']} → {xs[-1]['title']}"
+    parts = "" if len(xs) == 1 else f"{len(xs)} parts, "
+    tail = (", in your log" if gr["log"] else "") + (f", {gr['start']}" if gr["start"] else "") + (f"; rewards {gr['gear']} from your gear plan" if gr.get("gear") else "")
+    return f"{name} ({parts}level {lv}{tail})" if not short else f"{name} ({parts}level {lv})"
+
+
 def giver_text(q):
     """Who gives quest q and where: "NPC (Zone x, y)" from RestedXP's dungeon quest guides or the NPC positions the route names
     (rxp_guide.py, 2026-11-10), else the Classic data's givers; "" when unknown."""
+    return giver_spot(q)[0]
+
+
+def giver_spot(q):
+    """(giver_text, the giver's zone or None)."""
     if RG:
         for rows in RG["extra"].values():
             for r in rows:
                 if r["quest"] == q and r.get("giver"):
-                    return r["giver"] + (f" ({spot_text(r['spot'])})" if r.get("spot") else "")
+                    return r["giver"] + (f" ({spot_text(r['spot'])})" if r.get("spot") else ""), (r["spot"] or [None])[0]
         g = RG["givers"].get(q)   # any guide on this PC that takes it
         if g and g.get("npc"):
-            return g["npc"] + (f" ({spot_text(g)})" if g.get("zone") else "")
+            return g["npc"] + (f" ({spot_text(g)})" if g.get("zone") else ""), g.get("zone")
         if g and g.get("zone"):
-            return spot_text(g)
+            return spot_text(g), g["zone"]
     chain_step(0)
     st = QCHAIN.get(q)
     if st and st[1]:
         for n in (x.strip() for x in st[1].split(" / ")):
             sp = (RG or {}).get("npcs", {}).get(n)
             if sp:
-                return f"{n} ({spot_text(sp)})"
-        return st[1]
-    return ""
+                return f"{n} ({spot_text(sp)})", sp["zone"]
+        return st[1], None
+    return "", None
 
 
 # ---------------------------------------------------------------------------------------------------------------- the plan
@@ -652,6 +716,7 @@ def bonus_drops(full, events, eq, at):
 
 
 MAPS = {}
+CAPITALS = {"Stormwind City", "Ironforge", "Darnassus", "Orgrimmar", "Thunder Bluff", "Undercity"}
 ENTRANCE = {"Ragefire Chasm": "Orgrimmar", "Wailing Caverns": "The Barrens", "The Deadmines": "Westfall", "Shadowfang Keep": "Silverpine Forest",
             "Blackfathom Deeps": "Ashenvale", "The Stockade": "Stormwind City", "Gnomeregan": "Dun Morogh", "Razorfen Kraul": "The Barrens",
             "Scarlet Monastery": "Tirisfal Glades", "Razorfen Downs": "The Barrens", "Uldaman": "Badlands", "Zul'Farrak": "Tanaris",
@@ -693,9 +758,10 @@ def route_anchor(n):
 def timeline(sched, events, lv):
     """Everything that leaves the guide, in route order (2026-11-10, user: "I want to know at each point in time, according to the RestedXP
     route, when should I be detouring. And exactly what step of the guide ... that include the stuff that is clearly worth it and the stuff
-    that is 'fun upgrades/experience' even if not 100% optimal"): dungeons (the guide's own where it runs them, side trips at their level),
-    detours (detours.py, from the route point they start at), and the gear plan's quests off the route (their detour's cost, or the zone
-    to look in when it cannot be timed). [{"n" (route index), "kind", "what", "anchor", "level", "step", "lo", "hi", "key"}]."""
+    that is 'fun upgrades/experience' even if not 100% optimal"): dungeons (the guide's own where it runs them, side trips the next time
+    the guide has you in the dungeon's zone), detours (detours.py, from the route point they start at), and the gear plan's quests off the
+    route. Rows: {"n" (route index), "kind", "key", "title", "tag", "facts", "where", "pickups", "anchor", "level", "step", "lo", "hi"};
+    the dungeon list's run level is set to the row's (one level for one dungeon on the page)."""
     if not RG or not RG.get("path"):
         return []
     path, rows = RG["path"], []
@@ -703,36 +769,77 @@ def timeline(sched, events, lv):
     def first_at(level, zone=None):
         return next((n for n, p in enumerate(path) if p[0] >= level and (zone is None or p[4] == zone)), None)
 
-    def add(n, kind, what, key):
+    def add(n, kind, key, title, tag, facts="", where="", pickups=()):
         if n is None:
-            return
+            return None
         txt, level, step, lo, hi = route_anchor(n)
-        rows.append({"n": n, "kind": kind, "what": what, "anchor": txt, "level": level, "step": step, "lo": lo, "hi": hi, "key": key})
+        rows.append({"n": n, "kind": kind, "key": key, "title": title, "tag": tag, "facts": facts, "where": where, "pickups": list(pickups),
+                     "anchor": txt, "level": level, "step": step, "lo": lo, "hi": hi})
+        return level
     gear_q = {}   # the gear plan's quest rewards, by quest title (a quest can carry another id in the dungeon lists)
     for e in events:
         s0 = primary(e)
         if s0["kind"] == "quest" and isinstance(s0.get("quest"), int):
             gear_q[quest_title(s0["quest"])] = upgrade_name(e)[0]
     in_dungeon = set()
+    on_detour = {t for x in DETOURS["list"] for _, t in x["quests"]}   # a quest with its own detour row is not listed again
     for r in sched:
         if r["verdict"] == "skip":
             continue
-        extra = [q for q in r["quests"] if not q["grey"] and not q.get("route")]
         in_dungeon |= {q["title"] for q in r["quests"]}
-        pick = ("; pick up first: " + "; ".join(f"{q['title']}" + (f" ({q['start']})" if q["start"] else "")
-                                                + (f" (rewards {gear_q[q['title']]} from your gear plan)" if q["title"] in gear_q else "")
-                                                for q in extra)) if extra else ""
+        took = sum(1 for x in r["quests"] if x["route"] and not x["grey"])
+        door = ENTRANCE.get(r["zone"])
         if r["verdict"] == "guide":
             d = RG["dungeons"].get(r["zone"]) or {}
             done = [RG["quests"][q["id"]]["complete_at"][0] for q in r["quests"] if q.get("route") and "complete_at" in RG["quests"].get(q["id"], {})]
             n = d["at"][0] if d.get("at") else (min(done) if done else first_at(r["run"]))
-            add(n, "dungeon", f"**Run {r['zone']}**: your guide runs it here{pick}.", "dg" + r["zone"])
-        else:   # a side trip starts the next time the guide has you in the dungeon's zone while it still suits you, else at its level
-            z = ENTRANCE.get(r["zone"])
-            n = next((k for k, p in enumerate(path) if p[4] == z and max(lv, r["run"] - 4) <= p[0] <= r["run"] + 1), None) if z else None
-            add(n if n is not None else first_at(r["run"]), "dungeon", f"**Run {r['zone']}** (side trip): {r['why']}{pick}.", "dg" + r["zone"])
+        else:   # a side trip starts the next time the guide has you at the dungeon's door, from its lowest level on
+            n = next((k for k, p in enumerate(path) if p[4] == door and max(lv, r["lo"]) <= p[0] <= r["run"] + 3), None) if door else None
+            n = n if n is not None else first_at(max(r["run"], r["lo"]))
+        if n is None:
+            continue
+        picks, count = [], 0
+        for c in open_chains(r):   # what you can have in your log by then: started on the way, or a trip to its town first
+            c["quests"] = [x for x in c["quests"] if x["title"] not in on_detour]
+            if not c["quests"]:
+                continue
+            c["gear"] = next((gear_q[x["title"]] for x in c["quests"] if x["title"] in gear_q), None)
+            z = c.get("zone")
+            if c["log"] or not z or z == door or any(p[4] == z for p in path[:n + 1]):
+                pass
+            elif z not in CAPITALS and any(p[4] == z for p in path[n + 1:]):
+                continue   # it starts in a zone the guide only takes you to after this run (a capital is a short trip: listed)
+            else:
+                c["start"] += f"; a trip to {z} first"
+            picks.append(f"already in your log: {group_text(c, short=True)}" if c["log"] else group_text(c))
+            count += len(c["quests"])
+        r["picks"] = picks   # (the dungeon list shows the same)
+        if r["verdict"] == "guide":
+            facts = "your guide runs it here" + (f" and takes {took} of its quests" if took else "")
+            level = add(n, "dungeon", "dg" + r["zone"], f"Run {r['zone']}", "with your guide", facts, pickups=picks)
+        else:
+            reason = r["why"].split(";")[0].replace("worth a detour: ", "")
+            tag = "side trip"
+            if reason.startswith("worth a detour for") and "quests at full experience" in reason:   # recounted: what you can have by then
+                if not count:
+                    r["verdict"], r["why"] = "skip", "none of its quests can be in your log by then"
+                    continue
+                new = f"{count} quest{'s' if count != 1 else ''} at full experience"
+                if count < 3:   # (2026-11-10, user: "slightly less optimal, but it's still fun and somewhat easy")
+                    tag = "worth it if you like it"
+                r["why"] = r["why"].replace(reason, ("worth it if you like it: " if count < 3 else "worth a detour for ") + new, 1)
+                reason = new
+            reason = reason.replace("worth a detour for ", "")
+            notes = [x.strip() for x in r["why"].split(";")[1:]]
+            facts = reason + "".join(f"; {x}" for x in notes if x.startswith("tick it"))
+            if any("you have passed" in x for x in notes):
+                facts += "; your guide ran it before where you are now"
+            level = add(n, "dungeon", "dg" + r["zone"], f"Run {r['zone']}", tag, facts, pickups=picks)
+        if level is not None:
+            r["run"] = level
     for x in DETOURS["list"]:
-        add(x["anchor"], "detour", detour_text(x, short=True), "det" + "-".join(str(q) for q, _ in x["quests"]))
+        add(x["anchor"], "detour", "det" + "-".join(str(q) for q, _ in x["quests"]), " → ".join(t for _, t in x["quests"]),
+            {"clear": "clear win", "easy": "worth it if you like it", "gear": "for the gear"}[x["tier"]], detour_facts(x), detour_where(x))
     listed = {q for x in DETOURS["list"] for q, _ in x["quests"]}
     judged = DETOURS["stats"].get("judged", {})
     for e in events:   # the gear plan's quests off the route
@@ -743,18 +850,41 @@ def timeline(sched, events, lv):
         what, _ = upgrade_name(e)
         if q in judged:
             x = judged[q]
-            add(x["anchor"], "gear", detour_text(dict(x, tier="cost"), short=True) + f" The gear plan counts on it for {what}.", f"gq{q}")
+            add(x["anchor"], "gear", f"gq{q}", " → ".join(t for _, t in x["quests"]), "for the gear, at a cost", detour_facts(x), detour_where(x))
         else:
             n = first_at(max(e["get_at"], lv), s0.get("zone")) or first_at(max(e["get_at"], lv))
-            add(n, "gear", f"**{quest_title(q)}** for {what} (gear plan): {e['off_route']}; not timed (no position known for it), so do it "
-                           f"while the guide has you in {s0.get('zone') or 'its zone'}.", f"gq{q}")
+            add(n, "gear", f"gq{q}", quest_title(q), "for the gear",
+                f"rewards {what}; who gives it is not in the data, so ask around while the guide has you in {s0.get('zone') or 'its zone'}")
     order = {"dungeon": 0, "detour": 1, "gear": 2}
     rows.sort(key=lambda r: (r["n"], order[r["kind"]]))
     return rows
 
 
+def detour_facts(x):
+    t = f"+{x['xp']:,} experience in about {x['minutes']:.0f} min"
+    if x["gear"]:
+        t += (f"; rewards {', '.join(x['gear'])} (about {x['gear_minutes']} min of faster killing)"
+              + (f", about {x['score']:.0f} min ahead in all" if x["score"] >= 0.5 else f", about {-x['score']:.0f} min behind in all"))
+    else:
+        t += f", about {x['saves']:.0f} min ahead of your usual pace" if x["saves"] >= 0.5 else ", about your usual pace"
+    return t
+
+
+def detour_where(x):
+    if x["inlog"]:
+        return "already in your log"
+    g = (x["giver"] or "").split(" / ")[0]
+    return (f"from {g}" if g else "") + (f" ({x['start'][0]} {x['start'][1]:.1f}, {x['start'][2]:.1f})" if x.get("start") else "")
+
+
 def timeline_line(r):
-    return (f"**Level {r['level']}, step {r['step']} of the guide's {r['lo']}-{r['hi']} part**, {r['anchor']}: {r['what']}")
+    out = (f"**Level {r['level']}, step {r['step']} of the guide's {r['lo']}-{r['hi']} part**, {r['anchor']}: **{r['title']}** ({r['tag']}). "
+           f"{r['facts'][0].upper() + r['facts'][1:] if r['facts'] else ''}")
+    if r["where"]:
+        out += f"; {r['where']}"
+    if r["pickups"]:
+        out += ". Pick up first: " + "; ".join(r["pickups"])
+    return out + "."
 
 
 def detour_text(x, short=False):
@@ -785,11 +915,25 @@ def dungeon_lines(sched):
             continue
         o += [f"- **{r['zone']}** ({r['lo']}-{r['hi']}{', estimated' if r.get('estimated') else ''}), run at level {r['run']}: {r.get('why', '')}"
               + (f"; its drops are worth about {r['worth']} min on average" if r["worth"] and "drops" not in r.get("why", "") else "") + "."]
-        if r["quests"]:
-            o += ["  - Quests: " + "; ".join(f"{q['title']} ({q['level']}{', in your log' if q['log'] else ''}"
-                                               f"{', your guide picks it up' if q.get('route') else (', ' + q['start'] if q['start'] else '')}"
-                                               f"{', grey for you by then' if q['grey'] else ''})"
-                                               for q in r["quests"])]
+        if r.get("picks") is not None:   # the timeline's list: what you can have in your log when you get there
+            took = sum(1 for x in r["quests"] if x["route"] and not x["grey"])
+            new = [x for x in r["picks"] if not x.startswith("already in your log: ")]
+            have = [x[len("already in your log: "):] for x in r["picks"] if x.startswith("already in your log: ")]
+            if new:
+                o += ["  - Pick up first: " + "; ".join(new)]
+            if have:
+                o += ["  - Already in your log: " + "; ".join(have)]
+        elif r.get("chains"):
+            mine = open_chains(r)
+            took = sum(1 for x in r["quests"] if x["route"] and not x["grey"])
+            if [c for c in mine if not c["log"]]:
+                o += ["  - Pick up first: " + "; ".join(group_text(c) for c in mine if not c["log"])]
+            if [c for c in mine if c["log"]]:
+                o += ["  - Already in your log: " + "; ".join(group_text(c, short=True) for c in mine if c["log"])]
+            if took:
+                o += [f"  - Your guide picks up {took} of its quests itself."]
+        if r.get("dropped"):
+            o += ["  - Left out: " + "; ".join(r["dropped"])]
         o += [f"  - Drop: {x}" for x in r["drops"]]
     if skip:
         o += ["- Skip: " + "; ".join(f"{r['zone']} ({r['why']})" for r in skip) + "."]
@@ -902,6 +1046,24 @@ def dungeon_schedule(cfg, lv, runs, events=None):
                 start = f"from {giver}"
             quests.append({"id": q, "title": title, "level": ql, "start": start, "grey": ql < run - 5, "log": q in INLOG,
                            "route": bool(RG) and "accept" in (RG["quests"].get(q) or {})})
+        # chains (2026-11-10): one entry per chain, started where its first quest starts; a chain you cannot start is left out
+        groups, dropped = {}, []
+        for x in quests:
+            groups.setdefault(chain_head(x["id"]), []).append(x)
+        chains = []
+        for h, xs in groups.items():
+            ok, how, hz = chain_start(h, lv)
+            first = min(xs, key=lambda x: (x["level"], x["id"]))
+            if not ok:
+                dropped.append(f"{quest_title(h)}" + (f" ({len(xs)} quests here)" if len(xs) > 1 else "") + f": it {how}")
+                continue
+            if first["start"] and (h in COMPLETED or not how):   # (already started: where the next part is picked up)
+                how = first["start"]
+            elif h not in {x["id"] for x in xs} and how:   # the chain starts before the dungeon's part: name its first quest
+                how = f"start with \"{quest_title(h)}\" " + how
+            chains.append({"head": h, "quests": sorted(xs, key=lambda x: (x["level"], x["id"])), "start": how, "zone": hz,
+                           "route": all(x["route"] for x in xs), "grey": all(x["grey"] for x in xs), "log": any(x["log"] for x in xs)})
+        quests = [x for c in chains for x in c["quests"]]
         if not dr and not any(not x["grey"] for x in quests):
             continue
         # do it or not (2026-11-09, user: "I just want to do the ones you deem worth it and that I should actually do or wait for the
@@ -931,7 +1093,8 @@ def dungeon_schedule(cfg, lv, runs, events=None):
             why += f"; your guide ran it at step {b[0]} of its {b[1]}-{b[2]} part, which you have passed"
         elif RG and gl is None and name in RG["runs"] and RG["runs"][name][1] < lv:
             why += f"; your guide ran it at {RG['runs'][name][0]}-{RG['runs'][name][1]}"
-        out.append({"zone": name, "lo": lo, "hi": hi, "estimated": est, "run": run, "quests": quests, "drops": (dr or {}).get("items", []),
+        out.append({"zone": name, "lo": lo, "hi": hi, "estimated": est, "run": run, "quests": quests, "chains": chains, "dropped": dropped,
+                    "drops": (dr or {}).get("items", []),
                     "worth": worth, "guide": None if not ROUTE else gl is not None, "verdict": verdict, "why": why})
     return sorted(out, key=lambda x: (x["run"], x["lo"]))
 
@@ -1209,13 +1372,13 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     runs = dungeon_runs(BONUS)
     sched = dungeon_schedule(cfg, lv, runs, events)
     CTX["dungeons"] = sched
+    tl = timeline(sched, events, lv)
+    CTX["timeline"] = [dict(r, text=timeline_line(r)) for r in tl] if RG else None
     near = [r for r in sched if r["run"] <= lv + LOOKAHEAD]
     if near:
         o += ["### Dungeon runs", "", "Run each once, with its quests in your log first: the quests' experience is the main reward. A drop that "
               "beats what the plan has you wear is a bonus; the plan works without it.", ""]
         o += dungeon_lines(near)
-    tl = timeline(sched, events, lv)
-    CTX["timeline"] = [dict(r, text=timeline_line(r)) for r in tl]
     soon_t = [r for r in tl if r["level"] <= lv + LOOKAHEAD]
     if soon_t:
         o += ["### When to leave the guide", "", "In your RestedXP route's order (the full list: When to leave the guide, below).", ""]
