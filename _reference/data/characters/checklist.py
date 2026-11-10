@@ -207,7 +207,7 @@ def steps_html(C, lv):
             each, limit = st["sell"]
             n = min(st["crafts"], limit) if limit else st["crafts"]
             items.append(todo(f"sell{st['product']}{st['from']}", f"Sell {esc(st['product'])} ×{n}",
-                              f"about {coins(each)} each after the auction house's cut · list the rest later if they do not all sell"))
+                              f"about {coins(each)} each after the auction house's cut (undercut today's cheapest listing) · list the rest later if they do not all sell"))
     steps.append(("Auction House", "Sell", items))
 
     # 5. gear up: wear and enchant

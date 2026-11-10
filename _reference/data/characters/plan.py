@@ -1305,12 +1305,14 @@ def item_name(i):
 
 
 def resale(item):
-    """(what one sells for after the auction house's 5% cut, how many to count as sold) from the usual price of real sales (Insights,
-    source "s"); None when the product has no sales history."""
+    """(what one sells for after the auction house's 5% cut, how many to count as sold): the usual price of real sales (Insights, source
+    "s"), or 1c under today's cheapest listing when that is lower; None when the product has no sales history."""
     t = PRICES.typical.get(item) if PRICES else None
     if not t or t[1] != "s":
         return None
-    return 0.95 * t[0], min(8, int(t[2]) if len(t) > 2 else 0)   # (value after the cut, at most 8 sold, no more than a day's sales)
+    c = PRICES.cheapest(item)   # you sell by undercutting the cheapest listing when it is below the usual price (2026-11-09: Spidersilk
+    price = min(t[0], c[0] - 1) if c else t[0]   # Boots read 79s after the cut from past sales while 88 pairs were listed at 69s)
+    return 0.95 * price, min(8, int(t[2]) if len(t) > 2 else 0)   # (value after the cut, at most 8 sold, no more than a day's sales)
 
 
 def net_money(c):
@@ -1373,7 +1375,7 @@ def profession_section(profs):
                                              for a, b, r, crafts, c in groups],
                                    "mats": [(item_name(i), round(n)) for i, n in top6]})
         o += ["", (f"You spend about {AH.money(total)} in all" if total >= 0 else f"You make about {AH.money(-total)} in all")
-              + f" to reach {stop}, after selling what you make at its usual price (at most 8 of each, and "
+              + f" to reach {stop}, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and "
               "no more than a day's sales; products without a sales history count as unsold)"
               + ("." if stop >= cap else f"; from {stop} no recipe you know gives points: learn new ones at the trainer.")]
         top = sorted(mats.items(), key=lambda kv: -(unit_price(kv[0]) or 0) * kv[1])[:6]

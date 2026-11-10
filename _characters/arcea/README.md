@@ -140,37 +140,38 @@ Crafts in your plan:
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 108-116 | Spidersilk Boots | 8 | makes 1g 56s 29c |
-| 116-118 | Bolt of Silk Cloth | 6 | makes 6s 30c |
-| 118-124 | Red Woolen Bag | 7 | 25s 37c |
-| 124-128 | White Woolen Dress | 7 | 35s 6c |
-| 128-129 | Red Woolen Bag | 2 | 12s 66c |
-| 129-132 | Double-stitched Woolen Shoulders | 7 | 47s 31c |
-| 132-135 | Stylish Red Shirt | 9 | 69s 51c |
+| 108-116 | Spidersilk Boots | 8 | makes 46s 24c |
+| 116-118 | Bolt of Silk Cloth | 6 | makes 2s 42c |
+| 118-124 | Red Woolen Bag | 7 | 46s 14c |
+| 124-128 | White Woolen Dress | 7 | 42s 93c |
+| 128-131 | Double-stitched Woolen Shoulders | 7 | 45s 46c |
+| 131-132 | Red Woolen Bag | 2 | 18s 44c |
+| 132-135 | Stylish Red Shirt | 9 | 71s 34c |
 | 135-148 | Red Woolen Bag | 64 | 8g 33s 66c |
 | 148-150 | Spidersilk Boots | 6 | 3g 64s 45c |
 
-You spend about 12g 25s 42c in all to reach 150, after selling what you make at its usual price (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
-Materials: Bolt of Woolen Cloth x359, Spider's Silk x56, Bolt of Silk Cloth x28, Iridescent Pearl x14, Fine Thread x102, Medium Leather x56.
+You spend about 13g 73s 74c in all to reach 150, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
+Materials: Bolt of Woolen Cloth x358, Spider's Silk x56, Bolt of Silk Cloth x28, Iridescent Pearl x14, Fine Thread x102, Medium Leather x56.
 
 ### Enchanting 150 to 225
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 150-158 | Minor Mana Oil | 8 | 25s 17c |
-| 158-190 | Enchant Boots - Minor Stamina | 162 | 5g 77s 93c |
+| 150-155 | Enchant Boots - Minor Stamina | 5 | 18s 76c |
+| 155-162 | Minor Mana Oil | 7 | 28s 49c |
+| 162-190 | Enchant Boots - Minor Stamina | 157 | 5g 59s 23c |
 
-You spend about 6g 3s 10c in all to reach 190, after selling what you make at its usual price (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 190 no recipe you know gives points: learn new ones at the trainer.
-Materials: Strange Dust x649, Soul Dust x8, Maple Seed x16, Leaded Vial x8.
+You spend about 6g 6s 48c in all to reach 190, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 190 no recipe you know gives points: learn new ones at the trainer.
+Materials: Strange Dust x649, Soul Dust x7, Maple Seed x14, Leaded Vial x7.
 
 ### Cooking 149 to 150
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 149-150 | Succulent Pork Ribs | 2 | makes 2s 49c |
+| 149-150 | Bristle Whisker Catfish | 1 | 8c |
 
-You make about 2s 49c in all to reach 150, after selling what you make at its usual price (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
-Materials: Boar Ribs x4, Hot Spices x2.
+You spend about 8c in all to reach 150, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
+Materials: Raw Bristle Whisker Catfish x1.
 
 ## Your gear
 
