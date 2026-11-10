@@ -126,6 +126,13 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   drops only in a dungeon you have outgrown is left out of the list and the count; only the parts the guide does not take are listed; a
   chain that starts in a questing zone the guide reaches only after the run is left out, one in a capital the route has not passed is
   listed as "a trip to <city> first".
+  **Catch up with your guide** (`plan.catchup`, the same day, user: "What would I need to do on Arcea to have the checklist and RestedXP the
+  most sync it can be? Even if it means doing something that's not optimal"): `rxp_guide.before` reads every earlier part of the guide
+  group and the current part up to the step; a quest the guide picked up before that you do not have is listed when the guide hands it in
+  ahead (deadline: that step, or the step that does its objectives) or takes its next chain part ahead (the earlier parts you also lack
+  join it, "(5 parts), level 18-24"); a quest in your log whose objectives are in a dungeon and that the guide hands in ahead with no
+  objective step makes that dungeon's run move before the hand-in ("to stay in step with your guide"). Each sits at the route point
+  before its deadline nearest to the giver; rows in the road list (kind "catchup") and a block in Now.
   Each dungeon gets a verdict (user: "I just want to do the ones you deem worth it"): the guide's own; a side trip only for a quest reward
   the gear plan counts on, drops worth 20 minutes on average or three quests at full experience; skipped when outgrown or too thin.
   **A group tank** (Tara, 2026-11-09: a Protection paladin with a healer in her group, raid tank at 60): character.json `metric: tank`

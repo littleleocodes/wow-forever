@@ -755,6 +755,109 @@ def route_anchor(n):
     return txt, level, step, lo, hi
 
 
+def nearest_before(zone, deadline):
+    """The route point before `deadline` closest to a zone (its map's middle): where to fit a catch-up in."""
+    MAPS or MAPS.update(RXG.bounds())
+    b = next((v for v in MAPS.values() if v["name"] == zone and v["x1"] - v["x0"] < 9000), None)
+    path = RG["path"][:max(1, deadline + 1)]
+    if not b or not path:
+        return 0, False
+    c = (b["map"], (b["x0"] + b["x1"]) / 2, (b["y0"] + b["y1"]) / 2)
+    k = min(range(len(path)), key=lambda i: DT.dist((path[i][1], path[i][2], path[i][3]), c))
+    return k, path[k][4] == zone
+
+
+def catchup(lv):
+    """What the guide did before your step that it still counts on (2026-11-10, user: "What would I need to do on Arcea to have the
+    checklist and RestedXP the most sync it can be? Even if it means doing something that's not optimal"): a quest it picked up earlier
+    that you do not have, when it hands that quest in ahead or takes the next part of its chain ahead (otherwise it skips those steps);
+    a quest in your log whose objectives it did earlier (none left ahead) that it hands in ahead. Each with its deadline (that step), who
+    gives it and where, and the route point before the deadline nearest to the giver (or to the dungeon its objectives are in).
+    [{"kind": "pickup"|"finish", "quests": [(id, title)], "who", "spot", "deadline": spot dict, "why", "n", "in_zone", "dungeon"}]."""
+    if not RG or not RG.get("before"):
+        return []
+    DT.load()
+    chain_step(0)
+    B, Q = RG["before"], RG["quests"]
+    missed = {q for q, v in B.items() if "accept" in v and q not in COMPLETED and q not in INLOG}
+    follow = {}
+    for q in Q:
+        pv = abs((DT.GEO.get(q) or {}).get("prev", 0))
+        if pv:
+            follow.setdefault(pv, []).append(q)
+    dq_map = {}
+    for m, qs in DQ.items():
+        for q in qs:
+            dq_map.setdefault(q, IP.DUNGEONS.get(IP.MAP_TO_ZONE.get(m), (None,))[0])
+    out = []
+    for q in sorted(set(B) | INLOG):
+        if q in COMPLETED or not (q in missed or q in INLOG):
+            continue
+        a = Q.get(q, {})
+        dl, why = None, ""
+        if "turnin" in a and "accept" not in a:
+            dl, why = a["turnin"], f"the guide hands it in at step {a['turnin']['step']} of its {a['turnin']['lo']}-{a['turnin']['hi']} part"
+            if q not in INLOG and a.get("complete_at") and a["complete_at"][0] < dl["at"]:   # its objectives come first (a dungeon run)
+                c = a["complete_at"]
+                dl = {"at": c[0], "step": c[1], "lo": c[2], "hi": c[3]}
+                why = f"the guide does its objectives at step {c[1]} of its {c[2]}-{c[3]} part and hands it in after"
+        nxt = [y for y in follow.get(q, []) if "accept" in Q[y]]
+        if nxt:
+            y = min(nxt, key=lambda y: Q[y]["accept"]["at"])
+            if dl is None or Q[y]["accept"]["at"] < dl["at"]:
+                dl = Q[y]["accept"]
+                why = f"the guide takes its next part, \"{quest_title(y)}\", at step {dl['step']} of its {dl['lo']}-{dl['hi']} part"
+        if dl is None:
+            continue
+        if q in INLOG:
+            g = DT.GEO.get(q) or {}
+            d = dq_map.get(q)
+            if "complete" in a or not any(o[0] in "cio" for o in g.get("objectives", [])) or not d:
+                continue   # the guide has you do it on the way, it is a delivery, or its objectives are where you have been questing
+            k, inz = nearest_before(ENTRANCE.get(d) or (B.get(q, {}).get("complete") or {}).get("zone") or "", dl["at"])
+            out.append({"kind": "finish", "quests": [(q, quest_title(q))], "who": "", "spot": None, "deadline": dl, "why": why,
+                        "n": k, "in_zone": inz, "dungeon": d, "where": d or (B.get(q, {}).get("complete") or {}).get("zone")})
+            continue
+        chain = [q]   # the earlier parts you also lack, back to the chain's start
+        while abs((DT.GEO.get(chain[0]) or {}).get("prev", 0)) in missed and abs(DT.GEO[chain[0]]["prev"]) not in chain:
+            chain.insert(0, abs(DT.GEO[chain[0]]["prev"]))
+        acc = B[chain[0]]["accept"]
+        k, inz = nearest_before(acc["zone"] or "", dl["at"])
+        out.append({"kind": "pickup", "quests": [(x, quest_title(x)) for x in chain], "who": acc["npc"] or "",
+                    "spot": (acc["zone"], acc["x"], acc["y"]) if acc["zone"] else None, "deadline": dl, "why": why, "n": k, "in_zone": inz,
+                    "dungeon": None, "where": acc["zone"]})
+    seen, uniq = set(), []   # a chain listed once (its last part decides the deadline)
+    for x in sorted(out, key=lambda x: -len(x["quests"])):
+        key = x["quests"][0][0]
+        if key not in seen and not any(q in seen for q, _ in x["quests"]):
+            seen |= {q for q, _ in x["quests"]}
+            uniq.append(x)
+    return sorted(uniq, key=lambda x: x["n"])
+
+
+def chain_name(qs):
+    """One name for a run of quests: "A", "A → B", or "A (5 parts)" when the parts share the name."""
+    ts = [t for _, t in qs]
+    if len(ts) == 1:
+        return ts[0]
+    return f"{ts[0]} ({len(ts)} parts)" if len(set(ts)) == 1 else f"{ts[0]} → {ts[-1]} ({len(ts)} parts)"
+
+
+def catchup_line(x):
+    names = chain_name(x["quests"])
+    lv = sorted(int((CQUESTS.get(q) or {}).get("quest_level") or 0) for q, _ in x["quests"])
+    lv = [v for v in lv if v]
+    if lv:
+        names += f", level {lv[0]}" + (f"-{lv[-1]}" if lv[-1] != lv[0] else "")
+    dl = x["deadline"]
+    if x["kind"] == "finish":
+        what = (f"**Finish {names}**" + (f" in {x['dungeon']}" if x["dungeon"] else f" ({x['where']})" if x.get("where") else "")
+                + " (if you have not yet)")
+    else:
+        what = f"**Pick up {names}**" + (f" from {x['who']}" if x["who"] else "") + (f" ({spot_text(x['spot'])})" if x["spot"] else "")
+    return what, f"before step {dl['step']} of the guide's {dl['lo']}-{dl['hi']} part: {x['why']}"
+
+
 def timeline(sched, events, lv):
     """Everything that leaves the guide, in route order (2026-11-10, user: "I want to know at each point in time, according to the RestedXP
     route, when should I be detouring. And exactly what step of the guide ... that include the stuff that is clearly worth it and the stuff
@@ -783,6 +886,12 @@ def timeline(sched, events, lv):
             gear_q[quest_title(s0["quest"])] = upgrade_name(e)[0]
     in_dungeon = set()
     on_detour = {t for x in DETOURS["list"] for _, t in x["quests"]}   # a quest with its own detour row is not listed again
+    cu = catchup(lv)
+    need_by = {}   # a dungeon a catch-up's objectives are in: run it by then
+    for x in cu:
+        if x["kind"] == "finish" and x["dungeon"]:
+            if x["dungeon"] not in need_by or x["n"] < need_by[x["dungeon"]][0]:
+                need_by[x["dungeon"]] = (x["n"], x)
     for r in sched:
         if r["verdict"] == "skip":
             continue
@@ -796,6 +905,9 @@ def timeline(sched, events, lv):
         else:   # a side trip starts the next time the guide has you at the dungeon's door, from its lowest level on
             n = next((k for k, p in enumerate(path) if p[4] == door and max(lv, r["lo"]) <= p[0] <= r["run"] + 3), None) if door else None
             n = n if n is not None else first_at(max(r["run"], r["lo"]))
+        sync = need_by.get(r["zone"])
+        if sync and (n is None or sync[0] < n):   # a quest in your log the guide hands in before that: run it in time
+            n = sync[0]
         if n is None:
             continue
         picks, count = [], 0
@@ -817,6 +929,8 @@ def timeline(sched, events, lv):
         if r["verdict"] == "guide":
             facts = "your guide runs it here" + (f" and takes {took} of its quests" if took else "")
             level = add(n, "dungeon", "dg" + r["zone"], f"Run {r['zone']}", "with your guide", facts, pickups=picks)
+            if sync:
+                rows[-1]["facts"] += f"; finish {sync[1]['quests'][0][1]} here: {catchup_line(sync[1])[1]}"
         else:
             reason = r["why"].split(";")[0].replace("worth a detour: ", "")
             tag = "side trip"
@@ -834,6 +948,9 @@ def timeline(sched, events, lv):
             facts = reason + "".join(f"; {x}" for x in notes if x.startswith("tick it"))
             if any("you have passed" in x for x in notes):
                 facts += "; your guide ran it before where you are now"
+            if sync:
+                tag = "to stay in step with your guide"
+                facts += f"; finish {sync[1]['quests'][0][1]} here, {catchup_line(sync[1])[1]}"
             level = add(n, "dungeon", "dg" + r["zone"], f"Run {r['zone']}", tag, facts, pickups=picks)
         if level is not None:
             r["run"] = level
@@ -855,7 +972,18 @@ def timeline(sched, events, lv):
             n = first_at(max(e["get_at"], lv), s0.get("zone")) or first_at(max(e["get_at"], lv))
             add(n, "gear", f"gq{q}", quest_title(q), "for the gear",
                 f"rewards {what}; who gives it is not in the data, so ask around while the guide has you in {s0.get('zone') or 'its zone'}")
-    order = {"dungeon": 0, "detour": 1, "gear": 2}
+    for x in cu:   # catch-ups at the route point that suits them (a dungeon's quests are in its row)
+        if (x["kind"] == "finish" and x["dungeon"]) or all(t in in_dungeon for _, t in x["quests"]):
+            continue
+        _, when = catchup_line(x)
+        lvs = sorted(v for v in (int((CQUESTS.get(q) or {}).get("quest_level") or 0) for q, _ in x["quests"]) if v)
+        name = chain_name(x["quests"]) + (f", level {lvs[0]}" + (f"-{lvs[-1]}" if lvs[-1] != lvs[0] else "") if lvs else "")
+        title = ("Finish " if x["kind"] == "finish" else "Pick up ") + name
+        where = ((f"from {x['who']}" if x["who"] else "") + (f" ({spot_text(x['spot'])})" if x["spot"] else "")).strip()
+        how = "" if x["in_zone"] else (f"a trip to {x['where']}" if x["where"] in CAPITALS else f"a detour to {x['where']}") if x["where"] else ""
+        add(x["n"], "catchup", "cu" + "-".join(str(q) for q, _ in x["quests"]), title, "catch up with your guide",
+            when[0].upper() + when[1:] + (f"; {how} from here" if how else ""), where)
+    order = {"catchup": 0, "dungeon": 1, "detour": 2, "gear": 3}
     rows.sort(key=lambda r: (r["n"], order[r["kind"]]))
     return rows
 
@@ -1379,6 +1507,11 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
         o += ["### Dungeon runs", "", "Run each once, with its quests in your log first: the quests' experience is the main reward. A drop that "
               "beats what the plan has you wear is a bonus; the plan works without it.", ""]
         o += dungeon_lines(near)
+    cu_rows = [r for r in tl if r["kind"] == "catchup" or "your guide hands it in" in r["facts"] or "finish " in r["facts"]]
+    if cu_rows:
+        o += ["### Catch up with your guide", "", "Things your RestedXP guide did before your step that it still counts on: without them it "
+              "skips the steps that hand them in or take their next part. Do each by its deadline (listed in When to leave the guide too).", ""]
+        o += [f"- {timeline_line(r)}" for r in cu_rows] + [""]
     soon_t = [r for r in tl if r["level"] <= lv + LOOKAHEAD]
     if soon_t:
         o += ["### When to leave the guide", "", "In your RestedXP route's order (the full list: When to leave the guide, below).", ""]

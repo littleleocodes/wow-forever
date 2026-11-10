@@ -39,9 +39,9 @@ Income is an estimate from Classic's data: coin and loot from about 88 kills a l
 | 34 | 8g 6s 94c | - | - |
 | 35 | 8g 62s 38c | 4g 20s (Exorcism, Retribution Aura, Redemption) | 1g 40s |
 
-Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Stormwind; Forever's not confirmed). At this income you would have about 90g 55s 50c by 40 after training and the plan's gear, enough for the mount at 41.
+Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Stormwind; Forever's not confirmed). At this income you would have about 90g 83s 10c by 40 after training and the plan's gear, enough for the mount at 41.
 
-Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 2g 84s 34c before 40 and 15g 18s 82c in all; you would reach 60 with about 569g 23s 62c after the mount.
+Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 2g 56s 70c before 40 and 14g 47s 70c in all; you would reach 60 with about 569g 94s 22c after the mount.
 
 ## Now (level 22)
 
@@ -76,20 +76,20 @@ Count a piece's stats in stamina: 100 armor = 5.65, 1 weapon damage per second =
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 0.7 hours old). "For your trip": enough to keep it up for about 1.7 hours of play, to your next training at level 24 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 1.5 hours old). "For your trip": enough to keep it up for about 1.7 hours of play, to your next training at level 24 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|
 | Food | Curiously Tasty Omelet | +5 stamina, +5% kill experience | 0.3% | 15 min | buy (you make it at Cooking 130; you have 53) | 1s 50c | ×7 (10s 50c) | no: saves 1.6 min an hour, costs 1.9 |
-| Food | Gooey Spider Cake | +5 stamina, +5% kill experience | 0.3% | 15 min | buy (you make it at Cooking 110; you have 53) | 1s 50c | ×7 (10s 50c) | no: saves 1.6 min an hour, costs 1.9 |
-| Food | Soothing Turtle Bisque | +5 stamina, +5% kill experience | 0.3% | 15 min | buy (you make it at Cooking 175; you have 53) | 3s 79c | ×7 (26s 53c) | no: saves 1.6 min an hour, costs 4.8 |
-| Scroll | Scroll of Stamina II | +8 stamina | 0.5% | 30 min | buy | 2s | ×4 (8s) | no: saves 0.2 min an hour, costs 1.3 |
+| Food | Gooey Spider Cake | +5 stamina, +5% kill experience | 0.3% | 15 min | buy (you make it at Cooking 110; you have 53) | 1s 80c | ×7 (12s 60c) | no: saves 1.6 min an hour, costs 2.3 |
+| Food | Soothing Turtle Bisque | +5 stamina, +5% kill experience | 0.3% | 15 min | buy (you make it at Cooking 175; you have 53) | 3s 55c | ×7 (24s 85c) | no: saves 1.6 min an hour, costs 4.5 |
+| Scroll | Scroll of Stamina II | +8 stamina | 0.5% | 30 min | buy | 2s 49c | ×4 (9s 96c) | no: saves 0.2 min an hour, costs 1.6 |
 
 One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience is extra: a food's +5% speeds up the experience you get from kills, not from quests. Elixirs: Classic lets several stack; Forever's rule is not confirmed.
 
 ### Craft
 
-- **hands**: Protector's Gloves, 0.8% better tanking, replaces Dusty Mining Gloves (wear it right away; best to the end of leveling; saves about 29 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 110 in the client's data; you have 40). Why it stays: Justicar's Gloves at 50, 1.9% better, saves about 28 min, but its 15g 94s 36c takes about 127 min of play to earn; Sentinel's Gloves at 50, 2.1% better, saves about 32 min, but its 7g 70s 40c takes about 61 min of play to earn; Warder's Gloves at 50, 2.3% better, saves about 35 min, but its 8g 63s 84c takes about 69 min of play to earn. If you do not craft it, wear Sentry's Gloves of the Defender instead (0.7% better tanking; Auction House: usually listed (in 21% of the hourly snapshots), about 67s, not this hour). Materials: Bronze Bar x10, Rough Grinding Stone x4, Sulfuric Acid x2, Tigerseye x3 (about 43s 36c at today's prices).
+- **hands**: Protector's Gloves, 0.8% better tanking, replaces Dusty Mining Gloves (wear it right away; best to the end of leveling; saves about 29 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 110 in the client's data; you have 40). Why it stays: Justicar's Gloves at 50, 1.9% better, saves about 28 min, but its 14g 39s 56c takes about 115 min of play to earn; Sentinel's Gloves at 50, 2.1% better, saves about 32 min, but its 7g 57s 76c takes about 60 min of play to earn; Warder's Gloves at 50, 2.3% better, saves about 35 min, but its 8g 11s 56c takes about 65 min of play to earn. If you do not craft it, wear Sentry's Gloves of the Defender instead (0.7% better tanking; Auction House: usually listed (in 20% of the hourly snapshots), about 67s, not this hour). Materials: Bronze Bar x10, Rough Grinding Stone x4, Sulfuric Acid x2, Tigerseye x3 (about 36s 70c at today's prices).
 
 ### Look for on the Auction House (not listed this hour, usually is; usual prices)
 
@@ -101,11 +101,36 @@ Run each once, with its quests in your log first: the quests' experience is the 
 
 - Skip: Wailing Caverns (only 1 quest at full experience and no drops for you); The Deadmines (only 2 quests at full experience and no drops for you; your guide ran it at 19-20); Ruins of Lordaeron (only 1 quest at full experience and no drops for you; your guide ran it at 18-19).
 
+### Catch up with your guide
+
+Things your RestedXP guide did before your step that it still counts on: without them it skips the steps that hand them in or take their next part. Do each by its deadline (listed in When to leave the guide too).
+
+- **Level 21, step 4 of the guide's 21-23 part**, while the guide has you on "The Ruins of Stardust" (Ashenvale 33.3, 67.8): **Pick up Bathran's Hair → The Ruins of Stardust (4 parts), level 20-23** (catch up with your guide). Before step 4 of the guide's 21-23 part: the guide does its objectives at step 4 of its 21-23 part and hands it in after; from Orendil Broadleaf (Ashenvale 26.4, 38.6).
+- **Level 21, step 5 of the guide's 21-23 part**, when the guide brings you to Ashenvale (Ashenvale 31.2, 61.6): **Pick up Raene's Cleansing, level 19** (catch up with your guide). Before step 17 of the guide's 21-23 part: the guide hands it in at step 17 of its 21-23 part; from Raene Wolfrunner (Ashenvale 36.6, 49.6).
+- **Level 21, step 5 of the guide's 21-23 part**, when the guide brings you to Ashenvale (Ashenvale 31.2, 61.6): **Pick up The Zoram Strand, level 19** (catch up with your guide). Before step 11 of the guide's 21-23 part: the guide does its objectives at step 11 of its 21-23 part and hands it in after; from Shindrell Swiftfire (Ashenvale 34.7, 48.8).
+- **Level 21, step 8 of the guide's 21-23 part**, right after you hand in "Therylune's Escape" to Therysil (Ashenvale 22.6, 51.9): **Pick up Therylune's Escape, level 18** (catch up with your guide). Before step 8 of the guide's 21-23 part: the guide hands it in at step 8 of its 21-23 part; a detour to Darkshore from here; from Therylune (Darkshore 38.7, 87.3).
+- **Level 22, step 24 of the guide's 21-23 part**, right after you hand in "The Ruins of Stardust" to Pelturas Whitemoon (Ashenvale 37.4, 51.8): **Pick up Journey to Stonetalon Peak, level 18** (catch up with your guide). Before step 55 of the guide's 21-23 part: the guide hands it in at step 55 of its 21-23 part; from Faldreas Goeth'Shael (Ashenvale 35.8, 49.1).
+- **Level 22, step 24 of the guide's 21-23 part**, right after you hand in "The Ruins of Stardust" to Pelturas Whitemoon (Ashenvale 37.4, 51.8): **Pick up On Guard in Stonetalon, level 21** (catch up with your guide). Before step 51 of the guide's 21-23 part: the guide hands it in at step 51 of its 21-23 part; from Sentinel Thenysil (Ashenvale 34.9, 49.8).
+- **Level 23, step 80 of the guide's 21-23 part**, right after you hand in "Escape Through Stealth" to Terenthis (Darkshore 39.4, 43.5): **Pick up The Tower of Althalaxx (4 parts), level 18-24** (catch up with your guide). Before step 20 of the guide's 29-30 part: the guide takes its next part, "The Tower of Althalaxx", at step 20 of its 29-30 part; from Balthule Shadowstrike (Darkshore 55.0, 24.9).
+- **Level 23, step 80 of the guide's 21-23 part**, right after you hand in "Escape Through Stealth" to Terenthis (Darkshore 39.4, 43.5): **Pick up The Absent Minded Prospector, level 20** (catch up with your guide). Before step 81 of the guide's 21-23 part: the guide hands it in at step 81 of its 21-23 part; from Prospector Remtravel (Darkshore 35.7, 83.7).
+- **Level 23, step 80 of the guide's 21-23 part**, right after you hand in "Escape Through Stealth" to Terenthis (Darkshore 39.4, 43.5): **Pick up It's All Fun and Games Until...** (catch up with your guide). Before step 83 of the guide's 21-23 part: the guide hands it in at step 83 of its 21-23 part; (Darkshore 38.5, 86.0).
+- **Level 25, step 92 of the guide's 24-27 part**, while the guide has you on "Alther's Mill" (Redridge Mountains 51.5, 43.2): **Pick up Blackrock Menace, level 21** (catch up with your guide). Before step 200 of the guide's 24-27 part: the guide takes its next part, "Tharil'zun", at step 200 of its 24-27 part; from Marshal Marris (Redridge Mountains 33.5, 49.0).
+
 ### When to leave the guide
 
 In your RestedXP route's order (the full list: When to leave the guide, below).
 
+- **Level 21, step 4 of the guide's 21-23 part**, while the guide has you on "The Ruins of Stardust" (Ashenvale 33.3, 67.8): **Pick up Bathran's Hair → The Ruins of Stardust (4 parts), level 20-23** (catch up with your guide). Before step 4 of the guide's 21-23 part: the guide does its objectives at step 4 of its 21-23 part and hands it in after; from Orendil Broadleaf (Ashenvale 26.4, 38.6).
+- **Level 21, step 5 of the guide's 21-23 part**, when the guide brings you to Ashenvale (Ashenvale 31.2, 61.6): **Pick up Raene's Cleansing, level 19** (catch up with your guide). Before step 17 of the guide's 21-23 part: the guide hands it in at step 17 of its 21-23 part; from Raene Wolfrunner (Ashenvale 36.6, 49.6).
+- **Level 21, step 5 of the guide's 21-23 part**, when the guide brings you to Ashenvale (Ashenvale 31.2, 61.6): **Pick up The Zoram Strand, level 19** (catch up with your guide). Before step 11 of the guide's 21-23 part: the guide does its objectives at step 11 of its 21-23 part and hands it in after; from Shindrell Swiftfire (Ashenvale 34.7, 48.8).
+- **Level 21, step 8 of the guide's 21-23 part**, right after you hand in "Therylune's Escape" to Therysil (Ashenvale 22.6, 51.9): **Pick up Therylune's Escape, level 18** (catch up with your guide). Before step 8 of the guide's 21-23 part: the guide hands it in at step 8 of its 21-23 part; a detour to Darkshore from here; from Therylune (Darkshore 38.7, 87.3).
+- **Level 22, step 24 of the guide's 21-23 part**, right after you hand in "The Ruins of Stardust" to Pelturas Whitemoon (Ashenvale 37.4, 51.8): **Pick up Journey to Stonetalon Peak, level 18** (catch up with your guide). Before step 55 of the guide's 21-23 part: the guide hands it in at step 55 of its 21-23 part; from Faldreas Goeth'Shael (Ashenvale 35.8, 49.1).
+- **Level 22, step 24 of the guide's 21-23 part**, right after you hand in "The Ruins of Stardust" to Pelturas Whitemoon (Ashenvale 37.4, 51.8): **Pick up On Guard in Stonetalon, level 21** (catch up with your guide). Before step 51 of the guide's 21-23 part: the guide hands it in at step 51 of its 21-23 part; from Sentinel Thenysil (Ashenvale 34.9, 49.8).
 - **Level 23, step 79 of the guide's 21-23 part**, right after you hand in "WANTED: Murkdeep!" to Sentinel Glynda Nal'Shea (Darkshore 37.7, 43.4): **The Corruption Abroad** (clear win). +1,450 experience in about 1 min, about 3 min ahead of your usual pace; already in your log.
+- **Level 23, step 80 of the guide's 21-23 part**, right after you hand in "Escape Through Stealth" to Terenthis (Darkshore 39.4, 43.5): **Pick up The Tower of Althalaxx (4 parts), level 18-24** (catch up with your guide). Before step 20 of the guide's 29-30 part: the guide takes its next part, "The Tower of Althalaxx", at step 20 of its 29-30 part; from Balthule Shadowstrike (Darkshore 55.0, 24.9).
+- **Level 23, step 80 of the guide's 21-23 part**, right after you hand in "Escape Through Stealth" to Terenthis (Darkshore 39.4, 43.5): **Pick up The Absent Minded Prospector, level 20** (catch up with your guide). Before step 81 of the guide's 21-23 part: the guide hands it in at step 81 of its 21-23 part; from Prospector Remtravel (Darkshore 35.7, 83.7).
+- **Level 23, step 80 of the guide's 21-23 part**, right after you hand in "Escape Through Stealth" to Terenthis (Darkshore 39.4, 43.5): **Pick up It's All Fun and Games Until...** (catch up with your guide). Before step 83 of the guide's 21-23 part: the guide hands it in at step 83 of its 21-23 part; (Darkshore 38.5, 86.0).
+- **Level 25, step 92 of the guide's 24-27 part**, while the guide has you on "Alther's Mill" (Redridge Mountains 51.5, 43.2): **Pick up Blackrock Menace, level 21** (catch up with your guide). Before step 200 of the guide's 24-27 part: the guide takes its next part, "Tharil'zun", at step 200 of its 24-27 part; from Marshal Marris (Redridge Mountains 33.5, 49.0).
 
 ### Talents and the rest
 
@@ -125,29 +150,30 @@ Crafts in your plan:
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 40-46 | Coarse Sharpening Stone | 7 | makes 6s 3c |
-| 46-50 | Coarse Weightstone | 8 | makes 4s 32c |
-| 50-75 | Rough Grinding Stone | 49 | 9s 13c |
+| 40-46 | Coarse Sharpening Stone | 7 | makes 6s 11c |
+| 46-50 | Coarse Weightstone | 8 | makes 4s 57c |
+| 50-51 | Rough Sharpening Stone | 8 | makes 5c |
+| 51-75 | Rough Grinding Stone | 48 | 6s 5c |
 
-You make about 1s 21c in all to reach 75, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
-Materials: Coarse Stone x16, Rough Stone x97.
+You make about 4s 67c in all to reach 75, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
+Materials: Coarse Stone x16, Rough Stone x103.
 
 ### Cooking 53 to 75
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 53-75 | Rainbow Fin Albacore | 22 | 32c |
+| 53-75 | Rainbow Fin Albacore | 22 | 70c |
 
-You spend about 32c in all to reach 75, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
+You spend about 70c in all to reach 75, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
 Materials: Raw Rainbow Fin Albacore x22.
 
 ### First Aid 73 to 75
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 73-75 | Heavy Linen Bandage | 4 | 1s 21c |
+| 73-75 | Heavy Linen Bandage | 4 | 1s 28c |
 
-You spend about 1s 21c in all to reach 75, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
+You spend about 1s 28c in all to reach 75, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
 Materials: Linen Cloth x8.
 
 **Mining** 75/75: at your rank's cap; train the next rank to go on.
@@ -181,7 +207,7 @@ Each upgrade worth 0.5% better tanking or more, under the level at which you can
 
 #### Craft
 
-- **waist**: Warder's Belt, 0.8% better tanking, replaces Atrophic Girdle (wear it right away; best to the end of leveling; saves about 29 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 155 in the client's data; you have 40). Why it stays: Justicar's Waistguard at 50, 1.1% better, saves about 16 min before 60; Sentinel's Waistguard at 50, 1.2% better, saves about 18 min before 60; Warder's Waistguard at 50, 1.5% better, saves about 22 min, but its 24g 92s 40c takes about 198 min of play to earn. If you do not craft it, keep your Atrophic Girdle. Materials: Iron Bar x6, Heavy Grinding Stone x2, Black Pearl x2 (about 1g 12s 48c at today's prices).
+- **waist**: Warder's Belt, 0.8% better tanking, replaces Atrophic Girdle (wear it right away; best to the end of leveling; saves about 29 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 155 in the client's data; you have 40). Why it stays: Justicar's Waistguard at 50, 1.1% better, saves about 16 min before 60; Sentinel's Waistguard at 50, 1.2% better, saves about 18 min before 60; Warder's Waistguard at 50, 1.5% better, saves about 22 min, but its 23g 86s 44c takes about 190 min of play to earn. If you do not craft it, keep your Atrophic Girdle. Materials: Iron Bar x6, Heavy Grinding Stone x2, Black Pearl x2 (about 92s at today's prices).
 
 
 ### Level 31
@@ -195,12 +221,12 @@ Each upgrade worth 0.5% better tanking or more, under the level at which you can
 
 #### Craft
 
-- **feet**: Warder's Boots, 2.3% better tanking, replaces War Paint Anklewraps (wear it right away; best to the end of leveling; saves about 62 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 205 in the client's data; you have 40). If you do not craft it, keep your War Paint Anklewraps. Materials: Steel Bar x4, Heavy Grinding Stone x4, Black Pearl x4 (about 1g 96s 48c at today's prices).
+- **feet**: Warder's Boots, 2.3% better tanking, replaces War Paint Anklewraps (wear it right away; best to the end of leveling; saves about 62 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 205 in the client's data; you have 40). If you do not craft it, keep your War Paint Anklewraps. Materials: Steel Bar x4, Heavy Grinding Stone x4, Black Pearl x4 (about 1g 53s at today's prices).
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **legs**: Field Plate Leggings of Stamina, 1.3% better tanking, replaces Chausses of Westfall (wear it right away; best to the end of leveling; saves about 36 min of group play). Auction House: usually listed (in 26% of the hourly snapshots), about 1g, not this hour. Why it stays: Krol'dok Warplate Legplates at 41, 1.0% better, saves about 25 min, but its 10g 12s takes about 117 min of play to earn; Titanic Leggings at 55, 1.9% better, saves about 16 min before 60. Saves about 36 min of killing; earning its price takes about 16 min of play. Fits your gear budget (24g 35s 96c left after it).
-- **head**: Warbringer's Crown of the Beast, 2.7% better tanking (wear it right away; best to the end of leveling; saves about 74 min of group play). Auction House: usually listed (in 26% of the hourly snapshots), about 2g 50s, not this hour. Why it stays: Lionheart Helm at 56, 1.7% better, saves about 11 min before 60; Runic Plate Helm at 56, 0.9% better, saves about 6 min before 60. Saves about 74 min of killing; earning its price takes about 39 min of play. Fits your gear budget (19g 89s 48c left after it).
+- **legs**: Field Plate Leggings of Stamina, 1.3% better tanking, replaces Chausses of Westfall (wear it right away; best to the end of leveling; saves about 36 min of group play). Auction House: usually listed (in 25% of the hourly snapshots), about 1g, not this hour. Why it stays: Krol'dok Warplate Legplates at 41, 1.0% better, saves about 25 min, but its 10g 12s takes about 117 min of play to earn; Titanic Leggings at 55, 1.9% better, saves about 16 min before 60. Saves about 36 min of killing; earning its price takes about 16 min of play. Fits your gear budget (23g 10s 58c left after it).
+- **head**: Warbringer's Crown of the Beast, 2.7% better tanking (wear it right away; best to the end of leveling; saves about 74 min of group play). Auction House: usually listed (in 25% of the hourly snapshots), about 2g 50s, not this hour. Why it stays: Lionheart Helm at 56, 1.7% better, saves about 11 min before 60; Runic Plate Helm at 56, 0.9% better, saves about 6 min before 60. Saves about 74 min of killing; earning its price takes about 39 min of play. Fits your gear budget (20g 60s 58c left after it).
 
 
 ### Level 41
@@ -211,14 +237,24 @@ Each upgrade worth 0.5% better tanking or more, under the level at which you can
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **weapon**: Ebon Scimitar of the Channeler + Chromite Shield, 3.5% better tanking, replaces Mercenary Blade of the Channeler (wear it right away; best to the end of leveling; saves about 90 min of group play). Auction House: usually listed (in 21% of the hourly snapshots), about 4g, not this hour / Auction House: usually listed (in 34% of the hourly snapshots), about 2g 88s, not this hour. Why it stays: Sageblade at 59, 4.5% better, saves about 8 min before 60; Sageblade at 59, 4.6% better, saves about 8 min before 60; Sageblade at 59, 6.2% better, saves about 11 min before 60. Saves about 90 min of killing; earning its price takes about 79 min of play. Fits your gear budget (17g 30s 25c left after it).
+- **weapon**: Ebon Scimitar of the Channeler + Chromite Shield, 3.5% better tanking, replaces Mercenary Blade of the Channeler (wear it right away; best to the end of leveling; saves about 90 min of group play). Auction House: usually listed (in 20% of the hourly snapshots), about 4g, not this hour / Auction House: usually listed (in 34% of the hourly snapshots), about 2g 88s, not this hour. Why it stays: Sageblade at 59, 4.5% better, saves about 8 min before 60; Sageblade at 59, 4.6% better, saves about 8 min before 60; Sageblade at 59, 6.2% better, saves about 11 min before 60. Saves about 90 min of killing; earning its price takes about 79 min of play. Fits your gear budget (18g 1s 31c left after it).
 
 
 ## When to leave the guide
 
 Everything worth stepping off your RestedXP route for, in the route's order: the guide's own dungeons where it runs them, side-trip dungeons, detour quests (clear wins, worth it if you like it, for the gear) and the gear plan's quests the route leaves out. Each is tied to the moment in the guide it starts from: the quest it has you hand in or pick up there (the step number is the guide's own count within that part, an estimate). Do it, then pick the guide up where you left it.
 
+- **Level 21, step 4 of the guide's 21-23 part**, while the guide has you on "The Ruins of Stardust" (Ashenvale 33.3, 67.8): **Pick up Bathran's Hair → The Ruins of Stardust (4 parts), level 20-23** (catch up with your guide). Before step 4 of the guide's 21-23 part: the guide does its objectives at step 4 of its 21-23 part and hands it in after; from Orendil Broadleaf (Ashenvale 26.4, 38.6).
+- **Level 21, step 5 of the guide's 21-23 part**, when the guide brings you to Ashenvale (Ashenvale 31.2, 61.6): **Pick up Raene's Cleansing, level 19** (catch up with your guide). Before step 17 of the guide's 21-23 part: the guide hands it in at step 17 of its 21-23 part; from Raene Wolfrunner (Ashenvale 36.6, 49.6).
+- **Level 21, step 5 of the guide's 21-23 part**, when the guide brings you to Ashenvale (Ashenvale 31.2, 61.6): **Pick up The Zoram Strand, level 19** (catch up with your guide). Before step 11 of the guide's 21-23 part: the guide does its objectives at step 11 of its 21-23 part and hands it in after; from Shindrell Swiftfire (Ashenvale 34.7, 48.8).
+- **Level 21, step 8 of the guide's 21-23 part**, right after you hand in "Therylune's Escape" to Therysil (Ashenvale 22.6, 51.9): **Pick up Therylune's Escape, level 18** (catch up with your guide). Before step 8 of the guide's 21-23 part: the guide hands it in at step 8 of its 21-23 part; a detour to Darkshore from here; from Therylune (Darkshore 38.7, 87.3).
+- **Level 22, step 24 of the guide's 21-23 part**, right after you hand in "The Ruins of Stardust" to Pelturas Whitemoon (Ashenvale 37.4, 51.8): **Pick up Journey to Stonetalon Peak, level 18** (catch up with your guide). Before step 55 of the guide's 21-23 part: the guide hands it in at step 55 of its 21-23 part; from Faldreas Goeth'Shael (Ashenvale 35.8, 49.1).
+- **Level 22, step 24 of the guide's 21-23 part**, right after you hand in "The Ruins of Stardust" to Pelturas Whitemoon (Ashenvale 37.4, 51.8): **Pick up On Guard in Stonetalon, level 21** (catch up with your guide). Before step 51 of the guide's 21-23 part: the guide hands it in at step 51 of its 21-23 part; from Sentinel Thenysil (Ashenvale 34.9, 49.8).
 - **Level 23, step 79 of the guide's 21-23 part**, right after you hand in "WANTED: Murkdeep!" to Sentinel Glynda Nal'Shea (Darkshore 37.7, 43.4): **The Corruption Abroad** (clear win). +1,450 experience in about 1 min, about 3 min ahead of your usual pace; already in your log.
+- **Level 23, step 80 of the guide's 21-23 part**, right after you hand in "Escape Through Stealth" to Terenthis (Darkshore 39.4, 43.5): **Pick up The Tower of Althalaxx (4 parts), level 18-24** (catch up with your guide). Before step 20 of the guide's 29-30 part: the guide takes its next part, "The Tower of Althalaxx", at step 20 of its 29-30 part; from Balthule Shadowstrike (Darkshore 55.0, 24.9).
+- **Level 23, step 80 of the guide's 21-23 part**, right after you hand in "Escape Through Stealth" to Terenthis (Darkshore 39.4, 43.5): **Pick up The Absent Minded Prospector, level 20** (catch up with your guide). Before step 81 of the guide's 21-23 part: the guide hands it in at step 81 of its 21-23 part; from Prospector Remtravel (Darkshore 35.7, 83.7).
+- **Level 23, step 80 of the guide's 21-23 part**, right after you hand in "Escape Through Stealth" to Terenthis (Darkshore 39.4, 43.5): **Pick up It's All Fun and Games Until...** (catch up with your guide). Before step 83 of the guide's 21-23 part: the guide hands it in at step 83 of its 21-23 part; (Darkshore 38.5, 86.0).
+- **Level 25, step 92 of the guide's 24-27 part**, while the guide has you on "Alther's Mill" (Redridge Mountains 51.5, 43.2): **Pick up Blackrock Menace, level 21** (catch up with your guide). Before step 200 of the guide's 24-27 part: the guide takes its next part, "Tharil'zun", at step 200 of its 24-27 part; from Marshal Marris (Redridge Mountains 33.5, 49.0).
 - **Level 26, step 126 of the guide's 24-27 part**, when the guide brings you to Stormwind City (Stormwind City 39.8, 54.4): **Run The Stockade** (with your guide). Your guide runs it here and takes 14 of its quests. Pick up first: The Fury Runs Deep (level 27, start with "The Dark Iron War" from Motley Garmason (Wetlands 50.0, 18.2)).
 - **Level 28, step 130 of the guide's 27-29 part**, when the guide brings you to Wetlands (Wetlands 52.1, 65.3): **Run Excavation Site: Wetlands** (with your guide). Your guide runs it here and takes 10 of its quests.
 - **Level 29, step 177 of the guide's 27-29 part**, when the guide has you pick up "Lightforge Iron" from Glorin Steelbrow (Wetlands 10.6, 60.6): **Lightforge Ingots** (worth it if you like it). +2,884 experience in about 5 min, about 2 min ahead of your usual pace; from Glorin Steelbrow (Wetlands 10.6, 60.6).

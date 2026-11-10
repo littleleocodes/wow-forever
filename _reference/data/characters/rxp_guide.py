@@ -389,8 +389,46 @@ def facts(cfg, snap, wow_dir, route):
         if d["level"] is None:
             lv = sorted(out["quests"][q].get("complete") or (out["quests"][q].get("turnin") or {}).get("level") or 99 for q in d["quests"])
             d["level"] = lv[0] if lv and lv[0] < 99 else None
+    out["before"] = before(mine, route, who, maps, enabled)
     out["extra"] = dungeon_quest_guides(roots, who, maps)
     out["givers"] = givers(roots, who, maps)
+    return out
+
+
+def before(mine, route, who, maps, enabled):
+    """What the route did before the character's current step (2026-11-10, user: what to do "to have the checklist and RestedXP the most
+    sync it can be"): every earlier part of the guide group (followed back by its "next" links) and the current part up to the step,
+    {quest: {"accept"|"complete"|"turnin": {"level", "zone", "x", "y", "npc", "step", "lo", "hi"}}} (the first time each)."""
+    nxt = {}
+    for n, sec in mine.items():
+        x = str(sec["head"].get("next") or "").split(";")[0].strip().split("\\")[-1].strip()
+        if x:
+            nxt[n] = x
+    back = {v: k for k, v in nxt.items()}
+    order, n = [], route["current"]
+    while n in back and back[n] not in order and back[n] != route["current"]:
+        n = back[n]
+        order.insert(0, n)
+    out = {}
+    for part in order + [route["current"]]:
+        sec = mine.get(part)
+        m = re.match(r"(\d+)-(\d+)", part)
+        if not sec or not m:
+            continue
+        lo, hi = int(m.group(1)), int(m.group(2))
+        steps = [x for x in sec["steps"] if applies(x["filter"], who, lo)]
+        for i, st in enumerate(steps):
+            if part == route["current"] and i + 1 >= (route.get("step") or 0):
+                break
+            level = round(lo + (hi - lo) * i / max(1, len(steps)))
+            ok, tags, ops = step_view(st, who, level, enabled)
+            if not ok:
+                continue
+            spot = where(tags, maps)
+            for op, q in ops:
+                out.setdefault(q, {}).setdefault(op, {"level": level, "zone": spot[0] if spot else None, "x": spot[1] if spot else None,
+                                                      "y": spot[2] if spot else None, "npc": tags["targets"][0] if tags["targets"] else None,
+                                                      "step": i + 1, "lo": lo, "hi": hi})
     return out
 
 

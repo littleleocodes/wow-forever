@@ -287,7 +287,7 @@ def steps_html(C, lv):
             items.append(todo(f"dg{dg['zone']}", f'Run <strong>{esc(dg["zone"])}</strong> at level {dg["run"]} <span class="muted">({dg["lo"]}–{dg["hi"]})</span>',
                               "once, with its quests · " + esc(dg.get("why", "")) + "".join(f"<br>Drop: {md(x)}" for x in dg["drops"])))
     for r in tl or []:   # when to leave the guide, in the route's order (plan.timeline, 2026-11-10): what, when, the facts, what to pick up
-        if r["level"] <= lv + 4:
+        if r["level"] <= lv + 4 or r["kind"] == "catchup":   # (a catch-up whatever its level: it keeps you in step with the guide)
             sub = (f'Level {r["level"]}, step {r["step"]} ({r["lo"]}–{r["hi"]} part): {md(r["anchor"])}<br>{md(r["facts"])}'
                    + (f' · {md(r["where"])}' if r["where"] else "")
                    + "".join(f"<br>• {md(x)}" for x in r["pickups"]))
