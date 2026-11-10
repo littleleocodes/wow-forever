@@ -22,5 +22,7 @@
   "duckdb": "F:/wow-addons/data/forever_ah.duckdb"
  },
  "checklist_url": "https://claude.ai/artifact/G1F2H5NnW9tnNHHKaSMXpb",
- "checklist_note": "The town checklist page (checklist.html, written by plan.py on every run): after each refresh publish it with the Artifact tool to checklist_url (same file path in the same session; from another session pass the url and read it first)."
+ "checklist_note": "The town checklist page (checklist.html, written by plan.py on every run): after each refresh publish it with the Artifact tool to checklist_url (same file path in the same session; from another session pass the url and read it first).",
+ "group": true,
+ "group_note": "2026-11-10, user: \"Arcea can do group quest as well. I can group up with random people, as well as do dungeons\": elite group quests count as detours (detours.py)."
 }

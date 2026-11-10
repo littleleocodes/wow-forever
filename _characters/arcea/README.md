@@ -85,7 +85,7 @@ Count a piece's stats in spell power: 1 intellect = 0.22, 1 spirit = 0.27, 1 sta
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 0.8 hours old). "For your trip": enough to keep it up for about 3.0 hours of play, to your next training at level 28 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 1.0 hours old). "For your trip": enough to keep it up for about 3.0 hours of play, to your next training at level 28 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|
@@ -127,7 +127,7 @@ Run each once, with its quests in your log first: the quests' experience is the 
 
 Quests your RestedXP route leaves out that pay for the walk (see Detours off your route below).
 
-- **High Sorcerer Andromath** (worth it if you like it): from Jennea Cannon (Stormwind City 38.6, 79.3), around level 26 while your route is in Stormwind City. About 1,050 experience for about 1 min (0 of it walking); saves about 3 min against your usual pace.
+- **High Sorcerer Andromath** (worth it if you like it): from Jennea Cannon (Stormwind City 36.9, 81.1), around level 26 while your route is in Stormwind City. About 1,050 experience for about 1 min (0 of it walking); saves about 3 min against your usual pace.
 - **Lightforge Ingots** (clear win): from Glorin Steelbrow (Wetlands 10.6, 60.6), around level 29 while your route is in Wetlands. About 2,884 experience for about 6 min (1 of it walking); saves about 3 min against your usual pace.
 
 ### Talents and the rest
@@ -320,15 +320,28 @@ Every leveling dungeon you have not outgrown, once, at the level its quests fit:
 
 ## Detours off your route
 
-Quests your RestedXP route leaves out, played as a detour from where the route is at that level: walk to the giver, do it at the nearest spots, hand it in, walk back. Three kinds: **clear win** (20% faster than your usual leveling pace and 3 minutes saved), **worth it if you like it** (at your pace or a bit better), and **for the gear** (its reward is in your gear plan; a little slower than your pace is fine). Estimates: straight-line travel with a margin, Classic's quest positions, your fight-lab time per kill. 106 quests scored; 59 could not be placed (an item starts them, or a target has no known spot); Forever's own quests have no positions here.
+Quests your RestedXP route leaves out, played as a detour from where the route is at that level: walk to the giver, do it at the nearest spots, hand it in, walk back. Three kinds: **clear win** (20% faster than your usual leveling pace and 3 minutes saved), **worth it if you like it** (at your pace or a bit better), and **for the gear** (its reward is in your gear plan; a little slower than your pace is fine). Estimates: straight-line travel with a margin, Classic's quest positions, your fight-lab time per kill. 132 quests scored; 71 could not be placed (an item starts them, or a target has no known spot); Forever's own quests have no positions here.
 
 ### Level 26
 
-- **High Sorcerer Andromath** (worth it if you like it): from Jennea Cannon (Stormwind City 38.6, 79.3), around level 26 while your route is in Stormwind City. About 1,050 experience for about 1 min (0 of it walking); saves about 3 min against your usual pace.
+- **High Sorcerer Andromath** (worth it if you like it): from Jennea Cannon (Stormwind City 36.9, 81.1), around level 26 while your route is in Stormwind City. About 1,050 experience for about 1 min (0 of it walking); saves about 3 min against your usual pace.
 
 ### Level 29
 
 - **Lightforge Ingots** (clear win): from Glorin Steelbrow (Wetlands 10.6, 60.6), around level 29 while your route is in Wetlands. About 2,884 experience for about 6 min (1 of it walking); saves about 3 min against your usual pace.
+
+### Level 33
+
+- **Stromgarde Badges** (clear win): from Captain Nials (Arathi Highlands 45.8, 47.5), around level 33 while your route is in Arathi Highlands. About 5,709 experience for about 11 min (5 of it walking); saves about 4 min against your usual pace.
+
+### Level 40
+
+- **Crushridge Warmongers** (clear win): from Marshal Redpath (Hillsbrad Foothills 49.5, 58.7), around level 40 while your route is in Hillsbrad Foothills. About 7,056 experience for about 13 min (5 of it walking); saves about 3 min against your usual pace.
+- **Fiery Blaze Enchantments** (worth it if you like it): from Sigrun Ironhew (Badlands 53.8, 43.3), around level 40 while your route is in Badlands. About 17,375 experience for about 37 min (2 of it walking); saves about 2 min against your usual pace.
+
+### Level 41
+
+- **Mai'Zoth** (clear win): from Brother Nimetz (Stranglethorn Vale 37.8, 3.6), around level 41 while your route is in Duskwood. About 5,350 experience for about 7 min (6 of it walking); saves about 5 min against your usual pace.
 
 ### Level 51
 
