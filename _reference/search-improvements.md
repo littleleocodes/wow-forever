@@ -568,3 +568,8 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
   bit-identical): Wild Growth on top of the page build -0.7% / +0.4% / -0.5% / +0.3% in those four settings, in the hand draft -0.1% /
   +0.2% / +0.9% / +1.0%. The Restoration deep search ran with the old penalty: re-run fresh (deep_heal.py druid --fresh). Check every
   healer module for roles that exclude each other the same way when a spec gets a second spell of a kind.
+- 2026-11-10 (mage raid guide rewrite after the patch queue): the `raid_casts` field of `<entry>-environments.json` sums casts by spell
+  name, and Arcane Missiles has two ids with that name (10212 the channel, 10274 its missiles), so it reads twice the casts; the
+  per-id `raid_spell_casts` and the dummy's casts per minute in rotation.md count once. The Frost, Arcane-Frost and Arcane raid guides
+  had quoted the doubled number (fixed: about 10, 14 and 15 a fight). Quote `raid_spell_casts` in guides; open: make `raid_casts` skip a
+  spell's triggered missile id (it sums ranks of one spell correctly, so not a blanket max).

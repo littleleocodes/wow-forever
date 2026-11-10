@@ -32,32 +32,30 @@
 
 ## Why this rotation
 
-Fire keeps its own **Improved Scorch** debuff at 5 stacks, fires **Fire Blast** every 6 seconds, casts **Pyroblast** whenever three crits have made it a 1.5-second cast, keeps one stack of its **Arcane Blast** buff up, spends **Missile Barrage** procs on free **Arcane Missiles**, and fills with **Fireball** or **Scorch**. The best mage page in the simulator: 828 DPS in a full raid.
+Fire keeps its own **Improved Scorch** debuff at 5 stacks, fires **Fire Blast** every 6 seconds, casts **Pyroblast** whenever three crits have made it a 1.5-second cast, keeps one stack of its **Arcane Blast** buff up, spends **Missile Barrage** procs on free **Arcane Missiles**, and fills with **Fireball** or **Scorch**. The best mage page in the simulator: 869 DPS in a full raid.
 
 **Why it works**
 
-- **Pyroblast** at 3 stacks of **Heating Up** comes first (15 casts, 26%, plus most of **Ignite**'s 10%): crits from **Fireball**, **Fire Blast** and **Scorch** each cut its 6-second cast by 25%, and **Fire Blast** adds a stack on every hit, so three stacks come about every 12 seconds and the cast takes 1.5 seconds. One hard cast before the pull lands as the fight starts. The full list adds "not while casting": finish the spell you are on.
-- **Fire Blast** on cooldown (29 casts, 22%): every 6 seconds with **Improved Fire Blast**, instant, 10% crit from **Incineration** and 6% from **Critical Mass**; its crits start **Ignite** (40% of the hit over 4 seconds) and every hit feeds **Heating Up**.
-- **Scorch** keeps Fire Vulnerability at 5 stacks (**Improved Scorch**: 3% more Fire damage per stack for 30 seconds) and refreshes it under 5 seconds left, between casts. It is also the short filler (35 casts, 17%): when **Fire Blast** will be back before a 3-second **Fireball** could land, the full list casts a 1.5-second **Scorch** instead.
-- **Fire Power** is why the burns matter: 3% more Fire damage per Fire effect of yours on the target, up to 12%, and Fire Vulnerability, **Ignite**, **Pyroblast**'s burn and **Fireball**'s burn are four. **Fireball** (11 casts, 13%) casts in 3.1 seconds with four points of **Accelerant**; the list names rank 11, which the search kept over rank 12.
-- The 17 Arcane points: one **Arcane Blast** every 18 seconds (9 casts, 4%) keeps its buff on you (12% of your Intellect as spell damage) and rolls 40% for **Missile Barrage**, which **Fireball** rolls at 20%; the proc's free, fast **Arcane Missiles** are 8% of the damage (11 casts). **Arcane Concentration** makes one cast in ten free.
-- **Combustion** at the pull (3-minute cooldown): each Fire hit adds 10% Fire crit until you land 3 crits, which fills **Heating Up** fast.
-- Mana: a mana potion whenever it is ready (2 a fight), your mana gem (from **Conjure Mana Ruby**), a Demonic Rune, and **Master of Elements**' 30% refund on every Fire crit; **Evocation** in about one fight in five. In a 6-minute fight the simulator's DPS falls to 441: the mana runs out.
+- **Pyroblast** at 3 stacks of **Heating Up** is the first spell on the list (14 casts, 25%; its crits also feed **Ignite**, 10%): crits from **Fireball**, **Fire Blast** and **Scorch** each cut its 6-second cast by 25%, and **Fire Blast** adds a stack on every hit, so three stacks come about every 13 seconds and the cast takes 1.5 seconds. One hard cast before the pull lands as the fight starts.
+- **Fire Blast** on cooldown (29 casts, 21%): every 6 seconds with **Improved Fire Blast**, instant, 10% crit from **Incineration** and 6% from **Critical Mass**; its crits start **Ignite** (40% of the hit over 4 seconds) and every hit feeds **Heating Up**.
+- **Scorch** keeps Fire Vulnerability at 5 stacks (**Improved Scorch**: 3% more Fire damage per stack for 30 seconds) and refreshes it under 5 seconds left. It is also the short filler (23 casts in all, 11%): when **Fire Blast** will be back before a 3-second **Fireball** could land, the list casts a 1.5-second **Scorch** instead.
+- **Fire Power** is why the burns matter: 3% more Fire damage per Fire effect of yours on the target, up to 12%, and Fire Vulnerability, **Ignite**, **Pyroblast**'s burn and **Fireball**'s burn are four. **Fireball** (18 casts, 20%) casts in 3 seconds with all five points of **Accelerant**; the list names rank 11 (rank 12 comes from a tome).
+- The 17 Arcane points: one **Arcane Blast** about every 20 seconds (9 casts, 4%) keeps its buff on you (12% of your Intellect as spell damage for 18 seconds) and rolls 40% for **Missile Barrage**, which **Fireball** rolls at 20%; the proc's free, fast **Arcane Missiles** are 9% of the damage (6 casts). **Arcane Concentration** makes one cast in ten free.
+- **Combustion** once Fire Vulnerability has 5 stacks (the list holds every cooldown until then; one a fight on its 3-minute cooldown): each Fire hit adds 10% Fire crit until you land 3 crits, which fills **Heating Up** fast.
+- Mana: a mana potion whenever it is ready (2 a fight, the list's top line), your mana gem (from **Conjure Mana Ruby**) and a Demonic Rune (about one each), and **Master of Elements**' 20% refund on every Fire crit. The raid list no longer channels **Evocation**: the search dropped that line on 2026-11-10 (+0.4%). Without a raid's mana buffs the simulator's DPS falls 23% from a 3-minute to a 6-minute fight: the mana runs out.
 
 **Caveats**
 
 - Mana without a raid's buffs: the simulator's list for playing alone adds **Evocation** below 10% mana with more than 25 seconds left.
-- Several targets: **Flamestrike** (this build has no **Blast Wave**); **Fire Blast** hits one target only.
+- Several targets: **Flamestrike** (this build has no Blast Wave); **Fire Blast** hits one target only.
 - Fire resistance: the simulator's boss resists nothing. Against a target that resists Fire, **Frostbolt** is your fallback and most of this list loses value.
-- Threat: this build skips **Burning Soul**, so only **Arcane Subtlety** lowers your threat, and only for the Arcane spells; the simulator ignores threat.
+- Threat: this build skips Burning Soul, so only **Arcane Subtlety** lowers your threat, and only for the Arcane spells; the simulator ignores threat.
 
 **When to change it**
 
 - In the last 3 seconds a **Fireball** would land too late: **Scorch** or **Fire Blast**.
 - Moving: **Fire Blast** and the 1.5-second **Scorch** keep the stacks and **Heating Up** going; **Pyroblast** and **Fireball** wait.
 - The list has no 2-stack **Pyroblast** line (the simulator's own Fire rotation, which this list is built on, dropped it): with 2 stacks and the boss about to die, a **Scorch** and a **Fire Blast** in the same 3 seconds are its choice.
-
-*This guide was written for the rotation of 2026-11-04; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents
 

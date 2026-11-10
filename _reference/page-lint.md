@@ -8,23 +8,11 @@
 | talents | 0 |
 | links | 0 |
 | guide | 0 |
-| build | 9 |
+| build | 0 |
 | dead | 0 |
 | keys | 0 |
 | steps | 0 |
 | macros | 0 |
 | coverage | 0 |
 | names | 0 |
-
-## build
-
-- mage: mage/raid/arcane-frost.md: the guide names Arcane Power, Heating Up, Presence of Mind, Pyroblast, which the page's build does not take
-- mage: mage/raid/fire.md: the guide gives Accelerant (4 said, 5 taken)
-- mage: mage/raid/frost.md: the guide names Arcane Blast, Fingers of Frost, Ice Lance, Shatter, which the page's build does not take
-- rogue: rogue/raid/assassination.md: the guide names Cold Blood, which the page's build does not take
-- rogue: rogue/raid/assassination.md: the guide says the build lacks Mutilate, Venom, which the page's build takes
-- rogue: rogue/raid/combat.md: the guide names Cold Blood, which the page's build does not take
-- rogue: rogue/raid/daggers-split.md: the guide names Blade Flurry, Hack and Slash, Mutilate, which the page's build does not take
-- rogue: rogue/raid/daggers-split.md: the guide says the build lacks Seal Fate, which the page's build takes
-- rogue: rogue/raid/subtlety.md: the guide names Cold Blood, Improved Expose Armor, Mutilate, which the page's build does not take
 

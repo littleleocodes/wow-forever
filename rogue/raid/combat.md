@@ -31,28 +31,26 @@
 
 ## Why this rotation
 
-Combat in a raid is an energy rhythm: build combo points with **Backstab**, keep **Slice and Dice** up for its attack speed, and spend everything else on **Eviscerate**. **Adrenaline Rush** and **Blade Flurry** go on cooldown.
+Combat in a raid is a dagger rotation run on energy: **Backstab** from behind builds combo points, **Slice and Dice** stays up, and 4 or more points go into **Eviscerate**. **Shank** goes on cooldown for energy, **Blade Flurry** before the pull and again when it is back, **Adrenaline Rush** once a fight.
 
 **Why it works**
 
-- **Slice and Dice** comes first: 20% more attack speed for the whole fight is worth more than any single hit. Put it back up the moment it drops, even with 1 combo point: it lasts 9 seconds at 1 point and 21 at 5, and **Improved Slice and Dice** makes that 45% longer. Do not refresh it early: while it is up, 4 or more points go into **Eviscerate**, and the simulator found no gain from refreshing it at 5 points before it runs out.
-- **Eviscerate** goes at 4 or more combo points, not only at 5: its damage grows by the same amount per point, so the fifth point adds no bonus. A **Backstab** at 4 points often wastes a point, since **Puncturing Wounds** gives it a 45% chance to add a second one, and **Ruthlessness** adds a point after 60% of your finishers, so finishing more often collects more of them. The simulator measured finishing at 4 or more 0.9% better than waiting for 5 with daggers, 0.7% with swords.
-- **Cold Blood** spends no combo points. It makes your next attack a sure critical strike, so the rotation times it right before an **Eviscerate** at 4 or more points, your biggest hit.
-- **Adrenaline Rush** doubles your energy regeneration for 15 seconds: press it whenever it is ready. The rotation used to hold it for low energy, and pressing it on cooldown measured 1.5% better.
-- **Backstab** is your only combo point builder and your filler: everything above it only spends what it builds.
+- **Slice and Dice** comes first: 30% more attack speed, and white hits are 45% of this build's damage in a full raid. Put it back up the moment it drops, even with 1 combo point: it lasts 9 seconds at 1 point and 21 at 5, and **Improved Slice and Dice** makes that 45% longer. The list never refreshes it early: while it is up, your points go into **Eviscerate**.
+- **Eviscerate** goes at 4 or more points, and at 3 when **Slice and Dice** has 6 seconds or less left. Waiting for 5 wastes points: **Puncturing Wounds** gives **Backstab** a 45% chance to add a second point, and **Ruthlessness** adds a point after 60% of your finishers; the rotation search measured finishing at 4 rather than 5 0.6% better. **Flawless Execution** cuts its cost from 35 to 20 energy, and **Coup de Grace** and **Aggression** add 20% and 15% to its damage.
+- **Shank** costs 5 energy and gives back 25; **Flash of Steel** adds 15 more and takes its cooldown from 10 to 8 seconds. Press it whenever it is ready and you have 80 energy or less (about 23 times in a 3-minute fight). In the simulator this build loses 8% of its damage without **Flash of Steel**, more than without any other talent but **Puncturing Wounds** (10%).
+- **Adrenaline Rush** doubles your energy regeneration for 15 seconds on a 5-minute cooldown: once a fight, with **Slice and Dice** up and 50 energy or less, so little of the extra energy is lost at the cap. **Blade Flurry** (20% more attack speed for 15 seconds, 2-minute cooldown) goes 3 seconds before the pull and again when it comes back: twice in a 3-minute fight.
+- **Backstab** is your only builder and your filler: 60 energy, from behind, with a dagger in your main hand; about 38 a fight and 30% of your damage. **Opportunity** adds 20% to its damage, **Lethality** 20% to its crit damage, **Puncturing Wounds** 30% to its crit chance, and **Hack and Slash** gives you 4% crit with daggers.
 
 **Caveats**
 
-- **Backstab** needs a dagger in your main hand and you behind the target. If you cannot get behind the boss, or you hold a sword, build with **Sinister Strike** instead (the swords setup on this page plays that way).
-- When your energy is nearly full (79 or more) and you hold 4 or more points, **Eviscerate** even if **Slice and Dice** is down so no energy goes to waste, then put **Slice and Dice** back up with the next points.
-- **Blade Flurry** copies your hits to a second target for 15 seconds. On a single boss it is still worth pressing on cooldown for its 20% attack speed; with adds, it is your best cleave.
+- **Backstab** needs a dagger in your main hand and you behind the target. If you cannot get behind the boss, build with **Sinister Strike**; with a sword, take the swords setup this page links (21/30/0), which plays that way.
+- **Garrote** is on the list, but it only works from stealth: the simulator presses **Vanish** a second into the fight and opens a **Garrote** right after, once a fight (**Vanish** has a 5-minute cooldown). Starting the fight in **Stealth** was not simulated.
+- While **Blade Flurry** is up, your attacks also strike a second nearby target: with adds, it is your cleave.
 
 **When to change it**
 
-- In the last 6 seconds of a fight, skip **Slice and Dice** and put every combo point into **Eviscerate**: a buff that outlives the boss does nothing.
-- If the boss is about to die and you hold only 1 to 3 points, an **Eviscerate** still beats keeping them.
-
-*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+- In the last 6 seconds, skip **Slice and Dice** and put any combo points, even 1, into **Eviscerate**: a buff that outlives the boss does nothing.
+- If no warrior keeps Sunder Armor on the target (a small group or a dungeon), keep **Expose Armor** up at 5 points. The simulator's list has a switch for it, off in a raid; an earlier search on the training dummy, where nothing else lowers armor, measured about 10% from it.
 
 ## Talents
 

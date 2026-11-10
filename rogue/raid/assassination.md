@@ -26,29 +26,27 @@
 
 ## Why this rotation
 
-Assassination in a raid is a Seal Fate dagger rotation: **Backstab** from behind builds combo points, often two at a time, **Slice and Dice** stays up, and every 4 or more points go into **Eviscerate**. **Cold Blood** goes in front of an **Eviscerate** whenever it is ready.
+Assassination in a raid is a Mutilate rotation: **Mutilate** builds combo points two at a time, **Slice and Dice** stays up, and every 3 or more points go into **Eviscerate**. **Shank** goes on cooldown to keep **Venom** going, and **Vanish** opens one **Garrote** early in the fight.
 
 **Why it works**
 
-- **Slice and Dice** is 20% more attack speed: more white hits, and more chances for your poisons, which can proc on every weapon strike. Put it back up the moment it drops, even with 1 combo point. With 5 points and under 3 seconds left on it, refresh it before you **Eviscerate**.
-- **Eviscerate** goes at 4 or more points because a **Backstab** often brings two: **Seal Fate** adds a point to every **Backstab** crit, and **Puncturing Wounds** raises its crit chance by 30% and adds a point 45% of the time. From 4 points that second point would be lost at the cap of 5, and **Ruthlessness** adds a free point after 60% of your finishers.
-- **Cold Blood** spends no combo points: it turns your next **Sinister Strike**, **Backstab**, **Ambush**, **Eviscerate** or **Mutilate** into a critical strike. Press it with 4 or more points and **Slice and Dice** up, then **Eviscerate** right away, so the crit lands on your biggest hit instead of a **Backstab**.
-- **Backstab** is your only builder and your filler: 60 energy, from behind the target, with a dagger in your main hand. **Malice** and **Lethality** make its crits more frequent and bigger, and every crit also feeds **Seal Fate**.
-- Poisons are a real share of your damage: **Instant Poison** on the main hand, **Deadly Poison** on the off hand, where it stacks up to 5 times. **Improved Poisons** raises their chance to land and **Vile Poisons** their damage; **Deadly Poison** alone did 8% of your damage in the simulator's training-dummy runs.
+- **Slice and Dice** is 30% more attack speed: more white hits (35% of your damage in a full raid) and more chances for your poisons, which can proc on every weapon strike. Put it back up the moment it drops, even with 1 combo point; the list never refreshes it early.
+- **Eviscerate** goes at 3 or more points: **Mutilate** brings 2 at once, **Seal Fate** adds a third when it crits (**Puncturing Wounds** gives **Mutilate** 15% more crit chance), and **Ruthlessness** adds a point after 60% of your finishers, so waiting for 5 wastes points. The rotation search measured 3 or more 0.6% better than 5.
+- Each **Eviscerate** pays for itself: **Flawless Execution** cuts its cost from 35 to 20 energy, and **Relentless Strikes** gives each combo point a 20% chance to restore 25 energy. In the simulator these are the build's two most valuable talents (removing **Relentless Strikes** costs 12% of its damage, **Flawless Execution** 8%). **Coup de Grace** and **Aggression** add 20% and 15% to **Eviscerate**, about a quarter of your damage.
+- **Mutilate** is your builder and filler: 60 energy, both weapons, 2 combo points, 20% more damage against a poisoned target; about 36 a fight and 20% of your damage. Its tooltip, unlike **Backstab**'s, does not ask you to stand behind the target. **Malice** and **Lethality** make its crits more frequent and bigger, and every crit feeds **Seal Fate**.
+- **Shank** goes on its 10-second cooldown at 80 energy or less: it costs 5 energy, gives back 25, and with **Venom** raises your poison damage by 30% and your chance to apply poisons by 20% for 6 seconds (removing **Venom** costs 7%). Poisons are 18% of your damage in a full raid: **Instant Poison** on the main hand, **Deadly Poison** on the off hand, with **Vile Poisons** adding 20% to their damage and **Improved Poisons** 2% to their chance to land.
 
 **Caveats**
 
-- **Backstab** needs you behind the boss with a dagger in your main hand. When the boss turns to face you or you have to stand in front, build with **Sinister Strike** until you are behind it again.
+- **Garrote** is on the list, but it only works from stealth: the simulator presses **Vanish** a second into the fight and opens a **Garrote** right after, once a fight (**Vanish** has a 5-minute cooldown; that **Garrote** is under 1% of your damage). Starting the fight in **Stealth** was not simulated.
 - There is no **Expose Armor** in the list: in a full raid a warrior keeps Sunder Armor on the boss, and the two do not stack (only the stronger one counts).
+- The list ends with **Backstab**, but this build never casts it: **Mutilate** is the builder whenever you have under 5 points. Blizzard built Forever's Assassination around **Mutilate** and **Venom**, and the simulator agrees: our hand-made Seal Fate **Backstab** build (28/21/2) did 687 DPS in a full raid against this build's 813.
 - Poisons now go on a weapon together with a sharpening stone (Blizzard's rogue deep dive, 2026-10-07), so use both.
-- This build has no **Mutilate** or **Venom**, though Blizzard built Forever's Assassination around them. In the simulator **Backstab** with **Puncturing Wounds** out-damaged **Mutilate**, the talent search dropped **Venom**, and the simulator's own Mutilate build did about 5% less than this one in a full raid: check it at launch.
 
 **When to change it**
 
-- In the last 6 seconds, start no **Slice and Dice**: put 4 or more points into **Eviscerate** even with it down. If the boss is about to die with 1 to 3 points, an **Eviscerate** still beats keeping them.
-- If no warrior keeps Sunder Armor on the target (a small group or a dungeon), keep **Expose Armor** up with 4 or more points, refreshing it before it runs out. On the training dummy, where nothing else lowers armor, the simulator measured that about 9% better.
-
-*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+- In the last 6 seconds, start no **Slice and Dice**: keep putting 3 or more points into **Eviscerate** even with it down.
+- If no warrior keeps Sunder Armor on the target (a small group or a dungeon), keep **Expose Armor** up. The simulator's list has a switch for it, off in a raid: at 5 points, renew it when it has 16 seconds or less left, before any other finisher. An earlier search on the training dummy, where nothing else lowers armor, measured about 9% from it.
 
 ## Talents
 

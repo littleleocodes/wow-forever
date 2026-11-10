@@ -27,28 +27,27 @@
 
 ## Why this rotation
 
-Daggers (split) plays the Assassination raid list with Combat's dagger talents: keep **Slice and Dice** up, spend 4 or more combo points on **Eviscerate**, and build with **Mutilate**. **Cold Blood** and **Blade Flurry** are your cooldowns. It has no **Seal Fate**: your points come from **Mutilate**, **Ruthlessness** and **Puncturing Wounds**.
+Daggers (split) plays Combat's dagger list with Assassination's finishing talents: **Backstab** builds combo points, often two at a time, **Slice and Dice** stays up, and 4 or more points go into **Eviscerate**. **Shank** goes on cooldown for energy and **Venom**, and **Cold Blood** goes before a 5-point **Eviscerate** once a fight.
 
 **Why it works**
 
-- **Slice and Dice** stays up all fight: 20% more attack speed, 45% longer with **Improved Slice and Dice**. Put it back up the moment it drops, even with 1 combo point.
-- **Eviscerate** at 4 or more points while **Slice and Dice** is up (or with 79 or more energy, or in the last 6 seconds): **Mutilate** gives 2 points at once, so waiting for 5 often wastes one. **Relentless Strikes** returns 25 energy for 20% of each finisher's points and **Ruthlessness** adds a point after 60% of them; in a full raid the simulator measured **Relentless Strikes** as this build's most valuable talent (about 7% of its damage).
-- **Cold Blood** right before an **Eviscerate** at 4 or more points with **Slice and Dice** up: a sure critical strike on your biggest hit.
-- **Mutilate** is your builder and filler: both weapons, 2 combo points, 20% more damage against a poisoned target. **Backstab** costs the same 60 energy and sits below it in the list, so it comes up only when **Mutilate** cannot be cast.
-- **Blade Flurry** (20% attack speed for 15 seconds, 2-minute cooldown) with your trinkets while **Slice and Dice** is up. **Hack and Slash** gives you 4% crit with daggers and **Dual Wield Specialization** 50% more off-hand damage.
-- Poisons: **Instant Poison** on the main hand, **Deadly Poison** on the off hand, with a sharpening stone on top (Forever lets them stack); **Improved Poisons** raises their chance to land.
+- **Slice and Dice** stays up all fight: 30% more attack speed (white hits are 41% of your damage in a full raid), 45% longer with **Improved Slice and Dice**. Put it back up the moment it drops, even with 1 combo point; the list never refreshes it early.
+- **Eviscerate** goes at 4 or more points, or at 3 when **Slice and Dice** has 6 seconds or less left, because a **Backstab** often brings two points. **Seal Fate** adds one to every crit, and **Puncturing Wounds** gives **Backstab** 30% more crit chance and a 45% chance to add a point anyway, so from 4 the second point would be lost at the cap of 5. **Ruthlessness** adds a point after 60% of your finishers.
+- **Flawless Execution** cuts **Eviscerate** from 35 to 20 energy and **Relentless Strikes** gives each combo point a 20% chance to restore 25 energy, so a 5-point **Eviscerate** always pays for itself. In the simulator **Puncturing Wounds** is this build's most valuable talent (12% of its damage), then **Relentless Strikes** (9%) and **Seal Fate** (7%).
+- **Cold Blood** spends no combo points: the list presses it at 5 points with the energy for **Eviscerate**, so its sure critical strike lands on that **Eviscerate**. Its 3-minute cooldown makes that once a fight.
+- **Shank** goes on its 10-second cooldown at 80 energy or less: 5 energy, 25 back, and with **Venom** 30% more poison damage and a 20% better chance to apply poisons for 6 seconds (removing **Venom** costs 6%). Poisons are 15% of your damage: **Instant Poison** on the main hand, **Deadly Poison** on the off hand, with **Vile Poisons** and **Improved Poisons**; **Dual Wield Specialization** adds 50% to your off-hand damage.
+- **Backstab** is your builder and filler: 60 energy, from behind the target, with a dagger in your main hand; about 36 a fight and 22% of your damage. **Malice** and **Lethality** make its crits more frequent and bigger.
 
 **Caveats**
 
-- There is no **Expose Armor** in the list: in a full raid a warrior keeps Sunder Armor on the boss, and the two do not stack.
-- **Mutilate** works from the front, **Backstab** only from behind: when the boss turns, keep building with **Mutilate**.
+- **Backstab** needs you behind the boss with a dagger in your main hand. When you have to stand in front, build with **Sinister Strike** until you are behind it again.
+- **Garrote** only works from stealth: the simulator presses **Vanish** a second into the fight and opens a **Garrote** right after, once a fight. **Blood Splatter** makes that **Garrote** last 9 seconds longer; the list casts no **Rupture** while you have **Flawless Execution**.
+- There is no **Expose Armor** in the list: in a full raid a warrior keeps Sunder Armor on the boss, and the two do not stack. Poisons go on a weapon together with a sharpening stone (Forever lets them stack), so use both.
 
 **When to change it**
 
-- In the last 6 seconds, start no **Slice and Dice**: put 4 or more points into **Eviscerate** even with it down; with 1 to 3 points and the boss about to die, an **Eviscerate** still beats keeping them.
-- Adds: **Blade Flurry** copies your hits to a second target for its 15 seconds.
-
-*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+- In the last 6 seconds, start no **Slice and Dice**: put any combo points, even 1, into **Eviscerate**.
+- If no warrior keeps Sunder Armor on the target (a small group or a dungeon), keep **Expose Armor** up at 5 points; the simulator's list has a switch for it, off in a raid.
 
 ## Talents
 

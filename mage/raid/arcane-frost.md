@@ -27,27 +27,27 @@
 
 ## Why this rotation
 
-Arcane-Frost is an Arcane list with a **Frostbolt** filler: keep two stacks of your **Arcane Blast** buff up, **Arcane Wrath** every 6 seconds, a free **Arcane Missiles** on every **Missile Barrage** proc, and **Frostbolt** in every gap, which rolls for the proc too. There is no cooldown to press: the build takes neither **Presence of Mind** nor **Arcane Power**. 671 DPS in a full raid, 11% behind the Arcane page.
+Arcane-Frost is an Arcane list with a **Frostbolt** filler: keep two stacks of your **Arcane Blast** buff up, **Arcane Wrath** whenever it is ready, a free **Arcane Missiles** on every **Missile Barrage** proc, and **Frostbolt** in every gap, which rolls for the proc too. There is no cooldown to press: the build takes neither Presence of Mind nor Arcane Power. 693 DPS in a full raid, 12% behind the Arcane page.
 
 **Why it works**
 
-- **Arcane Missiles** on **Missile Barrage** comes first: 27 casts and 30% of the damage. **Arcane Blast** gives a 40% chance per cast, **Arcane Wrath** and **Frostbolt** 20% each, so with three sources the proc is up often; it makes the next Missiles free, 2.5 seconds long and twice as dense. **Arcane Impact** adds 6% crit, **Arcane Mind** doubles the crit bonus of your Arcane spells, and **Arcane Instability** adds 3% damage and 3% crit to everything.
-- **Arcane Blast**, 25 casts and 16%: keep its buff stacked on you. Each cast gives you 12% of your Intellect as spell damage for 18 seconds, stacking to 4, and doubles the next cast's mana cost; the list casts it when the buff is missing or about to run out and until it has 2 stacks, then lets **Frostbolt** fill. Adding that line was the raid search's biggest gain for this entry (+6.1%).
-- **Arcane Wrath** whenever it is ready (13 casts, 23%): 3 seconds with **Accelerant**, a 6-second cooldown, 406-496 damage plus 5% of your maximum mana as spell damage, and its own **Missile Barrage** roll. The list stops it with 20 seconds left: late casts and their flight time overrun the fight (+0.4% in the search).
-- **Frostbolt** fills everything else (27 casts, 30%): 2.5 seconds with **Improved Frostbolt**, 290 mana, **Precision**'s hit, **Ice Shards**' doubled crit bonus, and the cheapest proc roll you have. The Frost half ends at **Ice Shards**: this build has no **Ice Lance**, **Shatter** or **Fingers of Frost**.
+- **Arcane Missiles** on **Missile Barrage** comes first: 14 casts and 30% of the damage. **Arcane Blast** gives a 40% chance per cast, **Arcane Wrath** and **Frostbolt** 20% each, so with three sources the proc is up often; it makes the next Missiles free, 2.5 seconds long and twice as dense. **Arcane Impact** adds 6% crit, **Arcane Mind** doubles the crit bonus of your Arcane spells, and **Arcane Instability** adds 3% damage and 3% crit to everything.
+- **Arcane Blast**, 25 casts and 16%: keep its buff stacked on you. Each cast gives you 12% of your Intellect as spell damage for 18 seconds, stacking to 4, and adds 100% to its mana cost per stack; the list casts it when the buff is missing or about to run out and until it has 2 stacks, then lets **Frostbolt** fill. Adding that line was the raid search's biggest gain for this entry (+6.1%).
+- **Arcane Wrath** whenever it is ready (13 casts, 24%): 3 seconds with **Accelerant**, a 6-second cooldown, 406-496 damage plus 5% of your maximum mana as spell damage, and its own **Missile Barrage** roll. The list stops it with 20 seconds left: late casts and their flight time overrun the fight (+0.4% in the search).
+- **Frostbolt** fills everything else (27 casts, 30%): 2.5 seconds with **Improved Frostbolt**, 260 mana at the rank the list names (rank 10), **Precision**'s 6% hit, **Ice Shards**' doubled crit bonus, and a 20% **Missile Barrage** roll of its own. The Frost half ends at **Ice Shards**: this build has no Ice Lance, Shatter or Fingers of Frost.
 - **Fire Blast** only in the last 3 seconds, when a **Frostbolt** would land too late; **Incineration** gives it 10% crit.
-- Mana: your mana gem (from **Conjure Mana Ruby**) below 80% mana, a mana potion, **Arcane Concentration** at 4 points (8% free casts) and **Magic Absorption**. With a raid's buffs the simulator never needed **Evocation** here; its line fires below 20% mana with more than 25 seconds left.
+- Mana: your mana gem (from **Conjure Mana Ruby**) below 80% mana, a mana potion, **Arcane Concentration** at 5 points (10% free casts) and **Magic Absorption** (1% of your mana back for each spell you fully resist). With a raid's buffs the simulator almost never needed **Evocation** here (one fight in 750); its line fires below 20% mana with more than 25 seconds left.
 
 **Caveats**
 
-- The Arcane page's build is the same idea with **Fire Blast** on cooldown, **Pyroblast** on **Heating Up**, **Arcane Power** and **Presence of Mind**: 756 against 671. This page exists because the hybrid split is its own spec on these pages.
+- The Arcane page's build is the same idea with Arcane's cooldowns and a Fire filler: it takes Presence of Mind, Arcane Power, Pyroblast and Heating Up, casts **Fire Blast** on cooldown and fills with **Fireball**: 790 against 693. This page exists because the hybrid split is its own spec on these pages.
 - Several targets: **Arcane Explosion**, **Blizzard** and **Cone of Cold**; the simulator fights one boss.
 - Moving: **Fire Blast** is your only instant. Threat: **Arcane Subtlety** cuts Arcane threat by 30%; the simulator ignores threat.
 
 **When to change it**
 
 - In the last 20 seconds no **Arcane Wrath**; in the last 3 seconds **Fire Blast** instead of a **Frostbolt**.
-- Without raid mana buffs, channel **Evocation** below 20% mana while more than 25 seconds remain; later, the mana comes back too late to spend.
+- Without raid mana buffs, the simulator's list for playing alone channels **Evocation** only below 5% mana while more than 50 seconds remain; later, the mana comes back too late to spend.
 
 ## Talents
 

@@ -6,7 +6,7 @@
 
 - none
 
-Guides whose rotation changed since they were stamped (13; rewrite or confirm, then `--stamp`):
+Guides whose rotation changed since they were stamped (8; rewrite or confirm, then `--stamp`):
 
 - druid Balance raid: balance-dps
 - druid Feral Combat raid: feral-bear-tank, feral-cat-dps
@@ -15,12 +15,7 @@ Guides whose rotation changed since they were stamped (13; rewrite or confirm, t
 - hunter Survival raid: melee-dps
 - hunter Hybrid Beast Mastery/Marksmanship raid: bm-raid, mm-lonewolf-raid, mm-raid
 - hunter Hybrid Beast Mastery/Survival raid: bm-raid, melee-dps
-- mage Fire raid: fire-raid
 - mage Hybrid Fire/Frost raid: fire-raid
-- rogue Combat raid: combat-daggers-raid, combat-swords-raid
-- rogue Assassination raid: assassination-raid
-- rogue Subtlety raid: subtlety-raid
-- rogue Hybrid Assassination/Combat raid: assassination-raid, combat-daggers-raid, combat-swords-raid
 
 Leveling steps that name a spell the tuned rules never cast (0; `fightlab/rotations/<class>-<model>.json` veto `off`; rewrite the steps in leveling-steps.json when the rules settle):
 
@@ -45,13 +40,13 @@ Leveling steps that name a spell the tuned rules never cast (0; `fightlab/rotati
 | hunter | Hybrid Marksmanship/Survival | leveling | 2026-10-26 | leveling:bm-leveling f957239e7ea7, leveling:melee-dps 0e159439c0ea, leveling:mm-raid 4d924884d1e4 |
 | hunter | Hybrid Beast Mastery/Survival | raid | 2026-10-15 | bm-raid 8f87aee79821, melee-dps 15437c6a63dc |
 | hunter | Hybrid Beast Mastery/Survival | leveling | 2026-10-26 | leveling:bm-leveling f957239e7ea7, leveling:melee-dps 0e159439c0ea, leveling:mm-raid 4d924884d1e4 |
-| mage | Frost | raid | 2026-11-04 | frost-raid 9d92acd12c6d |
+| mage | Frost | raid | 2026-11-10 | frost-raid 9d92acd12c6d |
 | mage | Frost | leveling | 2026-11-08 | leveling:arcane-leveling 168e92e4767c, leveling:barrage-frost-leveling 9aac3f0a975d, leveling:fire-leveling fd0a5bb910df, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 1af5e11a81be, leveling:frostfire-leveling 1dbf89646cc1 |
-| mage | Hybrid Arcane/Frost | raid | 2026-11-04 | arcane-dps 2dde8eb89ed4, frost-raid 9d92acd12c6d |
+| mage | Hybrid Arcane/Frost | raid | 2026-11-10 | arcane-dps 2dde8eb89ed4, frost-raid 9d92acd12c6d |
 | mage | Hybrid Arcane/Frost | leveling | 2026-11-08 | leveling:arcane-leveling 168e92e4767c, leveling:barrage-frost-leveling 9aac3f0a975d, leveling:fire-leveling fd0a5bb910df, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 1af5e11a81be, leveling:frostfire-leveling 1dbf89646cc1 |
 | mage | Arcane | raid | 2026-11-04 | arcane-dps 2dde8eb89ed4 |
 | mage | Arcane | leveling | 2026-11-08 | leveling:arcane-leveling 168e92e4767c, leveling:barrage-frost-leveling 9aac3f0a975d, leveling:fire-leveling fd0a5bb910df, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 1af5e11a81be, leveling:frostfire-leveling 1dbf89646cc1 |
-| mage | Fire | raid | 2026-11-04 | fire-raid 0ff76b4d4b8e |
+| mage | Fire | raid | 2026-11-10 | fire-raid 6e4d5a9fe906 |
 | mage | Fire | leveling | 2026-11-08 | leveling:arcane-leveling 168e92e4767c, leveling:barrage-frost-leveling 9aac3f0a975d, leveling:fire-leveling fd0a5bb910df, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 1af5e11a81be, leveling:frostfire-leveling 1dbf89646cc1 |
 | mage | Hybrid Fire/Frost | raid | 2026-11-04 | fire-raid 0ff76b4d4b8e, frost-raid 9d92acd12c6d, frostfire-raid d47545516c78 |
 | mage | Hybrid Fire/Frost | leveling | 2026-11-08 | leveling:arcane-leveling 168e92e4767c, leveling:barrage-frost-leveling 9aac3f0a975d, leveling:fire-leveling fd0a5bb910df, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 1af5e11a81be, leveling:frostfire-leveling 1dbf89646cc1 |
@@ -73,14 +68,14 @@ Leveling steps that name a spell the tuned rules never cast (0; `fightlab/rotati
 | priest | Discipline | leveling | 2026-11-09 | leveling:discipline-leveling 11d48ca4a0ea, leveling:holy-leveling efa767cc819b, leveling:shadow-dps bf384f69c323 |
 | priest | Hybrid Discipline/Shadow | leveling | 2026-11-04 | leveling:discipline-leveling 11d48ca4a0ea, leveling:holy-leveling efa767cc819b, leveling:shadow-dps bf384f69c323 |
 | priest | Hybrid Holy/Shadow | leveling | 2026-11-04 | leveling:discipline-leveling 11d48ca4a0ea, leveling:holy-leveling efa767cc819b, leveling:shadow-dps bf384f69c323 |
-| rogue | Combat | raid | 2026-10-15 | combat-daggers-raid e3e856fde9f1, combat-swords-raid a590fe6bed98 |
+| rogue | Combat | raid | 2026-11-10 | combat-daggers-raid 11c6e97d2996, combat-swords-raid 402f621db62a |
 | rogue | Combat | leveling | 2026-11-08 | leveling:combat-daggers-raid 04f1e02086d3, leveling:combat-swords-raid 395a598432df, leveling:subtlety-leveling e2271220e721 |
-| rogue | Assassination | raid | 2026-10-15 | assassination-raid f681c6caf5d3 |
+| rogue | Assassination | raid | 2026-11-10 | assassination-raid 05c720ea64be |
 | rogue | Assassination | leveling | 2026-11-08 | leveling:combat-daggers-raid 04f1e02086d3, leveling:combat-swords-raid 395a598432df, leveling:subtlety-leveling e2271220e721 |
-| rogue | Subtlety | raid | 2026-10-15 | subtlety-raid 7d764d235cf7 |
+| rogue | Subtlety | raid | 2026-11-10 | subtlety-raid 6b44fa2947d1 |
 | rogue | Subtlety | leveling | 2026-11-08 | leveling:combat-daggers-raid 04f1e02086d3, leveling:combat-swords-raid 395a598432df, leveling:subtlety-leveling e2271220e721 |
 | rogue | Hybrid Assassination/Combat | leveling | 2026-10-26 | leveling:combat-daggers-raid 04f1e02086d3, leveling:combat-swords-raid 395a598432df, leveling:subtlety-leveling e2271220e721 |
-| rogue | Hybrid Assassination/Combat | raid | 2026-10-15 | assassination-raid f681c6caf5d3, combat-daggers-raid e3e856fde9f1, combat-swords-raid a590fe6bed98 |
+| rogue | Hybrid Assassination/Combat | raid | 2026-11-10 | assassination-raid 05c720ea64be, combat-daggers-raid 11c6e97d2996, combat-swords-raid 402f621db62a |
 | rogue | Hybrid Combat/Subtlety | leveling | 2026-11-08 | leveling:combat-daggers-raid 04f1e02086d3, leveling:combat-swords-raid 395a598432df, leveling:subtlety-leveling e2271220e721 |
 | shaman | Elemental | raid | 2026-10-15 | elemental-dps 260725d0143a, stormcaller-dps fc9ab1b433fe |
 | shaman | Elemental | leveling | 2026-10-22 | leveling:elemental-dps 29615eae1d95, leveling:enhancement-dps 21e2b0278592 |

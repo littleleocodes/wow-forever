@@ -32,31 +32,28 @@
 
 ## Why this rotation
 
-Subtlety in a raid is a bleed rotation: **Hemorrhage** builds combo points, **Rupture** stays on the boss from 2 points, **Slice and Dice** stays up, and **Vanish** buys a second stealth opener of **Premeditation** and **Garrote**.
+Subtlety in a raid is a Death Mark rotation: **Hemorrhage** and **Shank** build combo points, **Garrote** and **Rupture** stay on the boss, **Slice and Dice** stays up, and 4 or more points go into **Death Mark**, which stores part of your damage and deals it a second time. The list never casts **Eviscerate**.
 
 **Why it works**
 
-- **Rupture** is your main finisher, not **Eviscerate**: put it back on the boss whenever it is off and you have 2 or more points. **Hemorrhage** adds 15% to your **Rupture** and **Garrote** damage and **Serrated Blades** adds 30%. The simulator measured **Rupture** from 2 points about 1.5% better than waiting for 4.
-- **Slice and Dice** is still 20% attack speed: put it back up with 1 point when it drops. When both are off, **Rupture** goes first if you have 2 or more points; with 4 or more points and under 3 seconds left on **Slice and Dice**, refresh it before you **Eviscerate**.
-- **Vanish** puts you back in stealth, which **Premeditation** and **Garrote** need. **Premeditation** adds 2 points, and **Garrote** adds 2 more with **Initiative** plus an 18-second bleed, 20 energy cheaper and usable from the front with **Dirty Deeds**; the simulator measured that **Garrote** worth about 1.6%. The full list presses **Vanish** only with **Slice and Dice** up, 60 or more energy and 3 or fewer points.
-- **Preparation** finishes the cooldown of your other abilities, **Vanish** and **Premeditation** included. Press it right after your first **Vanish** opener, not at the pull, so you get a second one; the simulator uses it only while **Vanish** is on cooldown.
-- **Cold Blood** needs no timing here: it boosts only **Sinister Strike**, **Backstab**, **Ambush**, **Eviscerate** and **Mutilate**, so **Hemorrhage** and **Ghostly Strike** leave it up and it waits for your next **Eviscerate**. **Eviscerate** spends the points that **Rupture** and **Slice and Dice** do not need.
-- **Hemorrhage** is your filler and **Ghostly Strike** goes in on its 20-second cooldown, a small gain (about half a percent in the simulator). Keep a dagger in your main hand: **Hemorrhage** then deals 145% weapon damage instead of 100%, and **Ghostly Strike** 180% instead of 125%.
+- **Death Mark** is your main finisher: 25 energy, a 10-second cooldown, at 4 or more points. For 6 seconds it stores a portion of the damage you deal the target per combo point, **Garrote** and **Rupture** damage at twice the rate, then deals what it stored, up to a maximum your attack power and crit chance raise. **Coup de Grace** raises its damage and storage rate by 20%. It is 23% of your damage in a full raid (about 14 a fight); with it in the build, the simulator's list spends no points on **Eviscerate**.
+- **Ghostly Strike** lets your next **Garrote** within 7 seconds skip stealth, so **Garrote** stays on the boss all fight: **Ghostly Strike** when **Garrote** has 4 seconds or less left, then **Garrote** when it runs out (about 7 a fight, 10% of your damage). **Blood Splatter** makes **Garrote** last 27 seconds instead of 18, **Dirty Deeds** makes it 20 energy cheaper and usable from the front, **Initiative** adds a second combo point to it, and **Opportunity** adds 20% to its damage.
+- **Rupture** goes on whenever it is off and you have 3 or more points (about 8 a fight, 10% of your damage). **Serrated Blades** adds 30% to it (and your attacks ignore 9% of armor), **Hemorrhage** adds 15% to **Rupture** and **Garrote** for 15 seconds, and **Blood Splatter** makes **Rupture** last 6 seconds longer.
+- **Hemorrhage** is your filler (35 energy, 30 with **Efficient Strikes**; 145% weapon damage with a dagger in your main hand), and the list renews it whenever its 15-second effect has run out. **Shank** costs 5 energy, gives back 25, and with **Boot Knife** adds 2 combo points: press it when it is ready, with 3 or fewer points and 80 energy or less.
+- Below 5 points the list keeps building; at 5, with **Death Mark** on cooldown and **Rupture** and **Slice and Dice** up, it waits. It also holds **Hemorrhage** while **Garrote** has under 6 seconds left, so the energy is there for **Ghostly Strike** and the new **Garrote** (the rotation search measured that 0.5% better than holding from 8 seconds). **Slice and Dice** (30% attack speed) goes back up with 1 point whenever it drops.
+- **Premeditation** adds 2 points: before the pull, then on its 2-minute cooldown with 3 or fewer points (the simulator needs no stealth for it, and its beta tooltip asks for none). **Vanish** opens a **Garrote** a second into the fight, and **Preparation** finishes the cooldowns of **Vanish** and **Premeditation** once a fight. Each of the two talents measured about 1% in the simulator.
 
 **Caveats**
 
-- The list says to keep **Garrote** on the target, but it only works from stealth: you cast it right after each **Vanish**, about twice in a 3-minute fight.
-- Damage you take breaks stealth, and the simulator does not model that. If something is hitting you or ticking on you, the stealth from **Vanish** may break before you use **Premeditation** and **Garrote**; then keep building with **Hemorrhage**.
-- Almost all of this works from the front: **Hemorrhage**, **Ghostly Strike**, **Rupture**, **Eviscerate**, and **Garrote** with **Dirty Deeds**. Only **Ambush** and **Backstab** need you behind the target.
+- The **Garrote** after **Vanish** needs stealth, and damage you take breaks it; the simulator does not model that. If something hits you right after **Vanish**, the next **Ghostly Strike** opens the **Garrote** instead.
+- Almost all of this works from the front: **Hemorrhage**, **Ghostly Strike**, **Death Mark**, **Rupture**, and **Garrote** with **Dirty Deeds**. Only **Ambush** and **Backstab** need you behind the target, and the list casts neither.
 - Subtlety has no cleave: on adds, stay on the kill target, and do not **Rupture** a target that dies within 8 seconds.
 
 **When to change it**
 
-- In the last 8 seconds, start no **Rupture**; in the last 6, put 4 or more points into **Eviscerate** even with **Slice and Dice** down.
-- Without a warrior's Sunder Armor on the boss, keep **Expose Armor** up at 5 points: **Improved Expose Armor** in this build makes it 10 energy cheaper and hands back 2 points. On the training dummy the simulator measured it about 2.5% better.
-- The simulator starts every fight out of stealth. In the game you can start in **Stealth** and open with **Premeditation** and **Garrote** at the pull; that opener was not simulated.
-
-*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+- In the last 6 seconds, start no **Rupture** and no **Slice and Dice**: they would outlast the boss.
+- Without a warrior's Sunder Armor on the boss, keep **Expose Armor** up at 5 points; the simulator's list has a switch for it, off in a raid. An earlier search on the training dummy measured it about 2.5% better.
+- The simulator starts every fight out of stealth. In the game you can start in **Stealth** and open with **Garrote** at the pull; that opener was not simulated.
 
 ## Talents
 
