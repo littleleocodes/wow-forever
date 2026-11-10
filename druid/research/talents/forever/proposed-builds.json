@@ -1506,17 +1506,16 @@
       "summary": "The Restoration build the machine-learning talent search found in the healer lab on 2026-11-09 (heallab/deep_heal.py: a random forest guiding a genetic search over every legal build of the spec, the heal-choice policy tuned with it, races on fresh seeds, every build one or two moves from the winner checked). Capacity is the healer lab's model of stated assumptions.",
       "allocation": {
         "Balance": [
-          ["Improved Wrath", 5],
+          ["Improved Wrath", 2],
           ["Genesis", 5],
-          ["Improved Moonfire", 2],
           ["Nature's Majesty", 2],
           ["Nature's Reach", 1],
           ["Nature's Splendor", 1]
         ],
         "Feral Combat": [],
         "Restoration": [
-          ["Heart of the Wild", 5],
-          ["Naturalist", 3],
+          ["Heart of the Wild", 4],
+          ["Naturalist", 2],
           ["Reflection", 3],
           ["Gift of Nature", 5],
           ["Bloom", 1],
@@ -1525,13 +1524,15 @@
           ["Swiftmend", 1],
           ["Living Spirit", 3],
           ["Improved Tranquility", 2],
-          ["Improved Regrowth", 3],
-          ["Wild Growth", 1]
+          ["Improved Regrowth", 2],
+          ["Wild Growth", 1],
+          ["Nature's Focus", 5],
+          ["Subtlety", 3]
         ]
       },
       "core": [],
       "flex": [],
-      "notes": ["+4.2% capacity over the hand draft resto-raid-healer (over the 2% bar: the spec's healing pick; the hand draft stays as the alternative).", "Final race over 400 fresh seeds: capacity 0.698 ± 0.001; resto-raid-healer 0.670, opt-resto-heal-raid-heal 0.670, resto-regrowth-natures-grace 0.606.", "Independent runs agreeing in the last cycle: 1/2; two-move check: 296 one-move and 5,081 two-move builds, none better.", "The healer lab models one healer keeping a five-member group alive (heallab/tables.py); not an in-game measurement."],
+      "notes": ["2026-11-09: healer filler pass (heallab/filler_pass.py, 200 runs, checked in a ten-minute fight too): points the healer lab measures at zero moved: Naturalist to Nature's Focus (pushback protection, capacity +0.0%); Heart of the Wild to Nature's Focus (pushback protection, capacity +0.2%); Improved Moonfire to Nature's Focus (pushback protection, capacity +0.0%); Improved Moonfire to Nature's Focus (pushback protection, capacity +0.0%); Improved Wrath to Nature's Focus (pushback protection, capacity +0.0%); Improved Wrath to Subtlety (threat reduction, capacity +0.0%); Improved Wrath to Subtlety (threat reduction, capacity +0.0%); Improved Regrowth to Subtlety (threat reduction, capacity -0.1%).", "+4.2% capacity over the hand draft resto-raid-healer (over the 2% bar: the spec's healing pick; the hand draft stays as the alternative).", "Final race over 400 fresh seeds: capacity 0.698 ± 0.001; resto-raid-healer 0.670, opt-resto-heal-raid-heal 0.670, resto-regrowth-natures-grace 0.606.", "Independent runs agreeing in the last cycle: 1/2; two-move check: 296 one-move and 5,081 two-move builds, none better.", "The healer lab models one healer keeping a five-member group alive (heallab/tables.py); not an in-game measurement."],
       "open_questions": ["A machine-searched Restoration build: check it against the community's healing builds at launch."],
       "sources": [],
       "replaces": "resto-raid-healer"

@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Restoration build the machine-learning talent search found in the healer lab on 2026-11-02 (heallab/deep_heal.py: a random forest guiding a genetic search over every legal build of the spec, the heal-choice policy tuned with it, races on fresh seeds, every build one or two moves from the winner checked). Capacity is the healer lab's model of stated assumptions.
+The Restoration build the machine-learning talent search found in the healer lab on 2026-11-09 (heallab/deep_heal.py: a random forest guiding a genetic search over every legal build of the spec, the heal-choice policy tuned with it, races on fresh seeds, every build one or two moves from the winner checked). Capacity is the healer lab's model of stated assumptions.
 
 ## Point allocation
 
@@ -19,10 +19,10 @@ The Restoration build the machine-learning talent search found in the healer lab
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Wrath** | 1/5 | changed | Reduces the cast time of your Wrath spell by 0.1 sec and its Mana cost by 10%. |
+| **Improved Wrath** | 2/5 | changed | Reduces the cast time of your Wrath spell by 0.2 sec and its Mana cost by 20%. |
 | **Genesis** | 5/5 | **NEW** | Increases the periodic damage and healing done by your spells and abilities by 10%. |
-| **Improved Moonfire** | 2/2 | changed | Increases the damage and critical strike chance of your Moonfire spell by 10%. |
 | **Nature's Majesty** | 2/2 | **NEW** | Increases your critical strike chance with spells and melee attacks by 4%. |
+| **Nature's Reach** | 1/2 | changed | Increases the range of your offensive Balance spells by 10% and improves your chance to hit by 2%. |
 | **Nature's Splendor** | 1/1 | **NEW** | Increases the duration of your Moonfire and Rejuvenation spells by 3 sec, your Regrowth spell by 6 sec, and your Insect Swarm spell by 2 sec. |
 
 ### Feral Combat (0)
@@ -33,18 +33,20 @@ The Restoration build the machine-learning talent search found in the healer lab
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Nature's Focus** | 3/5 | changed | Gives your Arcane and Nature spells a 42% chance to not lose casting time when you take damage. |
-| **Heart of the Wild** | 5/5 | changed | Increases your Intellect by 10%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 10%. |
-| **Naturalist** | 5/5 | **NEW** | Reduces the cast time of your Healing Touch and Wild Growth spells by 0.5 sec and increases all damage you deal by 10%. |
+| **Heart of the Wild** | 4/5 | changed | Increases your Intellect by 8%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 16% and while in Cat Form your Strength is increased by 8%. |
+| **Naturalist** | 2/5 | **NEW** | Reduces the cast time of your Healing Touch and Wild Growth spells by 0.2 sec and increases all damage you deal by 4%. |
 | **Reflection** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 | **Gift of Nature** | 5/5 | changed | Increases the effect of all your healing spells by 10%. |
+| **Bloom** | 1/1 | **NEW** | When your Rejuvenation or Regrowth spell expires due to its duration, the target is instantly healed for an amount equal to 100% of your Spirit. If either spell expires due to being dispelled, the target is healed for 50% of your Spirit instead. |
 | **Tranquil Spirit** | 5/5 | unchanged | Reduces the mana cost of your Healing Touch and Tranquility spells by 10%. |
 | **Improved Rejuvenation** | 3/3 | moved | Increases the effect of your Rejuvenation spell by 15%. |
 | **Swiftmend** | 1/1 | changed | Instantly heals a target with your active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of the consumed spell. |
-| **Nature's Swiftness** | 1/1 | unchanged | When activated, your next Nature spell becomes an instant cast spell. |
 | **Living Spirit** | 3/3 | **NEW** | Increases your Spirit by 15%. |
-| **Improved Regrowth** | 5/5 | unchanged | Increases the critical effect chance of your Regrowth spell by 50%. |
-| **Bloom** | 1/1 | **NEW** | When your Rejuvenation or Regrowth spell expires due to its duration, the target is instantly healed for an amount equal to 100% of your Spirit. If either spell expires due to being dispelled, the target is healed for 50% of your Spirit instead. |
+| **Improved Tranquility** | 2/2 | changed | Reduces threat caused by Tranquility by 100% and its cooldown by 60%. |
+| **Improved Regrowth** | 2/5 | unchanged | Increases the critical effect chance of your Regrowth spell by 20%. |
+| **Wild Growth** | 1/1 | **NEW** | Heals the target and their party for 336 over 7 sec. Party members must be within 43.5 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration. |
+| **Nature's Focus** | 5/5 | changed | Gives your Arcane and Nature spells a 70% chance to not lose casting time when you take damage. |
+| **Subtlety** | 3/3 | changed | Reduces the threat generated by your Nature and Arcane spells by 30%. |
 
 ## Rotation
 
@@ -52,10 +54,10 @@ A healer: not in the community simulator, see the healer lab section of the [rai
 
 ## Notes
 
-- 2026-11-08 (user: "the resto druid talent spec says to take Improved Wrath. Why would that ever be a thing?"): the healer lab had not modelled Bloom, so the search parked spare points on talents that read 0. Bloom modelled (a Rejuvenation or Regrowth that runs its full duration heals for 100% of Spirit): Furor to Bloom, capacity 0.666 to 0.688 (+3.3%, 400 runs). The two other free points (Natural Shapeshifter, one Improved Wrath) moved to Nature's Focus, pushback protection the lab does not model (no capacity change). Improved Wrath 1 and Improved Moonfire 2 stay: with Genesis and Nature's Majesty they are the 10 points Nature's Splendor needs, and nothing else in those rows helps healing.
-- +3.6% capacity over the hand draft resto-raid-healer (over the 2% bar: the spec's healing pick; the hand draft stays as the alternative).
-- Final race over 400 fresh seeds: capacity 0.662 ± 0.002; resto-raid-healer 0.639, opt-resto-heal-raid-heal 0.639, resto-regrowth-natures-grace 0.604.
-- Independent runs agreeing in the last cycle: 2/2; two-move check: 349 one-move and 4,512 two-move builds, none better.
+- 2026-11-09: healer filler pass (heallab/filler_pass.py, 200 runs, checked in a ten-minute fight too): points the healer lab measures at zero moved: Naturalist to Nature's Focus (pushback protection, capacity +0.0%); Heart of the Wild to Nature's Focus (pushback protection, capacity +0.2%); Improved Moonfire to Nature's Focus (pushback protection, capacity +0.0%); Improved Moonfire to Nature's Focus (pushback protection, capacity +0.0%); Improved Wrath to Nature's Focus (pushback protection, capacity +0.0%); Improved Wrath to Subtlety (threat reduction, capacity +0.0%); Improved Wrath to Subtlety (threat reduction, capacity +0.0%); Improved Regrowth to Subtlety (threat reduction, capacity -0.1%).
+- +4.2% capacity over the hand draft resto-raid-healer (over the 2% bar: the spec's healing pick; the hand draft stays as the alternative).
+- Final race over 400 fresh seeds: capacity 0.698 ± 0.001; resto-raid-healer 0.670, opt-resto-heal-raid-heal 0.670, resto-regrowth-natures-grace 0.606.
+- Independent runs agreeing in the last cycle: 1/2; two-move check: 296 one-move and 5,081 two-move builds, none better.
 - The healer lab models one healer keeping a five-member group alive (heallab/tables.py); not an in-game measurement.
 
 ## Open questions (verify in the live game)

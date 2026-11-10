@@ -6,10 +6,10 @@ Healer stats assumed (phase-1 raid gear, raid buffed): intellect 456, spirit 450
 
 | Build | Split | Capacity | Effective HPS at capacity | Overheal | Time out of mana | Healing split |
 |---|---|---|---|---|---|---|
-| `restoration-ml-heal` | 11/0/40 | 0.686 | 405 | 16% | 27 s | Healing Touch 54%, Rejuvenation 26%, Regrowth 8%, Tranquility 6%, Bloom 5%, Swiftmend 1% |
-| `resto-raid-healer` | 11/0/40 | 0.656 | 386 | 14% | 27 s | Healing Touch 56%, Rejuvenation 28%, Regrowth 8%, Tranquility 5%, Wild Growth 2%, Swiftmend 1% |
-| `opt-resto-heal-raid-heal` | 11/0/40 | 0.656 | 386 | 14% | 27 s | Healing Touch 56%, Rejuvenation 28%, Regrowth 8%, Tranquility 5%, Wild Growth 2%, Swiftmend 1% |
-| `resto-regrowth-natures-grace` | 21/0/30 | 0.602 | 356 | 14% | 37 s | Healing Touch 54%, Rejuvenation 29%, Regrowth 10%, Tranquility 6%, Swiftmend 1% |
+| `restoration-ml-heal` | 16/0/35 | 0.697 | 412 | 14% | 21 s | Healing Touch 52%, Rejuvenation 23%, Tranquility 12%, Wild Growth 6%, Bloom 4%, Regrowth 2%, Swiftmend 1% |
+| `resto-raid-healer` | 11/0/40 | 0.675 | 395 | 12% | 32 s | Healing Touch 56%, Rejuvenation 24%, Wild Growth 8%, Tranquility 7%, Regrowth 3%, Swiftmend 1% |
+| `opt-resto-heal-raid-heal` | 11/0/40 | 0.675 | 395 | 12% | 32 s | Healing Touch 56%, Rejuvenation 24%, Wild Growth 8%, Tranquility 7%, Regrowth 3%, Swiftmend 1% |
+| `resto-regrowth-natures-grace` | 21/0/30 | 0.607 | 352 | 14% | 40 s | Healing Touch 54%, Rejuvenation 29%, Tranquility 8%, Regrowth 8%, Swiftmend 1% |
 
 ## Talent values of `restoration-ml-heal`
 
@@ -17,23 +17,24 @@ Capacity lost when the talent is removed (relative to the build without it); EV 
 
 | Talent | Ranks | Lab | Scorer |
 |---|---|---|---|
-| Reflection | 3 | +17.8% | +18.1% |
-| Nature's Splendor | 1 | +6.7% | +7.7% |
-| Gift of Nature | 5 | +5.8% | +7.5% |
-| Tranquil Spirit | 5 | +5.2% | +5.2% |
-| Living Spirit | 3 | +4.3% | +4.8% |
-| Bloom | 1 | +3.5% | +2.6% |
-| Genesis | 5 | +3.3% | +4.6% |
-| Improved Rejuvenation | 3 | +3.3% | +4.4% |
-| Heart of the Wild | 5 | +2.0% | +3.1% |
-| Nature's Swiftness | 1 | +1.6% | +2.8% |
-| Swiftmend | 1 | +1.1% | +3.1% |
-| Improved Regrowth | 5 | +0.6% | +1.2% |
-| Naturalist | 5 | +0.2% | +0.5% |
-| Nature's Majesty | 2 | +0.0% | +1.5% |
+| Reflection | 3 | +19.0% | +18.7% |
+| Gift of Nature | 5 | +6.2% | +7.2% |
+| Tranquil Spirit | 5 | +5.9% | +5.3% |
+| Living Spirit | 3 | +3.4% | +4.9% |
+| Genesis | 5 | +3.1% | +4.4% |
+| Nature's Splendor | 1 | +3.0% | +7.5% |
+| Heart of the Wild | 5 | +2.1% | +3.2% |
+| Bloom | 1 | +2.0% | +2.4% |
+| Improved Rejuvenation | 3 | +1.7% | +4.3% |
+| Nature's Majesty | 2 | +1.6% | +1.5% |
+| Improved Tranquility | 2 | +1.3% | +0.6% |
+| Wild Growth | 1 | +1.2% | +0.9% |
+| Swiftmend | 1 | +0.6% | +3.0% |
+| Improved Regrowth | 3 | +0.1% | +0.7% |
 | Improved Moonfire * | 2 | +0.0% | +0.0% |
-| Improved Wrath * | 1 | +0.0% | +0.0% |
-| Nature's Focus * | 3 | +0.0% | +0.6% |
+| Improved Wrath * | 5 | +0.0% | +0.0% |
+| Nature's Reach * | 1 | +0.0% | +0.0% |
+| Naturalist | 3 | -0.2% | +0.3% |
 
 ## Mechanics simulated
 
