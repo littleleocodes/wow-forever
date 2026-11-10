@@ -885,22 +885,22 @@
       "allocation": {
         "Balance": [
           ["Improved Wrath", 5],
-          ["Improved Moonfire", 2],
+          ["Genesis", 3],
           ["Moonglow", 3],
+          ["Improved Moonfire", 2],
           ["Nature's Majesty", 2],
-          ["Improved Entangling Roots", 3],
           ["Nature's Splendor", 1],
-          ["Improved Starfire", 5],
           ["Vengeance", 5],
-          ["Eclipse", 3],
+          ["Improved Starfire", 5],
           ["Nature's Grace", 1],
+          ["Eclipse", 3],
           ["Moonfury", 5],
           ["Moonkin Form", 1]
         ],
         "Feral Combat": [],
         "Restoration": [
-          ["Heart of the Wild", 2],
           ["Nature's Focus", 5],
+          ["Heart of the Wild", 2],
           ["Naturalist", 5],
           ["Reflection", 3]
         ]
@@ -916,7 +916,7 @@
         {"talent": "Naturalist", "why": "Removing it costs 1.5 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Report: druid/research/talents/forever/optimizer/balance-dps-leveling-st.md", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 36/2/13 -> 36/0/15; order dropped (order_repair.py) (refill: the balance-dps model, leveling-st).", "2026-11-06 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the balance-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 37.6 s per kill; own tree first 37.6 s; own tree last 39.6 s."],
+      "notes": ["2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Entangling Roots to Genesis at 45 (tie-break: -0.0% seed 3, -0.2% seed 4, level-weighted time per kill); Improved Entangling Roots to Genesis at 24 (gate: -0.4% seed 3, -0.2% seed 4, level-weighted time per kill); Improved Entangling Roots to Genesis at 23 (gate: -0.4% seed 3, -0.3% seed 4, level-weighted time per kill).", "Report: druid/research/talents/forever/optimizer/balance-dps-leveling-st.md", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 36/2/13 -> 36/0/15; order dropped (order_repair.py) (refill: the balance-dps model, leveling-st).", "2026-11-06 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the balance-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 37.6 s per kill; own tree first 37.6 s; own tree last 39.6 s."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/druid"],
       "order": [
@@ -928,7 +928,7 @@
         {"levels": "19", "tree": "Balance", "talent": "Moonglow", "points": 1},
         {"levels": "20-21", "tree": "Balance", "talent": "Nature's Majesty", "points": 2},
         {"levels": "22", "tree": "Balance", "talent": "Nature's Splendor", "points": 1},
-        {"levels": "23-24", "tree": "Balance", "talent": "Improved Entangling Roots", "points": 2},
+        {"levels": "23-24", "tree": "Balance", "talent": "Genesis", "points": 2},
         {"levels": "25-29", "tree": "Balance", "talent": "Improved Starfire", "points": 5},
         {"levels": "30-32", "tree": "Balance", "talent": "Eclipse", "points": 3},
         {"levels": "33", "tree": "Balance", "talent": "Nature's Grace", "points": 1},
@@ -940,7 +940,7 @@
         {"levels": "40", "tree": "Balance", "talent": "Moonkin Form", "points": 1},
         {"levels": "41-42", "tree": "Balance", "talent": "Vengeance", "points": 2},
         {"levels": "43-44", "tree": "Balance", "talent": "Moonfury", "points": 2},
-        {"levels": "45", "tree": "Balance", "talent": "Improved Entangling Roots", "points": 1},
+        {"levels": "45", "tree": "Balance", "talent": "Genesis", "points": 1},
         {"levels": "46-47", "tree": "Restoration", "talent": "Heart of the Wild", "points": 2},
         {"levels": "48-50", "tree": "Restoration", "talent": "Nature's Focus", "points": 3},
         {"levels": "51", "tree": "Restoration", "talent": "Reflection", "points": 1},
@@ -1276,47 +1276,6 @@
       "replaces": "feral-cat-dps"
     },
     {
-      "id": "restoration-ml-heal",
-      "name": "Restoration — Raid healing (machine-learning search)",
-      "role": "healer",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Restoration",
-      "generated": "2026-11-02",
-      "derived": "raid",
-      "summary": "The Restoration build the machine-learning talent search found in the healer lab on 2026-11-02 (heallab/deep_heal.py: a random forest guiding a genetic search over every legal build of the spec, the heal-choice policy tuned with it, races on fresh seeds, every build one or two moves from the winner checked). Capacity is the healer lab's model of stated assumptions.",
-      "allocation": {
-        "Balance": [
-          ["Improved Wrath", 1],
-          ["Genesis", 5],
-          ["Improved Moonfire", 2],
-          ["Nature's Majesty", 2],
-          ["Nature's Splendor", 1]
-        ],
-        "Feral Combat": [],
-        "Restoration": [
-          ["Nature's Focus", 3],
-          ["Heart of the Wild", 5],
-          ["Naturalist", 5],
-          ["Reflection", 3],
-          ["Gift of Nature", 5],
-          ["Tranquil Spirit", 5],
-          ["Improved Rejuvenation", 3],
-          ["Swiftmend", 1],
-          ["Nature's Swiftness", 1],
-          ["Living Spirit", 3],
-          ["Improved Regrowth", 5],
-          ["Bloom", 1]
-        ]
-      },
-      "core": [],
-      "flex": [],
-      "notes": ["2026-11-08 (user: \"the resto druid talent spec says to take Improved Wrath. Why would that ever be a thing?\"): the healer lab had not modelled Bloom, so the search parked spare points on talents that read 0. Bloom modelled (a Rejuvenation or Regrowth that runs its full duration heals for 100% of Spirit): Furor to Bloom, capacity 0.666 to 0.688 (+3.3%, 400 runs). The two other free points (Natural Shapeshifter, one Improved Wrath) moved to Nature's Focus, pushback protection the lab does not model (no capacity change). Improved Wrath 1 and Improved Moonfire 2 stay: with Genesis and Nature's Majesty they are the 10 points Nature's Splendor needs, and nothing else in those rows helps healing.", "+3.6% capacity over the hand draft resto-raid-healer (over the 2% bar: the spec's healing pick; the hand draft stays as the alternative).", "Final race over 400 fresh seeds: capacity 0.662 ± 0.002; resto-raid-healer 0.639, opt-resto-heal-raid-heal 0.639, resto-regrowth-natures-grace 0.604.", "Independent runs agreeing in the last cycle: 2/2; two-move check: 349 one-move and 4,512 two-move builds, none better.", "The healer lab models one healer keeping a five-member group alive (heallab/tables.py); not an in-game measurement."],
-      "open_questions": ["A machine-searched Restoration build: check it against the community's healing builds at launch."],
-      "sources": [],
-      "replaces": "resto-raid-healer"
-    },
-    {
       "id": "balance-open-leveling",
       "name": "Balance — Leveling (open talent search)",
       "role": "dps",
@@ -1534,6 +1493,48 @@
       "notes": ["2026-11-08 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 28 s; own tree first 28 s; own tree last 28 s. First Restoration point at level 19.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
       "open_questions": ["Check the Restoration leveling pace at launch; the raid build's talents may cost speed early."],
       "sources": []
+    },
+    {
+      "id": "restoration-ml-heal",
+      "name": "Restoration — Raid healing (machine-learning search)",
+      "role": "healer",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Restoration",
+      "generated": "2026-11-09",
+      "derived": "raid",
+      "summary": "The Restoration build the machine-learning talent search found in the healer lab on 2026-11-09 (heallab/deep_heal.py: a random forest guiding a genetic search over every legal build of the spec, the heal-choice policy tuned with it, races on fresh seeds, every build one or two moves from the winner checked). Capacity is the healer lab's model of stated assumptions.",
+      "allocation": {
+        "Balance": [
+          ["Improved Wrath", 5],
+          ["Genesis", 5],
+          ["Improved Moonfire", 2],
+          ["Nature's Majesty", 2],
+          ["Nature's Reach", 1],
+          ["Nature's Splendor", 1]
+        ],
+        "Feral Combat": [],
+        "Restoration": [
+          ["Heart of the Wild", 5],
+          ["Naturalist", 3],
+          ["Reflection", 3],
+          ["Gift of Nature", 5],
+          ["Bloom", 1],
+          ["Tranquil Spirit", 5],
+          ["Improved Rejuvenation", 3],
+          ["Swiftmend", 1],
+          ["Living Spirit", 3],
+          ["Improved Tranquility", 2],
+          ["Improved Regrowth", 3],
+          ["Wild Growth", 1]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["+4.2% capacity over the hand draft resto-raid-healer (over the 2% bar: the spec's healing pick; the hand draft stays as the alternative).", "Final race over 400 fresh seeds: capacity 0.698 ± 0.001; resto-raid-healer 0.670, opt-resto-heal-raid-heal 0.670, resto-regrowth-natures-grace 0.606.", "Independent runs agreeing in the last cycle: 1/2; two-move check: 296 one-move and 5,081 two-move builds, none better.", "The healer lab models one healer keeping a five-member group alive (heallab/tables.py); not an in-game measurement."],
+      "open_questions": ["A machine-searched Restoration build: check it against the community's healing builds at launch."],
+      "sources": [],
+      "replaces": "resto-raid-healer"
     }
   ]
 }

@@ -23,10 +23,10 @@ The Elemental leveling build the open leveling search found on 2026-11-03: every
 | **Concussion** | 4/5 | changed | Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by 4%. |
 | **Reverberation** | 3/5 | changed | Reduces the cooldown of your Shock spells by 0.6 sec. |
 | **Elemental Alacrity** | 3/3 | **NEW** | Reduces the cast time of your Lightning Bolt and Chain Lightning spells by 0.50 sec. |
-| **Call of Flame** | 2/3 | changed | Increases the damage done by your Fire Totems and by your Flame Shock and Fire Nova spells by 10%, as well as increases the duration of your Flame Shock spell by 6 sec. |
+| **Call of Flame** | 3/3 | changed | Increases the damage done by your Fire Totems and by your Flame Shock and Fire Nova spells by 15%, as well as increases the duration of your Flame Shock spell by 9 sec. |
 | **Elemental Focus** | 1/1 | moved | Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Eye of the Storm** | 3/3 | changed | Gives your Lightning Bolt and Chain Lightning spells a 70% chance to not lose casting time when you take damage. |
-| **Elemental Reach** | 2/2 | **NEW** | Increases the range of your Lightning Bolt, Chain Lightning, and Fire Nova spells by 6 yards. |
+| **Elemental Reach** | 1/2 | **NEW** | Increases the range of your Lightning Bolt, Chain Lightning, and Fire Nova spells by 3 yards. |
 | **Call of Thunder** | 1/1 | changed | Increases critical strike chance of Lightning Bolt and Chain Lightning by 5%. |
 | **Lightning Overload** | 3/3 | **NEW** | Gives your Lightning Bolt and Chain Lightning spells a 30% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat. |
 | **Elemental Fury** | 5/5 | changed | Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 100%. |
@@ -36,8 +36,8 @@ The Elemental leveling build the open leveling search found on 2026-11-03: every
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Thundering Strikes** | 5/5 | changed | Improves your chance to get a critical strike with all spells and attacks by 5%. |
-| **Ancestral Knowledge** | 2/5 | changed | Increases your Intellect by 4%. |
 | **Mental Dexterity** | 3/3 | **NEW** | Increases your Attack Power by an amount equal to 150% of your Intellect. |
+| **Improved Lightning Shield** | 2/3 | unchanged | Increases the damage done by your Lightning Shield orbs by 10%. |
 | **Shamanistic Focus** | 1/1 | **NEW** | Reduces the mana cost of your Shock and Lightning Shield spells by 45%. |
 
 ### Restoration (8)
@@ -54,7 +54,7 @@ The Elemental leveling build the open leveling search found on 2026-11-03: every
 | 10-14 | Restoration | Tidal Focus | 5 | 0/0/5 |
 | 15-17 | Restoration | Mindfulness | 3 | 0/0/8 |
 | 18-22 | Enhancement | Thundering Strikes | 5 | 0/5/8 |
-| 23-24 | Enhancement | Ancestral Knowledge | 2 | 0/7/8 |
+| 23-24 | Enhancement | Improved Lightning Shield | 2 | 0/7/8 |
 | 25-27 | Enhancement | Mental Dexterity | 3 | 0/10/8 |
 | 28 | Enhancement | Shamanistic Focus | 1 | 0/11/8 |
 | 29-33 | Elemental | Convection | 5 | 5/11/8 |
@@ -68,7 +68,8 @@ The Elemental leveling build the open leveling search found on 2026-11-03: every
 | 50-52 | Elemental | Lightning Overload | 3 | 24/11/8 |
 | 53 | Elemental | Reverberation | 1 | 25/11/8 |
 | 54-58 | Elemental | Elemental Fury | 5 | 30/11/8 |
-| 59-60 | Elemental | Elemental Reach | 2 | 32/11/8 |
+| 59 | Elemental | Elemental Reach | 1 | 31/11/8 |
+| 60 | Elemental | Call of Flame | 1 | 32/11/8 |
 
 ## Core talents (priority order)
 
@@ -87,6 +88,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
+- 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Elemental Reach to Call of Flame at 60 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Ancestral Knowledge to Improved Lightning Shield at 24 (gate: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Ancestral Knowledge to Improved Lightning Shield at 23 (gate: -0.3% seed 3, -0.1% seed 4, level-weighted time per kill).
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 28.99; elemental-open-leveling 29.57. The search simulated 26,225 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 

@@ -4,7 +4,7 @@
 
 What an Arcane mage presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Arcane levels on **Arcane Missiles**, a channel you keep going even when the mob is on you. From 20 two **Arcane Blast** casts on the walk-in make every spell hit harder, and from 25 **Arcane Wrath** opens the pull. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 30/0/21 ([open the talent tree](https://talentsforever.com/mage/60/05100520310031153--2323013031200001-12)), the one on the [Arcane leveling page](arcane.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 31/0/20 ([open the talent tree](https://talentsforever.com/mage/60/051005203100311531--2323022021003-12)), the one on the [Arcane leveling page](arcane.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -18,7 +18,8 @@ What an Arcane mage presses from level 1 to 60, stage by stage, as the trainer a
 | 20-24 | **Arcane Blast** (talent): two casts on the walk-in add spell damage to all your spells. Free, fast Missiles arrive at 21. |
 | 25-29 | **Arcane Wrath** (talent): a big 3.5-second cast that opens each pull and goes out again whenever it fits. **Counterspell** for casters. |
 | 30-49 | **Presence of Mind** (talent): every 3 minutes the opening **Arcane Wrath** goes out instantly. **Ice Armor** replaces Frost Armor. |
-| 50-60 | **Ice Lance** (talent): an instant that deals four times its damage to a frozen mob, after every **Frost Nova**. |
+| 50-58 | **Ice Lance** (talent): an instant that deals four times its damage to a frozen mob, after every **Frost Nova**. |
+| 59-60 | **Arcane Power** (talent): every 3 minutes, 15 seconds in which your spells deal 30% more damage and cost 30% more mana. |
 
 ## Keybinds by level
 
@@ -26,39 +27,39 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Action bar 1: the fight**
 
-| Key | Its job | 1-3 | 4-5 | 6-7 | 8-9 | 10-19 | 20-24 | 25-29 | 30-49 | 50-60 |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Q | Your main attack, the key you press most | **Fireball** | **Frostbolt** | Frostbolt | **Arcane Missiles** | Arcane Missiles | Arcane Missiles | Arcane Missiles | Arcane Missiles | Arcane Missiles |
-| E | Control: stop the mob at your feet | — | — | — | — | **Frost Nova** | Frost Nova | Frost Nova | Frost Nova | Frost Nova |
-| R | The big hit into a freeze | — | — | — | — | — | — | — | — | **Ice Lance** |
-| F | Escape, like Flash | — | — | — | — | — | **Blink** | Blink | Blink | Blink |
-| Mouse 5 | Thumb reaction: the instant | — | — | **Fire Blast** | Fire Blast | Fire Blast | Fire Blast | Fire Blast | Fire Blast | Fire Blast |
-| Mouse 4 | Thumb reaction: the interrupt | — | — | — | — | — | **Counterspell** from 24 | Counterspell | Counterspell | Counterspell |
-| 1 | The stacks on the walk-in | — | — | — | — | — | **Arcane Blast** | Arcane Blast | Arcane Blast | Arcane Blast |
-| 2 | A second mob | — | — | — | **Polymorph** | Polymorph | Polymorph | Polymorph | Polymorph | Polymorph |
-| 3 | Emergency | — | — | — | — | — | **Mana Shield** | Mana Shield | Mana Shield | Mana Shield |
-| 4 | Mana back between fights | — | — | — | — | — | **Evocation** | Evocation | Evocation | Evocation |
-| C | A mob on you under a fifth of its health, and packs | — | — | — | — | — | — | **Cone of Cold** from 26 | Cone of Cold | Cone of Cold |
-| Middle mouse | Finisher, once you own a wand | **Wand** | Wand | Wand | Wand | Wand | Wand | Wand | Wand | Wand |
+| Key | Its job | 1-3 | 4-5 | 6-7 | 8-9 | 10-19 | 20-24 | 25-29 | 30-49 | 50-58 | 59-60 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Q | Your main attack, the key you press most | **Fireball** | **Frostbolt** | Frostbolt | **Arcane Missiles** | Arcane Missiles | Arcane Missiles | Arcane Missiles | Arcane Missiles | Arcane Missiles | Arcane Missiles |
+| E | Control: stop the mob at your feet | — | — | — | — | **Frost Nova** | Frost Nova | Frost Nova | Frost Nova | Frost Nova | Frost Nova |
+| R | The big hit into a freeze | — | — | — | — | — | — | — | — | **Ice Lance** | Ice Lance |
+| F | Escape, like Flash | — | — | — | — | — | **Blink** | Blink | Blink | Blink | Blink |
+| Mouse 5 | Thumb reaction: the instant | — | — | **Fire Blast** | Fire Blast | Fire Blast | Fire Blast | Fire Blast | Fire Blast | Fire Blast | Fire Blast |
+| Mouse 4 | Thumb reaction: the interrupt | — | — | — | — | — | **Counterspell** from 24 | Counterspell | Counterspell | Counterspell | Counterspell |
+| 1 | The stacks on the walk-in | — | — | — | — | — | **Arcane Blast** | Arcane Blast | Arcane Blast | Arcane Blast | Arcane Blast |
+| 2 | A second mob | — | — | — | **Polymorph** | Polymorph | Polymorph | Polymorph | Polymorph | Polymorph | Polymorph |
+| 3 | Emergency | — | — | — | — | — | **Mana Shield** | Mana Shield | Mana Shield | Mana Shield | Mana Shield |
+| 4 | Mana back between fights | — | — | — | — | — | **Evocation** | Evocation | Evocation | Evocation | Evocation |
+| C | A mob on you under a fifth of its health, and packs | — | — | — | — | — | — | **Cone of Cold** from 26 | Cone of Cold | Cone of Cold | Cone of Cold |
+| Middle mouse | Finisher, once you own a wand | **Wand** | Wand | Wand | Wand | Wand | Wand | Wand | Wand | Wand | Wand |
 
 **Action bar 2: the same keys with Shift (packs, wards, emergencies)**
 
-| Key | Its job | 1-3 | 4-5 | 6-7 | 8-9 | 10-19 | 20-24 | 25-29 | 30-49 | 50-60 |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Shift+Q | The opener: Arcane Wrath, with Presence of Mind from 30 | — | — | — | — | — | — | **Arcane Wrath** | **Arcane Wrath (macro)** | Arcane Wrath (macro) |
-| Shift+E | Packs: the blast around you | — | — | — | — | **Arcane Explosion** from 14 | Arcane Explosion | Arcane Explosion | Arcane Explosion | Arcane Explosion |
-| Shift+R | Packs: the big channel | — | — | — | — | — | **Blizzard** | Blizzard | Blizzard | Blizzard |
-| Shift+F | Free | — | — | — | — | — | — | — | — | — |
-| Shift+Mouse 5 | Absorb a fire caster's spells | — | — | — | — | — | **Fire Ward** | Fire Ward | Fire Ward | Fire Ward |
-| Shift+Mouse 4 | Absorb a frost caster's spells | — | — | — | — | — | **Frost Ward** from 22 | Frost Ward | Frost Ward | Frost Ward |
-| Shift+1 | Free | — | — | — | — | — | — | — | — | — |
-| Shift+2 | Free | — | — | — | — | — | — | — | — | — |
-| Shift+3 | Lift a curse | — | — | — | — | **Remove Lesser Curse** from 18 | Remove Lesser Curse | Remove Lesser Curse | Remove Lesser Curse | Remove Lesser Curse |
-| Shift+4 | Free | — | — | — | — | — | — | — | — | — |
-| Shift+C | A bad pull: the best healing potion in your bags (one cooldown for every potion) | **Healing potion macro** | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro |
-| Shift+X | Free | — | — | — | — | — | — | — | — | — |
+| Key | Its job | 1-3 | 4-5 | 6-7 | 8-9 | 10-19 | 20-24 | 25-29 | 30-49 | 50-58 | 59-60 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Shift+Q | The opener: Arcane Wrath, with Presence of Mind from 30 | — | — | — | — | — | — | **Arcane Wrath** | **Arcane Wrath (macro)** | Arcane Wrath (macro) | Arcane Wrath (macro) |
+| Shift+E | Packs: the blast around you | — | — | — | — | **Arcane Explosion** from 14 | Arcane Explosion | Arcane Explosion | Arcane Explosion | Arcane Explosion | Arcane Explosion |
+| Shift+R | Packs: the big channel | — | — | — | — | — | **Blizzard** | Blizzard | Blizzard | Blizzard | Blizzard |
+| Shift+F | Free | — | — | — | — | — | — | — | — | — | — |
+| Shift+Mouse 5 | Absorb a fire caster's spells | — | — | — | — | — | **Fire Ward** | Fire Ward | Fire Ward | Fire Ward | Fire Ward |
+| Shift+Mouse 4 | Absorb a frost caster's spells | — | — | — | — | — | **Frost Ward** from 22 | Frost Ward | Frost Ward | Frost Ward | Frost Ward |
+| Shift+1 | The pull's damage cooldown | — | — | — | — | — | — | — | — | — | **Arcane Power** |
+| Shift+2 | Free | — | — | — | — | — | — | — | — | — | — |
+| Shift+3 | Lift a curse | — | — | — | — | **Remove Lesser Curse** from 18 | Remove Lesser Curse | Remove Lesser Curse | Remove Lesser Curse | Remove Lesser Curse | Remove Lesser Curse |
+| Shift+4 | Free | — | — | — | — | — | — | — | — | — | — |
+| Shift+C | A bad pull: the best healing potion in your bags (one cooldown for every potion) | **Healing potion macro** | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro |
+| Shift+X | Free | — | — | — | — | — | — | — | — | — | — |
 
-- The [Frost guide](frost-by-level.md)'s keys, with three changes for Arcane: **Arcane Missiles** takes Q at 8 (it is the spell you press most, and **Frostbolt** leaves the bar), **Arcane Blast** goes on 1, where the other mage guides keep the free Missiles, and **Arcane Wrath** on Shift+Q, where they keep the **Presence of Mind** macro.
+- The [Frost guide](frost-by-level.md)'s keys, with four changes for Arcane: **Arcane Missiles** takes Q at 8 (it is the spell you press most, and **Frostbolt** leaves the bar), **Arcane Blast** goes on 1, where the other mage guides keep the free Missiles, **Arcane Wrath** on Shift+Q, where they keep the **Presence of Mind** macro, and **Arcane Power** on Shift+1 at 59.
 - R waits for **Ice Lance** at 50: it keeps the job it has in every mage guide, the hit into a freeze.
 - Levels 4 and 8 are the swaps on Q: **Frostbolt** replaces **Fireball**, then **Arcane Missiles** replaces **Frostbolt**.
 - The Shift+Q macro from 30, one line each: `#showtooltip Arcane Wrath`, `/cast Presence of Mind`, `/cast Arcane Wrath`. **Presence of Mind** is off the global cooldown, so one press fires both; while it is on cooldown the second line still casts **Arcane Wrath**.
@@ -249,17 +250,17 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Presence of Mind** (30) makes your next cast instant; the fight lab spends it on the opening **Arcane Wrath**.
 - **Ice Armor** (30) replaces **Frost Armor** as your armor spell.
 - **Arcane Mind** (32-34, 38-39) adds Intellect and bigger Arcane crits, **Arcane Instability** (35-37) damage and crit.
-- From 40 the last 21 points go to Frost: **Precision** (40-41) for hit, then **Improved Frostbolt** (42-44, which this list never uses: it casts no **Frostbolt**), **Ice Shards** (45-47), **Improved Frost Nova** (48) and **Frost Warding** (49). Nothing new to press until 50; **Frostfire Bolt** (40) is not part of this list.
+- From 40 the points go to Frost, all but **Arcane Power** at 59: **Precision** (40-41) for hit, then **Improved Frostbolt** (42-44, which this list never uses: it casts no **Frostbolt**), **Ice Shards** (45-47), **Improved Frost Nova** (48) and **Frost Warding** (49). Nothing new to press until 50; **Frostfire Bolt** (40) is not part of this list.
 
 *Fight lab, seconds per kill: 33 at level 30, 32 at level 40, 32 at level 49. Presses per kill at level 30: Arcane Missiles 1.9, Arcane Blast 1.8, Arcane Wrath 0.8, Frost Nova 0.7, Fire Blast 0.6, Counterspell 0.2.*
 
-## Levels 50-60: Ice Lance into the freeze
+## Levels 50-58: Ice Lance into the freeze
 
 **The trainer teaches:** Arcane Brilliance (56), Conjure Mana Ruby (58).
 
-**New ranks to buy:** Arcane Blast at 50, 60; Arcane Explosion at 54; Arcane Missiles at 56; Arcane Wrath at 60; Blizzard at 52, 60; Cone of Cold at 50, 58; Fire Blast at 54; Fire Ward at 50, 60; Frost Nova at 54; Frost Ward at 52, 60; Ice Lance at 56; Mana Shield at 52, 60; Polymorph at 60.
+**New ranks to buy:** Arcane Blast at 50; Arcane Explosion at 54; Arcane Missiles at 56; Blizzard at 52; Cone of Cold at 50, 58; Fire Blast at 54; Fire Ward at 50; Frost Nova at 54; Frost Ward at 52; Ice Lance at 56; Mana Shield at 52.
 
-**Talents:** 50 Ice Lance, 51 Frost Warding, 52-54 Improved Blizzard, 55-56 Arctic Reach, 57-59 Permafrost, 60 Fingers of Frost.
+**Talents:** 50 Ice Lance, 51 Frost Warding, 52-53 Improved Blizzard, 54 Improved Frost Nova, 55-56 Shatter, 57-58 Permafrost.
 
 **Keys to set:** R = Ice Lance.
 
@@ -278,10 +279,39 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.
 
-- **Improved Blizzard** (52-54) only matters in packs. **Arctic Reach** (55-56) widens **Frost Nova**, **Permafrost** (57-59) makes your chills last longer.
-- **Fingers of Frost** (60): a chill (your armor slows a mob that hits you) can make your next 2 spells count as cast on a frozen mob. **Ice Lance** then hits as hard as into a **Frost Nova**.
+- **Frost Warding** (51) gets its second point. **Improved Blizzard** (52-53) only matters in packs. **Improved Frost Nova** (54) gets its second point: **Frost Nova** comes back 4 seconds sooner.
+- **Shatter** (55-56): your spells crit 33% more often on a frozen mob, so the **Ice Lance** into a **Frost Nova** crits far more often. **Permafrost** (57-58) makes your chills last longer.
 
-*Fight lab, seconds per kill: 30 at level 50, 29 at level 60. Presses per kill at level 50: Arcane Blast 1.8, Arcane Missiles 1.6, Frost Nova 0.7, Ice Lance 0.7, Arcane Wrath 0.5, Fire Blast 0.5, Counterspell 0.1.*
+*Fight lab, seconds per kill: 30 at level 50, 28 at level 58. Presses per kill at level 50: Arcane Blast 1.8, Arcane Missiles 1.6, Frost Nova 0.7, Ice Lance 0.7, Arcane Wrath 0.5, Fire Blast 0.5, Counterspell 0.1.*
+
+## Levels 59-60: Arcane Power on the pull
+
+**New ranks to buy:** Arcane Blast at 60; Arcane Wrath at 60; Blizzard at 60; Fire Ward at 60; Frost Ward at 60; Mana Shield at 60; Polymorph at 60.
+
+**Talents:** 59 Arcane Power, 60 Shatter.
+
+**Keys to set:** Shift+1 = Arcane Power.
+
+**Your keys in this stage:** Q Arcane Missiles, E Frost Nova, R Ice Lance, F Blink, Mouse 5 Fire Blast, Mouse 4 Counterspell, 1 Arcane Blast, 3 Mana Shield, Shift+Q Arcane Wrath, Shift+1 Arcane Power.
+
+**What to press**, top to bottom:
+
+1. **Counterspell** a mob that starts casting.
+2. **Arcane Power** at the pull when it is ready and you have more than half your mana.
+3. Open with **Arcane Wrath**: the Shift+Q macro makes it instant whenever Presence of Mind is ready; without it, only when its cast will end before the mob reaches you.
+4. **Arcane Blast** twice while the mob walks in, each only if its cast ends before the mob reaches you and it costs no more than a quarter of the mana you have left. Not on a mob that is almost dead.
+5. **Arcane Missiles** after your two stacks, and whenever nothing else applies. When the free Missiles of **Missile Barrage** light up, cast them at once after your stacks, or at once if the mob is on you.
+6. **Arcane Wrath** again whenever it is ready and its cast will end before the mob reaches you, or while the mob stands frozen.
+7. **Frost Nova** when the mob reaches you, then step back, and **Ice Lance** it while it stands frozen. Skip the Nova on a mob that is almost dead.
+8. With **Frost Nova** on cooldown, keep channeling while it hits you.
+9. **Fire Blast** or an **Ice Lance** when it will kill the mob.
+
+**If the fight goes wrong:** Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.
+
+- **Arcane Power** (59) goes on Shift+1. The fight lab uses it at the pull, next to **Presence of Mind**, whenever it is ready and you have more than half your mana.
+- **Shatter** (60) gets its third point: 50% more crit on a frozen mob.
+
+*Fight lab, seconds per kill: 28 at level 59, 28 at level 60. Presses per kill at level 59: Arcane Blast 1.8, Arcane Missiles 1.4, Frost Nova 0.7, Ice Lance 0.7, Fire Blast 0.4, Arcane Wrath 0.4, Counterspell 0.1.*
 
 ## Between fights
 

@@ -1713,14 +1713,13 @@
           ["Hack and Slash", 2]
         ],
         "Subtlety": [
-          ["Setup", 1],
+          ["Setup", 3],
           ["Opportunity", 5],
           ["Dirty Deeds", 1],
           ["Improved Ambush", 3],
           ["Initiative", 3],
           ["Premeditation", 1],
           ["Serrated Blades", 3],
-          ["Elusiveness", 2],
           ["Ghostly Strike", 1],
           ["Hemorrhage", 1]
         ]
@@ -1750,7 +1749,7 @@
         {"levels": "52-53", "tree": "Subtlety", "talent": "Initiative", "points": 2},
         {"levels": "54-55", "tree": "Combat", "talent": "Dual Wield Specialization", "points": 2},
         {"levels": "56-57", "tree": "Combat", "talent": "Hack and Slash", "points": 2},
-        {"levels": "58-59", "tree": "Subtlety", "talent": "Elusiveness", "points": 2},
+        {"levels": "58-59", "tree": "Subtlety", "talent": "Setup", "points": 2},
         {"levels": "60", "tree": "Subtlety", "talent": "Hemorrhage", "points": 1}
       ],
       "core": [
@@ -1764,7 +1763,7 @@
         {"talent": "Hemorrhage", "why": "+0.9 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 20.89; subtlety-open-leveling 22.41, subtlety-leveling 23.33. The search simulated 54,137 builds.", "The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Elusiveness to Setup at 59 (gate: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Elusiveness to Setup at 58 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 20.89; subtlety-open-leveling 22.41, subtlety-leveling 23.33. The search simulated 54,137 builds.", "The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Combat-Subtlety leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/rogue", "https://talentsforever.com/rogue/60/023-32500300020123202-1051030313210001-7"]
     },
@@ -1865,21 +1864,20 @@
         "Combat": [
           ["Coup de Grace", 3],
           ["Efficient Strikes", 2],
-          ["Lightning Reflexes", 2],
-          ["Puncturing Wounds", 3],
+          ["Lightning Reflexes", 3],
+          ["Puncturing Wounds", 2],
           ["Precision", 3],
-          ["Improved Sprint", 1],
-          ["Composure", 1],
+          ["Composure", 2],
           ["Flawless Execution", 1],
           ["Weapon Expertise", 2],
           ["Aggression", 2]
         ],
         "Subtlety": [
           ["Setup", 3],
-          ["Master of Deception", 3],
+          ["Master of Deception", 1],
           ["Opportunity", 5],
           ["Dirty Deeds", 2],
-          ["Improved Ambush", 1],
+          ["Improved Ambush", 3],
           ["Dirty Tricks", 1],
           ["Initiative", 3],
           ["Premeditation", 1],
@@ -1895,7 +1893,8 @@
         {"levels": "10-11", "tree": "Subtlety", "talent": "Opportunity", "points": 2},
         {"levels": "12-14", "tree": "Subtlety", "talent": "Setup", "points": 3},
         {"levels": "15-16", "tree": "Subtlety", "talent": "Dirty Deeds", "points": 2},
-        {"levels": "17-19", "tree": "Subtlety", "talent": "Master of Deception", "points": 3},
+        {"levels": "17", "tree": "Subtlety", "talent": "Master of Deception", "points": 1},
+        {"levels": "18-19", "tree": "Subtlety", "talent": "Improved Ambush", "points": 2},
         {"levels": "20-22", "tree": "Subtlety", "talent": "Serrated Blades", "points": 3},
         {"levels": "23", "tree": "Subtlety", "talent": "Initiative", "points": 1},
         {"levels": "24", "tree": "Subtlety", "talent": "Premeditation", "points": 1},
@@ -1913,9 +1912,9 @@
         {"levels": "44-45", "tree": "Combat", "talent": "Lightning Reflexes", "points": 2},
         {"levels": "46-48", "tree": "Combat", "talent": "Precision", "points": 3},
         {"levels": "49-50", "tree": "Combat", "talent": "Efficient Strikes", "points": 2},
-        {"levels": "51-53", "tree": "Combat", "talent": "Puncturing Wounds", "points": 3},
-        {"levels": "54", "tree": "Combat", "talent": "Improved Sprint", "points": 1},
-        {"levels": "55", "tree": "Combat", "talent": "Composure", "points": 1},
+        {"levels": "51-52", "tree": "Combat", "talent": "Puncturing Wounds", "points": 2},
+        {"levels": "53", "tree": "Combat", "talent": "Lightning Reflexes", "points": 1},
+        {"levels": "54-55", "tree": "Combat", "talent": "Composure", "points": 2},
         {"levels": "56", "tree": "Combat", "talent": "Flawless Execution", "points": 1},
         {"levels": "57-58", "tree": "Combat", "talent": "Weapon Expertise", "points": 2},
         {"levels": "59-60", "tree": "Combat", "talent": "Aggression", "points": 2}
@@ -1931,7 +1930,7 @@
         {"talent": "Weapon Expertise", "why": "+1.0 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 22.41; subtlety-leveling 23.33. The search simulated 32,176 builds.", "The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Master of Deception to Improved Ambush at 19 (gate: -0.5% seed 3, -0.5% seed 4, level-weighted time per kill); Master of Deception to Improved Ambush at 18 (gate: -0.7% seed 3, -0.8% seed 4, level-weighted time per kill); Improved Sprint to Composure at 54 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Puncturing Wounds to Lightning Reflexes at 53 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 22.41; subtlety-leveling 23.33. The search simulated 32,176 builds.", "The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Subtlety leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/rogue", "https://talentsforever.com/rogue/60/-32230310010122-335201131301001151-7"]
     }

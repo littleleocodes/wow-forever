@@ -1,10 +1,10 @@
-# Arcane — Leveling (open talent search) — 30/0/21
+# Arcane — Leveling (open talent search) — 31/0/20
 
 *[Mage](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 30/0/21 (Arcane / Fire / Frost) |
+| **Build** | 31/0/20 (Arcane / Fire / Frost) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -15,7 +15,7 @@ The Arcane leveling build the open leveling search found on 2026-11-06: every le
 
 ## Point allocation
 
-### Arcane (30)
+### Arcane (31)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -30,12 +30,13 @@ The Arcane leveling build the open leveling search found on 2026-11-06: every le
 | **Presence of Mind** | 1/1 | unchanged | When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell. |
 | **Arcane Mind** | 5/5 | changed | Increases your Intellect by 10% and increases the critical strike damage bonus of your Arcane spells by 100%. |
 | **Arcane Instability** | 3/3 | changed | Increases the damage done by your spells by 3% and your critical strike chance by 3%. |
+| **Arcane Power** | 1/1 | changed | For the next 15 sec, your spells deal 30% more damage while costing 30% more mana to cast. |
 
 ### Fire (0)
 
 *No points.*
 
-### Frost (21)
+### Frost (20)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -43,12 +44,11 @@ The Arcane leveling build the open leveling search found on 2026-11-06: every le
 | **Improved Frostbolt** | 3/5 | changed | Reduces the casting time of your Frostbolt spell by 0.3 sec. |
 | **Precision** | 2/3 | changed | Improves your chance to hit with all spells by 4%. |
 | **Ice Shards** | 3/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 60%. |
-| **Improved Frost Nova** | 1/2 | unchanged | Reduces the cooldown of your Frost Nova spell by 2 sec. |
-| **Permafrost** | 3/3 | changed | Increases the duration of your Chill effects by 33% and reduces the target's speed by an additional 10%. |
-| **Improved Blizzard** | 3/3 | changed | Adds a Chill effect to your Blizzard spell. This effect lowers the target's movement speed by 40% for 1.5 sec. |
+| **Improved Frost Nova** | 2/2 | unchanged | Reduces the cooldown of your Frost Nova spell by 4 sec. |
+| **Permafrost** | 2/3 | changed | Increases the duration of your Chill effects by 22% and reduces the target's speed by an additional 7%. |
+| **Improved Blizzard** | 2/3 | changed | Adds a Chill effect to your Blizzard spell. This effect lowers the target's movement speed by 25% for 1.5 sec. |
 | **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets. |
-| **Arctic Reach** | 2/2 | unchanged | Increases the range of your Frostbolt, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%. |
-| **Fingers of Frost** | 1/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 1 spell cast as if the target were Frozen. Lasts 15 sec. |
+| **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 
 ## Leveling order
 
@@ -76,10 +76,12 @@ The Arcane leveling build the open leveling search found on 2026-11-06: every le
 | 49 | Frost | Frost Warding | 1 | 30/0/10 |
 | 50 | Frost | Ice Lance | 1 | 30/0/11 |
 | 51 | Frost | Frost Warding | 1 | 30/0/12 |
-| 52-54 | Frost | Improved Blizzard | 3 | 30/0/15 |
-| 55-56 | Frost | Arctic Reach | 2 | 30/0/17 |
-| 57-59 | Frost | Permafrost | 3 | 30/0/20 |
-| 60 | Frost | Fingers of Frost | 1 | 30/0/21 |
+| 52-53 | Frost | Improved Blizzard | 2 | 30/0/14 |
+| 54 | Frost | Improved Frost Nova | 1 | 30/0/15 |
+| 55-56 | Frost | Shatter | 2 | 30/0/17 |
+| 57-58 | Frost | Permafrost | 2 | 30/0/19 |
+| 59 | Arcane | Arcane Power | 1 | 31/0/19 |
+| 60 | Frost | Shatter | 1 | 31/0/20 |
 
 ## Core talents (priority order)
 
@@ -98,6 +100,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
+- 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Fingers of Frost to Shatter at 60 (tie-break: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Permafrost to Arcane Power at 59 (tie-break: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Arctic Reach to Shatter at 56 (tie-break: -0.2% seed 3, -0.3% seed 4, level-weighted time per kill); Arctic Reach to Shatter at 55 (measured: -0.4% seed 3, -0.4% seed 4, level-weighted time per kill); Improved Blizzard to Improved Frost Nova at 54 (gate: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill).
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 31.16; arcane-open-leveling 31.12, arcane-leveling 38.63. The search simulated 53,708 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.

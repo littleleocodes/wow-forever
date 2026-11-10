@@ -8,13 +8,13 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Balance | page | opt-balance-dps-leveling-st (36/0/15) | balance-dps | - | Starfire 3.62, Moonfire 1.47 | 97% (min 70%) | 38.0 | OK |
+| Balance | page | opt-balance-dps-leveling-st (36/0/15) | balance-dps | - | Starfire 3.60, Moonfire 1.45 | 97% (min 70%) | 37.6 | OK |
 | Balance | slot | balance-open-leveling (36/0/15) | balance-dps | - | Starfire 3.62, Moonfire 1.44 | 97% (min 70%) | 37.5 | OK |
 | Feral Combat | page | feral-combat-open-leveling (11/29/11) | feral-cat-dps | - | Claw 2.71, Ferocious Bite 1.00 | 97% (min 80%) | 23.0 | OK |
 | Feral Combat | slot | opt-feral-cat-dps-solo-60 (9/30/12) | feral-cat-dps | - | Claw 2.68, Ferocious Bite 0.99 | 97% (min 80%) | 23.1 | OK |
 | Feral Combat | slot | opt-feral-cat-dps-leveling-st (9/30/12) | feral-cat-dps | - | Claw 2.67, Ferocious Bite 0.99 | 97% (min 80%) | 23.2 | OK |
 | Feral Combat | slot | leveling-feral (9/30/12) | feral-cat-dps | - | Claw 2.75, Ferocious Bite 0.99 | 97% (min 80%) | 23.2 | OK |
-| Restoration | page | restoration-leveling (12/1/38) | feral-cat-dps | - | - | - (min -) | 27.8 | no rule |
+| Restoration | page | restoration-leveling (11/0/40) | feral-cat-dps | - | - | - (min -) | 27.9 | no rule |
 
 ## Hunter
 
@@ -26,7 +26,7 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 | Marksmanship | page | marksmanship-open-leveling (21/30/0) | mm-raid | - | Aimed Shot 1.06 | 72% (min 60%) | 22.6 | OK |
 | Marksmanship | slot | opt-bm-leveling-solo-60 (20/31/0) | mm-raid | - | Aimed Shot 1.08 | 72% (min 60%) | 22.8 | OK |
 | Marksmanship | slot | opt-mm-raid-leveling-st (13/33/5) | mm-raid | - | Aimed Shot 1.07 | 74% (min 60%) | 23.2 | OK |
-| Survival | page | survival-open-leveling (5/16/30) | melee-dps | - | - | 58% (min 50%) | 21.6 | OK |
+| Survival | page | survival-open-leveling (3/16/32) | melee-dps | - | - | 53% (min 50%) | 21.3 | OK |
 | Survival | slot | opt-bm-leveling-leveling-aoe (8/12/31) | melee-dps | - | - | 57% (min 50%) | 24.6 | OK |
 | Beast-Marks | page | beast-marks-open-leveling (28/19/4) | bm-leveling | - | Aimed Shot 1.26 | 98% (min 70%) | 22.8 | OK |
 | Beast-Survival | page | beast-survival-open-leveling (22/5/24) | melee-dps | - | - | 59% (min 50%) | 21.2 | OK |
@@ -38,15 +38,15 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Arcane | page | arcane-open-leveling (30/0/21) | arcane-leveling | - | Arcane Blast 1.80 | 80% (min 50%) | 31.2 | OK |
+| Arcane | page | arcane-open-leveling (31/0/20) | arcane-leveling | - | Arcane Blast 1.80 | 76% (min 50%) | 30.7 | OK |
 | Arcane | slot | arcane-leveling (29/0/22) | arcane-leveling | - | Arcane Blast 0.00 | 67% (min 50%) | 38.6 | FAIL: lacks Arcane Blast |
-| Fire | page | fire-leveling (0/32/19) | fire-leveling | - | Fireball 0.91, Pyroblast 1.00 | 70% (min 60%) | 38.3 | OK |
+| Fire | page | fire-leveling (1/32/18) | fire-leveling | - | Fireball 1.00, Pyroblast 1.02 | 72% (min 60%) | 37.0 | OK |
 | Fire | slot | opt-fire-leveling-leveling-st (4/31/16) | fire-leveling | - | Fireball 1.29, Pyroblast 1.02 | 76% (min 60%) | 39.6 | OK |
 | Frost | page | frost-open-leveling (18/3/30) | frost-leveling | - | Frostbolt 3.27 | 89% (min 60%) | 30.5 | OK |
 | Frost | slot | leveling-frost (17/0/34) | frost-leveling | - | Frostbolt 3.16 | 90% (min 60%) | 31.6 | OK |
 | Frost | slot | opt-frost-aoe-leveling-aoe (7/3/41) | frost-leveling | - | Frostbolt 3.41 | 88% (min 60%) | 35.7 | OK |
 | Arcane-Frost | page | arcane-frost-open-leveling (23/0/28) | barrage-frost-leveling | - | Frostbolt 2.60, Arcane Missiles 0.48 | 90% (min 60%) | 29.2 | OK |
-| Frostfire | page | frostfire-open-leveling (3/26/22) | frostfire-leveling | - | Frostfire Bolt 3.13 | 37% (min 30%) | 36.1 | OK |
+| Frostfire | page | frostfire-open-leveling (2/25/24) | frostfire-leveling | - | Frostfire Bolt 3.10 | 38% (min 30%) | 35.7 | OK |
 
 ## Paladin
 
@@ -84,15 +84,15 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 | Assassination | slot | opt-combat-swords-raid-solo-60 (33/16/2) | combat-daggers-raid | - | Mutilate 0.00 | 68% (min 60%) | 24.5 | FAIL: lacks Mutilate |
 | Combat | page | combat-open-leveling (21/30/0) | combat-swords-raid | - | - | 75% (min 70%) | 20.8 | OK |
 | Combat | slot | combat-leveling (21/30/0) | combat-swords-raid | - | - | 77% (min 70%) | 22.2 | OK |
-| Subtlety | page | subtlety-open-leveling (0/20/31) | subtlety-leveling | - | Hemorrhage 3.90, Death Mark 1.06 | 82% (min 60%) | 22.7 | OK |
+| Subtlety | page | subtlety-open-leveling (0/20/31) | subtlety-leveling | - | Hemorrhage 3.90, Death Mark 1.04 | 82% (min 60%) | 22.4 | OK |
 | Subtlety | slot | subtlety-leveling (5/16/30) | subtlety-leveling | - | Hemorrhage 0.00, Death Mark 0.00 | 74% (min 60%) | 23.5 | FAIL: lacks Hemorrhage, Death Mark |
-| Combat-Subtlety | page | combat-subtlety-open-leveling (5/25/21) | subtlety-leveling | - | Ghostly Strike 0.87 | 89% (min 60%) | 21.1 | OK |
+| Combat-Subtlety | page | combat-subtlety-open-leveling (5/25/21) | subtlety-leveling | - | Ghostly Strike 0.84 | 89% (min 60%) | 21.1 | OK |
 
 ## Shaman
 
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Elemental | page | elemental-open-leveling (32/11/8) | elemental-dps | - | Lightning Bolt 3.56 | 76% (min 60%) | 28.8 | OK |
+| Elemental | page | elemental-open-leveling (32/11/8) | elemental-dps | - | Lightning Bolt 3.51 | 75% (min 60%) | 28.7 | OK |
 | Enhancement | page | enhancement-open-leveling (12/32/7) | enhancement-dps | - | Stormstrike 2.34 | 74% (min 60%) | 25.1 | OK |
 | Enhancement | slot | leveling-enhancement (7/34/10) | enhancement-dps | - | Stormstrike 2.36 | 76% (min 60%) | 25.8 | OK |
 | Enhancement | slot | opt-enhancement-dps-leveling-st (12/31/8) | enhancement-dps | - | Stormstrike 2.40 | 82% (min 60%) | 26.6 | OK |
@@ -106,12 +106,13 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Affliction | page | affliction-open-leveling (37/14/0) | affliction-leveling | - | Corruption 1.00, Bane of Agony 1.00 | 82% (min 50%) | 36.4 | OK |
+| Affliction | page | affliction-open-leveling (39/11/1) | affliction-leveling | - | Corruption 1.00, Bane of Agony 1.00 | 83% (min 50%) | 36.3 | OK |
 | Affliction | slot | affliction-leveling (33/6/12) | affliction-leveling | - | Corruption 1.05, Bane of Agony 1.00 | 56% (min 50%) | 39.8 | OK |
-| Demonology | page | demonology-leveling (21/30/0) | demonology-leveling | - | - | 21% (min 0%) | 31.2 | OK |
-| Destruction | page | destruction-open-leveling (6/11/34) | destruction-leveling | - | - | 65% (min 60%) | 40.8 | OK |
+| Demonology | page | demonology-open-leveling (22/29/0) | demonology-leveling | - | - | 21% (min 0%) | 30.9 | OK |
+| Demonology | slot | demonology-leveling (21/30/0) | demonology-leveling | - | - | 21% (min 0%) | 31.2 | OK |
+| Destruction | page | destruction-open-leveling (6/11/34) | destruction-leveling | - | - | 62% (min 60%) | 40.4 | OK |
 | Destruction | slot | destruction-leveling (21/0/30) | destruction-leveling | - | - | 47% (min 60%) | 48.4 | FAIL: core share 47% < 60% |
-| Affliction-Demonology | page | affliction-demonology-open-leveling (27/24/0) | demonology-leveling | - | Corruption 1.06 | 72% (min 50%) | 30.6 | OK |
+| Affliction-Demonology | page | affliction-demonology-open-leveling (27/24/0) | demonology-leveling | - | Corruption 1.04 | 71% (min 50%) | 30.4 | OK |
 | Affliction-Demonology | slot | opt-affliction-leveling-solo-60 (27/24/0) | demonology-leveling | - | Corruption 1.12 | 68% (min 50%) | 32.8 | OK |
 | Affliction-Demonology | slot | opt-affliction-leveling-leveling-aoe (21/24/6) | demonology-leveling | - | Corruption 1.28 | 70% (min 50%) | 33.6 | OK |
 

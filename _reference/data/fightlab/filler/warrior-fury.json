@@ -1,0 +1,313 @@
+{
+ "class": "warrior",
+ "spec": "Fury",
+ "build": "fury-open-leveling",
+ "rotation": "fury-dw-raid",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-14",
+   "tree": "Fury",
+   "talent": "Cruelty",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Fury",
+   "talent": "Unbridled Wrath",
+   "points": 5
+  },
+  {
+   "levels": "20-24",
+   "tree": "Fury",
+   "talent": "Enrage",
+   "points": 5
+  },
+  {
+   "levels": "25",
+   "tree": "Fury",
+   "talent": "Improved Execute",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Fury",
+   "talent": "Dual Wield Specialization",
+   "points": 1
+  },
+  {
+   "levels": "27",
+   "tree": "Fury",
+   "talent": "Furious Precision",
+   "points": 1
+  },
+  {
+   "levels": "28-29",
+   "tree": "Fury",
+   "talent": "Dual Wield Specialization",
+   "points": 2
+  },
+  {
+   "levels": "30",
+   "tree": "Fury",
+   "talent": "Death Wish",
+   "points": 1
+  },
+  {
+   "levels": "31-32",
+   "tree": "Fury",
+   "talent": "Dual Wield Specialization",
+   "points": 2
+  },
+  {
+   "levels": "33-34",
+   "tree": "Fury",
+   "talent": "Furious Precision",
+   "points": 2
+  },
+  {
+   "levels": "35-37",
+   "tree": "Fury",
+   "talent": "Flurry",
+   "points": 3
+  },
+  {
+   "levels": "38-39",
+   "tree": "Fury",
+   "talent": "Blood Craze",
+   "points": 2
+  },
+  {
+   "levels": "40",
+   "tree": "Fury",
+   "talent": "Bloodthirst",
+   "points": 1
+  },
+  {
+   "levels": "41",
+   "tree": "Fury",
+   "talent": "Blood Craze",
+   "points": 1
+  },
+  {
+   "levels": "42",
+   "tree": "Fury",
+   "talent": "Gore Drinker",
+   "points": 1
+  },
+  {
+   "levels": "43-45",
+   "tree": "Arms",
+   "talent": "Improved Rend",
+   "points": 3
+  },
+  {
+   "levels": "46-47",
+   "tree": "Arms",
+   "talent": "Improved Heroic Strike",
+   "points": 2
+  },
+  {
+   "levels": "48-49",
+   "tree": "Arms",
+   "talent": "Improved Charge",
+   "points": 2
+  },
+  {
+   "levels": "50-52",
+   "tree": "Arms",
+   "talent": "Improved Tactical Mastery",
+   "points": 3
+  },
+  {
+   "levels": "53",
+   "tree": "Arms",
+   "talent": "Anger Management",
+   "points": 1
+  },
+  {
+   "levels": "54-56",
+   "tree": "Arms",
+   "talent": "Deep Wounds",
+   "points": 3
+  },
+  {
+   "levels": "57",
+   "tree": "Arms",
+   "talent": "Improved Overpower",
+   "points": 1
+  },
+  {
+   "levels": "58-59",
+   "tree": "Arms",
+   "talent": "Impale",
+   "points": 2
+  },
+  {
+   "levels": "60",
+   "tree": "Arms",
+   "talent": "Improved Overpower",
+   "points": 1
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 25.004,
+   "values_at_60": {
+    "Bloodthirst": -36.425,
+    "Gore Drinker": -1.85,
+    "Impale": -0.247,
+    "Improved Overpower": -0.535
+   },
+   "zero": []
+  }
+ ],
+ "moves": [],
+ "final_order": [
+  {
+   "levels": "10-14",
+   "tree": "Fury",
+   "talent": "Cruelty",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Fury",
+   "talent": "Unbridled Wrath",
+   "points": 5
+  },
+  {
+   "levels": "20-24",
+   "tree": "Fury",
+   "talent": "Enrage",
+   "points": 5
+  },
+  {
+   "levels": "25",
+   "tree": "Fury",
+   "talent": "Improved Execute",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Fury",
+   "talent": "Dual Wield Specialization",
+   "points": 1
+  },
+  {
+   "levels": "27",
+   "tree": "Fury",
+   "talent": "Furious Precision",
+   "points": 1
+  },
+  {
+   "levels": "28-29",
+   "tree": "Fury",
+   "talent": "Dual Wield Specialization",
+   "points": 2
+  },
+  {
+   "levels": "30",
+   "tree": "Fury",
+   "talent": "Death Wish",
+   "points": 1
+  },
+  {
+   "levels": "31-32",
+   "tree": "Fury",
+   "talent": "Dual Wield Specialization",
+   "points": 2
+  },
+  {
+   "levels": "33-34",
+   "tree": "Fury",
+   "talent": "Furious Precision",
+   "points": 2
+  },
+  {
+   "levels": "35-37",
+   "tree": "Fury",
+   "talent": "Flurry",
+   "points": 3
+  },
+  {
+   "levels": "38-39",
+   "tree": "Fury",
+   "talent": "Blood Craze",
+   "points": 2
+  },
+  {
+   "levels": "40",
+   "tree": "Fury",
+   "talent": "Bloodthirst",
+   "points": 1
+  },
+  {
+   "levels": "41",
+   "tree": "Fury",
+   "talent": "Blood Craze",
+   "points": 1
+  },
+  {
+   "levels": "42",
+   "tree": "Fury",
+   "talent": "Gore Drinker",
+   "points": 1
+  },
+  {
+   "levels": "43-45",
+   "tree": "Arms",
+   "talent": "Improved Rend",
+   "points": 3
+  },
+  {
+   "levels": "46-47",
+   "tree": "Arms",
+   "talent": "Improved Heroic Strike",
+   "points": 2
+  },
+  {
+   "levels": "48-49",
+   "tree": "Arms",
+   "talent": "Improved Charge",
+   "points": 2
+  },
+  {
+   "levels": "50-52",
+   "tree": "Arms",
+   "talent": "Improved Tactical Mastery",
+   "points": 3
+  },
+  {
+   "levels": "53",
+   "tree": "Arms",
+   "talent": "Anger Management",
+   "points": 1
+  },
+  {
+   "levels": "54-56",
+   "tree": "Arms",
+   "talent": "Deep Wounds",
+   "points": 3
+  },
+  {
+   "levels": "57",
+   "tree": "Arms",
+   "talent": "Improved Overpower",
+   "points": 1
+  },
+  {
+   "levels": "58-59",
+   "tree": "Arms",
+   "talent": "Impale",
+   "points": 2
+  },
+  {
+   "levels": "60",
+   "tree": "Arms",
+   "talent": "Improved Overpower",
+   "points": 1
+  }
+ ]
+}

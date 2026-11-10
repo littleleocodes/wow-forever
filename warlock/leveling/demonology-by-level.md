@@ -4,7 +4,7 @@
 
 What a Demonology warlock presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Demonology levels behind its demon: the Voidwalker (from 10) holds the mob, your dots and the demon's talents do the damage, and the wand fills every gap. From 27, **Searing Pain** brands the mob so the Voidwalker's hits deal extra damage. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 21/30/0 ([open the talent tree](https://talentsforever.com/warlock/60/24310020134001-020523021110031135--12)), the one on the [Demonology leveling page](demonology.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 22/29/0 ([open the talent tree](https://talentsforever.com/warlock/60/24510020133001-020523021110031134--12)), the one on the [Demonology leveling page](demonology.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -15,7 +15,7 @@ What a Demonology warlock presses from level 1 to 60, stage by stage, as the tra
 | 8-9 | **Bane of Agony** joins **Corruption**. **Fear** what reaches you: the Imp cannot hold a mob. |
 | 10-26 | **Summon Voidwalker**: it holds the mob while you dot and wand. Talent points start. |
 | 27-41 | **Demonic Brand** (talent): **Searing Pain** brands the mob, and the Voidwalker's next 2 attacks (4 at 28, 6 from 29) deal 65 to 68 extra damage each. |
-| 42-49 | **Death Coil** for a mob that reaches you while you are hurt. **Improved Corruption** (35-37) already shortens **Corruption** to 0.8 seconds. |
+| 42-49 | **Death Coil** for a mob that reaches you while you are hurt. **Improved Corruption** (35-37, 42) shortens **Corruption** to 0.4 seconds; its last rank (58) makes it instant. |
 | 50-59 | **Amplify Curse** (talent) makes the next **Bane of Agony** 50% stronger, every 3 minutes. One macro casts both. |
 | 60 | **Siphon Life** (talent): a third dot that heals you. |
 
@@ -176,19 +176,19 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** A mob on you: **Fear** it, then **Drain Life** while it runs, until the Voidwalker takes it back. Your Healthstone below 35% health.
 
 - **Soul Link** (30): click it once after every summon. 30% of the damage you take goes to the Voidwalker, and you both deal 3% more.
-- **Demonic Knowledge** (31-33) adds spell damage and **Master Demonologist** (38-42) cuts the physical damage you take, both only while the Voidwalker is out: never fight without it.
+- **Demonic Knowledge** (31-33) adds spell damage and **Master Demonologist** (38-41) cuts the physical damage you take, both only while the Voidwalker is out: never fight without it.
 - **Demonic Sacrifice** (25) is only the step to **Soul Link**: never sacrifice your tank.
 - **Searing Pain** is no finisher here: the tuned rules cast it only on a mob above a third of its health. **Banish** (28) holds a second mob if it is a demon or an elemental.
 
 *Fight lab, seconds per kill: 26 at level 27, 27 at level 30, 31 at level 40, 31 at level 41. Presses per kill at level 27: Wand 7.2, Torment 3.5, Searing Pain 1.9, Corruption 1.0, Bane of Agony 1.0.*
 
-## Levels 42-49: Death Coil; Corruption turns instant
+## Levels 42-49: Death Coil; a faster Corruption
 
 **The trainer teaches:** Death Coil (42), Paranoia (42), Soul Fire (48).
 
 **New ranks to buy:** Bane of Agony at 48; Banish at 48; Corruption at 44; Drain Life at 46; Health Funnel at 44; Life Tap at 46; Rain of Fire at 46; Searing Pain at 42; Shadow Bolt at 44; Shadow Ward at 42.
 
-**Talents:** 42 Master Demonologist, 43-44 Improved Life Tap, 45-48 Suppression, 49 Grim Reach.
+**Talents:** 42 Improved Corruption, 43-44 Improved Life Tap, 45-48 Suppression, 49 Grim Reach.
 
 **Keys to set:** F = Death Coil.
 
@@ -207,7 +207,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Howl of Terror** (40) fears every mob near you: the escape from a pull that brings friends (Shift+F).
 - **Improved Life Tap** (43-44) adds 20% to each **Life Tap**; **Suppression** (45-48) gives 5% hit and cuts your threat by 20%; **Grim Reach** (49) only widens the range of your Affliction spells.
 
-*Fight lab, seconds per kill: 31 at level 42, 33 at level 49. Presses per kill at level 42: Wand 11.1, Torment 4.5, Searing Pain 1.6, Corruption 1.0, Bane of Agony 1.0.*
+*Fight lab, seconds per kill: 31 at level 42, 32 at level 49. Presses per kill at level 42: Wand 11.1, Torment 4.5, Searing Pain 1.5, Corruption 1.1, Bane of Agony 1.0.*
 
 ## Levels 50-59: Amplify Curse
 
@@ -215,7 +215,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Bane of Agony at 58; Corruption at 54; Death Coil at 50, 58; Drain Life at 54; Drain Soul at 52; Fear at 56; Health Funnel at 52; Howl of Terror at 54; Immolate at 50; Life Tap at 56; Rain of Fire at 58; Searing Pain at 50, 58; Shadow Bolt at 52; Shadow Ward at 52; Torment at 50.
 
-**Talents:** 50 Amplify Curse, 51-52 Improved Bane of Agony, 53-54 Pandemic, 55-58 Malevolence, 59 Pandemic.
+**Talents:** 50 Amplify Curse, 51-52 Improved Bane of Agony, 53-54 Pandemic, 55-57 Malevolence, 58 Improved Corruption, 59 Pandemic.
 
 **Keys to set:** 1 = Bane of Agony, Amplify Curse macro.
 
@@ -231,9 +231,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** A mob on you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs. Your Healthstone below 35% health.
 
 - **Amplify Curse** (50): the next **Bane of Agony** is 50% stronger, every 3 minutes. It is off the global cooldown, so the macro on key 1 casts it and the bane in one press when it is ready, and the plain bane otherwise.
-- **Improved Bane of Agony** (51-52), **Pandemic** (53-54, 59) and **Malevolence** (55-58) make your dots hit harder and crit more often and harder.
+- **Improved Bane of Agony** (51-52), **Pandemic** (53-54, 59) and **Malevolence** (55-57) make your dots hit harder and crit more often and harder. **Improved Corruption** (58) makes **Corruption** instant.
 
-*Fight lab, seconds per kill: 33 at level 50, 34 at level 59. Presses per kill at level 50: Wand 12.6, Torment 4.8, Searing Pain 1.5, Corruption 1.0, Bane of Agony 1.0.*
+*Fight lab, seconds per kill: 33 at level 50, 34 at level 59. Presses per kill at level 50: Wand 12.4, Torment 4.8, Searing Pain 1.5, Corruption 1.1, Bane of Agony 1.0.*
 
 ## Level 60: Siphon Life
 
@@ -259,7 +259,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - The third dot costs mana: the fight lab casts **Life Tap** in about one fight in three at 60.
 
-*Fight lab, seconds per kill: 33 at level 60. Presses per kill at level 60: Wand 11.7, Torment 4.8, Searing Pain 1.1, Corruption 1.0, Bane of Agony 1.0, Siphon Life 1.0, Life Tap 0.3.*
+*Fight lab, seconds per kill: 33 at level 60. Presses per kill at level 60: Wand 11.8, Torment 4.8, Corruption 1.1, Bane of Agony 1.0, Siphon Life 1.0, Searing Pain 0.9, Life Tap 0.3.*
 
 ## Between fights
 

@@ -870,7 +870,7 @@
      "if_hurt": "Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather.",
      "notes": [
       "**Dirty Deeds** (15-16) makes **Garrote** 10 energy cheaper a point and lets it go from the front.",
-      "**Expose Armor** (14) is never cast. **Master of Deception** (17-19) makes you harder to spot in **Stealth**; the fight lab does not model it."
+      "**Expose Armor** (14) is never cast. **Master of Deception** (17) makes you harder to spot in **Stealth**; the fight lab does not model it."
      ],
      "unsimulated": [
       "Stealth"
@@ -889,7 +889,7 @@
      ],
      "if_hurt": "Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather.",
      "notes": [
-      "**Ambush** needs a dagger in your main hand and you behind the mob.",
+      "**Ambush** needs a dagger in your main hand and you behind the mob. **Improved Ambush** (18-19) raises its crit chance.",
       "**Poised** (18) makes the opener 10 energy cheaper.",
       "**Rupture** (20) is never cast: the points are worth more as **Eviscerate**.",
       "**Serrated Blades** (20-22): your attacks ignore part of the mob's armor.",
@@ -987,7 +987,7 @@
       "**Deadly Poison** (30) on your off hand, **Instant Poison** on your main hand: buffs you reapply between fights, no key.",
       "**Kidney Shot** (30): off. The tuned rotation never casts it.",
       "**Preparation** (31): when you need **Evasion** and it is on cooldown, Preparation resets it (and your other cooldowns). The fight lab never needed it.",
-      "**Improved Ambush** (33) is crit on the odd **Ambush**; **Dirty Tricks** (34) makes **Sap** and **Blind** cheaper. **Blind** (34) handles a second mob that joins mid-fight."
+      "The last point of **Improved Ambush** (33) is crit on the odd **Ambush**; **Dirty Tricks** (34) makes **Sap** and **Blind** cheaper. **Blind** (34) handles a second mob that joins mid-fight."
      ],
      "unsimulated": [
       "Stealth"
@@ -1034,7 +1034,7 @@
      "notes": [
       "**Death Mark** stores more with more combo points, but the tuned rules found the early mark faster than waiting for 5. How much it stores is not in the tooltip: the fight lab assumes a rate, so treat this line as a best guess.",
       "**Coup de Grace** (41-43) makes **Eviscerate** and **Death Mark** stronger. **Lightning Reflexes** (44-45) is dodge, and with **Setup** a dodge can be a combo point. **Precision** (46-48) is hit; **Efficient Strikes** (49-50) makes **Hemorrhage** cheaper.",
-      "**Puncturing Wounds** (51-53) and **Improved Sprint** (54) are tier points on the way to **Weapon Expertise** (57-58) and **Aggression** (59-60): this list casts no **Backstab** or **Mutilate**. **Composure** (55) and **Flawless Execution** (56) make the opener and **Eviscerate** cheaper."
+      "**Puncturing Wounds** (51-52) is two tier points on the way to **Weapon Expertise** (57-58) and **Aggression** (59-60): this list casts no **Backstab** or **Mutilate**. **Lightning Reflexes** (53) takes its third point: more dodge. **Composure** (54-55) and **Flawless Execution** (56) make the opener and **Eviscerate** cheaper."
      ],
      "unsimulated": [
       "Stealth"
@@ -1483,7 +1483,7 @@
      "if_hurt": "Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather. **Vanish** is the emergency exit.",
      "notes": [
       "**Composure** (44-45) makes the opener cheaper, **Flawless Execution** (46) makes **Eviscerate** cheaper, **Weapon Expertise** (47-48) cuts dodges and parries, **Aggression** (49-51) makes **Sinister Strike** and **Eviscerate** hit harder.",
-      "**Initiative** (52-53) makes the opener's second combo point certain. **Dual Wield Specialization** (54-55) and **Hack and Slash** (56-57) are off-hand damage and dagger crit. **Elusiveness** (58-59) shortens the cooldowns of **Vanish** and **Blind**."
+      "**Initiative** (52-53) makes the opener's second combo point certain. **Dual Wield Specialization** (54-55) and **Hack and Slash** (56-57) are off-hand damage and dagger crit. **Setup** (58-59) takes its last two points: a dodge adds a combo point 45% of the time instead of 15%."
      ],
      "unsimulated": [
       "Stealth"

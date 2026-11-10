@@ -4,7 +4,7 @@
 
 What a Subtlety rogue presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Subtlety levels with a dagger in each hand on its openers: **Premeditation** and a stealth opener put combo points on the mob before your first builder, **Ghostly Strike** and **Hemorrhage**, the spec's signature strikes, build the rest, and from 40 **Death Mark** stores part of your damage and deals it again. The three come as early as the tree allows: **Ghostly Strike** at 25, **Hemorrhage** at 30, **Death Mark** at 40. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 0/20/31 ([open the talent tree](https://talentsforever.com/rogue/60/-32230310010122-335201131301001151-12)), the one on the [Subtlety leveling page](subtlety.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 0/20/31 ([open the talent tree](https://talentsforever.com/rogue/60/-32320300020122-315203131301001151-12)), the one on the [Subtlety leveling page](subtlety.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -193,7 +193,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather.
 
 - **Dirty Deeds** (15-16) makes **Garrote** 10 energy cheaper a point and lets it go from the front.
-- **Expose Armor** (14) is never cast. **Master of Deception** (17-19) makes you harder to spot in **Stealth**; the fight lab does not model it.
+- **Expose Armor** (14) is never cast. **Master of Deception** (17) makes you harder to spot in **Stealth**; the fight lab does not model it.
 
 *Fight lab, seconds per kill: 19 at level 14. Presses per kill at level 14: Melee 6.4, Melee (off-hand) 5.9, Sinister Strike 2.5, Garrote 1.0, Eviscerate 0.6, Kick 0.1.*
 
@@ -203,7 +203,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Gouge at 18; Stealth at 20.
 
-**Talents:** 18-19 Master of Deception, 20-21 Serrated Blades.
+**Talents:** 18-19 Improved Ambush, 20-21 Serrated Blades.
 
 **Keys to set:** C = Ambush.
 
@@ -219,13 +219,13 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather.
 
-- **Ambush** needs a dagger in your main hand and you behind the mob.
+- **Ambush** needs a dagger in your main hand and you behind the mob. **Improved Ambush** (18-19) raises its crit chance.
 - **Poised** (18) makes the opener 10 energy cheaper.
 - **Rupture** (20) is never cast: the points are worth more as **Eviscerate**.
 - **Serrated Blades** (20-22): your attacks ignore part of the mob's armor.
 - Put **Instant Poison** on your main hand once you have it (20).
 
-*Fight lab, seconds per kill: 20 at level 18, 19 at level 20. Presses per kill at level 18: Melee 6.4, Melee (off-hand) 5.8, Sinister Strike 2.7, Eviscerate 0.7, Ambush 0.7, Garrote 0.3, Kick 0.2.*
+*Fight lab, seconds per kill: 18 at level 18, 18 at level 20. Presses per kill at level 18: Melee 5.9, Melee (off-hand) 5.3, Sinister Strike 2.4, Ambush 1.0, Eviscerate 0.7, Kick 0.2.*
 
 ## Levels 22-23: Garrote again
 
@@ -253,7 +253,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Vanish** (22) is the emergency exit: the mob loses you, and you walk away.
 - **Initiative** (23): your opener may add a second combo point.
 
-*Fight lab, seconds per kill: 20 at level 22. Presses per kill at level 22: Melee 6.8, Melee (off-hand) 6.4, Sinister Strike 3.3, Garrote 0.9, Eviscerate 0.6, Kick 0.2, Ambush 0.1.*
+*Fight lab, seconds per kill: 19 at level 22. Presses per kill at level 22: Melee 6.2, Melee (off-hand) 5.6, Sinister Strike 2.6, Ambush 0.7, Eviscerate 0.6, Garrote 0.3, Kick 0.2.*
 
 ## Level 24: Premeditation and Shank
 
@@ -282,7 +282,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Stealth** and **Premeditation** are off the global cooldown: Stealth, Premeditation, then the opener. Use the points within 20 seconds.
 - **Mind-numbing Poison** (24) is for casters in groups.
 
-*Fight lab, seconds per kill: 20 at level 24. Presses per kill at level 24: Melee 6.7, Melee (off-hand) 6.3, Sinister Strike 3.2, Shank 1.5, Garrote 0.9, Eviscerate 0.9, Kick 0.3, Premeditation 0.2, Ambush 0.1.*
+*Fight lab, seconds per kill: 20 at level 24. Presses per kill at level 24: Melee 6.4, Melee (off-hand) 5.8, Sinister Strike 2.8, Shank 1.5, Eviscerate 0.8, Ambush 0.7, Garrote 0.3, Kick 0.3, Premeditation 0.1.*
 
 ## Levels 25-29: Ghostly Strike
 
@@ -313,7 +313,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Cheap Shot** (26): the rotation opens with it only when neither **Ambush** nor **Garrote** can go, which the fight lab never saw.
 - **Opportunity** (28-29) makes **Garrote** and **Ambush** hit harder.
 
-*Fight lab, seconds per kill: 20 at level 25. Presses per kill at level 25: Melee 6.6, Melee (off-hand) 6.2, Sinister Strike 2.4, Shank 1.5, Garrote 1.0, Eviscerate 0.9, Ghostly Strike 0.8, Kick 0.3, Premeditation 0.1.*
+*Fight lab, seconds per kill: 19 at level 25. Presses per kill at level 25: Melee 6.3, Melee (off-hand) 5.8, Sinister Strike 2.0, Shank 1.5, Eviscerate 0.8, Ghostly Strike 0.8, Ambush 0.7, Garrote 0.4, Kick 0.3, Premeditation 0.1.*
 
 ## Levels 30-34: Hemorrhage
 
@@ -345,9 +345,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Deadly Poison** (30) on your off hand, **Instant Poison** on your main hand: buffs you reapply between fights, no key.
 - **Kidney Shot** (30): off. The tuned rotation never casts it.
 - **Preparation** (31): when you need **Evasion** and it is on cooldown, Preparation resets it (and your other cooldowns). The fight lab never needed it.
-- **Improved Ambush** (33) is crit on the odd **Ambush**; **Dirty Tricks** (34) makes **Sap** and **Blind** cheaper. **Blind** (34) handles a second mob that joins mid-fight.
+- The last point of **Improved Ambush** (33) is crit on the odd **Ambush**; **Dirty Tricks** (34) makes **Sap** and **Blind** cheaper. **Blind** (34) handles a second mob that joins mid-fight.
 
-*Fight lab, seconds per kill: 21 at level 30. Presses per kill at level 30: Melee 7.1, Melee (off-hand) 6.6, Hemorrhage 3.0, Shank 1.5, Eviscerate 1.2, Garrote 1.1, Ghostly Strike 0.9, Kick 0.2, Premeditation 0.2.*
+*Fight lab, seconds per kill: 21 at level 30. Presses per kill at level 30: Melee 7.0, Melee (off-hand) 6.5, Hemorrhage 2.9, Shank 1.5, Eviscerate 1.1, Garrote 0.9, Ghostly Strike 0.8, Kick 0.2, Premeditation 0.2, Ambush 0.2.*
 
 ## Levels 35-39: Boot Knife
 
@@ -372,7 +372,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Boot Knife** takes a point a level: a 20% chance a point, a sure 2 combo points at 39.
 
-*Fight lab, seconds per kill: 23 at level 35. Presses per kill at level 35: Melee 7.9, Melee (off-hand) 7.4, Hemorrhage 3.2, Shank 1.7, Eviscerate 1.4, Garrote 1.0, Ghostly Strike 0.9, Kick 0.2, Premeditation 0.2, Ambush 0.1.*
+*Fight lab, seconds per kill: 21 at level 35. Presses per kill at level 35: Melee 7.2, Melee (off-hand) 6.8, Hemorrhage 2.5, Shank 1.6, Eviscerate 1.3, Ghostly Strike 0.8, Ambush 0.6, Garrote 0.5, Kick 0.2, Premeditation 0.2.*
 
 ## Levels 40-60: Death Mark
 
@@ -380,7 +380,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Ambush at 42, 50, 58; Eviscerate at 40, 48, 56, 60; Garrote at 46, 54; Gouge at 46, 60; Kick at 42, 58; Sap at 48; Shank at 44; Sprint at 58; Stealth at 40, 60; Vanish at 42.
 
-**Talents:** 40 Death Mark, 41-43 Coup de Grace, 44-45 Lightning Reflexes, 46-48 Precision, 49-50 Efficient Strikes, 51-53 Puncturing Wounds, 54 Improved Sprint, 55 Composure, 56 Flawless Execution, 57-58 Weapon Expertise, 59-60 Aggression.
+**Talents:** 40 Death Mark, 41-43 Coup de Grace, 44-45 Lightning Reflexes, 46-48 Precision, 49-50 Efficient Strikes, 51-52 Puncturing Wounds, 53 Lightning Reflexes, 54-55 Composure, 56 Flawless Execution, 57-58 Weapon Expertise, 59-60 Aggression.
 
 **Keys to set:** Shift+R = Death Mark.
 
@@ -402,9 +402,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Death Mark** stores more with more combo points, but the tuned rules found the early mark faster than waiting for 5. How much it stores is not in the tooltip: the fight lab assumes a rate, so treat this line as a best guess.
 - **Coup de Grace** (41-43) makes **Eviscerate** and **Death Mark** stronger. **Lightning Reflexes** (44-45) is dodge, and with **Setup** a dodge can be a combo point. **Precision** (46-48) is hit; **Efficient Strikes** (49-50) makes **Hemorrhage** cheaper.
-- **Puncturing Wounds** (51-53) and **Improved Sprint** (54) are tier points on the way to **Weapon Expertise** (57-58) and **Aggression** (59-60): this list casts no **Backstab** or **Mutilate**. **Composure** (55) and **Flawless Execution** (56) make the opener and **Eviscerate** cheaper.
+- **Puncturing Wounds** (51-52) is two tier points on the way to **Weapon Expertise** (57-58) and **Aggression** (59-60): this list casts no **Backstab** or **Mutilate**. **Lightning Reflexes** (53) takes its third point: more dodge. **Composure** (54-55) and **Flawless Execution** (56) make the opener and **Eviscerate** cheaper.
 
-*Fight lab, seconds per kill: 25 at level 40, 23 at level 50, 22 at level 60. Presses per kill at level 40: Melee 8.7, Melee (off-hand) 8.2, Hemorrhage 3.0, Shank 1.8, Eviscerate 1.3, Death Mark 1.1, Garrote 1.1, Ghostly Strike 1.0, Kick 0.3, Premeditation 0.2.*
+*Fight lab, seconds per kill: 25 at level 40, 23 at level 50, 22 at level 60. Presses per kill at level 40: Melee 8.6, Melee (off-hand) 8.2, Hemorrhage 3.0, Shank 1.8, Eviscerate 1.3, Death Mark 1.1, Garrote 1.1, Ghostly Strike 0.9, Kick 0.3, Premeditation 0.2.*
 
 ## Between fights
 

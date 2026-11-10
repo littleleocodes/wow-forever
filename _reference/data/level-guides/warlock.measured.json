@@ -8,7 +8,7 @@
    "build": "demonology-open-leveling",
    "rotation": "demonology-leveling",
    "provisional_order": false,
-   "fingerprint": "e69abadd0b84",
+   "fingerprint": "f1de5c03a8b2",
    "levels": {
     "1": {
      "seconds": 14.4,
@@ -121,59 +121,59 @@
      }
     },
     "42": {
-     "seconds": 31.3,
+     "seconds": 31.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 4.49,
-      "Corruption": 1.03,
-      "Searing Pain": 1.59,
-      "Bane of Agony": 1.03,
-      "Wand": 11.13
+      "Corruption": 1.07,
+      "Torment": 4.45,
+      "Searing Pain": 1.54,
+      "Bane of Agony": 1.04,
+      "Wand": 11.14
      }
     },
     "49": {
-     "seconds": 32.8,
+     "seconds": 32.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 4.71,
-      "Corruption": 1.03,
-      "Searing Pain": 1.58,
+      "Corruption": 1.05,
+      "Torment": 4.69,
+      "Searing Pain": 1.51,
       "Bane of Agony": 1.0,
-      "Wand": 12.21
+      "Wand": 12.1
      }
     },
     "50": {
-     "seconds": 33.2,
+     "seconds": 32.8,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 4.82,
-      "Corruption": 1.04,
-      "Searing Pain": 1.5,
+      "Corruption": 1.05,
+      "Torment": 4.75,
+      "Searing Pain": 1.48,
       "Bane of Agony": 1.0,
-      "Wand": 12.56
+      "Wand": 12.36
      }
     },
     "59": {
-     "seconds": 34.3,
+     "seconds": 34.2,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 5.11,
-      "Corruption": 1.09,
-      "Searing Pain": 1.24,
+      "Corruption": 1.15,
+      "Torment": 5.0,
+      "Searing Pain": 1.21,
       "Bane of Agony": 1.0,
-      "Wand": 13.8
+      "Wand": 13.5
      }
     },
     "60": {
-     "seconds": 32.6,
+     "seconds": 32.7,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 4.83,
-      "Corruption": 1.02,
-      "Searing Pain": 1.05,
+      "Corruption": 1.08,
+      "Torment": 4.76,
+      "Searing Pain": 0.95,
       "Bane of Agony": 1.0,
       "Siphon Life": 1.0,
-      "Wand": 11.71,
+      "Wand": 11.81,
       "Life Tap": 0.32
      }
     }
@@ -380,7 +380,7 @@
    "build": "destruction-open-leveling",
    "rotation": "destruction-leveling",
    "provisional_order": false,
-   "fingerprint": "5841d67a8d45",
+   "fingerprint": "48fec0af3d09",
    "levels": {
     "1": {
      "seconds": 14.4,
@@ -411,114 +411,116 @@
      }
     },
     "20": {
-     "seconds": 30.8,
+     "seconds": 31.2,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 2.88,
-      "Shadow Bolt": 3.15,
+      "Torment": 2.94,
+      "Shadow Bolt": 3.27,
       "Immolate": 1.03,
-      "Wand": 3.77,
+      "Wand": 3.65,
       "Life Tap": 0.09
      }
     },
     "30": {
-     "seconds": 39.9,
+     "seconds": 40.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 3.92,
-      "Shadow Bolt": 3.78,
-      "Immolate": 1.03,
-      "Wand": 6.9,
-      "Life Tap": 0.12
+      "Torment": 4.02,
+      "Shadow Bolt": 3.93,
+      "Immolate": 1.04,
+      "Wand": 6.72,
+      "Life Tap": 0.13
      }
     },
     "31": {
-     "seconds": 43.5,
+     "seconds": 44.0,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 3.71,
-      "Shadow Bolt": 4.46,
+      "Torment": 3.75,
+      "Shadow Bolt": 4.58,
       "Immolate": 1.04,
       "Wand": 4.45,
-      "Shadowburn": 1.0
-     }
-    },
-    "32": {
-     "seconds": 44.7,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Torment": 3.65,
-      "Shadow Bolt": 4.52,
-      "Immolate": 1.04,
-      "Wand": 3.56,
-      "Shadowburn": 0.99,
-      "Conflagrate": 0.41,
+      "Shadowburn": 1.0,
       "Life Tap": 0.07
      }
     },
-    "39": {
-     "seconds": 46.7,
+    "32": {
+     "seconds": 44.9,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 3.8,
-      "Shadow Bolt": 3.65,
-      "Immolate": 1.04,
-      "Conflagrate": 1.45,
-      "Wand": 5.39,
+      "Torment": 3.68,
+      "Shadow Bolt": 4.61,
+      "Immolate": 1.06,
+      "Wand": 3.5,
+      "Shadowburn": 0.99,
+      "Conflagrate": 0.39,
+      "Life Tap": 0.09
+     }
+    },
+    "39": {
+     "seconds": 46.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Torment": 3.73,
+      "Shadow Bolt": 3.73,
+      "Immolate": 1.03,
+      "Conflagrate": 1.48,
+      "Wand": 5.49,
       "Shadowburn": 1.0,
-      "Create Healthstone": 0.1
+      "Create Healthstone": 0.12
      }
     },
     "40": {
-     "seconds": 43.4,
+     "seconds": 42.2,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 4.26,
-      "Shadow Bolt": 1.64,
-      "Immolate": 1.15,
-      "Wand": 9.46,
-      "Conflagrate": 1.67,
+      "Torment": 4.2,
+      "Shadow Bolt": 1.2,
+      "Immolate": 1.12,
+      "Wand": 10.65,
+      "Conflagrate": 1.82,
       "Shadowburn": 0.99,
       "Create Healthstone": 0.09
      }
     },
     "42": {
-     "seconds": 41.9,
+     "seconds": 41.3,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 4.13,
-      "Shadow Bolt": 1.53,
-      "Immolate": 1.12,
-      "Wand": 9.33,
-      "Conflagrate": 1.64,
-      "Shadowburn": 0.98,
-      "Death Coil": 0.18
+      "Torment": 4.07,
+      "Shadow Bolt": 1.21,
+      "Immolate": 1.13,
+      "Wand": 10.39,
+      "Conflagrate": 1.73,
+      "Shadowburn": 0.97,
+      "Death Coil": 0.19,
+      "Create Healthstone": 0.06
      }
     },
     "50": {
-     "seconds": 41.4,
+     "seconds": 41.3,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 4.38,
-      "Shadow Bolt": 1.27,
+      "Torment": 4.33,
+      "Shadow Bolt": 1.19,
       "Immolate": 1.08,
-      "Wand": 10.29,
-      "Conflagrate": 1.72,
+      "Wand": 11.01,
+      "Conflagrate": 1.79,
       "Shadowburn": 0.97,
-      "Death Coil": 0.15
+      "Death Coil": 0.16
      }
     },
     "60": {
-     "seconds": 40.9,
+     "seconds": 40.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 4.31,
-      "Shadow Bolt": 1.47,
-      "Immolate": 1.08,
-      "Wand": 9.92,
-      "Conflagrate": 1.6,
+      "Torment": 4.46,
+      "Shadow Bolt": 1.21,
+      "Immolate": 1.07,
+      "Wand": 11.13,
+      "Conflagrate": 1.72,
       "Shadowburn": 0.98,
-      "Death Coil": 0.21
+      "Death Coil": 0.2
      }
     }
    }
@@ -527,7 +529,7 @@
    "build": "affliction-demonology-open-leveling",
    "rotation": "demonology-leveling",
    "provisional_order": false,
-   "fingerprint": "78ac5347abe3",
+   "fingerprint": "fbce43d1a802",
    "levels": {
     "1": {
      "seconds": 14.4,
@@ -571,144 +573,142 @@
      }
     },
     "20": {
-     "seconds": 24.0,
+     "seconds": 23.9,
      "deaths_per_100": 0.0,
      "casts": {
       "Torment": 3.15,
       "Corruption": 1.03,
       "Bane of Agony": 1.05,
       "Immolate": 1.03,
-      "Wand": 6.31
+      "Wand": 6.34
      }
     },
     "26": {
-     "seconds": 26.7,
+     "seconds": 26.4,
      "deaths_per_100": 0.0,
      "casts": {
       "Torment": 3.65,
       "Corruption": 1.03,
       "Bane of Agony": 1.05,
       "Immolate": 1.04,
-      "Shadow Bolt": 0.11,
-      "Wand": 7.82
+      "Shadow Bolt": 0.07,
+      "Wand": 7.9
      }
     },
     "27": {
-     "seconds": 26.3,
+     "seconds": 26.0,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 3.54,
+      "Torment": 3.56,
       "Corruption": 1.03,
-      "Searing Pain": 1.89,
-      "Bane of Agony": 1.03,
-      "Wand": 7.27
+      "Searing Pain": 1.85,
+      "Bane of Agony": 1.02,
+      "Wand": 7.37
      }
     },
     "30": {
-     "seconds": 27.1,
+     "seconds": 26.9,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 3.69,
+      "Torment": 3.72,
       "Corruption": 1.03,
       "Searing Pain": 1.22,
       "Bane of Agony": 1.03,
-      "Immolate": 0.51,
-      "Wand": 7.78
+      "Immolate": 0.48,
+      "Wand": 7.83
      }
     },
     "40": {
-     "seconds": 30.3,
+     "seconds": 30.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Corruption": 1.04,
-      "Torment": 4.28,
-      "Searing Pain": 1.62,
+      "Torment": 4.29,
+      "Searing Pain": 1.63,
       "Bane of Agony": 1.03,
-      "Immolate": 0.12,
-      "Wand": 10.31
+      "Immolate": 0.08,
+      "Wand": 10.42
      }
     },
     "41": {
-     "seconds": 30.7,
+     "seconds": 30.2,
      "deaths_per_100": 0.0,
      "casts": {
       "Corruption": 1.03,
       "Torment": 4.32,
-      "Searing Pain": 1.66,
+      "Searing Pain": 1.67,
       "Bane of Agony": 1.02,
-      "Immolate": 0.17,
-      "Wand": 10.31
+      "Immolate": 0.12,
+      "Wand": 10.39
      }
     },
     "42": {
-     "seconds": 30.9,
+     "seconds": 30.6,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Corruption": 1.03,
+      "Torment": 4.38,
+      "Searing Pain": 1.6,
+      "Bane of Agony": 1.01,
+      "Immolate": 0.06,
+      "Wand": 10.69
+     }
+    },
+    "44": {
+     "seconds": 30.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Corruption": 1.02,
       "Torment": 4.36,
-      "Searing Pain": 1.62,
-      "Bane of Agony": 1.01,
-      "Immolate": 0.1,
-      "Wand": 10.57
-     }
-    },
-    "44": {
-     "seconds": 30.8,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Corruption": 1.01,
-      "Torment": 4.33,
-      "Searing Pain": 1.47,
+      "Searing Pain": 1.43,
       "Bane of Agony": 1.0,
-      "Wand": 10.73
+      "Wand": 10.93
      }
     },
     "50": {
-     "seconds": 32.5,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Corruption": 1.04,
-      "Torment": 4.69,
-      "Searing Pain": 1.48,
-      "Bane of Agony": 1.0,
-      "Wand": 11.96
-     }
-    },
-    "53": {
-     "seconds": 33.3,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Corruption": 1.1,
-      "Torment": 4.68,
-      "Searing Pain": 1.56,
-      "Bane of Agony": 1.0,
-      "Wand": 12.14
-     }
-    },
-    "54": {
-     "seconds": 33.0,
+     "seconds": 32.3,
      "deaths_per_100": 0.0,
      "casts": {
       "Corruption": 1.06,
-      "Torment": 4.57,
-      "Searing Pain": 1.01,
+      "Torment": 4.71,
+      "Searing Pain": 1.45,
       "Bane of Agony": 1.0,
-      "Siphon Life": 1.0,
-      "Wand": 11.38,
-      "Life Tap": 0.14
+      "Wand": 12.09
      }
     },
-    "60": {
-     "seconds": 32.1,
+    "53": {
+     "seconds": 33.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Corruption": 1.09,
+      "Torment": 4.76,
+      "Searing Pain": 1.52,
+      "Bane of Agony": 1.0,
+      "Wand": 12.31
+     }
+    },
+    "54": {
+     "seconds": 32.8,
      "deaths_per_100": 0.0,
      "casts": {
       "Corruption": 1.05,
-      "Torment": 4.65,
-      "Searing Pain": 0.99,
+      "Torment": 4.58,
+      "Searing Pain": 0.97,
       "Bane of Agony": 1.0,
       "Siphon Life": 1.0,
-      "Wand": 11.23,
-      "Life Tap": 0.3
+      "Wand": 11.48
+     }
+    },
+    "60": {
+     "seconds": 32.3,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Corruption": 1.05,
+      "Torment": 4.64,
+      "Searing Pain": 0.95,
+      "Bane of Agony": 1.0,
+      "Siphon Life": 1.0,
+      "Wand": 11.56
      }
     }
    }

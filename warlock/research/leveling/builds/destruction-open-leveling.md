@@ -26,18 +26,18 @@ The Destruction leveling build the open leveling search found on 2026-11-08: eve
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Demonic Embrace** | 1/5 | changed | Increases your total Stamina by 3%. |
 | **Unholy Power** | 5/5 | changed | Increases all damage done by your Imp, Voidwalker, Succubus, Incubus, and Felhunter pets by 10%. |
 | **Improved Voidwalker** | 3/3 | unchanged | Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice, and Suffering spells by 30%. |
 | **Fel Vitality** | 2/3 | **NEW** | Increases the maximum health and Mana of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 10%, and increases your maximum Mana by 10%. |
+| **Demonic Energies** | 1/2 | **NEW** | You heal your pet for 8% of all spell damage you deal. When you gain Mana from Life Tap, your summoned demon gains 50% of the Mana you gain. |
 
 ### Destruction (34)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
+| **Destructive Reach** | 2/2 | changed | Increases the range of your Destruction spells by 20%. |
 | **Bane** | 5/5 | changed | Reduces the casting time of your Shadow Bolt, Immolate, and Incinerate spells by 0.5 sec and your Soul Fire spell by 2 sec. |
 | **Cataclysm** | 3/3 | changed | Reduces the Mana cost of your Destruction spells by 10%. |
-| **Aftermath** | 2/5 | changed | Increases the initial damage of your Immolate spell by 20% and your Conflagrate spell has a 40% chance to Daze the target, reducing the target's movement speed by 50% for 5 sec. |
 | **Ruin** | 5/5 | changed | Increases the critical strike damage bonus of your Destruction spells by 100%. |
 | **Shadowburn** | 1/1 | changed | Instantly blasts the target for 65 to 73 Shadow damage. If a non-trivial target dies within 8 sec of being hit with Shadowburn, the caster gains a Soul Shard. |
 | **Intensity** | 3/3 | changed | Gives your Destruction spells a 70% chance to not lose casting time when you take damage. |
@@ -54,7 +54,7 @@ The Destruction leveling build the open leveling search found on 2026-11-08: eve
 | Levels | Tree | Talent | Pts | Running total |
 |---|---|---|---|---|
 | 10-14 | Destruction | Bane | 5 | 0/0/5 |
-| 15-16 | Destruction | Aftermath | 2 | 0/0/7 |
+| 15-16 | Destruction | Destructive Reach | 2 | 0/0/7 |
 | 17-19 | Destruction | Cataclysm | 3 | 0/0/10 |
 | 20-24 | Destruction | Ruin | 5 | 0/0/15 |
 | 25-27 | Destruction | Agonizing Flames | 3 | 0/0/18 |
@@ -70,7 +70,7 @@ The Destruction leveling build the open leveling search found on 2026-11-08: eve
 | 45-49 | Affliction | Suppression | 5 | 6/0/34 |
 | 50-54 | Demonology | Unholy Power | 5 | 6/5/34 |
 | 55-57 | Demonology | Improved Voidwalker | 3 | 6/8/34 |
-| 58 | Demonology | Demonic Embrace | 1 | 6/9/34 |
+| 58 | Demonology | Demonic Energies | 1 | 6/9/34 |
 | 59-60 | Demonology | Fel Vitality | 2 | 6/11/34 |
 
 ## Core talents (priority order)
@@ -90,6 +90,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
+- 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Demonic Embrace to Demonic Energies at 58 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Aftermath to Destructive Reach at 16 (gate: -0.1% seed 3, -0.3% seed 4, level-weighted time per kill); Aftermath to Destructive Reach at 15 (gate: -0.3% seed 3, -0.2% seed 4, level-weighted time per kill).
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 40.68; destruction-open-leveling 41.32, destruction-leveling 48.23. The search simulated 36,382 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 

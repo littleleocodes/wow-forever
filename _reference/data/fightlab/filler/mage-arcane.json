@@ -434,5 +434,269 @@
    "talent": "Shatter",
    "points": 1
   }
- ]
+ ],
+ "written": {
+  "allocation": {
+   "Arcane": [
+    [
+     "Improved Channeling",
+     5
+    ],
+    [
+     "Arcane Resilience",
+     1
+    ],
+    [
+     "Arcane Concentration",
+     5
+    ],
+    [
+     "Missile Barrage",
+     2
+    ],
+    [
+     "Arcane Impact",
+     3
+    ],
+    [
+     "Arcane Blast",
+     1
+    ],
+    [
+     "Arcane Meditation",
+     3
+    ],
+    [
+     "Arcane Wrath",
+     1
+    ],
+    [
+     "Presence of Mind",
+     1
+    ],
+    [
+     "Arcane Mind",
+     5
+    ],
+    [
+     "Arcane Instability",
+     3
+    ],
+    [
+     "Arcane Power",
+     1
+    ]
+   ],
+   "Fire": [],
+   "Frost": [
+    [
+     "Frost Warding",
+     2
+    ],
+    [
+     "Improved Frostbolt",
+     3
+    ],
+    [
+     "Precision",
+     2
+    ],
+    [
+     "Ice Shards",
+     3
+    ],
+    [
+     "Improved Frost Nova",
+     2
+    ],
+    [
+     "Permafrost",
+     2
+    ],
+    [
+     "Improved Blizzard",
+     2
+    ],
+    [
+     "Ice Lance",
+     1
+    ],
+    [
+     "Shatter",
+     3
+    ]
+   ]
+  },
+  "order": [
+   {
+    "levels": "10",
+    "tree": "Arcane",
+    "talent": "Arcane Resilience",
+    "points": 1
+   },
+   {
+    "levels": "11-14",
+    "tree": "Arcane",
+    "talent": "Improved Channeling",
+    "points": 4
+   },
+   {
+    "levels": "15-19",
+    "tree": "Arcane",
+    "talent": "Arcane Concentration",
+    "points": 5
+   },
+   {
+    "levels": "20",
+    "tree": "Arcane",
+    "talent": "Arcane Blast",
+    "points": 1
+   },
+   {
+    "levels": "21-22",
+    "tree": "Arcane",
+    "talent": "Missile Barrage",
+    "points": 2
+   },
+   {
+    "levels": "23",
+    "tree": "Arcane",
+    "talent": "Improved Channeling",
+    "points": 1
+   },
+   {
+    "levels": "24",
+    "tree": "Arcane",
+    "talent": "Arcane Impact",
+    "points": 1
+   },
+   {
+    "levels": "25",
+    "tree": "Arcane",
+    "talent": "Arcane Wrath",
+    "points": 1
+   },
+   {
+    "levels": "26-28",
+    "tree": "Arcane",
+    "talent": "Arcane Meditation",
+    "points": 3
+   },
+   {
+    "levels": "29",
+    "tree": "Arcane",
+    "talent": "Arcane Impact",
+    "points": 1
+   },
+   {
+    "levels": "30",
+    "tree": "Arcane",
+    "talent": "Presence of Mind",
+    "points": 1
+   },
+   {
+    "levels": "31",
+    "tree": "Arcane",
+    "talent": "Arcane Impact",
+    "points": 1
+   },
+   {
+    "levels": "32-34",
+    "tree": "Arcane",
+    "talent": "Arcane Mind",
+    "points": 3
+   },
+   {
+    "levels": "35-37",
+    "tree": "Arcane",
+    "talent": "Arcane Instability",
+    "points": 3
+   },
+   {
+    "levels": "38-39",
+    "tree": "Arcane",
+    "talent": "Arcane Mind",
+    "points": 2
+   },
+   {
+    "levels": "40-41",
+    "tree": "Frost",
+    "talent": "Precision",
+    "points": 2
+   },
+   {
+    "levels": "42-44",
+    "tree": "Frost",
+    "talent": "Improved Frostbolt",
+    "points": 3
+   },
+   {
+    "levels": "45-47",
+    "tree": "Frost",
+    "talent": "Ice Shards",
+    "points": 3
+   },
+   {
+    "levels": "48",
+    "tree": "Frost",
+    "talent": "Improved Frost Nova",
+    "points": 1
+   },
+   {
+    "levels": "49",
+    "tree": "Frost",
+    "talent": "Frost Warding",
+    "points": 1
+   },
+   {
+    "levels": "50",
+    "tree": "Frost",
+    "talent": "Ice Lance",
+    "points": 1
+   },
+   {
+    "levels": "51",
+    "tree": "Frost",
+    "talent": "Frost Warding",
+    "points": 1
+   },
+   {
+    "levels": "52-53",
+    "tree": "Frost",
+    "talent": "Improved Blizzard",
+    "points": 2
+   },
+   {
+    "levels": "54",
+    "tree": "Frost",
+    "talent": "Improved Frost Nova",
+    "points": 1
+   },
+   {
+    "levels": "55-56",
+    "tree": "Frost",
+    "talent": "Shatter",
+    "points": 2
+   },
+   {
+    "levels": "57-58",
+    "tree": "Frost",
+    "talent": "Permafrost",
+    "points": 2
+   },
+   {
+    "levels": "59",
+    "tree": "Arcane",
+    "talent": "Arcane Power",
+    "points": 1
+   },
+   {
+    "levels": "60",
+    "tree": "Frost",
+    "talent": "Shatter",
+    "points": 1
+   }
+  ],
+  "note": "2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Fingers of Frost to Shatter at 60 (tie-break: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Permafrost to Arcane Power at 59 (tie-break: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Arctic Reach to Shatter at 56 (tie-break: -0.2% seed 3, -0.3% seed 4, level-weighted time per kill); Arctic Reach to Shatter at 55 (measured: -0.4% seed 3, -0.4% seed 4, level-weighted time per kill); Improved Blizzard to Improved Frost Nova at 54 (gate: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill)."
+ }
 }

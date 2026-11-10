@@ -4,7 +4,7 @@
 
 **Leveling from level 1?** [The rotation level by level](balance-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Balance (optimized)](../research/leveling/builds/opt-balance-dps-leveling-st.md)** (36/0/15) — [open the talent tree](https://talentsforever.com/druid/60/5032203105501351--5253-12)
+**[Balance (optimized)](../research/leveling/builds/opt-balance-dps-leveling-st.md)** (36/0/15) — [open the talent tree](https://talentsforever.com/druid/60/5332200105501351--5253-12)
 
 **Signature spells:** 97% of the damage at level 60 in the fight lab comes from the spec's core spells (Wrath, Starfire, Moonfire; this build never casts Insect Swarm) (the spec's rule: at least 70%; **Starfire**, **Moonfire** cast at level 60).
 
@@ -28,7 +28,7 @@ Pull with an instant, then cast: **Moonfire** on the mob, **Wrath** while it run
 
 **Why it works**
 
-- **Moonfire** first: it is instant, so it ticks while the mob is still running at you. The fight lab puts it only on a mob above about a third of its health: a mob below that dies before the burn pays off. This build skips Insect Swarm (a Balance tier 4 talent) and Genesis, so **Moonfire** is the only damage over time you cast.
+- **Moonfire** first: it is instant, so it ticks while the mob is still running at you. The fight lab puts it only on a mob above about a third of its health: a mob below that dies before the burn pays off. This build skips Insect Swarm (a Balance tier 4 talent), so **Moonfire** is the only damage over time you cast; **Genesis** (levels 23-24 and 45) makes its burn 6% stronger.
 - **Wrath** is the default nuke and, until level 26, almost the only one: with **Improved Wrath** (levels 10-14) it is a 1.5-second cast for half the mana, and a short cast loses little to pushback once the mob is hitting you.
 - **Eclipse** (levels 30-32) is the build's most valuable talent in the fight lab: each **Wrath** takes up to 0.5 seconds off your next 2 **Starfire** casts (0.17 s at 1 point, 0.33 at 2, 0.5 at 3; up to 4 charges, 15 seconds). So the fight lab weaves: **Wrath**, then **Starfire** while charges last, about two **Starfire** casts for each **Wrath**.
 - **Starfire** is your hardest hit. It takes 3 seconds with **Improved Starfire** (2.5 on a full **Eclipse** charge), so it waits for a charge or a safe moment: when the mob is rooted or stunned (**Improved Starfire** stuns for 3 seconds 15% of the time). **Nature's Focus** (levels 48-50 and 59-60) lets your casts ignore pushback 42% of the time at 3 points and 70% at 5.
@@ -60,7 +60,7 @@ One point per level from 10, in this order:
 | 19 | Moonglow (Balance) | 1 |
 | 20-21 | Nature's Majesty (Balance) | 2 |
 | 22 | Nature's Splendor (Balance) | 1 |
-| 23-24 | Improved Entangling Roots (Balance) | 2 |
+| 23-24 | Genesis (Balance) | 2 |
 | 25-29 | Improved Starfire (Balance) | 5 |
 | 30-32 | Eclipse (Balance) | 3 |
 | 33 | Nature's Grace (Balance) | 1 |
@@ -72,7 +72,7 @@ One point per level from 10, in this order:
 | 40 | Moonkin Form (Balance) | 1 |
 | 41-42 | Vengeance (Balance) | 2 |
 | 43-44 | Moonfury (Balance) | 2 |
-| 45 | Improved Entangling Roots (Balance) | 1 |
+| 45 | Genesis (Balance) | 1 |
 | 46-47 | Heart of the Wild (Restoration) | 2 |
 | 48-50 | Nature's Focus (Restoration) | 3 |
 | 51 | Reflection (Restoration) | 1 |

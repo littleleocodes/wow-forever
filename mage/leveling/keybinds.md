@@ -40,7 +40,7 @@ This file is hand-written: the regeneration that rewrites the rest of this folde
 | 2 | Polymorph (8) | A second mob joins | Deadlock ability 2 |
 | 3 | Mana Shield (20) | Emergency only: mob on you, Nova down, low health | Deadlock ability 3 |
 | 4 | Evocation (20) | Between fights, when it is ready and you are under 40% mana. The one between-fights spell with a key: a cooldown and a mana rule make it a decision. Click it instead if you want 4 free | Deadlock 4, the long cooldown |
-| C | Cone of Cold (26) | Packs: slow the group and walk. The single-target lists of Frost, Arcane-Frost and Frostfire never cast it; Arcane casts it only on a mob on it below a fifth of its health. In the Fire guide C becomes Blast Wave at 49 | A reaction key next to the movement hand |
+| C | Cone of Cold (26) | Packs: slow the group and walk. The single-target lists of Frost, Arcane-Frost and Frostfire never cast it; Arcane casts it only on a mob on it below a fifth of its health | A reaction key next to the movement hand |
 | Middle mouse | Shoot (wand) | Finishing hits on a mob that is almost dead; while the mob closes too fast for a bolt | The weapon attack |
 
 ## Bar 2: the same keys with Shift

@@ -8,11 +8,11 @@
 
 **Leveling from level 1?** [The rotation level by level](affliction-demonology-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Affliction-Demonology — Leveling](../research/leveling/builds/affliction-demonology-open-leveling.md)** (27/24/0) — [open the talent tree](https://talentsforever.com/warlock/60/2551002013500102-10450302011003013--12)
+**[Affliction-Demonology — Leveling](../research/leveling/builds/affliction-demonology-open-leveling.md)** (27/24/0) — [open the talent tree](https://talentsforever.com/warlock/60/2551002013500102-00250332011003013--12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Affliction DoTs with a Voidwalker). A model of the beta, to check at launch.
 
-**Signature spells:** 72% of the damage at level 60 in the fight lab comes from the spec's core spells (Corruption, Bane of Agony, Siphon Life, your pet; this build never casts Drain Life, Wrack) (the spec's rule: at least 50%; **Corruption** cast at level 60).
+**Signature spells:** 71% of the damage at level 60 in the fight lab comes from the spec's core spells (Corruption, Bane of Agony, Siphon Life, your pet; this build never casts Drain Life, Wrack) (the spec's rule: at least 50%; **Corruption** cast at level 60).
 
 ## How to play
 
@@ -24,8 +24,7 @@
 2. **Bane of Agony** and **Siphon Life** on a mob above about a third of its health; **Corruption** only on a mob above 35% of its health; **Immolate** only above half your mana, and not on a mob below about a third of its health.
 3. Your wand is the filler: **Shadow Bolt** only above 80% mana, which the dots and brands rarely leave you.
 4. **Drain Life** whenever you drop below 60% health, and in place of the wand while you are below 85%; **Life Tap** in a fight only when you are short of mana and above 60% health.
-5. With **Improved Health Funnel**: **Health Funnel** a Voidwalker below 30% health while the mob still has more than a third of its health and you have more than 65% of yours.
-6. If a mob reaches you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs. Your Healthstone below 35% health.
+5. If a mob reaches you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs. Your Healthstone below 35% health.
 
 **Between fights:** **Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, eat only below 55% health, and drink only below 15% mana (when you are too hurt to **Life Tap**).
 
@@ -43,7 +42,7 @@ The 27/24/0 split plays the Demonology list: a Voidwalker made stronger by its f
 
 **Caveats**
 
-- With **Improved Health Funnel** (level 20): **Health Funnel** a Voidwalker below 30% health while the mob still has more than a third of its health and you have more than 65% of yours. **Master Summoner** shortens a new summon; **Demonic Sacrifice** (25) is the step to **Soul Link**, and **Grim Reach** (58) only widens the range of your Affliction spells.
+- This build has no **Improved Health Funnel**, so the in-fight **Health Funnel** line does not apply: heal the Voidwalker between fights. **Fel Vitality** (20, 23-24) adds 15% to the Voidwalker's health and mana and to your mana, **Demonic Embrace** (21-22) 6% to your Stamina. **Master Summoner** shortens a new summon; **Demonic Sacrifice** (25) is the step to **Soul Link**, and **Grim Reach** (58) only widens the range of your Affliction spells.
 - When a mob reaches you: **Death Coil** (level 42) if you are below about 60% health (it heals you for its damage), otherwise **Fear** it and **Drain Life** while it runs, until the Voidwalker's **Torment** takes it back.
 
 **When to change it**
@@ -62,8 +61,9 @@ One point per level from 10, in this order:
 | 15 | Demonic Energies (Demonology) | 1 |
 | 16-18 | Improved Voidwalker (Demonology) | 3 |
 | 19 | Demonic Energies (Demonology) | 1 |
-| 20 | Improved Health Funnel (Demonology) | 1 |
-| 21-24 | Demonic Embrace (Demonology) | 4 |
+| 20 | Fel Vitality (Demonology) | 1 |
+| 21-22 | Demonic Embrace (Demonology) | 2 |
+| 23-24 | Fel Vitality (Demonology) | 2 |
 | 25 | Demonic Sacrifice (Demonology) | 1 |
 | 26 | Master Summoner (Demonology) | 1 |
 | 27-29 | Demonic Brand (Demonology) | 3 |

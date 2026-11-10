@@ -1,6 +1,6 @@
 {
  "class": "mage",
- "date": "2026-11-07",
+ "date": "2026-11-09",
  "fights": 400,
  "seed": 3,
  "guides": {
@@ -344,7 +344,7 @@
    "build": "arcane-open-leveling",
    "rotation": "arcane-leveling",
    "provisional_order": false,
-   "fingerprint": "a804fcd8654a",
+   "fingerprint": "d4acec813024",
    "levels": {
     "1": {
      "seconds": 12.8,
@@ -467,17 +467,43 @@
       "Counterspell": 0.13
      }
     },
-    "60": {
-     "seconds": 29.2,
+    "58": {
+     "seconds": 27.9,
      "deaths_per_100": 0.0,
      "casts": {
-      "Arcane Wrath": 0.49,
-      "Arcane Blast": 1.78,
-      "Arcane Missiles": 1.49,
-      "Fire Blast": 0.46,
+      "Arcane Wrath": 0.41,
+      "Arcane Blast": 1.76,
+      "Arcane Missiles": 1.46,
+      "Frost Nova": 0.7,
+      "Ice Lance": 0.69,
+      "Counterspell": 0.12,
+      "Fire Blast": 0.44
+     }
+    },
+    "59": {
+     "seconds": 28.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Arcane Wrath": 0.43,
+      "Arcane Blast": 1.76,
+      "Arcane Missiles": 1.43,
       "Frost Nova": 0.69,
-      "Ice Lance": 0.79,
-      "Counterspell": 0.08
+      "Ice Lance": 0.67,
+      "Counterspell": 0.1,
+      "Fire Blast": 0.44
+     }
+    },
+    "60": {
+     "seconds": 27.5,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Arcane Wrath": 0.38,
+      "Arcane Blast": 1.78,
+      "Arcane Missiles": 1.43,
+      "Frost Nova": 0.66,
+      "Ice Lance": 0.64,
+      "Counterspell": 0.08,
+      "Fire Blast": 0.4
      }
     }
    }
@@ -486,7 +512,7 @@
    "build": "fire-leveling",
    "rotation": "fire-leveling",
    "provisional_order": false,
-   "fingerprint": "882f694d9535",
+   "fingerprint": "772d21bb71ed",
    "levels": {
     "1": {
      "seconds": 12.0,
@@ -549,137 +575,119 @@
      }
     },
     "30": {
-     "seconds": 42.2,
+     "seconds": 41.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Pyroblast": 1.0,
-      "Frost Nova": 0.81,
-      "Fireball": 1.92,
-      "Fire Blast": 1.65,
-      "Wand": 2.52,
+      "Frost Nova": 0.82,
+      "Fireball": 1.95,
+      "Fire Blast": 1.6,
+      "Wand": 2.57,
       "Counterspell": 0.16
      }
     },
     "31": {
-     "seconds": 39.7,
+     "seconds": 39.5,
      "deaths_per_100": 0.0,
      "casts": {
       "Pyroblast": 1.0,
-      "Frost Nova": 0.78,
-      "Ice Lance": 1.44,
-      "Fireball": 1.45,
-      "Fire Blast": 1.53,
-      "Wand": 1.7,
+      "Frost Nova": 0.82,
+      "Ice Lance": 1.47,
+      "Fireball": 1.42,
+      "Fire Blast": 1.5,
+      "Wand": 1.74,
       "Counterspell": 0.16
      }
     },
     "40": {
-     "seconds": 42.9,
+     "seconds": 42.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Pyroblast": 1.0,
-      "Frost Nova": 0.77,
-      "Ice Lance": 1.44,
+      "Frost Nova": 0.83,
+      "Ice Lance": 1.48,
       "Fireball": 1.52,
-      "Fire Blast": 1.8,
-      "Wand": 2.35,
+      "Fire Blast": 1.69,
+      "Wand": 2.3,
       "Counterspell": 0.15
      }
     },
     "43": {
      "seconds": 38.7,
-     "deaths_per_100": 0.0,
+     "deaths_per_100": 0.5,
      "casts": {
       "Pyroblast": 1.0,
-      "Ice Lance": 1.34,
-      "Fire Blast": 1.7,
-      "Frost Nova": 0.72,
-      "Wand": 1.7,
-      "Fireball": 1.16,
+      "Ice Lance": 1.43,
+      "Fire Blast": 1.59,
+      "Frost Nova": 0.79,
+      "Wand": 1.78,
+      "Fireball": 1.17,
       "Counterspell": 0.15
      }
     },
     "44": {
-     "seconds": 38.8,
-     "deaths_per_100": 0.25,
+     "seconds": 37.6,
+     "deaths_per_100": 0.0,
      "casts": {
       "Pyroblast": 1.01,
-      "Ice Lance": 1.21,
-      "Fire Blast": 1.9,
-      "Frost Nova": 0.63,
-      "Wand": 1.92,
-      "Fireball": 1.33,
+      "Ice Lance": 1.25,
+      "Fire Blast": 1.88,
+      "Frost Nova": 0.7,
+      "Wand": 1.86,
+      "Fireball": 1.21,
       "Counterspell": 0.16
      }
     },
-    "49": {
-     "seconds": 38.0,
-     "deaths_per_100": 0.5,
-     "casts": {
-      "Pyroblast": 1.01,
-      "Ice Lance": 1.11,
-      "Fire Blast": 1.89,
-      "Frost Nova": 0.61,
-      "Fireball": 1.06,
-      "Wand": 2.06,
-      "Counterspell": 0.15,
-      "Blast Wave": 0.3
-     }
-    },
     "50": {
-     "seconds": 38.0,
+     "seconds": 36.5,
      "deaths_per_100": 0.0,
      "casts": {
-      "Pyroblast": 1.0,
-      "Ice Lance": 1.16,
-      "Fire Blast": 1.9,
-      "Frost Nova": 0.62,
-      "Wand": 2.16,
-      "Fireball": 1.09,
-      "Blast Wave": 0.31,
+      "Pyroblast": 1.01,
+      "Ice Lance": 1.2,
+      "Fire Blast": 1.83,
+      "Frost Nova": 0.69,
+      "Wand": 1.94,
+      "Fireball": 1.18,
       "Counterspell": 0.14
      }
     },
     "58": {
-     "seconds": 34.7,
+     "seconds": 33.7,
      "deaths_per_100": 0.25,
      "casts": {
-      "Pyroblast": 1.0,
-      "Ice Lance": 1.1,
-      "Fire Blast": 1.8,
-      "Frost Nova": 0.56,
-      "Wand": 1.89,
-      "Fireball": 1.0,
-      "Blast Wave": 0.28,
+      "Pyroblast": 1.01,
+      "Ice Lance": 1.11,
+      "Fire Blast": 1.77,
+      "Frost Nova": 0.66,
+      "Wand": 1.67,
+      "Fireball": 1.12,
       "Counterspell": 0.14
      }
     },
     "59": {
-     "seconds": 33.8,
-     "deaths_per_100": 0.5,
+     "seconds": 32.9,
+     "deaths_per_100": 0.25,
      "casts": {
       "Pyroblast": 1.02,
-      "Ice Lance": 1.08,
-      "Fire Blast": 1.81,
-      "Frost Nova": 0.55,
-      "Wand": 1.85,
-      "Fireball": 0.98,
-      "Counterspell": 0.1,
-      "Blast Wave": 0.27
+      "Ice Lance": 1.1,
+      "Fire Blast": 1.79,
+      "Frost Nova": 0.66,
+      "Wand": 1.77,
+      "Fireball": 1.06,
+      "Counterspell": 0.1
      }
     },
     "60": {
-     "seconds": 33.1,
+     "seconds": 31.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Pyroblast": 1.01,
-      "Ice Lance": 1.0,
-      "Fire Blast": 1.79,
-      "Frost Nova": 0.54,
-      "Wand": 1.92,
-      "Fireball": 0.93,
-      "Counterspell": 0.08,
-      "Blast Wave": 0.26
+      "Ice Lance": 1.05,
+      "Fire Blast": 1.74,
+      "Frost Nova": 0.62,
+      "Wand": 1.66,
+      "Fireball": 1.03,
+      "Counterspell": 0.09
      }
     }
    }
@@ -688,7 +696,7 @@
    "build": "frostfire-open-leveling",
    "rotation": "frostfire-leveling",
    "provisional_order": false,
-   "fingerprint": "46e770e52cff",
+   "fingerprint": "1f4cc8f5d1d4",
    "levels": {
     "1": {
      "seconds": 12.8,
@@ -723,98 +731,98 @@
      }
     },
     "19": {
-     "seconds": 41.5,
+     "seconds": 39.7,
      "deaths_per_100": 0.0,
      "casts": {
-      "Frostbolt": 8.0,
-      "Frost Nova": 0.78,
-      "Wand": 0.82
+      "Frostbolt": 7.83,
+      "Wand": 1.28,
+      "Frost Nova": 0.72
      }
     },
     "20": {
-     "seconds": 31.1,
+     "seconds": 29.9,
      "deaths_per_100": 0.0,
      "casts": {
-      "Frostbolt": 4.2,
-      "Wand": 0.72,
-      "Frost Nova": 0.65,
-      "Ice Lance": 1.29
+      "Frostbolt": 4.25,
+      "Wand": 0.74,
+      "Frost Nova": 0.63,
+      "Ice Lance": 1.23
      }
     },
     "24": {
-     "seconds": 36.1,
+     "seconds": 34.5,
      "deaths_per_100": 0.0,
      "casts": {
-      "Frostbolt": 5.0,
-      "Wand": 1.01,
-      "Frost Nova": 0.87,
-      "Ice Lance": 1.7,
-      "Counterspell": 0.23
+      "Frostbolt": 4.99,
+      "Wand": 1.09,
+      "Frost Nova": 0.82,
+      "Ice Lance": 1.67,
+      "Counterspell": 0.22
      }
     },
     "29": {
-     "seconds": 36.2,
+     "seconds": 35.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Frostbolt": 4.5,
-      "Wand": 1.02,
+      "Frostbolt": 4.54,
+      "Wand": 0.95,
       "Frost Nova": 0.86,
-      "Ice Lance": 1.54,
+      "Ice Lance": 1.57,
       "Counterspell": 0.18
      }
     },
     "30": {
-     "seconds": 35.5,
+     "seconds": 34.6,
      "deaths_per_100": 0.0,
      "casts": {
-      "Frostbolt": 4.38,
-      "Ice Lance": 1.72,
-      "Frost Nova": 0.88,
+      "Frostbolt": 4.47,
+      "Ice Lance": 1.69,
+      "Frost Nova": 0.84,
       "Counterspell": 0.16,
-      "Wand": 0.89
+      "Wand": 0.78
      }
     },
     "39": {
-     "seconds": 38.7,
+     "seconds": 38.0,
      "deaths_per_100": 0.0,
      "casts": {
-      "Frostbolt": 4.39,
-      "Ice Lance": 1.93,
-      "Frost Nova": 0.92,
+      "Frostbolt": 4.45,
+      "Ice Lance": 1.88,
+      "Frost Nova": 0.93,
       "Counterspell": 0.16,
-      "Wand": 1.01
+      "Wand": 1.02
      }
     },
     "40": {
-     "seconds": 45.0,
+     "seconds": 45.4,
      "deaths_per_100": 0.0,
      "casts": {
       "Frostfire Bolt": 4.21,
-      "Ice Lance": 2.57,
-      "Wand": 5.07,
-      "Frost Nova": 0.95,
+      "Ice Lance": 2.62,
+      "Wand": 4.99,
+      "Frost Nova": 0.97,
       "Counterspell": 0.15
      }
     },
     "50": {
-     "seconds": 36.1,
-     "deaths_per_100": 0.25,
+     "seconds": 36.3,
+     "deaths_per_100": 0.0,
      "casts": {
-      "Frostfire Bolt": 3.46,
-      "Ice Lance": 2.21,
+      "Frostfire Bolt": 3.45,
+      "Ice Lance": 2.19,
       "Wand": 3.69,
-      "Frost Nova": 0.82,
-      "Counterspell": 0.14
+      "Frost Nova": 0.86,
+      "Counterspell": 0.15
      }
     },
     "60": {
-     "seconds": 32.0,
+     "seconds": 31.5,
      "deaths_per_100": 0.0,
      "casts": {
-      "Frostfire Bolt": 3.15,
-      "Ice Lance": 2.01,
-      "Wand": 3.21,
-      "Frost Nova": 0.76,
+      "Frostfire Bolt": 3.08,
+      "Ice Lance": 2.02,
+      "Wand": 3.28,
+      "Frost Nova": 0.82,
       "Counterspell": 0.09
      }
     }

@@ -99,7 +99,7 @@
  "raid": {
   "class": "rogue",
   "spec": "combat-daggers-raid",
-  "date": "2026-11-08",
+  "date": "2026-11-09",
   "commit": "16e85426c",
   "setting": "raid",
   "tank": false,
@@ -107,17 +107,22 @@
   "start": "ui\\specs\\rogue\\dps\\apls\\combat_backstab.apl.json",
   "builds": [
    {
+    "label": "open winner",
+    "talents": "0053031122125103-312303010201132"
+   },
+   {
     "label": "combat-daggers-raid",
-    "talents": "2053232020101-30532300000123215"
+    "talents": "2053232020101-30532300000123215",
+    "protect_only": true
    },
    {
     "label": "sim preset: Asn Muti",
-    "talents": "00530311231251031-32030302020103-001"
+    "talents": "00530311231251031-32030302020103-001",
+    "protect_only": true
    }
   ],
   "tuned_on": [
-   "combat-daggers-raid",
-   "sim preset: Asn Muti"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -226,13 +231,30 @@
     "gain_seed2": 0.0021921723125168935,
     "candidates": 801,
     "pass": 11
+   },
+   {
+    "round": 14,
+    "change": "threshold 5 -> 3.75: if (combo points \u2265 5 or combo points = 4 and Mutilate is known or combo points \u2265 3 and time left on Slice and Dice \u2264 6s and not variableRef or combo points \u2265 1 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8)",
+    "gain_seed1": 0.006574689065771633,
+    "gain_seed2": 0.006485156187876262,
+    "candidates": 799,
+    "pass": 12
    }
   ],
   "final": {
    "raid": {
+    "open winner": {
+     "before": 726.6045898325189,
+     "after": 787.2610319145323,
+     "base": 726.6045898325189,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
     "combat-daggers-raid": {
      "before": 614.7764553960973,
-     "after": 674.6018778052721,
+     "after": 673.8212990562072,
      "base": 614.7764553960973,
      "before_value": null,
      "after_value": null,
@@ -252,7 +274,8 @@
   },
   "signature": {
    "specs": [
-    "Combat"
+    "Combat",
+    "Hybrid Assassination/Combat"
    ],
    "required": [],
    "rejected": {
@@ -263,6 +286,6 @@
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 11
+  "passes": 12
  }
 }

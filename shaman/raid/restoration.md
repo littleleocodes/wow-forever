@@ -40,7 +40,7 @@ Heal the tank with **Healing Wave** at the rank that covers what it is missing, 
 
 ## The numbers
 
-Healing capacity 0.69 (the raid damage it heals through in this project's healer lab), 396 healing per second. Healers are not in the community simulator.
+Healing capacity 0.69 (the raid damage it heals through in this project's healer lab), 391 healing per second. Healers are not in the community simulator.
 
 **The gear** (average item level: Pre-BiS 60.6; Phase 1 BiS 63.5; chosen by the stat weights this project's healer lab measures for this build, the healing capacity each stat adds; healers are in no community simulator, so this is our model; each item opens its Wowhead page, with where it drops and its enchant):
 

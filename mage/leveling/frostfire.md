@@ -6,11 +6,11 @@
 
 **Leveling from level 1?** [The rotation level by level](frostfire-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Frostfire — Leveling](../research/leveling/builds/frostfire-open-leveling.md)** (3/26/22) — [open the talent tree](https://talentsforever.com/mage/60/201-5550030000003311-2125300301003002-12)
+**[Frostfire — Leveling](../research/leveling/builds/frostfire-open-leveling.md)** (2/25/24) — [open the talent tree](https://talentsforever.com/mage/60/2-55501300000033-0325320301003002-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-**Signature spells:** 37% of the damage at level 60 in the fight lab comes from the spec's core spells (Frostfire Bolt) (the spec's rule: at least 30%; **Frostfire Bolt** cast at level 60).
+**Signature spells:** 38% of the damage at level 60 in the fight lab comes from the spec's core spells (Frostfire Bolt) (the spec's rule: at least 30%; **Frostfire Bolt** cast at level 60).
 
 ## How to play
 
@@ -28,20 +28,20 @@
 
 ## Why this rotation
 
-The Frostfire leveling build is a Frost mage whose bolt changes at level 40: **Frostbolt** before, **Frostfire Bolt** after, with **Frost Nova**, a step back and **Ice Lance** into the freeze throughout. Frost points come first (**Ice Lance** at 20, **Shatter** by 27, **Fingers of Frost** at 30-31), then **Accelerant** (35-39) and the Fire points that make the bolt hit harder: **Ignite**, **Burning Soul**, **Incineration**, **Master of Elements**, **Critical Mass**. In the open leveling search's 20-60 race of 2026-11-06 it took about 36 seconds per kill level-weighted, behind the Frost page's 30.5; the page's numbers table has each level.
+The Frostfire leveling build is a Frost mage whose bolt changes at level 40: **Frostbolt** before, **Frostfire Bolt** after, with **Frost Nova**, a step back and **Ice Lance** into the freeze throughout. Frost points come first (**Ice Lance** at 20, **Shatter** by 27, **Fingers of Frost** at 30-31), then **Accelerant** (35-39) and the Fire points that make the bolt hit harder: **Ignite**, **Burning Soul**, **Incineration**, **Master of Elements**, **Critical Mass** and one point of **Impact** at 60. In the open leveling search's 20-60 race of 2026-11-06 it took about 36 seconds per kill level-weighted, behind the Frost page's 30.5; the page's numbers table has each level.
 
 **Why it works**
 
 - **Frostfire Bolt** (trained at level 40) counts as Frost and Fire, so both trees' talents apply (**Ice Shards**, **Frost Channeling**, **Ignite**, **Critical Mass**, **Master of Elements**), and it slows like **Frostbolt** (40%), so its chill rolls **Frostbite** (15% to freeze) and **Fingers of Frost** (15%: your next 2 spells count as cast on a frozen target). **Accelerant** cuts its 3-second cast to 2.5. The tuned rules (2026-11-06) cast it only while the mob has more than about a third (35%) of its health.
 - Before level 40 **Frostbolt** does the same job, to the end of the fight (the rules veto only **Frostfire Bolt**); finish with an **Ice Lance** that will kill, or the wand.
 - **Ice Lance** and **Shatter** are the build's two most valuable talents in the open search (about 10.3 and 7.6 seconds per kill at 60, then **Ice Shards** 3.7, **Fingers of Frost** 3.3, **Frostbite** 2.2 and **Frost Channeling** 2.1): a frozen mob takes 300% more damage from **Ice Lance**, with 50% more crit chance and **Ice Shards**' bigger crits. It has an 8-second cooldown, one per freeze.
-- **Frost Nova** when the mob reaches you, then step back out of melee.
+- **Frost Nova** when the mob reaches you, then step back out of melee. **Improved Frost Nova** (32, 55) brings it back 4 seconds sooner with both points.
 - No **Fire Blast** and no **Cone of Cold**: the tuned rules switch both off for this list (kills measured faster without), so the finish is an **Ice Lance** that will kill, or the wand.
 - **Master of Elements** refunds 30% of a spell's base cost on each Fire or Frost crit, which **Shatter** makes common; **Critical Mass** adds 6% crit to your Fire spells, **Frostfire Bolt** included, and **Incineration** adds crit to **Ice Lance**.
 
 **Caveats**
 
-- This build takes **Blast Wave**, and **Burning Soul** keeps hits from pushing a Fire cast back (70% at 3 points); the single-target list never casts **Blast Wave**, so it is for packs.
+- **Burning Soul** keeps hits from pushing a Fire cast back (70% at 3 points). The leveling filler pass of 2026-11-09 moved five points that measured nothing or only held a tier open (Blast Wave, Fire Power, Arcane Resilience and both Frost Warding) to **Improved Frostbolt**, **Improved Frost Nova** and **Impact**: 2/25/24, with no Blast Wave for packs.
 - The signature rule: the Frostfire spec must do at least 30% of its damage with **Frostfire Bolt** from level 40. The page shows the build at 37% at level 60 in the fight lab; the rules that keep it there cost a little speed against a plain Frost list.
 - Mana: **Frostfire Bolt** costs 370 at top rank. Drink below 15% of your mana and eat below 40% of your health (the tuned rules); use **Evocation** between fights when it is ready and you are under 40% mana.
 
@@ -57,8 +57,7 @@ One point per level from 10, in this order:
 | Levels | Talent | Points |
 |---|---|---|
 | 10-11 | Precision (Frost) | 2 |
-| 12-13 | Frost Warding (Frost) | 2 |
-| 14 | Improved Frostbolt (Frost) | 1 |
+| 12-14 | Improved Frostbolt (Frost) | 3 |
 | 15-17 | Frostbite (Frost) | 3 |
 | 18-19 | Ice Shards (Frost) | 2 |
 | 20 | Ice Lance (Frost) | 1 |
@@ -67,7 +66,7 @@ One point per level from 10, in this order:
 | 25-27 | Shatter (Frost) | 3 |
 | 28-29 | Frost Channeling (Frost) | 2 |
 | 30-31 | Fingers of Frost (Frost) | 2 |
-| 32 | Arcane Resilience (Arcane) | 1 |
+| 32 | Improved Frost Nova (Frost) | 1 |
 | 33-34 | Wand Specialization (Arcane) | 2 |
 | 35-39 | Accelerant (Fire) | 5 |
 | 40-44 | Ignite (Fire) | 5 |
@@ -75,10 +74,10 @@ One point per level from 10, in this order:
 | 48-49 | Incineration (Fire) | 2 |
 | 50-52 | Master of Elements (Fire) | 3 |
 | 53-54 | Incineration (Fire) | 2 |
-| 55 | Blast Wave (Fire) | 1 |
+| 55 | Improved Frost Nova (Frost) | 1 |
 | 56-58 | Critical Mass (Fire) | 3 |
 | 59 | Incineration (Fire) | 1 |
-| 60 | Fire Power (Fire) | 1 |
+| 60 | Impact (Fire) | 1 |
 
 ## The numbers
 

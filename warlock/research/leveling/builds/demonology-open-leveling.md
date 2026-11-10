@@ -1,10 +1,10 @@
-# Demonology — Leveling (open talent search) — 21/30/0
+# Demonology — Leveling (open talent search) — 22/29/0
 
 *[Warlock](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 21/30/0 (Affliction / Demonology / Destruction) |
+| **Build** | 22/29/0 (Affliction / Demonology / Destruction) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -15,21 +15,21 @@ The Demonology leveling build the open leveling search found on 2026-11-08: ever
 
 ## Point allocation
 
-### Affliction (21)
+### Affliction (22)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Life Tap** | 2/2 | moved | Increases the amount of Mana awarded by your Life Tap spell by 20%. |
 | **Suppression** | 4/5 | changed | Improves your chance to hit by 4% and reduces all threat you generate by 16%. |
-| **Improved Corruption** | 3/5 | changed | Reduces the casting time of your Corruption spell by 1.2 sec and increases the damage it deals by 6%. |
+| **Improved Corruption** | 5/5 | changed | Reduces the casting time of your Corruption spell by 2 sec and increases the damage it deals by 10%. |
 | **Grim Reach** | 1/2 | **NEW** | Increases the range of your Affliction spells by 10%. |
 | **Improved Bane of Agony** | 2/2 | **NEW** | Increases the damage done by your Bane of Agony by 10%. |
 | **Amplify Curse** | 1/1 | changed | Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 20%. Lasts 30 sec. |
 | **Pandemic** | 3/3 | **NEW** | Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and Wrack spells by 100%. |
-| **Malevolence** | 4/5 | **NEW** | Increases the critical effect chance of your Shadow spells by 4%. |
+| **Malevolence** | 3/5 | **NEW** | Increases the critical effect chance of your Shadow spells by 3%. |
 | **Siphon Life** | 1/1 | changed | Transfers 11 health from the target to the caster every 3 sec. Lasts 30 sec. |
 
-### Demonology (30)
+### Demonology (29)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -45,7 +45,7 @@ The Demonology leveling build the open leveling search found on 2026-11-08: ever
 | **Improved Felhunter** | 1/3 | **NEW** | Increases the Attack Power reduction of your Felhunter's Tainted Blood, the healing of its Devour Magic, and the detection level of its Paranoia by 10%, and reduces the cooldown of its Spell Lock by 2 sec. |
 | **Soul Link** | 1/1 | changed | When active, 30% of all damage taken by the caster is taken by your Imp, Voidwalker, Succubus, Incubus, or Felhunter Demon instead. In addition, both the Demon and the master will inflict 3% more damage. Lasts as long as the Demon is active. |
 | **Demonic Knowledge** | 3/3 | **NEW** | Increases your spell damage and your Demon pet's spell damage by up to 100% of your level while you have a summoned Demon pet active. |
-| **Master Demonologist** | 5/5 | changed | Grants both the Warlock and the summoned demon an effect as long as that demon is active.  Imp - Increases Fire damage done by 10%.  Voidwalker - Reduces Physical damage taken by 10%.  Succubus/Incubus - Increases Shadow damage done by 10%.  Felhunter - Reduces Magic damage taken by 10%. |
+| **Master Demonologist** | 4/5 | changed | Grants both the Warlock and the summoned demon an effect as long as that demon is active.  Imp - Increases Fire damage done by 8%.  Voidwalker - Reduces Physical damage taken by 8%.  Succubus/Incubus - Increases Shadow damage done by 8%.  Felhunter - Reduces Magic damage taken by 8%. |
 
 ### Destruction (0)
 
@@ -69,16 +69,18 @@ The Demonology leveling build the open leveling search found on 2026-11-08: ever
 | 31-33 | Demonology | Demonic Knowledge | 3 | 0/24/0 |
 | 34 | Demonology | Improved Felhunter | 1 | 0/25/0 |
 | 35-37 | Affliction | Improved Corruption | 3 | 3/25/0 |
-| 38-42 | Demonology | Master Demonologist | 5 | 3/30/0 |
-| 43-44 | Affliction | Improved Life Tap | 2 | 5/30/0 |
-| 45-48 | Affliction | Suppression | 4 | 9/30/0 |
-| 49 | Affliction | Grim Reach | 1 | 10/30/0 |
-| 50 | Affliction | Amplify Curse | 1 | 11/30/0 |
-| 51-52 | Affliction | Improved Bane of Agony | 2 | 13/30/0 |
-| 53-54 | Affliction | Pandemic | 2 | 15/30/0 |
-| 55-58 | Affliction | Malevolence | 4 | 19/30/0 |
-| 59 | Affliction | Pandemic | 1 | 20/30/0 |
-| 60 | Affliction | Siphon Life | 1 | 21/30/0 |
+| 38-41 | Demonology | Master Demonologist | 4 | 3/29/0 |
+| 42 | Affliction | Improved Corruption | 1 | 4/29/0 |
+| 43-44 | Affliction | Improved Life Tap | 2 | 6/29/0 |
+| 45-48 | Affliction | Suppression | 4 | 10/29/0 |
+| 49 | Affliction | Grim Reach | 1 | 11/29/0 |
+| 50 | Affliction | Amplify Curse | 1 | 12/29/0 |
+| 51-52 | Affliction | Improved Bane of Agony | 2 | 14/29/0 |
+| 53-54 | Affliction | Pandemic | 2 | 16/29/0 |
+| 55-57 | Affliction | Malevolence | 3 | 19/29/0 |
+| 58 | Affliction | Improved Corruption | 1 | 20/29/0 |
+| 59 | Affliction | Pandemic | 1 | 21/29/0 |
+| 60 | Affliction | Siphon Life | 1 | 22/29/0 |
 
 ## Core talents (priority order)
 
@@ -97,6 +99,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
+- 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Master Demonologist to Improved Corruption at 42 (measured: -0.5% seed 3, -0.5% seed 4, level-weighted time per kill); Malevolence to Improved Corruption at 58 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill).
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 30.92; demonology-leveling 31.14. The search simulated 25,765 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 

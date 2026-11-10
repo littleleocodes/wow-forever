@@ -248,5 +248,188 @@
    "talent": "Bestial Discipline",
    "points": 2
   }
- ]
+ ],
+ "written": {
+  "allocation": {
+   "Beast Mastery": [
+    [
+     "Deadly Aspects",
+     5
+    ],
+    [
+     "Endurance Training",
+     3
+    ],
+    [
+     "Focused Fire",
+     2
+    ],
+    [
+     "Unleashed Fury",
+     5
+    ],
+    [
+     "Ferocity",
+     5
+    ],
+    [
+     "Bestial Discipline",
+     2
+    ]
+   ],
+   "Marksmanship": [
+    [
+     "Lethal Attacks",
+     5
+    ]
+   ],
+   "Survival": [
+    [
+     "Improved Tracking",
+     5
+    ],
+    [
+     "Deflection",
+     2
+    ],
+    [
+     "Savage Strikes",
+     2
+    ],
+    [
+     "Survivalist",
+     1
+    ],
+    [
+     "Clever Traps",
+     2
+    ],
+    [
+     "Surefooted",
+     3
+    ],
+    [
+     "Survival Tactics",
+     1
+    ],
+    [
+     "Predator's Edge",
+     4
+    ],
+    [
+     "Resourcefulness",
+     2
+    ],
+    [
+     "Survivalist's Discipline",
+     2
+    ]
+   ]
+  },
+  "order": [
+   {
+    "levels": "10-14",
+    "tree": "Survival",
+    "talent": "Improved Tracking",
+    "points": 5
+   },
+   {
+    "levels": "15-16",
+    "tree": "Survival",
+    "talent": "Savage Strikes",
+    "points": 2
+   },
+   {
+    "levels": "17-18",
+    "tree": "Survival",
+    "talent": "Deflection",
+    "points": 2
+   },
+   {
+    "levels": "19",
+    "tree": "Survival",
+    "talent": "Survivalist",
+    "points": 1
+   },
+   {
+    "levels": "20-22",
+    "tree": "Survival",
+    "talent": "Surefooted",
+    "points": 3
+   },
+   {
+    "levels": "23-24",
+    "tree": "Survival",
+    "talent": "Clever Traps",
+    "points": 2
+   },
+   {
+    "levels": "25-28",
+    "tree": "Survival",
+    "talent": "Predator's Edge",
+    "points": 4
+   },
+   {
+    "levels": "29",
+    "tree": "Survival",
+    "talent": "Survival Tactics",
+    "points": 1
+   },
+   {
+    "levels": "30-31",
+    "tree": "Survival",
+    "talent": "Resourcefulness",
+    "points": 2
+   },
+   {
+    "levels": "32-33",
+    "tree": "Survival",
+    "talent": "Survivalist's Discipline",
+    "points": 2
+   },
+   {
+    "levels": "34-38",
+    "tree": "Marksmanship",
+    "talent": "Lethal Attacks",
+    "points": 5
+   },
+   {
+    "levels": "39-43",
+    "tree": "Beast Mastery",
+    "talent": "Deadly Aspects",
+    "points": 5
+   },
+   {
+    "levels": "44-45",
+    "tree": "Beast Mastery",
+    "talent": "Focused Fire",
+    "points": 2
+   },
+   {
+    "levels": "46-48",
+    "tree": "Beast Mastery",
+    "talent": "Endurance Training",
+    "points": 3
+   },
+   {
+    "levels": "49-53",
+    "tree": "Beast Mastery",
+    "talent": "Unleashed Fury",
+    "points": 5
+   },
+   {
+    "levels": "54-58",
+    "tree": "Beast Mastery",
+    "talent": "Ferocity",
+    "points": 5
+   },
+   {
+    "levels": "59-60",
+    "tree": "Beast Mastery",
+    "talent": "Bestial Discipline",
+    "points": 2
+   }
+  ],
+  "note": "2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Aspect of the Monkey to Unleashed Fury at 53 (gate: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Improved Aspect of the Monkey to Unleashed Fury at 52 (gate: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill)."
+ }
 }

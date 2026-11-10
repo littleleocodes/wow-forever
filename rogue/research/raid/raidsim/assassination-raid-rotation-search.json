@@ -118,16 +118,22 @@
   "start": "ui\\specs\\rogue\\dps\\apls\\forever_mutilate.apl.json",
   "builds": [
    {
-    "label": "assassination-mutilate-raid",
-    "talents": "3153232022111003-305313000001222"
-   },
-   {
-    "label": "sim preset: Asn Muti",
-    "talents": "00530311231251031-32030302020103-001"
+    "label": "open winner",
+    "talents": "00530311230351031-31131301020103-001"
    },
    {
     "label": "assassination-seal-fate-raid",
     "talents": "0053231022151003-305313000001221-002",
+    "protect_only": true
+   },
+   {
+    "label": "sim preset: Asn Muti",
+    "talents": "00530311231251031-32030302020103-001",
+    "protect_only": true
+   },
+   {
+    "label": "assassination-mutilate-raid",
+    "talents": "3153232022111003-305313000001222",
     "protect_only": true
    },
    {
@@ -142,8 +148,7 @@
    }
   ],
   "tuned_on": [
-   "assassination-mutilate-raid",
-   "sim preset: Asn Muti"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -239,10 +244,19 @@
   ],
   "final": {
    "raid": {
-    "assassination-mutilate-raid": {
-     "before": 610.3587338669743,
-     "after": 678.7200510292726,
-     "base": 610.3587338669743,
+    "open winner": {
+     "before": 804.2740203142894,
+     "after": 812.9941500202303,
+     "base": 804.2740203142894,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "assassination-seal-fate-raid": {
+     "before": 608.6514584439602,
+     "after": 687.2766138973888,
+     "base": 608.6514584439602,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -257,10 +271,10 @@
      "oom_before": 0,
      "oom_after": 0
     },
-    "assassination-seal-fate-raid": {
-     "before": 608.6514584439602,
-     "after": 687.2766138973888,
-     "base": 608.6514584439602,
+    "assassination-mutilate-raid": {
+     "before": 610.3587338669743,
+     "after": 678.7200510292726,
+     "base": 610.3587338669743,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -295,13 +309,13 @@
     "Mutilate"
    ],
    "rejected": {
-    "structure": 61,
+    "structure": 15,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 14
+  "passes": 15
  }
 }

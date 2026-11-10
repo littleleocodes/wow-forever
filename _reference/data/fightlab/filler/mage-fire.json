@@ -418,5 +418,248 @@
    "talent": "Master of Elements",
    "points": 1
   }
- ]
+ ],
+ "written": {
+  "allocation": {
+   "Arcane": [
+    [
+     "Wand Specialization",
+     1
+    ]
+   ],
+   "Fire": [
+    [
+     "Incineration",
+     5
+    ],
+    [
+     "Accelerant",
+     5
+    ],
+    [
+     "Ignite",
+     5
+    ],
+    [
+     "Burning Soul",
+     2
+    ],
+    [
+     "Pyroblast",
+     1
+    ],
+    [
+     "Improved Fire Blast",
+     2
+    ],
+    [
+     "Improved Scorch",
+     1
+    ],
+    [
+     "Heating Up",
+     1
+    ],
+    [
+     "Master of Elements",
+     3
+    ],
+    [
+     "Critical Mass",
+     3
+    ],
+    [
+     "Fire Power",
+     3
+    ],
+    [
+     "Combustion",
+     1
+    ]
+   ],
+   "Frost": [
+    [
+     "Frost Warding",
+     2
+    ],
+    [
+     "Precision",
+     3
+    ],
+    [
+     "Ice Shards",
+     4
+    ],
+    [
+     "Frostbite",
+     3
+    ],
+    [
+     "Improved Frost Nova",
+     2
+    ],
+    [
+     "Ice Lance",
+     1
+    ],
+    [
+     "Shatter",
+     3
+    ]
+   ]
+  },
+  "order": [
+   {
+    "levels": "10-14",
+    "tree": "Fire",
+    "talent": "Accelerant",
+    "points": 5
+   },
+   {
+    "levels": "15-19",
+    "tree": "Fire",
+    "talent": "Ignite",
+    "points": 5
+   },
+   {
+    "levels": "20",
+    "tree": "Fire",
+    "talent": "Pyroblast",
+    "points": 1
+   },
+   {
+    "levels": "21-22",
+    "tree": "Frost",
+    "talent": "Precision",
+    "points": 2
+   },
+   {
+    "levels": "23-24",
+    "tree": "Frost",
+    "talent": "Frost Warding",
+    "points": 2
+   },
+   {
+    "levels": "25",
+    "tree": "Frost",
+    "talent": "Precision",
+    "points": 1
+   },
+   {
+    "levels": "26",
+    "tree": "Frost",
+    "talent": "Improved Frost Nova",
+    "points": 1
+   },
+   {
+    "levels": "27-29",
+    "tree": "Frost",
+    "talent": "Frostbite",
+    "points": 3
+   },
+   {
+    "levels": "30",
+    "tree": "Frost",
+    "talent": "Ice Shards",
+    "points": 1
+   },
+   {
+    "levels": "31",
+    "tree": "Frost",
+    "talent": "Ice Lance",
+    "points": 1
+   },
+   {
+    "levels": "32-34",
+    "tree": "Frost",
+    "talent": "Ice Shards",
+    "points": 3
+   },
+   {
+    "levels": "35",
+    "tree": "Arcane",
+    "talent": "Wand Specialization",
+    "points": 1
+   },
+   {
+    "levels": "36",
+    "tree": "Frost",
+    "talent": "Improved Frost Nova",
+    "points": 1
+   },
+   {
+    "levels": "37-39",
+    "tree": "Frost",
+    "talent": "Shatter",
+    "points": 3
+   },
+   {
+    "levels": "40-41",
+    "tree": "Fire",
+    "talent": "Improved Fire Blast",
+    "points": 2
+   },
+   {
+    "levels": "42-43",
+    "tree": "Fire",
+    "talent": "Burning Soul",
+    "points": 2
+   },
+   {
+    "levels": "44",
+    "tree": "Fire",
+    "talent": "Heating Up",
+    "points": 1
+   },
+   {
+    "levels": "45-46",
+    "tree": "Fire",
+    "talent": "Incineration",
+    "points": 2
+   },
+   {
+    "levels": "47",
+    "tree": "Fire",
+    "talent": "Improved Scorch",
+    "points": 1
+   },
+   {
+    "levels": "48-50",
+    "tree": "Fire",
+    "talent": "Incineration",
+    "points": 3
+   },
+   {
+    "levels": "51-53",
+    "tree": "Fire",
+    "talent": "Critical Mass",
+    "points": 3
+   },
+   {
+    "levels": "54-56",
+    "tree": "Fire",
+    "talent": "Fire Power",
+    "points": 3
+   },
+   {
+    "levels": "57-58",
+    "tree": "Fire",
+    "talent": "Master of Elements",
+    "points": 2
+   },
+   {
+    "levels": "59",
+    "tree": "Fire",
+    "talent": "Combustion",
+    "points": 1
+   },
+   {
+    "levels": "60",
+    "tree": "Fire",
+    "talent": "Master of Elements",
+    "points": 1
+   }
+  ],
+  "note": "2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Ice Block to Improved Frost Nova at 36 (measured: -0.3% seed 3, -0.5% seed 4, level-weighted time per kill); Ice Shards to Wand Specialization at 35 (no loss: -0.3% seed 3, +0.0% seed 4, level-weighted time per kill); Permafrost to Improved Frost Nova at 26 (gate: -0.5% seed 3, -0.7% seed 4, level-weighted time per kill); Blast Wave to Incineration at 49 (gate: -0.6% seed 3, -0.4% seed 4, level-weighted time per kill); Improved Scorch to Incineration at 50 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Impact to Incineration at 46 (gate: -0.4% seed 3, -0.2% seed 4, level-weighted time per kill); Improved Scorch to Incineration at 48 (gate: -0.2% seed 3, -0.3% seed 4, level-weighted time per kill); Burning Soul to Incineration at 45 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill)."
+ }
 }

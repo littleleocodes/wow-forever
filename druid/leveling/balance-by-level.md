@@ -4,7 +4,7 @@
 
 What a Balance druid presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Balance stays a caster the whole way: **Wrath** from level 1, **Moonfire** at the pull from 4, **Regrowth** from range from 12, **Starfire** woven with **Eclipse** from 30 and **Moonkin Form** from 40. The page build (36/0/15) puts 36 points in Balance and 15 in Restoration for Intellect, pushback, mana and damage; it skips **Insect Swarm**. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 36/0/15 ([open the talent tree](https://talentsforever.com/druid/60/5032203105501351--5253-12)), the one on the [Balance leveling page](balance.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 36/0/15 ([open the talent tree](https://talentsforever.com/druid/60/5332200105501351--5253-12)), the one on the [Balance leveling page](balance.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -146,7 +146,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Entangling Roots at 28; Healing Touch at 20, 26; Moonfire at 22, 28; Nature's Grasp at 28; Regrowth at 24; Rejuvenation at 22, 28; Starfire at 26; Wrath at 22.
 
-**Talents:** 20-21 Nature's Majesty, 22 Nature's Splendor, 23-24 Improved Entangling Roots, 25-29 Improved Starfire.
+**Talents:** 20-21 Nature's Majesty, 22 Nature's Splendor, 23-24 Genesis, 25-29 Improved Starfire.
 
 **Keys to set:** R = Starfire; 4 = Remove Curse (at 24); 3 = Abolish Poison (at 26).
 
@@ -163,11 +163,11 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Starfire** (20) is your biggest hit and a 3.5-second cast that the mob's hits push back. The fight lab casts it only into a root or a stun, so at these levels it almost never does.
 - **Improved Starfire** (25-29): **Starfire** casts 0.5 s faster and stuns the mob for 3 s 15% of the time.
 - **Nature's Majesty** (20-21): 4% more critical strike chance. **Nature's Splendor** (22): **Moonfire** burns 3 s longer.
-- **Improved Entangling Roots** (23-24): the roots hit harder and hold through more damage (the fight lab does not model the hold).
+- **Genesis** (23-24, 45): **Moonfire**'s burn and your heals over time do 2% more a point, 6% at 3. Small; its first two points open the rows above.
 - **Omen of Clarity** (20) is a buff: keep it on, no key. **Cat Form** (20) is for the Feral build.
 - **Insect Swarm** is a talent this build skips.
 
-*Fight lab, seconds per kill: 37 at level 20, 49 at level 29. Presses per kill at level 20: Wrath 9.3, Moonfire 2.1.*
+*Fight lab, seconds per kill: 37 at level 20, 48 at level 29. Presses per kill at level 20: Wrath 9.3, Moonfire 2.1.*
 
 ## Levels 30-39: Wrath, then Starfire
 
@@ -195,7 +195,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Vengeance** (34, 37, 39, 41-42): your Arcane and Nature critical hits do more damage. **Moonfury** (35-36, 38, 43-44): 10% more Arcane and Nature damage at 5 points.
 - **Travel Form** (30) is the road between mobs.
 
-*Fight lab, seconds per kill: 42 at level 30, 46 at level 39. Presses per kill at level 30: Starfire 3.9, Wrath 2.1, Moonfire 1.5.*
+*Fight lab, seconds per kill: 42 at level 30, 46 at level 39. Presses per kill at level 30: Starfire 3.9, Wrath 2.0, Moonfire 1.5.*
 
 ## Levels 40-45: Moonkin Form
 
@@ -203,7 +203,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Healing Touch at 44; Moonfire at 40; Regrowth at 42; Rejuvenation at 40; Starfire at 42.
 
-**Talents:** 40 Moonkin Form, 41-42 Vengeance, 43-44 Moonfury, 45 Improved Entangling Roots.
+**Talents:** 40 Moonkin Form, 41-42 Vengeance, 43-44 Moonfury, 45 Genesis.
 
 **Keys to set:** C = Innervate; Shift+Q = Moonkin Form; Shift+1 = Hurricane; F = Barkskin (at 44).
 
@@ -224,7 +224,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Innervate** (40): mana for you after a run of hard pulls, or for a group's healer.
 - **Barkskin** (44): 20% less physical damage for 15 s, and the mob's hits no longer push your casts back. The form blocks only heals, so it works in **Moonkin Form**; the fight lab does not cast it.
 
-*Fight lab, seconds per kill: 45 at level 40, 40 at level 45. Presses per kill at level 40: Starfire 4.7, Wrath 2.3, Moonfire 1.6.*
+*Fight lab, seconds per kill: 45 at level 40, 40 at level 45. Presses per kill at level 40: Starfire 4.6, Wrath 2.3, Moonfire 1.6.*
 
 ## Levels 46-60: The same play to 60
 
@@ -251,7 +251,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Reflection** (51, 57-58): up to half your mana regeneration keeps going while you cast.
 - **Naturalist** (52-56): 10% more damage at 5 points.
 
-*Fight lab, seconds per kill: 41 at level 46, 38 at level 50, 31 at level 60. Presses per kill at level 46: Starfire 4.0, Wrath 2.0, Moonfire 1.4.*
+*Fight lab, seconds per kill: 39 at level 46, 37 at level 50, 31 at level 60. Presses per kill at level 46: Starfire 3.9, Wrath 2.0, Moonfire 1.4.*
 
 ## Between fights
 

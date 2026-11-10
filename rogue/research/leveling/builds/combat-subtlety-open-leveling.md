@@ -41,14 +41,13 @@ The Combat-Subtlety (a Combat/Subtlety hybrid) leveling build the open leveling 
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Setup** | 1/3 | changed | Gives you a 15% chance to add a Combo Point to your target after Dodging their attack or fully resisting one of their spells. |
+| **Setup** | 3/3 | changed | Gives you a 45% chance to add a Combo Point to your target after Dodging their attack or fully resisting one of their spells. |
 | **Opportunity** | 5/5 | changed | Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 20%. |
 | **Dirty Deeds** | 1/2 | changed | Reduces the Energy cost of your Cheap Shot and Garrote abilities by 10, and your Garrote ability no longer requires you to be behind your target. |
 | **Improved Ambush** | 3/3 | moved | Increases the critical strike chance of your Ambush ability by 45%. |
 | **Initiative** | 3/3 | changed | Gives you a 100% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability. |
 | **Premeditation** | 1/1 | changed | Adds 2 Combo Points to your target. You must add to or use those combo points within 20 sec or the combo points are lost. |
 | **Serrated Blades** | 3/3 | changed | Causes your attacks to ignore 9% of your target's Armor and increases the damage dealt by your Rupture ability by 30%. |
-| **Elusiveness** | 2/2 | unchanged | Reduces the cooldown of your Vanish and Blind abilities by 90 sec. |
 | **Ghostly Strike** | 1/1 | changed | A strike that deals 125% (180% if a Dagger is equipped in your Main Hand) weapon damage and increases your chance to dodge by 15% for 7 sec. Awards 1 combo point. Also causes your next Ambush or Garrote cast within 7 seconds to not require Stealth. |
 | **Hemorrhage** | 1/1 | changed | An instant strike that deals 100% weapon damage (145% if a Dagger is equipped) and increases the damage of the caster's Rupture and Garrote abilities by 15%. Lasts 15 sec. Awards 1 Combo Point. |
 
@@ -80,7 +79,7 @@ The Combat-Subtlety (a Combat/Subtlety hybrid) leveling build the open leveling 
 | 52-53 | Subtlety | Initiative | 2 | 5/21/18 |
 | 54-55 | Combat | Dual Wield Specialization | 2 | 5/23/18 |
 | 56-57 | Combat | Hack and Slash | 2 | 5/25/18 |
-| 58-59 | Subtlety | Elusiveness | 2 | 5/25/20 |
+| 58-59 | Subtlety | Setup | 2 | 5/25/20 |
 | 60 | Subtlety | Hemorrhage | 1 | 5/25/21 |
 
 ## Core talents (priority order)
@@ -100,6 +99,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
+- 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Elusiveness to Setup at 59 (gate: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Elusiveness to Setup at 58 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 20.89; subtlety-open-leveling 22.41, subtlety-leveling 23.33. The search simulated 54,137 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.

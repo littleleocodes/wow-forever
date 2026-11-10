@@ -1,0 +1,301 @@
+{
+ "class": "warrior",
+ "spec": "Arms",
+ "build": "arms-open-leveling",
+ "rotation": "arms-2h-raid",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-12",
+   "tree": "Arms",
+   "talent": "Improved Rend",
+   "points": 3
+  },
+  {
+   "levels": "13-14",
+   "tree": "Arms",
+   "talent": "Deflection",
+   "points": 2
+  },
+  {
+   "levels": "15-16",
+   "tree": "Arms",
+   "talent": "Improved Overpower",
+   "points": 2
+  },
+  {
+   "levels": "17-18",
+   "tree": "Arms",
+   "talent": "Improved Charge",
+   "points": 2
+  },
+  {
+   "levels": "19",
+   "tree": "Arms",
+   "talent": "Improved Tactical Mastery",
+   "points": 1
+  },
+  {
+   "levels": "20-22",
+   "tree": "Arms",
+   "talent": "Deep Wounds",
+   "points": 3
+  },
+  {
+   "levels": "23-24",
+   "tree": "Arms",
+   "talent": "Improved Tactical Mastery",
+   "points": 2
+  },
+  {
+   "levels": "25",
+   "tree": "Arms",
+   "talent": "Anger Management",
+   "points": 1
+  },
+  {
+   "levels": "26-28",
+   "tree": "Arms",
+   "talent": "Two-Handed Weapon Specialization",
+   "points": 3
+  },
+  {
+   "levels": "29",
+   "tree": "Arms",
+   "talent": "Impale",
+   "points": 1
+  },
+  {
+   "levels": "30-31",
+   "tree": "Arms",
+   "talent": "Bloodthrill",
+   "points": 2
+  },
+  {
+   "levels": "32-34",
+   "tree": "Arms",
+   "talent": "Weaponmaster",
+   "points": 3
+  },
+  {
+   "levels": "35-36",
+   "tree": "Arms",
+   "talent": "Improved Slam",
+   "points": 2
+  },
+  {
+   "levels": "37-38",
+   "tree": "Arms",
+   "talent": "Weaponmaster",
+   "points": 2
+  },
+  {
+   "levels": "39",
+   "tree": "Arms",
+   "talent": "Sweeping Strikes",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Arms",
+   "talent": "Mortal Strike",
+   "points": 1
+  },
+  {
+   "levels": "41-45",
+   "tree": "Fury",
+   "talent": "Cruelty",
+   "points": 5
+  },
+  {
+   "levels": "46",
+   "tree": "Arms",
+   "talent": "Impale",
+   "points": 1
+  },
+  {
+   "levels": "47-50",
+   "tree": "Fury",
+   "talent": "Unbridled Wrath",
+   "points": 4
+  },
+  {
+   "levels": "51",
+   "tree": "Fury",
+   "talent": "Lingering Rage",
+   "points": 1
+  },
+  {
+   "levels": "52-56",
+   "tree": "Fury",
+   "talent": "Enrage",
+   "points": 5
+  },
+  {
+   "levels": "57-58",
+   "tree": "Fury",
+   "talent": "Improved Execute",
+   "points": 2
+  },
+  {
+   "levels": "59-60",
+   "tree": "Protection",
+   "talent": "Improved Bloodrage",
+   "points": 2
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 24.687,
+   "values_at_60": {
+    "Impale": -0.313,
+    "Improved Bloodrage": -0.329,
+    "Improved Execute": -0.266,
+    "Mortal Strike": -36.036
+   },
+   "zero": []
+  }
+ ],
+ "moves": [],
+ "final_order": [
+  {
+   "levels": "10-12",
+   "tree": "Arms",
+   "talent": "Improved Rend",
+   "points": 3
+  },
+  {
+   "levels": "13-14",
+   "tree": "Arms",
+   "talent": "Deflection",
+   "points": 2
+  },
+  {
+   "levels": "15-16",
+   "tree": "Arms",
+   "talent": "Improved Overpower",
+   "points": 2
+  },
+  {
+   "levels": "17-18",
+   "tree": "Arms",
+   "talent": "Improved Charge",
+   "points": 2
+  },
+  {
+   "levels": "19",
+   "tree": "Arms",
+   "talent": "Improved Tactical Mastery",
+   "points": 1
+  },
+  {
+   "levels": "20-22",
+   "tree": "Arms",
+   "talent": "Deep Wounds",
+   "points": 3
+  },
+  {
+   "levels": "23-24",
+   "tree": "Arms",
+   "talent": "Improved Tactical Mastery",
+   "points": 2
+  },
+  {
+   "levels": "25",
+   "tree": "Arms",
+   "talent": "Anger Management",
+   "points": 1
+  },
+  {
+   "levels": "26-28",
+   "tree": "Arms",
+   "talent": "Two-Handed Weapon Specialization",
+   "points": 3
+  },
+  {
+   "levels": "29",
+   "tree": "Arms",
+   "talent": "Impale",
+   "points": 1
+  },
+  {
+   "levels": "30-31",
+   "tree": "Arms",
+   "talent": "Bloodthrill",
+   "points": 2
+  },
+  {
+   "levels": "32-34",
+   "tree": "Arms",
+   "talent": "Weaponmaster",
+   "points": 3
+  },
+  {
+   "levels": "35-36",
+   "tree": "Arms",
+   "talent": "Improved Slam",
+   "points": 2
+  },
+  {
+   "levels": "37-38",
+   "tree": "Arms",
+   "talent": "Weaponmaster",
+   "points": 2
+  },
+  {
+   "levels": "39",
+   "tree": "Arms",
+   "talent": "Sweeping Strikes",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Arms",
+   "talent": "Mortal Strike",
+   "points": 1
+  },
+  {
+   "levels": "41-45",
+   "tree": "Fury",
+   "talent": "Cruelty",
+   "points": 5
+  },
+  {
+   "levels": "46",
+   "tree": "Arms",
+   "talent": "Impale",
+   "points": 1
+  },
+  {
+   "levels": "47-50",
+   "tree": "Fury",
+   "talent": "Unbridled Wrath",
+   "points": 4
+  },
+  {
+   "levels": "51",
+   "tree": "Fury",
+   "talent": "Lingering Rage",
+   "points": 1
+  },
+  {
+   "levels": "52-56",
+   "tree": "Fury",
+   "talent": "Enrage",
+   "points": 5
+  },
+  {
+   "levels": "57-58",
+   "tree": "Fury",
+   "talent": "Improved Execute",
+   "points": 2
+  },
+  {
+   "levels": "59-60",
+   "tree": "Protection",
+   "talent": "Improved Bloodrage",
+   "points": 2
+  }
+ ]
+}

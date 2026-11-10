@@ -75,7 +75,7 @@ The Assassination build the machine-learning talent search found in a full raid 
   9. spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike (+2.0%, pass 5)
   10. drop: if energy ≤ 43.5 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea (+2.8%, pass 8)
   11. spell probe: insert at the top: if auraIsInactive: cast Adrenaline Rush (+1.8%, pass 9)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 14 passes, the last 2026-11-09, 11 changes to the base rotation; third-seed check: assassination-mutilate-raid 610 -> 679 DPS (+11.2%), sim preset: Asn Muti 804 -> 812 DPS (+0.9%), assassination-seal-fate-raid 609 -> 687 DPS (+12.9%), assassination-ml-raid 628 -> 696 DPS (+10.7%), daggers-split-open-raid 606 -> 686 DPS (+13.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 15 passes, the last 2026-11-09, 11 changes to the base rotation; third-seed check: open winner 804 -> 813 DPS (+1.1%), assassination-seal-fate-raid 609 -> 687 DPS (+12.9%), sim preset: Asn Muti 804 -> 812 DPS (+0.9%), assassination-mutilate-raid 610 -> 679 DPS (+11.2%), assassination-ml-raid 628 -> 696 DPS (+10.7%), daggers-split-open-raid 606 -> 686 DPS (+13.1%)):
   1. insert before the filler: cast Backstab (+0.8%, pass 1)
   2. spell probe: insert at the end: cast Hemorrhage (+9.9%, pass 5)
   3. spell probe: insert in the middle: if auraIsInactive: cast Ghostly Strike (+1.8%, pass 5)

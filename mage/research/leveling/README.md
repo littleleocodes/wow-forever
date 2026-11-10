@@ -17,11 +17,11 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 | Build | Split | Role |
 |---|---|---|
 | [Arcane — Leveling (derived)](builds/arcane-leveling.md) 🔬 | 29/0/22 | DPS |
-| [Fire — Leveling (derived)](builds/fire-leveling.md) 🔬 | 0/32/19 | DPS |
-| [Arcane — Leveling (open talent search)](builds/arcane-open-leveling.md) 🔬 | 30/0/21 | DPS |
+| [Fire — Leveling (derived)](builds/fire-leveling.md) 🔬 | 1/32/18 | DPS |
+| [Arcane — Leveling (open talent search)](builds/arcane-open-leveling.md) 🔬 | 31/0/20 | DPS |
 | [Frost — Leveling (open talent search)](builds/frost-open-leveling.md) 🔬 | 18/3/30 | DPS |
 | [Arcane-Frost — Leveling (open talent search)](builds/arcane-frost-open-leveling.md) 🔬 | 23/0/28 | DPS |
-| [Frostfire — Leveling (open talent search)](builds/frostfire-open-leveling.md) 🔬 | 3/26/22 | DPS |
+| [Frostfire — Leveling (open talent search)](builds/frostfire-open-leveling.md) 🔬 | 2/25/24 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

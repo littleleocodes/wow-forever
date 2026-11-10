@@ -2,7 +2,7 @@
 
 [Druid](../README.md) > [Raid (group)](README.md) > Restoration
 
-**[Restoration — Raid healing](../research/raid/builds/restoration-ml-heal.md)** (11/0/40) — [open the talent tree](https://talentsforever.com/druid/60/15022001--355300515311305-12)
+**[Restoration — Raid healing](../research/raid/builds/restoration-ml-heal.md)** (16/0/35) — [open the talent tree](https://talentsforever.com/druid/60/55022101--0533005153103231-12)
 
 > 🔬 Derived build: found by this project's deep search over every legal build of the spec in the healer lab (this project's healing model; healers are not in the community simulator), then raced against the spec's builds; it beat the hand-made build (Restoration — Raid Healer), which stays below as the alternative. A model of the beta, to check at launch.
 
@@ -34,12 +34,14 @@ Keep **Rejuvenation** on the tank and heal it with **Healing Touch** at the rank
 - Curses and poisons: **Remove Curse** and **Abolish Poison** are yours to cast. The lab does not model them, so dispel when the debuff would cost more health than your next heal restores.
 - If your raid's damage comes in bursts on whole parties, the hand-made build under Other builds takes Wild Growth; in the lab's steady damage this build heals more.
 
+*This guide was written for the rotation of 2026-11-08; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents
 
 | Tree | Points | Talents (ranks) |
 |---|---|---|
-| Balance | 11 | Improved Wrath 1, Genesis 5, Improved Moonfire 2, Nature's Majesty 2, Nature's Splendor 1 |
-| Restoration | 40 | Nature's Focus 3, Heart of the Wild 5, Naturalist 5, Reflection 3, Gift of Nature 5, Tranquil Spirit 5, Improved Rejuvenation 3, Swiftmend 1, Nature's Swiftness 1, Living Spirit 3, Improved Regrowth 5, Bloom 1 |
+| Balance | 16 | Improved Wrath 5, Genesis 5, Improved Moonfire 2, Nature's Majesty 2, Nature's Reach 1, Nature's Splendor 1 |
+| Restoration | 35 | Heart of the Wild 5, Naturalist 3, Reflection 3, Gift of Nature 5, Bloom 1, Tranquil Spirit 5, Improved Rejuvenation 3, Swiftmend 1, Living Spirit 3, Improved Tranquility 2, Improved Regrowth 3, Wild Growth 1 |
 
 ## The numbers
 
@@ -66,7 +68,7 @@ Healing capacity 0.69 (the raid damage it heals through in this project's healer
 | Main hand | [item 7721](https://www.wowhead.com/forever/item=7721)<br>+ [Enchant Weapon - Healing Power](https://www.wowhead.com/forever/spell=22748) | [item 7721](https://www.wowhead.com/forever/item=7721)<br>+ [Enchant Weapon - Healing Power](https://www.wowhead.com/forever/spell=22748) |
 | Off hand | [Twisting Essence Jar](https://www.wowhead.com/forever/item=249456) · *Enchanting* | [Twisting Essence Jar](https://www.wowhead.com/forever/item=249456) · *Enchanting* |
 
-**Points that do nothing for this spec:** **Improved Wrath** (1) and **Improved Moonfire** (2) only count toward the points the tree needs before **Nature's Splendor**.
+**Points that do nothing for this spec:** **Improved Wrath** (2) only counts toward the points the tree needs before **Nature's Splendor**; **Improved Wrath** (3) and **Improved Moonfire** (2) open nothing and could go to any talent.
 
 ## Other builds of this spec
 

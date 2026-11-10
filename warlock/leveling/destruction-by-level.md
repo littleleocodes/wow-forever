@@ -4,7 +4,7 @@
 
 What a Destruction warlock presses from level 1 to 60, stage by stage. Destruction levels as a nuker behind the Voidwalker (from 10): **Shadow Bolt** and **Immolate**, **Shadowburn** (31) to finish and **Conflagrate** (32) on its cooldown. No Affliction dots, no **Fear** and no **Drain Life**: the tuned rules of 2026-11-07 level faster without them. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 6/11/34 ([open the talent tree](https://talentsforever.com/warlock/60/15-0015032-0050325133111351-12)), the one on the [Destruction leveling page](destruction.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 6/11/34 ([open the talent tree](https://talentsforever.com/warlock/60/15-00050321-2050305133111351-12)), the one on the [Destruction leveling page](destruction.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -92,7 +92,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Drain Soul at 24; Health Funnel at 20, 28; Immolate at 10, 20, 30; Life Tap at 16, 26; Shadow Bolt at 12, 20, 28; Torment at 20, 30.
 
-**Talents:** 10-14 Bane, 15-16 Aftermath, 17-19 Cataclysm, 20-24 Ruin, 25-27 Agonizing Flames, 28-30 Intensity.
+**Talents:** 10-14 Bane, 15-16 Destructive Reach, 17-19 Cataclysm, 20-24 Ruin, 25-27 Agonizing Flames, 28-30 Intensity.
 
 **Keys to set:** Mouse 4 = Shadow Bolt pull macro; C = Healthstone macro; Shift+Mouse 4 = Drain Soul; Shift+R = Health Funnel (at 12); Shift+1 = Rain of Fire (at 20); Shift+E = Banish (at 28).
 
@@ -108,7 +108,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Summon Voidwalker** costs a Soul Shard: **Drain Soul** (10) a mob as it dies to get one (Shift+Mouse 4). The fight lab does not count shards; keep two or three in your bags for the demon and your Healthstone.
 - Heal the Voidwalker between fights with **Consume Shadows** (18, its own spell, not usable in a fight) or **Health Funnel** (12). Check that its **Torment** is on autocast on the pet bar.
-- **Bane** (10-14) takes 0.5 seconds off **Shadow Bolt** and **Immolate**, **Aftermath** (15-16) makes **Immolate**'s first hit 50% stronger, **Cataclysm** (17-19) makes your Destruction spells 10% cheaper, **Ruin** (20-24) doubles their critical strike bonus and **Agonizing Flames** (25-27) adds 10% to their damage. **Intensity** (28-30): your Destruction spells keep their cast time 70% of the time when a mob hits you.
+- **Bane** (10-14) takes 0.5 seconds off **Shadow Bolt** and **Immolate**, **Destructive Reach** (15-16) adds 20% to the range of your Destruction spells (start the pull a little farther out), **Cataclysm** (17-19) makes your Destruction spells 10% cheaper, **Ruin** (20-24) doubles their critical strike bonus and **Agonizing Flames** (25-27) adds 10% to their damage. **Intensity** (28-30): your Destruction spells keep their cast time 70% of the time when a mob hits you.
 - **Drain Life** (14) and **Searing Pain** (18) are not part of this list: the tuned rules measured faster kills without them.
 - **Demon Armor** (20) replaces **Demon Skin**. **Rain of Fire** (20) is for packs: one mob at a time never needs it.
 
@@ -132,7 +132,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Shadowburn** costs a Soul Shard and gives it back when the mob dies within 8 seconds, so a killing **Shadowburn** is free.
 
-*Fight lab, seconds per kill: 44 at level 31. Presses per kill at level 31: Shadow Bolt 4.5, Wand 4.5, Torment 3.7, Immolate 1.0, Shadowburn 1.0.*
+*Fight lab, seconds per kill: 44 at level 31. Presses per kill at level 31: Shadow Bolt 4.6, Wand 4.5, Torment 3.8, Immolate 1.0, Shadowburn 1.0, Life Tap 0.1.*
 
 ## Levels 32-39: Conflagrate
 
@@ -160,7 +160,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Shadow and Flame** (35-39): at 5 points (39) **Conflagrate** no longer uses up **Immolate**, so cast it whenever it is ready; it also adds 20% to your Shadow damage for 20 seconds.
 - **Pyroclasm** (33) and **Bane of Havoc** (34) are tier points before **Shadow and Flame**: this list casts no **Soul Fire** and fights one mob at a time, so neither does anything here.
 
-*Fight lab, seconds per kill: 45 at level 32, 47 at level 39. Presses per kill at level 32: Shadow Bolt 4.5, Torment 3.6, Wand 3.6, Immolate 1.0, Shadowburn 1.0, Conflagrate 0.4, Life Tap 0.1.*
+*Fight lab, seconds per kill: 45 at level 32, 47 at level 39. Presses per kill at level 32: Shadow Bolt 4.6, Torment 3.7, Wand 3.5, Immolate 1.1, Shadowburn 1.0, Conflagrate 0.4, Life Tap 0.1.*
 
 ## Levels 40-41: Conflagrate on cooldown, the wand on a burning mob
 
@@ -187,7 +187,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Fire and Brimstone** (41-43) adds 25% critical strike chance to **Conflagrate**.
 - **Howl of Terror** (40) fears every mob near you: the escape from a pull that brings friends (Shift+F).
 
-*Fight lab, seconds per kill: 43 at level 40. Presses per kill at level 40: Wand 9.5, Torment 4.3, Conflagrate 1.7, Shadow Bolt 1.6, Immolate 1.1, Shadowburn 1.0, Create Healthstone 0.1.*
+*Fight lab, seconds per kill: 42 at level 40. Presses per kill at level 40: Wand 10.7, Torment 4.2, Conflagrate 1.8, Shadow Bolt 1.2, Immolate 1.1, Shadowburn 1.0, Create Healthstone 0.1.*
 
 ## Levels 42-60: Death Coil
 
@@ -195,7 +195,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Banish at 48; Conflagrate at 48, 54, 60; Death Coil at 50, 58; Drain Soul at 52; Fear at 56; Health Funnel at 44, 52, 60; Howl of Terror at 54; Immolate at 50, 60; Life Tap at 46, 56; Rain of Fire at 46, 58; Shadow Bolt at 44, 52, 60; Shadow Ward at 42, 52, 60; Shadowburn at 48, 56; Torment at 50, 60.
 
-**Talents:** 42-43 Fire and Brimstone, 44 Improved Life Tap, 45-49 Suppression, 50-54 Unholy Power, 55-57 Improved Voidwalker, 58 Demonic Embrace, 59-60 Fel Vitality.
+**Talents:** 42-43 Fire and Brimstone, 44 Improved Life Tap, 45-49 Suppression, 50-54 Unholy Power, 55-57 Improved Voidwalker, 58 Demonic Energies, 59-60 Fel Vitality.
 
 **Keys to set:** F = Death Coil.
 
@@ -212,9 +212,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** A mob on you: **Shadowburn** or **Conflagrate** if ready, otherwise wand it until the Voidwalker's taunt takes it back. Your Healthstone below 35% health.
 
 - **Life Tap** in a fight only when you are short of mana and above 60% health: rare from 40, since the wand costs nothing.
-- **Improved Life Tap** (44) adds 20% to each **Life Tap**. **Suppression** (45-49) gives 5% hit and cuts your threat by 20%, so the Voidwalker keeps the mob. From 50 to 60, **Unholy Power**, **Improved Voidwalker**, **Demonic Embrace** and **Fel Vitality** make the Voidwalker and you sturdier.
+- **Improved Life Tap** (44) adds 20% to each **Life Tap**. **Suppression** (45-49) gives 5% hit and cuts your threat by 20%, so the Voidwalker keeps the mob. From 50 to 60, **Unholy Power**, **Improved Voidwalker**, **Demonic Energies** and **Fel Vitality** make the Voidwalker hit harder and last longer.
 
-*Fight lab, seconds per kill: 42 at level 42, 41 at level 50, 41 at level 60. Presses per kill at level 42: Wand 9.3, Torment 4.1, Conflagrate 1.6, Shadow Bolt 1.5, Immolate 1.1, Shadowburn 1.0, Death Coil 0.2.*
+*Fight lab, seconds per kill: 41 at level 42, 41 at level 50, 40 at level 60. Presses per kill at level 42: Wand 10.4, Torment 4.1, Conflagrate 1.7, Shadow Bolt 1.2, Immolate 1.1, Shadowburn 1.0, Death Coil 0.2, Create Healthstone 0.1.*
 
 ## Between fights
 

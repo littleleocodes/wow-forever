@@ -1,0 +1,657 @@
+{
+ "class": "warlock",
+ "spec": "Hybrid Affliction/Demonology",
+ "build": "affliction-demonology-open-leveling",
+ "rotation": "demonology-leveling",
+ "date": "2026-11-09",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-14",
+   "tree": "Demonology",
+   "talent": "Unholy Power",
+   "points": 5
+  },
+  {
+   "levels": "15",
+   "tree": "Demonology",
+   "talent": "Demonic Energies",
+   "points": 1
+  },
+  {
+   "levels": "16-18",
+   "tree": "Demonology",
+   "talent": "Improved Voidwalker",
+   "points": 3
+  },
+  {
+   "levels": "19",
+   "tree": "Demonology",
+   "talent": "Demonic Energies",
+   "points": 1
+  },
+  {
+   "levels": "20",
+   "tree": "Demonology",
+   "talent": "Improved Health Funnel",
+   "points": 1
+  },
+  {
+   "levels": "21-24",
+   "tree": "Demonology",
+   "talent": "Demonic Embrace",
+   "points": 4
+  },
+  {
+   "levels": "25",
+   "tree": "Demonology",
+   "talent": "Demonic Sacrifice",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Demonology",
+   "talent": "Master Summoner",
+   "points": 1
+  },
+  {
+   "levels": "27-29",
+   "tree": "Demonology",
+   "talent": "Demonic Brand",
+   "points": 3
+  },
+  {
+   "levels": "30",
+   "tree": "Demonology",
+   "talent": "Soul Link",
+   "points": 1
+  },
+  {
+   "levels": "31-33",
+   "tree": "Demonology",
+   "talent": "Demonic Knowledge",
+   "points": 3
+  },
+  {
+   "levels": "34-35",
+   "tree": "Affliction",
+   "talent": "Improved Life Tap",
+   "points": 2
+  },
+  {
+   "levels": "36",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 1
+  },
+  {
+   "levels": "37-40",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 4
+  },
+  {
+   "levels": "41-43",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 3
+  },
+  {
+   "levels": "44",
+   "tree": "Affliction",
+   "talent": "Amplify Curse",
+   "points": 1
+  },
+  {
+   "levels": "45-46",
+   "tree": "Affliction",
+   "talent": "Improved Bane of Agony",
+   "points": 2
+  },
+  {
+   "levels": "47",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 1
+  },
+  {
+   "levels": "48",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 1
+  },
+  {
+   "levels": "49-51",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 3
+  },
+  {
+   "levels": "52",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 1
+  },
+  {
+   "levels": "53",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 1
+  },
+  {
+   "levels": "54",
+   "tree": "Affliction",
+   "talent": "Siphon Life",
+   "points": 1
+  },
+  {
+   "levels": "55",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 1
+  },
+  {
+   "levels": "56",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 1
+  },
+  {
+   "levels": "57",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 1
+  },
+  {
+   "levels": "58",
+   "tree": "Affliction",
+   "talent": "Grim Reach",
+   "points": 1
+  },
+  {
+   "levels": "59-60",
+   "tree": "Affliction",
+   "talent": "Shadow Mastery",
+   "points": 2
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 30.329,
+   "values_at_60": {
+    "Demonic Knowledge": -0.447,
+    "Shadow Mastery": -0.201,
+    "Soul Link": -0.501
+   },
+   "zero": []
+  }
+ ],
+ "moves": [
+  {
+   "from": "Demonic Embrace",
+   "to": "Fel Vitality",
+   "level": 24,
+   "seed3": -0.0009,
+   "seed4": -0.0017,
+   "why": "gate"
+  },
+  {
+   "from": "Improved Health Funnel",
+   "to": "Fel Vitality",
+   "level": 20,
+   "seed3": -0.0015,
+   "seed4": -0.0007,
+   "why": "gate"
+  },
+  {
+   "from": "Demonic Embrace",
+   "to": "Fel Vitality",
+   "level": 23,
+   "seed3": -0.0017,
+   "seed4": -0.0019,
+   "why": "gate"
+  }
+ ],
+ "final_order": [
+  {
+   "levels": "10-14",
+   "tree": "Demonology",
+   "talent": "Unholy Power",
+   "points": 5
+  },
+  {
+   "levels": "15",
+   "tree": "Demonology",
+   "talent": "Demonic Energies",
+   "points": 1
+  },
+  {
+   "levels": "16-18",
+   "tree": "Demonology",
+   "talent": "Improved Voidwalker",
+   "points": 3
+  },
+  {
+   "levels": "19",
+   "tree": "Demonology",
+   "talent": "Demonic Energies",
+   "points": 1
+  },
+  {
+   "levels": "20",
+   "tree": "Demonology",
+   "talent": "Fel Vitality",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Demonology",
+   "talent": "Demonic Embrace",
+   "points": 2
+  },
+  {
+   "levels": "23-24",
+   "tree": "Demonology",
+   "talent": "Fel Vitality",
+   "points": 2
+  },
+  {
+   "levels": "25",
+   "tree": "Demonology",
+   "talent": "Demonic Sacrifice",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Demonology",
+   "talent": "Master Summoner",
+   "points": 1
+  },
+  {
+   "levels": "27-29",
+   "tree": "Demonology",
+   "talent": "Demonic Brand",
+   "points": 3
+  },
+  {
+   "levels": "30",
+   "tree": "Demonology",
+   "talent": "Soul Link",
+   "points": 1
+  },
+  {
+   "levels": "31-33",
+   "tree": "Demonology",
+   "talent": "Demonic Knowledge",
+   "points": 3
+  },
+  {
+   "levels": "34-35",
+   "tree": "Affliction",
+   "talent": "Improved Life Tap",
+   "points": 2
+  },
+  {
+   "levels": "36",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 1
+  },
+  {
+   "levels": "37-40",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 4
+  },
+  {
+   "levels": "41-43",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 3
+  },
+  {
+   "levels": "44",
+   "tree": "Affliction",
+   "talent": "Amplify Curse",
+   "points": 1
+  },
+  {
+   "levels": "45-46",
+   "tree": "Affliction",
+   "talent": "Improved Bane of Agony",
+   "points": 2
+  },
+  {
+   "levels": "47",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 1
+  },
+  {
+   "levels": "48",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 1
+  },
+  {
+   "levels": "49-51",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 3
+  },
+  {
+   "levels": "52",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 1
+  },
+  {
+   "levels": "53",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 1
+  },
+  {
+   "levels": "54",
+   "tree": "Affliction",
+   "talent": "Siphon Life",
+   "points": 1
+  },
+  {
+   "levels": "55",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 1
+  },
+  {
+   "levels": "56",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 1
+  },
+  {
+   "levels": "57",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 1
+  },
+  {
+   "levels": "58",
+   "tree": "Affliction",
+   "talent": "Grim Reach",
+   "points": 1
+  },
+  {
+   "levels": "59-60",
+   "tree": "Affliction",
+   "talent": "Shadow Mastery",
+   "points": 2
+  }
+ ],
+ "written": {
+  "allocation": {
+   "Affliction": [
+    [
+     "Improved Life Tap",
+     2
+    ],
+    [
+     "Suppression",
+     5
+    ],
+    [
+     "Improved Corruption",
+     5
+    ],
+    [
+     "Grim Reach",
+     1
+    ],
+    [
+     "Improved Bane of Agony",
+     2
+    ],
+    [
+     "Amplify Curse",
+     1
+    ],
+    [
+     "Pandemic",
+     3
+    ],
+    [
+     "Malevolence",
+     5
+    ],
+    [
+     "Siphon Life",
+     1
+    ],
+    [
+     "Shadow Mastery",
+     2
+    ]
+   ],
+   "Demonology": [
+    [
+     "Demonic Embrace",
+     2
+    ],
+    [
+     "Unholy Power",
+     5
+    ],
+    [
+     "Improved Voidwalker",
+     3
+    ],
+    [
+     "Fel Vitality",
+     3
+    ],
+    [
+     "Demonic Energies",
+     2
+    ],
+    [
+     "Demonic Sacrifice",
+     1
+    ],
+    [
+     "Master Summoner",
+     1
+    ],
+    [
+     "Demonic Brand",
+     3
+    ],
+    [
+     "Soul Link",
+     1
+    ],
+    [
+     "Demonic Knowledge",
+     3
+    ]
+   ],
+   "Destruction": []
+  },
+  "order": [
+   {
+    "levels": "10-14",
+    "tree": "Demonology",
+    "talent": "Unholy Power",
+    "points": 5
+   },
+   {
+    "levels": "15",
+    "tree": "Demonology",
+    "talent": "Demonic Energies",
+    "points": 1
+   },
+   {
+    "levels": "16-18",
+    "tree": "Demonology",
+    "talent": "Improved Voidwalker",
+    "points": 3
+   },
+   {
+    "levels": "19",
+    "tree": "Demonology",
+    "talent": "Demonic Energies",
+    "points": 1
+   },
+   {
+    "levels": "20",
+    "tree": "Demonology",
+    "talent": "Fel Vitality",
+    "points": 1
+   },
+   {
+    "levels": "21-22",
+    "tree": "Demonology",
+    "talent": "Demonic Embrace",
+    "points": 2
+   },
+   {
+    "levels": "23-24",
+    "tree": "Demonology",
+    "talent": "Fel Vitality",
+    "points": 2
+   },
+   {
+    "levels": "25",
+    "tree": "Demonology",
+    "talent": "Demonic Sacrifice",
+    "points": 1
+   },
+   {
+    "levels": "26",
+    "tree": "Demonology",
+    "talent": "Master Summoner",
+    "points": 1
+   },
+   {
+    "levels": "27-29",
+    "tree": "Demonology",
+    "talent": "Demonic Brand",
+    "points": 3
+   },
+   {
+    "levels": "30",
+    "tree": "Demonology",
+    "talent": "Soul Link",
+    "points": 1
+   },
+   {
+    "levels": "31-33",
+    "tree": "Demonology",
+    "talent": "Demonic Knowledge",
+    "points": 3
+   },
+   {
+    "levels": "34-35",
+    "tree": "Affliction",
+    "talent": "Improved Life Tap",
+    "points": 2
+   },
+   {
+    "levels": "36",
+    "tree": "Affliction",
+    "talent": "Suppression",
+    "points": 1
+   },
+   {
+    "levels": "37-40",
+    "tree": "Affliction",
+    "talent": "Improved Corruption",
+    "points": 4
+   },
+   {
+    "levels": "41-43",
+    "tree": "Affliction",
+    "talent": "Suppression",
+    "points": 3
+   },
+   {
+    "levels": "44",
+    "tree": "Affliction",
+    "talent": "Amplify Curse",
+    "points": 1
+   },
+   {
+    "levels": "45-46",
+    "tree": "Affliction",
+    "talent": "Improved Bane of Agony",
+    "points": 2
+   },
+   {
+    "levels": "47",
+    "tree": "Affliction",
+    "talent": "Improved Corruption",
+    "points": 1
+   },
+   {
+    "levels": "48",
+    "tree": "Affliction",
+    "talent": "Pandemic",
+    "points": 1
+   },
+   {
+    "levels": "49-51",
+    "tree": "Affliction",
+    "talent": "Malevolence",
+    "points": 3
+   },
+   {
+    "levels": "52",
+    "tree": "Affliction",
+    "talent": "Pandemic",
+    "points": 1
+   },
+   {
+    "levels": "53",
+    "tree": "Affliction",
+    "talent": "Malevolence",
+    "points": 1
+   },
+   {
+    "levels": "54",
+    "tree": "Affliction",
+    "talent": "Siphon Life",
+    "points": 1
+   },
+   {
+    "levels": "55",
+    "tree": "Affliction",
+    "talent": "Pandemic",
+    "points": 1
+   },
+   {
+    "levels": "56",
+    "tree": "Affliction",
+    "talent": "Malevolence",
+    "points": 1
+   },
+   {
+    "levels": "57",
+    "tree": "Affliction",
+    "talent": "Suppression",
+    "points": 1
+   },
+   {
+    "levels": "58",
+    "tree": "Affliction",
+    "talent": "Grim Reach",
+    "points": 1
+   },
+   {
+    "levels": "59-60",
+    "tree": "Affliction",
+    "talent": "Shadow Mastery",
+    "points": 2
+   }
+  ],
+  "note": "2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Demonic Embrace to Fel Vitality at 24 (gate: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill); Improved Health Funnel to Fel Vitality at 20 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Embrace to Fel Vitality at 23 (gate: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill)."
+ }
+}

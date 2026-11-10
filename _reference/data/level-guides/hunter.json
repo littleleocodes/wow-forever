@@ -126,7 +126,7 @@
      ],
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A pull gone wrong: **Feign Death**.",
      "notes": [
-      "**Focused Fire** (44-45), **Endurance Training** (46-48), **Unleashed Fury** (49-51) and **Ferocity** (54-58) all go to the pet, which is a third of your damage at 60.",
+      "**Focused Fire** (44-45), **Endurance Training** (46-48), **Unleashed Fury** (49-53) and **Ferocity** (54-58) all go to the pet, which is a third of your damage at 60.",
       "**Bestial Wrath**, **Intimidation**, **Counterattack** and **Deterrence** belong to other builds. This one does not take them."
      ]
     }
@@ -137,7 +137,7 @@
     "Visit the trainer every even level: **Raptor Strike**, **Serpent Sting** and **Immolation Trap** have many ranks."
    ],
    "other": [
-    "Pure Survival (5/16/30) plays the same melee rotation and is 2% behind. Marksmanship, the ranged hunter, is 7% behind and has its own page in this folder with the shots.",
+    "Pure Survival (3/16/32) plays the same melee rotation and is 2% behind. Marksmanship, the ranged hunter, is 7% behind and has its own page in this folder with the shots.",
     "Beast Mastery, the pet-first ranged build, is the slowest of the five in the fight lab."
    ],
    "keys": {
@@ -1359,9 +1359,9 @@
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A pull gone wrong: **Feign Death**, and the mobs go for the pet or home.",
      "notes": [
       "**Aspect of the Beast** (30) replaces **Aspect of the Monkey**: attack power instead of dodge. Click it.",
-      "**Resourcefulness** (30, 32): your trap and strikes cost 60% less mana. **Expose Prey** (31) works only on a mob with your **Hunter's Mark**, and the tuned rules never cast the mark: in the fight lab it measured slower even with this talent.",
+      "**Resourcefulness** (30, 32): your trap and strikes cost 60% less mana. **Survival Tactics** (31): 5% more chance to hit with your traps and **Feign Death**; the second point comes at 53.",
       "**Survivalist's Discipline** (33-34) cuts the trap's cooldown by 40%. **Lightning Reflexes** (35-39): 15% more Agility.",
-      "**Strider Kick**, **Counterattack** and **Deterrence** belong to other builds. This one does not take them."
+      "**Counterattack** and **Deterrence** belong to other builds. This one does not take them. **Strider Kick** comes at 54."
      ],
      "unsimulated": [
       "Mongoose Bite",
@@ -1371,7 +1371,7 @@
     {
      "from": 40,
      "title": "Nothing new to press",
-     "change": "The rotation is complete. The rest of the points go to Marksmanship and the aspect. Buy every new rank.",
+     "change": "The points go to Marksmanship and the aspect until **Strider Kick** at 54. Buy every new rank.",
      "press": [
       "Send the pet in, then **Serpent Sting** as you walk in behind it.",
       "**Rapid Fire** at the pull when it is ready.",
@@ -1383,8 +1383,33 @@
      ],
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A pull gone wrong: **Feign Death**.",
      "notes": [
-      "**Lethal Attacks** (40-44): 5% more crit. **Careful Aim** (45-49): attack power from your Intellect. **Deadly Aspects** (50-54): with **Aspect of the Beast** on, your swings sometimes speed up by 30% for 12 seconds.",
-      "**Efficiency** (55-57) makes your strikes cheaper. **Rapid Killing** (58-59) cuts **Rapid Fire**'s cooldown to 3 minutes. **Mortal Shots** (60) adds crit damage to ranged abilities, which this build hardly uses.",
+      "**Lethal Attacks** (40-44): 5% more crit. **Careful Aim** (45-47): attack power from 60% of your Intellect. **Improved Stings** (48-49): **Serpent Sting** does 13% more damage. **Deadly Aspects** (50-52): with **Aspect of the Beast** on, your swings sometimes speed up by 30% for 12 seconds.",
+      "**Survival Tactics** (53): the second point, 10% more chance to hit with your traps and **Feign Death**.",
+      "**Explosive Trap** (34) replaces **Immolation Trap** when two or more mobs stand at your feet: they share the cooldown."
+     ],
+     "unsimulated": [
+      "Mongoose Bite",
+      "Rapid Fire"
+     ]
+    },
+    {
+     "from": 54,
+     "title": "Strider Kick",
+     "change": "**Strider Kick**: a weapon hit on an 8-second cooldown. Like **Raptor Strike**, it waits for the finish.",
+     "press": [
+      "Send the pet in, then **Serpent Sting** as you walk in behind it.",
+      "**Rapid Fire** at the pull when it is ready.",
+      "**Raptor Strike** once the mob is below 20% of its health. It replaces your next swing and costs no global cooldown.",
+      "**Mongoose Bite** when it lights up, after you dodge.",
+      "**Strider Kick** once the mob is below 20% of its health, when it is ready.",
+      "**Lacerate** while the mob has more than half its health and you have 80% of your mana or more.",
+      "**Immolation Trap** at your feet while the mob has more than 40% of its health.",
+      "Melee in between."
+     ],
+     "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A pull gone wrong: **Feign Death**.",
+     "notes": [
+      "**Strider Kick** (54) deals your weapon's damage and gives you 30% movement speed for 3 seconds. The tuned rules cast it only below 20% of the mob's health: cast whenever it was ready, it measured slower in the fight lab.",
+      "**Efficiency** (55-57, 59) makes your strikes and stings cheaper. **Rapid Killing** (58): one point, a minute off **Rapid Fire**'s cooldown; its shot bonus is for ranged hunters. **Improved Stings** (60): the third point, **Serpent Sting** 20% stronger.",
       "**Explosive Trap** (34) replaces **Immolation Trap** when two or more mobs stand at your feet: they share the cooldown."
      ],
      "unsimulated": [
@@ -1520,8 +1545,13 @@
        },
        {
         "key": "Middle mouse",
-        "role": "Free",
-        "binds": []
+        "role": "The kick: the finish below 20%, after Raptor Strike",
+        "binds": [
+         {
+          "from": 54,
+          "spell": "Strider Kick"
+         }
+        ]
        }
       ]
      },
@@ -1618,11 +1648,11 @@
     ],
     "no_key": [],
     "notes": [
-     "Every key is the [Beast-Survival guide](beast-survival-by-level.md)'s: the two builds play the same melee rotation. One addition: **Rapid Fire** on C from 26, which the fight lab casts at the start of a fight whenever it is ready.",
+     "Every key is the [Beast-Survival guide](beast-survival-by-level.md)'s: the two builds play the same melee rotation. Two additions: **Rapid Fire** on C from 26, which the fight lab casts at the start of a fight whenever it is ready, and **Strider Kick** on the middle mouse button from 54 (Beast-Survival does not take it).",
      "Nothing on bar 1 ever swaps: every key gets its spell once and keeps it.",
      "The pet is sent with the pet bar, which has its own keys. Keep its Growl on and its attack command where your hand finds it.",
      "No key: **Aspect of the Monkey** and **Aspect of the Beast**, the tracking, **Call Pet**, **Feed Pet**, **Revive Pet**, **Hunter's Mark** (the tuned rotation never casts it), food, drink, the mount and the Hearthstone.",
-     "Levels 1-3 fight with Q and 4: right-click the mob to start swinging. From 4, Mouse 4 is a macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free. Add a key when its spell arrives."
+     "Levels 1-3 fight with Q and 4: right-click the mob to start swinging. From 4, Mouse 4 is a macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button needs no Attack and waits for **Strider Kick** at 54. Add a key when its spell arrives."
     ]
    }
   },

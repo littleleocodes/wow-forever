@@ -4,7 +4,7 @@
 
 What an Elemental shaman presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Elemental fights from range: **Lightning Bolt** while the mob walks in, then the shocks on their shared cooldown, more bolts between them while your mana holds, and your weapon swinging in every gap. Mana is the limit, so the list always keeps enough for the next shock. The build's first points go to Restoration and Enhancement for hit, mana and crit; the Elemental talents start at 29. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 32/11/8 ([open the talent tree](https://talentsforever.com/shaman/60/540332100302135-05203001-053-12)), the one on the [Elemental leveling page](elemental.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 32/11/8 ([open the talent tree](https://talentsforever.com/shaman/60/540333100301135-05003201-053-12)), the one on the [Elemental leveling page](elemental.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -164,7 +164,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Earth Shock at 24; Fire Nova at 22; Healing Wave at 24; Lightning Bolt at 20, 26; Lightning Shield at 24; Searing Totem at 20.
 
-**Talents:** 20-22 Thundering Strikes, 23-24 Ancestral Knowledge, 25-27 Mental Dexterity.
+**Talents:** 20-22 Thundering Strikes, 23-24 Improved Lightning Shield, 25-27 Mental Dexterity.
 
 **Keys to set:** E = Frost Shock; Mouse 5 = Lesser Healing Wave; C = Healing Wave; Shift+Mouse 5 = Healing Stream Totem; Shift+1 = Magma Totem (at 26).
 
@@ -219,7 +219,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Grounding Totem** (30) eats a caster mob's next spell.
 - **Chain Lightning** (32) and **Windfury Totem** (32) are not part of a fight against one mob.
 
-*Fight lab, seconds per kill: 29 at level 28, 30 at level 30, 30 at level 33. Presses per kill at level 28: Lightning Bolt 3.5, Melee 1.2, Flame Shock 0.8, Searing Totem 0.6, Earth Shock 0.6, Lightning Shield 0.6.*
+*Fight lab, seconds per kill: 29 at level 28, 30 at level 30, 30 at level 33. Presses per kill at level 28: Lightning Bolt 3.5, Melee 1.2, Flame Shock 0.8, Searing Totem 0.7, Earth Shock 0.6, Lightning Shield 0.6.*
 
 ## Levels 34-43: Elemental Alacrity: faster bolts
 
@@ -244,17 +244,17 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.
 
-- **Call of Flame** (37-38) makes **Flame Shock** and **Searing Totem** hit harder and **Flame Shock** last longer.
+- **Call of Flame** (37-38, 60) makes **Flame Shock** and **Searing Totem** hit harder and **Flame Shock** last longer.
 - **Elemental Focus** (39): after a damage spell, sometimes the next one is free. Nothing to press: the next spell in the list takes it.
 - **Concussion** (40-43): your bolts and **Earth Shock** hit harder.
 
-*Fight lab, seconds per kill: 30 at level 34, 30 at level 40, 30 at level 43. Presses per kill at level 34: Lightning Bolt 3.6, Melee 1.6, Flame Shock 0.8, Earth Shock 0.8, Searing Totem 0.7, Lightning Shield 0.6, Windfury 0.6.*
+*Fight lab, seconds per kill: 30 at level 34, 30 at level 40, 30 at level 43. Presses per kill at level 34: Lightning Bolt 3.6, Melee 1.6, Flame Shock 0.8, Earth Shock 0.8, Searing Totem 0.6, Lightning Shield 0.6, Windfury 0.5.*
 
 ## Levels 44-60: Eye of the Storm, the finished rotation
 
 **New ranks to buy:** Chain Lightning at 48, 56; Earth Shock at 48, 60; Fire Nova at 52; Flame Shock at 52, 60; Frost Shock at 46, 58; Healing Stream Totem at 50, 60; Healing Wave at 48, 56, 60; Lesser Healing Wave at 44, 52, 60; Lightning Bolt at 44, 50, 56; Lightning Shield at 48, 56; Magma Totem at 46, 56; Searing Totem at 50, 60; Stoneclaw Totem at 48, 58.
 
-**Talents:** 44-46 Eye of the Storm, 47-48 Reverberation, 49 Call of Thunder, 50-52 Lightning Overload, 53 Reverberation, 54-58 Elemental Fury, 59-60 Elemental Reach.
+**Talents:** 44-46 Eye of the Storm, 47-48 Reverberation, 49 Call of Thunder, 50-52 Lightning Overload, 53 Reverberation, 54-58 Elemental Fury, 59 Elemental Reach, 60 Call of Flame.
 
 **Your keys in this stage:** Q Lightning Bolt, R Earth Shock, F Stoneclaw Totem, Mouse 5 Lesser Healing Wave, 1 Flame Shock, 2 Searing Totem.
 
@@ -273,9 +273,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Reverberation** (47-48, 53) shortens the shock cooldown.
 - **Call of Thunder** (49), **Lightning Overload** (50-52) and **Elemental Fury** (54-58): more bolt crits, a free second bolt now and then, and bigger crits. Nothing to press.
-- **Elemental Reach** (59-60) adds range to **Lightning Bolt**: start the pull a little farther out.
+- **Elemental Reach** (59) adds range to **Lightning Bolt**: start the pull a little farther out. **Call of Flame** (60) takes its third rank: **Flame Shock** and **Searing Totem** hit a little harder.
 
-*Fight lab, seconds per kill: 30 at level 44, 30 at level 50, 28 at level 60. Presses per kill at level 44: Lightning Bolt 3.9, Melee 1.4, Flame Shock 0.8, Earth Shock 0.7, Searing Totem 0.6, Lightning Shield 0.6, Windfury 0.5.*
+*Fight lab, seconds per kill: 30 at level 44, 30 at level 50, 27 at level 60. Presses per kill at level 44: Lightning Bolt 3.9, Melee 1.4, Flame Shock 0.8, Earth Shock 0.7, Searing Totem 0.6, Lightning Shield 0.6, Windfury 0.5.*
 
 ## Between fights
 

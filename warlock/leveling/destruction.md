@@ -4,11 +4,11 @@
 
 **Leveling from level 1?** [The rotation level by level](destruction-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Destruction — Leveling](../research/leveling/builds/destruction-open-leveling.md)** (6/11/34) — [open the talent tree](https://talentsforever.com/warlock/60/15-0015032-0050325133111351-12)
+**[Destruction — Leveling](../research/leveling/builds/destruction-open-leveling.md)** (6/11/34) — [open the talent tree](https://talentsforever.com/warlock/60/15-00050321-2050305133111351-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-**Signature spells:** 65% of the damage at level 60 in the fight lab comes from the spec's core spells (Shadow Bolt, Immolate, Conflagrate, Shadowburn; this build never casts Incinerate, Searing Pain, Soul Fire) (the spec's rule: at least 60%).
+**Signature spells:** 62% of the damage at level 60 in the fight lab comes from the spec's core spells (Shadow Bolt, Immolate, Conflagrate, Shadowburn; this build never casts Incinerate, Searing Pain, Soul Fire) (the spec's rule: at least 60%).
 
 ## How to play
 
@@ -31,15 +31,15 @@ Destruction levels as a nuker behind the Voidwalker: **Immolate** on a fresh mob
 
 **Why it works**
 
-- The Destruction points come first: **Bane** (levels 10-14) makes **Shadow Bolt** and **Immolate** 0.5 seconds faster, **Cataclysm** (17-19) makes your Destruction spells 10% cheaper, **Ruin** (20-24) doubles their critical strike bonus and **Agonizing Flames** (25-27) adds 10% to their damage.
-- Send the Voidwalker in first and put **Immolate** on a mob above about a third of its health, once it will not pull the mob off the Voidwalker. **Aftermath** (15-16) makes its first hit 50% stronger.
+- The Destruction points come first: **Bane** (levels 10-14) makes **Shadow Bolt** and **Immolate** 0.5 seconds faster, **Destructive Reach** (15-16) adds 20% to the range of your Destruction spells, **Cataclysm** (17-19) makes your Destruction spells 10% cheaper, **Ruin** (20-24) doubles their critical strike bonus and **Agonizing Flames** (25-27) adds 10% to their damage.
+- Send the Voidwalker in first and put **Immolate** on a mob above about a third of its health, once it will not pull the mob off the Voidwalker.
 - With 5 points in **Shadow and Flame** (levels 35-39), **Conflagrate** no longer eats your **Immolate**, so cast it whenever it is ready on a burning mob; before that, cast it when **Immolate** has about 3 seconds left. **Shadow and Flame** also gives 20% more Shadow damage for 20 seconds after a **Conflagrate** and 20% more Fire damage after a **Shadowburn**; **Fire and Brimstone** (41-43) adds 25% critical strike chance to **Conflagrate**.
 - Fill with **Shadow Bolt** whenever you keep a small mana reserve, but never on a mob below 35% of its health (the 2026-11-07 re-tune, about 3% faster per kill): finish it with **Shadowburn** or **Conflagrate** when either would kill it, else the wand. **Conflagrate** itself is cast only on a mob above a fifth of its health.
 - The same re-tune switched off **Fear** (about 5% faster per kill), **Drain Life** (about 3%), **Searing Pain** (about 1%) and **Incinerate** (about 3%). **Life Tap** in a fight only when you are short of mana and above 60% health; between fights tap back to 70% mana, heal the Voidwalker with **Consume Shadows** or **Health Funnel**, eat below 40% health (the tuned rule).
 
 **Caveats**
 
-- **Suppression** (levels 45-49) is the build's most valuable talent at 60 in the open search: 5% hit and 20% less threat keep the mob on the Voidwalker while you nuke. **Unholy Power**, **Improved Voidwalker**, **Demonic Embrace** and **Fel Vitality** (50-60) make the Voidwalker stronger.
+- **Suppression** (levels 45-49) is the build's most valuable talent at 60 in the open search: 5% hit and 20% less threat keep the mob on the Voidwalker while you nuke. **Unholy Power**, **Improved Voidwalker**, **Demonic Energies** and **Fel Vitality** (50-60) make the Voidwalker stronger.
 - **Pyroclasm** (33), **Bane of Havoc** (34) and **Incinerate** (40) are tier points: the list casts no **Soul Fire** and fights one mob, and the rules never cast **Incinerate**, so none of them does anything here. **Intensity** (28-30) keeps your casts from being pushed back 70% of the time a mob hits you.
 - When a mob reaches you: **Death Coil** (level 42) below 60% health and let the Voidwalker's **Torment** take it back. The tuned rules never **Fear** it. A Healthstone below 35% health.
 
@@ -55,7 +55,7 @@ One point per level from 10, in this order:
 | Levels | Talent | Points |
 |---|---|---|
 | 10-14 | Bane (Destruction) | 5 |
-| 15-16 | Aftermath (Destruction) | 2 |
+| 15-16 | Destructive Reach (Destruction) | 2 |
 | 17-19 | Cataclysm (Destruction) | 3 |
 | 20-24 | Ruin (Destruction) | 5 |
 | 25-27 | Agonizing Flames (Destruction) | 3 |
@@ -71,7 +71,7 @@ One point per level from 10, in this order:
 | 45-49 | Suppression (Affliction) | 5 |
 | 50-54 | Unholy Power (Demonology) | 5 |
 | 55-57 | Improved Voidwalker (Demonology) | 3 |
-| 58 | Demonic Embrace (Demonology) | 1 |
+| 58 | Demonic Energies (Demonology) | 1 |
 | 59-60 | Fel Vitality (Demonology) | 2 |
 
 ## The numbers

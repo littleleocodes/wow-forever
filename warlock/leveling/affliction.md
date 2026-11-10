@@ -8,7 +8,7 @@
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-*Signature spells (**Corruption**, **Bane of Agony**): not checked for this build in its rotation yet (fightlab/signature_audit.py).*
+**Signature spells:** 83% of the damage at level 60 in the fight lab comes from the spec's core spells (Corruption, Bane of Agony, Siphon Life, Drain Life, Wrack; this build never casts Drain Soul) (the spec's rule: at least 50%; **Corruption**, **Bane of Agony** cast at level 60).
 
 ## How to play
 

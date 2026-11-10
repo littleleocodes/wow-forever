@@ -4,7 +4,7 @@
 
 What a melee hunter presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. The Beast-Survival build is the hunter's fastest leveling build in the fight lab: a pet that does a third of the work, two weapons, a sting at the pull, a trap under your feet, and Raptor Strike to finish. It is a strange hunter and a quick one. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 22/5/24 ([open the talent tree](https://talentsforever.com/hunter/60/53220003050002-005-520210230140202-12)), the one on the [Beast-Survival leveling page](beast-survival.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 22/5/24 ([open the talent tree](https://talentsforever.com/hunter/60/53200005050002-005-520210230140202-12)), the one on the [Beast-Survival leveling page](beast-survival.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -210,7 +210,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Arcane Shot at 44, 52, 60; Explosive Trap at 44, 54; Freezing Trap at 40, 60; Immolation Trap at 46, 56; Lacerate at 40, 50, 60; Mend Pet at 44, 52, 60; Mongoose Bite at 44, 58; Raptor Strike at 40, 48, 56; Scare Beast at 46; Serpent Sting at 42, 50, 58, 60; Wing Clip at 60.
 
-**Talents:** 40-43 Deadly Aspects, 44-45 Focused Fire, 46-48 Endurance Training, 49-51 Unleashed Fury, 52-53 Improved Aspect of the Monkey, 54-58 Ferocity, 59-60 Bestial Discipline.
+**Talents:** 40-43 Deadly Aspects, 44-45 Focused Fire, 46-48 Endurance Training, 49-53 Unleashed Fury, 54-58 Ferocity, 59-60 Bestial Discipline.
 
 **Your keys in this stage:** Q Raptor Strike, R Immolation Trap, F Feign Death, Mouse 5 Mongoose Bite, Mouse 4 Serpent Sting, 1 Lacerate, 3 Mend Pet.
 
@@ -225,7 +225,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** **Mend Pet** when the pet drops below a third of its health. A pull gone wrong: **Feign Death**.
 
-- **Focused Fire** (44-45), **Endurance Training** (46-48), **Unleashed Fury** (49-51) and **Ferocity** (54-58) all go to the pet, which is a third of your damage at 60.
+- **Focused Fire** (44-45), **Endurance Training** (46-48), **Unleashed Fury** (49-53) and **Ferocity** (54-58) all go to the pet, which is a third of your damage at 60.
 - **Bestial Wrath**, **Intimidation**, **Counterattack** and **Deterrence** belong to other builds. This one does not take them.
 
 *Fight lab, seconds per kill: 21 at level 40, 22 at level 50, 23 at level 60. Presses per kill at level 40: Claw 5.8, Melee (off-hand) 4.9, Melee 4.0, Growl 2.7, Bite 1.5, Auto Shot 1.2, Serpent Sting 1.0, Immolation Trap 1.0, Raptor Strike 0.8, Lacerate 0.1.*
@@ -238,7 +238,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 ## Other ways to level this class
 
-- Pure Survival (5/16/30) plays the same melee rotation and is 2% behind. Marksmanship, the ranged hunter, is 7% behind and has its own page in this folder with the shots.
+- Pure Survival (3/16/32) plays the same melee rotation and is 2% behind. Marksmanship, the ranged hunter, is 7% behind and has its own page in this folder with the shots.
 - Beast Mastery, the pet-first ranged build, is the slowest of the five in the fight lab.
 
 ---

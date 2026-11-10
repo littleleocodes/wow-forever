@@ -34,10 +34,10 @@ The Affliction-Demonology (an Affliction/Demonology hybrid) leveling build the o
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Health Funnel** | 1/2 | changed | Increases the amount of health transferred by your Health Funnel spell by 20%, reduces its health cost by 15%, and reduces all threat your Health Funnel generates by 50%. Allows Health Funnel to be used regardless of your demon's health. |
-| **Demonic Embrace** | 4/5 | changed | Increases your total Stamina by 12%. |
+| **Demonic Embrace** | 2/5 | changed | Increases your total Stamina by 6%. |
 | **Unholy Power** | 5/5 | changed | Increases all damage done by your Imp, Voidwalker, Succubus, Incubus, and Felhunter pets by 10%. |
 | **Improved Voidwalker** | 3/3 | unchanged | Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice, and Suffering spells by 30%. |
+| **Fel Vitality** | 3/3 | **NEW** | Increases the maximum health and Mana of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 15%, and increases your maximum Mana by 15%. |
 | **Demonic Energies** | 2/2 | **NEW** | You heal your pet for 15% of all spell damage you deal. When you gain Mana from Life Tap, your summoned demon gains 100% of the Mana you gain. |
 | **Demonic Sacrifice** | 1/1 | changed | When activated, sacrifices your summoned Demon to enhance the opposing aspect of your power, granting you an effect that lasts 2 hrs. The effect is canceled if any Demon is summoned.  Imp: Increases your Shadow damage by 15%.  Voidwalker: Restores 2% of your total Mana every 4 sec.  Succubus/Incubus: Increases your Fire damage by 15%.  Felhunter: Restores 3% of your total Health every 4 sec. |
 | **Master Summoner** | 1/2 | moved | Reduces the casting time of your Imp, Voidwalker, Succubus, Incubus, and Felhunter Summoning spells by 2 sec and the Mana cost by 20%. |
@@ -57,8 +57,9 @@ The Affliction-Demonology (an Affliction/Demonology hybrid) leveling build the o
 | 15 | Demonology | Demonic Energies | 1 | 0/6/0 |
 | 16-18 | Demonology | Improved Voidwalker | 3 | 0/9/0 |
 | 19 | Demonology | Demonic Energies | 1 | 0/10/0 |
-| 20 | Demonology | Improved Health Funnel | 1 | 0/11/0 |
-| 21-24 | Demonology | Demonic Embrace | 4 | 0/15/0 |
+| 20 | Demonology | Fel Vitality | 1 | 0/11/0 |
+| 21-22 | Demonology | Demonic Embrace | 2 | 0/13/0 |
+| 23-24 | Demonology | Fel Vitality | 2 | 0/15/0 |
 | 25 | Demonology | Demonic Sacrifice | 1 | 0/16/0 |
 | 26 | Demonology | Master Summoner | 1 | 0/17/0 |
 | 27-29 | Demonology | Demonic Brand | 3 | 0/20/0 |
@@ -99,6 +100,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
+- 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Demonic Embrace to Fel Vitality at 24 (gate: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill); Improved Health Funnel to Fel Vitality at 20 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Embrace to Fel Vitality at 23 (gate: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill).
 - +28.5% faster than the hand draft leveling-affliction, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 30.47; demonology-leveling 31.14. The search simulated 36,200 builds.
 - The spec's other leveling builds on the pages: opt-affliction-leveling-leveling-st 38.34 s, leveling-affliction 39.16 s.

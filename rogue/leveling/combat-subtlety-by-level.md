@@ -4,7 +4,7 @@
 
 What a Combat-Subtlety rogue presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. This split plays Subtlety's rotation with a dagger in each hand: **Premeditation** and **Ambush** put combo points on the mob before your first builder, **Ghostly Strike**, its signature strike, goes in on its cooldown, and Combat's talents add hit, dodge and cheaper finishers. **Sinister Strike** stays your builder until **Hemorrhage** arrives at 60. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 5/25/21 ([open the talent tree](https://talentsforever.com/rogue/60/023-32500300020123202-1051030313210001-12)), the one on the [Combat-Subtlety leveling page](combat-subtlety.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 5/25/21 ([open the talent tree](https://talentsforever.com/rogue/60/023-32500300020123202-3051030313010001-12)), the one on the [Combat-Subtlety leveling page](combat-subtlety.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -325,7 +325,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Ambush at 42, 50, 58; Eviscerate at 40, 48, 56; Garrote at 46, 54; Gouge at 46; Kick at 42, 58; Sap at 48; Shank at 44; Sinister Strike at 46, 54; Sprint at 58; Stealth at 40; Vanish at 42.
 
-**Talents:** 40 Precision, 41-43 Lightning Reflexes, 44-45 Composure, 46 Flawless Execution, 47-48 Weapon Expertise, 49-51 Aggression, 52-53 Initiative, 54-55 Dual Wield Specialization, 56-57 Hack and Slash, 58-59 Elusiveness.
+**Talents:** 40 Precision, 41-43 Lightning Reflexes, 44-45 Composure, 46 Flawless Execution, 47-48 Weapon Expertise, 49-51 Aggression, 52-53 Initiative, 54-55 Dual Wield Specialization, 56-57 Hack and Slash, 58-59 Setup.
 
 **Your keys in this stage:** Q Sinister Strike, E Gouge, R Eviscerate, F Evasion, Mouse 5 Shank, Mouse 4 Ghostly Strike, 1 Garrote, 3 Vanish, C Ambush, Shift+Q Premeditation, Shift+E Kick, Shift+1 Stealth.
 
@@ -343,9 +343,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather. **Vanish** is the emergency exit.
 
 - **Composure** (44-45) makes the opener cheaper, **Flawless Execution** (46) makes **Eviscerate** cheaper, **Weapon Expertise** (47-48) cuts dodges and parries, **Aggression** (49-51) makes **Sinister Strike** and **Eviscerate** hit harder.
-- **Initiative** (52-53) makes the opener's second combo point certain. **Dual Wield Specialization** (54-55) and **Hack and Slash** (56-57) are off-hand damage and dagger crit. **Elusiveness** (58-59) shortens the cooldowns of **Vanish** and **Blind**.
+- **Initiative** (52-53) makes the opener's second combo point certain. **Dual Wield Specialization** (54-55) and **Hack and Slash** (56-57) are off-hand damage and dagger crit. **Setup** (58-59) takes its last two points: a dodge adds a combo point 45% of the time instead of 15%.
 
-*Fight lab, seconds per kill: 24 at level 40, 22 at level 50, 22 at level 59. Presses per kill at level 40: Melee 8.1, Melee (off-hand) 7.8, Sinister Strike 2.2, Shank 1.8, Eviscerate 1.2, Ambush 1.0, Ghostly Strike 1.0, Garrote 0.4, Kick 0.2, Premeditation 0.2.*
+*Fight lab, seconds per kill: 24 at level 40, 22 at level 50, 21 at level 59. Presses per kill at level 40: Melee 8.1, Melee (off-hand) 7.8, Sinister Strike 2.2, Shank 1.8, Eviscerate 1.2, Ambush 1.0, Ghostly Strike 1.0, Garrote 0.4, Kick 0.2, Premeditation 0.2.*
 
 ## Level 60: Hemorrhage
 
@@ -372,7 +372,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - Q keeps its job: change the Q macro's spell to **Hemorrhage** (the [macros page](../macros.md) has it). **Hemorrhage** also makes your **Garrote** bleed 15% harder for 15 seconds.
 
-*Fight lab, seconds per kill: 20 at level 60. Presses per kill at level 60: Melee 6.3, Melee (off-hand) 5.9, Hemorrhage 3.2, Eviscerate 1.7, Shank 1.4, Ambush 1.0, Ghostly Strike 0.8, Garrote 0.4, Premeditation 0.1, Kick 0.1.*
+*Fight lab, seconds per kill: 20 at level 60. Presses per kill at level 60: Melee 6.2, Melee (off-hand) 5.8, Hemorrhage 3.1, Eviscerate 1.8, Shank 1.4, Ambush 1.0, Ghostly Strike 0.8, Garrote 0.4, Premeditation 0.1, Kick 0.1.*
 
 ## Between fights
 

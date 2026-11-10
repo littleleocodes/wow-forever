@@ -22,8 +22,7 @@ The Beast-Survival (a Beast Mastery/Survival hybrid) leveling build the open lev
 | **Deadly Aspects** | 5/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec. |
 | **Endurance Training** | 3/5 | changed | Increases the Health and Armor of your pets by 9%. |
 | **Focused Fire** | 2/2 | **NEW** | Increases all damage you and your pet deal by 2% while your pet is active. |
-| **Improved Aspect of the Monkey** | 2/3 | changed | Increases the Dodge bonus of your Aspect of the Monkey by 4%. Additionally, your pet gains 50% of the effect of your Aspect of the Monkey ability. |
-| **Unleashed Fury** | 3/5 | changed | Increases the damage done by your pets and hawks by 9%. |
+| **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
 | **Ferocity** | 5/5 | changed | Increases the critical strike chance of your pets and hawks by 10%. |
 | **Bestial Discipline** | 2/2 | changed | Increases the Focus regeneration of your pets by 20% and allows 50% of your Mana regeneration to continue while casting. |
 
@@ -66,8 +65,7 @@ The Beast-Survival (a Beast Mastery/Survival hybrid) leveling build the open lev
 | 39-43 | Beast Mastery | Deadly Aspects | 5 | 5/5/24 |
 | 44-45 | Beast Mastery | Focused Fire | 2 | 7/5/24 |
 | 46-48 | Beast Mastery | Endurance Training | 3 | 10/5/24 |
-| 49-51 | Beast Mastery | Unleashed Fury | 3 | 13/5/24 |
-| 52-53 | Beast Mastery | Improved Aspect of the Monkey | 2 | 15/5/24 |
+| 49-53 | Beast Mastery | Unleashed Fury | 5 | 15/5/24 |
 | 54-58 | Beast Mastery | Ferocity | 5 | 20/5/24 |
 | 59-60 | Beast Mastery | Bestial Discipline | 2 | 22/5/24 |
 
@@ -88,6 +86,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
+- 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Aspect of the Monkey to Unleashed Fury at 53 (gate: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Improved Aspect of the Monkey to Unleashed Fury at 52 (gate: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill).
 - +6.8% faster than the hand draft leveling-melee, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 21.24; opt-bm-leveling-leveling-aoe 24.61. The search simulated 60,489 builds.
 - The spec's other leveling builds on the pages: opt-melee-dps-leveling-st 22.50 s, leveling-melee 22.68 s.

@@ -384,5 +384,277 @@
    "talent": "Aggression",
    "points": 2
   }
- ]
+ ],
+ "written": {
+  "allocation": {
+   "Assassination": [],
+   "Combat": [
+    [
+     "Coup de Grace",
+     3
+    ],
+    [
+     "Efficient Strikes",
+     2
+    ],
+    [
+     "Lightning Reflexes",
+     3
+    ],
+    [
+     "Puncturing Wounds",
+     2
+    ],
+    [
+     "Precision",
+     3
+    ],
+    [
+     "Composure",
+     2
+    ],
+    [
+     "Flawless Execution",
+     1
+    ],
+    [
+     "Weapon Expertise",
+     2
+    ],
+    [
+     "Aggression",
+     2
+    ]
+   ],
+   "Subtlety": [
+    [
+     "Setup",
+     3
+    ],
+    [
+     "Master of Deception",
+     1
+    ],
+    [
+     "Opportunity",
+     5
+    ],
+    [
+     "Dirty Deeds",
+     2
+    ],
+    [
+     "Improved Ambush",
+     3
+    ],
+    [
+     "Dirty Tricks",
+     1
+    ],
+    [
+     "Initiative",
+     3
+    ],
+    [
+     "Premeditation",
+     1
+    ],
+    [
+     "Serrated Blades",
+     3
+    ],
+    [
+     "Ghostly Strike",
+     1
+    ],
+    [
+     "Preparation",
+     1
+    ],
+    [
+     "Hemorrhage",
+     1
+    ],
+    [
+     "Boot Knife",
+     5
+    ],
+    [
+     "Death Mark",
+     1
+    ]
+   ]
+  },
+  "order": [
+   {
+    "levels": "10-11",
+    "tree": "Subtlety",
+    "talent": "Opportunity",
+    "points": 2
+   },
+   {
+    "levels": "12-14",
+    "tree": "Subtlety",
+    "talent": "Setup",
+    "points": 3
+   },
+   {
+    "levels": "15-16",
+    "tree": "Subtlety",
+    "talent": "Dirty Deeds",
+    "points": 2
+   },
+   {
+    "levels": "17",
+    "tree": "Subtlety",
+    "talent": "Master of Deception",
+    "points": 1
+   },
+   {
+    "levels": "18-19",
+    "tree": "Subtlety",
+    "talent": "Improved Ambush",
+    "points": 2
+   },
+   {
+    "levels": "20-22",
+    "tree": "Subtlety",
+    "talent": "Serrated Blades",
+    "points": 3
+   },
+   {
+    "levels": "23",
+    "tree": "Subtlety",
+    "talent": "Initiative",
+    "points": 1
+   },
+   {
+    "levels": "24",
+    "tree": "Subtlety",
+    "talent": "Premeditation",
+    "points": 1
+   },
+   {
+    "levels": "25",
+    "tree": "Subtlety",
+    "talent": "Ghostly Strike",
+    "points": 1
+   },
+   {
+    "levels": "26-27",
+    "tree": "Subtlety",
+    "talent": "Initiative",
+    "points": 2
+   },
+   {
+    "levels": "28-29",
+    "tree": "Subtlety",
+    "talent": "Opportunity",
+    "points": 2
+   },
+   {
+    "levels": "30",
+    "tree": "Subtlety",
+    "talent": "Hemorrhage",
+    "points": 1
+   },
+   {
+    "levels": "31",
+    "tree": "Subtlety",
+    "talent": "Preparation",
+    "points": 1
+   },
+   {
+    "levels": "32",
+    "tree": "Subtlety",
+    "talent": "Opportunity",
+    "points": 1
+   },
+   {
+    "levels": "33",
+    "tree": "Subtlety",
+    "talent": "Improved Ambush",
+    "points": 1
+   },
+   {
+    "levels": "34",
+    "tree": "Subtlety",
+    "talent": "Dirty Tricks",
+    "points": 1
+   },
+   {
+    "levels": "35-39",
+    "tree": "Subtlety",
+    "talent": "Boot Knife",
+    "points": 5
+   },
+   {
+    "levels": "40",
+    "tree": "Subtlety",
+    "talent": "Death Mark",
+    "points": 1
+   },
+   {
+    "levels": "41-43",
+    "tree": "Combat",
+    "talent": "Coup de Grace",
+    "points": 3
+   },
+   {
+    "levels": "44-45",
+    "tree": "Combat",
+    "talent": "Lightning Reflexes",
+    "points": 2
+   },
+   {
+    "levels": "46-48",
+    "tree": "Combat",
+    "talent": "Precision",
+    "points": 3
+   },
+   {
+    "levels": "49-50",
+    "tree": "Combat",
+    "talent": "Efficient Strikes",
+    "points": 2
+   },
+   {
+    "levels": "51-52",
+    "tree": "Combat",
+    "talent": "Puncturing Wounds",
+    "points": 2
+   },
+   {
+    "levels": "53",
+    "tree": "Combat",
+    "talent": "Lightning Reflexes",
+    "points": 1
+   },
+   {
+    "levels": "54-55",
+    "tree": "Combat",
+    "talent": "Composure",
+    "points": 2
+   },
+   {
+    "levels": "56",
+    "tree": "Combat",
+    "talent": "Flawless Execution",
+    "points": 1
+   },
+   {
+    "levels": "57-58",
+    "tree": "Combat",
+    "talent": "Weapon Expertise",
+    "points": 2
+   },
+   {
+    "levels": "59-60",
+    "tree": "Combat",
+    "talent": "Aggression",
+    "points": 2
+   }
+  ],
+  "note": "2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Master of Deception to Improved Ambush at 19 (gate: -0.5% seed 3, -0.5% seed 4, level-weighted time per kill); Master of Deception to Improved Ambush at 18 (gate: -0.7% seed 3, -0.8% seed 4, level-weighted time per kill); Improved Sprint to Composure at 54 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Puncturing Wounds to Lightning Reflexes at 53 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill)."
+ }
 }

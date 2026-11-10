@@ -25,11 +25,10 @@ The Subtlety leveling build the open leveling search found on 2026-11-06: every 
 |---|---|---|---|
 | **Coup de Grace** | 3/3 | changed | Increases the damage done by your Eviscerate ability by 20%, and the damage and storage rate of your Death Mark ability by 20%. |
 | **Efficient Strikes** | 2/2 | unchanged | Reduces the Energy costs of Sinister Strike and Hemorrhage by 5. |
-| **Lightning Reflexes** | 2/5 | unchanged | Increases your Dodge chance by 2%. |
-| **Puncturing Wounds** | 3/3 | **NEW** | Increases the critical strike chance of your Backstab by 30% and your Mutilate by 15%, and gives Backstab a 45% chance to add an additional Combo Point. |
+| **Lightning Reflexes** | 3/5 | unchanged | Increases your Dodge chance by 3%. |
+| **Puncturing Wounds** | 2/3 | **NEW** | Increases the critical strike chance of your Backstab by 20% and your Mutilate by 10%, and gives Backstab a 30% chance to add an additional Combo Point. |
 | **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
-| **Improved Sprint** | 1/2 | unchanged | Gives a 50% chance to remove all movement impairing effects when you activate your Sprint ability. |
-| **Composure** | 1/2 | **NEW** | Increases the Energy cost reduction of your Poised ability by 5. |
+| **Composure** | 2/2 | **NEW** | Increases the Energy cost reduction of your Poised ability by 10. |
 | **Flawless Execution** | 1/1 | **NEW** | Reduces the Energy cost of your Eviscerate ability by 15. |
 | **Weapon Expertise** | 2/2 | changed | Reduces the chance for your attacks to be Dodged or Parried by 2%. |
 | **Aggression** | 2/3 | changed | Increases the damage of Sinister Strike and Eviscerate by 10%. |
@@ -39,10 +38,10 @@ The Subtlety leveling build the open leveling search found on 2026-11-06: every 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Setup** | 3/3 | changed | Gives you a 45% chance to add a Combo Point to your target after Dodging their attack or fully resisting one of their spells. |
-| **Master of Deception** | 3/3 | changed | Reduces the chance enemies have to detect you while in Stealth mode as if you were 3 levels higher. |
+| **Master of Deception** | 1/3 | changed | Reduces the chance enemies have to detect you while in Stealth mode as if you were 1 level higher. |
 | **Opportunity** | 5/5 | changed | Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 20%. |
 | **Dirty Deeds** | 2/2 | changed | Reduces the Energy cost of your Cheap Shot and Garrote abilities by 20, and your Garrote ability no longer requires you to be behind your target. |
-| **Improved Ambush** | 1/3 | moved | Increases the critical strike chance of your Ambush ability by 15%. |
+| **Improved Ambush** | 3/3 | moved | Increases the critical strike chance of your Ambush ability by 45%. |
 | **Dirty Tricks** | 1/2 | **NEW** | Reduces the Energy cost of your Sap and Blind abilities by 25%. |
 | **Initiative** | 3/3 | changed | Gives you a 100% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability. |
 | **Premeditation** | 1/1 | changed | Adds 2 Combo Points to your target. You must add to or use those combo points within 20 sec or the combo points are lost. |
@@ -60,7 +59,8 @@ The Subtlety leveling build the open leveling search found on 2026-11-06: every 
 | 10-11 | Subtlety | Opportunity | 2 | 0/0/2 |
 | 12-14 | Subtlety | Setup | 3 | 0/0/5 |
 | 15-16 | Subtlety | Dirty Deeds | 2 | 0/0/7 |
-| 17-19 | Subtlety | Master of Deception | 3 | 0/0/10 |
+| 17 | Subtlety | Master of Deception | 1 | 0/0/8 |
+| 18-19 | Subtlety | Improved Ambush | 2 | 0/0/10 |
 | 20-22 | Subtlety | Serrated Blades | 3 | 0/0/13 |
 | 23 | Subtlety | Initiative | 1 | 0/0/14 |
 | 24 | Subtlety | Premeditation | 1 | 0/0/15 |
@@ -78,9 +78,9 @@ The Subtlety leveling build the open leveling search found on 2026-11-06: every 
 | 44-45 | Combat | Lightning Reflexes | 2 | 0/5/31 |
 | 46-48 | Combat | Precision | 3 | 0/8/31 |
 | 49-50 | Combat | Efficient Strikes | 2 | 0/10/31 |
-| 51-53 | Combat | Puncturing Wounds | 3 | 0/13/31 |
-| 54 | Combat | Improved Sprint | 1 | 0/14/31 |
-| 55 | Combat | Composure | 1 | 0/15/31 |
+| 51-52 | Combat | Puncturing Wounds | 2 | 0/12/31 |
+| 53 | Combat | Lightning Reflexes | 1 | 0/13/31 |
+| 54-55 | Combat | Composure | 2 | 0/15/31 |
 | 56 | Combat | Flawless Execution | 1 | 0/16/31 |
 | 57-58 | Combat | Weapon Expertise | 2 | 0/18/31 |
 | 59-60 | Combat | Aggression | 2 | 0/20/31 |
@@ -102,6 +102,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
+- 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Master of Deception to Improved Ambush at 19 (gate: -0.5% seed 3, -0.5% seed 4, level-weighted time per kill); Master of Deception to Improved Ambush at 18 (gate: -0.7% seed 3, -0.8% seed 4, level-weighted time per kill); Improved Sprint to Composure at 54 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Puncturing Wounds to Lightning Reflexes at 53 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 22.41; subtlety-leveling 23.33. The search simulated 32,176 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.

@@ -1,6 +1,6 @@
 {
  "class": "druid",
- "date": "2026-11-08",
+ "date": "2026-11-09",
  "fights": 400,
  "seed": 3,
  "guides": {
@@ -163,7 +163,7 @@
    "build": "opt-balance-dps-leveling-st",
    "rotation": "balance-dps",
    "provisional_order": false,
-   "fingerprint": "1bb0bb9ffb65",
+   "fingerprint": "b4a4bad92b39",
    "levels": {
     "1": {
      "seconds": 14.1,
@@ -221,75 +221,74 @@
      }
     },
     "29": {
-     "seconds": 48.6,
+     "seconds": 48.3,
      "deaths_per_100": 0.0,
      "casts": {
-      "Moonfire": 2.48,
-      "Wrath": 12.7
+      "Moonfire": 2.5,
+      "Wrath": 12.63
      }
     },
     "30": {
-     "seconds": 42.1,
+     "seconds": 41.7,
      "deaths_per_100": 0.0,
      "casts": {
-      "Moonfire": 1.48,
-      "Wrath": 2.08,
-      "Starfire": 3.91
+      "Moonfire": 1.46,
+      "Wrath": 2.02,
+      "Starfire": 3.89
      }
     },
     "39": {
-     "seconds": 46.5,
+     "seconds": 46.2,
      "deaths_per_100": 0.0,
      "casts": {
-      "Moonfire": 1.58,
+      "Moonfire": 1.54,
       "Wrath": 2.38,
-      "Starfire": 4.74
+      "Starfire": 4.73
      }
     },
     "40": {
-     "seconds": 44.9,
+     "seconds": 45.2,
      "deaths_per_100": 0.0,
      "casts": {
-      "Moonfire": 1.59,
+      "Moonfire": 1.58,
       "Wrath": 2.31,
-      "Starfire": 4.67
+      "Starfire": 4.64
      }
     },
     "45": {
-     "seconds": 40.0,
+     "seconds": 39.9,
      "deaths_per_100": 0.0,
      "casts": {
-      "Moonfire": 1.42,
-      "Wrath": 2.07,
-      "Starfire": 4.0,
-      "Regrowth": 0.06
+      "Moonfire": 1.45,
+      "Wrath": 2.02,
+      "Starfire": 3.96
      }
     },
     "46": {
-     "seconds": 40.6,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Moonfire": 1.39,
-      "Wrath": 2.02,
-      "Starfire": 4.01
-     }
-    },
-    "50": {
-     "seconds": 37.8,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Moonfire": 1.49,
-      "Wrath": 2.1,
-      "Starfire": 4.04
-     }
-    },
-    "60": {
-     "seconds": 31.1,
+     "seconds": 39.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Moonfire": 1.4,
-      "Wrath": 1.85,
-      "Starfire": 3.59
+      "Wrath": 2.02,
+      "Starfire": 3.94
+     }
+    },
+    "50": {
+     "seconds": 37.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 1.47,
+      "Wrath": 2.08,
+      "Starfire": 3.99
+     }
+    },
+    "60": {
+     "seconds": 30.6,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 1.4,
+      "Wrath": 1.84,
+      "Starfire": 3.56
      }
     }
    }

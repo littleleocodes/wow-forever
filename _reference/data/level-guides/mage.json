@@ -946,7 +946,7 @@
       "**Presence of Mind** (30) makes your next cast instant; the fight lab spends it on the opening **Arcane Wrath**.",
       "**Ice Armor** (30) replaces **Frost Armor** as your armor spell.",
       "**Arcane Mind** (32-34, 38-39) adds Intellect and bigger Arcane crits, **Arcane Instability** (35-37) damage and crit.",
-      "From 40 the last 21 points go to Frost: **Precision** (40-41) for hit, then **Improved Frostbolt** (42-44, which this list never uses: it casts no **Frostbolt**), **Ice Shards** (45-47), **Improved Frost Nova** (48) and **Frost Warding** (49). Nothing new to press until 50; **Frostfire Bolt** (40) is not part of this list."
+      "From 40 the points go to Frost, all but **Arcane Power** at 59: **Precision** (40-41) for hit, then **Improved Frostbolt** (42-44, which this list never uses: it casts no **Frostbolt**), **Ice Shards** (45-47), **Improved Frost Nova** (48) and **Frost Warding** (49). Nothing new to press until 50; **Frostfire Bolt** (40) is not part of this list."
      ]
     },
     {
@@ -965,8 +965,29 @@
      ],
      "if_hurt": "Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.",
      "notes": [
-      "**Improved Blizzard** (52-54) only matters in packs. **Arctic Reach** (55-56) widens **Frost Nova**, **Permafrost** (57-59) makes your chills last longer.",
-      "**Fingers of Frost** (60): a chill (your armor slows a mob that hits you) can make your next 2 spells count as cast on a frozen mob. **Ice Lance** then hits as hard as into a **Frost Nova**."
+      "**Frost Warding** (51) gets its second point. **Improved Blizzard** (52-53) only matters in packs. **Improved Frost Nova** (54) gets its second point: **Frost Nova** comes back 4 seconds sooner.",
+      "**Shatter** (55-56): your spells crit 33% more often on a frozen mob, so the **Ice Lance** into a **Frost Nova** crits far more often. **Permafrost** (57-58) makes your chills last longer."
+     ]
+    },
+    {
+     "from": 59,
+     "title": "Arcane Power on the pull",
+     "change": "**Arcane Power** (talent): every 3 minutes, 15 seconds in which your spells deal 30% more damage and cost 30% more mana.",
+     "press": [
+      "**Counterspell** a mob that starts casting.",
+      "**Arcane Power** at the pull when it is ready and you have more than half your mana.",
+      "Open with **Arcane Wrath**: the Shift+Q macro makes it instant whenever Presence of Mind is ready; without it, only when its cast will end before the mob reaches you.",
+      "**Arcane Blast** twice while the mob walks in, each only if its cast ends before the mob reaches you and it costs no more than a quarter of the mana you have left. Not on a mob that is almost dead.",
+      "**Arcane Missiles** after your two stacks, and whenever nothing else applies. When the free Missiles of **Missile Barrage** light up, cast them at once after your stacks, or at once if the mob is on you.",
+      "**Arcane Wrath** again whenever it is ready and its cast will end before the mob reaches you, or while the mob stands frozen.",
+      "**Frost Nova** when the mob reaches you, then step back, and **Ice Lance** it while it stands frozen. Skip the Nova on a mob that is almost dead.",
+      "With **Frost Nova** on cooldown, keep channeling while it hits you.",
+      "**Fire Blast** or an **Ice Lance** when it will kill the mob."
+     ],
+     "if_hurt": "Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.",
+     "notes": [
+      "**Arcane Power** (59) goes on Shift+1. The fight lab uses it at the pull, next to **Presence of Mind**, whenever it is ready and you have more than half your mana.",
+      "**Shatter** (60) gets its third point: 50% more crit on a frozen mob."
      ]
     }
    ],
@@ -1181,8 +1202,13 @@
        },
        {
         "key": "Shift+1",
-        "role": "Free",
-        "binds": []
+        "role": "The pull's damage cooldown",
+        "binds": [
+         {
+          "from": 59,
+          "spell": "Arcane Power"
+         }
+        ]
        },
        {
         "key": "Shift+2",
@@ -1224,7 +1250,7 @@
     ],
     "no_key": [],
     "notes": [
-     "The [Frost guide](frost-by-level.md)'s keys, with three changes for Arcane: **Arcane Missiles** takes Q at 8 (it is the spell you press most, and **Frostbolt** leaves the bar), **Arcane Blast** goes on 1, where the other mage guides keep the free Missiles, and **Arcane Wrath** on Shift+Q, where they keep the **Presence of Mind** macro.",
+     "The [Frost guide](frost-by-level.md)'s keys, with four changes for Arcane: **Arcane Missiles** takes Q at 8 (it is the spell you press most, and **Frostbolt** leaves the bar), **Arcane Blast** goes on 1, where the other mage guides keep the free Missiles, **Arcane Wrath** on Shift+Q, where they keep the **Presence of Mind** macro, and **Arcane Power** on Shift+1 at 59.",
      "R waits for **Ice Lance** at 50: it keeps the job it has in every mage guide, the hit into a freeze.",
      "Levels 4 and 8 are the swaps on Q: **Frostbolt** replaces **Fireball**, then **Arcane Missiles** replaces **Frostbolt**.",
      "The Shift+Q macro from 30, one line each: `#showtooltip Arcane Wrath`, `/cast Presence of Mind`, `/cast Arcane Wrath`. **Presence of Mind** is off the global cooldown, so one press fires both; while it is on cooldown the second line still casts **Arcane Wrath**.",
@@ -1316,7 +1342,7 @@
      "if_hurt": "Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.",
      "notes": [
       "**Frostbite** (27-29): a chill can freeze the mob, and your armor chills a mob that hits you. Treat a freeze as a free **Frost Nova**: step back and keep casting.",
-      "**Frost Warding** (23-24) adds armor to **Frost Armor**; **Permafrost** (26) makes chills last longer. **Cone of Cold** (26) goes on C for packs: the Fire list never casts it.",
+      "**Frost Warding** (23-24) adds armor to **Frost Armor**; **Precision** (25) gets its third point and **Improved Frost Nova** (26) brings **Frost Nova** back 2 seconds sooner. **Cone of Cold** (26) goes on C for packs: the Fire list never casts it.",
       "**Ice Armor** (30) replaces **Frost Armor** as your armor spell."
      ]
     },
@@ -1336,8 +1362,8 @@
      ],
      "if_hurt": "Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.",
      "notes": [
-      "**Ice Shards** (30, 32-35) and **Shatter** (37-39) make the **Ice Lance** into a freeze your biggest hit.",
-      "**Ice Block** (36) goes on Shift+F: the last resort when a pull goes wrong.",
+      "**Ice Shards** (30, 32-34) and **Shatter** (37-39) make the **Ice Lance** into a freeze your biggest hit.",
+      "**Wand Specialization** (35) makes your wand hit harder for the finish. **Improved Frost Nova** (36) gets its second point: **Frost Nova** comes back 4 seconds sooner.",
       "**Improved Fire Blast** (40-41) brings **Fire Blast** back 2 seconds sooner and adds 15 yards of range; **Burning Soul** (42-43) keeps hits from pushing your Fire casts back. **Frostfire Bolt** (40) is not part of the Fire list."
      ]
     },
@@ -1359,28 +1385,7 @@
      "if_hurt": "Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.",
      "notes": [
       "On one mob the 3 stacks rarely come together before it dies: the opener stays your main **Pyroblast**.",
-      "**Impact** (46) sometimes stuns the mob for 2 seconds. **Improved Scorch** (47-48, 50) does nothing in this list: the tuned rules never cast **Scorch**."
-     ]
-    },
-    {
-     "from": 49,
-     "title": "Blast Wave for when Frost Nova is down",
-     "change": "**Blast Wave** (talent): an instant blast around you that dazes the mob, for when **Frost Nova** is down.",
-     "press": [
-      "**Counterspell** a mob that starts casting.",
-      "Open every pull with a hard-cast **Pyroblast** from maximum range. The mob runs at you during the 6-second cast: finish it, then go on.",
-      "**Pyroblast** again at 3 stacks of **Heating Up**, while the mob has more than about a third of its health.",
-      "**Fireball** while the mob walks in, and whenever nothing below applies, while the mob has more than about a third of its health.",
-      "**Fire Blast** when the mob would reach you before a **Fireball** finishes. With **Fire Blast** on cooldown and **Frost Nova** ready, wand it until it arrives.",
-      "**Frost Nova** when it reaches you, while you have more than 30% of your mana, then step back out of its reach. Skip it on a mob that is almost dead.",
-      "**Blast Wave** when the mob reaches you with **Frost Nova** down (or your mana under 30%), while it has more than about a third of its health, then step back.",
-      "**Ice Lance** the moment the mob is frozen, by **Frost Nova** or by **Frostbite**. One per freeze: it has an 8-second cooldown.",
-      "If it reaches you with **Frost Nova** and **Blast Wave** both on cooldown: **Fire Blast**, then keep casting **Fireball**.",
-      "Below about a third of its health: **Fire Blast** whenever it is ready, an **Ice Lance** into a freeze or one that will kill, else your wand. No new **Fireball**."
-     ],
-     "if_hurt": "Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.",
-     "notes": [
-      "**Blast Wave** takes C; **Cone of Cold** moves to Shift+C.",
+      "**Incineration** (45-46, 48-50) adds crit to **Fire Blast** and **Ice Lance**: 10% at 5 points. **Improved Scorch** (47) does nothing in this list: the tuned rules never cast **Scorch**.",
       "**Critical Mass** (51-53) adds Fire crit, **Fire Power** (54-56) adds Fire damage for each Fire effect on the mob, **Master of Elements** (57-58) refunds mana on crits."
      ]
     },
@@ -1395,9 +1400,8 @@
       "**Fireball** while the mob walks in, and whenever nothing below applies, while the mob has more than about a third of its health.",
       "**Fire Blast** when the mob would reach you before a **Fireball** finishes. With **Fire Blast** on cooldown and **Frost Nova** ready, wand it until it arrives.",
       "**Frost Nova** when it reaches you, while you have more than 30% of your mana, then step back out of its reach. Skip it on a mob that is almost dead.",
-      "**Blast Wave** when the mob reaches you with **Frost Nova** down (or your mana under 30%), while it has more than about a third of its health, then step back.",
       "**Ice Lance** the moment the mob is frozen, by **Frost Nova** or by **Frostbite**. One per freeze: it has an 8-second cooldown.",
-      "If it reaches you with **Frost Nova** and **Blast Wave** both on cooldown: **Fire Blast**, then keep casting **Fireball**.",
+      "If it reaches you with **Frost Nova** on cooldown: **Fire Blast**, then keep casting **Fireball**.",
       "Below about a third of its health: **Fire Blast** whenever it is ready, an **Ice Lance** into a freeze or one that will kill, else your wand. No new **Fireball**."
      ],
      "if_hurt": "Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.",
@@ -1414,7 +1418,7 @@
     "Visit the trainer every even level. **Fireball** alone has eleven ranks."
    ],
    "other": [
-    "Packs: **Flamestrike** and, from 49, **Blast Wave** hit every mob around you. The fight lab measured single pulls only for Fire.",
+    "Packs: **Frost Nova** when two or more reach you, then **Arcane Explosion** around you or **Flamestrike** on the group. The fight lab measured single pulls only for Fire.",
     "[Arcane-Frost](arcane-frost-by-level.md) is the recommended mage leveling spec in the fight lab; [Frost](frost-by-level.md) is close behind."
    ],
    "keys": {
@@ -1525,15 +1529,11 @@
        },
        {
         "key": "C",
-        "role": "Packs: the cone, then Blast Wave from 49 for when Frost Nova is down",
+        "role": "Packs: the cone (the single-target list never casts it)",
         "binds": [
          {
           "from": 26,
           "spell": "Cone of Cold"
-         },
-         {
-          "from": 49,
-          "spell": "Blast Wave"
          }
         ]
        },
@@ -1585,13 +1585,8 @@
        },
        {
         "key": "Shift+F",
-        "role": "Last resort",
-        "binds": [
-         {
-          "from": 36,
-          "spell": "Ice Block"
-         }
-        ]
+        "role": "Free",
+        "binds": []
        },
        {
         "key": "Shift+Mouse 5",
@@ -1640,16 +1635,6 @@
        },
        {
         "key": "Shift+C",
-        "role": "Packs: the cone",
-        "binds": [
-         {
-          "from": 49,
-          "spell": "Cone of Cold"
-         }
-        ]
-       },
-       {
-        "key": "Shift+X",
         "role": "A bad pull: the best healing potion in your bags (one cooldown for every potion)",
         "binds": [
          {
@@ -1657,13 +1642,18 @@
           "text": "Healing potion macro"
          }
         ]
+       },
+       {
+        "key": "Shift+X",
+        "role": "Free",
+        "binds": []
        }
       ]
      }
     ],
     "no_key": [],
     "notes": [
-     "The [Frost guide](frost-by-level.md)'s keys, with the changes Fire needs: Q keeps **Fireball** to 60 (Fire never casts **Frostbolt**), **Pyroblast** goes on 1 (the free-Missiles key of the Arcane-Frost build), **Blast Wave** takes C at 49 and **Cone of Cold** moves to Shift+C, **Flamestrike** takes Shift+R in place of **Blizzard**, **Ice Block** goes on Shift+F, and Shift+Q holds the **Combustion** macro.",
+     "The [Frost guide](frost-by-level.md)'s keys, with the changes Fire needs: Q keeps **Fireball** to 60 (Fire never casts **Frostbolt**), **Pyroblast** goes on 1 (the free-Missiles key of the Arcane-Frost build), **Flamestrike** takes Shift+R in place of **Blizzard**, and Shift+Q holds the **Combustion** macro.",
      "**Ice Lance** stays on R, as in every mage guide; it arrives at 31 in this build.",
      "Levels 1-9 fight with three keys: Q, Mouse 5 and the middle mouse button. Add a key when its spell arrives.",
      "The Shift+Q macro from 59, one line each: `#showtooltip Pyroblast`, `/cast Combustion`, `/cast Pyroblast`. **Combustion** is off the global cooldown, so one press fires both; while it is on cooldown the second line still casts **Pyroblast**, so Shift+Q can open every pull.",
@@ -1720,7 +1710,7 @@
       "Your wand finishes a mob that is almost dead."
      ],
      "notes": [
-      "**Precision** (10-11) for hit, **Frost Warding** (12-13) for armor, **Improved Frostbolt** (14) for a faster **Frostbolt**.",
+      "**Precision** (10-11) for hit, **Improved Frostbolt** (12-14) for a faster **Frostbolt**.",
       "**Frostbite** (15-17) sometimes freezes a mob your chill hits. Treat it as a free **Frost Nova**: step back and cast. **Ice Shards** (18-19) makes your Frost crits bigger.",
       "**Arcane Explosion** (14) and **Flamestrike** (16) are for packs. One mob at a time never needs them."
      ]
@@ -1778,6 +1768,7 @@
      "if_hurt": "Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.",
      "notes": [
       "**Ice Armor** (30) replaces **Frost Armor** as your armor spell.",
+      "**Improved Frost Nova** (32) brings **Frost Nova** back 2 seconds sooner.",
       "**Wand Specialization** (33-34) makes your wand hits stronger: from 40 the wand finishes a lot of mobs.",
       "**Accelerant** (35-39) shortens **Frostfire Bolt** once you have it at 40; it does nothing for **Frostbolt**."
      ]
@@ -1799,7 +1790,8 @@
      "notes": [
       "**Frostfire Bolt** slows like **Frostbolt**, so its chill still rolls **Frostbite** and **Fingers of Frost**. Take **Frostbolt** off your bar.",
       "The tuned rules keep the bolt for the mob's first two thirds; below that the wand does the rest.",
-      "**Ignite** (40-44), **Burning Soul** (45-47), **Master of Elements** (50-52) and **Critical Mass** (56-58) work on **Frostfire Bolt**; **Incineration** (48-49, 53-54, 59) adds crit to **Ice Lance**. **Blast Wave** (55) is for packs: the single-target list never casts it."
+      "**Ignite** (40-44), **Burning Soul** (45-47), **Master of Elements** (50-52) and **Critical Mass** (56-58) work on **Frostfire Bolt**; **Incineration** (48-49, 53-54, 59) adds crit to **Ice Lance**.",
+      "**Improved Frost Nova** (55) gets its second point: **Frost Nova** comes back 4 seconds sooner. **Impact** (60) gives your Fire spells, **Frostfire Bolt** included, a small chance to stun the mob for 2 seconds."
      ]
     }
    ],
@@ -2024,16 +2016,6 @@
        },
        {
         "key": "Shift+C",
-        "role": "Packs: the blast that dazes",
-        "binds": [
-         {
-          "from": 55,
-          "spell": "Blast Wave"
-         }
-        ]
-       },
-       {
-        "key": "Shift+X",
         "role": "A bad pull: the best healing potion in your bags (one cooldown for every potion)",
         "binds": [
          {
@@ -2041,18 +2023,23 @@
           "text": "Healing potion macro"
          }
         ]
+       },
+       {
+        "key": "Shift+X",
+        "role": "Free",
+        "binds": []
        }
       ]
      }
     ],
     "no_key": [],
     "notes": [
-     "The [Frost guide](frost-by-level.md)'s keys: Q takes **Frostfire Bolt** at 40, **Blast Wave** goes on Shift+C at 55 for packs, and key 1 and Shift+Q stay free (this build has no **Missile Barrage** and no **Presence of Mind**).",
+     "The [Frost guide](frost-by-level.md)'s keys: Q takes **Frostfire Bolt** at 40, and key 1 and Shift+Q stay free (this build has no **Missile Barrage** and no **Presence of Mind**).",
      "Levels 4 and 40 are the swaps on Q: **Frostbolt** replaces **Fireball**, then **Frostfire Bolt** replaces **Frostbolt**.",
      "**Fire Blast** keeps Mouse 5 as in every mage guide, but the tuned list never presses it. Until **Frost Nova** at 10 you fight with Q and the middle mouse button.",
      "No key: **Frost Armor** and **Ice Armor**, **Arcane Intellect**, **Conjure Water** and **Conjure Food**, food, drink, the mount and the Hearthstone. Put them on a side bar and click them between fights.",
      "**Evocation** on 4 is the one between-fights spell with a key: it has a cooldown and a mana rule, so it is a decision, not a chore. Click it instead if you want 4 free.",
-     "The single-target rotation never casts **Cone of Cold**, **Arcane Explosion**, **Blizzard** or **Blast Wave**. They are there for a pull that brings friends."
+     "The single-target rotation never casts **Cone of Cold**, **Arcane Explosion** or **Blizzard**. They are there for a pull that brings friends."
     ]
    }
   }

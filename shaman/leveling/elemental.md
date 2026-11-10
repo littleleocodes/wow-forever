@@ -4,11 +4,11 @@
 
 **Leveling from level 1?** [The rotation level by level](elemental-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Elemental — Leveling](../research/leveling/builds/elemental-open-leveling.md)** (32/11/8) — [open the talent tree](https://talentsforever.com/shaman/60/540332100302135-05203001-053-12)
+**[Elemental — Leveling](../research/leveling/builds/elemental-open-leveling.md)** (32/11/8) — [open the talent tree](https://talentsforever.com/shaman/60/540333100301135-05003201-053-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-**Signature spells:** 76% of the damage at level 60 in the fight lab comes from the spec's core spells (Lightning Bolt, Earth Shock, Flame Shock; this build never casts Chain Lightning) (the spec's rule: at least 60%; **Lightning Bolt** cast at level 60).
+**Signature spells:** 75% of the damage at level 60 in the fight lab comes from the spec's core spells (Lightning Bolt, Earth Shock, Flame Shock; this build never casts Chain Lightning) (the spec's rule: at least 60%; **Lightning Bolt** cast at level 60).
 
 ## How to play
 
@@ -42,7 +42,7 @@ Kill as much as you can with **Lightning Bolt** before the mob reaches you, then
 
 - From 39, **Elemental Focus** sometimes makes your next damage spell free: nothing to change, the next spell in the list takes it.
 - This list is for one mob at a time; the fight lab does not model area pulls for Elemental. **Chain Lightning** hits up to 3 targets if you pull more.
-- Levels 10-17 go into Restoration (**Tidal Focus**: 5% more chance to hit; **Mindfulness**: half your mana regeneration continues while you cast) and 18-28 into Enhancement (**Thundering Strikes**: 5% crit with spells and attacks; **Ancestral Knowledge**: more Intellect; **Mental Dexterity**, which mostly opens the tier of **Shamanistic Focus** at 28). From 29 every point goes to Elemental.
+- Levels 10-17 go into Restoration (**Tidal Focus**: 5% more chance to hit; **Mindfulness**: half your mana regeneration continues while you cast) and 18-28 into Enhancement (**Thundering Strikes**: 5% crit with spells and attacks; **Improved Lightning Shield** (23-24): more damage from **Lightning Shield**; **Mental Dexterity**, which mostly opens the tier of **Shamanistic Focus** at 28). From 29 every point goes to Elemental.
 - Drink only below 15% mana and heal or eat back to 80% health between pulls: the tuned rules the fight lab plays.
 
 **When to change it**
@@ -61,7 +61,7 @@ One point per level from 10, in this order:
 | 10-14 | Tidal Focus (Restoration) | 5 |
 | 15-17 | Mindfulness (Restoration) | 3 |
 | 18-22 | Thundering Strikes (Enhancement) | 5 |
-| 23-24 | Ancestral Knowledge (Enhancement) | 2 |
+| 23-24 | Improved Lightning Shield (Enhancement) | 2 |
 | 25-27 | Mental Dexterity (Enhancement) | 3 |
 | 28 | Shamanistic Focus (Enhancement) | 1 |
 | 29-33 | Convection (Elemental) | 5 |
@@ -75,7 +75,8 @@ One point per level from 10, in this order:
 | 50-52 | Lightning Overload (Elemental) | 3 |
 | 53 | Reverberation (Elemental) | 1 |
 | 54-58 | Elemental Fury (Elemental) | 5 |
-| 59-60 | Elemental Reach (Elemental) | 2 |
+| 59 | Elemental Reach (Elemental) | 1 |
+| 60 | Call of Flame (Elemental) | 1 |
 
 ## The numbers
 

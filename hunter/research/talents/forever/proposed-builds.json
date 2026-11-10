@@ -1940,8 +1940,7 @@
           ["Deadly Aspects", 5],
           ["Endurance Training", 3],
           ["Focused Fire", 2],
-          ["Improved Aspect of the Monkey", 2],
-          ["Unleashed Fury", 3],
+          ["Unleashed Fury", 5],
           ["Ferocity", 5],
           ["Bestial Discipline", 2]
         ],
@@ -1976,8 +1975,7 @@
         {"levels": "39-43", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
         {"levels": "44-45", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
         {"levels": "46-48", "tree": "Beast Mastery", "talent": "Endurance Training", "points": 3},
-        {"levels": "49-51", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 3},
-        {"levels": "52-53", "tree": "Beast Mastery", "talent": "Improved Aspect of the Monkey", "points": 2},
+        {"levels": "49-53", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 5},
         {"levels": "54-58", "tree": "Beast Mastery", "talent": "Ferocity", "points": 5},
         {"levels": "59-60", "tree": "Beast Mastery", "talent": "Bestial Discipline", "points": 2}
       ],
@@ -1992,7 +1990,7 @@
         {"talent": "Unleashed Fury", "why": "+0.4 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["+6.8% faster than the hand draft leveling-melee, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 21.24; opt-bm-leveling-leveling-aoe 24.61. The search simulated 60,489 builds.", "The spec's other leveling builds on the pages: opt-melee-dps-leveling-st 22.50 s, leveling-melee 22.68 s.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Aspect of the Monkey to Unleashed Fury at 53 (gate: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Improved Aspect of the Monkey to Unleashed Fury at 52 (gate: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill).", "+6.8% faster than the hand draft leveling-melee, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 21.24; opt-bm-leveling-leveling-aoe 24.61. The search simulated 60,489 builds.", "The spec's other leveling builds on the pages: opt-melee-dps-leveling-st 22.50 s, leveling-melee 22.68 s.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Beast-Survival leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/hunter", "https://talentsforever.com/hunter/60/53220003050002-005-520210230140202-7"],
       "replaces": "leveling-melee"
@@ -2079,14 +2077,14 @@
       "summary": "The Survival leveling build the open leveling search found on 2026-11-06: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the melee-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (melee-dps). +14.1% faster per kill than opt-bm-leveling-leveling-aoe, the fastest of our leveling builds in that race.",
       "allocation": {
         "Beast Mastery": [
-          ["Deadly Aspects", 5]
+          ["Deadly Aspects", 3]
         ],
         "Marksmanship": [
           ["Lethal Attacks", 5],
-          ["Efficiency", 3],
-          ["Careful Aim", 5],
-          ["Rapid Killing", 2],
-          ["Mortal Shots", 1]
+          ["Improved Stings", 3],
+          ["Efficiency", 4],
+          ["Careful Aim", 3],
+          ["Rapid Killing", 1]
         ],
         "Survival": [
           ["Improved Tracking", 5],
@@ -2095,10 +2093,11 @@
           ["Survivalist", 2],
           ["Clever Traps", 2],
           ["Surefooted", 3],
+          ["Survival Tactics", 2],
           ["Predator's Edge", 5],
           ["Resourcefulness", 2],
-          ["Expose Prey", 1],
           ["Survivalist's Discipline", 2],
+          ["Strider Kick", 1],
           ["Lightning Reflexes", 5]
         ]
       },
@@ -2111,16 +2110,20 @@
         {"levels": "23-24", "tree": "Survival", "talent": "Clever Traps", "points": 2},
         {"levels": "25-29", "tree": "Survival", "talent": "Predator's Edge", "points": 5},
         {"levels": "30", "tree": "Survival", "talent": "Resourcefulness", "points": 1},
-        {"levels": "31", "tree": "Survival", "talent": "Expose Prey", "points": 1},
+        {"levels": "31", "tree": "Survival", "talent": "Survival Tactics", "points": 1},
         {"levels": "32", "tree": "Survival", "talent": "Resourcefulness", "points": 1},
         {"levels": "33-34", "tree": "Survival", "talent": "Survivalist's Discipline", "points": 2},
         {"levels": "35-39", "tree": "Survival", "talent": "Lightning Reflexes", "points": 5},
         {"levels": "40-44", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
-        {"levels": "45-49", "tree": "Marksmanship", "talent": "Careful Aim", "points": 5},
-        {"levels": "50-54", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
+        {"levels": "45-47", "tree": "Marksmanship", "talent": "Careful Aim", "points": 3},
+        {"levels": "48-49", "tree": "Marksmanship", "talent": "Improved Stings", "points": 2},
+        {"levels": "50-52", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 3},
+        {"levels": "53", "tree": "Survival", "talent": "Survival Tactics", "points": 1},
+        {"levels": "54", "tree": "Survival", "talent": "Strider Kick", "points": 1},
         {"levels": "55-57", "tree": "Marksmanship", "talent": "Efficiency", "points": 3},
-        {"levels": "58-59", "tree": "Marksmanship", "talent": "Rapid Killing", "points": 2},
-        {"levels": "60", "tree": "Marksmanship", "talent": "Mortal Shots", "points": 1}
+        {"levels": "58", "tree": "Marksmanship", "talent": "Rapid Killing", "points": 1},
+        {"levels": "59", "tree": "Marksmanship", "talent": "Efficiency", "points": 1},
+        {"levels": "60", "tree": "Marksmanship", "talent": "Improved Stings", "points": 1}
       ],
       "core": [
         {"talent": "Resourcefulness", "why": "+2.1 s per kill at level 60 without it (removal, 3,000 fights)."},
@@ -2132,7 +2135,7 @@
         {"talent": "Careful Aim", "why": "+0.4 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 21.57; opt-bm-leveling-leveling-aoe 24.61. The search simulated 43,753 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Deadly Aspects to Strider Kick at 54 (tie-break: -0.3% seed 3, -0.3% seed 4, level-weighted time per kill); Mortal Shots to Improved Stings at 60 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Careful Aim to Improved Stings at 49 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Deadly Aspects to Survival Tactics at 53 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Rapid Killing to Efficiency at 59 (no loss: -0.1% seed 3, -0.0% seed 4, level-weighted time per kill); Careful Aim to Improved Stings at 48 (tie-break: -0.1% seed 3, -0.3% seed 4, level-weighted time per kill); Expose Prey to Survival Tactics at 31 (gate: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill).", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 21.57; opt-bm-leveling-leveling-aoe 24.61. The search simulated 43,753 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Survival leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/hunter", "https://talentsforever.com/hunter/60/5-00503520001-51022023005021205-7"]
     }

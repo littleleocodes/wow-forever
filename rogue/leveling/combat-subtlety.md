@@ -8,7 +8,7 @@
 
 **Leveling from level 1?** [The rotation level by level](combat-subtlety-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Combat-Subtlety — Leveling](../research/leveling/builds/combat-subtlety-open-leveling.md)** (5/25/21) — [open the talent tree](https://talentsforever.com/rogue/60/023-32500300020123202-1051030313210001-12)
+**[Combat-Subtlety — Leveling](../research/leveling/builds/combat-subtlety-open-leveling.md)** (5/25/21) — [open the talent tree](https://talentsforever.com/rogue/60/023-32500300020123202-3051030313010001-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
@@ -41,7 +41,7 @@ Combat-Subtlety levels on Subtlety's openers and Combat's finishers: **Premedita
 - From stealth, **Premeditation** (level 24) adds 2 points (a 2-minute cooldown, so about every fifth pull) and **Initiative** (1 rank at 23, all 3 by 53) makes your opener add a second one: up to 4 points before your first builder.
 - Open with **Ambush** on every pull once you have it (level 18): **Opportunity** (5 ranks by 16) and **Improved Ambush** (17-19) make it hit harder and crit more. **Garrote** is the opener before that (14-17); later the fight lab casts it after a **Ghostly Strike**, whose next **Garrote** needs no stealth (**Dirty Deeds** lets it land from the front), when no bleed is on the mob and it has more than half its health.
 - **Sinister Strike** is your builder all the way to 59: **Hemorrhage** needs 3 ranks of **Serrated Blades** behind it and arrives with the last point, at 60. **Efficient Strikes** (34-35) cut **Sinister Strike**'s cost by 5.
-- **Ghostly Strike** (level 25) goes in on its 20-second cooldown: 180% weapon damage with a dagger, 15% more dodge for 7 seconds. With **Setup** (1 rank at 12, 15%) a dodge sometimes adds a combo point.
+- **Ghostly Strike** (level 25) goes in on its 20-second cooldown: 180% weapon damage with a dagger, 15% more dodge for 7 seconds. With **Setup** (1 rank at 12, 15%; all 3 by 59, 45%) a dodge sometimes adds a combo point.
 - At 5 points, wait for the energy for **Eviscerate** rather than press a builder whose point would be lost, and cast it earlier when it would kill the mob. **Coup de Grace** (26-28) makes it hit 20% harder.
 - Pull the next mob within 20 seconds of a kill: **Remorseless Attacks** (29-30) gives your next strike 40% more crit chance.
 
@@ -88,7 +88,7 @@ One point per level from 10, in this order:
 | 52-53 | Initiative (Subtlety) | 2 |
 | 54-55 | Dual Wield Specialization (Combat) | 2 |
 | 56-57 | Hack and Slash (Combat) | 2 |
-| 58-59 | Elusiveness (Subtlety) | 2 |
+| 58-59 | Setup (Subtlety) | 2 |
 | 60 | Hemorrhage (Subtlety) | 1 |
 
 ## The numbers

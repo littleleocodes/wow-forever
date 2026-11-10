@@ -4,7 +4,7 @@
 
 What a Frostfire mage presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. It levels as a Frost mage until 40: **Frostbolt** at range, **Frost Nova** and a step back when the mob arrives, **Ice Lance** into the freeze. At 40 **Frostfire Bolt** replaces **Frostbolt**, and the Fire points that follow make it hit harder. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 3/26/22 ([open the talent tree](https://talentsforever.com/mage/60/201-5550030000003311-2125300301003002-12)), the one on the [Frostfire leveling page](frostfire.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 2/25/24 ([open the talent tree](https://talentsforever.com/mage/60/2-55501300000033-0325320301003002-12)), the one on the [Frostfire leveling page](frostfire.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -53,21 +53,21 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Shift+2 | Free | — | — | — | — | — | — | — |
 | Shift+3 | Lift a curse | — | — | **Remove Lesser Curse** from 18 | Remove Lesser Curse | Remove Lesser Curse | Remove Lesser Curse | Remove Lesser Curse |
 | Shift+4 | Free | — | — | — | — | — | — | — |
-| Shift+C | Packs: the blast that dazes | — | — | — | — | — | — | **Blast Wave** from 55 |
-| Shift+X | A bad pull: the best healing potion in your bags (one cooldown for every potion) | **Healing potion macro** | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro |
+| Shift+C | A bad pull: the best healing potion in your bags (one cooldown for every potion) | **Healing potion macro** | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro |
+| Shift+X | Free | — | — | — | — | — | — | — |
 
-- The [Frost guide](frost-by-level.md)'s keys: Q takes **Frostfire Bolt** at 40, **Blast Wave** goes on Shift+C at 55 for packs, and key 1 and Shift+Q stay free (this build has no **Missile Barrage** and no **Presence of Mind**).
+- The [Frost guide](frost-by-level.md)'s keys: Q takes **Frostfire Bolt** at 40, and key 1 and Shift+Q stay free (this build has no **Missile Barrage** and no **Presence of Mind**).
 - Levels 4 and 40 are the swaps on Q: **Frostbolt** replaces **Fireball**, then **Frostfire Bolt** replaces **Frostbolt**.
 - **Fire Blast** keeps Mouse 5 as in every mage guide, but the tuned list never presses it. Until **Frost Nova** at 10 you fight with Q and the middle mouse button.
 - No key: **Frost Armor** and **Ice Armor**, **Arcane Intellect**, **Conjure Water** and **Conjure Food**, food, drink, the mount and the Hearthstone. Put them on a side bar and click them between fights.
 - **Evocation** on 4 is the one between-fights spell with a key: it has a cooldown and a mana rule, so it is a decision, not a chore. Click it instead if you want 4 free.
-- The single-target rotation never casts **Cone of Cold**, **Arcane Explosion**, **Blizzard** or **Blast Wave**. They are there for a pull that brings friends.
+- The single-target rotation never casts **Cone of Cold**, **Arcane Explosion** or **Blizzard**. They are there for a pull that brings friends.
 
 ## Levels 1-3: Fireball
 
 **The trainer teaches:** Arcane Intellect (1), **Fireball** (1), Frost Armor (1).
 
-**Keys to set:** Q = Fireball; Middle mouse = Wand; Shift+X = Healing potion macro.
+**Keys to set:** Q = Fireball; Middle mouse = Wand; Shift+C = Healing potion macro.
 
 **Your keys in this stage:** Q Fireball.
 
@@ -106,7 +106,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Fire Blast at 14; Frostbolt at 14.
 
-**Talents:** 10-11 Precision, 12-13 Frost Warding, 14 Improved Frostbolt, 15-17 Frostbite, 18-19 Ice Shards.
+**Talents:** 10-11 Precision, 12-14 Improved Frostbolt, 15-17 Frostbite, 18-19 Ice Shards.
 
 **Keys to set:** E = Frost Nova; Shift+E = Arcane Explosion (at 14); Shift+3 = Remove Lesser Curse (at 18).
 
@@ -120,11 +120,11 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 4. If it reaches you with **Frost Nova** on cooldown, keep casting **Frostbolt**.
 5. Your wand finishes a mob that is almost dead.
 
-- **Precision** (10-11) for hit, **Frost Warding** (12-13) for armor, **Improved Frostbolt** (14) for a faster **Frostbolt**.
+- **Precision** (10-11) for hit, **Improved Frostbolt** (12-14) for a faster **Frostbolt**.
 - **Frostbite** (15-17) sometimes freezes a mob your chill hits. Treat it as a free **Frost Nova**: step back and cast. **Ice Shards** (18-19) makes your Frost crits bigger.
 - **Arcane Explosion** (14) and **Flamestrike** (16) are for packs. One mob at a time never needs them.
 
-*Fight lab, seconds per kill: 29 at level 10, 42 at level 19. Presses per kill at level 10: Frostbolt 5.5, Wand 1.0, Frost Nova 0.7.*
+*Fight lab, seconds per kill: 29 at level 10, 40 at level 19. Presses per kill at level 10: Frostbolt 5.5, Wand 1.0, Frost Nova 0.7.*
 
 ## Levels 20-23: Ice Lance into every freeze
 
@@ -152,7 +152,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Ice Shards** (21-23) gets its last points.
 - **Evocation** (20) is for between fights: channel it whenever it is ready and you are under 40% mana. **Blizzard** (20) is for packs.
 
-*Fight lab, seconds per kill: 31 at level 20. Presses per kill at level 20: Frostbolt 4.2, Ice Lance 1.3, Wand 0.7, Frost Nova 0.7.*
+*Fight lab, seconds per kill: 30 at level 20. Presses per kill at level 20: Frostbolt 4.2, Ice Lance 1.2, Wand 0.7, Frost Nova 0.6.*
 
 ## Levels 24-29: Counterspell and Shatter
 
@@ -181,7 +181,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Shatter** (25-27) is why the **Ice Lance** into a freeze is your biggest hit from here on. **Frost Channeling** (24, 28-29) makes Frost spells cheaper.
 - **Cone of Cold** (26) goes on C for packs. The tuned rules never cast it on a single mob.
 
-*Fight lab, seconds per kill: 36 at level 24, 36 at level 29. Presses per kill at level 24: Frostbolt 5.0, Ice Lance 1.7, Wand 1.0, Frost Nova 0.9, Counterspell 0.2.*
+*Fight lab, seconds per kill: 34 at level 24, 35 at level 29. Presses per kill at level 24: Frostbolt 5.0, Ice Lance 1.7, Wand 1.1, Frost Nova 0.8, Counterspell 0.2.*
 
 ## Levels 30-39: Fingers of Frost
 
@@ -189,7 +189,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Arcane Explosion at 30, 38; Blizzard at 36; Cone of Cold at 34; Fire Blast at 30, 38; Fire Ward at 30; Frost Ward at 32; Frostbolt at 32, 38; Ice Lance at 34; Mana Shield at 36.
 
-**Talents:** 30-31 Fingers of Frost, 32 Arcane Resilience, 33-34 Wand Specialization, 35-39 Accelerant.
+**Talents:** 30-31 Fingers of Frost, 32 Improved Frost Nova, 33-34 Wand Specialization, 35-39 Accelerant.
 
 **Your keys in this stage:** Q Frostbolt, E Frost Nova, R Ice Lance, F Blink, Mouse 4 Counterspell, 3 Mana Shield.
 
@@ -206,20 +206,21 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.
 
 - **Ice Armor** (30) replaces **Frost Armor** as your armor spell.
+- **Improved Frost Nova** (32) brings **Frost Nova** back 2 seconds sooner.
 - **Wand Specialization** (33-34) makes your wand hits stronger: from 40 the wand finishes a lot of mobs.
 - **Accelerant** (35-39) shortens **Frostfire Bolt** once you have it at 40; it does nothing for **Frostbolt**.
 
-*Fight lab, seconds per kill: 36 at level 30, 39 at level 39. Presses per kill at level 30: Frostbolt 4.4, Ice Lance 1.7, Wand 0.9, Frost Nova 0.9, Counterspell 0.2.*
+*Fight lab, seconds per kill: 35 at level 30, 38 at level 39. Presses per kill at level 30: Frostbolt 4.5, Ice Lance 1.7, Frost Nova 0.8, Wand 0.8, Counterspell 0.2.*
 
 ## Levels 40-60: Frostfire Bolt replaces Frostbolt
 
 **The trainer teaches:** **Frostfire Bolt** (40), Conjure Mana Citrine (48), Arcane Brilliance (56), Conjure Mana Ruby (58).
 
-**New ranks to buy:** Arcane Explosion at 46, 54; Blast Wave at 44, 52, 60; Blizzard at 44, 52, 60; Cone of Cold at 42, 50, 58; Fire Blast at 46, 54; Fire Ward at 40, 50, 60; Frost Nova at 40, 54; Frost Ward at 42, 52, 60; Frostfire Bolt at 50, 60; Ice Lance at 42, 48, 56; Mana Shield at 44, 52, 60; Polymorph at 40, 60.
+**New ranks to buy:** Arcane Explosion at 46, 54; Blizzard at 44, 52, 60; Cone of Cold at 42, 50, 58; Fire Blast at 46, 54; Fire Ward at 40, 50, 60; Frost Nova at 40, 54; Frost Ward at 42, 52, 60; Frostfire Bolt at 50, 60; Ice Lance at 42, 48, 56; Mana Shield at 44, 52, 60; Polymorph at 40, 60.
 
-**Talents:** 40-44 Ignite, 45-47 Burning Soul, 48-49 Incineration, 50-52 Master of Elements, 53-54 Incineration, 55 Blast Wave, 56-58 Critical Mass, 59 Incineration, 60 Fire Power.
+**Talents:** 40-44 Ignite, 45-47 Burning Soul, 48-49 Incineration, 50-52 Master of Elements, 53-54 Incineration, 55 Improved Frost Nova, 56-58 Critical Mass, 59 Incineration, 60 Impact.
 
-**Keys to set:** Q = Frostfire Bolt; Shift+C = Blast Wave (at 55).
+**Keys to set:** Q = Frostfire Bolt.
 
 **Your keys in this stage:** Q Frostfire Bolt, E Frost Nova, R Ice Lance, F Blink, Mouse 4 Counterspell, 3 Mana Shield.
 
@@ -237,9 +238,10 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Frostfire Bolt** slows like **Frostbolt**, so its chill still rolls **Frostbite** and **Fingers of Frost**. Take **Frostbolt** off your bar.
 - The tuned rules keep the bolt for the mob's first two thirds; below that the wand does the rest.
-- **Ignite** (40-44), **Burning Soul** (45-47), **Master of Elements** (50-52) and **Critical Mass** (56-58) work on **Frostfire Bolt**; **Incineration** (48-49, 53-54, 59) adds crit to **Ice Lance**. **Blast Wave** (55) is for packs: the single-target list never casts it.
+- **Ignite** (40-44), **Burning Soul** (45-47), **Master of Elements** (50-52) and **Critical Mass** (56-58) work on **Frostfire Bolt**; **Incineration** (48-49, 53-54, 59) adds crit to **Ice Lance**.
+- **Improved Frost Nova** (55) gets its second point: **Frost Nova** comes back 4 seconds sooner. **Impact** (60) gives your Fire spells, **Frostfire Bolt** included, a small chance to stun the mob for 2 seconds.
 
-*Fight lab, seconds per kill: 45 at level 40, 36 at level 50, 32 at level 60. Presses per kill at level 40: Wand 5.1, Frostfire Bolt 4.2, Ice Lance 2.6, Frost Nova 0.9, Counterspell 0.1.*
+*Fight lab, seconds per kill: 45 at level 40, 36 at level 50, 32 at level 60. Presses per kill at level 40: Wand 5.0, Frostfire Bolt 4.2, Ice Lance 2.6, Frost Nova 1.0, Counterspell 0.1.*
 
 ## Between fights
 

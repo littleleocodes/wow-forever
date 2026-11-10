@@ -856,18 +856,19 @@
       "derived": "leveling",
       "summary": "The Fire leveling build derived on 2026-09-30 (derive_leveling.py): searched in the fight lab at level 60 from the fastest of the spec's builds and the stats model's best Fire build, 30+ points kept in Fire, playing the fire-leveling rotation; the talent order is the stats model's (fire-leveling).",
       "allocation": {
-        "Arcane": [],
+        "Arcane": [
+          ["Wand Specialization", 1]
+        ],
         "Fire": [
+          ["Incineration", 5],
           ["Accelerant", 5],
           ["Ignite", 5],
-          ["Impact", 1],
-          ["Burning Soul", 3],
-          ["Improved Fire Blast", 2],
+          ["Burning Soul", 2],
           ["Pyroblast", 1],
+          ["Improved Fire Blast", 2],
+          ["Improved Scorch", 1],
           ["Heating Up", 1],
-          ["Improved Scorch", 3],
           ["Master of Elements", 3],
-          ["Blast Wave", 1],
           ["Critical Mass", 3],
           ["Fire Power", 3],
           ["Combustion", 1]
@@ -875,11 +876,10 @@
         "Frost": [
           ["Frost Warding", 2],
           ["Precision", 3],
+          ["Ice Shards", 4],
           ["Frostbite", 3],
-          ["Ice Shards", 5],
-          ["Permafrost", 1],
+          ["Improved Frost Nova", 2],
           ["Ice Lance", 1],
-          ["Ice Block", 1],
           ["Shatter", 3]
         ]
       },
@@ -891,7 +891,7 @@
         {"talent": "Ice Block", "why": "The scorer's value in this build: +1.7% of its score (model fire-leveling)."}
       ],
       "flex": [],
-      "notes": ["+2.9% faster than the hand draft opt-fire-leveling-leveling-st, over the 2% replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Fight-lab talent search (fightlab/fl_talent_opt.py): start opt-fire-leveling-leveling-st, moves: 1 point Flame Throwing -> Shatter; 3 points Impact -> Master of Elements; 1 point Flame Throwing -> Impact. Race against opt-fire-leveling-leveling-st over levels 20-60 (seed 3, 3000 fights per level): +2.9% faster per kill.", "Fight-lab numbers are a model of the beta, not in-game measurements.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized.", "2026-10-15 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 34.4 s per kill; stats model 36.4 s; own tree first 39.7 s.", "2026-10-16 (repair_builds.py, client build 70425 trees): 0/32/19 -> 0/32/19; Fire Power 5 -> 3 (rank cap); +1 Improved Fire Blast (tier gating for Combustion); +1 Critical Mass (prerequisite of Combustion); +1 Critical Mass (prerequisite of Combustion); -1 Heating Up (over 51); order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st).", "2026-10-17 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 37.9 s per kill; stats model 40.1 s; own tree first 42.2 s.", "2026-10-22 (repair_builds.py, client build 70425 trees): 0/32/19 -> 0/32/19; Elemental Precision 5 -> 3 (rank cap); +1 Frost Warding (tier gating for Frostbite); +1 Frost Warding (tier gating for Frostbite); order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st).", "2026-10-22 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 36.0 s per kill; stats model 37.8 s; own tree first 39.2 s.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 0/32/19 -> 0/32/19; Improved Fireball -> Accelerant (renamed); Critical Mass 5 -> 3 (rank cap); Elemental Precision -> Precision (renamed); +1 Heating Up (tier gating for Combustion); refill +1 Improved Fire Blast; order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st).", "2026-11-06 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 36.9 s per kill; stats model 38.8 s; own tree first 38.2 s.", "2026-11-06 (order_repair.py, page audit K5, user decision: a spec takes its signature talent as early as its tree allows): Pyroblast at 20 (was 39); the tree's points above it come forward in the order they had, every other point keeps its place in line. Not raced here.", "2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Elemental Precision; a tree change or a repair took them out)."],
+      "notes": ["2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Ice Block to Improved Frost Nova at 36 (measured: -0.3% seed 3, -0.5% seed 4, level-weighted time per kill); Ice Shards to Wand Specialization at 35 (no loss: -0.3% seed 3, +0.0% seed 4, level-weighted time per kill); Permafrost to Improved Frost Nova at 26 (gate: -0.5% seed 3, -0.7% seed 4, level-weighted time per kill); Blast Wave to Incineration at 49 (gate: -0.6% seed 3, -0.4% seed 4, level-weighted time per kill); Improved Scorch to Incineration at 50 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Impact to Incineration at 46 (gate: -0.4% seed 3, -0.2% seed 4, level-weighted time per kill); Improved Scorch to Incineration at 48 (gate: -0.2% seed 3, -0.3% seed 4, level-weighted time per kill); Burning Soul to Incineration at 45 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).", "+2.9% faster than the hand draft opt-fire-leveling-leveling-st, over the 2% replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Fight-lab talent search (fightlab/fl_talent_opt.py): start opt-fire-leveling-leveling-st, moves: 1 point Flame Throwing -> Shatter; 3 points Impact -> Master of Elements; 1 point Flame Throwing -> Impact. Race against opt-fire-leveling-leveling-st over levels 20-60 (seed 3, 3000 fights per level): +2.9% faster per kill.", "Fight-lab numbers are a model of the beta, not in-game measurements.", "2026-10-03: repaired for beta build 1.60.1.70170 (talents removed, renamed or moved): Hot Streak 1 out; Heating Up 1 in; to be re-optimized.", "2026-10-15 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 34.4 s per kill; stats model 36.4 s; own tree first 39.7 s.", "2026-10-16 (repair_builds.py, client build 70425 trees): 0/32/19 -> 0/32/19; Fire Power 5 -> 3 (rank cap); +1 Improved Fire Blast (tier gating for Combustion); +1 Critical Mass (prerequisite of Combustion); +1 Critical Mass (prerequisite of Combustion); -1 Heating Up (over 51); order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st).", "2026-10-17 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 37.9 s per kill; stats model 40.1 s; own tree first 42.2 s.", "2026-10-22 (repair_builds.py, client build 70425 trees): 0/32/19 -> 0/32/19; Elemental Precision 5 -> 3 (rank cap); +1 Frost Warding (tier gating for Frostbite); +1 Frost Warding (tier gating for Frostbite); order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st).", "2026-10-22 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 36.0 s per kill; stats model 37.8 s; own tree first 39.2 s.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 0/32/19 -> 0/32/19; Improved Fireball -> Accelerant (renamed); Critical Mass 5 -> 3 (rank cap); Elemental Precision -> Precision (renamed); +1 Heating Up (tier gating for Combustion); refill +1 Improved Fire Blast; order dropped (order_repair.py) (refill: the fire-leveling model, leveling-st).", "2026-11-06 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the fire-leveling rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): own tree last 36.9 s per kill; stats model 38.8 s; own tree first 38.2 s.", "2026-11-06 (order_repair.py, page audit K5, user decision: a spec takes its signature talent as early as its tree allows): Pyroblast at 20 (was 39); the tree's points above it come forward in the order they had, every other point keeps its place in line. Not raced here.", "2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Elemental Precision; a tree change or a repair took them out)."],
       "open_questions": ["A derived Fire leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/mage"],
       "replaces": "opt-fire-leveling-leveling-st",
@@ -902,21 +902,20 @@
         {"levels": "21-22", "tree": "Frost", "talent": "Precision", "points": 2},
         {"levels": "23-24", "tree": "Frost", "talent": "Frost Warding", "points": 2},
         {"levels": "25", "tree": "Frost", "talent": "Precision", "points": 1},
-        {"levels": "26", "tree": "Frost", "talent": "Permafrost", "points": 1},
+        {"levels": "26", "tree": "Frost", "talent": "Improved Frost Nova", "points": 1},
         {"levels": "27-29", "tree": "Frost", "talent": "Frostbite", "points": 3},
         {"levels": "30", "tree": "Frost", "talent": "Ice Shards", "points": 1},
         {"levels": "31", "tree": "Frost", "talent": "Ice Lance", "points": 1},
-        {"levels": "32-35", "tree": "Frost", "talent": "Ice Shards", "points": 4},
-        {"levels": "36", "tree": "Frost", "talent": "Ice Block", "points": 1},
+        {"levels": "32-34", "tree": "Frost", "talent": "Ice Shards", "points": 3},
+        {"levels": "35", "tree": "Arcane", "talent": "Wand Specialization", "points": 1},
+        {"levels": "36", "tree": "Frost", "talent": "Improved Frost Nova", "points": 1},
         {"levels": "37-39", "tree": "Frost", "talent": "Shatter", "points": 3},
         {"levels": "40-41", "tree": "Fire", "talent": "Improved Fire Blast", "points": 2},
         {"levels": "42-43", "tree": "Fire", "talent": "Burning Soul", "points": 2},
         {"levels": "44", "tree": "Fire", "talent": "Heating Up", "points": 1},
-        {"levels": "45", "tree": "Fire", "talent": "Burning Soul", "points": 1},
-        {"levels": "46", "tree": "Fire", "talent": "Impact", "points": 1},
-        {"levels": "47-48", "tree": "Fire", "talent": "Improved Scorch", "points": 2},
-        {"levels": "49", "tree": "Fire", "talent": "Blast Wave", "points": 1},
-        {"levels": "50", "tree": "Fire", "talent": "Improved Scorch", "points": 1},
+        {"levels": "45-46", "tree": "Fire", "talent": "Incineration", "points": 2},
+        {"levels": "47", "tree": "Fire", "talent": "Improved Scorch", "points": 1},
+        {"levels": "48-50", "tree": "Fire", "talent": "Incineration", "points": 3},
         {"levels": "51-53", "tree": "Fire", "talent": "Critical Mass", "points": 3},
         {"levels": "54-56", "tree": "Fire", "talent": "Fire Power", "points": 3},
         {"levels": "57-58", "tree": "Fire", "talent": "Master of Elements", "points": 2},
@@ -1721,7 +1720,8 @@
           ["Arcane Wrath", 1],
           ["Presence of Mind", 1],
           ["Arcane Mind", 5],
-          ["Arcane Instability", 3]
+          ["Arcane Instability", 3],
+          ["Arcane Power", 1]
         ],
         "Fire": [],
         "Frost": [
@@ -1729,12 +1729,11 @@
           ["Improved Frostbolt", 3],
           ["Precision", 2],
           ["Ice Shards", 3],
-          ["Improved Frost Nova", 1],
-          ["Permafrost", 3],
-          ["Improved Blizzard", 3],
+          ["Improved Frost Nova", 2],
+          ["Permafrost", 2],
+          ["Improved Blizzard", 2],
           ["Ice Lance", 1],
-          ["Arctic Reach", 2],
-          ["Fingers of Frost", 1]
+          ["Shatter", 3]
         ]
       },
       "order": [
@@ -1760,10 +1759,12 @@
         {"levels": "49", "tree": "Frost", "talent": "Frost Warding", "points": 1},
         {"levels": "50", "tree": "Frost", "talent": "Ice Lance", "points": 1},
         {"levels": "51", "tree": "Frost", "talent": "Frost Warding", "points": 1},
-        {"levels": "52-54", "tree": "Frost", "talent": "Improved Blizzard", "points": 3},
-        {"levels": "55-56", "tree": "Frost", "talent": "Arctic Reach", "points": 2},
-        {"levels": "57-59", "tree": "Frost", "talent": "Permafrost", "points": 3},
-        {"levels": "60", "tree": "Frost", "talent": "Fingers of Frost", "points": 1}
+        {"levels": "52-53", "tree": "Frost", "talent": "Improved Blizzard", "points": 2},
+        {"levels": "54", "tree": "Frost", "talent": "Improved Frost Nova", "points": 1},
+        {"levels": "55-56", "tree": "Frost", "talent": "Shatter", "points": 2},
+        {"levels": "57-58", "tree": "Frost", "talent": "Permafrost", "points": 2},
+        {"levels": "59", "tree": "Arcane", "talent": "Arcane Power", "points": 1},
+        {"levels": "60", "tree": "Frost", "talent": "Shatter", "points": 1}
       ],
       "core": [
         {"talent": "Missile Barrage", "why": "+4.6 s per kill at level 60 without it (removal, 3,000 fights)."},
@@ -1776,7 +1777,7 @@
         {"talent": "Arcane Concentration", "why": "+1.3 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 31.16; arcane-open-leveling 31.12, arcane-leveling 38.63. The search simulated 53,708 builds.", "The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Fingers of Frost to Shatter at 60 (tie-break: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Permafrost to Arcane Power at 59 (tie-break: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Arctic Reach to Shatter at 56 (tie-break: -0.2% seed 3, -0.3% seed 4, level-weighted time per kill); Arctic Reach to Shatter at 55 (measured: -0.4% seed 3, -0.4% seed 4, level-weighted time per kill); Improved Blizzard to Improved Frost Nova at 54 (gate: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill).", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 31.16; arcane-open-leveling 31.12, arcane-leveling 38.63. The search simulated 53,708 builds.", "The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Arcane leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/mage/60/05100520310031153--2323013031200001-7"]
     },
@@ -1955,25 +1956,23 @@
       "summary": "The Frostfire (a Fire/Frost hybrid) leveling build the open leveling search found on 2026-11-06: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the frostfire-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (fire-leveling). +20.4% faster per kill than frostfire-open-leveling, the fastest of our leveling builds in that race.",
       "allocation": {
         "Arcane": [
-          ["Wand Specialization", 2],
-          ["Arcane Resilience", 1]
+          ["Wand Specialization", 2]
         ],
         "Fire": [
           ["Incineration", 5],
           ["Accelerant", 5],
           ["Ignite", 5],
+          ["Impact", 1],
           ["Burning Soul", 3],
           ["Master of Elements", 3],
-          ["Critical Mass", 3],
-          ["Blast Wave", 1],
-          ["Fire Power", 1]
+          ["Critical Mass", 3]
         ],
         "Frost": [
-          ["Frost Warding", 2],
-          ["Improved Frostbolt", 1],
+          ["Improved Frostbolt", 3],
           ["Precision", 2],
           ["Ice Shards", 5],
           ["Frostbite", 3],
+          ["Improved Frost Nova", 2],
           ["Frost Channeling", 3],
           ["Ice Lance", 1],
           ["Shatter", 3],
@@ -1982,8 +1981,7 @@
       },
       "order": [
         {"levels": "10-11", "tree": "Frost", "talent": "Precision", "points": 2},
-        {"levels": "12-13", "tree": "Frost", "talent": "Frost Warding", "points": 2},
-        {"levels": "14", "tree": "Frost", "talent": "Improved Frostbolt", "points": 1},
+        {"levels": "12-14", "tree": "Frost", "talent": "Improved Frostbolt", "points": 3},
         {"levels": "15-17", "tree": "Frost", "talent": "Frostbite", "points": 3},
         {"levels": "18-19", "tree": "Frost", "talent": "Ice Shards", "points": 2},
         {"levels": "20", "tree": "Frost", "talent": "Ice Lance", "points": 1},
@@ -1992,7 +1990,7 @@
         {"levels": "25-27", "tree": "Frost", "talent": "Shatter", "points": 3},
         {"levels": "28-29", "tree": "Frost", "talent": "Frost Channeling", "points": 2},
         {"levels": "30-31", "tree": "Frost", "talent": "Fingers of Frost", "points": 2},
-        {"levels": "32", "tree": "Arcane", "talent": "Arcane Resilience", "points": 1},
+        {"levels": "32", "tree": "Frost", "talent": "Improved Frost Nova", "points": 1},
         {"levels": "33-34", "tree": "Arcane", "talent": "Wand Specialization", "points": 2},
         {"levels": "35-39", "tree": "Fire", "talent": "Accelerant", "points": 5},
         {"levels": "40-44", "tree": "Fire", "talent": "Ignite", "points": 5},
@@ -2000,10 +1998,10 @@
         {"levels": "48-49", "tree": "Fire", "talent": "Incineration", "points": 2},
         {"levels": "50-52", "tree": "Fire", "talent": "Master of Elements", "points": 3},
         {"levels": "53-54", "tree": "Fire", "talent": "Incineration", "points": 2},
-        {"levels": "55", "tree": "Fire", "talent": "Blast Wave", "points": 1},
+        {"levels": "55", "tree": "Frost", "talent": "Improved Frost Nova", "points": 1},
         {"levels": "56-58", "tree": "Fire", "talent": "Critical Mass", "points": 3},
         {"levels": "59", "tree": "Fire", "talent": "Incineration", "points": 1},
-        {"levels": "60", "tree": "Fire", "talent": "Fire Power", "points": 1}
+        {"levels": "60", "tree": "Fire", "talent": "Impact", "points": 1}
       ],
       "core": [
         {"talent": "Ice Lance", "why": "+10.3 s per kill at level 60 without it (removal, 3,000 fights)."},
@@ -2016,7 +2014,7 @@
         {"talent": "Master of Elements", "why": "+1.4 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 36.40; frostfire-open-leveling 43.84. The search simulated 75,576 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Arcane Resilience to Improved Frost Nova at 32 (tie-break: -0.2% seed 3, -0.3% seed 4, level-weighted time per kill); Fire Power to Impact at 60 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Blast Wave to Improved Frost Nova at 55 (tie-break: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Frost Warding to Improved Frostbolt at 13 (gate: -0.3% seed 3, -0.5% seed 4, level-weighted time per kill); Frost Warding to Improved Frostbolt at 12 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 36.40; frostfire-open-leveling 43.84. The search simulated 75,576 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Frostfire leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/mage/60/201-5550030000003311-2125300301003002-7"]
     }

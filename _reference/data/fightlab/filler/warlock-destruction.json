@@ -294,5 +294,208 @@
    "talent": "Fel Vitality",
    "points": 2
   }
- ]
+ ],
+ "written": {
+  "allocation": {
+   "Affliction": [
+    [
+     "Improved Life Tap",
+     1
+    ],
+    [
+     "Suppression",
+     5
+    ]
+   ],
+   "Demonology": [
+    [
+     "Unholy Power",
+     5
+    ],
+    [
+     "Improved Voidwalker",
+     3
+    ],
+    [
+     "Fel Vitality",
+     2
+    ],
+    [
+     "Demonic Energies",
+     1
+    ]
+   ],
+   "Destruction": [
+    [
+     "Destructive Reach",
+     2
+    ],
+    [
+     "Bane",
+     5
+    ],
+    [
+     "Cataclysm",
+     3
+    ],
+    [
+     "Ruin",
+     5
+    ],
+    [
+     "Shadowburn",
+     1
+    ],
+    [
+     "Intensity",
+     3
+    ],
+    [
+     "Agonizing Flames",
+     3
+    ],
+    [
+     "Conflagrate",
+     1
+    ],
+    [
+     "Pyroclasm",
+     1
+    ],
+    [
+     "Bane of Havoc",
+     1
+    ],
+    [
+     "Fire and Brimstone",
+     3
+    ],
+    [
+     "Shadow and Flame",
+     5
+    ],
+    [
+     "Incinerate",
+     1
+    ]
+   ]
+  },
+  "order": [
+   {
+    "levels": "10-14",
+    "tree": "Destruction",
+    "talent": "Bane",
+    "points": 5
+   },
+   {
+    "levels": "15-16",
+    "tree": "Destruction",
+    "talent": "Destructive Reach",
+    "points": 2
+   },
+   {
+    "levels": "17-19",
+    "tree": "Destruction",
+    "talent": "Cataclysm",
+    "points": 3
+   },
+   {
+    "levels": "20-24",
+    "tree": "Destruction",
+    "talent": "Ruin",
+    "points": 5
+   },
+   {
+    "levels": "25-27",
+    "tree": "Destruction",
+    "talent": "Agonizing Flames",
+    "points": 3
+   },
+   {
+    "levels": "28-30",
+    "tree": "Destruction",
+    "talent": "Intensity",
+    "points": 3
+   },
+   {
+    "levels": "31",
+    "tree": "Destruction",
+    "talent": "Shadowburn",
+    "points": 1
+   },
+   {
+    "levels": "32",
+    "tree": "Destruction",
+    "talent": "Conflagrate",
+    "points": 1
+   },
+   {
+    "levels": "33",
+    "tree": "Destruction",
+    "talent": "Pyroclasm",
+    "points": 1
+   },
+   {
+    "levels": "34",
+    "tree": "Destruction",
+    "talent": "Bane of Havoc",
+    "points": 1
+   },
+   {
+    "levels": "35-39",
+    "tree": "Destruction",
+    "talent": "Shadow and Flame",
+    "points": 5
+   },
+   {
+    "levels": "40",
+    "tree": "Destruction",
+    "talent": "Incinerate",
+    "points": 1
+   },
+   {
+    "levels": "41-43",
+    "tree": "Destruction",
+    "talent": "Fire and Brimstone",
+    "points": 3
+   },
+   {
+    "levels": "44",
+    "tree": "Affliction",
+    "talent": "Improved Life Tap",
+    "points": 1
+   },
+   {
+    "levels": "45-49",
+    "tree": "Affliction",
+    "talent": "Suppression",
+    "points": 5
+   },
+   {
+    "levels": "50-54",
+    "tree": "Demonology",
+    "talent": "Unholy Power",
+    "points": 5
+   },
+   {
+    "levels": "55-57",
+    "tree": "Demonology",
+    "talent": "Improved Voidwalker",
+    "points": 3
+   },
+   {
+    "levels": "58",
+    "tree": "Demonology",
+    "talent": "Demonic Energies",
+    "points": 1
+   },
+   {
+    "levels": "59-60",
+    "tree": "Demonology",
+    "talent": "Fel Vitality",
+    "points": 2
+   }
+  ],
+  "note": "2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Demonic Embrace to Demonic Energies at 58 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Aftermath to Destructive Reach at 16 (gate: -0.1% seed 3, -0.3% seed 4, level-weighted time per kill); Aftermath to Destructive Reach at 15 (gate: -0.3% seed 3, -0.2% seed 4, level-weighted time per kill)."
+ }
 }

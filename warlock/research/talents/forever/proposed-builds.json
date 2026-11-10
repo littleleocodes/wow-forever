@@ -1700,10 +1700,10 @@
           ["Shadow Mastery", 2]
         ],
         "Demonology": [
-          ["Improved Health Funnel", 1],
-          ["Demonic Embrace", 4],
+          ["Demonic Embrace", 2],
           ["Unholy Power", 5],
           ["Improved Voidwalker", 3],
+          ["Fel Vitality", 3],
           ["Demonic Energies", 2],
           ["Demonic Sacrifice", 1],
           ["Master Summoner", 1],
@@ -1718,8 +1718,9 @@
         {"levels": "15", "tree": "Demonology", "talent": "Demonic Energies", "points": 1},
         {"levels": "16-18", "tree": "Demonology", "talent": "Improved Voidwalker", "points": 3},
         {"levels": "19", "tree": "Demonology", "talent": "Demonic Energies", "points": 1},
-        {"levels": "20", "tree": "Demonology", "talent": "Improved Health Funnel", "points": 1},
-        {"levels": "21-24", "tree": "Demonology", "talent": "Demonic Embrace", "points": 4},
+        {"levels": "20", "tree": "Demonology", "talent": "Fel Vitality", "points": 1},
+        {"levels": "21-22", "tree": "Demonology", "talent": "Demonic Embrace", "points": 2},
+        {"levels": "23-24", "tree": "Demonology", "talent": "Fel Vitality", "points": 2},
         {"levels": "25", "tree": "Demonology", "talent": "Demonic Sacrifice", "points": 1},
         {"levels": "26", "tree": "Demonology", "talent": "Master Summoner", "points": 1},
         {"levels": "27-29", "tree": "Demonology", "talent": "Demonic Brand", "points": 3},
@@ -1754,7 +1755,7 @@
         {"talent": "Pandemic", "why": "+0.6 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["+28.5% faster than the hand draft leveling-affliction, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 30.47; demonology-leveling 31.14. The search simulated 36,200 builds.", "The spec's other leveling builds on the pages: opt-affliction-leveling-leveling-st 38.34 s, leveling-affliction 39.16 s.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Demonic Embrace to Fel Vitality at 24 (gate: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill); Improved Health Funnel to Fel Vitality at 20 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Embrace to Fel Vitality at 23 (gate: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill).", "+28.5% faster than the hand draft leveling-affliction, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 30.47; demonology-leveling 31.14. The search simulated 36,200 builds.", "The spec's other leveling builds on the pages: opt-affliction-leveling-leveling-st 38.34 s, leveling-affliction 39.16 s.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Affliction-Demonology leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/warlock", "https://talentsforever.com/warlock/60/2551002013500102-10450302011003013--12"],
       "replaces": "leveling-affliction"
@@ -1775,15 +1776,15 @@
           ["Suppression", 5]
         ],
         "Demonology": [
-          ["Demonic Embrace", 1],
           ["Unholy Power", 5],
           ["Improved Voidwalker", 3],
-          ["Fel Vitality", 2]
+          ["Fel Vitality", 2],
+          ["Demonic Energies", 1]
         ],
         "Destruction": [
+          ["Destructive Reach", 2],
           ["Bane", 5],
           ["Cataclysm", 3],
-          ["Aftermath", 2],
           ["Ruin", 5],
           ["Shadowburn", 1],
           ["Intensity", 3],
@@ -1798,7 +1799,7 @@
       },
       "order": [
         {"levels": "10-14", "tree": "Destruction", "talent": "Bane", "points": 5},
-        {"levels": "15-16", "tree": "Destruction", "talent": "Aftermath", "points": 2},
+        {"levels": "15-16", "tree": "Destruction", "talent": "Destructive Reach", "points": 2},
         {"levels": "17-19", "tree": "Destruction", "talent": "Cataclysm", "points": 3},
         {"levels": "20-24", "tree": "Destruction", "talent": "Ruin", "points": 5},
         {"levels": "25-27", "tree": "Destruction", "talent": "Agonizing Flames", "points": 3},
@@ -1814,7 +1815,7 @@
         {"levels": "45-49", "tree": "Affliction", "talent": "Suppression", "points": 5},
         {"levels": "50-54", "tree": "Demonology", "talent": "Unholy Power", "points": 5},
         {"levels": "55-57", "tree": "Demonology", "talent": "Improved Voidwalker", "points": 3},
-        {"levels": "58", "tree": "Demonology", "talent": "Demonic Embrace", "points": 1},
+        {"levels": "58", "tree": "Demonology", "talent": "Demonic Energies", "points": 1},
         {"levels": "59-60", "tree": "Demonology", "talent": "Fel Vitality", "points": 2}
       ],
       "core": [
@@ -1828,7 +1829,7 @@
         {"talent": "Fire and Brimstone", "why": "+1.6 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 40.68; destruction-open-leveling 41.32, destruction-leveling 48.23. The search simulated 36,382 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Demonic Embrace to Demonic Energies at 58 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Aftermath to Destructive Reach at 16 (gate: -0.1% seed 3, -0.3% seed 4, level-weighted time per kill); Aftermath to Destructive Reach at 15 (gate: -0.3% seed 3, -0.2% seed 4, level-weighted time per kill).", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 40.68; destruction-open-leveling 41.32, destruction-leveling 48.23. The search simulated 36,382 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Destruction leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/warlock", "https://talentsforever.com/warlock/60/15-0015032-0050325133111351-12"]
     },
@@ -1846,12 +1847,12 @@
         "Affliction": [
           ["Improved Life Tap", 2],
           ["Suppression", 4],
-          ["Improved Corruption", 3],
+          ["Improved Corruption", 5],
           ["Grim Reach", 1],
           ["Improved Bane of Agony", 2],
           ["Amplify Curse", 1],
           ["Pandemic", 3],
-          ["Malevolence", 4],
+          ["Malevolence", 3],
           ["Siphon Life", 1]
         ],
         "Demonology": [
@@ -1867,7 +1868,7 @@
           ["Improved Felhunter", 1],
           ["Soul Link", 1],
           ["Demonic Knowledge", 3],
-          ["Master Demonologist", 5]
+          ["Master Demonologist", 4]
         ],
         "Destruction": []
       },
@@ -1886,14 +1887,16 @@
         {"levels": "31-33", "tree": "Demonology", "talent": "Demonic Knowledge", "points": 3},
         {"levels": "34", "tree": "Demonology", "talent": "Improved Felhunter", "points": 1},
         {"levels": "35-37", "tree": "Affliction", "talent": "Improved Corruption", "points": 3},
-        {"levels": "38-42", "tree": "Demonology", "talent": "Master Demonologist", "points": 5},
+        {"levels": "38-41", "tree": "Demonology", "talent": "Master Demonologist", "points": 4},
+        {"levels": "42", "tree": "Affliction", "talent": "Improved Corruption", "points": 1},
         {"levels": "43-44", "tree": "Affliction", "talent": "Improved Life Tap", "points": 2},
         {"levels": "45-48", "tree": "Affliction", "talent": "Suppression", "points": 4},
         {"levels": "49", "tree": "Affliction", "talent": "Grim Reach", "points": 1},
         {"levels": "50", "tree": "Affliction", "talent": "Amplify Curse", "points": 1},
         {"levels": "51-52", "tree": "Affliction", "talent": "Improved Bane of Agony", "points": 2},
         {"levels": "53-54", "tree": "Affliction", "talent": "Pandemic", "points": 2},
-        {"levels": "55-58", "tree": "Affliction", "talent": "Malevolence", "points": 4},
+        {"levels": "55-57", "tree": "Affliction", "talent": "Malevolence", "points": 3},
+        {"levels": "58", "tree": "Affliction", "talent": "Improved Corruption", "points": 1},
         {"levels": "59", "tree": "Affliction", "talent": "Pandemic", "points": 1},
         {"levels": "60", "tree": "Affliction", "talent": "Siphon Life", "points": 1}
       ],
@@ -1908,7 +1911,7 @@
         {"talent": "Pandemic", "why": "+0.5 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 30.92; demonology-leveling 31.14. The search simulated 25,765 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Master Demonologist to Improved Corruption at 42 (measured: -0.5% seed 3, -0.5% seed 4, level-weighted time per kill); Malevolence to Improved Corruption at 58 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill).", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 30.92; demonology-leveling 31.14. The search simulated 25,765 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Demonology leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/warlock", "https://talentsforever.com/warlock/60/24310020134001-020523021110031135--12"]
     }
