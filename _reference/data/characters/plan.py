@@ -126,6 +126,9 @@ def equipped(snap, pool_by_id):
         if not slot:
             continue
         p = pool_by_id.get(it["item"]["id"])
+        if p and p["name"] != it["name"]:   # a random-suffix item: its version of that name, else the stats Blizzard reports for it (the
+            p = next((x for x in pool_by_id.values() if x["name"] == it["name"]   # plain base item had read a worn Elder's Sash of
+                      and str(x["id"]).split(":")[0] == str(it["item"]["id"])), None)   # Frozen Wrath as almost worthless, 2026-11-09)
         st = dict(p["stats"]) if p else text_stats([s["display"]["display_string"] for s in it.get("stats", []) if "display" in s])
         if it.get("weapon") and it["slot"]["type"] == "RANGED":
             st["wand_dps"] = it["weapon"]["dps"]["value"]
@@ -599,15 +602,19 @@ def bonus_drops(full, events, eq, at):
 
 def dungeon_lines(sched):
     o = []
+    skip = [r for r in sched if r.get("verdict") == "skip"]
     for r in sched:
-        o += [f"- **{r['zone']}** ({r['lo']}-{r['hi']}), run at level {r['run']}"
-              + ({True: " (your RestedXP guide runs it then)", False: " (not in your RestedXP guide: a side trip)"}.get(r.get("guide"), ""))
-              + (f"; its drops are worth about {r['worth']} min on average" if r["worth"] else "") + ":"]
+        if r.get("verdict") == "skip":
+            continue
+        o += [f"- **{r['zone']}** ({r['lo']}-{r['hi']}), run at level {r['run']}: {r.get('why', '')}"
+              + (f"; its drops are worth about {r['worth']} min on average" if r["worth"] and "drops" not in r.get("why", "") else "") + "."]
         if r["quests"]:
             o += ["  - Quests: " + "; ".join(f"{q['title']} ({q['level']}{', in your log' if q['log'] else ''}"
                                                f"{', ' + q['start'] if q['start'] else ''}{', grey for you by then' if q['grey'] else ''})"
                                                for q in r["quests"])]
         o += [f"  - Drop: {x}" for x in r["drops"]]
+    if skip:
+        o += ["- Skip: " + "; ".join(f"{r['zone']} ({r['why']})" for r in skip) + "."]
     return o + [""]
 
 
@@ -654,7 +661,7 @@ def dungeon_runs(bonus):
 DQ = {}
 
 
-def dungeon_schedule(cfg, lv, runs):
+def dungeon_schedule(cfg, lv, runs, events=None):
     """Every leveling dungeon you have not outgrown, once (2026-11-09, user: "Make sure dungeons are not being skipped, because dungeons
     are so worth to run at least once. The XP from the dungeon quests is significant, and I can collect the quest and then run the dungeon
     once"): the level to run it (the middle of its quests you have not done, inside its range, not below yours), its quests with where
@@ -704,8 +711,27 @@ def dungeon_schedule(cfg, lv, runs):
             quests.append({"title": title, "level": ql, "start": start, "grey": ql < run - 5, "log": q in INLOG})
         if not dr and not any(not x["grey"] for x in quests):
             continue
+        # do it or not (2026-11-09, user: "I just want to do the ones you deem worth it and that I should actually do or wait for the
+        # guide"): the guide's own dungeons; a side trip only for a quest reward the gear plan counts on, drops worth MIN_MINUTES on
+        # average, or three quests at full experience; never one you will have outgrown (its mobs and most quests grey)
+        full = [q for q in quests if not q["grey"]]
+        gear_q = sorted({upgrade_name(e)[0] for e in events or [] if primary(e)["kind"] == "quest" and primary(e).get("zone") == name})
+        worth = (dr or {}).get("worth", 0)
+        if ROUTE and gl is not None:
+            verdict, why = "guide", "your RestedXP guide runs it then"
+        elif run >= hi:
+            verdict, why = "skip", "you will have outgrown it"
+        elif gear_q:
+            verdict, why = "do", "worth a detour for " + ", ".join(gear_q) + " from its quests"
+        elif worth >= MIN_MINUTES:
+            verdict, why = "do", f"worth a detour: its drops are worth about {worth} min on average"
+        elif len(full) >= 3:
+            verdict, why = "do", f"worth a detour for {len(full)} quests at full experience"
+        else:
+            verdict, why = "skip", (f"only {len(full)} quest{'s' if len(full) != 1 else ''} at full experience" if full else "no quests for you")
+            why += " and " + (f"drops worth about {worth} min" if worth else "no drops for you")
         out.append({"zone": name, "lo": lo, "hi": hi, "run": run, "quests": quests, "drops": (dr or {}).get("items", []),
-                    "worth": (dr or {}).get("worth", 0), "guide": None if not ROUTE else gl is not None})
+                    "worth": worth, "guide": None if not ROUTE else gl is not None, "verdict": verdict, "why": why})
     return sorted(out, key=lambda x: (x["run"], x["lo"]))
 
 
@@ -937,7 +963,7 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
               "the play minutes an hour of it costs to earn at your income.", ""] + cl + [""]
     o += action_sections(soon, at, lv)
     runs = dungeon_runs(BONUS)
-    sched = dungeon_schedule(cfg, lv, runs)
+    sched = dungeon_schedule(cfg, lv, runs, events)
     CTX["dungeons"] = sched
     near = [r for r in sched if r["run"] <= lv + LOOKAHEAD]
     if near:
@@ -1748,7 +1774,7 @@ def main():
     sure_pool = [p for p in sure_pool if p["id"] not in out]
     _, full = plan(cfg, snap, at, pool, profs)
     BONUS[:] = bonus_drops(full, events, eq, at)
-    sched = dungeon_schedule(cfg, lv0, dungeon_runs(BONUS))
+    sched = dungeon_schedule(cfg, lv0, dungeon_runs(BONUS), events)
     for e in events:   # a buy a dungeon drop beats soon: run the dungeon first, buy only if it does not drop
         if not price_of(e):
             continue
@@ -1767,7 +1793,9 @@ def main():
             if s0["kind"] == "quest" and s0.get("zone"):
                 L = max(e["get_at"], lv0)
                 if s0["zone"] not in rxp.zones_at(ROUTE, L - 2, L + 3):
-                    e["off_route"] = f"Off your RestedXP route around level {L}: a detour to {s0['zone']}"
+                    dz = next((r for r in sched if r["zone"] == s0["zone"]), None)
+                    e["off_route"] = (f"Off your RestedXP route around level {L}: a detour to {s0['zone']}"
+                                      + (", worth making (see Dungeon runs)" if dz and dz["verdict"] == "do" else ""))
     # a craft from a recipe you do not know yet may not happen: the same plan without such crafts names what to wear instead
     unsure = lambda s: s["kind"] == "craft" and s.get("spell") not in KNOWN
     nod = [dict(p, sources=[s for s in p["sources"] if not unsure(s)]) for p in sure_pool]

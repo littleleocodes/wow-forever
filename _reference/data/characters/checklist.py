@@ -253,7 +253,7 @@ def steps_html(C, lv):
             head, sub = upgrade_line(r, lv, why=False)
             items.append(todo(f"quest{r['item']}", f"Quest for {head}", sub))
     for dg in C.get("dungeons") or []:
-        if dg["run"] <= lv + 3:
+        if dg["run"] <= lv + 3 and dg.get("verdict") != "skip":
             qs = [q for q in dg["quests"] if not q["grey"] and not q["log"]]
             if qs:
                 items.append(todo(f"dq{dg['zone']}", f"Pick up the quests for {esc(dg['zone'])}",
@@ -262,11 +262,17 @@ def steps_html(C, lv):
 
     # 8. work toward
     items = []
+    skipped = []
     for dg in C.get("dungeons") or []:
-        if dg["run"] <= lv + 3:
-            tag = {True: " · your RestedXP guide runs it then", False: " · not in your RestedXP guide: a side trip"}.get(dg.get("guide"), "")
-            items.append(todo(f"dg{dg['zone']}", f'Run <strong>{esc(dg["zone"])}</strong> at level {dg["run"]} <span class="muted">({dg["lo"]}–{dg["hi"]})</span>',
-                              "once, with its quests" + tag + "".join(f"<br>Drop: {md(x)}" for x in dg["drops"])))
+        if dg["run"] > lv + 3:
+            continue
+        if dg.get("verdict") == "skip":
+            skipped.append(f"{esc(dg['zone'])} ({esc(dg['why'])})")
+            continue
+        items.append(todo(f"dg{dg['zone']}", f'Run <strong>{esc(dg["zone"])}</strong> at level {dg["run"]} <span class="muted">({dg["lo"]}–{dg["hi"]})</span>',
+                          "once, with its quests · " + esc(dg.get("why", "")) + "".join(f"<br>Drop: {md(x)}" for x in dg["drops"])))
+    if skipped:
+        items.append(info("Skip", "; ".join(skipped)))
     for r in soon:
         if r["kind"] in ("auction", "market") and r["get_at"] > lv:
             head, sub = upgrade_line(r, lv, why=False)
@@ -328,7 +334,7 @@ def render(cfg, C):
         by_level.setdefault(r["get_at"], []).append(r)
     runs_at = {}
     for dg in C.get("dungeons") or []:
-        if dg["run"] > lv + 3:
+        if dg["run"] > lv + 3 and dg.get("verdict") != "skip":
             runs_at.setdefault(dg["run"], []).append(dg)
             by_level.setdefault(dg["run"], [])
     ahead = []
@@ -341,7 +347,7 @@ def render(cfg, C):
         for dg in runs_at.get(L, []):
             n = len([q for q in dg["quests"] if not q["grey"]])
             rows.append(f'<li><span class="tag">Dungeon</span> Run <strong>{esc(dg["zone"])}</strong>'
-                        f'<span class="sub">{n} quest{"s" if n != 1 else ""} to pick up first'
+                        f'<span class="sub">{esc(dg.get("why", ""))} · {n} quest{"s" if n != 1 else ""} to pick up first'
                         + "".join(f"<br>Drop: {md(x)}" for x in dg["drops"]) + "</span></li>")
         ahead.append(f'<div class="lvl"><div class="lvl-n">{L}</div><ul>{"".join(rows)}</ul></div>')
 

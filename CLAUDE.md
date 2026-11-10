@@ -93,6 +93,8 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   saved files (the guide group, the current step, each section's levels, zones and next section) times dungeon runs and flags quests off
   the route. The guides are stored encoded: never decode, copy or share them (the user's standing rule), and write no section names into
   the repository; the files are found by character name at run time and the account folder's name (the account's) is never printed.
+  Each dungeon gets a verdict (user: "I just want to do the ones you deem worth it"): the guide's own; a side trip only for a quest reward
+  the gear plan counts on, drops worth 20 minutes on average or three quests at full experience; skipped when outgrown or too thin.
 - File names: lowercase kebab-case. Build ids: `<spec>-<variant>-<content>` (e.g. `fury-dw-raid`, `pvp-frost`, `leveling-arms`).
 - Never put class-specific content in `_reference/`; never put cross-class facts inside a class folder.
 
