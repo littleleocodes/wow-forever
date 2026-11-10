@@ -47,14 +47,14 @@ The Beast Mastery build the machine-learning talent search found in a full raid 
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `bm-raid` by training-dummy DPS in the community simulator (wowsims/forever 7c3453f (client 70755)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 4** for `bm-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *BM* | community simulator | - | 496 | +0.0% | 986 | -0.9% | 42 s |
-| 2 | **[`beast-mastery-ml-raid`](beast-mastery-ml-raid.md)** | ours: derived (ML search) | 31/20/0 | 486 | -2.1% | 995 | +0.0% | 41 s |
-| 3 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 476 | -4.0% | 922 | -7.4% | 28 s |
-| 4 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: derived (ML search) | 28/21/2 | 470 | -5.3% | 986 | -0.9% | 43 s |
+| 1 | *BM* | community simulator | - | 489 | +0.0% | 962 | -0.4% | 35 s |
+| 2 | **[`beast-mastery-ml-raid`](beast-mastery-ml-raid.md)** | ours: derived (ML search) | 31/20/0 | 478 | -2.3% | 966 | +0.0% | 34 s |
+| 3 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 475 | -2.9% | 894 | -7.4% | 13 s |
+| 4 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: derived (ML search) | 28/21/2 | 466 | -4.8% | 957 | -0.9% | 30 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -74,7 +74,7 @@ The Beast Mastery build the machine-learning talent search found in a full raid 
   13. insert at the top: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+19.8%, pass 10)
   14. threshold 30% -> 10%: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+2.9%, pass 10)
   15. only with 3s or more of the fight left: if time left on Serpent Sting < 4s: cast Serpent Sting (+0.4%, pass 10)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 18 passes, the last 2026-11-04, 14 changes to the base rotation; third-seed check: beast-mastery-ml-raid 924 -> 995 DPS (+7.7%), sim preset: BM 910 -> 986 DPS (+8.4%), mm-hawk-raid 859 -> 922 DPS (+7.4%), beast-marks-ml-raid 902 -> 987 DPS (+9.4%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 19 passes, the last 2026-11-10, 14 changes to the base rotation; third-seed check: beast-mastery-ml-raid 897 -> 966 DPS (+7.7%), sim preset: BM 885 -> 962 DPS (+8.7%), mm-hawk-raid 833 -> 895 DPS (+7.4%), beast-marks-ml-raid 874 -> 957 DPS (+9.5%)):
   1. move to the top: if time to the next auto attack > 0.5s: cast Multi-Shot (+1.9%, pass 1)
   2. drop the condition: if time to the next auto attack > 1s: cast Summon Hawk (+0.4%, pass 1)
   3. threshold 1s -> 0.75s: if time left on Serpent Sting < 1s and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 2)
@@ -94,11 +94,11 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`beast-mastery-ml-raid`](beast-mastery-ml-raid.md) casts/min |
 |---|---|---|
-| 1 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Arcane Shot | 4.7 |
+| 1 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Arcane Shot | 5.1 |
 | 2 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 |
-| 3 | cast Summon Hawk | 4.6 |
+| 3 | cast Summon Hawk | 4.7 |
 | 4 | use every other cooldown when ready | as ready |
-| 5 | if time left on Serpent Sting < 4s and time left in the fight ≥ 3s: cast Serpent Sting | 4.0 |
+| 5 | if time left on Serpent Sting < 4s and time left in the fight ≥ 3s: cast Serpent Sting | 4.2 |
 | 6 | if auraIsInactive and mana % ≥ 70%: cast Intimidation | 0.3 |
 
 Damage by ability:
@@ -106,13 +106,12 @@ Damage by ability:
 | Ability | [`beast-mastery-ml-raid`](beast-mastery-ml-raid.md) |
 |---|---|
 | Pet: Auto Attack | 38% |
-| Auto Shot | 32% |
-| Serpent Sting | 13% |
+| Auto Shot | 31% |
+| Serpent Sting | 14% |
 | Arcane Shot | 10% |
 | Summon Hawk | 2% |
 | Pet: Bite | 2% |
 | Pet: Claw | 2% |
-| spell 1295633 | 0% |
 
 ## Notes
 

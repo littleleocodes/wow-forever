@@ -49,14 +49,14 @@ The Shadow build the machine-learning talent search found in a full raid (every 
 
 ## Rank among our builds and the community simulator's
 
-**3 of 4** for `shadow-dps` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 4** for `shadow-dps` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md) | ours: optimizer | 20/0/31 | 680 | +0.0% | 783 | -0.6% | 3 s |
-| 2 | *Standard* | community simulator | - | 640 | -5.9% | 783 | -0.7% | 0 s |
-| 3 | **[`shadow-ml-raid`](shadow-ml-raid.md)** | ours: derived (ML search) | 16/0/35 | 608 | -10.6% | 788 | +0.0% | 17 s |
-| 4 | *Smite* | community simulator | - | 227 | -66.6% | 309 | -60.8% | 11 s |
+| 1 | [`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md) | ours: optimizer | 20/0/31 | 689 | +0.0% | 791 | -0.6% | 2 s |
+| 2 | *Standard* | community simulator | - | 647 | -6.1% | 790 | -0.7% | 0 s |
+| 3 | **[`shadow-ml-raid`](shadow-ml-raid.md)** | ours: derived (ML search) | 16/0/35 | 617 | -10.4% | 796 | +0.0% | 16 s |
+| 4 | *Smite* | community simulator | - | 228 | -66.8% | 310 | -61.0% | 9 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -79,7 +79,7 @@ Before the pull: at -1s: cast Shadowform.
 | 3 | strict sequence: cast Inner Focus; cast Devouring Plague | 0.7 |
 | 4 | cast Shadow Word: Death | 3.1 |
 | 5 | cast Shadow Word: Death (rank 2) | 0.2 |
-| 6 | cast Mind Blast | 6.4 |
+| 6 | cast Mind Blast | 6.5 |
 | 7 | channel Mind Flay | as ready |
 
 Damage by ability:
@@ -87,7 +87,7 @@ Damage by ability:
 | Ability | [`shadow-ml-raid`](shadow-ml-raid.md) |
 |---|---|
 | Mind Flay | 45% |
-| Shadow Word: Pain | 22% |
+| Shadow Word: Pain | 21% |
 | Mind Blast | 19% |
 | Shadow Word: Death | 10% |
 | Devouring Plague | 2% |

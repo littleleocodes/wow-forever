@@ -3,34 +3,37 @@
  "spec": "combat-daggers-raid",
  "build": "combat-ml-raid",
  "setting": "raid",
- "date": "2026-10-03",
+ "date": "2026-11-10",
  "tank": false,
  "removal": {
-  "Adrenaline Rush": 0.035721339709760214,
-  "Aggression": 0.020552927263270848,
-  "Blade Flurry": 0.006926872055649347,
-  "Cold Blood": 0.006049444440046958,
+  "Adrenaline Rush": 0.02790509209922365,
+  "Aggression": 0.018686526304527495,
+  "Blade Flurry": 0.00731537456780873,
+  "Coup de Grace": 0.02387722805578596,
   "Deflection": -0.0,
-  "Dual Wield Specialization": 0.033608722084888853,
-  "Flawless Execution": 0.018740941437114134,
-  "Hack and Slash": 0.03982360393548212,
-  "Improved Eviscerate": 0.016589664181539288,
-  "Improved Slice and Dice": 0.03435106308027591,
-  "Lethality": 0.013479530105225623,
+  "Dual Wield Specialization": 0.053572431157883904,
+  "Flash of Steel": 0.08119701395762347,
+  "Flawless Execution": 0.03580027432121424,
+  "Hack and Slash": 0.03000315246604912,
+  "Improved Slice and Dice": 0.03264627031833767,
+  "Lethality": 0.022025959934666606,
   "Lightning Reflexes": -0.0,
-  "Malice": 0.041759903119720776,
-  "Opportunity": 0.02596004668134877,
-  "Precision": 0.02614191080165107,
-  "Puncturing Wounds": 0.10921141716492266,
-  "Relentless Strikes": 0.058905975463636295,
-  "Ruthlessness": 0.02986283343102758,
-  "Weapon Expertise": 0.016410612862711393
+  "Malice": 0.040149308254886606,
+  "Opportunity": 0.05024114933383195,
+  "Precision": 0.024863583462357286,
+  "Puncturing Wounds": 0.09679069884172076,
+  "Ruthlessness": 0.02779732978713989,
+  "Weapon Expertise": 0.006771441818228419
  },
  "free": [
   "Deflection",
   "Lightning Reflexes"
  ],
- "kept_for_rotation": [],
+ "kept_for_rotation": [
+  "Adrenaline Rush",
+  "Blade Flurry",
+  "Flawless Execution"
+ ],
  "active_never_worth": [],
  "abilities_never_cast": [],
  "moves": [],
@@ -50,21 +53,13 @@
     3
    ],
    [
-    "Relentless Strikes",
-    1
-   ],
-   [
     "Lethality",
-    3
-   ],
-   [
-    "Cold Blood",
-    1
+    2
    ]
   ],
   "Combat": [
    [
-    "Improved Eviscerate",
+    "Coup de Grace",
     3
    ],
    [
@@ -88,8 +83,16 @@
     1
    ],
    [
+    "Weapon Expertise",
+    1
+   ],
+   [
+    "Aggression",
+    3
+   ],
+   [
     "Dual Wield Specialization",
-    5
+    2
    ],
    [
     "Blade Flurry",
@@ -97,15 +100,11 @@
    ],
    [
     "Hack and Slash",
+    4
+   ],
+   [
+    "Flash of Steel",
     5
-   ],
-   [
-    "Weapon Expertise",
-    2
-   ],
-   [
-    "Aggression",
-    3
    ],
    [
     "Adrenaline Rush",
@@ -115,7 +114,7 @@
   "Subtlety": [
    [
     "Opportunity",
-    2
+    5
    ]
   ]
  },
@@ -134,21 +133,13 @@
     3
    ],
    [
-    "Relentless Strikes",
-    1
-   ],
-   [
     "Lethality",
-    3
-   ],
-   [
-    "Cold Blood",
-    1
+    2
    ]
   ],
   "Combat": [
    [
-    "Improved Eviscerate",
+    "Coup de Grace",
     3
    ],
    [
@@ -172,8 +163,16 @@
     1
    ],
    [
+    "Weapon Expertise",
+    1
+   ],
+   [
+    "Aggression",
+    3
+   ],
+   [
     "Dual Wield Specialization",
-    5
+    2
    ],
    [
     "Blade Flurry",
@@ -181,15 +180,11 @@
    ],
    [
     "Hack and Slash",
+    4
+   ],
+   [
+    "Flash of Steel",
     5
-   ],
-   [
-    "Weapon Expertise",
-    2
-   ],
-   [
-    "Aggression",
-    3
    ],
    [
     "Adrenaline Rush",
@@ -199,7 +194,7 @@
   "Subtlety": [
    [
     "Opportunity",
-    2
+    5
    ]
   ]
  }

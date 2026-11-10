@@ -61,7 +61,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 
 ## Rank among our builds and the community simulator's
 
-**4 of 4** for `prot-tank` by tank value in the community simulator (wowsims/forever d97252f (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 4** for `prot-tank` by tank value in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
@@ -72,7 +72,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 
 ## Rotation (community simulator, raid setting)
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-31, 3 passes, the last 2026-11-04, 4 changes to the base rotation; third-seed check: protection-ml-tank 475 -> 501 DPS (+5.4%), sim preset: Default 464 -> 492 DPS (+6.0%), prot-tank 444 -> 464 DPS (+4.5%), opt-prot-tank-raid-tank 424 -> 441 DPS (+4.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-31, 4 passes, the last 2026-11-10, 4 changes to the base rotation; third-seed check: protection-ml-tank 475 -> 501 DPS (+5.4%), sim preset: Default 464 -> 492 DPS (+6.0%), prot-tank 444 -> 464 DPS (+4.5%), opt-prot-tank-raid-tank 424 -> 441 DPS (+4.1%)):
   1. insert before the filler: cast Lay on Hands (+1.9%, pass 1)
   2. insert before the filler: if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath (+0.8%, pass 1)
   3. insert at the top: if autoTimeSinceLast ≥ 0.1s and time to the next auto attack ≥ 0.1s and not Judgement is ready and time until Judgement is ready ≤ (spellFullCooldown − inputDelay): cast Holy Strike (+0.6%, pass 1)

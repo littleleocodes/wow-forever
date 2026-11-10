@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Shockadin (a Holy/Retribution hybrid) raid build the open talent search found on 2026-11-04: every legal 51-point build with no tree rule, searched in the community simulator's shockadin-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.5% over shockadin-open-raid, the best of our builds in that rotation.
+The Shockadin (a Holy/Retribution hybrid) raid build the open talent search found on 2026-11-10: every legal 51-point build with no tree rule, searched in the community simulator's shockadin-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.5% over shockadin-open-raid, the best of our builds in that rotation.
 
 ## Point allocation
 
@@ -62,16 +62,16 @@ The Shockadin (a Holy/Retribution hybrid) raid build the open talent search foun
 
 ## Rank among our builds and the community simulator's
 
-**1 of 1** for `shockadin-raid` by training-dummy DPS in the community simulator (wowsims/forever d97252f (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 1** for `shockadin-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`shockadin-open-raid`](shockadin-open-raid.md)** | ours: derived (open search) | 23/0/28 | 450 | +0.0% | 839 | +0.0% | 70 s |
+| 1 | **[`shockadin-open-raid`](shockadin-open-raid.md)** | ours: derived (open search) | 23/0/28 | 458 | +0.0% | 834 | +0.0% | 64 s |
 
 ## Rotation (community simulator, training dummy)
 
 - **The training dummy:** the simulator's own rotation (no rotation search recorded).
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-31, 3 passes, the last 2026-11-03, 2 changes to the base rotation; third-seed check: shockadin-open-raid 826 -> 839 DPS (+1.6%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-31, 4 passes, the last 2026-11-10, 2 changes to the base rotation; third-seed check: shockadin-open-raid 820 -> 833 DPS (+1.6%)):
   1. threshold 0.2s -> 1.2s: if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath (+1.0%, pass 1)
   2. move to the top: if variableRef: groupReference (+0.5%, pass 1)
 
@@ -82,13 +82,13 @@ Before the pull: at -20s: groupReference; at -30s: if Manual Crowd Pummeler is k
 | 1 | groupReference | as ready |
 | 2 | if time into the fight ≥ variableRef: use every other cooldown when ready | as ready |
 | 3 | groupReference | as ready |
-| 4 | cast Judgement | 6.5 |
-| 5 | cast Consecration | 4.7 |
+| 4 | cast Judgement | 6.6 |
+| 5 | cast Consecration | 5.0 |
 | 6 | if variableRef: groupReference | as ready |
-| 7 | cast Holy Strike | 5.9 |
+| 7 | cast Holy Strike | 6.0 |
 | 8 | if Holy Shock is ready: cast Divine Favor | 0.6 |
-| 9 | cast Holy Shock | 3.8 |
-| 10 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 0.5 |
+| 9 | cast Holy Shock | 3.9 |
+| 10 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 0.6 |
 
 Lines of the simulator's rotation these builds never cast: cast Exorcism (its condition never held in these fights).
 
@@ -100,8 +100,8 @@ Damage by ability:
 | Judgement of Righteousness | 18% |
 | Holy Strike | 16% |
 | Seal of Righteousness | 15% |
-| Holy Shock | 13% |
 | Consecration | 13% |
+| Holy Shock | 13% |
 | Hammer of Wrath | 2% |
 | Demonic Rune | 2% |
 | spell 16614 | 0% |
@@ -113,8 +113,8 @@ Damage by ability:
 - Sibling rotations tried on it (10,000 fights): ret-dps -8.6%; none adopted.
 - A phase-1 BiS set picked for this family (_reference/data/raidsim/gear_sets/forever/tiers/paladin-hybrid-holy-retribution-bis.gear.json, item level 64.0): 815.0 DPS against 796.5 in the rotation's standard set: a lead for the gear sets (not applied).
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Spiritual Focus, Purifying Power, Infusion of Light, Deflection, Unyielding Faith, Seal of Command, Turn Evil.
-- Simulator numbers are the community's model of the beta (wowsims/forever 5ad0894 (client 70707) with this project's patches), not in-game measurements.
-- 2026-11-04 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Deflection -> Benediction (mana); Infusion of Light -> Purifying Power (mana); Deflection -> Benediction (mana); Deflection -> Benediction (mana); Turn Evil -> Deflection (survival); Unyielding Faith -> Deflection (survival); Unyielding Faith -> Deflection (survival). Net -0.04% on a third seed.
+- Simulator numbers are the community's model of the beta (wowsims/forever 16e8542 (client 70790) with this project's patches), not in-game measurements.
+- 2026-11-10 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Infusion of Light -> Purifying Power (mana); Deflection -> Benediction (mana); Deflection -> Benediction (mana); Deflection -> Benediction (mana); Turn Evil -> Deflection (survival); Unyielding Faith -> Deflection (survival); Unyielding Faith -> Deflection (survival). Net -0.01% on a third seed.
 
 ## Open questions (verify in the live game)
 

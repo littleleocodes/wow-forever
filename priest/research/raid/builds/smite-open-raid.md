@@ -62,13 +62,13 @@ The Smite (a Discipline/Holy hybrid) raid build the open talent search found on 
 
 ## Rank among our builds and the community simulator's
 
-**3 of 3** for `smite-dps` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 3** for `smite-dps` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`smite-discipline-raid`](smite-discipline-raid.md) | ours: hand draft | 31/17/3 | 363 | +0.0% | 582 | -3.3% | 42 s |
-| 2 | *Smite* | community simulator | - | 363 | +0.0% | 582 | -3.3% | 42 s |
-| 3 | **[`smite-open-raid`](smite-open-raid.md)** | ours: derived (open search) | 17/17/17 | 343 | -5.6% | 602 | +0.0% | 40 s |
+| 1 | [`smite-discipline-raid`](smite-discipline-raid.md) | ours: hand draft | 31/17/3 | 378 | +0.0% | 597 | -3.2% | 41 s |
+| 2 | *Smite* | community simulator | - | 378 | +0.0% | 597 | -3.2% | 41 s |
+| 3 | **[`smite-open-raid`](smite-open-raid.md)** | ours: derived (open search) | 17/17/17 | 349 | -7.6% | 616 | +0.0% | 38 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -147,10 +147,10 @@ Before the pull: at -3s: cast Holy Fire.
 | 5 | strict sequence: cast Inner Focus; cast Smite | 0.3 |
 | 6 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5 and mana % < 15%: cast Shadow Word: Pain (rank 4) | 0.1 |
 | 7 | if execute phase (E20): cast Shadow Word: Death (rank 3) | 0.6 |
-| 8 | if not Mind Flay is on the target: cast Mind Flay | 10.8 |
+| 8 | if not Mind Flay is on the target: cast Mind Flay | 10.9 |
 | 9 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5: cast Shadow Word: Pain | 2.3 |
 | 10 | if not Shadow Word: Pain is on the target and mana % ≥ 30%: cast Shadow Word: Pain | 2.3 |
-| 11 | if mana % < 15%: cast Smite (rank 5) | 2.4 |
+| 11 | if mana % < 15%: cast Smite (rank 5) | 2.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Power Infusion (needs the Power Infusion talent); cast Penance (rank 3) (needs the Penance talent); cast Smite (rank 2), cast Smite (rank 7) (its condition never held in these fights); cast Shadowform (needs the Shadowform talent).
 
@@ -159,8 +159,8 @@ Damage by ability:
 | Ability | [`smite-open-raid`](smite-open-raid.md) |
 |---|---|
 | Mind Flay | 41% |
-| Shadow Word: Pain | 26% |
-| Holy Fire | 19% |
+| Shadow Word: Pain | 25% |
+| Holy Fire | 20% |
 | Smite | 7% |
 | Demonic Rune | 3% |
 | Devouring Plague | 2% |

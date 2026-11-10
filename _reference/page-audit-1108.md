@@ -406,3 +406,13 @@ Healer filler pass (fixed tool, 200 runs, five-minute and ten-minute fights) res
   Open, an alternative only: the Restoration hand draft `resto-raid-healer` under "Other builds" keeps Moonglow 3 (nothing for heals)
   and Wild Growth (-1.9% in the lab); the page build `restoration-ml-heal` takes neither. The four healer reports re-run on the page
   builds with the new fits (the shaman report dated from 2026-09-30).
+
+## Status, 2026-11-09 ~15:09 (the leveling filler sweep over 27 page builds, gate step included)
+
+- Dry run done (records in fightlab/filler/). Applied (--write, running): the 12 builds with 0.3% or more level-weighted on moves faster on
+  both seeds: mage Fire (-2.5%), rogue Subtlety (-1.4%), mage Arcane (-1.3%), hunter Survival (-1.0%), druid Balance (-0.9%), mage Fire/Frost
+  (-0.8%), warlock Destruction (-0.6%), shaman Elemental (-0.5%), warlock Demonology (-0.45%), hunter Beast-Survival (-0.4%), warlock
+  Affliction/Demonology (-0.4%), rogue Combat/Subtlety (-0.3%). Their by-level and rotation guides follow (level_guides.py --check).
+- Left as they are: builds whose only moves trade one near-zero talent for another (priest Shadow and Smite, hunter BM and BM/MM: "no
+  loss" moves at +-0.05%), gains under 0.3% (mage Frost, Arcane-Frost, rogue Combat, shaman Enhancement and Elemental/Enhancement), and
+  Affliction, where a second pass reshuffles this morning's no-loss moves (its spare Demonology points all measure about zero).

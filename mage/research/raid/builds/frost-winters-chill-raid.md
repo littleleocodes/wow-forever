@@ -66,23 +66,25 @@ Winter's Chill now buffs Frostbolt and Ice Lance crit (demo text says it stacks 
 
 ## Rank among our builds and the community simulator's
 
-**9 of 13** for `frost-raid` by training-dummy DPS in the community simulator (wowsims/forever 5ad0894 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**9 of 15** for `frost-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 28/1/22 | 560 | +0.0% | 649 | -3.2% | 7 s |
-| 2 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 32/3/16 | 557 | -0.5% | 660 | -1.6% | 4 s |
-| 3 | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) | ours: optimizer | 29/0/22 | 556 | -0.7% | 661 | -1.4% | 7 s |
-| 4 | [`arcane-frost-open-raid`](arcane-frost-open-raid.md) | ours: derived (open search) | 28/10/13 | 526 | -6.1% | 671 | +0.0% | 5 s |
-| 5 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 507 | -9.5% | 573 | -14.5% | 0 s |
-| 6 | [`frost-ml-raid`](frost-ml-raid.md) | ours: derived (ML search) | 21/0/30 | 505 | -9.7% | 597 | -10.9% | 7 s |
-| 7 | *Arcane Fire* | community simulator | - | 492 | -12.2% | 619 | -7.7% | 2 s |
-| 8 | *Arcane* | community simulator | - | 492 | -12.2% | 632 | -5.8% | 2 s |
-| 9 | **[`frost-winters-chill-raid`](frost-winters-chill-raid.md)** | ours: hand draft | 21/0/30 | 457 | -18.3% | 520 | -22.5% | 0 s |
-| 10 | *Frost Incin* | community simulator | - | 454 | -19.0% | 544 | -18.9% | 4 s |
-| 11 | *Frost Med* | community simulator | - | 444 | -20.7% | 540 | -19.5% | 9 s |
-| 12 | *Fire* | community simulator | - | 415 | -25.9% | 487 | -27.5% | 7 s |
-| 13 | *FFB* | community simulator | - | 387 | -30.9% | 446 | -33.4% | 2 s |
+| 1 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 28/1/22 | 583 | +0.0% | 671 | -3.2% | 4 s |
+| 2 | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) | ours: optimizer | 29/0/22 | 578 | -0.8% | 677 | -2.2% | 5 s |
+| 3 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 32/3/16 | 577 | -0.9% | 682 | -1.6% | 1 s |
+| 4 | [`arcane-frost-open-raid`](arcane-frost-open-raid.md) | ours: derived (open search) | 28/10/13 | 545 | -6.4% | 693 | +0.0% | 5 s |
+| 5 | [`frost-ml-raid`](frost-ml-raid.md) | ours: derived (ML search) | 21/0/30 | 523 | -10.3% | 612 | -11.7% | 6 s |
+| 6 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 514 | -11.8% | 581 | -16.2% | 0 s |
+| 7 | *Arcane Fire* | community simulator | - | 506 | -13.2% | 640 | -7.7% | 1 s |
+| 8 | *Arcane* | community simulator | - | 506 | -13.2% | 653 | -5.7% | 1 s |
+| 9 | **[`frost-winters-chill-raid`](frost-winters-chill-raid.md)** | ours: hand draft | 21/0/30 | 462 | -20.7% | 526 | -24.0% | 0 s |
+| 10 | *Frost Med* | community simulator | - | 458 | -21.4% | 547 | -21.0% | 8 s |
+| 11 | *Frost Incin* | community simulator | - | 458 | -21.5% | 552 | -20.4% | 5 s |
+| 12 | *Fire Skyborne GT 180* | community simulator | - | 434 | -25.5% | 497 | -28.3% | 3 s |
+| 13 | *Fire Skyborne LT 180* | community simulator | - | 433 | -25.8% | 499 | -27.9% | 4 s |
+| 14 | *Fire* | community simulator | - | 431 | -26.1% | 497 | -28.3% | 4 s |
+| 15 | *FFB* | community simulator | - | 397 | -31.9% | 452 | -34.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -123,7 +125,7 @@ Damage by ability:
 | Ability | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) |
 |---|---|
 | Frostbolt | 75% |
-| Arcane Missiles | 22% |
+| Arcane Missiles | 23% |
 | Demonic Rune | 2% |
 | Fire Blast | 1% |
 

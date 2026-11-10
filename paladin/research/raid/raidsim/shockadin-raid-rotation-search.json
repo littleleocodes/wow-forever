@@ -2,8 +2,8 @@
  "raid": {
   "class": "paladin",
   "spec": "shockadin-raid",
-  "date": "2026-11-03",
-  "commit": "d97252f2a",
+  "date": "2026-11-10",
+  "commit": "16e85426c",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/paladin/sim-presets/retribution-holy_shock.apl.json",
@@ -40,9 +40,9 @@
   "final": {
    "raid": {
     "shockadin-open-raid": {
-     "before": 825.6169308577929,
-     "after": 839.1058557342442,
-     "base": 825.6169308577929,
+     "before": 820.3218591449454,
+     "after": 833.4850771108911,
+     "base": 820.3218591449454,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -65,6 +65,6 @@
    "on": true
   },
   "first_date": "2026-10-31",
-  "passes": 3
+  "passes": 4
  }
 }

@@ -71,7 +71,7 @@ Allocation adopted on 2026-09-28 from the community simulator's own preset 'Impr
 
 ## Rank among our builds and the community simulator's
 
-**7 of 8** for `combat-swords-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**6 of 7** for `combat-swords-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
@@ -80,9 +80,8 @@ Allocation adopted on 2026-09-28 from the community simulator's own preset 'Impr
 | 3 | *Combat SS* | community simulator | - | 371 | -21.8% | 745 | -5.5% | 0 s |
 | 4 | *Combat BS* | community simulator | - | 359 | -24.3% | 722 | -8.5% | 0 s |
 | 5 | [`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md) | ours: optimizer | 21/30/0 | 349 | -26.4% | 693 | -12.1% | 0 s |
-| 6 | [`combat-swords-open-raid`](combat-swords-open-raid.md) | ours: derived (open search) | 21/30/0 | 348 | -26.4% | 693 | -12.1% | 0 s |
-| 7 | **[`combat-swords-raid`](combat-swords-raid.md)** | ours: hand draft | 21/30/0 | 335 | -29.3% | 675 | -14.4% | 0 s |
-| 8 | *Asn Muti* | community simulator | - | 144 | -69.7% | 284 | -64.0% | 0 s |
+| 6 | **[`combat-swords-raid`](combat-swords-raid.md)** | ours: hand draft | 21/30/0 | 335 | -29.3% | 675 | -14.4% | 0 s |
+| 7 | *Asn Muti* | community simulator | - | 144 | -69.7% | 284 | -64.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

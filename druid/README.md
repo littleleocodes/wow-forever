@@ -11,8 +11,8 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling (solo) | Raid (group: full raid DPS) |
 |---|---|---|
-| **Balance** | [Balance (optimized)](leveling/balance.md)<br>37 s/kill | [Balance — Moonkin / Nature's Grace](raid/balance.md)<br>647 DPS (raid) |
-| **Feral Combat** | **✅ Recommended**<br>[Feral Combat — Leveling](leveling/feral-combat.md) 🔬<br>23 s/kill | **✅ Recommended**<br>[Feral Combat — Raid](raid/feral-combat.md) 🔬<br>758 DPS (raid) |
+| **Balance** | [Balance (optimized)](leveling/balance.md)<br>37 s/kill | [Balance — Moonkin / Nature's Grace](raid/balance.md)<br>722 DPS (raid) |
+| **Feral Combat** | **✅ Recommended**<br>[Feral Combat — Leveling](leveling/feral-combat.md) 🔬<br>23 s/kill | **✅ Recommended**<br>[Feral Combat — Raid](raid/feral-combat.md) 🔬<br>927 DPS (raid) |
 | **Restoration** | [Restoration — Leveling into the raid build](leveling/restoration.md) 🔬<br>28 s/kill | [Restoration — Raid healing](raid/restoration.md) 🔬<br>healer |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
@@ -37,8 +37,8 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Full raid DPS | Behind the best |
 |---|---|---|---|
-| 1 | [Feral Combat](raid/feral-combat.md) 🔬 | 758 | best |
-| 2 | [Balance](raid/balance.md) — Moonkin / Nature's Grace | 647 | -15% |
+| 1 | [Feral Combat](raid/feral-combat.md) 🔬 | 927 | best |
+| 2 | [Balance](raid/balance.md) — Moonkin / Nature's Grace | 722 | -22% |
 
 **Tanking**: [Feral Combat](raid/feral-combat.md) (optimized, tank).
 

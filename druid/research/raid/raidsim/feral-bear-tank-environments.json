@@ -2,14 +2,14 @@
  "class": "druid",
  "spec": "feral-bear-tank",
  "game": "forever",
- "date": "2026-11-03",
+ "date": "2026-11-10",
  "sim": {
-  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever",
-  "commit": "bac92dbd5",
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
+  "commit": "16e85426c",
   "racials": "off",
   "pet_normalize": false,
   "simulator": "wowsims/forever",
-  "client": null,
+  "client": "1.60.1.70790",
   "gear_raid": "ui/specs/druid/feralbear/gear_sets/default.gear.json",
   "gear_max": "ui/specs/druid/feralbear/gear_sets/default.gear.json",
   "iterations": 3000,
@@ -91,9 +91,9 @@
     "22812": 3.009333333333333
    },
    "raid_casts": {
-    "Auto Attack": 150.24433333333334,
     "Maul": 449.222,
     "Enrage": 3.009333333333333,
+    "Auto Attack": 150.24433333333334,
     "OtherActionRageGain": 156.68533333333335,
     "Barkskin": 3.009333333333333
    },
@@ -116,16 +116,16 @@
     "max60": 2366.977029266048
    },
    "raid_spell_casts": {
-    "22812": 3.009333333333333,
     "5229": 3.009333333333333,
+    "22812": 3.009333333333333,
     "9881": 543.1973333333333
    },
    "raid_casts": {
-    "Barkskin": 3.009333333333333,
     "Enrage": 3.009333333333333,
-    "Maul": 543.1973333333333,
+    "Auto Attack": 167.94133333333335,
+    "Barkskin": 3.009333333333333,
     "OtherActionRageGain": 305.9986666666667,
-    "Auto Attack": 167.94133333333335
+    "Maul": 543.1973333333333
    },
    "raid_shares": {
     "Maul": 0.8392,
@@ -147,15 +147,15 @@
    },
    "raid_spell_casts": {
     "9881": 448.94533333333334,
-    "5229": 3.009333333333333,
-    "22812": 3.009333333333333
+    "22812": 3.009333333333333,
+    "5229": 3.009333333333333
    },
    "raid_casts": {
     "Maul": 448.94533333333334,
-    "Enrage": 3.009333333333333,
     "OtherActionRageGain": 160.741,
+    "Barkskin": 3.009333333333333,
     "Auto Attack": 153.62633333333332,
-    "Barkskin": 3.009333333333333
+    "Enrage": 3.009333333333333
    },
    "raid_shares": {
     "Maul": 0.8105,
@@ -169,32 +169,32 @@
    "split": "",
    "ours": false,
    "dps": {
-    "dummy": 287.41279140317357,
-    "dummy60": 309.1346082829739,
-    "raid": 1854.1048555079833,
-    "max": 1854.1048555079833,
-    "max60": 1816.9016451016882
+    "dummy": 299.0920772401139,
+    "dummy60": 321.4341188805899,
+    "raid": 1920.6041424344207,
+    "max": 1920.6041424344207,
+    "max60": 1880.2963964361313
    },
    "raid_spell_casts": {
-    "1235827": 16.500666666666667,
-    "5229": 3.0076666666666667,
     "9881": 330.90133333333335,
-    "22812": 3.005333333333333
+    "22812": 3.005333333333333,
+    "5229": 3.0076666666666667,
+    "1235827": 16.500666666666667
    },
    "raid_casts": {
-    "Lacerate": 16.500666666666667,
-    "Auto Attack": 140.096,
-    "OtherActionRageGain": 203.038,
-    "Enrage": 3.0076666666666667,
     "Maul": 330.90133333333335,
-    "Barkskin": 3.005333333333333
+    "Auto Attack": 140.096,
+    "Barkskin": 3.005333333333333,
+    "Enrage": 3.0076666666666667,
+    "OtherActionRageGain": 203.038,
+    "Lacerate": 16.500666666666667
    },
    "raid_shares": {
-    "Maul": 0.7828,
-    "Auto Attack": 0.1822,
-    "Lacerate": 0.0291,
-    "Retribution Aura": 0.0031,
-    "Thorns": 0.0028
+    "Maul": 0.7891,
+    "Auto Attack": 0.1759,
+    "Lacerate": 0.0292,
+    "Retribution Aura": 0.003,
+    "Thorns": 0.0027
    }
   },
   {
@@ -202,30 +202,30 @@
    "split": "",
    "ours": false,
    "dps": {
-    "dummy": 276.85384518207326,
-    "dummy60": 295.14619922970473,
-    "raid": 1785.4898903894284,
-    "max": 1785.4898903894284,
-    "max60": 1754.5878058228348
+    "dummy": 279.32748314661785,
+    "dummy60": 297.71206495979663,
+    "raid": 1799.1527411647226,
+    "max": 1799.1527411647226,
+    "max60": 1767.6016978688458
    },
    "raid_spell_casts": {
+    "5229": 3.0073333333333334,
     "22812": 3.0043333333333333,
     "9881": 340.07233333333335,
-    "1235827": 16.482,
-    "5229": 3.0073333333333334
+    "1235827": 16.482
    },
    "raid_casts": {
-    "Barkskin": 3.0043333333333333,
-    "Auto Attack": 139.45933333333335,
-    "Maul": 340.07233333333335,
-    "Lacerate": 16.482,
     "OtherActionRageGain": 33.007333333333335,
-    "Enrage": 3.0073333333333334
+    "Enrage": 3.0073333333333334,
+    "Barkskin": 3.0043333333333333,
+    "Maul": 340.07233333333335,
+    "Auto Attack": 139.45933333333335,
+    "Lacerate": 16.482
    },
    "raid_shares": {
-    "Maul": 0.7772,
-    "Auto Attack": 0.1883,
-    "Lacerate": 0.0283,
+    "Maul": 0.7786,
+    "Auto Attack": 0.1869,
+    "Lacerate": 0.0284,
     "Retribution Aura": 0.0032,
     "Thorns": 0.0029
    }

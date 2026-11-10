@@ -1,0 +1,249 @@
+{
+ "class": "rogue",
+ "spec": "assassination-raid",
+ "build": "assassination-open-raid",
+ "setting": "raid",
+ "date": "2026-11-10",
+ "tank": false,
+ "removal": {
+  "Aggression": 0.03207657811478559,
+  "Composure": 0.0028169641347016716,
+  "Coup de Grace": 0.04098673870222602,
+  "Deflection": -0.0,
+  "Efficient Strikes": -0.0,
+  "Endurance": -0.0,
+  "Flawless Execution": 0.08512890753144142,
+  "Improved Poisons": 0.007260834257875826,
+  "Improved Slice and Dice": 0.032777772180087816,
+  "Lethality": 0.012099981819707839,
+  "Lightning Reflexes": -0.0,
+  "Malice": 0.044976972933584713,
+  "Mutilate": 0.07390394280302925,
+  "Opportunity": 0.007744389037622756,
+  "Precision": 0.022346009048873405,
+  "Puncturing Wounds": 0.04166176782704112,
+  "Relentless Strikes": 0.11971068713616151,
+  "Ruthlessness": 0.057882354042817385,
+  "Seal Fate": 0.07982128155615309,
+  "Venom": 0.06957484483706211,
+  "Vigor": 0.006626657888256338,
+  "Vile Poisons": 0.029487146194395297
+ },
+ "free": [
+  "Deflection",
+  "Efficient Strikes",
+  "Endurance",
+  "Lightning Reflexes"
+ ],
+ "kept_for_rotation": [
+  "Flawless Execution",
+  "Mutilate"
+ ],
+ "active_never_worth": [],
+ "abilities_never_cast": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Efficient Strikes",
+   "to": "Lightning Reflexes",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Endurance",
+   "to": "Lightning Reflexes",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  }
+ ],
+ "final_seed3": 0.0,
+ "start": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Vigor",
+    2
+   ],
+   [
+    "Lethality",
+    2
+   ],
+   [
+    "Vile Poisons",
+    5
+   ],
+   [
+    "Improved Poisons",
+    1
+   ],
+   [
+    "Relentless Strikes",
+    5
+   ],
+   [
+    "Venom",
+    1
+   ],
+   [
+    "Seal Fate",
+    3
+   ],
+   [
+    "Mutilate",
+    1
+   ]
+  ],
+  "Combat": [
+   [
+    "Coup de Grace",
+    3
+   ],
+   [
+    "Efficient Strikes",
+    1
+   ],
+   [
+    "Lightning Reflexes",
+    1
+   ],
+   [
+    "Puncturing Wounds",
+    3
+   ],
+   [
+    "Deflection",
+    1
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Endurance",
+    1
+   ],
+   [
+    "Composure",
+    2
+   ],
+   [
+    "Flawless Execution",
+    1
+   ],
+   [
+    "Aggression",
+    3
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Opportunity",
+    1
+   ]
+  ]
+ },
+ "allocation": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Vigor",
+    2
+   ],
+   [
+    "Lethality",
+    2
+   ],
+   [
+    "Vile Poisons",
+    5
+   ],
+   [
+    "Improved Poisons",
+    1
+   ],
+   [
+    "Relentless Strikes",
+    5
+   ],
+   [
+    "Venom",
+    1
+   ],
+   [
+    "Seal Fate",
+    3
+   ],
+   [
+    "Mutilate",
+    1
+   ]
+  ],
+  "Combat": [
+   [
+    "Coup de Grace",
+    3
+   ],
+   [
+    "Lightning Reflexes",
+    3
+   ],
+   [
+    "Puncturing Wounds",
+    3
+   ],
+   [
+    "Deflection",
+    1
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Composure",
+    2
+   ],
+   [
+    "Flawless Execution",
+    1
+   ],
+   [
+    "Aggression",
+    3
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Opportunity",
+    1
+   ]
+  ]
+ }
+}

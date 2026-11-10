@@ -76,12 +76,14 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
 
 ## Rank among our builds and the community simulator's
 
-**2 of 2** for `subtlety-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 4** for `subtlety-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Subtlety Hemo* | community simulator | - | 474 | +0.0% | 789 | +0.0% | 0 s |
-| 2 | **[`subtlety-hemo-raid`](subtlety-hemo-raid.md)** | ours: hand draft | 21/0/30 | 356 | -24.9% | 639 | -19.0% | 0 s |
+| 1 | [`subtlety-ml-raid`](subtlety-ml-raid.md) | ours: derived (ML search) | 12/8/31 | 474 | +0.0% | 789 | -0.9% | 0 s |
+| 2 | *Subtlety Hemo* | community simulator | - | 474 | +0.0% | 789 | -0.9% | 0 s |
+| 3 | [`hybrid-assassination-subtlety-open-raid`](hybrid-assassination-subtlety-open-raid.md) | ours: derived (open search) | 27/2/22 | 455 | -3.9% | 796 | +0.0% | 0 s |
+| 4 | **[`subtlety-hemo-raid`](subtlety-hemo-raid.md)** | ours: hand draft | 21/0/30 | 356 | -24.9% | 639 | -19.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -103,7 +105,7 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
   15. threshold 60 -> 30: if energy ≥ 60 and combo points ≤ 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish (+0.5%, pass 6)
   16. drop: if energy ≤ 29 and combo points < 5 and time left on Expose Armor ≤ 6 and timeToNextEnergyTick > 1 and not Adrenaline Rush is up: cast Thistle Tea (+3.0%, pass 7)
   17. insert at the end: cast Preparation (+0.3%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 12 passes, the last 2026-11-09, 24 changes to the base rotation; third-seed check: subtlety-hemo-raid 626 -> 639 DPS (+2.0%), sim preset: Subtlety Hemo 788 -> 788 DPS (+0.0%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 13 passes, the last 2026-11-10, 24 changes to the base rotation; third-seed check: open winner 789 -> 796 DPS (+0.9%), subtlety-hemo-raid 626 -> 639 DPS (+2.0%), sim preset: Subtlety Hemo 788 -> 788 DPS (+0.0%)):
   1. drop 'combo points ≥ 4' from the condition: if combo points ≥ 4 and not Rupture is on the target and time left in the fight > 8: cast Rupture (+1.1%, pass 1)
   2. only with 20s or more of the fight left: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9): cast Slice and Dice (+0.3%, pass 1)
   3. insert at the top: if combo points ≥ 4 and not Rupture is on the target and time left in the fight > 8: cast Rupture (+0.2%, pass 2)

@@ -388,6 +388,7 @@ Models: sb-raid, affliction-raid, fire-destro-raid, affliction-leveling. Same mo
 - An open-search Affliction leveling build: check it while leveling at launch.
 - An open-search Affliction-Demonology leveling build: check it while leveling at launch.
 - An open-search Destruction leveling build: check it while leveling at launch.
+- An open-search Demonology leveling build: check it while leveling at launch.
 
 ## Warrior
 

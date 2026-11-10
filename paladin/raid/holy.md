@@ -45,26 +45,26 @@ You heal with **Holy Light** on the tank, in the rank that covers what he is mis
 
 Healing capacity 0.64 (the raid damage it heals through in this project's healer lab), 370 healing per second. Healers are not in the community simulator.
 
-**The gear** (average item level: Pre-BiS 62.3; Phase 1 BiS 64.4; chosen by the stat weights this project's healer lab measures for this build, the healing capacity each stat adds; healers are in no community simulator, so this is our model; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 61.5; Phase 1 BiS 63.5; chosen by the stat weights this project's healer lab measures for this build, the healing capacity each stat adds; healers are in no community simulator, so this is our model; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
 | Head | [Living Crown](https://www.wowhead.com/forever/item=252561) · *Leatherworking*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Living Crown](https://www.wowhead.com/forever/item=252561) · *Leatherworking*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
-| Neck | [Beads of Ogre Mojo](https://www.wowhead.com/forever/item=22149) · *quest: Falrin's Vendetta* | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
-| Shoulders | [Devout Mantle](https://www.wowhead.com/forever/item=16695) · *Solakar Flamewreath, Blackrock Spire* | [Devout Mantle](https://www.wowhead.com/forever/item=16695) · *Solakar Flamewreath, Blackrock Spire* |
+| Neck | [Wavefront Necklace](https://www.wowhead.com/forever/item=20685) · *Lord Skwol, Silithus* | [Wavefront Necklace](https://www.wowhead.com/forever/item=20685) · *Lord Skwol, Silithus* |
+| Shoulders | [Devout Mantle](https://www.wowhead.com/forever/item=16695) · *Solakar Flamewreath, Blackrock Spire* | [Ironfeather Shoulders](https://www.wowhead.com/forever/item=15067) · *Leatherworking* |
 | Back | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) · *Leatherworking* | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) · *Leatherworking* |
 | Chest | [Breastplate of Salvation](https://www.wowhead.com/forever/item=250601) · *Blacksmithing*<br>+ [Enchant Chest - Major Intellect](https://www.wowhead.com/forever/spell=19991) | [Breastplate of Salvation](https://www.wowhead.com/forever/item=250601) · *Blacksmithing*<br>+ [Enchant Chest - Major Intellect](https://www.wowhead.com/forever/spell=19991) |
-| Wrist | [Devout Bracers](https://www.wowhead.com/forever/item=16697) · *Stratholme*<br>+ [Enchant Bracer - Mana Regeneration](https://www.wowhead.com/forever/spell=23795) | [Flarecore Wraps](https://www.wowhead.com/forever/item=18263) · *Tailoring*<br>+ [Enchant Bracer - Mana Regeneration](https://www.wowhead.com/forever/spell=23795) |
+| Wrist | [Wildheart Bracers](https://www.wowhead.com/forever/item=16714) · *Scholomance*<br>+ [Enchant Bracer - Healing Power](https://www.wowhead.com/forever/spell=23796) | [Flarecore Wraps](https://www.wowhead.com/forever/item=18263) · *Tailoring*<br>+ [Enchant Bracer - Healing Power](https://www.wowhead.com/forever/spell=23796) |
 | Hands | [Mooncloth Gloves](https://www.wowhead.com/forever/item=18409) · *Tailoring* | [Mooncloth Gloves](https://www.wowhead.com/forever/item=18409) · *Tailoring* |
-| Waist | [Wisdom of the Timbermaw](https://www.wowhead.com/forever/item=19047) · *Tailoring* | [Corehound Belt](https://www.wowhead.com/forever/item=19162) · *Leatherworking* |
+| Waist | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* | [Corehound Belt](https://www.wowhead.com/forever/item=19162) · *Leatherworking* |
 | Legs | [Martyr's Legplates](https://www.wowhead.com/forever/item=250600) · *Blacksmithing*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Martyr's Legplates](https://www.wowhead.com/forever/item=250600) · *Blacksmithing*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
-| Feet | [Mooncloth Boots](https://www.wowhead.com/forever/item=15802) · *Tailoring*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/item=16220) | [Soulforge Boots](https://www.wowhead.com/forever/item=22087) · *quest: Anthion's Parting Words*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/item=16220) |
-| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) · *quest: The Grand Invoker* | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) · *quest: The Grand Invoker* |
+| Feet | [Mooncloth Boots](https://www.wowhead.com/forever/item=15802) · *Tailoring*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/item=16220) | [Mooncloth Boots](https://www.wowhead.com/forever/item=15802) · *Tailoring*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/item=16220) |
 | Finger | [Warden's Signet of Resolve](https://www.wowhead.com/forever/item=275983) | [Cauterizing Band](https://www.wowhead.com/forever/item=19140) · *Majordomo Executus, Molten Core* |
-| Trinket | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) · *quest: Heroes of Old* | [Serenity Field](https://www.wowhead.com/forever/item=272439) · *sold by Pix Xizzix* |
-| Trinket | [Serenity Field](https://www.wowhead.com/forever/item=272439) · *sold by Pix Xizzix* | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) · *quest: Heroes of Old* |
+| Finger | [Jereman's Bauble](https://www.wowhead.com/forever/item=275738) | [Band of Sulfuras](https://www.wowhead.com/forever/item=19138) · *Ragnaros, Molten Core* |
+| Trinket | [Serenity Field](https://www.wowhead.com/forever/item=272439) · *sold by Pix Xizzix* | [Serenity Field](https://www.wowhead.com/forever/item=272439) · *sold by Pix Xizzix* |
+| Trinket | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) · *quest: Heroes of Old* | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) · *quest: Heroes of Old* |
 | Main hand | [Sageblade](https://www.wowhead.com/forever/item=22383) · *Blacksmithing*<br>+ [Enchant Weapon - Mighty Intellect](https://www.wowhead.com/forever/spell=23798) | [Sageblade](https://www.wowhead.com/forever/item=22383) · *Blacksmithing*<br>+ [Enchant Weapon - Mighty Intellect](https://www.wowhead.com/forever/spell=23798) |
-| Off hand | [Evergreen Shield](https://www.wowhead.com/forever/item=279262) · *Blacksmithing*<br>+ [Enchant Shield - Superior Spirit](https://www.wowhead.com/forever/item=16222) | [Sunderbark Vigil](https://www.wowhead.com/forever/item=276754)<br>+ [Enchant Shield - Superior Spirit](https://www.wowhead.com/forever/item=16222) |
+| Off hand | [Evergreen Shield](https://www.wowhead.com/forever/item=279262) · *Blacksmithing*<br>+ [Enchant Shield - Superior Spirit](https://www.wowhead.com/forever/item=16222) | [Evergreen Shield](https://www.wowhead.com/forever/item=279262) · *Blacksmithing*<br>+ [Enchant Shield - Superior Spirit](https://www.wowhead.com/forever/item=16222) |
 
 ## Other builds of this spec
 
@@ -72,5 +72,5 @@ Healing capacity 0.64 (the raid damage it heals through in this project's healer
 - [Holy (optimized)](../research/raid/builds/opt-holy-heal-raid-heal.md) (31/10/10) — [open the talent tree](https://talentsforever.com/paladin/60/53320215002001151-51022-25003-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-10 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

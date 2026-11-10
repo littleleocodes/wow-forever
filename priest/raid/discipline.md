@@ -42,12 +42,12 @@ The healer lab plays Discipline with the class's heal choices: **Penance** on th
 
 Healing capacity 0.65 (the raid damage it heals through in this project's healer lab), 357 healing per second. Healers are not in the community simulator.
 
-**The gear** (average item level: Pre-BiS 60.1; Phase 1 BiS 61.6; chosen by the stat weights this project's healer lab measures for this build, the healing capacity each stat adds; healers are in no community simulator, so this is our model; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 58.9; Phase 1 BiS 59.9; chosen by the stat weights this project's healer lab measures for this build, the healing capacity each stat adds; healers are in no community simulator, so this is our model; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
 | Head | [Devout Crown](https://www.wowhead.com/forever/item=16693) · *Darkmaster Gandling, Scholomance*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11649) | [Devout Crown](https://www.wowhead.com/forever/item=16693) · *Darkmaster Gandling, Scholomance*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11649) |
-| Neck | [Orb of the Darkmoon](https://www.wowhead.com/forever/item=19426) · *quest: 1200 Tickets - Orb of the Darkmoon* | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
+| Neck | [Wavefront Necklace](https://www.wowhead.com/forever/item=20685) · *Lord Skwol, Silithus* | [Wavefront Necklace](https://www.wowhead.com/forever/item=20685) · *Lord Skwol, Silithus* |
 | Shoulders | [Devout Mantle](https://www.wowhead.com/forever/item=16695) · *Solakar Flamewreath, Blackrock Spire* | [Devout Mantle](https://www.wowhead.com/forever/item=16695) · *Solakar Flamewreath, Blackrock Spire* |
 | Back | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) · *Leatherworking* | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) · *Leatherworking* |
 | Chest | [Mooncloth Vest](https://www.wowhead.com/forever/item=14138) · *Tailoring*<br>+ [Enchant Chest - Major Intellect](https://www.wowhead.com/forever/spell=19991) | [Mooncloth Vest](https://www.wowhead.com/forever/item=14138) · *Tailoring*<br>+ [Enchant Chest - Major Intellect](https://www.wowhead.com/forever/spell=19991) |
@@ -56,11 +56,11 @@ Healing capacity 0.65 (the raid damage it heals through in this project's healer
 | Waist | [Wisdom of the Timbermaw](https://www.wowhead.com/forever/item=19047) · *Tailoring* | [Wisdom of the Timbermaw](https://www.wowhead.com/forever/item=19047) · *Tailoring* |
 | Legs | [Devout Skirt](https://www.wowhead.com/forever/item=16694) · *Baron Rivendare, Stratholme*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11649) | [Devout Skirt](https://www.wowhead.com/forever/item=16694) · *Baron Rivendare, Stratholme*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11649) |
 | Feet | [Mooncloth Boots](https://www.wowhead.com/forever/item=15802) · *Tailoring*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/item=16220) | [Mooncloth Boots](https://www.wowhead.com/forever/item=15802) · *Tailoring*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/item=16220) |
-| Finger | [Warden's Signet of Resolve](https://www.wowhead.com/forever/item=275983) | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) · *quest: The Grand Invoker* |
-| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21210) · *quest: The Grand Invoker* | [Cauterizing Band](https://www.wowhead.com/forever/item=19140) · *Majordomo Executus, Molten Core* |
+| Finger | [Warden's Signet of Resolve](https://www.wowhead.com/forever/item=275983) | [Cauterizing Band](https://www.wowhead.com/forever/item=19140) · *Majordomo Executus, Molten Core* |
+| Finger | [Jereman's Bauble](https://www.wowhead.com/forever/item=275738) | [Warden's Signet of Resolve](https://www.wowhead.com/forever/item=275983) |
 | Trinket | [Serenity Field](https://www.wowhead.com/forever/item=272439) · *sold by Pix Xizzix* | [Serenity Field](https://www.wowhead.com/forever/item=272439) · *sold by Pix Xizzix* |
 | Trinket | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) · *quest: Heroes of Old* | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) · *quest: Heroes of Old* |
-| Main hand | [item 7721](https://www.wowhead.com/forever/item=7721)<br>+ [Enchant Weapon - Healing Power](https://www.wowhead.com/forever/spell=22748) | [item 7721](https://www.wowhead.com/forever/item=7721)<br>+ [Enchant Weapon - Healing Power](https://www.wowhead.com/forever/spell=22748) |
+| Main hand | [Hand of Righteousness](https://www.wowhead.com/forever/item=7721) · *High Inquisitor Whitemane, Scarlet Monastery*<br>+ [Enchant Weapon - Healing Power](https://www.wowhead.com/forever/spell=22748) | [Hand of Righteousness](https://www.wowhead.com/forever/item=7721) · *High Inquisitor Whitemane, Scarlet Monastery*<br>+ [Enchant Weapon - Healing Power](https://www.wowhead.com/forever/spell=22748) |
 | Off hand | [Twisting Essence Jar](https://www.wowhead.com/forever/item=249456) · *Enchanting* | [Twisting Essence Jar](https://www.wowhead.com/forever/item=249456) · *Enchanting* |
 | Ranged/relic | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* |
 
@@ -69,5 +69,5 @@ Healing capacity 0.65 (the raid damage it heals through in this project's healer
 - [Discipline — Penance / Divine Aegis / Power Infusion](../research/raid/builds/disc-penance-healer.md) (31/20/0) — [open the talent tree](https://talentsforever.com/priest/60/005203031330011531-215050030301--12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-10 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

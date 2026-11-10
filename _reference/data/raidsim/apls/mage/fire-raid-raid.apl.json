@@ -42,29 +42,6 @@
   {
    "action": {
     "condition": {
-     "cmp": {
-      "op": "OpLt",
-      "lhs": {
-       "currentMana": {}
-      },
-      "rhs": {
-       "spellCurrentCost": {
-        "spellId": {
-         "spellId": 18809
-        }
-       }
-      }
-     }
-    },
-    "groupReference": {
-     "groupName": "Evocation"
-    }
-   },
-   "notes": "2026-10-31: the official simulator's mage/dps/apls/deepFire.apl.json at 54ceac638 adopted (rotation-lag audit after the re-pin: +2.8% for the entry's best build in a full raid, +2.8% to +4.5% for its listed builds, 10,000 fights on seeds 2 and 3)"
-  },
-  {
-   "action": {
-    "condition": {
      "and": {
       "vals": [
        {

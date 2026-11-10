@@ -148,8 +148,8 @@
  "raid": {
   "class": "hunter",
   "spec": "melee-dps",
-  "date": "2026-11-04",
-  "commit": "7c3453f5a",
+  "date": "2026-11-10",
+  "commit": "16e85426c",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/hunter/melee-dps.base.apl.json",
@@ -246,45 +246,45 @@
   "final": {
    "raid": {
     "melee-survival-raid": {
-     "before": 471.9938533374248,
-     "after": 733.1447925307444,
-     "base": 471.9938533374248,
+     "before": 497.15447721739923,
+     "after": 752.3571630783781,
+     "base": 497.15447721739923,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: SV Melee": {
-     "before": 363.8240733368905,
-     "after": 610.3133895994106,
-     "base": 363.8240733368905,
+     "before": 381.41094342520705,
+     "after": 622.921104968059,
+     "base": 381.41094342520705,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.2716511589918491,
-     "oom_after": 0.2716511589918491
+     "oom_before": 0.011027553504350002,
+     "oom_after": 0.011027553504350002
     },
     "opt-melee-dps-raid-dps": {
-     "before": 471.9938533374248,
-     "after": 682.2927577000823,
-     "base": 471.9938533374248,
+     "before": 497.15447721739923,
+     "after": 702.6155559962522,
+     "base": 497.15447721739923,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "survival-raid": {
-     "before": 447.23317222781844,
-     "after": 689.6125152669375,
-     "base": 447.23317222781844,
+     "before": 467.260021045936,
+     "after": 704.9372509466895,
+     "base": 467.260021045936,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "survival-ml-parse": {
-     "before": 449.9875418243558,
-     "after": 694.9407279534229,
-     "base": 449.9875418243558,
+     "before": 473.99951128522355,
+     "after": 713.5428011694227,
+     "base": 473.99951128522355,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -306,6 +306,6 @@
    "on": true
   },
   "first_date": "2026-09-29",
-  "passes": 16
+  "passes": 17
  }
 }

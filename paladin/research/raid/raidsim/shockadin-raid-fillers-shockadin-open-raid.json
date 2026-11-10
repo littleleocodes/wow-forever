@@ -3,38 +3,39 @@
  "spec": "shockadin-raid",
  "build": "shockadin-open-raid",
  "setting": "raid",
- "date": "2026-11-04",
+ "date": "2026-11-10",
  "tank": false,
  "removal": {
-  "Benediction": 0.0009675767690493497,
-  "Champion of the Light": 0.037614739275176445,
-  "Consecrated Ground": 0.06357928407639968,
-  "Conviction": 0.0443348631085172,
+  "Benediction": 0.0007160429814987435,
+  "Champion of the Light": 0.04322136898272533,
+  "Consecrated Ground": 0.06290338842630305,
+  "Conviction": 0.04437023970597953,
   "Deflection": -0.0,
-  "Divine Favor": 0.00401368386245482,
-  "Divine Precision": 0.01382109537217091,
-  "Divine Strength": 0.012918510879276979,
-  "Holy Conduit": 0.06222644180700332,
-  "Holy Shock": 0.1293156542263012,
-  "Improved Judgement": 0.04930299366403068,
-  "Improved Seals": 0.03622576773489128,
+  "Divine Favor": 0.004111325885945316,
+  "Divine Precision": 0.013563308082188974,
+  "Divine Strength": 0.012730057681103801,
+  "Holy Conduit": 0.05498675249060614,
+  "Holy Shock": 0.12856415371384566,
+  "Improved Judgement": 0.0485386624730364,
+  "Improved Seals": 0.03546171526345987,
   "Infusion of Light": -0.0,
   "Purifying Power": -0.0,
-  "Reverence": 0.002044525057960711,
-  "Sacred Arbiter": 0.0180398905512561,
-  "Sanctified Judgement": 0.026357730958741277,
+  "Reverence": 0.0007658363710761895,
+  "Sacred Arbiter": 0.018117238026922777,
+  "Sanctified Judgement": 0.014061942272999506,
   "Seal of Command": -0.0,
   "Spiritual Focus": -0.0,
   "Turn Evil": -0.0,
-  "Two-Handed Weapon Specialization": 0.05381355085589512,
+  "Two-Handed Weapon Specialization": 0.053784016611503116,
   "Unyielding Faith": -0.0,
-  "Vengeance": 0.12010057407448149
+  "Vengeance": 0.12014927520002161
  },
  "free": [
   "Benediction",
   "Deflection",
   "Infusion of Light",
   "Purifying Power",
+  "Reverence",
   "Spiritual Focus",
   "Turn Evil",
   "Unyielding Faith"
@@ -52,15 +53,6 @@
   {
    "round": 1,
    "kind": "utility",
-   "from": "Deflection",
-   "to": "Benediction",
-   "seed1": 0.0002965941626651425,
-   "seed2": 0.000173814317285359,
-   "utility": "mana"
-  },
-  {
-   "round": 2,
-   "kind": "utility",
    "from": "Infusion of Light",
    "to": "Purifying Power",
    "seed1": 0.0,
@@ -68,12 +60,21 @@
    "utility": "mana"
   },
   {
+   "round": 2,
+   "kind": "utility",
+   "from": "Deflection",
+   "to": "Benediction",
+   "seed1": -0.000548037150143843,
+   "seed2": -9.784100092780079e-05,
+   "utility": "mana"
+  },
+  {
    "round": 3,
    "kind": "utility",
    "from": "Deflection",
    "to": "Benediction",
-   "seed1": -0.00043300241350008317,
-   "seed2": 0.00025817501543046184,
+   "seed1": 0.0004310193299210674,
+   "seed2": 0.00015273211946720266,
    "utility": "mana"
   },
   {
@@ -81,8 +82,8 @@
    "kind": "utility",
    "from": "Deflection",
    "to": "Benediction",
-   "seed1": 0.00010244375276258211,
-   "seed2": 0.00023438307694667593,
+   "seed1": -0.0002493209651541761,
+   "seed2": 0.0006908374213427937,
    "utility": "mana"
   },
   {
@@ -113,7 +114,7 @@
    "utility": "survival"
   }
  ],
- "final_seed3": -0.000383161085264927,
+ "final_seed3": -6.92502301726794e-05,
  "start": {
   "Holy": [
    [

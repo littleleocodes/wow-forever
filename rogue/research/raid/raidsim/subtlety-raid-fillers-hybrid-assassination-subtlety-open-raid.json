@@ -1,0 +1,247 @@
+{
+ "class": "rogue",
+ "spec": "subtlety-raid",
+ "build": "hybrid-assassination-subtlety-open-raid",
+ "setting": "raid",
+ "date": "2026-11-10",
+ "tank": false,
+ "removal": {
+  "Blood Splatter": 0.05651491079837112,
+  "Camouflage": -0.0,
+  "Dirty Deeds": 0.3436788371620202,
+  "Efficient Strikes": 0.046643939847683114,
+  "Ghostly Strike": 0.056875880565353865,
+  "Hemorrhage": 0.08673545259419868,
+  "Improved Ambush": -0.0,
+  "Improved Poisons": 0.0246933062035819,
+  "Improved Slice and Dice": 0.023026308123042294,
+  "Initiative": 0.013626014544451781,
+  "Lethality": 0.0082115336457379,
+  "Malice": 0.043686299192976286,
+  "Opportunity": 0.0166349181012877,
+  "Premeditation": 0.011296563180165586,
+  "Preparation": 0.015570709173902797,
+  "Relentless Strikes": 0.08094405896333534,
+  "Ruthlessness": 0.028355199014148402,
+  "Seal Fate": 0.010921023534997354,
+  "Serrated Blades": 0.03237691954411959,
+  "Setup": -0.0,
+  "Venom": 0.05668365949412446,
+  "Vigor": 0.002263379968736823,
+  "Vile Poisons": 0.005451435593309517
+ },
+ "free": [
+  "Camouflage",
+  "Improved Ambush",
+  "Setup"
+ ],
+ "kept_for_rotation": [
+  "Blood Splatter",
+  "Ghostly Strike",
+  "Hemorrhage"
+ ],
+ "active_never_worth": [],
+ "abilities_never_cast": [],
+ "moves": [],
+ "final_seed3": 0.0,
+ "start": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Vigor",
+    1
+   ],
+   [
+    "Blood Splatter",
+    1
+   ],
+   [
+    "Lethality",
+    2
+   ],
+   [
+    "Vile Poisons",
+    1
+   ],
+   [
+    "Improved Poisons",
+    4
+   ],
+   [
+    "Relentless Strikes",
+    5
+   ],
+   [
+    "Venom",
+    1
+   ],
+   [
+    "Seal Fate",
+    1
+   ]
+  ],
+  "Combat": [
+   [
+    "Efficient Strikes",
+    2
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Setup",
+    2
+   ],
+   [
+    "Opportunity",
+    5
+   ],
+   [
+    "Dirty Deeds",
+    2
+   ],
+   [
+    "Camouflage",
+    2
+   ],
+   [
+    "Improved Ambush",
+    1
+   ],
+   [
+    "Initiative",
+    3
+   ],
+   [
+    "Premeditation",
+    1
+   ],
+   [
+    "Serrated Blades",
+    3
+   ],
+   [
+    "Ghostly Strike",
+    1
+   ],
+   [
+    "Preparation",
+    1
+   ],
+   [
+    "Hemorrhage",
+    1
+   ]
+  ]
+ },
+ "allocation": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Vigor",
+    1
+   ],
+   [
+    "Blood Splatter",
+    1
+   ],
+   [
+    "Lethality",
+    2
+   ],
+   [
+    "Vile Poisons",
+    1
+   ],
+   [
+    "Improved Poisons",
+    4
+   ],
+   [
+    "Relentless Strikes",
+    5
+   ],
+   [
+    "Venom",
+    1
+   ],
+   [
+    "Seal Fate",
+    1
+   ]
+  ],
+  "Combat": [
+   [
+    "Efficient Strikes",
+    2
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Setup",
+    2
+   ],
+   [
+    "Opportunity",
+    5
+   ],
+   [
+    "Dirty Deeds",
+    2
+   ],
+   [
+    "Camouflage",
+    2
+   ],
+   [
+    "Improved Ambush",
+    1
+   ],
+   [
+    "Initiative",
+    3
+   ],
+   [
+    "Premeditation",
+    1
+   ],
+   [
+    "Serrated Blades",
+    3
+   ],
+   [
+    "Ghostly Strike",
+    1
+   ],
+   [
+    "Preparation",
+    1
+   ],
+   [
+    "Hemorrhage",
+    1
+   ]
+  ]
+ }
+}

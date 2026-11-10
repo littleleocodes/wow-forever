@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Fire raid build the open talent search found on 2026-11-03: every legal 51-point build with no tree rule, searched in the community simulator's fire-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.9% over fire-open-raid, the best of our builds in that rotation.
+The Fire raid build the open talent search found on 2026-11-10: every legal 51-point build with no tree rule, searched in the community simulator's fire-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +0.9% over fire-open-raid, the best of our builds in that rotation.
 
 ## Point allocation
 
@@ -32,13 +32,13 @@ The Fire raid build the open talent search found on 2026-11-03: every legal 51-p
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Incineration** | 5/5 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 10%. |
-| **Accelerant** | 4/5 | changed | Reduces the casting time of your Fireball, Frostfire Bolt, and Arcane Wrath spells by 0.4 sec. |
+| **Accelerant** | 5/5 | changed | Reduces the casting time of your Fireball, Frostfire Bolt, and Arcane Wrath spells by 0.5 sec. |
 | **Ignite** | 5/5 | unchanged | Your critical strikes from Fire damage spells cause the target to burn for an additional 40% of your spell's damage over 4 sec. |
 | **Pyroblast** | 1/1 | changed | Hurls an immense fiery boulder that causes 101 to 131 Fire damage and an additional 44 Fire damage over 12 sec. |
 | **Improved Fire Blast** | 2/2 | **NEW** | Reduces the cooldown of your Fire Blast spell by 2 sec and increases its range by 15 yards. |
 | **Improved Scorch** | 3/3 | changed | Your Scorch spell has a 100% chance to cause your target to be vulnerable to Fire damage. This vulnerability increases all Fire damage you deal to your target by 3% and lasts 30 sec, stacking up to 5 times. |
 | **Heating Up** | 1/1 | **NEW** | Non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch reduce the cast time of your next Pyroblast cast within 20 sec by 25%, stacking up to 3 times. Fire Blast grants an additional stack every time it deals damage. |
-| **Master of Elements** | 3/3 | changed | Your Fire and Frost critical strikes will refund 30% of their base mana cost. |
+| **Master of Elements** | 2/3 | changed | Your Fire and Frost critical strikes will refund 20% of their base mana cost. |
 | **Critical Mass** | 3/3 | unchanged | Increases the critical strike chance of your Fire spells by 6%. |
 | **Fire Power** | 3/3 | unchanged | Increases the damage done by your Fire spells by 3% per your Fire effects on the target, up to a maximum increase of 12%. Effects which mix multiple schools of magic do not qualify. |
 | **Combustion** | 1/1 | changed | When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 non-periodic critical strikes with Fire spells. |
@@ -51,30 +51,32 @@ The Fire raid build the open talent search found on 2026-11-03: every legal 51-p
 
 ## Core talents (priority order)
 
-1. **Improved Scorch** — 190 DPS lost without it (23% of the build in a full raid; removal, 12,000 fights).
-2. **Pyroblast** — 162 DPS lost without it (20% of the build in a full raid; removal, 12,000 fights).
-3. **Heating Up** — 144 DPS lost without it (17% of the build in a full raid; removal, 12,000 fights).
-4. **Ignite** — 94 DPS lost without it (11% of the build in a full raid; removal, 12,000 fights).
-5. **Precision** — 65 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights).
-6. **Fire Power** — 52 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights).
-7. **Improved Fire Blast** — 47 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights).
-8. **Critical Mass** — 43 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
+1. **Improved Scorch** — 287 DPS lost without it (33% of the build in a full raid; removal, 12,000 fights).
+2. **Pyroblast** — 174 DPS lost without it (20% of the build in a full raid; removal, 12,000 fights).
+3. **Heating Up** — 159 DPS lost without it (18% of the build in a full raid; removal, 12,000 fights).
+4. **Ignite** — 98 DPS lost without it (11% of the build in a full raid; removal, 12,000 fights).
+5. **Precision** — 66 DPS lost without it (8% of the build in a full raid; removal, 12,000 fights).
+6. **Fire Power** — 57 DPS lost without it (7% of the build in a full raid; removal, 12,000 fights).
+7. **Missile Barrage** — 54 DPS lost without it (6% of the build in a full raid; removal, 12,000 fights).
+8. **Improved Fire Blast** — 44 DPS lost without it (5% of the build in a full raid; removal, 12,000 fights).
 
 ## Rank among our builds and the community simulator's
 
-**1 of 9** for `fire-raid` by training-dummy DPS in the community simulator (wowsims/forever 5ad0894 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 11** for `fire-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`fire-open-raid`](fire-open-raid.md)** | ours: derived (open search) | 17/31/3 | 553 | +0.0% | 828 | +0.0% | 8 s |
-| 2 | *Fire* | community simulator | - | 547 | -1.1% | 827 | -0.1% | 12 s |
-| 3 | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) | ours: optimizer | 18/31/2 | 542 | -1.9% | 793 | -4.2% | 7 s |
-| 4 | [`fire-raid`](fire-raid.md) | ours: hand draft | 16/32/3 | 538 | -2.7% | 799 | -3.5% | 13 s |
-| 5 | *FFB* | community simulator | - | 442 | -20.0% | 694 | -16.2% | 41 s |
-| 6 | *Arcane Fire* | community simulator | - | 388 | -29.8% | 615 | -25.8% | 1 s |
-| 7 | *Arcane* | community simulator | - | 343 | -38.0% | 414 | -50.0% | 1 s |
-| 8 | *Frost Incin* | community simulator | - | 317 | -42.7% | 345 | -58.4% | 0 s |
-| 9 | *Frost Med* | community simulator | - | 304 | -45.1% | 377 | -54.5% | 0 s |
+| 1 | **[`fire-open-raid`](fire-open-raid.md)** | ours: derived (open search) | 17/31/3 | 581 | +0.0% | 869 | +0.0% | 4 s |
+| 2 | *Fire* | community simulator | - | 579 | -0.3% | 867 | -0.3% | 4 s |
+| 3 | *Fire Skyborne GT 180* | community simulator | - | 579 | -0.3% | 861 | -1.0% | 2 s |
+| 4 | *Fire Skyborne LT 180* | community simulator | - | 576 | -0.8% | 858 | -1.2% | 4 s |
+| 5 | [`fire-raid`](fire-raid.md) | ours: hand draft | 16/32/3 | 572 | -1.4% | 831 | -4.4% | 5 s |
+| 6 | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) | ours: optimizer | 18/31/2 | 566 | -2.4% | 827 | -4.9% | 1 s |
+| 7 | *FFB* | community simulator | - | 465 | -19.9% | 610 | -29.8% | 38 s |
+| 8 | *Arcane Fire* | community simulator | - | 405 | -30.2% | 580 | -33.3% | 1 s |
+| 9 | *Arcane* | community simulator | - | 357 | -38.6% | 430 | -50.5% | 1 s |
+| 10 | *Frost Incin* | community simulator | - | 322 | -44.5% | 365 | -58.0% | 0 s |
+| 11 | *Frost Med* | community simulator | - | 313 | -46.2% | 392 | -54.9% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -91,7 +93,7 @@ The Fire raid build the open talent search found on 2026-11-03: every legal 51-p
   10. threshold 80% -> 60%: if mana % ≤ 80%: cast Mana Ruby (+1.4%, pass 5)
   11. insert at the end: cast Frost Blast (+0.5%, pass 5)
   12. only above 25% mana: if mana % ≤ 60%: cast Mana Ruby (+0.4%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 14 passes, the last 2026-11-03, 31 changes to the base rotation; third-seed check: fire-open-raid 672 -> 830 DPS (+23.6%), sim preset: Fire 673 -> 827 DPS (+22.9%), fire-raid 665 -> 799 DPS (+20.2%), opt-fire-raid-raid-dps 656 -> 795 DPS (+21.2%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 15 passes, the last 2026-11-10, 32 changes to the base rotation; third-seed check: fire-open-raid 687 -> 861 DPS (+25.2%), sim preset: Fire 691 -> 866 DPS (+25.4%), fire-raid 683 -> 830 DPS (+21.6%), opt-fire-raid-raid-dps 671 -> 827 DPS (+23.1%)):
   1. drop the condition: if mana ≥ (time left in the fight × 110): cast Fire Blast (+3.7%, pass 1)
   2. move to the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+2.5%, pass 1)
   3. drop: if mana % < 20% and time left in the fight > 25s: cast Evocation (+0.2%, pass 1)
@@ -123,19 +125,20 @@ The Fire raid build the open talent search found on 2026-11-03: every legal 51-p
   29. rotation replaced by the official simulator's deepFire.apl.json at 54ceac638 (rotation-lag audit after the re-pin) (+2.8%, pass 11)
   30. insert at the top: cast Major Mana Potion (+0.3%, pass 13)
   31. threshold 4 -> 2: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability < 4 or not spellIsCasting): cast Scorch (+0.2%, pass 14)
+  32. drop: if mana < current cost: groupReference (+0.4%, pass 15)
 
 | # | Priority (the first line whose condition holds is cast) | [`fire-open-raid`](fire-open-raid.md) casts/min |
 |---|---|---|
-| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 6.9 |
+| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 6.6 |
 | 2 | if mana % ≤ 60% and mana % ≥ 25%: cast Mana Ruby | as ready |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 5 | if stacks of Heating Up = 3: cast Pyroblast | 5.0 |
-| 6 | cast Fire Blast | 5.7 |
+| 5 | if stacks of Heating Up = 3: cast Pyroblast | 5.3 |
+| 6 | cast Fire Blast | 5.8 |
 | 7 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 0.7 |
-| 8 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 5.4 |
+| 8 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 5.6 |
 | 9 | cast Robe of the Archmage | as ready |
-| 10 | cast Scorch | 6.9 |
+| 10 | cast Scorch | 6.6 |
 
 Lines of the simulator's rotation these builds never cast: cast Fireball (rank 10), cast spell 1326055 (its condition never held in these fights).
 
@@ -143,23 +146,23 @@ Damage by ability:
 
 | Ability | [`fire-open-raid`](fire-open-raid.md) |
 |---|---|
-| Pyroblast | 32% |
+| Pyroblast | 33% |
 | Fireball | 24% |
 | Fire Blast | 17% |
-| Scorch | 13% |
-| Ignite | 9% |
+| Scorch | 12% |
+| Ignite | 10% |
 | Arcane Missiles | 4% |
-| Demonic Rune | 2% |
+| Demonic Rune | 1% |
 
 ## Notes
 
-- +3.8% over the best hand draft of the spec, fire-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.
-- Open search result (fire-raid, full raid): 17/31/3 (Fire) at 827.1 DPS; fire-open-raid 811.7, fire-raid 796.8, opt-fire-raid-raid-dps 794.5 in the same fights; 2,396 builds simulated, 1 independent runs reached the top.
+- +4.5% over the best hand draft of the spec, fire-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.
+- Open search result (fire-raid, full raid): 17/31/3 (Fire) at 868.0 DPS; fire-open-raid 860.4, fire-raid 830.6, opt-fire-raid-raid-dps 826.4 in the same fights; 2,413 builds simulated, 1 independent runs reached the top.
 - The fire-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.
 - Sibling rotations tried on it (10,000 fights): frost-raid -47.3%, arcane-dps -24.8%, frostfire-raid -9.7%; none adopted.
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Wand Specialization, Improved Channeling.
-- Simulator numbers are the community's model of the beta (wowsims/forever 5ad0894 (client 70707) with this project's patches), not in-game measurements.
-- 2026-11-03 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Channeling -> Arcane Resilience (survival); Improved Channeling -> Arcane Resilience (survival); Improved Channeling -> Arcane Resilience (survival). Net +0.00% on a third seed.
+- Simulator numbers are the community's model of the beta (wowsims/forever 16e8542 (client 70790) with this project's patches), not in-game measurements.
+- 2026-11-10 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Channeling -> Arcane Resilience (survival); Improved Channeling -> Arcane Resilience (survival); Improved Channeling -> Arcane Resilience (survival). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 
@@ -168,7 +171,7 @@ Damage by ability:
 ## Sources
 
 - <https://github.com/ElliotWood/Forever>
-- <https://talentsforever.com/mage/60/2302052001002-54500001230133031-003-7>
+- <https://talentsforever.com/mage/60/2302052001002-55500001230123031-003-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

@@ -3,12 +3,12 @@
  "spec": "feral-cat-dps",
  "game": "forever",
  "sim": {
-  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever",
-  "commit": "bac92dbd5",
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
+  "commit": "16e85426c",
   "racials": "off",
   "pet_normalize": false,
   "simulator": "wowsims/forever",
-  "client": null,
+  "client": "1.60.1.70790",
   "spec_folder": "druid/feralcat",
   "gear": "_reference/data/raidsim/gear_sets/forever/druid-feralcat-launch.p1opt.gear.json",
   "apl": "_reference/data/raidsim/apls/druid/feral-cat-dps.apl.json",
@@ -34,7 +34,7 @@
   "seed": 1,
   "duration": 180.0
  },
- "date": "2026-11-03",
+ "date": "2026-11-10",
  "results": [
   {
    "label": "feral-cat-dps",
@@ -43,39 +43,39 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "9830": 42.915333333333336,
-    "9896": 12.966,
-    "9907": 28.855
+    "9907": 28.837,
+    "9830": 42.89333333333333,
+    "9896": 12.961
    },
    "casts": {
-    "Shred": 42.915333333333336,
-    "item 249470": 1.0,
+    "Faerie Fire": 28.837,
+    "Goblin Sapper Charge": 1.0,
     "Auto Attack": 180.004,
-    "Rip": 12.966,
-    "Faerie Fire": 28.855,
-    "Goblin Sapper Charge": 1.0
+    "Shred": 42.89333333333333,
+    "Rip": 12.961
    },
-   "dps": 328.24975118276467,
-   "dps_stdev": 14.967890005838594,
-   "threat": 233.0573233397633,
-   "dtps": 3.2216579482910674,
+   "dps": 403.24098364411964,
+   "dps_stdev": 19.818090494544734,
+   "threat": 286.30109838732454,
+   "dtps": 3.242167013865191,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
    "scorer": 0.8100583551367149,
    "shares": {
-    "Rip": 0.3790930197969433,
-    "Auto Attack": 0.3390316236055066,
-    "Shred": 0.2611248445929443,
-    "Goblin Sapper Charge": 0.020750512004605762
+    "Rip": 0.4019266872698252,
+    "Shred": 0.28920249522572417,
+    "Auto Attack": 0.2865060404604502,
+    "Goblin Sapper Charge": 0.017009532939654317,
+    "spell 18211": 0.0053552441043461
    },
    "source_shares": {
-    "rip": 0.3871,
-    "white": 0.3462,
-    "shred": 0.2667
+    "rip": 0.4111,
+    "shred": 0.2958,
+    "white": 0.2931
    },
-   "unmatched_share": 0.0208
+   "unmatched_share": 0.0224
   },
   {
    "label": "opt-feral-cat-dps-raid-dps",
@@ -84,39 +84,39 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "9830": 42.915333333333336,
-    "9896": 12.966,
-    "9907": 28.855
+    "9907": 28.837,
+    "9896": 12.961,
+    "9830": 42.89333333333333
    },
    "casts": {
-    "item 249470": 1.0,
+    "Faerie Fire": 28.837,
+    "Rip": 12.961,
+    "Shred": 42.89333333333333,
     "Goblin Sapper Charge": 1.0,
-    "Shred": 42.915333333333336,
-    "Rip": 12.966,
-    "Faerie Fire": 28.855,
     "Auto Attack": 180.004
    },
-   "dps": 334.62966771236034,
-   "dps_stdev": 15.482439203587687,
-   "threat": 237.58706407577537,
-   "dtps": 3.2216579482910674,
+   "dps": 415.6734132343497,
+   "dps_stdev": 20.868915705350595,
+   "threat": 295.1281233963885,
+   "dtps": 3.242167013865191,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
    "scorer": 0.8722024425376392,
    "shares": {
-    "Rip": 0.38379815199029677,
-    "Auto Attack": 0.3326294185667469,
-    "Shred": 0.26321376593643436,
-    "Goblin Sapper Charge": 0.020358663506521962
+    "Rip": 0.4082367812500989,
+    "Shred": 0.29205896098244016,
+    "Auto Attack": 0.2780032147286173,
+    "Goblin Sapper Charge": 0.016504729989834075,
+    "spell 18211": 0.005196313049009533
    },
    "source_shares": {
-    "rip": 0.3918,
-    "white": 0.3395,
-    "shred": 0.2687
+    "rip": 0.4173,
+    "shred": 0.2985,
+    "white": 0.2842
    },
-   "unmatched_share": 0.0204
+   "unmatched_share": 0.0217
   },
   {
    "label": "feral-combat-shifting-power-raid",
@@ -127,40 +127,40 @@
    "preset": "Feral Cat 9/35/7",
    "spell_casts": {
     "1322605": 11.0,
-    "9907": 26.250333333333334,
-    "9830": 53.31433333333333,
-    "9896": 14.334
+    "9830": 53.202666666666666,
+    "9907": 26.11766666666667,
+    "9896": 14.332666666666666
    },
    "casts": {
-    "Auto Attack": 180.004,
     "Shifting Power": 11.0,
-    "Faerie Fire": 26.250333333333334,
-    "Shred": 53.31433333333333,
-    "Rip": 14.334,
-    "Goblin Sapper Charge": 1.0,
-    "item 249470": 1.0
+    "Shred": 53.202666666666666,
+    "Auto Attack": 180.004,
+    "Faerie Fire": 26.11766666666667,
+    "Rip": 14.332666666666666,
+    "Goblin Sapper Charge": 1.0
    },
-   "dps": 368.7819107684779,
-   "dps_stdev": 14.663469160130036,
-   "threat": 261.8351566456189,
-   "dtps": 3.1977515509007257,
+   "dps": 463.111292600309,
+   "dps_stdev": 19.51626974759857,
+   "threat": 328.8090177462196,
+   "dtps": 3.1646602757051245,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 61.44396733489098,
+   "oom_seconds": 61.66562600205064,
    "error": null,
    "scorer": 0.8292097971178165,
    "shares": {
-    "Rip": 0.38952570428561145,
-    "Auto Attack": 0.2968738009335703,
-    "Shred": 0.29534645919843805,
-    "Goblin Sapper Charge": 0.018254035582380188
+    "Rip": 0.4098717472402251,
+    "Shred": 0.3253912953831646,
+    "Auto Attack": 0.24540544939380168,
+    "Goblin Sapper Charge": 0.014562739786478032,
+    "spell 18211": 0.0047687681963306345
    },
    "source_shares": {
-    "rip": 0.3968,
-    "white": 0.3024,
-    "shred": 0.3008
+    "rip": 0.418,
+    "shred": 0.3318,
+    "white": 0.2502
    },
-   "unmatched_share": 0.0183
+   "unmatched_share": 0.0193
   },
   {
    "label": "feral-combat-open-raid",
@@ -169,41 +169,41 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "9896": 14.235,
     "1322605": 11.0,
-    "9907": 26.254,
-    "9830": 53.358
+    "9830": 53.269,
+    "9907": 26.113666666666667,
+    "9896": 14.232666666666667
    },
    "casts": {
-    "Rip": 14.235,
-    "Shifting Power": 11.0,
     "Goblin Sapper Charge": 1.0,
-    "Faerie Fire": 26.254,
-    "item 249470": 1.0,
-    "Shred": 53.358,
-    "Auto Attack": 180.004
+    "Auto Attack": 180.004,
+    "Shifting Power": 11.0,
+    "Shred": 53.269,
+    "Faerie Fire": 26.113666666666667,
+    "Rip": 14.232666666666667
    },
-   "dps": 364.63394682782337,
-   "dps_stdev": 14.722176602513178,
-   "threat": 258.89010224775484,
-   "dtps": 3.214644414048021,
+   "dps": 457.97988106117714,
+   "dps_stdev": 19.614319339716502,
+   "threat": 325.16571555343563,
+   "dtps": 3.186773243261581,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 61.48618800153398,
+   "oom_seconds": 61.70651233532083,
    "error": null,
    "scorer": 0.7922937439690392,
    "shares": {
-    "Rip": 0.38690762874748674,
-    "Auto Attack": 0.29794437544684077,
-    "Shred": 0.2965977014019845,
-    "Goblin Sapper Charge": 0.01855029440368803
+    "Rip": 0.40713003617098514,
+    "Shred": 0.3269441197648635,
+    "Auto Attack": 0.24631195460465966,
+    "Goblin Sapper Charge": 0.014785166441411483,
+    "spell 18211": 0.0048287230180802925
    },
    "source_shares": {
-    "rip": 0.3942,
-    "white": 0.3036,
-    "shred": 0.3022
+    "rip": 0.4153,
+    "shred": 0.3335,
+    "white": 0.2512
    },
-   "unmatched_share": 0.0186
+   "unmatched_share": 0.0196
   },
   {
    "label": "sim preset: Cat",
@@ -211,41 +211,41 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "9896": 14.334,
-    "9830": 53.31433333333333,
+    "9907": 26.11766666666667,
+    "9896": 14.332666666666666,
     "1322605": 11.0,
-    "9907": 26.250333333333334
+    "9830": 53.202666666666666
    },
    "casts": {
-    "Rip": 14.334,
-    "Auto Attack": 180.004,
     "Goblin Sapper Charge": 1.0,
-    "Shred": 53.31433333333333,
-    "item 249470": 1.0,
+    "Faerie Fire": 26.11766666666667,
+    "Rip": 14.332666666666666,
     "Shifting Power": 11.0,
-    "Faerie Fire": 26.250333333333334
+    "Shred": 53.202666666666666,
+    "Auto Attack": 180.004
    },
-   "dps": 371.57272484047337,
-   "dps_stdev": 14.699910988337738,
-   "threat": 263.8166346367368,
-   "dtps": 3.2569691722137097,
+   "dps": 463.81601667703745,
+   "dps_stdev": 19.391308587284612,
+   "threat": 329.3093718406965,
+   "dtps": 3.2232650956255844,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 61.44396733489098,
+   "oom_seconds": 61.66562600205064,
    "error": null,
    "scorer": null,
    "shares": {
-    "Rip": 0.3876298333929019,
-    "Auto Attack": 0.30007237110161306,
-    "Shred": 0.29384708775642454,
-    "Goblin Sapper Charge": 0.018450707749060383
+    "Rip": 0.4074743546475678,
+    "Shred": 0.32332685045558845,
+    "Auto Attack": 0.24954147653797296,
+    "Goblin Sapper Charge": 0.014808178048746335,
+    "spell 18211": 0.004849140310124399
    },
    "source_shares": {
-    "rip": 0.3949,
-    "white": 0.3057,
-    "shred": 0.2994
+    "rip": 0.4156,
+    "shred": 0.3298,
+    "white": 0.2545
    },
-   "unmatched_share": 0.0185
+   "unmatched_share": 0.0197
   },
   {
    "label": "sim preset: Hybrid",
@@ -253,41 +253,41 @@
    "split": "",
    "ours": false,
    "spell_casts": {
+    "9830": 54.20766666666667,
+    "9896": 12.818,
     "1322605": 11.0,
-    "9907": 26.254333333333335,
-    "9830": 54.343333333333334,
-    "9896": 12.838666666666667
+    "9907": 26.123
    },
    "casts": {
-    "Shifting Power": 11.0,
-    "Faerie Fire": 26.254333333333335,
-    "Shred": 54.343333333333334,
-    "item 249470": 1.0,
     "Auto Attack": 180.004,
-    "Rip": 12.838666666666667,
-    "Goblin Sapper Charge": 1.0
+    "Shred": 54.20766666666667,
+    "Rip": 12.818,
+    "Shifting Power": 11.0,
+    "Goblin Sapper Charge": 1.0,
+    "Faerie Fire": 26.123
    },
-   "dps": 338.5574564049118,
-   "dps_stdev": 12.241808898270191,
-   "threat": 240.37579404748777,
-   "dtps": 3.240837391650364,
+   "dps": 412.76016037404855,
+   "dps_stdev": 15.18419233750561,
+   "threat": 293.0597138655738,
+   "dtps": 3.226038023406192,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 61.634514001083794,
+   "oom_seconds": 62.00734600186795,
    "error": null,
    "scorer": null,
    "shares": {
-    "Rip": 0.33843105974248433,
-    "Auto Attack": 0.32899845162493563,
-    "Shred": 0.31235116557175896,
-    "Goblin Sapper Charge": 0.020219323060821078
+    "Rip": 0.355499789204481,
+    "Shred": 0.34261814104888316,
+    "Auto Attack": 0.27984153557013985,
+    "Goblin Sapper Charge": 0.016698964512330976,
+    "spell 18211": 0.005341569664165075
    },
    "source_shares": {
-    "rip": 0.3454,
-    "white": 0.3358,
-    "shred": 0.3188
+    "rip": 0.3635,
+    "shred": 0.3503,
+    "white": 0.2861
    },
-   "unmatched_share": 0.0202
+   "unmatched_share": 0.022
   }
  ],
  "deltas": {}

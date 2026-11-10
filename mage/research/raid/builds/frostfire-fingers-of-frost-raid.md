@@ -60,14 +60,14 @@ A Frostfire Bolt build the user brought on 2026-10-06 (talentsforever.com link):
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever 5ad0894 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 7/31/13 | 447 | +0.0% | 694 | -9.4% | 33 s |
-| 2 | **[`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md)** | ours: hand draft | 0/29/22 | 437 | -2.2% | 751 | -2.0% | 40 s |
-| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 0/29/22 | 434 | -2.9% | 759 | -0.9% | 41 s |
-| 4 | *FFB* | community simulator | - | 423 | -5.4% | 766 | +0.0% | 47 s |
+| 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 7/31/13 | 470 | +0.0% | 716 | -9.6% | 29 s |
+| 2 | **[`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md)** | ours: hand draft | 0/29/22 | 459 | -2.5% | 776 | -2.2% | 36 s |
+| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 0/29/22 | 455 | -3.4% | 785 | -1.0% | 38 s |
+| 4 | *FFB* | community simulator | - | 442 | -6.0% | 793 | +0.0% | 44 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -137,11 +137,11 @@ A Frostfire Bolt build the user brought on 2026-10-06 (talentsforever.com link):
 | 4 | if mana % ≤ 80%: cast Mana Ruby | as ready |
 | 5 | use every other cooldown when ready | as ready |
 | 6 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 7 | if stacks of Heating Up = 2: cast Pyroblast | 4.7 |
-| 8 | if stacks of Heating Up = 3: cast Pyroblast | 4.7 |
+| 7 | if stacks of Heating Up = 2: cast Pyroblast | 4.9 |
+| 8 | if stacks of Heating Up = 3: cast Pyroblast | 4.9 |
 | 9 | cast Mana Citrine | as ready |
-| 10 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 2.8 |
-| 11 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 1.0 |
+| 10 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 2.7 |
+| 11 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 1.1 |
 | 12 | cast Robe of the Archmage | as ready |
 | 13 | cast Scorch | 8.0 |
 
@@ -151,10 +151,10 @@ Damage by ability:
 
 | Ability | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) |
 |---|---|
-| Pyroblast | 37% |
-| Scorch | 18% |
+| Pyroblast | 38% |
+| Scorch | 17% |
 | Fire Blast | 16% |
-| Frostfire Bolt | 13% |
+| Frostfire Bolt | 12% |
 | Ignite | 10% |
 | Fireball | 6% |
 

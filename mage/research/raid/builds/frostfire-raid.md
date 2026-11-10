@@ -67,14 +67,14 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever 5ad0894 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 7/31/13 | 447 | +0.0% | 694 | -9.4% | 33 s |
-| 2 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 437 | -2.2% | 751 | -2.0% | 40 s |
-| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 0/29/22 | 434 | -2.9% | 759 | -0.9% | 41 s |
-| 4 | *FFB* | community simulator | - | 423 | -5.4% | 766 | +0.0% | 47 s |
+| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 7/31/13 | 470 | +0.0% | 716 | -9.6% | 29 s |
+| 2 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 459 | -2.5% | 776 | -2.2% | 36 s |
+| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 0/29/22 | 455 | -3.4% | 785 | -1.0% | 38 s |
+| 4 | *FFB* | community simulator | - | 442 | -6.0% | 793 | +0.0% | 44 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -139,18 +139,18 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-raid`](frostfire-raid.md) casts/min |
 |---|---|---|
 | 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 7.2 |
-| 2 | cast Fire Blast | 5.1 |
+| 2 | cast Fire Blast | 5.2 |
 | 3 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 7.2 |
 | 4 | if mana % ≤ 80%: cast Mana Ruby | as ready |
 | 5 | use every other cooldown when ready | as ready |
 | 6 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 7 | if stacks of Heating Up = 2: cast Pyroblast | 5.1 |
-| 8 | if stacks of Heating Up = 3: cast Pyroblast | 5.1 |
+| 7 | if stacks of Heating Up = 2: cast Pyroblast | 5.4 |
+| 8 | if stacks of Heating Up = 3: cast Pyroblast | 5.4 |
 | 9 | cast Combustion | 0.3 |
 | 10 | cast Mana Citrine | as ready |
-| 11 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 2.4 |
+| 11 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 2.2 |
 | 12 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 0.1 |
-| 13 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 1.1 |
+| 13 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 1.2 |
 | 14 | cast Robe of the Archmage | as ready |
 | 15 | cast Scorch | 7.2 |
 
@@ -160,11 +160,11 @@ Damage by ability:
 
 | Ability | [`frostfire-raid`](frostfire-raid.md) |
 |---|---|
-| Pyroblast | 39% |
+| Pyroblast | 40% |
 | Fire Blast | 18% |
 | Scorch | 16% |
-| Frostfire Bolt | 10% |
 | Ignite | 10% |
+| Frostfire Bolt | 9% |
 | Fireball | 6% |
 | Arcane Missiles | 1% |
 | Demonic Rune | 0% |

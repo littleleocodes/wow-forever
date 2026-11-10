@@ -50,16 +50,16 @@ The community simulator's own Feral Cat preset (9/35/7), raced against our Feral
 
 ## Rank among our builds and the community simulator's
 
-**2 of 6** for `feral-cat-dps` by training-dummy DPS in the community simulator (wowsims/forever bac92db (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 6** for `feral-cat-dps` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Cat* | community simulator | - | 372 | +0.0% | 750 | -1.1% | 61 s |
-| 2 | **[`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md)** | ours: derived (simulator preset) | 9/33/9 | 369 | -0.8% | 745 | -1.8% | 61 s |
-| 3 | [`feral-combat-open-raid`](feral-combat-open-raid.md) | ours: derived (open search) | 9/32/10 | 365 | -1.9% | 758 | +0.0% | 61 s |
-| 4 | *Hybrid* | community simulator | - | 339 | -8.9% | 711 | -6.3% | 62 s |
-| 5 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/30/12 | 335 | -9.9% | 630 | -16.9% | 0 s |
-| 6 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 328 | -11.7% | 619 | -18.3% | 0 s |
+| 1 | *Cat* | community simulator | - | 464 | +0.0% | 912 | -1.7% | 62 s |
+| 2 | **[`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md)** | ours: derived (simulator preset) | 9/33/9 | 463 | -0.2% | 911 | -1.8% | 62 s |
+| 3 | [`feral-combat-open-raid`](feral-combat-open-raid.md) | ours: derived (open search) | 9/32/10 | 458 | -1.3% | 927 | +0.0% | 62 s |
+| 4 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/30/12 | 416 | -10.4% | 760 | -18.0% | 0 s |
+| 5 | *Hybrid* | community simulator | - | 413 | -11.0% | 846 | -8.7% | 62 s |
+| 6 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 403 | -13.1% | 740 | -20.2% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -90,12 +90,12 @@ Before the pull: at -1.0s: cast Faerie Fire; at -3.5s: cast Tiger's Fury.
 
 | # | Priority (the first line whose condition holds is cast) | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) casts/min |
 |---|---|---|
-| 1 | if Faerie Fire should be refreshed: cast Faerie Fire | 8.8 |
+| 1 | if Faerie Fire should be refreshed: cast Faerie Fire | 8.7 |
 | 2 | if Cat Form is up: use every other cooldown when ready | as ready |
 | 3 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.8 |
-| 4 | cast Shred | 17.8 |
+| 4 | cast Shred | 17.7 |
 | 5 | if Shifting Power is known and energy ≤ 60: cast Shifting Power | 3.7 |
-| 6 | if time left in the fight ≥ 6s: cast Faerie Fire | 8.8 |
+| 6 | if time left in the fight ≥ 6s: cast Faerie Fire | 8.7 |
 | 7 | cast Goblin Sapper Charge | as ready |
 | 8 | if not Cat Form is up and (mana + 1500.0) ≤ (mana ÷ mana %): cast Demonic Rune | as ready |
 | 9 | if not Cat Form is up and (mana + 2250.0) ≤ (mana ÷ mana %): cast Potion | as ready |
@@ -106,10 +106,11 @@ Damage by ability:
 
 | Ability | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) |
 |---|---|
-| Rip | 39% |
-| Auto Attack | 30% |
-| Shred | 30% |
-| Goblin Sapper Charge | 2% |
+| Rip | 41% |
+| Shred | 33% |
+| Auto Attack | 25% |
+| Goblin Sapper Charge | 1% |
+| spell 18211 | 0% |
 
 ## Notes
 

@@ -194,8 +194,8 @@
  "raid": {
   "class": "mage",
   "spec": "arcane-dps",
-  "date": "2026-11-03",
-  "commit": "5ad0894c9",
+  "date": "2026-11-10",
+  "commit": "16e85426c",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/mage/dps/apls/arcane.apl.json",
@@ -458,31 +458,31 @@
   "final": {
    "raid": {
     "arcane-open-raid": {
-     "before": 733.6670842086451,
-     "after": 754.5110038137095,
-     "base": 733.6670842086451,
+     "before": 765.6953397025187,
+     "after": 789.5396599555877,
+     "base": 765.6953397025187,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.31982750000075005,
-     "oom_after": 0.15098000000024983
+     "oom_before": 0.028022499999999992,
+     "oom_after": 0.028022499999999992
     },
     "sim preset: Arcane Fire": {
-     "before": 722.1483038515742,
-     "after": 741.5252181823274,
-     "base": 722.1483038515742,
+     "before": 753.8127172282993,
+     "after": 777.167573567249,
+     "base": 753.8127172282993,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.06395000000024993,
-     "oom_after": 0.029747500000249994
+     "oom_before": 0.0051324999999,
+     "oom_after": 0.0051324999999
     },
     "arcane-blast-raid": {
-     "before": 612.6294132601387,
-     "after": 681.7282458081323,
-     "base": 612.6294132601387,
+     "before": 655.2443024072279,
+     "after": 710.3467564784736,
+     "base": 655.2443024072279,
      "before_value": null,
      "after_value": null,
-     "oom_before": 4.2322225000026945,
-     "oom_after": 3.1056325000108864
+     "oom_before": 1.467944999999402,
+     "oom_after": 1.467944999999402
     }
    }
   },
@@ -494,13 +494,13 @@
     "Arcane Blast"
    ],
    "rejected": {
-    "structure": 117,
+    "structure": 39,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 13
+  "passes": 14
  }
 }

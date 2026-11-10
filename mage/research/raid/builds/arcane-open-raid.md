@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Arcane raid build the open talent search found on 2026-11-03: every legal 51-point build with no tree rule, searched in the community simulator's arcane-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +2.9% over arcane-open-raid, the best of our builds in that rotation.
+The Arcane raid build the open talent search found on 2026-11-10: every legal 51-point build with no tree rule, searched in the community simulator's arcane-dps rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +2.9% over arcane-open-raid, the best of our builds in that rotation.
 
 ## Point allocation
 
@@ -63,13 +63,13 @@ The Arcane raid build the open talent search found on 2026-11-03: every legal 51
 
 ## Rank among our builds and the community simulator's
 
-**2 of 3** for `arcane-dps` by training-dummy DPS in the community simulator (wowsims/forever 5ad0894 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 3** for `arcane-dps` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Arcane Fire* | community simulator | - | 554 | +0.0% | 742 | -1.8% | 6 s |
-| 2 | **[`arcane-open-raid`](arcane-open-raid.md)** | ours: derived (open search) | 31/17/3 | 552 | -0.3% | 756 | +0.0% | 10 s |
-| 3 | [`arcane-blast-raid`](arcane-blast-raid.md) | ours: hand draft | 31/13/7 | 536 | -3.2% | 683 | -9.7% | 8 s |
+| 1 | *Arcane Fire* | community simulator | - | 580 | +0.0% | 778 | -1.4% | 3 s |
+| 2 | **[`arcane-open-raid`](arcane-open-raid.md)** | ours: derived (open search) | 31/17/3 | 579 | -0.1% | 790 | +0.0% | 5 s |
+| 3 | [`arcane-blast-raid`](arcane-blast-raid.md) | ours: hand draft | 31/13/7 | 558 | -3.8% | 711 | -10.0% | 4 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -88,7 +88,7 @@ The Arcane raid build the open talent search found on 2026-11-03: every legal 51
   12. move down below 'if Missile Barrage is up: cast Arcane Missiles (rank 7)': cast Fire Blast (+0.2%, pass 6)
   13. only with 10s or more of the fight left: if stacks of Arcane Blast ≥ 1.5: cast Frostbolt (rank 10) (+0.2%, pass 6)
   14. insert before the filler: cast Mana Citrine (+0.3%, pass 6)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 13 passes, the last 2026-11-03, 29 changes to the base rotation; third-seed check: arcane-open-raid 734 -> 755 DPS (+2.8%), sim preset: Arcane Fire 722 -> 742 DPS (+2.7%), arcane-blast-raid 613 -> 682 DPS (+11.3%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 14 passes, the last 2026-11-10, 29 changes to the base rotation; third-seed check: arcane-open-raid 766 -> 790 DPS (+3.1%), sim preset: Arcane Fire 754 -> 777 DPS (+3.1%), arcane-blast-raid 655 -> 710 DPS (+8.4%)):
   1. threshold 3 -> 1.5: if (stacks of Arcane Blast ≥ 3 or mana % < 40%): cast Frostbolt (+0.2%, pass 1)
   2. insert in the middle: if mana ≥ (time left in the fight × 110): cast Fire Blast (+2.3%, pass 2)
   3. drop the condition: if mana ≥ (time left in the fight × 110): cast Fire Blast (+2.4%, pass 2)
@@ -123,11 +123,11 @@ The Arcane raid build the open talent search found on 2026-11-03: every legal 51
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 3.6 |
-| 3 | cast Fire Blast | 7.1 |
-| 4 | if Arcane Blast is up and time left on Arcane Blast < cast time of Arcane Blast: cast Arcane Blast | 6.4 |
-| 5 | cast Arcane Wrath | 5.1 |
-| 6 | if stacks of Arcane Blast ≥ 1.5 and time left in the fight ≥ 10s: cast Frostbolt (rank 10) | 3.6 |
-| 7 | cast Arcane Blast | 6.4 |
+| 3 | cast Fire Blast | 7.2 |
+| 4 | if Arcane Blast is up and time left on Arcane Blast < cast time of Arcane Blast: cast Arcane Blast | 6.5 |
+| 5 | cast Arcane Wrath | 5.2 |
+| 6 | if stacks of Arcane Blast ≥ 1.5 and time left in the fight ≥ 10s: cast Frostbolt (rank 10) | 3.7 |
+| 7 | cast Arcane Blast | 6.5 |
 | 8 | cast Robe of the Archmage | as ready |
 | 9 | cast Mana Citrine | as ready |
 
@@ -137,9 +137,9 @@ Damage by ability:
 
 | Ability | [`arcane-open-raid`](arcane-open-raid.md) |
 |---|---|
-| Arcane Wrath | 28% |
+| Arcane Wrath | 29% |
 | Arcane Missiles | 25% |
-| Fire Blast | 19% |
+| Fire Blast | 18% |
 | Arcane Blast | 14% |
 | Frostbolt | 12% |
 | Ignite | 2% |
@@ -153,8 +153,8 @@ Damage by ability:
 - The arcane-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.
 - Sibling rotations tried on it (10,000 fights): frost-raid -12.3%, fire-raid -29.8%, frostfire-raid -35.0%; none adopted.
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Channeling, Arcane Resilience.
-- Simulator numbers are the community's model of the beta (wowsims/forever 5ad0894 (client 70707) with this project's patches), not in-game measurements.
-- 2026-11-03 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Channeling -> Arcane Resilience (survival); Improved Channeling -> Arcane Resilience (survival). Net +0.00% on a third seed.
+- Simulator numbers are the community's model of the beta (wowsims/forever 16e8542 (client 70790) with this project's patches), not in-game measurements.
+- 2026-11-10 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Channeling -> Arcane Resilience (survival); Improved Channeling -> Arcane Resilience (survival). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 

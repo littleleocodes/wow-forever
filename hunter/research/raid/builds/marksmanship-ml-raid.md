@@ -1,40 +1,40 @@
-# Marksmanship — Raid (machine-learning search) — 11/35/5
+# Marksmanship — Raid (machine-learning search) — 7/39/5
 
 *[Hunter](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 11/35/5 (Beast Mastery / Marksmanship / Survival) |
+| **Build** | 7/39/5 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Marksmanship build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-11-05 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry mm-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).
+The Marksmanship build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-11-10 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry mm-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).
 
 ## Point allocation
 
-### Beast Mastery (11)
+### Beast Mastery (7)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Deadly Aspects** | 5/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec. |
-| **Endurance Training** | 3/5 | changed | Increases the Health and Armor of your pets by 9%. |
 | **Focused Fire** | 2/2 | **NEW** | Increases all damage you and your pet deal by 2% while your pet is active. |
-| **Unleashed Fury** | 1/5 | changed | Increases the damage done by your pets and hawks by 3%. |
 
-### Marksmanship (35)
+### Marksmanship (39)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
 | **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
-| **Efficiency** | 2/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 6%. |
+| **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
-| **Improved Arcane Shot** | 5/5 | changed | Reduces the cooldown of your Arcane Shot by 1.5 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot. |
+| **Rapid Killing** | 2/2 | **NEW** | Reduces the cooldown on your Rapid Fire ability by 2 min. In addition, when you kill a non-trivial enemy or it dies while afflicted by your Serpent Sting, you gain Rapid Killing, increasing the damage of your next Shot ability within 20 sec by 20%. |
+| **Improved Arcane Shot** | 2/5 | changed | Reduces the cooldown of your Arcane Shot by 0.6 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot. |
 | **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 20. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
+| **Rapid Recuperation** | 2/2 | **NEW** | Afflicting a target with Serpent Sting allows 50% of your Mana Regeneration to continue while casting for 15 sec, increased to 100% when Rapid Killing is consumed. |
 | **Barrage** | 3/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 15%. |
 | **Ranged Weapon Specialization** | 5/5 | unchanged | Increases the damage you deal with ranged weapons by 5%. |
 | **Sniper Shot** | 1/1 | **NEW** | A long-range shot that deals ranged damage plus 160 and increases the range of your next 3 Shots by 10 yards for 10 sec. |
@@ -47,21 +47,21 @@ The Marksmanship build the machine-learning talent search found in a full raid (
 
 ## Rank among our builds and the community simulator's
 
-**4 of 11** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever 7c3453f (client 70755)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 11** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 31/16/4 | 530 | +0.0% | 937 | -4.5% | 38 s |
-| 2 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 499 | -5.9% | 916 | -6.7% | 32 s |
-| 3 | *BM Weave* | community simulator | - | 489 | -7.8% | 956 | -2.6% | 46 s |
-| 4 | **[`marksmanship-ml-raid`](marksmanship-ml-raid.md)** | ours: derived (ML search) | 11/35/5 | 478 | -9.9% | 943 | -3.9% | 64 s |
-| 5 | *BM* | community simulator | - | 477 | -10.1% | 982 | +0.0% | 52 s |
-| 6 | *MM* | community simulator | - | 471 | -11.1% | 969 | -1.3% | 50 s |
-| 7 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 461 | -13.0% | 906 | -7.7% | 26 s |
-| 8 | *SV* | community simulator | - | 434 | -18.2% | 838 | -14.7% | 47 s |
-| 9 | *SV Weave* | community simulator | - | 429 | -19.0% | 827 | -15.7% | 47 s |
-| 10 | *MM Weave* | community simulator | - | 415 | -21.8% | 834 | -15.0% | 53 s |
-| 11 | *SV Melee* | community simulator | - | 388 | -26.8% | 814 | -17.0% | 51 s |
+| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 31/16/4 | 527 | +0.0% | 912 | -5.6% | 31 s |
+| 2 | **[`marksmanship-ml-raid`](marksmanship-ml-raid.md)** | ours: derived (ML search) | 7/39/5 | 496 | -5.9% | 967 | +0.0% | 29 s |
+| 3 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 495 | -6.1% | 888 | -8.1% | 23 s |
+| 4 | *BM Weave* | community simulator | - | 484 | -8.2% | 931 | -3.7% | 35 s |
+| 5 | *BM* | community simulator | - | 473 | -10.2% | 955 | -1.2% | 42 s |
+| 6 | *MM* | community simulator | - | 467 | -11.3% | 940 | -2.7% | 41 s |
+| 7 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 455 | -13.6% | 879 | -9.1% | 16 s |
+| 8 | *SV* | community simulator | - | 429 | -18.6% | 807 | -16.5% | 37 s |
+| 9 | *SV Weave* | community simulator | - | 426 | -19.2% | 798 | -17.5% | 36 s |
+| 10 | *MM Weave* | community simulator | - | 412 | -21.9% | 806 | -16.6% | 44 s |
+| 11 | *SV Melee* | community simulator | - | 382 | -27.5% | 790 | -18.3% | 42 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -78,7 +78,7 @@ The Marksmanship build the machine-learning talent search found in a full raid (
   10. threshold 10s -> 15s: if auraIsInactive and time left in the fight ≥ 10s: cast Summon Hawk + only above 10% mana: if time to the next auto attack > 1s: cast Multi-Shot (+0.2%, pass 9)
   11. insert in the middle: cast Intimidation + only above 60% mana: cast Intimidation (+0.3%, pass 9)
   12. threshold 20% -> 15%: if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 20%: cast Aimed Shot (+0.2%, pass 10)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 16 passes, the last 2026-11-04, 16 changes to the base rotation; third-seed check: marksmanship-ml-raid 925 -> 1004 DPS (+8.6%), sim preset: BM 936 -> 981 DPS (+4.8%), bm-mm-raid 890 -> 905 DPS (+1.7%), bm-mm-full-buffs-raid 903 -> 916 DPS (+1.4%), opt-mm-raid-raid-dps 924 -> 937 DPS (+1.4%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 17 passes, the last 2026-11-10, 17 changes to the base rotation; third-seed check: marksmanship-ml-raid 890 -> 963 DPS (+8.3%), sim preset: BM 911 -> 955 DPS (+4.9%), bm-mm-raid 863 -> 878 DPS (+1.7%), bm-mm-full-buffs-raid 876 -> 889 DPS (+1.4%), opt-mm-raid-raid-dps 899 -> 912 DPS (+1.4%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.0%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.3%, pass 1)
   3. only with 6s or more of the fight left: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 1)
@@ -95,17 +95,18 @@ The Marksmanship build the machine-learning talent search found in a full raid (
   14. insert at the end: cast Major Mana Potion (+0.2%, pass 13)
   15. threshold 1s -> 0.75s: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and time left in the fight ≥ 6s: cast Serpent Sting (+0.2%, pass 15)
   16. threshold 3 -> 2.25: if time until Aimed Shot is ready ≥ 3 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.2%, pass 16)
+  17. drop: cast Major Mana Potion (+1.6%, pass 17)
 
 Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Arcane Shot | 8.6 |
+| 1 | cast Arcane Shot | 9.3 |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
-| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 15%: cast Aimed Shot | 2.9 |
-| 5 | if time to the next auto attack > 1s and mana % ≥ 10%: cast Multi-Shot | 0.2 |
-| 6 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 1.9 |
+| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 15%: cast Aimed Shot | 3.8 |
+| 5 | if time to the next auto attack > 1s and mana % ≥ 10%: cast Multi-Shot | 0.9 |
+| 6 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.6 |
 
 Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Intimidation (needs the Intimidation talent).
 
@@ -113,23 +114,22 @@ Damage by ability:
 
 | Ability | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) |
 |---|---|
-| Auto Shot | 38% |
-| Pet: Auto Attack | 21% |
-| Arcane Shot | 20% |
-| Serpent Sting | 11% |
-| Aimed Shot | 7% |
+| Auto Shot | 35% |
+| Arcane Shot | 21% |
+| Pet: Auto Attack | 19% |
+| Serpent Sting | 13% |
+| Aimed Shot | 9% |
 | Pet: Bite | 1% |
+| Multi-Shot | 1% |
 | Pet: Claw | 1% |
-| spell 1295633 | 1% |
-| Multi-Shot | 0% |
 
 ## Notes
 
-- Against the best hand draft mm-lone-wolf-raid in a full raid, same gear and fights (100,000, one seed): +1.5% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).
-- Search result (full raid): 11/35/5 at 1163.4 ± 0.12 DPS over 100,000 fights; runner-up 7/39/5 (+0.18%; the winner takes Endurance Training 3, Unleashed Fury 1; the runner-up Rapid Killing 2, Rapid Recuperation 2); 5,121 builds simulated; certificate: 1 confirmed move first, then none of its 407 one-move and chain-move neighbours was 0.1% ahead.
-- Simulator numbers are the community's model of the beta (wowsims/forever 7c3453f (client 70755) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.
-- Pre-BiS gear: 13/33/5 at 1181.5 DPS in a full raid (other talents: _reference/dps-rankings.md).
-- Alone on the training dummy (only your own buffs) the search's best is 7/39/5 at 608.3 DPS.
+- Against the best hand draft mm-lone-wolf-raid in a full raid, same gear and fights (100,000, one seed): +5.1% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).
+- Search result (full raid): 7/39/5 at 993.8 ± 0.10 DPS over 100,000 fights; runner-up 7/39/5 (+0.06%; the winner takes Barrage 3, Improved Arcane Shot 2; the runner-up Barrage 2, Improved Arcane Shot 3); 4,753 builds simulated; certificate: none of its 386 one-move and chain-move neighbours was 0.1% ahead.
+- Simulator numbers are the community's model of the beta (wowsims/forever 16e8542 (client 70790) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.
+- Pre-BiS gear: 7/39/5 at 950.7 DPS in a full raid (other talents: _reference/dps-rankings.md).
+- Alone on the training dummy (only your own buffs) the search's best is 21/30/0 at 486.7 DPS.
 
 ## Open questions (verify in the live game)
 

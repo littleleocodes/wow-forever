@@ -161,8 +161,8 @@
  "raid": {
   "class": "hunter",
   "spec": "mm-lonewolf-raid",
-  "date": "2026-11-04",
-  "commit": "7c3453f5a",
+  "date": "2026-11-10",
+  "commit": "16e85426c",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/hunter/dps/apls/mm.apl.json",
@@ -183,7 +183,7 @@
    },
    {
     "label": "marksmanship-ml-raid",
-    "talents": "502-0053552501520051-5",
+    "talents": "53200001-0053250501503051-5",
     "protect_only": true
    }
   ],
@@ -310,40 +310,40 @@
   "final": {
    "raid": {
     "mm-lone-wolf-raid": {
-     "before": 896.9416606713323,
-     "after": 983.887971739882,
-     "base": 896.9416606713323,
+     "before": 870.2698933772263,
+     "after": 964.5404026052095,
+     "base": 870.2698933772263,
      "before_value": null,
      "after_value": null,
-     "oom_before": 8.037069845184156,
-     "oom_after": 8.037069845184156
+     "oom_before": 0.9686592313453061,
+     "oom_after": 0.9686592313453061
     },
     "sim preset: MM": {
-     "before": 894.3569458749056,
-     "after": 991.1145592955901,
-     "base": 894.3569458749056,
+     "before": 866.3762685894286,
+     "after": 958.4555441683539,
+     "base": 866.3762685894286,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.32851145983009866,
-     "oom_after": 0.32851145983009866
+     "oom_before": 0.00131573339855,
+     "oom_after": 0.00131573339855
     },
     "opt-mm-lonewolf-raid-raid-dps": {
-     "before": 885.4844451343027,
-     "after": 927.2725831702408,
-     "base": 885.4844451343027,
+     "before": 857.6196357723381,
+     "after": 896.1662508002506,
+     "base": 857.6196357723381,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "marksmanship-ml-raid": {
-     "before": 734.9652287509108,
-     "after": 813.8076607089166,
-     "base": 734.9652287509108,
+     "before": 698.873726951762,
+     "after": 752.0790388960697,
+     "base": 698.873726951762,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0096081175391,
-     "oom_after": 0.0096081175391
+     "oom_before": 33.16631207917914,
+     "oom_after": 33.16631207917914
     }
    }
   },
@@ -362,6 +362,6 @@
    "on": true
   },
   "first_date": "2026-09-27",
-  "passes": 17
+  "passes": 18
  }
 }

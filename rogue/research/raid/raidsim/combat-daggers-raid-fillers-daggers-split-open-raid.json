@@ -1,0 +1,255 @@
+{
+ "class": "rogue",
+ "spec": "combat-daggers-raid",
+ "build": "daggers-split-open-raid",
+ "setting": "raid",
+ "date": "2026-11-10",
+ "tank": false,
+ "removal": {
+  "Aggression": 0.025005230653982635,
+  "Blood Splatter": 0.0037717572245968833,
+  "Cold Blood": 0.006025600137942511,
+  "Composure": 0.0022849363844303916,
+  "Coup de Grace": 0.03195112805786582,
+  "Dual Wield Specialization": 0.04839009483761658,
+  "Efficient Strikes": -0.0,
+  "Endurance": -0.0,
+  "Flawless Execution": 0.0512264800679767,
+  "Improved Poisons": 0.011846497499367725,
+  "Improved Slice and Dice": 0.03248210311662325,
+  "Lethality": 0.015859752651269265,
+  "Lightning Reflexes": -0.0,
+  "Malice": 0.043863796053174586,
+  "Precision": 0.022554262839133532,
+  "Puncturing Wounds": 0.12716936409919188,
+  "Relentless Strikes": 0.08510673414818781,
+  "Ruthlessness": 0.04626382548530217,
+  "Seal Fate": 0.06895488013560358,
+  "Venom": 0.056760681520306555,
+  "Vigor": 0.0035084664934991183,
+  "Vile Poisons": 0.010863008573965716,
+  "Weapon Expertise": 0.007425784987499795
+ },
+ "free": [
+  "Efficient Strikes",
+  "Endurance",
+  "Lightning Reflexes"
+ ],
+ "kept_for_rotation": [
+  "Blood Splatter",
+  "Flawless Execution"
+ ],
+ "active_never_worth": [],
+ "abilities_never_cast": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Efficient Strikes",
+   "to": "Lightning Reflexes",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Endurance",
+   "to": "Lightning Reflexes",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  }
+ ],
+ "final_seed3": 0.0,
+ "start": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Vigor",
+    1
+   ],
+   [
+    "Blood Splatter",
+    1
+   ],
+   [
+    "Lethality",
+    2
+   ],
+   [
+    "Vile Poisons",
+    2
+   ],
+   [
+    "Cold Blood",
+    1
+   ],
+   [
+    "Improved Poisons",
+    2
+   ],
+   [
+    "Relentless Strikes",
+    5
+   ],
+   [
+    "Venom",
+    1
+   ],
+   [
+    "Seal Fate",
+    3
+   ]
+  ],
+  "Combat": [
+   [
+    "Coup de Grace",
+    3
+   ],
+   [
+    "Efficient Strikes",
+    1
+   ],
+   [
+    "Lightning Reflexes",
+    2
+   ],
+   [
+    "Puncturing Wounds",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Endurance",
+    1
+   ],
+   [
+    "Composure",
+    2
+   ],
+   [
+    "Flawless Execution",
+    1
+   ],
+   [
+    "Weapon Expertise",
+    1
+   ],
+   [
+    "Aggression",
+    3
+   ],
+   [
+    "Dual Wield Specialization",
+    2
+   ]
+  ],
+  "Subtlety": []
+ },
+ "allocation": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Vigor",
+    1
+   ],
+   [
+    "Blood Splatter",
+    1
+   ],
+   [
+    "Lethality",
+    2
+   ],
+   [
+    "Vile Poisons",
+    2
+   ],
+   [
+    "Cold Blood",
+    1
+   ],
+   [
+    "Improved Poisons",
+    2
+   ],
+   [
+    "Relentless Strikes",
+    5
+   ],
+   [
+    "Venom",
+    1
+   ],
+   [
+    "Seal Fate",
+    3
+   ]
+  ],
+  "Combat": [
+   [
+    "Coup de Grace",
+    3
+   ],
+   [
+    "Lightning Reflexes",
+    4
+   ],
+   [
+    "Puncturing Wounds",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Composure",
+    2
+   ],
+   [
+    "Flawless Execution",
+    1
+   ],
+   [
+    "Weapon Expertise",
+    1
+   ],
+   [
+    "Aggression",
+    3
+   ],
+   [
+    "Dual Wield Specialization",
+    2
+   ]
+  ],
+  "Subtlety": []
+ }
+}

@@ -61,18 +61,19 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 
 ## Rank among our builds and the community simulator's
 
-**7 of 8** for `combat-daggers-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**9 of 9** for `combat-daggers-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | *Subtlety Hemo* | community simulator | - | 480 | +0.0% | 785 | -2.9% | 0 s |
 | 2 | *Asn Muti* | community simulator | - | 443 | -7.8% | 809 | +0.0% | 0 s |
-| 3 | *Combat Venom* | community simulator | - | 395 | -17.8% | 706 | -12.7% | 0 s |
-| 4 | *Combat SS* | community simulator | - | 358 | -25.6% | 676 | -16.4% | 0 s |
-| 5 | *Combat BS* | community simulator | - | 344 | -28.4% | 755 | -6.7% | 0 s |
-| 6 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 21/30/0 | 310 | -35.4% | 674 | -16.6% | 0 s |
-| 7 | **[`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md)** | ours: optimizer | 21/30/0 | 310 | -35.4% | 674 | -16.6% | 0 s |
-| 8 | [`combat-ml-raid`](combat-ml-raid.md) | ours: derived (ML search) | 21/30/0 | 310 | -35.4% | 674 | -16.6% | 0 s |
+| 3 | *Combat Venom* | community simulator | - | 395 | -17.8% | 703 | -13.1% | 0 s |
+| 4 | [`daggers-split-open-raid`](daggers-split-open-raid.md) | ours: derived (open search) | 29/22/0 | 371 | -22.7% | 788 | -2.6% | 0 s |
+| 5 | *Combat SS* | community simulator | - | 358 | -25.6% | 674 | -16.7% | 0 s |
+| 6 | *Combat BS* | community simulator | - | 344 | -28.4% | 756 | -6.6% | 0 s |
+| 7 | [`combat-ml-raid`](combat-ml-raid.md) | ours: derived (ML search) | 13/33/5 | 333 | -30.7% | 764 | -5.5% | 0 s |
+| 8 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 21/30/0 | 310 | -35.4% | 673 | -16.8% | 0 s |
+| 9 | **[`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md)** | ours: optimizer | 21/30/0 | 310 | -35.4% | 673 | -16.8% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

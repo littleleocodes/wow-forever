@@ -193,8 +193,8 @@
  "raid": {
   "class": "mage",
   "spec": "fire-raid",
-  "date": "2026-11-03",
-  "commit": "5ad0894c9",
+  "date": "2026-11-10",
+  "commit": "16e85426c",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/mage/dps/apls/fire.apl.json",
@@ -474,45 +474,53 @@
     "gain_seed2": 0.0018098100139312123,
     "candidates": 381,
     "pass": 14
+   },
+   {
+    "round": 32,
+    "change": "drop: if mana < current cost: groupReference",
+    "gain_seed1": 0.003672133292852875,
+    "gain_seed2": 0.003730165079680381,
+    "candidates": 401,
+    "pass": 15
    }
   ],
   "final": {
    "raid": {
     "fire-open-raid": {
-     "before": 671.5560652151919,
-     "after": 829.961703148458,
-     "base": 671.5560652151919,
+     "before": 687.4634428242653,
+     "after": 860.7646378956797,
+     "base": 687.4634428242653,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
-     "oom_after": 0
+     "oom_after": 0.2773074999941498
     },
     "sim preset: Fire": {
-     "before": 673.1241282928893,
-     "after": 827.3160554263801,
-     "base": 673.1241282928893,
+     "before": 690.5990597884174,
+     "after": 866.0026423343738,
+     "base": 690.5990597884174,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
-     "oom_after": 0
+     "oom_after": 2.498602499943269
     },
     "fire-raid": {
-     "before": 664.6031177247792,
-     "after": 798.7286082552408,
-     "base": 664.6031177247792,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.0009125,
-     "oom_after": 0.0008399999999999998
-    },
-    "opt-fire-raid-raid-dps": {
-     "before": 655.6635879620308,
-     "after": 794.9603702358046,
-     "base": 655.6635879620308,
+     "before": 682.957166816631,
+     "after": 830.4511966781989,
+     "base": 682.957166816631,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
-     "oom_after": 0
+     "oom_after": 7.170644999910453
+    },
+    "opt-fire-raid-raid-dps": {
+     "before": 671.486218140408,
+     "after": 826.9277610052325,
+     "base": 671.486218140408,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0.556589999997999
     }
    }
   },
@@ -532,6 +540,6 @@
    "on": true
   },
   "first_date": "2026-09-27",
-  "passes": 14
+  "passes": 15
  }
 }

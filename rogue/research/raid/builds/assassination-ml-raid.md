@@ -51,15 +51,15 @@ The Assassination build the machine-learning talent search found in a full raid 
 
 ## Rank among our builds and the community simulator's
 
-**2 of 5** for `assassination-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 5** for `assassination-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Asn Muti* | community simulator | - | 443 | +0.0% | 811 | +0.0% | 0 s |
-| 2 | **[`assassination-ml-raid`](assassination-ml-raid.md)** | ours: derived (ML search) | 29/22/0 | 323 | -27.1% | 695 | -14.3% | 0 s |
-| 3 | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) | ours: hand draft | 28/21/2 | 314 | -29.1% | 687 | -15.3% | 0 s |
-| 4 | [`daggers-split-open-raid`](daggers-split-open-raid.md) | ours: derived (open search) | 28/21/2 | 311 | -29.7% | 685 | -15.6% | 0 s |
-| 5 | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) | ours: hand draft | 29/22/0 | 309 | -30.2% | 678 | -16.4% | 0 s |
+| 1 | *Asn Muti* | community simulator | - | 443 | +0.0% | 811 | -0.1% | 0 s |
+| 2 | [`assassination-open-raid`](assassination-open-raid.md) | ours: derived (open search) | 31/19/1 | 442 | -0.2% | 813 | +0.0% | 0 s |
+| 3 | **[`assassination-ml-raid`](assassination-ml-raid.md)** | ours: derived (ML search) | 29/22/0 | 323 | -27.1% | 695 | -14.4% | 0 s |
+| 4 | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) | ours: hand draft | 28/21/2 | 314 | -29.1% | 687 | -15.4% | 0 s |
+| 5 | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) | ours: hand draft | 29/22/0 | 309 | -30.2% | 678 | -16.5% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

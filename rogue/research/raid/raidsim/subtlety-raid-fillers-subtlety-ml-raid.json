@@ -1,0 +1,223 @@
+{
+ "class": "rogue",
+ "spec": "subtlety-raid",
+ "build": "subtlety-ml-raid",
+ "setting": "raid",
+ "date": "2026-11-10",
+ "tank": false,
+ "removal": {
+  "Blood Splatter": 0.06047708132596097,
+  "Boot Knife": 0.08605297723554217,
+  "Camouflage": -0.0,
+  "Coup de Grace": 0.03786215392641856,
+  "Death Mark": 0.09646590551710466,
+  "Dirty Deeds": 0.30083033571853457,
+  "Efficient Strikes": 0.030729830508169464,
+  "Ghostly Strike": 0.07205624000624955,
+  "Hemorrhage": 0.07413341005950447,
+  "Improved Slice and Dice": 0.0348917030064696,
+  "Initiative": 0.01701792289701065,
+  "Malice": 0.041881158277930264,
+  "Master of Deception": -0.0,
+  "Opportunity": 0.018525688199034218,
+  "Precision": 0.019962822753742282,
+  "Premeditation": 0.013774754329510475,
+  "Preparation": 0.01210939758800933,
+  "Ruthlessness": 0.039113918223423805,
+  "Serrated Blades": 0.03020869781552038,
+  "Setup": -0.0
+ },
+ "free": [
+  "Camouflage",
+  "Master of Deception",
+  "Setup"
+ ],
+ "kept_for_rotation": [
+  "Blood Splatter",
+  "Death Mark",
+  "Ghostly Strike",
+  "Hemorrhage"
+ ],
+ "active_never_worth": [],
+ "abilities_never_cast": [
+  "Death Mark"
+ ],
+ "moves": [],
+ "final_seed3": 0.0,
+ "start": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Blood Splatter",
+    1
+   ]
+  ],
+  "Combat": [
+   [
+    "Coup de Grace",
+    3
+   ],
+   [
+    "Efficient Strikes",
+    2
+   ],
+   [
+    "Precision",
+    3
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Setup",
+    3
+   ],
+   [
+    "Master of Deception",
+    2
+   ],
+   [
+    "Opportunity",
+    5
+   ],
+   [
+    "Dirty Deeds",
+    2
+   ],
+   [
+    "Camouflage",
+    3
+   ],
+   [
+    "Initiative",
+    3
+   ],
+   [
+    "Premeditation",
+    1
+   ],
+   [
+    "Serrated Blades",
+    3
+   ],
+   [
+    "Ghostly Strike",
+    1
+   ],
+   [
+    "Preparation",
+    1
+   ],
+   [
+    "Hemorrhage",
+    1
+   ],
+   [
+    "Boot Knife",
+    5
+   ],
+   [
+    "Death Mark",
+    1
+   ]
+  ]
+ },
+ "allocation": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Blood Splatter",
+    1
+   ]
+  ],
+  "Combat": [
+   [
+    "Coup de Grace",
+    3
+   ],
+   [
+    "Efficient Strikes",
+    2
+   ],
+   [
+    "Precision",
+    3
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Setup",
+    3
+   ],
+   [
+    "Master of Deception",
+    2
+   ],
+   [
+    "Opportunity",
+    5
+   ],
+   [
+    "Dirty Deeds",
+    2
+   ],
+   [
+    "Camouflage",
+    3
+   ],
+   [
+    "Initiative",
+    3
+   ],
+   [
+    "Premeditation",
+    1
+   ],
+   [
+    "Serrated Blades",
+    3
+   ],
+   [
+    "Ghostly Strike",
+    1
+   ],
+   [
+    "Preparation",
+    1
+   ],
+   [
+    "Hemorrhage",
+    1
+   ],
+   [
+    "Boot Knife",
+    5
+   ],
+   [
+    "Death Mark",
+    1
+   ]
+  ]
+ }
+}

@@ -8,7 +8,7 @@
 
 **Other setups of this spec.** This build is the Lone Wolf setup. The spec's best build for each other setup, in a full raid:
 
-- With a pet: [Marksmanship — Raid](../research/raid/builds/marksmanship-ml-raid.md) (11/35/5, 943 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200001-0053250501503051-5-12)
+- With a pet: [Marksmanship — Raid](../research/raid/builds/marksmanship-ml-raid.md) (7/39/5, 967 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/502-0053552201523051-5-12)
 
 ## How to play
 
@@ -22,12 +22,15 @@
 
 1. **Aimed Shot**
 2. **Rapid Fire**; no global cooldown, so press it alongside the others
-3. **Multi-Shot**
-4. **Serpent Sting**: keep it on the target
-5. **Arcane Shot**
-6. **Sniper Shot**
+3. **Serpent Sting**: keep it on the target
+4. **Arcane Shot**
+5. **Sniper Shot**
 
 Between these, **Auto Shot** keeps firing on its own.
+
+**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
+
+- **Multi-Shot**: now and then (in about 1 of 10 fights)
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
@@ -72,45 +75,45 @@ Marksmanship plays without a pet: **Lone Wolf** adds 20% to everything you do wh
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 984 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 966 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 7c3453f (client 70755); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 16e8542 (client 70790); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 1182 | [13/33/5](https://talentsforever.com/hunter/60/53200003-0053050501503051-5-12) |
-| Phase 1 BiS | 1163 | [11/35/5](https://talentsforever.com/hunter/60/53200001-0053250501503051-5-12) |
+| Pre-BiS | 951 | [7/39/5](https://talentsforever.com/hunter/60/502-0053352401523051-5-12) |
+| Phase 1 BiS | 994 | [7/39/5](https://talentsforever.com/hunter/60/502-0053552201523051-5-12) |
 
 *Each row is in that tier's own gear set; the DPS at the top of the page is this build in the standard set, so the two do not match.*
 
-**The gear** (average item level: Pre-BiS 78.4; Phase 1 BiS 78.2; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 61.9; Phase 1 BiS 63.2; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
-| Head | [Field Marshal's Chain Helm](https://www.wowhead.com/forever/item=16465) · *sold by Sergeant Major Clate*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) | [Field Marshal's Chain Helm](https://www.wowhead.com/forever/item=16465) · *sold by Sergeant Major Clate*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) |
+| Head | [Black Dragonscale Helm](https://www.wowhead.com/forever/item=252605) · *Leatherworking*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) | [Black Dragonscale Helm](https://www.wowhead.com/forever/item=252605) · *Leatherworking*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) |
 | Neck | [Amulet of the Darkmoon](https://www.wowhead.com/forever/item=19491) · *quest: 1200 Tickets - Amulet of the Darkmoon* | [Onyxia Tooth Pendant](https://www.wowhead.com/forever/item=18404) · *quest: For All To See* |
 | Shoulders | [Theramore Pauldrons](https://www.wowhead.com/forever/item=271955) | [Theramore Pauldrons](https://www.wowhead.com/forever/item=271955) |
-| Back | [Shifting Cloak](https://www.wowhead.com/forever/item=18511) · *Leatherworking*<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) | [Earthweave Cloak](https://www.wowhead.com/forever/item=21187) · *quest: Volunteer's Battlegear*<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) |
-| Chest | [Field Marshal's Chain Breastplate](https://www.wowhead.com/forever/item=16466) · *sold by Sergeant Major Clate*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Dawn Armor](https://www.wowhead.com/forever/item=252483) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
-| Wrist | [Marshal's Chain Bracers](https://www.wowhead.com/forever/item=16461)<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) | [Marshal's Chain Bracers](https://www.wowhead.com/forever/item=16461)<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) |
-| Hands | [Marshal's Chain Grips](https://www.wowhead.com/forever/item=16463) · *sold by Sergeant Major Clate*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) | [Marshal's Chain Grips](https://www.wowhead.com/forever/item=16463) · *sold by Sergeant Major Clate*<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) |
-| Waist | [Marshal's Chain Girdle](https://www.wowhead.com/forever/item=16464) | [Molten Belt](https://www.wowhead.com/forever/item=19163) · *Leatherworking* |
-| Legs | [Marshal's Chain Legguards](https://www.wowhead.com/forever/item=16467) · *sold by Sergeant Major Clate*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) | [Outrider's Chain Leggings](https://www.wowhead.com/forever/item=22673) · *sold by Kelm Hargunth*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) |
-| Feet | [Marshal's Chain Boots](https://www.wowhead.com/forever/item=16462) · *sold by Sergeant Major Clate*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) | [Marshal's Chain Boots](https://www.wowhead.com/forever/item=16462) · *sold by Sergeant Major Clate*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) |
-| Finger | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21205) · *quest: The Qiraji Conqueror* | [Signet Ring of the Bronze Dragonflight](https://www.wowhead.com/forever/item=21205) · *quest: The Qiraji Conqueror* |
+| Back | [Earthweave Cloak](https://www.wowhead.com/forever/item=21187) · *quest: Volunteer's Battlegear*<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) | [Earthweave Cloak](https://www.wowhead.com/forever/item=21187) · *quest: Volunteer's Battlegear*<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) |
+| Chest | [Dawn Armor](https://www.wowhead.com/forever/item=252483) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Dawn Armor](https://www.wowhead.com/forever/item=252483) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
+| Wrist | [Beaststalker's Bindings](https://www.wowhead.com/forever/item=16681) · *Blackrock Spire*<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) | [Beaststalker's Bindings](https://www.wowhead.com/forever/item=16681) · *Blackrock Spire*<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) |
+| Hands | [Theramore Gloves](https://www.wowhead.com/forever/item=271948)<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) | [Theramore Gloves](https://www.wowhead.com/forever/item=271948)<br>+ [Enchant Gloves - Agility](https://www.wowhead.com/forever/item=273520) |
+| Waist | [Highlander's Mail Girdle](https://www.wowhead.com/forever/item=20044) · *sold by Samuel Hawke* | [Molten Belt](https://www.wowhead.com/forever/item=19163) · *Leatherworking* |
+| Legs | [Beaststalker's Pants](https://www.wowhead.com/forever/item=16678) · *Baron Rivendare, Stratholme*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) | [Beaststalker's Pants](https://www.wowhead.com/forever/item=16678) · *Baron Rivendare, Stratholme*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11647) |
+| Feet | [Shadowcraft Boots](https://www.wowhead.com/forever/item=16711) · *Rattlegore, Scholomance*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) | [Shadowcraft Boots](https://www.wowhead.com/forever/item=16711) · *Rattlegore, Scholomance*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) |
 | Finger | [Cutthroat's Signet](https://www.wowhead.com/forever/item=272408) · *sold by Pix Xizzix* | [Cutthroat's Signet](https://www.wowhead.com/forever/item=272408) · *sold by Pix Xizzix* |
-| Trinket | [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) · *quest: Job Opening: Guard Captain of Revantusk Village* | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) · *quest: Heroes of Old* |
-| Trinket | [Cleansed Vilebranch Medallion](https://www.wowhead.com/forever/item=270275) | [Enriched Seal](https://www.wowhead.com/forever/item=271903) |
-| Main hand | [Thorium Poleaxe](https://www.wowhead.com/forever/item=250615) · *Blacksmithing*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Thorium Poleaxe](https://www.wowhead.com/forever/item=250615) · *Blacksmithing*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
-| Ranged/relic | [Grand Marshal's Bullseye](https://www.wowhead.com/forever/item=18833) · *sold by Lieutenant Jackspring*<br>+ [Biznicks 247x128 Accurascope](https://www.wowhead.com/forever/item=18283) | [Rhok'delar, Longbow of the Ancient Keepers](https://www.wowhead.com/forever/item=18713)<br>+ [Biznicks 247x128 Accurascope](https://www.wowhead.com/forever/item=18283) |
+| Finger | [Channeler's Ring](https://www.wowhead.com/forever/item=272406) · *sold by Pix Xizzix* | [Band of Earthen Might](https://www.wowhead.com/forever/item=21182) · *quest: Veteran's Battlegear* |
+| Trinket | [Jewel of the Guard Captain](https://www.wowhead.com/forever/item=270225) | [Jewel of the Guard Captain](https://www.wowhead.com/forever/item=270225) |
+| Trinket | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437) · *sold by Pix Xizzix* | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437) · *sold by Pix Xizzix* |
+| Main hand | [Legionite Glaive](https://www.wowhead.com/forever/item=250619) · *Blacksmithing*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Legionite Glaive](https://www.wowhead.com/forever/item=250619) · *Blacksmithing*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
+| Ranged/relic | [Gorewood Bow](https://www.wowhead.com/forever/item=16996) · *quest: The Scarlet Oracle, Demetria*<br>+ [Biznicks 247x128 Accurascope](https://www.wowhead.com/forever/item=18283) | [Rhok'delar, Longbow of the Ancient Keepers](https://www.wowhead.com/forever/item=18713)<br>+ [Biznicks 247x128 Accurascope](https://www.wowhead.com/forever/item=18283) |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/hunter/dps/#eJzElU1oI2UYx+d5ZzLz5FGz47tJMxn8GIMs2YGJMxNnvzwkuyfxIIsnT5rZTdZM2W1CksN6EGehBylFqiK0RalQi6UoeCxehEqxgjatRQU/sGgFDx56k3oQmUlC1eotYf+H4ZnnP/O+v/m/78tQDkEFDQwoQBUa0IIQ4B2AVQB+b2yxyLoA+qeEqIr6S6TgbgjawT0k4fI8kIR7n6ukYG8OtF2ZFPwyBO3nFCn4RQjaD1HRC0H7MUUS7oRACu71X1dwe9j/aiUaZ35HJQk/fDOqP/k4GvP3lVPabykSSMHX3gDtu9P5M+pWUDhYghlg08EiJJf99/3vLy+twBoos8F7b8GrwT5MB1cwZocKfMQmPNu1bNsruZ7r2Y7nlmzPsbwtJu0w/IltIKUJdTnC24Q8kkyS5dgdygy6q8uQT5JCCcsteh1+B/hzfuvm881W13Bt95zl2Jb9+CXjesOfeqFeM5ptw6/V6jXj2otGt1E32s2u3w2aU0an7revN4xCp143bt2y2n5Qs4am1TeLk53m1Fn9YcqYpzHBExuMYUKPkeyi1xni8KSu6AkSsdfkc+PHKdKjPE/3fSsTSfjN0dOcqRLdb55CmbOnBF2hBImO3aeLbElnlwT+8r+47IuWe36kXA9S2uQoDmOKOeyiEyfzS5Yb+kP/l2P0xF6ab5/Izhl1djfpGq9SzsyiyHEySqi3CXq8neziea9DmjmBMk+uwWBth5/hUdbMoMxxDfq0x4ZqpgbRyyQRO9dPvrcJfHLse6F/JI7mgb/9HxvPdUc62RPk8Mdowkz/M6EEiQSleG3/nk/cdmK+jfAqD07ilZyR4sVnUJ0ONPFXtgWHzL0jCrEKlRnIUZYyuPg6qH/MgiafFWIdlquY/5Mlo1oIb1RyiwuRPis/ciPW12V3n2mSUTbXmXBX1K0Mq7HqzAdjm+difH3m3crlQaNShVcAFiC+EfbLpojr2SsPHP/4bLgAFXgSrsKz0IAW3Ibb7K8BAClTguE=); Phase 1 BiS: [full raid](https://wowsims.com/forever/hunter/dps/#eJzElU+IG1Ucx+f3ZjLzy0/Njq/JZjL4ZwxS0oGJb2ad/vOQtCfxIEUvnjTTJjWztJuQ5FBBMIU9SCn+KQjdRVlhDZZFD4KH4nFlZQVtthQVrOKiK3jw0JvUg8i8JFSt3hL8Hobf/L4z733m+95jqIBgggUOlKAGTWhDH+BdgCsA/F5pscQ6DPZnhGiq9stk4PU+WHv3kIZ7rwNpeOMLkwz8dADWdT0pPp6zfsqQgV/2wfo+KYZ9sH7IkIY33wIy8M2P5OsGXpv0vxok41zeMUnF9WdJwzU55G+DOevXDClk4MolsG7uK+43t+PS3hpcALYcr0J6Pfog+u7Y2gA2wLgYv/82vBbvwnJ8HCU6VOETNh+KwBMiXAjDIBR+GAgR+l64zbQdhj+yTaQsoa2ThjtbUETSSfN80aXcuHtlHYppMijlBeWwy88Dfz5qn3mh1e45gQgOer7wxONHnVPNaOnFRt1pdZyoXm/UnZMvOb1mw+m0elEvbi053UbUOdV0St1Gwzl71utEcd2bmN7ILC92W0sH7Icp5+7DFE9tMoYpWyKJctid4PC0bdgpUnHY4m/MHqdMj/Ii3fetTqThN7ef5szU6H53DnXOnlJsg1Kk+mJEl9iazY4q/JV/cIkjXnBoqlwPUtblqE5ikhyi7Mtkfs5zx37ov3JMnriR5dfuys6fdnZn6CSvUcHNo8pxMUlouAW23E6ifCjskuXOo87TGzBe28lnhJR3c6hz3IAR7R3DdDPj6HXSiB0cJT/cAr44870wOhK3LwN/5182XhBMdbInyOeP0byb/XtCKVIJFuTa/jUf2fYl32b/BI/vxlvwp4onz6C5HFvqL2wbbrHgvKpIlaoXoEB5yuHqJTB/vwiWfkCRulWpYfEPlk5qpX+6WlhdSfR55ZHTUl9Xgl1maU7FvcqU/0W96qSaqfZ/OLN5jsjrM+9Vj40b1Rq8CrAC8kbZrbgqXs0ff+DOf0/AYajCk3ACnoMmtOEcnGN/DgD8oYMB).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/hunter/dps/#eJzElU1oI2UYx+d5ZzLz5FGT8d1mMxn8GIMs2YEJM9POfh1Mdk/iQRZPnjSzm6xJ2W1CksN6ELulB1mKqAdpS6GFWq1FbxaKIEKlWCHYSEGhKi1awYOHXqsgMm8S6gfeGvZ/eHnm+c/Hf37POwxlEHQwwIIclKAKDZgEWAJYBeAPC4tF1iUw9+OIumy+Rhp+tp40Dh8iBZdngRTc7eik4RcrYHyjRsUnSePnBGn44RQYP0ZFp6Mb+wlSsLMApOH7UxBdruGXU9Drz3Z1UvBdsb79ebSud6N7/rGSNH5LkEQaHk6D8f2Z7Dl9u5Y7XIT7wKZr8xBfDj8Kf7i6uAJroM3UPliAN2sHMF27hiI7FOFTdjZwfcd1g9HRwB9zvcAfdQPPCbaZ0mX4E9vTaITQVEnB7hZkkVRSHM9tUarfXV2GbJw0ijl+Pmjxe8BfChu3X6432pbv+hccz3XcsSvWzWo48UqlbNWbVlguV8rWjVetdrViNevtsF2rT1itSti8WbVyrUrFunPHaYa1sjMwnZ6ZH2/VJ86bT1LKPoMxHttkDGOmiOTmg9YgDo+bmhkjGXfq/K3hx8nT0zxLj+ypRAp+d/w8Z7pCj9pJVDl7TjI1ipHsub10ka2Y7IrEX/9XLvey41881VyP04jNUR5gEjncvCfI/JLmlvnE/3GMztgd4V//h5132uxu0w1eooydRpnjeERoZwtMsZ3c/MWgRYZ9FlUeX4P+bAevEVDaTqHKcQ16aU8M3U700aukELvQI7+zBXx86Huh90kczwJfGj68Z2iM+wLePwiJOfp5PxDj/TuiGMkEnoi4OXndkH9l23DE/HuyJJQr3ocMpSmF8++A/vsMGOp5SeioUMLsnywe1dLkrWJmfi7SV4Wnbgl9W/APmKFYBXuDSQ9E7eKgGqrOfTy051wW6wvvFa/2G8USvAEwB+JAOijYMm6krz128kNy4RIU4Vm4Di9CFRpwF+6yvwYAfGliJQ==); Phase 1 BiS: [full raid](https://wowsims.com/forever/hunter/dps/#eJzElV1o62QYx/O8SZOnj9rG96ynafAjFjn0BFKSnJPzdWF7zpV4IQevvNJma2c7trW0vZgX4jZ2IWP4MRC2IWwwq3PonYMhqDAZThiuMlDYlA2d4IUXu52CSNKW+YF3K/4vwpPnn7z55/e8IZRCUEEDAzJQgDLUYBJgBWANgD8YWiywboF+FEVURf0VUvDTjbh28gBJePIGkIT7uyop+EULtG/koPg4rv0UIwU/mAbth6DY3VW1oxhJePg2kILvTUNwu4JfTkOnv9BWScLPWsFqb30e1BvtYM3fW3Ht1xgJpODiPGiHl9JX1J1K5mQZZoHNVJYguup/6H9/d7kF66DMVd5/B16vHMNM5R6G2SEPn7DLnu1atu1d8zzXtR3PvWZ7juXtMKnN8Ed2oNAAoS6ThO1tSCPJJFmO3aBEt7u2CukoKRSx3KzX4FPAX/Broy9Wa03Dtd0blmNb9vU7xlDZH3+pVDSqdcMvFktFY/Blo1kuGfVq029WquNGo+TXh8pGplEqGWNjVt2vFK2eaXXM7EijOn5Vf5wS5iWM8MgWYxjRw0h21mv04vCorugREnGvyt/sf5wsPcnT9NCBTCThd2fPcqZK9LAZR5mzZwRdoQiJjt1JF9iSzu4I/NV/5LJvW+7NC831KA2YHMUepjCHnXVCMj8nuaE/9l8cgyv2B/jX/2LnXDS7URrkBUqZSRQ5jgSE9rZBD7eTnb3pNUgzL6PMo+vQnW3vNTxKmgmUOa5DJ+25oZqxLnqZJGI3OuT3toGP9H0vdD6JswXgK/2H9xRd524I72+Ewjm6WdcLx/tXRBESCZww4tbkfU38he3AKXOnRCFUJj8LKUpSApfmQf1tDjT5qhDqNFfA9B8sGtTC5HA+tbQY6KvcE8Ohvs25x0yTjJy5yYT/Rc18r+qrrnzUt+fcDo/PvZu/223kC/AawCKEJ8JxzhRxM3nvkfMfkg23IA9Pw314HspQgwmYYH8OADl4YhY=).
 
 ## Other builds of this spec
 
-- [Marksmanship (optimized, lone wolf)](../research/raid/builds/opt-mm-lonewolf-raid-raid-dps.md) (7/41/3, 927 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/50002-3053552011523051-3-12)
-- [Marksmanship with Beast Mastery support](../research/raid/builds/bm-mm-full-buffs-raid.md) (21/30/0, 916 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005050001-005155000150305--12)
+- [Marksmanship (optimized, lone wolf)](../research/raid/builds/opt-mm-lonewolf-raid-raid-dps.md) (7/41/3, 896 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/50002-3053552011523051-3-12)
+- [Marksmanship with Beast Mastery support](../research/raid/builds/bm-mm-full-buffs-raid.md) (21/30/0, 888 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005050001-005155000150305--12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-09 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 7c3453f (client 1.60.1.70755)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-10 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 16e8542 (client 1.60.1.70790)). Simulations, not in-game measurements. Do not hand-edit.*
 

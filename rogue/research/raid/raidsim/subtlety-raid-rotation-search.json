@@ -204,7 +204,7 @@
  "raid": {
   "class": "rogue",
   "spec": "subtlety-raid",
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "commit": "16e85426c",
   "setting": "raid",
   "tank": false,
@@ -212,17 +212,22 @@
   "start": "ui\\specs\\rogue\\dps\\apls\\forever_hemorrhage.apl.json",
   "builds": [
    {
+    "label": "open winner",
+    "talents": "0053031121045101-02-2052210313010011"
+   },
+   {
     "label": "subtlety-hemo-raid",
-    "talents": "0053230020141--3352331313010011"
+    "talents": "0053230020141--3352331313010011",
+    "protect_only": true
    },
    {
     "label": "sim preset: Subtlety Hemo",
-    "talents": "00530301-320003-305230031321001151"
+    "talents": "00530301-320003-305230031321001151",
+    "protect_only": true
    }
   ],
   "tuned_on": [
-   "subtlety-hemo-raid",
-   "sim preset: Subtlety Hemo"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -422,6 +427,15 @@
   ],
   "final": {
    "raid": {
+    "open winner": {
+     "before": 788.680718720105,
+     "after": 795.6563569164923,
+     "base": 788.680718720105,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
     "subtlety-hemo-raid": {
      "before": 626.3188854393686,
      "after": 638.8813874882657,
@@ -450,13 +464,13 @@
     "Hemorrhage"
    ],
    "rejected": {
-    "structure": 90,
+    "structure": 72,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 12
+  "passes": 13
  }
 }

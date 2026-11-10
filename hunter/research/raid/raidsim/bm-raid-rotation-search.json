@@ -230,8 +230,8 @@
  "raid": {
   "class": "hunter",
   "spec": "bm-raid",
-  "date": "2026-11-04",
-  "commit": "7c3453f5a",
+  "date": "2026-11-10",
+  "commit": "16e85426c",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/hunter/dps/apls/bm.apl.json",
@@ -379,40 +379,40 @@
   "final": {
    "raid": {
     "beast-mastery-ml-raid": {
-     "before": 923.8764695725611,
-     "after": 994.8759943445666,
-     "base": 923.8764695725611,
+     "before": 896.9346478571094,
+     "after": 965.6871157749999,
+     "base": 896.9346478571094,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.3996410643305978,
-     "oom_after": 0.3996410643305978
+     "oom_before": 0.00132765647185,
+     "oom_after": 0.00132765647185
     },
     "sim preset: BM": {
-     "before": 909.7907294924978,
-     "after": 986.4351904278055,
-     "base": 909.7907294924978,
+     "before": 884.6651364372553,
+     "after": 961.8419474072339,
+     "base": 884.6651364372553,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.8412067987503051,
-     "oom_after": 1.8412067987503051
+     "oom_before": 0.036875028654149995,
+     "oom_after": 0.036875028654149995
     },
     "mm-hawk-raid": {
-     "before": 858.5673103105994,
-     "after": 922.3502850309467,
-     "base": 858.5673103105994,
+     "before": 832.5840824064777,
+     "after": 894.5738800159585,
+     "base": 832.5840824064777,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "beast-marks-ml-raid": {
-     "before": 901.8903474175571,
-     "after": 986.6377069893954,
-     "base": 901.8903474175571,
+     "before": 874.0247783242404,
+     "after": 957.3609567468932,
+     "base": 874.0247783242404,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.4730483181347483,
-     "oom_after": 0.4730483181347483
+     "oom_before": 0.0027181581480999997,
+     "oom_after": 0.0027181581480999997
     }
    }
   },
@@ -433,6 +433,6 @@
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 18
+  "passes": 19
  }
 }

@@ -63,22 +63,22 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 
 ## Rank among our builds and the community simulator's
 
-**4 of 7** for `ret-dps` by training-dummy DPS in the community simulator (wowsims/forever d97252f (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**5 of 7** for `ret-dps` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`retribution-open-raid`](retribution-open-raid.md) | ours: derived (open search) | 16/4/31 | 470 | +0.0% | 876 | +0.0% | 32 s |
-| 2 | *Unsealed Wrath* | community simulator | - | 469 | -0.1% | 872 | -0.5% | 32 s |
-| 3 | *Holy Shock* | community simulator | - | 461 | -2.0% | 759 | -13.4% | 1 s |
-| 4 | **[`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md)** | ours: optimizer | 17/6/28 | 424 | -9.8% | 703 | -19.8% | 0 s |
-| 5 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/6/28 | 423 | -10.0% | 703 | -19.8% | 1 s |
-| 6 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: derived (ML search) | 9/14/28 | 376 | -20.1% | 697 | -20.4% | 22 s |
-| 7 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 8/15/28 | 372 | -20.8% | 697 | -20.4% | 24 s |
+| 1 | *Unsealed Wrath* | community simulator | - | 477 | +0.0% | 874 | -0.5% | 26 s |
+| 2 | *Holy Shock* | community simulator | - | 461 | -3.3% | 759 | -13.6% | 0 s |
+| 3 | [`retribution-open-raid`](retribution-open-raid.md) | ours: derived (open search) | 16/4/31 | 449 | -6.0% | 878 | +0.0% | 47 s |
+| 4 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/6/28 | 423 | -11.2% | 703 | -20.0% | 0 s |
+| 5 | **[`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md)** | ours: optimizer | 17/6/28 | 422 | -11.6% | 703 | -20.0% | 0 s |
+| 6 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: derived (ML search) | 9/14/28 | 381 | -20.1% | 698 | -20.5% | 16 s |
+| 7 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 8/15/28 | 377 | -21.0% | 699 | -20.4% | 18 s |
 
 ## Rotation (community simulator, training dummy)
 
 - **The training dummy:** the simulator's own rotation (no rotation search recorded).
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-31, 4 passes, the last 2026-11-03, 1 changes to the base rotation; third-seed check: retribution-open-raid 865 -> 874 DPS (+1.0%), sim preset: Unsealed Wrath 863 -> 873 DPS (+1.2%), ret-raid-dps 690 -> 702 DPS (+1.7%), ret-full-buffs-raid 689 -> 700 DPS (+1.6%), opt-ret-dps-raid-dps 690 -> 702 DPS (+1.7%), retribution-ml-raid 689 -> 700 DPS (+1.7%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-31, 5 passes, the last 2026-11-10, 1 changes to the base rotation; third-seed check: retribution-open-raid 867 -> 876 DPS (+1.0%), sim preset: Unsealed Wrath 865 -> 875 DPS (+1.1%), ret-raid-dps 691 -> 702 DPS (+1.7%), ret-full-buffs-raid 690 -> 700 DPS (+1.6%), opt-ret-dps-raid-dps 691 -> 702 DPS (+1.7%), retribution-ml-raid 689 -> 701 DPS (+1.7%)):
   1. insert in the middle: cast Consecration (+1.2%, pass 1)
 
 Before the pull: at -20s: groupReference; at -20s: move to variableRef yd; at -3s: groupReference; at -1.5s: groupReference; at -1.5s: groupReference.
@@ -100,7 +100,7 @@ Damage by ability:
 
 | Ability | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) |
 |---|---|
-| Auto Attack | 22% |
+| Auto Attack | 23% |
 | Judgement of Command | 19% |
 | Seal of Command | 17% |
 | Consecration | 17% |

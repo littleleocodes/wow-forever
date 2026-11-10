@@ -51,14 +51,14 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
 
 ## Rank among our builds and the community simulator's
 
-**3 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever 5ad0894 (client 70707)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 7/31/13 | 447 | +0.0% | 694 | -9.4% | 33 s |
-| 2 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 437 | -2.2% | 751 | -2.0% | 40 s |
-| 3 | **[`frostfire-ml-raid`](frostfire-ml-raid.md)** | ours: derived (ML search) | 0/29/22 | 434 | -2.9% | 759 | -0.9% | 41 s |
-| 4 | *FFB* | community simulator | - | 423 | -5.4% | 766 | +0.0% | 47 s |
+| 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 7/31/13 | 470 | +0.0% | 716 | -9.6% | 29 s |
+| 2 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 459 | -2.5% | 776 | -2.2% | 36 s |
+| 3 | **[`frostfire-ml-raid`](frostfire-ml-raid.md)** | ours: derived (ML search) | 0/29/22 | 455 | -3.4% | 785 | -1.0% | 38 s |
+| 4 | *FFB* | community simulator | - | 442 | -6.0% | 793 | +0.0% | 44 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -122,19 +122,19 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
 
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-ml-raid`](frostfire-ml-raid.md) casts/min |
 |---|---|---|
-| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 7.4 |
-| 2 | cast Fire Blast | 4.9 |
-| 3 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 7.4 |
+| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 7.3 |
+| 2 | cast Fire Blast | 5.1 |
+| 3 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 7.3 |
 | 4 | if mana % ≤ 80%: cast Mana Ruby | as ready |
 | 5 | use every other cooldown when ready | as ready |
 | 6 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 7 | if stacks of Heating Up = 2: cast Pyroblast | 4.9 |
-| 8 | if stacks of Heating Up = 3: cast Pyroblast | 4.9 |
+| 7 | if stacks of Heating Up = 2: cast Pyroblast | 5.2 |
+| 8 | if stacks of Heating Up = 3: cast Pyroblast | 5.2 |
 | 9 | cast Mana Citrine | as ready |
-| 10 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 2.3 |
-| 11 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 1.0 |
+| 10 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 2.2 |
+| 11 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 1.1 |
 | 12 | cast Robe of the Archmage | as ready |
-| 13 | cast Scorch | 7.4 |
+| 13 | cast Scorch | 7.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Arcane Power (needs the Arcane Power talent); cast Berserking, cast Arcane Missiles (rank 7) (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent); cast Combustion (needs the Combustion talent).
 
@@ -142,11 +142,11 @@ Damage by ability:
 
 | Ability | [`frostfire-ml-raid`](frostfire-ml-raid.md) |
 |---|---|
-| Pyroblast | 39% |
+| Pyroblast | 40% |
 | Fire Blast | 18% |
-| Scorch | 17% |
-| Frostfire Bolt | 11% |
+| Scorch | 16% |
 | Ignite | 10% |
+| Frostfire Bolt | 10% |
 | Fireball | 6% |
 
 ## Notes
