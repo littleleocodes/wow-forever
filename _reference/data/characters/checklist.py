@@ -85,6 +85,8 @@ def upgrade_line(r, lv, why=True):
         sub += f'<br><span class="alt">{esc(r["miss"])}: {md(r["fallback"])}</span>'
     if r.get("wait"):
         sub += f'<br><strong>{md(r["wait"])}</strong>'
+    if r.get("off_route"):
+        sub += f'<br><span class="why">{md(r["off_route"])}</span>'
     if why and r.get("why"):
         sub += f'<br><span class="why">Kept long because: {md(r["why"])}</span>'
     return head, sub
@@ -262,8 +264,9 @@ def steps_html(C, lv):
     items = []
     for dg in C.get("dungeons") or []:
         if dg["run"] <= lv + 3:
+            tag = {True: " · your RestedXP guide runs it then", False: " · not in your RestedXP guide: a side trip"}.get(dg.get("guide"), "")
             items.append(todo(f"dg{dg['zone']}", f'Run <strong>{esc(dg["zone"])}</strong> at level {dg["run"]} <span class="muted">({dg["lo"]}–{dg["hi"]})</span>',
-                              "once, with its quests" + "".join(f"<br>Drop: {md(x)}" for x in dg["drops"])))
+                              "once, with its quests" + tag + "".join(f"<br>Drop: {md(x)}" for x in dg["drops"])))
     for r in soon:
         if r["kind"] in ("auction", "market") and r["get_at"] > lv:
             head, sub = upgrade_line(r, lv, why=False)

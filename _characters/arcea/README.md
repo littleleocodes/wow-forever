@@ -85,7 +85,7 @@ Count a piece's stats in spell power: 1 intellect = 0.22, 1 spirit = 0.27, 1 sta
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 0.9 hours old). "For your trip": enough to keep it up for about 3.1 hours of play, to your next training at level 28 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 1.0 hours old). "For your trip": enough to keep it up for about 3.1 hours of play, to your next training at level 28 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|
@@ -104,8 +104,8 @@ One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience 
 ### Quests to do
 
 - **weapon**: Fallen Dragon's Scepter, 7.3% faster kills, replaces Coldspire Staff (wear it right away; best to the end of leveling; saves about 123 min of killing). quest "Stopping the Cycle" (Wetlands). Why it stays: Staff of Jordan at 35, 7.8% faster, saves about 126 min, but its 200g 27s takes about 3985 min of play to earn.
-- **finger2**: Snake Hoop, 3.3% faster kills, replaces Slain Baron's Signet (wear it right away; best to the end of leveling; saves about 52 min of killing). quest "Willix the Importer" (Razorfen Kraul, level 30; from Willix the Importer). Why it stays: Band of the Unicorn at 43, 1.3% faster, saves about 18 min before 60.
-- **ranged**: Gravestone Scepter, 2.3% faster kills, replaces Deepblaze (wear it right away; best until level 49; saves about 33 min of killing). quest "Blackfathom Villainy" (Blackfathom Deeps, level 27; the chain starts with "In Search of Thaelrid" from Dawnwatcher Shaedlass, level 18). Why it stays: Thunderwood at 26, 2.2% faster, saves about 25 min, but its 2g 90s takes about 83 min of play to earn; Freezing Shard at 34, 3.5% faster, saves about 39 min, but its 125g takes about 2540 min of play to earn.
+- **finger2**: Snake Hoop, 3.3% faster kills, replaces Slain Baron's Signet (wear it right away; best to the end of leveling; saves about 52 min of killing). quest "Willix the Importer" (Razorfen Kraul, level 30; from Willix the Importer). Off your RestedXP route around level 27: a detour to Razorfen Kraul. Why it stays: Band of the Unicorn at 43, 1.3% faster, saves about 18 min before 60.
+- **ranged**: Gravestone Scepter, 2.3% faster kills, replaces Deepblaze (wear it right away; best until level 49; saves about 33 min of killing). quest "Blackfathom Villainy" (Blackfathom Deeps, level 27; the chain starts with "In Search of Thaelrid" from Dawnwatcher Shaedlass, level 18). Off your RestedXP route around level 26: a detour to Blackfathom Deeps. Why it stays: Thunderwood at 26, 2.2% faster, saves about 25 min, but its 2g 90s takes about 83 min of play to earn; Freezing Shard at 34, 3.5% faster, saves about 39 min, but its 125g takes about 2540 min of play to earn.
 
 ### Look for on the Auction House (not listed this hour, usually is; usual prices)
 
@@ -116,11 +116,11 @@ One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience 
 
 Run each once, with its quests in your log first: the quests' experience is the main reward. A drop that beats what the plan has you wear is a bonus; the plan works without it.
 
-- **The Deadmines** (17-26), run at level 26:
+- **The Deadmines** (17-26), run at level 26 (not in your RestedXP guide: a side trip):
   - Quests: Underground Assault (20, from Shoni the Shilent, grey for you by then); The Defias Brotherhood (22, start with part 1 from Gryan Stoutmantle); The Unsent Letter (22)
-- **Blackfathom Deeps** (24-32), run at level 26:
+- **Blackfathom Deeps** (24-32), run at level 26 (not in your RestedXP guide: a side trip):
   - Quests: In Search of Thaelrid (24, from Dawnwatcher Shaedlass); Twilight Falls (25, from Argent Guard Manados); Blackfathom Villainy (27, start with "In Search of Thaelrid" from Dawnwatcher Shaedlass)
-- **The Stockade** (24-32), run at level 27:
+- **The Stockade** (24-32), run at level 26 (your RestedXP guide runs it then):
   - Quests: What Comes Around... (25, in your log, from Guard Berton); The Color of Blood (26, from Nikova Raskol); The Fury Runs Deep (27, start with "The Dark Iron War" from Motley Garmason); The Stockade Riots (29, start with "The Unsent Letter")
 
 ### Talents and the rest
@@ -276,38 +276,38 @@ Each upgrade worth 0.5% faster kills or more, under the level at which you can g
 
 Every leveling dungeon you have not outgrown, once, at the level its quests fit: pick the quests up first. Drops are bonuses over what the plan has you wear: wear one if it drops, the plan goes on as written if not. Drop chances are Classic's (25% where it has none); "about N min" is a drop's minutes of killing saved over the plan's item, and a run's drops are worth that times their chances. Minutes assume 50% of your experience comes from kills.
 
-- **The Deadmines** (17-26), run at level 26:
+- **The Deadmines** (17-26), run at level 26 (not in your RestedXP guide: a side trip):
   - Quests: Underground Assault (20, from Shoni the Shilent, grey for you by then); The Defias Brotherhood (22, start with part 1 from Gryan Stoutmantle); The Unsent Letter (22)
-- **Blackfathom Deeps** (24-32), run at level 26:
+- **Blackfathom Deeps** (24-32), run at level 26 (not in your RestedXP guide: a side trip):
   - Quests: In Search of Thaelrid (24, from Dawnwatcher Shaedlass); Twilight Falls (25, from Argent Guard Manados); Blackfathom Villainy (27, start with "In Search of Thaelrid" from Dawnwatcher Shaedlass)
-- **The Stockade** (24-32), run at level 27:
+- **The Stockade** (24-32), run at level 26 (your RestedXP guide runs it then):
   - Quests: What Comes Around... (25, in your log, from Guard Berton); The Color of Blood (26, from Nikova Raskol); The Fury Runs Deep (27, start with "The Dark Iron War" from Motley Garmason); The Stockade Riots (29, start with "The Unsent Letter")
-- **Gnomeregan** (29-38), run at level 31; its drops are worth about 13 min on average:
+- **Gnomeregan** (29-38), run at level 30 (your RestedXP guide runs it then); its drops are worth about 13 min on average:
   - Quests: A Fine Mess (30, from Kernobee); Grime-Encrusted Ring (34); The Grand Betrayal (35, from High Tinker Mekkatorque)
   - Drop: Spidertank Oilrag (wrist, from level 29; Electrocutioner 6000, 40% drop): over your Bridgebreaker Bindings, 3.6% faster, about 31 min saved if it drops
-- **Razorfen Kraul** (29-38), run at level 31; its drops are worth about 14 min on average:
+- **Razorfen Kraul** (29-38), run at level 31 (not in your RestedXP guide: a side trip); its drops are worth about 14 min on average:
   - Quests: Mortality Wanes (30, from Heralath Fallowbrook); Willix the Importer (30, from Willix the Importer); The Crone of the Kraul (34, start with "Lonebrow's Journal")
   - Drop: Swinetusk Shank + Orb of the Forgotten Seer (weapon, from level 32; Agathelos the Raging, 40% drop; the other half drops in Scarlet Monastery, 50%): over your Fallen Dragon's Scepter, 5.1% faster, about 70 min saved with both halves
-- **Scarlet Monastery** (30-45), run at level 33; its drops are worth about 14 min on average:
+- **Scarlet Monastery** (30-45), run at level 33 (not in your RestedXP guide: a side trip); its drops are worth about 14 min on average:
   - Quests: In the Name of the Light (40, start with "Down the Scarlet Path" from Brother Anton)
   - Drop: Swinetusk Shank + Orb of the Forgotten Seer (weapon, from level 32; Bloodmage Thalnos, 50% drop; the other half drops in Razorfen Kraul, 40%): over your Fallen Dragon's Scepter, 5.1% faster, about 70 min saved with both halves
-- **Razorfen Downs** (37-46), run at level 39:
+- **Razorfen Downs** (37-46), run at level 40 (your RestedXP guide runs it then):
   - Quests: Scourge of the Downs (37, from Belnistrasz); Extinguishing the Idol (37, start with "Scourge of the Downs" from Belnistrasz); Bring the Light (42, from Archbishop Benedictus)
-- **Uldaman** (41-51), run at level 43:
-  - Quests: Power in Uldaman (40, start with "Return to the Marsh" from Anastasia Hartwell / Bink / Jennea Cannon / Uthel'nay); The Hidden Chamber (40, start with "The Lost Dwarves" from Prospector Stormpike); The Lost Dwarves (40, from Prospector Stormpike); Indurium Ore (42, start with "Martek the Exiled" from Fizzle Brassbolts); Back to Uldaman (42, start with "The Shattered Necklace"); Find the Gems (43, start with "The Shattered Necklace"); Restoring the Necklace (44, start with "The Shattered Necklace"); Wild Leather Shoulders (45, start with "Wild Leather Armor" from Pratt McGrubben)
-- **Zul'Farrak** (44-54), run at level 46:
+- **Zul'Farrak** (44-54), run at level 43 (your RestedXP guide runs it then):
   - Quests: Scarab Shells (45, from Tran'rek); Troll Temper (45, from Trenton Lighthammer); Tiara of the Deep (46, from Tabetha); Divino-matic Rod (47, from Chief Engineer Bilgewhizzle); The Prophecy of Mosh'aru (47, start with "Screecher Spirits" from Yeh'kinya)
-- **Maraudon** (46-55), run at level 51:
+- **Uldaman** (41-51), run at level 44 (your RestedXP guide runs it then):
+  - Quests: Power in Uldaman (40, start with "Return to the Marsh" from Anastasia Hartwell / Bink / Jennea Cannon / Uthel'nay); The Hidden Chamber (40, start with "The Lost Dwarves" from Prospector Stormpike); The Lost Dwarves (40, from Prospector Stormpike); Indurium Ore (42, start with "Martek the Exiled" from Fizzle Brassbolts); Back to Uldaman (42, start with "The Shattered Necklace"); Find the Gems (43, start with "The Shattered Necklace"); Restoring the Necklace (44, start with "The Shattered Necklace"); Wild Leather Shoulders (45, start with "Wild Leather Armor" from Pratt McGrubben)
+- **Maraudon** (46-55), run at level 52 (your RestedXP guide runs it then):
   - Quests: Legends of Maraudon (49, from Cavindra); Corruption of Earth and Seed (51, from Keeper Marandis)
-- **Sunken Temple** (50-56), run at level 53:
+- **Sunken Temple** (50-56), run at level 53 (not in your RestedXP guide: a side trip):
   - Quests: Destroy Morphaz (52, start with "Magecraft" from Elsharin / Enyo / Juli Stormkettle / Pierce Shackleton / Thurston Xane); Jammal'an the Prophet (53, from Atal'ai Exile); The Essence of Eranikus (55)
-- **Dire Maul** (55-60), run at level 57:
+- **Blackrock Depths** (52-60), run at level 56 (your RestedXP guide runs it then):
+  - Quests: Dark Iron Legacy (52, start with part 1 from Franclorn Forgewright); Ribbly Screwspigot (53, from Yuka Screwspigot); The Love Potion (54, from Mistress Nagmara); Marshal Windsor (54, start with "Dragonkin Menace" from Helendis Riverhorn); Abandoned Hope (54, start with "Dragonkin Menace" from Helendis Riverhorn); Incendius! (56, start with "Overmaster Pyron" from Jalinda Sprig); The Good Stuff (56, from Oralius); A Crumpled Up Note (58, start with "Dragonkin Menace" from Helendis Riverhorn); A Shred of Hope (58, start with "Dragonkin Menace" from Helendis Riverhorn); Jail Break! (58, start with "Dragonkin Menace" from Helendis Riverhorn); Kharan Mighthammer (59, start with "The Smoldering Ruins of Thaurissan" from Royal Historian Archesonus); Kharan's Tale (59, from Kharan Mighthammer); The Bearer of Bad News (59, start with "The Smoldering Ruins of Thaurissan" from Royal Historian Archesonus); The Fate of the Kingdom (59, start with "The Smoldering Ruins of Thaurissan" from Royal Historian Archesonus); The Princess's Surprise (59, start with "The Smoldering Ruins of Thaurissan" from Royal Historian Archesonus)
+- **Dire Maul** (55-60), run at level 57 (not in your RestedXP guide: a side trip):
   - Quests: Enticing Negolash (52, from Ruined Lifeboat); Lethtendris's Web (57, from Latronicus Moonspear); Pusillin and the Elder Azj'Tordin (58, from Azj'Tordin)
-- **Blackrock Depths** (52-60), run at level 58:
-  - Quests: Dark Iron Legacy (52, start with part 1 from Franclorn Forgewright, grey for you by then); Ribbly Screwspigot (53, from Yuka Screwspigot); The Love Potion (54, from Mistress Nagmara); Marshal Windsor (54, start with "Dragonkin Menace" from Helendis Riverhorn); Abandoned Hope (54, start with "Dragonkin Menace" from Helendis Riverhorn); Incendius! (56, start with "Overmaster Pyron" from Jalinda Sprig); The Good Stuff (56, from Oralius); A Crumpled Up Note (58, start with "Dragonkin Menace" from Helendis Riverhorn); A Shred of Hope (58, start with "Dragonkin Menace" from Helendis Riverhorn); Jail Break! (58, start with "Dragonkin Menace" from Helendis Riverhorn); Kharan Mighthammer (59, start with "The Smoldering Ruins of Thaurissan" from Royal Historian Archesonus); Kharan's Tale (59, from Kharan Mighthammer); The Bearer of Bad News (59, start with "The Smoldering Ruins of Thaurissan" from Royal Historian Archesonus); The Fate of the Kingdom (59, start with "The Smoldering Ruins of Thaurissan" from Royal Historian Archesonus); The Princess's Surprise (59, start with "The Smoldering Ruins of Thaurissan" from Royal Historian Archesonus)
-- **Blackrock Spire** (55-60), run at level 58:
+- **Blackrock Spire** (55-60), run at level 58 (not in your RestedXP guide: a side trip):
   - Quests: Put Her Down (59, from Helendis Riverhorn); Bijou's Belongings (59, from Bijou); Message to Maxwell (59, start with "Bijou's Belongings" from Bijou)
-- **Scholomance** (58-60), run at level 60:
+- **Scholomance** (58-60), run at level 60 (not in your RestedXP guide: a side trip):
   - Quests: Plagued Hatchlings (58, from Betina Bigglezink); Healthy Dragon Scale (58, start with "Plagued Hatchlings" from Betina Bigglezink)
 
 ## How this is worked out

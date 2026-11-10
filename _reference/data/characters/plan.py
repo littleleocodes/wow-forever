@@ -31,6 +31,7 @@ import bnet  # noqa: E402
 import item_pool as IP  # noqa: E402
 import professions as PF  # noqa: E402
 import market as MK  # noqa: E402
+import rxp  # noqa: E402
 
 UPGRADE = 0.005        # an upgrade worth less than 0.5% of the time per kill is not listed
 MIN_CHANCE = 0.05      # a dungeon drop under 5% is not worth planning around
@@ -322,6 +323,7 @@ NOW_LV = 0                # the character's level (main)
 PLAN_EVENTS = []          # the plan's upgrades (main), for the profession section
 CTX = {}                  # what the town checklist page (checklist.py) shows, filled while the README is written
 BONUS = []                # dungeon drops worth chasing on top of the sure plan (bonus_drops)
+ROUTE = None              # the character's RestedXP route (rxp.route), when its saved files are on this PC
 AUCTION_FUTURE = False   # what-if (2026-11-09): treat today's listings as buyable at their level later (how soon cheap AH gear replaces a buy)
 PROFS = {}   # the character's professions, {name: (skill, cap)}: main() fills it for the craft lines
 
@@ -599,6 +601,7 @@ def dungeon_lines(sched):
     o = []
     for r in sched:
         o += [f"- **{r['zone']}** ({r['lo']}-{r['hi']}), run at level {r['run']}"
+              + ({True: " (your RestedXP guide runs it then)", False: " (not in your RestedXP guide: a side trip)"}.get(r.get("guide"), ""))
               + (f"; its drops are worth about {r['worth']} min on average" if r["worth"] else "") + ":"]
         if r["quests"]:
             o += ["  - Quests: " + "; ".join(f"{q['title']} ({q['level']}{', in your log' if q['log'] else ''}"
@@ -686,6 +689,9 @@ def dungeon_schedule(cfg, lv, runs):
         if dr:   # a drop you would wear early pulls the run forward (Scarlet Monastery's one Alliance quest is level 40, its Library drop 32)
             run = min(run, dr["first"] + 1)
         run = max(lv, lo + 2, min(run, hi - 2))
+        gl = rxp.dungeon_level(ROUTE, name) if ROUTE else None
+        if gl is not None:   # the RestedXP guide the character follows runs it in that section (2026-11-09)
+            run = max(lv, gl)
         quests = []
         for title, (q, ql) in sorted(qs.items(), key=lambda kv: kv[1][1]):
             st = chain_step(q)
@@ -699,7 +705,7 @@ def dungeon_schedule(cfg, lv, runs):
         if not dr and not any(not x["grey"] for x in quests):
             continue
         out.append({"zone": name, "lo": lo, "hi": hi, "run": run, "quests": quests, "drops": (dr or {}).get("items", []),
-                    "worth": (dr or {}).get("worth", 0)})
+                    "worth": (dr or {}).get("worth", 0), "guide": None if not ROUTE else gl is not None})
     return sorted(out, key=lambda x: (x["run"], x["lo"]))
 
 
@@ -1193,6 +1199,8 @@ def line(e, at):
     out = f"- **{e['slot']}**: {what}, {pct(e['gain'])} faster kills{rep} ({wear}{until}; saves about {minutes_saved(e, at):.0f} min of killing). {src}."
     if e.get("wait"):
         out += f" {e['wait']}."
+    if e.get("off_route"):
+        out += f" {e['off_route']}."
     if e.get("passed") and (e["until"] or 60) - e["level"] >= 8:   # a long-held item: why nothing replaces it sooner
         alts = sorted(e["passed"], key=lambda x: -x[2])[:3]
         out += " Why it stays: " + "; ".join(f"{n} at {L}, {why}" for L, n, g, why in sorted(alts)) + "."
@@ -1532,7 +1540,7 @@ def event_row(e, at):
             "minutes": round(saves), "earn": round(earn), "level": e["level"], "get_at": max(e["get_at"], NOW_LV), "until": e["until"],
             "kind": src["kind"], "where": where, "price": pr, "budget": budget, "replaces": e.get("replaces"),
             "fallback": fbt, "miss": "If you do not craft it" if e.get("unsure") == "craft" else "If it does not drop", "why": why,
-            "wait": e.get("wait"),
+            "wait": e.get("wait"), "off_route": e.get("off_route"),
             "mats": mats}
 
 
@@ -1724,6 +1732,9 @@ def main():
     pool = [p for p in pool if not (lambda n: n and have.get(n[0], 0) < n[1])(needs.get(int(str(p["id"]).split(":")[0])))]
     FULL_BY_ID.update({p["id"]: p for p in pool})
     SCHOOL_SHARE.update(cfg["school_share"])
+    global ROUTE
+    wow = cfg.get("wow_dir") or str((cfg.get("ah") or {}).get("ahcopy", "")).split("/Interface/")[0]
+    ROUTE = rxp.route(wow, f"{snap['profile']['name']}-{snap['profile'].get('surname', '')}".strip("-")) if wow else None
     sure_pool = [dict(p, sources=[s for s in p["sources"] if s["kind"] != "dungeon"]) for p in pool]
     sure_pool = [p for p in sure_pool if p["sources"]]
     out = set()
@@ -1750,6 +1761,13 @@ def main():
                 e["wait"] = (f"Run {' or '.join(sorted(zones))} first (level {run}): {upgrade_name(b)[0]} ({ch:.0%} drop) beats it; "
                              "buy this only if it does not drop")
                 break
+    if ROUTE:   # a quest reward in a zone the RestedXP route does not visit around its level is a detour
+        for e in events:
+            s0 = primary(e)
+            if s0["kind"] == "quest" and s0.get("zone"):
+                L = max(e["get_at"], lv0)
+                if s0["zone"] not in rxp.zones_at(ROUTE, L - 2, L + 3):
+                    e["off_route"] = f"Off your RestedXP route around level {L}: a detour to {s0['zone']}"
     # a craft from a recipe you do not know yet may not happen: the same plan without such crafts names what to wear instead
     unsure = lambda s: s["kind"] == "craft" and s.get("spell") not in KNOWN
     nod = [dict(p, sources=[s for s in p["sources"] if not unsure(s)]) for p in sure_pool]
