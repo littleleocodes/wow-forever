@@ -4,7 +4,7 @@
    "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/statistics?namespace=profile-forever-us"
   }
  },
- "health": 622,
+ "health": 702,
  "power": 1638,
  "power_type": {
   "key": {
@@ -32,7 +32,7 @@
  },
  "stamina": {
   "base": 28,
-  "effective": 46
+  "effective": 54
  },
  "melee_crit": {
   "rating_bonus": 0.0,
@@ -73,7 +73,7 @@
  "off_hand_damage_max": 1.0714285,
  "off_hand_speed": 2.0,
  "off_hand_dps": 0.53571427,
- "spell_power": 48,
+ "spell_power": 62,
  "spell_penetration": 0,
  "spell_crit": {
   "rating_bonus": 0.0,
@@ -84,7 +84,7 @@
  "mana_regen_combat": 4.0,
  "armor": {
   "base": 0,
-  "effective": 274
+  "effective": 310
  },
  "dodge": {
   "rating_bonus": 0.0,
@@ -134,8 +134,8 @@
   "effective": 123
  },
  "fire_resistance": {
-  "base": 10,
-  "effective": 10
+  "base": 7,
+  "effective": 7
  },
  "shadow_resistance": {
   "base": 5,
@@ -155,12 +155,12 @@
  },
  "movement_speed": 100.0,
  "ranged_attack_power": 0,
- "ranged_damage_min": 22.0,
- "ranged_damage_max": 41.0,
+ "ranged_damage_min": 23.0,
+ "ranged_damage_max": 44.0,
  "expertise": 0.0,
  "off_hand_expertise": 0.0,
  "armor_penetration": 0.0,
- "spell_healing": 61,
+ "spell_healing": 75,
  "melee_hit": {
   "rating_bonus": 0.0,
   "value": 0.0,
