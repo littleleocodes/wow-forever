@@ -742,6 +742,8 @@ def route_anchor(n):
     on at that step, else the NPC or place it brings you to."""
     p = RG["path"][max(0, n)]
     level, zone, lo, hi, step, ops, npc, spot = p[0], p[4], p[5], p[6], p[7], p[8], p[9], p[10]
+    nxt = RG["path"][n + 1] if 0 <= n + 1 < len(RG["path"]) else None
+    travel = p[11] if len(p) > 11 and p[11] else (nxt[11] if nxt is not None and len(nxt) > 11 and nxt[0] == level and nxt[11] else None)
     if zone in ("Kalimdor", "Eastern Kingdoms", "Azeroth") or not spot:   # a continent-wide position: the zone it lies in
         z = DT.zone_of((p[1], p[2], p[3]), MAPS or MAPS.update(RXG.bounds()) or MAPS)
         if z:
@@ -755,7 +757,32 @@ def route_anchor(n):
                "complete": f"while the guide has you on \"{title}\""}[t[0]] + where
     else:
         txt = f"when the guide brings you to {npc or zone}{where}"
+    if travel:
+        txt += f", before {travel}"
     return txt, level, step, lo, hi
+
+
+def zone_exit(n):
+    """The last route point of the zone visit route point n is in: where the guide leaves that zone (its quests done there)."""
+    path = RG["path"]
+    k = n
+    while k + 1 < len(path) and path[k + 1][4] == path[n][4]:
+        k += 1
+    return k
+
+
+def exit_before(deadline, zone=None):
+    """Where to fit a detour that must be done by route point `deadline` (2026-11-10, the user's choice: the Stockade "after Step 187
+    and before step 190 which says to Fly to Redridge", where the planner had put it in the middle of the Duskwood loop): when the route
+    visits `zone` before the deadline, the end of that visit (its quests done first); else the last point before the deadline where the
+    route leaves a zone (a flight, the hearthstone, a boat: the travel the guide does anyway); else now."""
+    path = RG["path"][:max(1, deadline)]
+    if zone:
+        n = next((k for k, p in enumerate(path) if p[4] == zone), None)
+        if n is not None:
+            return min(zone_exit(n), deadline - 1), True
+    exits = [k for k in range(len(path) - 1) if path[k + 1][4] != path[k][4]]
+    return (exits[-1] if exits else 0), False
 
 
 def nearest_before(zone, deadline):
@@ -817,7 +844,7 @@ def catchup(lv):
             d = dq_map.get(q)
             if "complete" in a or not any(o[0] in "cio" for o in g.get("objectives", [])) or not d:
                 continue   # the guide has you do it on the way, it is a delivery, or its objectives are where you have been questing
-            k, inz = nearest_before(ENTRANCE.get(d) or (B.get(q, {}).get("complete") or {}).get("zone") or "", dl["at"])
+            k, inz = exit_before(dl["at"], ENTRANCE.get(d))
             out.append({"kind": "finish", "quests": [(q, quest_title(q))], "who": "", "spot": None, "deadline": dl, "why": why,
                         "n": k, "in_zone": inz, "dungeon": d, "where": d or (B.get(q, {}).get("complete") or {}).get("zone")})
             continue
@@ -825,7 +852,7 @@ def catchup(lv):
         while abs((DT.GEO.get(chain[0]) or {}).get("prev", 0)) in missed and abs(DT.GEO[chain[0]]["prev"]) not in chain:
             chain.insert(0, abs(DT.GEO[chain[0]]["prev"]))
         acc = B[chain[0]]["accept"]
-        k, inz = nearest_before(acc["zone"] or "", dl["at"])
+        k, inz = exit_before(dl["at"], acc["zone"])
         out.append({"kind": "pickup", "quests": [(x, quest_title(x)) for x in chain], "who": acc["npc"] or "",
                     "spot": (acc["zone"], acc["x"], acc["y"]) if acc["zone"] else None, "deadline": dl, "why": why, "n": k, "in_zone": inz,
                     "dungeon": None, "where": acc["zone"]})
@@ -907,7 +934,7 @@ def timeline(sched, events, lv):
             n = d["at"][0] if d.get("at") else (min(done) if done else first_at(r["run"]))
         else:   # a side trip starts the next time the guide has you at the dungeon's door, from its lowest level on
             n = next((k for k, p in enumerate(path) if p[4] == door and max(lv, r["lo"]) <= p[0] <= r["run"] + 3), None) if door else None
-            n = n if n is not None else first_at(max(r["run"], r["lo"]))
+            n = zone_exit(n) if n is not None else first_at(max(r["run"], r["lo"]))   # (the zone's quests first, then the side trip)
         sync = need_by.get(r["zone"])
         if sync and (n is None or sync[0] < n):   # a quest in your log the guide hands in before that: run it in time
             n = sync[0]

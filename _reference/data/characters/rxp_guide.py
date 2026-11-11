@@ -249,6 +249,12 @@ def step_view(step, who, level, enabled):
             tags["maxlevel"] = int(re.match(r"\d+", a).group())
         elif t == "xp" and re.match(r"\d+", a):
             tags["xp"] = int(re.match(r"\d+", a).group())
+        elif t == "fly" and "travel" not in tags:
+            tags["travel"] = f"the flight to {a}" if a else "a flight"
+        elif t == "hs" and "travel" not in tags:
+            tags["travel"] = "your hearthstone"
+        elif t in ("zone", "zoneskip") and a and "travel" not in tags:
+            tags["travel"] = f"the trip to {a.split(',')[0].split('/')[0]}"
     tags["dungeon"] = dungeon
     for off in ("som", "hardcore", "hardcoreserver", "ssf", "questguide"):
         if tags.get(off):
@@ -356,7 +362,8 @@ def facts(cfg, snap, wow_dir, route):
             w = next((x for x in (world(a, maps) for a in reversed(tags.get("goto") or [])) if x), None)
             if w and not past:   # where the route takes you, level by level (detours.py measures from here): level, continent, world x, y,
                 out["path"].append((level, w[0], w[1], w[2], w[3], lo, hi, i + 1, tuple(ops),   # zone, the section's levels, the step's
-                                    tags["targets"][0] if tags["targets"] else None, spot))       # number in it, its quests, NPC, map spot
+                                    tags["targets"][0] if tags["targets"] else None, spot,        # number in it, its quests, NPC, map spot,
+                                    tags.get("travel")))                                          # the travel the step starts (a flight...)
             pidx = len(out["path"]) - 1   # the route point at or just before this step (a detour's anchor)
             for el in st["els"]:   # where the guide runs its own dungeon (.enabledungeon); one you have passed is behind you
                 if el["tag"] == "enabledungeon" and el["arg"] and not el["arg"].startswith("!") and applies(el["filter"], who, level):

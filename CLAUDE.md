@@ -132,7 +132,13 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   ahead (deadline: that step, or the step that does its objectives) or takes its next chain part ahead (the earlier parts you also lack
   join it, "(5 parts), level 18-24"); a quest in your log whose objectives are in a dungeon and that the guide hands in ahead with no
   objective step makes that dungeon's run move before the hand-in ("to stay in step with your guide"). Each sits at the route point
-  before its deadline nearest to the giver; rows in the road list (kind "catchup") and a block in Now.
+  before its deadline at the guide's own travel (below); rows in the road list (kind "catchup") and a block in Now.
+  **Detours ride the guide's travel** (2026-11-10, the user's own choice: the Stockade "after Step 187 and before step 190 which says to
+  Fly to Redridge", where the planner had put it mid-Duskwood by straight-line distance): a detour never interrupts a zone's quest loop.
+  With a deadline (a hand-in or chain step ahead) it goes at the end of the route's visit to its zone if the route visits it in time, else
+  at the last point before the deadline where the route leaves a zone (a flight, the hearthstone, a boat: plan.exit_before); a side-trip
+  dungeon goes at the end of the visit to its entrance's zone (plan.zone_exit). The anchor names that travel ("before the flight to
+  Redridge"; rxp_guide records each step's fly / hs / zone as the path's 12th field).
   Each dungeon gets a verdict (user: "I just want to do the ones you deem worth it"): the guide's own; a side trip only for a quest reward
   the gear plan counts on, drops worth 20 minutes on average or three quests at full experience; skipped when outgrown or too thin.
   **A group tank** (Tara, 2026-11-09: a Protection paladin with a healer in her group, raid tank at 60): character.json `metric: tank`

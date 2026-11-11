@@ -4,7 +4,7 @@
 > refresh with the same command. Item values are seconds per kill from this project's fight lab for the leveling page build
 > ([Hybrid Arcane/Frost](../../mage/leveling/arcane-frost.md), rotation `barrage-frost-leveling`), a model of the beta, not a measurement.
 
-Level **26** Gnome Mage, Alliance. Professions: Tailoring 110/150, Enchanting 150/225, Cooking 149/150, Fishing 100/150, First Aid 56/150. Gold: **50s 22c**.
+Level **26** Gnome Mage, Alliance. Professions: Tailoring 110/150, Enchanting 150/225, Cooking 149/150, Fishing 100/150, First Aid 56/150. Gold: unknown (log in with bnet_login.py; the login lasts a day).
 
 ## Talents
 
@@ -20,13 +20,12 @@ You stay one point off the page's order; at 60 you go without its last point (Ar
 
 ## Since your last refresh (2026-11-10 07:37, level 26)
 
-- Gold: 50s 22c then, 50s 22c now.
-- New in the plan: Azure Silk Hood (head, level 27), Conjurer's Mantle of Frozen Wrath (shoulder, level 31), Darkmist Wizard Hat of Frozen Wrath (head, level 39).
-- Left the plan (worn, replaced by a better choice, or no longer listed): Conjurer's Hood of Magic (head), Conjurer's Mantle of Magic (shoulder).
+- New in the plan: Sage's Circlet of Frozen Wrath (head, level 26), Greenweave Leggings of Frozen Wrath (legs, level 26), Thunderwood (ranged, level 26), Robe of the Magi (chest, level 35), Regal Mantle of Frozen Wrath (shoulder, level 37), Sorcerer Pants of Frozen Wrath (legs, level 37), Dreamweave Circlet (head, level 45).
+- Left the plan (worn, replaced by a better choice, or no longer listed): Robe of Power (chest), Conjurer's Hood of Magic (head), Durable Pants of Frozen Wrath (legs), Lesser Mystic Wand (ranged), Lesser Eternal Wand (ranged), Conjurer's Mantle of Magic (shoulder).
 
 ## Gold plan
 
-Gold now: **50s 22c**. Training you need at the next two levels: **2g 10s**. Free for gear now: **0c**. You are **1g 59s 78c short** of that training: sell your crafts before you buy anything.
+Gold now: **unknown (log in)**. Training you need at the next two levels: **2g 10s**. Free for gear now: **unknown**.
 
 Income is an estimate from Classic's data: coin and loot from about 104 kills a level (cloth, greens and other trade goods at the auction house's usual sale price after its cut, the rest at vendor prices), plus your pace of 9.4 quests a level at Classic's quest money. It assumes you sell what drops or use it in place of buying it. "Training" counts the spells your rotation and kit use; optional ones (a frost mage's fire spells, teleports) are listed apart.
 
@@ -45,11 +44,11 @@ Income is an estimate from Classic's data: coin and loot from about 104 kills a 
 | 36 | 12g 57s 18c | - | - |
 | 37 | 9g 76s 91c | 4g 20s (Frostbolt, Fire Blast, Arcane Explosion) | 1g 40s |
 | 38 | 14g 91s 18c | - | - |
-| 39 | 13g 78s 29c | 9g (Frost Nova, Ice Armor, Arcane Missiles, Flamestrike, Conjure Water, Polymorph) | 9g |
+| 39 | 13g 78s 21c | 9g (Frost Nova, Ice Armor, Arcane Missiles, Flamestrike, Conjure Water, Polymorph) | 9g |
 
-Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Gnomeregan Exiles; Forever's not confirmed). At this income you would have about 71g 60s 70c by 40 after training and the plan's gear, enough for the mount at 43.
+Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Gnomeregan Exiles; Forever's not confirmed). At this income you would have about 82g 93s 11c by 40 after training and the plan's gear, enough for the mount at 41.
 
-Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 11g 82s 71c before 40 and 15g 28s 85c in all; you would reach 60 with about 584g 94s 48c after the mount.
+Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 0c before 40 and 0c in all; you would reach 60 with about 590g 95s 68c after the mount.
 
 ## Now (level 26)
 
@@ -61,57 +60,57 @@ Count a piece's stats in spell power: 1 intellect = 0.22, 1 spirit = 0.27, 1 sta
 
 | Slot | You wear (or the plan's next piece) | Worth (spell power) | A find must reach | Next planned upgrade |
 |---|---|---|---|---|
-| head | Azure Silk Hood (planned, level 27) | 9 | 13 | 39 |
+| head | Sage's Circlet of Frozen Wrath (planned, level 26) | 15 | 17 | 45 |
 | neck | Ephemeral Choker | 1 | 5 | 41 |
-| shoulder | Double-Stitched Woolen Shoulders | 4 | 17 | 31 |
+| shoulder | Double-Stitched Woolen Shoulders | 4 | 9 | 37 |
 | back | Seer's Cape | 1 | 17 | 30 |
-| chest | Rotmender's Garb | 6 | 15 | 33 |
+| chest | Rotmender's Garb | 6 | 13 | 35 |
 | wrist | Bridgebreaker Bindings | 3 | 9 | 36 |
 | hands | Town Clerk's Mittens | 5 | 8 | 40 |
 | waist | Elder's Sash of Frozen Wrath | 11 | 12 | - |
-| legs | Durable Pants of Frozen Wrath (planned, level 29) | 16 | 17 | - |
+| legs | Greenweave Leggings of Frozen Wrath (planned, level 26) | 12 | 17 | 37 |
 | feet | Incinerator's Boots | 1 | 14 | 31 |
 | finger1 | Minor Channeling Ring (planned, level 26) | 5 | 6 | - |
 | finger2 | Slain Baron's Signet | 0 | 13 | 31 |
 | trinket1 | empty | 0 | 1 | - |
 | trinket2 | empty | 0 | 1 | - |
 | weapon | Fallen Dragon's Scepter (planned, level 26) | 42 | 43 | - |
-| ranged | Lesser Mystic Wand (planned, level 27) | 10 | 12 | 49 |
+| ranged | Thunderwood (planned, level 26) | 16 | 17 | - |
 
 ### Enchant
 
 - **Bridgebreaker Bindings** (wrist): skip, Enchant Bracer - Lesser Spirit saves only about 4 min of killing before you replace it at level 36.
-- **Rotmender's Garb** (chest): skip, Enchant Chest - Intellect saves only about 2 min of killing before you replace it at level 33.
+- **Rotmender's Garb** (chest): skip, Enchant Chest - Intellect saves only about 3 min of killing before you replace it at level 35.
 - **Fallen Dragon's Scepter** (weapon, once you have it at level 26): skip, Enchant 2H Weapon - Lesser Intellect saves only about 19 min of killing before you replace it.
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 1.5 hours old). "For your trip": enough to keep it up for about 3.0 hours of play, to your next training at level 28 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 0.7 hours old). "For your trip": enough to keep it up for about 3.0 hours of play, to your next training at level 28 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|
-| Weapon oil | Minor Wizard Oil | +8 spell power | 4.0% | 30 min | make it (Enchanting 45) | 2s 90c | ×6 (17s 40c) | no: saves 1.2 min an hour, costs 1.7 |
-| Food | Briny Seafood Stew | +14 spell power, +5% kill experience | 6.9% | 15 min | buy | 28s 78c | ×12 (3g 45s 36c) | no: saves 3.6 min an hour, costs 32.8 |
-| Food | Smoked Sagefish | +4 spell power, +5% kill experience | 2.0% | 15 min | make it (Cooking 80) | 1s 12c | ×12 (13s 44c) | yes: saves 2.1 min an hour, costs 1.3 |
-| Food | Calcified Smoothie | +10 spirit, +5% kill experience | 1.3% | 15 min | buy | 8s 50c | ×12 (1g 2s) | no: saves 1.9 min an hour, costs 9.7 |
-| Elixir | Lesser Arcane Elixir | +15 spell power | 7.4% | 30 min | buy | 8s 54c | ×6 (51s 24c) | no: saves 2.2 min an hour, costs 4.9 |
-| Elixir | Lesser Mageblood Elixir | +6 mp5 | 2.5% | 30 min | buy | 7s 42c | ×6 (44s 52c) | no: saves 0.8 min an hour, costs 4.2 |
-| Elixir | Minor Arcane Elixir | +5 spell power | 2.5% | 30 min | buy | 68c | ×6 (4s 8c) | yes: saves 0.7 min an hour, costs 0.4 |
-| Scroll | Scroll of Spirit II | +7 spirit | 0.9% | 30 min | buy | 1s 88c | ×6 (11s 28c) | no: saves 0.3 min an hour, costs 1.1 |
-| Scroll | Scroll of Intellect II | +8 intellect | 0.9% | 30 min | buy | 1s | ×6 (6s) | no: saves 0.3 min an hour, costs 0.6 |
+| Weapon oil | Minor Wizard Oil | +8 spell power | 4.0% | 30 min | buy (cheaper than making it: 3s 5c in materials) | 3s | ×6 (18s) | no: saves 1.2 min an hour, costs 1.7 |
+| Food | Briny Seafood Stew | +14 spell power, +5% kill experience | 6.9% | 15 min | buy | 28s 40c | ×12 (3g 40s 80c) | no: saves 3.6 min an hour, costs 32.4 |
+| Food | Smoked Sagefish | +4 spell power, +5% kill experience | 2.0% | 15 min | make it (Cooking 80) | 1s 2c | ×12 (12s 24c) | yes: saves 2.1 min an hour, costs 1.2 |
+| Food | Calcified Smoothie | +10 spirit, +5% kill experience | 1.3% | 15 min | buy | 11s 99c | ×12 (1g 43s 88c) | no: saves 1.9 min an hour, costs 13.7 |
+| Elixir | Lesser Arcane Elixir | +15 spell power | 7.4% | 30 min | buy | 8s 63c | ×6 (51s 78c) | no: saves 2.2 min an hour, costs 4.9 |
+| Elixir | Lesser Mageblood Elixir | +6 mp5 | 2.5% | 30 min | buy | 6s 97c | ×6 (41s 82c) | no: saves 0.8 min an hour, costs 4.0 |
+| Elixir | Minor Arcane Elixir | +5 spell power | 2.5% | 30 min | buy | 63c | ×6 (3s 78c) | yes: saves 0.7 min an hour, costs 0.4 |
+| Scroll | Scroll of Spirit II | +7 spirit | 0.9% | 30 min | buy | 1s 20c | ×6 (7s 20c) | no: saves 0.3 min an hour, costs 0.7 |
+| Scroll | Scroll of Intellect II | +8 intellect | 0.9% | 30 min | buy | 1s 98c | ×6 (11s 88c) | no: saves 0.3 min an hour, costs 1.1 |
 
 One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience is extra: a food's +5% speeds up the experience you get from kills, not from quests. Elixirs: Classic lets several stack; Forever's rule is not confirmed.
 
 ### Quests to do
 
-- **weapon**: Fallen Dragon's Scepter, 7.3% faster kills, replaces Coldspire Staff (wear it right away; best to the end of leveling; saves about 123 min of killing). quest "Stopping the Cycle" (Wetlands). Not on your RestedXP route: a detour to Wetlands. Why it stays: Staff of Jordan at 35, 7.8% faster, saves about 126 min, but its 135g 27s takes about 2692 min of play to earn.
-- **finger1**: Minor Channeling Ring, 2.7% faster kills, replaces Avala's Binding (wear it right away; best to the end of leveling; saves about 42 min of killing). quest "WANTED: Chok'sul" (Loch Modan, level 22; from WANTED). Not on your RestedXP route: from WANTED. Why it stays: Snake Hoop at 33, 0.6% faster, saves about 10 min before 60; Band of the Unicorn at 43, 1.7% faster, saves about 22 min, but its 8g 39s takes about 86 min of play to earn.
+- **weapon**: Fallen Dragon's Scepter, 7.3% faster kills, replaces Coldspire Staff (wear it right away; best to the end of leveling; saves about 123 min of killing). quest "Stopping the Cycle" (Wetlands). Not on your RestedXP route: a detour to Wetlands. Why it stays: Staff of Jordan at 35, 7.8% faster, saves about 126 min, but its 99g takes about 1970 min of play to earn.
+- **finger1**: Minor Channeling Ring, 2.7% faster kills, replaces Avala's Binding (wear it right away; best to the end of leveling; saves about 42 min of killing). quest "WANTED: Chok'sul" (Loch Modan, level 22; from WANTED). Not on your RestedXP route: from WANTED. Why it stays: Snake Hoop at 33, 0.6% faster, saves about 10 min before 60; Band of the Unicorn at 43, 1.7% faster, saves about 22 min, but its 4g 39s takes about 45 min of play to earn.
 
-### Look for on the Auction House (not listed this hour, usually is; usual prices)
+### Buy on the Auction House (listed now; prices change hourly; most minutes saved per gold first)
 
-- **head**: Azure Silk Hood, 4.3% faster kills (wear it right away; best until level 39; saves about 29 min of killing). Tailoring: learn it first (trainer; Classic asked skill 145, Forever often less; you have 110); Auction House: listed now at 25s, usually about 11s: wait for a cheaper one. Why it stays: Durable Hat of Frozen Wrath at 27, 2.7% faster, saves about 19 min before its next upgrade; Conjurer's Hood of Magic at 31, 2.9% faster, saves about 16 min before its next upgrade; Vital Headband of Magic at 31, 2.9% faster, saves about 16 min before its next upgrade. Saves about 29 min of killing; earning its price takes about 3 min of play. Fits your gear budget (1g 18s 81c left after it).
-- **legs**: Durable Pants of Frozen Wrath, 5.6% faster kills, replaces Rotmender's Leggings (wear it right away; best to the end of leveling; saves about 82 min of killing). Auction House: usually listed (in 24% of the hourly snapshots), about 1g 29s, not this hour. Why it stays: Lunar Leggings of Frozen Wrath at 40, 1.7% faster, saves about 26 min, but its 2g 90s takes about 47 min of play to earn; Frostweave Pants at 51, 1.8% faster, saves about 17 min before 60; Ghostweave Pants at 53, 2.6% faster, saves about 21 min, but its 13g 17s 96c takes about 63 min of play to earn. Saves about 82 min of killing; earning its price takes about 41 min of play. Fits your gear budget (75s 7c left after it).
-- **ranged**: Lesser Mystic Wand, 1.7% faster kills, replaces Deepblaze (wear it right away; best until level 49; saves about 22 min of killing). Enchanting: learn it first (trainer; Classic asked skill 155, Forever often less; you have 150); Auction House now: 49s. Why it stays: Thunderwood at 26, 2.9% faster, saves about 35 min, but its 2g 99s takes about 85 min of play to earn; Freezing Shard at 34, 3.9% faster, saves about 46 min, but its 125g takes about 2540 min of play to earn. Saves about 22 min of killing; earning its price takes about 15 min of play. Fits your gear budget (69s 81c left after it).
+- **head**: Sage's Circlet of Frozen Wrath, 7.2% faster kills (wear it right away; best until level 45; saves about 75 min of killing). Auction House now: 1g 49s. Why it stays: Vital Headband of Magic at 31, 0.6% faster, saves about 6 min before its next upgrade; Darkmist Wizard Hat of Frozen Wrath at 39, 2.0% faster, saves about 12 min before its next upgrade; Gossamer Headpiece of Frozen Wrath at 42, 2.4% faster, saves about 7 min before its next upgrade. Saves about 75 min of killing; earning its price takes about 42 min of play.
+- **legs**: Greenweave Leggings of Frozen Wrath, 4.2% faster kills, replaces Rotmender's Leggings (wear it right away; best until level 37; saves about 25 min of killing). Auction House now: 79s. Why it stays: Durable Pants of Frozen Wrath at 28, 1.9% faster, saves about 11 min before its next upgrade; Conjurer's Breeches of Frozen Wrath at 32, 2.3% faster, saves about 8 min before its next upgrade; Conjurer's Breeches of Magic at 32, 2.4% faster, saves about 8 min before its next upgrade. Saves about 25 min of killing; earning its price takes about 23 min of play.
+- **ranged**: Thunderwood, 4.6% faster kills, replaces Deepblaze (wear it right away; best to the end of leveling; saves about 79 min of killing). Auction House now: 2g 60s. Why it stays: Freezing Shard at 34, 2.0% faster, saves about 39 min, but its 125g takes about 2540 min of play to earn; Wizard's Hand of Frozen Wrath at 48, 2.3% faster, but a later upgrade of the slot saves more without it; Greater Eternal Wand at 55, 2.4% faster, saves about 17 min before 60. Saves about 79 min of killing; earning its price takes about 74 min of play.
 
 ### Dungeon runs
 
@@ -121,7 +120,7 @@ Run each once, with its quests in your log first: the quests' experience is the 
   - Pick up first: In Search of Thaelrid (level 24, from Argent Guard Manados (Darnassus 55.4, 25.0); a trip to Darnassus first); Twilight Falls (level 25, from Argent Guard Manados (Darnassus 55.4, 25.0); a trip to Darnassus first)
 - **Excavation Site: Wetlands** (27-35, estimated), run at level 28: your RestedXP guide runs it then and picks up 8 of its quests.
   - Already in your log: Fire Taboo (level 23); Songblade Search (level 28)
-- **The Stockade** (24-32), run at level 26: worth it if you like it: 2 quests at full experience; your guide ran it at step 122 of its 24-27 part, which you have passed.
+- **The Stockade** (24-32), run at level 26: worth a detour for 2 quests at full experience; your guide ran it at step 122 of its 24-27 part, which you have passed.
   - Pick up first: The Color of Blood (level 26, from Stormwind City 72.4, 47.7)
   - Already in your log: What Comes Around... (level 25)
   - Left out: The Unsent Letter (10 quests here): it starts from An Unsent Letter, which Edwin VanCleef drops in The Deadmines: you have outgrown The Deadmines
@@ -131,21 +130,21 @@ Run each once, with its quests in your log first: the quests' experience is the 
 
 Things your RestedXP guide did before your step that it still counts on: without them it skips the steps that hand them in or take their next part. Do each by its deadline (listed in When to leave the guide too).
 
-- **Level 26, step 179 of the guide's 24-27 part**, right after you hand in "Return to Sven" to Sven Yorgen (Duskwood 7.8, 34.1): **Run The Stockade** (to stay in step with your guide). 2 quests at full experience; your guide ran it before where you are now; finish What Comes Around... here, before step 199 of the guide's 24-27 part: the guide hands it in at step 199 of its 24-27 part. Pick up first: already in your log: What Comes Around... (level 25); The Color of Blood (level 26, from Stormwind City 72.4, 47.7).
-- **Level 27, step 32 of the guide's 27-29 part**, right after you hand in "Researching the Corruption" to Gershala Nightwhisper (Darkshore 38.3, 43.0): **Pick up The Tower of Althalaxx (5 parts), level 18-24** (catch up with your guide). Before step 20 of the guide's 29-30 part: the guide takes its next part, "The Tower of Althalaxx", at step 20 of its 29-30 part; from Sentinel Elissa Starbreeze (Darkshore 39.0, 43.6).
-- **Level 27, step 32 of the guide's 27-29 part**, right after you hand in "Researching the Corruption" to Gershala Nightwhisper (Darkshore 38.3, 43.0): **Pick up The Absent Minded Prospector (4 parts), level 20** (catch up with your guide). Before step 39 of the guide's 27-29 part: the guide takes its next part, "The Absent Minded Prospector", at step 39 of its 27-29 part; from Archaeologist Hollee (Darkshore 37.4, 41.8).
+- **Level 26, step 191 of the guide's 24-27 part**, when the guide brings you to Felicia Maline (Duskwood 77.5, 44.3), before the flight to Redridge: **Run The Stockade** (to stay in step with your guide). 2 quests at full experience; your guide ran it before where you are now; finish What Comes Around... here, before step 199 of the guide's 24-27 part: the guide hands it in at step 199 of its 24-27 part. Pick up first: already in your log: What Comes Around... (level 25); The Color of Blood (level 26, from Stormwind City 72.4, 47.7).
+- **Level 27, step 15 of the guide's 27-29 part**, when the guide brings you to Caylais Moonfeather (Darkshore 36.3, 45.6), before the flight to Ashenvale: **Pick up The Tower of Althalaxx (5 parts), level 18-24** (catch up with your guide). Before step 20 of the guide's 29-30 part: the guide takes its next part, "The Tower of Althalaxx", at step 20 of its 29-30 part; from Sentinel Elissa Starbreeze (Darkshore 39.0, 43.6).
+- **Level 27, step 15 of the guide's 27-29 part**, when the guide brings you to Caylais Moonfeather (Darkshore 36.3, 45.6), before the flight to Ashenvale: **Pick up The Absent Minded Prospector (4 parts), level 20** (catch up with your guide). Before step 39 of the guide's 27-29 part: the guide takes its next part, "The Absent Minded Prospector", at step 39 of its 27-29 part; from Archaeologist Hollee (Darkshore 37.4, 41.8).
 
 ### When to leave the guide
 
 In your RestedXP route's order (the full list: When to leave the guide, below).
 
-- **Level 26, step 179 of the guide's 24-27 part**, right after you hand in "Return to Sven" to Sven Yorgen (Duskwood 7.8, 34.1): **Run The Stockade** (to stay in step with your guide). 2 quests at full experience; your guide ran it before where you are now; finish What Comes Around... here, before step 199 of the guide's 24-27 part: the guide hands it in at step 199 of its 24-27 part. Pick up first: already in your log: What Comes Around... (level 25); The Color of Blood (level 26, from Stormwind City 72.4, 47.7).
-- **Level 27, step 2 of the guide's 27-29 part**, when the guide brings you to Elsharin (Stormwind City 36.9, 81.1): **High Sorcerer Andromath** (worth it if you like it). +1,050 experience in about 1 min, about 3 min ahead of your usual pace; from Jennea Cannon (Stormwind City 36.9, 81.1).
-- **Level 27, step 12 of the guide's 27-29 part**, when the guide brings you to Wetlands (Wetlands 4.6, 57.2): **Stopping the Cycle** (for the gear). Rewards Fallen Dragon's Scepter; who gives it is not in the data, so ask around while the guide has you in Wetlands.
+- **Level 26, step 191 of the guide's 24-27 part**, when the guide brings you to Felicia Maline (Duskwood 77.5, 44.3), before the flight to Redridge: **Run The Stockade** (to stay in step with your guide). 2 quests at full experience; your guide ran it before where you are now; finish What Comes Around... here, before step 199 of the guide's 24-27 part: the guide hands it in at step 199 of its 24-27 part. Pick up first: already in your log: What Comes Around... (level 25); The Color of Blood (level 26, from Stormwind City 72.4, 47.7).
+- **Level 27, step 2 of the guide's 27-29 part**, when the guide brings you to Elsharin (Stormwind City 36.9, 81.1), before the trip to Ironforge: **High Sorcerer Andromath** (worth it if you like it). +1,050 experience in about 1 min, about 3 min ahead of your usual pace; from Jennea Cannon (Stormwind City 36.9, 81.1).
+- **Level 27, step 12 of the guide's 27-29 part**, when the guide brings you to Wetlands (Wetlands 4.6, 57.2), before the trip to Darkshore: **Stopping the Cycle** (for the gear). Rewards Fallen Dragon's Scepter; who gives it is not in the data, so ask around while the guide has you in Wetlands.
+- **Level 27, step 15 of the guide's 27-29 part**, when the guide brings you to Caylais Moonfeather (Darkshore 36.3, 45.6), before the flight to Ashenvale: **Pick up The Tower of Althalaxx (5 parts), level 18-24** (catch up with your guide). Before step 20 of the guide's 29-30 part: the guide takes its next part, "The Tower of Althalaxx", at step 20 of its 29-30 part; from Sentinel Elissa Starbreeze (Darkshore 39.0, 43.6).
+- **Level 27, step 15 of the guide's 27-29 part**, when the guide brings you to Caylais Moonfeather (Darkshore 36.3, 45.6), before the flight to Ashenvale: **Pick up The Absent Minded Prospector (4 parts), level 20** (catch up with your guide). Before step 39 of the guide's 27-29 part: the guide takes its next part, "The Absent Minded Prospector", at step 39 of its 27-29 part; from Archaeologist Hollee (Darkshore 37.4, 41.8).
 - **Level 27, step 16 of the guide's 27-29 part**, when the guide brings you to Ashenvale (Ashenvale 13.6, 13.4): **Run Blackfathom Deeps** (with your guide). Your guide runs it here and takes 2 of its quests. Pick up first: In Search of Thaelrid (level 24, from Argent Guard Manados (Darnassus 55.4, 25.0); a trip to Darnassus first); Twilight Falls (level 25, from Argent Guard Manados (Darnassus 55.4, 25.0); a trip to Darnassus first).
-- **Level 27, step 32 of the guide's 27-29 part**, right after you hand in "Researching the Corruption" to Gershala Nightwhisper (Darkshore 38.3, 43.0): **Pick up The Tower of Althalaxx (5 parts), level 18-24** (catch up with your guide). Before step 20 of the guide's 29-30 part: the guide takes its next part, "The Tower of Althalaxx", at step 20 of its 29-30 part; from Sentinel Elissa Starbreeze (Darkshore 39.0, 43.6).
-- **Level 27, step 32 of the guide's 27-29 part**, right after you hand in "Researching the Corruption" to Gershala Nightwhisper (Darkshore 38.3, 43.0): **Pick up The Absent Minded Prospector (4 parts), level 20** (catch up with your guide). Before step 39 of the guide's 27-29 part: the guide takes its next part, "The Absent Minded Prospector", at step 39 of its 27-29 part; from Archaeologist Hollee (Darkshore 37.4, 41.8).
-- **Level 27, step 34 of the guide's 27-29 part**, right after you hand in "Tinkmaster Overspark" to Tinkmaster Overspark (Ironforge 69.5, 50.3): **WANTED: Chok'sul** (for the gear). +1,861 experience in about 22 min; rewards Minor Channeling Ring (about 42 min of faster killing), about 25 min ahead in all; from WANTED (Loch Modan 37.3, 46.5).
+- **Level 27, step 34 of the guide's 27-29 part**, right after you hand in "Tinkmaster Overspark" to Tinkmaster Overspark (Ironforge 69.5, 50.3), before the flight to Wetlands: **WANTED: Chok'sul** (for the gear). +1,861 experience in about 22 min; rewards Minor Channeling Ring (about 42 min of faster killing), about 25 min ahead in all; from WANTED (Loch Modan 37.3, 46.5).
 - **Level 28, step 130 of the guide's 27-29 part**, when the guide brings you to Wetlands (Wetlands 52.1, 65.3): **Run Excavation Site: Wetlands** (with your guide). Your guide runs it here and takes 8 of its quests. Pick up first: already in your log: Fire Taboo (level 23); already in your log: Songblade Search (level 28).
 - **Level 29, step 177 of the guide's 27-29 part**, when the guide has you pick up "Lightforge Iron" from Glorin Steelbrow (Wetlands 10.6, 60.6): **Lightforge Ingots** (clear win). +2,884 experience in about 6 min, about 3 min ahead of your usual pace; from Glorin Steelbrow (Wetlands 10.6, 60.6).
 
@@ -157,82 +156,77 @@ In your RestedXP route's order (the full list: When to leave the guide, below).
 
 The cheapest way up with the recipes you know, materials at today's prices (auction house or vendor, the cheaper). Crafts are expected counts: a yellow or green recipe does not always give a point. Forever lets you learn recipes earlier than Classic did, so check your trainer whenever a profession stalls.
 
-Crafts in your plan:
-
-- Robe of Power (chest, level 33): learn it (trainer); Classic asked Tailoring 190, you have 110.
-- Lesser Eternal Wand (ranged, level 49): learn it (a Forever recipe: where it is taught is not in the data yet); Classic asked Enchanting 265, you have 150.
-
 ### Tailoring 110 to 150
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 110-118 | Spidersilk Boots | 8 | 6s 80c |
-| 118-119 | Bolt of Silk Cloth | 5 | 4s 74c |
-| 119-125 | Red Woolen Bag | 7 | 43s 63c |
-| 125-129 | White Woolen Dress | 8 | 40s 56c |
-| 129-132 | Double-stitched Woolen Shoulders | 7 | 44s 36c |
-| 132-134 | Stylish Red Shirt | 6 | 41s 73c |
-| 134-135 | Red Woolen Bag | 2 | 23s 41c |
-| 135-136 | Stylish Red Shirt | 4 | 29s 19c |
-| 136-148 | Red Woolen Bag | 61 | 7g 68s 76c |
-| 148-150 | Spidersilk Boots | 6 | 4g 33s 85c |
+| 110-111 | Soft-soled Linen Boots | 7 | makes 1s 19c |
+| 111-116 | Bolt of Silk Cloth | 7 | makes 2s 21c |
+| 116-124 | Spidersilk Boots | 8 | 17s 44c |
+| 124-129 | Red Woolen Bag | 7 | 50s 34c |
+| 129-132 | White Woolen Dress | 7 | 46s 39c |
+| 132-134 | Double-stitched Woolen Shoulders | 6 | 47s 56c |
+| 134-135 | Red Woolen Bag | 2 | 27s 90c |
+| 135-137 | Stylish Red Shirt | 7 | 70s 93c |
+| 137-148 | Red Woolen Bag | 59 | 9g 6s 77c |
+| 148-150 | Spidersilk Boots | 6 | 4g 24s 58c |
 
-You spend about 14g 37s 2c in all to reach 150, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
-Materials: Bolt of Woolen Cloth x355, Spider's Silk x56, Iridescent Pearl x14, Bolt of Silk Cloth x28, Fine Thread x102, Medium Leather x56.
+You spend about 15g 88s 49c in all to reach 150, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
+Materials: Bolt of Woolen Cloth x333, Spider's Silk x56, Bolt of Silk Cloth x28, Iridescent Pearl x14, Fine Thread x101, Silk Cloth x30.
 
 ### Enchanting 150 to 225
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 150-158 | Minor Mana Oil | 8 | 24s 13c |
-| 158-190 | Enchant Boots - Minor Stamina | 162 | 5g 58s 45c |
+| 150-158 | Minor Mana Oil | 8 | 28s |
+| 158-190 | Enchant Boots - Minor Stamina | 162 | 6g 55s 85c |
 
-You spend about 5g 82s 58c in all to reach 190, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 190 no recipe you know gives points: learn new ones at the trainer.
-Materials: Strange Dust x649, Soul Dust x8, Maple Seed x16, Leaded Vial x8.
+You spend about 6g 83s 85c in all to reach 190, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 190 no recipe you know gives points: learn new ones at the trainer.
+Materials: Strange Dust x649, Maple Seed x16, Soul Dust x8, Leaded Vial x8.
 
 ### Cooking 149 to 150
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 149-150 | Smoked Sagefish | 4 | makes 1s 87c |
+| 149-150 | Smoked Sagefish | 4 | makes 1s 40c |
 
-You make about 1s 87c in all to reach 150, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
+You make about 1s 40c in all to reach 150, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
 Materials: Raw Sagefish x4, Mild Spices x4.
 
 ### First Aid 56 to 150
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 56-58 | Minor Healing Potion | 2 | 78c |
-| 58-64 | Heavy Linen Bandage | 8 | 2s 58c |
-| 64-81 | Minor Healing Potion | 31 | 13s 77c |
-| 81-82 | Heavy Linen Bandage | 3 | 1s 30c |
-| 82-83 | Minor Healing Potion | 3 | 1s 42c |
-| 83-100 | Heavy Linen Bandage | 172 | 89s 43c |
+| 56-63 | Minor Healing Potion | 8 | 2s 92c |
+| 63-68 | Heavy Linen Bandage | 7 | 2s 86c |
+| 68-84 | Minor Healing Potion | 35 | 16s 2c |
+| 84-85 | Heavy Linen Bandage | 3 | 1s 66c |
+| 85-87 | Minor Healing Potion | 8 | 3s 88c |
+| 87-100 | Heavy Linen Bandage | 159 | 92s 22c |
 
-You spend about 1g 9s 27c in all to reach 100, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 100 no recipe you know gives points: learn new ones at the trainer.
-Materials: Linen Cloth x364, Peacebloom x36, Empty Vial x36, Mild Spices x36.
+You spend about 1g 19s 57c in all to reach 100, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 100 no recipe you know gives points: learn new ones at the trainer.
+Materials: Linen Cloth x339, Peacebloom x51, Empty Vial x51, Mild Spices x51.
 
 ## Your gear
 
 | Slot | Item | Worth at your level | Replaced at |
 |---|---|---|---|
-| head | **empty** | 0 | level 27: Azure Silk Hood |
+| head | **empty** | 0 | level 26: Sage's Circlet of Frozen Wrath |
 | neck | Ephemeral Choker | 0.7% faster kills | level 41: Talvash's Enhancing Necklace |
-| shoulder | Double-Stitched Woolen Shoulders | 2.1% faster kills | level 31: Conjurer's Mantle of Frozen Wrath |
+| shoulder | Double-Stitched Woolen Shoulders | 2.1% faster kills | level 37: Regal Mantle of Frozen Wrath |
 | back | Seer's Cape | 0.5% faster kills | level 30: Azure Silk Cloak |
-| chest | Rotmender's Garb | 3.2% faster kills | level 33: Robe of Power |
+| chest | Rotmender's Garb | 3.2% faster kills | level 35: Robe of the Magi |
 | wrist | Bridgebreaker Bindings | 1.5% faster kills | level 36: Regal Cuffs of Frozen Wrath |
 | hands | Town Clerk's Mittens | 2.3% faster kills | level 40: Dreamweave Gloves |
 | waist | Elder's Sash of Frozen Wrath | 5.5% faster kills | not before 60 by 0.5% |
-| legs | Rotmender's Leggings | 1.8% faster kills | level 29: Durable Pants of Frozen Wrath |
+| legs | Rotmender's Leggings | 1.8% faster kills | level 26: Greenweave Leggings of Frozen Wrath |
 | feet | Incinerator's Boots (Enchanted: Stamina +3) | 0.7% faster kills | level 31: Earthen Silk Slippers |
 | finger1 | Avala's Binding | 0.0% faster kills | level 26: Minor Channeling Ring |
 | finger2 | Slain Baron's Signet | 0.0% faster kills | level 31: Ring of Forlorn Spirits |
 | trinket1 | **empty** | 0 | nothing worth 0.5% before 60 |
 | trinket2 | **empty** | 0 | nothing worth 0.5% before 60 |
 | weapon | Coldspire Staff (Enchanted: Intellect +5) | 14.0% faster kills | level 26: Fallen Dragon's Scepter |
-| ranged | Deepblaze | 3.4% faster kills | level 27: Lesser Mystic Wand |
+| ranged | Deepblaze | 3.4% faster kills | level 26: Thunderwood |
 
 ## Level by level
 
@@ -242,7 +236,7 @@ Each upgrade worth 0.5% faster kills or more, under the level at which you can g
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **back**: Azure Silk Cloak, 3.4% faster kills, replaces Seer's Cape (wear it right away; best to the end of leveling; saves about 55 min of killing). Tailoring: learn it first (pattern: Pattern: Azure Silk Cloak (vendor); Classic asked skill 175, Forever often less; you have 110); Auction House now: 55s. Why it stays: Sparkleshell Cloak of Frozen Wrath at 30, only 0.0% faster; Captain's Cloak of Frozen Wrath at 34, 0.6% faster, saves about 7 min before 60; Opulent Cape of Frozen Wrath at 43, 0.9% faster, saves about 11 min before 60. Saves about 55 min of killing; earning its price takes about 6 min of play. Fits your gear budget (55s 43c left after it).
+- **back**: Azure Silk Cloak, 3.4% faster kills, replaces Seer's Cape (wear it right away; best to the end of leveling; saves about 55 min of killing). Tailoring: learn it first (pattern: Pattern: Azure Silk Cloak (vendor); Classic asked skill 175, Forever often less; you have 110); Auction House now: 44s. Why it stays: Captain's Cloak of Frozen Wrath at 34, 0.6% faster, saves about 7 min before 60; Opulent Cape of Frozen Wrath at 43, 0.9% faster, saves about 11 min before 60. Saves about 55 min of killing; earning its price takes about 7 min of play.
 
 
 ### Level 31
@@ -253,36 +247,36 @@ Each upgrade worth 0.5% faster kills or more, under the level at which you can g
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **feet**: Earthen Silk Slippers, 9.7% faster kills, replaces Incinerator's Boots (wear it right away; best to the end of leveling; saves about 157 min of killing). Tailoring: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 165 in the client's data; you have 110); Auction House now: 1g 99s. Saves about 157 min of killing; earning its price takes about 19 min of play. Fits your gear budget (1g 63s 44c left after it).
-- **shoulder**: Conjurer's Mantle of Frozen Wrath, 3.8% faster kills, replaces Double-Stitched Woolen Shoulders (wear it right away; best to the end of leveling; saves about 59 min of killing). Auction House: usually listed (in 20% of the hourly snapshots), about 1g 11s, not this hour. Why it stays: Regal Mantle of Frozen Wrath at 37, 0.7% faster, saves about 12 min before 60; Netherfroth Shoulders at 42, 1.2% faster, saves about 19 min before 60; Argent Shoulders at 56, 1.5% faster, saves about 8 min before 60. Saves about 59 min of killing; earning its price takes about 26 min of play. Fits your gear budget (52s 44c left after it).
+- **feet**: Earthen Silk Slippers, 9.7% faster kills, replaces Incinerator's Boots (wear it right away; best to the end of leveling; saves about 157 min of killing). Tailoring: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 165 in the client's data; you have 110); Auction House now: 1g 75s. Saves about 157 min of killing; earning its price takes about 16 min of play.
 
 
-### Level 33
+### Level 35
 
-#### Craft
+#### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **chest**: Robe of Power, 4.6% faster kills, replaces Rotmender's Garb (wear it right away; best to the end of leveling; saves about 78 min of killing). Tailoring: learn it first (trainer; Classic asked skill 190, Forever often less; you have 110). Why it stays: Robe of the Magi at 35, 1.8% faster, saves about 27 min, but its 5g 40s takes about 107 min of play to earn; Robe of Winter Night at 52, 2.1% faster, saves about 16 min before 60; Robe of the Archmage at 57, 1.9% faster, saves about 8 min before 60. If you do not craft it, wear Twilight Armor of Frozen Wrath from level 35 (4.1% faster kills; Auction House: usually listed (in 39% of the hourly snapshots), about 1g 75s, not this hour). Materials: Bolt of Mageweave x2, Elemental Earth x2, Elemental Water x2, Elemental Fire x2, Elemental Air x2, Silken Thread x2 (about 3g 34s at today's prices).
+- **chest**: Robe of the Magi, 5.7% faster kills, replaces Rotmender's Garb (wear it right away; best to the end of leveling; saves about 98 min of killing). Auction House now: 3g 77s. Why it stays: Robe of Winter Night at 52, 1.4% faster, saves about 11 min before 60; Robe of the Archmage at 57, 1.5% faster, saves about 6 min before 60. Saves about 98 min of killing; earning its price takes about 83 min of play.
 
 
 ### Level 36
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **wrist**: Regal Cuffs of Frozen Wrath, 2.4% faster kills, replaces Bridgebreaker Bindings (wear it right away; best to the end of leveling; saves about 39 min of killing). Auction House now: 1g 88s. Why it stays: Netherfroth Cuffs at 45, 0.8% faster, saves about 11 min before 60. Saves about 39 min of killing; earning its price takes about 27 min of play. Fits your gear budget (4g 99s 50c left after it).
+- **wrist**: Regal Cuffs of Frozen Wrath, 2.4% faster kills, replaces Bridgebreaker Bindings (wear it right away; best to the end of leveling; saves about 39 min of killing). Auction House: usually listed (in 34% of the hourly snapshots), about 1g 88s, not this hour. Why it stays: Netherfroth Cuffs at 45, 0.8% faster, saves about 11 min before 60. Saves about 39 min of killing; earning its price takes about 27 min of play.
 
 
-### Level 39
+### Level 37
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **head**: Darkmist Wizard Hat of Frozen Wrath, 3.6% faster kills, replaces Azure Silk Hood (wear it right away; best to the end of leveling; saves about 54 min of killing). Auction House: usually listed (in 24% of the hourly snapshots), about 2g 49s, not this hour. Why it stays: Gossamer Headpiece of Frozen Wrath at 42, 0.6% faster, saves about 8 min before 60; Dreamweave Circlet at 45, 1.2% faster, saves about 18 min before 60. Saves about 54 min of killing; earning its price takes about 36 min of play. Fits your gear budget (11g 92s 26c left after it).
+- **shoulder**: Regal Mantle of Frozen Wrath, 3.5% faster kills, replaces Double-Stitched Woolen Shoulders (wear it right away; best to the end of leveling; saves about 55 min of killing). Auction House now: 2g 25s. Why it stays: Netherfroth Shoulders at 42, 0.6% faster, saves about 10 min before 60; Argent Shoulders at 56, 1.3% faster, saves about 7 min before 60. Saves about 55 min of killing; earning its price takes about 33 min of play.
+- **legs**: Sorcerer Pants of Frozen Wrath, 2.5% faster kills, replaces Greenweave Leggings of Frozen Wrath (wear it right away; best to the end of leveling; saves about 39 min of killing). Auction House now: 1g 55s. Why it stays: Lunar Leggings of Frozen Wrath at 40, 0.7% faster, saves about 10 min before 60; Frostweave Pants at 51, 1.1% faster, saves about 12 min before 60; Ghostweave Pants at 53, 2.0% faster, saves about 18 min before 60. Saves about 39 min of killing; earning its price takes about 38 min of play.
 
 
 ### Level 40
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **hands**: Dreamweave Gloves, 4.2% faster kills, replaces Town Clerk's Mittens (wear it right away; best to the end of leveling; saves about 66 min of killing). Tailoring: learn it first (trainer; Classic asked skill 225, Forever often less; you have 110); Auction House now: 4g 28s. Saves about 66 min of killing; earning its price takes about 30 min of play. Fits your gear budget (11g 63s 95c left after it).
+- **hands**: Dreamweave Gloves, 4.2% faster kills, replaces Town Clerk's Mittens (wear it right away; best to the end of leveling; saves about 66 min of killing). Tailoring: learn it first (trainer; Classic asked skill 225, Forever often less; you have 110); Auction House now: 4g 25s. Saves about 66 min of killing; earning its price takes about 27 min of play.
 
 
 ### Level 41
@@ -292,24 +286,24 @@ Each upgrade worth 0.5% faster kills or more, under the level at which you can g
 - **neck**: Talvash's Enhancing Necklace, 2.6% faster kills, replaces Ephemeral Choker (wear it right away; best to the end of leveling; saves about 35 min of killing). quest "Restoring the Necklace" (?, level 44; the chain starts with "The Shattered Necklace", level 37). Not on your RestedXP route (it takes the chain as far as "Lore for a Price", at about level 48): from Talvash del Kissel (Ironforge 36.0, 4.0).
 
 
-### Level 49
+### Level 45
 
-#### Craft
+#### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **ranged**: Lesser Eternal Wand, 3.4% faster kills, replaces Lesser Mystic Wand (wear it right away; best to the end of leveling; saves about 38 min of killing). Enchanting: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 265 in the client's data; you have 150). Why it stays: Greater Eternal Wand at 55, 0.7% faster, saves about 5 min before 60. If you do not craft it, keep your Lesser Mystic Wand. Materials: Lesser Eternal Essence x1, Dream Dust x1, Star Wood x1 (about 1g 61s 74c at today's prices).
+- **head**: Dreamweave Circlet, 2.8% faster kills, replaces Sage's Circlet of Frozen Wrath (wear it right away; best to the end of leveling; saves about 38 min of killing). Tailoring: learn it first (trainer; Classic asked skill 250, Forever often less; you have 110); Auction House now: 8g. Saves about 38 min of killing; earning its price takes about 36 min of play.
 
 
 ## When to leave the guide
 
 Everything worth stepping off your RestedXP route for, in the route's order: the guide's own dungeons where it runs them, side-trip dungeons, detour quests (clear wins, worth it if you like it, for the gear) and the gear plan's quests the route leaves out. Each is tied to the moment in the guide it starts from: the quest it has you hand in or pick up there (the step number is the guide's own count within that part, an estimate). Do it, then pick the guide up where you left it.
 
-- **Level 26, step 179 of the guide's 24-27 part**, right after you hand in "Return to Sven" to Sven Yorgen (Duskwood 7.8, 34.1): **Run The Stockade** (to stay in step with your guide). 2 quests at full experience; your guide ran it before where you are now; finish What Comes Around... here, before step 199 of the guide's 24-27 part: the guide hands it in at step 199 of its 24-27 part. Pick up first: already in your log: What Comes Around... (level 25); The Color of Blood (level 26, from Stormwind City 72.4, 47.7).
-- **Level 27, step 2 of the guide's 27-29 part**, when the guide brings you to Elsharin (Stormwind City 36.9, 81.1): **High Sorcerer Andromath** (worth it if you like it). +1,050 experience in about 1 min, about 3 min ahead of your usual pace; from Jennea Cannon (Stormwind City 36.9, 81.1).
-- **Level 27, step 12 of the guide's 27-29 part**, when the guide brings you to Wetlands (Wetlands 4.6, 57.2): **Stopping the Cycle** (for the gear). Rewards Fallen Dragon's Scepter; who gives it is not in the data, so ask around while the guide has you in Wetlands.
+- **Level 26, step 191 of the guide's 24-27 part**, when the guide brings you to Felicia Maline (Duskwood 77.5, 44.3), before the flight to Redridge: **Run The Stockade** (to stay in step with your guide). 2 quests at full experience; your guide ran it before where you are now; finish What Comes Around... here, before step 199 of the guide's 24-27 part: the guide hands it in at step 199 of its 24-27 part. Pick up first: already in your log: What Comes Around... (level 25); The Color of Blood (level 26, from Stormwind City 72.4, 47.7).
+- **Level 27, step 2 of the guide's 27-29 part**, when the guide brings you to Elsharin (Stormwind City 36.9, 81.1), before the trip to Ironforge: **High Sorcerer Andromath** (worth it if you like it). +1,050 experience in about 1 min, about 3 min ahead of your usual pace; from Jennea Cannon (Stormwind City 36.9, 81.1).
+- **Level 27, step 12 of the guide's 27-29 part**, when the guide brings you to Wetlands (Wetlands 4.6, 57.2), before the trip to Darkshore: **Stopping the Cycle** (for the gear). Rewards Fallen Dragon's Scepter; who gives it is not in the data, so ask around while the guide has you in Wetlands.
+- **Level 27, step 15 of the guide's 27-29 part**, when the guide brings you to Caylais Moonfeather (Darkshore 36.3, 45.6), before the flight to Ashenvale: **Pick up The Tower of Althalaxx (5 parts), level 18-24** (catch up with your guide). Before step 20 of the guide's 29-30 part: the guide takes its next part, "The Tower of Althalaxx", at step 20 of its 29-30 part; from Sentinel Elissa Starbreeze (Darkshore 39.0, 43.6).
+- **Level 27, step 15 of the guide's 27-29 part**, when the guide brings you to Caylais Moonfeather (Darkshore 36.3, 45.6), before the flight to Ashenvale: **Pick up The Absent Minded Prospector (4 parts), level 20** (catch up with your guide). Before step 39 of the guide's 27-29 part: the guide takes its next part, "The Absent Minded Prospector", at step 39 of its 27-29 part; from Archaeologist Hollee (Darkshore 37.4, 41.8).
 - **Level 27, step 16 of the guide's 27-29 part**, when the guide brings you to Ashenvale (Ashenvale 13.6, 13.4): **Run Blackfathom Deeps** (with your guide). Your guide runs it here and takes 2 of its quests. Pick up first: In Search of Thaelrid (level 24, from Argent Guard Manados (Darnassus 55.4, 25.0); a trip to Darnassus first); Twilight Falls (level 25, from Argent Guard Manados (Darnassus 55.4, 25.0); a trip to Darnassus first).
-- **Level 27, step 32 of the guide's 27-29 part**, right after you hand in "Researching the Corruption" to Gershala Nightwhisper (Darkshore 38.3, 43.0): **Pick up The Tower of Althalaxx (5 parts), level 18-24** (catch up with your guide). Before step 20 of the guide's 29-30 part: the guide takes its next part, "The Tower of Althalaxx", at step 20 of its 29-30 part; from Sentinel Elissa Starbreeze (Darkshore 39.0, 43.6).
-- **Level 27, step 32 of the guide's 27-29 part**, right after you hand in "Researching the Corruption" to Gershala Nightwhisper (Darkshore 38.3, 43.0): **Pick up The Absent Minded Prospector (4 parts), level 20** (catch up with your guide). Before step 39 of the guide's 27-29 part: the guide takes its next part, "The Absent Minded Prospector", at step 39 of its 27-29 part; from Archaeologist Hollee (Darkshore 37.4, 41.8).
-- **Level 27, step 34 of the guide's 27-29 part**, right after you hand in "Tinkmaster Overspark" to Tinkmaster Overspark (Ironforge 69.5, 50.3): **WANTED: Chok'sul** (for the gear). +1,861 experience in about 22 min; rewards Minor Channeling Ring (about 42 min of faster killing), about 25 min ahead in all; from WANTED (Loch Modan 37.3, 46.5).
+- **Level 27, step 34 of the guide's 27-29 part**, right after you hand in "Tinkmaster Overspark" to Tinkmaster Overspark (Ironforge 69.5, 50.3), before the flight to Wetlands: **WANTED: Chok'sul** (for the gear). +1,861 experience in about 22 min; rewards Minor Channeling Ring (about 42 min of faster killing), about 25 min ahead in all; from WANTED (Loch Modan 37.3, 46.5).
 - **Level 28, step 130 of the guide's 27-29 part**, when the guide brings you to Wetlands (Wetlands 52.1, 65.3): **Run Excavation Site: Wetlands** (with your guide). Your guide runs it here and takes 8 of its quests. Pick up first: already in your log: Fire Taboo (level 23); already in your log: Songblade Search (level 28).
 - **Level 29, step 177 of the guide's 27-29 part**, when the guide has you pick up "Lightforge Iron" from Glorin Steelbrow (Wetlands 10.6, 60.6): **Lightforge Ingots** (clear win). +2,884 experience in about 6 min, about 3 min ahead of your usual pace; from Glorin Steelbrow (Wetlands 10.6, 60.6).
 - **Level 32, step 161 of the guide's 30-32 part**, when the guide brings you to Dun Morogh (Dun Morogh 22.0, 39.1): **Run Gnomeregan** (with your guide). Your guide runs it here and takes 11 of its quests.
@@ -318,7 +312,7 @@ Everything worth stepping off your RestedXP route for, in the route's order: the
 - **Level 33, step 37 of the guide's 33-34 part**, when the guide brings you to Thousand Needles (Thousand Needles 27.8, 16.7): **Run Razorfen Kraul** (with your guide). Your guide runs it here and takes 4 of its quests.
 - **Level 35, step 35 of the guide's 35-36 part**, while the guide has you on "Down the Scarlet Path" (Desolace 64.0, 91.7): **Run Scarlet Monastery** (with your guide). Your guide runs it here and takes 3 of its quests.
 - **Level 39, step 32 of the guide's 39-40 part**, when the guide has you pick up "Crushridge Bounty" from Marshal Redpath (Hillsbrad Foothills 49.5, 58.7): **Crushridge Warmongers** (clear win). +7,056 experience in about 13 min, about 3 min ahead of your usual pace; from Marshal Redpath (Hillsbrad Foothills 49.5, 58.7).
-- **Level 40, step 9 of the guide's 40-40 part**, when the guide brings you to Dustwallow Marsh (Dustwallow Marsh 29.7, 75.1): **Run Razorfen Downs** (with your guide). Your guide runs it here and takes 4 of its quests.
+- **Level 40, step 9 of the guide's 40-40 part**, when the guide brings you to Dustwallow Marsh (Dustwallow Marsh 29.7, 75.1), before the trip to Wetlands: **Run Razorfen Downs** (with your guide). Your guide runs it here and takes 4 of its quests.
 - **Level 41, step 17 of the guide's 41-41 part**, when the guide has you pick up "A Dwarf and His Tools" from Prospector Ryedol (Badlands 53.8, 43.3): **Fiery Blaze Enchantments** (worth it if you like it). +17,375 experience in about 37 min, about 2 min ahead of your usual pace; from Sigrun Ironhew (Badlands 53.8, 43.3).
 - **Level 42, step 45 of the guide's 41-43 part**, right after you hand in "Troll Witchery" to Brother Nimetz (Stranglethorn Vale 37.8, 3.6): **Mai'Zoth** (clear win). +5,350 experience in about 7 min, about 5 min ahead of your usual pace; from Brother Nimetz (Stranglethorn Vale 37.8, 3.6).
 - **Level 44, step 48 of the guide's 43-44 part**, when the guide brings you to Tanaris (Tanaris 38.7, 19.8): **Run Zul'Farrak** (with your guide). Your guide runs it here and takes 7 of its quests. Pick up first: The Prophecy of Mosh'aru (level 47, from Yeh'kinya (Tanaris 67.0, 22.4)); Thadius Grimshade → Return to the Hinterlands (4 parts, level 47, from Gryphon Master Talonaxe (The Hinterlands 9.8, 44.5)); Tiara of the Deep (level 46, from Tabetha (Dustwallow Marsh 46.0, 57.1)).
@@ -326,7 +320,7 @@ Everything worth stepping off your RestedXP route for, in the route's order: the
 - **Level 51, step 4 of the guide's 51-51 part**, right after you hand in "Petty Squabbles" to Fallen Hero of the Horde (Swamp of Sorrows 34.3, 66.1): **The Stones That Bind Us** (clear win). +13,940 experience in about 18 min, about 4 min ahead of your usual pace; from Fallen Hero of the Horde (Swamp of Sorrows 34.3, 66.1).
 - **Level 53, step 40 of the guide's 52-53 part**, when the guide brings you to Desolace (Desolace 36.0, 64.4): **Run Maraudon** (with your guide). Your guide runs it here and takes 5 of its quests.
 - **Level 53, step 9 of the guide's 53-53 part**, when the guide has you pick up "Kim'jael Indeed!" from Kim'jael (Azshara 53.5, 21.8): **Run Sunken Temple** (with your guide). Your guide runs it here and takes 7 of its quests. Pick up first: Into the Depths → Secret of the Circle (2 parts, level 51, from Marvon Rivetseeker (Tanaris 52.7, 45.9)); Jammal'an the Prophet (level 53, from Atal'ai Exile (The Hinterlands 33.8, 75.2)); The God Hakkar (level 53, start with "Screecher Spirits" from Yeh'kinya (Tanaris 67.0, 22.4)).
-- **Level 56, step 23 of the guide's 56-57 part**, when the guide brings you to Burning Steppes (Burning Steppes 77.5, 68.0): **Run Blackrock Spire** (side trip). 9 quests at full experience. Pick up first: Poisoned Water (level 56, from Duke Hydraxis (Azshara 79.3, 73.7)); Stormers and Rumblers (level 57, from Duke Hydraxis (Azshara 79.3, 73.7)); The Final Tablets → Confront Yeh'kinya (2 parts, level 58, start with "Screecher Spirits" from Yeh'kinya (Tanaris 67.0, 22.4)); Put Her Down (level 59, from Helendis Riverhorn (Burning Steppes 85.8, 68.9)); Bijou's Belongings → Message to Maxwell (2 parts, level 59, from Bijou); En-Ay-Es-Tee-Why (level 59, from Kibler (Burning Steppes 65.8, 22.0)); Kibler's Exotic Pets (level 59, from Kibler (Burning Steppes 65.8, 22.0)).
+- **Level 56, step 45 of the guide's 56-57 part**, when the guide brings you to Borgus Stoutarm (Burning Steppes 84.3, 68.3), before the flight to Redridge: **Run Blackrock Spire** (side trip). 9 quests at full experience. Pick up first: Poisoned Water (level 56, from Duke Hydraxis (Azshara 79.3, 73.7)); Stormers and Rumblers (level 57, from Duke Hydraxis (Azshara 79.3, 73.7)); The Final Tablets → Confront Yeh'kinya (2 parts, level 58, start with "Screecher Spirits" from Yeh'kinya (Tanaris 67.0, 22.4)); Put Her Down (level 59, from Helendis Riverhorn (Burning Steppes 85.8, 68.9)); Bijou's Belongings → Message to Maxwell (2 parts, level 59, from Bijou); En-Ay-Es-Tee-Why (level 59, from Kibler (Burning Steppes 65.8, 22.0)); Kibler's Exotic Pets (level 59, from Kibler (Burning Steppes 65.8, 22.0)).
 - **Level 57, step 93 of the guide's 56-57 part**, right after you hand in "A Little Slime Goes a Long Way" to Laris Geardawdle (Ironforge 75.8, 23.4): **Run Dire Maul** (side trip). 3 quests at full experience. Pick up first: Enticing Negolash (level 52, from Ruined Lifeboat); Lethtendris's Web (level 57, from Latronicus Moonspear (Feralas 30.4, 46.2)); Pusillin and the Elder Azj'Tordin (level 58, from Azj'Tordin (Feralas 76.9, 37.4)).
 - **Level 57, step 109 of the guide's 56-57 part**, when the guide has you pick up "Attunement to the Core" from Lothos Riftwaker (Burning Steppes 26.4, 24.5): **Run Blackrock Depths** (with your guide). Your guide runs it here and takes 18 of its quests. Pick up first: The Love Potion (level 54, from Mistress Nagmara).
 
@@ -338,7 +332,7 @@ Every leveling dungeon you have not outgrown, once, at the level its quests fit:
   - Pick up first: In Search of Thaelrid (level 24, from Argent Guard Manados (Darnassus 55.4, 25.0); a trip to Darnassus first); Twilight Falls (level 25, from Argent Guard Manados (Darnassus 55.4, 25.0); a trip to Darnassus first)
 - **Excavation Site: Wetlands** (27-35, estimated), run at level 28: your RestedXP guide runs it then and picks up 8 of its quests.
   - Already in your log: Fire Taboo (level 23); Songblade Search (level 28)
-- **The Stockade** (24-32), run at level 26: worth it if you like it: 2 quests at full experience; your guide ran it at step 122 of its 24-27 part, which you have passed.
+- **The Stockade** (24-32), run at level 26: worth a detour for 2 quests at full experience; your guide ran it at step 122 of its 24-27 part, which you have passed.
   - Pick up first: The Color of Blood (level 26, from Stormwind City 72.4, 47.7)
   - Already in your log: What Comes Around... (level 25)
   - Left out: The Unsent Letter (10 quests here): it starts from An Unsent Letter, which Edwin VanCleef drops in The Deadmines: you have outgrown The Deadmines
