@@ -388,7 +388,7 @@
    },
    "tiers": [
     {
-     "skill_points": 150,
+     "skill_points": 151,
      "max_skill_points": 225,
      "tier": {
       "name": "Enchanting",
@@ -506,6 +506,13 @@
        },
        "name": "Novice's Practice Wand",
        "id": 54214
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/54411?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Orb of Mystic Insight",
+       "id": 54411
       },
       {
        "key": {
@@ -628,7 +635,7 @@
    },
    "tiers": [
     {
-     "skill_points": 149,
+     "skill_points": 150,
      "max_skill_points": 150,
      "tier": {
       "name": "Cooking",

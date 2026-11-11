@@ -149,6 +149,35 @@ def sim_db():
     return json.load(open(pathlib.Path(setup.checkout()) / "assets/database/db.json", encoding="utf-8"))
 
 
+_OLDER = {}
+
+
+def older_item(name):
+    """(item, {suffix id: suffix}, commit) of the newest earlier pin's database that still holds an item named `name`, or None
+    (2026-11-11: ff9babba5's item update dropped Geomancer's Bracers, which Arcea owns; an owned piece is valued from the pin before).
+    Earlier pins: sim_info.OFFICIAL_COMMITS, newest first, without the checkout's own commit."""
+    import subprocess
+    import setup
+    import sim_info
+    repo = pathlib.Path(setup.checkout())
+    head = subprocess.run(["git", "-C", str(repo), "rev-parse", "--short=7", "HEAD"], capture_output=True, text=True).stdout.strip()
+    for c in reversed(list(sim_info.OFFICIAL_COMMITS)):
+        if c.startswith(head) or head.startswith(c):
+            continue
+        if c not in _OLDER:
+            raw = subprocess.run(["git", "-C", str(repo), "show", f"{c}:assets/database/db.json"], capture_output=True).stdout
+            try:
+                db = json.loads(raw.decode("utf-8")) if raw else {}
+            except ValueError:
+                db = {}
+            _OLDER[c] = ({it["name"].lower(): it for it in db.get("items") or []}, {x["id"]: x for x in db.get("randomSuffixes") or []})
+        byname, sufs = _OLDER[c]
+        it = byname.get(name.lower())
+        if it:
+            return it, sufs, c
+    return None
+
+
 def sim_version():
     """(commit, item count) of the simulator database the pool reads: the page names it, so an update of the database shows."""
     import subprocess

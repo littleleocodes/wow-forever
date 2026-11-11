@@ -104,6 +104,8 @@ def owned(cfg, snap):
         text = pathlib.Path(f).read_text(encoding="utf-8", errors="replace")
         snapped = snapshot(text, name)
         since = 0
+        partial = bool(snapped) and not any(it["where"] == "bags" for it in snapped[1])   # a snapshot without its bags half (2026-11-11:
+        # ForeverTape 0.9.3 wrote Arcea's bank rows only): its bank rows count, the purchase record stands for the bags
         if snapped:
             since, items = snapped
             for it in items:   # by name and by id (a link's name can come without its suffix, or not at all: 2026-11-10,
@@ -121,7 +123,7 @@ def owned(cfg, snap):
                     b = next((v for n, v in base.items() if key.startswith(n + " of ")), None)
                     if b:
                         out[key] = dict(b, name=item)
-        cutoff = max(since, time.time() - MAIL_DAYS * 86400)
+        cutoff = max(0 if partial else since, time.time() - MAIL_DAYS * 86400)
         sold = {}
         for t, item, cnt, kind in mail_won(text, name, cutoff):
             if kind == "sold":

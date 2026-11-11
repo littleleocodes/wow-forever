@@ -2414,6 +2414,22 @@ def main():
             built = IP.versions(cfg["class"], cfg["faction"], cfg["school_share"], [(base["id"], f"b{sx['id']}", nm, {"kind": "bags", "price": 0})])
             pool += built
             have |= {nm.lower()} if built else set()
+            continue
+        for x in sufs:   # the item is gone from the current database (ff9babba5 dropped Geomancer's Bracers): the pin before's item
+            if not nm.lower().endswith(" " + x["name"].lower()):
+                continue
+            old = IP.older_item(nm[: -len(x["name"]) - 1])
+            if not old or x["id"] not in (old[0].get("randomSuffixOptions") or []):
+                continue
+            it, osufs, commit = old
+            slot = IP.SLOTS.get(it.get("type"))
+            if it.get("type") == 13:
+                slot = {4: "two-hand", 3: "off-hand"}.get(it.get("handType"), "main-hand")
+            pool.append({"id": f"{it['id']}:b{x['id']}", "name": nm, "slot": slot, "quality": it.get("quality"), "req": it.get("reqLvl") or 0,
+                         "stats": IP.suffix_stats(it, [x["id"]], osufs, cfg["school_share"]), "unique": False, "set": None,
+                         "sources": [{"kind": "bags", "price": 0, "older_db": commit}]})
+            have.add(nm.lower())
+            break
     for p in pool:
         o = OWN.get((p.get("name") or "").lower()) or OWN.get(f"id:{p.get('id')}")
         if o:

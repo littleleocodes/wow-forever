@@ -126,8 +126,8 @@
     "display_string": "Item Level 32"
    },
    "durability": {
-    "value": 45,
-    "display_string": "Durability 45 / 45"
+    "value": 29,
+    "display_string": "Durability 29 / 45"
    }
   },
   {
@@ -328,8 +328,8 @@
     "display_string": "Item Level 22"
    },
    "durability": {
-    "value": 35,
-    "display_string": "Durability 35 / 35"
+    "value": 23,
+    "display_string": "Durability 23 / 35"
    }
   },
   {
@@ -549,8 +549,7 @@
        },
        "name": "Rotmender's Leggings",
        "id": 271207
-      },
-      "is_equipped": true
+      }
      },
      {
       "item": {
@@ -573,9 +572,8 @@
     ],
     "effects": [
      {
-      "display_string": "Set: +5 Shadow Resistance.",
-      "required_count": 2,
-      "is_active": true
+      "display_string": "(2) Set: +5 Shadow Resistance.",
+      "required_count": 2
      },
      {
       "display_string": "(3) Set: +10 Intellect.",
@@ -590,15 +588,15 @@
       "required_count": 5
      }
     ],
-    "display_string": "Rotmender's Raiment (2/5)"
+    "display_string": "Rotmender's Raiment (1/5)"
    },
    "level": {
     "value": 23,
     "display_string": "Item Level 23"
    },
    "durability": {
-    "value": 75,
-    "display_string": "Durability 75 / 75"
+    "value": 59,
+    "display_string": "Durability 59 / 75"
    }
   },
   {
@@ -701,33 +699,36 @@
     "display_string": "Item Level 31"
    },
    "durability": {
-    "value": 25,
-    "display_string": "Durability 25 / 25"
+    "value": 21,
+    "display_string": "Durability 21 / 25"
    }
   },
   {
    "item": {
     "key": {
-     "href": "https://us.api.blizzard.com/data/wow/item/271207?namespace=static-1.60.1_70399-forever-us"
+     "href": "https://us.api.blizzard.com/data/wow/item/9825?namespace=static-1.60.1_70399-forever-us"
     },
-    "id": 271207
+    "id": 9825
    },
    "slot": {
     "type": "LEGS",
     "name": "Legs"
    },
    "quantity": 1,
-   "context": 1,
+   "context": 0,
+   "bonus_list": [
+    12758
+   ],
    "quality": {
-    "type": "RARE",
-    "name": "Rare"
+    "type": "UNCOMMON",
+    "name": "Uncommon"
    },
-   "name": "Rotmender's Leggings",
+   "name": "Durable Pants of Frozen Wrath",
    "media": {
     "key": {
-     "href": "https://us.api.blizzard.com/data/wow/media/item/271207?namespace=static-1.60.1_70399-forever-us"
+     "href": "https://us.api.blizzard.com/data/wow/media/item/9825?namespace=static-1.60.1_70399-forever-us"
     },
-    "id": 271207
+    "id": 9825
    },
    "item_class": {
     "key": {
@@ -748,13 +749,13 @@
     "name": "Legs"
    },
    "binding": {
-    "type": "ON_ACQUIRE",
-    "name": "Binds when picked up"
+    "type": "ON_EQUIP",
+    "name": "Binds when equipped"
    },
    "armor": {
-    "value": 35,
+    "value": 39,
     "display": {
-     "display_string": "35 Armor",
+     "display_string": "39 Armor",
      "color": {
       "r": 255,
       "g": 255,
@@ -766,29 +767,13 @@
    "stats": [
     {
      "type": {
-      "type": "STAMINA",
-      "name": "Stamina"
+      "type": "BONUS_STAT_FROST_DAMAGE_DONE",
+      "name": "Frost Damage"
      },
-     "value": 5,
-     "display": {
-      "display_string": "+5 Stamina",
-      "color": {
-       "r": 255,
-       "g": 255,
-       "b": 255,
-       "a": 1.0
-      }
-     }
-    },
-    {
-     "type": {
-      "type": "MANA_REGENERATION",
-      "name": "Mana Regeneration per 5 sec"
-     },
-     "value": 4,
+     "value": 19,
      "is_equip_bonus": true,
      "display": {
-      "display_string": "+4 Mana Regeneration per 5 sec",
+      "display_string": "+19 Frost Damage",
       "color": {
        "r": 0,
        "g": 255,
@@ -799,105 +784,27 @@
     }
    ],
    "sell_price": {
-    "value": 911,
+    "value": 2355,
     "display_strings": {
      "header": "Sell Price:",
      "gold": "0",
-     "silver": "9",
-     "copper": "11"
+     "silver": "23",
+     "copper": "55"
     }
    },
    "requirements": {
     "level": {
-     "value": 17,
-     "display_string": "Requires Level 17"
+     "value": 28,
+     "display_string": "Requires Level 28"
     }
    },
-   "set": {
-    "item_set": {
-     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/item-set/2133?namespace=static-1.60.1_70399-forever-us"
-     },
-     "name": "Rotmender's Raiment",
-     "id": 2133
-    },
-    "items": [
-     {
-      "item": {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/item/286978?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Rotmender's Garb",
-       "id": 286978
-      },
-      "is_equipped": true
-     },
-     {
-      "item": {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/item/286980?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Rotmender's Sash",
-       "id": 286980
-      }
-     },
-     {
-      "item": {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/item/271207?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Rotmender's Leggings",
-       "id": 271207
-      },
-      "is_equipped": true
-     },
-     {
-      "item": {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/item/271214?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Rotmender's Treads",
-       "id": 271214
-      }
-     },
-     {
-      "item": {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/item/286979?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Rotmender's Gloves",
-       "id": 286979
-      }
-     }
-    ],
-    "effects": [
-     {
-      "display_string": "Set: +5 Shadow Resistance.",
-      "required_count": 2,
-      "is_active": true
-     },
-     {
-      "display_string": "(3) Set: +10 Intellect.",
-      "required_count": 3
-     },
-     {
-      "display_string": "(4) Set: When your Mana falls below 15%, restore 200 Mana over 10 sec. Restores twice as much Mana in Haunted and Wasteland areas. May only occur once every 5 min.",
-      "required_count": 4
-     },
-     {
-      "display_string": "(5) Set: Grants your healing spells a chance to heal for an additional 40 Health every 3 sec for 15 sec.",
-      "required_count": 5
-     }
-    ],
-    "display_string": "Rotmender's Raiment (2/5)"
-   },
    "level": {
-    "value": 22,
-    "display_string": "Item Level 22"
+    "value": 33,
+    "display_string": "Item Level 33"
    },
    "durability": {
-    "value": 50,
-    "display_string": "Durability 50 / 50"
+    "value": 55,
+    "display_string": "Durability 55 / 55"
    }
   },
   {
@@ -1023,8 +930,8 @@
     "display_string": "Item Level 28"
    },
    "durability": {
-    "value": 35,
-    "display_string": "Durability 35 / 35"
+    "value": 24,
+    "display_string": "Durability 24 / 35"
    }
   },
   {
@@ -1157,8 +1064,8 @@
     "display_string": "Item Level 29"
    },
    "durability": {
-    "value": 30,
-    "display_string": "Durability 30 / 30"
+    "value": 24,
+    "display_string": "Durability 24 / 30"
    }
   },
   {
@@ -1268,16 +1175,16 @@
     "display_string": "Item Level 28"
    },
    "durability": {
-    "value": 25,
-    "display_string": "Durability 25 / 25"
+    "value": 23,
+    "display_string": "Durability 23 / 25"
    }
   },
   {
    "item": {
     "key": {
-     "href": "https://us.api.blizzard.com/data/wow/item/286737?namespace=static-1.60.1_70399-forever-us"
+     "href": "https://us.api.blizzard.com/data/wow/item/1319?namespace=static-1.60.1_70399-forever-us"
     },
-    "id": 286737
+    "id": 1319
    },
    "slot": {
     "type": "FINGER_1",
@@ -1286,15 +1193,15 @@
    "quantity": 1,
    "context": 11,
    "quality": {
-    "type": "COMMON",
-    "name": "Common"
+    "type": "UNCOMMON",
+    "name": "Uncommon"
    },
-   "name": "Avala's Binding",
+   "name": "Ring of Iron Will",
    "media": {
     "key": {
-     "href": "https://us.api.blizzard.com/data/wow/media/item/286737?namespace=static-1.60.1_70399-forever-us"
+     "href": "https://us.api.blizzard.com/data/wow/media/item/1319?namespace=static-1.60.1_70399-forever-us"
     },
-    "id": 286737
+    "id": 1319
    },
    "item_class": {
     "key": {
@@ -1321,12 +1228,29 @@
    "stats": [
     {
      "type": {
-      "type": "FROST_RESISTANCE",
-      "name": "Frost Resistance"
+      "type": "STAMINA",
+      "name": "Stamina"
      },
-     "value": 1,
+     "value": 4,
      "display": {
-      "display_string": "+1 Frost Resistance",
+      "display_string": "+4 Stamina",
+      "color": {
+       "r": 255,
+       "g": 255,
+       "b": 255,
+       "a": 1.0
+      }
+     }
+    },
+    {
+     "type": {
+      "type": "SPIRIT",
+      "name": "Spirit"
+     },
+     "value": 2,
+     "is_equip_bonus": true,
+     "display": {
+      "display_string": "+2 Spirit",
       "color": {
        "r": 0,
        "g": 255,
@@ -1337,17 +1261,17 @@
     }
    ],
    "sell_price": {
-    "value": 31,
+    "value": 462,
     "display_strings": {
      "header": "Sell Price:",
      "gold": "0",
-     "silver": "0",
-     "copper": "31"
+     "silver": "4",
+     "copper": "62"
     }
    },
    "level": {
-    "value": 8,
-    "display_string": "Item Level 8"
+    "value": 25,
+    "display_string": "Item Level 25"
    },
    "is_subclass_hidden": true
   },
@@ -1657,9 +1581,110 @@
     "display_string": "Item Level 31"
    },
    "durability": {
-    "value": 90,
-    "display_string": "Durability 90 / 90"
+    "value": 81,
+    "display_string": "Durability 81 / 90"
    }
+  },
+  {
+   "item": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/item/249394?namespace=static-1.60.1_70399-forever-us"
+    },
+    "id": 249394
+   },
+   "slot": {
+    "type": "OFF_HAND",
+    "name": "Off Hand"
+   },
+   "quantity": 1,
+   "quality": {
+    "type": "RARE",
+    "name": "Rare"
+   },
+   "name": "Orb of Mystic Insight",
+   "media": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/media/item/249394?namespace=static-1.60.1_70399-forever-us"
+    },
+    "id": 249394
+   },
+   "item_class": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/item-class/4?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Armor",
+    "id": 4
+   },
+   "item_subclass": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/item-class/4/item-subclass/0?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Miscellaneous",
+    "id": 0
+   },
+   "inventory_type": {
+    "type": "HOLDABLE",
+    "name": "Held In Off-hand"
+   },
+   "binding": {
+    "type": "ON_ACQUIRE",
+    "name": "Binds when picked up"
+   },
+   "stats": [
+    {
+     "type": {
+      "type": "INTELLECT",
+      "name": "Intellect"
+     },
+     "value": 6,
+     "display": {
+      "display_string": "+6 Intellect",
+      "color": {
+       "r": 255,
+       "g": 255,
+       "b": 255,
+       "a": 1.0
+      }
+     }
+    },
+    {
+     "type": {
+      "type": "SPELL_POWER",
+      "name": "Spell Power"
+     },
+     "value": 7,
+     "is_equip_bonus": true,
+     "display": {
+      "display_string": "+7 Spell Power",
+      "color": {
+       "r": 0,
+       "g": 255,
+       "b": 0,
+       "a": 1.0
+      }
+     }
+    }
+   ],
+   "sell_price": {
+    "value": 499,
+    "display_strings": {
+     "header": "Sell Price:",
+     "gold": "0",
+     "silver": "4",
+     "copper": "99"
+    }
+   },
+   "requirements": {
+    "level": {
+     "value": 25,
+     "display_string": "Requires Level 25"
+    }
+   },
+   "level": {
+    "value": 30,
+    "display_string": "Item Level 30"
+   },
+   "is_subclass_hidden": true
   },
   {
    "item": {
@@ -1764,8 +1789,8 @@
     "display_string": "Item Level 32"
    },
    "durability": {
-    "value": 55,
-    "display_string": "Durability 55 / 55"
+    "value": 45,
+    "display_string": "Durability 45 / 55"
    }
   }
  ],
@@ -1805,8 +1830,7 @@
       },
       "name": "Rotmender's Leggings",
       "id": 271207
-     },
-     "is_equipped": true
+     }
     },
     {
      "item": {
@@ -1829,9 +1853,8 @@
    ],
    "effects": [
     {
-     "display_string": "Set: +5 Shadow Resistance.",
-     "required_count": 2,
-     "is_active": true
+     "display_string": "(2) Set: +5 Shadow Resistance.",
+     "required_count": 2
     },
     {
      "display_string": "(3) Set: +10 Intellect.",
@@ -1846,7 +1869,7 @@
      "required_count": 5
     }
    ],
-   "display_string": "Rotmender's Raiment (2/5)"
+   "display_string": "Rotmender's Raiment (1/5)"
   }
  ]
 }
