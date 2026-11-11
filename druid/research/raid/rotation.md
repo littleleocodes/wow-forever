@@ -86,30 +86,30 @@ Our tuned rotation `feral-cat-dps.apl.json` (the simulator's `adaptive.apl.json`
 
 The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring change what mana is worth), top priority first:
 
-1. if variableRef: swap to the Main item set
-2. if variableRef: cancel Prowl
+1. if “Ready to return to the main weapon”: swap to the Main item set
+2. if “Drop Prowl for this opener”: cancel Prowl
 3. if Faerie Fire is known and Faerie Fire should be refreshed: cast Faerie Fire
 4. if unitDistance > 5: move to 5 yd
 5. if unitDistance > 5: wait until not unitDistance > 5
 6. if Prowl is up: cast Ravage
-7. if variableRef: cast Manual Crowd Pummeler
+7. if “Ready to activate MCP”: cast Manual Crowd Pummeler
 8. if not Cat Form is up: cast Cat Form
-9. if variableRef: cast Ferocious Bite (rank 5)
+9. if “Final-global Bite”: cast Ferocious Bite (rank 5)
 10. use every other cooldown when ready
-11. if variableRef: cast ResourcePotion on self
-12. if variableRef: cast Elune's Light
-13. if variableRef: cast Ferocious Bite (rank 5)
-14. if variableRef: cast Shifting Power
-15. if variableRef: cast Thistle Tea
-16. if variableRef: cast Demonic Rune
+11. if “Mana potion fits and is needed”: cast ResourcePotion on self
+12. if “Ready to use Elune's Light”: cast Elune's Light
+13. if “Midfight Bite is worthwhile”: cast Ferocious Bite (rank 5)
+14. if “Shifting Power ready”: cast Shifting Power
+15. if “Tea is selected and energy is low”: cast Thistle Tea
+16. if “Rune can restore mana after Tea”: cast Demonic Rune
 17. if Cat Form is up: cast OffensivePotion
-18. if variableRef: cast Ferocious Bite (rank 5)
-19. if Cat Form is up and Clearcasting is up and not variableRef: cast Shred
-20. if Cat Form is up and variableRef: cast Rip
-21. if Cat Form is up and variableRef: cast Rake
-22. if Cat Form is up and energy ≥ current cost and not variableRef: cast Shred
-23. if variableRef and energy ≥ current cost and not variableRef: cast Claw
-24. if variableRef: cast Innervate
+18. if “Fight-end Bite is worthwhile”: cast Ferocious Bite (rank 5)
+19. if Cat Form is up and Clearcasting is up and not “Pool energy for Bite”: cast Shred
+20. if Cat Form is up and “Rip due”: cast Rip
+21. if Cat Form is up and “Rake due”: cast Rake
+22. if Cat Form is up and energy ≥ current cost and not “Pool energy for Bite”: cast Shred
+23. if “Claw can replace Shred” and energy ≥ current cost and not “Pool energy for Bite”: cast Claw
+24. if “Innervate can restore needed mana”: cast Innervate
 
 The tables below are the training-dummy rotation, filtered per build:
 

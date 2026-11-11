@@ -15,11 +15,12 @@
 **Then press the first one that is ready**, top to bottom:
 
 1. **Ravage** when Prowl is active
-2. **Ferocious Bite** (rank 5)
-3. **Shifting Power**
-4. **Shred** when Cat Form is active and Clearcasting is active
-5. **Rip** when Cat Form is active
-6. **Rake** when Cat Form is active
+2. **Ferocious Bite** (rank 5) (timing: see below)
+3. **Shifting Power** (timing: see below)
+4. **Shred** when Cat Form is active and Clearcasting is active (timing: see below)
+5. **Rip** when Cat Form is active (timing: see below)
+6. **Rake** when Cat Form is active (timing: see below)
+7. **Shred** when Cat Form is active (timing: see below)
 
 Between these, your white swings do the rest.
 
@@ -27,31 +28,30 @@ Between these, your white swings do the rest.
 
 ## Why this rotation
 
-A raid cat keeps **Rip** bleeding on the boss, turns mana into energy with **Shifting Power**, and spends the rest on **Shred** from behind. **Faerie Fire** opens the fight.
+A raid cat opens from **Prowl** with **Ravage**, keeps **Rip** and **Rake** bleeding on the boss, turns mana into energy with **Shifting Power**, fills with **Shred** from behind and spends high energy on **Ferocious Bite**. Since 2026-10-31 this is the official simulator's own Feral rotation; the conditions it names (the lines marked "timing: see below") are explained here.
 
 **Why it works**
 
-- **Faerie Fire** takes 505 armor off the boss for 40 seconds, so your **Shred** and white hits land harder, and in **Cat Form** it costs nothing. Cast it on the pull. In a full raid the simulator assumes the raid keeps it up and casts it once a fight; if nobody else does, refresh it before it runs out.
-- **Rip** does a large share of your damage (close to 40% on the training dummy). Put it back up as soon as it falls off, at 4 or more combo points: its attack power bonus stops growing at 4 points (the simulator's model, as in Classic), so the fifth point adds only a flat 153 damage while the boss goes without a bleed. The simulator measured Rip at 4 or more about 1% better in a full raid than waiting for 5.
-- **Shred** is the filler: 42 energy with **Shredding Attacks**, 1 combo point, 2 on a critical strike with **Blood Frenzy**, and 3% more damage a point of **Rend and Tear** (15% at 5 points) while **Rip** bleeds. **Rip** lasts 12 seconds, about the time three Shreds take, and those Shreds bring about 4 combo points with their critical strikes. So when Rip falls off, you usually hold the points to put it straight back.
-- **Ferocious Bite** is not in the list: the simulator measured the rotation 1% better in a full raid without it, the energy going to **Shred** instead. With **Rip** up and 5 combo points, keep shredding; points beyond 5 are lost.
-- **Shifting Power** turns 55% of your base mana into 40 energy every 8 seconds: cast it whenever it is ready and your energy is 60 or less, so none of the 40 spills over your 100 cap. A raid's mana buffs pay for it, and the simulator's builds that take it do far more than the ones without it (the numbers table below has each build's DPS).
-- Tiger's Fury was removed (Blizzard's notes of 1 Oct; the 70425 spellbook lacks it), but the community simulator still reads it from the client as granted and casts it on every cooldown, so the raid numbers on this page run about 2-3% high until the simulator drops it.
+- The opener: **Prowl** before the pull and **Dash** to close in, then **Ravage** while still prowling, from behind: 435% weapon damage plus 98 and a combo point. The rotation drops **Prowl** instead when the approach is too long for the opener to land.
+- **Rip** ("Rip due"): put it back up as soon as it falls off. With this build's 2 points in **Blood Frenzy** and **Shifting Power** that is at 5 combo points, or at 4 when one more **Shred** would not leave the energy for **Rip** on the next global cooldown, and not with under 8 seconds of the fight left. **Rend and Tear** adds 15% to your melee abilities on a bleeding target.
+- **Rake** ("Rake due"): keep it on the boss unless 6 seconds or less are left: 76 damage plus 126 over 9 seconds and a combo point. The rotation search measured about 7.5% more damage in a full raid once **Rake** joined the list.
+- **Ferocious Bite**: **Predatory Discipline** makes it stop using up your extra energy while still hitting harder for it, so it is your high-energy dump. "Midfight Bite is worthwhile": 4 or more combo points, **Rip** with at least 2 seconds left, and 85 energy (60 with a Clearcasting proc; 70 and 50 at 5 points). "Pool energy for Bite": when the points and **Rip** are there but the energy is not, hold **Shred** and let it build. "Fight-end Bite is worthwhile": at 5 points in the last 8 seconds, where a new **Rip** would not tick out; "Final-global Bite": in the very last second, with 2 or more points.
+- **Shifting Power** ("Shifting Power ready"): 55% of your base mana for 40 energy, in **Cat Form** at 57 energy or less so none of it spills over your 100 cap. The rotation search measured about 10% more damage in a full raid with it in the list.
+- **Shred** goes first whenever a Clearcasting proc makes it free, and is otherwise the filler from behind: 1 combo point, 2 on a critical strike with **Blood Frenzy**. **Faerie Fire** (free in **Cat Form**) goes up whenever it needs refreshing.
+- No powershifting any more: the list stays in **Cat Form**. Forever's **Furor** gives back the energy you left with instead of a flat 40, which does not pay for the global cooldowns of shifting out and back.
 
 **Caveats**
 
-- **Shred** only works from behind. If the boss faces you, or you have to tank, build with **Claw** instead (140% damage plus 161 for 45 energy, less with **Ferocity**).
-- Without a raid's mana buffs (a dungeon group, or alone) each **Shifting Power** costs more than half your base mana and you run dry fast: keep the mana for a shift and a **Regrowth**. Solo, the fight lab found that drinking the mana back costs more time than the energy saves.
-- Powershifting is nearly gone in Forever: instead of granting a flat 40, **Furor** gives back 20% a point of the energy you left with (100% at 5 points), plus 2 a second a point spent out of form. The rotation shifts out only with Clearcasting up and under 14 energy, about twice a fight, and the simulator found almost nothing in it: skip it if it costs you attention.
-- The bear builds under Other builds are tank builds: they play **Lacerate**, **Maul** and **Barkskin** in **Dire Bear Form**, not this list (the research rotation page has their priority).
+- **Shred** and **Ravage** only work from behind. When the boss faces you, the rotation builds with **Claw** instead ("Claw can replace Shred").
+- Mana: **Shifting Power** spends more than half your base mana, so the list leans on a raid's mana buffs, a mana potion and **Innervate** on yourself below 1,400 mana with the fight still going. Without Blessing of Wisdom or Mana Spring (a dungeon group, or alone) you run dry fast; solo, the fight lab found that drinking the mana back costs more time than the energy saves.
+- The bear builds under Other builds are tank builds: they play **Lacerate**, **Maul**, **Barkskin** and **Enrage** in **Dire Bear Form**, not this list; their 2026-10-29 rotation search refreshes the bleed only in its last 4.5 seconds, presses **Maul** with no rage gate (about 6.6% more tank value), **Enrage** under 20 rage, and dropped **Primal Bite**.
+- The rotation casts **Ferocious Bite** at rank 5, the rank the simulator's spell data carries.
 
 **When to change it**
 
-- When the boss will die before a new **Rip** can tick most of its 12 seconds (the last 6 seconds or so), spend the points on **Ferocious Bite**: its damage lands at once.
-- On an add that dies within a few seconds, the same: **Ferocious Bite** rather than **Rip**.
+- An add that dies within a few seconds: **Ferocious Bite** rather than **Rip**.
 - If you pull the boss off the tank, **Cower** (20 energy, 10-second cooldown) lowers your threat by a large amount.
-
-*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+- If you cannot get behind the boss for the opener, skip **Prowl** and open with **Rake**.
 
 ## Talents
 

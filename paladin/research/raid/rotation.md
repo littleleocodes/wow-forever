@@ -15,13 +15,13 @@ Our rotation `retribution-default.apl.json` (wowsims/forever ff9babb (client 708
 The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring change what mana is worth), top priority first:
 
 1. if not spellInRange: groupReference
-2. if variableRef: cast Judgement
-3. if time into the fight ≥ variableRef: use every other cooldown when ready
+2. if “WF guard”: cast Judgement
+3. if time into the fight ≥ “Delay Major CDs”: use every other cooldown when ready
 4. if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath
 5. cast Consecration
-6. if variableRef and not Judgement is ready and variableRef: cast Holy Strike
-7. if variableRef: cast Seal of Command
-8. if variableRef: cast Seal of Righteousness
+6. if “WF guard” and not Judgement is ready and “Judge realism protection”: cast Holy Strike
+7. if “Should refresh SoC”: cast Seal of Command
+8. if “Should refresh SoR”: cast Seal of Righteousness
 9. groupReference
 10. groupReference
 
@@ -29,17 +29,17 @@ The tables below are the training-dummy rotation, filtered per build:
 
 ### *Unsealed Wrath* (community simulator, 510 DPS), [`retribution-open-raid`](builds/retribution-open-raid.md) (ours: derived (open search), 483 DPS)
 
-Before the pull: at -20s: groupReference; at -20s: move to variableRef yd; at -3s: groupReference; at -1.5s: groupReference; at -1.5s: groupReference.
+Before the pull: at -20s: groupReference; at -20s: move to “Pull range” yd; at -3s: groupReference; at -1.5s: groupReference; at -1.5s: groupReference.
 
 | # | Priority (the first line whose condition holds is cast) | *Unsealed Wrath* casts/min | [`retribution-open-raid`](builds/retribution-open-raid.md) casts/min |
 |---|---|---|---|
 | 1 | if not spellInRange: groupReference | as ready | as ready |
-| 2 | if variableRef: cast Judgement | 7.4 | 7.3 |
-| 3 | if time into the fight ≥ variableRef: use every other cooldown when ready | as ready | as ready |
+| 2 | if “WF guard”: cast Judgement | 7.4 | 7.3 |
+| 3 | if time into the fight ≥ “Delay Major CDs”: use every other cooldown when ready | as ready | as ready |
 | 4 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 1.3 | 1.0 |
-| 5 | if variableRef and not Judgement is ready and variableRef: cast Holy Strike | 5.9 | 5.9 |
-| 6 | if variableRef: cast Seal of Command | 4.0 | 3.6 |
-| 7 | if variableRef: cast Seal of Righteousness | 3.9 | 3.4 |
+| 5 | if “WF guard” and not Judgement is ready and “Judge realism protection”: cast Holy Strike | 5.9 | 5.9 |
+| 6 | if “Should refresh SoC”: cast Seal of Command | 4.0 | 3.6 |
+| 7 | if “Should refresh SoR”: cast Seal of Righteousness | 3.9 | 3.4 |
 | 8 | groupReference | as ready | as ready |
 | 9 | groupReference | as ready | as ready |
 
@@ -59,16 +59,16 @@ Damage by ability:
 
 ### *Holy Shock* (community simulator, 465 DPS), [`ret-raid-dps`](builds/ret-raid-dps.md) (ours: hand draft, 426 DPS), [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) (ours: optimizer, 426 DPS), [`retribution-ml-raid`](builds/retribution-ml-raid.md) (ours: derived (ML search), 393 DPS), [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) (ours: hand draft, 391 DPS)
 
-Before the pull: at -20s: groupReference; at -20s: move to variableRef yd; at -3s: groupReference; at -1.5s: groupReference; at -1.5s: groupReference.
+Before the pull: at -20s: groupReference; at -20s: move to “Pull range” yd; at -3s: groupReference; at -1.5s: groupReference; at -1.5s: groupReference.
 
 | # | Priority (the first line whose condition holds is cast) | *Holy Shock* casts/min | [`ret-raid-dps`](builds/ret-raid-dps.md) casts/min | [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) casts/min | [`retribution-ml-raid`](builds/retribution-ml-raid.md) casts/min | [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) casts/min |
 |---|---|---|---|---|---|---|
 | 1 | if not spellInRange: groupReference | as ready | as ready | as ready | as ready | as ready |
-| 2 | if variableRef: cast Judgement | 7.7 | 7.7 | 7.7 | 7.4 | 7.4 |
-| 3 | if time into the fight ≥ variableRef: use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready |
+| 2 | if “WF guard”: cast Judgement | 7.7 | 7.7 | 7.7 | 7.4 | 7.4 |
+| 3 | if time into the fight ≥ “Delay Major CDs”: use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready |
 | 4 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 1.3 | 1.3 | 1.3 | 0.6 | 0.7 |
-| 5 | if variableRef and not Judgement is ready and variableRef: cast Holy Strike | 6.0 | 6.0 | 6.0 | 6.0 | 6.0 |
-| 6 | if variableRef: cast Seal of Command | 2.3 | 2.3 | 2.3 | 2.2 | 2.2 |
+| 5 | if “WF guard” and not Judgement is ready and “Judge realism protection”: cast Holy Strike | 6.0 | 6.0 | 6.0 | 6.0 | 6.0 |
+| 6 | if “Should refresh SoC”: cast Seal of Command | 2.3 | 2.3 | 2.3 | 2.2 | 2.2 |
 | 7 | groupReference | as ready | as ready | as ready | as ready | as ready |
 | 8 | groupReference | as ready | as ready | as ready | as ready | as ready |
 
@@ -147,9 +147,9 @@ Our rotation `retribution-holy_shock.apl.json` (wowsims/forever ff9babb (client 
 
 The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring change what mana is worth), top priority first:
 
-1. if variableRef: groupReference
+1. if “Should refresh seal”: groupReference
 2. groupReference
-3. if time into the fight ≥ variableRef: use every other cooldown when ready
+3. if time into the fight ≥ “Delay Major CDs”: use every other cooldown when ready
 4. groupReference
 5. cast Judgement
 6. cast Consecration
@@ -163,16 +163,16 @@ The tables below are the training-dummy rotation, filtered per build:
 
 ### [`shockadin-open-raid`](builds/shockadin-open-raid.md) (ours: derived (open search), 489 DPS)
 
-Before the pull: at -20s: groupReference; at -30s: if Manual Crowd Pummeler is known: swap to the Swap1 item set; at -20s: move to variableRef yd; at -1.5s: if not variableRef: groupReference; at -1.5s: if variableRef: groupReference.
+Before the pull: at -20s: groupReference; at -30s: if Manual Crowd Pummeler is known: swap to the Swap1 item set; at -20s: move to “Pull range” yd; at -1.5s: if not “Has assigned judgement”: groupReference; at -1.5s: if “Has assigned judgement”: groupReference.
 
 | # | Priority (the first line whose condition holds is cast) | [`shockadin-open-raid`](builds/shockadin-open-raid.md) casts/min |
 |---|---|---|
 | 1 | groupReference | as ready |
-| 2 | if time into the fight ≥ variableRef: use every other cooldown when ready | as ready |
+| 2 | if time into the fight ≥ “Delay Major CDs”: use every other cooldown when ready | as ready |
 | 3 | groupReference | as ready |
 | 4 | cast Judgement | 6.9 |
 | 5 | cast Consecration | 5.6 |
-| 6 | if variableRef: groupReference | as ready |
+| 6 | if “Should refresh seal”: groupReference | as ready |
 | 7 | cast Holy Strike | 6.0 |
 | 8 | if Holy Shock is ready: cast Divine Favor | 0.6 |
 | 9 | cast Holy Shock | 4.4 |

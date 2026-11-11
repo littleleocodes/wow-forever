@@ -43,9 +43,9 @@ Marksmanship plays without a pet: **Lone Wolf** adds 20% to everything you do wh
 - Before the pull: **Dismiss Pet**, cast **Trueshot Aura** (in Forever a buff you cast, 30 minutes for your party and raid) and **Aspect of the Hawk**, and track the boss's creature type, since **Improved Tracking** adds 5% only against the tracked type. In the simulator **Lone Wolf** is about 16% of this build's damage, more than any other talent.
 - **Aimed Shot** comes first: it is your biggest regular hit (weapon damage plus 350, 10% more with **Barrage**), and its 6-second cooldown starts only when the 2-second cast ends, so any delay pushes every later cast back. The simulator measured about 4% more damage with it at the top.
 - **Rapid Fire** gives 40% faster attacks for 15 seconds; **Rapid Killing** cuts its cooldown to 3 minutes, so it comes once in a 3-minute fight, at the pull. The full rotation presses it right before an **Auto Shot**.
-- **Serpent Sting**: recast it in its last second, but not when **Aimed Shot** is half a second from ready. Each sting also starts **Rapid Recuperation** (a quarter of your mana regeneration keeps going while you cast, for 15 seconds), so it pays back some mana.
+- **Serpent Sting**: recast it with under 0.75 seconds left, but not when **Aimed Shot** or **Multi-Shot** is half a second from ready. Each sting also starts **Rapid Recuperation** (a quarter of your mana regeneration keeps going while you cast, for 15 seconds), so it pays back some mana.
 - **Arcane Shot** comes back every 4.5 seconds with 5 points in **Improved Arcane Shot**: about 33 casts a fight, more than any other button, filling the gaps between **Aimed Shot** casts.
-- **Sniper Shot** hits hardest (weapon damage plus 590) but takes 4 seconds, so it goes last: start it only when **Aimed Shot** is at least a second from ready. It is not a true filler: it has a 15-second cooldown and comes about 9 times a fight, and between casts **Auto Shot** does the work.
+- **Sniper Shot** hits hardest (weapon damage plus 590) but takes 4 seconds, so it goes last: start it only when **Aimed Shot** is at least 2.25 seconds from ready (2 seconds in the Lone Wolf rotation) and **Multi-Shot** at least 1, so the long cast barely delays your biggest hit. The 2026-11-10 search widened that margin from 1 second (about 0.6% better in a full raid for Lone Wolf). It comes about 9 times a fight on its 15-second cooldown; between casts **Auto Shot** does the work.
 
 **Caveats**
 
@@ -60,8 +60,6 @@ Marksmanship plays without a pet: **Lone Wolf** adds 20% to everything you do wh
 - Two or three targets close together: **Multi-Shot** instead of **Aimed Shot** (same cooldown, up to 3 targets for weapon damage each). For a pack, **Volley**: a 6-second channel with no cooldown in Forever.
 - In the last seconds, skip the **Serpent Sting** refresh and do not start a **Sniper Shot** that will not finish; **Arcane Shot** instead.
 - With a pet out **Lone Wolf** does nothing: if you want the pet, take the pet build linked above, whose rotation puts **Arcane Shot** first.
-
-*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents
 

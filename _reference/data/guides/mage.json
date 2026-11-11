@@ -240,7 +240,7 @@
   },
   "Hybrid Fire/Frost": {
    "raid": {
-    "plan": "Frostfire is a Fire list whose main spell is **Frostfire Bolt**: it counts as both Fire and Frost, so both trees' talents apply, its chill rolls **Fingers of Frost**, and its crits stack **Heating Up** for a 1.5-second **Pyroblast**. **Scorch** keeps Fire Vulnerability at 5 stacks and **Fire Blast** fills between casts. **Ice Lance** is in the build only because **Fingers of Frost** requires it: the list never casts it. 759 DPS in a full raid, 8% behind the Fire page.",
+    "plan": "Frostfire is a Fire list whose main spell is **Frostfire Bolt**: it counts as both Fire and Frost, so both trees' talents apply, its chill rolls **Fingers of Frost**, and its crits stack **Heating Up** for a 1.5-second **Pyroblast**. **Scorch** keeps Fire Vulnerability at 5 stacks and **Fire Blast** fills between casts. **Ice Lance** is in the build only because **Fingers of Frost** requires it: the list never casts it. 772 DPS in a full raid on the simulator of 2026-11-11, 10% behind the Fire page.",
     "why": [
      "**Scorch** keeps Fire Vulnerability at 5 stacks (**Improved Scorch**: 3% more Fire damage per stack for 30 seconds, and **Frostfire Bolt** counts as Fire) and refreshes it under 10 seconds left, a wider margin than the Fire list's 5 (+2.2% in the search), between casts unless the stacks are under 4. About 14 casts and 7% of the damage. Trinkets and the other cooldowns wait for the fifth stack.",
      "**Pyroblast** at 3 stacks of **Heating Up** (12 casts, 22%, and most of **Ignite**'s 13%): crits from **Frostfire Bolt**, **Fire Blast** and **Scorch** cut its cast by 25% each and **Fire Blast** adds a stack on every hit. One hard cast before the pull.",
@@ -260,10 +260,10 @@
      "In the last 3 seconds, **Scorch** instead of starting a **Frostfire Bolt**.",
      "Out of mana with the fight going on: **Evocation** if it is back, else **Scorch** (150 mana) keeps the stacks and **Heating Up** moving until a gem or potion returns."
     ],
-    "written": "2026-11-04",
+    "written": "2026-11-11",
     "rotations": {
      "frost-raid": "9d92acd12c6d",
-     "fire-raid": "0ff76b4d4b8e",
+     "fire-raid": "6e4d5a9fe906",
      "frostfire-raid": "d47545516c78"
     }
    },

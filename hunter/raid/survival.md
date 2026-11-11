@@ -32,7 +32,7 @@
 
 ## Why this rotation
 
-Melee Survival fights at the boss with two one-handers and no pet. **Raptor Strike** replaces a swing every 6 seconds, **Mongoose Bite** goes whenever it lights up, **Strider Kick** and **Immolation Trap** go on cooldown, and **Wing Clip** fills every other global cooldown.
+Melee Survival fights at the boss with two one-handers and no pet. **Raptor Strike** replaces a swing every 6 seconds, **Explosive Trap** goes down under the boss whenever its cooldown allows and you have the mana, **Mongoose Bite** goes whenever it lights up, **Strider Kick** on cooldown, and **Wing Clip** fills every other global cooldown.
 
 **Why it works**
 
@@ -40,7 +40,7 @@ Melee Survival fights at the boss with two one-handers and no pet. **Raptor Stri
 - **Aspect of the Beast** adds 110 melee attack power, and with **Deadly Aspects** each melee auto attack has a 10% chance to speed your swings by 30% for 12 seconds. **Rapid Fire** speeds up melee too in Forever (40% for 15 seconds): press it at the pull.
 - **Raptor Strike** is first and never waits: it replaces your next main-hand swing and costs no global cooldown, so queue it every time its 6-second cooldown ends.
 - **Mongoose Bite** next, as soon as it lights up: weapon damage plus 57, and **Lacerating Strikes** adds a bleed worth 40% of the bite over 21 seconds. Using it at once frees its 5-second cooldown for the next one.
-- **Strider Kick** (full weapon damage, 8-second cooldown) and **Immolation Trap** go on cooldown. Traps work in combat in Forever but land at your own feet, so standing at the boss puts the trap under it: 690 Fire damage over 15 seconds, 30% more with **Clever Traps**, every 18 seconds with **Survivalist's Discipline**.
+- **Explosive Trap** now sits at the top of the list while you have 60% mana or more and 20 seconds of the fight left: traps work in combat in Forever but land at your own feet, so standing at the boss puts it under the boss, 30% stronger with **Clever Traps**. The 2026-11-10 search measured the move to the top about 0.6% better in a full raid, and the mana and time guards about 0.2% each. Below 60% mana the shared fire-trap cooldown goes to **Immolation Trap**. **Strider Kick** (full weapon damage, 8-second cooldown) goes on cooldown.
 - **Wing Clip** is the filler. Its own hit is small (50 damage), but every hit on your marked target is another chance at **Mongoose Bite**, and the simulator measured about 10% more damage in a full raid with **Wing Clip** in every empty global cooldown.
 
 **Caveats**
@@ -48,17 +48,15 @@ Melee Survival fights at the boss with two one-handers and no pet. **Raptor Stri
 - No pet: **Lone Wolf**'s 20% needs no active pet, so **Dismiss Pet** before the pull. Track the boss's creature type too: **Improved Tracking** adds 5% only against the type you are tracking.
 - Mana: **Resourcefulness** cuts the cost of traps and melee abilities by 60%, and in a full raid that is enough. With only your own buffs the hunter runs short; then spend the mana on **Mongoose Bite**, **Strider Kick** and the trap before **Wing Clip**.
 - Blizzard's notes say **Expose Prey** works on the target of your own **Hunter's Mark**. With several hunters in the raid, make sure the mark on the boss is yours (the simulator accepts any).
-- **Explosive Trap** and **Immolation Trap** share the fire-trap cooldown. With a raid's mana the list spends it on **Explosive Trap** (about 9 a fight in the simulator, **Immolation Trap** about once); below 60% mana, **Immolation Trap** takes it.
+- **Explosive Trap** and **Immolation Trap** share the fire-trap cooldown. The list gives it to **Explosive Trap** above 60% mana and to **Immolation Trap** below; on a long fight with a raid's mana that is mostly **Explosive Trap**.
 - Watch your ranks: in the beta client (build 70753) the top ranks are the strongest. **Hunter's Mark** rank 4 gives +143 ranged attack power (rank 3 +98) and **Aspect of the Beast** rank 4 +110 melee attack power (rank 3 +90). Cast the highest rank you have.
 
 **When to change it**
 
-- Adds around you: **Explosive Trap** instead of **Immolation Trap**; it hits everything within 10 yards.
+- Adds around you: keep **Explosive Trap** going even below 60% mana while they live; it hits everything within 10 yards.
 - When you must leave the boss, make **Strider Kick** your last hit: it adds 30% movement speed for 3 seconds.
 - If you pull threat, **Feign Death** (30-second cooldown; **Survival Tactics** makes it more likely to land).
-- In the last few seconds, skip a fresh **Immolation Trap**: its damage comes over 15 seconds.
-
-*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
+- The list stops placing **Explosive Trap** in the last 20 seconds, when most of its damage would come after the boss dies.
 
 ## Talents
 

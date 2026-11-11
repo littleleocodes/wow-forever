@@ -629,7 +629,7 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   rage, energy, combo-point ceilings, "until the last N seconds" and either-or groups are kept; a fight-time window that opens after the
   180 s fight reads "save it for the last N seconds" (Death Wish); lines cast only in the last seconds are end-of-fight extras; seal
   twisting is explained, not shown as two seals kept up; Cold Blood reads "right before your finisher"; Judgement's casts count under the
-  judged seal's ids (`render_rotations.CAST_ALIASES`).
+  judged seal's ids (`render_rotations.CAST_ALIASES`). Named conditions (2026-11-11: the official simulator's rotations define `valueVariables`, Feral's "Rip due", "Midfight Bite is worthwhile"): the research pages print each by its quoted name (`render_sim_presets.val`); the player list drops technical ones (guards, realism, range, delay, "Use"/"Has" settings: `simple_rotation.TECH_NAMED`) and marks a line with any other as "(timing: see below)", for the guide to explain (before, they were dropped silently: Feral's list read Ferocious Bite unconditioned and lost Shred as the filler).
 - **Player pages**: `render_modes.py` (regen step; see Structure rules) writes the top-level README, the class README's two player
   sections and `<class>/leveling|raid/`; `render_start_here.py` is its helper library (`tf_link`, `display_name`, `rotation_lines`).
   The beta build every page and report names comes from `data_build.py` (the forever-talents snapshot; 70009 had been written into the

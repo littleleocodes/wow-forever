@@ -157,6 +157,9 @@ def val(v, N):
         return label
     if k == "runeCooldown" or k == "nextRuneCooldown":
         return "rune cooldown"
+    if k == "variableRef":   # a named condition of the official simulator's rotations (2026-11-11: Feral's "Rip due", "Midfight Bite is
+        return f"“{(x or {}).get('name') or 'a rotation variable'}”"   # worthwhile"... had printed as a bare "variableRef";
+        # quoted, so simple_rotation keeps it as a named condition)
     return k
 
 

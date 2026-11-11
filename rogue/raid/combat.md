@@ -18,11 +18,11 @@
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Garrote**: keep it on the target
-2. **Vanish**; no global cooldown, so press it alongside the others
-3. **Shank**
+1. **Garrote**: keep it on the target (timing: see below)
+2. **Vanish** (timing: see below); no global cooldown, so press it alongside the others
+3. **Shank** (timing: see below)
 4. **Adrenaline Rush** when Slice and Dice is active
-5. **Eviscerate** (rank 8) when you have 4 or more combo points
+5. **Eviscerate** (rank 8) when you have 4 or more combo points (timing: see below)
 6. **Backstab**
 
 **Backstab** is your filler: cast it whenever nothing above is ready.

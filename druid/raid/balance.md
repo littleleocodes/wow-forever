@@ -26,10 +26,10 @@ A raid Moonkin keeps **Insect Swarm** and **Moonfire** ticking on the boss and c
 
 - **Moonkin Form** first (the rotation shifts 10 seconds before the pull) and for the whole fight: it gives all party or raid members within 45 yards 3% spell critical strike chance and doubles how often **Omen of Clarity** makes your next spell free. A feral druid's **Leader of the Pack** adds melee and ranged crit instead of competing with it, and you cannot heal while in the form.
 - **Insect Swarm** and **Moonfire** each do close to a fifth of your damage for one instant cast every 14 to 15 seconds (**Nature's Splendor** makes them last that long, **Genesis** adds 2% to their ticks a point, 10% at 5 points). Recast each one the moment it runs out, not before: recasting a running one throws away the ticks it had left.
-- When both are due, **Insect Swarm** goes first: it costs 160 mana against 375 for **Moonfire**, and the simulator measured that order 0.3% better in a full raid (1.8% on a training dummy, where mana runs short).
+- Both sit at the top of the list, above your cooldowns, and when both are due **Moonfire** goes first: its direct hit lands at once and can crit into **Nature's Grace** for the next **Starfire**. The rotation search of 2026-11-01 measured that order about 0.5% better in a full raid than the old **Insect Swarm** first.
 - **Starfire** is your filler and about two thirds of your damage. It beats **Wrath** per second of casting at any gear: 350 to 412 damage plus all of your spell power in 3 seconds with **Improved Starfire**, against 92 to 102 plus 57% of it in 2 seconds. The raid build takes no **Eclipse**, so **Wrath** has no place in the list.
 - Critical strikes feed the filler: **Vengeance** doubles their bonus damage, and every critical hit from **Starfire** or **Moonfire**'s first hit triggers **Nature's Grace**, 10% faster casts and global cooldown for 3 seconds.
-- **Innervate** at 30% mana: for 20 seconds your mana regeneration is five times higher and all of it continues while you cast (6-minute cooldown). Not earlier, since regeneration is wasted once your bar is full. With a raid's Blessing of Wisdom and Mana Spring you need it in about 1 fight in 10.
+- **Innervate** at 10% mana: for 20 seconds your mana regeneration is five times higher and all of it continues while you cast (6-minute cooldown). The 2026-11-01 search moved it down from 30% (about 0.2% better in a full raid): pressed late, none of it is wasted on a full bar. With a raid's Blessing of Wisdom and Mana Spring you need it in about 1 fight in 10.
 
 **Caveats**
 
@@ -44,8 +44,6 @@ A raid Moonkin keeps **Insect Swarm** and **Moonfire** ticking on the boss and c
 - In the last 10 seconds of a fight, skip a new **Insect Swarm**: most of its 14 seconds would tick on nothing. The simulator measured that 0.2% better on the training dummy.
 - On a pack that will live a while, **Hurricane** hits every enemy in the area each second for 10 seconds (1,495 mana); the list itself is for one target.
 - If you end fights with mana to spare, your raid may want **Innervate** on a healer instead: it works on any target.
-
-*This guide was written for the rotation of 2026-10-09; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents
 

@@ -14,13 +14,13 @@
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Garrote**: keep it on the target
-2. **Vanish**; no global cooldown, so press it alongside the others
-3. **Shank**
-4. **Eviscerate** (rank 8) when you have 3 or more combo points
-5. **Mutilate**
+1. **Garrote**: keep it on the target (timing: see below)
+2. **Vanish** (timing: see below); no global cooldown, so press it alongside the others
+3. **Shank** (timing: see below)
+4. **Eviscerate** (rank 8) when you have 3 or more combo points (timing: see below)
+5. **Mutilate** (timing: see below)
 
-**Mutilate** is your filler: cast it whenever nothing above is ready.
+Between these, your white swings do the rest.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 

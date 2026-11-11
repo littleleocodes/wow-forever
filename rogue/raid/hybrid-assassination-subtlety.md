@@ -14,14 +14,14 @@
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Garrote**: keep it on the target
-2. **Vanish**; no global cooldown, so press it alongside the others
+1. **Garrote**: keep it on the target (timing: see below)
+2. **Vanish** (timing: see below); no global cooldown, so press it alongside the others
 3. **Preparation**
-4. **Shank**
+4. **Shank** (timing: see below)
 5. **Premeditation** when you have 3 or fewer combo points; no global cooldown, so press it alongside the others
-6. **Rupture**: keep it on the target, when you have 3 or more combo points
-7. **Eviscerate** (rank 8) when you have 5 combo points
-8. **Ghostly Strike** when Garrote has under 4 seconds left
+6. **Rupture**: keep it on the target, when you have 3 or more combo points (timing: see below)
+7. **Eviscerate** (rank 8) when you have 5 combo points (timing: see below)
+8. **Ghostly Strike** when Garrote has under 4 seconds left (timing: see below)
 9. **Hemorrhage**
 
 **Hemorrhage** is your filler: cast it whenever nothing above is ready.

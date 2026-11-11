@@ -6,16 +6,9 @@
 
 - none
 
-Guides whose rotation changed since they were stamped (8; rewrite or confirm, then `--stamp`):
+Guides whose rotation changed since they were stamped (0; rewrite or confirm, then `--stamp`):
 
-- druid Balance raid: balance-dps
-- druid Feral Combat raid: feral-bear-tank, feral-cat-dps
-- hunter Beast Mastery raid: bm-raid
-- hunter Marksmanship raid: mm-lonewolf-raid, mm-raid
-- hunter Survival raid: melee-dps
-- hunter Hybrid Beast Mastery/Marksmanship raid: bm-raid, mm-lonewolf-raid, mm-raid
-- hunter Hybrid Beast Mastery/Survival raid: bm-raid, melee-dps
-- mage Hybrid Fire/Frost raid: fire-raid
+- none
 
 Leveling steps that name a spell the tuned rules never cast (0; `fightlab/rotations/<class>-<model>.json` veto `off`; rewrite the steps in leveling-steps.json when the rules settle):
 
@@ -23,22 +16,22 @@ Leveling steps that name a spell the tuned rules never cast (0; `fightlab/rotati
 
 | Class | Spec | Mode | Written | Rotations stamped |
 |---|---|---|---|---|
-| druid | Balance | raid | 2026-10-09 | balance-dps 2b2250394daf |
+| druid | Balance | raid | 2026-11-11 | balance-dps 15796dd41ac7 |
 | druid | Balance | leveling | 2026-11-08 | leveling:balance-dps 7fff053cfaa6, leveling:feral-cat-dps 029eb15b2e21 |
-| druid | Feral Combat | raid | 2026-10-15 | feral-bear-tank b7a596b37484, feral-cat-dps d0a11d810771 |
+| druid | Feral Combat | raid | 2026-11-11 | feral-bear-tank 8ca7b01a5ec0, feral-cat-dps 70263c1ed74e |
 | druid | Feral Combat | leveling | 2026-11-08 | leveling:balance-dps 7fff053cfaa6, leveling:feral-cat-dps 029eb15b2e21 |
 | druid | Restoration | raid | 2026-11-08 | healer-policy 843aece7bf5d |
 | druid | Restoration | leveling | 2026-11-08 | leveling:balance-dps 7fff053cfaa6, leveling:feral-cat-dps 029eb15b2e21 |
-| hunter | Beast Mastery | raid | 2026-10-15 | bm-raid 8f87aee79821 |
+| hunter | Beast Mastery | raid | 2026-11-11 | bm-raid 08b392250e22 |
 | hunter | Beast Mastery | leveling | 2026-10-26 | leveling:bm-leveling f957239e7ea7, leveling:melee-dps 0e159439c0ea, leveling:mm-raid 4d924884d1e4 |
-| hunter | Marksmanship | raid | 2026-10-15 | mm-lonewolf-raid 91babb5dc17c, mm-raid 65f6da1ac1d4 |
+| hunter | Marksmanship | raid | 2026-11-11 | mm-lonewolf-raid 422dd63d194f, mm-raid 5ff764097e08 |
 | hunter | Marksmanship | leveling | 2026-10-26 | leveling:bm-leveling f957239e7ea7, leveling:melee-dps 0e159439c0ea, leveling:mm-raid 4d924884d1e4 |
-| hunter | Survival | raid | 2026-10-15 | melee-dps 15437c6a63dc |
+| hunter | Survival | raid | 2026-11-11 | melee-dps 88ff0967f0fa |
 | hunter | Survival | leveling | 2026-10-26 | leveling:bm-leveling f957239e7ea7, leveling:melee-dps 0e159439c0ea, leveling:mm-raid 4d924884d1e4 |
-| hunter | Hybrid Beast Mastery/Marksmanship | raid | 2026-10-15 | bm-raid 8f87aee79821, mm-lonewolf-raid 91babb5dc17c, mm-raid 65f6da1ac1d4 |
+| hunter | Hybrid Beast Mastery/Marksmanship | raid | 2026-11-11 | bm-raid 08b392250e22, mm-lonewolf-raid 422dd63d194f, mm-raid 5ff764097e08 |
 | hunter | Hybrid Beast Mastery/Marksmanship | leveling | 2026-10-26 | leveling:bm-leveling f957239e7ea7, leveling:melee-dps 0e159439c0ea, leveling:mm-raid 4d924884d1e4 |
 | hunter | Hybrid Marksmanship/Survival | leveling | 2026-10-26 | leveling:bm-leveling f957239e7ea7, leveling:melee-dps 0e159439c0ea, leveling:mm-raid 4d924884d1e4 |
-| hunter | Hybrid Beast Mastery/Survival | raid | 2026-10-15 | bm-raid 8f87aee79821, melee-dps 15437c6a63dc |
+| hunter | Hybrid Beast Mastery/Survival | raid | 2026-11-11 | bm-raid 08b392250e22, melee-dps 88ff0967f0fa |
 | hunter | Hybrid Beast Mastery/Survival | leveling | 2026-10-26 | leveling:bm-leveling f957239e7ea7, leveling:melee-dps 0e159439c0ea, leveling:mm-raid 4d924884d1e4 |
 | mage | Frost | raid | 2026-11-10 | frost-raid 9d92acd12c6d |
 | mage | Frost | leveling | 2026-11-08 | leveling:arcane-leveling 168e92e4767c, leveling:barrage-frost-leveling 9aac3f0a975d, leveling:fire-leveling fd0a5bb910df, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 1af5e11a81be, leveling:frostfire-leveling 1dbf89646cc1 |
@@ -48,7 +41,7 @@ Leveling steps that name a spell the tuned rules never cast (0; `fightlab/rotati
 | mage | Arcane | leveling | 2026-11-08 | leveling:arcane-leveling 168e92e4767c, leveling:barrage-frost-leveling 9aac3f0a975d, leveling:fire-leveling fd0a5bb910df, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 1af5e11a81be, leveling:frostfire-leveling 1dbf89646cc1 |
 | mage | Fire | raid | 2026-11-10 | fire-raid 6e4d5a9fe906 |
 | mage | Fire | leveling | 2026-11-08 | leveling:arcane-leveling 168e92e4767c, leveling:barrage-frost-leveling 9aac3f0a975d, leveling:fire-leveling fd0a5bb910df, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 1af5e11a81be, leveling:frostfire-leveling 1dbf89646cc1 |
-| mage | Hybrid Fire/Frost | raid | 2026-11-04 | fire-raid 0ff76b4d4b8e, frost-raid 9d92acd12c6d, frostfire-raid d47545516c78 |
+| mage | Hybrid Fire/Frost | raid | 2026-11-11 | fire-raid 6e4d5a9fe906, frost-raid 9d92acd12c6d, frostfire-raid d47545516c78 |
 | mage | Hybrid Fire/Frost | leveling | 2026-11-08 | leveling:arcane-leveling 168e92e4767c, leveling:barrage-frost-leveling 9aac3f0a975d, leveling:fire-leveling fd0a5bb910df, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 1af5e11a81be, leveling:frostfire-leveling 1dbf89646cc1 |
 | paladin | Retribution | raid | 2026-10-15 | ret-dps b8271e4a77aa |
 | paladin | Retribution | leveling | 2026-11-08 | leveling:holy-leveling 4424257b1456, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 4e2e970e1edf |

@@ -37,7 +37,7 @@ Beast-Marks puts Beast Mastery's pet talents on a Marksmanship shot core and pla
 
 **Why it works**
 
-- **Serpent Sting** first so it never drops, 20% stronger with **Improved Stings**. Recast it only as it runs out (a new sting replaces the old one), and the full rotation does so only while you have 30% mana or more.
+- **Serpent Sting** first so it never drops, 20% stronger with **Improved Stings**. Recast it only as it runs out (a new sting replaces the old one), whatever your mana: the 2026-11-10 search dropped the old 30% mana guard.
 - **Arcane Shot** every time it is ready: 3 points in **Improved Arcane Shot** bring its cooldown to 5.1 seconds, about 34 casts in a 3-minute fight. **Summon Hawk** would share that timer, and in a full raid the simulator measured **Arcane Shot** as the better use of it, so this build skips the hawk.
 - **Rapid Fire** (40% faster attacks for 15 seconds, 5-minute cooldown) once a fight, at the pull. The full rotation presses it just before an **Auto Shot** with **Aimed Shot** about to come off cooldown.
 - **Aimed Shot** is listed last but goes out almost every time it can: a 2-second cast, then its 6-second cooldown. The simulator measured it slightly better below the instants; **Multi-Shot** shares its cooldown and never comes up on one target.
@@ -56,8 +56,6 @@ Beast-Marks puts Beast Mastery's pet talents on a Marksmanship shot core and pla
 - Two or more targets close together: **Multi-Shot** instead of **Aimed Shot** on their shared cooldown (up to 3 targets for weapon damage each, against 350 extra on one). For a pack, **Volley**: a 6-second channel with no cooldown in Forever.
 - In the last few seconds, skip the **Serpent Sting** refresh: its damage comes over 15 seconds.
 - Inside 8 yards your shots and **Auto Shot** stop: step back out at once; the pet keeps attacking meanwhile.
-
-*This guide was written for the rotation of 2026-10-15; the list above was re-tuned since, so follow the list where the two differ.*
 
 ## Talents
 

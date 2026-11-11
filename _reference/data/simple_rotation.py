@@ -138,6 +138,9 @@ DROP = re.compile(r"time to the next auto attack|time until .* is ready (?:<|≤
                   r"the global cooldown|is known|current cost|excess cat energy|^false$|^true$|mana \+|internal cooldown|energy (?:<|≤)")
 
 
+TECH_NAMED = re.compile(r"guard|realism|range\b|delay|^has |^use |assigned", re.I)
+
+
 def _clause(c, spell, ok):
     """One condition clause -> (kind, plain text) or None to drop it. Kinds: keep, stack, when, until."""
     c = _unwrap(c)
@@ -149,14 +152,21 @@ def _clause(c, spell, ok):
             return ("when", EITHER + " or ".join(w.replace(EITHER, "") for w in whens))   # marked: _parse says "either" beside other conditions
         if whens:
             return ("when", whens[0])
-        return next((g for g in got if g[0] in ("keep", "stack")), None)
+        return next((g for g in got if g[0] in ("keep", "stack", "named")), None)
     if len(_cond_parts(c)) > 1:   # a group inside an either-or part: all of it or nothing
         got = [_clause(p, spell, ok) for p in _cond_parts(c)]
         if got and all(g and g[0] == "when" for g in got):
             return ("when", " and ".join(g[1] for g in got))
+        if any(g and g[0] == "named" for g in got):
+            return ("named", "")
         return None
     if DROP.search(c):
         return None
+    m = re.fullmatch(r"(not )?“(.+?)”", c.strip())   # a named condition of the official simulator's rotations (2026-11-11:
+    if m:                                                        # Feral's "Rip due", "Midfight Bite is worthwhile")
+        if TECH_NAMED.search(m.group(2)):   # a timing guard or a setting (Retribution's "WF guard", "Judge realism protection";
+            return None                     # a rogue's "Use Ambush Opener"): dropped like the swing timers it stands for
+        return ("named", m.group(2))
     m = re.match(r"time until (.+?) is ready > 0s?$", c)
     if m:
         return ("when", f"{m.group(1)} is on cooldown")
@@ -396,7 +406,8 @@ def _parse(cls, t):
     if win:
         return ([sp], f"**{sp}**: a big cooldown, {win}", swing)
     clauses = [c for c in (_clause(x, sp, ok) for x in (_cond_parts(cond) if cond else [])) if c]
-    kinds = dict((k, v) for k, v in clauses if k not in ("when", "until"))
+    kinds = dict((k, v) for k, v in clauses if k not in ("when", "until", "named"))
+    named = any(k == "named" for k, v in clauses)
     whens = list(dict.fromkeys(v for k, v in clauses if k == "when"))
     until = max((v for k, v in clauses if k == "until"), default=None)
     if "stack" in kinds:
@@ -422,6 +433,8 @@ def _parse(cls, t):
         txt += (" when " if txt in (f"**{sp}**", f"**{sp}** (rank {rk.group(1) if rk else ''})") else ", when ") + " and ".join(whens).replace(" and you have ", " and ")
     if until:
         txt += f"{',' if txt != f'**{sp}**' else ''} until the last {_n(until)} seconds of the fight"
+    if named:   # a condition the rotation names (official simulator rotations): the guide below says when
+        txt += " (timing: see below)"   # (the page's guide, or the link to the full rotation under the list)
     return ([sp], txt, swing)
 
 

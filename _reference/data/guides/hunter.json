@@ -6,7 +6,7 @@
    "raid": {
     "plan": "Beast Mastery in a raid is **Auto Shot** and your pet with a short list on top: keep **Serpent Sting** ticking, fire **Arcane Shot** and **Aimed Shot** each time their cooldowns end, and send **Bestial Wrath** whenever it is ready.",
     "why": [
-     "**Serpent Sting** comes first so it never drops: on the training dummy it is about 15% of this build's damage, 20% more with **Improved Stings**. Recast it only as it runs out, since a new sting replaces the old one and its last ticks; the full-raid rotation recasts it only while you have 30% mana or more.",
+     "**Serpent Sting** comes first so it never drops: on the training dummy it is about 15% of this build's damage, 20% more with **Improved Stings**. Recast it only as it runs out, since a new sting replaces the old one and its last ticks. The full-raid rotation recasts it whatever your mana: the search of 2026-11-10 dropped the old 30% mana guard (about 0.2% better).",
      "**Arcane Shot** goes out every time its cooldown ends: 5.4 seconds with 2 points in **Improved Arcane Shot**, about 33 times in a 3-minute fight. **Summon Hawk** shares that cooldown, and the full-raid rotation gives all of it to **Arcane Shot**, so the build's **Summon Hawk** point is never cast.",
      "**Rapid Fire** (40% faster attacks for 15 seconds, 5-minute cooldown) goes once a fight, at the pull. The full rotation presses it just before an **Auto Shot** with **Aimed Shot** about to come off cooldown, so the next **Aimed Shot** is cast under it.",
      "**Aimed Shot** is last on the list but it is not a spam filler: it goes out almost every time it can, a 2-second cast and then its 6-second cooldown, about 23 times a fight. The instants above it cost only a global cooldown.",
@@ -26,9 +26,9 @@
      "Inside 8 yards your shots and **Auto Shot** stop. Step back out; if you cannot, **Summon Hawk** still works, as it has no minimum range."
     ],
     "rotations": {
-     "bm-raid": "8f87aee79821"
+     "bm-raid": "08b392250e22"
     },
-    "written": "2026-10-15"
+    "written": "2026-11-11"
    },
    "leveling": {
     "plan": "Beast Mastery levels with the cat as the tank: it holds the mob while **Auto Shot**, **Serpent Sting** and **Aimed Shot** kill it from range. The build puts its first 31 points into the pet (**Deadly Aspects** from level 10, **Unleashed Fury** at 20, **Ferocity** at 25, **Bestial Wrath** at 40) and then adds Marksmanship's crit and cheaper shots. Your job is to keep the mob on the pet and to spend mana only where it shortens the fight.",
@@ -67,9 +67,9 @@
      "Before the pull: **Dismiss Pet**, cast **Trueshot Aura** (in Forever a buff you cast, 30 minutes for your party and raid) and **Aspect of the Hawk**, and track the boss's creature type, since **Improved Tracking** adds 5% only against the tracked type. In the simulator **Lone Wolf** is about 16% of this build's damage, more than any other talent.",
      "**Aimed Shot** comes first: it is your biggest regular hit (weapon damage plus 350, 10% more with **Barrage**), and its 6-second cooldown starts only when the 2-second cast ends, so any delay pushes every later cast back. The simulator measured about 4% more damage with it at the top.",
      "**Rapid Fire** gives 40% faster attacks for 15 seconds; **Rapid Killing** cuts its cooldown to 3 minutes, so it comes once in a 3-minute fight, at the pull. The full rotation presses it right before an **Auto Shot**.",
-     "**Serpent Sting**: recast it in its last second, but not when **Aimed Shot** is half a second from ready. Each sting also starts **Rapid Recuperation** (a quarter of your mana regeneration keeps going while you cast, for 15 seconds), so it pays back some mana.",
+     "**Serpent Sting**: recast it with under 0.75 seconds left, but not when **Aimed Shot** or **Multi-Shot** is half a second from ready. Each sting also starts **Rapid Recuperation** (a quarter of your mana regeneration keeps going while you cast, for 15 seconds), so it pays back some mana.",
      "**Arcane Shot** comes back every 4.5 seconds with 5 points in **Improved Arcane Shot**: about 33 casts a fight, more than any other button, filling the gaps between **Aimed Shot** casts.",
-     "**Sniper Shot** hits hardest (weapon damage plus 590) but takes 4 seconds, so it goes last: start it only when **Aimed Shot** is at least a second from ready. It is not a true filler: it has a 15-second cooldown and comes about 9 times a fight, and between casts **Auto Shot** does the work."
+     "**Sniper Shot** hits hardest (weapon damage plus 590) but takes 4 seconds, so it goes last: start it only when **Aimed Shot** is at least 2.25 seconds from ready (2 seconds in the Lone Wolf rotation) and **Multi-Shot** at least 1, so the long cast barely delays your biggest hit. The 2026-11-10 search widened that margin from 1 second (about 0.6% better in a full raid for Lone Wolf). It comes about 9 times a fight on its 15-second cooldown; between casts **Auto Shot** does the work."
     ],
     "caveats": [
      "**Multi-Shot** is on the list but shares **Aimed Shot**'s cooldown, so on one target it almost never comes up (the simulator cast it about once in five fights). It is there for groups of targets.",
@@ -84,10 +84,10 @@
      "With a pet out **Lone Wolf** does nothing: if you want the pet, take the pet build linked above, whose rotation puts **Arcane Shot** first."
     ],
     "rotations": {
-     "mm-raid": "65f6da1ac1d4",
-     "mm-lonewolf-raid": "91babb5dc17c"
+     "mm-raid": "5ff764097e08",
+     "mm-lonewolf-raid": "422dd63d194f"
     },
-    "written": "2026-10-15"
+    "written": "2026-11-11"
    },
    "leveling": {
     "plan": "Marksmanship levels with the pet tanking, but more of the damage is your own: **Aimed Shot** on its cooldown, **Serpent Sting** on every mob, **Arcane Shot** to finish once the mob is below 35% of its health, **Trueshot Aura** always on and **Auto Shot** in between. The build spends its first 30 points on Marksmanship (**Lethal Attacks**, **Careful Aim**, **Efficiency**) and the other 21 on the pet.",
@@ -121,32 +121,32 @@
   },
   "Survival": {
    "raid": {
-    "plan": "Melee Survival fights at the boss with two one-handers and no pet. **Raptor Strike** replaces a swing every 6 seconds, **Mongoose Bite** goes whenever it lights up, **Strider Kick** and **Immolation Trap** go on cooldown, and **Wing Clip** fills every other global cooldown.",
+    "plan": "Melee Survival fights at the boss with two one-handers and no pet. **Raptor Strike** replaces a swing every 6 seconds, **Explosive Trap** goes down under the boss whenever its cooldown allows and you have the mana, **Mongoose Bite** goes whenever it lights up, **Strider Kick** on cooldown, and **Wing Clip** fills every other global cooldown.",
     "why": [
      "**Hunter's Mark** before the pull is for **Expose Prey**: each of your hits on a marked target has a 10% chance to light up **Mongoose Bite** for 10 seconds. Otherwise **Mongoose Bite** lights up only after you dodge (not the boss), and in a raid the boss hits your tank, so nearly all your bites, about 39 a fight, come from **Expose Prey**. The mark lasts 2 minutes: put it back when it drops.",
      "**Aspect of the Beast** adds 110 melee attack power, and with **Deadly Aspects** each melee auto attack has a 10% chance to speed your swings by 30% for 12 seconds. **Rapid Fire** speeds up melee too in Forever (40% for 15 seconds): press it at the pull.",
      "**Raptor Strike** is first and never waits: it replaces your next main-hand swing and costs no global cooldown, so queue it every time its 6-second cooldown ends.",
      "**Mongoose Bite** next, as soon as it lights up: weapon damage plus 57, and **Lacerating Strikes** adds a bleed worth 40% of the bite over 21 seconds. Using it at once frees its 5-second cooldown for the next one.",
-     "**Strider Kick** (full weapon damage, 8-second cooldown) and **Immolation Trap** go on cooldown. Traps work in combat in Forever but land at your own feet, so standing at the boss puts the trap under it: 690 Fire damage over 15 seconds, 30% more with **Clever Traps**, every 18 seconds with **Survivalist's Discipline**.",
+     "**Explosive Trap** now sits at the top of the list while you have 60% mana or more and 20 seconds of the fight left: traps work in combat in Forever but land at your own feet, so standing at the boss puts it under the boss, 30% stronger with **Clever Traps**. The 2026-11-10 search measured the move to the top about 0.6% better in a full raid, and the mana and time guards about 0.2% each. Below 60% mana the shared fire-trap cooldown goes to **Immolation Trap**. **Strider Kick** (full weapon damage, 8-second cooldown) goes on cooldown.",
      "**Wing Clip** is the filler. Its own hit is small (50 damage), but every hit on your marked target is another chance at **Mongoose Bite**, and the simulator measured about 10% more damage in a full raid with **Wing Clip** in every empty global cooldown."
     ],
     "caveats": [
      "No pet: **Lone Wolf**'s 20% needs no active pet, so **Dismiss Pet** before the pull. Track the boss's creature type too: **Improved Tracking** adds 5% only against the type you are tracking.",
      "Mana: **Resourcefulness** cuts the cost of traps and melee abilities by 60%, and in a full raid that is enough. With only your own buffs the hunter runs short; then spend the mana on **Mongoose Bite**, **Strider Kick** and the trap before **Wing Clip**.",
      "Blizzard's notes say **Expose Prey** works on the target of your own **Hunter's Mark**. With several hunters in the raid, make sure the mark on the boss is yours (the simulator accepts any).",
-     "**Explosive Trap** and **Immolation Trap** share the fire-trap cooldown. With a raid's mana the list spends it on **Explosive Trap** (about 9 a fight in the simulator, **Immolation Trap** about once); below 60% mana, **Immolation Trap** takes it.",
+     "**Explosive Trap** and **Immolation Trap** share the fire-trap cooldown. The list gives it to **Explosive Trap** above 60% mana and to **Immolation Trap** below; on a long fight with a raid's mana that is mostly **Explosive Trap**.",
      "Watch your ranks: in the beta client (build 70753) the top ranks are the strongest. **Hunter's Mark** rank 4 gives +143 ranged attack power (rank 3 +98) and **Aspect of the Beast** rank 4 +110 melee attack power (rank 3 +90). Cast the highest rank you have."
     ],
     "diverge": [
-     "Adds around you: **Explosive Trap** instead of **Immolation Trap**; it hits everything within 10 yards.",
+     "Adds around you: keep **Explosive Trap** going even below 60% mana while they live; it hits everything within 10 yards.",
      "When you must leave the boss, make **Strider Kick** your last hit: it adds 30% movement speed for 3 seconds.",
      "If you pull threat, **Feign Death** (30-second cooldown; **Survival Tactics** makes it more likely to land).",
-     "In the last few seconds, skip a fresh **Immolation Trap**: its damage comes over 15 seconds."
+     "The list stops placing **Explosive Trap** in the last 20 seconds, when most of its damage would come after the boss dies."
     ],
     "rotations": {
-     "melee-dps": "15437c6a63dc"
+     "melee-dps": "88ff0967f0fa"
     },
-    "written": "2026-10-15"
+    "written": "2026-11-11"
    },
    "leveling": {
     "plan": "Melee Survival levels with the pet as the tank: you walk in behind it and fight beside it with two one-handers. **Raptor Strike** finishes the mob (with **Strider Kick** from level 54), **Mongoose Bite** comes when it lights up, **Immolation Trap** burns the longer fights, **Lacerate** adds a bleed from level 30, and white swings do the rest. The build puts 32 points into Survival, 16 into Marksmanship (**Lethal Attacks**, **Careful Aim**, **Improved Stings**, **Efficiency**) and 3 into **Deadly Aspects**.",
@@ -183,7 +183,7 @@
    "raid": {
     "plan": "Beast-Marks puts Beast Mastery's pet talents on a Marksmanship shot core and plays the same short list as Beast Mastery: keep **Serpent Sting** up, fire **Arcane Shot** and **Aimed Shot** each time they are ready, and let **Auto Shot** and the pet do the rest.",
     "why": [
-     "**Serpent Sting** first so it never drops, 20% stronger with **Improved Stings**. Recast it only as it runs out (a new sting replaces the old one), and the full rotation does so only while you have 30% mana or more.",
+     "**Serpent Sting** first so it never drops, 20% stronger with **Improved Stings**. Recast it only as it runs out (a new sting replaces the old one), whatever your mana: the 2026-11-10 search dropped the old 30% mana guard.",
      "**Arcane Shot** every time it is ready: 3 points in **Improved Arcane Shot** bring its cooldown to 5.1 seconds, about 34 casts in a 3-minute fight. **Summon Hawk** would share that timer, and in a full raid the simulator measured **Arcane Shot** as the better use of it, so this build skips the hawk.",
      "**Rapid Fire** (40% faster attacks for 15 seconds, 5-minute cooldown) once a fight, at the pull. The full rotation presses it just before an **Auto Shot** with **Aimed Shot** about to come off cooldown.",
      "**Aimed Shot** is listed last but goes out almost every time it can: a 2-second cast, then its 6-second cooldown. The simulator measured it slightly better below the instants; **Multi-Shot** shares its cooldown and never comes up on one target.",
@@ -202,11 +202,11 @@
      "Inside 8 yards your shots and **Auto Shot** stop: step back out at once; the pet keeps attacking meanwhile."
     ],
     "rotations": {
-     "mm-raid": "65f6da1ac1d4",
-     "mm-lonewolf-raid": "91babb5dc17c",
-     "bm-raid": "8f87aee79821"
+     "mm-raid": "5ff764097e08",
+     "mm-lonewolf-raid": "422dd63d194f",
+     "bm-raid": "08b392250e22"
     },
-    "written": "2026-10-15"
+    "written": "2026-11-11"
    },
    "leveling": {
     "plan": "Beast-Marks levels like Beast Mastery without its two cooldowns: the cat tanks and you shoot from range. The split puts the pet talents first (levels 10-37: **Deadly Aspects**, **Unleashed Fury**, **Ferocity**, **Bestial Discipline**, **Frenzy**) and then adds Marksmanship's crit (**Lethal Attacks**), cheaper shots (**Efficiency**), stronger stings (**Improved Stings**) and **Careful Aim**.",
@@ -273,7 +273,7 @@
      "**Raptor Strike** first whenever it is ready: it replaces your next main-hand swing and costs no global cooldown. Then **Mongoose Bite** when it lights up and **Strider Kick** on its 8-second cooldown.",
      "**Summon Hawk** next, about 27 times in a 3-minute fight: a dive bomb plus 5% of your ranged attack power, then a hawk that attacks for 18 seconds. Two can be out at once and a new one replaces the one closest to leaving; **Unleashed Fury** makes them hit 15% harder. The simulator measured about 15% more damage in a full raid once the hawk joined the melee rotation, and it counts hawks as guardians, not pets, so **Lone Wolf** stays on while they fly.",
      "**Hunter's Mark** before the pull is for **Expose Prey**: each hit on a marked target has a 10% chance to light up **Mongoose Bite** for 10 seconds, and in a raid you rarely dodge, the bite's only other trigger. Recast the mark when its 2 minutes run out.",
-     "**Immolation Trap** at your feet under the boss every 24 seconds (one point in **Survivalist's Discipline**), 30% stronger with **Clever Traps**. **Wing Clip** fills the global cooldowns left over, for its small hit and another chance at **Mongoose Bite**."
+     "The fire-trap cooldown goes under the boss every 24 seconds (one point in **Survivalist's Discipline**), 30% stronger with **Clever Traps**: **Explosive Trap** while you have 60% mana or more and 20 seconds left (the melee list's 2026-11-10 change), else **Immolation Trap**. With no **Resourcefulness** here, expect more **Immolation Trap** than the Survival build. **Wing Clip** fills the global cooldowns left over, for its small hit and another chance at **Mongoose Bite**."
     ],
     "caveats": [
      "Mana: this build has no **Resourcefulness**, and each hawk costs 190 mana. In a full raid the simulator needs one mana potion a fight; with only your own buffs it ran out of mana and fell about a quarter behind the Survival builds on the training dummy. Without Blessing of Wisdom or Mana Spring, play Survival.",
@@ -282,15 +282,15 @@
      "Watch your ranks: in the beta client (build 70753) the top ranks are the strongest. **Hunter's Mark** rank 4 gives +143 ranged attack power (rank 3 +98) and **Aspect of the Beast** rank 4 +110 melee attack power (rank 3 +90). Cast the highest rank you have."
     ],
     "diverge": [
-     "Adds around you: **Explosive Trap** instead of **Immolation Trap**; they share the fire-trap cooldown.",
+     "Adds around you: **Explosive Trap** even below 60% mana; it shares the fire-trap cooldown with **Immolation Trap**.",
      "Pulled off the boss by a mechanic: **Summon Hawk** reaches 35 yards, so keep the hawks coming, and make **Strider Kick** your last hit before you run (30% movement speed for 3 seconds).",
      "Short on mana: let **Wing Clip** go first; its own hit is your least damage per point of mana."
     ],
     "rotations": {
-     "bm-raid": "8f87aee79821",
-     "melee-dps": "15437c6a63dc"
+     "bm-raid": "08b392250e22",
+     "melee-dps": "88ff0967f0fa"
     },
-    "written": "2026-10-15"
+    "written": "2026-11-11"
    },
    "leveling": {
     "plan": "Beast-Survival levels on **Immolation Trap** and a strong pet: the cat tanks and hits hard, you walk in behind it, drop a trap at your feet and fight beside it with **Raptor Strike** and your white swings. Survival comes first (levels 10-33), then the pet.",
