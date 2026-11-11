@@ -820,6 +820,7 @@ def catchup(lv):
     for m, qs in DQ.items():
         for q in qs:
             dq_map.setdefault(q, IP.DUNGEONS.get(IP.MAP_TO_ZONE.get(m), (None,))[0])
+    ran = {dq_map[q] for q in COMPLETED if dq_map.get(q)}   # dungeons you have run: one of their quests is done
     out = []
     for q in sorted(set(B) | INLOG):
         if q in COMPLETED or not (q in missed or q in INLOG):
@@ -845,6 +846,8 @@ def catchup(lv):
             d = dq_map.get(q)
             if "complete" in a or not any(o[0] in "cio" for o in g.get("objectives", [])) or not d:
                 continue   # the guide has you do it on the way, it is a delivery, or its objectives are where you have been questing
+            if d in ran:   # (2026-11-10: Arcea ran the Stockade, The Color of Blood done, What Comes Around... in her log to hand in at the
+                continue   # guide's step: the API does not show a quest's objectives, so a quest from a dungeon you ran counts as done there)
             k, inz = exit_before(dl["at"], ENTRANCE.get(d))
             out.append({"kind": "finish", "quests": [(q, quest_title(q))], "who": "", "spot": None, "deadline": dl, "why": why,
                         "n": k, "in_zone": inz, "dungeon": d, "where": d or (B.get(q, {}).get("complete") or {}).get("zone")})
@@ -1232,8 +1235,11 @@ def dungeon_schedule(cfg, lv, runs, events=None):
         gear_q = sorted({upgrade_name(e)[0] for e in events or [] if primary(e)["kind"] == "quest" and primary(e).get("zone") == name})
         worth = (dr or {}).get("worth", 0)
         on = sum(1 for x in quests if x["route"] and not x["grey"])
+        done_here = sorted({(CQUESTS.get(q) or {}).get("title") or str(q) for q in dq + extra.get(name, []) if q in COMPLETED})
         if ROUTE and gl is not None:
             verdict, why = "guide", "your RestedXP guide runs it then" + (f" and picks up {on} of its quests" if on else "")
+        elif done_here:   # run once (2026-11-10, user's rule: every dungeon "at least once"): one of its quests is done
+            verdict, why = "skip", "you ran it: " + ", ".join(done_here[:3]) + (" are done" if len(done_here) > 1 else " is done")
         elif run >= hi:
             verdict, why = "skip", "you will have outgrown it"
         elif gear_q:
@@ -2208,6 +2214,10 @@ def change_lines(d, events, lv):
     if not p.exists():
         return []
     old = json.loads(p.read_text(encoding="utf-8"))
+    f = d / "armory" / "fetched.txt"
+    if (d / "state.prev.json").exists() and f.exists() and old.get("time") == f.read_text(encoding="utf-8").strip():
+        old = json.loads((d / "state.prev.json").read_text(encoding="utf-8"))   # a page made again from this refresh's snapshot (--no-refresh):
+        # the change list stays the refresh's own (2026-11-10: a rerun after a refresh had compared the plan with itself)
     was = {(s, n): L for s, L, n in old["plan"]}
     now = {(e["slot"], e["item"]["name"]): e["level"] for e in events}
     new = [f"{n} ({s}, level {L})" for (s, n), L in sorted(now.items(), key=lambda kv: kv[1]) if (s, n) not in was]
@@ -2494,7 +2504,9 @@ def main():
     write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile)
     import checklist   # the town checklist page (2026-11-09, user: "an easy to look at almost to-do list of every time I'm in a city")
     checklist.write(cfg, d, CTX)
-    if not a.no_refresh:   # the plan this refresh made, for the next refresh's change list
+    if not a.no_refresh:   # the plan this refresh made, for the next refresh's change list (the one before kept for reruns)
+        if (d / "state.json").exists():
+            (d / "state.prev.json").write_text((d / "state.json").read_text(encoding="utf-8"), encoding="utf-8")
         (d / "state.json").write_text(json.dumps(plan_state(events, lv0, fetched), indent=1) + "\n", encoding="utf-8")
     print(f"wrote {d / 'README.md'}: {len(events)} upgrades to 60")
 

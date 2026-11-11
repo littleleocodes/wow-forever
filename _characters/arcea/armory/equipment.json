@@ -212,8 +212,8 @@
     "display_string": "Item Level 22"
    },
    "durability": {
-    "value": 34,
-    "display_string": "Durability 34 / 35"
+    "value": 33,
+    "display_string": "Durability 33 / 35"
    }
   },
   {
@@ -481,8 +481,8 @@
     "display_string": "Item Level 23"
    },
    "durability": {
-    "value": 74,
-    "display_string": "Durability 74 / 75"
+    "value": 69,
+    "display_string": "Durability 69 / 75"
    }
   },
   {
@@ -780,8 +780,8 @@
     "display_string": "Item Level 22"
    },
    "durability": {
-    "value": 50,
-    "display_string": "Durability 50 / 50"
+    "value": 44,
+    "display_string": "Durability 44 / 50"
    }
   },
   {
@@ -907,8 +907,8 @@
     "display_string": "Item Level 28"
    },
    "durability": {
-    "value": 34,
-    "display_string": "Durability 34 / 35"
+    "value": 30,
+    "display_string": "Durability 30 / 35"
    }
   },
   {
@@ -1041,8 +1041,8 @@
     "display_string": "Item Level 29"
    },
    "durability": {
-    "value": 29,
-    "display_string": "Durability 29 / 30"
+    "value": 30,
+    "display_string": "Durability 30 / 30"
    }
   },
   {
@@ -1152,8 +1152,8 @@
     "display_string": "Item Level 28"
    },
    "durability": {
-    "value": 25,
-    "display_string": "Durability 25 / 25"
+    "value": 21,
+    "display_string": "Durability 21 / 25"
    }
   },
   {
@@ -1447,27 +1447,10 @@
   {
    "item": {
     "key": {
-     "href": "https://us.api.blizzard.com/data/wow/item/271215?namespace=static-1.60.1_70399-forever-us"
+     "href": "https://us.api.blizzard.com/data/wow/item/273827?namespace=static-1.60.1_70399-forever-us"
     },
-    "id": 271215
+    "id": 273827
    },
-   "enchantments": [
-    {
-     "display_string": "Enchanted: Intellect +5",
-     "source_item": {
-      "key": {
-       "href": "https://us.api.blizzard.com/data/wow/item/273474?namespace=static-1.60.1_70399-forever-us"
-      },
-      "name": "Enchant 2H Weapon - Lesser Intellect",
-      "id": 273474
-     },
-     "enchantment_id": 723,
-     "enchantment_slot": {
-      "id": 0,
-      "type": "PERMANENT"
-     }
-    }
-   ],
    "slot": {
     "type": "MAIN_HAND",
     "name": "Main Hand"
@@ -1478,12 +1461,12 @@
     "type": "RARE",
     "name": "Rare"
    },
-   "name": "Coldspire Staff",
+   "name": "Debt Collector",
    "media": {
     "key": {
-     "href": "https://us.api.blizzard.com/data/wow/media/item/271215?namespace=static-1.60.1_70399-forever-us"
+     "href": "https://us.api.blizzard.com/data/wow/media/item/273827?namespace=static-1.60.1_70399-forever-us"
     },
-    "id": 271215
+    "id": 273827
    },
    "item_class": {
     "key": {
@@ -1494,14 +1477,14 @@
    },
    "item_subclass": {
     "key": {
-     "href": "https://us.api.blizzard.com/data/wow/item-class/2/item-subclass/10?namespace=static-1.60.1_70399-forever-us"
+     "href": "https://us.api.blizzard.com/data/wow/item-class/2/item-subclass/7?namespace=static-1.60.1_70399-forever-us"
     },
-    "name": "Staff",
-    "id": 10
+    "name": "Sword",
+    "id": 7
    },
    "inventory_type": {
-    "type": "TWOHWEAPON",
-    "name": "Two-Hand"
+    "type": "WEAPONMAINHAND",
+    "name": "Main Hand"
    },
    "binding": {
     "type": "ON_ACQUIRE",
@@ -1509,76 +1492,53 @@
    },
    "weapon": {
     "damage": {
-     "min_value": 43,
-     "max_value": 66,
-     "display_string": "43 - 66 Damage",
+     "min_value": 21,
+     "max_value": 39,
+     "display_string": "21 - 39 Damage",
      "damage_class": {
       "type": "PHYSICAL",
       "name": "Physical"
      }
     },
     "attack_speed": {
-     "value": 3600,
-     "display_string": "Speed 3.60"
+     "value": 2300,
+     "display_string": "Speed 2.30"
     },
     "dps": {
-     "value": 15.138888,
-     "display_string": "(15.1 damage per second)"
+     "value": 13.043477,
+     "display_string": "(13.0 damage per second)"
     }
    },
-   "stats": [
+   "spells": [
     {
-     "type": {
-      "type": "FROST_RESISTANCE",
-      "name": "Frost Resistance"
+     "spell": {
+      "key": {
+       "href": "https://us.api.blizzard.com/data/wow/spell/1292594?namespace=static-1.60.1_70399-forever-us"
+      },
+      "name": "Debt Collection",
+      "id": 1292594
      },
-     "value": 13,
-     "display": {
-      "display_string": "+13 Frost Resistance",
-      "color": {
-       "r": 0,
-       "g": 255,
-       "b": 0,
-       "a": 1.0
-      }
-     }
-    },
-    {
-     "type": {
-      "type": "BONUS_STAT_FROST_DAMAGE_DONE",
-      "name": "Frost Damage"
-     },
-     "value": 32,
-     "is_equip_bonus": true,
-     "display": {
-      "display_string": "+32 Frost Damage",
-      "color": {
-       "r": 0,
-       "g": 255,
-       "b": 0,
-       "a": 1.0
-      }
-     }
+     "description": "Equip: Grants 6 health and 2 mana every 5 sec for 15 sec when one of your spells is resisted."
     }
    ],
    "sell_price": {
-    "value": 3479,
+    "value": 6164,
     "display_strings": {
      "header": "Sell Price:",
      "gold": "0",
-     "silver": "34",
-     "copper": "79"
+     "silver": "61",
+     "copper": "64"
     }
    },
    "requirements": {
     "level": {
-     "value": 19,
-     "display_string": "Requires Level 19"
+     "value": 26,
+     "display_string": "Requires Level 26"
     }
    },
    "level": {
-    "value": 24,
-    "display_string": "Item Level 24"
+    "value": 31,
+    "display_string": "Item Level 31"
    },
    "durability": {
     "value": 90,
@@ -1683,8 +1643,8 @@
     "display_string": "Item Level 18"
    },
    "durability": {
-    "value": 45,
-    "display_string": "Durability 45 / 45"
+    "value": 42,
+    "display_string": "Durability 42 / 45"
    }
   }
  ],

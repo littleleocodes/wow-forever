@@ -4,8 +4,8 @@
    "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/statistics?namespace=profile-forever-us"
   }
  },
- "health": 603,
- "power": 1664,
+ "health": 622,
+ "power": 1638,
  "power_type": {
   "key": {
    "href": "https://us.api.blizzard.com/data/wow/power-type/0?namespace=static-1.60.1_70399-forever-us"
@@ -27,16 +27,16 @@
   "effective": 28
  },
  "intellect": {
-  "base": 60,
-  "effective": 90
+  "base": 62,
+  "effective": 87
  },
  "stamina": {
-  "base": 27,
-  "effective": 45
+  "base": 28,
+  "effective": 46
  },
  "melee_crit": {
   "rating_bonus": 0.0,
-  "value": 2.5360003,
+  "value": 0.0,
   "rating_normalized": 0
  },
  "melee_haste": {
@@ -65,19 +65,19 @@
   "rating_normalized": 0
  },
  "attack_power": 8,
- "main_hand_damage_min": 45.057144,
- "main_hand_damage_max": 68.057144,
- "main_hand_speed": 3.6,
- "main_hand_dps": 15.710319,
+ "main_hand_damage_min": 22.314285,
+ "main_hand_damage_max": 40.314285,
+ "main_hand_speed": 2.3,
+ "main_hand_dps": 13.614907,
  "off_hand_damage_min": 1.0714285,
  "off_hand_damage_max": 1.0714285,
  "off_hand_speed": 2.0,
  "off_hand_dps": 0.53571427,
- "spell_power": 14,
+ "spell_power": 48,
  "spell_penetration": 0,
  "spell_crit": {
   "rating_bonus": 0.0,
-  "value": 4.3129997,
+  "value": 3.9932,
   "rating_normalized": 0
  },
  "mana_regen": 74.0,
@@ -88,7 +88,7 @@
  },
  "dodge": {
   "rating_bonus": 0.0,
-  "value": 4.776,
+  "value": 4.736,
   "rating_normalized": 0
  },
  "parry": {
@@ -103,7 +103,7 @@
  },
  "ranged_crit": {
   "rating_bonus": 0.0,
-  "value": 5.056,
+  "value": 5.176,
   "rating_normalized": 0
  },
  "ranged_haste": {
@@ -126,12 +126,12 @@
   "slug": "arcea-fizzlegan"
  },
  "spirit": {
-  "base": 55,
-  "effective": 62
+  "base": 56,
+  "effective": 63
  },
  "defense": {
-  "base": 118,
-  "effective": 119
+  "base": 122,
+  "effective": 123
  },
  "fire_resistance": {
   "base": 10,
@@ -150,8 +150,8 @@
   "effective": 0
  },
  "frost_resistance": {
-  "base": 14,
-  "effective": 14
+  "base": 1,
+  "effective": 1
  },
  "movement_speed": 100.0,
  "ranged_attack_power": 0,
@@ -160,7 +160,7 @@
  "expertise": 0.0,
  "off_hand_expertise": 0.0,
  "armor_penetration": 0.0,
- "spell_healing": 27,
+ "spell_healing": 61,
  "melee_hit": {
   "rating_bonus": 0.0,
   "value": 0.0,
