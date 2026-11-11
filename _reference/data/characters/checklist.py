@@ -224,14 +224,23 @@ def steps_html(C, lv):
                                   f"for {esc(cr['item'])} ({esc(cr['slot'])}, level {cr['level']}) · Classic's skill; Forever often asks less"))
     steps.append(("Workbench", "Craft", items))
 
-    # 4. sell
+    # 4. sell: the profit or loss of the sale (2026-11-10, user: "not how much total but either net profit or loss on the sale"): what each
+    # sells for after the auction house's 5% cut less what its materials cost at today's prices (bought already or not)
     items = []
     for pp, st in craft_steps:
         if st.get("product") and st.get("sell"):
             each, limit = st["sell"]
             n = min(st["crafts"], limit) if limit else st["crafts"]
-            items.append(todo(f"sell{st['product']}{st['from']}", f"Sell {esc(st['product'])} ×{n}",
-                              f"about {coins(each)} each after the auction house's cut (undercut today's cheapest listing) · list the rest later if they do not all sell"))
+            per = (st["cost"] + each * n) / max(1, st["crafts"])   # the materials of one craft
+            margin = each - per
+            total = margin * n
+            word = "profit" if total >= 0 else "loss"
+            head = (f"Sell {esc(st['product'])} ×{n}: <span class=\"{'gain' if total >= 0 else 'loss'}\">{word} about {coins(abs(total))}</span>")
+            rest = st["crafts"] - n
+            items.append(todo(f"sell{st['product']}{st['from']}", head,
+                              f"{coins(abs(margin))} {word} each: sells for about {coins(each)} after the auction house's cut, its materials cost "
+                              f"about {coins(per)} · undercut today's cheapest listing"
+                              + (f" · keep the other {rest} to list later" if rest > 0 else "")))
     steps.append(("Auction House", "Sell", items))
 
     # 5. gear up: wear and enchant
@@ -467,18 +476,18 @@ TEMPLATE = """<title>{title}</title>
 :root {{
   --bg: #edf1f4; --panel: #ffffff; --ink: #16212b; --muted: #5b6a78; --line: #d3dbe2; --accent: #1d6aa3; --accent-soft: #e3eef7;
   --q1: #3d4853; --q2: #1d7f10; --q3: #0a5fbd; --q4: #7a2fc0; --q5: #b85a00;
-  --gold: #c9a227; --silver: #a3acb6; --copper: #b06a3b; --tick: #2c7a3a; --why: #6b5a2e;
+  --gold: #c9a227; --silver: #a3acb6; --copper: #b06a3b; --tick: #2c7a3a; --why: #6b5a2e; --loss: #b3261e;
   --display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
   --body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
 }}
 @media (prefers-color-scheme: dark) {{ :root:not([data-theme="light"]) {{
   --bg: #0d1318; --panel: #141c23; --ink: #e3eaf0; --muted: #8e9ba8; --line: #243140; --accent: #6db4e8; --accent-soft: #15283a;
   --q1: #cfd6dd; --q2: #3fd92c; --q3: #4ea6ff; --q4: #b583ff; --q5: #ff9a3c;
-  --gold: #e6c44a; --silver: #c3cad2; --copper: #d68955; --tick: #6cc77a; --why: #d9c38a; color-scheme: dark; }} }}
+  --gold: #e6c44a; --silver: #c3cad2; --copper: #d68955; --tick: #6cc77a; --why: #d9c38a; --loss: #ff8a80; color-scheme: dark; }} }}
 :root[data-theme="dark"] {{
   --bg: #0d1318; --panel: #141c23; --ink: #e3eaf0; --muted: #8e9ba8; --line: #243140; --accent: #6db4e8; --accent-soft: #15283a;
   --q1: #cfd6dd; --q2: #3fd92c; --q3: #4ea6ff; --q4: #b583ff; --q5: #ff9a3c;
-  --gold: #e6c44a; --silver: #c3cad2; --copper: #d68955; --tick: #6cc77a; --why: #d9c38a; color-scheme: dark; }}
+  --gold: #e6c44a; --silver: #c3cad2; --copper: #d68955; --tick: #6cc77a; --why: #d9c38a; --loss: #ff8a80; color-scheme: dark; }}
 * {{ box-sizing: border-box; }}
 body {{ background: var(--bg); color: var(--ink); font: 15px/1.5 var(--body); }}
 body::before {{ content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--panel); }}
@@ -523,6 +532,7 @@ ul.list {{ list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }}
 .slot, .tag {{ font: 600 .72rem var(--display); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; white-space: nowrap; }}
 .pct {{ font: 600 .92rem var(--display); color: var(--accent); white-space: nowrap; }}
 .gain {{ color: var(--tick); font-weight: 700; }}
+.loss {{ color: var(--loss); font-weight: 700; }}
 .muted {{ color: var(--muted); }} .small {{ font-size: .85rem; }}
 .skill {{ display: inline-block; width: 90px; height: 7px; border-radius: 4px; background: var(--line); vertical-align: middle; margin-left: 6px; overflow: hidden; }}
 .skill span {{ display: block; height: 100%; background: var(--accent); }}
