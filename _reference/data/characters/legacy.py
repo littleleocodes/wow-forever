@@ -118,4 +118,12 @@ def section(cfg, ach, level_of):
               f"{m['killing_minutes']:.0f} min of killing). A model of the beta, not a measurement.", ""]
     if st["next"]:
         o += ["Closest next points: " + "; ".join(t for _, t in st["next"][:5]) + ".", ""]
-    return o, {"points": st["points"], "buy": buy, "next": [t for _, t in st["next"][:4]], "order": lg["order"]}
+    meas = None
+    if m:
+        cur = min((L for L in lv if L >= m["from"]), default=None)
+        r = lv.get(cur) if cur else None
+        meas = (f"Fight lab, your build: Thrill of Adventure 5/5 is about {100 * (r['base'] - r['thrill']) / r['base']:.0f}% less time per kill "
+                f"at {cur} and saves about {m['minutes_saved']['thrill'] / 60:.1f} h of killing from {m['from']} to 60; Talented 5/5 about "
+                f"{100 * (r['base'] - r['talented']) / r['base']:.0f}% at {cur}, fading to nothing at 60. A model of the beta, not a measurement."
+                if r else None)
+    return o, {"points": st["points"], "buy": buy, "next": st["next"][:6], "order": lg["order"], "why": lg.get("why"), "measured": meas}

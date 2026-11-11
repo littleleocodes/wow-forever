@@ -22,7 +22,7 @@ You stay one point off the page's order; at 60 you go without its last point (Ar
 
 **2 Legacy points** on the account (earned once, every character spends them; up to 16 each). Spend them: **Thrill of Adventure** 2/5.
 
-Order: Thrill of Adventure 5 → Well Rested 5 → Talented 5 → Gourmand 1. Your main, leveled solo most of the time. Thrill of Adventure first: each point is about 3% less time per kill from the moment you spend it (less drinking and eating). Well Rested is small for a character you play daily, but it is the price of Talented (it needs Well Rested 5/5). Talented gives your talents five levels early: worth a lot at 26, little past 50 and nothing at 60, so it pays only if the points come before about 45. The 16th point goes anywhere (Gourmand). At 60, respec for the endgame (user decision 2026-11-10).
+Order: Thrill of Adventure 5 → Well Rested 5 → Talented 5 → Gourmand 1. Your main, leveled solo most of the time. Thrill of Adventure first: each point is about 3% less time per kill from the moment you spend it (less drinking and eating). Well Rested is small for a character you play daily, but it is the price of Talented (it needs Well Rested 5/5). Talented gives your talents five levels early: worth a lot at 26, little past 50 and nothing at 60, so it pays only if the points come before about 45. The 16th point goes anywhere (Gourmand). At 60, respec into an endgame build.
 
 Fight lab (2026-11-10, the page build): time per kill saved by Thrill of Adventure 5/5 / Talented 5/5 at level 23 12% / 11%, 26 13% / 15%, 29 13% / 8%, 32 15% / 5%, 35 14% / 11%, 40 14% / 4%, 45 13% / 6%, 50 13% / 2%, 55 11% / 2%, 60 11% / 0%. From 26 to 60: Thrill about 446 min of killing, Talented about 161 min if held from 26, both 580 (of 3452 min of killing). A model of the beta, not a measurement.
 
@@ -95,7 +95,7 @@ Count a piece's stats in spell power: 1 intellect = 0.22, 1 spirit = 0.27, 1 sta
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 0.3 hours old). "For your trip": enough to keep it up for about 3.0 hours of play, to your next training at level 28 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 0.5 hours old). "For your trip": enough to keep it up for about 3.0 hours of play, to your next training at level 28 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|

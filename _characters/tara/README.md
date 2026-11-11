@@ -15,7 +15,7 @@ Your next talents: 23 Toughness, 24 Toughness, 25 Improved Righteous Fury, 26 Im
 
 **2 Legacy points** on the account (earned once, every character spends them; up to 16 each). Spend them: **Well Rested** 2/5.
 
-Order: Well Rested 5 → Talented 5 → Gourmand 3 → The Quick and the Dead 2 → Reinforce 1. Your group character. Thrill of Adventure does nothing in dungeons and little in a group (the killing blows are shared), so it is left out. Well Rested first: you are logged out between group nights, so your rested bar fills and caps, and rested experience doubles kill experience, dungeon kills included; it is also the price of Talented. Talented gives your next five tank talents five levels early (more threat and survival in every dungeon until 55). Then Gourmand (one meal lasts a whole dungeon), The Quick and the Dead (a faster corpse run and free heals and blessings after a wipe) and Reinforce (tanks die most). At 60, respec for the endgame (user decision 2026-11-10).
+Order: Well Rested 5 → Talented 5 → Gourmand 3 → The Quick and the Dead 2 → Reinforce 1. Your group character. Thrill of Adventure does nothing in dungeons and little in a group (the killing blows are shared), so it is left out. Well Rested first: you are logged out between group nights, so your rested bar fills and caps, and rested experience doubles kill experience, dungeon kills included; it is also the price of Talented. Talented gives your next five tank talents five levels early (more threat and survival in every dungeon until 55). Then Gourmand (one meal lasts a whole dungeon), The Quick and the Dead (a faster corpse run and free heals and blessings after a wipe) and Reinforce (tanks die most). At 60, respec into an endgame build.
 
 Closest next points: Novice Paladin: Tara 22/25; Journeyman Tailor: Tailoring 110/150; Expert Enchanter: Enchanting 150/225; Novice Spelunker: 4 of 6 dungeons; left: Shadowfang Keep, Excavation Site: Wetlands; Experienced Mage: Arcea 26/45.
 
@@ -84,7 +84,7 @@ Count a piece's stats in stamina: 100 armor = 5.65, 1 weapon damage per second =
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 0.3 hours old). "For your trip": enough to keep it up for about 1.7 hours of play, to your next training at level 24 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 0.5 hours old). "For your trip": enough to keep it up for about 1.7 hours of play, to your next training at level 24 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|

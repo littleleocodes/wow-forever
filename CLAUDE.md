@@ -87,8 +87,7 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   drops and unknown-recipe crafts carry a fallback; quest rewards name where their chain starts (`quest_chain.csv`); refreshes write
   `state.json` and the next page lists what changed. **When the user says "refresh <name>"**: run `plan.py <name>` (it also writes
   `_characters/<name>/checklist.html`, the town checklist: trainer, talents, auction buys, profession steps and recipes, crafts, enchants,
-  quests and dungeons, the guide's keys and fight stage, the drop check, gold) and republish that file with the Artifact tool to the
-  character's `checklist_url` (user, 2026-11-09: "a page can open every time I say refresh").
+  quests and dungeons, the guide's keys and fight stage, the drop check, gold) and republish that file (tabs since 2026-11-10, user: "make some things into tabs": Town, On the road, Fight, Gear & gold, Legacy; each a #name link) with the Artifact tool to the (user, 2026-11-09: "a page can open every time I say refresh").
   The RestedXP route: `characters/rxp.py` reads the guide add-on's saved files (guide group, current step, each section's levels and
   zones); since 2026-11-10 `characters/rxp_guide.py` reads the route step by step from the readable guide files the user keeps outside the
   repository (user: "I am explicitly withdrawing that instruction for my personal, local use ... read the supplied text files as reference

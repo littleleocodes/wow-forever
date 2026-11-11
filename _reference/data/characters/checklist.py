@@ -256,11 +256,6 @@ def steps_html(C, lv):
             items.append(todo(f"talent{lv}", "Spend your talent point", path))
         else:
             items.append(info("Next talents", path))
-    leg = C.get("legacy")
-    if leg and leg["buy"]:   # Legacy points (2026-11-10): a new box each time the account earns a point
-        items.append(todo(f"legacy{leg['points']}", "Legacy talents: " + ", ".join(f"{esc(p)} {n}/{r}" for p, n, r in leg["buy"]),
-                          f"{leg['points']} point{'s' if leg['points'] != 1 else ''} on the account · next: "
-                          + (" · ".join(esc(t) for t in leg["next"][:3]) or "-")))
     steps.append(("Class trainer", "Train", items))
 
     # 7. pick up quests before you leave (without a RestedXP route on this PC; with one, the road list below says when)
@@ -313,14 +308,50 @@ def steps_html(C, lv):
         items.append(info(f"At {r['get_at']}: {KIND[r['kind']].lower()} {head}", sub))
     steps.append(("On the road", "Leave the guide for", items) if tl is not None else ("Next levels", "Work toward", items))
 
-    out, n = [], 0
+    out, road, n = [], "", 0
     for where, title, its in steps:
         if not its:
+            continue
+        if where in ("On the road", "Next levels"):   # the road list: the On the road tab (2026-11-10, user: "make some things into tabs")
+            road = (f'<section class="card step"><h3><span class="where">{esc(where)}</span>{esc(title)}</h3>'
+                    f'<ul class="list">{"".join(its)}</ul></section>')
             continue
         n += 1
         out.append(f'<section class="card step"><h3><span class="num">{n}</span><span class="where">{esc(where)}</span>{esc(title)}</h3>'
                    f'<ul class="list">{"".join(its)}</ul></section>')
-    return "".join(out)
+    return "".join(out), road
+
+
+def legacy_html(leg):
+    """The Legacy tab (2026-11-10): what to spend now (a box per perk, new boxes when the account earns a point), the character's
+    order with what is bought, why, the fight lab's numbers and the closest next points with how far along they are."""
+    if not leg:
+        return '<p class="muted">No Legacy order for this character yet.</p>', 0
+    pts = leg["points"]
+    bought = {p: n for p, n, _ in leg["buy"]}
+    spend = "".join(todo(f"legacy{pts}-{p}", f"<strong>{esc(p)}</strong> {n}/{r}") for p, n, r in leg["buy"])
+    rows = []
+    for p, r in leg["order"]:
+        have = bought.get(p, 0)
+        state = "done" if have >= r else "part" if have else "later"
+        label = {"done": "bought", "part": f"{have} of {r}", "later": "later"}[state]
+        rows.append(f'<li class="perk {state}"><span class="pname">{esc(p)}</span><span class="pr">{r} point{"s" if r != 1 else ""}</span>'
+                    f'<span class="pstate">{label}</span></li>')
+    nxt = []
+    for f, t in leg.get("next") or []:
+        name, _, detail = t.partition(": ")
+        nxt.append(f'<li><span class="nname">{esc(name)}</span><span class="sub">{esc(detail)}</span>'
+                   f'<div class="meter" role="img" aria-label="{100 * f:.0f}% done"><span style="width:{100 * f:.0f}%"></span></div></li>')
+    html = (f'<div class="board"><div class="col"><section class="card"><h3><span class="where">Legacy</span>{pts} point{"s" if pts != 1 else ""} to spend</h3>'
+            '<p class="small muted">Earned once for the whole account: every character spends the same points in its own trees, up to 16.</p>'
+            + (f'<h4>Spend now</h4><ul class="list">{spend}</ul>' if spend else "")
+            + f'<h4>Your order</h4><ol class="perks">{"".join(rows)}</ol>'
+            + (f'<p class="why small">{esc(leg["why"])}</p>' if leg.get("why") else "")
+            + (f'<p class="small muted">{esc(leg["measured"])}</p>' if leg.get("measured") else "")
+            + '</section></div><div class="col"><section class="card"><h3><span class="where">Next points</span>Closest challenges</h3>'
+            + (f'<ul class="next">{"".join(nxt)}</ul>' if nxt else '<p class="muted">No challenge in progress.</p>')
+            + '<p class="small muted">Progress is the account\'s: any character can finish a challenge.</p></section></div></div>')
+    return html, (pts if leg["buy"] else 0)
 
 
 def render(cfg, C):
@@ -332,7 +363,8 @@ def render(cfg, C):
          else guide(cfg["class"], h["spec"]))
     soon, later = C.get("soon") or [], C.get("later") or []
     gold = C.get("gold") or {}
-    town = steps_html(C, lv)
+    town, road = steps_html(C, lv)
+    leg, leg_n = legacy_html(C.get("legacy"))
 
     # right column: bars, fight, judging, gold
     bars, coming = bars_html(g, lv)
@@ -397,7 +429,8 @@ def render(cfg, C):
         title=esc(f"{h['name'].split()[0]}'s Town Checklist"), refresh=refresh, name=esc(h["name"]), lv=lv,
         who=esc(f"{h['race']} {h['class']} · {h['spec']}"), gold=coins(h.get("gold")) if h.get("gold") is not None else '<span class="muted">log in for gold</span>',
         free=coins(gold.get("spend")) if gold.get("spend") is not None else "?", reserve=coins(gold.get("reserve")),
-        ah=ah, profs=profs, changes=changes, town=town, bars=bars or '<p class="muted">No keybind plan for this spec yet.</p>',
+        ah=ah, profs=profs, changes=changes, town=town, road=road or '<p class="muted">Nothing to leave the guide for in the next levels.</p>',
+        legacy=leg, legacy_badge=f' <span class="count" aria-label="{leg_n} points">{leg_n}</span>' if leg_n else "", bars=bars or '<p class="muted">No keybind plan for this spec yet.</p>',
         coming=f'<h4>Coming to your bars</h4><ul class="coming">{coming_html}</ul>' if coming_html else "",
         stage=stage_html(g, lv), jrows=jrows,
         rates=esc(", ".join(f"1 {k.replace('mp5', 'mana per 5 sec')} = {v}" for k, v in rates.items() if k != "armor")),
@@ -414,8 +447,9 @@ TEMPLATE = """<title>{title}</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
 <style>
-/* Layout: a sticky character bar over a town board; left the errands in the order you walk them (trainer, auction house, profession
-   trainer, workbench, then the world), right your bars, your fight and the drop check; the plan past the next few levels below. */
+/* Layout: a sticky character bar with tabs (2026-11-10, user: "make some things into tabs"): Town (the errands in the order you walk
+   them), On the road (when to leave the guide, then the plan past the next few levels), Fight (bars and what to press), Gear & gold
+   (the drop check and the mount fund), Legacy (points to spend, the order, the next challenges). Each tab is a #name link. */
 :root {{
   --bg: #edf1f4; --panel: #ffffff; --ink: #16212b; --muted: #5b6a78; --line: #d3dbe2; --accent: #1d6aa3; --accent-soft: #e3eef7;
   --q1: #3d4853; --q2: #1d7f10; --q3: #0a5fbd; --q4: #7a2fc0; --q5: #b85a00;
@@ -502,6 +536,31 @@ td.n, th.n {{ text-align: right; font-variant-numeric: tabular-nums; }}
 .lvl {{ display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 10px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }}
 .lvl-n {{ font: 700 1.6rem/1 var(--display); color: var(--accent); }}
 .lvl ul {{ list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }}
+nav.tabs {{ display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; margin-top: 2px; }}
+nav.tabs::-webkit-scrollbar {{ display: none; }}
+.tab {{ flex: none; font: 600 .95rem var(--display); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); background: none;
+  border: 0; border-bottom: 3px solid transparent; padding: 6px 12px 7px; cursor: pointer; white-space: nowrap; }}
+.tab:hover {{ color: var(--ink); }}
+.tab[aria-selected="true"] {{ color: var(--accent); border-bottom-color: var(--accent); }}
+.tab:focus-visible {{ outline: 2px solid var(--accent); outline-offset: -2px; }}
+.count {{ display: inline-grid; place-items: center; min-width: 1.4em; height: 1.4em; margin-left: 4px; padding: 0 4px; border-radius: 999px;
+  background: var(--accent); color: var(--panel); font: 700 .75rem var(--display); letter-spacing: 0; vertical-align: .1em; }}
+.panel {{ padding-top: 6px; }}
+.panel > h2:first-child {{ margin-top: 16px; }}
+.steps {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 440px), 1fr)); gap: 14px; align-items: start; }}
+ol.perks {{ list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; counter-reset: perk; }}
+.perk {{ display: grid; grid-template-columns: 1.6em minmax(0, 1fr) auto auto; gap: 4px 10px; align-items: baseline; padding: 6px 4px;
+  border-bottom: 1px solid var(--line); counter-increment: perk; }}
+.perk::before {{ content: counter(perk); font: 700 1rem var(--display); color: var(--muted); }}
+.pname {{ font-weight: 700; min-width: 0; }}
+.pr {{ color: var(--muted); font-size: .86rem; font-variant-numeric: tabular-nums; }}
+.pstate {{ font: 600 .72rem var(--display); text-transform: uppercase; letter-spacing: .08em; padding: 1px 6px; border-radius: 4px; border: 1px solid var(--line); color: var(--muted); }}
+.perk.done .pstate {{ color: var(--tick); border-color: var(--tick); }}
+.perk.part .pstate {{ color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }}
+.perk.later .pname {{ color: var(--muted); font-weight: 400; }}
+ul.next {{ list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }}
+.nname {{ font-weight: 700; }}
+ul.next .meter span {{ background: var(--accent); }}
 button.reset {{ font: 600 .8rem var(--display); text-transform: uppercase; letter-spacing: .08em; color: var(--accent); background: none; border: 1px solid var(--line); border-radius: 6px; padding: 4px 10px; cursor: pointer; }}
 button.reset:focus-visible {{ outline: 2px solid var(--accent); }}
 footer {{ color: var(--muted); font-size: .8rem; margin-top: 28px; }}
@@ -511,15 +570,35 @@ footer {{ color: var(--muted); font-size: .8rem; margin-top: 28px; }}
   <span class="name">{name}</span><span class="lvl-badge">Level {lv}</span><span class="meta">{who}</span>
   <span class="stat"><b>Gold</b>{gold}</span><span class="stat"><b>Free for gear</b>{free}</span>
   <span class="stat"><b>Keep for training</b>{reserve}</span>
-</div></header>
+</div><div class="wrap"><nav class="tabs" role="tablist" aria-label="Checklist sections">
+  <button class="tab" role="tab" id="tab-town" aria-controls="town" aria-selected="true">Town</button>
+  <button class="tab" role="tab" id="tab-road" aria-controls="road" aria-selected="false" tabindex="-1">On the road</button>
+  <button class="tab" role="tab" id="tab-fight" aria-controls="fight" aria-selected="false" tabindex="-1">Fight</button>
+  <button class="tab" role="tab" id="tab-gear" aria-controls="gear" aria-selected="false" tabindex="-1">Gear &amp; gold</button>
+  <button class="tab" role="tab" id="tab-legacy" aria-controls="legacy" aria-selected="false" tabindex="-1">Legacy{legacy_badge}</button>
+</nav></div></header>
 <main class="wrap" data-refresh="{refresh}">
+  <section class="panel" id="town" role="tabpanel" aria-labelledby="tab-town">
   {changes}
   <h2>Your steps this visit</h2>
+  <div class="steps">{town}</div>
+  </section>
+  <section class="panel" id="road" role="tabpanel" aria-labelledby="tab-road" hidden>
+  <h2>When to leave the guide</h2>
+  {road}
+  <h2>Coming up</h2>
+  <div class="ahead">{ahead}</div>
+  </section>
+  <section class="panel" id="fight" role="tabpanel" aria-labelledby="tab-fight" hidden>
+  <h2>Your fight at level {lv}</h2>
   <div class="board">
-    <div class="col">{town}</div>
-    <div class="col">
       <section class="card"><h3><span class="where">Your bars</span>Keys at level {lv}</h3>{bars}{coming}</section>
       <section class="card"><h3><span class="where">The fight</span>What to press</h3>{stage}</section>
+  </div>
+  </section>
+  <section class="panel" id="gear" role="tabpanel" aria-labelledby="tab-gear" hidden>
+  <h2>Gear and gold</h2>
+  <div class="board">
       <section class="card"><h3><span class="where">Loot check</span>Is this drop better?</h3>
         <p class="small muted">Add up a piece's stats in {unit}: {rates}. Wear it when it reaches the bold number.</p>
         <div class="tablewrap"><table><thead><tr><th>Slot</th><th>You wear</th><th class="n">Worth</th><th class="n">Beat with</th></tr></thead><tbody>{jrows}</tbody></table></div>
@@ -528,10 +607,12 @@ footer {{ color: var(--muted); font-size: .8rem; margin-top: 28px; }}
         <div class="meter" role="img" aria-label="{mbar}% of the mount by level {mlevel}"><span style="width:{mbar}%"></span></div>
         <p class="small">About {by40} by level {mlevel} of the {mount} the mount costs: {mount_at}. Gear gets {share} of each level's income after training; the plan spends {gear40} on gear before {mlevel} and reaches 60 with about {at60}.</p>
       </section>
-    </div>
   </div>
-  <h2>Coming up</h2>
-  <div class="ahead">{ahead}</div>
+  </section>
+  <section class="panel" id="legacy" role="tabpanel" aria-labelledby="tab-legacy" hidden>
+  <h2>Legacy talents</h2>
+  {legacy}
+  </section>
   <footer><p>Refreshed {refresh}{ah} · {profs}. Generated by the character planner; numbers are the fight lab's estimates for this build, not measurements. Ticks stay in this browser until the next refresh.
   <button class="reset" type="button" id="reset">Clear ticks</button></p></footer>
 </main>
@@ -548,6 +629,36 @@ footer {{ color: var(--muted); font-size: .8rem; margin-top: 28px; }}
       try {{ localStorage.setItem(key, JSON.stringify(state)); }} catch (e) {{}}
     }});
   }});
+  var tabs = Array.prototype.slice.call(document.querySelectorAll(".tab")), names = tabs.map(function (t) {{ return t.getAttribute("aria-controls"); }});
+  function show(name, focus) {{
+    if (names.indexOf(name) < 0) name = "town";
+    tabs.forEach(function (t) {{
+      var on = t.getAttribute("aria-controls") === name;
+      t.setAttribute("aria-selected", on ? "true" : "false");
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute("aria-controls")).hidden = !on;
+      if (on && focus) t.focus();
+    }});
+    try {{ localStorage.setItem("tab", name); }} catch (e) {{}}
+  }}
+  tabs.forEach(function (t, i) {{
+    t.addEventListener("click", function () {{
+      var n = t.getAttribute("aria-controls");
+      if (location.hash === "#" + n) show(n); else location.hash = n;
+    }});
+    t.addEventListener("keydown", function (e) {{
+      var k = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+      if (!k) return;
+      e.preventDefault();
+      var n = names[(i + k + names.length) % names.length];
+      location.hash = n;
+      show(n, true);
+    }});
+  }});
+  window.addEventListener("hashchange", function () {{ show(location.hash.slice(1)); }});
+  var start = location.hash.slice(1);
+  if (names.indexOf(start) < 0) {{ try {{ start = localStorage.getItem("tab") || "town"; }} catch (e) {{ start = "town"; }} }}
+  show(start);
   var r = document.getElementById("reset");
   if (r) r.addEventListener("click", function () {{
     state = {{}};
