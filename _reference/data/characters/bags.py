@@ -61,8 +61,16 @@ def snapshot(text, name):
         if ln == "{":
             cur = {}
         elif ln in ("},", "}") and cur is not None:
-            if cur.get("id") is not None or cur.get("name"):
-                items.append({"id": cur.get("id"), "name": cur.get("name"), "count": cur.get("count") or 1, "where": cur.get("where") or "bags"})
+            link = str(cur.get("link") or "").replace("||", "|")
+            name = cur.get("name") or (re.search(r"\|h\[(.*?)\]\|h", link) or [None, None])[1]   # (0.9.3: a name not loaded yet: the link's)
+            suffix = cur.get("suffix") if isinstance(cur.get("suffix"), int) and cur.get("suffix") else None
+            if suffix is None and link:   # the item string's 7th field: item:id:enchant:gem1:gem2:gem3:gem4:suffix
+                f = re.search(r"item:([-\d:]+)", link)
+                parts = f.group(1).split(":") if f else []
+                suffix = int(parts[6]) if len(parts) > 6 and parts[6].lstrip("-").isdigit() and int(parts[6]) else None
+            if cur.get("id") is not None or name:
+                items.append({"id": cur.get("id"), "name": name, "count": cur.get("count") or 1, "where": cur.get("where") or "bags",
+                              "suffix": suffix})
             cur = None
         elif cur is not None:
             m = re.match(r'\["(\w+)"\] = (.*?),?$', ln)
@@ -102,7 +110,8 @@ def owned(cfg, snap):
                 if (it["name"] or "").lower() in worn:   # "Geomancer's Bracers" for Geomancer's Bracers of Frozen Wrath)
                     continue
                 for key in {(it["name"] or "").lower(), f"id:{it['id']}" if it["id"] else ""} - {""}:
-                    o = out.setdefault(key, {"name": it["name"], "id": it["id"], "count": 0, "where": it["where"], "when": _day(since)})
+                    o = out.setdefault(key, {"name": it["name"], "id": it["id"], "count": 0, "where": it["where"], "when": _day(since),
+                                             "suffix": it.get("suffix")})
                     o["count"] += it["count"]
         if snapped:   # a snapshot name without its random suffix ("Geomancer's Bracers", 2026-11-10: the add-on falls back to the plain
             base = {v["name"].lower(): v for v in list(out.values()) if v.get("name")}   # name when a link is not loaded yet): the

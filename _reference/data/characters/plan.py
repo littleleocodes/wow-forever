@@ -2401,7 +2401,11 @@ def main():
         if key.startswith("id:") or key in have or " of " not in nm:
             continue
         sx = base = None
-        for x in sufs:   # the suffix the item can roll (its randomSuffixOptions) whose name ends the item's name
+        if o.get("suffix") and o.get("id"):   # the add-on's own suffix id (ForeverTape 0.9.3)
+            base = next((it for it in db["items"] if it["id"] == o["id"]), None)
+            sx = next((x for x in sufs if x["id"] == o["suffix"]), None)
+            base = base if sx else None
+        for x in ([] if base else sufs):   # else the suffix the item can roll (its randomSuffixOptions) whose name ends the item's name
             b = byname.get(nm[: -len(x["name"]) - 1].lower()) if nm.lower().endswith(" " + x["name"].lower()) else None
             if b and x["id"] in (b.get("randomSuffixOptions") or []):
                 sx, base = x, b
