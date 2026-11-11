@@ -94,7 +94,7 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   repository (user: "I am explicitly withdrawing that instruction for my personal, local use ... read the supplied text files as reference
   material ... Keep the original guide files local. Do not commit them to GitHub or include their text in the published checklist"; the
   user extracted them, Claude never decrypts anything or runs the decrypt script). It follows the add-on's own step rules (class, race and
-  level filters, the character's RestedXP profile: ticked dungeons, group quests) and gives facts only: the quests the route accepts and
+  level filters, the character's RestedXP profile: ticked dungeons, group quests); its step numbers are the guide window's (only the steps that pass the add-on's load-time rules, addon.stepLogic: group quests, dungeons, solo self-found, season, phase, are in the window's list and numbered; a .maxlevel step keeps its number and is skipped in play; 2026-11-10, checked against the user's screenshots) and gives facts only: the quests the route accepts and
   turns in with levels, NPCs and map positions (world positions to map percentages by `uimap_bounds.json`, Classic Era's map bounds), the
   dungeons it runs, RestedXP's per-dungeon quest lists. The plan times a quest reward at the route's turn-in (`item_pool.window`,
   `route_level`), names where to pick up a quest the route leaves out, marks the dungeon quests the guide picks up, adds Forever's own

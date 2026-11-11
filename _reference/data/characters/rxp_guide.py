@@ -158,7 +158,7 @@ def profile(wow_dir, character):
     "<Name> - <Realm>"), or defaults."""
     import rxp
     acc, _ = rxp.files(wow_dir, character)
-    out = {"dungeons": {}, "group": False}
+    out = {"dungeons": {}, "group": False, "ssf": False}
     if not acc:
         return out
     text = acc.read_text(encoding="utf-8", errors="replace")
@@ -176,6 +176,7 @@ def profile(wow_dir, character):
     if d:
         out["dungeons"] = {k: v == "true" for k, v in re.findall(r'\["(\w+)"\] = (true|false)', d.group(1))}
     out["group"] = bool(re.search(r'\n\["enableGroupQuests"\] = true', block))
+    out["ssf"] = bool(re.search(r'\n\["soloSelfFound"\] = true', block))
     return out
 
 
@@ -256,24 +257,37 @@ def step_view(step, who, level, enabled):
         elif t in ("zone", "zoneskip") and a and "travel" not in tags:
             tags["travel"] = f"the trip to {a.split(',')[0].split('/')[0]}"
     tags["dungeon"] = dungeon
-    for off in ("som", "hardcore", "hardcoreserver", "ssf", "questguide"):
-        if tags.get(off):
-            return False, tags, ops
-    if "season" in tags and "0" not in re.split(r"[,;\s]+", str(tags["season"])):
+    tags["loaded"] = loaded(tags, who, dungeon, dskip, enabled)
+    if not tags["loaded"]:
         return False, tags, ops
-    if "phase" in tags and not in_range(tags["phase"], 6):
-        return False, tags, ops
-    if "xprate" in tags and not in_range(tags["xprate"], 1.0):
-        return False, tags, ops
-    if (tags.get("groupquest") and not who["group"]) or (tags.get("soloquest") and who["group"]):
-        return False, tags, ops
-    if tags.get("maxlevel") and level > tags["maxlevel"]:
-        return False, tags, ops
-    if dskip and enabled(dskip):
-        return False, tags, ops
-    if dungeon and dungeon != dskip and not enabled(dungeon):
+    if tags.get("maxlevel") and level > tags["maxlevel"]:   # .maxlevel: numbered, skipped in play once you are past the level
         return False, tags, ops
     return True, tags, ops
+
+
+def loaded(tags, who, dungeon, dskip, enabled):
+    """The add-on's load-time step rules (addon.stepLogic, run by ProcessGuideTable when the guide loads): a step that fails one is left
+    out of the guide's step list and gets no number in its window (2026-11-10: the one solo-self-found step of the 24-27 Duskwood part
+    put every later step number one above the window's). The .maxlevel element is not one of them: that step keeps its number and is
+    skipped in play."""
+    for off in ("som", "hardcore", "hardcoreserver", "questguide", "beta"):
+        if tags.get(off):
+            return False
+    if (tags.get("ssf") and not who.get("ssf")) or (tags.get("ah") and who.get("ssf")):
+        return False
+    if "season" in tags and "0" not in re.split(r"[,;\s]+", str(tags["season"])):
+        return False
+    if "phase" in tags and not in_range(tags["phase"], 6):
+        return False
+    if "xprate" in tags and not in_range(tags["xprate"], 1.0):
+        return False
+    if (tags.get("groupquest") and not who["group"]) or (tags.get("soloquest") and who["group"]):
+        return False
+    if dskip and enabled(dskip):
+        return False
+    if dungeon and dungeon != dskip and not enabled(dungeon):
+        return False
+    return True
 
 
 def where(tags, maps):
@@ -288,7 +302,7 @@ def where(tags, maps):
 def who_of(cfg, snap, prof):
     p = snap["profile"]
     return {"class": cfg["class"].upper(), "race": p["race"]["name"].replace(" ", ""), "faction": p["faction"]["name"],
-            "gender": p["gender"]["type"], "group": prof["group"]}
+            "gender": p["gender"]["type"], "group": prof["group"], "ssf": prof.get("ssf", False)}
 
 
 def facts(cfg, snap, wow_dir, route):
@@ -349,19 +363,20 @@ def facts(cfg, snap, wow_dir, route):
         lo, hi = rs["lo"], rs["hi"]
         steps = [s for s in sec["steps"] if applies(s["filter"], who, lo)]   # the add-on's step list (its saved step indexes it)
         cur = route["step"] if rs["name"] == route["current"] and route.get("step") else 0
-        floor, n = lo, max(1, len(steps))
+        floor, n, num = lo, max(1, len(steps)), 0
         for i, st in enumerate(steps):
             level = max(floor, round(lo + (hi - lo) * i / n))
             ok, tags, ops = step_view(st, who, level, enabled)
+            num += bool(tags.get("loaded"))   # the step's number in the guide window (the add-on's saved step counts the same way)
             if not ok:
                 continue
             if tags.get("xp"):
                 floor = max(floor, min(hi, tags["xp"]))
             spot = where(tags, maps)
-            past = i + 1 < cur
+            past = num < cur
             w = next((x for x in (world(a, maps) for a in reversed(tags.get("goto") or [])) if x), None)
             if w and not past:   # where the route takes you, level by level (detours.py measures from here): level, continent, world x, y,
-                out["path"].append((level, w[0], w[1], w[2], w[3], lo, hi, i + 1, tuple(ops),   # zone, the section's levels, the step's
+                out["path"].append((level, w[0], w[1], w[2], w[3], lo, hi, num, tuple(ops),   # zone, the section's levels, the step's
                                     tags["targets"][0] if tags["targets"] else None, spot,        # number in it, its quests, NPC, map spot,
                                     tags.get("travel")))                                          # the travel the step starts (a flight...)
             pidx = len(out["path"]) - 1   # the route point at or just before this step (a detour's anchor)
@@ -369,23 +384,23 @@ def facts(cfg, snap, wow_dir, route):
                 if el["tag"] == "enabledungeon" and el["arg"] and not el["arg"].startswith("!") and applies(el["filter"], who, level):
                     t = tag_of(el["arg"])
                     if t and past:
-                        out["behind"][NAMES[t]] = (i + 1, lo, hi)
+                        out["behind"][NAMES[t]] = (num, lo, hi)
                     elif t:
                         d = out["dungeons"].setdefault(NAMES[t], {"tag": t, "level": None, "quests": []})
-                        d["level"], d["at"] = level, (max(0, pidx), i + 1, lo, hi)
+                        d["level"], d["at"] = level, (max(0, pidx), num, lo, hi)
             for op, q in ops:
                 if past:
                     out["past"].add(q)
                     continue
                 e = out["quests"].setdefault(q, {})
                 s = {"level": level, "zone": spot[0] if spot else None, "x": spot[1] if spot else None, "y": spot[2] if spot else None,
-                     "npc": tags["targets"][0] if tags["targets"] else None, "at": pidx, "step": i + 1, "lo": lo, "hi": hi}
+                     "npc": tags["targets"][0] if tags["targets"] else None, "at": pidx, "step": num, "lo": lo, "hi": hi}
                 if op == "accept" and "accept" not in e:
                     e["accept"] = s
                 elif op == "turnin":
                     e["turnin"] = s
                 elif op == "complete" and "complete" not in e:
-                    e["complete"], e["complete_at"] = level, (pidx, i + 1, lo, hi)
+                    e["complete"], e["complete_at"] = level, (pidx, num, lo, hi)
                 if tags["dungeon"]:
                     d = out["dungeons"].setdefault(NAMES[tags["dungeon"]], {"tag": tags["dungeon"], "level": None, "quests": []})
                     if q not in d["quests"]:
@@ -424,18 +439,20 @@ def before(mine, route, who, maps, enabled):
             continue
         lo, hi = int(m.group(1)), int(m.group(2))
         steps = [x for x in sec["steps"] if applies(x["filter"], who, lo)]
+        num = 0
         for i, st in enumerate(steps):
-            if part == route["current"] and i + 1 >= (route.get("step") or 0):
-                break
             level = round(lo + (hi - lo) * i / max(1, len(steps)))
             ok, tags, ops = step_view(st, who, level, enabled)
+            num += bool(tags.get("loaded"))
+            if part == route["current"] and num >= (route.get("step") or 0):
+                break
             if not ok:
                 continue
             spot = where(tags, maps)
             for op, q in ops:
                 out.setdefault(q, {}).setdefault(op, {"level": level, "zone": spot[0] if spot else None, "x": spot[1] if spot else None,
                                                       "y": spot[2] if spot else None, "npc": tags["targets"][0] if tags["targets"] else None,
-                                                      "step": i + 1, "lo": lo, "hi": hi})
+                                                      "step": num, "lo": lo, "hi": hi})
     return out
 
 
