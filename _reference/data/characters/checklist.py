@@ -17,7 +17,7 @@ import re
 HERE = pathlib.Path(__file__).resolve().parent
 DATA = HERE.parent
 SHORT_WORD = "faster"   # "better" for a tank (render sets it from the plan)
-KIND = {"dungeon": "Dungeon", "quest": "Quest", "craft": "Craft", "auction": "Auction House", "market": "Auction House", "vendor": "Vendor"}
+KIND = {"bags": "In your bags", "dungeon": "Dungeon", "quest": "Quest", "craft": "Craft", "auction": "Auction House", "market": "Auction House", "vendor": "Vendor"}
 
 
 def esc(t):
@@ -78,7 +78,7 @@ def upgrade_line(r, lv, why=True):
         sub += f" · {coins(r['price'])}" + (f" · {esc(r['budget'])}" if r.get("budget") else "")
     if r["kind"] == "market":
         sub += " · usually listed, not this hour" if "not this hour" in r["where"] else ""
-    if r["kind"] in ("quest", "dungeon", "craft", "vendor"):
+    if r["kind"] in ("quest", "dungeon", "craft", "vendor", "bags"):
         sub += f'<br>{md(r["where"])}'
     if r.get("mats"):
         sub += f"<br>Materials: {md(r['mats'])}"
@@ -162,11 +162,24 @@ def steps_html(C, lv):
         if r["kind"] in ("auction", "market") and r["get_at"] <= lv:
             head, sub = upgrade_line(r, lv, why=False)
             items.append(todo(f"buy{r['item']}{r['slot']}", f"Buy {head}", sub))
+    own, when = C.get("owned") or {}, C.get("owned_when") or {}
     for cn in C.get("consumables") or []:
+        have = own.get(cn["item"].lower(), 0)
+        if cn["best"] and cn.get("worth") and cn.get("qty") and have >= cn["qty"]:   # bought already (bags.py)
+            items.append(info(f"{esc(cn['item'])}: you have enough", f"you bought {have} on {when.get(cn['item'].lower())}"))
+            continue
         if cn["best"] and cn.get("worth") and cn.get("qty"):
             tr = C.get("trip") or {}
             items.append(todo(f"cons{cn['item']}", f"Buy ×{cn['qty']} {esc(cn['item'])} <span class=\"slot\">{esc(cn['kind'].lower())}</span>",
                               f"{coins(cn['total'])} · keeps it up for about {tr.get('minutes', 0) / 60:.1f} h of play · {esc(cn['effect'])}"))
+    left = {n: k - own.get(n.lower(), 0) for n, k in mats.items() if k > own.get(n.lower(), 0)}
+    if mats and not left:   # every material bought already (bags.py: the add-on's purchase record)
+        items.append(info("The materials for your crafts are in your bags",
+                          ", ".join(f"{esc(n)} ×{k}" for n, k in sorted(mats.items(), key=lambda kv: -kv[1]))
+                          + f" · bought {max(when.get(n.lower(), '') for n in mats)}"))
+        mats = {}
+    elif left and len(left) < len(mats):
+        mats = left
     if mats:   # what the materials cost: the step's net cost plus what selling its products brings back
         cost = sum(st["cost"] + (st["sell"][0] * min(st["crafts"], st["sell"][1] or st["crafts"]) if st.get("sell") else 0)
                    for pp, st in craft_steps)
@@ -224,9 +237,10 @@ def steps_html(C, lv):
     # 5. gear up: wear and enchant
     items = []
     for r in soon:
-        if r["kind"] in ("auction", "market", "craft", "vendor") and r["get_at"] <= lv:
-            when = "Wear" if r["level"] <= lv else f"Keep for level {r['level']}:"
-            items.append(todo(f"wear{r['item']}", f"{when} {item(r)} <span class=\"slot\">{esc(r['slot'])}</span>"))
+        if r["kind"] in ("auction", "market", "craft", "vendor", "bags") and r["get_at"] <= lv:
+            w = "Wear" if r["level"] <= lv else f"Keep for level {r['level']}:"
+            items.append(todo(f"wear{r['item']}", f"{w} {item(r)} <span class=\"slot\">{esc(r['slot'])}</span>",
+                              "in your bags" if r["kind"] == "bags" else None))
     for e in C.get("enchants") or []:
         tx = e[2:] if e.startswith("- ") else e
         if ": skip," not in tx:

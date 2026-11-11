@@ -35,6 +35,7 @@ import rxp  # noqa: E402
 import rxp_guide as RXG  # noqa: E402
 import detours as DT  # noqa: E402
 import legacy as LEG  # noqa: E402
+import bags as BG  # noqa: E402
 
 UPGRADE = 0.005        # an upgrade worth less than 0.5% of the time per kill is not listed
 MIN_CHANCE = 0.05      # a dungeon drop under 5% is not worth planning around
@@ -240,6 +241,7 @@ RECIPES = []        # the recipes the character knows (professions.known_recipes
 KNOWN = set()       # their spell ids
 COMPLETED = set()   # quest ids the character has completed (Blizzard's API): their rewards are gone
 INLOG = set()       # quest ids in the character's quest log now
+OWN = {}            # what the character owns but does not wear (bags.py: the add-on's bag snapshot, else its auction purchases)
 
 
 def unit_price(item):
@@ -398,6 +400,9 @@ def sources_text(it):
             elif st and st[1] and s.get("quest") not in INLOG:
                 log += f"; from {st[1]}"
             out.append(f"quest \"{s['name']}\" ({s.get('zone') or '?'}{lv}{log})")
+        elif k == "bags":
+            out.append({"bags": "In your bags", "bank": "In your bank"}.get(s.get("where"), f"You bought it on {s.get('when')}; it should be in your bags")
+                       + (f" (as of {s.get('when')})" if s.get("where") in ("bags", "bank") else ""))
         elif k == "auction":
             mk = next((x for x in it.get("sources") or [] if x["kind"] == "market" and x.get("price")), None)
             if mk and s.get("price") and s["price"] > 1.5 * mk["price"]:   # a listing far above the usual price: wait for another
@@ -460,6 +465,8 @@ def acquirable(it, L, start, profs):
         if s["kind"] == "quest" and ((s.get("level") or 0) >= 60 or s.get("zone") in ENDGAME or s.get("quest") in COMPLETED):
             continue
         lo, hi = IP.window(it, s)
+        if s["kind"] == "bags":   # yours already: had now, worn from its required level
+            lo, hi = start, 60
         if s["kind"] == "market":   # usually listed (market.history): from the item's level on, at its usual price
             lo, hi = max(it.get("req") or start, start), 60
         elif s["kind"] == "auction" and AUCTION_FUTURE:   # a what-if: today's listings as a typical market, buyable at their level later
@@ -1871,7 +1878,7 @@ def line(e, at):
     return out
 
 
-KIND_ORDER = ["dungeon", "quest", "craft", "vendor", "auction", "market"]
+KIND_ORDER = ["bags", "dungeon", "quest", "craft", "vendor", "auction", "market"]
 
 
 def primary(e):
@@ -1893,6 +1900,8 @@ def action_sections(evs, at, L, head="###"):
     by = {}
     for e in sorted(evs, key=lambda e: -e["gain"]):
         by.setdefault(primary(e)["kind"], []).append(e)
+    if by.get("bags"):   # (2026-11-10, bags.py: what you bought or carry already)
+        o += [f"{head} In your bags", ""] + [line(e, at) for e in by["bags"]] + [""]
     if by.get("dungeon"):
         o += [f"{head} Dungeons to run", ""]
         dz = {}
@@ -2381,6 +2390,14 @@ def main():
             else:
                 pool.append(m)
                 byid[m["id"]] = m
+    # what you own already (2026-11-10, user: "Can you see my bags and what I've purchased?"): free and certain, worn at its level
+    OWN.update(BG.owned(cfg, snap))
+    for p in pool:
+        o = OWN.get((p.get("name") or "").lower()) or OWN.get(f"id:{p.get('id')}")
+        if o:
+            p["sources"] = [{"kind": "bags", "where": o["where"], "when": o["when"]}]
+    CTX["owned"] = {k: v["count"] for k, v in OWN.items()}
+    CTX["owned_when"] = {k: v["when"] for k, v in OWN.items()}
     COMPLETED.update(q["id"] for q in (snap.get("quests-completed") or {}).get("quests") or [])
     RECIPES[:] = PF.known_recipes(snap["profile"]["name"], ah.get("duckdb"), d / "recipes.json")
     FRECIPES.update(PF.forever_recipes([k for k in profs if k in PF.PROFESSION_ID], cfg.get("region", "us")))
