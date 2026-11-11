@@ -81,7 +81,8 @@ def snapshot(text, name):
                 elif re.fullmatch(r"-?\d+", v):
                     v = int(v)
                 cur[m.group(1)] = v
-    return (int(t.group(1)) if t else 0), items
+    bt = re.search(r'\["bagsT"\] = (\d+)', block)   # 0.9.4: when the bags were last read successfully (t: the last write)
+    return (int(bt.group(1)) if bt else int(t.group(1)) if t else 0), items
 
 
 def mail_won(text, name, since=0):
