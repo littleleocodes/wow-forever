@@ -4,7 +4,7 @@
 > refresh with the same command. Item values are seconds per kill from this project's fight lab for the leveling page build
 > ([Hybrid Arcane/Frost](../../mage/leveling/arcane-frost.md), rotation `barrage-frost-leveling`), a model of the beta, not a measurement.
 
-Level **27** Gnome Mage, Alliance. Professions: Tailoring 110/150, Enchanting 150/225, Cooking 149/150, Fishing 100/150, First Aid 56/150. Gold: unknown (log in with bnet_login.py; the login lasts a day).
+Level **27** Gnome Mage, Alliance. Professions: Tailoring 110/150, Enchanting 150/225, Cooking 149/150, Fishing 100/150, First Aid 56/150. Gold: **4g 18s 43c**.
 
 ## Talents
 
@@ -30,13 +30,14 @@ Closest next points: Novice Paladin: Tara 22/25; Journeyman Tailor: Tailoring 11
 
 ## Since your last refresh (2026-11-10 07:37, level 26)
 
-- New in the plan: Sage's Circlet of Frozen Wrath (head, level 27), Headhunter's Cloak of Frozen Wrath (back, level 27), Wand of Eventide (ranged, level 27), Geomancer's Bracers of Frozen Wrath (wrist, level 30), Snake Hoop (finger1, level 33), Robe of the Magi (chest, level 35), Regal Mantle of Frozen Wrath (shoulder, level 37), Dreamweave Circlet (head, level 45), Wizard's Hand of Frozen Wrath (ranged, level 48).
-- Left the plan (worn, replaced by a better choice, or no longer listed): Azure Silk Cloak (back), Robe of Power (chest), Minor Channeling Ring (finger1), Conjurer's Hood of Magic (head), Lesser Mystic Wand (ranged), Lesser Eternal Wand (ranged), Conjurer's Mantle of Magic (shoulder), Regal Cuffs of Frozen Wrath (wrist).
+- Gold: 50s 22c then, 4g 18s 43c now.
+- New in the plan: Silk Headband (head, level 27), Wand of Eventide (ranged, level 27), Geomancer's Bracers of Frozen Wrath (wrist, level 30), Snake Hoop (finger1, level 33), Robe of the Magi (chest, level 35), Regal Mantle of Frozen Wrath (shoulder, level 37), Darkmist Wizard Hat of Frozen Wrath (head, level 39), Wizard's Hand of Frozen Wrath (ranged, level 48).
+- Left the plan (worn, replaced by a better choice, or no longer listed): Robe of Power (chest), Minor Channeling Ring (finger1), Conjurer's Hood of Magic (head), Lesser Mystic Wand (ranged), Lesser Eternal Wand (ranged), Conjurer's Mantle of Magic (shoulder), Regal Cuffs of Frozen Wrath (wrist).
 - Moved: Fallen Dragon's Scepter (weapon) level 26 to 27, Durable Pants of Frozen Wrath (legs) level 29 to 28.
 
 ## Gold plan
 
-Gold now: **unknown (log in)**. Training you need at the next two levels: **2g 10s**. Free for gear now: **unknown**.
+Gold now: **4g 18s 43c**. Training you need at the next two levels: **2g 10s**. Free for gear now: **2g 8s 43c**.
 
 Income is an estimate from Classic's data: coin and loot from about 108 kills a level (cloth, greens and other trade goods at the auction house's usual sale price after its cut, the rest at vendor prices), plus your pace of 9.3 quests a level at Classic's quest money. It assumes you sell what drops or use it in place of buying it. "Training" counts the spells your rotation and kit use; optional ones (a frost mage's fire spells, teleports) are listed apart.
 
@@ -57,9 +58,9 @@ Income is an estimate from Classic's data: coin and loot from about 108 kills a 
 | 39 | 13g 78s 14c | 9g (Frost Nova, Ice Armor, Arcane Missiles, Flamestrike, Conjure Water, Polymorph) | 9g |
 | 40 | 12g 89s 25c | - | - |
 
-Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Gnomeregan Exiles; Forever's not confirmed). At this income you would have about 78g 85s 11c by 40 after training and the plan's gear, enough for the mount at 42.
+Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Gnomeregan Exiles; Forever's not confirmed). At this income you would have about 71g 66s 92c by 40 after training and the plan's gear, enough for the mount at 43.
 
-Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 0c before 40 and 0c in all; you would reach 60 with about 586g 94s 5c after the mount.
+Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 11g 36s 62c before 40 and 17g 9s 68c in all; you would reach 60 with about 574g 2s 80c after the mount.
 
 ## Now (level 27)
 
@@ -71,10 +72,10 @@ Count a piece's stats in spell power: 1 intellect = 0.22, 1 spirit = 0.27, 1 sta
 
 | Slot | You wear (or the plan's next piece) | Worth (spell power) | A find must reach | Next planned upgrade |
 |---|---|---|---|---|
-| head | Sage's Circlet of Frozen Wrath (planned, level 27) | 15 | 17 | 45 |
+| head | Silk Headband (planned, level 27) | 9 | 14 | 39 |
 | neck | Ephemeral Choker | 1 | 5 | 41 |
 | shoulder | Double-Stitched Woolen Shoulders | 4 | 10 | 37 |
-| back | Headhunter's Cloak of Frozen Wrath (planned, level 27) | 9 | 10 | - |
+| back | Azure Silk Cloak (planned, level 30) | 9 | 11 | - |
 | chest | Rotmender's Garb | 6 | 14 | 35 |
 | wrist | Geomancer's Bracers of Frozen Wrath (planned, level 30) | 9 | 11 | - |
 | hands | Town Clerk's Mittens | 5 | 9 | 40 |
@@ -96,7 +97,7 @@ Count a piece's stats in spell power: 1 intellect = 0.22, 1 spirit = 0.27, 1 sta
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 0.6 hours old). "For your trip": enough to keep it up for about 1.2 hours of play, to your next training at level 28 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 0.8 hours old). "For your trip": enough to keep it up for about 1.2 hours of play, to your next training at level 28 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|
@@ -118,11 +119,11 @@ One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience 
 
 ### Buy on the Auction House (listed now; prices change hourly; most minutes saved per gold first)
 
-- **legs**: Durable Pants of Frozen Wrath, 5.6% faster kills, replaces Rotmender's Leggings (wear at 28; best to the end of leveling; saves about 86 min of killing). Auction House now: 29s. Why it stays: Lunar Leggings of Frozen Wrath at 40, 1.7% faster, saves about 26 min, but its 2g 90s takes about 47 min of play to earn; Frostweave Pants at 51, 1.8% faster, saves about 17 min before 60; Ghostweave Pants at 53, 2.6% faster, saves about 21 min, but its 8g 35s 94c takes about 41 min of play to earn. Saves about 86 min of killing; earning its price takes about 10 min of play.
-- **ranged**: Wand of Eventide, 3.6% faster kills, replaces Deepblaze (wear it right away; best until level 48; saves about 45 min of killing). Auction House now: 42s. Why it stays: Thunderwood at 27, 0.7% faster, saves about 9 min before its next upgrade; Freezing Shard at 34, 2.5% faster, saves about 28 min, but its 125g takes about 2541 min of play to earn. Saves about 45 min of killing; earning its price takes about 12 min of play.
-- **head**: Sage's Circlet of Frozen Wrath, 6.9% faster kills (wear it right away; best until level 45; saves about 71 min of killing). Auction House now: 1g 49s. Why it stays: Vital Headband of Magic at 31, 0.6% faster, saves about 6 min before its next upgrade; Darkmist Wizard Hat of Frozen Wrath at 39, 2.0% faster, saves about 12 min before its next upgrade; Gossamer Headpiece of Frozen Wrath at 42, 2.4% faster, saves about 7 min before its next upgrade. Saves about 71 min of killing; earning its price takes about 43 min of play.
-- **wrist**: Geomancer's Bracers of Frozen Wrath, 2.6% faster kills, replaces Bridgebreaker Bindings (wear at 30; best to the end of leveling; saves about 41 min of killing). Auction House now: 1g. Why it stays: Regal Cuffs of Frozen Wrath at 36, 0.5% faster, saves about 8 min before 60; Netherfroth Cuffs at 45, 1.1% faster, saves about 15 min before 60. Saves about 41 min of killing; earning its price takes about 24 min of play.
-- **back**: Headhunter's Cloak of Frozen Wrath, 3.5% faster kills, replaces Seer's Cape (wear it right away; best to the end of leveling; saves about 54 min of killing). Auction House now: 1g 79s. Why it stays: Captain's Cloak of Frozen Wrath at 34, 0.9% faster, saves about 14 min before 60; Opulent Cape of Frozen Wrath at 43, 1.2% faster, saves about 15 min before 60. Saves about 54 min of killing; earning its price takes about 52 min of play.
+- **legs**: Durable Pants of Frozen Wrath, 5.6% faster kills, replaces Rotmender's Leggings (wear at 28; best to the end of leveling; saves about 86 min of killing). Auction House now: 29s. Why it stays: Lunar Leggings of Frozen Wrath at 40, 1.7% faster, saves about 26 min, but its 2g 90s takes about 47 min of play to earn; Frostweave Pants at 51, 1.8% faster, saves about 17 min before 60; Ghostweave Pants at 53, 2.6% faster, saves about 21 min, but its 8g 35s 94c takes about 41 min of play to earn. Saves about 86 min of killing; earning its price takes about 10 min of play. Fits your gear budget (1g 79s 43c left after it).
+- **back**: Azure Silk Cloak, 3.4% faster kills, replaces Seer's Cape (wear at 30; best to the end of leveling; saves about 55 min of killing). Tailoring: learn it first (pattern: Pattern: Azure Silk Cloak (vendor); Classic asked skill 175, Forever often less; you have 110); Auction House now: 43s. Why it stays: Captain's Cloak of Frozen Wrath at 34, 0.6% faster, saves about 7 min before 60; Opulent Cape of Frozen Wrath at 43, 0.9% faster, saves about 11 min before 60. Saves about 55 min of killing; earning its price takes about 7 min of play. Fits your gear budget (1g 51s 26c left after it).
+- **head**: Silk Headband, 4.4% faster kills (wear it right away; best until level 39; saves about 31 min of killing). Tailoring: learn it first (trainer; Classic asked skill 160, Forever often less; you have 110); Auction House now: 28s. Why it stays: Holy Shroud at 27, 1.6% faster, saves about 12 min before its next upgrade; Silky Circlet at 27, only 0.2% faster; Elder's Hat of Magic at 29, 2.5% faster, saves about 16 min before its next upgrade. Saves about 31 min of killing; earning its price takes about 8 min of play. Fits your gear budget (1g 24s 9c left after it).
+- **ranged**: Wand of Eventide, 3.6% faster kills, replaces Deepblaze (wear it right away; best until level 48; saves about 45 min of killing). Auction House now: 42s. Why it stays: Thunderwood at 27, 0.7% faster, saves about 9 min before its next upgrade; Freezing Shard at 34, 2.5% faster, saves about 28 min, but its 125g takes about 2541 min of play to earn. Saves about 45 min of killing; earning its price takes about 12 min of play. Fits your gear budget (82s 9c left after it).
+- **wrist**: Geomancer's Bracers of Frozen Wrath, 2.6% faster kills, replaces Bridgebreaker Bindings (wear at 30; best to the end of leveling; saves about 41 min of killing). Auction House now: 1g. Why it stays: Regal Cuffs of Frozen Wrath at 36, 0.5% faster, saves about 8 min before 60; Netherfroth Cuffs at 45, 1.1% faster, saves about 15 min before 60. Saves about 41 min of killing; earning its price takes about 24 min of play. Your gear budget covers it at level 29 (1g 16s 28c left after it).
 
 ### Dungeon runs
 
@@ -216,10 +217,10 @@ Materials: Linen Cloth x332, Peacebloom x55, Empty Vial x55, Mild Spices x55.
 
 | Slot | Item | Worth at your level | Replaced at |
 |---|---|---|---|
-| head | **empty** | 0 | level 27: Sage's Circlet of Frozen Wrath |
+| head | **empty** | 0 | level 27: Silk Headband |
 | neck | Ephemeral Choker | 0.6% faster kills | level 41: Talvash's Enhancing Necklace |
 | shoulder | Double-Stitched Woolen Shoulders | 2.0% faster kills | level 37: Regal Mantle of Frozen Wrath |
-| back | Seer's Cape | 0.5% faster kills | level 27: Headhunter's Cloak of Frozen Wrath |
+| back | Seer's Cape | 0.5% faster kills | level 30: Azure Silk Cloak |
 | chest | Rotmender's Garb | 3.0% faster kills | level 35: Robe of the Magi |
 | wrist | Bridgebreaker Bindings | 1.5% faster kills | level 30: Geomancer's Bracers of Frozen Wrath |
 | hands | Town Clerk's Mittens | 2.2% faster kills | level 40: Dreamweave Gloves |
@@ -245,7 +246,7 @@ Each upgrade worth 0.5% faster kills or more, under the level at which you can g
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **feet**: Earthen Silk Slippers, 9.7% faster kills, replaces Incinerator's Boots (wear it right away; best to the end of leveling; saves about 157 min of killing). Tailoring: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 165 in the client's data; you have 110); Auction House now: 1g 75s. Saves about 157 min of killing; earning its price takes about 16 min of play.
+- **feet**: Earthen Silk Slippers, 9.7% faster kills, replaces Incinerator's Boots (wear it right away; best to the end of leveling; saves about 157 min of killing). Tailoring: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 165 in the client's data; you have 110); Auction House now: 1g 75s. Saves about 157 min of killing; earning its price takes about 16 min of play. Fits your gear budget (2g 43s 24c left after it).
 
 
 ### Level 33
@@ -259,21 +260,28 @@ Each upgrade worth 0.5% faster kills or more, under the level at which you can g
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **chest**: Robe of the Magi, 5.7% faster kills, replaces Rotmender's Garb (wear it right away; best to the end of leveling; saves about 98 min of killing). Auction House now: 3g 77s. Why it stays: Robe of Winter Night at 52, 1.4% faster, saves about 11 min before 60; Robe of the Archmage at 57, 1.5% faster, saves about 6 min before 60. Saves about 98 min of killing; earning its price takes about 83 min of play.
+- **chest**: Robe of the Magi, 5.7% faster kills, replaces Rotmender's Garb (wear it right away; best to the end of leveling; saves about 98 min of killing). Auction House now: 3g 77s. Why it stays: Robe of Winter Night at 52, 1.4% faster, saves about 11 min before 60; Robe of the Archmage at 57, 1.5% faster, saves about 6 min before 60. Saves about 98 min of killing; earning its price takes about 83 min of play. Fits your gear budget (6g 43s 90c left after it).
 
 
 ### Level 37
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **shoulder**: Regal Mantle of Frozen Wrath, 3.5% faster kills, replaces Double-Stitched Woolen Shoulders (wear it right away; best to the end of leveling; saves about 55 min of killing). Auction House now: 2g 25s. Why it stays: Netherfroth Shoulders at 42, 0.6% faster, saves about 10 min before 60; Argent Shoulders at 56, 1.3% faster, saves about 7 min before 60. Saves about 55 min of killing; earning its price takes about 33 min of play.
+- **shoulder**: Regal Mantle of Frozen Wrath, 3.5% faster kills, replaces Double-Stitched Woolen Shoulders (wear it right away; best to the end of leveling; saves about 55 min of killing). Auction House now: 2g 25s. Why it stays: Netherfroth Shoulders at 42, 0.6% faster, saves about 10 min before 60; Argent Shoulders at 56, 1.3% faster, saves about 7 min before 60. Saves about 55 min of killing; earning its price takes about 33 min of play. Fits your gear budget (10g 37s 13c left after it).
+
+
+### Level 39
+
+#### Buy on the Auction House (usually listed; usual prices, look again then)
+
+- **head**: Darkmist Wizard Hat of Frozen Wrath, 3.5% faster kills, replaces Silk Headband (wear it right away; best to the end of leveling; saves about 52 min of killing). Auction House: usually listed (in 32% of the hourly snapshots), about 2g 49s, not this hour. Why it stays: Gossamer Headpiece of Frozen Wrath at 42, 0.6% faster, saves about 8 min before 60; Dreamweave Circlet at 45, 1.2% faster, saves about 18 min before 60. Saves about 52 min of killing; earning its price takes about 36 min of play. Fits your gear budget (13g 10s 80c left after it).
 
 
 ### Level 40
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **hands**: Dreamweave Gloves, 4.2% faster kills, replaces Town Clerk's Mittens (wear it right away; best to the end of leveling; saves about 66 min of killing). Tailoring: learn it first (trainer; Classic asked skill 225, Forever often less; you have 110); Auction House now: 3g 50s. Saves about 66 min of killing; earning its price takes about 28 min of play.
+- **hands**: Dreamweave Gloves, 4.2% faster kills, replaces Town Clerk's Mittens (wear it right away; best to the end of leveling; saves about 66 min of killing). Tailoring: learn it first (trainer; Classic asked skill 225, Forever often less; you have 110); Auction House now: 3g 50s. Saves about 66 min of killing; earning its price takes about 28 min of play. Fits your gear budget (12g 93s 79c left after it).
 
 
 ### Level 41
@@ -283,18 +291,11 @@ Each upgrade worth 0.5% faster kills or more, under the level at which you can g
 - **neck**: Talvash's Enhancing Necklace, 2.6% faster kills, replaces Ephemeral Choker (wear it right away; best to the end of leveling; saves about 35 min of killing). quest "Restoring the Necklace" (?, level 44; the chain starts with "The Shattered Necklace", level 37). Not on your RestedXP route (it takes the chain as far as "Lore for a Price", at about level 48): from Talvash del Kissel (Ironforge 36.0, 4.0).
 
 
-### Level 45
-
-#### Buy on the Auction House (usually listed; usual prices, look again then)
-
-- **head**: Dreamweave Circlet, 2.8% faster kills, replaces Sage's Circlet of Frozen Wrath (wear it right away; best to the end of leveling; saves about 38 min of killing). Tailoring: learn it first (trainer; Classic asked skill 250, Forever often less; you have 110); Auction House now: 5g. Saves about 38 min of killing; earning its price takes about 37 min of play.
-
-
 ### Level 48
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **ranged**: Wizard's Hand of Frozen Wrath, 2.6% faster kills, replaces Wand of Eventide (wear it right away; best to the end of leveling; saves about 32 min of killing). Auction House now: 4g. Why it stays: Greater Eternal Wand at 55, 0.7% faster, saves about 5 min before 60. Saves about 32 min of killing; earning its price takes about 26 min of play.
+- **ranged**: Wizard's Hand of Frozen Wrath, 2.6% faster kills, replaces Wand of Eventide (wear it right away; best to the end of leveling; saves about 32 min of killing). Auction House now: 4g. Why it stays: Greater Eternal Wand at 55, 0.7% faster, saves about 5 min before 60. Saves about 32 min of killing; earning its price takes about 26 min of play. Fits your gear budget (51g 49s 80c left after it).
 
 
 ## When to leave the guide
