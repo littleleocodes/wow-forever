@@ -405,6 +405,18 @@ def run_class(cls, tiers, repo, db, zones, edb, a, rec):
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_text(json.dumps({"items": items}, indent=1) + "\n", encoding="utf-8")
         m = measure(e, repo, talents, items, a.final, 3, ref, f"m-{cls}")
+        pre = out.get("prebis") if tier == "bis" else None
+        if pre and (pre.get("pick") or {}).get("value", 0) > m["value"] and pre.get("items"):
+            # the BiS pool holds every pre-BiS item, so the pre-BiS set is a BiS set too: a BiS search that ends below it takes it
+            # (2026-11-11: the paladin's BiS search ended at tank value 1.1836, its pre-BiS set measured 1.1917 on the same fights)
+            log(f"  bis: the search's set measures {m['value']:.4f}, below the pre-BiS set's {pre['pick']['value']:.4f}: the pre-BiS set is kept")
+            items = [dict(x) for x in pre["items"]]
+            p.write_text(json.dumps({"items": items}, indent=1) + "\n", encoding="utf-8")
+            m = {k: v for k, v in pre["pick"].items() if k != "stats"}
+            r = dict(r, items=items, chosen="the pre-BiS set (the BiS search ended below it)", trinkets=pre.get("trinkets") or r.get("trinkets"),
+                     ilvl=pre.get("ilvl", r.get("ilvl")))
+            ench = {k: v for k, v in (pre.get("enchants_by_weight") or {}).items()}
+            wench = pre.get("weapon_enchant")
         s = out["standard"]
         rt = dict(r, names=[db.get(x.get("id"), {}).get("name") if x.get("id") else None for x in items], items=items,
                   weights_unit="threat per second equivalents of tank value (threat weight - k x damage-taken weight)", raw_weights=wf.last,

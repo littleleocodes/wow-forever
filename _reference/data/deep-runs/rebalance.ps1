@@ -21,7 +21,7 @@ foreach ($p in $procs) { $id = [int]$p.ProcessId; $cmd[$id] = [string]$p.Command
 function InQueue($id) {   # an ancestor is the runner's or a lane's bash
   $d = 0
   while ($d -lt 12 -and $cmd.ContainsKey($id)) {
-    if ($pname[$id] -eq 'bash.exe' -and $cmd[$id] -match 'resume_1104\.sh|_1103\.sh|tonight_1110\.sh') { return $true }
+    if ($pname[$id] -eq 'bash.exe' -and $cmd[$id] -match 'resume_1104\.sh|_1103\.sh|tonight_111\d\.sh') { return $true }
     $id = $parent[$id]; $d++
   }
   return $false
