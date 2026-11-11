@@ -98,12 +98,20 @@ def owned(cfg, snap):
         since = 0
         if snapped:
             since, items = snapped
-            for it in items:
-                key = (it["name"] or f"id:{it['id']}").lower()
-                if key in worn:
+            for it in items:   # by name and by id (a link's name can come without its suffix, or not at all: 2026-11-10,
+                if (it["name"] or "").lower() in worn:   # "Geomancer's Bracers" for Geomancer's Bracers of Frozen Wrath)
                     continue
-                o = out.setdefault(key, {"name": it["name"], "id": it["id"], "count": 0, "where": it["where"], "when": _day(since)})
-                o["count"] += it["count"]
+                for key in {(it["name"] or "").lower(), f"id:{it['id']}" if it["id"] else ""} - {""}:
+                    o = out.setdefault(key, {"name": it["name"], "id": it["id"], "count": 0, "where": it["where"], "when": _day(since)})
+                    o["count"] += it["count"]
+        if snapped:   # a snapshot name without its random suffix ("Geomancer's Bracers", 2026-11-10: the add-on falls back to the plain
+            base = {v["name"].lower(): v for v in list(out.values()) if v.get("name")}   # name when a link is not loaded yet): the
+            for t, item, cnt, kind in mail_won(text, name, time.time() - MAIL_DAYS * 86400):   # full name of the piece bought
+                key = item.lower()
+                if kind == "won" and key not in out and key not in worn:
+                    b = next((v for n, v in base.items() if key.startswith(n + " of ")), None)
+                    if b:
+                        out[key] = dict(b, name=item)
         cutoff = max(since, time.time() - MAIL_DAYS * 86400)
         sold = {}
         for t, item, cnt, kind in mail_won(text, name, cutoff):

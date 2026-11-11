@@ -166,7 +166,7 @@ def steps_html(C, lv):
     for cn in C.get("consumables") or []:
         have = own.get(cn["item"].lower(), 0)
         if cn["best"] and cn.get("worth") and cn.get("qty") and have >= cn["qty"]:   # bought already (bags.py)
-            items.append(info(f"{esc(cn['item'])}: you have enough", f"you bought {have} on {when.get(cn['item'].lower())}"))
+            items.append(info(f"{esc(cn['item'])}: you have enough", f"{have} in your bags (as of {when.get(cn['item'].lower())})"))
             continue
         if cn["best"] and cn.get("worth") and cn.get("qty"):
             tr = C.get("trip") or {}
@@ -176,7 +176,7 @@ def steps_html(C, lv):
     if mats and not left:   # every material bought already (bags.py: the add-on's purchase record)
         items.append(info("The materials for your crafts are in your bags",
                           ", ".join(f"{esc(n)} ×{k}" for n, k in sorted(mats.items(), key=lambda kv: -kv[1]))
-                          + f" · bought {max(when.get(n.lower(), '') for n in mats)}"))
+                          + f" · as of {max(when.get(n.lower(), '') for n in mats)}"))
         mats = {}
     elif left and len(left) < len(mats):
         mats = left

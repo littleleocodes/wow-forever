@@ -2392,6 +2392,24 @@ def main():
                 byid[m["id"]] = m
     # what you own already (2026-11-10, user: "Can you see my bags and what I've purchased?"): free and certain, worn at its level
     OWN.update(BG.owned(cfg, snap))
+    have = {(p.get("name") or "").lower() for p in pool}
+    db = IP.sim_db()
+    byname = {it["name"].lower(): it for it in db["items"]}
+    sufs = sorted(db.get("randomSuffixes") or [], key=lambda x: sum(x.get("stats") or []))
+    for key, o in OWN.items():   # a random-suffix piece you own that no listing put in the pool (you bought the listing): built from the
+        nm = o.get("name") or ""    # item and the suffix its name ends with
+        if key.startswith("id:") or key in have or " of " not in nm:
+            continue
+        sx = base = None
+        for x in sufs:   # the suffix the item can roll (its randomSuffixOptions) whose name ends the item's name
+            b = byname.get(nm[: -len(x["name"]) - 1].lower()) if nm.lower().endswith(" " + x["name"].lower()) else None
+            if b and x["id"] in (b.get("randomSuffixOptions") or []):
+                sx, base = x, b
+                break
+        if base:
+            built = IP.versions(cfg["class"], cfg["faction"], cfg["school_share"], [(base["id"], f"b{sx['id']}", nm, {"kind": "bags", "price": 0})])
+            pool += built
+            have |= {nm.lower()} if built else set()
     for p in pool:
         o = OWN.get((p.get("name") or "").lower()) or OWN.get(f"id:{p.get('id')}")
         if o:
