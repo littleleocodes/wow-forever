@@ -12,19 +12,19 @@ Capacity per point of gear stat x 1000 (± standard error); in brackets the heal
 
 | Gear | Healing | Intellect | Spirit | mp5 | Crit (per 1%) | Capacity |
 |---|---|---|---|---|---|---|
-| the lab's assumed gear | 0.2505 ± 0.0236 (1.00) | 0.6748 ± 0.0494 (2.69) | 0.3985 ± 0.0455 (1.59) | 1.4494 ± 0.1489 (5.79) | 5.4347 ± 0.5798 (21.70) | 0.625 |
-| the first pre-BiS set | 0.2148 ± 0.0247 (1.00) | 0.7070 ± 0.0487 (3.29) | 0.3354 ± 0.0402 (1.56) | 1.6599 ± 0.1251 (7.73) | 5.5225 ± 0.6405 (25.71) | 0.629 |
-| the first BiS set | 0.2833 ± 0.0240 (1.00) | 0.7263 ± 0.0398 (2.56) | 0.3842 ± 0.0414 (1.36) | 1.5662 ± 0.1126 (5.53) | 6.6631 ± 0.7985 (23.52) | 0.654 |
+| the lab's assumed gear | 0.2630 ± 0.0227 (1.00) | 0.6228 ± 0.0503 (2.37) | 0.3972 ± 0.0454 (1.51) | 1.4580 ± 0.1568 (5.54) | 4.8381 ± 0.5438 (18.39) | 0.627 |
+| the first pre-BiS set | 0.2132 ± 0.0231 (1.00) | 0.7145 ± 0.0447 (3.35) | 0.3071 ± 0.0426 (1.44) | 1.8042 ± 0.1414 (8.46) | 4.9690 ± 1.0609 (23.31) | 0.652 |
+| the first BiS set | 0.2225 ± 0.0217 (1.00) | 0.7828 ± 0.0449 (3.52) | 0.3338 ± 0.0400 (1.50) | 1.5967 ± 0.1576 (7.18) | 6.4091 ± 1.1695 (28.80) | 0.671 |
 
 ### Sets
 
 | Tier | Capacity | vs the lab's assumed gear | Healing | Intellect | Spirit | mp5 | Crit | Item level |
 |---|---|---|---|---|---|---|---|---|
-| the lab's assumed gear | 0.624 ± 0.002 | x1.000 ± 0.000 | 360 | 260 | 130 | 24 | 2.0% | - |
-| pre-BiS | 0.629 ± 0.002 | x1.007 ± 0.003 | 584 | 209 | 122 | 14 | 2.0% | 61.5 |
-| BiS (phase 1) | 0.651 ± 0.002 | x1.043 ± 0.004 | 615 | 225 | 110 | 23 | 1.0% | 63.5 |
+| the lab's assumed gear | 0.625 ± 0.002 | x1.000 ± 0.000 | 360 | 260 | 130 | 24 | 2.0% | - |
+| pre-BiS | 0.654 ± 0.002 | x1.046 ± 0.003 | 494 | 205 | 61 | 66 | 0.0% | 60.0 |
+| BiS (phase 1) | 0.670 ± 0.002 | x1.073 ± 0.004 | 649 | 218 | 130 | 31 | 0.0% | 63.3 |
 
-Capacities on 1000 fresh seeds (common to the three rows); the lab's standard 60 seeds (the pages' convention): default 0.636, prebis 0.633, bis 0.650.
+Capacities on 1000 fresh seeds (common to the three rows); the lab's standard 60 seeds (the pages' convention): default 0.639, prebis 0.649, bis 0.663.
 
 #### Pre-BiS: `_reference/data/raidsim/gear_sets/forever/tiers/paladin-holy-prebis.gear.json`
 
@@ -32,24 +32,23 @@ Capacities on 1000 fresh seeds (common to the three rows); the lab's standard 60
 |---|---|---|---|---|
 | Head | [Living Crown](https://www.wowhead.com/forever/item=252561) | 61 | crafted | Lesser Arcane Amalgamation |
 | Neck | [Wavefront Necklace](https://www.wowhead.com/forever/item=20685) | 65 | Lord Skwol, Silithus | - |
-| Shoulder | [Devout Mantle](https://www.wowhead.com/forever/item=16695) (Vestments of the Devout: set bonus not valued) | 60 | Solakar Flamewreath, Blackrock Spire | - |
+| Shoulder | [Mantle of Lost Hope](https://www.wowhead.com/forever/item=22234) | 53 | Lord Roccor, Blackrock Depths | - |
 | Back | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) | 62 | crafted | - |
-| Chest | [Breastplate of Salvation](https://www.wowhead.com/forever/item=250601) | 61 | crafted | Enchant Chest - Major Intellect |
-| Wrist | [Wildheart Bracers](https://www.wowhead.com/forever/item=16714) (Wildheart Raiment: set bonus not valued) | 57 | Scholomance | Enchant Bracer - Healing Power |
-| Hands | [Mooncloth Gloves](https://www.wowhead.com/forever/item=18409) | 62 | crafted | - |
-| Waist | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) | 62 | crafted | - |
-| Legs | [Martyr's Legplates](https://www.wowhead.com/forever/item=250600) | 61 | crafted | Lesser Arcane Amalgamation |
+| Chest | [Mindsurge Robe](https://www.wowhead.com/forever/item=18532) | 62 | Tribute, Dire Maul | Enchant Chest - Major Intellect |
+| Wrist | [Loomguard Armbraces](https://www.wowhead.com/forever/item=13969) | 61 | Kirtonos the Herald, Scholomance | Enchant Bracer - Mana Regeneration |
+| Hands | [Hands of the Exalted Herald](https://www.wowhead.com/forever/item=12554) | 59 | Princess Moira Bronzebeard , Blackrock Depths | - |
+| Waist | [Whipvine Cord](https://www.wowhead.com/forever/item=18327) | 59 | Alzzin the Wildshaper, Dire Maul | - |
+| Legs | [Padre's Trousers](https://www.wowhead.com/forever/item=18386) | 61 | Illyanna Ravenoak, Dire Maul | Lesser Arcane Amalgamation |
 | Feet | [Mooncloth Boots](https://www.wowhead.com/forever/item=15802) | 56 | crafted | Enchant Boots - Spirit |
-| Finger 1 | [Warden's Signet of Resolve](https://www.wowhead.com/forever/item=275983) | 65 | - | - |
-| Finger 2 | [Jereman's Bauble](https://www.wowhead.com/forever/item=275738) | 61 | - | - |
-| Trinket 1 | [Serenity Field](https://www.wowhead.com/forever/item=272439) (effect not valued) | 65 | sold by Pix Xizzix | - |
-| Trinket 2 | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) | 57 | quest: Heroes of Old | - |
-| Main hand | [Sageblade](https://www.wowhead.com/forever/item=22383) | 64 | crafted | Enchant Weapon - Mighty Intellect |
-| Off hand | [Evergreen Shield](https://www.wowhead.com/forever/item=279262) | 65 | crafted | Enchant Shield - Superior Spirit |
+| Finger 1 | [Rosewine Circle](https://www.wowhead.com/forever/item=13178) | 60 | Urok Doomhowl, Blackrock Spire | - |
+| Finger 2 | [Ring of Demonic Guile](https://www.wowhead.com/forever/item=18314) | 59 | Alzzin the Wildshaper, Dire Maul | - |
+| Trinket 1 | [Burst of Knowledge](https://www.wowhead.com/forever/item=11832) (effect not valued) | 58 | Ambassador Flamelash, Blackrock Depths | - |
+| Trinket 2 | [Mindtap Talisman](https://www.wowhead.com/forever/item=18371) (effect not valued) | 61 | Magister Kalendris, Dire Maul | - |
+| Main hand | [Hammer of the Grand Crusader](https://www.wowhead.com/forever/item=18717) | 63 | Balnazzar, Stratholme | Enchant Weapon - Mighty Intellect |
 
-Not valued by the lab: Stamina 76, spell damage without healing 283, haste rating 0. Main hand + off-hand (0.0572) over a two-hander (0.0357); No wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled).
+Not valued by the lab: Stamina 46, spell damage without healing 166, haste rating 0. Two-hander (0.0683) over main hand + off-hand (0.0620); No wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled).
 
-Weights refreshed at the first set's stats chose a different set: refreshed / first = 0.9975 ± 0.0033 (the better one is kept).
+Weights refreshed at the first set's stats chose a different set: refreshed / first = 1.0066 ± 0.0035 (the better one is kept).
 
 #### BiS (phase 1): `_reference/data/raidsim/gear_sets/forever/tiers/paladin-holy-bis.gear.json`
 
@@ -57,24 +56,23 @@ Weights refreshed at the first set's stats chose a different set: refreshed / fi
 |---|---|---|---|---|
 | Head | [Living Crown](https://www.wowhead.com/forever/item=252561) | 61 | crafted | Lesser Arcane Amalgamation |
 | Neck | [Wavefront Necklace](https://www.wowhead.com/forever/item=20685) | 65 | Lord Skwol, Silithus | - |
-| Shoulder | [Ironfeather Shoulders](https://www.wowhead.com/forever/item=15067) (Ironfeather Armor: set bonus not valued) | 54 | crafted | - |
+| Shoulder | [Wildheart Spaulders](https://www.wowhead.com/forever/item=16718) (Wildheart Raiment: set bonus not valued) | 60 | Gizrul the Slavener, Blackrock Spire | - |
 | Back | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) | 62 | crafted | - |
 | Chest | [Breastplate of Salvation](https://www.wowhead.com/forever/item=250601) | 61 | crafted | Enchant Chest - Major Intellect |
 | Wrist | [Flarecore Wraps](https://www.wowhead.com/forever/item=18263) | 64 | crafted | Enchant Bracer - Healing Power |
-| Hands | [Mooncloth Gloves](https://www.wowhead.com/forever/item=18409) | 62 | crafted | - |
+| Hands | [Hands of the Exalted Herald](https://www.wowhead.com/forever/item=12554) | 59 | Princess Moira Bronzebeard , Blackrock Depths | - |
 | Waist | [Corehound Belt](https://www.wowhead.com/forever/item=19162) | 70 | crafted | - |
 | Legs | [Martyr's Legplates](https://www.wowhead.com/forever/item=250600) | 61 | crafted | Lesser Arcane Amalgamation |
 | Feet | [Mooncloth Boots](https://www.wowhead.com/forever/item=15802) | 56 | crafted | Enchant Boots - Spirit |
 | Finger 1 | [Cauterizing Band](https://www.wowhead.com/forever/item=19140) | 71 | Majordomo Executus, Molten Core | - |
 | Finger 2 | [Band of Sulfuras](https://www.wowhead.com/forever/item=19138) | 78 | Ragnaros, Molten Core | - |
-| Trinket 1 | [Serenity Field](https://www.wowhead.com/forever/item=272439) (effect not valued) | 65 | sold by Pix Xizzix | - |
-| Trinket 2 | [Shard of the Splithooves](https://www.wowhead.com/forever/item=10659) | 57 | quest: Heroes of Old | - |
-| Main hand | [Sageblade](https://www.wowhead.com/forever/item=22383) | 64 | crafted | Enchant Weapon - Mighty Intellect |
-| Off hand | [Evergreen Shield](https://www.wowhead.com/forever/item=279262) | 65 | crafted | Enchant Shield - Superior Spirit |
+| Trinket 1 | [Burst of Knowledge](https://www.wowhead.com/forever/item=11832) (effect not valued) | 58 | Ambassador Flamelash, Blackrock Depths | - |
+| Trinket 2 | [Mindtap Talisman](https://www.wowhead.com/forever/item=18371) (effect not valued) | 61 | Magister Kalendris, Dire Maul | - |
+| Main hand | [Hammer of the Grand Crusader](https://www.wowhead.com/forever/item=18717) | 63 | Balnazzar, Stratholme | Enchant Weapon - Healing Power |
 
-Not valued by the lab: Stamina 74, spell damage without healing 280, haste rating 0. Main hand + off-hand (0.0636) over a two-hander (0.0406); No wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled).
+Not valued by the lab: Stamina 54, spell damage without healing 219, haste rating 0. Two-hander (0.0729) over main hand + off-hand (0.0661); No wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled).
 
-Weights refreshed at the first set's stats chose a different set: refreshed / first = 1.0002 ± 0.0026 (the better one is kept).
+Weights refreshed at the first set's stats chose a different set: refreshed / first = 0.9971 ± 0.0030 (the better one is kept).
 
 ## Assumptions
 

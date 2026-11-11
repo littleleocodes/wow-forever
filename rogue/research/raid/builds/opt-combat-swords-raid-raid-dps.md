@@ -58,17 +58,17 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
 
 ## Rank among our builds and the community simulator's
 
-**5 of 7** for `combat-swords-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**5 of 7** for `combat-swords-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Subtlety Hemo* | community simulator | - | 474 | +0.0% | 789 | +0.0% | 0 s |
-| 2 | *Combat Venom* | community simulator | - | 408 | -13.8% | 778 | -1.4% | 0 s |
-| 3 | *Combat SS* | community simulator | - | 371 | -21.8% | 745 | -5.5% | 0 s |
-| 4 | *Combat BS* | community simulator | - | 359 | -24.3% | 722 | -8.5% | 0 s |
-| 5 | **[`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md)** | ours: optimizer | 21/30/0 | 349 | -26.4% | 693 | -12.1% | 0 s |
-| 6 | [`combat-swords-raid`](combat-swords-raid.md) | ours: hand draft | 21/30/0 | 335 | -29.3% | 675 | -14.4% | 0 s |
-| 7 | *Asn Muti* | community simulator | - | 144 | -69.7% | 284 | -64.0% | 0 s |
+| 1 | *Subtlety Hemo* | community simulator | - | 480 | +0.0% | 803 | +0.0% | 0 s |
+| 2 | *Combat Venom* | community simulator | - | 416 | -13.3% | 794 | -1.2% | 0 s |
+| 3 | *Combat SS* | community simulator | - | 377 | -21.4% | 761 | -5.3% | 0 s |
+| 4 | *Combat BS* | community simulator | - | 366 | -23.9% | 737 | -8.3% | 0 s |
+| 5 | **[`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md)** | ours: optimizer | 21/30/0 | 356 | -25.9% | 709 | -11.8% | 0 s |
+| 6 | [`combat-swords-raid`](combat-swords-raid.md) | ours: hand draft | 21/30/0 | 341 | -28.9% | 690 | -14.1% | 0 s |
+| 7 | *Asn Muti* | community simulator | - | 148 | -69.3% | 292 | -63.6% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -111,8 +111,8 @@ Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: i
 | 9 | if (not Blade Flurry is known or Blade Flurry is up): cast OffensivePotion | as ready |
 | 10 | if (energy ≤ 15 and not talentIsKnown or Eureka! is known and energy ≤ 25 and energy ≤ 25 or energy ≤ 25 and Death Mark is on the target) and (combo points < 3 or variableRef or Eureka! is up): cast Thistle Tea | as ready |
 | 11 | if variableRef and variableRef and not variableRef and not variableRef: cast Slice and Dice | 3.3 |
-| 12 | if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not variableRef or combo points ≥ 3 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8) | 3.2 |
-| 13 | if not Mutilate is known and not Hemorrhage is known and not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef: cast Sinister Strike | 16.1 |
+| 12 | if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not variableRef or combo points ≥ 3 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8) | 3.3 |
+| 13 | if not Mutilate is known and not Hemorrhage is known and not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef: cast Sinister Strike | 16.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Ambush, cast Blood Fury, cast Elune's Light, cast Eureka!, cast Rupture, cast Backstab (rank 8) (its condition never held in these fights); cast Preparation (needs the Preparation talent); cast Adrenaline Rush, strict sequence: cast Blood Fury; cast Adrenaline Rush, strict sequence: cast Elune's Light; cast Adrenaline Rush (needs the Adrenaline Rush talent); cast Premeditation (needs the Premeditation talent); cast Death Mark (needs the Death Mark talent); cast Cold Blood (needs the Cold Blood talent); cast Ghostly Strike (needs the Ghostly Strike talent); cast Hemorrhage (needs the Hemorrhage talent); cast Mutilate (needs the Mutilate talent).
 
@@ -122,7 +122,7 @@ Damage by ability:
 |---|---|
 | Auto Attack | 44% |
 | Sinister Strike | 21% |
-| Eviscerate | 14% |
+| Eviscerate | 13% |
 | spell 25349 | 9% |
 | spell 11337 | 8% |
 | Goblin Sapper Charge | 2% |

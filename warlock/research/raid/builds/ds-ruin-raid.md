@@ -67,18 +67,18 @@ Allocation adopted on 2026-09-26 from `opt-sb-raid-raid-dps`, the best build in 
 
 ## Rank among our builds and the community simulator's
 
-**3 of 8** for `sb-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 8** for `sb-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`destruction-ml-raid`](destruction-ml-raid.md) | ours: derived (ML search) | 9/11/31 | 716 | +0.0% | 811 | +0.0% | 0 s |
-| 2 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 688 | -3.9% | 777 | -4.1% | 0 s |
-| 3 | **[`ds-ruin-raid`](ds-ruin-raid.md)** | ours: hand draft | 22/11/18 | 688 | -4.0% | 779 | -3.9% | 0 s |
-| 4 | *SM/Ruin* | community simulator | - | 675 | -5.8% | 761 | -6.2% | 0 s |
-| 5 | *Destro* | community simulator | - | 657 | -8.2% | 732 | -9.8% | 0 s |
-| 6 | *Aff (Wrack)* | community simulator | - | 629 | -12.2% | 695 | -14.3% | 0 s |
-| 7 | *Demo (Shadow Brand)* | community simulator | - | 583 | -18.6% | 665 | -18.0% | 0 s |
-| 8 | *Demo (Fire Brand)* | community simulator | - | 569 | -20.5% | 637 | -21.4% | 0 s |
+| 1 | [`destruction-ml-raid`](destruction-ml-raid.md) | ours: derived (ML search) | 9/11/31 | 721 | +0.0% | 815 | +0.0% | 0 s |
+| 2 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 692 | -4.0% | 779 | -4.4% | 0 s |
+| 3 | **[`ds-ruin-raid`](ds-ruin-raid.md)** | ours: hand draft | 22/11/18 | 691 | -4.1% | 781 | -4.2% | 0 s |
+| 4 | *SM/Ruin* | community simulator | - | 678 | -5.9% | 762 | -6.5% | 0 s |
+| 5 | *Destro* | community simulator | - | 662 | -8.1% | 736 | -9.6% | 0 s |
+| 6 | *Aff (Wrack)* | community simulator | - | 631 | -12.5% | 697 | -14.5% | 0 s |
+| 7 | *Demo (Shadow Brand)* | community simulator | - | 586 | -18.7% | 665 | -18.3% | 0 s |
+| 8 | *Demo (Fire Brand)* | community simulator | - | 573 | -20.5% | 639 | -21.6% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -109,15 +109,16 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
-| 6 | if mana % < 10%: cast Life Tap | 7.6 |
+| 6 | if mana % < 10%: cast Life Tap | 7.5 |
 | 7 | cast Amplify Curse | 0.7 |
 | 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
 | 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 |
 | 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
 | 11 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
-| 12 | cast Shadow Bolt (rank 9) | 14.0 |
+| 12 | cast Eureka! | 0.7 |
+| 13 | cast Shadow Bolt (rank 9) | 14.1 |
 
-Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Conflagrate (needs the Conflagrate talent); cast Eureka! (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Conflagrate (needs the Conflagrate talent).
 
 Damage by ability:
 
@@ -126,7 +127,7 @@ Damage by ability:
 | Shadow Bolt | 51% |
 | Bane of Agony | 19% |
 | Corruption | 17% |
-| Immolate | 10% |
+| Immolate | 11% |
 | Demonic Rune | 1% |
 | Searing Pain | 0% |
 

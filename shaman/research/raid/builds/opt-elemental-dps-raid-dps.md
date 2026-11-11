@@ -59,16 +59,16 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `elementa
 
 ## Rank among our builds and the community simulator's
 
-**3 of 6** for `elemental-dps` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 6** for `elemental-dps` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`elemental-ml-raid`](elemental-ml-raid.md) | ours: derived (ML search) | 31/11/9 | 592 | +0.0% | 758 | +0.0% | 1 s |
-| 2 | *Standard* | community simulator | - | 592 | -0.0% | 758 | -0.0% | 1 s |
-| 3 | **[`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md)** | ours: optimizer | 31/11/9 | 586 | -1.1% | 757 | -0.2% | 4 s |
-| 4 | [`elemental-raid-dps`](elemental-raid-dps.md) | ours: hand draft | 29/22/0 | 562 | -5.1% | 752 | -0.9% | 12 s |
-| 5 | *Mana Tide* | community simulator | - | 561 | -5.3% | 736 | -3.0% | 10 s |
-| 6 | [`elemental-raid`](elemental-raid.md) | ours: generated | 30/8/13 | 560 | -5.4% | 732 | -3.4% | 9 s |
+| 1 | [`elemental-ml-raid`](elemental-ml-raid.md) | ours: derived (ML search) | 31/11/9 | 599 | +0.0% | 776 | +0.0% | 3 s |
+| 2 | *Standard* | community simulator | - | 599 | -0.1% | 776 | -0.0% | 3 s |
+| 3 | **[`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md)** | ours: optimizer | 31/11/9 | 590 | -1.6% | 775 | -0.2% | 7 s |
+| 4 | [`elemental-raid-dps`](elemental-raid-dps.md) | ours: hand draft | 29/22/0 | 562 | -6.2% | 762 | -1.8% | 15 s |
+| 5 | [`elemental-raid`](elemental-raid.md) | ours: generated | 30/8/13 | 562 | -6.2% | 749 | -3.4% | 13 s |
+| 6 | *Mana Tide* | community simulator | - | 561 | -6.5% | 754 | -2.9% | 14 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -77,7 +77,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `elementa
   2. only with 20s or more of the fight left: if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem (+0.5%, pass 1)
   3. always rank 8 instead of rank 10: if mana ≥ (time left in the fight × 35): cast Lightning Bolt (+0.3%, pass 1)
   4. always rank 7 instead of rank 8: if mana ≥ (time left in the fight × 35): cast Lightning Bolt + threshold 35 -> 26.25: if mana ≥ (time left in the fight × 35): cast Lightning Bolt (+0.2%, pass 1)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 15 passes, the last 2026-11-07, 12 changes to the base rotation; third-seed check: opt-elemental-dps-raid-dps 748 -> 756 DPS (+1.1%), sim preset: Standard 749 -> 758 DPS (+1.2%), elemental-raid-dps 750 -> 751 DPS (+0.2%), elemental-raid 729 -> 733 DPS (+0.5%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 16 passes, the last 2026-11-11, 12 changes to the base rotation; third-seed check: elemental-ml-raid 768 -> 777 DPS (+1.1%), sim preset: Standard 767 -> 776 DPS (+1.1%), elemental-raid-dps 763 -> 762 DPS (-0.1%), opt-elemental-dps-raid-dps 766 -> 774 DPS (+0.9%), elemental-raid 747 -> 750 DPS (+0.4%)):
   1. only with 10s or more of the fight left: if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem (+0.5%, pass 1)
   2. always rank 2 instead of rank 4: cast Lightning Bolt (+0.4%, pass 1)
   3. threshold 100 -> 200: if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning (+0.2%, pass 2)
@@ -99,8 +99,8 @@ Before the pull: at -2s: cast Lightning Bolt.
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if not Flame Shock is on the target: cast Flame Shock | 3.0 |
 | 4 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 2.4 |
-| 5 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt (rank 8) | 24.8 |
-| 6 | cast Lightning Bolt (rank 8) | 24.8 |
+| 5 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt (rank 8) | 24.4 |
+| 6 | cast Lightning Bolt (rank 8) | 24.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Magma Totem, cast Lava Burst (its condition never held in these fights).
 

@@ -31,7 +31,7 @@ Total: **63.7 h** (29.2% faster than talentless), no respec.
   - at level 60: **Fury**: Cruelty 5, Unbridled Wrath 5, Enrage 5, Improved Execute 2, Dual Wield Specialization 5, Furious Precision 3, Death Wish 1, Flurry 3, Improved Whirlwind 2, Blood Craze 3, Bloodthirst 1, Gore Drinker 2, Improved Intercept 2, Improved Berserker Rage 1; **Arms**: Deflection 5, Improved Charge 2, Improved Tactical Mastery 3, Anger Management 1
   - order: 10-14 Cruelty x5, 15-19 Unbridled Wrath x5, 20-24 Enrage x5, 25-26 Improved Execute x2, 27 Dual Wield Specialization, 28 Furious Precision, 29 Dual Wield Specialization, 30 Death Wish, 31-33 Dual Wield Specialization x3, 34 Furious Precision, 35 Flurry, 36-37 Improved Whirlwind x2, 38 Flurry, 39 Blood Craze, 40 Bloodthirst, 41-42 Blood Craze x2, 43-44 Gore Drinker x2, 45 Furious Precision, 46 Flurry, 47-48 Improved Intercept x2, 49-53 Deflection x5, 54-55 Improved Charge x2, 56-58 Improved Tactical Mastery x3, 59 Anger Management, 60 Improved Berserker Rage
 
-Total: **64.7 h** (28.1% faster than talentless), no respec.
+Total: **65.3 h** (27.4% faster than talentless), no respec.
 
 ## Never respec: best single plan
 
@@ -41,12 +41,12 @@ Total: **64.7 h** (28.1% faster than talentless), no respec.
 | arms-2h-raid -> level-60 build (33/18/0) | 63.7 | +0.1 h |
 | arms-2h-raid -> level-50 build (36/5/0) | 63.9 | +0.3 h |
 | arms-2h-raid -> level-30 build (19/2/0) | 64.7 | +1.0 h |
-| fury-dw-raid -> level-40 build (0/31/0) | 64.7 | +1.1 h |
-| fury-dw-raid -> level-30 build (0/21/0) | 64.7 | +1.1 h |
-| fury-dw-raid -> level-50 build (2/39/0) | 64.7 | +1.1 h |
-| fury-dw-raid -> level-60 build (11/40/0) | 64.7 | +1.1 h |
-| fury-dw-raid -> level-20 build (0/11/0) | 64.7 | +1.1 h |
 | arms-2h-raid -> level-20 build (7/4/0) | 64.8 | +1.1 h |
+| fury-dw-raid -> level-40 build (0/31/0) | 65.3 | +1.6 h |
+| fury-dw-raid -> level-30 build (0/21/0) | 65.3 | +1.7 h |
+| fury-dw-raid -> level-50 build (2/39/0) | 65.3 | +1.7 h |
+| fury-dw-raid -> level-60 build (11/40/0) | 65.3 | +1.7 h |
+| fury-dw-raid -> level-20 build (0/11/0) | 65.3 | +1.7 h |
 
 ## Leveling score by level (fraction of time per kill saved)
 

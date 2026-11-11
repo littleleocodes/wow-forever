@@ -60,14 +60,14 @@ A Frostfire Bolt build the user brought on 2026-10-06 (talentsforever.com link):
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 7/31/13 | 470 | +0.0% | 716 | -9.6% | 29 s |
-| 2 | **[`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md)** | ours: hand draft | 0/29/22 | 459 | -2.5% | 776 | -2.2% | 36 s |
-| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 0/29/22 | 455 | -3.4% | 785 | -1.0% | 38 s |
-| 4 | *FFB* | community simulator | - | 442 | -6.0% | 793 | +0.0% | 44 s |
+| 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 7/31/13 | 470 | +0.0% | 701 | -9.7% | 23 s |
+| 2 | **[`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md)** | ours: hand draft | 0/29/22 | 460 | -2.0% | 762 | -1.9% | 30 s |
+| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 0/29/22 | 456 | -2.8% | 772 | -0.7% | 32 s |
+| 4 | *FFB* | community simulator | - | 445 | -5.3% | 777 | +0.0% | 39 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -131,19 +131,19 @@ A Frostfire Bolt build the user brought on 2026-10-06 (talentsforever.com link):
 
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) casts/min |
 |---|---|---|
-| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 8.0 |
-| 2 | cast Fire Blast | 4.6 |
-| 3 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 8.0 |
+| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 7.8 |
+| 2 | cast Fire Blast | 4.9 |
+| 3 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 7.8 |
 | 4 | if mana % ≤ 80%: cast Mana Ruby | as ready |
 | 5 | use every other cooldown when ready | as ready |
 | 6 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 7 | if stacks of Heating Up = 2: cast Pyroblast | 4.9 |
-| 8 | if stacks of Heating Up = 3: cast Pyroblast | 4.9 |
+| 7 | if stacks of Heating Up = 2: cast Pyroblast | 5.2 |
+| 8 | if stacks of Heating Up = 3: cast Pyroblast | 5.2 |
 | 9 | cast Mana Citrine | as ready |
-| 10 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 2.7 |
+| 10 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 2.8 |
 | 11 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 1.1 |
 | 12 | cast Robe of the Archmage | as ready |
-| 13 | cast Scorch | 8.0 |
+| 13 | cast Scorch | 7.8 |
 
 Lines of the simulator's rotation these builds never cast: cast Arcane Power (needs the Arcane Power talent); cast Berserking, cast Arcane Missiles (rank 7) (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent); cast Combustion (needs the Combustion talent).
 
@@ -151,9 +151,9 @@ Damage by ability:
 
 | Ability | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) |
 |---|---|
-| Pyroblast | 38% |
-| Scorch | 17% |
-| Fire Blast | 16% |
+| Pyroblast | 39% |
+| Fire Blast | 17% |
+| Scorch | 16% |
 | Frostfire Bolt | 12% |
 | Ignite | 10% |
 | Fireball | 6% |

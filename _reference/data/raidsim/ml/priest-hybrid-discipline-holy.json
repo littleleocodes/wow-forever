@@ -14,16 +14,86 @@
   "bis": {
    "entry": "smite-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-hybrid-discipline-holy-bis.gear.json",
-   "date": "2026-11-10",
-   "setting": "raid",
+   "date": "2026-11-11",
    "chosen": "all-slots",
-   "ilvl": 62.4,
+   "ilvl": 61.4,
    "trinkets": [
     "Talisman of Ephemeral Power",
     "Weakness Analyzer"
    ],
+   "trinket_screen": {
+    "Talisman of Ephemeral Power (18820)": 1.0257,
+    "Weakness Analyzer (272438)": 1.0164,
+    "Jewel of the Guard Captain (270225)": 1.0091,
+    "Eye of the Beast (13968)": 1.0071,
+    "Serenity Field (272439)": 1.0055,
+    "Second Wind (11819)": 1.0047,
+    "Everlook Delivery Bot (274760)": 1.0037,
+    "Frozen Heart of the Mountain (249469)": 1.0034,
+    "Smolderweb's Eye (13213)": 1.0031,
+    "Rune of the Guard Captain (19120)": 1.0022,
+    "Cleansed Vilebranch Medallion (270275)": 1.0022,
+    "Cannonball Runner (13382)": 1.0017,
+    "Burst of Knowledge (11832)": 1.0007,
+    "Alchemist's Stone (13503)": 1.0005,
+    "Shard of the Splithooves (10659)": 1.0005,
+    "Enriched Seal (271903)": 1.0003,
+    "Darkspear Voodoo Seal (272061)": 1.0003,
+    "Worgenbane Talisman (273643)": 1.0001,
+    "Lookie's Spyglass (273298)": 1.0,
+    "Roogug's Severed Head (274152)": 1.0,
+    "Dog Whistle (3456)": 1.0,
+    "Minor Recombobulator (4381)": 1.0,
+    "Gnomish Universal Remote (7506)": 1.0,
+    "Demon's Blood (10779)": 1.0,
+    "Force of Will (11810)": 1.0,
+    "Smoking Heart of the Mountain (11811)": 1.0,
+    "Hand of Justice (11815)": 1.0,
+    "Heart of the Scale (13164)": 1.0,
+    "Blackhand's Breadth (13965)": 1.0,
+    "Arcanite Dragonling (16022)": 1.0,
+    "Heart of Noxxion (17744)": 1.0,
+    "Vigilance Charm (18370)": 1.0,
+    "Counterattack Lodestone (18537)": 1.0,
+    "Gyrofreeze Ice Reflector (18634)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Hyper-Radiant Flame Reflector (18638)": 1.0,
+    "Ultra-Flash Shadow Reflector (18639)": 1.0,
+    "The Eye of Divinity (18646)": 1.0,
+    "The Eye of Shadow (18665)": 1.0,
+    "Essence of the Pure Flame (18815)": 1.0,
+    "Arena Grand Master (19024)": 1.0,
+    "Talisman of Arathor (20071)": 1.0,
+    "Defiler's Talisman (20072)": 1.0,
+    "Defiler's Talisman (21115)": 1.0,
+    "Defiler's Talisman (21116)": 1.0,
+    "Talisman of Arathor (21117)": 1.0,
+    "Talisman of Arathor (21118)": 1.0,
+    "Talisman of Arathor (21119)": 1.0,
+    "Defiler's Talisman (21120)": 1.0,
+    "Defender of the Timbermaw (21326)": 1.0,
+    "Heart of Wyrmthalak (22321)": 1.0,
+    "Molten Heart of the Mountain (249470)": 1.0,
+    "Dormant Heart of the Mountain (249473)": 1.0,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
+    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
+    "Gnomish Poultryizer (260824)": 1.0,
+    "Volunteer's Lucky Seal (271904)": 1.0,
+    "Volunteer's Lucky Seal (271906)": 1.0,
+    "Relentless Raider's Seal (272060)": 1.0,
+    "Relentless Raider's Seal (272062)": 1.0,
+    "Adaptive Combat Assistant (272437)": 1.0,
+    "Defender's Grip Stabilizer (272440)": 1.0,
+    "Cursed Murloc Eye (273840)": 1.0,
+    "Everlook Pathcarver (274759)": 1.0,
+    "Parachute-Priest Pager (274761)": 1.0,
+    "Enriched Seal (271905)": 0.9999,
+    "Darkspear Voodoo Seal (272059)": 0.9999,
+    "Mindtap Talisman (18371)": 0.9845
+   },
    "names": [
-    "Spellpower Goggles Xtreme Plus",
+    "Crimson Felt Hat",
     "Choker of the Fire Lord",
     "Argent Shoulders",
     "Arcanoweave Cloak",
@@ -32,55 +102,146 @@
     "Sandworm Skin Gloves",
     "Belt of the Archmage",
     "Flarecore Leggings",
-    "Sorcerer's Boots",
+    "Earthen Silk Slippers",
     "Ring of Spell Power",
     "Elemental Focus Band",
     "Talisman of Ephemeral Power",
     "Weakness Analyzer",
     "Sageclaw",
     "Orb of the Forgotten Seer",
-    "Brilliant Wand"
+    "Ritssyn's Wand of Bad Mojo"
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.028155640603898,
-    "keep-sets-and-effects": 1.028155640603898,
-    "previous": 1.028155640603898
+    "all-slots": 1.062215724174485,
+    "keep-sets-and-effects": 1.0268430460847888
    },
    "confirm_seed2": {
     "current": 1.0,
-    "all-slots": 1.027796397089449
+    "all-slots": 1.062080601616949
    },
    "weights": {
-    "StatCritRating": 0.2006,
-    "StatHasteRating": 0.2226,
-    "StatHitRating": 0.2341,
-    "StatHolyDamage": 0.3474,
-    "StatIntellect": 0.1081,
-    "StatShadowDamage": 0.153,
-    "StatSpellDamage": 0.5004,
-    "StatSpellPiercing": 0.2524,
-    "StatSpirit": 0.0309
+    "StatCritRating": 0.2021,
+    "StatHasteRating": 0.2682,
+    "StatHitRating": 0.1991,
+    "StatHolyDamage": 0.356,
+    "StatIntellect": 0.0994,
+    "StatShadowDamage": 0.1515,
+    "StatSpellDamage": 0.5075,
+    "StatSpellPiercing": 0.2535,
+    "StatSpirit": 0.0224
    },
    "evaluated_on": [
     "smite-dps: ml winner"
    ],
-   "commit": "16e85426c"
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Spellpower Goggles Xtreme Plus",
+     "to": "Crimson Felt Hat"
+    },
+    {
+     "slot": 9,
+     "from": "Sorcerer's Boots (not in the database)",
+     "to": "Earthen Silk Slippers"
+    },
+    {
+     "slot": 16,
+     "from": "Brilliant Wand",
+     "to": "Ritssyn's Wand of Bad Mojo"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever ff9babba5",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:22064"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 0.4
+   }
   },
   "bis2": true,
   "prebis": {
    "entry": "smite-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-hybrid-discipline-holy-prebis.gear.json",
-   "date": "2026-11-10",
-   "setting": "raid",
-   "chosen": "previous",
-   "ilvl": 59.9,
+   "date": "2026-11-11",
+   "chosen": "all-slots",
+   "ilvl": 59.1,
    "trinkets": [
     "Weakness Analyzer",
     "Jewel of the Guard Captain"
    ],
+   "trinket_screen": {
+    "Weakness Analyzer (272438)": 1.0169,
+    "Jewel of the Guard Captain (270225)": 1.0093,
+    "Eye of the Beast (13968)": 1.0073,
+    "Serenity Field (272439)": 1.0059,
+    "Second Wind (11819)": 1.0051,
+    "Everlook Delivery Bot (274760)": 1.0041,
+    "Frozen Heart of the Mountain (249469)": 1.0036,
+    "Smolderweb's Eye (13213)": 1.0033,
+    "Rune of the Guard Captain (19120)": 1.0023,
+    "Cleansed Vilebranch Medallion (270275)": 1.0023,
+    "Cannonball Runner (13382)": 1.0016,
+    "Alchemist's Stone (13503)": 1.0013,
+    "Burst of Knowledge (11832)": 1.0011,
+    "Shard of the Splithooves (10659)": 1.0006,
+    "Enriched Seal (271903)": 1.0004,
+    "Darkspear Voodoo Seal (272061)": 1.0004,
+    "Enriched Seal (271905)": 1.0003,
+    "Darkspear Voodoo Seal (272059)": 1.0003,
+    "Roogug's Severed Head (274152)": 1.0001,
+    "Worgenbane Talisman (273643)": 1.0,
+    "Dog Whistle (3456)": 1.0,
+    "Minor Recombobulator (4381)": 1.0,
+    "Gnomish Universal Remote (7506)": 1.0,
+    "Demon's Blood (10779)": 1.0,
+    "Force of Will (11810)": 1.0,
+    "Smoking Heart of the Mountain (11811)": 1.0,
+    "Hand of Justice (11815)": 1.0,
+    "Heart of the Scale (13164)": 1.0,
+    "Blackhand's Breadth (13965)": 1.0,
+    "Arcanite Dragonling (16022)": 1.0,
+    "Heart of Noxxion (17744)": 1.0,
+    "Vigilance Charm (18370)": 1.0,
+    "Counterattack Lodestone (18537)": 1.0,
+    "Gyrofreeze Ice Reflector (18634)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Hyper-Radiant Flame Reflector (18638)": 1.0,
+    "Ultra-Flash Shadow Reflector (18639)": 1.0,
+    "The Eye of Shadow (18665)": 1.0,
+    "Talisman of Arathor (20071)": 1.0,
+    "Defiler's Talisman (20072)": 1.0,
+    "Defiler's Talisman (21115)": 1.0,
+    "Defiler's Talisman (21116)": 1.0,
+    "Talisman of Arathor (21117)": 1.0,
+    "Talisman of Arathor (21118)": 1.0,
+    "Talisman of Arathor (21119)": 1.0,
+    "Defiler's Talisman (21120)": 1.0,
+    "Defender of the Timbermaw (21326)": 1.0,
+    "Heart of Wyrmthalak (22321)": 1.0,
+    "Molten Heart of the Mountain (249470)": 1.0,
+    "Dormant Heart of the Mountain (249473)": 1.0,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
+    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
+    "Gnomish Poultryizer (260824)": 1.0,
+    "Volunteer's Lucky Seal (271904)": 1.0,
+    "Volunteer's Lucky Seal (271906)": 1.0,
+    "Relentless Raider's Seal (272060)": 1.0,
+    "Relentless Raider's Seal (272062)": 1.0,
+    "Adaptive Combat Assistant (272437)": 1.0,
+    "Defender's Grip Stabilizer (272440)": 1.0,
+    "Cursed Murloc Eye (273840)": 1.0,
+    "Everlook Pathcarver (274759)": 1.0,
+    "Parachute-Priest Pager (274761)": 1.0,
+    "Lookie's Spyglass (273298)": 0.9999,
+    "Mindtap Talisman (18371)": 0.9862
+   },
    "names": [
-    "Spellpower Goggles Xtreme Plus",
+    "Crimson Felt Hat",
     "Orb of the Darkmoon",
     "Argent Shoulders",
     "Arcanoweave Cloak",
@@ -88,40 +249,70 @@
     "Rockfury Bracers",
     "Sandworm Skin Gloves",
     "Belt of the Archmage",
-    "Ghostweave Pants",
-    "Sorcerer's Boots",
+    "Skyshroud Leggings",
+    "Earthen Silk Slippers",
     "Elemental Focus Band",
     "Warden's Signet of Brilliance",
     "Weakness Analyzer",
     "Jewel of the Guard Captain",
     "Sageclaw",
     "Orb of the Forgotten Seer",
-    "Brilliant Wand"
+    "Ritssyn's Wand of Bad Mojo"
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9999672476473122,
-    "previous": 0.9999672476473122
+    "keep-sets-and-effects": 0.9740024627489798
    },
    "confirm_seed2": {
-    "previous": 1.0,
-    "all-slots": 0.9998488644404416
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.0265348947544584
    },
    "weights": {
-    "StatCritRating": 0.1993,
-    "StatHasteRating": 0.2783,
-    "StatHitRating": 0.2218,
-    "StatHolyDamage": 0.3559,
-    "StatIntellect": 0.0887,
-    "StatShadowDamage": 0.1521,
-    "StatSpellDamage": 0.508,
-    "StatSpellPiercing": 0.2431,
-    "StatSpirit": 0.015
+    "StatCritRating": 0.1961,
+    "StatHasteRating": 0.2531,
+    "StatHitRating": 0.2007,
+    "StatHolyDamage": 0.3573,
+    "StatIntellect": 0.0873,
+    "StatShadowDamage": 0.1523,
+    "StatSpellDamage": 0.5096,
+    "StatSpellPiercing": 0.2469,
+    "StatSpirit": 0.0048
    },
    "evaluated_on": [
     "smite-dps: ml winner (bis)"
    ],
-   "commit": "16e85426c"
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Spellpower Goggles Xtreme Plus",
+     "to": "Crimson Felt Hat"
+    },
+    {
+     "slot": 8,
+     "from": "Ghostweave Pants",
+     "to": "Skyshroud Leggings"
+    },
+    {
+     "slot": 9,
+     "from": "Sorcerer's Boots (not in the database)",
+     "to": "Earthen Silk Slippers"
+    },
+    {
+     "slot": 16,
+     "from": "Brilliant Wand",
+     "to": "Ritssyn's Wand of Bad Mojo"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever ff9babba5",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:22064"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 0.5
+   }
   }
  },
  "search": {

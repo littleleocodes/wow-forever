@@ -137,16 +137,16 @@
  "raid": {
   "class": "shaman",
   "spec": "elemental-dps",
-  "date": "2026-11-07",
-  "commit": "16e85426c",
+  "date": "2026-11-11",
+  "commit": "ff9babba5",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/shaman/elemental/apls/forever.apl.json",
   "start": "ui\\specs\\shaman\\elemental\\apls\\forever.apl.json",
   "builds": [
    {
-    "label": "opt-elemental-dps-raid-dps",
-    "talents": "5500331003011351-05500001-0522"
+    "label": "elemental-ml-raid",
+    "talents": "5503331000011351-05500001-0531"
    },
    {
     "label": "sim preset: Standard",
@@ -158,13 +158,18 @@
     "protect_only": true
    },
    {
+    "label": "opt-elemental-dps-raid-dps",
+    "talents": "5500331003011351-05500001-0522",
+    "protect_only": true
+   },
+   {
     "label": "elemental-raid",
     "talents": "550033100301135-053-05305",
     "protect_only": true
    }
   ],
   "tuned_on": [
-   "opt-elemental-dps-raid-dps",
+   "elemental-ml-raid",
    "sim preset: Standard"
   ],
   "iterations": 3000,
@@ -269,41 +274,50 @@
   ],
   "final": {
    "raid": {
-    "opt-elemental-dps-raid-dps": {
-     "before": 747.9328570240391,
-     "after": 756.3293650454065,
-     "base": 747.9328570240391,
+    "elemental-ml-raid": {
+     "before": 767.8394602372506,
+     "after": 776.5620832643397,
+     "base": 767.8394602372506,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.383385000011904,
-     "oom_after": 0.383385000011904
+     "oom_before": 0.39785500000875335,
+     "oom_after": 0.39785500000875335
     },
     "sim preset: Standard": {
-     "before": 748.8392666386382,
-     "after": 757.6783903060906,
-     "base": 748.8392666386382,
+     "before": 767.2259644147746,
+     "after": 775.544168902983,
+     "base": 767.2259644147746,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.1676750000050993,
-     "oom_after": 0.1676750000050993
+     "oom_before": 0.39901500000875406,
+     "oom_after": 0.39901500000875406
     },
     "elemental-raid-dps": {
-     "before": 749.5728641822783,
-     "after": 751.022542855456,
-     "base": 749.5728641822783,
+     "before": 762.9503344223657,
+     "after": 762.2528494322429,
+     "base": 762.9503344223657,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.4385349998926564,
-     "oom_after": 1.4385349998926564
+     "oom_before": 2.4311049998808643,
+     "oom_after": 2.4311049998808643
+    },
+    "opt-elemental-dps-raid-dps": {
+     "before": 766.3807199592231,
+     "after": 773.5196953888748,
+     "base": 766.3807199592231,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.8310700000263681,
+     "oom_after": 0.8310700000263681
     },
     "elemental-raid": {
-     "before": 728.8673133218733,
-     "after": 732.767954548294,
-     "base": 728.8673133218733,
+     "before": 746.6405691882073,
+     "after": 749.681568708587,
+     "base": 746.6405691882073,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.0562850000307107,
-     "oom_after": 1.0562850000307107
+     "oom_before": 1.4041700000278523,
+     "oom_after": 1.4041700000278523
     }
    }
   },
@@ -322,6 +336,6 @@
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 15
+  "passes": 16
  }
 }

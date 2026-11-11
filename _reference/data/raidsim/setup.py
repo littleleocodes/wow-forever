@@ -39,7 +39,7 @@ GAMES = {"forever": {"url": "https://github.com/wowsims/forever", "dir": "wowsim
                      # b90e2b9 (master 2026-10-30 23:28 +0100: the live client 1.60.1.70707 with hotfix pushes 113531 and 113554, every class
                      # but paladin and priest; trees from the live files) since 2026-10-30; 30f67f5 (10-22, 70450) and 09e7398 (10-18) before.
                      # Before 2026-10-18 the ElliotWood/Forever fork: b7083fa (70425) from 2026-10-16, 2ce8265 (70291) from 2026-10-09, b0f0df3, 40be98e
-                     "commit": "16e85426c43340f73f4f6ddc84938d4385890ea8"},
+                     "commit": "ff9babba5238325eff8bb74a742a2ca626804e60"},
          "classic": {"url": "https://github.com/wowsims/classic", "dir": "classic-repo", "module": "github.com/wowsims/classic", "bench": "classicbench",
                      "commit": "7779ebbf79dc7f1341e6ab939b28a3402c9a730a"}}
 

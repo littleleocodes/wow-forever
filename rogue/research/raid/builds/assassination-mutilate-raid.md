@@ -71,15 +71,15 @@ Seal Fate daggers with Vigor and Lethality: an Assassination Backstab build. It 
 
 ## Rank among our builds and the community simulator's
 
-**5 of 5** for `assassination-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**5 of 5** for `assassination-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Asn Muti* | community simulator | - | 443 | +0.0% | 811 | -0.1% | 0 s |
-| 2 | [`assassination-open-raid`](assassination-open-raid.md) | ours: derived (open search) | 31/19/1 | 442 | -0.2% | 813 | +0.0% | 0 s |
-| 3 | [`assassination-ml-raid`](assassination-ml-raid.md) | ours: derived (ML search) | 29/22/0 | 323 | -27.1% | 695 | -14.4% | 0 s |
-| 4 | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) | ours: hand draft | 28/21/2 | 314 | -29.1% | 687 | -15.4% | 0 s |
-| 5 | **[`assassination-mutilate-raid`](assassination-mutilate-raid.md)** | ours: hand draft | 29/22/0 | 309 | -30.2% | 678 | -16.5% | 0 s |
+| 1 | *Asn Muti* | community simulator | - | 451 | +0.0% | 838 | -0.1% | 0 s |
+| 2 | [`assassination-open-raid`](assassination-open-raid.md) | ours: derived (open search) | 31/19/1 | 450 | -0.2% | 839 | +0.0% | 0 s |
+| 3 | [`assassination-ml-raid`](assassination-ml-raid.md) | ours: derived (ML search) | 29/22/0 | 329 | -27.1% | 710 | -15.3% | 0 s |
+| 4 | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) | ours: hand draft | 28/21/2 | 319 | -29.2% | 701 | -16.4% | 0 s |
+| 5 | **[`assassination-mutilate-raid`](assassination-mutilate-raid.md)** | ours: hand draft | 29/22/0 | 315 | -30.2% | 691 | -17.6% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -124,7 +124,7 @@ Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: i
 | 10 | if variableRef and variableRef and not variableRef and not variableRef: cast Slice and Dice | 3.2 |
 | 11 | if combo points = 5 and not variableRef and energy ≥ current cost and not variableRef and not Elune's Light is up: cast Cold Blood | 0.3 |
 | 12 | if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not variableRef or combo points ≥ 3 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8) | 3.5 |
-| 13 | if not Mutilate is known and not Hemorrhage is known and not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef: cast Sinister Strike | 14.6 |
+| 13 | if not Mutilate is known and not Hemorrhage is known and not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef: cast Sinister Strike | 14.8 |
 
 Lines of the simulator's rotation these builds never cast: cast Ambush, cast Blood Fury, cast Elune's Light, cast Eureka!, cast Rupture, cast Backstab (rank 8) (its condition never held in these fights); cast Preparation (needs the Preparation talent); strict sequence: cast Blood Fury; cast Blade Flurry (needs the Blade Flurry talent); cast Adrenaline Rush, strict sequence: cast Blood Fury; cast Adrenaline Rush, strict sequence: cast Elune's Light; cast Adrenaline Rush (needs the Adrenaline Rush talent); cast Premeditation (needs the Premeditation talent); cast Death Mark (needs the Death Mark talent); cast Ghostly Strike (needs the Ghostly Strike talent); cast Hemorrhage (needs the Hemorrhage talent); cast Mutilate (needs the Mutilate talent).
 
@@ -133,8 +133,8 @@ Damage by ability:
 | Ability | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) |
 |---|---|
 | Auto Attack | 44% |
-| Eviscerate | 18% |
-| Sinister Strike | 17% |
+| Eviscerate | 17% |
+| Sinister Strike | 16% |
 | spell 25349 | 10% |
 | spell 11337 | 7% |
 | Goblin Sapper Charge | 2% |

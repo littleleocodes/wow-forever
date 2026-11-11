@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Fire raid build the open talent search found on 2026-11-10: every legal 51-point build with no tree rule, searched in the community simulator's fire-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +0.9% over fire-open-raid, the best of our builds in that rotation.
+The Fire raid build the open talent search found on 2026-11-11: every legal 51-point build with no tree rule, searched in the community simulator's fire-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +0.9% over fire-open-raid, the best of our builds in that rotation.
 
 ## Point allocation
 
@@ -62,21 +62,21 @@ The Fire raid build the open talent search found on 2026-11-10: every legal 51-p
 
 ## Rank among our builds and the community simulator's
 
-**1 of 11** for `fire-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 11** for `fire-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`fire-open-raid`](fire-open-raid.md)** | ours: derived (open search) | 17/31/3 | 581 | +0.0% | 869 | +0.0% | 4 s |
-| 2 | *Fire* | community simulator | - | 579 | -0.3% | 867 | -0.3% | 4 s |
-| 3 | *Fire Skyborne GT 180* | community simulator | - | 579 | -0.3% | 861 | -1.0% | 2 s |
-| 4 | *Fire Skyborne LT 180* | community simulator | - | 576 | -0.8% | 858 | -1.2% | 4 s |
-| 5 | [`fire-raid`](fire-raid.md) | ours: hand draft | 16/32/3 | 572 | -1.4% | 831 | -4.4% | 5 s |
-| 6 | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) | ours: optimizer | 18/31/2 | 566 | -2.4% | 827 | -4.9% | 1 s |
-| 7 | *FFB* | community simulator | - | 465 | -19.9% | 610 | -29.8% | 38 s |
-| 8 | *Arcane Fire* | community simulator | - | 405 | -30.2% | 580 | -33.3% | 1 s |
-| 9 | *Arcane* | community simulator | - | 357 | -38.6% | 430 | -50.5% | 1 s |
-| 10 | *Frost Incin* | community simulator | - | 322 | -44.5% | 365 | -58.0% | 0 s |
-| 11 | *Frost Med* | community simulator | - | 313 | -46.2% | 392 | -54.9% | 0 s |
+| 1 | **[`fire-open-raid`](fire-open-raid.md)** | ours: derived (open search) | 17/31/3 | 564 | +0.0% | 855 | +0.0% | 5 s |
+| 2 | *Fire Skyborne GT 180* | community simulator | - | 564 | -0.1% | 846 | -1.0% | 2 s |
+| 3 | *Fire* | community simulator | - | 563 | -0.3% | 853 | -0.3% | 5 s |
+| 4 | *Fire Skyborne LT 180* | community simulator | - | 560 | -0.8% | 845 | -1.2% | 5 s |
+| 5 | [`fire-raid`](fire-raid.md) | ours: hand draft | 16/32/3 | 555 | -1.7% | 819 | -4.2% | 6 s |
+| 6 | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) | ours: optimizer | 18/31/2 | 553 | -2.0% | 812 | -5.1% | 2 s |
+| 7 | *FFB* | community simulator | - | 464 | -17.7% | 604 | -29.4% | 33 s |
+| 8 | *Arcane Fire* | community simulator | - | 397 | -29.7% | 574 | -32.9% | 1 s |
+| 9 | *Arcane* | community simulator | - | 350 | -38.0% | 420 | -50.9% | 1 s |
+| 10 | *Frost Incin* | community simulator | - | 314 | -44.4% | 365 | -57.3% | 0 s |
+| 11 | *Frost Med* | community simulator | - | 307 | -45.6% | 384 | -55.2% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -93,7 +93,7 @@ The Fire raid build the open talent search found on 2026-11-10: every legal 51-p
   10. threshold 80% -> 60%: if mana % ≤ 80%: cast Mana Ruby (+1.4%, pass 5)
   11. insert at the end: cast Frost Blast (+0.5%, pass 5)
   12. only above 25% mana: if mana % ≤ 60%: cast Mana Ruby (+0.4%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 15 passes, the last 2026-11-10, 32 changes to the base rotation; third-seed check: fire-open-raid 687 -> 861 DPS (+25.2%), sim preset: Fire 691 -> 866 DPS (+25.4%), fire-raid 683 -> 830 DPS (+21.6%), opt-fire-raid-raid-dps 671 -> 827 DPS (+23.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 16 passes, the last 2026-11-11, 32 changes to the base rotation; third-seed check: fire-open-raid 678 -> 855 DPS (+26.0%), sim preset: Fire 677 -> 852 DPS (+25.9%), fire-raid 670 -> 819 DPS (+22.2%), opt-fire-raid-raid-dps 657 -> 812 DPS (+23.6%)):
   1. drop the condition: if mana ≥ (time left in the fight × 110): cast Fire Blast (+3.7%, pass 1)
   2. move to the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+2.5%, pass 1)
   3. drop: if mana % < 20% and time left in the fight > 25s: cast Evocation (+0.2%, pass 1)
@@ -136,7 +136,7 @@ The Fire raid build the open talent search found on 2026-11-10: every legal 51-p
 | 5 | if stacks of Heating Up = 3: cast Pyroblast | 5.3 |
 | 6 | cast Fire Blast | 5.8 |
 | 7 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 0.7 |
-| 8 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 5.6 |
+| 8 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 5.5 |
 | 9 | cast Robe of the Archmage | as ready |
 | 10 | cast Scorch | 6.6 |
 
@@ -147,7 +147,7 @@ Damage by ability:
 | Ability | [`fire-open-raid`](fire-open-raid.md) |
 |---|---|
 | Pyroblast | 33% |
-| Fireball | 24% |
+| Fireball | 23% |
 | Fire Blast | 17% |
 | Scorch | 12% |
 | Ignite | 10% |
@@ -161,8 +161,8 @@ Damage by ability:
 - The fire-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.
 - Sibling rotations tried on it (10,000 fights): frost-raid -47.3%, arcane-dps -24.8%, frostfire-raid -9.7%; none adopted.
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Wand Specialization, Improved Channeling.
-- Simulator numbers are the community's model of the beta (wowsims/forever 16e8542 (client 70790) with this project's patches), not in-game measurements.
-- 2026-11-10 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Channeling -> Arcane Resilience (survival); Improved Channeling -> Arcane Resilience (survival); Improved Channeling -> Arcane Resilience (survival). Net +0.00% on a third seed.
+- Simulator numbers are the community's model of the beta (wowsims/forever ff9babb (client 70888) with this project's patches), not in-game measurements.
+- 2026-11-11 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Channeling -> Arcane Resilience (survival); Improved Channeling -> Arcane Resilience (survival); Improved Channeling -> Arcane Resilience (survival). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 

@@ -76,14 +76,14 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
 
 ## Rank among our builds and the community simulator's
 
-**4 of 4** for `subtlety-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 4** for `subtlety-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`subtlety-ml-raid`](subtlety-ml-raid.md) | ours: derived (ML search) | 12/8/31 | 474 | +0.0% | 789 | -0.9% | 0 s |
-| 2 | *Subtlety Hemo* | community simulator | - | 474 | +0.0% | 789 | -0.9% | 0 s |
-| 3 | [`hybrid-assassination-subtlety-open-raid`](hybrid-assassination-subtlety-open-raid.md) | ours: derived (open search) | 27/2/22 | 455 | -3.9% | 796 | +0.0% | 0 s |
-| 4 | **[`subtlety-hemo-raid`](subtlety-hemo-raid.md)** | ours: hand draft | 21/0/30 | 356 | -24.9% | 639 | -19.7% | 0 s |
+| 1 | [`subtlety-ml-raid`](subtlety-ml-raid.md) | ours: derived (ML search) | 12/8/31 | 480 | +0.0% | 803 | -0.9% | 0 s |
+| 2 | *Subtlety Hemo* | community simulator | - | 480 | +0.0% | 803 | -0.9% | 0 s |
+| 3 | [`hybrid-assassination-subtlety-open-raid`](hybrid-assassination-subtlety-open-raid.md) | ours: derived (open search) | 27/2/22 | 462 | -3.9% | 811 | +0.0% | 0 s |
+| 4 | **[`subtlety-hemo-raid`](subtlety-hemo-raid.md)** | ours: hand draft | 21/0/30 | 359 | -25.2% | 651 | -19.8% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -142,7 +142,7 @@ Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: i
 | 5 | if not Vanish is ready: cast Preparation | 0.3 |
 | 6 | if Slice and Dice is up: use every other cooldown when ready | as ready |
 | 7 | groupReference | as ready |
-| 8 | if (variableRef and combo points ≤ 3 and energy ≤ 80 or not variableRef and energy ≤ 80): cast Shank | 5.8 |
+| 8 | if (variableRef and combo points ≤ 3 and energy ≤ 80 or not variableRef and energy ≤ 80): cast Shank | 5.7 |
 | 9 | if (not Blade Flurry is known or Blade Flurry is up): cast OffensivePotion | as ready |
 | 10 | if (energy ≤ 15 and not talentIsKnown or Eureka! is known and energy ≤ 25 and energy ≤ 25 or energy ≤ 25 and Death Mark is on the target) and (combo points < 3 or variableRef or Eureka! is up): cast Thistle Tea | as ready |
 | 11 | if combo points ≤ 3: cast Premeditation | 1.0 |
@@ -151,8 +151,8 @@ Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: i
 | 14 | if combo points = 5 and not variableRef and energy ≥ current cost and not variableRef and not Elune's Light is up: cast Cold Blood | 0.3 |
 | 15 | if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not variableRef or combo points ≥ 3 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8) | 1.6 |
 | 16 | if variableRef and (not in front of the target or variableRef) and time left on Garrote ≤ 4s: cast Ghostly Strike | 2.7 |
-| 17 | if variableRef and not Hemorrhage is up and variableRef: cast Hemorrhage | 10.0 |
-| 18 | if not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef and (time left on Garrote ≥ 8s or not talentIsKnown): cast Hemorrhage | 10.0 |
+| 17 | if variableRef and not Hemorrhage is up and variableRef: cast Hemorrhage | 10.1 |
+| 18 | if not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef and (time left on Garrote ≥ 8s or not talentIsKnown): cast Hemorrhage | 10.1 |
 
 Lines of the simulator's rotation these builds never cast: cast Ambush, cast Blood Fury, cast Elune's Light, cast Eureka!, cast Backstab (rank 8), cast Sinister Strike (its condition never held in these fights); strict sequence: cast Blood Fury; cast Blade Flurry (needs the Blade Flurry talent); cast Adrenaline Rush, strict sequence: cast Blood Fury; cast Adrenaline Rush, strict sequence: cast Elune's Light; cast Adrenaline Rush (needs the Adrenaline Rush talent); cast Death Mark (needs the Death Mark talent); cast Mutilate (needs the Mutilate talent).
 
@@ -160,9 +160,9 @@ Damage by ability:
 
 | Ability | [`subtlety-hemo-raid`](subtlety-hemo-raid.md) |
 |---|---|
-| Auto Attack | 33% |
+| Auto Attack | 34% |
 | Garrote | 17% |
-| Rupture | 15% |
+| Rupture | 14% |
 | Hemorrhage | 9% |
 | spell 25349 | 7% |
 | spell 11337 | 7% |

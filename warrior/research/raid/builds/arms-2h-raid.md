@@ -71,15 +71,15 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
 
 ## Rank among our builds and the community simulator's
 
-**3 of 5** for `arms-2h-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 5** for `arms-2h-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`fury-open-raid`](fury-open-raid.md) | ours: derived (open search) | 20/31/0 | 417 | +0.0% | 909 | +0.0% | 0 s |
-| 2 | [`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 417 | -0.0% | 900 | -1.0% | 0 s |
-| 3 | **[`arms-2h-raid`](arms-2h-raid.md)** | ours: hand draft | 19/32/0 | 405 | -2.8% | 886 | -2.5% | 0 s |
-| 4 | *Fury* | community simulator | - | 394 | -5.3% | 861 | -5.3% | 0 s |
-| 5 | *Arms* | community simulator | - | 332 | -20.3% | 720 | -20.8% | 0 s |
+| 1 | [`fury-open-raid`](fury-open-raid.md) | ours: derived (open search) | 20/31/0 | 426 | +0.0% | 865 | +0.0% | 0 s |
+| 2 | [`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 426 | -0.0% | 855 | -1.2% | 0 s |
+| 3 | **[`arms-2h-raid`](arms-2h-raid.md)** | ours: hand draft | 19/32/0 | 413 | -3.0% | 842 | -2.7% | 0 s |
+| 4 | *Fury* | community simulator | - | 403 | -5.4% | 820 | -5.3% | 0 s |
+| 5 | *Arms* | community simulator | - | 339 | -20.4% | 711 | -17.8% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -132,15 +132,15 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
 | 7 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
 | 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
 | 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
-| 10 | if stacks of Sunder Armor < 4 and not Expose Armor is up: cast Sunder Armor | 6.9 |
+| 10 | if stacks of Sunder Armor < 4 and not Expose Armor is up: cast Sunder Armor | 7.2 |
 | 11 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 12 | if (time left in the fight ≤ 25.5s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
 | 13 | cast Whirlwind | 4.8 |
 | 14 | cast Bloodthirst | 5.3 |
 | 15 | cast Death Wish | 0.3 |
 | 16 | cast Whirlwind | 4.8 |
-| 17 | if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring | 0.8 |
-| 18 | if stacks of Sunder Armor < 5: cast Sunder Armor | 6.9 |
+| 17 | if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring | 1.1 |
+| 18 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
@@ -148,12 +148,11 @@ Damage by ability:
 
 | Ability | [`arms-2h-raid`](arms-2h-raid.md) |
 |---|---|
-| Auto Attack | 44% |
-| Execute | 17% |
+| Auto Attack | 45% |
+| Execute | 16% |
 | Bloodthirst | 16% |
-| Whirlwind | 16% |
+| Whirlwind | 15% |
 | Deep Wound | 7% |
-| item 274759 | 1% |
 | Hamstring | 0% |
 
 ## Notes

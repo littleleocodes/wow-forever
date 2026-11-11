@@ -14,118 +14,331 @@
   "bis": {
    "entry": "subtlety-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-subtlety-bis.gear.json",
-   "date": "2026-11-10",
-   "setting": "raid",
+   "date": "2026-11-11",
    "chosen": "all-slots",
-   "ilvl": 62.4,
+   "ilvl": 62.2,
    "trinkets": [
-    "Adaptive Combat Assistant",
+    "Hand of Justice",
     "Rune of the Guard Captain"
    ],
+   "trinket_screen": {
+    "Hand of Justice (11815)": 1.0195,
+    "Counterattack Lodestone (18537)": 1.01,
+    "Rune of the Guard Captain (19120)": 1.0094,
+    "Cleansed Vilebranch Medallion (270275)": 1.0094,
+    "Blackhand's Breadth (13965)": 1.008,
+    "Adaptive Combat Assistant (272437)": 1.006,
+    "Molten Heart of the Mountain (249470)": 1.0058,
+    "Smolderweb's Eye (13213)": 1.005,
+    "Royal Seal of Eldre'Thalas (18465)": 1.005,
+    "Everlook Delivery Bot (274760)": 1.0049,
+    "Everlook Pathcarver (274759)": 1.0045,
+    "Frozen Heart of the Mountain (249469)": 1.0044,
+    "Jewel of the Guard Captain (270225)": 1.0041,
+    "Vigilance Charm (18370)": 1.0037,
+    "Cannonball Runner (13382)": 1.0033,
+    "Eye of the Beast (13968)": 1.0017,
+    "Weakness Analyzer (272438)": 1.0004,
+    "Dog Whistle (3456)": 1.0,
+    "Minor Recombobulator (4381)": 1.0,
+    "Gnomish Universal Remote (7506)": 1.0,
+    "Shard of the Splithooves (10659)": 1.0,
+    "Demon's Blood (10779)": 1.0,
+    "Force of Will (11810)": 1.0,
+    "Smoking Heart of the Mountain (11811)": 1.0,
+    "Second Wind (11819)": 1.0,
+    "Burst of Knowledge (11832)": 1.0,
+    "Heart of the Scale (13164)": 1.0,
+    "Alchemist's Stone (13503)": 1.0,
+    "Arcanite Dragonling (16022)": 1.0,
+    "Heart of Noxxion (17744)": 1.0,
+    "Mindtap Talisman (18371)": 1.0,
+    "Gyrofreeze Ice Reflector (18634)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Hyper-Radiant Flame Reflector (18638)": 1.0,
+    "Ultra-Flash Shadow Reflector (18639)": 1.0,
+    "The Eye of Shadow (18665)": 1.0,
+    "Essence of the Pure Flame (18815)": 1.0,
+    "Talisman of Ephemeral Power (18820)": 1.0,
+    "Arena Grand Master (19024)": 1.0,
+    "Talisman of Arathor (20071)": 1.0,
+    "Defiler's Talisman (20072)": 1.0,
+    "Defiler's Talisman (21115)": 1.0,
+    "Defiler's Talisman (21116)": 1.0,
+    "Talisman of Arathor (21117)": 1.0,
+    "Talisman of Arathor (21118)": 1.0,
+    "Talisman of Arathor (21119)": 1.0,
+    "Defiler's Talisman (21120)": 1.0,
+    "Defender of the Timbermaw (21326)": 1.0,
+    "Heart of Wyrmthalak (22321)": 1.0,
+    "Dormant Heart of the Mountain (249473)": 1.0,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
+    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
+    "Gnomish Poultryizer (260824)": 1.0,
+    "Enriched Seal (271903)": 1.0,
+    "Volunteer's Lucky Seal (271904)": 1.0,
+    "Enriched Seal (271905)": 1.0,
+    "Volunteer's Lucky Seal (271906)": 1.0,
+    "Darkspear Voodoo Seal (272059)": 1.0,
+    "Relentless Raider's Seal (272060)": 1.0,
+    "Darkspear Voodoo Seal (272061)": 1.0,
+    "Relentless Raider's Seal (272062)": 1.0,
+    "Serenity Field (272439)": 1.0,
+    "Defender's Grip Stabilizer (272440)": 1.0,
+    "Lookie's Spyglass (273298)": 1.0,
+    "Worgenbane Talisman (273643)": 1.0,
+    "Cursed Murloc Eye (273840)": 1.0,
+    "Roogug's Severed Head (274152)": 1.0,
+    "Parachute-Priest Pager (274761)": 1.0
+   },
    "names": [
-    "Darkmantle Cap",
+    "Outlaw's Collar",
     "Onyxia Tooth Pendant",
     "Theramore Pauldrons",
     "Earthweave Cloak",
     "Dawn Armor",
-    "Darkmantle Bracers",
+    "Bracers of the Eclipse",
     "Theramore Gloves",
     "Assassin's Waistguard",
     "Devilsaur Leggings",
     "Shadowcraft Boots",
     "Quick Strike Ring",
     "Warden's Signet of Ferocity",
-    "Adaptive Combat Assistant",
+    "Hand of Justice",
     "Rune of the Guard Captain",
     "Blackguard",
     "Ironwood Blade",
-    "Gryphonwing Long Bow"
+    "Satyr's Bow"
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.0007929381281468,
-    "keep-sets-and-effects": 1.0007929381281468,
-    "previous": 1.0007929381281468
+    "all-slots": 1.0011462530355886,
+    "keep-sets-and-effects": 1.0011462530355886
    },
    "confirm_seed2": {
     "current": 1.0,
-    "all-slots": 1.0007336450563133
+    "all-slots": 1.0008140201728994
    },
    "weights": {
-    "PseudoStatMainHandDps": 1.7964,
-    "PseudoStatOffHandDps": 0.5841,
-    "StatAgility": 0.4553,
-    "StatArmorPenetration": 0.0631,
-    "StatAttackPower": 0.2324,
-    "StatCritRating": 0.3887,
-    "StatExpertiseRating": 0.6197,
-    "StatHasteRating": 0.2976,
-    "StatHitRating": 0.4713,
-    "StatSpellPiercing": 0.0693,
-    "StatStrength": 0.2556
+    "PseudoStatMainHandDps": 1.9688,
+    "PseudoStatOffHandDps": 0.6231,
+    "StatAgility": 0.5359,
+    "StatArmorPenetration": 0.0647,
+    "StatAttackPower": 0.2638,
+    "StatCritRating": 0.4772,
+    "StatExpertiseRating": 0.6264,
+    "StatHasteRating": 0.254,
+    "StatHitRating": 0.5577,
+    "StatSpellPiercing": 0.0579,
+    "StatStrength": 0.2902
    },
    "evaluated_on": [
     "subtlety-raid: ml winner"
    ],
-   "commit": "16e85426c"
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Darkmantle Cap (not in the database)",
+     "to": "Outlaw's Collar"
+    },
+    {
+     "slot": 5,
+     "from": "Darkmantle Bracers (not in the database)",
+     "to": "Bracers of the Eclipse"
+    },
+    {
+     "slot": 12,
+     "from": "Adaptive Combat Assistant",
+     "to": "Hand of Justice"
+    },
+    {
+     "slot": 16,
+     "from": "Gryphonwing Long Bow",
+     "to": "Satyr's Bow"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever ff9babba5",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:22005",
+     "item:22004"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 1.5
+   }
   },
   "bis2": true,
   "prebis": {
    "entry": "subtlety-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-subtlety-prebis.gear.json",
-   "date": "2026-11-10",
-   "setting": "raid",
+   "date": "2026-11-11",
    "chosen": "all-slots",
-   "ilvl": 61.6,
+   "ilvl": 61.7,
    "trinkets": [
-    "Adaptive Combat Assistant",
+    "Hand of Justice",
     "Rune of the Guard Captain"
    ],
+   "trinket_screen": {
+    "Hand of Justice (11815)": 1.0201,
+    "Counterattack Lodestone (18537)": 1.0099,
+    "Rune of the Guard Captain (19120)": 1.0088,
+    "Cleansed Vilebranch Medallion (270275)": 1.0088,
+    "Blackhand's Breadth (13965)": 1.0082,
+    "Adaptive Combat Assistant (272437)": 1.0077,
+    "Smolderweb's Eye (13213)": 1.0065,
+    "Royal Seal of Eldre'Thalas (18465)": 1.0065,
+    "Frozen Heart of the Mountain (249469)": 1.0057,
+    "Everlook Pathcarver (274759)": 1.0054,
+    "Molten Heart of the Mountain (249470)": 1.0053,
+    "Jewel of the Guard Captain (270225)": 1.0043,
+    "Vigilance Charm (18370)": 1.0036,
+    "Cannonball Runner (13382)": 1.0026,
+    "Everlook Delivery Bot (274760)": 1.0025,
+    "Eye of the Beast (13968)": 1.0017,
+    "Weakness Analyzer (272438)": 1.0004,
+    "Dog Whistle (3456)": 1.0,
+    "Minor Recombobulator (4381)": 1.0,
+    "Gnomish Universal Remote (7506)": 1.0,
+    "Shard of the Splithooves (10659)": 1.0,
+    "Demon's Blood (10779)": 1.0,
+    "Force of Will (11810)": 1.0,
+    "Smoking Heart of the Mountain (11811)": 1.0,
+    "Second Wind (11819)": 1.0,
+    "Burst of Knowledge (11832)": 1.0,
+    "Heart of the Scale (13164)": 1.0,
+    "Alchemist's Stone (13503)": 1.0,
+    "Arcanite Dragonling (16022)": 1.0,
+    "Heart of Noxxion (17744)": 1.0,
+    "Mindtap Talisman (18371)": 1.0,
+    "Gyrofreeze Ice Reflector (18634)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Hyper-Radiant Flame Reflector (18638)": 1.0,
+    "Ultra-Flash Shadow Reflector (18639)": 1.0,
+    "The Eye of Shadow (18665)": 1.0,
+    "Talisman of Arathor (20071)": 1.0,
+    "Defiler's Talisman (20072)": 1.0,
+    "Defiler's Talisman (21115)": 1.0,
+    "Defiler's Talisman (21116)": 1.0,
+    "Talisman of Arathor (21117)": 1.0,
+    "Talisman of Arathor (21118)": 1.0,
+    "Talisman of Arathor (21119)": 1.0,
+    "Defiler's Talisman (21120)": 1.0,
+    "Defender of the Timbermaw (21326)": 1.0,
+    "Heart of Wyrmthalak (22321)": 1.0,
+    "Dormant Heart of the Mountain (249473)": 1.0,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
+    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
+    "Gnomish Poultryizer (260824)": 1.0,
+    "Enriched Seal (271903)": 1.0,
+    "Volunteer's Lucky Seal (271904)": 1.0,
+    "Enriched Seal (271905)": 1.0,
+    "Volunteer's Lucky Seal (271906)": 1.0,
+    "Darkspear Voodoo Seal (272059)": 1.0,
+    "Relentless Raider's Seal (272060)": 1.0,
+    "Darkspear Voodoo Seal (272061)": 1.0,
+    "Relentless Raider's Seal (272062)": 1.0,
+    "Serenity Field (272439)": 1.0,
+    "Defender's Grip Stabilizer (272440)": 1.0,
+    "Lookie's Spyglass (273298)": 1.0,
+    "Worgenbane Talisman (273643)": 1.0,
+    "Cursed Murloc Eye (273840)": 1.0,
+    "Roogug's Severed Head (274152)": 1.0,
+    "Parachute-Priest Pager (274761)": 1.0
+   },
    "names": [
-    "Darkmantle Cap",
-    "Amulet of the Darkmoon",
+    "Outlaw's Collar",
+    "Mark of Fordring",
     "Theramore Pauldrons",
-    "Earthweave Cloak",
+    "Cape of the Black Baron",
     "Dawn Armor",
-    "Shadowcraft Bracers",
+    "Bracers of the Eclipse",
     "Theramore Gloves",
     "Assassin's Waistguard",
     "Devilsaur Leggings",
     "Dunestalker's Boots",
     "Warden's Signet of Ferocity",
     "Cutthroat's Signet",
-    "Adaptive Combat Assistant",
+    "Hand of Justice",
     "Rune of the Guard Captain",
     "Ironwood Blade",
-    "Frostguard",
-    "Gryphonwing Long Bow"
+    "Fiendish Machete",
+    "Riphook"
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9996674082117415,
-    "previous": 0.9996674082117415
+    "keep-sets-and-effects": 0.99930707704994
    },
    "confirm_seed2": {
-    "previous": 1.0,
-    "all-slots": 1.0004405052918763
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.0005663274205645
    },
    "weights": {
-    "PseudoStatMainHandDps": 2.1206,
-    "PseudoStatOffHandDps": 0.6411,
-    "StatAgility": 0.5225,
-    "StatArmorPenetration": 0.0632,
-    "StatAttackPower": 0.2623,
-    "StatCritRating": 0.456,
-    "StatExpertiseRating": 0.561,
-    "StatHasteRating": 0.3736,
-    "StatHitRating": 0.4817,
-    "StatSpellPiercing": 0.0473,
-    "StatStrength": 0.2885
+    "PseudoStatMainHandDps": 2.1766,
+    "PseudoStatOffHandDps": 0.6221,
+    "StatAgility": 0.5328,
+    "StatArmorPenetration": 0.0656,
+    "StatAttackPower": 0.2656,
+    "StatCritRating": 0.4758,
+    "StatExpertiseRating": 0.556,
+    "StatHasteRating": 0.2352,
+    "StatHitRating": 0.4675,
+    "StatSpellPiercing": 0.0501,
+    "StatStrength": 0.2922
    },
    "evaluated_on": [
     "subtlety-raid: ml winner (bis)"
    ],
-   "commit": "16e85426c"
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Darkmantle Cap (not in the database)",
+     "to": "Outlaw's Collar"
+    },
+    {
+     "slot": 1,
+     "from": "Amulet of the Darkmoon",
+     "to": "Mark of Fordring"
+    },
+    {
+     "slot": 3,
+     "from": "Earthweave Cloak",
+     "to": "Cape of the Black Baron"
+    },
+    {
+     "slot": 5,
+     "from": "Shadowcraft Bracers",
+     "to": "Bracers of the Eclipse"
+    },
+    {
+     "slot": 12,
+     "from": "Adaptive Combat Assistant",
+     "to": "Hand of Justice"
+    },
+    {
+     "slot": 15,
+     "from": "Frostguard",
+     "to": "Fiendish Machete"
+    },
+    {
+     "slot": 16,
+     "from": "Gryphonwing Long Bow",
+     "to": "Riphook"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever ff9babba5",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:22005"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 1.4
+   }
   }
  },
  "search": {

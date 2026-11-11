@@ -72,13 +72,13 @@ Destruction to Incinerate, the Forever capstone (Fire damage, +25% on a target w
 
 ## Rank among our builds and the community simulator's
 
-**2 of 3** for `incinerate-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 3** for `incinerate-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`destruction-incinerate-open-raid`](destruction-incinerate-open-raid.md) | ours: derived (open search) | 10/11/30 | 699 | +0.0% | 789 | +0.0% | 1 s |
-| 2 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 672 | -3.9% | 750 | -5.0% | 1 s |
-| 3 | *Destro* | community simulator | - | 635 | -9.2% | 708 | -10.2% | 1 s |
+| 1 | [`destruction-incinerate-open-raid`](destruction-incinerate-open-raid.md) | ours: derived (open search) | 10/11/30 | 703 | +0.0% | 793 | +0.0% | 1 s |
+| 2 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 676 | -3.8% | 755 | -4.8% | 1 s |
+| 3 | *Destro* | community simulator | - | 639 | -9.0% | 712 | -10.1% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -110,8 +110,8 @@ Before the pull: at -1.5s: cast Life Tap.
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
 | 5 | if time left in the fight ≤ 3.938: cast Searing Pain | 0.5 |
-| 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
-| 7 | if mana % < 10%: cast Life Tap | 7.3 |
+| 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 |
+| 7 | if mana % < 10%: cast Life Tap | 7.2 |
 | 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
 | 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
 | 10 | if Immolate is on the target: cast Conflagrate | 4.0 |

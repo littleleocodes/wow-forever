@@ -3,29 +3,28 @@
  "spec": "frost-raid",
  "build": "arcane-frost-open-raid",
  "setting": "raid",
- "date": "2026-11-10",
+ "date": "2026-11-11",
  "tank": false,
  "removal": {
-  "Accelerant": 0.03061971760739135,
-  "Arcane Blast": 0.11299769611809096,
-  "Arcane Concentration": 0.0008106399141553089,
+  "Accelerant": 0.031703078861757494,
+  "Arcane Blast": 0.11813936728093122,
+  "Arcane Concentration": 0.00270520046499112,
   "Arcane Geometry": -0.0,
-  "Arcane Impact": 0.03180755389493595,
-  "Arcane Instability": 0.05213255200567579,
-  "Arcane Mind": 0.09126574264039389,
+  "Arcane Impact": 0.03254327640291432,
+  "Arcane Instability": 0.051900582552208196,
+  "Arcane Mind": 0.09119326204927936,
   "Arcane Resilience": -0.0,
-  "Arcane Subtlety": 0.026001794044053672,
-  "Arcane Wrath": 0.055292556220372546,
-  "Ice Shards": 0.025247632676421716,
+  "Arcane Subtlety": 0.026846014911256266,
+  "Arcane Wrath": 0.058867577766208545,
+  "Ice Shards": 0.02486550695450318,
   "Improved Channeling": -0.0,
   "Improved Counterspell": -0.0,
-  "Improved Frostbolt": 0.05564292257650816,
-  "Incineration": 0.01160934055872731,
-  "Missile Barrage": 0.1604626954963092,
-  "Precision": 0.06500557806786511
+  "Improved Frostbolt": 0.05605930907501888,
+  "Incineration": 0.011815058572443027,
+  "Missile Barrage": 0.15848181290294272,
+  "Precision": 0.06379547211590575
  },
  "free": [
-  "Arcane Concentration",
   "Arcane Geometry",
   "Arcane Resilience",
   "Improved Channeling",
@@ -42,9 +41,9 @@
    "round": 1,
    "kind": "utility",
    "from": "Arcane Geometry",
-   "to": "Arcane Concentration",
-   "seed1": 0.0003240054727013941,
-   "seed2": -0.00011534667517887343,
+   "to": "Magic Absorption",
+   "seed1": 0.0,
+   "seed2": 0.0,
    "utility": "mana"
   },
   {
@@ -66,7 +65,7 @@
    "utility": "survival"
   }
  ],
- "final_seed3": -9.085170980138724e-05,
+ "final_seed3": 0.0,
  "start": {
   "Arcane": [
    [
@@ -159,7 +158,7 @@
    ],
    [
     "Arcane Concentration",
-    5
+    4
    ],
    [
     "Missile Barrage",
@@ -187,7 +186,7 @@
    ],
    [
     "Magic Absorption",
-    1
+    2
    ]
   ],
   "Fire": [

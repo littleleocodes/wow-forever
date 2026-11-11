@@ -10,46 +10,46 @@ Single-target leveling fights against normal mobs of your level with a slow two-
 
 | Level | Talents | Fight mean | median | p90 | Downtime/kill | Deaths/100 kills | Time/kill | Kills/hour | Mana/kill | Pushbacks/kill |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 20 | 11 | 11.7s | 11.6s | 13.7s | 7.1s | 0.0 | 26.9s | 134 | 274 | 2.70 |
-| 30 | 21 | 12.4s | 11.9s | 16.1s | 10.0s | 0.0 | 30.4s | 118 | 491 | 2.16 |
-| 40 | 31 | 12.3s | 11.9s | 15.1s | 10.9s | 0.0 | 31.2s | 116 | 651 | 2.32 |
-| 50 | 41 | 12.6s | 12.1s | 15.6s | 10.6s | 0.0 | 31.3s | 115 | 904 | 2.15 |
-| 60 | 51 | 11.8s | 11.1s | 15.1s | 9.4s | 0.0 | 29.3s | 123 | 1117 | 2.42 |
+| 20 | 11 | 11.5s | 11.6s | 13.6s | 6.8s | 0.0 | 26.4s | 136 | 267 | 2.69 |
+| 30 | 21 | 12.2s | 11.7s | 15.2s | 9.8s | 0.0 | 30.1s | 120 | 483 | 2.13 |
+| 40 | 31 | 12.1s | 11.7s | 15.1s | 10.8s | 0.0 | 30.9s | 117 | 645 | 2.27 |
+| 50 | 41 | 12.5s | 11.9s | 15.1s | 10.5s | 0.0 | 31.0s | 116 | 893 | 2.15 |
+| 60 | 51 | 11.8s | 11.1s | 14.7s | 9.3s | 0.0 | 29.1s | 124 | 1107 | 2.39 |
 
 ## Measured damage shares (vs. the spec model's assumed shares)
 
 | Level | Earth Shock | Flame Shock | Lightning Bolt | Lightning Shield | Melee | Searing Totem | Windfury |
 |---|---|---|---|---|---|---|---|
-| 20 | 7% | 12% | 48% | 8% | 16% | 9% | 0% |
-| 30 | 10% | 14% | 45% | 7% | 11% | 7% | 5% |
-| 40 | 11% | 15% | 48% | 10% | 8% | 5% | 4% |
+| 20 | 6% | 13% | 49% | 8% | 15% | 9% | 0% |
+| 30 | 10% | 15% | 46% | 7% | 11% | 7% | 5% |
+| 40 | 11% | 15% | 48% | 9% | 8% | 5% | 4% |
 | 50 | 13% | 11% | 52% | 9% | 7% | 5% | 3% |
-| 60 | 11% | 14% | 55% | 9% | 5% | 4% | 2% |
+| 60 | 11% | 14% | 55% | 8% | 5% | 4% | 3% |
 
 Spec model (`_reference/data/scorer/specs`) assumes: lightning_bolt 67%, chain_lightning 9%, earth_shock 0%, flame_shock 17%, fire_totem 0%, searing_totem 7%.
 
 ## Realized crit rates and player at each level
 
-- **Level 20**: 1104 health, 1511 mana, 76 Int, 61 Spirit, 41 Str, 31 Agi, 220 AP, melee crit 5.0%, 0 spell power, base spell crit 6.2%, armor 274 (Rockbiter Weapon, Lightning Shield); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Lightning Shield 20%, Searing Totem 27%, Lightning Bolt 6%, Flame Shock 17%, Melee 5%, Earth Shock 6%. Health after a fight 86%, mana 47%.
-- **Level 30**: 1598 health, 2299 mana, 109 Int, 93 Spirit, 53 Str, 37 Agi, 147 AP, melee crit 5.9%, 5 spell power, base spell crit 7.1%, armor 376 (Windfury Weapon, Lightning Shield); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Lightning Shield 23%, Searing Totem 31%, Lightning Bolt 7%, Flame Shock 25%, Melee 6%, Earth Shock 7%, Windfury 6%. Health after a fight 84%, mana 44%.
-- **Level 40**: 1652 health, 3458 mana, 166 Int, 112 Spirit, 63 Str, 43 Agi, 186 AP, melee crit 9.8%, 26 spell power, base spell crit 11.5%, armor 384 (Windfury Weapon, Lightning Shield); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Lightning Shield 35%, Searing Totem 51%, Lightning Bolt 11%, Flame Shock 40%, Melee 10%, Earth Shock 13%, Windfury 11%. Health after a fight 81%, mana 45%.
-- **Level 50**: 2381 health, 3956 mana, 180 Int, 129 Spirit, 89 Str, 49 Agi, 258 AP, melee crit 9.6%, 52 spell power, base spell crit 10.9%, armor 568 (Windfury Weapon, Lightning Shield); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Lightning Shield 35%, Searing Totem 48%, Lightning Bolt 11%, Flame Shock 38%, Melee 10%, Earth Shock 13%, Windfury 9%. Health after a fight 81%, mana 42%.
-- **Level 60**: 2570 health, 4796 mana, 218 Int, 164 Spirit, 88 Str, 55 Agi, 276 AP, melee crit 9.5%, 76 spell power, base spell crit 10.9%, armor 861 (Windfury Weapon, Lightning Shield); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Lightning Shield 33%, Searing Totem 44%, Lightning Bolt 17%, Flame Shock 34%, Melee 10%, Earth Shock 11%, Windfury 9%. Health after a fight 80%, mana 42%.
+- **Level 20**: 1104 health, 1511 mana, 76 Int, 61 Spirit, 41 Str, 31 Agi, 220 AP, melee crit 5.0%, 0 spell power, base spell crit 6.2%, armor 274 (Rockbiter Weapon, Lightning Shield); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Lightning Shield 20%, Searing Totem 26%, Lightning Bolt 6%, Flame Shock 16%, Melee 5%, Earth Shock 6%. Health after a fight 86%, mana 47%.
+- **Level 30**: 1598 health, 2299 mana, 109 Int, 93 Spirit, 53 Str, 37 Agi, 147 AP, melee crit 5.9%, 5 spell power, base spell crit 7.1%, armor 376 (Windfury Weapon, Lightning Shield); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Lightning Shield 22%, Searing Totem 29%, Lightning Bolt 7%, Flame Shock 24%, Melee 6%, Earth Shock 8%, Windfury 6%. Health after a fight 84%, mana 44%.
+- **Level 40**: 1652 health, 3458 mana, 166 Int, 112 Spirit, 63 Str, 43 Agi, 186 AP, melee crit 9.8%, 26 spell power, base spell crit 11.5%, armor 384 (Windfury Weapon, Lightning Shield); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Lightning Shield 36%, Searing Totem 47%, Lightning Bolt 11%, Flame Shock 39%, Melee 10%, Earth Shock 13%, Windfury 11%. Health after a fight 81%, mana 45%.
+- **Level 50**: 2381 health, 3956 mana, 180 Int, 129 Spirit, 89 Str, 49 Agi, 258 AP, melee crit 9.6%, 52 spell power, base spell crit 10.9%, armor 568 (Windfury Weapon, Lightning Shield); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Lightning Shield 35%, Searing Totem 46%, Lightning Bolt 11%, Flame Shock 38%, Melee 9%, Earth Shock 11%, Windfury 10%. Health after a fight 81%, mana 43%.
+- **Level 60**: 2570 health, 4796 mana, 218 Int, 164 Spirit, 88 Str, 55 Agi, 276 AP, melee crit 9.5%, 76 spell power, base spell crit 10.9%, armor 861 (Windfury Weapon, Lightning Shield); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Lightning Shield 33%, Searing Totem 42%, Lightning Bolt 16%, Flame Shock 37%, Melee 10%, Earth Shock 12%, Windfury 10%. Health after a fight 80%, mana 42%.
 
 ## Other builds (same mobs, same seeds)
 
 | Level | Build | Time/kill | vs. main | Fight mean | Deaths/100 | Downtime/kill |
 |---|---|---|---|---|---|---|
-| 20 | opt-elemental-dps-leveling-st | 26.9s | - | 11.7s | 0.0 | 7.1s |
-| 20 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 21.2s | -20.9% | 10.7s | 0.0 | 2.5s |
-| 30 | opt-elemental-dps-leveling-st | 30.4s | - | 12.4s | 0.0 | 10.0s |
-| 30 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 23.1s | -23.9% | 9.6s | 0.0 | 5.5s |
-| 40 | opt-elemental-dps-leveling-st | 31.2s | - | 12.3s | 0.0 | 10.9s |
-| 40 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 25.9s | -17.0% | 10.6s | 0.0 | 7.3s |
-| 50 | opt-elemental-dps-leveling-st | 31.3s | - | 12.6s | 0.0 | 10.6s |
-| 50 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 27.8s | -11.3% | 11.5s | 0.0 | 8.3s |
-| 60 | opt-elemental-dps-leveling-st | 29.3s | - | 11.8s | 0.0 | 9.4s |
-| 60 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 28.8s | -1.6% | 13.0s | 0.0 | 7.8s |
+| 20 | opt-elemental-dps-leveling-st | 26.4s | - | 11.5s | 0.0 | 6.8s |
+| 20 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 20.9s | -20.7% | 10.5s | 0.0 | 2.4s |
+| 30 | opt-elemental-dps-leveling-st | 30.1s | - | 12.2s | 0.0 | 9.8s |
+| 30 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 23.1s | -23.1% | 9.6s | 0.0 | 5.5s |
+| 40 | opt-elemental-dps-leveling-st | 30.9s | - | 12.1s | 0.0 | 10.8s |
+| 40 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 25.6s | -17.0% | 10.5s | 0.0 | 7.1s |
+| 50 | opt-elemental-dps-leveling-st | 31.0s | - | 12.5s | 0.0 | 10.5s |
+| 50 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 27.6s | -11.0% | 11.4s | 0.0 | 8.2s |
+| 60 | opt-elemental-dps-leveling-st | 29.1s | - | 11.8s | 0.0 | 9.3s |
+| 60 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 28.8s | -1.3% | 12.9s | 0.0 | 7.8s |
 
 ## Talent values at level 30
 
@@ -57,13 +57,13 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Mindfulness | 3 | +5.8% | +1.2% ± 0.5 | +1.9% | +5.7% | 0.0 |
-| Elemental Alacrity | 3 | +4.7% | +13.2% ± 0.4 | +1.6% | +4.0% | 0.0 |
-| Convection | 5 | +4.2% | +1.3% ± 0.4 | +0.8% | +3.4% | 0.0 |
-| Elemental Focus | 1 | +3.7% | +0.1% ± 0.4 | +3.7% | +2.9% | 0.0 |
-| Tidal Focus | 5 | +3.4% | +4.7% ± 0.4 | +0.7% | +3.8% | 0.0 |
-| Call of Flame | 3 | +2.0% | +2.6% ± 0.4 | +0.7% | +2.1% | 0.0 |
-| Thundering Strikes | 1 | +0.4% | +0.6% ± 0.3 | +0.4% | +0.3% | 0.0 |
+| Mindfulness | 3 | +4.9% | +0.2% ± 0.4 | +1.6% | +5.7% | 0.0 |
+| Elemental Alacrity | 3 | +4.1% | +12.6% ± 0.4 | +1.4% | +4.0% | 0.0 |
+| Convection | 5 | +3.8% | +0.3% ± 0.4 | +0.8% | +3.4% | 0.0 |
+| Elemental Focus | 1 | +3.2% | -0.6% ± 0.5 | +3.2% | +2.9% | 0.0 |
+| Tidal Focus | 5 | +2.8% | +3.9% ± 0.5 | +0.6% | +3.8% | 0.0 |
+| Call of Flame | 3 | +1.9% | +2.5% ± 0.4 | +0.6% | +2.1% | 0.0 |
+| Thundering Strikes | 1 | +0.4% | +0.3% ± 0.3 | +0.4% | +0.3% | 0.0 |
 
 ## Talent values at level 60
 
@@ -71,25 +71,25 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Shamanistic Focus | 1 | +11.1% | +8.1% ± 0.7 | +11.1% | +3.1% | 0.0 |
-| Lightning Overload | 3 | +5.2% | +7.3% ± 0.5 | +1.7% | +2.2% | 0.0 |
-| Convection | 5 | +3.9% | +2.9% ± 0.5 | +0.8% | +2.9% | 0.0 |
-| Mindfulness | 3 | +3.6% | +3.2% ± 0.6 | +1.2% | +4.9% | 0.0 |
-| Tidal Focus | 5 | +3.5% | +5.4% ± 0.5 | +0.7% | +3.9% | 0.0 |
-| Elemental Focus | 1 | +3.1% | +2.2% ± 0.5 | +3.1% | +2.5% | 0.0 |
-| Elemental Alacrity | 3 | +2.4% | +8.7% ± 0.5 | +0.8% | +4.5% | 0.0 |
-| Concussion | 5 | +2.3% | +3.3% ± 0.4 | +0.5% | +1.5% | 0.0 |
-| Thundering Strikes | 5 | +2.1% | +3.5% ± 0.4 | +0.4% | +2.1% | 0.0 |
-| Call of Flame | 3 | +1.7% | +2.7% ± 0.4 | +0.6% | +2.1% | 0.0 |
-| Call of Thunder | 1 | +1.2% | +1.8% ± 0.4 | +1.2% | +1.5% | 0.0 |
-| Elemental Fury | 1 | +0.8% | +1.3% ± 0.3 | +0.8% | +0.9% | 0.0 |
-| Eye of the Storm | 3 | +0.8% | +3.5% ± 0.5 | +0.3% | +0.7% | 0.0 |
-| Anticipation | 3 | +0.6% | +0.3% ± 0.4 | +0.2% | +1.0% | 0.0 |
-| Ancestral Knowledge | 2 | +0.2% | +0.9% ± 0.4 | +0.1% | +0.0% | 0.0 |
+| Shamanistic Focus | 1 | +10.9% | +7.0% ± 0.7 | +10.9% | +3.1% | 0.0 |
+| Lightning Overload | 3 | +5.3% | +7.6% ± 0.6 | +1.8% | +2.2% | 0.0 |
+| Mindfulness | 3 | +3.5% | +2.9% ± 0.6 | +1.2% | +4.9% | 0.0 |
+| Tidal Focus | 5 | +3.5% | +5.3% ± 0.5 | +0.7% | +3.9% | 0.0 |
+| Convection | 5 | +3.4% | +1.9% ± 0.5 | +0.7% | +2.9% | 0.0 |
+| Elemental Focus | 1 | +3.0% | +1.7% ± 0.5 | +3.0% | +2.5% | 0.0 |
+| Elemental Alacrity | 3 | +2.4% | +8.9% ± 0.5 | +0.8% | +4.5% | 0.0 |
+| Concussion | 5 | +2.0% | +3.0% ± 0.4 | +0.4% | +1.5% | 0.0 |
+| Thundering Strikes | 5 | +1.8% | +3.0% ± 0.4 | +0.4% | +2.1% | 0.0 |
+| Call of Flame | 3 | +1.6% | +2.5% ± 0.4 | +0.5% | +2.1% | 0.0 |
+| Call of Thunder | 1 | +1.0% | +1.6% ± 0.4 | +1.0% | +1.5% | 0.0 |
+| Eye of the Storm | 3 | +0.8% | +3.4% ± 0.5 | +0.3% | +0.7% | 0.0 |
+| Anticipation | 3 | +0.6% | +0.1% ± 0.4 | +0.2% | +1.0% | 0.0 |
+| Elemental Fury | 1 | +0.6% | +0.9% ± 0.3 | +0.6% | +0.9% | 0.0 |
 | Earth's Grasp | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.5% | 0.0 |
 | Earthbound | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.5% | 0.0 |
 | Guardian Totems | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.9% | 0.0 |
 | Improved Ghost Wolf | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +4.7% | 0.0 |
+| Ancestral Knowledge | 2 | -0.0% | +0.4% ± 0.4 | -0.0% | +0.0% | 0.0 |
 
 ## Assumptions (edit `tables.py` to change them)
 

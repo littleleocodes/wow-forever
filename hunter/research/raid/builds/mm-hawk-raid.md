@@ -66,14 +66,14 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
 
 ## Rank among our builds and the community simulator's
 
-**3 of 4** for `bm-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 4** for `bm-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *BM* | community simulator | - | 489 | +0.0% | 962 | -0.4% | 35 s |
-| 2 | [`beast-mastery-ml-raid`](beast-mastery-ml-raid.md) | ours: derived (ML search) | 31/20/0 | 478 | -2.3% | 966 | +0.0% | 34 s |
-| 3 | **[`mm-hawk-raid`](mm-hawk-raid.md)** | ours: hand draft | 22/29/0 | 475 | -2.9% | 894 | -7.4% | 13 s |
-| 4 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: derived (ML search) | 28/21/2 | 466 | -4.8% | 957 | -0.9% | 30 s |
+| 1 | *BM* | community simulator | - | 517 | +0.0% | 1005 | -0.5% | 31 s |
+| 2 | [`beast-mastery-ml-raid`](beast-mastery-ml-raid.md) | ours: derived (ML search) | 31/20/0 | 506 | -2.2% | 1009 | +0.0% | 31 s |
+| 3 | **[`mm-hawk-raid`](mm-hawk-raid.md)** | ours: hand draft | 22/29/0 | 499 | -3.6% | 931 | -7.7% | 11 s |
+| 4 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: derived (ML search) | 28/21/2 | 493 | -4.8% | 998 | -1.1% | 27 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -113,11 +113,11 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`mm-hawk-raid`](mm-hawk-raid.md) casts/min |
 |---|---|---|
-| 1 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Arcane Shot | 5.0 |
+| 1 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Arcane Shot | 5.2 |
 | 2 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 |
-| 3 | cast Summon Hawk | 4.8 |
+| 3 | cast Summon Hawk | 4.6 |
 | 4 | use every other cooldown when ready | as ready |
-| 5 | if time left on Serpent Sting < 4s and time left in the fight ≥ 3s: cast Serpent Sting | 4.7 |
+| 5 | if time left on Serpent Sting < 4s and time left in the fight ≥ 3s: cast Serpent Sting | 4.8 |
 
 Lines of the simulator's rotation these builds never cast: cast Intimidation (needs the Intimidation talent).
 
@@ -125,13 +125,13 @@ Damage by ability:
 
 | Ability | [`mm-hawk-raid`](mm-hawk-raid.md) |
 |---|---|
-| Auto Shot | 34% |
+| Auto Shot | 35% |
 | Pet: Auto Attack | 28% |
 | Serpent Sting | 20% |
 | Arcane Shot | 11% |
-| Summon Hawk | 3% |
+| Summon Hawk | 2% |
 | Pet: Claw | 2% |
-| Pet: Bite | 2% |
+| Pet: Bite | 1% |
 
 ## Notes
 

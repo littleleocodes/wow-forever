@@ -150,8 +150,8 @@
  "raid": {
   "class": "shaman",
   "spec": "stormcaller-dps",
-  "date": "2026-11-07",
-  "commit": "16e85426c",
+  "date": "2026-11-11",
+  "commit": "ff9babba5",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/shaman/elemental/apls/forever.apl.json",
@@ -159,7 +159,7 @@
   "builds": [
    {
     "label": "open winner",
-    "talents": "550433100000134-255213010001002"
+    "talents": "5504331000001351-05500001-05301"
    },
    {
     "label": "sim preset: Stormcaller 28/23/0",
@@ -297,22 +297,22 @@
   "final": {
    "raid": {
     "open winner": {
-     "before": 750.4052364776787,
-     "after": 735.6608917542737,
-     "base": 750.4052364776787,
+     "before": 767.788575473235,
+     "after": 742.763943062883,
+     "base": 767.788575473235,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.09854499999999983,
-     "oom_after": 0.09854499999999983
+     "oom_before": 0.000255,
+     "oom_after": 0.000255
     },
     "sim preset: Stormcaller 28/23/0": {
-     "before": 668.9935921982471,
-     "after": 674.7695251981913,
-     "base": 668.9935921982471,
+     "before": 668.026237679681,
+     "after": 675.2113839510378,
+     "base": 668.026237679681,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.5108499999998507,
-     "oom_after": 0.5108499999998507
+     "oom_before": 0.7579599999997519,
+     "oom_after": 0.7579599999997519
     }
    }
   },
@@ -333,6 +333,6 @@
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 13
+  "passes": 15
  }
 }

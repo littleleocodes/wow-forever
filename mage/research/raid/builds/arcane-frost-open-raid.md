@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Arcane-Frost (an Arcane/Frost hybrid) raid build the open talent search found on 2026-11-10: every legal 51-point build with no tree rule, searched in the community simulator's frost-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.5% over opt-frost-raid-raid-dps, the best of our builds in that rotation.
+The Arcane-Frost (an Arcane/Frost hybrid) raid build the open talent search found on 2026-11-11: every legal 51-point build with no tree rule, searched in the community simulator's frost-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +1.5% over opt-frost-raid-raid-dps, the best of our builds in that rotation.
 
 ## Point allocation
 
@@ -22,14 +22,14 @@ The Arcane-Frost (an Arcane/Frost hybrid) raid build the open talent search foun
 | **Improved Channeling** | 2/5 | **NEW** | Gives your Arcane Missiles spell a 40% chance and your Arcane Blast and Arcane Wrath spells a 28% chance to not lose casting time when you take damage. |
 | **Arcane Resilience** | 3/3 | changed | Increases your Armor by an amount equal to 75% of your Intellect. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
-| **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
+| **Arcane Concentration** | 4/5 | unchanged | Gives you a 8% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Arcane Impact** | 3/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 6%. |
 | **Arcane Blast** | 1/1 | **NEW** | Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 12% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 100%. Effect stacks up to 4 times and lasts 18 sec from time of initial application. |
 | **Arcane Wrath** | 1/1 | **NEW** | Launches a projectile of pure Arcane energy at the enemy target, causing 122 to 146 Arcane damage. This spell gains additional Spell Damage equal to 5% of your maximum Mana. |
 | **Arcane Mind** | 5/5 | changed | Increases your Intellect by 10% and increases the critical strike damage bonus of your Arcane spells by 100%. |
 | **Arcane Instability** | 3/3 | changed | Increases the damage done by your spells by 3% and your critical strike chance by 3%. |
-| **Magic Absorption** | 1/2 | changed | Increases all your resistances by 5 and causes all spells you fully resist to restore 1% of your total mana. Cannot trigger more often than 1 time per sec. |
+| **Magic Absorption** | 2/2 | changed | Increases all your resistances by 10 and causes all spells you fully resist to restore 2% of your total mana. Cannot trigger more often than 1 time per sec. |
 
 ### Fire (10)
 
@@ -59,25 +59,25 @@ The Arcane-Frost (an Arcane/Frost hybrid) raid build the open talent search foun
 
 ## Rank among our builds and the community simulator's
 
-**4 of 15** for `frost-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 15** for `frost-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 28/1/22 | 583 | +0.0% | 671 | -3.2% | 4 s |
-| 2 | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) | ours: optimizer | 29/0/22 | 578 | -0.8% | 677 | -2.2% | 5 s |
-| 3 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 32/3/16 | 577 | -0.9% | 682 | -1.6% | 1 s |
-| 4 | **[`arcane-frost-open-raid`](arcane-frost-open-raid.md)** | ours: derived (open search) | 28/10/13 | 545 | -6.4% | 693 | +0.0% | 5 s |
-| 5 | [`frost-ml-raid`](frost-ml-raid.md) | ours: derived (ML search) | 21/0/30 | 523 | -10.3% | 612 | -11.7% | 6 s |
-| 6 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 514 | -11.8% | 581 | -16.2% | 0 s |
-| 7 | *Arcane Fire* | community simulator | - | 506 | -13.2% | 640 | -7.7% | 1 s |
-| 8 | *Arcane* | community simulator | - | 506 | -13.2% | 653 | -5.7% | 1 s |
-| 9 | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) | ours: hand draft | 21/0/30 | 462 | -20.7% | 526 | -24.0% | 0 s |
-| 10 | *Frost Med* | community simulator | - | 458 | -21.4% | 547 | -21.0% | 8 s |
-| 11 | *Frost Incin* | community simulator | - | 458 | -21.5% | 552 | -20.4% | 5 s |
-| 12 | *Fire Skyborne GT 180* | community simulator | - | 434 | -25.5% | 497 | -28.3% | 3 s |
-| 13 | *Fire Skyborne LT 180* | community simulator | - | 433 | -25.8% | 499 | -27.9% | 4 s |
-| 14 | *Fire* | community simulator | - | 431 | -26.1% | 497 | -28.3% | 4 s |
-| 15 | *FFB* | community simulator | - | 397 | -31.9% | 452 | -34.7% | 0 s |
+| 1 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 28/1/22 | 564 | +0.0% | 659 | -3.3% | 7 s |
+| 2 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 32/3/16 | 561 | -0.6% | 670 | -1.7% | 3 s |
+| 3 | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) | ours: optimizer | 29/0/22 | 559 | -0.9% | 666 | -2.3% | 7 s |
+| 4 | **[`arcane-frost-open-raid`](arcane-frost-open-raid.md)** | ours: derived (open search) | 28/10/13 | 529 | -6.2% | 682 | +0.0% | 5 s |
+| 5 | [`frost-ml-raid`](frost-ml-raid.md) | ours: derived (ML search) | 21/0/30 | 506 | -10.3% | 601 | -11.9% | 8 s |
+| 6 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 503 | -10.9% | 568 | -16.8% | 0 s |
+| 7 | *Arcane Fire* | community simulator | - | 493 | -12.5% | 629 | -7.7% | 2 s |
+| 8 | *Arcane* | community simulator | - | 493 | -12.6% | 643 | -5.7% | 2 s |
+| 9 | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) | ours: hand draft | 21/0/30 | 451 | -20.1% | 514 | -24.7% | 0 s |
+| 10 | *Frost Med* | community simulator | - | 451 | -20.1% | 536 | -21.5% | 7 s |
+| 11 | *Frost Incin* | community simulator | - | 443 | -21.4% | 540 | -20.8% | 9 s |
+| 12 | *Fire Skyborne GT 180* | community simulator | - | 422 | -25.3% | 488 | -28.5% | 5 s |
+| 13 | *Fire Skyborne LT 180* | community simulator | - | 418 | -25.9% | 490 | -28.2% | 7 s |
+| 14 | *Fire* | community simulator | - | 416 | -26.2% | 488 | -28.5% | 7 s |
+| 15 | *FFB* | community simulator | - | 390 | -30.9% | 443 | -35.1% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -108,8 +108,8 @@ The Arcane-Frost (an Arcane/Frost hybrid) raid build the open talent search foun
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles (rank 7) | 4.6 |
 | 4 | if (time left on Arcane Blast < cast time of Arcane Blast or stacks of Arcane Blast < 2): cast Arcane Blast | 8.3 |
-| 5 | if mana % < 5% and time left in the fight > 50s: cast Evocation | 0.2 |
-| 6 | if time left in the fight ≥ 3s: cast Frostbolt (rank 10) | 13.1 |
+| 5 | if mana % < 5% and time left in the fight > 50s: cast Evocation | 0.3 |
+| 6 | if time left in the fight ≥ 3s: cast Frostbolt (rank 10) | 13.0 |
 | 7 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.1 |
 | 8 | cast Arcane Blast | 8.3 |
 | 9 | cast Robe of the Archmage | as ready |
@@ -133,8 +133,8 @@ Damage by ability:
 - The frost-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.
 - Sibling rotations tried on it (10,000 fights): fire-raid -36.8%, arcane-dps -0.3%, frostfire-raid -35.4%; none adopted.
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Channeling, Arcane Resilience, Arcane Geometry, Improved Counterspell.
-- Simulator numbers are the community's model of the beta (wowsims/forever 16e8542 (client 70790) with this project's patches), not in-game measurements.
-- 2026-11-10 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Geometry -> Arcane Concentration (mana); Improved Counterspell -> Magic Absorption (mana); Improved Channeling -> Arcane Resilience (survival). Net -0.01% on a third seed.
+- Simulator numbers are the community's model of the beta (wowsims/forever ff9babb (client 70888) with this project's patches), not in-game measurements.
+- 2026-11-11 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Geometry -> Magic Absorption (mana); Improved Counterspell -> Magic Absorption (mana); Improved Channeling -> Arcane Resilience (survival). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 

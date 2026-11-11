@@ -59,14 +59,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-d
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `shadow-dps` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 4** for `shadow-dps` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md)** | ours: optimizer | 20/0/31 | 689 | +0.0% | 791 | -0.6% | 2 s |
-| 2 | *Standard* | community simulator | - | 647 | -6.1% | 790 | -0.7% | 0 s |
-| 3 | [`shadow-ml-raid`](shadow-ml-raid.md) | ours: derived (ML search) | 16/0/35 | 617 | -10.4% | 796 | +0.0% | 16 s |
-| 4 | *Smite* | community simulator | - | 228 | -66.8% | 310 | -61.0% | 9 s |
+| 1 | **[`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md)** | ours: optimizer | 20/0/31 | 666 | +0.0% | 764 | -0.5% | 0 s |
+| 2 | *Standard* | community simulator | - | 622 | -6.7% | 763 | -0.6% | 0 s |
+| 3 | [`shadow-ml-raid`](shadow-ml-raid.md) | ours: derived (ML search) | 16/0/35 | 604 | -9.3% | 768 | +0.0% | 12 s |
+| 4 | *Smite* | community simulator | - | 226 | -66.0% | 302 | -60.6% | 3 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -88,7 +88,7 @@ Before the pull: at -1s: cast Shadowform.
 | 2 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain | 2.6 |
 | 3 | strict sequence: cast Inner Focus; cast Devouring Plague | 2.6 |
 | 4 | cast Shadow Word: Death | 3.3 |
-| 5 | cast Mind Blast | 6.9 |
+| 5 | cast Mind Blast | 7.0 |
 | 6 | channel Mind Flay | as ready |
 
 Lines of the simulator's rotation these builds never cast: Death (rank 2) (its condition never held in these fights).
@@ -98,8 +98,8 @@ Damage by ability:
 | Ability | [`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md) |
 |---|---|
 | Mind Flay | 40% |
-| Shadow Word: Pain | 20% |
-| Mind Blast | 18% |
+| Shadow Word: Pain | 19% |
+| Mind Blast | 19% |
 | Devouring Plague | 12% |
 | Shadow Word: Death | 9% |
 | Demonic Rune | 2% |

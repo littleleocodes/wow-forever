@@ -43,13 +43,13 @@ Spec model (`_reference/data/scorer/specs`) assumes: white_mh 30%, white_oh 16%,
 | 20 | opt-fury-dw-raid-leveling-st | 20.6s | - | 12.6s | 0.0 | 0.0s |
 | 20 | opt-arms-2h-raid-leveling-st (played as `arms-2h-raid`) | 22.6s | +9.6% | 14.6s | 0.0 | 0.0s |
 | 30 | opt-fury-dw-raid-leveling-st | 23.4s | - | 14.8s | 0.0 | 0.5s |
-| 30 | opt-arms-2h-raid-leveling-st (played as `arms-2h-raid`) | 23.8s | +2.1% | 15.7s | 0.0 | 0.2s |
+| 30 | opt-arms-2h-raid-leveling-st (played as `arms-2h-raid`) | 23.1s | -1.1% | 15.0s | 0.0 | 0.1s |
 | 40 | opt-fury-dw-raid-leveling-st | 24.8s | - | 16.1s | 0.0 | 0.7s |
-| 40 | opt-arms-2h-raid-leveling-st (played as `arms-2h-raid`) | 24.4s | -1.8% | 16.2s | 0.0 | 0.2s |
+| 40 | opt-arms-2h-raid-leveling-st (played as `arms-2h-raid`) | 24.3s | -2.1% | 16.1s | 0.0 | 0.2s |
 | 50 | opt-fury-dw-raid-leveling-st | 26.1s | - | 18.1s | 0.0 | 0.0s |
-| 50 | opt-arms-2h-raid-leveling-st (played as `arms-2h-raid`) | 25.5s | -2.1% | 17.0s | 0.0 | 0.5s |
+| 50 | opt-arms-2h-raid-leveling-st (played as `arms-2h-raid`) | 25.4s | -2.5% | 16.9s | 0.0 | 0.5s |
 | 60 | opt-fury-dw-raid-leveling-st | 29.0s | - | 21.0s | 0.0 | 0.0s |
-| 60 | opt-arms-2h-raid-leveling-st (played as `arms-2h-raid`) | 28.7s | -1.1% | 19.7s | 0.0 | 0.9s |
+| 60 | opt-arms-2h-raid-leveling-st (played as `arms-2h-raid`) | 28.4s | -1.9% | 19.5s | 0.0 | 0.9s |
 
 ## Talent values at level 30
 

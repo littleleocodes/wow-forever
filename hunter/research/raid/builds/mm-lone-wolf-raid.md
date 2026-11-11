@@ -70,20 +70,20 @@ Allocation adopted on 2026-09-26 from `opt-mm-lonewolf-raid-raid-dps`, the best 
 
 ## Rank among our builds and the community simulator's
 
-**3 of 10** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 10** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *MM* | community simulator | - | 460 | +0.0% | 960 | -0.6% | 43 s |
-| 2 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 7/41/3 | 455 | -1.1% | 896 | -7.2% | 24 s |
-| 3 | **[`mm-lone-wolf-raid`](mm-lone-wolf-raid.md)** | ours: hand draft | 5/41/5 | 453 | -1.4% | 966 | +0.0% | 47 s |
-| 4 | *SV* | community simulator | - | 410 | -10.9% | 792 | -18.0% | 37 s |
-| 5 | *SV Weave* | community simulator | - | 405 | -11.9% | 784 | -18.8% | 37 s |
-| 6 | *MM Weave* | community simulator | - | 392 | -14.7% | 798 | -17.4% | 45 s |
-| 7 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 388 | -15.5% | 781 | -19.2% | 30 s |
-| 8 | *BM Weave* | community simulator | - | 295 | -35.9% | 610 | -36.8% | 26 s |
-| 9 | *BM* | community simulator | - | 286 | -37.8% | 621 | -35.7% | 31 s |
-| 10 | *SV Melee* | community simulator | - | 256 | -44.2% | 575 | -40.5% | 44 s |
+| 1 | *MM* | community simulator | - | 486 | +0.0% | 996 | -0.7% | 41 s |
+| 2 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 7/41/3 | 478 | -1.6% | 929 | -7.3% | 24 s |
+| 3 | **[`mm-lone-wolf-raid`](mm-lone-wolf-raid.md)** | ours: hand draft | 5/41/5 | 475 | -2.2% | 1003 | +0.0% | 47 s |
+| 4 | *SV* | community simulator | - | 427 | -12.1% | 824 | -17.8% | 38 s |
+| 5 | *SV Weave* | community simulator | - | 421 | -13.2% | 818 | -18.4% | 38 s |
+| 6 | *MM Weave* | community simulator | - | 412 | -15.1% | 826 | -17.6% | 45 s |
+| 7 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 407 | -16.1% | 810 | -19.2% | 29 s |
+| 8 | *BM Weave* | community simulator | - | 309 | -36.3% | 632 | -37.0% | 26 s |
+| 9 | *BM* | community simulator | - | 300 | -38.3% | 643 | -35.8% | 31 s |
+| 10 | *SV Melee* | community simulator | - | 269 | -44.7% | 597 | -40.5% | 45 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -119,9 +119,9 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
-| 3 | cast Arcane Shot | 9.9 |
+| 3 | cast Arcane Shot | 9.8 |
 | 4 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Aimed Shot | 3.7 |
-| 5 | if time left on Serpent Sting < 2s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.4 |
+| 5 | if time left on Serpent Sting < 2s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent).
 

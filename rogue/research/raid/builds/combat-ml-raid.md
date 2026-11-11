@@ -50,19 +50,19 @@ The Combat build the machine-learning talent search found in a full raid (every 
 
 ## Rank among our builds and the community simulator's
 
-**7 of 9** for `combat-daggers-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**7 of 9** for `combat-daggers-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Subtlety Hemo* | community simulator | - | 480 | +0.0% | 785 | -2.9% | 0 s |
-| 2 | *Asn Muti* | community simulator | - | 443 | -7.8% | 809 | +0.0% | 0 s |
-| 3 | *Combat Venom* | community simulator | - | 395 | -17.8% | 703 | -13.1% | 0 s |
-| 4 | [`daggers-split-open-raid`](daggers-split-open-raid.md) | ours: derived (open search) | 29/22/0 | 371 | -22.7% | 788 | -2.6% | 0 s |
-| 5 | *Combat SS* | community simulator | - | 358 | -25.6% | 674 | -16.7% | 0 s |
-| 6 | *Combat BS* | community simulator | - | 344 | -28.4% | 756 | -6.6% | 0 s |
-| 7 | **[`combat-ml-raid`](combat-ml-raid.md)** | ours: derived (ML search) | 13/33/5 | 333 | -30.7% | 764 | -5.5% | 0 s |
-| 8 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 21/30/0 | 310 | -35.4% | 673 | -16.8% | 0 s |
-| 9 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 21/30/0 | 310 | -35.4% | 673 | -16.8% | 0 s |
+| 1 | *Subtlety Hemo* | community simulator | - | 487 | +0.0% | 799 | -4.2% | 0 s |
+| 2 | *Asn Muti* | community simulator | - | 451 | -7.3% | 835 | +0.0% | 0 s |
+| 3 | *Combat Venom* | community simulator | - | 403 | -17.2% | 720 | -13.7% | 0 s |
+| 4 | [`daggers-split-open-raid`](daggers-split-open-raid.md) | ours: derived (open search) | 29/22/0 | 379 | -22.2% | 803 | -3.8% | 0 s |
+| 5 | *Combat SS* | community simulator | - | 363 | -25.4% | 688 | -17.6% | 0 s |
+| 6 | *Combat BS* | community simulator | - | 349 | -28.3% | 769 | -7.9% | 0 s |
+| 7 | **[`combat-ml-raid`](combat-ml-raid.md)** | ours: derived (ML search) | 13/33/5 | 337 | -30.7% | 777 | -6.8% | 0 s |
+| 8 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 21/30/0 | 314 | -35.4% | 687 | -17.7% | 0 s |
+| 9 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 21/30/0 | 314 | -35.4% | 687 | -17.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -108,7 +108,7 @@ Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: i
 | 13 | if (energy ≤ 15 and not talentIsKnown or Eureka! is known and energy ≤ 25 and energy ≤ 25 or energy ≤ 25 and Death Mark is on the target) and (combo points < 3 or variableRef or Eureka! is up): cast Thistle Tea | as ready |
 | 14 | if variableRef and variableRef and not variableRef and not variableRef: cast Slice and Dice | 3.4 |
 | 15 | if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not variableRef or combo points ≥ 3 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8) | 3.7 |
-| 16 | if not Mutilate is known and not Hemorrhage is known and not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef: cast Sinister Strike | 17.9 |
+| 16 | if not Mutilate is known and not Hemorrhage is known and not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef: cast Sinister Strike | 18.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Ambush, cast Blood Fury, cast Elune's Light, cast Eureka!, cast Rupture, cast Backstab (rank 8) (its condition never held in these fights); cast Preparation (needs the Preparation talent); cast Premeditation (needs the Premeditation talent); cast Death Mark (needs the Death Mark talent); cast Cold Blood (needs the Cold Blood talent); cast Ghostly Strike (needs the Ghostly Strike talent); cast Hemorrhage (needs the Hemorrhage talent); cast Mutilate (needs the Mutilate talent).
 
@@ -116,9 +116,9 @@ Damage by ability:
 
 | Ability | [`combat-ml-raid`](combat-ml-raid.md) |
 |---|---|
-| Auto Attack | 43% |
+| Auto Attack | 44% |
 | Sinister Strike | 20% |
-| Eviscerate | 17% |
+| Eviscerate | 16% |
 | spell 25349 | 8% |
 | spell 11337 | 6% |
 | Goblin Sapper Charge | 2% |

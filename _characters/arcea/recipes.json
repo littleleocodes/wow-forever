@@ -1321,73 +1321,17 @@
  },
  {
   "profession": "Tailoring",
-  "spell": 8465,
-  "name": "Simple Dress",
-  "out_item": 6786,
-  "reagents": [
-   [
-    2996,
-    2
-   ],
-   [
-    2320,
-    1
-   ],
-   [
-    6260,
-    1
-   ],
-   [
-    2324,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Tailoring",
-  "spell": 8467,
-  "name": "White Woolen Dress",
-  "out_item": 6787,
+  "spell": 6688,
+  "name": "Red Woolen Bag",
+  "out_item": 5763,
   "reagents": [
    [
     2997,
-    3
-   ],
-   [
-    2324,
     4
    ],
    [
-    2321,
+    2604,
     1
-   ]
-  ]
- },
- {
-  "profession": "Tailoring",
-  "spell": 2387,
-  "name": "Linen Cloak",
-  "out_item": 2570,
-  "reagents": [
-   [
-    2996,
-    1
-   ],
-   [
-    2320,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Tailoring",
-  "spell": 3757,
-  "name": "Woolen Bag",
-  "out_item": 4240,
-  "reagents": [
-   [
-    2997,
-    3
    ],
    [
     2321,
@@ -1413,6 +1357,38 @@
  },
  {
   "profession": "Tailoring",
+  "spell": 1257013,
+  "name": "Linen Reagent Bag",
+  "out_item": 253664,
+  "reagents": [
+   [
+    2996,
+    6
+   ],
+   [
+    2320,
+    6
+   ]
+  ]
+ },
+ {
+  "profession": "Tailoring",
+  "spell": 3757,
+  "name": "Woolen Bag",
+  "out_item": 4240,
+  "reagents": [
+   [
+    2997,
+    3
+   ],
+   [
+    2321,
+    1
+   ]
+  ]
+ },
+ {
+  "profession": "Tailoring",
   "spell": 3755,
   "name": "Linen Bag",
   "out_item": 4238,
@@ -1429,41 +1405,45 @@
  },
  {
   "profession": "Tailoring",
-  "spell": 2394,
-  "name": "Blue Linen Shirt",
-  "out_item": 2577,
+  "spell": 8467,
+  "name": "White Woolen Dress",
+  "out_item": 6787,
   "reagents": [
    [
-    2996,
-    2
+    2997,
+    3
    ],
    [
-    2320,
-    1
+    2324,
+    4
    ],
    [
-    6260,
+    2321,
     1
    ]
   ]
  },
  {
   "profession": "Tailoring",
-  "spell": 12045,
-  "name": "Simple Linen Boots",
-  "out_item": 10046,
+  "spell": 3839,
+  "name": "Bolt of Silk Cloth",
+  "out_item": 4305,
   "reagents": [
    [
-    2996,
-    2
-   ],
+    4306,
+    4
+   ]
+  ]
+ },
+ {
+  "profession": "Tailoring",
+  "spell": 2964,
+  "name": "Bolt of Woolen Cloth",
+  "out_item": 2997,
+  "reagents": [
    [
-    2318,
-    1
-   ],
-   [
-    2320,
-    1
+    2592,
+    3
    ]
   ]
  },
@@ -1541,25 +1521,45 @@
  },
  {
   "profession": "Tailoring",
-  "spell": 3839,
-  "name": "Bolt of Silk Cloth",
-  "out_item": 4305,
+  "spell": 12045,
+  "name": "Simple Linen Boots",
+  "out_item": 10046,
   "reagents": [
    [
-    4306,
-    4
+    2996,
+    2
+   ],
+   [
+    2318,
+    1
+   ],
+   [
+    2320,
+    1
    ]
   ]
  },
  {
   "profession": "Tailoring",
-  "spell": 2964,
-  "name": "Bolt of Woolen Cloth",
-  "out_item": 2997,
+  "spell": 8465,
+  "name": "Simple Dress",
+  "out_item": 6786,
   "reagents": [
    [
-    2592,
-    3
+    2996,
+    2
+   ],
+   [
+    2320,
+    1
+   ],
+   [
+    6260,
+    1
+   ],
+   [
+    2324,
+    1
    ]
   ]
  },
@@ -1585,9 +1585,9 @@
  },
  {
   "profession": "Tailoring",
-  "spell": 12044,
-  "name": "Simple Linen Pants",
-  "out_item": 10045,
+  "spell": 2385,
+  "name": "Brown Linen Vest",
+  "out_item": 2568,
   "reagents": [
    [
     2996,
@@ -1595,6 +1595,46 @@
    ],
    [
     2320,
+    1
+   ]
+  ]
+ },
+ {
+  "profession": "Tailoring",
+  "spell": 7629,
+  "name": "Red Linen Vest",
+  "out_item": 6239,
+  "reagents": [
+   [
+    2996,
+    3
+   ],
+   [
+    2320,
+    1
+   ],
+   [
+    2604,
+    1
+   ]
+  ]
+ },
+ {
+  "profession": "Tailoring",
+  "spell": 3841,
+  "name": "Green Linen Bracers",
+  "out_item": 4308,
+  "reagents": [
+   [
+    2996,
+    3
+   ],
+   [
+    2320,
+    2
+   ],
+   [
+    2605,
     1
    ]
   ]
@@ -1616,42 +1656,6 @@
    [
     2604,
     3
-   ]
-  ]
- },
- {
-  "profession": "Tailoring",
-  "spell": 1257368,
-  "name": "Novice Arcanist's Sash",
-  "out_item": 253885,
-  "reagents": [
-   [
-    2996,
-    8
-   ],
-   [
-    2321,
-    2
-   ],
-   [
-    2455,
-    2
-   ]
-  ]
- },
- {
-  "profession": "Tailoring",
-  "spell": 3850,
-  "name": "Heavy Woolen Pants",
-  "out_item": 4316,
-  "reagents": [
-   [
-    2997,
-    5
-   ],
-   [
-    2321,
-    4
    ]
   ]
  },
@@ -1693,49 +1697,45 @@
  },
  {
   "profession": "Tailoring",
-  "spell": 3841,
-  "name": "Green Linen Bracers",
-  "out_item": 4308,
+  "spell": 1257368,
+  "name": "Novice Arcanist's Sash",
+  "out_item": 253885,
   "reagents": [
    [
     2996,
-    3
+    8
    ],
    [
-    2320,
+    2321,
     2
    ],
    [
-    2605,
-    1
+    2455,
+    2
    ]
   ]
  },
  {
   "profession": "Tailoring",
-  "spell": 7629,
-  "name": "Red Linen Vest",
-  "out_item": 6239,
+  "spell": 3850,
+  "name": "Heavy Woolen Pants",
+  "out_item": 4316,
   "reagents": [
    [
-    2996,
-    3
+    2997,
+    5
    ],
    [
-    2320,
-    1
-   ],
-   [
-    2604,
-    1
+    2321,
+    4
    ]
   ]
  },
  {
   "profession": "Tailoring",
-  "spell": 2385,
-  "name": "Brown Linen Vest",
-  "out_item": 2568,
+  "spell": 12044,
+  "name": "Simple Linen Pants",
+  "out_item": 10045,
   "reagents": [
    [
     2996,
@@ -1777,6 +1777,26 @@
  },
  {
   "profession": "Tailoring",
+  "spell": 2394,
+  "name": "Blue Linen Shirt",
+  "out_item": 2577,
+  "reagents": [
+   [
+    2996,
+    2
+   ],
+   [
+    2320,
+    1
+   ],
+   [
+    6260,
+    1
+   ]
+  ]
+ },
+ {
+  "profession": "Tailoring",
   "spell": 7624,
   "name": "White Linen Robe",
   "out_item": 6241,
@@ -1792,22 +1812,6 @@
    [
     2324,
     1
-   ]
-  ]
- },
- {
-  "profession": "Tailoring",
-  "spell": 1257013,
-  "name": "Linen Reagent Bag",
-  "out_item": 253664,
-  "reagents": [
-   [
-    2996,
-    6
-   ],
-   [
-    2320,
-    6
    ]
   ]
  },
@@ -1833,20 +1837,16 @@
  },
  {
   "profession": "Tailoring",
-  "spell": 6688,
-  "name": "Red Woolen Bag",
-  "out_item": 5763,
+  "spell": 2387,
+  "name": "Linen Cloak",
+  "out_item": 2570,
   "reagents": [
    [
-    2997,
-    4
-   ],
-   [
-    2604,
+    2996,
     1
    ],
    [
-    2321,
+    2320,
     1
    ]
   ]
@@ -1949,12 +1949,12 @@
  },
  {
   "profession": "Cooking",
-  "spell": 7755,
-  "name": "Bristle Whisker Catfish",
-  "out_item": 4593,
+  "spell": 2540,
+  "name": "Roasted Boar Meat",
+  "out_item": 2681,
   "reagents": [
    [
-    6308,
+    769,
     1
    ]
   ]
@@ -2017,12 +2017,16 @@
  },
  {
   "profession": "Cooking",
-  "spell": 7751,
-  "name": "Brilliant Smallfish",
-  "out_item": 6290,
+  "spell": 2546,
+  "name": "Dry Pork Ribs",
+  "out_item": 2687,
   "reagents": [
    [
-    6291,
+    2677,
+    1
+   ],
+   [
+    2678,
     1
    ]
   ]
@@ -2073,18 +2077,6 @@
  },
  {
   "profession": "Cooking",
-  "spell": 7753,
-  "name": "Longjaw Mud Snapper",
-  "out_item": 4592,
-  "reagents": [
-   [
-    6289,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Cooking",
   "spell": 2547,
   "name": "Redridge Goulash",
   "out_item": 1082,
@@ -2101,16 +2093,24 @@
  },
  {
   "profession": "Cooking",
-  "spell": 25704,
-  "name": "Smoked Sagefish",
-  "out_item": 21072,
+  "spell": 7755,
+  "name": "Bristle Whisker Catfish",
+  "out_item": 4593,
   "reagents": [
    [
-    21071,
+    6308,
     1
-   ],
+   ]
+  ]
+ },
+ {
+  "profession": "Cooking",
+  "spell": 2538,
+  "name": "Charred Wolf Meat",
+  "out_item": 2679,
+  "reagents": [
    [
-    2678,
+    2672,
     1
    ]
   ]
@@ -2133,12 +2133,16 @@
  },
  {
   "profession": "Cooking",
-  "spell": 2538,
-  "name": "Charred Wolf Meat",
-  "out_item": 2679,
+  "spell": 25704,
+  "name": "Smoked Sagefish",
+  "out_item": 21072,
   "reagents": [
    [
-    2672,
+    21071,
+    1
+   ],
+   [
+    2678,
     1
    ]
   ]
@@ -2161,28 +2165,24 @@
  },
  {
   "profession": "Cooking",
-  "spell": 2546,
-  "name": "Dry Pork Ribs",
-  "out_item": 2687,
+  "spell": 7753,
+  "name": "Longjaw Mud Snapper",
+  "out_item": 4592,
   "reagents": [
    [
-    2677,
-    1
-   ],
-   [
-    2678,
+    6289,
     1
    ]
   ]
  },
  {
   "profession": "Cooking",
-  "spell": 2540,
-  "name": "Roasted Boar Meat",
-  "out_item": 2681,
+  "spell": 7751,
+  "name": "Brilliant Smallfish",
+  "out_item": 6290,
   "reagents": [
    [
-    769,
+    6291,
     1
    ]
   ]
@@ -2205,13 +2205,33 @@
  },
  {
   "profession": "Enchanting",
-  "spell": 13817,
-  "name": "Enchant Shield - Stamina",
+  "spell": 7748,
+  "name": "Enchant Chest - Lesser Stamina",
   "out_item": null,
   "reagents": [
    [
-    11137,
+    10940,
+    1
+   ],
+   [
+    10938,
+    1
+   ]
+  ]
+ },
+ {
+  "profession": "Enchanting",
+  "spell": 7786,
+  "name": "Enchant Weapon - Minor Beastslayer",
+  "out_item": null,
+  "reagents": [
+   [
+    10940,
     2
+   ],
+   [
+    10939,
+    1
    ]
   ]
  },
@@ -2245,40 +2265,16 @@
  },
  {
   "profession": "Enchanting",
-  "spell": 13822,
-  "name": "Enchant Bracer - Intellect",
-  "out_item": null,
+  "spell": 1230643,
+  "name": "Enchanted Lute",
+  "out_item": 279976,
   "reagents": [
    [
-    11174,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13622,
-  "name": "Enchant Bracer - Lesser Intellect",
-  "out_item": null,
-  "reagents": [
-   [
-    11082,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13529,
-  "name": "Enchant 2H Weapon - Lesser Impact",
-  "out_item": null,
-  "reagents": [
-   [
-    11083,
+    4470,
     1
    ],
    [
-    11084,
+    10940,
     1
    ]
   ]
@@ -2297,204 +2293,20 @@
  },
  {
   "profession": "Enchanting",
-  "spell": 13858,
-  "name": "Enchant Chest - Superior Stamina",
+  "spell": 7428,
+  "name": "Enchant Bracer - Minor Deflect",
   "out_item": null,
   "reagents": [
    [
-    11137,
-    3
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13607,
-  "name": "Enchant Chest - Intellect",
-  "out_item": null,
-  "reagents": [
-   [
-    11082,
+    10938,
     1
    ]
   ]
  },
  {
   "profession": "Enchanting",
-  "spell": 7745,
-  "name": "Enchant 2H Weapon - Minor Impact",
-  "out_item": null,
-  "reagents": [
-   [
-    10940,
-    1
-   ],
-   [
-    10978,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13538,
-  "name": "Enchant Chest - Lesser Absorption",
-  "out_item": null,
-  "reagents": [
-   [
-    10940,
-    1
-   ],
-   [
-    10998,
-    1
-   ],
-   [
-    11084,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 1263056,
-  "name": "Arcane Salvager",
-  "out_item": 279985,
-  "reagents": [
-   [
-    11137,
-    2
-   ],
-   [
-    11174,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 25124,
-  "name": "Minor Wizard Oil",
-  "out_item": 20744,
-  "reagents": [
-   [
-    10940,
-    1
-   ],
-   [
-    17034,
-    1
-   ],
-   [
-    3371,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13620,
-  "name": "Enchant Gloves - Fishing",
-  "out_item": null,
-  "reagents": [
-   [
-    11083,
-    1
-   ],
-   [
-    6370,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13612,
-  "name": "Enchant Gloves - Mining",
-  "out_item": null,
-  "reagents": [
-   [
-    11083,
-    1
-   ],
-   [
-    2772,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 7457,
-  "name": "Enchant Bracer - Minor Stamina",
-  "out_item": null,
-  "reagents": [
-   [
-    10940,
-    2
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 7857,
-  "name": "Enchant Chest - Stamina",
-  "out_item": null,
-  "reagents": [
-   [
-    10940,
-    2
-   ],
-   [
-    10998,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13687,
-  "name": "Enchant Boots - Lesser Spirit",
-  "out_item": null,
-  "reagents": [
-   [
-    11134,
-    2
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 7786,
-  "name": "Enchant Weapon - Minor Beastslayer",
-  "out_item": null,
-  "reagents": [
-   [
-    10940,
-    2
-   ],
-   [
-    10939,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13536,
-  "name": "Enchant Bracer - Lesser Strength",
-  "out_item": null,
-  "reagents": [
-   [
-    11083,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 7788,
-  "name": "Enchant Weapon - Minor Striking",
+  "spell": 7454,
+  "name": "Enchant Cloak - Minor Resistance",
   "out_item": null,
   "reagents": [
    [
@@ -2504,54 +2316,22 @@
    [
     10938,
     1
-   ],
-   [
-    10978,
-    1
    ]
   ]
  },
  {
   "profession": "Enchanting",
-  "spell": 14809,
-  "name": "Lesser Mystic Wand",
-  "out_item": 11289,
-  "reagents": [
-   [
-    11291,
-    1
-   ],
-   [
-    11134,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13698,
-  "name": "Enchant Gloves - Skinning",
+  "spell": 13378,
+  "name": "Enchant Shield - Minor Stamina",
   "out_item": null,
   "reagents": [
    [
-    11137,
+    10998,
     1
    ],
    [
-    7392,
+    10940,
     1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13836,
-  "name": "Enchant Boots - Stamina",
-  "out_item": null,
-  "reagents": [
-   [
-    11137,
-    2
    ]
   ]
  },
@@ -2593,24 +2373,44 @@
  },
  {
   "profession": "Enchanting",
-  "spell": 13501,
-  "name": "Enchant Bracer - Lesser Stamina",
-  "out_item": null,
+  "spell": 14807,
+  "name": "Greater Magic Wand",
+  "out_item": 11288,
   "reagents": [
    [
-    11083,
+    4470,
     1
+   ],
+   [
+    10938,
+    2
    ]
   ]
  },
  {
   "profession": "Enchanting",
-  "spell": 13637,
-  "name": "Enchant Boots - Lesser Agility",
+  "spell": 13380,
+  "name": "Enchant 2H Weapon - Lesser Spirit",
   "out_item": null,
   "reagents": [
    [
-    11083,
+    10998,
+    1
+   ],
+   [
+    10940,
+    3
+   ]
+  ]
+ },
+ {
+  "profession": "Enchanting",
+  "spell": 7443,
+  "name": "Enchant Chest - Minor Intellect",
+  "out_item": null,
+  "reagents": [
+   [
+    10938,
     1
    ]
   ]
@@ -2629,16 +2429,12 @@
  },
  {
   "profession": "Enchanting",
-  "spell": 13653,
-  "name": "Enchant Weapon - Lesser Beastslayer",
+  "spell": 7426,
+  "name": "Enchant Chest - Minor Absorption",
   "out_item": null,
   "reagents": [
    [
-    5637,
-    1
-   ],
-   [
-    11138,
+    10938,
     1
    ]
   ]
@@ -2652,598 +2448,6 @@
    [
     10940,
     4
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 7421,
-  "name": "Runed Copper Rod",
-  "out_item": 6218,
-  "reagents": [
-   [
-    6217,
-    1
-   ],
-   [
-    247786,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13644,
-  "name": "Enchant Boots - Lesser Stamina",
-  "out_item": null,
-  "reagents": [
-   [
-    11083,
-    2
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13702,
-  "name": "Runed Truesilver Rod",
-  "out_item": 11145,
-  "reagents": [
-   [
-    11144,
-    1
-   ],
-   [
-    7971,
-    1
-   ],
-   [
-    11135,
-    1
-   ],
-   [
-    11137,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 7782,
-  "name": "Enchant Bracer - Minor Strength",
-  "out_item": null,
-  "reagents": [
-   [
-    10940,
-    3
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13661,
-  "name": "Enchant Bracer - Strength",
-  "out_item": null,
-  "reagents": [
-   [
-    11137,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 7771,
-  "name": "Enchant Cloak - Minor Protection",
-  "out_item": null,
-  "reagents": [
-   [
-    10940,
-    2
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 7867,
-  "name": "Enchant Boots - Minor Agility",
-  "out_item": null,
-  "reagents": [
-   [
-    10940,
-    3
-   ],
-   [
-    10998,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13635,
-  "name": "Enchant Cloak - Defense",
-  "out_item": null,
-  "reagents": [
-   [
-    11138,
-    1
-   ],
-   [
-    11083,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 7793,
-  "name": "Enchant 2H Weapon - Lesser Intellect",
-  "out_item": null,
-  "reagents": [
-   [
-    10938,
-    4
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13700,
-  "name": "Enchant Chest - Lesser Stats",
-  "out_item": null,
-  "reagents": [
-   [
-    11135,
-    1
-   ],
-   [
-    11137,
-    1
-   ],
-   [
-    11139,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 14807,
-  "name": "Greater Magic Wand",
-  "out_item": 11288,
-  "reagents": [
-   [
-    4470,
-    1
-   ],
-   [
-    10938,
-    2
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13626,
-  "name": "Enchant Chest - Minor Stats",
-  "out_item": null,
-  "reagents": [
-   [
-    10998,
-    1
-   ],
-   [
-    11083,
-    1
-   ],
-   [
-    11084,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 7443,
-  "name": "Enchant Chest - Minor Intellect",
-  "out_item": null,
-  "reagents": [
-   [
-    10938,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13890,
-  "name": "Enchant Boots - Minor Speed",
-  "out_item": null,
-  "reagents": [
-   [
-    11177,
-    1
-   ],
-   [
-    7909,
-    1
-   ],
-   [
-    11174,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13659,
-  "name": "Enchant Shield - Spirit",
-  "out_item": null,
-  "reagents": [
-   [
-    11134,
-    1
-   ],
-   [
-    11137,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13815,
-  "name": "Enchant Gloves - Agility",
-  "out_item": null,
-  "reagents": [
-   [
-    11137,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13421,
-  "name": "Enchant Cloak - Lesser Protection",
-  "out_item": null,
-  "reagents": [
-   [
-    10940,
-    3
-   ],
-   [
-    10978,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13794,
-  "name": "Enchant Cloak - Resistance",
-  "out_item": null,
-  "reagents": [
-   [
-    11174,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13663,
-  "name": "Enchant Chest - Greater Intellect",
-  "out_item": null,
-  "reagents": [
-   [
-    11134,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13887,
-  "name": "Enchant Gloves - Strength",
-  "out_item": null,
-  "reagents": [
-   [
-    11174,
-    1
-   ],
-   [
-    11137,
-    2
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 1248805,
-  "name": "Enchant Weapon - Revelation",
-  "out_item": null,
-  "reagents": [
-   [
-    11083,
-    8
-   ],
-   [
-    11084,
-    6
-   ],
-   [
-    11082,
-    2
-   ],
-   [
-    249409,
-    4
-   ],
-   [
-    249410,
-    4
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 1248755,
-  "name": "Polished Driftwood Icon",
-  "out_item": 249398,
-  "reagents": [
-   [
-    11084,
-    1
-   ],
-   [
-    10939,
-    2
-   ],
-   [
-    10940,
-    3
-   ],
-   [
-    4470,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13648,
-  "name": "Enchant Bracer - Stamina",
-  "out_item": null,
-  "reagents": [
-   [
-    11083,
-    3
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 1245321,
-  "name": "Novice's Practice Wand",
-  "out_item": 247789,
-  "reagents": [
-   [
-    4470,
-    1
-   ],
-   [
-    247786,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13657,
-  "name": "Enchant Cloak - Fire Resistance",
-  "out_item": null,
-  "reagents": [
-   [
-    11134,
-    1
-   ],
-   [
-    7068,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 1230643,
-  "name": "Enchanted Lute",
-  "out_item": 279976,
-  "reagents": [
-   [
-    4470,
-    1
-   ],
-   [
-    10940,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13631,
-  "name": "Enchant Shield - Lesser Stamina",
-  "out_item": null,
-  "reagents": [
-   [
-    11134,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13503,
-  "name": "Enchant Weapon - Lesser Striking",
-  "out_item": null,
-  "reagents": [
-   [
-    11083,
-    1
-   ],
-   [
-    11084,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 7859,
-  "name": "Enchant Bracer - Lesser Spirit",
-  "out_item": null,
-  "reagents": [
-   [
-    10998,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 14810,
-  "name": "Greater Mystic Wand",
-  "out_item": 217287,
-  "reagents": [
-   [
-    11291,
-    1
-   ],
-   [
-    11134,
-    1
-   ],
-   [
-    11137,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 7454,
-  "name": "Enchant Cloak - Minor Resistance",
-  "out_item": null,
-  "reagents": [
-   [
-    10940,
-    1
-   ],
-   [
-    10938,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 7861,
-  "name": "Enchant Cloak - Lesser Fire Resistance",
-  "out_item": null,
-  "reagents": [
-   [
-    6371,
-    1
-   ],
-   [
-    10998,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 7428,
-  "name": "Enchant Bracer - Minor Deflect",
-  "out_item": null,
-  "reagents": [
-   [
-    10938,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13522,
-  "name": "Enchant Cloak - Lesser Shadow Resistance",
-  "out_item": null,
-  "reagents": [
-   [
-    10998,
-    1
-   ],
-   [
-    6048,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13746,
-  "name": "Enchant Cloak - Greater Defense",
-  "out_item": null,
-  "reagents": [
-   [
-    11137,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13640,
-  "name": "Enchant Chest - Greater Stamina",
-  "out_item": null,
-  "reagents": [
-   [
-    11083,
-    2
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13693,
-  "name": "Enchant Weapon - Striking",
-  "out_item": null,
-  "reagents": [
-   [
-    11135,
-    1
-   ],
-   [
-    11139,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13378,
-  "name": "Enchant Shield - Minor Stamina",
-  "out_item": null,
-  "reagents": [
-   [
-    10998,
-    1
-   ],
-   [
-    10940,
-    1
    ]
   ]
  },
@@ -3273,6 +2477,126 @@
  },
  {
   "profession": "Enchanting",
+  "spell": 1248745,
+  "name": "Orb of Mystic Insight",
+  "out_item": 249394,
+  "reagents": [
+   [
+    10978,
+    2
+   ],
+   [
+    11082,
+    2
+   ],
+   [
+    10940,
+    5
+   ]
+  ]
+ },
+ {
+  "profession": "Enchanting",
+  "spell": 13421,
+  "name": "Enchant Cloak - Lesser Protection",
+  "out_item": null,
+  "reagents": [
+   [
+    10940,
+    3
+   ],
+   [
+    10978,
+    1
+   ]
+  ]
+ },
+ {
+  "profession": "Enchanting",
+  "spell": 7793,
+  "name": "Enchant 2H Weapon - Lesser Intellect",
+  "out_item": null,
+  "reagents": [
+   [
+    10938,
+    4
+   ]
+  ]
+ },
+ {
+  "profession": "Enchanting",
+  "spell": 25124,
+  "name": "Minor Wizard Oil",
+  "out_item": 20744,
+  "reagents": [
+   [
+    10940,
+    1
+   ],
+   [
+    17034,
+    1
+   ],
+   [
+    3371,
+    1
+   ]
+  ]
+ },
+ {
+  "profession": "Enchanting",
+  "spell": 7421,
+  "name": "Runed Copper Rod",
+  "out_item": 6218,
+  "reagents": [
+   [
+    6217,
+    1
+   ],
+   [
+    247786,
+    1
+   ]
+  ]
+ },
+ {
+  "profession": "Enchanting",
+  "spell": 7745,
+  "name": "Enchant 2H Weapon - Minor Impact",
+  "out_item": null,
+  "reagents": [
+   [
+    10940,
+    1
+   ],
+   [
+    10978,
+    1
+   ]
+  ]
+ },
+ {
+  "profession": "Enchanting",
+  "spell": 7788,
+  "name": "Enchant Weapon - Minor Striking",
+  "out_item": null,
+  "reagents": [
+   [
+    10940,
+    1
+   ],
+   [
+    10938,
+    1
+   ],
+   [
+    10978,
+    1
+   ]
+  ]
+ },
+ {
+  "profession": "Enchanting",
   "spell": 13464,
   "name": "Enchant Shield - Lesser Protection",
   "out_item": null,
@@ -3289,14 +2613,10 @@
  },
  {
   "profession": "Enchanting",
-  "spell": 13485,
-  "name": "Enchant Shield - Lesser Spirit",
+  "spell": 7457,
+  "name": "Enchant Bracer - Minor Stamina",
   "out_item": null,
   "reagents": [
-   [
-    10998,
-    1
-   ],
    [
     10940,
     2
@@ -3305,165 +2625,25 @@
  },
  {
   "profession": "Enchanting",
-  "spell": 7748,
-  "name": "Enchant Chest - Lesser Stamina",
+  "spell": 7771,
+  "name": "Enchant Cloak - Minor Protection",
   "out_item": null,
   "reagents": [
    [
     10940,
-    1
-   ],
-   [
-    10938,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 7426,
-  "name": "Enchant Chest - Minor Absorption",
-  "out_item": null,
-  "reagents": [
-   [
-    10938,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13642,
-  "name": "Enchant Bracer - Spirit",
-  "out_item": null,
-  "reagents": [
-   [
-    11134,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13695,
-  "name": "Enchant 2H Weapon - Impact",
-  "out_item": null,
-  "reagents": [
-   [
-    11137,
     2
-   ],
-   [
-    11139,
-    1
    ]
   ]
  },
  {
   "profession": "Enchanting",
-  "spell": 13380,
-  "name": "Enchant 2H Weapon - Lesser Spirit",
+  "spell": 7782,
+  "name": "Enchant Bracer - Minor Strength",
   "out_item": null,
   "reagents": [
-   [
-    10998,
-    1
-   ],
    [
     10940,
     3
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13841,
-  "name": "Enchant Gloves - Advanced Mining",
-  "out_item": null,
-  "reagents": [
-   [
-    11137,
-    2
-   ],
-   [
-    6037,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13655,
-  "name": "Enchant Weapon - Lesser Elemental Slayer",
-  "out_item": null,
-  "reagents": [
-   [
-    7067,
-    1
-   ],
-   [
-    11138,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13628,
-  "name": "Runed Golden Rod",
-  "out_item": 11130,
-  "reagents": [
-   [
-    11128,
-    1
-   ],
-   [
-    5500,
-    1
-   ],
-   [
-    11082,
-    1
-   ],
-   [
-    11083,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 25126,
-  "name": "Lesser Wizard Oil",
-  "out_item": 20746,
-  "reagents": [
-   [
-    11137,
-    1
-   ],
-   [
-    17035,
-    2
-   ],
-   [
-    3372,
-    1
-   ]
-  ]
- },
- {
-  "profession": "Enchanting",
-  "spell": 13617,
-  "name": "Enchant Gloves - Herbalism",
-  "out_item": null,
-  "reagents": [
-   [
-    11083,
-    1
-   ],
-   [
-    3356,
-    1
    ]
   ]
  },
@@ -3475,6 +2655,22 @@
   "reagents": [
    [
     10940,
+    1
+   ]
+  ]
+ },
+ {
+  "profession": "Enchanting",
+  "spell": 1245321,
+  "name": "Novice's Practice Wand",
+  "out_item": 247789,
+  "reagents": [
+   [
+    4470,
+    1
+   ],
+   [
+    247786,
     1
    ]
   ]

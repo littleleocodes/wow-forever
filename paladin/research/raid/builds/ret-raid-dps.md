@@ -70,17 +70,17 @@ Allocation adopted on 2026-09-27 from `cand-ret-dps-r1`, the best build in the c
 
 ## Rank among our builds and the community simulator's
 
-**4 of 7** for `ret-dps` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 7** for `ret-dps` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Unsealed Wrath* | community simulator | - | 477 | +0.0% | 874 | -0.5% | 26 s |
-| 2 | *Holy Shock* | community simulator | - | 461 | -3.3% | 759 | -13.6% | 0 s |
-| 3 | [`retribution-open-raid`](retribution-open-raid.md) | ours: derived (open search) | 16/4/31 | 449 | -6.0% | 878 | +0.0% | 47 s |
-| 4 | **[`ret-raid-dps`](ret-raid-dps.md)** | ours: hand draft | 17/6/28 | 423 | -11.2% | 703 | -20.0% | 0 s |
-| 5 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 17/6/28 | 422 | -11.6% | 703 | -20.0% | 0 s |
-| 6 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: derived (ML search) | 9/14/28 | 381 | -20.1% | 698 | -20.5% | 16 s |
-| 7 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 8/15/28 | 377 | -21.0% | 699 | -20.4% | 18 s |
+| 1 | *Unsealed Wrath* | community simulator | - | 510 | +0.0% | 821 | -0.1% | 13 s |
+| 2 | [`retribution-open-raid`](retribution-open-raid.md) | ours: derived (open search) | 16/4/31 | 483 | -5.3% | 823 | +0.0% | 32 s |
+| 3 | *Holy Shock* | community simulator | - | 465 | -8.9% | 715 | -13.1% | 0 s |
+| 4 | **[`ret-raid-dps`](ret-raid-dps.md)** | ours: hand draft | 17/6/28 | 426 | -16.5% | 659 | -19.8% | 0 s |
+| 5 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 17/6/28 | 426 | -16.5% | 659 | -19.8% | 0 s |
+| 6 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: derived (ML search) | 9/14/28 | 393 | -22.9% | 657 | -20.1% | 7 s |
+| 7 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 8/15/28 | 391 | -23.3% | 658 | -20.0% | 8 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -114,7 +114,6 @@ Damage by ability:
 | Holy Strike | 16% |
 | Hammer of Wrath | 5% |
 | Demonic Rune | 2% |
-| spell 16614 | 0% |
 
 ## Notes
 

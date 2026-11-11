@@ -14,37 +14,41 @@
   "bis": {
    "entry": "frost-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-frost-bis.gear.json",
-   "date": "2026-11-10",
+   "date": "2026-11-11",
    "chosen": "all-slots",
-   "ilvl": 61.1,
+   "ilvl": 61.3,
    "trinkets": [
-    "Weakness Analyzer",
-    "Talisman of Ephemeral Power"
+    "Talisman of Ephemeral Power",
+    "Eye of the Beast"
    ],
    "trinket_screen": {
-    "Weakness Analyzer (272438)": 1.0207,
-    "Talisman of Ephemeral Power (18820)": 1.0207,
-    "Frozen Heart of the Mountain (249469)": 1.0129,
-    "Serenity Field (272439)": 1.0111,
+    "Talisman of Ephemeral Power (18820)": 1.0218,
+    "Eye of the Beast (13968)": 1.018,
+    "Weakness Analyzer (272438)": 1.0162,
+    "Frozen Heart of the Mountain (249469)": 1.0119,
+    "Smolderweb's Eye (13213)": 1.0109,
     "Jewel of the Guard Captain (270225)": 1.01,
-    "Rune of the Guard Captain (19120)": 1.0088,
-    "Cleansed Vilebranch Medallion (270275)": 1.0088,
-    "Everlook Delivery Bot (274760)": 1.005,
-    "Worgenbane Talisman (273643)": 1.0004,
-    "Alchemist's Stone (13503)": 1.0004,
-    "Enriched Seal (271905)": 1.0003,
-    "Darkspear Voodoo Seal (272059)": 1.0003,
-    "Roogug's Severed Head (274152)": 1.0002,
-    "Shard of the Splithooves (10659)": 1.0002,
-    "Lookie's Spyglass (273298)": 1.0002,
-    "Enriched Seal (271903)": 1.0001,
-    "Darkspear Voodoo Seal (272061)": 1.0001,
+    "Rune of the Guard Captain (19120)": 1.0083,
+    "Cleansed Vilebranch Medallion (270275)": 1.0083,
+    "Cannonball Runner (13382)": 1.0058,
+    "Serenity Field (272439)": 1.0053,
+    "Everlook Delivery Bot (274760)": 1.0053,
+    "Second Wind (11819)": 1.0036,
+    "Worgenbane Talisman (273643)": 1.0003,
+    "Alchemist's Stone (13503)": 1.0003,
+    "Dog Whistle (3456)": 1.0,
     "Minor Recombobulator (4381)": 1.0,
     "Gnomish Universal Remote (7506)": 1.0,
     "Demon's Blood (10779)": 1.0,
+    "Force of Will (11810)": 1.0,
     "Smoking Heart of the Mountain (11811)": 1.0,
+    "Hand of Justice (11815)": 1.0,
     "Heart of the Scale (13164)": 1.0,
+    "Blackhand's Breadth (13965)": 1.0,
     "Arcanite Dragonling (16022)": 1.0,
+    "Heart of Noxxion (17744)": 1.0,
+    "Vigilance Charm (18370)": 1.0,
+    "Counterattack Lodestone (18537)": 1.0,
     "Gyrofreeze Ice Reflector (18634)": 1.0,
     "Major Recombobulator (18637)": 1.0,
     "Hyper-Radiant Flame Reflector (18638)": 1.0,
@@ -61,170 +65,7 @@
     "Talisman of Arathor (21119)": 1.0,
     "Defiler's Talisman (21120)": 1.0,
     "Defender of the Timbermaw (21326)": 1.0,
-    "Molten Heart of the Mountain (249470)": 1.0,
-    "Dormant Heart of the Mountain (249473)": 1.0,
-    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
-    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
-    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
-    "Gnomish Poultryizer (260824)": 1.0,
-    "Volunteer's Lucky Seal (271904)": 1.0,
-    "Volunteer's Lucky Seal (271906)": 1.0,
-    "Relentless Raider's Seal (272060)": 1.0,
-    "Relentless Raider's Seal (272062)": 1.0,
-    "Adaptive Combat Assistant (272437)": 1.0,
-    "Defender's Grip Stabilizer (272440)": 1.0,
-    "Cursed Murloc Eye (273840)": 1.0,
-    "Everlook Pathcarver (274759)": 1.0,
-    "Parachute-Priest Pager (274761)": 1.0
-   },
-   "names": [
-    "Spellpower Goggles Xtreme Plus",
-    "Choker of the Fire Lord",
-    "Mantle of the Timbermaw",
-    "Arcanoweave Cloak",
-    "Robe of the Archmage",
-    "Rockfury Bracers",
-    "Gloves of Spell Mastery",
-    "Belt of the Archmage",
-    "Flarecore Leggings",
-    "Earthen Silk Slippers",
-    "Ring of Spell Power",
-    "Ring of Spell Power",
-    "Weakness Analyzer",
-    "Talisman of Ephemeral Power",
-    "Sageblade",
-    "Orb of the Forgotten Seer",
-    "Wand of Biting Cold"
-   ],
-   "race_seed1": {
-    "current": 1.0,
-    "all-slots": 1.0273147903036426,
-    "keep-sets-and-effects": 1.0050149900759877
-   },
-   "confirm_seed2": {
-    "current": 1.0,
-    "all-slots": 1.0293175307799198
-   },
-   "weights": {
-    "StatArcaneDamage": 0.0927,
-    "StatCritRating": 0.3134,
-    "StatFireDamage": 0.0019,
-    "StatFrostDamage": 0.3604,
-    "StatHasteRating": 0.5687,
-    "StatHitRating": 0.5702,
-    "StatIntellect": 0.0815,
-    "StatSpellDamage": 0.4549,
-    "StatSpellPiercing": 1.0151,
-    "StatSpirit": -0.0001
-   },
-   "evaluated_on": [
-    "frost-raid: ml winner"
-   ],
-   "replaced": [
-    {
-     "slot": 0,
-     "from": "Field Marshal's Coronet",
-     "to": "Spellpower Goggles Xtreme Plus"
-    },
-    {
-     "slot": 2,
-     "from": "Field Marshal's Silk Spaulders",
-     "to": "Mantle of the Timbermaw"
-    },
-    {
-     "slot": 3,
-     "from": "Hide of the Wild",
-     "to": "Arcanoweave Cloak"
-    },
-    {
-     "slot": 6,
-     "from": "Marshal's Silk Gloves",
-     "to": "Gloves of Spell Mastery"
-    },
-    {
-     "slot": 8,
-     "from": "Marshal's Silk Leggings",
-     "to": "Flarecore Leggings"
-    },
-    {
-     "slot": 9,
-     "from": "Marshal's Silk Footwraps",
-     "to": "Earthen Silk Slippers"
-    },
-    {
-     "slot": 12,
-     "from": "Talisman of Ephemeral Power",
-     "to": "Weakness Analyzer"
-    },
-    {
-     "slot": 13,
-     "from": "Weakness Analyzer",
-     "to": "Talisman of Ephemeral Power"
-    },
-    {
-     "slot": 14,
-     "from": "Grand Marshal's Mageblade",
-     "to": "Sageblade"
-    },
-    {
-     "slot": 15,
-     "from": "Therazane's Touch",
-     "to": "Orb of the Forgotten Seer"
-    },
-    {
-     "slot": 16,
-     "from": "Brilliant Wand",
-     "to": "Wand of Biting Cold"
-    }
-   ],
-   "remade": {
-    "simulator": "wowsims/forever 16e85426c",
-    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
-    "missing_before": [],
-    "winner_of": "bis-dummy",
-    "talents_left_out": [],
-    "minutes": 0.4
-   }
-  },
-  "bis2": true,
-  "prebis": {
-   "entry": "frost-raid",
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-frost-prebis.gear.json",
-   "date": "2026-11-10",
-   "chosen": "all-slots",
-   "ilvl": 58.9,
-   "trinkets": [
-    "Weakness Analyzer",
-    "Frozen Heart of the Mountain"
-   ],
-   "trinket_screen": {
-    "Weakness Analyzer (272438)": 1.0215,
-    "Frozen Heart of the Mountain (249469)": 1.0119,
-    "Serenity Field (272439)": 1.0112,
-    "Jewel of the Guard Captain (270225)": 1.0105,
-    "Rune of the Guard Captain (19120)": 1.0078,
-    "Cleansed Vilebranch Medallion (270275)": 1.0078,
-    "Everlook Delivery Bot (274760)": 1.0027,
-    "Minor Recombobulator (4381)": 1.0,
-    "Gnomish Universal Remote (7506)": 1.0,
-    "Demon's Blood (10779)": 1.0,
-    "Smoking Heart of the Mountain (11811)": 1.0,
-    "Heart of the Scale (13164)": 1.0,
-    "Arcanite Dragonling (16022)": 1.0,
-    "Gyrofreeze Ice Reflector (18634)": 1.0,
-    "Major Recombobulator (18637)": 1.0,
-    "Hyper-Radiant Flame Reflector (18638)": 1.0,
-    "Ultra-Flash Shadow Reflector (18639)": 1.0,
-    "The Eye of Shadow (18665)": 1.0,
-    "Talisman of Arathor (20071)": 1.0,
-    "Defiler's Talisman (20072)": 1.0,
-    "Defiler's Talisman (21115)": 1.0,
-    "Defiler's Talisman (21116)": 1.0,
-    "Talisman of Arathor (21117)": 1.0,
-    "Talisman of Arathor (21118)": 1.0,
-    "Talisman of Arathor (21119)": 1.0,
-    "Defiler's Talisman (21120)": 1.0,
-    "Defender of the Timbermaw (21326)": 1.0,
+    "Heart of Wyrmthalak (22321)": 1.0,
     "Molten Heart of the Mountain (249470)": 1.0,
     "Dormant Heart of the Mountain (249473)": 1.0,
     "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
@@ -240,53 +81,204 @@
     "Cursed Murloc Eye (273840)": 1.0,
     "Everlook Pathcarver (274759)": 1.0,
     "Parachute-Priest Pager (274761)": 1.0,
-    "Lookie's Spyglass (273298)": 1.0,
-    "Alchemist's Stone (13503)": 0.9999,
-    "Enriched Seal (271905)": 0.9999,
-    "Darkspear Voodoo Seal (272059)": 0.9999,
-    "Worgenbane Talisman (273643)": 0.9999,
-    "Roogug's Severed Head (274152)": 0.9999,
-    "Shard of the Splithooves (10659)": 0.9998,
-    "Enriched Seal (271903)": 0.9998,
-    "Darkspear Voodoo Seal (272061)": 0.9998
+    "Lookie's Spyglass (273298)": 0.9999,
+    "Shard of the Splithooves (10659)": 0.9999,
+    "Burst of Knowledge (11832)": 0.9998,
+    "Mindtap Talisman (18371)": 0.9998,
+    "Enriched Seal (271905)": 0.9997,
+    "Darkspear Voodoo Seal (272059)": 0.9997,
+    "Roogug's Severed Head (274152)": 0.9997,
+    "Enriched Seal (271903)": 0.9997,
+    "Darkspear Voodoo Seal (272061)": 0.9997
    },
    "names": [
-    "Spellpower Goggles Xtreme Plus",
-    "Orb of the Darkmoon",
+    "Crimson Felt Hat",
+    "Choker of the Fire Lord",
     "Mantle of the Timbermaw",
     "Arcanoweave Cloak",
     "Robe of the Archmage",
     "Rockfury Bracers",
     "Gloves of Spell Mastery",
     "Belt of the Archmage",
-    "Ghostweave Pants",
+    "Flarecore Leggings",
     "Earthen Silk Slippers",
-    "Warden's Signet of Brilliance",
-    "Blessed Band of Light",
-    "Weakness Analyzer",
-    "Frozen Heart of the Mountain",
+    "Ring of Spell Power",
+    "Ring of Spell Power",
+    "Talisman of Ephemeral Power",
+    "Eye of the Beast",
     "Sageblade",
     "Orb of the Forgotten Seer",
     "Wand of Biting Cold"
    ],
    "race_seed1": {
-    "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9882255981719097
+    "current": 1.0,
+    "all-slots": 1.0502012438607669,
+    "keep-sets-and-effects": 1.0236175387865414,
+    "previous": 1.045900177122184,
+    "previous+trinkets": 1.0471949111967216
    },
    "confirm_seed2": {
-    "keep-sets-and-effects": 1.0,
-    "all-slots": 1.0124413946621398
+    "current": 1.0,
+    "all-slots": 1.0499247634300095
    },
    "weights": {
-    "StatArcaneDamage": 0.0941,
-    "StatCritRating": 0.2913,
+    "StatArcaneDamage": 0.0922,
+    "StatCritRating": 0.3286,
+    "StatFireDamage": 0.0018,
+    "StatFrostDamage": 0.3565,
+    "StatHasteRating": 0.5235,
+    "StatHitRating": 0.5911,
+    "StatIntellect": 0.0894,
+    "StatSpellDamage": 0.4505,
+    "StatSpellPiercing": 1.005,
+    "StatSpirit": -0.0001
+   },
+   "evaluated_on": [
+    "frost-raid: ml winner"
+   ],
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Spellpower Goggles Xtreme Plus",
+     "to": "Crimson Felt Hat"
+    },
+    {
+     "slot": 12,
+     "from": "Weakness Analyzer",
+     "to": "Talisman of Ephemeral Power"
+    },
+    {
+     "slot": 13,
+     "from": "Talisman of Ephemeral Power",
+     "to": "Eye of the Beast"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever ff9babba5",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 0.5
+   }
+  },
+  "bis2": true,
+  "prebis": {
+   "entry": "frost-raid",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-frost-prebis.gear.json",
+   "date": "2026-11-11",
+   "chosen": "all-slots",
+   "ilvl": 61.0,
+   "trinkets": [
+    "Weakness Analyzer",
+    "Eye of the Beast"
+   ],
+   "trinket_screen": {
+    "Weakness Analyzer (272438)": 1.0172,
+    "Eye of the Beast (13968)": 1.0136,
+    "Frozen Heart of the Mountain (249469)": 1.0128,
+    "Smolderweb's Eye (13213)": 1.0121,
+    "Jewel of the Guard Captain (270225)": 1.0105,
+    "Rune of the Guard Captain (19120)": 1.0099,
+    "Cleansed Vilebranch Medallion (270275)": 1.0099,
+    "Cannonball Runner (13382)": 1.0071,
+    "Serenity Field (272439)": 1.0059,
+    "Everlook Delivery Bot (274760)": 1.0046,
+    "Second Wind (11819)": 1.0043,
+    "Worgenbane Talisman (273643)": 1.0006,
+    "Alchemist's Stone (13503)": 1.0006,
+    "Burst of Knowledge (11832)": 1.0006,
+    "Roogug's Severed Head (274152)": 1.0005,
+    "Enriched Seal (271905)": 1.0005,
+    "Darkspear Voodoo Seal (272059)": 1.0005,
+    "Shard of the Splithooves (10659)": 1.0003,
+    "Enriched Seal (271903)": 1.0002,
+    "Darkspear Voodoo Seal (272061)": 1.0002,
+    "Lookie's Spyglass (273298)": 1.0002,
+    "Dog Whistle (3456)": 1.0,
+    "Minor Recombobulator (4381)": 1.0,
+    "Gnomish Universal Remote (7506)": 1.0,
+    "Demon's Blood (10779)": 1.0,
+    "Force of Will (11810)": 1.0,
+    "Smoking Heart of the Mountain (11811)": 1.0,
+    "Hand of Justice (11815)": 1.0,
+    "Heart of the Scale (13164)": 1.0,
+    "Blackhand's Breadth (13965)": 1.0,
+    "Arcanite Dragonling (16022)": 1.0,
+    "Heart of Noxxion (17744)": 1.0,
+    "Vigilance Charm (18370)": 1.0,
+    "Counterattack Lodestone (18537)": 1.0,
+    "Gyrofreeze Ice Reflector (18634)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Hyper-Radiant Flame Reflector (18638)": 1.0,
+    "Ultra-Flash Shadow Reflector (18639)": 1.0,
+    "The Eye of Shadow (18665)": 1.0,
+    "Talisman of Arathor (20071)": 1.0,
+    "Defiler's Talisman (20072)": 1.0,
+    "Defiler's Talisman (21115)": 1.0,
+    "Defiler's Talisman (21116)": 1.0,
+    "Talisman of Arathor (21117)": 1.0,
+    "Talisman of Arathor (21118)": 1.0,
+    "Talisman of Arathor (21119)": 1.0,
+    "Defiler's Talisman (21120)": 1.0,
+    "Defender of the Timbermaw (21326)": 1.0,
+    "Heart of Wyrmthalak (22321)": 1.0,
+    "Molten Heart of the Mountain (249470)": 1.0,
+    "Dormant Heart of the Mountain (249473)": 1.0,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
+    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
+    "Gnomish Poultryizer (260824)": 1.0,
+    "Volunteer's Lucky Seal (271904)": 1.0,
+    "Volunteer's Lucky Seal (271906)": 1.0,
+    "Relentless Raider's Seal (272060)": 1.0,
+    "Relentless Raider's Seal (272062)": 1.0,
+    "Adaptive Combat Assistant (272437)": 1.0,
+    "Defender's Grip Stabilizer (272440)": 1.0,
+    "Cursed Murloc Eye (273840)": 1.0,
+    "Everlook Pathcarver (274759)": 1.0,
+    "Parachute-Priest Pager (274761)": 1.0,
+    "Mindtap Talisman (18371)": 0.9993
+   },
+   "names": [
+    "Crimson Felt Hat",
+    "Nacreous Shell Necklace",
+    "Mantle of the Timbermaw",
+    "Arcanoweave Cloak",
+    "Robe of the Archmage",
+    "Rockfury Bracers",
+    "Gloves of Spell Mastery",
+    "Belt of the Archmage",
+    "Skyshroud Leggings",
+    "Earthen Silk Slippers",
+    "Warden's Signet of Brilliance",
+    "Blessed Band of Light",
+    "Weakness Analyzer",
+    "Eye of the Beast",
+    "Sageblade",
+    "Skull of Burning Shadows",
+    "Wand of Biting Cold"
+   ],
+   "race_seed1": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 0.9779522780356555,
+    "previous": 0.987634914479356,
+    "previous+trinkets": 0.9919135813441965
+   },
+   "confirm_seed2": {
+    "previous": 1.0,
+    "all-slots": 1.0115476748004837
+   },
+   "weights": {
+    "StatArcaneDamage": 0.0939,
+    "StatCritRating": 0.3052,
     "StatFireDamage": 0.0019,
-    "StatFrostDamage": 0.3663,
-    "StatHasteRating": 0.5472,
-    "StatHitRating": 0.7168,
-    "StatIntellect": 0.072,
-    "StatSpellDamage": 0.4622,
-    "StatSpellPiercing": 0.977,
+    "StatFrostDamage": 0.3644,
+    "StatHasteRating": 0.5108,
+    "StatHitRating": 0.738,
+    "StatIntellect": 0.0839,
+    "StatSpellDamage": 0.4601,
+    "StatSpellPiercing": 0.9757,
     "StatSpirit": -0.0001
    },
    "evaluated_on": [
@@ -295,57 +287,37 @@
    "replaced": [
     {
      "slot": 0,
-     "from": "Field Marshal's Coronet",
-     "to": "Spellpower Goggles Xtreme Plus"
+     "from": "Spellpower Goggles Xtreme Plus",
+     "to": "Crimson Felt Hat"
     },
     {
-     "slot": 2,
-     "from": "Field Marshal's Silk Spaulders",
-     "to": "Mantle of the Timbermaw"
-    },
-    {
-     "slot": 3,
-     "from": "Hide of the Wild",
-     "to": "Arcanoweave Cloak"
+     "slot": 1,
+     "from": "Orb of the Darkmoon",
+     "to": "Nacreous Shell Necklace"
     },
     {
      "slot": 8,
-     "from": "Marshal's Silk Leggings",
-     "to": "Ghostweave Pants"
+     "from": "Ghostweave Pants",
+     "to": "Skyshroud Leggings"
     },
     {
-     "slot": 9,
-     "from": "Marshal's Silk Footwraps",
-     "to": "Earthen Silk Slippers"
-    },
-    {
-     "slot": 10,
-     "from": "Signet Ring of the Bronze Dragonflight",
-     "to": "Warden's Signet of Brilliance"
-    },
-    {
-     "slot": 11,
-     "from": "Warden's Signet of Brilliance",
-     "to": "Blessed Band of Light"
-    },
-    {
-     "slot": 14,
-     "from": "Grand Marshal's Mageblade",
-     "to": "Sageblade"
+     "slot": 13,
+     "from": "Frozen Heart of the Mountain",
+     "to": "Eye of the Beast"
     },
     {
      "slot": 15,
-     "from": "Therazane's Touch",
-     "to": "Orb of the Forgotten Seer"
+     "from": "Orb of the Forgotten Seer",
+     "to": "Skull of Burning Shadows"
     }
    ],
    "remade": {
-    "simulator": "wowsims/forever 16e85426c",
+    "simulator": "wowsims/forever ff9babba5",
     "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
     "missing_before": [],
     "winner_of": "bis-dummy",
     "talents_left_out": [],
-    "minutes": 0.4
+    "minutes": 0.5
    }
   }
  },
@@ -2992,7 +2964,7 @@
  "builds": {
   "written": [],
   "superseded": [],
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "setting": "raid",
   "why": "confirms frost-ml-raid (-3.79% in a full raid)"
  },

@@ -119,7 +119,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Seal of the Crusader** (6) is not part of the leveling rotation. Stay on **Seal of Righteousness**.
 
-*Fight lab, seconds per kill: 17 at level 6. Presses per kill at level 6: Melee 3.2, Judgement 1.3, Holy Strike 1.1, Seal of Righteousness 1.0.*
+*Fight lab, seconds per kill: 16 at level 6. Presses per kill at level 6: Melee 3.0, Judgement 1.2, Holy Strike 1.1, Seal of Righteousness 1.0.*
 
 ## Levels 8-9: Hammer of Justice
 
@@ -140,7 +140,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Purify** (8) removes a poison or a disease. It is not part of the fight.
 
-*Fight lab, seconds per kill: 19 at level 8. Presses per kill at level 8: Melee 3.8, Judgement 1.5, Holy Strike 1.3, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 18 at level 8. Presses per kill at level 8: Melee 3.5, Judgement 1.4, Holy Strike 1.3, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
 
 ## Levels 10-19: Talents begin, Lay on Hands
 
@@ -167,7 +167,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Blessing of Protection** (10) and **Blessing of Freedom** (18) are tools for a bad pull, not rotation.
 - Buy the next rank of the defensive spells on your bars too: **Divine Protection** at 18 (8 seconds instead of 6), **Blessing of Protection** at 24 and 38 (8, then 10 seconds), **Lay on Hands** at 30 and 50 and **Divine Shield** at 50.
 
-*Fight lab, seconds per kill: 18 at level 10, 22 at level 19. Presses per kill at level 10: Melee 3.2, Judgement 1.4, Holy Strike 1.2, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 17 at level 10, 21 at level 19. Presses per kill at level 10: Melee 3.0, Judgement 1.3, Holy Strike 1.1, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
 
 ## Levels 20-29: Flash of Light, the same fight
 
@@ -194,7 +194,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Exorcism** (20) only works on Undead and Demons. Use it on cooldown against those; the fight lab does not model it.
 - The healing talents start early: **Illumination** (20-24) returns mana after a critical heal, **Spiritual Focus** (14, 19 and 25-27) keeps your heals from being pushed back, **Healing Light** (28-29) makes them bigger.
 
-*Fight lab, seconds per kill: 22 at level 20, 27 at level 29. Presses per kill at level 20: Melee 4.4, Judgement 1.8, Holy Strike 1.6, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 22 at level 20, 26 at level 29. Presses per kill at level 20: Melee 4.2, Judgement 1.8, Holy Strike 1.6, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
 
 ## Levels 30-43: Holy Shock
 
@@ -224,7 +224,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - From 31 the points go into Retribution: **Benediction** (31-35) makes instant spells such as **Holy Shock**, your seal and **Judgement** 10% cheaper, **Conviction** (36-38) adds 6% critical chance to spells and attacks, **Deflection** (39-40) adds parry and **Pursuit of Justice** (41-42) 15% movement speed. Then Protection's **Divine Intellect** (43-47). Nothing new to press.
 - From 34, **Divine Shield** replaces **Divine Protection** as your bubble: longer, and it takes the same key.
 
-*Fight lab, seconds per kill: 33 at level 30, 38 at level 40, 40 at level 43. Presses per kill at level 30: Melee 6.8, Judgement 2.6, Holy Strike 2.4, Seal of Righteousness 1.0, Holy Shock 0.1, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 32 at level 30, 37 at level 40, 39 at level 43. Presses per kill at level 30: Melee 6.5, Judgement 2.6, Holy Strike 2.3, Seal of Righteousness 1.0, Holy Shock 0.2, Hammer of Justice 0.1.*
 
 ## Levels 44-50: Hammer of Wrath
 
@@ -252,7 +252,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Hammer of Wrath** has a 1-second cast and a 6-second cooldown.
 - **Unyielding Faith** (48-49) shortens fears and disorients on you by 30%, and **Healing Light** takes its last point at 50. Nothing new to press.
 
-*Fight lab, seconds per kill: 40 at level 44, 42 at level 50. Presses per kill at level 44: Melee 6.6, Judgement 2.6, Holy Strike 2.2, Seal of Righteousness 1.0, Hammer of Wrath 1.0, Holy Shock 0.6, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 39 at level 44, 41 at level 50. Presses per kill at level 44: Melee 6.3, Judgement 2.5, Holy Strike 2.2, Seal of Righteousness 1.0, Hammer of Wrath 1.0, Holy Shock 0.6, Hammer of Justice 0.1.*
 
 ## Levels 51-60: Divine Favor
 
@@ -282,7 +282,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Oath of Light** (53), **Boundless Light** (59) and **Light's Vigil** (60) are raid talents for healing others; the fight lab does not use them solo.
 - **Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**.
 
-*Fight lab, seconds per kill: 43 at level 51, 46 at level 60. Presses per kill at level 51: Melee 7.4, Judgement 2.8, Holy Strike 2.5, Seal of Righteousness 1.1, Hammer of Wrath 1.0, Holy Shock 0.6, Divine Favor 0.2, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 42 at level 51, 45 at level 60. Presses per kill at level 51: Melee 7.1, Judgement 2.7, Holy Strike 2.5, Seal of Righteousness 1.1, Hammer of Wrath 1.0, Holy Shock 0.6, Divine Favor 0.2, Hammer of Justice 0.1.*
 
 ## Between fights
 
@@ -298,4 +298,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Dungeons on the way: you can heal them with **Holy Light**, **Flash of Light** and **Holy Shock**. The raid build's healing talents come early: **Illumination** at 20-24, **Healing Light** at 28-29 and 50, **Holy Power** at 54-58.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-10: the stages are hand-kept in `_reference/data/level-guides/paladin.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-11: the stages are hand-kept in `_reference/data/level-guides/paladin.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

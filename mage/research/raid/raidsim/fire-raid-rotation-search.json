@@ -193,8 +193,8 @@
  "raid": {
   "class": "mage",
   "spec": "fire-raid",
-  "date": "2026-11-10",
-  "commit": "16e85426c",
+  "date": "2026-11-11",
+  "commit": "ff9babba5",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/mage/dps/apls/fire.apl.json",
@@ -202,7 +202,7 @@
   "builds": [
    {
     "label": "fire-open-raid",
-    "talents": "2032052001002-54500001230133031-003"
+    "talents": "2032052001002-55500001230123031-003"
    },
    {
     "label": "sim preset: Fire",
@@ -487,40 +487,40 @@
   "final": {
    "raid": {
     "fire-open-raid": {
-     "before": 687.4634428242653,
-     "after": 860.7646378956797,
-     "base": 687.4634428242653,
+     "before": 677.991861372121,
+     "after": 854.5798218957245,
+     "base": 677.991861372121,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0.2773074999941498
+     "oom_before": 1.217767499969544,
+     "oom_after": 1.217767499969544
     },
     "sim preset: Fire": {
-     "before": 690.5990597884174,
-     "after": 866.0026423343738,
-     "base": 690.5990597884174,
+     "before": 677.2565391791446,
+     "after": 852.390500682887,
+     "base": 677.2565391791446,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 2.498602499943269
+     "oom_before": 1.9825274999487568,
+     "oom_after": 1.9825274999487568
     },
     "fire-raid": {
-     "before": 682.957166816631,
-     "after": 830.4511966781989,
-     "base": 682.957166816631,
+     "before": 669.661306457789,
+     "after": 818.6232880490955,
+     "base": 669.661306457789,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 7.170644999910453
+     "oom_before": 5.738604999913993,
+     "oom_after": 5.738604999913993
     },
     "opt-fire-raid-raid-dps": {
-     "before": 671.486218140408,
-     "after": 826.9277610052325,
-     "base": 671.486218140408,
+     "before": 657.2519050421272,
+     "after": 812.3265109367763,
+     "base": 657.2519050421272,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0.556589999997999
+     "oom_before": 0.39141499999824886,
+     "oom_after": 0.39141499999824886
     }
    }
   },
@@ -533,13 +533,13 @@
     "Pyroblast"
    ],
    "rejected": {
-    "structure": 70,
+    "structure": 35,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-27",
-  "passes": 15
+  "passes": 16
  }
 }

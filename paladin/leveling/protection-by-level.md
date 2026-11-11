@@ -122,7 +122,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Seal of the Crusader** (6) is not part of the rotation.
 - **Hammer of Justice** (8) goes on E, but the Protection list's tuned rules of 2026-11-06 never cast it, not even on a mob that casts spells: kills measured slightly faster without it (under 1%), its mana going to **Judgement** and **Holy Strike**. Keep it for a pull that goes wrong.
 
-*Fight lab, seconds per kill: 19 at level 6. Presses per kill at level 6: Melee 4.5, Judgement 1.4, Holy Strike 1.3, Seal of Righteousness 1.0, Shield block 0.2.*
+*Fight lab, seconds per kill: 18 at level 6. Presses per kill at level 6: Melee 4.2, Judgement 1.3, Holy Strike 1.2, Seal of Righteousness 1.0, Shield block 0.2.*
 
 ## Levels 10-19: Seal of Fury, talents begin
 
@@ -148,7 +148,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Lay on Hands** (10) is a full heal for emergencies. **Blessing of Protection** (10) and **Blessing of Freedom** (18) are tools for a bad pull, not rotation.
 - Buy the next rank of the defensive spells on your bars too: **Divine Protection** at 18 (8 seconds instead of 6), **Blessing of Protection** at 24 and 38 (8, then 10 seconds), **Lay on Hands** at 30 and 50 and **Divine Shield** at 50.
 
-*Fight lab, seconds per kill: 19 at level 10, 23 at level 19. Presses per kill at level 10: Melee 4.4, Judgement 1.5, Holy Strike 1.3, Seal of Fury 1.0, Shield block 0.3.*
+*Fight lab, seconds per kill: 18 at level 10, 22 at level 19. Presses per kill at level 10: Melee 4.2, Judgement 1.4, Holy Strike 1.2, Seal of Fury 1.0, Shield block 0.3.*
 
 ## Levels 20-24: Templar's Bulwark
 
@@ -174,7 +174,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Consecration** (20): the tuned rules of 2026-11-06 never cast it against a single mob (about 3.5% faster kills without it). It is for packs.
 - **Exorcism** (20) only works on Undead and Demons. Use it on cooldown against those; the fight lab does not model it.
 
-*Fight lab, seconds per kill: 23 at level 20. Presses per kill at level 20: Melee 6.0, Judgement 2.0, Holy Strike 1.7, Seal of Fury 1.0, Shield block 0.7.*
+*Fight lab, seconds per kill: 23 at level 20. Presses per kill at level 20: Melee 5.7, Judgement 1.9, Holy Strike 1.7, Seal of Fury 1.0, Shield block 0.7.*
 
 ## Levels 25-29: Swift Judgement
 
@@ -200,7 +200,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Swift Judgement** judges your seal without touching **Judgement**'s cooldown, and the seal stays up. It is off the global cooldown: press it in the same moment as Q or R.
 - **Righteous Fury** (10) only adds threat until **Improved Righteous Fury** (49): a solo fight does not need it yet.
 
-*Fight lab, seconds per kill: 27 at level 25. Presses per kill at level 25: Melee 7.1, Judgement 2.6, Holy Strike 2.0, Seal of Fury 1.0, Shield block 0.9, Swift Judgement 0.4.*
+*Fight lab, seconds per kill: 26 at level 25. Presses per kill at level 25: Melee 6.9, Judgement 2.6, Holy Strike 2.0, Seal of Fury 1.0, Shield block 0.9, Swift Judgement 0.4.*
 
 ## Levels 30-43: Holy Shield
 
@@ -228,7 +228,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - From 34, **Divine Shield** replaces **Divine Protection** as your bubble: longer, and it takes the same key.
 - This build takes no **Seal of Command**: with a shield the Protection list stays on **Seal of Fury**.
 
-*Fight lab, seconds per kill: 29 at level 30, 33 at level 40, 31 at level 43. Presses per kill at level 30: Melee 6.7, Shield block 2.5, Judgement 2.4, Holy Shield 1.9, Holy Strike 1.8, Seal of Fury 1.0, Swift Judgement 0.4.*
+*Fight lab, seconds per kill: 29 at level 30, 32 at level 40, 30 at level 43. Presses per kill at level 30: Melee 6.5, Shield block 2.4, Judgement 2.4, Holy Shield 1.9, Holy Strike 1.7, Seal of Fury 1.0, Swift Judgement 0.4.*
 
 ## Levels 44-48: Hammer of Wrath, left out
 
@@ -255,7 +255,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Hammer of Wrath** (44): the tuned rules of 2026-11-06 never cast it (about 2% faster kills without it). Use it on a mob that runs.
 - **Sacred Arbiter** (46) makes **Holy Strike** hit 20% harder and refresh your judgements on the mob.
 
-*Fight lab, seconds per kill: 31 at level 44. Presses per kill at level 44: Melee 8.3, Judgement 3.5, Shield block 3.1, Holy Strike 2.3, Holy Shield 2.0, Seal of Fury 1.0, Swift Judgement 0.5.*
+*Fight lab, seconds per kill: 30 at level 44. Presses per kill at level 44: Melee 8.0, Judgement 3.3, Shield block 3.1, Holy Strike 2.2, Holy Shield 1.9, Seal of Fury 1.0, Swift Judgement 0.5.*
 
 ## Levels 49-55: Righteous Fury pays
 
@@ -283,7 +283,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Reckoning** (52-55 and 57): a block or a critical hit taken can store an extra attack, up to 4, released with your next swing. Nothing to press.
 - **Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**.
 
-*Fight lab, seconds per kill: 34 at level 49, 32 at level 50, 34 at level 55. Presses per kill at level 49: Melee 9.3, Judgement 3.8, Shield block 3.7, Holy Strike 2.6, Holy Shield 2.1, Seal of Fury 1.0, Swift Judgement 0.5.*
+*Fight lab, seconds per kill: 33 at level 49, 31 at level 50, 33 at level 55. Presses per kill at level 49: Melee 8.9, Judgement 3.6, Shield block 3.5, Holy Strike 2.5, Holy Shield 2.1, Seal of Fury 1.0, Swift Judgement 0.5.*
 
 ## Levels 56-60: Shieldsworn and Iron Creed
 
@@ -308,7 +308,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Iron Creed** (58-60): each **Holy Strike** cuts your damage taken for 6 seconds, only while **Righteous Fury** is on.
 - Q comes up more often from 56: keep pressing it whenever it is ready.
 
-*Fight lab, seconds per kill: 34 at level 56, 33 at level 60. Presses per kill at level 56: Melee 9.0, Holy Strike 3.5, Shield block 3.4, Judgement 3.2, Holy Shield 2.1, Reckoning 1.3, Seal of Fury 1.0, Swift Judgement 0.5.*
+*Fight lab, seconds per kill: 32 at level 56, 32 at level 60. Presses per kill at level 56: Melee 8.6, Holy Strike 3.4, Shield block 3.2, Judgement 3.1, Holy Shield 2.0, Reckoning 1.2, Seal of Fury 1.0, Swift Judgement 0.5.*
 
 ## Between fights
 
@@ -324,4 +324,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Dungeons on the way: you can tank them. **Seal of Fury**'s judgement taunts, and **Righteous Fury** adds threat.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-10: the stages are hand-kept in `_reference/data/level-guides/paladin.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-11: the stages are hand-kept in `_reference/data/level-guides/paladin.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

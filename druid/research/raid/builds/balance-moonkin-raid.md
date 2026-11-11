@@ -69,13 +69,13 @@ Allocation adopted on 2026-09-26 from `opt-balance-dps-raid-dps`, the best build
 
 ## Rank among our builds and the community simulator's
 
-**1 of 3** for `balance-dps` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 3** for `balance-dps` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`balance-moonkin-raid`](balance-moonkin-raid.md)** | ours: hand draft | 33/0/18 | 637 | +0.0% | 722 | +0.0% | 2 s |
-| 2 | [`opt-balance-dps-raid-dps`](opt-balance-dps-raid-dps.md) | ours: optimizer | 33/0/18 | 637 | +0.0% | 722 | +0.0% | 2 s |
-| 3 | *Moonkin* | community simulator | - | 625 | -1.8% | 707 | -2.1% | 4 s |
+| 1 | **[`balance-moonkin-raid`](balance-moonkin-raid.md)** | ours: hand draft | 33/0/18 | 620 | +0.0% | 711 | +0.0% | 5 s |
+| 2 | [`opt-balance-dps-raid-dps`](opt-balance-dps-raid-dps.md) | ours: optimizer | 33/0/18 | 620 | +0.0% | 711 | +0.0% | 5 s |
+| 3 | *Moonkin* | community simulator | - | 611 | -1.4% | 697 | -2.1% | 6 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -99,9 +99,9 @@ Before the pull: at -10s: activate Moonkin Form.
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if mana % ≤ 30%: cast Innervate | 0.3 |
 | 3 | if time left in the fight ≥ 10s: keep Insect Swarm on up to 1 targets (refresh under 0ms) | 3.7 |
-| 4 | keep Moonfire on up to 1 targets (refresh under 0ms) | 4.0 |
-| 5 | cast Starfire | 16.0 |
-| 6 | cast Wrath | 0.3 |
+| 4 | keep Moonfire on up to 1 targets (refresh under 0ms) | 3.9 |
+| 5 | cast Starfire | 15.6 |
+| 6 | cast Wrath | 0.6 |
 
 Lines of the simulator's rotation these builds never cast: cast Starfire (rank 6) (its condition never held in these fights).
 
@@ -109,10 +109,10 @@ Damage by ability:
 
 | Ability | [`balance-moonkin-raid`](balance-moonkin-raid.md) |
 |---|---|
-| Starfire | 67% |
+| Starfire | 66% |
 | Moonfire | 17% |
 | Insect Swarm | 16% |
-| Wrath | 0% |
+| Wrath | 1% |
 
 ## Notes
 

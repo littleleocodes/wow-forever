@@ -8,7 +8,7 @@
 
 **Other setups of this spec.** This build is the Lone Wolf setup. The spec's best build for each other setup, in a full raid:
 
-- With a pet: [Marksmanship — Raid](../research/raid/builds/marksmanship-ml-raid.md) (7/39/5, 967 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/502-0053552201523051-5-12)
+- With a pet: [Marksmanship — Raid](../research/raid/builds/marksmanship-ml-raid.md) (7/39/5, 1007 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/502-0053552201523051-5-12)
 
 ## How to play
 
@@ -75,7 +75,7 @@ Marksmanship plays without a pet: **Lone Wolf** adds 20% to everything you do wh
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 966 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 1003 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 16e8542 (client 70790); [every spec](../../_reference/dps-rankings.md)):
 
@@ -86,7 +86,7 @@ Marksmanship plays without a pet: **Lone Wolf** adds 20% to everything you do wh
 
 *Each row is in that tier's own gear set; the DPS at the top of the page is this build in the standard set, so the two do not match.*
 
-**The gear** (average item level: Pre-BiS 61.9; Phase 1 BiS 63.2; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 62.5; Phase 1 BiS 63.8; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
@@ -102,18 +102,18 @@ Marksmanship plays without a pet: **Lone Wolf** adds 20% to everything you do wh
 | Feet | [Shadowcraft Boots](https://www.wowhead.com/forever/item=16711) · *Rattlegore, Scholomance*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) | [Shadowcraft Boots](https://www.wowhead.com/forever/item=16711) · *Rattlegore, Scholomance*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) |
 | Finger | [Cutthroat's Signet](https://www.wowhead.com/forever/item=272408) · *sold by Pix Xizzix* | [Cutthroat's Signet](https://www.wowhead.com/forever/item=272408) · *sold by Pix Xizzix* |
 | Finger | [Channeler's Ring](https://www.wowhead.com/forever/item=272406) · *sold by Pix Xizzix* | [Band of Earthen Might](https://www.wowhead.com/forever/item=21182) · *quest: Veteran's Battlegear* |
-| Trinket | [Jewel of the Guard Captain](https://www.wowhead.com/forever/item=270225) | [Jewel of the Guard Captain](https://www.wowhead.com/forever/item=270225) |
-| Trinket | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437) · *sold by Pix Xizzix* | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437) · *sold by Pix Xizzix* |
+| Trinket | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) · *quest: For The Horde!* | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) · *quest: For The Horde!* |
+| Trinket | [Counterattack Lodestone](https://www.wowhead.com/forever/item=18537) · *Tribute, Dire Maul* | [Counterattack Lodestone](https://www.wowhead.com/forever/item=18537) · *Tribute, Dire Maul* |
 | Main hand | [Legionite Glaive](https://www.wowhead.com/forever/item=250619) · *Blacksmithing*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Legionite Glaive](https://www.wowhead.com/forever/item=250619) · *Blacksmithing*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
 | Ranged/relic | [Gorewood Bow](https://www.wowhead.com/forever/item=16996) · *quest: The Scarlet Oracle, Demetria*<br>+ [Biznicks 247x128 Accurascope](https://www.wowhead.com/forever/item=18283) | [Rhok'delar, Longbow of the Ancient Keepers](https://www.wowhead.com/forever/item=18713)<br>+ [Biznicks 247x128 Accurascope](https://www.wowhead.com/forever/item=18283) |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/hunter/dps/#eJzElU1oI2UYx+d5ZzLz5FGT8d1mMxn8GIMs2YEJM9POfh1Mdk/iQRZPnjSzm6xJ2W1CksN6ELulB1mKqAdpS6GFWq1FbxaKIEKlWCHYSEGhKi1awYOHXqsgMm8S6gfeGvZ/eHnm+c/Hf37POwxlEHQwwIIclKAKDZgEWAJYBeAPC4tF1iUw9+OIumy+Rhp+tp40Dh8iBZdngRTc7eik4RcrYHyjRsUnSePnBGn44RQYP0ZFp6Mb+wlSsLMApOH7UxBdruGXU9Drz3Z1UvBdsb79ebSud6N7/rGSNH5LkEQaHk6D8f2Z7Dl9u5Y7XIT7wKZr8xBfDj8Kf7i6uAJroM3UPliAN2sHMF27hiI7FOFTdjZwfcd1g9HRwB9zvcAfdQPPCbaZ0mX4E9vTaITQVEnB7hZkkVRSHM9tUarfXV2GbJw0ijl+Pmjxe8BfChu3X6432pbv+hccz3XcsSvWzWo48UqlbNWbVlguV8rWjVetdrViNevtsF2rT1itSti8WbVyrUrFunPHaYa1sjMwnZ6ZH2/VJ86bT1LKPoMxHttkDGOmiOTmg9YgDo+bmhkjGXfq/K3hx8nT0zxLj+ypRAp+d/w8Z7pCj9pJVDl7TjI1ipHsub10ka2Y7IrEX/9XLvey41881VyP04jNUR5gEjncvCfI/JLmlvnE/3GMztgd4V//h5132uxu0w1eooydRpnjeERoZwtMsZ3c/MWgRYZ9FlUeX4P+bAevEVDaTqHKcQ16aU8M3U700aukELvQI7+zBXx86Huh90kczwJfGj68Z2iM+wLePwiJOfp5PxDj/TuiGMkEnoi4OXndkH9l23DE/HuyJJQr3ocMpSmF8++A/vsMGOp5SeioUMLsnywe1dLkrWJmfi7SV4Wnbgl9W/APmKFYBXuDSQ9E7eKgGqrOfTy051wW6wvvFa/2G8USvAEwB+JAOijYMm6krz128kNy4RIU4Vm4Di9CFRpwF+6yvwYAfGliJQ==); Phase 1 BiS: [full raid](https://wowsims.com/forever/hunter/dps/#eJzElV1o62QYx/O8SZOnj9rG96ynafAjFjn0BFKSnJPzdWF7zpV4IQevvNJma2c7trW0vZgX4jZ2IWP4MRC2IWwwq3PonYMhqDAZThiuMlDYlA2d4IUXu52CSNKW+YF3K/4vwpPnn7z55/e8IZRCUEEDAzJQgDLUYBJgBWANgD8YWiywboF+FEVURf0VUvDTjbh28gBJePIGkIT7uyop+EULtG/koPg4rv0UIwU/mAbth6DY3VW1oxhJePg2kILvTUNwu4JfTkOnv9BWScLPWsFqb30e1BvtYM3fW3Ht1xgJpODiPGiHl9JX1J1K5mQZZoHNVJYguup/6H9/d7kF66DMVd5/B16vHMNM5R6G2SEPn7DLnu1atu1d8zzXtR3PvWZ7juXtMKnN8Ed2oNAAoS6ThO1tSCPJJFmO3aBEt7u2CukoKRSx3KzX4FPAX/Broy9Wa03Dtd0blmNb9vU7xlDZH3+pVDSqdcMvFktFY/Blo1kuGfVq029WquNGo+TXh8pGplEqGWNjVt2vFK2eaXXM7EijOn5Vf5wS5iWM8MgWYxjRw0h21mv04vCorugREnGvyt/sf5wsPcnT9NCBTCThd2fPcqZK9LAZR5mzZwRdoQiJjt1JF9iSzu4I/NV/5LJvW+7NC831KA2YHMUepjCHnXVCMj8nuaE/9l8cgyv2B/jX/2LnXDS7URrkBUqZSRQ5jgSE9rZBD7eTnb3pNUgzL6PMo+vQnW3vNTxKmgmUOa5DJ+25oZqxLnqZJGI3OuT3toGP9H0vdD6JswXgK/2H9xRd524I72+Ewjm6WdcLx/tXRBESCZww4tbkfU38he3AKXOnRCFUJj8LKUpSApfmQf1tDjT5qhDqNFfA9B8sGtTC5HA+tbQY6KvcE8Ohvs25x0yTjJy5yYT/Rc18r+qrrnzUt+fcDo/PvZu/223kC/AawCKEJ8JxzhRxM3nvkfMfkg23IA9Pw314HspQgwmYYH8OADl4YhY=).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/hunter/dps/#eJzElU1oK1UUx+fcmcycHDUZ72teJoMfY5BH3sCEmWnnfS1M3luJCymuXGmmTWpS2iYkWVQQbEsXUqoUF9KWQgu1WovuFIrgplKsEGykoFC/ilZQcNFtFURmklA/cNfw/ovhzPnfYf7zO3e4lEJQQQMDMlCAMtRgBmADYBuAPxhaLLBugf59FFEV9VdIwU8+imunD5CEm8tAEh61VFLw0y3QvpSD4sO49lOMFHxvDrTvgqLVUrUfYiRhaw1IwXfmIHhcwc/moNNfbqsk4VttlUR8fZIk/HUpWPjHVlz7LUYCKXg6D9o3V9LX1INK5nQdFoDNV1Yhuum/7397d30LdkBZrLy7Bm9UTmC+cg/D6JCHj9lVz3Yt2/YGBz13yHY8d9D2HMs7YFKb4Y/sWKEBQl0mCdv7kEaSSbIcu0GJbnd7E9JRUihiuVmvwWeBv+DXJl6s1pqGa7s3LMe27KE7xmjZn3qpVDSqdcMvFktFY+Rlo1kuGfVq029WqlNGo+TXR8tGplEqGZOTVt2vFK2eaXXM7HijOnVdf5wS5hWM8MgeYxjRw0h21mv04vCorugREvGwypf6HydLT/I0PXQsE0n49fmznKkSPWzGUebsGUFXKEKiY3fSBbakszsCf/VfuezblnvzUnM9SgMmR7GHKcxhZ52QzM9JbuiP/R/HYMXRAP/iP+ycy2Y3QSO8QCkziSLH8YDQ4T7o4Xaysze9BmnmVZR5dAe6s+19hkdJM4Eyxx3opL0wVDPWRS+TROxGh/zhPvDxvu+Fzi9xvgx8o//wnqIh7obw/kEonKObdb1wvH9HFCGRwAkj7s0Ma+Iv7ADOmDsrCqEy+QVIUZISuPomqL8vgiZfF0Kd5QqY/pNFg1qYGcunVlcCfZ57YizUVzn3hGmSkTN3mXBf1Mz3qr7q2gd9e8/t8Prc2/m73Ua+AK8BrEB4I5zkTBF3k/ceuTiPbLgFeXgahuF5KEMNpmGa/TUANHZhoQ==); Phase 1 BiS: [full raid](https://wowsims.com/forever/hunter/dps/#eJzElV1o62QYx/O8SZOnj9rG96ynafAjFjn0BFKSnJPzdWG7XYkXMrzySputne3Y1tL2YoLgNnYhY+oYCNsQNpjVOfROYQh6MRlOGG4yUNj8GDpBwYvdTkEkacv8wLsV/xfhyfN/Q/75PW94KYWgggYGZKAAZajBFMAawAYAvz+0WGDdAf27KKIq6i+Rgh9/GNdO7yMJT18HkvBwTyUFP22B9qUcFB/EtR9jpOC7M6B9GxR7e6r2fYwkPH4DSMG3ZyB4XMHPZqDdXzpQScJPWkAivjpOEv6yECz8vRXXfo2RQAouL4J2fCV9Td2tZE5XYQ7YbGUFouv+e/43/ast2ARlvvLOm/Ba5QRmKwMYRoc8fMSuerZr2bZ3w/Nc13Y894btOZa3y6QDhj+wI4X6CHWZJDzYgTSSTJLl2A1KdLob65COkkIRy816DT4N/Dm/NvZ8tdY0XNu9ZTm2Zd+8ZwyX/YkXSkWjWjf8YrFUNIZeNJrlklGvNv1mpTphNEp+fbhsZBqlkjE+btX9StHqmlbbzI42qhPX9UcpYV7BCI9sM4YRPYxkZ71GNw6P6ooeIRH3q3yh93Gy9DhP0wNHMpGEX58/zZkq0YNmHGXOnhJ0hSIkOnY7XWBLOrsn8Jf/kcu+a7m3LzXXw9RnchS7mMIcdtYJyfyU5Ib+yH9xDFYc9vEv/sXOuWx2YzTEC5QykyhyHA0I7e+AHm4nO3vba5BmXkWZRzehM9vuZ3iUNBMoc9yEdtoLQzVjHfQyScRutcnv7wAf7fleaP8S50vA13oP7wm6yd0Q3t8IhXN0s64XjveviCIkEjhhxO2pQU38me3CGXOnRSFUJj8HKUpSAlcWQf1tHjT5uhDqLFfA9B8sGtTC1Eg+tbIc6PPcYyOhvsq5J0yTjJy5xYT/Rc18t+qprr3fs/fcDa/PvJXv7zTyBXgFYBnCG+EkZ4q4lRx46OI8suEO5OFJGIRnoQw1mIRJ9ucA8Uhhkg==).
 
 ## Other builds of this spec
 
-- [Marksmanship (optimized, lone wolf)](../research/raid/builds/opt-mm-lonewolf-raid-raid-dps.md) (7/41/3, 896 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/50002-3053552011523051-3-12)
-- [Marksmanship with Beast Mastery support](../research/raid/builds/bm-mm-full-buffs-raid.md) (21/30/0, 888 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005050001-005155000150305--12)
+- [Marksmanship (optimized, lone wolf)](../research/raid/builds/opt-mm-lonewolf-raid-raid-dps.md) (7/41/3, 929 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/50002-3053552011523051-3-12)
+- [Marksmanship with Beast Mastery support](../research/raid/builds/bm-mm-full-buffs-raid.md) (21/30/0, 926 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/53200005050001-005155000150305--12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-10 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 16e8542 (client 1.60.1.70790)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-11 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at ff9babb (client 1.60.1.70888)). Simulations, not in-game measurements. Do not hand-edit.*
 

@@ -98,9 +98,9 @@ What this build casts per kill ([report](../fightlab/balance-dps.md), all leveli
 
 | Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|---|
-| Starfire | 0.0 | 0.0 | 4.0 | 4.7 | 4.1 | 3.6 | 70% |
-| Wrath | 8.3 | 9.5 | 2.0 | 2.3 | 2.1 | 1.9 | 8% |
-| Moonfire | 1.6 | 2.1 | 1.5 | 1.5 | 1.5 | 1.4 | 19% |
+| Starfire | 0.0 | 0.0 | 3.9 | 4.7 | 4.1 | 3.6 | 70% |
+| Wrath | 8.3 | 9.5 | 2.0 | 2.3 | 2.1 | 1.8 | 8% |
+| Moonfire | 1.6 | 2.1 | 1.5 | 1.5 | 1.5 | 1.4 | 20% |
 | Regrowth | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Entangling Roots | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Moonkin Form | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |

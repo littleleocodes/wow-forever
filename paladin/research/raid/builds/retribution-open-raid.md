@@ -63,17 +63,17 @@ The Retribution raid build the open talent search found on 2026-11-10: every leg
 
 ## Rank among our builds and the community simulator's
 
-**3 of 7** for `ret-dps` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 7** for `ret-dps` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Unsealed Wrath* | community simulator | - | 477 | +0.0% | 874 | -0.5% | 26 s |
-| 2 | *Holy Shock* | community simulator | - | 461 | -3.3% | 759 | -13.6% | 0 s |
-| 3 | **[`retribution-open-raid`](retribution-open-raid.md)** | ours: derived (open search) | 16/4/31 | 449 | -6.0% | 878 | +0.0% | 47 s |
-| 4 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/6/28 | 423 | -11.2% | 703 | -20.0% | 0 s |
-| 5 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 17/6/28 | 422 | -11.6% | 703 | -20.0% | 0 s |
-| 6 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: derived (ML search) | 9/14/28 | 381 | -20.1% | 698 | -20.5% | 16 s |
-| 7 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 8/15/28 | 377 | -21.0% | 699 | -20.4% | 18 s |
+| 1 | *Unsealed Wrath* | community simulator | - | 510 | +0.0% | 821 | -0.1% | 13 s |
+| 2 | **[`retribution-open-raid`](retribution-open-raid.md)** | ours: derived (open search) | 16/4/31 | 483 | -5.3% | 823 | +0.0% | 32 s |
+| 3 | *Holy Shock* | community simulator | - | 465 | -8.9% | 715 | -13.1% | 0 s |
+| 4 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/6/28 | 426 | -16.5% | 659 | -19.8% | 0 s |
+| 5 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 17/6/28 | 426 | -16.5% | 659 | -19.8% | 0 s |
+| 6 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: derived (ML search) | 9/14/28 | 393 | -22.9% | 657 | -20.1% | 7 s |
+| 7 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 8/15/28 | 391 | -23.3% | 658 | -20.0% | 8 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -86,12 +86,12 @@ Before the pull: at -20s: groupReference; at -20s: move to variableRef yd; at -3
 | # | Priority (the first line whose condition holds is cast) | [`retribution-open-raid`](retribution-open-raid.md) casts/min |
 |---|---|---|
 | 1 | if not spellInRange: groupReference | as ready |
-| 2 | if variableRef: cast Judgement | 7.0 |
+| 2 | if variableRef: cast Judgement | 7.3 |
 | 3 | if time into the fight ≥ variableRef: use every other cooldown when ready | as ready |
-| 4 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 0.9 |
-| 5 | if variableRef and not Judgement is ready and variableRef: cast Holy Strike | 5.8 |
-| 6 | if variableRef: cast Seal of Command | 3.1 |
-| 7 | if variableRef: cast Seal of Righteousness | 2.9 |
+| 4 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 1.0 |
+| 5 | if variableRef and not Judgement is ready and variableRef: cast Holy Strike | 5.9 |
+| 6 | if variableRef: cast Seal of Command | 3.6 |
+| 7 | if variableRef: cast Seal of Righteousness | 3.4 |
 | 8 | groupReference | as ready |
 | 9 | groupReference | as ready |
 
@@ -99,16 +99,15 @@ Damage by ability:
 
 | Ability | [`retribution-open-raid`](retribution-open-raid.md) |
 |---|---|
-| Auto Attack | 22% |
-| Seal of Command | 21% |
-| Holy Strike | 15% |
-| Judgement of Command | 12% |
-| Consecration | 10% |
+| Seal of Command | 22% |
+| Auto Attack | 21% |
+| Holy Strike | 14% |
+| Judgement of Command | 13% |
+| Consecration | 11% |
 | Seal of Righteousness | 8% |
 | Judgement of Righteousness | 6% |
 | Hammer of Wrath | 4% |
 | Demonic Rune | 2% |
-| spell 16614 | 0% |
 
 ## Notes
 

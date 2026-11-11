@@ -67,21 +67,21 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `bm-mm-raid
 
 ## Rank among our builds and the community simulator's
 
-**3 of 11** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 11** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 31/16/4 | 527 | +0.0% | 912 | -5.6% | 31 s |
-| 2 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 496 | -5.9% | 967 | +0.0% | 29 s |
-| 3 | **[`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md)** | ours: hand draft | 21/30/0 | 495 | -6.1% | 888 | -8.1% | 23 s |
-| 4 | *BM Weave* | community simulator | - | 484 | -8.2% | 931 | -3.7% | 35 s |
-| 5 | *BM* | community simulator | - | 473 | -10.2% | 955 | -1.2% | 42 s |
-| 6 | *MM* | community simulator | - | 467 | -11.3% | 940 | -2.7% | 41 s |
-| 7 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 455 | -13.6% | 879 | -9.1% | 16 s |
-| 8 | *SV* | community simulator | - | 429 | -18.6% | 807 | -16.5% | 37 s |
-| 9 | *SV Weave* | community simulator | - | 426 | -19.2% | 798 | -17.5% | 36 s |
-| 10 | *MM Weave* | community simulator | - | 412 | -21.9% | 806 | -16.6% | 44 s |
-| 11 | *SV Melee* | community simulator | - | 382 | -27.5% | 790 | -18.3% | 42 s |
+| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 31/16/4 | 557 | +0.0% | 956 | -5.1% | 29 s |
+| 2 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 522 | -6.3% | 1007 | +0.0% | 27 s |
+| 3 | **[`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md)** | ours: hand draft | 21/30/0 | 520 | -6.7% | 926 | -8.1% | 23 s |
+| 4 | *BM Weave* | community simulator | - | 512 | -8.1% | 975 | -3.2% | 35 s |
+| 5 | *BM* | community simulator | - | 501 | -10.1% | 997 | -1.1% | 40 s |
+| 6 | *MM* | community simulator | - | 493 | -11.6% | 977 | -3.0% | 39 s |
+| 7 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 480 | -13.9% | 917 | -8.9% | 15 s |
+| 8 | *SV* | community simulator | - | 449 | -19.4% | 846 | -16.0% | 35 s |
+| 9 | *SV Weave* | community simulator | - | 446 | -20.0% | 841 | -16.6% | 35 s |
+| 10 | *MM Weave* | community simulator | - | 434 | -22.1% | 833 | -17.4% | 44 s |
+| 11 | *SV Melee* | community simulator | - | 402 | -27.9% | 823 | -18.3% | 42 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -121,7 +121,7 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Arcane Shot | 8.8 |
+| 1 | cast Arcane Shot | 8.7 |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
 | 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 15%: cast Aimed Shot | 3.9 |
@@ -134,12 +134,12 @@ Damage by ability:
 
 | Ability | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) |
 |---|---|
-| Auto Shot | 33% |
+| Auto Shot | 34% |
 | Pet: Auto Attack | 24% |
-| Arcane Shot | 19% |
+| Arcane Shot | 18% |
 | Serpent Sting | 11% |
 | Aimed Shot | 9% |
-| Pet: Claw | 2% |
+| Pet: Claw | 1% |
 | Pet: Bite | 1% |
 | Multi-Shot | 1% |
 

@@ -10,51 +10,51 @@ Single-target leveling fights against normal mobs of your level. Levels 10-19 in
 
 | Level | Talents | Fight mean | median | p90 | Downtime/kill | Deaths/100 kills | Time/kill | Kills/hour | Energy/kill | Pushbacks/kill |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 15 | 6 | 22.0s | 22.0s | 27.2s | 1.0s | 0.0 | 31.0s | 116 | 1 | 0.00 |
-| 20 | 11 | 11.0s | 10.2s | 14.2s | 0.7s | 0.0 | 19.8s | 182 | 82 | 0.00 |
-| 30 | 21 | 13.0s | 13.6s | 17.2s | 1.1s | 0.0 | 22.0s | 163 | 83 | 0.00 |
-| 40 | 31 | 14.0s | 14.2s | 19.1s | 1.4s | 0.0 | 23.4s | 154 | 90 | 0.00 |
-| 50 | 41 | 13.2s | 13.9s | 18.2s | 1.8s | 0.0 | 23.0s | 156 | 90 | 0.00 |
-| 60 | 51 | 14.9s | 14.2s | 21.6s | 1.6s | 0.0 | 24.5s | 147 | 89 | 0.00 |
+| 15 | 6 | 22.1s | 22.0s | 28.3s | 1.0s | 0.0 | 31.1s | 116 | 1 | 0.00 |
+| 20 | 11 | 12.7s | 12.6s | 16.6s | 0.9s | 0.0 | 21.6s | 166 | 81 | 0.00 |
+| 30 | 21 | 14.8s | 14.2s | 19.2s | 1.3s | 0.0 | 24.0s | 150 | 83 | 0.00 |
+| 40 | 31 | 16.7s | 16.6s | 22.2s | 1.7s | 0.0 | 26.4s | 136 | 87 | 0.00 |
+| 50 | 41 | 16.1s | 16.1s | 22.2s | 2.4s | 0.0 | 26.4s | 136 | 88 | 0.00 |
+| 60 | 51 | 17.8s | 18.2s | 23.2s | 2.3s | 0.0 | 28.1s | 128 | 85 | 0.00 |
 
 ## Measured damage shares (vs. the spec model's assumed shares)
 
 | Level | Bash | Claw | Ferocious Bite | Maul | Melee | Rake | Ravage | Rip | Thorns |
 |---|---|---|---|---|---|---|---|---|---|
 | 15 | 0% | 0% | 0% | 46% | 41% | 0% | 0% | 0% | 14% |
-| 20 | 0% | 46% | 0% | 0% | 38% | 0% | 0% | 12% | 5% |
-| 30 | 0% | 31% | 13% | 0% | 35% | 18% | 0% | 0% | 4% |
-| 40 | 0% | 18% | 18% | 0% | 28% | 15% | 17% | 1% | 3% |
-| 50 | 0% | 17% | 20% | 0% | 26% | 14% | 20% | 1% | 3% |
-| 60 | 0% | 19% | 23% | 0% | 23% | 13% | 16% | 3% | 3% |
+| 20 | 0% | 40% | 0% | 0% | 39% | 0% | 0% | 15% | 5% |
+| 30 | 0% | 26% | 14% | 0% | 36% | 19% | 0% | 1% | 5% |
+| 40 | 0% | 17% | 17% | 0% | 31% | 16% | 11% | 4% | 4% |
+| 50 | 0% | 17% | 19% | 0% | 30% | 16% | 12% | 4% | 4% |
+| 60 | 0% | 17% | 17% | 0% | 25% | 15% | 9% | 12% | 3% |
 
 Spec model (`_reference/data/scorer/specs`) assumes: white 35%, shred 28%, ferocious_bite 0%, rip 38%, claw_rake 0%, bear_white_early 25%, maul_early 30%, moonfire_early 20%, wrath_early 25%.
 
 ## Realized crit rates and player at each level
 
-- **Level 15**: 1036 health, 884 mana, 43 Int, 44 Spirit, 42 Str, 47 Agi, 93 AP, melee crit 7.4%, 0 spell power, base spell crit 4.8%, armor 994 (Bear Form); mob 328 health, hits for 24, casters 13% of pulls (0.00 interrupts per kill). Crit rates: Melee 7%, Enrage 0%, Demoralizing Roar 0%, Maul 8%, Bash 10%. Health after a fight 78%, mana 100%.
-- **Level 20**: 1144 health, 1168 mana, 54 Int, 54 Spirit, 48 Str, 70 Agi, 186 AP, melee crit 12.0%, 0 spell power, base spell crit 4.7%, armor 698 (Cat Form); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Claw 12%, Melee 12%, Rip 48%. Health after a fight 81%, mana 99%.
-- **Level 30**: 1685 health, 1744 mana, 75 Int, 80 Spirit, 59 Str, 102 Agi, 305 AP, melee crit 19.0%, 12 spell power, base spell crit 4.5%, armor 853 (Cat Form); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Rake 28%, Melee 20%, Claw 19%, Ferocious Bite 19%, Rip 41%. Health after a fight 79%, mana 96%.
-- **Level 40**: 2171 health, 2142 mana, 86 Int, 99 Spirit, 87 Str, 140 Agi, 433 AP, melee crit 22.0%, 24 spell power, base spell crit 4.1%, armor 1051 (Cat Form); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Ravage 22%, Melee 22%, Rake 31%, Claw 22%, Ferocious Bite 22%, Rip 105%. Health after a fight 77%, mana 92%.
-- **Level 50**: 2732 health, 2721 mana, 110 Int, 112 Spirit, 153 Str, 177 Agi, 639 AP, melee crit 24.5%, 36 spell power, base spell crit 4.1%, armor 1268 (Cat Form); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Ravage 24%, Melee 25%, Rake 34%, Claw 24%, Ferocious Bite 25%, Rip 104%. Health after a fight 76%, mana 86%.
-- **Level 60**: 3323 health, 3158 mana, 128 Int, 129 Spirit, 133 Str, 222 Agi, 677 AP, melee crit 25.1%, 48 spell power, base spell crit 4.0%, armor 1476 (Cat Form); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Ravage 25%, Melee 25%, Rake 33%, Claw 25%, Ferocious Bite 25%, Rip 99%. Health after a fight 73%, mana 85%.
+- **Level 15**: 1416 health, 884 mana, 43 Int, 44 Spirit, 42 Str, 47 Agi, 93 AP, melee crit 7.4%, 0 spell power, base spell crit 4.8%, armor 994 (Bear Form); mob 328 health, hits for 24, casters 13% of pulls (0.00 interrupts per kill). Crit rates: Melee 7%, Enrage 0%, Demoralizing Roar 0%, Maul 7%, Bash 8%. Health after a fight 76%, mana 100%.
+- **Level 20**: 1144 health, 1168 mana, 54 Int, 54 Spirit, 48 Str, 70 Agi, 150 AP, melee crit 12.0%, 0 spell power, base spell crit 4.7%, armor 698 (Cat Form); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Claw 12%, Melee 12%, Rip 54%. Health after a fight 80%, mana 99%.
+- **Level 30**: 1685 health, 1744 mana, 75 Int, 80 Spirit, 59 Str, 102 Agi, 251 AP, melee crit 19.0%, 12 spell power, base spell crit 4.5%, armor 853 (Cat Form); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Rake 28%, Melee 19%, Claw 19%, Ferocious Bite 19%, Rip 69%. Health after a fight 78%, mana 96%.
+- **Level 40**: 2171 health, 2142 mana, 86 Int, 99 Spirit, 87 Str, 140 Agi, 361 AP, melee crit 22.0%, 24 spell power, base spell crit 4.1%, armor 1051 (Cat Form); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Ravage 22%, Melee 22%, Rake 32%, Claw 22%, Ferocious Bite 22%, Rip 111%. Health after a fight 76%, mana 92%.
+- **Level 50**: 2732 health, 2721 mana, 110 Int, 112 Spirit, 153 Str, 177 Agi, 549 AP, melee crit 24.5%, 36 spell power, base spell crit 4.1%, armor 1268 (Cat Form); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Ravage 24%, Melee 25%, Rake 33%, Claw 24%, Ferocious Bite 24%, Rip 115%. Health after a fight 74%, mana 85%.
+- **Level 60**: 3323 health, 3158 mana, 128 Int, 129 Spirit, 133 Str, 222 Agi, 569 AP, melee crit 25.1%, 48 spell power, base spell crit 4.0%, armor 1476 (Cat Form); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Ravage 25%, Melee 25%, Rake 34%, Claw 24%, Ferocious Bite 25%, Rip 117%, Regrowth 0%, Cat Form 0%. Health after a fight 71%, mana 84%.
 
 ## Other builds (same mobs, same seeds)
 
 | Level | Build | Time/kill | vs. main | Fight mean | Deaths/100 | Downtime/kill |
 |---|---|---|---|---|---|---|
-| 15 | opt-feral-cat-dps-leveling-st | 31.0s | - | 22.0s | 0.0 | 1.0s |
-| 15 | leveling-feral | 31.0s | +0.0% | 22.0s | 0.0 | 1.0s |
-| 20 | opt-feral-cat-dps-leveling-st | 19.8s | - | 11.0s | 0.0 | 0.7s |
-| 20 | leveling-feral | 19.8s | +0.0% | 11.0s | 0.0 | 0.7s |
-| 30 | opt-feral-cat-dps-leveling-st | 22.0s | - | 13.0s | 0.0 | 1.1s |
-| 30 | leveling-feral | 22.0s | +0.0% | 13.0s | 0.0 | 1.1s |
-| 40 | opt-feral-cat-dps-leveling-st | 23.4s | - | 14.0s | 0.0 | 1.4s |
-| 40 | leveling-feral | 23.4s | +0.0% | 14.0s | 0.0 | 1.4s |
-| 50 | opt-feral-cat-dps-leveling-st | 23.0s | - | 13.2s | 0.0 | 1.8s |
-| 50 | leveling-feral | 23.0s | +0.0% | 13.2s | 0.0 | 1.8s |
-| 60 | opt-feral-cat-dps-leveling-st | 24.5s | - | 14.9s | 0.0 | 1.6s |
-| 60 | leveling-feral | 24.8s | +1.1% | 15.2s | 0.0 | 1.6s |
+| 15 | opt-feral-cat-dps-leveling-st | 31.1s | - | 22.1s | 0.0 | 1.0s |
+| 15 | leveling-feral | 31.1s | +0.0% | 22.1s | 0.0 | 1.0s |
+| 20 | opt-feral-cat-dps-leveling-st | 21.6s | - | 12.7s | 0.0 | 0.9s |
+| 20 | leveling-feral | 21.6s | +0.0% | 12.7s | 0.0 | 0.9s |
+| 30 | opt-feral-cat-dps-leveling-st | 24.0s | - | 14.8s | 0.0 | 1.3s |
+| 30 | leveling-feral | 24.0s | +0.0% | 14.8s | 0.0 | 1.3s |
+| 40 | opt-feral-cat-dps-leveling-st | 26.4s | - | 16.7s | 0.0 | 1.7s |
+| 40 | leveling-feral | 26.4s | +0.0% | 16.7s | 0.0 | 1.7s |
+| 50 | opt-feral-cat-dps-leveling-st | 26.4s | - | 16.1s | 0.0 | 2.4s |
+| 50 | leveling-feral | 26.4s | +0.0% | 16.1s | 0.0 | 2.4s |
+| 60 | opt-feral-cat-dps-leveling-st | 28.1s | - | 17.8s | 0.0 | 2.3s |
+| 60 | leveling-feral | 28.2s | +0.3% | 18.1s | 0.0 | 2.0s |
 
 ## Gear tiers (main build)
 
@@ -62,18 +62,18 @@ Spec model (`_reference/data/scorer/specs`) assumes: white 35%, shred 28%, feroc
 
 | Level | Gear | Time/kill | vs. greens | Fight mean | Deaths/100 | Downtime/kill | Kills/hour |
 |---|---|---|---|---|---|---|---|
-| 15 | greens | 31.0s | - | 22.0s | 0.0 | 1.0s | 116 |
-| 15 | blues | 26.8s | -13.5% | 18.1s | 0.0 | 0.7s | 134 |
-| 20 | greens | 19.8s | - | 11.0s | 0.0 | 0.7s | 182 |
-| 20 | blues | 18.0s | -9.0% | 9.4s | 0.0 | 0.5s | 200 |
-| 30 | greens | 22.0s | - | 13.0s | 0.0 | 1.1s | 163 |
-| 30 | blues | 20.0s | -9.2% | 11.2s | 0.0 | 0.8s | 180 |
-| 40 | greens | 23.4s | - | 14.0s | 0.0 | 1.4s | 154 |
-| 40 | blues | 21.6s | -7.5% | 12.6s | 0.0 | 1.0s | 167 |
-| 50 | greens | 23.0s | - | 13.2s | 0.0 | 1.8s | 156 |
-| 50 | blues | 21.9s | -4.9% | 12.5s | 0.0 | 1.4s | 164 |
-| 60 | greens | 24.5s | - | 14.9s | 0.0 | 1.6s | 147 |
-| 60 | blues | 23.0s | -6.1% | 13.8s | 0.0 | 1.3s | 156 |
+| 15 | greens | 31.1s | - | 22.1s | 0.0 | 1.0s | 116 |
+| 15 | blues | 26.8s | -13.8% | 18.1s | 0.0 | 0.7s | 134 |
+| 20 | greens | 21.6s | - | 12.7s | 0.0 | 0.9s | 166 |
+| 20 | blues | 19.5s | -10.1% | 10.8s | 0.0 | 0.7s | 185 |
+| 30 | greens | 24.0s | - | 14.8s | 0.0 | 1.3s | 150 |
+| 30 | blues | 21.6s | -10.1% | 12.7s | 0.0 | 0.9s | 167 |
+| 40 | greens | 26.4s | - | 16.7s | 0.0 | 1.7s | 136 |
+| 40 | blues | 24.2s | -8.6% | 15.0s | 0.0 | 1.2s | 149 |
+| 50 | greens | 26.4s | - | 16.1s | 0.0 | 2.4s | 136 |
+| 50 | blues | 24.8s | -6.1% | 15.1s | 0.0 | 1.7s | 145 |
+| 60 | greens | 28.1s | - | 17.8s | 0.0 | 2.3s | 128 |
+| 60 | blues | 26.0s | -7.5% | 16.4s | 0.0 | 1.6s | 139 |
 
 ## Talent values at level 30
 
@@ -81,14 +81,14 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Ferocity | 5 | +5.4% | +8.2% ± 0.5 | +1.1% | +1.9% | 0.0 |
-| Predatory Strikes | 3 | +4.3% | +6.5% ± 0.2 | +1.4% | +3.3% | 0.0 |
-| Sharpened Claws | 2 | +4.1% | +6.3% ± 0.3 | +2.0% | +3.1% | 0.0 |
-| Savage Fury | 2 | +3.2% | +4.9% ± 0.2 | +1.6% | +2.8% | 0.0 |
-| Blood Frenzy | 2 | +2.1% | +3.3% ± 0.4 | +1.0% | +1.9% | 0.0 |
-| Leader of the Pack | 1 | +1.9% | +2.8% ± 0.3 | +1.9% | +1.6% | 0.0 |
-| Feral Swiftness | 2 | +0.5% | +0.2% ± 0.2 | +0.2% | +0.4% | 0.0 |
-| Thick Hide | 3 | +0.2% | +0.0% ± 0.1 | +0.1% | +0.3% | 0.0 |
+| Ferocity | 5 | +5.1% | +7.5% ± 0.5 | +1.0% | +1.9% | 0.0 |
+| Predatory Strikes | 3 | +4.8% | +7.1% ± 0.2 | +1.6% | +3.3% | 0.0 |
+| Sharpened Claws | 2 | +4.1% | +6.0% ± 0.3 | +2.1% | +3.1% | 0.0 |
+| Savage Fury | 2 | +3.0% | +4.4% ± 0.2 | +1.5% | +2.8% | 0.0 |
+| Blood Frenzy | 2 | +2.4% | +3.8% ± 0.4 | +1.2% | +1.9% | 0.0 |
+| Leader of the Pack | 1 | +1.9% | +2.8% ± 0.2 | +1.9% | +1.6% | 0.0 |
+| Feral Swiftness | 2 | +0.4% | +0.0% ± 0.2 | +0.2% | +0.4% | 0.0 |
+| Thick Hide | 3 | +0.1% | -0.1% ± 0.1 | +0.0% | +0.3% | 0.0 |
 | Furor | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.0% | 0.0 |
 
 ## Talent values at level 60
@@ -97,24 +97,24 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Naturalist | 5 | +8.9% | +11.7% ± 0.4 | +1.8% | +3.3% | 0.0 |
-| Ferocity | 5 | +5.9% | +7.8% ± 0.6 | +1.2% | +1.5% | 0.0 |
-| Sharpened Claws | 2 | +5.7% | +7.5% ± 0.5 | +2.9% | +3.5% | 0.0 |
-| Blood Frenzy | 2 | +4.2% | +5.6% ± 0.6 | +2.1% | +3.9% | 0.0 |
-| Nature's Reach | 2 | +4.0% | +5.6% ± 0.7 | +2.0% | +3.0% | 0.0 |
-| Predatory Strikes | 3 | +3.8% | +5.1% ± 0.3 | +1.3% | +3.3% | 0.0 |
-| Nature's Majesty | 2 | +3.6% | +5.1% ± 0.4 | +1.8% | +2.3% | 0.0 |
-| Rend and Tear | 5 | +3.3% | +4.6% ± 0.3 | +0.7% | +2.5% | 0.0 |
-| Leader of the Pack | 1 | +2.9% | +3.9% ± 0.3 | +2.9% | +1.8% | 0.0 |
-| Savage Fury | 2 | +2.7% | +3.7% ± 0.3 | +1.4% | +2.2% | 0.0 |
-| Genesis | 5 | +2.7% | +1.5% ± 0.2 | +0.5% | +0.8% | 0.0 |
-| Natural Instinct | 2 | +2.4% | +2.6% ± 0.2 | +1.2% | +1.5% | 0.0 |
-| Heart of the Wild | 5 | +1.3% | +1.5% ± 0.2 | +0.3% | +0.5% | 0.0 |
-| Feral Swiftness | 2 | +1.2% | -0.0% ± 0.3 | +0.6% | +0.5% | 0.0 |
-| Natural Shapeshifter | 1 | +1.0% | -0.1% ± 0.1 | +1.0% | +0.6% | 0.0 |
-| Thick Hide | 3 | +0.4% | -0.0% ± 0.1 | +0.1% | +0.3% | 0.0 |
-| Furor | 3 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.0% | 0.0 |
+| Naturalist | 5 | +7.4% | +9.7% ± 0.3 | +1.5% | +3.3% | 0.0 |
+| Ferocity | 5 | +5.9% | +7.3% ± 0.6 | +1.2% | +1.5% | 0.0 |
+| Sharpened Claws | 2 | +4.7% | +6.2% ± 0.4 | +2.4% | +3.5% | 0.0 |
+| Nature's Reach | 2 | +4.6% | +5.6% ± 0.6 | +2.3% | +3.0% | 0.0 |
+| Blood Frenzy | 2 | +4.0% | +5.1% ± 0.6 | +2.0% | +3.9% | 0.0 |
+| Predatory Strikes | 3 | +3.9% | +5.2% ± 0.3 | +1.3% | +3.3% | 0.0 |
+| Rend and Tear | 5 | +3.5% | +4.5% ± 0.2 | +0.7% | +2.5% | 0.0 |
+| Nature's Majesty | 2 | +3.4% | +4.5% ± 0.3 | +1.7% | +2.3% | 0.0 |
+| Genesis | 5 | +3.3% | +2.1% ± 0.2 | +0.7% | +0.8% | 0.0 |
+| Savage Fury | 2 | +2.6% | +3.3% ± 0.2 | +1.3% | +2.2% | 0.0 |
+| Leader of the Pack | 1 | +2.6% | +3.4% ± 0.3 | +2.6% | +1.8% | 0.0 |
+| Natural Instinct | 2 | +1.9% | +1.7% ± 0.2 | +1.0% | +1.5% | 0.0 |
+| Natural Shapeshifter | 1 | +1.5% | -0.0% ± 0.1 | +1.5% | +0.6% | 0.0 |
+| Feral Swiftness | 2 | +1.5% | +0.3% ± 0.3 | +0.7% | +0.5% | 0.0 |
+| Heart of the Wild | 5 | +1.4% | +1.5% ± 0.2 | +0.3% | +0.5% | 0.0 |
+| Thick Hide | 3 | +0.6% | -0.0% ± 0.1 | +0.2% | +0.3% | 0.0 |
 | Nature's Focus | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.0% | 0.0 |
+| Furor | 3 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.0% | 0.0 |
 
 ## Assumptions (edit `tables.py` to change them)
 

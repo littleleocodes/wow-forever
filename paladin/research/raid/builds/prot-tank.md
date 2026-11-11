@@ -72,14 +72,14 @@ Allocation adopted on 2026-09-28 from `opt-prot-tank-raid-tank`, the best build 
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `prot-tank` by tank value in the community simulator (wowsims/forever 16e8542 (client 70790)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 4** for `prot-tank` by tank value in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 0/35/16 | 1.022 | +0.0% | 1241 | 292 |
-| 2 | **[`prot-tank`](prot-tank.md)** | ours: hand draft | 0/33/18 | 1.000 | -2.1% | 1171 | 287 |
-| 3 | *Default* | community simulator | - | 0.997 | -2.4% | 1215 | 300 |
-| 4 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 1/34/16 | 0.977 | -4.4% | 1110 | 285 |
+| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 0/35/16 | 1.022 | +0.0% | 1185 | 287 |
+| 2 | **[`prot-tank`](prot-tank.md)** | ours: hand draft | 0/33/18 | 1.000 | -2.1% | 1114 | 281 |
+| 3 | *Default* | community simulator | - | 0.998 | -2.3% | 1160 | 295 |
+| 4 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 1/34/16 | 0.976 | -4.5% | 1060 | 281 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -97,12 +97,12 @@ Before the pull: at -20s: cast Righteous Fury; at -18.5s: cast Retribution Aura;
 | 2 | use every other cooldown when ready | as ready |
 | 3 | cast Judgement | 0.3 |
 | 4 | if time left on Seal of Fury < time to the next auto attack and auraIsInactive: cast Seal of Fury | 2.0 |
-| 5 | cast Consecration | 6.1 |
-| 6 | cast Holy Shield | 5.2 |
-| 7 | cast Holy Shield (rank 3) | 0.3 |
+| 5 | cast Consecration | 5.6 |
+| 6 | cast Holy Shield | 5.0 |
+| 7 | cast Holy Shield (rank 3) | 0.5 |
 | 8 | cast Holy Strike | 9.7 |
 | 9 | cast Lay on Hands | 0.3 |
-| 10 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 0.6 |
+| 10 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 0.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Swift Judgement, cast Exorcism (its condition never held in these fights); cast Holy Shock (needs the Holy Shock talent).
 
@@ -110,12 +110,12 @@ Damage by ability (threat for tanks):
 
 | Ability | [`prot-tank`](prot-tank.md) |
 |---|---|
-| Holy Strike | 20% |
-| Holy Shield | 18% |
-| Auto Attack | 17% |
-| Judgement of Fury | 12% |
+| Holy Strike | 21% |
+| Holy Shield | 19% |
+| Auto Attack | 15% |
+| Judgement of Fury | 13% |
 | Consecration | 10% |
-| Seal of Fury | 10% |
+| Seal of Fury | 9% |
 | Lay on Hands | 5% |
 | Judgement of Light | 2% |
 | Retribution Aura | 2% |

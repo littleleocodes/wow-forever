@@ -14,89 +14,256 @@
   "bis": {
    "entry": "feral-cat-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-bis.gear.json",
-   "date": "2026-10-31",
-   "setting": "raid",
+   "date": "2026-11-11",
    "chosen": "keep-sets-and-effects",
-   "ilvl": 63.2,
+   "ilvl": 63.4,
    "trinkets": [
-    "Adaptive Combat Assistant",
-    "Rune of the Guard Captain"
+    "Hand of Justice",
+    "Counterattack Lodestone"
    ],
+   "trinket_screen": {
+    "Hand of Justice (11815)": 1.016,
+    "Blackhand's Breadth (13965)": 1.0089,
+    "Counterattack Lodestone (18537)": 1.0087,
+    "Rune of the Guard Captain (19120)": 1.0083,
+    "Cleansed Vilebranch Medallion (270275)": 1.0083,
+    "Vigilance Charm (18370)": 1.0069,
+    "Adaptive Combat Assistant (272437)": 1.0065,
+    "Smolderweb's Eye (13213)": 1.0059,
+    "Frozen Heart of the Mountain (249469)": 1.0053,
+    "Molten Heart of the Mountain (249470)": 1.0052,
+    "Jewel of the Guard Captain (270225)": 1.0045,
+    "Everlook Pathcarver (274759)": 1.0041,
+    "Cannonball Runner (13382)": 1.0035,
+    "Everlook Delivery Bot (274760)": 1.0026,
+    "Weakness Analyzer (272438)": 1.0003,
+    "Second Wind (11819)": 1.0001,
+    "Burst of Knowledge (11832)": 1.0001,
+    "Enriched Seal (271903)": 1.0,
+    "Darkspear Voodoo Seal (272061)": 1.0,
+    "Mindtap Talisman (18371)": 1.0,
+    "Shard of the Splithooves (10659)": 1.0,
+    "Eye of the Beast (13968)": 1.0,
+    "Dog Whistle (3456)": 1.0,
+    "Minor Recombobulator (4381)": 1.0,
+    "Gnomish Universal Remote (7506)": 1.0,
+    "Demon's Blood (10779)": 1.0,
+    "Force of Will (11810)": 1.0,
+    "Smoking Heart of the Mountain (11811)": 1.0,
+    "Heart of the Scale (13164)": 1.0,
+    "Arcanite Dragonling (16022)": 1.0,
+    "Heart of Noxxion (17744)": 1.0,
+    "Gyrofreeze Ice Reflector (18634)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Hyper-Radiant Flame Reflector (18638)": 1.0,
+    "Ultra-Flash Shadow Reflector (18639)": 1.0,
+    "The Eye of Shadow (18665)": 1.0,
+    "Essence of the Pure Flame (18815)": 1.0,
+    "Talisman of Ephemeral Power (18820)": 1.0,
+    "Arena Grand Master (19024)": 1.0,
+    "Talisman of Arathor (20071)": 1.0,
+    "Defiler's Talisman (20072)": 1.0,
+    "Defiler's Talisman (21115)": 1.0,
+    "Defiler's Talisman (21116)": 1.0,
+    "Talisman of Arathor (21117)": 1.0,
+    "Talisman of Arathor (21118)": 1.0,
+    "Talisman of Arathor (21119)": 1.0,
+    "Defiler's Talisman (21120)": 1.0,
+    "Defender of the Timbermaw (21326)": 1.0,
+    "Heart of Wyrmthalak (22321)": 1.0,
+    "Dormant Heart of the Mountain (249473)": 1.0,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
+    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
+    "Gnomish Poultryizer (260824)": 1.0,
+    "Volunteer's Lucky Seal (271904)": 1.0,
+    "Volunteer's Lucky Seal (271906)": 1.0,
+    "Relentless Raider's Seal (272060)": 1.0,
+    "Relentless Raider's Seal (272062)": 1.0,
+    "Serenity Field (272439)": 1.0,
+    "Defender's Grip Stabilizer (272440)": 1.0,
+    "Cursed Murloc Eye (273840)": 1.0,
+    "Parachute-Priest Pager (274761)": 1.0,
+    "Lookie's Spyglass (273298)": 1.0,
+    "Enriched Seal (271905)": 1.0,
+    "Darkspear Voodoo Seal (272059)": 1.0,
+    "Worgenbane Talisman (273643)": 1.0,
+    "Roogug's Severed Head (274152)": 1.0,
+    "Alchemist's Stone (13503)": 1.0
+   },
    "names": [
-    "Darkmantle Cap",
+    "Outlaw's Collar",
     "Amulet of the Darkmoon",
     "Theramore Pauldrons",
     "Earthweave Cloak",
     "Timbermaw Tunic",
-    "Forest Stalker's Bracers",
-    "Timbermaw Brawlers",
+    "Bracers of the Eclipse",
+    "Theramore Gloves",
     "Shifter's Belt",
     "Warbear Woolies",
     "Dunestalker's Boots",
-    "Signet Ring of the Bronze Dragonflight",
     "Quick Strike Ring",
-    "Adaptive Combat Assistant",
-    "Rune of the Guard Captain",
-    "Premier High Warlord's Razor",
+    "Band of Earthen Might",
+    "Hand of Justice",
+    "Counterattack Lodestone",
+    "Ebon Hand",
     null,
     "Idol of the Moon"
    ],
    "race_seed1": {
-    "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0
+    "current": 1.0,
+    "all-slots": 1.0069183855302433,
+    "keep-sets-and-effects": 1.0085452828751753
    },
    "confirm_seed2": {
-    "keep-sets-and-effects": 1.0,
-    "all-slots": 1.0
+    "current": 1.0,
+    "keep-sets-and-effects": 1.0084208219930908
    },
    "weights": {
-    "PseudoStatMainHandDps": 2.1261,
-    "StatAgility": 0.5883,
-    "StatArmorPenetration": 0.0715,
-    "StatAttackPower": 0.2245,
-    "StatCritRating": 0.448,
-    "StatExpertiseRating": 0.4119,
-    "StatFeralAttackPower": 0.2244,
-    "StatHasteRating": 0.235,
-    "StatHitRating": 0.4139,
-    "StatIntellect": 0.0005,
-    "StatSpellPiercing": 0.0063,
-    "StatSpirit": 0.0,
-    "StatStrength": 0.5388
+    "PseudoStatMainHandDps": 2.2277,
+    "StatAgility": 0.681,
+    "StatArmorPenetration": 0.0779,
+    "StatAttackPower": 0.2559,
+    "StatCritRating": 0.5206,
+    "StatExpertiseRating": 0.5091,
+    "StatFeralAttackPower": 0.2559,
+    "StatHasteRating": 0.3441,
+    "StatHitRating": 0.5306,
+    "StatIntellect": 0.0003,
+    "StatSpellPiercing": 0.0077,
+    "StatStrength": 0.6143
    },
    "evaluated_on": [
     "feral-cat-dps: ml winner"
    ],
-   "commit": "b90e2b958"
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Darkmantle Cap (not in the database)",
+     "to": "Outlaw's Collar"
+    },
+    {
+     "slot": 5,
+     "from": "Darkmantle Bracers (not in the database)",
+     "to": "Bracers of the Eclipse"
+    },
+    {
+     "slot": 12,
+     "from": "Adaptive Combat Assistant",
+     "to": "Hand of Justice"
+    },
+    {
+     "slot": 13,
+     "from": "Rune of the Guard Captain",
+     "to": "Counterattack Lodestone"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever ff9babba5",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:22005",
+     "item:22004"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 1.9
+   }
   },
   "bis2": true,
   "prebis": {
    "entry": "feral-cat-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-prebis.gear.json",
-   "date": "2026-10-31",
-   "setting": "raid",
+   "date": "2026-11-11",
    "chosen": "keep-sets-and-effects",
-   "ilvl": 62.8,
+   "ilvl": 62.9,
    "trinkets": [
-    "Adaptive Combat Assistant",
-    "Rune of the Guard Captain"
+    "Hand of Justice",
+    "Counterattack Lodestone"
    ],
+   "trinket_screen": {
+    "Hand of Justice (11815)": 1.0159,
+    "Counterattack Lodestone (18537)": 1.0086,
+    "Blackhand's Breadth (13965)": 1.0085,
+    "Rune of the Guard Captain (19120)": 1.0077,
+    "Cleansed Vilebranch Medallion (270275)": 1.0077,
+    "Vigilance Charm (18370)": 1.0075,
+    "Adaptive Combat Assistant (272437)": 1.0062,
+    "Smolderweb's Eye (13213)": 1.0055,
+    "Molten Heart of the Mountain (249470)": 1.0052,
+    "Frozen Heart of the Mountain (249469)": 1.0051,
+    "Jewel of the Guard Captain (270225)": 1.0043,
+    "Everlook Pathcarver (274759)": 1.0041,
+    "Everlook Delivery Bot (274760)": 1.0025,
+    "Cannonball Runner (13382)": 1.0024,
+    "Weakness Analyzer (272438)": 1.0002,
+    "Second Wind (11819)": 1.0001,
+    "Eye of the Beast (13968)": 1.0,
+    "Enriched Seal (271903)": 1.0,
+    "Darkspear Voodoo Seal (272061)": 1.0,
+    "Burst of Knowledge (11832)": 1.0,
+    "Dog Whistle (3456)": 1.0,
+    "Minor Recombobulator (4381)": 1.0,
+    "Gnomish Universal Remote (7506)": 1.0,
+    "Demon's Blood (10779)": 1.0,
+    "Force of Will (11810)": 1.0,
+    "Smoking Heart of the Mountain (11811)": 1.0,
+    "Heart of the Scale (13164)": 1.0,
+    "Arcanite Dragonling (16022)": 1.0,
+    "Heart of Noxxion (17744)": 1.0,
+    "Gyrofreeze Ice Reflector (18634)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Hyper-Radiant Flame Reflector (18638)": 1.0,
+    "Ultra-Flash Shadow Reflector (18639)": 1.0,
+    "The Eye of Shadow (18665)": 1.0,
+    "Talisman of Arathor (20071)": 1.0,
+    "Defiler's Talisman (20072)": 1.0,
+    "Defiler's Talisman (21115)": 1.0,
+    "Defiler's Talisman (21116)": 1.0,
+    "Talisman of Arathor (21117)": 1.0,
+    "Talisman of Arathor (21118)": 1.0,
+    "Talisman of Arathor (21119)": 1.0,
+    "Defiler's Talisman (21120)": 1.0,
+    "Defender of the Timbermaw (21326)": 1.0,
+    "Heart of Wyrmthalak (22321)": 1.0,
+    "Dormant Heart of the Mountain (249473)": 1.0,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
+    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
+    "Gnomish Poultryizer (260824)": 1.0,
+    "Volunteer's Lucky Seal (271904)": 1.0,
+    "Volunteer's Lucky Seal (271906)": 1.0,
+    "Relentless Raider's Seal (272060)": 1.0,
+    "Relentless Raider's Seal (272062)": 1.0,
+    "Serenity Field (272439)": 1.0,
+    "Defender's Grip Stabilizer (272440)": 1.0,
+    "Cursed Murloc Eye (273840)": 1.0,
+    "Parachute-Priest Pager (274761)": 1.0,
+    "Shard of the Splithooves (10659)": 1.0,
+    "Lookie's Spyglass (273298)": 1.0,
+    "Roogug's Severed Head (274152)": 1.0,
+    "Alchemist's Stone (13503)": 1.0,
+    "Worgenbane Talisman (273643)": 1.0,
+    "Enriched Seal (271905)": 1.0,
+    "Darkspear Voodoo Seal (272059)": 1.0,
+    "Mindtap Talisman (18371)": 1.0
+   },
    "names": [
-    "Darkmantle Cap",
+    "Outlaw's Collar",
     "Amulet of the Darkmoon",
     "Theramore Pauldrons",
-    "Earthweave Cloak",
+    "Cape of the Black Baron",
     "Timbermaw Tunic",
-    "Forest Stalker's Bracers",
-    "Timbermaw Brawlers",
+    "Bracers of the Eclipse",
+    "Theramore Gloves",
     "Shifter's Belt",
     "Warbear Woolies",
     "Dunestalker's Boots",
-    "Signet Ring of the Bronze Dragonflight",
-    "Don Julio's Band",
-    "Adaptive Combat Assistant",
-    "Rune of the Guard Captain",
-    "Premier High Warlord's Razor",
+    "Cutthroat's Signet",
+    "Warden's Signet of Ferocity",
+    "Hand of Justice",
+    "Counterattack Lodestone",
+    "Greenhammer",
     null,
     "Idol of the Moon"
    ],
@@ -109,23 +276,59 @@
     "all-slots": 1.0
    },
    "weights": {
-    "PseudoStatMainHandDps": 2.0578,
-    "StatAgility": 0.5702,
-    "StatArmorPenetration": 0.0684,
-    "StatAttackPower": 0.218,
-    "StatCritRating": 0.4357,
-    "StatExpertiseRating": 0.4032,
-    "StatFeralAttackPower": 0.218,
-    "StatHasteRating": 0.2339,
-    "StatHitRating": 0.4069,
-    "StatIntellect": 0.0004,
-    "StatSpellPiercing": 0.0057,
-    "StatStrength": 0.5232
+    "PseudoStatMainHandDps": 2.2253,
+    "StatAgility": 0.6742,
+    "StatArmorPenetration": 0.0775,
+    "StatAttackPower": 0.2549,
+    "StatCritRating": 0.526,
+    "StatExpertiseRating": 0.4404,
+    "StatFeralAttackPower": 0.2549,
+    "StatHasteRating": 0.334,
+    "StatHitRating": 0.4537,
+    "StatIntellect": 0.0006,
+    "StatSpellPiercing": 0.0077,
+    "StatStrength": 0.6373
    },
    "evaluated_on": [
     "feral-cat-dps: ml winner (bis)"
    ],
-   "commit": "b90e2b958"
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Darkmantle Cap (not in the database)",
+     "to": "Outlaw's Collar"
+    },
+    {
+     "slot": 3,
+     "from": "Earthweave Cloak",
+     "to": "Cape of the Black Baron"
+    },
+    {
+     "slot": 5,
+     "from": "Skulker's Leather Bracers",
+     "to": "Bracers of the Eclipse"
+    },
+    {
+     "slot": 12,
+     "from": "Adaptive Combat Assistant",
+     "to": "Hand of Justice"
+    },
+    {
+     "slot": 13,
+     "from": "Rune of the Guard Captain",
+     "to": "Counterattack Lodestone"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever ff9babba5",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [
+     "item:22005"
+    ],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 1.9
+   }
   }
  },
  "search": {
@@ -637,14 +840,14 @@
    "minutes": 5.8,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-bis.gear.json",
    "commit": "30f67f5d2",
-   "sig_start": "2026-10-31: the stored winner is not legal on the current talent trees; the final step starts from the feral-cat-dps open-search winner (druid.json)"
+   "sig_start": "2026-11-01: the stored winner is not legal on the current talent trees; the final step starts from the feral-cat-dps open-search winner (druid.json)"
   },
   "bis-dummy": {
    "class": "druid",
    "spec": "Feral Combat",
    "setting": "dummy",
    "entry": "feral-cat-dps",
-   "date": "2026-10-31",
+   "date": "2026-11-01",
    "constraint": "Feral Combat 30+",
    "protected": [],
    "entries_screened": {},
@@ -673,7 +876,7 @@
        2
       ],
       [
-       "Feral Instinct",
+       "Feral Swiftness",
        2
       ],
       [
@@ -714,7 +917,7 @@
       ],
       [
        "Rend and Tear",
-       4
+       5
       ],
       [
        "Shifting Power",
@@ -732,39 +935,47 @@
       ],
       [
        "Natural Shapeshifter",
-       3
+       2
       ]
      ]
     },
-    "split": "7/31/13",
-    "dps": 390.27,
-    "se": 0.0468,
+    "split": "7/32/12",
+    "dps": 412.5,
+    "se": 0.0501,
     "iterations": 100000
    },
    "runner_up": {
     "split": "7/32/12",
-    "dps": 388.44,
-    "se": 0.0482,
+    "dps": 412.5,
+    "se": 0.0501,
     "differs": [
      [
-      "Natural Shapeshifter",
+      "Feral Instinct",
       2
      ],
      [
-      "Natural Shapeshifter",
-      3
+      "Feral Swiftness",
+      2
      ],
      [
-      "Rend and Tear",
-      4
+      "Ferocity",
+      2
      ],
      [
-      "Rend and Tear",
+      "Ferocity",
+      5
+     ],
+     [
+      "Furor",
+      2
+     ],
+     [
+      "Furor",
       5
      ]
     ]
    },
-   "gap_to_runner_up": 0.0047,
+   "gap_to_runner_up": 0.0,
    "finalists": [
     {
      "allocation": {
@@ -788,7 +999,7 @@
         2
        ],
        [
-        "Feral Instinct",
+        "Feral Swiftness",
         2
        ],
        [
@@ -829,7 +1040,7 @@
        ],
        [
         "Rend and Tear",
-        4
+        5
        ],
        [
         "Shifting Power",
@@ -847,13 +1058,13 @@
        ],
        [
         "Natural Shapeshifter",
-        3
+        2
        ]
       ]
      },
-     "split": "7/31/13",
-     "dps": 390.27,
-     "se": 0.0468
+     "split": "7/32/12",
+     "dps": 412.5,
+     "se": 0.0501
     },
     {
      "allocation": {
@@ -870,11 +1081,11 @@
       "Feral Combat": [
        [
         "Ferocity",
-        5
+        2
        ],
        [
         "Furor",
-        2
+        5
        ],
        [
         "Feral Instinct",
@@ -941,52 +1152,58 @@
       ]
      },
      "split": "7/32/12",
-     "dps": 388.44,
-     "se": 0.0482
+     "dps": 412.5,
+     "se": 0.0501
     }
    ],
    "runs": [
     {
      "entry": "feral-cat-dps",
      "run": 1,
-     "simulated": 1389,
-     "best_screen": 388.74,
+     "simulated": 1585,
+     "best_screen": 412.35,
      "best_split": "7/32/12",
      "trace": [
       {
        "round": 0,
-       "simulated": 389,
-       "best": 387.8
+       "simulated": 385,
+       "best": 410.18
       },
       {
        "round": 1,
-       "simulated": 589,
-       "best": 388.74,
-       "predicted_top": 381.41
+       "simulated": 585,
+       "best": 410.18,
+       "predicted_top": 403.1
       },
       {
        "round": 2,
-       "simulated": 789,
-       "best": 388.74,
-       "predicted_top": 385.75
+       "simulated": 785,
+       "best": 410.18,
+       "predicted_top": 407.35
       },
       {
        "round": 3,
-       "simulated": 989,
-       "best": 388.74,
-       "predicted_top": 387.11
+       "simulated": 985,
+       "best": 410.18,
+       "predicted_top": 409.3
       },
       {
        "round": 4,
-       "simulated": 1189,
-       "best": 388.74,
-       "predicted_top": 388.17
+       "simulated": 1185,
+       "best": 412.35,
+       "predicted_top": 410.03
       },
       {
        "round": 5,
-       "simulated": 1389,
-       "best": 388.74,
-       "predicted_top": 388.67
+       "simulated": 1385,
+       "best": 412.35,
+       "predicted_top": 410.17
+      },
+      {
+       "round": 6,
+       "simulated": 1585,
+       "best": 412.35,
+       "predicted_top": 411.85
       }
      ],
      "best_stage1_gap": 0.0,
@@ -999,131 +1216,113 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      388.55,
-      388.55,
-      388.55,
-      388.55,
-      388.55,
-      388.55
+      412.44,
+      412.44,
+      412.44,
+      412.44,
+      412.44,
+      412.44
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      388.51,
-      388.51,
-      388.51,
-      388.51,
-      388.51
+      412.42,
+      412.42,
+      412.42,
+      412.42,
+      412.42
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      388.44,
-      388.44
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      390.27,
-      388.44
+      412.5,
+      412.5
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 333,
-     "best_gap": 0.0051,
-     "best_move": "1 Rend and Tear -> Natural Shapeshifter",
-     "raced": [
-      "1 Rend and Tear -> Natural Shapeshifter",
-      "1 Savage Fury -> Natural Shapeshifter"
-     ],
-     "confirmed_gap": 0.0045
-    },
-    {
-     "neighbours": 263,
-     "best_gap": 0.0,
-     "best_move": "2 Feral Instinct -> Thick Hide"
+     "neighbours": 323,
+     "best_gap": 0.0005,
+     "best_move": "1 Rend and Tear -> Natural Shapeshifter"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Shifting Power",
-     "importance": 0.3496
+     "importance": 0.2957
     },
     {
      "feature": "Naturalist",
-     "importance": 0.2052
+     "importance": 0.2527
     },
     {
      "feature": "Rend and Tear",
-     "importance": 0.1818
-    },
-    {
-     "feature": "Brutal Impact",
-     "importance": 0.0421
-    },
-    {
-     "feature": "Nature's Majesty",
-     "importance": 0.0277
-    },
-    {
-     "feature": "Shredding Attacks",
-     "importance": 0.0267
+     "importance": 0.1577
     },
     {
      "feature": "Feral Charge",
-     "importance": 0.026
-    },
-    {
-     "feature": "Restoration points",
-     "importance": 0.0176
+     "importance": 0.0428
     },
     {
      "feature": "Feral Instinct",
-     "importance": 0.0164
+     "importance": 0.0332
+    },
+    {
+     "feature": "Shredding Attacks",
+     "importance": 0.0302
+    },
+    {
+     "feature": "Nature's Majesty",
+     "importance": 0.0262
+    },
+    {
+     "feature": "Nature's Focus",
+     "importance": 0.0223
     },
     {
      "feature": "Feral Combat points",
-     "importance": 0.0146
+     "importance": 0.0174
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0169
+    },
+    {
+     "feature": "Balance points",
+     "importance": 0.016
     },
     {
      "feature": "Blood Frenzy",
-     "importance": 0.0131
-    },
-    {
-     "feature": "Feral Swiftness",
-     "importance": 0.0107
+     "importance": 0.0151
     }
    ],
-   "simulated_builds": 2004,
+   "simulated_builds": 1922,
    "signature_check": {
     "spec": "Feral Combat",
     "ok": true,
-    "core_share": 0.9827,
+    "core_share": 0.9836,
     "min_share": 0.8,
     "uncast": [],
     "missing_talents": [],
     "why": ""
    },
-   "simulated_fights": 3783000,
-   "minutes": 8.7,
+   "simulated_fights": 2967000,
+   "minutes": 15.5,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-bis.gear.json",
-   "commit": "b90e2b958"
+   "commit": "54ceac638"
   },
   "bis-raid": {
    "class": "druid",
    "spec": "Feral Combat",
    "setting": "raid",
    "entry": "feral-cat-dps",
-   "date": "2026-10-31",
+   "date": "2026-11-01",
    "constraint": "Feral Combat 30+",
    "protected": [],
    "entries_screened": {},
@@ -1153,11 +1352,7 @@
       ],
       [
        "Furor",
-       3
-      ],
-      [
-       "Feral Instinct",
-       2
+       5
       ],
       [
        "Shredding Attacks",
@@ -1206,32 +1401,32 @@
        5
       ],
       [
-       "Natural Shapeshifter",
+       "Reflection",
        1
       ]
      ]
     },
     "split": "9/31/11",
-    "dps": 792.24,
-    "se": 0.0775,
+    "dps": 836.09,
+    "se": 0.0856,
     "iterations": 100000
    },
    "runner_up": {
     "split": "9/31/11",
-    "dps": 792.24,
-    "se": 0.0775,
+    "dps": 836.09,
+    "se": 0.0856,
     "differs": [
      [
       "Feral Instinct",
-      1
+      3
      ],
      [
-      "Feral Instinct",
+      "Furor",
+      5
+     ],
+     [
+      "Thick Hide",
       2
-     ],
-     [
-      "Feral Swiftness",
-      1
      ]
     ]
    },
@@ -1260,11 +1455,7 @@
        ],
        [
         "Furor",
-        3
-       ],
-       [
-        "Feral Instinct",
-        2
+        5
        ],
        [
         "Shredding Attacks",
@@ -1313,14 +1504,14 @@
         5
        ],
        [
-        "Natural Shapeshifter",
+        "Reflection",
         1
        ]
       ]
      },
      "split": "9/31/11",
-     "dps": 792.24,
-     "se": 0.0775
+     "dps": 836.09,
+     "se": 0.0856
     },
     {
      "allocation": {
@@ -1344,16 +1535,12 @@
         5
        ],
        [
-        "Furor",
+        "Feral Instinct",
         3
        ],
        [
-        "Feral Swiftness",
-        1
-       ],
-       [
-        "Feral Instinct",
-        1
+        "Thick Hide",
+        2
        ],
        [
         "Shredding Attacks",
@@ -1402,52 +1589,52 @@
         5
        ],
        [
-        "Natural Shapeshifter",
+        "Reflection",
         1
        ]
       ]
      },
      "split": "9/31/11",
-     "dps": 792.24,
-     "se": 0.0775
+     "dps": 836.09,
+     "se": 0.0856
     }
    ],
    "runs": [
     {
      "entry": "feral-cat-dps",
      "run": 1,
-     "simulated": 1198,
-     "best_screen": 793.33,
+     "simulated": 1196,
+     "best_screen": 836.33,
      "best_split": "9/31/11",
      "trace": [
       {
        "round": 0,
-       "simulated": 398,
-       "best": 792.54
+       "simulated": 396,
+       "best": 836.11
       },
       {
        "round": 1,
-       "simulated": 598,
-       "best": 792.73,
-       "predicted_top": 785.22
+       "simulated": 596,
+       "best": 836.33,
+       "predicted_top": 830.12
       },
       {
        "round": 2,
-       "simulated": 798,
-       "best": 793.08,
-       "predicted_top": 791.08
+       "simulated": 796,
+       "best": 836.33,
+       "predicted_top": 835.51
       },
       {
        "round": 3,
-       "simulated": 998,
-       "best": 793.33,
-       "predicted_top": 792.44
+       "simulated": 996,
+       "best": 836.33,
+       "predicted_top": 836.08
       },
       {
        "round": 4,
-       "simulated": 1198,
-       "best": 793.33,
-       "predicted_top": 793.06
+       "simulated": 1196,
+       "best": 836.33,
+       "predicted_top": 836.11
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1460,113 +1647,113 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      792.06,
-      792.06,
-      792.06,
-      792.06,
-      792.06,
-      792.06
+      835.66,
+      835.66,
+      835.66,
+      835.66,
+      835.66,
+      835.66
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      792.09,
-      792.09,
-      792.09,
-      792.09,
-      792.09
+      836.11,
+      836.11,
+      836.11,
+      836.11,
+      836.11
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      792.24,
-      792.24
+      836.09,
+      836.09
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 294,
+     "neighbours": 281,
      "best_gap": 0.0,
-     "best_move": "1 Natural Shapeshifter -> Reflection"
+     "best_move": "1 Reflection -> Bloom"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Shifting Power",
-     "importance": 0.3837
+     "importance": 0.4421
     },
     {
      "feature": "Naturalist",
-     "importance": 0.2065
+     "importance": 0.2181
     },
     {
      "feature": "Rend and Tear",
-     "importance": 0.1263
+     "importance": 0.133
     },
     {
-     "feature": "Thick Hide",
-     "importance": 0.0644
-    },
-    {
-     "feature": "Brutal Impact",
-     "importance": 0.0333
-    },
-    {
-     "feature": "Feral Instinct",
-     "importance": 0.0303
+     "feature": "Nature's Majesty",
+     "importance": 0.0421
     },
     {
      "feature": "Feral Combat points",
-     "importance": 0.0262
+     "importance": 0.0271
     },
     {
-     "feature": "Improved Wrath",
-     "importance": 0.0187
-    },
-    {
-     "feature": "Feral Swiftness",
-     "importance": 0.0162
+     "feature": "Brutal Impact",
+     "importance": 0.0229
     },
     {
      "feature": "Restoration points",
-     "importance": 0.0147
+     "importance": 0.0172
     },
     {
      "feature": "Balance points",
-     "importance": 0.0139
+     "importance": 0.0142
+    },
+    {
+     "feature": "Improved Wrath",
+     "importance": 0.0102
+    },
+    {
+     "feature": "Feral Instinct",
+     "importance": 0.0093
+    },
+    {
+     "feature": "Nature's Reach",
+     "importance": 0.009
     },
     {
      "feature": "Nature's Focus",
-     "importance": 0.0101
+     "importance": 0.0083
     }
    ],
-   "simulated_builds": 1506,
+   "simulated_builds": 1491,
    "signature_check": {
     "spec": "Feral Combat",
     "ok": true,
-    "core_share": 0.9924,
+    "core_share": 0.9792,
     "min_share": 0.8,
     "uncast": [],
     "missing_talents": [],
     "why": ""
    },
-   "simulated_fights": 2493000,
-   "minutes": 9.2,
+   "simulated_fights": 2452000,
+   "minutes": 29.0,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-bis.gear.json",
-   "commit": "b90e2b958"
+   "commit": "54ceac638"
   },
   "prebis-dummy": {
    "class": "druid",
    "spec": "Feral Combat",
    "setting": "dummy",
    "entry": "feral-cat-dps",
-   "date": "2026-10-31",
+   "date": "2026-11-01",
    "constraint": "Feral Combat 30+",
    "protected": [],
    "entries_screened": {},
@@ -1592,15 +1779,15 @@
       ],
       [
        "Furor",
-       2
+       1
       ],
       [
-       "Feral Instinct",
+       "Feral Swiftness",
        2
       ],
       [
        "Thick Hide",
-       1
+       2
       ],
       [
        "Shredding Attacks",
@@ -1659,22 +1846,22 @@
      ]
     },
     "split": "7/31/13",
-    "dps": 388.57,
-    "se": 0.0464,
+    "dps": 411.34,
+    "se": 0.0483,
     "iterations": 100000
    },
    "runner_up": {
     "split": "7/31/13",
-    "dps": 388.57,
-    "se": 0.0464,
+    "dps": 411.34,
+    "se": 0.0483,
     "differs": [
      [
-      "Ferocity",
-      4
+      "Furor",
+      1
      ],
      [
-      "Ferocity",
-      5
+      "Furor",
+      2
      ],
      [
       "Thick Hide",
@@ -1707,15 +1894,15 @@
        ],
        [
         "Furor",
-        2
+        1
        ],
        [
-        "Feral Instinct",
+        "Feral Swiftness",
         2
        ],
        [
         "Thick Hide",
-        1
+        2
        ],
        [
         "Shredding Attacks",
@@ -1774,8 +1961,8 @@
       ]
      },
      "split": "7/31/13",
-     "dps": 388.57,
-     "se": 0.0464
+     "dps": 411.34,
+     "se": 0.0483
     },
     {
      "allocation": {
@@ -1792,19 +1979,19 @@
       "Feral Combat": [
        [
         "Ferocity",
-        4
+        5
        ],
        [
         "Furor",
         2
        ],
        [
-        "Feral Instinct",
+        "Feral Swiftness",
         2
        ],
        [
         "Thick Hide",
-        2
+        1
        ],
        [
         "Shredding Attacks",
@@ -1863,46 +2050,52 @@
       ]
      },
      "split": "7/31/13",
-     "dps": 388.57,
-     "se": 0.0464
+     "dps": 411.34,
+     "se": 0.0483
     }
    ],
    "runs": [
     {
      "entry": "feral-cat-dps",
      "run": 1,
-     "simulated": 1200,
-     "best_screen": 389.02,
+     "simulated": 1393,
+     "best_screen": 411.73,
      "best_split": "7/31/13",
      "trace": [
       {
        "round": 0,
-       "simulated": 400,
-       "best": 389.02
+       "simulated": 393,
+       "best": 410.95
       },
       {
        "round": 1,
-       "simulated": 600,
-       "best": 389.02,
-       "predicted_top": 381.88
+       "simulated": 593,
+       "best": 410.95,
+       "predicted_top": 404.78
       },
       {
        "round": 2,
-       "simulated": 800,
-       "best": 389.02,
-       "predicted_top": 385.66
+       "simulated": 793,
+       "best": 411.73,
+       "predicted_top": 406.39
       },
       {
        "round": 3,
-       "simulated": 1000,
-       "best": 389.02,
-       "predicted_top": 387.99
+       "simulated": 993,
+       "best": 411.73,
+       "predicted_top": 408.7
       },
       {
        "round": 4,
-       "simulated": 1200,
-       "best": 389.02,
-       "predicted_top": 388.99
+       "simulated": 1193,
+       "best": 411.73,
+       "predicted_top": 410.82
+      },
+      {
+       "round": 5,
+       "simulated": 1393,
+       "best": 411.73,
+       "predicted_top": 411.54
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1915,113 +2108,113 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      388.44,
-      388.44,
-      388.44,
-      388.44,
-      388.44,
-      388.44
+      411.29,
+      411.29,
+      411.29,
+      411.29,
+      411.29,
+      411.29
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      388.44,
-      388.44,
-      388.44,
-      388.44,
-      388.44
+      411.26,
+      411.26,
+      411.26,
+      411.26,
+      411.26
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      388.57,
-      388.57
+      411.34,
+      411.34
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 263,
+     "neighbours": 242,
      "best_gap": 0.0,
-     "best_move": "1 Thick Hide -> Brutal Impact"
+     "best_move": "2 Thick Hide -> Brutal Impact"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
-     "feature": "Naturalist",
-     "importance": 0.3279
-    },
-    {
      "feature": "Shifting Power",
-     "importance": 0.2867
+     "importance": 0.3243
     },
     {
-     "feature": "Furor",
-     "importance": 0.071
+     "feature": "Naturalist",
+     "importance": 0.2032
+    },
+    {
+     "feature": "Feral Instinct",
+     "importance": 0.1202
     },
     {
      "feature": "Rend and Tear",
-     "importance": 0.0622
+     "importance": 0.1007
     },
     {
-     "feature": "Nature's Majesty",
-     "importance": 0.0313
+     "feature": "Furor",
+     "importance": 0.0425
     },
     {
      "feature": "Shredding Attacks",
-     "importance": 0.029
-    },
-    {
-     "feature": "Feral Charge",
-     "importance": 0.0239
+     "importance": 0.0277
     },
     {
      "feature": "Feral Combat points",
-     "importance": 0.0235
+     "importance": 0.0264
     },
     {
      "feature": "Brutal Impact",
-     "importance": 0.0214
+     "importance": 0.0201
+    },
+    {
+     "feature": "Feral Charge",
+     "importance": 0.0201
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0153
+    },
+    {
+     "feature": "Nature's Majesty",
+     "importance": 0.0151
     },
     {
      "feature": "Blood Frenzy",
-     "importance": 0.0197
-    },
-    {
-     "feature": "Feral Swiftness",
-     "importance": 0.0174
-    },
-    {
-     "feature": "Improved Wrath",
-     "importance": 0.0124
+     "importance": 0.0142
     }
    ],
-   "simulated_builds": 1477,
+   "simulated_builds": 1649,
    "signature_check": {
     "spec": "Feral Combat",
     "ok": true,
-    "core_share": 0.9827,
+    "core_share": 0.9835,
     "min_share": 0.8,
     "uncast": [],
     "missing_talents": [],
     "why": ""
    },
-   "simulated_fights": 2402000,
-   "minutes": 6.4,
+   "simulated_fights": 2532000,
+   "minutes": 14.2,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-prebis.gear.json",
-   "commit": "b90e2b958"
+   "commit": "54ceac638"
   },
   "prebis-raid": {
    "class": "druid",
    "spec": "Feral Combat",
    "setting": "raid",
    "entry": "feral-cat-dps",
-   "date": "2026-10-31",
+   "date": "2026-11-01",
    "constraint": "Feral Combat 30+",
    "protected": [],
    "entries_screened": {},
@@ -2062,10 +2255,6 @@
        2
       ],
       [
-       "Feral Charge",
-       1
-      ],
-      [
        "Sharpened Claws",
        2
       ],
@@ -2102,26 +2291,34 @@
       [
        "Naturalist",
        5
+      ],
+      [
+       "Reflection",
+       1
       ]
      ]
     },
-    "split": "9/32/10",
-    "dps": 790.53,
-    "se": 0.0766,
+    "split": "9/31/11",
+    "dps": 834.41,
+    "se": 0.0846,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "9/32/10",
-    "dps": 790.53,
-    "se": 0.0766,
+    "split": "9/31/11",
+    "dps": 834.41,
+    "se": 0.0846,
     "differs": [
      [
-      "Feral Charge",
-      1
+      "Furor",
+      2
      ],
      [
-      "Natural Reaction",
-      1
+      "Furor",
+      5
+     ],
+     [
+      "Thick Hide",
+      3
      ]
     ]
    },
@@ -2161,10 +2358,6 @@
         2
        ],
        [
-        "Feral Charge",
-        1
-       ],
-       [
         "Sharpened Claws",
         2
        ],
@@ -2201,12 +2394,16 @@
        [
         "Naturalist",
         5
+       ],
+       [
+        "Reflection",
+        1
        ]
       ]
      },
-     "split": "9/32/10",
-     "dps": 790.53,
-     "se": 0.0766
+     "split": "9/31/11",
+     "dps": 834.41,
+     "se": 0.0846
     },
     {
      "allocation": {
@@ -2231,7 +2428,11 @@
        ],
        [
         "Furor",
-        5
+        2
+       ],
+       [
+        "Thick Hide",
+        3
        ],
        [
         "Shredding Attacks",
@@ -2266,10 +2467,6 @@
         5
        ],
        [
-        "Natural Reaction",
-        1
-       ],
-       [
         "Shifting Power",
         1
        ]
@@ -2282,12 +2479,16 @@
        [
         "Naturalist",
         5
+       ],
+       [
+        "Reflection",
+        1
        ]
       ]
      },
-     "split": "9/32/10",
-     "dps": 790.53,
-     "se": 0.0766
+     "split": "9/31/11",
+     "dps": 834.41,
+     "se": 0.0846
     }
    ],
    "runs": [
@@ -2295,37 +2496,37 @@
      "entry": "feral-cat-dps",
      "run": 1,
      "simulated": 1197,
-     "best_screen": 790.45,
-     "best_split": "9/32/10",
+     "best_screen": 834.88,
+     "best_split": "9/31/11",
      "trace": [
       {
        "round": 0,
        "simulated": 397,
-       "best": 790.45
+       "best": 834.88
       },
       {
        "round": 1,
        "simulated": 597,
-       "best": 790.45,
-       "predicted_top": 783.67
+       "best": 834.88,
+       "predicted_top": 826.26
       },
       {
        "round": 2,
        "simulated": 797,
-       "best": 790.45,
-       "predicted_top": 788.46
+       "best": 834.88,
+       "predicted_top": 833.28
       },
       {
        "round": 3,
        "simulated": 997,
-       "best": 790.45,
-       "predicted_top": 789.98
+       "best": 834.88,
+       "predicted_top": 834.7
       },
       {
        "round": 4,
        "simulated": 1197,
-       "best": 790.45,
-       "predicted_top": 790.17
+       "best": 834.88,
+       "predicted_top": 834.75
       }
      ],
      "best_stage1_gap": 0.0,
@@ -2338,109 +2539,109 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      790.51,
-      790.51,
-      790.51,
-      790.51,
-      790.51,
-      790.51
+      834.46,
+      834.46,
+      834.46,
+      834.46,
+      834.46,
+      834.46
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      790.7,
-      790.7,
-      790.7,
-      790.7,
-      790.7
+      834.63,
+      834.63,
+      834.63,
+      834.63,
+      834.63
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      790.53,
-      790.53
+      834.41,
+      834.41
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 334,
-     "best_gap": 0.0001,
-     "best_move": "1 Feral Charge -> Reflection"
+     "neighbours": 281,
+     "best_gap": 0.0,
+     "best_move": "3 Furor -> Thick Hide"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Shifting Power",
-     "importance": 0.4224
+     "importance": 0.4061
     },
     {
      "feature": "Naturalist",
-     "importance": 0.2216
+     "importance": 0.2507
     },
     {
      "feature": "Rend and Tear",
-     "importance": 0.1095
-    },
-    {
-     "feature": "Thick Hide",
-     "importance": 0.0455
+     "importance": 0.1211
     },
     {
      "feature": "Brutal Impact",
-     "importance": 0.0323
+     "importance": 0.0375
     },
     {
      "feature": "Feral Instinct",
-     "importance": 0.0295
-    },
-    {
-     "feature": "Feral Swiftness",
-     "importance": 0.0227
+     "importance": 0.0345
     },
     {
      "feature": "Feral Combat points",
-     "importance": 0.0224
+     "importance": 0.0216
     },
     {
-     "feature": "Heart of the Wild",
-     "importance": 0.0107
-    },
-    {
-     "feature": "Restoration points",
-     "importance": 0.009
+     "feature": "Nature's Majesty",
+     "importance": 0.0168
     },
     {
      "feature": "Nature's Reach",
-     "importance": 0.0084
+     "importance": 0.0147
     },
     {
-     "feature": "Genesis",
-     "importance": 0.0079
+     "feature": "Balance points",
+     "importance": 0.0139
+    },
+    {
+     "feature": "Improved Wrath",
+     "importance": 0.0133
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0113
+    },
+    {
+     "feature": "Predatory Discipline",
+     "importance": 0.008
     }
    ],
-   "simulated_builds": 1545,
+   "simulated_builds": 1492,
    "signature_check": {
     "spec": "Feral Combat",
     "ok": true,
-    "core_share": 0.9909,
+    "core_share": 0.979,
     "min_share": 0.8,
     "uncast": [],
     "missing_talents": [],
     "why": ""
    },
-   "simulated_fights": 2612000,
-   "minutes": 10.0,
+   "simulated_fights": 2453000,
+   "minutes": 29.0,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-prebis.gear.json",
-   "commit": "b90e2b958"
+   "commit": "54ceac638"
   }
  },
- "commit": "b90e2b958",
+ "commit": "54ceac638",
  "spells_done": {
   "date": "2026-10-14",
   "lines_kept": 0
@@ -2450,22 +2651,178 @@
   "dps": {
    "winner": {
     "entry": "feral-cat-dps",
-    "dps": 390.23,
-    "se": 0.047
+    "dps": 412.49,
+    "se": 0.05
    },
    "feral-cat-dps": {
     "entry": "feral-cat-dps",
-    "dps": 339.51,
-    "se": 0.049
+    "dps": 358.86,
+    "se": 0.051
    },
    "feral-combat-shifting-power-raid": {
     "entry": "feral-cat-dps",
-    "dps": 381.18,
-    "se": 0.047
+    "dps": 402.71,
+    "se": 0.049
    }
   },
   "best_hand": "feral-cat-dps",
   "gain_vs_hand": 0.1494,
-  "commit": "b90e2b958"
+  "commit": "54ceac638"
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "feral-cat-dps",
+    "dps": 835.9,
+    "se": 0.086
+   },
+   "feral-cat-dps": {
+    "entry": "feral-cat-dps",
+    "dps": 686.89,
+    "se": 0.078
+   },
+   "feral-combat-open-raid": {
+    "entry": "feral-cat-dps",
+    "dps": 835.89,
+    "se": 0.086
+   },
+   "feral-combat-shifting-power-raid": {
+    "entry": "feral-cat-dps",
+    "dps": 821.16,
+    "se": 0.084
+   },
+   "opt-feral-cat-dps-raid-dps": {
+    "entry": "feral-cat-dps",
+    "dps": 698.33,
+    "se": 0.082
+   }
+  },
+  "best_hand": "feral-cat-dps",
+  "gain_vs_hand": 0.2169
+ },
+ "signature_check": {
+  "spec": "Feral Combat",
+  "ok": true,
+  "core_share": 0.979,
+  "min_share": 0.8,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "feral-cat-dps",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 835.8,
+  "date": "2026-11-02",
+  "commit": "54ceac638",
+  "shares": {
+   "Auto Attack": 0.3722,
+   "Shred": 0.224,
+   "Rip": 0.2236,
+   "Rake": 0.1203,
+   "Ferocious Bite": 0.039,
+   "Ravage": 0.0098,
+   "Goblin Sapper Charge": 0.0088,
+   "Demonic Rune": 0.0024
+  },
+  "casts": {
+   "Shred": 46.87,
+   "Prowl": 1.0,
+   "Rip": 13.17,
+   "Rake": 17.28,
+   "Ferocious Bite": 3.96,
+   "Ravage": 1.0,
+   "Shifting Power": 22.91,
+   "Dash": 1.0
+  },
+  "allocation": {
+   "Balance": [
+    [
+     "Genesis",
+     5
+    ],
+    [
+     "Nature's Majesty",
+     2
+    ],
+    [
+     "Nature's Reach",
+     2
+    ]
+   ],
+   "Feral Combat": [
+    [
+     "Ferocity",
+     5
+    ],
+    [
+     "Furor",
+     5
+    ],
+    [
+     "Shredding Attacks",
+     3
+    ],
+    [
+     "Savage Fury",
+     2
+    ],
+    [
+     "Sharpened Claws",
+     2
+    ],
+    [
+     "Predatory Strikes",
+     3
+    ],
+    [
+     "Predatory Discipline",
+     1
+    ],
+    [
+     "Blood Frenzy",
+     2
+    ],
+    [
+     "Natural Instinct",
+     2
+    ],
+    [
+     "Rend and Tear",
+     5
+    ],
+    [
+     "Shifting Power",
+     1
+    ]
+   ],
+   "Restoration": [
+    [
+     "Heart of the Wild",
+     5
+    ],
+    [
+     "Naturalist",
+     5
+    ],
+    [
+     "Reflection",
+     1
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-11-10",
+  "setting": "raid",
+  "why": "confirms feral-combat-open-raid (+0.00% in a full raid)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }
