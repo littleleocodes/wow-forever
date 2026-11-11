@@ -55,15 +55,24 @@ def snapshot(text, name):
         j += 1
     block = text[start:j]
     t = re.search(r'\["t"\] = (\d+)', block)
-    items = []
-    for body in re.findall(r"\{([^{}]*)\}", block):
-        iid = re.search(r'\["id"\] = (\d+)', body)
-        nm = re.search(r'\["name"\] = "((?:[^"\\]|\\.)*)"', body)
-        cnt = re.search(r'\["count"\] = (\d+)', body)
-        wh = re.search(r'\["where"\] = "(\w+)"', body)
-        if iid or nm:
-            items.append({"id": int(iid.group(1)) if iid else None, "name": nm.group(1) if nm else None,
-                          "count": int(cnt.group(1)) if cnt else 1, "where": wh.group(1) if wh else "bags"})
+    items, cur = [], None
+    for line in block.splitlines():   # WoW writes one field a line and each array entry between "{" and "},"
+        ln = line.strip()
+        if ln == "{":
+            cur = {}
+        elif ln in ("},", "}") and cur is not None:
+            if cur.get("id") is not None or cur.get("name"):
+                items.append({"id": cur.get("id"), "name": cur.get("name"), "count": cur.get("count") or 1, "where": cur.get("where") or "bags"})
+            cur = None
+        elif cur is not None:
+            m = re.match(r'\["(\w+)"\] = (.*?),?$', ln)
+            if m:
+                v = m.group(2)
+                if v.startswith('"') and v.endswith('"'):
+                    v = v[1:-1].replace('\\"', '"').replace("\\\\", "\\")
+                elif re.fullmatch(r"-?\d+", v):
+                    v = int(v)
+                cur[m.group(1)] = v
     return (int(t.group(1)) if t else 0), items
 
 
