@@ -18,9 +18,19 @@ Against the page's order at level 26 (17 points; you have 17 spent):
 Your next talents (the page's order from where you are): 27 Ice Shards, 28 Ice Shards, 29 Shatter, 30 Shatter, 31 Fingers of Frost, 32 Fingers of Frost.
 You stay one point off the page's order; at 60 you go without its last point (Arcane Mind), which measures least of its talents.
 
+## Legacy
+
+**2 Legacy points** on the account (earned once, every character spends them; up to 16 each). Spend them: **Thrill of Adventure** 2/5.
+
+Order: Thrill of Adventure 5 → Well Rested 5 → Talented 5 → Gourmand 1. Your main, leveled solo most of the time. Thrill of Adventure first: each point is about 3% less time per kill from the moment you spend it (less drinking and eating). Well Rested is small for a character you play daily, but it is the price of Talented (it needs Well Rested 5/5). Talented gives your talents five levels early: worth a lot at 26, little past 50 and nothing at 60, so it pays only if the points come before about 45. The 16th point goes anywhere (Gourmand). At 60, respec for the endgame (user decision 2026-11-10).
+
+Fight lab (2026-11-10, the page build): time per kill saved by Thrill of Adventure 5/5 / Talented 5/5 at level 23 12% / 11%, 26 13% / 15%, 29 13% / 8%, 32 15% / 5%, 35 14% / 11%, 40 14% / 4%, 45 13% / 6%, 50 13% / 2%, 55 11% / 2%, 60 11% / 0%. From 26 to 60: Thrill about 446 min of killing, Talented about 161 min if held from 26, both 580 (of 3452 min of killing). A model of the beta, not a measurement.
+
+Closest next points: Novice Paladin: Tara 22/25; Journeyman Tailor: Tailoring 110/150; Expert Enchanter: Enchanting 150/225; Novice Spelunker: 4 of 6 dungeons; left: Shadowfang Keep, Excavation Site: Wetlands; Experienced Mage: Arcea 26/45.
+
 ## Since your last refresh (2026-11-10 07:37, level 26)
 
-- New in the plan: Sage's Circlet of Frozen Wrath (head, level 26), Greenweave Leggings of Frozen Wrath (legs, level 26), Thunderwood (ranged, level 26), Robe of the Magi (chest, level 35), Regal Mantle of Frozen Wrath (shoulder, level 37), Sorcerer Pants of Frozen Wrath (legs, level 37), Dreamweave Circlet (head, level 45).
+- New in the plan: Sage's Circlet of Frozen Wrath (head, level 26), Greenweave Leggings of Frozen Wrath (legs, level 26), Thunderwood (ranged, level 26), Robe of the Magi (chest, level 35), Regal Mantle of Frozen Wrath (shoulder, level 37), Sorcerer Pants of Frozen Wrath (legs, level 37), Dreamweave Circlet (head, level 45), Wizard's Hand of Frozen Wrath (ranged, level 48).
 - Left the plan (worn, replaced by a better choice, or no longer listed): Robe of Power (chest), Conjurer's Hood of Magic (head), Durable Pants of Frozen Wrath (legs), Lesser Mystic Wand (ranged), Lesser Eternal Wand (ranged), Conjurer's Mantle of Magic (shoulder).
 
 ## Gold plan
@@ -42,13 +52,13 @@ Income is an estimate from Classic's data: coin and loot from about 104 kills a 
 | 34 | 8g 9s | - | - |
 | 35 | 8g 67s 97c | 3g 90s (Fireball, Blizzard, Mana Shield) | 1g 63s |
 | 36 | 12g 57s 18c | - | - |
-| 37 | 9g 76s 91c | 4g 20s (Frostbolt, Fire Blast, Arcane Explosion) | 1g 40s |
-| 38 | 14g 91s 18c | - | - |
-| 39 | 13g 78s 21c | 9g (Frost Nova, Ice Armor, Arcane Missiles, Flamestrike, Conjure Water, Polymorph) | 9g |
+| 37 | 9g 76s 95c | 4g 20s (Frostbolt, Fire Blast, Arcane Explosion) | 1g 40s |
+| 38 | 14g 91s 32c | - | - |
+| 39 | 13g 78s 34c | 9g (Frost Nova, Ice Armor, Arcane Missiles, Flamestrike, Conjure Water, Polymorph) | 9g |
 
-Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Gnomeregan Exiles; Forever's not confirmed). At this income you would have about 82g 93s 11c by 40 after training and the plan's gear, enough for the mount at 41.
+Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Gnomeregan Exiles; Forever's not confirmed). At this income you would have about 82g 93s 42c by 40 after training and the plan's gear, enough for the mount at 41.
 
-Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 0c before 40 and 0c in all; you would reach 60 with about 590g 95s 68c after the mount.
+Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 0c before 40 and 0c in all; you would reach 60 with about 591g 10s 6c after the mount.
 
 ## Now (level 26)
 
@@ -75,7 +85,7 @@ Count a piece's stats in spell power: 1 intellect = 0.22, 1 spirit = 0.27, 1 sta
 | trinket1 | empty | 0 | 1 | - |
 | trinket2 | empty | 0 | 1 | - |
 | weapon | Fallen Dragon's Scepter (planned, level 26) | 42 | 43 | - |
-| ranged | Thunderwood (planned, level 26) | 16 | 17 | - |
+| ranged | Thunderwood (planned, level 26) | 16 | 18 | 48 |
 
 ### Enchant
 
@@ -85,19 +95,19 @@ Count a piece's stats in spell power: 1 intellect = 0.22, 1 spirit = 0.27, 1 sta
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 1.0 hours old). "For your trip": enough to keep it up for about 3.0 hours of play, to your next training at level 28 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 0.3 hours old). "For your trip": enough to keep it up for about 3.0 hours of play, to your next training at level 28 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|
-| Weapon oil | Minor Wizard Oil | +8 spell power | 4.0% | 30 min | buy (cheaper than making it: 3s 5c in materials) | 3s | ×6 (18s) | no: saves 1.2 min an hour, costs 1.7 |
-| Food | Briny Seafood Stew | +14 spell power, +5% kill experience | 6.9% | 15 min | buy | 28s 40c | ×12 (3g 40s 80c) | no: saves 3.6 min an hour, costs 32.4 |
+| Weapon oil | Minor Wizard Oil | +8 spell power | 4.0% | 30 min | make it (Enchanting 45) | 2s 99c | ×6 (17s 94c) | no: saves 1.2 min an hour, costs 1.7 |
+| Food | Briny Seafood Stew | +14 spell power, +5% kill experience | 6.9% | 15 min | buy | 28s 39c | ×12 (3g 40s 68c) | no: saves 3.6 min an hour, costs 32.4 |
 | Food | Smoked Sagefish | +4 spell power, +5% kill experience | 2.0% | 15 min | make it (Cooking 80) | 1s 2c | ×12 (12s 24c) | yes: saves 2.1 min an hour, costs 1.2 |
 | Food | Calcified Smoothie | +10 spirit, +5% kill experience | 1.3% | 15 min | buy | 11s 99c | ×12 (1g 43s 88c) | no: saves 1.9 min an hour, costs 13.7 |
-| Elixir | Lesser Arcane Elixir | +15 spell power | 7.4% | 30 min | buy | 8s 63c | ×6 (51s 78c) | no: saves 2.2 min an hour, costs 4.9 |
-| Elixir | Lesser Mageblood Elixir | +6 mp5 | 2.5% | 30 min | buy | 6s 97c | ×6 (41s 82c) | no: saves 0.8 min an hour, costs 4.0 |
-| Elixir | Minor Arcane Elixir | +5 spell power | 2.5% | 30 min | buy | 63c | ×6 (3s 78c) | yes: saves 0.7 min an hour, costs 0.4 |
+| Elixir | Lesser Arcane Elixir | +15 spell power | 7.4% | 30 min | buy | 8s 60c | ×6 (51s 60c) | no: saves 2.2 min an hour, costs 4.9 |
+| Elixir | Lesser Mageblood Elixir | +6 mp5 | 2.5% | 30 min | buy | 6s 74c | ×6 (40s 44c) | no: saves 0.8 min an hour, costs 3.8 |
+| Elixir | Minor Arcane Elixir | +5 spell power | 2.5% | 30 min | buy | 52c | ×6 (3s 12c) | yes: saves 0.7 min an hour, costs 0.3 |
 | Scroll | Scroll of Spirit II | +7 spirit | 0.9% | 30 min | buy | 1s 20c | ×6 (7s 20c) | no: saves 0.3 min an hour, costs 0.7 |
-| Scroll | Scroll of Intellect II | +8 intellect | 0.9% | 30 min | buy | 1s 98c | ×6 (11s 88c) | no: saves 0.3 min an hour, costs 1.1 |
+| Scroll | Scroll of Intellect II | +8 intellect | 0.9% | 30 min | buy | 1s 89c | ×6 (11s 34c) | no: saves 0.3 min an hour, costs 1.1 |
 
 One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience is extra: a food's +5% speeds up the experience you get from kills, not from quests. Elixirs: Classic lets several stack; Forever's rule is not confirmed.
 
@@ -110,7 +120,7 @@ One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience 
 
 - **head**: Sage's Circlet of Frozen Wrath, 7.2% faster kills (wear it right away; best until level 45; saves about 75 min of killing). Auction House now: 1g 49s. Why it stays: Vital Headband of Magic at 31, 0.6% faster, saves about 6 min before its next upgrade; Darkmist Wizard Hat of Frozen Wrath at 39, 2.0% faster, saves about 12 min before its next upgrade; Gossamer Headpiece of Frozen Wrath at 42, 2.4% faster, saves about 7 min before its next upgrade. Saves about 75 min of killing; earning its price takes about 42 min of play.
 - **legs**: Greenweave Leggings of Frozen Wrath, 4.2% faster kills, replaces Rotmender's Leggings (wear it right away; best until level 37; saves about 25 min of killing). Auction House now: 79s. Why it stays: Durable Pants of Frozen Wrath at 28, 1.9% faster, saves about 11 min before its next upgrade; Conjurer's Breeches of Frozen Wrath at 32, 2.3% faster, saves about 8 min before its next upgrade; Conjurer's Breeches of Magic at 32, 2.4% faster, saves about 8 min before its next upgrade. Saves about 25 min of killing; earning its price takes about 23 min of play.
-- **ranged**: Thunderwood, 4.6% faster kills, replaces Deepblaze (wear it right away; best to the end of leveling; saves about 79 min of killing). Auction House now: 2g 60s. Why it stays: Freezing Shard at 34, 2.0% faster, saves about 39 min, but its 125g takes about 2540 min of play to earn; Wizard's Hand of Frozen Wrath at 48, 2.3% faster, but a later upgrade of the slot saves more without it; Greater Eternal Wand at 55, 2.4% faster, saves about 17 min before 60. Saves about 79 min of killing; earning its price takes about 74 min of play.
+- **ranged**: Thunderwood, 4.6% faster kills, replaces Deepblaze (wear it right away; best until level 48; saves about 56 min of killing). Auction House now: 1g 95s. Why it stays: Freezing Shard at 34, 2.0% faster, saves about 23 min, but its 125g takes about 2540 min of play to earn. Saves about 56 min of killing; earning its price takes about 56 min of play.
 
 ### Dungeon runs
 
@@ -160,52 +170,52 @@ The cheapest way up with the recipes you know, materials at today's prices (auct
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 110-111 | Soft-soled Linen Boots | 7 | makes 1s 19c |
-| 111-116 | Bolt of Silk Cloth | 7 | makes 2s 21c |
-| 116-124 | Spidersilk Boots | 8 | 17s 44c |
-| 124-129 | Red Woolen Bag | 7 | 50s 34c |
-| 129-132 | White Woolen Dress | 7 | 46s 39c |
-| 132-134 | Double-stitched Woolen Shoulders | 6 | 47s 56c |
-| 134-135 | Red Woolen Bag | 2 | 27s 90c |
-| 135-137 | Stylish Red Shirt | 7 | 70s 93c |
-| 137-148 | Red Woolen Bag | 59 | 9g 6s 77c |
-| 148-150 | Spidersilk Boots | 6 | 4g 24s 58c |
+| 110-111 | Soft-soled Linen Boots | 7 | makes 14c |
+| 111-116 | Bolt of Silk Cloth | 7 | makes 1c |
+| 116-124 | Spidersilk Boots | 8 | 17s 60c |
+| 124-129 | Red Woolen Bag | 7 | 47s 12c |
+| 129-132 | White Woolen Dress | 7 | 44s 7c |
+| 132-134 | Double-stitched Woolen Shoulders | 6 | 45s 70c |
+| 134-135 | Red Woolen Bag | 2 | 26s 94c |
+| 135-137 | Stylish Red Shirt | 7 | 68s 49c |
+| 137-148 | Red Woolen Bag | 59 | 8g 80s 89c |
+| 148-150 | Spidersilk Boots | 6 | 4g 18s 90c |
 
-You spend about 15g 88s 49c in all to reach 150, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
+You spend about 15g 49s 57c in all to reach 150, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
 Materials: Bolt of Woolen Cloth x333, Spider's Silk x56, Bolt of Silk Cloth x28, Iridescent Pearl x14, Fine Thread x101, Silk Cloth x30.
 
 ### Enchanting 150 to 225
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 150-158 | Minor Mana Oil | 8 | 28s |
-| 158-190 | Enchant Boots - Minor Stamina | 162 | 6g 55s 85c |
+| 150-158 | Minor Mana Oil | 8 | 28s 88c |
+| 158-190 | Enchant Boots - Minor Stamina | 162 | 6g 16s 89c |
 
-You spend about 6g 83s 85c in all to reach 190, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 190 no recipe you know gives points: learn new ones at the trainer.
+You spend about 6g 45s 77c in all to reach 190, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 190 no recipe you know gives points: learn new ones at the trainer.
 Materials: Strange Dust x649, Maple Seed x16, Soul Dust x8, Leaded Vial x8.
 
 ### Cooking 149 to 150
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 149-150 | Smoked Sagefish | 4 | makes 1s 40c |
+| 149-150 | Smoked Sagefish | 4 | makes 1s 54c |
 
-You make about 1s 40c in all to reach 150, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
+You make about 1s 54c in all to reach 150, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
 Materials: Raw Sagefish x4, Mild Spices x4.
 
 ### First Aid 56 to 150
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 56-63 | Minor Healing Potion | 8 | 2s 92c |
-| 63-68 | Heavy Linen Bandage | 7 | 2s 86c |
-| 68-84 | Minor Healing Potion | 35 | 16s 2c |
-| 84-85 | Heavy Linen Bandage | 3 | 1s 66c |
-| 85-87 | Minor Healing Potion | 8 | 3s 88c |
-| 87-100 | Heavy Linen Bandage | 159 | 92s 22c |
+| 56-64 | Minor Healing Potion | 9 | 3s 56c |
+| 64-69 | Heavy Linen Bandage | 7 | 3s 9c |
+| 69-86 | Minor Healing Potion | 41 | 18s 87c |
+| 86-87 | Heavy Linen Bandage | 4 | 2s 3c |
+| 87-88 | Minor Healing Potion | 5 | 2s 30c |
+| 88-100 | Heavy Linen Bandage | 155 | 93s 10c |
 
-You spend about 1g 19s 57c in all to reach 100, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 100 no recipe you know gives points: learn new ones at the trainer.
-Materials: Linen Cloth x339, Peacebloom x51, Empty Vial x51, Mild Spices x51.
+You spend about 1g 22s 94c in all to reach 100, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 100 no recipe you know gives points: learn new ones at the trainer.
+Materials: Linen Cloth x332, Peacebloom x55, Empty Vial x55, Mild Spices x55.
 
 ## Your gear
 
@@ -236,7 +246,7 @@ Each upgrade worth 0.5% faster kills or more, under the level at which you can g
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **back**: Azure Silk Cloak, 3.4% faster kills, replaces Seer's Cape (wear it right away; best to the end of leveling; saves about 55 min of killing). Tailoring: learn it first (pattern: Pattern: Azure Silk Cloak (vendor); Classic asked skill 175, Forever often less; you have 110); Auction House now: 44s. Why it stays: Captain's Cloak of Frozen Wrath at 34, 0.6% faster, saves about 7 min before 60; Opulent Cape of Frozen Wrath at 43, 0.9% faster, saves about 11 min before 60. Saves about 55 min of killing; earning its price takes about 7 min of play.
+- **back**: Azure Silk Cloak, 3.4% faster kills, replaces Seer's Cape (wear it right away; best to the end of leveling; saves about 55 min of killing). Tailoring: learn it first (pattern: Pattern: Azure Silk Cloak (vendor); Classic asked skill 175, Forever often less; you have 110); Auction House now: 43s. Why it stays: Captain's Cloak of Frozen Wrath at 34, 0.6% faster, saves about 7 min before 60; Opulent Cape of Frozen Wrath at 43, 0.9% faster, saves about 11 min before 60. Saves about 55 min of killing; earning its price takes about 7 min of play.
 
 
 ### Level 31
@@ -276,7 +286,7 @@ Each upgrade worth 0.5% faster kills or more, under the level at which you can g
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **hands**: Dreamweave Gloves, 4.2% faster kills, replaces Town Clerk's Mittens (wear it right away; best to the end of leveling; saves about 66 min of killing). Tailoring: learn it first (trainer; Classic asked skill 225, Forever often less; you have 110); Auction House now: 4g 25s. Saves about 66 min of killing; earning its price takes about 27 min of play.
+- **hands**: Dreamweave Gloves, 4.2% faster kills, replaces Town Clerk's Mittens (wear it right away; best to the end of leveling; saves about 66 min of killing). Tailoring: learn it first (trainer; Classic asked skill 225, Forever often less; you have 110); Auction House now: 3g 50s. Saves about 66 min of killing; earning its price takes about 28 min of play.
 
 
 ### Level 41
@@ -290,7 +300,14 @@ Each upgrade worth 0.5% faster kills or more, under the level at which you can g
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **head**: Dreamweave Circlet, 2.8% faster kills, replaces Sage's Circlet of Frozen Wrath (wear it right away; best to the end of leveling; saves about 38 min of killing). Tailoring: learn it first (trainer; Classic asked skill 250, Forever often less; you have 110); Auction House now: 8g. Saves about 38 min of killing; earning its price takes about 36 min of play.
+- **head**: Dreamweave Circlet, 2.8% faster kills, replaces Sage's Circlet of Frozen Wrath (wear it right away; best to the end of leveling; saves about 38 min of killing). Tailoring: learn it first (trainer; Classic asked skill 250, Forever often less; you have 110); Auction House now: 5g. Saves about 38 min of killing; earning its price takes about 37 min of play.
+
+
+### Level 48
+
+#### Buy on the Auction House (usually listed; usual prices, look again then)
+
+- **ranged**: Wizard's Hand of Frozen Wrath, 2.3% faster kills, replaces Thunderwood (wear it right away; best to the end of leveling; saves about 29 min of killing). Auction House now: 4g. Why it stays: Greater Eternal Wand at 55, 0.7% faster, saves about 5 min before 60. Saves about 29 min of killing; earning its price takes about 26 min of play.
 
 
 ## When to leave the guide

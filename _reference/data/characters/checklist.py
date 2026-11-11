@@ -256,6 +256,11 @@ def steps_html(C, lv):
             items.append(todo(f"talent{lv}", "Spend your talent point", path))
         else:
             items.append(info("Next talents", path))
+    leg = C.get("legacy")
+    if leg and leg["buy"]:   # Legacy points (2026-11-10): a new box each time the account earns a point
+        items.append(todo(f"legacy{leg['points']}", "Legacy talents: " + ", ".join(f"{esc(p)} {n}/{r}" for p, n, r in leg["buy"]),
+                          f"{leg['points']} point{'s' if leg['points'] != 1 else ''} on the account · next: "
+                          + (" · ".join(esc(t) for t in leg["next"][:3]) or "-")))
     steps.append(("Class trainer", "Train", items))
 
     # 7. pick up quests before you leave (without a RestedXP route on this PC; with one, the road list below says when)

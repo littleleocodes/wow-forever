@@ -34,6 +34,7 @@ import market as MK  # noqa: E402
 import rxp  # noqa: E402
 import rxp_guide as RXG  # noqa: E402
 import detours as DT  # noqa: E402
+import legacy as LEG  # noqa: E402
 
 UPGRADE = 0.005        # an upgrade worth less than 0.5% of the time per kill is not listed
 MIN_CHANCE = 0.05      # a dungeon drop under 5% is not worth planning around
@@ -73,7 +74,7 @@ def snapshot(cfg, d, refresh):
             if st == 200:
                 (arm / f"{part.strip('/').replace('/', '-')}.json").write_text(json.dumps(js, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
         (arm / "fetched.txt").write_text(datetime.datetime.now().strftime("%Y-%m-%d %H:%M") + "\n", encoding="utf-8")
-    parts = ("profile", "equipment", "professions", "specializations", "quests", "quests-completed", "reputations")
+    parts = ("profile", "equipment", "professions", "specializations", "quests", "quests-completed", "reputations", "achievements")
     return {p: json.loads((arm / f"{p}.json").read_text(encoding="utf-8")) for p in parts
             if (arm / f"{p}.json").exists()}, (arm / "fetched.txt").read_text(encoding="utf-8").strip()
 
@@ -1450,6 +1451,18 @@ def pct(x):
     return f"{x * 100:.1f}%"
 
 
+def account_levels():
+    """{class name: (character, level)} of the account's characters the planner knows (their last snapshots): the class-level Legacy
+    challenges (Novice Paladin ...) carry no progress in the achievements document."""
+    out = {}
+    for f in sorted((ROOT / "_characters").glob("*/armory/profile.json")):
+        p = json.loads(f.read_text(encoding="utf-8"))
+        c, lv = p["character_class"]["name"], p["level"]
+        if c not in out or lv > out[c][1]:
+            out[c] = (p["name"], lv)
+    return out
+
+
 def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     lv = snap["profile"]["level"]
     name = f"{snap['profile']['name']} {snap['profile'].get('surname', '')}".strip()
@@ -1487,6 +1500,11 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
                   "least of its talents."]
         o += [""]
     o += [f"- {x}" for x in cfg.get("talent_notes", [])] + ([""] if cfg.get("talent_notes") else [])
+    docs = [snap["achievements"]] if snap.get("achievements") else []
+    docs += [json.loads(f.read_text(encoding="utf-8")) for f in sorted((ROOT / "_characters").glob("*/armory/achievements.json"))
+             if f.parent.parent != d]   # the account's other characters (achievements come per character)
+    lo, CTX["legacy"] = LEG.section(cfg, docs, account_levels())   # Legacy points (2026-11-10)
+    o += lo
     CTX.update({"head": {"name": name, "level": lv, "race": race, "class": cls, "gold": GOLD, "fetched": fetched,
                          "faction": snap["profile"]["faction"]["name"], "professions": {k: list(v) for k, v in profs.items()},
                          "ah_age": PRICES.age_hours() if PRICES else None, "spec": cfg["spec"], "page": cfg["page"],

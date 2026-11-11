@@ -30,5 +30,30 @@
   "gear_versions_csv": "F:/wow-addons/data/exports/gear_versions.csv",
   "duckdb": "F:/wow-addons/data/forever_ah.duckdb"
  },
- "checklist_url": "https://claude.ai/artifact/CyxBGdv7w2G25EwWvdKxK5"
+ "checklist_url": "https://claude.ai/artifact/CyxBGdv7w2G25EwWvdKxK5",
+ "legacy": {
+  "order": [
+   [
+    "Well Rested",
+    5
+   ],
+   [
+    "Talented",
+    5
+   ],
+   [
+    "Gourmand",
+    3
+   ],
+   [
+    "The Quick and the Dead",
+    2
+   ],
+   [
+    "Reinforce",
+    1
+   ]
+  ],
+  "why": "Your group character. Thrill of Adventure does nothing in dungeons and little in a group (the killing blows are shared), so it is left out. Well Rested first: you are logged out between group nights, so your rested bar fills and caps, and rested experience doubles kill experience, dungeon kills included; it is also the price of Talented. Talented gives your next five tank talents five levels early (more threat and survival in every dungeon until 55). Then Gourmand (one meal lasts a whole dungeon), The Quick and the Dead (a faster corpse run and free heals and blessings after a wipe) and Reinforce (tanks die most). At 60, respec for the endgame (user decision 2026-11-10)."
+ }
 }

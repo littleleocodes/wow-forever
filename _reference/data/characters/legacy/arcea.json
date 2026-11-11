@@ -1,0 +1,91 @@
+{
+ "character": "arcea",
+ "class": "mage",
+ "spec": "Hybrid Arcane/Frost",
+ "build": "arcane-frost-open-leveling",
+ "rotation": "barrage-frost-leveling",
+ "date": "2026-11-10",
+ "fights": 1500,
+ "seeds": [
+  3,
+  4
+ ],
+ "thrill": 0.05,
+ "talented": 5,
+ "unit": "seconds per kill (time_per_kill: fight, drinking, eating, looting, travel, deaths)",
+ "levels": {
+  "20": {
+   "base": 28.64,
+   "talented": 26.052,
+   "thrill": 25.116,
+   "both": 22.681
+  },
+  "23": {
+   "base": 30.453,
+   "talented": 27.102,
+   "thrill": 26.681,
+   "both": 23.607
+  },
+  "26": {
+   "base": 33.195,
+   "talented": 28.234,
+   "thrill": 28.736,
+   "both": 24.136
+  },
+  "29": {
+   "base": 33.946,
+   "talented": 31.062,
+   "thrill": 29.541,
+   "both": 26.964
+  },
+  "32": {
+   "base": 33.244,
+   "talented": 31.543,
+   "thrill": 28.341,
+   "both": 26.942
+  },
+  "35": {
+   "base": 33.819,
+   "talented": 30.054,
+   "thrill": 29.132,
+   "both": 26.209
+  },
+  "40": {
+   "base": 33.637,
+   "talented": 32.332,
+   "thrill": 28.922,
+   "both": 28.185
+  },
+  "45": {
+   "base": 29.57,
+   "talented": 27.833,
+   "thrill": 25.814,
+   "both": 24.023
+  },
+  "50": {
+   "base": 27.425,
+   "talented": 26.783,
+   "thrill": 23.772,
+   "both": 23.348
+  },
+  "55": {
+   "base": 28.778,
+   "talented": 28.303,
+   "thrill": 25.518,
+   "both": 25.082
+  },
+  "60": {
+   "base": 25.563,
+   "talented": 25.563,
+   "thrill": 22.704,
+   "both": 22.704
+  }
+ },
+ "from": 26,
+ "killing_minutes": 3452.3,
+ "minutes_saved": {
+  "talented": 161.4,
+  "thrill": 445.7,
+  "both": 579.9
+ }
+}

@@ -1682,6 +1682,11 @@ class Session:
             stats["fight_time"].append(f.t - f.start)
             stats["mana_spent"].append(max(0.0, before - (p.pool(pool) if pool != "none" else 0.0)) if pool in ("mana", "energy", "rage") else 0.0)
             mod.on_kill(f)
+            if tables.LEGACY_THRILL:   # Legacy Thrill of Adventure: health and mana back on each killing blow (every mob of the pull)
+                kb = sum(1 for x in f.mobs if x.hp <= 0)
+                p.hp = min(p.hp_max, p.hp + kb * tables.LEGACY_THRILL * p.hp_max)
+                if p.mana_max > 0:
+                    p.mana = min(p.mana_max, p.mana + kb * tables.LEGACY_THRILL * p.mana_max)
             # loot, then regen/eat/drink, then travel
             t += LOOT_TIME
             stats["hp_after"].append(p.hp / p.hp_max)

@@ -24,5 +24,26 @@
  "checklist_url": "https://claude.ai/artifact/G1F2H5NnW9tnNHHKaSMXpb",
  "checklist_note": "The town checklist page (checklist.html, written by plan.py on every run): after each refresh publish it with the Artifact tool to checklist_url (same file path in the same session; from another session pass the url and read it first).",
  "group": true,
- "group_note": "2026-11-10, user: \"Arcea can do group quest as well. I can group up with random people, as well as do dungeons\": elite group quests count as detours (detours.py)."
+ "group_note": "2026-11-10, user: \"Arcea can do group quest as well. I can group up with random people, as well as do dungeons\": elite group quests count as detours (detours.py).",
+ "legacy": {
+  "order": [
+   [
+    "Thrill of Adventure",
+    5
+   ],
+   [
+    "Well Rested",
+    5
+   ],
+   [
+    "Talented",
+    5
+   ],
+   [
+    "Gourmand",
+    1
+   ]
+  ],
+  "why": "Your main, leveled solo most of the time. Thrill of Adventure first: each point is about 3% less time per kill from the moment you spend it (less drinking and eating). Well Rested is small for a character you play daily, but it is the price of Talented (it needs Well Rested 5/5). Talented gives your talents five levels early: worth a lot at 26, little past 50 and nothing at 60, so it pays only if the points come before about 45. The 16th point goes anywhere (Gourmand). At 60, respec for the endgame (user decision 2026-11-10)."
+ }
 }

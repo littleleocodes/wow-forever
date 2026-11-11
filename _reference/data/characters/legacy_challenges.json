@@ -1,0 +1,1519 @@
+{
+ "source": "wago.tools TraitCurrencySource (currency 4225, Amount 1), client 1.60.1.70888; names and criteria from Blizzard's static achievement API (static-forever-us), 2026-11-10",
+ "challenges": [
+  {
+   "id": 684,
+   "name": "Conqueror of the Lair",
+   "requirement": "Complete Onyxia's Lair.",
+   "parts": []
+  },
+  {
+   "id": 61499,
+   "name": "Novice Warrior",
+   "requirement": "Reach Level 25 for the first time on a Warrior",
+   "parts": []
+  },
+  {
+   "id": 61500,
+   "name": "Experienced Warrior",
+   "requirement": "Reach Level 45 for the first time on a Warrior",
+   "parts": []
+  },
+  {
+   "id": 61501,
+   "name": "Master Warrior",
+   "requirement": "Reach Level 60 for the first time on a Warrior",
+   "parts": []
+  },
+  {
+   "id": 61502,
+   "name": "Novice Druid",
+   "requirement": "Reach Level 25 for the first time on a Druid",
+   "parts": []
+  },
+  {
+   "id": 61503,
+   "name": "Experienced Druid",
+   "requirement": "Reach Level 45 for the first time on a Druid",
+   "parts": []
+  },
+  {
+   "id": 61504,
+   "name": "Master Druid",
+   "requirement": "Reach Level 60 for the first time on a Druid",
+   "parts": []
+  },
+  {
+   "id": 61989,
+   "name": "Novice Hunter",
+   "requirement": "Reach Level 25 for the first time on a Hunter",
+   "parts": []
+  },
+  {
+   "id": 61992,
+   "name": "Experienced Hunter",
+   "requirement": "Reach Level 45 for the first time on a Hunter",
+   "parts": []
+  },
+  {
+   "id": 61993,
+   "name": "Master Hunter",
+   "requirement": "Reach Level 60 for the first time on a Hunter",
+   "parts": []
+  },
+  {
+   "id": 61994,
+   "name": "Novice Mage",
+   "requirement": "Reach Level 25 for the first time on a Mage",
+   "parts": []
+  },
+  {
+   "id": 61995,
+   "name": "Experienced Mage",
+   "requirement": "Reach Level 45 for the first time on a Mage",
+   "parts": []
+  },
+  {
+   "id": 61996,
+   "name": "Master Mage",
+   "requirement": "Reach Level 60 for the first time on a Mage",
+   "parts": []
+  },
+  {
+   "id": 61997,
+   "name": "Novice Paladin",
+   "requirement": "Reach Level 25 for the first time on a Paladin",
+   "parts": []
+  },
+  {
+   "id": 61998,
+   "name": "Experienced Paladin",
+   "requirement": "Reach Level 45 for the first time on a Paladin",
+   "parts": []
+  },
+  {
+   "id": 61999,
+   "name": "Master Paladin",
+   "requirement": "Reach Level 60 for the first time on a Paladin",
+   "parts": []
+  },
+  {
+   "id": 62000,
+   "name": "Novice Priest",
+   "requirement": "Reach Level 25 for the first time on a Priest",
+   "parts": []
+  },
+  {
+   "id": 62001,
+   "name": "Experienced Priest",
+   "requirement": "Reach Level 45 for the first time on a Priest",
+   "parts": []
+  },
+  {
+   "id": 62002,
+   "name": "Master Priest",
+   "requirement": "Reach Level 60 for the first time on a Priest",
+   "parts": []
+  },
+  {
+   "id": 62003,
+   "name": "Novice Rogue",
+   "requirement": "Reach Level 25 for the first time on a Rogue",
+   "parts": []
+  },
+  {
+   "id": 62004,
+   "name": "Experienced Rogue",
+   "requirement": "Reach Level 45 for the first time on a Rogue",
+   "parts": []
+  },
+  {
+   "id": 62005,
+   "name": "Master Rogue",
+   "requirement": "Reach Level 60 for the first time on a Rogue",
+   "parts": []
+  },
+  {
+   "id": 62006,
+   "name": "Novice Shaman",
+   "requirement": "Reach Level 25 for the first time on a Shaman",
+   "parts": []
+  },
+  {
+   "id": 62007,
+   "name": "Experienced Shaman",
+   "requirement": "Reach Level 45 for the first time on a Shaman",
+   "parts": []
+  },
+  {
+   "id": 62008,
+   "name": "Master Shaman",
+   "requirement": "Reach Level 60 for the first time on a Shaman",
+   "parts": []
+  },
+  {
+   "id": 62009,
+   "name": "Novice Warlock",
+   "requirement": "Reach Level 25 for the first time on a Warlock",
+   "parts": []
+  },
+  {
+   "id": 62010,
+   "name": "Experienced Warlock",
+   "requirement": "Reach Level 45 for the first time on a Warlock",
+   "parts": []
+  },
+  {
+   "id": 62011,
+   "name": "Master Warlock",
+   "requirement": "Reach Level 60 for the first time on a Warlock",
+   "parts": []
+  },
+  {
+   "id": 62012,
+   "name": "Journeyman Alchemist",
+   "requirement": "Reach 150 skill in Alchemy",
+   "parts": [
+    {
+     "id": 221504,
+     "text": "150 Alchemy Skill"
+    }
+   ]
+  },
+  {
+   "id": 62013,
+   "name": "Expert Alchemist",
+   "requirement": "Reach 225 skill in Alchemy",
+   "parts": [
+    {
+     "id": 221506,
+     "text": "225 Alchemy Skill"
+    }
+   ]
+  },
+  {
+   "id": 62014,
+   "name": "Artisan Alchemist",
+   "requirement": "Reach 300 skill in Alchemy",
+   "parts": [
+    {
+     "id": 221508,
+     "text": "300 Alchemy Skill"
+    }
+   ]
+  },
+  {
+   "id": 62015,
+   "name": "Journeyman Blacksmith",
+   "requirement": "Reach 150 skill in Blacksmithing",
+   "parts": [
+    {
+     "id": 221510,
+     "text": "150 Blacksmithing Skill"
+    }
+   ]
+  },
+  {
+   "id": 62016,
+   "name": "Expert Blacksmith",
+   "requirement": "Reach 225 skill in Blacksmithing",
+   "parts": [
+    {
+     "id": 221512,
+     "text": "225 Blacksmithing Skill"
+    }
+   ]
+  },
+  {
+   "id": 62017,
+   "name": "Artisan Blacksmith",
+   "requirement": "Reach 300 skill in Blacksmithing",
+   "parts": [
+    {
+     "id": 221514,
+     "text": "300 Blacksmithing Skill"
+    }
+   ]
+  },
+  {
+   "id": 62018,
+   "name": "Journeyman Enchanter",
+   "requirement": "Reach 150 skill in Enchanting",
+   "parts": [
+    {
+     "id": 221516,
+     "text": "150 Enchanting Skill"
+    }
+   ]
+  },
+  {
+   "id": 62019,
+   "name": "Expert Enchanter",
+   "requirement": "Reach 225 skill in Enchanting",
+   "parts": [
+    {
+     "id": 221518,
+     "text": "225 Enchanting Skill"
+    }
+   ]
+  },
+  {
+   "id": 62020,
+   "name": "Artisan Enchanter",
+   "requirement": "Reach 300 skill in Enchanting",
+   "parts": [
+    {
+     "id": 221520,
+     "text": "300 Enchanting Skill"
+    }
+   ]
+  },
+  {
+   "id": 62021,
+   "name": "Journeyman Engineer",
+   "requirement": "Reach 150 skill in Engineering",
+   "parts": [
+    {
+     "id": 221522,
+     "text": "150 Engineering Skill"
+    }
+   ]
+  },
+  {
+   "id": 62022,
+   "name": "Expert Engineer",
+   "requirement": "Reach 225 skill in Engineering",
+   "parts": [
+    {
+     "id": 221524,
+     "text": "225 Engineering Skill"
+    }
+   ]
+  },
+  {
+   "id": 62023,
+   "name": "Artisan Engineer",
+   "requirement": "Reach 300 skill in Engineering",
+   "parts": [
+    {
+     "id": 221526,
+     "text": "300 Engineering Skill"
+    }
+   ]
+  },
+  {
+   "id": 62024,
+   "name": "Journeyman Leatherworker",
+   "requirement": "Reach 150 skill in Leatherworking",
+   "parts": [
+    {
+     "id": 221528,
+     "text": "150 Leatherworking Skill"
+    }
+   ]
+  },
+  {
+   "id": 62025,
+   "name": "Expert Leatherworker",
+   "requirement": "Reach 225 skill in Leatherworking",
+   "parts": [
+    {
+     "id": 221530,
+     "text": "225 Leatherworking Skill"
+    }
+   ]
+  },
+  {
+   "id": 62026,
+   "name": "Artisan Leatherworker",
+   "requirement": "Reach 300 skill in Leatherworking",
+   "parts": [
+    {
+     "id": 221532,
+     "text": "300 Leatherworking Skill"
+    }
+   ]
+  },
+  {
+   "id": 62028,
+   "name": "Journeyman Tailor",
+   "requirement": "Reach 150 skill in Tailoring",
+   "parts": [
+    {
+     "id": 221534,
+     "text": "150 Tailoring Skill"
+    }
+   ]
+  },
+  {
+   "id": 62029,
+   "name": "Expert Tailor",
+   "requirement": "Reach 225 skill in Tailoring",
+   "parts": [
+    {
+     "id": 221536,
+     "text": "225 Tailoring Skill"
+    }
+   ]
+  },
+  {
+   "id": 62030,
+   "name": "Artisan Tailor",
+   "requirement": "Reach 300 skill in Tailoring",
+   "parts": [
+    {
+     "id": 221538,
+     "text": "300 Tailoring Skill"
+    }
+   ]
+  },
+  {
+   "id": 62031,
+   "name": "Novice Spelunker",
+   "requirement": "Complete the Ruins of Loradaeron and Excavation: Wetlands dungeons.",
+   "parts": [
+    {
+     "id": 230766,
+     "text": "Ragefire Chasm or Hall of Thanes"
+    },
+    {
+     "id": 230760,
+     "text": "Ruins of Lordaeron"
+    },
+    {
+     "id": 230763,
+     "text": "Wailing Caverns"
+    },
+    {
+     "id": 230762,
+     "text": "The Deadmines"
+    },
+    {
+     "id": 231426,
+     "text": "Shadowfang Keep"
+    },
+    {
+     "id": 230761,
+     "text": "Excavation Site: Wetlands"
+    }
+   ]
+  },
+  {
+   "id": 62032,
+   "name": "Experienced Spelunker",
+   "requirement": "Complete the City of Dalaran, Drowned City, and Krol'Dok Stronghold dungeons.",
+   "parts": [
+    {
+     "id": 230769,
+     "text": "City of Dalaran"
+    },
+    {
+     "id": 230771,
+     "text": "Blackfathom Deeps"
+    },
+    {
+     "id": 230772,
+     "text": "Gnomeregan"
+    },
+    {
+     "id": 230770,
+     "text": "The Drowned City"
+    },
+    {
+     "id": 230774,
+     "text": "Scarlet Monastery: Graveyard"
+    },
+    {
+     "id": 230775,
+     "text": "Scarlet Monastery: Library"
+    },
+    {
+     "id": 230776,
+     "text": "Scarlet Monastery: Armory"
+    },
+    {
+     "id": 230777,
+     "text": "Scarlet Monastery: Cathedral"
+    },
+    {
+     "id": 230773,
+     "text": "Razorfen Kraul"
+    },
+    {
+     "id": 230778,
+     "text": "Krol'dok Stronghold"
+    }
+   ]
+  },
+  {
+   "id": 62033,
+   "name": "Master Spelunker",
+   "requirement": "Complete the Alcaz Island, Timbermaw Hold, and Shaper's Terrace dungeons.",
+   "parts": [
+    {
+     "id": 230780,
+     "text": "Razorfen Downs"
+    },
+    {
+     "id": 230781,
+     "text": "Uldaman"
+    },
+    {
+     "id": 230782,
+     "text": "Zul'Farrak"
+    },
+    {
+     "id": 230783,
+     "text": "Maraudon"
+    },
+    {
+     "id": 230784,
+     "text": "Alcaz Prison"
+    },
+    {
+     "id": 230785,
+     "text": "The Temple of Atal'Hakkar"
+    },
+    {
+     "id": 230786,
+     "text": "Blackrock Depths"
+    },
+    {
+     "id": 230796,
+     "text": "Blackmaw Hold"
+    },
+    {
+     "id": 230787,
+     "text": "Lower Blackrock Spire"
+    },
+    {
+     "id": 230788,
+     "text": "Upper Blackrock Spire"
+    },
+    {
+     "id": 230789,
+     "text": "Scholomance"
+    },
+    {
+     "id": 230790,
+     "text": "Stratholme: Live"
+    },
+    {
+     "id": 230791,
+     "text": "Stratholme: Dead"
+    },
+    {
+     "id": 230792,
+     "text": "Dire Maul: East"
+    },
+    {
+     "id": 230793,
+     "text": "Dire Maul: North"
+    },
+    {
+     "id": 230794,
+     "text": "Dire Maul: West"
+    },
+    {
+     "id": 230795,
+     "text": "The Shaper's Terrace"
+    }
+   ]
+  },
+  {
+   "id": 62034,
+   "name": "Conqueror of the Wilds",
+   "requirement": "Complete the Hyjal Summit raid.",
+   "parts": [
+    {
+     "id": 230812,
+     "text": "Bandalar"
+    },
+    {
+     "id": 230813,
+     "text": "Ancient of Decay"
+    },
+    {
+     "id": 230814,
+     "text": "Time-Lost Battalion"
+    },
+    {
+     "id": 230815,
+     "text": "Sylvestris Dusksong"
+    },
+    {
+     "id": 230816,
+     "text": "Old Gloomlurker"
+    },
+    {
+     "id": 230817,
+     "text": "Gharalis the Abyssal"
+    },
+    {
+     "id": 230818,
+     "text": "Kathris the Haunted"
+    },
+    {
+     "id": 230819,
+     "text": "Anara Chillwind"
+    },
+    {
+     "id": 230820,
+     "text": "Elder Minderel"
+    },
+    {
+     "id": 230821,
+     "text": "Tracker Stillwind"
+    },
+    {
+     "id": 230822,
+     "text": "Council of Thorns"
+    },
+    {
+     "id": 230823,
+     "text": "Nythus the Dreambound"
+    },
+    {
+     "id": 230824,
+     "text": "The Wild King"
+    }
+   ]
+  },
+  {
+   "id": 62035,
+   "name": "Conqueror of the Deeps",
+   "requirement": "Complete the Barrow Deeps raid.",
+   "parts": [
+    {
+     "id": 230806,
+     "text": "Chillhowl"
+    },
+    {
+     "id": 230801,
+     "text": "Elder Tangleclaw"
+    },
+    {
+     "id": 230802,
+     "text": "Khalith the Dreadspinner"
+    },
+    {
+     "id": 230804,
+     "text": "Well of Sorrow"
+    },
+    {
+     "id": 230803,
+     "text": "Amethrax"
+    },
+    {
+     "id": 230805,
+     "text": "Del'lynar Songwood"
+    },
+    {
+     "id": 230807,
+     "text": "Ravus and Darlissa"
+    },
+    {
+     "id": 230800,
+     "text": "Sonya Darkhallow"
+    }
+   ]
+  },
+  {
+   "id": 62041,
+   "name": "Rank 3",
+   "requirement": "Reach the rank of Sergeant in the Player vs. Player Honor System.",
+   "parts": []
+  },
+  {
+   "id": 62042,
+   "name": "Rank 7",
+   "requirement": "Reach the rank of Knight-Lieutenant or Blood Guard in the Player vs. Player Honor System.",
+   "parts": []
+  },
+  {
+   "id": 62043,
+   "name": "Rank 10",
+   "requirement": "Reach the rank of Commander or Champion in the Player vs. Player Honor System.",
+   "parts": []
+  },
+  {
+   "id": 62044,
+   "name": "Rank 13",
+   "requirement": "Reach the rank of Field Marshal or Warlord in the Player vs. Player Honor System.",
+   "parts": []
+  },
+  {
+   "id": 62045,
+   "name": "Rank 14",
+   "requirement": "Reach the rank of Grand Marshal or High Warlord in the Player vs. Player Honor System.",
+   "parts": []
+  },
+  {
+   "id": 62046,
+   "name": "Master of Alterac Valley",
+   "requirement": "Reach exalted reputation with the Frostwolf Clan or Stormpike Guard.",
+   "parts": [
+    {
+     "id": 221566,
+     "text": "Reach exalted reputation with the Frostwolf Clan"
+    },
+    {
+     "id": 221567,
+     "text": "Reach exalted reputation with the Stormpike Guard"
+    }
+   ]
+  },
+  {
+   "id": 62047,
+   "name": "Master of Arathi Basin",
+   "requirement": "Reach exalted reputation with the Defilers or League of Arathor.",
+   "parts": [
+    {
+     "id": 221569,
+     "text": "Reach exalted reputation with The Defilers"
+    },
+    {
+     "id": 221570,
+     "text": "Reach exalted reputation with the League of Arathor"
+    }
+   ]
+  },
+  {
+   "id": 62048,
+   "name": "Master of Warsong Gulch",
+   "requirement": "Reach exalted reputation with the Warsong Outriders or Silverwing Sentinels.",
+   "parts": [
+    {
+     "id": 221572,
+     "text": "Reach exalted reputation with the Warsong Outriders"
+    },
+    {
+     "id": 221573,
+     "text": "Reach exalted reputation with the Silverwing Sentinels"
+    }
+   ]
+  },
+  {
+   "id": 62049,
+   "name": "Master of Darkspear Islands",
+   "requirement": "Reach exalted reputation with the horde or alliance faction at the Southseas Archipelago battleground.",
+   "parts": [
+    {
+     "id": 230737,
+     "text": "Reach exalted reputation with the Darkspear Raiders"
+    },
+    {
+     "id": 230738,
+     "text": "Reach exalted reputation with the Theramore Expeditionary Force"
+    }
+   ]
+  },
+  {
+   "id": 62054,
+   "name": "Lord Valthalak Laid to Rest",
+   "requirement": "Complete the questline beginning with an Earnest Proposition, and ending with Saving the Best for Last.",
+   "parts": []
+  },
+  {
+   "id": 62382,
+   "name": "Explorer",
+   "requirement": "Have a character with the Explore Azeroth achievement.",
+   "parts": [
+    {
+     "id": 223520,
+     "text": "Explorer"
+    }
+   ]
+  },
+  {
+   "id": 63340,
+   "name": "Field of Honor: Week 4",
+   "requirement": "Complete Week 4 of the Field of Honor Journey.",
+   "parts": [
+    {
+     "id": 229458,
+     "text": "Complete Field of Honor: Week 4"
+    }
+   ]
+  },
+  {
+   "id": 63341,
+   "name": "Field of Honor: Week 7",
+   "requirement": "Complete Week 7 of the Field of Honor Journey.",
+   "parts": [
+    {
+     "id": 229461,
+     "text": "Complete Field of Honor: Week 7"
+    }
+   ]
+  },
+  {
+   "id": 63342,
+   "name": "Field of Honor: Week 10",
+   "requirement": "Complete Week 10 of the Field of Honor Journey.",
+   "parts": [
+    {
+     "id": 229463,
+     "text": "Complete Field of Honor: Week 10"
+    }
+   ]
+  },
+  {
+   "id": 63969,
+   "name": "Novice Warrior",
+   "requirement": "Reach Level 25 for the first time on a Warrior",
+   "parts": []
+  },
+  {
+   "id": 63970,
+   "name": "Experienced Warrior",
+   "requirement": "Reach Level 45 for the first time on a Warrior",
+   "parts": []
+  },
+  {
+   "id": 63971,
+   "name": "Master Warrior",
+   "requirement": "Reach Level 60 for the first time on a Warrior",
+   "parts": []
+  },
+  {
+   "id": 63972,
+   "name": "Novice Druid",
+   "requirement": "Reach Level 25 for the first time on a Druid",
+   "parts": []
+  },
+  {
+   "id": 63973,
+   "name": "Experienced Druid",
+   "requirement": "Reach Level 45 for the first time on a Druid",
+   "parts": []
+  },
+  {
+   "id": 63974,
+   "name": "Master Druid",
+   "requirement": "Reach Level 60 for the first time on a Druid",
+   "parts": []
+  },
+  {
+   "id": 63975,
+   "name": "Novice Hunter",
+   "requirement": "Reach Level 25 for the first time on a Hunter",
+   "parts": []
+  },
+  {
+   "id": 63976,
+   "name": "Experienced Hunter",
+   "requirement": "Reach Level 45 for the first time on a Hunter",
+   "parts": []
+  },
+  {
+   "id": 63977,
+   "name": "Master Hunter",
+   "requirement": "Reach Level 60 for the first time on a Hunter",
+   "parts": []
+  },
+  {
+   "id": 63978,
+   "name": "Novice Mage",
+   "requirement": "Reach Level 25 for the first time on a Mage",
+   "parts": []
+  },
+  {
+   "id": 63979,
+   "name": "Experienced Mage",
+   "requirement": "Reach Level 45 for the first time on a Mage",
+   "parts": []
+  },
+  {
+   "id": 63980,
+   "name": "Master Mage",
+   "requirement": "Reach Level 60 for the first time on a Mage",
+   "parts": []
+  },
+  {
+   "id": 63981,
+   "name": "Novice Paladin",
+   "requirement": "Reach Level 25 for the first time on a Paladin",
+   "parts": []
+  },
+  {
+   "id": 63982,
+   "name": "Experienced Paladin",
+   "requirement": "Reach Level 45 for the first time on a Paladin",
+   "parts": []
+  },
+  {
+   "id": 63983,
+   "name": "Master Paladin",
+   "requirement": "Reach Level 60 for the first time on a Paladin",
+   "parts": []
+  },
+  {
+   "id": 63984,
+   "name": "Novice Priest",
+   "requirement": "Reach Level 25 for the first time on a Priest",
+   "parts": []
+  },
+  {
+   "id": 63985,
+   "name": "Experienced Priest",
+   "requirement": "Reach Level 45 for the first time on a Priest",
+   "parts": []
+  },
+  {
+   "id": 63986,
+   "name": "Master Priest",
+   "requirement": "Reach Level 60 for the first time on a Priest",
+   "parts": []
+  },
+  {
+   "id": 63987,
+   "name": "Novice Rogue",
+   "requirement": "Reach Level 25 for the first time on a Rogue",
+   "parts": []
+  },
+  {
+   "id": 63988,
+   "name": "Experienced Rogue",
+   "requirement": "Reach Level 45 for the first time on a Rogue",
+   "parts": []
+  },
+  {
+   "id": 63989,
+   "name": "Master Rogue",
+   "requirement": "Reach Level 60 for the first time on a Rogue",
+   "parts": []
+  },
+  {
+   "id": 63990,
+   "name": "Novice Shaman",
+   "requirement": "Reach Level 25 for the first time on a Shaman",
+   "parts": []
+  },
+  {
+   "id": 63991,
+   "name": "Experienced Shaman",
+   "requirement": "Reach Level 45 for the first time on a Shaman",
+   "parts": []
+  },
+  {
+   "id": 63992,
+   "name": "Master Shaman",
+   "requirement": "Reach Level 60 for the first time on a Shaman",
+   "parts": []
+  },
+  {
+   "id": 63993,
+   "name": "Novice Warlock",
+   "requirement": "Reach Level 25 for the first time on a Warlock",
+   "parts": []
+  },
+  {
+   "id": 63994,
+   "name": "Experienced Warlock",
+   "requirement": "Reach Level 45 for the first time on a Warlock",
+   "parts": []
+  },
+  {
+   "id": 63995,
+   "name": "Master Warlock",
+   "requirement": "Reach Level 60 for the first time on a Warlock",
+   "parts": []
+  },
+  {
+   "id": 63996,
+   "name": "Journeyman Alchemist",
+   "requirement": "Reach 150 skill in Alchemy",
+   "parts": [
+    {
+     "id": 234091,
+     "text": "150 Alchemy Skill"
+    }
+   ]
+  },
+  {
+   "id": 63997,
+   "name": "Expert Alchemist",
+   "requirement": "Reach 225 skill in Alchemy",
+   "parts": [
+    {
+     "id": 234093,
+     "text": "225 Alchemy Skill"
+    }
+   ]
+  },
+  {
+   "id": 63998,
+   "name": "Artisan Alchemist",
+   "requirement": "Reach 300 skill in Alchemy",
+   "parts": [
+    {
+     "id": 234095,
+     "text": "300 Alchemy Skill"
+    }
+   ]
+  },
+  {
+   "id": 63999,
+   "name": "Journeyman Blacksmith",
+   "requirement": "Reach 150 skill in Blacksmithing",
+   "parts": [
+    {
+     "id": 234097,
+     "text": "150 Blacksmithing Skill"
+    }
+   ]
+  },
+  {
+   "id": 64000,
+   "name": "Expert Blacksmith",
+   "requirement": "Reach 225 skill in Blacksmithing",
+   "parts": [
+    {
+     "id": 234099,
+     "text": "225 Blacksmithing Skill"
+    }
+   ]
+  },
+  {
+   "id": 64001,
+   "name": "Artisan Blacksmith",
+   "requirement": "Reach 300 skill in Blacksmithing",
+   "parts": [
+    {
+     "id": 234101,
+     "text": "300 Blacksmithing Skill"
+    }
+   ]
+  },
+  {
+   "id": 64002,
+   "name": "Journeyman Enchanter",
+   "requirement": "Reach 150 skill in Enchanting",
+   "parts": [
+    {
+     "id": 234103,
+     "text": "150 Enchanting Skill"
+    }
+   ]
+  },
+  {
+   "id": 64003,
+   "name": "Expert Enchanter",
+   "requirement": "Reach 225 skill in Enchanting",
+   "parts": [
+    {
+     "id": 234105,
+     "text": "225 Enchanting Skill"
+    }
+   ]
+  },
+  {
+   "id": 64004,
+   "name": "Artisan Enchanter",
+   "requirement": "Reach 300 skill in Enchanting",
+   "parts": [
+    {
+     "id": 234107,
+     "text": "300 Enchanting Skill"
+    }
+   ]
+  },
+  {
+   "id": 64005,
+   "name": "Journeyman Engineer",
+   "requirement": "Reach 150 skill in Engineering",
+   "parts": [
+    {
+     "id": 234109,
+     "text": "150 Engineering Skill"
+    }
+   ]
+  },
+  {
+   "id": 64006,
+   "name": "Expert Engineer",
+   "requirement": "Reach 225 skill in Engineering",
+   "parts": [
+    {
+     "id": 234111,
+     "text": "225 Engineering Skill"
+    }
+   ]
+  },
+  {
+   "id": 64007,
+   "name": "Artisan Engineer",
+   "requirement": "Reach 300 skill in Engineering",
+   "parts": [
+    {
+     "id": 234113,
+     "text": "300 Engineering Skill"
+    }
+   ]
+  },
+  {
+   "id": 64008,
+   "name": "Journeyman Leatherworker",
+   "requirement": "Reach 150 skill in Leatherworking",
+   "parts": [
+    {
+     "id": 234115,
+     "text": "150 Leatherworking Skill"
+    }
+   ]
+  },
+  {
+   "id": 64009,
+   "name": "Expert Leatherworker",
+   "requirement": "Reach 225 skill in Leatherworking",
+   "parts": [
+    {
+     "id": 234117,
+     "text": "225 Leatherworking Skill"
+    }
+   ]
+  },
+  {
+   "id": 64010,
+   "name": "Artisan Leatherworker",
+   "requirement": "Reach 300 skill in Leatherworking",
+   "parts": [
+    {
+     "id": 234119,
+     "text": "300 Leatherworking Skill"
+    }
+   ]
+  },
+  {
+   "id": 64011,
+   "name": "Journeyman Tailor",
+   "requirement": "Reach 150 skill in Tailoring",
+   "parts": [
+    {
+     "id": 234121,
+     "text": "150 Tailoring Skill"
+    }
+   ]
+  },
+  {
+   "id": 64012,
+   "name": "Expert Tailor",
+   "requirement": "Reach 225 skill in Tailoring",
+   "parts": [
+    {
+     "id": 234123,
+     "text": "225 Tailoring Skill"
+    }
+   ]
+  },
+  {
+   "id": 64013,
+   "name": "Artisan Tailor",
+   "requirement": "Reach 300 skill in Tailoring",
+   "parts": [
+    {
+     "id": 234125,
+     "text": "300 Tailoring Skill"
+    }
+   ]
+  },
+  {
+   "id": 64014,
+   "name": "Lord Valthalak Laid to Rest",
+   "requirement": "Complete the questline beginning with an Earnest Proposition, and ending with Saving the Best for Last.",
+   "parts": []
+  },
+  {
+   "id": 64015,
+   "name": "Explorer",
+   "requirement": "Have a character with the Explore Azeroth achievement.",
+   "parts": [
+    {
+     "id": 234129,
+     "text": "Explorer"
+    }
+   ]
+  },
+  {
+   "id": 64016,
+   "name": "Novice Spelunker",
+   "requirement": "Complete the Ruins of Loradaeron and Excavation: Wetlands dungeons.",
+   "parts": [
+    {
+     "id": 234135,
+     "text": "Ragefire Chasm or Hall of Thanes"
+    },
+    {
+     "id": 234131,
+     "text": "Ruins of Lordaeron"
+    },
+    {
+     "id": 234134,
+     "text": "Wailing Caverns"
+    },
+    {
+     "id": 234133,
+     "text": "The Deadmines"
+    },
+    {
+     "id": 234136,
+     "text": "Shadowfang Keep"
+    },
+    {
+     "id": 234132,
+     "text": "Excavation Site: Wetlands"
+    }
+   ]
+  },
+  {
+   "id": 64017,
+   "name": "Experienced Spelunker",
+   "requirement": "Complete the City of Dalaran, Drowned City, and Krol'Dok Stronghold dungeons.",
+   "parts": [
+    {
+     "id": 234138,
+     "text": "City of Dalaran"
+    },
+    {
+     "id": 234140,
+     "text": "Blackfathom Deeps"
+    },
+    {
+     "id": 234141,
+     "text": "Gnomeregan"
+    },
+    {
+     "id": 234139,
+     "text": "The Drowned City"
+    },
+    {
+     "id": 234143,
+     "text": "Scarlet Monastery: Graveyard"
+    },
+    {
+     "id": 234144,
+     "text": "Scarlet Monastery: Library"
+    },
+    {
+     "id": 234145,
+     "text": "Scarlet Monastery: Armory"
+    },
+    {
+     "id": 234146,
+     "text": "Scarlet Monastery: Cathedral"
+    },
+    {
+     "id": 234142,
+     "text": "Razorfen Kraul"
+    },
+    {
+     "id": 234147,
+     "text": "Krol'dok Stronghold"
+    }
+   ]
+  },
+  {
+   "id": 64018,
+   "name": "Master Spelunker",
+   "requirement": "Complete the Alcaz Island, Timbermaw Hold, and Shaper's Terrace dungeons.",
+   "parts": [
+    {
+     "id": 234149,
+     "text": "Razorfen Downs"
+    },
+    {
+     "id": 234150,
+     "text": "Uldaman"
+    },
+    {
+     "id": 234151,
+     "text": "Zul'Farrak"
+    },
+    {
+     "id": 234152,
+     "text": "Maraudon"
+    },
+    {
+     "id": 234153,
+     "text": "Alcaz Prison"
+    },
+    {
+     "id": 234154,
+     "text": "The Temple of Atal'Hakkar"
+    },
+    {
+     "id": 234155,
+     "text": "Blackrock Depths"
+    },
+    {
+     "id": 234165,
+     "text": "Blackmaw Hold"
+    },
+    {
+     "id": 234156,
+     "text": "Lower Blackrock Spire"
+    },
+    {
+     "id": 234157,
+     "text": "Upper Blackrock Spire"
+    },
+    {
+     "id": 234158,
+     "text": "Scholomance"
+    },
+    {
+     "id": 234159,
+     "text": "Stratholme: Live"
+    },
+    {
+     "id": 234160,
+     "text": "Stratholme: Dead"
+    },
+    {
+     "id": 234161,
+     "text": "Dire Maul: East"
+    },
+    {
+     "id": 234162,
+     "text": "Dire Maul: North"
+    },
+    {
+     "id": 234163,
+     "text": "Dire Maul: West"
+    },
+    {
+     "id": 234164,
+     "text": "The Shaper's Terrace"
+    }
+   ]
+  },
+  {
+   "id": 64019,
+   "name": "Conqueror of the Wilds",
+   "requirement": "Complete the Hyjal Summit raid.",
+   "parts": [
+    {
+     "id": 234167,
+     "text": "Bandalar"
+    },
+    {
+     "id": 234168,
+     "text": "Ancient of Decay"
+    },
+    {
+     "id": 234169,
+     "text": "Time-Lost Battalion"
+    },
+    {
+     "id": 234170,
+     "text": "Sylvestris Dusksong"
+    },
+    {
+     "id": 234171,
+     "text": "Old Gloomlurker"
+    },
+    {
+     "id": 234172,
+     "text": "Gharalis the Abyssal"
+    },
+    {
+     "id": 234173,
+     "text": "Kathris the Haunted"
+    },
+    {
+     "id": 234174,
+     "text": "Anara Chillwind"
+    },
+    {
+     "id": 234175,
+     "text": "Elder Minderel"
+    },
+    {
+     "id": 234176,
+     "text": "Tracker Stillwind"
+    },
+    {
+     "id": 234177,
+     "text": "Council of Thorns"
+    },
+    {
+     "id": 234178,
+     "text": "Nythus the Dreambound"
+    },
+    {
+     "id": 234179,
+     "text": "The Wild King"
+    }
+   ]
+  },
+  {
+   "id": 64020,
+   "name": "Conqueror of the Deeps",
+   "requirement": "Complete the Barrow Deeps raid.",
+   "parts": [
+    {
+     "id": 234187,
+     "text": "Chillhowl"
+    },
+    {
+     "id": 234182,
+     "text": "Elder Tangleclaw"
+    },
+    {
+     "id": 234183,
+     "text": "Khalith the Dreadspinner"
+    },
+    {
+     "id": 234185,
+     "text": "Well of Sorrow"
+    },
+    {
+     "id": 234184,
+     "text": "Amethrax"
+    },
+    {
+     "id": 234186,
+     "text": "Del'lynar Songwood"
+    },
+    {
+     "id": 234188,
+     "text": "Ravus and Darlissa"
+    },
+    {
+     "id": 234181,
+     "text": "Sonya Darkhallow"
+    }
+   ]
+  },
+  {
+   "id": 64021,
+   "name": "Rank 3",
+   "requirement": "Reach the rank of Sergeant in the Player vs. Player Honor System.",
+   "parts": []
+  },
+  {
+   "id": 64022,
+   "name": "Rank 7",
+   "requirement": "Reach the rank of Knight-Lieutenant or Blood Guard in the Player vs. Player Honor System.",
+   "parts": []
+  },
+  {
+   "id": 64023,
+   "name": "Rank 10",
+   "requirement": "Reach the rank of Commander or Champion in the Player vs. Player Honor System.",
+   "parts": []
+  },
+  {
+   "id": 64024,
+   "name": "Rank 13",
+   "requirement": "Reach the rank of Field Marshal or Warlord in the Player vs. Player Honor System.",
+   "parts": []
+  },
+  {
+   "id": 64025,
+   "name": "Rank 14",
+   "requirement": "Reach the rank of Grand Marshal or High Warlord in the Player vs. Player Honor System.",
+   "parts": []
+  },
+  {
+   "id": 64026,
+   "name": "Master of Alterac Valley",
+   "requirement": "Reach exalted reputation with the Frostwolf Clan or Stormpike Guard.",
+   "parts": [
+    {
+     "id": 234200,
+     "text": "Reach exalted reputation with the Frostwolf Clan"
+    },
+    {
+     "id": 234201,
+     "text": "Reach exalted reputation with the Stormpike Guard"
+    }
+   ]
+  },
+  {
+   "id": 64027,
+   "name": "Master of Arathi Basin",
+   "requirement": "Reach exalted reputation with the Defilers or League of Arathor.",
+   "parts": [
+    {
+     "id": 234203,
+     "text": "Reach exalted reputation with The Defilers"
+    },
+    {
+     "id": 234204,
+     "text": "Reach exalted reputation with the League of Arathor"
+    }
+   ]
+  },
+  {
+   "id": 64028,
+   "name": "Master of Warsong Gulch",
+   "requirement": "Reach exalted reputation with the Warsong Outriders or Silverwing Sentinels.",
+   "parts": [
+    {
+     "id": 234206,
+     "text": "Reach exalted reputation with the Warsong Outriders"
+    },
+    {
+     "id": 234207,
+     "text": "Reach exalted reputation with the Silverwing Sentinels"
+    }
+   ]
+  },
+  {
+   "id": 64029,
+   "name": "Master of Darkspear Islands",
+   "requirement": "Reach exalted reputation with the horde or alliance faction at the Southseas Archipelago battleground.",
+   "parts": [
+    {
+     "id": 234209,
+     "text": "Reach exalted reputation with the Darkspear Raiders"
+    },
+    {
+     "id": 234210,
+     "text": "Reach exalted reputation with the Theramore Expeditionary Force"
+    }
+   ]
+  },
+  {
+   "id": 64030,
+   "name": "Conqueror of the Lair",
+   "requirement": "Complete Onyxia's Lair.",
+   "parts": []
+  },
+  {
+   "id": 64031,
+   "name": "Field of Honor: Week 4",
+   "requirement": "Complete Week 4 of the Field of Honor Journey.",
+   "parts": [
+    {
+     "id": 234214,
+     "text": "Complete Field of Honor: Week 4"
+    }
+   ]
+  },
+  {
+   "id": 64032,
+   "name": "Field of Honor: Week 7",
+   "requirement": "Complete Week 7 of the Field of Honor Journey.",
+   "parts": [
+    {
+     "id": 234216,
+     "text": "Complete Field of Honor: Week 7"
+    }
+   ]
+  },
+  {
+   "id": 64033,
+   "name": "Field of Honor: Week 10",
+   "requirement": "Complete Week 10 of the Field of Honor Journey.",
+   "parts": [
+    {
+     "id": 234218,
+     "text": "Complete Field of Honor: Week 10"
+    }
+   ]
+  }
+ ]
+}

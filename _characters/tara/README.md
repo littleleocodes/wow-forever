@@ -11,11 +11,18 @@ Your 11 points follow another build. Respec at a trainer, then take these 13 poi
 
 Your next talents: 23 Toughness, 24 Toughness, 25 Improved Righteous Fury, 26 Improved Righteous Fury, 27 Improved Righteous Fury, 28 Swift Judgement.
 
+## Legacy
+
+**2 Legacy points** on the account (earned once, every character spends them; up to 16 each). Spend them: **Well Rested** 2/5.
+
+Order: Well Rested 5 → Talented 5 → Gourmand 3 → The Quick and the Dead 2 → Reinforce 1. Your group character. Thrill of Adventure does nothing in dungeons and little in a group (the killing blows are shared), so it is left out. Well Rested first: you are logged out between group nights, so your rested bar fills and caps, and rested experience doubles kill experience, dungeon kills included; it is also the price of Talented. Talented gives your next five tank talents five levels early (more threat and survival in every dungeon until 55). Then Gourmand (one meal lasts a whole dungeon), The Quick and the Dead (a faster corpse run and free heals and blessings after a wipe) and Reinforce (tanks die most). At 60, respec for the endgame (user decision 2026-11-10).
+
+Closest next points: Novice Paladin: Tara 22/25; Journeyman Tailor: Tailoring 110/150; Expert Enchanter: Enchanting 150/225; Novice Spelunker: 4 of 6 dungeons; left: Shadowfang Keep, Excavation Site: Wetlands; Experienced Mage: Arcea 26/45.
+
 ## Since your last refresh (2026-11-10 07:37, level 22)
 
-- New in the plan: Protector's Silvered Chain Shirt (chest, level 22), Ebon Scimitar of the Sorcerer (weapon, level 41), Warder's Gloves (hands, level 50).
-- Left the plan (worn, replaced by a better choice, or no longer listed): Protector's Gloves (hands), Ebon Scimitar of the Channeler (weapon).
-- Moved: Fortified Spaulders of the Monkey (shoulder) level 23 to 22.
+- New in the plan: Spiked Chain Shoulder Pads of the Monkey (shoulder, level 22), Protector's Silvered Chain Shirt (chest, level 22), Ebon Scimitar of the Sorcerer (weapon, level 41), Warder's Gloves (hands, level 50).
+- Left the plan (worn, replaced by a better choice, or no longer listed): Protector's Gloves (hands), Fortified Spaulders of the Monkey (shoulder), Ebon Scimitar of the Channeler (weapon).
 
 ## Gold plan
 
@@ -40,9 +47,9 @@ Income is an estimate from Classic's data: coin and loot from about 88 kills a l
 | 34 | 8g 6s 94c | - | - |
 | 35 | 8g 62s 38c | 4g 20s (Exorcism, Retribution Aura, Redemption) | 1g 40s |
 
-Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Stormwind; Forever's not confirmed). At this income you would have about 92g 33s 98c by 40 after training and the plan's gear, enough for the mount at 40.
+Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Stormwind; Forever's not confirmed). At this income you would have about 92g 34s 29c by 40 after training and the plan's gear, enough for the mount at 40.
 
-Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 0c before 40 and 0c in all; you would reach 60 with about 574g 58s 75c after the mount.
+Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 0c before 40 and 0c in all; you would reach 60 with about 574g 73s 13c after the mount.
 
 ## Now (level 22)
 
@@ -56,7 +63,7 @@ Count a piece's stats in stamina: 100 armor = 5.65, 1 weapon damage per second =
 |---|---|---|---|---|
 | head | empty | 0 | 31 | 40 |
 | neck | empty | 0 | 29 | 41 |
-| shoulder | Fortified Spaulders of the Monkey (planned, level 22) | 16 | 26 | - |
+| shoulder | Spiked Chain Shoulder Pads of the Monkey (planned, level 22) | 16 | 26 | - |
 | back | Catacomb Cloak | 3 | 13 | - |
 | chest | Protector's Silvered Chain Shirt (planned, level 22) | 30 | 40 | - |
 | wrist | Bravo's Armbands | 4 | 14 | - |
@@ -77,24 +84,24 @@ Count a piece's stats in stamina: 100 armor = 5.65, 1 weapon damage per second =
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 1.0 hours old). "For your trip": enough to keep it up for about 1.7 hours of play, to your next training at level 24 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 0.3 hours old). "For your trip": enough to keep it up for about 1.7 hours of play, to your next training at level 24 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|
 | Food | Curiously Tasty Omelet | +5 stamina, +5% kill experience | 0.3% | 15 min | buy (you make it at Cooking 130; you have 53) | 1s 50c | ×7 (10s 50c) | no: saves 1.6 min an hour, costs 1.9 |
-| Food | Gooey Spider Cake | +5 stamina, +5% kill experience | 0.3% | 15 min | buy (you make it at Cooking 110; you have 53) | 1s | ×7 (7s) | yes: saves 1.6 min an hour, costs 1.3 |
-| Food | Soothing Turtle Bisque | +5 stamina, +5% kill experience | 0.3% | 15 min | buy (you make it at Cooking 175; you have 53) | 3s | ×7 (21s) | no: saves 1.6 min an hour, costs 3.8 |
-| Scroll | Scroll of Stamina II | +8 stamina | 0.5% | 30 min | buy | 4s 75c | ×4 (19s) | no: saves 0.2 min an hour, costs 3.0 |
+| Food | Gooey Spider Cake | +5 stamina, +5% kill experience | 0.3% | 15 min | buy (you make it at Cooking 110; you have 53) | 5s | ×7 (35s) | no: saves 1.6 min an hour, costs 6.4 |
+| Food | Soothing Turtle Bisque | +5 stamina, +5% kill experience | 0.3% | 15 min | buy (you make it at Cooking 175; you have 53) | 3s 32c | ×7 (23s 24c) | no: saves 1.6 min an hour, costs 4.2 |
+| Scroll | Scroll of Stamina II | +8 stamina | 0.5% | 30 min | buy | 2s | ×4 (8s) | no: saves 0.2 min an hour, costs 1.3 |
 
 One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience is extra: a food's +5% speeds up the experience you get from kills, not from quests. Elixirs: Classic lets several stack; Forever's rule is not confirmed.
 
 ### Craft
 
-- **chest**: Protector's Silvered Chain Shirt, 1.1% better tanking, replaces Burnished Tunic (wear it right away; best to the end of leveling; saves about 41 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 140 in the client's data; you have 40). Why it stays: Icemail Jerkin at 39, 1.7% better, saves about 47 min, but its 35g takes about 492 min of play to earn; Enchanted Thorium Breastplate at 58, 2.9% better, saves about 10 min before 60. If you do not craft it, keep your Burnished Tunic. Materials: Bronze Bar x20, Coarse Grinding Stone x6, Silver Bar x5, Pristine Leather x6, Tigerseye x8 (about 1g 23s 78c at today's prices).
+- **chest**: Protector's Silvered Chain Shirt, 1.1% better tanking, replaces Burnished Tunic (wear it right away; best to the end of leveling; saves about 41 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 140 in the client's data; you have 40). Why it stays: Icemail Jerkin at 39, 1.7% better, saves about 47 min, but its 35g takes about 491 min of play to earn; Enchanted Thorium Breastplate at 58, 2.9% better, saves about 10 min before 60. If you do not craft it, keep your Burnished Tunic. Materials: Bronze Bar x20, Coarse Grinding Stone x6, Silver Bar x5, Pristine Leather x6, Tigerseye x8 (about 1g 24s 67c at today's prices).
 
 ### Buy on the Auction House (listed now; prices change hourly; most minutes saved per gold first)
 
-- **shoulder**: Fortified Spaulders of the Monkey, 1.1% better tanking, replaces Laced Mail Shoulderpads (wear it right away; best to the end of leveling; saves about 41 min of group play). Auction House now: 40s. Why it stays: Captain's Shoulderguards of the Beast at 38, 0.5% better, saves about 14 min before 60; Skeletal Shoulders at 38, 0.8% better, saves about 23 min, but its 4g 99s takes about 62 min of play to earn; Krol'dok Warplate Pauldrons at 41, 2.1% better, saves about 55 min, but its 11g 4s 50c takes about 127 min of play to earn. Saves about 41 min of killing; earning its price takes about 13 min of play.
+- **shoulder**: Spiked Chain Shoulder Pads of the Monkey, 1.1% better tanking, replaces Laced Mail Shoulderpads (wear it right away; best to the end of leveling; saves about 42 min of group play). Auction House now: 30s. Why it stays: Skeletal Shoulders at 38, 0.8% better, saves about 23 min, but its 4g 47s takes about 55 min of play to earn; Krol'dok Warplate Pauldrons at 41, 2.1% better, saves about 55 min, but its 11g 9s takes about 128 min of play to earn. Saves about 42 min of killing; earning its price takes about 10 min of play.
 
 ### Dungeon runs
 
@@ -156,30 +163,30 @@ Crafts in your plan:
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 40-46 | Coarse Weightstone | 7 | makes 2s 54c |
-| 46-50 | Coarse Sharpening Stone | 8 | makes 2s 11c |
+| 40-46 | Coarse Weightstone | 7 | makes 2s 32c |
+| 46-50 | Coarse Sharpening Stone | 8 | makes 1s 95c |
 | 50-51 | Rough Sharpening Stone | 8 | 11c |
 | 51-75 | Rough Grinding Stone | 48 | 8s 3c |
 
-You spend about 3s 50c in all to reach 75, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
+You spend about 3s 88c in all to reach 75, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
 Materials: Coarse Stone x16, Rough Stone x103.
 
 ### Cooking 53 to 75
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 53-75 | Rainbow Fin Albacore | 22 | 26c |
+| 53-75 | Rainbow Fin Albacore | 22 | 64c |
 
-You spend about 26c in all to reach 75, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
+You spend about 64c in all to reach 75, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
 Materials: Raw Rainbow Fin Albacore x22.
 
 ### First Aid 73 to 75
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 73-75 | Minor Healing Potion | 4 | 1s 39c |
+| 73-75 | Minor Healing Potion | 4 | 1s 43c |
 
-You spend about 1s 39c in all to reach 75, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
+You spend about 1s 43c in all to reach 75, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
 Materials: Peacebloom x4, Empty Vial x4, Mild Spices x4.
 
 **Mining** 75/75: at your rank's cap; train the next rank to go on.
@@ -190,7 +197,7 @@ Materials: Peacebloom x4, Empty Vial x4, Mild Spices x4.
 |---|---|---|---|
 | head | **empty** | 0 | level 40: Warbringer's Crown of the Beast |
 | neck | **empty** | 0 | level 41: Talvash's Enhancing Necklace |
-| shoulder | Laced Mail Shoulderpads | 0.0% better tanking | level 22: Fortified Spaulders of the Monkey |
+| shoulder | Laced Mail Shoulderpads | 0.0% better tanking | level 22: Spiked Chain Shoulder Pads of the Monkey |
 | back | Catacomb Cloak | 0.2% better tanking | not before 60 by 0.5% |
 | chest | Burnished Tunic | 1.0% better tanking | level 22: Protector's Silvered Chain Shirt |
 | wrist | Bravo's Armbands | 0.3% better tanking | not before 60 by 0.5% |
@@ -213,21 +220,21 @@ Each upgrade worth 0.5% better tanking or more, under the level at which you can
 
 #### Craft
 
-- **waist**: Warder's Belt, 0.8% better tanking, replaces Atrophic Girdle (wear it right away; best to the end of leveling; saves about 29 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 155 in the client's data; you have 40). Why it stays: Justicar's Waistguard at 50, 1.1% better, saves about 16 min before 60; Sentinel's Waistguard at 50, 1.2% better, saves about 18 min before 60; Warder's Waistguard at 50, 1.5% better, saves about 22 min, but its 16g 50s 2c takes about 133 min of play to earn. If you do not craft it, keep your Atrophic Girdle. Materials: Iron Bar x6, Heavy Grinding Stone x2, Black Pearl x2 (about 86s 16c at today's prices).
+- **waist**: Warder's Belt, 0.8% better tanking, replaces Atrophic Girdle (wear it right away; best to the end of leveling; saves about 29 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 155 in the client's data; you have 40). Why it stays: Justicar's Waistguard at 50, 1.1% better, saves about 16 min before 60; Sentinel's Waistguard at 50, 1.2% better, saves about 18 min before 60; Warder's Waistguard at 50, 1.5% better, saves about 22 min, but its 16g 3s 86c takes about 129 min of play to earn. If you do not craft it, keep your Atrophic Girdle. Materials: Iron Bar x6, Heavy Grinding Stone x2, Black Pearl x2 (about 73s 22c at today's prices).
 
 
 ### Level 31
 
 #### Quests to do
 
-- **weapon**: Mercenary Blade of the Channeler + Marbled Buckler, 3.1% better tanking, replaces Stinging Viper (wear it right away; best until level 41; saves about 25 min of group play). Auction House: usually listed (in 40% of the hourly snapshots), about 88s, not this hour / quest "The Crone of the Kraul" (Razorfen Kraul, level 34; the chain starts with "Lonebrow's Journal", level 29). Not on your RestedXP route (it takes the chain as far as "Lonebrow's Journal", at about level 33): from Falfindel Waywarder (Feralas 89.6, 46.6). Why it stays: Murphstar of the Sorcerer at 36, 2.7% better, saves about 12 min before its next upgrade; Nobles Brand of the Channeler at 36, 2.7% better, saves about 13 min before its next upgrade; Soulsplatter Mace at 36, 2.8% better, saves about 13 min before its next upgrade.
+- **weapon**: Mercenary Blade of the Channeler + Marbled Buckler, 3.1% better tanking, replaces Stinging Viper (wear it right away; best until level 41; saves about 25 min of group play). Auction House: listed now at 1g 85s, usually about 88s: wait for a cheaper one / quest "The Crone of the Kraul" (Razorfen Kraul, level 34; the chain starts with "Lonebrow's Journal", level 29). Not on your RestedXP route (it takes the chain as far as "Lonebrow's Journal", at about level 33): from Falfindel Waywarder (Feralas 89.6, 46.6). Why it stays: Murphstar of the Sorcerer at 36, 2.7% better, saves about 12 min before its next upgrade; Nobles Brand of the Channeler at 36, 2.7% better, saves about 13 min before its next upgrade; Soulsplatter Mace at 36, 2.8% better, saves about 13 min before its next upgrade.
 
 
 ### Level 40
 
 #### Craft
 
-- **feet**: Warder's Boots, 2.3% better tanking, replaces War Paint Anklewraps (wear it right away; best to the end of leveling; saves about 62 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 205 in the client's data; you have 40). If you do not craft it, keep your War Paint Anklewraps. Materials: Steel Bar x4, Heavy Grinding Stone x4, Black Pearl x4 (about 1g 54s 24c at today's prices).
+- **feet**: Warder's Boots, 2.3% better tanking, replaces War Paint Anklewraps (wear it right away; best to the end of leveling; saves about 62 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 205 in the client's data; you have 40). If you do not craft it, keep your War Paint Anklewraps. Materials: Steel Bar x4, Heavy Grinding Stone x4, Black Pearl x4 (about 1g 34s 28c at today's prices).
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
@@ -243,14 +250,14 @@ Each upgrade worth 0.5% better tanking or more, under the level at which you can
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **weapon**: Ebon Scimitar of the Sorcerer + Mountainside Buckler, 3.6% better tanking, replaces Mercenary Blade of the Channeler (wear it right away; best to the end of leveling; saves about 93 min of group play). Auction House: usually listed (in 24% of the hourly snapshots), about 2g 9s, not this hour / Auction House now: 4g 25s. Why it stays: Sageblade at 59, 4.4% better, saves about 8 min before 60; Sageblade at 59, 4.5% better, saves about 8 min before 60; Sageblade at 59, 6.1% better, saves about 10 min before 60. Saves about 93 min of killing; earning its price takes about 77 min of play.
+- **weapon**: Ebon Scimitar of the Sorcerer + Mountainside Buckler, 3.6% better tanking, replaces Mercenary Blade of the Channeler (wear it right away; best to the end of leveling; saves about 93 min of group play). Auction House: usually listed (in 24% of the hourly snapshots), about 2g 9s, not this hour / Auction House now: 4g. Why it stays: Sageblade at 59, 4.4% better, saves about 8 min before 60; Sageblade at 59, 4.5% better, saves about 8 min before 60; Sageblade at 59, 6.1% better, saves about 10 min before 60. Saves about 93 min of killing; earning its price takes about 77 min of play.
 
 
 ### Level 50
 
 #### Craft
 
-- **hands**: Warder's Gloves, 3.1% better tanking, replaces Dusty Mining Gloves (wear it right away; best to the end of leveling; saves about 47 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 255 in the client's data; you have 40). If you do not craft it, wear Sentry's Gloves of the Monkey instead (0.7% better tanking; Auction House now: 50s). Materials: Thorium Bar x8, Solid Grinding Stone x4, Black Pearl x4 (about 5g 59s 76c at today's prices).
+- **hands**: Warder's Gloves, 3.1% better tanking, replaces Dusty Mining Gloves (wear it right away; best to the end of leveling; saves about 47 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 255 in the client's data; you have 40). If you do not craft it, keep your Dusty Mining Gloves. Materials: Thorium Bar x8, Solid Grinding Stone x4, Black Pearl x4 (about 5g 43s 28c at today's prices).
 
 
 ## When to leave the guide
@@ -323,7 +330,7 @@ Every leveling dungeon you have not outgrown, once, at the level its quests fit:
   - Pick up first: The Love Potion (level 54, from Mistress Nagmara)
 - **Blackrock Spire** (55-60), run at level 56: worth a detour for 9 quests at full experience; its drops are worth about 5 min on average.
   - Pick up first: Poisoned Water (level 56, from Duke Hydraxis (Azshara 79.3, 73.7)); Stormers and Rumblers (level 57, from Duke Hydraxis (Azshara 79.3, 73.7)); The Final Tablets → Confront Yeh'kinya (2 parts, level 58, start with "Screecher Spirits" from Yeh'kinya (Tanaris 67.0, 22.4)); Put Her Down (level 59, from Helendis Riverhorn (Burning Steppes 85.8, 68.9)); Bijou's Belongings → Message to Maxwell (2 parts, level 59, from Bijou); En-Ay-Es-Tee-Why (level 59, from Kibler (Burning Steppes 65.8, 22.0)); Kibler's Exotic Pets (level 59, from Kibler (Burning Steppes 65.8, 22.0))
-  - Drop: Lightforge Spaulders (shoulder, from level 55; The Beast, 20% drop): over your Fortified Spaulders of the Monkey, 2.8% better, about 24 min saved if it drops
+  - Drop: Lightforge Spaulders (shoulder, from level 55; The Beast, 20% drop): over your Spiked Chain Shoulder Pads of the Monkey, 2.8% better, about 23 min saved if it drops
 - **Dire Maul** (55-60), run at level 57: worth a detour for 3 quests at full experience.
   - Pick up first: Enticing Negolash (level 52, from Ruined Lifeboat); Lethtendris's Web (level 57, from Latronicus Moonspear (Feralas 30.4, 46.2)); Pusillin and the Elder Azj'Tordin (level 58, from Azj'Tordin (Feralas 76.9, 37.4))
 - Skip: Wailing Caverns (only 1 quest at full experience and no drops for you); Ruins of Lordaeron (only 1 quest at full experience and no drops for you; your guide ran it at 18-19); Scholomance (you will have outgrown it).

@@ -19,7 +19,8 @@ import urllib.parse
 import urllib.request
 
 CRED = pathlib.Path.home() / ".wow-forever-tools" / "blizzard.json"
-PARTS = ["", "/equipment", "/professions", "/specializations", "/statistics", "/quests", "/quests/completed", "/reputations"]
+PARTS = ["", "/equipment", "/professions", "/specializations", "/statistics", "/quests", "/quests/completed", "/reputations",
+         "/achievements"]   # account-wide achievements: the Legacy challenges (legacy.py, 2026-11-10)
 
 
 def credentials():

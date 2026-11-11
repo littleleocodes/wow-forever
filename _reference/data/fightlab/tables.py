@@ -450,6 +450,8 @@ WEAPON_DPS_MULT = 1.0    # sensitivity knob on top of the item-database weapon d
 # level"): gear_stats keys (intellect, spirit, stamina, agility, strength, armor, spell_power, healing, attack_power), "wand_dps" (wand_dps)
 # and "mp5" (mana every 5 seconds, also inside the five-second rule; engine regen ticks). Empty: every result bit-identical.
 GEAR_BONUS = {}
+LEGACY_THRILL = 0.0   # Legacy perk Thrill of Adventure (2026-11-10, the character planner): the share of maximum health and mana a killing
+                      # blow gives back (5 ranks: 0.05 over 10 s; outside dungeons; the lab gives it at once after the kill); 0 = off
 GEAR_STAT_MULT = 1.0     # sensitivity knob on top of the item-database gear stats
 GEAR_TIER = "greens"     # "greens" (fixed-stat green items, mostly quest rewards) or "blues" (dungeon blues); see gear_stats.py
 GEAR_TIERS = {"greens": {"GEAR_TIER": "greens"}, "blues": {"GEAR_TIER": "blues"}}
