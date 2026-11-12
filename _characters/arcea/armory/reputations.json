@@ -23,8 +23,8 @@
     "id": 47
    },
    "standing": {
-    "raw": 9928,
-    "value": 928,
+    "raw": 10041,
+    "value": 1041,
     "max": 12000,
     "tier": 5,
     "name": "Honored"
@@ -71,8 +71,8 @@
     "id": 69
    },
    "standing": {
-    "raw": 6518,
-    "value": 3518,
+    "raw": 7056,
+    "value": 4056,
     "max": 6000,
     "tier": 4,
     "name": "Friendly"
@@ -87,8 +87,8 @@
     "id": 72
    },
    "standing": {
-    "raw": 9700,
-    "value": 700,
+    "raw": 9831,
+    "value": 831,
     "max": 12000,
     "tier": 5,
     "name": "Honored"
@@ -119,8 +119,8 @@
     "id": 54
    },
    "standing": {
-    "raw": 10522,
-    "value": 1522,
+    "raw": 10616,
+    "value": 1616,
     "max": 12000,
     "tier": 5,
     "name": "Honored"
@@ -137,6 +137,22 @@
    "standing": {
     "raw": 2000,
     "value": 2000,
+    "max": 3000,
+    "tier": 3,
+    "name": "Neutral"
+   }
+  },
+  {
+   "faction": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/reputation-faction/529?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Argent Dawn",
+    "id": 529
+   },
+   "standing": {
+    "raw": 550,
+    "value": 550,
     "max": 3000,
     "tier": 3,
     "name": "Neutral"

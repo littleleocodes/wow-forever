@@ -24,8 +24,8 @@
    },
    "tiers": [
     {
-     "skill_points": 116,
-     "max_skill_points": 150,
+     "skill_points": 140,
+     "max_skill_points": 225,
      "tier": {
       "name": "Tailoring",
       "id": 2948
@@ -47,6 +47,13 @@
       },
       {
        "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4852?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Earthen Vest",
+       "id": 4852
+      },
+      {
+       "key": {
         "href": "https://us.api.blizzard.com/data/wow/recipe/2383?namespace=static-1.60.1_70399-forever-us"
        },
        "name": "Soft-soled Linen Boots",
@@ -54,17 +61,17 @@
       },
       {
        "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4853?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Azure Silk Belt",
+       "id": 4853
+      },
+      {
+       "key": {
         "href": "https://us.api.blizzard.com/data/wow/recipe/3973?namespace=static-1.60.1_70399-forever-us"
        },
        "name": "Pearl-clasped Cloak",
        "id": 3973
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/56361?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Faction Banner",
-       "id": 56361
       },
       {
        "key": {
@@ -79,6 +86,13 @@
        },
        "name": "Brown Linen Pants",
        "id": 2408
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4849?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Azure Silk Pants",
+       "id": 4849
       },
       {
        "key": {
@@ -236,6 +250,13 @@
       },
       {
        "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4850?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Azure Silk Hood",
+       "id": 4850
+      },
+      {
+       "key": {
         "href": "https://us.api.blizzard.com/data/wow/recipe/4020?namespace=static-1.60.1_70399-forever-us"
        },
        "name": "Red Woolen Bag",
@@ -264,10 +285,31 @@
       },
       {
        "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4021?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Lesser Wizard's Robe",
+       "id": 4021
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4715?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "White Swashbuckler's Shirt",
+       "id": 4715
+      },
+      {
+       "key": {
         "href": "https://us.api.blizzard.com/data/wow/recipe/2379?namespace=static-1.60.1_70399-forever-us"
        },
        "name": "Green Linen Bracers",
        "id": 2379
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4003?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Small Silk Pack",
+       "id": 4003
       },
       {
        "key": {
@@ -306,10 +348,52 @@
       },
       {
        "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2389?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Gloves of Meditation",
+       "id": 2389
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2405?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Formal White Shirt",
+       "id": 2405
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4714?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Red Swashbuckler's Shirt",
+       "id": 4714
+      },
+      {
+       "key": {
         "href": "https://us.api.blizzard.com/data/wow/recipe/55424?namespace=static-1.60.1_70399-forever-us"
        },
        "name": "Novice Ardent's Sash",
        "id": 55424
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4855?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Crimson Silk Belt",
+       "id": 4855
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4851?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Silk Headband",
+       "id": 4851
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2395?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Azure Silk Vest",
+       "id": 2395
       },
       {
        "key": {
@@ -369,10 +453,24 @@
       },
       {
        "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2377?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Bolt of Mageweave",
+       "id": 2377
+      },
+      {
+       "key": {
         "href": "https://us.api.blizzard.com/data/wow/recipe/55366?namespace=static-1.60.1_70399-forever-us"
        },
        "name": "Linen Reagent Bag",
        "id": 55366
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/56361?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Faction Banner",
+       "id": 56361
       }
      ]
     }
@@ -408,13 +506,6 @@
        },
        "name": "Enchant Chest - Inferior Stamina",
        "id": 4290
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/52649?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Enchanted Lute",
-       "id": 52649
       },
       {
        "key": {
@@ -618,6 +709,13 @@
        },
        "name": "Enchant 2H Weapon - Lesser Intellect",
        "id": 4369
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/52649?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Enchanted Lute",
+       "id": 52649
       }
      ]
     }
@@ -833,17 +931,17 @@
      "known_recipes": [
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/52639?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Fish Bowl",
-       "id": 52639
-      },
-      {
-       "key": {
         "href": "https://us.api.blizzard.com/data/wow/recipe/4345?namespace=static-1.60.1_70399-forever-us"
        },
        "name": "Fishing",
        "id": 4345
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/52639?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Fish Bowl",
+       "id": 52639
       }
      ]
     }
@@ -882,17 +980,17 @@
       },
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/52641?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "First Aid Kit",
-       "id": 52641
-      },
-      {
-       "key": {
         "href": "https://us.api.blizzard.com/data/wow/recipe/1838?namespace=static-1.60.1_70399-forever-us"
        },
        "name": "Linen Bandage",
        "id": 1838
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/52641?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "First Aid Kit",
+       "id": 52641
       }
      ]
     }

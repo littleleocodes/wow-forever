@@ -68,11 +68,11 @@
          "name": "Ice Shards",
          "id": 11207
         },
-        "description": "Increases the critical strike damage bonus of your Frost spells by 80%.",
+        "description": "Increases the critical strike damage bonus of your Frost spells by 100%.",
         "cast_time": "Passive",
         "power_cost": null
        },
-       "talent_rank": 4
+       "talent_rank": 5
       },
       {
        "talent": {
@@ -142,7 +142,7 @@
       }
      ],
      "specialization_name": "Frost",
-     "spent_points": 18
+     "spent_points": 19
     }
    ]
   }
