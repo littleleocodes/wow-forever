@@ -122,7 +122,8 @@ def item_pool(cls, level, school_share, faction="alliance"):
             if raw.get(16) and cls == "druid":
                 lab["attack_power"] = lab.get("attack_power", 0) + raw[16]
             out.append({"id": f"{it['id']}" + (f":{sid}" if sid else ""), "name": name, "slot": slot, "hand": hand, "wtype": wtype,
-                        "ranged": rng, "raw": raw, "lab": lab, "dps": dps, "unique": bool(it.get("unique"))})
+                        "ranged": rng, "raw": raw, "lab": lab, "dps": dps, "unique": bool(it.get("unique")), "req": req,
+                        "quality": it.get("quality", 2)})
     return out
 
 

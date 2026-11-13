@@ -4,9 +4,11 @@ built I think we should make sure all the stats are scored").
     python _reference/data/characters/stat_weights_all.py [classes...] [--fights 3000] [--jobs 10] [--fresh]
 
 Runs stat_weights.py --full for each class's leveling page picks (fightlab/signature_audit.page_slots: one build per spec page) into
-weights/leveling/<class>-<build id>.json; a pick whose file is there is skipped unless --fresh, so the same command resumes.
+weights/leveling/<class>-<build id>.json; a pick whose file is there with the current steps is skipped unless --fresh, so the same
+command resumes (a file made with other steps is redone).
 """
 import argparse
+import json
 import pathlib
 import subprocess
 import sys
@@ -14,8 +16,9 @@ import time
 
 HERE = pathlib.Path(__file__).resolve().parent
 DATA = HERE.parent
-sys.path[:0] = [str(DATA / "fightlab"), str(DATA / "scorer"), str(DATA)]
+sys.path[:0] = [str(HERE), str(DATA / "fightlab"), str(DATA / "scorer"), str(DATA)]
 import level_guides as LG  # noqa: E402
+import stat_weights as SW  # noqa: E402
 
 CLASSES = "druid hunter mage paladin priest rogue shaman warlock warrior".split()
 
@@ -41,7 +44,8 @@ def main():
     print(f"{len(todo)} leveling picks", flush=True)
     for i, (cls, spec, bid) in enumerate(todo, 1):
         f = HERE / "weights" / "leveling" / f"{cls}-{bid}.json"
-        if f.exists() and not a.fresh:
+        want = {k: SW.FULL_STEPS[k] for k in SW.CLASS_STATS[cls]}
+        if f.exists() and not a.fresh and json.loads(f.read_text(encoding="utf-8")).get("steps") == want:
             print(f"[{i}/{len(todo)}] {cls} {spec}: done ({f.name})", flush=True)
             continue
         t = time.time()

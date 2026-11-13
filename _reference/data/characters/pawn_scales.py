@@ -1,10 +1,12 @@
 """Pawn 2.14.2's built-in Forever weights, read and applied the way Pawn applies them (2026-11-13; _reference/forever-stats.md row 14).
 Shared by characters/pawn_compare.py (leveling) and raidsim/pawn_raid_compare.py (level 60); no fight-lab or simulator imports."""
+import json
 import pathlib
 import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
+DATA = pathlib.Path(__file__).resolve().parent.parent
 
 PAWN = pathlib.Path("D:/World of Warcraft/_forever_/Interface/AddOns/Pawn")
 # Pawn's Forever per-percent factors (ClassicHawsJon.lua "if VgerCore.IsClassic or VgerCore.IsForever")
@@ -81,10 +83,28 @@ def pawn_score(scale, ps):
     return sum(scale.get(k, 0.0) * v for k, v in ps.items())
 
 
+def tree_points(cls, alloc):
+    """Points per tree of an allocation, either form: {tree: [[talent, rank]]} (a build's) or {talent: rank} (run.allocation_at,
+    run.alloc_of). 2026-11-13 fix: tree_of had passed the {talent: rank} form to spec_modes.tree_points, which reads only the first form,
+    so every tree read 0 and Pawn's first-tree scale was used for every spec (Retribution scored with Holy's, Feral with Balance's)."""
+    import spec_modes as SM
+    if alloc and all(isinstance(v, list) for v in alloc.values()):
+        return SM.tree_points(cls, {"allocation": alloc})
+    data = json.loads((DATA / "forever-talents" / f"{cls}.json").read_text(encoding="utf-8"))
+    where = {t["name"]: tr["name"] for tr in data["trees"] for t in tr["talents"]}
+    pts = {tr["name"]: 0 for tr in data["trees"]}
+    for n, r in alloc.items():
+        if n in where:
+            pts[where[n]] += r
+    missing = [n for n in alloc if n not in where]
+    if missing:
+        raise ValueError(f"{cls}: talents not in the trees: {missing}")
+    return pts
+
+
 def tree_of(cls, alloc):
     """The tree with the most points (Pawn's automatic scale: the player's primary talent tree)."""
-    import spec_modes as SM
-    pts = SM.tree_points(cls, {"allocation": alloc})
+    pts = tree_points(cls, alloc)
     order = TREES[cls]
     best = max(order, key=lambda t: pts.get(t, 0))
     return order.index(best) + 1, best
