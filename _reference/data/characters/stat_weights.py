@@ -26,6 +26,25 @@ import tables as TB  # noqa: E402
 LEVELS = [20, 23, 26, 29, 32, 35, 40, 45, 50, 55, 60]
 STEPS = {"intellect": 30, "spirit": 30, "stamina": 30, "spell_power": 15, "armor": 300, "mp5": 10, "wand_dps": 10}   # 2026-11-09: steps of 10 Intellect read noise
 CASTER = {"mage", "priest", "warlock"}
+# Every stat a piece of gear can carry, by class (2026-11-13, the gear add-on; user: "make sure all the stats are scored"). Ratings in rating
+# points (tables.RATING_PER_PCT: the same at every level). Hit and expertise are measured as a step DOWN (a negative step): their value per
+# point while under the cap, also for a build its talents already cap (Arcea's Precision 2/3 is the 4% same-level spell cap); the add-on
+# applies the cap with the character's own hit. Spell penetration is 0 while leveling (mobs of your level have no resistance) and not run.
+FULL_STEPS = {"stamina": 30, "armor": 300, "crit_rating": 28, "hit_rating": -20, "haste_rating": 20, "defense_rating": 20, "dodge_rating": 24,
+              "intellect": 30, "spirit": 30, "mp5": 10, "spell_power": 15, "healing": 30, "wand_dps": 10,
+              "strength": 30, "agility": 30, "attack_power": 60, "mh_weapon_dps": 5, "oh_weapon_dps": 5, "ranged_weapon_dps": 5,
+              "expertise_rating": -20, "weapon_skill": 5, "parry_rating": 30, "block_rating": 10, "block_value": 20}
+CASTER_STATS = ["intellect", "spirit", "stamina", "spell_power", "armor", "mp5", "wand_dps", "crit_rating", "hit_rating", "haste_rating",
+                "defense_rating", "dodge_rating"]
+MELEE_STATS = ["strength", "agility", "stamina", "attack_power", "armor", "mh_weapon_dps", "crit_rating", "hit_rating", "haste_rating",
+               "expertise_rating", "weapon_skill", "defense_rating", "dodge_rating", "parry_rating"]
+CLASS_STATS = {"mage": CASTER_STATS, "warlock": CASTER_STATS, "priest": CASTER_STATS + ["healing"],
+               "warrior": MELEE_STATS + ["oh_weapon_dps", "block_rating", "block_value"], "rogue": MELEE_STATS + ["oh_weapon_dps"],
+               "hunter": MELEE_STATS + ["intellect", "spirit", "mp5", "ranged_weapon_dps"],
+               "paladin": MELEE_STATS + ["intellect", "spirit", "mp5", "spell_power", "healing", "block_rating", "block_value"],
+               "shaman": MELEE_STATS + ["intellect", "spirit", "mp5", "spell_power", "healing", "oh_weapon_dps", "block_rating", "block_value"],
+               "druid": MELEE_STATS + ["intellect", "spirit", "mp5", "spell_power", "healing"]}
+FULL_LEVELS = [10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]
 
 
 def job(a):
@@ -45,12 +64,21 @@ def main():
     ap.add_argument("--spec", required=True)
     ap.add_argument("--fights", type=int, default=1500)
     ap.add_argument("--jobs", type=int, default=8)
+    ap.add_argument("--full", action="store_true", help="every stat of the class at levels 10-60 -> weights/leveling/<class>-<build id>.json "
+                                                         "(2026-11-13, the gear add-on); without it the planner's older set and file")
     a = ap.parse_args()
     b, order, prov, rot = LG.pick(a.cls, a.spec)
+    if b is None:
+        raise SystemExit(f"{a.cls} {a.spec}: no leveling page pick")
     build = {"allocation": b["allocation"], "order": order}
-    steps = dict(STEPS) if a.cls in CASTER else {k: v for k, v in STEPS.items() if k != "wand_dps"}
+    if a.full:
+        steps = {k: FULL_STEPS[k] for k in CLASS_STATS[a.cls]}
+        levels = FULL_LEVELS
+    else:
+        steps = dict(STEPS) if a.cls in CASTER else {k: v for k, v in STEPS.items() if k != "wand_dps"}
+        levels = LEVELS
     jobs, keys = [], []
-    for L in LEVELS:
+    for L in levels:
         alloc = FR.allocation_at(build, L)
         for st in [None] + list(steps):
             for seed in (3, 4):
@@ -61,7 +89,11 @@ def main():
     t = dict(zip(keys, res))
     out = {"class": a.cls, "spec": a.spec, "build": b["id"], "rotation": rot, "date": datetime.date.today().isoformat(), "fights": a.fights,
            "seeds": [3, 4], "steps": steps, "unit": "seconds per kill saved per point (negative: slower)", "levels": {}}
-    for L in LEVELS:
+    if a.full:
+        out["note"] = ("Negative steps (hit_rating, expertise_rating): the value per point while under the cap, measured as a step down. "
+                       "Ratings in rating points (the same at every level). A fight-lab model of the beta, not a measurement.")
+        out["provisional_order"] = bool(prov)
+    for L in levels:
         base = (t[(L, None, 3)] + t[(L, None, 4)]) / 2
         row = {"time_per_kill": round(base, 3), "weights": {}}
         for st, step in steps.items():
@@ -69,8 +101,8 @@ def main():
             row["weights"][st] = round(d / step, 5)
         out["levels"][str(L)] = row
         print(f"  {L}: {base:.2f} s per kill; " + ", ".join(f"{k} {v:+.4f}" for k, v in row["weights"].items()), flush=True)
-    path = HERE / "weights" / f"{a.cls}-{rot}.json"
-    path.parent.mkdir(exist_ok=True)
+    path = HERE / "weights" / "leveling" / f"{a.cls}-{b['id']}.json" if a.full else HERE / "weights" / f"{a.cls}-{rot}.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
     print(f"wrote {path}")
 

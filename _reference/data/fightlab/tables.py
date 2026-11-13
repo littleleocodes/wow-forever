@@ -405,11 +405,11 @@ def class_dodge(cls, level, agility):
 
 def class_attack_power(cls, level, strength, agility):
     b = CLASS_BASE_60[cls]
-    return max(0.0, b["ap_base"](level) + AP_PER_STR.get(cls, 0) * strength + AP_PER_AGI.get(cls, 0) * agility)
+    return max(0.0, b["ap_base"](level) + AP_PER_STR.get(cls, 0) * strength + AP_PER_AGI.get(cls, 0) * agility) + GEAR_BONUS.get("attack_power", 0.0)
 
 
 def class_ranged_ap(cls, level, agility):
-    return max(0.0, CLASS_BASE_60[cls]["ap_base"](level) + RAP_PER_AGI.get(cls, 0) * agility)
+    return max(0.0, CLASS_BASE_60[cls]["ap_base"](level) + RAP_PER_AGI.get(cls, 0) * agility) + GEAR_BONUS.get("attack_power", 0.0)
 
 
 def mage_base_stats(level):
@@ -450,6 +450,55 @@ WEAPON_DPS_MULT = 1.0    # sensitivity knob on top of the item-database weapon d
 # level"): gear_stats keys (intellect, spirit, stamina, agility, strength, armor, spell_power, healing, attack_power), "wand_dps" (wand_dps)
 # and "mp5" (mana every 5 seconds, also inside the five-second rule; engine regen ticks). Empty: every result bit-identical.
 GEAR_BONUS = {}
+# Gear ratings and the stats the item-database gear lacks (2026-11-13, the gear add-on; user: "make sure all the stats are scored ... keep
+# in mind caps for certain stats"): GEAR_BONUS keys crit_rating, hit_rating, haste_rating, expertise_rating, weapon_skill, defense_rating,
+# dodge_rating, parry_rating, block_rating, block_value, mh_weapon_dps, oh_weapon_dps, ranged_weapon_dps (attack_power: class_attack_power and
+# class_ranged_ap). Rating points per 1% are Forever's CombatRatings game table, the same at every level (_reference/forever-stats.md row 1);
+# hit and crit are one stat for melee, ranged and spells (row 2). The caps come from the attack tables themselves: hit past a mob's miss
+# chance, expertise past its dodge and parry, do nothing (row 3).
+RATING_PER_PCT = {"crit_rating": 14.0, "hit_rating": 10.0, "haste_rating": 10.0, "expertise_rating": 10.0, "dodge_rating": 12.0,
+                  "parry_rating": 15.0, "block_rating": 5.0}
+DEFENSE_PER_POINT = 0.0004   # 0.04% per defense skill point: miss, dodge, parry and block up, crits taken down (the simulator's constant)
+SKILL_PER_POINT = 0.001      # weapon skill above the mob's defense: 0.1% less miss, dodge and parry per point (Classic, gap under 10)
+SKILL_CRIT_PER_POINT = 0.0004
+HASTE_GCD = False   # spell haste shortens the global cooldown (to 1.0 s)? Open: the simulator says yes, the client's Nature's Grace (its own
+                    # global-cooldown modifier next to its haste) says no (_reference/forever-stats.md row 7). Not wired yet: a sensitivity.
+
+
+def rating_pct(key):
+    """A rating key of GEAR_BONUS as a fraction (0.01 = 1%)."""
+    return GEAR_BONUS.get(key, 0.0) / RATING_PER_PCT[key] / 100.0
+
+
+def apply_gear_ratings(p, mod):
+    """Adds GEAR_BONUS's ratings to a player the module has made (engine.Session.run calls it only while GEAR_BONUS is set)."""
+    crit = rating_pct("crit_rating")
+    p.spell_crit += crit
+    p.melee_crit += crit
+    p.ranged_crit += crit
+    hit = rating_pct("hit_rating")
+    p.hit_bonus += hit
+    p.spell_hit += hit
+    p.expertise += rating_pct("expertise_rating")
+    p.weapon_skill += GEAR_BONUS.get("weapon_skill", 0.0)
+    d = GEAR_BONUS.get("defense_rating", 0.0) * DEFENSE_PER_POINT
+    p.mob_miss += d
+    p.crit_taken_red += d
+    p.dodge += d + rating_pct("dodge_rating")
+    if p.parry > 0:
+        p.parry += d + rating_pct("parry_rating")
+    if p.block > 0:
+        p.block += d + rating_pct("block_rating")
+        p.block_value += GEAR_BONUS.get("block_value", 0.0)
+    for w, key in ((p.mh, "mh_weapon_dps"), (p.oh, "oh_weapon_dps"), (p.ranged, "ranged_weapon_dps")):
+        if w is not None and GEAR_BONUS.get(key):
+            w.dps_bonus += GEAR_BONUS[key]
+    h = rating_pct("haste_rating")
+    if h and not getattr(mod, "_gear_haste", None):   # faster casts and swings (the module's own cast-time and swing-speed rules first)
+        mod._gear_haste = h
+        ct, sf = mod.cast_time, mod.swing_speed_factor
+        mod.cast_time = lambda spell, _ct=ct, _h=h: _ct(spell) / (1.0 + _h)
+        mod.swing_speed_factor = lambda _sf=sf, _h=h: _sf() / (1.0 + _h)
 LEGACY_THRILL = 0.0   # Legacy perk Thrill of Adventure (2026-11-10, the character planner): the share of maximum health and mana a killing
                       # blow gives back (5 ranks: 0.05 over 10 s; outside dungeons; the lab gives it at once after the kill); 0 = off
 GEAR_STAT_MULT = 1.0     # sensitivity knob on top of the item-database gear stats
