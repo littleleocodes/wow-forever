@@ -2230,7 +2230,18 @@ def change_lines(d, events, lv):
     was = {(s, n): L for s, L, n in old["plan"]}
     now = {(e["slot"], e["item"]["name"]): e["level"] for e in events}
     new = [f"{n} ({s}, level {L})" for (s, n), L in sorted(now.items(), key=lambda kv: kv[1]) if (s, n) not in was]
-    gone = [f"{n} ({s})" for (s, n) in was if (s, n) not in now]
+    try:   # why a piece left (2026-11-13, user: "Why does the checklist say this then?" of two pieces worn since): worn now, or what replaces it
+        worn = {(it.get("name") or "").lower() for it in json.loads((d / "armory" / "equipment.json").read_text(encoding="utf-8"))
+                .get("equipped_items") or []}
+    except (OSError, ValueError):
+        worn = set()
+    first = {}
+    for (s, n), L in sorted(now.items(), key=lambda kv: kv[1]):
+        if (s, n) not in was:
+            first.setdefault(s, (n, L))
+    why = lambda s, n: ("worn now" if n.lower() in worn else f"{first[s][0]} at level {first[s][1]} replaces it" if s in first
+                        else "dropped: nothing in its place")
+    gone = [f"{n} ({s}: {why(s, n)})" for (s, n) in was if (s, n) not in now]
     moved = [f"{n} ({s}) level {was[(s, n)]} to {L}" for (s, n), L in now.items() if (s, n) in was and was[(s, n)] != L]
     CTX["changes"] = {"time": old["time"], "level": old["level"], "gold_then": old.get("gold"), "new": new, "gone": gone, "moved": moved}
     o = [f"## Since your last refresh ({old['time']}, level {old['level']})", ""]
@@ -2238,7 +2249,7 @@ def change_lines(d, events, lv):
         o += [f"- Gold: {AH.money(old['gold'])} then, {AH.money(GOLD)} now."]
     o += [f"- New in the plan: {', '.join(new)}." if new else "- Nothing new in the plan."]
     if gone:
-        o += [f"- Left the plan (worn, replaced by a better choice, or no longer listed): {', '.join(gone)}."]
+        o += [f"- Left the plan: {', '.join(gone)}."]
     if moved:
         o += [f"- Moved: {', '.join(moved)}."]
     return o + [""]
