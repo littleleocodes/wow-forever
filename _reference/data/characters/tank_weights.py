@@ -69,7 +69,8 @@ def main():
     import item_pool as IP
     db = {it["id"]: it for it in IP.sim_db()["items"]}
     gear = {}
-    for x in json.load(open(R.sim_path(entry["gear"]), encoding="utf-8"))["items"]:
+    gp = pathlib.Path(R.sim_path(entry["gear"]))   # a project set, or one of the simulator's own (warrior and bear tanks, 2026-11-13)
+    for x in json.load(open(gp if gp.is_absolute() else pathlib.Path(repo) / entry["gear"], encoding="utf-8"))["items"]:
         for k, v in IP.lab_stats(db.get(x.get("id")) or {}, {}).items():
             gear[k] = gear.get(k, 0) + v
     hp = a.hp_base + 10 * (gear.get("stamina", 0) + a.sta_base - 20) + 20

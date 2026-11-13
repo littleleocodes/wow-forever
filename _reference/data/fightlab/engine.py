@@ -231,6 +231,11 @@ class Player:
     ranged_ap: float = 0.0
     melee_crit: float = 0.0
     hit_bonus: float = 0.0      # physical hit from gear/talents (fraction)
+    spell_hit: float = 0.0      # spell hit from gear (fraction; tables.apply_gear_ratings, 2026-11-13)
+    expertise: float = 0.0      # mob dodge and parry taken off (fraction)
+    weapon_skill: float = 0.0   # weapon skill points above the mob's defense
+    mob_miss: float = 0.0       # extra chance the mob misses you (defense)
+    crit_taken_red: float = 0.0  # crits taken: less chance (defense)
     mh: object = None           # Weapon
     oh: object = None
     ranged: object = None
@@ -700,7 +705,7 @@ class Fight:
         frozen = m.frozen(self.t) or charge
         if frozen:
             self.frozen_casts += 1
-        hit = 1.0 - spell_miss(m.level - p.level) + self.mod.hit_bonus(spell)
+        hit = 1.0 - spell_miss(m.level - p.level) + self.mod.hit_bonus(spell) + p.spell_hit
         if spell.name not in NO_MISS and self.rng.random() > min(SPELL_HIT_CAP, hit):
             self.note(f"{spell.name} MISS")
             self.mod.on_miss(self, spell)
@@ -751,7 +756,7 @@ class Fight:
         for i, om in enumerate(others):
             self.m = om
             try:
-                if self.rng.random() > min(SPELL_HIT_CAP, 1.0 - spell_miss(om.level - p.level) + self.mod.hit_bonus(spell)):
+                if self.rng.random() > min(SPELL_HIT_CAP, 1.0 - spell_miss(om.level - p.level) + self.mod.hit_bonus(spell) + p.spell_hit):
                     self.note(f"{spell.name} MISS (add)")
                     continue
                 frozen = om.frozen(self.t)
@@ -806,18 +811,19 @@ class Fight:
         p = self.p
         r = self.rng.random()
         if spell.kind == "ranged":
-            miss = max(0.0, tables.RANGED_MISS - p.hit_bonus - self.mod.hit_bonus(spell))
+            miss = max(0.0, tables.RANGED_MISS - p.hit_bonus - self.mod.hit_bonus(spell) - p.weapon_skill * tables.SKILL_PER_POINT)
             if r < miss:
                 return "miss"
             r -= miss
-            crit = p.ranged_crit + self.mod.crit_bonus(spell, False)
+            crit = p.ranged_crit + self.mod.crit_bonus(spell, False) + p.weapon_skill * tables.SKILL_CRIT_PER_POINT
             return "crit" if r < crit else "hit"
-        miss = tables.MELEE_MISS + (tables.DW_MISS_PENALTY if (white and p.dual_wield) else 0.0) - p.hit_bonus - self.mod.hit_bonus(spell)
+        miss = (tables.MELEE_MISS + (tables.DW_MISS_PENALTY if (white and p.dual_wield) else 0.0) - p.hit_bonus - self.mod.hit_bonus(spell)
+                - p.weapon_skill * tables.SKILL_PER_POINT)
         miss = max(0.0, miss)
         if r < miss:
             return "miss"
         r -= miss
-        red = self.mod.dodge_parry_reduction()   # Weapon Expertise and the like
+        red = self.mod.dodge_parry_reduction() + p.expertise + p.weapon_skill * tables.SKILL_PER_POINT   # Weapon Expertise and the like, gear
         dodge = max(0.0, tables.MOB_DODGE - red)
         if r < dodge:
             return "dodge"
@@ -830,7 +836,7 @@ class Fight:
             if r < tables.GLANCE_CHANCE:
                 return "glance"
             r -= tables.GLANCE_CHANCE
-        crit = p.melee_crit + self.mod.crit_bonus(spell, False)
+        crit = p.melee_crit + self.mod.crit_bonus(spell, False) + p.weapon_skill * tables.SKILL_CRIT_PER_POINT
         return "crit" if r < crit else "hit"
 
     def weapon_damage(self, weapon, ranged=False):
@@ -963,7 +969,7 @@ class Fight:
             self.casting = None
             self.wanding = False
             interval = spell.channel / max(1, spell.dot_ticks)
-            hit = self.rng.random() <= min(SPELL_HIT_CAP, 1.0 - spell_miss(self.m.level - p.level) + self.mod.hit_bonus(spell)) if spell.dot > 0 or spell.dmg_max > 0 else True
+            hit = self.rng.random() <= min(SPELL_HIT_CAP, 1.0 - spell_miss(self.m.level - p.level) + self.mod.hit_bonus(spell) + p.spell_hit) if spell.dot > 0 or spell.dmg_max > 0 else True
             self.casts[spell.name] = self.casts.get(spell.name, 0) + 1
             self.spell_casts += 1
             if not hit:
@@ -1187,7 +1193,7 @@ class Fight:
         roll = self.rng.random()
         dodge = p.dodge + self.mod.dodge_bonus(self)
         parry = p.parry + self.mod.parry_bonus(self)
-        if roll > MOB_HIT_CHANCE - dodge - parry:
+        if roll > MOB_HIT_CHANCE - p.mob_miss - dodge - parry:
             self.note("mob misses")
             if roll > 1.0 - dodge:
                 self.mod.on_dodge(self)
@@ -1199,12 +1205,12 @@ class Fight:
         blocked = False
         if p.block > 0:
             block = p.block + self.mod.block_bonus(self)
-            blocked = roll > MOB_HIT_CHANCE - dodge - parry - block
+            blocked = roll > MOB_HIT_CHANCE - p.mob_miss - dodge - parry - block
         pre_armor = m.dmg * self.rng.uniform(1 - MOB_DMG_SPREAD, 1 + MOB_DMG_SPREAD)
         if m.dmg_reduction > 0 and self.t < m.dmg_reduction_until:
             pre_armor = max(0.0, pre_armor - m.dmg_reduction)
         dmg = pre_armor * (1.0 - armor_mitigation(p.armor + self.mod.armor_bonus(), m.level))
-        crit_taken = self.rng.random() < MOB_CRIT_CHANCE
+        crit_taken = self.rng.random() < MOB_CRIT_CHANCE - p.crit_taken_red
         if blocked:
             crit_taken = False
             full = dmg
@@ -1618,6 +1624,8 @@ class Session:
     def run(self):
         mod = self.mod
         p = mod.make_player(self.level)
+        if tables.GEAR_BONUS:   # gear ratings (2026-11-13): nothing to add without a bonus, so plain runs are unchanged
+            tables.apply_gear_ratings(p, mod)
         t = 0.0
         stats = {"kills": 0, "deaths": 0, "pet_deaths": 0, "fight_time": [], "downtime": 0.0, "drink_time": 0.0, "eat_time": 0.0,
                  "heal_time": 0.0, "mana_spent": [], "damage": {}, "pet_sources": set(), "healing": {}, "casts": {}, "crits": {}, "frozen_casts": 0,
