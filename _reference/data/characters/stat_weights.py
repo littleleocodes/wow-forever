@@ -68,6 +68,9 @@ def main():
     ap.add_argument("--spec", required=True)
     ap.add_argument("--fights", type=int, default=1500)
     ap.add_argument("--jobs", type=int, default=8)
+    ap.add_argument("--base", choices=("standard", "best"), default="standard",
+                    help="with --full: measure on top of the lab's standard gear, or of each level's best Forever set (forever_base.py, "
+                         "weights/forever-base.json; 2026-11-13, the add-on's second gear point) -> weights/leveling-best/")
     ap.add_argument("--full", action="store_true", help="every stat of the class at levels 10-60 -> weights/leveling/<class>-<build id>.json "
                                                          "(2026-11-13, the gear add-on); without it the planner's older set and file")
     a = ap.parse_args()
@@ -81,12 +84,19 @@ def main():
     else:
         steps = dict(STEPS) if a.cls in CASTER else {k: v for k, v in STEPS.items() if k != "wand_dps"}
         levels = LEVELS
+    base = {L: {} for L in levels}
+    if a.base == "best":
+        fb = json.loads((HERE / "weights" / "forever-base.json").read_text(encoding="utf-8"))["builds"][f"{a.cls}-{b['id']}"]
+        base = {L: dict(fb[str(L)]["best"]["bonus"]) for L in levels}
     jobs, keys = [], []
     for L in levels:
         alloc = FR.allocation_at(build, L)
         for st in [None] + list(steps):
             for seed in (3, 4):
-                jobs.append((a.cls, alloc, L, rot, a.fights, seed, {} if st is None else {st: steps[st]}))
+                bonus = dict(base[L])
+                if st is not None:
+                    bonus[st] = bonus.get(st, 0.0) + steps[st]
+                jobs.append((a.cls, alloc, L, rot, a.fights, seed, bonus))
                 keys.append((L, st, seed))
     with multiprocessing.Pool(a.jobs, initializer=FT._init, initargs=("greens",)) as pool:
         res = pool.map(job, jobs, chunksize=1)
@@ -97,6 +107,9 @@ def main():
         out["note"] = ("Negative steps (hit_rating, expertise_rating): the value per point while under the cap, measured as a step down. "
                        "Ratings in rating points (the same at every level). A fight-lab model of the beta, not a measurement.")
         out["provisional_order"] = bool(prov)
+        out["base"] = a.base
+        if a.base == "best":
+            out["base_bonus"] = {str(L): base[L] for L in levels}
     for L in levels:
         base = (t[(L, None, 3)] + t[(L, None, 4)]) / 2
         row = {"time_per_kill": round(base, 3), "weights": {}}
@@ -105,7 +118,8 @@ def main():
             row["weights"][st] = round(d / step, 5)
         out["levels"][str(L)] = row
         print(f"  {L}: {base:.2f} s per kill; " + ", ".join(f"{k} {v:+.4f}" for k, v in row["weights"].items()), flush=True)
-    path = HERE / "weights" / "leveling" / f"{a.cls}-{b['id']}.json" if a.full else HERE / "weights" / f"{a.cls}-{rot}.json"
+    folder = "leveling" if a.base == "standard" else "leveling-best"
+    path = HERE / "weights" / folder / f"{a.cls}-{b['id']}.json" if a.full else HERE / "weights" / f"{a.cls}-{rot}.json"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
     print(f"wrote {path}")

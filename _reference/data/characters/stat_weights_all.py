@@ -39,17 +39,18 @@ def main():
     ap.add_argument("--fights", type=int, default=3000)
     ap.add_argument("--jobs", type=int, default=10)
     ap.add_argument("--fresh", action="store_true")
+    ap.add_argument("--base", choices=("standard", "best"), default="standard")
     a = ap.parse_args()
     todo = picks(a.classes)
     print(f"{len(todo)} leveling picks", flush=True)
     for i, (cls, spec, bid) in enumerate(todo, 1):
-        f = HERE / "weights" / "leveling" / f"{cls}-{bid}.json"
+        f = HERE / "weights" / ("leveling" if a.base == "standard" else "leveling-best") / f"{cls}-{bid}.json"
         want = {k: SW.FULL_STEPS[k] for k in SW.CLASS_STATS[cls]}
         if f.exists() and not a.fresh and json.loads(f.read_text(encoding="utf-8")).get("steps") == want:
             print(f"[{i}/{len(todo)}] {cls} {spec}: done ({f.name})", flush=True)
             continue
         t = time.time()
-        r = subprocess.run([sys.executable, "-u", str(HERE / "stat_weights.py"), cls, "--spec", spec, "--full", "--fights", str(a.fights),
+        r = subprocess.run([sys.executable, "-u", str(HERE / "stat_weights.py"), cls, "--spec", spec, "--full", "--base", a.base, "--fights", str(a.fights),
                             "--jobs", str(a.jobs)])
         print(f"[{i}/{len(todo)}] {cls} {spec} ({bid}): rc={r.returncode}, {(time.time() - t) / 60:.1f} min", flush=True)
 

@@ -63,10 +63,28 @@ LAB_TO_W = {"hit": "hit_rating", "crit": "crit_rating", "haste": "haste_rating",
 
 
 # ------------------------------------------------------------------ the pool
+_FULL = {}
+
+
+def full_db():
+    """The simulator's item database plus every item the client's tables have that it lacks (2026-11-13: the simulator's starts at item
+    level 40, so leveling below 40 had almost no Forever items: forever_items.py builds them by the simulator's own rules), and the
+    client's random suffixes the simulator's database leaves out. Client-only items carry no sources (forever_items.py)."""
+    if not _FULL:
+        import forever_items as FI
+        db = IP.sim_db()
+        have = {it["id"] for it in db["items"]}
+        sufs = {x["id"]: x for x in db.get("randomSuffixes") or []}
+        for x in FI.suffix_list():
+            sufs.setdefault(x["id"], x)
+        _FULL.update(db, items=db["items"] + [x for x in FI.items() if x["id"] not in have], randomSuffixes=list(sufs.values()))
+    return _FULL
+
+
 def item_pool(cls, level, school_share, faction="alliance"):
     """Item versions a class can wear at `level` from items with a required level from level-6 to level: {"id", "name", "slot", "hand",
     "wtype", "stats" (raw by stat id), "lab" (item_pool.lab_stats keys), "dps", "ranged"}."""
-    db = IP.sim_db()
+    db = full_db()
     sufs = {x["id"]: x for x in db.get("randomSuffixes") or []}
     light, heavy, weapons, ranged = USE[cls]
     armor_ok = light | (heavy if level >= 40 else set())
@@ -80,7 +98,7 @@ def item_pool(cls, level, school_share, faction="alliance"):
         if it.get("factionRestriction") and it["factionRestriction"] != IP.FACTION_ID[faction]:
             continue
         srcs = {list(s)[0] for s in it.get("sources") or []}
-        if srcs & {"pvp", "rep"} or any("drop" in s and (s["drop"].get("zoneId") in IP.RAIDS) for s in it.get("sources") or []):
+        if it.get("pvp") or it.get("rep") or srcs & {"pvp", "rep"} or any("drop" in s and (s["drop"].get("zoneId") in IP.RAIDS) for s in it.get("sources") or []):
             continue
         t = it.get("type")
         if t in SLOT_OF:
