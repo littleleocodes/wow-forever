@@ -16,10 +16,52 @@
  "in_progress": [
   {
    "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/98223?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Old Habits",
+   "id": 98223
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/95646?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Horrors in the Highland",
+   "id": 95646
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/98815?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Highland Hides",
+   "id": 98815
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/98310?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Gleaning Our Future",
+   "id": 98310
+  },
+  {
+   "key": {
     "href": "https://us.api.blizzard.com/data/wow/quest/101?namespace=static-1.60.1_70399-forever-us"
    },
    "name": "The Totem of Infliction",
    "id": 101
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/472?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Fall of Dun Modr",
+   "id": 472
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/292?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "The Eye of Paleth",
+   "id": 292
   },
   {
    "key": {
@@ -30,13 +72,6 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/98246?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "Trying Times",
-   "id": 98246
-  },
-  {
-   "key": {
     "href": "https://us.api.blizzard.com/data/wow/quest/173?namespace=static-1.60.1_70399-forever-us"
    },
    "name": "Worgen in the Woods",
@@ -44,17 +79,24 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/98245?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "Razormaw Needling",
-   "id": 98245
-  },
-  {
-   "key": {
     "href": "https://us.api.blizzard.com/data/wow/quest/729?namespace=static-1.60.1_70399-forever-us"
    },
    "name": "The Absent Minded Prospector",
    "id": 729
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/98297?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Stopping the Cycle",
+   "id": 98297
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/98072?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Crocs of the Sky",
+   "id": 98072
   },
   {
    "key": {
@@ -72,10 +114,31 @@
   },
   {
    "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/474?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Defeat Nek'rosh",
+   "id": 474
+  },
+  {
+   "key": {
     "href": "https://us.api.blizzard.com/data/wow/quest/335?namespace=static-1.60.1_70399-forever-us"
    },
    "name": "A Noble Brew",
    "id": 335
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/98208?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Bloom of the Heavens",
+   "id": 98208
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/95647?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Lost in the Thicket Things",
+   "id": 95647
   },
   {
    "key": {
@@ -86,6 +149,13 @@
   },
   {
    "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/94240?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Craftsman's Writ: Herbalist's Gloves",
+   "id": 94240
+  },
+  {
+   "key": {
     "href": "https://us.api.blizzard.com/data/wow/quest/965?namespace=static-1.60.1_70399-forever-us"
    },
    "name": "The Tower of Althalaxx",
@@ -93,17 +163,10 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/470?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/98293?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Digging Through the Ooze",
-   "id": 470
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/277?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "Fire Taboo",
-   "id": 277
+   "name": "Forced Disarmament",
+   "id": 98293
   }
  ],
  "completed": {
