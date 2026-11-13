@@ -22,7 +22,8 @@ sys.path.insert(0, str(HERE))
 import heal_gear as HG  # noqa: E402
 
 RECORD = HERE / "heal-values.json"
-HASTE_DELTA = 0.03      # 30 haste rating
+HASTE_DELTA = 0.20      # 200 haste rating: the lab moves in 0.1 s steps (tables.DT), so +3% haste changed no cast's end tick and read
+                        # exactly 0 on every seed (2026-11-13); +20% is the average value over a big step
 RATING = {"crit_gear": 14.0, "haste_gear": 10.0}   # rating per 1% (forever-stats.md: the same at every level)
 
 
@@ -43,14 +44,52 @@ def clean(w):
     return out
 
 
+def haste_only(a, B, rec):
+    out = json.loads(RECORD.read_text(encoding="utf-8"))
+    seeds = list(range(HG.WEIGHT_SEED0, HG.WEIGHT_SEED0 + B["weight_seeds"]))
+    for key, r in rec["specs"].items():
+        if a.classes and r["class"] not in a.classes:
+            continue
+        bid, alloc, _ = HG.raid_pick(r["class"], r["spec"])
+        gear, _ = lab_stats(r["sets"]["bis"]["gear"])
+        row = out["specs"][key]
+        keep = dict(HG.DELTA)
+        for gcd in (False, True):
+            os.environ["WOW_HL_HASTE_GCD"] = "1" if gcd else "0"
+            lab = HG.Lab(r["class"], alloc, a.jobs)
+            HG.DELTA.clear()
+            HG.DELTA.update(healing=keep["healing"], haste_gear=HASTE_DELTA)
+            try:
+                w, _, _ = HG.measure_weights(lab, gear, seeds, B["weight_steps"], B["boot"])
+            finally:
+                HG.DELTA.clear()
+                HG.DELTA.update(keep)
+                lab.close()
+            hr = clean(w)["haste_rating"]
+            if gcd:
+                row["haste_if_gcd_hasted"] = hr
+            else:
+                row["values"]["haste_rating"] = hr
+        os.environ.pop("WOW_HL_HASTE_GCD", None)
+        print(f"{r['class']:8s} {r['spec']:12s}: haste {row['values']['haste_rating']['healing_eq']:.3f}±{row['values']['haste_rating']['healing_eq_se']:.3f}, "
+              f"with a hasted GCD {row['haste_if_gcd_hasted']['healing_eq']:.3f}", flush=True)
+    out["deltas"]["haste_gear"] = HASTE_DELTA
+    out["haste_date"] = datetime.date.today().isoformat()
+    if not a.smoke:
+        RECORD.write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8", newline="\n")
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("classes", nargs="*")
     ap.add_argument("--jobs", type=int, default=10)
     ap.add_argument("--smoke", action="store_true")
+    ap.add_argument("--haste-only", action="store_true", help="measure haste alone (both global-cooldown readings) into the record's specs")
     a = ap.parse_args()
     B = dict(weight_seeds=40, weight_steps=4, boot=50) if a.smoke else dict(weight_seeds=800, weight_steps=12, boot=400)
     rec = json.loads(HG.RECORD.read_text(encoding="utf-8"))
+    if a.haste_only:
+        return haste_only(a, B, rec)
     out = {"date": datetime.date.today().isoformat(), "budgets": B, "deltas": dict(HG.DELTA, haste_gear=HASTE_DELTA),
            "unit": "healing power per point (crit and haste: per rating point)", "specs": {}}
     seeds = list(range(HG.WEIGHT_SEED0, HG.WEIGHT_SEED0 + B["weight_seeds"]))

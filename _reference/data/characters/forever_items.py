@@ -282,13 +282,86 @@ def suffix_list():
     return out
 
 
-def items(max_ilvl=None):
+CLASSIC = pathlib.Path(__file__).resolve().parents[1] / "raw" / "2026-09-26-cmangos-classic-db-z2815"
+
+
+def classic_rows():
+    """Classic 1.12's armor and weapons (cmangos item_stats.csv) and their on-equip spell power (item_spell_power.csv: aura 13 damage,
+    135 healing)."""
+    sp = {}
+    with open(CLASSIC / "item_spell_power.csv", encoding="utf-8", newline="") as f:
+        for r in csv.DictReader(f):
+            sp[int(r["spell"])] = (int(r["aura"]), int(r["value"]), int(r["school_mask"]))
+    with open(CLASSIC / "item_stats.csv", encoding="utf-8", newline="") as f:
+        rows = list(csv.DictReader(f))
+    return rows, sp
+
+
+def classic_item(r, sp):
+    """An item the client's tables lack (2026-11-13: about a third of the game's items, among them most random-suffix leveling
+    greens: Elder's Sash, Durable Pants, Geomancer's Bracers): Classic's item level, required level, quality, slot and class, Forever's
+    rules for the rest (armor and weapon damage from the item-level tables, random suffixes from the client's bonus trees, which list
+    these items); fixed stat lines and on-equip spell power stay Classic's ("classic_stats": Forever retuned some, e.g. Silk Headband)."""
+    T = tables()
+    iid = int(r["entry"])
+    cls_id, sub, inv, q, ilvl = int(r["class"]), int(r["subclass"]), int(r["InventoryType"]), int(r["Quality"]), int(r["ItemLevel"])
+    if q not in (2, 3, 4) or cls_id not in (CLASS_WEAPON, CLASS_ARMOR) or inv not in ITEM_TYPE or ilvl not in T["rpp"]:
+        return None
+    stats = {}
+    for i in range(1, 11):
+        t, v = int(r[f"stat_type{i}"]), int(r[f"stat_value{i}"])
+        if t and v:
+            add(stats, t, v)
+    for i in range(1, 6):
+        sid = int(r.get(f"spellid_{i}") or 0)
+        if sid in sp:
+            aura, v, mask = sp[sid]
+            if aura == 135:
+                add(stats, 41, v)
+            elif aura == 13:
+                school = {2: 84, 4: 85, 8: 86, 16: 87, 32: 88, 64: 89}.get(mask)
+                if school and mask != 126:
+                    add(stats, school, v)
+                else:
+                    add(stats, 42, v)
+    x = {"id": iid, "name": r["name"], "quality": q, "reqLvl": int(r["RequiredLevel"]), "type": ITEM_TYPE[inv], "classic_stats": True}
+    fake = {"InventoryType": str(inv), "OverallQualityID": str(q), "ItemLevel": str(ilvl), "Display_lang": r["name"], "Flags_0": "0",
+            "Flags_1": "0", "Flags_4": "0", "QualityModifier": "0", "ItemDelay": r["delay"] or "0", "DmgVariance": "0",
+            "AllowableClass": r["AllowableClass"], "MinFactionID": "0", "RequiredPVPRank": "0", "RequiredLevel": r["RequiredLevel"],
+            **{f"StatModifier_bonusStat_{i}": "-1" for i in range(10)}, **{f"StatPercentEditor_{i}": "0" for i in range(10)}}
+    T["sparse"][iid] = fake
+    T["item"].setdefault(iid, {"ClassID": str(cls_id), "SubclassID": str(sub)})
+    try:
+        b = build_item(iid)
+    finally:
+        del T["sparse"][iid]
+    if b is None:
+        return None
+    so = b["scalingOptions"]["0"]
+    for k, v in stats.items():
+        so["stats"][str(k)] = so["stats"].get(str(k), 0) + v
+    if cls_id == CLASS_WEAPON and r["dmg_max1"] not in ("", "0"):   # Classic's damage range (the tables' variance is unknown here)
+        so["weaponDamageMin"], so["weaponDamageMax"] = float(r["dmg_min1"]), float(r["dmg_max1"])
+    b.update(x)
+    return b
+
+
+def items(max_ilvl=None, classic=True):
     T = tables()
     out = []
     for iid in sorted(T["sparse"]):
         x = build_item(iid)
         if x and (max_ilvl is None or x["scalingOptions"]["0"]["ilvl"] <= max_ilvl):
             out.append(x)
+    if classic:
+        have = {x["id"] for x in out} | set(T["sparse"])
+        rows, sp = classic_rows()
+        for r in rows:
+            if int(r["entry"]) in have:
+                continue
+            x = classic_item(r, sp)
+            if x and (max_ilvl is None or x["scalingOptions"]["0"]["ilvl"] <= max_ilvl):
+                out.append(x)
     return out
 
 
@@ -297,7 +370,7 @@ def check():
     sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
     import item_pool as IP
     db = IP.sim_db()
-    mine = {x["id"]: x for x in items()}
+    mine = {x["id"]: x for x in items(classic=False)}
     n = same = 0
     diffs = []
     for it in db["items"]:

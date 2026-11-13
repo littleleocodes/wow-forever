@@ -148,6 +148,21 @@ def school_shares(cls, alloc, level, rot):
     return level_info(cls, alloc, level, rot)[0]
 
 
+def totals_with(cls, alloc, level, rot, bonus):
+    """The lab player's Spell Power, attack power and ranged attack power totals with a GEAR_BONUS on top of the standard gear."""
+    import run as FR
+    import tables as TB
+    TB.GEAR_BONUS.clear()
+    TB.GEAR_BONUS.update(bonus)
+    try:
+        mod = FR.make_module(cls, alloc, level, rot)
+        p = mod.make_player(level)
+        return {"spell_power_total": round(p.spell_power, 1), "attack_power_total": round(p.attack_power, 1),
+                "ranged_attack_power_total": round(getattr(p, "ranged_ap", 0.0), 1)}
+    finally:
+        TB.GEAR_BONUS.clear()
+
+
 def leveling(cls):
     import level_guides as LG
     import run as FR
@@ -164,6 +179,8 @@ def leveling(cls):
             continue
         w = json.loads(f.read_text(encoding="utf-8"))
         final = w.get("steps") == {k: SW.FULL_STEPS[k] for k in SW.CLASS_STATS[cls]}
+        fb = HERE / "weights" / "leveling-best" / f.name   # the second gear point: each level's best Forever set (forever_base.py)
+        wb = json.loads(fb.read_text(encoding="utf-8")) if fb.exists() else None
         _, order, _, rot = LG.pick(cls, spec)
         lv = {}
         for L, row in sorted(w["levels"].items(), key=lambda kv: int(kv[0])):
@@ -178,9 +195,18 @@ def leveling(cls):
                 for sch, x in share.items():
                     v[f"{sch}_damage"] = v["spell_power"] * x
             v["hit_rating_above_cap"] = 0.0   # not measured: hit past the cap (a dual-wielder's white swings) counts 0 for now
+            gear = [dict(label="standard", **totals, seconds_per_kill=row["time_per_kill"], values=norm(v, "leveling", cls))]
+            if wb and L in wb["levels"]:
+                rb = wb["levels"][L]
+                vb = {k: max(0.0, x) for k, x in rb["weights"].items()}
+                if vb.get("spell_power"):
+                    for sch, x in share.items():
+                        vb[f"{sch}_damage"] = vb["spell_power"] * x
+                vb["hit_rating_above_cap"] = 0.0
+                gear.append(dict(label="best Forever set", **totals_with(cls, alloc, int(L), rot, wb["base_bonus"][L]),
+                                 seconds_per_kill=rb["time_per_kill"], values=norm(vb, "leveling", cls)))
             lv[L] = {"tree_points": tree_points(cls, alloc), "talents": {n: k for n, k in sorted(alloc.items()) if k}, "unit": unit,
-                     "dual_wield": dual, "school_share": share,
-                     "gear": [dict(label="standard", **totals, seconds_per_kill=row["time_per_kill"], values=norm(v, "leveling", cls))]}
+                     "dual_wield": dual, "school_share": share, "gear": gear}
         out.append({"spec": spec, "build": b["id"], "rotation": rot,
                     "source": f"fight lab {w['date']}, {w['fights']} fights x 2 seeds" + ("" if final else "; FIRST PASS (small steps, noisy): being re-measured"),
                     "final": final, "levels": lv})
