@@ -102,6 +102,10 @@ def norm(v, mode, cls=None):
     return {k: r(x) for k, x in v.items()}
 
 
+def talents_of(b):
+    return {n: k for lst in (b or {}).get("allocation", {}).values() for n, k in lst if k} if b else None
+
+
 def builds_of(cls):
     return {b["id"]: b for b in json.loads((ROOT / cls / "research" / "talents" / "forever" / "proposed-builds.json").read_text(encoding="utf-8"))["builds"]}
 
@@ -174,11 +178,22 @@ def leveling(cls):
                 for sch, x in share.items():
                     v[f"{sch}_damage"] = v["spell_power"] * x
             v["hit_rating_above_cap"] = 0.0   # not measured: hit past the cap (a dual-wielder's white swings) counts 0 for now
-            lv[L] = {"tree_points": tree_points(cls, alloc), "unit": unit, "dual_wield": dual, "school_share": share,
+            lv[L] = {"tree_points": tree_points(cls, alloc), "talents": {n: k for n, k in sorted(alloc.items()) if k}, "unit": unit,
+                     "dual_wield": dual, "school_share": share,
                      "gear": [dict(label="standard", **totals, seconds_per_kill=row["time_per_kill"], values=norm(v, "leveling", cls))]}
         out.append({"spec": spec, "build": b["id"], "rotation": rot,
                     "source": f"fight lab {w['date']}, {w['fights']} fights x 2 seeds" + ("" if final else "; FIRST PASS (small steps, noisy): being re-measured"),
                     "final": final, "levels": lv})
+    # the tie-break for the add-on's spec match (2026-11-13, Addons: three mage builds share 0/0/21 at 30): the class's fastest leveling
+    # build, by the mean seconds per kill at levels 20-60 in the lab's standard gear
+    def mean_spk(e):
+        xs = [lv["gear"][0]["seconds_per_kill"] for L, lv in e["levels"].items() if 20 <= int(L) <= 60]
+        return sum(xs) / len(xs) if xs else 1e9
+    have = [e for e in out if "levels" in e]
+    if have:
+        best = min(have, key=mean_spk)
+        for e in have:
+            e["default"] = e is best
     return out
 
 
@@ -193,8 +208,8 @@ def raid_row(cls, spec, slug, bid, B, vals, source):
     dual = vals.get("oh_weapon_dps", 0.0) > 0
     v = {k: max(0.0, x) / base for k, x in vals.items()}
     v["hit_rating_above_cap"] = v.get("hit_rating", 0.0) if dual else 0.0
-    return {"spec": spec, "slug": slug, "build": bid, "tree_points": tree_points(cls, b["allocation"]) if b else None, "unit": unit,
-            "dual_wield": dual, "source": source, "values": norm(v, "raid", cls)}
+    return {"spec": spec, "slug": slug, "build": bid, "tree_points": tree_points(cls, b["allocation"]) if b else None,
+            "talents": talents_of(b), "unit": unit, "dual_wield": dual, "source": source, "values": norm(v, "raid", cls)}
 
 
 def sim_keys(w):
@@ -236,7 +251,7 @@ def heal(cls, hv):
         v = {k: max(0.0, x["healing_eq"]) for k, x in row["values"].items()}
         b = B.get(row["build"])
         out.append({"spec": row["spec"], "build": row["build"], "tree_points": tree_points(cls, b["allocation"]) if b else None,
-                    "unit": "healing", "source": f"healer lab, heallab/heal-values.json ({hv['date']}): capacity per point in {row['gear']}",
+                    "talents": talents_of(b), "unit": "healing", "source": f"healer lab, heallab/heal-values.json ({hv['date']}): capacity per point in {row['gear']}",
                     "values": norm(v, "heal", cls),
                     "errors": {k: x["healing_eq_se"] for k, x in row["values"].items()},
                     "errors_note": "the bootstrap standard error of each value, same unit; for Shift details at most, not the main line",
@@ -252,7 +267,7 @@ def tank(cls):
     sp = w["share_per_point"]
     b = builds_of(cls).get(w["build"])
     return {"spec": "Protection" if cls != "druid" else "Feral Combat (bear)", "build": w["build"],
-            "tree_points": tree_points(cls, b["allocation"]) if b else None, "unit": "stamina",
+            "tree_points": tree_points(cls, b["allocation"]) if b else None, "talents": talents_of(b), "unit": "stamina",
             "source": f"raid simulator, {w['build']} in {w['entry']}, {w['date']}: tank value per point (threat, damage taken, effective health)",
             "values": norm({TANK_STAT.get(k, k): x / sp["stamina"] for k, x in sp.items()}, "tank", cls)}
 
