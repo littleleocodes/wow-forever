@@ -1,0 +1,384 @@
+{
+ "character": "arcea",
+ "class": "mage",
+ "spec": "Hybrid Arcane/Frost",
+ "metric": "kill_time",
+ "made": "2026-11-13",
+ "unit": "spell_power",
+ "school_share": {
+  "frost": 0.85,
+  "arcane": 0.15
+ },
+ "ratings_per_percent": {
+  "hit_rating": 10,
+  "crit_rating": 14,
+  "haste_rating": 10,
+  "expertise_rating": 10,
+  "dodge_rating": 12,
+  "parry_rating": 15,
+  "block_rating": 5,
+  "defense_rating": 1
+ },
+ "caps": {
+  "spell_hit": {
+   "unit": "percent",
+   "vs_level_diff": {
+    "-3": 1,
+    "-2": 2,
+    "-1": 3,
+    "0": 4,
+    "1": 5,
+    "2": 6,
+    "3": 17
+   },
+   "note": "Spell miss chance by the target's level minus yours (bosses count +3; the simulator's sim/core/target.go and the fight lab's tables.spell_miss). Forever has no 1% minimum miss, so hit is worth its value up to the whole miss chance and nothing above it. Count hit from talents and buffs too (the character's current spell hit). While leveling use the same-level row (4%); at 60 in raids the boss row (17%)."
+  },
+  "melee_hit": {
+   "unit": "percent",
+   "vs_level_diff": {
+    "0": 5,
+    "1": 5.5,
+    "2": 6,
+    "3": 8
+   },
+   "note": "Special (yellow) attacks with full weapon skill. A dual-wielder's white swings miss 19 points more and are not capped by gear in practice. Same level 5%, bosses 8% (no hit suppression in the simulator)."
+  },
+  "expertise": {
+   "unit": "percent",
+   "boss_dodge": 6.5,
+   "boss_parry": 14,
+   "note": "Expertise lowers the target's dodge and parry: worth its value until the boss's dodge (6.5%) is gone; parry only matters when you stand in front (tanks), up to 14% more."
+  },
+  "defense": {
+   "unit": "skill",
+   "crit_immune_at_60": 440,
+   "per_point_percent": 0.04,
+   "note": "A boss (+3) crits a tank 5.6% of the time at 300 defense skill; each point takes 0.04% off (the simulator's MissDodgeParryBlockCritChancePerDefense), so 440 at level 60 makes you crit-immune. Below 60: 5 x your level + 140 against a boss three levels up. Past the cap a point still adds 0.04% miss, dodge, parry and block."
+  },
+  "spell_penetration": {
+   "note": "Worth something only against resistance: mobs of your level have none while leveling (count 0); the raid values below come from the simulator's raid target."
+  }
+ },
+ "leveling": {
+  "source": "fight lab, arcane-frost-open-leveling (barrage-frost-leveling), 2026-11-09",
+  "unit": "spell_power",
+  "levels": {
+   "20": {
+    "seconds_per_kill": 28.755,
+    "unit_seconds": 0.165,
+    "values": {
+     "intellect": 0.1222,
+     "spirit": 0.2532,
+     "stamina": 0.0,
+     "spell_power": 1.0,
+     "armor": 0.003,
+     "mp5": 0.5877,
+     "wand_dps": 0.448,
+     "frost_damage": 0.85,
+     "arcane_damage": 0.15,
+     "fire_damage": 0.0,
+     "shadow_damage": 0.0,
+     "nature_damage": 0.0,
+     "holy_damage": 0.0,
+     "spell_damage": 1.0,
+     "healing": 0.0
+    }
+   },
+   "23": {
+    "seconds_per_kill": 30.624,
+    "unit_seconds": 0.1911,
+    "values": {
+     "intellect": 0.1836,
+     "spirit": 0.2812,
+     "stamina": 0.0084,
+     "spell_power": 1.0,
+     "armor": 0.0023,
+     "mp5": 0.7807,
+     "wand_dps": 0.2811,
+     "frost_damage": 0.85,
+     "arcane_damage": 0.15,
+     "fire_damage": 0.0,
+     "shadow_damage": 0.0,
+     "nature_damage": 0.0,
+     "holy_damage": 0.0,
+     "spell_damage": 1.0,
+     "healing": 0.0
+    }
+   },
+   "26": {
+    "seconds_per_kill": 33.444,
+    "unit_seconds": 0.1499,
+    "values": {
+     "intellect": 0.2629,
+     "spirit": 0.265,
+     "stamina": 0.0176,
+     "spell_power": 1.0,
+     "armor": 0.0054,
+     "mp5": 0.895,
+     "wand_dps": 0.4683,
+     "frost_damage": 0.85,
+     "arcane_damage": 0.15,
+     "fire_damage": 0.0,
+     "shadow_damage": 0.0,
+     "nature_damage": 0.0,
+     "holy_damage": 0.0,
+     "spell_damage": 1.0,
+     "healing": 0.0
+    }
+   },
+   "29": {
+    "seconds_per_kill": 34.146,
+    "unit_seconds": 0.1569,
+    "values": {
+     "intellect": 0.2189,
+     "spirit": 0.2633,
+     "stamina": 0.0126,
+     "spell_power": 1.0,
+     "armor": 0.0057,
+     "mp5": 0.8745,
+     "wand_dps": 0.3835,
+     "frost_damage": 0.85,
+     "arcane_damage": 0.15,
+     "fire_damage": 0.0,
+     "shadow_damage": 0.0,
+     "nature_damage": 0.0,
+     "holy_damage": 0.0,
+     "spell_damage": 1.0,
+     "healing": 0.0
+    }
+   },
+   "32": {
+    "seconds_per_kill": 33.363,
+    "unit_seconds": 0.12,
+    "values": {
+     "intellect": 0.1924,
+     "spirit": 0.2437,
+     "stamina": 0.0154,
+     "spell_power": 1.0,
+     "armor": 0.007,
+     "mp5": 0.8672,
+     "wand_dps": 0.3831,
+     "frost_damage": 0.85,
+     "arcane_damage": 0.15,
+     "fire_damage": 0.0,
+     "shadow_damage": 0.0,
+     "nature_damage": 0.0,
+     "holy_damage": 0.0,
+     "spell_damage": 1.0,
+     "healing": 0.0
+    }
+   },
+   "35": {
+    "seconds_per_kill": 33.978,
+    "unit_seconds": 0.1104,
+    "values": {
+     "intellect": 0.2903,
+     "spirit": 0.2881,
+     "stamina": 0.0252,
+     "spell_power": 1.0,
+     "armor": 0.0069,
+     "mp5": 1.0542,
+     "wand_dps": 0.3954,
+     "frost_damage": 0.85,
+     "arcane_damage": 0.15,
+     "fire_damage": 0.0,
+     "shadow_damage": 0.0,
+     "nature_damage": 0.0,
+     "holy_damage": 0.0,
+     "spell_damage": 1.0,
+     "healing": 0.0
+    }
+   },
+   "40": {
+    "seconds_per_kill": 33.689,
+    "unit_seconds": 0.0848,
+    "values": {
+     "intellect": 0.2619,
+     "spirit": 0.3639,
+     "stamina": 0.0147,
+     "spell_power": 1.0,
+     "armor": 0.0024,
+     "mp5": 1.1012,
+     "wand_dps": 0.4334,
+     "frost_damage": 0.85,
+     "arcane_damage": 0.15,
+     "fire_damage": 0.0,
+     "shadow_damage": 0.0,
+     "nature_damage": 0.0,
+     "holy_damage": 0.0,
+     "spell_damage": 1.0,
+     "healing": 0.0
+    }
+   },
+   "45": {
+    "seconds_per_kill": 29.692,
+    "unit_seconds": 0.062,
+    "values": {
+     "intellect": 0.2366,
+     "spirit": 0.3907,
+     "stamina": 0.0,
+     "spell_power": 1.0,
+     "armor": 0.0077,
+     "mp5": 1.0163,
+     "wand_dps": 0.5473,
+     "frost_damage": 0.85,
+     "arcane_damage": 0.15,
+     "fire_damage": 0.0,
+     "shadow_damage": 0.0,
+     "nature_damage": 0.0,
+     "holy_damage": 0.0,
+     "spell_damage": 1.0,
+     "healing": 0.0
+    }
+   },
+   "50": {
+    "seconds_per_kill": 27.496,
+    "unit_seconds": 0.037,
+    "values": {
+     "intellect": 0.1154,
+     "spirit": 0.4892,
+     "stamina": 0.0535,
+     "spell_power": 1.0,
+     "armor": 0.0097,
+     "mp5": 0.6322,
+     "wand_dps": 0.6049,
+     "frost_damage": 0.85,
+     "arcane_damage": 0.15,
+     "fire_damage": 0.0,
+     "shadow_damage": 0.0,
+     "nature_damage": 0.0,
+     "holy_damage": 0.0,
+     "spell_damage": 1.0,
+     "healing": 0.0
+    }
+   },
+   "55": {
+    "seconds_per_kill": 28.845,
+    "unit_seconds": 0.0318,
+    "values": {
+     "intellect": 0.2152,
+     "spirit": 0.6194,
+     "stamina": 0.0406,
+     "spell_power": 1.0,
+     "armor": 0.0082,
+     "mp5": 0.9774,
+     "wand_dps": 1.028,
+     "frost_damage": 0.85,
+     "arcane_damage": 0.15,
+     "fire_damage": 0.0,
+     "shadow_damage": 0.0,
+     "nature_damage": 0.0,
+     "holy_damage": 0.0,
+     "spell_damage": 1.0,
+     "healing": 0.0
+    }
+   },
+   "60": {
+    "seconds_per_kill": 25.587,
+    "unit_seconds": 0.0141,
+    "values": {
+     "intellect": 0.3749,
+     "spirit": 1.1446,
+     "stamina": 0.0,
+     "spell_power": 1.0,
+     "armor": 0.0,
+     "mp5": 1.5918,
+     "wand_dps": 0.9227,
+     "frost_damage": 0.85,
+     "arcane_damage": 0.15,
+     "fire_damage": 0.0,
+     "shadow_damage": 0.0,
+     "nature_damage": 0.0,
+     "holy_damage": 0.0,
+     "spell_damage": 1.0,
+     "healing": 0.0
+    }
+   }
+  },
+  "not_measured": [
+   "hit_rating",
+   "crit_rating",
+   "haste_rating",
+   "spell_penetration"
+  ]
+ },
+ "raid_60": {
+  "arcane": {
+   "source": "raid simulator (mage-arcane.json: the spec's best build in its phase-1 BiS set, full raid)",
+   "values": {
+    "arcane_damage": 0.8087,
+    "crit_rating": 0.838,
+    "fire_damage": 0.1911,
+    "haste_rating": 1.2537,
+    "hit_rating": 1.8094,
+    "intellect": 0.9555,
+    "spell_power": 1.0,
+    "spell_penetration": 2.4555,
+    "spirit": 0.171,
+    "spell_damage": 1.0
+   }
+  },
+  "fire": {
+   "source": "raid simulator (mage-fire.json: the spec's best build in its phase-1 BiS set, full raid)",
+   "values": {
+    "arcane_damage": 0.0544,
+    "crit_rating": 0.9415,
+    "fire_damage": 0.9458,
+    "haste_rating": 0.8216,
+    "hit_rating": 1.6265,
+    "intellect": 0.469,
+    "spell_power": 1.0,
+    "spell_penetration": 2.0599,
+    "spirit": 0.3001,
+    "spell_damage": 1.0
+   }
+  },
+  "frost": {
+   "source": "raid simulator (mage-frost.json: the spec's best build in its phase-1 BiS set, full raid)",
+   "values": {
+    "arcane_damage": 0.2047,
+    "crit_rating": 0.7294,
+    "fire_damage": 0.004,
+    "frost_damage": 0.7913,
+    "haste_rating": 1.162,
+    "hit_rating": 1.3121,
+    "intellect": 0.1984,
+    "spell_power": 1.0,
+    "spell_penetration": 2.2309,
+    "spirit": 0.0,
+    "spell_damage": 1.0
+   }
+  },
+  "hybrid-arcane-frost": {
+   "source": "raid simulator (mage-hybrid-arcane-frost.json: the spec's best build in its phase-1 BiS set, full raid)",
+   "values": {
+    "arcane_damage": 0.6754,
+    "crit_rating": 0.7815,
+    "fire_damage": 0.0028,
+    "frost_damage": 0.3217,
+    "haste_rating": 1.1095,
+    "hit_rating": 1.4266,
+    "intellect": 0.7014,
+    "spell_power": 1.0,
+    "spell_penetration": 2.3983,
+    "spirit": 0.0101,
+    "spell_damage": 1.0
+   }
+  },
+  "hybrid-fire-frost": {
+   "source": "raid simulator (mage-hybrid-fire-frost.json: the spec's best build in its phase-1 BiS set, full raid)",
+   "values": {
+    "crit_rating": 0.9988,
+    "fire_damage": 1.0,
+    "haste_rating": 1.0583,
+    "hit_rating": 1.3875,
+    "intellect": 0.492,
+    "spell_power": 1.0,
+    "spell_penetration": 0.8098,
+    "spirit": 0.2148,
+    "spell_damage": 1.0
+   }
+  }
+ },
+ "note": "A value is what one point of a stat is worth in the unit stat (1 Spell Power for a caster, 1 Stamina for a tank): by level while leveling (seconds per kill saved, fight lab; interpolate between listed levels) and at 60 in a raid (the simulator). Rating stats are per rating point (10 hit rating = 1%). Leveling crit, hit, haste and penetration from gear are not measured yet for casters (leveling.not_measured): the add-on must show them as unscored, not as 0."
+}
