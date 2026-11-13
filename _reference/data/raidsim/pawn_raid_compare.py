@@ -6,7 +6,7 @@ thinks is best at that level versus what we think is best and then raced and com
 Per damage spec with an ML record (ml/<class>-<spec slug>.json): our set is the spec's phase-1 BiS set (gear.bis.gear: picked by the
 simulator's stat weights for the spec's best build, trinkets and variants raced); Pawn's set comes from the same pool (gear_tiers.pool_of
 "bis") by the same per-slot step (gear_opt.class_picker's greedy), scored with Pawn 2.14.2's Forever weights for the tree with the most
-points (characters/pawn_scales.py: "+N Spell Power" 0, ratings times Classic's factors, no caps), the two trinkets with the
+points (before 2026-11-13 every spec read its class's first tree: pawn_scales.tree_points) (characters/pawn_scales.py: "+N Spell Power" 0, ratings times Classic's factors, no caps), the two trinkets with the
 highest Pawn score, the relic and enchants kept. Both race the spec's best build in a full raid (seeds 1 and 2). Unlike the leveling race,
 the simulator is not where our numbers come from by construction: its own engine plays the real items (procs, set bonuses, caps).
 Record raidsim/pawn-raid-compare.json; characters/pawn_compare.py --write puts it on _reference/pawn-comparison.md.
@@ -60,7 +60,12 @@ def main():
             continue
         builds = {b["id"]: b for b in json.loads((ROOT / cls / "research" / "talents" / "forever" / "proposed-builds.json").read_text(encoding="utf-8"))["builds"]}
         b = builds.get(rec.get("best"))
+        if not b:   # a record whose best build was renamed since (Beast Mastery's beast-mastery-raid): the raid page's pick
+            pg = (json.loads((HERE / "page-stat-weights.json").read_text(encoding="utf-8")).get("specs", {}).get(f.stem, {})
+                  if (HERE / "page-stat-weights.json").exists() else {})
+            b = builds.get(pg.get("build"))
         if not b:
+            print(f"{f.stem}: no build", flush=True)
             continue
         alloc = {n: r for n, r in R.alloc_of(b).items() if r}
         ti, tn = PC.tree_of(cls, alloc)

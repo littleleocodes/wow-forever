@@ -246,6 +246,7 @@ class BaseHealer:
         self.mana_max = T.class_base_mana(self.CLASS, T.LEVEL) + intellect * T.MANA_PER_INT
         self.mana_max *= 1 + self.max_mana_bonus()
         self.crit_base = T.class_spell_crit(self.CLASS, T.LEVEL, intellect) + g["crit_gear"]
+        self.haste_gear = g.get("haste_gear", 0.0)
         self.regen_tick = T.class_mana_regen_tick(self.CLASS, spirit)
         self.regen_casting = min(1.0, sum(v for ch, scope, v in self.effects if ch == "regen") + self.extra_regen_casting())
 
@@ -309,6 +310,8 @@ class BaseHealer:
             if ch == "cast_time" and matches(scope, spell.tags):
                 t -= v
         haste = sum(v for ch, scope, v in self.effects if ch == "haste" and matches(scope, spell.tags))
+        if self.haste_gear:
+            t = t / (1 + self.haste_gear)
         return max(0.5, t / (1 + haste)) * self.cast_hook(spell, sim)
 
     def cast_hook(self, spell, sim):
@@ -645,7 +648,7 @@ class Sim:
                         if ct == 0.0 and spell.cast > 0:
                             self.instant_next = False
                         self.last_cast = self.t
-                        self.gcd_until = self.t + T.GCD
+                        self.gcd_until = self.t + (max(1.0, T.GCD / (1 + h.haste_gear)) if T.HASTE_GCD and h.haste_gear else T.GCD)
                         if spell.cooldown:
                             self.cd[spell.name] = self.t
                         if ct > 0:

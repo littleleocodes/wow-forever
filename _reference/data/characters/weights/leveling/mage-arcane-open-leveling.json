@@ -1,0 +1,218 @@
+{
+ "class": "mage",
+ "spec": "Arcane",
+ "build": "arcane-open-leveling",
+ "rotation": "arcane-leveling",
+ "date": "2026-11-13",
+ "fights": 3000,
+ "seeds": [
+  3,
+  4
+ ],
+ "steps": {
+  "intellect": 90,
+  "spirit": 90,
+  "stamina": 60,
+  "spell_power": 45,
+  "armor": 900,
+  "mp5": 30,
+  "wand_dps": 20,
+  "crit_rating": 84,
+  "hit_rating": -60,
+  "haste_rating": 60,
+  "defense_rating": 60,
+  "dodge_rating": 72
+ },
+ "unit": "seconds per kill saved per point (negative: slower)",
+ "levels": {
+  "10": {
+   "time_per_kill": 26.561,
+   "weights": {
+    "intellect": 0.02607,
+    "spirit": 0.05215,
+    "stamina": 0.0001,
+    "spell_power": 0.17981,
+    "armor": 0.00017,
+    "mp5": 0.16868,
+    "wand_dps": 0.11649,
+    "crit_rating": 0.00721,
+    "hit_rating": 0.02317,
+    "haste_rating": 0.0,
+    "defense_rating": 0.00111,
+    "dodge_rating": 0.00055
+   }
+  },
+  "15": {
+   "time_per_kill": 37.118,
+   "weights": {
+    "intellect": 0.01688,
+    "spirit": 0.0472,
+    "stamina": 0.00287,
+    "spell_power": 0.25049,
+    "armor": 0.00097,
+    "mp5": 0.15102,
+    "wand_dps": 0.00876,
+    "crit_rating": 0.00976,
+    "hit_rating": 0.03194,
+    "haste_rating": 0.0,
+    "defense_rating": 0.00271,
+    "dodge_rating": 0.00119
+   }
+  },
+  "20": {
+   "time_per_kill": 35.199,
+   "weights": {
+    "intellect": 0.05812,
+    "spirit": 0.03501,
+    "stamina": 0.00327,
+    "spell_power": 0.14955,
+    "armor": 0.00077,
+    "mp5": 0.10867,
+    "wand_dps": -0.00019,
+    "crit_rating": 0.00757,
+    "hit_rating": 0.02696,
+    "haste_rating": 0.0,
+    "defense_rating": 0.00325,
+    "dodge_rating": 0.00185
+   }
+  },
+  "25": {
+   "time_per_kill": 30.9,
+   "weights": {
+    "intellect": 0.03324,
+    "spirit": 0.0335,
+    "stamina": 0.00182,
+    "spell_power": 0.09678,
+    "armor": 0.00067,
+    "mp5": 0.08621,
+    "wand_dps": 0.00123,
+    "crit_rating": 0.00657,
+    "hit_rating": 0.03367,
+    "haste_rating": 0.01945,
+    "defense_rating": 0.00227,
+    "dodge_rating": 0.00126
+   }
+  },
+  "30": {
+   "time_per_kill": 32.725,
+   "weights": {
+    "intellect": 0.03642,
+    "spirit": 0.0438,
+    "stamina": 0.00022,
+    "spell_power": 0.09881,
+    "armor": 0.0006,
+    "mp5": 0.07754,
+    "wand_dps": -0.002,
+    "crit_rating": 0.00742,
+    "hit_rating": 0.04032,
+    "haste_rating": -0.00666,
+    "defense_rating": 0.00024,
+    "dodge_rating": 0.00058
+   }
+  },
+  "35": {
+   "time_per_kill": 32.404,
+   "weights": {
+    "intellect": 0.03523,
+    "spirit": 0.03902,
+    "stamina": 0.00343,
+    "spell_power": 0.08216,
+    "armor": 0.00083,
+    "mp5": 0.06918,
+    "wand_dps": 0.0038,
+    "crit_rating": 0.01242,
+    "hit_rating": 0.03807,
+    "haste_rating": -0.00371,
+    "defense_rating": 0.00483,
+    "dodge_rating": 0.00305
+   }
+  },
+  "40": {
+   "time_per_kill": 32.416,
+   "weights": {
+    "intellect": 0.02839,
+    "spirit": 0.0328,
+    "stamina": 0.00273,
+    "spell_power": 0.05741,
+    "armor": 0.00045,
+    "mp5": 0.05642,
+    "wand_dps": -0.00014,
+    "crit_rating": 0.01324,
+    "hit_rating": 0.03982,
+    "haste_rating": -0.00946,
+    "defense_rating": 0.00307,
+    "dodge_rating": 0.0026
+   }
+  },
+  "45": {
+   "time_per_kill": 33.282,
+   "weights": {
+    "intellect": 0.02791,
+    "spirit": 0.02708,
+    "stamina": 0.00382,
+    "spell_power": 0.05674,
+    "armor": 0.00051,
+    "mp5": 0.04841,
+    "wand_dps": 0.0,
+    "crit_rating": 0.01463,
+    "hit_rating": 0.03685,
+    "haste_rating": -0.0067,
+    "defense_rating": 0.00409,
+    "dodge_rating": 0.00328
+   }
+  },
+  "50": {
+   "time_per_kill": 30.773,
+   "weights": {
+    "intellect": 0.01667,
+    "spirit": 0.02077,
+    "stamina": 0.00062,
+    "spell_power": 0.03897,
+    "armor": 0.00033,
+    "mp5": 0.03384,
+    "wand_dps": 1e-05,
+    "crit_rating": 0.01224,
+    "hit_rating": 0.03537,
+    "haste_rating": -0.01604,
+    "defense_rating": 0.0017,
+    "dodge_rating": 0.00116
+   }
+  },
+  "55": {
+   "time_per_kill": 31.857,
+   "weights": {
+    "intellect": 0.01308,
+    "spirit": 0.0176,
+    "stamina": 0.00098,
+    "spell_power": 0.03287,
+    "armor": 0.00038,
+    "mp5": 0.0312,
+    "wand_dps": 0.0,
+    "crit_rating": 0.01268,
+    "hit_rating": 0.03514,
+    "haste_rating": -0.01117,
+    "defense_rating": 0.00241,
+    "dodge_rating": 0.00151
+   }
+  },
+  "60": {
+   "time_per_kill": 27.451,
+   "weights": {
+    "intellect": 0.00862,
+    "spirit": 0.01327,
+    "stamina": 0.00049,
+    "spell_power": 0.02041,
+    "armor": 0.0002,
+    "mp5": 0.02586,
+    "wand_dps": 0.0,
+    "crit_rating": 0.00961,
+    "hit_rating": 0.02955,
+    "haste_rating": -0.02284,
+    "defense_rating": 0.00064,
+    "dodge_rating": -0.00051
+   }
+  }
+ },
+ "note": "Negative steps (hit_rating, expertise_rating): the value per point while under the cap, measured as a step down. Ratings in rating points (the same at every level). A fight-lab model of the beta, not a measurement.",
+ "provisional_order": false
+}

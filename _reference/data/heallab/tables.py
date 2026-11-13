@@ -5,6 +5,7 @@ their ranks, costs, cast times and coefficients come from the beta spellbook (`f
 from the beta tooltips (`scorer/effects/forever/<class>.parsed.json`) plus the mechanics each class module hand-codes.
 """
 import importlib.util
+import os
 import pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent
@@ -44,12 +45,19 @@ HEALER_GEAR = {
     "druid": {"intellect": 230, "spirit": 190, "healing": 370, "mp5": 12, "crit_gear": 0.02},
 }
 GEAR_KEYS = ("intellect", "spirit", "healing", "mp5", "crit_gear")
+# Gear haste (2026-11-13, the gear add-on; user: "make sure all the stats are scored"): "haste_gear" in a HEALER_GEAR dict, a fraction (10
+# haste rating = 1% at every level, _reference/forever-stats.md), makes every cast that much faster (on top of talent haste). Whether it
+# also shortens the global cooldown is open (HASTE_GCD; the simulator says yes for spells, Nature's Grace's own GCD modifier in the client
+# suggests no; forever-stats.md row 7; WOW_HL_HASTE_GCD=1 turns it on, also in spawned workers). Absent or 0: every result bit-identical.
+HASTE_GCD = os.environ.get("WOW_HL_HASTE_GCD") == "1"
 
 
 def use_gear(cls, stats):
     """Replace the class's assumed gear above with a real set's summed item and enchant stats (heallab/heal_gear.py `gear_stats`;
     run.py --gear-json; 2026-10-15). Without a call the defaults above stand, bit-identical."""
     HEALER_GEAR[cls] = {k: stats[k] for k in GEAR_KEYS}
+    if stats.get("haste_gear"):
+        HEALER_GEAR[cls]["haste_gear"] = stats["haste_gear"]
 
 
 def _top_rank_value(cls, spell, pattern, default):
