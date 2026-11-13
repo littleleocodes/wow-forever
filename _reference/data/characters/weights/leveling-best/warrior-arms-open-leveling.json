@@ -1,0 +1,387 @@
+{
+ "class": "warrior",
+ "spec": "Arms",
+ "build": "arms-open-leveling",
+ "rotation": "arms-2h-raid",
+ "date": "2026-11-13",
+ "fights": 3000,
+ "seeds": [
+  3,
+  4
+ ],
+ "steps": {
+  "strength": 90,
+  "agility": 90,
+  "stamina": 60,
+  "attack_power": 180,
+  "armor": 900,
+  "mh_weapon_dps": 10,
+  "crit_rating": 84,
+  "hit_rating": -60,
+  "haste_rating": 60,
+  "expertise_rating": -60,
+  "weapon_skill": 10,
+  "defense_rating": 60,
+  "dodge_rating": 72,
+  "parry_rating": 90,
+  "oh_weapon_dps": 10,
+  "block_rating": 30,
+  "block_value": 60
+ },
+ "unit": "seconds per kill saved per point (negative: slower)",
+ "levels": {
+  "10": {
+   "time_per_kill": 17.749,
+   "weights": {
+    "strength": 0.03585,
+    "agility": 0.01327,
+    "stamina": 0.0,
+    "attack_power": 0.01793,
+    "armor": 0.0,
+    "mh_weapon_dps": 0.23783,
+    "crit_rating": 0.00546,
+    "hit_rating": 0.0132,
+    "haste_rating": 0.00578,
+    "expertise_rating": 0.02777,
+    "weapon_skill": 0.04298,
+    "defense_rating": -4e-05,
+    "dodge_rating": 0.0002,
+    "parry_rating": 0.00016,
+    "oh_weapon_dps": 0.0,
+    "block_rating": 0.0,
+    "block_value": 0.0
+   }
+  },
+  "15": {
+   "time_per_kill": 17.949,
+   "weights": {
+    "strength": 0.02614,
+    "agility": 0.012,
+    "stamina": 0.0,
+    "attack_power": 0.01307,
+    "armor": 0.0,
+    "mh_weapon_dps": 0.18576,
+    "crit_rating": 0.00582,
+    "hit_rating": 0.01422,
+    "haste_rating": 0.00619,
+    "expertise_rating": 0.01498,
+    "weapon_skill": 0.02763,
+    "defense_rating": -0.00048,
+    "dodge_rating": -0.00042,
+    "parry_rating": -0.00034,
+    "oh_weapon_dps": 0.0,
+    "block_rating": 0.0,
+    "block_value": 0.0
+   }
+  },
+  "20": {
+   "time_per_kill": 17.684,
+   "weights": {
+    "strength": 0.01933,
+    "agility": 0.00928,
+    "stamina": -0.00015,
+    "attack_power": 0.00966,
+    "armor": -6e-05,
+    "mh_weapon_dps": 0.12972,
+    "crit_rating": 0.00521,
+    "hit_rating": 0.01346,
+    "haste_rating": 0.00438,
+    "expertise_rating": 0.01199,
+    "weapon_skill": 0.0243,
+    "defense_rating": -0.0012,
+    "dodge_rating": -0.00067,
+    "parry_rating": -0.00054,
+    "oh_weapon_dps": 0.0,
+    "block_rating": 0.0,
+    "block_value": 0.0
+   }
+  },
+  "25": {
+   "time_per_kill": 18.443,
+   "weights": {
+    "strength": 0.01903,
+    "agility": 0.00916,
+    "stamina": -0.00096,
+    "attack_power": 0.00951,
+    "armor": -9e-05,
+    "mh_weapon_dps": 0.12439,
+    "crit_rating": 0.00637,
+    "hit_rating": 0.01734,
+    "haste_rating": 0.00585,
+    "expertise_rating": 0.01665,
+    "weapon_skill": 0.02844,
+    "defense_rating": -0.00069,
+    "dodge_rating": -0.00049,
+    "parry_rating": -0.00039,
+    "oh_weapon_dps": 0.0,
+    "block_rating": 0.0,
+    "block_value": 0.0
+   }
+  },
+  "30": {
+   "time_per_kill": 19.634,
+   "weights": {
+    "strength": 0.01854,
+    "agility": 0.01047,
+    "stamina": -0.00068,
+    "attack_power": 0.00927,
+    "armor": -4e-05,
+    "mh_weapon_dps": 0.11844,
+    "crit_rating": 0.00791,
+    "hit_rating": 0.01719,
+    "haste_rating": 0.00636,
+    "expertise_rating": 0.01786,
+    "weapon_skill": 0.03185,
+    "defense_rating": 0.0003,
+    "dodge_rating": -0.00057,
+    "parry_rating": -0.00045,
+    "oh_weapon_dps": 0.0,
+    "block_rating": 0.0,
+    "block_value": 0.0
+   }
+  },
+  "35": {
+   "time_per_kill": 17.573,
+   "weights": {
+    "strength": 0.01282,
+    "agility": 0.00648,
+    "stamina": -0.00041,
+    "attack_power": 0.00641,
+    "armor": -2e-05,
+    "mh_weapon_dps": 0.08304,
+    "crit_rating": 0.00622,
+    "hit_rating": 0.01557,
+    "haste_rating": 0.00422,
+    "expertise_rating": 0.02313,
+    "weapon_skill": 0.0369,
+    "defense_rating": -0.00037,
+    "dodge_rating": -0.00031,
+    "parry_rating": -0.00025,
+    "oh_weapon_dps": 0.0,
+    "block_rating": 0.0,
+    "block_value": 0.0
+   }
+  },
+  "40": {
+   "time_per_kill": 20.37,
+   "weights": {
+    "strength": 0.01509,
+    "agility": 0.01039,
+    "stamina": 0.00149,
+    "attack_power": 0.00755,
+    "armor": 4e-05,
+    "mh_weapon_dps": 0.09935,
+    "crit_rating": 0.00906,
+    "hit_rating": 0.02559,
+    "haste_rating": 0.00893,
+    "expertise_rating": 0.03553,
+    "weapon_skill": 0.05277,
+    "defense_rating": 0.00098,
+    "dodge_rating": 0.00067,
+    "parry_rating": 0.00054,
+    "oh_weapon_dps": 0.0,
+    "block_rating": 0.0,
+    "block_value": 0.0
+   }
+  },
+  "45": {
+   "time_per_kill": 20.853,
+   "weights": {
+    "strength": 0.01348,
+    "agility": 0.00921,
+    "stamina": -0.00045,
+    "attack_power": 0.00674,
+    "armor": 1e-05,
+    "mh_weapon_dps": 0.0883,
+    "crit_rating": 0.00987,
+    "hit_rating": 0.02155,
+    "haste_rating": 0.00845,
+    "expertise_rating": 0.03513,
+    "weapon_skill": 0.05091,
+    "defense_rating": -0.00079,
+    "dodge_rating": -0.00041,
+    "parry_rating": -0.00033,
+    "oh_weapon_dps": 0.0,
+    "block_rating": 0.0,
+    "block_value": 0.0
+   }
+  },
+  "50": {
+   "time_per_kill": 22.085,
+   "weights": {
+    "strength": 0.01456,
+    "agility": 0.00948,
+    "stamina": 0.00103,
+    "attack_power": 0.00728,
+    "armor": 0.00012,
+    "mh_weapon_dps": 0.09071,
+    "crit_rating": 0.01006,
+    "hit_rating": 0.02609,
+    "haste_rating": 0.00894,
+    "expertise_rating": 0.04316,
+    "weapon_skill": 0.06057,
+    "defense_rating": 3e-05,
+    "dodge_rating": 8e-05,
+    "parry_rating": 6e-05,
+    "oh_weapon_dps": 0.0,
+    "block_rating": 0.0,
+    "block_value": 0.0
+   }
+  },
+  "55": {
+   "time_per_kill": 22.957,
+   "weights": {
+    "strength": 0.01421,
+    "agility": 0.00929,
+    "stamina": 0.00122,
+    "attack_power": 0.00711,
+    "armor": 0.00013,
+    "mh_weapon_dps": 0.10305,
+    "crit_rating": 0.01191,
+    "hit_rating": 0.02667,
+    "haste_rating": 0.01064,
+    "expertise_rating": 0.04605,
+    "weapon_skill": 0.07221,
+    "defense_rating": 0.00096,
+    "dodge_rating": 0.00027,
+    "parry_rating": 0.00021,
+    "oh_weapon_dps": 0.0,
+    "block_rating": 0.0,
+    "block_value": 0.0
+   }
+  },
+  "60": {
+   "time_per_kill": 21.898,
+   "weights": {
+    "strength": 0.01003,
+    "agility": 0.00777,
+    "stamina": -8e-05,
+    "attack_power": 0.00502,
+    "armor": -2e-05,
+    "mh_weapon_dps": 0.06269,
+    "crit_rating": 0.01,
+    "hit_rating": 0.0257,
+    "haste_rating": 0.00862,
+    "expertise_rating": 0.03988,
+    "weapon_skill": 0.0675,
+    "defense_rating": -4e-05,
+    "dodge_rating": 0.00067,
+    "parry_rating": 0.00054,
+    "oh_weapon_dps": 0.0,
+    "block_rating": 0.0,
+    "block_value": 0.0
+   }
+  }
+ },
+ "note": "Negative steps (hit_rating, expertise_rating): the value per point while under the cap, measured as a step down. Ratings in rating points (the same at every level). A fight-lab model of the beta, not a measurement.",
+ "provisional_order": false,
+ "base": "best",
+ "base_bonus": {
+  "10": {
+   "intellect": 1.0,
+   "spirit": 1.0,
+   "stamina": -11.5,
+   "strength": 14.0,
+   "armor": -169.0,
+   "mh_weapon_dps": 1.3
+  },
+  "15": {
+   "spirit": 5.0,
+   "stamina": -11.5,
+   "agility": 5.5,
+   "strength": 32.5,
+   "armor": 135.0,
+   "attack_power": 4,
+   "mh_weapon_dps": 5.7
+  },
+  "20": {
+   "intellect": 5.0,
+   "spirit": -2.5,
+   "stamina": -3.5,
+   "agility": -0.5,
+   "strength": 58.0,
+   "armor": 69.0,
+   "attack_power": 24,
+   "mh_weapon_dps": 7.9
+  },
+  "25": {
+   "spirit": -4.5,
+   "stamina": -10.0,
+   "agility": 23.0,
+   "strength": 16.0,
+   "armor": -271.0,
+   "mp5": 2,
+   "attack_power": 100,
+   "mh_weapon_dps": 6.3
+  },
+  "30": {
+   "intellect": -2.0,
+   "spirit": -1.5,
+   "stamina": -16.0,
+   "agility": 35.0,
+   "strength": 31.0,
+   "armor": 104.5,
+   "attack_power": 104,
+   "mh_weapon_dps": 9.1
+  },
+  "35": {
+   "intellect": -2.0,
+   "spirit": -7.0,
+   "stamina": -28.5,
+   "agility": 20.0,
+   "strength": 53.0,
+   "armor": 62.5,
+   "crit_rating": 7,
+   "attack_power": 98,
+   "mh_weapon_dps": 12.5
+  },
+  "40": {
+   "spirit": 2.0,
+   "stamina": -59.5,
+   "agility": 104.0,
+   "strength": 34.0,
+   "armor": -1246.0,
+   "attack_power": 12,
+   "mh_weapon_dps": 11.5
+  },
+  "45": {
+   "spirit": 6.0,
+   "stamina": -7.5,
+   "agility": 64.0,
+   "strength": 77.0,
+   "armor": -31.0,
+   "defense_rating": 6,
+   "attack_power": 74,
+   "mh_weapon_dps": 3.9
+  },
+  "50": {
+   "spirit": 2.5,
+   "stamina": -52.5,
+   "agility": 96.5,
+   "strength": 20.5,
+   "armor": 80.0,
+   "defense_rating": 4,
+   "attack_power": 84,
+   "mh_weapon_dps": 5.1
+  },
+  "55": {
+   "spirit": 18.5,
+   "stamina": -12.0,
+   "agility": 50.0,
+   "strength": 11.0,
+   "armor": -1190.0,
+   "crit_rating": 77,
+   "defense_rating": 4,
+   "attack_power": 52,
+   "mh_weapon_dps": 8.7
+  },
+  "60": {
+   "stamina": 67.0,
+   "agility": 30.5,
+   "strength": 67.0,
+   "armor": 1140.0,
+   "attack_power": 96,
+   "mh_weapon_dps": 30.0
+  }
+ }
+}

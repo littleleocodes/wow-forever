@@ -140,12 +140,43 @@ def level_info(cls, alloc, level, rot):
             split[sch.strip()] = round(split.get(sch.strip(), 0.0) + x, 3)
     share = split
     totals_dual = bool(getattr(p, "dual_wield", False))
+    allsh = sum((o.get("shares") or {}).values()) or 1.0
+    white = (o.get("shares") or {}).get("Melee", 0.0) / allsh   # the player's own white swings (a pet's melee has its own name)
+    setup = {"white_share": round(white, 3), "mh_kind": getattr(getattr(p, "mh", None), "kind", None)}
     return share, {"dual_wield": totals_dual, "spell_power_total": round(p.spell_power, 1), "attack_power_total": round(p.attack_power, 1),
-                   "ranged_attack_power_total": round(getattr(p, "ranged_ap", 0.0), 1)}, melee
+                   "ranged_attack_power_total": round(getattr(p, "ranged_ap", 0.0), 1), "setup": setup}, melee
 
 
 def school_shares(cls, alloc, level, rot):
     return level_info(cls, alloc, level, rot)[0]
+
+
+WAND_CLASSES = ("mage", "priest", "warlock")
+BASE_FILE = HERE / "weights" / "forever-base.json"
+
+
+def set_stats(cls, std, setup, dual, ranged, level, bonus=None):
+    """A gear point's summed item stats in the add-on's keys (hit and expertise left out): the lab's standard gear (forever-base.json
+    "standard" plus the lab's weapon and wand dps for the level) and, with `bonus`, the best Forever set (standard + its GEAR_BONUS)."""
+    import tables as TB
+    o = {k: std.get(k, 0.0) for k in ("intellect", "spirit", "stamina", "agility", "strength", "armor")}
+    o["spell_power"] = std.get("spell_power", 0.0)
+    o["spell_healing"] = std.get("healing", 0.0)
+    o["attack_power"] = std.get("attack_power", 0.0)
+    if setup.get("mh_kind"):
+        o["mh_weapon_dps"] = TB.weapon_dps(level, setup["mh_kind"])
+    if dual:
+        o["oh_weapon_dps"] = TB.weapon_dps(level, "1h")
+    if ranged:
+        o["ranged_weapon_dps"] = TB.weapon_dps(level, "ranged")
+    if cls in WAND_CLASSES:
+        o["wand_dps"] = TB.wand_dps(level)
+    for k, v in (bonus or {}).items():
+        if k in ("hit_rating", "expertise_rating"):
+            continue
+        key = {"healing": "spell_healing"}.get(k, k)
+        o[key] = o.get(key, 0.0) + v
+    return {k: round(v, 2) for k, v in sorted(o.items()) if v}
 
 
 def totals_with(cls, alloc, level, rot, bonus):
@@ -181,6 +212,7 @@ def leveling(cls):
         final = w.get("steps") == {k: SW.FULL_STEPS[k] for k in SW.CLASS_STATS[cls]}
         fb = HERE / "weights" / "leveling-best" / f.name   # the second gear point: each level's best Forever set (forever_base.py)
         wb = json.loads(fb.read_text(encoding="utf-8")) if fb.exists() else None
+        base = json.loads(BASE_FILE.read_text(encoding="utf-8"))["builds"].get(f"{cls}-{b['id']}", {}) if BASE_FILE.exists() else {}
         _, order, _, rot = LG.pick(cls, spec)
         lv = {}
         for L, row in sorted(w["levels"].items(), key=lambda kv: int(kv[0])):
@@ -188,14 +220,21 @@ def leveling(cls):
             v = {k: max(0.0, x) for k, x in row["weights"].items()}
             share, totals, melee = level_info(cls, alloc, int(L), rot)
             dual = totals.pop("dual_wield")
-            unit = "spell_power" if v.get("spell_power", 0) >= v.get("attack_power", 0) else "attack_power"
-            if unit == "attack_power" and cls == "hunter" and not melee:
-                unit = "ranged_attack_power"
+            setup = totals.pop("setup")
+            # caster or melee (2026-11-13): a build whose own white swings are a fifth of its damage or more fights in melee (the melee
+            # hit cap; placed by attack power): paladins (30-56%), Enhancement, the cat; Elemental (11-16%) and Balance are casters. The
+            # value per point is no guide: a paladin's seals and a shaman's shocks make Spell Power worth more per point than attack power.
+            ranged = cls == "hunter" and not melee
+            caster = cls in WAND_CLASSES or (cls != "hunter" and setup["white_share"] < 0.2)
+            unit = "spell_power" if caster else ("ranged_attack_power" if ranged else "attack_power")
+            brow = base.get(L)
             if v.get("spell_power"):
                 for sch, x in share.items():
                     v[f"{sch}_damage"] = v["spell_power"] * x
             v["hit_rating_above_cap"] = 0.0   # not measured: hit past the cap (a dual-wielder's white swings) counts 0 for now
             gear = [dict(label="standard", **totals, seconds_per_kill=row["time_per_kill"], values=norm(v, "leveling", cls))]
+            if brow:
+                gear[0]["item_stats"] = set_stats(cls, brow["standard"], setup, dual, ranged, int(L))
             if wb and L in wb["levels"]:
                 rb = wb["levels"][L]
                 vb = {k: max(0.0, x) for k, x in rb["weights"].items()}
@@ -205,7 +244,10 @@ def leveling(cls):
                 vb["hit_rating_above_cap"] = 0.0
                 gear.append(dict(label="best Forever set", **totals_with(cls, alloc, int(L), rot, wb["base_bonus"][L]),
                                  seconds_per_kill=rb["time_per_kill"], values=norm(vb, "leveling", cls)))
+                if brow:
+                    gear[-1]["item_stats"] = set_stats(cls, brow["standard"], setup, dual, ranged, int(L), wb["base_bonus"][L])
             lv[L] = {"tree_points": tree_points(cls, alloc), "talents": {n: k for n, k in sorted(alloc.items()) if k}, "unit": unit,
+                     "caster": caster, "white_share": setup["white_share"],
                      "dual_wield": dual, "school_share": share, "gear": gear}
         out.append({"spec": spec, "build": b["id"], "rotation": rot,
                     "source": f"fight lab {w['date']}, {w['fights']} fights x 2 seeds" + ("" if final else "; FIRST PASS (small steps, noisy): being re-measured"),
@@ -299,7 +341,23 @@ def tank(cls):
 
 
 # ------------------------------------------------------------------ the add-on's math, as a reference for the test vectors
-def lev_at(entry, level, unit_total):
+def gear_share(lv, item_stats):
+    """Where a character's gear sits between a level's two gear points (0 = the lab's standard gear, 1 = the best Forever set): the
+    gain from the standard set to the character's own items over the gain from the standard set to the best set, both scored with
+    the standard gear's values (delta(); hit and expertise left out, as the sets leave them out). None without item stats."""
+    g = lv["gear"]
+    if len(g) < 2 or "item_stats" not in g[0] or "item_stats" not in g[-1]:
+        return None
+    v = g[0]["values"]
+    skip = ("hit_rating", "expertise_rating")
+    mine = {k: x for k, x in item_stats.items() if k not in skip}
+    den = delta(v, g[0]["item_stats"], g[-1]["item_stats"], {})
+    if den <= 0:
+        return 0.0
+    return min(1.0, max(0.0, delta(v, g[0]["item_stats"], mine, {}) / den))
+
+
+def lev_at(entry, level, unit_total=None, item_stats=None):
     """(seconds per kill, values) of a leveling entry at a level and the character's unit-stat total: linear between the measured
     levels (below the first: the first), and between gear points by unit_total (clamped at the ends)."""
     lv = sorted(int(k) for k in entry["levels"])
@@ -309,6 +367,11 @@ def lev_at(entry, level, unit_total):
 
     def at(L):
         e = entry["levels"][str(L)]
+        t = gear_share(e, item_stats) if item_stats is not None else None
+        if t is not None:   # placed by the character's own items (the add-on's preferred way)
+            a, b = e["gear"][0], e["gear"][-1]
+            vals = {s: a["values"].get(s, 0.0) * (1 - t) + b["values"].get(s, 0.0) * t for s in set(a["values"]) | set(b["values"])}
+            return a["seconds_per_kill"] * (1 - t) + b["seconds_per_kill"] * t, vals
         key = f"{e['unit']}_total"
         g = sorted(e["gear"], key=lambda x: x[key])
         if len(g) == 1 or unit_total <= g[0][key]:
@@ -400,7 +463,7 @@ def test_vectors(o):
         if lev:
             e = lev[0]
             e20 = e["levels"]["20"]
-            caster = e20["unit"] == "spell_power"
+            caster = e20.get("caster", e20["unit"] == "spell_power")
             ut = e20["gear"][0][e20["unit"] + "_total"] + 15
             extra = {"level": 23, "unit": e20["unit"], "unit_total": ut}
             spk, vals = lev_at(e, 23, ut)
@@ -428,6 +491,28 @@ def test_vectors(o):
             r1["equipped"] = [{"slot": "finger1", "equipLoc": "INVTYPE_FINGER", "stats": a}, {"slot": "finger2", "equipLoc": "INVTYPE_FINGER", "stats": b}]
             r1["expected"]["replaced_slot"] = weaker
             out.append(r1)
+            e30 = e["levels"].get("30")
+            if e30 and len(e30["gear"]) > 1:   # the gear points alone, at a measured level: halfway between the two sets, and past the best
+                key = e30["unit"] + "_total"
+                g0, g1 = e30["gear"][0][key], e30["gear"][-1][key]
+                for name, ut3 in (("halfway between the standard gear and the best Forever set", (g0 + g1) / 2),
+                                  ("past the best Forever set (clamped)", g1 + 40)):
+                    spk3, vals3 = lev_at(e, 30, ut3)
+                    out.append(vec(f"{tag}: {name}", "leveling", cls, e["spec"], e["build"], *one(main), vals3,
+                                   caps_for("leveling", vals3, caster), {"level": 30, "unit": e30["unit"], "unit_total": round(ut3, 6)},
+                                   lambda d, spk=spk3: {"seconds_per_kill": round(spk, 6), "gain_seconds": round(d, 6), "pct_faster": round(100 * d / spk, 6)}))
+            if e30 and len(e30["gear"]) > 1 and "item_stats" in e30["gear"][0]:   # placed by the character's own items
+                s0, s1 = e30["gear"][0]["item_stats"], e30["gear"][-1]["item_stats"]
+                for name, f in (("placed by its items, a third of the way to the best Forever set", 1 / 3), ("placed by its items: the best set itself", 1.0)):
+                    mine = {k: round(s0.get(k, 0.0) + f * (s1.get(k, 0.0) - s0.get(k, 0.0)), 4) for k in set(s0) | set(s1)}
+                    mine = {k: x for k, x in sorted(mine.items()) if x}
+                    t = gear_share(e30, mine)
+                    for L32 in (30, 32):
+                        spk4, vals4 = lev_at(e, L32, item_stats=mine)
+                        out.append(vec(f"{tag}: {name}, level {L32}", "leveling", cls, e["spec"], e["build"], *one(main), vals4,
+                                       caps_for("leveling", vals4, caster), {"level": L32, "unit": e30["unit"], "item_stats": mine,
+                                                                             "gear_share_at_30": round(t, 6)},
+                                       lambda d, spk=spk4: {"seconds_per_kill": round(spk, 6), "gain_seconds": round(d, 6), "pct_faster": round(100 * d / spk, 6)}))
             spk7, vals7 = lev_at(e, 7, ut)
             out.append(vec(f"{tag}: below level 10 uses level 10", "leveling", cls, e["spec"], e["build"], *one(main), vals7,
                            caps_for("leveling", vals7, caster), {"level": 7, "unit": e20["unit"], "unit_total": ut},
@@ -474,8 +559,13 @@ def main():
     o = {"version": VERSION, "made": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"), "status": "", "ratings_per_percent": RATINGS,
          "caps": CAPS, "not_scored": NOT_SCORED,
          "note": ("Class keys: the client's classFile, lowercased. Leveling: values are seconds per kill one point saves (fight lab), per "
-                  "level (every 5 from 10 to 60: interpolate; below 10 the level-10 numbers) and per gear point (interpolate on the "
-                  "character's own total of the level's unit stat, clamped); an item's gain = sum of (new - old) x value, its share of "
+                  "level (every 5 from 10 to 60: interpolate; below 10 the level-10 numbers) and per gear point. Two gear points per level: "
+                  "'standard' (the lab's standard gear) and 'best Forever set'; each carries item_stats, the set's summed item stats in "
+                  "these keys (hit and expertise left out). Place the character between them by its own items (preferred): share = "
+                  "delta(standard values, standard item_stats, your summed item stats without hit and expertise) / delta(standard "
+                  "values, standard item_stats, best item_stats), clamped 0-1, computed at each of the two levels around yours; values "
+                  "and seconds_per_kill = standard + share x (best - standard). Fallback: interpolate on the character's own total of "
+                  "the level's unit stat, clamped. Each level says caster (true: the spell hit cap; false: the melee cap). An item's gain = sum of (new - old) x value, its share of "
                   "faster kills = gain / seconds_per_kill. Raid, heal and tank values: worth per point with the unit stat = 1 (1 Spell "
                   "Power, attack power, healing power or Stamina); an item's share = its score change over the score of everything "
                   "equipped. Spell lines map one to one: '+N Spell Power' -> spell_power, '+N Spell Damage' -> spell_damage, '+N Spell "
@@ -506,8 +596,10 @@ def main():
     todo = [e["build"] for c in o["classes"].values() for e in c["leveling"] if not e.get("final")]
     parts = [f"{len(todo)} leveling builds still hold the first pass's noisy small-step numbers" if todo else "",
              "healer values not measured yet" if not hv else "",
-             "one gear point per level (the lab's standard gear); gear points for Forever's own items come later"]
-    o["status"] = "preliminary: " + "; ".join(x for x in parts if x)
+             "" if all(len(lv["gear"]) > 1 for c in o["classes"].values() for e in c["leveling"] for lv in e.get("levels", {}).values())
+             else "some leveling levels have one gear point only (the lab's standard gear)"]
+    o["status"] = ("preliminary: " + "; ".join(x for x in parts if x)) if any(parts) else (
+        "complete: two gear points per leveling level (the lab's standard gear and each level's best Forever set), raid, heal and tank values")
     o["test_vectors"] = test_vectors(o)
     OUT.mkdir(exist_ok=True)
     p = OUT / "forever-gear-values.json"
