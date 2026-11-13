@@ -142,7 +142,13 @@ def level_info(cls, alloc, level, rot):
     totals_dual = bool(getattr(p, "dual_wield", False))
     allsh = sum((o.get("shares") or {}).values()) or 1.0
     white = (o.get("shares") or {}).get("Melee", 0.0) / allsh   # the player's own white swings (a pet's melee has its own name)
-    setup = {"white_share": round(white, 3), "mh_kind": getattr(getattr(p, "mh", None), "kind", None)}
+    phys = 0.0
+    for name, dmg in (o.get("shares") or {}).items():   # white swings and physical specials (no school in the book, or physical)
+        sp = mod.book.get(name) if hasattr(mod, "book") else None
+        sch = getattr(sp, "school", None) if sp is not None else None
+        if not sch or sch == "physical":
+            phys += dmg
+    setup = {"white_share": round(white, 3), "physical_share": round(phys / allsh, 3), "mh_kind": getattr(getattr(p, "mh", None), "kind", None)}
     return share, {"dual_wield": totals_dual, "spell_power_total": round(p.spell_power, 1), "attack_power_total": round(p.attack_power, 1),
                    "ranged_attack_power_total": round(getattr(p, "ranged_ap", 0.0), 1), "setup": setup}, melee
 
@@ -221,11 +227,8 @@ def leveling(cls):
             share, totals, melee = level_info(cls, alloc, int(L), rot)
             dual = totals.pop("dual_wield")
             setup = totals.pop("setup")
-            # caster or melee (2026-11-13): a build whose own white swings are a fifth of its damage or more fights in melee (the melee
-            # hit cap; placed by attack power): paladins (30-56%), Enhancement, the cat; Elemental (11-16%) and Balance are casters. The
-            # value per point is no guide: a paladin's seals and a shaman's shocks make Spell Power worth more per point than attack power.
             ranged = cls == "hunter" and not melee
-            caster = cls in WAND_CLASSES or (cls != "hunter" and setup["white_share"] < 0.2)
+            caster = cls in WAND_CLASSES   # druids, shamans and paladins: set for the whole build below
             unit = "spell_power" if caster else ("ranged_attack_power" if ranged else "attack_power")
             brow = base.get(L)
             if v.get("spell_power"):
@@ -247,8 +250,19 @@ def leveling(cls):
                 if brow:
                     gear[-1]["item_stats"] = set_stats(cls, brow["standard"], setup, dual, ranged, int(L), wb["base_bonus"][L])
             lv[L] = {"tree_points": tree_points(cls, alloc), "talents": {n: k for n, k in sorted(alloc.items()) if k}, "unit": unit,
-                     "caster": caster, "white_share": setup["white_share"],
+                     "caster": caster, "white_share": setup["white_share"], "physical_share": setup["physical_share"],
                      "dual_wield": dual, "school_share": share, "gear": gear}
+        # caster or melee (2026-11-13; Addons: a per-level white-swing rule made rogues casters from 30-40 and Enhancement from 50): one
+        # flag per build. Mages, priests and warlocks are casters; rogues, warriors and hunters never; a druid, shaman or paladin build is a
+        # caster when its physical damage (white swings and physical specials) is under 30% of its damage at levels 20-60 (Elemental
+        # 11-16%, Balance 0%; Enhancement 48-55%, paladins 30-56%, the cat 95%). The value per point is no guide: a paladin's seals and a
+        # shaman's shocks make Spell Power worth more per point than attack power.
+        if cls in ("druid", "shaman", "paladin"):
+            ph = [x["physical_share"] for L, x in lv.items() if 20 <= int(L) <= 60]
+            cst = bool(ph) and sum(ph) / len(ph) < 0.3
+            for x in lv.values():
+                x["caster"] = cst
+                x["unit"] = "spell_power" if cst else "attack_power"
         out.append({"spec": spec, "build": b["id"], "rotation": rot,
                     "source": f"fight lab {w['date']}, {w['fights']} fights x 2 seeds" + ("" if final else "; FIRST PASS (small steps, noisy): being re-measured"),
                     "final": final, "levels": lv})

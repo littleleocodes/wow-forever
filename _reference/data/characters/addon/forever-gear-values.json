@@ -1,6 +1,6 @@
 {
  "version": 1,
- "made": "2026-11-13 18:45",
+ "made": "2026-11-13 18:53",
  "status": "complete: two gear points per leveling level (the lab's standard gear and each level's best Forever set), raid, heal and tank values",
  "ratings_per_percent": {
   "hit_rating": 10,
@@ -99,6 +99,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.0,
        "dual_wield": false,
        "school_share": {
         "nature": 0.774,
@@ -215,6 +216,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.0,
        "dual_wield": false,
        "school_share": {
         "nature": 0.842,
@@ -332,6 +334,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.0,
        "dual_wield": false,
        "school_share": {
         "nature": 0.743,
@@ -453,6 +456,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.0,
        "dual_wield": false,
        "school_share": {
         "nature": 0.752,
@@ -575,6 +579,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.0,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.852,
@@ -701,6 +706,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.0,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.867,
@@ -825,6 +831,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.0,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.865,
@@ -951,6 +958,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.0,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.869,
@@ -1078,6 +1086,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.0,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.885,
@@ -1210,6 +1219,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.0,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.87,
@@ -1340,6 +1350,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.0,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.89,
@@ -1464,6 +1475,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.561,
+       "physical_share": 0.897,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -1578,6 +1590,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.4,
+       "physical_share": 0.851,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -1696,6 +1709,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.387,
+       "physical_share": 0.945,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -1815,6 +1829,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.339,
+       "physical_share": 0.944,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -1938,6 +1953,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.348,
+       "physical_share": 0.951,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -2062,6 +2078,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.317,
+       "physical_share": 0.949,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -2188,6 +2205,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.319,
+       "physical_share": 0.956,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -2316,6 +2334,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.323,
+       "physical_share": 0.951,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -2442,6 +2461,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.302,
+       "physical_share": 0.96,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -2575,6 +2595,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.3,
+       "physical_share": 0.955,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -2709,6 +2730,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.268,
+       "physical_share": 0.961,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -2831,6 +2853,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.577,
+       "physical_share": 0.895,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -2945,6 +2968,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.476,
+       "physical_share": 0.846,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -3063,6 +3087,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.412,
+       "physical_share": 0.942,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -3181,6 +3206,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.372,
+       "physical_share": 0.934,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -3302,6 +3328,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.391,
+       "physical_share": 0.936,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -3425,6 +3452,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.344,
+       "physical_share": 0.933,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -3549,6 +3577,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.345,
+       "physical_share": 0.939,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -3675,6 +3704,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.356,
+       "physical_share": 0.93,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -3801,6 +3831,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.343,
+       "physical_share": 0.942,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -3931,6 +3962,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.341,
+       "physical_share": 0.934,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -4060,6 +4092,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.318,
+       "physical_share": 0.941,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -4447,6 +4480,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.0,
+       "physical_share": 0.934,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -4560,6 +4594,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.0,
+       "physical_share": 0.921,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -4671,6 +4706,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.001,
+       "physical_share": 0.928,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -4788,6 +4824,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.0,
+       "physical_share": 0.93,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -4907,6 +4944,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.0,
+       "physical_share": 0.907,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -5033,6 +5071,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.0,
+       "physical_share": 0.889,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -5158,6 +5197,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.0,
+       "physical_share": 0.885,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -5287,6 +5327,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.0,
+       "physical_share": 0.862,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -5415,6 +5456,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.0,
+       "physical_share": 0.855,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -5547,6 +5589,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.0,
+       "physical_share": 0.834,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -5682,6 +5725,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.002,
+       "physical_share": 0.785,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -5809,6 +5853,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.0,
+       "physical_share": 0.737,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.894,
@@ -5923,6 +5968,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.001,
+       "physical_share": 0.757,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.778,
@@ -6034,6 +6080,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.0,
+       "physical_share": 0.793,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.708,
@@ -6153,6 +6200,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.002,
+       "physical_share": 0.782,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.676,
@@ -6275,6 +6323,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.018,
+       "physical_share": 0.752,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.606,
@@ -6399,6 +6448,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.023,
+       "physical_share": 0.747,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.522,
@@ -6526,6 +6576,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.02,
+       "physical_share": 0.735,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.501,
@@ -6655,6 +6706,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.018,
+       "physical_share": 0.7,
        "dual_wield": false,
        "school_share": {
         "nature": 0.527,
@@ -6783,6 +6835,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.019,
+       "physical_share": 0.707,
        "dual_wield": false,
        "school_share": {
         "nature": 0.598,
@@ -6914,6 +6967,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.012,
+       "physical_share": 0.718,
        "dual_wield": false,
        "school_share": {
         "nature": 0.584,
@@ -7049,6 +7103,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.017,
+       "physical_share": 0.686,
        "dual_wield": false,
        "school_share": {
         "nature": 0.635,
@@ -7177,6 +7232,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.127,
+       "physical_share": 0.915,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -7289,6 +7345,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.143,
+       "physical_share": 0.9,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -7406,6 +7463,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.133,
+       "physical_share": 0.861,
        "dual_wield": true,
        "school_share": {
         "nature": 0.828,
@@ -7526,6 +7584,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.135,
+       "physical_share": 0.857,
        "dual_wield": true,
        "school_share": {
         "nature": 0.767,
@@ -7646,6 +7705,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.148,
+       "physical_share": 0.813,
        "dual_wield": true,
        "school_share": {
         "nature": 0.713,
@@ -7770,6 +7830,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.136,
+       "physical_share": 0.755,
        "dual_wield": true,
        "school_share": {
         "nature": 0.619,
@@ -7895,6 +7956,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.138,
+       "physical_share": 0.704,
        "dual_wield": true,
        "school_share": {
         "fire": 0.525,
@@ -8024,6 +8086,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.141,
+       "physical_share": 0.694,
        "dual_wield": true,
        "school_share": {
         "nature": 0.544,
@@ -8154,6 +8217,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.133,
+       "physical_share": 0.648,
        "dual_wield": true,
        "school_share": {
         "nature": 0.523,
@@ -8288,6 +8352,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.136,
+       "physical_share": 0.671,
        "dual_wield": true,
        "school_share": {
         "nature": 0.519,
@@ -8423,6 +8488,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.121,
+       "physical_share": 0.603,
        "dual_wield": true,
        "school_share": {
         "nature": 0.573,
@@ -8548,6 +8614,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.0,
+       "physical_share": 0.934,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -8661,6 +8728,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.0,
+       "physical_share": 0.921,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -8773,6 +8841,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.001,
+       "physical_share": 0.928,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -8891,6 +8960,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.0,
+       "physical_share": 0.93,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -9011,6 +9081,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.0,
+       "physical_share": 0.907,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -9137,6 +9208,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.0,
+       "physical_share": 0.886,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -9262,6 +9334,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.0,
+       "physical_share": 0.881,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -9390,6 +9463,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.0,
+       "physical_share": 0.852,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -9518,6 +9592,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.0,
+       "physical_share": 0.818,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -9650,6 +9725,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.001,
+       "physical_share": 0.822,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -9783,6 +9859,7 @@
        "unit": "ranged_attack_power",
        "caster": false,
        "white_share": 0.006,
+       "physical_share": 0.772,
        "dual_wield": false,
        "school_share": {
         "nature": 1.0
@@ -9911,6 +9988,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.127,
+       "physical_share": 0.915,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -10023,6 +10101,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.143,
+       "physical_share": 0.9,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -10140,6 +10219,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.133,
+       "physical_share": 0.861,
        "dual_wield": true,
        "school_share": {
         "nature": 0.828,
@@ -10260,6 +10340,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.135,
+       "physical_share": 0.857,
        "dual_wield": true,
        "school_share": {
         "nature": 0.767,
@@ -10381,6 +10462,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.15,
+       "physical_share": 0.812,
        "dual_wield": true,
        "school_share": {
         "nature": 0.706,
@@ -10505,6 +10587,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.14,
+       "physical_share": 0.762,
        "dual_wield": true,
        "school_share": {
         "nature": 0.624,
@@ -10630,6 +10713,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.146,
+       "physical_share": 0.715,
        "dual_wield": true,
        "school_share": {
         "fire": 0.537,
@@ -10757,6 +10841,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.144,
+       "physical_share": 0.691,
        "dual_wield": true,
        "school_share": {
         "nature": 0.528,
@@ -10887,6 +10972,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.134,
+       "physical_share": 0.664,
        "dual_wield": true,
        "school_share": {
         "fire": 0.524,
@@ -11020,6 +11106,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.132,
+       "physical_share": 0.685,
        "dual_wield": true,
        "school_share": {
         "fire": 0.525,
@@ -11154,6 +11241,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.114,
+       "physical_share": 0.633,
        "dual_wield": true,
        "school_share": {
         "nature": 0.513,
@@ -11538,6 +11626,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.001,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.878,
@@ -11645,6 +11734,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.001,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.837,
@@ -11753,6 +11843,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.0,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.914,
@@ -11865,6 +11956,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.0,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.92,
@@ -11979,6 +12071,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.0,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.878,
@@ -12093,6 +12186,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.0,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.91,
@@ -12207,6 +12301,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.0,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.918,
@@ -12326,6 +12421,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.0,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.914,
@@ -12448,6 +12544,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.0,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.788,
@@ -12574,6 +12671,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.0,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.753,
@@ -12700,6 +12798,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.0,
        "dual_wield": false,
        "school_share": {
         "arcane": 0.763,
@@ -12817,6 +12916,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.201,
        "dual_wield": false,
        "school_share": {
         "fire": 0.941,
@@ -12920,6 +13020,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.179,
        "dual_wield": false,
        "school_share": {
         "fire": 0.962,
@@ -13023,6 +13124,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.204,
        "dual_wield": false,
        "school_share": {
         "fire": 0.957,
@@ -13129,6 +13231,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.194,
        "dual_wield": false,
        "school_share": {
         "fire": 0.967,
@@ -13239,6 +13342,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.216,
        "dual_wield": false,
        "school_share": {
         "fire": 0.961,
@@ -13349,6 +13453,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.187,
        "dual_wield": false,
        "school_share": {
         "fire": 0.73,
@@ -13461,6 +13566,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.177,
        "dual_wield": false,
        "school_share": {
         "fire": 0.724,
@@ -13578,6 +13684,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.164,
        "dual_wield": false,
        "school_share": {
         "fire": 0.69,
@@ -13696,6 +13803,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.149,
        "dual_wield": false,
        "school_share": {
         "fire": 0.706,
@@ -13818,6 +13926,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.155,
        "dual_wield": false,
        "school_share": {
         "fire": 0.765,
@@ -13940,6 +14049,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.154,
        "dual_wield": false,
        "school_share": {
         "fire": 0.738,
@@ -14054,6 +14164,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.099,
        "dual_wield": false,
        "school_share": {
         "frost": 0.904,
@@ -14158,6 +14269,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.072,
        "dual_wield": false,
        "school_share": {
         "frost": 0.876,
@@ -14263,6 +14375,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.036,
        "dual_wield": false,
        "school_share": {
         "frost": 0.928,
@@ -14371,6 +14484,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.041,
        "dual_wield": false,
        "school_share": {
         "frost": 0.892,
@@ -14481,6 +14595,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.043,
        "dual_wield": false,
        "school_share": {
         "frost": 0.9,
@@ -14590,6 +14705,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.036,
        "dual_wield": false,
        "school_share": {
         "frost": 0.926,
@@ -14702,6 +14818,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.046,
        "dual_wield": false,
        "school_share": {
         "frost": 0.908,
@@ -14820,6 +14937,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.043,
        "dual_wield": false,
        "school_share": {
         "frost": 0.937,
@@ -14939,6 +15057,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.039,
        "dual_wield": false,
        "school_share": {
         "frost": 0.927,
@@ -15062,6 +15181,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.038,
        "dual_wield": false,
        "school_share": {
         "frost": 0.906,
@@ -15184,6 +15304,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.03,
        "dual_wield": false,
        "school_share": {
         "frost": 0.944,
@@ -15298,6 +15419,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.098,
        "dual_wield": false,
        "school_share": {
         "frost": 0.902,
@@ -15402,6 +15524,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.069,
        "dual_wield": false,
        "school_share": {
         "frost": 0.873,
@@ -15508,6 +15631,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.049,
        "dual_wield": false,
        "school_share": {
         "frost": 0.935,
@@ -15616,6 +15740,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.058,
        "dual_wield": false,
        "school_share": {
         "frost": 0.883,
@@ -15726,6 +15851,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.042,
        "dual_wield": false,
        "school_share": {
         "frost": 0.909,
@@ -15837,6 +15963,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.056,
        "dual_wield": false,
        "school_share": {
         "frost": 0.932,
@@ -15950,6 +16077,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.043,
        "dual_wield": false,
        "school_share": {
         "frost": 0.777,
@@ -16070,6 +16198,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.039,
        "dual_wield": false,
        "school_share": {
         "frost": 0.832,
@@ -16191,6 +16320,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.034,
        "dual_wield": false,
        "school_share": {
         "frost": 0.822,
@@ -16316,6 +16446,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.038,
        "dual_wield": false,
        "school_share": {
         "frost": 0.798,
@@ -16442,6 +16573,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.035,
        "dual_wield": false,
        "school_share": {
         "frost": 0.812,
@@ -16559,6 +16691,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.071,
        "dual_wield": false,
        "school_share": {
         "frost": 1.0
@@ -16660,6 +16793,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.055,
        "dual_wield": false,
        "school_share": {
         "frost": 1.0
@@ -16763,6 +16897,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.033,
        "dual_wield": false,
        "school_share": {
         "frost": 1.0
@@ -16868,6 +17003,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.052,
        "dual_wield": false,
        "school_share": {
         "frost": 1.0
@@ -16974,6 +17110,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.033,
        "dual_wield": false,
        "school_share": {
         "frost": 1.0
@@ -17082,6 +17219,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.042,
        "dual_wield": false,
        "school_share": {
         "frost": 1.0
@@ -17190,6 +17328,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.227,
        "dual_wield": false,
        "school_share": {
         "frost": 1.0,
@@ -17305,6 +17444,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.193,
        "dual_wield": false,
        "school_share": {
         "frost": 1.0,
@@ -17422,6 +17562,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.179,
        "dual_wield": false,
        "school_share": {
         "frost": 1.0,
@@ -17541,6 +17682,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.19,
        "dual_wield": false,
        "school_share": {
         "frost": 1.0,
@@ -17661,6 +17803,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.16,
        "dual_wield": false,
        "school_share": {
         "frost": 1.0,
@@ -18094,6 +18237,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.518,
+       "physical_share": 0.518,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -18211,6 +18355,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.535,
+       "physical_share": 0.535,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -18329,6 +18474,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.52,
+       "physical_share": 0.52,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -18450,6 +18596,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.571,
+       "physical_share": 0.571,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -18573,6 +18720,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.485,
+       "physical_share": 0.485,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -18699,6 +18847,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.482,
+       "physical_share": 0.482,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -18824,6 +18973,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.462,
+       "physical_share": 0.462,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -18955,6 +19105,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.335,
+       "physical_share": 0.335,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -19085,6 +19236,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.33,
+       "physical_share": 0.33,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -19220,6 +19372,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.313,
+       "physical_share": 0.313,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -19357,6 +19510,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.297,
+       "physical_share": 0.297,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -19487,6 +19641,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.531,
+       "physical_share": 0.531,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -19604,6 +19759,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.564,
+       "physical_share": 0.564,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -19723,6 +19879,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.553,
+       "physical_share": 0.553,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -19848,6 +20005,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.594,
+       "physical_share": 0.594,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -19977,6 +20135,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.462,
+       "physical_share": 0.462,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -20108,6 +20267,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.453,
+       "physical_share": 0.453,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -20242,6 +20402,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.43,
+       "physical_share": 0.43,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -20377,6 +20538,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.389,
+       "physical_share": 0.389,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -20513,6 +20675,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.365,
+       "physical_share": 0.365,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -20650,6 +20813,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.353,
+       "physical_share": 0.404,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -20790,6 +20954,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.308,
+       "physical_share": 0.367,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -20920,6 +21085,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.528,
+       "physical_share": 0.528,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -21036,6 +21202,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.56,
+       "physical_share": 0.56,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -21154,6 +21321,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.455,
+       "physical_share": 0.455,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -21277,6 +21445,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.483,
+       "physical_share": 0.483,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -21403,6 +21572,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.441,
+       "physical_share": 0.441,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -21530,6 +21700,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.458,
+       "physical_share": 0.458,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -21658,6 +21829,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.416,
+       "physical_share": 0.416,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -21788,6 +21960,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.406,
+       "physical_share": 0.406,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -21921,6 +22094,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.389,
+       "physical_share": 0.389,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -22055,6 +22229,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.38,
+       "physical_share": 0.38,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -22191,6 +22366,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.356,
+       "physical_share": 0.356,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -22320,6 +22496,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.527,
+       "physical_share": 0.527,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -22438,6 +22615,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.564,
+       "physical_share": 0.564,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -22556,6 +22734,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.553,
+       "physical_share": 0.553,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -22680,6 +22859,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.593,
+       "physical_share": 0.593,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -22809,6 +22989,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.46,
+       "physical_share": 0.46,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -22939,6 +23120,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.458,
+       "physical_share": 0.458,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -23072,6 +23254,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.429,
+       "physical_share": 0.429,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -23207,6 +23390,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.389,
+       "physical_share": 0.389,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -23342,6 +23526,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.383,
+       "physical_share": 0.383,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -23480,6 +23665,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.369,
+       "physical_share": 0.383,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -23616,6 +23802,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.318,
+       "physical_share": 0.388,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -23742,6 +23929,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.528,
+       "physical_share": 0.528,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -23859,6 +24047,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.558,
+       "physical_share": 0.558,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -23977,6 +24166,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.45,
+       "physical_share": 0.45,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -24101,6 +24291,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.478,
+       "physical_share": 0.478,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -24228,6 +24419,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.443,
+       "physical_share": 0.443,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -24356,6 +24548,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.466,
+       "physical_share": 0.466,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -24485,6 +24678,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.425,
+       "physical_share": 0.425,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -24614,6 +24808,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.408,
+       "physical_share": 0.408,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -24747,6 +24942,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.399,
+       "physical_share": 0.399,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -24882,6 +25078,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.395,
+       "physical_share": 0.395,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -25022,6 +25219,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.356,
+       "physical_share": 0.356,
        "dual_wield": false,
        "school_share": {
         "holy": 1.0
@@ -25523,6 +25721,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.325,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.848,
@@ -25627,6 +25826,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.325,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.66,
@@ -25731,6 +25931,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.174,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.803,
@@ -25837,6 +26038,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.211,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.783,
@@ -25948,6 +26150,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.152,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.716,
@@ -26059,6 +26262,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.158,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.75,
@@ -26171,6 +26375,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.166,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.752,
@@ -26287,6 +26492,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.164,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.788,
@@ -26405,6 +26611,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.159,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.778,
@@ -26526,6 +26733,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.179,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.796,
@@ -26649,6 +26857,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.162,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.798,
@@ -26763,6 +26972,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.038,
        "dual_wield": false,
        "school_share": {
         "holy": 0.604,
@@ -26866,6 +27076,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.066,
        "dual_wield": false,
        "school_share": {
         "holy": 0.643,
@@ -26969,6 +27180,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.065,
        "dual_wield": false,
        "school_share": {
         "holy": 0.622,
@@ -27076,6 +27288,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.042,
        "dual_wield": false,
        "school_share": {
         "holy": 0.628,
@@ -27185,6 +27398,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.077,
        "dual_wield": false,
        "school_share": {
         "holy": 0.644,
@@ -27295,6 +27509,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.064,
        "dual_wield": false,
        "school_share": {
         "holy": 0.573,
@@ -27405,6 +27620,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.052,
        "dual_wield": false,
        "school_share": {
         "holy": 0.602,
@@ -27521,6 +27737,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.059,
        "dual_wield": false,
        "school_share": {
         "holy": 0.58,
@@ -27639,6 +27856,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.07,
        "dual_wield": false,
        "school_share": {
         "holy": 0.582,
@@ -27760,6 +27978,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.095,
        "dual_wield": false,
        "school_share": {
         "holy": 0.611,
@@ -27881,6 +28100,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.11,
        "dual_wield": false,
        "school_share": {
         "holy": 0.59,
@@ -27994,6 +28214,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.418,
        "dual_wield": false,
        "school_share": {
         "shadow": 1.0
@@ -28094,6 +28315,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.537,
        "dual_wield": false,
        "school_share": {
         "shadow": 1.0
@@ -28195,6 +28417,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.092,
        "dual_wield": false,
        "school_share": {
         "shadow": 1.0
@@ -28300,6 +28523,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.124,
        "dual_wield": false,
        "school_share": {
         "shadow": 1.0
@@ -28407,6 +28631,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.066,
        "dual_wield": false,
        "school_share": {
         "shadow": 1.0
@@ -28513,6 +28738,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.029,
        "dual_wield": false,
        "school_share": {
         "shadow": 1.0
@@ -28621,6 +28847,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.018,
        "dual_wield": false,
        "school_share": {
         "shadow": 1.0
@@ -28733,6 +28960,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.023,
        "dual_wield": false,
        "school_share": {
         "shadow": 1.0
@@ -28845,6 +29073,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.019,
        "dual_wield": false,
        "school_share": {
         "shadow": 1.0
@@ -28960,6 +29189,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.027,
        "dual_wield": false,
        "school_share": {
         "shadow": 1.0
@@ -29076,6 +29306,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.009,
        "dual_wield": false,
        "school_share": {
         "shadow": 1.0
@@ -29186,6 +29417,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.038,
        "dual_wield": false,
        "school_share": {
         "holy": 0.604,
@@ -29290,6 +29522,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.077,
        "dual_wield": false,
        "school_share": {
         "holy": 0.657,
@@ -29395,6 +29628,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.108,
        "dual_wield": false,
        "school_share": {
         "holy": 0.649,
@@ -29503,6 +29737,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.054,
        "dual_wield": false,
        "school_share": {
         "holy": 0.658,
@@ -29614,6 +29849,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.091,
        "dual_wield": false,
        "school_share": {
         "holy": 0.624,
@@ -29725,6 +29961,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.033,
        "dual_wield": false,
        "school_share": {
         "holy": 0.552,
@@ -29837,6 +30074,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.06,
        "dual_wield": false,
        "school_share": {
         "holy": 0.573,
@@ -29954,6 +30192,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.055,
        "dual_wield": false,
        "school_share": {
         "holy": 0.544,
@@ -30072,6 +30311,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.05,
        "dual_wield": false,
        "school_share": {
         "holy": 0.572,
@@ -30193,6 +30433,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.074,
        "dual_wield": false,
        "school_share": {
         "holy": 0.598,
@@ -30316,6 +30557,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.048,
        "dual_wield": false,
        "school_share": {
         "holy": 0.581,
@@ -30691,6 +30933,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.373,
+       "physical_share": 1.0,
        "dual_wield": true,
        "school_share": {},
        "gear": [
@@ -30796,6 +31039,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.348,
+       "physical_share": 1.0,
        "dual_wield": true,
        "school_share": {},
        "gear": [
@@ -30904,6 +31148,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.326,
+       "physical_share": 0.937,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -31017,6 +31262,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.29,
+       "physical_share": 0.95,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -31132,6 +31378,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.252,
+       "physical_share": 0.852,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -31250,6 +31497,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.247,
+       "physical_share": 0.861,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -31365,9 +31613,10 @@
         "Vigor": 2,
         "Vile Poisons": 1
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.184,
+       "physical_share": 0.855,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -31486,9 +31735,10 @@
         "Vigor": 2,
         "Vile Poisons": 1
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.172,
+       "physical_share": 0.828,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -31607,9 +31857,10 @@
         "Vigor": 2,
         "Vile Poisons": 1
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.15,
+       "physical_share": 0.856,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -31732,9 +31983,10 @@
         "Vigor": 2,
         "Vile Poisons": 1
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.149,
+       "physical_share": 0.827,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -31859,9 +32111,10 @@
         "Vile Poisons": 1,
         "Weapon Expertise": 2
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.107,
+       "physical_share": 0.846,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -31981,6 +32234,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.333,
+       "physical_share": 1.0,
        "dual_wield": true,
        "school_share": {},
        "gear": [
@@ -32088,6 +32342,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.307,
+       "physical_share": 1.0,
        "dual_wield": true,
        "school_share": {},
        "gear": [
@@ -32197,6 +32452,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.324,
+       "physical_share": 0.952,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -32311,6 +32567,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.222,
+       "physical_share": 0.961,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -32426,6 +32683,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.213,
+       "physical_share": 0.946,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -32542,9 +32800,10 @@
         "Riposte": 1,
         "Weapon Expertise": 2
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.191,
+       "physical_share": 0.956,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -32661,9 +32920,10 @@
         "Riposte": 1,
         "Weapon Expertise": 2
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.164,
+       "physical_share": 0.951,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -32782,9 +33042,10 @@
         "Riposte": 1,
         "Weapon Expertise": 2
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.164,
+       "physical_share": 0.933,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -32903,9 +33164,10 @@
         "Vigor": 1,
         "Weapon Expertise": 2
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.149,
+       "physical_share": 0.945,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -33030,9 +33292,10 @@
         "Vigor": 2,
         "Weapon Expertise": 2
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.137,
+       "physical_share": 0.933,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -33159,9 +33422,10 @@
         "Vigor": 2,
         "Weapon Expertise": 2
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.119,
+       "physical_share": 0.871,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -33279,6 +33543,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.372,
+       "physical_share": 1.0,
        "dual_wield": true,
        "school_share": {},
        "gear": [
@@ -33385,6 +33650,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.329,
+       "physical_share": 1.0,
        "dual_wield": true,
        "school_share": {},
        "gear": [
@@ -33495,6 +33761,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.234,
+       "physical_share": 0.946,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -33610,6 +33877,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.23,
+       "physical_share": 0.96,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -33725,6 +33993,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.224,
+       "physical_share": 0.935,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -33841,9 +34110,10 @@
         "Serrated Blades": 3,
         "Setup": 3
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.199,
+       "physical_share": 0.943,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -33960,9 +34230,10 @@
         "Serrated Blades": 3,
         "Setup": 3
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.192,
+       "physical_share": 0.933,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -34082,9 +34353,10 @@
         "Serrated Blades": 3,
         "Setup": 3
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.173,
+       "physical_share": 0.922,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -34204,9 +34476,10 @@
         "Serrated Blades": 3,
         "Setup": 3
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.146,
+       "physical_share": 0.931,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -34331,9 +34604,10 @@
         "Serrated Blades": 3,
         "Setup": 3
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.146,
+       "physical_share": 0.919,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -34459,9 +34733,10 @@
         "Setup": 3,
         "Weapon Expertise": 2
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.112,
+       "physical_share": 0.924,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -34579,6 +34854,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.372,
+       "physical_share": 1.0,
        "dual_wield": true,
        "school_share": {},
        "gear": [
@@ -34685,6 +34961,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.326,
+       "physical_share": 1.0,
        "dual_wield": true,
        "school_share": {},
        "gear": [
@@ -34794,6 +35071,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.206,
+       "physical_share": 0.952,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -34908,6 +35186,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.213,
+       "physical_share": 0.963,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -35020,9 +35299,10 @@
         "Serrated Blades": 3,
         "Setup": 1
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.198,
+       "physical_share": 0.945,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -35137,9 +35417,10 @@
         "Serrated Blades": 3,
         "Setup": 1
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.193,
+       "physical_share": 0.952,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -35256,9 +35537,10 @@
         "Serrated Blades": 3,
         "Setup": 1
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.188,
+       "physical_share": 0.932,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -35377,9 +35659,10 @@
         "Serrated Blades": 3,
         "Setup": 1
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.182,
+       "physical_share": 0.921,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -35499,9 +35782,10 @@
         "Setup": 1,
         "Weapon Expertise": 2
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.148,
+       "physical_share": 0.935,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -35624,9 +35908,10 @@
         "Setup": 1,
         "Weapon Expertise": 2
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.143,
+       "physical_share": 0.924,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -35752,9 +36037,10 @@
         "Setup": 3,
         "Weapon Expertise": 2
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.113,
+       "physical_share": 0.928,
        "dual_wield": true,
        "school_share": {
         "nature": 1.0
@@ -36230,9 +36516,10 @@
        "talents": {
         "Tidal Focus": 1
        },
-       "unit": "attack_power",
-       "caster": false,
+       "unit": "spell_power",
+       "caster": true,
        "white_share": 0.234,
+       "physical_share": 0.234,
        "dual_wield": false,
        "school_share": {
         "nature": 0.683,
@@ -36355,6 +36642,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.164,
+       "physical_share": 0.164,
        "dual_wield": false,
        "school_share": {
         "nature": 0.767,
@@ -36476,6 +36764,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.157,
+       "physical_share": 0.157,
        "dual_wield": false,
        "school_share": {
         "nature": 0.743,
@@ -36600,6 +36889,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.167,
+       "physical_share": 0.167,
        "dual_wield": false,
        "school_share": {
         "nature": 0.805,
@@ -36727,6 +37017,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.139,
+       "physical_share": 0.189,
        "dual_wield": false,
        "school_share": {
         "nature": 0.756,
@@ -36855,6 +37146,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.144,
+       "physical_share": 0.193,
        "dual_wield": false,
        "school_share": {
         "nature": 0.803,
@@ -36986,6 +37278,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.104,
+       "physical_share": 0.158,
        "dual_wield": false,
        "school_share": {
         "nature": 0.784,
@@ -37119,6 +37412,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.092,
+       "physical_share": 0.128,
        "dual_wield": false,
        "school_share": {
         "nature": 0.817,
@@ -37254,6 +37548,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.075,
+       "physical_share": 0.114,
        "dual_wield": false,
        "school_share": {
         "nature": 0.843,
@@ -37391,6 +37686,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.075,
+       "physical_share": 0.116,
        "dual_wield": false,
        "school_share": {
         "nature": 0.828,
@@ -37529,6 +37825,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.075,
+       "physical_share": 0.115,
        "dual_wield": false,
        "school_share": {
         "nature": 0.813,
@@ -37663,6 +37960,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.508,
+       "physical_share": 0.508,
        "dual_wield": false,
        "school_share": {
         "nature": 0.719,
@@ -37785,6 +38083,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.504,
+       "physical_share": 0.504,
        "dual_wield": false,
        "school_share": {
         "nature": 0.844,
@@ -37908,6 +38207,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.534,
+       "physical_share": 0.534,
        "dual_wield": false,
        "school_share": {
         "nature": 0.818,
@@ -38036,6 +38336,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.323,
+       "physical_share": 0.655,
        "dual_wield": false,
        "school_share": {
         "nature": 0.901,
@@ -38168,6 +38469,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.247,
+       "physical_share": 0.668,
        "dual_wield": false,
        "school_share": {
         "nature": 0.862,
@@ -38302,6 +38604,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.246,
+       "physical_share": 0.65,
        "dual_wield": false,
        "school_share": {
         "nature": 0.888,
@@ -38438,6 +38741,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.209,
+       "physical_share": 0.558,
        "dual_wield": false,
        "school_share": {
         "nature": 0.913,
@@ -38575,6 +38879,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.21,
+       "physical_share": 0.567,
        "dual_wield": false,
        "school_share": {
         "nature": 0.921,
@@ -38708,9 +39013,10 @@
         "Thundering Strikes": 5,
         "Tidal Focus": 5
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.19,
+       "physical_share": 0.524,
        "dual_wield": false,
        "school_share": {
         "nature": 0.927,
@@ -38844,9 +39150,10 @@
         "Thundering Strikes": 5,
         "Tidal Focus": 5
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.192,
+       "physical_share": 0.499,
        "dual_wield": false,
        "school_share": {
         "nature": 0.933,
@@ -38985,9 +39292,10 @@
         "Tidal Focus": 5,
         "Totemic Focus": 2
        },
-       "unit": "spell_power",
-       "caster": true,
+       "unit": "attack_power",
+       "caster": false,
        "white_share": 0.17,
+       "physical_share": 0.475,
        "dual_wield": false,
        "school_share": {
         "nature": 0.938,
@@ -39123,6 +39431,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.508,
+       "physical_share": 0.508,
        "dual_wield": false,
        "school_share": {
         "nature": 0.712,
@@ -39245,6 +39554,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.487,
+       "physical_share": 0.487,
        "dual_wield": false,
        "school_share": {
         "nature": 0.855,
@@ -39367,6 +39677,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.511,
+       "physical_share": 0.511,
        "dual_wield": false,
        "school_share": {
         "nature": 0.833,
@@ -39492,6 +39803,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.466,
+       "physical_share": 0.466,
        "dual_wield": false,
        "school_share": {
         "nature": 0.905,
@@ -39622,6 +39934,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.357,
+       "physical_share": 0.525,
        "dual_wield": false,
        "school_share": {
         "nature": 0.851,
@@ -39753,6 +40066,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.39,
+       "physical_share": 0.551,
        "dual_wield": false,
        "school_share": {
         "nature": 0.859,
@@ -39886,6 +40200,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.309,
+       "physical_share": 0.465,
        "dual_wield": false,
        "school_share": {
         "nature": 0.873,
@@ -40020,6 +40335,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.34,
+       "physical_share": 0.492,
        "dual_wield": false,
        "school_share": {
         "nature": 0.872,
@@ -40153,6 +40469,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.288,
+       "physical_share": 0.421,
        "dual_wield": false,
        "school_share": {
         "nature": 0.879,
@@ -40288,6 +40605,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.295,
+       "physical_share": 0.426,
        "dual_wield": false,
        "school_share": {
         "nature": 0.876,
@@ -40426,6 +40744,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.262,
+       "physical_share": 0.399,
        "dual_wield": false,
        "school_share": {
         "nature": 0.894,
@@ -40559,9 +40878,10 @@
        "talents": {
         "Convection": 1
        },
-       "unit": "attack_power",
-       "caster": false,
+       "unit": "spell_power",
+       "caster": true,
        "white_share": 0.225,
+       "physical_share": 0.225,
        "dual_wield": false,
        "school_share": {
         "nature": 0.687,
@@ -40684,6 +41004,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.164,
+       "physical_share": 0.164,
        "dual_wield": false,
        "school_share": {
         "nature": 0.774,
@@ -40806,6 +41127,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.153,
+       "physical_share": 0.153,
        "dual_wield": false,
        "school_share": {
         "nature": 0.741,
@@ -40932,6 +41254,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.146,
+       "physical_share": 0.146,
        "dual_wield": false,
        "school_share": {
         "nature": 0.799,
@@ -41058,6 +41381,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.13,
+       "physical_share": 0.182,
        "dual_wield": false,
        "school_share": {
         "nature": 0.738,
@@ -41188,6 +41512,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.116,
+       "physical_share": 0.164,
        "dual_wield": false,
        "school_share": {
         "nature": 0.783,
@@ -41320,6 +41645,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.084,
+       "physical_share": 0.117,
        "dual_wield": false,
        "school_share": {
         "nature": 0.779,
@@ -41455,6 +41781,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.081,
+       "physical_share": 0.121,
        "dual_wield": false,
        "school_share": {
         "nature": 0.815,
@@ -41590,6 +41917,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.081,
+       "physical_share": 0.117,
        "dual_wield": false,
        "school_share": {
         "nature": 0.846,
@@ -41727,6 +42055,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.078,
+       "physical_share": 0.118,
        "dual_wield": false,
        "school_share": {
         "nature": 0.818,
@@ -41866,6 +42195,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.073,
+       "physical_share": 0.109,
        "dual_wield": false,
        "school_share": {
         "nature": 0.815,
@@ -42254,6 +42584,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.36,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.882,
@@ -42358,6 +42689,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.391,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.88,
@@ -42462,6 +42794,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.367,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.879,
@@ -42569,6 +42902,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.349,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.893,
@@ -42678,6 +43012,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.39,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.889,
@@ -42787,6 +43122,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.388,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.913,
@@ -42897,6 +43233,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.217,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.938,
@@ -43012,6 +43349,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.172,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.947,
@@ -43127,6 +43465,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.131,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.949,
@@ -43246,6 +43585,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.159,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.954,
@@ -43369,6 +43709,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.121,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.955,
@@ -43483,6 +43824,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.578,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.676,
@@ -43587,6 +43929,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.625,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.707,
@@ -43691,6 +44034,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.604,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.642,
@@ -43799,6 +44143,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.608,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.694,
@@ -43911,6 +44256,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.69,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.696,
@@ -44024,6 +44370,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.678,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.793,
@@ -44138,6 +44485,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.633,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.792,
@@ -44256,6 +44604,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.619,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.806,
@@ -44376,6 +44725,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.581,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.823,
@@ -44500,6 +44850,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.566,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.857,
@@ -44626,6 +44977,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.459,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.909,
@@ -44740,6 +45092,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.437,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.722,
@@ -44844,6 +45197,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.452,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.782,
@@ -44947,6 +45301,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.43,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.725,
@@ -45053,6 +45408,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.427,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.747,
@@ -45161,6 +45517,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.479,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.675,
@@ -45271,6 +45628,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.324,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.703,
@@ -45382,6 +45740,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.436,
        "dual_wield": false,
        "school_share": {
         "fire": 0.618,
@@ -45495,6 +45854,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.39,
        "dual_wield": false,
        "school_share": {
         "fire": 0.54,
@@ -45613,6 +45973,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.369,
        "dual_wield": false,
        "school_share": {
         "fire": 0.606,
@@ -45734,6 +46095,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.386,
        "dual_wield": false,
        "school_share": {
         "fire": 0.611,
@@ -45857,6 +46219,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.347,
        "dual_wield": false,
        "school_share": {
         "fire": 0.594,
@@ -45973,6 +46336,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.578,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.676,
@@ -46077,6 +46441,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.625,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.707,
@@ -46181,6 +46546,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.603,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.642,
@@ -46288,6 +46654,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.609,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.694,
@@ -46399,6 +46766,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.692,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.7,
@@ -46510,6 +46878,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.669,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.746,
@@ -46623,6 +46992,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.624,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.783,
@@ -46740,6 +47110,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.605,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.816,
@@ -46859,6 +47230,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.563,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.83,
@@ -46980,6 +47352,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.502,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.906,
@@ -47104,6 +47477,7 @@
        "unit": "spell_power",
        "caster": true,
        "white_share": 0.0,
+       "physical_share": 0.45,
        "dual_wield": false,
        "school_share": {
         "shadow": 0.911,
@@ -47462,6 +47836,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.42,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -47569,6 +47944,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.409,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -47679,6 +48055,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.352,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -47792,6 +48169,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.385,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -47907,6 +48285,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.368,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -48024,6 +48403,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.345,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -48144,6 +48524,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.409,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -48264,6 +48645,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.413,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -48386,6 +48768,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.381,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -48510,6 +48893,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.379,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -48637,6 +49021,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.356,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -48751,6 +49136,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.292,
+       "physical_share": 1.0,
        "dual_wield": true,
        "school_share": {},
        "gear": [
@@ -48859,6 +49245,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.271,
+       "physical_share": 1.0,
        "dual_wield": true,
        "school_share": {},
        "gear": [
@@ -48968,6 +49355,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.256,
+       "physical_share": 1.0,
        "dual_wield": true,
        "school_share": {},
        "gear": [
@@ -49080,6 +49468,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.298,
+       "physical_share": 1.0,
        "dual_wield": true,
        "school_share": {},
        "gear": [
@@ -49195,6 +49584,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.259,
+       "physical_share": 1.0,
        "dual_wield": true,
        "school_share": {},
        "gear": [
@@ -49311,6 +49701,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.203,
+       "physical_share": 1.0,
        "dual_wield": true,
        "school_share": {},
        "gear": [
@@ -49428,6 +49819,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.28,
+       "physical_share": 1.0,
        "dual_wield": true,
        "school_share": {},
        "gear": [
@@ -49547,6 +49939,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.272,
+       "physical_share": 1.0,
        "dual_wield": true,
        "school_share": {},
        "gear": [
@@ -49669,6 +50062,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.253,
+       "physical_share": 1.0,
        "dual_wield": true,
        "school_share": {},
        "gear": [
@@ -49794,6 +50188,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.25,
+       "physical_share": 1.0,
        "dual_wield": true,
        "school_share": {},
        "gear": [
@@ -49923,6 +50318,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.23,
+       "physical_share": 1.0,
        "dual_wield": true,
        "school_share": {},
        "gear": [
@@ -50042,6 +50438,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.668,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -50149,6 +50546,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.614,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -50257,6 +50655,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.578,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -50369,6 +50768,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.517,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -50482,6 +50882,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.496,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -50598,6 +50999,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.477,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -50714,6 +51116,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.346,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -50832,6 +51235,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.355,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -50952,6 +51356,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.343,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -51076,6 +51481,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.331,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -51201,6 +51607,7 @@
        "unit": "attack_power",
        "caster": false,
        "white_share": 0.319,
+       "physical_share": 1.0,
        "dual_wield": false,
        "school_share": {},
        "gear": [
@@ -57934,13 +58341,13 @@
     "hit_rating": {
      "cap_pct": 4.0,
      "current_pct": 0.0,
-     "below": 0.01615,
+     "below": 0.014135981308411214,
      "above": 0.0
     },
     "expertise_rating": {
      "cap_pct": 10.0,
      "current_pct": 0.0,
-     "below": 0.0087,
+     "below": 0.007139252336448597,
      "above": 0.0
     }
    },
@@ -57969,9 +58376,9 @@
    "unit": "spell_power",
    "unit_total": 15.0,
    "expected": {
-    "seconds_per_kill": 20.829,
-    "gain_seconds": 0.95536,
-    "pct_faster": 4.586682
+    "seconds_per_kill": 18.690215,
+    "gain_seconds": 0.736196,
+    "pct_faster": 3.938941
    }
   },
   {
