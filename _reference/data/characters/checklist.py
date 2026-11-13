@@ -408,7 +408,7 @@ def render(cfg, C):
             lines.append("Left the plan: " + esc(", ".join(ch["gone"])) + ".")
         if ch["moved"]:
             lines.append("Moved: " + esc(", ".join(ch["moved"])) + ".")
-        changes = f'<section class="changes"><h3>Since {esc(ch["time"])} (level {ch["level"]})</h3><p>{" ".join(lines)}</p></section>'
+        changes = f'<section class="changes"><h3>Changed since your last refresh ({esc(ch["time"])}, level {ch["level"]})</h3><p>{" ".join(lines)}</p></section>'
     else:
         changes = ""
 
@@ -449,7 +449,7 @@ def render(cfg, C):
     ah = f" · auction prices {h['ah_age']:.1f} h old" if h.get("ah_age") is not None else ""
     profs = " · ".join(f"{esc(k)} {v[0]}" for k, v in h["professions"].items())
     return TEMPLATE.format(
-        title=esc(f"{h['name'].split()[0]}'s Town Checklist"), refresh=refresh, name=esc(h["name"]), lv=lv,
+        title=esc(f"{h['name'].split()[0]}'s Town Checklist"), refresh=refresh, seen=esc(h.get("seen") or h["fetched"]), name=esc(h["name"]), lv=lv,
         who=esc(f"{h['race']} {h['class']} · {h['spec']}"), gold=coins(h.get("gold")) if h.get("gold") is not None else '<span class="muted">log in for gold</span>',
         free=coins(gold.get("spend")) if gold.get("spend") is not None else "?", reserve=coins(gold.get("reserve")),
         ah=ah, profs=profs, changes=changes, town=town, road=road or '<p class="muted">Nothing to leave the guide for in the next levels.</p>',
@@ -592,6 +592,7 @@ footer {{ color: var(--muted); font-size: .8rem; margin-top: 28px; }}
 </style>
 <header class="bar"><div class="wrap">
   <span class="name">{name}</span><span class="lvl-badge">Level {lv}</span><span class="meta">{who}</span>
+  <span class="stat"><b>As of</b>{seen}</span>
   <span class="stat"><b>Gold</b>{gold}</span><span class="stat"><b>Free for gear</b>{free}</span>
   <span class="stat"><b>Keep for training</b>{reserve}</span>
 </div><div class="wrap"><nav class="tabs" role="tablist" aria-label="Checklist sections">
