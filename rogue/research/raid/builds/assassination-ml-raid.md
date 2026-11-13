@@ -55,11 +55,11 @@ The Assassination build the machine-learning talent search found in a full raid 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Asn Muti* | community simulator | - | 451 | +0.0% | 838 | -0.1% | 0 s |
-| 2 | [`assassination-open-raid`](assassination-open-raid.md) | ours: derived (open search) | 31/19/1 | 450 | -0.2% | 839 | +0.0% | 0 s |
-| 3 | **[`assassination-ml-raid`](assassination-ml-raid.md)** | ours: derived (ML search) | 29/22/0 | 329 | -27.1% | 710 | -15.3% | 0 s |
-| 4 | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) | ours: hand draft | 28/21/2 | 319 | -29.2% | 701 | -16.4% | 0 s |
-| 5 | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) | ours: hand draft | 29/22/0 | 315 | -30.2% | 691 | -17.6% | 0 s |
+| 1 | *Asn Muti* | community simulator | - | 448 | +0.0% | 834 | +0.0% | 0 s |
+| 2 | [`assassination-open-raid`](assassination-open-raid.md) | ours: derived (open search) | 31/19/1 | 447 | -0.2% | 833 | -0.1% | 0 s |
+| 3 | **[`assassination-ml-raid`](assassination-ml-raid.md)** | ours: derived (ML search) | 29/22/0 | 326 | -27.2% | 704 | -15.6% | 0 s |
+| 4 | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) | ours: hand draft | 28/21/2 | 317 | -29.3% | 695 | -16.7% | 0 s |
+| 5 | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) | ours: hand draft | 29/22/0 | 312 | -30.4% | 685 | -17.8% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -88,23 +88,23 @@ The Assassination build the machine-learning talent search found in a full raid 
   10. drop: if not Mutilate is known and not Hemorrhage is known and not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef: cast Sinister Strike (+3.7%, pass 14)
   11. threshold 5 -> 2.5: if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not variableRef or combo points ≥ 3 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8) (+0.6%, pass 14)
 
-Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: if variableRef: cast Stealth.
+Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: if “Start In Stealth”: cast Stealth.
 
 | # | Priority (the first line whose condition holds is cast) | [`assassination-ml-raid`](assassination-ml-raid.md) casts/min |
 |---|---|---|
-| 1 | if variableRef: groupReference | as ready |
-| 2 | if not variableRef and variableRef and variableRef and not Garrote is on the target: cast Garrote | 0.3 |
-| 3 | if not Garrote is on the target and energy ≥ current cost and not variableRef and variableRef and variableRef and not variableRef and time into the fight ≥ 1s: cast Vanish | 0.3 |
-| 4 | if energy ≥ current cost and variableRef and variableRef and variableRef and not variableRef and time into the fight ≥ 1s: cast Vanish | 0.3 |
+| 1 | if “Use Expose Armor”: groupReference | as ready |
+| 2 | if not “Use Ambush Opener” and “Use Vanish for Damage” and “Current Points less than 5” and not Garrote is on the target: cast Garrote | 0.3 |
+| 3 | if not Garrote is on the target and energy ≥ current cost and not “Use Ambush Opener” and “Use Vanish for Damage” and “Current Points less than 5” and not “SnD Fall Imminent” and time into the fight ≥ 1s: cast Vanish | 0.3 |
+| 4 | if energy ≥ current cost and “Use Ambush Opener” and “Use Vanish for Damage” and “Current Points less than 5” and not “SnD Fall Imminent” and time into the fight ≥ 1s: cast Vanish | 0.3 |
 | 5 | if Slice and Dice is up: use every other cooldown when ready | as ready |
 | 6 | groupReference | as ready |
-| 7 | if (variableRef and combo points ≤ 3 and energy ≤ 80 or not variableRef and energy ≤ 80): cast Shank | 6.0 |
+| 7 | if (“Boot Knife Known” and combo points ≤ 3 and energy ≤ 80 or not “Boot Knife Known” and energy ≤ 80): cast Shank | 6.0 |
 | 8 | if (not Blade Flurry is known or Blade Flurry is up): cast OffensivePotion | as ready |
-| 9 | if (energy ≤ 15 and not talentIsKnown or Eureka! is known and energy ≤ 25 and energy ≤ 25 or energy ≤ 25 and Death Mark is on the target) and (combo points < 3 or variableRef or Eureka! is up): cast Thistle Tea | as ready |
-| 10 | if variableRef and variableRef and not variableRef and not variableRef: cast Slice and Dice | 3.2 |
-| 11 | if combo points = 5 and not variableRef and energy ≥ current cost and not variableRef and not Elune's Light is up: cast Cold Blood | 0.3 |
-| 12 | if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not variableRef or combo points ≥ 3 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8) | 3.6 |
-| 13 | if not Mutilate is known and not Hemorrhage is known and not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef: cast Sinister Strike | 14.8 |
+| 9 | if (energy ≤ 15 and not talentIsKnown or Eureka! is known and energy ≤ 25 and energy ≤ 25 or energy ≤ 25 and Death Mark is on the target) and (combo points < 3 or “Expose - Low Duration” or Eureka! is up): cast Thistle Tea | as ready |
+| 10 | if “At or Below SnD Clipping Threshold” and “Above SnD Point Threshold” and not “Fight About to End” and not “Expose - Prevent Other Finishers”: cast Slice and Dice | 3.2 |
+| 11 | if combo points = 5 and not “SnD Fall Imminent” and energy ≥ current cost and not “Expose - Prevent Other Finishers” and not Elune's Light is up: cast Cold Blood | 0.3 |
+| 12 | if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not “SnD Fall Imminent” or combo points ≥ 3 and “Fight About to End”) and not “Expose - Prevent Other Finishers” and not talentIsKnown: cast Eviscerate (rank 8) | 3.6 |
+| 13 | if not Mutilate is known and not Hemorrhage is known and not “Use Backstab” and “Current Points less than 5” and (not “SnD Fall Imminent” or energy > (current cost + current cost) and not “SnD Fall Imminent” or not “Above SnD Point Threshold” or “In Danger of Energy Capping” or “Expose - Low Duration”) and “Gnome Eureka - Active or Not Ready”: cast Sinister Strike | 14.8 |
 
 Lines of the simulator's rotation these builds never cast: cast Ambush, cast Blood Fury, cast Elune's Light, cast Eureka!, cast Rupture, cast Backstab (rank 8) (its condition never held in these fights); cast Preparation (needs the Preparation talent); strict sequence: cast Blood Fury; cast Blade Flurry (needs the Blade Flurry talent); cast Adrenaline Rush, strict sequence: cast Blood Fury; cast Adrenaline Rush, strict sequence: cast Elune's Light; cast Adrenaline Rush (needs the Adrenaline Rush talent); cast Premeditation (needs the Premeditation talent); cast Death Mark (needs the Death Mark talent); cast Ghostly Strike (needs the Ghostly Strike talent); cast Hemorrhage (needs the Hemorrhage talent); cast Mutilate (needs the Mutilate talent).
 

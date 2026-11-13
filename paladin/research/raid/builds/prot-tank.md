@@ -76,10 +76,10 @@ Allocation adopted on 2026-09-28 from `opt-prot-tank-raid-tank`, the best build 
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 0/35/16 | 1.022 | +0.0% | 1185 | 287 |
-| 2 | **[`prot-tank`](prot-tank.md)** | ours: hand draft | 0/33/18 | 1.000 | -2.1% | 1114 | 281 |
-| 3 | *Default* | community simulator | - | 0.998 | -2.3% | 1160 | 295 |
-| 4 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 1/34/16 | 0.976 | -4.5% | 1060 | 281 |
+| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 0/35/16 | 1.021 | +0.0% | 1178 | 288 |
+| 2 | **[`prot-tank`](prot-tank.md)** | ours: hand draft | 0/33/18 | 1.000 | -2.1% | 1107 | 281 |
+| 3 | *Default* | community simulator | - | 0.998 | -2.3% | 1153 | 295 |
+| 4 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 1/34/16 | 0.976 | -4.4% | 1053 | 281 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -98,8 +98,8 @@ Before the pull: at -20s: cast Righteous Fury; at -18.5s: cast Retribution Aura;
 | 3 | cast Judgement | 0.3 |
 | 4 | if time left on Seal of Fury < time to the next auto attack and auraIsInactive: cast Seal of Fury | 2.0 |
 | 5 | cast Consecration | 5.6 |
-| 6 | cast Holy Shield | 5.0 |
-| 7 | cast Holy Shield (rank 3) | 0.5 |
+| 6 | cast Holy Shield | 5.1 |
+| 7 | cast Holy Shield (rank 3) | 0.4 |
 | 8 | cast Holy Strike | 9.7 |
 | 9 | cast Lay on Hands | 0.3 |
 | 10 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 0.5 |

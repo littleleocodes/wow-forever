@@ -15,84 +15,74 @@
   "bis": {
    "entry": "assassination-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-combat-bis.gear.json",
-   "date": "2026-11-11",
+   "date": "2026-11-13",
+   "setting": "raid",
+   "chosen": "current",
+   "ilvl": 62.1,
+   "trinkets": [
+    "Hand of Justice",
+    "Adaptive Combat Assistant"
+   ],
+   "names": [
+    "Outlaw's Collar",
+    "Onyxia Tooth Pendant",
+    "Theramore Pauldrons",
+    "Howler's Furs",
+    "Dawn Armor",
+    "Bracers of the Eclipse",
+    "Theramore Gloves",
+    "Assassin's Waistguard",
+    "Devilsaur Leggings",
+    "Shadowcraft Boots",
+    "Quick Strike Ring",
+    "Warden's Signet of Ferocity",
+    "Hand of Justice",
+    "Rune of the Guard Captain",
+    "Black Amnesty",
+    "Heartseeker",
+    "Satyr's Bow"
+   ],
+   "race_seed1": {
+    "current": 1.0,
+    "all-slots": 1.0013687490346639,
+    "keep-sets-and-effects": 1.0013687490346639,
+    "previous": 1.0013046573545754,
+    "previous+trinkets": 1.0013687490346639
+   },
+   "confirm_seed2": {
+    "current": 1.0,
+    "all-slots": 0.9997735419040855
+   },
+   "weights": {
+    "PseudoStatMainHandDps": 2.0846,
+    "PseudoStatOffHandDps": 0.8421,
+    "StatAgility": 0.5285,
+    "StatArmorPenetration": 0.0996,
+    "StatAttackPower": 0.2512,
+    "StatCritRating": 0.5066,
+    "StatExpertiseRating": 0.5691,
+    "StatHasteRating": 0.3879,
+    "StatHitRating": 0.5874,
+    "StatSpellPiercing": 0.1299,
+    "StatStrength": 0.2763
+   },
+   "evaluated_on": [
+    "assassination-raid: ml winner"
+   ],
+   "commit": "ff9babba5"
+  },
+  "bis2": true,
+  "bis-raid": {
+   "entry": "combat-daggers-raid",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-combat-bis-raid.gear.json",
+   "date": "2026-11-13",
+   "setting": "raid",
    "chosen": "all-slots",
    "ilvl": 61.9,
    "trinkets": [
     "Hand of Justice",
     "Rune of the Guard Captain"
    ],
-   "trinket_screen": {
-    "Hand of Justice (11815)": 1.0212,
-    "Counterattack Lodestone (18537)": 1.0095,
-    "Rune of the Guard Captain (19120)": 1.0092,
-    "Cleansed Vilebranch Medallion (270275)": 1.0092,
-    "Adaptive Combat Assistant (272437)": 1.0083,
-    "Blackhand's Breadth (13965)": 1.008,
-    "Molten Heart of the Mountain (249470)": 1.0078,
-    "Smolderweb's Eye (13213)": 1.0071,
-    "Royal Seal of Eldre'Thalas (18465)": 1.0071,
-    "Frozen Heart of the Mountain (249469)": 1.0064,
-    "Jewel of the Guard Captain (270225)": 1.0043,
-    "Vigilance Charm (18370)": 1.0035,
-    "Everlook Delivery Bot (274760)": 1.0031,
-    "Everlook Pathcarver (274759)": 1.0027,
-    "Cannonball Runner (13382)": 1.0026,
-    "Eye of the Beast (13968)": 1.0013,
-    "Weakness Analyzer (272438)": 1.0005,
-    "Dog Whistle (3456)": 1.0,
-    "Minor Recombobulator (4381)": 1.0,
-    "Gnomish Universal Remote (7506)": 1.0,
-    "Shard of the Splithooves (10659)": 1.0,
-    "Demon's Blood (10779)": 1.0,
-    "Force of Will (11810)": 1.0,
-    "Smoking Heart of the Mountain (11811)": 1.0,
-    "Second Wind (11819)": 1.0,
-    "Burst of Knowledge (11832)": 1.0,
-    "Heart of the Scale (13164)": 1.0,
-    "Alchemist's Stone (13503)": 1.0,
-    "Arcanite Dragonling (16022)": 1.0,
-    "Heart of Noxxion (17744)": 1.0,
-    "Mindtap Talisman (18371)": 1.0,
-    "Gyrofreeze Ice Reflector (18634)": 1.0,
-    "Major Recombobulator (18637)": 1.0,
-    "Hyper-Radiant Flame Reflector (18638)": 1.0,
-    "Ultra-Flash Shadow Reflector (18639)": 1.0,
-    "The Eye of Shadow (18665)": 1.0,
-    "Essence of the Pure Flame (18815)": 1.0,
-    "Talisman of Ephemeral Power (18820)": 1.0,
-    "Arena Grand Master (19024)": 1.0,
-    "Talisman of Arathor (20071)": 1.0,
-    "Defiler's Talisman (20072)": 1.0,
-    "Defiler's Talisman (21115)": 1.0,
-    "Defiler's Talisman (21116)": 1.0,
-    "Talisman of Arathor (21117)": 1.0,
-    "Talisman of Arathor (21118)": 1.0,
-    "Talisman of Arathor (21119)": 1.0,
-    "Defiler's Talisman (21120)": 1.0,
-    "Defender of the Timbermaw (21326)": 1.0,
-    "Heart of Wyrmthalak (22321)": 1.0,
-    "Dormant Heart of the Mountain (249473)": 1.0,
-    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
-    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
-    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
-    "Gnomish Poultryizer (260824)": 1.0,
-    "Enriched Seal (271903)": 1.0,
-    "Volunteer's Lucky Seal (271904)": 1.0,
-    "Enriched Seal (271905)": 1.0,
-    "Volunteer's Lucky Seal (271906)": 1.0,
-    "Darkspear Voodoo Seal (272059)": 1.0,
-    "Relentless Raider's Seal (272060)": 1.0,
-    "Darkspear Voodoo Seal (272061)": 1.0,
-    "Relentless Raider's Seal (272062)": 1.0,
-    "Serenity Field (272439)": 1.0,
-    "Defender's Grip Stabilizer (272440)": 1.0,
-    "Lookie's Spyglass (273298)": 1.0,
-    "Worgenbane Talisman (273643)": 1.0,
-    "Cursed Murloc Eye (273840)": 1.0,
-    "Roogug's Severed Head (274152)": 1.0,
-    "Parachute-Priest Pager (274761)": 1.0
-   },
    "names": [
     "Outlaw's Collar",
     "Onyxia Tooth Pendant",
@@ -114,306 +104,45 @@
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.0019229394584757,
-    "keep-sets-and-effects": 1.0019229394584757
+    "all-slots": 1.0015812065152974,
+    "keep-sets-and-effects": 1.0015812065152974,
+    "previous": 1.0003899365768374,
+    "previous+trinkets": 1.0015812065152974
    },
    "confirm_seed2": {
     "current": 1.0,
-    "all-slots": 1.0017308741241586
+    "all-slots": 1.0014156454061767
    },
    "weights": {
-    "PseudoStatMainHandDps": 2.1016,
-    "PseudoStatOffHandDps": 0.8488,
-    "StatAgility": 0.5246,
-    "StatArmorPenetration": 0.0996,
-    "StatAttackPower": 0.2528,
-    "StatCritRating": 0.5058,
-    "StatExpertiseRating": 0.5866,
-    "StatHasteRating": 0.3782,
-    "StatHitRating": 0.5625,
-    "StatSpellPiercing": 0.1372,
-    "StatStrength": 0.2781
-   },
-   "evaluated_on": [
-    "assassination-raid: ml winner"
-   ],
-   "replaced": [
-    {
-     "slot": 0,
-     "from": "Darkmantle Cap (not in the database)",
-     "to": "Outlaw's Collar"
-    },
-    {
-     "slot": 5,
-     "from": "Darkmantle Bracers (not in the database)",
-     "to": "Bracers of the Eclipse"
-    },
-    {
-     "slot": 12,
-     "from": "Adaptive Combat Assistant",
-     "to": "Hand of Justice"
-    },
-    {
-     "slot": 16,
-     "from": "Gryphonwing Long Bow",
-     "to": "Satyr's Bow"
-    }
-   ],
-   "remade": {
-    "simulator": "wowsims/forever ff9babba5",
-    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
-    "missing_before": [
-     "item:22005",
-     "item:22004"
-    ],
-    "winner_of": "bis-dummy",
-    "talents_left_out": [],
-    "minutes": 1.4
-   }
-  },
-  "bis2": true,
-  "bis-raid": {
-   "entry": "combat-daggers-raid",
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-combat-bis-raid.gear.json",
-   "date": "2026-11-11",
-   "chosen": "all-slots",
-   "ilvl": 62.6,
-   "trinkets": [
-    "Hand of Justice",
-    "Counterattack Lodestone"
-   ],
-   "trinket_screen": {
-    "Hand of Justice (11815)": 1.0213,
-    "Adaptive Combat Assistant (272437)": 1.0105,
-    "Rune of the Guard Captain (19120)": 1.0102,
-    "Cleansed Vilebranch Medallion (270275)": 1.0102,
-    "Counterattack Lodestone (18537)": 1.0095,
-    "Smolderweb's Eye (13213)": 1.0095,
-    "Royal Seal of Eldre'Thalas (18465)": 1.0095,
-    "Blackhand's Breadth (13965)": 1.009,
-    "Frozen Heart of the Mountain (249469)": 1.0079,
-    "Molten Heart of the Mountain (249470)": 1.0077,
-    "Jewel of the Guard Captain (270225)": 1.0047,
-    "Cannonball Runner (13382)": 1.0039,
-    "Everlook Pathcarver (274759)": 1.0037,
-    "Vigilance Charm (18370)": 1.0035,
-    "Everlook Delivery Bot (274760)": 1.0033,
-    "Eye of the Beast (13968)": 1.0018,
-    "Weakness Analyzer (272438)": 1.0004,
-    "Dog Whistle (3456)": 1.0,
-    "Minor Recombobulator (4381)": 1.0,
-    "Gnomish Universal Remote (7506)": 1.0,
-    "Shard of the Splithooves (10659)": 1.0,
-    "Demon's Blood (10779)": 1.0,
-    "Force of Will (11810)": 1.0,
-    "Smoking Heart of the Mountain (11811)": 1.0,
-    "Second Wind (11819)": 1.0,
-    "Burst of Knowledge (11832)": 1.0,
-    "Heart of the Scale (13164)": 1.0,
-    "Alchemist's Stone (13503)": 1.0,
-    "Arcanite Dragonling (16022)": 1.0,
-    "Heart of Noxxion (17744)": 1.0,
-    "Mindtap Talisman (18371)": 1.0,
-    "Gyrofreeze Ice Reflector (18634)": 1.0,
-    "Major Recombobulator (18637)": 1.0,
-    "Hyper-Radiant Flame Reflector (18638)": 1.0,
-    "Ultra-Flash Shadow Reflector (18639)": 1.0,
-    "The Eye of Shadow (18665)": 1.0,
-    "Essence of the Pure Flame (18815)": 1.0,
-    "Talisman of Ephemeral Power (18820)": 1.0,
-    "Arena Grand Master (19024)": 1.0,
-    "Talisman of Arathor (20071)": 1.0,
-    "Defiler's Talisman (20072)": 1.0,
-    "Defiler's Talisman (21115)": 1.0,
-    "Defiler's Talisman (21116)": 1.0,
-    "Talisman of Arathor (21117)": 1.0,
-    "Talisman of Arathor (21118)": 1.0,
-    "Talisman of Arathor (21119)": 1.0,
-    "Defiler's Talisman (21120)": 1.0,
-    "Defender of the Timbermaw (21326)": 1.0,
-    "Heart of Wyrmthalak (22321)": 1.0,
-    "Dormant Heart of the Mountain (249473)": 1.0,
-    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
-    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
-    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
-    "Gnomish Poultryizer (260824)": 1.0,
-    "Enriched Seal (271903)": 1.0,
-    "Volunteer's Lucky Seal (271904)": 1.0,
-    "Enriched Seal (271905)": 1.0,
-    "Volunteer's Lucky Seal (271906)": 1.0,
-    "Darkspear Voodoo Seal (272059)": 1.0,
-    "Relentless Raider's Seal (272060)": 1.0,
-    "Darkspear Voodoo Seal (272061)": 1.0,
-    "Relentless Raider's Seal (272062)": 1.0,
-    "Serenity Field (272439)": 1.0,
-    "Defender's Grip Stabilizer (272440)": 1.0,
-    "Lookie's Spyglass (273298)": 1.0,
-    "Worgenbane Talisman (273643)": 1.0,
-    "Cursed Murloc Eye (273840)": 1.0,
-    "Roogug's Severed Head (274152)": 1.0,
-    "Parachute-Priest Pager (274761)": 1.0
-   },
-   "names": [
-    "Outlaw's Collar",
-    "Onyxia Tooth Pendant",
-    "Theramore Pauldrons",
-    "Earthweave Cloak",
-    "Dawn Armor",
-    "Bracers of the Eclipse",
-    "Theramore Gloves",
-    "Assassin's Waistguard",
-    "Devilsaur Leggings",
-    "Shadowcraft Boots",
-    "Quick Strike Ring",
-    "Band of Earthen Might",
-    "Hand of Justice",
-    "Counterattack Lodestone",
-    "Black Amnesty",
-    "Heartseeker",
-    "Satyr's Bow"
-   ],
-   "race_seed1": {
-    "current": 1.0,
-    "all-slots": 1.0013163039711195,
-    "keep-sets-and-effects": 1.0013163039711195
-   },
-   "confirm_seed2": {
-    "current": 1.0,
-    "all-slots": 1.0009740369482125
-   },
-   "weights": {
-    "PseudoStatMainHandDps": 2.1066,
-    "PseudoStatOffHandDps": 0.8474,
-    "StatAgility": 0.5182,
-    "StatArmorPenetration": 0.1005,
-    "StatAttackPower": 0.2535,
-    "StatCritRating": 0.5027,
-    "StatExpertiseRating": 0.5921,
-    "StatHasteRating": 0.3647,
-    "StatHitRating": 0.5874,
-    "StatSpellPiercing": 0.1319,
-    "StatStrength": 0.2789
+    "PseudoStatMainHandDps": 2.0894,
+    "PseudoStatOffHandDps": 0.8397,
+    "StatAgility": 0.5217,
+    "StatArmorPenetration": 0.0992,
+    "StatAttackPower": 0.2512,
+    "StatCritRating": 0.5057,
+    "StatExpertiseRating": 0.5705,
+    "StatHasteRating": 0.3426,
+    "StatHitRating": 0.5842,
+    "StatSpellPiercing": 0.136,
+    "StatStrength": 0.2763
    },
    "evaluated_on": [
     "combat-daggers-raid: ml winner (full raid)"
    ],
-   "replaced": [
-    {
-     "slot": 0,
-     "from": "Darkmantle Cap (not in the database)",
-     "to": "Outlaw's Collar"
-    },
-    {
-     "slot": 5,
-     "from": "Darkmantle Bracers (not in the database)",
-     "to": "Bracers of the Eclipse"
-    },
-    {
-     "slot": 12,
-     "from": "Adaptive Combat Assistant",
-     "to": "Hand of Justice"
-    },
-    {
-     "slot": 13,
-     "from": "Rune of the Guard Captain",
-     "to": "Counterattack Lodestone"
-    },
-    {
-     "slot": 16,
-     "from": "Gryphonwing Long Bow",
-     "to": "Satyr's Bow"
-    }
-   ],
-   "remade": {
-    "simulator": "wowsims/forever ff9babba5",
-    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
-    "missing_before": [
-     "item:22005",
-     "item:22004"
-    ],
-    "winner_of": "bis-raid",
-    "talents_left_out": [],
-    "minutes": 1.4
-   }
+   "commit": "ff9babba5",
+   "searched": true
   },
   "prebis": {
    "entry": "combat-daggers-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-combat-prebis.gear.json",
-   "date": "2026-11-11",
-   "chosen": "keep-sets-and-effects",
+   "date": "2026-11-13",
+   "setting": "raid",
+   "chosen": "previous",
    "ilvl": 61.6,
    "trinkets": [
     "Hand of Justice",
     "Rune of the Guard Captain"
    ],
-   "trinket_screen": {
-    "Hand of Justice (11815)": 1.0204,
-    "Rune of the Guard Captain (19120)": 1.0101,
-    "Cleansed Vilebranch Medallion (270275)": 1.0101,
-    "Counterattack Lodestone (18537)": 1.0095,
-    "Blackhand's Breadth (13965)": 1.008,
-    "Molten Heart of the Mountain (249470)": 1.0075,
-    "Adaptive Combat Assistant (272437)": 1.0073,
-    "Smolderweb's Eye (13213)": 1.0067,
-    "Royal Seal of Eldre'Thalas (18465)": 1.0067,
-    "Frozen Heart of the Mountain (249469)": 1.0061,
-    "Jewel of the Guard Captain (270225)": 1.0045,
-    "Everlook Delivery Bot (274760)": 1.0035,
-    "Vigilance Charm (18370)": 1.0035,
-    "Everlook Pathcarver (274759)": 1.0032,
-    "Cannonball Runner (13382)": 1.0025,
-    "Eye of the Beast (13968)": 1.0022,
-    "Weakness Analyzer (272438)": 1.0001,
-    "Dog Whistle (3456)": 1.0,
-    "Minor Recombobulator (4381)": 1.0,
-    "Gnomish Universal Remote (7506)": 1.0,
-    "Shard of the Splithooves (10659)": 1.0,
-    "Demon's Blood (10779)": 1.0,
-    "Force of Will (11810)": 1.0,
-    "Smoking Heart of the Mountain (11811)": 1.0,
-    "Second Wind (11819)": 1.0,
-    "Burst of Knowledge (11832)": 1.0,
-    "Heart of the Scale (13164)": 1.0,
-    "Alchemist's Stone (13503)": 1.0,
-    "Arcanite Dragonling (16022)": 1.0,
-    "Heart of Noxxion (17744)": 1.0,
-    "Mindtap Talisman (18371)": 1.0,
-    "Gyrofreeze Ice Reflector (18634)": 1.0,
-    "Major Recombobulator (18637)": 1.0,
-    "Hyper-Radiant Flame Reflector (18638)": 1.0,
-    "Ultra-Flash Shadow Reflector (18639)": 1.0,
-    "The Eye of Shadow (18665)": 1.0,
-    "Talisman of Arathor (20071)": 1.0,
-    "Defiler's Talisman (20072)": 1.0,
-    "Defiler's Talisman (21115)": 1.0,
-    "Defiler's Talisman (21116)": 1.0,
-    "Talisman of Arathor (21117)": 1.0,
-    "Talisman of Arathor (21118)": 1.0,
-    "Talisman of Arathor (21119)": 1.0,
-    "Defiler's Talisman (21120)": 1.0,
-    "Defender of the Timbermaw (21326)": 1.0,
-    "Heart of Wyrmthalak (22321)": 1.0,
-    "Dormant Heart of the Mountain (249473)": 1.0,
-    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
-    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
-    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
-    "Gnomish Poultryizer (260824)": 1.0,
-    "Enriched Seal (271903)": 1.0,
-    "Volunteer's Lucky Seal (271904)": 1.0,
-    "Enriched Seal (271905)": 1.0,
-    "Volunteer's Lucky Seal (271906)": 1.0,
-    "Darkspear Voodoo Seal (272059)": 1.0,
-    "Relentless Raider's Seal (272060)": 1.0,
-    "Darkspear Voodoo Seal (272061)": 1.0,
-    "Relentless Raider's Seal (272062)": 1.0,
-    "Serenity Field (272439)": 1.0,
-    "Defender's Grip Stabilizer (272440)": 1.0,
-    "Lookie's Spyglass (273298)": 1.0,
-    "Worgenbane Talisman (273643)": 1.0,
-    "Cursed Murloc Eye (273840)": 1.0,
-    "Roogug's Severed Head (274152)": 1.0,
-    "Parachute-Priest Pager (274761)": 1.0
-   },
    "names": [
     "Outlaw's Collar",
     "Mark of Fordring",
@@ -435,65 +164,30 @@
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0
+    "keep-sets-and-effects": 1.0,
+    "previous": 1.0
    },
    "confirm_seed2": {
-    "keep-sets-and-effects": 1.0,
+    "previous": 1.0,
     "all-slots": 1.0
    },
    "weights": {
-    "PseudoStatMainHandDps": 2.2364,
-    "PseudoStatOffHandDps": 0.8377,
-    "StatAgility": 0.5223,
-    "StatArmorPenetration": 0.0995,
-    "StatAttackPower": 0.2513,
-    "StatCritRating": 0.5249,
-    "StatExpertiseRating": 0.5935,
-    "StatHasteRating": 0.4008,
-    "StatHitRating": 0.6366,
-    "StatSpellPiercing": 0.1257,
-    "StatStrength": 0.2765
+    "PseudoStatMainHandDps": 2.1093,
+    "PseudoStatOffHandDps": 0.8321,
+    "StatAgility": 0.5031,
+    "StatArmorPenetration": 0.0939,
+    "StatAttackPower": 0.2418,
+    "StatCritRating": 0.4992,
+    "StatExpertiseRating": 0.5569,
+    "StatHasteRating": 0.3927,
+    "StatHitRating": 0.5409,
+    "StatSpellPiercing": 0.1236,
+    "StatStrength": 0.266
    },
    "evaluated_on": [
     "combat-daggers-raid: ml winner (bis)"
    ],
-   "replaced": [
-    {
-     "slot": 0,
-     "from": "Darkmantle Cap (not in the database)",
-     "to": "Outlaw's Collar"
-    },
-    {
-     "slot": 1,
-     "from": "Amulet of the Darkmoon",
-     "to": "Mark of Fordring"
-    },
-    {
-     "slot": 5,
-     "from": "Shadowcraft Bracers",
-     "to": "Bracers of the Eclipse"
-    },
-    {
-     "slot": 12,
-     "from": "Adaptive Combat Assistant",
-     "to": "Hand of Justice"
-    },
-    {
-     "slot": 16,
-     "from": "Gryphonwing Long Bow",
-     "to": "Satyr's Bow"
-    }
-   ],
-   "remade": {
-    "simulator": "wowsims/forever ff9babba5",
-    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
-    "missing_before": [
-     "item:22005"
-    ],
-    "winner_of": "bis-dummy",
-    "talents_left_out": [],
-    "minutes": 1.3
-   }
+   "commit": "ff9babba5"
   }
  },
  "search": {
@@ -1040,21 +734,21 @@
    "minutes": 5.1,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-combat-bis.gear.json",
    "commit": "30f67f5d2",
-   "sig_start": "2026-11-10: the stored winner is not legal on the current talent trees; the final step starts from the combat-daggers-raid open-search winner (rogue.json)"
+   "sig_start": "2026-11-13: the stored winner is not legal on the current talent trees; the final step starts from the combat-daggers-raid open-search winner (rogue.json)"
   },
   "bis-dummy": {
    "class": "rogue",
    "spec": "Hybrid Assassination/Combat",
    "setting": "dummy",
    "entry": "combat-daggers-raid",
-   "date": "2026-11-10",
+   "date": "2026-11-13",
    "constraint": "spec field (entry rotation)",
    "protected": [
     "Flawless Execution"
    ],
    "entries_screened": {
-    "combat-daggers-raid": 392.69,
-    "assassination-raid": 392.41
+    "combat-daggers-raid": 396.72,
+    "assassination-raid": 396.28
    },
    "entries_searched": [
     "combat-daggers-raid",
@@ -1119,11 +813,11 @@
       ],
       [
        "Lightning Reflexes",
-       1
+       2
       ],
       [
        "Puncturing Wounds",
-       3
+       2
       ],
       [
        "Precision",
@@ -1157,15 +851,19 @@
      "Subtlety": []
     },
     "split": "29/22/0",
-    "dps": 392.62,
-    "se": 0.0525,
+    "dps": 396.39,
+    "se": 0.0529,
     "iterations": 100000
    },
    "runner_up": {
     "split": "29/22/0",
-    "dps": 392.62,
-    "se": 0.0525,
+    "dps": 396.39,
+    "se": 0.0529,
     "differs": [
+     [
+      "Improved Sprint",
+      1
+     ],
      [
       "Lightning Reflexes",
       1
@@ -1173,13 +871,1035 @@
      [
       "Lightning Reflexes",
       2
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Assassination": [
+       [
+        "Malice",
+        5
+       ],
+       [
+        "Ruthlessness",
+        3
+       ],
+       [
+        "Improved Slice and Dice",
+        3
+       ],
+       [
+        "Vigor",
+        1
+       ],
+       [
+        "Blood Splatter",
+        1
+       ],
+       [
+        "Lethality",
+        2
+       ],
+       [
+        "Vile Poisons",
+        3
+       ],
+       [
+        "Improved Poisons",
+        2
+       ],
+       [
+        "Relentless Strikes",
+        5
+       ],
+       [
+        "Venom",
+        1
+       ],
+       [
+        "Seal Fate",
+        3
+       ]
+      ],
+      "Combat": [
+       [
+        "Coup de Grace",
+        3
+       ],
+       [
+        "Efficient Strikes",
+        2
+       ],
+       [
+        "Lightning Reflexes",
+        2
+       ],
+       [
+        "Puncturing Wounds",
+        2
+       ],
+       [
+        "Precision",
+        3
+       ],
+       [
+        "Endurance",
+        1
+       ],
+       [
+        "Composure",
+        2
+       ],
+       [
+        "Flawless Execution",
+        1
+       ],
+       [
+        "Weapon Expertise",
+        1
+       ],
+       [
+        "Aggression",
+        3
+       ],
+       [
+        "Dual Wield Specialization",
+        2
+       ]
+      ],
+      "Subtlety": []
+     },
+     "split": "29/22/0",
+     "dps": 396.39,
+     "se": 0.0529
+    },
+    {
+     "allocation": {
+      "Assassination": [
+       [
+        "Malice",
+        5
+       ],
+       [
+        "Ruthlessness",
+        3
+       ],
+       [
+        "Improved Slice and Dice",
+        3
+       ],
+       [
+        "Vigor",
+        1
+       ],
+       [
+        "Blood Splatter",
+        1
+       ],
+       [
+        "Lethality",
+        2
+       ],
+       [
+        "Vile Poisons",
+        3
+       ],
+       [
+        "Improved Poisons",
+        2
+       ],
+       [
+        "Relentless Strikes",
+        5
+       ],
+       [
+        "Venom",
+        1
+       ],
+       [
+        "Seal Fate",
+        3
+       ]
+      ],
+      "Combat": [
+       [
+        "Coup de Grace",
+        3
+       ],
+       [
+        "Efficient Strikes",
+        2
+       ],
+       [
+        "Lightning Reflexes",
+        1
+       ],
+       [
+        "Puncturing Wounds",
+        2
+       ],
+       [
+        "Precision",
+        3
+       ],
+       [
+        "Improved Sprint",
+        1
+       ],
+       [
+        "Endurance",
+        1
+       ],
+       [
+        "Composure",
+        2
+       ],
+       [
+        "Flawless Execution",
+        1
+       ],
+       [
+        "Weapon Expertise",
+        1
+       ],
+       [
+        "Aggression",
+        3
+       ],
+       [
+        "Dual Wield Specialization",
+        2
+       ]
+      ],
+      "Subtlety": []
+     },
+     "split": "29/22/0",
+     "dps": 396.39,
+     "se": 0.0529
+    }
+   ],
+   "runs": [
+    {
+     "entry": "combat-daggers-raid",
+     "run": 1,
+     "simulated": 1588,
+     "best_screen": 396.72,
+     "best_split": "29/22/0",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 388,
+       "best": 391.82
+      },
+      {
+       "round": 1,
+       "simulated": 588,
+       "best": 396.28,
+       "predicted_top": 383.53
+      },
+      {
+       "round": 2,
+       "simulated": 788,
+       "best": 396.72,
+       "predicted_top": 393.24
+      },
+      {
+       "round": 3,
+       "simulated": 988,
+       "best": 396.72,
+       "predicted_top": 396.08
+      },
+      {
+       "round": 4,
+       "simulated": 1188,
+       "best": 396.72,
+       "predicted_top": 396.4
+      },
+      {
+       "round": 5,
+       "simulated": 1388,
+       "best": 396.72,
+       "predicted_top": 396.68
+      },
+      {
+       "round": 6,
+       "simulated": 1588,
+       "best": 396.72,
+       "predicted_top": 396.7
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "assassination-raid",
+     "run": 1,
+     "simulated": 1592,
+     "best_screen": 396.72,
+     "best_split": "29/22/0",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 392,
+       "best": 395.47
+      },
+      {
+       "round": 1,
+       "simulated": 592,
+       "best": 396.28,
+       "predicted_top": 386.26
+      },
+      {
+       "round": 2,
+       "simulated": 792,
+       "best": 396.72,
+       "predicted_top": 393.39
+      },
+      {
+       "round": 3,
+       "simulated": 992,
+       "best": 396.72,
+       "predicted_top": 395.32
+      },
+      {
+       "round": 4,
+       "simulated": 1192,
+       "best": 396.72,
+       "predicted_top": 396.41
+      },
+      {
+       "round": 5,
+       "simulated": 1392,
+       "best": 396.72,
+       "predicted_top": 396.63
+      },
+      {
+       "round": 6,
+       "simulated": 1592,
+       "best": 396.72,
+       "predicted_top": 396.7
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": false
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      396.45,
+      396.45,
+      396.45,
+      396.45,
+      396.45,
+      396.45
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      396.25,
+      396.25,
+      396.25,
+      396.25,
+      396.25
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      396.39,
+      396.39
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 251,
+     "best_gap": 0.0,
+     "best_move": "2 Lightning Reflexes + 2 Puncturing Wounds -> 3 Deflection + 1 Riposte"
+    }
+   ],
+   "other_entries": [
+    {
+     "entry": "assassination-raid",
+     "dps": 396.39,
+     "split": "29/22/0"
+    }
+   ],
+   "important_features": [
+    {
+     "feature": "Relentless Strikes",
+     "importance": 0.3007
+    },
+    {
+     "feature": "Venom",
+     "importance": 0.2717
+    },
+    {
+     "feature": "Seal Fate",
+     "importance": 0.118
+    },
+    {
+     "feature": "Dual Wield Specialization",
+     "importance": 0.0745
+    },
+    {
+     "feature": "Improved Gouge",
+     "importance": 0.0661
+    },
+    {
+     "feature": "Assassination points",
+     "importance": 0.045
+    },
+    {
+     "feature": "Remorseless Attacks",
+     "importance": 0.0193
+    },
+    {
+     "feature": "Improved Expose Armor",
+     "importance": 0.0174
+    },
+    {
+     "feature": "Aggression",
+     "importance": 0.0168
+    },
+    {
+     "feature": "Efficient Strikes",
+     "importance": 0.0168
+    },
+    {
+     "feature": "Subtlety points",
+     "importance": 0.0135
+    },
+    {
+     "feature": "Lightning Reflexes",
+     "importance": 0.0056
+    }
+   ],
+   "simulated_builds": 5197,
+   "signature_check": {
+    "spec": "Hybrid Assassination/Combat",
+    "ok": true,
+    "core_share": 0.7025,
+    "min_share": 0.6,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 6967000,
+   "minutes": 29.7,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-combat-bis.gear.json",
+   "commit": "ff9babba5"
+  },
+  "bis-raid": {
+   "class": "rogue",
+   "spec": "Hybrid Assassination/Combat",
+   "setting": "raid",
+   "entry": "combat-daggers-raid",
+   "date": "2026-11-13",
+   "constraint": "spec field (entry rotation)",
+   "protected": [
+    "Flawless Execution"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "combat-daggers-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Assassination": [
+      [
+       "Malice",
+       5
+      ],
+      [
+       "Ruthlessness",
+       3
+      ],
+      [
+       "Improved Slice and Dice",
+       3
+      ],
+      [
+       "Vigor",
+       1
+      ],
+      [
+       "Blood Splatter",
+       1
+      ],
+      [
+       "Lethality",
+       2
+      ],
+      [
+       "Vile Poisons",
+       2
+      ],
+      [
+       "Improved Poisons",
+       3
+      ],
+      [
+       "Relentless Strikes",
+       5
+      ],
+      [
+       "Venom",
+       1
+      ],
+      [
+       "Seal Fate",
+       3
+      ]
+     ],
+     "Combat": [
+      [
+       "Coup de Grace",
+       3
+      ],
+      [
+       "Lightning Reflexes",
+       4
+      ],
+      [
+       "Puncturing Wounds",
+       3
+      ],
+      [
+       "Precision",
+       3
+      ],
+      [
+       "Composure",
+       2
+      ],
+      [
+       "Flawless Execution",
+       1
+      ],
+      [
+       "Weapon Expertise",
+       1
+      ],
+      [
+       "Aggression",
+       3
+      ],
+      [
+       "Dual Wield Specialization",
+       2
+      ]
+     ],
+     "Subtlety": []
+    },
+    "split": "29/22/0",
+    "dps": 797.1,
+    "se": 0.1066,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "29/22/0",
+    "dps": 797.1,
+    "se": 0.1066,
+    "differs": [
+     [
+      "Efficient Strikes",
+      1
      ],
      [
-      "Puncturing Wounds",
+      "Lightning Reflexes",
+      3
+     ],
+     [
+      "Lightning Reflexes",
+      4
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Assassination": [
+       [
+        "Malice",
+        5
+       ],
+       [
+        "Ruthlessness",
+        3
+       ],
+       [
+        "Improved Slice and Dice",
+        3
+       ],
+       [
+        "Vigor",
+        1
+       ],
+       [
+        "Blood Splatter",
+        1
+       ],
+       [
+        "Lethality",
+        2
+       ],
+       [
+        "Vile Poisons",
+        2
+       ],
+       [
+        "Improved Poisons",
+        3
+       ],
+       [
+        "Relentless Strikes",
+        5
+       ],
+       [
+        "Venom",
+        1
+       ],
+       [
+        "Seal Fate",
+        3
+       ]
+      ],
+      "Combat": [
+       [
+        "Coup de Grace",
+        3
+       ],
+       [
+        "Lightning Reflexes",
+        4
+       ],
+       [
+        "Puncturing Wounds",
+        3
+       ],
+       [
+        "Precision",
+        3
+       ],
+       [
+        "Composure",
+        2
+       ],
+       [
+        "Flawless Execution",
+        1
+       ],
+       [
+        "Weapon Expertise",
+        1
+       ],
+       [
+        "Aggression",
+        3
+       ],
+       [
+        "Dual Wield Specialization",
+        2
+       ]
+      ],
+      "Subtlety": []
+     },
+     "split": "29/22/0",
+     "dps": 797.1,
+     "se": 0.1066
+    },
+    {
+     "allocation": {
+      "Assassination": [
+       [
+        "Malice",
+        5
+       ],
+       [
+        "Ruthlessness",
+        3
+       ],
+       [
+        "Improved Slice and Dice",
+        3
+       ],
+       [
+        "Vigor",
+        1
+       ],
+       [
+        "Blood Splatter",
+        1
+       ],
+       [
+        "Lethality",
+        2
+       ],
+       [
+        "Vile Poisons",
+        2
+       ],
+       [
+        "Improved Poisons",
+        3
+       ],
+       [
+        "Relentless Strikes",
+        5
+       ],
+       [
+        "Venom",
+        1
+       ],
+       [
+        "Seal Fate",
+        3
+       ]
+      ],
+      "Combat": [
+       [
+        "Coup de Grace",
+        3
+       ],
+       [
+        "Efficient Strikes",
+        1
+       ],
+       [
+        "Lightning Reflexes",
+        3
+       ],
+       [
+        "Puncturing Wounds",
+        3
+       ],
+       [
+        "Precision",
+        3
+       ],
+       [
+        "Composure",
+        2
+       ],
+       [
+        "Flawless Execution",
+        1
+       ],
+       [
+        "Weapon Expertise",
+        1
+       ],
+       [
+        "Aggression",
+        3
+       ],
+       [
+        "Dual Wield Specialization",
+        2
+       ]
+      ],
+      "Subtlety": []
+     },
+     "split": "29/22/0",
+     "dps": 797.1,
+     "se": 0.1066
+    }
+   ],
+   "runs": [
+    {
+     "entry": "combat-daggers-raid",
+     "run": 1,
+     "simulated": 1184,
+     "best_screen": 799.4,
+     "best_split": "29/22/0",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 384,
+       "best": 799.4
+      },
+      {
+       "round": 1,
+       "simulated": 584,
+       "best": 799.4,
+       "predicted_top": 791.05
+      },
+      {
+       "round": 2,
+       "simulated": 784,
+       "best": 799.4,
+       "predicted_top": 796.01
+      },
+      {
+       "round": 3,
+       "simulated": 984,
+       "best": 799.4,
+       "predicted_top": 797.61
+      },
+      {
+       "round": 4,
+       "simulated": 1184,
+       "best": 799.4,
+       "predicted_top": 798.62
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      796.74,
+      796.74,
+      796.74,
+      796.74,
+      796.74,
+      796.74
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      797.28,
+      797.28,
+      797.28,
+      797.28,
+      797.28
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      797.1,
+      797.1
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 237,
+     "best_gap": 0.0003,
+     "best_move": "1 Aggression -> Weapon Expertise"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Seal Fate",
+     "importance": 0.3691
+    },
+    {
+     "feature": "Relentless Strikes",
+     "importance": 0.2158
+    },
+    {
+     "feature": "Improved Gouge",
+     "importance": 0.1045
+    },
+    {
+     "feature": "Venom",
+     "importance": 0.0789
+    },
+    {
+     "feature": "Dual Wield Specialization",
+     "importance": 0.0723
+    },
+    {
+     "feature": "Remorseless Attacks",
+     "importance": 0.0344
+    },
+    {
+     "feature": "Assassination points",
+     "importance": 0.0329
+    },
+    {
+     "feature": "Puncturing Wounds",
+     "importance": 0.0212
+    },
+    {
+     "feature": "Improved Expose Armor",
+     "importance": 0.0184
+    },
+    {
+     "feature": "Subtlety points",
+     "importance": 0.0076
+    },
+    {
+     "feature": "Weapon Expertise",
+     "importance": 0.0066
+    },
+    {
+     "feature": "Aggression",
+     "importance": 0.004
+    }
+   ],
+   "simulated_builds": 1435,
+   "signature_check": {
+    "spec": "Hybrid Assassination/Combat",
+    "ok": true,
+    "core_share": 0.8162,
+    "min_share": 0.6,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 2308000,
+   "minutes": 16.6,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-combat-bis-raid.gear.json",
+   "commit": "ff9babba5"
+  },
+  "prebis-dummy": {
+   "class": "rogue",
+   "spec": "Hybrid Assassination/Combat",
+   "setting": "dummy",
+   "entry": "combat-daggers-raid",
+   "date": "2026-11-13",
+   "constraint": "spec field (entry rotation)",
+   "protected": [
+    "Flawless Execution"
+   ],
+   "entries_screened": {
+    "combat-daggers-raid": 390.18,
+    "assassination-raid": 390.18
+   },
+   "entries_searched": [
+    "combat-daggers-raid",
+    "assassination-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Assassination": [
+      [
+       "Malice",
+       5
+      ],
+      [
+       "Ruthlessness",
+       3
+      ],
+      [
+       "Improved Slice and Dice",
+       3
+      ],
+      [
+       "Vigor",
+       1
+      ],
+      [
+       "Blood Splatter",
+       1
+      ],
+      [
+       "Lethality",
+       2
+      ],
+      [
+       "Vile Poisons",
+       3
+      ],
+      [
+       "Improved Poisons",
+       2
+      ],
+      [
+       "Relentless Strikes",
+       5
+      ],
+      [
+       "Venom",
+       1
+      ],
+      [
+       "Seal Fate",
+       3
+      ]
+     ],
+     "Combat": [
+      [
+       "Coup de Grace",
+       3
+      ],
+      [
+       "Efficient Strikes",
+       2
+      ],
+      [
+       "Lightning Reflexes",
+       2
+      ],
+      [
+       "Puncturing Wounds",
+       2
+      ],
+      [
+       "Precision",
+       3
+      ],
+      [
+       "Endurance",
+       1
+      ],
+      [
+       "Composure",
+       2
+      ],
+      [
+       "Flawless Execution",
+       1
+      ],
+      [
+       "Weapon Expertise",
+       1
+      ],
+      [
+       "Aggression",
+       3
+      ],
+      [
+       "Dual Wield Specialization",
+       2
+      ]
+     ],
+     "Subtlety": []
+    },
+    "split": "29/22/0",
+    "dps": 389.67,
+    "se": 0.0528,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "29/22/0",
+    "dps": 389.67,
+    "se": 0.0528,
+    "differs": [
+     [
+      "Endurance",
+      1
+     ],
+     [
+      "Lightning Reflexes",
       2
      ],
      [
-      "Puncturing Wounds",
+      "Lightning Reflexes",
       3
      ]
     ]
@@ -1245,11 +1965,11 @@
        ],
        [
         "Lightning Reflexes",
-        1
+        2
        ],
        [
         "Puncturing Wounds",
-        3
+        2
        ],
        [
         "Precision",
@@ -1283,8 +2003,8 @@
       "Subtlety": []
      },
      "split": "29/22/0",
-     "dps": 392.62,
-     "se": 0.0525
+     "dps": 389.67,
+     "se": 0.0528
     },
     {
      "allocation": {
@@ -1345,7 +2065,7 @@
        ],
        [
         "Lightning Reflexes",
-        2
+        3
        ],
        [
         "Puncturing Wounds",
@@ -1354,10 +2074,6 @@
        [
         "Precision",
         3
-       ],
-       [
-        "Endurance",
-        1
        ],
        [
         "Composure",
@@ -1383,1115 +2099,86 @@
       "Subtlety": []
      },
      "split": "29/22/0",
-     "dps": 392.62,
-     "se": 0.0525
+     "dps": 389.67,
+     "se": 0.0528
     }
    ],
    "runs": [
     {
      "entry": "combat-daggers-raid",
-     "run": 1,
-     "simulated": 1388,
-     "best_screen": 392.69,
-     "best_split": "29/22/0",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 388,
-       "best": 387.83
-      },
-      {
-       "round": 1,
-       "simulated": 588,
-       "best": 392.41,
-       "predicted_top": 379.79
-      },
-      {
-       "round": 2,
-       "simulated": 788,
-       "best": 392.69,
-       "predicted_top": 389.99
-      },
-      {
-       "round": 3,
-       "simulated": 988,
-       "best": 392.69,
-       "predicted_top": 392.03
-      },
-      {
-       "round": 4,
-       "simulated": 1188,
-       "best": 392.69,
-       "predicted_top": 392.56
-      },
-      {
-       "round": 5,
-       "simulated": 1388,
-       "best": 392.69,
-       "predicted_top": 392.66
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    },
-    {
-     "entry": "assassination-raid",
-     "run": 1,
-     "simulated": 1392,
-     "best_screen": 392.69,
-     "best_split": "29/22/0",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 392,
-       "best": 391.31
-      },
-      {
-       "round": 1,
-       "simulated": 592,
-       "best": 392.41,
-       "predicted_top": 382.2
-      },
-      {
-       "round": 2,
-       "simulated": 792,
-       "best": 392.54,
-       "predicted_top": 390.34
-      },
-      {
-       "round": 3,
-       "simulated": 992,
-       "best": 392.69,
-       "predicted_top": 391.56
-      },
-      {
-       "round": 4,
-       "simulated": 1192,
-       "best": 392.69,
-       "predicted_top": 392.21
-      },
-      {
-       "round": 5,
-       "simulated": 1392,
-       "best": 392.69,
-       "predicted_top": 392.59
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": false
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      392.55,
-      392.55,
-      392.55,
-      392.55,
-      392.55,
-      392.55
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      392.43,
-      392.43,
-      392.43,
-      392.43,
-      392.43
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      392.62,
-      392.62
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 233,
-     "best_gap": 0.0002,
-     "best_move": "1 Vile Poisons -> Improved Poisons"
-    }
-   ],
-   "other_entries": [
-    {
-     "entry": "assassination-raid",
-     "dps": 392.62,
-     "split": "29/22/0"
-    }
-   ],
-   "important_features": [
-    {
-     "feature": "Venom",
-     "importance": 0.314
-    },
-    {
-     "feature": "Relentless Strikes",
-     "importance": 0.2768
-    },
-    {
-     "feature": "Seal Fate",
-     "importance": 0.1467
-    },
-    {
-     "feature": "Dual Wield Specialization",
-     "importance": 0.0482
-    },
-    {
-     "feature": "Improved Gouge",
-     "importance": 0.0461
-    },
-    {
-     "feature": "Subtlety points",
-     "importance": 0.0339
-    },
-    {
-     "feature": "Assassination points",
-     "importance": 0.03
-    },
-    {
-     "feature": "Aggression",
-     "importance": 0.0209
-    },
-    {
-     "feature": "Improved Expose Armor",
-     "importance": 0.0181
-    },
-    {
-     "feature": "Remorseless Attacks",
-     "importance": 0.0152
-    },
-    {
-     "feature": "Efficient Strikes",
-     "importance": 0.013
-    },
-    {
-     "feature": "Lightning Reflexes",
-     "importance": 0.0074
-    }
-   ],
-   "simulated_builds": 4784,
-   "signature_check": {
-    "spec": "Hybrid Assassination/Combat",
-    "ok": true,
-    "core_share": 0.7039,
-    "min_share": 0.6,
-    "uncast": [],
-    "missing_talents": [],
-    "why": ""
-   },
-   "simulated_fights": 6526000,
-   "minutes": 16.0,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-combat-bis.gear.json",
-   "commit": "16e85426c"
-  },
-  "bis-raid": {
-   "class": "rogue",
-   "spec": "Hybrid Assassination/Combat",
-   "setting": "raid",
-   "entry": "combat-daggers-raid",
-   "date": "2026-11-10",
-   "constraint": "spec field (entry rotation)",
-   "protected": [
-    "Flawless Execution"
-   ],
-   "entries_screened": {},
-   "entries_searched": [
-    "combat-daggers-raid"
-   ],
-   "winner": {
-    "allocation": {
-     "Assassination": [
-      [
-       "Malice",
-       5
-      ],
-      [
-       "Ruthlessness",
-       3
-      ],
-      [
-       "Improved Slice and Dice",
-       3
-      ],
-      [
-       "Vigor",
-       1
-      ],
-      [
-       "Blood Splatter",
-       1
-      ],
-      [
-       "Lethality",
-       2
-      ],
-      [
-       "Vile Poisons",
-       2
-      ],
-      [
-       "Cold Blood",
-       1
-      ],
-      [
-       "Improved Poisons",
-       2
-      ],
-      [
-       "Relentless Strikes",
-       5
-      ],
-      [
-       "Venom",
-       1
-      ],
-      [
-       "Seal Fate",
-       3
-      ]
-     ],
-     "Combat": [
-      [
-       "Coup de Grace",
-       3
-      ],
-      [
-       "Lightning Reflexes",
-       4
-      ],
-      [
-       "Puncturing Wounds",
-       3
-      ],
-      [
-       "Precision",
-       3
-      ],
-      [
-       "Composure",
-       2
-      ],
-      [
-       "Flawless Execution",
-       1
-      ],
-      [
-       "Weapon Expertise",
-       1
-      ],
-      [
-       "Aggression",
-       3
-      ],
-      [
-       "Dual Wield Specialization",
-       2
-      ]
-     ],
-     "Subtlety": []
-    },
-    "split": "29/22/0",
-    "dps": 789.19,
-    "se": 0.1039,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "29/22/0",
-    "dps": 789.19,
-    "se": 0.1039,
-    "differs": [
-     [
-      "Improved Sprint",
-      2
-     ],
-     [
-      "Lightning Reflexes",
-      2
-     ],
-     [
-      "Lightning Reflexes",
-      4
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Assassination": [
-       [
-        "Malice",
-        5
-       ],
-       [
-        "Ruthlessness",
-        3
-       ],
-       [
-        "Improved Slice and Dice",
-        3
-       ],
-       [
-        "Vigor",
-        1
-       ],
-       [
-        "Blood Splatter",
-        1
-       ],
-       [
-        "Lethality",
-        2
-       ],
-       [
-        "Vile Poisons",
-        2
-       ],
-       [
-        "Cold Blood",
-        1
-       ],
-       [
-        "Improved Poisons",
-        2
-       ],
-       [
-        "Relentless Strikes",
-        5
-       ],
-       [
-        "Venom",
-        1
-       ],
-       [
-        "Seal Fate",
-        3
-       ]
-      ],
-      "Combat": [
-       [
-        "Coup de Grace",
-        3
-       ],
-       [
-        "Lightning Reflexes",
-        4
-       ],
-       [
-        "Puncturing Wounds",
-        3
-       ],
-       [
-        "Precision",
-        3
-       ],
-       [
-        "Composure",
-        2
-       ],
-       [
-        "Flawless Execution",
-        1
-       ],
-       [
-        "Weapon Expertise",
-        1
-       ],
-       [
-        "Aggression",
-        3
-       ],
-       [
-        "Dual Wield Specialization",
-        2
-       ]
-      ],
-      "Subtlety": []
-     },
-     "split": "29/22/0",
-     "dps": 789.19,
-     "se": 0.1039
-    },
-    {
-     "allocation": {
-      "Assassination": [
-       [
-        "Malice",
-        5
-       ],
-       [
-        "Ruthlessness",
-        3
-       ],
-       [
-        "Improved Slice and Dice",
-        3
-       ],
-       [
-        "Vigor",
-        1
-       ],
-       [
-        "Blood Splatter",
-        1
-       ],
-       [
-        "Lethality",
-        2
-       ],
-       [
-        "Vile Poisons",
-        2
-       ],
-       [
-        "Cold Blood",
-        1
-       ],
-       [
-        "Improved Poisons",
-        2
-       ],
-       [
-        "Relentless Strikes",
-        5
-       ],
-       [
-        "Venom",
-        1
-       ],
-       [
-        "Seal Fate",
-        3
-       ]
-      ],
-      "Combat": [
-       [
-        "Coup de Grace",
-        3
-       ],
-       [
-        "Lightning Reflexes",
-        2
-       ],
-       [
-        "Puncturing Wounds",
-        3
-       ],
-       [
-        "Precision",
-        3
-       ],
-       [
-        "Improved Sprint",
-        2
-       ],
-       [
-        "Composure",
-        2
-       ],
-       [
-        "Flawless Execution",
-        1
-       ],
-       [
-        "Weapon Expertise",
-        1
-       ],
-       [
-        "Aggression",
-        3
-       ],
-       [
-        "Dual Wield Specialization",
-        2
-       ]
-      ],
-      "Subtlety": []
-     },
-     "split": "29/22/0",
-     "dps": 789.19,
-     "se": 0.1039
-    }
-   ],
-   "runs": [
-    {
-     "entry": "combat-daggers-raid",
-     "run": 1,
-     "simulated": 1185,
-     "best_screen": 790.29,
-     "best_split": "29/22/0",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 385,
-       "best": 790.29
-      },
-      {
-       "round": 1,
-       "simulated": 585,
-       "best": 790.29,
-       "predicted_top": 785.14
-      },
-      {
-       "round": 2,
-       "simulated": 785,
-       "best": 790.29,
-       "predicted_top": 788.18
-      },
-      {
-       "round": 3,
-       "simulated": 985,
-       "best": 790.29,
-       "predicted_top": 789.16
-      },
-      {
-       "round": 4,
-       "simulated": 1185,
-       "best": 790.29,
-       "predicted_top": 790.01
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      789.3,
-      789.3,
-      789.3,
-      789.3,
-      789.3,
-      789.3
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      789.26,
-      789.26,
-      789.26,
-      789.26,
-      789.26
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      789.19,
-      789.19
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 238,
-     "best_gap": 0.0021,
-     "best_move": "1 Vile Poisons -> Improved Poisons",
-     "raced": [
-      "1 Vile Poisons -> Improved Poisons",
-      "1 Cold Blood -> Improved Poisons",
-      "1 Composure -> Endurance",
-      "1 Composure -> Improved Sprint"
-     ],
-     "confirmed_gap": 0.0004
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Relentless Strikes",
-     "importance": 0.3617
-    },
-    {
-     "feature": "Seal Fate",
-     "importance": 0.2212
-    },
-    {
-     "feature": "Dual Wield Specialization",
-     "importance": 0.0968
-    },
-    {
-     "feature": "Improved Gouge",
-     "importance": 0.0965
-    },
-    {
-     "feature": "Venom",
-     "importance": 0.0702
-    },
-    {
-     "feature": "Assassination points",
-     "importance": 0.0569
-    },
-    {
-     "feature": "Improved Expose Armor",
-     "importance": 0.0232
-    },
-    {
-     "feature": "Puncturing Wounds",
-     "importance": 0.0193
-    },
-    {
-     "feature": "Remorseless Attacks",
-     "importance": 0.008
-    },
-    {
-     "feature": "Subtlety points",
-     "importance": 0.0073
-    },
-    {
-     "feature": "Aggression",
-     "importance": 0.005
-    },
-    {
-     "feature": "Combat points",
-     "importance": 0.0036
-    }
-   ],
-   "simulated_builds": 1442,
-   "signature_check": {
-    "spec": "Hybrid Assassination/Combat",
-    "ok": true,
-    "core_share": 0.8231,
-    "min_share": 0.6,
-    "uncast": [],
-    "missing_talents": [],
-    "why": ""
-   },
-   "simulated_fights": 2462000,
-   "minutes": 8.0,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-combat-bis-raid.gear.json",
-   "commit": "16e85426c"
-  },
-  "prebis-dummy": {
-   "class": "rogue",
-   "spec": "Hybrid Assassination/Combat",
-   "setting": "dummy",
-   "entry": "combat-daggers-raid",
-   "date": "2026-11-10",
-   "constraint": "spec field (entry rotation)",
-   "protected": [
-    "Flawless Execution"
-   ],
-   "entries_screened": {
-    "combat-daggers-raid": 383.82,
-    "assassination-raid": 383.82
-   },
-   "entries_searched": [
-    "combat-daggers-raid",
-    "assassination-raid"
-   ],
-   "winner": {
-    "allocation": {
-     "Assassination": [
-      [
-       "Malice",
-       5
-      ],
-      [
-       "Ruthlessness",
-       3
-      ],
-      [
-       "Improved Slice and Dice",
-       3
-      ],
-      [
-       "Vigor",
-       1
-      ],
-      [
-       "Blood Splatter",
-       1
-      ],
-      [
-       "Lethality",
-       2
-      ],
-      [
-       "Vile Poisons",
-       3
-      ],
-      [
-       "Improved Poisons",
-       2
-      ],
-      [
-       "Relentless Strikes",
-       5
-      ],
-      [
-       "Venom",
-       1
-      ],
-      [
-       "Seal Fate",
-       3
-      ]
-     ],
-     "Combat": [
-      [
-       "Coup de Grace",
-       3
-      ],
-      [
-       "Efficient Strikes",
-       2
-      ],
-      [
-       "Lightning Reflexes",
-       1
-      ],
-      [
-       "Puncturing Wounds",
-       3
-      ],
-      [
-       "Precision",
-       3
-      ],
-      [
-       "Endurance",
-       1
-      ],
-      [
-       "Composure",
-       2
-      ],
-      [
-       "Flawless Execution",
-       1
-      ],
-      [
-       "Weapon Expertise",
-       1
-      ],
-      [
-       "Aggression",
-       3
-      ],
-      [
-       "Dual Wield Specialization",
-       2
-      ]
-     ],
-     "Subtlety": []
-    },
-    "split": "29/22/0",
-    "dps": 383.69,
-    "se": 0.0516,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "29/22/0",
-    "dps": 383.69,
-    "se": 0.0516,
-    "differs": [
-     [
-      "Endurance",
-      1
-     ],
-     [
-      "Lightning Reflexes",
-      1
-     ],
-     [
-      "Lightning Reflexes",
-      2
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Assassination": [
-       [
-        "Malice",
-        5
-       ],
-       [
-        "Ruthlessness",
-        3
-       ],
-       [
-        "Improved Slice and Dice",
-        3
-       ],
-       [
-        "Vigor",
-        1
-       ],
-       [
-        "Blood Splatter",
-        1
-       ],
-       [
-        "Lethality",
-        2
-       ],
-       [
-        "Vile Poisons",
-        3
-       ],
-       [
-        "Improved Poisons",
-        2
-       ],
-       [
-        "Relentless Strikes",
-        5
-       ],
-       [
-        "Venom",
-        1
-       ],
-       [
-        "Seal Fate",
-        3
-       ]
-      ],
-      "Combat": [
-       [
-        "Coup de Grace",
-        3
-       ],
-       [
-        "Efficient Strikes",
-        2
-       ],
-       [
-        "Lightning Reflexes",
-        1
-       ],
-       [
-        "Puncturing Wounds",
-        3
-       ],
-       [
-        "Precision",
-        3
-       ],
-       [
-        "Endurance",
-        1
-       ],
-       [
-        "Composure",
-        2
-       ],
-       [
-        "Flawless Execution",
-        1
-       ],
-       [
-        "Weapon Expertise",
-        1
-       ],
-       [
-        "Aggression",
-        3
-       ],
-       [
-        "Dual Wield Specialization",
-        2
-       ]
-      ],
-      "Subtlety": []
-     },
-     "split": "29/22/0",
-     "dps": 383.69,
-     "se": 0.0516
-    },
-    {
-     "allocation": {
-      "Assassination": [
-       [
-        "Malice",
-        5
-       ],
-       [
-        "Ruthlessness",
-        3
-       ],
-       [
-        "Improved Slice and Dice",
-        3
-       ],
-       [
-        "Vigor",
-        1
-       ],
-       [
-        "Blood Splatter",
-        1
-       ],
-       [
-        "Lethality",
-        2
-       ],
-       [
-        "Vile Poisons",
-        3
-       ],
-       [
-        "Improved Poisons",
-        2
-       ],
-       [
-        "Relentless Strikes",
-        5
-       ],
-       [
-        "Venom",
-        1
-       ],
-       [
-        "Seal Fate",
-        3
-       ]
-      ],
-      "Combat": [
-       [
-        "Coup de Grace",
-        3
-       ],
-       [
-        "Efficient Strikes",
-        2
-       ],
-       [
-        "Lightning Reflexes",
-        2
-       ],
-       [
-        "Puncturing Wounds",
-        3
-       ],
-       [
-        "Precision",
-        3
-       ],
-       [
-        "Composure",
-        2
-       ],
-       [
-        "Flawless Execution",
-        1
-       ],
-       [
-        "Weapon Expertise",
-        1
-       ],
-       [
-        "Aggression",
-        3
-       ],
-       [
-        "Dual Wield Specialization",
-        2
-       ]
-      ],
-      "Subtlety": []
-     },
-     "split": "29/22/0",
-     "dps": 383.69,
-     "se": 0.0516
-    }
-   ],
-   "runs": [
-    {
-     "entry": "combat-daggers-raid",
-     "run": 1,
-     "simulated": 1189,
-     "best_screen": 383.82,
-     "best_split": "29/22/0",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 389,
-       "best": 383.82
-      },
-      {
-       "round": 1,
-       "simulated": 589,
-       "best": 383.82,
-       "predicted_top": 380.11
-      },
-      {
-       "round": 2,
-       "simulated": 789,
-       "best": 383.82,
-       "predicted_top": 382.93
-      },
-      {
-       "round": 3,
-       "simulated": 989,
-       "best": 383.82,
-       "predicted_top": 383.58
-      },
-      {
-       "round": 4,
-       "simulated": 1189,
-       "best": 383.82,
-       "predicted_top": 383.77
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    },
-    {
-     "entry": "assassination-raid",
      "run": 1,
      "simulated": 1187,
-     "best_screen": 383.82,
+     "best_screen": 390.18,
      "best_split": "29/22/0",
      "trace": [
       {
        "round": 0,
        "simulated": 387,
-       "best": 383.82
+       "best": 390.18
       },
       {
        "round": 1,
        "simulated": 587,
-       "best": 383.82,
-       "predicted_top": 379.11
+       "best": 390.18,
+       "predicted_top": 385.39
       },
       {
        "round": 2,
        "simulated": 787,
-       "best": 383.82,
-       "predicted_top": 383.14
+       "best": 390.18,
+       "predicted_top": 389.33
       },
       {
        "round": 3,
        "simulated": 987,
-       "best": 383.82,
-       "predicted_top": 383.55
+       "best": 390.18,
+       "predicted_top": 389.91
       },
       {
        "round": 4,
        "simulated": 1187,
-       "best": 383.82,
-       "predicted_top": 383.76
+       "best": 390.18,
+       "predicted_top": 390.09
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "assassination-raid",
+     "run": 1,
+     "simulated": 1188,
+     "best_screen": 390.18,
+     "best_split": "29/22/0",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 388,
+       "best": 390.18
+      },
+      {
+       "round": 1,
+       "simulated": 588,
+       "best": 390.18,
+       "predicted_top": 386.44
+      },
+      {
+       "round": 2,
+       "simulated": 788,
+       "best": 390.18,
+       "predicted_top": 389.4
+      },
+      {
+       "round": 3,
+       "simulated": 988,
+       "best": 390.18,
+       "predicted_top": 390.01
+      },
+      {
+       "round": 4,
+       "simulated": 1188,
+       "best": 390.18,
+       "predicted_top": 390.06
       }
      ],
      "best_stage1_gap": 0.0,
@@ -2504,126 +2191,126 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      383.82,
-      383.82,
-      383.82,
-      383.82,
-      383.82,
-      383.82
+      389.28,
+      389.28,
+      389.28,
+      389.28,
+      389.28,
+      389.28
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      383.7,
-      383.7,
-      383.7,
-      383.7,
-      383.7
+      389.59,
+      389.59,
+      389.59,
+      389.59,
+      389.59
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      383.69,
-      383.69
+      389.67,
+      389.67
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 233,
-     "best_gap": 0.0004,
-     "best_move": "2 Vile Poisons -> Improved Poisons"
+     "neighbours": 251,
+     "best_gap": 0.0,
+     "best_move": "2 Lightning Reflexes + 2 Puncturing Wounds -> 3 Deflection + 1 Riposte"
     }
    ],
    "other_entries": [
     {
      "entry": "assassination-raid",
-     "dps": 383.69,
+     "dps": 389.67,
      "split": "29/22/0"
     }
    ],
    "important_features": [
     {
-     "feature": "Venom",
-     "importance": 0.3903
+     "feature": "Relentless Strikes",
+     "importance": 0.3054
     },
     {
-     "feature": "Relentless Strikes",
-     "importance": 0.207
+     "feature": "Venom",
+     "importance": 0.2755
     },
     {
      "feature": "Seal Fate",
-     "importance": 0.0857
+     "importance": 0.1212
     },
     {
      "feature": "Improved Gouge",
-     "importance": 0.0839
+     "importance": 0.093
     },
     {
      "feature": "Dual Wield Specialization",
-     "importance": 0.0677
-    },
-    {
-     "feature": "Lightning Reflexes",
-     "importance": 0.0504
+     "importance": 0.0378
     },
     {
      "feature": "Assassination points",
-     "importance": 0.032
+     "importance": 0.035
     },
     {
      "feature": "Remorseless Attacks",
-     "importance": 0.0221
+     "importance": 0.0268
     },
     {
      "feature": "Aggression",
-     "importance": 0.0133
+     "importance": 0.0234
     },
     {
      "feature": "Improved Expose Armor",
-     "importance": 0.01
+     "importance": 0.0186
     },
     {
      "feature": "Subtlety points",
-     "importance": 0.0057
+     "importance": 0.0132
+    },
+    {
+     "feature": "Lightning Reflexes",
+     "importance": 0.0125
     },
     {
      "feature": "Efficient Strikes",
-     "importance": 0.0055
+     "importance": 0.0117
     }
    ],
-   "simulated_builds": 4312,
+   "simulated_builds": 4373,
    "signature_check": {
     "spec": "Hybrid Assassination/Combat",
     "ok": true,
-    "core_share": 0.7089,
+    "core_share": 0.707,
     "min_share": 0.6,
     "uncast": [],
     "missing_talents": [],
     "why": ""
    },
-   "simulated_fights": 6042000,
-   "minutes": 15.1,
+   "simulated_fights": 6175000,
+   "minutes": 30.7,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-combat-prebis.gear.json",
-   "commit": "16e85426c"
+   "commit": "ff9babba5"
   },
   "prebis-raid": {
    "class": "rogue",
    "spec": "Hybrid Assassination/Combat",
    "setting": "raid",
    "entry": "combat-daggers-raid",
-   "date": "2026-11-10",
+   "date": "2026-11-13",
    "constraint": "spec field (entry rotation)",
    "protected": [
     "Flawless Execution"
    ],
    "entries_screened": {
-    "combat-daggers-raid": 777.7,
-    "assassination-raid": 776.54
+    "combat-daggers-raid": 789.71,
+    "assassination-raid": 788.08
    },
    "entries_searched": [
     "combat-daggers-raid",
@@ -2658,7 +2345,7 @@
       ],
       [
        "Vile Poisons",
-       2
+       1
       ],
       [
        "Cold Blood",
@@ -2666,7 +2353,7 @@
       ],
       [
        "Improved Poisons",
-       2
+       3
       ],
       [
        "Relentless Strikes",
@@ -2688,7 +2375,7 @@
       ],
       [
        "Lightning Reflexes",
-       2
+       3
       ],
       [
        "Puncturing Wounds",
@@ -2700,7 +2387,7 @@
       ],
       [
        "Improved Sprint",
-       2
+       1
       ],
       [
        "Composure",
@@ -2726,30 +2413,30 @@
      "Subtlety": []
     },
     "split": "29/22/0",
-    "dps": 776.99,
-    "se": 0.1045,
+    "dps": 787.43,
+    "se": 0.107,
     "iterations": 100000
    },
    "runner_up": {
     "split": "29/22/0",
-    "dps": 775.79,
-    "se": 0.105,
+    "dps": 787.43,
+    "se": 0.107,
     "differs": [
      [
-      "Improved Poisons",
-      2
+      "Improved Sprint",
+      1
      ],
      [
-      "Vile Poisons",
-      2
+      "Lightning Reflexes",
+      3
      ],
      [
-      "Vile Poisons",
+      "Lightning Reflexes",
       4
      ]
     ]
    },
-   "gap_to_runner_up": 0.0015,
+   "gap_to_runner_up": 0.0,
    "finalists": [
     {
      "allocation": {
@@ -2780,7 +2467,7 @@
        ],
        [
         "Vile Poisons",
-        2
+        1
        ],
        [
         "Cold Blood",
@@ -2788,7 +2475,7 @@
        ],
        [
         "Improved Poisons",
-        2
+        3
        ],
        [
         "Relentless Strikes",
@@ -2810,7 +2497,7 @@
        ],
        [
         "Lightning Reflexes",
-        2
+        3
        ],
        [
         "Puncturing Wounds",
@@ -2822,7 +2509,7 @@
        ],
        [
         "Improved Sprint",
-        2
+        1
        ],
        [
         "Composure",
@@ -2848,8 +2535,8 @@
       "Subtlety": []
      },
      "split": "29/22/0",
-     "dps": 776.99,
-     "se": 0.1045
+     "dps": 787.43,
+     "se": 0.107
     },
     {
      "allocation": {
@@ -2880,11 +2567,15 @@
        ],
        [
         "Vile Poisons",
-        4
+        1
        ],
        [
         "Cold Blood",
         1
+       ],
+       [
+        "Improved Poisons",
+        3
        ],
        [
         "Relentless Strikes",
@@ -2906,7 +2597,7 @@
        ],
        [
         "Lightning Reflexes",
-        2
+        4
        ],
        [
         "Puncturing Wounds",
@@ -2915,10 +2606,6 @@
        [
         "Precision",
         3
-       ],
-       [
-        "Improved Sprint",
-        2
        ],
        [
         "Composure",
@@ -2944,52 +2631,46 @@
       "Subtlety": []
      },
      "split": "29/22/0",
-     "dps": 775.79,
-     "se": 0.105
+     "dps": 787.43,
+     "se": 0.107
     }
    ],
    "runs": [
     {
      "entry": "combat-daggers-raid",
      "run": 1,
-     "simulated": 1384,
-     "best_screen": 777.07,
+     "simulated": 1189,
+     "best_screen": 789.71,
      "best_split": "29/22/0",
      "trace": [
       {
        "round": 0,
-       "simulated": 384,
-       "best": 776.01
+       "simulated": 389,
+       "best": 789.44
       },
       {
        "round": 1,
-       "simulated": 584,
-       "best": 776.05,
-       "predicted_top": 772.16
+       "simulated": 589,
+       "best": 789.44,
+       "predicted_top": 781.68
       },
       {
        "round": 2,
-       "simulated": 784,
-       "best": 776.96,
-       "predicted_top": 775.66
+       "simulated": 789,
+       "best": 789.71,
+       "predicted_top": 786.18
       },
       {
        "round": 3,
-       "simulated": 984,
-       "best": 776.96,
-       "predicted_top": 775.88
+       "simulated": 989,
+       "best": 789.71,
+       "predicted_top": 786.85
       },
       {
        "round": 4,
-       "simulated": 1184,
-       "best": 776.96,
-       "predicted_top": 776.87
-      },
-      {
-       "round": 5,
-       "simulated": 1384,
-       "best": 777.07,
-       "predicted_top": 776.82
+       "simulated": 1189,
+       "best": 789.71,
+       "predicted_top": 788.73
       }
      ],
      "best_stage1_gap": 0.0,
@@ -2998,38 +2679,44 @@
     {
      "entry": "assassination-raid",
      "run": 1,
-     "simulated": 1179,
-     "best_screen": 776.54,
+     "simulated": 1391,
+     "best_screen": 788.08,
      "best_split": "29/22/0",
      "trace": [
       {
        "round": 0,
-       "simulated": 379,
-       "best": 776.54
+       "simulated": 391,
+       "best": 785.95
       },
       {
        "round": 1,
-       "simulated": 579,
-       "best": 776.54,
-       "predicted_top": 769.37
+       "simulated": 591,
+       "best": 787.77,
+       "predicted_top": 779.03
       },
       {
        "round": 2,
-       "simulated": 779,
-       "best": 776.54,
-       "predicted_top": 774.44
+       "simulated": 791,
+       "best": 788.08,
+       "predicted_top": 785.66
       },
       {
        "round": 3,
-       "simulated": 979,
-       "best": 776.54,
-       "predicted_top": 776.27
+       "simulated": 991,
+       "best": 788.08,
+       "predicted_top": 786.62
       },
       {
        "round": 4,
-       "simulated": 1179,
-       "best": 776.54,
-       "predicted_top": 776.34
+       "simulated": 1191,
+       "best": 788.08,
+       "predicted_top": 787.31
+      },
+      {
+       "round": 5,
+       "simulated": 1391,
+       "best": 788.08,
+       "predicted_top": 787.85
       }
      ],
      "best_stage1_gap": 0.0,
@@ -3042,133 +2729,115 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      776.43,
-      776.43,
-      775.37,
-      775.37,
-      775.37,
-      775.37
+      787.33,
+      787.33,
+      787.33,
+      787.33,
+      787.33,
+      787.33
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      775.96,
-      775.96,
-      775.39,
-      775.39,
-      775.39
+      787.44,
+      787.44,
+      787.44,
+      787.44,
+      787.44
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      775.79,
-      775.79
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      776.99,
-      775.79
+      787.43,
+      787.43
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 224,
-     "best_gap": 0.0019,
-     "best_move": "3 Vile Poisons -> Improved Poisons",
-     "raced": [
-      "3 Vile Poisons -> Improved Poisons",
-      "2 Vile Poisons -> Improved Poisons"
-     ],
-     "confirmed_gap": 0.0016
-    },
-    {
-     "neighbours": 234,
-     "best_gap": 0.0006,
-     "best_move": "2 Improved Poisons -> Vile Poisons"
+     "neighbours": 236,
+     "best_gap": 0.0008,
+     "best_move": "1 Improved Poisons -> Vile Poisons"
     }
    ],
    "other_entries": [
     {
      "entry": "assassination-raid",
-     "dps": 775.72,
+     "dps": 786.24,
      "split": "29/22/0"
     }
    ],
    "important_features": [
     {
-     "feature": "Relentless Strikes",
-     "importance": 0.3017
-    },
-    {
      "feature": "Seal Fate",
-     "importance": 0.2692
+     "importance": 0.2943
     },
     {
-     "feature": "Dual Wield Specialization",
-     "importance": 0.0945
+     "feature": "Relentless Strikes",
+     "importance": 0.2829
     },
     {
      "feature": "Improved Gouge",
-     "importance": 0.0893
+     "importance": 0.1014
     },
     {
-     "feature": "Assassination points",
-     "importance": 0.0699
+     "feature": "Dual Wield Specialization",
+     "importance": 0.0924
     },
     {
      "feature": "Venom",
-     "importance": 0.0429
+     "importance": 0.0539
     },
     {
-     "feature": "Puncturing Wounds",
-     "importance": 0.0361
+     "feature": "Assassination points",
+     "importance": 0.0479
     },
     {
      "feature": "Remorseless Attacks",
-     "importance": 0.0266
+     "importance": 0.0328
+    },
+    {
+     "feature": "Puncturing Wounds",
+     "importance": 0.0295
     },
     {
      "feature": "Improved Expose Armor",
-     "importance": 0.0131
+     "importance": 0.0127
     },
     {
-     "feature": "Weapon Expertise",
-     "importance": 0.0098
+     "feature": "Efficient Strikes",
+     "importance": 0.0082
     },
     {
      "feature": "Subtlety points",
-     "importance": 0.0058
+     "importance": 0.0048
     },
     {
-     "feature": "Aggression",
-     "importance": 0.0048
+     "feature": "Lightning Reflexes",
+     "importance": 0.0037
     }
    ],
-   "simulated_builds": 4736,
+   "simulated_builds": 4556,
    "signature_check": {
     "spec": "Hybrid Assassination/Combat",
     "ok": true,
-    "core_share": 0.8276,
+    "core_share": 0.8263,
     "min_share": 0.6,
     "uncast": [],
     "missing_talents": [],
     "why": ""
    },
-   "simulated_fights": 7104000,
-   "minutes": 21.8,
+   "simulated_fights": 6421000,
+   "minutes": 42.8,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-combat-prebis.gear.json",
-   "commit": "16e85426c"
+   "commit": "ff9babba5"
   }
  },
- "commit": "16e85426c",
+ "commit": "ff9babba5",
  "spells_done": {
   "date": "2026-10-14",
   "lines_kept": 2
@@ -3181,60 +2850,60 @@
   "dps": {
    "winner": {
     "entry": "combat-daggers-raid",
-    "dps": 392.43,
-    "se": 0.052
+    "dps": 396.42,
+    "se": 0.053
    },
    "assassination-seal-fate-raid": {
     "entry": "assassination-raid",
-    "dps": 312.75,
-    "se": 0.042
+    "dps": 316.67,
+    "se": 0.043
    },
    "assassination-mutilate-raid": {
     "entry": "assassination-raid",
-    "dps": 308.09,
-    "se": 0.044
+    "dps": 311.73,
+    "se": 0.045
    },
    "daggers-split-open-raid": {
     "entry": "assassination-raid",
-    "dps": 371.26,
+    "dps": 375.28,
     "se": 0.05
    }
   },
   "best_hand": "assassination-seal-fate-raid",
-  "gain_vs_hand": 0.2548,
-  "commit": "16e85426c"
+  "gain_vs_hand": 0.2518,
+  "commit": "ff9babba5"
  },
  "compare_raid": {
   "setting": "raid",
   "dps": {
    "winner": {
     "entry": "combat-daggers-raid",
-    "dps": 789.32,
-    "se": 0.104
+    "dps": 796.97,
+    "se": 0.107
    },
    "assassination-seal-fate-raid": {
     "entry": "assassination-raid",
-    "dps": 687.8,
-    "se": 0.088
+    "dps": 695.07,
+    "se": 0.091
    },
    "assassination-mutilate-raid": {
     "entry": "assassination-raid",
-    "dps": 678.77,
-    "se": 0.089
+    "dps": 685.49,
+    "se": 0.092
    },
    "daggers-split-open-raid": {
     "entry": "combat-daggers-raid",
-    "dps": 789.32,
-    "se": 0.104
+    "dps": 797.17,
+    "se": 0.107
    }
   },
   "best_hand": "assassination-seal-fate-raid",
-  "gain_vs_hand": 0.1476
+  "gain_vs_hand": 0.1466
  },
  "signature_check": {
   "spec": "Hybrid Assassination/Combat",
   "ok": true,
-  "core_share": 0.8233,
+  "core_share": 0.8162,
   "min_share": 0.6,
   "uncast": [],
   "missing_talents": [],
@@ -3242,29 +2911,28 @@
   "entry": "combat-daggers-raid",
   "setting": "raid",
   "iterations": 6000,
-  "dps": 789.4,
-  "date": "2026-11-10",
-  "commit": "16e85426c",
+  "dps": 797.0,
+  "date": "2026-11-13",
+  "commit": "ff9babba5",
   "shares": {
-   "Auto Attack": 0.4087,
-   "Backstab": 0.2189,
-   "Eviscerate": 0.1957,
-   "Instant Poison VI": 0.0755,
-   "Deadly Poison V": 0.07,
+   "Auto Attack": 0.4135,
+   "Backstab": 0.2163,
+   "Eviscerate": 0.1864,
+   "Instant Poison VI": 0.0818,
+   "Deadly Poison V": 0.071,
    "Garrote": 0.0119,
    "Shank": 0.0109,
    "Goblin Sapper Charge": 0.0083
   },
   "casts": {
-   "Backstab": 35.99,
    "Slice and Dice": 9.76,
-   "spell 25349": 43.78,
-   "spell 11337": 71.16,
-   "Eviscerate": 21.22,
-   "Cold Blood": 0.99,
-   "Shank": 18.0,
    "Vanish": 1.0,
-   "Garrote": 1.0
+   "spell 25349": 45.25,
+   "Garrote": 1.0,
+   "Eviscerate": 21.49,
+   "spell 11337": 76.92,
+   "Shank": 18.0,
+   "Backstab": 36.54
   },
   "allocation": {
    "Assassination": [
@@ -3297,12 +2965,8 @@
      2
     ],
     [
-     "Cold Blood",
-     1
-    ],
-    [
      "Improved Poisons",
-     2
+     3
     ],
     [
      "Relentless Strikes",
@@ -3361,9 +3025,9 @@
  "builds": {
   "written": [],
   "superseded": [],
-  "date": "2026-11-10",
+  "date": "2026-11-13",
   "setting": "raid",
-  "why": "confirms daggers-split-open-raid (+0.00% in a full raid)"
+  "why": "confirms daggers-split-open-raid (-0.03% in a full raid)"
  },
  "tidied": {
   "bis-dummy": null,

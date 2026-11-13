@@ -8,7 +8,7 @@
 
 **Other setups of this spec.** This build is the Shadow Bolt setup. The spec's best build for each other setup, in a full raid:
 
-- Incinerate: [Destruction — Incinerate](../research/raid/builds/destruction-incinerate-open-raid.md) (10/11/30, 793 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/253-0050203001-055030500310035-12)
+- Incinerate: [Destruction — Incinerate](../research/raid/builds/destruction-incinerate-open-raid.md) (10/11/30, 787 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/253-0050203001-055030500310035-12)
 
 ## How to play
 
@@ -71,18 +71,18 @@ Before the pull: put on **Demon Armor**, summon the Imp, use **Demonic Sacrifice
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 815 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 808 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 16e8542 (client 70790); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever ff9babb (client 70888); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 771 | [10/11/30](https://talentsforever.com/warlock/60/253-0050203001-055030500310035-12) |
-| Phase 1 BiS | 811 | this build |
+| Pre-BiS | 779 | this build |
+| Phase 1 BiS | 809 | [10/11/30](https://talentsforever.com/warlock/60/253-0050203001-055030500310035-12) (as good as this build in this gear) |
 
 *Each row is in that tier's own gear set; the DPS at the top of the page is this build in the standard set, so the two do not match.*
 
-**The gear** (average item level: Pre-BiS 59.4; Phase 1 BiS 61.5; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 59.4; Phase 1 BiS 61.2; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
@@ -101,15 +101,15 @@ Before the pull: put on **Demon Armor**, summon the Imp, use **Demonic Sacrifice
 | Trinket | [Eye of the Beast](https://www.wowhead.com/forever/item=13968) · *quest: For The Horde!* | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) · *sold by Pix Xizzix* |
 | Trinket | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) · *sold by Pix Xizzix* | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
 | Main hand | [Sageblade](https://www.wowhead.com/forever/item=22383) · *Blacksmithing*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Sageblade](https://www.wowhead.com/forever/item=22383) · *Blacksmithing*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
-| Off hand | [Orb of the Forgotten Seer](https://www.wowhead.com/forever/item=7685) · *Bloodmage Thalnos, Scarlet Monastery* | [Mordresh's Lifeless Skull](https://www.wowhead.com/forever/item=10770) · *Mordresh Fire Eye, Razorfen Downs* |
+| Off hand | [Orb of the Forgotten Seer](https://www.wowhead.com/forever/item=7685) · *Bloodmage Thalnos, Scarlet Monastery* | [Orb of the Forgotten Seer](https://www.wowhead.com/forever/item=7685) · *Bloodmage Thalnos, Scarlet Monastery* |
 | Ranged/relic | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzElV9oI1UUxnPu3GRuTrWZvat0OqsyBrLEwIQ7E8amRcjsPi0+FZ+EBd1kk5oETUImDysirGxFEc3KxpeNBf+u2wpq8aEWQaiFQuqD5MmXUixKUUSwiPRRZCaTKmkffEjZ83Bzcj5uzu+754aLDzFQQAUdknAFytCA6wCvA7wPsAzA7/NV4qlZ0D6ZYJIS1VyU2d1boO5PIGU3vgCk7Ld3vPXdvoIRtl1Tf55EmW3eAXVnEiW2WUPK9m8CRtifC94umX2zEVNvykhZ+3cFKfvuA0CJvf0CUrbWV1Bmf3wOau8sSuzVJ5CylaVY3FJ6leT3bRCHhfm3PoQ3gCxWbgE5LHQh/MuF9+7ApyDfXYLVS+3KKnxU3YPFykXm04MDX5NHLDtjCGELS2SEMA1h2yIjbCEyphAZu0ekPpn4iSxH8SwyLYKUHbQhLmMYJcN28QGUtTBKbOVyPIoyhg0zbbv8Ye0cnonH8P4vAZGyjdfmOVHC/m4vtzSBSX4ez6RiLMLJkyHN/z3Tdv0S5aQQlGbshEaRqCrvAH8m33j+2XqjpVvCetwwhSGsOf1qOV97rlTU6009XyyWinrhRb1VLunNeivfqtRrulvKN6+W9aRbKuluwWjmK0VjKBoDMV1167XHNPN/QmVFwvOsHBY41chcaGB3AH60LW37dr/qwElyJpBvvAn8pRFjYtawZsZqbBqV1CST/GONIEViJ4KhcdSOhsrjmo5TqQcZ5XLVk7+9rLEuCbLBB18aHYNHmx0r7RwKnsbp1BSjnFU9uB+3QIt2SZAem5BwtUA6GW/mlPF2/8XbPY5nBXi7W8CrI3TeHTbHSjeY5l8d4C+P9jINMd6TODe0OvxjWHbCa68sdk6wOvb2vlVlra8cXeKdLVClX0kPDoj1ihTyY9bpEoYRpDpxIP43iXrF0PUFZ7p724vt3KMLfvyQs/aISvVcap2E7km0nGF2qnH+s1PrM+uvT33sXAgKzhXvzbwN/pfQXi4lsfWpi/95WgVkwYFLMA9PQxkacA2ukX8GAI+ujik=); Phase 1 BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzElUFoI1UYx/O9ecm8fNVm9q3S6azKGMgSAxPeTBib9pLZPS2eingQFnSTTdYkSBIyEVZEWDGgiHYhcQ8bC4q6bFdQFg/rIgi1UEgRJCcvJViUonixB+mxyEwmUdIePKT4HV6+fP+8fL//fG94+AQDBVTQIQlXoAwNuAHwLsAnABsA/BFfJZ6aBW1jjklKVHsNZXa3A+r+HFJ21AGk7I8PvfWjgYIRtlNTf51HmW3dAXV3HiW2VUPK9m8Cymx4y98ms+82Y+pNGSn74RZM1gcDBSlrd71f/vkVqP2zKLHOC0jZvfVY3FL6leSPayAOC6sffArvAWlXOkAOCz0I/3bh4zvwBch31+H+pbXKffisugftykXm84MD35KnLNsyhLCFJTJCmIawbZExbSEyphAZu0+kAZn7hWxE8SwyLYKUHaxBXMYwSobt4mMoa2GU2L3L8SjKGDbMtO3yJ7VzeCYew0e/BkTKNt9Z5UQJ+7u93NIEJvl5PJOKsQgnz4U0//9M2/VLlJNCUFqyExpFoqq8C/ylfOPVl+uNlm4J61nDFIawVvSr5XztlVJRrzf1fLFYKuqF1/VWuaQ36618q1Kv6W4p37xa1pNuqaS7BaOZrxSNsWiMxHTVrdee0cz/CJUVCc+zcljgVCMroZHdEfhkW9r27X7ThZPkTCC//T7wN6aMiWXDWpqpsUVUUvNM8h9rBCkSOxEMjaM2GSqPazoupB5nlMtVT/7+ssZ6JMhGH3x9egwebXamtCsoeBoXUwuMclb14H7eBi3aI0F6bELC1QLpZLylU8Yb/oM3PI5nBXjDbeDVKTrvDJszpRtN868u8Dene5mGmO2TODe2On4xLDvhtVfa3ROszry9b1V5MFAmh3h3G1Tpd9KHA2K9JYX8WHZ6hGEEqU4ciB+RqFcM3bjmLPZue7GTe/qaHz/lrD2iUj2XekhC/0u0nHF2qnH+y1Prs+yvz3/uXAgKzhXv1rwN/pfQXi4lsYcLF/91uQrIggOXYBVehDI04DpcJ38PAKcfjrQ=).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzElV9oI1UUxnPu3GRuTrWZvat0OqsyBrLEwIQ7E8amRcjsPi0+FZ+EBd1kk5oETUImDysirGxFEc3KxpeNBf+u2wpq8aEWQaiFQuqD5MmXUixKUUSwiPRRZCaTKmkffEjZ83Bzcj5uzu+754aLDzFQQAUdknAFytCA6wCvA7wPsAzA7/NV4qlZ0D6ZYJIS1VyU2d1boO5PIGU3vgCk7Ld3vPXdvoIRtl1Tf55EmW3eAXVnEiW2WUPK9m8CRtifC94umX2zEVNvykhZ+3cFKfvuA0CJvf0CUrbWV1Bmf3wOau8sSuzVJ5CylaVY3FJ6leT3bRCHhfm3PoQ3gCxWbgE5LHQh/MuF9+7ApyDfXYLVS+3KKnxU3YPFykXm04MDX5NHLNsyhLCFJTJCmIawbZExbSEyphAZu0ekPpn4iSxH8SwyLYKUHbQhLmMYJcN28QGUtTBKbOVyPIoyhg0zbbv8Ye0cnonH8P4vAZGyjdfmOVHC/m4vtzSBSX4ez6RiLMLJkyHN/z3Tdv0S5aQQlGbshEaRqCrvAH8m33j+2XqjpVvCetwwhSGsOf1qOV97rlTU6009XyyWinrhRb1VLunNeivfqtRrulvKN6+W9aRbKuluwWjmK0VjKBoDMV1167XHNPN/QmVFwvOsHBY41chcaGB3AH60LW37dr/qwElyJpBvvAn8pRFjYtawZsZqbBqV1CST/GONIEViJ4KhcdSOhsrjmo5TqQcZ5XLVk7+9rLEuCbLBB18aHYNHmx0r7RwKnsbp1BSjnFU9uB+3QIt2SZAem5BwtUA6GW/mlPF2/8XbPY5nBXi7W8CrI3TeHTbHSjeY5l8d4C+P9jINMd6TODe0OvxjWHbCa68sdk6wOvb2vlVlra8cXeKdLVClX0kPDoj1ihTyY9bpEoYRpDpxIP43iXrF0PUFZ7p724vt3KMLfvyQs/aISvVcap2E7km0nGF2qnH+s1PrM+uvT33sXAgKzhXvzbwN/pfQXi4lsfWpi/95WgVkwYFLMA9PQxkacA2ukX8GAI+cjik=); Phase 1 BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzElUFoI1UYx/O9ecm8fNVm9q3S6azKGMgSAxPeTBibFiGze1o8FU/Cgm6yyZoESUImwooIK0YU0S407mFjQVGX7QrK4mEtglALhRRBcvJSgkUpihd7kB6LzGQSJe3BQ8p+h5cv3z8v3+8/3xsePsFAARV0SMIVKEMDbgC8B/ApwDoAf8RXiadmQVufYZIS1V5Dmd1dBXV/Bik7WgWk7M+PvPXjvoIRtlNTf5tFmW3dAXV3FiW2VUPK9m8Cymxwy98ms+83Y+pNGSn78RaM1wd9BSlrd7xf/vU1qL2zKLF3nkPK7q3F4pbSqyR/WgFxWFj+8DN4H0i7sgrksNCF8O8XPrkDX4J8dw3uX1qp3IfPq3vQrlxkPj848B15yrIzhhC2sERGCNMQti0ywhYiYwqRsXtE6pOZX8l6FM8i0yJI2cEKxGUMo2TYLj6GshZGid27HI+ijGHDTNsuf1I7h2fiMXz0G0CkbPPdZU6UsL/byy1NYJKfxzOpGItw8nxI8//PtF2/RDkpBKUFO6FRJKrKO8BfyjdefbneaOmWsJ41TGEIa0m/Ws7XXikV9XpTzxeLpaJeeF1vlUt6s97Ktyr1mu6W8s2rZT3plkq6WzCa+UrRGInGUExX3XrtGc38n1BZkfA8K4cFTjWyFBraHYKPt6Vt3+63HThJzgTy2x8Af2PCmFg0rIWpGptHJTXLJP+xRpAisRPB0Dhq46HyuKbjXOpxRrlc9eQfLmusS4Js+MHXJsfg0WanSruEgqdxPjXHKGdVD+6XbdCiXRKkxyYkXC2QTsZbOGW8wb94g+N4VoA32AZenaDzzrA5VbrhNP/uAH9zspdpiOk+iXMjq6MXw7ITXnul3TnB6tTb+1aVB31lfIh3t0GV/iA9OCDWW1LIj0WnSxhGkOrEgfgRiXrF0I1rznz3thc7uaev+fFzztojKtVzqQ0SeijRckbZqcb5r06tz6K/vvCFcyEoOFe8W/M2+F9Ce7mUxDbmLv7nchWQBQcuwTK8CGVowHW4Tv4ZAKmTjo8=).
 
 ## Other builds of this spec
 
-- [Destruction — Incinerate](../research/raid/builds/destruction-incinerate-raid.md) (9/11/31, 755 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/153-0050203001-0050245103101351-12)
+- [Destruction — Incinerate](../research/raid/builds/destruction-incinerate-raid.md) (9/11/31, 748 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/153-0050203001-0050245103101351-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-11 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at ff9babb (client 1.60.1.70888)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-13 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at ff9babb (client 1.60.1.70888)). Simulations, not in-game measurements. Do not hand-edit.*
 

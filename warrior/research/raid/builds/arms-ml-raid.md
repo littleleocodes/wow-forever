@@ -56,10 +56,10 @@ The Arms build the machine-learning talent search found in a full raid (every ra
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Arms* | community simulator | - | 419 | +0.0% | 863 | +0.0% | 0 s |
-| 2 | [`arms-battle-raid`](arms-battle-raid.md) | ours: hand draft | 34/17/0 | 416 | -0.5% | 861 | -0.3% | 0 s |
-| 3 | **[`arms-ml-raid`](arms-ml-raid.md)** | ours: derived (ML search) | 39/10/2 | 411 | -1.9% | 854 | -1.1% | 0 s |
-| 4 | [`arms-community-parse`](arms-community-parse.md) | ours: derived (simulator search) | 37/14/0 | 407 | -2.7% | 852 | -1.3% | 0 s |
+| 1 | *Arms* | community simulator | - | 414 | +0.0% | 855 | +0.0% | 0 s |
+| 2 | [`arms-battle-raid`](arms-battle-raid.md) | ours: hand draft | 34/17/0 | 413 | -0.4% | 852 | -0.3% | 0 s |
+| 3 | **[`arms-ml-raid`](arms-ml-raid.md)** | ours: derived (ML search) | 39/10/2 | 406 | -1.9% | 846 | -1.0% | 0 s |
+| 4 | [`arms-community-parse`](arms-community-parse.md) | ours: derived (simulator search) | 37/14/0 | 403 | -2.7% | 844 | -1.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -111,7 +111,7 @@ Before the pull: at -1s: cast Battle Stance.
 | 10 | if time left in the fight ≤ 36.75s: use every other cooldown when ready | as ready |
 | 11 | if rage < 90: cast Bloodrage | 1.0 |
 | 12 | if number of targets > 1: cast Whirlwind | 1.0 |
-| 13 | cast Mortal Strike | 2.7 |
+| 13 | cast Mortal Strike | 2.6 |
 | 14 | if not Rend is on the target: cast Rend | 2.5 |
 | 15 | cast Slam | 3.5 |
 | 16 | if not Battle Shout is up: cast Battle Shout | 0.3 |

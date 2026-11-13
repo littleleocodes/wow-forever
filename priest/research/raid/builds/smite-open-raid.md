@@ -66,9 +66,9 @@ The Smite (a Discipline/Holy hybrid) raid build the open talent search found on 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`smite-discipline-raid`](smite-discipline-raid.md) | ours: hand draft | 31/17/3 | 386 | +0.0% | 583 | -3.1% | 31 s |
-| 2 | *Smite* | community simulator | - | 386 | +0.0% | 583 | -3.1% | 31 s |
-| 3 | **[`smite-open-raid`](smite-open-raid.md)** | ours: derived (open search) | 17/17/17 | 350 | -9.2% | 602 | +0.0% | 31 s |
+| 1 | [`smite-discipline-raid`](smite-discipline-raid.md) | ours: hand draft | 31/17/3 | 383 | +0.0% | 578 | -3.2% | 30 s |
+| 2 | *Smite* | community simulator | - | 383 | +0.0% | 578 | -3.2% | 30 s |
+| 3 | **[`smite-open-raid`](smite-open-raid.md)** | ours: derived (open search) | 17/17/17 | 350 | -8.7% | 598 | +0.0% | 31 s |
 
 ## Rotation (community simulator, training dummy)
 

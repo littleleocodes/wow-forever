@@ -63,16 +63,16 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonew
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *MM* | community simulator | - | 486 | +0.0% | 996 | -0.7% | 41 s |
-| 2 | **[`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md)** | ours: optimizer | 7/41/3 | 478 | -1.6% | 929 | -7.3% | 24 s |
-| 3 | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) | ours: hand draft | 5/41/5 | 475 | -2.2% | 1003 | +0.0% | 47 s |
-| 4 | *SV* | community simulator | - | 427 | -12.1% | 824 | -17.8% | 38 s |
-| 5 | *SV Weave* | community simulator | - | 421 | -13.2% | 818 | -18.4% | 38 s |
-| 6 | *MM Weave* | community simulator | - | 412 | -15.1% | 826 | -17.6% | 45 s |
-| 7 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 407 | -16.1% | 810 | -19.2% | 29 s |
-| 8 | *BM Weave* | community simulator | - | 309 | -36.3% | 632 | -37.0% | 26 s |
-| 9 | *BM* | community simulator | - | 300 | -38.3% | 643 | -35.8% | 31 s |
-| 10 | *SV Melee* | community simulator | - | 269 | -44.7% | 597 | -40.5% | 45 s |
+| 1 | *MM* | community simulator | - | 483 | +0.0% | 990 | -0.7% | 41 s |
+| 2 | **[`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md)** | ours: optimizer | 7/41/3 | 475 | -1.7% | 924 | -7.3% | 24 s |
+| 3 | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) | ours: hand draft | 5/41/5 | 472 | -2.4% | 997 | +0.0% | 47 s |
+| 4 | *SV* | community simulator | - | 426 | -11.9% | 815 | -18.2% | 36 s |
+| 5 | *SV Weave* | community simulator | - | 421 | -13.0% | 807 | -19.0% | 36 s |
+| 6 | *MM Weave* | community simulator | - | 410 | -15.2% | 824 | -17.3% | 45 s |
+| 7 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 406 | -16.1% | 805 | -19.2% | 29 s |
+| 8 | *BM Weave* | community simulator | - | 308 | -36.4% | 629 | -36.9% | 26 s |
+| 9 | *BM* | community simulator | - | 298 | -38.3% | 641 | -35.7% | 31 s |
+| 10 | *SV Melee* | community simulator | - | 267 | -44.8% | 593 | -40.5% | 45 s |
 
 ## Rotation (community simulator, training dummy)
 

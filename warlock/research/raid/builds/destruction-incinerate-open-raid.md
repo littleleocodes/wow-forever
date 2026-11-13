@@ -62,9 +62,9 @@ The Destruction raid build the open talent search found on 2026-11-08: every leg
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`destruction-incinerate-open-raid`](destruction-incinerate-open-raid.md)** | ours: derived (open search) | 10/11/30 | 703 | +0.0% | 793 | +0.0% | 1 s |
-| 2 | [`destruction-incinerate-raid`](destruction-incinerate-raid.md) | ours: hand draft | 9/11/31 | 676 | -3.8% | 755 | -4.8% | 1 s |
-| 3 | *Destro* | community simulator | - | 639 | -9.0% | 712 | -10.1% | 1 s |
+| 1 | **[`destruction-incinerate-open-raid`](destruction-incinerate-open-raid.md)** | ours: derived (open search) | 10/11/30 | 697 | +0.0% | 787 | +0.0% | 1 s |
+| 2 | [`destruction-incinerate-raid`](destruction-incinerate-raid.md) | ours: hand draft | 9/11/31 | 671 | -3.8% | 748 | -5.0% | 1 s |
+| 3 | *Destro* | community simulator | - | 634 | -9.0% | 707 | -10.2% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -97,11 +97,11 @@ Before the pull: at -1.5s: cast Life Tap.
 | 4 | use every other cooldown when ready | as ready |
 | 5 | if time left in the fight ≤ 3.938: cast Searing Pain | 0.5 |
 | 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 |
-| 7 | if mana % < 10%: cast Life Tap | 6.4 |
+| 7 | if mana % < 10%: cast Life Tap | 6.6 |
 | 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
-| 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
-| 10 | if Immolate is on the target: cast Conflagrate | 3.9 |
-| 11 | cast Shadow Bolt (rank 9) | 12.3 |
+| 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
+| 10 | if Immolate is on the target: cast Conflagrate | 3.8 |
+| 11 | cast Shadow Bolt (rank 9) | 12.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Incinerate (needs the Incinerate talent).
 

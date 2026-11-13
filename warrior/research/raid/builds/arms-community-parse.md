@@ -54,10 +54,10 @@ Arms for a full raid: talentsforever.com's #2 most popular Arms build (37/14/0, 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Arms* | community simulator | - | 419 | +0.0% | 863 | +0.0% | 0 s |
-| 2 | [`arms-battle-raid`](arms-battle-raid.md) | ours: hand draft | 34/17/0 | 416 | -0.5% | 861 | -0.3% | 0 s |
-| 3 | [`arms-ml-raid`](arms-ml-raid.md) | ours: derived (ML search) | 39/10/2 | 411 | -1.9% | 854 | -1.1% | 0 s |
-| 4 | **[`arms-community-parse`](arms-community-parse.md)** | ours: derived (simulator search) | 37/14/0 | 407 | -2.7% | 852 | -1.3% | 0 s |
+| 1 | *Arms* | community simulator | - | 414 | +0.0% | 855 | +0.0% | 0 s |
+| 2 | [`arms-battle-raid`](arms-battle-raid.md) | ours: hand draft | 34/17/0 | 413 | -0.4% | 852 | -0.3% | 0 s |
+| 3 | [`arms-ml-raid`](arms-ml-raid.md) | ours: derived (ML search) | 39/10/2 | 406 | -1.9% | 846 | -1.0% | 0 s |
+| 4 | **[`arms-community-parse`](arms-community-parse.md)** | ours: derived (simulator search) | 37/14/0 | 403 | -2.7% | 844 | -1.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -129,11 +129,11 @@ Damage by ability:
 | Overpower | 16% |
 | Execute | 14% |
 | Slam | 9% |
-| Mortal Strike | 8% |
+| Mortal Strike | 7% |
 | Deep Wound | 7% |
 | Rend | 6% |
-| Spearing Strike | 2% |
 | Whirlwind | 2% |
+| Spearing Strike | 2% |
 
 ## Notes
 

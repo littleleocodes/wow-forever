@@ -4,9 +4,7 @@
 
 **✅ Recommended** for raid (the best priest spec here, or within 3% of it).
 
-**[Shadow — Raid](../research/raid/builds/shadow-ml-raid.md)** (16/0/35) — [open the talent tree](https://talentsforever.com/priest/60/005305201--50552001201312251-12)
-
-> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds). A model of the beta, to check at launch.
+**[Shadow (optimized)](../research/raid/builds/opt-shadow-dps-raid-dps.md)** (20/0/31) — [open the talent tree](https://talentsforever.com/priest/60/52500500003--50052101231302051-12)
 
 ## How to play
 
@@ -57,29 +55,29 @@ Shadow in a raid is **Shadowform** before the pull, **Mind Blast** every time it
 
 | Tree | Points | Talents (ranks) |
 |---|---|---|
-| Discipline | 16 | Twin Disciplines 5, Mental Strength 5, Inner Focus 1, Martyrdom 2, Silent Resolve 3 |
-| Shadow | 35 | Shadow Focus 5, Improved Mind Blast 5, Improved Shadow Word: Pain 2, Mind Flay 1, Improved Mind Flay 2, Vampiric Embrace 1, Shadow Weaving 3, Devouring Contagion 2, Early Demise 2, Darkness 5, Shadowform 1, Silence 1, Spirit Tap 5 |
+| Discipline | 20 | Power in Light 5, Twin Disciplines 5, Wand Specialization 2, Mental Strength 5, Meditation 3 |
+| Shadow | 31 | Shadow Focus 5, Improved Mind Blast 5, Improved Shadow Word: Pain 2, Shadow Reach 1, Improved Mind Flay 2, Mind Flay 1, Dark Inspiration 3, Shadow Weaving 3, Vampiric Embrace 1, Devouring Contagion 2, Darkness 5, Shadowform 1 |
 
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 768 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 761 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 16e8542 (client 70790); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever ff9babb (client 70888); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
 | Pre-BiS | 772 | [18/0/33](https://talentsforever.com/priest/60/00530520102--50352001201312251-12) |
-| Phase 1 BiS | 795 | [18/0/33](https://talentsforever.com/priest/60/00530520102--50352001201312251-12) (as good as this build in this gear) |
+| Phase 1 BiS | 790 | [18/0/33](https://talentsforever.com/priest/60/00530521101--50352001201312251-12) |
 
 *Each row is in that tier's own gear set; the DPS at the top of the page is this build in the standard set, so the two do not match.*
 
-**The gear** (average item level: Pre-BiS 59.7; Phase 1 BiS 61.5; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 59.7; Phase 1 BiS 61.6; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
-| Head | [Felcloth Hood](https://www.wowhead.com/forever/item=14111) · *Tailoring*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Felcloth Hood](https://www.wowhead.com/forever/item=14111) · *Tailoring*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
+| Head | [Felcloth Hood](https://www.wowhead.com/forever/item=14111) · *Tailoring*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Crimson Felt Hat](https://www.wowhead.com/forever/item=18727) · *Magistrate Barthilas, Stratholme*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
 | Neck | [Nacreous Shell Necklace](https://www.wowhead.com/forever/item=22403) · *Cannon Master Willey, Stratholme* | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
 | Shoulders | [Mantle of the Timbermaw](https://www.wowhead.com/forever/item=19050) · *Tailoring* | [Mantle of the Timbermaw](https://www.wowhead.com/forever/item=19050) · *Tailoring* |
 | Back | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411) · *sold by Pix Xizzix* | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411) · *sold by Pix Xizzix* |
@@ -97,12 +95,12 @@ Shadow in a raid is **Shadowform** before the pull, **Mind Blast** every time it
 | Off hand | [Mordresh's Lifeless Skull](https://www.wowhead.com/forever/item=10770) · *Mordresh Fire Eye, Razorfen Downs* | [Mordresh's Lifeless Skull](https://www.wowhead.com/forever/item=10770) · *Mordresh Fire Eye, Razorfen Downs* |
 | Ranged/relic | [Ritssyn's Wand of Bad Mojo](https://www.wowhead.com/forever/item=22408) · *Baron Rivendare, Stratholme* | [Ritssyn's Wand of Bad Mojo](https://www.wowhead.com/forever/item=22408) · *Baron Rivendare, Stratholme* |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/priest/dps/#eJzElN9LFF8Yxuc9Mzvz7rvqd5gv4XiIGDeIzRg5M7Zh3uzolQSRREJ3Obpru5E7i7OQ3Vl5IUGrSASaYEVSBGFXIUEU1sXWRexVN91IoUV00Q/QiyBiVoX+Aeu5eDnv++E5z+HAObQXQQcTLEjBAOShBOMAkwC3AO4DGA11yiLaCXxdQdRjPCQVF4rmWoIUvLIEpODn61G9WdNJw2eLYH5oIg1XFsF810QyrhRJwbUpIBW/D0c2DZ8+/8+c0kjByhedFHx9O/I/rukk4/QIabg+D2b1f5Jx5hQpOLkEyUN6tZB6UwGxMdh37Q5cBTZRmAG2MTgH7GP3A9DuzcOj3kphFSYKPVg/NnjwhO0TIt0h0q5whGvbadGRdoVwXOF0OK6bdqoMaizxnv1gZJDGYyTjt7GkRjGSbSc0EjzONYql4vii31A465IMwdtpv9FKjckExd0IIlb6SW9rQtVgxySukkLMEXwHGS282d2zvflCSMSR1JSKtRtgNPCtTsGXmyeMwPD90vkzQalsucI9YjvCFp1d1lDeL57NZa1g1PKz2VzWGrxolfM5azQo++VCULTCnD86lLdSYS5nhXk/G1yws6XQ3uH2Fm8/FwbFg9uBW/GNPHEZonwVN2fAGPkb+RhdEE7/PG7Kn1gVvjL3kizVddhbAYUzkpK/WDwaSOPDXsvcbKRXmdbhut5m3FVmKlambZlJ/0Rlb2e1qzrwcNdyjtbrybte9/bAG4je/CzUG2k10ybjcnPPH1+DgE7woBf64DTkoQRjMMZ+DwCtVbsC); Phase 1 BiS: [full raid](https://wowsims.com/forever/priest/dps/#eJzElNFLFF8Ux+fcmd05e1b9LfMjHC8R4waxGSN3xjbMlx19kiCSSOgtR3dtNmpncTayNwsfJGiNLQNNMCIpgqinkCAK62EjCJ96iUAKS6KHItCHQGJGhf4B6/twOOd8OOd7uXAv7UZIgQ4GZGAAPCjDGMAEwG2A+wBaQ0RZSDuBryqIqRg/T3GcK+krSVJwowak4NcbYby1lCIVn8+D/qmJVFycB/19E8m4WCIFVyaBVPwwBeGcis9e/KdPqqTgm6lwtPotRQqOXw/zJ9Gaz7Og1/8nGWsnSMGJR5A+kKoXM2+rINYG+67egSvAxos1YGuDM8C+dD8A9d4sPO6tFpdhvNiD0cHBgadsjxDZDpG1hSVs08yKjqwthGULq8Oy7axVZ7DEkh/ZT0YaqTxGMv4YTasUI9m0Ai3JE1ylWCaBL/s1hbMuSRO8nfZqrdSYTlLCDiFitZ9SbU0Y19gRicdJIWYJvo20Ft5s79paPhcQcaR4Jo5LN0Fr4JuVgq/Wj2m+5rrls6f8csWwhX3ItIQpOruMIc8tnS7kDX/EcPP5Qt4YvGhUvIIx4lfcStEvGUHBHRnyjExQKBiB5+b9C2a+HJjb3Nzk7WcCv7R/y3DTvpEnL0PoH8f1Gmjn/oY/hheE134d1eVVVofvzL4kS5EOOougcEZSeoMlwoY0Nuy0zEyHep1rHY70LmcvM10xcm0LTPonqjjb2Y5q38Md8zkcxeN3ne6thjMQvvppiAppOdcm40Jzzx+fg4BOcKAX+uAkeFCGURhlvwcAD1u7kQ==).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/priest/dps/#eJzElN9LFF8Yxuc9Mzvz7rvqd5gv4XiIGDeIzRg5M7Zh3uzolQSRREJ3Obpru5E7i7OQ3Vl5IUGrSASaYEVSBGFXIUEU1sXWRexVN91IoUV00Q/QiyBiVoX+Aeu5eDnv++E5z+HAObQXQQcTLEjBAOShBOMAkwC3AO4DGA11yiLaCXxdQdRjPCQVF4rmWoIUvLIEpODn61G9WdNJw2eLYH5oIg1XFsF810QyrhRJwbUpIBW/D0c2DZ8+/8+c0kjByhedFHx9O/I/rukk4/QIabg+D2b1f5Jx5hQpOLkEyUN6tZB6UwGxMdh37Q5cBTZRmAG2MTgH7GP3A9DuzcOj3kphFSYKPVg/NnjwhO0TIt0h0q5whGvbadGRdoVwXOF0OK6bdqoMaizxnv1gZJDGYyTjt7GkRjGSbSc0EjzONYql4vii31A465IMwdtpv9FKjckExd0IIlb6SW9rQtVgxySukkLMEXwHGS282d2zvflCSMSR1JSKtRtgNPCtTsGXmyeMwPD90vkzQalsucI9YjvCFp1d1lDeL57NZa1g1PKz2VzWGrxolfM5azQo++VCULTCnD86lLdSYS5nhXk/G1yws6XQ3uH2Fm8/FwbFg9uBW/GNPHEZonwVN2fAGPkb+RhdEE7/PG7Kn1gVvjL3kizVddhbAYUzkpK/WDwaSOPDXsvcbKRXmdbhut5m3FVmKlambZlJ/0Rlb2e1qzrwcNdyjtbrybte9/bAG4je/CzUG2k10ybjcnPPH1+DgE7woBf64DTkoQRjMMZ+DwCtVbsC); Phase 1 BiS: [full raid](https://wowsims.com/forever/priest/dps/#eJzElN9LFG0Ux+c8M7tz9qz6LvMSjg8R4waxGSPPjG2YNzt6JUEkkdBdju7abNTO4ixldxZeSNAaWwaaUERiBFFXIUEU1sVGEF51E4EU9osuikAvAokZFfoHrO/F4Zzz4ZzvwwPPQzsRUqCDARkYAA/KMAYwAXAL4C6A1hBRFtJO4F8UxFSMnyUV52ugryRJwfUakIJfr4XxxlKKVHw6B/qHJlJxcQ70t00k42KJFFyZBFLx3VQ0p+KTZ//pkyop+GoqHK1+S5GC41fD/FG05uMs6PX/ScbaMVJw4gGk96XqxczrKojVwb7Lt+ESsPFiDdjq4AywT933QJ2fhYe91eIyjBd7MDo5OPCY7RIi2yGytmUJyzSzoiNrC2HZwuqwbDtr1RksseR79pORRiqPkYw/RtMqxUg2rUBL8gRXKZZJ4PN+TeGsS9IEb6fdWis1ppOUsEOIWO2nVFsTxjV2SOJxUohZgm8hrYU32zs2l98MiDhSPBPHpeugNfCNSsEXa0c0X3Pd8ukTfrli2MI+YFrCFJ1dxpDnlk4W8oY/Yrj5fCFvDJ43Kl7BGPErbqXol4yg4I4MeUYmKBSMwHPz/jkzXw7MLW5u8PZTgV/au2m4Yd/Ikxch9I/jWg20M3/DH8MLwiu/DuvyZ1aH78y+IEuR9juLoHBGUnqdJcKGNDbstMxMh3qZax2O9CZnLzNdMXJtC0z6J6o4W9m2as/9bfM5GMWjd5zuzYYzED77aYgKaTnXJuNCc88fv4OATnCgF/rgOHhQhlEYZb8HANhUu8E=).
 
 ## Other builds of this spec
 
-- [Shadow (optimized)](../research/raid/builds/opt-shadow-dps-raid-dps.md) (20/0/31, 764 DPS in a full raid) — [open the talent tree](https://talentsforever.com/priest/60/52500500003--50052101231302051-12)
+- [Shadow — Raid](../research/raid/builds/shadow-ml-raid.md) (16/0/35, 764 DPS in a full raid) — [open the talent tree](https://talentsforever.com/priest/60/005305201--50552001201312251-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-11 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at ff9babb (client 1.60.1.70888)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-13 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at ff9babb (client 1.60.1.70888)). Simulations, not in-game measurements. Do not hand-edit.*
 

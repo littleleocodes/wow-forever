@@ -52,11 +52,11 @@ The Survival raid damage build derived on 2026-09-30 (derive_raid.py): the commu
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 379 | +0.0% | 751 | +0.0% | 0 s |
-| 2 | **[`survival-raid`](survival-raid.md)** | ours: derived (simulator search) | 5/16/30 | 354 | -6.6% | 706 | -5.9% | 0 s |
-| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 332 | -12.2% | 708 | -5.7% | 0 s |
-| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 273 | -27.8% | 715 | -4.8% | 97 s |
-| 5 | *SV Melee* | community simulator | - | 224 | -40.8% | 630 | -16.1% | 118 s |
+| 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 375 | +0.0% | 745 | +0.0% | 0 s |
+| 2 | **[`survival-raid`](survival-raid.md)** | ours: derived (simulator search) | 5/16/30 | 351 | -6.6% | 701 | -5.9% | 0 s |
+| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 329 | -12.2% | 702 | -5.8% | 0 s |
+| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 271 | -27.8% | 709 | -4.8% | 97 s |
+| 5 | *SV Melee* | community simulator | - | 220 | -41.4% | 625 | -16.1% | 120 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -90,7 +90,7 @@ Before the pull: at -3s: cast Hunter's Mark.
 | 5 | use every other cooldown when ready | as ready |
 | 6 | cast Strider Kick | 6.6 |
 | 7 | cast Major Mana Potion | as ready |
-| 8 | cast Wing Clip | 25.2 |
+| 8 | cast Wing Clip | 25.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
 

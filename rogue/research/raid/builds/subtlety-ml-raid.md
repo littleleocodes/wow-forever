@@ -56,10 +56,10 @@ The Subtlety build the machine-learning talent search found in a full raid (ever
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`subtlety-ml-raid`](subtlety-ml-raid.md)** | ours: derived (ML search) | 12/8/31 | 480 | +0.0% | 803 | -0.9% | 0 s |
-| 2 | *Subtlety Hemo* | community simulator | - | 480 | +0.0% | 803 | -0.9% | 0 s |
-| 3 | [`hybrid-assassination-subtlety-open-raid`](hybrid-assassination-subtlety-open-raid.md) | ours: derived (open search) | 27/2/22 | 462 | -3.9% | 811 | +0.0% | 0 s |
-| 4 | [`subtlety-hemo-raid`](subtlety-hemo-raid.md) | ours: hand draft | 21/0/30 | 359 | -25.2% | 651 | -19.8% | 0 s |
+| 1 | **[`subtlety-ml-raid`](subtlety-ml-raid.md)** | ours: derived (ML search) | 12/8/31 | 478 | +0.0% | 798 | -0.9% | 0 s |
+| 2 | *Subtlety Hemo* | community simulator | - | 478 | +0.0% | 798 | -0.9% | 0 s |
+| 3 | [`hybrid-assassination-subtlety-open-raid`](hybrid-assassination-subtlety-open-raid.md) | ours: derived (open search) | 27/2/22 | 458 | -4.1% | 806 | +0.0% | 0 s |
+| 4 | [`subtlety-hemo-raid`](subtlety-hemo-raid.md) | ours: hand draft | 21/0/30 | 357 | -25.3% | 645 | -19.9% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -107,27 +107,27 @@ The Subtlety build the machine-learning talent search found in a full raid (ever
   23. drop '(combo points < 3 or variableRef or Eureka! is up)' from the condition: if (energy ≤ 15 and not talentIsKnown or Eureka! is known and energy ≤ 25 and energy ≤ 25 or energy ≤ 25 and Death Mark is on the target) and (combo points < 3 or variableRef or Eureka! is up): cast Thistle Tea (+0.2%, pass 12)
   24. drop 'variableRef' from the condition: if variableRef and not Hemorrhage is up and variableRef: cast Hemorrhage (+0.2%, pass 12)
 
-Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: if variableRef: cast Stealth.
+Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: if “Start In Stealth”: cast Stealth.
 
 | # | Priority (the first line whose condition holds is cast) | [`subtlety-ml-raid`](subtlety-ml-raid.md) casts/min |
 |---|---|---|
-| 1 | if variableRef: groupReference | as ready |
-| 2 | if not variableRef and variableRef and variableRef and not Garrote is on the target: cast Garrote | 2.3 |
-| 3 | if not Garrote is on the target and energy ≥ current cost and not variableRef and variableRef and variableRef and not variableRef and time into the fight ≥ 1s: cast Vanish | 0.4 |
-| 4 | if energy ≥ current cost and variableRef and variableRef and variableRef and not variableRef and time into the fight ≥ 1s: cast Vanish | 0.4 |
+| 1 | if “Use Expose Armor”: groupReference | as ready |
+| 2 | if not “Use Ambush Opener” and “Use Vanish for Damage” and “Current Points less than 5” and not Garrote is on the target: cast Garrote | 2.3 |
+| 3 | if not Garrote is on the target and energy ≥ current cost and not “Use Ambush Opener” and “Use Vanish for Damage” and “Current Points less than 5” and not “SnD Fall Imminent” and time into the fight ≥ 1s: cast Vanish | 0.4 |
+| 4 | if energy ≥ current cost and “Use Ambush Opener” and “Use Vanish for Damage” and “Current Points less than 5” and not “SnD Fall Imminent” and time into the fight ≥ 1s: cast Vanish | 0.4 |
 | 5 | if not Vanish is ready: cast Preparation | 0.3 |
 | 6 | if Slice and Dice is up: use every other cooldown when ready | as ready |
 | 7 | groupReference | as ready |
-| 8 | if (variableRef and combo points ≤ 3 and energy ≤ 80 or not variableRef and energy ≤ 80): cast Shank | 5.7 |
+| 8 | if (“Boot Knife Known” and combo points ≤ 3 and energy ≤ 80 or not “Boot Knife Known” and energy ≤ 80): cast Shank | 5.7 |
 | 9 | if (not Blade Flurry is known or Blade Flurry is up): cast OffensivePotion | as ready |
-| 10 | if (energy ≤ 15 and not talentIsKnown or Eureka! is known and energy ≤ 25 and energy ≤ 25 or energy ≤ 25 and Death Mark is on the target) and (combo points < 3 or variableRef or Eureka! is up): cast Thistle Tea | as ready |
+| 10 | if (energy ≤ 15 and not talentIsKnown or Eureka! is known and energy ≤ 25 and energy ≤ 25 or energy ≤ 25 and Death Mark is on the target) and (combo points < 3 or “Expose - Low Duration” or Eureka! is up): cast Thistle Tea | as ready |
 | 11 | if combo points ≤ 3: cast Premeditation | 1.0 |
 | 12 | if combo points ≥ 4: cast Death Mark | 4.6 |
-| 13 | if (talentIsKnown or talentIsKnown) and (combo points ≥ 3) and not Rupture is on the target and not variableRef and not variableRef and not talentIsKnown: cast Rupture | 2.8 |
-| 14 | if variableRef and variableRef and not variableRef and not variableRef: cast Slice and Dice | 3.0 |
-| 15 | if variableRef and (not in front of the target or variableRef) and time left on Garrote ≤ 4s: cast Ghostly Strike | 2.0 |
-| 16 | if variableRef and not Hemorrhage is up and variableRef: cast Hemorrhage | 12.7 |
-| 17 | if not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef and (time left on Garrote ≥ 8s or not talentIsKnown): cast Hemorrhage | 12.7 |
+| 13 | if (talentIsKnown or talentIsKnown) and (combo points ≥ 3) and not Rupture is on the target and not “Fight About to End” and not “Expose - Prevent Other Finishers” and not talentIsKnown: cast Rupture | 2.8 |
+| 14 | if “At or Below SnD Clipping Threshold” and “Above SnD Point Threshold” and not “Fight About to End” and not “Expose - Prevent Other Finishers”: cast Slice and Dice | 3.0 |
+| 15 | if “Current Points less than 5” and (not in front of the target or “Dirty Deeds Known”) and time left on Garrote ≤ 4s: cast Ghostly Strike | 2.0 |
+| 16 | if “Use Backstab” and not Hemorrhage is up and “Current Points less than 5”: cast Hemorrhage | 12.7 |
+| 17 | if not “Use Backstab” and “Current Points less than 5” and (not “SnD Fall Imminent” or energy > (current cost + current cost) and not “SnD Fall Imminent” or not “Above SnD Point Threshold” or “In Danger of Energy Capping” or “Expose - Low Duration”) and “Gnome Eureka - Active or Not Ready” and (time left on Garrote ≥ 8s or not talentIsKnown): cast Hemorrhage | 12.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Ambush, cast Blood Fury, cast Elune's Light, cast Eureka!, cast Eviscerate (rank 8), cast Backstab (rank 8), cast Sinister Strike (its condition never held in these fights); strict sequence: cast Blood Fury; cast Blade Flurry (needs the Blade Flurry talent); cast Adrenaline Rush, strict sequence: cast Blood Fury; cast Adrenaline Rush, strict sequence: cast Elune's Light; cast Adrenaline Rush (needs the Adrenaline Rush talent); cast Cold Blood (needs the Cold Blood talent); cast Mutilate (needs the Mutilate talent).
 

@@ -427,6 +427,9 @@
 **Shockadin — Raid (open talent search)** (`paladin/research/raid/builds/shockadin-open-raid.md`)
 - [ ] An open-search Shockadin build: check it against the community's Shockadin builds at launch.
 
+**Prot-Ret — Raid (machine-learning search)** (`paladin/research/raid/builds/prot-ret-ml-raid.md`)
+- [ ] A machine-searched Prot-Ret build: check it against the community's Prot-Ret builds at launch.
+
 ### Priest
 
 **Holy — Raid Healer (healer lab winner adopted 2026-09-26)** (`priest/research/raid/builds/holy-raid-healer.md`)

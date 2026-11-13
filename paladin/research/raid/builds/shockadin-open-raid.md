@@ -66,7 +66,7 @@ The Shockadin (a Holy/Retribution hybrid) raid build the open talent search foun
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`shockadin-open-raid`](shockadin-open-raid.md)** | ours: derived (open search) | 23/0/28 | 489 | +0.0% | 810 | +0.0% | 48 s |
+| 1 | **[`shockadin-open-raid`](shockadin-open-raid.md)** | ours: derived (open search) | 23/0/28 | 484 | +0.0% | 805 | +0.0% | 49 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -75,19 +75,19 @@ The Shockadin (a Holy/Retribution hybrid) raid build the open talent search foun
   1. threshold 0.2s -> 1.2s: if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath (+1.0%, pass 1)
   2. move to the top: if variableRef: groupReference (+0.5%, pass 1)
 
-Before the pull: at -20s: groupReference; at -30s: if Manual Crowd Pummeler is known: swap to the Swap1 item set; at -20s: move to variableRef yd; at -1.5s: if not variableRef: groupReference; at -1.5s: if variableRef: groupReference.
+Before the pull: at -20s: groupReference; at -30s: if Manual Crowd Pummeler is known: swap to the Swap1 item set; at -20s: move to “Pull range” yd; at -1.5s: if not “Has assigned judgement”: groupReference; at -1.5s: if “Has assigned judgement”: groupReference.
 
 | # | Priority (the first line whose condition holds is cast) | [`shockadin-open-raid`](shockadin-open-raid.md) casts/min |
 |---|---|---|
 | 1 | groupReference | as ready |
-| 2 | if time into the fight ≥ variableRef: use every other cooldown when ready | as ready |
+| 2 | if time into the fight ≥ “Delay Major CDs”: use every other cooldown when ready | as ready |
 | 3 | groupReference | as ready |
 | 4 | cast Judgement | 6.9 |
 | 5 | cast Consecration | 5.6 |
-| 6 | if variableRef: groupReference | as ready |
+| 6 | if “Should refresh seal”: groupReference | as ready |
 | 7 | cast Holy Strike | 6.0 |
 | 8 | if Holy Shock is ready: cast Divine Favor | 0.6 |
-| 9 | cast Holy Shock | 4.4 |
+| 9 | cast Holy Shock | 4.3 |
 | 10 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 0.6 |
 
 Lines of the simulator's rotation these builds never cast: cast Exorcism (its condition never held in these fights).

@@ -65,10 +65,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 0/35/16 | 1.022 | +0.0% | 1185 | 287 |
-| 2 | [`prot-tank`](prot-tank.md) | ours: hand draft | 0/33/18 | 1.000 | -2.1% | 1114 | 281 |
-| 3 | *Default* | community simulator | - | 0.998 | -2.3% | 1160 | 295 |
-| 4 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 1/34/16 | 0.976 | -4.5% | 1060 | 281 |
+| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 0/35/16 | 1.021 | +0.0% | 1178 | 288 |
+| 2 | [`prot-tank`](prot-tank.md) | ours: hand draft | 0/33/18 | 1.000 | -2.1% | 1107 | 281 |
+| 3 | *Default* | community simulator | - | 0.998 | -2.3% | 1153 | 295 |
+| 4 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 1/34/16 | 0.976 | -4.4% | 1053 | 281 |
 
 ## Rotation (community simulator, raid setting)
 

@@ -1,0 +1,204 @@
+{
+ "class": "paladin",
+ "spec": "ret-dps",
+ "build": "prot-ret-ml-raid",
+ "setting": "raid",
+ "date": "2026-11-13",
+ "tank": false,
+ "removal": {
+  "Benediction": 0.000597863317412517,
+  "Champion of the Light": 0.07464117774465262,
+  "Conviction": 0.049710215510758604,
+  "Deflection": -0.0,
+  "Divine Intellect": 0.005605475788165726,
+  "Divine Strength": 0.01887997846986167,
+  "Improved Judgement": 0.05259998243831132,
+  "Improved Seals": 0.04105197160117313,
+  "Precision": 0.001861825436306419,
+  "Redoubt": -0.0,
+  "Sacred Arbiter": 0.020079248327522614,
+  "Sanctified Judgement": 0.0009585116101220592,
+  "Seal of Command": 0.016325351436168756,
+  "Two-Handed Weapon Specialization": 0.053723681760098674,
+  "Vengeance": 0.11511465023971412,
+  "Vindication": 0.00173082157531379
+ },
+ "free": [
+  "Benediction",
+  "Deflection",
+  "Precision",
+  "Redoubt",
+  "Sanctified Judgement",
+  "Vindication"
+ ],
+ "kept_for_rotation": [
+  "Seal of Command"
+ ],
+ "active_never_worth": [],
+ "abilities_never_cast": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Vindication",
+   "to": "Deflection",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Vindication",
+   "to": "Deflection",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  }
+ ],
+ "final_seed3": 0.0,
+ "start": {
+  "Holy": [
+   [
+    "Divine Strength",
+    5
+   ],
+   [
+    "Improved Seals",
+    5
+   ]
+  ],
+  "Protection": [
+   [
+    "Divine Intellect",
+    5
+   ],
+   [
+    "Redoubt",
+    5
+   ],
+   [
+    "Precision",
+    2
+   ]
+  ],
+  "Retribution": [
+   [
+    "Deflection",
+    1
+   ],
+   [
+    "Benediction",
+    5
+   ],
+   [
+    "Improved Judgement",
+    2
+   ],
+   [
+    "Conviction",
+    3
+   ],
+   [
+    "Sanctified Judgement",
+    3
+   ],
+   [
+    "Vindication",
+    3
+   ],
+   [
+    "Seal of Command",
+    1
+   ],
+   [
+    "Sacred Arbiter",
+    1
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Vengeance",
+    3
+   ],
+   [
+    "Champion of the Light",
+    4
+   ]
+  ]
+ },
+ "allocation": {
+  "Holy": [
+   [
+    "Divine Strength",
+    5
+   ],
+   [
+    "Improved Seals",
+    5
+   ]
+  ],
+  "Protection": [
+   [
+    "Divine Intellect",
+    5
+   ],
+   [
+    "Redoubt",
+    5
+   ],
+   [
+    "Precision",
+    2
+   ]
+  ],
+  "Retribution": [
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Benediction",
+    5
+   ],
+   [
+    "Improved Judgement",
+    2
+   ],
+   [
+    "Conviction",
+    3
+   ],
+   [
+    "Sanctified Judgement",
+    3
+   ],
+   [
+    "Vindication",
+    1
+   ],
+   [
+    "Seal of Command",
+    1
+   ],
+   [
+    "Sacred Arbiter",
+    1
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Vengeance",
+    3
+   ],
+   [
+    "Champion of the Light",
+    4
+   ]
+  ]
+ }
+}

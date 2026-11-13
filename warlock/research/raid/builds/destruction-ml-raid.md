@@ -52,14 +52,14 @@ The Destruction build the machine-learning talent search found in a full raid (e
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`destruction-ml-raid`](destruction-ml-raid.md)** | ours: derived (ML search) | 9/11/31 | 721 | +0.0% | 815 | +0.0% | 0 s |
-| 2 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 692 | -4.0% | 779 | -4.4% | 0 s |
-| 3 | [`ds-ruin-raid`](ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 691 | -4.1% | 781 | -4.2% | 0 s |
-| 4 | *SM/Ruin* | community simulator | - | 678 | -5.9% | 762 | -6.5% | 0 s |
-| 5 | *Destro* | community simulator | - | 662 | -8.1% | 736 | -9.6% | 0 s |
-| 6 | *Aff (Wrack)* | community simulator | - | 631 | -12.5% | 697 | -14.5% | 0 s |
-| 7 | *Demo (Shadow Brand)* | community simulator | - | 586 | -18.7% | 665 | -18.3% | 0 s |
-| 8 | *Demo (Fire Brand)* | community simulator | - | 573 | -20.5% | 639 | -21.6% | 0 s |
+| 1 | **[`destruction-ml-raid`](destruction-ml-raid.md)** | ours: derived (ML search) | 9/11/31 | 715 | +0.0% | 808 | +0.0% | 0 s |
+| 2 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 683 | -4.4% | 774 | -4.2% | 0 s |
+| 3 | [`ds-ruin-raid`](ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 683 | -4.4% | 774 | -4.2% | 0 s |
+| 4 | *SM/Ruin* | community simulator | - | 671 | -6.1% | 753 | -6.8% | 0 s |
+| 5 | *Destro* | community simulator | - | 656 | -8.2% | 729 | -9.8% | 0 s |
+| 6 | *Aff (Wrack)* | community simulator | - | 626 | -12.4% | 690 | -14.5% | 0 s |
+| 7 | *Demo (Shadow Brand)* | community simulator | - | 579 | -19.0% | 661 | -18.2% | 0 s |
+| 8 | *Demo (Fire Brand)* | community simulator | - | 566 | -20.7% | 635 | -21.5% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -90,16 +90,15 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
-| 6 | if mana % < 10%: cast Life Tap | 6.4 |
+| 6 | if mana % < 10%: cast Life Tap | 6.6 |
 | 7 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
 | 8 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 |
 | 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
 | 10 | cast Conflagrate | 3.9 |
 | 11 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
-| 12 | cast Eureka! | 0.7 |
-| 13 | cast Shadow Bolt (rank 9) | 12.2 |
+| 12 | cast Shadow Bolt (rank 9) | 12.2 |
 
-Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Amplify Curse (needs the Amplify Curse talent).
+Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Amplify Curse (needs the Amplify Curse talent); cast Eureka! (its condition never held in these fights).
 
 Damage by ability:
 

@@ -131,5 +131,30 @@
   },
   "first_date": "2026-10-31",
   "passes": 5
+ },
+ "dummy": {
+  "class": "paladin",
+  "spec": "ret-dps",
+  "date": "2026-11-13",
+  "commit": "ff9babba5",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "_reference/data/raidsim/apls/paladin/sim-presets/retribution-default.apl.json",
+  "start": "spell probe",
+  "builds": [],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "spell probe: insert at the end: cast Divine Favor",
+    "gain_seed1": 0.0033,
+    "gain_seed2": 0.0023,
+    "candidates": 12
+   }
+  ],
+  "final": {
+   "dummy": {}
+  }
  }
 }

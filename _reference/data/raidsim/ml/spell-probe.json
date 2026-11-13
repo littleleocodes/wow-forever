@@ -6298,5 +6298,228 @@
     "kept": false
    }
   ]
+ },
+ "rogue/subtlety-raid/dummy/Hybrid Assassination/Subtlety": {
+  "class": "rogue",
+  "spec": "Hybrid Assassination/Subtlety",
+  "entry": "subtlety-raid",
+  "setting": "dummy",
+  "date": "2026-11-12",
+  "base_dps": 457.57,
+  "abilities": [
+   {
+    "ability": "Riposte",
+    "talent": "Riposte",
+    "spell": 14251,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "3/12/36",
+     "vs_spec_build": -0.3059
+    },
+    "kept": false
+   },
+   {
+    "ability": "Death Mark",
+    "talent": "Death Mark",
+    "spell": 1316709,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "at 5 combo points, aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "14/6/31",
+     "vs_spec_build": -0.192
+    },
+    "kept": false
+   }
+  ]
+ },
+ "rogue/subtlety-raid/raid/Hybrid Assassination/Subtlety": {
+  "class": "rogue",
+  "spec": "Hybrid Assassination/Subtlety",
+  "entry": "subtlety-raid",
+  "setting": "raid",
+  "date": "2026-11-12",
+  "base_dps": 806.59,
+  "abilities": [
+   {
+    "ability": "Riposte",
+    "talent": "Riposte",
+    "spell": 14251,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "6/43/2",
+     "vs_spec_build": -0.2246
+    },
+    "kept": false
+   },
+   {
+    "ability": "Death Mark",
+    "talent": "Death Mark",
+    "spell": 1316709,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "at 5 combo points, aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "14/6/31",
+     "vs_spec_build": -0.1943
+    },
+    "kept": false
+   }
+  ]
+ },
+ "paladin/ret-dps/dummy/Hybrid Protection/Retribution": {
+  "class": "paladin",
+  "spec": "Hybrid Protection/Retribution",
+  "entry": "ret-dps",
+  "setting": "dummy",
+  "date": "2026-11-13",
+  "base_dps": 372.34,
+  "abilities": [
+   {
+    "ability": "Divine Favor",
+    "talent": "Divine Favor",
+    "spell": 20216,
+    "builds": "one move from the spec's build",
+    "builds_tried": 10,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0033,
+     "split": "11/12/28",
+     "vs_spec_build": 0.0128,
+     "gain_seed2": 0.0023
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "castSpell": {
+       "spellId": {
+        "spellId": 20216
+       }
+      }
+     }
+    },
+    "at": 9
+   },
+   {
+    "ability": "Holy Shock",
+    "talent": "Holy Shock",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Holy Shield",
+    "talent": "Holy Shield",
+    "spell": 1239570,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "3/21/27",
+     "vs_spec_build": -0.1796
+    },
+    "kept": false
+   },
+   {
+    "ability": "Repentance",
+    "talent": "Repentance",
+    "spell": 20066,
+    "builds": "one move from the spec's build",
+    "builds_tried": 12,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "8/15/28",
+     "vs_spec_build": -0.0
+    },
+    "kept": false
+   }
+  ]
+ },
+ "paladin/ret-dps/raid/Hybrid Protection/Retribution": {
+  "class": "paladin",
+  "spec": "Hybrid Protection/Retribution",
+  "entry": "ret-dps",
+  "setting": "raid",
+  "date": "2026-11-13",
+  "base_dps": 661.98,
+  "abilities": [
+   {
+    "ability": "Divine Favor",
+    "talent": "Divine Favor",
+    "spell": 20216,
+    "builds": "one move from the spec's build",
+    "builds_tried": 10,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "in the middle",
+     "gain_seed1": 0.0,
+     "split": "11/12/28",
+     "vs_spec_build": -0.0008
+    },
+    "kept": false
+   },
+   {
+    "ability": "Holy Shock",
+    "talent": "Holy Shock",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Holy Shield",
+    "talent": "Holy Shield",
+    "spell": 1239570,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "3/21/27",
+     "vs_spec_build": -0.1876
+    },
+    "kept": false
+   },
+   {
+    "ability": "Repentance",
+    "talent": "Repentance",
+    "spell": 20066,
+    "builds": "one move from the spec's build",
+    "builds_tried": 12,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "8/15/28",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
  }
 }

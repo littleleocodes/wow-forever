@@ -49,16 +49,16 @@ Income is an estimate from Classic's data: coin and loot from about 122 kills a 
 | 35 | 9g 46s 17c | 3g 90s (Fireball, Blizzard, Mana Shield) | 1g 63s |
 | 36 | 12g 52s 77c | - | - |
 | 37 | 10g 31s 69c | 4g 20s (Frostbolt, Fire Blast, Arcane Explosion) | 1g 40s |
-| 38 | 15g 38s 55c | - | - |
+| 38 | 15g 38s 56c | - | - |
 | 39 | 15g 3s 46c | 9g (Frost Nova, Ice Armor, Arcane Missiles, Flamestrike, Conjure Water, Polymorph) | 9g |
-| 40 | 13g 32s 76c | - | - |
-| 41 | 18g 34s 90c | 9g 10s (Conjure Food, Fireball, Arcane Intellect, Cone of Cold) | 3g 69s |
-| 42 | 19g 31s 70c | - | - |
-| 43 | 21g 73s 43c | 6g 90s (Frostbolt, Blizzard, Mana Shield) | 11s 50c |
+| 40 | 13g 32s 77c | - | - |
+| 41 | 18g 34s 91c | 9g 10s (Conjure Food, Fireball, Arcane Intellect, Cone of Cold) | 3g 69s |
+| 42 | 19g 31s 71c | - | - |
+| 43 | 21g 73s 44c | 6g 90s (Frostbolt, Blizzard, Mana Shield) | 11s 50c |
 
-Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Gnomeregan Exiles; Forever's not confirmed). At this income you would have about 78g 45c by 40 after training and the plan's gear, enough for the mount at 42.
+Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Gnomeregan Exiles; Forever's not confirmed). At this income you would have about 78g 47c by 40 after training and the plan's gear, enough for the mount at 42.
 
-Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 0c before 40 and 0c in all; you would reach 60 with about 693g 12s 12c after the mount.
+Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 0c before 40 and 0c in all; you would reach 60 with about 693g 27s 50c after the mount.
 
 ## Now (level 30)
 
@@ -94,21 +94,21 @@ Count a piece's stats in spell power: 1 intellect = 0.23, 1 spirit = 0.26, 1 sta
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 0.2 hours old). "For your trip": enough to keep it up for about 2.5 hours of play, to your next training at level 32 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 0.6 hours old). "For your trip": enough to keep it up for about 2.5 hours of play, to your next training at level 32 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|
 | Weapon oil | Lesser Wizard Oil | +16 spell power | 6.5% | 30 min | buy (you make it at Enchanting 200; you have 151) | 23s 99c | ×5 (1g 19s 95c) | no: saves 2.0 min an hour, costs 10.7 |
-| Weapon oil | Minor Wizard Oil | +8 spell power | 3.3% | 30 min | make it (Enchanting 45) | 3s 3c | ×5 (15s 15c) | no: saves 1.0 min an hour, costs 1.3 |
-| Food | Briny Seafood Stew | +14 spell power, +5% kill experience | 5.7% | 15 min | buy | 17s 94c | ×10 (1g 79s 40c) | no: saves 3.2 min an hour, costs 15.9 |
-| Food | Sagefish Delight | +7 spell power, +5% kill experience | 2.8% | 15 min | buy (you make it at Cooking 175; you have 150) | 2s 44c | ×10 (24s 40c) | yes: saves 2.4 min an hour, costs 2.2 |
-| Food | Smoked Sagefish | +4 spell power, +5% kill experience | 1.6% | 15 min | make it (Cooking 80) | 97c | ×10 (9s 70c) | yes: saves 2.0 min an hour, costs 0.9 |
+| Weapon oil | Minor Wizard Oil | +8 spell power | 3.3% | 30 min | make it (Enchanting 45) | 3s 9c | ×5 (15s 45c) | no: saves 1.0 min an hour, costs 1.4 |
+| Food | Briny Seafood Stew | +14 spell power, +5% kill experience | 5.7% | 15 min | buy | 17s | ×10 (1g 70s) | no: saves 3.2 min an hour, costs 15.1 |
+| Food | Sagefish Delight | +7 spell power, +5% kill experience | 2.8% | 15 min | buy (you make it at Cooking 175; you have 150) | 2s 43c | ×10 (24s 30c) | yes: saves 2.4 min an hour, costs 2.2 |
+| Food | Smoked Sagefish | +4 spell power, +5% kill experience | 1.6% | 15 min | make it (Cooking 80) | 1s 32c | ×10 (13s 20c) | yes: saves 2.0 min an hour, costs 1.2 |
 | Elixir | Lesser Arcane Elixir | +15 spell power | 6.1% | 30 min | buy | 7s 98c | ×5 (39s 90c) | no: saves 1.8 min an hour, costs 3.5 |
 | Elixir | Elixir of Frost Power | +12.75 spell power | 5.2% | 30 min | buy | no price | ? | ? |
-| Elixir | Lesser Mageblood Elixir | +6 mp5 | 2.2% | 30 min | buy | 8s 69c | ×5 (43s 45c) | no: saves 0.7 min an hour, costs 3.9 |
+| Elixir | Lesser Mageblood Elixir | +6 mp5 | 2.2% | 30 min | buy | 8s 68c | ×5 (43s 40c) | no: saves 0.7 min an hour, costs 3.9 |
 | Scroll | Scroll of Spirit III | +11 spirit | 1.2% | 30 min | buy | 4s 66c | ×5 (23s 30c) | no: saves 0.3 min an hour, costs 2.1 |
 | Scroll | Scroll of Intellect II | +8 intellect | 0.7% | 30 min | buy | 1s 21c | ×5 (6s 5c) | no: saves 0.2 min an hour, costs 0.5 |
-| Scroll | Scroll of Spirit II | +7 spirit | 0.7% | 30 min | buy | 1s 13c | ×5 (5s 65c) | no: saves 0.2 min an hour, costs 0.5 |
+| Scroll | Scroll of Spirit II | +7 spirit | 0.7% | 30 min | buy | 1s 12c | ×5 (5s 60c) | no: saves 0.2 min an hour, costs 0.5 |
 
 One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience is extra: a food's +5% speeds up the experience you get from kills, not from quests. Elixirs: Classic lets several stack; Forever's rule is not confirmed.
 
@@ -134,24 +134,22 @@ The cheapest way up with the recipes you know, materials at today's prices (auct
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
 | 140-143 | White Swashbuckler's Shirt | 8 | makes 1g 49s 93c |
-| 143-146 | Spidersilk Boots | 7 | 87c |
-| 146-147 | Bolt of Mageweave | 1 | 8s 34c |
-| 147-155 | Azure Silk Belt | 8 | 78s 64c |
-| 155-163 | Crimson Silk Belt | 8 | 1g 26s 56c |
-| 163-166 | Small Silk Pack | 8 | 1g 9c |
-| 166-190 | Crimson Silk Belt | 113 | 46g 33s 10c |
+| 143-146 | Spidersilk Boots | 7 | 8s 76c |
+| 146-153 | Small Silk Pack | 8 | 43s 16c |
+| 153-161 | Azure Silk Belt | 8 | 79s 68c |
+| 161-190 | Crimson Silk Belt | 119 | 46g 55s 98c |
 
-You spend about 47g 97s 66c in all to reach 190, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 190 no recipe you know gives points: learn new ones at the trainer.
-Materials: Bolt of Silk Cloth x579, Silken Thread x129, Spider's Silk x26, Iron Buckle x129, Red Dye x243, Elemental Water x8.
+You spend about 46g 37s 65c in all to reach 190, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 190 no recipe you know gives points: learn new ones at the trainer.
+Materials: Bolt of Silk Cloth x568, Silken Thread x127, Spider's Silk x26, Iron Buckle x127, Red Dye x238, Iridescent Pearl x7.
 
 ### Enchanting 151 to 225
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 151-159 | Minor Mana Oil | 8 | 31s 42c |
-| 159-190 | Enchant Boots - Minor Stamina | 161 | 6g 37s 92c |
+| 151-159 | Minor Mana Oil | 8 | 31s 50c |
+| 159-190 | Enchant Boots - Minor Stamina | 161 | 6g 76s 58c |
 
-You spend about 6g 69s 34c in all to reach 190, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 190 no recipe you know gives points: learn new ones at the trainer.
+You spend about 7g 8s 8c in all to reach 190, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 190 no recipe you know gives points: learn new ones at the trainer.
 Materials: Strange Dust x644, Soul Dust x8, Maple Seed x16, Leaded Vial x8.
 
 **Cooking** 150/150: at your rank's cap; train the next rank to go on.
@@ -160,14 +158,13 @@ Materials: Strange Dust x644, Soul Dust x8, Maple Seed x16, Leaded Vial x8.
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 56-62 | Heavy Linen Bandage | 7 | 2s 31c |
-| 62-68 | Minor Healing Potion | 8 | 3s 11c |
-| 68-69 | Heavy Linen Bandage | 2 | 64c |
-| 69-82 | Minor Healing Potion | 27 | 12s 40c |
-| 82-100 | Heavy Linen Bandage | 175 | 87s 38c |
+| 56-60 | Minor Healing Potion | 4 | 1s 68c |
+| 60-66 | Heavy Linen Bandage | 8 | 2s 88c |
+| 66-85 | Minor Healing Potion | 41 | 18s 75c |
+| 85-100 | Heavy Linen Bandage | 166 | 89s 59c |
 
-You spend about 1g 5s 84c in all to reach 100, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 100 no recipe you know gives points: learn new ones at the trainer.
-Materials: Linen Cloth x367, Peacebloom x35, Empty Vial x35, Mild Spices x35.
+You spend about 1g 12s 91c in all to reach 100, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 100 no recipe you know gives points: learn new ones at the trainer.
+Materials: Linen Cloth x348, Peacebloom x46, Empty Vial x46, Mild Spices x46.
 
 ## Your gear
 
@@ -199,14 +196,14 @@ Each upgrade worth 0.5% faster kills or more, under the level at which you can g
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
 - **finger2**: Carnelian Loop of the Elder, 1.8% faster kills, replaces Sustaining Ring (wear it right away; best to the end of leveling; saves about 32 min of killing). Auction House now: 1g 25s. Why it stays: Freezing Band at 47, 0.9% faster, saves about 9 min before 60; Maiden's Circle at 55, 1.6% faster, saves about 10 min before 60. Saves about 32 min of killing; earning its price takes about 23 min of play.
-- **chest**: Robe of the Magi, 5.7% faster kills, replaces Rotmender's Garb (wear it right away; best to the end of leveling; saves about 98 min of killing). Auction House: listed now at 9g 9s, usually about 3g 90s: wait for a cheaper one. Why it stays: Robe of Winter Night at 52, 1.4% faster, saves about 11 min before 60; Robe of the Archmage at 57, 1.5% faster, saves about 6 min before 60. Saves about 98 min of killing; earning its price takes about 71 min of play.
+- **chest**: Robe of the Magi, 5.7% faster kills, replaces Rotmender's Garb (wear it right away; best to the end of leveling; saves about 98 min of killing). Auction House now: 5g. Why it stays: Robe of Winter Night at 52, 1.4% faster, saves about 11 min before 60; Robe of the Archmage at 57, 1.5% faster, saves about 6 min before 60. Saves about 98 min of killing; earning its price takes about 72 min of play.
 
 
 ### Level 36
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **head**: Sorcerer Hat of Frozen Wrath, 3.4% faster kills, replaces Silk Headband (wear it right away; best to the end of leveling; saves about 55 min of killing). Auction House now: 1g 99s. Why it stays: Gossamer Headpiece of Frozen Wrath at 42, 1.0% faster, saves about 14 min before 60; Dreamweave Circlet at 45, 1.6% faster, saves about 23 min, but its 3g 82s 32c takes about 39 min of play to earn. Saves about 55 min of killing; earning its price takes about 29 min of play.
+- **head**: Sorcerer Hat of Frozen Wrath, 3.4% faster kills, replaces Silk Headband (wear it right away; best to the end of leveling; saves about 55 min of killing). Auction House: usually listed (in 44% of the hourly snapshots), about 1g 99s, not this hour. Why it stays: Gossamer Headpiece of Frozen Wrath at 42, 1.0% faster, saves about 14 min before 60; Dreamweave Circlet at 45, 1.6% faster, saves about 23 min, but its 3g 97s 64c takes about 41 min of play to earn. Saves about 55 min of killing; earning its price takes about 29 min of play.
 
 
 ### Level 39
@@ -220,7 +217,7 @@ Each upgrade worth 0.5% faster kills or more, under the level at which you can g
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **hands**: Dreamweave Gloves, 4.3% faster kills, replaces Town Clerk's Mittens (wear it right away; best to the end of leveling; saves about 67 min of killing). Tailoring: learn it first (trainer; Classic asked skill 225, Forever often less; you have 140); Auction House now: 2g 75s. Saves about 67 min of killing; earning its price takes about 31 min of play.
+- **hands**: Dreamweave Gloves, 4.3% faster kills, replaces Town Clerk's Mittens (wear it right away; best to the end of leveling; saves about 67 min of killing). Tailoring: learn it first (trainer; Classic asked skill 225, Forever often less; you have 140); Auction House now: 2g 60s. Saves about 67 min of killing; earning its price takes about 31 min of play.
 
 
 ### Level 41
@@ -238,7 +235,7 @@ Each upgrade worth 0.5% faster kills or more, under the level at which you can g
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **finger1**: Band of the Unicorn, 2.0% faster kills, replaces Malignant Root (wear it right away; best to the end of leveling; saves about 26 min of killing). Auction House now: 1g 90s. Why it stays: Songstone of Ironforge at 56, 0.6% faster, saves about 3 min before 60. Saves about 26 min of killing; earning its price takes about 19 min of play.
+- **finger1**: Band of the Unicorn, 2.0% faster kills, replaces Malignant Root (wear it right away; best to the end of leveling; saves about 26 min of killing). Auction House now: 1g 30s. Why it stays: Songstone of Ironforge at 56, 0.6% faster, saves about 3 min before 60. Saves about 26 min of killing; earning its price takes about 19 min of play.
 
 
 ### Level 48

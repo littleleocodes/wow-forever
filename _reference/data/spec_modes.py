@@ -39,7 +39,7 @@ HYBRID_NAMES = {
                 "short of 30 Beast Mastery points.",   # 2026-11-08 full page read H3: the raid pick 28/21/2 has no Trueshot Aura, Barrage, Sniper Shot
         "leveling": "Beast Mastery's pet talents (Ferocity, Frenzy, Spirit Bond) with Marksmanship's shot talents."}),
     ("hunter", "Hybrid Marksmanship/Survival"): ("Melee (split)", "melee-split", "Dual-wield melee with Marksmanship support, short of 30 Survival points."),
-    ("hunter", "Hybrid Beast Mastery/Survival"): ("Beast-Survival", "beast-survival", "Dual-wield melee with Beast Mastery's aspect and pet talents (Summon Hawk and Lone Wolf in a raid, a pet while leveling), short of 30 Survival points."),
+    ("hunter", "Hybrid Beast Mastery/Survival"): ("Beast-Survival", "beast-survival", "Dual-wield melee with a pet and Beast Mastery's aspect and pet talents, short of 30 Survival points (leveling; the raid version with Summon Hawk and Lone Wolf, 16/11/24, has trailed Melee Survival since the move to the official simulator)."),
     ("mage", "Hybrid Arcane/Frost"): ("Arcane-Frost", "arcane-frost", {
         "raid": "Arcane's Missile Barrage, Arcane Wrath, Arcane Mind and Arcane Instability on a Frostbolt filler (Improved Frostbolt, Ice Shards).",
         "leveling": "Frost's Shatter and Fingers of Frost with Arcane's Missile Barrage: Frostbolt, Ice Lance into the freeze, free Arcane Missiles."}),

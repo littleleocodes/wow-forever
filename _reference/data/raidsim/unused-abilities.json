@@ -1,4 +1,35 @@
 {
- "date": "2026-11-11",
- "rows": []
+ "date": "2026-11-13",
+ "rows": [
+  {
+   "class": "paladin",
+   "entry": "ret-dps",
+   "build": "retribution-open-raid",
+   "spec": "Retribution",
+   "talent": "Repentance",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0,
+   "kind": "prerequisite",
+   "needed_by": [
+    "Unsealed Wrath"
+   ],
+   "advice": "taken because Unsealed Wrath requires it"
+  },
+  {
+   "class": "paladin",
+   "entry": "shockadin-raid",
+   "build": "shockadin-open-raid",
+   "spec": "Hybrid Holy/Retribution",
+   "talent": "Seal of Command",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0,
+   "kind": "prerequisite",
+   "needed_by": [
+    "Vengeance"
+   ],
+   "advice": "taken because Vengeance requires it"
+  }
+ ]
 }

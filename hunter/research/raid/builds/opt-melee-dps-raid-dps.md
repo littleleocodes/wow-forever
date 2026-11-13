@@ -62,11 +62,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dp
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 379 | +0.0% | 751 | +0.0% | 0 s |
-| 2 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 354 | -6.6% | 706 | -5.9% | 0 s |
-| 3 | **[`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md)** | ours: optimizer | 5/15/31 | 332 | -12.2% | 708 | -5.7% | 0 s |
-| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 273 | -27.8% | 715 | -4.8% | 97 s |
-| 5 | *SV Melee* | community simulator | - | 224 | -40.8% | 630 | -16.1% | 118 s |
+| 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 375 | +0.0% | 745 | +0.0% | 0 s |
+| 2 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 351 | -6.6% | 701 | -5.9% | 0 s |
+| 3 | **[`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md)** | ours: optimizer | 5/15/31 | 329 | -12.2% | 702 | -5.8% | 0 s |
+| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 271 | -27.8% | 709 | -4.8% | 97 s |
+| 5 | *SV Melee* | community simulator | - | 220 | -41.4% | 625 | -16.1% | 120 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -94,7 +94,7 @@ Before the pull: at -3s: cast Hunter's Mark.
 | # | Priority (the first line whose condition holds is cast) | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) casts/min |
 |---|---|---|
 | 1 | if auraIsInactive: cast Aspect of the Beast | 0.3 |
-| 2 | cast Mongoose Bite | 4.6 |
+| 2 | cast Mongoose Bite | 4.5 |
 | 3 | cast Raptor Strike | 8.4 |
 | 4 | cast Immolation Trap | 2.0 |
 | 5 | use every other cooldown when ready | as ready |
@@ -109,7 +109,7 @@ Damage by ability:
 | Ability | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) |
 |---|---|
 | Auto Attack | 50% |
-| Raptor Strike | 12% |
+| Raptor Strike | 13% |
 | Immolation Trap | 11% |
 | Strider Kick | 9% |
 | Mongoose Bite | 8% |
