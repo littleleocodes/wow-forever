@@ -490,6 +490,19 @@ def main():
         o["classes"][cls] = {"leveling": leveling(cls), "raid": raid(cls, below, page), "heal": heal(cls, hv), "tank": tank(cls)}
         print(f"{cls}: {len(o['classes'][cls]['leveling'])} leveling builds, {len(o['classes'][cls]['raid'])} raid specs, "
               f"{len(o['classes'][cls]['heal'])} healer specs, tank {'yes' if o['classes'][cls]['tank'] else 'no'}", flush=True)
+    # exact-tie defaults for the raid and heal lists too (Addons, 2026-11-13: a priest halfway between Holy and Discipline): the healer
+    # spec with the highest healer-lab capacity, the damage spec with the highest full-raid DPS in its BiS set (raidsim/pawn-raid-compare.json)
+    rc = json.loads((RAID / "pawn-raid-compare.json").read_text(encoding="utf-8")) if (RAID / "pawn-raid-compare.json").exists() else {"rows": []}
+    dps = {(x["class"], x["spec"]): x["ours_dps"] for x in rc["rows"]}
+    for cls, c in o["classes"].items():
+        if c["heal"]:
+            best = max(c["heal"], key=lambda e: (hv.get("specs") or {}).get(f"{cls}|{e['spec']}", {}).get("capacity", 0))
+            for e in c["heal"]:
+                e["default"] = e is best
+        if c["raid"]:
+            best = max(c["raid"], key=lambda e: dps.get((cls, e["spec"]), 0))
+            for e in c["raid"]:
+                e["default"] = e is best
     todo = [e["build"] for c in o["classes"].values() for e in c["leveling"] if not e.get("final")]
     parts = [f"{len(todo)} leveling builds still hold the first pass's noisy small-step numbers" if todo else "",
              "healer values not measured yet" if not hv else "",
