@@ -33,22 +33,22 @@ Shadow in a raid is **Shadowform** before the pull, **Mind Blast** every time it
 - **Mind Blast** comes first (22 casts, 19%): 477-503 damage in a 1.5-second cast every 5.5 seconds with **Improved Mind Blast**. The latest re-tune (2026-11-02) moved it to the top, ahead of **Shadow Word: Death** and the dots, for +0.3%.
 - **Shadow Word: Pain** (8 casts, 20%): 762 damage over 24 seconds with **Improved Shadow Word: Pain**, for one global cooldown. Recast it when it falls off, not in the last 10 seconds. Every Shadow spell also stacks **Shadow Weaving** on the target (2% more Shadow damage from you per stack, up to 5, for 15 seconds), so steady casting keeps it full.
 - **Inner Focus** makes your next spell free, and the list spends it on the first **Devouring Plague**: its 985 mana is halved by **Devouring Contagion** but it is still the dearest spell you have; the 25% crit bonus does not apply to a damage-over-time spell, so the pair only saves mana.
-- **Shadow Word: Death** (9 casts, 9%) and then **Devouring Plague** (7 casts, 11%) each time they are ready: **Shadow Word: Death** is instant on an 18-second cooldown and crits 30% more often below 20% of the boss's health with **Early Demise**; **Devouring Plague** lasts 24 seconds on a 24-second cooldown, so it is up all fight, and heals you for the damage it deals.
+- **Shadow Word: Death** (9 casts, 9%) and then **Devouring Plague** (7 casts, 11%) each time they are ready: **Shadow Word: Death** is instant on an 18-second cooldown; **Devouring Plague** lasts 24 seconds on a 24-second cooldown, so it is up all fight, and heals you for the damage it deals.
 - **Mind Flay** fills every gap and is 40% of your damage (38 casts): 390 damage over 3 seconds for 205 mana (102 in **Shadowform**), each tick 20% stronger than the last with **Improved Mind Flay**, and **Darkness** adds 10% to everything.
-- Mana is not your problem in a full raid: the simulator's priest never runs dry with one mana potion and two Demonic Runes a fight. **Spirit Tap** does nothing on a boss: it needs a kill.
+- Mana is not your problem in a full raid: the simulator's priest never runs dry with one mana potion and two Demonic Runes a fight.
 
 **Caveats**
 
 - **Shadow Word: Death** hits you for 30% of your maximum health every time the target survives it (the 2026-11-02 patch tripled the backlash), about 9 times in a 3-minute fight: nearly three health bars that your healers pay for. The damage numbers ignore that. **Devouring Plague** heals a little of it back.
-- **Mind Blast** causes a lot of threat (its tooltip says so) and leads the list. In the first seconds of a fight or after a tank swap, hold it until the tank is ahead; **Silent Resolve** cuts the threat of your spells by 30%.
+- **Mind Blast** causes a lot of threat (its tooltip says so) and leads the list. In the first seconds of a fight or after a tank swap, hold it until the tank is ahead.
 - When you must move, **Mind Flay** and **Mind Blast** stop: use the instants, **Shadow Word: Death**, **Devouring Plague** and **Shadow Word: Pain** if it fell off. **Shadow Weaving** drops after 15 seconds without a Shadow spell.
 - A 6-minute fight: the simulator's DPS falls from 788 at 3 minutes to 483 at 6 as the mana runs out.
 
 **When to change it**
 
-- If your healers struggle, cast **Shadow Word: Death** only in the last 20% of the boss's health, where **Early Demise** makes it crit: fewer casts, each more likely to kill (no backlash on a kill). You give up a few percent of damage.
+- If your healers struggle, save **Shadow Word: Death** for the last 20% of the boss's health: fewer casts, and on a kill no backlash for them to heal. You give up a few percent of damage.
 - With adds up, keep **Shadow Word: Pain** on the ones that live longest and **Devouring Plague** on one that dies first: **Devouring Contagion** makes the plague jump to two nearby enemies when its target dies. The simulator fights one target.
-- **Vampiric Embrace** has no line because the simulator counts only damage: on the boss, for 30 seconds your party heals for 20% of your Shadow damage, for 40 mana and one global cooldown. **Silence** stops a casting add.
+- **Vampiric Embrace** has no line because the simulator counts only damage: on the boss, for 30 seconds your party heals for 20% of your Shadow damage, for 40 mana and one global cooldown.
 - Out of mana in a long fight: **Dark Sacrifice** (an Undead racial spell, so only Undead priests have it) turns 1,600 of your health over 15 seconds into 1,600 mana plus your Spirit, once every 10 minutes; the full list holds it below **Mind Flay**, so it only fires when you cannot afford a **Mind Flay**.
 
 ## Talents

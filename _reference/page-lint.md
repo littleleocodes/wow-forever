@@ -8,15 +8,11 @@
 | talents | 0 |
 | links | 0 |
 | guide | 0 |
-| build | 1 |
+| build | 0 |
 | dead | 0 |
 | keys | 0 |
 | steps | 0 |
 | macros | 0 |
 | coverage | 0 |
 | names | 0 |
-
-## build
-
-- priest: priest/raid/shadow.md: the guide names Early Demise, Silence, Silent Resolve, Spirit Tap, which the page's build does not take
 
