@@ -100,6 +100,80 @@ def weights(cls, rot, fname=None):
     return at, w
 
 
+# The gear add-on's values (2026-11-13, user: the add-on work should "help with the checklists and the gear upgrades throughout the leveling
+# process"): characters/addon/forever-gear-values.json, the same numbers the in-game tooltip shows. Every gear stat is scored (crit, hit,
+# haste, expertise, defense, weapon skill, weapon damage), hit only while the build's talents leave room under the cap, and the values follow
+# the character's own gear: its Spell Power or attack power (the armory's statistics) places it between the lab's standard gear and each
+# level's best Forever set, and that share is kept for the levels ahead. Item stats here are item_pool.lab_stats keys.
+PLAN_KEY = {"hit_rating": "hit", "crit_rating": "crit", "haste_rating": "haste", "expertise_rating": "expertise", "defense_rating": "defense",
+            "block_rating": "block", "dodge_rating": "dodge", "parry_rating": "parry", "mh_weapon_dps": "weapon_dps",
+            "spell_damage": "spell_power", "spell_healing": "healing"}
+ADDON_FILE = HERE / "addon" / "forever-gear-values.json"
+
+
+def addon_weights(cfg, b, order, rot, d):
+    """(at, record) from the add-on's data for the character's page build, or None when the file has no entry for it."""
+    if not ADDON_FILE.exists():
+        return None
+    data = json.loads(ADDON_FILE.read_text(encoding="utf-8"))
+    entry = next((e for e in data["classes"].get(cfg["class"], {}).get("leveling", []) if e.get("build") == b["id"] and "levels" in e), None)
+    if entry is None:
+        return None
+    sys.path.insert(0, str(HERE))
+    import addon_values as AV
+    lv = sorted(int(k) for k in entry["levels"])
+
+    def totals(L):   # the gear points' unit totals at a level, linear between the measured levels
+        L = min(max(L, lv[0]), lv[-1])
+        lo, hi = max(x for x in lv if x <= L), min(x for x in lv if x >= L)
+        k = 0.0 if hi == lo else (L - lo) / (hi - lo)
+        a, c = entry["levels"][str(lo)], entry["levels"][str(hi)]
+        key = a["unit"] + "_total"
+        pts = [(g[key] * (1 - k) + h[key] * k) for g, h in zip(a["gear"], c["gear"])]
+        return pts
+    st = d / "armory" / "statistics.json"
+    stats = json.loads(st.read_text(encoding="utf-8")) if st.exists() else {}
+    unit = entry["levels"][str(lv[0])]["unit"]
+    have = stats.get({"spell_power": "spell_power", "attack_power": "attack_power", "ranged_attack_power": "ranged_attack_power"}[unit])
+    level = cfg.get("_level") or lv[0]
+    now = totals(level)
+    share = 0.0
+    if have is not None and len(now) > 1 and now[-1] > now[0]:
+        share = min(1.0, max(0.0, (have - now[0]) / (now[-1] - now[0])))
+    rooms = {}
+    try:   # hit and expertise only while the build's talents leave room (the add-on applies the character's own hit in game)
+        sys.path.insert(0, str(DATA / "fightlab"))
+        import pawn_compare as PC
+        import run as FR
+        for L in lv:
+            setup = PC.setup_of(cfg["class"], FR.allocation_at({"allocation": b["allocation"], "order": order}, L), L, rot)
+            rooms[L] = (setup["spell_room"] if setup["caster"] else setup["melee_room"], setup["exp_room"])
+    except Exception as e:   # noqa: BLE001 - without the lab's player the caps are not applied
+        print(f"note: hit and expertise rooms not read ({type(e).__name__}: {e})")
+
+    def at(L):
+        L = min(max(L, lv[0]), lv[-1])
+        pts = totals(L)
+        ut = pts[0] + share * (pts[-1] - pts[0]) if len(pts) > 1 else pts[0]
+        spk, vals = AV.lev_at(entry, L, ut)
+        w = {}
+        for k, v in vals.items():
+            if k in ("spell_power", "healing") or k.endswith("_damage") and k != "spell_damage":
+                continue   # item_pool folds school damage into spell_power by the character's school shares; healing is spell_healing
+            w[PLAN_KEY.get(k, k)] = v
+        near = min(rooms, key=lambda x: abs(x - L)) if rooms else None
+        if near is not None:
+            hit_room, exp_room = rooms[near]
+            if hit_room <= 0:
+                w["hit"] = 0.0
+            if exp_room <= 0:
+                w["expertise"] = 0.0
+        return {"time": spk, "w": w}
+    rec = {"date": data["made"][:10], "build": entry["build"], "source": "addon", "share": round(share, 3), "unit": unit, "have": have,
+           "file": "addon/forever-gear-values.json"}
+    return at, rec
+
+
 def value(stats, wl):
     return sum(wl["w"].get(k, 0.0) * v for k, v in (stats or {}).items())
 
@@ -1637,8 +1711,13 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
         if not by:
             o += ["None found: your route already takes every quest that pays for its walk.", ""]
     o += ["## How this is worked out", "",
-          f"- Stat values: `_reference/data/characters/weights/{wfile}` (stat_weights.py): the page build in the fight lab at levels 20-60 with each "
-          "stat raised, common random numbers; smoothed over neighbouring levels. Spell crit and hit from items, resistances and defense read 0.",
+          (f"- Stat values: the gear add-on's (`_reference/data/characters/{wfile}`, addon_values.py; the in-game tooltip shows the same): the "
+           "page build in the fight lab at levels 10-60 with every gear stat raised (stat_weights.py --full), on the lab's standard gear and on "
+           "each level's best Forever set; your Spell Power or attack power places you between the two, and that share is kept for the levels "
+           "ahead. Hit and expertise count while the build's talents leave room under the cap. Resistances and effects are not scored."
+           if wfile.startswith("addon/") else
+           f"- Stat values: `_reference/data/characters/weights/{wfile}` (stat_weights.py): the page build in the fight lab at levels 20-60 with each "
+           "stat raised, common random numbers; smoothed over neighbouring levels. Spell crit and hit from items, resistances and defense read 0."),
           f"- Minutes saved: at each level an item is worn, the seconds per kill its stats save over what it replaces (stats are worth less as "
           f"you level) x the kills of that level ({KILL_SHARE:.0%} of the level's experience from kills, an estimate), until the plan "
           "replaces it. Quests, travel and dungeon time are not counted. Gear you find or buy that the plan cannot see (world drops, later "
@@ -2354,7 +2433,14 @@ def main():
     sys.path.insert(0, str(DATA))
     b, order, prov, rot = pick(cfg)
     wfile = cfg.get("weights") or f"{cfg['class']}-{rot}.json"
-    at, wrec = weights(cfg["class"], rot, wfile)
+    aw = None if cfg.get("weights") else addon_weights(dict(cfg, _level=snap["profile"].get("level")), b, order, rot, d)
+    if aw:
+        at, wrec = aw
+        wfile = wrec["file"]
+        print(f"stat values: the gear add-on's ({wrec['date']}): {wrec['unit']} {wrec['have']} puts the character "
+              f"{100 * wrec['share']:.0f}% of the way from the lab's standard gear to the level's best Forever set")
+    else:
+        at, wrec = weights(cfg["class"], rot, wfile)
     global FASTER, SHORT, KILLING
     if cfg.get("metric") == "tank":
         FASTER, SHORT, KILLING = "better tanking", "better", "min of group play"
