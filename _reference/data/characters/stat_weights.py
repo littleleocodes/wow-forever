@@ -30,10 +30,14 @@ CASTER = {"mage", "priest", "warlock"}
 # points (tables.RATING_PER_PCT: the same at every level). Hit and expertise are measured as a step DOWN (a negative step): their value per
 # point while under the cap, also for a build its talents already cap (Arcea's Precision 2/3 is the 4% same-level spell cap); the add-on
 # applies the cap with the character's own hit. Spell penetration is 0 while leveling (mobs of your level have no resistance) and not run.
-FULL_STEPS = {"stamina": 30, "armor": 300, "crit_rating": 28, "hit_rating": -20, "haste_rating": 20, "defense_rating": 20, "dodge_rating": 24,
-              "intellect": 30, "spirit": 30, "mp5": 10, "spell_power": 15, "healing": 30, "wand_dps": 10,
-              "strength": 30, "agility": 30, "attack_power": 60, "mh_weapon_dps": 5, "oh_weapon_dps": 5, "ranged_weapon_dps": 5,
-              "expertise_rating": -20, "weapon_skill": 5, "parry_rating": 30, "block_rating": 10, "block_value": 20}
+# Steps about 3x the planner's (2026-11-13 noise test, 4 independent seed pairs of 3,000 fights at levels 30 and 60): with the small steps
+# crit and Intellect readings spread 30-55% between seed pairs and Destruction's Spell Power read 0 at +15 (its tuned rules do not react
+# to small changes around the lab's standard gear: +15 saves 0.01 s a kill, +30 0.35 s, +60 1.03 s); the 4x steps spread 3-6x less. A
+# larger step is the average value over a few items' worth around the standard gear, which is what a real character's gear differs by.
+FULL_STEPS = {"stamina": 60, "armor": 900, "crit_rating": 84, "hit_rating": -60, "haste_rating": 60, "defense_rating": 60, "dodge_rating": 72,
+              "intellect": 90, "spirit": 90, "mp5": 30, "spell_power": 45, "healing": 90, "wand_dps": 20,
+              "strength": 90, "agility": 90, "attack_power": 180, "mh_weapon_dps": 10, "oh_weapon_dps": 10, "ranged_weapon_dps": 10,
+              "expertise_rating": -60, "weapon_skill": 10, "parry_rating": 90, "block_rating": 30, "block_value": 60}
 CASTER_STATS = ["intellect", "spirit", "stamina", "spell_power", "armor", "mp5", "wand_dps", "crit_rating", "hit_rating", "haste_rating",
                 "defense_rating", "dodge_rating"]
 MELEE_STATS = ["strength", "agility", "stamina", "attack_power", "armor", "mh_weapon_dps", "crit_rating", "hit_rating", "haste_rating",
