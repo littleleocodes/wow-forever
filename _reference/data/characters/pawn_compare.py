@@ -379,7 +379,8 @@ def main():
                 scale = scales.get((PAWN_CLASS[cls], pawn_spec(cls, ti, tn, spec)))
                 if scale is None:
                     continue
-                share = school_share(cls, b, rot)
+                import addon_values as AV   # the build's own damage by school at this level (fight lab), for school-specific spell damage
+                share = AV.school_shares(cls, alloc, L, rot) or school_share(cls, b, rot)
                 pool = item_pool(cls, L, share)
                 setup = setup_of(cls, alloc, L, rot)
                 by = candidates(pool, setup, cls)

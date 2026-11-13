@@ -68,7 +68,7 @@ def school_shares(cls, alloc, level, rot):
     mod = FR.make_module(cls, alloc, level, rot)
     o = FR.simulate(cls, alloc, level, rot, 300, 9, 0)
     by = {}
-    for name, dmg in (o.get("damage") or {}).items():
+    for name, dmg in (o.get("shares") or {}).items():   # damage share by spell (and white hits, pets: no school in the book)
         sp = mod.book.get(name) if hasattr(mod, "book") else None
         sch = getattr(sp, "school", None) if sp is not None else None
         if sch and sch != "physical" and dmg:
