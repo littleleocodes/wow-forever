@@ -81,11 +81,11 @@
    "spec": "Feral Combat",
    "build": "feral-combat-shifting-power-raid",
    "entry": "feral-cat-dps",
-   "pawn_scale": "druid Balance",
+   "pawn_scale": "druid Feral Combat",
    "ours_dps": 905.5,
-   "pawn_dps": 720.1,
-   "ours_ahead": 0.2575,
-   "slots_differ": 15,
+   "pawn_dps": 786.0,
+   "ours_ahead": 0.1521,
+   "slots_differ": 14,
    "diff": {
     "0": {
      "pawn": "Ragefury Eyepatch",
@@ -95,16 +95,12 @@
      "pawn": "Onyxia Tooth Pendant",
      "ours": "Amulet of the Darkmoon"
     },
-    "2": {
-     "pawn": "Soulstealer Mantle",
-     "ours": "Theramore Pauldrons"
-    },
     "3": {
-     "pawn": "Heliotrope Cloak",
+     "pawn": "Chromatic Cloak",
      "ours": "Cape of the Black Baron"
     },
     "4": {
-     "pawn": "Stormshroud Armor",
+     "pawn": "Dawn Armor",
      "ours": "Timbermaw Tunic"
     },
     "5": {
@@ -116,7 +112,7 @@
      "ours": "Theramore Gloves"
     },
     "7": {
-     "pawn": "Highlander's Lizardhide Girdle",
+     "pawn": "Highlander's Leather Girdle",
      "ours": "Shifter's Belt"
     },
     "8": {
@@ -132,7 +128,7 @@
      "ours": "Quick Strike Ring"
     },
     "11": {
-     "pawn": "Blessed Band of Light",
+     "pawn": "Quick Strike Ring",
      "ours": "Band of Earthen Might"
     },
     "12": {
@@ -146,6 +142,67 @@
     "14": {
      "pawn": "Persuader",
      "ours": "Ebon Hand"
+    }
+   }
+  },
+  {
+   "class": "hunter",
+   "spec": "Beast Mastery",
+   "build": "beast-mastery-ml-raid",
+   "entry": "bm-raid",
+   "pawn_scale": "hunter Beast Mastery",
+   "ours_dps": 1028.6,
+   "pawn_dps": 937.3,
+   "ours_ahead": 0.0974,
+   "slots_differ": 12,
+   "diff": {
+    "0": {
+     "pawn": "Ragefury Eyepatch",
+     "ours": "Black Dragonscale Helm"
+    },
+    "2": {
+     "pawn": "Hermit's Pauldron",
+     "ours": "Theramore Pauldrons"
+    },
+    "3": {
+     "pawn": "Howler's Furs",
+     "ours": "Earthweave Cloak"
+    },
+    "5": {
+     "pawn": "Slashclaw Bracers",
+     "ours": "Beaststalker's Bindings"
+    },
+    "6": {
+     "pawn": "Stormshroud Gloves",
+     "ours": "Theramore Gloves"
+    },
+    "7": {
+     "pawn": "Highlander's Chain Girdle",
+     "ours": "Molten Belt"
+    },
+    "8": {
+     "pawn": "Stormshroud Pants",
+     "ours": "Beaststalker's Pants"
+    },
+    "9": {
+     "pawn": "Windreaver Greaves",
+     "ours": "Shadowcraft Boots"
+    },
+    "10": {
+     "pawn": "Band of Earthen Might",
+     "ours": "Cutthroat's Signet"
+    },
+    "11": {
+     "pawn": "Warden's Signet of Ferocity",
+     "ours": "Band of Earthen Might"
+    },
+    "12": {
+     "pawn": "Smolderweb's Eye",
+     "ours": "Blackhand's Breadth"
+    },
+    "13": {
+     "pawn": "Frozen Heart of the Mountain",
+     "ours": "Counterattack Lodestone"
     }
    }
   },
@@ -211,10 +268,10 @@
    "spec": "Marksmanship",
    "build": "bm-mm-full-buffs-raid",
    "entry": "mm-raid",
-   "pawn_scale": "hunter Beast Mastery",
+   "pawn_scale": "hunter Marksmanship",
    "ours_dps": 949.0,
-   "pawn_dps": 871.4,
-   "ours_ahead": 0.089,
+   "pawn_dps": 869.4,
+   "ours_ahead": 0.0916,
    "slots_differ": 12,
    "diff": {
     "0": {
@@ -238,7 +295,7 @@
      "ours": "Theramore Gloves"
     },
     "7": {
-     "pawn": "Highlander's Chain Girdle",
+     "pawn": "Marksman's Girdle",
      "ours": "Molten Belt"
     },
     "8": {
@@ -272,11 +329,11 @@
    "spec": "Survival",
    "build": "survival-raid",
    "entry": "melee-dps",
-   "pawn_scale": "hunter Beast Mastery",
+   "pawn_scale": "hunter Survival",
    "ours_dps": 705.8,
-   "pawn_dps": 675.1,
-   "ours_ahead": 0.0455,
-   "slots_differ": 12,
+   "pawn_dps": 675.2,
+   "ours_ahead": 0.0454,
+   "slots_differ": 13,
    "diff": {
     "0": {
      "pawn": "Ragefury Eyepatch",
@@ -297,6 +354,10 @@
     "6": {
      "pawn": "Stormshroud Gloves",
      "ours": "Theramore Gloves"
+    },
+    "7": {
+     "pawn": "Marksman's Girdle",
+     "ours": "Highlander's Chain Girdle"
     },
     "8": {
      "pawn": "Stormshroud Pants",
@@ -394,31 +455,27 @@
    "spec": "Fire",
    "build": "fire-raid",
    "entry": "fire-raid",
-   "pawn_scale": "mage Arcane",
+   "pawn_scale": "mage Fire",
    "ours_dps": 822.2,
-   "pawn_dps": 725.8,
-   "ours_ahead": 0.1328,
-   "slots_differ": 13,
+   "pawn_dps": 753.3,
+   "ours_ahead": 0.0914,
+   "slots_differ": 12,
    "diff": {
     "0": {
-     "pawn": "Chief Architect's Monocle",
+     "pawn": "Eye of Theradras",
      "ours": "Crimson Felt Hat"
     },
     "1": {
      "pawn": "Onyxia Tooth Pendant",
      "ours": "Choker of the Fire Lord"
     },
-    "2": {
-     "pawn": "Soulstealer Mantle",
-     "ours": "Mantle of the Timbermaw"
+    "3": {
+     "pawn": "Heliotrope Cloak",
+     "ours": "Arcanoweave Cloak"
     },
     "4": {
      "pawn": "Earthpower Vest",
      "ours": "Robe of the Archmage"
-    },
-    "7": {
-     "pawn": "Clutch of Andros",
-     "ours": "Belt of the Archmage"
     },
     "8": {
      "pawn": "Magister's Leggings",
@@ -433,7 +490,7 @@
      "ours": "Ring of Spell Power"
     },
     "11": {
-     "pawn": "Blessed Band of Light",
+     "pawn": "Warden's Signet of Brilliance",
      "ours": "Ring of Spell Power"
     },
     "12": {
@@ -444,13 +501,13 @@
      "pawn": "Frozen Heart of the Mountain",
      "ours": "Eye of the Beast"
     },
+    "14": {
+     "pawn": "Sageclaw",
+     "ours": "Sageblade"
+    },
     "15": {
      "pawn": "Skull of Burning Shadows",
      "ours": "Cloud Stone"
-    },
-    "16": {
-     "pawn": "Wand of Arcane Potency",
-     "ours": "Pyric Caduceus"
     }
    }
   },
@@ -459,11 +516,11 @@
    "spec": "Frost",
    "build": "frost-ml-raid",
    "entry": "frost-raid",
-   "pawn_scale": "mage Arcane",
+   "pawn_scale": "mage Frost",
    "ours_dps": 623.8,
-   "pawn_dps": 550.6,
-   "ours_ahead": 0.1329,
-   "slots_differ": 13,
+   "pawn_dps": 547.8,
+   "ours_ahead": 0.1387,
+   "slots_differ": 12,
    "diff": {
     "0": {
      "pawn": "Chief Architect's Monocle",
@@ -486,7 +543,7 @@
      "ours": "Belt of the Archmage"
     },
     "8": {
-     "pawn": "Magister's Leggings",
+     "pawn": "Ironweave Pants",
      "ours": "Flarecore Leggings"
     },
     "9": {
@@ -512,10 +569,6 @@
     "15": {
      "pawn": "Skull of Burning Shadows",
      "ours": "Orb of the Forgotten Seer"
-    },
-    "16": {
-     "pawn": "Wand of Arcane Potency",
-     "ours": "Wand of Biting Cold"
     }
    }
   },
@@ -524,10 +577,10 @@
    "spec": "Hybrid Arcane/Frost",
    "build": "frost-fingers-of-frost-raid",
    "entry": "frost-raid",
-   "pawn_scale": "mage Arcane",
+   "pawn_scale": "mage Frost",
    "ours_dps": 597.9,
-   "pawn_dps": 512.5,
-   "ours_ahead": 0.1668,
+   "pawn_dps": 513.7,
+   "ours_ahead": 0.1639,
    "slots_differ": 12,
    "diff": {
     "0": {
@@ -551,7 +604,7 @@
      "ours": "Belt of the Archmage"
     },
     "8": {
-     "pawn": "Magister's Leggings",
+     "pawn": "Ironweave Pants",
      "ours": "Flarecore Leggings"
     },
     "10": {
@@ -575,7 +628,7 @@
      "ours": "Cloud Stone"
     },
     "16": {
-     "pawn": "Wand of Arcane Potency",
+     "pawn": "Wand of Biting Cold",
      "ours": "Brilliant Wand"
     }
    }
@@ -585,31 +638,27 @@
    "spec": "Hybrid Fire/Frost",
    "build": "frostfire-raid",
    "entry": "frostfire-raid",
-   "pawn_scale": "mage Arcane",
+   "pawn_scale": "mage Fire",
    "ours_dps": 740.5,
-   "pawn_dps": 623.3,
-   "ours_ahead": 0.188,
-   "slots_differ": 13,
+   "pawn_dps": 661.1,
+   "ours_ahead": 0.1201,
+   "slots_differ": 12,
    "diff": {
     "0": {
-     "pawn": "Chief Architect's Monocle",
+     "pawn": "Eye of Theradras",
      "ours": "Crimson Felt Hat"
     },
     "1": {
      "pawn": "Onyxia Tooth Pendant",
      "ours": "Choker of the Fire Lord"
     },
-    "2": {
-     "pawn": "Soulstealer Mantle",
-     "ours": "Mantle of the Timbermaw"
+    "3": {
+     "pawn": "Heliotrope Cloak",
+     "ours": "Arcanoweave Cloak"
     },
     "4": {
      "pawn": "Earthpower Vest",
      "ours": "Robe of the Archmage"
-    },
-    "7": {
-     "pawn": "Clutch of Andros",
-     "ours": "Belt of the Archmage"
     },
     "8": {
      "pawn": "Magister's Leggings",
@@ -624,7 +673,7 @@
      "ours": "Ring of Spell Power"
     },
     "11": {
-     "pawn": "Blessed Band of Light",
+     "pawn": "Warden's Signet of Brilliance",
      "ours": "Ring of Spell Power"
     },
     "12": {
@@ -635,13 +684,13 @@
      "pawn": "Frozen Heart of the Mountain",
      "ours": "Eye of the Beast"
     },
+    "14": {
+     "pawn": "Sageclaw",
+     "ours": "Sageblade"
+    },
     "15": {
      "pawn": "Skull of Burning Shadows",
      "ours": "Cloud Stone"
-    },
-    "16": {
-     "pawn": "Wand of Arcane Potency",
-     "ours": "Pyric Caduceus"
     }
    }
   },
@@ -650,67 +699,47 @@
    "spec": "Retribution",
    "build": "opt-ret-dps-raid-dps",
    "entry": "ret-dps",
-   "pawn_scale": "paladin Holy",
+   "pawn_scale": "paladin Retribution",
    "ours_dps": 675.6,
-   "pawn_dps": 531.7,
-   "ours_ahead": 0.2705,
-   "slots_differ": 14,
+   "pawn_dps": 647.8,
+   "ours_ahead": 0.0428,
+   "slots_differ": 9,
    "diff": {
-    "1": {
-     "pawn": "Tempest Talisman",
-     "ours": "Onyxia Tooth Pendant"
-    },
     "2": {
-     "pawn": "Theramore Mantle",
+     "pawn": "Hermit's Pauldron",
      "ours": "Highlander's Lamellar Spaulders"
     },
     "3": {
-     "pawn": "Heliotrope Cloak",
+     "pawn": "Howler's Furs",
      "ours": "Arcanoweave Cloak"
     },
     "4": {
-     "pawn": "Stormshroud Armor",
+     "pawn": "Tombstone Breastplate",
      "ours": "Dawn Armor"
     },
     "5": {
      "pawn": "Vambraces of the Sadist",
      "ours": "Rockfury Bracers"
     },
-    "6": {
-     "pawn": "Bloodmail Gauntlets",
-     "ours": "Stormshroud Gloves"
-    },
     "7": {
-     "pawn": "Highlander's Mail Girdle",
+     "pawn": "Highlander's Lamellar Girdle",
      "ours": "Marksman's Girdle"
     },
-    "8": {
-     "pawn": "Stormshroud Pants",
-     "ours": "Titanic Leggings"
-    },
     "9": {
-     "pawn": "Manascale Treads",
+     "pawn": "Bloodmail Boots",
      "ours": "Highlander's Lamellar Greaves"
     },
-    "10": {
-     "pawn": "Warden's Signet of Brilliance",
-     "ours": "Band of Earthen Might"
-    },
     "11": {
-     "pawn": "Don Mauricio's Band of Domination",
+     "pawn": "Quick Strike Ring",
      "ours": "Warden's Signet of Ferocity"
     },
     "12": {
-     "pawn": "Jewel of the Guard Captain",
+     "pawn": "Smolderweb's Eye",
      "ours": "Hand of Justice"
     },
     "13": {
-     "pawn": "Serenity Field",
+     "pawn": "Frozen Heart of the Mountain",
      "ours": "Talisman of Ephemeral Power"
-    },
-    "14": {
-     "pawn": "Hammer of the Grand Crusader",
-     "ours": "Fist of Cenarius"
     }
    }
   },
@@ -792,58 +821,54 @@
    "spec": "Shadow",
    "build": "opt-shadow-dps-raid-dps",
    "entry": "shadow-dps",
-   "pawn_scale": "priest Discipline",
+   "pawn_scale": "priest Shadow",
    "ours_dps": 789.0,
-   "pawn_dps": 676.0,
-   "ours_ahead": 0.1672,
-   "slots_differ": 13,
+   "pawn_dps": 678.7,
+   "ours_ahead": 0.1625,
+   "slots_differ": 12,
    "diff": {
     "0": {
      "pawn": "Eye of Theradras",
      "ours": "Felcloth Hood"
     },
     "1": {
-     "pawn": "Tempest Talisman",
+     "pawn": "Onyxia Tooth Pendant",
      "ours": "Choker of the Fire Lord"
     },
     "3": {
      "pawn": "Heliotrope Cloak",
      "ours": "Arcanoweave Cloak"
     },
-    "5": {
-     "pawn": "Nethergeld Cuffs",
-     "ours": "Rockfury Bracers"
-    },
     "8": {
-     "pawn": "Devout Skirt",
+     "pawn": "Magister's Leggings",
      "ours": "Flarecore Leggings"
     },
     "9": {
-     "pawn": "Ogreseer Tower Boots",
+     "pawn": "Kayser's Boots of Precision",
      "ours": "Earthen Silk Slippers"
     },
     "10": {
-     "pawn": "Warden's Signet of Brilliance",
+     "pawn": "Band of Earthen Might",
      "ours": "Ring of Spell Power"
     },
     "11": {
-     "pawn": "Don Mauricio's Band of Domination",
+     "pawn": "Blessed Band of Light",
      "ours": "Warden's Signet of Brilliance"
     },
     "12": {
-     "pawn": "Jewel of the Guard Captain",
+     "pawn": "Smolderweb's Eye",
      "ours": "Talisman of Ephemeral Power"
     },
     "13": {
-     "pawn": "Serenity Field",
+     "pawn": "Frozen Heart of the Mountain",
      "ours": "Weakness Analyzer"
     },
     "14": {
-     "pawn": "Gift of the Elven Magi",
+     "pawn": "Persuader",
      "ours": "Sageclaw"
     },
     "15": {
-     "pawn": "Thaurissan's Royal Scepter",
+     "pawn": "Skull of Burning Shadows",
      "ours": "Mordresh's Lifeless Skull"
     },
     "16": {
@@ -918,7 +943,7 @@
    "spec": "Combat",
    "build": "opt-combat-daggers-raid-raid-dps",
    "entry": "combat-daggers-raid",
-   "pawn_scale": "rogue Assassination",
+   "pawn_scale": "rogue Combat",
    "ours_dps": 686.4,
    "pawn_dps": 645.4,
    "ours_ahead": 0.0636,
@@ -1036,7 +1061,7 @@
    "spec": "Subtlety",
    "build": "subtlety-hemo-raid",
    "entry": "subtlety-raid",
-   "pawn_scale": "rogue Assassination",
+   "pawn_scale": "rogue Subtlety",
    "ours_dps": 651.9,
    "pawn_dps": 622.6,
    "ours_ahead": 0.047,
@@ -1162,18 +1187,18 @@
    "spec": "Enhancement",
    "build": "opt-enhancement-dps-raid-dps",
    "entry": "enhancement-dps",
-   "pawn_scale": "shaman Elemental",
+   "pawn_scale": "shaman Enhancement",
    "ours_dps": 910.8,
-   "pawn_dps": 815.3,
-   "ours_ahead": 0.1172,
-   "slots_differ": 12,
+   "pawn_dps": 839.3,
+   "ours_ahead": 0.0853,
+   "slots_differ": 10,
    "diff": {
     "0": {
      "pawn": "Ragefury Eyepatch",
      "ours": "Black Dragonscale Helm"
     },
     "2": {
-     "pawn": "Mantle of the Timbermaw",
+     "pawn": "Theramore Epaulets",
      "ours": "Soulstealer Mantle"
     },
     "3": {
@@ -1181,7 +1206,7 @@
      "ours": "Arcanoweave Cloak"
     },
     "4": {
-     "pawn": "Stormshroud Armor",
+     "pawn": "Tombstone Breastplate",
      "ours": "Magister's Robes"
     },
     "5": {
@@ -1189,19 +1214,15 @@
      "ours": "Wildheart Bracers"
     },
     "7": {
-     "pawn": "Highlander's Mail Girdle",
+     "pawn": "Highlander's Chain Girdle",
      "ours": "Belt of the Archmage"
     },
     "8": {
      "pawn": "Stormshroud Pants",
      "ours": "Ironfeather Leggings"
     },
-    "9": {
-     "pawn": "Kayser's Boots of Precision",
-     "ours": "Bloodmail Boots"
-    },
     "11": {
-     "pawn": "Warden's Signet of Brilliance",
+     "pawn": "Quick Strike Ring",
      "ours": "Channeler's Ring"
     },
     "12": {
@@ -1211,10 +1232,6 @@
     "13": {
      "pawn": "Frozen Heart of the Mountain",
      "ours": "Talisman of Ephemeral Power"
-    },
-    "14": {
-     "pawn": "Ironbark Staff",
-     "ours": "Fist of Cenarius"
     }
    }
   },
@@ -1357,10 +1374,10 @@
    "spec": "Demonology",
    "build": "demonology-ml-raid",
    "entry": "demonology-raid",
-   "pawn_scale": "warlock Affliction",
+   "pawn_scale": "warlock Demonology",
    "ours_dps": 858.5,
-   "pawn_dps": 755.6,
-   "ours_ahead": 0.1362,
+   "pawn_dps": 766.3,
+   "ours_ahead": 0.1203,
    "slots_differ": 13,
    "diff": {
     "0": {
@@ -1404,7 +1421,7 @@
      "ours": "Talisman of Ephemeral Power"
     },
     "14": {
-     "pawn": "Blade of the New Moon",
+     "pawn": "Sageclaw",
      "ours": "Sageblade"
     },
     "15": {
@@ -1412,7 +1429,7 @@
      "ours": "Mordresh's Lifeless Skull"
     },
     "16": {
-     "pawn": "Wand of Eternal Light",
+     "pawn": "Pyric Caduceus",
      "ours": "Brilliant Wand"
     }
    }
@@ -1422,10 +1439,10 @@
    "spec": "Destruction",
    "build": "destruction-ml-raid",
    "entry": "sb-raid",
-   "pawn_scale": "warlock Affliction",
+   "pawn_scale": "warlock Destruction",
    "ours_dps": 814.9,
-   "pawn_dps": 690.3,
-   "ours_ahead": 0.1806,
+   "pawn_dps": 706.1,
+   "ours_ahead": 0.1541,
    "slots_differ": 13,
    "diff": {
     "0": {
@@ -1469,7 +1486,7 @@
      "ours": "Talisman of Ephemeral Power"
     },
     "14": {
-     "pawn": "Blade of the New Moon",
+     "pawn": "Sageclaw",
      "ours": "Sageblade"
     },
     "15": {
@@ -1477,7 +1494,7 @@
      "ours": "Mordresh's Lifeless Skull"
     },
     "16": {
-     "pawn": "Wand of Eternal Light",
+     "pawn": "Pyric Caduceus",
      "ours": "Brilliant Wand"
     }
    }
@@ -1487,10 +1504,10 @@
    "spec": "Hybrid Affliction/Destruction",
    "build": "shadow-bolt-hybrid-open-raid",
    "entry": "sb-raid",
-   "pawn_scale": "warlock Affliction",
+   "pawn_scale": "warlock Destruction",
    "ours_dps": 814.9,
-   "pawn_dps": 690.3,
-   "ours_ahead": 0.1806,
+   "pawn_dps": 706.1,
+   "ours_ahead": 0.1541,
    "slots_differ": 13,
    "diff": {
     "0": {
@@ -1534,7 +1551,7 @@
      "ours": "Talisman of Ephemeral Power"
     },
     "14": {
-     "pawn": "Blade of the New Moon",
+     "pawn": "Sageclaw",
      "ours": "Sageblade"
     },
     "15": {
@@ -1542,7 +1559,7 @@
      "ours": "Mordresh's Lifeless Skull"
     },
     "16": {
-     "pawn": "Wand of Eternal Light",
+     "pawn": "Pyric Caduceus",
      "ours": "Brilliant Wand"
     }
    }
@@ -1621,10 +1638,10 @@
    "spec": "Fury",
    "build": "fury-open-raid",
    "entry": "fury-dw-raid",
-   "pawn_scale": "warrior Arms",
+   "pawn_scale": "warrior Fury",
    "ours_dps": 799.8,
-   "pawn_dps": 800.8,
-   "ours_ahead": -0.0013,
+   "pawn_dps": 792.9,
+   "ours_ahead": 0.0087,
    "slots_differ": 13,
    "diff": {
     "1": {
@@ -1632,7 +1649,7 @@
      "ours": "Mark of Fordring"
     },
     "2": {
-     "pawn": "Theramore Epaulets",
+     "pawn": "Theramore Spaulders",
      "ours": "Theramore Pauldrons"
     },
     "3": {
