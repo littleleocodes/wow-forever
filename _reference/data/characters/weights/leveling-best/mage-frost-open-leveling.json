@@ -21,7 +21,8 @@
   "hit_rating": -60,
   "haste_rating": 60,
   "defense_rating": 60,
-  "dodge_rating": 72
+  "dodge_rating": 72,
+  "spell_penetration": 15
  },
  "unit": "seconds per kill saved per point (negative: slower)",
  "levels": {
@@ -39,7 +40,8 @@
     "hit_rating": 0.01989,
     "haste_rating": 0.00358,
     "defense_rating": 0.00033,
-    "dodge_rating": 0.00048
+    "dodge_rating": 0.00048,
+    "spell_penetration": 0.11126
    }
   },
   "15": {
@@ -56,7 +58,8 @@
     "hit_rating": 0.01982,
     "haste_rating": 0.00406,
     "defense_rating": 0.00038,
-    "dodge_rating": 0.00036
+    "dodge_rating": 0.00036,
+    "spell_penetration": 0.08183
    }
   },
   "20": {
@@ -73,7 +76,8 @@
     "hit_rating": 0.01672,
     "haste_rating": -0.00663,
     "defense_rating": 0.00061,
-    "dodge_rating": 0.00028
+    "dodge_rating": 0.00028,
+    "spell_penetration": 0.06838
    }
   },
   "25": {
@@ -90,7 +94,8 @@
     "hit_rating": 0.01866,
     "haste_rating": 0.00036,
     "defense_rating": 0.00025,
-    "dodge_rating": 0.0005
+    "dodge_rating": 0.0005,
+    "spell_penetration": 0.05349
    }
   },
   "30": {
@@ -107,7 +112,8 @@
     "hit_rating": 0.02138,
     "haste_rating": 0.00283,
     "defense_rating": 0.00249,
-    "dodge_rating": 0.00159
+    "dodge_rating": 0.00159,
+    "spell_penetration": 0.0461
    }
   },
   "35": {
@@ -124,7 +130,8 @@
     "hit_rating": 0.02041,
     "haste_rating": 0.00426,
     "defense_rating": 0.0002,
-    "dodge_rating": 0.00023
+    "dodge_rating": 0.00023,
+    "spell_penetration": 0.03761
    }
   },
   "40": {
@@ -141,7 +148,8 @@
     "hit_rating": 0.02416,
     "haste_rating": 0.00511,
     "defense_rating": 0.00188,
-    "dodge_rating": 0.00123
+    "dodge_rating": 0.00123,
+    "spell_penetration": 0.0486
    }
   },
   "45": {
@@ -158,58 +166,62 @@
     "hit_rating": 0.02625,
     "haste_rating": 0.00335,
     "defense_rating": 0.00043,
-    "dodge_rating": 0.00046
+    "dodge_rating": 0.00046,
+    "spell_penetration": 0.04365
    }
   },
   "50": {
-   "time_per_kill": 22.952,
+   "time_per_kill": 22.593,
    "weights": {
-    "intellect": 0.00786,
-    "spirit": 0.01785,
-    "stamina": 0.00085,
-    "spell_power": 0.01971,
-    "armor": 0.00023,
-    "mp5": 0.0369,
-    "wand_dps": 0.01543,
-    "crit_rating": 0.00927,
+    "intellect": 0.00715,
+    "spirit": 0.01733,
+    "stamina": -3e-05,
+    "spell_power": 0.01677,
+    "armor": 0.00013,
+    "mp5": 0.03723,
+    "wand_dps": 0.01363,
+    "crit_rating": 0.00811,
     "hit_rating": 0.02562,
-    "haste_rating": 0.00357,
-    "defense_rating": 0.00109,
-    "dodge_rating": 0.00108
+    "haste_rating": 0.00374,
+    "defense_rating": 0.00073,
+    "dodge_rating": 0.00094,
+    "spell_penetration": 0.03291
    }
   },
   "55": {
-   "time_per_kill": 22.787,
+   "time_per_kill": 22.579,
    "weights": {
-    "intellect": 0.00543,
-    "spirit": 0.01474,
-    "stamina": 0.00074,
-    "spell_power": 0.01527,
-    "armor": 0.00011,
-    "mp5": 0.02768,
-    "wand_dps": 0.0099,
-    "crit_rating": 0.00881,
-    "hit_rating": 0.02607,
-    "haste_rating": 0.00412,
-    "defense_rating": 0.00091,
-    "dodge_rating": 0.00038
+    "intellect": 0.00611,
+    "spirit": 0.01469,
+    "stamina": 0.00033,
+    "spell_power": 0.01684,
+    "armor": 0.00015,
+    "mp5": 0.02997,
+    "wand_dps": 0.01098,
+    "crit_rating": 0.00885,
+    "hit_rating": 0.02564,
+    "haste_rating": 0.00476,
+    "defense_rating": 0.00177,
+    "dodge_rating": 0.00103,
+    "spell_penetration": 0.03193
    }
   },
   "60": {
-   "time_per_kill": 20.329,
+   "time_per_kill": 20.106,
    "weights": {
-    "intellect": 0.0025,
-    "spirit": 0.01188,
-    "stamina": 0.00028,
-    "spell_power": 0.01099,
-    "armor": 0.00012,
-    "mp5": 0.02282,
-    "wand_dps": 0.00498,
-    "crit_rating": 0.00719,
-    "hit_rating": 0.0221,
-    "haste_rating": 0.00408,
-    "defense_rating": 0.00113,
-    "dodge_rating": 0.00087
+    "intellect": 0.00296,
+    "spirit": 0.01204,
+    "stamina": 0.00026,
+    "spell_power": 0.01075,
+    "armor": 8e-05,
+    "mp5": 0.02184,
+    "wand_dps": 0.00374,
+    "crit_rating": 0.0071,
+    "hit_rating": 0.02119,
+    "haste_rating": 0.00452,
+    "defense_rating": 0.00123,
+    "dodge_rating": 0.00116,
+    "spell_penetration": 0.0268
    }
   }
  },

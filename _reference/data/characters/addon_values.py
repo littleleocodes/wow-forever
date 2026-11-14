@@ -45,7 +45,9 @@ CAPS = {
     "defense": {"unit": "skill", "crit_immune_at_60": 440, "per_point_percent": 0.04,
                 "note": "A boss crits a tank 5.6% at 300 defense skill, 0.04% less per point: 440 at 60. Below 60: 5 x level + 140 "
                         "against a boss three levels up."},
-    "spell_penetration": {"note": "Worth 0 while leveling (mobs of your level have no resistance); raid values from the simulator."},
+    "spell_penetration": {"note": "Spell Piercing: past the target's resistance it is bonus damage, on average P / (P + 8 x your level + 19) of a "
+                                   "spell's damage, a tenth on DoT ticks, none on Holy (wowsims/forever issue #76, 138 Forever combat logs). "
+                                   "Leveling values from the fight lab (2026-11-13), raid values from the simulator."},
     "haste": {"note": "10 rating = 1% faster casts and swings at every level. Whether haste shortens the global cooldown is open "
                       "(the simulator says yes for spells, the client's Nature's Grace suggests no; _reference/forever-stats.md row 7)."},
 }
@@ -72,7 +74,7 @@ def r(x):
 VERSION = 1
 TOLERANCE = 1e-6
 NOT_SCORED = {"health_regen": "not measured (the fight lab's eating time does not read health regeneration from gear)",
-              "resistances": "worth 0 (no simulator models resistance)", "spell_penetration": "worth 0 while leveling",
+              "resistances": "worth 0 (no simulator models resistance)",
               "effects": "Use, Equip-proc, chance-on-hit and set-bonus effects are not scored (static stats only); relics, idols, librams and "
                          "totems with only an effect score 0 and say so"}
 
@@ -234,7 +236,8 @@ def leveling(cls):
             if v.get("spell_power"):
                 for sch, x in share.items():
                     v[f"{sch}_damage"] = v["spell_power"] * x
-            v["hit_rating_above_cap"] = 0.0   # not measured: hit past the cap (a dual-wielder's white swings) counts 0 for now
+            # hit past the special-attack cap: a dual-wielder's white swings (stat_weights.py --only hit_rating_above_cap, 2026-11-13); else 0
+            v["hit_rating_above_cap"] = max(0.0, row["weights"].get("hit_rating_above_cap", 0.0)) if dual else 0.0
             gear = [dict(label="standard", **totals, seconds_per_kill=row["time_per_kill"], values=norm(v, "leveling", cls))]
             if brow:
                 gear[0]["item_stats"] = set_stats(cls, brow["standard"], setup, dual, ranged, int(L))
@@ -244,7 +247,7 @@ def leveling(cls):
                 if vb.get("spell_power"):
                     for sch, x in share.items():
                         vb[f"{sch}_damage"] = vb["spell_power"] * x
-                vb["hit_rating_above_cap"] = 0.0
+                vb["hit_rating_above_cap"] = max(0.0, rb["weights"].get("hit_rating_above_cap", 0.0)) if dual else 0.0
                 gear.append(dict(label="best Forever set", **totals_with(cls, alloc, int(L), rot, wb["base_bonus"][L]),
                                  seconds_per_kill=rb["time_per_kill"], values=norm(vb, "leveling", cls)))
                 if brow:

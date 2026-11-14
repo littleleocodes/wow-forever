@@ -22,6 +22,7 @@
   "haste_rating": 60,
   "defense_rating": 60,
   "dodge_rating": 72,
+  "spell_penetration": 15,
   "healing": 90
  },
  "unit": "seconds per kill saved per point (negative: slower)",
@@ -41,7 +42,8 @@
     "haste_rating": -0.00016,
     "defense_rating": 0.01105,
     "dodge_rating": 0.00636,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.0613
    }
   },
   "15": {
@@ -59,7 +61,8 @@
     "haste_rating": 0.00436,
     "defense_rating": 0.01279,
     "dodge_rating": 0.00901,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.0536
    }
   },
   "20": {
@@ -77,7 +80,8 @@
     "haste_rating": -0.00089,
     "defense_rating": 0.00455,
     "dodge_rating": 0.00476,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.02777
    }
   },
   "25": {
@@ -95,7 +99,8 @@
     "haste_rating": 0.00086,
     "defense_rating": 0.01025,
     "dodge_rating": 0.00901,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.03716
    }
   },
   "30": {
@@ -113,7 +118,8 @@
     "haste_rating": -0.00103,
     "defense_rating": 0.00844,
     "dodge_rating": 0.00564,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.02813
    }
   },
   "35": {
@@ -131,7 +137,8 @@
     "haste_rating": -0.00158,
     "defense_rating": 0.00834,
     "dodge_rating": 0.00619,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.03046
    }
   },
   "40": {
@@ -149,7 +156,8 @@
     "haste_rating": 0.00074,
     "defense_rating": 0.0043,
     "dodge_rating": 0.00318,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.0306
    }
   },
   "45": {
@@ -167,7 +175,8 @@
     "haste_rating": 0.00108,
     "defense_rating": 0.00452,
     "dodge_rating": 0.00433,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.02707
    }
   },
   "50": {
@@ -185,7 +194,8 @@
     "haste_rating": 0.00036,
     "defense_rating": 0.00351,
     "dodge_rating": 0.00309,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.02032
    }
   },
   "55": {
@@ -203,7 +213,8 @@
     "haste_rating": 0.00093,
     "defense_rating": 0.00313,
     "dodge_rating": 0.00304,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.02222
    }
   },
   "60": {
@@ -221,10 +232,14 @@
     "haste_rating": -0.00027,
     "defense_rating": 0.00308,
     "dodge_rating": 0.00169,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.02056
    }
   }
  },
  "note": "Negative steps (hit_rating, expertise_rating): the value per point while under the cap, measured as a step down. Ratings in rating points (the same at every level). A fight-lab model of the beta, not a measurement.",
- "provisional_order": false
+ "provisional_order": false,
+ "added": {
+  "spell_penetration": "2026-11-13"
+ }
 }

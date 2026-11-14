@@ -29,6 +29,7 @@ import pathlib
 import re
 
 from engine import parse_interrupt, BaseModule, Player, Spell
+from tables import pierce_bonus  # noqa: E402  (Spell Piercing: Arcane Subtlety)
 from tables import (GCD, MELEE_RANGE, SPELL_CRIT_BASE, WAND_SPEED, base_health, base_mana, gear_stats, int_per_spell_crit,
                     interp, mage_base_stats, mana_regen_tick, wand_dps)
 
@@ -237,7 +238,7 @@ MECHANICS = {
     "Wand Specialization": "+13/25% wand damage",
     "Arcane Concentration": "2%/rank per damaging spell hit: next damage spell is free (Clearcasting)",
     "Arcane Meditation": "17/33/50% of Spirit regen continues inside the five-second rule",
-    "Arcane Subtlety": "lower target resistance: partial-resist loss -20% per rank",
+    "Arcane Subtlety": "8/15 Spell Piercing: bonus damage P/(P+8L+19) on every spell school, a tenth on DoT ticks (issue #76's logs)",
     "Magic Absorption": "1%/rank of maximum mana back when a spell misses (full resist)",
     "Arcane Resilience": "armor equal to 25/50% of Intellect",
     "Arcane Instability": "+1% spell damage and +1% spell crit per rank",
@@ -428,6 +429,9 @@ class MageModule(BaseModule):
         if armor_spell is not None and armor_spell.name == "Mage Armor":
             p.regen_while_casting = min(1.0, p.regen_while_casting + 0.5)
         self.armor_spell_used = armor_spell.name if armor_spell else "none"
+        if self.rank("Arcane Subtlety"):   # 8 / 15 Spell Piercing on every school (2026-11-13: bonus damage past the mob's resistance,
+            p.spell_pierce_pts = self.tv("Arcane Subtlety", 0)   # wowsims/forever issue #76's logs: a mage's Arcane Subtlety gave it, and
+            p.spell_pierce = pierce_bonus(level, p.spell_pierce_pts)   # nothing after a respec out of it; tables.pierce_bonus)
         return p
 
     def armor_choice(self):

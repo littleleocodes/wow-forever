@@ -27,7 +27,8 @@
   "intellect": 90,
   "spirit": 90,
   "mp5": 30,
-  "ranged_weapon_dps": 10
+  "ranged_weapon_dps": 10,
+  "spell_penetration": 15
  },
  "unit": "seconds per kill saved per point (negative: slower)",
  "levels": {
@@ -51,7 +52,8 @@
     "intellect": 0.0,
     "spirit": 0.0,
     "mp5": 0.0,
-    "ranged_weapon_dps": 0.06253
+    "ranged_weapon_dps": 0.06253,
+    "spell_penetration": 0.00471
    }
   },
   "15": {
@@ -74,7 +76,8 @@
     "intellect": 0.00118,
     "spirit": 0.0,
     "mp5": 0.0,
-    "ranged_weapon_dps": 0.04196
+    "ranged_weapon_dps": 0.04196,
+    "spell_penetration": 0.00673
    }
   },
   "20": {
@@ -97,7 +100,8 @@
     "intellect": 0.0071,
     "spirit": 0.00345,
     "mp5": 0.01035,
-    "ranged_weapon_dps": 0.06156
+    "ranged_weapon_dps": 0.06156,
+    "spell_penetration": 0.00335
    }
   },
   "25": {
@@ -120,7 +124,8 @@
     "intellect": 0.00627,
     "spirit": 0.01169,
     "mp5": 0.03507,
-    "ranged_weapon_dps": 0.04989
+    "ranged_weapon_dps": 0.04989,
+    "spell_penetration": 0.00242
    }
   },
   "30": {
@@ -143,7 +148,8 @@
     "intellect": 0.0055,
     "spirit": 0.01607,
     "mp5": 0.04821,
-    "ranged_weapon_dps": 0.04167
+    "ranged_weapon_dps": 0.04167,
+    "spell_penetration": 0.00293
    }
   },
   "35": {
@@ -166,7 +172,8 @@
     "intellect": 0.00464,
     "spirit": 0.02122,
     "mp5": 0.05417,
-    "ranged_weapon_dps": 0.03109
+    "ranged_weapon_dps": 0.03109,
+    "spell_penetration": 0.00139
    }
   },
   "40": {
@@ -189,7 +196,8 @@
     "intellect": 0.00587,
     "spirit": 0.01956,
     "mp5": 0.0505,
-    "ranged_weapon_dps": 0.03521
+    "ranged_weapon_dps": 0.03521,
+    "spell_penetration": 0.00397
    }
   },
   "45": {
@@ -212,7 +220,8 @@
     "intellect": 0.0056,
     "spirit": 0.0152,
     "mp5": 0.04001,
-    "ranged_weapon_dps": 0.02846
+    "ranged_weapon_dps": 0.02846,
+    "spell_penetration": 0.00343
    }
   },
   "50": {
@@ -235,7 +244,8 @@
     "intellect": 0.00568,
     "spirit": 0.01356,
     "mp5": 0.03627,
-    "ranged_weapon_dps": 0.03116
+    "ranged_weapon_dps": 0.03116,
+    "spell_penetration": 0.00403
    }
   },
   "55": {
@@ -258,7 +268,8 @@
     "intellect": 0.00564,
     "spirit": 0.01184,
     "mp5": 0.03263,
-    "ranged_weapon_dps": 0.02924
+    "ranged_weapon_dps": 0.02924,
+    "spell_penetration": 0.00476
    }
   },
   "60": {
@@ -281,7 +292,8 @@
     "intellect": 0.00507,
     "spirit": 0.0095,
     "mp5": 0.02548,
-    "ranged_weapon_dps": 0.02284
+    "ranged_weapon_dps": 0.02284,
+    "spell_penetration": 0.0038
    }
   }
  },
@@ -432,5 +444,8 @@
    "mh_weapon_dps": 6.6,
    "ranged_weapon_dps": 18.6
   }
+ },
+ "added": {
+  "spell_penetration": "2026-11-13"
  }
 }

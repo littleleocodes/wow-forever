@@ -31,7 +31,8 @@
   "healing": 90,
   "oh_weapon_dps": 10,
   "block_rating": 30,
-  "block_value": 60
+  "block_value": 60,
+  "spell_penetration": 15
  },
  "unit": "seconds per kill saved per point (negative: slower)",
  "levels": {
@@ -59,7 +60,8 @@
     "healing": 0.0,
     "oh_weapon_dps": 0.0,
     "block_rating": 0.0,
-    "block_value": 0.0
+    "block_value": 0.0,
+    "spell_penetration": 0.06244
    }
   },
   "15": {
@@ -86,7 +88,8 @@
     "healing": 0.0,
     "oh_weapon_dps": 0.0,
     "block_rating": 0.0,
-    "block_value": 0.0
+    "block_value": 0.0,
+    "spell_penetration": 0.04791
    }
   },
   "20": {
@@ -113,7 +116,8 @@
     "healing": 0.0,
     "oh_weapon_dps": 0.0,
     "block_rating": 0.0,
-    "block_value": 0.0
+    "block_value": 0.0,
+    "spell_penetration": 0.04153
    }
   },
   "25": {
@@ -140,7 +144,8 @@
     "healing": 0.0,
     "oh_weapon_dps": 0.0,
     "block_rating": 0.0,
-    "block_value": 0.0
+    "block_value": 0.0,
+    "spell_penetration": 0.04656
    }
   },
   "30": {
@@ -167,7 +172,8 @@
     "healing": 0.0,
     "oh_weapon_dps": 0.0,
     "block_rating": 0.0,
-    "block_value": 0.0
+    "block_value": 0.0,
+    "spell_penetration": 0.04137
    }
   },
   "35": {
@@ -194,7 +200,8 @@
     "healing": 0.0,
     "oh_weapon_dps": 0.0,
     "block_rating": 0.0,
-    "block_value": 0.0
+    "block_value": 0.0,
+    "spell_penetration": 0.03758
    }
   },
   "40": {
@@ -221,7 +228,8 @@
     "healing": 0.0,
     "oh_weapon_dps": 0.0,
     "block_rating": 0.0,
-    "block_value": 0.0
+    "block_value": 0.0,
+    "spell_penetration": 0.03487
    }
   },
   "45": {
@@ -248,7 +256,8 @@
     "healing": 0.0,
     "oh_weapon_dps": 0.0,
     "block_rating": 0.0,
-    "block_value": 0.0
+    "block_value": 0.0,
+    "spell_penetration": 0.03051
    }
   },
   "50": {
@@ -275,7 +284,8 @@
     "healing": 0.0,
     "oh_weapon_dps": 0.0,
     "block_rating": 0.0,
-    "block_value": 0.0
+    "block_value": 0.0,
+    "spell_penetration": 0.02702
    }
   },
   "55": {
@@ -302,7 +312,8 @@
     "healing": 0.0,
     "oh_weapon_dps": 0.0,
     "block_rating": 0.0,
-    "block_value": 0.0
+    "block_value": 0.0,
+    "spell_penetration": 0.02421
    }
   },
   "60": {
@@ -329,7 +340,8 @@
     "healing": 0.0,
     "oh_weapon_dps": 0.0,
     "block_rating": 0.0,
-    "block_value": 0.0
+    "block_value": 0.0,
+    "spell_penetration": 0.0225
    }
   }
  },
@@ -457,5 +469,8 @@
    "mp5": 21,
    "mh_weapon_dps": -6.0
   }
+ },
+ "added": {
+  "spell_penetration": "2026-11-13"
  }
 }

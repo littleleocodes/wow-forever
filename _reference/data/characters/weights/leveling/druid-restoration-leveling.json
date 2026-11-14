@@ -28,7 +28,8 @@
   "spirit": 90,
   "mp5": 30,
   "spell_power": 45,
-  "healing": 90
+  "healing": 90,
+  "spell_penetration": 15
  },
  "unit": "seconds per kill saved per point (negative: slower)",
  "levels": {
@@ -53,7 +54,8 @@
     "spirit": 0.0001,
     "mp5": 0.0,
     "spell_power": 0.03198,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.01571
    }
   },
   "15": {
@@ -77,7 +79,8 @@
     "spirit": 0.00664,
     "mp5": 0.0,
     "spell_power": 0.0331,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.02173
    }
   },
   "20": {
@@ -101,7 +104,8 @@
     "spirit": 0.00379,
     "mp5": 0.0,
     "spell_power": 0.00743,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.00368
    }
   },
   "25": {
@@ -125,7 +129,8 @@
     "spirit": 0.00263,
     "mp5": 0.0,
     "spell_power": 0.00632,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.0043
    }
   },
   "30": {
@@ -149,7 +154,8 @@
     "spirit": 0.00166,
     "mp5": 0.0,
     "spell_power": 0.00678,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.00435
    }
   },
   "35": {
@@ -173,7 +179,8 @@
     "spirit": 0.00152,
     "mp5": 0.0,
     "spell_power": 0.00625,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.00408
    }
   },
   "40": {
@@ -197,7 +204,8 @@
     "spirit": 0.00209,
     "mp5": 0.00281,
     "spell_power": 0.00598,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.0035
    }
   },
   "45": {
@@ -221,7 +229,8 @@
     "spirit": 0.00864,
     "mp5": 0.0228,
     "spell_power": 0.00786,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.00462
    }
   },
   "50": {
@@ -245,7 +254,8 @@
     "spirit": 0.01313,
     "mp5": 0.03263,
     "spell_power": 0.00573,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.00167
    }
   },
   "55": {
@@ -269,7 +279,8 @@
     "spirit": 0.02145,
     "mp5": 0.04425,
     "spell_power": 0.00778,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.00512
    }
   },
   "60": {
@@ -293,10 +304,14 @@
     "spirit": 0.00875,
     "mp5": 0.02379,
     "spell_power": 0.00677,
-    "healing": 0.0
+    "healing": 0.0,
+    "spell_penetration": 0.00317
    }
   }
  },
  "note": "Negative steps (hit_rating, expertise_rating): the value per point while under the cap, measured as a step down. Ratings in rating points (the same at every level). A fight-lab model of the beta, not a measurement.",
- "provisional_order": false
+ "provisional_order": false,
+ "added": {
+  "spell_penetration": "2026-11-13"
+ }
 }

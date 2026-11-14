@@ -594,6 +594,9 @@ class Fight:
         return [x for x in self.mobs if x.hp > 0]
 
     def deal(self, spell, amount, crit=False, source="player"):
+        pb = getattr(self.p, "spell_pierce", 0.0)   # Spell Piercing's bonus damage (tables.pierce_bonus; 0 without a gear bonus)
+        if pb and source == "player" and getattr(spell, "school", None) not in (None, "physical", "holy"):
+            amount *= 1.0 + pb
         self.m.hp -= amount
         self.damage[spell.name] = self.damage.get(spell.name, 0.0) + amount
         if crit:
@@ -628,6 +631,11 @@ class Fight:
     def add_dot(self, name, total, ticks, interval, crit_chance=0.0, crit_mult=1.5):
         if total <= 0 or ticks <= 0:
             return
+        pb = getattr(self.p, "spell_pierce", 0.0)
+        if pb:   # a DoT's ticks take a tenth of Spell Piercing's bonus (issue #76); a name the spell book lacks (Ignite, a burn) takes none
+            sp = (getattr(self.mod, "book", None) or {}).get(name)
+            if getattr(sp, "school", None) not in (None, "physical", "holy"):
+                total *= 1.0 + pb / 10.0
         self.m.dots.append([name, total / ticks, ticks, self.t + interval, interval, crit_chance, crit_mult])
 
     def refresh_dot(self, name, total, ticks, interval, crit_chance=0.0, crit_mult=1.5):

@@ -49,8 +49,10 @@
     "parry_rating": -0.0003,
     "oh_weapon_dps": 0.11743,
     "block_rating": 0.0,
-    "block_value": 0.0
-   }
+    "block_value": 0.0,
+    "hit_rating_above_cap": 0.00837
+   },
+   "special_cap_rating": 50.0
   },
   "15": {
    "time_per_kill": 21.559,
@@ -71,8 +73,10 @@
     "parry_rating": 0.00213,
     "oh_weapon_dps": 0.16697,
     "block_rating": 0.0,
-    "block_value": 0.0
-   }
+    "block_value": 0.0,
+    "hit_rating_above_cap": 0.01028
+   },
+   "special_cap_rating": 50.0
   },
   "20": {
    "time_per_kill": 20.718,
@@ -93,8 +97,10 @@
     "parry_rating": -0.00089,
     "oh_weapon_dps": 0.08691,
     "block_rating": 0.0,
-    "block_value": 0.0
-   }
+    "block_value": 0.0,
+    "hit_rating_above_cap": 0.00877
+   },
+   "special_cap_rating": 50.0
   },
   "25": {
    "time_per_kill": 21.025,
@@ -115,8 +121,10 @@
     "parry_rating": -0.00081,
     "oh_weapon_dps": 0.07593,
     "block_rating": 0.0,
-    "block_value": 0.0
-   }
+    "block_value": 0.0,
+    "hit_rating_above_cap": 0.01043
+   },
+   "special_cap_rating": 50.0
   },
   "30": {
    "time_per_kill": 23.058,
@@ -137,8 +145,10 @@
     "parry_rating": -3e-05,
     "oh_weapon_dps": 0.09596,
     "block_rating": 0.0,
-    "block_value": 0.0
-   }
+    "block_value": 0.0,
+    "hit_rating_above_cap": 0.01123
+   },
+   "special_cap_rating": 50.0
   },
   "35": {
    "time_per_kill": 23.015,
@@ -159,8 +169,10 @@
     "parry_rating": -0.0001,
     "oh_weapon_dps": 0.08727,
     "block_rating": 0.0,
-    "block_value": 0.0
-   }
+    "block_value": 0.0,
+    "hit_rating_above_cap": 0.01042
+   },
+   "special_cap_rating": 50.0
   },
   "40": {
    "time_per_kill": 24.557,
@@ -181,8 +193,10 @@
     "parry_rating": 0.00119,
     "oh_weapon_dps": 0.08388,
     "block_rating": 0.0,
-    "block_value": 0.0
-   }
+    "block_value": 0.0,
+    "hit_rating_above_cap": 0.01381
+   },
+   "special_cap_rating": 50.0
   },
   "45": {
    "time_per_kill": 25.451,
@@ -203,8 +217,10 @@
     "parry_rating": -0.0001,
     "oh_weapon_dps": 0.05046,
     "block_rating": 0.0,
-    "block_value": 0.0
-   }
+    "block_value": 0.0,
+    "hit_rating_above_cap": 0.01499
+   },
+   "special_cap_rating": 50.0
   },
   "50": {
    "time_per_kill": 25.506,
@@ -225,8 +241,10 @@
     "parry_rating": -0.00126,
     "oh_weapon_dps": 0.03793,
     "block_rating": 0.0,
-    "block_value": 0.0
-   }
+    "block_value": 0.0,
+    "hit_rating_above_cap": 0.01479
+   },
+   "special_cap_rating": 50.0
   },
   "55": {
    "time_per_kill": 27.828,
@@ -247,8 +265,10 @@
     "parry_rating": 0.0009,
     "oh_weapon_dps": 0.0606,
     "block_rating": 0.0,
-    "block_value": 0.0
-   }
+    "block_value": 0.0,
+    "hit_rating_above_cap": 0.01404
+   },
+   "special_cap_rating": 50.0
   },
   "60": {
    "time_per_kill": 27.595,
@@ -269,11 +289,16 @@
     "parry_rating": -0.00064,
     "oh_weapon_dps": 0.02879,
     "block_rating": 0.0,
-    "block_value": 0.0
-   }
+    "block_value": 0.0,
+    "hit_rating_above_cap": 0.01454
+   },
+   "special_cap_rating": 50.0
   }
  },
  "note": "Negative steps (hit_rating, expertise_rating): the value per point while under the cap, measured as a step down. Ratings in rating points (the same at every level). A fight-lab model of the beta, not a measurement.",
  "provisional_order": false,
- "base": "standard"
+ "base": "standard",
+ "added": {
+  "hit_rating_above_cap": "2026-11-13"
+ }
 }

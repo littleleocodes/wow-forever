@@ -27,7 +27,8 @@
   "intellect": 90,
   "spirit": 90,
   "mp5": 30,
-  "ranged_weapon_dps": 10
+  "ranged_weapon_dps": 10,
+  "spell_penetration": 15
  },
  "unit": "seconds per kill saved per point (negative: slower)",
  "levels": {
@@ -51,8 +52,11 @@
     "intellect": 0.0,
     "spirit": 0.0,
     "mp5": 0.0,
-    "ranged_weapon_dps": 0.07779
-   }
+    "ranged_weapon_dps": 0.07779,
+    "spell_penetration": 0.00047,
+    "hit_rating_above_cap": 0.00183
+   },
+   "special_cap_rating": 50.0
   },
   "15": {
    "time_per_kill": 16.351,
@@ -74,8 +78,11 @@
     "intellect": 0.0,
     "spirit": 0.0,
     "mp5": 0.0,
-    "ranged_weapon_dps": 0.07079
-   }
+    "ranged_weapon_dps": 0.07079,
+    "spell_penetration": 0.00054,
+    "hit_rating_above_cap": 0.00299
+   },
+   "special_cap_rating": 50.0
   },
   "20": {
    "time_per_kill": 15.918,
@@ -97,8 +104,11 @@
     "intellect": 0.0,
     "spirit": 0.0,
     "mp5": 0.0,
-    "ranged_weapon_dps": 0.04707
-   }
+    "ranged_weapon_dps": 0.04707,
+    "spell_penetration": 0.00084,
+    "hit_rating_above_cap": 0.00273
+   },
+   "special_cap_rating": 40.0
   },
   "25": {
    "time_per_kill": 17.498,
@@ -120,8 +130,11 @@
     "intellect": 0.0,
     "spirit": 0.0,
     "mp5": 0.0,
-    "ranged_weapon_dps": 0.04265
-   }
+    "ranged_weapon_dps": 0.04265,
+    "spell_penetration": 0.00044,
+    "hit_rating_above_cap": 0.00341
+   },
+   "special_cap_rating": 20.0
   },
   "30": {
    "time_per_kill": 18.608,
@@ -143,8 +156,11 @@
     "intellect": -0.00029,
     "spirit": 0.00208,
     "mp5": 0.00625,
-    "ranged_weapon_dps": 0.02553
-   }
+    "ranged_weapon_dps": 0.02553,
+    "spell_penetration": -0.00064,
+    "hit_rating_above_cap": 0.00422
+   },
+   "special_cap_rating": 20.0
   },
   "35": {
    "time_per_kill": 19.446,
@@ -166,8 +182,11 @@
     "intellect": 0.00054,
     "spirit": 0.00673,
     "mp5": 0.02019,
-    "ranged_weapon_dps": 0.01441
-   }
+    "ranged_weapon_dps": 0.01441,
+    "spell_penetration": 0.00028,
+    "hit_rating_above_cap": 0.0023
+   },
+   "special_cap_rating": 20.0
   },
   "40": {
    "time_per_kill": 21.341,
@@ -189,8 +208,11 @@
     "intellect": 0.00034,
     "spirit": 0.00669,
     "mp5": 0.02014,
-    "ranged_weapon_dps": 0.01176
-   }
+    "ranged_weapon_dps": 0.01176,
+    "spell_penetration": 0.00032,
+    "hit_rating_above_cap": 0.00354
+   },
+   "special_cap_rating": 20.0
   },
   "45": {
    "time_per_kill": 22.016,
@@ -212,8 +234,11 @@
     "intellect": 0.00175,
     "spirit": 0.00698,
     "mp5": 0.02098,
-    "ranged_weapon_dps": 0.01292
-   }
+    "ranged_weapon_dps": 0.01292,
+    "spell_penetration": 0.00097,
+    "hit_rating_above_cap": 0.00405
+   },
+   "special_cap_rating": 20.0
   },
   "50": {
    "time_per_kill": 22.362,
@@ -235,8 +260,11 @@
     "intellect": 0.004,
     "spirit": 0.01328,
     "mp5": 0.04015,
-    "ranged_weapon_dps": 0.0096
-   }
+    "ranged_weapon_dps": 0.0096,
+    "spell_penetration": 0.00339,
+    "hit_rating_above_cap": 0.00347
+   },
+   "special_cap_rating": 20.0
   },
   "55": {
    "time_per_kill": 24.058,
@@ -258,8 +286,11 @@
     "intellect": 0.00493,
     "spirit": 0.01617,
     "mp5": 0.04734,
-    "ranged_weapon_dps": 0.01229
-   }
+    "ranged_weapon_dps": 0.01229,
+    "spell_penetration": 0.0007,
+    "hit_rating_above_cap": 0.00378
+   },
+   "special_cap_rating": 20.0
   },
   "60": {
    "time_per_kill": 23.783,
@@ -281,10 +312,17 @@
     "intellect": 0.00225,
     "spirit": 0.01645,
     "mp5": 0.0373,
-    "ranged_weapon_dps": 0.00169
-   }
+    "ranged_weapon_dps": 0.00169,
+    "spell_penetration": 0.00095,
+    "hit_rating_above_cap": 0.00079
+   },
+   "special_cap_rating": 20.0
   }
  },
  "note": "Negative steps (hit_rating, expertise_rating): the value per point while under the cap, measured as a step down. Ratings in rating points (the same at every level). A fight-lab model of the beta, not a measurement.",
- "provisional_order": false
+ "provisional_order": false,
+ "added": {
+  "spell_penetration": "2026-11-13",
+  "hit_rating_above_cap": "2026-11-13"
+ }
 }

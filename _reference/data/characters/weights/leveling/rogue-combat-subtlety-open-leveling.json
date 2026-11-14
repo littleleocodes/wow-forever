@@ -24,7 +24,8 @@
   "defense_rating": 60,
   "dodge_rating": 72,
   "parry_rating": 90,
-  "oh_weapon_dps": 10
+  "oh_weapon_dps": 10,
+  "spell_penetration": 15
  },
  "unit": "seconds per kill saved per point (negative: slower)",
  "levels": {
@@ -45,8 +46,11 @@
     "defense_rating": 0.00047,
     "dodge_rating": 0.00036,
     "parry_rating": 0.00029,
-    "oh_weapon_dps": 0.15027
-   }
+    "oh_weapon_dps": 0.15027,
+    "spell_penetration": 0.0,
+    "hit_rating_above_cap": 0.00743
+   },
+   "special_cap_rating": 50.0
   },
   "15": {
    "time_per_kill": 20.119,
@@ -65,8 +69,11 @@
     "defense_rating": 0.00551,
     "dodge_rating": 0.00332,
     "parry_rating": 0.00248,
-    "oh_weapon_dps": 0.11412
-   }
+    "oh_weapon_dps": 0.11412,
+    "spell_penetration": 0.0,
+    "hit_rating_above_cap": 0.0072
+   },
+   "special_cap_rating": 50.0
   },
   "20": {
    "time_per_kill": 16.345,
@@ -85,8 +92,11 @@
     "defense_rating": 0.00077,
     "dodge_rating": 0.0006,
     "parry_rating": 0.00053,
-    "oh_weapon_dps": 0.07279
-   }
+    "oh_weapon_dps": 0.07279,
+    "spell_penetration": 0.00387,
+    "hit_rating_above_cap": 0.00602
+   },
+   "special_cap_rating": 50.0
   },
   "25": {
    "time_per_kill": 18.173,
@@ -105,8 +115,11 @@
     "defense_rating": 0.00253,
     "dodge_rating": 0.00232,
     "parry_rating": 0.00132,
-    "oh_weapon_dps": 0.07406
-   }
+    "oh_weapon_dps": 0.07406,
+    "spell_penetration": 0.00378,
+    "hit_rating_above_cap": 0.00628
+   },
+   "special_cap_rating": 50.0
   },
   "30": {
    "time_per_kill": 19.478,
@@ -125,8 +138,11 @@
     "defense_rating": 0.004,
     "dodge_rating": 0.0028,
     "parry_rating": 0.0022,
-    "oh_weapon_dps": 0.05889
-   }
+    "oh_weapon_dps": 0.05889,
+    "spell_penetration": 0.00211,
+    "hit_rating_above_cap": 0.00745
+   },
+   "special_cap_rating": 50.0
   },
   "35": {
    "time_per_kill": 20.633,
@@ -145,8 +161,11 @@
     "defense_rating": 0.00398,
     "dodge_rating": 0.00315,
     "parry_rating": 0.00154,
-    "oh_weapon_dps": 0.05074
-   }
+    "oh_weapon_dps": 0.05074,
+    "spell_penetration": 0.00206,
+    "hit_rating_above_cap": 0.00705
+   },
+   "special_cap_rating": 50.0
   },
   "40": {
    "time_per_kill": 23.68,
@@ -165,8 +184,11 @@
     "defense_rating": 0.0058,
     "dodge_rating": 0.00419,
     "parry_rating": 0.00231,
-    "oh_weapon_dps": 0.0461
-   }
+    "oh_weapon_dps": 0.0461,
+    "spell_penetration": 0.00335,
+    "hit_rating_above_cap": 0.00808
+   },
+   "special_cap_rating": 20.0
   },
   "45": {
    "time_per_kill": 24.011,
@@ -185,8 +207,11 @@
     "defense_rating": 0.00489,
     "dodge_rating": 0.00343,
     "parry_rating": 0.00249,
-    "oh_weapon_dps": 0.0408
-   }
+    "oh_weapon_dps": 0.0408,
+    "spell_penetration": 0.00365,
+    "hit_rating_above_cap": 0.00862
+   },
+   "special_cap_rating": 20.0
   },
   "50": {
    "time_per_kill": 21.836,
@@ -205,8 +230,11 @@
     "defense_rating": 0.00454,
     "dodge_rating": 0.00335,
     "parry_rating": 0.00208,
-    "oh_weapon_dps": 0.02753
-   }
+    "oh_weapon_dps": 0.02753,
+    "spell_penetration": 0.00153,
+    "hit_rating_above_cap": 0.0056
+   },
+   "special_cap_rating": 20.0
   },
   "55": {
    "time_per_kill": 21.512,
@@ -225,8 +253,11 @@
     "defense_rating": 0.00423,
     "dodge_rating": 0.00352,
     "parry_rating": 0.00229,
-    "oh_weapon_dps": 0.03553
-   }
+    "oh_weapon_dps": 0.03553,
+    "spell_penetration": 0.0033,
+    "hit_rating_above_cap": 0.00664
+   },
+   "special_cap_rating": 20.0
   },
   "60": {
    "time_per_kill": 20.332,
@@ -245,11 +276,18 @@
     "defense_rating": 0.00469,
     "dodge_rating": 0.00287,
     "parry_rating": 0.0018,
-    "oh_weapon_dps": 0.02103
-   }
+    "oh_weapon_dps": 0.02103,
+    "spell_penetration": -0.00015,
+    "hit_rating_above_cap": 0.00546
+   },
+   "special_cap_rating": 20.0
   }
  },
  "note": "Negative steps (hit_rating, expertise_rating): the value per point while under the cap, measured as a step down. Ratings in rating points (the same at every level). A fight-lab model of the beta, not a measurement.",
  "provisional_order": false,
- "base": "standard"
+ "base": "standard",
+ "added": {
+  "spell_penetration": "2026-11-13",
+  "hit_rating_above_cap": "2026-11-13"
+ }
 }

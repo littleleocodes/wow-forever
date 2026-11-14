@@ -461,6 +461,21 @@ RATING_PER_PCT = {"crit_rating": 14.0, "hit_rating": 10.0, "haste_rating": 10.0,
 DEFENSE_PER_POINT = 0.0004   # 0.04% per defense skill point: miss, dodge, parry and block up, crits taken down (the simulator's constant)
 SKILL_PER_POINT = 0.001      # weapon skill above the mob's defense: 0.1% less miss, dodge and parry per point (Classic, gap under 10)
 SKILL_CRIT_PER_POINT = 0.0004
+# Spell Piercing (2026-11-13; wowsims/forever issue #76, 138 Forever combat logs, and the simulator's sim/core/spell_resistances.go): piercing
+# past the target's resistance is bonus damage, on average P / (P + K) of the spell's damage with K = 8 x the caster's level + 19 (the logs'
+# fit over levels 20-51; the simulator's since master 2026-11-13, 9L at our pin ff9babba5); a DoT's ticks take a tenth, channels the full
+# bonus; Holy and physical damage take none. Mobs of
+# your level have no resistance, so all of it is bonus. GEAR_BONUS "spell_penetration"; 0 = every result bit-identical.
+PIERCE_K_PER_LEVEL, PIERCE_K_BASE = 8.0, 19.0
+PIERCE_ON = __import__("os").environ.get("WOW_FL_PIERCE", "1") != "0"   # WOW_FL_PIERCE=0: no piercing bonus (the model before 2026-11-13)
+
+
+def pierce_bonus(level, pts=None):
+    """The average bonus damage of `pts` Spell Piercing (GEAR_BONUS's when None) at a caster level."""
+    pts = GEAR_BONUS.get("spell_penetration", 0.0) if pts is None else pts
+    return pts / (pts + PIERCE_K_PER_LEVEL * level + PIERCE_K_BASE) if pts > 0 and PIERCE_ON else 0.0
+
+
 HASTE_GCD = False   # spell haste shortens the global cooldown (to 1.0 s)? Open: the simulator says yes, the client's Nature's Grace (its own
                     # global-cooldown modifier next to its haste) says no (_reference/forever-stats.md row 7). Not wired yet: a sensitivity.
 
@@ -481,6 +496,8 @@ def apply_gear_ratings(p, mod):
     p.spell_hit += hit
     p.expertise += rating_pct("expertise_rating")
     p.weapon_skill += GEAR_BONUS.get("weapon_skill", 0.0)
+    p.spell_pierce_pts = getattr(p, "spell_pierce_pts", 0.0) + GEAR_BONUS.get("spell_penetration", 0.0)   # talents' (Arcane Subtlety) + gear
+    p.spell_pierce = pierce_bonus(p.level, p.spell_pierce_pts)
     d = GEAR_BONUS.get("defense_rating", 0.0) * DEFENSE_PER_POINT
     p.mob_miss += d
     p.crit_taken_red += d
