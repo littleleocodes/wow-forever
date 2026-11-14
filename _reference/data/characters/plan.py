@@ -796,8 +796,8 @@ def budget_walk(events, cfg, at, lv):
     PLANNED.clear()
     if GOLD is None:
         return set()
-    train, need = training_by_level(cfg["class"]), needed_spells(cfg)
-    tr = lambda L: sum(c for n, c in train.get(L, []) if n in need)
+    train = training_by_level(cfg["class"])
+    tr = lambda L: sum(c for n, c in train.get(L, []) if n in needed_at(cfg, L))
     owe = owed_training(cfg, lv)
     budget = max(0.0, GOLD - tr(lv + 1) - tr(lv + 2) - (sum(x[3] for x in owe[0]) if owe else 0))
     pending = [e for e in events if price_of(e)]
@@ -1868,7 +1868,7 @@ def owed_training(cfg, lv):
     book may list the highest rank only); a spell Forever's data does not rank is known when the book has it at all."""
     if not BOOK:
         return None
-    ranks, need, out = spell_ranks(cfg["class"]), needed_spells(cfg), ([], [])
+    ranks, need, out = spell_ranks(cfg["class"]), needed_at(cfg, lv), ([], [])
     for L, sid, name, cost in sorted(training_rows(cfg["class"])):
         if L > lv or sid in BOOK["ids"]:
             continue
@@ -1883,6 +1883,40 @@ def owed_training(cfg, lv):
 
 def rank_label(name, r):
     return f"{name} (rank {r})" if r else name
+
+
+NEED_AT = {}   # level -> the spells needed at that level or later (needed_at)
+
+
+def needed_at(cfg, L):
+    """The spells the character's rotation and kit use at level L or later (2026-11-14): the guide's bold names in the stage active at L
+    and every later stage, the spells its keys hold at L or later, its general notes (intro, between fights, other) and the class's
+    essentials. A spell the guide drops is optional from then on: a frost mage's Fireball after level 4, Flamestrike after 19 (the first
+    spellbook read had put their ranks in the training "you need")."""
+    if not NEED_AT:
+        x = guide_of(cfg)
+        bold = lambda v: set(re.findall(r"\*\*([^*]+)\*\*", json.dumps(v)))
+        always = bold({k: x.get(k) for k in ("intro", "between", "other")}) | ESSENTIALS.get(cfg["class"], set())
+        spans = []
+        stages = sorted(x.get("stages") or [], key=lambda s: s["from"])
+        for i, st in enumerate(stages):
+            spans.append((stages[i + 1]["from"] - 1 if i + 1 < len(stages) else 60, bold(st)))
+        keys = x.get("keys") or {}
+        for slot in [s for bar in keys.get("bars") or [] for s in bar.get("slots") or []] + list(keys.get("slots") or []):
+            binds = sorted(slot.get("binds") or [], key=lambda b: b["from"])
+            for i, b in enumerate(binds):
+                spans.append((binds[i + 1]["from"] - 1 if i + 1 < len(binds) else 60, ({b["spell"]} if b.get("spell") else set()) | bold(b)))
+        for lv in range(1, 61):
+            NEED_AT[lv] = always.union(*[names for end, names in spans if end >= lv])
+    return NEED_AT[min(max(int(L), 1), 60)]
+
+
+def guide_of(cfg):
+    """The character's by-level guide: its own (Tara the group tank, 2026-11-09) or its spec's."""
+    if cfg.get("guide") and (DATA.parent.parent / cfg["guide"]).exists():
+        return json.load(open(DATA.parent.parent / cfg["guide"], encoding="utf-8"))
+    g = json.load(open(DATA / "level-guides" / f"{cfg['class']}.json", encoding="utf-8"))
+    return next((x for x in g["guides"] if x["spec"] == cfg["spec"]), {})
 
 
 def needed_spells(cfg):
@@ -1951,7 +1985,7 @@ def gold_plan(cfg, snap, at, lv):
     done = len((snap.get("quests-completed") or {}).get("quests") or [])
     qpl = done / max(1, lv - 1)
     train = training_by_level(cfg["class"])
-    need = needed_spells(cfg)
+    need = lambda L: needed_at(cfg, L)
     race = snap["profile"]["race"]["name"]
     reps = {r["faction"]["name"]: r["standing"]["name"] for r in (snap.get("reputations") or {}).get("reputations") or []}
     rep = reps.get(RACE_FACTION.get(race, ""), "Neutral")
@@ -1965,21 +1999,21 @@ def gold_plan(cfg, snap, at, lv):
         gear[L] = gear.get(L, 0) + c
     for L in range(lv, 60):
         inc = income_per_level(L, qpl)
-        nt = sum(c for n, c in train.get(L + 1, []) if n in need)
-        ot = sum(c for n, c in train.get(L + 1, []) if n not in need)
+        nt = sum(c for n, c in train.get(L + 1, []) if n in need(L + 1))
+        ot = sum(c for n, c in train.get(L + 1, []) if n not in need(L + 1))
         saved += inc - nt - gear.get(L, 0)
         if L + 1 >= MOUNT["level"] and mount_at is None and saved >= mount:
             mount_at = L + 1
-        rows.append((L, inc, nt, ot, [n for n, c in train.get(L + 1, []) if n in need]))
+        rows.append((L, inc, nt, ot, [n for n, c in train.get(L + 1, []) if n in need(L + 1)]))
     reserve = sum(r[2] for r in rows[:2]) + owe_cost
     spend = None if GOLD is None else max(0, GOLD - reserve)
-    opt = {L + 1: [n for n, c in train.get(L + 1, []) if n not in need] for L in range(lv - 1, 60)}
+    opt = {L + 1: [n for n, c in train.get(L + 1, []) if n not in need(L + 1)] for L in range(lv - 1, 60)}
     CTX["training"] = ([{"level": lv, "need": [rank_label(n, r) for L, n, r, c in owe[0]], "cost": owe_cost,
                          "optional": [rank_label(n, r) for L, n, r, c in owe[1]], "optional_cost": sum(x[3] for x in owe[1]),
                          "book": BOOK["when"]}] if owe is not None else
-                       [{"level": lv, "need": [n for n, c in train.get(lv, []) if n in need],
-                        "cost": sum(c for n, c in train.get(lv, []) if n in need), "optional": opt.get(lv, []),
-                        "optional_cost": sum(c for n, c in train.get(lv, []) if n not in need)}]) + \
+                       [{"level": lv, "need": [n for n, c in train.get(lv, []) if n in need(lv)],
+                        "cost": sum(c for n, c in train.get(lv, []) if n in need(lv)), "optional": opt.get(lv, []),
+                        "optional_cost": sum(c for n, c in train.get(lv, []) if n not in need(lv))}]) + \
                       [{"level": L + 1, "need": names, "cost": nt, "optional": opt.get(L + 1, []), "optional_cost": ot}
                        for L, inc, nt, ot, names in rows[:8] if nt or ot]
     by40 = (GOLD or 0) - owe_cost + sum(r[1] - r[2] - gear.get(r[0], 0) for r in rows if r[0] < MOUNT["level"])
@@ -2319,8 +2353,8 @@ def trip(cfg, snap, at, lv):
     in hours of play), from the rest of this level and the play time of the levels between (minutes_per_level)."""
     if cfg.get("hours_out"):
         return float(cfg["hours_out"]) * 60, None
-    train, need = training_by_level(cfg["class"]), needed_spells(cfg)
-    nxt = next((L for L in range(lv + 1, 61) if any(n in need for n, c in train.get(L, []))), lv + 2)
+    train = training_by_level(cfg["class"])
+    nxt = next((L for L in range(lv + 1, 61) if any(n in needed_at(cfg, L) for n, c in train.get(L, []))), lv + 2)
     left = 1 - (snap["profile"].get("experience") or 0) / max(1, XP.get(lv) or kills_per_level(lv) and XP.get(lv, 1) or 1)
     return max(0.0, left) * minutes_per_level(lv, at) + sum(minutes_per_level(L, at) for L in range(lv + 1, nxt)), nxt
 

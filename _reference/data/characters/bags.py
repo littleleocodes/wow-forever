@@ -94,7 +94,8 @@ def spellbook(cfg, name):
         block = _block(pathlib.Path(f).read_text(encoding="utf-8", errors="replace"), "spellbook", name)
         if not block:
             continue
-        top = block.split('["spells"] = {')[0]
+        k = block.find('["spells"] = {')   # the top fields sit before or after the spells table (WoW writes keys in hash order)
+        top = block if k < 0 else block[:k] + block[_close(block, k + len('["spells"] = {')):]
         t = int((re.search(r'\["t"\] = (\d+)', top) or [0, 0])[1])
         lv = re.search(r'\["level"\] = (\d+)', top)
         spells = [e for e in _entries(block) if e.get("name")]
