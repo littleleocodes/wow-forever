@@ -79,29 +79,44 @@ the simulator's spell data for Forever, so the second line fires at once; if it 
 /cast Frostbolt
 ```
 
-Eat and drink in one click, on the side bar. Food and drink share no cooldown in the Classic client, so the meal starts right after the drink.
+Eat and drink in one click, on the side bar. The macro holds every rank, best first, so it never needs editing: it drinks the best
+conjured water in your bags and eats the best conjured food. In Forever's client data (build 1.60.1.70888, ItemEffect and SpellCooldowns)
+every conjured water shares a 1-second cooldown and so does every conjured food. The first water you own goes off and the water lines
+after it fail without using anything; the food lines work the same way. Water and food have separate cooldowns, and neither is on the
+global cooldown, so one press starts both.
 
 ```
-#showtooltip
-/use Conjured Water
-/use Conjured Muffin
+/use item:8079
+/use item:8078
+/use item:8077
+/use item:3772
+/use item:2136
+/use item:2288
+/use item:5350
+/use item:22895
+/use item:8076
+/use item:8075
+/use item:1487
+/use item:1114
+/use item:1113
+/use item:5349
 ```
 
-The names are the rank you currently conjure. The water rank comes at the round level and the food rank two levels later: edit the water
-line at the round level and the food line two levels after. Keep one rank of each in the macro (a line for an older water you still carry
-would restart the drink with the weaker rank).
+The numbers are the items' ids: the names do not fit in a macro's 255 characters (this one is 210). Highest rank first:
 
-| Level | Water line | Food line |
+| Conjure rank (water / food level) | Water | Food |
 |---|---|---|
-| 4 | Conjured Water | Conjured Muffin (from 6) |
-| 10 / 12 | Conjured Fresh Water | Conjured Bread |
-| 20 / 22 | Conjured Purified Water | Conjured Rye |
-| 30 / 32 | Conjured Spring Water | Conjured Pumpernickel |
-| 40 / 42 | Conjured Mineral Water | Conjured Sourdough |
-| 50 / 52 | Conjured Sparkling Water | Conjured Sweet Roll |
-| 60 | Conjured Crystal Water | Conjured Cinnamon Roll |
+| 7 (60) | 8079 Conjured Crystal Water | 22895 Conjured Cinnamon Roll |
+| 6 (50 / 52) | 8078 Conjured Sparkling Water | 8076 Conjured Sweet Roll |
+| 5 (40 / 42) | 8077 Conjured Mineral Water | 8075 Conjured Sourdough |
+| 4 (30 / 32) | 3772 Conjured Spring Water | 1487 Conjured Pumpernickel |
+| 3 (20 / 22) | 2136 Conjured Purified Water | 1114 Conjured Rye |
+| 2 (10 / 12) | 2288 Conjured Fresh Water | 1113 Conjured Bread |
+| 1 (4 / 6) | 5350 Conjured Water | 5349 Conjured Muffin |
 
-These are Classic's item names. If a line does nothing, hover the item in your bag and copy its exact name into the macro.
+Give it a water icon, not the question mark: the question mark would show the first line's item, Crystal Water, until you have it. Older
+water stays in your bags while you carry the new rank (conjured items vanish after 15 minutes logged out), and water a higher-level mage
+gives you that you are too low to drink is skipped. Not tested in game yet: if one press ever uses two waters, go back to one line of each.
 
 Sources for the Deadlock defaults: [Shacknews, Deadlock controls and keybindings](https://www.shacknews.com/article/141162/deadlock-pc-controls-keybindings),
 [Deadlock wiki, Parries](https://deadlock.wiki/Parries), [Deadlock wiki, Melee Attacks](https://deadlock.wiki/Melee_Attacks).
