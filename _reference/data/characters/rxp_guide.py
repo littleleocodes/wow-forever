@@ -13,11 +13,16 @@ functions.dungeon/enabledungeon): class, race, faction, gender and level filters
 XP rate (1), solo-self-found (off) and loremaster (off) switches; group quests by the character's RestedXP profile; dungeon steps by the
 dungeons ticked in that profile, except the dungeons a guide group switches on itself (.enabledungeon), which are on for the whole group.
 """
+import hashlib
 import json
 import pathlib
 import re
 
 HERE = pathlib.Path(__file__).resolve().parent
+# The user's combined readable files (2026-11-13: All_RestedXP_Guides_READABLE.txt, Alliance_Guides_READABLE.txt,
+# Alliance_Dungeon_Guide_READABLE.txt) hold one guide per "===== group|subgroup|name|n =====" block, and the per-guide files under
+# Individual_Guides/ repeat them; every guide comes in each version the add-on has imported (#version 24 twice, 25).
+SEP = re.compile(r"^===== .+ =====[ \t]*\r?$", re.M)
 QUEST_GUIDES = "RXP Forever Dungeon Quests (A)"   # RestedXP's per-dungeon quest guides (Alliance)
 # RestedXP's dungeon tags (RXPGuides DB/forever/db.lua dungeonList) -> the planner's dungeon names (item_pool.DUNGEONS; Blizzard's area
 # names for Forever's own dungeons)
@@ -67,7 +72,8 @@ def blocks(path):
     """The guide texts in a file: a readable guide .txt is one; the add-on's own .lua files hold one per RXPGuides.RegisterGuide([[...]])."""
     text = path.read_text(encoding="utf-8", errors="replace")
     if path.suffix.lower() != ".lua":
-        return [text]
+        parts = [x for x in SEP.split(text) if "#name" in x]   # a combined file: one text per block
+        return parts or [text]
     return [m.group(2) for m in re.finditer(r"RegisterGuide\(\s*(?:\"[^\"]*\"\s*,\s*)?\[(=*)\[(.*?)\]\1\]", text, re.S)]
 
 
@@ -117,11 +123,57 @@ def parse_file(text):
     return head, steps
 
 
-def load(roots, group):
-    """{section name: [{"head", "steps"}, ...]} of every guide text whose #group is `group`: the readable .txt files under the user's folder
-    and the add-on's own .lua guides (its free sections of the same group: the Alliance dungeon guide's 11-21, 2026-11-10). A name can
-    have several sections, one per race filter (the 11-16 opening)."""
-    out = {}
+def a32(s):
+    """The add-on's Adler-32 (GuideLoader addon.A32): a guide key's hash, the base of its step ids."""
+    d = s.encode("utf-8")
+    n, a, b, i = len(d), 1, 0, 0
+    while i <= n - 16:
+        x = d[i:i + 16]
+        b = (b + 16 * a + sum((16 - k) * x[k] for k in range(16))) % 65521
+        a = (a + sum(x)) % 65521
+        i += 16
+    while i < n:
+        a = (a + d[i]) % 65521
+        b = (b + a) % 65521
+        i += 1
+    return (b * 65536 + a) & 0xffffffff
+
+
+def affix(name):
+    """The name the add-on shows and saves: a one-digit first level gets a zero ("1-6 Northshire" -> "01-06 Northshire")."""
+    return re.sub(r"^(\d)-(\d\d?)(?=\D)", lambda m: f"{int(m.group(1)):02d}-{int(m.group(2)):02d}", name.strip())
+
+
+def step_ids(text, head, builtin):
+    """RestedXP's id of each step (GuideLoader.ParseGuide: the step line's number among the text's non-empty lines plus addon.A32 of the
+    guide's key), in parse_file's step order; None when the two disagree. An imported guide (the readable files are the add-on's imported
+    cache: its first line is the cache's "--" stamp) has the key group|subgroup|name and is counted as it is; a guide the add-on ships
+    (Guides/forever/*.lua) has the key group||name and loses its "--" comments first."""
+    if builtin:
+        text = re.sub(r"--[^\r\n]*[\r\n]+", "\n", text)
+        key = f"{head['group']}||{head['name'].strip()}"
+    else:
+        key = f"{head['group']}|{head.get('subgroup') or ''}|{head['name'].strip()}"
+    gid, ids = a32(key), []
+    for i, line in enumerate(x for x in re.split(r"[\r\n]+", text) if x):
+        s = line.strip()
+        if not s.startswith("--") and s.split("<<", 1)[0].strip() == "step":
+            ids.append(gid + i + 1)
+    return ids
+
+
+_CATALOG = {}
+
+
+def catalog(roots):
+    """Every distinct guide text on this PC, parsed once per run: [{"head", "steps", "ids", "builtin", "version", "digest", "files"}].
+    The same guide in several files (the combined files, Individual_Guides/, the add-on's own) counts once: texts equal apart from
+    whitespace and comment lines are one entry (2026-11-13, user: "Avoid double-counting guide entries that appear in multiple combined
+    files"). Nothing is written to disk."""
+    k = tuple(roots)
+    if k in _CATALOG:
+        return _CATALOG[k]
+    out, seen = [], {}
     for root, pattern in roots:
         if not pathlib.Path(root).is_dir():
             continue
@@ -130,12 +182,129 @@ def load(roots, group):
                 texts = blocks(p)
             except OSError:
                 continue
+            builtin = p.suffix.lower() == ".lua"
             for t in texts:
-                if f"#group {group}\n" not in t[:800].replace("\r", ""):
+                if "#group" not in t or "#name" not in t:
+                    continue
+                norm = "\n".join(x.strip() for x in t.replace("\r", "").split("\n") if x.strip() and not x.strip().startswith("--"))
+                dg = hashlib.md5(norm.encode("utf-8")).hexdigest()
+                if (dg, builtin) in seen:
+                    seen[(dg, builtin)]["files"].add(p.name)
                     continue
                 head, steps = parse_file(t)
-                if head.get("name"):
-                    out.setdefault(head["name"].strip(), []).append({"head": head, "steps": steps})
+                if not head.get("name") or not head.get("group"):
+                    continue
+                ids = step_ids(t, head, builtin)
+                e = {"head": head, "steps": steps, "ids": ids if len(ids) == len(steps) else None, "builtin": builtin, "digest": dg,
+                     "version": int(head["version"]) if str(head.get("version", "")).isdigit() else 0, "files": {p.name}}
+                seen[(dg, builtin)] = e
+                out.append(e)
+    _CATALOG[k] = out
+    return out
+
+
+def live(copies, saved):
+    """The copy of a guide the add-on runs: the one holding a step id the character's saved progress names (exact), else the highest
+    #version (then the most steps). The add-on keeps one copy per guide key and loads its imported copies in no fixed order, so without a
+    saved step id the newest version is a guess, and the record says so."""
+    hit = [c for c in copies if c["ids"] and saved & set(c["ids"])]
+    pool = hit or copies
+    best = max(pool, key=lambda c: (c["version"], len(c["steps"])))
+    rivals = [c for c in copies if c is not best and c["version"] == best["version"] and len(c["steps"]) != len(best["steps"])]
+    return dict(best, by_id=bool(hit), versions=sorted({c["version"] for c in copies}), ambiguous=not hit and bool(rivals))
+
+
+def load(roots, group, progress=None):
+    """{section name: [{"head", "steps", "ids", "by_id", "versions", "ambiguous", ...}, ...]} of every guide whose #group is `group`: the
+    readable files under the user's folder and the add-on's own .lua guides (its free sections of the same group: the Alliance dungeon
+    guide's 11-21, 2026-11-10), one live copy per name and race filter (a name can have several sections, one per race filter: the 11-16
+    opening). Names as the add-on saves them (affix). `progress`: the character's saved {guide key: (step, step id)} (rxp.route)."""
+    saved = {}
+    for key, (_, sid) in (progress or {}).items():
+        g, _, n = key.partition("|")[0], None, key.split("|")[-1]
+        saved.setdefault((g, affix(n)), set()).add(sid)
+    by = {}
+    for c in catalog(roots):
+        if c["head"]["group"] != group:
+            continue
+        by.setdefault((affix(c["head"]["name"]), c["head"].get("filter", "")), []).append(c)
+    out = {}
+    for (name, _), copies in by.items():
+        out.setdefault(name, []).append(live(copies, saved.get((group, name), set())))
+    return out
+
+
+def chain(route, mine):
+    """The route's sections from the add-on's current guide on, each guide's "next" in its own text first (the guides the add-on ships
+    have no imported metadata: Tara's 20-21 guide had sent the route to the group's lowest imported section, 2026-11-13), else in the saved
+    metadata; [{"name", "lo", "hi", "zones"}]."""
+    import rxp
+    out, name, seen = [], route.get("current"), set()
+    while name and name not in seen:
+        seen.add(name)
+        m = rxp.SECTION.match(name)
+        if not m:
+            break
+        out.append({"name": name, "lo": int(m.group(1)), "hi": int(m.group(2)), "zones": rxp.zones(name)})
+        sec = mine.get(name)
+        nx = str(sec["head"].get("next") or "") if sec else ""
+        nx = affix(nx.split(";")[0].strip().split("\\")[-1].strip()) if nx else (route.get("meta") or {}).get(name)
+        name = nx or None
+    return out
+
+
+def check(route, mine, who, maps):
+    """Whether the guide text on this PC is the route the add-on runs (2026-11-13, user: "verify that the current RestedXP guide section and
+    step match the extracted content ... when guide data is missing or mismatched, show a warning"): {"ok", "problems": [text],
+    "current": {"found", "by_id", "step", "window", "versions", "ops", "npc", "zone"}, "missing": [(lo, hi)], "ambiguous": [(lo, hi)]}.
+    The step is matched by the add-on's own step id (exact: a copy and a step), else by its saved step number (unverified)."""
+    out = {"ok": True, "mismatch": False, "problems": [], "current": {}, "missing": [], "ambiguous": []}
+    cur = route.get("current")
+    sec = mine.get(cur)
+    lv = lambda n: tuple(int(x) for x in (re.match(r"(\d+)-(\d+)", n) or re.match(r"(0)-(0)", "0-0")).groups())
+    if not sec:
+        out["ok"], out["mismatch"] = False, True
+        out["problems"].append(f"the guide part you are on in RestedXP (levels {lv(cur)[0]}-{lv(cur)[1]}) is not in the guide text on this PC")
+    else:
+        steps = [s for s in sec["steps"] if applies(s["filter"], who, lv(cur)[0])]
+        ids = [i for s, i in zip(sec["steps"], sec["ids"] or [None] * len(sec["steps"])) if applies(s["filter"], who, lv(cur)[0])]
+        c = out["current"] = {"found": True, "by_id": False, "versions": sec.get("versions"), "version": sec["head"].get("version")}
+        sid = route.get("step_id")
+        if sid and sec["ids"] and sid in ids:
+            k = ids.index(sid)
+            c.update(by_id=True, index=k + 1)
+        elif sid and sec["ids"] and route.get("saved_current") == cur:
+            out["ok"], out["mismatch"] = False, True
+            out["problems"].append(f"your current step in RestedXP (step {route.get('step')} of the part for levels {lv(cur)[0]}-{lv(cur)[1]}) "
+                                   "is not in any copy of that part's guide text on this PC: the add-on runs a version this PC lacks")
+        elif route.get("step"):
+            k = min(len(steps), route["step"]) - 1
+            c["index"] = k + 1
+            if route["step"] > len(steps):
+                out["ok"], out["mismatch"] = False, True
+                out["problems"].append(f"RestedXP's saved step {route['step']} is past the end of that part's guide text ({len(steps)} steps)")
+        if c.get("index"):
+            st = steps[c["index"] - 1]
+            ok, tags, ops = step_view(st, who, lv(cur)[0], lambda _t: True)
+            spot = where(tags, maps) if tags else None
+            num = sum(1 for s in steps[:c["index"]] if step_view(s, who, lv(cur)[0], lambda _t: True)[1].get("loaded"))
+            c.update(step=c["index"], window=num, ops=ops, npc=(tags.get("targets") or [None])[0] if tags else None,
+                     zone=spot[0] if spot else None, xy=(spot[1], spot[2]) if spot else None)
+    for rs in route.get("sections") or []:
+        if rs["name"] not in mine:
+            out["missing"].append((rs["lo"], rs["hi"]))
+        elif mine[rs["name"]].get("ambiguous"):
+            out["ambiguous"].append((rs["lo"], rs["hi"]))
+    if out["missing"]:
+        out["ok"] = False
+        spans = []   # adjacent or overlapping parts read as one span ("levels 29-60")
+        for a, b in sorted(out["missing"]):
+            if spans and a <= spans[-1][1] + 1:
+                spans[-1][1] = max(spans[-1][1], b)
+            else:
+                spans.append([a, b])
+        out["problems"].append("the guide text for the route's parts at levels " + ", ".join(f"{a}-{b}" for a, b in spans)
+                               + " is not on this PC")
     return out
 
 
@@ -317,7 +486,7 @@ def facts(cfg, snap, wow_dir, route):
     if not route:
         return None
     roots = roots_of(cfg, wow_dir)
-    sections = load(roots, route["group"])
+    sections = load(roots, route["group"], route.get("progress"))
     if not sections:
         return None
     character = f"{snap['profile']['name']}-{snap['profile'].get('surname', '')}".strip("-")
@@ -325,6 +494,8 @@ def facts(cfg, snap, wow_dir, route):
     who = who_of(cfg, snap, prof)
     maps = bounds()
     mine = {n: s for n, secs in sections.items() if (s := pick(secs, who))}
+    route["sections"] = chain(route, mine) or route.get("sections") or []   # from the add-on's current guide (updates ROUTE in place)
+    trust = check(route, mine, who, maps)
     override, runs, tagged = {}, {}, set()   # dungeons the group switches on itself (functions.enabledungeon: group-wide once parsed)
     for n, sec in mine.items():
         m = re.match(r"(\d+)-(\d+)", n)
@@ -348,7 +519,7 @@ def facts(cfg, snap, wow_dir, route):
         return False if disabled else bool(prof["dungeons"].get(t))
 
     out = {"quests": {}, "dungeons": {}, "past": set(), "who": who, "profile": prof, "runs": runs, "npcs": {}, "path": [], "behind": {},
-           "taggable": {NAMES[t]: t for t in sorted(tagged) if not enabled(t)}}
+           "taggable": {NAMES[t]: t for t in sorted(tagged) if not enabled(t)}, "trust": trust}
     for sec in mine.values():   # where each NPC stands (the guide's own positions)
         for st in sec["steps"]:
             ok, tags, _ = step_view(st, who, 60, lambda _t: True)
@@ -362,7 +533,9 @@ def facts(cfg, snap, wow_dir, route):
             continue
         lo, hi = rs["lo"], rs["hi"]
         steps = [s for s in sec["steps"] if applies(s["filter"], who, lo)]   # the add-on's step list (its saved step indexes it)
-        cur = route["step"] if rs["name"] == route["current"] and route.get("step") else 0
+        here = rs["name"] == route["current"]
+        at = trust["current"].get("index") if here else None   # the current step by its id (or its saved number), 1-based
+        cur = route["step"] if here and route.get("step") else 0
         floor, n, num = lo, max(1, len(steps)), 0
         for i, st in enumerate(steps):
             level = max(floor, round(lo + (hi - lo) * i / n))
@@ -373,7 +546,7 @@ def facts(cfg, snap, wow_dir, route):
             if tags.get("xp"):
                 floor = max(floor, min(hi, tags["xp"]))
             spot = where(tags, maps)
-            past = num < cur
+            past = (i + 1 < at) if at else num < cur
             w = next((x for x in (world(a, maps) for a in reversed(tags.get("goto") or [])) if x), None)
             if w and not past:   # where the route takes you, level by level (detours.py measures from here): level, continent, world x, y,
                 out["path"].append((level, w[0], w[1], w[2], w[3], lo, hi, num, tuple(ops),   # zone, the section's levels, the step's
@@ -411,13 +584,13 @@ def facts(cfg, snap, wow_dir, route):
         if d["level"] is None:
             lv = sorted(out["quests"][q].get("complete") or (out["quests"][q].get("turnin") or {}).get("level") or 99 for q in d["quests"])
             d["level"] = lv[0] if lv and lv[0] < 99 else None
-    out["before"] = before(mine, route, who, maps, enabled)
+    out["before"] = before(mine, route, who, maps, enabled, trust["current"].get("index"))
     out["extra"] = dungeon_quest_guides(roots, who, maps)
     out["givers"] = givers(roots, who, maps)
     return out
 
 
-def before(mine, route, who, maps, enabled):
+def before(mine, route, who, maps, enabled, at=None):
     """What the route did before the character's current step (2026-11-10, user: what to do "to have the checklist and RestedXP the most
     sync it can be"): every earlier part of the guide group (followed back by its "next" links) and the current part up to the step,
     {quest: {"accept"|"complete"|"turnin": {"level", "zone", "x", "y", "npc", "step", "lo", "hi"}}} (the first time each)."""
@@ -444,7 +617,7 @@ def before(mine, route, who, maps, enabled):
             level = round(lo + (hi - lo) * i / max(1, len(steps)))
             ok, tags, ops = step_view(st, who, level, enabled)
             num += bool(tags.get("loaded"))
-            if part == route["current"] and num >= (route.get("step") or 0):
+            if part == route["current"] and ((i + 1 >= at) if at else num >= (route.get("step") or 0)):
                 break
             if not ok:
                 continue
@@ -460,27 +633,18 @@ def givers(roots, who, maps):
     """{quest id: {"npc", "zone", "x", "y"}} of every quest any guide on this PC accepts for this character (every group: the leveling and
     speedrun guides, the per-dungeon quest guides, the class guides): where to pick up a quest the route leaves out."""
     out = {}
-    for root, pattern in roots:
-        if not pathlib.Path(root).is_dir():
+    for c in sorted(catalog(roots), key=lambda c: -c["version"]):
+        if not applies(c["head"].get("filter", ""), who, 60):
             continue
-        for p in sorted(pathlib.Path(root).rglob(pattern)):
-            try:
-                texts = blocks(p)
-            except OSError:
+        for st in c["steps"]:
+            ok, tags, ops = step_view(st, who, 60, lambda _t: True)
+            if not ok:
                 continue
-            for t in texts:
-                head, steps = parse_file(t)
-                if "#group" not in t[:800] or not applies(head.get("filter", ""), who, 60):
-                    continue
-                for st in steps:
-                    ok, tags, ops = step_view(st, who, 60, lambda _t: True)
-                    if not ok:
-                        continue
-                    spot = where(tags, maps)
-                    for op, q in ops:
-                        if op == "accept" and q not in out and (tags["targets"] or spot):
-                            out[q] = {"npc": " / ".join(tags["targets"]) or None, "zone": spot[0] if spot else None,
-                                      "x": spot[1] if spot else None, "y": spot[2] if spot else None}
+            spot = where(tags, maps)
+            for op, q in ops:
+                if op == "accept" and q not in out and (tags["targets"] or spot):
+                    out[q] = {"npc": " / ".join(tags["targets"]) or None, "zone": spot[0] if spot else None,
+                              "x": spot[1] if spot else None, "y": spot[2] if spot else None}
     return out
 
 
@@ -501,3 +665,41 @@ def dungeon_quest_guides(roots, who, maps):
                 if op == "accept" and not any(r["quest"] == q for r in rows):
                     rows.append({"quest": q, "giver": " / ".join(tags["targets"]) or None, "spot": where(tags, maps)})
     return out
+
+
+def main():
+    """`python rxp_guide.py <character> [...]`: the RestedXP check (rxp_guide.check) for each character, plus how many guide texts the files
+    hold and how many are distinct. Facts only (levels, step numbers, quest ids, NPC, zone), never the guide's wording or its part names."""
+    import sys
+    import rxp
+    sys.stdout.reconfigure(encoding="utf-8")
+    for name in sys.argv[1:]:
+        d = HERE.parents[2] / "_characters" / name.lower()
+        cfg = json.loads((d / "character.json").read_text(encoding="utf-8"))
+        prof = json.loads((d / "armory" / "profile.json").read_text(encoding="utf-8"))
+        wow = cfg.get("wow_dir") or str((cfg.get("ah") or {}).get("ahcopy", "")).split("/Interface/")[0]
+        route = rxp.route(wow, f"{prof['name']}-{prof.get('surname', '')}".strip("-"))
+        if not route:
+            print(f"{name}: no RestedXP saved files for this character")
+            continue
+        cat = catalog(roots_of(cfg, wow))
+        f = facts(cfg, {"profile": prof}, wow, route)
+        if not f:
+            print(f"{name}: no guide text for the add-on's guide on this PC ({len(cat)} distinct guide texts found)")
+            continue
+        tr, c = f["trust"], f["trust"]["current"]
+        part = (route["sections"] or [{}])[0]
+        print(f"{name} (level {prof['level']}): {len(cat)} distinct guide texts; route {len(route['sections'])} parts from levels "
+              f"{part.get('lo')}-{part.get('hi')}")
+        print(f"  current step: {c.get('window')} of the {part.get('lo')}-{part.get('hi')} part, "
+              + ("matched by the add-on's step id" if c.get("by_id") else "by the saved step number only")
+              + f" (guide version {c.get('version')} of {c.get('versions')}); quests {c.get('ops')}, NPC {c.get('npc')}, "
+              f"{c.get('zone')} {c.get('xy')}")
+        print("  " + ("OK" if tr["ok"] else "PROBLEMS: " + "; ".join(tr["problems"]))
+              + (f"; versions differ with no saved step to tell them apart at levels {tr['ambiguous']}" if tr["ambiguous"] else ""))
+        print(f"  route facts: {len(f['quests'])} quests ahead, {len(f['past'])} behind, {len(f['npcs'])} NPC positions, "
+              f"{len(f['dungeons'])} dungeons ahead, {len(f['before'])} earlier quests for catch-up")
+
+
+if __name__ == "__main__":
+    main()

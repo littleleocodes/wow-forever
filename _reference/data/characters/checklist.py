@@ -88,6 +88,8 @@ def upgrade_line(r, lv, why=True):
         sub += f'<br><strong>{md(r["wait"])}</strong>'
     if r.get("off_route"):
         sub += f'<br><span class="why">{md(r["off_route"])}</span>'
+    if r.get("route_unknown"):
+        sub += f'<br><span class="why">{md(r["route_unknown"])}</span>'
     if r.get("on_route"):
         sub += f'<br><span class="why">{md(r["on_route"])}</span>'
     if why and r.get("why"):

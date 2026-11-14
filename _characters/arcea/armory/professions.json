@@ -24,7 +24,7 @@
    },
    "tiers": [
     {
-     "skill_points": 140,
+     "skill_points": 164,
      "max_skill_points": 225,
      "tier": {
       "name": "Tailoring",
@@ -33,66 +33,10 @@
      "known_recipes": [
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2362?namespace=static-1.60.1_70399-forever-us"
+        "href": "https://us.api.blizzard.com/data/wow/recipe/6577?namespace=static-1.60.1_70399-forever-us"
        },
-       "name": "Red Linen Robe",
-       "id": 2362
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2387?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Heavy Woolen Pants",
-       "id": 2387
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4852?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Earthen Vest",
-       "id": 4852
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2383?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Soft-soled Linen Boots",
-       "id": 2383
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4853?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Azure Silk Belt",
-       "id": 4853
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/3973?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Pearl-clasped Cloak",
-       "id": 3973
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2359?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Bolt of Linen Cloth",
-       "id": 2359
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2408?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Brown Linen Pants",
-       "id": 2408
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4849?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Azure Silk Pants",
-       "id": 4849
+       "name": "Simple Linen Boots",
+       "id": 6577
       },
       {
        "key": {
@@ -103,31 +47,17 @@
       },
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2376?namespace=static-1.60.1_70399-forever-us"
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4872?namespace=static-1.60.1_70399-forever-us"
        },
-       "name": "Bolt of Silk Cloth",
-       "id": 2376
+       "name": "Crimson Silk Vest",
+       "id": 4872
       },
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4848?namespace=static-1.60.1_70399-forever-us"
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4876?namespace=static-1.60.1_70399-forever-us"
        },
-       "name": "Linen Belt",
-       "id": 4848
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4019?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Red Linen Bag",
-       "id": 4019
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2381?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Heavy Woolen Gloves",
-       "id": 2381
+       "name": "Crimson Silk Pantaloons",
+       "id": 4876
       },
       {
        "key": {
@@ -138,269 +68,10 @@
       },
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2409?namespace=static-1.60.1_70399-forever-us"
+        "href": "https://us.api.blizzard.com/data/wow/recipe/6576?namespace=static-1.60.1_70399-forever-us"
        },
-       "name": "Brown Linen Shirt",
-       "id": 2409
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2367?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Reinforced Linen Cape",
-       "id": 2367
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2363?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Linen Boots",
-       "id": 2363
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2372?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Green Woolen Vest",
-       "id": 2372
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2369?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Green Linen Shirt",
-       "id": 2369
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2391?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Spidersilk Boots",
-       "id": 2391
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2380?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Handstitched Linen Britches",
-       "id": 2380
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2360?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Linen Cloak",
-       "id": 2360
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2373?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Woolen Boots",
-       "id": 2373
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2370?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Bolt of Woolen Cloth",
-       "id": 2370
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/6577?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Simple Linen Boots",
-       "id": 6577
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4708?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Simple Dress",
-       "id": 4708
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4303?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "White Linen Robe",
-       "id": 4303
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4001?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Linen Bag",
-       "id": 4001
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2365?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "White Linen Shirt",
-       "id": 2365
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2375?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Gray Woolen Shirt",
-       "id": 2375
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4850?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Azure Silk Hood",
-       "id": 4850
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4020?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Red Woolen Bag",
-       "id": 4020
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2366?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Blue Linen Shirt",
-       "id": 2366
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/55367?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Woolen Reagent Bag",
-       "id": 55367
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2364?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Red Linen Shirt",
-       "id": 2364
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4021?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Lesser Wizard's Robe",
-       "id": 4021
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4715?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "White Swashbuckler's Shirt",
-       "id": 4715
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2379?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Green Linen Bracers",
-       "id": 2379
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4003?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Small Silk Pack",
-       "id": 4003
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4305?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Red Linen Vest",
-       "id": 4305
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4311?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Greater Adept's Robe",
-       "id": 4311
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2368?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Barbaric Linen Vest",
-       "id": 2368
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4709?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "White Woolen Dress",
-       "id": 4709
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2385?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Double-stitched Woolen Shoulders",
-       "id": 2385
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2389?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Gloves of Meditation",
-       "id": 2389
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2405?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Formal White Shirt",
-       "id": 2405
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4714?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Red Swashbuckler's Shirt",
-       "id": 4714
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/55424?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Novice Ardent's Sash",
-       "id": 55424
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4855?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Crimson Silk Belt",
-       "id": 4855
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4851?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Silk Headband",
-       "id": 4851
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2395?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Azure Silk Vest",
-       "id": 2395
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4302?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Brown Linen Robe",
-       "id": 4302
+       "name": "Simple Linen Pants",
+       "id": 6576
       },
       {
        "key": {
@@ -411,31 +82,87 @@
       },
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2378?namespace=static-1.60.1_70399-forever-us"
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2405?namespace=static-1.60.1_70399-forever-us"
        },
-       "name": "Heavy Linen Gloves",
-       "id": 2378
+       "name": "Formal White Shirt",
+       "id": 2405
       },
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/2371?namespace=static-1.60.1_70399-forever-us"
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2408?namespace=static-1.60.1_70399-forever-us"
        },
-       "name": "Woolen Cape",
-       "id": 2371
+       "name": "Brown Linen Pants",
+       "id": 2408
       },
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4306?namespace=static-1.60.1_70399-forever-us"
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2409?namespace=static-1.60.1_70399-forever-us"
        },
-       "name": "Blue Linen Robe",
-       "id": 4306
+       "name": "Brown Linen Shirt",
+       "id": 2409
       },
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4002?namespace=static-1.60.1_70399-forever-us"
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4848?namespace=static-1.60.1_70399-forever-us"
        },
-       "name": "Woolen Bag",
-       "id": 4002
+       "name": "Linen Belt",
+       "id": 4848
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4849?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Azure Silk Pants",
+       "id": 4849
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4850?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Azure Silk Hood",
+       "id": 4850
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4851?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Silk Headband",
+       "id": 4851
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4852?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Earthen Vest",
+       "id": 4852
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4853?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Azure Silk Belt",
+       "id": 4853
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4855?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Crimson Silk Belt",
+       "id": 4855
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2359?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Bolt of Linen Cloth",
+       "id": 2359
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2360?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Linen Cloak",
+       "id": 2360
       },
       {
        "key": {
@@ -446,10 +173,101 @@
       },
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/6576?namespace=static-1.60.1_70399-forever-us"
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2362?namespace=static-1.60.1_70399-forever-us"
        },
-       "name": "Simple Linen Pants",
-       "id": 6576
+       "name": "Red Linen Robe",
+       "id": 2362
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2363?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Linen Boots",
+       "id": 2363
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2364?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Red Linen Shirt",
+       "id": 2364
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2365?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "White Linen Shirt",
+       "id": 2365
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2366?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Blue Linen Shirt",
+       "id": 2366
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2367?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Reinforced Linen Cape",
+       "id": 2367
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2368?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Barbaric Linen Vest",
+       "id": 2368
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2369?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Green Linen Shirt",
+       "id": 2369
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2370?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Bolt of Woolen Cloth",
+       "id": 2370
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2371?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Woolen Cape",
+       "id": 2371
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2372?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Green Woolen Vest",
+       "id": 2372
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2373?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Woolen Boots",
+       "id": 2373
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2375?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Gray Woolen Shirt",
+       "id": 2375
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2376?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Bolt of Silk Cloth",
+       "id": 2376
       },
       {
        "key": {
@@ -460,10 +278,185 @@
       },
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/55366?namespace=static-1.60.1_70399-forever-us"
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2378?namespace=static-1.60.1_70399-forever-us"
        },
-       "name": "Linen Reagent Bag",
-       "id": 55366
+       "name": "Heavy Linen Gloves",
+       "id": 2378
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2379?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Green Linen Bracers",
+       "id": 2379
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2380?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Handstitched Linen Britches",
+       "id": 2380
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2381?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Heavy Woolen Gloves",
+       "id": 2381
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2383?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Soft-soled Linen Boots",
+       "id": 2383
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2385?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Double-stitched Woolen Shoulders",
+       "id": 2385
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2387?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Heavy Woolen Pants",
+       "id": 2387
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2389?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Gloves of Meditation",
+       "id": 2389
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2391?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Spidersilk Boots",
+       "id": 2391
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/2395?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Azure Silk Vest",
+       "id": 2395
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/3973?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Pearl-clasped Cloak",
+       "id": 3973
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4001?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Linen Bag",
+       "id": 4001
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4002?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Woolen Bag",
+       "id": 4002
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4003?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Small Silk Pack",
+       "id": 4003
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4019?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Red Linen Bag",
+       "id": 4019
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4020?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Red Woolen Bag",
+       "id": 4020
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4021?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Lesser Wizard's Robe",
+       "id": 4021
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4714?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Red Swashbuckler's Shirt",
+       "id": 4714
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4715?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "White Swashbuckler's Shirt",
+       "id": 4715
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4708?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Simple Dress",
+       "id": 4708
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4709?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "White Woolen Dress",
+       "id": 4709
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4302?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Brown Linen Robe",
+       "id": 4302
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4303?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "White Linen Robe",
+       "id": 4303
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4305?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Red Linen Vest",
+       "id": 4305
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4306?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Blue Linen Robe",
+       "id": 4306
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4311?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Greater Adept's Robe",
+       "id": 4311
       },
       {
        "key": {
@@ -471,6 +464,34 @@
        },
        "name": "Faction Banner",
        "id": 56361
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/55424?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Novice Ardent's Sash",
+       "id": 55424
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/55482?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Frothing Slippers",
+       "id": 55482
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/55366?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Linen Reagent Bag",
+       "id": 55366
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/55367?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Woolen Reagent Bag",
+       "id": 55367
       }
      ]
     }
@@ -495,87 +516,10 @@
      "known_recipes": [
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4368?namespace=static-1.60.1_70399-forever-us"
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4402?namespace=static-1.60.1_70399-forever-us"
        },
-       "name": "Enchant 2H Weapon - Minor Impact",
-       "id": 4368
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4290?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Enchant Chest - Inferior Stamina",
-       "id": 4290
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/7316?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Disenchant",
-       "id": 7316
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4289?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Enchant Bracer - Inferior Stamina",
-       "id": 4289
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4291?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Runed Copper Rod",
-       "id": 4291
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/7377?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Enchant Cloak - Lesser Protection",
-       "id": 7377
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/13138?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Minor Mana Oil",
-       "id": 13138
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/7356?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Enchant Shield - Minor Stamina",
-       "id": 7356
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4297?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Enchant Chest - Minor Intellect",
-       "id": 4297
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/8000?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Greater Magic Wand",
-       "id": 8000
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4300?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Enchant Cloak - Minor Resistance",
-       "id": 4300
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4292?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Enchant Chest - Minor Absorption",
-       "id": 4292
+       "name": "Enchant Boots - Minor Stamina",
+       "id": 4402
       },
       {
        "key": {
@@ -586,31 +530,31 @@
       },
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4370?namespace=static-1.60.1_70399-forever-us"
+        "href": "https://us.api.blizzard.com/data/wow/recipe/8000?namespace=static-1.60.1_70399-forever-us"
        },
-       "name": "Runed Silver Rod",
-       "id": 4370
+       "name": "Greater Magic Wand",
+       "id": 8000
       },
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/54214?namespace=static-1.60.1_70399-forever-us"
+        "href": "https://us.api.blizzard.com/data/wow/recipe/13137?namespace=static-1.60.1_70399-forever-us"
        },
-       "name": "Novice's Practice Wand",
-       "id": 54214
+       "name": "Minor Wizard Oil",
+       "id": 13137
       },
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/54411?namespace=static-1.60.1_70399-forever-us"
+        "href": "https://us.api.blizzard.com/data/wow/recipe/13138?namespace=static-1.60.1_70399-forever-us"
        },
-       "name": "Orb of Mystic Insight",
-       "id": 54411
+       "name": "Minor Mana Oil",
+       "id": 13138
       },
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/7357?namespace=static-1.60.1_70399-forever-us"
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4352?namespace=static-1.60.1_70399-forever-us"
        },
-       "name": "Enchant 2H Weapon - Lesser Spirit",
-       "id": 7357
+       "name": "Enchant Chest - Lesser Stamina",
+       "id": 4352
       },
       {
        "key": {
@@ -621,10 +565,10 @@
       },
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4301?namespace=static-1.60.1_70399-forever-us"
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4362?namespace=static-1.60.1_70399-forever-us"
        },
-       "name": "Enchant Bracer - Minor Stamina",
-       "id": 4301
+       "name": "Enchant Cloak - Minor Protection",
+       "id": 4362
       },
       {
        "key": {
@@ -649,27 +593,6 @@
       },
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4402?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Enchant Boots - Minor Stamina",
-       "id": 4402
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4352?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Enchant Chest - Lesser Stamina",
-       "id": 4352
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4362?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Enchant Cloak - Minor Protection",
-       "id": 4362
-      },
-      {
-       "key": {
         "href": "https://us.api.blizzard.com/data/wow/recipe/4367?namespace=static-1.60.1_70399-forever-us"
        },
        "name": "Enchant Weapon - Minor Striking",
@@ -677,31 +600,10 @@
       },
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/54213?namespace=static-1.60.1_70399-forever-us"
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4368?namespace=static-1.60.1_70399-forever-us"
        },
-       "name": "Dust to Motes",
-       "id": 54213
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4293?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Enchant Bracer - Minor Deflect",
-       "id": 4293
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/7416?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Enchant Shield - Lesser Protection",
-       "id": 7416
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/13137?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Minor Wizard Oil",
-       "id": 13137
+       "name": "Enchant 2H Weapon - Minor Impact",
+       "id": 4368
       },
       {
        "key": {
@@ -712,10 +614,129 @@
       },
       {
        "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4370?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Runed Silver Rod",
+       "id": 4370
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/7316?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Disenchant",
+       "id": 7316
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/7356?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Enchant Shield - Minor Stamina",
+       "id": 7356
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/7357?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Enchant 2H Weapon - Lesser Spirit",
+       "id": 7357
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/7377?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Enchant Cloak - Lesser Protection",
+       "id": 7377
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/7416?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Enchant Shield - Lesser Protection",
+       "id": 7416
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4289?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Enchant Bracer - Inferior Stamina",
+       "id": 4289
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4290?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Enchant Chest - Inferior Stamina",
+       "id": 4290
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4291?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Runed Copper Rod",
+       "id": 4291
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4292?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Enchant Chest - Minor Absorption",
+       "id": 4292
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4293?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Enchant Bracer - Minor Deflect",
+       "id": 4293
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4297?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Enchant Chest - Minor Intellect",
+       "id": 4297
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4300?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Enchant Cloak - Minor Resistance",
+       "id": 4300
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4301?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Enchant Bracer - Minor Stamina",
+       "id": 4301
+      },
+      {
+       "key": {
         "href": "https://us.api.blizzard.com/data/wow/recipe/52649?namespace=static-1.60.1_70399-forever-us"
        },
        "name": "Enchanted Lute",
        "id": 52649
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/54213?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Dust to Motes",
+       "id": 54213
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/54214?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Novice's Practice Wand",
+       "id": 54214
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/54411?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Orb of Mystic Insight",
+       "id": 54411
       }
      ]
     }
@@ -742,164 +763,10 @@
      "known_recipes": [
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/3964?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Boiled Clams",
-       "id": 3964
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/1876?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Gooey Spider Cake",
-       "id": 1876
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4786?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Herb Baked Egg",
-       "id": 4786
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/1543?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Crab Cake",
-       "id": 1543
-      },
-      {
-       "key": {
         "href": "https://us.api.blizzard.com/data/wow/recipe/1873?namespace=static-1.60.1_70399-forever-us"
        },
        "name": "Murloc Fin Soup",
        "id": 1873
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/1674?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Beer Basted Boar Ribs",
-       "id": 1674
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/52640?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Basic Campfire",
-       "id": 52640
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4787?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Smoked Bear Meat",
-       "id": 4787
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4359?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Bristle Whisker Catfish",
-       "id": 4359
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4355?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Longjaw Mud Snapper",
-       "id": 4355
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/1538?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Coyote Steak",
-       "id": 1538
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/54505?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Breakfast Omelette",
-       "id": 54505
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/1539?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Goretusk Liver Pie",
-       "id": 1539
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/1548?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Seasoned Wolf Kabob",
-       "id": 1548
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/1545?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Dry Pork Ribs",
-       "id": 1545
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/1875?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Curiously Tasty Omelet",
-       "id": 1875
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/13344?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Smoked Sagefish",
-       "id": 13344
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/1536?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Spiced Wolf Meat",
-       "id": 1536
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/1547?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Succulent Pork Ribs",
-       "id": 1547
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/1546?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Redridge Goulash",
-       "id": 1546
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/4353?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Brilliant Smallfish",
-       "id": 4353
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/1537?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Roasted Boar Meat",
-       "id": 1537
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/1535?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Charred Wolf Meat",
-       "id": 1535
       },
       {
        "key": {
@@ -910,6 +777,62 @@
       },
       {
        "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/1875?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Curiously Tasty Omelet",
+       "id": 1875
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/1876?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Gooey Spider Cake",
+       "id": 1876
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/13344?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Smoked Sagefish",
+       "id": 13344
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/1535?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Charred Wolf Meat",
+       "id": 1535
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/1536?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Spiced Wolf Meat",
+       "id": 1536
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/1537?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Roasted Boar Meat",
+       "id": 1537
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/1538?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Coyote Steak",
+       "id": 1538
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/1539?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Goretusk Liver Pie",
+       "id": 1539
+      },
+      {
+       "key": {
         "href": "https://us.api.blizzard.com/data/wow/recipe/1540?namespace=static-1.60.1_70399-forever-us"
        },
        "name": "Westfall Stew",
@@ -917,10 +840,108 @@
       },
       {
        "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/1543?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Crab Cake",
+       "id": 1543
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/1545?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Dry Pork Ribs",
+       "id": 1545
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/1546?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Redridge Goulash",
+       "id": 1546
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/1547?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Succulent Pork Ribs",
+       "id": 1547
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/1548?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Seasoned Wolf Kabob",
+       "id": 1548
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/1674?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Beer Basted Boar Ribs",
+       "id": 1674
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4353?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Brilliant Smallfish",
+       "id": 4353
+      },
+      {
+       "key": {
         "href": "https://us.api.blizzard.com/data/wow/recipe/4354?namespace=static-1.60.1_70399-forever-us"
        },
        "name": "Slitherskin Mackerel",
        "id": 4354
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4355?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Longjaw Mud Snapper",
+       "id": 4355
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4359?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Bristle Whisker Catfish",
+       "id": 4359
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/3964?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Boiled Clams",
+       "id": 3964
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4786?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Herb Baked Egg",
+       "id": 4786
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/4787?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Smoked Bear Meat",
+       "id": 4787
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/52640?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Basic Campfire",
+       "id": 52640
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/54505?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Breakfast Omelette",
+       "id": 54505
       }
      ]
     }
@@ -980,20 +1001,6 @@
      "known_recipes": [
       {
        "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/1839?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Heavy Linen Bandage",
-       "id": 1839
-      },
-      {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/recipe/54191?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Minor Healing Potion",
-       "id": 54191
-      },
-      {
-       "key": {
         "href": "https://us.api.blizzard.com/data/wow/recipe/1838?namespace=static-1.60.1_70399-forever-us"
        },
        "name": "Linen Bandage",
@@ -1001,10 +1008,24 @@
       },
       {
        "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/1839?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Heavy Linen Bandage",
+       "id": 1839
+      },
+      {
+       "key": {
         "href": "https://us.api.blizzard.com/data/wow/recipe/52641?namespace=static-1.60.1_70399-forever-us"
        },
        "name": "First Aid Kit",
        "id": 52641
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/54191?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Minor Healing Potion",
+       "id": 54191
       }
      ]
     }

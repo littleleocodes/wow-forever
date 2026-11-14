@@ -50,18 +50,29 @@ def route(wow_dir, character):
     if not g:
         return None
     group, step = g.group(1), int(st.group(1)) if st else None
-    cur = None
-    for key, s in re.findall(r'\["([^"]+)"\] = \{\s*\["step"\] = (\d+)', ctext):
-        if key.startswith(group + "|") and step is not None and int(s) == step:
-            cur = key.split("|")[-1]
+    # the add-on's own record of where you are (2026-11-13): its current guide's name and the current step's id (GuideLoader: the step's
+    # line number plus the guide key's hash, so it names one copy of the guide and one step in it); every guide's saved step and step id
+    named = re.search(r'\["currentGuideName"\] = "([^"]+)"', ctext)
+    sid = re.search(r'\["currentStepId"\] = (\d+)', ctext)
+    progress = {key: (int(s), int(i)) for key, s, i in
+                re.findall(r'\["([^"|]+\|[^"|]*\|[^"]+)"\] = \{\s*\["step"\] = (\d+),\s*\["stepId"\] = (\d+)', ctext)}
+    cur = named.group(1) if named else None
+    if cur is None:   # older saved files: the guide whose saved step is the current step
+        for key, s in re.findall(r'\["([^"]+)"\] = \{\s*\["step"\] = (\d+)', ctext):
+            if key.startswith(group + "|") and step is not None and int(s) == step:
+                cur = key.split("|")[-1]
     meta = {}
     for b in re.findall(r'\["metadata"\] = \{(.*?)\n\}', acc.read_text(encoding="utf-8", errors="replace"), re.S):
         kv = dict(re.findall(r'\["(\w+)"\] = "([^"]*)"', b))
         if kv.get("group") == group and kv.get("name"):
             meta[kv["name"]] = kv.get("next", "")
+    extra = {"saved_current": named.group(1) if named else None, "step_id": int(sid.group(1)) if sid else None, "progress": progress,
+             "meta": {n: (v.split(";")[0].strip().split("\\")[-1].strip() or None) for n, v in meta.items()}}
+    if cur and cur not in meta:   # a guide the add-on ships itself (levels 1-20: no imported metadata): rxp_guide.facts follows its text
+        return {"group": group, "current": cur, "step": step, "sections": [], **extra}
     if not meta:
         return None
-    if cur not in meta:   # no saved step matches: start from the lowest section
+    if cur not in meta:   # nothing saved names the current guide: start from the lowest section
         cur = min(meta, key=lambda n: int((SECTION.match(n) or re.match(r"(\d+)", "99")).group(1)))
     out, name, seen = [], cur, set()
     while name and name in meta and name not in seen:
@@ -71,7 +82,7 @@ def route(wow_dir, character):
             out.append({"name": name, "lo": int(m.group(1)), "hi": int(m.group(2)), "zones": zones(name)})
         nxt = meta[name].split(";")[0].strip()
         name = nxt.split("\\")[-1].strip() if nxt else None
-    return {"group": group, "current": cur, "step": step, "sections": out}
+    return {"group": group, "current": cur, "step": step, "sections": out, **extra}
 
 
 def zones_at(rt, lo, hi):

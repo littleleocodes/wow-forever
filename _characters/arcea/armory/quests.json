@@ -16,27 +16,6 @@
  "in_progress": [
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/98223?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "Old Habits",
-   "id": 98223
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/95646?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "Horrors in the Highland",
-   "id": 95646
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/98815?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "Highland Hides",
-   "id": 98815
-  },
-  {
-   "key": {
     "href": "https://us.api.blizzard.com/data/wow/quest/98310?namespace=static-1.60.1_70399-forever-us"
    },
    "name": "Gleaning Our Future",
@@ -51,17 +30,10 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/472?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/322?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Fall of Dun Modr",
-   "id": 472
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/292?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "The Eye of Paleth",
-   "id": 292
+   "name": "Blessed Arm",
+   "id": 322
   },
   {
    "key": {
@@ -93,17 +65,17 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/98072?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/98824?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Crocs of the Sky",
-   "id": 98072
+   "name": "Prehistoric Prism",
+   "id": 98824
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/95772?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/98209?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Songblade Search",
-   "id": 95772
+   "name": "Bloom of the Heavens",
+   "id": 98209
   },
   {
    "key": {
@@ -114,10 +86,10 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/474?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/637?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Defeat Nek'rosh",
-   "id": 474
+   "name": "Sully Balloo's Letter",
+   "id": 637
   },
   {
    "key": {
@@ -125,20 +97,6 @@
    },
    "name": "A Noble Brew",
    "id": 335
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/98208?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "Bloom of the Heavens",
-   "id": 98208
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/95647?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "Lost in the Thicket Things",
-   "id": 95647
   },
   {
    "key": {
@@ -163,10 +121,17 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/98293?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/1132?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Forced Disarmament",
-   "id": 98293
+   "name": "Fiora Longears",
+   "id": 1132
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/95795?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Fallen in the Fen",
+   "id": 95795
   }
  ],
  "completed": {

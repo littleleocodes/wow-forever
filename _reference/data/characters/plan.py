@@ -606,6 +606,20 @@ def acquirable(it, L, start, profs):
 
 FULL_BY_ID = {}   # every item the planner knows, by id (main): what you wear is read from it whatever pool a plan runs on
 NOTICES = []      # things the page and checklist must say up front (main): a missing guide text
+ROUTE_NOTE = [None]   # the RestedXP check's line for the route section (main, 2026-11-13)
+
+
+def route_unknown(e, lv0):
+    """Why the route's coverage of a quest is unknown, or None: the guide text on this PC does not match where the add-on is, or the text
+    for the quest's levels is missing (rxp_guide.check, 2026-11-13: such a quest is "Unknown", never "Not on your RestedXP route")."""
+    tr = (RG or {}).get("trust") or {}
+    if tr.get("mismatch"):
+        return "the guide text on this PC does not match where your RestedXP add-on is"
+    L = max(e["get_at"], lv0)
+    for a, b in tr.get("missing") or []:
+        if a - 3 <= L <= b + 3:
+            return f"the guide text for levels {a}-{b} is not on this PC"
+    return None
 
 
 def plan(cfg, snap, at, pool, profs):
@@ -1730,6 +1744,7 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
               "dungeons, detour quests (clear wins, worth it if you like it, for the gear) and the gear plan's quests the route leaves out. Each "
               "is tied to the moment in the guide it starts from: the quest it has you hand in or pick up there (the step number is the guide's "
               "own count within that part, an estimate). Do it, then pick the guide up where you left it.", ""]
+        o += [ROUTE_NOTE[0], ""] if ROUTE_NOTE[0] else []
         o += [f"- {timeline_line(r)}" for r in tl] + [""]
     # every dungeon run, by level
     if sched:
@@ -1738,7 +1753,11 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
               "are Classic's (25% where it has none); \"about N min\" is a drop's minutes of killing saved over the plan's item, and a "
               f"run's drops are worth that times their chances. Minutes assume {KILL_SHARE:.0%} of your experience comes from kills.", ""]
         o += dungeon_lines(sched)
-    if RG:
+    if RG and RG["trust"]["mismatch"]:   # 2026-11-13: never "none found" when the detours were not looked for
+        o += ["## Detours off your route", "",
+              "Not worked out this time: the guide text on this PC does not match where your RestedXP add-on is (see Heads up at the top), "
+              "so which quests the route leaves out is unknown.", ""]
+    elif RG:
         st = DETOURS["stats"]
         o += ["## Detours off your route", "",
               "Quests your RestedXP route leaves out, played as a detour from where the route is at that level: walk to the giver, do it at "
@@ -1988,6 +2007,8 @@ def line(e, at):
         out += f" {e['wait']}."
     if e.get("off_route"):
         out += f" {e['off_route']}."
+    if e.get("route_unknown"):
+        out += f" {e['route_unknown']}."
     if e.get("on_route"):
         out += f" {e['on_route']}."
     if e.get("passed") and (e["until"] or 60) - e["level"] >= 8:   # a long-held item: why nothing replaces it sooner
@@ -2332,7 +2353,7 @@ def event_row(e, at):
             "minutes": round(saves), "earn": round(earn), "level": e["level"], "get_at": max(e["get_at"], NOW_LV), "until": e["until"],
             "kind": src["kind"], "where": where, "price": pr, "budget": budget, "replaces": e.get("replaces"),
             "fallback": fbt, "miss": "If you do not craft it" if e.get("unsure") == "craft" else "If it does not drop", "why": why,
-            "wait": e.get("wait"), "off_route": e.get("off_route"), "on_route": e.get("on_route"),
+            "wait": e.get("wait"), "off_route": e.get("off_route"), "on_route": e.get("on_route"), "route_unknown": e.get("route_unknown"),
             "mats": mats}
 
 
@@ -2617,11 +2638,29 @@ def main():
     ROUTE = rxp.route(wow, f"{snap['profile']['name']}-{snap['profile'].get('surname', '')}".strip("-")) if wow else None
     RG = RXG.facts(cfg, snap, wow, ROUTE) if ROUTE else None
     if ROUTE and not RG:   # the add-on follows a guide group, but no readable guide text for it is on this PC (2026-11-13)
-        msg = (f"RestedXP is set to the guide group \"{ROUTE.get('group')}\", but no readable guide text for it was found (in "
-               f"{cfg.get('rxp_dir') or 'F:/wow-addons'} or the add-on's own guides), so this refresh has no route steps, detours or catch-up. "
-               "Put the readable guide files back and refresh again.")
+        msg = (f"RestedXP has a guide selected, but no readable guide text for it was found (in {cfg.get('rxp_dir') or 'F:/wow-addons'} or "
+               "the add-on's own guides), so this refresh has no route steps, detours or catch-up, and the plan's quests are marked Unknown on "
+               "the route rather than off it. Put the readable guide files back and refresh again.")
         print("WARNING: " + msg)
         NOTICES.append(msg)
+    elif RG:   # is the guide text on this PC the route the add-on runs? (rxp_guide.check: the add-on's own step id, 2026-11-13)
+        tr = RG["trust"]
+        c, part = tr["current"], (ROUTE["sections"] or [{}])[0]
+        if c.get("step"):
+            print(f"RestedXP check: the add-on's current step is step {c.get('window')} of its {part.get('lo')}-{part.get('hi')} part "
+                  + ("(its step id matches the guide text" if c.get("by_id") else "(by its saved step number; no step id matched")
+                  + f", guide version {c.get('version')} of {c.get('versions')})")
+            ROUTE_NOTE[0] = (f"Checked against your RestedXP add-on: you are on step {c.get('window')} of its {part.get('lo')}-{part.get('hi')} "
+                             "part" + ("; the add-on's own step id matches the guide text on this PC." if c.get("by_id") else
+                                       " (by the add-on's saved step number: no step id to check it against)."))
+        for p in tr["problems"]:
+            print("WARNING: RestedXP check: " + p)
+        if tr["problems"]:
+            NOTICES.append("Your RestedXP guide and the guide text on this PC do not fully match: " + "; ".join(tr["problems"])
+                           + ". Quests whose place on the route cannot be confirmed are marked Unknown"
+                           + ("; detours and catch-up are off until they match" if tr["mismatch"] else "") + ".")
+        if tr["mismatch"]:   # catch-up counts from your position in the guide: off until the text matches
+            RG["before"] = {}
     if RG:   # a quest reward on the route comes when the route turns the quest in (item_pool.window: route_level), 2026-11-10
         for p in pool:
             for s in p["sources"]:
@@ -2662,6 +2701,10 @@ def main():
                 if f and f.get("turnin"):
                     t = f["turnin"]
                     e["on_route"] = f"Your RestedXP route turns it in at about level {t['level']}" + (f" in {t['zone']}" if t["zone"] else "")
+                elif route_unknown(e, lv0):
+                    g = giver_text(s0["quest"])
+                    e["route_unknown"] = (f"Unknown whether your RestedXP route takes it ({route_unknown(e, lv0)})"
+                                          + (f": from {g}" if g else ""))
                 else:
                     chain_step(0)
                     prev, seen = s0["quest"], set()   # the route may take the chain's start and leave the rest to you
@@ -2675,15 +2718,12 @@ def main():
                     e["off_route"] = ("Not on your RestedXP route" + (f" (it takes the chain as far as \"{(CQUESTS.get(prev) or {}).get('title', prev)}\", "
                                                                       f"at about level {took['level']})" if took else "")
                                       + ": " + (f"from {g}" if g else f"a detour to {s0.get('zone') or 'its zone'}"))
-    elif ROUTE:   # a quest reward in a zone the RestedXP route does not visit around its level is a detour
+    elif ROUTE:   # no guide text on this PC: whether the route takes a quest is unknown (2026-11-13; it had said "off your route" by zone)
         for e in events:
             s0 = primary(e)
-            if s0["kind"] == "quest" and s0.get("zone"):
-                L = max(e["get_at"], lv0)
-                if s0["zone"] not in rxp.zones_at(ROUTE, L - 2, L + 3):
-                    dz = next((r for r in sched if r["zone"] == s0["zone"]), None)
-                    e["off_route"] = (f"Off your RestedXP route around level {L}: a detour to {s0['zone']}"
-                                      + (", worth making (see Dungeon runs)" if dz and dz["verdict"] == "do" else ""))
+            if s0["kind"] == "quest":
+                e["route_unknown"] = ("Unknown whether your RestedXP route takes it (its guide text is not on this PC)"
+                                      + (f": in {s0['zone']}" if s0.get("zone") else ""))
     # a craft from a recipe you do not know yet may not happen: the same plan without such crafts names what to wear instead
     unsure = lambda s: s["kind"] == "craft" and s.get("spell") not in KNOWN
     nod = [dict(p, sources=[s for s in p["sources"] if not unsure(s)]) for p in sure_pool]
@@ -2703,7 +2743,7 @@ def main():
             e["fallback"] = fb or {"keep": (e["prev"][0] or {}).get("name")}
     ench = enchants(cfg["school_share"])
     PLAN_EVENTS[:] = events
-    if RG:   # quests off the route worth a detour (2026-11-10)
+    if RG and not RG["trust"]["mismatch"]:   # quests off the route worth a detour (2026-11-10); off while the guide text does not match
         kills_per_level(lv0)   # (loads the experience table)
         gear_of = {primary(e)["quest"]: (upgrade_name(e)[0], minutes_saved(e, at)) for e in events
                    if primary(e)["kind"] == "quest" and isinstance(primary(e).get("quest"), int)}

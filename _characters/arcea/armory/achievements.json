@@ -4,7 +4,7 @@
    "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/achievements?namespace=profile-forever-us"
   }
  },
- "total_quantity": 4,
+ "total_quantity": 5,
  "total_points": 0,
  "achievements": [
   {
@@ -160,15 +160,16 @@
    },
    "criteria": {
     "id": 221533,
-    "is_completed": false,
+    "is_completed": true,
     "child_criteria": [
      {
       "id": 221534,
-      "amount": 140,
-      "is_completed": false
+      "amount": 164,
+      "is_completed": true
      }
     ]
-   }
+   },
+   "completed_timestamp": 1794624300000
   },
   {
    "id": 62029,
@@ -185,7 +186,7 @@
     "child_criteria": [
      {
       "id": 221536,
-      "amount": 140,
+      "amount": 164,
       "is_completed": false
      }
     ]
@@ -206,7 +207,7 @@
     "child_criteria": [
      {
       "id": 221538,
-      "amount": 140,
+      "amount": 164,
       "is_completed": false
      }
     ]
@@ -251,7 +252,8 @@
      },
      {
       "id": 230761,
-      "is_completed": false
+      "amount": 1,
+      "is_completed": true
      }
     ]
    }
@@ -803,8 +805,8 @@
      },
      {
       "id": 127334,
-      "amount": 0,
-      "is_completed": false
+      "amount": 1,
+      "is_completed": true
      },
      {
       "id": 127335,
@@ -853,8 +855,8 @@
      },
      {
       "id": 127344,
-      "amount": 0,
-      "is_completed": false
+      "amount": 1,
+      "is_completed": true
      },
      {
       "id": 127345,
@@ -1573,8 +1575,8 @@
      },
      {
       "id": 126147,
-      "amount": 0,
-      "is_completed": false
+      "amount": 1,
+      "is_completed": true
      },
      {
       "id": 126148,
@@ -2039,16 +2041,37 @@
   {
    "category": {
     "key": {
+     "href": "https://us.api.blizzard.com/data/wow/achievement-category/15592?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Tailoring",
+    "id": 15592
+   },
+   "quantity": 1,
+   "points": 0
+  },
+  {
+   "category": {
+    "key": {
      "href": "https://us.api.blizzard.com/data/wow/achievement-category/15586?namespace=static-1.60.1_70399-forever-us"
     },
     "name": "Tradeskills",
     "id": 15586
    },
-   "quantity": 1,
+   "quantity": 2,
    "points": 0
   }
  ],
  "recent_events": [
+  {
+   "achievement": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/achievement/62028?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Journeyman Tailor",
+    "id": 62028
+   },
+   "timestamp": 1794624300000
+  },
   {
    "achievement": {
     "key": {

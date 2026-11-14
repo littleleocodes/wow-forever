@@ -205,6 +205,7 @@ def find(cfg, snap, lv, RG, pace, tpk, completed, inlog, maps, group=False, last
     me = RACE_BIT.get(snap["profile"]["race"]["name"], 0)
     cls_bit = 1 << (IP.CLASS_ID[cfg["class"]] - 1)
     on_route = set(RG["quests"]) | RG["past"]
+    missing = (RG.get("trust") or {}).get("missing") or []   # levels whose guide text is not on this PC: the route may take those quests
     route_turnin = {q: (v.get("turnin") or {}).get("level") for q, v in RG["quests"].items()}
 
     def ok(q):
@@ -212,6 +213,8 @@ def find(cfg, snap, lv, RG, pace, tpk, completed, inlog, maps, group=False, last
         if not r or not g or q in completed or q in on_route:
             return False
         ql, mn, sort = int(r["quest_level"] or 0), int(r["min_level"] or 0), int(r["zone_or_sort"] or 0)
+        if any(a - 3 <= ql <= b + 3 for a, b in missing):
+            return False
         rr, rc = int(r["required_races"] or 0), int(r["required_classes"] or 0)
         return (0 < ql <= 62 and ql >= lv - 5 and mn <= last and (not rr or rr & me) and (not rc or rc & cls_bit)
                 and g["type"] not in EXCLUDED_TYPES and (g["type"] != 1 or group) and not g["flags"] & 1
