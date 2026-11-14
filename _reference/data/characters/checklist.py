@@ -473,7 +473,8 @@ def render(cfg, C):
         legacy=leg, legacy_badge=f' <span class="count" aria-label="{leg_n} points">{leg_n}</span>' if leg_n else "", bars=bars or '<p class="muted">No keybind plan for this spec yet.</p>',
         coming=f'<h4>Coming to your bars</h4><ul class="coming">{coming_html}</ul>' if coming_html else "",
         stage=stage_html(g, lv), jrows=jrows,
-        rates=esc(", ".join(f"1 {k.replace('mp5', 'mana per 5 sec')} = {v}" for k, v in rates.items() if k != "armor")),
+        rates=esc(", ".join((f"{k} = {v}" if k[:1].isdigit() else f"1 {k.replace('mp5', 'mana per 5 sec')} = {v}")   # ("1 100 armor", 2026-11-14)
+                            for k, v in rates.items() if k != "armor")),
         unit=esc(C.get("unit", "spell power")),
         by40=coins(by40), mount=coins(mount), mlevel=gold.get("mount_level", 40), mbar=f"{mbar:.0f}",
         mount_at=(f"enough at level {gold['mount_at']}" if gold.get("mount_at") else "not enough on income alone"),
