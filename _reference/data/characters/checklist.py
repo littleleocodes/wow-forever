@@ -267,7 +267,9 @@ def steps_html(C, lv):
     tr = C.get("training") or []
     here = next((x for x in tr if x["level"] == lv), None)
     if here and here["need"]:
-        items.append(todo(f"train{lv}", f"Train {', '.join(esc(n) for n in here['need'])}", f"{coins(here['cost'])} · skip what you already have"))
+        items.append(todo(f"train{lv}", f"Train {', '.join(esc(n) for n in here['need'])}",
+                          f"{coins(here['cost'])} · " + (f"missing from your spellbook ({esc(here['book'])})" if here.get("book")
+                                                         else "skip what you already have")))
     nxt = next((x for x in tr if x["level"] > lv and x["need"]), None)
     if nxt:
         items.append(info(f"Keep {coins(nxt['cost'])} for level {nxt['level']}", ", ".join(esc(n) for n in nxt["need"])))

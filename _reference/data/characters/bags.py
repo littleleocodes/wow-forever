@@ -9,6 +9,9 @@ ForeverTape.lua, read only, the account folder's name never printed):
     auction house and took from the mailbox. Until the add-on writes a snapshot, a gear piece won in the last MAIL_DAYS days, not worn
     now and not sold since, counts as in the bags (it may have been sold to a vendor: the page says when it was bought).
 owned(cfg, snap) -> {lower-case item name: {"name", "count", "where": "bags"|"bank"|"bought", "when": "YYYY-MM-DD"}} (ids under "id:<n>").
+spellbook(cfg, name) -> the character's spellbook from ForeverTape 0.9.5 (2026-11-14): ForeverTapeDB.spellbook["<Name>-<Realm>"] = {t, level,
+class, n, spells = {{id, name, rank, tab}, ...}} (rank absent for spells without ranks; written 5 s after each loading screen and 3 s after
+a spell is learned), or None.
 """
 import datetime
 import glob
@@ -32,19 +35,12 @@ def _day(t):
     return datetime.datetime.fromtimestamp(int(t)).strftime("%Y-%m-%d")
 
 
-def snapshot(text, name):
-    """The add-on's bag and bank snapshot of the character, or None: (time, [{"id", "name", "count", "where"}])."""
-    i = text.find('["inventory"] = {')
-    if i < 0:
-        return None
-    m = re.search(r'\["' + re.escape(name) + r'-[^"]*"\] = \{', text[i:])
-    if not m:
-        return None
-    start = i + m.end()
+def _close(text, start):
+    """The index just past the brace that closes the table opened before `start` (quoted strings skipped: a name may hold a brace)."""
     depth, j = 1, start
-    while depth and j < len(text):   # the character's block, by its braces
+    while depth and j < len(text):
         c = text[j]
-        if c == '"':   # skip a quoted string (an item name may hold a brace)
+        if c == '"':
             j = text.index('"', j + 1)
             while text[j - 1] == "\\":
                 j = text.index('"', j + 1)
@@ -53,7 +49,71 @@ def snapshot(text, name):
         elif c == "}":
             depth -= 1
         j += 1
-    block = text[start:j]
+    return j
+
+
+def _block(text, table, name):
+    """The character's block of ForeverTapeDB.<table> (its "<Name>-<Realm>" key, looked up inside that table only), or None."""
+    i = text.find(f'["{table}"] = {{')
+    if i < 0:
+        return None
+    body = text[i:_close(text, i + len(f'["{table}"] = {{'))]
+    m = re.search(r'\["' + re.escape(name) + r'-[^"|]*"\] = \{', body)
+    if not m:
+        return None
+    return body[m.end():_close(body, m.end())]
+
+
+def _entries(block):
+    """The array entries of a block, each a dict of its fields: WoW writes one field a line and each entry between "{" and "},"."""
+    out, cur = [], None
+    for line in block.splitlines():
+        ln = re.sub(r"\s*-- \[\d+\]$", "", line.strip())
+        if ln == "{":
+            cur = {}
+        elif ln in ("},", "}") and cur is not None:
+            out.append(cur)
+            cur = None
+        elif cur is not None:
+            m = re.match(r'\["(\w+)"\] = (.*?),?$', ln)
+            if m:
+                v = m.group(2)
+                if v.startswith('"') and v.endswith('"'):
+                    v = v[1:-1].replace('\\"', '"').replace("\\\\", "\\")
+                elif re.fullmatch(r"-?\d+", v):
+                    v = int(v)
+                cur[m.group(1)] = v
+    return out
+
+
+def spellbook(cfg, name):
+    """The character's spellbook (ForeverTape 0.9.5, 2026-11-14), the newest over the saved files: {"t", "when", "level", "n", "ids":
+    {spell id}, "ranks": {spell name: highest rank known, 0 for a spell without ranks}}, or None."""
+    best = None
+    for f in saved_files(cfg):
+        block = _block(pathlib.Path(f).read_text(encoding="utf-8", errors="replace"), "spellbook", name)
+        if not block:
+            continue
+        top = block.split('["spells"] = {')[0]
+        t = int((re.search(r'\["t"\] = (\d+)', top) or [0, 0])[1])
+        lv = re.search(r'\["level"\] = (\d+)', top)
+        spells = [e for e in _entries(block) if e.get("name")]
+        if not spells or (best and best["t"] >= t):
+            continue
+        ranks = {}
+        for e in spells:
+            r = e.get("rank") if isinstance(e.get("rank"), int) else 0
+            ranks[e["name"]] = max(ranks.get(e["name"], 0), r)
+        best = {"t": t, "when": datetime.datetime.fromtimestamp(t).strftime("%Y-%m-%d %H:%M"), "level": int(lv.group(1)) if lv else None,
+                "n": len(spells), "ids": {e["id"] for e in spells if isinstance(e.get("id"), int)}, "ranks": ranks}
+    return best
+
+
+def snapshot(text, name):
+    """The add-on's bag and bank snapshot of the character, or None: (time, [{"id", "name", "count", "where"}])."""
+    block = _block(text, "inventory", name)
+    if block is None:
+        return None
     t = re.search(r'\["t"\] = (\d+)', block)
     items, cur = [], None
     for line in block.splitlines():   # WoW writes one field a line and each array entry between "{" and "},"

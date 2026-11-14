@@ -357,6 +357,7 @@ KNOWN = set()       # their spell ids
 COMPLETED = set()   # quest ids the character has completed (Blizzard's API): their rewards are gone
 INLOG = set()       # quest ids in the character's quest log now
 OWN = {}            # what the character owns but does not wear (bags.py: the add-on's bag snapshot, else its auction purchases)
+BOOK = {}           # the character's spellbook (bags.spellbook: ForeverTape 0.9.5's snapshot, 2026-11-14); empty when there is none
 
 
 def unit_price(item):
@@ -797,7 +798,8 @@ def budget_walk(events, cfg, at, lv):
         return set()
     train, need = training_by_level(cfg["class"]), needed_spells(cfg)
     tr = lambda L: sum(c for n, c in train.get(L, []) if n in need)
-    budget = max(0.0, GOLD - tr(lv + 1) - tr(lv + 2))
+    owe = owed_training(cfg, lv)
+    budget = max(0.0, GOLD - tr(lv + 1) - tr(lv + 2) - (sum(x[3] for x in owe[0]) if owe else 0))
     pending = [e for e in events if price_of(e)]
     dropped = set()
     for L in range(lv, LAST + 1):
@@ -1839,6 +1841,50 @@ def training_by_level(cls):
     return out
 
 
+SUPERSEDED = {"Frost Armor": "Ice Armor"}   # a spell whose ranks stop mattering once its replacement is known (owed_training)
+
+
+def training_rows(cls):
+    """[(level, spell id, name, cost copper)] the class trainer teaches (Classic's table, class_training.csv)."""
+    return [(int(r["level"]), int(r["spell"]), r["name"], int(r["cost"]))
+            for r in csv.DictReader(open(IP.RAW / "class_training.csv", encoding="utf-8")) if int(r["class"]) == IP.CLASS_ID[cls] and r["name"]]
+
+
+def spell_ranks(cls):
+    """{spell id: rank number} from Forever's spell data (forever-spells/<class>.json; 0 for a spell without ranks)."""
+    out = {}
+    for tab in json.load(open(DATA / "forever-spells" / f"{cls}.json", encoding="utf-8"))["tabs"]:
+        for s in tab["spells"]:
+            for r in s["ranks"]:
+                m = re.search(r"(\d+)", r.get("rank") or "")
+                out[r["id"]] = int(m.group(1)) if m else 0
+    return out
+
+
+def owed_training(cfg, lv):
+    """The trainer's ranks at your level or below that your spellbook lacks, skipped ones included (2026-11-14, user: "Is the checklist
+    able to see what current rank of spells I have?"): ([(level, name, rank, cost)] your build and kit use, [...] optional), or None
+    without a spellbook snapshot. A rank is known when its spell id is in the book, or the book holds it or a higher rank of the spell (a
+    book may list the highest rank only); a spell Forever's data does not rank is known when the book has it at all."""
+    if not BOOK:
+        return None
+    ranks, need, out = spell_ranks(cfg["class"]), needed_spells(cfg), ([], [])
+    for L, sid, name, cost in sorted(training_rows(cfg["class"])):
+        if L > lv or sid in BOOK["ids"]:
+            continue
+        if SUPERSEDED.get(name) in BOOK["ranks"]:   # Ice Armor replaces Frost Armor: its lower ranks are no longer worth training
+            continue
+        r, have = ranks.get(sid), BOOK["ranks"].get(name)
+        if have is not None and (not r or have >= r):
+            continue
+        out[0 if name in need else 1].append((L, name, r, cost))
+    return out
+
+
+def rank_label(name, r):
+    return f"{name} (rank {r})" if r else name
+
+
 def needed_spells(cfg):
     """The spells the character's rotation and kit use: every bold name of its by-level guide, plus the class's essentials (buffs,
     conjures, the escape and control kit); other trainer spells are optional (a frost mage's fire spells, teleports)."""
@@ -1911,7 +1957,9 @@ def gold_plan(cfg, snap, at, lv):
     rep = reps.get(RACE_FACTION.get(race, ""), "Neutral")
     discount = STANDING.index(rep) >= STANDING.index(MOUNT["discount_rep"]) if rep in STANDING else False
     mount = MOUNT["riding"] + MOUNT["mount"] * (0.9 if discount else 1.0)
-    rows, saved, mount_at = [], GOLD or 0, None
+    owe = owed_training(cfg, lv)   # ranks your spellbook lacks now (2026-11-14): paid before anything else
+    owe_cost = sum(x[3] for x in owe[0]) if owe else 0
+    rows, saved, mount_at = [], (GOLD or 0) - owe_cost, None
     gear = {}
     for L, c in PLANNED:
         gear[L] = gear.get(L, 0) + c
@@ -1923,25 +1971,35 @@ def gold_plan(cfg, snap, at, lv):
         if L + 1 >= MOUNT["level"] and mount_at is None and saved >= mount:
             mount_at = L + 1
         rows.append((L, inc, nt, ot, [n for n, c in train.get(L + 1, []) if n in need]))
-    reserve = sum(r[2] for r in rows[:2])
+    reserve = sum(r[2] for r in rows[:2]) + owe_cost
     spend = None if GOLD is None else max(0, GOLD - reserve)
     opt = {L + 1: [n for n, c in train.get(L + 1, []) if n not in need] for L in range(lv - 1, 60)}
-    CTX["training"] = [{"level": lv, "need": [n for n, c in train.get(lv, []) if n in need],
+    CTX["training"] = ([{"level": lv, "need": [rank_label(n, r) for L, n, r, c in owe[0]], "cost": owe_cost,
+                         "optional": [rank_label(n, r) for L, n, r, c in owe[1]], "optional_cost": sum(x[3] for x in owe[1]),
+                         "book": BOOK["when"]}] if owe is not None else
+                       [{"level": lv, "need": [n for n, c in train.get(lv, []) if n in need],
                         "cost": sum(c for n, c in train.get(lv, []) if n in need), "optional": opt.get(lv, []),
-                        "optional_cost": sum(c for n, c in train.get(lv, []) if n not in need)}] + \
+                        "optional_cost": sum(c for n, c in train.get(lv, []) if n not in need)}]) + \
                       [{"level": L + 1, "need": names, "cost": nt, "optional": opt.get(L + 1, []), "optional_cost": ot}
                        for L, inc, nt, ot, names in rows[:8] if nt or ot]
-    by40 = (GOLD or 0) + sum(r[1] - r[2] - gear.get(r[0], 0) for r in rows if r[0] < MOUNT["level"])
+    by40 = (GOLD or 0) - owe_cost + sum(r[1] - r[2] - gear.get(r[0], 0) for r in rows if r[0] < MOUNT["level"])
     at60 = saved - (mount if mount_at else 0)
     CTX["gold"] = {"gold": GOLD, "reserve": reserve, "spend": spend, "mount": mount, "mount_level": MOUNT["level"], "by40": by40,
                    "mount_at": mount_at, "at60": at60, "gear_share": GEAR_SHARE,
                    "gear_before40": sum(c for L, c in PLANNED if L < MOUNT["level"]),
                    "income": [(r[0], r[1]) for r in rows[:6]]}
     o = ["## Gold plan", "",
-         f"Gold now: **{AH.money(GOLD) if GOLD is not None else 'unknown (log in)'}**. Training you need at the next two levels: "
+         f"Gold now: **{AH.money(GOLD) if GOLD is not None else 'unknown (log in)'}**. Training you need "
+         f"{'now and ' if owe_cost else ''}at the next two levels: "
          f"**{AH.money(reserve)}**. Free for gear now: **{AH.money(spend) if spend is not None else 'unknown'}**."
          + (f" You are **{AH.money(reserve - GOLD)} short** of that training: sell your crafts before you buy anything."
             if GOLD is not None and GOLD < reserve else ""), "",
+         *([(f"Your spellbook (ForeverTape, {BOOK['when']}) lacks, at your level or below: "
+             + ", ".join(f"{rank_label(n, r)} ({L}, {AH.money(c)})" for L, n, r, c in owe[0]) + f": {AH.money(owe_cost)}, train them first."
+             if owe[0] else f"Your spellbook (ForeverTape, {BOOK['when']}) has every rank your build and kit use up to level {lv}.")
+            + (f" Optional ranks it lacks: {', '.join(rank_label(n, r) for L, n, r, c in owe[1])} ({AH.money(sum(x[3] for x in owe[1]))})."
+               if owe[1] else ""), ""] if owe is not None else
+           ["Which ranks you know is unknown: ForeverTape (0.9.5 or later) writes your spellbook after a /reload or a logout.", ""]),
          f"Income is an estimate from Classic's data: coin and loot from about {kills_per_level(lv):.0f} kills a level (cloth, greens and "
          "other trade goods at the auction house's usual sale price after its cut, the rest at vendor prices), plus your pace of "
          f"{qpl:.1f} quests a level at Classic's quest money. It assumes you sell what drops or use it in place of buying it. \"Training\" counts the spells your rotation and kit use; optional ones (a frost mage's fire "
@@ -2574,6 +2632,11 @@ def main():
                 byid[m["id"]] = m
     # what you own already (2026-11-10, user: "Can you see my bags and what I've purchased?"): free and certain, worn at its level
     OWN.update(BG.owned(cfg, snap))
+    BOOK.update(BG.spellbook(cfg, snap["profile"]["name"]) or {})   # (2026-11-14: which ranks you know)
+    owe = owed_training(cfg, snap["profile"]["level"])
+    print(f"spellbook: ForeverTape {BOOK['when']}, {BOOK['n']} spells (level {BOOK['level']}); lacks "
+          + (", ".join(rank_label(n, r) for L, n, r, c in owe[0]) or "nothing the build uses") if BOOK else
+          "spellbook: none on this PC (ForeverTape 0.9.5 writes it after a /reload or logout): the Train step lists the level's ranks")
     have = {(p.get("name") or "").lower() for p in pool}
     db = IP.sim_db()
     byname = {it["name"].lower(): it for it in db["items"]}
