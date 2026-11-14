@@ -234,6 +234,17 @@ def load(roots, group, progress=None):
     return out
 
 
+def levels(name, sec=None):
+    """(lo, hi) of a guide part as the guide window shows it: its #displayname's levels when it has one (version 25 shows the part named
+    "29-30 Ashenvale" as "31-31 Ashenvale", and twelve parts of the 30-46 dungeon route a level or two later than their names), else its
+    name's; (0, 0) when neither starts with levels."""
+    for n in ((sec or {}).get("head", {}).get("displayname"), name):
+        m = re.match(r"\s*(\d+)-(\d+)", str(n or ""))
+        if m:
+            return int(m.group(1)), int(m.group(2))
+    return 0, 0
+
+
 def chain(route, mine):
     """The route's sections from the add-on's current guide on, each guide's "next" in its own text first (the guides the add-on ships
     have no imported metadata: Tara's 20-21 guide had sent the route to the group's lowest imported section, 2026-11-13), else in the saved
@@ -242,11 +253,12 @@ def chain(route, mine):
     out, name, seen = [], route.get("current"), set()
     while name and name not in seen:
         seen.add(name)
-        m = rxp.SECTION.match(name)
-        if not m:
+        if not rxp.SECTION.match(name):
             break
-        out.append({"name": name, "lo": int(m.group(1)), "hi": int(m.group(2)), "zones": rxp.zones(name)})
         sec = mine.get(name)
+        lo, hi = levels(name, sec)
+        shown = str((sec or {}).get("head", {}).get("displayname") or name).strip()
+        out.append({"name": name, "lo": lo, "hi": hi, "zones": list(dict.fromkeys(rxp.zones(name) + rxp.zones(shown))), "shown": shown})
         nx = str(sec["head"].get("next") or "") if sec else ""
         nx = affix(nx.split(";")[0].strip().split("\\")[-1].strip()) if nx else (route.get("meta") or {}).get(name)
         name = nx or None
@@ -261,7 +273,8 @@ def check(route, mine, who, maps):
     out = {"ok": True, "mismatch": False, "problems": [], "current": {}, "missing": [], "ambiguous": []}
     cur = route.get("current")
     sec = mine.get(cur)
-    lv = lambda n: tuple(int(x) for x in (re.match(r"(\d+)-(\d+)", n) or re.match(r"(0)-(0)", "0-0")).groups())
+    rng = levels(cur, sec)
+    lv = lambda n: rng
     if not sec:
         out["ok"], out["mismatch"] = False, True
         out["problems"].append(f"the guide part you are on in RestedXP (levels {lv(cur)[0]}-{lv(cur)[1]}) is not in the guide text on this PC")
@@ -498,7 +511,7 @@ def facts(cfg, snap, wow_dir, route):
     trust = check(route, mine, who, maps)
     override, runs, tagged = {}, {}, set()   # dungeons the group switches on itself (functions.enabledungeon: group-wide once parsed)
     for n, sec in mine.items():
-        m = re.match(r"(\d+)-(\d+)", n)
+        m = levels(n, sec) if levels(n, sec)[0] else None
         for st in sec["steps"]:
             for el in st["els"]:
                 if el["tag"] == "enabledungeon" and el["arg"]:
@@ -506,7 +519,7 @@ def facts(cfg, snap, wow_dir, route):
                     if t:
                         override[t] = not el["arg"].startswith("!")
                         if m and not el["arg"].startswith("!"):
-                            runs.setdefault(NAMES[t], (int(m.group(1)), int(m.group(2))))
+                            runs.setdefault(NAMES[t], m)
                 elif el["tag"] == "dungeon" and el["arg"] and not el["arg"].startswith("!"):
                     t = tag_of(el["arg"])
                     if t:
@@ -607,10 +620,9 @@ def before(mine, route, who, maps, enabled, at=None):
     out = {}
     for part in order + [route["current"]]:
         sec = mine.get(part)
-        m = re.match(r"(\d+)-(\d+)", part)
-        if not sec or not m:
+        lo, hi = levels(part, sec)
+        if not sec or not lo:
             continue
-        lo, hi = int(m.group(1)), int(m.group(2))
         steps = [x for x in sec["steps"] if applies(x["filter"], who, lo)]
         num = 0
         for i, st in enumerate(steps):
