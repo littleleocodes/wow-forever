@@ -23,8 +23,8 @@ Closest next points: Novice Paladin: Tara 22/25; Novice Spelunker: 5 of 6 dungeo
 
 ## Since your last refresh (2026-11-13 22:31, level 22)
 
-- New in the plan: Crusader's Silvered Chain Helm (head, level 24), Furious Falchion of the Elder (weapon, level 40).
-- Left the plan: Protector's Silvered Chain Shirt (chest: dropped: nothing in its place), Guard's Silvered Chain Helm (head: Crusader's Silvered Chain Helm at level 24 replaces it), Ebon Scimitar of the Sorcerer (weapon: Furious Falchion of the Elder at level 40 replaces it).
+- New in the plan: Guard's Chain Helm (head, level 25), Furious Falchion of the Elder (weapon, level 40).
+- Left the plan: Protector's Silvered Chain Shirt (chest: dropped: nothing in its place), Guard's Silvered Chain Helm (head: Guard's Chain Helm at level 25 replaces it), Ebon Scimitar of the Sorcerer (weapon: Furious Falchion of the Elder at level 40 replaces it).
 - Moved: Protector's Gloves (hands) level 22 to 23.
 
 ## Gold plan
@@ -33,28 +33,28 @@ Gold now: **1g 85s 63c**. Training you need at the next two levels: **2g 50s**. 
 
 Which ranks you know is unknown: ForeverTape (0.9.5 or later) writes your spellbook after a /reload or a logout.
 
-Income is an estimate from Classic's data: coin and loot from about 88 kills a level (cloth, greens and other trade goods at the auction house's usual sale price after its cut, the rest at vendor prices), plus your pace of 8.9 quests a level at Classic's quest money. It assumes you sell what drops or use it in place of buying it. "Training" counts the spells your rotation and kit use; optional ones (spells your build does not press, teleports) are listed apart. Only spells your race can learn are counted, and a talent's spell only once your build has the talent.
+Income is an estimate from Classic's data: coin and loot from about 88 kills a level (cloth, greens and other trade goods at the auction house's usual sale price after its cut, the rest at vendor prices), plus your pace of 8.9 quests a level at Classic's quest money. It assumes you sell what drops or use it in place of buying it. "Training" counts the spells your rotation and kit use; optional ones (spells your build does not press, teleports) are listed apart. Only spells your race can learn are counted, and a talent's spell only once your build has the talent. Spells new in Forever (Holy Shield, Holy Strike, Seal of Fury) are not in Classic's trainer table: their price here is Classic's usual price for the level, an estimate.
 
 | Level | Income (estimate) | Training you need at the next level | Optional training |
 |---|---|---|---|
 | 22 | 2g 49s 83c | - | - |
 | 23 | 2g 92s 75c | 2g 50s (Turn Undead, Hammer of Justice, Blessing of Protection, Redemption, Blessing of Wisdom) | - |
 | 24 | 3g 43s 42c | - | - |
-| 25 | 3g 49s 91c | 1g 80s (Retribution Aura, Flash of Light, Seal of Righteousness) | 60s |
+| 25 | 3g 49s 91c | 2g 40s (Retribution Aura, Flash of Light, Seal of Righteousness, Seal of Fury) | 60s |
 | 26 | 4g 35s 13c | - | - |
-| 27 | 4g 34s 85c | 90s (Exorcism) | 90s |
+| 27 | 4g 34s 85c | 1g 80s (Exorcism, Holy Strike) | 90s |
 | 28 | 4g 13s 25c | - | - |
 | 29 | 4g 54s 38c | 4g 42s (Holy Light, Lay on Hands, Devotion Aura, Divine Intervention, Consecration) | 1g 10s |
 | 30 | 6g 13s 58c | - | - |
 | 31 | 6g 60s 2c | 2g 40s (Blessing of Might, Seal of the Crusader) | 1g 20s |
 | 32 | 8g 38c | - | - |
-| 33 | 8g 15s 32c | 5g 20s (Divine Shield, Blessing of Wisdom, Flash of Light, Seal of Righteousness) | - |
+| 33 | 8g 15s 32c | 6g 50s (Divine Shield, Blessing of Wisdom, Flash of Light, Seal of Righteousness, Seal of Fury) | - |
 | 34 | 8g 46s 22c | - | - |
-| 35 | 9g 34s 1c | 4g 20s (Exorcism, Retribution Aura, Redemption) | 1g 40s |
+| 35 | 9g 34s 1c | 5g 60s (Exorcism, Retribution Aura, Redemption, Holy Strike) | 1g 40s |
 
-Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Stormwind; Forever's not confirmed). At this income you would have about 95g 8s 95c by 40 after training and the plan's gear, enough for the mount at 40.
+Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Stormwind; Forever's not confirmed). At this income you would have about 91g 44s by 40 after training and the plan's gear, enough for the mount at 41.
 
-Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 5g 61s 76c before 40 and 16g 93s 96c in all; you would reach 60 with about 680g 10s 76c after the mount.
+Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 5g 6s 71c before 40 and 16g 38s 91c in all; you would reach 60 with about 652g 35s 81c after the mount.
 
 > **Heads up:** Gold is your bag add-on's (2026-11-14 07:48): Blizzard's data are from your logout at 2026-11-13 07:08.
 > **Heads up:** Catch up with your guide is off for this refresh: your quest log is Blizzard's from your logout at 2026-11-13 07:08, older than your guide's position (saved 2026-11-14 07:53), so it cannot tell which quests you picked up since. Log out once and refresh.
@@ -69,7 +69,7 @@ Count a piece's stats in stamina: 100 armor = 5.68, 1 weapon damage per second =
 
 | Slot | You wear (or the plan's next piece) | Worth (stamina) | A find must reach | Next planned upgrade |
 |---|---|---|---|---|
-| head | Crusader's Silvered Chain Helm (planned, level 24) | 24 | 41 | 50 |
+| head | Guard's Chain Helm (planned, level 25) | 28 | 46 | 50 |
 | neck | empty | 0 | 10 | - |
 | shoulder | Laced Mail Shoulderpads | 0 | 32 | 40 |
 | back | Catacomb Cloak | 2 | 12 | - |
@@ -92,7 +92,7 @@ Count a piece's stats in stamina: 100 armor = 5.68, 1 weapon damage per second =
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 0.1 hours old). "For your trip": enough to keep it up for about 1.7 hours of play, to your next training at level 24 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 0.6 hours old). "For your trip": enough to keep it up for about 1.7 hours of play, to your next training at level 24 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Better tanking | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|
@@ -105,7 +105,7 @@ One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience 
 
 ### Craft
 
-- **head**: Crusader's Silvered Chain Helm, 1.6% better tanking (wear it right away; best until level 50; saves about 35 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 125 in the client's data; you have 40). Why it stays: Warbringer's Crown of the Beast at 40, 1.1% better, saves about 13 min before its next upgrade; Warbringer's Crown of the Champion at 40, 1.0% better, saves about 12 min before its next upgrade; Warbringer's Crown of the Defender at 40, 1.2% better, saves about 13 min before its next upgrade. If you do not craft it, wear Chief Brigadier Coif from level 34 (1.9% better tanking; Auction House: usually listed (in 94% of the hourly snapshots), about 57s, not this hour). Materials: Bronze Bar x15, Coarse Grinding Stone x6, Silver Bar x4, Pristine Leather x4, Lesser Magic Essence x6 (about 89s 83c at today's prices).
+- **head**: Guard's Chain Helm, 1.9% better tanking (wear it right away; best until level 50; saves about 41 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 130 in the client's data; you have 40). Why it stays: Warbringer's Crown of the Beast at 40, 0.8% better, saves about 9 min before its next upgrade; Warbringer's Crown of the Champion at 40, 0.7% better, saves about 8 min before its next upgrade; Warbringer's Crown of the Defender at 40, 0.9% better, saves about 10 min before its next upgrade. If you do not craft it, wear Chief Brigadier Coif from level 34 (1.9% better tanking; Auction House: usually listed (in 94% of the hourly snapshots), about 57s, not this hour). Materials: Bronze Bar x8, Coarse Grinding Stone x2, Shadowgem x6 (about 35s 78c at today's prices).
 - **hands**: Protector's Gloves, 1.0% better tanking, replaces Dusty Mining Gloves (wear it right away; best until level 50; saves about 21 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 110 in the client's data; you have 40). Why it stays: Justicar's Gauntlet at 35, 0.6% better, saves about 9 min before its next upgrade; Sentinel's Gauntlet at 35, 0.7% better, saves about 11 min before its next upgrade; Warder's Gauntlet at 35, 0.9% better, saves about 14 min before its next upgrade. If you do not craft it, wear Krol'dok Warplate Gauntlets from level 40 (1.9% better tanking; Auction House now: 4g 9s). Materials: Bronze Bar x10, Rough Grinding Stone x4, Sulfuric Acid x2, Tigerseye x3 (about 30s 77c at today's prices).
 
 ### Dungeon runs
@@ -125,7 +125,7 @@ The cheapest way up with the recipes you know, materials at today's prices (auct
 Crafts in your plan:
 
 - Protector's Gloves (hands, level 23): learn it (a Forever recipe: where it is taught is not in the data yet); Classic asked Blacksmithing 110, you have 40.
-- Crusader's Silvered Chain Helm (head, level 24): learn it (a Forever recipe: where it is taught is not in the data yet); Classic asked Blacksmithing 125, you have 40.
+- Guard's Chain Helm (head, level 25): learn it (a Forever recipe: where it is taught is not in the data yet); Classic asked Blacksmithing 130, you have 40.
 - Warder's Belt (waist, level 30): learn it (a Forever recipe: where it is taught is not in the data yet); Classic asked Blacksmithing 155, you have 40.
 - Warder's Boots (feet, level 40): learn it (a Forever recipe: where it is taught is not in the data yet); Classic asked Blacksmithing 205, you have 40.
 - Warder's Gloves (hands, level 50): learn it (a Forever recipe: where it is taught is not in the data yet); Classic asked Blacksmithing 255, you have 40.
@@ -165,7 +165,7 @@ Materials: Peacebloom x4, Empty Vial x4, Mild Spices x4.
 
 | Slot | Item | Worth at your level | Replaced at |
 |---|---|---|---|
-| head | **empty** | 0 | level 24: Crusader's Silvered Chain Helm |
+| head | **empty** | 0 | level 25: Guard's Chain Helm |
 | neck | **empty** | 0 | nothing worth 0.5% before 60 |
 | shoulder | Laced Mail Shoulderpads | 0.0% better tanking | level 40: Tyrant's Epaulets |
 | back | Catacomb Cloak | 0.2% better tanking | not before 60 by 0.5% |
@@ -198,14 +198,14 @@ Each upgrade worth 0.5% better tanking or more, under the level at which you can
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **legs**: Risen Sentry's Links, 1.2% better tanking, replaces Chausses of Westfall (wear it right away; best to the end of leveling; saves about 37 min of group play). Auction House now: 1g 8s. Why it stays: Krol'dok Warplate Legplates at 41, 1.1% better, saves about 27 min, but its 8g 67s takes about 96 min of play to earn; Titanic Leggings at 55, 1.9% better, saves about 16 min before 60. Saves about 37 min of group play; earning its price takes about 28 min of play. Fits your gear budget (12g 46s 39c left after it).
+- **legs**: Risen Sentry's Links, 1.2% better tanking, replaces Chausses of Westfall (wear it right away; best to the end of leveling; saves about 37 min of group play). Auction House now: 1g 8s. Why it stays: Krol'dok Warplate Legplates at 41, 1.1% better, saves about 27 min, but its 8g 59s takes about 95 min of play to earn; Titanic Leggings at 55, 1.9% better, saves about 16 min before 60. Saves about 37 min of group play; earning its price takes about 28 min of play. Fits your gear budget (11g 61s 44c left after it).
 
 
 ### Level 37
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **wrist**: Turtle Scale Bracers, 1.3% better tanking, replaces Bravo's Armbands (wear it right away; best to the end of leveling; saves about 37 min of group play). Auction House: usually listed (in 70% of the hourly snapshots), about 2g 24s 99c, not this hour. Why it stays: Sentinel's Wristguards at 45, 0.7% better, saves about 14 min before 60; Warder's Wristguards at 45, 0.8% better, saves about 17 min before 60. Saves about 37 min of group play; earning its price takes about 33 min of play. Fits your gear budget (16g 8s 51c left after it).
+- **wrist**: Turtle Scale Bracers, 1.3% better tanking, replaces Bravo's Armbands (wear it right away; best to the end of leveling; saves about 37 min of group play). Auction House: usually listed (in 70% of the hourly snapshots), about 2g 24s 99c, not this hour. Why it stays: Sentinel's Wristguards at 45, 0.7% better, saves about 14 min before 60; Warder's Wristguards at 45, 0.8% better, saves about 17 min before 60. Saves about 37 min of group play; earning its price takes about 33 min of play. Fits your gear budget (15g 23s 56c left after it).
 
 
 ### Level 40
@@ -216,15 +216,15 @@ Each upgrade worth 0.5% better tanking or more, under the level at which you can
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **shoulder**: Tyrant's Epaulets, 2.2% better tanking, replaces Laced Mail Shoulderpads (wear it right away; best to the end of leveling; saves about 58 min of group play). Auction House now: 90s 99c. Why it stays: Krol'dok Warplate Pauldrons at 41, 1.0% better, saves about 25 min, but its 9g takes about 99 min of play to earn; Stockade Pauldrons at 50, 1.9% better, saves about 28 min, but its 75g 80s takes about 552 min of play to earn. Saves about 58 min of group play; earning its price takes about 15 min of play. Fits your gear budget (23g 69s 98c left after it).
-- **weapon**: Furious Falchion of the Elder + Captain's Buckler of the Defender, 6.4% better tanking, replaces Stinging Viper (wear it right away; best to the end of leveling; saves about 170 min of group play). Auction House: listed now at 6g 69s, usually about 3g: wait for a cheaper one / Auction House: usually listed (in 26% of the hourly snapshots), about 2g 89s, not this hour. Why it stays: Sageblade at 59, 6.3% better, saves about 10 min before 60; Sageblade at 59, 6.6% better, saves about 11 min before 60; Sageblade at 59, 6.8% better, saves about 11 min before 60. Saves about 170 min of group play; earning its price takes about 88 min of play. Fits your gear budget (16g 38s 86c left after it).
+- **shoulder**: Tyrant's Epaulets, 2.2% better tanking, replaces Laced Mail Shoulderpads (wear it right away; best to the end of leveling; saves about 58 min of group play). Auction House now: 90s 99c. Why it stays: Krol'dok Warplate Pauldrons at 41, 1.0% better, saves about 25 min, but its 9g 10s takes about 100 min of play to earn; Stockade Pauldrons at 50, 1.9% better, saves about 28 min, but its 75g 80s takes about 552 min of play to earn. Saves about 58 min of group play; earning its price takes about 15 min of play. Fits your gear budget (22g 15s 3c left after it).
+- **weapon**: Furious Falchion of the Elder + Captain's Buckler of the Defender, 6.4% better tanking, replaces Stinging Viper (wear it right away; best to the end of leveling; saves about 170 min of group play). Auction House: listed now at 6g 69s, usually about 3g: wait for a cheaper one / Auction House: usually listed (in 26% of the hourly snapshots), about 2g 89s, not this hour. Why it stays: Sageblade at 59, 6.3% better, saves about 10 min before 60; Sageblade at 59, 6.6% better, saves about 11 min before 60; Sageblade at 59, 6.8% better, saves about 11 min before 60. Saves about 170 min of group play; earning its price takes about 88 min of play. Fits your gear budget (14g 83s 91c left after it).
 
 
 ### Level 50
 
 #### Quests to do
 
-- **head**: Avenguard Helm, 2.3% better tanking, replaces Crusader's Silvered Chain Helm (wear it right away; best to the end of leveling; saves about 33 min of group play). quest "The God Hakkar" (level 53; the chain starts with "Screecher Spirits" from Yeh'kinya, level 40). Not on your RestedXP route (it takes the chain as far as "Screecher Spirits", at about level 47): from Yeh'kinya (Tanaris 67.0, 22.4). Why it stays: Lionheart Helm at 56, 0.5% better, saves about 3 min before 60.
+- **head**: Avenguard Helm, 2.0% better tanking, replaces Guard's Chain Helm (wear it right away; best to the end of leveling; saves about 29 min of group play). quest "The God Hakkar" (level 53; the chain starts with "Screecher Spirits" from Yeh'kinya, level 40). Not on your RestedXP route (it takes the chain as far as "Screecher Spirits", at about level 47): from Yeh'kinya (Tanaris 67.0, 22.4). Why it stays: Lionheart Helm at 56, 0.5% better, saves about 3 min before 60.
 
 #### Craft
 
@@ -284,7 +284,7 @@ Every leveling dungeon you have not outgrown, once, at the level its quests fit:
   - Drop: Carapace of Anub'shiah (chest, from level 52; Anub'shiah, drop chance unknown, counted as 25%): over your Burnished Tunic, 3.4% better, about 41 min saved if it drops
 - **Dire Maul** (55-60), run at level 57: worth a detour for 3 quests at full experience; its drops are worth about 8 min on average.
   - Pick up first: Enticing Negolash (level 52, from Ruined Lifeboat); Lethtendris's Web (level 57, from Latronicus Moonspear (Feralas 30.3, 46.2)); Pusillin and the Elder Azj'Tordin (level 58, from Azj'Tordin)
-  - Drop: Crystal Sword of Magic + Observer's Shield (weapon, from level 56; Tribute or Cho'Rush the Observer, 25% drop): over your Furious Falchion of the Elder + Captain's Buckler of the Defender, 5.0% better, about 32 min saved if it drops
+  - Drop: Crystal Sword of the Sorcerer + Observer's Shield (weapon, from level 56; Tribute or Cho'Rush the Observer, 25% drop): over your Furious Falchion of the Elder + Captain's Buckler of the Defender, 5.3% better, about 34 min saved if it drops
 - **Blackrock Spire** (55-60), run at level 56: worth a detour for 3 quests at full experience.
   - Pick up first: Put Her Down (level 59, from Helendis Riverhorn (Burning Steppes 85.8, 68.9))
   - Starts inside the run: Bijou's Belongings → Message to Maxwell (2 parts, level 59, from Bijou inside Blackrock Spire)

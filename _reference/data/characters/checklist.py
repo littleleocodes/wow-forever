@@ -270,14 +270,17 @@ def steps_html(C, lv):
         items.append(info(f'<strong>You are {coins(gold["reserve"] - gold["gold"])} short of your next training</strong>',
                           "sell your crafts (the Sell step) before you buy anything else"))
     tr = C.get("training") or []
+    est = set(C.get("training_estimated") or [])   # Forever's own ranks: Classic's price for the level, an estimate (2026-11-14)
+    guess = lambda names: (" · " + ", ".join(sorted({esc(n.split(" (rank")[0]) for n in names if n.split(" (rank")[0] in est}))
+                           + "'s price is an estimate (new in Forever)") if any(n.split(" (rank")[0] in est for n in names) else ""
     here = next((x for x in tr if x["level"] == lv), None)
     if here and here["need"]:
         items.append(todo(f"train{lv}", f"Train {', '.join(esc(n) for n in here['need'])}",
                           f"{coins(here['cost'])} · " + (f"missing from your spellbook ({esc(here['book'])})" if here.get("book")
-                                                         else "skip what you already have")))
+                                                         else "skip what you already have") + guess(here["need"])))
     nxt = next((x for x in tr if x["level"] > lv and x["need"]), None)
     if nxt:
-        items.append(info(f"Keep {coins(nxt['cost'])} for level {nxt['level']}", ", ".join(esc(n) for n in nxt["need"])))
+        items.append(info(f"Keep {coins(nxt['cost'])} for level {nxt['level']}", ", ".join(esc(n) for n in nxt["need"]) + guess(nxt["need"])))
     tal = C.get("talents") or {}
     if tal.get("respec"):   # points that follow another build: respec, then the order's points so far (none spent: just spend them)
         link = (f' · <a href="{esc(tal["link"])}" target="_blank" rel="noopener">open the build in the talent calculator</a>'

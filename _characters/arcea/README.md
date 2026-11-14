@@ -35,32 +35,32 @@ Closest next points: Novice Paladin: Tara 22/25; Novice Spelunker: 5 of 6 dungeo
 
 ## Gold plan
 
-Gold now: **5g 21s 18c**. Training you need at the next two levels: **1g 20s**. Free for gear now: **4g 1s 18c**.
+Gold now: **5g 21s 18c**. Training you need at the next two levels: **2g 40s**. Free for gear now: **2g 81s 18c**.
 
 Your spellbook (ForeverTape, 2026-11-14 17:15) has every rank your build and kit use up to level 33. Optional ranks it lacks: Detect Magic, Scorch (rank 1), Flamestrike (rank 2), Fireball (rank 5), Dampen Magic (rank 2), Scorch (rank 2), Teleport: Darnassus, Fireball (rank 6), Amplify Magic (rank 2), Flamestrike (rank 3) (5g 75s).
 
-Income is an estimate from Classic's data: coin and loot from about 140 kills a level (cloth, greens and other trade goods at the auction house's usual sale price after its cut, the rest at vendor prices), plus your pace of 9.7 quests a level at Classic's quest money. It assumes you sell what drops or use it in place of buying it. "Training" counts the spells your rotation and kit use; optional ones (spells your build does not press, teleports) are listed apart. Only spells your race can learn are counted, and a talent's spell only once your build has the talent.
+Income is an estimate from Classic's data: coin and loot from about 140 kills a level (cloth, greens and other trade goods at the auction house's usual sale price after its cut, the rest at vendor prices), plus your pace of 9.7 quests a level at Classic's quest money. It assumes you sell what drops or use it in place of buying it. "Training" counts the spells your rotation and kit use; optional ones (spells your build does not press, teleports) are listed apart. Only spells your race can learn are counted, and a talent's spell only once your build has the talent. Spells new in Forever (Frostfire Bolt, Ice Lance, Teleport: Dalaran) are not in Classic's trainer table: their price here is Classic's usual price for the level, an estimate.
 
 | Level | Income (estimate) | Training you need at the next level | Optional training |
 |---|---|---|---|
-| 33 | 8g 17s 70c | 1g 20s (Cone of Cold) | 2g 50s |
+| 33 | 8g 17s 70c | 2g 40s (Cone of Cold, Ice Lance) | 2g 50s |
 | 34 | 8g 49s 90c | - | - |
 | 35 | 9g 43s 99c | 2g 60s (Blizzard, Mana Shield) | 2g 80s |
 | 36 | 12g 49s 15c | - | - |
 | 37 | 10g 30s 80c | 4g 20s (Frostbolt, Fire Blast, Arcane Explosion) | 1g 40s |
 | 38 | 15g 36s 8c | - | - |
-| 39 | 15g 93c | 9g (Frost Nova, Ice Armor, Arcane Missiles, Fire Ward, Conjure Water, Polymorph) | 6g |
+| 39 | 15g 93c | 9g (Frost Nova, Ice Armor, Arcane Missiles, Fire Ward, Conjure Water, Polymorph) | 7g 50s |
 | 40 | 13g 31s 46c | - | - |
-| 41 | 18g 33s 59c | 8g 62s 50c (Frost Ward, Conjure Food, Arcane Intellect, Cone of Cold) | 4g 7s 50c |
+| 41 | 18g 33s 59c | 10g 90s (Frost Ward, Conjure Food, Arcane Intellect, Cone of Cold, Ice Lance) | 4g 7s 50c |
 | 42 | 19g 30s 6c | - | - |
 | 43 | 21g 67s 69c | 6g 90s (Frostbolt, Blizzard, Mana Shield) | - |
 | 44 | 27g 80s 77c | - | - |
 | 45 | 20g 92s 53c | 5g 20s (Fire Blast, Arcane Explosion) | 5g 40s |
 | 46 | 25g 42s 77c | - | - |
 
-Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Gnomeregan Exiles; Forever's not confirmed). At this income you would have about 64g 50s 73c by 40 after training and the plan's gear, enough for the mount at 43.
+Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Gnomeregan Exiles; Forever's not confirmed). At this income you would have about 63g 30s 73c by 40 after training and the plan's gear, enough for the mount at 43.
 
-Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 2g 99s before 40 and 10g 14s 99c in all; you would reach 60 with about 679g 49s 83c after the mount.
+Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 2g 99s before 40 and 10g 14s 99c in all; you would reach 60 with about 669g 42s 33c after the mount.
 
 Measured from your refreshes: 1g 32s 78c net a level (gold change after what you spent, 6.1 levels from 2026-11-09 14:38 to 2026-11-14 18:20).
 
@@ -101,7 +101,7 @@ Count a piece's stats in spell power: 1 intellect = 0.18, 1 spirit = 0.39, 1 sta
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 0.1 hours old). "For your trip": enough to keep it up for about 2.3 hours of play, to your next training at level 34 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 0.6 hours old). "For your trip": enough to keep it up for about 2.3 hours of play, to your next training at level 34 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|
@@ -208,28 +208,28 @@ Each upgrade worth 0.5% faster kills or more, under the level at which you can g
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **shoulder**: Lunar Mantle of Frozen Wrath, 2.9% faster kills, replaces Double-Stitched Woolen Shoulders (wear it right away; best to the end of leveling; saves about 39 min of killing). Auction House now: 2g 99s. Why it stays: Ghostweave Mantle at 54, 0.7% faster, saves about 5 min before 60; Argent Shoulders at 56, 1.4% faster, saves about 6 min before 60. Saves about 39 min of killing; earning its price takes about 36 min of play. Fits your gear budget (17g 18s 5c left after it).
+- **shoulder**: Lunar Mantle of Frozen Wrath, 2.9% faster kills, replaces Double-Stitched Woolen Shoulders (wear it right away; best to the end of leveling; saves about 39 min of killing). Auction House now: 2g 99s. Why it stays: Ghostweave Mantle at 54, 0.7% faster, saves about 5 min before 60; Argent Shoulders at 56, 1.4% faster, saves about 6 min before 60. Saves about 39 min of killing; earning its price takes about 36 min of play. Fits your gear budget (15g 98s 5c left after it).
 
 
 ### Level 40
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **hands**: Dreamweave Gloves, 3.7% faster kills, replaces Town Clerk's Mittens (wear it right away; best to the end of leveling; saves about 53 min of killing). Tailoring: learn it first (trainer; Classic asked skill 225, Forever often less; you have 164); Auction House now: 2g 49s. Saves about 53 min of killing; earning its price takes about 27 min of play. Fits your gear budget (17g 40s 28c left after it).
+- **hands**: Dreamweave Gloves, 3.7% faster kills, replaces Town Clerk's Mittens (wear it right away; best to the end of leveling; saves about 53 min of killing). Tailoring: learn it first (trainer; Classic asked skill 225, Forever often less; you have 164); Auction House now: 2g 49s. Saves about 53 min of killing; earning its price takes about 27 min of play. Fits your gear budget (15g 44s 45c left after it).
 
 
 ### Level 45
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **head**: Dreamweave Circlet, 3.2% faster kills, replaces Silk Headband (wear it right away; best to the end of leveling; saves about 42 min of killing). Tailoring: learn it first (trainer; Classic asked skill 250, Forever often less; you have 164); Auction House now: 4g 98s. Saves about 42 min of killing; earning its price takes about 34 min of play. Fits your gear budget (43g 16s 58c left after it).
+- **head**: Dreamweave Circlet, 3.2% faster kills, replaces Silk Headband (wear it right away; best to the end of leveling; saves about 42 min of killing). Tailoring: learn it first (trainer; Classic asked skill 250, Forever often less; you have 164); Auction House now: 4g 98s. Saves about 42 min of killing; earning its price takes about 34 min of play. Fits your gear budget (41g 20s 75c left after it).
 
 
 ### Level 49
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **ranged**: Lesser Eternal Wand, 2.4% faster kills, replaces Wand of Eventide (wear it right away; best to the end of leveling; saves about 28 min of killing). Enchanting: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 265 in the client's data; you have 151); Auction House: usually listed (in 40% of the hourly snapshots), about 6g, not this hour. Why it stays: Greater Eternal Wand at 55, 0.7% faster, saves about 4 min before 60. Saves about 28 min of killing; earning its price takes about 9 min of play. Fits your gear budget (71g 79s 68c left after it).
+- **ranged**: Lesser Eternal Wand, 2.4% faster kills, replaces Wand of Eventide (wear it right away; best to the end of leveling; saves about 28 min of killing). Enchanting: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 265 in the client's data; you have 151); Auction House: usually listed (in 40% of the hourly snapshots), about 6g, not this hour. Why it stays: Greater Eternal Wand at 55, 0.7% faster, saves about 4 min before 60. Saves about 28 min of killing; earning its price takes about 9 min of play. Fits your gear budget (68g 90s 52c left after it).
 
 
 ## When to leave the guide

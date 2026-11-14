@@ -2088,26 +2088,85 @@ def train_level(cls, L, sid, name):
 
 
 def training_rows(cls):
-    """[(level, spell id, name, cost copper)] the class trainer teaches this character (Classic's table, class_training.csv), each at
-    the level it can be learned (train_level: race and talents)."""
+    """[(level, spell id, name, cost copper)] the class trainer teaches this character, each at the level it can be learned (train_level:
+    race and talents): Classic's table (class_training.csv) without the rows Forever no longer teaches, plus Forever's own ranks
+    (forever_ranks, 2026-11-14) at Classic's usual price for their level (classic_price: an estimate; their names in TRAIN["estimated"]).
+    A Classic row goes when Forever's client has no skill row for its spell (Elune's Grace, Fire Nova Totem: not learnable), or when
+    Forever's spell data list the spell under other ids (Curse of the Elements remade at 20/30/40/50, Classic's 32/46/60 ranks gone)."""
+    fids, fnames = set(), set()
+    for tab, sp, r, rank, sid in fs_ranks(cls):
+        fids.add(sid)
+        fnames.add(sp["name"])
     out = []
     for r in csv.DictReader(open(IP.RAW / "class_training.csv", encoding="utf-8")):
         if int(r["class"]) == IP.CLASS_ID[cls] and r["name"]:
-            L = train_level(cls, int(r["level"]), int(r["spell"]), r["name"])
+            sid = int(r["spell"])
+            if sid not in race_masks() or (sid not in fids and r["name"] in fnames):
+                continue
+            L = train_level(cls, int(r["level"]), sid, r["name"])
             if L is not None:
-                out.append((L, int(r["spell"]), r["name"], int(r["cost"])))
+                out.append((L, sid, r["name"], int(r["cost"])))
+    est = TRAIN.setdefault(("estimated", cls), set())
+    for lv, sid, name, rank in forever_ranks(cls):
+        L = train_level(cls, lv, sid, name)
+        if L is not None:
+            out.append((L, sid, name, classic_price(cls, lv)))
+            est.add(name)
     return out
+
+
+def fs_ranks(cls):
+    """[(tab, spell, rank row, rank number, spell id)] of Forever's spell data (forever-spells/<class>.json), loaded once; a rank with no
+    id gets a stable negative stand-in (the rogue's Shank), so the spellbook check and the training rows can still name it."""
+    if ("fs", cls) not in TRAIN:
+        import zlib
+        out = []
+        for tab in json.load(open(DATA / "forever-spells" / f"{cls}.json", encoding="utf-8"))["tabs"]:
+            for sp in tab["spells"]:
+                for r in sp["ranks"]:
+                    m = re.search(r"(\d+)", r.get("rank") or "")
+                    sid = r.get("id") or -(zlib.crc32(f"{sp['name']}|{r.get('rank') or ''}".encode()) & 0x7FFFFFFF)
+                    out.append((tab["name"], sp, r, int(m.group(1)) if m else 0, sid))
+        TRAIN[("fs", cls)] = out
+    return TRAIN[("fs", cls)]
+
+
+def forever_ranks(cls):
+    """Forever's trainer ranks that Classic's table lacks (2026-11-14, user: "Yes add the spells", after Ice Lance's rank 3 at 34 was
+    missing from Arcea's training): [(level, spell id, name, rank)], every rank Forever's spell data mark new against Classic or that
+    carries a Forever-made spell id (100000 and up: Curse of the Elements' remade ranks are marked changed), in the class's own tabs.
+    Left out: the hunter's Pets tab (pet abilities: no class trainer teaches them), passives (they come with the level, as far as the
+    data say), a talent's first rank and a single-rank talent ability (the talent grants them), and ranks with no level."""
+    known = {int(r["spell"]) for r in csv.DictReader(open(IP.RAW / "class_training.csv", encoding="utf-8"))
+             if int(r["class"]) == IP.CLASS_ID[cls]}
+    out = []
+    for tab, sp, r, rank, sid in fs_ranks(cls):
+        new = ((r.get("classic") or {}).get("status") == "new") or (r.get("id") or 0) >= 100000
+        if not new or sid in known or tab == "Pets" or (r.get("rank") or "") == "Passive" or not r.get("level"):
+            continue
+        if sp["name"] in talent_names(cls) and rank <= 1:
+            continue
+        out.append((int(r["level"]), sid, sp["name"], rank))
+    return out
+
+
+def classic_price(cls, L):
+    """Classic's usual trainer price for the class at level L (the most common price of its ranks there; else the nearest lower level
+    with ranks, else the lowest): the estimate for a Forever rank Classic's table lacks (a mage's level-34 ranks: 1g 20s)."""
+    if ("price", cls) not in TRAIN:
+        by = {}
+        for r in csv.DictReader(open(IP.RAW / "class_training.csv", encoding="utf-8")):
+            if int(r["class"]) == IP.CLASS_ID[cls] and r["name"]:
+                by.setdefault(int(r["level"]), []).append(int(r["cost"]))
+        TRAIN[("price", cls)] = {lv: max(set(cs), key=lambda c: (cs.count(c), c)) for lv, cs in by.items()}
+    p = TRAIN[("price", cls)]
+    lower = [lv for lv in p if lv <= L]
+    return p[max(lower)] if lower else p[min(p)]
 
 
 def spell_ranks(cls):
     """{spell id: rank number} from Forever's spell data (forever-spells/<class>.json; 0 for a spell without ranks)."""
-    out = {}
-    for tab in json.load(open(DATA / "forever-spells" / f"{cls}.json", encoding="utf-8"))["tabs"]:
-        for s in tab["spells"]:
-            for r in s["ranks"]:
-                m = re.search(r"(\d+)", r.get("rank") or "")
-                out[r["id"]] = int(m.group(1)) if m else 0
-    return out
+    return {sid: rank for tab, sp, r, rank, sid in fs_ranks(cls)}
 
 
 def owed_training(cfg, lv):
@@ -2265,6 +2324,9 @@ def gold_plan(cfg, snap, at, lv):
                         "optional_cost": sum(c for n, c in train.get(lv, []) if n not in need(lv))}]) + \
                       [{"level": L + 1, "need": names, "cost": nt, "optional": opt.get(L + 1, []), "optional_cost": ot}
                        for L, inc, nt, ot, names in rows[:8] if nt or ot]
+    est = TRAIN.get(("estimated", cfg["class"])) or set()   # Forever's own ranks, priced by Classic's level price (training_rows)
+    est_seen = sorted({n for L in range(lv, 61) for n, c in train.get(L, []) if n in est})
+    CTX["training_estimated"] = est_seen
     by40 = (GOLD or 0) - owe_cost + sum(r[1] - r[2] - gear.get(r[0], 0) for r in rows if r[0] < MOUNT["level"])
     at60 = saved - (mount if mount_at else 0)
     CTX["gold"] = {"gold": GOLD, "reserve": reserve, "spend": spend, "mount": mount, "mount_level": MOUNT["level"], "by40": by40,
@@ -2287,7 +2349,9 @@ def gold_plan(cfg, snap, at, lv):
          "other trade goods at the auction house's usual sale price after its cut, the rest at vendor prices), plus your pace of "
          f"{qpl:.1f} quests a level at Classic's quest money. It assumes you sell what drops or use it in place of buying it. \"Training\" "
          "counts the spells your rotation and kit use; optional ones (spells your build does not press, teleports) are listed apart. Only "
-         "spells your race can learn are counted, and a talent's spell only once your build has the talent.", "",
+         "spells your race can learn are counted, and a talent's spell only once your build has the talent."
+         + (f" Spells new in Forever ({', '.join(est_seen)}) are not in Classic's trainer table: their price here is Classic's usual price "
+            "for the level, an estimate." if est_seen else ""), "",
          "| Level | Income (estimate) | Training you need at the next level | Optional training |", "|---|---|---|---|"]
     for L, inc, nt, ot, names in rows[:LAST - lv + 1][:14]:
         o += [f"| {L} | {AH.money(inc)} | {AH.money(nt) if nt else '-'}{' (' + ', '.join(names) + ')' if names else ''} | "

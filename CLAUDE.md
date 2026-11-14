@@ -160,6 +160,14 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   (`plan.train_level`, 2026-11-14: Arcea's had Teleport: Orgrimmar and Pyroblast ranks): Forever's SkillLineAbility race masks
   (`raw/2026-11-09-wago-1.60.1.70862/`: the other faction's teleports and portals, the priests' racial spells), and a talent's ability
   (Pyroblast, Holy Shield, Mortal Strike) from the level the build takes the talent, or at once when the spellbook has it.
+  Forever's own ranks are in the lists since 2026-11-14 (user: "Yes add the spells"; Classic's trainer table has no Ice Lance, so rank 3
+  at 34 was missing): `plan.forever_ranks` takes every rank forever-spells/ marks new or that carries a Forever-made id (100000 and up:
+  Curse of the Elements was remade at 20/30/40/50 and is marked changed), in the class's own tabs (not the hunter's Pets tab), no
+  passives, a talent's ability from its second rank; priced at Classic's usual price for the level (`classic_price`, an estimate the gold
+  plan and the checklist say). Classic rows Forever no longer teaches go: no skill row in the client (Elune's Grace, Fire Nova Totem,
+  Hemorrhage 46/58), or the spell remade under other ids (Curse of the Elements, Multi-Shot, Scorpid Sting, Frenzied Regeneration).
+  `needed_at` counts every bold name of the guide's stages, so a guide names a spell its rotation skips without bold (the Arcane and
+  Arcane/Frost guides' Frostfire Bolt had made it "training you need" at 40).
   **When Blizzard's data lag** (`plan.fresher`, 2026-11-14, user: "level 33" while the API still held the 09:33 logout at level 32):
   Blizzard's character data change only at a logout it has seen (`last_login_timestamp` is that logout); the add-ons write while you
   play. ForeverTape's bag record (`bags.record`: level and gold, written when the bags change, never at logout) wins when it is newer;
