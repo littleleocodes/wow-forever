@@ -13,7 +13,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 |---|---|---|
 | **Beast Mastery** | [Beast Mastery — Leveling](leveling/beast-mastery.md) 🔬<br>23 s/kill | **✅ Recommended**<br>[Beast Mastery — Raid](raid/beast-mastery.md) 🔬<br>1003 DPS (raid) |
 | **Marksmanship** | [Marksmanship — Leveling](leveling/marksmanship.md) 🔬<br>23 s/kill | **✅ Recommended**<br>[Marksmanship — Lone Wolf](raid/marksmanship.md)<br>997 DPS (raid) |
-| **Survival** | **✅ Recommended**<br>[Survival — Leveling](leveling/survival.md) 🔬<br>22 s/kill | [Melee Survival — Lone Wolf](raid/survival.md)<br>745 DPS (raid) |
+| **Survival** | **✅ Recommended**<br>[Survival — Leveling](leveling/survival.md) 🔬<br>22 s/kill | [Melee Survival — Lone Wolf](raid/survival.md)<br>735 DPS (raid) |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -34,13 +34,15 @@ Builds that spend their points across two trees, each made for a particular job.
 
 Ranked by time per kill in the fight lab (levels 20-60, higher levels count more; lower is faster):
 
-| # | Spec and build | Seconds per kill | Behind the fastest |
-|---|---|---|---|
-| 1 | [Beast-Survival](leveling/beast-survival.md) 🔬 | 21 | fastest |
-| 2 | [Survival](leveling/survival.md) 🔬 | 22 | +2% |
-| 3 | [Marksmanship](leveling/marksmanship.md) 🔬 | 23 | +7% |
-| 4 | [Beast-Marks](leveling/beast-marks.md) 🔬 | 23 | +8% |
-| 5 | [Beast Mastery](leveling/beast-mastery.md) 🔬 | 23 | +9% |
+| # | Spec and build | Seconds per kill | Behind the fastest | In good Forever gear |
+|---|---|---|---|---|
+| 1 | [Beast-Survival](leveling/beast-survival.md) 🔬 | 21 | fastest | 19 |
+| 2 | [Survival](leveling/survival.md) 🔬 | 22 | +2% | 20 |
+| 3 | [Marksmanship](leveling/marksmanship.md) 🔬 | 23 | +7% | 19 |
+| 4 | [Beast-Marks](leveling/beast-marks.md) 🔬 | 23 | +8% | 20 |
+| 5 | [Beast Mastery](leveling/beast-mastery.md) 🔬 | 23 | +9% | 20 |
+
+**In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
 ### Raid (group)
 
@@ -51,7 +53,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | 1 | [Beast Mastery](raid/beast-mastery.md) 🔬 | 1003 | best |
 | 2 | [Marksmanship](raid/marksmanship.md) — Lone Wolf | 997 | -0.6% |
 | 3 | [Beast-Marks](raid/beast-marks.md) 🔬 | 992 | -1% |
-| 4 | [Survival](raid/survival.md) — Melee Survival — Lone Wolf | 745 | -26% |
+| 4 | [Survival](raid/survival.md) — Melee Survival — Lone Wolf | 735 | -27% |
 
 Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie. Everything is a simulation of the beta, not a measurement in the game.
 

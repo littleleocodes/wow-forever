@@ -4,12 +4,14 @@
 
 Ranked by time per kill in the fight lab (levels 20-60, higher levels count more; lower is faster):
 
-| # | Spec and build | Seconds per kill | Behind the fastest |
-|---|---|---|---|
-| 1 | [Shadow](shadow.md) 🔬 | 24 | fastest |
-| 2 | [Discipline](discipline.md) — Leveling into the raid build 🔬 | 46 | +89% |
-| 3 | [Smite](smite.md) 🔬 | 51 | +111% |
-| 4 | [Holy](holy.md) — Leveling into the raid build 🔬 | 57 | +134% |
+| # | Spec and build | Seconds per kill | Behind the fastest | In good Forever gear |
+|---|---|---|---|---|
+| 1 | [Shadow](shadow.md) 🔬 | 24 | fastest | 18 |
+| 2 | [Discipline](discipline.md) — Leveling into the raid build 🔬 | 46 | +89% | 35 |
+| 3 | [Smite](smite.md) 🔬 | 51 | +111% | 33 |
+| 4 | [Holy](holy.md) — Leveling into the raid build 🔬 | 57 | +134% | 37 |
+
+**In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
 **Level by level:** [Shadow](shadow-by-level.md), [Discipline](discipline-by-level.md), [Holy](holy-by-level.md), [Smite](smite-by-level.md) (what to press from level 1 as each spell and talent arrives).
 

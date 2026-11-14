@@ -4,11 +4,13 @@
 
 Ranked by time per kill in the fight lab (levels 20-60, higher levels count more; lower is faster):
 
-| # | Spec and build | Seconds per kill | Behind the fastest |
-|---|---|---|---|
-| 1 | [Feral Combat](feral-combat.md) 🔬 | 23 | fastest |
-| 2 | [Restoration](restoration.md) — Leveling into the raid build 🔬 | 28 | +22% |
-| 3 | [Balance](balance.md) (optimized) | 37 | +63% |
+| # | Spec and build | Seconds per kill | Behind the fastest | In good Forever gear |
+|---|---|---|---|---|
+| 1 | [Feral Combat](feral-combat.md) 🔬 | 23 | fastest | 18 |
+| 2 | [Restoration](restoration.md) — Leveling into the raid build 🔬 | 28 | +22% | 21 |
+| 3 | [Balance](balance.md) (optimized) | 37 | +63% | 23 |
+
+**In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
 **Level by level:** [Feral Combat](feral-combat-by-level.md), [Balance](balance-by-level.md), [Restoration](restoration-by-level.md) (what to press from level 1 as each spell and talent arrives).
 

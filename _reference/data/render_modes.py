@@ -657,6 +657,29 @@ def lev_sig_lines(cls, spec, top):
             "page until one does (the leveling searches since 2026-10-22 look only for such builds).", ""]
 
 
+_FOREVER = {}
+FOREVER_GEAR_NOTE = ("**In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level "
+                     "(its random-suffix greens such as \"of Frozen Wrath\" included, which the fight lab's standard Classic-style gear leaves "
+                     "out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this "
+                     "page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, "
+                     "the same gear for every spec; real gear sits in between.")
+
+
+def forever_gear(cls, bid):
+    """The leveling build in the best Forever set each level offers against the lab's standard gear (characters/forever_race.py,
+    record characters/weights/forever-race.json; 2026-11-13: the pages keep ranking on the standard gear and show this next to it):
+    {"ratio": weighted best / weighted standard, "by_level": {level: best / standard}}, or None when the race has no row for the build."""
+    if "rec" not in _FOREVER:
+        f = HERE / "characters" / "weights" / "forever-race.json"
+        _FOREVER["rec"] = (json.load(open(f, encoding="utf-8")).get("builds") or {}) if f.exists() else {}
+    row = _FOREVER["rec"].get(f"{cls}-{bid}")
+    if not row or not row.get("best") or not row.get("standard") or not row["standard"].get("weighted"):
+        return None
+    sb, bb = row["standard"]["by_level"], row["best"]["by_level"]
+    return {"ratio": row["best"]["weighted"] / row["standard"]["weighted"],
+            "by_level": {int(L): bb[L] / sb[L] for L in sb if L in bb and sb[L]}}
+
+
 def weighted(per):
     """Level-weighted seconds per kill at levels 20-60, the levels the pages and every race state. 2026-11-06 (page-audit K4): the druid's
     fight-lab reports carry a level-15 row (Bear Form) that entered the mean of report builds only, so a build read from a report and
@@ -1021,8 +1044,15 @@ def mode_section(cls, spec, mode, builds, nums, src):
                       + f" Level this way if you want to {job} dungeons later on the way; otherwise level as {other} and switch at 60 "
                         f"(a respec at a class trainer).", ""]
         if per:
-            numbers += ["## The numbers", "", "| Level | Seconds per kill (same-level mobs, eating and drinking included) |", "|---|---|"]
-            numbers += [f"| {Lv} | {v:.0f} |" for Lv, v in sorted(per.items())] + [""]
+            fgl = (forever_gear(cls, top["id"]) or {}).get("by_level") or {}
+            if fgl:
+                numbers += ["## The numbers", "", "| Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |",
+                            "|---|---|---|"]
+                numbers += [f"| {Lv} | {v:.0f} | " + (f"{v * fgl[int(Lv)]:.0f}" if int(Lv) in fgl else "-") + " |" for Lv, v in sorted(per.items())]
+                numbers += ["", FOREVER_GEAR_NOTE, ""]
+            else:
+                numbers += ["## The numbers", "", "| Level | Seconds per kill (same-level mobs, eating and drinking included) |", "|---|---|"]
+                numbers += [f"| {Lv} | {v:.0f} |" for Lv, v in sorted(per.items())] + [""]
     elif mode == "raid":
         r = R.get(top["id"]) if top.get("role") != "healer" else None
         if top.get("role") == "healer":
@@ -1258,9 +1288,17 @@ def ranking(cls, g, specs, mode, nums, prefix=""):
         if not scored:
             return ["No leveling numbers yet.", ""]
         best = scored[0][0]
-        o += ["Ranked by time per kill in the fight lab (levels 20-60, higher levels count more; lower is faster):", "",
-              "| # | Spec and build | Seconds per kill | Behind the fastest |", "|---|---|---|---|"]
-        o += [f"| {i} | {name(spec, b)} | {w:.0f} | {'fastest' if i == 1 else gap_text(w / best - 1)} |" for i, (w, spec, b) in enumerate(scored, 1)]
+        fg = {b["id"]: forever_gear(cls, b["id"]) for _, _, b in scored}
+        if any(fg.values()):
+            o += ["Ranked by time per kill in the fight lab (levels 20-60, higher levels count more; lower is faster):", "",
+                  "| # | Spec and build | Seconds per kill | Behind the fastest | In good Forever gear |", "|---|---|---|---|---|"]
+            o += [f"| {i} | {name(spec, b)} | {w:.0f} | {'fastest' if i == 1 else gap_text(w / best - 1)} | "
+                  + (f"{w * fg[b['id']]['ratio']:.0f}" if fg[b["id"]] else "-") + " |" for i, (w, spec, b) in enumerate(scored, 1)]
+            o += ["", FOREVER_GEAR_NOTE]
+        else:
+            o += ["Ranked by time per kill in the fight lab (levels 20-60, higher levels count more; lower is faster):", "",
+                  "| # | Spec and build | Seconds per kill | Behind the fastest |", "|---|---|---|---|"]
+            o += [f"| {i} | {name(spec, b)} | {w:.0f} | {'fastest' if i == 1 else gap_text(w / best - 1)} |" for i, (w, spec, b) in enumerate(scored, 1)]
         lv = [spec for spec in specs if not g[spec][mode] and SM.LEVEL_AS.get((cls, spec))]
         if lv:
             o += ["", "Healing and tanking specs level as a damage spec and switch at 60: "

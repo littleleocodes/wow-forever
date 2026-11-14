@@ -80,13 +80,15 @@ One point per level from 10, in this order:
 
 ## The numbers
 
-| Level | Seconds per kill (same-level mobs, eating and drinking included) |
-|---|---|
-| 20 | 19 |
-| 30 | 22 |
-| 40 | 26 |
-| 50 | 28 |
-| 60 | 30 |
+| Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
+|---|---|---|
+| 20 | 19 | 15 |
+| 30 | 22 | 18 |
+| 40 | 26 | 21 |
+| 50 | 28 | 23 |
+| 60 | 30 | 23 |
+
+**In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
 ## Other builds of this spec
 
