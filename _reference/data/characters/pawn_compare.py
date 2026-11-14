@@ -189,7 +189,9 @@ def setup_of(cls, alloc, level, rot):
     p = mod.make_player(level)
     spell = next((s for s in mod.book.values() if getattr(s, "dmg_max", 0) > 0 and getattr(s, "kind", "") not in ("melee", "ranged")), None)
     spell_hit = mod.hit_bonus(spell) if spell is not None else 0.0
-    caster = cls in ("mage", "priest", "warlock") or (p.mh is None)
+    # a caster rotation with a weapon in hand is still a caster (2026-11-13: Elemental and the Elemental-Enhancement hybrid wield a
+    # two-hander in the lab and had read as melee: the melee miss as their hit room)
+    caster = cls in ("mage", "priest", "warlock") or (p.mh is None) or any(x in (rot or "") for x in ("elemental", "balance"))
     melee_miss = TB.MELEE_MISS + (TB.DW_MISS_PENALTY if p.dual_wield else 0.0)
     return {"dual": bool(p.dual_wield), "two_hand": bool(p.mh is not None and getattr(p.mh, "kind", "") == "2h"), "shield": p.block > 0,
             "caster": caster, "ranged_build": cls == "hunter" and not (hasattr(mod, "is_melee") and mod.is_melee()),

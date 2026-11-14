@@ -8,7 +8,10 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 DATA = pathlib.Path(__file__).resolve().parent.parent
 
-PAWN = pathlib.Path("D:/World of Warcraft/_forever_/Interface/AddOns/Pawn")
+# Pawn's files: the installed add-on, else a copy of release 2.14.2 from Pawn's repository (github.com/VgerMods/Pawn, tag Pawn-2.14.2;
+# ClassicHawsJon.lua is the same in 2.14.3) kept outside the repository (2026-11-13: the user replaced Pawn with GearCheck)
+PAWN_DIRS = [pathlib.Path("D:/World of Warcraft/_forever_/Interface/AddOns/Pawn"), pathlib.Path.home() / ".wow-forever-tools" / "pawn" / "2.14.2"]
+PAWN = next((d for d in PAWN_DIRS if (d / "ClassicHawsJon.lua").exists()), PAWN_DIRS[0])
 # Pawn's Forever per-percent factors (ClassicHawsJon.lua "if VgerCore.IsClassic or VgerCore.IsForever")
 PER = {"HitRatingPer": 9.37931, "SpellHitRatingPer": 8, "CritRatingPer": 8.5, "SpellCritRatingPer": 8, "HasteRatingPer": 8.03,
        "SpellHasteRatingPer": 8.03, "ExpertiseRatingPer": 2.34483, "ArmorPenetrationPer": 3.75, "SpellPenetrationPer": 1,
