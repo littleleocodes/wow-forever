@@ -2,7 +2,7 @@
 
 [Hunter](../README.md) > [Leveling (solo)](README.md) > Beast-Survival
 
-*Dual-wield melee with a pet and Beast Mastery's aspect and pet talents, short of 30 Survival points (leveling; the raid version with Summon Hawk and Lone Wolf, 16/11/24, has trailed Melee Survival since the move to the official simulator).* (a hybrid: Beast Mastery/Survival).
+*Dual-wield melee with a pet and Beast Mastery's aspect and pet talents, short of 30 Survival points (leveling; the raid version with Summon Hawk and Lone Wolf, 16/11/24, is within half a percent of Melee Survival in a full raid since Lacerating Strikes overwrites as in the game (2026-11-13): a tie, so the raid page keeps Survival).* (a hybrid: Beast Mastery/Survival).
 
 **✅ Recommended** for leveling (the best hunter spec here, or within 3% of it).
 
