@@ -287,6 +287,9 @@ def steps_html(C, lv):
                           "in this order · next: " + " · ".join(f"{L} {esc(n)}" for L, n in tal["path"][:4]) + link))
     elif tal.get("path"):
         path = " · ".join(f"{L} {esc(n)}" for L, n in tal["path"][:4])
+        if tal.get("stale"):   # Blizzard's talents predate the spellbook (2026-11-14): the page's order through the book's level assumed
+            path += (f" · this assumes your points follow the page's order through level {tal['stale']['level']}: Blizzard's talents are "
+                     f"older than your spellbook, which has {esc(', '.join(tal['stale']['ahead']))}")
         if tal.get("have", 0) < tal.get("want", 0):
             items.append(todo(f"talent{lv}", "Spend your talent point", path))
         else:

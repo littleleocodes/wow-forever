@@ -12,6 +12,8 @@ owned(cfg, snap) -> {lower-case item name: {"name", "count", "where": "bags"|"ba
 spellbook(cfg, name) -> the character's spellbook from ForeverTape 0.9.5 (2026-11-14): ForeverTapeDB.spellbook["<Name>-<Realm>"] = {t, level,
 class, n, spells = {{id, name, rank, tab}, ...}} (rank absent for spells without ranks; written 5 s after each loading screen and 3 s after
 a spell is learned), or None.
+record(cfg, name) -> the bag record's own level and gold with its time ({"t", "when", "level", "money"}), or None: newer than Blizzard's
+data between logouts (the planner takes them then, plan.fresher).
 """
 import datetime
 import glob
@@ -107,6 +109,25 @@ def spellbook(cfg, name):
             ranks[e["name"]] = max(ranks.get(e["name"], 0), r)
         best = {"t": t, "when": datetime.datetime.fromtimestamp(t).strftime("%Y-%m-%d %H:%M"), "level": int(lv.group(1)) if lv else None,
                 "n": len(spells), "ids": {e["id"] for e in spells if isinstance(e.get("id"), int)}, "ranks": ranks}
+    return best
+
+
+def record(cfg, name):
+    """The newest bag record's own fields over the saved files: {"t", "when", "level", "money"}, or None (2026-11-14: Blizzard's data
+    change only at a logout it sees, while this record is written whenever the bags change, never at logout: v0.9.4)."""
+    best = None
+    for f in saved_files(cfg):
+        block = _block(pathlib.Path(f).read_text(encoding="utf-8", errors="replace"), "inventory", name)
+        if not block:
+            continue
+        k = block.find('["items"] = {')
+        top = block if k < 0 else block[:k] + block[_close(block, k + len('["items"] = {')):]
+        t = re.search(r'\["t"\] = (\d+)', top)
+        if not t or (best and best["t"] >= int(t.group(1))):
+            continue
+        lv, mo = re.search(r'\["level"\] = (\d+)', top), re.search(r'\["money"\] = (\d+)', top)
+        best = {"t": int(t.group(1)), "when": datetime.datetime.fromtimestamp(int(t.group(1))).strftime("%Y-%m-%d %H:%M"),
+                "level": int(lv.group(1)) if lv else None, "money": int(mo.group(1)) if mo else None}
     return best
 
 

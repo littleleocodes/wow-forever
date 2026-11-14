@@ -81,6 +81,41 @@ def snapshot(cfg, d, refresh):
             if (arm / f"{p}.json").exists()}, (arm / "fetched.txt").read_text(encoding="utf-8").strip()
 
 
+def fresher(cfg, snap, d, said=None):
+    """Blizzard's character data change only at a logout it sees (last_login_timestamp is that logout); the add-ons write while you play
+    (2026-11-14, user: "level 33", while Blizzard still had the 09:33 logout at level 32 and 12g 76s 25c, the bag add-on 5g 21s 18c at
+    17:43). The bag record's level wins when it is newer and higher, and the level you give (--level, kept in level-said.json until Blizzard
+    has seen a logout after your word) when it is higher still. Returns the bag record's gold when it is newer than Blizzard's, else None;
+    NOTICES say where the level and gold come from."""
+    import time
+    p = snap["profile"]
+    seen = (p.get("last_login_timestamp") or 0) / 1000
+    f = d / "level-said.json"
+    if said:
+        f.write_text(json.dumps({"level": said, "time": int(time.time())}) + "\n", encoding="utf-8")
+    word = json.loads(f.read_text(encoding="utf-8")) if f.exists() else None
+    if word and word["time"] <= seen:   # Blizzard has seen a logout since your word: its level stands
+        f.unlink()
+        word = None
+    rec = BG.record(cfg, p["name"])
+    rec = rec if rec and rec["t"] > seen else None
+    api_lv, src = p["level"], None
+    if rec and (rec.get("level") or 0) > p["level"]:
+        p["level"], p["experience"], src = rec["level"], 0, f"your bag add-on's record of {rec['when']}"
+    if word and word["level"] > p["level"]:
+        p["level"], p["experience"], src = word["level"], 0, "your word"
+    when = datetime.datetime.fromtimestamp(seen).strftime("%Y-%m-%d %H:%M") if seen else "an unknown time"
+    gold = rec.get("money") if rec else None
+    if src:
+        NOTICES.append(f"Level {p['level']} is {src}: Blizzard's data are from your logout at {when} (level {api_lv})"
+                       + (f", and the gold is the bag add-on's ({rec['when']})" if gold is not None else "")
+                       + ". Talents, quests and worn gear are as of that logout where your add-ons do not say otherwise. Log out once "
+                       "and refresh to bring them up to date.")
+    elif gold is not None:
+        NOTICES.append(f"Gold is your bag add-on's ({rec['when']}): Blizzard's data are from your logout at {when}.")
+    return gold
+
+
 def weights(cls, rot, fname=None):
     w = json.load(open(HERE / "weights" / (fname or f"{cls}-{rot}.json"), encoding="utf-8"))
     lv = sorted(int(k) for k in w["levels"])
@@ -1701,6 +1736,18 @@ def talents_check(cfg, snap, level):
                 n = (t.get("talent") or {}).get("name") or ((t.get("spell_tooltip") or {}).get("spell") or {}).get("name")
                 if n:
                     have[n] = have.get(n, 0) + (t.get("talent_rank") or 0)
+    # Blizzard's talents are as of the last logout it has seen; a spellbook written since that holds a talent's ability they lack (Ice
+    # Lance, 2026-11-14: none spent at the 09:33 logout, Ice Lance in the 17:15 book) means points were spent since: the page's order
+    # through the book's level is assumed when it covers both
+    stale = None
+    seen = (snap["profile"].get("last_login_timestamp") or 0) / 1000
+    ahead = sorted(n for n in talent_names(cfg["class"]) if n in (BOOK.get("ranks") or {}) and not have.get(n)) if BOOK.get("t", 0) > seen else []
+    if ahead and BOOK.get("level"):
+        at_book = {n: k for n, k in FR.allocation_at({"allocation": b["allocation"], "order": order}, min(BOOK["level"], level)).items() if k}
+        if all(at_book.get(n) for n in ahead) and all(k <= at_book.get(n, 0) for n, k in have.items()):
+            stale = {"api": sum(have.values()), "ahead": ahead, "book": BOOK["when"], "level": min(BOOK["level"], level),
+                     "seen": datetime.datetime.fromtimestamp(seen).strftime("%Y-%m-%d %H:%M") if seen else None}
+            have = at_book
     diff = sorted(set(want) | set(have))
     rows = [(n, have.get(n, 0), want.get(n, 0)) for n in diff if have.get(n, 0) != want.get(n, 0)]
     # the character's own path: the page's points in the page's order, minus the ranks it already holds (a misplaced point shifts the
@@ -1713,7 +1760,8 @@ def talents_check(cfg, snap, level):
         else:
             queue.append(n)
     free = 60 - level
-    path = [(level + 1 + i, n) for i, n in enumerate(queue[:free])]
+    owed = max(0, level - 9 - sum(have.values()))   # points you have and have not spent: due now, at your level (they had been labelled
+    path = [(level + max(0, i + 1 - owed), n) for i, n in enumerate(queue[:free + owed])]   # from the next level, the last ones "dropped")
     # a character whose points mostly follow another build respecs (Tara, Retribution points for a tank, 2026-11-09): the order's points
     # up to its level to take after the respec, and the order's next points from there
     respec = []
@@ -1726,7 +1774,7 @@ def talents_check(cfg, snap, level):
             else:
                 respec.append([n, 1])
         path = [(10 + i, n) for i, n in enumerate(pts) if 10 + i > level]
-    return b, rot, rows, sum(have.values()), sum(want.values()), path, queue[free:] if not respec else [], respec, want
+    return b, rot, rows, sum(have.values()), sum(want.values()), path, queue[free + owed:] if not respec else [], respec, want, stale
 
 
 def build_at(cls, want):
@@ -1762,7 +1810,7 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     name = f"{snap['profile']['name']} {snap['profile'].get('surname', '')}".strip()
     seen = snap["profile"].get("last_login_timestamp")   # when Blizzard last saw the character (your last logout; 2026-11-13, user: "I'm
     seen = datetime.datetime.fromtimestamp(seen / 1000).strftime("%Y-%m-%d %H:%M") if seen else None   # level 30 and I got off at 11pm")
-    b, rot, tdiff, have_n, want_n, tpath, tdrop, respec, twant = talents_check(cfg, snap, lv)
+    b, rot, tdiff, have_n, want_n, tpath, tdrop, respec, twant, tstale = talents_check(cfg, snap, lv)
     if cfg.get("metric") == "tank":   # a group tank (2026-11-09, Tara)
         o = [f"# {name}", "",
              f"> Generated by `_reference/data/characters/plan.py {cfg['name']}` from Blizzard's character API (fetched {fetched}{f'; your character as of {seen}' if seen else ''}). Do not hand-edit:",
@@ -1781,6 +1829,11 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
           (f" Gold: **{AH.money(GOLD)}**." if GOLD is not None else " Gold: unknown (log in with bnet_login.py; the login lasts a day)."), ""]
     # talents
     o += ["## Talents", ""]
+    if tstale:
+        o += [f"Blizzard's talents are from your logout at {tstale['seen']} and show "
+              + (f"{tstale['api']} points" if tstale["api"] else "none spent")
+              + f"; your spellbook (ForeverTape, {tstale['book']}) already has {', '.join(tstale['ahead'])}, so you spent points since. "
+              f"This assumes you took the page's order through level {tstale['level']} ({have_n} points): check your talent pane against it.", ""]
     if respec:
         trees, link = build_at(cfg["class"], twant)
         first = (f"You have no talent points spent. Spend these {sum(n for _, n in respec)} points in this order (it keeps every tier "
@@ -1804,13 +1857,16 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     docs = [snap["achievements"]] if snap.get("achievements") else []
     docs += [json.loads(f.read_text(encoding="utf-8")) for f in sorted((ROOT / "_characters").glob("*/armory/achievements.json"))
              if f.parent.parent != d]   # the account's other characters (achievements come per character)
-    lo, CTX["legacy"] = LEG.section(cfg, docs, account_levels())   # Legacy points (2026-11-10)
+    lvls = account_levels()   # this character at the page's level (a newer add-on record or your word, plan.fresher)
+    if lv > lvls.get(cls, (None, 0))[1]:
+        lvls[cls] = (snap["profile"]["name"], lv)
+    lo, CTX["legacy"] = LEG.section(cfg, docs, lvls)   # Legacy points (2026-11-10)
     o += lo
     CTX.update({"head": {"name": name, "level": lv, "race": race, "class": cls, "gold": GOLD, "fetched": fetched, "seen": seen,
                          "faction": snap["profile"]["faction"]["name"], "professions": {k: list(v) for k, v in profs.items()},
                          "ah_age": PRICES.age_hours() if PRICES else None, "spec": cfg["spec"], "page": cfg["page"],
                          "short": SHORT, "faster": FASTER},
-                "talents": {"diff": tdiff, "path": tpath[:6], "drop": tdrop, "have": have_n, "want": want_n, "respec": respec,
+                "talents": {"diff": tdiff, "path": tpath[:6], "drop": tdrop, "have": have_n, "want": want_n, "respec": respec, "stale": tstale,
                              "link": build_at(cfg["class"], twant)[1] if respec else None}})
     o += change_lines(d, events, lv)
     # now: the upgrades to go after at this level or within LOOKAHEAD levels, by what you do for them
@@ -2807,10 +2863,13 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("name")
     ap.add_argument("--no-refresh", action="store_true")
+    ap.add_argument("--level", type=int, help="your level when Blizzard's data lag (a level-up since the last logout it has seen); kept "
+                    "in level-said.json until it has seen one")
     a = ap.parse_args()
     d = char_dir(a.name)
     cfg = json.load(open(d / "character.json", encoding="utf-8"))
     snap, fetched = snapshot(cfg, d, not a.no_refresh)
+    addon_gold = fresher(cfg, snap, d, a.level)   # the add-ons' newer level and gold, or your word (2026-11-14)
     sys.path.insert(0, str(DATA))
     b, order, prov, rot = pick(cfg)
     # who learns which trainer spells (train_level): the race, and the level the build takes each talent (a talent's ability ranks)
@@ -2840,7 +2899,7 @@ def main():
     profs = skills(snap)
     PROFS.update(profs)
     global MIN_LASTS, MIN_MINUTES, PRICES, GOLD
-    GOLD = character_gold(cfg)
+    GOLD = addon_gold if addon_gold is not None else character_gold(cfg)
     global QPL
     lv0 = snap["profile"]["level"]
     QPL = len((snap.get("quests-completed") or {}).get("quests") or []) / max(1, lv0 - 1)
@@ -2989,6 +3048,19 @@ def main():
                            + ("; detours and catch-up are off until they match" if tr["mismatch"] else "") + ".")
         if tr["mismatch"]:   # catch-up counts from your position in the guide: off until the text matches
             RG["before"] = {}
+        # your quest log and completed quests are Blizzard's, as of the last logout it has seen; the guide's position is the add-on's
+        # last save: when that is newer, the quests the guide had you pick up since look missing (2026-11-14: Blizzard at 09:33, the
+        # guide 30 steps on at 17:47, and catch-up listed The Howling Vale at the step that hands it in): off until a logout is seen
+        seen = (snap["profile"].get("last_login_timestamp") or 0) / 1000
+        cf = rxp.files(wow, f"{snap['profile']['name']}-{snap['profile'].get('surname', '')}".strip("-"))[1]
+        if RG["before"] and seen and cf and cf.stat().st_mtime > seen + 120:
+            RG["before"] = {}
+            when = datetime.datetime.fromtimestamp(seen).strftime("%Y-%m-%d %H:%M")
+            print(f"catch-up off: Blizzard's quests are from {when}, the guide's position from "
+                  f"{datetime.datetime.fromtimestamp(cf.stat().st_mtime).strftime('%Y-%m-%d %H:%M')}")
+            NOTICES.append(f"Catch up with your guide is off for this refresh: your quest log is Blizzard's from your logout at {when}, older "
+                           f"than your guide's position (saved {datetime.datetime.fromtimestamp(cf.stat().st_mtime).strftime('%Y-%m-%d %H:%M')}), "
+                           "so it cannot tell which quests you picked up since. Log out once and refresh.")
     if RG:   # a quest reward on the route comes when the route turns the quest in (item_pool.window: route_level), 2026-11-10
         for p in pool:
             for s in p["sources"]:
