@@ -70,7 +70,7 @@ Melee Survival fights at the boss with two one-handers and no pet. **Raptor Stri
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 745 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 735 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever ff9babb (client 70888); [every spec](../../_reference/dps-rankings.md)):
 
@@ -107,8 +107,8 @@ Melee Survival fights at the boss with two one-handers and no pet. **Raptor Stri
 
 ## Other builds of this spec
 
-- [Survival (optimized)](../research/raid/builds/opt-melee-dps-raid-dps.md) (5/15/31, 702 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5-005045001-500250030050220151-12)
-- [Survival — Raid](../research/raid/builds/survival-raid.md) (5/16/30, 701 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5-005055001-50023023005022213-12)
+- [Survival — Raid](../research/raid/builds/survival-raid.md) (5/16/30, 706 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5-005055001-50023023005022213-12)
+- [Survival (optimized)](../research/raid/builds/opt-melee-dps-raid-dps.md) (5/15/31, 691 DPS in a full raid) — [open the talent tree](https://talentsforever.com/hunter/60/5-005045001-500250030050220151-12)
 - [Survival — Melee](../research/raid/builds/survival-melee.md) (9/11/31) — [open the talent tree](https://talentsforever.com/hunter/60/522-005015-500230131050220151-12)
 
 ---

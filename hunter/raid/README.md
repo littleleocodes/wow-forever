@@ -9,7 +9,7 @@
 | 1 | [Beast Mastery](beast-mastery.md) 🔬 | 1003 | best |
 | 2 | [Marksmanship](marksmanship.md) — Lone Wolf | 997 | -0.6% |
 | 3 | [Beast-Marks](beast-marks.md) 🔬 | 992 | -1% |
-| 4 | [Survival](survival.md) — Melee Survival — Lone Wolf | 745 | -26% |
+| 4 | [Survival](survival.md) — Melee Survival — Lone Wolf | 735 | -27% |
 
 **Macro ideas:** [every spec's macros](../macros.md), with the keys each one frees.
 
