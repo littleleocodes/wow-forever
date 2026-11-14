@@ -272,9 +272,12 @@ def steps_html(C, lv):
     if nxt:
         items.append(info(f"Keep {coins(nxt['cost'])} for level {nxt['level']}", ", ".join(esc(n) for n in nxt["need"])))
     tal = C.get("talents") or {}
-    if tal.get("respec"):   # points that follow another build: respec, then the order's points so far
-        items.append(todo(f"respec{lv}", "Respec at a trainer, then take " + ", ".join(f"{esc(t)} {n}" for t, n in tal["respec"]),
-                          "in this order · next: " + " · ".join(f"{L} {esc(n)}" for L, n in tal["path"][:4])))
+    if tal.get("respec"):   # points that follow another build: respec, then the order's points so far (none spent: just spend them)
+        link = (f' · <a href="{esc(tal["link"])}" target="_blank" rel="noopener">open the build in the talent calculator</a>'
+                if tal.get("link") else "")
+        items.append(todo(f"respec{lv}", ("Spend your talent points: " if not tal.get("have") else "Respec at a trainer, then take ")
+                          + ", ".join(f"{esc(t)} {n}" for t, n in tal["respec"]),
+                          "in this order · next: " + " · ".join(f"{L} {esc(n)}" for L, n in tal["path"][:4]) + link))
     elif tal.get("path"):
         path = " · ".join(f"{L} {esc(n)}" for L, n in tal["path"][:4])
         if tal.get("have", 0) < tal.get("want", 0):
