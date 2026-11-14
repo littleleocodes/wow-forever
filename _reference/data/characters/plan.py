@@ -15,6 +15,7 @@ Item value = the seconds per kill its stats save at that level (`weights/<class>
 neighbouring levels): fight-lab numbers, a model of the beta. Items from the simulator's WoW: Forever database (item_pool.py).
 """
 import argparse
+import collections
 import csv
 import datetime
 import json
@@ -420,32 +421,92 @@ def chain_head(q):
     return q
 
 
+START_ITEM_SURE = 20.0   # %: an item that starts a quest from a source at least this likely is something to go and get; below it, a
+                         # lucky drop (An Old History Book, 1% from Duskwood's mobs) that no plan can count on
+
+
+def spawn_spot(kind, sid):
+    """(zone, x, y) of a creature's or object's first spawn in the open world (Classic's spawns), or None (none known, or a dungeon)."""
+    DT.load()
+    MAPS or MAPS.update(RXG.bounds())
+    for p in DT.SPAWNS.get((kind, sid), []):
+        z = DT.zone_of(p, MAPS)
+        if z:
+            return z
+    return None
+
+
+def spawn_dungeon(kind, sid):
+    """The dungeon a creature or object spawns in, when every spawn of it is inside one (Classic's map ids), else None."""
+    DT.load()
+    zs = {IP.MAP_TO_ZONE.get(m) for m, _, _ in DT.SPAWNS.get((kind, sid), [])}
+    if not zs and (kind, sid) in DT.SRCMAP:
+        zs = {IP.MAP_TO_ZONE.get(DT.SRCMAP[(kind, sid)])}
+    return IP.DUNGEONS[next(iter(zs))][0] if len(zs) == 1 and next(iter(zs)) in IP.DUNGEONS else None
+
+
+def item_start_text(it):
+    """(text, best chance %, the dungeon it drops in or None, open-world spot or None) for an item that starts a quest: "<item>, a drop
+    from <mob> in <dungeon> (8%)", "<item>, a 1% drop from 33 kinds of mobs in Duskwood", "<item>, from <object> (Zone x, y)"."""
+    DT.load()
+    srcs = sorted(DT.ISRC.get(it, []), key=lambda s: -s[2])
+    name = reagent_name(it)
+    if not srcs:
+        return f"{name} (where it drops is not in the data)", 0.0, None, None
+    k, sid, ch = srcs[0]
+    dungeon, spot = spawn_dungeon(k, sid), spawn_spot(k, sid)
+    pc = f" ({ch:.0f}%)" if ch < 99.5 else ""
+    if k == "o":   # an object you take it from
+        who = DT.NAMES.get((k, sid)) or "an object"
+        return (f"{name}, from {who}" + (f" in {dungeon}" if dungeon else f" ({spot_text(spot)})" if spot else "") + pc), ch, dungeon, spot
+    mobs = [s for s in srcs if s[2] >= ch / 2]   # the sources about as likely as the best one
+    if len(mobs) >= 3:   # a world drop from many mobs: where most of them are
+        zones = collections.Counter(z[0] for z in (spawn_spot(s[0], s[1]) for s in mobs) if z)
+        where = f" in {dungeon}" if dungeon else (f" in {' and '.join(z for z, _ in zones.most_common(2))}" if zones else "")
+        art = "an" if re.match(r"(8|11|18)(\d\d)?$|8\d$", f"{ch:.0f}") else "a"   # "an 8%", "an 11%", "an 80%"
+        return f"{name}, {art} {ch:.0f}% drop from {len(mobs)} kinds of mobs{where}", ch, dungeon, spot
+    who = DT.NAMES.get((k, sid)) or "a mob"
+    return f"{name}, a drop from {who}" + (f" in {dungeon}" if dungeon else "") + pc, ch, dungeon, spot
+
+
+def start_item(q):
+    """(item id, its source text, best chance %, spot) when an item starts quest q and no NPC or object gives it, else None."""
+    DT.load()
+    g = DT.GEO.get(q) or {}
+    items = [int(i) for k, i in g.get("starts", []) if k == "i"]
+    if not items or any(k in "co" for k, _ in g.get("starts", [])):
+        return None
+    text, ch, dungeon, spot = item_start_text(items[0])
+    return items[0], text, ch, spot
+
+
 def chain_start(head, lv):
-    """(can you start it, how) for a chain's first quest (2026-11-10, user: the Stockade list held "a mega chain quests that starts in
-    Deadmines from a quest item that drops off the last boss"): from an NPC or object (who and where), or from an item (the item, what drops
-    it and where); a chain whose item drops only in a dungeon you have outgrown cannot be started any more."""
+    """(can you start it, how, where) for a chain's first quest (2026-11-10, user: the Stockade list held "a mega chain quests that starts
+    in Deadmines from a quest item that drops off the last boss"): from an NPC or object (who and where), or from an item (the item, what
+    drops it and where); a chain whose item drops only in a dungeon you have outgrown cannot be started any more. `where` is the zone or
+    dungeon it starts in: a giver or a drop inside a dungeon starts it during the run (2026-11-14: Razorfen Kraul's Heralath Fallowbrook
+    and Lower Blackrock Spire's Bijou were listed as quests to pick up before the run)."""
     DT.load()
     g = DT.GEO.get(head) or {}
     if head in COMPLETED or head in INLOG:
         return True, "", None
     items = [int(i) for k, i in g.get("starts", []) if k == "i"]
     if items and not any(k in "co" for k, _ in g.get("starts", [])):
-        it = items[0]
-        srcs = sorted(DT.ISRC.get(it, []), key=lambda s: -s[2])
-        if not srcs:
-            return True, f"starts from {reagent_name(it)} (an item; where it drops is not in the data)", None
-        k, sid, ch = srcs[0]
-        m = DT.SRCMAP.get((k, sid), -1)
-        zid = IP.MAP_TO_ZONE.get(m)
-        where = IP.DUNGEONS[zid][0] if zid in IP.DUNGEONS else ""
-        who = DT.NAMES.get((k, sid)) or "a mob"
-        text = f"starts from {reagent_name(it)}, which {who} drops" + (f" in {where}" if where else "") + (f" ({ch:.0f}%)" if ch < 99.5 else "")
-        if zid in IP.DUNGEONS and IP.DUNGEONS[zid][2] <= lv:
-            return False, text + f": you have outgrown {where}", None
-        return True, text, where or None
+        text, ch, dungeon, spot = item_start_text(items[0])
+        zid = next((z for z, v in IP.DUNGEONS.items() if v[0] == dungeon), None)
+        if zid is not None and IP.DUNGEONS[zid][2] <= lv:
+            return False, f"starts from {text}: you have outgrown {dungeon}", None
+        return True, f"starts from {text}", dungeon or (spot[0] if spot else None)
     g1, z = giver_spot(head)
     if " / " in g1 and "(" in g1:   # one step names several NPCs: the first, with the place
         g1 = g1.split(" / ")[0] + " (" + g1.split(" (", 1)[1]
+    starters = [(k, int(i)) for k, i in g.get("starts", []) if k in "co"]
+    if starters and not any(DT.SPAWNS.get(s) for s in starters):   # no giver in the open world (spawns.csv holds the continents
+        load_dq()                                                   # only): inside the dungeon the quest belongs to
+        m = next((m for m, qs in DQ.items() if head in qs), None)
+        d = (IP.DUNGEONS.get(IP.MAP_TO_ZONE.get(m)) or (None,))[0] if m is not None else None
+        if d:
+            return True, (f"from {g1.split(' (')[0].replace(' / ', ' or ')} " if g1 else "") + f"inside {d}", d
     return True, (f"from {g1}" if g1 else ""), z
 
 
@@ -511,11 +572,14 @@ def sources_text(it):
             st = chain_step(s["quest"]) if isinstance(s.get("quest"), int) else None
             if st and st[0] != s["quest"] and st[0] not in INLOG:   # a chain: where to start it (2026-11-09, the "work toward" list)
                 row = CQUESTS.get(st[0]) or {}
-                log += (f"; the chain starts with \"{row.get('title', st[0])}\"" + (f" from {st[1]}" if st[1] else "")
+                item = start_item(st[0])   # (an item starts it: what drops it, 2026-11-14: "The Shattered Necklace" from an 8% drop)
+                log += (f"; the chain starts with \"{row.get('title', st[0])}\""
+                        + (f", which starts from {item[1]}" if item else f" from {st[1]}" if st[1] else "")
                         + (f", level {row['min_level']}" if row.get("min_level") not in (None, "", "0") else ""))
             elif st and st[1] and s.get("quest") not in INLOG:
                 log += f"; from {st[1]}"
-            out.append(f"quest \"{s['name']}\" ({s.get('zone') or '?'}{lv}{log})")
+            inner = ", ".join(x for x in (s.get("zone"), lv.lstrip(", ")) if x)   # (no "?" for a quest whose zone is not in the data)
+            out.append(f"quest \"{s['name']}\"" + (f" ({inner}{log})" if inner else f" ({log.lstrip('; ')})" if log else ""))
         elif k == "bags":
             out.append({"bags": "In your bags", "bank": "In your bank"}.get(s.get("where"), f"You bought it on {s.get('when')}; it should be in your bags")
                        + (f" (as of {s.get('when')})" if s.get("where") in ("bags", "bank") else ""))
@@ -540,8 +604,12 @@ def sources_text(it):
                 out.append(f"{s['profession']}: you know this recipe, craft it now")
             else:
                 have = (PROFS.get(s["profession"]) or (None,))[0]
+                if have is None:   # not one of your professions (2026-11-14: Tara's page read "Leatherworking: ... you have None")
+                    if len(it.get("sources") or []) == 1:
+                        out.append(f"a {s['profession']} craft (not one of your professions: a crafter can make it)")
+                    continue
                 need = (f"turns yellow at {s['skill']} in the client's data" if (s.get("learn") or "").startswith("a Forever recipe")
-                        else f"Classic asked skill {s['skill'] if s.get('skill') else '?'}, Forever often less")
+                        else f"Classic asked skill {s['skill']}, Forever often less" if s.get("skill") else "the skill it needs is not in the data")
                 out.append(f"{s['profession']}: learn it first ({s.get('learn') or 'recipe source unknown'}; {need}; you have {have})")
         elif k == "vendor":
             out.append(f"vendor {s.get('npc')} ({s.get('zone')})")
@@ -560,6 +628,7 @@ NOW_LV = 0                # the character's level (main)
 PLAN_EVENTS = []          # the plan's upgrades (main), for the profession section
 CTX = {}                  # what the town checklist page (checklist.py) shows, filled while the README is written
 FASTER, SHORT, KILLING = "faster kills", "faster", "min of killing"   # a tank (character.json "metric": "tank"): better tanking
+MINUTES_OF = "minutes of killing"   # the same in running text (a tank: "minutes of group play", 2026-11-14: Tara's page read "of killing")
 BONUS = []                # dungeon drops worth chasing on top of the sure plan (bonus_drops)
 ROUTE = None              # the character's RestedXP route (rxp.route), when its saved files are on this PC
 RG = None                 # the route step by step from the readable guide files (rxp_guide.facts), when they are on this PC
@@ -794,7 +863,8 @@ def budget_walk(events, cfg, at, lv):
     first within a level) are paid from it; one that does not fit waits up to two levels (worn later) and is dropped after that.
     Returns the item ids dropped; sets each paid event's "paid" (level, budget left) and PLANNED."""
     PLANNED.clear()
-    if GOLD is None:
+    if GOLD is None:   # no gold reading: the plan's buys at their levels, unchecked (the gold plan had totalled them "0c", 2026-11-14)
+        PLANNED.extend((max(e["get_at"], lv), price_of(e)) for e in events if price_of(e))
         return set()
     train = training_by_level(cfg["class"])
     tr = lambda L: sum(c for n, c in train.get(L, []) if n in needed_at(cfg, L))
@@ -889,6 +959,8 @@ def route_anchor(n):
         if z:
             zone, spot = z[0], z
     where = f" ({spot_text(spot)})" if spot else f" ({zone})"
+    if travel and travel.startswith("the trip to ") and travel[len("the trip to "):] in (zone, p[4]):
+        travel = None   # a .zone step into the zone you are in ("in Stormwind City ..., before the trip to Stormwind City", 2026-11-14)
     t = (next((x for x in ops if x[0] == "turnin"), None) or next((x for x in ops if x[0] == "accept"), None) or (ops[0] if ops else None))
     if t:
         title = quest_title(t[1])
@@ -965,21 +1037,24 @@ def catchup(lv):
         if q in COMPLETED or not (q in missed or q in INLOG):
             continue
         a = Q.get(q, {})
-        dl, why = None, ""
+        dl, why, need = None, "", "do"
         if "turnin" in a and "accept" not in a:
             dl, why = a["turnin"], f"the guide hands it in at step {a['turnin']['step']} of its {a['turnin']['lo']}-{a['turnin']['hi']} part"
             if q not in INLOG and a.get("complete_at") and a["complete_at"][0] < dl["at"]:   # its objectives come first (a dungeon run)
                 c = a["complete_at"]
                 dl = {"at": c[0], "step": c[1], "lo": c[2], "hi": c[3]}
                 why = f"the guide does its objectives at step {c[1]} of its {c[2]}-{c[3]} part and hands it in after"
+                need = "pickup"   # the guide does the rest: having it in your log is enough
         nxt = [y for y in follow.get(q, []) if "accept" in Q[y]]
         if nxt:
             y = min(nxt, key=lambda y: Q[y]["accept"]["at"])
             if dl is None or Q[y]["accept"]["at"] < dl["at"]:
-                dl = Q[y]["accept"]
+                dl, need = Q[y]["accept"], "do"
                 why = f"the guide takes its next part, \"{quest_title(y)}\", at step {dl['step']} of its {dl['lo']}-{dl['hi']} part"
         if dl is None:
             continue
+        if q not in INLOG and "accept" in a and a["accept"]["at"] < dl["at"]:
+            continue   # the guide picks it up again itself before then (Southshore at step 17 of the 31-33 part, 2026-11-14)
         if q in INLOG:
             g = DT.GEO.get(q) or {}
             d = dq_map.get(q)
@@ -994,9 +1069,20 @@ def catchup(lv):
         chain = [q]   # the earlier parts you also lack, back to the chain's start
         while abs((DT.GEO.get(chain[0]) or {}).get("prev", 0)) in missed and abs(DT.GEO[chain[0]]["prev"]) not in chain:
             chain.insert(0, abs(DT.GEO[chain[0]]["prev"]))
+        if len(chain) > 1:
+            need = "do"   # the earlier parts have to be done and handed in
         acc = B[chain[0]]["accept"]
+        item = start_item(chain[0])
+        if item:   # a chain an item starts (2026-11-14: An Old History Book, a 1% drop in Duskwood, read "pick up from Milton Sheaf",
+            it, who, ch, spot = item   # where the guide accepts it once the book has dropped)
+            if ch < START_ITEM_SURE:
+                continue   # a lucky drop is nothing to plan: the guide's steps for it wait for the drop
+            k, inz = exit_before(dl["at"], spot[0] if spot else None)
+            out.append({"kind": "pickup", "need": need, "quests": [(x, quest_title(x)) for x in chain], "who": who, "item": True,
+                        "spot": spot, "deadline": dl, "why": why, "n": k, "in_zone": inz, "dungeon": None, "where": spot[0] if spot else None})
+            continue
         k, inz = exit_before(dl["at"], acc["zone"])
-        out.append({"kind": "pickup", "quests": [(x, quest_title(x)) for x in chain], "who": acc["npc"] or "",
+        out.append({"kind": "pickup", "need": need, "quests": [(x, quest_title(x)) for x in chain], "who": acc["npc"] or "",
                     "spot": (acc["zone"], acc["x"], acc["y"]) if acc["zone"] else None, "deadline": dl, "why": why, "n": k, "in_zone": inz,
                     "dungeon": None, "where": acc["zone"]})
     seen, uniq = set(), []   # a chain listed once (its last part decides the deadline)
@@ -1027,8 +1113,21 @@ def catchup_line(x):
         what = (f"**Finish {names}**" + (f" in {x['dungeon']}" if x["dungeon"] else f" ({x['where']})" if x.get("where") else "")
                 + " (if you have not yet)")
     else:
-        what = f"**Pick up {names}**" + (f" from {x['who']}" if x["who"] else "") + (f" ({spot_text(x['spot'])})" if x["spot"] else "")
+        what = f"**{catchup_verb(x)} {names}**" + catchup_where(x)
     return what, f"before step {dl['step']} of the guide's {dl['lo']}-{dl['hi']} part: {x['why']}"
+
+
+def catchup_verb(x):
+    """"Pick up" when having the quest in your log is enough (the guide does its objectives), else "Do": its objectives, and every
+    earlier part you lack handed in (2026-11-14: "Pick up The Tower of Althalaxx (4 parts)" needed four quests done)."""
+    return "Pick up" if x.get("need") == "pickup" else "Do"
+
+
+def catchup_where(x):
+    """Where a catch-up starts: ", starting with <item>, a drop from ..." for a chain an item starts, else " from <NPC> (Zone x, y)"."""
+    if x.get("item"):
+        return f", starting with {x['who']}"
+    return (f" from {x['who']}" if x["who"] else "") + (f" ({spot_text(x['spot'])})" if x["spot"] else "")
 
 
 def timeline(sched, events, lv):
@@ -1090,6 +1189,10 @@ def timeline(sched, events, lv):
                 continue
             c["gear"] = next((gear_q[x["title"]] for x in c["quests"] if x["title"] in gear_q), None)
             z = c.get("zone")
+            if z == r["zone"] and not c["log"]:   # its giver or start item is inside: it starts during the run (Bijou, the Essence of
+                picks.append(INSIDE + group_text(c))   # Eranikus: listed as "a trip to Sunken Temple first", 2026-11-14)
+                count += len(c["quests"])
+                continue
             if c["log"] or not z or z == door or any(p[4] == z for p in path[:n + 1]):
                 pass
             elif z not in CAPITALS and any(p[4] == z for p in path[n + 1:]):
@@ -1141,18 +1244,24 @@ def timeline(sched, events, lv):
         if q in judged:
             x = judged[q]
             add(x["anchor"], "gear", f"gq{q}", " → ".join(t for _, t in x["quests"]), "for the gear, at a cost", detour_facts(x), detour_where(x))
-        else:
-            n = first_at(max(e["get_at"], lv), s0.get("zone")) or first_at(max(e["get_at"], lv))
+        else:   # where its chain starts (2026-11-14: The God Hakkar read "who gives it is not in the data" while the gear plan named
+            st = chain_step(q)   # Yeh'kinya, who starts its chain)
+            head = st[0] if st else q
+            ok, how, hz = chain_start(head, lv)
+            n = first_at(max(e["get_at"], lv), s0.get("zone")) or first_at(max(e["get_at"], lv), hz) or first_at(max(e["get_at"], lv))
+            start = (f"start with \"{quest_title(head)}\"" + (", which " if how.startswith("starts") else " ") + how
+                     if head != q and how else how)
             add(n, "gear", f"gq{q}", quest_title(q), "for the gear",
-                f"rewards {what}; who gives it is not in the data, so ask around while the guide has you in {s0.get('zone') or 'its zone'}")
+                f"rewards {what}; " + (start if start else
+                                       f"who gives it is not in the data, so ask around while the guide has you in {s0.get('zone') or 'its zone'}"))
     for x in cu:   # catch-ups at the route point that suits them (a dungeon's quests are in its row)
         if (x["kind"] == "finish" and x["dungeon"]) or all(t in in_dungeon for _, t in x["quests"]):
             continue
         _, when = catchup_line(x)
         lvs = sorted(v for v in (int((CQUESTS.get(q) or {}).get("quest_level") or 0) for q, _ in x["quests"]) if v)
         name = chain_name(x["quests"]) + (f", level {lvs[0]}" + (f"-{lvs[-1]}" if lvs[-1] != lvs[0] else "") if lvs else "")
-        title = ("Finish " if x["kind"] == "finish" else "Pick up ") + name
-        where = ((f"from {x['who']}" if x["who"] else "") + (f" ({spot_text(x['spot'])})" if x["spot"] else "")).strip()
+        title = ("Finish " if x["kind"] == "finish" else catchup_verb(x) + " ") + name
+        where = catchup_where(x).lstrip(", ").strip()
         how = "" if x["in_zone"] else (f"a trip to {x['where']}" if x["where"] in CAPITALS else f"a detour to {x['where']}") if x["where"] else ""
         add(x["n"], "catchup", "cu" + "-".join(str(q) for q, _ in x["quests"]), title, "catch up with your guide",
             when[0].upper() + when[1:] + (f"; {how} from here" if how else ""), where)
@@ -1178,13 +1287,26 @@ def detour_where(x):
     return (f"from {g}" if g else "") + (f" ({x['start'][0]} {x['start'][1]:.1f}, {x['start'][2]:.1f})" if x.get("start") else "")
 
 
+INSIDE = "inside the run: "   # a dungeon chain whose giver or start item is inside the dungeon (no pick-up before the run)
+
+
+def split_picks(picks):
+    """(to pick up before the run, already in your log, starting inside the run) of a dungeon's pick list."""
+    log = "already in your log: "
+    return ([x for x in picks if not x.startswith((log, INSIDE))], [x[len(log):] for x in picks if x.startswith(log)],
+            [x[len(INSIDE):] for x in picks if x.startswith(INSIDE)])
+
+
 def timeline_line(r):
     out = (f"**Level {r['level']}, step {r['step']} of the guide's {r['lo']}-{r['hi']} part**, {r['anchor']}: **{r['title']}** ({r['tag']}). "
            f"{r['facts'][0].upper() + r['facts'][1:] if r['facts'] else ''}")
     if r["where"]:
         out += f"; {r['where']}"
-    if r["pickups"]:
-        out += ". Pick up first: " + "; ".join(r["pickups"])
+    new, have, inside = split_picks(r["pickups"])
+    if new or have:
+        out += ". Pick up first: " + "; ".join(new + [f"already in your log: {x}" for x in have])
+    if inside:
+        out += ". Starts inside the run: " + "; ".join(inside)
     return out + "."
 
 
@@ -1218,17 +1340,21 @@ def dungeon_lines(sched):
               + (f"; its drops are worth about {r['worth']} min on average" if r["worth"] and "drops" not in r.get("why", "") else "") + "."]
         if r.get("picks") is not None:   # the timeline's list: what you can have in your log when you get there
             took = sum(1 for x in r["quests"] if x["route"] and not x["grey"])
-            new = [x for x in r["picks"] if not x.startswith("already in your log: ")]
-            have = [x[len("already in your log: "):] for x in r["picks"] if x.startswith("already in your log: ")]
+            new, have, inside = split_picks(r["picks"])
             if new:
                 o += ["  - Pick up first: " + "; ".join(new)]
             if have:
                 o += ["  - Already in your log: " + "; ".join(have)]
+            if inside:
+                o += ["  - Starts inside the run: " + "; ".join(inside)]
         elif r.get("chains"):
             mine = open_chains(r)
             took = sum(1 for x in r["quests"] if x["route"] and not x["grey"])
-            if [c for c in mine if not c["log"]]:
-                o += ["  - Pick up first: " + "; ".join(group_text(c) for c in mine if not c["log"])]
+            inside = [c for c in mine if not c["log"] and c.get("zone") == r["zone"]]
+            if [c for c in mine if not c["log"] and c not in inside]:
+                o += ["  - Pick up first: " + "; ".join(group_text(c) for c in mine if not c["log"] and c not in inside)]
+            if inside:
+                o += ["  - Starts inside the run: " + "; ".join(group_text(c) for c in inside)]
             if [c for c in mine if c["log"]]:
                 o += ["  - Already in your log: " + "; ".join(group_text(c, short=True) for c in mine if c["log"])]
             if took:
@@ -1272,7 +1398,7 @@ def dungeon_runs(bonus):
             ch = max((x.get("chance") or 0.25) for x in ss)
             oz, op = other(e)
             items.append(f"{what} ({e['slot']}, from level {e['level']}; {' or '.join(x['boss'] for x in ss)}, "
-                         f"{ch:.0%} drop{', chance unknown' if not any(x.get('chance') for x in ss) else ''}"
+                         + (f"{ch:.0%} drop" if any(x.get("chance") for x in ss) else f"drop chance unknown, counted as {ch:.0%}")
                          + (f"; the other half drops in {oz}, {op:.0%}" if oz else "")
                          + f"): over your {e['over']}, {pct(e['bonus_gain'])} {SHORT}, about {e['bonus_minutes']:.0f} min saved "
                          + ("with both halves" if oz else "if it drops"))
@@ -1284,15 +1410,20 @@ def dungeon_runs(bonus):
 DQ = {}
 
 
+def load_dq():
+    """DQ: {dungeon map id: [quest ids]} from dungeon_quests.csv (a quest whose target, item or giver exists only in that dungeon)."""
+    if not DQ:
+        for r in csv.DictReader(open(IP.RAW / "dungeon_quests.csv", encoding="utf-8")):
+            DQ.setdefault(int(r["map"]), []).append(int(r["quest"]))
+
+
 def dungeon_schedule(cfg, lv, runs, events=None):
     """Every leveling dungeon you have not outgrown, once (2026-11-09, user: "Make sure dungeons are not being skipped, because dungeons
     are so worth to run at least once. The XP from the dungeon quests is significant, and I can collect the quest and then run the dungeon
     once"): the level to run it (the middle of its quests you have not done, inside its range, not below yours), its quests with where
     each starts (dungeon_quests.csv: a quest whose target, item or giver exists only in that dungeon), and its drops worth hoping for
     (`runs`, dungeon_runs). A dungeon whose quests are all five or more levels below you and that drops nothing for you is left out."""
-    if not DQ:
-        for r in csv.DictReader(open(IP.RAW / "dungeon_quests.csv", encoding="utf-8")):
-            DQ.setdefault(int(r["map"]), []).append(int(r["quest"]))
+    load_dq()
     chain_step(0)   # (loads the quest tables)
     race_mask = 77 if cfg["faction"] == "alliance" else 178
     cls_bit = 1 << (IP.CLASS_ID[cfg["class"]] - 1)
@@ -1361,7 +1492,7 @@ def dungeon_schedule(cfg, lv, runs, events=None):
             if first["start"] and (h in COMPLETED or not how):   # (already started: where the next part is picked up)
                 how = first["start"]
             elif h not in {x["id"] for x in xs} and how:   # the chain starts before the dungeon's part: name its first quest
-                how = f"start with \"{quest_title(h)}\" " + how
+                how = f"start with \"{quest_title(h)}\"" + (", which " if how.startswith("starts") else " ") + how
             chains.append({"head": h, "quests": sorted(xs, key=lambda x: (x["level"], x["id"])), "start": how, "zone": hz,
                            "route": all(x["route"] for x in xs), "grey": all(x["grey"] for x in xs), "log": any(x["log"] for x in xs)})
         quests = [x for c in chains for x in c["quests"]]
@@ -1543,16 +1674,22 @@ def pick(cfg):
     return LG.pick(cfg["class"], cfg["spec"])
 
 
-def talents_check(cfg, snap, level):
+def fightlab_run():
+    """The fight lab's run.py, loaded by its path (a bare "import run" found raidsim's for a tank)."""
     sys.path.insert(0, str(DATA))
-    sys.path.insert(0, str(DATA / "fightlab"))   # the fight lab's run.py by its path (a bare "import run" found raidsim's for a tank)
+    sys.path.insert(0, str(DATA / "fightlab"))
     import importlib.util
-    spec = importlib.util.spec_from_file_location("fightlab_run", DATA / "fightlab" / "run.py")
     FR = sys.modules.get("fightlab_run")
     if FR is None:
+        spec = importlib.util.spec_from_file_location("fightlab_run", DATA / "fightlab" / "run.py")
         FR = importlib.util.module_from_spec(spec)
         sys.modules["fightlab_run"] = FR
         spec.loader.exec_module(FR)
+    return FR
+
+
+def talents_check(cfg, snap, level):
+    FR = fightlab_run()
     b, order, prov, rot = pick(cfg)
     want = FR.allocation_at({"allocation": b["allocation"], "order": order}, level)
     have = {}
@@ -1686,8 +1823,10 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     CTX["notices"] = list(NOTICES)
     o += [f"## Now (level {lv})", "",
           f"Everything below is worth doing at your level or within {LOOKAHEAD} levels: items you can wear now, and items you can get now "
-          "and wear a level or two later. Percentages are how much faster you kill a mob of your level once the item replaces what you "
-          "wear (fight lab).", ""]
+          "and wear a level or two later. "
+          + ("Percentages are how much better you tank (tank value: threat, damage taken and effective health) once the item replaces "
+             "what you wear." if cfg.get("metric") == "tank" else
+             "Percentages are how much faster you kill a mob of your level once the item replaces what you wear (fight lab)."), ""]
     worn = {s: (eq.get("main-hand") if s == "weapon" else eq.get(s)) for s in SLOT_ORDER}
     for s in SLOT_ORDER:   # when the item worn now is replaced (the first upgrade of the slot)
         if worn.get(s):
@@ -1740,14 +1879,17 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     for e in events:
         first.setdefault(e["slot"], e)
     for slot in SLOT_ORDER:
-        it = eq.get("main-hand") if slot == "weapon" else eq.get(slot)
         rep = first.get(slot)
-        if not it:
-            o += [f"| {slot} | **empty** | 0 | {('level ' + str(rep['level']) + ': ' + rep['item']['name']) if rep else 'nothing worth 0.5% before 60'} |"]
-            continue
-        v = value(it["stats"], wl) + value(it["enchant_stats"], wl)
-        o += [f"| {slot} | {it['name']}{' (' + ', '.join(it['enchant']) + ')' if it['enchant'] else ''} | {pct(v / wl['time'])} {FASTER} | "
-              f"{('level ' + str(rep['level']) + ': ' + rep['item']['name']) if rep else 'not before 60 by 0.5%'} |"]
+        when = f"level {rep['level']}: {upgrade_name(rep)[0]}" if rep else None   # (a weapon pair by both halves, 2026-11-14)
+        held = [("main hand", eq.get("main-hand"))] + ([("off hand", eq.get("off-hand"))] if eq.get("off-hand") else []) \
+            if slot == "weapon" else [(slot, eq.get(slot))]   # (the off hand had no row: Arcea's Orb of Mystic Insight)
+        for name, it in held:
+            if not it:
+                o += [f"| {name} | **empty** | 0 | {when or 'nothing worth 0.5% before 60'} |"]
+                continue
+            v = value(it["stats"], wl) + value(it["enchant_stats"], wl)
+            o += [f"| {name} | {it['name']}{' (' + ', '.join(it['enchant']) + ')' if it['enchant'] else ''} | {pct(v / wl['time'])} {FASTER} | "
+                  f"{when or 'not before 60 by 0.5%'} |"]
     o += [""]
     # level by level: by the level you act (the earliest the quest, dungeon or recipe allows); "wear at" when it comes later
     o += ["## Level by level", "", f"Each upgrade worth {UPGRADE:.1%} {FASTER} or more, under the level at which you can go and get it, "
@@ -1770,7 +1912,7 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     if sched:
         o += ["## Dungeon runs", "", "Every leveling dungeon you have not outgrown, once, at the level its quests fit: pick the quests up first. "
               "Drops are bonuses over what the plan has you wear: wear one if it drops, the plan goes on as written if not. Drop chances "
-              "are Classic's (25% where it has none); \"about N min\" is a drop's minutes of killing saved over the plan's item, and a "
+              f"are Classic's (25% where it has none); \"about N min\" is a drop's {MINUTES_OF} saved over the plan's item, and a "
               f"run's drops are worth that times their chances. Minutes assume {KILL_SHARE:.0%} of your experience comes from kills.", ""]
         o += dungeon_lines(sched)
     if RG and RG["trust"]["mismatch"]:   # 2026-11-13: never "none found" when the detours were not looked for
@@ -1799,18 +1941,28 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
            "each level's best Forever set; the items you wear place you between the two (their stats scored with the standard gear's values, "
            "against the best set's; enchants, hit and expertise left out), and that share is kept for the levels ahead. Hit and expertise count while the build's talents leave room under the cap. Resistances and effects are not scored."
            if wfile.startswith("addon/") else
+           f"- Stat values: `_reference/data/characters/weights/{wfile}` (tank_weights.py): the raid simulator's threat and damage-taken stat "
+           "weights for the level-60 tank build in its gear, plus the effective health the simulator does not score, as shares of tank value "
+           "(half threat, a quarter damage taken, a quarter effective health); one measurement at 60 stands for every level."
+           if cfg.get("metric") == "tank" else
            f"- Stat values: `_reference/data/characters/weights/{wfile}` (stat_weights.py): the page build in the fight lab at levels 20-60 with each "
            "stat raised, common random numbers; smoothed over neighbouring levels. Spell crit and hit from items, resistances and defense read 0."),
-          f"- Minutes saved: at each level an item is worn, the seconds per kill its stats save over what it replaces (stats are worth less as "
-          f"you level) x the kills of that level ({KILL_SHARE:.0%} of the level's experience from kills, an estimate), until the plan "
-          "replaces it. Quests, travel and dungeon time are not counted. Gear you find or buy that the plan cannot see (world drops, later "
-          "auction listings) may replace an item sooner.",
+          (f"- Minutes saved: at each level an item is worn, its share of tank value counted as the same share of faster play (an "
+           "assumption: a better tank pulls more and the healer rests less), applied to the level's killing time (the spec's solo time per "
+           f"kill x the kills of the level, {KILL_SHARE:.0%} of its experience from kills, an estimate), until the plan replaces it. Gear you "
+           "find or buy that the plan cannot see (world drops, later auction listings) may replace an item sooner."
+           if cfg.get("metric") == "tank" else
+           f"- Minutes saved: at each level an item is worn, the seconds per kill its stats save over what it replaces (stats are worth less as "
+           f"you level) x the kills of that level ({KILL_SHARE:.0%} of the level's experience from kills, an estimate), until the plan "
+           "replaces it. Quests, travel and dungeon time are not counted. Gear you find or buy that the plan cannot see (world drops, later "
+           "auction listings) may replace an item sooner."),
           "- School damage counts by the build's share: " + ", ".join(f"{k} {v:.0%}" for k, v in cfg["school_share"].items()) + " (an estimate).",
           "- Quests Forever added carry no level in Blizzard's data: their zone's level range stands in. Dungeons Forever added: the range of their "
           "drops' required levels. Crafts: the recipe's skill from the Classic database (Forever may differ); a craft counts once your profession "
           "rank allows the skill at that level.",
-          f"- An upgrade is listed when it is worth {UPGRADE:.1%} of the time per kill or more over what you would be wearing then, and "
-          f"it saves at least {MIN_MINUTES:.0f} minutes of killing before the next upgrade of the slot replaces it, worn at least {MIN_LASTS} levels "
+          f"- An upgrade is listed when it is worth {UPGRADE:.1%} of {'tank value' if cfg.get('metric') == 'tank' else 'the time per kill'} "
+          f"or more over what you would be wearing then, and "
+          f"it saves at least {MIN_MINUTES:.0f} {MINUTES_OF} before the next upgrade of the slot replaces it, worn at least {MIN_LASTS} levels "
           "(level 60 ends leveling). A smaller or shorter-lived upgrade is left out, and the next one is counted against what you would still "
           "be wearing. Quest rewards you get anyway: wear them when the game shows them as better. Enchants: only when the enchant saves "
           f"{MIN_MINUTES:.0f} minutes before you replace the item.",
@@ -1833,21 +1985,62 @@ MOUNT = {"level": 40, "riding": 200000, "mount": 800000, "discount_rep": "Honore
 
 
 def training_by_level(cls):
-    """{level: [(spell name, cost copper)]} the class trainer teaches (Classic prices, class_training.csv)."""
+    """{level: [(spell name, cost copper)]} the class trainer teaches this character (Classic prices, class_training.csv; training_rows)."""
     out = {}
-    for r in csv.DictReader(open(IP.RAW / "class_training.csv", encoding="utf-8")):
-        if int(r["class"]) == IP.CLASS_ID[cls] and r["name"]:
-            out.setdefault(int(r["level"]), []).append((r["name"], int(r["cost"])))
+    for L, sid, name, cost in training_rows(cls):
+        out.setdefault(L, []).append((name, cost))
     return out
 
 
 SUPERSEDED = {"Frost Armor": "Ice Armor"}   # a spell whose ranks stop mattering once its replacement is known (owed_training)
+TRAIN = {}   # who learns what: main() sets "race" (the character's race id) and "talent_from" ({talent: the level the build takes it})
+SLA_FILE = DATA / "raw" / "2026-11-09-wago-1.60.1.70862" / "SkillLineAbility.csv"   # Forever's client table (race masks)
+
+
+def race_masks():
+    """{spell id: [the 64-bit race mask of each of its SkillLineAbility rows]} (0: every race), loaded once."""
+    if "sla" not in TRAIN:
+        out = {}
+        for r in csv.DictReader(open(SLA_FILE, encoding="utf-8")):
+            m = (int(r["RaceMasks_0"]) & 0xFFFFFFFF) | ((int(r["RaceMasks_1"]) & 0xFFFFFFFF) << 32)
+            out.setdefault(int(r["Spell"]), []).append(m)
+        TRAIN["sla"] = out
+    return TRAIN["sla"]
+
+
+def talent_names(cls):
+    """The talent names of the class's Forever trees (a trainer spell of the same name is a talent's ability)."""
+    if ("talents", cls) not in TRAIN:
+        data = json.load(open(DATA / "forever-talents" / f"{cls}.json", encoding="utf-8"))
+        TRAIN[("talents", cls)] = {t["name"] for tr in data["trees"] for t in tr["talents"]}
+    return TRAIN[("talents", cls)]
+
+
+def train_level(cls, L, sid, name):
+    """The level this character can learn a trainer row at, or None when it never can (2026-11-14, user: "Fix the planner and any
+    bugs"; the training lists had a Gnome mage's Teleport: Orgrimmar and Pyroblast ranks without the talent): a spell its race cannot
+    learn (Forever's SkillLineAbility race masks: the other faction's teleports and portals, the priests' racial spells), and a talent's
+    ability (Pyroblast, Holy Shield) only with the talent: from the level the build takes it, or at once when the spellbook has it."""
+    race = TRAIN.get("race")
+    masks = race_masks().get(sid)
+    if race and masks and not any(m == 0 or (m >> (race - 1)) & 1 for m in masks):
+        return None
+    if name in talent_names(cls) and name not in (BOOK.get("ranks") or {}):
+        first = (TRAIN.get("talent_from") or {}).get(name)
+        return max(L, first) if first else None
+    return L
 
 
 def training_rows(cls):
-    """[(level, spell id, name, cost copper)] the class trainer teaches (Classic's table, class_training.csv)."""
-    return [(int(r["level"]), int(r["spell"]), r["name"], int(r["cost"]))
-            for r in csv.DictReader(open(IP.RAW / "class_training.csv", encoding="utf-8")) if int(r["class"]) == IP.CLASS_ID[cls] and r["name"]]
+    """[(level, spell id, name, cost copper)] the class trainer teaches this character (Classic's table, class_training.csv), each at
+    the level it can be learned (train_level: race and talents)."""
+    out = []
+    for r in csv.DictReader(open(IP.RAW / "class_training.csv", encoding="utf-8")):
+        if int(r["class"]) == IP.CLASS_ID[cls] and r["name"]:
+            L = train_level(cls, int(r["level"]), int(r["spell"]), r["name"])
+            if L is not None:
+                out.append((L, int(r["spell"]), r["name"], int(r["cost"])))
+    return out
 
 
 def spell_ranks(cls):
@@ -2036,8 +2229,9 @@ def gold_plan(cfg, snap, at, lv):
            ["Which ranks you know is unknown: ForeverTape (0.9.5 or later) writes your spellbook after a /reload or a logout.", ""]),
          f"Income is an estimate from Classic's data: coin and loot from about {kills_per_level(lv):.0f} kills a level (cloth, greens and "
          "other trade goods at the auction house's usual sale price after its cut, the rest at vendor prices), plus your pace of "
-         f"{qpl:.1f} quests a level at Classic's quest money. It assumes you sell what drops or use it in place of buying it. \"Training\" counts the spells your rotation and kit use; optional ones (a frost mage's fire "
-         "spells, teleports) are listed apart.", "",
+         f"{qpl:.1f} quests a level at Classic's quest money. It assumes you sell what drops or use it in place of buying it. \"Training\" "
+         "counts the spells your rotation and kit use; optional ones (spells your build does not press, teleports) are listed apart. Only "
+         "spells your race can learn are counted, and a talent's spell only once your build has the talent.", "",
          "| Level | Income (estimate) | Training you need at the next level | Optional training |", "|---|---|---|---|"]
     for L, inc, nt, ot, names in rows[:LAST - lv + 1][:14]:
         o += [f"| {L} | {AH.money(inc)} | {AH.money(nt) if nt else '-'}{' (' + ', '.join(names) + ')' if names else ''} | "
@@ -2047,7 +2241,10 @@ def gold_plan(cfg, snap, at, lv):
           f"confirmed). At this income you would have about {AH.money(by40)} by {MOUNT['level']} after training and the plan's gear"
           + (f", enough for the mount at {mount_at}." if mount_at else ", not enough by 60 on income alone: auction sales have to make up the rest."),
           "", f"Gear budget: the gold above the next two levels' training now, then {GEAR_SHARE:.0%} of each level's income after training "
-          "(character.json \"gear_share\"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's "
+          "(character.json \"gear_share\"); the rest saves for the mount and for 60. "
+          + ("Every bought or crafted upgrade below fits it. " if GOLD is not None else
+             "With your gold unknown the upgrades below are not checked against it: log in (bnet_login.py) and refresh. ")
+          + "The plan's "
           f"buys and crafts come to {AH.money(sum(c for L, c in PLANNED if L < MOUNT['level']))} before {MOUNT['level']} and "
           f"{AH.money(sum(c for L, c in PLANNED))} in all; you would reach 60 with about {AH.money(max(0, at60))}"
           + (" after the mount." if mount_at else ".")]
@@ -2187,7 +2384,7 @@ def action_sections(evs, at, L, head="###"):
         o += [f"{head} {title}", ""]
         for e in sorted(by[kind], key=lambda e: -minutes_saved(e, at) / (price_of(e) or 1)):
             saves, earn = pays_for_itself(e, at, price_of(e) or 0)
-            verdict = f" Saves about {saves:.0f} min of killing; earning its price takes about {earn:.0f} min of play."
+            verdict = f" Saves about {saves:.0f} {KILLING}; earning its price takes about {earn:.0f} min of play."
             if e.get("paid") and e["paid"][0] > max(e["get_at"], NOW_LV):
                 verdict += f" Your gear budget covers it at level {e['paid'][0]} ({AH.money(e['paid'][1])} left after it)."
             elif e.get("paid"):
@@ -2382,6 +2579,7 @@ def consumable_lines(level, wl, profs, school_share, trip_min=None, at=None):
             continue
         how, cost = "buy", (PRICES.buy(c["id"]) if PRICES else None)
         sp = makes.get(c["id"])
+        reag = []
         if sp and rs.get(sp) and rs[sp][0] in SKILL_NAME:
             prof = SKILL_NAME[rs[sp][0]]
             have = (profs.get(prof) or (None,))[0]
@@ -2395,7 +2593,8 @@ def consumable_lines(level, wl, profs, school_share, trip_min=None, at=None):
             elif have is not None:
                 how = f"buy (you make it at {prof} {rs[sp][1]}; you have {have})"
         per_hour = cost * 60 / minutes if cost and minutes else None
-        rows.append((CONSUMABLE_KIND[c["type"]], c["name"], st, xp, gain, minutes, how, cost, per_hour))
+        rows.append((CONSUMABLE_KIND[c["type"]], c["name"], st, xp, gain, minutes, how, cost, per_hour,
+                     [(n, k) for n, k, _ in reag] if how.startswith("make it") else []))
     import math
     income_min = (income_per_level(level, QPL) / minutes_per_level(level, at)) if at else None   # copper a minute of play
     out = []
@@ -2403,19 +2602,21 @@ def consumable_lines(level, wl, profs, school_share, trip_min=None, at=None):
     for kind in ("Weapon oil", "Food", "Elixir", "Scroll"):
         ks = sorted([r for r in rows if r[0] == kind], key=lambda r: -(r[4] + r[3] / 100 * 0.5))[:3]
         scored = []
-        for k, name, st, xp, gain, minutes, how, cost, per_hour in ks:
+        for k, name, st, xp, gain, minutes, how, cost, per_hour, reag in ks:
             saved = 60 * (gain * PLAY_KILL_SHARE + xp / 100 * KILL_SHARE)   # play minutes an hour of it saves
             earn = per_hour / income_min if per_hour and income_min else None   # play minutes its hour's cost takes to earn
             qty = math.ceil(trip_min / minutes) if trip_min and minutes else None
-            scored.append((k, name, st, xp, gain, minutes, how, cost, per_hour, saved, earn, qty))
+            scored.append((k, name, st, xp, gain, minutes, how, cost, per_hour, saved, earn, qty, reag))
         good = [x for x in scored if x[10] is not None and x[9] >= x[10]]
         pick = max(good, key=lambda x: x[9] - x[10])[1] if good else None   # the one that saves the most beyond its price
-        for k, name, st, xp, gain, minutes, how, cost, per_hour, saved, earn, qty in scored:
+        for k, name, st, xp, gain, minutes, how, cost, per_hour, saved, earn, qty, reag in scored:
             eff = ", ".join(f"+{v:g} {x.replace('_', ' ')}" for x, v in st.items()) + (f", +{xp}% kill experience" if xp else "")
             worth = earn is not None and saved >= earn
             CTX["consumables"].append({"kind": kind, "item": name, "effect": eff, "pct": pct(gain), "minutes": minutes, "how": how,
                                        "cost": cost, "hour": per_hour, "best": name == (pick or scored[0][1]), "qty": qty,
-                                       "total": qty * cost if qty and cost else None, "saved": saved, "earn": earn, "worth": worth})
+                                       "total": qty * cost if qty and cost else None, "saved": saved, "earn": earn, "worth": worth,
+                                       # what to buy when you make it yourself (2026-11-14: the town list said "Buy ×14 Smoked Sagefish"
+                                       "mats": [(n, c * qty) for n, c in reag] if qty else []})   # at the materials' price)
             buy = f"×{qty} ({AH.money(qty * cost)})" if qty and cost else "?"
             verdict = (f"yes: saves {saved:.1f} min an hour, costs {earn:.1f}" if worth else
                        f"no: saves {saved:.1f} min an hour, costs {earn:.1f}" if earn is not None else "?")
@@ -2423,7 +2624,7 @@ def consumable_lines(level, wl, profs, school_share, trip_min=None, at=None):
                        f"{buy} | {verdict} |")
     if not out:
         return []
-    return (["| Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |",
+    return ([f"| Kind | Item | Effect | {FASTER[0].upper() + FASTER[1:]} | Lasts | How | One costs | For your trip | Earns its price back |",
              "|---|---|---|---|---|---|---|---|---|"] + out +
             ["", "One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience is extra: a food's +5% speeds up the "
              "experience you get from kills, not from quests. Elixirs: Classic lets several stack; Forever's rule is not confirmed."])
@@ -2503,11 +2704,14 @@ def change_lines(d, events, lv):
     o = [f"## Since your last refresh ({old['time']}, level {old['level']})", ""]
     if old.get("gold") is not None and GOLD is not None:
         o += [f"- Gold: {AH.money(old['gold'])} then, {AH.money(GOLD)} now."]
-    o += [f"- New in the plan: {', '.join(new)}." if new else "- Nothing new in the plan."]
+    if new:
+        o += [f"- New in the plan: {', '.join(new)}."]
     if gone:
         o += [f"- Left the plan: {', '.join(gone)}."]
     if moved:
         o += [f"- Moved: {', '.join(moved)}."]
+    if not (new or gone or moved):   # ("Nothing new in the plan" had stood above a "Left the plan" line, 2026-11-14)
+        o += ["- Nothing new in the plan."]
     return o + [""]
 
 
@@ -2522,9 +2726,10 @@ def judge_lines(worn, events, wl, lv, cfg):
     if unit == "spell_power":
         rate = {k: wl["w"].get(k, 0.0) / sp for k in ("intellect", "spirit", "stamina", "mp5", "armor")}
         sch = ", ".join(f"{k} {v:.0%}" for k, v in cfg["school_share"].items())
+        top = max(cfg["school_share"], key=cfg["school_share"].get) if cfg["school_share"] else "frost"   # (the example names the main school)
         how = (f"Count a piece's stats in spell power: 1 intellect = {rate['intellect']:.2f}, 1 spirit = {rate['spirit']:.2f}, 1 stamina = "
                f"{rate['stamina']:.2f}, 1 mana per 5 sec = {rate['mp5']:.2f}, 100 armor = {100 * rate['armor']:.2f}; school damage counts by "
-               f"your build's share ({sch}: +10 frost damage counts {10 * cfg['school_share'].get('frost', 0):.1f}), \"spell damage and "
+               f"your build's share ({sch}: +10 {top} damage counts {10 * cfg['school_share'].get(top, 0):.1f}), \"spell damage and "
                "healing\" in full.")
         CTX["rates"] = {**{k: round(v, 2) for k, v in rate.items()}, **{f"{k} damage": round(v, 2) for k, v in cfg["school_share"].items()}}
     else:
@@ -2532,9 +2737,10 @@ def judge_lines(worn, events, wl, lv, cfg):
                  "mp5": "mana per 5 sec"}
         rate = sorted(((k, v / sp * (100 if k == "armor" else 1)) for k, v in wl["w"].items() if k != unit and abs(v / sp) >= 0.005),
                       key=lambda kv: -abs(kv[1]))[:9]
-        how = "Count a piece's stats in stamina: " + ", ".join(f"1 {names.get(k, k)} = {v:.2f}".replace("1 100 armor", "100 armor")
+        nm = lambda k: names.get(k, k.replace("_", " "))   # (a raw key had shown: "1 spell_power = 0.48", 2026-11-14)
+        how = "Count a piece's stats in stamina: " + ", ".join(f"1 {nm(k)} = {v:.2f}".replace("1 100 armor", "100 armor")
                                                              for k, v in rate) + "."
-        CTX["rates"] = {names.get(k, k): round(v, 2) for k, v in rate}
+        CTX["rates"] = {nm(k): round(v, 2) for k, v in rate}
     label = "spell power" if unit == "spell_power" else "stamina"
     CTX["unit"] = label
     o = ["### Judging a drop or an auction find", "",
@@ -2579,7 +2785,7 @@ def enchant_lines(worn, ench, profs, wl, at=None, lv=None):
         if now and at and lv and (nv - have) / wl["time"] >= 0.001:   # enchant only what you keep long enough for it to save MIN_MINUTES
             life = {"gain": (nv - have) / wl["time"], "level": max(lv, it.get("since") or lv), "until": it.get("until")}
             if minutes_saved(life, at) < MIN_MINUTES:
-                out.append(f"- {who}: skip, {now['name']} saves only about {minutes_saved(life, at):.0f} min of killing before you replace it"
+                out.append(f"- {who}: skip, {now['name']} saves only about {minutes_saved(life, at):.0f} {KILLING} before you replace it"
                            + (f" at level {it['until']}." if it.get("until") else "."))
                 continue
         if now and (nv - have) / wl["time"] >= 0.001:
@@ -2607,6 +2813,13 @@ def main():
     snap, fetched = snapshot(cfg, d, not a.no_refresh)
     sys.path.insert(0, str(DATA))
     b, order, prov, rot = pick(cfg)
+    # who learns which trainer spells (train_level): the race, and the level the build takes each talent (a talent's ability ranks)
+    TRAIN["race"] = (snap["profile"].get("race") or {}).get("id")
+    FR = fightlab_run()
+    for L in range(10, 61):
+        for n, k in FR.allocation_at({"allocation": b["allocation"], "order": order}, L).items():
+            if k:
+                TRAIN.setdefault("talent_from", {}).setdefault(n, L)
     wfile = cfg.get("weights") or f"{cfg['class']}-{rot}.json"
     aw = None if cfg.get("weights") else addon_weights(dict(cfg, _level=snap["profile"].get("level")), b, order, rot, d)
     if aw:
@@ -2616,9 +2829,9 @@ def main():
               f"{100 * wrec['share']:.0f}% of the way from the lab's standard gear to the level's best Forever set")
     else:
         at, wrec = weights(cfg["class"], rot, wfile)
-    global FASTER, SHORT, KILLING
+    global FASTER, SHORT, KILLING, MINUTES_OF
     if cfg.get("metric") == "tank":
-        FASTER, SHORT, KILLING = "better tanking", "better", "min of group play"
+        FASTER, SHORT, KILLING, MINUTES_OF = "better tanking", "better", "min of group play", "minutes of group play"
     commit, n_items = IP.sim_version()
     DATAVER.update({"sim": commit, "items": n_items, "weights": wrec.get("date"), "weights_build": wrec.get("build")})
     if wrec.get("build") != b["id"]:
@@ -2782,6 +2995,29 @@ def main():
                 f = RG["quests"].get(s.get("quest")) if s["kind"] == "quest" else None
                 if f and f.get("turnin"):
                     s["route_level"] = f["turnin"]["level"]
+    # a quest whose target, item or giver is only in a dungeon is done in that dungeon's run: its reward comes no earlier than the level
+    # the guide runs it (else two above the dungeon's lowest level). 2026-11-14: Talvash's Enhancing Necklace was planned at 41 while
+    # "Restoring the Necklace" needs Uldaman, which the guide runs at 46 (item_pool.window: dungeon_level).
+    load_dq()
+    chain_step(0)
+    dmap = {q: m for m, qs in DQ.items() for q in qs}
+
+    def chain_dungeon(q):   # the dungeon of the quest or of an earlier part you have not done (the reward quest 2361 follows 2204,
+        seen = set()        # Uldaman's "Restoring the Necklace")
+        while q and q not in seen and q not in COMPLETED:
+            seen.add(q)
+            if q in dmap:
+                return dmap[q]
+            q = (QCHAIN.get(q) or (0,))[0]
+        return None
+    for p in pool:
+        for s in p["sources"]:
+            m = chain_dungeon(s.get("quest")) if s["kind"] == "quest" and isinstance(s.get("quest"), int) and not s.get("route_level") else None
+            if m is not None:
+                dn, dlo = (IP.DUNGEONS.get(IP.MAP_TO_ZONE.get(m)) or (None, 0))[:2]
+                if dn:
+                    gl = ((RG or {}).get("dungeons", {}).get(dn) or {}).get("level")
+                    s["dungeon"], s["dungeon_level"] = dn, gl or dlo + 2
     sure_pool = [dict(p, sources=[s for s in p["sources"] if s["kind"] != "dungeon"]) for p in pool]
     sure_pool = [p for p in sure_pool if p["sources"]]
     out = set()

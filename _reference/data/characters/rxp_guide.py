@@ -55,6 +55,16 @@ def bounds():
     return json.loads((HERE / "uimap_bounds.json").read_text(encoding="utf-8"))["maps"]
 
 
+_ZONES = {}
+
+
+def zone_names():
+    """{map id (str): its bounds and name}, loaded once (step_tags names a ".zone <map id>" by it)."""
+    if not _ZONES:
+        _ZONES.update(bounds())
+    return _ZONES
+
+
 def position(arg, maps):
     """(zone, x, y) of a .goto argument: "1431/0,-1213.54,-10531.89" (map id, world y, world x) or "Duskwood,75.8,45.3"."""
     m = re.match(r"(\d+)/\d+,(-?[\d.]+),(-?[\d.]+)", arg)
@@ -437,7 +447,11 @@ def step_view(step, who, level, enabled):
         elif t == "hs" and "travel" not in tags:
             tags["travel"] = "your hearthstone"
         elif t in ("zone", "zoneskip") and a and "travel" not in tags:
-            tags["travel"] = f"the trip to {a.split(',')[0].split('/')[0]}"
+            z = a.split(',')[0].split('/')[0].strip()
+            if z.isdigit():   # a map id (".zone 1424"): its name (2026-11-14: a page read "before the trip to 1424")
+                z = (zone_names().get(z) or {}).get("name") or ""
+            if z:
+                tags["travel"] = f"the trip to {z}"
     tags["dungeon"] = dungeon
     tags["loaded"] = loaded(tags, who, dungeon, dskip, enabled)
     if not tags["loaded"]:

@@ -172,8 +172,13 @@ def steps_html(C, lv):
             continue
         if cn["best"] and cn.get("worth") and cn.get("qty"):
             tr = C.get("trip") or {}
-            items.append(todo(f"cons{cn['item']}", f"Buy ×{cn['qty']} {esc(cn['item'])} <span class=\"slot\">{esc(cn['kind'].lower())}</span>",
-                              f"{coins(cn['total'])} · keeps it up for about {tr.get('minutes', 0) / 60:.1f} h of play · {esc(cn['effect'])}"))
+            keep = f"keeps it up for about {tr.get('minutes', 0) / 60:.1f} h of play · {esc(cn['effect'])}"
+            if cn.get("mats"):   # you make it: buy its materials here, make it at the workbench (2026-11-14)
+                items.append(todo(f"cons{cn['item']}", f"Buy the materials for ×{cn['qty']} {esc(cn['item'])} <span class=\"slot\">{esc(cn['kind'].lower())}</span>",
+                                  ", ".join(f"{esc(n)} ×{k}" for n, k in cn["mats"]) + f" · {coins(cn['total'])} · then {esc(cn['how'])} · {keep}"))
+            else:
+                items.append(todo(f"cons{cn['item']}", f"Buy ×{cn['qty']} {esc(cn['item'])} <span class=\"slot\">{esc(cn['kind'].lower())}</span>",
+                                  f"{coins(cn['total'])} · {keep}"))
     left = {n: k - own.get(n.lower(), 0) for n, k in mats.items() if k > own.get(n.lower(), 0)}
     if mats and not left:   # every material bought already (bags.py: the add-on's purchase record)
         items.append(info("The materials for your crafts are in your bags",
@@ -410,11 +415,14 @@ def render(cfg, C):
         lines = []
         if ch.get("gold_then") is not None and h.get("gold") is not None:
             lines.append(f"Gold {coins(ch['gold_then'])} then, {coins(h['gold'])} now.")
-        lines.append("New in the plan: " + esc(", ".join(ch["new"])) + "." if ch["new"] else "Nothing new in the plan.")
+        if ch["new"]:
+            lines.append("New in the plan: " + esc(", ".join(ch["new"])) + ".")
         if ch["gone"]:
             lines.append("Left the plan: " + esc(", ".join(ch["gone"])) + ".")
         if ch["moved"]:
             lines.append("Moved: " + esc(", ".join(ch["moved"])) + ".")
+        if not (ch["new"] or ch["gone"] or ch["moved"]):
+            lines.append("Nothing new in the plan.")
         changes = f'<section class="changes"><h3>Changed since your last refresh ({esc(ch["time"])}, level {ch["level"]})</h3><p>{" ".join(lines)}</p></section>'
     else:
         changes = ""

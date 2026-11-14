@@ -133,8 +133,9 @@ def window(it, s):
         if s.get("route_level"):   # the RestedXP route turns the quest in at this level (plan.py, rxp_guide.py; 2026-11-10)
             f = max(req, s["route_level"])
             return f, f + 2
-        if s.get("level"):
-            return max(req, s.get("min_level") or 0, s["level"] - 3), s["level"] + 8
+        if s.get("level"):   # (a dungeon's quest: not before its run, plan.py's dungeon_level, 2026-11-14)
+            f = max(req, s.get("min_level") or 0, s["level"] - 3, s.get("dungeon_level") or 0)
+            return f, max(f + 2, s["level"] + 8)
         lo, hi = ZONE_LEVELS.get(s.get("zone") or "", (req, req + 8))
         return max(req, lo), hi + 3
     if s["kind"] == "dungeon":
