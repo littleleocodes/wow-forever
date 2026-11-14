@@ -151,16 +151,20 @@ def addon_weights(cfg, b, order, rot, d):
     except Exception as e:   # noqa: BLE001 - without the lab's player the caps are not applied
         print(f"note: hit and expertise rooms not read ({type(e).__name__}: {e})")
 
-    def at(L):
-        L = min(max(L, lv[0]), lv[-1])
-        pts = totals(L)
-        ut = pts[0] + share * (pts[-1] - pts[0]) if len(pts) > 1 else pts[0]
-        spk, vals = AV.lev_at(entry, L, ut)
+    def plan_keys(vals):
         w = {}
         for k, v in vals.items():
             if k in ("spell_power", "healing") or k.endswith("_damage") and k != "spell_damage":
                 continue   # item_pool folds school damage into spell_power by the character's school shares; healing is spell_healing
             w[PLAN_KEY.get(k, k)] = v
+        return w
+
+    def at(L):
+        L = min(max(L, lv[0]), lv[-1])
+        pts = totals(L)
+        ut = pts[0] + share * (pts[-1] - pts[0]) if len(pts) > 1 else pts[0]
+        spk, vals = AV.lev_at(entry, L, ut)
+        w = plan_keys(vals)
         near = min(rooms, key=lambda x: abs(x - L)) if rooms else None
         if near is not None:
             hit_room, exp_room = rooms[near]
@@ -170,7 +174,44 @@ def addon_weights(cfg, b, order, rot, d):
                 w["expertise"] = 0.0
         return {"time": spk, "w": w}
     rec = {"date": data["made"][:10], "build": entry["build"], "source": "addon", "share": round(share, 3), "unit": unit, "have": have,
-           "file": "addon/forever-gear-values.json"}
+           "file": "addon/forever-gear-values.json", "placed_by": f"{unit} {have}"}
+
+    def place(eq):
+        """Place the character by the items it wears (2026-11-13; the add-on's own rule, addon_values.gear_share): the gain from the
+        standard set to the worn items over the gain from the standard set to the best Forever set, both scored with the standard gear's
+        values, hit and expertise and enchants left out (the two sets carry none); at the two measured levels around the character's,
+        interpolated. Replaces the unit-stat share when every level has item stats."""
+        nonlocal share
+        mine = {}
+        for slot, it in eq.items():
+            for k, x in (it.get("stats") or {}).items():
+                if k == "weapon_dps" and slot == "off-hand":
+                    k = "oh_weapon_dps"
+                mine[k] = mine.get(k, 0.0) + x
+        skip = ("hit", "expertise")
+
+        def at_level(L):
+            g = entry["levels"][str(L)]["gear"]
+            if len(g) < 2 or "item_stats" not in g[0] or "item_stats" not in g[-1]:
+                return None
+            w0 = plan_keys(g[0]["values"])
+            conv = lambda st: {PLAN_KEY.get(k, k): x for k, x in st.items()}   # noqa: E731
+            s0, s1 = conv(g[0]["item_stats"]), conv(g[-1]["item_stats"])
+            keys = (set(s0) | set(s1) | set(mine)) - set(skip)
+            den = sum((s1.get(k, 0.0) - s0.get(k, 0.0)) * w0.get(k, 0.0) for k in keys)
+            num = sum((mine.get(k, 0.0) - s0.get(k, 0.0)) * w0.get(k, 0.0) for k in keys)
+            return min(1.0, max(0.0, num / den)) if den > 0 else 0.0
+        L = min(max(level, lv[0]), lv[-1])
+        lo, hi = max(x for x in lv if x <= L), min(x for x in lv if x >= L)
+        a, c = at_level(lo), at_level(hi)
+        if a is None or c is None:
+            return None
+        k = 0.0 if hi == lo else (L - lo) / (hi - lo)
+        old = share
+        share = a * (1 - k) + c * k
+        rec.update(share=round(share, 3), share_by_unit=round(old, 3), placed_by="worn items")
+        return share
+    rec["place"] = place
     return at, rec
 
 
@@ -564,6 +605,7 @@ def acquirable(it, L, start, profs):
 
 
 FULL_BY_ID = {}   # every item the planner knows, by id (main): what you wear is read from it whatever pool a plan runs on
+NOTICES = []      # things the page and checklist must say up front (main): a missing guide text
 
 
 def plan(cfg, snap, at, pool, profs):
@@ -1606,6 +1648,8 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     global SPENDABLE
     gs, SPENDABLE = gold_plan(cfg, snap, at, lv)
     o += gs
+    o += [f"> **Heads up:** {n}" for n in NOTICES] + ([""] if NOTICES else [])
+    CTX["notices"] = list(NOTICES)
     o += [f"## Now (level {lv})", "",
           f"Everything below is worth doing at your level or within {LOOKAHEAD} levels: items you can wear now, and items you can get now "
           "and wear a level or two later. Percentages are how much faster you kill a mob of your level once the item replaces what you "
@@ -1713,8 +1757,8 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     o += ["## How this is worked out", "",
           (f"- Stat values: the gear add-on's (`_reference/data/characters/{wfile}`, addon_values.py; the in-game tooltip shows the same): the "
            "page build in the fight lab at levels 10-60 with every gear stat raised (stat_weights.py --full), on the lab's standard gear and on "
-           "each level's best Forever set; your Spell Power or attack power places you between the two, and that share is kept for the levels "
-           "ahead. Hit and expertise count while the build's talents leave room under the cap. Resistances and effects are not scored."
+           "each level's best Forever set; the items you wear place you between the two (their stats scored with the standard gear's values, "
+           "against the best set's; enchants, hit and expertise left out), and that share is kept for the levels ahead. Hit and expertise count while the build's talents leave room under the cap. Resistances and effects are not scored."
            if wfile.startswith("addon/") else
            f"- Stat values: `_reference/data/characters/weights/{wfile}` (stat_weights.py): the page build in the fight lab at levels 20-60 with each "
            "stat raised, common random numbers; smoothed over neighbouring levels. Spell crit and hit from items, resistances and defense read 0."),
@@ -2562,11 +2606,22 @@ def main():
              for r in csv.DictReader(open(IP.RAW / "item_names.csv", encoding="utf-8")) if r["required_skill"] not in ("", "0")}
     pool = [p for p in pool if not (lambda n: n and have.get(n[0], 0) < n[1])(needs.get(int(str(p["id"]).split(":")[0])))]
     FULL_BY_ID.update({p["id"]: p for p in pool})
+    if wrec.get("place"):   # the add-on's values: place the character by its worn items (2026-11-13)
+        if wrec["place"](equipped(snap, FULL_BY_ID)) is not None:
+            print(f"stat values placed by the worn items: {100 * wrec['share']:.0f}% of the way to the level's best Forever set "
+                  f"(by {wrec['unit']} alone: {100 * wrec['share_by_unit']:.0f}%)")
+        wrec.pop("place")
     SCHOOL_SHARE.update(cfg["school_share"])
     global ROUTE, RG
     wow = cfg.get("wow_dir") or str((cfg.get("ah") or {}).get("ahcopy", "")).split("/Interface/")[0]
     ROUTE = rxp.route(wow, f"{snap['profile']['name']}-{snap['profile'].get('surname', '')}".strip("-")) if wow else None
     RG = RXG.facts(cfg, snap, wow, ROUTE) if ROUTE else None
+    if ROUTE and not RG:   # the add-on follows a guide group, but no readable guide text for it is on this PC (2026-11-13)
+        msg = (f"RestedXP is set to the guide group \"{ROUTE.get('group')}\", but no readable guide text for it was found (in "
+               f"{cfg.get('rxp_dir') or 'F:/wow-addons'} or the add-on's own guides), so this refresh has no route steps, detours or catch-up. "
+               "Put the readable guide files back and refresh again.")
+        print("WARNING: " + msg)
+        NOTICES.append(msg)
     if RG:   # a quest reward on the route comes when the route turns the quest in (item_pool.window: route_level), 2026-11-10
         for p in pool:
             for s in p["sources"]:

@@ -411,6 +411,8 @@ def render(cfg, C):
         changes = f'<section class="changes"><h3>Changed since your last refresh ({esc(ch["time"])}, level {ch["level"]})</h3><p>{" ".join(lines)}</p></section>'
     else:
         changes = ""
+    for n in C.get("notices") or []:   # e.g. the RestedXP guide text missing (plan.NOTICES, 2026-11-13)
+        changes = f'<section class="changes"><h3>Heads up</h3><p>{esc(n)}</p></section>' + changes
 
     # coming up: the plan past the next few levels
     by_level = {}
