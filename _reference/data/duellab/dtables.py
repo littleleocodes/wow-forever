@@ -17,6 +17,10 @@ REACTION = 0.35           # seconds a player needs to answer a new event: interr
 # target is immune until the reset. Classic resets "between 15s and 20s" (DRList tracks 20); the middle is used. Forever's 2026-11-02
 # notes: roots from procs diminish (Frostbite, Entrapment, Improved Wing Clip, Counterattack, Improved Hamstring), as random_root.
 # Blind and Death Coil have no category (no diminishing returns), as in DRList.
+# Horror is not fear: Death Coil's aura carries mechanic 24 (Horror), and Berserker Rage and Fear Ward give immunity to mechanic 5
+# (Fear) only (Berserker Rage also 14, Knockout): SpellEffect, client 1.60.1.70938 (the rows of 17926, 18499, 6346). A horror moves
+# like a fear.
+HORROR = {"Death Coil"}
 DR_RESET = 17.5
 DR_STEPS = (1.0, 0.5, 0.25, 0.0)
 DR_CATEGORY = {

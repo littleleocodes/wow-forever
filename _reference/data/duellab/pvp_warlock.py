@@ -37,9 +37,9 @@ the quarter step or immunity). The curse: Exhaustion on a melee, Tongues on a ca
 
 Not modelled: the opponent cannot attack, slow, control or dispel the demon (the engine never targets pets), so the demon never dies
 except through Soul Link; a dead demon is not re-summoned (Fel Domination unused); Drain Mana, Banish, Curse of Weakness and
-Recklessness, Soothing Kiss, Lesser Invisibility, Tainted Blood and Paranoia; Spell Lock and Seduction cannot be interrupted; the horror
-of Death Coil is a fear here (Berserker Rage blocks it); Shadow Ward absorbs after Soul Link's split; Bane of Havoc does nothing one
-against one; Seduction works on every opponent but a druid in an animal form.
+Recklessness, Soothing Kiss, Lesser Invisibility, Tainted Blood and Paranoia; Spell Lock and Seduction cannot be interrupted; Death
+Coil's horror moves like a fear but is no fear (Berserker Rage and Fear Ward do not stop it: dtables.HORROR, from the client's
+mechanics; 2026-11-14); Shadow Ward absorbs after Soul Link's split; Bane of Havoc does nothing one against one; Seduction works on every opponent but a druid in an animal form.
 """
 import re
 

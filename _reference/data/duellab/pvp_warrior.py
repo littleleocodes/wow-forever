@@ -32,7 +32,8 @@ Effects the fight lab does not parse, or parses for PvE only (handlers below):
   Improved Shield Bash's 3 s silence (50% a rank). Shield Wall: -60% damage taken for 12 s (Improved Shield Wall: -5.5 min a rank).
   Last Stand: +30% maximum health for 20 s, lost after it.
 - Retaliation (Battle Stance): for 15 s every melee hit taken from the front (the warrior not stunned, incapacitated or feared) is
-  answered with a weapon attack at the attacker (the pet included), at most 30; resolved after the step.
+  answered with a weapon attack at the attacker (the pet included), at most 30; resolved after the step. A bleed's tick is no strike
+  (Garrote's ticks had been answered until 2026-11-14).
 - Bloodthirst's +10% run speed for 10 s (Forever's tooltip; the module omits it). Iron Will: stun and fear durations -3% a rank.
 - Overpower: a miss and crit roll only ("cannot be blocked, dodged or parried", its tooltip; the fight lab rolls the full table).
 - Whirlwind (Berserker Stance; the module's single-target play never leaves Battle Stance, so it never had it): the Fury build's strike
@@ -473,7 +474,7 @@ class WarriorPvP(PvPAI):
     def damage_taken(self, d, me, src, spell, amount):
         r = self.retaliation
         t = d.t
-        if r is not None and t < r[1] and r[0] > 0 and not me.controlled(t) and spell.name != "Retaliation":
+        if r is not None and t < r[1] and r[0] > 0 and not me.controlled(t) and spell.name != "Retaliation" and not d.periodic_hit:
             melee = getattr(spell, "kind", "") == "melee" or spell.name.endswith(" melee")
             if melee and d.dist <= T.MELEE + 0.5 or spell.name.endswith(" melee"):
                 r[0] -= 1

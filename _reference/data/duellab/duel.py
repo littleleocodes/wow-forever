@@ -520,7 +520,8 @@ class Side:
         t = self.t
         if dur <= 0:
             return 0.0
-        if t < self.immune_until or (physical and t < self.immune_phys_until) or (kind == "fear" and t < self.fear_immune_until) \
+        if t < self.immune_until or (physical and t < self.immune_phys_until) \
+                or (kind == "fear" and name not in T.HORROR and t < self.fear_immune_until) \
                 or self.ai.cc_immune(self.duel, self, kind, name):
             self.fight.note(f"immune to {name or kind}")
             return 0.0
@@ -709,6 +710,7 @@ class Duel:
         self.max_time = T.MAX_TIME if max_time is None else max_time
         self.log = [] if log else None
         self.combat = False                     # set at the first hostile hit (Charge works only before it)
+        self.periodic_hit = False               # whether the damage being resolved is a dot's tick (Duel.damage)
         self.a = Side(self, "A", *a)
         self.b = Side(self, "B", *b)
         self.a.foe, self.b.foe = self.b, self.a
@@ -758,6 +760,7 @@ class Duel:
 
     def damage(self, src, dst, spell, amount, crit=False, source="player", periodic=False):
         t = self.t
+        self.periodic_hit = periodic   # the layers' damage_taken hooks read it: a dot's tick is no strike (Retaliation, Nature's Grasp)
         school = getattr(spell, "school", None) or "physical"
         physical = school == "physical" or getattr(spell, "kind", "") in ("melee", "ranged")
         f = src.fight
@@ -893,7 +896,8 @@ class Duel:
         if s.controlled(t) or s.stealthed or s.foe.stealthed or t < s.inactive_until or t < T.REACTION:
             return   # nobody swings or shoots before both players can act (an Auto Shot at 0.00 had started combat before a Charge),
                      # nor at a foe in stealth
-        if s.mod.melee and s.ai.auto_attack and self.dist <= T.MELEE + 1e-6 and not f.casting and t >= s.disarm_until:
+        if s.mod.melee and s.ai.auto_attack and self.dist <= T.MELEE + 1e-6 and not f.casting and t >= s.disarm_until \
+                and not s.ai.hold_swings(self, s, s.foe):
             if p.mh is not None and t + EPS >= p.swing_mh:
                 f.auto_swing("mh")
                 p.swing_mh = t + p.mh.speed * s.mod.swing_speed_factor() * (1.0 + s.attack_slow if t < s.attack_slow_until else 1.0)

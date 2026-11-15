@@ -436,10 +436,13 @@ class HunterPvP(PvPAI):
                 return "Feign Death"   # Classic's "FD trap": Feign Death drops combat, the trap follows
         stuck = t < me.root_until or me.speed(t) <= foe.speed(t) + 0.5
         if dist <= 8.0 and stuck:
-            if dr_factor(foe, "incap", t) >= 0.5 and me.can("Scatter Shot"):
+            dotted = bool(foe.dots)   # my sting's next tick would end a Scatter Shot (it did, 2026-11-14): the pet's stun first
+            if not dotted and dr_factor(foe, "incap", t) >= 0.5 and me.can("Scatter Shot"):
                 return "Scatter Shot"
             if me.can("Intimidation"):
                 return "Intimidation"
+            if dotted and dr_factor(foe, "incap", t) >= 0.5 and me.can("Scatter Shot"):
+                return "Scatter Shot"
         if dist >= T.MIN_RANGED and not self.slowed(foe, t) and me.can("Concussive Shot"):
             return "Concussive Shot"
         return None

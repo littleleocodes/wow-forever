@@ -27,6 +27,12 @@ whatever is necessary"). No community simulator plays PvP, so this is the projec
 - `duel_run.py`: runs duels, matchups and logs. A side is `<class>:<build id>` from
   `<class>/research/talents/forever/proposed-builds.json`. Its fight-lab rotation comes from the build's lead tree
   (`derive_leveling.LEVEL`).
+- `pvp_field.py`: the field (the community's most-tagged build per class), the matchup matrix (`--matrix --write` writes
+  `_reference/pvp-matchups.md`) and a build's score against the field (`--score`).
+- `duel_profile.py`: the validation tool. Per side of a matchup it gives damage, healing and casts per duel, where the time goes
+  (idle with the global cooldown free, split by state) and the waste read from the logs: control into an immunity, damage into an
+  immunity, and a side's own control broken by its own damage. Run it on the matrix's most lopsided matchups after any layer change,
+  then read a log of the worst (`duel_run.py --log 1`).
 
 ## Writing a class layer (`pvp_<class>.py`)
 

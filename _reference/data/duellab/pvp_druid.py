@@ -410,7 +410,8 @@ class DruidPvP(PvPAI):
         t = d.t
         if t < self.barkskin_until and (getattr(spell, "school", None) or "physical") == "physical":
             amount *= 0.8   # "Physical damage taken is reduced by 20%"
-        if t < self.grasp_until and src is me.foe and getattr(spell, "kind", "") == "melee" and d.dist <= T.MELEE + 0.5 and amount > 0:
+        if t < self.grasp_until and src is me.foe and getattr(spell, "kind", "") == "melee" and d.dist <= T.MELEE + 0.5 and amount > 0 \
+                and not d.periodic_hit:   # a strike, not a bleed's tick
             self.grasp_until = 0.0
             me.fight.note("Nature's Grasp roots the attacker")
             src.apply_cc("root", 27.0, cat("Nature's Grasp"), "Entangling Roots")   # "Entangling Roots (Rank 6)": 27 s, the engine's PvP cap

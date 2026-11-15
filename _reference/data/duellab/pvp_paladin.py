@@ -581,7 +581,8 @@ class PaladinPvP(PvPAI):
                 return self._ground_pop(d, me, foe) or "Hammer of Justice"
             if hp < 0.5 and not blink and self._heal_name(d, me, foe, hp) is None:
                 return self._ground_pop(d, me, foe) or "Hammer of Justice"   # a heal window: the next decision heals
-        if me.can("Repentance") and self._dr_next(foe, T.DR_CATEGORY.get("Repentance", "incap"), t) >= 0.5:
+        if me.can("Repentance") and self._dr_next(foe, T.DR_CATEGORY.get("Repentance", "incap"), t) >= 0.5 \
+                and not foe.ai.cc_immune(d, foe, "incap", "Repentance"):   # not into a visible Berserker Rage
             if casting and (c.kind == "heal" or c.name in HEALS or not me.can("Hammer of Justice")):
                 return self._ground_pop(d, me, foe) or "Repentance"
             if hp < 0.45 and not me.p.ready("Hammer of Justice", t) and (me.can("Holy Light") or me.can("Flash of Light")):
@@ -641,7 +642,7 @@ class PaladinPvP(PvPAI):
         if kiter and not foe.controlled(t):
             if stun_ok and me.can("Hammer of Justice"):
                 return "Hammer of Justice"
-            if 8.0 < d.dist and me.can("Repentance") and not foe.dots \
+            if 8.0 < d.dist and me.can("Repentance") and not foe.dots and not foe.ai.cc_immune(d, foe, "incap", "Repentance") \
                     and self._dr_next(foe, T.DR_CATEGORY.get("Repentance", "incap"), t) >= 0.5:
                 return "Repentance"
         if foe.hp_frac() <= 0.2 and me.can("Hammer of Wrath"):

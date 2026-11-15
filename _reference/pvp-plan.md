@@ -24,10 +24,10 @@ necessary").
    `_reference/data/pvp-community-builds.json`.
 2. **The duel lab** (in progress), the measurement PvP lacked: level-60 one-against-one duels on the fight lab's class modules. Each
    spec plays its own tuned rotation, under a PvP layer per class (`pvp_<class>.py`), with Forever's PvP rules (`dtables.py`).
-   - Done: the engine, the mage and warrior layers, the field and the matchup matrix (`pvp_field.py`).
-   - In progress: the other seven classes' layers.
-   - Then: validation. Logs per matchup; the matrix against what the community reports (warlocks strong, as in the level-30 Forever
-     Open; mages favoured over warriors in the open); mirror matchups near 50%.
+   - Done: the engine, all nine class layers, the field and the matchup matrix (`pvp_field.py`), validation pass 1
+     (`duel_profile.py`; the log below).
+   - In progress: validation. Logs per matchup; the matrix against what the community reports (warlocks strong, as in the level-30
+     Forever Open; mages favoured over warriors in the open); mirror matchups near 50%.
 3. **Measure the builds.**
    - The field is the community's most-tagged PvP build per class.
    - A build's score is its mean win rate over the nine classes, with the mean health margin as the tie-break.
@@ -84,6 +84,39 @@ necessary").
     - Reading: each AI plays the same way every duel, so small edges become certainties, and AI quality differs between layers.
     - Next: a validation pass over the most extreme matchups (logs: AI defect or class strength), before any build is judged on
       the field.
+- 2026-11-14, validation pass 1 (`duellab/duel_profile.py`, new: per side the time spent idle and the waste in the logs).
+  - The matrix after the mage and warrior rewrite was still lopsided: the rogue won 15% of its duels on average, the Shadow priest
+    80%. The community rates the rogue specs highly (RankedBoost S tier, Seemeta's Subtlety).
+  - Fixed, engine:
+    - a bleed's tick counted as a melee strike for Retaliation and Nature's Grasp (Garrote's ticks were answered by Retaliation);
+    - Death Coil's horror was blocked as a fear by Berserker Rage and Fear Ward. The client says otherwise: its aura carries
+      mechanic 24 (Horror), and both give immunity to mechanic 5 (Fear) only (SpellEffect, client 70938; `dtables.HORROR`).
+  - Fixed, layers:
+    - the rogue cast Sap into Berserker Rage every second (it now waits it out in stealth);
+    - the rogue struck into Retaliation (now Kidney Shot, Gouge or Blind, else it pools energy);
+    - the rogue used Evasion against a warrior, whose Overpower each dodge arms;
+    - every melee layer struck into a free warrior's Retaliation (it had dealt 455-1,168 a duel to paladins, shamans and druids).
+      Now no white swing or weapon strike goes into it while one's own average hit is worth less than 60% of the answer
+      (`pvp_base.hold_swings`, `RETALIATION_TRADE`): two weapons and Cat Form hold, a two-hander keeps swinging. Holding every swing
+      for 15 s had cost the paladin more than the answers did (94% -> 57% against the warrior), and holding at an even trade cost the
+      shaman 9 points (each answer feeds its Lightning Shield);
+    - the hunter used Scatter Shot to peel while its own Serpent Sting ticked, which ended it (now the pet's Intimidation first);
+    - the mage stood at 22 yards, outside Fire Blast's 20, against a priest that reached it there, and never used Fire Blast
+      against ranged foes (the frost leveling rotation keeps it to finish a mob). It now steps in and casts it on cooldown against
+      a ranged foe. Its damage against the priest doubled, from 37 to 73 a second.
+  - Checked and left as the data say:
+    - Shadow Word: Death's backlash (30% of maximum health, Forever's tooltip);
+    - Improved Mind Flay's 20% ramp a tick;
+    - Garrote out of stealth after Ghostly Strike (a Forever mechanic);
+    - Forever's Inner Fire (1,395 armor at rank 6) and Shadowform's 15% physical cut, which with Power Word: Shield explain most of the
+      priest's results against melee.
+  - Left as modelled trade-offs: a warlock's Fear broken by its own Drain Life (20% a hit), a paladin swinging through its own
+    Repentance when above 85% health, a druid's root broken by Thorns in the step before it walks off.
+  - Effect on the matrix (200 duels a matchup, `_reference/pvp-matchups.md`):
+    - warlock against warrior 48% -> 86% (Death Coil); mage against hunter 8% -> 28% (Fire Blast); druid against warrior 2% -> 10%;
+    - the means: priest 80%, paladin 77%, hunter 63%, shaman 60%, warlock 51%, mage 45%, warrior 38% -> 32%, druid 26%, rogue 16%.
+    - The matrix stays lopsided. Next: a second pass over the remaining extremes (the rogue's and the druid's losses, the priest's
+      and paladin's wins), mirror matchups, then the searches.
 - Fight-lab issues found on the way (they affect the leveling and raid pages; for the user to decide):
   - off-GCD spells cost a 1.5 s GCD;
   - the 2026-11-12 Stormstrike and Maelstrom Weapon hotfix is server-side and not in forever-spells;

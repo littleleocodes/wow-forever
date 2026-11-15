@@ -167,7 +167,7 @@ class PriestPvP(PvPAI):
         def cc(kind, dur, cat, name, frozen=False, breaks=None, physical=False):
             """Silent Resolve shortens stuns, fears and silences; Fear Ward eats the next fear."""
             t = me.t
-            if kind == "fear" and ai.fear_ward and t >= me.immune_until:
+            if kind == "fear" and name not in T.HORROR and ai.fear_ward and t >= me.immune_until:   # Death Coil's horror is no fear
                 ai.fear_ward = False
                 me.fight.note(f"Fear Ward absorbs {name or 'fear'}")
                 return 0.0

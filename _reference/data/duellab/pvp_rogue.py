@@ -47,6 +47,9 @@ Assumptions:
 - The engine lets auto attacks hit a stealthed target, so the stealthed rogue stops just outside melee reach and steps in with its
   opener, and Vanish steps out of reach (a foe cannot swing at what it cannot see).
 - Two stealthers in one duel: side B leaves stealth within 12 yards (the engine has no stealth detection; else neither could act).
+- Against a warrior (2026-11-14, from the duel logs): Sap waits in stealth for a Berserker Rage of 12 s or less to end (it had cast Sap
+  into the immunity every second); no strike into a free warrior's Retaliation (Kidney Shot, then Gouge or Blind when no bleed of the
+  rogue's ticks, else energy pooled); no Evasion (each dodge arms Overpower, which cannot be dodged).
 - Thresholds (judgment): Evasion below 65% health against a melee foe in reach; Blind then Vanish to reset below 45% health while the
   foe has 10 points more (not under Faerie Fire); Vanish to break a root of 2+ s at 10+ yards from a ranged foe; Sprint when slowed
   (or rooted, with Improved Sprint) or 12+ yards from a kiting foe. Measured and rejected (200 duels against pvp-frost, 2026-11-14):
@@ -74,6 +77,9 @@ HEALERS = {"priest", "paladin", "shaman", "druid"}                             #
 FINISHERS = {"Eviscerate", "Slice and Dice", "Rupture", "Death Mark", "Expose Armor"}
 CRIPPLING = re.compile(r"(\d+)% chance of poisoning the enemy, slowing their movement speed by (\d+)% for (\d+) sec")
 WOUND = re.compile(r"(\d+)% chance of poisoning the enemy, reducing all healing effects.*? for (\d+) sec")
+
+
+ZERKER_WAIT = 12.0                                                             # wait in stealth for a Berserker Rage this short
 
 
 def cat(name):
@@ -255,6 +261,27 @@ class RoguePvP(PvPAI):
     def foe_immune(self, foe, t):
         return t < foe.immune_until or t < foe.immune_phys_until
 
+    def foe_zerker_left(self, d, foe):
+        """Seconds left of a warrior's Berserker Rage (its immunity to Sap and Gouge, a buff the rogue sees); 0 without one."""
+        return max(0.0, getattr(foe.ai, "zerker_until", 0.0) - d.t)
+
+    def vs_retaliation(self, d, me, foe):
+        """Retaliation up on a free warrior: no strikes into it. Kidney Shot at 2+ points (a stunned warrior does not answer, so the
+        strikes go in under the stun), else Gouge, else Blind while 6+ s of it are left (neither while the rogue's own bleed ticks
+        on the warrior: the tick would break it), else pool energy for the 15 s. Running off is no answer: at the same speed the warrior
+        keeps swinging, and Intercept catches a Sprint."""
+        t, p = d.t, me.p
+        if p.combo >= 2 and dr_factor(foe, cat("Kidney Shot"), t) >= 0.5 and me.can("Kidney Shot"):
+            return "Kidney Shot"
+        if foe.dots:
+            return None
+        if d.dist <= T.MELEE + 1e-6 and not foe.ai.cc_immune(d, foe, "incap", "Gouge") and dr_factor(foe, cat("Gouge"), t) >= 0.5 \
+                and me.can("Gouge"):
+            return "Gouge"
+        if foe.ai.retaliation[1] - t > 6.0 and d.dist <= 10.0 and me.can("Blind"):
+            return "Blind"
+        return None
+
     def ff_on(self, me):
         ff = me.debuffs.get("Faerie Fire")
         return bool(ff and ff.get("until", 0) > me.t)
@@ -403,7 +430,7 @@ class RoguePvP(PvPAI):
         t = d.t
         if self.my_cc and not self.held_by_me(foe, t):
             self.my_cc = None
-        self.auto_attack = not (self.held_by_me(foe, t) or self.foe_immune(foe, t))
+        self.auto_attack = not (self.held_by_me(foe, t) or self.foe_immune(foe, t) or self.foe_retaliating(foe, t))
         if me.stealthed and me.mod.rank("Camouflage"):   # "Grants 5% increased movement speed in stealth" a rank
             me.speed_bonus["Camouflage"] = (me.mod.tv("Camouflage", 0) / 100, t + T.DT + 1e-6)
         if me.stealthed and foe.stealthed and me.name == "B" and d.dist <= 12.0:
@@ -429,7 +456,7 @@ class RoguePvP(PvPAI):
         if c is not None and d.dist <= T.MELEE + 0.5 and (c.kind == "heal" or c.name in HEALS or c.cast >= 1.0 or c.kind == "channel") \
                 and not self.foe_immune(foe, t) and me.can("Kick"):
             return "Kick"
-        melee = self.melee_foe(foe)
+        melee = self.melee_foe(foe) and foe.cls != "warrior"   # not against a warrior: each dodge arms its Overpower (unavoidable)
         if melee and d.dist <= T.MELEE + 1.0 and not foe.controlled(t) and me.hp_frac() < self.EVASION_HP \
                 and not me.p.buff("Evasion", t) and me.can("Evasion", ignore_gcd=True):
             return "Evasion"
@@ -462,6 +489,8 @@ class RoguePvP(PvPAI):
                 return a
         if self.foe_immune(foe, t):   # Ice Block, Divine Shield, Blessing of Protection: no attacks, energy pooled
             return None
+        if self.foe_retaliating(foe, t):
+            return self.vs_retaliation(d, me, foe)
         free = not foe.controlled(t)
         melee_reach = d.dist <= T.MELEE + 1e-6
         # the reset when losing: Blind, then Vanish under it (hold_cc), then a new opener
@@ -508,8 +537,14 @@ class RoguePvP(PvPAI):
         if d.dist > T.MELEE + 0.5 + 1e-6:
             return None
         sapped = self.held_by_me(foe, t) and foe.incap_name == "Sap"
-        if not d.combat and not sapped and not foe.controlled(t) and "Sap" in sp and self.sappable(foe) and dr_factor(foe, cat("Sap"), t) >= 1.0 \
-                and p.ready("Sap", t) and me.fight.can_afford(sp["Sap"], me.mod.mana_cost(sp["Sap"])):
+        sap_open = not d.combat and not sapped and not foe.controlled(t) and "Sap" in sp and self.sappable(foe) \
+            and dr_factor(foe, cat("Sap"), t) >= 1.0
+        if sap_open and foe.ai.cc_immune(d, foe, "incap", "Sap"):
+            # a visible immunity (a warrior's Berserker Rage): wait it out in stealth, then Sap (it had cast Sap into it every second)
+            if self.foe_zerker_left(d, foe) <= ZERKER_WAIT:
+                return None
+            sap_open = False
+        if sap_open and p.ready("Sap", t) and me.fight.can_afford(sp["Sap"], me.mod.mana_cost(sp["Sap"])):
             return self.step_in(d, me, "Sap")
         if sapped:
             left = foe.incap_until - t

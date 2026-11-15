@@ -18,6 +18,8 @@ Actions: a spell name or Spell, "wand", "retreat", "advance", "trinket" or None.
 """
 import dtables as T
 
+RETALIATION_TRADE = 0.6   # hold swings into Retaliation only while my hit is worth less than this share of its answer (judgment)
+
 HOSTILE = {"Polymorph", "Blind", "Sap", "Fear", "Seduction", "Death Coil", "Howl of Terror", "Psychic Scream", "Intimidating Shout",
            "Hammer of Justice", "Repentance", "Entangling Roots", "Hibernate", "Scatter Shot", "Wyvern Sting", "Counterspell",
            "Kick", "Pummel", "Shield Bash", "Earth Shock", "Silence", "Spell Lock", "Mana Burn", "Dispel Magic", "Purge", "Viper Sting",
@@ -127,12 +129,13 @@ class PvPAI:
         a = me.mod.decide(me.fight)
         if a in ("wand", "advance", "shoot", "retreat"):
             return a
+        hold = self.hold_swings(d, me, foe)
         if a is not None:
             name = a.name if hasattr(a, "name") else a
-            if me.can(name):
+            if me.can(name) and not (hold and self.strike(me, name)):
                 return a
         for name in self.fillers:
-            if me.can(name):
+            if me.can(name) and not (hold and self.strike(me, name)):
                 return name
         if self.keep_range > 0 and me.p.mana_max > 0 and me.mod.wand_damage() > 0 and d.dist <= 30.0:
             return "wand"
@@ -162,6 +165,40 @@ class PvPAI:
 
     def pet_held(self, d, me, t):
         return False
+
+    def foe_retaliating(self, foe, t):
+        """A free warrior under Retaliation (a buff players see): every melee strike from the front is answered (pvp_warrior); a
+        stunned, incapacitated or feared warrior answers nothing."""
+        r = getattr(foe.ai, "retaliation", None)
+        return bool(r) and t < r[1] and r[0] > 0 and not foe.controlled(t)
+
+    def hold_swings(self, d, me, foe):
+        """No white swings (the engine asks) and no weapon strikes from the rotation now: a free warrior's Retaliation, while each of my
+        hits is worth less than RETALIATION_TRADE of the one it answers with and the warrior is not nearly dead. 2026-11-14:
+        Retaliation had dealt 455-1,168 a duel to paladins, shamans and druids that kept swinging. Holding every swing for its 15 s
+        cost a two-hander more than the answers did (the paladin's win rate against the warrior fell from 94% to 57%), and holding at
+        an even trade cost the shaman 9 points (each answer also feeds its Lightning Shield). So only a light, fast hitter holds: two
+        weapons, Cat Form. A layer may add reasons of its own."""
+        return self.foe_retaliating(foe, d.t) and foe.hp_frac() > 0.12 \
+            and self.hit_value(me, foe) < RETALIATION_TRADE * self.hit_value(foe, me)
+
+    @staticmethod
+    def hit_value(side, target):
+        """A side's average white hit on `target` after armor: the main hand's, or with two weapons the mean of the main hand's and the
+        off hand's half (the engine's off-hand rule)."""
+        import tables as FT   # the fight lab's (duel.py put it first on the path)
+        p = side.p
+        vals = [k * ((w.dmg_min + w.dmg_max) / 2.0 + (p.attack_power / 14.0 + w.dps_bonus) * w.speed)
+                for w, k in ((p.mh, 1.0), (p.oh, 0.5)) if w is not None]
+        if not vals:
+            return 0.0
+        return sum(vals) / len(vals) * (1.0 - FT.armor_mitigation(target.armor(), 60))
+
+    @staticmethod
+    def strike(me, name):
+        """Whether `name` is a weapon strike that deals damage (what Retaliation answers); control without damage is not."""
+        s = me.mod.spells.get(name)
+        return s is not None and getattr(s, "kind", "") == "melee" and (getattr(s, "weapon_pct", 0.0) > 0 or getattr(s, "dmg_max", 0.0) > 0)
 
     def tick(self, d, me, foe):
         """Every step, after both sides decided: traps, totems, timers a layer keeps itself."""

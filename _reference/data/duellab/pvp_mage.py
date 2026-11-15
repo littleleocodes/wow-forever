@@ -727,6 +727,7 @@ class MagePvP(PvPAI):
     def intent(self, d, me, foe):
         self.track(d, me, foe)
         t = d.t
+        self.step_target = None
         if foe.stealthed and not me.stealthed:
             return "hold"
         if t < foe.inactive_until or foe.immune(t):
@@ -758,12 +759,36 @@ class MagePvP(PvPAI):
             return "kite"
         if self.verdict(d, me, foe, self.nuke_time(me))[0] == "walk":
             return "kite"   # out of the reach of something that would stop the next cast
+        self.step_target = self.blast_step(d, me, foe)
+        if self.step_target:
+            return "close"
         if dist > self.keep_range + 0.5:
             return "close"
         return "hold"
 
+    def blast_step(self, d, me, foe):
+        """Fire Blast's 20 yards against a ranged foe that already reaches the mage where it stands (a Shadow priest holding at 22 yards
+        had kept the mage wanding outside it): the distance to step in to, or None. Not into a ready short-range control (short_reach),
+        nor while fire is locked or the foe is immune (2026-11-14, from the duel logs)."""
+        t, dist = d.t, d.dist
+        fb = me.mod.spells.get("Fire Blast")
+        if fb is None or foe.immune(t) or me.school_locked("fire", t) or not me.p.ready("Fire Blast", t + 0.5):
+            return None
+        reach = self.ranges.get("Fire Blast", fb.range or 20.0)
+        if dist <= reach - 0.2:
+            return None
+        foe_reach = max([getattr(foe.ai, "keep_range", 0.0) + 2.0] + [r for r in (getattr(foe.ai, "ranges", None) or {}).values()
+                                                                     if isinstance(r, (int, float)) and r >= 15.0] or [0.0])
+        if foe_reach < dist:
+            return None   # the foe cannot reach the mage here: no step into its reach for one Fire Blast
+        target = reach - 0.5
+        danger = self.short_reach(d, foe) if not foe.controlled(t) else 0.0
+        if danger and target < danger + 3.0:
+            return None
+        return target
+
     def close_to(self, d, me):
-        return self.keep_range
+        return getattr(self, "step_target", None) or self.keep_range
 
     # ------------------------------------------------------------------ hooks
     def while_inactive(self, d, me, foe):
@@ -1107,6 +1132,9 @@ class MagePvP(PvPAI):
         if a:
             return a
         self.burst(d, me, foe)
+        if not melee and "Fire Blast" not in off and not foe.immune(t) and me.can("Fire Blast"):
+            return "Fire Blast"   # against a ranged foe, on cooldown: instant, no pushback, nothing to interrupt (the frost leveling
+                                  # rotation keeps it to finish a mob; a Shadow priest's dots had pushed back every Frostbolt, 2026-11-14)
         a = self.vetoed(me, off, lambda: self.view_rotation(d, me, foe))
         if a in ("retreat", "advance"):
             a = None
