@@ -46,7 +46,7 @@ MELEE_STATS = ["strength", "agility", "stamina", "attack_power", "armor", "mh_we
                "expertise_rating", "weapon_skill", "defense_rating", "dodge_rating", "parry_rating"]
 CLASS_STATS = {"mage": CASTER_STATS, "warlock": CASTER_STATS, "priest": CASTER_STATS + ["healing"],
                "warrior": MELEE_STATS + ["oh_weapon_dps", "block_rating", "block_value"], "rogue": MELEE_STATS + ["oh_weapon_dps", "spell_penetration"],
-               "hunter": MELEE_STATS + ["intellect", "spirit", "mp5", "ranged_weapon_dps", "spell_penetration"],
+               "hunter": MELEE_STATS + ["intellect", "spirit", "mp5", "ranged_weapon_dps", "spell_penetration", "oh_weapon_dps"],
                "paladin": MELEE_STATS + ["intellect", "spirit", "mp5", "spell_power", "healing", "block_rating", "block_value"],
                "shaman": MELEE_STATS + ["intellect", "spirit", "mp5", "spell_power", "healing", "oh_weapon_dps", "block_rating", "block_value",
                                         "spell_penetration"],

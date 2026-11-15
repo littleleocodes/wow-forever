@@ -73,6 +73,7 @@ def r(x):
 
 VERSION = 1
 TOLERANCE = 1e-6
+TALENT_TOLERANCE = 1e-5   # talent_vectors' expected values are rounded to 5 decimals (r), so a port that does not round is up to 5e-6 off
 NOT_SCORED = {"health_regen": "not measured (the fight lab's eating time does not read health regeneration from gear)",
               "resistances": "worth 0 (no simulator models resistance)",
               "effects": "Use, Equip-proc, chance-on-hit and set-bonus effects are not scored (static stats only); relics, idols, librams and "
@@ -220,6 +221,9 @@ def talent_adjust(values, transforms, forms, build_talents, player_talents):
             a[0] += pb
             a[1] += pp
     stats = {tr["stat"] for tr in live if tr["kind"] == "stat_pct"} | {tr["from"] for tr in live if tr["kind"] == "convert"}
+    if ("mana_pct", None) in agg:   # Fel Vitality: Intellect's own part scales with mana even with no Intellect talent (2026-11-14,
+        stats.add("intellect")      # the Addons session: the warlock had kept it unscaled)
+    touched = set()
     for s in sorted(stats):
         if s not in values:
             continue
@@ -232,11 +236,15 @@ def talent_adjust(values, transforms, forms, build_talents, player_talents):
             nb, npl = agg[("mana_pct", None)]
             own *= (1 + npl) / (1 + nb)
         v[s] = own * (1 + mp) / (1 + mb) + (1 + mp) * cp
+        touched.add(s)
     for kind, key in (("health_pct", "stamina"), ("armor_pct", "armor"), ("offhand_pct", "oh_weapon_dps")):
         if (kind, None) in agg and key in v:
             b, p = agg[(kind, None)]
             v[key] = v[key] * (1 + p) / (1 + b)
-    return {k: r(max(0.0, x)) for k, x in v.items()}
+            touched.add(key)
+    # only the re-stated values are clamped and rounded; every other value stays exactly as measured (a tank's slightly negative haste
+    # had turned 0 the moment talents were read, 2026-11-14, the Addons session)
+    return {k: (r(max(0.0, x)) if k in touched else x) for k, x in v.items()}
 
 
 def talent_vectors(o):
@@ -278,7 +286,7 @@ def talent_vectors(o):
                 out.append({"name": f"{cls} {mode} {e.get('build') or e.get('spec')} level {level}: talents flipped" if player is not hyrax
                             else "hunter melee Survival at 45 with a guildmate's level-47 talents", "class": cls, "mode": mode,
                             "entry": e.get("build"), "level": level, "forms": e.get("forms", []), "values": values,
-                            "build_talents": talents, "player_talents": player, "expected": exp, "tolerance": TOLERANCE})
+                            "build_talents": talents, "player_talents": player, "expected": exp, "tolerance": TALENT_TOLERANCE})
                 break
     return out
 
@@ -377,6 +385,24 @@ def totals_with(cls, alloc, level, rot, bonus):
         TB.GEAR_BONUS.clear()
 
 
+_TT = {}
+
+
+def lab_offhand_fix(cls, alloc):
+    """The factor a hunter's measured off-hand weapon DPS value takes (2026-11-14). The fight lab applies Predator's Edge's off-hand
+    bonus to the off-hand weapon's own damage only (hunter.make_player), so a measured point of off-hand DPS (GEAR_BONUS's dps_bonus)
+    carries none of it. The game's aura (A_MOD_OFFHAND_DAMAGE_PCT) and the raid simulator scale the whole off-hand hit. Until the lab
+    is fixed (_reference/pvp-plan.md, fight-lab issues), the value is scaled by 1 + the build's Predator's Edge fraction at that
+    level, which is what the offhand_pct talent transform expects inside it. Warriors and rogues need nothing: their Dual Wield
+    Specialization already multiplies the whole off-hand hit in the lab."""
+    if cls != "hunter":
+        return 1.0
+    if cls not in _TT:
+        _TT[cls] = next((t for t in talent_transforms(cls) if t["talent"] == "Predator's Edge"), None)
+    tr = _TT[cls]
+    return 1.0 + (talent_pct(tr, alloc) if tr else 0.0)
+
+
 def leveling(cls):
     import level_guides as LG
     import run as FR
@@ -401,6 +427,9 @@ def leveling(cls):
         for L, row in sorted(w["levels"].items(), key=lambda kv: int(kv[0])):
             alloc = FR.allocation_at({"allocation": b["allocation"], "order": order}, int(L))
             v = {k: max(0.0, x) for k, x in row["weights"].items()}
+            ohf = lab_offhand_fix(cls, alloc)
+            if "oh_weapon_dps" in v:
+                v["oh_weapon_dps"] *= ohf
             share, totals, melee = level_info(cls, alloc, int(L), rot)
             dual = totals.pop("dual_wield")
             setup = totals.pop("setup")
@@ -419,6 +448,8 @@ def leveling(cls):
             if wb and L in wb["levels"]:
                 rb = wb["levels"][L]
                 vb = {k: max(0.0, x) for k, x in rb["weights"].items()}
+                if "oh_weapon_dps" in vb:
+                    vb["oh_weapon_dps"] *= ohf
                 if vb.get("spell_power"):
                     for sch, x in share.items():
                         vb[f"{sch}_damage"] = vb["spell_power"] * x
@@ -808,7 +839,9 @@ def main():
         "p_player) x sum(c_player x v[T]); Intellect's own part also x (1 + mana_player) / (1 + mana_build). Then v'[stamina] x (1 + "
         "health_player) / (1 + health_build), v'[armor] x armor ratio, v'[oh_weapon_dps] x off-hand ratio. A transform with form "
         "applies only to an entry whose forms list it. Fraction for rank k: per_rank[k - 1] / 100 (0 at rank 0; the last number above "
-        "the table). Use v[T] as measured. Clamp at 0. talent_vectors: reproduce expected within tolerance. A first-order "
+        "the table). Use v[T] as measured. Intellect's mana scaling applies whenever a mana_pct transform is live, with or without an "
+        "Intellect stat_pct or convert. Clamp at 0 and round to 5 decimals only the values re-stated; every other value stays exactly "
+        "as measured. talent_vectors: reproduce expected within tolerance (1e-5: expected is rounded to 5 decimals). A first-order "
         "re-statement, not a new measurement.")
     o["talent_vectors"] = talent_vectors(o)
     OUT.mkdir(exist_ok=True)
