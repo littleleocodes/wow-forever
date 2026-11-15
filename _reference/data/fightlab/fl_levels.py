@@ -11,7 +11,10 @@ levels 20-60, weights level / 10). Level 60 is a proxy; what the pages rank on i
    neighbours (random batches), each neighbour with the stats model's own leveling order (fl_talent_opt.order_of, computed in the pool:
    about 9 s a build), scored on the weighted time per kill at levels 40, 50 and 60 (weights 4, 5, 6; the first twenty points of two
    neighbours differ little and levels 20-30 carry a quarter of the weight) with common random numbers; the best of a batch is kept when
-   it is 0.3% faster on a second seed with more fights. The pick stays when no batch improves it.
+   it is 0.3% faster on a second seed with more fights. The pick stays when no batch improves it. A neighbour that fails its
+   confirmation stays out with every neighbour of exactly its score (its twins: a point moved between talents the lab never uses scores
+   bit-identically on every seed), and the rest of each batch waits with its score until a step is kept (2026-11-15; the order polish
+   likewise, and it scores each set of builds at its levels once).
 2. **The order** (`pick_order`): the (polished) winner is raced at levels 20-60 on the race's seed and fights with three orders, the
    stats model's, own tree first and own tree last (raid_path_leveling's variants; the lead tree is the one with most points); the
    fastest is the page's (`order_label`). When the polish changed the build, the race's old pick stays in the table as a finalist and
@@ -115,6 +118,13 @@ def polish(cls, spec, r, model, pool, space, save, cfg=None):
     cur_b["order"] = sig_order(cls, spec, cur_b)   # the reference plays by the neighbours' rule (a record from before 2026-11-06 may
     rng = random.Random(97)                        # hold an order with a late signature talent, which the objective penalizes)
     tried = {tuple(sorted(cur.items()))}
+    # 2026-11-15 (self-audit of the fl_fix_1115 queue): the batch's best that fails its confirmation stays out with every neighbour of
+    # exactly its score (a point moved between talents the lab never uses: common random numbers give such twins bit-identical times on
+    # every seed, so they fail alike; 38 of 259 unconfirmed rounds in the logs had repeated an earlier round's numbers, each time keeping
+    # the batch's runner-up from its confirmation), and the rest of each batch waits in `pending` with its score until a step is kept
+    # (the current build's score does not change until then, so the scores compare; after a step none can beat the new build, whose
+    # score was the lowest).
+    pending, failed, twins = [], set(), 0
     steps, t0 = [], time.time()
     log(f"== {cls} {spec}: 20-60 polish of the race's pick {space.split(cur)} (levels {', '.join(map(str, lv))}, batches of {cfg['batch']}, "
         f"{cfg['fights']} fights, kept at {cfg['min_gain']:.1%} on a second seed)")
@@ -128,34 +138,50 @@ def polish(cls, spec, r, model, pool, space, save, cfg=None):
                 nb.append((k, x))
         rng.shuffle(nb)
         nb = nb[: cfg["batch"]]
-        if not nb:
+        if not nb and not pending:
             log(f"    round {rnd}: no untried neighbour left")
             break
         tried.update(k for k, _ in nb)   # only the batch counts as tried: the rest may come up in a later round
         nb = [x for _, x in nb]
-        orders = pool.map(FT.order_job, [(cls, model, x) for x in nb], chunksize=1)
-        cands = [{"allocation": alloc_of(space, x), "order": o} for x, o in zip(nb, orders) if o]
-        for c in cands:   # 2026-11-06 (page-audit K5): each neighbour's order with its signature talents as early as the tree allows
-            c["order"] = sig_order(cls, spec, c)
-        if not cands:
+        cands = []
+        if nb:
+            orders = pool.map(FT.order_job, [(cls, model, x) for x in nb], chunksize=1)
+            cands = [{"allocation": alloc_of(space, x), "order": o} for x, o in zip(nb, orders) if o]
+            for c in cands:   # 2026-11-06 (page-audit K5): each neighbour's order with its signature talents as early as the tree allows
+                c["order"] = sig_order(cls, spec, c)
+        if not cands and not pending:
             break
         sc = evaluate(pool, cls, spec, [cur_b] + cands, lv, cfg["fights"], 11)
-        ref, sc = sc[0], sc[1:]
-        bi = min(range(len(cands)), key=lambda i: sc[i])
-        if sc[bi] > ref * (1 - cfg["min_gain"]):
-            log(f"    round {rnd}: {len(cands)} neighbours, none {cfg['min_gain']:.1%} faster at levels 40-60 (best {sc[bi] / ref - 1:+.2%})")
-            break
-        c2 = evaluate(pool, cls, spec, [cur_b, cands[bi]], lv, cfg["confirm"], 12)
-        split = space.split(FT.flat_of(cands[bi]))
-        if c2[1] > c2[0] * (1 - cfg["min_gain"]):
-            log(f"    round {rnd}: {split} {sc[bi] / ref - 1:+.2%} on seed 11, {c2[1] / c2[0] - 1:+.2%} on seed 12: not confirmed")
+        ref = sc[0]
+        new = [(x, c, rnd) for x, c in zip(sc[1:], cands) if x not in failed]
+        twins += len(cands) - len(new)
+        pending += new
+        if not pending:
+            log(f"    round {rnd}: {len(cands)} neighbours, each a twin of an unconfirmed one")
             continue
-        steps.append({"round": rnd, "split": split, "seed1": round(sc[bi] / ref - 1, 4), "seed2": round(c2[1] / c2[0] - 1, 4),
+        bi = min(range(len(pending)), key=lambda i: pending[i][0])
+        s_best, best, r0 = pending[bi]
+        if s_best > ref * (1 - cfg["min_gain"]):
+            log(f"    round {rnd}: {len(cands)} neighbours, none {cfg['min_gain']:.1%} faster at levels 40-60 (best {s_best / ref - 1:+.2%}"
+                + (f", {len(pending) - len(new)} from earlier batches included" if len(pending) > len(new) else "") + ")")
+            break
+        c2 = evaluate(pool, cls, spec, [cur_b, best], lv, cfg["confirm"], 12)
+        split = space.split(FT.flat_of(best)) + (f" (round {r0}'s batch)" if r0 != rnd else "")
+        if c2[1] > c2[0] * (1 - cfg["min_gain"]):
+            failed.add(s_best)
+            n0 = len(pending)
+            pending = [q for q in pending if q[0] != s_best]
+            twins += n0 - 1 - len(pending)
+            log(f"    round {rnd}: {split} {s_best / ref - 1:+.2%} on seed 11, {c2[1] / c2[0] - 1:+.2%} on seed 12: not confirmed")
+            continue
+        steps.append({"round": rnd, "split": split, "seed1": round(s_best / ref - 1, 4), "seed2": round(c2[1] / c2[0] - 1, 4),
                       "seconds_40_60": round(c2[1], 2)})
         log(f"    round {rnd}: {split} {steps[-1]['seed1']:+.2%} on seed 11, {steps[-1]['seed2']:+.2%} on seed 12 ({c2[0]:.2f} -> {c2[1]:.2f} s): kept")
-        cur, cur_b = FT.flat_of(cands[bi]), cands[bi]
+        cur, cur_b = FT.flat_of(best), best
+        pending = []
     r["level_polish"] = {"date": FO.TODAY, "levels": lv, "from": space.split(FT.flat_of(r["winner"])), "steps": steps,
-                         "neighbours_tried": len(tried) - 1, "minutes": round((time.time() - t0) / 60, 1), "changed": bool(steps)}
+                         "neighbours_tried": len(tried) - 1, "twins_skipped": twins, "minutes": round((time.time() - t0) / 60, 1),
+                         "changed": bool(steps)}
     save()
     return (cur, cur_b["order"]) if steps else None
 
@@ -259,17 +285,23 @@ def legal_order(space, pts, total):
     return len(pts) == total
 
 
-def order_moves(order, rng, n, space, levels=(30, 40, 50), ok=None):
+def at_levels(order, levels):
+    """The builds an order makes at `levels`: the order polish's key (two orders with the same builds there score alike)."""
+    return tuple(tuple(sorted(FR.allocation_at({"order": order}, L).items())) for L in levels)
+
+
+def order_moves(order, rng, n, space, levels=(30, 40, 50), ok=None, skip=None):
     """Up to n random legal orders one block move away from `order`: a talent's block, or a part of it, moved up to three blocks
     earlier or later (the first ranks of a talent are worth more than the last: a split lets them come early and the rest late).
     Only moves that change the build at one of `levels` count: the race looks at levels 20-60 in steps of ten, so a move inside one
     decade changes nothing it can see (26 of 30 random moves in a first test). `ok(order)` (2026-11-06): only moves it accepts, the
-    orders that still take the signature talents as early as their tree allows."""
+    orders that still take the signature talents as early as their tree allows. `skip` (2026-11-15): `at_levels` keys scored already;
+    a move that makes one of them, or the same builds as another move of the batch, is left out."""
     blocks = [(s["tree"], s["talent"], s["points"]) for s in order]
     total = sum(p for _, _, p in blocks)
     cur_key = tuple((t, nm) for t, nm, p in blocks for _ in range(p))
-    base_at = {L: FR.allocation_at({"order": order}, L) for L in levels}
-    seen = {cur_key}
+    base_key = at_levels(order, levels)
+    seen, keys = {cur_key}, set()
     out, tries = [], 0
     while len(out) < n and tries < n * 30:
         tries += 1
@@ -296,10 +328,12 @@ def order_moves(order, rng, n, space, levels=(30, 40, 50), ok=None):
             continue
         seen.add(key)
         cand = compress(pts)
-        if all(FR.allocation_at({"order": cand}, L) == base_at[L] for L in levels) or not legal_order(space, pts, total):
+        at = at_levels(cand, levels)
+        if at == base_key or at in keys or (skip is not None and at in skip) or not legal_order(space, pts, total):
             continue
         if ok is not None and not ok(cand):
             continue
+        keys.add(at)
         out.append(cand)
     return out
 
@@ -323,31 +357,54 @@ def order_polish(cls, spec, r, pool, space, save, cfg=None):
     alloc = r["winner"]["allocation"]
     cur = r["order"]
     rng = random.Random(53)
+    # 2026-11-15 (self-audit of the fl_fix_1115 queue): 323 of the 414 unconfirmed rounds in the logs had repeated an earlier round's
+    # numbers: the same order drawn again, another with the same builds at levels 30, 40 and 50 (`at_levels`), or a twin that moves a
+    # talent the lab never uses (bit-identical under common random numbers). Each time the batch's runner-up lost its confirmation, and
+    # 73 of 208 polishes ended on such a repeat. Now each set of builds at the levels is scored once (`skip`); the batch's best that
+    # fails its confirmation stays out with every order of exactly its score; the rest waits in `pending` until a step is kept.
+    scored = {at_levels(cur, lv)}
+    pending, failed, twins = [], set(), 0
     steps, t0 = [], time.time()
     log(f"== {cls} {spec}: order polish of the {r.get('order_label', 'stats model')} order (levels {', '.join(map(str, lv))}, batches of "
         f"{cfg['batch']} block moves, {cfg['fights']} fights, kept at {cfg['min_gain']:.1%} on a second seed)")
     for rnd in range(1, cfg["rounds"] + 1):
-        cands = order_moves(cur, rng, cfg["batch"], space, lv, ok=lambda o: FO.FS.order_ok(cls, spec, {"allocation": alloc, "order": o}))
-        if not cands:
-            log(f"    round {rnd}: no legal block move left")
+        cands = order_moves(cur, rng, cfg["batch"], space, lv, ok=lambda o: FO.FS.order_ok(cls, spec, {"allocation": alloc, "order": o}),
+                            skip=scored)
+        scored.update(at_levels(o, lv) for o in cands)
+        if not cands and not pending:
+            log(f"    round {rnd}: no untried block move left")
             break
         sc = evaluate(pool, cls, spec, [{"allocation": alloc, "order": o} for o in [cur] + cands], lv, cfg["fights"], 13)
-        ref, sc = sc[0], sc[1:]
-        bi = min(range(len(cands)), key=lambda i: sc[i])
-        if sc[bi] > ref * (1 - cfg["min_gain"]):
-            log(f"    round {rnd}: {len(cands)} orders, none {cfg['min_gain']:.1%} faster at levels 30-50 (best {sc[bi] / ref - 1:+.2%})")
-            break
-        c2 = evaluate(pool, cls, spec, [{"allocation": alloc, "order": o} for o in (cur, cands[bi])], lv, cfg["confirm"], 14)
-        desc = order_diff(cur, cands[bi])
-        if c2[1] > c2[0] * (1 - cfg["min_gain"]):
-            log(f"    round {rnd}: {desc}: {sc[bi] / ref - 1:+.2%} on seed 13, {c2[1] / c2[0] - 1:+.2%} on seed 14: not confirmed")
+        ref = sc[0]
+        new = [(x, o, rnd) for x, o in zip(sc[1:], cands) if x not in failed]
+        twins += len(cands) - len(new)
+        pending += new
+        if not pending:
+            log(f"    round {rnd}: {len(cands)} orders, each a twin of an unconfirmed one")
             continue
-        steps.append({"round": rnd, "change": desc, "seed1": round(sc[bi] / ref - 1, 4), "seed2": round(c2[1] / c2[0] - 1, 4),
+        bi = min(range(len(pending)), key=lambda i: pending[i][0])
+        s_best, o_best, r0 = pending[bi]
+        if s_best > ref * (1 - cfg["min_gain"]):
+            log(f"    round {rnd}: {len(cands)} orders, none {cfg['min_gain']:.1%} faster at levels 30-50 (best {s_best / ref - 1:+.2%}"
+                + (f", {len(pending) - len(new)} from earlier batches included" if len(pending) > len(new) else "") + ")")
+            break
+        c2 = evaluate(pool, cls, spec, [{"allocation": alloc, "order": o} for o in (cur, o_best)], lv, cfg["confirm"], 14)
+        desc = order_diff(cur, o_best) + (f" (round {r0}'s batch)" if r0 != rnd else "")
+        if c2[1] > c2[0] * (1 - cfg["min_gain"]):
+            failed.add(s_best)
+            n0 = len(pending)
+            pending = [q for q in pending if q[0] != s_best]
+            twins += n0 - 1 - len(pending)
+            log(f"    round {rnd}: {desc}: {s_best / ref - 1:+.2%} on seed 13, {c2[1] / c2[0] - 1:+.2%} on seed 14: not confirmed")
+            continue
+        steps.append({"round": rnd, "change": desc, "seed1": round(s_best / ref - 1, 4), "seed2": round(c2[1] / c2[0] - 1, 4),
                       "seconds_30_50": round(c2[1], 2)})
         log(f"    round {rnd}: {desc}: {steps[-1]['seed1']:+.2%} on seed 13, {steps[-1]['seed2']:+.2%} on seed 14 ({c2[0]:.2f} -> {c2[1]:.2f} s): kept")
-        cur = cands[bi]
+        cur = o_best
+        pending = []
     r["order_polish"] = {"date": FO.TODAY, "levels": lv, "from": r.get("order_label", "stats model"), "steps": steps,
-                         "minutes": round((time.time() - t0) / 60, 1), "changed": bool(steps)}
+                         "orders_scored": len(scored) - 1, "twins_skipped": twins, "minutes": round((time.time() - t0) / 60, 1),
+                         "changed": bool(steps)}
     save()
     return cur if steps else None
 

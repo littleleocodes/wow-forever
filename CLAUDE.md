@@ -974,7 +974,11 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   finalist and wins back when faster; then the **order polish**: block moves of the chosen order (a talent's block or part of it up to
   three blocks earlier or later; only moves that change the build at a race level, since the race looks every ten levels), scored at
   levels 30-50, kept at 0.3% on a second seed and raced at 20-60 (the order matters: own tree first against the stats model's order was
-  8% for the mage's Arcane build, 4% for the shaman's Elemental one). A changed winner gets new values and a new certificate
+  8% for the mage's Arcane build, 4% for the shaman's Elemental one). Since 2026-11-15 the order polish scores each set of builds at
+  its levels once, and in both polishes a candidate that fails its confirmation stays out with its exact-score twins (a point on a
+  talent the lab never uses scores bit-identically on every seed) while the rest of the batch waits its turn (`pending`; records
+  `twins_skipped`, `orders_scored`): 323 of 414 unconfirmed order-polish rounds had re-tested a failed candidate, and its batches were
+  mostly duplicates (30 moves, 11 distinct builds). A changed winner gets new values and a new certificate
   (`ensure_order` re-races the orders after a certificate re-search; `orders_raced`). `fl_levels.py <class> --orders` redoes the order
   choice alone. Records `level_polish`, `order_polish`, `order_label` and `finalist <split> (<order>)` race rows. `_reference/data/low_priority.py
   <script> [args]` runs a post-hoc job at below-normal CPU priority next to the queue.
