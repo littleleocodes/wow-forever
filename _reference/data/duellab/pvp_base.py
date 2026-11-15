@@ -141,6 +141,13 @@ class PvPAI:
     def damage_taken(self, d, me, src, spell, amount):
         return amount
 
+    keeps_stealth = ()        # this class's spells that do not end its stealth (the engine's KEEPS_STEALTH has the common ones)
+
+    def cc_immune(self, d, me, kind, name):
+        """Whether this side cannot take this control now (a druid's forms against Polymorph and Disarm): refused before
+        diminishing returns count it."""
+        return False
+
     def intercepts(self, d, me, src, spell):
         """Whether this side takes `spell` (cast at it by `src`) before it resolves: a Grounding Totem. True ends the spell."""
         return False

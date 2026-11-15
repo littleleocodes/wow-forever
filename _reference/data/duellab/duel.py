@@ -60,7 +60,8 @@ FR = _fightlab("run")   # the only clashing name: the scorer also has a run.py
 
 EPS = 1e-9
 FROZEN_ROOTS = {"Frost Nova", "Frostbite", "Freeze"}          # roots that count as Frozen for Shatter and Ice Lance
-KEEPS_STEALTH = {"Stealth", "Prowl", "Sap", "Distract", "Pick Pocket", "Vanish"}
+KEEPS_STEALTH = {"Stealth", "Prowl", "Sap", "Distract", "Pick Pocket", "Vanish", "Premeditation", "Sprint", "Slice and Dice",
+                 "Preparation", "Adrenaline Rush", "Dash", "Cold Blood"}   # a layer adds its own (PvPAI.keeps_stealth)
 _GEAR = {"tier": None}
 
 
@@ -232,6 +233,13 @@ class SideFight(FE.Fight):
     def resolve_attack(self, spell, white=False, hand="mh"):
         return self._splashing(super().resolve_attack, spell, white, hand)
 
+    def start_cast(self, spell):
+        """The fight lab's start, with the global cooldown kept when an off-GCD spell (gcd 0) starts inside a running one."""
+        g = self.p.gcd_until
+        r = super().start_cast(spell)
+        self.p.gcd_until = max(g, self.p.gcd_until)
+        return r
+
     def channel_tick(self):
         return self._splashing(super().channel_tick)
 
@@ -261,7 +269,7 @@ class SideFight(FE.Fight):
 
     def heal(self, spell, amount, target="player", crit=False):
         if target != "pet":
-            amount *= 1.0 - self.side.heal_reduction()
+            amount = max(0.0, amount * (1.0 - self.side.heal_reduction()) - self.side.heal_flat_reduction())
         return super().heal(spell, amount, target, crit)
 
     def attack_table(self, spell, white, hand="mh"):
@@ -481,9 +489,15 @@ class Side:
         t, red = self.t, 0.0
         for name, frac in T.HEAL_REDUCTION.items():
             d = self.debuffs.get(name)
-            if d and d.get("until", 0) > t:
-                red = max(red, frac * (d.get("stacks", 1) if name == "Wound Poison" else 1))
+            if d and d.get("until", 0) > t and frac > 0:
+                red = max(red, frac)
         return min(0.9, red)
+
+    def heal_flat_reduction(self):
+        """Wound Poison: a flat amount off each heal (a heal over time's every tick) per stack ("reducing all healing effects used on
+        them by 165", rank 4 at 56; dtables.WOUND_FLAT)."""
+        d = self.debuffs.get("Wound Poison")
+        return T.WOUND_FLAT * d.get("stacks", 1) if d and d.get("until", 0) > self.t else 0.0
 
     # ------------------------------------------------------------------ control
     def set_control(self, kind, until):
@@ -506,20 +520,28 @@ class Side:
         t = self.t
         if dur <= 0:
             return 0.0
-        if t < self.immune_until or (physical and t < self.immune_phys_until) or (kind == "fear" and t < self.fear_immune_until):
+        if t < self.immune_until or (physical and t < self.immune_phys_until) or (kind == "fear" and t < self.fear_immune_until) \
+                or self.ai.cc_immune(self.duel, self, kind, name):
             self.fight.note(f"immune to {name or kind}")
             return 0.0
         dur = min(dur, T.PVP_CC_CAP)
         if cat:
             rec = self.dr.get(cat)
-            n = rec[0] if rec and t < rec[1] + T.DR_RESET else 0
-            f = T.DR_STEPS[min(n, len(T.DR_STEPS) - 1)]
-            if f <= 0:
-                self.stats["dr_immune"] += 1
-                self.fight.note(f"immune to {name or kind} (diminishing returns)")
-                return 0.0
-            dur *= f
-            self.dr[cat] = [n + 1, t + dur]
+            if rec and len(rec) > 3 and rec[2] == (name, t):   # the same control again in this step: once for diminishing returns
+                f = rec[3]
+                dur *= f
+                rec[1] = max(rec[1], t + dur)
+                if f <= 0:
+                    return 0.0
+            else:
+                n = rec[0] if rec and t < rec[1] + T.DR_RESET else 0
+                f = T.DR_STEPS[min(n, len(T.DR_STEPS) - 1)]
+                self.dr[cat] = [n + 1, t + dur * f, (name, t), f]
+                if f <= 0:
+                    self.stats["dr_immune"] += 1
+                    self.fight.note(f"immune to {name or kind} (diminishing returns)")
+                    return 0.0
+                dur *= f
         if kind == "stun":
             self.stun_until = max(self.stun_until, t + dur)
             self.break_cast(name or "stunned")
@@ -666,7 +688,7 @@ class Side:
             s = self.mod.spells.get(s)
         if s is None:
             return False
-        if self.stealthed and s.name not in KEEPS_STEALTH:
+        if self.stealthed and s.name not in KEEPS_STEALTH and s.name not in getattr(self.ai, "keeps_stealth", ()):
             self.stealthed = False
         if s.charge:
             self.duel.set_dist(T.MELEE)
@@ -868,8 +890,9 @@ class Duel:
 
     def tick_attacks(self, s, t):
         f, p = s.fight, s.p
-        if s.controlled(t) or s.stealthed or t < s.inactive_until or t < T.REACTION:
-            return   # nobody swings or shoots before both players can act (an Auto Shot at 0.00 had started combat before a Charge)
+        if s.controlled(t) or s.stealthed or s.foe.stealthed or t < s.inactive_until or t < T.REACTION:
+            return   # nobody swings or shoots before both players can act (an Auto Shot at 0.00 had started combat before a Charge),
+                     # nor at a foe in stealth
         if s.mod.melee and s.ai.auto_attack and self.dist <= T.MELEE + 1e-6 and not f.casting and t >= s.disarm_until:
             if p.mh is not None and t + EPS >= p.swing_mh:
                 f.auto_swing("mh")

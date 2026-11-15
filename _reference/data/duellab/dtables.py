@@ -72,9 +72,10 @@ PROC_NAME = {("mage", "root"): "Frostbite", ("warrior", "root"): "Improved Hamst
              ("paladin", "stun"): "Seal of Justice", ("druid", "stun"): "Starfire Stun"}
 HEALING_POTIONS = False   # consumables are off by default (a duel flag allows them; a fair build comparison does not)
 
-# healing reduction debuffs (name: fraction of healing taken away)
-HEAL_REDUCTION = {"Mortal Strike": 0.5, "Wound Poison": 0.1, "Aimed Shot": 0.0, "Hamstring": 0.0}
+# healing reduction debuffs (name: fraction of healing taken away); Wound Poison is a flat amount per heal per stack instead
+HEAL_REDUCTION = {"Mortal Strike": 0.5, "Wound Poison": 0.0, "Aimed Shot": 0.0, "Hamstring": 0.0}
 WOUND_STACKS = 5
+WOUND_FLAT = 165.0        # Wound Poison rank 4 (level 56): "reducing all healing effects used on them by 165 ... Stacks up to 5 times"
 
 # gear: the fight lab's level-60 tier for both sides (blues: dungeon blues). A PvP rank set is planned (pvp-plan.md).
 GEAR_TIER = "blues"
