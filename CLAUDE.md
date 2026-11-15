@@ -381,7 +381,9 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   signature audit judge it, else its points (2026-11-15: the Discipline page's 29/22/0 raid-path build had been judged by its points as
   the Smite hybrid, and rules tuned to that floor, Smite and Holy Fire half the damage, starved Penance: 46 -> 58 s per kill). Tune a
   rotation two pages play on the build with the stricter floor: priest `holy-leveling` on `smite-open-leveling` (the Smite page, 50%),
-  not the Holy page's raid-path build (40%). `fl_open_search.py`'s 20-60 race also takes the previous record's winner (`<record>.prev.json`) and our
+  not the Holy page's raid-path build (40%). A class module's own default may not hold a required spell either: `paladin.py` held
+  offensive Holy Shock above 70% mana (`shock_mana`, a 2026-09-30 sweep), out of the rules' reach and their 15% cap, so the Holy page's
+  build cast it 0.2 times per kill at 30-40 against the rule's 0.5 (no hold since 2026-11-15: 2.1-2.4 per kill, 5-9% slower there). `fl_open_search.py`'s 20-60 race also takes the previous record's winner (`<record>.prev.json`) and our
   raced builds as eligible picks, each with the order it carries: a fresh Affliction search had ended 1.6% below the build it replaced,
   and `open_builds.py` would have rewritten that build from the slower record. `deep-runs/refresh_keys.py <record> <rotation>` and a
   plain `fl_open_search.py <class> --rotation <rotation>` run redo a rotation from that race on (after a rules change, or to re-date a

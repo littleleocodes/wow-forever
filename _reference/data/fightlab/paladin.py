@@ -837,7 +837,10 @@ class PaladinModule(BaseModule):
         # and the heal threshold are within ~2% of each other (in-combat heals almost never trigger against same-level mobs).
         holy = self.path == "holy"
         self.heal_below = 0.40 if holy else 0.35       # in-combat heal / emergency threshold (share of health)
-        self.shock_mana = 0.70                         # offensive Holy Shock only above this mana share
+        self.shock_mana = 0.0                          # offensive Holy Shock only above this mana share: no hold since 2026-11-15
+        # (the signature rule, user 2026-10-22: a required spell is held above 15% mana at most, and only by tuned rules, which say so;
+        # the sweep's 70% kept the Holy page's build at 0.2 Holy Shock per kill at levels 30-40 against the rule's 0.5, out of the rules'
+        # reach. On cooldown it casts 2.1-2.4 per kill, 5-9% slower per kill at 30-40 under the saved rules, 60 fights)
         self.cons_mana = 1.10 if holy else 0.60        # Consecration only above this mana share (above 1 = never)
         self.blessing = "wisdom" if holy else "might"  # "might", "kings" or "wisdom" (one Blessing on yourself)
         self.drink_below = 0.25 if holy else 0.15      # rest threshold (a tuned rotation file overrides it)
