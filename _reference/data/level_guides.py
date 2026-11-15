@@ -119,7 +119,7 @@ def pick(cls, spec):
     import fl_signature as FS
     import fl_talent_opt as FT
     import derive_leveling as DL
-    slot = next((s for s in SA.page_slots(cls) if s[0] == spec), None)
+    slot = next((s for s in SA.page_slots(cls, signature=True) if s[0] == spec), None)
     if not slot or not slot[1]:
         return None, None, False, None
     b = slot[1][0]

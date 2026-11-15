@@ -116,7 +116,7 @@ def main():
     SA = LG.fightlab_signature_audit()
     jobs = []
     for cls in a.classes:
-        for slot in SA.page_slots(cls):
+        for slot in SA.page_slots(cls, signature=True):
             if not slot[1]:
                 continue
             spec, b = slot[0], slot[1][0]

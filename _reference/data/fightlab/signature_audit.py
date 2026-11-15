@@ -63,8 +63,12 @@ def rules_issues(cls, rot, required):
     return out
 
 
-def page_slots(cls):
-    """[(spec, [builds best first], {build id: page rotation}, level_as)] as the leveling pages see them (before the signature rule)."""
+def page_slots(cls, signature=False):
+    """[(spec, [builds best first], {build id: page rotation}, level_as)] as the leveling pages see them: before the signature rule (the
+    audit's own view), or with `signature` after it, as render_modes ranks the page (a build that fails its spec's signature check after
+    every build that passes). The tools that act on the page's pick (level_guides.pick, stat_weights_all, addon_values, forever_base,
+    forever_race, pawn_compare) ask for the second (2026-11-15: the hunter's Beast Mastery guide and stat values had followed the
+    generated 30/21/0, faster but without Bestial Wrath, while the page shows the open search's 31/16/4)."""
     import render_modes as RM
     import render_rotations as rr
     import render_start_here as rs
@@ -76,8 +80,8 @@ def page_slots(cls):
     specs = SM.trees(cls) + sorted(s for s in g if s.startswith("Hybrid") and (g[s].get("leveling") or before.get(s)))
     out = []
     for spec in specs:
-        ranked = RM.rank_builds(cls, "leveling", g.get(spec, {}).get("leveling") or [], nums, signature=False)
-        gone = [] if ranked else RM.rank_builds(cls, "leveling", before.get(spec) or [], nums, signature=False)[:1]
+        ranked = RM.rank_builds(cls, "leveling", g.get(spec, {}).get("leveling") or [], nums, signature=signature)
+        gone = [] if ranked else RM.rank_builds(cls, "leveling", before.get(spec) or [], nums, signature=signature)[:1]
         rots = {b["id"]: RM.level_rotation(cls, b) for b in ranked + gone}
         out.append((spec, ranked, rots, gone, SM.LEVEL_AS.get((cls, spec))))
     return out

@@ -28,7 +28,7 @@ def picks(classes):
     SA = LG.fightlab_signature_audit()
     out = []
     for cls in classes:
-        for s in SA.page_slots(cls):
+        for s in SA.page_slots(cls, signature=True):
             if s[1]:
                 out.append((cls, s[0], s[1][0]["id"]))
     return out

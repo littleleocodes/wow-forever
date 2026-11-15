@@ -418,7 +418,7 @@ def leveling(cls):
     import stat_weights as SW
     SA = LG.fightlab_signature_audit()
     out = []
-    for slot in SA.page_slots(cls):
+    for slot in SA.page_slots(cls, signature=True):
         if not slot[1]:
             continue
         spec, b = slot[0], slot[1][0]
