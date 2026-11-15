@@ -28,6 +28,8 @@ class WarriorPvP(PvPAI):
     def shout(self, d, me, foe, spell):
         if d.dist <= 10.0:
             foe.apply_cc("fear", 8.0, "fear", "Intimidating Shout")
+        if foe.pet_body.alive() and foe.pet_body.dist <= 10.0:
+            d.pet_cc(foe, "fear", 8.0)
         return 0.0
 
     def zerker(self, d, me, foe, spell):

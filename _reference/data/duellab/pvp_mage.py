@@ -76,7 +76,8 @@ class MagePvP(PvPAI):
 
     def off_gcd(self, d, me, foe):
         c = self.foe_cast(d, foe)
-        if c is not None and me.can("Counterspell", ignore_gcd=True) and (c.name in HEALS_OR_LONG or c.cast >= 1.5 or c.kind == "channel"):
+        if c is not None and me.can("Counterspell", ignore_gcd=True) and (c.name in HEALS_OR_LONG or c.cast >= 1.5 or c.kind == "channel") \
+                and not foe.ai.grounding(d, foe):
             return "Counterspell"
         return None
 
@@ -96,6 +97,10 @@ class MagePvP(PvPAI):
                 return "Blink"
             if me.can("Cone of Cold"):
                 return "Cone of Cold"
+        if foe.ai.grounding(d, foe) and (me.can("Counterspell", ignore_gcd=True) or me.can("Polymorph")):
+            for k in ("Fire Blast", "Ice Lance", "Frostbolt"):   # pop the Grounding Totem with something cheap before a key spell
+                if me.can(k):
+                    return k
         if melee and free and 8.0 < d.dist <= 30.0 and me.can("Polymorph") and not foe.dots \
                 and not me.p.ready("Frost Nova", t) and not me.p.ready("Blink", t) and hp < 0.75:
             return "Polymorph"

@@ -83,12 +83,11 @@ class PvPAI:
         return T.MELEE - 0.5 if self.keep_range <= 0 else self.keep_range
 
     def while_controlled(self, d, me, foe):
-        """Stunned, incapacitated or feared: the PvP trinket when it frees this class from what holds it, the control has a while to
-        run, and health is low or the control is a long incapacitate or fear."""
+        """Stunned, incapacitated or feared: the PvP trinket when it frees this class from everything that holds it (Side.trinket_clears),
+        the control has a while to run, and health is low or the control is a long incapacitate or fear."""
         t = d.t
         left = max(me.stun_until, me.incap_until, me.fear_until) - t
-        frees = me.trinket_frees(t)
-        if left < self.trinket_min_left or not (frees & {"stun", "fear", "polymorph", "charm"}):
+        if left < self.trinket_min_left or not me.trinket_clears(t):
             return None
         long_cc = (t < me.incap_until or t < me.fear_until) and left >= 5.0
         if me.hp_frac() < self.trinket_hp or long_cc:
@@ -142,5 +141,21 @@ class PvPAI:
     def damage_taken(self, d, me, src, spell, amount):
         return amount
 
+    def intercepts(self, d, me, src, spell):
+        """Whether this side takes `spell` (cast at it by `src`) before it resolves: a Grounding Totem. True ends the spell."""
+        return False
+
+    def after_intercept(self, d, me, src, spell):
+        pass
+
+    def grounding(self, d, me):
+        """Whether a spell cast at this side now would be taken first (a charged Grounding Totem): the other side's layer can pop it
+        with something cheap before its control spell."""
+        return False
+
     def pet_held(self, d, me, t):
         return False
+
+    def tick(self, d, me, foe):
+        """Every step, after both sides decided: traps, totems, timers a layer keeps itself."""
+        return None

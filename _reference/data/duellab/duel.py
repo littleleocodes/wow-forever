@@ -71,6 +71,17 @@ def set_gear(tier):
         _GEAR["tier"] = tier
 
 
+_OFF = {}
+
+
+def off_gcd(cls):
+    """Spells of the class that trigger no global cooldown (fightlab/spell_gcd.json "off_gcd": the raid simulator's GCDMs)."""
+    if not _OFF:
+        import json
+        _OFF.update({k: set(v) for k, v in json.load(open(FL / "spell_gcd.json", encoding="utf-8")).get("off_gcd", {}).items()})
+    return _OFF.get(cls, set())
+
+
 class Body:
     """A side as the other side's module sees it: the mob-shaped view the fight lab's hooks read and write. Health, armor, distance,
     slows, roots, stuns, fears, debuffs and dots are the side's own live state; control set through it gets diminishing returns."""
@@ -132,6 +143,67 @@ class Body:
         return max(0.0, self.armor - self.armor_debuff)
 
 
+def _no_hook(*args, **kwargs):
+    return None
+
+
+class PetBody:
+    """The other side's view of this side's pet, as one more mob of a pull: area spells and cleaves land on it through the fight
+    lab's own hit_others and hit_others_melee, their control holds it, its dots tick, and it dies (2026-11-14, the warlock layer: a
+    demon nobody could touch decided its duels: Soul Link against a warrior 93.5% with it untouched, 24.5% if it died at 10 s). It is
+    in reach of whoever it attacks; a caster pet (the Imp) stands by its owner. Nobody targets a pet on purpose yet."""
+    _plain = dict(level=60, swing_at=0.0, slow=0.0, slow_until=0.0, root_until=0.0, attack_slow=0.25, attack_slow_until=0.0,
+                  stun_until=0.0, fear_until=0.0, incap_until=0.0, target="player", threat_player=0.0, threat_pet=0.0, armor_debuff=0.0,
+                  pet_in_melee=False, caster=False, runner=False, fled=False, flee_until=-1.0, cast_dmg=0.0, cast_end=-1.0, cast_next=0.0,
+                  lockout_until=0.0, dmg_reduction=0.0, dmg_reduction_until=0.0, dmg=0.0)
+
+    def __init__(self, side):
+        self.__dict__["side"] = side
+        self.__dict__.update(self._plain)
+        self.__dict__["debuffs"], self.__dict__["dots"] = {}, []
+
+    pet = property(lambda s: s.side.p.pet)
+    hp = property(lambda s: s.pet.hp if s.pet is not None else 0.0, lambda s, v: setattr(s.pet, "hp", v) if s.pet is not None else None)
+    hp_max = property(lambda s: s.pet.hp_max if s.pet is not None else 1.0, lambda s, v: None)
+    armor = property(lambda s: s.pet.armor if s.pet is not None else 0.0, lambda s, v: None)
+    dist = property(lambda s: T.MELEE if (s.pet is not None and s.pet.engaged and not s.pet.caster) else s.side.duel.dist,
+                    lambda s, v: None)
+    in_melee = property(lambda s: s.dist <= T.MELEE + 1e-6, lambda s, v: None)
+
+    def alive(self):
+        return self.pet is not None and self.pet.alive and self.pet.hp > 0
+
+    def casting(self, t):
+        return False
+
+    def can_cast(self, t):
+        return False
+
+    def stunned(self, t):
+        return t < self.stun_until
+
+    def rooted(self, t):
+        return t < self.root_until
+
+    def feared(self, t):
+        return t < self.fear_until
+
+    def frozen(self, t):
+        return t < self.root_until
+
+    def fleeing(self, t):
+        return False
+
+    def incapacitated(self, t):
+        return self.stunned(t) or self.feared(t) or t < self.incap_until
+
+    def speed(self, t):
+        return 0.0 if (self.rooted(t) or self.incapacitated(t)) else T.RUN_SPEED * (1.0 - (self.slow if t < self.slow_until else 0.0))
+
+    def effective_armor(self):
+        return max(0.0, self.armor - self.armor_debuff)
+
+
 class SideFight(FE.Fight):
     """One side's fight-lab Fight: its module, its player, the other side as the target. Damage goes through the duel (immunities,
     absorbs, control broken by damage, pushback, rage), the attack table is a player's, control gets diminishing returns."""
@@ -139,7 +211,29 @@ class SideFight(FE.Fight):
     def __init__(self, side, log):
         self.side = side
         self._blocked = False
+        self._splash = False   # True while a spell or attack resolves: only then is the foe's pet "another mob of the pull"
         super().__init__(side.mod, side.p, side.foe.body, side.duel.rng, t0=0.0, log=log, extra=None)
+
+    def others(self):
+        """The foe's pet while an area spell, a cleave or a channel tick resolves (it stands in reach of whoever it attacks); never
+        while deciding, so the leveling rotations do not switch to their several-mob play because a pet stands there."""
+        if not self._splash:
+            return []
+        pb = self.side.foe.pet_body
+        return [pb] if pb.alive() and self.m is not pb else []
+
+    def _splashing(self, fn, *args, **kwargs):
+        self._splash = True
+        try:
+            return fn(*args, **kwargs)
+        finally:
+            self._splash = False
+
+    def resolve_attack(self, spell, white=False, hand="mh"):
+        return self._splashing(super().resolve_attack, spell, white, hand)
+
+    def channel_tick(self):
+        return self._splashing(super().channel_tick)
 
     def note(self, msg):
         if self.log is not None and "-> mob" not in msg and "-> add" not in msg:
@@ -149,7 +243,21 @@ class SideFight(FE.Fight):
         if self._blocked:
             self._blocked = False
             amount = max(0.0, amount - self.side.foe.p.block_value)
+        if self.m is self.side.foe.pet_body:
+            self.side.duel.damage_pet(self.side, self.side.foe, spell, amount, crit)
+            return
         self.side.duel.damage(self.side, self.side.foe, spell, amount, crit, source)
+
+    def damage_taken_effects(self, dmg, crit_taken, hook=True):
+        """Cast pushback for every hit; the module's on_hit_taken (Lightning Shield's charges, Reckoning) only when `hook`: a weapon
+        hit, the only kind of hit a mob's swing was in the fight lab (2026-11-14, the shaman layer: dots had spent Lightning Shield)."""
+        if hook:
+            return super().damage_taken_effects(dmg, crit_taken)
+        self.mod.on_hit_taken = _no_hook
+        try:
+            return super().damage_taken_effects(dmg, crit_taken)
+        finally:
+            del self.mod.on_hit_taken
 
     def heal(self, spell, amount, target="player", crit=False):
         if target != "pet":
@@ -171,20 +279,26 @@ class SideFight(FE.Fight):
         if r < miss:
             return "miss"
         r -= miss
+        if self.m is foe.pet_body:   # a cleave on the pet: the fight lab's mob table (pets have no dodge or parry of their own here)
+            crit = p.melee_crit + self.mod.crit_bonus(spell, False)
+            return "crit" if r < crit else "hit"
         helpless = foe.controlled(t)   # a stunned, incapacitated or fleeing player cannot dodge, parry or block
         behind = self.side.behind(t)
         red = self.mod.dodge_parry_reduction() + p.expertise
         dodge = 0.0 if helpless else max(0.0, fp.dodge + foe.mod.dodge_bonus(foe.fight) + foe.dodge_bonus(t) - red)
         if r < dodge:
+            foe.defend("on_dodge")
             return "dodge"
         r -= dodge
         parry = 0.0 if (helpless or behind) else max(0.0, fp.parry + foe.mod.parry_bonus(foe.fight) - red)
         if r < parry:
+            foe.defend("on_parry")
             return "parry"
         r -= parry
         block = 0.0 if (helpless or behind or fp.block <= 0) else fp.block + foe.mod.block_bonus(foe.fight)
         if r < block:
             self._blocked = True
+            foe.defend("on_block")
             return "hit"
         r -= block
         crit = p.melee_crit + self.mod.crit_bonus(spell, False)
@@ -192,6 +306,8 @@ class SideFight(FE.Fight):
 
     def apply_control(self, spell):
         foe, t = self.side.foe, self.side.duel.t
+        if self.m is foe.pet_body:   # an area control on the pet: the fight lab's mob rules (no diminishing returns, no trinket)
+            return super().apply_control(spell)
         weapon = spell.kind in ("melee", "ranged")
         if spell.root > 0:
             foe.apply_cc("root", spell.root, T.DR_CATEGORY.get(spell.name, "random_root"), spell.name, frozen=spell.name in FROZEN_ROOTS,
@@ -208,11 +324,16 @@ class SideFight(FE.Fight):
 
     def resolve_spell(self, spell, instant_from_talent=False):
         self.side.foe.cc_hint = spell.name
+        foe = self.side.foe
+        if foe.ai.intercepts(self.side.duel, foe, self.side, spell):   # the target's side takes it first (Grounding Totem)
+            self.casts[spell.name] = self.casts.get(spell.name, 0) + 1
+            foe.ai.after_intercept(self.side.duel, foe, self.side, spell)
+            return 0.0
         h = self.side.ai.effects.get(spell.name)
         if h is not None:   # a PvP effect the fight lab does not parse (Polymorph, Blink, Ice Block, Blind, Fear ...): the class's handler
             self.casts[spell.name] = self.casts.get(spell.name, 0) + 1
             return h(self.side.duel, self.side, self.side.foe, spell) or 0.0
-        return super().resolve_spell(spell, instant_from_talent)
+        return self._splashing(super().resolve_spell, spell, instant_from_talent)
 
 
 class Side:
@@ -223,8 +344,17 @@ class Side:
         self.alloc = alloc
         self.mod = FR.make_module(cls, alloc, 60, spec)
         self.mod.veto = {}                      # the leveling rotation's tuned vetoes are PvE rules
+        off = off_gcd(cls)
+        if off:   # the fight lab's tables.spell_gcd reads only the "gcd" list: off-GCD spells cost 1.5 s there (2026-11-14, not changed there)
+            orig = self.mod.gcd_of
+            self.mod.gcd_of = lambda s, _o=orig, _off=off: 0.0 if s.name in _off else _o(s)
         self.p = self.mod.make_player(60)
         self.body = Body(self)
+        self.pet_body = PetBody(self)
+        self.cast_slows = {}                    # name -> (fraction, until): casts take longer (Mind-numbing Poison)
+        self.zone_slows = {}                    # name -> (fraction, until): a slow while standing in an area (Frost Trap, Earthbind)
+        orig_ct = self.mod.cast_time
+        self.mod.cast_time = lambda s, _o=orig_ct, _me=self: _o(s) * (1.0 + _me.cast_slow_now()) if _o(s) > 0 else _o(s)
         self.ai = ai
         self.foe = None
         self.fight = None
@@ -271,11 +401,22 @@ class Side:
     def dodge_bonus(self, t):
         return sum(c for c, until in self.dodge_buffs.values() if t < until)
 
+    def cast_slow_now(self, t=None):
+        t = self.t if t is None else t
+        return max([f for f, until in self.cast_slows.values() if t < until] or [0.0])
+
+    def defend(self, hook):
+        """The defender's own module hook for a dodge, parry or block of a weapon attack (Riposte, Counterattack, Mongoose Bite,
+        Redoubt, Reckoning): the fight lab calls them from a mob's swing, which a duel does not have."""
+        if self.fight is not None:
+            self.fight.swinging = self.fight.m
+            getattr(self.mod, hook)(self.fight)
+
     def speed(self, t):
         if t < self.stun_until or t < self.root_until or t < self.incap_until:
             return 0.0
         bonus = max([b for b, until in self.speed_bonus.values() if t < until] or [0.0])
-        slow = self.slow if t < self.slow_until else 0.0
+        slow = max([self.slow if t < self.slow_until else 0.0] + [f for f, until in self.zone_slows.values() if t < until])
         return T.RUN_SPEED * (1.0 + bonus) * (1.0 - slow) * (T.STEALTH_SPEED if self.stealthed else 1.0)
 
     def controlled(self, t):
@@ -414,7 +555,7 @@ class Side:
 
     def interrupt(self, lock, by):
         spell = self.cast_spell()
-        if spell is None:
+        if spell is None or self.t < self.immune_until:   # Divine Shield, Ice Block: no interrupt lands
             return
         self.break_cast(by)
         self.lockout[spell.school or ""] = max(self.lockout.get(spell.school or "", 0.0), self.t + lock)
@@ -441,6 +582,21 @@ class Side:
             if "charm" in b and self.incap_name in T.CHARM:
                 out.add("charm")
         return out
+
+    def trinket_clears(self, t=None):
+        """Whether the trinket would leave this side free to act: every stun, incapacitate and fear on it is one its class's breaks
+        (a rogue's cannot break a stun: trinketing Kidney Shot under Blind would free nothing)."""
+        t = self.t if t is None else t
+        frees = self.trinket_frees(t)
+        if not frees:
+            return False
+        if t < self.stun_until and "stun" not in frees:
+            return False
+        if t < self.fear_until and "fear" not in frees:
+            return False
+        if t < self.incap_until and not frees & {"polymorph", "charm"}:
+            return False
+        return True
 
     def use_trinket(self):
         t = self.t
@@ -473,6 +629,8 @@ class Side:
         s = self.mod.spells.get(name)
         if s is None or not self.p.ready(s.name, t) or t < self.inactive_until:
             return False
+        if (s.charge or s.name in getattr(self.ai, "charges", ())) and t < self.root_until:
+            return False   # a rooted player cannot charge or intercept
         if self.foe.stealthed and (s.name in self.ai.hostile_buffs or s.kind in ("melee", "ranged", "channel", "spell"))                 and s.target not in ("self", "pet") and s.kind != "heal":
             return False   # an unseen foe cannot be targeted
         if not ignore_gcd and self.mod.gcd_of(s) > 0 and t + EPS < self.p.gcd_until:
@@ -480,8 +638,9 @@ class Side:
         if self.controlled(t) or self.is_casting():
             return False
         weapon = s.kind in ("melee", "ranged")
-        if not weapon and (self.silenced(t) or self.school_locked(s.school, t)) and s.cost > 0:
-            return False
+        spell = not weapon and (s.resource == "mana" or s.kind in ("spell", "channel", "heal"))
+        if spell and (self.silenced(t) or self.school_locked(s.school, t)):
+            return False   # every spell of a locked school, free ones too (Lay on Hands under Pummel); abilities are not spells
         if weapon and t < self.disarm_until and s.kind == "melee":
             return False
         if not self.fight.can_afford(s, self.mod.mana_cost(s)):
@@ -545,6 +704,36 @@ class Duel:
             self.log.append(f"{self.t:6.2f}s {msg}")
 
     # ------------------------------------------------------------------ damage
+    def damage_pet(self, src, dst, spell, amount, crit=False, periodic=False):
+        """Damage to dst's pet (area spells, cleaves, dots on it): it breaks the pet's incapacitate and maybe its fear, and kills it."""
+        pet, pb, t = dst.p.pet, dst.pet_body, self.t
+        if pet is None or not pet.alive or amount <= 0:
+            return 0.0
+        pet.hp -= amount
+        self.combat = True
+        key = f"{spell.name} (pet)"
+        src.fight.damage[key] = src.fight.damage.get(key, 0.0) + amount
+        if t < pb.incap_until:
+            pb.incap_until = t
+        if t < pb.fear_until and self.rng.random() < T.FEAR_BREAK_CHANCE:
+            pb.fear_until = t
+        src.fight.note(f"{spell.name}{' CRIT' if crit else ''} {amount:.0f} -> {dst.name}'s {pet.name} {max(0, pet.hp):.0f}")
+        if pet.hp <= 0:
+            pet.alive, pet.engaged = False, False
+            dst.fight.pet_died = True
+            dst.mod.on_pet_death(dst.fight)
+            dst.fight.note(f"{pet.name} dies")
+        return amount
+
+    def pet_cc(self, dst, kind, dur):
+        """Control on dst's pet from an area effect a layer applies by hand (Psychic Scream, Howl of Terror, Intimidating Shout)."""
+        pb = dst.pet_body
+        if not pb.alive() or dur <= 0:
+            return
+        setattr(pb, {"stun": "stun_until", "fear": "fear_until", "root": "root_until", "incap": "incap_until"}[kind],
+                max(getattr(pb, {"stun": "stun_until", "fear": "fear_until", "root": "root_until", "incap": "incap_until"}[kind]), self.t + dur))
+        dst.fight.note(f"{dst.p.pet.name}: {kind} {dur:.1f}s")
+
     def damage(self, src, dst, spell, amount, crit=False, source="player", periodic=False):
         t = self.t
         school = getattr(spell, "school", None) or "physical"
@@ -587,7 +776,7 @@ class Duel:
         if amount > 0:
             if dst.p.rage_max > 0:
                 dst.p.rage = min(dst.p.rage_max, dst.p.rage + FT.rage_from_damage_taken(amount, 60))
-            dst.fight.damage_taken_effects(amount, crit)
+            dst.fight.damage_taken_effects(amount, crit, hook=not periodic and getattr(spell, "kind", "") in ("melee", "ranged"))
         f.note(f"{spell.name}{' CRIT' if crit else ''} {amount:.0f} -> {dst.name} {max(0, dst.p.hp):.0f}")
         return amount
 
@@ -627,6 +816,17 @@ class Duel:
                     s.dots.remove(dot)
         if t < s.cc_regen[0] and t < s.incap_until:
             s.p.hp = min(s.p.hp_max, s.p.hp + s.cc_regen[1] * s.p.hp_max * T.DT)
+        pb = s.pet_body
+        if pb.dots and pb.alive():
+            for dot in list(pb.dots):
+                if t + EPS >= dot[3]:
+                    self.damage_pet(src, s, src.mod.spells.get(dot[0]) or FE.Spell(dot[0], "shadow"), dot[1], periodic=True)
+                    dot[2] -= 1
+                    dot[3] += dot[4]
+                    if dot[2] <= 0 and dot in pb.dots:
+                        pb.dots.remove(dot)
+        elif pb.dots:
+            pb.dots.clear()
         for hot in list(s.p.hots):
             if t + EPS >= hot[3]:
                 s.fight.heal(FE.Spell(hot[0], "holy"), hot[1], hot[5] if len(hot) > 5 else "player")
@@ -668,8 +868,8 @@ class Duel:
 
     def tick_attacks(self, s, t):
         f, p = s.fight, s.p
-        if s.controlled(t) or s.stealthed or t < s.inactive_until:
-            return
+        if s.controlled(t) or s.stealthed or t < s.inactive_until or t < T.REACTION:
+            return   # nobody swings or shoots before both players can act (an Auto Shot at 0.00 had started combat before a Charge)
         if s.mod.melee and s.ai.auto_attack and self.dist <= T.MELEE + 1e-6 and not f.casting and t >= s.disarm_until:
             if p.mh is not None and t + EPS >= p.swing_mh:
                 f.auto_swing("mh")
@@ -689,6 +889,8 @@ class Duel:
             if not pet.engaged:
                 pet.engaged = t >= s.ai.pet_arrives
                 pet.swing_at = t
+            elif s.pet_body.incapacitated(t) or (s.pet_body.rooted(t) and s.foe.intent == "kite"):
+                pet.swing_at = max(pet.swing_at, t + T.DT)   # a feared, stunned or incapacitated pet, or a rooted one its target walks from
             elif t + EPS >= pet.swing_at and not s.ai.pet_held(self, s, t):
                 f.pet_swing()
                 pet.swing_at = t + pet.speed
@@ -770,4 +972,6 @@ class Duel:
             for s in (a, b):
                 if a.p.hp > 0 and b.p.hp > 0:
                     self.decide(s, t)
+            for s in (a, b):
+                s.ai.tick(self, s, s.foe)
             self.t = round(t + T.DT, 6)
