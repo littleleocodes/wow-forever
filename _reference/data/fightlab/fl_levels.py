@@ -14,7 +14,10 @@ levels 20-60, weights level / 10). Level 60 is a proxy; what the pages rank on i
    it is 0.3% faster on a second seed with more fights. The pick stays when no batch improves it. A neighbour that fails its
    confirmation stays out with every neighbour of exactly its score (its twins: a point moved between talents the lab never uses scores
    bit-identically on every seed), and the rest of each batch waits with its score until a step is kept (2026-11-15; the order polish
-   likewise, and it scores each set of builds at its levels once).
+   likewise, and it scores each set of builds at its levels once). When the race's pick plays an order of its own (the previous
+   record's winner, one of our builds), each neighbour carries that order with the move applied (`carry_order`; the stats model's
+   order only when no legal path carries it): with the stats model's order every neighbour started behind by the gap between the two
+   orders, and no polish from such a pick had kept a step (2026-11-15).
 2. **The order** (`pick_order`): the (polished) winner is raced at levels 20-60 on the race's seed and fights with three orders, the
    stats model's, own tree first and own tree last (raid_path_leveling's variants; the lead tree is the one with most points); the
    fastest is the page's (`order_label`). When the polish changed the build, the race's old pick stays in the table as a finalist and
@@ -108,6 +111,44 @@ def our_builds(cls, model, trees, data):
     return ours
 
 
+def carry_order(order, old, new, space):
+    """The reference's own order carried over to a neighbour build (2026-11-15): the points the move takes away leave their slots (a
+    talent's last ranks first) and the points it adds take the freed slots, the shallowest row first; then each slot takes the first
+    point of that wish list that keeps the build legal, so a point that is not legal yet waits until it is (tier gating, prerequisites)
+    and the rest move up. None only when the record's order does not spend the reference's points."""
+    pts = expand(order)
+    have = {}
+    for _, n in pts:
+        have[n] = have.get(n, 0) + 1
+    if have != {n: k for n, k in old.items() if k}:
+        return None
+    lost = {n: k - new.get(n, 0) for n, k in old.items() if k > new.get(n, 0)}
+    adds = sorted(((space.tree_of[n], n) for n, k in new.items() for _ in range(k - old.get(n, 0))), key=lambda p: space.row[p[1]])
+    free = []
+    for i in range(len(pts) - 1, -1, -1):
+        if lost.get(pts[i][1], 0) > 0:
+            lost[pts[i][1]] -= 1
+            free.append(i)
+    if any(lost.values()) or len(free) != len(adds):
+        return None
+    want = list(pts)
+    for i, p in zip(sorted(free), adds):
+        want[i] = p
+    out, alloc = [], {}
+    while want:
+        for j, (_, n) in enumerate(want):
+            alloc[n] = alloc.get(n, 0) + 1
+            if space.ok_partial(alloc):
+                out.append(want.pop(j))
+                break
+            alloc[n] -= 1
+            if not alloc[n]:
+                del alloc[n]
+        else:
+            return None
+    return compress(out)
+
+
 # ------------------------------------------------------------------------------------------------ the polish
 def polish(cls, spec, r, model, pool, space, save, cfg=None):
     """Hill climb from the race's pick on the weighted time per kill at levels 40-60; returns (flat, order) when it moved, else None."""
@@ -125,9 +166,18 @@ def polish(cls, spec, r, model, pool, space, save, cfg=None):
     # (the current build's score does not change until then, so the scores compare; after a step none can beat the new build, whose
     # score was the lowest).
     pending, failed, twins = [], set(), 0
+    # 2026-11-15 (self-audit of the fl_fix_1115 queue): when the race's pick plays an order of its own (the previous record's winner or
+    # one of our builds, its order polished in an earlier run), each neighbour carries that order with the move applied (carry_order)
+    # instead of the stats model's order for it, which put every neighbour behind by the gap between the two orders: the 12 polishes in
+    # the logs that started from such a pick kept no step (75 of 169 from the stats model's order did), their best neighbour a median
+    # 2.4% slower against a median gap of 2.3% at 20-60 (the warlock's Destruction: 8.2% and 7.2%). A neighbour no legal path carries
+    # the order to gets the stats model's order as before; from the stats model's order nothing changes.
+    stats_ref = sig_order(cls, spec, {"allocation": r["winner"]["allocation"], "order": r.get("order_stats") or r["order"]})
+    carry = cur_b["order"] != stats_ref
+    carried, n_carried, n_stats = [], 0, 0   # the candidates whose order was carried (held, so `is` is safe)
     steps, t0 = [], time.time()
     log(f"== {cls} {spec}: 20-60 polish of the race's pick {space.split(cur)} (levels {', '.join(map(str, lv))}, batches of {cfg['batch']}, "
-        f"{cfg['fights']} fights, kept at {cfg['min_gain']:.1%} on a second seed)")
+        f"{cfg['fights']} fights, kept at {cfg['min_gain']:.1%} on a second seed" + ("; the neighbours carry its own order" if carry else "") + ")")
     for rnd in range(1, cfg["rounds"] + 1):
         nb, seen = [], set()
         for item in space.neighbours(cur, tier=True):
@@ -145,8 +195,19 @@ def polish(cls, spec, r, model, pool, space, save, cfg=None):
         nb = [x for _, x in nb]
         cands = []
         if nb:
-            orders = pool.map(FT.order_job, [(cls, model, x) for x in nb], chunksize=1)
-            cands = [{"allocation": alloc_of(space, x), "order": o} for x, o in zip(nb, orders) if o]
+            orders = [carry_order(cur_b["order"], cur, x, space) if carry else None for x in nb]
+            got = {i for i, o in enumerate(orders) if o is not None}
+            miss = [i for i in range(len(nb)) if i not in got]
+            if carry:
+                n_carried, n_stats = n_carried + len(got), n_stats + len(miss)
+            if miss:   # the stats model's order, computed in the pool (about 9 s a build)
+                for i, o in zip(miss, pool.map(FT.order_job, [(cls, model, nb[i]) for i in miss], chunksize=1)):
+                    orders[i] = o
+            for i, (x, o) in enumerate(zip(nb, orders)):
+                if o:
+                    cands.append({"allocation": alloc_of(space, x), "order": o})
+                    if i in got:
+                        carried.append(cands[-1])
             for c in cands:   # 2026-11-06 (page-audit K5): each neighbour's order with its signature talents as early as the tree allows
                 c["order"] = sig_order(cls, spec, c)
         if not cands and not pending:
@@ -182,8 +243,10 @@ def polish(cls, spec, r, model, pool, space, save, cfg=None):
     r["level_polish"] = {"date": FO.TODAY, "levels": lv, "from": space.split(FT.flat_of(r["winner"])), "steps": steps,
                          "neighbours_tried": len(tried) - 1, "twins_skipped": twins, "minutes": round((time.time() - t0) / 60, 1),
                          "changed": bool(steps)}
+    if carry:
+        r["level_polish"]["neighbour_orders"] = {"carried": n_carried, "stats model": n_stats}
     save()
-    return (cur, cur_b["order"]) if steps else None
+    return (cur, cur_b["order"], any(c is cur_b for c in carried)) if steps else None
 
 
 def pick_order(cls, spec, r, pool, space, save, before=None, model=None):
@@ -458,10 +521,15 @@ def after_race(cls, spec, r, model, trees, pool, space, ours, save, cfg=None, oc
               "order_stats": r["order_stats"]}
     moved = polish(cls, spec, r, model, pool, space, save, cfg)
     if moved:
-        flat, order = moved
+        flat, order, carried = moved
         r["winner"] = {"allocation": alloc_of(space, flat), "split": space.split(flat), "picked_by": "the 20-60 polish after the race"}
         r["order"] = order
-        r["order_stats"], r["order_stats_split"] = order, space.split(flat)   # order_job gave the polished build the stats model's order
+        if carried:   # the pick's own order carried through the moves: pick_order computes the stats model's for the new build
+            r["order_label"] = "carried"
+            r.pop("order_stats", None)
+            r.pop("order_stats_split", None)
+        else:
+            r["order_stats"], r["order_stats_split"] = order, space.split(flat)   # order_job gave the polished build the stats model's order
     choose_order(cls, spec, r, pool, space, save, before if moved else None, ocfg, model)
     changed = FT.flat_of(r["winner"]) != FT.flat_of(before)
     r["level_polish"]["changed"] = changed

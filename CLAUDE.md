@@ -978,7 +978,11 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   its levels once, and in both polishes a candidate that fails its confirmation stays out with its exact-score twins (a point on a
   talent the lab never uses scores bit-identically on every seed) while the rest of the batch waits its turn (`pending`; records
   `twins_skipped`, `orders_scored`): 323 of 414 unconfirmed order-polish rounds had re-tested a failed candidate, and its batches were
-  mostly duplicates (30 moves, 11 distinct builds). A changed winner gets new values and a new certificate
+  mostly duplicates (30 moves, 11 distinct builds). When the race's pick plays an order of its own (the previous record's winner,
+  our build), each polish neighbour carries that order through its move (`carry_order`, 2026-11-15; a legal list schedule repairs what
+  the move breaks) instead of the stats model's order for it: from such a pick every neighbour had started behind by the gap between
+  the two orders, and none of the 12 such polishes in the logs had kept a step (75 of 169 from the stats model's order did); records
+  `level_polish.neighbour_orders`, a kept carried order is labelled "carried". A changed winner gets new values and a new certificate
   (`ensure_order` re-races the orders after a certificate re-search; `orders_raced`). `fl_levels.py <class> --orders` redoes the order
   choice alone. Records `level_polish`, `order_polish`, `order_label` and `finalist <split> (<order>)` race rows. `_reference/data/low_priority.py
   <script> [args]` runs a post-hoc job at below-normal CPU priority next to the queue.
