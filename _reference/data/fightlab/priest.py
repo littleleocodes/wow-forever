@@ -35,6 +35,10 @@ TREE = json.load(open(ROOT / "_reference/data/forever-talents/priest.json", enco
 MENTAL_AGILITY_EXCLUDED = ("Shadow Word: Death",)
 # Inner Focus's crit leaves out Mind Flay and Shadow Word: Death (14751's crit modifier mask, same source); periodic effects never get it
 INNER_FOCUS_NO_CRIT = ("Mind Flay", "Shadow Word: Death")
+# Blackout procs from direct Shadow spells only: the client's proc mask for every rank (SpellAuraOptions 15268-15326, ProcTypeMask 87376,
+# client 70938) holds harmful spells and abilities but not periodic damage (0x40000), so Shadow Word: Pain, Devouring Plague and Mind
+# Flay ticks never stun (found by the duel lab; the user approved the fix 2026-11-14: "Yes"). True = the model before (ticks rolled it).
+BLACKOUT_TICKS = False
 
 NUM = re.compile(r"(\d+(?:\.\d+)?)")
 DMG = re.compile(r"(\d[\d,]*) to (\d[\d,]*) (\w+) damage")
@@ -166,7 +170,7 @@ SWD_BACKLASH = swd_backlash()
 
 MECHANICS = {
     "Shadow Focus": "+1% Shadow hit per rank",
-    "Blackout": "2% per rank: a Shadow damage hit or tick stuns the mob 3s",
+    "Blackout": "2% per rank: a direct Shadow damage hit stuns the mob 3s (ticks never: the client's proc mask, BLACKOUT_TICKS)",
     "Spirit Tap": "20%/rank chance on a kill: +100% Spirit for 15s and 50% regen while casting",
     "Improved Shadow Word: Pain": "+3s (one tick) per rank on Shadow Word: Pain (the tooltip's seconds)",
     "Shadow Reach": "+10%/rank Shadow range: longer pulls and a longer Mind Flay reach",
@@ -601,14 +605,14 @@ class PriestModule(BaseModule):
             p.hp -= back
             fight.note(f"Shadow Word: Death backlash {back:.0f}")
 
-    def shadow_hit(self, fight, spell, amount):
+    def shadow_hit(self, fight, spell, amount, direct=True):
         p, m, t, rng = fight.p, fight.m, fight.t, fight.rng
         if spell.school == "shadow" and self.rank("Shadow Weaving") and rng.random() < self.tv("Shadow Weaving", 0) / 100:
             b = m.debuffs.get("Shadow Weaving")   # on the mob since client 70425
             stacks = min(5, (b["stacks"] if b and b["until"] > t else 0) + 1)
             m.debuffs["Shadow Weaving"] = {"until": t + 15.0, "stacks": stacks}
         if amount > 0:
-            if self.rank("Blackout") and not m.stunned(t) and rng.random() < self.tv("Blackout", 0) / 100:
+            if self.rank("Blackout") and (direct or BLACKOUT_TICKS) and not m.stunned(t) and rng.random() < self.tv("Blackout", 0) / 100:
                 m.stun_until = t + 3.0
                 fight.note("Blackout stun")
             ve = m.debuffs.get("Vampiric Embrace")
@@ -619,7 +623,7 @@ class PriestModule(BaseModule):
 
     def on_tick(self, fight, spell, amount, crit):
         if amount > 0 and spell.school in ("shadow", "periodic") and spell.name not in ("Holy Fire",):
-            self.shadow_hit(fight, spell, amount)
+            self.shadow_hit(fight, spell, amount, direct=False)   # a dot's or a channel's tick: no Blackout (BLACKOUT_TICKS)
 
     def after_cast(self, fight, spell):
         p, t = fight.p, fight.t

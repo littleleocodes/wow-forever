@@ -80,6 +80,11 @@ MELEE = {"Raptor Strike", "Mongoose Bite", "Wing Clip", "Counterattack", "Stride
 LS_BLEED = "Lacerating Strikes"
 RANGED = {"Arcane Shot", "Multi-Shot", "Aimed Shot", "Serpent Sting", "Concussive Shot", "Scatter Shot", "Sniper Shot", "Summon Hawk", "Scorpid Sting", "Viper Sting"}
 TRAPS = ("Immolation Trap", "Explosive Trap")
+# Predator's Edge's off-hand bonus is a damage modifier on the whole off-hand hit (its aura, A_MOD_OFFHAND_DAMAGE_PCT, as the raid simulator
+# applies it: weapon damage, attack power and weapon DPS bonuses alike), applied in damage_multiplier. False = the model before: the
+# off-hand weapon's own damage range scaled, the attack power part of the hit not (the off hand read about 20% low for a melee Survival
+# hunter; found 2026-11-14 comparing a guildmate's swords with a two-hander; the user approved the fix: "Yes").
+PE_WHOLE_HIT = True
 # Every trap shares one 30 s cooldown since client 70753 (Blizzard's 2 Nov notes: "All types of Hunter traps now have the same shared 30 second
 # cooldown"; the fire traps had shared theirs before). Only Immolation Trap is cast (the melee hunter), so the frost traps change nothing here.
 ALL_TRAPS = ("Immolation Trap", "Explosive Trap", "Freezing Trap", "Frost Trap")
@@ -250,8 +255,8 @@ MECHANICS = {
     "Survivalist": "+2%/rank health",
     "Surefooted": "+1%/rank hit",
     "Lightning Reflexes": "+3%/rank Agility",
-    "Predator's Edge": ("+6%/rank crit damage on melee abilities and +10%/rank off-hand weapon damage (the client's class mask, as the raid "
-                        "simulator reads it: no auto attacks)"),
+    "Predator's Edge": ("+6%/rank crit damage on melee abilities (the client's class mask, as the raid simulator reads it: no auto attacks) "
+                        "and +10%/rank damage on the whole off-hand hit (PE_WHOLE_HIT)"),
     "Expose Prey": ("5%/rank per landed melee or ranged attack of yours on a target with your Hunter's Mark: Mongoose Bite usable for 10 s "
                     "(a dodge opens it for 5 s); the melee list marks the mob in a free global cooldown when the build has the talent "
                     "(the tuned rules veto the mark: it measured slower per kill even with Expose Prey)"),
@@ -421,7 +426,7 @@ class HunterModule(BaseModule):
         if self.is_melee():   # a melee hunter dual-wields one-handers (Predator's Edge: +10%/rank off-hand damage) under Aspect of the Beast
             mdps = weapon_dps(level, "1h")
             p.mh = Weapon(dmg_min=mdps * WEAPON_SPEED["1h"] * 0.8, dmg_max=mdps * WEAPON_SPEED["1h"] * 1.2, speed=WEAPON_SPEED["1h"], kind="1h")
-            oh = 1 + self.tv("Predator's Edge", 1, 0.0) / 100
+            oh = 1.0 if PE_WHOLE_HIT else 1 + self.tv("Predator's Edge", 1, 0.0) / 100   # PE_WHOLE_HIT: the bonus is damage_multiplier's
             p.oh = Weapon(dmg_min=mdps * WEAPON_SPEED["1h"] * 0.8 * oh, dmg_max=mdps * WEAPON_SPEED["1h"] * 1.2 * oh, speed=WEAPON_SPEED["1h"], kind="1h")
             beast = self.book.get("Aspect of the Beast")   # rank by level: +50/70/90/110 melee attack power from 30/40/50/60; none before 30
             p.attack_power += getattr(beast, "map", 0.0) if beast is not None else 0.0
@@ -507,6 +512,8 @@ class HunterModule(BaseModule):
             m *= 1 + self.tv("Lone Wolf", 0) / 100
         if spell.name == "Summon Hawk":   # the dive bomb and the hawk's swings: Unleashed Fury ("pets and hawks"), no Ranged Weapon Specialization
             return m * (1 + self.tv("Unleashed Fury", 0) / 100)
+        if PE_WHOLE_HIT and (spell.name == "Melee (off-hand)" or getattr(spell, "hand", "mh") == "oh"):
+            m *= 1 + self.tv("Predator's Edge", 1, 0.0) / 100   # the whole off-hand hit (PE_WHOLE_HIT)
         if spell.kind == "ranged" or spell.name == "Auto Shot":
             m *= 1 + self.tv("Ranged Weapon Specialization", 0) / 100
         if spell.name in ("Multi-Shot", "Aimed Shot"):

@@ -43,7 +43,8 @@
   ],
   "merge_notes": [
     "Elemental: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: Elemental Mastery, Lava Burst; only in the export: Call of Thunder, Lightning Mastery; moved or re-capped: none); the export's positions, rank caps and prerequisites used for this tree",
-    "Enhancement: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: none; only in the export: none; moved or re-capped: Improved Ghost Wolf); the export's positions, rank caps and prerequisites used for this tree"
+    "Enhancement: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: none; only in the export: none; moved or re-capped: Improved Ghost Wolf); the export's positions, rank caps and prerequisites used for this tree",
+    "live hotfix numbers of 2026-11-10 written into Stormstrike, Maelstrom Weapon (hotfix_text.py; source https://us.forums.blizzard.com/en/wow/t/2403040; applied 2026-11-15)"
   ],
   "trees": [
     {
@@ -756,7 +757,7 @@
           "icon": "ability_shaman_stormstrike",
           "maxRank": 1,
           "ranks": [
-            "Instantly strike for 150% normalized weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec."
+            "Instantly strike for 100% normalized weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec."
           ],
           "status": "changed",
           "classic": [
@@ -771,7 +772,19 @@
             "tooltip changed",
             "was Enhancement row 7, col 2",
             "tooltip changed in build 1.60.1.70753 (ranks 1)"
-          ]
+          ],
+          "hotfix": {
+            "date": "2026-11-10",
+            "sources": [
+              "https://us.forums.blizzard.com/en/wow/t/2403040"
+            ],
+            "ranks": [
+              1
+            ],
+            "before": {
+              "1": "Instantly strike for 150% normalized weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec."
+            }
+          }
         },
         {
           "id": "enhancement/improved-ghost-wolf",
@@ -851,15 +864,33 @@
           "icon": "spell_shaman_maelstromweapon",
           "maxRank": 5,
           "ranks": [
-            "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 4%. Stacks up to 5 times. Lasts 30 sec.",
-            "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 8%. Stacks up to 5 times. Lasts 30 sec.",
-            "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 12%. Stacks up to 5 times. Lasts 30 sec.",
-            "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 16%. Stacks up to 5 times. Lasts 30 sec.",
+            "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 20%. Stacks up to 5 times. Lasts 30 sec.",
+            "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 20%. Stacks up to 5 times. Lasts 30 sec.",
+            "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 20%. Stacks up to 5 times. Lasts 30 sec.",
+            "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 20%. Stacks up to 5 times. Lasts 30 sec.",
             "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 20%. Stacks up to 5 times. Lasts 30 sec."
           ],
           "status": "new",
           "evidence": "shaman/33-shaman-enhancement-maelstrom-weapon.jpg",
-          "diff": []
+          "diff": [],
+          "hotfix": {
+            "date": "2026-11-10",
+            "sources": [
+              "https://us.forums.blizzard.com/en/wow/t/2403040"
+            ],
+            "ranks": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "before": {
+              "1": "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 4%. Stacks up to 5 times. Lasts 30 sec.",
+              "2": "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 8%. Stacks up to 5 times. Lasts 30 sec.",
+              "3": "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 12%. Stacks up to 5 times. Lasts 30 sec.",
+              "4": "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 16%. Stacks up to 5 times. Lasts 30 sec."
+            }
+          }
         },
         {
           "id": "enhancement/rage-of-the-farseer",

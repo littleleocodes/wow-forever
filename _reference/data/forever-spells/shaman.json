@@ -2631,7 +2631,7 @@
       {
        "rank": "",
        "id": 17364,
-       "text": "Instantly strike for 150% normalized weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec.",
+       "text": "Instantly strike for 100% normalized weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2639,7 +2639,7 @@
        "cost": "8% of base mana",
        "range": "Melee Range",
        "cast": "Instant",
-       "cooldown": "6 sec cooldown",
+       "cooldown": "8 sec cooldown",
        "requires": "",
        "level": 25,
        "not_from_class_trainer": "talent-taught",
@@ -2651,6 +2651,21 @@
         "classic_cast": "Instant",
         "classic_cooldown": "20 sec cooldown",
         "change_kind": "reworded"
+       },
+       "hotfix": {
+        "date": "2026-11-10",
+        "sources": [
+         "https://us.forums.blizzard.com/en/wow/t/2403040"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Instantly strike for 150% normalized weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec.",
+          "cooldown": "6 sec cooldown"
+         }
+        }
        }
       }
      ]

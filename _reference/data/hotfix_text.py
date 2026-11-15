@@ -21,7 +21,14 @@ def _sub(pat, rep):
     return lambda i, s: re.sub(pat, lambda m: rep(i, m), s, count=1)
 
 
-# (class, talent) -> [edits applied to every rank's text]
+# 2026-11-10 (live 2026-11-12): Blizzard's hotfix thread, the 10 Nov section ("Stormstrike damage reduced to 100% weapon damage (was
+# 150%), and cooldown increased to 8 seconds (was 6 seconds)"; Maelstrom Weapon "activates 6/7/8/9/10 times per minute ... (was 20 times
+# per minute regardless of rank)" and "20% reduced cast time and Mana cost per application at all ranks"). Server-side: no client table
+# carries it, so neither the export nor live_spells.py reads it. Applied 2026-11-15 (the user approved the fight-lab fixes: "Yes"). The
+# proc rate is fightlab/shaman.py's MW_PPM_BY_RANK (the tooltip says "a chance").
+SHAMAN_1110 = ("2026-11-10", ["https://us.forums.blizzard.com/en/wow/t/2403040"])
+
+# (class, talent) -> [edits applied to every rank's text], or ([edits], (date, sources)) for a hotfix of its own date
 # 2026-10-31: talentsforever's export of 30 Oct (launch build 70685 = client 70630 + the hotfixes of 28 and 30 Oct) carries every
 # number below that was listed here (druid Genesis, Naturalist, Leader of the Pack, Moonkin Form; paladin Boundless Light; mage Ice
 # Barrier, Winter's Chill, Arctic Reach; spells: Ice Lance 300% and its 8 s cooldown on every rank, Shadow Word: Death's 30% backlash,
@@ -32,6 +39,9 @@ TALENTS = {
     ("paladin", "Oath of Light"): [_sub(r"Holy Light on them by up to \d+, your Flash of Light by up to \d+, and your Holy Shock by up to \d+"
                                         r"|Holy Light, Flash of Light, and Holy Shock on them",
                                         lambda i, m: "Holy Light on them by up to 400, your Flash of Light by up to 115, and your Holy Shock by up to 229")],
+    ("shaman", "Stormstrike"): ([_sub(r"strike for 150% normalized weapon damage", lambda i, m: "strike for 100% normalized weapon damage")],
+                                SHAMAN_1110),
+    ("shaman", "Maelstrom Weapon"): ([_sub(r"Lightning Bolt spell by \d+%", lambda i, m: "Lightning Bolt spell by 20%")], SHAMAN_1110),
 }
 
 
@@ -52,6 +62,8 @@ SPELLS = {
     ("hunter", "Arcane Shot"): ([_per_rank(r"causes (\d+) Arcane damage", [25, 35, 50, 85, 120, 175, 220, 280])], {}, HUNTER_1103),
     ("hunter", "Serpent Sting"): ([_per_rank(r"causing (\d+) Nature damage", [15, 35, 70, 130, 200, 290, 375, 500, 675])], {}, HUNTER_1103),
     ("hunter", "Sniper Shot"): ([_per_rank(r"ranged damage plus (\d+)", [320, 450, 590])], {}, HUNTER_1103),
+    ("shaman", "Stormstrike"): ([_sub(r"strike for 150% normalized weapon damage", lambda i, m: "strike for 100% normalized weapon damage")],
+                                {"cooldown": "8 sec cooldown"}, SHAMAN_1110),
 }
 
 
@@ -70,12 +82,15 @@ def apply_talents(cls, obj):
             eds = TALENTS.get((cls, t["name"]))
             if not eds:
                 continue
+            date, sources = None, None
+            if isinstance(eds, tuple):
+                eds, (date, sources) = eds
             for i, s in enumerate(t["ranks"]):
                 new = s
                 for e in eds:
                     new = e(i, new)
                 if new != s:
-                    _mark(t, i, s)
+                    _mark(t, i, s, date, sources)
                     t["ranks"][i] = new
             if t.get("hotfix"):
                 out.append(t["name"])

@@ -963,6 +963,8 @@ class Fight:
         return p.pool(spell.resource) >= cost
 
     def start_cast(self, spell):
+        """The global cooldown runs to the later of its current end and this spell's: an off-GCD spell (tables.OFF_GCD) cast inside a
+        running one keeps it (2026-11-15; before, every cast set it to now + its own, so a 0 would have cut a running one short)."""
         p = self.p
         cast = self.mod.cast_time(spell)
         cost = self.mod.mana_cost(spell)
@@ -973,7 +975,7 @@ class Fight:
             return True
         if spell.channel > 0:
             self.spend(cost, spell)
-            p.gcd_until = self.t + self.mod.gcd_of(spell)
+            p.gcd_until = max(p.gcd_until, self.t + self.mod.gcd_of(spell))
             self.casting = None
             self.wanding = False
             interval = spell.channel / max(1, spell.dot_ticks)
@@ -993,14 +995,14 @@ class Fight:
             return True
         if cast <= 0:
             self.spend(cost, spell)
-            p.gcd_until = self.t + self.mod.gcd_of(spell)
+            p.gcd_until = max(p.gcd_until, self.t + self.mod.gcd_of(spell))
             self.resolve_spell(spell)
             self.mod.after_cast(self, spell)
             return True
         self.casting = (spell, self.t + cast, self.t)
         self.cast_hits = 0
         self.wanding = False
-        p.gcd_until = self.t + self.mod.gcd_of(spell)
+        p.gcd_until = max(p.gcd_until, self.t + self.mod.gcd_of(spell))
         return True
 
     def spend(self, cost, spell):

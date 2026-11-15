@@ -391,14 +391,20 @@ def totals_with(cls, alloc, level, rot, bonus):
 _TT = {}
 
 
-def lab_offhand_fix(cls, alloc):
-    """The factor a hunter's measured off-hand weapon DPS value takes (2026-11-14). The fight lab applies Predator's Edge's off-hand
-    bonus to the off-hand weapon's own damage only (hunter.make_player), so a measured point of off-hand DPS (GEAR_BONUS's dps_bonus)
-    carries none of it. The game's aura (A_MOD_OFFHAND_DAMAGE_PCT) and the raid simulator scale the whole off-hand hit. Until the lab
-    is fixed (_reference/pvp-plan.md, fight-lab issues), the value is scaled by 1 + the build's Predator's Edge fraction at that
-    level, which is what the offhand_pct talent transform expects inside it. Warriors and rogues need nothing: their Dual Wield
-    Specialization already multiplies the whole off-hand hit in the lab."""
+PE_WHOLE_HIT_SINCE = "2026-11-15"   # fightlab/hunter.py PE_WHOLE_HIT: off-hand values measured from this date carry Predator's Edge
+
+
+def lab_offhand_fix(cls, alloc, w=None):
+    """The factor a hunter's measured off-hand weapon DPS value takes (2026-11-14). Until 2026-11-15 the fight lab applied Predator's
+    Edge's off-hand bonus to the off-hand weapon's own damage only (hunter.make_player), so a measured point of off-hand DPS
+    (GEAR_BONUS's dps_bonus) carried none of it; the game's aura (A_MOD_OFFHAND_DAMAGE_PCT) and the raid simulator scale the whole
+    off-hand hit. Such a value is scaled by 1 + the build's Predator's Edge fraction at that level, which is what the offhand_pct talent
+    transform expects inside it. Since 2026-11-15 the lab applies the bonus to the whole hit (hunter.PE_WHOLE_HIT): a value measured from
+    then on (w: the weight file; its off-hand DPS's date in `added`, else the file's date) needs nothing. Warriors and rogues need
+    nothing: their Dual Wield Specialization already multiplies the whole off-hand hit in the lab."""
     if cls != "hunter":
+        return 1.0
+    if w is not None and ((w.get("added") or {}).get("oh_weapon_dps") or w.get("date", "")) >= PE_WHOLE_HIT_SINCE:
         return 1.0
     if cls not in _TT:
         _TT[cls] = next((t for t in talent_transforms(cls) if t["talent"] == "Predator's Edge"), None)
@@ -430,7 +436,7 @@ def leveling(cls):
         for L, row in sorted(w["levels"].items(), key=lambda kv: int(kv[0])):
             alloc = FR.allocation_at({"allocation": b["allocation"], "order": order}, int(L))
             v = {k: max(0.0, x) for k, x in row["weights"].items()}
-            ohf = lab_offhand_fix(cls, alloc)
+            ohf = lab_offhand_fix(cls, alloc, w)
             if "oh_weapon_dps" in v:
                 v["oh_weapon_dps"] *= ohf
             share, totals, melee = level_info(cls, alloc, int(L), rot)
@@ -452,7 +458,7 @@ def leveling(cls):
                 rb = wb["levels"][L]
                 vb = {k: max(0.0, x) for k, x in rb["weights"].items()}
                 if "oh_weapon_dps" in vb:
-                    vb["oh_weapon_dps"] *= ohf
+                    vb["oh_weapon_dps"] *= lab_offhand_fix(cls, alloc, wb)
                 if vb.get("spell_power"):
                     for sch, x in share.items():
                         vb[f"{sch}_damage"] = vb["spell_power"] * x

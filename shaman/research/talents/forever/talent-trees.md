@@ -99,7 +99,7 @@
 |---|---|---|---|---|---|
 | **Toughness** | 5 | — | changed | Increases your Stamina by 2%. | Increases your Stamina by 10%. |
 | **Flurry** | 5 | Mental Dexterity (3) | changed | Increases your attack speed by 6% for your next 3 swings after dealing a melee critical strike. | Increases your attack speed by 30% for your next 3 swings after dealing a melee critical strike. |
-| **Stormstrike** | 1 | — | changed | Instantly strike for 150% normalized weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec. | — |
+| **Stormstrike** | 1 | — | changed | Instantly strike for 100% normalized weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec. | — |
 | **Improved Ghost Wolf** | 2 | — | changed | Reduces the cast time of your Ghost Wolf spell by 1.0 sec, and Ghost Wolf may be used indoors. | Reduces the cast time of your Ghost Wolf spell by 3.0 sec, and Ghost Wolf may be used indoors. |
 
 ### Tier 5 — requires 20 points in Enhancement
@@ -114,7 +114,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Maelstrom Weapon** | 5 | — | **NEW** | When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 4%. Stacks up to 5 times. Lasts 30 sec. | When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 20%. Stacks up to 5 times. Lasts 30 sec. |
+| **Maelstrom Weapon** | 5 | — | **NEW** | When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 20%. Stacks up to 5 times. Lasts 30 sec. | When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 20%. Stacks up to 5 times. Lasts 30 sec. |
 
 ### Tier 7 — requires 30 points in Enhancement
 
@@ -232,7 +232,7 @@ Only talents whose tooltip differs from Classic are listed. Text is rank 1 unles
   - Forever: Increases your attack speed by 6% for your next 3 swings after dealing a melee critical strike.
 - **Stormstrike** (tooltip changed, was Enhancement row 7, col 2, tooltip changed in build 1.60.1.70753 (ranks 1))
   - Classic: Gives you an extra attack. In addition, the next 2 sources of Nature damage dealt to the target are increased by 20%. Lasts 12 sec.
-  - Forever: Instantly strike for 150% normalized weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec.
+  - Forever: Instantly strike for 100% normalized weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec.
 - **Improved Ghost Wolf** (tooltip changed, moved in build 1.60.1.70753: was row 2, col 3)
   - Classic: Reduces the cast time of your Ghost Wolf spell by 1 sec.
   - Forever: Reduces the cast time of your Ghost Wolf spell by 1.0 sec, and Ghost Wolf may be used indoors.

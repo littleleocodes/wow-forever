@@ -172,8 +172,12 @@ FEAR_BREAK_CHANCE = 0.20      # chance that a damaging hit breaks a fear (Psychi
 GCD = 1.5
 # Per-spell global cooldowns from the client data (audit of 2026-10-18 row 68): rogue abilities, cat-form abilities, totems and Hammer of
 # Wrath are 1.0 s (`spell_gcd.json`, written by spell_gcd.py from the raid simulator's spell store, GCDMs). SPELL_GCD_TABLE = False
-# restores 1.5 s for everything. Spells the store marks off the global cooldown are listed there but not applied (not checked per module).
+# restores 1.5 s for everything. The spells the store marks off the global cooldown (its "off_gcd" lists: Judgement, Bloodrage, the
+# stances, Sweeping Strikes, Cold Blood, Presence of Mind, Rapid Fire, Nature's Swiftness ...) trigger none since 2026-11-14 (they had
+# cost 1.5 s: found by the duel lab; the user approved the fix: "Yes"). OFF_GCD = False is the model before. The engine keeps a running
+# global cooldown when an off-GCD spell is cast inside it (start_cast takes the later end).
 SPELL_GCD_TABLE = True
+OFF_GCD = True
 _SPELL_GCD_FILE = pathlib.Path(__file__).resolve().parent / "spell_gcd.json"
 _SPELL_GCD = json.load(open(_SPELL_GCD_FILE, encoding="utf-8")) if _SPELL_GCD_FILE.exists() else {"gcd": {}}   # missing: 1.5 s for all
 
@@ -181,6 +185,8 @@ _SPELL_GCD = json.load(open(_SPELL_GCD_FILE, encoding="utf-8")) if _SPELL_GCD_FI
 def spell_gcd(cls, name):
     """The global cooldown a spell triggers, by class and spell name."""
     if SPELL_GCD_TABLE:
+        if OFF_GCD and name in _SPELL_GCD.get("off_gcd", {}).get(cls, ()):
+            return 0.0
         v = _SPELL_GCD["gcd"].get(cls, {}).get(name)
         if v is not None:
             return v

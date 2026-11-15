@@ -67,8 +67,10 @@ def sor_hit(seal, level, speed, two_hand):
 
 
 TALENT_SPELLS = {"Seal of Command": "Seal of Command", "Repentance": "Repentance", "Holy Shock": "Holy Shock", "Light's Vigil": "Light's Vigil",
-                 "Divine Favor": "Divine Favor", "Voice of Truth": "Voice of Truth", "Swift Judgement": "Swift Judgement", "Templar's Bulwark": "Templar's Bulwark",
+                 "Divine Favor": "Divine Favor", "Swift Judgement": "Swift Judgement", "Templar's Bulwark": "Templar's Bulwark",
                  "Holy Shield": "Holy Shield"}
+# Voice of Truth left this list 2026-11-15: a level-20 trainer spell since client 70753, no longer a talent, so the list had dropped it from
+# every build (found by the duel lab, which had added it back; the user approved the fix: "Yes"). The leveling rotation never casts it.
 SEALS = ("Seal of Command", "Seal of Righteousness", "Seal of the Crusader", "Seal of Light", "Seal of Wisdom", "Seal of Justice", "Seal of Fury")
 
 
@@ -717,8 +719,7 @@ class PaladinModule(BaseModule):
                     p.mana = min(p.mana_max, p.mana + self.tv("Sanctified Judgement", 1) / 100 * self.mana_cost(seal))
         if spell.name == "Holy Strike" and self.rank("Sacred Arbiter"):
             pass
-        if spell.name == "Hammer of Justice":
-            m.stun_until = max(m.stun_until, t + spell.stun)
+        # Hammer of Justice: its stun is the engine's (apply_control, right after this hook); the module had set it a second time
         if spell.name == "Divine Protection":
             p.buffs["Divine Protection"] = {"until": t + 8.0}
         if spell.name == "Lay on Hands":
@@ -1089,9 +1090,7 @@ class PaladinModule(BaseModule):
             return True
         if name == "Holy Strike" and self.rf and self.rank("Iron Creed"):
             p.buffs["Iron Creed"] = {"until": t + 6.0}
-        elif name == "Hammer of Justice":
-            m.stun_until = max(m.stun_until, t + spell.stun)
-        elif name == "Divine Protection":
+        elif name == "Divine Protection":   # (Hammer of Justice's stun: the engine's apply_control, as in on_hit)
             p.buffs["Divine Protection"] = {"until": t + 8.0}
             p.buffs["Forbearance"] = {"until": t + 60.0}
         elif name == "Templar's Bulwark":

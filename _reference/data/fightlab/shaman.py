@@ -213,7 +213,7 @@ MECHANICS = {
     "Anticipation": "+2%/rank dodge",
     "Toughness": "+2%/rank Stamina",
     "Flurry": "crits: +6%/rank attack speed for the next 3 swings (70753; 5% before)",
-    "Stormstrike": "unlocks Stormstrike (150% normalized weapon damage, +20% on the next Lightning Bolt / Chain Lightning / Earth Shock, 6 s cooldown: 70753)",
+    "Stormstrike": "unlocks Stormstrike (100% normalized weapon damage, +20% on the next Lightning Bolt / Chain Lightning / Earth Shock, 8 s cooldown: the 2026-11-10 hotfix; 150% and 6 s from 70753)",
     "Spirit Weapons": "+5% parry",
     "Mental Quickness": "+15%/rank of Intellect as spell damage",
     "Improved Stormstrike": "Stormstrike: a 50%/rank chance of 50% mana regen while casting for 15 s; a 50%/rank chance to reset Stormstrike when you dodge or parry",
@@ -251,7 +251,7 @@ FIT = {
 }
 SHARE_SOURCE = {'Chain Lightning': 'chain_lightning', 'Fire Nova': 'fire_nova', 'Magma Totem': 'magma', "Melee": "white", "Windfury": "windfury", "Earth Shock": "earth_shock", "Lightning Bolt": "lightning_bolt", "Flame Shock": "flame_shock",
                 "Lightning Shield": "lightning_shield", "Stormstrike": "stormstrike", "Searing Totem": "searing_totem", "Flametongue Weapon": "rockbiter"}
-NEW_SOURCES = {'chain_lightning': {'id': 'chain_lightning', 'share': 0.0, 'min_level': 32, 'tags': ['type:spell', 'school:nature', 'aoe', 'ability:Chain Lightning', 'enh-nature'], 'cast': 2.5, 'min_cast': 2.0}, 'fire_nova': {'id': 'fire_nova', 'share': 0.0, 'min_level': 12, 'tags': ['type:spell', 'school:fire', 'instant', 'aoe', 'ability:Fire Nova', 'ability:Fire Nova Totem', 'totem']}, 'magma': {'id': 'magma', 'share': 0.0, 'min_level': 26, 'tags': ['type:spell', 'school:fire', 'dot', 'aoe', 'ability:Magma Totem', 'totem']}, "stormstrike": {"id": "stormstrike", "share": 0.0, "min_level": 25, "tags": ["type:melee", "yellow", "school:physical", "ability:Stormstrike", "weapon:2h"], "cooldown": 6},
+NEW_SOURCES = {'chain_lightning': {'id': 'chain_lightning', 'share': 0.0, 'min_level': 32, 'tags': ['type:spell', 'school:nature', 'aoe', 'ability:Chain Lightning', 'enh-nature'], 'cast': 2.5, 'min_cast': 2.0}, 'fire_nova': {'id': 'fire_nova', 'share': 0.0, 'min_level': 12, 'tags': ['type:spell', 'school:fire', 'instant', 'aoe', 'ability:Fire Nova', 'ability:Fire Nova Totem', 'totem']}, 'magma': {'id': 'magma', 'share': 0.0, 'min_level': 26, 'tags': ['type:spell', 'school:fire', 'dot', 'aoe', 'ability:Magma Totem', 'totem']}, "stormstrike": {"id": "stormstrike", "share": 0.0, "min_level": 25, "tags": ["type:melee", "yellow", "school:physical", "ability:Stormstrike", "weapon:2h"], "cooldown": 8},
                "searing_totem": {"id": "searing_totem", "share": 0.0, "min_level": 10, "tags": ["type:spell", "school:fire", "ability:Searing Totem", "ability:Fire Totems", "totem"], "can_crit": True}}
 KEY_TALENTS = ["Stormstrike", "Flurry", "Maelstrom Weapon"]
 DESCRIPTION = ("Single-target leveling fights against normal mobs of your level with a slow two-hander: Lightning Shield (Water Shield when talented and mana is low) and "
@@ -283,6 +283,11 @@ SEARING_INTERVAL = 2.435
 # rate x weapon speed / 60, capped at 1 (1.13 with the lab's 3.4 s two-hander at 5/5: every landed hit; 0.57 before 2026-11-03). The fight
 # lab used 4% a hit per point until 2026-10-09.
 MW_PPM_PER_POINT = 4.0
+# Blizzard's hotfix of 2026-11-10 (live 11-12, hotfix_text.SHAMAN_1110): "activates 6/7/8/9/10 times per minute" by rank, "(was 20 times
+# per minute regardless of rank)"; its tooltip example, 60% a hit with a 3.6 s weapon at 5 points, is 10 a minute. MW_HOTFIX_1110 = False
+# is the model before (MW_PPM_PER_POINT). The cut per stack is the tooltip's (20% at every rank since the same hotfix).
+MW_HOTFIX_1110 = True
+MW_PPM_BY_RANK = (0.0, 6.0, 7.0, 8.0, 9.0, 10.0)
 
 
 class ShamanModule(BaseModule):
@@ -405,8 +410,14 @@ class ShamanModule(BaseModule):
         return cost
 
     def mw_per_stack(self):
-        """Maelstrom Weapon's cut per stack (the tooltip's 4/8/12/16/20%; a flat 20% per stack at every rank until 2026-10-09)."""
+        """Maelstrom Weapon's cut per stack (the tooltip's: 20% at every rank since the 2026-11-10 hotfix; 4/8/12/16/20% from 2026-10-09 to
+        it, a flat 20% before)."""
         return self.tv("Maelstrom Weapon", 0) / 100
+
+    def mw_ppm(self):
+        """Maelstrom Weapon's procs a minute: MW_PPM_BY_RANK since the 2026-11-10 hotfix (MW_HOTFIX_1110), else MW_PPM_PER_POINT a point."""
+        r = self.rank("Maelstrom Weapon")
+        return MW_PPM_BY_RANK[min(r, 5)] if MW_HOTFIX_1110 else MW_PPM_PER_POINT * r
 
     def fire_totem_up(self, t):
         ft = self.fire_totem
@@ -567,7 +578,7 @@ class ShamanModule(BaseModule):
             elif getattr(imb, "ft_max", 0.0):
                 dmg = fight.rng.uniform(imb.ft_min, imb.ft_max) * (1 + self.tv("Elemental Weapons", 2) / 100)
                 fight.deal(Spell("Flametongue Weapon", "fire"), dmg, False)
-        if self.rank("Maelstrom Weapon") and fight.rng.random() < min(1.0, MW_PPM_PER_POINT * self.rank("Maelstrom Weapon") * p.mh.speed / 60.0):
+        if self.rank("Maelstrom Weapon") and fight.rng.random() < min(1.0, self.mw_ppm() * p.mh.speed / 60.0):
             b = p.buffs.get("Maelstrom Weapon")
             stacks = min(5, (b["stacks"] if b and b["until"] > t else 0) + 1)
             p.buffs["Maelstrom Weapon"] = {"until": t + 30.0, "stacks": stacks}

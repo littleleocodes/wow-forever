@@ -117,6 +117,21 @@ necessary").
     - the means: priest 80%, paladin 77%, hunter 63%, shaman 60%, warlock 51%, mage 45%, warrior 38% -> 32%, druid 26%, rogue 16%.
     - The matrix stays lopsided. Next: a second pass over the remaining extremes (the rogue's and the druid's losses, the priest's
       and paladin's wins), mirror matchups, then the searches.
+- 2026-11-15, the fight-lab issues below fixed (user: "Yes"). Each fix has a switch to the model before, and with every switch off
+  every class reproduces the old numbers exactly. The shaman's data change has no switch.
+  - Global cooldown: `tables.OFF_GCD`, and the engine keeps a running global cooldown.
+  - Stormstrike and Maelstrom Weapon: the 11-10 hotfix through `hotfix_text.SHAMAN_1110`, `shaman.MW_PPM_BY_RANK` and
+    `MW_HOTFIX_1110`.
+  - Blackout: `priest.BLACKOUT_TICKS`.
+  - Hammer of Justice: the duplicate removed; it did not change a number.
+  - Voice of Truth: back in the paladin's spellbook; the leveling rotation never casts it.
+  - Predator's Edge: `hunter.PE_WHOLE_HIT`.
+  - Effect at levels 20-60 before any re-tuning (time per kill):
+    - Enhancement shaman +7% to +10% slower;
+    - warrior -3% to +2%, paladin up to -2.8%, melee hunter -0.5% to -2.3%;
+    - priest +2% to +3% at 20; mage -4.7% to +1.7%; rogue within 1%;
+    - warlock and druid unchanged.
+  - The seven classes' rules re-tuned and their leveling searches raced again: `deep-runs/fl_fix_1115.sh`.
 - Fight-lab issues found on the way (they affect the leveling and raid pages; for the user to decide):
   - off-GCD spells cost a 1.5 s GCD;
   - the 2026-11-12 Stormstrike and Maelstrom Weapon hotfix is server-side and not in forever-spells;

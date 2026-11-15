@@ -72,17 +72,6 @@ def set_gear(tier):
         _GEAR["tier"] = tier
 
 
-_OFF = {}
-
-
-def off_gcd(cls):
-    """Spells of the class that trigger no global cooldown (fightlab/spell_gcd.json "off_gcd": the raid simulator's GCDMs)."""
-    if not _OFF:
-        import json
-        _OFF.update({k: set(v) for k, v in json.load(open(FL / "spell_gcd.json", encoding="utf-8")).get("off_gcd", {}).items()})
-    return _OFF.get(cls, set())
-
-
 class Body:
     """A side as the other side's module sees it: the mob-shaped view the fight lab's hooks read and write. Health, armor, distance,
     slows, roots, stuns, fears, debuffs and dots are the side's own live state; control set through it gets diminishing returns."""
@@ -352,10 +341,8 @@ class Side:
         self.alloc = alloc
         self.mod = FR.make_module(cls, alloc, 60, spec)
         self.mod.veto = {}                      # the leveling rotation's tuned vetoes are PvE rules
-        off = off_gcd(cls)
-        if off:   # the fight lab's tables.spell_gcd reads only the "gcd" list: off-GCD spells cost 1.5 s there (2026-11-14, not changed there)
-            orig = self.mod.gcd_of
-            self.mod.gcd_of = lambda s, _o=orig, _off=off: 0.0 if s.name in _off else _o(s)
+        # off-GCD spells (spell_gcd.json's "off_gcd") cost no global cooldown: the fight lab's own rule since 2026-11-15 (tables.OFF_GCD);
+        # this side had wrapped gcd_of for it until then
         self.p = self.mod.make_player(60)
         self.body = Body(self)
         self.pet_body = PetBody(self)
