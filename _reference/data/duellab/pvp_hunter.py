@@ -35,7 +35,8 @@ cannot outrun it (rooted, or no faster), Concussive Shot on one coming in; kitin
 stutter-stepping from a slowed one; no Aimed or Sniper Shot cast with a free melee closer than 22 yards (12 when it is slowed); Deterrence
 below half health with a melee on the hunter; the trinket on a root or slow with a melee close and no other answer ready. Against any
 opponent: Feign Death on a seen control cast, Scatter Shot (15 yards) or Intimidation on a control or heal cast; Viper Sting on a mana
-user above 30% mana when Serpent Sting is not running; Bestial Wrath on cooldown. The Survival build closes in, Wing Clips a free
+user above 30% mana when Serpent Sting is not running and its drain is a quarter of the foe's pool or more (the self-healers with small
+pools; validation pass 2, want_viper); Bestial Wrath on cooldown. The Survival build closes in, Wing Clips a free
 opponent and Concussive Shots one that runs; its rotation does the rest.
 
 Not modelled: the opponent cannot attack, slow, control or dispel the pet (the engine never targets pets); aspect swaps (Aspect of the
@@ -63,6 +64,7 @@ FREEZE = {"Freezing Trap", "Scatter Shot"}   # this layer's controls that damage
 OFF_GCD = {"Feign Death", "Deterrence", "Bestial Wrath", "Rapid Fire"}   # the client's own (fightlab/spell_gcd.json off_gcd)
 CC_CASTS = {"Polymorph", "Fear", "Howl of Terror", "Seduction", "Hibernate", "Mind Control", "Entangling Roots", "Scare Beast"}
 MANA_FOES = {"mage", "priest", "warlock", "druid", "shaman", "paladin", "hunter"}
+VIPER_SHARE = 0.25           # Viper Sting only on a pool its drain cuts by this share or more (validation pass 2: want_viper)
 
 
 def dr_factor(side, cat, t):
@@ -462,9 +464,18 @@ class HunterPvP(PvPAI):
         return None
 
     def want_viper(self, d, me, foe):
-        if "Viper Sting" not in me.mod.spells or self.viper is not None or foe.cls not in MANA_FOES or foe.p.mana_max <= 0:
+        """Viper Sting in Serpent Sting's place: on a mana user above 30% mana whose pool the drain cuts by VIPER_SHARE or more.
+        Validation pass 2 (2026-11-15): against every mana user it had cost the damage casters' duels, which end in 12-21 s with half
+        their mana left (no Viper Sting, field builds, 200 duels: the priest 0.5% -> 8%, the mage 71.5% -> 87%, the warlock 1.5% ->
+        8%), and it decides the duels against the self-healers with small pools (paladin 41% -> 3% without it, shaman 97.5% -> 92%).
+        The drain, 1,108 mana, is 32% of the field paladin's pool, 27% of the shaman's, 31% of the druid's and 19-20% of the priest's,
+        mage's and warlock's."""
+        sp = me.mod.spells.get("Viper Sting")
+        if sp is None or self.viper is not None or foe.cls not in MANA_FOES or foe.p.mana_max <= 0:
             return False
         if foe.mana_frac() < 0.3:
+            return False
+        if _num(r"draining (\d[\d,]*) mana", sp.text, 1108.0) < VIPER_SHARE * foe.p.mana_max:
             return False
         serpent = next((x for x in foe.dots if x[0] == "Serpent Sting"), None)
         return serpent is None or serpent[2] * serpent[4] <= 3.0

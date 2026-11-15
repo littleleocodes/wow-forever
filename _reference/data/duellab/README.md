@@ -55,6 +55,9 @@ Hooks:
 - `off_gcd(d, me, foe)`: interrupts and cooldowns that cost no global cooldown.
 - `decide(d, me, foe)`: the next action. End with `return self.rotation(d, me, foe)`.
 - `damage_taken(d, me, src, spell, amount)`: change incoming damage (Mana Shield, a Voidwalker's sacrifice).
+- `retaliation_escape(d, me, foe)` (the base's; validation pass 2): while a melee side holds its strikes into a free warrior's
+  Retaliation (`hold_swings`) and is faster than the warrior, the engine turns its intent into "kite" after `intent()`. Holding in
+  reach had handed the warrior its own swings for free.
 - `while_inactive(d, me, foe)`: inside a self-imposed pause (`me.inactive_until`, as in Ice Block). Return None and set
   `me.inactive_until = d.t` to leave it.
 

@@ -6,9 +6,11 @@ leveling rotation underneath (Enhancement: Stormstrike, shocks, Maelstrom Lightn
 Restoration plays Enhancement's, the project's rule).
 
 The 2026-11-12 live hotfix (Stormstrike 150% -> 100% weapon damage, cooldown 6 -> 8 s; Maelstrom Weapon 20 -> 6-10 procs a minute;
-the 2026-11-14 PvP research, _reference/pvp-research.md) is in neither our spell data (talentsforever's 70753 export: "150% normalized weapon damage", 6 s) nor the fight lab (shaman.py:
-MW_PPM_PER_POINT 4, 20 a minute at 5/5); client 70938's tables still carry 150% and 6 s, so the change is server-side. HOTFIX_1112 applies
-it to this side's own copy of Stormstrike and, through a wrapper, to its Maelstrom rolls. Switch it off to measure the old numbers.
+the 2026-11-14 PvP research, _reference/pvp-research.md) is server-side (client 70938's tables still carry 150% and 6 s). The fight lab
+has it since 2026-11-15 (hotfix_text.SHAMAN_1110: Stormstrike 100%, 8 s in the spell data; shaman.MW_PPM_BY_RANK: 6/7/8/9/10 procs a
+minute by rank, 10 at 5/5), so the duel plays the fight lab's numbers. HOTFIX_1112 stays as a guard on this side's copy of Stormstrike:
+it changes nothing while the data carry the hotfixed numbers. This layer's own Maelstrom wrapper (8 a minute at 5/5, through
+MW_PPM_PER_POINT) was removed in validation pass 2: since the fight lab's fix it set a constant the module no longer reads.
 
 Effects the fight lab does not parse, or parses for creatures only (each one this layer's handler):
 - Totems stand where they were dropped: the duel's line keeps this side's position (`x`, its own movement integrated each step) and the
@@ -30,8 +32,8 @@ Effects the fight lab does not parse, or parses for creatures only (each one thi
   cancelled by the shaman's next action.
 - Lightning Shield and Water Shield re-cast in the fight (the fight lab puts one up at the pull only); neither fires on periodic damage
   (the duel engine calls the fight lab's on_hit_taken for dot ticks too).
-- Nature's Swiftness off the global cooldown (client 70888 SpellCooldowns: StartRecoveryTime 0; fightlab/spell_gcd.json lists it as
-  off_gcd, but tables.spell_gcd reads only the gcd table): the instant Healing Wave in the same step; the Elemental builds also use it for
+- Nature's Swiftness off the global cooldown (client 70888 SpellCooldowns: StartRecoveryTime 0; fightlab/spell_gcd.json's off_gcd list,
+  which the fight lab applies since 2026-11-15, tables.OFF_GCD): the instant Healing Wave in the same step; the Elemental builds also use it for
   an instant Chain Lightning or Lightning Bolt that kills. Its buff is spent by a damage spell too (the fight lab spends it on heals only).
 - Elemental Warding: Fire, Frost and Nature damage taken -3/7/10% (the fight lab has no caster mobs).
 
@@ -62,8 +64,7 @@ applies it outside the spell's resolution), a foe that kills totems with single-
 line of sight.
 
 Assumptions: Grounding's 10 s re-arm (the tooltip) and a damaging spell killing it; the first Earthbind and Tremor pulse when dropped;
-SHOCK_HOLD, GROUND_HP and the healing thresholds below are judgment, not measured; Maelstrom's post-hotfix rate 8 a minute at 5/5 (the
-middle of the reported 6-10, by rank as the fight lab's). Foe layers do not see totems: a mage casts Counterspell into a standing
+SHOCK_HOLD, GROUND_HP and the healing thresholds below are judgment, not measured. Foe layers do not see totems: a mage casts Counterspell into a standing
 Grounding Totem and a warlock Fear, which flatters the shaman against casters.
 """
 import collections
@@ -84,8 +85,7 @@ TREE_OF = {t["name"]: tr["name"] for tr in json.load(open(HERE.parent / "forever
 # the 2026-11-12 live hotfix (see the docstring)
 HOTFIX_1112 = True
 SS_WEAPON = 1.00          # Stormstrike's weapon damage, was 1.50
-SS_COOLDOWN = 8.0         # was 6 s
-MW_PPM_PER_POINT = 1.6    # Maelstrom Weapon procs a minute per talent point: 8 at 5/5 (was 4 per point, 20 at 5/5)
+SS_COOLDOWN = 8.0         # was 6 s (Maelstrom Weapon's rate: the fight lab's shaman.MW_PPM_BY_RANK since 2026-11-15)
 
 # totems, client 1.60.1.70938 (SpellEffect, SpellMisc, SpellDuration, SpellCooldowns)
 EARTHBIND_RADIUS = 10.0   # Earthbind (3600): -50% speed, 5 s, radius index 13; the totem's passive (6474) pulses every 3 s
@@ -215,22 +215,9 @@ class ShamanPvP(PvPAI):
             self.hotfix.append(f"Stormstrike {old:.0%} -> {SS_WEAPON:.0%}, {ss.cooldown:.0f} -> {SS_COOLDOWN:.0f} s")
 
     def wrap_module(self, me):
-        """Instance-level wrappers on this side's own module: the hotfixed Maelstrom rate, no shield charge spent on a dot's tick,
-        Nature's Swiftness spent by a damage spell."""
+        """Instance-level wrappers on this side's own module: no shield charge spent on a dot's tick, Nature's Swiftness spent by a
+        damage spell. (The Maelstrom rate wrapper is gone: the fight lab has the hotfixed rate since 2026-11-15, see the docstring.)"""
         mod = me.mod
-        fsm = sys.modules[type(mod).__module__]
-        if HOTFIX_1112 and mod.rank("Maelstrom Weapon") and getattr(fsm, "MW_PPM_PER_POINT", None) != MW_PPM_PER_POINT:
-            orig_swing = mod.on_swing
-            self.hotfix.append(f"Maelstrom Weapon {fsm.MW_PPM_PER_POINT * 5:.0f} -> {MW_PPM_PER_POINT * 5:.0f} a minute at 5/5")
-
-            def on_swing(fight, spell, outcome, amount, hand):
-                old = fsm.MW_PPM_PER_POINT
-                fsm.MW_PPM_PER_POINT = MW_PPM_PER_POINT
-                try:
-                    orig_swing(fight, spell, outcome, amount, hand)
-                finally:
-                    fsm.MW_PPM_PER_POINT = old
-            mod.on_swing = on_swing
         orig_taken = mod.on_hit_taken
 
         def on_hit_taken(fight, dmg, crit=False):

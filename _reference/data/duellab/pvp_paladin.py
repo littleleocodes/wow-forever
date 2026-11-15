@@ -585,7 +585,8 @@ class PaladinPvP(PvPAI):
                 and not foe.ai.cc_immune(d, foe, "incap", "Repentance"):   # not into a visible Berserker Rage
             if casting and (c.kind == "heal" or c.name in HEALS or not me.can("Hammer of Justice")):
                 return self._ground_pop(d, me, foe) or "Repentance"
-            if hp < 0.45 and not me.p.ready("Hammer of Justice", t) and (me.can("Holy Light") or me.can("Flash of Light")):
+            if hp < 0.45 and not me.p.ready("Hammer of Justice", t) and (me.can("Holy Light") or me.can("Flash of Light")) \
+                    and not foe.dots:   # a heal window only without my Consecration ticking on the foe: its next tick ends it
                 return self._ground_pop(d, me, foe) or "Repentance"
         return None
 

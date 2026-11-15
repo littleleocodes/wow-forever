@@ -182,6 +182,15 @@ class PvPAI:
         return self.foe_retaliating(foe, d.t) and foe.hp_frac() > 0.12 \
             and self.hit_value(me, foe) < RETALIATION_TRADE * self.hit_value(foe, me)
 
+    def retaliation_escape(self, d, me, foe):
+        """Out of the warrior's reach while this melee side holds its strikes into Retaliation (hold_swings) and can outrun it: the
+        engine turns the layer's intent into "kite" for that time (Duel.run). Validation pass 2 (2026-11-15): holding in place gave the
+        warrior its own swings for free (a cat stood in reach doing nothing from 3 s to 13 s and lost 1,700 health). Measured on the
+        field builds, 200 duels: the druid against the warrior 11.5% -> 23.5% (attacking through instead: 6.5%), the rogue 11.5% ->
+        22.5% (Crippling Poison makes it the faster)."""
+        t = d.t
+        return self.melee_foe(me) and not me.stealthed and self.hold_swings(d, me, foe) and me.speed(t) > foe.speed(t) + 1e-6
+
     @staticmethod
     def hit_value(side, target):
         """A side's average white hit on `target` after armor: the main hand's, or with two weapons the mean of the main hand's and the

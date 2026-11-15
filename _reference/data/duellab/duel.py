@@ -223,7 +223,9 @@ class SideFight(FE.Fight):
         return self._splashing(super().resolve_attack, spell, white, hand)
 
     def start_cast(self, spell):
-        """The fight lab's start, with the global cooldown kept when an off-GCD spell (gcd 0) starts inside a running one."""
+        """The fight lab's start, with the global cooldown kept when an off-GCD spell (gcd 0) starts inside a running one. Since
+        2026-11-15 the fight lab's own start_cast keeps the later end (tables.OFF_GCD), so this guard changes nothing; checked in
+        validation pass 2: no spell is handled twice (the layers' own restores of a running global cooldown are no-ops too)."""
         g = self.p.gcd_until
         r = super().start_cast(spell)
         self.p.gcd_until = max(g, self.p.gcd_until)
@@ -979,6 +981,8 @@ class Duel:
             for s in (a, b):
                 if t >= s.intent_until:
                     s.intent = s.ai.intent(self, s, s.foe)
+                    if s.intent != "kite" and s.ai.retaliation_escape(self, s, s.foe):
+                        s.intent = "kite"   # out of a free warrior's Retaliation when holding and faster (pvp_base.retaliation_escape)
             self.move(t)
             for s in (a, b):
                 self.tick_attacks(s, t)

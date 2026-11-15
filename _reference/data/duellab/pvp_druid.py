@@ -44,7 +44,8 @@ Assumptions:
 - The opener is Pounce against a foe that casts (no melee foe) and for Restoration builds, else Ravage.
 - Barkskin only in caster or Moonkin Form (Classic 1.12: not in Cat or Bear Form). Innervate and Faerie Fire likewise.
 - Off the global cooldown: Dash, Nature's Swiftness, Feral Charge (the engine's off-GCD list from the raid simulator's store). The
-  engine then sets the global cooldown to "now", which would cut a running one short: these restore it.
+  engine had set the global cooldown to "now", which would cut a running one short, so these restore it; since 2026-11-15 the fight
+  lab keeps a running one itself (tables.OFF_GCD) and the restore changes nothing.
 - The engine lets auto attacks hit a stealthed target, so a prowling cat stops just outside melee reach and steps in with its opener.
   Two stealthers in one duel: side B leaves stealth within 12 yards (no stealth detection in the engine).
 - The module's priority knows no player lockouts: spells the engine refuses (silence, a locked school) are hidden from it, so Balance

@@ -38,20 +38,43 @@ Assumptions:
 - Kidney Shot at 4+ combo points while it would last at least half (or at 2+ to stop a heal when Kick is down); while a stun runs out
   and Kidney Shot will be ready, finishers wait (the points go into the Kidney Shot as the stun ends).
 - The opener is Cheap Shot while a stun lasts at least half, else Ambush (a dagger) or Garrote. Sap is used at the duel's start on a
-  sappable foe; then Premeditation, Slice and Dice in stealth and the energy back before Cheap Shot (Classic's duel opener).
-  Adrenaline Rush goes on in stealth right before the opener, Blade Flurry once the foe is not stunned (not into the stun's window).
+  sappable foe; then Premeditation and the energy back before Cheap Shot, so Premeditation's points and Cheap Shot's make the
+  Kidney Shot that follows a long one. Adrenaline Rush goes on in stealth right before the opener, Blade Flurry once the foe is not
+  stunned (not into the stun's window).
+- No Slice and Dice in a duel (validation pass 2, 2026-11-15): combo points go to Kidney Shot and Eviscerate. All three rogue
+  rotations' tuned rules switch it off too (fightlab/rotations/rogue-*.json, "never cast Slice and Dice"; subtlety-leveling 5.6-6.5%
+  faster kills at levels 20-60), but the duel lab drops a rotation's tuned vetoes (Side.__init__: some switch off PvP tools such as
+  Kick and Kidney Shot), so the hand-written rotation had refreshed it at 1-2 points whenever it fell off, and this layer spent
+  Premeditation's points on it under Sap. Measured on the field
+  build (community:tf-hemo, 200 duels a matchup, seed 1): the rotation's Slice and Dice cost 3% -> 37% against the priest and
+  12.5% -> 40% against the mage (a 5-point Eviscerate the points never reached), the opener's 1.5% -> 12% against the paladin (the
+  Kidney Shot after Cheap Shot came at fewer points).
 - Spells that keep stealth: Premeditation, Sprint ("Does not break stealth"), Slice and Dice, Preparation, Adrenaline Rush, Sap,
   Vanish (Classic's behaviour; Forever unconfirmed). The engine drops stealth on every other cast, so these restore it.
 - Off the global cooldown: Evasion, Sprint, Vanish, Premeditation, Cold Blood, Riposte (the engine's off-GCD list from the raid
-  simulator's store). The engine then sets the global cooldown to "now", which would cut a running one short: these restore it.
+  simulator's store). The engine had set the global cooldown to "now", which would cut a running one short, so these restore it; since
+  2026-11-15 the fight lab keeps a running one itself (tables.OFF_GCD) and the restore changes nothing.
 - The engine lets auto attacks hit a stealthed target, so the stealthed rogue stops just outside melee reach and steps in with its
   opener, and Vanish steps out of reach (a foe cannot swing at what it cannot see).
 - Two stealthers in one duel: side B leaves stealth within 12 yards (the engine has no stealth detection; else neither could act).
 - Against a warrior (2026-11-14, from the duel logs): Sap waits in stealth for a Berserker Rage of 12 s or less to end (it had cast Sap
   into the immunity every second); no strike into a free warrior's Retaliation (Kidney Shot, then Gouge or Blind when no bleed of the
-  rogue's ticks, else energy pooled); no Evasion (each dodge arms Overpower, which cannot be dodged).
+  rogue's ticks, else energy pooled); no Evasion (each dodge arms Overpower, which cannot be dodged). Validation pass 2 (2026-11-15):
+  Sprint when Retaliation goes up with 6+ s to run, and out of reach while faster (the engine's pvp_base.retaliation_escape); the
+  rogue had pooled energy in the warrior's reach for 15 s, ahead in the race (72% health against 51%) and dead at the end of it.
+  Measured on the field builds, 200 duels: 11.5% -> 22.5% running only when faster, 33.5% with the Sprint (striking through it
+  instead, measured before the other pass-2 fixes: 5.5% -> 8.5%).
+- Own bleeds and control (validation pass 2): a Garrote or Rupture tick of the rogue's own breaks its Gouge and Blind, so Blind is not
+  used to stop a cast while one ticks (the logs: 0.80 Blinds a duel against the warlock's Drain Life ended by the rogue's own
+  Garrote within 3 s). Gouge still stops a cast with a bleed up (the interrupt has landed when the tick ends the incapacitate).
+- No Blind-Vanish reset while the foe's dots tick on the rogue: the next tick ends Vanish's stealth, and the rogue had stood out the
+  Blind pooling energy while the dots killed it (the priest's Shadow Word: Pain and Devouring Plague).
+- Vanish out of a slow too (validation pass 2): a 40%+ slow with 2+ s to run at 10+ yards from a ranged foe ("Also breaks movement
+  impairing effects"), as for a root. The hunter's Concussive Shot had kept the rogue walking into Auto Shots after its trap; measured
+  on the field builds, 200 duels: against the hunter 0% -> 12% (a second Flare often reveals it; the wins come from Blind,
+  Preparation and a second Vanish into Cheap Shot), against the mage 35% -> 41%.
 - Thresholds (judgment): Evasion below 65% health against a melee foe in reach; Blind then Vanish to reset below 45% health while the
-  foe has 10 points more (not under Faerie Fire); Vanish to break a root of 2+ s at 10+ yards from a ranged foe; Sprint when slowed
+  foe has 10 points more (not under Faerie Fire); Vanish to break a root of 2+ s or a slow at 10+ yards from a ranged foe; Sprint when slowed
   (or rooted, with Improved Sprint) or 12+ yards from a kiting foe. Measured and rejected (200 duels against pvp-frost, 2026-11-14):
   hanging back from a mage that kites at the rogue's speed to close on its next cast (combat-pvp 45.5% -> 16.5% wins, pvp-hemo-prep
   65.5% -> 50.5%); keeping Sprint for a root with Improved Sprint unless the mage is 26+ yards away (combat-pvp 45.5% -> 3%: a
@@ -456,6 +479,12 @@ class RoguePvP(PvPAI):
         if c is not None and d.dist <= T.MELEE + 0.5 and (c.kind == "heal" or c.name in HEALS or c.cast >= 1.0 or c.kind == "channel") \
                 and not self.foe_immune(foe, t) and me.can("Kick"):
             return "Kick"
+        # Sprint out of a free warrior's Retaliation: faster than the warrior, the engine keeps the rogue out of reach while it holds
+        # its strikes (pvp_base.retaliation_escape); standing in reach had given the warrior 15 s of free swings (validation pass 2)
+        ret = getattr(foe.ai, "retaliation", None)
+        if self.foe_retaliating(foe, t) and ret[1] - t > 6.0 and self.hold_swings(d, me, foe) \
+                and t >= me.speed_bonus.get("Sprint", (0, 0))[1] and me.can("Sprint", ignore_gcd=True):
+            return "Sprint"
         melee = self.melee_foe(foe) and foe.cls != "warrior"   # not against a warrior: each dodge arms its Overpower (unavoidable)
         if melee and d.dist <= T.MELEE + 1.0 and not foe.controlled(t) and me.hp_frac() < self.EVASION_HP \
                 and not me.p.buff("Evasion", t) and me.can("Evasion", ignore_gcd=True):
@@ -469,8 +498,8 @@ class RoguePvP(PvPAI):
             if (rooted and frees and me.root_until - t >= 1.0 or not rooted and (slowed or chase)) \
                     and t >= me.speed_bonus.get("Sprint", (0, 0))[1] and me.can("Sprint", ignore_gcd=True):
                 return "Sprint"
-            if rooted and me.root_until - t >= 2.0 and d.dist > 10.0 and foe.ai.keep_range > 0 and not self.ff_on(me) \
-                    and me.can("Vanish", ignore_gcd=True):
+            held_off = rooted and me.root_until - t >= 2.0 or slowed and me.slow >= 0.4 and me.slow_until - t >= 2.0   # pass 2: slows too
+            if held_off and d.dist > 10.0 and foe.ai.keep_range > 0 and not self.ff_on(me) and me.can("Vanish", ignore_gcd=True):
                 return "Vanish"
         return None
 
@@ -493,9 +522,10 @@ class RoguePvP(PvPAI):
             return self.vs_retaliation(d, me, foe)
         free = not foe.controlled(t)
         melee_reach = d.dist <= T.MELEE + 1e-6
-        # the reset when losing: Blind, then Vanish under it (hold_cc), then a new opener
-        if me.hp_frac() < self.RESET_HP and foe.hp_frac() > me.hp_frac() + 0.1 and free and not foe.dots and d.dist <= 10.0 \
-                and me.can("Blind") and (self.vanish_ready(me) or self.prep_ready(me)) and not self.ff_on(me):
+        # the reset when losing: Blind, then Vanish under it (hold_cc), then a new opener; not while the foe's dots tick on the rogue
+        # (the next tick ends Vanish's stealth) nor while the rogue's own bleed ticks on the foe (it breaks the Blind)
+        if me.hp_frac() < self.RESET_HP and foe.hp_frac() > me.hp_frac() + 0.1 and free and not foe.dots and not me.dots \
+                and d.dist <= 10.0 and me.can("Blind") and (self.vanish_ready(me) or self.prep_ready(me)) and not self.ff_on(me):
             self.reset_plan = True
             return "Blind"
         # interrupts that cost a global cooldown, when Kick cannot
@@ -505,8 +535,8 @@ class RoguePvP(PvPAI):
                 return "Gouge"
             if p.combo >= 2 and self.want_kidney(d, me, foe, interrupt=True):
                 return "Kidney Shot"
-            if (c.kind == "heal" or c.name in HEALS) and d.dist <= 10.0 and me.can("Blind"):
-                return "Blind"
+            if (c.kind == "heal" or c.name in HEALS) and d.dist <= 10.0 and not foe.dots and me.can("Blind"):
+                return "Blind"   # not with an own bleed ticking: it would end the Blind within a tick
         if self.want_kidney(d, me, foe):
             return "Kidney Shot"
         # cooldowns after the opener (Adrenaline Rush goes on in stealth before it), not during a stun
@@ -548,11 +578,8 @@ class RoguePvP(PvPAI):
             return self.step_in(d, me, "Sap")
         if sapped:
             left = foe.incap_until - t
-            snd = sp.get("Slice and Dice")
-            if snd is not None and p.combo >= 1 and not p.buff("Slice and Dice", t) and left > 1.5 and me.can("Slice and Dice"):
-                return "Slice and Dice"
             if p.energy < p.energy_max - 5 and left > 1.0:
-                return None   # the energy back before the opener
+                return None   # the energy back before the opener (Premeditation's points kept for the Kidney Shot)
         if self.held_by_me(foe, t) and foe.incap_name == "Blind":   # after the reset's Vanish: energy, and a full stun when it comes back in time
             left = foe.incap_until - t
             op = sp.get("Cheap Shot")
@@ -647,10 +674,11 @@ class RoguePvP(PvPAI):
 
     def rotation(self, d, me, foe, hide=()):
         """The spec's leveling rotation with this layer's tools hidden from it: the openers out of stealth (Garrote and Ambush stay
-        behind Ghostly Strike's opening), Kidney Shot, Evasion and Preparation (this layer decides them), and `hide`."""
+        behind Ghostly Strike's opening), Kidney Shot, Evasion and Preparation (this layer decides them), Slice and Dice (none in a
+        duel: see the docstring), and `hide`."""
         t = d.t
         sp = me.mod.spells
-        hidden = {"Kidney Shot", "Evasion", "Preparation", "Cheap Shot", "Sap"} | set(hide)
+        hidden = {"Kidney Shot", "Evasion", "Preparation", "Cheap Shot", "Sap", "Slice and Dice"} | set(hide)
         if t < me.disarm_until:
             hidden.add("Mutilate")   # both hands strike (the engine's disarm check misses the module's buff-kind wrapper); Shank is the off hand
         if not me.p.buff("Ghostly Opening", t):
