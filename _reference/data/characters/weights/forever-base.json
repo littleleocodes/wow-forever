@@ -37994,6 +37994,1014 @@
      }
     }
    }
+  },
+  "mage-fire-open-leveling": {
+   "10": {
+    "set": {
+     "back": "Wispy Cloak",
+     "chest": "Disciple's Robe of the Whale",
+     "feet": "Azure Stormsewn Shoes",
+     "hands": "Cloudy Stormsewn Handwraps",
+     "legs": "Native Pants of Spirit",
+     "ranged": "Shadow Wand",
+     "waist": "Cloudy Stormsewn Cord",
+     "weapon": "Sturdy Quarterstaff of the Whale",
+     "wrist": "Ghostly Bracers"
+    },
+    "totals": {
+     "spirit": 10,
+     "armor": 104,
+     "stamina": 5,
+     "intellect": 1,
+     "wand_dps": 10.4,
+     "mh_weapon_dps": 8.9
+    },
+    "standard": {
+     "intellect": 10.0,
+     "spirit": 3.5,
+     "stamina": 6.0,
+     "agility": 0.0,
+     "strength": 0.0,
+     "armor": 129.0,
+     "spell_power": 0.0,
+     "healing": 0.0,
+     "attack_power": 0.0
+    },
+    "bonus": {
+     "intellect": -9.0,
+     "spirit": 6.5,
+     "stamina": -1.0,
+     "armor": -25.0,
+     "wand_dps": 0.5
+    },
+    "pool": 367,
+    "best": {
+     "set": {
+      "back": "Willow Cape of Fiery Wrath",
+      "chest": "Simple Blouse of Fiery Wrath",
+      "feet": "Willow Boots of Magic",
+      "finger1": "The 1 Ring",
+      "hands": "Heavy Linen Gloves",
+      "legs": "Simple Britches of Magic",
+      "offhand": "Simple Branch of Fiery Wrath",
+      "ranged": "Lesser Magic Wand",
+      "waist": "Novice Arcanist's Sash",
+      "weapon": "Carving Knife of Magic",
+      "wrist": "Willow Bracers of Fiery Wrath"
+     },
+     "totals": {
+      "armor": 125,
+      "spell_power": 32.8,
+      "healing": 19,
+      "stamina": 4,
+      "intellect": 5,
+      "strength": 1,
+      "agility": 1,
+      "spirit": 1,
+      "wand_dps": 11.3,
+      "mh_weapon_dps": 5.9
+     },
+     "bonus": {
+      "intellect": -5.0,
+      "spirit": -2.5,
+      "stamina": -2.0,
+      "agility": 1.0,
+      "strength": 1.0,
+      "armor": -4.0,
+      "spell_power": 32.8,
+      "healing": 19.0,
+      "wand_dps": 1.5
+     }
+    }
+   },
+   "15": {
+    "set": {
+     "back": "Rigid Cape of the Wolf",
+     "chest": "Willow Vest of Spirit",
+     "feet": "Buccaneer's Boots of Spirit",
+     "finger1": "The 1 Ring",
+     "hands": "Mystic's Gloves",
+     "legs": "Mystic's Woolies",
+     "ranged": "Blazing Wand",
+     "waist": "Aboriginal Sash of Spirit",
+     "weapon": "Foamspittle Staff",
+     "wrist": "Pagan Bands of Spirit"
+    },
+    "totals": {
+     "armor": 150,
+     "agility": 3,
+     "spirit": 34,
+     "strength": 1,
+     "stamina": 1,
+     "intellect": 1,
+     "wand_dps": 12.7,
+     "mh_weapon_dps": 11.4
+    },
+    "standard": {
+     "intellect": 22.5,
+     "spirit": 7.5,
+     "stamina": 8.5,
+     "agility": 0.0,
+     "strength": 0.0,
+     "armor": 178.0,
+     "spell_power": 0.0,
+     "healing": 0.0,
+     "attack_power": 0.0
+    },
+    "bonus": {
+     "intellect": -21.5,
+     "spirit": 26.5,
+     "stamina": -7.5,
+     "agility": 3.0,
+     "strength": 1.0,
+     "armor": -28.0,
+     "wand_dps": -0.5
+    },
+    "pool": 1030,
+    "best": {
+     "set": {
+      "back": "Defender Cloak of Magic",
+      "chest": "Filigreed Flame Gown",
+      "feet": "Ritual Sandals of Fiery Wrath",
+      "finger1": "Quartz Ring of Spirit",
+      "finger2": "Lead Band of Spirit",
+      "hands": "Flame Gloves",
+      "legs": "Silk-threaded Trousers",
+      "neck": "Ephemeral Choker",
+      "offhand": "Willow Branch of Magic",
+      "ranged": "Greater Magic Wand",
+      "waist": "Buccaneer's Cord of Fiery Wrath",
+      "weapon": "Fang of Magmatus",
+      "wrist": "Shimmering Bracers of Magic"
+     },
+     "totals": {
+      "spirit": 14,
+      "armor": 165,
+      "healing": 39,
+      "spell_power": 67.3,
+      "stamina": 8,
+      "intellect": 12,
+      "agility": 5,
+      "wand_dps": 17.5,
+      "mh_weapon_dps": 7.9
+     },
+     "bonus": {
+      "intellect": -10.5,
+      "spirit": 6.5,
+      "stamina": -0.5,
+      "agility": 5.0,
+      "armor": -13.0,
+      "spell_power": 67.3,
+      "healing": 39.0,
+      "wand_dps": 4.3
+     }
+    }
+   },
+   "20": {
+    "set": {
+     "back": "Watcher's Cape of the Wolf",
+     "chest": "Seer's Padded Armor",
+     "feet": "Greenweave Sandals of Spirit",
+     "finger1": "Viridian Band of Intellect",
+     "finger2": "Clay Ring of Intellect",
+     "hands": "Smoldering Gloves",
+     "legs": "Shimmering Trousers of Spirit",
+     "ranged": "Opaque Wand",
+     "shoulder": "Reinforced Woolen Shoulders",
+     "waist": "Buccaneer's Cord of Spirit",
+     "weapon": "Medicine Staff of the Wolf",
+     "wrist": "Shimmering Bracers of Spirit"
+    },
+    "totals": {
+     "intellect": 12,
+     "healing": 5,
+     "spell_power": 5,
+     "armor": 198,
+     "agility": 7,
+     "spirit": 40,
+     "stamina": 6,
+     "wand_dps": 15.0,
+     "mh_weapon_dps": 12.6
+    },
+    "standard": {
+     "intellect": 25.5,
+     "spirit": 18.5,
+     "stamina": 11.0,
+     "agility": 0.0,
+     "strength": 1.0,
+     "armor": 195.5,
+     "spell_power": 0.0,
+     "healing": 0.0,
+     "attack_power": 0.0
+    },
+    "bonus": {
+     "intellect": -13.5,
+     "spirit": 21.5,
+     "stamina": -5.0,
+     "agility": 7.0,
+     "strength": -1.0,
+     "armor": 2.5,
+     "spell_power": 5.0,
+     "healing": 5.0,
+     "wand_dps": -0.8
+    },
+    "pool": 1410,
+    "best": {
+     "set": {
+      "back": "Ivycloth Cloak of Fiery Wrath",
+      "chest": "Dro'zem's Tunic",
+      "feet": "Ivycloth Boots of Fiery Wrath",
+      "finger1": "Advisor's Ring",
+      "finger2": "Lorekeeper's Ring",
+      "hands": "Phoenix Gloves",
+      "head": "Flame Circlet",
+      "legs": "Filigreed Flame Leggings",
+      "neck": "Sorcerer Collar",
+      "offhand": "Pulsating Hydra Heart",
+      "ranged": "Firebelcher",
+      "shoulder": "Magician's Mantle",
+      "trinket1": "Lookie's Spyglass",
+      "trinket2": "Rune of Perfection",
+      "waist": "Tuskwrap Belt",
+      "weapon": "Evocator's Blade",
+      "wrist": "Ivycloth Bracelets of Fiery Wrath"
+     },
+     "totals": {
+      "stamina": 25,
+      "spell_power": 119.0,
+      "armor": 256,
+      "intellect": 28,
+      "spirit": 17,
+      "healing": 60,
+      "mp5": 4,
+      "wand_dps": 23.2,
+      "mh_weapon_dps": 10.9
+     },
+     "bonus": {
+      "intellect": 2.5,
+      "spirit": -1.5,
+      "stamina": 14.0,
+      "strength": -1.0,
+      "armor": 60.5,
+      "spell_power": 119.0,
+      "healing": 60.0,
+      "mp5": 4,
+      "wand_dps": 7.5
+     }
+    }
+   },
+   "25": {
+    "set": {
+     "back": "Battleforge Cloak of the Owl",
+     "chest": "Greenweave Vest of the Prophet",
+     "feet": "Raincaller Boots of the Sorcerer",
+     "finger1": "Savannah Ring of Concentration",
+     "finger2": "Viridian Band of the Owl",
+     "hands": "Watcher's Handwraps of the Sorcerer",
+     "head": "Azure Silk Hood",
+     "legs": "Greenweave Leggings of the Prophet",
+     "ranged": "Firestarter",
+     "shoulder": "Watcher's Mantle of the Sorcerer",
+     "waist": "Ivycloth Sash of the Sorcerer",
+     "weapon": "Dwarven Magestaff of the Owl",
+     "wrist": "Watcher's Cuffs of the Prophet"
+    },
+    "totals": {
+     "stamina": 20,
+     "spell_power": 17.4,
+     "armor": 256,
+     "intellect": 54,
+     "healing": 30,
+     "spirit": 23,
+     "mp5": 2,
+     "wand_dps": 23.3,
+     "mh_weapon_dps": 18.4
+    },
+    "standard": {
+     "intellect": 57.5,
+     "spirit": 34.0,
+     "stamina": 13.5,
+     "agility": 0.0,
+     "strength": 0.0,
+     "armor": 259.0,
+     "spell_power": 4.8,
+     "healing": 0.0,
+     "attack_power": 0.0
+    },
+    "bonus": {
+     "intellect": -3.5,
+     "spirit": -11.0,
+     "stamina": 6.5,
+     "armor": -3.0,
+     "spell_power": 12.6,
+     "healing": 30.0,
+     "mp5": 2,
+     "wand_dps": 1.4
+    },
+    "pool": 2077,
+    "best": {
+     "set": {
+      "back": "Thornweaver Drape",
+      "chest": "Flame Gown",
+      "feet": "Sage's Boots of Fiery Wrath",
+      "finger1": "Dark Horde Band",
+      "finger2": "The Queen's Jewel",
+      "hands": "Raincaller Mitts of Fiery Wrath",
+      "head": "Filigreed Flame Circlet",
+      "legs": "Flame Leggings",
+      "neck": "Spectral Necklace of the Elder",
+      "offhand": "Ivy Orb of Fiery Wrath",
+      "ranged": "Thunderwood",
+      "shoulder": "Sage's Mantle of Fiery Wrath",
+      "trinket1": "Roogug's Severed Head",
+      "trinket2": "Worgenbane Talisman",
+      "waist": "Belt of Arugal",
+      "weapon": "Coldflame Saber",
+      "wrist": "Phoenix Bindings"
+     },
+     "totals": {
+      "stamina": 32,
+      "spell_power": 154.3,
+      "armor": 283,
+      "intellect": 30,
+      "healing": 62,
+      "spirit": 36,
+      "agility": 2,
+      "mp5": 2,
+      "wand_dps": 27.1,
+      "mh_weapon_dps": 12.2
+     },
+     "bonus": {
+      "intellect": -27.5,
+      "spirit": 2.0,
+      "stamina": 18.5,
+      "agility": 2.0,
+      "armor": 24.0,
+      "spell_power": 149.5,
+      "healing": 62.0,
+      "mp5": 2,
+      "wand_dps": 5.2
+     }
+    }
+   },
+   "30": {
+    "set": {
+     "back": "Marauder's Cloak of the Physician",
+     "chest": "Sage's Robe of the Sorcerer",
+     "feet": "Thistlefur Sandals of the Sorcerer",
+     "finger1": "Tundra Ring of Spirit",
+     "finger2": "Band of Thorns",
+     "hands": "Thistlefur Gloves of the Sorcerer",
+     "head": "Sage's Circlet of the Sorcerer",
+     "legs": "Sage's Pants of the Sorcerer",
+     "neck": "Basalt Necklace of Spirit",
+     "ranged": "Lesser Mystic Wand",
+     "shoulder": "Elder's Mantle of the Sorcerer",
+     "waist": "Thistlefur Belt of the Sorcerer",
+     "weapon": "Magician Staff of Spirit",
+     "wrist": "Durable Bracers of the Prophet"
+    },
+    "totals": {
+     "armor": 279,
+     "stamina": 36,
+     "intellect": 66,
+     "healing": 33,
+     "spell_power": 27,
+     "spirit": 33,
+     "wand_dps": 25.4,
+     "mh_weapon_dps": 19.7
+    },
+    "standard": {
+     "intellect": 67.5,
+     "spirit": 39.0,
+     "stamina": 23.5,
+     "agility": 0.0,
+     "strength": 0.0,
+     "armor": 276.0,
+     "spell_power": 0.0,
+     "healing": 0.0,
+     "attack_power": 0.0
+    },
+    "bonus": {
+     "intellect": -1.5,
+     "spirit": -6.0,
+     "stamina": 12.5,
+     "armor": 3.0,
+     "spell_power": 27.0,
+     "healing": 33.0,
+     "wand_dps": 0.8
+    },
+    "pool": 2716,
+    "best": {
+     "set": {
+      "back": "Twilight Cape of Fiery Wrath",
+      "chest": "Elder's Padded Armor of Fiery Wrath",
+      "feet": "Fiery Slippers",
+      "finger1": "Advisor's Ring",
+      "finger2": "Lorekeeper's Ring",
+      "hands": "Vital Handwraps of Fiery Wrath",
+      "head": "Thistlefur Cap of Fiery Wrath",
+      "legs": "Thistlefur Pants of Fiery Wrath",
+      "neck": "Scorn's Icy Choker",
+      "offhand": "Rod of Molten Fire",
+      "ranged": "Necrotic Wand",
+      "shoulder": "Vital Shoulders of Fiery Wrath",
+      "trinket1": "Roogug's Severed Head",
+      "trinket2": "Dog Whistle",
+      "waist": "Whimsical Waistwrap of Fiery Wrath",
+      "weapon": "Swinetusk Shank",
+      "wrist": "Phoenix Bindings"
+     },
+     "totals": {
+      "armor": 294,
+      "spell_power": 209.0,
+      "stamina": 25,
+      "intellect": 13,
+      "healing": 70,
+      "spirit": 14,
+      "mp5": 4,
+      "wand_dps": 33.2,
+      "mh_weapon_dps": 15.3
+     },
+     "bonus": {
+      "intellect": -54.5,
+      "spirit": -25.0,
+      "stamina": 1.5,
+      "armor": 18.0,
+      "spell_power": 209.0,
+      "healing": 70.0,
+      "mp5": 4,
+      "wand_dps": 8.6
+     }
+    }
+   },
+   "35": {
+    "set": {
+     "back": "Sorcerer Cloak of the Hierophant",
+     "chest": "Thistlefur Jerkin of the Prophet",
+     "feet": "Twilight Boots of the Sorcerer",
+     "finger1": "Amethyst Band of the Owl",
+     "finger2": "Cerulean Ring of the Owl",
+     "hands": "Geomancer's Gloves of the Sorcerer",
+     "head": "Thistlefur Cap of the Prophet",
+     "legs": "Twilight Pants of the Prophet",
+     "neck": "Thallium Choker of the Owl",
+     "offhand": "Thistlefur Branch of the Hierophant",
+     "ranged": "Greater Mystic Wand",
+     "shoulder": "Conjurer's Mantle of the Sorcerer",
+     "waist": "Embersilk Cord of the Sorcerer",
+     "weapon": "Mercenary Blade of the Defender",
+     "wrist": "Embersilk Bracelets of the Prophet"
+    },
+    "totals": {
+     "armor": 306,
+     "intellect": 85,
+     "healing": 67,
+     "spell_power": 34,
+     "spirit": 43,
+     "stamina": 36,
+     "wand_dps": 29.0,
+     "defense": 2,
+     "mh_weapon_dps": 18.8
+    },
+    "standard": {
+     "intellect": 83.0,
+     "spirit": 64.5,
+     "stamina": 28.0,
+     "agility": 0.0,
+     "strength": 0.0,
+     "armor": 300.0,
+     "spell_power": 0.0,
+     "healing": 0.0,
+     "attack_power": 0.0
+    },
+    "bonus": {
+     "intellect": 2.0,
+     "spirit": -21.5,
+     "stamina": 8.0,
+     "armor": 6.0,
+     "spell_power": 34.0,
+     "healing": 67.0,
+     "defense_rating": 2,
+     "wand_dps": -1.4
+    },
+    "pool": 2622,
+    "best": {
+     "set": {
+      "back": "Regal Cloak of Magic",
+      "chest": "Robe of the Magi",
+      "feet": "Earthen Silk Slippers",
+      "finger1": "Flamestarter's Signet",
+      "finger2": "Carnelian Loop of the Elder",
+      "hands": "Sorcerer Gloves of Magic",
+      "head": "Geomancer's Cap of Magic",
+      "legs": "Embersilk Leggings of Magic",
+      "neck": "Scorn's Icy Choker",
+      "offhand": "Orb of the Forgotten Seer",
+      "ranged": "Touch of the Depths",
+      "shoulder": "Embersilk Mantle of Magic",
+      "trinket1": "Arena Master",
+      "trinket2": "Cold Basilisk Eye",
+      "waist": "Star Belt",
+      "weapon": "Narpas Sword",
+      "wrist": "Spidertank Oilrag"
+     },
+     "totals": {
+      "armor": 330,
+      "healing": 211,
+      "spell_power": 224.9,
+      "stamina": 12,
+      "intellect": 34,
+      "spirit": 20,
+      "mp5": 3,
+      "wand_dps": 37.1,
+      "hit": 10,
+      "mh_weapon_dps": 19.0
+     },
+     "bonus": {
+      "intellect": -49.0,
+      "spirit": -44.5,
+      "stamina": -16.0,
+      "armor": 30.0,
+      "spell_power": 224.9,
+      "healing": 211.0,
+      "mp5": 3,
+      "wand_dps": 6.7
+     }
+    }
+   },
+   "40": {
+    "set": {
+     "back": "Brigade Cloak of the Knight",
+     "chest": "Embersilk Robes of the Sorcerer",
+     "feet": "Regal Boots of the Prophet",
+     "finger1": "Carnelian Loop of Spirit",
+     "finger2": "Forest Hoop of Spirit",
+     "hands": "Royal Gloves of the Sorcerer",
+     "head": "Sorcerer Hat of the Sorcerer",
+     "legs": "Stormcloth Pants",
+     "neck": "Marsh Chain of the Physician",
+     "ranged": "Twisted Nether Wand",
+     "shoulder": "Darkmist Mantle of Frozen Wrath",
+     "waist": "Lunar Belt of Frozen Wrath",
+     "weapon": "Spellforce Rod",
+     "wrist": "Bloodwoven Bracers of Frozen Wrath"
+    },
+    "totals": {
+     "armor": 348,
+     "stamina": 34,
+     "intellect": 47,
+     "healing": 76,
+     "spell_power": 71.0,
+     "strength": 4,
+     "spirit": 38,
+     "wand_dps": 34.0,
+     "mh_weapon_dps": 30.2
+    },
+    "standard": {
+     "intellect": 97.5,
+     "spirit": 56.0,
+     "stamina": 7.0,
+     "agility": 0.0,
+     "strength": 0.0,
+     "armor": 326.5,
+     "spell_power": 15.5,
+     "healing": 12.0,
+     "attack_power": 0.0
+    },
+    "bonus": {
+     "intellect": -50.5,
+     "spirit": -18.0,
+     "stamina": 27.0,
+     "strength": 4.0,
+     "armor": 21.5,
+     "spell_power": 55.5,
+     "healing": 64.0,
+     "wand_dps": 1.3
+    },
+    "pool": 2538,
+    "best": {
+     "set": {
+      "back": "Warmonger's Cloak of Magic",
+      "chest": "Robe of the Magi",
+      "feet": "Gossamer Boots of Magic",
+      "finger1": "Ruul's Secondstone",
+      "finger2": "Advisor's Ring",
+      "hands": "Revelosh's Gloves of Magic",
+      "head": "Royal Headband of Magic",
+      "legs": "Lunar Leggings of Magic",
+      "neck": "Triune Amulet",
+      "offhand": "Regal Star of Magic",
+      "ranged": "White Obsidian Wand",
+      "shoulder": "Royal Amice of Magic",
+      "trinket1": "Ankh of Life",
+      "trinket2": "Tidal Charm",
+      "waist": "Royal Sash of Magic",
+      "weapon": "Notched Ritual Rib",
+      "wrist": "Gossamer Bracers of Magic"
+     },
+     "totals": {
+      "armor": 370,
+      "healing": 246,
+      "spell_power": 255,
+      "stamina": 16,
+      "spirit": 33,
+      "intellect": 15,
+      "mp5": 3,
+      "wand_dps": 41.5,
+      "mh_weapon_dps": 20.3
+     },
+     "bonus": {
+      "intellect": -82.5,
+      "spirit": -23.0,
+      "stamina": 9.0,
+      "armor": 43.5,
+      "spell_power": 239.5,
+      "healing": 234.0,
+      "mp5": 3,
+      "wand_dps": 8.8
+     }
+    }
+   },
+   "45": {
+    "set": {
+     "back": "Chieftain's Cloak of the Defender",
+     "chest": "Royal Gown of the Channeler",
+     "feet": "Gaea's Slippers of the Channeler",
+     "finger1": "Desert Ring of the Owl",
+     "finger2": "Aquamarine Ring of the Owl",
+     "hands": "Gossamer Gloves of the Prophet",
+     "head": "Gaea's Circlet of the Prophet",
+     "legs": "Gossamer Pants of the Channeler",
+     "neck": "Tellurium Necklace of the Physician",
+     "ranged": "Umbral Wand of the Channeler",
+     "shoulder": "Gaea's Amice of the Channeler",
+     "waist": "Gaea's Belt of the Channeler",
+     "weapon": "Naga Caster's Staff",
+     "wrist": "Gaea's Cuffs of the Channeler"
+    },
+    "totals": {
+     "armor": 388,
+     "intellect": 54,
+     "healing": 114,
+     "spell_power": 92,
+     "spirit": 71,
+     "stamina": 105,
+     "defense": 3,
+     "wand_dps": 35.7,
+     "mh_weapon_dps": 27.6
+    },
+    "standard": {
+     "intellect": 104.5,
+     "spirit": 73.5,
+     "stamina": 10.0,
+     "agility": 0.0,
+     "strength": 0.0,
+     "armor": 366.0,
+     "spell_power": 20.0,
+     "healing": 4.5,
+     "attack_power": 0.0
+    },
+    "bonus": {
+     "intellect": -50.5,
+     "spirit": -2.5,
+     "stamina": 95.0,
+     "armor": 22.0,
+     "spell_power": 72.0,
+     "healing": 109.5,
+     "defense_rating": 3,
+     "wand_dps": -3.5
+    },
+    "pool": 2629,
+    "best": {
+     "set": {
+      "back": "Wild Leather Cloak of Magic",
+      "chest": "Gossamer Tunic of Magic",
+      "feet": "Duskwoven Sandals of Magic",
+      "finger1": "Brainlash",
+      "finger2": "Runed Ring of Magic",
+      "hands": "Dreamweave Gloves",
+      "head": "Dreamweave Circlet",
+      "legs": "Abjurer's Pants of Magic",
+      "neck": "Triune Amulet",
+      "offhand": "Gossamer Rod of Magic",
+      "ranged": "Peacekeeper Wand",
+      "shoulder": "Opulent Mantle of Magic",
+      "trinket1": "Theka's Last Breath",
+      "trinket2": "Ankh of Life",
+      "waist": "Opulent Belt of Magic",
+      "weapon": "Notched Ritual Rib",
+      "wrist": "Duskwoven Bracers of Magic"
+     },
+     "totals": {
+      "intellect": 33,
+      "healing": 284,
+      "spell_power": 277,
+      "spirit": 43,
+      "armor": 414,
+      "stamina": 11,
+      "mp5": 9,
+      "wand_dps": 45.5,
+      "mh_weapon_dps": 20.3
+     },
+     "bonus": {
+      "intellect": -71.5,
+      "spirit": -30.5,
+      "stamina": 1.0,
+      "armor": 48.0,
+      "spell_power": 257.0,
+      "healing": 279.5,
+      "mp5": 9,
+      "wand_dps": 6.3
+     }
+    }
+   },
+   "50": {
+    "set": {
+     "back": "Ornate Cloak of the Owl",
+     "chest": "Abjurer's Tunic of the Prophet",
+     "feet": "Bonecaster's Boots of the Channeler",
+     "finger1": "Arctic Ring of the Physician",
+     "finger2": "Topaz Ring of the Owl",
+     "hands": "Brightcloth Gloves",
+     "head": "Abjurer's Hood of the Prophet",
+     "legs": "Duskwoven Pants of the Prophet",
+     "neck": "Selenium Chain of the Physician",
+     "offhand": "Gossamer Rod of the Hierophant",
+     "ranged": "Wizard's Hand of the Prophet",
+     "shoulder": "Opulent Mantle of the Channeler",
+     "waist": "Runecloth Belt",
+     "weapon": "Rune Sword of the Defender",
+     "wrist": "Bonecaster's Bindings of the Prophet"
+    },
+    "totals": {
+     "armor": 424,
+     "intellect": 102,
+     "healing": 123,
+     "spell_power": 65,
+     "spirit": 71,
+     "stamina": 58,
+     "wand_dps": 44.4,
+     "defense": 2,
+     "mh_weapon_dps": 30.3
+    },
+    "standard": {
+     "intellect": 102.5,
+     "spirit": 82.0,
+     "stamina": 27.5,
+     "agility": 2.5,
+     "strength": 0.0,
+     "armor": 403.5,
+     "spell_power": 35.5,
+     "healing": 4.5,
+     "attack_power": 0.0
+    },
+    "bonus": {
+     "intellect": -0.5,
+     "spirit": -11.0,
+     "stamina": 30.5,
+     "agility": -2.5,
+     "armor": 20.5,
+     "spell_power": 29.5,
+     "healing": 118.5,
+     "defense_rating": 2,
+     "wand_dps": 3.4
+    },
+    "pool": 2635,
+    "best": {
+     "set": {
+      "back": "Spritecaster Cape",
+      "chest": "Duskwoven Tunic of Magic",
+      "feet": "Mystical Boots of Magic",
+      "finger1": "Advisor's Ring",
+      "finger2": "Lorekeeper's Ring",
+      "hands": "Atal'ai Gloves of Magic",
+      "head": "Mystical Headwrap of Magic",
+      "legs": "Arachnidian Legguards of Magic",
+      "neck": "Selenium Chain of the Elder",
+      "offhand": "Drakestone of Magic",
+      "ranged": "Pyric Caduceus",
+      "shoulder": "Mystical Mantle of Magic",
+      "trinket1": "Zarla's Snack Pouch",
+      "trinket2": "Infernal Lasso",
+      "waist": "Bonecaster's Belt of Magic",
+      "weapon": "Inventor's Focal Sword",
+      "wrist": "Councillor's Cuffs of Magic"
+     },
+     "totals": {
+      "armor": 448,
+      "healing": 322,
+      "spell_power": 330.7,
+      "intellect": 15,
+      "spirit": 14,
+      "stamina": 17,
+      "mp5": 8,
+      "wand_dps": 52.5,
+      "crit": 14,
+      "mh_weapon_dps": 23.4
+     },
+     "bonus": {
+      "intellect": -87.5,
+      "spirit": -68.0,
+      "stamina": -10.5,
+      "agility": -2.5,
+      "armor": 44.5,
+      "spell_power": 295.2,
+      "healing": 317.5,
+      "crit_rating": 14,
+      "mp5": 8,
+      "wand_dps": 11.4
+     }
+    }
+   },
+   "55": {
+    "set": {
+     "back": "Triumphant Cloak of the Defender",
+     "chest": "Mystical Robe of the Sorcerer",
+     "feet": "Elegant Boots of the Sorcerer",
+     "finger1": "Obsidian Band of the Defender",
+     "finger2": "Swamp Ring of the Defender",
+     "hands": "Ghostweave Gloves",
+     "head": "Councillor's Circlet of the Sorcerer",
+     "legs": "Brightcloth Pants",
+     "neck": "Quicksilver Pendant of the Defender",
+     "ranged": "Lesser Eternal Wand",
+     "shoulder": "Celestial Pauldrons of the Sorcerer",
+     "waist": "Resplendent Belt of the Sorcerer",
+     "weapon": "Magus Long Staff of the Owl",
+     "wrist": "Elegant Bracers of the Sorcerer"
+    },
+    "totals": {
+     "armor": 467,
+     "stamina": 90,
+     "intellect": 105,
+     "healing": 100,
+     "spell_power": 100,
+     "defense": 16,
+     "spirit": 32,
+     "wand_dps": 45.8,
+     "mh_weapon_dps": 45.0
+    },
+    "standard": {
+     "intellect": 119.5,
+     "spirit": 68.0,
+     "stamina": 37.0,
+     "agility": 0.0,
+     "strength": 0.0,
+     "armor": 450.0,
+     "spell_power": 51.2,
+     "healing": 6.0,
+     "attack_power": 0.0
+    },
+    "bonus": {
+     "intellect": -14.5,
+     "spirit": -36.0,
+     "stamina": 53.0,
+     "armor": 17.0,
+     "spell_power": 48.8,
+     "healing": 94.0,
+     "defense_rating": 16,
+     "wand_dps": -5.1
+    },
+    "pool": 2458,
+    "best": {
+     "set": {
+      "back": "Adventurer's Cape of Magic",
+      "chest": "Bonecaster's Shroud of Magic",
+      "feet": "Venomspew Footpads",
+      "finger1": "Maiden's Circle",
+      "finger2": "Emperor's Seal of Magic",
+      "hands": "Resplendent Gauntlets of Magic",
+      "head": "Crimson Felt Hat",
+      "legs": "Ghostweave Pants",
+      "neck": "Chains of the Lich",
+      "offhand": "Obsidian Bauble",
+      "ranged": "Brilliant Wand",
+      "shoulder": "Elegant Mantle of Magic",
+      "trinket1": "Zarla's Snack Pouch",
+      "trinket2": "Infernal Lasso",
+      "waist": "High Councillor's Sash of Magic",
+      "weapon": "Grove Subjugator's Blade",
+      "wrist": "Tearfall Bracers of Magic"
+     },
+     "totals": {
+      "stamina": 14,
+      "intellect": 33,
+      "healing": 384,
+      "spell_power": 384,
+      "spirit": 44,
+      "armor": 492,
+      "wand_dps": 59.6,
+      "crit": 21,
+      "mh_weapon_dps": 26.4
+     },
+     "bonus": {
+      "intellect": -86.5,
+      "spirit": -24.0,
+      "stamina": -23.0,
+      "armor": 42.0,
+      "spell_power": 332.8,
+      "healing": 378.0,
+      "crit_rating": 21,
+      "wand_dps": 8.7
+     }
+    }
+   },
+   "60": {
+    "set": {
+     "back": "Masterwork Cape of the Hierophant",
+     "chest": "Resplendent Robes of the Sorcerer",
+     "feet": "Master's Boots of the Owl",
+     "finger1": "Peridot Circle of the Physician",
+     "finger2": "Vermilion Band of the Physician",
+     "hands": "Eternal Gloves of the Owl",
+     "head": "Wizardweave Turban",
+     "legs": "Eternal Sarong of the Sorcerer",
+     "neck": "Vermilion Necklace of the Physician",
+     "ranged": "Lunar Wand of the Owl",
+     "shoulder": "Eternal Spaulders of the Owl",
+     "waist": "Master's Belt of the Owl",
+     "weapon": "Solstice Staff of the Owl",
+     "wrist": "High Councillor's Bracers of the Owl"
+    },
+    "totals": {
+     "healing": 85,
+     "spell_power": 57,
+     "armor": 502,
+     "stamina": 66,
+     "intellect": 146,
+     "spirit": 94,
+     "wand_dps": 56.8,
+     "mh_weapon_dps": 46.7
+    },
+    "standard": {
+     "intellect": 128.5,
+     "spirit": 83.0,
+     "stamina": 33.5,
+     "agility": 0.0,
+     "strength": 3.0,
+     "armor": 477.0,
+     "spell_power": 74.2,
+     "healing": 8.0,
+     "attack_power": 0.0
+    },
+    "bonus": {
+     "intellect": 17.5,
+     "spirit": 11.0,
+     "stamina": 32.5,
+     "strength": -3.0,
+     "armor": 25.0,
+     "spell_power": -17.2,
+     "healing": 77.0,
+     "wand_dps": 2.3
+    },
+    "pool": 2252,
+    "best": {
+     "set": {
+      "back": "Archivist Cape of Magic",
+      "chest": "Master's Vest of Magic",
+      "feet": "Master's Boots of Magic",
+      "finger1": "Maiden's Circle",
+      "finger2": "Flaming Band of the Owl",
+      "hands": "Inferno Gloves",
+      "head": "Crimson Felt Hat",
+      "legs": "Bloodvine Leggings",
+      "neck": "Chains of the Lich",
+      "ranged": "90 Green Frost Wand",
+      "shoulder": "Mantle of the Timbermaw",
+      "trinket1": "Weakness Analyzer",
+      "trinket2": "Serenity Field",
+      "waist": "Master's Belt of Magic",
+      "weapon": "Crackling Staff",
+      "wrist": "Abyssal Cloth Wristbands of the Elder"
+     },
+     "totals": {
+      "stamina": 8,
+      "intellect": 101,
+      "healing": 370,
+      "spell_power": 398.7,
+      "spirit": 31,
+      "armor": 537,
+      "crit": 14,
+      "mp5": 4,
+      "hit": 10,
+      "wand_dps": 101.9,
+      "mh_weapon_dps": 41.3
+     },
+     "bonus": {
+      "intellect": -27.5,
+      "spirit": -52.0,
+      "stamina": -25.5,
+      "strength": -3.0,
+      "armor": 60.0,
+      "spell_power": 324.4,
+      "healing": 362.0,
+      "crit_rating": 14,
+      "mp5": 4,
+      "wand_dps": 47.5
+     }
+    }
+   }
   }
  },
  "date": "2026-11-13",

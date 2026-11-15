@@ -2,9 +2,9 @@
 
 [Hunter](../README.md) > [Leveling (solo)](README.md) > [Beast-Marks](beast-marks.md) > Level by level
 
-What a Beast-Marks hunter presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. It levels like Beast Mastery: the cat tanks and does a large part of the damage, you shoot from range with **Auto Shot**, **Serpent Sting** and, from 20, **Aimed Shot**. The split puts the pet talents first (levels 10-37), then Marksmanship's crit, cheaper shots and stronger stings. It takes neither **Bestial Wrath** nor **Intimidation**. Each stage lists the full priority, so you can jump in at your level.
+What a Beast-Marks hunter presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. It levels like Beast Mastery: the cat tanks and does a large part of the damage, you shoot from range with **Auto Shot**, **Serpent Sting** and, from 20, **Aimed Shot**. The split puts Marksmanship first (levels 10-30 and 32: crit, cheaper shots, stronger stings, **Careful Aim**, **Trueshot Aura** and **Rapid Recuperation**), **Improved Tracking** at 31 and 33-35, then the pet talents (36-59) and a fifth **Improved Tracking** point at 60. It takes neither **Bestial Wrath** nor **Intimidation**. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 28/19/4 ([open the talent tree](https://talentsforever.com/hunter/60/522011050502023-0053550001-4-12)), the one on the [Beast-Marks leveling page](beast-marks.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 23/23/5 ([open the talent tree](https://talentsforever.com/hunter/60/52201015050101-005355200111-5-12)), the one on the [Beast-Marks leveling page](beast-marks.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -13,12 +13,12 @@ What a Beast-Marks hunter presses from level 1 to 60, stage by stage, as the tra
 | 1-3 | Send the pet, then shoot from range: **Auto Shot** fires on its own. |
 | 4-5 | **Serpent Sting** on every mob: a poison that ticks for 15 seconds. |
 | 6-9 | **Hunter's Mark** first: your shots hit harder on the marked mob. |
-| 10-11 | **Tame Beast** and **Aspect of the Hawk**. Talent points start with **Deadly Aspects**. |
+| 10-11 | **Tame Beast** and **Aspect of the Hawk**. Talent points start with **Lethal Attacks**. |
 | 12-19 | **Mend Pet** keeps your tank alive. **Wing Clip** for a mob that gets to you. |
 | 20-25 | **Aimed Shot** whenever it is ready: your one cooldown shot. |
-| 26-29 | **Rapid Fire** at the pull: 40% faster shots for 15 seconds. |
+| 26-29 | **Rapid Fire** at the pull: 40% faster shots for 15 seconds, every 3 minutes from 29 with **Rapid Killing**. |
 | 30-37 | **Feign Death** sends a mob that reaches you back to the pet. |
-| 38-60 | The rotation is complete. The points go to Marksmanship's crit, cheaper shots and stronger stings. Buy every new rank. |
+| 38-60 | The rotation is complete. The points go to Beast Mastery: the pet's damage, crit and health. Buy every new rank. |
 
 ## Keybinds by level
 
@@ -63,7 +63,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Nothing on bar 1 ever swaps: every key gets its spell once and keeps it. The Mouse 4 macro gains its **Serpent Sting** line at 4. Q waits for **Aimed Shot** at 20: before that, the pull keys and **Auto Shot** do the work.
 - Mouse 4 and 1 are macros that also send the pet, so the first press of a pull sends it, whichever key that is. Mouse 4 is the Sting and send macro of the [macro page](../macros.md): `#showtooltip Serpent Sting`, `/petattack`, `/cast !Auto Shot`, `/cast Serpent Sting` (at levels 1-3 leave out the sting line). 1: `#showtooltip Hunter's Mark`, `/petattack`, `/cast Hunter's Mark`. The `!` keeps a second press from turning **Auto Shot** off. Pet commands and **Auto Shot** are off the global cooldown, so one press does all of it.
 - The pet bar keeps its own keys. Keep the pet's Growl on: it is your tank.
-- No key: **Aspect of the Hawk**, **Trueshot Aura** (53), the tracking, **Call Pet**, **Feed Pet**, **Revive Pet**, food, drink, the mount and the Hearthstone. Click them between fights.
+- No key: **Aspect of the Hawk**, **Trueshot Aura** (25), the tracking, **Call Pet**, **Feed Pet**, **Revive Pet**, food, drink, the mount and the Hearthstone. Click them between fights.
 - **Arcane Shot** on Shift+Mouse 5 is not in the single-mob rotation: it is there for a mob that runs. The Shift bar is for packs and trouble: **Multi-Shot** shares **Aimed Shot**'s cooldown, so the single-mob rotation never casts it; **Volley** (40) is a channel for a pack.
 
 ## Levels 1-3: Auto Shot and the pet
@@ -137,7 +137,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Serpent Sting at 10.
 
-**Talents:** 10-11 Deadly Aspects.
+**Talents:** 10-11 Lethal Attacks.
 
 **Your keys in this stage:** Mouse 4 Serpent Sting, 1 Hunter's Mark, 4 Raptor Strike.
 
@@ -151,10 +151,10 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** A mob on you: **Raptor Strike** until the pet takes it back.
 
 - **Aspect of the Hawk** (10) stays on from here: more ranged attack power. No key, click it.
-- **Deadly Aspects** (10-14): while **Aspect of the Hawk** is on, **Auto Shot** sometimes speeds up your shooting by 30% for 12 seconds.
+- **Lethal Attacks** (10-14): 5% more crit with every attack.
 - **Call Pet**, **Feed Pet** and **Revive Pet** (10) are between-fights buttons.
 
-*Fight lab, seconds per kill: 14 at level 10. Presses per kill at level 10: Claw 3.8, Auto Shot 2.6, Growl 1.1, Hunter's Mark 1.0, Serpent Sting 1.0, Bite 1.0.*
+*Fight lab, seconds per kill: 14 at level 10. Presses per kill at level 10: Claw 3.7, Auto Shot 2.6, Growl 1.1, Hunter's Mark 1.0, Bite 1.0, Serpent Sting 1.0.*
 
 ## Levels 12-19: Mend Pet and Wing Clip
 
@@ -162,7 +162,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Arcane Shot at 12; Raptor Strike at 16; Serpent Sting at 18.
 
-**Talents:** 12-14 Deadly Aspects, 15-16 Focused Fire, 17-18 Endurance Training, 19 Improved Revive Pet.
+**Talents:** 12-14 Lethal Attacks, 15-19 Efficiency.
 
 **Keys to set:** E = Wing Clip; 3 = Mend Pet; Shift+E = Scare Beast (at 14); Mouse 5 = Mongoose Bite (at 16); Shift+2 = Multi-Shot (at 18).
 
@@ -177,11 +177,11 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** **Mend Pet** when the pet drops below a third of its health. A mob on you: **Raptor Strike** and **Wing Clip** until the pet takes it back.
 
-- **Focused Fire** (15-16) adds 2% to your damage and the pet's. **Endurance Training** (17-18) gives the pet more health and armor. **Improved Revive Pet** (19) makes **Revive Pet** quicker and cheaper.
+- **Efficiency** (15-19) makes your shots and stings 15% cheaper.
 - **Mongoose Bite** (16) lights up after you dodge: one more button for a mob on you.
 - **Scare Beast** (14) holds a second beast. **Multi-Shot** (18) is for packs: the tuned rules never cast it on one mob, because it shares **Aimed Shot**'s cooldown.
 
-*Fight lab, seconds per kill: 15 at level 12, 16 at level 19. Presses per kill at level 12: Claw 4.2, Auto Shot 3.1, Growl 1.4, Serpent Sting 1.0, Hunter's Mark 1.0, Bite 1.0.*
+*Fight lab, seconds per kill: 14 at level 12, 16 at level 19. Presses per kill at level 12: Claw 4.2, Auto Shot 3.0, Growl 1.3, Serpent Sting 1.0, Hunter's Mark 1.0, Bite 1.0.*
 
 ## Levels 20-25: Aimed Shot
 
@@ -189,7 +189,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Arcane Shot at 20; Hunter's Mark at 22; Mend Pet at 20; Raptor Strike at 24.
 
-**Talents:** 20-24 Unleashed Fury, 25 Ferocity.
+**Talents:** 20-22 Improved Stings, 23-24 Careful Aim, 25 Trueshot Aura.
 
 **Keys to set:** Q = Aimed Shot; 2 = Freezing Trap.
 
@@ -200,16 +200,16 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 1. Send the pet in first and let it hold the mob.
 2. **Hunter's Mark** while the mob has more than 30% of its health.
 3. **Serpent Sting** while it has more than 40%.
-4. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.
+4. **Aimed Shot** whenever it is ready while the mob has more than 35% of its health.
 5. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards.
 
 **If the fight goes wrong:** **Mend Pet** when the pet drops below a third of its health. A mob on you: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.
 
-- **Aimed Shot** has a 2-second cast and a 6-second cooldown it shares with **Multi-Shot**. Below a quarter of the mob's health, let **Auto Shot** and the pet finish it.
-- **Unleashed Fury** (20-24) and **Ferocity** (25-29): the pet hits 15% harder and crits 10% more.
+- **Aimed Shot** has a 2-second cast and a 6-second cooldown it shares with **Multi-Shot**. Below 35% of the mob's health, let **Auto Shot** and the pet finish it: the tuned rules (2026-11-15) measured that slightly faster.
+- **Improved Stings** (20-22): **Serpent Sting** does 20% more damage. **Careful Aim** (23-24, 26, 28 and 32): attack power from your Intellect. **Trueshot Aura** (25) is a buff you cast in Forever: keep it on, no key.
 - **Freezing Trap** (20): drop it before a pull that will bring two mobs. **Aspect of the Cheetah** (20) is for the road.
 
-*Fight lab, seconds per kill: 16 at level 20, 17 at level 25. Presses per kill at level 20: Claw 3.9, Auto Shot 3.1, Growl 1.3, Serpent Sting 1.0, Hunter's Mark 1.0, Bite 1.0, Aimed Shot 1.0.*
+*Fight lab, seconds per kill: 16 at level 20, 16 at level 25. Presses per kill at level 20: Claw 3.9, Auto Shot 2.9, Growl 1.3, Serpent Sting 1.0, Hunter's Mark 1.0, Bite 1.0, Aimed Shot 0.9.*
 
 ## Levels 26-29: Rapid Fire
 
@@ -217,7 +217,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Aimed Shot at 28; Arcane Shot at 28; Mend Pet at 28; Serpent Sting at 26.
 
-**Talents:** 26-29 Ferocity.
+**Talents:** 26 Careful Aim, 27 Rapid Killing, 28 Careful Aim, 29 Rapid Killing.
 
 **Keys to set:** C = Rapid Fire; Shift+1 = Frost Trap (at 28).
 
@@ -229,15 +229,15 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 2. **Rapid Fire** at the pull when it is ready.
 3. **Hunter's Mark** while the mob has more than 30% of its health.
 4. **Serpent Sting** while it has more than 40%.
-5. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.
+5. **Aimed Shot** whenever it is ready while the mob has more than 35% of its health.
 6. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards.
 
 **If the fight goes wrong:** **Mend Pet** when the pet drops below a third of its health. A mob on you: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.
 
-- The fight lab casts **Rapid Fire** at the start of every fight it is ready for. This build has no **Rapid Killing**, so the cooldown stays at 5 minutes.
+- The fight lab casts **Rapid Fire** at the start of every fight it is ready for. **Rapid Killing** (27 and 29) cuts its cooldown from 5 minutes to 4, then 3; its other half, a stronger next shot after a kill, is not in the fight lab.
 - **Frost Trap** (28) slows a pack.
 
-*Fight lab, seconds per kill: 18 at level 26. Presses per kill at level 26: Claw 4.2, Auto Shot 3.6, Growl 1.5, Serpent Sting 1.0, Hunter's Mark 1.0, Bite 1.0, Aimed Shot 1.0.*
+*Fight lab, seconds per kill: 18 at level 26. Presses per kill at level 26: Claw 4.0, Auto Shot 3.4, Growl 1.5, Serpent Sting 1.0, Hunter's Mark 1.0, Bite 1.0, Aimed Shot 1.0, Melee 0.1.*
 
 ## Levels 30-37: Feign Death
 
@@ -245,7 +245,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Aimed Shot at 36; Arcane Shot at 36; Mend Pet at 36; Mongoose Bite at 30; Raptor Strike at 32; Scare Beast at 30; Serpent Sting at 34.
 
-**Talents:** 30-31 Bestial Discipline, 32 Pathfinding, 33-34 Spirit Bond, 35-37 Frenzy.
+**Talents:** 30 Rapid Recuperation, 31 Improved Tracking, 32 Careful Aim, 33-35 Improved Tracking, 36-37 Deadly Aspects.
 
 **Keys to set:** F = Feign Death; Shift+R = Explosive Trap (at 34).
 
@@ -257,23 +257,23 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 2. **Rapid Fire** at the pull when it is ready.
 3. **Hunter's Mark** while the mob has more than 30% of its health.
 4. **Serpent Sting** while it has more than 40%.
-5. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.
+5. **Aimed Shot** whenever it is ready while the mob has more than 35% of its health.
 6. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards.
 
 **If the fight goes wrong:** **Mend Pet** when the pet drops below a third of its health. A mob on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.
 
-- **Bestial Discipline** (30-31) lets half your mana regeneration continue while casting. **Pathfinding** (32) is the point the row needs. **Spirit Bond** (33-34) heals you and the pet 1% of health every 5 seconds. **Frenzy** (35-37): after a crit the pet sometimes attacks 30% faster for 8 seconds.
+- **Rapid Recuperation** (30): after **Serpent Sting**, a quarter of your mana regeneration continues while casting for 15 seconds, half after you spend a **Rapid Killing**. **Improved Tracking** (31 and 33-35): keep the tracking of the mobs you fight switched on. **Deadly Aspects** (36-40): while **Aspect of the Hawk** is on, **Auto Shot** sometimes speeds up your shooting by 30% for 12 seconds.
 - **Explosive Trap** (34) is for packs.
 
-*Fight lab, seconds per kill: 19 at level 30, 22 at level 37. Presses per kill at level 30: Claw 5.2, Auto Shot 4.1, Growl 1.9, Serpent Sting 1.0, Hunter's Mark 1.0, Bite 1.0, Aimed Shot 1.0.*
+*Fight lab, seconds per kill: 19 at level 30, 21 at level 37. Presses per kill at level 30: Claw 4.6, Auto Shot 4.0, Growl 1.9, Serpent Sting 1.0, Bite 1.0, Hunter's Mark 1.0, Aimed Shot 1.0, Feign Death 0.2.*
 
-## Levels 38-60: Marksmanship talents, nothing new to press
+## Levels 38-60: Beast Mastery talents, nothing new to press
 
 **The trainer teaches:** Aspect of the Pack (40), Track Giants (40), Volley (40), Aspect of the Wild (46), Track Dragonkin (50), Tranquilizing Shot (60).
 
 **New ranks to buy:** Aimed Shot at 44, 52, 60; Arcane Shot at 44, 52, 60; Explosive Trap at 44, 54; Freezing Trap at 40, 60; Hunter's Mark at 40, 58; Mend Pet at 44, 52, 60; Mongoose Bite at 44, 58; Raptor Strike at 40, 48, 56; Scare Beast at 46; Serpent Sting at 42, 50, 58, 60; Volley at 50, 58; Wing Clip at 38, 60.
 
-**Talents:** 38-42 Lethal Attacks, 43-47 Efficiency, 48-50 Improved Stings, 51-52 Careful Aim, 53 Trueshot Aura, 54-56 Careful Aim, 57-60 Improved Tracking.
+**Talents:** 38-40 Deadly Aspects, 41-42 Focused Fire, 43-44 Endurance Training, 45 Improved Revive Pet, 46-50 Unleashed Fury, 51-55 Ferocity, 56 Bestial Swiftness, 57 Bestial Discipline, 58 Mortal Shots, 59 Spirit Bond, 60 Improved Tracking.
 
 **Keys to set:** Shift+3 = Volley (at 40).
 
@@ -285,21 +285,21 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 2. **Rapid Fire** at the pull when it is ready.
 3. **Hunter's Mark** while the mob has more than 30% of its health.
 4. **Serpent Sting** while it has more than 40%.
-5. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.
+5. **Aimed Shot** whenever it is ready while the mob has more than 35% of its health.
 6. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards.
 
 **If the fight goes wrong:** **Mend Pet** when the pet drops below a third of its health. A mob on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.
 
-- **Lethal Attacks** (38-42): 5% more crit. **Efficiency** (43-47): shots and stings 15% cheaper. **Improved Stings** (48-50): **Serpent Sting** does 20% more damage. **Careful Aim** (51-52, 54-56): attack power from your Intellect.
-- **Trueshot Aura** (53) is a buff you cast in Forever: keep it on. **Improved Tracking** (57-60): keep the tracking of the mobs you fight switched on.
+- **Focused Fire** (41-42) adds 2% to your damage and the pet's. **Endurance Training** (43-44) gives the pet 6% more health and armor. **Improved Revive Pet** (45) makes **Revive Pet** quicker and cheaper. **Unleashed Fury** (46-50) and **Ferocity** (51-55): the pet hits 15% harder and crits 10% more.
+- **Bestial Swiftness** (56): the pet runs 30% faster. **Bestial Discipline** (57): a quarter of your mana regeneration continues while casting, all the time, and the pet's focus comes back 10% faster. **Mortal Shots** (58): the critical strike damage bonus of your ranged attacks 6% higher. **Spirit Bond** (59): you and the pet regain 1% of health every 10 seconds. **Improved Tracking** (60): the fifth point, 5% more damage to the tracked creature type.
 - **Volley** (40) is a channel for packs, with **Multi-Shot**.
 
-*Fight lab, seconds per kill: 22 at level 38, 23 at level 40, 24 at level 50, 25 at level 60. Presses per kill at level 38: Claw 6.5, Auto Shot 5.2, Growl 2.3, Aimed Shot 1.1, Serpent Sting 1.0, Hunter's Mark 1.0, Bite 1.0, Feign Death 0.1.*
+*Fight lab, seconds per kill: 22 at level 38, 23 at level 40, 24 at level 50, 25 at level 60. Presses per kill at level 38: Claw 5.1, Auto Shot 5.0, Growl 2.2, Bite 1.4, Serpent Sting 1.0, Aimed Shot 1.0, Hunter's Mark 1.0, Feign Death 0.3, Melee 0.1, Wing Clip 0.1, Raptor Strike 0.1.*
 
 ## Between fights
 
-- Mend the pet below half its health, drink below 35% of your mana, eat below 65% of your health. Feed the pet when it sulks, and revive it before the next pull if it died.
-- Keep **Aspect of the Hawk** on, and **Trueshot Aura** from 53. From 57, keep the right tracking on: **Improved Tracking** only pays for the mobs you track.
+- Mend the pet below half its health, drink below 15% of your mana, eat below 65% of your health. The tuned rules drink this late: fewer stops measured slightly faster. Feed the pet when it sulks, and revive it before the next pull if it died.
+- Keep **Aspect of the Hawk** on, and **Trueshot Aura** from 25. From 33, keep the right tracking on: **Improved Tracking** only pays for the mobs you track.
 - Visit the trainer every even level: **Serpent Sting**, **Aimed Shot** and **Mend Pet** have many ranks.
 
 ## Other ways to level this class
@@ -308,4 +308,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Beast Mastery plays this same rotation with **Bestial Wrath** and **Intimidation** at the pull: [its guide](beast-mastery-by-level.md). Marksmanship finishes with **Arcane Shot**: [its guide](marksmanship-by-level.md).
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-13: the stages are hand-kept in `_reference/data/level-guides/hunter.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-15: the stages are hand-kept in `_reference/data/level-guides/hunter.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

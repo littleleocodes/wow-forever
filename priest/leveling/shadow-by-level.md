@@ -139,16 +139,17 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 1. **Shadow Word: Pain** to pull.
 2. **Mind Blast** whenever it is ready.
-3. **Mind Flay** in between. It slows the mob while you channel.
+3. **Mind Flay** in between while you have more than 30% of your mana; below that, your wand. **Mind Flay** slows the mob while you channel.
 4. Your wand finishes a mob with a hit or two left.
 
 **If the fight goes wrong:** Below a third of your health: **Flash Heal**. **Psychic Scream** if a mob is on you and you are below 40%. **Power Word: Shield** before a pull you start below half your health.
 
 - **Devouring Plague** (20): leave it off your bar. The tuned rotation never casts it: it costs too much mana for what it does before the mob dies.
+- The wand below 30% mana is a tuned rule (2026-11-15), slightly faster per kill than channelling to the last drop.
 - **Improved Mind Blast** (24, 31-34) shortens the cooldown, so **Mind Blast** comes round more often as you level.
 - Racial spells in the list above: Feedback (Human), Chastise (Dwarf), Elune's Grace (Night Elf), Contingency Plan (Gnome), Dark Sacrifice (Undead), Shadowguard (Troll). Only that race can learn its own.
 
-*Fight lab, seconds per kill: 32 at level 20, 35 at level 30, 37 at level 31. Presses per kill at level 20: Mind Flay 2.9, Mind Blast 2.0, Wand 1.9, Shadow Word: Pain 1.0.*
+*Fight lab, seconds per kill: 31 at level 20, 35 at level 30, 36 at level 31. Presses per kill at level 20: Wand 4.6, Mind Blast 2.1, Mind Flay 1.7, Shadow Word: Pain 1.0.*
 
 ## Levels 32-38: Shadow Word: Death
 
@@ -167,7 +168,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 1. **Shadow Word: Pain** to pull.
 2. **Mind Blast** whenever it is ready.
 3. **Shadow Word: Death** when one cast will kill the mob.
-4. **Mind Flay** in between.
+4. **Mind Flay** in between while you have more than 30% of your mana; below that, your wand.
 5. Your wand finishes a mob with a hit or two left.
 
 **If the fight goes wrong:** Below a third of your health: **Flash Heal**. **Psychic Scream** if a mob is on you and you are below 40%. **Power Word: Shield** before a pull you start below half your health.
@@ -175,7 +176,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Early Demise** (35) adds 15% critical strike chance to **Shadow Word: Death** on a mob at or below 20% of its health. It does not unlock a cast: the spell was always castable. The fight lab casts it there too.
 - **Shadow Word: Death** hurts you for 30% of your maximum health when the mob survives it. Keep it for the finish.
 
-*Fight lab, seconds per kill: 35 at level 32, 37 at level 38. Presses per kill at level 32: Mind Flay 3.0, Mind Blast 1.9, Wand 1.0, Shadow Word: Pain 1.0, Shadow Word: Death 1.0.*
+*Fight lab, seconds per kill: 35 at level 32, 37 at level 38. Presses per kill at level 32: Mind Flay 2.3, Wand 2.2, Mind Blast 2.0, Shadow Word: Pain 1.1, Shadow Word: Death 1.0.*
 
 ## Levels 39-60: Vampiric Embrace, then Shadowform
 
@@ -194,7 +195,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 1. Pull with the instants: **Vampiric Embrace** when it is ready, then **Shadow Word: Pain**.
 2. **Mind Blast** whenever it is ready.
 3. **Shadow Word: Death** when one cast will kill the mob, or on a mob at or below 20% of its health (**Early Demise** adds crit there; if the mob survives you take the backlash).
-4. **Mind Flay** in between.
+4. **Mind Flay** in between while you have more than 30% of your mana; below that, your wand.
 5. Your wand finishes a mob with a hit or two left.
 
 **If the fight goes wrong:** **Psychic Scream** if a mob is on you and you are below 40% of your health. At 39, before Shadowform, a **Flash Heal** below a third.
@@ -203,7 +204,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - In **Shadowform** you cannot cast Holy spells. Eat or bandage between fights instead of healing yourself.
 - The remaining points: **Darkness** (41-42) and **Dark Inspiration** (43-44), then mana: **Twin Disciplines** (45-49), **Twilight Focus** (50-52), **Mental Strength** (53-55), **Power in Light** (56-57, which this rotation never uses) and **Meditation** (58-60).
 
-*Fight lab, seconds per kill: 37 at level 39, 22 at level 40, 21 at level 50, 20 at level 60. Presses per kill at level 39: Mind Flay 2.9, Mind Blast 2.1, Wand 1.1, Shadow Word: Pain 1.0, Shadow Word: Death 1.0, Vampiric Embrace 0.8.*
+*Fight lab, seconds per kill: 37 at level 39, 22 at level 40, 21 at level 50, 20 at level 60. Presses per kill at level 39: Wand 2.9, Mind Blast 2.3, Mind Flay 2.1, Shadow Word: Pain 1.0, Shadow Word: Death 1.0, Vampiric Embrace 0.8.*
 
 ## Between fights
 
@@ -218,4 +219,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Shadow is the fastest priest leveler at every level the fight lab simulates (20 to 60). Before 20 the wand does most of the work in every spec.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-13: the stages are hand-kept in `_reference/data/level-guides/priest.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-15: the stages are hand-kept in `_reference/data/level-guides/priest.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

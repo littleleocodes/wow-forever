@@ -4,15 +4,15 @@
 
 **Leveling from level 1?** [The rotation level by level](arcane-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Arcane — Leveling](../research/leveling/builds/arcane-open-leveling.md)** (31/0/20) — [open the talent tree](https://talentsforever.com/mage/60/051005203100311531--2323022021003-12)
+**[Arcane — Leveling](../research/leveling/builds/arcane-open-leveling.md)** (33/0/18) — [open the talent tree](https://talentsforever.com/mage/60/051205203100311531--2321022021003-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-**Signature spells:** 76% of the damage at level 60 in the fight lab comes from the spec's core spells (Arcane Blast, Arcane Missiles, Arcane Wrath) (the spec's rule: at least 50%; **Arcane Blast** cast at level 60).
+**Signature spells:** 78% of the damage at level 60 in the fight lab comes from the spec's core spells (Arcane Blast, Arcane Missiles, Arcane Wrath) (the spec's rule: at least 50%; **Arcane Blast** cast at level 60).
 
 ## How to play
 
-**Before the fight:** **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up. Pull from as far away as you can; **Presence of Mind** at the pull (your first cast goes out instantly).
+**Before the fight:** **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up. Pull from as far away as you can; **Presence of Mind** at the pull (your first cast goes out instantly); **Arcane Power** at the pull when it is ready and you have more than half your mana (once you have the talent, at 42).
 
 **In the fight**, top to bottom:
 
@@ -27,23 +27,23 @@
 
 ## Why this rotation
 
-Arcane levels on its own spells: **Arcane Wrath** to open (from 25), two **Arcane Blast** stacks while the mob walks in, then **Arcane Missiles**, which you keep channeling when the mob reaches you; **Frost Nova** and a step back when it arrives. The page's order takes Arcane first (**Arcane Blast** at 20, **Missile Barrage** at 21-22, **Presence of Mind** at 30) and Frost from level 40, all but **Arcane Power** at 59. In the open leveling search's 20-60 race of 2026-11-06 it took about 31.2 seconds per kill level-weighted, behind the Arcane-Frost and Frost pages' builds; the page's numbers table has each level.
+Arcane levels on its own spells: **Arcane Wrath** to open (from 25), two **Arcane Blast** stacks while the mob walks in, then **Arcane Missiles**, which you keep channeling when the mob reaches you; **Frost Nova** and a step back when it arrives. The page's order takes Arcane first (**Arcane Blast** at 20, **Missile Barrage** at 21-22, **Presence of Mind** at 30, **Arcane Power** at 42) with two Frost points for hit at 38-39, and puts the other 16 Frost points last, from 45. In the open leveling search's 20-60 race of 2026-11-15 it took about 30.0 seconds per kill level-weighted, behind the Arcane-Frost page's 28.5 and level with the Frost page's 30.0; the page's numbers table has each level.
 
 **Why it works**
 
-- **Presence of Mind** (level 30) at the pull makes your first cast instant (the opening **Arcane Wrath** in the fight lab). From level 59 **Arcane Power** goes at the pull too, whenever it is ready and you have more than half your mana: 15 seconds of 30% more spell damage at 30% more mana cost.
+- **Presence of Mind** (level 30) at the pull makes your first cast instant (the opening **Arcane Wrath** in the fight lab). From level 42 **Arcane Power** goes at the pull too, whenever it is ready and you have more than half your mana: 15 seconds of 30% more spell damage at 30% more mana cost.
 - **Arcane Wrath** opens when its cast (3.5 seconds) lands before the mob arrives, then goes out whenever it is ready (6-second cooldown) and the cast fits. It gains spell damage equal to 5% of your maximum mana, and each cast has a 20% chance to light up **Missile Barrage**.
-- **Arcane Blast** twice while the mob walks in: each cast gives you 12% of your Intellect as spell damage for 18 seconds and doubles the next cast's cost, so the fight lab stops at two and starts one only while it costs at most a quarter of your mana and will finish before the mob reaches you. Each cast rolls 40% for **Missile Barrage**. Without **Arcane Blast** a kill at 60 takes about 1.9 seconds longer in the open search.
-- **Arcane Missiles** is the main spell, at range and in melee: **Improved Channeling** at 5 points gives a 100% chance that hits do not interrupt the channel (70% for **Arcane Blast** and **Arcane Wrath**). **Missile Barrage** makes the next one free, 2.5 seconds long and twice as dense: cast it at once after your two stacks, or when the mob is on you. At level 60 the build loses about 4.6 seconds per kill without **Missile Barrage**, 1.9 without **Improved Channeling**, then **Arcane Mind** (1.6), **Arcane Meditation** (1.5), **Arcane Instability** (1.4) and **Arcane Concentration** (1.3).
-- **Frost Nova** is in the list: when the mob reaches you and has more than about a tenth of its health, freeze it and step back, then keep channeling. The tuned rules (2026-11-06) switch off only **Cone of Cold**, which is cast just when the mob is on you and below a fifth of its health.
-- **Fire Blast** finishes a mob it will kill, and when you cannot afford **Arcane Missiles** it is the instant for a mob on you, else **Frostbolt**. The 20 Frost points come last, from level 40: **Precision** for hit, **Improved Frostbolt**, **Ice Shards**, **Improved Frost Nova**, **Frost Warding**, **Ice Lance** at 50, then **Improved Blizzard**, **Shatter** (55-56, 60) and **Permafrost** (57-58). A freeze comes from **Frost Nova** or a chill (your armor chilling a mob that hits you); **Ice Lance** into it was worth about 1.1 seconds per kill at 60 in the open search, before the filler pass added **Shatter**'s 50% crit chance against a frozen mob.
+- **Arcane Blast** twice while the mob walks in: each cast gives you 12% of your Intellect as spell damage for 18 seconds and doubles the next cast's cost, so the fight lab stops at two and starts one only while it costs at most a quarter of your mana and will finish before the mob reaches you. Each cast rolls 40% for **Missile Barrage**. Without **Arcane Blast** a kill at 60 takes about 2.4 seconds longer in the open search.
+- **Arcane Missiles** is the main spell, at range and in melee: **Improved Channeling** at 5 points gives a 100% chance that hits do not interrupt the channel (70% for **Arcane Blast** and **Arcane Wrath**). **Missile Barrage** makes the next one free, 2.5 seconds long and twice as dense: cast it at once after your two stacks, or when the mob is on you. At level 60 the build loses about 4.2 seconds per kill without **Missile Barrage**, 1.4 without **Improved Channeling**, then **Arcane Mind** (1.2), **Precision** (1.0), **Arcane Meditation** (1.0), **Arcane Instability** (0.9) and **Arcane Concentration** (0.9).
+- **Frost Nova** is in the list: when the mob reaches you and has more than about a tenth of its health, freeze it and step back, then keep channeling. The tuned rules (2026-11-06) hold back only **Cone of Cold**: it is cast just when the mob is on you, **Frost Nova** is down and the mob is below a fifth of its health.
+- **Fire Blast** finishes a mob it will kill, and when you cannot afford **Arcane Missiles** it is the instant for a mob on you, else **Frostbolt**. The 18 Frost points: **Precision** (38-39) for hit, then **Improved Frostbolt** (45-47), **Ice Shards** (48), **Improved Frost Nova** (49-50), **Frost Warding** (51-52), **Ice Lance** (53), **Improved Blizzard** (54-55), **Permafrost** (56-57) and **Shatter** (58-60). Only **Frost Nova** freezes the mob in this build (it has no **Frostbite**); in the open search **Ice Lance** into the freeze is worth about 0.5 seconds per kill at 60 and **Shatter** 0.6.
 
 **Caveats**
 
-- This build takes **Ice Lance** only at level 50: before that, skip its line of the list.
+- This build takes **Ice Lance** only at level 53: before that, skip its line of the list.
 - Mana: **Arcane Missiles** costs 655 at top rank, every **Arcane Blast** stack makes the next one dearer. **Frostbolt** (290) is for when you cannot afford the Missiles. The tuned rules set no thresholds for this list, so the fight lab rests at its defaults: drink below 35% of your mana (about a third), eat below 65% of your health (two thirds); use **Evocation** between fights when it is ready and you are under 40% mana.
 - Single pulls only: with several mobs on you, **Frost Nova** and **Arcane Explosion** are back in play.
-- This is the open leveling search's 30/0/21 winner (Frost as the second tree), written in place of an earlier 31/17/3 build with Fire points and Arcane Power; the search's race had the two within 0.1% at levels 20-60, a tie. The leveling filler pass of 2026-11-09 moved five points that measured nothing or only held a tier open (both Arctic Reach, Fingers of Frost and one point each of **Permafrost** and **Improved Blizzard**) to **Shatter**, **Arcane Power** and **Improved Frost Nova**: 31/0/20.
+- This is the open leveling search's 33/0/18 winner of 2026-11-15, 1.6% faster per kill at levels 20-60 than the 31/0/20 build it replaced: two points moved from **Ice Shards** to **Arcane Subtlety**, **Arcane Power** at 42 instead of 59 and **Ice Lance** at 53 instead of 50.
 
 **When to change it**
 
@@ -62,46 +62,43 @@ One point per level from 10, in this order:
 | 15-19 | Arcane Concentration (Arcane) | 5 |
 | 20 | Arcane Blast (Arcane) | 1 |
 | 21-22 | Missile Barrage (Arcane) | 2 |
-| 23 | Improved Channeling (Arcane) | 1 |
-| 24 | Arcane Impact (Arcane) | 1 |
+| 23-24 | Arcane Subtlety (Arcane) | 2 |
 | 25 | Arcane Wrath (Arcane) | 1 |
 | 26-28 | Arcane Meditation (Arcane) | 3 |
-| 29 | Arcane Impact (Arcane) | 1 |
+| 29 | Improved Channeling (Arcane) | 1 |
 | 30 | Presence of Mind (Arcane) | 1 |
-| 31 | Arcane Impact (Arcane) | 1 |
-| 32-34 | Arcane Mind (Arcane) | 3 |
+| 31-33 | Arcane Impact (Arcane) | 3 |
+| 34 | Arcane Mind (Arcane) | 1 |
 | 35-37 | Arcane Instability (Arcane) | 3 |
-| 38-39 | Arcane Mind (Arcane) | 2 |
-| 40-41 | Precision (Frost) | 2 |
-| 42-44 | Improved Frostbolt (Frost) | 3 |
-| 45-47 | Ice Shards (Frost) | 3 |
-| 48 | Improved Frost Nova (Frost) | 1 |
-| 49 | Frost Warding (Frost) | 1 |
-| 50 | Ice Lance (Frost) | 1 |
-| 51 | Frost Warding (Frost) | 1 |
-| 52-53 | Improved Blizzard (Frost) | 2 |
-| 54 | Improved Frost Nova (Frost) | 1 |
-| 55-56 | Shatter (Frost) | 2 |
-| 57-58 | Permafrost (Frost) | 2 |
-| 59 | Arcane Power (Arcane) | 1 |
-| 60 | Shatter (Frost) | 1 |
+| 38-39 | Precision (Frost) | 2 |
+| 40-41 | Arcane Mind (Arcane) | 2 |
+| 42 | Arcane Power (Arcane) | 1 |
+| 43-44 | Arcane Mind (Arcane) | 2 |
+| 45-47 | Improved Frostbolt (Frost) | 3 |
+| 48 | Ice Shards (Frost) | 1 |
+| 49-50 | Improved Frost Nova (Frost) | 2 |
+| 51-52 | Frost Warding (Frost) | 2 |
+| 53 | Ice Lance (Frost) | 1 |
+| 54-55 | Improved Blizzard (Frost) | 2 |
+| 56-57 | Permafrost (Frost) | 2 |
+| 58-60 | Shatter (Frost) | 3 |
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
 | 20 | 35 | 21 |
-| 30 | 33 | 20 |
-| 40 | 32 | 23 |
-| 50 | 31 | 24 |
-| 60 | 29 | 24 |
+| 30 | 31 | 20 |
+| 40 | 31 | 22 |
+| 50 | 30 | 23 |
+| 60 | 27 | 22 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
 ## Other builds of this spec
 
-- [Arcane — Leveling](../research/leveling/builds/arcane-leveling.md) (29/0/22, 39 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/mage/60/21221500301030153--0525300001013002-12)
+- [Arcane — Leveling](../research/leveling/builds/arcane-leveling.md) (29/0/22, 37 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/mage/60/21221500301030153--0525300001013002-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-13 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-15 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

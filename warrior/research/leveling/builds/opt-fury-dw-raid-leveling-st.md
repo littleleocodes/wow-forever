@@ -90,18 +90,20 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-
 
 Single-target leveling fights against normal mobs of your level. Arms (a two-hander) and Fury (a weapon in each hand) fight in Battle Stance: Bloodrage and Charge on the pull (the mob is stunned 1 s; Death Wish too when the build has it), Battle Shout kept up, Victory Rush after a kill, Mortal Strike or Bloodthirst on cooldown, Overpower after a dodge or a Bloodthrill proc, Rend once, Execute under 20% with all the rage, Heroic Strike with spare rage, Reckless Swings (when talented) while health allows; spells that need Berserker Stance (Whirlwind, Berserker Rage) are never cast. Protection fights sword and board in Defensive Stance: Charge from Battle Stance, then Shield Block while the mob hits, Revenge, Shield Slam, Rend and Heroic Strike. White swings generate rage by Forever's normalized rule (weapon speed, half for the off-hand, double on a crit; tables.RAGE_MODEL) (the mob dodges 5%, parries 5%, 10% of swings glance for 95%). Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below the eating threshold (65%; 40% under the tuned Arms and Fury rules), rage decays; a death costs 90 s.
 
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-15, on top of the priority below): eat below 40% health. Together +0.3% time per kill saved for `fury-open-leveling` (level-weighted, a third seed of 3000 fights per level).
+
 What this build casts per kill ([report](../fightlab/fury-dw-raid.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee (off-hand) | 5.6 | 6.4 | 7.2 | 8.2 | 9.3 | 21% |
-| Melee | 3.1 | 4.3 | 6.6 | 7.3 | 8.2 | 26% |
-| Bloodthirst | 0.0 | 0.0 | 2.0 | 2.4 | 2.8 | 19% |
+| Melee (off-hand) | 5.5 | 6.3 | 7.2 | 8.2 | 9.3 | 21% |
+| Melee | 3.1 | 4.3 | 6.6 | 7.5 | 8.3 | 26% |
+| Bloodthirst | 0.0 | 0.0 | 2.0 | 2.5 | 2.9 | 19% |
 | Rend | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 7% |
 | Execute | 0.0 | 1.0 | 1.0 | 1.1 | 1.2 | 15% |
-| Heroic Strike | 2.4 | 2.1 | 0.6 | 0.9 | 1.1 | 7% |
-| Overpower | 0.6 | 0.6 | 0.8 | 0.9 | 1.0 | 4% |
+| Overpower | 0.5 | 0.6 | 0.8 | 0.9 | 1.0 | 4% |
 | Charge | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
+| Heroic Strike | 2.4 | 2.1 | 0.5 | 0.7 | 0.9 | 6% |
 | Bloodrage | 0.3 | 0.3 | 0.3 | 0.3 | 0.4 | 0% |
 | Victory Rush | 0.3 | 0.6 | 0.6 | 0.2 | 0.2 | 0% |
 | Battle Shout | 0.1 | 0.1 | 0.1 | 0.1 | 0.2 | 0% |

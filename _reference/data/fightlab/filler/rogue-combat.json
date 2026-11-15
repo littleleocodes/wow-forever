@@ -3,7 +3,7 @@
  "spec": "Combat",
  "build": "combat-open-leveling",
  "rotation": "combat-swords-raid",
- "date": "2026-11-09",
+ "date": "2026-11-15",
  "fights": 1500,
  "start_order": [
   {
@@ -139,10 +139,16 @@
    "points": 1
   },
   {
-   "levels": "57-59",
+   "levels": "57-58",
+   "tree": "Assassination",
+   "talent": "Vile Poisons",
+   "points": 2
+  },
+  {
+   "levels": "59",
    "tree": "Assassination",
    "talent": "Improved Slice and Dice",
-   "points": 3
+   "points": 1
   },
   {
    "levels": "60",
@@ -153,10 +159,10 @@
  ],
  "steps": [
   {
-   "weighted": 20.676,
+   "weighted": 20.581,
    "values_at_60": {
-    "Flash of Steel": -0.229,
-    "Venom": -0.723
+    "Flash of Steel": -0.255,
+    "Venom": -0.801
    },
    "zero": []
   }
@@ -166,16 +172,8 @@
    "from": "Improved Slice and Dice",
    "to": "Improved Poisons",
    "level": 59,
-   "seed3": -0.0007,
-   "seed4": -0.0009,
-   "why": "gate"
-  },
-  {
-   "from": "Improved Slice and Dice",
-   "to": "Improved Poisons",
-   "level": 58,
    "seed3": -0.0009,
-   "seed4": -0.0009,
+   "seed4": -0.0008,
    "why": "gate"
   }
  ],
@@ -313,16 +311,16 @@
    "points": 1
   },
   {
-   "levels": "57",
+   "levels": "57-58",
    "tree": "Assassination",
-   "talent": "Improved Slice and Dice",
-   "points": 1
+   "talent": "Vile Poisons",
+   "points": 2
   },
   {
-   "levels": "58-59",
+   "levels": "59",
    "tree": "Assassination",
    "talent": "Improved Poisons",
-   "points": 2
+   "points": 1
   },
   {
    "levels": "60",
@@ -330,5 +328,259 @@
    "talent": "Venom",
    "points": 1
   }
- ]
+ ],
+ "written": {
+  "allocation": {
+   "Assassination": [
+    [
+     "Remorseless Attacks",
+     2
+    ],
+    [
+     "Malice",
+     5
+    ],
+    [
+     "Ruthlessness",
+     3
+    ],
+    [
+     "Improved Expose Armor",
+     1
+    ],
+    [
+     "Vigor",
+     2
+    ],
+    [
+     "Lethality",
+     2
+    ],
+    [
+     "Vile Poisons",
+     2
+    ],
+    [
+     "Cold Blood",
+     1
+    ],
+    [
+     "Improved Poisons",
+     2
+    ],
+    [
+     "Venom",
+     1
+    ]
+   ],
+   "Combat": [
+    [
+     "Coup de Grace",
+     3
+    ],
+    [
+     "Efficient Strikes",
+     2
+    ],
+    [
+     "Lightning Reflexes",
+     1
+    ],
+    [
+     "Deflection",
+     3
+    ],
+    [
+     "Precision",
+     3
+    ],
+    [
+     "Riposte",
+     1
+    ],
+    [
+     "Composure",
+     2
+    ],
+    [
+     "Flawless Execution",
+     1
+    ],
+    [
+     "Weapon Expertise",
+     2
+    ],
+    [
+     "Aggression",
+     3
+    ],
+    [
+     "Dual Wield Specialization",
+     2
+    ],
+    [
+     "Hack and Slash",
+     2
+    ],
+    [
+     "Flash of Steel",
+     5
+    ]
+   ],
+   "Subtlety": []
+  },
+  "order": [
+   {
+    "levels": "10-12",
+    "tree": "Combat",
+    "talent": "Coup de Grace",
+    "points": 3
+   },
+   {
+    "levels": "13",
+    "tree": "Combat",
+    "talent": "Lightning Reflexes",
+    "points": 1
+   },
+   {
+    "levels": "14",
+    "tree": "Combat",
+    "talent": "Efficient Strikes",
+    "points": 1
+   },
+   {
+    "levels": "15-17",
+    "tree": "Combat",
+    "talent": "Precision",
+    "points": 3
+   },
+   {
+    "levels": "18-20",
+    "tree": "Combat",
+    "talent": "Deflection",
+    "points": 3
+   },
+   {
+    "levels": "21",
+    "tree": "Combat",
+    "talent": "Riposte",
+    "points": 1
+   },
+   {
+    "levels": "22",
+    "tree": "Combat",
+    "talent": "Efficient Strikes",
+    "points": 1
+   },
+   {
+    "levels": "23-24",
+    "tree": "Combat",
+    "talent": "Composure",
+    "points": 2
+   },
+   {
+    "levels": "25",
+    "tree": "Combat",
+    "talent": "Flawless Execution",
+    "points": 1
+   },
+   {
+    "levels": "26-27",
+    "tree": "Combat",
+    "talent": "Weapon Expertise",
+    "points": 2
+   },
+   {
+    "levels": "28-30",
+    "tree": "Combat",
+    "talent": "Aggression",
+    "points": 3
+   },
+   {
+    "levels": "31-32",
+    "tree": "Combat",
+    "talent": "Dual Wield Specialization",
+    "points": 2
+   },
+   {
+    "levels": "33-34",
+    "tree": "Combat",
+    "talent": "Hack and Slash",
+    "points": 2
+   },
+   {
+    "levels": "35-39",
+    "tree": "Combat",
+    "talent": "Flash of Steel",
+    "points": 5
+   },
+   {
+    "levels": "40-41",
+    "tree": "Assassination",
+    "talent": "Remorseless Attacks",
+    "points": 2
+   },
+   {
+    "levels": "42-46",
+    "tree": "Assassination",
+    "talent": "Malice",
+    "points": 5
+   },
+   {
+    "levels": "47-49",
+    "tree": "Assassination",
+    "talent": "Ruthlessness",
+    "points": 3
+   },
+   {
+    "levels": "50-51",
+    "tree": "Assassination",
+    "talent": "Vigor",
+    "points": 2
+   },
+   {
+    "levels": "52-53",
+    "tree": "Assassination",
+    "talent": "Lethality",
+    "points": 2
+   },
+   {
+    "levels": "54",
+    "tree": "Assassination",
+    "talent": "Improved Expose Armor",
+    "points": 1
+   },
+   {
+    "levels": "55",
+    "tree": "Assassination",
+    "talent": "Cold Blood",
+    "points": 1
+   },
+   {
+    "levels": "56",
+    "tree": "Assassination",
+    "talent": "Improved Poisons",
+    "points": 1
+   },
+   {
+    "levels": "57-58",
+    "tree": "Assassination",
+    "talent": "Vile Poisons",
+    "points": 2
+   },
+   {
+    "levels": "59",
+    "tree": "Assassination",
+    "talent": "Improved Poisons",
+    "points": 1
+   },
+   {
+    "levels": "60",
+    "tree": "Assassination",
+    "talent": "Venom",
+    "points": 1
+   }
+  ],
+  "note": "2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Slice and Dice to Improved Poisons at 59 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill)."
+ }
 }

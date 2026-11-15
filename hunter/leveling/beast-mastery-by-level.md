@@ -201,12 +201,12 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 1. Send the pet in first and let it hold the mob.
 2. **Hunter's Mark** while the mob has more than 30% of its health.
 3. **Serpent Sting** while it has more than 40%.
-4. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.
+4. **Aimed Shot** whenever it is ready while the mob has more than 35% of its health.
 5. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards.
 
 **If the fight goes wrong:** **Mend Pet** when the pet drops below a third of its health. A mob on you: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.
 
-- **Aimed Shot** has a 2-second cast and a 6-second cooldown it shares with **Multi-Shot**. Below a quarter of the mob's health, let **Auto Shot** and the pet finish it.
+- **Aimed Shot** has a 2-second cast and a 6-second cooldown it shares with **Multi-Shot**. Below 35% of the mob's health, let **Auto Shot** and the pet finish it: the tuned rules (2026-11-15) measured that slightly faster.
 - **Unleashed Fury** (20-24) and **Ferocity** (25-29): the pet hits 15% harder and crits 10% more.
 - **Freezing Trap** (20): drop it before a pull that will bring two mobs. **Aspect of the Cheetah** (20) is for the road.
 
@@ -230,7 +230,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 2. **Rapid Fire** at the pull when it is ready.
 3. **Hunter's Mark** while the mob has more than 30% of its health.
 4. **Serpent Sting** while it has more than 40%.
-5. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.
+5. **Aimed Shot** whenever it is ready while the mob has more than 35% of its health.
 6. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards.
 
 **If the fight goes wrong:** **Mend Pet** when the pet drops below a third of its health. A mob on you: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.
@@ -258,14 +258,14 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 2. **Rapid Fire** at the pull when it is ready.
 3. **Hunter's Mark** while the mob has more than 30% of its health.
 4. **Serpent Sting** while it has more than 40%.
-5. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.
+5. **Aimed Shot** whenever it is ready while the mob has more than 35% of its health.
 6. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards.
 
 **If the fight goes wrong:** **Mend Pet** when the pet drops below a third of its health. A mob on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.
 
 - **Bestial Discipline** (30-31) lets half your mana regeneration continue while casting. **Spirit Bond** (32) heals you and the pet a little every 10 seconds. **Bestial Swiftness** (33) is a faster pet.
 
-*Fight lab, seconds per kill: 19 at level 30. Presses per kill at level 30: Claw 5.2, Auto Shot 4.1, Growl 1.9, Serpent Sting 1.0, Hunter's Mark 1.0, Bite 1.0, Aimed Shot 1.0.*
+*Fight lab, seconds per kill: 19 at level 30. Presses per kill at level 30: Claw 5.3, Auto Shot 4.1, Growl 1.9, Serpent Sting 1.0, Hunter's Mark 1.0, Bite 1.0, Aimed Shot 1.0.*
 
 ## Levels 34-39: Intimidation
 
@@ -285,7 +285,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 2. At the pull, when they are ready: **Intimidation** and **Rapid Fire**.
 3. **Hunter's Mark** while the mob has more than 30% of its health.
 4. **Serpent Sting** while it has more than 40%.
-5. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.
+5. **Aimed Shot** whenever it is ready while the mob has more than 35% of its health.
 6. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards.
 
 **If the fight goes wrong:** **Mend Pet** when the pet drops below a third of its health. A mob on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.
@@ -293,7 +293,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Intimidation** (34): the pet's next successful attack stuns the mob for 3 seconds and gains 100% crit chance; a 1-minute cooldown. It is also the point that opens the way to **Bestial Wrath**.
 - **Frenzy** (35-39): after a crit the pet attacks 30% faster for 8 seconds. **Explosive Trap** (34) is for packs.
 
-*Fight lab, seconds per kill: 20 at level 34, 23 at level 39. Presses per kill at level 34: Claw 5.6, Auto Shot 4.2, Growl 1.9, Serpent Sting 1.0, Hunter's Mark 1.0, Bite 1.0, Aimed Shot 1.0.*
+*Fight lab, seconds per kill: 20 at level 34, 23 at level 39. Presses per kill at level 34: Claw 5.5, Auto Shot 4.2, Growl 1.9, Serpent Sting 1.0, Hunter's Mark 1.0, Bite 1.0, Aimed Shot 1.0.*
 
 ## Levels 40-60: Bestial Wrath
 
@@ -313,7 +313,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 2. At the pull, when they are ready: **Bestial Wrath**, **Intimidation** and **Rapid Fire**.
 3. **Hunter's Mark** while the mob has more than 30% of its health.
 4. **Serpent Sting** while it has more than 40%.
-5. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.
+5. **Aimed Shot** whenever it is ready while the mob has more than 35% of its health.
 6. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards.
 
 **If the fight goes wrong:** **Mend Pet** when the pet drops below a third of its health. A mob on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.
@@ -323,11 +323,11 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Trueshot Aura** (56) is a buff you cast in Forever: keep it on. **Improved Tracking** (57-60): keep the tracking of the mobs you fight switched on.
 - **Volley** (40) is a channel for packs, with **Multi-Shot**. Buy every new rank.
 
-*Fight lab, seconds per kill: 23 at level 40, 25 at level 50, 26 at level 60. Presses per kill at level 40: Claw 6.7, Auto Shot 5.2, Growl 2.4, Aimed Shot 1.1, Serpent Sting 1.0, Hunter's Mark 1.0, Bite 1.0, Bestial Wrath 0.2.*
+*Fight lab, seconds per kill: 23 at level 40, 24 at level 50, 25 at level 60. Presses per kill at level 40: Claw 6.7, Auto Shot 5.3, Growl 2.4, Serpent Sting 1.0, Aimed Shot 1.0, Hunter's Mark 1.0, Bite 1.0, Bestial Wrath 0.2.*
 
 ## Between fights
 
-- Mend the pet below half its health, drink below 35% of your mana, eat below 65% of your health. Feed the pet when it sulks, and revive it before the next pull if it died.
+- Mend the pet below half its health, drink below 15% of your mana, eat below 65% of your health. The tuned rules drink this late: fewer stops measured slightly faster. Feed the pet when it sulks, and revive it before the next pull if it died.
 - Keep **Aspect of the Hawk** on, and **Trueshot Aura** from 56. From 57, keep the right tracking on: **Improved Tracking** only pays for the mobs you track.
 - Visit the trainer every even level: **Serpent Sting**, **Aimed Shot** and **Mend Pet** have many ranks.
 
@@ -337,4 +337,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Beast-Marks plays this same rotation with more Marksmanship talents and no **Bestial Wrath**: [its guide](beast-marks-by-level.md). Marksmanship does more of the damage itself and finishes with **Arcane Shot**: [its guide](marksmanship-by-level.md).
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-13: the stages are hand-kept in `_reference/data/level-guides/hunter.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-15: the stages are hand-kept in `_reference/data/level-guides/hunter.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

@@ -1,6 +1,6 @@
 {
  "class": "priest",
- "updated": "2026-11-09",
+ "updated": "2026-11-15",
  "guides": [
   {
    "spec": "Shadow",
@@ -62,12 +62,13 @@
      "press": [
       "**Shadow Word: Pain** to pull.",
       "**Mind Blast** whenever it is ready.",
-      "**Mind Flay** in between. It slows the mob while you channel.",
+      "**Mind Flay** in between while you have more than 30% of your mana; below that, your wand. **Mind Flay** slows the mob while you channel.",
       "Your wand finishes a mob with a hit or two left."
      ],
      "if_hurt": "Below a third of your health: **Flash Heal**. **Psychic Scream** if a mob is on you and you are below 40%. **Power Word: Shield** before a pull you start below half your health.",
      "notes": [
       "**Devouring Plague** (20): leave it off your bar. The tuned rotation never casts it: it costs too much mana for what it does before the mob dies.",
+      "The wand below 30% mana is a tuned rule (2026-11-15), slightly faster per kill than channelling to the last drop.",
       "**Improved Mind Blast** (24, 31-34) shortens the cooldown, so **Mind Blast** comes round more often as you level.",
       "Racial spells in the list above: Feedback (Human), Chastise (Dwarf), Elune's Grace (Night Elf), Contingency Plan (Gnome), Dark Sacrifice (Undead), Shadowguard (Troll). Only that race can learn its own."
      ]
@@ -80,7 +81,7 @@
       "**Shadow Word: Pain** to pull.",
       "**Mind Blast** whenever it is ready.",
       "**Shadow Word: Death** when one cast will kill the mob.",
-      "**Mind Flay** in between.",
+      "**Mind Flay** in between while you have more than 30% of your mana; below that, your wand.",
       "Your wand finishes a mob with a hit or two left."
      ],
      "if_hurt": "Below a third of your health: **Flash Heal**. **Psychic Scream** if a mob is on you and you are below 40%. **Power Word: Shield** before a pull you start below half your health.",
@@ -97,7 +98,7 @@
       "Pull with the instants: **Vampiric Embrace** when it is ready, then **Shadow Word: Pain**.",
       "**Mind Blast** whenever it is ready.",
       "**Shadow Word: Death** when one cast will kill the mob, or on a mob at or below 20% of its health (**Early Demise** adds crit there; if the mob survives you take the backlash).",
-      "**Mind Flay** in between.",
+      "**Mind Flay** in between while you have more than 30% of your mana; below that, your wand.",
       "Your wand finishes a mob with a hit or two left."
      ],
      "if_hurt": "**Psychic Scream** if a mob is on you and you are below 40% of your health. At 39, before Shadowform, a **Flash Heal** below a third.",
@@ -665,7 +666,7 @@
   },
   {
    "spec": "Holy",
-   "intro": "What a Holy priest presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. The build is the Holy raid healer's talents, taken in the order that levels fastest: Discipline's damage and mana talents first, the first Holy point at 32. The fight is a **Smite** priest's: a shield before every pull, **Holy Fire** to open from 20, **Shadow Word: Pain**, **Mind Blast** and, from 30, **Penance** whenever they are ready, and **Smite** in every gap. Each stage lists the full priority, so you can jump in at your level.",
+   "intro": "What a Holy priest presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. The build is the Holy raid healer's talents, taken in the order that levels fastest: Discipline's damage and mana talents first, the first Holy point at 32. The fight is a **Smite** priest's: a shield before every pull, **Holy Fire** to open from 20, **Shadow Word: Pain** and **Mind Blast** whenever they are ready, and **Smite** in every gap. The build takes **Penance** at 30 for the raid, but the tuned rotation never casts it. Each stage lists the full priority, so you can jump in at your level.",
    "stages": [
     {
      "from": 1,
@@ -703,16 +704,16 @@
      "press": [
       "Before the pull: **Power Word: Shield** on yourself.",
       "**Shadow Word: Pain** to pull, and again if it runs out while the mob has more than 30% of its health.",
-      "**Mind Blast** whenever it is ready while you have more than 30% of your mana. It also finishes a mob one cast will kill.",
+      "**Mind Blast** whenever it is ready while you have more than 30% of your mana and the mob more than 10% of its health. It also finishes a mob one cast will kill.",
       "**Smite** in every gap, at any mana, until the mob has less health left than about half a **Smite** hit.",
       "Your wand for the last hit."
      ],
      "if_hurt": "In melee below 80% of your health: **Power Word: Shield** again once Weakened Soul has worn off (below half at any time). **Lesser Heal** below a third of your health, **Renew** below 60% if it is not already on you.",
      "notes": [
-      "**Twin Disciplines** (10-14) strengthens your instant spells: **Shadow Word: Pain** now, **Penance** from 30.",
+      "**Twin Disciplines** (10-14) makes your instant spells, **Shadow Word: Pain** among them, 5% stronger.",
       "**Mental Strength** (15-19) adds Intellect: a bigger mana pool.",
       "**Psychic Scream** (14): when a mob is on you and you are below 40% of your health, fear it and heal.",
-      "**Mind Blast** waits while you are below 30% of your mana, so the mana goes to **Smite** and, from 20, **Holy Fire**.",
+      "**Mind Blast** waits while you are below 30% of your mana, so the mana goes to **Smite** and, from 20, **Holy Fire**. It also skips a mob under 10% of its health: **Smite** or the wand finishes that.",
       "Racial spells in the list above: Divine Grace (Human), Desperate Prayer (Dwarf), Starshards (Night Elf), Confounding Flash (Gnome), Touch of Weakness (Undead), Hex of Weakness (Troll). Only that race can learn its own."
      ]
     },
@@ -724,7 +725,7 @@
       "Before the pull: **Power Word: Shield** on yourself.",
       "Open with **Holy Fire** from range. Cast it again once its burn has ended while the mob has more than 40% of its health; in melee only while your shield holds.",
       "**Shadow Word: Pain** next, and again if it runs out while the mob has more than 30% of its health.",
-      "**Mind Blast** whenever it is ready while you have more than 30% of your mana. It also finishes a mob one cast will kill.",
+      "**Mind Blast** whenever it is ready while you have more than 30% of your mana and the mob more than 10% of its health. It also finishes a mob one cast will kill.",
       "**Smite** in every gap, at any mana, until the mob has less health left than about half a **Smite** hit.",
       "Your wand for the last hit."
      ],
@@ -740,23 +741,23 @@
     },
     {
      "from": 30,
-     "title": "Penance",
-     "change": "**Penance** (talent) whenever it is ready: three Holy hits in 2 seconds.",
+     "title": "The finished rotation",
+     "change": "Nothing new to press: **Penance** (talent, 30) is the raid healer's, and the tuned rotation never casts it. Buy every new rank.",
      "press": [
       "Before the pull: **Power Word: Shield** on yourself. As the pull starts: **Inner Focus** when it is ready.",
       "Open with **Holy Fire** from range. Cast it again once its burn has ended while the mob has more than 40% of its health; in melee only while your shield holds.",
       "**Shadow Word: Pain** next, and again if it runs out while the mob has more than 30% of its health.",
-      "**Penance** whenever it is ready.",
-      "**Mind Blast** whenever it is ready while you have more than 30% of your mana. It also finishes a mob one cast will kill.",
+      "**Mind Blast** whenever it is ready while you have more than 30% of your mana and the mob more than 10% of its health. It also finishes a mob one cast will kill.",
       "**Smite** in every gap, at any mana, until the mob has less health left than about half a **Smite** hit.",
       "Your wand for the last hit."
      ],
      "if_hurt": "In melee below 80% of your health: **Power Word: Shield** again once Weakened Soul has worn off (below half at any time). **Flash Heal** below a third of your health, **Renew** below 60% if it is not already on you. **Psychic Scream** if a mob is on you and you are below 40%.",
      "notes": [
       "**Soul Warding** (31) shortens the shield's cooldown and cost. **Twilight Focus** (32-34) keeps most hits from pushing your casts back once the shield breaks.",
-      "**Holy Specialization** (35-39) adds crit to your Holy spells, and **Divine Fury** (44) takes a tenth of a second off the cast of **Smite** and **Holy Fire**. **Improved Healing** (49-51) makes **Penance** cheaper.",
+      "**Holy Specialization** (35-39) adds crit to your Holy spells, and **Divine Fury** (44) takes a tenth of a second off the cast of **Smite** and **Holy Fire**.",
       "**Holy Nova** (42) is for pulls of several mobs: cast it only when two or more are within 10 yards of you.",
-      "The rest of the Holy points (**Improved Renew**, **Inspiration**, **Holy Binding**, **Litany of Light**, **Spiritual Guidance**, **Spiritual Healing**) are for healing at 60. They do little for your kills, which is why this is a slow way to level."
+      "The rest of the Holy points (**Improved Renew**, **Inspiration**, **Holy Binding**, **Improved Healing**, **Litany of Light**, **Spiritual Guidance**, **Spiritual Healing**) are for healing at 60. They do little for your kills, which is why this is a slow way to level.",
+      "**Penance** (30) is in the build for the raid healer, but the tuned rotation never casts it (2026-11-15), so that **Smite** and **Holy Fire** stay at least half your damage: the signature rule of the Smite list this rotation shares. Without it a kill takes about 2 seconds longer. It gets no key."
      ],
      "unsimulated": [
       "Inner Focus"
@@ -771,7 +772,7 @@
    ],
    "other": [
     "Shadow levels fastest of the priest specs in the fight lab: the [Shadow guide](shadow-by-level.md). Level as Holy if you want to heal dungeons on the way to 60.",
-    "The [Smite guide](smite-by-level.md) plays this same list on a damage build without **Penance**. The [Discipline guide](discipline-by-level.md) plays the Discipline list, with **Devouring Plague** and no **Holy Fire**."
+    "The [Smite guide](smite-by-level.md) plays this same list on a damage build. The [Discipline guide](discipline-by-level.md) plays the Discipline list, with **Penance**, **Devouring Plague** and no **Holy Fire**."
    ],
    "keys": {
     "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; buffs, food, drink, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the escape or the save, the thumb buttons the reactions, 1-4 the rest, the middle mouse button the wand, the Shift bar the wider or rarer version of the key under it. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Every spell this guide shares with the Shadow guide sits on the same key, so you can switch specs without relearning. Setup: the [priest keybinds page](keybinds.md), written for Shadow.",
@@ -821,13 +822,8 @@
        },
        {
         "key": "Mouse 5",
-        "role": "Thumb: the second big hit, on cooldown",
-        "binds": [
-         {
-          "from": 30,
-          "spell": "Penance"
-         }
-        ]
+        "role": "Free: Penance's key in the Discipline guide; this rotation never casts it",
+        "binds": []
        },
        {
         "key": "Mouse 4",
@@ -994,12 +990,12 @@
     "no_key": [],
     "notes": [
      "Same keys as the [Shadow guide](shadow-by-level.md) for every spell both play: **Smite** on Q, **Psychic Scream** on E, **Mind Blast** on R, **Power Word: Shield** on F, **Shadow Word: Pain** on Mouse 4, **Flash Heal** on 3, **Desperate Prayer** on 4, the wand on the middle mouse button, and the Shift bar's **Shackle Undead**, **Dispel Magic** and **Cure Disease**.",
-     "What moves: Mouse 5 holds **Penance** (Shadow's **Shadow Word: Death**, which this rotation never casts), 1 holds **Inner Focus** (Shadow's **Vampiric Embrace**), 2 holds **Holy Fire**, 3 holds **Lesser Heal** until **Flash Heal** arrives at 20, **Renew** gets Shift+3 because this rotation casts it in a fight, and **Holy Nova** gets Shift+Q. The Discipline guide uses the same keys, with **Devouring Plague** on 2.",
+     "What moves: 1 holds **Inner Focus** (Shadow's **Vampiric Embrace**), 2 holds **Holy Fire**, 3 holds **Lesser Heal** until **Flash Heal** arrives at 20, **Renew** gets Shift+3 because this rotation casts it in a fight, and **Holy Nova** gets Shift+Q. Mouse 5 stays free: it is **Shadow Word: Death** in Shadow's guide and **Penance** in Discipline's, and this rotation casts neither. The Discipline guide uses the same keys, with **Penance** on Mouse 5 and **Devouring Plague** on 2.",
      "The pull from 24: F, then 1, 2 and Mouse 4: **Power Word: Shield**, **Inner Focus**, **Holy Fire**, **Shadow Word: Pain**. **Inner Focus** is off the global cooldown, so **Holy Fire** follows at once.",
      "One swap on bar 1: **Flash Heal** takes 3 at 20 and **Lesser Heal** leaves the bar. **Smite** stays on Q all the way.",
      "4 holds **Desperate Prayer** only for a Dwarf: in Forever it is a Dwarf's spell, and the fight lab plays without racial spells. Other races leave 4 free.",
      "C stays free for the healing potion macro on the [macros page](../macros.md).",
-     "No key: **Power Word: Fortitude**, **Inner Fire**, food, water, the mount and the Hearthstone. **Devouring Plague** and **Shadow Word: Death** are never cast by this rotation."
+     "No key: **Power Word: Fortitude**, **Inner Fire**, food, water, the mount and the Hearthstone. **Devouring Plague**, **Penance** and **Shadow Word: Death** are never cast by this rotation."
     ]
    }
   },
@@ -1043,7 +1039,7 @@
      "press": [
       "Before the pull: **Power Word: Shield** on yourself.",
       "**Shadow Word: Pain** to pull, and again if it runs out while the mob has more than 30% of its health.",
-      "**Mind Blast** whenever it is ready while you have more than 30% of your mana. It also finishes a mob one cast will kill.",
+      "**Mind Blast** whenever it is ready while you have more than 30% of your mana and the mob more than 10% of its health. It also finishes a mob one cast will kill.",
       "**Smite** in every gap, at any mana, until the mob has less health left than about half a **Smite** hit.",
       "Your wand for the last hit."
      ],
@@ -1052,7 +1048,7 @@
       "**Wand Specialization** (10-11) makes your wand hit harder.",
       "**Power in Light** (14-18) makes **Smite** stronger while your **Shadow Word: Pain** burns on the mob, and from 20 while **Holy Fire** burns.",
       "**Psychic Scream** (14): when a mob is on you and you are below 40% of your health, fear it and heal.",
-      "**Mind Blast** waits while you are below 30% of your mana, so the mana goes to **Smite** and, from 20, **Holy Fire**.",
+      "**Mind Blast** waits while you are below 30% of your mana, so the mana goes to **Smite** and, from 20, **Holy Fire**. It also skips a mob under 10% of its health: **Smite** or the wand finishes that.",
       "Racial spells in the list above: Divine Grace (Human), Desperate Prayer (Dwarf), Starshards (Night Elf), Confounding Flash (Gnome), Touch of Weakness (Undead), Hex of Weakness (Troll). Only that race can learn its own."
      ]
     },
@@ -1064,7 +1060,7 @@
       "Before the pull: **Power Word: Shield** on yourself.",
       "Open with **Holy Fire** from range. Cast it again once its burn has ended while the mob has more than 40% of its health; in melee only while your shield holds.",
       "**Shadow Word: Pain** next, and again if it runs out while the mob has more than 30% of its health.",
-      "**Mind Blast** whenever it is ready while you have more than 30% of your mana. It also finishes a mob one cast will kill.",
+      "**Mind Blast** whenever it is ready while you have more than 30% of your mana and the mob more than 10% of its health. It also finishes a mob one cast will kill.",
       "**Smite** in every gap, at any mana, until the mob has less health left than about half a **Smite** hit.",
       "Your wand for the last hit."
      ],
@@ -1084,7 +1080,7 @@
       "Before the pull: **Power Word: Shield** on yourself. As the pull starts: **Inner Focus** when it is ready.",
       "Open with **Holy Fire** from range. Cast it again once its burn has ended while the mob has more than 40% of its health; in melee only while your shield holds.",
       "**Shadow Word: Pain** next, and again if it runs out while the mob has more than 30% of its health.",
-      "**Mind Blast** whenever it is ready while you have more than 30% of your mana. It also finishes a mob one cast will kill.",
+      "**Mind Blast** whenever it is ready while you have more than 30% of your mana and the mob more than 10% of its health. It also finishes a mob one cast will kill.",
       "**Smite** in every gap, at any mana, until the mob has less health left than about half a **Smite** hit.",
       "Your wand for the last hit."
      ],
@@ -1095,7 +1091,7 @@
       "**Holy Specialization** (42-46) adds crit to your Holy spells, **Divine Fury** (47-51) takes half a second off the cast of **Smite** and **Holy Fire**, and **Searing Light** (56-57) adds Holy damage.",
       "**Holy Nova** (52) is for pulls of several mobs: cast it only when two or more are within 10 yards of you.",
       "**Improved Shadow Word: Pain** (59-60) makes it last longer.",
-      "This build has no **Penance**. The [Holy guide](holy-by-level.md) keeps its key (Mouse 5); here it stays free."
+      "This build has no **Penance**, and the [Holy guide](holy-by-level.md)'s rotation never casts it either: Mouse 5 stays free."
      ],
      "unsimulated": [
       "Inner Focus"
@@ -1110,7 +1106,7 @@
    ],
    "other": [
     "Shadow levels fastest of the priest specs in the fight lab: the [Shadow guide](shadow-by-level.md).",
-    "The [Holy guide](holy-by-level.md) plays this same list on the Holy raid healer's talents, with **Penance**. The [Discipline guide](discipline-by-level.md) plays the Discipline list, with **Devouring Plague** and no **Holy Fire**."
+    "The [Holy guide](holy-by-level.md) plays this same list on the Holy raid healer's talents. The [Discipline guide](discipline-by-level.md) plays the Discipline list, with **Penance**, **Devouring Plague** and no **Holy Fire**."
    ],
    "keys": {
     "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; buffs, food, drink, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the escape or the save, the thumb buttons the reactions, 1-4 the rest, the middle mouse button the wand, the Shift bar the wider or rarer version of the key under it. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Every spell this guide shares with the Shadow guide sits on the same key, so you can switch specs without relearning. Setup: the [priest keybinds page](keybinds.md), written for Shadow.",
@@ -1160,7 +1156,7 @@
        },
        {
         "key": "Mouse 5",
-        "role": "Free: Penance's key in the Holy and Discipline guides; this build has none",
+        "role": "Free: Penance's key in the Discipline guide; this build has none",
         "binds": []
        },
        {
@@ -1328,7 +1324,7 @@
     "no_key": [],
     "notes": [
      "Same keys as the [Shadow guide](shadow-by-level.md) for every spell both play: **Smite** on Q, **Psychic Scream** on E, **Mind Blast** on R, **Power Word: Shield** on F, **Shadow Word: Pain** on Mouse 4, **Flash Heal** on 3, **Desperate Prayer** on 4, the wand on the middle mouse button, and the Shift bar's **Shackle Undead**, **Dispel Magic** and **Cure Disease**.",
-     "What moves: 1 holds **Inner Focus** (Shadow's **Vampiric Embrace**), 2 holds **Holy Fire**, 3 holds **Lesser Heal** until **Flash Heal** arrives at 20, **Renew** gets Shift+3 because this rotation casts it in a fight, and **Holy Nova** gets Shift+Q. Mouse 5 stays free: it is **Penance** in the Holy and Discipline guides and **Shadow Word: Death** in Shadow's, and this rotation casts neither.",
+     "What moves: 1 holds **Inner Focus** (Shadow's **Vampiric Embrace**), 2 holds **Holy Fire**, 3 holds **Lesser Heal** until **Flash Heal** arrives at 20, **Renew** gets Shift+3 because this rotation casts it in a fight, and **Holy Nova** gets Shift+Q. Mouse 5 stays free: it is **Penance** in the Discipline guide and **Shadow Word: Death** in Shadow's, and this rotation casts neither.",
      "The pull from 26: F, then 1, 2 and Mouse 4: **Power Word: Shield**, **Inner Focus**, **Holy Fire**, **Shadow Word: Pain**. **Inner Focus** is off the global cooldown, so **Holy Fire** follows at once.",
      "One swap on bar 1: **Flash Heal** takes 3 at 20 and **Lesser Heal** leaves the bar. **Smite** stays on Q all the way.",
      "4 holds **Desperate Prayer** only for a Dwarf: in Forever it is a Dwarf's spell, and the fight lab plays without racial spells. Other races leave 4 free.",

@@ -8,11 +8,15 @@
   },
   "Summon Hawk": {
    "off": true
+  },
+  "Aimed Shot": {
+   "min_hp": 0.35
   }
  },
+ "drink_below": 0.15,
  "class": "hunter",
  "spec": "bm-leveling",
- "build": "leveling-beast-mastery",
+ "build": "beast-mastery-open-leveling",
  "levels": [
   20,
   30,
@@ -20,88 +24,88 @@
   50,
   60
  ],
- "date": "2026-11-03",
+ "date": "2026-11-15",
  "signature": {
   "required": [
    "Aimed Shot",
    "Bestial Wrath"
   ],
-  "build_spec": "Marksmanship",
+  "build_spec": "Beast Mastery",
   "dropped_saved_rules": [],
-  "core_share_before": 0.6442433617570212,
-  "core_share_after": 0.7058752773312618,
-  "min_share": 0.6,
-  "floor_reached": null
+  "core_share_before": 0.34368545074853596,
+  "core_share_after": 0.3513693540584266,
+  "min_share": 0.3,
+  "floor_reached": null,
+  "played_before": true,
+  "played_after": true
  },
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "never cast Multi-Shot",
+   "change": "drink below 15% mana",
    "rule": [
-    "off",
-    "Multi-Shot",
-    true
+    "drink_below",
+    null,
+    0.15
    ],
-   "gain_seed1": 0.0567295536579131,
-   "gain_seed2": 0.05031635999255646
+   "gain_seed1": 0.007161024382540071,
+   "gain_seed2": 0.005828648568736661
   },
   {
    "round": 2,
-   "change": "never cast Arcane Shot",
+   "change": "Aimed Shot only while the mob has more than 35% health",
    "rule": [
-    "off",
-    "Arcane Shot",
-    true
+    "min_hp",
+    "Aimed Shot",
+    0.35
    ],
-   "gain_seed1": 0.5014680759118064,
-   "gain_seed2": 0.5033141937625076
-  },
-  {
-   "round": 3,
-   "change": "never cast Summon Hawk",
-   "rule": [
-    "off",
-    "Summon Hawk",
-    true
-   ],
-   "gain_seed1": 0.025642362650368566,
-   "gain_seed2": 0.022296766419111713
+   "gain_seed1": 0.004547104712834815,
+   "gain_seed2": 0.004785603055660226
   }
  ],
- "weighted_before": 24.40540098721396,
- "weighted_after": 22.498788932915808,
+ "weighted_before": 23.119640308248144,
+ "weighted_after": 22.882847312551164,
  "per_level": {
   "20": {
-   "before": 14.096679064578918,
-   "after": 13.74386161353831,
+   "before": 16.379733950312332,
+   "after": 16.233771479071255,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 19.563725137462104,
-   "after": 17.69358904786074,
+   "before": 19.462936684733076,
+   "after": 19.347427408906604,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 24.594457748153854,
-   "after": 22.04987818725635,
+   "before": 23.588907523059486,
+   "after": 23.321215558040738,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 26.486909633317556,
-   "after": 24.288525085898165,
+   "before": 24.684030203024264,
+   "after": 24.435394772551877,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 28.401851173921962,
-   "after": 26.62752501819018,
+   "before": 25.578124517129947,
+   "after": 25.280880828539768,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
+ },
+ "retune": {
+  "times": {
+   "saved": 23.12,
+   "from scratch": 22.994,
+   "continued": 22.883
+  },
+  "installed": "continued",
+  "reference_ok": true
  }
 }

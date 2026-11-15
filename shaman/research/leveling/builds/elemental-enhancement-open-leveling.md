@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Elemental-Enhancement (an Elemental/Enhancement hybrid) leveling build the open leveling search found on 2026-11-03: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the elemental-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (elemental-dps). +0.3% faster per kill than elemental-open-leveling, the fastest of our leveling builds in that race.
+The Elemental-Enhancement (an Elemental/Enhancement hybrid) leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the elemental-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (elemental-dps). +0.3% faster per kill than elemental-open-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -95,7 +95,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Notes
 
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 29.48; elemental-open-leveling 29.57. The search simulated 47,381 builds.
-- The spec's other leveling builds on the pages: opt-elemental-dps-leveling-st 30.08 s.
+- The spec's other leveling builds on the pages: opt-elemental-dps-leveling-st 29.80 s.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)

@@ -91,21 +91,21 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-d
 
 Single-target leveling fights against normal mobs of your level: Power Word: Shield and Inner Fire before the pull, Mind Blast at 30 yd, Shadow Word: Pain, Mind Flay channels (50% slow) and Mind Blast on cooldown while the mob walks in and once it is on you (the shield stops pushback while it holds), Vampiric Embrace and Devouring Plague heal, Shadow Word: Death below 20%, wand to finish without overkill; Psychic Scream when health runs low. Between fights: 2 s loot, 6 s travel, Renew (not in Shadowform), conjured water below 35% mana, food below 65% health; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-02, on top of the priority below): SHIELD_BELOW = 0.5; never cast Devouring Plague; never cast Smite; eat below 40% health; drink below 15% mana. Together +28.9% time per kill saved for `leveling-shadow` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-15, on top of the priority below): SHIELD_BELOW = 0.5; never cast Devouring Plague; never cast Smite; eat below 40% health; drink below 15% mana; WAND_BELOW = 0.3. Together +29.9% time per kill saved for `shadow-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/shadow-dps.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Mind Flay | 2.9 | 3.7 | 3.8 | 3.5 | 2.6 | 46% |
-| Mind Blast | 2.0 | 2.0 | 2.0 | 2.0 | 1.3 | 20% |
-| Shadow Word: Pain | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 16% |
-| Shadow Word: Death | 0.0 | 0.0 | 1.0 | 0.9 | 0.8 | 16% |
-| Vampiric Embrace | 0.0 | 0.0 | 0.0 | 0.8 | 0.6 | 0% |
-| Wand | 1.9 | 2.1 | 1.0 | 1.2 | 0.5 | 1% |
+| Mind Flay | 1.6 | 2.2 | 2.8 | 2.6 | 2.6 | 46% |
+| Mind Blast | 2.1 | 2.2 | 2.1 | 2.2 | 1.3 | 20% |
+| Shadow Word: Pain | 1.0 | 1.0 | 1.1 | 1.1 | 1.0 | 16% |
+| Shadow Word: Death | 0.0 | 0.0 | 1.0 | 1.0 | 0.8 | 17% |
+| Vampiric Embrace | 0.0 | 0.0 | 0.0 | 0.9 | 0.6 | 0% |
+| Wand | 5.0 | 5.2 | 2.9 | 3.3 | 0.5 | 1% |
 | Power Word: Shield | 0.0 | 0.1 | 0.0 | 0.0 | 0.0 | 0% |
+| Psychic Scream | 0.0 | 0.1 | 0.0 | 0.0 | 0.0 | 0% |
 | Flash Heal | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Psychic Scream | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes
 

@@ -3,7 +3,7 @@
  "spec": "Restoration",
  "build": "restoration-leveling",
  "rotation": "enhancement-dps",
- "date": "2026-11-13",
+ "date": "2026-11-15",
  "fights": 3000,
  "seeds": [
   3,
@@ -242,7 +242,7 @@
     "armor": 0.0007,
     "mh_weapon_dps": 0.15672,
     "crit_rating": 0.01202,
-    "hit_rating": 0.02874,
+    "hit_rating": 0.02872,
     "haste_rating": 0.00827,
     "expertise_rating": 0.03545,
     "weapon_skill": 0.02446,
@@ -298,7 +298,7 @@
     "armor": 0.00044,
     "mh_weapon_dps": 0.11782,
     "crit_rating": 0.01325,
-    "hit_rating": 0.03054,
+    "hit_rating": 0.03042,
     "haste_rating": 0.00763,
     "expertise_rating": 0.03338,
     "weapon_skill": 0.03775,
@@ -486,8 +486,5 @@
    "attack_power": 52,
    "mh_weapon_dps": 30.0
   }
- },
- "added": {
-  "spell_penetration": "2026-11-13"
  }
 }

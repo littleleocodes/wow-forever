@@ -30,7 +30,7 @@ The Restoration PvP build derived on 2026-09-30 (derive_pvp.py): the stats model
 | **Anticipation** | 3/3 | changed | Increases your chance to dodge by an additional 6%. |
 | **Shamanistic Focus** | 1/1 | **NEW** | Reduces the mana cost of your Shock and Lightning Shield spells by 45%. |
 | **Improved Ghost Wolf** | 2/2 | changed | Reduces the cast time of your Ghost Wolf spell by 3.0 sec, and Ghost Wolf may be used indoors. |
-| **Stormstrike** | 1/1 | changed | Instantly strike for 150% normalized weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec. |
+| **Stormstrike** | 1/1 | changed | Instantly strike for 100% normalized weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec. |
 | **Toughness** | 2/5 | changed | Increases your Stamina by 4%. |
 
 ### Restoration (31)

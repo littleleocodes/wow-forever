@@ -8376,12 +8376,12 @@
    "signature": {
     "spec": "Elemental",
     "rotation": "elemental-dps",
-    "date": "2026-11-03",
+    "date": "2026-11-15",
     "fights": 600,
     "split": "32/11/8",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.7672,
+    "core_share": 0.7659,
     "min_share": 0.6,
     "required": [
      "Lightning Bolt"
@@ -8394,16 +8394,17 @@
     ],
     "missing_talents": [],
     "uncast": [],
+    "late": [],
     "casts": {
      "Lightning Bolt": {
-      "20": 3.05,
-      "30": 3.61,
-      "40": 3.85,
-      "50": 3.92,
-      "60": 3.57
+      "20": 3.04,
+      "30": 3.53,
+      "40": 3.81,
+      "50": 3.91,
+      "60": 3.53
      }
     },
-    "fingerprint": "abe1e9aaedec"
+    "fingerprint": "247b7e7470f0"
    },
    "minutes": 108.3,
    "done": true,
@@ -8414,7 +8415,7 @@
     ],
     "why": null,
     "spec": "Elemental",
-    "date": "2026-11-03"
+    "date": "2026-11-15"
    }
   }
  },

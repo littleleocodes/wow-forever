@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Combat-Subtlety (a Combat/Subtlety hybrid) leveling build the open leveling search found on 2026-11-06: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the subtlety-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-swords-raid). +7.3% faster per kill than subtlety-open-leveling, the fastest of our leveling builds in that race.
+The Combat-Subtlety (a Combat/Subtlety hybrid) leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the subtlety-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-swords-raid). +5.5% faster per kill than subtlety-open-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -85,13 +85,13 @@ The Combat-Subtlety (a Combat/Subtlety hybrid) leveling build the open leveling 
 ## Core talents (priority order)
 
 1. **Remorseless Attacks** — +2.0 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Improved Ambush** — +1.7 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Improved Ambush** — +1.8 s per kill at level 60 without it (removal, 3,000 fights).
 3. **Flawless Execution** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Coup de Grace** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Coup de Grace** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
 5. **Aggression** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Initiative** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Opportunity** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Hemorrhage** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Weapon Expertise** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Initiative** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Opportunity** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -100,7 +100,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Notes
 
 - 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Elusiveness to Setup at 59 (gate: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Elusiveness to Setup at 58 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 20.89; subtlety-open-leveling 22.41, subtlety-leveling 23.33. The search simulated 54,137 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 20.68; subtlety-open-leveling 21.82, subtlety-leveling 23.08. The search simulated 54,137 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
@@ -111,7 +111,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/rogue>
-- <https://talentsforever.com/rogue/60/023-32500300020123202-1051030313210001-7>
+- <https://talentsforever.com/rogue/60/023-32500300020123202-1051030313210001-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

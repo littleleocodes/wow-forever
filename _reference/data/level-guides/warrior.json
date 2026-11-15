@@ -1,6 +1,6 @@
 {
  "class": "warrior",
- "updated": "2026-11-09",
+ "updated": "2026-11-15",
  "guides": [
   {
    "spec": "Arms",
@@ -91,8 +91,22 @@
       "**Overpower** whenever it lights up.",
       "**Rend** once, while the mob has more than a third of its health.",
       "**Heroic Strike** with spare rage. Keep 15 back for **Overpower**."
+     ]
+    },
+    {
+     "from": 25,
+     "title": "Spearing Strike",
+     "change": "**Spearing Strike** (talent): an instant strike for 40% weapon damage, 15 rage, on a 20-second cooldown. It takes spare rage before **Heroic Strike**.",
+     "press": [
+      "**Bloodrage** while you are above 45% of your health, then **Charge** in. Open with **Victory Rush** when it is up and you are below 90% of your health.",
+      "Keep **Battle Shout** up.",
+      "**Execute** first, once the mob is below 20% of its health.",
+      "**Overpower** whenever it lights up.",
+      "**Rend** once, while the mob has more than a third of its health.",
+      "Spare rage: **Spearing Strike** when it is ready, then **Heroic Strike**. Keep 15 back for **Overpower**."
      ],
      "notes": [
+      "**Anger Management** (26) gives you 1 rage every 3 seconds in a fight; **Two-Handed Weapon Specialization** (27-29) adds 6% damage with your two-hander.",
       "**Bloodthrill** (30-31) also lights **Overpower** up while your **Rend** ticks. From 30 you press **Overpower** more often.",
       "**Berserker Stance** (30) and **Intercept** (30) are not part of this rotation. Stay in **Battle Stance**."
      ]
@@ -100,14 +114,14 @@
     {
      "from": 35,
      "title": "Slam",
-     "change": "**Improved Slam** (talent) makes **Slam** the better use of spare rage, ahead of Heroic Strike.",
+     "change": "**Improved Slam** (talent) makes **Slam** the first use of spare rage, ahead of **Spearing Strike** and **Heroic Strike**.",
      "press": [
       "**Bloodrage** while you are above 45% of your health, then **Charge** in. Open with **Victory Rush** when it is up and you are below 90% of your health.",
       "Keep **Battle Shout** up.",
       "**Execute** first, once the mob is below 20% of its health.",
       "**Overpower** whenever it lights up.",
       "**Rend** once, while the mob has more than a third of its health.",
-      "Spare rage: **Slam**, then **Heroic Strike**. Keep 15 back for **Overpower**."
+      "Spare rage: **Slam**, then **Spearing Strike**, then **Heroic Strike**. Keep 15 back for **Overpower**."
      ],
      "notes": [
       "**Whirlwind** (36) needs **Berserker Stance**. This rotation never leaves **Battle Stance**.",
@@ -125,9 +139,10 @@
       "**Overpower** whenever it lights up.",
       "**Mortal Strike** whenever it is ready.",
       "**Rend** once, while the mob has more than a third of its health.",
-      "Spare rage: **Slam**, then **Heroic Strike**. Keep 15 back for **Overpower**, and 30 more when **Mortal Strike** is almost ready."
+      "Spare rage: **Slam**, unless **Mortal Strike** is almost ready and needs the rage."
      ],
      "notes": [
+      "From 40 **Mortal Strike** takes the rage: the fight lab casts **Spearing Strike** under once in five kills and **Heroic Strike** never. **Heroic Strike** moves to C for rage you cannot spend otherwise (keep 15 back for **Overpower**); **Spearing Strike** leaves your bar.",
       "The remaining points go to Fury: **Cruelty** (41-45) for critical hits, **Unbridled Wrath** (47-50) and **Enrage** (52-56) for rage and damage.",
       "Two or more mobs: **Sweeping Strikes**, then **Thunder Clap** and **Cleave**."
      ]
@@ -254,8 +269,12 @@
        },
        {
         "key": "C",
-        "role": "Spare rage once Mortal Strike has Q",
+        "role": "Spare rage: Spearing Strike, then Heroic Strike once Mortal Strike has Q",
         "binds": [
+         {
+          "from": 25,
+          "spell": "Spearing Strike"
+         },
          {
           "from": 40,
           "spell": "Heroic Strike"
@@ -359,7 +378,7 @@
      "Battle Shout"
     ],
     "notes": [
-     "One swap on bar 1: **Mortal Strike** takes Q at 40 (change the macro's two names) and **Heroic Strike**, the spare-rage strike, moves to C.",
+     "At 40 **Mortal Strike** takes Q (change the macro's two names) and **Heroic Strike**, the spare-rage strike, moves to C in place of **Spearing Strike** (25), which the fight lab hardly casts once **Mortal Strike** takes the rage.",
      "No key: **Battle Shout** (3 minutes: click it between fights), **Battle Stance** (you never leave it), food, bandages, the mount and the Hearthstone.",
      "Levels 1-3 fight with Q alone. Q is a macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free. Add a key when its spell arrives.",
      "The single-target rotation never casts **Thunder Clap**, **Cleave** or **Sweeping Strikes**. They are there for a pull that brings friends."
@@ -368,7 +387,7 @@
   },
   {
    "spec": "Fury",
-   "intro": "What a Fury warrior presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. A warrior has no mana: every attack costs rage, and rage comes from hitting and being hit. Fury fights with a weapon in each hand: two weapons swing more often, and every landed swing gives rage. You stay in Battle Stance from 1 to 60, as Arms does; what Fury adds is Death Wish at 30 and Bloodthirst at 40. Each stage lists the full priority, so you can jump in at your level.",
+   "intro": "What a Fury warrior presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. A warrior has no mana: every attack costs rage, and rage comes from hitting and being hit. Fury fights with a weapon in each hand: two weapons swing more often, and every landed swing gives rage. You stay in Battle Stance from 1 to 60, as Arms does; what Fury adds is Death Wish at 30, Bloodthirst at 40 and Reckless Swings at 43. Each stage lists the full priority, so you can jump in at your level.",
    "stages": [
     {
      "from": 1,
@@ -399,7 +418,7 @@
     {
      "from": 10,
      "title": "Bloodrage, and talents begin",
-     "change": "**Bloodrage** gives you rage before you **Charge**. Talent points start, all in Fury until 42.",
+     "change": "**Bloodrage** gives you rage before you **Charge**. Talent points start, all in Fury until 43.",
      "press": [
       "**Bloodrage** while you are above 45% of your health, then **Charge** in.",
       "Keep **Battle Shout** up.",
@@ -456,8 +475,7 @@
       "**Heroic Strike** with spare rage. Keep 15 back for **Overpower**."
      ],
      "notes": [
-      "**Improved Execute** (25) makes **Execute** 3 rage cheaper.",
-      "**Dual Wield Specialization** (26, 28-29, 31-32) and **Furious Precision** (27, 33-34) are why Fury wants two weapons: the off hand hits more often, harder, and gives more rage. Nothing new to press."
+      "**Furious Precision** (25, 32-33) and **Dual Wield Specialization** (26-29, 31) are why Fury wants two weapons: the off hand hits more often, harder, and gives more rage. Nothing new to press."
      ]
     },
     {
@@ -475,12 +493,12 @@
      "notes": [
       "**Bloodrage** goes first: **Death Wish** costs 10 rage. It also makes you take 5% more damage while it lasts.",
       "**Berserker Stance** (30) opens **Berserker Rage** and **Intercept** (30), **Whirlwind** (36) and **Pummel** (38). This rotation stays in **Battle Stance**: the fight lab has not measured the swap.",
-      "**Flurry** (35-37) swings faster after a critical strike, **Blood Craze** (38-39) heals you after a big hit. Nothing new to press."
+      "**Blood Craze** (34, 38-39) heals you after a big hit, **Flurry** (35-37) swings faster after a critical strike. Nothing new to press."
      ]
     },
     {
      "from": 40,
-     "title": "Bloodthirst, the finished rotation",
+     "title": "Bloodthirst",
      "change": "**Bloodthirst** (talent): your main attack from here to 60, whenever it is ready.",
      "press": [
       "**Bloodrage** while you are above 45% of your health and **Death Wish** when it is ready, then **Charge** in. Open with **Victory Rush** when it is up and you are below 90% of your health.",
@@ -492,15 +510,34 @@
       "**Heroic Strike** with spare rage. Keep 15 back for **Overpower**."
      ],
      "notes": [
-      "**Gore Drinker** (42): your next 3 hits after **Bloodrage**, **Death Wish**, **Bloodthirst** or an **Enrage** each heal 0.5% of your health.",
-      "From 43 the points go to Arms: **Improved Rend**, **Improved Heroic Strike**, **Improved Charge**, **Deep Wounds**, **Improved Overpower** and **Impale** make the buttons you have better. Nothing new to press.",
+      "**Gore Drinker** (41-42): your next 3 hits after **Bloodrage**, **Death Wish**, **Bloodthirst** or an **Enrage** each heal 0.5% of your health, 1% with both points.",
+      "Two or more mobs: **Thunder Clap** and **Cleave**."
+     ]
+    },
+    {
+     "from": 43,
+     "title": "Reckless Swings, the finished rotation",
+     "change": "**Reckless Swings** (talent): a quarter of your base health for 5 more rage on each of your next 4 swings, every 15 seconds.",
+     "press": [
+      "**Bloodrage** while you are above 45% of your health and **Death Wish** when it is ready, then **Charge** in. Open with **Victory Rush** when it is up and you are below 90% of your health.",
+      "In melee: **Reckless Swings** whenever it is ready, while you are above 80% of your health and the mob above 30% of its own.",
+      "Keep **Battle Shout** up.",
+      "**Execute** first, once the mob is below 20% of its health.",
+      "**Overpower** whenever it lights up.",
+      "**Bloodthirst** whenever it is ready.",
+      "**Rend** once, while the mob has more than a third of its health.",
+      "**Heroic Strike** with spare rage. Keep 15 back for **Overpower**."
+     ],
+     "notes": [
+      "**Reckless Swings** costs health, not rage. The fight lab casts it off the global cooldown (an assumption: the tooltip names none) and skips it when your rage is within 20 of full.",
+      "From 44 the points go to Arms: **Improved Rend**, **Improved Heroic Strike**, **Improved Charge**, **Deep Wounds**, **Improved Overpower** and **Impale** make the buttons you have better. Nothing new to press.",
       "Two or more mobs: **Thunder Clap** and **Cleave**."
      ]
     }
    ],
    "between": [
     "Bandage when you are below 60% of your health. Keep First Aid trained: it is a warrior's main way to recover.",
-    "Eat when you are below 65% of your health, about two thirds. That is the fight lab's default, and the 2026-11-03 tuning of the Fury rotation kept it.",
+    "Eat when you are below 40% of your health. That is the tuned rule for Fury since 2026-11-15.",
     "Visit the trainer every even level. **Heroic Strike** and **Rend** have many ranks."
    ],
    "other": [
@@ -639,8 +676,13 @@
       "slots": [
        {
         "key": "Shift+Q",
-        "role": "Free",
-        "binds": []
+        "role": "Rage on your next 4 swings, paid in health: in melee while you are above 80% of your health",
+        "binds": [
+         {
+          "from": 43,
+          "spell": "Reckless Swings"
+         }
+        ]
        },
        {
         "key": "Shift+E",
@@ -719,7 +761,7 @@
      "Battle Shout"
     ],
     "notes": [
-     "These are the Arms keys, so the two specs share muscle memory. Three changes: **Bloodthirst** takes Q at 40 (change the macro's two names) and **Heroic Strike**, the spare-rage strike, moves to C, as **Mortal Strike** does for Arms; **Death Wish** (30) goes on Shift+Mouse 4, the Shift version of the **Bloodrage** key, because you press both before the Charge; Shift+Q and Shift+R stay free, since this build takes neither **Improved Slam** nor **Sweeping Strikes**.",
+     "These are the Arms keys, so the two specs share muscle memory. Three changes: **Bloodthirst** takes Q at 40 (change the macro's two names) and **Heroic Strike**, the spare-rage strike, moves to C, as **Mortal Strike** does for Arms (C stays empty before 40: this build has no **Spearing Strike**); **Death Wish** (30) goes on Shift+Mouse 4, the Shift version of the **Bloodrage** key, because you press both before the Charge; **Reckless Swings** (43) takes Shift+Q, which holds **Slam** in the Arms layout. Shift+R stays free, since this build takes no **Sweeping Strikes**.",
      "The pull from 30: Mouse 4 (**Bloodrage**), Shift+Mouse 4 (**Death Wish**, when it is ready), E (**Charge**). **Bloodrage** first, because **Death Wish** costs 10 rage. The [macros page](../macros.md) has a macro that puts the two cooldowns on one key.",
      "No key: **Battle Shout** (3 minutes: click it between fights), **Battle Stance** (you never leave it), food, bandages, the mount and the Hearthstone.",
      "Levels 1-3 fight with Q alone. Q is a macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free. Add a key when its spell arrives.",

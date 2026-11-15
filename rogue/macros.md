@@ -64,7 +64,7 @@ Leveling and raid. Keys below are your [Combat keybinds](leveling/keybinds.md) (
 
 - **Replaces:** R and C.
 - **Frees:** C.
-- **Fill it with:** C takes Kick from Shift+E if you play daggers (swords never Kick in the tuned rotation: leave C free or put Blind there).
+- **Fill it with:** C takes Kick from Shift+E if you play Assassination (Combat with swords, Subtlety and Combat-Subtlety never Kick in their tuned rotations: leave C free or put Blind there).
 - **Only for a build that has Cold Blood.** The Combat leveling build takes it at 55; check the talent link of the raid page you follow, because a Combat raid build may not have it. Without the talent, use plain Eviscerate on R.
 - **Why it works:** Cold Blood is off the global cooldown, so an Eviscerate pressed while it is ready always carries it (its cooldown is 3 minutes). It fires on every Eviscerate, including the small one that finishes a mob, so press R at 5 points; to spend Cold Blood on purpose, keep the plain macro on C instead.
 

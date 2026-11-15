@@ -102,9 +102,9 @@ What this build casts per kill ([report](../fightlab/combat-daggers-raid.md), al
 |---|---|---|---|---|---|---|
 | Melee | 4.4 | 4.8 | 5.8 | 5.8 | 6.0 | 14% |
 | Melee (off-hand) | 3.8 | 4.3 | 5.3 | 5.4 | 5.5 | 6% |
-| Sinister Strike | 2.7 | 3.7 | 4.5 | 4.9 | 4.8 | 21% |
-| Shank | 0.0 | 1.5 | 1.8 | 1.8 | 1.9 | 1% |
-| Eviscerate | 0.4 | 0.8 | 1.1 | 1.2 | 1.7 | 30% |
+| Sinister Strike | 2.7 | 3.7 | 4.5 | 4.9 | 4.9 | 21% |
+| Shank | 0.0 | 1.5 | 1.8 | 1.9 | 1.9 | 1% |
+| Eviscerate | 0.4 | 0.8 | 1.1 | 1.2 | 1.8 | 30% |
 | Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 10% |
 | Riposte | 0.5 | 0.7 | 0.8 | 0.8 | 0.9 | 4% |
 | Cold Blood | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 0% |

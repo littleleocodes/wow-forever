@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Arms leveling build the open leveling search found on 2026-11-06: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the arms-2h-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (arms-2h-raid). +1.6% faster per kill than opt-arms-2h-raid-leveling-st, the fastest of our leveling builds in that race.
+The Arms leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the arms-2h-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (arms-2h-raid). +1.3% faster per kill than arms-open-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -26,12 +26,13 @@ The Arms leveling build the open leveling search found on 2026-11-06: every lega
 | **Improved Overpower** | 2/2 | moved | Increases the critical strike chance of your Overpower ability by 50%. |
 | **Anger Management** | 1/1 | changed | Generates 1 Rage every 3 sec while in combat, and reduces Rage loss while out of combat by 30%. |
 | **Deep Wounds** | 3/3 | changed | Your critical strikes cause your opponent to Bleed, dealing 60% of your melee weapon's average damage over 12 sec. |
+| **Spearing Strike** | 1/1 | **NEW** | A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted. |
 | **Two-Handed Weapon Specialization** | 3/3 | changed | Increases the damage you deal with two-handed melee weapons by 6%. |
 | **Impale** | 2/2 | changed | Increases the critical strike damage bonus of your abilities by 20%. |
 | **Bloodthrill** | 2/2 | **NEW** | Grants your Main Hand melee attacks against enemies afflicted by your Rend a 20% chance to allow an activation of Overpower. |
 | **Sweeping Strikes** | 1/1 | unchanged | Your next 5 melee attacks strike an additional nearby opponent. |
 | **Weaponmaster** | 5/5 | **NEW** | Gives your melee weapon attacks a benefit depending on the weapon.   Axe/Polearm: Increases your  critical strike chance by 5%.   Mace/Staff: Your attacks ignore  15% of your target's armor.   Sword: Your successful melee   attacks have a 5% chance to   trigger an extra attack on the   target. |
-| **Improved Slam** | 2/2 | changed | Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 5.0 sec. |
+| **Improved Slam** | 1/2 | changed | Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 2.5 sec. |
 | **Mortal Strike** | 1/1 | unchanged | A vicious strike that deals weapon damage plus 85 and wounds the target, reducing the effectiveness of any healing by 50% for 10 sec. |
 
 ### Fury (17)
@@ -61,13 +62,14 @@ The Arms leveling build the open leveling search found on 2026-11-06: every lega
 | 19 | Arms | Improved Tactical Mastery | 1 | 10/0/0 |
 | 20-22 | Arms | Deep Wounds | 3 | 13/0/0 |
 | 23-24 | Arms | Improved Tactical Mastery | 2 | 15/0/0 |
-| 25 | Arms | Anger Management | 1 | 16/0/0 |
-| 26-28 | Arms | Two-Handed Weapon Specialization | 3 | 19/0/0 |
-| 29 | Arms | Impale | 1 | 20/0/0 |
+| 25 | Arms | Spearing Strike | 1 | 16/0/0 |
+| 26 | Arms | Anger Management | 1 | 17/0/0 |
+| 27-29 | Arms | Two-Handed Weapon Specialization | 3 | 20/0/0 |
 | 30-31 | Arms | Bloodthrill | 2 | 22/0/0 |
 | 32-34 | Arms | Weaponmaster | 3 | 25/0/0 |
-| 35-36 | Arms | Improved Slam | 2 | 27/0/0 |
-| 37-38 | Arms | Weaponmaster | 2 | 29/0/0 |
+| 35 | Arms | Improved Slam | 1 | 26/0/0 |
+| 36-37 | Arms | Weaponmaster | 2 | 28/0/0 |
+| 38 | Arms | Impale | 1 | 29/0/0 |
 | 39 | Arms | Sweeping Strikes | 1 | 30/0/0 |
 | 40 | Arms | Mortal Strike | 1 | 31/0/0 |
 | 41-45 | Fury | Cruelty | 5 | 31/5/0 |
@@ -80,14 +82,14 @@ The Arms leveling build the open leveling search found on 2026-11-06: every lega
 
 ## Core talents (priority order)
 
-1. **Bloodthrill** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Weaponmaster** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Cruelty** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Mortal Strike** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Enrage** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Improved Overpower** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Two-Handed Weapon Specialization** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Improved Slam** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Bloodthrill** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Weaponmaster** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Cruelty** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Improved Overpower** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Enrage** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Two-Handed Weapon Specialization** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Improved Charge** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Deep Wounds** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -95,8 +97,9 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- +1.8% faster than the hand draft leveling-arms, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 25.13; opt-arms-2h-raid-leveling-st 25.52, leveling-arms 25.59. The search simulated 25,870 builds.
+- +2.5% faster than the hand draft leveling-arms, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 24.70; arms-open-leveling 25.01, opt-arms-2h-raid-leveling-st 25.23, leveling-arms 25.32. The search simulated 25,870 builds.
+- The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -106,7 +109,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/warrior>
-- <https://talentsforever.com/warrior/60/02323213032215201-05140005002-2-7>
+- <https://talentsforever.com/warrior/60/02323213132215101-05140005002-2-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

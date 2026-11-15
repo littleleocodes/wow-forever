@@ -52,7 +52,7 @@
     ],
     "rotations": {
      "leveling:ret-dps": "4e2e970e1edf",
-     "leveling:holy-leveling": "4424257b1456",
+     "leveling:holy-leveling": "3ce03646602a",
      "leveling:prot-leveling": "440bbcfa5ed4"
     },
     "written": "2026-11-08"
@@ -107,7 +107,7 @@
     ],
     "rotations": {
      "leveling:ret-dps": "4e2e970e1edf",
-     "leveling:holy-leveling": "4424257b1456",
+     "leveling:holy-leveling": "3ce03646602a",
      "leveling:prot-leveling": "440bbcfa5ed4"
     },
     "written": "2026-11-08"
@@ -142,15 +142,15 @@
     "written": "2026-11-09"
    },
    "leveling": {
-    "plan": "Holy levels with its raid healing talents in the order that levels fastest, so Retribution's damage talents come late (from 31). You play the Holy list with a two-hander and **Seal of Righteousness**, because this build has no **Seal of Command**: **Judgement** and **Holy Strike** on cooldown, **Hammer of Wrath** to finish, and from level 30 **Holy Shock** at the mob as it walks in. The page's signature check fails (**Holy Shock** is cast too rarely at levels 30-50), so treat this build as provisional.",
+    "plan": "Holy levels with its raid healing talents in the order that levels fastest, so Retribution's damage talents come late (from 31). You play the Holy list with a two-hander and **Seal of Righteousness**, because this build has no **Seal of Command**: **Judgement** and **Holy Strike** on cooldown, **Hammer of Wrath** to finish, and from level 30 **Holy Shock** at the mob whenever it is ready, about twice a kill.",
     "why": [
      "Levels 10-29 are the raid build's Holy talents: **Divine Strength** (10-13, 2% Strength a rank), **Spiritual Focus** (14, 19 and 25-27, 14% a rank), **Reverence** (15-16, 30% of mana regeneration while casting), **Purifying Power** (17-18: **Cleanse** and **Purify** 20% cheaper, **Exorcism** and **Holy Wrath** a third quicker to come back), **Illumination** (20-24) and **Healing Light** (28-29). The list is plain until 30: seal, **Judgement**, **Holy Strike**, **Hammer of Justice** on a caster.",
-     "**Holy Shock** (level 30; ranks at 40, 48 and 56, 129 to 139 damage at rank 1, 334 to 362 at rank 4, 10-second cooldown): cast at the mob as it walks in, only while your mana is above 70% and the mob has more than 10% health left. With **Divine Favor** (51) ready and your health above 70%, press it first for a sure critical hit. The mana rule means it is cast in only some fights (the page's signature banner has the counts).",
+     "**Holy Shock** (level 30; ranks at 40, 48 and 56, 129 to 139 damage at rank 1, 334 to 362 at rank 4, 10-second cooldown): cast at the mob whenever it is ready while it has more than 10% health left, from range as it walks in and then in melee: about twice a kill. With **Divine Favor** (51) ready and your health above 70%, press it first for a sure critical hit. Until 2026-11-15 the fight lab held it for mana above 70%, which kept it to a few fights and failed the signature rule; on cooldown it costs about 5% at levels 30-40 (more drinking) and gains 1-4% at 50-60.",
      "From level 30 the fight lab dresses the build in caster gear (spell power and Intellect) instead of melee gear, because it casts **Holy Shock**; the melee row would be 4-5% faster at 60 for a list that never casts it, so the gear is a cost of this build's talents.",
      "**Benediction** (31-35) makes instants 10% cheaper, **Conviction** (36-38) adds 6% critical strike chance, **Deflection** (39-40) 2% parry, **Pursuit of Justice** (41-42) 15% movement speed, **Divine Intellect** (43-47) 10% Intellect, **Unyielding Faith** (48-49) 30% shorter fears and disorients, **Holy Power** (54-58) 10% a rank to the critical healing bonus of your Holy spells. The lab applies **Holy Power** to heals only: it does nothing for **Holy Shock** or **Holy Strike** damage.",
      "**Hammer of Wrath** below 20% health from level 44 (the tuned rules do not skip it for this list). No **Consecration** against a single mob: the Holy list never casts it.",
      "Heal in the fight once you drop below 40% health and the mob has more than a fifth left: **Holy Shock** on yourself (after **Divine Favor** if it is ready), **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter, **Lay on Hands** below 15%. **Illumination** (five ranks: every critical heal refunds half its base cost), **Spiritual Focus** (70% of heals not pushed back), **Healing Light** (28-29 and 50, 12%) and **Infusion of Light** (52: a critical **Flash of Light** or **Holy Shock** makes your next **Holy Light** half a second faster) all feed these heals. Against same-level mobs the fight lab rarely needed them.",
-     "Drink below 15% of your mana and eat only if you are still below 40% of your health (the tuned rules of 2026-11-06; the list's own defaults are a quarter and 65%); between fights heal back to 80% with **Holy Light** or **Flash of Light**."
+     "Drink below 15% of your mana and eat if you are still below 80% of your health (the tuned rules of 2026-11-15; the list's own defaults are a quarter and 65%); between fights heal back to 80% with **Holy Light** or **Flash of Light**."
     ],
     "caveats": [
      "**Oath of Light** (53), **Boundless Light** (59) and **Light's Vigil** (60) are raid healing talents the lab does not use for the Holy leveling list (**Light's Vigil** costs more mana than it returns for a solo leveler).",
@@ -164,24 +164,24 @@
     ],
     "rotations": {
      "leveling:ret-dps": "4e2e970e1edf",
-     "leveling:holy-leveling": "4424257b1456",
+     "leveling:holy-leveling": "3ce03646602a",
      "leveling:prot-leveling": "440bbcfa5ed4"
     },
-    "written": "2026-11-08"
+    "written": "2026-11-15"
    }
   },
   "Hybrid Protection/Retribution": {
    "leveling": {
-    "plan": "The Prot-Ret leveling page is the open search's winner for the Retribution rotation: a two-handed Retribution paladin (**Seal of Command**, **Judgement**, **Holy Strike**) with 25 points in Retribution, 16 in Protection and 10 in Holy. It plays the Retribution list plus **Swift Judgement** from level 57. For its speed against the other paladin pages see the leveling index.",
+    "plan": "The Prot-Ret leveling page is the open search's winner for the Retribution rotation: a two-handed Retribution paladin (**Seal of Command**, **Judgement**, **Holy Strike**) with 23 points in Retribution, 16 in Protection and 12 in Holy. It plays the Retribution list plus **Swift Judgement** from level 56. For its speed against the other paladin pages see the leveling index.",
     "why": [
-     "Levels 10-49 are Retribution's mana and damage talents plus Holy's Strength and seal damage: **Benediction** (10), **Deflection** (11-14 and 33, parry), **Sanctified Judgement** (15-17), **Conviction** (18-19 and 21), **Seal of Command** (20), **Improved Judgement** (22 and 60), **Vindication** (23-24 and 29), **Sacred Arbiter** (25), **Two-Handed Weapon Specialization** (26-28), **Vengeance** (30-32), **Divine Strength** (34-38), **Improved Seals** (39-41), **Divine Intellect** (42-46) and **Precision** (47-49). Play it like the Retribution page: **Seal of Command** before each pull, **Judgement** and **Holy Strike** on cooldown, **Hammer of Justice** before a **Judgement** on a mob above 30% health when the stun is ready.",
+     "Levels 10-48 are Retribution's mana and damage talents plus Holy's Strength and seal damage: **Benediction** (10-11), **Deflection** (12-14, parry), **Sanctified Judgement** (15-17), **Conviction** (18-19 and 21), **Seal of Command** (20), **Improved Judgement** (22), **Vindication** (23-24 and 29), **Sacred Arbiter** (25), **Two-Handed Weapon Specialization** (26-28), **Vengeance** (30-32), **Divine Strength** (33-37), **Improved Seals** (38-40, the last two points at 59-60), **Divine Intellect** (41-45) and **Precision** (46-48). Play it like the Retribution page: **Seal of Command** before each pull, **Judgement** and **Holy Strike** on cooldown, **Hammer of Justice** before a **Judgement** on a mob above 30% health when the stun is ready.",
      "No **Consecration** and no **Hammer of Wrath** against a single mob: the Retribution list's tuned rules never cast either. Drink below about a third of your mana.",
-     "**Swift Judgement** (57) is a second, free **Judgement** on its own 1-minute cooldown, pressed whenever it is ready while your seal is up and the mob has more than a quarter of its health left. It needs **Templar's Bulwark** (52), which the Retribution list never casts, but the 8-second absorb is there as an emergency button (it applies Forbearance, like **Divine Protection**).",
-     "In the search's value table for its winner (seconds per kill lost without the talent, level 60) **Sanctified Judgement** leads at about 3.2, then **Conviction** (2.7), **Swift Judgement** and **Vengeance** (1.6 each), **Two-Handed Weapon Specialization** (1.5), **Improved Seals** (1.2), **Precision** (1.0), **Seal of Command** (0.9) and **Vindication** (0.9).",
-     "**Improved Hammer of Justice** (53 and 55-56) takes 15 seconds off the stun's 1-minute cooldown, so the stun-then-judge combo comes up more often. **Vindication** lowers the attack power of the mob you hit, so it hits you softer; the fight lab models it since 2026-11-09."
+     "**Swift Judgement** (56) is a second, free **Judgement** on its own 1-minute cooldown, pressed whenever it is ready while your seal is up and the mob has more than a quarter of its health left. It needs **Templar's Bulwark** (51), which the Retribution list never casts, but the 8-second absorb is there as an emergency button (it applies Forbearance, like **Divine Protection**).",
+     "In the search's value table for its winner (seconds per kill lost without the talent, level 60) **Sanctified Judgement** leads at about 2.9, then **Conviction** (2.4), **Seal of Command** (1.6), **Swift Judgement** and **Vengeance** (1.5 each), **Two-Handed Weapon Specialization** (1.1), **Improved Seals** (1.0), **Sacred Arbiter** (0.7), **Precision** (0.6) and **Vindication** (0.6).",
+     "**Improved Hammer of Justice** (52, one point) takes 5 seconds off the stun's 1-minute cooldown, so the stun-then-judge combo comes up more often. **Vindication** lowers the attack power of the mob you hit, so it hits you softer; the fight lab models it since 2026-11-09."
     ],
     "caveats": [
-     "**Sacred Duty** (50-51, a minute off **Divine Shield**, **Divine Protection** and **Templar's Bulwark**) and **Toughness** (54, armor) measure about nothing against single mobs of your level. They are there because **Swift Judgement** needs 15 Protection points above it. The build takes no **Redoubt**, the other choice in those rows: it adds block, which needs a shield, and with a two-hander it does nothing. Since 2026-11-09 those points are **Sacred Duty**, and **Improved Hammer of Justice** took two of the three **Toughness** points, measured faster.",
+     "**Sacred Duty** (49-50, a minute off **Divine Shield**, **Divine Protection** and **Templar's Bulwark**) and **Toughness** (53-55, armor) measure about nothing against single mobs of your level. They are there because **Swift Judgement** needs 15 Protection points above it. The build takes no **Redoubt**, the other choice in those rows: it adds block, which needs a shield, and with a two-hander it does nothing (the search of 2026-11-15 took it; it was swapped for **Sacred Duty** by hand, which the fight lab measures alike).",
      "Undead and Demons: **Exorcism** hits them hard; the fight lab has no such mobs, so it was not measured."
     ],
     "diverge": [
@@ -191,35 +191,37 @@
     ],
     "rotations": {
      "leveling:ret-dps": "4e2e970e1edf",
-     "leveling:holy-leveling": "4424257b1456",
+     "leveling:holy-leveling": "3ce03646602a",
      "leveling:prot-leveling": "440bbcfa5ed4"
     },
-    "written": "2026-11-09"
+    "written": "2026-11-15"
    }
   },
   "Hybrid Holy/Protection": {
    "leveling": {
-    "plan": "The Holy/Protection hybrid plays the Protection list: a one-hander and a shield, **Seal of Fury** before each pull, **Holy Shield** from level 30, **Judgement**, **Holy Strike** and **Swift Judgement** (25) for damage. Its talents are Protection's first (10-30), then Retribution's mana and crit talents (31-42) and Holy's Strength and seal damage. Against a single mob the tuned rules cast no **Consecration**, **Hammer of Wrath** or **Hammer of Justice**.",
+    "plan": "The Holy-Prot leveling page is the open search's winner for the Holy rotation (2026-11-15): 21/16/14, Holy's talents first (10-30), then Retribution's (31-44), then Protection's (45-60). It plays the Holy list with a two-hander: **Seal of Righteousness** (**Seal of Command** from 41), **Judgement** and **Holy Strike** on cooldown, **Hammer of Wrath** to finish from 44, and from level 30 **Holy Shock** at the mob whenever it is ready, about twice a kill.",
     "why": [
-     "Levels 10-30 are Protection: **Divine Intellect** (10-12), **Redoubt** (13-14, 18-19 and 21), **Precision** (15-17), **Templar's Bulwark** (20), **Shield Specialization** (22-23), **Toughness** (24), **Swift Judgement** (25), **Anticipation** (26-28), **Improved Righteous Fury** (29) and **Holy Shield** (30). The Protection page's reasons for them apply: block, the mana a block returns, and a free second **Judgement** every minute.",
-     "Then **Benediction** (31-35), **Sanctified Judgement** (36-38), **Conviction** (39-41), **Improved Judgement** (42 and 45), **Divine Strength** (43-44 and 46-48), **Reverence** (49-50), **Improved Seals** (51-53 and 56), **Vindication** (54) and **Reckoning** (55 and 57-60). Keep **Righteous Fury** up even alone: **Improved Righteous Fury** only works while it is on.",
-     "**Holy Shield** whenever it is down and the mob has more than a fifth of its health; **Swift Judgement** whenever it is ready while your seal is up and the mob has more than a quarter of its health left. Below about a third of your health: **Templar's Bulwark**, then **Holy Light** behind it; **Divine Protection** below 30%, **Flash of Light** below a quarter, **Lay on Hands** below 15%. Drink below 15% of your mana."
+     "Levels 10-30 are Holy: **Divine Strength** (10-14, 2% Strength a rank), **Improved Seals** (15-17 and 27-28, 3% seal and judgement damage a rank), **Reverence** (18-19, 30% of mana regeneration while casting), **Holy Conduit** (20-21: **Exorcism**, **Consecration**, **Holy Wrath** and **Hammer of Wrath** 40% cheaper), **Illumination** (22-24 and 26: a critical heal refunds mana), **Divine Precision** (25, 4% hit for Holy spells), **Divine Favor** (29) and **Holy Shock** (30).",
+     "**Holy Shock** (level 30, 10-second cooldown): at the mob whenever it is ready while it has more than 10% health left, from range as it walks in and then in melee, about twice a kill; **Divine Favor** first while your health is above 70%, for a sure critical. From 30 the fight lab dresses the build in caster gear (spell power and Intellect), as it does every Holy build that casts **Holy Shock**.",
+     "Then Retribution: **Benediction** (31-35, instants 10% cheaper), **Sanctified Judgement** (36-38: **Judgement** returns 60% of the judged seal's mana cost), **Conviction** (39-40 and 42, 6% critical strike chance), **Seal of Command** (41) and **Improved Judgement** (43-44, 2 seconds off **Judgement**'s cooldown). Then Protection: **Divine Intellect** (45-49, 10% Intellect), **Precision** (50-52, 3% hit), **Sacred Duty** (53, 30 seconds off your bubbles and **Templar's Bulwark**) and **Guardian's Favor** (54) to open the next row, **Templar's Bulwark** (55), **Toughness** (56-59) and **Swift Judgement** (60).",
+     "With **Seal of Command** (41): **Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% health left: the seal's judgement hits a stunned mob twice as hard. **Hammer of Wrath** below 20% health from 44. **Swift Judgement** (60) whenever it is ready, with the seal up and the mob above a quarter of its health. No **Consecration** against a single mob.",
+     "Heal in the fight once you drop below 40% health and the mob has more than a fifth left: **Templar's Bulwark** (55) unless Forbearance is on you, **Holy Shock** on yourself (after **Divine Favor** if it is ready), **Divine Protection** (**Divine Shield** from 34) below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter, **Lay on Hands** below 15%. Drink below 15% of your mana and eat if you are still below 80% of your health (the tuned rules of 2026-11-15); between fights heal back to 80% with **Holy Light** or **Flash of Light**."
     ],
     "caveats": [
-     "This build takes no **Iron Creed**, so skip the lines that use it. Before level 30 skip the **Holy Shield** line, before 20 the **Templar's Bulwark** one and before 25 **Swift Judgement**.",
-     "**Templar's Bulwark** applies Forbearance for a minute, so **Divine Protection** is not available right after it.",
-     "Undead and Demons: **Exorcism** hits them hard; the fight lab has no such mobs, so it was not measured. Since 2026-11-09 the build takes no **Holy Conduit**: it only makes **Exorcism**, **Consecration**, **Holy Wrath** and **Hammer of Wrath** cheaper, none of which the list casts against a single mob, and its two points went to **Reckoning** (measured faster) and **Vindication**."
+     "The row before **Templar's Bulwark** takes **Sacred Duty** and **Guardian's Favor**, whose point only opens Protection's third row for a solo leveler. The build takes no **Redoubt**, the row's other choice: it adds block, which needs a shield (the search had taken it; it was swapped for **Sacred Duty** by hand, which the fight lab measures alike).",
+     "**Templar's Bulwark** applies Forbearance for a minute, so **Divine Shield** is not available right after it.",
+     "Undead and Demons: use **Exorcism** on cooldown (**Holy Conduit** makes it 40% cheaper). Unmeasured: the fight lab has no Undead or Demon mobs."
     ],
     "diverge": [
-     "A mob that casts spells: **Hammer of Justice** stops the cast, although the tuned rules never cast it against a single mob.",
-     "Two or more mobs: **Consecration** hits them all; the tuned rules were set on single mobs."
+     "A mob that casts spells: **Hammer of Justice** stops the cast.",
+     "Two or more mobs: **Consecration** hits them all (**Holy Conduit** makes it 40% cheaper). The Holy list was not measured on several mobs with this build."
     ],
     "rotations": {
      "leveling:ret-dps": "4e2e970e1edf",
-     "leveling:holy-leveling": "4424257b1456",
+     "leveling:holy-leveling": "3ce03646602a",
      "leveling:prot-leveling": "440bbcfa5ed4"
     },
-    "written": "2026-11-09"
+    "written": "2026-11-15"
    }
   }
  }

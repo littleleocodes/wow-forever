@@ -3,7 +3,7 @@
  "spec": "Discipline",
  "build": "discipline-leveling",
  "rotation": "discipline-leveling",
- "date": "2026-11-13",
+ "date": "2026-11-15",
  "fights": 3000,
  "seeds": [
   3,
@@ -42,8 +42,8 @@
     "haste_rating": -0.00016,
     "defense_rating": 0.01105,
     "dodge_rating": 0.00636,
-    "healing": 0.0,
-    "spell_penetration": 0.0613
+    "spell_penetration": 0.0613,
+    "healing": 0.0
    }
   },
   "15": {
@@ -61,8 +61,8 @@
     "haste_rating": 0.00436,
     "defense_rating": 0.01279,
     "dodge_rating": 0.00901,
-    "healing": 0.0,
-    "spell_penetration": 0.0536
+    "spell_penetration": 0.0536,
+    "healing": 0.0
    }
   },
   "20": {
@@ -80,8 +80,8 @@
     "haste_rating": -0.00089,
     "defense_rating": 0.00455,
     "dodge_rating": 0.00476,
-    "healing": 0.0,
-    "spell_penetration": 0.02777
+    "spell_penetration": 0.02777,
+    "healing": 0.0
    }
   },
   "25": {
@@ -99,8 +99,8 @@
     "haste_rating": 0.00086,
     "defense_rating": 0.01025,
     "dodge_rating": 0.00901,
-    "healing": 0.0,
-    "spell_penetration": 0.03716
+    "spell_penetration": 0.03716,
+    "healing": 0.0
    }
   },
   "30": {
@@ -118,8 +118,8 @@
     "haste_rating": -0.00103,
     "defense_rating": 0.00844,
     "dodge_rating": 0.00564,
-    "healing": 0.0,
-    "spell_penetration": 0.02813
+    "spell_penetration": 0.02813,
+    "healing": 0.0
    }
   },
   "35": {
@@ -137,8 +137,8 @@
     "haste_rating": -0.00158,
     "defense_rating": 0.00834,
     "dodge_rating": 0.00619,
-    "healing": 0.0,
-    "spell_penetration": 0.03046
+    "spell_penetration": 0.03046,
+    "healing": 0.0
    }
   },
   "40": {
@@ -156,8 +156,8 @@
     "haste_rating": 0.00074,
     "defense_rating": 0.0043,
     "dodge_rating": 0.00318,
-    "healing": 0.0,
-    "spell_penetration": 0.0306
+    "spell_penetration": 0.0306,
+    "healing": 0.0
    }
   },
   "45": {
@@ -175,8 +175,8 @@
     "haste_rating": 0.00108,
     "defense_rating": 0.00452,
     "dodge_rating": 0.00433,
-    "healing": 0.0,
-    "spell_penetration": 0.02707
+    "spell_penetration": 0.02707,
+    "healing": 0.0
    }
   },
   "50": {
@@ -194,8 +194,8 @@
     "haste_rating": 0.00036,
     "defense_rating": 0.00351,
     "dodge_rating": 0.00309,
-    "healing": 0.0,
-    "spell_penetration": 0.02032
+    "spell_penetration": 0.02032,
+    "healing": 0.0
    }
   },
   "55": {
@@ -213,8 +213,8 @@
     "haste_rating": 0.00093,
     "defense_rating": 0.00313,
     "dodge_rating": 0.00304,
-    "healing": 0.0,
-    "spell_penetration": 0.02222
+    "spell_penetration": 0.02222,
+    "healing": 0.0
    }
   },
   "60": {
@@ -232,14 +232,12 @@
     "haste_rating": -0.00027,
     "defense_rating": 0.00308,
     "dodge_rating": 0.00169,
-    "healing": 0.0,
-    "spell_penetration": 0.02056
+    "spell_penetration": 0.02056,
+    "healing": 0.0
    }
   }
  },
  "note": "Negative steps (hit_rating, expertise_rating): the value per point while under the cap, measured as a step down. Ratings in rating points (the same at every level). A fight-lab model of the beta, not a measurement.",
  "provisional_order": false,
- "added": {
-  "spell_penetration": "2026-11-13"
- }
+ "base": "standard"
 }

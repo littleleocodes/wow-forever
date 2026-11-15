@@ -37,9 +37,9 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 | **Shamanistic Focus** | 1/1 | **NEW** | Reduces the mana cost of your Shock and Lightning Shield spells by 45%. |
 | **Flurry** | 5/5 | changed | Increases your attack speed by 30% for your next 3 swings after dealing a melee critical strike. |
 | **Improved Ghost Wolf** | 2/2 | changed | Reduces the cast time of your Ghost Wolf spell by 3.0 sec, and Ghost Wolf may be used indoors. |
-| **Stormstrike** | 1/1 | changed | Instantly strike for 150% normalized weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec. |
+| **Stormstrike** | 1/1 | changed | Instantly strike for 100% normalized weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec. |
 | **Mental Quickness** | 2/2 | **NEW** | Increases your spell damage and healing by up to 30% of your Intellect. |
-| **Maelstrom Weapon** | 1/5 | **NEW** | When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 4%. Stacks up to 5 times. Lasts 30 sec. |
+| **Maelstrom Weapon** | 1/5 | **NEW** | When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 20%. Stacks up to 5 times. Lasts 30 sec. |
 | **Rage of the Farseer** | 1/1 | **NEW** | Increases your attack speed by 30% for 25 sec. |
 
 ### Restoration (8)
@@ -100,13 +100,13 @@ What this build casts per kill ([report](../fightlab/enhancement-dps.md), all le
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 3.1 | 2.7 | 3.2 | 3.5 | 4.1 | 19% |
-| Stormstrike | 0.0 | 1.9 | 2.0 | 2.1 | 2.3 | 16% |
+| Melee | 3.1 | 3.2 | 3.6 | 3.9 | 4.4 | 20% |
+| Earth Shock | 2.0 | 1.8 | 2.0 | 2.1 | 2.2 | 37% |
 | Windfury | 0.0 | 1.6 | 1.8 | 2.0 | 2.2 | 14% |
-| Earth Shock | 2.0 | 1.4 | 1.6 | 1.8 | 1.9 | 34% |
-| Lightning Shield | 0.6 | 0.5 | 0.6 | 0.6 | 0.7 | 12% |
-| Searing Totem | 0.8 | 0.6 | 0.6 | 0.6 | 0.6 | 4% |
-| Lightning Bolt | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 2% |
+| Stormstrike | 0.0 | 1.6 | 1.6 | 1.7 | 1.9 | 9% |
+| Lightning Shield | 0.6 | 0.6 | 0.7 | 0.7 | 0.7 | 12% |
+| Searing Totem | 0.8 | 0.6 | 0.6 | 0.7 | 0.6 | 4% |
+| Lightning Bolt | 0.0 | 0.0 | 0.0 | 0.0 | 0.3 | 4% |
 
 ## Notes
 

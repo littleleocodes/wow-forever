@@ -7,7 +7,7 @@ that has two side buttons (WoW shows them as Button 4 and Button 5). Same scheme
 and [paladin](../../paladin/leveling/keybinds.md) layouts: Q the filler you press most, E the control, R the big hit, F the
 save, the two thumb buttons the reactions, 1-4 the rest, the middle mouse button the wand, the Shift bar the rarer tools. Keys are for
 spells you press in a fight; Power Word: Fortitude, Inner Fire, Shadowform, Renew between fights, food, water, the mount and the
-Hearthstone have no key and are clicked. It is built on the [Shadow leveling page](shadow.md) and is the Shadow layout. Holy, Discipline and Smite play Smite on Q (and Holy Fire, Penance or Devouring Plague on other keys): their own key tables are in their level-by-level guides, [Holy](holy-by-level.md), [Discipline](discipline-by-level.md) and [Smite](smite-by-level.md); spells they share with Shadow sit on the same keys.
+Hearthstone have no key and are clicked. It is built on the [Shadow leveling page](shadow.md) and is the Shadow layout. Holy, Discipline and Smite play Smite on Q (Holy and Smite add Holy Fire, Discipline Penance and Devouring Plague, on other keys): their own key tables are in their level-by-level guides, [Holy](holy-by-level.md), [Discipline](discipline-by-level.md) and [Smite](smite-by-level.md); spells they share with Shadow sit on the same keys.
 
 **Which spell is on each key at your level:** the "Keybinds by level" tables of the
 [Shadow level-by-level guide](shadow-by-level.md). This page is the layout at 60 and the setup.

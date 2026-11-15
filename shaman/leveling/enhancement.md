@@ -6,11 +6,11 @@
 
 **Leveling from level 1?** [The rotation level by level](enhancement-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Enhancement — Leveling](../research/leveling/builds/enhancement-open-leveling.md)** (12/32/7) — [open the talent tree](https://talentsforever.com/shaman/60/55000011-050033211051012251-05002-12)
+**[Enhancement — Leveling](../research/leveling/builds/enhancement-open-leveling.md)** (12/33/6) — [open the talent tree](https://talentsforever.com/shaman/60/5501001-050033113051012251-05001-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Enhancement), which stays below as the alternative. A model of the beta, to check at launch.
 
-**Signature spells:** 74% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Stormstrike, Earth Shock; this build never casts Windfury Weapon, Flametongue Weapon, Flame Shock) (the spec's rule: at least 60%; **Stormstrike** cast at level 60).
+**Signature spells:** 77% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Stormstrike, Earth Shock; this build never casts Windfury Weapon, Flametongue Weapon, Flame Shock) (the spec's rule: at least 60%; **Stormstrike** cast at level 60).
 
 ## How to play
 
@@ -35,18 +35,18 @@ Melee with a slow two-hander and **Windfury Weapon**, and use your spells to fin
 
 **Why it works**
 
-- Before every pull: **Lightning Shield** and your imbue (**Rockbiter Weapon** until 30, then **Windfury Weapon**). At 60 in the fight lab your swings and Windfury attacks do about 40% of your damage, and **Lightning Shield** with **Improved Lightning Shield** (levels 18, 19 and 21) about 15%, because a mob hits you all fight.
-- **Searing Totem** at the pull while you have more than half your mana: it shoots the mob all fight, about 5% of your damage at 60.
-- **Stormstrike** (level 25) whenever it is ready: a weapon hit that makes your next **Earth Shock** or **Lightning Bolt** 20% stronger, and with **Improved Stormstrike** (34 and 41) half your mana regeneration continues while you cast. It is this build's most valuable talent at 60 (about 4 seconds per kill without it).
+- Before every pull: **Lightning Shield** and your imbue (**Rockbiter Weapon** until 30, then **Windfury Weapon**). At 60 in the fight lab your swings and Windfury attacks do about a third of your damage, and **Lightning Shield** with **Improved Lightning Shield** (levels 18, 19 and 21) about 13%, because a mob hits you all fight.
+- **Searing Totem** at the pull while you have more than half your mana: it shoots the mob all fight, a few percent of your damage at 60.
+- **Stormstrike** (level 25) whenever it is ready: a weapon hit (100% weapon damage since the 2026-11-10 hotfix, 150% before) that makes your next **Earth Shock** or **Lightning Bolt** 20% stronger, and with **Improved Stormstrike** (38-39) half your mana regeneration continues while you cast. At 60 it is worth about 3 seconds per kill in the fight lab, second only to **Shamanistic Focus**.
 - One tuned rule shapes the fight: no **Lightning Bolt** until the mob is under 35% health, so no opening bolt, and a 5-stack bolt finishes the mob. The fight lab measured it about 10% faster per kill (re-tuned 2026-10-20).
-- **Earth Shock** whenever the shock cooldown is free: about a quarter of your damage at 60. It shares that cooldown with **Flame Shock**, so the fight lab never casts **Flame Shock** on one mob.
-- **Maelstrom Weapon** (levels 35-39) stacks as you hit; 5 stacks make **Lightning Bolt** instant and cheaper. **Rage of the Farseer** (from 40) goes at the start of a fight whenever it is ready.
+- **Earth Shock** whenever the shock cooldown is free: about a third of your damage at 60. It shares that cooldown with **Flame Shock**, so the fight lab never casts **Flame Shock** on one mob.
+- **Maelstrom Weapon** (levels 40-44) stacks as you hit: since the 2026-11-10 hotfix each stack takes 20% off your next **Lightning Bolt**'s cast time and mana at every rank, and more points bring the stacks faster, so 5 stacks make it instant and free. **Rage of the Farseer** (45) goes at the start of a fight whenever it is ready.
 
 **Caveats**
 
-- **Shamanistic Focus** (at 20) makes shocks and **Lightning Shield** 45% cheaper; at 60 it is worth about 3 seconds per kill in the fight lab.
-- Before 25 you have no **Stormstrike** and before 35 no **Maelstrom Weapon**: until then it is weapon, shield, **Earth Shock** and **Searing Totem**.
-- **Anticipation** (22) and **Elemental Weapons** (23-24) mostly fill the 15 Enhancement points that **Stormstrike**'s row asks for before you can take it at 25.
+- **Shamanistic Focus** (at 20) makes shocks and **Lightning Shield** 45% cheaper; at 60 it is worth about 4 seconds per kill in the fight lab, the most of any talent in this build.
+- Before 25 you have no **Stormstrike** and before 40 no **Maelstrom Weapon**: until then it is weapon, shield, **Earth Shock** and **Searing Totem**.
+- **Anticipation** (22 and 24) and **Elemental Weapons** (23) mostly fill the 15 Enhancement points that **Stormstrike**'s row asks for before you can take it at 25.
 - Drink only below 15% mana and heal or eat back to 80% health between pulls: the tuned rules the fight lab plays.
 
 **When to change it**
@@ -67,40 +67,41 @@ One point per level from 10, in this order:
 | 20 | Shamanistic Focus (Enhancement) | 1 |
 | 21 | Improved Lightning Shield (Enhancement) | 1 |
 | 22 | Anticipation (Enhancement) | 1 |
-| 23-24 | Elemental Weapons (Enhancement) | 2 |
+| 23 | Elemental Weapons (Enhancement) | 1 |
+| 24 | Anticipation (Enhancement) | 1 |
 | 25 | Stormstrike (Enhancement) | 1 |
-| 26-29 | Flurry (Enhancement) | 4 |
-| 30-31 | Mental Quickness (Enhancement) | 2 |
-| 32 | Flurry (Enhancement) | 1 |
-| 33 | Spirit Weapons (Enhancement) | 1 |
-| 34 | Improved Stormstrike (Enhancement) | 1 |
-| 35-39 | Maelstrom Weapon (Enhancement) | 5 |
-| 40 | Rage of the Farseer (Enhancement) | 1 |
-| 41 | Improved Stormstrike (Enhancement) | 1 |
-| 42-46 | Tidal Focus (Restoration) | 5 |
-| 47-51 | Concussion (Elemental) | 5 |
-| 52-56 | Convection (Elemental) | 5 |
-| 57 | Elemental Focus (Elemental) | 1 |
-| 58 | Elemental Warding (Elemental) | 1 |
-| 59-60 | Totemic Focus (Restoration) | 2 |
+| 26-30 | Tidal Focus (Restoration) | 5 |
+| 31-34 | Flurry (Enhancement) | 4 |
+| 35-36 | Mental Quickness (Enhancement) | 2 |
+| 37 | Flurry (Enhancement) | 1 |
+| 38-39 | Improved Stormstrike (Enhancement) | 2 |
+| 40-44 | Maelstrom Weapon (Enhancement) | 5 |
+| 45 | Rage of the Farseer (Enhancement) | 1 |
+| 46-50 | Concussion (Elemental) | 5 |
+| 51-55 | Convection (Elemental) | 5 |
+| 56 | Elemental Focus (Elemental) | 1 |
+| 57 | Spirit Weapons (Enhancement) | 1 |
+| 58 | Totemic Focus (Restoration) | 1 |
+| 59 | Reverberation (Elemental) | 1 |
+| 60 | Anticipation (Enhancement) | 1 |
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
 | 20 | 21 | 17 |
-| 30 | 23 | 17 |
-| 40 | 25 | 19 |
-| 50 | 26 | 21 |
-| 60 | 26 | 21 |
+| 30 | 25 | 18 |
+| 40 | 27 | 20 |
+| 50 | 28 | 22 |
+| 60 | 29 | 22 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
 ## Other builds of this spec
 
-- [Leveling — Enhancement](../research/leveling/builds/leveling-enhancement.md) (7/34/10, 25 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/shaman/60/0502-055030310051012251-05005-12)
-- [Enhancement (optimized)](../research/leveling/builds/opt-enhancement-dps-leveling-st.md) (12/31/8, 26 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/shaman/60/0505011-250233013051202011-053-12)
+- [Leveling — Enhancement](../research/leveling/builds/leveling-enhancement.md) (7/34/10, 27 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/shaman/60/0502-055030310051012251-05005-12)
+- [Enhancement (optimized, solo at 60)](../research/leveling/builds/opt-enhancement-dps-solo-60.md) (12/31/8, 27 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/shaman/60/0505011-250233013051202011-053-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-13 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-15 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

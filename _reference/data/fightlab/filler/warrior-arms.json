@@ -3,7 +3,7 @@
  "spec": "Arms",
  "build": "arms-open-leveling",
  "rotation": "arms-2h-raid",
- "date": "2026-11-09",
+ "date": "2026-11-15",
  "fights": 1500,
  "start_order": [
   {
@@ -51,20 +51,20 @@
   {
    "levels": "25",
    "tree": "Arms",
+   "talent": "Spearing Strike",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Arms",
    "talent": "Anger Management",
    "points": 1
   },
   {
-   "levels": "26-28",
+   "levels": "27-29",
    "tree": "Arms",
    "talent": "Two-Handed Weapon Specialization",
    "points": 3
-  },
-  {
-   "levels": "29",
-   "tree": "Arms",
-   "talent": "Impale",
-   "points": 1
   },
   {
    "levels": "30-31",
@@ -79,16 +79,22 @@
    "points": 3
   },
   {
-   "levels": "35-36",
+   "levels": "35",
    "tree": "Arms",
    "talent": "Improved Slam",
-   "points": 2
+   "points": 1
   },
   {
-   "levels": "37-38",
+   "levels": "36-37",
    "tree": "Arms",
    "talent": "Weaponmaster",
    "points": 2
+  },
+  {
+   "levels": "38",
+   "tree": "Arms",
+   "talent": "Impale",
+   "points": 1
   },
   {
    "levels": "39",
@@ -147,12 +153,12 @@
  ],
  "steps": [
   {
-   "weighted": 24.687,
+   "weighted": 24.183,
    "values_at_60": {
-    "Impale": -0.313,
-    "Improved Bloodrage": -0.329,
-    "Improved Execute": -0.266,
-    "Mortal Strike": -36.036
+    "Impale": -0.226,
+    "Improved Bloodrage": -0.17,
+    "Improved Execute": -0.111,
+    "Mortal Strike": -33.957
    },
    "zero": []
   }
@@ -204,20 +210,20 @@
   {
    "levels": "25",
    "tree": "Arms",
+   "talent": "Spearing Strike",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Arms",
    "talent": "Anger Management",
    "points": 1
   },
   {
-   "levels": "26-28",
+   "levels": "27-29",
    "tree": "Arms",
    "talent": "Two-Handed Weapon Specialization",
    "points": 3
-  },
-  {
-   "levels": "29",
-   "tree": "Arms",
-   "talent": "Impale",
-   "points": 1
   },
   {
    "levels": "30-31",
@@ -232,16 +238,22 @@
    "points": 3
   },
   {
-   "levels": "35-36",
+   "levels": "35",
    "tree": "Arms",
    "talent": "Improved Slam",
-   "points": 2
+   "points": 1
   },
   {
-   "levels": "37-38",
+   "levels": "36-37",
    "tree": "Arms",
    "talent": "Weaponmaster",
    "points": 2
+  },
+  {
+   "levels": "38",
+   "tree": "Arms",
+   "talent": "Impale",
+   "points": 1
   },
   {
    "levels": "39",

@@ -3,14 +3,14 @@
   "Slice and Dice": {
    "off": true
   },
+  "Kick": {
+   "off": true
+  },
   "Kidney Shot": {
    "off": true
   }
  },
  "eat_below": 0.4,
- "knobs": {
-  "DEATH_MARK_CP": 1
- },
  "class": "rogue",
  "spec": "subtlety-leveling",
  "build": "subtlety-open-leveling",
@@ -21,7 +21,7 @@
   50,
   60
  ],
- "date": "2026-11-06",
+ "date": "2026-11-15",
  "signature": {
   "required": [
    "Death Mark",
@@ -30,10 +30,12 @@
   ],
   "build_spec": "Subtlety",
   "dropped_saved_rules": [],
-  "core_share_before": 0.7828636848424808,
-  "core_share_after": 0.8214416727099043,
+  "core_share_before": 0.7835990062926828,
+  "core_share_after": 0.8151648547031297,
   "min_share": 0.6,
-  "floor_reached": null
+  "floor_reached": null,
+  "played_before": true,
+  "played_after": true
  },
  "fights": 600,
  "confirm": 3000,
@@ -46,8 +48,8 @@
     "Slice and Dice",
     true
    ],
-   "gain_seed1": 0.05046469453610836,
-   "gain_seed2": 0.053189547788342506
+   "gain_seed1": 0.055812878612426675,
+   "gain_seed2": 0.06527737595326488
   },
   {
    "round": 2,
@@ -57,19 +59,19 @@
     null,
     0.4
    ],
-   "gain_seed1": 0.046149567455849305,
-   "gain_seed2": 0.041410495087617405
+   "gain_seed1": 0.04252886649612719,
+   "gain_seed2": 0.04423259862839768
   },
   {
    "round": 3,
-   "change": "DEATH_MARK_CP = 1",
+   "change": "never cast Kick",
    "rule": [
-    "knob",
-    "DEATH_MARK_CP",
-    1
+    "off",
+    "Kick",
+    true
    ],
-   "gain_seed1": 0.011038276468892994,
-   "gain_seed2": 0.007959038086888137
+   "gain_seed1": 0.005869240102732376,
+   "gain_seed2": 0.009308685689313645
   },
   {
    "round": 4,
@@ -79,49 +81,49 @@
     "Kidney Shot",
     true
    ],
-   "gain_seed1": 0.007370461217857449,
-   "gain_seed2": 0.006032695175108516
+   "gain_seed1": 0.004639902738792889,
+   "gain_seed2": 0.006278154608131303
   }
  ],
- "weighted_before": 24.89148100376322,
- "weighted_after": 22.284413333237456,
+ "weighted_before": 24.680553203187532,
+ "weighted_after": 21.824564999894,
  "per_level": {
   "20": {
-   "before": 19.885439090800052,
-   "after": 18.93903333322931,
+   "before": 18.168218861734672,
+   "after": 17.64799999991111,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 23.23781767130404,
-   "after": 21.240133333205232,
+   "before": 22.70157707605531,
+   "after": 20.562933333211916,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 26.90902592623071,
-   "after": 24.143166666609066,
+   "before": 27.530598238958877,
+   "after": 23.603666666590666,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 26.433679187233782,
-   "after": 23.814666666597507,
+   "before": 26.011012333834206,
+   "after": 22.64376666656165,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 24.756798206443413,
-   "after": 21.40729999987516,
+   "before": 24.832073414518128,
+   "after": 21.978833333208517,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
  },
  "retune": {
   "times": {
-   "saved": 22.443,
-   "from scratch": 22.284,
-   "continued": 22.284
+   "saved": 22.169,
+   "from scratch": 21.825,
+   "continued": 21.965
   },
   "installed": "from scratch",
   "reference_ok": true

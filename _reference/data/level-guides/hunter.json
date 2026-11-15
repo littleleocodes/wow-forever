@@ -1,6 +1,6 @@
 {
  "class": "hunter",
- "updated": "2026-11-07",
+ "updated": "2026-11-15",
  "guides": [
   {
    "spec": "Hybrid Beast Mastery/Survival",
@@ -106,7 +106,8 @@
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A pull gone wrong: **Feign Death**, and the mobs go for the pet or home.",
      "notes": [
       "**Aspect of the Beast** (30) replaces **Aspect of the Monkey**: attack power instead of dodge. Click it.",
-      "**Lethal Attacks** (34-38) and **Deadly Aspects** (39-43) are the melee talents of this build. Nothing to press."
+      "**Resourcefulness** (30 and 32) makes the trap and your strikes 60% cheaper; **Survivalist's Discipline** (33-34) brings the trap back every 18 seconds. **Lethal Attacks** (31, then 35-37): 1% more critical strike chance a point.",
+      "**Lethal Attacks** (35-37) and **Deadly Aspects** (38-42) are the melee talents of this build. Nothing to press."
      ],
      "unsimulated": [
       "Mongoose Bite"
@@ -120,14 +121,14 @@
       "Send the pet in, then **Serpent Sting** as you walk in behind it.",
       "**Lacerate** while the mob has more than half its health and you have 80% of your mana or more.",
       "**Immolation Trap** at your feet while the mob has more than 40% of its health.",
-      "**Mongoose Bite** when it lights up, after you dodge.",
       "Melee until the mob is dead.",
       "**Raptor Strike** once the mob is below 20% of its health."
      ],
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A pull gone wrong: **Feign Death**.",
      "notes": [
-      "**Focused Fire** (44-45), **Endurance Training** (46-48), **Unleashed Fury** (49-53) and **Ferocity** (54-58) all go to the pet, which is a third of your damage at 60.",
-      "**Bestial Wrath**, **Intimidation**, **Counterattack** and **Deterrence** belong to other builds. This one does not take them."
+      "**Focused Fire** (43-44), **Endurance Training** (45-47), **Unleashed Fury** (48-52) and **Ferocity** (53-57) all go to the pet, which is a third of your damage at 60. **Bestial Discipline** (58-59) keeps half your mana regeneration running while you cast, and **Predator's Edge** takes its fifth point at 60.",
+      "**Bestial Wrath**, **Intimidation**, **Counterattack** and **Deterrence** belong to other builds. This one does not take them.",
+      "**Mongoose Bite** lights up only after you dodge, which is rare while the pet holds the mob: from 40 the fight lab hardly ever presses it. Press it when it does light up."
      ]
     }
    ],
@@ -137,7 +138,7 @@
     "Visit the trainer every even level: **Raptor Strike**, **Serpent Sting** and **Immolation Trap** have many ranks."
    ],
    "other": [
-    "Pure Survival (3/16/32) plays the same melee rotation and is 2% behind. Marksmanship, the ranged hunter, is 7% behind and has its own page in this folder with the shots.",
+    "Pure Survival (3/16/32) plays the same melee rotation and is level with it (0.1% behind in the fight lab). Marksmanship, the ranged hunter, is 8% behind and has its own page in this folder with the shots.",
     "Beast Mastery, the pet-first ranged build, is the slowest of the five in the fight lab."
    ],
    "keys": {
@@ -449,12 +450,12 @@
       "Send the pet in first and let it hold the mob.",
       "**Hunter's Mark** while the mob has more than 30% of its health.",
       "**Serpent Sting** while it has more than 40%.",
-      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Aimed Shot** whenever it is ready while the mob has more than 35% of its health.",
       "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
      ],
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
      "notes": [
-      "**Aimed Shot** has a 2-second cast and a 6-second cooldown it shares with **Multi-Shot**. Below a quarter of the mob's health, let **Auto Shot** and the pet finish it.",
+      "**Aimed Shot** has a 2-second cast and a 6-second cooldown it shares with **Multi-Shot**. Below 35% of the mob's health, let **Auto Shot** and the pet finish it: the tuned rules (2026-11-15) measured that slightly faster.",
       "**Unleashed Fury** (20-24) and **Ferocity** (25-29): the pet hits 15% harder and crits 10% more.",
       "**Freezing Trap** (20): drop it before a pull that will bring two mobs. **Aspect of the Cheetah** (20) is for the road."
      ]
@@ -468,7 +469,7 @@
       "**Rapid Fire** at the pull when it is ready.",
       "**Hunter's Mark** while the mob has more than 30% of its health.",
       "**Serpent Sting** while it has more than 40%.",
-      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Aimed Shot** whenever it is ready while the mob has more than 35% of its health.",
       "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
      ],
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
@@ -489,7 +490,7 @@
       "**Rapid Fire** at the pull when it is ready.",
       "**Hunter's Mark** while the mob has more than 30% of its health.",
       "**Serpent Sting** while it has more than 40%.",
-      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Aimed Shot** whenever it is ready while the mob has more than 35% of its health.",
       "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
      ],
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
@@ -509,7 +510,7 @@
       "At the pull, when they are ready: **Intimidation** and **Rapid Fire**.",
       "**Hunter's Mark** while the mob has more than 30% of its health.",
       "**Serpent Sting** while it has more than 40%.",
-      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Aimed Shot** whenever it is ready while the mob has more than 35% of its health.",
       "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
      ],
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
@@ -531,7 +532,7 @@
       "At the pull, when they are ready: **Bestial Wrath**, **Intimidation** and **Rapid Fire**.",
       "**Hunter's Mark** while the mob has more than 30% of its health.",
       "**Serpent Sting** while it has more than 40%.",
-      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Aimed Shot** whenever it is ready while the mob has more than 35% of its health.",
       "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
      ],
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
@@ -548,7 +549,7 @@
     }
    ],
    "between": [
-    "Mend the pet below half its health, drink below 35% of your mana, eat below 65% of your health. Feed the pet when it sulks, and revive it before the next pull if it died.",
+    "Mend the pet below half its health, drink below 15% of your mana, eat below 65% of your health. The tuned rules drink this late: fewer stops measured slightly faster. Feed the pet when it sulks, and revive it before the next pull if it died.",
     "Keep **Aspect of the Hawk** on, and **Trueshot Aura** from 56. From 57, keep the right tracking on: **Improved Tracking** only pays for the mobs you track.",
     "Visit the trainer every even level: **Serpent Sting**, **Aimed Shot** and **Mend Pet** have many ranks."
    ],
@@ -972,7 +973,7 @@
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you while it has more than 35% of its health: **Feign Death** sends it back to the pet. A weaker mob, or **Feign Death** on cooldown: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip**.",
      "notes": [
       "**Deadly Aspects** (40-44): while **Aspect of the Hawk** is on, **Auto Shot** sometimes speeds up your shooting by 30% for 12 seconds.",
-      "**Focused Fire** (45-46), **Endurance Training** (47-48), **Unleashed Fury** (50-54), **Ferocity** (55-59) and **Bestial Discipline** (60) go to the pet: more damage and crit, health and focus. **Improved Aspect of the Monkey** (49) is the point the row needs: a ranged hunter has no use for the Monkey.",
+      "**Focused Fire** (45-46), **Endurance Training** (47), **Unleashed Fury** (50-54), **Ferocity** (55-59) and **Bestial Discipline** (60) go to the pet: more damage and crit, health and focus. **Improved Aspect of the Monkey** (48-49) holds the points the row needs: a ranged hunter has no use for the Monkey.",
       "**Volley** (40) is a channel for packs, with **Multi-Shot**."
      ],
      "unsimulated": [
@@ -1359,8 +1360,8 @@
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A pull gone wrong: **Feign Death**, and the mobs go for the pet or home.",
      "notes": [
       "**Aspect of the Beast** (30) replaces **Aspect of the Monkey**: attack power instead of dodge. Click it.",
-      "**Resourcefulness** (30, 32): your trap and strikes cost 60% less mana. **Survival Tactics** (31): 5% more chance to hit with your traps and **Feign Death**; the second point comes at 53.",
-      "**Survivalist's Discipline** (33-34) cuts the trap's cooldown by 40%. **Lightning Reflexes** (35-39): 15% more Agility.",
+      "**Resourcefulness** (30, 32): your trap and strikes cost 60% less mana. **Survival Tactics** (31): 5% more chance to hit with your traps and **Feign Death**.",
+      "**Survivalist's Discipline** (33-34) cuts the trap's cooldown by 40%. **Lethal Attacks** (35-39): 5% more crit.",
       "**Counterattack** and **Deterrence** belong to other builds. This one does not take them. **Strider Kick** comes at 54."
      ],
      "unsimulated": [
@@ -1371,7 +1372,7 @@
     {
      "from": 40,
      "title": "Nothing new to press",
-     "change": "The points go to Marksmanship and the aspect until **Strider Kick** at 54. Buy every new rank.",
+     "change": "The points go to Marksmanship, **Lightning Reflexes** and the aspect until **Strider Kick** at 54. Buy every new rank.",
      "press": [
       "Send the pet in, then **Serpent Sting** as you walk in behind it.",
       "**Rapid Fire** at the pull when it is ready.",
@@ -1383,8 +1384,8 @@
      ],
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A pull gone wrong: **Feign Death**.",
      "notes": [
-      "**Lethal Attacks** (40-44): 5% more crit. **Careful Aim** (45-47): attack power from 60% of your Intellect. **Improved Stings** (48-49): **Serpent Sting** does 13% more damage. **Deadly Aspects** (50-52): with **Aspect of the Beast** on, your swings sometimes speed up by 30% for 12 seconds.",
-      "**Survival Tactics** (53): the second point, 10% more chance to hit with your traps and **Feign Death**.",
+      "**Careful Aim** (40-42): attack power from 60% of your Intellect. **Lightning Reflexes** (43-47): 15% more Agility. **Improved Stings** (48-49): **Serpent Sting** does 13% more damage. **Deadly Aspects** (50-51): with **Aspect of the Beast** on, your swings sometimes speed up by 30% for 12 seconds.",
+      "**Endurance Training** (52): the pet's health and armor 3% higher. **Efficiency** (53): your strikes and stings 3% cheaper.",
       "**Explosive Trap** (34) replaces **Immolation Trap** when two or more mobs stand at your feet: they share the cooldown."
      ],
      "unsimulated": [
@@ -1409,7 +1410,7 @@
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A pull gone wrong: **Feign Death**.",
      "notes": [
       "**Strider Kick** (54) deals your weapon's damage and gives you 30% movement speed for 3 seconds. The tuned rules cast it only below 20% of the mob's health: cast whenever it was ready, it measured slower in the fight lab.",
-      "**Efficiency** (55-57, 59) makes your strikes and stings cheaper. **Rapid Killing** (58): one point, a minute off **Rapid Fire**'s cooldown; its shot bonus is for ranged hunters. **Improved Stings** (60): the third point, **Serpent Sting** 20% stronger.",
+      "**Efficiency** (55-57 and 59) makes your strikes and stings cheaper, 15% at five points. **Careful Aim** (58): its fourth point, attack power from 80% of your Intellect. **Trueshot Aura** (60): 20 ranged attack power for you and your party.",
       "**Explosive Trap** (34) replaces **Immolation Trap** when two or more mobs stand at your feet: they share the cooldown."
      ],
      "unsimulated": [
@@ -1658,7 +1659,7 @@
   },
   {
    "spec": "Hybrid Beast Mastery/Marksmanship",
-   "intro": "What a Beast-Marks hunter presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. It levels like Beast Mastery: the cat tanks and does a large part of the damage, you shoot from range with **Auto Shot**, **Serpent Sting** and, from 20, **Aimed Shot**. The split puts the pet talents first (levels 10-37), then Marksmanship's crit, cheaper shots and stronger stings. It takes neither **Bestial Wrath** nor **Intimidation**. Each stage lists the full priority, so you can jump in at your level.",
+   "intro": "What a Beast-Marks hunter presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. It levels like Beast Mastery: the cat tanks and does a large part of the damage, you shoot from range with **Auto Shot**, **Serpent Sting** and, from 20, **Aimed Shot**. The split puts Marksmanship first (levels 10-30 and 32: crit, cheaper shots, stronger stings, **Careful Aim**, **Trueshot Aura** and **Rapid Recuperation**), **Improved Tracking** at 31 and 33-35, then the pet talents (36-59) and a fifth **Improved Tracking** point at 60. It takes neither **Bestial Wrath** nor **Intimidation**. Each stage lists the full priority, so you can jump in at your level.",
    "stages": [
     {
      "from": 1,
@@ -1708,7 +1709,7 @@
     {
      "from": 10,
      "title": "The pet, Aspect of the Hawk, and talents begin",
-     "change": "**Tame Beast** and **Aspect of the Hawk**. Talent points start with **Deadly Aspects**.",
+     "change": "**Tame Beast** and **Aspect of the Hawk**. Talent points start with **Lethal Attacks**.",
      "press": [
       "Send the pet in first and let it hold the mob.",
       "**Hunter's Mark** while the mob has more than 30% of its health.",
@@ -1718,7 +1719,7 @@
      "if_hurt": "A mob on you: **Raptor Strike** until the pet takes it back.",
      "notes": [
       "**Aspect of the Hawk** (10) stays on from here: more ranged attack power. No key, click it.",
-      "**Deadly Aspects** (10-14): while **Aspect of the Hawk** is on, **Auto Shot** sometimes speeds up your shooting by 30% for 12 seconds.",
+      "**Lethal Attacks** (10-14): 5% more crit with every attack.",
       "**Call Pet**, **Feed Pet** and **Revive Pet** (10) are between-fights buttons."
      ]
     },
@@ -1734,7 +1735,7 @@
      ],
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Raptor Strike** and **Wing Clip** until the pet takes it back.",
      "notes": [
-      "**Focused Fire** (15-16) adds 2% to your damage and the pet's. **Endurance Training** (17-18) gives the pet more health and armor. **Improved Revive Pet** (19) makes **Revive Pet** quicker and cheaper.",
+      "**Efficiency** (15-19) makes your shots and stings 15% cheaper.",
       "**Mongoose Bite** (16) lights up after you dodge: one more button for a mob on you.",
       "**Scare Beast** (14) holds a second beast. **Multi-Shot** (18) is for packs: the tuned rules never cast it on one mob, because it shares **Aimed Shot**'s cooldown."
      ]
@@ -1747,31 +1748,31 @@
       "Send the pet in first and let it hold the mob.",
       "**Hunter's Mark** while the mob has more than 30% of its health.",
       "**Serpent Sting** while it has more than 40%.",
-      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Aimed Shot** whenever it is ready while the mob has more than 35% of its health.",
       "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
      ],
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
      "notes": [
-      "**Aimed Shot** has a 2-second cast and a 6-second cooldown it shares with **Multi-Shot**. Below a quarter of the mob's health, let **Auto Shot** and the pet finish it.",
-      "**Unleashed Fury** (20-24) and **Ferocity** (25-29): the pet hits 15% harder and crits 10% more.",
+      "**Aimed Shot** has a 2-second cast and a 6-second cooldown it shares with **Multi-Shot**. Below 35% of the mob's health, let **Auto Shot** and the pet finish it: the tuned rules (2026-11-15) measured that slightly faster.",
+      "**Improved Stings** (20-22): **Serpent Sting** does 20% more damage. **Careful Aim** (23-24, 26, 28 and 32): attack power from your Intellect. **Trueshot Aura** (25) is a buff you cast in Forever: keep it on, no key.",
       "**Freezing Trap** (20): drop it before a pull that will bring two mobs. **Aspect of the Cheetah** (20) is for the road."
      ]
     },
     {
      "from": 26,
      "title": "Rapid Fire",
-     "change": "**Rapid Fire** at the pull: 40% faster shots for 15 seconds.",
+     "change": "**Rapid Fire** at the pull: 40% faster shots for 15 seconds, every 3 minutes from 29 with **Rapid Killing**.",
      "press": [
       "Send the pet in first and let it hold the mob.",
       "**Rapid Fire** at the pull when it is ready.",
       "**Hunter's Mark** while the mob has more than 30% of its health.",
       "**Serpent Sting** while it has more than 40%.",
-      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Aimed Shot** whenever it is ready while the mob has more than 35% of its health.",
       "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
      ],
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
      "notes": [
-      "The fight lab casts **Rapid Fire** at the start of every fight it is ready for. This build has no **Rapid Killing**, so the cooldown stays at 5 minutes.",
+      "The fight lab casts **Rapid Fire** at the start of every fight it is ready for. **Rapid Killing** (27 and 29) cuts its cooldown from 5 minutes to 4, then 3; its other half, a stronger next shot after a kill, is not in the fight lab.",
       "**Frost Trap** (28) slows a pack."
      ],
      "unsimulated": [
@@ -1787,12 +1788,12 @@
       "**Rapid Fire** at the pull when it is ready.",
       "**Hunter's Mark** while the mob has more than 30% of its health.",
       "**Serpent Sting** while it has more than 40%.",
-      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Aimed Shot** whenever it is ready while the mob has more than 35% of its health.",
       "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
      ],
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
      "notes": [
-      "**Bestial Discipline** (30-31) lets half your mana regeneration continue while casting. **Pathfinding** (32) is the point the row needs. **Spirit Bond** (33-34) heals you and the pet 1% of health every 5 seconds. **Frenzy** (35-37): after a crit the pet sometimes attacks 30% faster for 8 seconds.",
+      "**Rapid Recuperation** (30): after **Serpent Sting**, a quarter of your mana regeneration continues while casting for 15 seconds, half after you spend a **Rapid Killing**. **Improved Tracking** (31 and 33-35): keep the tracking of the mobs you fight switched on. **Deadly Aspects** (36-40): while **Aspect of the Hawk** is on, **Auto Shot** sometimes speeds up your shooting by 30% for 12 seconds.",
       "**Explosive Trap** (34) is for packs."
      ],
      "unsimulated": [
@@ -1801,20 +1802,20 @@
     },
     {
      "from": 38,
-     "title": "Marksmanship talents, nothing new to press",
-     "change": "The rotation is complete. The points go to Marksmanship's crit, cheaper shots and stronger stings. Buy every new rank.",
+     "title": "Beast Mastery talents, nothing new to press",
+     "change": "The rotation is complete. The points go to Beast Mastery: the pet's damage, crit and health. Buy every new rank.",
      "press": [
       "Send the pet in first and let it hold the mob.",
       "**Rapid Fire** at the pull when it is ready.",
       "**Hunter's Mark** while the mob has more than 30% of its health.",
       "**Serpent Sting** while it has more than 40%.",
-      "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+      "**Aimed Shot** whenever it is ready while the mob has more than 35% of its health.",
       "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards."
      ],
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
      "notes": [
-      "**Lethal Attacks** (38-42): 5% more crit. **Efficiency** (43-47): shots and stings 15% cheaper. **Improved Stings** (48-50): **Serpent Sting** does 20% more damage. **Careful Aim** (51-52, 54-56): attack power from your Intellect.",
-      "**Trueshot Aura** (53) is a buff you cast in Forever: keep it on. **Improved Tracking** (57-60): keep the tracking of the mobs you fight switched on.",
+      "**Focused Fire** (41-42) adds 2% to your damage and the pet's. **Endurance Training** (43-44) gives the pet 6% more health and armor. **Improved Revive Pet** (45) makes **Revive Pet** quicker and cheaper. **Unleashed Fury** (46-50) and **Ferocity** (51-55): the pet hits 15% harder and crits 10% more.",
+      "**Bestial Swiftness** (56): the pet runs 30% faster. **Bestial Discipline** (57): a quarter of your mana regeneration continues while casting, all the time, and the pet's focus comes back 10% faster. **Mortal Shots** (58): the critical strike damage bonus of your ranged attacks 6% higher. **Spirit Bond** (59): you and the pet regain 1% of health every 10 seconds. **Improved Tracking** (60): the fifth point, 5% more damage to the tracked creature type.",
       "**Volley** (40) is a channel for packs, with **Multi-Shot**."
      ],
      "unsimulated": [
@@ -1823,8 +1824,8 @@
     }
    ],
    "between": [
-    "Mend the pet below half its health, drink below 35% of your mana, eat below 65% of your health. Feed the pet when it sulks, and revive it before the next pull if it died.",
-    "Keep **Aspect of the Hawk** on, and **Trueshot Aura** from 53. From 57, keep the right tracking on: **Improved Tracking** only pays for the mobs you track.",
+    "Mend the pet below half its health, drink below 15% of your mana, eat below 65% of your health. The tuned rules drink this late: fewer stops measured slightly faster. Feed the pet when it sulks, and revive it before the next pull if it died.",
+    "Keep **Aspect of the Hawk** on, and **Trueshot Aura** from 25. From 33, keep the right tracking on: **Improved Tracking** only pays for the mobs you track.",
     "Visit the trainer every even level: **Serpent Sting**, **Aimed Shot** and **Mend Pet** have many ranks."
    ],
    "other": [
@@ -2065,7 +2066,7 @@
      "Nothing on bar 1 ever swaps: every key gets its spell once and keeps it. The Mouse 4 macro gains its **Serpent Sting** line at 4. Q waits for **Aimed Shot** at 20: before that, the pull keys and **Auto Shot** do the work.",
      "Mouse 4 and 1 are macros that also send the pet, so the first press of a pull sends it, whichever key that is. Mouse 4 is the Sting and send macro of the [macro page](../macros.md): `#showtooltip Serpent Sting`, `/petattack`, `/cast !Auto Shot`, `/cast Serpent Sting` (at levels 1-3 leave out the sting line). 1: `#showtooltip Hunter's Mark`, `/petattack`, `/cast Hunter's Mark`. The `!` keeps a second press from turning **Auto Shot** off. Pet commands and **Auto Shot** are off the global cooldown, so one press does all of it.",
      "The pet bar keeps its own keys. Keep the pet's Growl on: it is your tank.",
-     "No key: **Aspect of the Hawk**, **Trueshot Aura** (53), the tracking, **Call Pet**, **Feed Pet**, **Revive Pet**, food, drink, the mount and the Hearthstone. Click them between fights.",
+     "No key: **Aspect of the Hawk**, **Trueshot Aura** (25), the tracking, **Call Pet**, **Feed Pet**, **Revive Pet**, food, drink, the mount and the Hearthstone. Click them between fights.",
      "**Arcane Shot** on Shift+Mouse 5 is not in the single-mob rotation: it is there for a mob that runs. The Shift bar is for packs and trouble: **Multi-Shot** shares **Aimed Shot**'s cooldown, so the single-mob rotation never casts it; **Volley** (40) is a channel for a pack."
     ]
    }

@@ -106,11 +106,11 @@ What this build casts per kill ([report](../fightlab/frost-leveling.md), all lev
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Frostbolt | 3.9 | 4.1 | 4.1 | 3.4 | 3.2 | 52% |
-| Wand | 0.8 | 1.2 | 1.7 | 1.6 | 1.7 | 4% |
-| Ice Lance | 1.2 | 1.7 | 1.8 | 1.7 | 1.6 | 36% |
+| Frostbolt | 3.9 | 4.2 | 4.1 | 3.4 | 3.1 | 52% |
+| Wand | 0.8 | 1.2 | 1.8 | 1.6 | 1.6 | 4% |
+| Ice Lance | 1.2 | 1.7 | 1.8 | 1.6 | 1.6 | 37% |
 | Frost Nova | 0.5 | 0.8 | 0.8 | 0.7 | 0.6 | 1% |
-| Fire Blast | 0.5 | 0.6 | 0.5 | 0.5 | 0.4 | 6% |
+| Fire Blast | 0.5 | 0.6 | 0.5 | 0.4 | 0.4 | 6% |
 | Counterspell | 0.0 | 0.2 | 0.1 | 0.1 | 0.1 | 0% |
 
 ## Notes

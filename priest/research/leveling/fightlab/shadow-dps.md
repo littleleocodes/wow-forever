@@ -10,46 +10,46 @@ Single-target leveling fights against normal mobs of your level: Power Word: Shi
 
 | Level | Talents | Fight mean | median | p90 | Downtime/kill | Deaths/100 kills | Time/kill | Kills/hour | Mana/kill | Pushbacks/kill |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 20 | 11 | 16.1s | 16.1s | 18.8s | 8.7s | 0.0 | 32.8s | 110 | 336 | 0.67 |
-| 30 | 21 | 18.9s | 18.1s | 23.1s | 13.0s | 0.0 | 39.9s | 90 | 672 | 0.58 |
-| 40 | 31 | 17.5s | 16.6s | 22.6s | 14.1s | 0.0 | 39.6s | 91 | 965 | 0.00 |
-| 50 | 41 | 18.5s | 18.2s | 21.6s | 10.0s | 0.0 | 36.5s | 99 | 1265 | 0.87 |
-| 60 | 51 | 13.2s | 13.6s | 15.1s | 0.0s | 0.0 | 21.2s | 170 | 545 | 0.46 |
+| 20 | 11 | 17.3s | 17.1s | 21.8s | 5.7s | 0.0 | 31.0s | 116 | 239 | 0.80 |
+| 30 | 21 | 19.7s | 19.6s | 23.7s | 10.1s | 0.0 | 37.8s | 95 | 535 | 0.79 |
+| 40 | 31 | 17.8s | 16.6s | 22.6s | 13.0s | 0.0 | 38.8s | 93 | 884 | 0.16 |
+| 50 | 41 | 19.1s | 18.6s | 23.3s | 9.5s | 0.0 | 36.6s | 98 | 1183 | 1.10 |
+| 60 | 51 | 13.1s | 13.6s | 15.1s | 0.1s | 0.0 | 21.2s | 170 | 555 | 0.46 |
 
 ## Measured damage shares (vs. the spec model's assumed shares)
 
 | Level | Mind Blast | Mind Flay | Shadow Word: Death | Shadow Word: Pain | Wand |
 |---|---|---|---|---|---|
-| 20 | 31% | 40% | 0% | 19% | 9% |
-| 30 | 32% | 41% | 0% | 18% | 10% |
-| 40 | 28% | 34% | 20% | 15% | 3% |
-| 50 | 26% | 35% | 16% | 20% | 3% |
-| 60 | 20% | 46% | 16% | 16% | 1% |
+| 20 | 33% | 22% | 0% | 21% | 25% |
+| 30 | 35% | 24% | 0% | 18% | 23% |
+| 40 | 30% | 25% | 21% | 15% | 9% |
+| 50 | 28% | 25% | 17% | 21% | 9% |
+| 60 | 20% | 46% | 17% | 16% | 1% |
 
 Spec model (`_reference/data/scorer/specs`) assumes: swp 21%, mind_blast 20%, mind_flay 47%, wand 0%, smite 5%, swd 10%, devouring_plague 2%, holy_nova 0%.
 
 ## Realized crit rates and player at each level
 
-- **Level 20**: 997 health, 1505 mana, 75 Int, 79 Spirit, 0 spell power, base spell crit 5.6%, armor 196 (Inner Fire); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Shadow Word: Pain 29%, Mind Blast 5%, Wand 3%, Mind Flay 16%, Power Word: Shield 0%, Flash Heal 0%, Psychic Scream 0%. Health after a fight 73%, mana 46%.
-- **Level 30**: 1525 health, 2728 mana, 140 Int, 141 Spirit, 0 spell power, base spell crit 6.5%, armor 278 (Inner Fire); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Shadow Word: Pain 35%, Mind Blast 6%, Mind Flay 19%, Wand 3%, Psychic Scream 0%, Power Word: Shield 0%, Flash Heal 6%. Health after a fight 56%, mana 43%.
-- **Level 40**: 1932 health, 3751 mana, 189 Int, 171 Spirit, 16 spell power, base spell crit 6.3%, armor 320 (Inner Fire); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Shadow Word: Pain 33%, Mind Blast 6%, Mind Flay 19%, Shadow Word: Death 6%, Wand 2%, Psychic Scream 0%, Power Word: Shield 0%, Flash Heal 0%. Health after a fight 72%, mana 42%.
-- **Level 50**: 2405 health, 4530 mana, 224 Int, 223 Spirit, 28 spell power, base spell crit 5.9%, armor 402 (Inner Fire); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Vampiric Embrace 0%, Shadow Word: Pain 30%, Mind Blast 5%, Mind Flay 18%, Shadow Word: Death 7%, Wand 3%. Health after a fight 96%, mana 39%.
-- **Level 60**: 2877 health, 5240 mana, 258 Int, 259 Spirit, 68 spell power, base spell crit 5.6%, armor 482 (Inner Fire); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Vampiric Embrace 0%, Shadow Word: Pain 20%, Mind Blast 5%, Mind Flay 17%, Shadow Word: Death 36%, Wand 3%, Power Word: Shield 0%. Health after a fight 93%, mana 84%.
+- **Level 20**: 997 health, 1505 mana, 75 Int, 79 Spirit, 0 spell power, base spell crit 5.6%, armor 196 (Inner Fire); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Shadow Word: Pain 30%, Mind Blast 5%, Wand 3%, Mind Flay 16%, Psychic Scream 0%, Power Word: Shield 0%, Flash Heal 18%. Health after a fight 69%, mana 38%.
+- **Level 30**: 1525 health, 2728 mana, 140 Int, 141 Spirit, 0 spell power, base spell crit 6.5%, armor 278 (Inner Fire); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Shadow Word: Pain 35%, Mind Blast 6%, Mind Flay 18%, Wand 3%, Power Word: Shield 0%, Flash Heal 2%, Psychic Scream 0%. Health after a fight 52%, mana 39%.
+- **Level 40**: 1932 health, 3751 mana, 189 Int, 171 Spirit, 16 spell power, base spell crit 6.3%, armor 320 (Inner Fire); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Shadow Word: Pain 31%, Mind Blast 6%, Mind Flay 19%, Shadow Word: Death 6%, Wand 3%, Flash Heal 50%, Psychic Scream 0%. Health after a fight 74%, mana 41%.
+- **Level 50**: 2405 health, 4530 mana, 224 Int, 223 Spirit, 28 spell power, base spell crit 5.9%, armor 402 (Inner Fire); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Vampiric Embrace 0%, Shadow Word: Pain 30%, Mind Blast 6%, Mind Flay 18%, Shadow Word: Death 6%, Wand 3%. Health after a fight 92%, mana 38%.
+- **Level 60**: 2877 health, 5240 mana, 258 Int, 259 Spirit, 68 spell power, base spell crit 5.6%, armor 482 (Inner Fire); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Vampiric Embrace 0%, Shadow Word: Pain 21%, Mind Blast 5%, Mind Flay 17%, Shadow Word: Death 38%, Wand 2%, Power Word: Shield 0%. Health after a fight 91%, mana 80%.
 
 ## Other builds (same mobs, same seeds)
 
 | Level | Build | Time/kill | vs. main | Fight mean | Deaths/100 | Downtime/kill |
 |---|---|---|---|---|---|---|
-| 20 | opt-shadow-dps-leveling-st | 32.8s | - | 16.1s | 0.0 | 8.7s |
-| 20 | leveling-shadow | 34.9s | +6.4% | 16.0s | 0.0 | 10.9s |
-| 30 | opt-shadow-dps-leveling-st | 39.9s | - | 18.9s | 0.0 | 13.0s |
-| 30 | leveling-shadow | 35.2s | -11.8% | 18.4s | 0.0 | 8.8s |
-| 40 | opt-shadow-dps-leveling-st | 39.6s | - | 17.5s | 0.0 | 14.1s |
-| 40 | leveling-shadow | 23.1s | -41.8% | 14.7s | 0.0 | 0.4s |
-| 50 | opt-shadow-dps-leveling-st | 36.5s | - | 18.5s | 0.0 | 10.0s |
-| 50 | leveling-shadow | 22.3s | -39.0% | 14.1s | 0.0 | 0.2s |
-| 60 | opt-shadow-dps-leveling-st | 21.2s | - | 13.2s | 0.0 | 0.0s |
-| 60 | leveling-shadow | 21.6s | +2.1% | 13.2s | 0.0 | 0.4s |
+| 20 | opt-shadow-dps-leveling-st | 31.0s | - | 17.3s | 0.0 | 5.7s |
+| 20 | leveling-shadow | 34.3s | +10.7% | 16.9s | 0.0 | 9.5s |
+| 30 | opt-shadow-dps-leveling-st | 37.8s | - | 19.7s | 0.0 | 10.1s |
+| 30 | leveling-shadow | 36.6s | -3.1% | 20.2s | 0.0 | 8.4s |
+| 40 | opt-shadow-dps-leveling-st | 38.8s | - | 17.8s | 0.0 | 13.0s |
+| 40 | leveling-shadow | 22.9s | -41.0% | 14.9s | 0.0 | 0.0s |
+| 50 | opt-shadow-dps-leveling-st | 36.6s | - | 19.1s | 0.0 | 9.5s |
+| 50 | leveling-shadow | 22.4s | -38.9% | 14.3s | 0.0 | 0.0s |
+| 60 | opt-shadow-dps-leveling-st | 21.2s | - | 13.1s | 0.0 | 0.1s |
+| 60 | leveling-shadow | 23.0s | +8.5% | 14.5s | 0.0 | 0.5s |
 
 ## Gear tiers (main build)
 
@@ -57,16 +57,16 @@ Spec model (`_reference/data/scorer/specs`) assumes: swp 21%, mind_blast 20%, mi
 
 | Level | Gear | Time/kill | vs. greens | Fight mean | Deaths/100 | Downtime/kill | Kills/hour |
 |---|---|---|---|---|---|---|---|
-| 20 | greens | 32.8s | - | 16.1s | 0.0 | 8.7s | 110 |
-| 20 | blues | 30.7s | -6.3% | 15.0s | 0.0 | 7.7s | 117 |
-| 30 | greens | 39.9s | - | 18.9s | 0.0 | 13.0s | 90 |
-| 30 | blues | 33.3s | -16.4% | 15.8s | 0.0 | 9.5s | 108 |
-| 40 | greens | 39.6s | - | 17.5s | 0.0 | 14.1s | 91 |
-| 40 | blues | 33.9s | -14.4% | 14.9s | 0.0 | 11.1s | 106 |
-| 50 | greens | 36.5s | - | 18.5s | 0.0 | 10.0s | 99 |
-| 50 | blues | 33.3s | -8.8% | 16.5s | 0.0 | 8.8s | 108 |
-| 60 | greens | 21.2s | - | 13.2s | 0.0 | 0.0s | 170 |
-| 60 | blues | 20.5s | -3.1% | 12.5s | 0.0 | 0.0s | 175 |
+| 20 | greens | 31.0s | - | 17.3s | 0.0 | 5.7s | 116 |
+| 20 | blues | 27.7s | -10.7% | 15.2s | 0.0 | 4.5s | 130 |
+| 30 | greens | 37.8s | - | 19.7s | 0.0 | 10.1s | 95 |
+| 30 | blues | 30.1s | -20.3% | 16.4s | 0.0 | 5.7s | 119 |
+| 40 | greens | 38.8s | - | 17.8s | 0.0 | 13.0s | 93 |
+| 40 | blues | 32.9s | -15.2% | 15.2s | 0.0 | 9.7s | 109 |
+| 50 | greens | 36.6s | - | 19.1s | 0.0 | 9.5s | 98 |
+| 50 | blues | 32.9s | -10.1% | 17.0s | 0.0 | 7.9s | 109 |
+| 60 | greens | 21.2s | - | 13.1s | 0.0 | 0.1s | 170 |
+| 60 | blues | 20.6s | -3.0% | 12.6s | 0.0 | 0.0s | 175 |
 
 ## Talent values at level 30
 
@@ -74,12 +74,12 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Spirit Tap | 5 | +9.8% | +0.5% ± 0.1 | +2.0% | +12.7% | 0.0 |
-| Twin Disciplines | 5 | +3.6% | +3.4% ± 0.1 | +0.7% | +1.2% | 0.0 |
-| Shadow Focus | 5 | +2.8% | +3.0% ± 0.2 | +0.6% | +2.9% | 0.0 |
-| Wand Specialization | 2 | +1.4% | +2.3% ± 0.1 | +0.7% | +0.9% | 0.0 |
-| Mental Strength | 3 | +0.0% | +0.1% ± 0.1 | +0.0% | +0.6% | 0.0 |
-| Mind Flay | 1 | -15.2% | +10.8% ± 0.2 | -15.2% | -22.5% | 0.0 |
+| Spirit Tap | 5 | +10.9% | -0.4% ± 0.2 | +2.2% | +12.7% | 0.0 |
+| Wand Specialization | 2 | +4.9% | +5.1% ± 0.3 | +2.5% | +0.9% | 0.0 |
+| Twin Disciplines | 5 | +2.8% | +2.5% ± 0.2 | +0.6% | +1.2% | 0.0 |
+| Shadow Focus | 5 | +2.4% | +2.3% ± 0.3 | +0.5% | +2.9% | 0.0 |
+| Mental Strength | 3 | +0.4% | -0.1% ± 0.2 | +0.1% | +0.6% | 0.0 |
+| Mind Flay | 1 | -10.5% | +6.3% ± 0.2 | -10.5% | -22.5% | 0.0 |
 
 ## Talent values at level 60
 
@@ -87,25 +87,25 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Shadowform | 1 | +49.5% | +9.5% ± 0.3 | +49.5% | +38.0% | 0.0 |
-| Mind Flay | 1 | +29.3% | +37.5% ± 0.5 | +29.3% | +3.2% | 0.0 |
-| Spirit Tap | 5 | +13.3% | +0.3% ± 0.2 | +2.7% | +3.0% | 0.0 |
-| Darkness | 5 | +5.3% | +5.7% ± 0.2 | +1.1% | +5.8% | 0.0 |
-| Improved Mind Flay | 2 | +4.3% | +5.0% ± 0.2 | +2.2% | +6.4% | 0.0 |
-| Vampiric Embrace | 1 | +3.8% | -6.4% ± 0.3 | +3.8% | +0.0% | 0.1 |
-| Meditation | 3 | +3.5% | +0.0% ± 0.1 | +1.2% | +1.4% | 0.0 |
-| Shadow Weaving | 3 | +2.6% | +2.8% ± 0.3 | +0.9% | +4.4% | 0.0 |
-| Early Demise | 2 | +2.0% | +3.6% ± 0.2 | +1.0% | +2.4% | 0.0 |
-| Shadow Focus | 5 | +1.8% | +2.7% ± 0.2 | +0.4% | +2.9% | 0.0 |
-| Twin Disciplines | 5 | +1.7% | +2.3% ± 0.2 | +0.3% | +2.0% | 0.0 |
-| Improved Mind Blast | 1 | +0.3% | +0.4% ± 0.1 | +0.3% | +0.2% | 0.0 |
-| Wand Specialization | 2 | +0.2% | +0.3% ± 0.1 | +0.1% | +0.4% | 0.0 |
-| Mental Strength | 3 | +0.1% | +0.1% ± 0.1 | +0.0% | +0.4% | 0.0 |
-| Twilight Focus | 2 | +0.1% | +0.0% ± 0.2 | +0.0% | +0.7% | 0.0 |
-| Shadow Reach | 2 | +0.0% | -0.1% ± 0.2 | +0.0% | +0.7% | 0.0 |
-| Blackout | 5 | +0.0% | -0.2% ± 0.2 | +0.0% | +1.3% | 0.0 |
-| Inner Focus | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.7% | 0.0 |
-| Mental Agility | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +1.0% | 0.0 |
+| Shadowform | 1 | +54.7% | +19.9% ± 0.6 | +54.7% | +38.0% | 0.0 |
+| Mind Flay | 1 | +31.1% | +37.3% ± 0.5 | +31.1% | +3.2% | 0.0 |
+| Spirit Tap | 5 | +19.7% | +11.9% ± 0.5 | +3.9% | +3.0% | 0.0 |
+| Vampiric Embrace | 1 | +13.5% | +2.5% ± 0.4 | +13.5% | +0.0% | 0.0 |
+| Darkness | 5 | +11.8% | +12.8% ± 0.4 | +2.4% | +5.8% | 0.0 |
+| Meditation | 3 | +9.1% | +7.4% ± 0.4 | +3.0% | +1.4% | 0.0 |
+| Improved Mind Flay | 2 | +6.0% | +9.0% ± 0.4 | +3.0% | +6.4% | 0.0 |
+| Shadow Weaving | 3 | +4.9% | +6.1% ± 0.4 | +1.6% | +4.4% | 0.0 |
+| Shadow Focus | 5 | +2.7% | +3.8% ± 0.3 | +0.5% | +2.9% | 0.0 |
+| Twin Disciplines | 5 | +2.5% | +3.5% ± 0.3 | +0.5% | +2.0% | 0.0 |
+| Early Demise | 2 | +1.8% | +3.8% ± 0.2 | +0.9% | +2.4% | 0.0 |
+| Inner Focus | 1 | +0.8% | +0.7% ± 0.1 | +0.8% | +0.7% | 0.0 |
+| Wand Specialization | 2 | +0.4% | +0.5% ± 0.1 | +0.2% | +0.4% | 0.0 |
+| Mental Agility | 2 | +0.3% | +0.5% ± 0.1 | +0.2% | +1.0% | 0.0 |
+| Improved Mind Blast | 1 | +0.1% | +0.4% ± 0.1 | +0.1% | +0.2% | 0.0 |
+| Twilight Focus | 2 | +0.1% | +0.2% ± 0.2 | +0.0% | +0.7% | 0.0 |
+| Mental Strength | 3 | -0.0% | +0.1% ± 0.1 | -0.0% | +0.4% | 0.0 |
+| Shadow Reach | 2 | -0.1% | +0.1% ± 0.2 | -0.1% | +0.7% | 0.0 |
+| Blackout | 5 | -0.2% | +0.0% ± 0.2 | -0.0% | +1.3% | 0.0 |
 
 ## Assumptions (edit `tables.py` to change them)
 

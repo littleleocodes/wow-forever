@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Subtlety leveling build the open leveling search found on 2026-11-06: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the subtlety-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-swords-raid). 
+The Subtlety leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the subtlety-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-swords-raid). 
 
 ## Point allocation
 
@@ -87,14 +87,14 @@ The Subtlety leveling build the open leveling search found on 2026-11-06: every 
 
 ## Core talents (priority order)
 
-1. **Boot Knife** — +2.6 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Coup de Grace** — +1.9 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Flawless Execution** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Dirty Deeds** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Initiative** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Efficient Strikes** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Hemorrhage** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Weapon Expertise** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Boot Knife** — +2.2 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Coup de Grace** — +2.1 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Hemorrhage** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Initiative** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Weapon Expertise** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Efficient Strikes** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Flawless Execution** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Dirty Deeds** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -102,8 +102,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Master of Deception to Improved Ambush at 19 (gate: -0.5% seed 3, -0.5% seed 4, level-weighted time per kill); Master of Deception to Improved Ambush at 18 (gate: -0.7% seed 3, -0.8% seed 4, level-weighted time per kill); Improved Sprint to Composure at 54 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Puncturing Wounds to Lightning Reflexes at 53 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 22.41; subtlety-leveling 23.33. The search simulated 32,176 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 21.82; subtlety-leveling 23.08. The search simulated 32,176 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
@@ -114,7 +113,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/rogue>
-- <https://talentsforever.com/rogue/60/-32230310010122-335201131301001151-7>
+- <https://talentsforever.com/rogue/60/-32320300020122-315203131301001151-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

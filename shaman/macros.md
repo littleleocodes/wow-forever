@@ -65,7 +65,7 @@ Leveling and raid. Keys below are the [Enhancement layout](leveling/keybinds.md)
 /cast Stormstrike
 ```
 
-- **Replaces:** R and 4, from level 40.
+- **Replaces:** R and 4, from level 45.
 - **Frees:** 4.
 - **Fill it with:** 4 takes Healing Stream Totem from Shift+Mouse 5.
 - **Why it works:** Rage of the Farseer is off the global cooldown, and the rotation wants it at the start of a fight. Stormstrike is first in your fight anyway.

@@ -3,7 +3,7 @@
  "spec": "Discipline",
  "build": "discipline-leveling",
  "rotation": "discipline-leveling",
- "date": "2026-11-13",
+ "date": "2026-11-15",
  "fights": 3000,
  "seeds": [
   3,
@@ -42,8 +42,8 @@
     "haste_rating": 0.00092,
     "defense_rating": 0.00262,
     "dodge_rating": 0.00181,
-    "healing": 0.0,
-    "spell_penetration": 0.03922
+    "spell_penetration": 0.03922,
+    "healing": 0.0
    }
   },
   "15": {
@@ -61,8 +61,8 @@
     "haste_rating": 0.00041,
     "defense_rating": 0.00735,
     "dodge_rating": 0.00433,
-    "healing": 0.0,
-    "spell_penetration": 0.03109
+    "spell_penetration": 0.03109,
+    "healing": 0.0
    }
   },
   "20": {
@@ -80,8 +80,8 @@
     "haste_rating": 0.00147,
     "defense_rating": 0.00241,
     "dodge_rating": 0.00168,
-    "healing": 0.0,
-    "spell_penetration": 0.02514
+    "spell_penetration": 0.02514,
+    "healing": 0.0
    }
   },
   "25": {
@@ -99,8 +99,8 @@
     "haste_rating": 0.00188,
     "defense_rating": 0.00294,
     "dodge_rating": 0.00325,
-    "healing": 0.0,
-    "spell_penetration": 0.02966
+    "spell_penetration": 0.02966,
+    "healing": 0.0
    }
   },
   "30": {
@@ -118,8 +118,8 @@
     "haste_rating": -9e-05,
     "defense_rating": 0.00204,
     "dodge_rating": 0.00175,
-    "healing": 0.0,
-    "spell_penetration": 0.018
+    "spell_penetration": 0.018,
+    "healing": 0.0
    }
   },
   "35": {
@@ -137,8 +137,8 @@
     "haste_rating": 0.00164,
     "defense_rating": 0.00312,
     "dodge_rating": 0.00279,
-    "healing": 0.0,
-    "spell_penetration": 0.01307
+    "spell_penetration": 0.01307,
+    "healing": 0.0
    }
   },
   "40": {
@@ -156,8 +156,8 @@
     "haste_rating": 0.0,
     "defense_rating": 0.00423,
     "dodge_rating": 0.00304,
-    "healing": 0.0,
-    "spell_penetration": 0.01816
+    "spell_penetration": 0.01816,
+    "healing": 0.0
    }
   },
   "45": {
@@ -175,8 +175,8 @@
     "haste_rating": -0.00019,
     "defense_rating": 0.00128,
     "dodge_rating": 0.00109,
-    "healing": 0.0,
-    "spell_penetration": 0.01039
+    "spell_penetration": 0.01039,
+    "healing": 0.0
    }
   },
   "50": {
@@ -194,8 +194,8 @@
     "haste_rating": -0.00082,
     "defense_rating": 0.00087,
     "dodge_rating": 0.00119,
-    "healing": 0.0,
-    "spell_penetration": 0.01171
+    "spell_penetration": 0.01171,
+    "healing": 0.0
    }
   },
   "55": {
@@ -213,8 +213,8 @@
     "haste_rating": 5e-05,
     "defense_rating": 0.00114,
     "dodge_rating": 0.00055,
-    "healing": 0.0,
-    "spell_penetration": 0.01184
+    "spell_penetration": 0.01184,
+    "healing": 0.0
    }
   },
   "60": {
@@ -232,8 +232,8 @@
     "haste_rating": 0.00038,
     "defense_rating": 0.00189,
     "dodge_rating": 0.00192,
-    "healing": 0.0,
-    "spell_penetration": 0.00661
+    "spell_penetration": 0.00661,
+    "healing": 0.0
    }
   }
  },
@@ -358,8 +358,5 @@
    "mp5": 10,
    "wand_dps": 47.5
   }
- },
- "added": {
-  "spell_penetration": "2026-11-13"
  }
 }

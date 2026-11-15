@@ -19,7 +19,7 @@
 **In the fight**, top to bottom:
 
 1. Pull with the instants: **Vampiric Embrace** when it is ready, then **Shadow Word: Pain**.
-2. **Mind Blast** whenever it is ready, **Mind Flay** in between (it slows the mob while you channel).
+2. **Mind Blast** whenever it is ready, **Mind Flay** in between while you have more than 30% of your mana (it slows the mob while you channel); below that, your wand.
 3. **Shadow Word: Death** when one cast will kill the mob, and on a mob at or below 20% health once you have **Early Demise** (it adds crit there; you take 30% of your maximum health if the mob survives).
 4. Finish a mob with a hit or two left with your wand; **Psychic Scream** if a mob is on you and you are below 40% health.
 5. Skip Devouring Plague and Smite: the tuned rules never cast them (the plague costs too much mana for what it does before the mob dies).
@@ -34,11 +34,11 @@ Shadow levels on a short loop: **Shadow Word: Pain** and **Mind Blast** land whi
 **Why it works**
 
 - Open from as far away as you can: the fight lab casts the instants first (**Vampiric Embrace** from 39 when it is ready, then **Shadow Word: Pain**) and **Mind Blast**, your biggest hit, right after, so they land while the mob walks in. **Shadow Reach** (19 and 23) adds 20% range to your Shadow spells.
-- **Mind Flay** (level 20) is your filler: it slows the mob by 50% while you channel, so a mob walking in reaches you later, and **Improved Mind Flay** (21-22) makes each tick 20% stronger than the last. **Mind Blast** goes out whenever it is ready; **Improved Mind Blast** (24, 31-34) takes 2.5 seconds off its 8-second cooldown.
+- **Mind Flay** (level 20) is your filler while you have more than 30% of your mana (below that the tuned rules use your wand): it slows the mob by 50% while you channel, so a mob walking in reaches you later, and **Improved Mind Flay** (21-22) makes each tick 20% stronger than the last. **Mind Blast** goes out whenever it is ready; **Improved Mind Blast** (24, 31-34) takes 2.5 seconds off its 8-second cooldown.
 - **Shadow Word: Death** (32) finishes: the fight lab casts it when one cast will kill the mob, so its backlash (30% of your maximum health when the target survives) never lands. **Early Demise** (35) adds 15% crit chance to it on a mob at or below 20% of its health, and the lab casts it there too. The tooltip gives no other bonus, so that cast can leave the mob alive and cost you the backlash.
 - Before 20 your wand fills the gaps between **Mind Blast** casts and finishes: when a mob has a hit or two of wand damage left, a new spell is wasted mana.
 - **Vampiric Embrace** (39) is your heal once **Shadowform** stops real heals: for 30 seconds your party heals for 20% of the Shadow damage you deal to that mob, and the fight lab casts it whenever it is ready. **Shadowform** (40) adds 10% Shadow damage, halves your Shadow costs and takes 15% off physical damage: time per kill drops from 37 seconds at level 39 to 22 at level 40.
-- Mana: **Spirit Tap** (10-14) gives a chance after a kill to double your Spirit for 15 seconds and keeps half your regeneration going meanwhile, and **Shadowform** halves your Shadow costs, so the tuned rules drink only below 15% mana. They also skip the pre-pull **Power Word: Shield** unless you start a pull below half your health: the shield is not a Shadow spell and costs full mana.
+- Mana: **Spirit Tap** (10-14) gives a chance after a kill to double your Spirit for 15 seconds and keeps half your regeneration going meanwhile, and **Shadowform** halves your Shadow costs, so the tuned rules drink only below 15% mana. They also skip the pre-pull **Power Word: Shield** unless you start a pull below half your health: the shield is not a Shadow spell and costs full mana. Below 30% mana they wand instead of channelling **Mind Flay** (a 2026-11-15 rule, under 1% faster per kill).
 
 **Caveats**
 
@@ -85,7 +85,7 @@ One point per level from 10, in this order:
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
-| 20 | 32 | 17 |
+| 20 | 31 | 16 |
 | 30 | 35 | 19 |
 | 40 | 22 | 18 |
 | 50 | 21 | 19 |
@@ -96,9 +96,9 @@ One point per level from 10, in this order:
 ## Other builds of this spec
 
 - [Shadow (optimized, solo at 60)](../research/leveling/builds/opt-shadow-dps-solo-60.md) (16/2/33, 25 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/priest/60/02500302103-2-55510201201300251-12)
-- [Leveling — Shadow](../research/leveling/builds/leveling-shadow.md) (18/0/33, 25 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/priest/60/00500323131--53502201201310251-12)
-- [Shadow (optimized, AoE pulls)](../research/leveling/builds/opt-shadow-dps-leveling-aoe.md) (20/0/31, 29 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/priest/60/02400520133--55102221201310231-12)
+- [Leveling — Shadow](../research/leveling/builds/leveling-shadow.md) (18/0/33, 26 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/priest/60/00500323131--53502201201310251-12)
+- [Shadow (optimized, AoE pulls)](../research/leveling/builds/opt-shadow-dps-leveling-aoe.md) (20/0/31, 30 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/priest/60/02400520133--55102221201310231-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-13 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-15 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

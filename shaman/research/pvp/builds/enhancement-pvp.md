@@ -37,11 +37,11 @@ The Enhancement PvP build derived on 2026-09-30 (derive_pvp.py): the stats model
 | **Shamanistic Focus** | 1/1 | **NEW** | Reduces the mana cost of your Shock and Lightning Shield spells by 45%. |
 | **Flurry** | 4/5 | changed | Increases your attack speed by 24% for your next 3 swings after dealing a melee critical strike. |
 | **Improved Ghost Wolf** | 2/2 | changed | Reduces the cast time of your Ghost Wolf spell by 3.0 sec, and Ghost Wolf may be used indoors. |
-| **Stormstrike** | 1/1 | changed | Instantly strike for 150% normalized weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec. |
+| **Stormstrike** | 1/1 | changed | Instantly strike for 100% normalized weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec. |
 | **Toughness** | 4/5 | changed | Increases your Stamina by 8%. |
 | **Improved Stormstrike** | 2/2 | **NEW** | When you Stormstrike, you have a 100% chance to gain 50% mana regeneration while casting spells for 15 sec, and Stormstrike's cooldown has a 100% chance to reset each time you Dodge or Parry. |
 | **Mental Quickness** | 2/2 | **NEW** | Increases your spell damage and healing by up to 30% of your Intellect. |
-| **Maelstrom Weapon** | 2/5 | **NEW** | When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 8%. Stacks up to 5 times. Lasts 30 sec. |
+| **Maelstrom Weapon** | 2/5 | **NEW** | When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 20%. Stacks up to 5 times. Lasts 30 sec. |
 | **Rage of the Farseer** | 1/1 | **NEW** | Increases your attack speed by 30% for 25 sec. |
 
 ### Restoration (0)

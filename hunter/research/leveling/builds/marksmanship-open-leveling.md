@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Marksmanship leveling build the open leveling search found on 2026-11-06: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the mm-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (mm-raid). 
+The Marksmanship leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the mm-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (mm-raid). 
 
 ## Point allocation
 
@@ -20,9 +20,9 @@ The Marksmanship leveling build the open leveling search found on 2026-11-06: ev
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Deadly Aspects** | 5/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec. |
-| **Endurance Training** | 2/5 | changed | Increases the Health and Armor of your pets by 6%. |
+| **Endurance Training** | 1/5 | changed | Increases the Health and Armor of your pets by 3%. |
 | **Focused Fire** | 2/2 | **NEW** | Increases all damage you and your pet deal by 2% while your pet is active. |
-| **Improved Aspect of the Monkey** | 1/3 | changed | Increases the Dodge bonus of your Aspect of the Monkey by 2%. Additionally, your pet gains 50% of the effect of your Aspect of the Monkey ability. |
+| **Improved Aspect of the Monkey** | 2/3 | changed | Increases the Dodge bonus of your Aspect of the Monkey by 4%. Additionally, your pet gains 50% of the effect of your Aspect of the Monkey ability. |
 | **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
 | **Ferocity** | 5/5 | changed | Increases the critical strike chance of your pets and hawks by 10%. |
 | **Bestial Discipline** | 1/2 | changed | Increases the Focus regeneration of your pets by 10% and allows 25% of your Mana regeneration to continue while casting. |
@@ -61,8 +61,8 @@ The Marksmanship leveling build the open leveling search found on 2026-11-06: ev
 | 35-39 | Marksmanship | Ranged Weapon Specialization | 5 | 0/30/0 |
 | 40-44 | Beast Mastery | Deadly Aspects | 5 | 5/30/0 |
 | 45-46 | Beast Mastery | Focused Fire | 2 | 7/30/0 |
-| 47-48 | Beast Mastery | Endurance Training | 2 | 9/30/0 |
-| 49 | Beast Mastery | Improved Aspect of the Monkey | 1 | 10/30/0 |
+| 47 | Beast Mastery | Endurance Training | 1 | 8/30/0 |
+| 48-49 | Beast Mastery | Improved Aspect of the Monkey | 2 | 10/30/0 |
 | 50-54 | Beast Mastery | Unleashed Fury | 5 | 15/30/0 |
 | 55-59 | Beast Mastery | Ferocity | 5 | 20/30/0 |
 | 60 | Beast Mastery | Bestial Discipline | 1 | 21/30/0 |
@@ -71,12 +71,12 @@ The Marksmanship leveling build the open leveling search found on 2026-11-06: ev
 
 1. **Efficiency** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
 2. **Unleashed Fury** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Lethal Attacks** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Ferocity** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Rapid Recuperation** — +0.4 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Improved Stings** — +0.4 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Trueshot Aura** — +0.4 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Ranged Weapon Specialization** — +0.4 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Lethal Attacks** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Ferocity** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Improved Stings** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Rapid Recuperation** — +0.4 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Ranged Weapon Specialization** — +0.4 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Trueshot Aura** — +0.4 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -84,8 +84,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- +6.6% faster than the hand draft leveling-beast-mastery, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 22.74; opt-bm-leveling-leveling-st 23.05, opt-bm-leveling-solo-60 23.11, opt-mm-raid-leveling-st 23.22, leveling-beast-mastery 24.24. The search simulated 27,163 builds.
+- +3.6% faster than the hand draft leveling-beast-mastery, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 22.74; opt-bm-leveling-solo-60 22.89, opt-bm-leveling-leveling-st 22.96, opt-mm-raid-leveling-st 23.22, leveling-beast-mastery 23.57. The search simulated 27,163 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -95,7 +95,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/hunter>
-- <https://talentsforever.com/hunter/60/52210005050001-005355200101305--7>
+- <https://talentsforever.com/hunter/60/51220005050001-005355200101305--12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

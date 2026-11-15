@@ -4,7 +4,7 @@
 
 What a Combat rogue presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Combat with swords is the rogue's fastest leveling spec in the fight lab, and the simplest: build combo points with **Sinister Strike**, spend them on **Eviscerate**, open from stealth once you have an opener worth the walk. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 21/30/0 ([open the talent tree](https://talentsforever.com/rogue/60/02531320201101-321033001201232025--12)), the one on the [Combat leveling page](combat.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 21/30/0 ([open the talent tree](https://talentsforever.com/rogue/60/02531020221201-321033001201232025--12)), the one on the [Combat leveling page](combat.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -194,7 +194,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Vanish** (22) is the emergency exit: the mob loses you, and you walk away.
 
-*Fight lab, seconds per kill: 19 at level 21. Presses per kill at level 21: Melee 4.4, Melee (off-hand) 3.8, Sinister Strike 2.9, Garrote 1.0, Riposte 0.6, Eviscerate 0.3.*
+*Fight lab, seconds per kill: 19 at level 21. Presses per kill at level 21: Melee 4.5, Melee (off-hand) 3.8, Sinister Strike 2.9, Garrote 1.0, Riposte 0.6, Eviscerate 0.3.*
 
 ## Levels 24-29: Shank
 
@@ -222,7 +222,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Cheap Shot** (26): off. The tuned rotation never casts it: **Garrote** is the better opener.
 - Put Instant Poison on your main hand once you have it. **Mind-numbing Poison** (24) is for casters in groups.
 
-*Fight lab, seconds per kill: 19 at level 24, 20 at level 29. Presses per kill at level 24: Melee 4.2, Melee (off-hand) 3.8, Sinister Strike 3.4, Shank 1.3, Garrote 1.0, Riposte 0.6, Eviscerate 0.6.*
+*Fight lab, seconds per kill: 18 at level 24, 19 at level 29. Presses per kill at level 24: Melee 4.2, Melee (off-hand) 3.8, Sinister Strike 3.4, Shank 1.3, Garrote 1.0, Riposte 0.6, Eviscerate 0.5.*
 
 ## Levels 30-39: Deadly Poison, Hack and Slash
 
@@ -251,7 +251,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Kidney Shot** (30): off. The tuned rotation never casts it.
 - **Hack and Slash** (33-34) gives extra swings. Nothing to press. **Blind** (34) handles a second mob that joins mid-fight.
 
-*Fight lab, seconds per kill: 19 at level 30, 22 at level 39. Presses per kill at level 30: Melee 4.4, Melee (off-hand) 4.0, Sinister Strike 3.8, Shank 1.3, Garrote 1.0, Eviscerate 0.8, Riposte 0.4.*
+*Fight lab, seconds per kill: 19 at level 30, 22 at level 39. Presses per kill at level 30: Melee 4.3, Melee (off-hand) 3.9, Sinister Strike 3.8, Shank 1.3, Garrote 1.0, Eviscerate 0.9, Riposte 0.4.*
 
 ## Levels 40-54: Nothing new to press
 
@@ -277,13 +277,13 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Malice** (42-46) and **Lethality** (52-53) are crit; **Vigor** (50-51) is 10 more energy, so **Shank** overflows less often.
 - **Mutilate**, **Death Mark** and **Adrenaline Rush** belong to other builds. This one does not take them.
 
-*Fight lab, seconds per kill: 21 at level 40, 21 at level 50, 22 at level 54. Presses per kill at level 40: Melee 5.0, Melee (off-hand) 4.6, Sinister Strike 4.4, Shank 1.8, Eviscerate 1.1, Garrote 1.0, Riposte 0.5, Hack and Slash 0.3.*
+*Fight lab, seconds per kill: 21 at level 40, 21 at level 50, 22 at level 54. Presses per kill at level 40: Melee 5.0, Melee (off-hand) 4.5, Sinister Strike 4.4, Shank 1.8, Eviscerate 1.1, Garrote 1.0, Riposte 0.5, Hack and Slash 0.3.*
 
 ## Levels 55-60: Cold Blood
 
 **New ranks to buy:** Eviscerate at 56, 60; Gouge at 60; Kick at 58; Sprint at 58; Stealth at 60.
 
-**Talents:** 55 Cold Blood, 56 Improved Poisons, 57-59 Improved Slice and Dice, 60 Venom.
+**Talents:** 55 Cold Blood, 56 Improved Poisons, 57-58 Vile Poisons, 59 Improved Poisons, 60 Venom.
 
 **Keys to set:** C = Cold Blood.
 
@@ -301,7 +301,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather. **Vanish** is the emergency exit.
 
-*Fight lab, seconds per kill: 22 at level 55, 22 at level 60. Presses per kill at level 55: Melee 5.0, Sinister Strike 5.0, Melee (off-hand) 4.6, Shank 1.7, Eviscerate 1.4, Garrote 1.0, Riposte 0.5, Hack and Slash 0.3, Cold Blood 0.1.*
+*Fight lab, seconds per kill: 22 at level 55, 21 at level 60. Presses per kill at level 55: Sinister Strike 5.0, Melee 5.0, Melee (off-hand) 4.6, Shank 1.8, Eviscerate 1.4, Garrote 1.0, Riposte 0.5, Hack and Slash 0.3, Cold Blood 0.1.*
 
 ## Between fights
 
@@ -314,4 +314,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - The Combat-Subtlety split is about 1% behind in the fight lab and plays **Ghostly Strike** and the stealth openers; Assassination with daggers plays **Mutilate** from 40. Both have pages in this folder.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-13: the stages are hand-kept in `_reference/data/level-guides/rogue.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-15: the stages are hand-kept in `_reference/data/level-guides/rogue.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

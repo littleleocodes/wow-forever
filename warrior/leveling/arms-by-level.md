@@ -4,7 +4,7 @@
 
 What an Arms warrior presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. A warrior has no mana: every attack costs rage, and rage comes from hitting and being hit. The whole game is spending it on the right attack. You stay in Battle Stance with a two-handed weapon from 1 to 60. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 32/17/2 ([open the talent tree](https://talentsforever.com/warrior/60/02323213032215201-05140005002-2-12)), the one on the [Arms leveling page](arms.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 32/17/2 ([open the talent tree](https://talentsforever.com/warrior/60/02323213132215101-05140005002-2-12)), the one on the [Arms leveling page](arms.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -15,8 +15,9 @@ What an Arms warrior presses from level 1 to 60, stage by stage, as the trainer 
 | 10-11 | **Bloodrage** gives you rage before you **Charge**. Talent points start. |
 | 12-19 | **Overpower** lights up when the mob dodges: a cheap hit that cannot be dodged. Keep rage for it. |
 | 20-23 | **Victory Rush** is a free strike after each kill. Open the next fight with it when you are hurt. |
-| 24-34 | **Execute** finishes a mob below 20% health. From then on it comes first. |
-| 35-39 | **Improved Slam** (talent) makes **Slam** the better use of spare rage, ahead of Heroic Strike. |
+| 24 | **Execute** finishes a mob below 20% health. From then on it comes first. |
+| 25-34 | **Spearing Strike** (talent): an instant strike for 40% weapon damage, 15 rage, on a 20-second cooldown. It takes spare rage before **Heroic Strike**. |
+| 35-39 | **Improved Slam** (talent) makes **Slam** the first use of spare rage, ahead of **Spearing Strike** and **Heroic Strike**. |
 | 40-60 | **Mortal Strike** (talent): your main attack from here to 60, whenever it is ready. |
 
 ## Keybinds by level
@@ -25,39 +26,39 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Action bar 1: the fight**
 
-| Key | Its job | 1-3 | 4-9 | 10-11 | 12-19 | 20-23 | 24-34 | 35-39 | 40-60 |
-|---|---|---|---|---|---|---|---|---|---|
-| Q | Your main strike; the macro also starts your swings | **Heroic Strike** | Heroic Strike | Heroic Strike | Heroic Strike | Heroic Strike | Heroic Strike | Heroic Strike | **Mortal Strike** |
-| E | Engage: the charge and its stun | — | **Charge** | Charge | Charge | Charge | Charge | Charge | Charge |
-| R | The bleed, once per mob | — | **Rend** | Rend | Rend | Rend | Rend | Rend | Rend |
-| F | Escape: scatter what is on you | — | — | — | — | **Intimidating Shout** from 22 | Intimidating Shout | Intimidating Shout | Intimidating Shout |
-| Mouse 5 | Thumb reaction: it lights up after a dodge | — | — | — | **Overpower** | Overpower | Overpower | Overpower | Overpower |
-| Mouse 4 | Thumb: rage before the charge | — | — | **Bloodrage** | Bloodrage | Bloodrage | Bloodrage | Bloodrage | Bloodrage |
-| 1 | Lights up after a kill | — | — | — | — | **Victory Rush** | Victory Rush | Victory Rush | Victory Rush |
-| 2 | The finisher below 20% | — | — | — | — | — | **Execute** | Execute | Execute |
-| 3 | Stop a mob that runs | — | **Hamstring** from 8 | Hamstring | Hamstring | Hamstring | Hamstring | Hamstring | Hamstring |
-| 4 | Battle Stance only: every melee attacker takes a counterattack for 15 seconds (once per 15 minutes); for a pull that goes wrong | — | — | — | — | **Retaliation** | Retaliation | Retaliation | Retaliation |
-| C | Spare rage once Mortal Strike has Q | — | — | — | — | — | — | — | **Heroic Strike** |
-| Middle mouse | Free | — | — | — | — | — | — | — | — |
+| Key | Its job | 1-3 | 4-9 | 10-11 | 12-19 | 20-23 | 24 | 25-34 | 35-39 | 40-60 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Q | Your main strike; the macro also starts your swings | **Heroic Strike** | Heroic Strike | Heroic Strike | Heroic Strike | Heroic Strike | Heroic Strike | Heroic Strike | Heroic Strike | **Mortal Strike** |
+| E | Engage: the charge and its stun | — | **Charge** | Charge | Charge | Charge | Charge | Charge | Charge | Charge |
+| R | The bleed, once per mob | — | **Rend** | Rend | Rend | Rend | Rend | Rend | Rend | Rend |
+| F | Escape: scatter what is on you | — | — | — | — | **Intimidating Shout** from 22 | Intimidating Shout | Intimidating Shout | Intimidating Shout | Intimidating Shout |
+| Mouse 5 | Thumb reaction: it lights up after a dodge | — | — | — | **Overpower** | Overpower | Overpower | Overpower | Overpower | Overpower |
+| Mouse 4 | Thumb: rage before the charge | — | — | **Bloodrage** | Bloodrage | Bloodrage | Bloodrage | Bloodrage | Bloodrage | Bloodrage |
+| 1 | Lights up after a kill | — | — | — | — | **Victory Rush** | Victory Rush | Victory Rush | Victory Rush | Victory Rush |
+| 2 | The finisher below 20% | — | — | — | — | — | **Execute** | Execute | Execute | Execute |
+| 3 | Stop a mob that runs | — | **Hamstring** from 8 | Hamstring | Hamstring | Hamstring | Hamstring | Hamstring | Hamstring | Hamstring |
+| 4 | Battle Stance only: every melee attacker takes a counterattack for 15 seconds (once per 15 minutes); for a pull that goes wrong | — | — | — | — | **Retaliation** | Retaliation | Retaliation | Retaliation | Retaliation |
+| C | Spare rage: Spearing Strike, then Heroic Strike once Mortal Strike has Q | — | — | — | — | — | — | **Spearing Strike** | Spearing Strike | **Heroic Strike** |
+| Middle mouse | Free | — | — | — | — | — | — | — | — | — |
 
 **Action bar 2: the same keys with Shift**
 
-| Key | Its job | 1-3 | 4-9 | 10-11 | 12-19 | 20-23 | 24-34 | 35-39 | 40-60 |
-|---|---|---|---|---|---|---|---|---|---|
-| Shift+Q | Spare rage with Improved Slam | — | — | — | — | — | — | **Slam** | Slam |
-| Shift+E | Packs: the clap around you | — | **Thunder Clap** from 6 | Thunder Clap | Thunder Clap | Thunder Clap | Thunder Clap | Thunder Clap | Thunder Clap |
-| Shift+R | Packs: every strike hits a second mob | — | — | — | — | — | — | **Sweeping Strikes** from 39 | Sweeping Strikes |
-| Shift+F | Free | — | — | — | — | — | — | — | — |
-| Shift+Mouse 5 | Packs: the strike that hits two | — | — | — | — | **Cleave** | Cleave | Cleave | Cleave |
-| Shift+Mouse 4 | Free | — | — | — | — | — | — | — | — |
-| Shift+1 | Free | — | — | — | — | — | — | — | — |
-| Shift+2 | Free | — | — | — | — | — | — | — | — |
-| Shift+3 | Free | — | — | — | — | — | — | — | — |
-| Shift+4 | Free | — | — | — | — | — | — | — | — |
-| Shift+C | Free | — | — | — | — | — | — | — | — |
-| Shift+X | Free | — | — | — | — | — | — | — | — |
+| Key | Its job | 1-3 | 4-9 | 10-11 | 12-19 | 20-23 | 24 | 25-34 | 35-39 | 40-60 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Shift+Q | Spare rage with Improved Slam | — | — | — | — | — | — | — | **Slam** | Slam |
+| Shift+E | Packs: the clap around you | — | **Thunder Clap** from 6 | Thunder Clap | Thunder Clap | Thunder Clap | Thunder Clap | Thunder Clap | Thunder Clap | Thunder Clap |
+| Shift+R | Packs: every strike hits a second mob | — | — | — | — | — | — | — | **Sweeping Strikes** from 39 | Sweeping Strikes |
+| Shift+F | Free | — | — | — | — | — | — | — | — | — |
+| Shift+Mouse 5 | Packs: the strike that hits two | — | — | — | — | **Cleave** | Cleave | Cleave | Cleave | Cleave |
+| Shift+Mouse 4 | Free | — | — | — | — | — | — | — | — | — |
+| Shift+1 | Free | — | — | — | — | — | — | — | — | — |
+| Shift+2 | Free | — | — | — | — | — | — | — | — | — |
+| Shift+3 | Free | — | — | — | — | — | — | — | — | — |
+| Shift+4 | Free | — | — | — | — | — | — | — | — | — |
+| Shift+C | Free | — | — | — | — | — | — | — | — | — |
+| Shift+X | Free | — | — | — | — | — | — | — | — | — |
 
-- One swap on bar 1: **Mortal Strike** takes Q at 40 (change the macro's two names) and **Heroic Strike**, the spare-rage strike, moves to C.
+- At 40 **Mortal Strike** takes Q (change the macro's two names) and **Heroic Strike**, the spare-rage strike, moves to C in place of **Spearing Strike** (25), which the fight lab hardly casts once **Mortal Strike** takes the rage.
 - No key: **Battle Shout** (3 minutes: click it between fights), **Battle Stance** (you never leave it), food, bandages, the mount and the Hearthstone.
 - Levels 1-3 fight with Q alone. Q is a macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free. Add a key when its spell arrives.
 - The single-target rotation never casts **Thunder Clap**, **Cleave** or **Sweeping Strikes**. They are there for a pull that brings friends.
@@ -98,7 +99,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Thunder Clap** (6) is for two or more mobs. **Hamstring** (8) stops a mob that runs away.
 
-*Fight lab, seconds per kill: 15 at level 4, 19 at level 9. Presses per kill at level 4: Melee 1.8, Rend 1.0, Heroic Strike 0.9, Charge 0.7, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 15 at level 4, 19 at level 9. Presses per kill at level 4: Melee 1.8, Rend 1.1, Heroic Strike 0.9, Charge 0.7, Battle Shout 0.1.*
 
 ## Levels 10-11: Bloodrage, and talents begin
 
@@ -122,7 +123,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Defensive Stance**, **Taunt** and **Sunder Armor** (10) are for tanking. Arms levels in **Battle Stance**.
 - **Improved Rend** (10-12) is why the one **Rend** per mob is worth its rage.
 
-*Fight lab, seconds per kill: 19 at level 10. Presses per kill at level 10: Melee 2.2, Heroic Strike 1.8, Rend 1.2, Charge 1.0, Bloodrage 0.3, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 19 at level 10. Presses per kill at level 10: Melee 2.2, Heroic Strike 1.7, Rend 1.2, Charge 1.0, Bloodrage 0.3, Battle Shout 0.1.*
 
 ## Levels 12-19: Overpower
 
@@ -147,7 +148,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Improved Overpower** (15-16) and **Improved Charge** (17-18) make both buttons better. Nothing new to press.
 - **Shield Bash** (12) and **Revenge** (14) need a shield or Defensive Stance. Skip them.
 
-*Fight lab, seconds per kill: 20 at level 12, 23 at level 19. Presses per kill at level 12: Melee 2.4, Heroic Strike 1.8, Rend 1.2, Charge 1.0, Overpower 0.3, Bloodrage 0.3, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 19 at level 12, 23 at level 19. Presses per kill at level 12: Melee 2.4, Heroic Strike 1.7, Rend 1.2, Charge 1.0, Overpower 0.3, Bloodrage 0.3, Battle Shout 0.1.*
 
 ## Levels 20-23: Victory Rush
 
@@ -173,15 +174,15 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Deep Wounds** (20-22) adds a bleed to every critical hit. Nothing to press.
 - **Retaliation** (20, key 4) and **Intimidating Shout** (22, F) are for a pull that goes wrong: **Retaliation** counterattacks everything that hits you in melee for 15 seconds, once per 15 minutes, in **Battle Stance** only.
 
-*Fight lab, seconds per kill: 22 at level 20. Presses per kill at level 20: Melee 2.6, Heroic Strike 2.4, Rend 1.2, Charge 1.0, Victory Rush 0.4, Bloodrage 0.3, Overpower 0.3, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 22 at level 20. Presses per kill at level 20: Melee 2.6, Heroic Strike 2.3, Rend 1.2, Charge 1.0, Victory Rush 0.4, Overpower 0.4, Bloodrage 0.3, Battle Shout 0.1.*
 
-## Levels 24-34: Execute
+## Level 24: Execute
 
-**The trainer teaches:** **Execute** (24), Challenging Shout (26), Shield Wall (28), Berserker Rage (30), Berserker Stance (30), Intercept (30).
+**The trainer teaches:** **Execute** (24).
 
-**New ranks to buy:** Battle Shout at 32; Charge at 26; Cleave at 30; Execute at 32; Hamstring at 32; Heroic Strike at 24, 32; Overpower at 28; Rend at 30; Thunder Clap at 28.
+**New ranks to buy:** Heroic Strike at 24.
 
-**Talents:** 24 Improved Tactical Mastery, 25 Anger Management, 26-28 Two-Handed Weapon Specialization, 29 Impale, 30-31 Bloodthrill, 32-34 Weaponmaster.
+**Talents:** 24 Improved Tactical Mastery.
 
 **Keys to set:** 2 = Execute.
 
@@ -196,22 +197,19 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 5. **Rend** once, while the mob has more than a third of its health.
 6. **Heroic Strike** with spare rage. Keep 15 back for **Overpower**.
 
-- **Bloodthrill** (30-31) also lights **Overpower** up while your **Rend** ticks. From 30 you press **Overpower** more often.
-- **Berserker Stance** (30) and **Intercept** (30) are not part of this rotation. Stay in **Battle Stance**.
+*Fight lab, seconds per kill: 21 at level 24. Presses per kill at level 24: Melee 3.2, Heroic Strike 1.5, Rend 1.2, Charge 1.0, Execute 0.9, Victory Rush 0.4, Bloodrage 0.3, Overpower 0.3, Battle Shout 0.1.*
 
-*Fight lab, seconds per kill: 22 at level 24, 24 at level 30, 24 at level 34. Presses per kill at level 24: Melee 3.2, Heroic Strike 1.5, Rend 1.2, Charge 1.0, Execute 0.9, Victory Rush 0.4, Bloodrage 0.3, Overpower 0.3, Battle Shout 0.1.*
+## Levels 25-34: Spearing Strike
 
-## Levels 35-39: Slam
+**The trainer teaches:** Challenging Shout (26), Shield Wall (28), Berserker Rage (30), Berserker Stance (30), Intercept (30).
 
-**The trainer teaches:** Whirlwind (36), Pummel (38).
+**New ranks to buy:** Battle Shout at 32; Charge at 26; Cleave at 30; Execute at 32; Hamstring at 32; Heroic Strike at 32; Overpower at 28; Rend at 30; Thunder Clap at 28.
 
-**New ranks to buy:** Slam at 38; Thunder Clap at 38.
+**Talents:** 25 Spearing Strike, 26 Anger Management, 27-29 Two-Handed Weapon Specialization, 30-31 Bloodthrill, 32-34 Weaponmaster.
 
-**Talents:** 35-36 Improved Slam, 37-38 Weaponmaster, 39 Sweeping Strikes.
+**Keys to set:** C = Spearing Strike.
 
-**Keys to set:** Shift+Q = Slam; Shift+R = Sweeping Strikes (at 39).
-
-**Your keys in this stage:** Q Heroic Strike, E Charge, R Rend, Mouse 5 Overpower, Mouse 4 Bloodrage, 1 Victory Rush, 2 Execute, Shift+Q Slam.
+**Your keys in this stage:** Q Heroic Strike, E Charge, R Rend, Mouse 5 Overpower, Mouse 4 Bloodrage, 1 Victory Rush, 2 Execute, C Spearing Strike.
 
 **What to press**, top to bottom:
 
@@ -220,12 +218,39 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 3. **Execute** first, once the mob is below 20% of its health.
 4. **Overpower** whenever it lights up.
 5. **Rend** once, while the mob has more than a third of its health.
-6. Spare rage: **Slam**, then **Heroic Strike**. Keep 15 back for **Overpower**.
+6. Spare rage: **Spearing Strike** when it is ready, then **Heroic Strike**. Keep 15 back for **Overpower**.
+
+- **Anger Management** (26) gives you 1 rage every 3 seconds in a fight; **Two-Handed Weapon Specialization** (27-29) adds 6% damage with your two-hander.
+- **Bloodthrill** (30-31) also lights **Overpower** up while your **Rend** ticks. From 30 you press **Overpower** more often.
+- **Berserker Stance** (30) and **Intercept** (30) are not part of this rotation. Stay in **Battle Stance**.
+
+*Fight lab, seconds per kill: 23 at level 30, 22 at level 34. Presses per kill at level 30: Melee 3.7, Heroic Strike 1.3, Rend 1.2, Charge 1.0, Spearing Strike 1.0, Execute 0.9, Overpower 0.7, Victory Rush 0.6, Bloodrage 0.3, Battle Shout 0.1.*
+
+## Levels 35-39: Slam
+
+**The trainer teaches:** Whirlwind (36), Pummel (38).
+
+**New ranks to buy:** Slam at 38; Thunder Clap at 38.
+
+**Talents:** 35 Improved Slam, 36-37 Weaponmaster, 38 Impale, 39 Sweeping Strikes.
+
+**Keys to set:** Shift+Q = Slam; Shift+R = Sweeping Strikes (at 39).
+
+**Your keys in this stage:** Q Heroic Strike, E Charge, R Rend, Mouse 5 Overpower, Mouse 4 Bloodrage, 1 Victory Rush, 2 Execute, C Spearing Strike, Shift+Q Slam.
+
+**What to press**, top to bottom:
+
+1. **Bloodrage** while you are above 45% of your health, then **Charge** in. Open with **Victory Rush** when it is up and you are below 90% of your health.
+2. Keep **Battle Shout** up.
+3. **Execute** first, once the mob is below 20% of its health.
+4. **Overpower** whenever it lights up.
+5. **Rend** once, while the mob has more than a third of its health.
+6. Spare rage: **Slam**, then **Spearing Strike**, then **Heroic Strike**. Keep 15 back for **Overpower**.
 
 - **Whirlwind** (36) needs **Berserker Stance**. This rotation never leaves **Battle Stance**.
 - **Sweeping Strikes** (39) is for a second mob: press it, then **Thunder Clap** and **Cleave**.
 
-*Fight lab, seconds per kill: 22 at level 35. Presses per kill at level 35: Melee 3.7, Rend 1.2, Slam 1.2, Heroic Strike 1.1, Charge 1.0, Overpower 0.9, Execute 0.9, Victory Rush 0.5, Bloodrage 0.3, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 20 at level 35. Presses per kill at level 35: Melee 3.8, Rend 1.2, Slam 1.1, Charge 1.0, Overpower 1.0, Spearing Strike 0.9, Execute 0.8, Heroic Strike 0.6, Victory Rush 0.5, Bloodrage 0.3, Battle Shout 0.1.*
 
 ## Levels 40-60: Mortal Strike, the finished rotation
 
@@ -237,7 +262,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Keys to set:** Q = Mortal Strike; C = Heroic Strike.
 
-**Your keys in this stage:** Q Mortal Strike, E Charge, R Rend, Mouse 5 Overpower, Mouse 4 Bloodrage, 1 Victory Rush, 2 Execute, C Heroic Strike, Shift+Q Slam.
+**Your keys in this stage:** Q Mortal Strike, E Charge, R Rend, Mouse 5 Overpower, Mouse 4 Bloodrage, 1 Victory Rush, 2 Execute, Shift+Q Slam.
 
 **What to press**, top to bottom:
 
@@ -247,12 +272,13 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 4. **Overpower** whenever it lights up.
 5. **Mortal Strike** whenever it is ready.
 6. **Rend** once, while the mob has more than a third of its health.
-7. Spare rage: **Slam**, then **Heroic Strike**. Keep 15 back for **Overpower**, and 30 more when **Mortal Strike** is almost ready.
+7. Spare rage: **Slam**, unless **Mortal Strike** is almost ready and needs the rage.
 
+- From 40 **Mortal Strike** takes the rage: the fight lab casts **Spearing Strike** under once in five kills and **Heroic Strike** never. **Heroic Strike** moves to C for rage you cannot spend otherwise (keep 15 back for **Overpower**); **Spearing Strike** leaves your bar.
 - The remaining points go to Fury: **Cruelty** (41-45) for critical hits, **Unbridled Wrath** (47-50) and **Enrage** (52-56) for rage and damage.
 - Two or more mobs: **Sweeping Strikes**, then **Thunder Clap** and **Cleave**.
 
-*Fight lab, seconds per kill: 24 at level 40, 25 at level 50, 27 at level 60. Presses per kill at level 40: Melee 5.3, Mortal Strike 1.9, Rend 1.1, Charge 1.0, Overpower 0.9, Execute 0.9, Victory Rush 0.6, Slam 0.5, Bloodrage 0.3, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 24 at level 40, 25 at level 50, 26 at level 60. Presses per kill at level 40: Melee 5.4, Mortal Strike 2.0, Rend 1.1, Charge 1.0, Overpower 1.0, Execute 0.9, Victory Rush 0.6, Bloodrage 0.3, Slam 0.3, Battle Shout 0.1.*
 
 ## Between fights
 
@@ -266,4 +292,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Pulling two mobs at a time works from 39 with **Sweeping Strikes**. Before that, one at a time is faster and safer.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-13: the stages are hand-kept in `_reference/data/level-guides/warrior.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-15: the stages are hand-kept in `_reference/data/level-guides/warrior.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

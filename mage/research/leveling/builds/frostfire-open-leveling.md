@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Frostfire (a Fire/Frost hybrid) leveling build the open leveling search found on 2026-11-06: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the frostfire-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (fire-leveling). +20.4% faster per kill than frostfire-open-leveling, the fastest of our leveling builds in that race.
+The Frostfire (a Fire/Frost hybrid) leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the frostfire-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (fire-leveling). 
 
 ## Point allocation
 
@@ -76,14 +76,14 @@ The Frostfire (a Fire/Frost hybrid) leveling build the open leveling search foun
 
 ## Core talents (priority order)
 
-1. **Ice Lance** — +10.3 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Shatter** — +7.6 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Ice Shards** — +3.7 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Fingers of Frost** — +3.3 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Frostbite** — +2.1 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Frost Channeling** — +2.0 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Accelerant** — +1.8 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Master of Elements** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Shatter** — +6.5 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Ice Lance** — +5.6 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Ice Shards** — +2.8 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Fingers of Frost** — +2.3 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Frost Channeling** — +2.0 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Frostbite** — +1.7 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Master of Elements** — +1.6 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Ignite** — +1.6 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -91,8 +91,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Arcane Resilience to Improved Frost Nova at 32 (tie-break: -0.2% seed 3, -0.3% seed 4, level-weighted time per kill); Fire Power to Impact at 60 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Blast Wave to Improved Frost Nova at 55 (tie-break: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Frost Warding to Improved Frostbolt at 13 (gate: -0.3% seed 3, -0.5% seed 4, level-weighted time per kill); Frost Warding to Improved Frostbolt at 12 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 36.40; frostfire-open-leveling 43.84. The search simulated 75,576 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 34.36; . The search simulated 75,576 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -102,7 +101,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/mage>
-- <https://talentsforever.com/mage/60/201-5550030000003311-2125300301003002-7>
+- <https://talentsforever.com/mage/60/2-55501300000033-0325320301003002-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

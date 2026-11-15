@@ -3,7 +3,7 @@
  "spec": "Elemental",
  "build": "elemental-open-leveling",
  "rotation": "elemental-dps",
- "date": "2026-11-13",
+ "date": "2026-11-15",
  "fights": 3000,
  "seeds": [
   3,
@@ -347,8 +347,5 @@
  },
  "note": "Negative steps (hit_rating, expertise_rating): the value per point while under the cap, measured as a step down. Ratings in rating points (the same at every level). A fight-lab model of the beta, not a measurement.",
  "provisional_order": false,
- "base": "standard",
- "added": {
-  "spell_penetration": "2026-11-13"
- }
+ "base": "standard"
 }

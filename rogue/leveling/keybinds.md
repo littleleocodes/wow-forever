@@ -44,7 +44,7 @@ This file is hand-written: the regeneration that rewrites the rest of this folde
 
 | Key | Spell (learned at) | Press it when |
 |---|---|---|
-| Shift+E | Kick (12) | Combat with swords: the tuned rotation never interrupts, so this is for a caster that hits too hard. Assassination, Subtlety and Combat-Subtlety keep Kick in their rotation: press it on a caster mob's spell |
+| Shift+E | Kick (12) | Combat with swords, Subtlety and Combat-Subtlety: the tuned rotations never interrupt, so this is for a caster that hits too hard. Assassination keeps Kick in its rotation: press it on a caster mob's spell |
 | Shift+1 | Stealth (1) | Before each pull from 14: Shift+1, then 1 for the opener |
 | Shift+2 | Blind (34) | A second mob joins mid-fight |
 | Shift+Q, Shift+R, Shift+F, Shift+Mouse 5, Shift+Mouse 4, Shift+3, Shift+4, Shift+C, Shift+X | Free | |

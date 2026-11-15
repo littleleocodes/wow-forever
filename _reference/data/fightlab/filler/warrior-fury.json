@@ -3,7 +3,7 @@
  "spec": "Fury",
  "build": "fury-open-leveling",
  "rotation": "fury-dw-raid",
- "date": "2026-11-09",
+ "date": "2026-11-15",
  "fights": 1500,
  "start_order": [
   {
@@ -27,26 +27,14 @@
   {
    "levels": "25",
    "tree": "Fury",
-   "talent": "Improved Execute",
-   "points": 1
-  },
-  {
-   "levels": "26",
-   "tree": "Fury",
-   "talent": "Dual Wield Specialization",
-   "points": 1
-  },
-  {
-   "levels": "27",
-   "tree": "Fury",
    "talent": "Furious Precision",
    "points": 1
   },
   {
-   "levels": "28-29",
+   "levels": "26-29",
    "tree": "Fury",
    "talent": "Dual Wield Specialization",
-   "points": 2
+   "points": 4
   },
   {
    "levels": "30",
@@ -55,16 +43,22 @@
    "points": 1
   },
   {
-   "levels": "31-32",
+   "levels": "31",
    "tree": "Fury",
    "talent": "Dual Wield Specialization",
-   "points": 2
+   "points": 1
   },
   {
-   "levels": "33-34",
+   "levels": "32-33",
    "tree": "Fury",
    "talent": "Furious Precision",
    "points": 2
+  },
+  {
+   "levels": "34",
+   "tree": "Fury",
+   "talent": "Blood Craze",
+   "points": 1
   },
   {
    "levels": "35-37",
@@ -85,64 +79,64 @@
    "points": 1
   },
   {
-   "levels": "41",
-   "tree": "Fury",
-   "talent": "Blood Craze",
-   "points": 1
-  },
-  {
-   "levels": "42",
+   "levels": "41-42",
    "tree": "Fury",
    "talent": "Gore Drinker",
+   "points": 2
+  },
+  {
+   "levels": "43",
+   "tree": "Fury",
+   "talent": "Reckless Swings",
    "points": 1
   },
   {
-   "levels": "43-45",
+   "levels": "44-46",
    "tree": "Arms",
    "talent": "Improved Rend",
    "points": 3
   },
   {
-   "levels": "46-47",
+   "levels": "47-48",
    "tree": "Arms",
    "talent": "Improved Heroic Strike",
    "points": 2
   },
   {
-   "levels": "48-49",
+   "levels": "49-50",
    "tree": "Arms",
    "talent": "Improved Charge",
    "points": 2
   },
   {
-   "levels": "50-52",
+   "levels": "51-53",
    "tree": "Arms",
    "talent": "Improved Tactical Mastery",
    "points": 3
   },
   {
-   "levels": "53",
+   "levels": "54",
    "tree": "Arms",
    "talent": "Anger Management",
    "points": 1
   },
   {
-   "levels": "54-56",
+   "levels": "55-57",
    "tree": "Arms",
    "talent": "Deep Wounds",
    "points": 3
   },
   {
-   "levels": "57",
+   "levels": "58",
    "tree": "Arms",
    "talent": "Improved Overpower",
    "points": 1
   },
   {
-   "levels": "58-59",
+   "levels": "59",
    "tree": "Arms",
    "talent": "Impale",
-   "points": 2
+   "points": 1
   },
   {
    "levels": "60",
@@ -153,12 +147,13 @@
  ],
  "steps": [
   {
-   "weighted": 25.004,
+   "weighted": 24.474,
    "values_at_60": {
-    "Bloodthirst": -36.425,
-    "Gore Drinker": -1.85,
-    "Impale": -0.247,
-    "Improved Overpower": -0.535
+    "Bloodthirst": -36.601,
+    "Gore Drinker": -0.811,
+    "Impale": -0.136,
+    "Improved Overpower": -0.47,
+    "Reckless Swings": -0.971
    },
    "zero": []
   }
@@ -186,26 +181,14 @@
   {
    "levels": "25",
    "tree": "Fury",
-   "talent": "Improved Execute",
-   "points": 1
-  },
-  {
-   "levels": "26",
-   "tree": "Fury",
-   "talent": "Dual Wield Specialization",
-   "points": 1
-  },
-  {
-   "levels": "27",
-   "tree": "Fury",
    "talent": "Furious Precision",
    "points": 1
   },
   {
-   "levels": "28-29",
+   "levels": "26-29",
    "tree": "Fury",
    "talent": "Dual Wield Specialization",
-   "points": 2
+   "points": 4
   },
   {
    "levels": "30",
@@ -214,16 +197,22 @@
    "points": 1
   },
   {
-   "levels": "31-32",
+   "levels": "31",
    "tree": "Fury",
    "talent": "Dual Wield Specialization",
-   "points": 2
+   "points": 1
   },
   {
-   "levels": "33-34",
+   "levels": "32-33",
    "tree": "Fury",
    "talent": "Furious Precision",
    "points": 2
+  },
+  {
+   "levels": "34",
+   "tree": "Fury",
+   "talent": "Blood Craze",
+   "points": 1
   },
   {
    "levels": "35-37",
@@ -244,64 +233,64 @@
    "points": 1
   },
   {
-   "levels": "41",
-   "tree": "Fury",
-   "talent": "Blood Craze",
-   "points": 1
-  },
-  {
-   "levels": "42",
+   "levels": "41-42",
    "tree": "Fury",
    "talent": "Gore Drinker",
+   "points": 2
+  },
+  {
+   "levels": "43",
+   "tree": "Fury",
+   "talent": "Reckless Swings",
    "points": 1
   },
   {
-   "levels": "43-45",
+   "levels": "44-46",
    "tree": "Arms",
    "talent": "Improved Rend",
    "points": 3
   },
   {
-   "levels": "46-47",
+   "levels": "47-48",
    "tree": "Arms",
    "talent": "Improved Heroic Strike",
    "points": 2
   },
   {
-   "levels": "48-49",
+   "levels": "49-50",
    "tree": "Arms",
    "talent": "Improved Charge",
    "points": 2
   },
   {
-   "levels": "50-52",
+   "levels": "51-53",
    "tree": "Arms",
    "talent": "Improved Tactical Mastery",
    "points": 3
   },
   {
-   "levels": "53",
+   "levels": "54",
    "tree": "Arms",
    "talent": "Anger Management",
    "points": 1
   },
   {
-   "levels": "54-56",
+   "levels": "55-57",
    "tree": "Arms",
    "talent": "Deep Wounds",
    "points": 3
   },
   {
-   "levels": "57",
+   "levels": "58",
    "tree": "Arms",
    "talent": "Improved Overpower",
    "points": 1
   },
   {
-   "levels": "58-59",
+   "levels": "59",
    "tree": "Arms",
    "talent": "Impale",
-   "points": 2
+   "points": 1
   },
   {
    "levels": "60",

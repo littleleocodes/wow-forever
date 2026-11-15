@@ -8,7 +8,7 @@
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Frost), which stays below as the alternative. A model of the beta, to check at launch.
 
-**Signature spells:** 89% of the damage at level 60 in the fight lab comes from the spec's core spells (Frostbolt, Ice Lance; this build never casts Cone of Cold, Blizzard) (the spec's rule: at least 60%; **Frostbolt** cast at level 60).
+**Signature spells:** 88% of the damage at level 60 in the fight lab comes from the spec's core spells (Frostbolt, Ice Lance; this build never casts Cone of Cold, Blizzard) (the spec's rule: at least 60%; **Frostbolt** cast at level 60).
 
 ## How to play
 
@@ -28,15 +28,15 @@
 
 ## Why this rotation
 
-Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as it walks in, **Frost Nova** freezes it when it arrives, you step back, and **Ice Lance** hits the frozen target for four times its damage with **Shatter**'s crit chance. Frost points first (**Ice Lance** at 20, **Shatter** complete by 29, **Fingers of Frost** at 30-31, the rest of the Frost tree to 39), then the Arcane mana talents from 40 (**Arcane Concentration** by 49, **Arcane Meditation** by 57), **Incineration** last (58-60). In the open leveling search's 20-60 race of 2026-11-06 this build took about 30.5 seconds per kill, level-weighted; the page's numbers table has each level.
+Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as it walks in, **Frost Nova** freezes it when it arrives, you step back, and **Ice Lance** hits the frozen target for four times its damage with **Shatter**'s crit chance. Frost points first (**Ice Lance** at 20, **Shatter** complete by 29, **Fingers of Frost** at 30-31, the rest of the Frost tree to 39), then the Arcane mana talents from 40 (**Arcane Concentration** by 49, **Arcane Meditation** by 57), **Incineration** last (58-60). In the open leveling search's 20-60 race of 2026-11-15 this build took about 30.0 seconds per kill, level-weighted; the page's numbers table has each level.
 
 **Why it works**
 
 - **Frostbolt** from as far away as you can and whenever nothing else applies, while the mob has more than a fifth of its health: 2.5 seconds with **Improved Frostbolt** at 5 points, 290 mana at top rank less **Frost Channeling**'s 15%, and a 40% slow for 9 seconds that buys extra casts before the mob reaches you (**Permafrost** lengthens it). Every chill can freeze the mob (**Frostbite**, 15%) or light up **Fingers of Frost** (15%: your next 2 spells count as cast on a frozen target). If the mob would reach you before the cast ends and **Frost Nova** is ready, wand it until it arrives; if it is already on you with **Frost Nova** down, keep casting.
 - **Frost Nova** when it reaches you, then step back out of melee: it freezes the mob for up to 8 seconds (damage can break it), and out of reach it cannot hit you or push your casts back. **Improved Frost Nova** takes 4 seconds off its 25-second cooldown.
-- **Ice Lance** into the freeze whenever it is ready: it deals 300% more damage to a frozen target, crits 50% more often there with **Shatter**, and crits for double with **Ice Shards**. It has an 8-second cooldown, so you get one per freeze, not a stream. In the open search's talent values at level 60, the build loses about 4.6 seconds per kill without **Shatter**, 3.5 without **Ice Lance**, 2.4 without **Ice Shards** and 2.0 without **Improved Frostbolt**.
-- **Fire Blast** is the finish and nothing else: the tuned rules (2026-11-06) cast it only while the mob is between a tenth and a fifth of its health, and start no **Frostbolt** below a fifth. A long cast overkills, and an **Ice Lance** that will kill, or the wand, finishes cheaper. It is not the answer to a mob that reaches you. **Incineration** adds crit to **Fire Blast** and **Ice Lance**.
-- The Arcane points are for mana: **Arcane Concentration** gives a 10% chance after a damage spell hits that your next one is free, and **Arcane Meditation** (which needs all 5 **Arcane Concentration** points) keeps half your regeneration going while you cast (about 1.4 seconds per kill at 60 in the open search). **Wand Specialization** makes the finishing wand hits 25% stronger.
+- **Ice Lance** into the freeze whenever it is ready: it deals 300% more damage to a frozen target, crits 50% more often there with **Shatter**, and crits for double with **Ice Shards**. It has an 8-second cooldown, so you get one per freeze, not a stream. In the open search's talent values at level 60, the build loses about 4.5 seconds per kill without **Shatter**, 3.3 without **Ice Lance**, 2.4 without **Ice Shards** and 2.0 without **Improved Frostbolt**.
+- **Fire Blast** is the finish and nothing else: the tuned rules (2026-11-03) cast it only while the mob is between a tenth and a fifth of its health, and start no **Frostbolt** below a fifth. A long cast overkills, and an **Ice Lance** that will kill, or the wand, finishes cheaper. It is not the answer to a mob that reaches you. **Incineration** adds crit to **Fire Blast** and **Ice Lance**.
+- The Arcane points are for mana: **Arcane Concentration** gives a 10% chance after a damage spell hits that your next one is free, and **Arcane Meditation** (which needs all 5 **Arcane Concentration** points) keeps half your regeneration going while you cast (about 1.2 seconds per kill at 60 in the open search). **Wand Specialization** makes the finishing wand hits 25% stronger.
 - **Counterspell** (level 24) a mob that casts spells: it stops the cast and locks that school for 10 seconds.
 
 **Caveats**
@@ -92,9 +92,9 @@ One point per level from 10, in this order:
 |---|---|---|
 | 20 | 28 | 15 |
 | 30 | 34 | 20 |
-| 40 | 35 | 24 |
-| 50 | 30 | 23 |
-| 60 | 27 | 20 |
+| 40 | 35 | 23 |
+| 50 | 29 | 22 |
+| 60 | 26 | 20 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
@@ -103,8 +103,8 @@ One point per level from 10, in this order:
 ## Other builds of this spec
 
 - [Leveling — Frost](../research/leveling/builds/leveling-frost.md) (17/0/34, 32 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/mage/60/21220520010011--053530030111301251-12)
-- [Frost (optimized, AoE pulls)](../research/leveling/builds/opt-frost-aoe-leveling-aoe.md) (7/3/41, 34 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/mage/60/2120002-3-242502333121331231-12)
+- [Frost (optimized, AoE pulls)](../research/leveling/builds/opt-frost-aoe-leveling-aoe.md) (7/3/41, 36 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/mage/60/2120002-3-242502333121331231-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-13 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-15 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

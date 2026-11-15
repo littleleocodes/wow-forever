@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Smite (a Discipline/Holy hybrid) leveling build the open leveling search found on 2026-11-06: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the holy-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). +8.6% faster per kill than holy-leveling, the fastest of our leveling builds in that race.
+The Smite (a Discipline/Holy hybrid) leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the holy-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). +14.8% faster per kill than holy-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -81,10 +81,10 @@ The Smite (a Discipline/Holy hybrid) leveling build the open leveling search fou
 ## Core talents (priority order)
 
 1. **Meditation** — +1.9 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Divine Fury** — +1.8 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Divine Fury** — +1.9 s per kill at level 60 without it (removal, 3,000 fights).
 3. **Mental Agility** — +1.8 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Power in Light** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Spirit Tap** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Spirit Tap** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Power in Light** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
 6. **Searing Light** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
 7. **Holy Precision** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
 8. **Improved Shadow Word: Pain** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
@@ -95,7 +95,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 51.42; holy-leveling 55.86. The search simulated 40,040 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 51.42; holy-leveling 59.05. The search simulated 40,040 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -105,7 +105,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/priest>
-- <https://talentsforever.com/priest/60/52201003133101-3150510003201-00512-7>
+- <https://talentsforever.com/priest/60/52201003133101-3150510003201-00512-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

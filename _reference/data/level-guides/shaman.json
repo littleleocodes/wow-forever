@@ -1,6 +1,6 @@
 {
  "class": "shaman",
- "updated": "2026-11-08",
+ "updated": "2026-11-15",
  "guides": [
   {
    "spec": "Enhancement",
@@ -81,7 +81,7 @@
     {
      "from": 25,
      "title": "Stormstrike",
-     "change": "**Stormstrike** (talent): an instant weapon strike that also makes your next shocks hit 20% harder.",
+     "change": "**Stormstrike** (talent): an instant weapon strike that also makes your next **Earth Shock** or **Lightning Bolt** hit 20% harder.",
      "press": [
       "**Searing Totem** as you pull, while you have more than half your mana.",
       "**Lightning Shield** up before the pull.",
@@ -90,7 +90,7 @@
      ],
      "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
      "notes": [
-      "**Flurry** (26-29, 32) makes you swing faster after every critical hit. Nothing to press."
+      "**Tidal Focus** (26-30): 1% more chance to hit a point, and cheaper heals. Nothing to press."
      ]
     },
     {
@@ -106,13 +106,30 @@
      "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
      "notes": [
       "Put **Windfury Weapon** on your weapon the moment you train it, and keep it there to 60.",
+      "**Flurry** (31-34, 37) makes you swing faster after every critical hit. Nothing to press.",
       "**Chain Lightning** (32) and **Windfury Totem** (32) are not part of a fight against one mob."
      ]
     },
     {
      "from": 35,
+     "title": "Improved Stormstrike",
+     "change": "Nothing new to press. **Improved Stormstrike** (38-39): after a **Stormstrike**, half your mana regeneration keeps going while you cast, and a dodge or parry can reset its cooldown.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "**Lightning Shield** up before the pull.",
+      "**Stormstrike** whenever it is ready.",
+      "**Earth Shock** whenever the shock cooldown is free."
+     ],
+     "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
+     "notes": [
+      "**Mental Quickness** (35-36) turns 30% of your Intellect into spell damage; **Flurry** takes its last point at 37.",
+      "Still no **Lightning Bolt** in the fight: it waits for **Maelstrom Weapon** at 40."
+     ]
+    },
+    {
+     "from": 40,
      "title": "Maelstrom Weapon",
-     "change": "**Maelstrom Weapon** (talent): your hits build stacks, and at 5 your **Lightning Bolt** is instant.",
+     "change": "**Maelstrom Weapon** (talent): your hits build stacks, and at 5 your **Lightning Bolt** is instant and free.",
      "press": [
       "**Searing Totem** as you pull, while you have more than half your mana.",
       "**Lightning Shield** up before the pull.",
@@ -122,12 +139,12 @@
      ],
      "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
      "notes": [
-      "The stacks come faster with every point of **Maelstrom Weapon** (35-39). Never cast **Lightning Bolt** with its cast time.",
+      "Each stack takes 20% off the bolt's cast time and mana at every rank (the 2026-11-10 hotfix); every point of **Maelstrom Weapon** (40-44) brings the stacks faster. Never cast **Lightning Bolt** with its cast time.",
       "Do not spend the instant bolt on a mob it would overkill."
      ]
     },
     {
-     "from": 40,
+     "from": 45,
      "title": "Rage of the Farseer, the finished rotation",
      "change": "**Rage of the Farseer** (talent) opens a fight whenever it is ready. Nothing else new: buy every new rank.",
      "press": [
@@ -140,7 +157,7 @@
      ],
      "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
      "notes": [
-      "The remaining points go to Elemental for cheaper, harder shocks: **Convection** (52-56) and **Concussion** (47-51)."
+      "The remaining points go to Elemental for harder, cheaper shocks: **Concussion** (46-50) and **Convection** (51-55)."
      ],
      "unsimulated": [
       "Rage of the Farseer"
@@ -154,7 +171,7 @@
     "Visit the trainer every even level for new ranks of **Earth Shock** and **Lightning Shield**."
    ],
    "other": [
-    "Elemental is about 16% slower per kill in the fight lab. It plays **Lightning Bolt** from range and is on its own page in this folder.",
+    "Elemental is about 9% slower per kill in the fight lab. It plays **Lightning Bolt** from range and is on its own page in this folder.",
     "A shaman who wants to heal at 60 levels fastest as Enhancement and respecs, or levels into the Restoration build shown on its page."
    ],
    "keys": {
@@ -257,7 +274,7 @@
         "role": "The opener cooldown",
         "binds": [
          {
-          "from": 40,
+          "from": 45,
           "spell": "Rage of the Farseer"
          }
         ]

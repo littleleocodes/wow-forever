@@ -1,9 +1,9 @@
 {
  "class": "mage",
  "spec": "Fire",
- "build": "fire-leveling",
+ "build": "fire-open-leveling",
  "rotation": "fire-leveling",
- "date": "2026-11-09",
+ "date": "2026-11-15",
  "fights": 1500,
  "start_order": [
   {
@@ -43,22 +43,16 @@
    "points": 1
   },
   {
-   "levels": "26",
+   "levels": "26-27",
    "tree": "Frost",
-   "talent": "Permafrost",
-   "points": 1
+   "talent": "Improved Frost Nova",
+   "points": 2
   },
   {
-   "levels": "27-29",
+   "levels": "28-30",
    "tree": "Frost",
    "talent": "Frostbite",
    "points": 3
-  },
-  {
-   "levels": "30",
-   "tree": "Frost",
-   "talent": "Ice Shards",
-   "points": 1
   },
   {
    "levels": "31",
@@ -73,16 +67,16 @@
    "points": 4
   },
   {
-   "levels": "36",
-   "tree": "Frost",
-   "talent": "Ice Block",
-   "points": 1
-  },
-  {
-   "levels": "37-39",
+   "levels": "36-38",
    "tree": "Frost",
    "talent": "Shatter",
    "points": 3
+  },
+  {
+   "levels": "39",
+   "tree": "Arcane",
+   "talent": "Wand Specialization",
+   "points": 1
   },
   {
    "levels": "40-41",
@@ -105,38 +99,26 @@
   {
    "levels": "45",
    "tree": "Fire",
-   "talent": "Burning Soul",
-   "points": 1
-  },
-  {
-   "levels": "46",
-   "tree": "Fire",
-   "talent": "Impact",
-   "points": 1
-  },
-  {
-   "levels": "47-48",
-   "tree": "Fire",
-   "talent": "Improved Scorch",
-   "points": 2
-  },
-  {
-   "levels": "49",
-   "tree": "Fire",
-   "talent": "Blast Wave",
-   "points": 1
-  },
-  {
-   "levels": "50",
-   "tree": "Fire",
    "talent": "Improved Scorch",
    "points": 1
   },
   {
-   "levels": "51-53",
+   "levels": "46-48",
+   "tree": "Fire",
+   "talent": "Master of Elements",
+   "points": 3
+  },
+  {
+   "levels": "49-51",
    "tree": "Fire",
    "talent": "Critical Mass",
    "points": 3
+  },
+  {
+   "levels": "52-53",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 2
   },
   {
    "levels": "54-56",
@@ -147,7 +129,7 @@
   {
    "levels": "57-58",
    "tree": "Fire",
-   "talent": "Master of Elements",
+   "talent": "Incineration",
    "points": 2
   },
   {
@@ -159,111 +141,29 @@
   {
    "levels": "60",
    "tree": "Fire",
-   "talent": "Master of Elements",
+   "talent": "Incineration",
    "points": 1
   }
  ],
  "steps": [
   {
-   "weighted": 38.213,
+   "weighted": 36.733,
    "values_at_60": {
-    "Combustion": -1.339,
-    "Ice Block": 0.0,
-    "Master of Elements": -0.454,
-    "Shatter": -1.072
-   },
-   "zero": [
-    "Ice Block"
-   ]
-  },
-  {
-   "weighted": 38.09,
-   "values_at_60": {
-    "Combustion": -1.02,
-    "Ice Lance": -3.355,
-    "Ice Shards": -0.049,
-    "Improved Frost Nova": -0.12,
-    "Master of Elements": -0.373,
-    "Shatter": -0.746
-   },
-   "zero": [
-    "Ice Shards"
-   ]
-  },
-  {
-   "weighted": 37.981,
-   "values_at_60": {
-    "Combustion": -1.347,
-    "Master of Elements": -0.194,
-    "Shatter": -0.829,
-    "Wand Specialization": -0.218
+    "Combustion": -0.739,
+    "Incineration": -0.257,
+    "Shatter": -1.273,
+    "Wand Specialization": -0.124
    },
    "zero": []
   }
  ],
  "moves": [
   {
-   "from": "Ice Block",
-   "to": "Improved Frost Nova",
-   "level": 36,
-   "seed3": -0.0032,
-   "seed4": -0.0049,
-   "why": "measured"
-  },
-  {
-   "from": "Ice Shards",
-   "to": "Wand Specialization",
-   "level": 35,
-   "seed3": -0.0029,
-   "seed4": 0.0003,
-   "why": "no loss"
-  },
-  {
-   "from": "Permafrost",
-   "to": "Improved Frost Nova",
-   "level": 26,
-   "seed3": -0.0052,
-   "seed4": -0.007,
-   "why": "gate"
-  },
-  {
-   "from": "Blast Wave",
-   "to": "Incineration",
-   "level": 49,
-   "seed3": -0.0062,
-   "seed4": -0.0043,
-   "why": "gate"
-  },
-  {
-   "from": "Improved Scorch",
-   "to": "Incineration",
-   "level": 50,
-   "seed3": -0.0007,
-   "seed4": -0.0012,
-   "why": "gate"
-  },
-  {
-   "from": "Impact",
-   "to": "Incineration",
-   "level": 46,
-   "seed3": -0.0039,
-   "seed4": -0.0017,
-   "why": "gate"
-  },
-  {
-   "from": "Improved Scorch",
-   "to": "Incineration",
-   "level": 48,
-   "seed3": -0.0025,
-   "seed4": -0.0029,
-   "why": "gate"
-  },
-  {
-   "from": "Burning Soul",
-   "to": "Incineration",
-   "level": 45,
-   "seed3": -0.0006,
-   "seed4": -0.001,
+   "from": "Frostbite",
+   "to": "Ice Shards",
+   "level": 30,
+   "seed3": -0.0022,
+   "seed4": -0.0027,
    "why": "gate"
   }
  ],
@@ -305,16 +205,16 @@
    "points": 1
   },
   {
-   "levels": "26",
+   "levels": "26-27",
    "tree": "Frost",
    "talent": "Improved Frost Nova",
-   "points": 1
+   "points": 2
   },
   {
-   "levels": "27-29",
+   "levels": "28-29",
    "tree": "Frost",
    "talent": "Frostbite",
-   "points": 3
+   "points": 2
   },
   {
    "levels": "30",
@@ -329,28 +229,22 @@
    "points": 1
   },
   {
-   "levels": "32-34",
+   "levels": "32-35",
    "tree": "Frost",
    "talent": "Ice Shards",
-   "points": 3
+   "points": 4
   },
   {
-   "levels": "35",
-   "tree": "Arcane",
-   "talent": "Wand Specialization",
-   "points": 1
-  },
-  {
-   "levels": "36",
-   "tree": "Frost",
-   "talent": "Improved Frost Nova",
-   "points": 1
-  },
-  {
-   "levels": "37-39",
+   "levels": "36-38",
    "tree": "Frost",
    "talent": "Shatter",
    "points": 3
+  },
+  {
+   "levels": "39",
+   "tree": "Arcane",
+   "talent": "Wand Specialization",
+   "points": 1
   },
   {
    "levels": "40-41",
@@ -371,28 +265,28 @@
    "points": 1
   },
   {
-   "levels": "45-46",
-   "tree": "Fire",
-   "talent": "Incineration",
-   "points": 2
-  },
-  {
-   "levels": "47",
+   "levels": "45",
    "tree": "Fire",
    "talent": "Improved Scorch",
    "points": 1
   },
   {
-   "levels": "48-50",
+   "levels": "46-48",
    "tree": "Fire",
-   "talent": "Incineration",
+   "talent": "Master of Elements",
    "points": 3
   },
   {
-   "levels": "51-53",
+   "levels": "49-51",
    "tree": "Fire",
    "talent": "Critical Mass",
    "points": 3
+  },
+  {
+   "levels": "52-53",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 2
   },
   {
    "levels": "54-56",
@@ -403,7 +297,7 @@
   {
    "levels": "57-58",
    "tree": "Fire",
-   "talent": "Master of Elements",
+   "talent": "Incineration",
    "points": 2
   },
   {
@@ -415,7 +309,7 @@
   {
    "levels": "60",
    "tree": "Fire",
-   "talent": "Master of Elements",
+   "talent": "Incineration",
    "points": 1
   }
  ],
@@ -488,11 +382,11 @@
     ],
     [
      "Ice Shards",
-     4
+     5
     ],
     [
      "Frostbite",
-     3
+     2
     ],
     [
      "Improved Frost Nova",
@@ -546,16 +440,16 @@
     "points": 1
    },
    {
-    "levels": "26",
+    "levels": "26-27",
     "tree": "Frost",
     "talent": "Improved Frost Nova",
-    "points": 1
+    "points": 2
    },
    {
-    "levels": "27-29",
+    "levels": "28-29",
     "tree": "Frost",
     "talent": "Frostbite",
-    "points": 3
+    "points": 2
    },
    {
     "levels": "30",
@@ -570,28 +464,22 @@
     "points": 1
    },
    {
-    "levels": "32-34",
+    "levels": "32-35",
     "tree": "Frost",
     "talent": "Ice Shards",
-    "points": 3
+    "points": 4
    },
    {
-    "levels": "35",
-    "tree": "Arcane",
-    "talent": "Wand Specialization",
-    "points": 1
-   },
-   {
-    "levels": "36",
-    "tree": "Frost",
-    "talent": "Improved Frost Nova",
-    "points": 1
-   },
-   {
-    "levels": "37-39",
+    "levels": "36-38",
     "tree": "Frost",
     "talent": "Shatter",
     "points": 3
+   },
+   {
+    "levels": "39",
+    "tree": "Arcane",
+    "talent": "Wand Specialization",
+    "points": 1
    },
    {
     "levels": "40-41",
@@ -612,28 +500,28 @@
     "points": 1
    },
    {
-    "levels": "45-46",
-    "tree": "Fire",
-    "talent": "Incineration",
-    "points": 2
-   },
-   {
-    "levels": "47",
+    "levels": "45",
     "tree": "Fire",
     "talent": "Improved Scorch",
     "points": 1
    },
    {
-    "levels": "48-50",
+    "levels": "46-48",
     "tree": "Fire",
-    "talent": "Incineration",
+    "talent": "Master of Elements",
     "points": 3
    },
    {
-    "levels": "51-53",
+    "levels": "49-51",
     "tree": "Fire",
     "talent": "Critical Mass",
     "points": 3
+   },
+   {
+    "levels": "52-53",
+    "tree": "Fire",
+    "talent": "Incineration",
+    "points": 2
    },
    {
     "levels": "54-56",
@@ -644,7 +532,7 @@
    {
     "levels": "57-58",
     "tree": "Fire",
-    "talent": "Master of Elements",
+    "talent": "Incineration",
     "points": 2
    },
    {
@@ -656,10 +544,10 @@
    {
     "levels": "60",
     "tree": "Fire",
-    "talent": "Master of Elements",
+    "talent": "Incineration",
     "points": 1
    }
   ],
-  "note": "2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Ice Block to Improved Frost Nova at 36 (measured: -0.3% seed 3, -0.5% seed 4, level-weighted time per kill); Ice Shards to Wand Specialization at 35 (no loss: -0.3% seed 3, +0.0% seed 4, level-weighted time per kill); Permafrost to Improved Frost Nova at 26 (gate: -0.5% seed 3, -0.7% seed 4, level-weighted time per kill); Blast Wave to Incineration at 49 (gate: -0.6% seed 3, -0.4% seed 4, level-weighted time per kill); Improved Scorch to Incineration at 50 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Impact to Incineration at 46 (gate: -0.4% seed 3, -0.2% seed 4, level-weighted time per kill); Improved Scorch to Incineration at 48 (gate: -0.2% seed 3, -0.3% seed 4, level-weighted time per kill); Burning Soul to Incineration at 45 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill)."
+  "note": "2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Frostbite to Ice Shards at 30 (gate: -0.2% seed 3, -0.3% seed 4, level-weighted time per kill)."
  }
 }

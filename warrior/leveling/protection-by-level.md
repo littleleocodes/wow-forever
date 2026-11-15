@@ -119,7 +119,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Thunder Clap** (6) is for two or more mobs. **Hamstring** (8) stops a mob that runs away, in **Battle Stance** only.
 
-*Fight lab, seconds per kill: 16 at level 4, 22 at level 9. Presses per kill at level 4: Melee 3.3, Rend 1.0, Charge 0.8, Heroic Strike 0.6, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 16 at level 4, 22 at level 9. Presses per kill at level 4: Melee 3.3, Rend 1.1, Charge 0.8, Heroic Strike 0.6, Battle Shout 0.1.*
 
 ## Levels 10-11: Defensive Stance: charge, then swap
 
@@ -144,7 +144,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Press **Bloodrage** after the swap to **Battle Stance**, not before: a stance change keeps none of your rage until 14, and 10 of it after. Its second 10 rage comes over 10 seconds, in **Defensive Stance** too.
 - **Shield Specialization** (10-14): more blocks, and rage from each block. Nothing new to press. **Taunt** and **Sunder Armor** (10) are for groups.
 
-*Fight lab, seconds per kill: 23 at level 10. Presses per kill at level 10: Melee 5.6, Rend 1.1, Battle Stance 1.0, Charge 1.0, Defensive Stance 1.0, Heroic Strike 1.0, Bloodrage 0.3, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 23 at level 10. Presses per kill at level 10: Melee 5.5, Rend 1.2, Heroic Strike 1.0, Battle Stance 1.0, Charge 1.0, Defensive Stance 1.0, Bloodrage 0.3, Battle Shout 0.1.*
 
 ## Levels 12-13: Shield Bash
 
@@ -169,7 +169,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - Nothing new from the talents: **Shield Specialization** fills its five points by 14.
 
-*Fight lab, seconds per kill: 25 at level 12. Presses per kill at level 12: Melee 6.3, Rend 1.2, Heroic Strike 1.1, Battle Stance 1.0, Charge 1.0, Defensive Stance 1.0, Bloodrage 0.3, Shield Bash 0.1, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 25 at level 12. Presses per kill at level 12: Melee 6.3, Rend 1.2, Heroic Strike 1.2, Battle Stance 1.0, Charge 1.0, Defensive Stance 1.0, Bloodrage 0.3, Shield Bash 0.1, Battle Shout 0.1.*
 
 ## Levels 14-15: Revenge and Tactical Mastery
 
@@ -194,7 +194,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Revenge** works in **Defensive Stance** only. **Demoralizing Shout** (14) is for two or more mobs.
 - **Anticipation** (15-19) raises your Defense: more dodges, parries and blocks, so more **Revenge**.
 
-*Fight lab, seconds per kill: 25 at level 14. Presses per kill at level 14: Melee 6.4, Revenge 1.5, Rend 1.2, Heroic Strike 1.1, Battle Stance 1.0, Charge 1.0, Defensive Stance 1.0, Bloodrage 0.3, Shield Bash 0.2, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 25 at level 14. Presses per kill at level 14: Melee 6.3, Revenge 1.6, Rend 1.3, Heroic Strike 1.1, Battle Stance 1.0, Charge 1.0, Defensive Stance 1.0, Bloodrage 0.3, Shield Bash 0.2, Battle Shout 0.1.*
 
 ## Levels 16-32: Shield Block
 
@@ -223,7 +223,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Victory Rush** (20, key 1) lights up after a kill: open the next fight with it when you are below 90% of your health. The fight lab rarely needs it before 33 (with the shield you seldom end a fight below 90%), so the list leaves it out until then.
 - **Retaliation** (20) needs **Battle Stance**. Skip it. For a pull that goes wrong: **Intimidating Shout** (22, F) and **Shield Wall** (28, key 4: 60% less damage for 12 seconds, a 15-minute cooldown).
 
-*Fight lab, seconds per kill: 25 at level 16, 24 at level 20, 29 at level 30, 30 at level 32. Presses per kill at level 16: Melee 6.6, Shield Block 2.9, Revenge 2.8, Rend 1.1, Battle Stance 1.0, Charge 1.0, Defensive Stance 1.0, Heroic Strike 0.7, Bloodrage 0.3, Shield Bash 0.2, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 24 at level 16, 24 at level 20, 28 at level 30, 29 at level 32. Presses per kill at level 16: Melee 6.2, Revenge 3.0, Shield Block 2.9, Rend 1.2, Battle Stance 1.0, Charge 1.0, Defensive Stance 1.0, Heroic Strike 0.8, Bloodrage 0.3, Shield Bash 0.2, Battle Shout 0.1.*
 
 ## Levels 33-39: Concussion Blow
 
@@ -253,7 +253,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Bastion** (35-39): 10% more damage of every kind while you hold a shield. Nothing new to press.
 
-*Fight lab, seconds per kill: 30 at level 33, 35 at level 39. Presses per kill at level 33: Melee 8.0, Revenge 4.0, Shield Block 3.9, Heroic Strike 1.3, Rend 1.2, Battle Stance 1.0, Charge 1.0, Defensive Stance 1.0, Bloodrage 0.4, Shield Bash 0.3, Victory Rush 0.2, Battle Shout 0.2.*
+*Fight lab, seconds per kill: 30 at level 33, 34 at level 39. Presses per kill at level 33: Melee 7.8, Revenge 4.2, Shield Block 4.1, Heroic Strike 1.3, Rend 1.2, Battle Stance 1.0, Charge 1.0, Defensive Stance 1.0, Bloodrage 0.4, Shield Bash 0.3, Battle Shout 0.2, Victory Rush 0.1.*
 
 ## Levels 40-60: Shield Slam, the finished rotation
 
@@ -284,7 +284,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - From 41 the points go to the raid build's Arms and Fury talents: **Improved Rend** (41-43), **Deflection** (44-45, 47-49), **Improved Overpower** (46), **Improved Heroic Strike** (50, 55-56), **Deep Wounds** (51-53), **Cruelty** (54, 59-60) and **Impale** (57-58). **Cruelty**, **Improved Rend**, **Impale** and **Deep Wounds** speed you up a little; **Improved Overpower** does nothing here, since this rotation never casts **Overpower**.
 - Two or more mobs: **Thunder Clap**, **Demoralizing Shout** and **Cleave**.
 
-*Fight lab, seconds per kill: 25 at level 40, 28 at level 50, 30 at level 60. Presses per kill at level 40: Melee 7.0, Shield Slam 2.7, Revenge 2.6, Shield Block 2.4, Rend 1.2, Battle Stance 1.0, Charge 1.0, Defensive Stance 1.0, Bloodrage 0.3, Shield Bash 0.2, Heroic Strike 0.2, Victory Rush 0.2, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 25 at level 40, 28 at level 50, 30 at level 60. Presses per kill at level 40: Melee 7.0, Revenge 2.8, Shield Slam 2.8, Shield Block 2.6, Rend 1.1, Battle Stance 1.0, Charge 1.0, Defensive Stance 1.0, Bloodrage 0.3, Shield Bash 0.2, Heroic Strike 0.2, Battle Shout 0.1, Victory Rush 0.1.*
 
 ## Between fights
 
@@ -298,4 +298,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Two or three mobs: open with **Demoralizing Shout** and **Thunder Clap**, and use **Cleave** for spare rage. On pulls of 3 the fight lab measured fewer deaths with **Demoralizing Shout**.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-13: the stages are hand-kept in `_reference/data/level-guides/warrior.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-15: the stages are hand-kept in `_reference/data/level-guides/warrior.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

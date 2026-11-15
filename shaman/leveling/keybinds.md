@@ -36,10 +36,10 @@ This file is hand-written: the regeneration that rewrites the rest of this folde
 | F | Stoneclaw Totem (8) | Under 30% of your health: the mob turns on the totem while you heal |
 | Mouse 5 (front side button) | Healing Wave (1), Lesser Healing Wave from 20 | Under 40% of your health |
 | Mouse 4 (back side button) | Grounding Totem (30) | A caster mob is on you: the totem eats its next spell |
-| 1 | Lightning Bolt (1) | Instant at 5 stacks of Maelstrom Weapon (35), once the mob is under 35% health; at 1-3 an opener if you like |
+| 1 | Lightning Bolt (1) | Instant at 5 stacks of Maelstrom Weapon (40), once the mob is under 35% health; at 1-3 an opener if you like |
 | 2 | Searing Totem (10) | As you pull, while you have more than half your mana |
 | 3 | Free | |
-| 4 | Rage of the Farseer (40, talent) | At the start of a fight whenever it is ready |
+| 4 | Rage of the Farseer (45, talent) | At the start of a fight whenever it is ready |
 | C | Healing Wave (20) | The big heal, in a stun or behind the totem; between fights, back to 80% |
 | Middle mouse | Free | |
 

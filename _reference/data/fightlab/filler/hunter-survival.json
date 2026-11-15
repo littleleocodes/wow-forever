@@ -3,7 +3,7 @@
  "spec": "Survival",
  "build": "survival-open-leveling",
  "rotation": "melee-dps",
- "date": "2026-11-09",
+ "date": "2026-11-15",
  "fights": 1500,
  "start_order": [
   {
@@ -57,7 +57,7 @@
   {
    "levels": "31",
    "tree": "Survival",
-   "talent": "Expose Prey",
+   "talent": "Survival Tactics",
    "points": 1
   },
   {
@@ -74,27 +74,45 @@
   },
   {
    "levels": "35-39",
-   "tree": "Survival",
-   "talent": "Lightning Reflexes",
-   "points": 5
-  },
-  {
-   "levels": "40-44",
    "tree": "Marksmanship",
    "talent": "Lethal Attacks",
    "points": 5
   },
   {
-   "levels": "45-49",
+   "levels": "40-42",
    "tree": "Marksmanship",
    "talent": "Careful Aim",
+   "points": 3
+  },
+  {
+   "levels": "43-47",
+   "tree": "Survival",
+   "talent": "Lightning Reflexes",
    "points": 5
   },
   {
-   "levels": "50-54",
+   "levels": "48-49",
+   "tree": "Marksmanship",
+   "talent": "Improved Stings",
+   "points": 2
+  },
+  {
+   "levels": "50-52",
    "tree": "Beast Mastery",
    "talent": "Deadly Aspects",
-   "points": 5
+   "points": 3
+  },
+  {
+   "levels": "53",
+   "tree": "Survival",
+   "talent": "Survival Tactics",
+   "points": 1
+  },
+  {
+   "levels": "54",
+   "tree": "Survival",
+   "talent": "Strider Kick",
+   "points": 1
   },
   {
    "levels": "55-57",
@@ -103,172 +121,144 @@
    "points": 3
   },
   {
-   "levels": "58-59",
+   "levels": "58",
    "tree": "Marksmanship",
    "talent": "Rapid Killing",
-   "points": 2
+   "points": 1
+  },
+  {
+   "levels": "59",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 1
   },
   {
    "levels": "60",
    "tree": "Marksmanship",
-   "talent": "Mortal Shots",
+   "talent": "Improved Stings",
    "points": 1
   }
  ],
  "steps": [
   {
-   "weighted": 21.579,
+   "weighted": 21.133,
    "values_at_60": {
-    "Deadly Aspects": -0.059,
-    "Lightning Reflexes": -22.308,
-    "Mortal Shots": 0.01
+    "Careful Aim": -0.094,
+    "Deadly Aspects": -0.141,
+    "Efficiency": -0.118,
+    "Improved Stings": -0.14,
+    "Lightning Reflexes": -0.095,
+    "Rapid Killing": -0.11,
+    "Strider Kick": -0.184,
+    "Survival Tactics": 0.0
    },
    "zero": [
+    "Survival Tactics"
+   ]
+  },
+  {
+   "weighted": 21.098,
+   "values_at_60": {
+    "Careful Aim": -0.173,
+    "Deadly Aspects": -0.122,
+    "Efficiency": -0.103,
+    "Improved Stings": -0.081,
+    "Lightning Reflexes": -0.102,
+    "Rapid Killing": -0.067,
+    "Strider Kick": -0.292
+   },
+   "zero": [
+    "Rapid Killing"
+   ]
+  },
+  {
+   "weighted": 21.107,
+   "values_at_60": {
+    "Careful Aim": -0.013,
+    "Deadly Aspects": 0.034,
+    "Efficiency": -0.102,
+    "Improved Stings": -0.061,
+    "Lightning Reflexes": 0.006,
+    "Strider Kick": -0.12
+   },
+   "zero": [
+    "Careful Aim",
     "Deadly Aspects",
-    "Mortal Shots"
+    "Improved Stings",
+    "Lightning Reflexes"
    ]
   },
   {
-   "weighted": 21.506,
-   "values_at_60": {
-    "Deadly Aspects": -0.124,
-    "Lightning Reflexes": -0.098,
-    "Mortal Shots": -0.025,
-    "Strider Kick": -0.244
-   },
-   "zero": [
-    "Mortal Shots"
-   ]
-  },
-  {
-   "weighted": 21.483,
-   "values_at_60": {
-    "Careful Aim": -0.067,
-    "Deadly Aspects": -0.081,
-    "Efficiency": -0.214,
-    "Improved Stings": -0.158,
-    "Lightning Reflexes": -0.159,
-    "Rapid Killing": -0.082,
-    "Strider Kick": -0.34
-   },
-   "zero": [
-    "Careful Aim"
-   ]
-  },
-  {
-   "weighted": 21.481,
+   "weighted": 21.099,
    "values_at_60": {
     "Careful Aim": -0.038,
-    "Deadly Aspects": -0.048,
-    "Efficiency": -0.145,
-    "Improved Stings": -0.046,
-    "Lightning Reflexes": 0.024,
-    "Rapid Killing": -0.021,
-    "Strider Kick": -0.225
+    "Deadly Aspects": -0.054,
+    "Efficiency": -0.056,
+    "Improved Stings": -0.088,
+    "Lightning Reflexes": -0.015,
+    "Strider Kick": -0.09,
+    "Trueshot Aura": -0.112
    },
    "zero": [
     "Careful Aim",
     "Deadly Aspects",
-    "Improved Stings",
-    "Lightning Reflexes",
-    "Rapid Killing"
+    "Efficiency",
+    "Lightning Reflexes"
    ]
   },
   {
-   "weighted": 21.453,
+   "weighted": 21.11,
    "values_at_60": {
-    "Careful Aim": -0.062,
-    "Deadly Aspects": -0.04,
-    "Efficiency": -0.112,
-    "Improved Stings": -0.044,
-    "Lightning Reflexes": -0.064,
-    "Rapid Killing": -0.007,
-    "Strider Kick": -0.197,
-    "Survival Tactics": -0.141
+    "Careful Aim": 0.065,
+    "Deadly Aspects": 0.015,
+    "Efficiency": -0.133,
+    "Endurance Training": 0.0,
+    "Improved Stings": -0.061,
+    "Lightning Reflexes": -0.077,
+    "Strider Kick": -0.126,
+    "Trueshot Aura": -0.047
    },
    "zero": [
     "Careful Aim",
     "Deadly Aspects",
+    "Endurance Training",
     "Improved Stings",
-    "Lightning Reflexes",
-    "Rapid Killing"
-   ]
-  },
-  {
-   "weighted": 21.437,
-   "values_at_60": {
-    "Careful Aim": 0.021,
-    "Deadly Aspects": -0.022,
-    "Efficiency": -0.098,
-    "Improved Stings": -0.089,
-    "Lightning Reflexes": -0.098,
-    "Rapid Killing": 0.04,
-    "Strider Kick": -0.236,
-    "Survival Tactics": -0.149
-   },
-   "zero": [
-    "Careful Aim",
-    "Deadly Aspects",
-    "Rapid Killing"
+    "Trueshot Aura"
    ]
   }
  ],
  "moves": [
   {
-   "from": "Deadly Aspects",
-   "to": "Strider Kick",
-   "level": 54,
-   "seed3": -0.0034,
-   "seed4": -0.0027,
-   "why": "tie-break"
-  },
-  {
-   "from": "Mortal Shots",
-   "to": "Improved Stings",
-   "level": 60,
-   "seed3": -0.001,
-   "seed4": -0.0013,
-   "why": "tie-break"
-  },
-  {
-   "from": "Careful Aim",
-   "to": "Improved Stings",
-   "level": 49,
-   "seed3": -0.0001,
-   "seed4": -0.0011,
-   "why": "tie-break"
-  },
-  {
-   "from": "Deadly Aspects",
-   "to": "Survival Tactics",
+   "from": "Survival Tactics",
+   "to": "Efficiency",
    "level": 53,
-   "seed3": -0.0013,
+   "seed3": -0.0016,
    "seed4": -0.0015,
    "why": "tie-break"
   },
   {
    "from": "Rapid Killing",
-   "to": "Efficiency",
-   "level": 59,
-   "seed3": -0.0007,
-   "seed4": -0.0001,
+   "to": "Careful Aim",
+   "level": 58,
+   "seed3": 0.0004,
+   "seed4": -0.0003,
    "why": "no loss"
   },
   {
-   "from": "Careful Aim",
-   "to": "Improved Stings",
-   "level": 48,
-   "seed3": -0.0015,
-   "seed4": -0.0028,
-   "why": "tie-break"
+   "from": "Improved Stings",
+   "to": "Trueshot Aura",
+   "level": 60,
+   "seed3": -0.0004,
+   "seed4": -0.0003,
+   "why": "no loss"
   },
   {
-   "from": "Expose Prey",
-   "to": "Survival Tactics",
-   "level": 31,
-   "seed3": -0.0019,
-   "seed4": -0.0022,
-   "why": "gate"
+   "from": "Deadly Aspects",
+   "to": "Endurance Training",
+   "level": 52,
+   "seed3": 0.0005,
+   "seed4": -0.0002,
+   "why": "no loss"
   }
  ],
  "final_order": [
@@ -340,21 +330,21 @@
   },
   {
    "levels": "35-39",
-   "tree": "Survival",
-   "talent": "Lightning Reflexes",
-   "points": 5
-  },
-  {
-   "levels": "40-44",
    "tree": "Marksmanship",
    "talent": "Lethal Attacks",
    "points": 5
   },
   {
-   "levels": "45-47",
+   "levels": "40-42",
    "tree": "Marksmanship",
    "talent": "Careful Aim",
    "points": 3
+  },
+  {
+   "levels": "43-47",
+   "tree": "Survival",
+   "talent": "Lightning Reflexes",
+   "points": 5
   },
   {
    "levels": "48-49",
@@ -363,15 +353,21 @@
    "points": 2
   },
   {
-   "levels": "50-52",
+   "levels": "50-51",
    "tree": "Beast Mastery",
    "talent": "Deadly Aspects",
-   "points": 3
+   "points": 2
+  },
+  {
+   "levels": "52",
+   "tree": "Beast Mastery",
+   "talent": "Endurance Training",
+   "points": 1
   },
   {
    "levels": "53",
-   "tree": "Survival",
-   "talent": "Survival Tactics",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
    "points": 1
   },
   {
@@ -389,7 +385,7 @@
   {
    "levels": "58",
    "tree": "Marksmanship",
-   "talent": "Rapid Killing",
+   "talent": "Careful Aim",
    "points": 1
   },
   {
@@ -401,7 +397,7 @@
   {
    "levels": "60",
    "tree": "Marksmanship",
-   "talent": "Improved Stings",
+   "talent": "Trueshot Aura",
    "points": 1
   }
  ],
@@ -410,7 +406,11 @@
    "Beast Mastery": [
     [
      "Deadly Aspects",
-     3
+     2
+    ],
+    [
+     "Endurance Training",
+     1
     ]
    ],
    "Marksmanship": [
@@ -420,18 +420,18 @@
     ],
     [
      "Improved Stings",
-     3
+     2
     ],
     [
      "Efficiency",
-     4
+     5
     ],
     [
      "Careful Aim",
-     3
+     4
     ],
     [
-     "Rapid Killing",
+     "Trueshot Aura",
      1
     ]
    ],
@@ -462,7 +462,7 @@
     ],
     [
      "Survival Tactics",
-     2
+     1
     ],
     [
      "Predator's Edge",
@@ -555,21 +555,21 @@
    },
    {
     "levels": "35-39",
-    "tree": "Survival",
-    "talent": "Lightning Reflexes",
-    "points": 5
-   },
-   {
-    "levels": "40-44",
     "tree": "Marksmanship",
     "talent": "Lethal Attacks",
     "points": 5
    },
    {
-    "levels": "45-47",
+    "levels": "40-42",
     "tree": "Marksmanship",
     "talent": "Careful Aim",
     "points": 3
+   },
+   {
+    "levels": "43-47",
+    "tree": "Survival",
+    "talent": "Lightning Reflexes",
+    "points": 5
    },
    {
     "levels": "48-49",
@@ -578,15 +578,21 @@
     "points": 2
    },
    {
-    "levels": "50-52",
+    "levels": "50-51",
     "tree": "Beast Mastery",
     "talent": "Deadly Aspects",
-    "points": 3
+    "points": 2
+   },
+   {
+    "levels": "52",
+    "tree": "Beast Mastery",
+    "talent": "Endurance Training",
+    "points": 1
    },
    {
     "levels": "53",
-    "tree": "Survival",
-    "talent": "Survival Tactics",
+    "tree": "Marksmanship",
+    "talent": "Efficiency",
     "points": 1
    },
    {
@@ -604,7 +610,7 @@
    {
     "levels": "58",
     "tree": "Marksmanship",
-    "talent": "Rapid Killing",
+    "talent": "Careful Aim",
     "points": 1
    },
    {
@@ -616,10 +622,10 @@
    {
     "levels": "60",
     "tree": "Marksmanship",
-    "talent": "Improved Stings",
+    "talent": "Trueshot Aura",
     "points": 1
    }
   ],
-  "note": "2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Deadly Aspects to Strider Kick at 54 (tie-break: -0.3% seed 3, -0.3% seed 4, level-weighted time per kill); Mortal Shots to Improved Stings at 60 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Careful Aim to Improved Stings at 49 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Deadly Aspects to Survival Tactics at 53 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Rapid Killing to Efficiency at 59 (no loss: -0.1% seed 3, -0.0% seed 4, level-weighted time per kill); Careful Aim to Improved Stings at 48 (tie-break: -0.1% seed 3, -0.3% seed 4, level-weighted time per kill); Expose Prey to Survival Tactics at 31 (gate: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill)."
+  "note": "2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Survival Tactics to Efficiency at 53 (tie-break: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Rapid Killing to Careful Aim at 58 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Stings to Trueshot Aura at 60 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Deadly Aspects to Endurance Training at 52 (no loss: +0.1% seed 3, -0.0% seed 4, level-weighted time per kill)."
  }
 }

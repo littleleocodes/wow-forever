@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Discipline leveling build the open leveling search found on 2026-11-06: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the discipline-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). -4.7% faster per kill than discipline-open-leveling, the fastest of our leveling builds in that race.
+The Discipline leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the discipline-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). 
 
 ## Point allocation
 
@@ -67,9 +67,9 @@ The Discipline leveling build the open leveling search found on 2026-11-06: ever
 | 30 | Discipline | Penance | 1 | 21/0/0 |
 | 31-35 | Shadow | Spirit Tap | 5 | 21/0/5 |
 | 36-39 | Shadow | Shadow Focus | 4 | 21/0/9 |
-| 40-41 | Shadow | Blackout | 2 | 21/0/11 |
-| 42-43 | Shadow | Improved Mind Blast | 2 | 21/0/13 |
-| 44-45 | Shadow | Improved Shadow Word: Pain | 2 | 21/0/15 |
+| 40-41 | Shadow | Improved Shadow Word: Pain | 2 | 21/0/11 |
+| 42-43 | Shadow | Blackout | 2 | 21/0/13 |
+| 44-45 | Shadow | Improved Mind Blast | 2 | 21/0/15 |
 | 46-48 | Shadow | Shadow Weaving | 3 | 21/0/18 |
 | 49-50 | Shadow | Dark Inspiration | 2 | 21/0/20 |
 | 51 | Discipline | Improved Inner Fire | 1 | 22/0/20 |
@@ -84,10 +84,10 @@ The Discipline leveling build the open leveling search found on 2026-11-06: ever
 1. **Spirit Tap** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
 2. **Meditation** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
 3. **Devouring Contagion** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Shadow Focus** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Shadow Focus** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
 5. **Mental Agility** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Twin Disciplines** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Wand Specialization** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Wand Specialization** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Twin Disciplines** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
 8. **Improved Shadow Word: Pain** — +0.4 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
@@ -96,7 +96,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 41.45; discipline-open-leveling 39.52, discipline-leveling 45.95. The search simulated 23,417 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 41.55; discipline-leveling 46.17. The search simulated 23,417 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
@@ -107,7 +107,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/priest>
-- <https://talentsforever.com/priest/60/525020231133201--42522000020301-7>
+- <https://talentsforever.com/priest/60/525020231133201--42522000020301-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

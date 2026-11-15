@@ -8,7 +8,7 @@
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Beast Mastery), which stays below as the alternative. A model of the beta, to check at launch.
 
-**Signature spells:** 34% of the damage at level 60 in the fight lab comes from the spec's core spells (your pet) (the spec's rule: at least 30%; **Bestial Wrath** cast at level 60).
+**Signature spells:** 35% of the damage at level 60 in the fight lab comes from the spec's core spells (your pet) (the spec's rule: at least 30%; **Bestial Wrath** cast at level 60).
 
 ## How to play
 
@@ -18,12 +18,12 @@
 
 1. **Hunter's Mark** while the mob has more than 30% of its health, **Serpent Sting** while it has more than 40%.
 2. **Bestial Wrath**, **Intimidation** and **Rapid Fire** at the start when they are ready.
-3. **Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.
+3. **Aimed Shot** whenever it is ready while the mob has more than 35% of its health.
 4. No other shots on a single mob: the fight lab levels faster skipping **Arcane Shot** and **Multi-Shot** and keeping the mana.
 5. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards. **Mend Pet** when the pet drops below a third of its health.
 6. If a mob reaches you: **Feign Death** to send it back to the pet; when that is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.
 
-**Between fights:** Mend the pet below half its health, drink below 35% of your mana, eat below 65% of your health.
+**Between fights:** Mend the pet below half its health, drink below 15% of your mana, eat below 65% of your health.
 
 ## Why this rotation
 
@@ -32,11 +32,11 @@ Beast Mastery levels with the cat as the tank: it holds the mob while **Auto Sho
 **Why it works**
 
 - Send the pet first, then **Hunter's Mark** and **Serpent Sting**. In the fight lab the cat Growls every 5 seconds and keeps the mob until your threat passes 130% of its own, so two cheap openers give it a head start; the lab casts the mark only while the mob has more than 30% of its health and the sting while it has more than 40%.
-- **Aimed Shot** (from level 20) is your only cooldown shot on a single mob, cast while the mob has more than a quarter of its health. The fight lab's tuned rules (2026-11-03) never cast **Multi-Shot** (it shares the cooldown) or **Arcane Shot**: their mana is worth more as fewer drinks between pulls. This build has no **Summon Hawk** point (the rules switch the hawk off as well).
-- The pet talents come first: **Deadly Aspects** (levels 10-14), **Unleashed Fury** (20-24), **Ferocity** (25-29) and **Bestial Discipline** (30-31, half your mana regeneration keeps running while you cast). In the fight lab's removal runs at 60 (seconds a kill costs without the talent) **Unleashed Fury** is worth about 1.0 second, **Bestial Discipline** about 0.9, **Efficiency** (46-50) about 0.85 and **Ferocity** about 0.7: the build's four most valuable talents. **Trueshot Aura** (56) is a buff you cast in Forever: keep it on.
+- **Aimed Shot** (from level 20) is your only cooldown shot on a single mob, cast while the mob has more than 35% of its health: below that, **Auto Shot** and the pet finish the mob, which the fight lab's tuned rules (2026-11-15) measured slightly faster. The rules never cast **Multi-Shot** (it shares the cooldown) or **Arcane Shot**: their mana is worth more as fewer drinks between pulls. This build has no **Summon Hawk** point (the rules switch the hawk off as well).
+- The pet talents come first: **Deadly Aspects** (levels 10-14), **Unleashed Fury** (20-24), **Ferocity** (25-29) and **Bestial Discipline** (30-31, half your mana regeneration keeps running while you cast). In the fight lab's removal runs at 60 (seconds a kill costs without the talent) **Unleashed Fury** is worth about 1.0 second, **Bestial Discipline** about 0.9, **Efficiency** (46-50) about 0.8 and **Ferocity** about 0.7: the build's four most valuable talents. **Trueshot Aura** (56) is a buff you cast in Forever: keep it on.
 - **Rapid Fire** (26) at the start of a fight whenever it is ready (a 5-minute cooldown here: no **Rapid Killing**); **Intimidation** (34) and **Bestial Wrath** (40) likewise, the pet's stun and rage at the pull. **Bestial Wrath** has a 2-minute cooldown, so it goes on the first pull and then again every few pulls.
-- At 60 the pet is about a third of your damage (34% in the fight lab) and your shots most of the rest. The bow cannot fire within 8 yards: if the mob ends up next to you while the pet holds it, step back rather than melee.
-- **Mend Pet** when the pet drops below about a third while it holds the mob, and between fights below half. A dead pet costs a **Revive Pet** before the next pull and your **Focused Fire** bonus until then. Between fights the lab drinks below 35% of your mana and eats below 65% of your health: the tuned rules change neither.
+- At 60 the pet is about a third of your damage (35% in the fight lab) and your shots most of the rest. The bow cannot fire within 8 yards: if the mob ends up next to you while the pet holds it, step back rather than melee.
+- **Mend Pet** when the pet drops below about a third while it holds the mob, and between fights below half. A dead pet costs a **Revive Pet** before the next pull and your **Focused Fire** bonus until then. Between fights the lab drinks below 15% of your mana and eats below 65% of your health: the tuned rules of 2026-11-15 drink this late, since fewer stops measured slightly faster.
 
 **Caveats**
 
@@ -82,9 +82,9 @@ One point per level from 10, in this order:
 |---|---|---|
 | 20 | 16 | 13 |
 | 30 | 19 | 16 |
-| 40 | 24 | 20 |
-| 50 | 25 | 22 |
-| 60 | 26 | 22 |
+| 40 | 23 | 20 |
+| 50 | 24 | 21 |
+| 60 | 25 | 22 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
@@ -94,5 +94,5 @@ One point per level from 10, in this order:
 - [Beast Mastery — Leveling](../research/leveling/builds/beast-mastery-leveling.md) (30/21/0, 23 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/hunter/60/532002050510025-005355200001--12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-13 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-15 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

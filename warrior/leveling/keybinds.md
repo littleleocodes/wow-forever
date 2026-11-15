@@ -35,7 +35,7 @@ This file is hand-written: the regeneration that rewrites the rest of this folde
 | 2 | Execute (24) | First, once the mob is below 20% of its health |
 | 3 | Hamstring (8) | A mob runs away |
 | 4 | Retaliation (20) | A pull goes wrong and the mobs are on you: everything that hits you in melee takes a counterattack for 15 seconds, once per 15 minutes, in Battle Stance only |
-| C | Heroic Strike (40) | Spare rage after Slam, once Mortal Strike has taken Q |
+| C | Spearing Strike (25), Heroic Strike from 40 | Spare rage: Spearing Strike before Heroic Strike at 25-34 and after Slam at 35-39; from 40 Heroic Strike, for rage Slam and Mortal Strike leave over |
 | Middle mouse | Free | |
 
 ## Bar 2: the same keys with Shift

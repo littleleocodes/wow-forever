@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Shadow leveling build the open leveling search found on 2026-11-06: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the shadow-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). 
+The Shadow leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the shadow-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). 
 
 ## Point allocation
 
@@ -75,14 +75,14 @@ The Shadow leveling build the open leveling search found on 2026-11-06: every le
 
 ## Core talents (priority order)
 
-1. **Shadowform** — +11.6 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Shadowform** — +12.8 s per kill at level 60 without it (removal, 3,000 fights).
 2. **Mind Flay** — +6.7 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Spirit Tap** — +3.3 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Darkness** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Vampiric Embrace** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Improved Mind Flay** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Meditation** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Improved Mind Blast** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Spirit Tap** — +4.5 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Vampiric Embrace** — +3.0 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Darkness** — +2.8 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Dark Inspiration** — +2.7 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Improved Mind Flay** — +2.2 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Meditation** — +2.0 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -90,8 +90,9 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- +4.4% faster than the hand draft leveling-shadow, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 24.41; opt-shadow-dps-solo-60 24.99, leveling-shadow 25.48, opt-shadow-dps-leveling-aoe 28.67, opt-shadow-dps-leveling-st 30.60. The search simulated 45,475 builds.
+- +7.2% faster than the hand draft leveling-shadow, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 24.25; opt-shadow-dps-solo-60 24.96, leveling-shadow 26.00, opt-shadow-dps-leveling-aoe 29.58, opt-shadow-dps-leveling-st 32.11. The search simulated 45,475 builds.
+- The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -101,7 +102,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/priest>
-- <https://talentsforever.com/priest/60/20500300003-3-40550201251300151-7>
+- <https://talentsforever.com/priest/60/20500300003-3-40550201251300151-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

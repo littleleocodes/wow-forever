@@ -3,7 +3,7 @@
  "spec": "Marksmanship",
  "build": "marksmanship-open-leveling",
  "rotation": "mm-raid",
- "date": "2026-11-09",
+ "date": "2026-11-15",
  "fights": 1500,
  "start_order": [
   {
@@ -79,16 +79,16 @@
    "points": 2
   },
   {
-   "levels": "47-48",
+   "levels": "47",
    "tree": "Beast Mastery",
    "talent": "Endurance Training",
-   "points": 2
+   "points": 1
   },
   {
-   "levels": "49",
+   "levels": "48-49",
    "tree": "Beast Mastery",
    "talent": "Improved Aspect of the Monkey",
-   "points": 1
+   "points": 2
   },
   {
    "levels": "50-54",
@@ -111,14 +111,12 @@
  ],
  "steps": [
   {
-   "weighted": 22.552,
+   "weighted": 22.554,
    "values_at_60": {
-    "Bestial Discipline": -0.057,
-    "Ranged Weapon Specialization": -0.099
+    "Bestial Discipline": -0.086,
+    "Ranged Weapon Specialization": -0.112
    },
-   "zero": [
-    "Bestial Discipline"
-   ]
+   "zero": []
   }
  ],
  "moves": [],
@@ -196,16 +194,16 @@
    "points": 2
   },
   {
-   "levels": "47-48",
+   "levels": "47",
    "tree": "Beast Mastery",
    "talent": "Endurance Training",
-   "points": 2
+   "points": 1
   },
   {
-   "levels": "49",
+   "levels": "48-49",
    "tree": "Beast Mastery",
    "talent": "Improved Aspect of the Monkey",
-   "points": 1
+   "points": 2
   },
   {
    "levels": "50-54",

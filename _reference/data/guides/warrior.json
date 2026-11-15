@@ -32,19 +32,19 @@
     "written": "2026-11-09"
    },
    "leveling": {
-    "plan": "Arms levels with a two-hander in **Battle Stance**. Open with **Bloodrage** and **Charge**, keep **Rend** on the mob so **Bloodthrill** lights up **Overpower**, hit **Mortal Strike** on cooldown, spend spare rage on **Slam** (from 35) and **Heroic Strike**, and finish with **Execute**; bandage below 60% health and eat only below 40%.",
+    "plan": "Arms levels with a two-hander in **Battle Stance**. Open with **Bloodrage** and **Charge**, keep **Rend** on the mob so **Bloodthrill** lights up **Overpower**, hit **Mortal Strike** on cooldown, spend spare rage on **Slam** (from 35), **Spearing Strike** (from 25) and **Heroic Strike**, and finish with **Execute**; bandage below 60% health and eat only below 40%.",
     "why": [
      "**Bloodrage** then **Charge** puts rage in your bar before the first swing: **Bloodrage** gives 10 at once and 10 more over 10 seconds, **Charge** 9 to 15 by rank plus 6 with **Improved Charge**, and the mob is stunned for a second. The fight lab uses **Bloodrage** only above 45% health, on about every third pull (1-minute cooldown).",
      "Once the mob is below 20%, **Execute** goes before everything else in the fight lab: it spends all your rage (600 damage plus 15 per extra point at rank 5) and usually ends the fight. It is about an eighth of your damage at 40-60.",
-     "**Overpower** comes next whenever it lights up: 5 rage, 50% more crit chance with both ranks of **Improved Overpower** (taken at 15-16), and a window of only 5 seconds. With **Bloodthrill** (2 ranks, taken at 30-31; 10% then 20% per main-hand hit), main-hand hits on a mob with your **Rend** light it up too, so you press it more than once a kill; it is the build's most valuable talent at 60 in the fight lab (1.5 seconds per kill).",
+     "**Overpower** comes next whenever it lights up: 5 rage, 50% more crit chance with both ranks of **Improved Overpower** (taken at 15-16), and a window of only 5 seconds. With **Bloodthrill** (2 ranks, taken at 30-31; 10% then 20% per main-hand hit), main-hand hits on a mob with your **Rend** light it up too, so you press it more than once a kill; it is the build's most valuable talent at 60 in the fight lab (1.3 seconds per kill).",
      "**Mortal Strike** (from 40) on cooldown is your biggest attack, about a fifth of your damage at 40-60. **Rend** goes on once per mob, early: the fight lab casts it only while the mob has more than a third of its health and you have 40 rage or **Mortal Strike** is cooling down, so it never delays **Mortal Strike**.",
-     "Rage left over goes to **Slam** first, but only with **Improved Slam** (2 ranks, taken at 35-36): at full rank it cuts the cast and the global cooldown by 0.5 seconds, takes 5 seconds off the 15-second cooldown and lets your swing keep running. Without the talent **Slam** stops and restarts your swing, which cost 3-6% per kill in the fight lab, so you leave it off your bar before 35. **Heroic Strike** takes the rest.",
-     "**Heroic Strike** only takes rage you will not need: the fight lab keeps 15 for an **Overpower** and, when **Mortal Strike** is 3 seconds or less from ready, 30 more for it. Before 40 it is your main rage dump (about two fifths of your damage at 20, a fifth at 30); after **Mortal Strike** it almost disappears.",
+     "Rage left over goes to **Slam** first, but only with **Improved Slam** (one rank, taken at 35): it cuts the cast and the global cooldown by 0.25 seconds, takes 2.5 seconds off the 15-second cooldown and lets your swing keep running. Without the talent **Slam** stops and restarts your swing, which cost 3-6% per kill in the fight lab, so you leave it off your bar before 35. Then **Spearing Strike** (talent, 25: 40% weapon damage for 15 rage, 20-second cooldown), and **Heroic Strike** takes the rest.",
+     "**Heroic Strike** only takes rage you will not need: the fight lab keeps 15 for an **Overpower** and, when **Mortal Strike** is 3 seconds or less from ready, 30 more for it. Before 40 it is your main rage dump (about two fifths of your damage at 20; from 25 **Spearing Strike** takes part of the rage); after **Mortal Strike** the fight lab, in green gear, never casts it, and **Spearing Strike** under once in five kills.",
      "**Battle Shout** lasts 3 minutes in Forever, so one shout covers several pulls. **Victory Rush** is free for 20 seconds after a kill and heals 10% of your health: it opens your next fight whenever you are below 90%."
     ],
     "caveats": [
      "The fight lab's numbers are for one same-level mob at a time in quest greens, with an axe or polearm for **Weaponmaster** (+5% crit); it does not model runners, adds or stance swaps.",
-     "**Sweeping Strikes** is in the build only because **Mortal Strike** requires it: on a single mob it does nothing. **Improved Tactical Mastery** and **Anger Management** fill the Arms tiers; this list never changes stance.",
+     "**Sweeping Strikes** is in the build only because **Mortal Strike** requires it: on a single mob it does nothing. **Improved Tactical Mastery** and **Anger Management** fill the Arms tiers; this list never changes stance. **Spearing Strike** (25) is pressed about once a kill until 40; at 60 the fight lab measures it at nothing.",
      "Between fights the fight lab bandages below 60% health and eats below 40% (the rule tuned on 2026-11-03: about 2% faster per kill than the default 65%). With **Victory Rush** and the bandage it almost never needs food.",
      "Casters stand back and cast at you. **Charge** reaches them at the pull; in **Battle Stance** you have no interrupt (**Pummel** needs **Berserker Stance**), so just close in and hit."
     ],
@@ -54,10 +54,10 @@
     ],
     "rotations": {
      "leveling:arms-2h-raid": "37b95d3dbf23",
-     "leveling:fury-dw-raid": "6e607e4802e9",
+     "leveling:fury-dw-raid": "650a88ea30a6",
      "leveling:prot-leveling": "8ab176ee6a9c"
     },
-    "written": "2026-10-22"
+    "written": "2026-11-15"
    }
   },
   "Fury": {
@@ -90,19 +90,20 @@
     "written": "2026-11-09"
    },
    "leveling": {
-    "plan": "Fury levels with a weapon in each hand in **Battle Stance**. Open with **Bloodrage** and **Charge** (and **Death Wish** when it is ready), hit **Bloodthirst** on cooldown, **Overpower** after a dodge and **Execute** below 20%, and spend the rest on **Heroic Strike**; bandage below 60% health and eat below two thirds.",
+    "plan": "Fury levels with a weapon in each hand in **Battle Stance**. Open with **Bloodrage** and **Charge** (and **Death Wish** when it is ready), hit **Bloodthirst** on cooldown, **Overpower** after a dodge and **Execute** below 20%, and spend the rest on **Heroic Strike**, with **Reckless Swings** (43) for more rage; bandage below 60% health and eat only below 40%.",
     "why": [
      "The opening matches Arms: **Bloodrage** (above 45% health) and **Charge** fill your rage before the first swing. The fight lab also presses **Death Wish** (level 30) on the pull whenever it is ready (3-minute cooldown): 20% more physical damage for 30 seconds covers a whole fight.",
-     "Below 20%, **Execute** comes first: it spends all your rage, and **Improved Execute** (one rank, level 25) cuts its cost by 3; it is about a sixth of your damage at 40-60. **Overpower** comes next when the mob dodges (this build has no **Bloodthrill**): 5 rage, with 25% more crit chance from **Improved Overpower** at 57 and 50% at 60.",
+     "Below 20%, **Execute** comes first: it spends all your rage, and it is about an eighth of your damage at 60. **Overpower** comes next when the mob dodges (this build has no **Bloodthrill**): 5 rage, with 25% more crit chance from **Improved Overpower** at 58 and 50% at 60.",
      "**Bloodthirst** (from 40: 30 rage, 6-second cooldown, 45% of your attack power) is your main attack, about a fifth of your damage. Before 40, **Heroic Strike** is where your rage goes (about a third of your damage at 20, a quarter at 30).",
-     "**Rend** goes on once per mob while it has more than a third of its health: the fight lab casts it about once a kill, and the build takes **Improved Rend** at 43-45.",
-     "**Heroic Strike** takes the spare rage once 15 are kept for an **Overpower**. Your rage comes from landed white swings of both hands and doubles on a crit, which is why the build opens with **Cruelty** (10-14), **Unbridled Wrath** (15-19) and **Enrage** (20-24) and takes **Flurry** (30% faster swings for 3 swings after a crit, at 35-37); in the fight lab **Cruelty**, **Dual Wield Specialization**, **Flurry**, **Gore Drinker** and **Enrage** are its most valuable talents at 60.",
+     "**Rend** goes on once per mob while it has more than a third of its health: the fight lab casts it about once a kill, and the build takes **Improved Rend** at 44-46.",
+     "**Heroic Strike** takes the spare rage once 15 are kept for an **Overpower**. Your rage comes from landed white swings of both hands and doubles on a crit, which is why the build opens with **Cruelty** (10-14), **Unbridled Wrath** (15-19) and **Enrage** (20-24) and takes **Flurry** (30% faster swings for 3 swings after a crit, at 35-37); in the fight lab **Cruelty**, **Gore Drinker**, **Dual Wield Specialization**, **Flurry** and **Enrage** are its most valuable talents at 60.",
+     "**Reckless Swings** (43; 15-second cooldown) costs a quarter of your base health and gives 5 more rage on each of your next 4 swings within 8 seconds. The fight lab casts it in melee while you are above 80% of your health and the mob above 30% of its own, off the global cooldown (an assumption: the tooltip names none): about 0.7 times a kill at 50-60, worth about 1 second per kill at 60.",
      "**Battle Shout** lasts 3 minutes in Forever, so one shout covers several pulls, and **Victory Rush** (free, heals 10%) opens the next fight whenever you are below 90% health."
     ],
     "caveats": [
-     "**Furious Precision** (levels 27 and 33-34: 10% more off-hand hit) and **Dual Wield Specialization** (26, 28-29 and 31-32: 25% more off-hand damage and 50% more off-hand rage) are why this build wants a weapon in each hand; **Gore Drinker** (42, one rank) makes your next 3 hits after **Bloodrage**, **Death Wish** or **Bloodthirst** heal 0.5% of your health each.",
-     "From 43 the points go to Arms (**Improved Rend**, **Improved Heroic Strike**, **Improved Charge**, **Improved Tactical Mastery**, **Anger Management**, **Deep Wounds**, **Improved Overpower**, **Impale**): small gains each, none of them changes the list.",
-     "Between fights the fight lab bandages below 60% health and eats below 65%, its default (the 2026-11-03 tuning of this rotation changed no rule); with **Victory Rush** and the bandage it almost never needs food.",
+     "**Furious Precision** (levels 25 and 32-33: 10% more off-hand hit) and **Dual Wield Specialization** (26-29 and 31: 25% more off-hand damage and 50% more off-hand rage) are why this build wants a weapon in each hand; **Gore Drinker** (41-42, both ranks) makes your next 3 hits after **Bloodrage**, **Death Wish**, **Bloodthirst** or an **Enrage** heal 1% of your health each.",
+     "From 44 the points go to Arms (**Improved Rend**, **Improved Heroic Strike**, **Improved Charge**, **Improved Tactical Mastery**, **Anger Management**, **Deep Wounds**, **Improved Overpower**, **Impale**): small gains each, none of them changes the list.",
+     "Between fights the fight lab bandages below 60% health and eats below 40% (the rule tuned on 2026-11-15, under 1% faster per kill than the default 65%); with **Victory Rush** and the bandage it almost never needs food.",
      "Several mobs: **Whirlwind** needs **Berserker Stance**. In **Battle Stance**, use **Cleave** instead of **Heroic Strike** and **Thunder Clap** to slow them (20% slower attacks)."
     ],
     "diverge": [
@@ -111,10 +112,10 @@
     ],
     "rotations": {
      "leveling:arms-2h-raid": "37b95d3dbf23",
-     "leveling:fury-dw-raid": "6e607e4802e9",
+     "leveling:fury-dw-raid": "650a88ea30a6",
      "leveling:prot-leveling": "8ab176ee6a9c"
     },
-    "written": "2026-10-22"
+    "written": "2026-11-15"
    }
   },
   "Protection": {
@@ -166,7 +167,7 @@
     ],
     "rotations": {
      "leveling:arms-2h-raid": "37b95d3dbf23",
-     "leveling:fury-dw-raid": "6e607e4802e9",
+     "leveling:fury-dw-raid": "650a88ea30a6",
      "leveling:prot-leveling": "8ab176ee6a9c"
     },
     "written": "2026-11-09"

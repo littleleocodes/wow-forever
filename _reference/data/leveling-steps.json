@@ -45,13 +45,13 @@
    "steps": [
     "**Hunter's Mark** while the mob has more than 30% of its health, **Serpent Sting** while it has more than 40%.",
     "**Bestial Wrath**, **Intimidation** and **Rapid Fire** at the start when they are ready.",
-    "**Aimed Shot** whenever it is ready while the mob has more than a quarter of its health.",
+    "**Aimed Shot** whenever it is ready while the mob has more than 35% of its health.",
     "No other shots on a single mob: the fight lab levels faster skipping **Arcane Shot** and **Multi-Shot** and keeping the mana.",
     "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards. **Mend Pet** when the pet drops below a third of its health.",
     "If a mob reaches you: **Feign Death** to send it back to the pet; when that is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back."
    ],
    "between": [
-    "Mend the pet below half its health, drink below 35% of your mana, eat below 65% of your health."
+    "Mend the pet below half its health, drink below 15% of your mana, eat below 65% of your health."
    ]
   },
   "mm-raid": {
@@ -113,11 +113,11 @@
     "Pull from as far away as you can."
    ],
    "steps": [
-    "From level 20 (the **Pyroblast** talent), open every pull with a hard-cast **Pyroblast**; before that, and after it, **Fireball** while the mob walks in and whenever nothing below applies, while the mob has more than about a third (35%) of its health.",
+    "From level 20 (the **Pyroblast** talent), open every pull with a hard-cast **Pyroblast**; before that, and after it, **Fireball** while the mob walks in and whenever nothing below applies, while the mob has more than about a third (35%) of its health and you have more than 15% of your mana.",
     "**Fire Blast** when the mob would reach you before a **Fireball** lands, once it is on you, or when it will kill. No Scorch: the tuned rules never cast it.",
-    "**Frost Nova** when it reaches you, while you have 30% of your mana or more, then step back; **Blast Wave** if **Frost Nova** is on cooldown and the mob has more than about a third of its health.",
+    "**Frost Nova** when it reaches you, then step back; **Blast Wave** if **Frost Nova** is on cooldown and the mob has more than about a third of its health.",
     "**Ice Lance** while the mob is frozen; **Pyroblast** again only at 3 stacks of **Heating Up** (from level 44).",
-    "Below about a third of the mob's health, no **Fireball**: finish with **Fire Blast**, an **Ice Lance** or your wand.",
+    "Below about a third of the mob's health, or under 15% of your mana, no **Fireball**: finish with **Fire Blast**, an **Ice Lance** or your wand.",
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
@@ -130,10 +130,10 @@
     "Pull from as far away as you can."
    ],
    "steps": [
-    "Your bolt: **Frostbolt** until level 40, to the end of the fight; **Frostfire Bolt** from 40, while the mob has more than about a third (35%) of its health. Cast it while the mob walks in and whenever nothing below applies; if the mob would reach you before the cast ends and **Frost Nova** is ready, wand it until it arrives.",
-    "**Frost Nova** when it reaches you, then step back.",
+    "Your bolt: **Frostbolt** until level 40, **Frostfire Bolt** from 40, each only while the mob has more than about a third (35%) of its health. Cast it while the mob walks in and whenever nothing below applies; if the mob would reach you before the cast ends, **Fire Blast** (with it on cooldown and **Frost Nova** ready, wand the mob until it arrives).",
+    "**Frost Nova** when it reaches you, then step back; with **Frost Nova** on cooldown, **Fire Blast**, then keep casting the bolt.",
     "**Ice Lance** into the freeze whenever it is ready (an 8-second cooldown).",
-    "From 40, below about a third of the mob's health: no bolt; no Fire Blast and no Cone of Cold at any level (the tuned rules switch both off); an **Ice Lance** that will kill, or your wand, finishes it.",
+    "Below about a third of the mob's health: no bolt; **Fire Blast** whenever it is ready, an **Ice Lance** into a freeze or one that will kill, else your wand. No Cone of Cold (the tuned rules switch it off).",
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
@@ -159,7 +159,7 @@
   "arcane-leveling": {
    "before": [
     "**Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up.",
-    "Pull from as far away as you can; **Presence of Mind** at the pull (your first cast goes out instantly)."
+    "Pull from as far away as you can; **Presence of Mind** at the pull (your first cast goes out instantly); **Arcane Power** at the pull when it is ready and you have more than half your mana (once you have the talent, at 42)."
    ],
    "steps": [
     "With **Arcane Wrath**: cast it first on the pull if it will land before the mob reaches you, and again whenever it is ready and there is time.",
@@ -216,15 +216,16 @@
    ],
    "steps": [
     "**Hammer of Justice** a mob that casts spells.",
-    "Once you have **Holy Shock**: cast it at the mob as it walks in while your mana is above 70% and the mob has more than 10% of its health left, after **Divine Favor** for a sure critical hit while you are healthy.",
+    "Once you have **Holy Shock**: cast it at the mob whenever it is ready while the mob has more than 10% of its health left, from range as it walks in and then in melee, after **Divine Favor** for a sure critical hit while you are healthy.",
     "Keep your seal up.",
     "**Hammer of Wrath** when the mob is below 20% health.",
     "With **Seal of Command**: **Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% health left (the judgement hits a stunned mob twice as hard).",
+    "With **Swift Judgement**: whenever it is ready, with your seal up and the mob above a quarter of its health (free and off the global cooldown).",
     "**Judgement** and **Holy Strike** whenever ready. Against a single mob, no Consecration: the Holy list never casts it.",
-    "Low on health (below 40%, with the mob above a fifth): **Holy Shock** on yourself (after **Divine Favor** if it is ready), **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter; **Lay on Hands** below 15%."
+    "Low on health (below 40%, with the mob above a fifth): **Templar's Bulwark** first if your build has it and Forbearance is not on you, then **Holy Shock** on yourself (after **Divine Favor** if it is ready), **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter; **Lay on Hands** below 15%."
    ],
    "between": [
-    "Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink only below 15% of your mana, and eat only if you are still below 40% of your health."
+    "Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink only below 15% of your mana, and eat if you are still below 80% of your health."
    ]
   },
   "prot-leveling": {
@@ -251,7 +252,7 @@
    ],
    "steps": [
     "Pull with the instants: **Vampiric Embrace** when it is ready, then **Shadow Word: Pain**.",
-    "**Mind Blast** whenever it is ready, **Mind Flay** in between (it slows the mob while you channel).",
+    "**Mind Blast** whenever it is ready, **Mind Flay** in between while you have more than 30% of your mana (it slows the mob while you channel); below that, your wand.",
     "**Shadow Word: Death** when one cast will kill the mob, and on a mob at or below 20% health once you have **Early Demise** (it adds crit there; you take 30% of your maximum health if the mob survives).",
     "Finish a mob with a hit or two left with your wand; **Psychic Scream** if a mob is on you and you are below 40% health.",
     "Skip Devouring Plague and Smite: the tuned rules never cast them (the plague costs too much mana for what it does before the mob dies).",
@@ -269,9 +270,9 @@
    "steps": [
     "Open with **Holy Fire** from range, and cast it again once its burn has ended while the mob has more than 40% of its health (in melee only while your shield holds).",
     "**Shadow Word: Pain** next, and again when it runs out while the mob has more than 30% of its health.",
-    "**Penance** whenever it is ready; **Mind Blast** whenever it is ready while you have more than 30% mana (also to finish a mob one cast will kill).",
+    "**Mind Blast** whenever it is ready while you have more than 30% mana and the mob more than 10% of its health (also to finish a mob one cast will kill).",
     "**Smite** in every gap, at any mana, until the mob has less health left than about half a **Smite** hit; then your wand.",
-    "Skip Devouring Plague: the tuned rules never cast it.",
+    "Skip Devouring Plague and **Penance**: the tuned rules never cast them (without **Penance**, **Smite** and **Holy Fire** stay at least half your damage).",
     "Hurt: **Power Word: Shield** again in melee below 80% health once Weakened Soul is gone (below half at any time), **Flash Heal** below a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%."
    ],
    "between": [
@@ -343,14 +344,14 @@
     "**Premeditation** for two free combo points."
    ],
    "steps": [
-    "Open with **Ambush** in short fights; **Garrote** once its bleed outlasts the fight (the fight lab picks **Garrote** from about level 22 with the Subtlety build; the Combat-Subtlety build opens with **Ambush** on every pull from level 18).",
+    "Open with **Ambush** in short fights; **Garrote** once its bleed outlasts the fight (with the Subtlety build the fight lab opens with **Ambush** on most pulls up to level 25 and at 35, with **Garrote** at 30 and on every pull from 40; the Combat-Subtlety build opens with **Ambush** on every pull from level 18).",
     "**Ghostly Strike** whenever it is ready (it also makes you dodge more). With **Dirty Deeds**, follow it with a **Garrote** when none is bleeding and the mob has more than half its health.",
     "**Shank** whenever it is ready (level 24), unless the energy it gives would go over your maximum; with **Boot Knife** also to build combo points.",
     "**Sinister Strike** to build combo points; once you have **Hemorrhage**, it replaces **Sinister Strike**.",
-    "Once you have **Death Mark** (level 40): press it whenever it is ready, from one combo point on (the tuned rule), while the mob has more than 40% of its health; it hits back with part of your damage 6 seconds later.",
+    "Once you have **Death Mark** (level 40): at 5 combo points, while the mob has more than 40% of its health and no mark is on it, press it instead of **Eviscerate**; it deals part of your damage again 6 seconds later.",
     "At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder; earlier when it would kill the mob.",
     "**Riposte** after you parry.",
-    "**Kick** a caster mob's spell.",
+    "Do not interrupt a caster mob: let it cast and walk in.",
     "**Evasion** below half health while the mob still has more than 30% of its health; if it is on cooldown, **Preparation** resets it."
    ],
    "between": [
@@ -490,7 +491,7 @@
     "Two or more mobs: **Thunder Clap** and **Cleave** (**Whirlwind** needs **Berserker Stance**)."
    ],
    "between": [
-    "Bandage below 60% health, eat below two thirds of your health."
+    "Bandage below 60% health, eat below 40% (the tuned rule)."
    ]
   },
   "prot-leveling": {

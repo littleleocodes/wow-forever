@@ -4,7 +4,7 @@
 
 What a Survival hunter presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. This is a melee hunter: two one-handed weapons, a pet that holds the mob and does a part of the damage, **Serpent Sting** at the pull, **Immolation Trap** under your feet and **Raptor Strike** to finish. It plays the same rotation as the Beast-Survival build, with Survival's crit, hit and Agility talents in place of most of the pet talents. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 3/16/32 ([open the talent tree](https://talentsforever.com/hunter/60/3-0053431-51022023025020215-12)), the one on the [Survival leveling page](survival.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 3/17/31 ([open the talent tree](https://talentsforever.com/hunter/60/21-0052540001-51022023015020215-12)), the one on the [Survival leveling page](survival.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -17,7 +17,7 @@ What a Survival hunter presses from level 1 to 60, stage by stage, as the traine
 | 20-25 | **Freezing Trap** holds a second mob. Nothing new in a one-mob fight. |
 | 26-29 | **Rapid Fire** at the pull: your swings are 40% faster for 15 seconds. |
 | 30-39 | **Lacerate** is a bleed for when your mana is full. **Feign Death** is the exit. **Aspect of the Beast** replaces the Monkey. |
-| 40-53 | The points go to Marksmanship and the aspect until **Strider Kick** at 54. Buy every new rank. |
+| 40-53 | The points go to Marksmanship, **Lightning Reflexes** and the aspect until **Strider Kick** at 54. Buy every new rank. |
 | 54-60 | **Strider Kick**: a weapon hit on an 8-second cooldown. Like **Raptor Strike**, it waits for the finish. |
 
 ## Keybinds by level
@@ -209,7 +209,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Rapid Fire** speeds your melee swings as well as your shots. The fight lab casts it at the start of every fight it is ready for, on a 5-minute cooldown.
 - **Frost Trap** (28) is a slow field for packs and escapes.
 
-*Fight lab, seconds per kill: 18 at level 26. Presses per kill at level 26: Claw 4.9, Melee (off-hand) 3.4, Melee 2.6, Growl 2.0, Auto Shot 1.2, Bite 1.1, Serpent Sting 1.0, Raptor Strike 0.8, Immolation Trap 0.5.*
+*Fight lab, seconds per kill: 18 at level 26. Presses per kill at level 26: Claw 4.9, Melee (off-hand) 3.3, Melee 2.6, Growl 2.0, Auto Shot 1.2, Bite 1.1, Serpent Sting 1.0, Raptor Strike 0.8, Immolation Trap 0.5.*
 
 ## Levels 30-39: Lacerate, Feign Death, Aspect of the Beast
 
@@ -217,7 +217,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Arcane Shot at 36; Immolation Trap at 36; Mend Pet at 36; Mongoose Bite at 30; Raptor Strike at 32; Scare Beast at 30; Serpent Sting at 34; Wing Clip at 38.
 
-**Talents:** 30 Resourcefulness, 31 Survival Tactics, 32 Resourcefulness, 33-34 Survivalist's Discipline, 35-39 Lightning Reflexes.
+**Talents:** 30 Resourcefulness, 31 Survival Tactics, 32 Resourcefulness, 33-34 Survivalist's Discipline, 35-39 Lethal Attacks.
 
 **Keys to set:** F = Feign Death; 1 = Lacerate; Shift+R = Explosive Trap (at 34).
 
@@ -236,11 +236,11 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** **Mend Pet** when the pet drops below a third of its health. A pull gone wrong: **Feign Death**, and the mobs go for the pet or home.
 
 - **Aspect of the Beast** (30) replaces **Aspect of the Monkey**: attack power instead of dodge. Click it.
-- **Resourcefulness** (30, 32): your trap and strikes cost 60% less mana. **Survival Tactics** (31): 5% more chance to hit with your traps and **Feign Death**; the second point comes at 53.
-- **Survivalist's Discipline** (33-34) cuts the trap's cooldown by 40%. **Lightning Reflexes** (35-39): 15% more Agility.
+- **Resourcefulness** (30, 32): your trap and strikes cost 60% less mana. **Survival Tactics** (31): 5% more chance to hit with your traps and **Feign Death**.
+- **Survivalist's Discipline** (33-34) cuts the trap's cooldown by 40%. **Lethal Attacks** (35-39): 5% more crit.
 - **Counterattack** and **Deterrence** belong to other builds. This one does not take them. **Strider Kick** comes at 54.
 
-*Fight lab, seconds per kill: 18 at level 30, 21 at level 39. Presses per kill at level 30: Claw 5.3, Melee (off-hand) 3.9, Melee 3.1, Growl 2.2, Bite 1.2, Auto Shot 1.2, Serpent Sting 1.0, Raptor Strike 0.8, Lacerate 0.6, Immolation Trap 0.5.*
+*Fight lab, seconds per kill: 18 at level 30, 21 at level 39. Presses per kill at level 30: Claw 5.2, Melee (off-hand) 3.8, Melee 3.1, Growl 2.2, Auto Shot 1.2, Bite 1.1, Serpent Sting 1.0, Raptor Strike 0.7, Lacerate 0.5, Immolation Trap 0.5.*
 
 ## Levels 40-53: Nothing new to press
 
@@ -248,7 +248,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Arcane Shot at 44, 52; Explosive Trap at 44; Freezing Trap at 40; Immolation Trap at 46; Lacerate at 40, 50; Mend Pet at 44, 52; Mongoose Bite at 44; Raptor Strike at 40, 48; Scare Beast at 46; Serpent Sting at 42, 50.
 
-**Talents:** 40-44 Lethal Attacks, 45-47 Careful Aim, 48-49 Improved Stings, 50-52 Deadly Aspects, 53 Survival Tactics.
+**Talents:** 40-42 Careful Aim, 43-47 Lightning Reflexes, 48-49 Improved Stings, 50-51 Deadly Aspects, 52 Endurance Training, 53 Efficiency.
 
 **Your keys in this stage:** Q Raptor Strike, R Immolation Trap, F Feign Death, Mouse 5 Mongoose Bite, Mouse 4 Serpent Sting, 1 Lacerate, 3 Mend Pet, C Rapid Fire.
 
@@ -264,11 +264,11 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** **Mend Pet** when the pet drops below a third of its health. A pull gone wrong: **Feign Death**.
 
-- **Lethal Attacks** (40-44): 5% more crit. **Careful Aim** (45-47): attack power from 60% of your Intellect. **Improved Stings** (48-49): **Serpent Sting** does 13% more damage. **Deadly Aspects** (50-52): with **Aspect of the Beast** on, your swings sometimes speed up by 30% for 12 seconds.
-- **Survival Tactics** (53): the second point, 10% more chance to hit with your traps and **Feign Death**.
+- **Careful Aim** (40-42): attack power from 60% of your Intellect. **Lightning Reflexes** (43-47): 15% more Agility. **Improved Stings** (48-49): **Serpent Sting** does 13% more damage. **Deadly Aspects** (50-51): with **Aspect of the Beast** on, your swings sometimes speed up by 30% for 12 seconds.
+- **Endurance Training** (52): the pet's health and armor 3% higher. **Efficiency** (53): your strikes and stings 3% cheaper.
 - **Explosive Trap** (34) replaces **Immolation Trap** when two or more mobs stand at your feet: they share the cooldown.
 
-*Fight lab, seconds per kill: 21 at level 40, 22 at level 50, 23 at level 53. Presses per kill at level 40: Claw 5.8, Melee (off-hand) 4.8, Melee 4.0, Growl 2.7, Bite 1.6, Auto Shot 1.2, Serpent Sting 1.0, Immolation Trap 1.0, Raptor Strike 0.8, Lacerate 0.1.*
+*Fight lab, seconds per kill: 21 at level 40, 22 at level 50, 23 at level 53. Presses per kill at level 40: Claw 5.8, Melee (off-hand) 4.6, Melee 3.8, Growl 2.6, Bite 1.5, Auto Shot 1.2, Serpent Sting 1.0, Immolation Trap 1.0, Raptor Strike 0.8, Lacerate 0.2.*
 
 ## Levels 54-60: Strider Kick
 
@@ -276,7 +276,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Arcane Shot at 60; Explosive Trap at 54; Freezing Trap at 60; Immolation Trap at 56; Lacerate at 60; Mend Pet at 60; Mongoose Bite at 58; Raptor Strike at 56; Serpent Sting at 58, 60; Wing Clip at 60.
 
-**Talents:** 54 Strider Kick, 55-57 Efficiency, 58 Rapid Killing, 59 Efficiency, 60 Improved Stings.
+**Talents:** 54 Strider Kick, 55-57 Efficiency, 58 Careful Aim, 59 Efficiency, 60 Trueshot Aura.
 
 **Keys to set:** Middle mouse = Strider Kick.
 
@@ -296,10 +296,10 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** **Mend Pet** when the pet drops below a third of its health. A pull gone wrong: **Feign Death**.
 
 - **Strider Kick** (54) deals your weapon's damage and gives you 30% movement speed for 3 seconds. The tuned rules cast it only below 20% of the mob's health: cast whenever it was ready, it measured slower in the fight lab.
-- **Efficiency** (55-57, 59) makes your strikes and stings cheaper. **Rapid Killing** (58): one point, a minute off **Rapid Fire**'s cooldown; its shot bonus is for ranged hunters. **Improved Stings** (60): the third point, **Serpent Sting** 20% stronger.
+- **Efficiency** (55-57 and 59) makes your strikes and stings cheaper, 15% at five points. **Careful Aim** (58): its fourth point, attack power from 80% of your Intellect. **Trueshot Aura** (60): 20 ranged attack power for you and your party.
 - **Explosive Trap** (34) replaces **Immolation Trap** when two or more mobs stand at your feet: they share the cooldown.
 
-*Fight lab, seconds per kill: 24 at level 54, 24 at level 60. Presses per kill at level 54: Claw 6.1, Melee (off-hand) 5.5, Melee 4.7, Growl 3.0, Bite 1.7, Auto Shot 1.2, Serpent Sting 1.0, Immolation Trap 1.0, Strider Kick 1.0, Raptor Strike 0.8, Lacerate 0.2, Mongoose Bite 0.1.*
+*Fight lab, seconds per kill: 23 at level 54, 24 at level 60. Presses per kill at level 54: Claw 6.0, Melee (off-hand) 5.2, Melee 4.5, Growl 2.9, Bite 1.6, Auto Shot 1.2, Serpent Sting 1.0, Immolation Trap 1.0, Strider Kick 1.0, Raptor Strike 0.7, Lacerate 0.2, Mongoose Bite 0.1.*
 
 ## Between fights
 
@@ -313,4 +313,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Marksmanship, Beast Mastery and Beast-Marks are the ranged hunters: [Marksmanship](marksmanship-by-level.md), [Beast Mastery](beast-mastery-by-level.md), [Beast-Marks](beast-marks-by-level.md).
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-13: the stages are hand-kept in `_reference/data/level-guides/hunter.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-15: the stages are hand-kept in `_reference/data/level-guides/hunter.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Beast Mastery leveling build the open leveling search found on 2026-11-06: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the bm-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (bm-leveling). -0.7% faster per kill than beast-mastery-leveling, the fastest of our leveling builds in that race.
+The Beast Mastery leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the bm-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (bm-leveling). -0.8% faster per kill than beast-mastery-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -86,8 +86,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- +5.1% faster than the hand draft bm-solo-farm, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 23.12; beast-mastery-leveling 22.95, beast-mastery-open-leveling 23.06, bm-solo-farm 24.30. The search simulated 22,683 builds.
+- +4.8% faster than the hand draft bm-solo-farm, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 22.88; beast-mastery-leveling 22.69, bm-solo-farm 23.97. The search simulated 22,683 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
@@ -98,7 +98,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/hunter>
-- <https://talentsforever.com/hunter/60/5320001505011251-0053520001-4-7>
+- <https://talentsforever.com/hunter/60/5320001505011251-0053520001-4-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

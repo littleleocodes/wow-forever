@@ -11,7 +11,7 @@
 
 ## Summary
 
-Level with the talents of the Holy raid build (holy-ml-heal) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (stats model's order: 39 s per kill over levels 20-60, the holy-leveling rotation).
+Level with the talents of the Holy raid build (holy-ml-heal) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (stats model's order: 37 s per kill over levels 20-60, the holy-leveling rotation).
 
 ## Point allocation
 
@@ -82,7 +82,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-11-09 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 39 s; own tree first 40 s; own tree last 39 s. First Holy point at level 10.
+- 2026-11-15 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 37 s; own tree first 38 s; own tree last 37 s. First Holy point at level 10.
 - Fight-lab numbers are a model of the beta, not in-game measurements.
 
 ## Open questions (verify in the live game)

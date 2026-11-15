@@ -4,7 +4,7 @@
 
 What an Arcane-Frost mage presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. It levels as a Frost mage first: slow the mob, freeze it at your feet, step back and hit it while it cannot reach you. From level 37 its Arcane points add **Missile Barrage**: a **Frostbolt** can light up a free, fast **Arcane Missiles**. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 23/0/28 ([open the talent tree](https://talentsforever.com/mage/60/2512052000003012--03253223011030021-12)), the one on the [Arcane-Frost leveling page](arcane-frost.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 28/0/23 ([open the talent tree](https://talentsforever.com/mage/60/25120520000030143--0325300301103002-12)), the one on the [Arcane-Frost leveling page](arcane-frost.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -204,7 +204,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Shatter** (25, 28-29) and **Ice Shards** (24, 26-27) are why the **Ice Lance** into a freeze is your biggest hit from here on.
 - **Cone of Cold** (26) goes on C for packs. The tuned rules never cast it on a single mob: kills measured faster without.
 
-*Fight lab, seconds per kill: 32 at level 24, 34 at level 29. Presses per kill at level 24: Frostbolt 4.3, Ice Lance 1.6, Wand 1.3, Frost Nova 0.8, Fire Blast 0.6, Counterspell 0.2.*
+*Fight lab, seconds per kill: 32 at level 24, 34 at level 29. Presses per kill at level 24: Frostbolt 4.3, Ice Lance 1.5, Wand 1.2, Frost Nova 0.8, Fire Blast 0.7, Counterspell 0.2.*
 
 ## Levels 30-36: Fingers of Frost
 
@@ -231,7 +231,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Ice Armor** (30) replaces **Frost Armor** as your armor spell.
 - From 32 the points go to Arcane: **Wand Specialization** (32-33) makes your finishing wand hits stronger, **Arcane Resilience** (34) adds armor, **Improved Channeling** (35-36) prepares the Missiles of the next stage.
 
-*Fight lab, seconds per kill: 34 at level 30, 35 at level 36. Presses per kill at level 30: Frostbolt 3.8, Ice Lance 1.6, Wand 1.0, Frost Nova 0.8, Fire Blast 0.5, Counterspell 0.2.*
+*Fight lab, seconds per kill: 33 at level 30, 35 at level 36. Presses per kill at level 30: Frostbolt 3.9, Ice Lance 1.6, Wand 1.0, Frost Nova 0.8, Fire Blast 0.5, Counterspell 0.2.*
 
 ## Levels 37-52: Missile Barrage: free Arcane Missiles
 
@@ -263,7 +263,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Arctic Reach** (39) lets you pull from a little farther. **Arcane Concentration** (40-44) makes about one cast in ten free, and **Arcane Meditation** (48-50) keeps half your mana regeneration going while you cast.
 - Frostfire Bolt (40) is not part of this list: **Frostbolt** stays on Q.
 
-*Fight lab, seconds per kill: 36 at level 37, 34 at level 40, 27 at level 50, 28 at level 52. Presses per kill at level 37: Frostbolt 3.7, Ice Lance 1.9, Wand 1.4, Frost Nova 0.8, Fire Blast 0.5, Arcane Missiles 0.3, Counterspell 0.2.*
+*Fight lab, seconds per kill: 35 at level 37, 33 at level 40, 26 at level 50, 27 at level 52. Presses per kill at level 37: Frostbolt 3.7, Ice Lance 1.9, Wand 1.3, Frost Nova 0.8, Fire Blast 0.4, Arcane Missiles 0.3, Counterspell 0.2.*
 
 ## Levels 53-60: Presence of Mind opens the pull
 
@@ -271,7 +271,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Arcane Explosion at 54; Arcane Missiles at 56; Blizzard at 60; Cone of Cold at 58; Fire Blast at 54; Fire Ward at 60; Frost Nova at 54; Frost Ward at 60; Frostbolt at 56, 60; Ice Lance at 56; Mana Shield at 60; Polymorph at 60.
 
-**Talents:** 53 Presence of Mind, 54-55 Improved Frost Nova, 56-57 Permafrost, 58 Winter's Chill, 59-60 Arcane Mind.
+**Talents:** 53 Presence of Mind, 54-57 Arcane Mind, 58-60 Arcane Instability.
 
 **Keys to set:** Shift+Q = Presence of Mind macro.
 
@@ -292,9 +292,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.
 
 - **Presence of Mind** (53) makes your next cast instant; the fight lab spends it on the pull's first **Frostbolt**.
-- **Improved Frost Nova** (54-55) brings **Frost Nova** back 4 seconds sooner and **Permafrost** (56-57) makes your chills last longer. **Winter's Chill** (58) only adds to **Cone of Cold**, which this list does not cast. **Arcane Mind** (59-60) adds Intellect.
+- **Arcane Mind** (54-57) adds 8% Intellect, and **Arcane Instability** (58-60) 3% more spell damage and 3% more crit.
 
-*Fight lab, seconds per kill: 28 at level 53, 25 at level 60. Presses per kill at level 53: Frostbolt 3.1, Ice Lance 1.7, Wand 1.3, Frost Nova 0.7, Arcane Missiles 0.6, Fire Blast 0.4, Counterspell 0.2.*
+*Fight lab, seconds per kill: 27 at level 53, 24 at level 60. Presses per kill at level 53: Frostbolt 3.0, Ice Lance 1.6, Wand 1.2, Frost Nova 0.6, Arcane Missiles 0.6, Fire Blast 0.3, Counterspell 0.2.*
 
 ## Between fights
 
@@ -309,4 +309,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Pulling packs is a different game: the AoE Frost build on the Frost page gathers about four mobs, freezes them with **Frost Nova** and channels **Blizzard**.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-14: the stages are hand-kept in `_reference/data/level-guides/mage.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-15: the stages are hand-kept in `_reference/data/level-guides/mage.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

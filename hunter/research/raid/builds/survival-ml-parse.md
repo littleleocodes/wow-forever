@@ -53,11 +53,11 @@ The Survival build the machine-learning talent search found in a full raid (ever
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 375 | +0.0% | 745 | +0.0% | 0 s |
-| 2 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 351 | -6.6% | 701 | -5.9% | 0 s |
-| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 329 | -12.2% | 702 | -5.8% | 0 s |
-| 4 | **[`survival-ml-parse`](survival-ml-parse.md)** | ours: derived (ML search) | 5/14/32 | 271 | -27.8% | 709 | -4.8% | 97 s |
-| 5 | *SV Melee* | community simulator | - | 220 | -41.4% | 625 | -16.1% | 120 s |
+| 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 375 | +0.0% | 735 | +0.0% | 0 s |
+| 2 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 351 | -6.6% | 706 | -3.9% | 0 s |
+| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 329 | -12.2% | 691 | -6.0% | 0 s |
+| 4 | **[`survival-ml-parse`](survival-ml-parse.md)** | ours: derived (ML search) | 5/14/32 | 271 | -27.8% | 698 | -5.0% | 97 s |
+| 5 | *SV Melee* | community simulator | - | 220 | -41.4% | 630 | -14.3% | 120 s |
 
 ## Rotation (community simulator, training dummy)
 

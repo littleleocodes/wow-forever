@@ -6,15 +6,13 @@
 
 **Leveling from level 1?** [The rotation level by level](arms-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Arms — Leveling](../research/leveling/builds/arms-open-leveling.md)** (32/17/2) — [open the talent tree](https://talentsforever.com/warrior/60/02323213032215201-05140005002-2-12)
+**[Arms — Leveling](../research/leveling/builds/arms-open-leveling.md)** (32/17/2) — [open the talent tree](https://talentsforever.com/warrior/60/02323213132215101-05140005002-2-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Arms two-hander), which stays below as the alternative. A model of the beta, to check at launch.
 
-**Signature spells:** 99% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Mortal Strike, Overpower, Slam, Execute, Rend, Heroic Strike, Deep Wounds; this build never casts Whirlwind) (the spec's rule: at least 80%; **Mortal Strike** cast at level 60).
+**Signature spells:** 98% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Mortal Strike, Overpower, Slam, Execute, Rend, Deep Wounds; this build never casts Whirlwind, Heroic Strike) (the spec's rule: at least 80%; **Mortal Strike** cast at level 60).
 
 ## How to play
-
-**Not in this build:** **Spearing Strike** is a talent this build does not take: where a line below names it, that part does not apply. The fight lab played the build without it.
 
 **Before the fight:** **Battle Stance**, a two-handed weapon.
 
@@ -33,22 +31,22 @@
 
 ## Why this rotation
 
-Arms levels with a two-hander in **Battle Stance**. Open with **Bloodrage** and **Charge**, keep **Rend** on the mob so **Bloodthrill** lights up **Overpower**, hit **Mortal Strike** on cooldown, spend spare rage on **Slam** (from 35) and **Heroic Strike**, and finish with **Execute**; bandage below 60% health and eat only below 40%.
+Arms levels with a two-hander in **Battle Stance**. Open with **Bloodrage** and **Charge**, keep **Rend** on the mob so **Bloodthrill** lights up **Overpower**, hit **Mortal Strike** on cooldown, spend spare rage on **Slam** (from 35), **Spearing Strike** (from 25) and **Heroic Strike**, and finish with **Execute**; bandage below 60% health and eat only below 40%.
 
 **Why it works**
 
 - **Bloodrage** then **Charge** puts rage in your bar before the first swing: **Bloodrage** gives 10 at once and 10 more over 10 seconds, **Charge** 9 to 15 by rank plus 6 with **Improved Charge**, and the mob is stunned for a second. The fight lab uses **Bloodrage** only above 45% health, on about every third pull (1-minute cooldown).
 - Once the mob is below 20%, **Execute** goes before everything else in the fight lab: it spends all your rage (600 damage plus 15 per extra point at rank 5) and usually ends the fight. It is about an eighth of your damage at 40-60.
-- **Overpower** comes next whenever it lights up: 5 rage, 50% more crit chance with both ranks of **Improved Overpower** (taken at 15-16), and a window of only 5 seconds. With **Bloodthrill** (2 ranks, taken at 30-31; 10% then 20% per main-hand hit), main-hand hits on a mob with your **Rend** light it up too, so you press it more than once a kill; it is the build's most valuable talent at 60 in the fight lab (1.5 seconds per kill).
+- **Overpower** comes next whenever it lights up: 5 rage, 50% more crit chance with both ranks of **Improved Overpower** (taken at 15-16), and a window of only 5 seconds. With **Bloodthrill** (2 ranks, taken at 30-31; 10% then 20% per main-hand hit), main-hand hits on a mob with your **Rend** light it up too, so you press it more than once a kill; it is the build's most valuable talent at 60 in the fight lab (1.3 seconds per kill).
 - **Mortal Strike** (from 40) on cooldown is your biggest attack, about a fifth of your damage at 40-60. **Rend** goes on once per mob, early: the fight lab casts it only while the mob has more than a third of its health and you have 40 rage or **Mortal Strike** is cooling down, so it never delays **Mortal Strike**.
-- Rage left over goes to **Slam** first, but only with **Improved Slam** (2 ranks, taken at 35-36): at full rank it cuts the cast and the global cooldown by 0.5 seconds, takes 5 seconds off the 15-second cooldown and lets your swing keep running. Without the talent **Slam** stops and restarts your swing, which cost 3-6% per kill in the fight lab, so you leave it off your bar before 35. **Heroic Strike** takes the rest.
-- **Heroic Strike** only takes rage you will not need: the fight lab keeps 15 for an **Overpower** and, when **Mortal Strike** is 3 seconds or less from ready, 30 more for it. Before 40 it is your main rage dump (about two fifths of your damage at 20, a fifth at 30); after **Mortal Strike** it almost disappears.
+- Rage left over goes to **Slam** first, but only with **Improved Slam** (one rank, taken at 35): it cuts the cast and the global cooldown by 0.25 seconds, takes 2.5 seconds off the 15-second cooldown and lets your swing keep running. Without the talent **Slam** stops and restarts your swing, which cost 3-6% per kill in the fight lab, so you leave it off your bar before 35. Then **Spearing Strike** (talent, 25: 40% weapon damage for 15 rage, 20-second cooldown), and **Heroic Strike** takes the rest.
+- **Heroic Strike** only takes rage you will not need: the fight lab keeps 15 for an **Overpower** and, when **Mortal Strike** is 3 seconds or less from ready, 30 more for it. Before 40 it is your main rage dump (about two fifths of your damage at 20; from 25 **Spearing Strike** takes part of the rage); after **Mortal Strike** the fight lab, in green gear, never casts it, and **Spearing Strike** under once in five kills.
 - **Battle Shout** lasts 3 minutes in Forever, so one shout covers several pulls. **Victory Rush** is free for 20 seconds after a kill and heals 10% of your health: it opens your next fight whenever you are below 90%.
 
 **Caveats**
 
 - The fight lab's numbers are for one same-level mob at a time in quest greens, with an axe or polearm for **Weaponmaster** (+5% crit); it does not model runners, adds or stance swaps.
-- **Sweeping Strikes** is in the build only because **Mortal Strike** requires it: on a single mob it does nothing. **Improved Tactical Mastery** and **Anger Management** fill the Arms tiers; this list never changes stance.
+- **Sweeping Strikes** is in the build only because **Mortal Strike** requires it: on a single mob it does nothing. **Improved Tactical Mastery** and **Anger Management** fill the Arms tiers; this list never changes stance. **Spearing Strike** (25) is pressed about once a kill until 40; at 60 the fight lab measures it at nothing.
 - Between fights the fight lab bandages below 60% health and eats below 40% (the rule tuned on 2026-11-03: about 2% faster per kill than the default 65%). With **Victory Rush** and the bandage it almost never needs food.
 - Casters stand back and cast at you. **Charge** reaches them at the pull; in **Battle Stance** you have no interrupt (**Pummel** needs **Berserker Stance**), so just close in and hit.
 
@@ -70,13 +68,14 @@ One point per level from 10, in this order:
 | 19 | Improved Tactical Mastery (Arms) | 1 |
 | 20-22 | Deep Wounds (Arms) | 3 |
 | 23-24 | Improved Tactical Mastery (Arms) | 2 |
-| 25 | Anger Management (Arms) | 1 |
-| 26-28 | Two-Handed Weapon Specialization (Arms) | 3 |
-| 29 | Impale (Arms) | 1 |
+| 25 | Spearing Strike (Arms) | 1 |
+| 26 | Anger Management (Arms) | 1 |
+| 27-29 | Two-Handed Weapon Specialization (Arms) | 3 |
 | 30-31 | Bloodthrill (Arms) | 2 |
 | 32-34 | Weaponmaster (Arms) | 3 |
-| 35-36 | Improved Slam (Arms) | 2 |
-| 37-38 | Weaponmaster (Arms) | 2 |
+| 35 | Improved Slam (Arms) | 1 |
+| 36-37 | Weaponmaster (Arms) | 2 |
+| 38 | Impale (Arms) | 1 |
 | 39 | Sweeping Strikes (Arms) | 1 |
 | 40 | Mortal Strike (Arms) | 1 |
 | 41-45 | Cruelty (Fury) | 5 |
@@ -92,10 +91,10 @@ One point per level from 10, in this order:
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
 | 20 | 22 | 18 |
-| 30 | 24 | 20 |
+| 30 | 23 | 18 |
 | 40 | 24 | 20 |
 | 50 | 25 | 22 |
-| 60 | 27 | 22 |
+| 60 | 27 | 21 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
@@ -104,8 +103,8 @@ One point per level from 10, in this order:
 ## Other builds of this spec
 
 - [Arms (optimized)](../research/leveling/builds/opt-arms-2h-raid-leveling-st.md) (42/9/0, 25 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warrior/60/35323213132215231-0504--12)
-- [Leveling — Arms two-hander](../research/leveling/builds/leveling-arms.md) (31/20/0, 26 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warrior/60/05320203132214201-15050135--12)
+- [Leveling — Arms two-hander](../research/leveling/builds/leveling-arms.md) (31/20/0, 25 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warrior/60/05320203132214201-15050135--12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-13 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-15 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

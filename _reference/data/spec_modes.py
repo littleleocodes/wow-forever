@@ -37,7 +37,7 @@ HYBRID_NAMES = {
     ("hunter", "Hybrid Beast Mastery/Marksmanship"): ("Beast-Marks", "beast-marks", {
         "raid": "Beast Mastery's pet talents with Marksmanship's shot talents (Mortal Shots, Improved Arcane Shot, Careful Aim): a pet build "
                 "short of 30 Beast Mastery points.",   # 2026-11-08 full page read H3: the raid pick 28/21/2 has no Trueshot Aura, Barrage, Sniper Shot
-        "leveling": "Beast Mastery's pet talents (Ferocity, Frenzy, Spirit Bond) with Marksmanship's shot talents."}),
+        "leveling": "Marksmanship's shot talents first (Lethal Attacks, Efficiency, Careful Aim, Trueshot Aura), then Beast Mastery's pet talents (Unleashed Fury, Ferocity, Spirit Bond)."}),
     ("hunter", "Hybrid Marksmanship/Survival"): ("Melee (split)", "melee-split", "Dual-wield melee with Marksmanship support, short of 30 Survival points."),
     ("hunter", "Hybrid Beast Mastery/Survival"): ("Beast-Survival", "beast-survival", "Dual-wield melee with a pet and Beast Mastery's aspect and pet talents, short of 30 Survival points (leveling; the raid version with Summon Hawk and Lone Wolf, 16/11/24, is within half a percent of Melee Survival in a full raid since Lacerating Strikes overwrites as in the game (2026-11-13): a tie, so the raid page keeps Survival)."),
     ("mage", "Hybrid Arcane/Frost"): ("Arcane-Frost", "arcane-frost", {
@@ -48,6 +48,7 @@ HYBRID_NAMES = {
         "leveling": "Retribution's two-handed melee (Vengeance, Two-Handed Weapon Specialization) with Holy's Sacred Arbiter; despite the name, the open leveling search's winner takes no Holy Shock.",
         "raid": "Holy Shock burst and heals with Retribution's melee talents."}),
     ("paladin", "Hybrid Protection/Retribution"): ("Prot-Ret", "prot-ret", "Retribution's melee talents with Protection's Seal of Fury, Swift Judgement and Toughness: a melee split short of 30 Retribution points."),
+    ("paladin", "Hybrid Holy/Protection"): ("Holy-Prot", "hybrid-holy-protection", "Holy Shock and Divine Favor with Protection's Precision, Toughness and Swift Judgement and Retribution's judgement talents: Holy's leveling rotation short of 30 Holy points (2026-11-15, the open leveling search)."),
     ("priest", "Hybrid Discipline/Holy"): ("Smite", "smite", "Damage from Smite and Holy Fire, carried by Discipline talents."),
     ("priest", "Hybrid Discipline/Shadow"): ("Discipline-Shadow", "hybrid-discipline-shadow", "Shadow's dots and Shadow Weaving, Vampiric Embrace and Darkness with Discipline's Mental Strength and Soul Warding."),
     ("priest", "Hybrid Holy/Shadow"): ("Holy-Shadow", "hybrid-holy-shadow", "Points in all three trees: Discipline's Soul Warding, Holy's Searing Light and Shadow's Shadow Weaving."),

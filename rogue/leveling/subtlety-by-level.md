@@ -13,16 +13,15 @@ What a Subtlety rogue presses from level 1 to 60, stage by stage, as the trainer
 | 1-5 | **Sinister Strike** builds combo points, **Eviscerate** spends them. |
 | 6-7 | **Gouge** stuns the mob for a few seconds: a breather. |
 | 8-9 | **Evasion**: for half a minute the mob can barely hit you. |
-| 10-11 | Talent points start with **Opportunity**: your openers hit harder. Nothing new in the fight itself. |
-| 12-13 | **Kick** interrupts a caster mob's spell. This rotation uses it. |
+| 10-13 | Talent points start with **Opportunity**: your openers hit harder. Nothing new in the fight itself. |
 | 14-17 | **Garrote**: open from stealth with a bleed. From here every fight starts in **Stealth**. |
 | 18-21 | **Ambush** from stealth: one big hit with your dagger, your usual opener for now. |
-| 22-23 | **Garrote** rank 2: from here its bleed beats **Ambush** on most mobs. |
+| 22-23 | **Vanish**, the emergency exit. **Garrote** rank 2 now beats **Ambush** on a mob that will take a while to kill. |
 | 24 | **Premeditation** (talent): 2 free combo points before the opener. **Shank** strikes on a cooldown and gives energy. |
 | 25-29 | **Ghostly Strike** (talent) on its 20-second cooldown: a big dagger strike and more dodge. A **Garrote** can follow it. |
 | 30-34 | **Hemorrhage** (talent) takes over from **Sinister Strike** as your builder. |
 | 35-39 | **Boot Knife** (talent): a landed **Shank** can add 2 combo points, so it is a builder too. |
-| 40-60 | **Death Mark** (talent): a finisher that stores part of your damage for 6 seconds, then deals it. Cast it early. |
+| 40-60 | **Death Mark** (talent): a finisher that stores part of your damage for 6 seconds, then deals it. Press it at 5 points while the mob has more than 40% of its health. |
 
 ## Keybinds by level
 
@@ -30,39 +29,39 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Action bar 1: the fight**
 
-| Key | Its job | 1-5 | 6-7 | 8-9 | 10-11 | 12-13 | 14-17 | 18-21 | 22-23 | 24 | 25-29 | 30-34 | 35-39 | 40-60 |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Q | Your builder, pressed most; the macro also starts your swings | **Sinister Strike** | Sinister Strike | Sinister Strike | Sinister Strike | Sinister Strike | Sinister Strike | Sinister Strike | Sinister Strike | Sinister Strike | Sinister Strike | **Hemorrhage** | Hemorrhage | Hemorrhage |
-| E | Control: a stun for a breather | — | **Gouge** | Gouge | Gouge | Gouge | Gouge | Gouge | Gouge | Gouge | Gouge | Gouge | Gouge | Gouge |
-| R | The payoff at 5 combo points | **Eviscerate** | Eviscerate | Eviscerate | Eviscerate | Eviscerate | Eviscerate | Eviscerate | Eviscerate | Eviscerate | Eviscerate | Eviscerate | Eviscerate | Eviscerate |
-| F | The save | — | — | **Evasion** | Evasion | Evasion | Evasion | Evasion | Evasion | Evasion | Evasion | Evasion | Evasion | Evasion |
-| Mouse 5 | Thumb reaction: the cooldown strike | — | — | — | — | — | — | — | — | **Shank** | Shank | Shank | Shank | Shank |
-| Mouse 4 | Thumb reaction: the second cooldown strike | — | — | — | — | — | — | — | — | — | **Ghostly Strike** | Ghostly Strike | Ghostly Strike | Ghostly Strike |
-| 1 | The opener from stealth, and the bleed after Ghostly Strike | — | — | — | — | — | **Garrote** | Garrote | Garrote | Garrote | Garrote | Garrote | Garrote | Garrote |
-| 2 | A second mob, before the pull | — | — | — | **Sap** | Sap | Sap | Sap | Sap | Sap | Sap | Sap | Sap | Sap |
-| 3 | The emergency exit | — | — | — | — | — | — | — | **Vanish** | Vanish | Vanish | Vanish | Vanish | Vanish |
-| 4 | Close a gap or open one | — | — | — | **Sprint** | Sprint | Sprint | Sprint | Sprint | Sprint | Sprint | Sprint | Sprint | Sprint |
-| C | The other opener: one big hit from stealth | — | — | — | — | — | — | **Ambush** | Ambush | Ambush | Ambush | Ambush | Ambush | Ambush |
-| Middle mouse | Free | — | — | — | — | — | — | — | — | — | — | — | — | — |
+| Key | Its job | 1-5 | 6-7 | 8-9 | 10-13 | 14-17 | 18-21 | 22-23 | 24 | 25-29 | 30-34 | 35-39 | 40-60 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Q | Your builder, pressed most; the macro also starts your swings | **Sinister Strike** | Sinister Strike | Sinister Strike | Sinister Strike | Sinister Strike | Sinister Strike | Sinister Strike | Sinister Strike | Sinister Strike | **Hemorrhage** | Hemorrhage | Hemorrhage |
+| E | Control: a stun for a breather | — | **Gouge** | Gouge | Gouge | Gouge | Gouge | Gouge | Gouge | Gouge | Gouge | Gouge | Gouge |
+| R | The payoff at 5 combo points | **Eviscerate** | Eviscerate | Eviscerate | Eviscerate | Eviscerate | Eviscerate | Eviscerate | Eviscerate | Eviscerate | Eviscerate | Eviscerate | Eviscerate |
+| F | The save | — | — | **Evasion** | Evasion | Evasion | Evasion | Evasion | Evasion | Evasion | Evasion | Evasion | Evasion |
+| Mouse 5 | Thumb reaction: the cooldown strike | — | — | — | — | — | — | — | **Shank** | Shank | Shank | Shank | Shank |
+| Mouse 4 | Thumb reaction: the second cooldown strike | — | — | — | — | — | — | — | — | **Ghostly Strike** | Ghostly Strike | Ghostly Strike | Ghostly Strike |
+| 1 | The opener from stealth, and the bleed after Ghostly Strike | — | — | — | — | **Garrote** | Garrote | Garrote | Garrote | Garrote | Garrote | Garrote | Garrote |
+| 2 | A second mob, before the pull | — | — | — | **Sap** | Sap | Sap | Sap | Sap | Sap | Sap | Sap | Sap |
+| 3 | The emergency exit | — | — | — | — | — | — | **Vanish** | Vanish | Vanish | Vanish | Vanish | Vanish |
+| 4 | Close a gap or open one | — | — | — | **Sprint** | Sprint | Sprint | Sprint | Sprint | Sprint | Sprint | Sprint | Sprint |
+| C | The other opener: one big hit from stealth | — | — | — | — | — | **Ambush** | Ambush | Ambush | Ambush | Ambush | Ambush | Ambush |
+| Middle mouse | Free | — | — | — | — | — | — | — | — | — | — | — | — |
 
 **Action bar 2: the same keys with Shift**
 
-| Key | Its job | 1-5 | 6-7 | 8-9 | 10-11 | 12-13 | 14-17 | 18-21 | 22-23 | 24 | 25-29 | 30-34 | 35-39 | 40-60 |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Shift+Q | Two free combo points, between Stealth and the opener | — | — | — | — | — | — | — | — | **Premeditation** | Premeditation | Premeditation | Premeditation | Premeditation |
-| Shift+E | The interrupt: a caster mob's spell, as soon as it starts casting | — | — | — | — | **Kick** | Kick | Kick | Kick | Kick | Kick | Kick | Kick | Kick |
-| Shift+R | The early finisher, right after the opener | — | — | — | — | — | — | — | — | — | — | — | — | **Death Mark** |
-| Shift+F | The second save: resets Evasion | — | — | — | — | — | — | — | — | — | — | **Preparation** from 31 | Preparation | Preparation |
-| Shift+Mouse 5 | Free | — | — | — | — | — | — | — | — | — | — | — | — | — |
-| Shift+Mouse 4 | Free | — | — | — | — | — | — | — | — | — | — | — | — | — |
-| Shift+1 | Stealth, before the opener | — | — | — | — | — | **Stealth** | Stealth | Stealth | Stealth | Stealth | Stealth | Stealth | Stealth |
-| Shift+2 | A second mob mid-fight | — | — | — | — | — | — | — | — | — | — | **Blind** from 34 | Blind | Blind |
-| Shift+3 | Free | — | — | — | — | — | — | — | — | — | — | — | — | — |
-| Shift+4 | Free | — | — | — | — | — | — | — | — | — | — | — | — | — |
-| Shift+C | Free | — | — | — | — | — | — | — | — | — | — | — | — | — |
-| Shift+X | Free | — | — | — | — | — | — | — | — | — | — | — | — | — |
+| Key | Its job | 1-5 | 6-7 | 8-9 | 10-13 | 14-17 | 18-21 | 22-23 | 24 | 25-29 | 30-34 | 35-39 | 40-60 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Shift+Q | Two free combo points, between Stealth and the opener | — | — | — | — | — | — | — | **Premeditation** | Premeditation | Premeditation | Premeditation | Premeditation |
+| Shift+E | The interrupt the tuned rotation skips: for a caster that hits too hard | — | — | — | **Kick** from 12 | Kick | Kick | Kick | Kick | Kick | Kick | Kick | Kick |
+| Shift+R | The finisher at 5 points while the mob has more than 40% of its health | — | — | — | — | — | — | — | — | — | — | — | **Death Mark** |
+| Shift+F | The second save: resets Evasion | — | — | — | — | — | — | — | — | — | **Preparation** from 31 | Preparation | Preparation |
+| Shift+Mouse 5 | Free | — | — | — | — | — | — | — | — | — | — | — | — |
+| Shift+Mouse 4 | Free | — | — | — | — | — | — | — | — | — | — | — | — |
+| Shift+1 | Stealth, before the opener | — | — | — | — | **Stealth** | Stealth | Stealth | Stealth | Stealth | Stealth | Stealth | Stealth |
+| Shift+2 | A second mob mid-fight | — | — | — | — | — | — | — | — | — | **Blind** from 34 | Blind | Blind |
+| Shift+3 | Free | — | — | — | — | — | — | — | — | — | — | — | — |
+| Shift+4 | Free | — | — | — | — | — | — | — | — | — | — | — | — |
+| Shift+C | Free | — | — | — | — | — | — | — | — | — | — | — | — |
+| Shift+X | Free | — | — | — | — | — | — | — | — | — | — | — | — |
 
-- The Combat layout for every spell the two share. What changes: Q takes **Hemorrhage** at 30; Mouse 4 holds **Ghostly Strike** (no **Riposte** in this build) and C **Ambush** (no **Cold Blood**); Shift+Q holds **Premeditation**, Shift+R **Death Mark** above **Eviscerate**'s R and Shift+F **Preparation** above **Evasion**'s F. **Kick** stays on Shift+E, where every rogue layout has it, although this rotation uses it.
+- The Combat layout for every spell the two share. What changes: Q takes **Hemorrhage** at 30; Mouse 4 holds **Ghostly Strike** (no **Riposte** in this build) and C **Ambush** (no **Cold Blood**); Shift+Q holds **Premeditation**, Shift+R **Death Mark** above **Eviscerate**'s R and Shift+F **Preparation** above **Evasion**'s F. **Kick** stays on Shift+E, where every rogue layout has it, although this rotation never casts it.
 - WoW switches bar 1 to a second page while you are in **Stealth** (the stealth bar, as in Classic). Put the same spells in the same slots on it, so every key does the same thing in and out of Stealth.
 - Before each pull: Shift+1 (**Stealth**), Shift+Q (**Premeditation**, when it is ready), then 1 (**Garrote**) or C (**Ambush**). Stealth and Premeditation are off the global cooldown, so the three go one after the other.
 - No key: the poisons, **Slice and Dice** and **Kidney Shot** (the tuned rotation never casts them), **Cheap Shot** and **Backstab** (not in this list), food, bandages, the mount and the Hearthstone.
@@ -125,13 +124,13 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 *Fight lab, seconds per kill: 16 at level 8. Presses per kill at level 8: Melee 4.9, Melee (off-hand) 4.3, Sinister Strike 3.4, Eviscerate 0.4.*
 
-## Levels 10-11: Talents begin; Sprint and Sap
+## Levels 10-13: Talents begin; Sprint and Sap
 
-**The trainer teaches:** Sap (10), Slice and Dice (10), Sprint (10).
+**The trainer teaches:** Sap (10), Slice and Dice (10), Sprint (10), Kick (12).
 
-**Talents:** 10-11 Opportunity.
+**Talents:** 10-11 Opportunity, 12-13 Setup.
 
-**Keys to set:** 2 = Sap; 4 = Sprint.
+**Keys to set:** 2 = Sap; 4 = Sprint; Shift+E = Kick (at 12).
 
 **Your keys in this stage:** Q Sinister Strike, E Gouge, R Eviscerate, F Evasion.
 
@@ -144,31 +143,10 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Slice and Dice** (10): leave it off your bar. The tuned rotation never casts it: a mob dies before the extra swings pay for the combo points.
 - **Sap** (10): a second mob next to your target, from stealth, before the pull.
-
-*Fight lab, seconds per kill: 18 at level 10. Presses per kill at level 10: Melee 5.9, Melee (off-hand) 5.3, Sinister Strike 3.7, Eviscerate 0.5.*
-
-## Levels 12-13: Kick
-
-**The trainer teaches:** **Kick** (12).
-
-**Talents:** 12-13 Setup.
-
-**Keys to set:** Shift+E = Kick.
-
-**Your keys in this stage:** Q Sinister Strike, E Gouge, R Eviscerate, F Evasion, Shift+E Kick.
-
-**What to press**, top to bottom:
-
-1. **Kick** a caster mob's spell.
-2. **Sinister Strike** until you have 5 combo points.
-3. At 5 points: **Eviscerate**. Earlier when it would kill the mob.
-
-**If the fight goes wrong:** Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather.
-
-- The tuned rules keep **Kick** in this rotation (the Combat rotation drops it): kick a caster as soon as it starts a spell.
+- **Kick** (12): the tuned rotation never interrupts. A caster that stands and casts walks to you when you close in, and the kill is faster without the detour.
 - **Setup** (12-14): a dodge can add a combo point. Nothing to press.
 
-*Fight lab, seconds per kill: 20 at level 12. Presses per kill at level 12: Melee 7.0, Melee (off-hand) 6.4, Sinister Strike 4.0, Eviscerate 0.6, Kick 0.2.*
+*Fight lab, seconds per kill: 18 at level 10. Presses per kill at level 10: Melee 5.9, Melee (off-hand) 5.3, Sinister Strike 3.7, Eviscerate 0.5.*
 
 ## Levels 14-17: Garrote from stealth
 
@@ -180,22 +158,21 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Keys to set:** 1 = Garrote; Shift+1 = Stealth.
 
-**Your keys in this stage:** Q Sinister Strike, E Gouge, R Eviscerate, F Evasion, 1 Garrote, Shift+E Kick, Shift+1 Stealth.
+**Your keys in this stage:** Q Sinister Strike, E Gouge, R Eviscerate, F Evasion, 1 Garrote, Shift+1 Stealth.
 
 **What to press**, top to bottom:
 
 1. **Stealth** up behind the mob with full energy.
 2. Open with **Garrote**.
-3. **Kick** a caster mob's spell.
-4. **Sinister Strike** until you have 5 combo points.
-5. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder. Earlier when it would kill the mob.
+3. **Sinister Strike** until you have 5 combo points.
+4. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder. Earlier when it would kill the mob.
 
 **If the fight goes wrong:** Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather.
 
 - **Dirty Deeds** (15-16) makes **Garrote** 10 energy cheaper a point and lets it go from the front.
 - **Expose Armor** (14) is never cast. **Master of Deception** (17) makes you harder to spot in **Stealth**; the fight lab does not model it.
 
-*Fight lab, seconds per kill: 19 at level 14. Presses per kill at level 14: Melee 6.4, Melee (off-hand) 5.9, Sinister Strike 2.5, Garrote 1.0, Eviscerate 0.6, Kick 0.1.*
+*Fight lab, seconds per kill: 19 at level 14. Presses per kill at level 14: Melee 6.4, Melee (off-hand) 5.9, Sinister Strike 2.6, Garrote 1.0, Eviscerate 0.7.*
 
 ## Levels 18-21: Ambush
 
@@ -207,27 +184,27 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Keys to set:** C = Ambush.
 
-**Your keys in this stage:** Q Sinister Strike, E Gouge, R Eviscerate, F Evasion, 1 Garrote, C Ambush, Shift+E Kick, Shift+1 Stealth.
+**Your keys in this stage:** Q Sinister Strike, E Gouge, R Eviscerate, F Evasion, C Ambush, Shift+1 Stealth.
 
 **What to press**, top to bottom:
 
 1. **Stealth** up behind the mob with full energy.
-2. Open with **Ambush**. On a mob that will take a while to kill (a lot of health or armor), **Garrote** instead: its bleed ignores armor but pays only while the mob lives.
-3. **Kick** a caster mob's spell.
-4. **Sinister Strike** until you have 5 combo points.
-5. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder. Earlier when it would kill the mob.
+2. Open with **Ambush**.
+3. **Sinister Strike** until you have 5 combo points.
+4. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder. Earlier when it would kill the mob.
 
 **If the fight goes wrong:** Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather.
 
 - **Ambush** needs a dagger in your main hand and you behind the mob. **Improved Ambush** (18-19) raises its crit chance.
+- **Garrote** instead on a mob that will take a while to kill (a lot of health or armor): its bleed ignores armor but pays only while the mob lives. The fight lab's same-level mobs never last that long at 18-21.
 - **Poised** (18) makes the opener 10 energy cheaper.
 - **Rupture** (20) is never cast: the points are worth more as **Eviscerate**.
 - **Serrated Blades** (20-22): your attacks ignore part of the mob's armor.
 - Put **Instant Poison** on your main hand once you have it (20).
 
-*Fight lab, seconds per kill: 18 at level 18, 18 at level 20. Presses per kill at level 18: Melee 5.9, Melee (off-hand) 5.3, Sinister Strike 2.4, Ambush 1.0, Eviscerate 0.7, Kick 0.2.*
+*Fight lab, seconds per kill: 18 at level 18, 18 at level 20. Presses per kill at level 18: Melee 5.9, Melee (off-hand) 5.3, Sinister Strike 2.4, Ambush 1.0, Eviscerate 0.7.*
 
-## Levels 22-23: Garrote again
+## Levels 22-23: Vanish, and Garrote rank 2
 
 **The trainer teaches:** Distract (22), Vanish (22).
 
@@ -237,23 +214,22 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Keys to set:** 3 = Vanish.
 
-**Your keys in this stage:** Q Sinister Strike, E Gouge, R Eviscerate, F Evasion, 1 Garrote, 3 Vanish, Shift+E Kick, Shift+1 Stealth.
+**Your keys in this stage:** Q Sinister Strike, E Gouge, R Eviscerate, F Evasion, 1 Garrote, 3 Vanish, C Ambush, Shift+1 Stealth.
 
 **What to press**, top to bottom:
 
 1. **Stealth** up behind the mob with full energy.
-2. Open with **Garrote**.
-3. **Kick** a caster mob's spell.
-4. **Sinister Strike** until you have 5 combo points.
-5. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder. Earlier when it would kill the mob.
+2. Open with **Ambush**, or with **Garrote** on a mob that will take a while to kill (a lot of health or armor).
+3. **Sinister Strike** until you have 5 combo points.
+4. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder. Earlier when it would kill the mob.
 
 **If the fight goes wrong:** Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather. **Vanish** is the emergency exit.
 
-- **Ambush** stays on its key for a mob that will die within a few seconds; from here the fight lab opens with **Garrote** on most pulls.
+- At 22 the fight lab opens with **Ambush** on about three pulls in four and with **Garrote** on the rest.
 - **Vanish** (22) is the emergency exit: the mob loses you, and you walk away.
 - **Initiative** (23): your opener may add a second combo point.
 
-*Fight lab, seconds per kill: 19 at level 22. Presses per kill at level 22: Melee 6.2, Melee (off-hand) 5.6, Sinister Strike 2.6, Ambush 0.7, Eviscerate 0.6, Garrote 0.3, Kick 0.2.*
+*Fight lab, seconds per kill: 19 at level 22. Presses per kill at level 22: Melee 6.2, Melee (off-hand) 5.6, Sinister Strike 2.7, Ambush 0.7, Eviscerate 0.7, Garrote 0.3.*
 
 ## Level 24: Premeditation and Shank
 
@@ -265,24 +241,23 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Keys to set:** Mouse 5 = Shank; Shift+Q = Premeditation.
 
-**Your keys in this stage:** Q Sinister Strike, E Gouge, R Eviscerate, F Evasion, Mouse 5 Shank, 1 Garrote, 3 Vanish, Shift+Q Premeditation, Shift+E Kick, Shift+1 Stealth.
+**Your keys in this stage:** Q Sinister Strike, E Gouge, R Eviscerate, F Evasion, Mouse 5 Shank, 1 Garrote, 3 Vanish, C Ambush, Shift+Q Premeditation, Shift+1 Stealth.
 
 **What to press**, top to bottom:
 
 1. **Stealth** up behind the mob with full energy.
 2. **Premeditation** whenever it is ready (every 2 minutes): 2 combo points on the mob before you open.
-3. Open with **Garrote**.
-4. **Kick** a caster mob's spell.
-5. **Shank** whenever it is ready, unless the energy it gives would go over your maximum.
-6. **Sinister Strike** until you have 5 combo points.
-7. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder. Earlier when it would kill the mob.
+3. Open with **Ambush**, or with **Garrote** on a mob that will take a while to kill (a lot of health or armor).
+4. **Shank** whenever it is ready, unless the energy it gives would go over your maximum.
+5. **Sinister Strike** until you have 5 combo points.
+6. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder. Earlier when it would kill the mob.
 
 **If the fight goes wrong:** Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather. **Vanish** is the emergency exit.
 
 - **Stealth** and **Premeditation** are off the global cooldown: Stealth, Premeditation, then the opener. Use the points within 20 seconds.
 - **Mind-numbing Poison** (24) is for casters in groups.
 
-*Fight lab, seconds per kill: 20 at level 24. Presses per kill at level 24: Melee 6.4, Melee (off-hand) 5.8, Sinister Strike 2.8, Shank 1.5, Eviscerate 0.8, Ambush 0.7, Garrote 0.3, Kick 0.3, Premeditation 0.1.*
+*Fight lab, seconds per kill: 19 at level 24. Presses per kill at level 24: Melee 6.2, Melee (off-hand) 5.7, Sinister Strike 2.8, Shank 1.5, Eviscerate 0.8, Ambush 0.7, Garrote 0.3, Premeditation 0.1.*
 
 ## Levels 25-29: Ghostly Strike
 
@@ -294,18 +269,17 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Keys to set:** Mouse 4 = Ghostly Strike.
 
-**Your keys in this stage:** Q Sinister Strike, E Gouge, R Eviscerate, F Evasion, Mouse 5 Shank, Mouse 4 Ghostly Strike, 1 Garrote, 3 Vanish, Shift+Q Premeditation, Shift+E Kick, Shift+1 Stealth.
+**Your keys in this stage:** Q Sinister Strike, E Gouge, R Eviscerate, F Evasion, Mouse 5 Shank, Mouse 4 Ghostly Strike, 1 Garrote, 3 Vanish, C Ambush, Shift+Q Premeditation, Shift+1 Stealth.
 
 **What to press**, top to bottom:
 
 1. **Stealth** up behind the mob with full energy.
 2. **Premeditation** whenever it is ready (every 2 minutes): 2 combo points on the mob before you open.
-3. Open with **Garrote**.
-4. **Kick** a caster mob's spell.
-5. **Shank** whenever it is ready, unless the energy it gives would go over your maximum.
-6. **Ghostly Strike** whenever it is ready, unless you have 5 points. Right after it, **Garrote** if none is bleeding on the mob and it has more than half its health: **Ghostly Strike** lets **Garrote** go without **Stealth**, and **Dirty Deeds** lets it go from the front.
-7. **Sinister Strike** until you have 5 combo points.
-8. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder. Earlier when it would kill the mob.
+3. Open with **Ambush**, or with **Garrote** on a mob that will take a while to kill (a lot of health or armor).
+4. **Shank** whenever it is ready, unless the energy it gives would go over your maximum.
+5. **Ghostly Strike** whenever it is ready, unless you have 5 points. Right after it, **Garrote** if none is bleeding on the mob and it has more than half its health: **Ghostly Strike** lets **Garrote** go without **Stealth**, and **Dirty Deeds** lets it go from the front.
+6. **Sinister Strike** until you have 5 combo points.
+7. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder. Earlier when it would kill the mob.
 
 **If the fight goes wrong:** Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather. **Vanish** is the emergency exit.
 
@@ -313,7 +287,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Cheap Shot** (26): the rotation opens with it only when neither **Ambush** nor **Garrote** can go, which the fight lab never saw.
 - **Opportunity** (28-29) makes **Garrote** and **Ambush** hit harder.
 
-*Fight lab, seconds per kill: 19 at level 25. Presses per kill at level 25: Melee 6.3, Melee (off-hand) 5.8, Sinister Strike 2.0, Shank 1.5, Eviscerate 0.8, Ghostly Strike 0.8, Ambush 0.7, Garrote 0.4, Kick 0.3, Premeditation 0.1.*
+*Fight lab, seconds per kill: 19 at level 25. Presses per kill at level 25: Melee 6.2, Melee (off-hand) 5.7, Sinister Strike 2.1, Shank 1.5, Eviscerate 0.8, Ghostly Strike 0.8, Ambush 0.7, Garrote 0.4, Premeditation 0.1.*
 
 ## Levels 30-34: Hemorrhage
 
@@ -325,29 +299,28 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Keys to set:** Q = Hemorrhage; Shift+F = Preparation (at 31); Shift+2 = Blind (at 34).
 
-**Your keys in this stage:** Q Hemorrhage, E Gouge, R Eviscerate, F Evasion, Mouse 5 Shank, Mouse 4 Ghostly Strike, 1 Garrote, 3 Vanish, Shift+Q Premeditation, Shift+E Kick, Shift+1 Stealth.
+**Your keys in this stage:** Q Hemorrhage, E Gouge, R Eviscerate, F Evasion, Mouse 5 Shank, Mouse 4 Ghostly Strike, 1 Garrote, 3 Vanish, Shift+Q Premeditation, Shift+1 Stealth.
 
 **What to press**, top to bottom:
 
 1. **Stealth** up behind the mob with full energy.
 2. **Premeditation** whenever it is ready (every 2 minutes): 2 combo points on the mob before you open.
 3. Open with **Garrote**.
-4. **Kick** a caster mob's spell.
-5. **Shank** whenever it is ready, unless the energy it gives would go over your maximum.
-6. **Ghostly Strike** whenever it is ready, unless you have 5 points. Right after it, **Garrote** if none is bleeding on the mob and it has more than half its health: **Ghostly Strike** lets **Garrote** go without **Stealth**, and **Dirty Deeds** lets it go from the front.
-7. **Hemorrhage** until you have 5 combo points.
-8. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder. Earlier when it would kill the mob.
+4. **Shank** whenever it is ready, unless the energy it gives would go over your maximum.
+5. **Ghostly Strike** whenever it is ready, unless you have 5 points. Right after it, **Garrote** if none is bleeding on the mob and it has more than half its health: **Ghostly Strike** lets **Garrote** go without **Stealth**, and **Dirty Deeds** lets it go from the front.
+6. **Hemorrhage** until you have 5 combo points.
+7. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder. Earlier when it would kill the mob.
 
 **If the fight goes wrong:** Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather. **Vanish** is the emergency exit.
 
 - Q keeps its job: change the Q macro's spell to **Hemorrhage** (the [macros page](../macros.md) has it). **Hemorrhage** also makes your **Garrote** bleed 15% harder for 15 seconds.
-- **Garrote** rank 3 (30) makes the bleed bigger still: from here the fight lab almost never opens with **Ambush**.
+- **Garrote** rank 3 (30) makes the bleed bigger still: at 30 the fight lab opens with it on almost every pull. **Ambush** rank 3 (34) tips most pulls back to **Ambush**.
 - **Deadly Poison** (30) on your off hand, **Instant Poison** on your main hand: buffs you reapply between fights, no key.
 - **Kidney Shot** (30): off. The tuned rotation never casts it.
 - **Preparation** (31): when you need **Evasion** and it is on cooldown, Preparation resets it (and your other cooldowns). The fight lab never needed it.
-- The last point of **Improved Ambush** (33) is crit on the odd **Ambush**; **Dirty Tricks** (34) makes **Sap** and **Blind** cheaper. **Blind** (34) handles a second mob that joins mid-fight.
+- The last point of **Improved Ambush** (33) adds crit to **Ambush**; **Dirty Tricks** (34) makes **Sap** and **Blind** cheaper. **Blind** (34) handles a second mob that joins mid-fight.
 
-*Fight lab, seconds per kill: 21 at level 30. Presses per kill at level 30: Melee 7.0, Melee (off-hand) 6.5, Hemorrhage 2.9, Shank 1.5, Eviscerate 1.1, Garrote 0.9, Ghostly Strike 0.8, Kick 0.2, Premeditation 0.2, Ambush 0.2.*
+*Fight lab, seconds per kill: 21 at level 30. Presses per kill at level 30: Melee 6.9, Melee (off-hand) 6.5, Hemorrhage 3.0, Shank 1.5, Eviscerate 1.1, Garrote 0.9, Ghostly Strike 0.9, Premeditation 0.2, Ambush 0.2.*
 
 ## Levels 35-39: Boot Knife
 
@@ -355,24 +328,24 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Talents:** 35-39 Boot Knife.
 
-**Your keys in this stage:** Q Hemorrhage, E Gouge, R Eviscerate, F Evasion, Mouse 5 Shank, Mouse 4 Ghostly Strike, 1 Garrote, 3 Vanish, Shift+Q Premeditation, Shift+E Kick, Shift+F Preparation, Shift+1 Stealth.
+**Your keys in this stage:** Q Hemorrhage, E Gouge, R Eviscerate, F Evasion, Mouse 5 Shank, Mouse 4 Ghostly Strike, 1 Garrote, 3 Vanish, C Ambush, Shift+Q Premeditation, Shift+F Preparation, Shift+1 Stealth.
 
 **What to press**, top to bottom:
 
 1. **Stealth** up behind the mob with full energy.
 2. **Premeditation** whenever it is ready (every 2 minutes): 2 combo points on the mob before you open.
-3. Open with **Garrote**.
-4. **Kick** a caster mob's spell.
-5. **Shank** whenever it is ready, unless the energy it gives would go over your maximum. With 3 combo points or fewer, press it even when the energy would go over: **Boot Knife** may add 2.
-6. **Ghostly Strike** whenever it is ready, unless you have 5 points. Right after it, **Garrote** if none is bleeding on the mob and it has more than half its health: **Ghostly Strike** lets **Garrote** go without **Stealth**, and **Dirty Deeds** lets it go from the front.
-7. **Hemorrhage** until you have 5 combo points.
-8. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder. Earlier when it would kill the mob.
+3. Open with **Ambush**, or with **Garrote** on a mob that will take a while to kill (a lot of health or armor).
+4. **Shank** whenever it is ready, unless the energy it gives would go over your maximum. With 3 combo points or fewer, press it even when the energy would go over: **Boot Knife** may add 2.
+5. **Ghostly Strike** whenever it is ready, unless you have 5 points. Right after it, **Garrote** if none is bleeding on the mob and it has more than half its health: **Ghostly Strike** lets **Garrote** go without **Stealth**, and **Dirty Deeds** lets it go from the front.
+6. **Hemorrhage** until you have 5 combo points.
+7. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder. Earlier when it would kill the mob.
 
 **If the fight goes wrong:** Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather. **Vanish** is the emergency exit. If **Evasion** is on cooldown, **Preparation** resets it.
 
 - **Boot Knife** takes a point a level: a 20% chance a point, a sure 2 combo points at 39.
+- At 35 the fight lab opens with **Ambush** on about two pulls in three. **Garrote** rank 4 (38) makes the bleed bigger again, and from 40 the fight lab opens with **Garrote** on every pull.
 
-*Fight lab, seconds per kill: 21 at level 35. Presses per kill at level 35: Melee 7.2, Melee (off-hand) 6.8, Hemorrhage 2.5, Shank 1.6, Eviscerate 1.3, Ghostly Strike 0.8, Ambush 0.6, Garrote 0.5, Kick 0.2, Premeditation 0.2.*
+*Fight lab, seconds per kill: 22 at level 35. Presses per kill at level 35: Melee 7.3, Melee (off-hand) 6.7, Hemorrhage 2.6, Shank 1.6, Eviscerate 1.3, Ghostly Strike 0.8, Ambush 0.6, Garrote 0.5, Premeditation 0.2.*
 
 ## Levels 40-60: Death Mark
 
@@ -384,27 +357,26 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Keys to set:** Shift+R = Death Mark.
 
-**Your keys in this stage:** Q Hemorrhage, E Gouge, R Eviscerate, F Evasion, Mouse 5 Shank, Mouse 4 Ghostly Strike, 1 Garrote, 3 Vanish, Shift+Q Premeditation, Shift+E Kick, Shift+R Death Mark, Shift+F Preparation, Shift+1 Stealth.
+**Your keys in this stage:** Q Hemorrhage, E Gouge, R Eviscerate, F Evasion, Mouse 5 Shank, Mouse 4 Ghostly Strike, 1 Garrote, 3 Vanish, Shift+Q Premeditation, Shift+R Death Mark, Shift+F Preparation, Shift+1 Stealth.
 
 **What to press**, top to bottom:
 
 1. **Stealth** up behind the mob with full energy.
 2. **Premeditation** whenever it is ready (every 2 minutes): 2 combo points on the mob before you open.
 3. Open with **Garrote**.
-4. **Kick** a caster mob's spell.
-5. **Death Mark** as soon as you have a combo point, while the mob has more than 40% of its health: right after the opener, and again whenever it is ready while the mob is still above 40%.
-6. **Shank** whenever it is ready, unless the energy it gives would go over your maximum. With 3 combo points or fewer, press it even when the energy would go over: **Boot Knife** may add 2.
-7. **Ghostly Strike** whenever it is ready, unless you have 5 points. Right after it, **Garrote** if none is bleeding on the mob and it has more than half its health: **Ghostly Strike** lets **Garrote** go without **Stealth**, and **Dirty Deeds** lets it go from the front.
-8. **Hemorrhage** until you have 5 combo points.
-9. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder. Earlier when it would kill the mob.
+4. At 5 points, while the mob has more than 40% of its health and no mark is on it: **Death Mark**.
+5. **Shank** whenever it is ready, unless the energy it gives would go over your maximum. With 3 combo points or fewer, press it even when the energy would go over: **Boot Knife** may add 2.
+6. **Ghostly Strike** whenever it is ready, unless you have 5 points. Right after it, **Garrote** if none is bleeding on the mob and it has more than half its health: **Ghostly Strike** lets **Garrote** go without **Stealth**, and **Dirty Deeds** lets it go from the front.
+7. **Hemorrhage** until you have 5 combo points.
+8. At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder. Earlier when it would kill the mob.
 
 **If the fight goes wrong:** Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather. **Vanish** is the emergency exit. If **Evasion** is on cooldown, **Preparation** resets it.
 
-- **Death Mark** stores more with more combo points, but the tuned rules found the early mark faster than waiting for 5. How much it stores is not in the tooltip: the fight lab assumes a rate, so treat this line as a best guess.
+- **Death Mark** stores more with more combo points: the fight lab presses it at 5. How much it stores is not in the tooltip: the fight lab assumes a rate, so treat this line as a best guess.
 - **Coup de Grace** (41-43) makes **Eviscerate** and **Death Mark** stronger. **Lightning Reflexes** (44-45) is dodge, and with **Setup** a dodge can be a combo point. **Precision** (46-48) is hit; **Efficient Strikes** (49-50) makes **Hemorrhage** cheaper.
 - **Puncturing Wounds** (51-52) is two tier points on the way to **Weapon Expertise** (57-58) and **Aggression** (59-60): this list casts no **Backstab** or **Mutilate**. **Lightning Reflexes** (53) takes its third point: more dodge. **Composure** (54-55) and **Flawless Execution** (56) make the opener and **Eviscerate** cheaper.
 
-*Fight lab, seconds per kill: 25 at level 40, 23 at level 50, 22 at level 60. Presses per kill at level 40: Melee 8.6, Melee (off-hand) 8.2, Hemorrhage 3.0, Shank 1.8, Eviscerate 1.3, Death Mark 1.1, Garrote 1.1, Ghostly Strike 0.9, Kick 0.3, Premeditation 0.2.*
+*Fight lab, seconds per kill: 24 at level 40, 23 at level 50, 22 at level 60. Presses per kill at level 40: Melee 8.4, Melee (off-hand) 8.0, Hemorrhage 3.4, Shank 2.0, Garrote 1.1, Ghostly Strike 1.0, Death Mark 1.0, Eviscerate 0.9, Premeditation 0.2.*
 
 ## Between fights
 
@@ -417,4 +389,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - The Combat-Subtlety split plays this same rotation with Combat's weapon talents and is faster in the fight lab; Combat with swords is the rogue's fastest leveling spec. Both have pages in this folder.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-13: the stages are hand-kept in `_reference/data/level-guides/rogue.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-15: the stages are hand-kept in `_reference/data/level-guides/rogue.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
