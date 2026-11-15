@@ -1,0 +1,29 @@
+{
+  "about": "The community's level-60 PvP builds for WoW: Forever (hand-kept, 2026-11-14 research: _reference/pvp-research.md). Each: the class, a key, the talentsforever.com link (version-12 code, decoded by popular_builds.decode onto forever-talents/), its source and date, what it is for, and live or beta. Popularity is what players planned or recommend, not performance: these are reference opponents and a check on our builds, never adopted for being popular.",
+  "builds": [
+    {"class": "warrior", "key": "tf-arms", "split": "31/20/0", "link": "talentsforever.com/warrior/60/03303213032215111-5500013501--12", "source": "talentsforever.com PvP tags, most-tagged warrior build (16 tags)", "date": "2026-11-04", "for": "pvp", "state": "live"},
+    {"class": "rogue", "key": "tf-hemo", "split": "16/7/28", "link": "talentsforever.com/rogue/60/30502021201-3200002-0232132313211211-12", "source": "talentsforever.com PvP tags, most-tagged rogue build (10 tags); also Perplexity's Hemorrhage build (Mobalytics rogue-pvp-guide, 2026-11-04)", "date": "2026-11-04", "for": "pvp", "state": "live"},
+    {"class": "priest", "key": "tf-shadow", "split": "14/3/34", "link": "talentsforever.com/priest/60/00531010103-3-45002221211312251-12", "source": "talentsforever.com PvP tags, most-tagged priest build (4 tags)", "date": "2026-11-04", "for": "pvp", "state": "live"},
+    {"class": "hunter", "key": "tf-mm", "split": "5/46/0", "link": "talentsforever.com/hunter/60/5-3453552011523151--12", "source": "talentsforever.com PvP tags, most-tagged hunter build (5 tags)", "date": "2026-11-04", "for": "pvp", "state": "live"},
+    {"class": "warlock", "key": "tf-affliction", "split": "40/11/0", "link": "talentsforever.com/warlock/60/03520323135211351-0050203001--12", "source": "talentsforever.com PvP tags, most-tagged warlock build (10 tags)", "date": "2026-11-04", "for": "pvp", "state": "live"},
+    {"class": "warlock", "key": "tf-soul-link", "split": "5/36/10", "link": "talentsforever.com/warlock/60/14-0055203201221301351-0055-12", "source": "talentsforever.com PvP tags (8 tags); Soul Link builds won the level-30 Forever Open (beta, 2026-10-17/18)", "date": "2026-11-04", "for": "duel", "state": "live"},
+    {"class": "paladin", "key": "tf-ret-prot", "split": "0/20/31", "link": "talentsforever.com/paladin/60/-50322130013-05233011201301351-12", "source": "talentsforever.com PvP tags, the most-tagged PvP build of any class (23 tags)", "date": "2026-11-04", "for": "pvp", "state": "live"},
+    {"class": "shaman", "key": "tf-enhancement", "split": "8/39/4", "link": "talentsforever.com/shaman/60/053-055030313051212251-04-12", "source": "talentsforever.com PvP tags, most-tagged shaman build (6 tags); before the 2026-11-12 Stormstrike and Maelstrom Weapon nerf", "date": "2026-11-04", "for": "pvp", "state": "live"},
+    {"class": "druid", "key": "tf-healer", "split": "16/11/24", "link": "talentsforever.com/druid/60/053222011-052021001-0553300102113-12", "source": "talentsforever.com PvP tags (11 tags): a healer with Heart of the Wild", "date": "2026-11-04", "for": "pvp", "state": "live"},
+    {"class": "druid", "key": "tf-feral-resto", "split": "11/24/16", "link": "talentsforever.com/druid/60/05102201-0523200212011212-05033031001-12", "source": "talentsforever.com PvP tags (6 tags)", "date": "2026-11-04", "for": "pvp", "state": "live"},
+    {"class": "mage", "key": "tf-frost", "split": "3/5/43", "link": "talentsforever.com/mage/60/003-5-053532330121331251-12", "source": "talentsforever.com PvP tags (3 tags)", "date": "2026-11-04", "for": "pvp", "state": "live"}
+  ],
+  "splits_only": [
+    {"class": "warrior", "split": "35/16/0", "for": "battleground", "source": "Mobalytics warrior-pvp-guide (Omnivore), Spearing Strike, Weaponmaster 5/5, Improved Hamstring 3/3", "date": "2026-11-07"},
+    {"class": "warrior", "split": "35/5/11", "for": "world PvP", "source": "Mobalytics warrior-pvp-guide (Omnivore): Iron Will, Last Stand", "date": "2026-11-07"},
+    {"class": "rogue", "split": "16/14/21", "for": "all-round (Backstab)", "source": "Mobalytics rogue-pvp-guide (Perplexity)", "date": "2026-11-04"},
+    {"class": "rogue", "split": "14/12/25", "for": "battleground (Backstab, Master of Deception, Heightened Senses)", "source": "Mobalytics rogue-pvp-guide (Perplexity)", "date": "2026-11-04"},
+    {"class": "rogue", "split": "32/10/9", "for": "Mutilate (advised against: no Preparation)", "source": "Mobalytics rogue-pvp-guide (Perplexity)", "date": "2026-11-04"},
+    {"class": "priest", "split": "25/3/22", "for": "duel (Penance, Silence)", "source": "Mobalytics priest-pvp-guide (Hydramist)", "date": "2026-11-06"},
+    {"class": "priest", "split": "35/16/0", "for": "group play and battlegrounds (Power Infusion)", "source": "Mobalytics priest-pvp-guide (Hydramist)", "date": "2026-11-06"},
+    {"class": "priest", "split": "26/25/0", "for": "large battlegrounds", "source": "Mobalytics priest-pvp-guide (Hydramist)", "date": "2026-11-06"},
+    {"class": "hunter", "split": "0/21/30", "for": "ranged Survival (Strider Kick, Counterattack, Clever Traps, Deterrence)", "source": "Mobalytics survival-hunter-pvp-guide (Feor)", "date": "2026-11-13"},
+    {"class": "hunter", "split": "0/26/25", "for": "Warsong Gulch", "source": "Mobalytics hunter-pvp-guide (Cpt)", "date": "2026-11-09"},
+    {"class": "warlock", "split": "7/7/37", "for": "Destruction", "source": "Mobalytics destruction-warlock-pvp-guide (Saucy722)", "date": "2026-11-10"}
+  ]
+}
