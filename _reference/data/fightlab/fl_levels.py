@@ -17,7 +17,9 @@ levels 20-60, weights level / 10). Level 60 is a proxy; what the pages rank on i
    likewise, and it scores each set of builds at its levels once). When the race's pick plays an order of its own (the previous
    record's winner, one of our builds), each neighbour carries that order with the move applied (`carry_order`; the stats model's
    order only when no legal path carries it): with the stats model's order every neighbour started behind by the gap between the two
-   orders, and no polish from such a pick had kept a step (2026-11-15).
+   orders, and no polish from such a pick had kept a step (2026-11-15). After a kept step the order polish also skips a move that
+   failed its confirmation when it changes the same builds at the same levels (`delta_key`): the time at a level depends only on that
+   level's build, so its seed-14 difference is the same and it would fail again (91 of 422 unconfirmed rounds in the logs).
 2. **The order** (`pick_order`): the (polished) winner is raced at levels 20-60 on the race's seed and fights with three orders, the
    stats model's, own tree first and own tree last (raid_path_leveling's variants; the lead tree is the one with most points); the
    fastest is the page's (`order_label`). When the polish changed the build, the race's old pick stays in the table as a finalist and
@@ -353,6 +355,12 @@ def at_levels(order, levels):
     return tuple(tuple(sorted(FR.allocation_at({"order": order}, L).items())) for L in levels)
 
 
+def delta_key(base_at, at, levels):
+    """The levels where two orders' builds differ, with both builds there (`at_levels` of each): with the full build the same, the
+    time at a level depends only on that level's build, so this fixes the difference of their scores on any seed."""
+    return tuple((L, x, y) for L, x, y in zip(levels, base_at, at) if x != y)
+
+
 def order_moves(order, rng, n, space, levels=(30, 40, 50), ok=None, skip=None):
     """Up to n random legal orders one block move away from `order`: a talent's block, or a part of it, moved up to three blocks
     earlier or later (the first ranks of a talent are worth more than the last: a split lets them come early and the rest late).
@@ -427,12 +435,29 @@ def order_polish(cls, spec, r, pool, space, save, cfg=None):
     # fails its confirmation stays out with every order of exactly its score; the rest waits in `pending` until a step is kept.
     scored = {at_levels(cur, lv)}
     pending, failed, twins = [], set(), 0
+    # (later the same day) after a kept step, a move that failed its confirmation can come back as another order changing the same builds
+    # at the same levels (the kept step changed others): its seed-14 difference in seconds is the same, so it fails again against the new
+    # order's seed-14 score unless that score moved the bar past it. 91 of the 422 unconfirmed rounds in the logs were such repeats. `lost`
+    # holds each failure's delta_key and seed-14 difference; `ref14` the current order's seed-14 score.
+    lost, ref14, repeats = {}, None, set()   # repeats: the builds-at-levels keys skipped this way
     steps, t0 = [], time.time()
     log(f"== {cls} {spec}: order polish of the {r.get('order_label', 'stats model')} order (levels {', '.join(map(str, lv))}, batches of "
         f"{cfg['batch']} block moves, {cfg['fights']} fights, kept at {cfg['min_gain']:.1%} on a second seed)")
     for rnd in range(1, cfg["rounds"] + 1):
-        cands = order_moves(cur, rng, cfg["batch"], space, lv, ok=lambda o: FO.FS.order_ok(cls, spec, {"allocation": alloc, "order": o}),
-                            skip=scored)
+        base_at = at_levels(cur, lv)
+
+        def fails_again(o):
+            if not lost:
+                return False
+            at = at_levels(o, lv)
+            k = delta_key(base_at, at, lv)
+            if k in lost and lost[k] > -cfg["min_gain"] * ref14:
+                repeats.add(at)
+                return True
+            return False
+
+        cands = order_moves(cur, rng, cfg["batch"], space, lv,
+                            ok=lambda o: FO.FS.order_ok(cls, spec, {"allocation": alloc, "order": o}) and not fails_again(o), skip=scored)
         scored.update(at_levels(o, lv) for o in cands)
         if not cands and not pending:
             log(f"    round {rnd}: no untried block move left")
@@ -455,6 +480,8 @@ def order_polish(cls, spec, r, pool, space, save, cfg=None):
         desc = order_diff(cur, o_best) + (f" (round {r0}'s batch)" if r0 != rnd else "")
         if c2[1] > c2[0] * (1 - cfg["min_gain"]):
             failed.add(s_best)
+            lost[delta_key(base_at, at_levels(o_best, lv), lv)] = c2[1] - c2[0]
+            ref14 = c2[0]
             n0 = len(pending)
             pending = [q for q in pending if q[0] != s_best]
             twins += n0 - 1 - len(pending)
@@ -463,11 +490,11 @@ def order_polish(cls, spec, r, pool, space, save, cfg=None):
         steps.append({"round": rnd, "change": desc, "seed1": round(s_best / ref - 1, 4), "seed2": round(c2[1] / c2[0] - 1, 4),
                       "seconds_30_50": round(c2[1], 2)})
         log(f"    round {rnd}: {desc}: {steps[-1]['seed1']:+.2%} on seed 13, {steps[-1]['seed2']:+.2%} on seed 14 ({c2[0]:.2f} -> {c2[1]:.2f} s): kept")
-        cur = o_best
+        cur, ref14 = o_best, c2[1]
         pending = []
     r["order_polish"] = {"date": FO.TODAY, "levels": lv, "from": r.get("order_label", "stats model"), "steps": steps,
-                         "orders_scored": len(scored) - 1, "twins_skipped": twins, "minutes": round((time.time() - t0) / 60, 1),
-                         "changed": bool(steps)}
+                         "orders_scored": len(scored) - 1, "twins_skipped": twins, "repeats_skipped": len(repeats),
+                         "minutes": round((time.time() - t0) / 60, 1), "changed": bool(steps)}
     save()
     return cur if steps else None
 

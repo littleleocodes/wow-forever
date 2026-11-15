@@ -982,7 +982,10 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   our build), each polish neighbour carries that order through its move (`carry_order`, 2026-11-15; a legal list schedule repairs what
   the move breaks) instead of the stats model's order for it: from such a pick every neighbour had started behind by the gap between
   the two orders, and none of the 12 such polishes in the logs had kept a step (75 of 169 from the stats model's order did); records
-  `level_polish.neighbour_orders`, a kept carried order is labelled "carried". A changed winner gets new values and a new certificate
+  `level_polish.neighbour_orders`, a kept carried order is labelled "carried". After a kept step the order polish skips a move that
+  failed its confirmation when it changes the same builds at the same levels (`delta_key`; record `repeats_skipped`): the time at a
+  level depends only on that level's build, so it would fail again (91 of 422 unconfirmed rounds in the logs). A changed winner gets
+  new values and a new certificate
   (`ensure_order` re-races the orders after a certificate re-search; `orders_raced`). `fl_levels.py <class> --orders` redoes the order
   choice alone. Records `level_polish`, `order_polish`, `order_label` and `finalist <split> (<order>)` race rows. `_reference/data/low_priority.py
   <script> [args]` runs a post-hoc job at below-normal CPU priority next to the queue.
