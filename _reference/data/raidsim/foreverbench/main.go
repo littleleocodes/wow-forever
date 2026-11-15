@@ -42,6 +42,7 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
+	"math"
 	"os"
 	"path/filepath"
 	"runtime"
@@ -99,7 +100,8 @@ type config struct {
 	Seed               int64           `json:"seed"`
 	IsTank             bool            `json:"isTank"`
 	// "statweights": true prints, per build, the simulator's stat weights (DPS per point of each stat, weapon DPS as pseudo-stats)
-	// instead of a race row (2026-09-30: raidsim/gear_opt.py builds equal-tier gear sets from them)
+	// instead of a race row (2026-09-30: raidsim/gear_opt.py builds equal-tier gear sets from them), and since 2026-11-14 each weight's
+	// standard error ("weights_se"; tanks also "dtps_se" for the damage-taken weights; raidsim/weight_errors.py)
 	StatWeights        bool            `json:"statweights"`
 	// "spells": true prints, per build, the spell and aura ids the character (and its pets) registers, instead of a race row
 	// (2026-10-18, the port: the official simulator registers one rank per spell, so rotations naming another rank cast nothing;
@@ -596,12 +598,14 @@ func main() {
 				w[proto.PseudoStat(i).String()] = v
 			}
 			out := map[string]interface{}{"label": b.Label, "weights": w, "seconds": time.Since(t0).Seconds()}
+			out["weights_se"] = weightSE(pick, res.SampleCounts)
 			if cfg.IsTank { // tanks: threat per point, and damage taken per point (lower is better)
 				d := map[string]float64{}
 				for i, v := range res.Dtps.Weights.Stats {
 					d[proto.Stat(i).String()] = v
 				}
 				out["dtps_weights"] = d
+				out["dtps_se"] = weightSE(res.Dtps, res.SampleCounts)
 			}
 			line, _ := json.Marshal(out)
 			fmt.Println(string(line))
@@ -679,6 +683,29 @@ func (j simJob) run(single bool) string {
 	}
 	line, _ := json.Marshal(out)
 	return string(line)
+}
+
+// weightSE: the standard error of each stat's and pseudo-stat's weight in one metric (2026-11-14, the gear add-on's noise band for raid
+// and tank values): the simulator's weights_stdev, the standard deviation of the per-iteration paired differences (each stat run's
+// iteration against the baseline's at the same seed, over the step), over the root of sample_counts, the paired samples behind the
+// weight (both sides of a two-sided stat; hit and expertise run above the baseline only). Stats with no samples (not weighed, or a hard
+// cap that repeats the baseline) are left out.
+func weightSE(v *proto.StatWeightValues, counts *proto.UnitStats) map[string]float64 {
+	se := map[string]float64{}
+	if v == nil || v.WeightsStdev == nil || counts == nil {
+		return se
+	}
+	for i, sd := range v.WeightsStdev.Stats {
+		if i < len(counts.Stats) && counts.Stats[i] > 0 {
+			se[proto.Stat(i).String()] = sd / math.Sqrt(counts.Stats[i])
+		}
+	}
+	for i, sd := range v.WeightsStdev.PseudoStats {
+		if i < len(counts.PseudoStats) && counts.PseudoStats[i] > 0 {
+			se[proto.PseudoStat(i).String()] = sd / math.Sqrt(counts.PseudoStats[i])
+		}
+	}
+	return se
 }
 
 func containsID(ids []int32, id int32) bool {

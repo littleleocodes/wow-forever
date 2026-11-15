@@ -1,0 +1,5179 @@
+{
+ "entries": {
+  "hit:druid-balance": {
+   "kind": "hit",
+   "class": "druid",
+   "spec": "Balance",
+   "source": "raidsim/hit-below-cap.json specs.druid-balance",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-druid-balance.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-druid-balance.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-druid-balance.json",
+    "apl": "_reference/data/raidsim/apls/druid/balance-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "0532220115501051--5553",
+    "bonus_stats": {
+     "StatHitRating": -20.0
+    },
+    "gear": "18727/1509 18814 19050 272411 21183/1891 21186/1883 21178 18405 252486/1509 254013/911 19147 275982 18820 272438 20069/2504 0 272430"
+   },
+   "seconds": 16.4,
+   "weights": {
+    "StatArcaneDamage": 0.4876545,
+    "StatCritRating": 0.4536066,
+    "StatHasteRating": 0.790587,
+    "StatHitRating": 0.6869843,
+    "StatIntellect": 0.1378382,
+    "StatNatureDamage": 0.1266935,
+    "StatSpellDamage": 0.6143481,
+    "StatSpellPiercing": 1.189771,
+    "StatSpirit": -0.0006395749
+   },
+   "se": {
+    "StatArcaneDamage": 0.0004167257,
+    "StatCritRating": 0.009802971,
+    "StatHasteRating": 0.03422202,
+    "StatHitRating": 0.03397125,
+    "StatIntellect": 0.006425669,
+    "StatNatureDamage": 6.717292e-05,
+    "StatSpellDamage": 0.000426331,
+    "StatSpellPiercing": 0.01021839,
+    "StatSpirit": 0.001164593
+   }
+  },
+  "hit:druid-feral-combat": {
+   "kind": "hit",
+   "class": "druid",
+   "spec": "Feral Combat",
+   "source": "raidsim/hit-below-cap.json specs.druid-feral-combat",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-druid-feral-combat.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-druid-feral-combat.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-druid-feral-combat.json",
+    "apl": "_reference/data/raidsim/apls/druid/feral-cat-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "050022-55000032123012125001-054",
+    "bonus_stats": {
+     "StatHitRating": -10.0
+    },
+    "gear": "279253/1508 19491 271955 13340/849 252484/1891 18375/1885 271948/1887 272396 15065/1508 20715/1887 18821 21182 11815 13965 19170/1900 0 23197"
+   },
+   "seconds": 65.6,
+   "weights": {
+    "PseudoStatMainHandDps": 2.235787,
+    "StatAgility": 0.6846573,
+    "StatArmorPenetration": 0.07967245,
+    "StatAttackPower": 0.2554484,
+    "StatCritRating": 0.5342201,
+    "StatExpertiseRating": 0.4692255,
+    "StatFeralAttackPower": 0.2554484,
+    "StatHasteRating": 0.3598633,
+    "StatHitRating": 0.4899898,
+    "StatIntellect": 0.0004406153,
+    "StatSpellPiercing": 0.01223442,
+    "StatSpirit": 6.493623e-05,
+    "StatStrength": 0.6130762
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.0011608,
+    "StatAgility": 0.00738361,
+    "StatArmorPenetration": 5.674126e-05,
+    "StatAttackPower": 0.0001002765,
+    "StatCritRating": 0.007136406,
+    "StatExpertiseRating": 0.02701916,
+    "StatFeralAttackPower": 0.0001002765,
+    "StatHasteRating": 0.02373006,
+    "StatHitRating": 0.02718335,
+    "StatIntellect": 0.0001045288,
+    "StatSpellPiercing": 0.0003270402,
+    "StatSpirit": 0.0001529743,
+    "StatStrength": 0.0002406636
+   }
+  },
+  "hit:hunter-hybrid-beast-mastery-marksmanship": {
+   "kind": "hit",
+   "class": "hunter",
+   "spec": "Hybrid Beast Mastery/Marksmanship",
+   "source": "raidsim/hit-below-cap.json specs.hunter-hybrid-beast-mastery-marksmanship",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-hunter-hybrid-beast-mastery-marksmanship.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-hunter-hybrid-beast-mastery-marksmanship.json)",
+     "racials": "off",
+     "differences": 1
+    },
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-hunter-hybrid-beast-mastery-marksmanship.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-hunter-hybrid-beast-mastery-marksmanship.json",
+    "apl": "_reference/data/raidsim/apls/hunter/bm-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "532000150510123-00530503005-2",
+    "bonus_stats": {
+     "StatHitRating": -63.0
+    },
+    "gear": "252605/1508 18404 271955 21187/849 252483/1891 16681/1885 271948/1887 19163 16678/1508 16711/1887 21182 272408 13965 18537 250619/1900 0 18713/2523"
+   },
+   "seconds": 56.5,
+   "weights": {
+    "PseudoStatRangedDps": 1.853121,
+    "StatAgility": 0.7176099,
+    "StatArmorPenetration": 0.06285904,
+    "StatCritRating": 0.7080239,
+    "StatExpertiseRating": 0.2464646,
+    "StatHasteRating": 0.3328952,
+    "StatHitRating": 0.9706068,
+    "StatIntellect": 0.5785103,
+    "StatRangedAttackPower": 0.2225128,
+    "StatSpellPiercing": 0.2935982,
+    "StatSpirit": 0.2199793
+   },
+   "se": {
+    "PseudoStatRangedDps": 0.001345096,
+    "StatAgility": 0.01162566,
+    "StatArmorPenetration": 4.802638e-05,
+    "StatCritRating": 0.01515123,
+    "StatExpertiseRating": 0.03350662,
+    "StatHasteRating": 0.02816766,
+    "StatHitRating": 0.03749171,
+    "StatIntellect": 0.008754652,
+    "StatRangedAttackPower": 0.0001138372,
+    "StatSpellPiercing": 0.001871316,
+    "StatSpirit": 0.009736345
+   }
+  },
+  "hit:hunter-marksmanship": {
+   "kind": "hit",
+   "class": "hunter",
+   "spec": "Marksmanship",
+   "source": "raidsim/hit-below-cap.json specs.hunter-marksmanship",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-hunter-marksmanship.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-hunter-marksmanship.json)",
+     "racials": "off",
+     "differences": 1
+    },
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-hunter-marksmanship.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-hunter-marksmanship.json",
+    "apl": "_reference/data/raidsim/apls/hunter/mm-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "53200005050001-005155000150305",
+    "bonus_stats": {
+     "StatHitRating": -63.0
+    },
+    "gear": "252605/1508 18404 271955 21187/849 252483/1891 16681/1885 271948/1887 19163 16678/1508 16711/1887 272408 21182 13965 18537 250619/1900 0 18713/2523"
+   },
+   "seconds": 51.7,
+   "weights": {
+    "PseudoStatRangedDps": 1.98823,
+    "StatAgility": 0.6676469,
+    "StatArmorPenetration": 0.06881173,
+    "StatCritRating": 0.6399679,
+    "StatExpertiseRating": 0.1831705,
+    "StatHasteRating": 0.5334733,
+    "StatHitRating": 0.8495645,
+    "StatIntellect": 0.2378871,
+    "StatRangedAttackPower": 0.2162771,
+    "StatSpellPiercing": 0.2455296,
+    "StatSpirit": 6.214825e-06
+   },
+   "se": {
+    "PseudoStatRangedDps": 0.001400587,
+    "StatAgility": 0.003491193,
+    "StatArmorPenetration": 5.121708e-05,
+    "StatCritRating": 0.005206691,
+    "StatExpertiseRating": 0.01338831,
+    "StatHasteRating": 0.02774234,
+    "StatHitRating": 0.02601966,
+    "StatIntellect": 0.0001228431,
+    "StatRangedAttackPower": 0.0001104759,
+    "StatSpellPiercing": 0.001770669,
+    "StatSpirit": 5.559122e-05
+   }
+  },
+  "hit:hunter-survival": {
+   "kind": "hit",
+   "class": "hunter",
+   "spec": "Survival",
+   "source": "raidsim/hit-below-cap.json specs.hunter-survival",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-hunter-survival.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-hunter-survival.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-hunter-survival.json",
+    "apl": "_reference/data/raidsim/apls/hunter/melee-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "5-005055001-50023023005022213",
+    "bonus_stats": {
+     "StatHitRating": -60.0
+    },
+    "gear": "252605/1508 18404 271955 21187/849 252483/1891 18375/1885 271948/1887 20043 15062/1508 13967/1887 18821 21182 11815 272437 19168/1900 279259/1900 18713"
+   },
+   "seconds": 44.8,
+   "weights": {
+    "PseudoStatMainHandDps": 2.058202,
+    "PseudoStatOffHandDps": 0.8108866,
+    "StatAgility": 0.4271219,
+    "StatArmorPenetration": 0.08651741,
+    "StatAttackPower": 0.2156584,
+    "StatCritRating": 0.4762688,
+    "StatExpertiseRating": 0.8549652,
+    "StatHasteRating": 0.479408,
+    "StatHitRating": 0.9108749,
+    "StatIntellect": 0.2535473,
+    "StatRangedAttackPower": 0.009689698,
+    "StatSpellPiercing": 0.07268056,
+    "StatSpirit": 0.0,
+    "StatStrength": 0.2372243
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.001900348,
+    "PseudoStatOffHandDps": 0.0010576,
+    "StatAgility": 0.002302653,
+    "StatArmorPenetration": 6.901562e-05,
+    "StatAttackPower": 0.0001711096,
+    "StatCritRating": 0.003446679,
+    "StatExpertiseRating": 0.03374019,
+    "StatHasteRating": 0.02812842,
+    "StatHitRating": 0.03399626,
+    "StatIntellect": 0.0003730702,
+    "StatRangedAttackPower": 1.808834e-05,
+    "StatSpellPiercing": 0.0008657502,
+    "StatSpirit": 0.0,
+    "StatStrength": 0.0001882205
+   }
+  },
+  "hit:mage-arcane": {
+   "kind": "hit",
+   "class": "mage",
+   "spec": "Arcane",
+   "source": "raidsim/hit-below-cap.json specs.mage-arcane",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-mage-arcane.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-mage-arcane.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-mage-arcane.json",
+    "apl": "_reference/data/raidsim/apls/mage/arcane-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "050205203100301531-505001002-043",
+    "bonus_stats": {
+     "StatHitRating": -48.0
+    },
+    "gear": "18727/1509 18814 19050 272411 14152/1891 21186/1883 14146 18405 19165/1509 22231/911 19147 19147 18820 13968 22383/2504 17737 249385"
+   },
+   "seconds": 27.4,
+   "weights": {
+    "StatArcaneDamage": 0.3291385,
+    "StatCritRating": 0.3696146,
+    "StatFireDamage": 0.1239464,
+    "StatHasteRating": 0.26173,
+    "StatHitRating": 0.8258386,
+    "StatIntellect": 0.5090071,
+    "StatSpellDamage": 0.4530848,
+    "StatSpellPiercing": 1.123344,
+    "StatSpirit": 0.4458255
+   },
+   "se": {
+    "StatArcaneDamage": 0.0005376028,
+    "StatCritRating": 0.004480541,
+    "StatFireDamage": 0.0002681666,
+    "StatHasteRating": 0.0251089,
+    "StatHitRating": 0.03753599,
+    "StatIntellect": 0.03391841,
+    "StatSpellDamage": 0.0004716016,
+    "StatSpellPiercing": 0.003274621,
+    "StatSpirit": 0.0319545
+   }
+  },
+  "hit:mage-fire": {
+   "kind": "hit",
+   "class": "mage",
+   "spec": "Fire",
+   "source": "raidsim/hit-below-cap.json specs.mage-fire",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-mage-fire.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-mage-fire.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-mage-fire.json",
+    "apl": "_reference/data/raidsim/apls/mage/fire-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "0502152000001-35500201230133031-003",
+    "bonus_stats": {
+     "StatHitRating": -38.0
+    },
+    "gear": "18727/1509 18814 19050 272411 14152/1891 21186/1883 14146 18405 19165/1509 13369/911 19147 19147 18820 13968 22383/2504 17737 11748"
+   },
+   "seconds": 23.8,
+   "weights": {
+    "StatArcaneDamage": 0.03159988,
+    "StatCritRating": 0.5720411,
+    "StatFireDamage": 0.5623898,
+    "StatHasteRating": 0.4052689,
+    "StatHitRating": 1.173853,
+    "StatIntellect": 0.6475473,
+    "StatSpellDamage": 0.5939897,
+    "StatSpellPiercing": 1.229181,
+    "StatSpirit": 0.5049597
+   },
+   "se": {
+    "StatArcaneDamage": 0.0001956014,
+    "StatCritRating": 0.02484932,
+    "StatFireDamage": 0.0006035039,
+    "StatHasteRating": 0.06623617,
+    "StatHitRating": 0.06598909,
+    "StatIntellect": 0.03709,
+    "StatSpellDamage": 0.000648722,
+    "StatSpellPiercing": 0.004368086,
+    "StatSpirit": 0.0348056
+   }
+  },
+  "hit:mage-frost": {
+   "kind": "hit",
+   "class": "mage",
+   "spec": "Frost",
+   "source": "raidsim/hit-below-cap.json specs.mage-frost",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-mage-frost.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-mage-frost.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-mage-frost.json",
+    "apl": "_reference/data/raidsim/apls/mage/frost-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "0502252031000001--2535300301203012",
+    "bonus_stats": {
+     "StatHitRating": -30.0
+    },
+    "gear": "18727/1509 18814 19050 272411 14152/1891 21186/1883 14146 18405 19165/1509 254013/911 19147 19147 18820 13968 22383/2504 7685 19108"
+   },
+   "seconds": 21.6,
+   "weights": {
+    "StatArcaneDamage": 0.2013915,
+    "StatCritRating": 0.2899834,
+    "StatFireDamage": 0.001289392,
+    "StatFrostDamage": 0.2372218,
+    "StatHasteRating": 0.5789428,
+    "StatHitRating": 0.7222045,
+    "StatIntellect": 0.1942826,
+    "StatSpellDamage": 0.4399027,
+    "StatSpellPiercing": 1.025549,
+    "StatSpirit": -0.0008019038
+   },
+   "se": {
+    "StatArcaneDamage": 0.0002561959,
+    "StatCritRating": 0.004150696,
+    "StatFireDamage": 1.92875e-05,
+    "StatFrostDamage": 0.0002948205,
+    "StatHasteRating": 0.01678549,
+    "StatHitRating": 0.02383946,
+    "StatIntellect": 0.002786032,
+    "StatSpellDamage": 0.0002872859,
+    "StatSpellPiercing": 0.003082858,
+    "StatSpirit": 0.001757391
+   }
+  },
+  "hit:mage-hybrid-arcane-frost": {
+   "kind": "hit",
+   "class": "mage",
+   "spec": "Hybrid Arcane/Frost",
+   "source": "raidsim/hit-below-cap.json specs.mage-hybrid-arcane-frost",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-mage-hybrid-arcane-frost.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-mage-hybrid-arcane-frost.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-mage-hybrid-arcane-frost.json",
+    "apl": "_reference/data/raidsim/apls/mage/frost-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "0322052030003011--05350003012130024",
+    "bonus_stats": {
+     "StatHitRating": -48.0
+    },
+    "gear": "18727/1509 18814 19050 272411 14152/1891 21186/1883 14146 18405 19165/1509 22231/911 19147 19147 18820 13968 22383/2504 17737 249385"
+   },
+   "seconds": 20.0,
+   "weights": {
+    "StatArcaneDamage": 0.09252611,
+    "StatCritRating": 0.2914339,
+    "StatFireDamage": 0.00180247,
+    "StatFrostDamage": 0.3597828,
+    "StatHasteRating": 0.5213274,
+    "StatHitRating": 0.6737011,
+    "StatIntellect": 0.07409614,
+    "StatSpellDamage": 0.4541114,
+    "StatSpellPiercing": 0.9632626,
+    "StatSpirit": 0.000584648
+   },
+   "se": {
+    "StatArcaneDamage": 0.0002615038,
+    "StatCritRating": 0.004339116,
+    "StatFireDamage": 1.902255e-05,
+    "StatFrostDamage": 0.0003750977,
+    "StatHasteRating": 0.007091302,
+    "StatHitRating": 0.02309098,
+    "StatIntellect": 0.002618632,
+    "StatSpellDamage": 0.0003333278,
+    "StatSpellPiercing": 0.003175253,
+    "StatSpirit": 0.0004462606
+   }
+  },
+  "hit:mage-hybrid-fire-frost": {
+   "kind": "hit",
+   "class": "mage",
+   "spec": "Hybrid Fire/Frost",
+   "source": "raidsim/hit-below-cap.json specs.mage-hybrid-fire-frost",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-mage-hybrid-fire-frost.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-mage-hybrid-fire-frost.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-mage-hybrid-fire-frost.json",
+    "apl": "_reference/data/raidsim/apls/mage/frostfire-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "0410011-32510301230133031-20350003",
+    "bonus_stats": {
+     "StatHitRating": -38.0
+    },
+    "gear": "18727/1509 18814 19050 272411 14152/1891 21186/1883 14146 18405 19165/1509 13369/911 19147 19147 18820 13968 22383/2504 17737 11748"
+   },
+   "seconds": 21.8,
+   "weights": {
+    "StatCritRating": 0.5437414,
+    "StatFireDamage": 0.5656458,
+    "StatHasteRating": 0.3728355,
+    "StatHitRating": 0.8970372,
+    "StatIntellect": 0.1144637,
+    "StatSpellDamage": 0.5656458,
+    "StatSpellPiercing": 0.6558591,
+    "StatSpirit": 0.0358635
+   },
+   "se": {
+    "StatCritRating": 0.02000976,
+    "StatFireDamage": 0.0005513563,
+    "StatHasteRating": 0.03918392,
+    "StatHitRating": 0.0490886,
+    "StatIntellect": 0.03186244,
+    "StatSpellDamage": 0.0005513563,
+    "StatSpellPiercing": 0.003889685,
+    "StatSpirit": 0.02426948
+   }
+  },
+  "hit:paladin-retribution": {
+   "kind": "hit",
+   "class": "paladin",
+   "spec": "Retribution",
+   "source": "raidsim/hit-below-cap.json specs.paladin-retribution",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-paladin-retribution.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-paladin-retribution.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-paladin-retribution.json",
+    "apl": "_reference/data/raidsim/apls/paladin/ret-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "0502320122-051-1523330100130033",
+    "bonus_stats": {
+     "StatHitRating": -120.0
+    },
+    "gear": "12640/1506 18404 20058 272411/849 252483/1891 21186/1885 21278/927 22232 22385/1506 20049/1887 21182 275981 11815 18820 21188/1900 0 272435"
+   },
+   "seconds": 60.7,
+   "weights": {
+    "PseudoStatMainHandDps": 2.17892,
+    "StatAgility": 0.2610134,
+    "StatArmorPenetration": 0.03483494,
+    "StatAttackPower": 0.1542017,
+    "StatCritRating": 0.356844,
+    "StatExpertiseRating": 0.6556355,
+    "StatHasteRating": 0.6834055,
+    "StatHitRating": 0.7659954,
+    "StatHolyDamage": 0.2491853,
+    "StatIntellect": 0.1052943,
+    "StatSpellDamage": 0.2491853,
+    "StatSpirit": -1.264043e-05,
+    "StatStrength": 0.3700841
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.002566631,
+    "StatAgility": 0.004162065,
+    "StatArmorPenetration": 5.058236e-05,
+    "StatAttackPower": 0.0001829524,
+    "StatCritRating": 0.003953176,
+    "StatExpertiseRating": 0.02349171,
+    "StatHasteRating": 0.02165612,
+    "StatHitRating": 0.0237004,
+    "StatHolyDamage": 0.000180403,
+    "StatIntellect": 0.0001771303,
+    "StatSpellDamage": 0.000180403,
+    "StatSpirit": 1.010441e-05,
+    "StatStrength": 0.0004390859
+   }
+  },
+  "hit:priest-hybrid-discipline-holy": {
+   "kind": "hit",
+   "class": "priest",
+   "spec": "Hybrid Discipline/Holy",
+   "source": "raidsim/hit-below-cap.json specs.priest-hybrid-discipline-holy",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-priest-hybrid-discipline-holy.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-priest-hybrid-discipline-holy.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-priest-hybrid-discipline-holy.json",
+    "apl": "_reference/data/raidsim/apls/priest/smite-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "505235231030001001-30505101002-3",
+    "bonus_stats": {
+     "StatHitRating": -20.0
+    },
+    "gear": "18727/1509 18814 19059 272411 21183/1891 21186/1883 20716 18405 19165/1509 254013/911 19147 20682 18820 272438 20070/2504 7685 22408"
+   },
+   "seconds": 19.7,
+   "weights": {
+    "StatCritRating": 0.1995715,
+    "StatHasteRating": 0.1697957,
+    "StatHitRating": 0.2471402,
+    "StatHolyDamage": 0.3546148,
+    "StatIntellect": 0.1406976,
+    "StatShadowDamage": 0.1481316,
+    "StatSpellDamage": 0.5027464,
+    "StatSpellPiercing": 0.2448517,
+    "StatSpirit": 0.04670142
+   },
+   "se": {
+    "StatCritRating": 0.002239867,
+    "StatHasteRating": 0.01166934,
+    "StatHitRating": 0.01035036,
+    "StatHolyDamage": 0.0001149783,
+    "StatIntellect": 0.006841799,
+    "StatShadowDamage": 9.805091e-05,
+    "StatSpellDamage": 0.000157432,
+    "StatSpellPiercing": 0.001712646,
+    "StatSpirit": 0.006225888
+   }
+  },
+  "hit:priest-shadow": {
+   "kind": "hit",
+   "class": "priest",
+   "spec": "Shadow",
+   "source": "raidsim/hit-below-cap.json specs.priest-shadow",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-priest-shadow.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-priest-shadow.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-priest-shadow.json",
+    "apl": "_reference/data/raidsim/apls/priest/shadow-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "52500500003--50052101231302051",
+    "bonus_stats": {
+     "StatHitRating": -20.0
+    },
+    "gear": "14111/1509 18814 19050 272411 21183/1891 21186/1883 14146 18405 19165/1509 254013/911 19147 275982 18820 272438 20070/2504 10770 22408"
+   },
+   "seconds": 22.1,
+   "weights": {
+    "StatCritRating": 0.4668305,
+    "StatHasteRating": 0.2664337,
+    "StatHitRating": 0.5771087,
+    "StatIntellect": 0.1268603,
+    "StatShadowDamage": 0.4853457,
+    "StatSpellDamage": 0.4853457,
+    "StatSpellPiercing": 1.00876,
+    "StatSpirit": -0.003641822
+   },
+   "se": {
+    "StatCritRating": 0.00440511,
+    "StatHasteRating": 0.0072399,
+    "StatHitRating": 0.0211036,
+    "StatIntellect": 0.002731196,
+    "StatShadowDamage": 0.0002182471,
+    "StatSpellDamage": 0.0002182471,
+    "StatSpellPiercing": 0.003578933,
+    "StatSpirit": 0.003792341
+   }
+  },
+  "hit:rogue-assassination": {
+   "kind": "hit",
+   "class": "rogue",
+   "spec": "Assassination",
+   "source": "raidsim/hit-below-cap.json specs.rogue-assassination",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-rogue-assassination.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-rogue-assassination.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-rogue-assassination.json",
+    "apl": "_reference/data/raidsim/apls/rogue/assassination-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "0053231022151003-305313000001221-002",
+    "bonus_stats": {
+     "StatHitRating": -73.0
+    },
+    "gear": "279253/1508 18404 271955 21187/849 252483/1891 18375/1885 271948/1887 272395 15062/1508 16711/1887 18821 21182 11815 18537 19166/1900 12783/1900 18323"
+   },
+   "seconds": 48.4,
+   "weights": {
+    "PseudoStatMainHandDps": 1.869287,
+    "PseudoStatOffHandDps": 0.6610343,
+    "StatAgility": 0.3311986,
+    "StatArmorPenetration": 0.08519433,
+    "StatAttackPower": 0.2122648,
+    "StatCritRating": 0.2015185,
+    "StatExpertiseRating": 0.859551,
+    "StatHasteRating": 0.3282019,
+    "StatHitRating": 0.9409835,
+    "StatSpellPiercing": 0.0751181,
+    "StatStrength": 0.2334913
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.001336389,
+    "PseudoStatOffHandDps": 0.0006493873,
+    "StatAgility": 0.005194397,
+    "StatArmorPenetration": 5.417878e-05,
+    "StatAttackPower": 0.0001177293,
+    "StatCritRating": 0.005937476,
+    "StatExpertiseRating": 0.02139346,
+    "StatHasteRating": 0.02027281,
+    "StatHitRating": 0.02162044,
+    "StatSpellPiercing": 0.0004505658,
+    "StatStrength": 0.0001295022
+   }
+  },
+  "hit:rogue-combat": {
+   "kind": "hit",
+   "class": "rogue",
+   "spec": "Combat",
+   "source": "raidsim/hit-below-cap.json specs.rogue-combat",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-rogue-combat.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-rogue-combat.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-rogue-combat.json",
+    "apl": "_reference/data/raidsim/apls/rogue/combat-daggers-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "2053232020101-30532300000123215",
+    "bonus_stats": {
+     "StatHitRating": -80.0
+    },
+    "gear": "279253/1508 18404 271955 21187/849 252483/1891 18375/1885 271948/1887 272395 15062/1508 16711/1887 275981 18821 11815 19120 19166/1900 12783/1900 18323"
+   },
+   "seconds": 45.5,
+   "weights": {
+    "PseudoStatMainHandDps": 1.882474,
+    "PseudoStatOffHandDps": 0.806888,
+    "StatAgility": 0.3047156,
+    "StatArmorPenetration": 0.0840332,
+    "StatAttackPower": 0.215772,
+    "StatCritRating": 0.1364625,
+    "StatExpertiseRating": 0.8818685,
+    "StatHasteRating": 0.3525954,
+    "StatHitRating": 0.9555551,
+    "StatSpellPiercing": 0.04898716,
+    "StatStrength": 0.2373492
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.001336626,
+    "PseudoStatOffHandDps": 0.0007830417,
+    "StatAgility": 0.002044464,
+    "StatArmorPenetration": 4.987889e-05,
+    "StatAttackPower": 0.0001166337,
+    "StatCritRating": 0.002290705,
+    "StatExpertiseRating": 0.01778595,
+    "StatHasteRating": 0.01716587,
+    "StatHitRating": 0.01818828,
+    "StatSpellPiercing": 0.0003672151,
+    "StatStrength": 0.0001282971
+   }
+  },
+  "hit:rogue-hybrid-assassination-combat": {
+   "kind": "hit",
+   "class": "rogue",
+   "spec": "Hybrid Assassination/Combat",
+   "source": "raidsim/hit-below-cap.json specs.rogue-hybrid-assassination-combat",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-rogue-hybrid-assassination-combat.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-rogue-hybrid-assassination-combat.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-rogue-hybrid-assassination-combat.json",
+    "apl": "_reference/data/raidsim/apls/rogue/assassination-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "0053031122125103-304303000201132",
+    "bonus_stats": {
+     "StatHitRating": -80.0
+    },
+    "gear": "279253/1508 18404 271955 21187/849 252483/1891 18375/1885 271948/1887 272395 15062/1508 16711/1887 18821 21182 11815 19120 19166/1900 12783/1900 18323"
+   },
+   "seconds": 50.2,
+   "weights": {
+    "PseudoStatMainHandDps": 1.908927,
+    "PseudoStatOffHandDps": 0.7703101,
+    "StatAgility": 0.3776441,
+    "StatArmorPenetration": 0.09336755,
+    "StatAttackPower": 0.2316303,
+    "StatCritRating": 0.2653481,
+    "StatExpertiseRating": 0.9847625,
+    "StatHasteRating": 0.3534407,
+    "StatHitRating": 1.096727,
+    "StatSpellPiercing": 0.1125761,
+    "StatStrength": 0.2547933
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.001365046,
+    "PseudoStatOffHandDps": 0.0007672729,
+    "StatAgility": 0.007486697,
+    "StatArmorPenetration": 6.282082e-05,
+    "StatAttackPower": 0.0001295022,
+    "StatCritRating": 0.008455811,
+    "StatExpertiseRating": 0.02799834,
+    "StatHasteRating": 0.02602977,
+    "StatHitRating": 0.02840149,
+    "StatSpellPiercing": 0.0005612109,
+    "StatStrength": 0.0001424524
+   }
+  },
+  "hit:rogue-subtlety": {
+   "kind": "hit",
+   "class": "rogue",
+   "spec": "Subtlety",
+   "source": "raidsim/hit-below-cap.json specs.rogue-subtlety",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-rogue-subtlety.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-rogue-subtlety.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-rogue-subtlety.json",
+    "apl": "_reference/data/raidsim/apls/rogue/subtlety-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "0053230020141--3352331313010011",
+    "bonus_stats": {
+     "StatHitRating": -90.0
+    },
+    "gear": "279253/1508 18404 271955 21187/849 252483/1891 18375/1885 271948/1887 272395 15062/1508 16711/1887 18821 275981 11815 19120 19168/1900 279259/1900 18323"
+   },
+   "seconds": 56.6,
+   "weights": {
+    "PseudoStatMainHandDps": 1.586663,
+    "PseudoStatOffHandDps": 0.5106963,
+    "StatAgility": 0.3012471,
+    "StatArmorPenetration": 0.055702,
+    "StatAttackPower": 0.2055112,
+    "StatCritRating": 0.1584022,
+    "StatExpertiseRating": 0.9815417,
+    "StatHasteRating": 0.2531949,
+    "StatHitRating": 1.227521,
+    "StatSpellPiercing": 0.05869693,
+    "StatStrength": 0.2260623
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.001460004,
+    "PseudoStatOffHandDps": 0.0005680528,
+    "StatAgility": 0.001452585,
+    "StatArmorPenetration": 4.648051e-05,
+    "StatAttackPower": 0.0001537353,
+    "StatCritRating": 0.001643428,
+    "StatExpertiseRating": 0.04722,
+    "StatHasteRating": 0.04364249,
+    "StatHitRating": 0.04855508,
+    "StatSpellPiercing": 0.0003990125,
+    "StatStrength": 0.0001691088
+   }
+  },
+  "hit:shaman-elemental": {
+   "kind": "hit",
+   "class": "shaman",
+   "spec": "Elemental",
+   "source": "raidsim/hit-below-cap.json specs.shaman-elemental",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-shaman-elemental.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-shaman-elemental.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-shaman-elemental.json",
+    "apl": "_reference/data/raidsim/apls/shaman/elemental-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "550033100301135-053-05305",
+    "bonus_stats": {
+     "StatHitRating": -50.0
+    },
+    "gear": "252604/1509 18814 19050 272411 21183/1891 21186/1883 12632 18405 252486/1509 22240/911 19147 19147 18820 13968 20069/2504 0 23199"
+   },
+   "seconds": 26.8,
+   "weights": {
+    "StatCritRating": 0.4018152,
+    "StatFireDamage": 0.07329929,
+    "StatHasteRating": 0.6832454,
+    "StatHitRating": 0.7705143,
+    "StatIntellect": 0.1686961,
+    "StatNatureDamage": 0.4842459,
+    "StatSpellDamage": 0.5575452,
+    "StatSpellPiercing": 1.2212,
+    "StatSpirit": 0.05907484
+   },
+   "se": {
+    "StatCritRating": 0.004565584,
+    "StatFireDamage": 5.403105e-05,
+    "StatHasteRating": 0.03759122,
+    "StatHitRating": 0.04188551,
+    "StatIntellect": 0.02517649,
+    "StatNatureDamage": 0.0003824048,
+    "StatSpellDamage": 0.0003908546,
+    "StatSpellPiercing": 0.004493971,
+    "StatSpirit": 0.01897081
+   }
+  },
+  "hit:shaman-enhancement": {
+   "kind": "hit",
+   "class": "shaman",
+   "spec": "Enhancement",
+   "source": "raidsim/hit-below-cap.json specs.shaman-enhancement",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-shaman-enhancement.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-shaman-enhancement.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-shaman-enhancement.json",
+    "apl": "_reference/data/raidsim/apls/shaman/enhancement-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "5005031-155030010151012051-051",
+    "bonus_stats": {
+     "StatHitRating": -70.0
+    },
+    "gear": "252605/1506 18404 13374 272411/849 16688/1891 16714/1885 21278/927 18405 252486/1506 14616/1887 21182 272406 11815 18820 21188/1900 0 23199"
+   },
+   "seconds": 29.9,
+   "weights": {
+    "PseudoStatMainHandDps": 2.314895,
+    "StatAgility": 0.3299248,
+    "StatArmorPenetration": 0.07989407,
+    "StatAttackPower": 0.1650111,
+    "StatCritRating": 0.5383422,
+    "StatExpertiseRating": 0.7538858,
+    "StatFireDamage": 0.08150704,
+    "StatHasteRating": 0.4799218,
+    "StatHitRating": 1.11086,
+    "StatIntellect": 0.5234211,
+    "StatNatureDamage": 0.1470969,
+    "StatSpellDamage": 0.2324517,
+    "StatSpellPiercing": 0.5424416,
+    "StatSpirit": 0.02998577,
+    "StatStrength": 0.3630243
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.002203923,
+    "StatAgility": 0.01228415,
+    "StatArmorPenetration": 7.959061e-05,
+    "StatAttackPower": 0.0001591513,
+    "StatCritRating": 0.01162976,
+    "StatExpertiseRating": 0.03684758,
+    "StatFireDamage": 4.668648e-05,
+    "StatHasteRating": 0.02623728,
+    "StatHitRating": 0.03784064,
+    "StatIntellect": 0.01287392,
+    "StatNatureDamage": 0.0001505076,
+    "StatSpellDamage": 0.0001678202,
+    "StatSpellPiercing": 0.002357132,
+    "StatSpirit": 0.008713622,
+    "StatStrength": 0.000350133
+   }
+  },
+  "hit:shaman-hybrid-elemental-enhancement": {
+   "kind": "hit",
+   "class": "shaman",
+   "spec": "Hybrid Elemental/Enhancement",
+   "source": "raidsim/hit-below-cap.json specs.shaman-hybrid-elemental-enhancement",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-shaman-hybrid-elemental-enhancement.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-shaman-hybrid-elemental-enhancement.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-shaman-hybrid-elemental-enhancement.json",
+    "apl": "_reference/data/raidsim/apls/shaman/elemental-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "550233100200134-255000013400002",
+    "bonus_stats": {
+     "StatHitRating": -50.0
+    },
+    "gear": "252604/1509 18814 272957 272411 21183/1891 21186/1883 12632 18405 252486/1509 22240/911 19147 19147 18820 272438 20069/2504 0 23199"
+   },
+   "seconds": 25.6,
+   "weights": {
+    "StatCritRating": 0.3698741,
+    "StatFireDamage": 0.06982521,
+    "StatHasteRating": 0.6717632,
+    "StatHitRating": 0.8400712,
+    "StatIntellect": 0.4628915,
+    "StatNatureDamage": 0.4284268,
+    "StatSpellDamage": 0.498252,
+    "StatSpellPiercing": 1.203386,
+    "StatSpirit": 8.5994e-05
+   },
+   "se": {
+    "StatCritRating": 0.0044854,
+    "StatFireDamage": 5.18709e-05,
+    "StatHasteRating": 0.04227733,
+    "StatHitRating": 0.04341746,
+    "StatIntellect": 0.03143912,
+    "StatNatureDamage": 0.0003783775,
+    "StatSpellDamage": 0.0003903068,
+    "StatSpellPiercing": 0.004731727,
+    "StatSpirit": 0.003340875
+   }
+  },
+  "hit:warlock-affliction": {
+   "kind": "hit",
+   "class": "warlock",
+   "spec": "Affliction",
+   "source": "raidsim/hit-below-cap.json specs.warlock-affliction",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-warlock-affliction.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-warlock-affliction.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-warlock-affliction.json",
+    "apl": "_reference/data/raidsim/apls/warlock/affliction-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "2550002013520005--0550305003",
+    "bonus_stats": {
+     "StatHitRating": -30.0
+    },
+    "gear": "18727/1509 18814 19050 272411 14153/1891 21186/1883 14146 18405 19165/1509 11822/911 19147 19147 272438 18820 22383/2504 10770 249385"
+   },
+   "seconds": 30.9,
+   "weights": {
+    "StatCritRating": 0.6225553,
+    "StatFireDamage": 0.06891454,
+    "StatHasteRating": 0.5525942,
+    "StatHitRating": 0.9623181,
+    "StatIntellect": 0.2443228,
+    "StatShadowDamage": 0.5938524,
+    "StatSpellDamage": 0.6627669,
+    "StatSpellPiercing": 0.8416151,
+    "StatSpirit": 0.0839483
+   },
+   "se": {
+    "StatCritRating": 0.00792021,
+    "StatFireDamage": 5.844262e-05,
+    "StatHasteRating": 0.04016398,
+    "StatHitRating": 0.05077108,
+    "StatIntellect": 0.03326009,
+    "StatShadowDamage": 0.0005053388,
+    "StatSpellDamage": 0.0005122812,
+    "StatSpellPiercing": 0.004276917,
+    "StatSpirit": 0.02257234
+   }
+  },
+  "hit:warlock-demonology": {
+   "kind": "hit",
+   "class": "warlock",
+   "spec": "Demonology",
+   "source": "raidsim/hit-below-cap.json specs.warlock-demonology",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-warlock-demonology.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-warlock-demonology.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-warlock-demonology.json",
+    "apl": "_reference/data/raidsim/apls/warlock/demonology-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "011-0025003031220301351-0550005003",
+    "bonus_stats": {
+     "StatHitRating": -30.0
+    },
+    "gear": "18727/1509 18814 19050 272411 14153/1891 21186/1883 14146 18405 19165/1509 254013/911 19147 19147 272438 18820 22383/2504 10770 249385"
+   },
+   "seconds": 40.6,
+   "weights": {
+    "StatCritRating": 0.6071201,
+    "StatFireDamage": 0.06574121,
+    "StatHasteRating": 0.5830277,
+    "StatHitRating": 0.9611192,
+    "StatIntellect": 0.3641303,
+    "StatShadowDamage": 0.5787929,
+    "StatSpellDamage": 0.6445341,
+    "StatSpellPiercing": 0.8902764,
+    "StatSpirit": 0.114261
+   },
+   "se": {
+    "StatCritRating": 0.009041042,
+    "StatFireDamage": 7.040736e-05,
+    "StatHasteRating": 0.04547136,
+    "StatHitRating": 0.05761537,
+    "StatIntellect": 0.03932291,
+    "StatShadowDamage": 0.0005385418,
+    "StatSpellDamage": 0.0005466007,
+    "StatSpellPiercing": 0.004819723,
+    "StatSpirit": 0.02655321
+   }
+  },
+  "hit:warlock-destruction": {
+   "kind": "hit",
+   "class": "warlock",
+   "spec": "Destruction",
+   "source": "raidsim/hit-below-cap.json specs.warlock-destruction",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-warlock-destruction.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-warlock-destruction.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-warlock-destruction.json",
+    "apl": "_reference/data/raidsim/apls/warlock/sb-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "252-0050203001-055031500310035",
+    "bonus_stats": {
+     "StatHitRating": -30.0
+    },
+    "gear": "18727/1509 18814 19050 272411 14153/1891 21186/1883 14146 18405 19165/1509 254013/911 19147 19147 272438 18820 22383/2504 10770 249385"
+   },
+   "seconds": 24.7,
+   "weights": {
+    "StatCritRating": 0.5533487,
+    "StatFireDamage": 0.1138361,
+    "StatHasteRating": 0.5423,
+    "StatHitRating": 0.8839113,
+    "StatIntellect": 0.2730674,
+    "StatShadowDamage": 0.5598424,
+    "StatSpellDamage": 0.6736786,
+    "StatSpellPiercing": 0.9381385,
+    "StatSpirit": 0.07439698
+   },
+   "se": {
+    "StatCritRating": 0.008774612,
+    "StatFireDamage": 0.0001351442,
+    "StatHasteRating": 0.04132679,
+    "StatHitRating": 0.04908091,
+    "StatIntellect": 0.03664006,
+    "StatShadowDamage": 0.000512209,
+    "StatSpellDamage": 0.0005434281,
+    "StatSpellPiercing": 0.00472478,
+    "StatSpirit": 0.02423671
+   }
+  },
+  "hit:warlock-hybrid-affliction-destruction": {
+   "kind": "hit",
+   "class": "warlock",
+   "spec": "Hybrid Affliction/Destruction",
+   "source": "raidsim/hit-below-cap.json specs.warlock-hybrid-affliction-destruction",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-warlock-hybrid-affliction-destruction.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-warlock-hybrid-affliction-destruction.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-warlock-hybrid-affliction-destruction.json",
+    "apl": "_reference/data/raidsim/apls/warlock/sb-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "252-0050203001-055031500310035",
+    "bonus_stats": {
+     "StatHitRating": -30.0
+    },
+    "gear": "18727/1509 18814 19050 272411 14153/1891 21186/1883 14146 18405 19165/1509 254013/911 19147 19147 272438 18820 22383/2504 10770 249385"
+   },
+   "seconds": 25.0,
+   "weights": {
+    "StatCritRating": 0.5533487,
+    "StatFireDamage": 0.1138361,
+    "StatHasteRating": 0.5423,
+    "StatHitRating": 0.8839113,
+    "StatIntellect": 0.2730674,
+    "StatShadowDamage": 0.5598424,
+    "StatSpellDamage": 0.6736786,
+    "StatSpellPiercing": 0.9381385,
+    "StatSpirit": 0.07439698
+   },
+   "se": {
+    "StatCritRating": 0.008774612,
+    "StatFireDamage": 0.0001351442,
+    "StatHasteRating": 0.04132679,
+    "StatHitRating": 0.04908091,
+    "StatIntellect": 0.03664006,
+    "StatShadowDamage": 0.000512209,
+    "StatSpellDamage": 0.0005434281,
+    "StatSpellPiercing": 0.00472478,
+    "StatSpirit": 0.02423671
+   }
+  },
+  "hit:warrior-arms": {
+   "kind": "hit",
+   "class": "warrior",
+   "spec": "Arms",
+   "source": "raidsim/hit-below-cap.json specs.warrior-arms",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-warrior-arms.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-warrior-arms.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-warrior-arms.json",
+    "apl": "_reference/data/raidsim/apls/warrior/arms-battle-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "05303213132215201-55050000002",
+    "bonus_stats": {
+     "StatHitRating": -60.0
+    },
+    "gear": "12640/1506 15411 271955 13340/849 252484/1891 21184/1885 271940/927 272403 22385/1506 20715/1887 18821 21182 11815 13213 19169/1900 0 12653"
+   },
+   "seconds": 33.2,
+   "weights": {
+    "PseudoStatMainHandDps": 4.132377,
+    "StatAgility": 0.4540729,
+    "StatArmorPenetration": 0.1088103,
+    "StatAttackPower": 0.2360398,
+    "StatCritRating": 0.6045043,
+    "StatExpertiseRating": 0.5159526,
+    "StatHasteRating": 0.4332685,
+    "StatHitRating": 1.17101,
+    "StatStrength": 0.5192876
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.004016038,
+    "StatAgility": 0.0137779,
+    "StatArmorPenetration": 0.0001097824,
+    "StatAttackPower": 0.0002140231,
+    "StatCritRating": 0.01311795,
+    "StatExpertiseRating": 0.06414355,
+    "StatHasteRating": 0.05312798,
+    "StatHitRating": 0.06965644,
+    "StatStrength": 0.0004708508
+   }
+  },
+  "hit:warrior-fury": {
+   "kind": "hit",
+   "class": "warrior",
+   "spec": "Fury",
+   "source": "raidsim/hit-below-cap.json specs.warrior-fury",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-warrior-fury.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-hit-warrior-fury.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-hit-warrior-fury.json",
+    "apl": "_reference/data/raidsim/apls/warrior/fury-dw-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "32303013032-050530310122120231",
+    "bonus_stats": {
+     "StatHitRating": -80.0
+    },
+    "gear": "12640/1506 15411 271955 13340/849 252484/1891 21184/1885 21278/927 272403 22385/1506 14616/1887 18821 21182 11815 272437 19168/1900 22384/1900 12653"
+   },
+   "seconds": 44.0,
+   "weights": {
+    "PseudoStatMainHandDps": 2.124036,
+    "PseudoStatOffHandDps": 0.7780523,
+    "StatAgility": 0.2539847,
+    "StatArmorPenetration": 0.0967317,
+    "StatAttackPower": 0.2294902,
+    "StatCritRating": 0.3702413,
+    "StatExpertiseRating": 1.45152,
+    "StatHasteRating": 0.4978855,
+    "StatHitRating": 1.419452,
+    "StatStrength": 0.5048784
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.002342277,
+    "PseudoStatOffHandDps": 0.000779459,
+    "StatAgility": 0.02325221,
+    "StatArmorPenetration": 8.759835e-05,
+    "StatAttackPower": 0.0001886467,
+    "StatCritRating": 0.02068597,
+    "StatExpertiseRating": 0.06090886,
+    "StatHasteRating": 0.04376708,
+    "StatHitRating": 0.06005549,
+    "StatStrength": 0.0004150228
+   }
+  },
+  "ml:druid-balance": {
+   "kind": "weights",
+   "class": "druid",
+   "spec": "Balance",
+   "source": "raidsim/ml/druid-balance.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-druid-balance-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-druid-balance-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-druid-balance-bis.json",
+    "apl": "_reference/data/raidsim/apls/druid/balance-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "5532220115501051--0553",
+    "bonus_stats": null,
+    "gear": "18727/1509 18814 19050 272411 21183/1891 21186/1883 21178 18405 252486/1509 254013/911 19147 275982 18820 272438 20069/2504 0 272430"
+   },
+   "seconds": 8.3,
+   "weights": {
+    "StatArcaneDamage": 0.4989985,
+    "StatCritRating": 0.4352875,
+    "StatHasteRating": 0.8086866,
+    "StatHitRating": 0.6514957,
+    "StatIntellect": 0.1406986,
+    "StatNatureDamage": 0.1270898,
+    "StatSpellDamage": 0.6260883,
+    "StatSpellPiercing": 1.2121,
+    "StatSpirit": 0.001204641
+   },
+   "se": {
+    "StatArcaneDamage": 0.0005686352,
+    "StatCritRating": 0.01327399,
+    "StatHasteRating": 0.05032852,
+    "StatHitRating": 0.04856684,
+    "StatIntellect": 0.009053217,
+    "StatNatureDamage": 9.387019e-05,
+    "StatSpellDamage": 0.0005820858,
+    "StatSpellPiercing": 0.01349644,
+    "StatSpirit": 0.001327091
+   }
+  },
+  "ml:druid-feral-combat": {
+   "kind": "weights",
+   "class": "druid",
+   "spec": "Feral Combat",
+   "source": "raidsim/ml/druid-feral-combat.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-druid-feral-combat-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-druid-feral-combat-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-druid-feral-combat-bis.json",
+    "apl": "_reference/data/raidsim/apls/druid/feral-cat-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "050022-55000032023012125001-055",
+    "bonus_stats": null,
+    "gear": "279253/1508 19491 271955 13340/849 252484/1891 18375/1885 271948/1887 272396 15065/1508 20715/1887 18821 21182 11815 18371 279261/1900 0 23197"
+   },
+   "seconds": 36.9,
+   "weights": {
+    "PseudoStatMainHandDps": 2.304253,
+    "StatAgility": 0.7114243,
+    "StatArmorPenetration": 0.08062675,
+    "StatAttackPower": 0.2618452,
+    "StatCritRating": 0.5499672,
+    "StatExpertiseRating": 0.4304007,
+    "StatFeralAttackPower": 0.2618452,
+    "StatHasteRating": 0.4186749,
+    "StatHitRating": 0.4355466,
+    "StatIntellect": 0.0002674612,
+    "StatSpellPiercing": 0.00787221,
+    "StatSpirit": -9.457234e-05,
+    "StatStrength": 0.6284286
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.001679876,
+    "StatAgility": 0.01008666,
+    "StatArmorPenetration": 7.957245e-05,
+    "StatAttackPower": 0.0001427516,
+    "StatCritRating": 0.009939771,
+    "StatExpertiseRating": 0.03737996,
+    "StatFeralAttackPower": 0.0001427516,
+    "StatHasteRating": 0.03281839,
+    "StatHitRating": 0.0375456,
+    "StatIntellect": 0.0001351258,
+    "StatSpellPiercing": 0.0004330641,
+    "StatSpirit": 8.756133e-05,
+    "StatStrength": 0.0003426038
+   }
+  },
+  "ml:hunter-beast-mastery": {
+   "kind": "weights",
+   "class": "hunter",
+   "spec": "Beast Mastery",
+   "source": "raidsim/ml/hunter-beast-mastery.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-hunter-beast-mastery-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-hunter-beast-mastery-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-hunter-beast-mastery-bis.json",
+    "apl": "_reference/data/raidsim/apls/hunter/bm-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "5120201505101251-0053350001-3",
+    "bonus_stats": null,
+    "gear": "252605/1508 15411 271955 13340/849 252483/1891 18375/1885 271948/1887 19163 18524/1508 18506/1887 18821 272408 13965 18537 250619/1900 0 18713/2523"
+   },
+   "seconds": 28.9,
+   "weights": {
+    "PseudoStatRangedDps": 1.824923,
+    "StatAgility": 0.6537024,
+    "StatArmorPenetration": 0.06333083,
+    "StatCritRating": 0.6079129,
+    "StatExpertiseRating": 0.2635899,
+    "StatHasteRating": 0.4512784,
+    "StatHitRating": 0.849753,
+    "StatIntellect": 0.240216,
+    "StatRangedAttackPower": 0.2183782,
+    "StatSpellPiercing": 0.2609698,
+    "StatSpirit": 0.0003061389
+   },
+   "se": {
+    "PseudoStatRangedDps": 0.001569629,
+    "StatAgility": 0.005617393,
+    "StatArmorPenetration": 5.677435e-05,
+    "StatCritRating": 0.008758891,
+    "StatExpertiseRating": 0.02246695,
+    "StatHasteRating": 0.02977612,
+    "StatHitRating": 0.03198308,
+    "StatIntellect": 0.000135329,
+    "StatRangedAttackPower": 0.0001230264,
+    "StatSpellPiercing": 0.002426709,
+    "StatSpirit": 0.0003082467
+   }
+  },
+  "ml:hunter-hybrid-beast-mastery-marksmanship": {
+   "kind": "weights",
+   "class": "hunter",
+   "spec": "Hybrid Beast Mastery/Marksmanship",
+   "source": "raidsim/ml/hunter-hybrid-beast-mastery-marksmanship.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-hunter-hybrid-beast-mastery-marksmanship-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-hunter-hybrid-beast-mastery-marksmanship-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-hunter-hybrid-beast-mastery-marksmanship-bis.json",
+    "apl": "_reference/data/raidsim/apls/hunter/bm-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "522020150501022-00533500015-2",
+    "bonus_stats": null,
+    "gear": "252605/1508 15411 271955 13340/849 252483/1891 18375/1885 271948/1887 19163 18524/1508 18506/1887 18821 272408 13965 18537 250619/1900 0 18713/2523"
+   },
+   "seconds": 28.0,
+   "weights": {
+    "PseudoStatRangedDps": 1.91578,
+    "StatAgility": 0.6882728,
+    "StatArmorPenetration": 0.06647087,
+    "StatCritRating": 0.7425487,
+    "StatExpertiseRating": 0.2017986,
+    "StatHasteRating": 0.3758399,
+    "StatHitRating": 0.7322377,
+    "StatIntellect": 0.2462625,
+    "StatRangedAttackPower": 0.223875,
+    "StatSpellPiercing": 0.270445,
+    "StatSpirit": -4.946493e-05
+   },
+   "se": {
+    "PseudoStatRangedDps": 0.001870172,
+    "StatAgility": 0.01493244,
+    "StatArmorPenetration": 6.782813e-05,
+    "StatCritRating": 0.01890146,
+    "StatExpertiseRating": 0.04158437,
+    "StatHasteRating": 0.03460732,
+    "StatHitRating": 0.04573446,
+    "StatIntellect": 0.0001646916,
+    "StatRangedAttackPower": 0.0001497196,
+    "StatSpellPiercing": 0.002563135,
+    "StatSpirit": 9.328036e-05
+   }
+  },
+  "ml:hunter-marksmanship": {
+   "kind": "weights",
+   "class": "hunter",
+   "spec": "Marksmanship",
+   "source": "raidsim/ml/hunter-marksmanship.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-hunter-marksmanship-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-hunter-marksmanship-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-hunter-marksmanship-bis.json",
+    "apl": "_reference/data/raidsim/apls/hunter/mm-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "502-0053352501522051-5",
+    "bonus_stats": null,
+    "gear": "252605/1508 15411 271955 13340/849 252483/1891 18375/1885 271948/1887 19163 18524/1508 18506/1887 18821 272408 13965 18537 250619/1900 0 18713/2523"
+   },
+   "seconds": 28.6,
+   "weights": {
+    "PseudoStatRangedDps": 2.216875,
+    "StatAgility": 0.7378686,
+    "StatArmorPenetration": 0.08032723,
+    "StatCritRating": 0.7064403,
+    "StatExpertiseRating": 0.1290639,
+    "StatHasteRating": 0.5311611,
+    "StatHitRating": 1.022152,
+    "StatIntellect": 0.9350321,
+    "StatRangedAttackPower": 0.2437889,
+    "StatSpellPiercing": 0.3393488,
+    "StatSpirit": 0.180641
+   },
+   "se": {
+    "PseudoStatRangedDps": 0.00207638,
+    "StatAgility": 0.005226567,
+    "StatArmorPenetration": 8.291442e-05,
+    "StatCritRating": 0.008065967,
+    "StatExpertiseRating": 0.04828844,
+    "StatHasteRating": 0.05532233,
+    "StatHitRating": 0.06185621,
+    "StatIntellect": 0.01899321,
+    "StatRangedAttackPower": 0.0001797194,
+    "StatSpellPiercing": 0.003073358,
+    "StatSpirit": 0.02288273
+   }
+  },
+  "ml:hunter-survival": {
+   "kind": "weights",
+   "class": "hunter",
+   "spec": "Survival",
+   "source": "raidsim/ml/hunter-survival.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-hunter-survival-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-hunter-survival-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-hunter-survival-bis.json",
+    "apl": "_reference/data/raidsim/apls/hunter/melee-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "5-005055001-50023023015022212",
+    "bonus_stats": null,
+    "gear": "252605/1508 18404 271955 272414/849 252483/1891 18375/1885 271948/1887 22232 15062/1508 13967/1887 18821 21182 11815 272437 19168/1900 279259/1900 18323"
+   },
+   "seconds": 24.5,
+   "weights": {
+    "PseudoStatMainHandDps": 2.211297,
+    "PseudoStatOffHandDps": 0.8675757,
+    "StatAgility": 0.4320081,
+    "StatArmorPenetration": 0.09248323,
+    "StatAttackPower": 0.2311849,
+    "StatCritRating": 0.4952569,
+    "StatExpertiseRating": 0.995167,
+    "StatHasteRating": 0.4632082,
+    "StatHitRating": 0.7015096,
+    "StatIntellect": 0.2734664,
+    "StatRangedAttackPower": 0.01106997,
+    "StatSpellPiercing": 0.08220453,
+    "StatSpirit": 0.0,
+    "StatStrength": 0.2543033
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.00257551,
+    "PseudoStatOffHandDps": 0.001377773,
+    "StatAgility": 0.003231965,
+    "StatArmorPenetration": 9.478102e-05,
+    "StatAttackPower": 0.0002323792,
+    "StatCritRating": 0.004946271,
+    "StatExpertiseRating": 0.04460223,
+    "StatHasteRating": 0.03619923,
+    "StatHitRating": 0.04045629,
+    "StatIntellect": 0.0005985758,
+    "StatRangedAttackPower": 1.428378e-05,
+    "StatSpellPiercing": 0.001274999,
+    "StatSpirit": 0.0,
+    "StatStrength": 0.0002556171
+   }
+  },
+  "ml:mage-arcane": {
+   "kind": "weights",
+   "class": "mage",
+   "spec": "Arcane",
+   "source": "raidsim/ml/mage-arcane.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-mage-arcane-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-mage-arcane-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-mage-arcane-bis.json",
+    "apl": "_reference/data/raidsim/apls/mage/arcane-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "041205203100211531-554000011001-003",
+    "bonus_stats": null,
+    "gear": "11839/1509 18814 19050 272411 14152/1891 21186/1883 14146 18405 19165/1509 22231/911 19147 19147 18820 13503 22383/2504 17737 249385"
+   },
+   "seconds": 18.3,
+   "weights": {
+    "StatArcaneDamage": 0.4307321,
+    "StatCritRating": 0.4463042,
+    "StatFireDamage": 0.1018457,
+    "StatHasteRating": 0.6677092,
+    "StatHitRating": 0.9637181,
+    "StatIntellect": 0.5088753,
+    "StatSpellDamage": 0.5325778,
+    "StatSpellPiercing": 1.307808,
+    "StatSpirit": 0.09113215
+   },
+   "se": {
+    "StatArcaneDamage": 0.0005526272,
+    "StatCritRating": 0.01110983,
+    "StatFireDamage": 0.0003931842,
+    "StatHasteRating": 0.02992759,
+    "StatHitRating": 0.05847454,
+    "StatIntellect": 0.02713314,
+    "StatSpellDamage": 0.0004959497,
+    "StatSpellPiercing": 0.005621631,
+    "StatSpirit": 0.02900596
+   }
+  },
+  "ml:mage-fire": {
+   "kind": "weights",
+   "class": "mage",
+   "spec": "Fire",
+   "source": "raidsim/ml/mage-fire.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-mage-fire-bis.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-mage-fire-bis.json)",
+     "racials": "off",
+     "differences": 9
+    },
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-mage-fire-bis.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-mage-fire-bis.json",
+    "apl": "_reference/data/raidsim/apls/mage/fire-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "2302052010002-55500001130133031-003",
+    "bonus_stats": null,
+    "gear": "18727/1509 18814 19050 272411 14152/1891 21186/1883 14146 18405 19165/1509 13369/911 19147 19147 18820 13503 22383/2504 13524 11748"
+   },
+   "seconds": 16.2,
+   "weights": {
+    "StatArcaneDamage": 0.0351657,
+    "StatCritRating": 0.6095217,
+    "StatFireDamage": 0.6122597,
+    "StatHasteRating": 0.5319357,
+    "StatHitRating": 1.053017,
+    "StatIntellect": 0.3036401,
+    "StatSpellDamage": 0.6474254,
+    "StatSpellPiercing": 1.333621,
+    "StatSpirit": 0.1943486
+   },
+   "se": {
+    "StatArcaneDamage": 0.0002852692,
+    "StatCritRating": 0.03100453,
+    "StatFireDamage": 0.0007242069,
+    "StatHasteRating": 0.060137,
+    "StatHitRating": 0.08637001,
+    "StatIntellect": 0.03120032,
+    "StatSpellDamage": 0.0007020214,
+    "StatSpellPiercing": 0.006409291,
+    "StatSpirit": 0.02757108
+   }
+  },
+  "ml:mage-frost": {
+   "kind": "weights",
+   "class": "mage",
+   "spec": "Frost",
+   "source": "raidsim/ml/mage-frost.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-mage-frost-bis.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-mage-frost-bis.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-mage-frost-bis.json",
+    "apl": "_reference/data/raidsim/apls/mage/frost-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "0512152030001001--25353003012030021",
+    "bonus_stats": null,
+    "gear": "18727/1509 18814 19050 272411 14152/1891 21186/1883 20716 18405 19165/1509 254013/911 19147 19147 18820 13503 22383/2504 7685 19108"
+   },
+   "seconds": 12.5,
+   "weights": {
+    "StatArcaneDamage": 0.09222374,
+    "StatCritRating": 0.3286157,
+    "StatFireDamage": 0.001821986,
+    "StatFrostDamage": 0.3564641,
+    "StatHasteRating": 0.523455,
+    "StatHitRating": 0.5911347,
+    "StatIntellect": 0.08939661,
+    "StatSpellDamage": 0.4505098,
+    "StatSpellPiercing": 1.004971,
+    "StatSpirit": -9.598449e-05
+   },
+   "se": {
+    "StatArcaneDamage": 0.0003626565,
+    "StatCritRating": 0.006682542,
+    "StatFireDamage": 2.684549e-05,
+    "StatFrostDamage": 0.0004906235,
+    "StatHasteRating": 0.008828251,
+    "StatHitRating": 0.03162133,
+    "StatIntellect": 0.004207004,
+    "StatSpellDamage": 0.0004289078,
+    "StatSpellPiercing": 0.004640048,
+    "StatSpirit": 0.0007250108
+   }
+  },
+  "ml:mage-hybrid-arcane-frost": {
+   "kind": "weights",
+   "class": "mage",
+   "spec": "Hybrid Arcane/Frost",
+   "source": "raidsim/ml/mage-hybrid-arcane-frost.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-mage-hybrid-arcane-frost-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-mage-hybrid-arcane-frost-bis.json)",
+     "racials": "on",
+     "differences": 9
+    },
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-mage-hybrid-arcane-frost-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-mage-hybrid-arcane-frost-bis.json",
+    "apl": "_reference/data/raidsim/apls/mage/frost-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "03220421310101053-55-0535",
+    "bonus_stats": null,
+    "gear": "18727/1509 18814 19050 272411 14152/1891 21186/1883 14146 18405 19165/1509 22231/911 19147 19147 18820 13503 22383/2504 17737 249385"
+   },
+   "seconds": 12.9,
+   "weights": {
+    "StatArcaneDamage": 0.3335859,
+    "StatCritRating": 0.3859597,
+    "StatFireDamage": 0.001390584,
+    "StatFrostDamage": 0.1588765,
+    "StatHasteRating": 0.5480264,
+    "StatHitRating": 0.7046265,
+    "StatIntellect": 0.3463973,
+    "StatSpellDamage": 0.493853,
+    "StatSpellPiercing": 1.184499,
+    "StatSpirit": 0.004987147
+   },
+   "se": {
+    "StatArcaneDamage": 0.0004701387,
+    "StatCritRating": 0.007376746,
+    "StatFireDamage": 3.009339e-05,
+    "StatFrostDamage": 0.0003182313,
+    "StatHasteRating": 0.01994328,
+    "StatHitRating": 0.03713391,
+    "StatIntellect": 0.005914035,
+    "StatSpellDamage": 0.0004383433,
+    "StatSpellPiercing": 0.005226077,
+    "StatSpirit": 0.004092972
+   }
+  },
+  "ml:mage-hybrid-fire-frost": {
+   "kind": "weights",
+   "class": "mage",
+   "spec": "Hybrid Fire/Frost",
+   "source": "raidsim/ml/mage-hybrid-fire-frost.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-mage-hybrid-fire-frost-bis.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-mage-hybrid-fire-frost-bis.json)",
+     "racials": "off",
+     "differences": 8
+    },
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-mage-hybrid-fire-frost-bis.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-mage-hybrid-fire-frost-bis.json",
+    "apl": "_reference/data/raidsim/apls/mage/frostfire-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "2030052-5550001102003301-20350003",
+    "bonus_stats": null,
+    "gear": "18727/1509 18814 19050 272411 14152/1891 21186/1883 14146 18405 19165/1509 13369/911 19147 19147 18820 13503 22383/2504 17737 11748"
+   },
+   "seconds": 12.1,
+   "weights": {
+    "StatCritRating": 0.495095,
+    "StatFireDamage": 0.4957405,
+    "StatHasteRating": 0.5246354,
+    "StatHitRating": 0.6877599,
+    "StatIntellect": 0.2438637,
+    "StatSpellDamage": 0.4957405,
+    "StatSpellPiercing": 0.4014358,
+    "StatSpirit": 0.1064944
+   },
+   "se": {
+    "StatCritRating": 0.01315221,
+    "StatFireDamage": 0.0006663912,
+    "StatHasteRating": 0.02316255,
+    "StatHitRating": 0.0452154,
+    "StatIntellect": 0.01790938,
+    "StatSpellDamage": 0.0006663912,
+    "StatSpellPiercing": 0.003699022,
+    "StatSpirit": 0.01583718
+   }
+  },
+  "ml:paladin-hybrid-protection-retribution": {
+   "kind": "weights",
+   "class": "paladin",
+   "spec": "Hybrid Protection/Retribution",
+   "source": "raidsim/ml/paladin-hybrid-protection-retribution.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-paladin-hybrid-protection-retribution-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-paladin-hybrid-protection-retribution-bis.json)",
+     "racials": "on",
+     "differences": 12
+    },
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-paladin-hybrid-protection-retribution-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-paladin-hybrid-protection-retribution-bis.json",
+    "apl": "_reference/data/raidsim/apls/paladin/ret-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "050150002-543000002-252330011013003",
+    "bonus_stats": null,
+    "gear": "12640/1506 15411 271955 13340/849 252484/1891 21184/1885 271940/927 19044 250598/1506 20049/1887 18821 275982 11815 18820 21188/1900 0 272435"
+   },
+   "seconds": 28.3,
+   "weights": {
+    "PseudoStatMainHandDps": 2.26487,
+    "StatAgility": 0.2791714,
+    "StatArmorPenetration": 0.03927646,
+    "StatAttackPower": 0.1604606,
+    "StatCritRating": 0.3776139,
+    "StatExpertiseRating": 0.7410907,
+    "StatHasteRating": 0.1461313,
+    "StatHitRating": 0.9636494,
+    "StatHolyDamage": 0.2649142,
+    "StatIntellect": 0.00721092,
+    "StatSpellDamage": 0.2649142,
+    "StatSpellPiercing": 0.0,
+    "StatSpirit": -1.770749e-05,
+    "StatStrength": 0.4011514
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.003579535,
+    "StatAgility": 0.006095019,
+    "StatArmorPenetration": 7.441867e-05,
+    "StatAttackPower": 0.0002551387,
+    "StatCritRating": 0.005877762,
+    "StatExpertiseRating": 0.03636402,
+    "StatHasteRating": 0.03427903,
+    "StatHitRating": 0.03776142,
+    "StatHolyDamage": 0.000256669,
+    "StatIntellect": 0.0002312503,
+    "StatSpellDamage": 0.000256669,
+    "StatSpellPiercing": 0.0,
+    "StatSpirit": 0.0001134302,
+    "StatStrength": 0.0007023708
+   }
+  },
+  "ml:paladin-retribution": {
+   "kind": "weights",
+   "class": "paladin",
+   "spec": "Retribution",
+   "source": "raidsim/ml/paladin-retribution.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-paladin-retribution-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-paladin-retribution-bis.json)",
+     "racials": "on",
+     "differences": 13
+    },
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-paladin-retribution-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-paladin-retribution-bis.json",
+    "apl": "_reference/data/raidsim/apls/paladin/ret-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "0502500121-4-32232021201301351",
+    "bonus_stats": null,
+    "gear": "252605/1506 18814 20058 18496/849 252484/1891 21184/1885 271940/927 18405 250598/1506 20049/1887 18821 275982 11815 18820 21188/1900 0 272435"
+   },
+   "seconds": 30.3,
+   "weights": {
+    "PseudoStatMainHandDps": 2.342351,
+    "StatAgility": 0.328115,
+    "StatArmorPenetration": 0.03619104,
+    "StatAttackPower": 0.1660219,
+    "StatCritRating": 0.4482933,
+    "StatExpertiseRating": 0.9961987,
+    "StatHasteRating": 0.3898309,
+    "StatHitRating": 1.2498,
+    "StatHolyDamage": 0.3115823,
+    "StatIntellect": 0.2318544,
+    "StatSpellDamage": 0.3115823,
+    "StatSpellPiercing": 0.0,
+    "StatSpirit": -0.0004899076,
+    "StatStrength": 0.3984525
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.004016104,
+    "StatAgility": 0.006660798,
+    "StatArmorPenetration": 7.538708e-05,
+    "StatAttackPower": 0.0002862673,
+    "StatCritRating": 0.006447039,
+    "StatExpertiseRating": 0.05778155,
+    "StatHasteRating": 0.05005391,
+    "StatHitRating": 0.05920647,
+    "StatHolyDamage": 0.0003451638,
+    "StatIntellect": 0.0003531792,
+    "StatSpellDamage": 0.0003451638,
+    "StatSpellPiercing": 0.0,
+    "StatSpirit": 0.0003693634,
+    "StatStrength": 0.0006870415
+   }
+  },
+  "ml:priest-hybrid-discipline-holy": {
+   "kind": "weights",
+   "class": "priest",
+   "spec": "Hybrid Discipline/Holy",
+   "source": "raidsim/ml/priest-hybrid-discipline-holy.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-priest-hybrid-discipline-holy-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-priest-hybrid-discipline-holy-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-priest-hybrid-discipline-holy-bis.json",
+    "apl": "_reference/data/raidsim/apls/priest/smite-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "505235231030001001-30505101002-3",
+    "bonus_stats": null,
+    "gear": "18727/1509 18814 19059 272411 21183/1891 21186/1883 20716 18405 19165/1509 254013/911 19147 20682 18820 11819 20070/2504 7685 22408"
+   },
+   "seconds": 13.8,
+   "weights": {
+    "StatCritRating": 0.1979637,
+    "StatHasteRating": 0.2381887,
+    "StatHitRating": 0.2200799,
+    "StatHolyDamage": 0.3465775,
+    "StatIntellect": 0.1190635,
+    "StatShadowDamage": 0.151708,
+    "StatSpellDamage": 0.4982855,
+    "StatSpellPiercing": 0.2486533,
+    "StatSpirit": 0.03547383
+   },
+   "se": {
+    "StatCritRating": 0.003139634,
+    "StatHasteRating": 0.01587199,
+    "StatHitRating": 0.01287282,
+    "StatHolyDamage": 0.000158443,
+    "StatIntellect": 0.008437738,
+    "StatShadowDamage": 0.0001324938,
+    "StatSpellDamage": 0.0002051641,
+    "StatSpellPiercing": 0.002432113,
+    "StatSpirit": 0.007311778
+   }
+  },
+  "ml:priest-shadow": {
+   "kind": "weights",
+   "class": "priest",
+   "spec": "Shadow",
+   "source": "raidsim/ml/priest-shadow.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-priest-shadow-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-priest-shadow-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-priest-shadow-bis.json",
+    "apl": "_reference/data/raidsim/apls/priest/shadow-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "20530321101--50052001231312251",
+    "bonus_stats": null,
+    "gear": "18727/1509 18814 19050 272411 21183/1891 21186/1883 14146 18405 19165/1509 254013/911 19147 275982 18820 11819 20070/2504 10770 22408"
+   },
+   "seconds": 12.3,
+   "weights": {
+    "StatCritRating": 0.4712833,
+    "StatHasteRating": 0.2955805,
+    "StatHitRating": 0.6138598,
+    "StatIntellect": 0.1305498,
+    "StatShadowDamage": 0.4902857,
+    "StatSpellDamage": 0.4902857,
+    "StatSpellPiercing": 1.013821,
+    "StatSpirit": 0.0005572217
+   },
+   "se": {
+    "StatCritRating": 0.006258273,
+    "StatHasteRating": 0.01130458,
+    "StatHitRating": 0.02917303,
+    "StatIntellect": 0.004041589,
+    "StatShadowDamage": 0.0002956754,
+    "StatSpellDamage": 0.0002956754,
+    "StatSpellPiercing": 0.005073724,
+    "StatSpirit": 0.002016255
+   }
+  },
+  "ml:rogue-assassination": {
+   "kind": "weights",
+   "class": "rogue",
+   "spec": "Assassination",
+   "source": "raidsim/ml/rogue-assassination.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-rogue-assassination-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-rogue-assassination-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-rogue-assassination-bis.json",
+    "apl": "_reference/data/raidsim/apls/rogue/assassination-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "00530320250151031-31131301020103-001",
+    "bonus_stats": null,
+    "gear": "279253/1508 18404 271955 21187/849 252483/1891 18375/1885 271948/1887 272395 15062/1508 16711/1887 18821 21182 11815 19120 19166/1900 12783/1900 18323"
+   },
+   "seconds": 31.1,
+   "weights": {
+    "PseudoStatMainHandDps": 1.896026,
+    "PseudoStatOffHandDps": 0.8413958,
+    "StatAgility": 0.5335396,
+    "StatArmorPenetration": 0.1010304,
+    "StatAttackPower": 0.245602,
+    "StatCritRating": 0.5319509,
+    "StatExpertiseRating": 0.6375997,
+    "StatHasteRating": 0.3686646,
+    "StatHitRating": 0.5469544,
+    "StatSpellPiercing": 0.1678585,
+    "StatStrength": 0.2701622
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.001929092,
+    "PseudoStatOffHandDps": 0.0008240054,
+    "StatAgility": 0.009620147,
+    "StatArmorPenetration": 9.028696e-05,
+    "StatAttackPower": 0.0001802068,
+    "StatCritRating": 0.01123894,
+    "StatExpertiseRating": 0.03757925,
+    "StatHasteRating": 0.0356318,
+    "StatHitRating": 0.03004713,
+    "StatSpellPiercing": 0.001016441,
+    "StatStrength": 0.0001982275
+   }
+  },
+  "ml:rogue-combat": {
+   "kind": "weights",
+   "class": "rogue",
+   "spec": "Combat",
+   "source": "raidsim/ml/rogue-combat.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-rogue-combat-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-rogue-combat-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-rogue-combat-bis.json",
+    "apl": "_reference/data/raidsim/apls/rogue/combat-daggers-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "0053032020051-32503300000123215",
+    "bonus_stats": null,
+    "gear": "279253/1508 18404 271955 21187/849 252483/1891 18375/1885 271948/1887 272395 15062/1508 16711/1887 275981 18821 11815 19120 19166/1900 22377/1900 18323"
+   },
+   "seconds": 30.6,
+   "weights": {
+    "PseudoStatMainHandDps": 1.981459,
+    "PseudoStatOffHandDps": 0.8977973,
+    "StatAgility": 0.4430139,
+    "StatArmorPenetration": 0.08278651,
+    "StatAttackPower": 0.2263197,
+    "StatCritRating": 0.3592307,
+    "StatExpertiseRating": 0.5177015,
+    "StatHasteRating": 0.3980126,
+    "StatHitRating": 0.536162,
+    "StatSpellPiercing": 0.0797279,
+    "StatStrength": 0.2489517
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.001958899,
+    "PseudoStatOffHandDps": 0.001074714,
+    "StatAgility": 0.003455689,
+    "StatArmorPenetration": 6.810181e-05,
+    "StatAttackPower": 0.0001666514,
+    "StatCritRating": 0.00387905,
+    "StatExpertiseRating": 0.02218491,
+    "StatHasteRating": 0.01920576,
+    "StatHitRating": 0.0186788,
+    "StatSpellPiercing": 0.0006269074,
+    "StatStrength": 0.0001833166
+   }
+  },
+  "ml:rogue-hybrid-assassination-combat": {
+   "kind": "weights",
+   "class": "rogue",
+   "spec": "Hybrid Assassination/Combat",
+   "source": "raidsim/ml/rogue-hybrid-assassination-combat.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "replayed: the combat-daggers-raid open-search winner (families/rogue.json, as the sig_start note says), assassination-raid's set and its weights, the first greedy pass (the tag's bench config, gearopt-w-rogue-hybrid-assassination-combat-bis.json, is the later bis-raid set's)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "replayed: the combat-daggers-raid open-search winner (families/rogue.json, as the sig_start note says), assassination-raid's set and its weights, the first greedy pass (the tag's bench config, gearopt-w-rogue-hybrid-assassination-combat-bis.json, is the later bis-raid set's)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": null,
+    "apl": "_reference/data/raidsim/apls/rogue/assassination-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "0053031122125103-312303010201132",
+    "bonus_stats": null,
+    "gear": "279253/1508 18404 271955 21187/849 252483/1891 18375/1885 271948/1887 272395 15062/1508 16711/1887 18821 21182 11815 19120 19166/1900 12783/1900 18323"
+   },
+   "seconds": 29.5,
+   "weights": {
+    "PseudoStatMainHandDps": 2.084613,
+    "PseudoStatOffHandDps": 0.8421059,
+    "StatAgility": 0.5285036,
+    "StatArmorPenetration": 0.09960928,
+    "StatAttackPower": 0.2511526,
+    "StatCritRating": 0.506578,
+    "StatExpertiseRating": 0.5690666,
+    "StatHasteRating": 0.3879132,
+    "StatHitRating": 0.5874041,
+    "StatSpellPiercing": 0.12989,
+    "StatStrength": 0.2762678
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.001978441,
+    "PseudoStatOffHandDps": 0.001070423,
+    "StatAgility": 0.01150581,
+    "StatArmorPenetration": 9.196743e-05,
+    "StatAttackPower": 0.0001875132,
+    "StatCritRating": 0.01214745,
+    "StatExpertiseRating": 0.03747072,
+    "StatHasteRating": 0.03514229,
+    "StatHitRating": 0.03061734,
+    "StatSpellPiercing": 0.0008660178,
+    "StatStrength": 0.0002062646
+   }
+  },
+  "ml:rogue-hybrid-assassination-subtlety": {
+   "kind": "weights",
+   "class": "rogue",
+   "spec": "Hybrid Assassination/Subtlety",
+   "source": "raidsim/ml/rogue-hybrid-assassination-subtlety.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-rogue-hybrid-assassination-subtlety-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-rogue-hybrid-assassination-subtlety-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-rogue-hybrid-assassination-subtlety-bis.json",
+    "apl": "_reference/data/raidsim/apls/rogue/subtlety-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "1153032120115002-02-1152012313010011",
+    "bonus_stats": null,
+    "gear": "279253/1508 18404 271955 13340/849 252483/1891 18375/1885 271948/1887 272395 15062/1508 20715/1887 18821 275981 11815 18537 19168/1900 279259/1900 12653"
+   },
+   "seconds": 34.8,
+   "weights": {
+    "PseudoStatMainHandDps": 2.0512,
+    "PseudoStatOffHandDps": 0.5632519,
+    "StatAgility": 0.456174,
+    "StatArmorPenetration": 0.07934044,
+    "StatAttackPower": 0.2649413,
+    "StatCritRating": 0.3689831,
+    "StatExpertiseRating": 0.8282949,
+    "StatHasteRating": 0.2961624,
+    "StatHitRating": 0.9709431,
+    "StatSpellPiercing": 0.06073476,
+    "StatStrength": 0.2914354
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.002232491,
+    "PseudoStatOffHandDps": 0.0008197001,
+    "StatAgility": 0.01466922,
+    "StatArmorPenetration": 8.004952e-05,
+    "StatAttackPower": 0.0002065559,
+    "StatCritRating": 0.0161984,
+    "StatExpertiseRating": 0.05054947,
+    "StatHasteRating": 0.04806894,
+    "StatHitRating": 0.05136945,
+    "StatSpellPiercing": 0.0005804834,
+    "StatStrength": 0.0002272114
+   }
+  },
+  "ml:rogue-subtlety": {
+   "kind": "weights",
+   "class": "rogue",
+   "spec": "Subtlety",
+   "source": "raidsim/ml/rogue-subtlety.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-rogue-subtlety-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-rogue-subtlety-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-rogue-subtlety-bis.json",
+    "apl": "_reference/data/raidsim/apls/rogue/subtlety-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "00530301-320003-325230031301001151",
+    "bonus_stats": null,
+    "gear": "279253/1508 18404 271955 21187/849 252483/1891 18375/1885 271948/1887 272395 15062/1508 16711/1887 18821 275981 11815 18537 19168/1900 279259/1900 18323"
+   },
+   "seconds": 33.5,
+   "weights": {
+    "PseudoStatMainHandDps": 1.953967,
+    "PseudoStatOffHandDps": 0.6180418,
+    "StatAgility": 0.5341996,
+    "StatArmorPenetration": 0.06421908,
+    "StatAttackPower": 0.2622918,
+    "StatCritRating": 0.4746539,
+    "StatExpertiseRating": 0.616271,
+    "StatHasteRating": 0.2689014,
+    "StatHitRating": 0.5528926,
+    "StatSpellPiercing": 0.05677045,
+    "StatStrength": 0.2885209
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.002006252,
+    "PseudoStatOffHandDps": 0.000868555,
+    "StatAgility": 0.003006943,
+    "StatArmorPenetration": 5.974019e-05,
+    "StatAttackPower": 0.0001635001,
+    "StatCritRating": 0.003542227,
+    "StatExpertiseRating": 0.03672269,
+    "StatHasteRating": 0.03869348,
+    "StatHitRating": 0.03012098,
+    "StatSpellPiercing": 0.0005874218,
+    "StatStrength": 0.000179823
+   }
+  },
+  "ml:shaman-elemental": {
+   "kind": "weights",
+   "class": "shaman",
+   "spec": "Elemental",
+   "source": "raidsim/ml/shaman-elemental.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-shaman-elemental-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-shaman-elemental-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-shaman-elemental-bis.json",
+    "apl": "_reference/data/raidsim/apls/shaman/elemental-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "5503331000011351-05500001-0531",
+    "bonus_stats": null,
+    "gear": "252604/1509 18814 19050 272411 21183/1891 21186/1883 12632 18405 252486/1509 22240/911 19147 19147 18820 272438 20069/2504 0 23199"
+   },
+   "seconds": 18.4,
+   "weights": {
+    "StatCritRating": 0.4343861,
+    "StatFireDamage": 0.07582154,
+    "StatHasteRating": 0.8791036,
+    "StatHitRating": 0.9369143,
+    "StatIntellect": 0.1786006,
+    "StatNatureDamage": 0.5180776,
+    "StatSpellDamage": 0.5938991,
+    "StatSpellPiercing": 1.339846,
+    "StatSpirit": 0.04322748
+   },
+   "se": {
+    "StatCritRating": 0.006902723,
+    "StatFireDamage": 6.18798e-05,
+    "StatHasteRating": 0.05181384,
+    "StatHitRating": 0.0604741,
+    "StatIntellect": 0.03927697,
+    "StatNatureDamage": 0.0005013469,
+    "StatSpellDamage": 0.000508807,
+    "StatSpellPiercing": 0.006772285,
+    "StatSpirit": 0.02613968
+   }
+  },
+  "ml:shaman-enhancement": {
+   "kind": "weights",
+   "class": "shaman",
+   "spec": "Enhancement",
+   "source": "raidsim/ml/shaman-enhancement.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-shaman-enhancement-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-shaman-enhancement-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-shaman-enhancement-bis.json",
+    "apl": "_reference/data/raidsim/apls/shaman/enhancement-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "5434031-055030310051002051",
+    "bonus_stats": null,
+    "gear": "252605/1506 18404 13374 272411/849 252483/1891 21186/1885 21278/927 13956 252486/1506 14616/1887 21182 272406 11815 18820 21188/1900 0 23199"
+   },
+   "seconds": 17.8,
+   "weights": {
+    "PseudoStatMainHandDps": 2.542826,
+    "StatAgility": 0.3286639,
+    "StatArmorPenetration": 0.0878932,
+    "StatAttackPower": 0.1779258,
+    "StatCritRating": 0.5893002,
+    "StatExpertiseRating": 0.7971452,
+    "StatFireDamage": 0.08051653,
+    "StatHasteRating": 0.5223611,
+    "StatHitRating": 0.3948685,
+    "StatIntellect": 0.7249362,
+    "StatNatureDamage": 0.1626858,
+    "StatSpellDamage": 0.2432023,
+    "StatSpellPiercing": 0.5624522,
+    "StatSpirit": -0.0004971933,
+    "StatStrength": 0.3914367
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.003237838,
+    "StatAgility": 0.01912186,
+    "StatArmorPenetration": 0.000117202,
+    "StatAttackPower": 0.0002282899,
+    "StatCritRating": 0.01890182,
+    "StatExpertiseRating": 0.05990551,
+    "StatFireDamage": 6.392883e-05,
+    "StatHasteRating": 0.04592799,
+    "StatHitRating": 0.04460183,
+    "StatIntellect": 0.03184918,
+    "StatNatureDamage": 0.0002143087,
+    "StatSpellDamage": 0.0002300219,
+    "StatSpellPiercing": 0.003401529,
+    "StatSpirit": 0.008492275,
+    "StatStrength": 0.0005022378
+   }
+  },
+  "ml:shaman-hybrid-elemental-enhancement": {
+   "kind": "weights",
+   "class": "shaman",
+   "spec": "Hybrid Elemental/Enhancement",
+   "source": "raidsim/ml/shaman-hybrid-elemental-enhancement.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "replayed: our raid build elemental-enhancement-ml-raid (the sig_start note), elemental-dps's set and its weights, the first greedy pass (the tag's bench config, gearopt-w-shaman-hybrid-elemental-enhancement-bis.json, is the later bis-raid set's)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "replayed: our raid build elemental-enhancement-ml-raid (the sig_start note), elemental-dps's set and its weights, the first greedy pass (the tag's bench config, gearopt-w-shaman-hybrid-elemental-enhancement-bis.json, is the later bis-raid set's)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": null,
+    "apl": "_reference/data/raidsim/apls/shaman/elemental-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "153203102-05303031005100224-05",
+    "bonus_stats": null,
+    "gear": "252604/1509 18814 272957 272411 21183/1891 21186/1883 12632 18405 252486/1509 22240/911 19147 19147 18820 272438 20069/2504 0 23199"
+   },
+   "seconds": 13.1,
+   "weights": {
+    "StatCritRating": 0.1840539,
+    "StatFireDamage": 0.06759953,
+    "StatHasteRating": 0.4604157,
+    "StatHitRating": 0.5672387,
+    "StatIntellect": 0.2673148,
+    "StatNatureDamage": 0.3083421,
+    "StatSpellDamage": 0.3759416,
+    "StatSpellPiercing": 0.9036854,
+    "StatSpirit": 0.003325165
+   },
+   "se": {
+    "StatCritRating": 0.00333564,
+    "StatFireDamage": 4.599696e-05,
+    "StatHasteRating": 0.03067178,
+    "StatHitRating": 0.02703044,
+    "StatIntellect": 0.009447777,
+    "StatNatureDamage": 0.0002452711,
+    "StatSpellDamage": 0.0002535734,
+    "StatSpellPiercing": 0.005125238,
+    "StatSpirit": 0.001667948
+   }
+  },
+  "ml:warlock-affliction": {
+   "kind": "weights",
+   "class": "warlock",
+   "spec": "Affliction",
+   "source": "raidsim/ml/warlock-affliction.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-warlock-affliction-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-warlock-affliction-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-warlock-affliction-bis.json",
+    "apl": "_reference/data/raidsim/apls/warlock/affliction-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "2550002013520005--0550305003",
+    "bonus_stats": null,
+    "gear": "18727/1509 18814 19050 272411 14153/1891 21186/1883 14146 18405 19165/1509 11822/911 19147 19147 272438 18820 22383/2504 10770 249385"
+   },
+   "seconds": 15.6,
+   "weights": {
+    "StatCritRating": 0.6614138,
+    "StatFireDamage": 0.06962192,
+    "StatHasteRating": 0.5108695,
+    "StatHitRating": 0.8727599,
+    "StatIntellect": 0.22438,
+    "StatShadowDamage": 0.6077365,
+    "StatSpellDamage": 0.6773585,
+    "StatSpellPiercing": 0.8695725,
+    "StatSpirit": 0.06966862
+   },
+   "se": {
+    "StatCritRating": 0.01151449,
+    "StatFireDamage": 8.261149e-05,
+    "StatHasteRating": 0.0585403,
+    "StatHitRating": 0.07185838,
+    "StatIntellect": 0.04811951,
+    "StatShadowDamage": 0.000707967,
+    "StatSpellDamage": 0.0007142433,
+    "StatSpellPiercing": 0.005945856,
+    "StatSpirit": 0.03348144
+   }
+  },
+  "ml:warlock-demonology": {
+   "kind": "weights",
+   "class": "warlock",
+   "spec": "Demonology",
+   "source": "raidsim/ml/warlock-demonology.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-warlock-demonology-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-warlock-demonology-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-warlock-demonology-bis.json",
+    "apl": "_reference/data/raidsim/apls/warlock/demonology-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "011-0005003231220301351-0550005003",
+    "bonus_stats": null,
+    "gear": "18727/1509 18814 19050 272411 14153/1891 21186/1883 14146 18405 19165/1509 22231/911 19147 19147 272438 18820 22383/2504 17737 249385"
+   },
+   "seconds": 19.0,
+   "weights": {
+    "StatCritRating": 0.6286747,
+    "StatFireDamage": 0.06739477,
+    "StatHasteRating": 0.5879676,
+    "StatHitRating": 0.7278008,
+    "StatIntellect": 0.343022,
+    "StatShadowDamage": 0.6127258,
+    "StatSpellDamage": 0.6801206,
+    "StatSpellPiercing": 0.9228022,
+    "StatSpirit": 0.1129795
+   },
+   "se": {
+    "StatCritRating": 0.01309837,
+    "StatFireDamage": 9.616472e-05,
+    "StatHasteRating": 0.06416472,
+    "StatHitRating": 0.07960539,
+    "StatIntellect": 0.05564638,
+    "StatShadowDamage": 0.0007408025,
+    "StatSpellDamage": 0.000753753,
+    "StatSpellPiercing": 0.006838533,
+    "StatSpirit": 0.03737411
+   }
+  },
+  "ml:warlock-destruction": {
+   "kind": "weights",
+   "class": "warlock",
+   "spec": "Destruction",
+   "source": "raidsim/ml/warlock-destruction.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-warlock-destruction-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-warlock-destruction-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-warlock-destruction-bis.json",
+    "apl": "_reference/data/raidsim/apls/warlock/sb-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "252-0005113001-055030510310035",
+    "bonus_stats": null,
+    "gear": "18727/1509 18814 19050 272411 14153/1891 21186/1883 14146 18405 19165/1509 22231/911 19147 19147 272438 18820 22383/2504 17737 249385"
+   },
+   "seconds": 23.8,
+   "weights": {
+    "StatCritRating": 0.5644289,
+    "StatFireDamage": 0.1179685,
+    "StatHasteRating": 0.6108877,
+    "StatHitRating": 0.8386794,
+    "StatIntellect": 0.2400885,
+    "StatShadowDamage": 0.5906819,
+    "StatSpellDamage": 0.7086504,
+    "StatSpellPiercing": 0.9715572,
+    "StatSpirit": 0.05264063
+   },
+   "se": {
+    "StatCritRating": 0.01209283,
+    "StatFireDamage": 0.0001698383,
+    "StatHasteRating": 0.05877411,
+    "StatHitRating": 0.06940792,
+    "StatIntellect": 0.05011466,
+    "StatShadowDamage": 0.0006700474,
+    "StatSpellDamage": 0.0006974169,
+    "StatSpellPiercing": 0.006717673,
+    "StatSpirit": 0.03322064
+   }
+  },
+  "ml:warlock-hybrid-affliction-destruction": {
+   "kind": "weights",
+   "class": "warlock",
+   "spec": "Hybrid Affliction/Destruction",
+   "source": "raidsim/ml/warlock-hybrid-affliction-destruction.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-warlock-hybrid-affliction-destruction-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-warlock-hybrid-affliction-destruction-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-warlock-hybrid-affliction-destruction-bis.json",
+    "apl": "_reference/data/raidsim/apls/warlock/sb-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "25300020035-0050203001-0550105103",
+    "bonus_stats": null,
+    "gear": "18727/1509 18814 19050 272411 14153/1891 21186/1883 14146 18405 19165/1509 11822/911 19147 19147 272438 18820 22383/2504 10770 249385"
+   },
+   "seconds": 13.6,
+   "weights": {
+    "StatCritRating": 0.5906644,
+    "StatFireDamage": 0.06665807,
+    "StatHasteRating": 0.6013902,
+    "StatHitRating": 0.662201,
+    "StatIntellect": 0.2227388,
+    "StatShadowDamage": 0.6052092,
+    "StatSpellDamage": 0.6718672,
+    "StatSpellPiercing": 0.8986153,
+    "StatSpirit": 0.09358219
+   },
+   "se": {
+    "StatCritRating": 0.01143579,
+    "StatFireDamage": 9.404458e-05,
+    "StatHasteRating": 0.05449994,
+    "StatHitRating": 0.06487491,
+    "StatIntellect": 0.0503145,
+    "StatShadowDamage": 0.0007041937,
+    "StatSpellDamage": 0.0007118875,
+    "StatSpellPiercing": 0.006545804,
+    "StatSpirit": 0.03224328
+   }
+  },
+  "ml:warrior-arms": {
+   "kind": "weights",
+   "class": "warrior",
+   "spec": "Arms",
+   "source": "raidsim/ml/warrior-arms.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-warrior-arms-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-warrior-arms-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-warrior-arms-bis.json",
+    "apl": "_reference/data/raidsim/apls/warrior/arms-battle-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "30303213132215201-55050000002-2",
+    "bonus_stats": null,
+    "gear": "12640/1506 18404 271955 21187/849 252483/1891 21184/1885 271940/927 22232 22385/1506 13967/1887 21182 275981 11815 19120 19169/1900 0 18323"
+   },
+   "seconds": 19.9,
+   "weights": {
+    "PseudoStatMainHandDps": 4.562615,
+    "StatAgility": 0.4461283,
+    "StatArmorPenetration": 0.1150674,
+    "StatAttackPower": 0.2614812,
+    "StatCritRating": 0.5965798,
+    "StatExpertiseRating": 0.5798732,
+    "StatHasteRating": 0.3209274,
+    "StatStrength": 0.5752587
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.00543638,
+    "StatAgility": 0.01551802,
+    "StatArmorPenetration": 0.000141572,
+    "StatAttackPower": 0.000285952,
+    "StatCritRating": 0.01492073,
+    "StatExpertiseRating": 0.07866222,
+    "StatHasteRating": 0.06648471,
+    "StatStrength": 0.0006290943
+   }
+  },
+  "ml:warrior-fury": {
+   "kind": "weights",
+   "class": "warrior",
+   "spec": "Fury",
+   "source": "raidsim/ml/warrior-fury.json gear.bis.weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-warrior-fury-bis.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-w-warrior-fury-bis.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-w-warrior-fury-bis.json",
+    "apl": "_reference/data/raidsim/apls/warrior/fury-dw-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "32303013032-050530320122110231",
+    "bonus_stats": null,
+    "gear": "12640/1506 18404 275737 272414/849 252483/1891 13211/1885 21278/927 22232 22385/1506 14616/1887 21182 275981 11815 272437 279259/1900 22384/1900 18323"
+   },
+   "seconds": 26.5,
+   "weights": {
+    "PseudoStatMainHandDps": 2.986562,
+    "PseudoStatOffHandDps": 0.8692357,
+    "StatAgility": 0.4669372,
+    "StatArmorPenetration": 0.1144582,
+    "StatAttackPower": 0.2805676,
+    "StatCritRating": 0.639804,
+    "StatExpertiseRating": 1.231465,
+    "StatHasteRating": 0.6711469,
+    "StatHitRating": 0.6206594,
+    "StatStrength": 0.6172487
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.004021808,
+    "PseudoStatOffHandDps": 0.0009557605,
+    "StatAgility": 0.04089231,
+    "StatArmorPenetration": 0.0001235978,
+    "StatAttackPower": 0.0002653293,
+    "StatCritRating": 0.03580171,
+    "StatExpertiseRating": 0.0861973,
+    "StatHasteRating": 0.06268586,
+    "StatHitRating": 0.07607675,
+    "StatStrength": 0.0005837244
+   }
+  },
+  "page:paladin-hybrid-holy-retribution": {
+   "kind": "weights",
+   "class": "paladin",
+   "spec": "Hybrid Holy/Retribution",
+   "source": "raidsim/page-stat-weights.json specs.paladin-hybrid-holy-retribution weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-psw-paladin-hybrid-holy-retribution.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-psw-paladin-hybrid-holy-retribution.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-psw-paladin-hybrid-holy-retribution.json",
+    "apl": "_reference/data/raidsim/apls/paladin/shockadin-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "15025210220021--4523300100130033",
+    "bonus_stats": null,
+    "gear": "12640/1506 18404 271955 21187 22009/1891 21186/1885 12632/927 20216 22385/1506 22064/1887 21182 19325 18820 272437 23455/1900 0 272435"
+   },
+   "seconds": 61.2,
+   "weights": {
+    "PseudoStatMainHandDps": 1.764689,
+    "StatAgility": 0.2693981,
+    "StatArmorPenetration": 0.03676896,
+    "StatAttackPower": 0.122162,
+    "StatCritRating": 0.4035529,
+    "StatExpertiseRating": 0.5289148,
+    "StatHasteRating": 0.7388897,
+    "StatHitRating": 0.002494914,
+    "StatHolyDamage": 0.4029783,
+    "StatIntellect": 0.1740894,
+    "StatSpellDamage": 0.4029783,
+    "StatSpellPiercing": 0.003263853,
+    "StatSpirit": 0.00125182,
+    "StatStrength": 0.2931889
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.001702135,
+    "StatAgility": 0.004130813,
+    "StatArmorPenetration": 4.648195e-05,
+    "StatAttackPower": 0.0001200509,
+    "StatCritRating": 0.004017683,
+    "StatExpertiseRating": 0.02016785,
+    "StatHasteRating": 0.01913602,
+    "StatHitRating": 0.00569917,
+    "StatHolyDamage": 0.0001660075,
+    "StatIntellect": 0.0005189914,
+    "StatSpellDamage": 0.0001660075,
+    "StatSpellPiercing": 1.255291e-05,
+    "StatSpirit": 0.001066279,
+    "StatStrength": 0.000288122
+   }
+  },
+  "page:paladin-hybrid-protection-retribution": {
+   "kind": "weights",
+   "class": "paladin",
+   "spec": "Hybrid Protection/Retribution",
+   "source": "raidsim/page-stat-weights.json specs.paladin-hybrid-protection-retribution weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-psw-paladin-hybrid-protection-retribution.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-psw-paladin-hybrid-protection-retribution.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-psw-paladin-hybrid-protection-retribution.json",
+    "apl": "_reference/data/raidsim/apls/paladin/ret-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "05003-053020005-1523330100130033",
+    "bonus_stats": null,
+    "gear": "12640/1506 18404 20058 272411/849 252483/1891 21186/1885 21278/927 22232 22385/1506 20049/1887 21182 275981 11815 18820 21188/1900 0 272435"
+   },
+   "seconds": 57.4,
+   "weights": {
+    "PseudoStatMainHandDps": 2.378006,
+    "StatAgility": 0.2675407,
+    "StatArmorPenetration": 0.03792479,
+    "StatAttackPower": 0.1684183,
+    "StatCritRating": 0.3732499,
+    "StatExpertiseRating": 0.66376,
+    "StatHasteRating": 0.7214002,
+    "StatHitRating": 0.0912796,
+    "StatHolyDamage": 0.2684833,
+    "StatIntellect": 0.1147538,
+    "StatSpellDamage": 0.2684833,
+    "StatSpellPiercing": 0.0,
+    "StatSpirit": -0.0001321913,
+    "StatStrength": 0.404204
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.002491532,
+    "StatAgility": 0.004157531,
+    "StatArmorPenetration": 4.874274e-05,
+    "StatAttackPower": 0.0001775714,
+    "StatCritRating": 0.004028937,
+    "StatExpertiseRating": 0.02224552,
+    "StatHasteRating": 0.01950697,
+    "StatHitRating": 0.00153216,
+    "StatHolyDamage": 0.0001675445,
+    "StatIntellect": 0.0007600762,
+    "StatSpellDamage": 0.0001675445,
+    "StatSpellPiercing": 0.0,
+    "StatSpirit": 0.0002410608,
+    "StatStrength": 0.0004261714
+   }
+  },
+  "page:rogue-hybrid-assassination-subtlety": {
+   "kind": "weights",
+   "class": "rogue",
+   "spec": "Hybrid Assassination/Subtlety",
+   "source": "raidsim/page-stat-weights.json specs.rogue-hybrid-assassination-subtlety weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-psw-rogue-hybrid-assassination-subtlety.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-psw-rogue-hybrid-assassination-subtlety.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-psw-rogue-hybrid-assassination-subtlety.json",
+    "apl": "_reference/data/raidsim/apls/rogue/subtlety-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "0053031121045101-02-2052210313010011",
+    "bonus_stats": null,
+    "gear": "22005/1508 18404 271955 21187/849 252483/1891 22004/1885 271948/1887 272395 15062/1508 16711/1887 18821 275981 272437 19120 19168/1900 279259/1900 13022"
+   },
+   "seconds": 59.8,
+   "weights": {
+    "PseudoStatMainHandDps": 2.031192,
+    "PseudoStatOffHandDps": 0.5706819,
+    "StatAgility": 0.5252501,
+    "StatArmorPenetration": 0.0723855,
+    "StatAttackPower": 0.2672985,
+    "StatCritRating": 0.4645132,
+    "StatExpertiseRating": 0.6231337,
+    "StatHasteRating": 0.2828919,
+    "StatHitRating": 0.5843586,
+    "StatSpellPiercing": 0.1344511,
+    "StatStrength": 0.2940284
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.001383214,
+    "PseudoStatOffHandDps": 0.0005468693,
+    "StatAgility": 0.008013008,
+    "StatArmorPenetration": 4.610604e-05,
+    "StatAttackPower": 0.0001236565,
+    "StatCritRating": 0.008840892,
+    "StatExpertiseRating": 0.02749336,
+    "StatHasteRating": 0.02684726,
+    "StatHitRating": 0.02016402,
+    "StatSpellPiercing": 0.0005903773,
+    "StatStrength": 0.0001360221
+   }
+  },
+  "pagehit:hunter-beast-mastery": {
+   "kind": "hit",
+   "class": "hunter",
+   "spec": "Beast Mastery",
+   "source": "raidsim/page-stat-weights.json specs.hunter-beast-mastery hit_below_cap",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-psh-hunter-beast-mastery.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-psh-hunter-beast-mastery.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-psh-hunter-beast-mastery.json",
+    "apl": "_reference/data/raidsim/apls/hunter/bm-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "5320001505101251-00530502005",
+    "bonus_stats": {
+     "StatHitRating": -63.0
+    },
+    "gear": "252605/1508 18404 271955 21187/849 252483/1891 16681/1885 271948/1887 19163 16678/1508 16711/1887 272408 21182 13965 18537 250619/1900 0 18713/2523"
+   },
+   "seconds": 47.9,
+   "weights": {
+    "PseudoStatRangedDps": 1.810505,
+    "StatAgility": 0.6845675,
+    "StatArmorPenetration": 0.06127538,
+    "StatCritRating": 0.6822366,
+    "StatExpertiseRating": 0.2615515,
+    "StatHasteRating": 0.3232181,
+    "StatHitRating": 1.038981,
+    "StatIntellect": 0.5664378,
+    "StatRangedAttackPower": 0.2192858,
+    "StatSpellPiercing": 0.2794657,
+    "StatSpirit": 0.227898
+   },
+   "se": {
+    "PseudoStatRangedDps": 0.001315846,
+    "StatAgility": 0.005714005,
+    "StatArmorPenetration": 4.719637e-05,
+    "StatCritRating": 0.008454998,
+    "StatExpertiseRating": 0.02680311,
+    "StatHasteRating": 0.02756976,
+    "StatHitRating": 0.03360464,
+    "StatIntellect": 0.008764846,
+    "StatRangedAttackPower": 0.0001103095,
+    "StatSpellPiercing": 0.001779181,
+    "StatSpirit": 0.009972396
+   }
+  },
+  "pagehit:paladin-hybrid-holy-retribution": {
+   "kind": "hit",
+   "class": "paladin",
+   "spec": "Hybrid Holy/Retribution",
+   "source": "raidsim/page-stat-weights.json specs.paladin-hybrid-holy-retribution hit_below_cap",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-psh-paladin-hybrid-holy-retribution.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-psh-paladin-hybrid-holy-retribution.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-psh-paladin-hybrid-holy-retribution.json",
+    "apl": "_reference/data/raidsim/apls/paladin/shockadin-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "15025210220021--4523300100130033",
+    "bonus_stats": {
+     "StatHitRating": -110.0
+    },
+    "gear": "12640/1506 18404 271955 21187 22009/1891 21186/1885 12632/927 20216 22385/1506 22064/1887 21182 19325 18820 272437 23455/1900 0 272435"
+   },
+   "seconds": 61.1,
+   "weights": {
+    "PseudoStatMainHandDps": 1.650659,
+    "StatAgility": 0.2596322,
+    "StatArmorPenetration": 0.03353441,
+    "StatAttackPower": 0.1140188,
+    "StatCritRating": 0.3854074,
+    "StatExpertiseRating": 0.5329171,
+    "StatHasteRating": 0.6574363,
+    "StatHitRating": 0.738527,
+    "StatHolyDamage": 0.3717927,
+    "StatIntellect": 0.1619547,
+    "StatSpellDamage": 0.3717927,
+    "StatSpellPiercing": 0.002659647,
+    "StatSpirit": -0.0002633798,
+    "StatStrength": 0.273645
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.001801162,
+    "StatAgility": 0.003970179,
+    "StatArmorPenetration": 4.886706e-05,
+    "StatAttackPower": 0.0001271622,
+    "StatCritRating": 0.003892973,
+    "StatExpertiseRating": 0.02194506,
+    "StatHasteRating": 0.02280612,
+    "StatHitRating": 0.0238091,
+    "StatHolyDamage": 0.0002077346,
+    "StatIntellect": 0.0005522847,
+    "StatSpellDamage": 0.0002077346,
+    "StatSpellPiercing": 1.14956e-05,
+    "StatSpirit": 0.00105602,
+    "StatStrength": 0.0003051894
+   }
+  },
+  "pagehit:paladin-hybrid-protection-retribution": {
+   "kind": "hit",
+   "class": "paladin",
+   "spec": "Hybrid Protection/Retribution",
+   "source": "raidsim/page-stat-weights.json specs.paladin-hybrid-protection-retribution hit_below_cap",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-psh-paladin-hybrid-protection-retribution.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-psh-paladin-hybrid-protection-retribution.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-psh-paladin-hybrid-protection-retribution.json",
+    "apl": "_reference/data/raidsim/apls/paladin/ret-dps-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "05003-053020005-1523330100130033",
+    "bonus_stats": {
+     "StatHitRating": -120.0
+    },
+    "gear": "12640/1506 18404 20058 272411/849 252483/1891 21186/1885 21278/927 22232 22385/1506 20049/1887 21182 275981 11815 18820 21188/1900 0 272435"
+   },
+   "seconds": 51.6,
+   "weights": {
+    "PseudoStatMainHandDps": 2.216634,
+    "StatAgility": 0.253931,
+    "StatArmorPenetration": 0.03572493,
+    "StatAttackPower": 0.1569726,
+    "StatCritRating": 0.3527124,
+    "StatExpertiseRating": 0.6342649,
+    "StatHasteRating": 0.683503,
+    "StatHitRating": 0.8739465,
+    "StatHolyDamage": 0.2476578,
+    "StatIntellect": 0.1078391,
+    "StatSpellDamage": 0.2476578,
+    "StatSpellPiercing": 0.0,
+    "StatSpirit": 0.0002092959,
+    "StatStrength": 0.3767343
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.002568775,
+    "StatAgility": 0.004046396,
+    "StatArmorPenetration": 4.982236e-05,
+    "StatAttackPower": 0.000183004,
+    "StatCritRating": 0.003859003,
+    "StatExpertiseRating": 0.0220934,
+    "StatHasteRating": 0.02035344,
+    "StatHitRating": 0.02332862,
+    "StatHolyDamage": 0.0001821318,
+    "StatIntellect": 0.001181985,
+    "StatSpellDamage": 0.0001821318,
+    "StatSpellPiercing": 0.0,
+    "StatSpirit": 0.0001453421,
+    "StatStrength": 0.0004392096
+   }
+  },
+  "pagehit:rogue-hybrid-assassination-subtlety": {
+   "kind": "hit",
+   "class": "rogue",
+   "spec": "Hybrid Assassination/Subtlety",
+   "source": "raidsim/page-stat-weights.json specs.rogue-hybrid-assassination-subtlety hit_below_cap",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-psh-rogue-hybrid-assassination-subtlety.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-psh-rogue-hybrid-assassination-subtlety.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-psh-rogue-hybrid-assassination-subtlety.json",
+    "apl": "_reference/data/raidsim/apls/rogue/subtlety-raid-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": false,
+    "iterations": 6000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "0053031121045101-02-2052210313010011",
+    "bonus_stats": {
+     "StatHitRating": -80.0
+    },
+    "gear": "22005/1508 18404 271955 21187/849 252483/1891 22004/1885 271948/1887 272395 15062/1508 16711/1887 18821 275981 272437 19120 19168/1900 279259/1900 13022"
+   },
+   "seconds": 54.4,
+   "weights": {
+    "PseudoStatMainHandDps": 1.833314,
+    "PseudoStatOffHandDps": 0.5242635,
+    "StatAgility": 0.4111375,
+    "StatArmorPenetration": 0.06562277,
+    "StatAttackPower": 0.2448212,
+    "StatCritRating": 0.2719909,
+    "StatExpertiseRating": 0.921342,
+    "StatHasteRating": 0.2318606,
+    "StatHitRating": 1.165149,
+    "StatSpellPiercing": 0.1109814,
+    "StatStrength": 0.2693034
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.001486907,
+    "PseudoStatOffHandDps": 0.0005902963,
+    "StatAgility": 0.0123168,
+    "StatArmorPenetration": 5.18016e-05,
+    "StatAttackPower": 0.0001547975,
+    "StatCritRating": 0.01364064,
+    "StatExpertiseRating": 0.04724186,
+    "StatHasteRating": 0.04618653,
+    "StatHitRating": 0.0482698,
+    "StatSpellPiercing": 0.0005463518,
+    "StatStrength": 0.0001702772
+   }
+  },
+  "tank:druid": {
+   "kind": "tank",
+   "class": "druid",
+   "spec": "Feral Combat",
+   "source": "characters/weights/druid-tank.json raw_weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-tw-druid.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-tw-druid.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-tw-druid.json",
+    "apl": "_reference/data/raidsim/apls/druid/feral-bear-tank-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": true,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "500022-550003300230011255-052",
+    "bonus_stats": null,
+    "gear": "ui/specs/druid/feralbear/gear_sets/default.gear.json"
+   },
+   "seconds": 63.4,
+   "weights": {
+    "PseudoStatMainHandDps": 32.25529,
+    "StatAgility": 5.625914,
+    "StatArmor": -2.076622e-05,
+    "StatArmorNoMods": -5.536005e-06,
+    "StatArmorPenetration": 1.005789,
+    "StatAttackPower": 2.30395,
+    "StatBonusArmor": -2.076622e-05,
+    "StatCritRating": 9.275636,
+    "StatDefenseRating": -4.107873,
+    "StatDodgeRating": -2.013743,
+    "StatExpertiseRating": 7.960895,
+    "StatFeralAttackPower": 2.30395,
+    "StatHasteRating": -0.5078661,
+    "StatHitRating": 7.985223,
+    "StatStrength": 5.068689
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.04333451,
+    "StatAgility": 0.5470718,
+    "StatArmor": 3.680892e-06,
+    "StatArmorNoMods": 9.639332e-07,
+    "StatArmorPenetration": 0.001416631,
+    "StatAttackPower": 0.003095322,
+    "StatBonusArmor": 3.680892e-06,
+    "StatCritRating": 0.3892349,
+    "StatDefenseRating": 0.4325803,
+    "StatDodgeRating": 0.4117347,
+    "StatExpertiseRating": 0.8161933,
+    "StatFeralAttackPower": 0.003095322,
+    "StatHasteRating": 0.5778535,
+    "StatHitRating": 0.8162121,
+    "StatStrength": 0.006809708
+   },
+   "dtps_weights": {
+    "StatAgility": -0.3453828,
+    "StatArmor": -0.1198859,
+    "StatArmorNoMods": -0.02672054,
+    "StatArmorPenetration": 0.0,
+    "StatAttackPower": 0.0,
+    "StatBonusArmor": -0.1198859,
+    "StatCritRating": 0.0,
+    "StatDefenseRating": -0.8553431,
+    "StatDodgeRating": -0.4193049,
+    "StatExpertiseRating": 0.0,
+    "StatFeralAttackPower": 0.0,
+    "StatHasteRating": 0.0,
+    "StatHitRating": 0.0,
+    "StatStrength": 0.0
+   },
+   "dtps_se": {
+    "PseudoStatMainHandDps": 0.0,
+    "StatAgility": 0.01759127,
+    "StatArmor": 0.0002293576,
+    "StatArmorNoMods": 4.882552e-05,
+    "StatArmorPenetration": 0.0,
+    "StatAttackPower": 0.0,
+    "StatBonusArmor": 0.0002293576,
+    "StatCritRating": 0.0,
+    "StatDefenseRating": 0.0206769,
+    "StatDodgeRating": 0.01993147,
+    "StatExpertiseRating": 0.0,
+    "StatFeralAttackPower": 0.0,
+    "StatHasteRating": 0.0,
+    "StatHitRating": 0.0,
+    "StatStrength": 0.0
+   },
+   "base": {
+    "threat": 6794.27,
+    "dtps": 396.4664,
+    "dtps_stdev": 38.0696,
+    "iterations": 3000
+   }
+  },
+  "tank:paladin": {
+   "kind": "tank",
+   "class": "paladin",
+   "spec": "Protection",
+   "source": "characters/weights/paladin-tank.json raw_weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-tw-paladin.json)",
+   "racials": "off",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever-y/bench/gearopt-tw-paladin.json)",
+     "racials": "off",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever-y/bench/gearopt-tw-paladin.json",
+    "apl": "_reference/data/raidsim/apls/paladin/prot-tank-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": true,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "-05311102513301531-52233000001",
+    "bonus_stats": null,
+    "gear": "_reference/data/raidsim/gear_sets/forever/paladin-protection-default.gear.json"
+   },
+   "seconds": 58.0,
+   "weights": {
+    "PseudoStatMainHandDps": 2.40313,
+    "StatAgility": 0.2852016,
+    "StatArmor": -0.0002315012,
+    "StatArmorNoMods": -0.000223194,
+    "StatArmorPenetration": 0.03013922,
+    "StatAttackPower": 0.1716522,
+    "StatBlockRating": 0.8730808,
+    "StatBlockValue": -0.002329602,
+    "StatBonusArmor": -0.0002315012,
+    "StatCritRating": 0.5214472,
+    "StatDefenseRating": -0.1298467,
+    "StatDodgeRating": -0.151946,
+    "StatExpertiseRating": 0.9341515,
+    "StatHasteRating": 0.4892885,
+    "StatHealth": 0.007616097,
+    "StatHitRating": 1.527458,
+    "StatHolyDamage": 0.7355945,
+    "StatIntellect": 0.6490053,
+    "StatMP5": 0.7138047,
+    "StatMana": 0.052286,
+    "StatParryRating": -0.1149909,
+    "StatSpellDamage": 0.7355945,
+    "StatSpellPiercing": 0.01782793,
+    "StatSpirit": -0.001543137,
+    "StatStamina": 0.08377707,
+    "StatStrength": 0.3776327
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.002540872,
+    "StatAgility": 0.04501585,
+    "StatArmor": 0.0002194377,
+    "StatArmorNoMods": 0.0002192977,
+    "StatArmorPenetration": 4.523222e-05,
+    "StatAttackPower": 0.0001814909,
+    "StatBlockRating": 0.08970798,
+    "StatBlockValue": 0.002194424,
+    "StatBonusArmor": 0.0002194377,
+    "StatCritRating": 0.007714216,
+    "StatDefenseRating": 0.05851765,
+    "StatDodgeRating": 0.04604517,
+    "StatExpertiseRating": 0.05753179,
+    "StatHasteRating": 0.05496795,
+    "StatHealth": 2.406997e-05,
+    "StatHitRating": 0.06139903,
+    "StatHolyDamage": 0.0005781072,
+    "StatIntellect": 0.05380231,
+    "StatMP5": 0.05541412,
+    "StatMana": 0.03005818,
+    "StatParryRating": 0.03642967,
+    "StatSpellDamage": 0.0005781072,
+    "StatSpellPiercing": 0.0002278269,
+    "StatSpirit": 0.01245261,
+    "StatStamina": 0.0002647697,
+    "StatStrength": 0.0003992914
+   },
+   "dtps_weights": {
+    "StatAgility": -0.2812882,
+    "StatArmor": -0.02277795,
+    "StatArmorNoMods": -0.02069306,
+    "StatArmorPenetration": 0.0,
+    "StatAttackPower": 0.0,
+    "StatBlockRating": -0.0997617,
+    "StatBlockValue": -0.2116828,
+    "StatBonusArmor": -0.02277795,
+    "StatCritRating": -0.006487861,
+    "StatDefenseRating": -0.6509381,
+    "StatDodgeRating": -0.3497556,
+    "StatExpertiseRating": 0.0193625,
+    "StatHasteRating": -0.008381798,
+    "StatHealth": 0.0,
+    "StatHitRating": 0.02381626,
+    "StatHolyDamage": -0.01525252,
+    "StatIntellect": -0.004316217,
+    "StatMP5": 0.009350682,
+    "StatMana": -0.00478364,
+    "StatParryRating": -0.2795284,
+    "StatSpellDamage": -0.01525252,
+    "StatSpellPiercing": 0.0,
+    "StatSpirit": 0.0001274704,
+    "StatStamina": 0.0,
+    "StatStrength": -0.008147066
+   },
+   "dtps_se": {
+    "PseudoStatMainHandDps": 0.0,
+    "StatAgility": 0.01302405,
+    "StatArmor": 4.99578e-05,
+    "StatArmorNoMods": 4.517769e-05,
+    "StatArmorPenetration": 0.0,
+    "StatAttackPower": 0.0,
+    "StatBlockRating": 0.02661545,
+    "StatBlockValue": 0.0006640356,
+    "StatBonusArmor": 4.99578e-05,
+    "StatCritRating": 0.0001828415,
+    "StatDefenseRating": 0.01909859,
+    "StatDodgeRating": 0.01419518,
+    "StatExpertiseRating": 0.01032696,
+    "StatHasteRating": 0.01085233,
+    "StatHealth": 0.0,
+    "StatHitRating": 0.01096707,
+    "StatHolyDamage": 2.932405e-05,
+    "StatIntellect": 0.01235686,
+    "StatMP5": 0.0125558,
+    "StatMana": 0.006288029,
+    "StatParryRating": 0.01134342,
+    "StatSpellDamage": 2.932405e-05,
+    "StatSpellPiercing": 0.0,
+    "StatSpirit": 0.002673265,
+    "StatStamina": 0.0,
+    "StatStrength": 0.0001522187
+   },
+   "base": {
+    "threat": 1178.005,
+    "dtps": 287.6966,
+    "dtps_stdev": 29.03474,
+    "iterations": 3000
+   }
+  },
+  "tank:warrior": {
+   "kind": "tank",
+   "class": "warrior",
+   "spec": "Protection",
+   "source": "characters/weights/warrior-tank.json raw_weights",
+   "reproduced": true,
+   "config_from": "the bench config the run wrote (wowsims-forever/bench/gearopt-tw-warrior.json)",
+   "racials": "on",
+   "tries": [
+    {
+     "config": "the bench config the run wrote (wowsims-forever/bench/gearopt-tw-warrior.json)",
+     "racials": "on",
+     "differences": 0
+    }
+   ],
+   "differences": [],
+   "config": {
+    "file": "C:/Users/leohu/.wow-forever-tools/wowsims-forever/bench/gearopt-tw-warrior.json",
+    "apl": "_reference/data/raidsim/apls/warrior/prot-tank-raid.apl.json",
+    "buffs": "full",
+    "targetLevel": 0,
+    "isTank": true,
+    "iterations": 3000,
+    "seed": 1,
+    "duration": 180.0,
+    "talents": "35300103002-03-050530020330001351",
+    "bonus_stats": null,
+    "gear": "ui/specs/warrior/protection/gear_sets/prebis.gear.json"
+   },
+   "seconds": 36.0,
+   "weights": {
+    "PseudoStatMainHandDps": 3.301091,
+    "StatAgility": 0.7342339,
+    "StatArmor": -1.284473e-07,
+    "StatArmorNoMods": -1.284473e-07,
+    "StatArmorPenetration": 0.2189987,
+    "StatAttackPower": 0.5877125,
+    "StatBlockRating": 0.01301529,
+    "StatBlockValue": 0.6177117,
+    "StatBonusArmor": -1.284473e-07,
+    "StatCritRating": 1.132107,
+    "StatDefenseRating": -0.3495224,
+    "StatDodgeRating": -0.2558955,
+    "StatExpertiseRating": 2.010623,
+    "StatHasteRating": 0.7144418,
+    "StatHitRating": 2.028826,
+    "StatParryRating": -0.1787051,
+    "StatStrength": 1.323853
+   },
+   "se": {
+    "PseudoStatMainHandDps": 0.004946609,
+    "StatAgility": 0.07778649,
+    "StatArmor": 9.079834e-08,
+    "StatArmorNoMods": 9.079834e-08,
+    "StatArmorPenetration": 0.0002815611,
+    "StatAttackPower": 0.0007128049,
+    "StatBlockRating": 0.04084176,
+    "StatBlockValue": 0.001304395,
+    "StatBonusArmor": 9.079834e-08,
+    "StatCritRating": 0.04474853,
+    "StatDefenseRating": 0.09182422,
+    "StatDodgeRating": 0.06928631,
+    "StatExpertiseRating": 0.1560832,
+    "StatHasteRating": 0.1237223,
+    "StatHitRating": 0.1561118,
+    "StatParryRating": 0.04906842,
+    "StatStrength": 0.001571888
+   },
+   "dtps_weights": {
+    "StatAgility": -0.3392781,
+    "StatArmor": -0.02255056,
+    "StatArmorNoMods": -0.02255056,
+    "StatArmorPenetration": 0.0,
+    "StatAttackPower": 0.0,
+    "StatBlockRating": -0.000389757,
+    "StatBlockValue": -0.2224667,
+    "StatBonusArmor": -0.02255056,
+    "StatCritRating": -0.001251392,
+    "StatDefenseRating": -0.6348775,
+    "StatDodgeRating": -0.4354403,
+    "StatExpertiseRating": -0.005895975,
+    "StatHasteRating": -0.00724318,
+    "StatHitRating": -0.005895975,
+    "StatParryRating": -0.3485914,
+    "StatStrength": -0.01112333
+   },
+   "dtps_se": {
+    "PseudoStatMainHandDps": 0.0,
+    "StatAgility": 0.008771513,
+    "StatArmor": 4.568743e-05,
+    "StatArmorNoMods": 4.568743e-05,
+    "StatArmorPenetration": 0.0,
+    "StatAttackPower": 0.0,
+    "StatBlockRating": 0.003101229,
+    "StatBlockValue": 0.0004304518,
+    "StatBonusArmor": 4.568743e-05,
+    "StatCritRating": 0.0011579,
+    "StatDefenseRating": 0.01271855,
+    "StatDodgeRating": 0.009520557,
+    "StatExpertiseRating": 0.004381807,
+    "StatHasteRating": 0.004182874,
+    "StatHitRating": 0.004381807,
+    "StatParryRating": 0.007560227,
+    "StatStrength": 6.195504e-05
+   },
+   "base": {
+    "threat": 1786.238,
+    "dtps": 281.6201,
+    "dtps_stdev": 31.37885,
+    "iterations": 3000
+   }
+  }
+ },
+ "date": "2026-11-14",
+ "simulator": {
+  "repo": "wowsims/forever",
+  "commit": "ff9babba5238325eff8bb74a742a2ca626804e60",
+  "checkout": "wowsims-forever-y",
+  "patched_files": [
+   "sim/core/apl_values_aura.go",
+   "sim/core/apl_values_dot.go",
+   "sim/core/apl_values_spell.go",
+   "sim/core/buffs/debuffs_auto_gen.go",
+   "sim/core/forever_absent.go",
+   "sim/core/no_racials.go",
+   "sim/core/racials.go",
+   "sim/hunter/forever_pet_rule.go",
+   "sim/hunter/pets.go"
+  ]
+ },
+ "bench": "foreverbench-se.exe",
+ "unit": "weights: the simulator's DPS per point (tanks: threat per second per point; dtps_weights: damage taken per second per point), means as the run printed them; se: one standard error, weights_stdev / sqrt(sample_counts), same unit",
+ "pass": {
+  "runs": 77,
+  "minutes": 20.1,
+  "jobs": 2
+ },
+ "study": {
+  "seeds": 12,
+  "what": "per key: seeds 1-N (run.sim_seed, disjoint iterations). calibration = the spread (standard deviation) of each stat's mean over the seeds over the mean of its reported standard errors (1 = the reported error is the right size); correlation = the stats' estimates over the seeds, standardized, pairwise; swaps = each slot's pre-BiS item against its BiS item (simulator item stats, no enchants): the spread of the score change over the seeds against the independent-errors prediction sqrt(sum (dx * se)^2)",
+  "keys": {
+   "ml:mage-frost": {
+    "seeds": 12,
+    "weights": {
+     "stats": 10,
+     "pooled_ratio": 1.219,
+     "median_ratio": 1.196,
+     "calibration": {
+      "StatArcaneDamage": {
+       "mean": 0.091985,
+       "spread": 0.0005571,
+       "se": 0.0003686,
+       "ratio": 1.512
+      },
+      "StatCritRating": {
+       "mean": 0.31627,
+       "spread": 0.008297,
+       "se": 0.00653,
+       "ratio": 1.27
+      },
+      "StatFireDamage": {
+       "mean": 0.0018395,
+       "spread": 3.82e-05,
+       "se": 2.712e-05,
+       "ratio": 1.408
+      },
+      "StatFrostDamage": {
+       "mean": 0.35586,
+       "spread": 0.0008493,
+       "se": 0.0004859,
+       "ratio": 1.748
+      },
+      "StatHasteRating": {
+       "mean": 0.53019,
+       "spread": 0.005146,
+       "se": 0.008859,
+       "ratio": 0.581
+      },
+      "StatHitRating": {
+       "mean": 0.66831,
+       "spread": 0.03416,
+       "se": 0.03288,
+       "ratio": 1.039
+      },
+      "StatIntellect": {
+       "mean": 0.084826,
+       "spread": 0.003923,
+       "se": 0.004046,
+       "ratio": 0.97
+      },
+      "StatSpellDamage": {
+       "mean": 0.44969,
+       "spread": 0.0005079,
+       "se": 0.0004238,
+       "ratio": 1.198
+      },
+      "StatSpellPiercing": {
+       "mean": 0.99895,
+       "spread": 0.005527,
+       "se": 0.004627,
+       "ratio": 1.194
+      },
+      "StatSpirit": {
+       "mean": 0.00035133,
+       "spread": 0.0006007,
+       "se": 0.0007141,
+       "ratio": 0.841
+      }
+     },
+     "correlation": {
+      "pairs": 45,
+      "mean_r": -0.013,
+      "mean_abs_r": 0.269,
+      "mean_abs_r_if_independent": 0.252,
+      "strongest": [
+       {
+        "a": "StatArcaneDamage",
+        "b": "StatFrostDamage",
+        "r": -0.808
+       },
+       {
+        "a": "StatFrostDamage",
+        "b": "StatSpellDamage",
+        "r": 0.773
+       },
+       {
+        "a": "StatSpellDamage",
+        "b": "StatSpellPiercing",
+        "r": 0.769
+       },
+       {
+        "a": "StatFrostDamage",
+        "b": "StatSpellPiercing",
+        "r": 0.76
+       },
+       {
+        "a": "StatCritRating",
+        "b": "StatIntellect",
+        "r": 0.677
+       },
+       {
+        "a": "StatFrostDamage",
+        "b": "StatHitRating",
+        "r": -0.638
+       },
+       {
+        "a": "StatHitRating",
+        "b": "StatSpellDamage",
+        "r": -0.571
+       },
+       {
+        "a": "StatArcaneDamage",
+        "b": "StatHitRating",
+        "r": 0.441
+       }
+      ]
+     }
+    },
+    "swaps": {
+     "count": 6,
+     "pooled_ratio": 1.102,
+     "median_predicted_pct": 0.0879,
+     "median_abs_gain_pct": 1.6995,
+     "rows": [
+      {
+       "slot": 1,
+       "gain_pct": 1.87,
+       "spread_pct": 0.1454,
+       "predicted_pct": 0.1375,
+       "ratio": 1.057
+      },
+      {
+       "slot": 8,
+       "gain_pct": 2.018,
+       "spread_pct": 0.0196,
+       "predicted_pct": 0.0204,
+       "ratio": 0.96
+      },
+      {
+       "slot": 10,
+       "gain_pct": 1.157,
+       "spread_pct": 0.0481,
+       "predicted_pct": 0.0383,
+       "ratio": 1.256
+      },
+      {
+       "slot": 11,
+       "gain_pct": 1.529,
+       "spread_pct": 0.1459,
+       "predicted_pct": 0.1375,
+       "ratio": 1.061
+      },
+      {
+       "slot": 12,
+       "gain_pct": -3.384,
+       "spread_pct": 0.0038,
+       "predicted_pct": 0.0032,
+       "ratio": 1.198
+      },
+      {
+       "slot": 15,
+       "gain_pct": -0.162,
+       "spread_pct": 0.1445,
+       "predicted_pct": 0.1375,
+       "ratio": 1.051
+      }
+     ]
+    }
+   },
+   "ml:rogue-combat": {
+    "seeds": 12,
+    "weights": {
+     "stats": 11,
+     "pooled_ratio": 1.136,
+     "median_ratio": 1.115,
+     "calibration": {
+      "PseudoStatMainHandDps": {
+       "mean": 1.9818,
+       "spread": 0.002811,
+       "se": 0.001965,
+       "ratio": 1.431
+      },
+      "PseudoStatOffHandDps": {
+       "mean": 0.89968,
+       "spread": 0.000997,
+       "se": 0.001058,
+       "ratio": 0.942
+      },
+      "StatAgility": {
+       "mean": 0.44151,
+       "spread": 0.002501,
+       "se": 0.003452,
+       "ratio": 0.724
+      },
+      "StatArmorPenetration": {
+       "mean": 0.08281,
+       "spread": 7.558e-05,
+       "se": 6.779e-05,
+       "ratio": 1.115
+      },
+      "StatAttackPower": {
+       "mean": 0.2265,
+       "spread": 0.000225,
+       "se": 0.0001659,
+       "ratio": 1.357
+      },
+      "StatCritRating": {
+       "mean": 0.35968,
+       "spread": 0.005103,
+       "se": 0.003917,
+       "ratio": 1.303
+      },
+      "StatExpertiseRating": {
+       "mean": 0.53497,
+       "spread": 0.02156,
+       "se": 0.02183,
+       "ratio": 0.988
+      },
+      "StatHasteRating": {
+       "mean": 0.40007,
+       "spread": 0.01271,
+       "se": 0.01965,
+       "ratio": 0.647
+      },
+      "StatHitRating": {
+       "mean": 0.55756,
+       "spread": 0.01467,
+       "se": 0.01918,
+       "ratio": 0.765
+      },
+      "StatSpellPiercing": {
+       "mean": 0.080961,
+       "spread": 0.0009218,
+       "se": 0.000631,
+       "ratio": 1.461
+      },
+      "StatStrength": {
+       "mean": 0.24915,
+       "spread": 0.0002475,
+       "se": 0.0001825,
+       "ratio": 1.357
+      }
+     },
+     "correlation": {
+      "pairs": 55,
+      "mean_r": 0.105,
+      "mean_abs_r": 0.386,
+      "mean_abs_r_if_independent": 0.252,
+      "strongest": [
+       {
+        "a": "StatAttackPower",
+        "b": "StatStrength",
+        "r": 1.0
+       },
+       {
+        "a": "PseudoStatMainHandDps",
+        "b": "StatStrength",
+        "r": 0.931
+       },
+       {
+        "a": "PseudoStatMainHandDps",
+        "b": "StatAttackPower",
+        "r": 0.931
+       },
+       {
+        "a": "StatArmorPenetration",
+        "b": "StatStrength",
+        "r": 0.918
+       },
+       {
+        "a": "StatArmorPenetration",
+        "b": "StatAttackPower",
+        "r": 0.918
+       },
+       {
+        "a": "PseudoStatMainHandDps",
+        "b": "StatArmorPenetration",
+        "r": 0.859
+       },
+       {
+        "a": "StatCritRating",
+        "b": "StatExpertiseRating",
+        "r": -0.801
+       },
+       {
+        "a": "StatAgility",
+        "b": "StatSpellPiercing",
+        "r": -0.67
+       }
+      ]
+     }
+    },
+    "swaps": {
+     "count": 6,
+     "pooled_ratio": 0.815,
+     "median_predicted_pct": 0.027450000000000002,
+     "median_abs_gain_pct": 0.2655,
+     "rows": [
+      {
+       "slot": 1,
+       "gain_pct": 0.819,
+       "spread_pct": 0.0426,
+       "predicted_pct": 0.057,
+       "ratio": 0.746
+      },
+      {
+       "slot": 3,
+       "gain_pct": -0.083,
+       "spread_pct": 0.0119,
+       "predicted_pct": 0.0153,
+       "ratio": 0.773
+      },
+      {
+       "slot": 10,
+       "gain_pct": -0.059,
+       "spread_pct": 0.0565,
+       "predicted_pct": 0.0588,
+       "ratio": 0.961
+      },
+      {
+       "slot": 11,
+       "gain_pct": 0.448,
+       "spread_pct": 0.0113,
+       "predicted_pct": 0.0144,
+       "ratio": 0.79
+      },
+      {
+       "slot": 13,
+       "gain_pct": 0.082,
+       "spread_pct": 0.0306,
+       "predicted_pct": 0.0396,
+       "ratio": 0.774
+      },
+      {
+       "slot": 14,
+       "gain_pct": 1.412,
+       "spread_pct": 0.0112,
+       "predicted_pct": 0.0136,
+       "ratio": 0.828
+      }
+     ]
+    }
+   },
+   "ml:hunter-beast-mastery": {
+    "seeds": 12,
+    "weights": {
+     "stats": 11,
+     "pooled_ratio": 1.131,
+     "median_ratio": 1.137,
+     "calibration": {
+      "PseudoStatRangedDps": {
+       "mean": 1.8254,
+       "spread": 0.001997,
+       "se": 0.001535,
+       "ratio": 1.301
+      },
+      "StatAgility": {
+       "mean": 0.65302,
+       "spread": 0.006618,
+       "se": 0.005642,
+       "ratio": 1.173
+      },
+      "StatArmorPenetration": {
+       "mean": 0.063345,
+       "spread": 7.285e-05,
+       "se": 5.6e-05,
+       "ratio": 1.301
+      },
+      "StatCritRating": {
+       "mean": 0.60301,
+       "spread": 0.008499,
+       "se": 0.008634,
+       "ratio": 0.984
+      },
+      "StatExpertiseRating": {
+       "mean": 0.29598,
+       "spread": 0.02327,
+       "se": 0.02246,
+       "ratio": 1.036
+      },
+      "StatHasteRating": {
+       "mean": 0.39367,
+       "spread": 0.02505,
+       "se": 0.0297,
+       "ratio": 0.844
+      },
+      "StatHitRating": {
+       "mean": 0.86751,
+       "spread": 0.03423,
+       "se": 0.03203,
+       "ratio": 1.069
+      },
+      "StatIntellect": {
+       "mean": 0.2403,
+       "spread": 0.0001849,
+       "se": 0.0001703,
+       "ratio": 1.086
+      },
+      "StatRangedAttackPower": {
+       "mean": 0.2184,
+       "spread": 0.0001398,
+       "se": 0.000121,
+       "ratio": 1.156
+      },
+      "StatSpellPiercing": {
+       "mean": 0.26087,
+       "spread": 0.003036,
+       "se": 0.002399,
+       "ratio": 1.265
+      },
+      "StatSpirit": {
+       "mean": 8.4425e-05,
+       "spread": 0.0001744,
+       "se": 0.0001534,
+       "ratio": 1.137
+      }
+     },
+     "correlation": {
+      "pairs": 55,
+      "mean_r": 0.128,
+      "mean_abs_r": 0.331,
+      "mean_abs_r_if_independent": 0.252,
+      "strongest": [
+       {
+        "a": "PseudoStatRangedDps",
+        "b": "StatArmorPenetration",
+        "r": 0.99
+       },
+       {
+        "a": "PseudoStatRangedDps",
+        "b": "StatRangedAttackPower",
+        "r": 0.897
+       },
+       {
+        "a": "StatArmorPenetration",
+        "b": "StatRangedAttackPower",
+        "r": 0.874
+       },
+       {
+        "a": "PseudoStatRangedDps",
+        "b": "StatIntellect",
+        "r": 0.869
+       },
+       {
+        "a": "StatArmorPenetration",
+        "b": "StatIntellect",
+        "r": 0.836
+       },
+       {
+        "a": "StatExpertiseRating",
+        "b": "StatHitRating",
+        "r": 0.746
+       },
+       {
+        "a": "StatIntellect",
+        "b": "StatRangedAttackPower",
+        "r": 0.717
+       },
+       {
+        "a": "StatHitRating",
+        "b": "StatSpellPiercing",
+        "r": -0.64
+       }
+      ]
+     }
+    },
+    "swaps": {
+     "count": 4,
+     "pooled_ratio": 0.911,
+     "median_predicted_pct": 0.0419,
+     "median_abs_gain_pct": 1.953,
+     "rows": [
+      {
+       "slot": 1,
+       "gain_pct": 2.411,
+       "spread_pct": 0.0938,
+       "predicted_pct": 0.0906,
+       "ratio": 1.035
+      },
+      {
+       "slot": 7,
+       "gain_pct": 1.495,
+       "spread_pct": 0.0373,
+       "predicted_pct": 0.0517,
+       "ratio": 0.722
+      },
+      {
+       "slot": 11,
+       "gain_pct": 1.319,
+       "spread_pct": 0.0309,
+       "predicted_pct": 0.0314,
+       "ratio": 0.985
+      },
+      {
+       "slot": 16,
+       "gain_pct": 8.416,
+       "spread_pct": 0.0279,
+       "predicted_pct": 0.0321,
+       "ratio": 0.871
+      }
+     ]
+    }
+   },
+   "tank:paladin": {
+    "seeds": 12,
+    "weights": {
+     "stats": 26,
+     "pooled_ratio": 1.107,
+     "median_ratio": 1.009,
+     "calibration": {
+      "PseudoStatMainHandDps": {
+       "mean": 2.3995,
+       "spread": 0.004454,
+       "se": 0.002516,
+       "ratio": 1.771
+      },
+      "StatAgility": {
+       "mean": 0.28408,
+       "spread": 0.04868,
+       "se": 0.04297,
+       "ratio": 1.133
+      },
+      "StatArmor": {
+       "mean": -3.6542e-05,
+       "spread": 0.000109,
+       "se": 0.0001073,
+       "ratio": 1.015
+      },
+      "StatArmorNoMods": {
+       "mean": -3.5686e-05,
+       "spread": 0.0001076,
+       "se": 0.0001073,
+       "ratio": 1.003
+      },
+      "StatArmorPenetration": {
+       "mean": 0.030056,
+       "spread": 7.344e-05,
+       "se": 4.469e-05,
+       "ratio": 1.643
+      },
+      "StatAttackPower": {
+       "mean": 0.1714,
+       "spread": 0.0003182,
+       "se": 0.0001797,
+       "ratio": 1.771
+      },
+      "StatBlockRating": {
+       "mean": 0.82116,
+       "spread": 0.0711,
+       "se": 0.08618,
+       "ratio": 0.825
+      },
+      "StatBlockValue": {
+       "mean": -0.00057504,
+       "spread": 0.001586,
+       "se": 0.001327,
+       "ratio": 1.195
+      },
+      "StatBonusArmor": {
+       "mean": -3.6542e-05,
+       "spread": 0.000109,
+       "se": 0.0001073,
+       "ratio": 1.015
+      },
+      "StatCritRating": {
+       "mean": 0.52122,
+       "spread": 0.006951,
+       "se": 0.007609,
+       "ratio": 0.914
+      },
+      "StatDefenseRating": {
+       "mean": -0.15163,
+       "spread": 0.03282,
+       "se": 0.0558,
+       "ratio": 0.588
+      },
+      "StatDodgeRating": {
+       "mean": -0.15558,
+       "spread": 0.03123,
+       "se": 0.04336,
+       "ratio": 0.72
+      },
+      "StatExpertiseRating": {
+       "mean": 0.95463,
+       "spread": 0.04812,
+       "se": 0.05793,
+       "ratio": 0.831
+      },
+      "StatHasteRating": {
+       "mean": 0.54477,
+       "spread": 0.04383,
+       "se": 0.05416,
+       "ratio": 0.809
+      },
+      "StatHealth": {
+       "mean": 0.0076067,
+       "spread": 2.905e-05,
+       "se": 2.391e-05,
+       "ratio": 1.215
+      },
+      "StatHitRating": {
+       "mean": 1.5642,
+       "spread": 0.05783,
+       "se": 0.06228,
+       "ratio": 0.928
+      },
+      "StatHolyDamage": {
+       "mean": 0.73559,
+       "spread": 0.0006383,
+       "se": 0.000573,
+       "ratio": 1.114
+      },
+      "StatIntellect": {
+       "mean": 0.60278,
+       "spread": 0.03944,
+       "se": 0.05249,
+       "ratio": 0.751
+      },
+      "StatMP5": {
+       "mean": 0.69073,
+       "spread": 0.02725,
+       "se": 0.05458,
+       "ratio": 0.499
+      },
+      "StatMana": {
+       "mean": 0.032795,
+       "spread": 0.02673,
+       "se": 0.02928,
+       "ratio": 0.913
+      },
+      "StatParryRating": {
+       "mean": -0.1124,
+       "spread": 0.02604,
+       "se": 0.03431,
+       "ratio": 0.759
+      },
+      "StatSpellDamage": {
+       "mean": 0.73559,
+       "spread": 0.0006383,
+       "se": 0.000573,
+       "ratio": 1.114
+      },
+      "StatSpellPiercing": {
+       "mean": 0.018165,
+       "spread": 0.000175,
+       "se": 0.0002281,
+       "ratio": 0.767
+      },
+      "StatSpirit": {
+       "mean": 0.0036806,
+       "spread": 0.01221,
+       "se": 0.01129,
+       "ratio": 1.081
+      },
+      "StatStamina": {
+       "mean": 0.083674,
+       "spread": 0.0003196,
+       "se": 0.000263,
+       "ratio": 1.215
+      },
+      "StatStrength": {
+       "mean": 0.37707,
+       "spread": 0.0006998,
+       "se": 0.0003953,
+       "ratio": 1.77
+      }
+     },
+     "correlation": {
+      "pairs": 325,
+      "mean_r": 0.061,
+      "mean_abs_r": 0.31,
+      "mean_abs_r_if_independent": 0.252,
+      "strongest": [
+       {
+        "a": "StatHolyDamage",
+        "b": "StatSpellDamage",
+        "r": 1.0
+       },
+       {
+        "a": "StatArmor",
+        "b": "StatBonusArmor",
+        "r": 1.0
+       },
+       {
+        "a": "StatHealth",
+        "b": "StatStamina",
+        "r": 1.0
+       },
+       {
+        "a": "PseudoStatMainHandDps",
+        "b": "StatAttackPower",
+        "r": 1.0
+       },
+       {
+        "a": "PseudoStatMainHandDps",
+        "b": "StatStrength",
+        "r": 1.0
+       },
+       {
+        "a": "StatAttackPower",
+        "b": "StatStrength",
+        "r": 1.0
+       },
+       {
+        "a": "StatArmor",
+        "b": "StatArmorNoMods",
+        "r": 1.0
+       },
+       {
+        "a": "StatArmorNoMods",
+        "b": "StatBonusArmor",
+        "r": 1.0
+       }
+      ]
+     }
+    },
+    "dtps_weights": {
+     "stats": 20,
+     "pooled_ratio": 1.046,
+     "median_ratio": 0.978,
+     "calibration": {
+      "StatAgility": {
+       "mean": -0.27797,
+       "spread": 0.01057,
+       "se": 0.01304,
+       "ratio": 0.81
+      },
+      "StatArmor": {
+       "mean": -0.022773,
+       "spread": 6.128e-05,
+       "se": 4.371e-05,
+       "ratio": 1.402
+      },
+      "StatArmorNoMods": {
+       "mean": -0.020701,
+       "spread": 5.642e-05,
+       "se": 4.018e-05,
+       "ratio": 1.404
+      },
+      "StatBlockRating": {
+       "mean": -0.063154,
+       "spread": 0.02148,
+       "se": 0.02621,
+       "ratio": 0.82
+      },
+      "StatBlockValue": {
+       "mean": -0.21199,
+       "spread": 0.0007127,
+       "se": 0.0006507,
+       "ratio": 1.095
+      },
+      "StatBonusArmor": {
+       "mean": -0.022773,
+       "spread": 6.128e-05,
+       "se": 4.371e-05,
+       "ratio": 1.402
+      },
+      "StatCritRating": {
+       "mean": -0.006535,
+       "spread": 0.000114,
+       "se": 0.0001843,
+       "ratio": 0.619
+      },
+      "StatDefenseRating": {
+       "mean": -0.63529,
+       "spread": 0.01366,
+       "se": 0.01903,
+       "ratio": 0.718
+      },
+      "StatDodgeRating": {
+       "mean": -0.3356,
+       "spread": 0.01257,
+       "se": 0.01399,
+       "ratio": 0.898
+      },
+      "StatExpertiseRating": {
+       "mean": 0.0015307,
+       "spread": 0.01043,
+       "se": 0.01035,
+       "ratio": 1.008
+      },
+      "StatHasteRating": {
+       "mean": -0.00099146,
+       "spread": 0.008864,
+       "se": 0.01107,
+       "ratio": 0.801
+      },
+      "StatHitRating": {
+       "mean": 0.0044496,
+       "spread": 0.01168,
+       "se": 0.01113,
+       "ratio": 1.049
+      },
+      "StatHolyDamage": {
+       "mean": -0.01524,
+       "spread": 4.027e-05,
+       "se": 2.925e-05,
+       "ratio": 1.377
+      },
+      "StatIntellect": {
+       "mean": 0.0079143,
+       "spread": 0.01127,
+       "se": 0.01189,
+       "ratio": 0.948
+      },
+      "StatMP5": {
+       "mean": 0.009312,
+       "spread": 0.008398,
+       "se": 0.01228,
+       "ratio": 0.684
+      },
+      "StatMana": {
+       "mean": -9.3925e-05,
+       "spread": 0.007133,
+       "se": 0.006705,
+       "ratio": 1.064
+      },
+      "StatParryRating": {
+       "mean": -0.27086,
+       "spread": 0.009624,
+       "se": 0.01117,
+       "ratio": 0.862
+      },
+      "StatSpellDamage": {
+       "mean": -0.01524,
+       "spread": 4.027e-05,
+       "se": 2.925e-05,
+       "ratio": 1.377
+      },
+      "StatSpirit": {
+       "mean": 8.1843e-05,
+       "spread": 0.003736,
+       "se": 0.002696,
+       "ratio": 1.386
+      },
+      "StatStrength": {
+       "mean": -0.0081555,
+       "spread": 2.339e-05,
+       "se": 0.0001524,
+       "ratio": 0.153
+      }
+     },
+     "correlation": {
+      "pairs": 190,
+      "mean_r": 0.175,
+      "mean_abs_r": 0.339,
+      "mean_abs_r_if_independent": 0.252,
+      "strongest": [
+       {
+        "a": "StatHolyDamage",
+        "b": "StatSpellDamage",
+        "r": 1.0
+       },
+       {
+        "a": "StatArmor",
+        "b": "StatBonusArmor",
+        "r": 1.0
+       },
+       {
+        "a": "StatArmor",
+        "b": "StatArmorNoMods",
+        "r": 0.997
+       },
+       {
+        "a": "StatArmorNoMods",
+        "b": "StatBonusArmor",
+        "r": 0.997
+       },
+       {
+        "a": "StatDodgeRating",
+        "b": "StatParryRating",
+        "r": 0.991
+       },
+       {
+        "a": "StatBlockValue",
+        "b": "StatStrength",
+        "r": 0.968
+       },
+       {
+        "a": "StatExpertiseRating",
+        "b": "StatHitRating",
+        "r": 0.925
+       },
+       {
+        "a": "StatDefenseRating",
+        "b": "StatParryRating",
+        "r": 0.91
+       }
+      ]
+     }
+    },
+    "share": {
+     "stats": 16,
+     "pooled_ratio": 0.931,
+     "mean_r_threat_damage": 0.05,
+     "per_stat": {
+      "StatAgility": {
+       "spread": 1.702e-05,
+       "predicted": 2.147e-05,
+       "ratio": 0.793,
+       "r_threat_damage": 0.584
+      },
+      "StatArmor": {
+       "spread": 7.236e-08,
+       "predicted": 5.931e-08,
+       "ratio": 1.22,
+       "r_threat_damage": -0.053
+      },
+      "StatBlockRating": {
+       "spread": 2.477e-05,
+       "predicted": 4.309e-05,
+       "ratio": 0.575,
+       "r_threat_damage": 0.573
+      },
+      "StatBlockValue": {
+       "spread": 8.461e-07,
+       "predicted": 7.981e-07,
+       "ratio": 1.06,
+       "r_threat_damage": 0.145
+      },
+      "StatCritRating": {
+       "spread": 2.927e-06,
+       "predicted": 3.234e-06,
+       "ratio": 0.905,
+       "r_threat_damage": 0.255
+      },
+      "StatDefenseRating": {
+       "spread": 2.048e-05,
+       "predicted": 2.889e-05,
+       "ratio": 0.709,
+       "r_threat_damage": -0.255
+      },
+      "StatDodgeRating": {
+       "spread": 1.113e-05,
+       "predicted": 2.206e-05,
+       "ratio": 0.505,
+       "r_threat_damage": 0.591
+      },
+      "StatExpertiseRating": {
+       "spread": 2.126e-05,
+       "predicted": 2.618e-05,
+       "ratio": 0.812,
+       "r_threat_damage": 0.128
+      },
+      "StatHasteRating": {
+       "spread": 2.353e-05,
+       "predicted": 2.492e-05,
+       "ratio": 0.944,
+       "r_threat_damage": -0.517
+      },
+      "StatHitRating": {
+       "spread": 2.899e-05,
+       "predicted": 2.815e-05,
+       "ratio": 1.03,
+       "r_threat_damage": -0.271
+      },
+      "StatIntellect": {
+       "spread": 2.235e-05,
+       "predicted": 2.456e-05,
+       "ratio": 0.91,
+       "r_threat_damage": -0.377
+      },
+      "StatMP5": {
+       "spread": 1.518e-05,
+       "predicted": 2.551e-05,
+       "ratio": 0.595,
+       "r_threat_damage": -0.257
+      },
+      "StatParryRating": {
+       "spread": 8.512e-06,
+       "predicted": 1.75e-05,
+       "ratio": 0.486,
+       "r_threat_damage": 0.647
+      },
+      "StatSpellDamage": {
+       "spread": 2.917e-07,
+       "predicted": 2.445e-07,
+       "ratio": 1.193,
+       "r_threat_damage": -0.552
+      },
+      "StatSpirit": {
+       "spread": 6.287e-06,
+       "predicted": 5.335e-06,
+       "ratio": 1.178,
+       "r_threat_damage": -0.063
+      },
+      "StatStrength": {
+       "spread": 2.932e-07,
+       "predicted": 2.138e-07,
+       "ratio": 1.372,
+       "r_threat_damage": 0.221
+      }
+     }
+    }
+   }
+  },
+  "swap_noise_all": {
+   "what": "per ML entry: its pre-BiS -> BiS slot swaps (simulator item stats, no enchants), one standard error of the score change (independent stats, the full pass's errors) and the gain, in percent of the BiS set's item score; within_2_errors: swaps whose gain is inside two errors",
+   "entries": {
+    "ml:druid-balance": {
+     "swaps": 5,
+     "median_noise_pct": 0.0204,
+     "max_noise_pct": 0.0666,
+     "median_abs_gain_pct": 2.682,
+     "within_2_errors": 0
+    },
+    "ml:druid-feral-combat": {
+     "swaps": 4,
+     "median_noise_pct": 0.0651,
+     "max_noise_pct": 0.1057,
+     "median_abs_gain_pct": 0.865,
+     "within_2_errors": 1
+    },
+    "ml:hunter-beast-mastery": {
+     "swaps": 4,
+     "median_noise_pct": 0.0422,
+     "max_noise_pct": 0.0908,
+     "median_abs_gain_pct": 1.934,
+     "within_2_errors": 0
+    },
+    "ml:hunter-hybrid-beast-mastery-marksmanship": {
+     "swaps": 5,
+     "median_noise_pct": 0.1131,
+     "max_noise_pct": 0.1275,
+     "median_abs_gain_pct": 0.525,
+     "within_2_errors": 1
+    },
+    "ml:hunter-marksmanship": {
+     "swaps": 4,
+     "median_noise_pct": 0.0743,
+     "max_noise_pct": 0.1316,
+     "median_abs_gain_pct": 1.705,
+     "within_2_errors": 0
+    },
+    "ml:hunter-survival": {
+     "swaps": 7,
+     "median_noise_pct": 0.102,
+     "max_noise_pct": 0.1047,
+     "median_abs_gain_pct": 0.231,
+     "within_2_errors": 1
+    },
+    "ml:mage-arcane": {
+     "swaps": 6,
+     "median_noise_pct": 0.1186,
+     "max_noise_pct": 0.2072,
+     "median_abs_gain_pct": 0.259,
+     "within_2_errors": 3
+    },
+    "ml:mage-fire": {
+     "swaps": 5,
+     "median_noise_pct": 0.0947,
+     "max_noise_pct": 0.2185,
+     "median_abs_gain_pct": 1.206,
+     "within_2_errors": 0
+    },
+    "ml:mage-frost": {
+     "swaps": 6,
+     "median_noise_pct": 0.086,
+     "max_noise_pct": 0.1327,
+     "median_abs_gain_pct": 1.936,
+     "within_2_errors": 1
+    },
+    "ml:mage-hybrid-arcane-frost": {
+     "swaps": 5,
+     "median_noise_pct": 0.0235,
+     "max_noise_pct": 0.1227,
+     "median_abs_gain_pct": 0.825,
+     "within_2_errors": 0
+    },
+    "ml:mage-hybrid-fire-frost": {
+     "swaps": 5,
+     "median_noise_pct": 0.0653,
+     "max_noise_pct": 0.15,
+     "median_abs_gain_pct": 1.166,
+     "within_2_errors": 0
+    },
+    "ml:paladin-hybrid-protection-retribution": {
+     "swaps": 5,
+     "median_noise_pct": 0.0228,
+     "max_noise_pct": 0.0984,
+     "median_abs_gain_pct": 0.834,
+     "within_2_errors": 0
+    },
+    "ml:paladin-retribution": {
+     "swaps": 3,
+     "median_noise_pct": 0.02,
+     "max_noise_pct": 0.0437,
+     "median_abs_gain_pct": 0.645,
+     "within_2_errors": 0
+    },
+    "ml:priest-hybrid-discipline-holy": {
+     "swaps": 6,
+     "median_noise_pct": 0.0369,
+     "max_noise_pct": 0.0431,
+     "median_abs_gain_pct": 1.933,
+     "within_2_errors": 0
+    },
+    "ml:priest-shadow": {
+     "swaps": 7,
+     "median_noise_pct": 0.0182,
+     "max_noise_pct": 0.109,
+     "median_abs_gain_pct": 1.795,
+     "within_2_errors": 1
+    },
+    "ml:rogue-assassination": {
+     "swaps": 6,
+     "median_noise_pct": 0.0561,
+     "max_noise_pct": 0.0912,
+     "median_abs_gain_pct": 0.537,
+     "within_2_errors": 1
+    },
+    "ml:rogue-combat": {
+     "swaps": 6,
+     "median_noise_pct": 0.0271,
+     "max_noise_pct": 0.0577,
+     "median_abs_gain_pct": 0.267,
+     "within_2_errors": 2
+    },
+    "ml:rogue-hybrid-assassination-combat": {
+     "swaps": 5,
+     "median_noise_pct": 0.0455,
+     "max_noise_pct": 0.0922,
+     "median_abs_gain_pct": 0.42,
+     "within_2_errors": 0
+    },
+    "ml:rogue-hybrid-assassination-subtlety": {
+     "swaps": 5,
+     "median_noise_pct": 0.094,
+     "max_noise_pct": 0.1461,
+     "median_abs_gain_pct": 0.669,
+     "within_2_errors": 1
+    },
+    "ml:rogue-subtlety": {
+     "swaps": 8,
+     "median_noise_pct": 0.0808,
+     "max_noise_pct": 0.0819,
+     "median_abs_gain_pct": 0.288,
+     "within_2_errors": 3
+    },
+    "ml:shaman-elemental": {
+     "swaps": 4,
+     "median_noise_pct": 0.079,
+     "max_noise_pct": 0.1811,
+     "median_abs_gain_pct": 1.474,
+     "within_2_errors": 0
+    },
+    "ml:shaman-enhancement": {
+     "swaps": 7,
+     "median_noise_pct": 0.1231,
+     "max_noise_pct": 0.2924,
+     "median_abs_gain_pct": 0.956,
+     "within_2_errors": 2
+    },
+    "ml:shaman-hybrid-elemental-enhancement": {
+     "swaps": 12,
+     "median_noise_pct": 0.0614,
+     "max_noise_pct": 0.1448,
+     "median_abs_gain_pct": 2.653,
+     "within_2_errors": 0
+    },
+    "ml:warlock-affliction": {
+     "swaps": 6,
+     "median_noise_pct": 0.0771,
+     "max_noise_pct": 0.1504,
+     "median_abs_gain_pct": 1.987,
+     "within_2_errors": 0
+    },
+    "ml:warlock-demonology": {
+     "swaps": 7,
+     "median_noise_pct": 0.1502,
+     "max_noise_pct": 0.1959,
+     "median_abs_gain_pct": 2.302,
+     "within_2_errors": 0
+    },
+    "ml:warlock-destruction": {
+     "swaps": 6,
+     "median_noise_pct": 0.092,
+     "max_noise_pct": 0.1776,
+     "median_abs_gain_pct": 1.968,
+     "within_2_errors": 0
+    },
+    "ml:warlock-hybrid-affliction-destruction": {
+     "swaps": 5,
+     "median_noise_pct": 0.1626,
+     "max_noise_pct": 0.1753,
+     "median_abs_gain_pct": 1.632,
+     "within_2_errors": 0
+    },
+    "ml:warrior-arms": {
+     "swaps": 4,
+     "median_noise_pct": 0.0445,
+     "max_noise_pct": 0.0762,
+     "median_abs_gain_pct": 0.652,
+     "within_2_errors": 0
+    },
+    "ml:warrior-fury": {
+     "swaps": 6,
+     "median_noise_pct": 0.1659,
+     "max_noise_pct": 0.1881,
+     "median_abs_gain_pct": 0.506,
+     "within_2_errors": 1
+    }
+   }
+  }
+ }
+}

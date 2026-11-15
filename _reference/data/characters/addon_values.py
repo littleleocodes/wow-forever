@@ -14,11 +14,14 @@ it's built I think we should make sure all the stats are scored"; replaces addon
 - heal: every healer spec at 60 (heallab/heal_values.py: the healer lab's capacity per point in the spec's BiS set, in healing power;
   haste also with a hasted global cooldown, which is open);
 - tank: weights/<class>-tank.json (tank_weights.py: the raid simulator's tank value per point) over Stamina's;
+- raid and tank `errors` (2026-11-14, as the healers already had): one standard error per value in the values' unit, from
+  raidsim/weight-errors.json (raidsim/weight_errors.py: each value's own stat-weights run repeated with the bench's weights_se);
 - ratings and caps (_reference/forever-stats.md).
 Numbers are models of the beta (fight lab, simulator), not measurements.
 """
 import datetime
 import json
+import math
 import pathlib
 import sys
 
@@ -277,7 +280,7 @@ def talent_vectors(o):
                 if not values or not names:
                     continue
                 player = dict(talents)
-                for n in names:   # flip each transform talent: taken -> 0, missing -> its top rank
+                for n in sorted(names):   # flip each transform talent: taken -> 0, missing -> its top rank (sorted: a set's order varies by run)
                     top = len(next(tr for tr in trs if tr["talent"] == n)["per_rank"])
                     player[n] = 0 if talents.get(n) else top
                 if cls == "hunter" and mode == "leveling" and "survival" in e.get("build", ""):
@@ -488,40 +491,106 @@ def leveling(cls):
     return out
 
 
-def raid_row(cls, spec, slug, bid, B, vals, source):
+WERR_FILE = RAID / "weight-errors.json"
+# characters/tank_weights.py KEYS (the simulator's stat names -> its share_per_point keys), copied: importing it would put raidsim's run.py
+# in sys.modules next to the fight lab's
+TANK_SIM = {"StatStrength": "strength", "StatAgility": "agility", "StatStamina": "stamina", "StatIntellect": "intellect",
+            "StatSpirit": "spirit", "StatSpellDamage": "spell_power", "StatHealingPower": "healing", "StatAttackPower": "attack_power",
+            "StatHitRating": "hit", "StatCritRating": "crit", "StatHasteRating": "haste", "StatExpertiseRating": "expertise",
+            "StatDefenseRating": "defense", "StatBlockRating": "block", "StatBlockValue": "block_value", "StatDodgeRating": "dodge",
+            "StatParryRating": "parry", "StatArmor": "armor", "StatMP5": "mp5", "PseudoStatMainHandDps": "weapon_dps"}
+RAID_ERRORS_NOTE = (
+    "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, "
+    "raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries "
+    "its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's "
+    "error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the "
+    "value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's "
+    "(hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x "
+    "that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for "
+    "spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is "
+    "a tie")
+TANK_ERRORS_NOTE = (
+    "one standard error of each value, same unit (raid simulator: tank_weights.py's stat-weights run repeated with its standard errors, "
+    "raidsim/weight_errors.py, weight-errors.json): each stat's threat and damage-taken errors combined as tank_weights.py combines the "
+    "weights (0.5 x / TPS, 0.25 x / DTPS, taken as independent; effective health is exact), over Stamina's share. Stamina carries its "
+    "own error where the simulator weighed it; a stat with no key has none (the warrior's and the druid's Stamina: its share is "
+    "effective health alone). spell_power: spell damage's and healing's errors together. Sum stats' errors as independent. Over 12 seeds (weight-errors.json "
+    "study, the paladin) the shares spread 0.9x these errors overall; dodge, parry, block rating and defense about half of them (their "
+    "threat and damage-taken readings move together), so those are conservative. A gain inside about two errors is a tie")
+
+
+def raid_errors(cls, vals, unit, base, dual, main, hit):
+    """{item stat: one standard error in the values' unit} for a raid entry, or None without a measurement. main: weight-errors.json's
+    entry of the run the values came from, hit: the run hit_rating_below_cap came from (or None). Keyed as GearCheck reads them:
+    hit_rating (see RAID_ERRORS_NOTE), the weapon pseudo-stats as mh/oh/ranged_weapon_dps, spell_damage as spell_power (norm), the druid's
+    feral_attack_power as attack power when the simulator's weights gave it none (norm copies the value)."""
+    if not main or not main.get("se"):
+        return None
+    e = {k: x / base for k, x in sim_keys(main["se"]).items()}
+    main_hit = e.pop("hit_rating", None)
+    below = (hit or {}).get("se", {}).get("StatHitRating")
+    if "hit_rating_below_cap" in vals and below is not None:
+        e["hit_rating"] = max(below / base, main_hit or 0.0) if dual else below / base
+    elif main_hit is not None:
+        e["hit_rating"] = main_hit
+    if "spell_power" in e:
+        e["spell_damage"] = e["spell_power"]
+    if cls == "druid" and "feral_attack_power" not in vals and "attack_power" in e:
+        e["feral_attack_power"] = e["attack_power"]
+    return {k: round(x, 6) for k, x in sorted(e.items())}
+
+
+def error_note(note, *ents):
+    """The note, plus a line for each measurement that did not reproduce its stored means (measured on the closest configuration)."""
+    bad = [x for x in ents if x and not x.get("reproduced")]
+    if bad:
+        note += ("; NOT REPRODUCED, errors from the closest configuration: " + ", ".join(x.get("config_from", "") for x in bad))
+    return note
+
+
+def raid_row(cls, spec, slug, bid, B, vals, source, main=None, hit=None):
     """vals: our keys (sim_keys). Dual wield = the set's off-hand weapon DPS has a value. A dual-wielder's white swings miss 19 points
     more than its special attacks (caps.melee_hit): its phase-1 BiS set sits past the special-attack cap (gear hit 70-90 rating plus
     talents), so the BiS reading of hit is hit's value from that cap to the white cap (hit_rating_above_cap); below the special-attack
-    cap a hit point is worth hit_rating_below_cap (hit_below_cap.py). Everyone else: 0 above the cap."""
+    cap a hit point is worth hit_rating_below_cap (hit_below_cap.py). Everyone else: 0 above the cap. main, hit: the values' entries in
+    raidsim/weight-errors.json (raid_errors)."""
     unit = max(("spell_power", "attack_power", "ranged_attack_power"), key=lambda k: vals.get(k, 0.0))
     base = vals.get(unit) or 1.0
     b = B.get(bid)
     dual = vals.get("oh_weapon_dps", 0.0) > 0
     v = {k: max(0.0, x) / base for k, x in vals.items()}
     v["hit_rating_above_cap"] = v.get("hit_rating", 0.0) if dual else 0.0
-    return {"spec": spec, "slug": slug, "build": bid, "tree_points": tree_points(cls, b["allocation"]) if b else None,
-            "talents": talents_of(b), "unit": unit, "dual_wield": dual, "source": source, "values": norm(v, "raid", cls)}
+    row = {"spec": spec, "slug": slug, "build": bid, "tree_points": tree_points(cls, b["allocation"]) if b else None,
+           "talents": talents_of(b), "unit": unit, "dual_wield": dual, "source": source, "values": norm(v, "raid", cls)}
+    errs = raid_errors(cls, vals, unit, base, dual, main, hit)
+    if errs is not None:   # hit_rating stays when only hit_rating_below_cap is a value (a set at the cap: Arms has no hit_rating key)
+        row["errors"] = {k: x for k, x in errs.items() if k in row["values"] or (k == "hit_rating" and "hit_rating_below_cap" in row["values"])}
+        row["errors_note"] = error_note(RAID_ERRORS_NOTE, main, hit)
+    return row
 
 
 def sim_keys(w):
     return {SIM_STAT[k]: x for k, x in w.items() if k in SIM_STAT}
 
 
-def raid(cls, below, page):
+def raid(cls, below, page, werr=None):
     out = []
     B = builds_of(cls)
+    we = (werr or {}).get("entries") or {}
     for f in sorted((RAID / "ml").glob(f"{cls}-*.json")):
         d = json.loads(f.read_text(encoding="utf-8"))
         w = ((d.get("gear") or {}).get("bis") or {}).get("weights")
         if not w:
             continue
         vals = sim_keys(w)
-        hb = (below.get("specs") or {}).get(f.stem) or page.get(f.stem)
+        in_below = (below.get("specs") or {}).get(f.stem)
+        hb = in_below or page.get(f.stem)
         if hb and hb.get("hit_below_cap"):
             vals["hit_rating_below_cap"] = hb["hit_below_cap"]
         bid = d.get("best") if d.get("best") in B else (page.get(f.stem) or {}).get("build", d.get("best"))
         out.append(raid_row(cls, d["spec"], f.stem.split("-", 1)[1], bid, B, vals,
-                            f"raid simulator, {f.name} (the spec's best build in its phase-1 BiS set, full raid)"))
+                            f"raid simulator, {f.name} (the spec's best build in its phase-1 BiS set, full raid)",
+                            we.get(f"ml:{f.stem}"), we.get(f"{'hit' if in_below else 'pagehit'}:{f.stem}") if hb else None))
     for stem, row in sorted(page.items()):
         if row.get("class") != cls or not row.get("weights"):
             continue
@@ -529,7 +598,8 @@ def raid(cls, below, page):
         if row.get("hit_below_cap"):
             vals["hit_rating_below_cap"] = row["hit_below_cap"]
         out.append(raid_row(cls, row["spec"], stem.split("-", 1)[1], row["build"], B, vals,
-                            f"raid simulator, raidsim/page-stat-weights.json (the page's pick in {row['gear_why']}, full raid)"))
+                            f"raid simulator, raidsim/page-stat-weights.json (the page's pick in {row['gear_why']}, full raid)",
+                            we.get(f"page:{stem}"), we.get(f"pagehit:{stem}") if row.get("hit_below_cap") else None))
     return out
 
 
@@ -550,17 +620,44 @@ def heal(cls, hv):
     return out
 
 
-def tank(cls):
+def tank_errors(cls, w, e):
+    """{item stat: one standard error in the values' unit} for a tank entry (tank_weights.py's share per point, over Stamina's share):
+    se(share) = sqrt((0.5 x se_tps / TPS)^2 + (0.25 x se_dtps / DTPS)^2), threat and damage taken as independent, effective health exact.
+    Keyed like tank()'s values (TANK_STAT, norm's spell lines, the druid's feral attack power as attack power's)."""
+    if not e or not e.get("se"):
+        return None
+    tps, dtps, sta = w["tps"], w["dtps"], w["share_per_point"]["stamina"]
+    se = {}
+    for name, key in TANK_SIM.items():
+        st, sd = e["se"].get(name), (e.get("dtps_se") or {}).get(name)
+        if st is None and sd is None:
+            continue
+        se[TANK_STAT.get(key, key)] = math.sqrt((0.5 * (st or 0.0) / tps) ** 2 + (0.25 * (sd or 0.0) / dtps) ** 2) / sta
+    sp, h = se.pop("spell_power", None), se.pop("healing", None)
+    if sp is not None or h is not None:
+        se.update(spell_power=math.sqrt((sp or 0.0) ** 2 + (h or 0.0) ** 2), spell_damage=sp or 0.0, spell_healing=h or 0.0)
+    if cls == "druid" and "feral_attack_power" not in se and "attack_power" in se:
+        se["feral_attack_power"] = se["attack_power"]
+    return {k: round(x, 6) for k, x in sorted(se.items())}
+
+
+def tank(cls, werr=None):
     f = HERE / "weights" / f"{cls}-tank.json"
     if not f.exists():
         return None
     w = json.loads(f.read_text(encoding="utf-8"))
     sp = w["share_per_point"]
     b = builds_of(cls).get(w["build"])
-    return {"spec": "Protection" if cls != "druid" else "Feral Combat (bear)", "build": w["build"],
-            "tree_points": tree_points(cls, b["allocation"]) if b else None, "talents": talents_of(b), "unit": "stamina",
-            "source": f"raid simulator, {w['build']} in {w['entry']}, {w['date']}: tank value per point (threat, damage taken, effective health)",
-            "values": norm({TANK_STAT.get(k, k): x / sp["stamina"] for k, x in sp.items()}, "tank", cls)}
+    row = {"spec": "Protection" if cls != "druid" else "Feral Combat (bear)", "build": w["build"],
+           "tree_points": tree_points(cls, b["allocation"]) if b else None, "talents": talents_of(b), "unit": "stamina",
+           "source": f"raid simulator, {w['build']} in {w['entry']}, {w['date']}: tank value per point (threat, damage taken, effective health)",
+           "values": norm({TANK_STAT.get(k, k): x / sp["stamina"] for k, x in sp.items()}, "tank", cls)}
+    e = ((werr or {}).get("entries") or {}).get(f"tank:{cls}")
+    errs = tank_errors(cls, w, e)
+    if errs is not None:
+        row["errors"] = {k: x for k, x in errs.items() if k in row["values"]}
+        row["errors_note"] = error_note(TANK_ERRORS_NOTE, e)
+    return row
 
 
 # ------------------------------------------------------------------ the add-on's math, as a reference for the test vectors
@@ -779,6 +876,7 @@ def main():
     page = json.loads((RAID / "page-stat-weights.json").read_text(encoding="utf-8")).get("specs", {}) if (RAID / "page-stat-weights.json").exists() else {}
     hp = DATA / "heallab" / "heal-values.json"
     hv = json.loads(hp.read_text(encoding="utf-8")) if hp.exists() else {}
+    werr = json.loads(WERR_FILE.read_text(encoding="utf-8")) if WERR_FILE.exists() else {}
     o = {"version": VERSION, "made": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"), "status": "", "ratings_per_percent": RATINGS,
          "caps": CAPS, "not_scored": NOT_SCORED,
          "note": ("Class keys: the client's classFile, lowercased. Leveling: values are seconds per kill one point saves (fight lab), per "
@@ -800,7 +898,7 @@ def main():
                   "the beta (fight lab, raid simulator, healer lab), not measurements."),
          "classes": {}}
     for cls in CLASSES:
-        o["classes"][cls] = {"leveling": leveling(cls), "raid": raid(cls, below, page), "heal": heal(cls, hv), "tank": tank(cls)}
+        o["classes"][cls] = {"leveling": leveling(cls), "raid": raid(cls, below, page, werr), "heal": heal(cls, hv), "tank": tank(cls, werr)}
         print(f"{cls}: {len(o['classes'][cls]['leveling'])} leveling builds, {len(o['classes'][cls]['raid'])} raid specs, "
               f"{len(o['classes'][cls]['heal'])} healer specs, tank {'yes' if o['classes'][cls]['tank'] else 'no'}", flush=True)
     # exact-tie defaults for the raid and heal lists too (Addons, 2026-11-13: a priest halfway between Holy and Discipline): the healer

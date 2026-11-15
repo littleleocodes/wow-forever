@@ -1,6 +1,6 @@
 {
  "version": 1,
- "made": "2026-11-14 22:42",
+ "made": "2026-11-14 23:52",
  "status": "complete: two gear points per leveling level (the lab's standard gear and each level's best Forever set), raid, heal and tank values",
  "ratings_per_percent": {
   "hit_rating": 10,
@@ -4318,6 +4318,19 @@
       "spell_healing": 0.0,
       "feral_attack_power": 0.0
      },
+     "errors": {
+      "arcane_damage": 0.000908,
+      "crit_rating": 0.021201,
+      "haste_rating": 0.080384,
+      "hit_rating": 0.054259,
+      "intellect": 0.01446,
+      "nature_damage": 0.00015,
+      "spell_damage": 0.00093,
+      "spell_penetration": 0.021556,
+      "spell_power": 0.00093,
+      "spirit": 0.00212
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": [
       "moonkin"
@@ -4387,6 +4400,22 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "agility": 0.038528,
+      "armor_penetration": 0.000304,
+      "attack_power": 0.000545,
+      "crit_rating": 0.037967,
+      "expertise_rating": 0.142781,
+      "feral_attack_power": 0.000545,
+      "haste_rating": 0.125357,
+      "hit_rating": 0.103833,
+      "intellect": 0.000516,
+      "mh_weapon_dps": 0.006417,
+      "spell_penetration": 0.001654,
+      "spirit": 0.000334,
+      "strength": 0.001309
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": true,
      "forms": [
       "cat"
@@ -4526,6 +4555,21 @@
      "spell_healing": 0.0,
      "feral_attack_power": 0.27426
     },
+    "errors": {
+     "agility": 0.067529,
+     "armor": 0.000234,
+     "attack_power": 0.000368,
+     "crit_rating": 0.04632,
+     "defense_rating": 0.055629,
+     "dodge_rating": 0.053045,
+     "expertise_rating": 0.097129,
+     "feral_attack_power": 0.000368,
+     "haste_rating": 0.068766,
+     "hit_rating": 0.097132,
+     "mh_weapon_dps": 0.005157,
+     "strength": 0.00081
+    },
+    "errors_note": "one standard error of each value, same unit (raid simulator: tank_weights.py's stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json): each stat's threat and damage-taken errors combined as tank_weights.py combines the weights (0.5 x / TPS, 0.25 x / DTPS, taken as independent; effective health is exact), over Stamina's share. Stamina carries its own error where the simulator weighed it; a stat with no key has none (the warrior's and the druid's Stamina: its share is effective health alone). spell_power: spell damage's and healing's errors together. Sum stats' errors as independent. Over 12 seeds (weight-errors.json study, the paladin) the shares spread 0.9x these errors overall; dodge, parry, block rating and defense about half of them (their threat and damage-taken readings move together), so those are conservative. A gain inside about two errors is a tie",
     "forms": [
      "bear"
     ]
@@ -11710,6 +11754,20 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "agility": 0.025721,
+      "armor_penetration": 0.00026,
+      "crit_rating": 0.040105,
+      "expertise_rating": 0.102871,
+      "haste_rating": 0.136338,
+      "hit_rating": 0.153867,
+      "intellect": 0.00062,
+      "ranged_attack_power": 0.000563,
+      "ranged_weapon_dps": 0.007187,
+      "spell_penetration": 0.011111,
+      "spirit": 0.001411
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": true,
      "forms": []
     },
@@ -11773,6 +11831,20 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "agility": 0.066692,
+      "armor_penetration": 0.000303,
+      "crit_rating": 0.084419,
+      "expertise_rating": 0.185727,
+      "haste_rating": 0.154566,
+      "hit_rating": 0.167448,
+      "intellect": 0.000736,
+      "ranged_attack_power": 0.000669,
+      "ranged_weapon_dps": 0.008353,
+      "spell_penetration": 0.011448,
+      "spirit": 0.000417
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     },
@@ -11834,6 +11906,20 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "agility": 0.021438,
+      "armor_penetration": 0.00034,
+      "crit_rating": 0.033084,
+      "expertise_rating": 0.198066,
+      "haste_rating": 0.226917,
+      "hit_rating": 0.106725,
+      "intellect": 0.077905,
+      "ranged_attack_power": 0.000737,
+      "ranged_weapon_dps": 0.008517,
+      "spell_penetration": 0.012606,
+      "spirit": 0.093859
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     },
@@ -11899,6 +11985,22 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "agility": 0.013979,
+      "armor_penetration": 0.00041,
+      "attack_power": 0.001005,
+      "crit_rating": 0.021394,
+      "expertise_rating": 0.192916,
+      "haste_rating": 0.156571,
+      "hit_rating": 0.174984,
+      "intellect": 0.002589,
+      "mh_weapon_dps": 0.01114,
+      "oh_weapon_dps": 0.005959,
+      "ranged_attack_power": 6.2e-05,
+      "spell_penetration": 0.005515,
+      "strength": 0.001106
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     }
@@ -18375,6 +18477,19 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "arcane_damage": 0.001038,
+      "crit_rating": 0.02086,
+      "fire_damage": 0.000738,
+      "haste_rating": 0.056191,
+      "hit_rating": 0.070477,
+      "intellect": 0.050945,
+      "spell_damage": 0.000931,
+      "spell_penetration": 0.010555,
+      "spell_power": 0.000931,
+      "spirit": 0.054461
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     },
@@ -18438,6 +18553,19 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "arcane_damage": 0.000441,
+      "crit_rating": 0.047891,
+      "fire_damage": 0.001119,
+      "haste_rating": 0.09289,
+      "hit_rating": 0.101929,
+      "intellect": 0.048193,
+      "spell_damage": 0.001084,
+      "spell_penetration": 0.0099,
+      "spell_power": 0.001084,
+      "spirit": 0.042587
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": true,
      "forms": []
     },
@@ -18502,6 +18630,20 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "arcane_damage": 0.000805,
+      "crit_rating": 0.014834,
+      "fire_damage": 6e-05,
+      "frost_damage": 0.001089,
+      "haste_rating": 0.019597,
+      "hit_rating": 0.052918,
+      "intellect": 0.009339,
+      "spell_damage": 0.000952,
+      "spell_penetration": 0.0103,
+      "spell_power": 0.000952,
+      "spirit": 0.001609
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     },
@@ -18566,6 +18708,20 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "arcane_damage": 0.000952,
+      "crit_rating": 0.014936,
+      "fire_damage": 6.1e-05,
+      "frost_damage": 0.000644,
+      "haste_rating": 0.040379,
+      "hit_rating": 0.046752,
+      "intellect": 0.011974,
+      "spell_damage": 0.000888,
+      "spell_penetration": 0.010581,
+      "spell_power": 0.000888,
+      "spirit": 0.008287
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     },
@@ -18630,6 +18786,18 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "crit_rating": 0.026533,
+      "fire_damage": 0.001344,
+      "haste_rating": 0.046727,
+      "hit_rating": 0.099029,
+      "intellect": 0.036129,
+      "spell_damage": 0.001344,
+      "spell_penetration": 0.007462,
+      "spell_power": 0.001344,
+      "spirit": 0.031949
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     }
@@ -25817,6 +25985,23 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "agility": 0.023009,
+      "armor_penetration": 0.000281,
+      "attack_power": 0.000963,
+      "crit_rating": 0.022189,
+      "expertise_rating": 0.137275,
+      "haste_rating": 0.129404,
+      "hit_rating": 0.088066,
+      "holy_damage": 0.000969,
+      "intellect": 0.000873,
+      "mh_weapon_dps": 0.013513,
+      "spell_damage": 0.000969,
+      "spell_power": 0.000969,
+      "spirit": 0.000428,
+      "strength": 0.002651
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     },
@@ -25885,6 +26070,23 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "agility": 0.021376,
+      "armor_penetration": 0.000242,
+      "attack_power": 0.000919,
+      "crit_rating": 0.02069,
+      "expertise_rating": 0.185435,
+      "haste_rating": 0.160635,
+      "hit_rating": 0.07606,
+      "holy_damage": 0.001108,
+      "intellect": 0.001133,
+      "mh_weapon_dps": 0.012889,
+      "spell_damage": 0.001108,
+      "spell_power": 0.001108,
+      "spirit": 0.001185,
+      "strength": 0.002205
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": true,
      "forms": []
     },
@@ -25971,6 +26173,24 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "agility": 0.010251,
+      "armor_penetration": 0.000115,
+      "attack_power": 0.000298,
+      "crit_rating": 0.00997,
+      "expertise_rating": 0.050047,
+      "haste_rating": 0.047486,
+      "hit_rating": 0.059083,
+      "holy_damage": 0.000412,
+      "intellect": 0.001288,
+      "mh_weapon_dps": 0.004224,
+      "spell_damage": 0.000412,
+      "spell_penetration": 3.1e-05,
+      "spell_power": 0.000412,
+      "spirit": 0.002646,
+      "strength": 0.000715
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     },
@@ -26054,6 +26274,24 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "agility": 0.015485,
+      "armor_penetration": 0.000182,
+      "attack_power": 0.000661,
+      "crit_rating": 0.015006,
+      "expertise_rating": 0.082856,
+      "haste_rating": 0.072656,
+      "hit_rating": 0.08689,
+      "holy_damage": 0.000624,
+      "intellect": 0.002831,
+      "mh_weapon_dps": 0.00928,
+      "spell_damage": 0.000624,
+      "spell_penetration": 0.0,
+      "spell_power": 0.000624,
+      "spirit": 0.000898,
+      "strength": 0.001587
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     }
@@ -26193,6 +26431,30 @@
      "spell_damage": 0.48002,
      "spell_healing": 0.0
     },
+    "errors": {
+     "agility": 0.032749,
+     "armor": 0.000152,
+     "attack_power": 0.000114,
+     "block_rating": 0.065698,
+     "block_value": 0.001616,
+     "crit_rating": 0.004834,
+     "defense_rating": 0.044053,
+     "dodge_rating": 0.034082,
+     "expertise_rating": 0.038366,
+     "haste_rating": 0.037111,
+     "hit_rating": 0.040921,
+     "intellect": 0.037214,
+     "mh_weapon_dps": 0.00159,
+     "mp5": 0.038236,
+     "parry_rating": 0.027042,
+     "spell_damage": 0.000364,
+     "spell_healing": 0.0,
+     "spell_power": 0.000364,
+     "spirit": 0.008514,
+     "stamina": 0.000166,
+     "strength": 0.000317
+    },
+    "errors_note": "one standard error of each value, same unit (raid simulator: tank_weights.py's stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json): each stat's threat and damage-taken errors combined as tank_weights.py combines the weights (0.5 x / TPS, 0.25 x / DTPS, taken as independent; effective health is exact), over Stamina's share. Stamina carries its own error where the simulator weighed it; a stat with no key has none (the warrior's and the druid's Stamina: its share is effective health alone). spell_power: spell damage's and healing's errors together. Sum stats' errors as independent. Over 12 seeds (weight-errors.json study, the paladin) the shares spread 0.9x these errors overall; dodge, parry, block rating and defense about half of them (their threat and damage-taken readings move together), so those are conservative. A gain inside about two errors is a tie",
     "forms": []
    }
   },
@@ -31302,6 +31564,19 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "crit_rating": 0.006301,
+      "haste_rating": 0.031852,
+      "hit_rating": 0.020771,
+      "holy_damage": 0.000318,
+      "intellect": 0.016933,
+      "shadow_damage": 0.000266,
+      "spell_damage": 0.000412,
+      "spell_penetration": 0.004881,
+      "spell_power": 0.000412,
+      "spirit": 0.014673
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     },
@@ -31362,6 +31637,18 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "crit_rating": 0.012764,
+      "haste_rating": 0.023056,
+      "hit_rating": 0.043042,
+      "intellect": 0.008243,
+      "shadow_damage": 0.000603,
+      "spell_damage": 0.000603,
+      "spell_penetration": 0.010348,
+      "spell_power": 0.000603,
+      "spirit": 0.004112
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": true,
      "forms": []
     }
@@ -36888,6 +37175,20 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "agility": 0.03917,
+      "armor_penetration": 0.000368,
+      "attack_power": 0.000734,
+      "crit_rating": 0.045761,
+      "expertise_rating": 0.15301,
+      "haste_rating": 0.145081,
+      "hit_rating": 0.122342,
+      "mh_weapon_dps": 0.007855,
+      "oh_weapon_dps": 0.003355,
+      "spell_penetration": 0.004139,
+      "strength": 0.000807
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     },
@@ -36955,6 +37256,20 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "agility": 0.01527,
+      "armor_penetration": 0.000301,
+      "attack_power": 0.000736,
+      "crit_rating": 0.017141,
+      "expertise_rating": 0.098033,
+      "haste_rating": 0.084869,
+      "hit_rating": 0.08254,
+      "mh_weapon_dps": 0.008656,
+      "oh_weapon_dps": 0.004749,
+      "spell_penetration": 0.00277,
+      "strength": 0.00081
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     },
@@ -37023,6 +37338,20 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "agility": 0.045803,
+      "armor_penetration": 0.000366,
+      "attack_power": 0.000746,
+      "crit_rating": 0.048358,
+      "expertise_rating": 0.149167,
+      "haste_rating": 0.139898,
+      "hit_rating": 0.121884,
+      "mh_weapon_dps": 0.007876,
+      "oh_weapon_dps": 0.004261,
+      "spell_penetration": 0.003448,
+      "strength": 0.000821
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": true,
      "forms": []
     },
@@ -37093,6 +37422,20 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "agility": 0.055376,
+      "armor_penetration": 0.000302,
+      "attack_power": 0.00078,
+      "crit_rating": 0.061149,
+      "expertise_rating": 0.190825,
+      "haste_rating": 0.181461,
+      "hit_rating": 0.19392,
+      "mh_weapon_dps": 0.008428,
+      "oh_weapon_dps": 0.003094,
+      "spell_penetration": 0.002191,
+      "strength": 0.000858
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     },
@@ -37161,6 +37504,20 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "agility": 0.011464,
+      "armor_penetration": 0.000228,
+      "attack_power": 0.000623,
+      "crit_rating": 0.013504,
+      "expertise_rating": 0.140003,
+      "haste_rating": 0.147516,
+      "hit_rating": 0.185113,
+      "mh_weapon_dps": 0.007649,
+      "oh_weapon_dps": 0.003311,
+      "spell_penetration": 0.00224,
+      "strength": 0.000686
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     },
@@ -37250,6 +37607,20 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "agility": 0.029978,
+      "armor_penetration": 0.000172,
+      "attack_power": 0.000463,
+      "crit_rating": 0.033075,
+      "expertise_rating": 0.102856,
+      "haste_rating": 0.100439,
+      "hit_rating": 0.180584,
+      "mh_weapon_dps": 0.005175,
+      "oh_weapon_dps": 0.002046,
+      "spell_penetration": 0.002209,
+      "strength": 0.000509
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     }
@@ -43219,6 +43590,19 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "crit_rating": 0.011623,
+      "fire_damage": 0.000104,
+      "haste_rating": 0.087243,
+      "hit_rating": 0.070526,
+      "intellect": 0.066134,
+      "nature_damage": 0.000844,
+      "spell_damage": 0.000857,
+      "spell_penetration": 0.011403,
+      "spell_power": 0.000857,
+      "spirit": 0.044014
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     },
@@ -43287,6 +43671,25 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "agility": 0.078626,
+      "armor_penetration": 0.000482,
+      "attack_power": 0.000939,
+      "crit_rating": 0.077721,
+      "expertise_rating": 0.246322,
+      "fire_damage": 0.000263,
+      "haste_rating": 0.188849,
+      "hit_rating": 0.155595,
+      "intellect": 0.130959,
+      "mh_weapon_dps": 0.013313,
+      "nature_damage": 0.000881,
+      "spell_damage": 0.000946,
+      "spell_penetration": 0.013987,
+      "spell_power": 0.000946,
+      "spirit": 0.034919,
+      "strength": 0.002065
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": true,
      "forms": []
     },
@@ -43348,6 +43751,19 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "crit_rating": 0.008874,
+      "fire_damage": 0.000122,
+      "haste_rating": 0.081596,
+      "hit_rating": 0.115503,
+      "intellect": 0.025134,
+      "nature_damage": 0.000652,
+      "spell_damage": 0.000675,
+      "spell_penetration": 0.013635,
+      "spell_power": 0.000675,
+      "spirit": 0.004437
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     }
@@ -48577,6 +48993,19 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "crit_rating": 0.016998,
+      "fire_damage": 0.000122,
+      "haste_rating": 0.086419,
+      "hit_rating": 0.07495,
+      "intellect": 0.071036,
+      "shadow_damage": 0.001045,
+      "spell_damage": 0.001054,
+      "spell_penetration": 0.008777,
+      "spell_power": 0.001054,
+      "spirit": 0.049426
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     },
@@ -48639,6 +49068,19 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "crit_rating": 0.019259,
+      "fire_damage": 0.000141,
+      "haste_rating": 0.094346,
+      "hit_rating": 0.084716,
+      "intellect": 0.081821,
+      "shadow_damage": 0.001089,
+      "spell_damage": 0.001108,
+      "spell_penetration": 0.010055,
+      "spell_power": 0.001108,
+      "spirit": 0.054954
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": true,
      "forms": []
     },
@@ -48699,6 +49141,19 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "crit_rating": 0.017063,
+      "fire_damage": 0.00024,
+      "haste_rating": 0.082932,
+      "hit_rating": 0.069255,
+      "intellect": 0.070714,
+      "shadow_damage": 0.000945,
+      "spell_damage": 0.000984,
+      "spell_penetration": 0.009479,
+      "spell_power": 0.000984,
+      "spirit": 0.046875
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     },
@@ -48759,6 +49214,19 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "crit_rating": 0.01702,
+      "fire_damage": 0.00014,
+      "haste_rating": 0.081113,
+      "hit_rating": 0.073048,
+      "intellect": 0.074884,
+      "shadow_damage": 0.001048,
+      "spell_damage": 0.00106,
+      "spell_penetration": 0.009742,
+      "spell_power": 0.00106,
+      "spirit": 0.047988
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     }
@@ -52721,6 +53189,18 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "agility": 0.059342,
+      "armor_penetration": 0.000541,
+      "attack_power": 0.001094,
+      "crit_rating": 0.057058,
+      "expertise_rating": 0.300812,
+      "haste_rating": 0.254244,
+      "hit_rating": 0.266373,
+      "mh_weapon_dps": 0.020789,
+      "strength": 0.002406
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": true,
      "forms": []
     },
@@ -52788,6 +53268,19 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
+     "errors": {
+      "agility": 0.145732,
+      "armor_penetration": 0.00044,
+      "attack_power": 0.000946,
+      "crit_rating": 0.12759,
+      "expertise_rating": 0.307189,
+      "haste_rating": 0.223399,
+      "hit_rating": 0.271122,
+      "mh_weapon_dps": 0.014333,
+      "oh_weapon_dps": 0.003406,
+      "strength": 0.00208
+     },
+     "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
      "forms": []
     }
@@ -52857,6 +53350,23 @@
      "spell_damage": 0.0,
      "spell_healing": 0.0
     },
+    "errors": {
+     "agility": 0.030331,
+     "armor": 5.3e-05,
+     "attack_power": 0.000262,
+     "block_rating": 0.015424,
+     "block_value": 0.000693,
+     "crit_rating": 0.016485,
+     "defense_rating": 0.036823,
+     "dodge_rating": 0.027749,
+     "expertise_rating": 0.057533,
+     "haste_rating": 0.045685,
+     "hit_rating": 0.057544,
+     "mh_weapon_dps": 0.001816,
+     "parry_rating": 0.020051,
+     "strength": 0.000582
+    },
+    "errors_note": "one standard error of each value, same unit (raid simulator: tank_weights.py's stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json): each stat's threat and damage-taken errors combined as tank_weights.py combines the weights (0.5 x / TPS, 0.25 x / DTPS, taken as independent; effective health is exact), over Stamina's share. Stamina carries its own error where the simulator weighed it; a stat with no key has none (the warrior's and the druid's Stamina: its share is effective health alone). spell_power: spell damage's and healing's errors together. Sum stats' errors as independent. Over 12 seeds (weight-errors.json study, the paladin) the shares spread 0.9x these errors overall; dodge, parry, block rating and defense about half of them (their threat and damage-taken readings move together), so those are conservative. A gain inside about two errors is a tie",
     "forms": []
    }
   }
@@ -62346,9 +62856,9 @@
     "Careful Aim": 0,
     "Improved Arcane Shot": 2,
     "Mortal Shots": 5,
+    "Lightning Reflexes": 5,
     "Predator's Edge": 5,
-    "Survivalist": 5,
-    "Lightning Reflexes": 5
+    "Survivalist": 5
    },
    "expected": {
     "ranged_weapon_dps": 8.35577,
@@ -62854,9 +63364,9 @@
     "Conviction": 3,
     "Sanctified Judgement": 3,
     "Sacred Arbiter": 1,
-    "Divine Strength": 5,
     "Champion of the Light": 5,
-    "Divine Intellect": 5
+    "Divine Intellect": 5,
+    "Divine Strength": 5
    },
    "expected": {
     "strength": 0.27156,
@@ -63363,9 +63873,9 @@
     "Shamanistic Focus": 1,
     "Thundering Strikes": 5,
     "Tidal Focus": 5,
-    "Mental Quickness": 2,
-    "Improved Reincarnation": 2,
     "Ancestral Knowledge": 5,
+    "Improved Reincarnation": 2,
+    "Mental Quickness": 2,
     "Toughness": 5
    },
    "expected": {
@@ -63454,9 +63964,9 @@
     "Tidal Focus": 5,
     "Mindfulness": 3,
     "Totemic Focus": 5,
-    "Mental Quickness": 2,
     "Improved Reincarnation": 2,
     "Mental Dexterity": 3,
+    "Mental Quickness": 2,
     "Toughness": 5
    },
    "expected": {
@@ -63526,9 +64036,9 @@
     "Nature's Swiftness": 1,
     "Purification": 5,
     "Riptide": 1,
-    "Mental Quickness": 2,
     "Improved Reincarnation": 2,
     "Mental Dexterity": 3,
+    "Mental Quickness": 2,
     "Toughness": 5
    },
    "expected": {
