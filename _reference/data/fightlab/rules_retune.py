@@ -1,6 +1,6 @@
 """Re-tune one leveling rotation's rules after a mechanics change and keep whichever rule set is fastest (2026-11-06).
 
-    python -u _reference/data/fightlab/rules_retune.py <class> <rotation> <build id> [--jobs 4] [--min-gain 0.003] [--dry-run]
+    python -u _reference/data/fightlab/rules_retune.py <class> <rotation> <build id> [--jobs 4] [--min-gain 0.003] [--dry-run] [--continued-only]
 
 `rotation_opt.py <class> --fresh --write` covers the class pipeline's rotations only, and a from-scratch run writes its result even when
 the saved rules are faster (search-improvements.md, 2026-10-27 and open idea 0e of 2026-11-06: eight rule files of the 2026-11-02 patch
@@ -50,21 +50,26 @@ def main():
     ap.add_argument("--fights", type=int, default=600, help="rotation_opt's --fights (a smoke test lowers it)")
     ap.add_argument("--confirm", type=int, default=3000, help="rotation_opt's --confirm")
     ap.add_argument("--rounds", type=int, default=12, help="rotation_opt's --rounds")
+    ap.add_argument("--continued-only", action="store_true",
+                    help="skip the from-scratch search when a saved file exists: for a new rule knob on mechanics the saved rules were "
+                         "tuned on the same day (2026-11-15, the mage's MAGE_ARMOR; the from-scratch half took 3-10 of the 6-24 minutes)")
     a = ap.parse_args()
     p = FR.rotation_file(a.cls, a.spec)
     base = dict(rounds=a.rounds, fights=a.fights, confirm=a.confirm, top=5, screen_gain=0.003, min_gain=0.004, jobs=a.jobs, write=False, spec=a.spec,
                 build=a.build, cls=a.cls, all=False, check_rules=False)
     with multiprocessing.Pool(a.jobs, initializer=RO._init) as pool:
         _, levels = RO.targets(a.cls)
-        print(f"=== {a.cls} {a.spec} on {a.build}: from scratch", flush=True)
-        fresh = RO.search(pool, a.cls, a.spec, a.build, levels, argparse.Namespace(fresh=True, **base))
+        fresh = None
+        if not (a.continued_only and p.exists()):
+            print(f"=== {a.cls} {a.spec} on {a.build}: from scratch", flush=True)
+            fresh = RO.search(pool, a.cls, a.spec, a.build, levels, argparse.Namespace(fresh=True, **base))
         cont = None
         if p.exists():
             print(f"=== {a.cls} {a.spec} on {a.build}: continued from the saved rules ({p.name})", flush=True)
             cont = RO.search(pool, a.cls, a.spec, a.build, levels, argparse.Namespace(fresh=False, **base))
     # the reference: the saved rules (the continued run's start), else the hand-written rotation (the from-scratch run's start)
     ref, ref_ok = (cont["weighted_before"], floor_ok(cont, "before")) if cont else (fresh["weighted_before"], floor_ok(fresh, "before"))
-    cands = [("from scratch", fresh)] + ([("continued", cont)] if cont else [])
+    cands = ([("from scratch", fresh)] if fresh else []) + ([("continued", cont)] if cont else [])
     ok = [(n, r) for n, r in cands if floor_ok(r, "after")] or cands
     name, best = min(ok, key=lambda x: x[1]["weighted_after"])
     gain = 1 - best["weighted_after"] / ref

@@ -356,8 +356,14 @@ class MageModule(BaseModule):
     # class's opener is cast under, so the cast ends with the mob arriving; that a mob only notices on the first hit is modelled for
     # nobody (search-improvements.md, open). Off by default (the regression, every other rotation); the Fire rule file turns it on.
     PYRO_OPENER = 0          # 1: a hard-cast Pyroblast as the first cast of every pull (0: as before)
+    # 2026-11-15 (the user, for Arcea at 34: "Mage armor or ice armor?"): the lab had always worn Ice Armor (Frost Armor before 30) and
+    # never compared it. Forever's Mage Armor keeps 50% of mana regeneration going while casting (Classic: 30%) and gives no armor or
+    # slow; on the Arcane-Frost page build it was 2.5-4.8% faster per kill at 34-40 (drinking 6.5 -> 3.4 s per kill, eating 1.8 -> 3.1 s).
+    # A rule knob, so each rotation's tune decides; off by default (the regression, rule files tuned before it). Its +5/10/15 resistance
+    # to all magic is not modelled (the lab gives the player no resistances against caster mobs).
+    MAGE_ARMOR = 0           # 1: Mage Armor from the level the trainer teaches it (34), Ice Armor or Frost Armor before (0: never)
     ROTATION_KNOBS = {"AB_MAX_STACKS": [1, 2, 3, 4], "AB_MANA_SHARE": [0.15, 0.25, 0.4], "AW_OPENER": [0, 1],
-                      "PYRO_HARDCAST": [0, 1], "FROST_BLAST": [0, 1, 2], "PYRO_OPENER": [0, 1]}
+                      "PYRO_HARDCAST": [0, 1], "FROST_BLAST": [0, 1, 2], "PYRO_OPENER": [0, 1], "MAGE_ARMOR": [0, 1]}
 
     def __init__(self, talents, level, spec="frost-leveling", gear="leveling", armor_spell="auto"):
         self.t = {k: v for k, v in talents.items() if v > 0}
@@ -426,8 +432,9 @@ class MageModule(BaseModule):
                    dodge=0.04, ranged_crit=0.03)
         p.hp, p.mana = p.hp_max, p.mana_max
         p.regen_while_casting = self.tv("Arcane Meditation", 0) / 100
-        if armor_spell is not None and armor_spell.name == "Mage Armor":
-            p.regen_while_casting = min(1.0, p.regen_while_casting + 0.5)
+        if armor_spell is not None and armor_spell.name == "Mage Armor":   # the rank's own share (Forever: 50% at every rank)
+            m_ma = re.search(r"allows (\d+)% of your mana regeneration", armor_spell.text or "")
+            p.regen_while_casting = min(1.0, p.regen_while_casting + (float(m_ma.group(1)) / 100 if m_ma else 0.5))
         self.armor_spell_used = armor_spell.name if armor_spell else "none"
         if self.rank("Arcane Subtlety"):   # 8 / 15 Spell Piercing on every school (2026-11-13: bonus damage past the mob's resistance,
             p.spell_pierce_pts = self.tv("Arcane Subtlety", 0)   # wowsims/forever issue #76's logs: a mage's Arcane Subtlety gave it, and
@@ -435,7 +442,9 @@ class MageModule(BaseModule):
         return p
 
     def armor_choice(self):
-        if self.armor_spell == "mage" and "Mage Armor" in self.spells:
+        """The armor the mage wears: Mage Armor when asked for (armor_spell "mage", or the MAGE_ARMOR rule knob with armor_spell "auto")
+        and known at this level, else the best of Ice Armor and Frost Armor known."""
+        if (self.armor_spell == "mage" or (self.armor_spell == "auto" and self.MAGE_ARMOR)) and "Mage Armor" in self.spells:
             return self.spells["Mage Armor"]
         for name in ("Ice Armor", "Frost Armor"):
             if name in self.spells:
