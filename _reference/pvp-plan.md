@@ -69,3 +69,28 @@ necessary").
   - The duel engine, the mage and warrior layers and the field tools built.
   - The other classes' layers started, four in parallel.
   - First results: Frost mage over Arms warrior 89-92% (open field); the mage mirror 49%.
+- 2026-11-14, later:
+  - All nine classes have PvP layers. Shaman, warlock, hunter, priest, paladin, rogue and druid were written by agents; the mage
+    and warrior drafts are being rewritten to the same standard.
+  - Engine additions from the agents' findings:
+    - pets that area spells and cleaves hit and control;
+    - the defender's dodge, parry and block hooks;
+    - Grounding through an engine hook; per-class trinkets that fire only when they free completely;
+    - school lockouts on every spell; off-GCD spells (the fight lab ignores spell_gcd.json's off_gcd list);
+    - no attacks on stealth; layer-declared immunities and stealth-keeping spells;
+    - one DR count per step and spell; Wound Poison as a flat 165 off each heal per stack.
+  - Baseline matrix (community builds, 200 duels a matchup), before the mage and warrior rewrite: strongly polarized, many
+    matchups near 0% or 100%. Shadow priest and Ret/Prot paladin beat most classes; warlock and druid lose to healers.
+    - Reading: each AI plays the same way every duel, so small edges become certainties, and AI quality differs between layers.
+    - Next: a validation pass over the most extreme matchups (logs: AI defect or class strength), before any build is judged on
+      the field.
+- Fight-lab issues found on the way (they affect the leveling and raid pages; for the user to decide):
+  - off-GCD spells cost a 1.5 s GCD;
+  - the 2026-11-12 Stormstrike and Maelstrom Weapon hotfix is server-side and not in forever-spells;
+  - Blackout procs from dot ticks (the client's proc mask has no periodic bit);
+  - Hammer of Justice's stun is counted twice;
+  - Voice of Truth (a trainer spell since 70753) is dropped;
+  - Predator's Edge: the fight lab multiplies only the off-hand weapon's own damage by 1.5. Its aura (A_MOD_OFFHAND_DAMAGE_PCT)
+    is a damage modifier on the whole off-hand hit, attack power included, as the raid simulator applies it. The melee Survival
+    hunter's off hand is undervalued about 20%. Found 2026-11-14 comparing a guildmate's swords to a two-hander: the staff led by
+    1.1% under the lab's rule and tied (±0.2%) under the whole-hit rule.

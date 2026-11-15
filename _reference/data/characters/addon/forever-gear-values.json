@@ -1,6 +1,6 @@
 {
  "version": 1,
- "made": "2026-11-13 21:53",
+ "made": "2026-11-14 22:06",
  "status": "complete: two gear points per leveling level (the lab's standard gear and each level's best Forever set), raid, heal and tank values",
  "ratings_per_percent": {
   "hit_rating": 10,
@@ -1463,7 +1463,10 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": [
+      "moonkin"
+     ]
     },
     {
      "spec": "Feral Combat",
@@ -2863,7 +2866,10 @@
        ]
       }
      },
-     "default": true
+     "default": true,
+     "forms": [
+      "cat"
+     ]
     },
     {
      "spec": "Restoration",
@@ -4247,7 +4253,10 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": [
+      "cat"
+     ]
     }
    ],
    "raid": [
@@ -4309,7 +4318,10 @@
       "spell_healing": 0.0,
       "feral_attack_power": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": [
+      "moonkin"
+     ]
     },
     {
      "spec": "Feral Combat",
@@ -4375,7 +4387,10 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
-     "default": true
+     "default": true,
+     "forms": [
+      "cat"
+     ]
     }
    ],
    "heal": [
@@ -4443,7 +4458,8 @@
      },
      "errors_note": "the bootstrap standard error of each value, same unit; for Shift details at most, not the main line",
      "haste_rating_if_gcd_hasted": 0.1286,
-     "default": true
+     "default": true,
+     "forms": []
     }
    ],
    "tank": {
@@ -4509,7 +4525,10 @@
      "spell_damage": 0.0,
      "spell_healing": 0.0,
      "feral_attack_power": 0.27426
-    }
+    },
+    "forms": [
+     "bear"
+    ]
    }
   },
   "hunter": {
@@ -5907,7 +5926,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Marksmanship",
@@ -7308,7 +7328,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Survival",
@@ -8712,7 +8733,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Hybrid Beast Mastery/Marksmanship",
@@ -10108,7 +10130,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Hybrid Beast Mastery/Survival",
@@ -11512,7 +11535,8 @@
        ]
       }
      },
-     "default": true
+     "default": true,
+     "forms": []
     }
    ],
    "raid": [
@@ -11576,7 +11600,8 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
-     "default": true
+     "default": true,
+     "forms": []
     },
     {
      "spec": "Hybrid Beast Mastery/Marksmanship",
@@ -11638,7 +11663,8 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Marksmanship",
@@ -11698,7 +11724,8 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Survival",
@@ -11762,7 +11789,8 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     }
    ],
    "heal": [],
@@ -13080,7 +13108,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Fire",
@@ -14350,7 +14379,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Frost",
@@ -15627,7 +15657,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Hybrid Arcane/Frost",
@@ -16921,7 +16952,8 @@
        ]
       }
      },
-     "default": true
+     "default": true,
+     "forms": []
     },
     {
      "spec": "Hybrid Fire/Frost",
@@ -18170,7 +18202,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     }
    ],
    "raid": [
@@ -18232,7 +18265,8 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Fire",
@@ -18294,7 +18328,8 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
-     "default": true
+     "default": true,
+     "forms": []
     },
     {
      "spec": "Frost",
@@ -18357,7 +18392,8 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Hybrid Arcane/Frost",
@@ -18420,7 +18456,8 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Hybrid Fire/Frost",
@@ -18483,7 +18520,8 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     }
    ],
    "heal": [],
@@ -19893,7 +19931,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Protection",
@@ -21337,7 +21376,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Retribution",
@@ -22748,7 +22788,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Hybrid Holy/Protection",
@@ -24181,7 +24222,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Hybrid Protection/Retribution",
@@ -25598,7 +25640,8 @@
        ]
       }
      },
-     "default": true
+     "default": true,
+     "forms": []
     }
    ],
    "raid": [
@@ -25664,7 +25707,8 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Retribution",
@@ -25731,7 +25775,8 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
-     "default": true
+     "default": true,
+     "forms": []
     },
     {
      "spec": "Hybrid Holy/Retribution",
@@ -25816,7 +25861,8 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Hybrid Protection/Retribution",
@@ -25898,7 +25944,8 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     }
    ],
    "heal": [
@@ -25965,7 +26012,8 @@
      },
      "errors_note": "the bootstrap standard error of each value, same unit; for Shift details at most, not the main line",
      "haste_rating_if_gcd_hasted": 0.0,
-     "default": true
+     "default": true,
+     "forms": []
     }
    ],
    "tank": {
@@ -26034,7 +26082,8 @@
      "mh_weapon_dps": 1.5042,
      "spell_damage": 0.48002,
      "spell_healing": 0.0
-    }
+    },
+    "forms": []
    }
   },
   "priest": {
@@ -27310,7 +27359,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Holy",
@@ -28574,7 +28624,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Shadow",
@@ -29799,7 +29850,8 @@
        ]
       }
      },
-     "default": true
+     "default": true,
+     "forms": []
     },
     {
      "spec": "Hybrid Discipline/Holy",
@@ -31076,7 +31128,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     }
    ],
    "raid": [
@@ -31139,7 +31192,8 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Shadow",
@@ -31198,7 +31252,8 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
-     "default": true
+     "default": true,
+     "forms": []
     }
    ],
    "heal": [
@@ -31267,7 +31322,8 @@
      },
      "errors_note": "the bootstrap standard error of each value, same unit; for Shift details at most, not the main line",
      "haste_rating_if_gcd_hasted": 0.0,
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Holy",
@@ -31332,7 +31388,8 @@
      },
      "errors_note": "the bootstrap standard error of each value, same unit; for Shift details at most, not the main line",
      "haste_rating_if_gcd_hasted": 0.0,
-     "default": true
+     "default": true,
+     "forms": []
     }
    ],
    "tank": null
@@ -32660,7 +32717,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Combat",
@@ -33991,7 +34049,8 @@
        ]
       }
      },
-     "default": true
+     "default": true,
+     "forms": []
     },
     {
      "spec": "Subtlety",
@@ -35324,7 +35383,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Hybrid Combat/Subtlety",
@@ -36648,7 +36708,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     }
    ],
    "raid": [
@@ -36717,7 +36778,8 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Combat",
@@ -36783,7 +36845,8 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Hybrid Assassination/Combat",
@@ -36850,7 +36913,8 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
-     "default": true
+     "default": true,
+     "forms": []
     },
     {
      "spec": "Hybrid Assassination/Subtlety",
@@ -36919,7 +36983,8 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Subtlety",
@@ -36986,7 +37051,8 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Hybrid Assassination/Subtlety",
@@ -37074,7 +37140,8 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     }
    ],
    "heal": [],
@@ -38543,7 +38610,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Enhancement",
@@ -40036,7 +40104,8 @@
        ]
       }
      },
-     "default": true
+     "default": true,
+     "forms": []
     },
     {
      "spec": "Restoration",
@@ -41508,7 +41577,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Hybrid Elemental/Enhancement",
@@ -42978,7 +43048,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     }
    ],
    "raid": [
@@ -43038,7 +43109,8 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Enhancement",
@@ -43105,7 +43177,8 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
-     "default": true
+     "default": true,
+     "forms": []
     },
     {
      "spec": "Hybrid Elemental/Enhancement",
@@ -43165,7 +43238,8 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     }
    ],
    "heal": [
@@ -43228,7 +43302,8 @@
      },
      "errors_note": "the bootstrap standard error of each value, same unit; for Shift details at most, not the main line",
      "haste_rating_if_gcd_hasted": 0.0,
-     "default": true
+     "default": true,
+     "forms": []
     }
    ],
    "tank": null
@@ -44495,7 +44570,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Demonology",
@@ -45785,7 +45861,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Destruction",
@@ -47051,7 +47128,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Hybrid Affliction/Demonology",
@@ -48329,7 +48407,8 @@
        ]
       }
      },
-     "default": true
+     "default": true,
+     "forms": []
     }
    ],
    "raid": [
@@ -48388,7 +48467,8 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Demonology",
@@ -48449,7 +48529,8 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
-     "default": true
+     "default": true,
+     "forms": []
     },
     {
      "spec": "Destruction",
@@ -48508,7 +48589,8 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Hybrid Affliction/Destruction",
@@ -48567,7 +48649,8 @@
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     }
    ],
    "heal": [],
@@ -49873,7 +49956,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     },
     {
      "spec": "Fury",
@@ -51175,7 +51259,8 @@
        ]
       }
      },
-     "default": true
+     "default": true,
+     "forms": []
     },
     {
      "spec": "Protection",
@@ -52462,7 +52547,8 @@
        ]
       }
      },
-     "default": false
+     "default": false,
+     "forms": []
     }
    ],
    "raid": [
@@ -52525,7 +52611,8 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
-     "default": true
+     "default": true,
+     "forms": []
     },
     {
      "spec": "Fury",
@@ -52591,7 +52678,8 @@
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
-     "default": false
+     "default": false,
+     "forms": []
     }
    ],
    "heal": [],
@@ -52658,7 +52746,8 @@
      "mh_weapon_dps": 1.21196,
      "spell_damage": 0.0,
      "spell_healing": 0.0
-    }
+    },
+    "forms": []
    }
   }
  },
@@ -61310,6 +61399,2455 @@
     "score_delta": 12.9004,
     "pct": 1.29004
    }
+  }
+ ],
+ "talent_transforms": {
+  "druid": [
+   {
+    "talent": "Heart of the Wild",
+    "kind": "stat_pct",
+    "per_rank": [
+     2.0,
+     4.0,
+     6.0,
+     8.0,
+     10.0
+    ],
+    "stat": "intellect"
+   },
+   {
+    "talent": "Heart of the Wild",
+    "kind": "stat_pct",
+    "per_rank": [
+     4.0,
+     8.0,
+     12.0,
+     16.0,
+     20.0
+    ],
+    "stat": "stamina",
+    "form": "bear"
+   },
+   {
+    "talent": "Heart of the Wild",
+    "kind": "stat_pct",
+    "per_rank": [
+     2.0,
+     4.0,
+     6.0,
+     8.0,
+     10.0
+    ],
+    "stat": "strength",
+    "form": "cat"
+   },
+   {
+    "talent": "Living Spirit",
+    "kind": "stat_pct",
+    "per_rank": [
+     5.0,
+     10.0,
+     15.0
+    ],
+    "stat": "spirit"
+   },
+   {
+    "talent": "Natural Instinct",
+    "kind": "convert",
+    "per_rank": [
+     12.0,
+     25.0
+    ],
+    "from": "intellect",
+    "to": "spell_healing"
+   },
+   {
+    "talent": "Moonkin Form",
+    "kind": "armor_pct",
+    "per_rank": [
+     360.0
+    ],
+    "form": "moonkin"
+   }
+  ],
+  "hunter": [
+   {
+    "talent": "Lightning Reflexes",
+    "kind": "stat_pct",
+    "per_rank": [
+     3.0,
+     6.0,
+     9.0,
+     12.0,
+     15.0
+    ],
+    "stat": "agility"
+   },
+   {
+    "talent": "Careful Aim",
+    "kind": "convert",
+    "per_rank": [
+     20.0,
+     40.0,
+     60.0,
+     80.0,
+     100.0
+    ],
+    "from": "intellect",
+    "to": "attack_power"
+   },
+   {
+    "talent": "Survivalist",
+    "kind": "health_pct",
+    "per_rank": [
+     2.0,
+     4.0,
+     6.0,
+     8.0,
+     10.0
+    ]
+   },
+   {
+    "talent": "Predator's Edge",
+    "kind": "offhand_pct",
+    "per_rank": [
+     10.0,
+     20.0,
+     30.0,
+     40.0,
+     50.0
+    ]
+   }
+  ],
+  "mage": [
+   {
+    "talent": "Arcane Mind",
+    "kind": "stat_pct",
+    "per_rank": [
+     2.0,
+     4.0,
+     6.0,
+     8.0,
+     10.0
+    ],
+    "stat": "intellect"
+   },
+   {
+    "talent": "Arcane Resilience",
+    "kind": "convert",
+    "per_rank": [
+     25.0,
+     50.0,
+     75.0
+    ],
+    "from": "intellect",
+    "to": "armor"
+   }
+  ],
+  "paladin": [
+   {
+    "talent": "Divine Strength",
+    "kind": "stat_pct",
+    "per_rank": [
+     2.0,
+     4.0,
+     6.0,
+     8.0,
+     10.0
+    ],
+    "stat": "strength"
+   },
+   {
+    "talent": "Divine Intellect",
+    "kind": "stat_pct",
+    "per_rank": [
+     2.0,
+     4.0,
+     6.0,
+     8.0,
+     10.0
+    ],
+    "stat": "intellect"
+   },
+   {
+    "talent": "Toughness",
+    "kind": "armor_pct",
+    "per_rank": [
+     2.0,
+     4.0,
+     6.0,
+     8.0,
+     10.0
+    ]
+   },
+   {
+    "talent": "Champion of the Light",
+    "kind": "convert",
+    "per_rank": [
+     12.0,
+     24.0,
+     36.0,
+     48.0,
+     60.0
+    ],
+    "from": "intellect",
+    "to": "spell_damage"
+   }
+  ],
+  "priest": [
+   {
+    "talent": "Mental Strength",
+    "kind": "stat_pct",
+    "per_rank": [
+     2.0,
+     4.0,
+     6.0,
+     8.0,
+     10.0
+    ],
+    "stat": "intellect"
+   },
+   {
+    "talent": "Spiritual Guidance",
+    "kind": "convert",
+    "per_rank": [
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     25.0
+    ],
+    "from": "spirit",
+    "to": "spell_healing"
+   },
+   {
+    "talent": "Spiritual Guidance",
+    "kind": "convert",
+    "per_rank": [
+     1.0,
+     3.0,
+     5.0,
+     6.0,
+     8.0
+    ],
+    "from": "spirit",
+    "to": "spell_damage"
+   }
+  ],
+  "rogue": [
+   {
+    "talent": "Dual Wield Specialization",
+    "kind": "offhand_pct",
+    "per_rank": [
+     25.0,
+     50.0
+    ]
+   }
+  ],
+  "shaman": [
+   {
+    "talent": "Ancestral Knowledge",
+    "kind": "stat_pct",
+    "per_rank": [
+     2.0,
+     4.0,
+     6.0,
+     8.0,
+     10.0
+    ],
+    "stat": "intellect"
+   },
+   {
+    "talent": "Toughness",
+    "kind": "stat_pct",
+    "per_rank": [
+     2.0,
+     4.0,
+     6.0,
+     8.0,
+     10.0
+    ],
+    "stat": "stamina"
+   },
+   {
+    "talent": "Mental Quickness",
+    "kind": "convert",
+    "per_rank": [
+     15.0,
+     30.0
+    ],
+    "from": "intellect",
+    "to": "spell_power"
+   },
+   {
+    "talent": "Mental Dexterity",
+    "kind": "convert",
+    "per_rank": [
+     50.0,
+     100.0,
+     150.0
+    ],
+    "from": "intellect",
+    "to": "attack_power"
+   },
+   {
+    "talent": "Improved Reincarnation",
+    "kind": "health_pct",
+    "per_rank": [
+     2.0,
+     4.0
+    ]
+   }
+  ],
+  "warlock": [
+   {
+    "talent": "Demonic Embrace",
+    "kind": "stat_pct",
+    "per_rank": [
+     3.0,
+     6.0,
+     9.0,
+     12.0,
+     15.0
+    ],
+    "stat": "stamina"
+   },
+   {
+    "talent": "Fel Vitality",
+    "kind": "mana_pct",
+    "per_rank": [
+     5.0,
+     10.0,
+     15.0
+    ]
+   }
+  ],
+  "warrior": [
+   {
+    "talent": "Dual Wield Specialization",
+    "kind": "offhand_pct",
+    "per_rank": [
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     25.0
+    ]
+   }
+  ]
+ },
+ "talent_note": "Talents that change what a stat is worth, per class (talent_transforms: kind, per_rank percentages read from each rank's tooltip, stat / from / to / form). Each entry's values were measured with its own talents (leveling: levels.<L>.talents; raid, heal, tank: talents); re-state them for the player's own ranks before scoring. Per stat S: p = sum of S's stat_pct, c = S's convert fractions (S -> T); own = v[S] - (1 + p_build) x sum(c_build x v[T]); v'[S] = own x (1 + p_player) / (1 + p_build) + (1 + p_player) x sum(c_player x v[T]); Intellect's own part also x (1 + mana_player) / (1 + mana_build). Then v'[stamina] x (1 + health_player) / (1 + health_build), v'[armor] x armor ratio, v'[oh_weapon_dps] x off-hand ratio. A transform with form applies only to an entry whose forms list it. Fraction for rank k: per_rank[k - 1] / 100 (0 at rank 0; the last number above the table). Use v[T] as measured. Clamp at 0. talent_vectors: reproduce expected within tolerance. A first-order re-statement, not a new measurement.",
+ "talent_vectors": [
+  {
+   "name": "druid leveling opt-balance-dps-leveling-st level 45: talents flipped",
+   "class": "druid",
+   "mode": "leveling",
+   "entry": "opt-balance-dps-leveling-st",
+   "level": 45,
+   "forms": [
+    "moonkin"
+   ],
+   "values": {
+    "strength": 0.0,
+    "agility": 0.0081,
+    "stamina": 0.00104,
+    "attack_power": 0.0,
+    "armor": 0.00239,
+    "mh_weapon_dps": 0.0,
+    "crit_rating": 0.01871,
+    "hit_rating": 0.03919,
+    "haste_rating": 0.01387,
+    "expertise_rating": 0.0,
+    "weapon_skill": 0.0,
+    "defense_rating": 0.01124,
+    "dodge_rating": 0.01012,
+    "parry_rating": 0.0,
+    "intellect": 0.00849,
+    "spirit": 0.01293,
+    "mp5": 0.06103,
+    "spell_power": 0.10322,
+    "spell_penetration": 0.07128,
+    "arcane_damage": 0.0897,
+    "nature_damage": 0.01352,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 0.10322,
+    "spell_healing": 0.0,
+    "feral_attack_power": 0.0
+   },
+   "build_talents": {
+    "Eclipse": 3,
+    "Genesis": 3,
+    "Improved Moonfire": 2,
+    "Improved Starfire": 5,
+    "Improved Wrath": 5,
+    "Moonfury": 5,
+    "Moonglow": 3,
+    "Moonkin Form": 1,
+    "Nature's Grace": 1,
+    "Nature's Majesty": 2,
+    "Nature's Splendor": 1,
+    "Vengeance": 5
+   },
+   "player_talents": {
+    "Eclipse": 3,
+    "Genesis": 3,
+    "Improved Moonfire": 2,
+    "Improved Starfire": 5,
+    "Improved Wrath": 5,
+    "Moonfury": 5,
+    "Moonglow": 3,
+    "Moonkin Form": 0,
+    "Nature's Grace": 1,
+    "Nature's Majesty": 2,
+    "Nature's Splendor": 1,
+    "Vengeance": 5,
+    "Natural Instinct": 2,
+    "Living Spirit": 3,
+    "Heart of the Wild": 5
+   },
+   "expected": {
+    "strength": 0.0,
+    "agility": 0.0081,
+    "stamina": 0.00104,
+    "attack_power": 0.0,
+    "armor": 0.00052,
+    "mh_weapon_dps": 0.0,
+    "crit_rating": 0.01871,
+    "hit_rating": 0.03919,
+    "haste_rating": 0.01387,
+    "expertise_rating": 0.0,
+    "weapon_skill": 0.0,
+    "defense_rating": 0.01124,
+    "dodge_rating": 0.01012,
+    "parry_rating": 0.0,
+    "intellect": 0.00934,
+    "spirit": 0.01487,
+    "mp5": 0.06103,
+    "spell_power": 0.10322,
+    "spell_penetration": 0.07128,
+    "arcane_damage": 0.0897,
+    "nature_damage": 0.01352,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 0.10322,
+    "spell_healing": 0.0,
+    "feral_attack_power": 0.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "druid raid balance-moonkin-raid level 60: talents flipped",
+   "class": "druid",
+   "mode": "raid",
+   "entry": "balance-moonkin-raid",
+   "level": 60,
+   "forms": [
+    "moonkin"
+   ],
+   "values": {
+    "arcane_damage": 0.797,
+    "crit_rating": 0.69526,
+    "haste_rating": 1.29165,
+    "hit_rating": 1.04057,
+    "intellect": 0.22472,
+    "nature_damage": 0.203,
+    "spell_power": 1.0,
+    "spell_penetration": 1.93595,
+    "spirit": 0.00192,
+    "hit_rating_below_cap": 1.09727,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 1.0,
+    "spell_healing": 0.0,
+    "feral_attack_power": 0.0
+   },
+   "build_talents": {
+    "Genesis": 5,
+    "Improved Moonfire": 2,
+    "Moonglow": 3,
+    "Nature's Majesty": 2,
+    "Nature's Reach": 2,
+    "Nature's Splendor": 1,
+    "Improved Starfire": 5,
+    "Insect Swarm": 1,
+    "Vengeance": 5,
+    "Nature's Grace": 1,
+    "Moonfury": 5,
+    "Moonkin Form": 1,
+    "Heart of the Wild": 5,
+    "Nature's Focus": 5,
+    "Naturalist": 5,
+    "Reflection": 3
+   },
+   "player_talents": {
+    "Genesis": 5,
+    "Improved Moonfire": 2,
+    "Moonglow": 3,
+    "Nature's Majesty": 2,
+    "Nature's Reach": 2,
+    "Nature's Splendor": 1,
+    "Improved Starfire": 5,
+    "Insect Swarm": 1,
+    "Vengeance": 5,
+    "Nature's Grace": 1,
+    "Moonfury": 5,
+    "Moonkin Form": 0,
+    "Heart of the Wild": 0,
+    "Nature's Focus": 5,
+    "Naturalist": 5,
+    "Reflection": 3,
+    "Natural Instinct": 2,
+    "Living Spirit": 3
+   },
+   "expected": {
+    "arcane_damage": 0.797,
+    "crit_rating": 0.69526,
+    "haste_rating": 1.29165,
+    "hit_rating": 1.04057,
+    "intellect": 0.20429,
+    "nature_damage": 0.203,
+    "spell_power": 1.0,
+    "spell_penetration": 1.93595,
+    "spirit": 0.00221,
+    "hit_rating_below_cap": 1.09727,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 1.0,
+    "spell_healing": 0.0,
+    "feral_attack_power": 0.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "druid heal restoration-ml-heal level 60: talents flipped",
+   "class": "druid",
+   "mode": "heal",
+   "entry": "restoration-ml-heal",
+   "level": 60,
+   "forms": [],
+   "values": {
+    "intellect": 1.945,
+    "spirit": 2.0324,
+    "mp5": 4.2515,
+    "crit_rating": 0.5498,
+    "haste_rating": 0.1381,
+    "spell_power": 1.0,
+    "spell_damage": 0.0,
+    "spell_healing": 1.0,
+    "feral_attack_power": 0.0
+   },
+   "build_talents": {
+    "Improved Wrath": 2,
+    "Genesis": 5,
+    "Nature's Majesty": 2,
+    "Nature's Reach": 1,
+    "Nature's Splendor": 1,
+    "Heart of the Wild": 4,
+    "Naturalist": 2,
+    "Reflection": 3,
+    "Gift of Nature": 5,
+    "Bloom": 1,
+    "Tranquil Spirit": 5,
+    "Improved Rejuvenation": 3,
+    "Swiftmend": 1,
+    "Living Spirit": 3,
+    "Improved Tranquility": 2,
+    "Improved Regrowth": 2,
+    "Wild Growth": 1,
+    "Nature's Focus": 5,
+    "Subtlety": 3
+   },
+   "player_talents": {
+    "Improved Wrath": 2,
+    "Genesis": 5,
+    "Nature's Majesty": 2,
+    "Nature's Reach": 1,
+    "Nature's Splendor": 1,
+    "Heart of the Wild": 0,
+    "Naturalist": 2,
+    "Reflection": 3,
+    "Gift of Nature": 5,
+    "Bloom": 1,
+    "Tranquil Spirit": 5,
+    "Improved Rejuvenation": 3,
+    "Swiftmend": 1,
+    "Living Spirit": 0,
+    "Improved Tranquility": 2,
+    "Improved Regrowth": 2,
+    "Wild Growth": 1,
+    "Nature's Focus": 5,
+    "Subtlety": 3,
+    "Natural Instinct": 2
+   },
+   "expected": {
+    "intellect": 2.05093,
+    "spirit": 1.7673,
+    "mp5": 4.2515,
+    "crit_rating": 0.5498,
+    "haste_rating": 0.1381,
+    "spell_power": 1.0,
+    "spell_damage": 0.0,
+    "spell_healing": 1.0,
+    "feral_attack_power": 0.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "druid tank feral-combat-ml-tank level 60: talents flipped",
+   "class": "druid",
+   "mode": "tank",
+   "entry": "feral-combat-ml-tank",
+   "level": 60,
+   "forms": [
+    "bear"
+   ],
+   "values": {
+    "strength": 0.60317,
+    "agility": 1.10285,
+    "stamina": 1.0,
+    "intellect": 0.0,
+    "spirit": 0.0,
+    "spell_power": 0.0,
+    "attack_power": 0.27426,
+    "hit_rating": 0.95019,
+    "crit_rating": 1.10382,
+    "haste_rating": -0.06048,
+    "expertise_rating": 0.94745,
+    "defense_rating": 0.38325,
+    "block_rating": 0.0,
+    "block_value": 0.0,
+    "dodge_rating": 0.1879,
+    "parry_rating": 0.0,
+    "armor": 0.16284,
+    "mp5": 0.0,
+    "mh_weapon_dps": 3.83845,
+    "spell_damage": 0.0,
+    "spell_healing": 0.0,
+    "feral_attack_power": 0.27426
+   },
+   "build_talents": {
+    "Improved Wrath": 5,
+    "Nature's Majesty": 2,
+    "Nature's Reach": 2,
+    "Ferocity": 5,
+    "Furor": 5,
+    "Thick Hide": 3,
+    "Sharpened Claws": 2,
+    "Shredding Attacks": 3,
+    "Blood Frenzy": 1,
+    "Predatory Strikes": 3,
+    "Leader of the Pack": 1,
+    "Natural Instinct": 2,
+    "Natural Reaction": 5,
+    "Rend and Tear": 5,
+    "Heart of the Wild": 5,
+    "Naturalist": 2
+   },
+   "player_talents": {
+    "Improved Wrath": 5,
+    "Nature's Majesty": 2,
+    "Nature's Reach": 2,
+    "Ferocity": 5,
+    "Furor": 5,
+    "Thick Hide": 3,
+    "Sharpened Claws": 2,
+    "Shredding Attacks": 3,
+    "Blood Frenzy": 1,
+    "Predatory Strikes": 3,
+    "Leader of the Pack": 1,
+    "Natural Instinct": 0,
+    "Natural Reaction": 5,
+    "Rend and Tear": 5,
+    "Heart of the Wild": 0,
+    "Naturalist": 2,
+    "Living Spirit": 3
+   },
+   "expected": {
+    "strength": 0.60317,
+    "agility": 1.10285,
+    "stamina": 0.83333,
+    "intellect": 0.0,
+    "spirit": 0.0,
+    "spell_power": 0.0,
+    "attack_power": 0.27426,
+    "hit_rating": 0.95019,
+    "crit_rating": 1.10382,
+    "haste_rating": 0.0,
+    "expertise_rating": 0.94745,
+    "defense_rating": 0.38325,
+    "block_rating": 0.0,
+    "block_value": 0.0,
+    "dodge_rating": 0.1879,
+    "parry_rating": 0.0,
+    "armor": 0.16284,
+    "mp5": 0.0,
+    "mh_weapon_dps": 3.83845,
+    "spell_damage": 0.0,
+    "spell_healing": 0.0,
+    "feral_attack_power": 0.27426
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "hunter melee Survival at 45 with a guildmate's level-47 talents",
+   "class": "hunter",
+   "mode": "leveling",
+   "entry": "survival-open-leveling",
+   "level": 45,
+   "forms": [],
+   "values": {
+    "strength": 0.00421,
+    "agility": 0.01315,
+    "stamina": 0.00095,
+    "attack_power": 0.00617,
+    "armor": 8e-05,
+    "mh_weapon_dps": 0.03975,
+    "crit_rating": 0.00559,
+    "hit_rating": 0.01427,
+    "haste_rating": 0.00265,
+    "expertise_rating": 0.01265,
+    "weapon_skill": 0.02397,
+    "defense_rating": 0.00015,
+    "dodge_rating": 0.0,
+    "parry_rating": 2e-05,
+    "intellect": 0.00175,
+    "spirit": 0.00698,
+    "mp5": 0.02098,
+    "ranged_weapon_dps": 0.01292,
+    "spell_penetration": 0.00097,
+    "hit_rating_above_cap": 0.00405,
+    "spell_power": 0.0,
+    "spell_damage": 0.0,
+    "spell_healing": 0.0
+   },
+   "build_talents": {
+    "Careful Aim": 1,
+    "Clever Traps": 2,
+    "Deflection": 1,
+    "Improved Tracking": 5,
+    "Lethal Attacks": 5,
+    "Lightning Reflexes": 5,
+    "Predator's Edge": 5,
+    "Resourcefulness": 2,
+    "Savage Strikes": 2,
+    "Surefooted": 3,
+    "Survival Tactics": 1,
+    "Survivalist": 2,
+    "Survivalist's Discipline": 2
+   },
+   "player_talents": {
+    "Lethal Attacks": 5,
+    "Careful Aim": 1,
+    "Improved Tracking": 5,
+    "Savage Strikes": 2,
+    "Survivalist": 3,
+    "Clever Traps": 2,
+    "Surefooted": 3,
+    "Predator's Edge": 5,
+    "Resourcefulness": 2,
+    "Expose Prey": 2,
+    "Survivalist's Discipline": 2,
+    "Strider Kick": 1,
+    "Lightning Reflexes": 5
+   },
+   "expected": {
+    "strength": 0.00421,
+    "agility": 0.01315,
+    "stamina": 0.00097,
+    "attack_power": 0.00617,
+    "armor": 8e-05,
+    "mh_weapon_dps": 0.03975,
+    "crit_rating": 0.00559,
+    "hit_rating": 0.01427,
+    "haste_rating": 0.00265,
+    "expertise_rating": 0.01265,
+    "weapon_skill": 0.02397,
+    "defense_rating": 0.00015,
+    "dodge_rating": 0.0,
+    "parry_rating": 2e-05,
+    "intellect": 0.00175,
+    "spirit": 0.00698,
+    "mp5": 0.02098,
+    "ranged_weapon_dps": 0.01292,
+    "spell_penetration": 0.00097,
+    "hit_rating_above_cap": 0.00405,
+    "spell_power": 0.0,
+    "spell_damage": 0.0,
+    "spell_healing": 0.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "hunter raid beast-mastery-ml-raid level 60: talents flipped",
+   "class": "hunter",
+   "mode": "raid",
+   "entry": "beast-mastery-ml-raid",
+   "level": 60,
+   "forms": [],
+   "values": {
+    "ranged_weapon_dps": 8.35577,
+    "agility": 2.99313,
+    "armor_penetration": 0.28984,
+    "crit_rating": 2.78342,
+    "expertise_rating": 1.20696,
+    "haste_rating": 2.06639,
+    "hit_rating": 3.89103,
+    "intellect": 1.09982,
+    "ranged_attack_power": 1.0,
+    "spell_penetration": 1.19505,
+    "spirit": 0.00137,
+    "hit_rating_below_cap": 4.75733,
+    "hit_rating_above_cap": 0.0,
+    "spell_power": 0.0,
+    "spell_damage": 0.0,
+    "spell_healing": 0.0
+   },
+   "build_talents": {
+    "Deadly Aspects": 5,
+    "Endurance Training": 3,
+    "Focused Fire": 2,
+    "Bestial Swiftness": 1,
+    "Unleashed Fury": 5,
+    "Ferocity": 5,
+    "Summon Hawk": 1,
+    "Intimidation": 1,
+    "Bestial Discipline": 2,
+    "Frenzy": 5,
+    "Bestial Wrath": 1,
+    "Lethal Attacks": 5,
+    "Improved Stings": 3,
+    "Careful Aim": 5,
+    "Improved Arcane Shot": 2,
+    "Mortal Shots": 5
+   },
+   "player_talents": {
+    "Deadly Aspects": 5,
+    "Endurance Training": 3,
+    "Focused Fire": 2,
+    "Bestial Swiftness": 1,
+    "Unleashed Fury": 5,
+    "Ferocity": 5,
+    "Summon Hawk": 1,
+    "Intimidation": 1,
+    "Bestial Discipline": 2,
+    "Frenzy": 5,
+    "Bestial Wrath": 1,
+    "Lethal Attacks": 5,
+    "Improved Stings": 3,
+    "Careful Aim": 0,
+    "Improved Arcane Shot": 2,
+    "Mortal Shots": 5,
+    "Predator's Edge": 5,
+    "Lightning Reflexes": 5,
+    "Survivalist": 5
+   },
+   "expected": {
+    "ranged_weapon_dps": 8.35577,
+    "agility": 3.4421,
+    "armor_penetration": 0.28984,
+    "crit_rating": 2.78342,
+    "expertise_rating": 1.20696,
+    "haste_rating": 2.06639,
+    "hit_rating": 3.89103,
+    "intellect": 1.09982,
+    "ranged_attack_power": 1.0,
+    "spell_penetration": 1.19505,
+    "spirit": 0.00137,
+    "hit_rating_below_cap": 4.75733,
+    "hit_rating_above_cap": 0.0,
+    "spell_power": 0.0,
+    "spell_damage": 0.0,
+    "spell_healing": 0.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "mage leveling arcane-open-leveling level 45: talents flipped",
+   "class": "mage",
+   "mode": "leveling",
+   "entry": "arcane-open-leveling",
+   "level": 45,
+   "forms": [],
+   "values": {
+    "intellect": 0.02791,
+    "spirit": 0.02708,
+    "stamina": 0.00382,
+    "spell_power": 0.05674,
+    "armor": 0.00051,
+    "mp5": 0.04841,
+    "wand_dps": 0.0,
+    "crit_rating": 0.01463,
+    "hit_rating": 0.03685,
+    "haste_rating": 0.0,
+    "defense_rating": 0.00409,
+    "dodge_rating": 0.00328,
+    "spell_penetration": 0.05922,
+    "arcane_damage": 0.05186,
+    "fire_damage": 0.0034,
+    "frost_damage": 0.00148,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 0.05674,
+    "spell_healing": 0.0
+   },
+   "build_talents": {
+    "Arcane Blast": 1,
+    "Arcane Concentration": 5,
+    "Arcane Impact": 3,
+    "Arcane Instability": 3,
+    "Arcane Meditation": 3,
+    "Arcane Mind": 5,
+    "Arcane Resilience": 1,
+    "Arcane Wrath": 1,
+    "Ice Shards": 1,
+    "Improved Channeling": 5,
+    "Improved Frostbolt": 3,
+    "Missile Barrage": 2,
+    "Precision": 2,
+    "Presence of Mind": 1
+   },
+   "player_talents": {
+    "Arcane Blast": 1,
+    "Arcane Concentration": 5,
+    "Arcane Impact": 3,
+    "Arcane Instability": 3,
+    "Arcane Meditation": 3,
+    "Arcane Mind": 0,
+    "Arcane Resilience": 0,
+    "Arcane Wrath": 1,
+    "Ice Shards": 1,
+    "Improved Channeling": 5,
+    "Improved Frostbolt": 3,
+    "Missile Barrage": 2,
+    "Precision": 2,
+    "Presence of Mind": 1
+   },
+   "expected": {
+    "intellect": 0.02525,
+    "spirit": 0.02708,
+    "stamina": 0.00382,
+    "spell_power": 0.05674,
+    "armor": 0.00051,
+    "mp5": 0.04841,
+    "wand_dps": 0.0,
+    "crit_rating": 0.01463,
+    "hit_rating": 0.03685,
+    "haste_rating": 0.0,
+    "defense_rating": 0.00409,
+    "dodge_rating": 0.00328,
+    "spell_penetration": 0.05922,
+    "arcane_damage": 0.05186,
+    "fire_damage": 0.0034,
+    "frost_damage": 0.00148,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 0.05674,
+    "spell_healing": 0.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "mage raid arcane-blast-raid level 60: talents flipped",
+   "class": "mage",
+   "mode": "raid",
+   "entry": "arcane-blast-raid",
+   "level": 60,
+   "forms": [],
+   "values": {
+    "arcane_damage": 0.80867,
+    "crit_rating": 0.83796,
+    "fire_damage": 0.19114,
+    "haste_rating": 1.25366,
+    "hit_rating": 1.80943,
+    "intellect": 0.9555,
+    "spell_power": 1.0,
+    "spell_penetration": 2.4555,
+    "spirit": 0.17105,
+    "hit_rating_below_cap": 1.55051,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 1.0,
+    "spell_healing": 0.0
+   },
+   "build_talents": {
+    "Improved Channeling": 5,
+    "Arcane Concentration": 5,
+    "Arcane Subtlety": 2,
+    "Missile Barrage": 2,
+    "Arcane Blast": 1,
+    "Arcane Impact": 3,
+    "Arcane Meditation": 3,
+    "Arcane Mind": 5,
+    "Presence of Mind": 1,
+    "Arcane Instability": 3,
+    "Arcane Power": 1,
+    "Incineration": 5,
+    "Ignite": 5,
+    "Burning Soul": 1,
+    "Improved Fire Blast": 2,
+    "Improved Frostbolt": 4,
+    "Precision": 3
+   },
+   "player_talents": {
+    "Improved Channeling": 5,
+    "Arcane Concentration": 5,
+    "Arcane Subtlety": 2,
+    "Missile Barrage": 2,
+    "Arcane Blast": 1,
+    "Arcane Impact": 3,
+    "Arcane Meditation": 3,
+    "Arcane Mind": 0,
+    "Presence of Mind": 1,
+    "Arcane Instability": 3,
+    "Arcane Power": 1,
+    "Incineration": 5,
+    "Ignite": 5,
+    "Burning Soul": 1,
+    "Improved Fire Blast": 2,
+    "Improved Frostbolt": 4,
+    "Precision": 3,
+    "Arcane Resilience": 3
+   },
+   "expected": {
+    "arcane_damage": 0.80867,
+    "crit_rating": 0.83796,
+    "fire_damage": 0.19114,
+    "haste_rating": 1.25366,
+    "hit_rating": 1.80943,
+    "intellect": 0.86864,
+    "spell_power": 1.0,
+    "spell_penetration": 2.4555,
+    "spirit": 0.17105,
+    "hit_rating_below_cap": 1.55051,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 1.0,
+    "spell_healing": 0.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "paladin leveling holy-leveling level 45: talents flipped",
+   "class": "paladin",
+   "mode": "leveling",
+   "entry": "holy-leveling",
+   "level": 45,
+   "forms": [],
+   "values": {
+    "strength": 0.02883,
+    "agility": 0.01863,
+    "stamina": 0.01199,
+    "attack_power": 0.01286,
+    "armor": 0.00053,
+    "mh_weapon_dps": 0.18881,
+    "crit_rating": 0.01781,
+    "hit_rating": 0.03531,
+    "haste_rating": 0.01155,
+    "expertise_rating": 0.05187,
+    "weapon_skill": 0.0635,
+    "defense_rating": 0.00668,
+    "dodge_rating": 0.00325,
+    "parry_rating": 0.0026,
+    "intellect": 0.00371,
+    "spirit": 0.02993,
+    "mp5": 0.08988,
+    "spell_power": 0.03817,
+    "block_rating": 0.0,
+    "block_value": 0.0,
+    "holy_damage": 0.03817,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 0.03817,
+    "spell_healing": 0.0
+   },
+   "build_talents": {
+    "Benediction": 5,
+    "Conviction": 3,
+    "Deflection": 2,
+    "Divine Intellect": 3,
+    "Divine Strength": 4,
+    "Healing Light": 2,
+    "Holy Shock": 1,
+    "Illumination": 5,
+    "Purifying Power": 2,
+    "Pursuit of Justice": 2,
+    "Reverence": 2,
+    "Spiritual Focus": 5
+   },
+   "player_talents": {
+    "Benediction": 5,
+    "Conviction": 3,
+    "Deflection": 2,
+    "Divine Intellect": 0,
+    "Divine Strength": 0,
+    "Healing Light": 2,
+    "Holy Shock": 1,
+    "Illumination": 5,
+    "Purifying Power": 2,
+    "Pursuit of Justice": 2,
+    "Reverence": 2,
+    "Spiritual Focus": 5,
+    "Toughness": 5,
+    "Champion of the Light": 5
+   },
+   "expected": {
+    "strength": 0.02669,
+    "agility": 0.01863,
+    "stamina": 0.01199,
+    "attack_power": 0.01286,
+    "armor": 0.00058,
+    "mh_weapon_dps": 0.18881,
+    "crit_rating": 0.01781,
+    "hit_rating": 0.03531,
+    "haste_rating": 0.01155,
+    "expertise_rating": 0.05187,
+    "weapon_skill": 0.0635,
+    "defense_rating": 0.00668,
+    "dodge_rating": 0.00325,
+    "parry_rating": 0.0026,
+    "intellect": 0.0264,
+    "spirit": 0.02993,
+    "mp5": 0.08988,
+    "spell_power": 0.03817,
+    "block_rating": 0.0,
+    "block_value": 0.0,
+    "holy_damage": 0.03817,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 0.03817,
+    "spell_healing": 0.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "paladin raid ret-full-buffs-raid level 60: talents flipped",
+   "class": "paladin",
+   "mode": "raid",
+   "entry": "ret-full-buffs-raid",
+   "level": 60,
+   "forms": [],
+   "values": {
+    "mh_weapon_dps": 8.55002,
+    "agility": 1.05398,
+    "armor_penetration": 0.14836,
+    "attack_power": 0.60589,
+    "crit_rating": 1.42544,
+    "expertise_rating": 2.79766,
+    "haste_rating": 0.55153,
+    "hit_rating": 3.6376,
+    "holy_damage": 1.0,
+    "intellect": 0.02718,
+    "spell_power": 1.0,
+    "spirit": 0.0,
+    "strength": 1.51453,
+    "hit_rating_below_cap": 3.29898,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 1.0,
+    "spell_healing": 0.0
+   },
+   "build_talents": {
+    "Divine Strength": 5,
+    "Improved Seals": 3,
+    "Redoubt": 5,
+    "Precision": 3,
+    "Sacred Duty": 2,
+    "Toughness": 5,
+    "Benediction": 5,
+    "Deflection": 1,
+    "Conviction": 3,
+    "Improved Judgement": 2,
+    "Sanctified Judgement": 3,
+    "Seal of Command": 1,
+    "Vindication": 3,
+    "Sacred Arbiter": 1,
+    "Two-Handed Weapon Specialization": 3,
+    "Vengeance": 3,
+    "Champion of the Light": 3
+   },
+   "player_talents": {
+    "Divine Strength": 0,
+    "Improved Seals": 3,
+    "Redoubt": 5,
+    "Precision": 3,
+    "Sacred Duty": 2,
+    "Toughness": 0,
+    "Benediction": 5,
+    "Deflection": 1,
+    "Conviction": 3,
+    "Improved Judgement": 2,
+    "Sanctified Judgement": 3,
+    "Seal of Command": 1,
+    "Vindication": 3,
+    "Sacred Arbiter": 1,
+    "Two-Handed Weapon Specialization": 3,
+    "Vengeance": 3,
+    "Champion of the Light": 0,
+    "Divine Intellect": 5
+   },
+   "expected": {
+    "mh_weapon_dps": 8.55002,
+    "agility": 1.05398,
+    "armor_penetration": 0.14836,
+    "attack_power": 0.60589,
+    "crit_rating": 1.42544,
+    "expertise_rating": 2.79766,
+    "haste_rating": 0.55153,
+    "hit_rating": 3.6376,
+    "holy_damage": 1.0,
+    "intellect": 0.0,
+    "spell_power": 1.0,
+    "spirit": 0.0,
+    "strength": 1.37685,
+    "hit_rating_below_cap": 3.29898,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 1.0,
+    "spell_healing": 0.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "paladin heal holy-ml-heal level 60: talents flipped",
+   "class": "paladin",
+   "mode": "heal",
+   "entry": "holy-ml-heal",
+   "level": 60,
+   "forms": [],
+   "values": {
+    "intellect": 3.5181,
+    "spirit": 1.5004,
+    "mp5": 7.176,
+    "crit_rating": 2.0575,
+    "haste_rating": 0.0,
+    "spell_power": 1.0,
+    "spell_damage": 0.0,
+    "spell_healing": 1.0
+   },
+   "build_talents": {
+    "Spiritual Focus": 5,
+    "Divine Strength": 4,
+    "Healing Light": 3,
+    "Reverence": 2,
+    "Purifying Power": 2,
+    "Divine Favor": 1,
+    "Illumination": 5,
+    "Infusion of Light": 1,
+    "Oath of Light": 1,
+    "Holy Shock": 1,
+    "Boundless Light": 1,
+    "Holy Power": 5,
+    "Light's Vigil": 1,
+    "Divine Intellect": 5,
+    "Deflection": 2,
+    "Benediction": 5,
+    "Conviction": 3,
+    "Unyielding Faith": 2,
+    "Pursuit of Justice": 2
+   },
+   "player_talents": {
+    "Spiritual Focus": 5,
+    "Divine Strength": 0,
+    "Healing Light": 3,
+    "Reverence": 2,
+    "Purifying Power": 2,
+    "Divine Favor": 1,
+    "Illumination": 5,
+    "Infusion of Light": 1,
+    "Oath of Light": 1,
+    "Holy Shock": 1,
+    "Boundless Light": 1,
+    "Holy Power": 5,
+    "Light's Vigil": 1,
+    "Divine Intellect": 0,
+    "Deflection": 2,
+    "Benediction": 5,
+    "Conviction": 3,
+    "Unyielding Faith": 2,
+    "Pursuit of Justice": 2,
+    "Toughness": 5,
+    "Champion of the Light": 5
+   },
+   "expected": {
+    "intellect": 3.19827,
+    "spirit": 1.5004,
+    "mp5": 7.176,
+    "crit_rating": 2.0575,
+    "haste_rating": 0.0,
+    "spell_power": 1.0,
+    "spell_damage": 0.0,
+    "spell_healing": 1.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "paladin tank protection-ml-tank level 60: talents flipped",
+   "class": "paladin",
+   "mode": "tank",
+   "entry": "protection-ml-tank",
+   "level": 60,
+   "forms": [],
+   "values": {
+    "strength": 0.24687,
+    "agility": 0.59446,
+    "stamina": 1.0,
+    "intellect": 0.41174,
+    "spirit": -0.00118,
+    "spell_power": 0.48002,
+    "attack_power": 0.10751,
+    "hit_rating": 0.92553,
+    "crit_rating": 0.33476,
+    "haste_rating": 0.31706,
+    "expertise_rating": 0.55995,
+    "defense_rating": 0.75284,
+    "block_rating": 0.67438,
+    "block_value": 0.26987,
+    "dodge_rating": 0.35305,
+    "parry_rating": 0.28624,
+    "armor": 0.05678,
+    "mp5": 0.43474,
+    "mh_weapon_dps": 1.5042,
+    "spell_damage": 0.48002,
+    "spell_healing": 0.0
+   },
+   "build_talents": {
+    "Redoubt": 5,
+    "Precision": 3,
+    "Guardian's Favor": 1,
+    "Sacred Duty": 1,
+    "Templar's Bulwark": 1,
+    "Shield Specialization": 2,
+    "Toughness": 5,
+    "Swift Judgement": 1,
+    "Improved Righteous Fury": 3,
+    "Anticipation": 3,
+    "Holy Shield": 1,
+    "Reckoning": 5,
+    "Iron Creed": 3,
+    "Shieldsworn": 1,
+    "Deflection": 5,
+    "Benediction": 2,
+    "Improved Judgement": 2,
+    "Conviction": 3,
+    "Sanctified Judgement": 3,
+    "Sacred Arbiter": 1
+   },
+   "player_talents": {
+    "Redoubt": 5,
+    "Precision": 3,
+    "Guardian's Favor": 1,
+    "Sacred Duty": 1,
+    "Templar's Bulwark": 1,
+    "Shield Specialization": 2,
+    "Toughness": 0,
+    "Swift Judgement": 1,
+    "Improved Righteous Fury": 3,
+    "Anticipation": 3,
+    "Holy Shield": 1,
+    "Reckoning": 5,
+    "Iron Creed": 3,
+    "Shieldsworn": 1,
+    "Deflection": 5,
+    "Benediction": 2,
+    "Improved Judgement": 2,
+    "Conviction": 3,
+    "Sanctified Judgement": 3,
+    "Sacred Arbiter": 1,
+    "Champion of the Light": 5,
+    "Divine Strength": 5,
+    "Divine Intellect": 5
+   },
+   "expected": {
+    "strength": 0.27156,
+    "agility": 0.59446,
+    "stamina": 1.0,
+    "intellect": 0.76973,
+    "spirit": 0.0,
+    "spell_power": 0.48002,
+    "attack_power": 0.10751,
+    "hit_rating": 0.92553,
+    "crit_rating": 0.33476,
+    "haste_rating": 0.31706,
+    "expertise_rating": 0.55995,
+    "defense_rating": 0.75284,
+    "block_rating": 0.67438,
+    "block_value": 0.26987,
+    "dodge_rating": 0.35305,
+    "parry_rating": 0.28624,
+    "armor": 0.05162,
+    "mp5": 0.43474,
+    "mh_weapon_dps": 1.5042,
+    "spell_damage": 0.48002,
+    "spell_healing": 0.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "priest leveling discipline-leveling level 45: talents flipped",
+   "class": "priest",
+   "mode": "leveling",
+   "entry": "discipline-leveling",
+   "level": 45,
+   "forms": [],
+   "values": {
+    "intellect": 0.00829,
+    "spirit": 0.0312,
+    "stamina": 0.00285,
+    "spell_power": 0.06736,
+    "armor": 0.00068,
+    "mp5": 0.06123,
+    "wand_dps": 0.09511,
+    "crit_rating": 0.01242,
+    "hit_rating": 0.03234,
+    "haste_rating": 0.00108,
+    "defense_rating": 0.00452,
+    "dodge_rating": 0.00433,
+    "spell_penetration": 0.02707,
+    "shadow_damage": 0.05308,
+    "holy_damage": 0.01428,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 0.06736,
+    "spell_healing": 0.0
+   },
+   "build_talents": {
+    "Blessed Recovery": 2,
+    "Divine Fury": 1,
+    "Holy Specialization": 5,
+    "Improved Power Word: Shield": 3,
+    "Improved Renew": 1,
+    "Inner Focus": 1,
+    "Inspiration": 3,
+    "Meditation": 3,
+    "Mental Agility": 3,
+    "Mental Strength": 5,
+    "Penance": 1,
+    "Power in Light": 1,
+    "Twilight Focus": 3,
+    "Twin Disciplines": 4
+   },
+   "player_talents": {
+    "Blessed Recovery": 2,
+    "Divine Fury": 1,
+    "Holy Specialization": 5,
+    "Improved Power Word: Shield": 3,
+    "Improved Renew": 1,
+    "Inner Focus": 1,
+    "Inspiration": 3,
+    "Meditation": 3,
+    "Mental Agility": 3,
+    "Mental Strength": 0,
+    "Penance": 1,
+    "Power in Light": 1,
+    "Twilight Focus": 3,
+    "Twin Disciplines": 4,
+    "Spiritual Guidance": 5
+   },
+   "expected": {
+    "intellect": 0.00754,
+    "spirit": 0.03659,
+    "stamina": 0.00285,
+    "spell_power": 0.06736,
+    "armor": 0.00068,
+    "mp5": 0.06123,
+    "wand_dps": 0.09511,
+    "crit_rating": 0.01242,
+    "hit_rating": 0.03234,
+    "haste_rating": 0.00108,
+    "defense_rating": 0.00452,
+    "dodge_rating": 0.00433,
+    "spell_penetration": 0.02707,
+    "shadow_damage": 0.05308,
+    "holy_damage": 0.01428,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 0.06736,
+    "spell_healing": 0.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "priest raid smite-discipline-raid level 60: talents flipped",
+   "class": "priest",
+   "mode": "raid",
+   "entry": "smite-discipline-raid",
+   "level": 60,
+   "forms": [],
+   "values": {
+    "crit_rating": 0.39735,
+    "haste_rating": 0.47803,
+    "hit_rating": 0.4417,
+    "holy_damage": 0.69556,
+    "intellect": 0.23901,
+    "shadow_damage": 0.30444,
+    "spell_power": 1.0,
+    "spell_penetration": 0.4991,
+    "spirit": 0.07124,
+    "hit_rating_below_cap": 0.49589,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 1.0,
+    "spell_healing": 0.0
+   },
+   "build_talents": {
+    "Power in Light": 5,
+    "Twin Disciplines": 5,
+    "Holy Precision": 3,
+    "Mental Agility": 3,
+    "Inner Focus": 1,
+    "Meditation": 3,
+    "Mental Strength": 5,
+    "Penance": 1,
+    "Power Infusion": 1,
+    "Martyrdom": 2,
+    "Silent Resolve": 2,
+    "Holy Specialization": 5,
+    "Divine Fury": 5,
+    "Inspiration": 1,
+    "Searing Light": 2,
+    "Twilight Focus": 3,
+    "Holy Nova": 1,
+    "Shadow Focus": 3
+   },
+   "player_talents": {
+    "Power in Light": 5,
+    "Twin Disciplines": 5,
+    "Holy Precision": 3,
+    "Mental Agility": 3,
+    "Inner Focus": 1,
+    "Meditation": 3,
+    "Mental Strength": 0,
+    "Penance": 1,
+    "Power Infusion": 1,
+    "Martyrdom": 2,
+    "Silent Resolve": 2,
+    "Holy Specialization": 5,
+    "Divine Fury": 5,
+    "Inspiration": 1,
+    "Searing Light": 2,
+    "Twilight Focus": 3,
+    "Holy Nova": 1,
+    "Shadow Focus": 3,
+    "Spiritual Guidance": 5
+   },
+   "expected": {
+    "crit_rating": 0.39735,
+    "haste_rating": 0.47803,
+    "hit_rating": 0.4417,
+    "holy_damage": 0.69556,
+    "intellect": 0.21728,
+    "shadow_damage": 0.30444,
+    "spell_power": 1.0,
+    "spell_penetration": 0.4991,
+    "spirit": 0.15124,
+    "hit_rating_below_cap": 0.49589,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 1.0,
+    "spell_healing": 0.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "priest heal discipline-ml-heal level 60: talents flipped",
+   "class": "priest",
+   "mode": "heal",
+   "entry": "discipline-ml-heal",
+   "level": 60,
+   "forms": [],
+   "values": {
+    "intellect": 1.6702,
+    "spirit": 2.406,
+    "mp5": 6.0855,
+    "crit_rating": 0.7663,
+    "haste_rating": 0.0,
+    "spell_power": 1.0,
+    "spell_damage": 0.0,
+    "spell_healing": 1.0
+   },
+   "build_talents": {
+    "Power in Light": 1,
+    "Twin Disciplines": 4,
+    "Silent Resolve": 3,
+    "Holy Precision": 1,
+    "Mental Strength": 5,
+    "Mental Agility": 3,
+    "Inner Focus": 1,
+    "Improved Power Word: Shield": 3,
+    "Meditation": 3,
+    "Soul Warding": 1,
+    "Penance": 1,
+    "Divine Aegis": 3,
+    "Twilight Focus": 3,
+    "Improved Renew": 1,
+    "Holy Specialization": 5,
+    "Divine Fury": 1,
+    "Blessed Recovery": 2,
+    "Inspiration": 3,
+    "Holy Reach": 2,
+    "Improved Healing": 3,
+    "Litany of Light": 2
+   },
+   "player_talents": {
+    "Power in Light": 1,
+    "Twin Disciplines": 4,
+    "Silent Resolve": 3,
+    "Holy Precision": 1,
+    "Mental Strength": 0,
+    "Mental Agility": 3,
+    "Inner Focus": 1,
+    "Improved Power Word: Shield": 3,
+    "Meditation": 3,
+    "Soul Warding": 1,
+    "Penance": 1,
+    "Divine Aegis": 3,
+    "Twilight Focus": 3,
+    "Improved Renew": 1,
+    "Holy Specialization": 5,
+    "Divine Fury": 1,
+    "Blessed Recovery": 2,
+    "Inspiration": 3,
+    "Holy Reach": 2,
+    "Improved Healing": 3,
+    "Litany of Light": 2,
+    "Spiritual Guidance": 5
+   },
+   "expected": {
+    "intellect": 1.51836,
+    "spirit": 2.656,
+    "mp5": 6.0855,
+    "crit_rating": 0.7663,
+    "haste_rating": 0.0,
+    "spell_power": 1.0,
+    "spell_damage": 0.0,
+    "spell_healing": 1.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "rogue leveling assassination-open-leveling level 45: talents flipped",
+   "class": "rogue",
+   "mode": "leveling",
+   "entry": "assassination-open-leveling",
+   "level": 45,
+   "forms": [],
+   "values": {
+    "strength": 0.01134,
+    "agility": 0.02189,
+    "stamina": 0.00358,
+    "attack_power": 0.01082,
+    "armor": 0.00039,
+    "mh_weapon_dps": 0.08659,
+    "crit_rating": 0.01225,
+    "hit_rating": 0.02526,
+    "haste_rating": 0.00864,
+    "expertise_rating": 0.05683,
+    "weapon_skill": 0.07776,
+    "defense_rating": 0.00468,
+    "dodge_rating": 0.00321,
+    "parry_rating": 0.00256,
+    "oh_weapon_dps": 0.04743,
+    "spell_penetration": 0.00694,
+    "hit_rating_above_cap": 0.00731,
+    "spell_power": 0.0,
+    "spell_damage": 0.0,
+    "spell_healing": 0.0
+   },
+   "build_talents": {
+    "Blood Splatter": 1,
+    "Cold Blood": 1,
+    "Coup de Grace": 3,
+    "Improved Poisons": 4,
+    "Lethality": 2,
+    "Lightning Reflexes": 2,
+    "Malice": 5,
+    "Mutilate": 1,
+    "Relentless Strikes": 5,
+    "Remorseless Attacks": 2,
+    "Ruthlessness": 3,
+    "Seal Fate": 3,
+    "Venom": 1,
+    "Vigor": 2,
+    "Vile Poisons": 1
+   },
+   "player_talents": {
+    "Blood Splatter": 1,
+    "Cold Blood": 1,
+    "Coup de Grace": 3,
+    "Improved Poisons": 4,
+    "Lethality": 2,
+    "Lightning Reflexes": 2,
+    "Malice": 5,
+    "Mutilate": 1,
+    "Relentless Strikes": 5,
+    "Remorseless Attacks": 2,
+    "Ruthlessness": 3,
+    "Seal Fate": 3,
+    "Venom": 1,
+    "Vigor": 2,
+    "Vile Poisons": 1,
+    "Dual Wield Specialization": 2
+   },
+   "expected": {
+    "strength": 0.01134,
+    "agility": 0.02189,
+    "stamina": 0.00358,
+    "attack_power": 0.01082,
+    "armor": 0.00039,
+    "mh_weapon_dps": 0.08659,
+    "crit_rating": 0.01225,
+    "hit_rating": 0.02526,
+    "haste_rating": 0.00864,
+    "expertise_rating": 0.05683,
+    "weapon_skill": 0.07776,
+    "defense_rating": 0.00468,
+    "dodge_rating": 0.00321,
+    "parry_rating": 0.00256,
+    "oh_weapon_dps": 0.07114,
+    "spell_penetration": 0.00694,
+    "hit_rating_above_cap": 0.00731,
+    "spell_power": 0.0,
+    "spell_damage": 0.0,
+    "spell_healing": 0.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "rogue raid assassination-seal-fate-raid level 60: talents flipped",
+   "class": "rogue",
+   "mode": "raid",
+   "entry": "assassination-seal-fate-raid",
+   "level": 60,
+   "forms": [],
+   "values": {
+    "mh_weapon_dps": 7.71987,
+    "oh_weapon_dps": 3.4259,
+    "agility": 2.17223,
+    "armor_penetration": 0.41124,
+    "attack_power": 1.0,
+    "crit_rating": 2.16612,
+    "expertise_rating": 2.59609,
+    "haste_rating": 1.50122,
+    "hit_rating": 2.2272,
+    "spell_penetration": 0.68363,
+    "strength": 1.10016,
+    "hit_rating_below_cap": 3.83143,
+    "hit_rating_above_cap": 2.2272,
+    "spell_power": 0.0,
+    "spell_damage": 0.0,
+    "spell_healing": 0.0
+   },
+   "build_talents": {
+    "Malice": 5,
+    "Improved Expose Armor": 2,
+    "Improved Slice and Dice": 3,
+    "Ruthlessness": 3,
+    "Lethality": 2,
+    "Vigor": 1,
+    "Cold Blood": 1,
+    "Improved Poisons": 5,
+    "Vile Poisons": 2,
+    "Relentless Strikes": 1,
+    "Seal Fate": 3,
+    "Coup de Grace": 3,
+    "Lightning Reflexes": 5,
+    "Deflection": 1,
+    "Precision": 3,
+    "Puncturing Wounds": 3,
+    "Aggression": 2,
+    "Flawless Execution": 1,
+    "Weapon Expertise": 2,
+    "Dual Wield Specialization": 1,
+    "Opportunity": 2
+   },
+   "player_talents": {
+    "Malice": 5,
+    "Improved Expose Armor": 2,
+    "Improved Slice and Dice": 3,
+    "Ruthlessness": 3,
+    "Lethality": 2,
+    "Vigor": 1,
+    "Cold Blood": 1,
+    "Improved Poisons": 5,
+    "Vile Poisons": 2,
+    "Relentless Strikes": 1,
+    "Seal Fate": 3,
+    "Coup de Grace": 3,
+    "Lightning Reflexes": 5,
+    "Deflection": 1,
+    "Precision": 3,
+    "Puncturing Wounds": 3,
+    "Aggression": 2,
+    "Flawless Execution": 1,
+    "Weapon Expertise": 2,
+    "Dual Wield Specialization": 0,
+    "Opportunity": 2
+   },
+   "expected": {
+    "mh_weapon_dps": 7.71987,
+    "oh_weapon_dps": 2.74072,
+    "agility": 2.17223,
+    "armor_penetration": 0.41124,
+    "attack_power": 1.0,
+    "crit_rating": 2.16612,
+    "expertise_rating": 2.59609,
+    "haste_rating": 1.50122,
+    "hit_rating": 2.2272,
+    "spell_penetration": 0.68363,
+    "strength": 1.10016,
+    "hit_rating_below_cap": 3.83143,
+    "hit_rating_above_cap": 2.2272,
+    "spell_power": 0.0,
+    "spell_damage": 0.0,
+    "spell_healing": 0.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "shaman leveling elemental-open-leveling level 45: talents flipped",
+   "class": "shaman",
+   "mode": "leveling",
+   "entry": "elemental-open-leveling",
+   "level": 45,
+   "forms": [],
+   "values": {
+    "strength": 0.00387,
+    "agility": 0.00246,
+    "stamina": 0.00398,
+    "attack_power": 0.00193,
+    "armor": 0.0004,
+    "mh_weapon_dps": 0.02868,
+    "crit_rating": 0.00704,
+    "hit_rating": 0.0194,
+    "haste_rating": 0.00258,
+    "expertise_rating": 0.00682,
+    "weapon_skill": 0.0054,
+    "defense_rating": 0.00267,
+    "dodge_rating": 0.00168,
+    "parry_rating": 0.0,
+    "intellect": 0.0056,
+    "spirit": 0.01808,
+    "mp5": 0.04475,
+    "spell_power": 0.03575,
+    "oh_weapon_dps": 0.0,
+    "block_rating": 0.0,
+    "block_value": 0.0,
+    "spell_penetration": 0.03864,
+    "nature_damage": 0.02921,
+    "fire_damage": 0.00654,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 0.03575,
+    "spell_healing": 0.0
+   },
+   "build_talents": {
+    "Call of Flame": 2,
+    "Concussion": 4,
+    "Convection": 5,
+    "Elemental Alacrity": 3,
+    "Elemental Focus": 1,
+    "Eye of the Storm": 2,
+    "Improved Lightning Shield": 2,
+    "Mental Dexterity": 3,
+    "Mindfulness": 3,
+    "Shamanistic Focus": 1,
+    "Thundering Strikes": 5,
+    "Tidal Focus": 5
+   },
+   "player_talents": {
+    "Call of Flame": 2,
+    "Concussion": 4,
+    "Convection": 5,
+    "Elemental Alacrity": 3,
+    "Elemental Focus": 1,
+    "Eye of the Storm": 2,
+    "Improved Lightning Shield": 2,
+    "Mental Dexterity": 0,
+    "Mindfulness": 3,
+    "Shamanistic Focus": 1,
+    "Thundering Strikes": 5,
+    "Tidal Focus": 5,
+    "Toughness": 5,
+    "Mental Quickness": 2,
+    "Ancestral Knowledge": 5,
+    "Improved Reincarnation": 2
+   },
+   "expected": {
+    "strength": 0.00387,
+    "agility": 0.00246,
+    "stamina": 0.00455,
+    "attack_power": 0.00193,
+    "armor": 0.0004,
+    "mh_weapon_dps": 0.02868,
+    "crit_rating": 0.00704,
+    "hit_rating": 0.0194,
+    "haste_rating": 0.00258,
+    "expertise_rating": 0.00682,
+    "weapon_skill": 0.0054,
+    "defense_rating": 0.00267,
+    "dodge_rating": 0.00168,
+    "parry_rating": 0.0,
+    "intellect": 0.01477,
+    "spirit": 0.01808,
+    "mp5": 0.04475,
+    "spell_power": 0.03575,
+    "oh_weapon_dps": 0.0,
+    "block_rating": 0.0,
+    "block_value": 0.0,
+    "spell_penetration": 0.03864,
+    "nature_damage": 0.02921,
+    "fire_damage": 0.00654,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 0.03575,
+    "spell_healing": 0.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "shaman raid elemental-raid level 60: talents flipped",
+   "class": "shaman",
+   "mode": "raid",
+   "entry": "elemental-raid",
+   "level": 60,
+   "forms": [],
+   "values": {
+    "crit_rating": 0.73144,
+    "fire_damage": 0.12763,
+    "haste_rating": 1.48022,
+    "hit_rating": 1.57754,
+    "intellect": 0.30072,
+    "nature_damage": 0.87237,
+    "spell_power": 1.0,
+    "spell_penetration": 2.25594,
+    "spirit": 0.07274,
+    "hit_rating_below_cap": 1.29736,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 1.0,
+    "spell_healing": 0.0
+   },
+   "build_talents": {
+    "Concussion": 5,
+    "Convection": 5,
+    "Call of Flame": 3,
+    "Elemental Alacrity": 3,
+    "Elemental Focus": 1,
+    "Eye of the Storm": 3,
+    "Call of Thunder": 1,
+    "Elemental Reach": 1,
+    "Lightning Overload": 3,
+    "Elemental Fury": 5,
+    "Ancestral Knowledge": 3,
+    "Thundering Strikes": 5,
+    "Tidal Focus": 5,
+    "Mindfulness": 3,
+    "Totemic Focus": 5
+   },
+   "player_talents": {
+    "Concussion": 5,
+    "Convection": 5,
+    "Call of Flame": 3,
+    "Elemental Alacrity": 3,
+    "Elemental Focus": 1,
+    "Eye of the Storm": 3,
+    "Call of Thunder": 1,
+    "Elemental Reach": 1,
+    "Lightning Overload": 3,
+    "Elemental Fury": 5,
+    "Ancestral Knowledge": 0,
+    "Thundering Strikes": 5,
+    "Tidal Focus": 5,
+    "Mindfulness": 3,
+    "Totemic Focus": 5,
+    "Toughness": 5,
+    "Mental Quickness": 2,
+    "Mental Dexterity": 3,
+    "Improved Reincarnation": 2
+   },
+   "expected": {
+    "crit_rating": 0.73144,
+    "fire_damage": 0.12763,
+    "haste_rating": 1.48022,
+    "hit_rating": 1.57754,
+    "intellect": 0.5837,
+    "nature_damage": 0.87237,
+    "spell_power": 1.0,
+    "spell_penetration": 2.25594,
+    "spirit": 0.07274,
+    "hit_rating_below_cap": 1.29736,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 1.0,
+    "spell_healing": 0.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "shaman heal resto-raid-healer level 60: talents flipped",
+   "class": "shaman",
+   "mode": "heal",
+   "entry": "resto-raid-healer",
+   "level": 60,
+   "forms": [],
+   "values": {
+    "intellect": 2.6947,
+    "spirit": 1.7489,
+    "mp5": 6.2182,
+    "crit_rating": 1.5775,
+    "haste_rating": 0.0292,
+    "spell_power": 1.0,
+    "spell_damage": 0.0,
+    "spell_healing": 1.0
+   },
+   "build_talents": {
+    "Thundering Strikes": 5,
+    "Ancestral Knowledge": 5,
+    "Totemic Focus": 5,
+    "Mindfulness": 3,
+    "Tidal Focus": 5,
+    "Water Shield": 1,
+    "Ancestral Healing": 3,
+    "Healing Focus": 3,
+    "Mana Tide Totem": 1,
+    "Restorative Totems": 5,
+    "Tidal Mastery": 5,
+    "Healing Way": 3,
+    "Nature's Swiftness": 1,
+    "Purification": 5,
+    "Riptide": 1
+   },
+   "player_talents": {
+    "Thundering Strikes": 5,
+    "Ancestral Knowledge": 0,
+    "Totemic Focus": 5,
+    "Mindfulness": 3,
+    "Tidal Focus": 5,
+    "Water Shield": 1,
+    "Ancestral Healing": 3,
+    "Healing Focus": 3,
+    "Mana Tide Totem": 1,
+    "Restorative Totems": 5,
+    "Tidal Mastery": 5,
+    "Healing Way": 3,
+    "Nature's Swiftness": 1,
+    "Purification": 5,
+    "Riptide": 1,
+    "Toughness": 5,
+    "Mental Quickness": 2,
+    "Mental Dexterity": 3,
+    "Improved Reincarnation": 2
+   },
+   "expected": {
+    "intellect": 2.74973,
+    "spirit": 1.7489,
+    "mp5": 6.2182,
+    "crit_rating": 1.5775,
+    "haste_rating": 0.0292,
+    "spell_power": 1.0,
+    "spell_damage": 0.0,
+    "spell_healing": 1.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "warlock leveling affliction-open-leveling level 45: talents flipped",
+   "class": "warlock",
+   "mode": "leveling",
+   "entry": "affliction-open-leveling",
+   "level": 45,
+   "forms": [],
+   "values": {
+    "intellect": 0.00302,
+    "spirit": 0.02467,
+    "stamina": 0.0023,
+    "spell_power": 0.06976,
+    "armor": 0.00016,
+    "mp5": 0.06518,
+    "wand_dps": 0.0253,
+    "crit_rating": 0.01203,
+    "hit_rating": 0.01371,
+    "haste_rating": 0.00044,
+    "defense_rating": 0.00157,
+    "dodge_rating": 0.00106,
+    "spell_penetration": 0.02468,
+    "shadow_damage": 0.06606,
+    "fire_damage": 0.0037,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 0.06976,
+    "spell_healing": 0.0
+   },
+   "build_talents": {
+    "Amplify Curse": 1,
+    "Improved Bane of Agony": 2,
+    "Improved Corruption": 5,
+    "Improved Drains": 2,
+    "Improved Life Tap": 2,
+    "Malevolence": 5,
+    "Pandemic": 3,
+    "Shadow Mastery": 5,
+    "Siphon Life": 1,
+    "Soul Siphon": 3,
+    "Suppression": 5,
+    "Unholy Power": 1,
+    "Wrack": 1
+   },
+   "player_talents": {
+    "Amplify Curse": 1,
+    "Improved Bane of Agony": 2,
+    "Improved Corruption": 5,
+    "Improved Drains": 2,
+    "Improved Life Tap": 2,
+    "Malevolence": 5,
+    "Pandemic": 3,
+    "Shadow Mastery": 5,
+    "Siphon Life": 1,
+    "Soul Siphon": 3,
+    "Suppression": 5,
+    "Unholy Power": 1,
+    "Wrack": 1,
+    "Demonic Embrace": 5,
+    "Fel Vitality": 3
+   },
+   "expected": {
+    "intellect": 0.00302,
+    "spirit": 0.02467,
+    "stamina": 0.00264,
+    "spell_power": 0.06976,
+    "armor": 0.00016,
+    "mp5": 0.06518,
+    "wand_dps": 0.0253,
+    "crit_rating": 0.01203,
+    "hit_rating": 0.01371,
+    "haste_rating": 0.00044,
+    "defense_rating": 0.00157,
+    "dodge_rating": 0.00106,
+    "spell_penetration": 0.02468,
+    "shadow_damage": 0.06606,
+    "fire_damage": 0.0037,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 0.06976,
+    "spell_healing": 0.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "warlock raid opt-affliction-raid-raid-dps level 60: talents flipped",
+   "class": "warlock",
+   "mode": "raid",
+   "entry": "opt-affliction-raid-raid-dps",
+   "level": 60,
+   "forms": [],
+   "values": {
+    "crit_rating": 0.97638,
+    "fire_damage": 0.10275,
+    "haste_rating": 0.75421,
+    "hit_rating": 1.28846,
+    "intellect": 0.33127,
+    "shadow_damage": 0.89711,
+    "spell_power": 1.0,
+    "spell_penetration": 1.28373,
+    "spirit": 0.10289,
+    "hit_rating_below_cap": 1.42058,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 1.0,
+    "spell_healing": 0.0
+   },
+   "build_talents": {
+    "Suppression": 5,
+    "Improved Corruption": 5,
+    "Improved Life Tap": 2,
+    "Improved Bane of Agony": 2,
+    "Pandemic": 3,
+    "Amplify Curse": 1,
+    "Malevolence": 5,
+    "Nightfall": 2,
+    "Shadow Mastery": 5,
+    "Bane": 5,
+    "Improved Shadow Bolt": 5,
+    "Cataclysm": 3,
+    "Ruin": 5,
+    "Agonizing Flames": 3
+   },
+   "player_talents": {
+    "Suppression": 5,
+    "Improved Corruption": 5,
+    "Improved Life Tap": 2,
+    "Improved Bane of Agony": 2,
+    "Pandemic": 3,
+    "Amplify Curse": 1,
+    "Malevolence": 5,
+    "Nightfall": 2,
+    "Shadow Mastery": 5,
+    "Bane": 5,
+    "Improved Shadow Bolt": 5,
+    "Cataclysm": 3,
+    "Ruin": 5,
+    "Agonizing Flames": 3,
+    "Demonic Embrace": 5,
+    "Fel Vitality": 3
+   },
+   "expected": {
+    "crit_rating": 0.97638,
+    "fire_damage": 0.10275,
+    "haste_rating": 0.75421,
+    "hit_rating": 1.28846,
+    "intellect": 0.33127,
+    "shadow_damage": 0.89711,
+    "spell_power": 1.0,
+    "spell_penetration": 1.28373,
+    "spirit": 0.10289,
+    "hit_rating_below_cap": 1.42058,
+    "hit_rating_above_cap": 0.0,
+    "spell_damage": 1.0,
+    "spell_healing": 0.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "warrior leveling arms-open-leveling level 45: talents flipped",
+   "class": "warrior",
+   "mode": "leveling",
+   "entry": "arms-open-leveling",
+   "level": 45,
+   "forms": [],
+   "values": {
+    "strength": 0.02423,
+    "agility": 0.01578,
+    "stamina": 0.00351,
+    "attack_power": 0.01211,
+    "armor": 0.00032,
+    "mh_weapon_dps": 0.15601,
+    "crit_rating": 0.01486,
+    "hit_rating": 0.03255,
+    "haste_rating": 0.01113,
+    "expertise_rating": 0.04789,
+    "weapon_skill": 0.08275,
+    "defense_rating": 0.00443,
+    "dodge_rating": 0.00254,
+    "parry_rating": 0.00204,
+    "oh_weapon_dps": 0.0,
+    "block_rating": 0.0,
+    "block_value": 0.0,
+    "hit_rating_above_cap": 0.0,
+    "spell_power": 0.0,
+    "spell_damage": 0.0,
+    "spell_healing": 0.0
+   },
+   "build_talents": {
+    "Anger Management": 1,
+    "Bloodthrill": 2,
+    "Cruelty": 5,
+    "Deep Wounds": 3,
+    "Deflection": 2,
+    "Impale": 1,
+    "Improved Charge": 2,
+    "Improved Overpower": 2,
+    "Improved Rend": 3,
+    "Improved Slam": 2,
+    "Improved Tactical Mastery": 3,
+    "Mortal Strike": 1,
+    "Sweeping Strikes": 1,
+    "Two-Handed Weapon Specialization": 3,
+    "Weaponmaster": 5
+   },
+   "player_talents": {
+    "Anger Management": 1,
+    "Bloodthrill": 2,
+    "Cruelty": 5,
+    "Deep Wounds": 3,
+    "Deflection": 2,
+    "Impale": 1,
+    "Improved Charge": 2,
+    "Improved Overpower": 2,
+    "Improved Rend": 3,
+    "Improved Slam": 2,
+    "Improved Tactical Mastery": 3,
+    "Mortal Strike": 1,
+    "Sweeping Strikes": 1,
+    "Two-Handed Weapon Specialization": 3,
+    "Weaponmaster": 5,
+    "Dual Wield Specialization": 5
+   },
+   "expected": {
+    "strength": 0.02423,
+    "agility": 0.01578,
+    "stamina": 0.00351,
+    "attack_power": 0.01211,
+    "armor": 0.00032,
+    "mh_weapon_dps": 0.15601,
+    "crit_rating": 0.01486,
+    "hit_rating": 0.03255,
+    "haste_rating": 0.01113,
+    "expertise_rating": 0.04789,
+    "weapon_skill": 0.08275,
+    "defense_rating": 0.00443,
+    "dodge_rating": 0.00254,
+    "parry_rating": 0.00204,
+    "oh_weapon_dps": 0.0,
+    "block_rating": 0.0,
+    "block_value": 0.0,
+    "hit_rating_above_cap": 0.0,
+    "spell_power": 0.0,
+    "spell_damage": 0.0,
+    "spell_healing": 0.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "warrior raid arms-battle-raid level 60: talents flipped",
+   "class": "warrior",
+   "mode": "raid",
+   "entry": "arms-battle-raid",
+   "level": 60,
+   "forms": [],
+   "values": {
+    "mh_weapon_dps": 17.4478,
+    "agility": 1.70593,
+    "armor_penetration": 0.44015,
+    "attack_power": 1.0,
+    "crit_rating": 2.28145,
+    "expertise_rating": 2.21759,
+    "haste_rating": 1.22715,
+    "strength": 2.2,
+    "hit_rating_below_cap": 4.47801,
+    "hit_rating_above_cap": 0.0,
+    "spell_power": 0.0,
+    "spell_damage": 0.0,
+    "spell_healing": 0.0
+   },
+   "build_talents": {
+    "Deflection": 5,
+    "Improved Rend": 3,
+    "Improved Overpower": 2,
+    "Improved Tactical Mastery": 3,
+    "Anger Management": 1,
+    "Deep Wounds": 3,
+    "Impale": 2,
+    "Spearing Strike": 1,
+    "Two-Handed Weapon Specialization": 3,
+    "Bloodthrill": 2,
+    "Sweeping Strikes": 1,
+    "Weaponmaster": 5,
+    "Improved Slam": 2,
+    "Mortal Strike": 1,
+    "Booming Voice": 5,
+    "Cruelty": 5,
+    "Unbridled Wrath": 5,
+    "Improved Execute": 2
+   },
+   "player_talents": {
+    "Deflection": 5,
+    "Improved Rend": 3,
+    "Improved Overpower": 2,
+    "Improved Tactical Mastery": 3,
+    "Anger Management": 1,
+    "Deep Wounds": 3,
+    "Impale": 2,
+    "Spearing Strike": 1,
+    "Two-Handed Weapon Specialization": 3,
+    "Bloodthrill": 2,
+    "Sweeping Strikes": 1,
+    "Weaponmaster": 5,
+    "Improved Slam": 2,
+    "Mortal Strike": 1,
+    "Booming Voice": 5,
+    "Cruelty": 5,
+    "Unbridled Wrath": 5,
+    "Improved Execute": 2,
+    "Dual Wield Specialization": 5
+   },
+   "expected": {
+    "mh_weapon_dps": 17.4478,
+    "agility": 1.70593,
+    "armor_penetration": 0.44015,
+    "attack_power": 1.0,
+    "crit_rating": 2.28145,
+    "expertise_rating": 2.21759,
+    "haste_rating": 1.22715,
+    "strength": 2.2,
+    "hit_rating_below_cap": 4.47801,
+    "hit_rating_above_cap": 0.0,
+    "spell_power": 0.0,
+    "spell_damage": 0.0,
+    "spell_healing": 0.0
+   },
+   "tolerance": 1e-06
+  },
+  {
+   "name": "warrior tank protection-ml-tank level 60: talents flipped",
+   "class": "warrior",
+   "mode": "tank",
+   "entry": "protection-ml-tank",
+   "level": 60,
+   "forms": [],
+   "values": {
+    "strength": 0.49895,
+    "agility": 0.72364,
+    "stamina": 1.0,
+    "intellect": 0.0,
+    "spirit": 0.0,
+    "spell_power": 0.0,
+    "attack_power": 0.21577,
+    "hit_rating": 0.75171,
+    "crit_rating": 0.4171,
+    "haste_rating": 0.27072,
+    "expertise_rating": 0.74502,
+    "defense_rating": 0.61097,
+    "block_rating": 0.00525,
+    "block_value": 0.48583,
+    "dodge_rating": 0.41304,
+    "parry_rating": 0.34024,
+    "armor": 0.05575,
+    "mp5": 0.0,
+    "mh_weapon_dps": 1.21196,
+    "spell_damage": 0.0,
+    "spell_healing": 0.0
+   },
+   "build_talents": {
+    "Improved Heroic Strike": 3,
+    "Deflection": 5,
+    "Improved Rend": 3,
+    "Improved Overpower": 1,
+    "Deep Wounds": 3,
+    "Impale": 2,
+    "Cruelty": 3,
+    "Shield Specialization": 5,
+    "Anticipation": 5,
+    "Improved Revenge": 3,
+    "Master of Defense": 2,
+    "Defiance": 3,
+    "Improved Sunder Armor": 3,
+    "Concussion Blow": 1,
+    "Focused Rage": 3,
+    "Bastion": 5,
+    "Shield Slam": 1
+   },
+   "player_talents": {
+    "Improved Heroic Strike": 3,
+    "Deflection": 5,
+    "Improved Rend": 3,
+    "Improved Overpower": 1,
+    "Deep Wounds": 3,
+    "Impale": 2,
+    "Cruelty": 3,
+    "Shield Specialization": 5,
+    "Anticipation": 5,
+    "Improved Revenge": 3,
+    "Master of Defense": 2,
+    "Defiance": 3,
+    "Improved Sunder Armor": 3,
+    "Concussion Blow": 1,
+    "Focused Rage": 3,
+    "Bastion": 5,
+    "Shield Slam": 1,
+    "Dual Wield Specialization": 5
+   },
+   "expected": {
+    "strength": 0.49895,
+    "agility": 0.72364,
+    "stamina": 1.0,
+    "intellect": 0.0,
+    "spirit": 0.0,
+    "spell_power": 0.0,
+    "attack_power": 0.21577,
+    "hit_rating": 0.75171,
+    "crit_rating": 0.4171,
+    "haste_rating": 0.27072,
+    "expertise_rating": 0.74502,
+    "defense_rating": 0.61097,
+    "block_rating": 0.00525,
+    "block_value": 0.48583,
+    "dodge_rating": 0.41304,
+    "parry_rating": 0.34024,
+    "armor": 0.05575,
+    "mp5": 0.0,
+    "mh_weapon_dps": 1.21196,
+    "spell_damage": 0.0,
+    "spell_healing": 0.0
+   },
+   "tolerance": 1e-06
   }
  ]
 }

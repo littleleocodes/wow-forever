@@ -108,6 +108,181 @@ def talents_of(b):
     return {n: k for lst in (b or {}).get("allocation", {}).values() for n, k in lst if k} if b else None
 
 
+# ----------------------------------------------------------------------------------------------------------------------------------
+# Talent transforms (2026-11-14, user: "Can we make it read talents exactly and take those talents into consideration?", then "yes,
+# build the talent data side for GearCheck"). The values are measured on one build per entry (its talents at each level are in the
+# entry); a player's own talents can differ in exactly the talents that change what a stat is worth. Those talents, by class, with
+# their per-rank numbers read from each rank's own tooltip (forever-talents/<class>.json), so a patch that changes a number changes
+# the table. Kinds:
+#   stat_pct    +p% of a stat (Lightning Reflexes: Agility): every point of the stat on gear is (1 + p) points
+#   health_pct  +p% total health (Survivalist): Stamina's value, which is its health, scales the same way
+#   mana_pct    +p% maximum mana (Fel Vitality): Intellect's own value scales with it (the lab's Intellect is mostly mana)
+#   armor_pct   +p% armor from items (Toughness, Moonkin Form): armor's value scales
+#   offhand_pct +p% off-hand damage (Predator's Edge, Dual Wield Specialization): the off-hand weapon's DPS value scales
+#   convert     p% of stat F becomes stat T (Careful Aim: Intellect to attack power): F gains p x T's value per point of F
+# A transform with "form" applies only to an entry played in that form (the entry's "forms": druids). Left out: flat bonuses (Predatory
+# Strikes, Demonic Knowledge), temporary procs (Spirit Tap, Dark Inspiration), weapon-type talents (Weaponmaster, Hack and Slash) and
+# crit or hit talents (they move other stats' values only second-order). talent_adjust is the reference implementation the add-on
+# ports; talent_vectors in the file are its results.
+TALENT_TRANSFORMS = {
+    "druid": [("Heart of the Wild", "stat_pct", {"stat": "intellect"}, r"Intellect by (\d+)%"),
+              ("Heart of the Wild", "stat_pct", {"stat": "stamina", "form": "bear"}, r"Stamina is increased by (\d+)%"),
+              ("Heart of the Wild", "stat_pct", {"stat": "strength", "form": "cat"}, r"Strength is increased by (\d+)%"),
+              ("Living Spirit", "stat_pct", {"stat": "spirit"}, r"Spirit by (\d+)%"),
+              ("Natural Instinct", "convert", {"from": "intellect", "to": "spell_healing"}, r"spell healing by (\d+)% of your Intellect"),
+              ("Moonkin Form", "armor_pct", {"form": "moonkin"}, r"Armor contribution from items by (\d+)%")],
+    "hunter": [("Lightning Reflexes", "stat_pct", {"stat": "agility"}, r"Agility by (\d+)%"),
+               ("Careful Aim", "convert", {"from": "intellect", "to": "attack_power"}, r"Attack Power by (\d+)% of your Intellect"),
+               ("Survivalist", "health_pct", {}, r"Health by (\d+)%"),
+               ("Predator's Edge", "offhand_pct", {}, r"Off Hand weapon damage by (\d+)%")],
+    "mage": [("Arcane Mind", "stat_pct", {"stat": "intellect"}, r"Intellect by (\d+)%"),
+             ("Arcane Resilience", "convert", {"from": "intellect", "to": "armor"}, r"Armor by an amount equal to (\d+)% of your Intellect")],
+    "paladin": [("Divine Strength", "stat_pct", {"stat": "strength"}, r"Strength by (\d+)%"),
+                ("Divine Intellect", "stat_pct", {"stat": "intellect"}, r"Intellect by (\d+)%"),
+                ("Toughness", "armor_pct", {}, r"armor value from items by (\d+)%"),
+                ("Champion of the Light", "convert", {"from": "intellect", "to": "spell_damage"}, r"spell damage by up to (\d+)% of your Intellect")],
+    "priest": [("Mental Strength", "stat_pct", {"stat": "intellect"}, r"Intellect by (\d+)%"),
+               ("Spiritual Guidance", "convert", {"from": "spirit", "to": "spell_healing"}, r"spell healing by up to (\d+)% of your total Spirit"),
+               ("Spiritual Guidance", "convert", {"from": "spirit", "to": "spell_damage"}, r"spell damage by up to (\d+)% of your total Spirit")],
+    "rogue": [("Dual Wield Specialization", "offhand_pct", {}, r"off-hand weapon by (\d+)%")],
+    "shaman": [("Ancestral Knowledge", "stat_pct", {"stat": "intellect"}, r"Intellect by (\d+)%"),
+               ("Toughness", "stat_pct", {"stat": "stamina"}, r"Stamina by (\d+)%"),
+               ("Mental Quickness", "convert", {"from": "intellect", "to": "spell_power"}, r"spell damage and healing by up to (\d+)% of your Intellect"),
+               ("Mental Dexterity", "convert", {"from": "intellect", "to": "attack_power"}, r"Attack Power by an amount equal to (\d+)% of your Intellect"),
+               ("Improved Reincarnation", "health_pct", {}, r"maximum health by (\d+)%")],
+    "warlock": [("Demonic Embrace", "stat_pct", {"stat": "stamina"}, r"Stamina by (\d+)%"),
+                ("Fel Vitality", "mana_pct", {}, r"your maximum Mana by (\d+)%")],
+    "warrior": [("Dual Wield Specialization", "offhand_pct", {}, r"off-hand weapon by (\d+)%")],
+}
+
+
+def talent_transforms(cls):
+    """[{talent, kind, per_rank: [%...], stat|from|to|form}] for the class, each rank's number read from its own tooltip; a talent
+    the current trees lack or whose wording no longer matches is left out with a warning."""
+    import re
+    trees = json.loads((DATA / "forever-talents" / f"{cls}.json").read_text(encoding="utf-8"))["trees"]
+    by = {t["name"]: t for tr in trees for t in tr["talents"]}
+    out = []
+    for name, kind, extra, pat in TALENT_TRANSFORMS.get(cls, []):
+        t = by.get(name)
+        if t is None:
+            print(f"WARNING: {cls} talent transform: {name} is not in the trees")
+            continue
+        nums = []
+        for rk in t.get("ranks") or []:
+            txt = rk if isinstance(rk, str) else (rk or {}).get("text") or ""
+            m = re.search(pat, txt)
+            nums.append(float(m.group(1)) if m else None)
+        if not nums or None in nums or any(b < a for a, b in zip(nums, nums[1:])):
+            print(f"WARNING: {cls} talent transform: {name} ({kind}) not read from its tooltips: {nums}")
+            continue
+        out.append(dict({"talent": name, "kind": kind, "per_rank": nums}, **extra))
+    return out
+
+
+def entry_forms(cls, mode, e):
+    """The druid forms an entry is played in (its values were measured there): cat, bear or moonkin; [] for every other class."""
+    if cls != "druid":
+        return []
+    rot, spec = (e.get("rotation") or ""), (e.get("spec") or "")
+    if mode == "tank" or "bear" in spec.lower():
+        return ["bear"]
+    if "cat" in rot or "Feral" in spec:
+        return ["cat"]
+    if "balance" in rot or "Balance" in spec:
+        return ["moonkin"]
+    return []
+
+
+def talent_pct(tr, ranks):
+    """The transform's fraction for a talent rank map (rank 0 or absent: 0; a rank above the table: its last number)."""
+    k = int((ranks or {}).get(tr["talent"], 0) or 0)
+    return tr["per_rank"][min(k, len(tr["per_rank"])) - 1] / 100.0 if k > 0 else 0.0
+
+
+def talent_adjust(values, transforms, forms, build_talents, player_talents):
+    """Values measured with build_talents, re-stated for player_talents (first order). Per stat S with stat_pct p (summed over its
+    transforms) and conversions S -> T at c: the build's conversion part, (1 + p_build) x c_build x v[T], is taken out, the rest
+    (S's own worth) scales by (1 + p_player) / (1 + p_build), and the player's conversion part, (1 + p_player) x c_player x v[T], is
+    added back, with v[T] as measured. Then Stamina by health_pct, Intellect's own worth by mana_pct, armor by armor_pct and the
+    off-hand weapon's DPS by offhand_pct, each (1 + player) / (1 + build). Values stay at 0 or above."""
+    live = [tr for tr in transforms if not tr.get("form") or tr["form"] in (forms or [])]
+    v = dict(values)
+    agg = {}
+    for tr in live:
+        pb, pp = talent_pct(tr, build_talents), talent_pct(tr, player_talents)
+        if tr["kind"] == "stat_pct":
+            a = agg.setdefault(("stat", tr["stat"]), [0.0, 0.0])
+            a[0] += pb
+            a[1] += pp
+        elif tr["kind"] in ("health_pct", "mana_pct", "armor_pct", "offhand_pct"):
+            a = agg.setdefault((tr["kind"], None), [0.0, 0.0])
+            a[0] += pb
+            a[1] += pp
+    stats = {tr["stat"] for tr in live if tr["kind"] == "stat_pct"} | {tr["from"] for tr in live if tr["kind"] == "convert"}
+    for s in sorted(stats):
+        if s not in values:
+            continue
+        mb, mp = agg.get(("stat", s), [0.0, 0.0])
+        conv = [tr for tr in live if tr["kind"] == "convert" and tr["from"] == s]
+        cb = sum(talent_pct(tr, build_talents) * values.get(tr["to"], 0.0) for tr in conv)
+        cp = sum(talent_pct(tr, player_talents) * values.get(tr["to"], 0.0) for tr in conv)
+        own = values[s] - (1 + mb) * cb
+        if s == "intellect" and ("mana_pct", None) in agg:
+            nb, npl = agg[("mana_pct", None)]
+            own *= (1 + npl) / (1 + nb)
+        v[s] = own * (1 + mp) / (1 + mb) + (1 + mp) * cp
+    for kind, key in (("health_pct", "stamina"), ("armor_pct", "armor"), ("offhand_pct", "oh_weapon_dps")):
+        if (kind, None) in agg and key in v:
+            b, p = agg[(kind, None)]
+            v[key] = v[key] * (1 + p) / (1 + b)
+    return {k: r(max(0.0, x)) for k, x in v.items()}
+
+
+def talent_vectors(o):
+    """Cases the add-on's port of talent_adjust must reproduce (within TOLERANCE): one per class with transforms, from a real entry's
+    values and talents; the player's talents are the entry's with the class's transform talents moved (dropped to 0, or set to the
+    top rank), plus a guildmate's melee Survival hunter (2026-11-14) as the hunter's case."""
+    out = []
+    hyrax = {"Lethal Attacks": 5, "Careful Aim": 1, "Improved Tracking": 5, "Savage Strikes": 2, "Survivalist": 3, "Clever Traps": 2,
+             "Surefooted": 3, "Predator's Edge": 5, "Resourcefulness": 2, "Expose Prey": 2, "Survivalist's Discipline": 2, "Strider Kick": 1,
+             "Lightning Reflexes": 5}
+    for cls in CLASSES:
+        trs = o["talent_transforms"].get(cls) or []
+        if not trs:
+            continue
+        c = o["classes"][cls]
+        for mode in ("leveling", "raid", "heal", "tank"):
+            ents = c.get(mode) or []
+            ents = [ents] if isinstance(ents, dict) else ents
+            if cls == "hunter" and mode == "leveling":   # the guildmate's case wants the melee Survival entry
+                ents = sorted(ents, key=lambda e: "survival-open" not in (e.get("build") or ""))
+            for e in ents:
+                if mode == "leveling":
+                    lv = e.get("levels", {}).get("45") or next(iter(e.get("levels", {}).values()), None)
+                    if not lv:
+                        continue
+                    values, talents, level = lv["gear"][0]["values"], lv.get("talents") or {}, 45
+                else:
+                    values, talents, level = e.get("values") or {}, e.get("talents") or {}, 60
+                names = {tr["talent"] for tr in trs if not tr.get("form") or tr["form"] in e.get("forms", [])}
+                if not values or not names:
+                    continue
+                player = dict(talents)
+                for n in names:   # flip each transform talent: taken -> 0, missing -> its top rank
+                    top = len(next(tr for tr in trs if tr["talent"] == n)["per_rank"])
+                    player[n] = 0 if talents.get(n) else top
+                if cls == "hunter" and mode == "leveling" and "survival" in e.get("build", ""):
+                    player = hyrax
+                exp = talent_adjust(values, trs, e.get("forms", []), talents, player)
+                out.append({"name": f"{cls} {mode} {e.get('build') or e.get('spec')} level {level}: talents flipped" if player is not hyrax
+                            else "hunter melee Survival at 45 with a guildmate's level-47 talents", "class": cls, "mode": mode,
+                            "entry": e.get("build"), "level": level, "forms": e.get("forms", []), "values": values,
+                            "build_talents": talents, "player_talents": player, "expected": exp, "tolerance": TOLERANCE})
+                break
+    return out
+
+
 def builds_of(cls):
     return {b["id"]: b for b in json.loads((ROOT / cls / "research" / "talents" / "forever" / "proposed-builds.json").read_text(encoding="utf-8"))["builds"]}
 
@@ -618,6 +793,24 @@ def main():
     o["status"] = ("preliminary: " + "; ".join(x for x in parts if x)) if any(parts) else (
         "complete: two gear points per leveling level (the lab's standard gear and each level's best Forever set), raid, heal and tank values")
     o["test_vectors"] = test_vectors(o)
+    # talent transforms (2026-11-14): the add-on re-states each entry's values for the player's own talent ranks
+    for cls, c in o["classes"].items():
+        for mode in ("leveling", "raid", "heal", "tank"):
+            ents = c.get(mode) or []
+            for e in ([ents] if isinstance(ents, dict) else ents):
+                e["forms"] = entry_forms(cls, mode, e)
+    o["talent_transforms"] = {cls: talent_transforms(cls) for cls in CLASSES}
+    o["talent_note"] = (
+        "Talents that change what a stat is worth, per class (talent_transforms: kind, per_rank percentages read from each rank's tooltip, "
+        "stat / from / to / form). Each entry's values were measured with its own talents (leveling: levels.<L>.talents; raid, heal, tank: "
+        "talents); re-state them for the player's own ranks before scoring. Per stat S: p = sum of S's stat_pct, c = S's convert "
+        "fractions (S -> T); own = v[S] - (1 + p_build) x sum(c_build x v[T]); v'[S] = own x (1 + p_player) / (1 + p_build) + (1 + "
+        "p_player) x sum(c_player x v[T]); Intellect's own part also x (1 + mana_player) / (1 + mana_build). Then v'[stamina] x (1 + "
+        "health_player) / (1 + health_build), v'[armor] x armor ratio, v'[oh_weapon_dps] x off-hand ratio. A transform with form "
+        "applies only to an entry whose forms list it. Fraction for rank k: per_rank[k - 1] / 100 (0 at rank 0; the last number above "
+        "the table). Use v[T] as measured. Clamp at 0. talent_vectors: reproduce expected within tolerance. A first-order "
+        "re-statement, not a new measurement.")
+    o["talent_vectors"] = talent_vectors(o)
     OUT.mkdir(exist_ok=True)
     p = OUT / "forever-gear-values.json"
     p.write_text(json.dumps(o, indent=1) + "\n", encoding="utf-8", newline="\n")
