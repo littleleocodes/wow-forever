@@ -347,15 +347,11 @@ def steps_html(C, lv):
     for r in (later[:4] if tl is None else []):
         head, sub = upgrade_line(r, lv, why=False)
         items.append(info(f"At {r['get_at']}: {KIND[r['kind']].lower()} {head}", sub))
-    steps.append(("On the road", "Leave the guide for", items) if tl is not None else ("Next levels", "Work toward", items))
+    steps.append(("Off the guide", "Worth leaving the guide for", items) if tl is not None else ("Next levels", "Work toward", items))
 
     out, road, n = [], "", 0
     for where, title, its in steps:
         if not its:
-            continue
-        if where in ("On the road", "Next levels"):   # the road list: the On the road tab (2026-11-10, user: "make some things into tabs")
-            road = (f'<section class="card step"><h3><span class="where">{esc(where)}</span>{esc(title)}</h3>'
-                    f'<ul class="list">{"".join(its)}</ul></section>')
             continue
         n += 1
         out.append(f'<section class="card step"><h3><span class="num">{n}</span><span class="where">{esc(where)}</span>{esc(title)}</h3>'
@@ -445,7 +441,7 @@ def render(cfg, C):
         if dg["run"] > lv + 3 and dg.get("verdict") != "skip":
             runs_at.setdefault(dg["run"], []).append(dg)
             by_level.setdefault(dg["run"], [])
-    for r in tl or []:   # past the road list: the guide-leaving moments at their level
+    for r in tl or []:   # past the Town step: what is worth leaving the guide for, at its level (plan.LEAVE_GUIDE)
         if r["level"] > lv + 4:
             road_at.setdefault(r["level"], []).append(r)
             by_level.setdefault(r["level"], [])
@@ -464,7 +460,7 @@ def render(cfg, C):
                            else "your guide picks up its quests")
                         + "".join(f"<br>Drop: {md(x)}" for x in dg["drops"]) + "</span></li>")
         for r in road_at.get(L, []):
-            rows.append(f'<li><span class="tag">{"Dungeon" if r["kind"] == "dungeon" else "Detour"}</span> <strong>{esc(r["title"])}</strong>'
+            rows.append(f'<li><span class="tag">{"Dungeon" if r["kind"] == "dungeon" else "Catch up" if r["kind"] == "catchup" else "Off the guide"}</span> <strong>{esc(r["title"])}</strong>'
                         f'<span class="sub">{esc(r["tag"])} · {md(r["facts"])}</span></li>')
         ahead.append(f'<div class="lvl"><div class="lvl-n">{L}</div><ul>{"".join(rows)}</ul></div>')
 
@@ -495,8 +491,9 @@ TEMPLATE = """<title>{title}</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
 <style>
 /* Layout: a sticky character bar with tabs (2026-11-10, user: "make some things into tabs"): Town (the errands in the order you walk
-   them), On the road (when to leave the guide, then the plan past the next few levels), Fight (bars and what to press), Gear & gold
-   (the drop check and the mount fund), Legacy (points to spend, the order, the next challenges). Each tab is a #name link. */
+   them, with what is worth leaving the guide for), Fight (bars and what to press), Gear & gold (the drop check, the mount fund and the
+   plan past the next few levels), Legacy (points to spend, the order, the next challenges). Each tab is a #name link. The On the road
+   tab went on 2026-11-15 (user: RestedXP's route is the leveling path; plan.LEAVE_GUIDE). */
 :root {{
   --bg: #edf1f4; --panel: #ffffff; --ink: #16212b; --muted: #5b6a78; --line: #d3dbe2; --accent: #1d6aa3; --accent-soft: #e3eef7;
   --q1: #3d4853; --q2: #1d7f10; --q3: #0a5fbd; --q4: #7a2fc0; --q5: #b85a00;
@@ -621,7 +618,6 @@ footer {{ color: var(--muted); font-size: .8rem; margin-top: 28px; }}
   <span class="stat"><b>Keep for training</b>{reserve}</span>
 </div><div class="wrap"><nav class="tabs" role="tablist" aria-label="Checklist sections">
   <button class="tab" role="tab" id="tab-town" aria-controls="town" aria-selected="true">Town</button>
-  <button class="tab" role="tab" id="tab-road" aria-controls="road" aria-selected="false" tabindex="-1">On the road</button>
   <button class="tab" role="tab" id="tab-fight" aria-controls="fight" aria-selected="false" tabindex="-1">Fight</button>
   <button class="tab" role="tab" id="tab-gear" aria-controls="gear" aria-selected="false" tabindex="-1">Gear &amp; gold</button>
   <button class="tab" role="tab" id="tab-legacy" aria-controls="legacy" aria-selected="false" tabindex="-1">Legacy{legacy_badge}</button>
@@ -631,12 +627,6 @@ footer {{ color: var(--muted); font-size: .8rem; margin-top: 28px; }}
   {changes}
   <h2>Your steps this visit</h2>
   <div class="steps">{town}</div>
-  </section>
-  <section class="panel" id="road" role="tabpanel" aria-labelledby="tab-road" hidden>
-  <h2>When to leave the guide</h2>
-  {road}
-  <h2>Coming up</h2>
-  <div class="ahead">{ahead}</div>
   </section>
   <section class="panel" id="fight" role="tabpanel" aria-labelledby="tab-fight" hidden>
   <h2>Your fight at level {lv}</h2>
@@ -657,6 +647,8 @@ footer {{ color: var(--muted); font-size: .8rem; margin-top: 28px; }}
         <p class="small">About {by40} by level {mlevel} of the {mount} the mount costs: {mount_at}. Gear gets {share} of each level's income after training; the plan spends {gear40} on gear before {mlevel} and reaches 60 with about {at60}.</p>
       </section>
   </div>
+  <h2>Coming up</h2>
+  <div class="ahead">{ahead}</div>
   </section>
   <section class="panel" id="legacy" role="tabpanel" aria-labelledby="tab-legacy" hidden>
   <h2>Legacy talents</h2>

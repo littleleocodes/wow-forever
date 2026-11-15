@@ -4,8 +4,8 @@
    "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/statistics?namespace=profile-forever-us"
   }
  },
- "health": 832,
- "power": 1937,
+ "health": 833,
+ "power": 2029,
  "power_type": {
   "key": {
    "href": "https://us.api.blizzard.com/data/wow/power-type/0?namespace=static-1.60.1_70399-forever-us"
@@ -19,24 +19,24 @@
   "rating_normalized": 0
  },
  "strength": {
-  "base": 19,
-  "effective": 19
+  "base": 20,
+  "effective": 20
  },
  "agility": {
-  "base": 29,
-  "effective": 29
+  "base": 30,
+  "effective": 30
  },
  "intellect": {
-  "base": 70,
-  "effective": 97
+  "base": 73,
+  "effective": 100
  },
  "stamina": {
-  "base": 30,
-  "effective": 58
+  "base": 31,
+  "effective": 54
  },
  "melee_crit": {
   "rating_bonus": 0.0,
-  "value": 0.20680039,
+  "value": 0.36100048,
   "rating_normalized": 0
  },
  "melee_haste": {
@@ -64,31 +64,31 @@
   "value": 0.0,
   "rating_normalized": 0
  },
- "attack_power": 17,
- "main_hand_damage_min": 23.792858,
- "main_hand_damage_max": 41.79286,
+ "attack_power": 10,
+ "main_hand_damage_min": 22.642857,
+ "main_hand_damage_max": 40.642857,
  "main_hand_speed": 2.3,
- "main_hand_dps": 14.257765,
+ "main_hand_dps": 13.757764,
  "off_hand_damage_min": 0.0,
  "off_hand_damage_max": 0.0,
  "off_hand_speed": 2.0,
  "off_hand_dps": 0.0,
- "spell_power": 90,
+ "spell_power": 94,
  "spell_penetration": 0,
  "spell_crit": {
   "rating_bonus": 0.0,
-  "value": 3.5465002,
+  "value": 3.4699998,
   "rating_normalized": 0
  },
- "mana_regen": 76.0,
+ "mana_regen": 78.0,
  "mana_regen_combat": 0.0,
  "armor": {
   "base": 0,
-  "effective": 332
+  "effective": 334
  },
  "dodge": {
   "rating_bonus": 0.0,
-  "value": 4.5668,
+  "value": 4.721,
   "rating_normalized": 0
  },
  "parry": {
@@ -103,7 +103,7 @@
  },
  "ranged_crit": {
   "rating_bonus": 0.0,
-  "value": 4.9668,
+  "value": 5.0810003,
   "rating_normalized": 0
  },
  "ranged_haste": {
@@ -126,12 +126,12 @@
   "slug": "arcea-fizzlegan"
  },
  "spirit": {
-  "base": 64,
-  "effective": 72
+  "base": 68,
+  "effective": 76
  },
  "defense": {
-  "base": 144,
-  "effective": 144
+  "base": 158,
+  "effective": 158
  },
  "fire_resistance": {
   "base": 0,
@@ -154,13 +154,13 @@
   "effective": 0
  },
  "movement_speed": 100.0,
- "ranged_attack_power": 8,
- "ranged_damage_min": 23.0,
- "ranged_damage_max": 44.0,
+ "ranged_attack_power": 0,
+ "ranged_damage_min": 28.75,
+ "ranged_damage_max": 55.0,
  "expertise": 0.0,
  "off_hand_expertise": 0.0,
  "armor_penetration": 0.0,
- "spell_healing": 90,
+ "spell_healing": 94,
  "melee_hit": {
   "rating_bonus": 0.0,
   "value": 0.0,
@@ -178,7 +178,7 @@
  },
  "spell_hit": {
   "rating_bonus": 0.0,
-  "value": 0.0,
+  "value": 4.0,
   "rating_normalized": 0
  }
 }

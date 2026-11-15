@@ -1159,13 +1159,13 @@
     "child_criteria": [
      {
       "id": 123352,
-      "amount": 0,
-      "is_completed": false
+      "amount": 1,
+      "is_completed": true
      },
      {
       "id": 123353,
-      "amount": 0,
-      "is_completed": false
+      "amount": 1,
+      "is_completed": true
      },
      {
       "id": 123354,
@@ -1194,8 +1194,8 @@
      },
      {
       "id": 123359,
-      "amount": 0,
-      "is_completed": false
+      "amount": 1,
+      "is_completed": true
      },
      {
       "id": 123360,
@@ -1240,8 +1240,8 @@
      },
      {
       "id": 123366,
-      "amount": 0,
-      "is_completed": false
+      "amount": 1,
+      "is_completed": true
      },
      {
       "id": 123367,
@@ -1255,8 +1255,8 @@
      },
      {
       "id": 123369,
-      "amount": 0,
-      "is_completed": false
+      "amount": 1,
+      "is_completed": true
      },
      {
       "id": 123370,
@@ -1280,8 +1280,8 @@
      },
      {
       "id": 123374,
-      "amount": 0,
-      "is_completed": false
+      "amount": 1,
+      "is_completed": true
      },
      {
       "id": 123375,
@@ -1295,8 +1295,8 @@
      },
      {
       "id": 123377,
-      "amount": 0,
-      "is_completed": false
+      "amount": 1,
+      "is_completed": true
      }
     ]
    }
@@ -1443,6 +1443,157 @@
     ]
    },
    "completed_timestamp": 1794368280000
+  },
+  {
+   "id": 781,
+   "achievement": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/achievement/781?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Explore Stranglethorn Vale",
+    "id": 781
+   },
+   "criteria": {
+    "id": 123710,
+    "is_completed": false,
+    "child_criteria": [
+     {
+      "id": 123711,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123712,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123713,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123714,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123715,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123716,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123717,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123718,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123719,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123720,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123721,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123722,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123723,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123724,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123725,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123726,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123727,
+      "amount": 1,
+      "is_completed": true
+     },
+     {
+      "id": 123728,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123729,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123730,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123731,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123732,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123733,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123734,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123735,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123736,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123737,
+      "amount": 0,
+      "is_completed": false
+     }
+    ]
+   }
   },
   {
    "id": 802,
@@ -1793,8 +1944,8 @@
      },
      {
       "id": 126978,
-      "amount": 0,
-      "is_completed": false
+      "amount": 1,
+      "is_completed": true
      },
      {
       "id": 126979,
@@ -1823,8 +1974,8 @@
      },
      {
       "id": 126984,
-      "amount": 0,
-      "is_completed": false
+      "amount": 1,
+      "is_completed": true
      },
      {
       "id": 126985,
@@ -1833,8 +1984,8 @@
      },
      {
       "id": 126986,
-      "amount": 0,
-      "is_completed": false
+      "amount": 1,
+      "is_completed": true
      },
      {
       "id": 126987,
@@ -1843,8 +1994,8 @@
      },
      {
       "id": 126988,
-      "amount": 0,
-      "is_completed": false
+      "amount": 1,
+      "is_completed": true
      },
      {
       "id": 126989,
@@ -1889,8 +2040,8 @@
      },
      {
       "id": 127492,
-      "amount": 0,
-      "is_completed": false
+      "amount": 1,
+      "is_completed": true
      },
      {
       "id": 127493,
@@ -1926,6 +2077,97 @@
       "id": 127499,
       "amount": 1,
       "is_completed": true
+     }
+    ]
+   }
+  },
+  {
+   "id": 848,
+   "achievement": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/achievement/848?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Explore Desolace",
+    "id": 848
+   },
+   "criteria": {
+    "id": 127001,
+    "is_completed": false,
+    "child_criteria": [
+     {
+      "id": 127002,
+      "amount": 1,
+      "is_completed": true
+     },
+     {
+      "id": 127003,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 127004,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 127005,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 127006,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 127007,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 127008,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 127009,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 127010,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 127011,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 127012,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 127013,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 127014,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 127015,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 127016,
+      "amount": 0,
+      "is_completed": false
      }
     ]
    }

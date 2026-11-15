@@ -1165,6 +1165,18 @@ def catchup_where(x):
     return (f" from {x['who']}" if x["who"] else "") + (f" ({spot_text(x['spot'])})" if x["spot"] else "")
 
 
+# 2026-11-15 (user: "RestedXP does a very good job of giving the most optimal leveling path so I don't know if diverging from it is worth
+# it", then "yes, make that change"): the checklist and this page list only what is worth leaving the guide for: catching up with it
+# ("sync") and gear the plan counts on that the route leaves out ("gear": the gear plan's quests, side trips for a reward or drops, detours
+# for the gear). Detours for experience ("xp": 2-3 minutes each on Arcea's route, inside the estimate's own error) and the guide's own
+# dungeons ("guide": RestedXP runs them) are still computed and not shown.
+LEAVE_GUIDE = ("sync", "gear")
+
+
+def off_guide(tl):
+    return [r for r in tl or [] if r.get("why") in LEAVE_GUIDE]
+
+
 def timeline(sched, events, lv):
     """Everything that leaves the guide, in route order (2026-11-10, user: "I want to know at each point in time, according to the RestedXP
     route, when should I be detouring. And exactly what step of the guide ... that include the stuff that is clearly worth it and the stuff
@@ -1179,18 +1191,20 @@ def timeline(sched, events, lv):
     def first_at(level, zone=None):
         return next((n for n, p in enumerate(path) if p[0] >= level and (zone is None or p[4] == zone)), None)
 
-    def add(n, kind, key, title, tag, facts="", where="", pickups=()):
+    def add(n, kind, key, title, tag, facts="", where="", pickups=(), why="xp"):   # why: sync, gear, xp, guide (LEAVE_GUIDE)
         if n is None:
             return None
         txt, level, step, lo, hi = route_anchor(n)
         rows.append({"n": n, "kind": kind, "key": key, "title": title, "tag": tag, "facts": facts, "where": where, "pickups": list(pickups),
-                     "anchor": txt, "level": level, "step": step, "lo": lo, "hi": hi})
+                     "anchor": txt, "level": level, "step": step, "lo": lo, "hi": hi, "why": why})
         return level
     gear_q = {}   # the gear plan's quest rewards, by quest title (a quest can carry another id in the dungeon lists)
+    gear_ids = set()   # and by quest id (a detour that hands one in is a detour for the gear)
     for e in events:
         s0 = primary(e)
         if s0["kind"] == "quest" and isinstance(s0.get("quest"), int):
             gear_q[quest_title(s0["quest"])] = upgrade_name(e)[0]
+            gear_ids.add(s0["quest"])
     in_dungeon = set()
     on_detour = {t for x in DETOURS["list"] for _, t in x["quests"]}   # a quest with its own detour row is not listed again
     cu = catchup(lv)
@@ -1239,12 +1253,14 @@ def timeline(sched, events, lv):
         r["picks"] = picks   # (the dungeon list shows the same)
         if r["verdict"] == "guide":
             facts = "your guide runs it here" + (f" and takes {took} of its quests" if took else "")
-            level = add(n, "dungeon", "dg" + r["zone"], f"Run {r['zone']}", "with your guide", facts, pickups=picks)
+            level = add(n, "dungeon", "dg" + r["zone"], f"Run {r['zone']}", "with your guide", facts, pickups=picks,
+                        why="sync" if sync else "guide")
             if sync:
                 rows[-1]["facts"] += f"; finish {sync[1]['quests'][0][1]} here: {catchup_line(sync[1])[1]}"
         else:
             reason = r["why"].split(";")[0].replace("worth a detour: ", "")
             tag = "side trip"
+            for_xp = "quests at full experience" in reason   # else a quest reward the plan counts on, or drops worth the run
             if reason.startswith("worth a detour for") and "quests at full experience" in reason:   # recounted: what you can have by then
                 if not count:
                     r["verdict"], r["why"] = "skip", "none of its quests can be in your log by then"
@@ -1262,12 +1278,14 @@ def timeline(sched, events, lv):
             if sync:
                 tag = "to stay in step with your guide"
                 facts += f"; finish {sync[1]['quests'][0][1]} here, {catchup_line(sync[1])[1]}"
-            level = add(n, "dungeon", "dg" + r["zone"], f"Run {r['zone']}", tag, facts, pickups=picks)
+            level = add(n, "dungeon", "dg" + r["zone"], f"Run {r['zone']}", tag, facts, pickups=picks,
+                        why="sync" if sync else "xp" if for_xp else "gear")
         if level is not None:
             r["run"] = level
     for x in DETOURS["list"]:
         add(x["anchor"], "detour", "det" + "-".join(str(q) for q, _ in x["quests"]), " → ".join(t for _, t in x["quests"]),
-            {"clear": "clear win", "easy": "worth it if you like it", "gear": "for the gear"}[x["tier"]], detour_facts(x), detour_where(x))
+            {"clear": "clear win", "easy": "worth it if you like it", "gear": "for the gear"}[x["tier"]], detour_facts(x), detour_where(x),
+            why="gear" if x["tier"] == "gear" or any(q in gear_ids for q, _ in x["quests"]) else "xp")
     listed = {q for x in DETOURS["list"] for q, _ in x["quests"]}
     judged = DETOURS["stats"].get("judged", {})
     for e in events:   # the gear plan's quests off the route
@@ -1278,7 +1296,8 @@ def timeline(sched, events, lv):
         what, _ = upgrade_name(e)
         if q in judged:
             x = judged[q]
-            add(x["anchor"], "gear", f"gq{q}", " → ".join(t for _, t in x["quests"]), "for the gear, at a cost", detour_facts(x), detour_where(x))
+            add(x["anchor"], "gear", f"gq{q}", " → ".join(t for _, t in x["quests"]), "for the gear, at a cost", detour_facts(x), detour_where(x),
+                why="gear")
         else:   # where its chain starts (2026-11-14: The God Hakkar read "who gives it is not in the data" while the gear plan named
             st = chain_step(q)   # Yeh'kinya, who starts its chain)
             head = st[0] if st else q
@@ -1288,7 +1307,8 @@ def timeline(sched, events, lv):
                      if head != q and how else how)
             add(n, "gear", f"gq{q}", quest_title(q), "for the gear",
                 f"rewards {what}; " + (start if start else
-                                       f"who gives it is not in the data, so ask around while the guide has you in {s0.get('zone') or 'its zone'}"))
+                                       f"who gives it is not in the data, so ask around while the guide has you in {s0.get('zone') or 'its zone'}"),
+                why="gear")
     for x in cu:   # catch-ups at the route point that suits them (a dungeon's quests are in its row)
         if (x["kind"] == "finish" and x["dungeon"]) or all(t in in_dungeon for _, t in x["quests"]):
             continue
@@ -1299,7 +1319,7 @@ def timeline(sched, events, lv):
         where = catchup_where(x).lstrip(", ").strip()
         how = "" if x["in_zone"] else (f"a trip to {x['where']}" if x["where"] in CAPITALS else f"a detour to {x['where']}") if x["where"] else ""
         add(x["n"], "catchup", "cu" + "-".join(str(q) for q, _ in x["quests"]), title, "catch up with your guide",
-            when[0].upper() + when[1:] + (f"; {how} from here" if how else ""), where)
+            when[0].upper() + when[1:] + (f"; {how} from here" if how else ""), where, why="sync")
     order = {"catchup": 0, "dungeon": 1, "detour": 2, "gear": 3}
     rows.sort(key=lambda r: (r["n"], order[r["kind"]]))
     return rows
@@ -1911,7 +1931,7 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     sched = dungeon_schedule(cfg, lv, runs, events)
     CTX["dungeons"] = sched
     tl = timeline(sched, events, lv)
-    CTX["timeline"] = [dict(r, text=timeline_line(r)) for r in tl] if RG else None
+    CTX["timeline"] = [dict(r, text=timeline_line(r)) for r in off_guide(tl)] if RG else None   # (LEAVE_GUIDE, 2026-11-15)
     near = [r for r in sched if r["run"] <= lv + LOOKAHEAD]
     if near:
         o += ["### Dungeon runs", "", "Run each once, with its quests in your log first: the quests' experience is the main reward. A drop that "
@@ -1920,11 +1940,11 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     cu_rows = [r for r in tl if r["kind"] == "catchup" or "your guide hands it in" in r["facts"] or "finish " in r["facts"]]
     if cu_rows:
         o += ["### Catch up with your guide", "", "Things your RestedXP guide did before your step that it still counts on: without them it "
-              "skips the steps that hand them in or take their next part. Do each by its deadline (listed in When to leave the guide too).", ""]
+              "skips the steps that hand them in or take their next part. Do each by its deadline (listed in Off the guide too).", ""]
         o += [f"- {timeline_line(r)}" for r in cu_rows] + [""]
-    soon_t = [r for r in tl if r["level"] <= lv + LOOKAHEAD]
+    soon_t = [r for r in off_guide(tl) if r["level"] <= lv + LOOKAHEAD]
     if soon_t:
-        o += ["### When to leave the guide", "", "In your RestedXP route's order (the full list: When to leave the guide, below).", ""]
+        o += ["### Off the guide", "", "In your RestedXP route's order (the full list: Off the guide, below).", ""]
         o += [f"- {timeline_line(r)}" for r in soon_t] + [""]
     o += ["### Talents and the rest", "", "- Talents: see above. Food, drink, bandages: the [by-level guide](../../" +
           f"{cfg['class']}/leveling/{cfg['page']}-by-level.md) for your rotation.", ""]
@@ -1956,14 +1976,15 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
         ev = [e for e in later if max(e["get_at"], lv) == L]
         if ev:
             o += [f"### Level {L}", ""] + action_sections(ev, at, L, head="####") + [""]
-    if tl:
-        o += ["## When to leave the guide", "",
-              "Everything worth stepping off your RestedXP route for, in the route's order: the guide's own dungeons where it runs them, side-trip "
-              "dungeons, detour quests (clear wins, worth it if you like it, for the gear) and the gear plan's quests the route leaves out. Each "
-              "is tied to the moment in the guide it starts from: the quest it has you hand in or pick up there (the step number is the guide's "
-              "own count within that part, an estimate). Do it, then pick the guide up where you left it.", ""]
+    if off_guide(tl):
+        o += ["## Off the guide", "",
+              "Only what is worth stepping off your RestedXP route for, in the route's order: catching up with your guide, and gear the plan "
+              "counts on that the route leaves out (its quests, a side trip for a reward or drops). The route is a good leveling path as it is: "
+              "side quests for experience (a few minutes each, inside the estimate's own error) and the guide's own dungeons are left to it "
+              "(2026-11-15). Each is tied to the moment in the guide it starts from: the quest it has you hand in or pick up there (the step "
+              "number is the guide's own count within that part, an estimate). Do it, then pick the guide up where you left it.", ""]
         o += [ROUTE_NOTE[0], ""] if ROUTE_NOTE[0] else []
-        o += [f"- {timeline_line(r)}" for r in tl] + [""]
+        o += [f"- {timeline_line(r)}" for r in off_guide(tl)] + [""]
     # every dungeon run, by level
     if sched:
         o += ["## Dungeon runs", "", "Every leveling dungeon you have not outgrown, once, at the level its quests fit: pick the quests up first. "

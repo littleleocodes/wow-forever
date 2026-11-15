@@ -87,7 +87,7 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   drops and unknown-recipe crafts carry a fallback; quest rewards name where their chain starts (`quest_chain.csv`); refreshes write
   `state.json` and the next page lists what changed. **When the user says "refresh <name>"**: run `plan.py <name>` (it also writes
   `_characters/<name>/checklist.html`, the town checklist: trainer, talents, auction buys, profession steps and recipes, crafts, enchants,
-  quests and dungeons, the guide's keys and fight stage, the drop check, gold) and republish that file (tabs since 2026-11-10, user: "make some things into tabs": Town, On the road, Fight, Gear & gold, Legacy; each a #name link) with the Artifact tool to the (user, 2026-11-09: "a page can open every time I say refresh").
+  quests and dungeons, the guide's keys and fight stage, the drop check, gold) and republish that file (tabs since 2026-11-10, user: "make some things into tabs": Town, Fight, Gear & gold, Legacy; each a #name link; the On the road tab went on 2026-11-15, see When to leave the guide) with the Artifact tool to the (user, 2026-11-09: "a page can open every time I say refresh").
   The RestedXP route: `characters/rxp.py` reads the guide add-on's saved files (guide group, current step, each section's levels and
   zones); since 2026-11-10 `characters/rxp_guide.py` reads the route step by step from the readable guide files the user keeps outside the
   repository (user: "I am explicitly withdrawing that instruction for my personal, local use ... read the supplied text files as reference
@@ -119,7 +119,13 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   leaves out (their detour's cost, or the zone to look in); each tied to the quest the guide hands in or picks up there and the step's
   number in that part (levels and numbers only, never the part's name). Page section and the checklist's "On the road" step (the next four
   levels; "Before you leave" and the road list's gear and auction repeats are gone when a route is known, profession goals sit at the
-  workbench). **Chains** (the same day, user: the Stockade list held "a mega chain quests that starts in Deadmines from a quest item that
+  workbench). **Only what is worth leaving the guide for** (2026-11-15, user: "RestedXP does a very good job of giving the most optimal
+  leveling path so I don't know if diverging from it is worth it", then "yes, make that change"): each timeline row carries `why` (sync,
+  gear, xp, guide) and the page ("Off the guide") and the checklist show only `plan.LEAVE_GUIDE`: catch-ups and gear the plan counts on
+  that the route leaves out (its quests, a side trip for a reward or drops, a detour for the gear), as a Town step "Off the guide" that
+  appears only when there is one. Detours for experience (Arcea's were worth 2-3 minutes each, inside the estimate's own error) and the
+  guide's own dungeons are still computed and not shown; the On the road tab is gone and "Coming up" (the gear plan past the next levels)
+  sits in Gear & gold. **Chains** (the same day, user: the Stockade list held "a mega chain quests that starts in Deadmines from a quest item that
   drops off the last boss ... do the full research on quest chains like this"): a dungeon's quests are grouped by chain (Classic's
   PrevQuestId links) and shown once, "First → Last (N parts)", with where the chain starts: an NPC, or an item and the creature that drops
   it (quest_geo_extract.py: quest_item_sources.csv carries start items and the spawn map, source_names.csv the names). A chain whose item
