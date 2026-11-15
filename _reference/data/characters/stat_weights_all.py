@@ -1,11 +1,12 @@
 """Every stat of every leveling page pick (2026-11-13, the gear add-on; user: "this is being made for all classes right? And before it's
 built I think we should make sure all the stats are scored").
 
-    python _reference/data/characters/stat_weights_all.py [classes...] [--fights 3000] [--jobs 10] [--fresh]
+    python _reference/data/characters/stat_weights_all.py [classes...] [--fights 3000] [--jobs 10] [--fresh | --since YYYY-MM-DD]
 
 Runs stat_weights.py --full for each class's leveling page picks (fightlab/signature_audit.page_slots: one build per spec page) into
 weights/leveling/<class>-<build id>.json; a pick whose file is there with the current steps is skipped unless --fresh, so the same
-command resumes (a file made with other steps is redone).
+command resumes (a file made with other steps is redone). --since: a pick whose file was measured before that date is redone as with
+--fresh, so a re-measure after a fight-lab change resumes too (2026-11-15).
 """
 import argparse
 import json
@@ -39,6 +40,7 @@ def main():
     ap.add_argument("--fights", type=int, default=3000)
     ap.add_argument("--jobs", type=int, default=10)
     ap.add_argument("--fresh", action="store_true")
+    ap.add_argument("--since", help="redo the picks whose file is older than this date (YYYY-MM-DD)")
     ap.add_argument("--base", choices=("standard", "best"), default="standard")
     a = ap.parse_args()
     todo = picks(a.classes)
@@ -47,7 +49,8 @@ def main():
         f = HERE / "weights" / ("leveling" if a.base == "standard" else "leveling-best") / f"{cls}-{bid}.json"
         want = {k: SW.FULL_STEPS[k] for k in SW.CLASS_STATS[cls]}
         extra = []
-        if f.exists() and not a.fresh:
+        stale = bool(a.since) and f.exists() and json.loads(f.read_text(encoding="utf-8")).get("date", "") < a.since
+        if f.exists() and not a.fresh and not stale:
             have = json.loads(f.read_text(encoding="utf-8")).get("steps") or {}
             if have == want:
                 print(f"[{i}/{len(todo)}] {cls} {spec}: done ({f.name})", flush=True)
