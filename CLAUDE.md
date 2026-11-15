@@ -377,7 +377,11 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   `fightlab/rules_retune.py <class> <rotation> <build>` (rotation_opt's search from scratch and continued from the saved file; the
   fastest set is installed only when it beats the saved rules by 0.3% on the final check). Eight files had predated their class's patch
   port: warlock Destruction ran 9% slower under the old file, rogue Subtlety 0.7% (2.3% at level 60). Never change a rule file while
-  its rotation's search runs. `fl_open_search.py`'s 20-60 race also takes the previous record's winner (`<record>.prev.json`) and our
+  its rotation's search runs. The signature floor a tune enforces is its build's own spec: the `spec` field, as the pages and the
+  signature audit judge it, else its points (2026-11-15: the Discipline page's 29/22/0 raid-path build had been judged by its points as
+  the Smite hybrid, and rules tuned to that floor, Smite and Holy Fire half the damage, starved Penance: 46 -> 58 s per kill). Tune a
+  rotation two pages play on the build with the stricter floor: priest `holy-leveling` on `smite-open-leveling` (the Smite page, 50%),
+  not the Holy page's raid-path build (40%). `fl_open_search.py`'s 20-60 race also takes the previous record's winner (`<record>.prev.json`) and our
   raced builds as eligible picks, each with the order it carries: a fresh Affliction search had ended 1.6% below the build it replaced,
   and `open_builds.py` would have rewritten that build from the slower record. `deep-runs/refresh_keys.py <record> <rotation>` and a
   plain `fl_open_search.py <class> --rotation <rotation>` run redo a rotation from that race on (after a rules change, or to re-date a

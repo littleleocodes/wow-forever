@@ -287,7 +287,10 @@ def search(pool, cls, spec, bid, levels, a):
         rot0 = {k: v for k, v in json.load(open(FR.rotation_file(cls, spec), encoding="utf-8")).items() if k in ("veto", "drink_below", "eat_below", "knobs")}
     req = required_spells(cls, spec)
     b_ = FR.load_build(cls, bid)
-    spec_b = FS.spec_for(cls, spec, FS.flat_of(b_))
+    # the build's own spec when it names one, as the pages and the signature audit judge it (spec_modes.spec_of; 2026-11-15: the
+    # Discipline page's 29/22/0 raid-path build had been tuned to the Smite hybrid's floor, Smite and Holy Fire half the damage, which
+    # starved Penance and Mind Blast: 46 -> 58 s per kill), else its points in this rotation
+    spec_b = b_.get("spec") or FS.spec_for(cls, spec, FS.flat_of(b_))
     rl = SG.rule(cls, spec_b, "leveling") if FS.enabled() else None
 
     def wsig(res, levels, rl):
