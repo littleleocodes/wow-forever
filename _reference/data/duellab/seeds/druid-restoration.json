@@ -1,0 +1,197 @@
+{
+ "id": "expansion-seed-restoration",
+ "class": "druid",
+ "tree": "Restoration",
+ "from": "restoration-pvp",
+ "expansion_builds": 8,
+ "consensus": [
+  {
+   "talent": "Natural Shapeshifter",
+   "rank": 3,
+   "builds": 8
+  },
+  {
+   "talent": "Reflection",
+   "rank": 3,
+   "builds": 8
+  },
+  {
+   "talent": "Gift of Nature",
+   "rank": 5,
+   "builds": 8
+  },
+  {
+   "talent": "Subtlety",
+   "rank": 3,
+   "builds": 8
+  },
+  {
+   "talent": "Improved Rejuvenation",
+   "rank": 3,
+   "builds": 8
+  },
+  {
+   "talent": "Swiftmend",
+   "rank": 1,
+   "builds": 8
+  },
+  {
+   "talent": "Nature's Swiftness",
+   "rank": 1,
+   "builds": 8
+  },
+  {
+   "talent": "Nature's Focus",
+   "rank": 3,
+   "builds": 6
+  },
+  {
+   "talent": "Nature's Reach",
+   "rank": 2,
+   "builds": 6
+  },
+  {
+   "talent": "Living Spirit",
+   "rank": 2,
+   "builds": 6
+  },
+  {
+   "talent": "Furor",
+   "rank": 5,
+   "builds": 4
+  },
+  {
+   "talent": "Genesis",
+   "rank": 5,
+   "builds": 4
+  },
+  {
+   "talent": "Brutal Impact",
+   "rank": 2,
+   "builds": 4
+  },
+  {
+   "talent": "Moonglow",
+   "rank": 3,
+   "builds": 4
+  },
+  {
+   "talent": "Nature's Majesty",
+   "rank": 2,
+   "builds": 4
+  },
+  {
+   "talent": "Thick Hide",
+   "rank": 3,
+   "builds": 4
+  },
+  {
+   "talent": "Feral Charge",
+   "rank": 1,
+   "builds": 4
+  },
+  {
+   "talent": "Nature's Splendor",
+   "rank": 1,
+   "builds": 4
+  },
+  {
+   "talent": "Insect Swarm",
+   "rank": 1,
+   "builds": 4
+  }
+ ],
+ "added": [
+  "Subtlety 3",
+  "Genesis 5",
+  "Moonglow 3",
+  "Thick Hide 3"
+ ],
+ "removed": {
+  "Improved Regrowth": 5,
+  "Heart of the Wild": 5,
+  "Wild Growth": 1,
+  "Feral Instinct": 1,
+  "Feral Swiftness": 2
+ },
+ "skipped": [
+  "Nature's Reach 2 (6 of 8): no legal way to take its points back outside the consensus",
+  "Nature's Majesty 2 (4 of 8): no legal way to take its points back outside the consensus",
+  "Nature's Splendor 1 (4 of 8): no legal way to take its points back outside the consensus",
+  "Insect Swarm 1 (4 of 8): no legal way to take its points back outside the consensus"
+ ],
+ "split": "8/11/32",
+ "allocation": {
+  "Balance": [
+   [
+    "Genesis",
+    5
+   ],
+   [
+    "Moonglow",
+    3
+   ]
+  ],
+  "Feral Combat": [
+   [
+    "Furor",
+    5
+   ],
+   [
+    "Brutal Impact",
+    2
+   ],
+   [
+    "Thick Hide",
+    3
+   ],
+   [
+    "Feral Charge",
+    1
+   ]
+  ],
+  "Restoration": [
+   [
+    "Nature's Focus",
+    5
+   ],
+   [
+    "Naturalist",
+    5
+   ],
+   [
+    "Reflection",
+    3
+   ],
+   [
+    "Natural Shapeshifter",
+    3
+   ],
+   [
+    "Subtlety",
+    3
+   ],
+   [
+    "Gift of Nature",
+    5
+   ],
+   [
+    "Improved Rejuvenation",
+    3
+   ],
+   [
+    "Swiftmend",
+    1
+   ],
+   [
+    "Nature's Swiftness",
+    1
+   ],
+   [
+    "Living Spirit",
+    3
+   ]
+  ]
+ },
+ "scored_with": "resto-heal, pvp"
+}

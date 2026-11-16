@@ -1,0 +1,203 @@
+{
+ "id": "expansion-seed-arcane",
+ "class": "mage",
+ "tree": "Arcane",
+ "from": "arcane-pvp",
+ "expansion_builds": 3,
+ "consensus": [
+  {
+   "talent": "Arcane Resilience",
+   "rank": 1,
+   "builds": 3
+  },
+  {
+   "talent": "Incineration",
+   "rank": 2,
+   "builds": 3
+  },
+  {
+   "talent": "Arcane Concentration",
+   "rank": 5,
+   "builds": 3
+  },
+  {
+   "talent": "Arcane Subtlety",
+   "rank": 2,
+   "builds": 3
+  },
+  {
+   "talent": "Magic Absorption",
+   "rank": 2,
+   "builds": 3
+  },
+  {
+   "talent": "Improved Counterspell",
+   "rank": 2,
+   "builds": 3
+  },
+  {
+   "talent": "Presence of Mind",
+   "rank": 1,
+   "builds": 3
+  },
+  {
+   "talent": "Arcane Instability",
+   "rank": 3,
+   "builds": 3
+  },
+  {
+   "talent": "Arcane Power",
+   "rank": 1,
+   "builds": 3
+  },
+  {
+   "talent": "Flame Throwing",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Ignite",
+   "rank": 5,
+   "builds": 2
+  },
+  {
+   "talent": "Impact",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Burning Soul",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Pyroblast",
+   "rank": 1,
+   "builds": 2
+  }
+ ],
+ "added": [
+  "Incineration 2"
+ ],
+ "removed": {
+  "Ice Shards": 1,
+  "Shatter": 1
+ },
+ "skipped": [
+  "Flame Throwing 2 (2 of 3): no legal way to take its points back outside the consensus",
+  "Ignite 5 (2 of 3): no legal way to take its points back outside the consensus",
+  "Impact 3 (2 of 3): no legal way to take its points back outside the consensus",
+  "Burning Soul 2 (2 of 3): no legal way to take its points back outside the consensus",
+  "Pyroblast 1 (2 of 3): no legal way to take its points back outside the consensus"
+ ],
+ "split": "31/2/18",
+ "allocation": {
+  "Arcane": [
+   [
+    "Wand Specialization",
+    2
+   ],
+   [
+    "Improved Channeling",
+    1
+   ],
+   [
+    "Arcane Resilience",
+    2
+   ],
+   [
+    "Arcane Subtlety",
+    2
+   ],
+   [
+    "Magic Absorption",
+    2
+   ],
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Missile Barrage",
+    1
+   ],
+   [
+    "Arcane Geometry",
+    2
+   ],
+   [
+    "Arcane Impact",
+    1
+   ],
+   [
+    "Arcane Blast",
+    1
+   ],
+   [
+    "Arcane Shielding",
+    1
+   ],
+   [
+    "Improved Counterspell",
+    2
+   ],
+   [
+    "Arcane Meditation",
+    3
+   ],
+   [
+    "Arcane Wrath",
+    1
+   ],
+   [
+    "Presence of Mind",
+    1
+   ],
+   [
+    "Arcane Instability",
+    3
+   ],
+   [
+    "Arcane Power",
+    1
+   ]
+  ],
+  "Fire": [
+   [
+    "Incineration",
+    2
+   ]
+  ],
+  "Frost": [
+   [
+    "Improved Frostbolt",
+    5
+   ],
+   [
+    "Ice Shards",
+    4
+   ],
+   [
+    "Frostbite",
+    3
+   ],
+   [
+    "Improved Frost Nova",
+    2
+   ],
+   [
+    "Ice Lance",
+    1
+   ],
+   [
+    "Ice Block",
+    1
+   ],
+   [
+    "Shatter",
+    2
+   ]
+  ]
+ },
+ "scored_with": "frost-leveling, pvp (borrowed: the tree has no stats model)"
+}

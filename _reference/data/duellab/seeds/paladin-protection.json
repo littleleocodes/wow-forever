@@ -1,0 +1,200 @@
+{
+ "id": "expansion-seed-protection",
+ "class": "paladin",
+ "tree": "Protection",
+ "from": "protection-pvp",
+ "expansion_builds": 2,
+ "consensus": [
+  {
+   "talent": "Redoubt",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Guardian's Favor",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Sacred Duty",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Improved Hammer of Justice",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Toughness",
+   "rank": 5,
+   "builds": 2
+  },
+  {
+   "talent": "Improved Righteous Fury",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Holy Shield",
+   "rank": 1,
+   "builds": 2
+  },
+  {
+   "talent": "Stoicism",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Benediction",
+   "rank": 5,
+   "builds": 1
+  },
+  {
+   "talent": "Divine Intellect",
+   "rank": 5,
+   "builds": 1
+  },
+  {
+   "talent": "Divine Strength",
+   "rank": 5,
+   "builds": 1
+  },
+  {
+   "talent": "Spiritual Focus",
+   "rank": 5,
+   "builds": 1
+  },
+  {
+   "talent": "Conviction",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Healing Light",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Improved Judgement",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Pursuit of Justice",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Unyielding Faith",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Reckoning",
+   "rank": 2,
+   "builds": 1
+  }
+ ],
+ "added": [
+  "Toughness 5",
+  "Holy Shield 1",
+  "Stoicism 2",
+  "Benediction 5",
+  "Divine Intellect 5",
+  "Conviction 3"
+ ],
+ "removed": {
+  "Precision": 3,
+  "Shield Specialization": 2,
+  "Swift Judgement": 1,
+  "Templar's Bulwark": 1,
+  "Repentance": 1,
+  "Sacred Arbiter": 1,
+  "Sanctified Judgement": 3,
+  "Deflection": 5,
+  "Vindication": 3
+ },
+ "skipped": [
+  "Divine Strength 5 (1 of 2): no legal way to take its points back outside the consensus",
+  "Healing Light 3 (1 of 2): no legal way to take its points back outside the consensus"
+ ],
+ "split": "5/31/15",
+ "allocation": {
+  "Holy": [
+   [
+    "Spiritual Focus",
+    5
+   ]
+  ],
+  "Protection": [
+   [
+    "Divine Intellect",
+    5
+   ],
+   [
+    "Redoubt",
+    5
+   ],
+   [
+    "Guardian's Favor",
+    2
+   ],
+   [
+    "Sacred Duty",
+    2
+   ],
+   [
+    "Improved Hammer of Justice",
+    3
+   ],
+   [
+    "Toughness",
+    5
+   ],
+   [
+    "Improved Righteous Fury",
+    3
+   ],
+   [
+    "Stoicism",
+    2
+   ],
+   [
+    "Holy Shield",
+    1
+   ],
+   [
+    "Reckoning",
+    3
+   ]
+  ],
+  "Retribution": [
+   [
+    "Benediction",
+    5
+   ],
+   [
+    "Improved Judgement",
+    2
+   ],
+   [
+    "Conviction",
+    3
+   ],
+   [
+    "Unyielding Faith",
+    2
+   ],
+   [
+    "Seal of Command",
+    1
+   ],
+   [
+    "Pursuit of Justice",
+    2
+   ]
+  ]
+ },
+ "scored_with": "holy-heal, pvp (borrowed: the tree has no stats model)"
+}

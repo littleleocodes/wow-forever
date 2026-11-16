@@ -1,0 +1,198 @@
+{
+ "id": "expansion-seed-beast-mastery",
+ "class": "hunter",
+ "tree": "Beast Mastery",
+ "from": "beast-mastery-pvp",
+ "expansion_builds": 2,
+ "consensus": [
+  {
+   "talent": "Endurance Training",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Lethal Attacks",
+   "rank": 5,
+   "builds": 2
+  },
+  {
+   "talent": "Focused Fire",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Improved Revive Pet",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Unleashed Fury",
+   "rank": 5,
+   "builds": 2
+  },
+  {
+   "talent": "Ferocity",
+   "rank": 5,
+   "builds": 2
+  },
+  {
+   "talent": "Mortal Shots",
+   "rank": 5,
+   "builds": 2
+  },
+  {
+   "talent": "Bestial Discipline",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Intimidation",
+   "rank": 1,
+   "builds": 2
+  },
+  {
+   "talent": "Frenzy",
+   "rank": 4,
+   "builds": 2
+  },
+  {
+   "talent": "Bestial Wrath",
+   "rank": 1,
+   "builds": 2
+  },
+  {
+   "talent": "Deadly Aspects",
+   "rank": 5,
+   "builds": 1
+  },
+  {
+   "talent": "Hawk Eye",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Careful Aim",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Efficiency",
+   "rank": 5,
+   "builds": 1
+  },
+  {
+   "talent": "Rapid Killing",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Improved Mend Pet",
+   "rank": 2,
+   "builds": 1
+  }
+ ],
+ "added": [
+  "Endurance Training 3",
+  "Lethal Attacks 5",
+  "Improved Revive Pet 2",
+  "Frenzy 4",
+  "Hawk Eye 3",
+  "Careful Aim 3",
+  "Efficiency 5",
+  "Rapid Killing 2",
+  "Improved Mend Pet 2"
+ ],
+ "removed": {
+  "Summon Hawk": 1,
+  "Pathfinding": 2,
+  "Entrapment": 5,
+  "Survival Tactics": 2,
+  "Counterattack": 1,
+  "Spirit Bond": 2,
+  "Improved Aspect of the Monkey": 3,
+  "Surefooted": 3,
+  "Deterrence": 1,
+  "Improved Wing Clip": 3,
+  "Deflection": 5
+ },
+ "skipped": [
+  "Mortal Shots 5 (2 of 2): no legal way to take its points back outside the consensus"
+ ],
+ "split": "33/18/0",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    3
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Improved Revive Pet",
+    2
+   ],
+   [
+    "Bestial Swiftness",
+    1
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Improved Mend Pet",
+    2
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Intimidation",
+    1
+   ],
+   [
+    "Bestial Discipline",
+    2
+   ],
+   [
+    "Frenzy",
+    4
+   ],
+   [
+    "Bestial Wrath",
+    1
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Hawk Eye",
+    3
+   ],
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Efficiency",
+    5
+   ],
+   [
+    "Careful Aim",
+    3
+   ],
+   [
+    "Rapid Killing",
+    2
+   ]
+  ],
+  "Survival": []
+ },
+ "scored_with": "bm-leveling, pvp (borrowed: the tree has no stats model)"
+}

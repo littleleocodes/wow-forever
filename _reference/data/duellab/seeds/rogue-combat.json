@@ -1,0 +1,239 @@
+{
+ "id": "expansion-seed-combat",
+ "class": "rogue",
+ "tree": "Combat",
+ "from": "combat-pvp",
+ "expansion_builds": 3,
+ "consensus": [
+  {
+   "talent": "Improved Gouge",
+   "rank": 3,
+   "builds": 3
+  },
+  {
+   "talent": "Lightning Reflexes",
+   "rank": 2,
+   "builds": 3
+  },
+  {
+   "talent": "Improved Sprint",
+   "rank": 2,
+   "builds": 3
+  },
+  {
+   "talent": "Blade Flurry",
+   "rank": 1,
+   "builds": 3
+  },
+  {
+   "talent": "Dual Wield Specialization",
+   "rank": 2,
+   "builds": 3
+  },
+  {
+   "talent": "Adrenaline Rush",
+   "rank": 1,
+   "builds": 3
+  },
+  {
+   "talent": "Master of Deception",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Camouflage",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Dirty Deeds",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Dirty Tricks",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Improved Slice and Dice",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Precision",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Endurance",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Initiative",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Serrated Blades",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Elusiveness",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Ghostly Strike",
+   "rank": 1,
+   "builds": 2
+  },
+  {
+   "talent": "Improved Kick",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Weapon Expertise",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Heightened Senses",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Hemorrhage",
+   "rank": 1,
+   "builds": 2
+  },
+  {
+   "talent": "Preparation",
+   "rank": 1,
+   "builds": 2
+  }
+ ],
+ "added": [
+  "Dual Wield Specialization 2",
+  "Camouflage 3"
+ ],
+ "removed": {
+  "Efficient Strikes": 2,
+  "Improved Ambush": 1,
+  "Setup": 1,
+  "Premeditation": 1
+ },
+ "skipped": [
+  "Improved Gouge 3 (3 of 3): no legal way to take its points back outside the consensus",
+  "Improved Slice and Dice 3 (2 of 3): no legal way to take its points back outside the consensus",
+  "Serrated Blades 3 (2 of 3): no legal way to take its points back outside the consensus",
+  "Heightened Senses 2 (2 of 3): no legal way to take its points back outside the consensus",
+  "Hemorrhage 1 (2 of 3): no legal way to take its points back outside the consensus",
+  "Preparation 1 (2 of 3): no legal way to take its points back outside the consensus"
+ ],
+ "split": "2/31/18",
+ "allocation": {
+  "Assassination": [
+   [
+    "Improved Gouge",
+    2
+   ]
+  ],
+  "Combat": [
+   [
+    "Coup de Grace",
+    3
+   ],
+   [
+    "Lightning Reflexes",
+    5
+   ],
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Improved Sprint",
+    2
+   ],
+   [
+    "Endurance",
+    2
+   ],
+   [
+    "Riposte",
+    1
+   ],
+   [
+    "Improved Kick",
+    2
+   ],
+   [
+    "Flawless Execution",
+    1
+   ],
+   [
+    "Weapon Expertise",
+    2
+   ],
+   [
+    "Aggression",
+    3
+   ],
+   [
+    "Dual Wield Specialization",
+    2
+   ],
+   [
+    "Blade Flurry",
+    1
+   ],
+   [
+    "Adrenaline Rush",
+    1
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Setup",
+    2
+   ],
+   [
+    "Master of Deception",
+    3
+   ],
+   [
+    "Dirty Deeds",
+    2
+   ],
+   [
+    "Camouflage",
+    3
+   ],
+   [
+    "Dirty Tricks",
+    2
+   ],
+   [
+    "Initiative",
+    3
+   ],
+   [
+    "Elusiveness",
+    2
+   ],
+   [
+    "Ghostly Strike",
+    1
+   ]
+  ]
+ },
+ "scored_with": "combat-swords-raid, pvp"
+}

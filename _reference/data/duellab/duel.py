@@ -22,6 +22,8 @@ A model of stated assumptions (open field, no line of sight, no consumables, no 
 tier dtables.GEAR_TIER), never a measurement of the game. `duel_run.py` runs duels, matchups and talent values.
 """
 import importlib.util
+import json
+import os
 import pathlib
 import random
 import sys
@@ -67,6 +69,23 @@ KEEPS_STEALTH = {"Stealth", "Prowl", "Sap", "Distract", "Pick Pocket", "Vanish",
 # wore Mage Armor, losing Ice Armor's armor and its chill on melee attackers; the mage layer is written for Ice Armor (pvp_mage.py).
 PVE_KNOBS = ("MAGE_ARMOR",)
 _GEAR = {"tier": None}
+_RESTORE = {}
+
+
+def restored_vetoes(cls, spec):
+    """The spell names whose tuned leveling veto a side plays inside its spec's rotation (the dropped-veto audit, veto_audit.py): the
+    environment's WOW_DUEL_VETO when set (JSON {"<class>/<rotation>": [spell, ...]}; the audit sets it before each scoring call, and a
+    worker process inherits it), else the audit record's kept ones (veto-audit.json "kept"), else none. Only the rotation sees them
+    (pvp_base.PvPAI.rotation_decide): a layer's own casts of the spell (the rogue's Kick, the mage's Fire Blast) stay free."""
+    env = os.environ.get("WOW_DUEL_VETO")
+    key = env if env is not None else "\0file"
+    if key not in _RESTORE:
+        if env is not None:
+            _RESTORE[key] = json.loads(env) if env.strip() else {}
+        else:
+            p = HERE / "veto-audit.json"
+            _RESTORE[key] = (json.load(open(p, encoding="utf-8")).get("kept") or {}) if p.exists() else {}
+    return tuple(_RESTORE[key].get(f"{cls}/{spec}", ()))
 
 
 def set_gear(tier):
@@ -346,7 +365,10 @@ class Side:
         self.duel, self.name, self.cls, self.spec = duel, name, cls, spec
         self.alloc = alloc
         self.mod = FR.make_module(cls, alloc, 60, spec)
+        tuned = self.mod.veto
         self.mod.veto = {}                      # the leveling rotation's tuned vetoes are PvE rules
+        # except those the dropped-veto audit restores, with the rules' own condition, inside the rotation only
+        self.rotation_veto = {n: dict(tuned[n]) for n in restored_vetoes(cls, spec) if n in tuned}
         for k in PVE_KNOBS:                     # and so are these knobs: the class default, set before make_player chooses the armor
             self.mod.__dict__.pop(k, None)
         # off-GCD spells (spell_gcd.json's "off_gcd") cost no global cooldown: the fight lab's own rule since 2026-11-15 (tables.OFF_GCD);

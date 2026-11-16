@@ -210,3 +210,25 @@ necessary").
   - Means: paladin 77%, priest 74%, hunter 66%, shaman 59%, warlock 48%, mage 40%, rogue 33%, druid 27%, warrior 26%. Every class is
     within a point of pass 2's means, which had carried pass 1's values for seven pairs.
   - Next: the audit of the dropped tuned vetoes, then the searches.
+- 2026-11-15, the dropped-veto audit (`duellab/veto_audit.py`, record `duellab/veto-audit.json`): each field build's tuned leveling
+  vetoes restored one at a time inside its spec's rotation only (`duel.restored_vetoes`, `pvp_base.PvPAI.rotation_decide`: a layer's
+  own casts of the spell stay free), scored against the field, 200 duels a matchup, the mirror left out. Kept: none.
+  - Losses when restored: Devouring Plague -14.6 points of the Shadow priest's mean win rate; Arcane Shot -3.9 and Multi-Shot -1.6
+    (Marksmanship); Fire Blast -3.9 (Frost mage); Hammer of Wrath -3.4 and Consecration -2.5 (Retribution); Corruption -0.6
+    (warlock).
+  - No effect, because the PvP layer already decides these spells: the rogue's Kick, Kidney Shot and Slice and Dice, the hunter's
+    Feign Death, the warlock's Searing Pain, the druid's Shred.
+  - Within noise: Frostbolt +0.7 (mage, under the 1-point bar), Lightning Bolt +0.1, Smite -0.1, Cone of Cold -0.1. The arms-2h-raid
+    rotation has no vetoes.
+  - The matrix with the audit's (empty) kept set is unchanged.
+- 2026-11-15, the searches set up (step 4):
+  - `duellab/pvp_seeds.py`: one seed per tree from the TBC and WotLK PvP builds (26 trees; Demonology has none of its own). The
+    seed is our PvP build with the consensus talents (taken by at least half of the tree's expansion builds, Forever's names,
+    median rank) added, most-taken first. Each added point is taken back from a talent outside the consensus where the stats model's
+    PvP score loses least. A consensus that holds more than 51 points leaves its less-taken talents as "skipped" (Arms: Iron Will 4
+    of 5 builds, Death Wish 3 of 5). Renamed talents follow the mapping's note: the expansions' Lightning Mastery is Forever's
+    Elemental Alacrity. Same-name talents with another effect (Winter's Chill, Shadow and Flame) are no evidence.
+  - `duellab/pvp_search_all.py` (runner `deep-runs/pvp_search_1115.sh`): pvp_search for every tree with a PvP build of ours, from
+    our builds, the community's and the seed. The search's last step now races the winner and every start on the same duels
+    (seed 3, 240 a matchup, the record's `race`), so the report compares them on equal terms. One tree at a time. The worker count
+    is read from `deep-runs/pvp1115/workers` before each tree.

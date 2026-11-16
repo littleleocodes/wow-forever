@@ -120,13 +120,27 @@ class PvPAI:
 
     fillers = ()              # spells of other schools to cast when the rotation's choice is locked out or out of reach (Fire Blast)
 
+    @staticmethod
+    def rotation_decide(me, fn):
+        """fn (the module's decide) with the side's restored tuned vetoes (duel.Side.rotation_veto, the dropped-veto audit) under this
+        layer's own: a layer's entry for the same spell wins. Without restored vetoes, fn alone."""
+        extra = me.rotation_veto
+        if not extra:
+            return fn()
+        old = me.mod.veto
+        me.mod.veto = {**extra, **old}
+        try:
+            return fn()
+        finally:
+            me.mod.veto = old
+
     def rotation(self, d, me, foe):
         """The spec's own leveling rotation (the fight lab's decide), with the opponent as the mob. When its choice cannot be cast
         (its school locked by an interrupt, out of reach), the class's fillers, then the wand, so nobody stands idle (2026-11-14: two
         mages that had Counterspelled each other stood for ten seconds and half the mirrors ran out the clock)."""
         if foe.stealthed:
             return None
-        a = me.mod.decide(me.fight)
+        a = self.rotation_decide(me, lambda: me.mod.decide(me.fight))
         if a in ("wand", "advance", "shoot", "retreat"):
             return a
         hold = self.hold_swings(d, me, foe)

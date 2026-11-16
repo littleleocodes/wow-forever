@@ -1,0 +1,232 @@
+{
+ "id": "expansion-seed-subtlety",
+ "class": "rogue",
+ "tree": "Subtlety",
+ "from": "pvp-hemo-prep",
+ "expansion_builds": 2,
+ "consensus": [
+  {
+   "talent": "Malice",
+   "rank": 4,
+   "builds": 2
+  },
+  {
+   "talent": "Master of Deception",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Camouflage",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Dirty Deeds",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Dirty Tricks",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Ruthlessness",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Initiative",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Premeditation",
+   "rank": 1,
+   "builds": 2
+  },
+  {
+   "talent": "Serrated Blades",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Elusiveness",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Hemorrhage",
+   "rank": 1,
+   "builds": 2
+  },
+  {
+   "talent": "Preparation",
+   "rank": 1,
+   "builds": 2
+  },
+  {
+   "talent": "Relentless Strikes",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Coup de Grace",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Improved Gouge",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Opportunity",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Improved Ambush",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Puncturing Wounds",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Lethality",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Vigor",
+   "rank": 1,
+   "builds": 1
+  },
+  {
+   "talent": "Ghostly Strike",
+   "rank": 1,
+   "builds": 1
+  },
+  {
+   "talent": "Vile Poisons",
+   "rank": 5,
+   "builds": 1
+  },
+  {
+   "talent": "Heightened Senses",
+   "rank": 2,
+   "builds": 1
+  }
+ ],
+ "added": [
+  "Camouflage 2",
+  "Relentless Strikes 3",
+  "Vile Poisons 5"
+ ],
+ "removed": {
+  "Setup": 3,
+  "Improved Poisons": 3,
+  "Remorseless Attacks": 1,
+  "Cold Blood": 1
+ },
+ "skipped": [
+  "Coup de Grace 3 (1 of 2): no legal way to take its points back outside the consensus",
+  "Puncturing Wounds 3 (1 of 2): no legal way to take its points back outside the consensus"
+ ],
+ "split": "23/0/28",
+ "allocation": {
+  "Assassination": [
+   [
+    "Improved Gouge",
+    3
+   ],
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Vigor",
+    2
+   ],
+   [
+    "Lethality",
+    2
+   ],
+   [
+    "Vile Poisons",
+    5
+   ],
+   [
+    "Relentless Strikes",
+    3
+   ]
+  ],
+  "Combat": [],
+  "Subtlety": [
+   [
+    "Master of Deception",
+    3
+   ],
+   [
+    "Opportunity",
+    2
+   ],
+   [
+    "Dirty Deeds",
+    2
+   ],
+   [
+    "Camouflage",
+    2
+   ],
+   [
+    "Improved Ambush",
+    3
+   ],
+   [
+    "Dirty Tricks",
+    2
+   ],
+   [
+    "Initiative",
+    3
+   ],
+   [
+    "Premeditation",
+    1
+   ],
+   [
+    "Serrated Blades",
+    3
+   ],
+   [
+    "Elusiveness",
+    2
+   ],
+   [
+    "Ghostly Strike",
+    1
+   ],
+   [
+    "Heightened Senses",
+    2
+   ],
+   [
+    "Preparation",
+    1
+   ],
+   [
+    "Hemorrhage",
+    1
+   ]
+  ]
+ },
+ "scored_with": "combat-swords-raid, pvp"
+}

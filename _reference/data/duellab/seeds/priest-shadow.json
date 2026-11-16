@@ -1,0 +1,201 @@
+{
+ "id": "expansion-seed-shadow",
+ "class": "priest",
+ "tree": "Shadow",
+ "from": "shadow-pvp",
+ "expansion_builds": 4,
+ "consensus": [
+  {
+   "talent": "Shadow Focus",
+   "rank": 3,
+   "builds": 4
+  },
+  {
+   "talent": "Improved Shadow Word: Pain",
+   "rank": 2,
+   "builds": 4
+  },
+  {
+   "talent": "Shadow Reach",
+   "rank": 2,
+   "builds": 4
+  },
+  {
+   "talent": "Improved Psychic Scream",
+   "rank": 2,
+   "builds": 4
+  },
+  {
+   "talent": "Inner Focus",
+   "rank": 1,
+   "builds": 4
+  },
+  {
+   "talent": "Mind Flay",
+   "rank": 1,
+   "builds": 4
+  },
+  {
+   "talent": "Shadow Weaving",
+   "rank": 3,
+   "builds": 4
+  },
+  {
+   "talent": "Vampiric Embrace",
+   "rank": 1,
+   "builds": 4
+  },
+  {
+   "talent": "Silence",
+   "rank": 1,
+   "builds": 4
+  },
+  {
+   "talent": "Darkness",
+   "rank": 5,
+   "builds": 4
+  },
+  {
+   "talent": "Shadowform",
+   "rank": 1,
+   "builds": 4
+  },
+  {
+   "talent": "Blackout",
+   "rank": 5,
+   "builds": 3
+  },
+  {
+   "talent": "Improved Mind Blast",
+   "rank": 3,
+   "builds": 3
+  },
+  {
+   "talent": "Martyrdom",
+   "rank": 2,
+   "builds": 3
+  },
+  {
+   "talent": "Meditation",
+   "rank": 3,
+   "builds": 3
+  },
+  {
+   "talent": "Silent Resolve",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Improved Power Word: Shield",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Mental Agility",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Improved Mana Burn",
+   "rank": 2,
+   "builds": 2
+  }
+ ],
+ "added": [
+  "Improved Shadow Word: Pain 2",
+  "Meditation 3"
+ ],
+ "removed": {
+  "Early Demise": 2,
+  "Improved Mind Flay": 1
+ },
+ "skipped": [
+  "Mental Agility 3 (2 of 4): no legal way to take its points back outside the consensus",
+  "Improved Mana Burn 2 (2 of 4): no legal way to take its points back outside the consensus"
+ ],
+ "split": "17/0/34",
+ "allocation": {
+  "Discipline": [
+   [
+    "Twin Disciplines",
+    5
+   ],
+   [
+    "Silent Resolve",
+    3
+   ],
+   [
+    "Martyrdom",
+    2
+   ],
+   [
+    "Inner Focus",
+    1
+   ],
+   [
+    "Improved Power Word: Shield",
+    3
+   ],
+   [
+    "Meditation",
+    3
+   ]
+  ],
+  "Holy": [],
+  "Shadow": [
+   [
+    "Shadow Focus",
+    5
+   ],
+   [
+    "Blackout",
+    5
+   ],
+   [
+    "Improved Mind Blast",
+    5
+   ],
+   [
+    "Improved Shadow Word: Pain",
+    2
+   ],
+   [
+    "Shadow Reach",
+    2
+   ],
+   [
+    "Improved Psychic Scream",
+    2
+   ],
+   [
+    "Mind Flay",
+    1
+   ],
+   [
+    "Improved Mind Flay",
+    1
+   ],
+   [
+    "Vampiric Embrace",
+    1
+   ],
+   [
+    "Shadow Weaving",
+    3
+   ],
+   [
+    "Silence",
+    1
+   ],
+   [
+    "Darkness",
+    5
+   ],
+   [
+    "Shadowform",
+    1
+   ]
+  ]
+ },
+ "scored_with": "shadow-dps, pvp"
+}

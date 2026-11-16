@@ -1,0 +1,221 @@
+{
+ "id": "expansion-seed-enhancement",
+ "class": "shaman",
+ "tree": "Enhancement",
+ "from": "enhancement-pvp",
+ "expansion_builds": 2,
+ "consensus": [
+  {
+   "talent": "Ancestral Knowledge",
+   "rank": 4,
+   "builds": 2
+  },
+  {
+   "talent": "Thundering Strikes",
+   "rank": 5,
+   "builds": 2
+  },
+  {
+   "talent": "Elemental Weapons",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Shamanistic Focus",
+   "rank": 1,
+   "builds": 2
+  },
+  {
+   "talent": "Flurry",
+   "rank": 5,
+   "builds": 2
+  },
+  {
+   "talent": "Improved Ghost Wolf",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Stormstrike",
+   "rank": 1,
+   "builds": 2
+  },
+  {
+   "talent": "Mental Quickness",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Spirit Weapons",
+   "rank": 1,
+   "builds": 2
+  },
+  {
+   "talent": "Concussion",
+   "rank": 5,
+   "builds": 1
+  },
+  {
+   "talent": "Earth's Grasp",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Tidal Focus",
+   "rank": 5,
+   "builds": 1
+  },
+  {
+   "talent": "Elemental Devastation",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Guardian Totems",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Mental Dexterity",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Reverberation",
+   "rank": 5,
+   "builds": 1
+  },
+  {
+   "talent": "Totemic Focus",
+   "rank": 5,
+   "builds": 1
+  },
+  {
+   "talent": "Elemental Focus",
+   "rank": 1,
+   "builds": 1
+  },
+  {
+   "talent": "Elemental Warding",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Toughness",
+   "rank": 5,
+   "builds": 1
+  },
+  {
+   "talent": "Improved Stormstrike",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Maelstrom Weapon",
+   "rank": 5,
+   "builds": 1
+  }
+ ],
+ "added": [
+  "Ancestral Knowledge 4",
+  "Elemental Weapons 3",
+  "Flurry 5",
+  "Spirit Weapons 1",
+  "Elemental Focus 1"
+ ],
+ "removed": {
+  "Anticipation": 3,
+  "Eye of the Storm": 3,
+  "Call of Flame": 2,
+  "Rage of the Farseer": 1
+ },
+ "skipped": [
+  "Earth's Grasp 2 (1 of 2): no legal way to take its points back outside the consensus",
+  "Tidal Focus 5 (1 of 2): no legal way to take its points back outside the consensus",
+  "Elemental Devastation 3 (1 of 2): no legal way to take its points back outside the consensus",
+  "Totemic Focus 5 (1 of 2): no legal way to take its points back outside the consensus",
+  "Toughness 5 (1 of 2): no legal way to take its points back outside the consensus",
+  "Maelstrom Weapon 5 (1 of 2): no legal way to take its points back outside the consensus"
+ ],
+ "split": "14/37/0",
+ "allocation": {
+  "Elemental": [
+   [
+    "Concussion",
+    5
+   ],
+   [
+    "Reverberation",
+    5
+   ],
+   [
+    "Elemental Focus",
+    1
+   ],
+   [
+    "Elemental Warding",
+    3
+   ]
+  ],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Ancestral Knowledge",
+    4
+   ],
+   [
+    "Guardian Totems",
+    2
+   ],
+   [
+    "Mental Dexterity",
+    3
+   ],
+   [
+    "Elemental Weapons",
+    3
+   ],
+   [
+    "Shamanistic Focus",
+    1
+   ],
+   [
+    "Toughness",
+    4
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Stormstrike",
+    1
+   ],
+   [
+    "Improved Ghost Wolf",
+    2
+   ],
+   [
+    "Spirit Weapons",
+    1
+   ],
+   [
+    "Mental Quickness",
+    2
+   ],
+   [
+    "Improved Stormstrike",
+    2
+   ],
+   [
+    "Maelstrom Weapon",
+    2
+   ]
+  ],
+  "Restoration": []
+ },
+ "scored_with": "enhancement-dps, pvp"
+}

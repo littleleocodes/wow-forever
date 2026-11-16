@@ -1,0 +1,208 @@
+{
+ "id": "expansion-seed-frost",
+ "class": "mage",
+ "tree": "Frost",
+ "from": "frost-pvp",
+ "expansion_builds": 4,
+ "consensus": [
+  {
+   "talent": "Arcane Resilience",
+   "rank": 2,
+   "builds": 4
+  },
+  {
+   "talent": "Improved Frostbolt",
+   "rank": 5,
+   "builds": 4
+  },
+  {
+   "talent": "Frostbite",
+   "rank": 3,
+   "builds": 4
+  },
+  {
+   "talent": "Ice Shards",
+   "rank": 4,
+   "builds": 4
+  },
+  {
+   "talent": "Magic Absorption",
+   "rank": 2,
+   "builds": 4
+  },
+  {
+   "talent": "Permafrost",
+   "rank": 3,
+   "builds": 4
+  },
+  {
+   "talent": "Arctic Reach",
+   "rank": 2,
+   "builds": 4
+  },
+  {
+   "talent": "Improved Counterspell",
+   "rank": 2,
+   "builds": 4
+  },
+  {
+   "talent": "Shatter",
+   "rank": 3,
+   "builds": 4
+  },
+  {
+   "talent": "Cold Snap",
+   "rank": 1,
+   "builds": 4
+  },
+  {
+   "talent": "Ice Barrier",
+   "rank": 1,
+   "builds": 4
+  },
+  {
+   "talent": "Arcane Subtlety",
+   "rank": 2,
+   "builds": 3
+  },
+  {
+   "talent": "Frost Warding",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Arcane Concentration",
+   "rank": 5,
+   "builds": 2
+  },
+  {
+   "talent": "Improved Frost Nova",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Improved Blizzard",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Fingers of Frost",
+   "rank": 2,
+   "builds": 2
+  }
+ ],
+ "added": [
+  "Frost Warding 2",
+  "Arcane Concentration 5",
+  "Improved Blizzard 2"
+ ],
+ "removed": {
+  "Arcane Shielding": 1,
+  "Missile Barrage": 2,
+  "Frost Channeling": 1,
+  "Arcane Geometry": 1,
+  "Precision": 1
+ },
+ "skipped": [],
+ "split": "17/0/34",
+ "allocation": {
+  "Arcane": [
+   [
+    "Wand Specialization",
+    2
+   ],
+   [
+    "Improved Channeling",
+    1
+   ],
+   [
+    "Arcane Resilience",
+    2
+   ],
+   [
+    "Arcane Subtlety",
+    2
+   ],
+   [
+    "Magic Absorption",
+    2
+   ],
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Arcane Geometry",
+    1
+   ],
+   [
+    "Improved Counterspell",
+    2
+   ]
+  ],
+  "Fire": [],
+  "Frost": [
+   [
+    "Frost Warding",
+    2
+   ],
+   [
+    "Improved Frostbolt",
+    5
+   ],
+   [
+    "Precision",
+    1
+   ],
+   [
+    "Ice Shards",
+    5
+   ],
+   [
+    "Frostbite",
+    3
+   ],
+   [
+    "Improved Frost Nova",
+    2
+   ],
+   [
+    "Permafrost",
+    3
+   ],
+   [
+    "Improved Blizzard",
+    2
+   ],
+   [
+    "Ice Lance",
+    1
+   ],
+   [
+    "Arctic Reach",
+    2
+   ],
+   [
+    "Ice Block",
+    1
+   ],
+   [
+    "Shatter",
+    3
+   ],
+   [
+    "Cold Snap",
+    1
+   ],
+   [
+    "Fingers of Frost",
+    2
+   ],
+   [
+    "Ice Barrier",
+    1
+   ]
+  ]
+ },
+ "scored_with": "frost-leveling, pvp"
+}

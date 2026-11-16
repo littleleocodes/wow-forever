@@ -1,0 +1,214 @@
+{
+ "id": "expansion-seed-affliction",
+ "class": "warlock",
+ "tree": "Affliction",
+ "from": "affliction-pvp",
+ "expansion_builds": 7,
+ "consensus": [
+  {
+   "talent": "Demonic Embrace",
+   "rank": 5,
+   "builds": 7
+  },
+  {
+   "talent": "Improved Corruption",
+   "rank": 5,
+   "builds": 7
+  },
+  {
+   "talent": "Grim Reach",
+   "rank": 2,
+   "builds": 7
+  },
+  {
+   "talent": "Nightfall",
+   "rank": 2,
+   "builds": 7
+  },
+  {
+   "talent": "Siphon Life",
+   "rank": 1,
+   "builds": 7
+  },
+  {
+   "talent": "Improved Life Tap",
+   "rank": 2,
+   "builds": 6
+  },
+  {
+   "talent": "Suppression",
+   "rank": 2,
+   "builds": 6
+  },
+  {
+   "talent": "Amplify Curse",
+   "rank": 1,
+   "builds": 6
+  },
+  {
+   "talent": "Fel Concentration",
+   "rank": 3,
+   "builds": 6
+  },
+  {
+   "talent": "Curse of Exhaustion",
+   "rank": 1,
+   "builds": 6
+  },
+  {
+   "talent": "Soul Siphon",
+   "rank": 2,
+   "builds": 6
+  },
+  {
+   "talent": "Shadow Mastery",
+   "rank": 5,
+   "builds": 6
+  },
+  {
+   "talent": "Demonic Aegis",
+   "rank": 2,
+   "builds": 5
+  },
+  {
+   "talent": "Fel Vitality",
+   "rank": 3,
+   "builds": 5
+  },
+  {
+   "talent": "Master Summoner",
+   "rank": 2,
+   "builds": 5
+  },
+  {
+   "talent": "Fel Domination",
+   "rank": 1,
+   "builds": 5
+  },
+  {
+   "talent": "Improved Health Funnel",
+   "rank": 2,
+   "builds": 4
+  },
+  {
+   "talent": "Improved Bane of Agony",
+   "rank": 2,
+   "builds": 4
+  },
+  {
+   "talent": "Soul Link",
+   "rank": 1,
+   "builds": 4
+  }
+ ],
+ "added": [
+  "Grim Reach 2",
+  "Improved Life Tap 2",
+  "Improved Health Funnel 2"
+ ],
+ "removed": {
+  "Improved Drains": 3,
+  "Improved Voidwalker": 1,
+  "Unholy Power": 1
+ },
+ "skipped": [
+  "Shadow Mastery 5 (6 of 7): no legal way to take its points back outside the consensus"
+ ],
+ "split": "30/21/0",
+ "allocation": {
+  "Affliction": [
+   [
+    "Improved Life Tap",
+    2
+   ],
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Corruption",
+    5
+   ],
+   [
+    "Grim Reach",
+    2
+   ],
+   [
+    "Improved Bane of Agony",
+    2
+   ],
+   [
+    "Fel Concentration",
+    3
+   ],
+   [
+    "Amplify Curse",
+    1
+   ],
+   [
+    "Pandemic",
+    3
+   ],
+   [
+    "Nightfall",
+    2
+   ],
+   [
+    "Curse of Exhaustion",
+    1
+   ],
+   [
+    "Siphon Life",
+    1
+   ],
+   [
+    "Soul Siphon",
+    3
+   ]
+  ],
+  "Demonology": [
+   [
+    "Improved Health Funnel",
+    2
+   ],
+   [
+    "Demonic Embrace",
+    5
+   ],
+   [
+    "Unholy Power",
+    2
+   ],
+   [
+    "Demonic Aegis",
+    2
+   ],
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Demonic Energies",
+    2
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ],
+   [
+    "Master Summoner",
+    2
+   ],
+   [
+    "Fel Domination",
+    1
+   ],
+   [
+    "Soul Link",
+    1
+   ]
+  ],
+  "Destruction": []
+ },
+ "scored_with": "affliction-raid, pvp"
+}

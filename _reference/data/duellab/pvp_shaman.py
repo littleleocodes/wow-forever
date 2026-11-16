@@ -951,7 +951,7 @@ class ShamanPvP(PvPAI):
 
         def can(s):
             return s is not None and p.ready(s.name, t) and f.can_afford(s, mod.mana_cost(s))
-        a = mod.decide_elemental(f, can, True)
+        a = self.rotation_decide(me, lambda: mod.decide_elemental(f, can, True))
         name = getattr(a, "name", a)
         return a if name and me.can(name) else None
 

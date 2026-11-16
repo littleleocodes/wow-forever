@@ -1,0 +1,224 @@
+{
+ "id": "expansion-seed-assassination",
+ "class": "rogue",
+ "tree": "Assassination",
+ "from": "assassination-pvp",
+ "expansion_builds": 6,
+ "consensus": [
+  {
+   "talent": "Malice",
+   "rank": 5,
+   "builds": 6
+  },
+  {
+   "talent": "Puncturing Wounds",
+   "rank": 3,
+   "builds": 6
+  },
+  {
+   "talent": "Lethality",
+   "rank": 2,
+   "builds": 6
+  },
+  {
+   "talent": "Vigor",
+   "rank": 1,
+   "builds": 6
+  },
+  {
+   "talent": "Cold Blood",
+   "rank": 1,
+   "builds": 6
+  },
+  {
+   "talent": "Vile Poisons",
+   "rank": 4,
+   "builds": 6
+  },
+  {
+   "talent": "Seal Fate",
+   "rank": 3,
+   "builds": 6
+  },
+  {
+   "talent": "Mutilate",
+   "rank": 1,
+   "builds": 6
+  },
+  {
+   "talent": "Opportunity",
+   "rank": 2,
+   "builds": 5
+  },
+  {
+   "talent": "Camouflage",
+   "rank": 3,
+   "builds": 5
+  },
+  {
+   "talent": "Dirty Tricks",
+   "rank": 2,
+   "builds": 5
+  },
+  {
+   "talent": "Relentless Strikes",
+   "rank": 1,
+   "builds": 5
+  },
+  {
+   "talent": "Coup de Grace",
+   "rank": 3,
+   "builds": 4
+  },
+  {
+   "talent": "Elusiveness",
+   "rank": 2,
+   "builds": 4
+  },
+  {
+   "talent": "Dual Wield Specialization",
+   "rank": 2,
+   "builds": 4
+  },
+  {
+   "talent": "Improved Kidney Shot",
+   "rank": 2,
+   "builds": 4
+  },
+  {
+   "talent": "Master of Deception",
+   "rank": 3,
+   "builds": 3
+  },
+  {
+   "talent": "Dirty Deeds",
+   "rank": 2,
+   "builds": 3
+  },
+  {
+   "talent": "Initiative",
+   "rank": 3,
+   "builds": 3
+  },
+  {
+   "talent": "Preparation",
+   "rank": 1,
+   "builds": 3
+  }
+ ],
+ "added": [
+  "Malice 5",
+  "Lethality 2",
+  "Vile Poisons 4",
+  "Camouflage 3",
+  "Coup de Grace 3"
+ ],
+ "removed": {
+  "Improved Slice and Dice": 2,
+  "Ruthlessness": 1,
+  "Improved Poisons": 4,
+  "Improved Ambush": 3,
+  "Setup": 1,
+  "Ghostly Strike": 1,
+  "Premeditation": 1
+ },
+ "skipped": [
+  "Puncturing Wounds 3 (6 of 6): no legal way to take its points back outside the consensus",
+  "Dual Wield Specialization 2 (4 of 6): no legal way to take its points back outside the consensus",
+  "Preparation 1 (3 of 6): no legal way to take its points back outside the consensus"
+ ],
+ "split": "31/3/17",
+ "allocation": {
+  "Assassination": [
+   [
+    "Improved Gouge",
+    3
+   ],
+   [
+    "Remorseless Attacks",
+    1
+   ],
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    2
+   ],
+   [
+    "Vigor",
+    2
+   ],
+   [
+    "Lethality",
+    2
+   ],
+   [
+    "Vile Poisons",
+    4
+   ],
+   [
+    "Cold Blood",
+    1
+   ],
+   [
+    "Relentless Strikes",
+    4
+   ],
+   [
+    "Venom",
+    1
+   ],
+   [
+    "Improved Kidney Shot",
+    2
+   ],
+   [
+    "Seal Fate",
+    3
+   ],
+   [
+    "Mutilate",
+    1
+   ]
+  ],
+  "Combat": [
+   [
+    "Coup de Grace",
+    3
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Master of Deception",
+    3
+   ],
+   [
+    "Opportunity",
+    2
+   ],
+   [
+    "Dirty Deeds",
+    2
+   ],
+   [
+    "Camouflage",
+    3
+   ],
+   [
+    "Dirty Tricks",
+    2
+   ],
+   [
+    "Initiative",
+    3
+   ],
+   [
+    "Elusiveness",
+    2
+   ]
+  ]
+ },
+ "scored_with": "combat-swords-raid, pvp (borrowed: the tree has no stats model)"
+}

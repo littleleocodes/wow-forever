@@ -1,0 +1,216 @@
+{
+ "id": "expansion-seed-retribution",
+ "class": "paladin",
+ "tree": "Retribution",
+ "from": "retribution-pvp",
+ "expansion_builds": 4,
+ "consensus": [
+  {
+   "talent": "Benediction",
+   "rank": 5,
+   "builds": 4
+  },
+  {
+   "talent": "Conviction",
+   "rank": 3,
+   "builds": 4
+  },
+  {
+   "talent": "Guardian's Favor",
+   "rank": 2,
+   "builds": 4
+  },
+  {
+   "talent": "Improved Judgement",
+   "rank": 2,
+   "builds": 4
+  },
+  {
+   "talent": "Improved Hammer of Justice",
+   "rank": 2,
+   "builds": 4
+  },
+  {
+   "talent": "Vindication",
+   "rank": 2,
+   "builds": 4
+  },
+  {
+   "talent": "Improved Righteous Fury",
+   "rank": 3,
+   "builds": 4
+  },
+  {
+   "talent": "Repentance",
+   "rank": 1,
+   "builds": 4
+  },
+  {
+   "talent": "Stoicism",
+   "rank": 2,
+   "builds": 4
+  },
+  {
+   "talent": "Vengeance",
+   "rank": 3,
+   "builds": 4
+  },
+  {
+   "talent": "Pursuit of Justice",
+   "rank": 2,
+   "builds": 3
+  },
+  {
+   "talent": "Two-Handed Weapon Specialization",
+   "rank": 3,
+   "builds": 3
+  },
+  {
+   "talent": "Divine Strength",
+   "rank": 5,
+   "builds": 2
+  },
+  {
+   "talent": "Redoubt",
+   "rank": 5,
+   "builds": 2
+  },
+  {
+   "talent": "Precision",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Seal of Command",
+   "rank": 1,
+   "builds": 2
+  },
+  {
+   "talent": "Toughness",
+   "rank": 1,
+   "builds": 2
+  },
+  {
+   "talent": "Reckoning",
+   "rank": 4,
+   "builds": 2
+  }
+ ],
+ "added": [
+  "Benediction 5",
+  "Conviction 3",
+  "Vengeance 3",
+  "Redoubt 5",
+  "Precision 3",
+  "Guardian's Favor 2",
+  "Improved Hammer of Justice 2",
+  "Toughness 1"
+ ],
+ "removed": {
+  "Improved Seals": 3,
+  "Sacred Arbiter": 1,
+  "Champion of the Light": 3,
+  "Sanctified Judgement": 3,
+  "Deflection": 3,
+  "Unyielding Faith": 1,
+  "Holy Shock": 1,
+  "Holy Conduit": 2,
+  "Infusion of Light": 1,
+  "Reverence": 1
+ },
+ "skipped": [
+  "Improved Righteous Fury 3 (4 of 4): no legal way to take its points back outside the consensus",
+  "Stoicism 2 (4 of 4): no legal way to take its points back outside the consensus",
+  "Reckoning 4 (2 of 4): no legal way to take its points back outside the consensus"
+ ],
+ "split": "14/13/24",
+ "allocation": {
+  "Holy": [
+   [
+    "Spiritual Focus",
+    5
+   ],
+   [
+    "Divine Strength",
+    5
+   ],
+   [
+    "Reverence",
+    1
+   ],
+   [
+    "Purifying Power",
+    2
+   ],
+   [
+    "Divine Favor",
+    1
+   ]
+  ],
+  "Protection": [
+   [
+    "Redoubt",
+    5
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Guardian's Favor",
+    2
+   ],
+   [
+    "Improved Hammer of Justice",
+    2
+   ],
+   [
+    "Toughness",
+    1
+   ]
+  ],
+  "Retribution": [
+   [
+    "Benediction",
+    5
+   ],
+   [
+    "Improved Judgement",
+    2
+   ],
+   [
+    "Conviction",
+    3
+   ],
+   [
+    "Vindication",
+    3
+   ],
+   [
+    "Unyielding Faith",
+    1
+   ],
+   [
+    "Seal of Command",
+    1
+   ],
+   [
+    "Pursuit of Justice",
+    2
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Repentance",
+    1
+   ],
+   [
+    "Vengeance",
+    3
+   ]
+  ]
+ },
+ "scored_with": "holy-heal, pvp (borrowed: the tree has no stats model)"
+}

@@ -1,0 +1,187 @@
+{
+ "id": "expansion-seed-discipline",
+ "class": "priest",
+ "tree": "Discipline",
+ "from": "discipline-pvp",
+ "expansion_builds": 5,
+ "consensus": [
+  {
+   "talent": "Twilight Focus",
+   "rank": 2,
+   "builds": 5
+  },
+  {
+   "talent": "Mental Strength",
+   "rank": 5,
+   "builds": 5
+  },
+  {
+   "talent": "Improved Power Word: Shield",
+   "rank": 3,
+   "builds": 5
+  },
+  {
+   "talent": "Inner Focus",
+   "rank": 1,
+   "builds": 5
+  },
+  {
+   "talent": "Meditation",
+   "rank": 3,
+   "builds": 5
+  },
+  {
+   "talent": "Mental Agility",
+   "rank": 3,
+   "builds": 5
+  },
+  {
+   "talent": "Power Infusion",
+   "rank": 1,
+   "builds": 5
+  },
+  {
+   "talent": "Improved Renew",
+   "rank": 3,
+   "builds": 4
+  },
+  {
+   "talent": "Divine Fury",
+   "rank": 5,
+   "builds": 4
+  },
+  {
+   "talent": "Silent Resolve",
+   "rank": 3,
+   "builds": 4
+  },
+  {
+   "talent": "Improved Mana Burn",
+   "rank": 2,
+   "builds": 4
+  },
+  {
+   "talent": "Martyrdom",
+   "rank": 2,
+   "builds": 3
+  },
+  {
+   "talent": "Spell Warding",
+   "rank": 5,
+   "builds": 3
+  },
+  {
+   "talent": "Holy Nova",
+   "rank": 1,
+   "builds": 3
+  }
+ ],
+ "added": [
+  "Mental Strength 5",
+  "Mental Agility 3",
+  "Improved Renew 3",
+  "Divine Fury 5",
+  "Spell Warding 5",
+  "Holy Nova 1"
+ ],
+ "removed": {
+  "Divine Aegis": 3,
+  "Improved Inner Fire": 2,
+  "Renewed Hope": 4,
+  "Vampiric Embrace": 1,
+  "Improved Mind Flay": 2,
+  "Improved Psychic Scream": 2,
+  "Mind Flay": 1,
+  "Spirit Tap": 1,
+  "Improved Shadow Word: Pain": 2,
+  "Shadow Reach": 2,
+  "Blackout": 2
+ },
+ "skipped": [],
+ "split": "31/17/3",
+ "allocation": {
+  "Discipline": [
+   [
+    "Twin Disciplines",
+    5
+   ],
+   [
+    "Silent Resolve",
+    3
+   ],
+   [
+    "Mental Strength",
+    5
+   ],
+   [
+    "Martyrdom",
+    2
+   ],
+   [
+    "Mental Agility",
+    3
+   ],
+   [
+    "Inner Focus",
+    1
+   ],
+   [
+    "Improved Power Word: Shield",
+    3
+   ],
+   [
+    "Meditation",
+    3
+   ],
+   [
+    "Improved Mana Burn",
+    2
+   ],
+   [
+    "Soul Warding",
+    1
+   ],
+   [
+    "Penance",
+    1
+   ],
+   [
+    "Renewed Hope",
+    1
+   ],
+   [
+    "Power Infusion",
+    1
+   ]
+  ],
+  "Holy": [
+   [
+    "Twilight Focus",
+    3
+   ],
+   [
+    "Improved Renew",
+    3
+   ],
+   [
+    "Spell Warding",
+    5
+   ],
+   [
+    "Divine Fury",
+    5
+   ],
+   [
+    "Holy Nova",
+    1
+   ]
+  ],
+  "Shadow": [
+   [
+    "Blackout",
+    3
+   ]
+  ]
+ },
+ "scored_with": "holy-heal, pvp"
+}

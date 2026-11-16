@@ -1,0 +1,201 @@
+{
+ "id": "expansion-seed-fury",
+ "class": "warrior",
+ "tree": "Fury",
+ "from": "fury-pvp",
+ "expansion_builds": 1,
+ "consensus": [
+  {
+   "talent": "Booming Voice",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Cruelty",
+   "rank": 5,
+   "builds": 1
+  },
+  {
+   "talent": "Deflection",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Improved Heroic Strike",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Iron Will",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Improved Tactical Mastery",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Blood Craze",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Deep Wounds",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Enrage",
+   "rank": 4,
+   "builds": 1
+  },
+  {
+   "talent": "Piercing Howl",
+   "rank": 1,
+   "builds": 1
+  },
+  {
+   "talent": "Dual Wield Specialization",
+   "rank": 5,
+   "builds": 1
+  },
+  {
+   "talent": "Impale",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Two-Handed Weapon Specialization",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Death Wish",
+   "rank": 1,
+   "builds": 1
+  },
+  {
+   "talent": "Improved Intercept",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Flurry",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Improved Whirlwind",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Bloodthirst",
+   "rank": 1,
+   "builds": 1
+  }
+ ],
+ "added": [
+  "Booming Voice 2",
+  "Improved Heroic Strike 3",
+  "Iron Will 3",
+  "Flurry 3",
+  "Improved Whirlwind 2"
+ ],
+ "removed": {
+  "Improved Rend": 1,
+  "Unbridled Wrath": 2,
+  "Furious Precision": 1,
+  "Improved Charge": 2,
+  "Gore Drinker": 2,
+  "Anger Management": 1
+ },
+ "skipped": [
+  "Deep Wounds 3 (1 of 1): no legal way to take its points back outside the consensus",
+  "Impale 2 (1 of 1): no legal way to take its points back outside the consensus",
+  "Two-Handed Weapon Specialization 3 (1 of 1): no legal way to take its points back outside the consensus"
+ ],
+ "split": "11/37/3",
+ "allocation": {
+  "Arms": [
+   [
+    "Improved Heroic Strike",
+    3
+   ],
+   [
+    "Deflection",
+    5
+   ],
+   [
+    "Improved Tactical Mastery",
+    3
+   ]
+  ],
+  "Fury": [
+   [
+    "Booming Voice",
+    2
+   ],
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    3
+   ],
+   [
+    "Piercing Howl",
+    1
+   ],
+   [
+    "Blood Craze",
+    3
+   ],
+   [
+    "Enrage",
+    5
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ],
+   [
+    "Improved Execute",
+    2
+   ],
+   [
+    "Improved Berserker Rage",
+    2
+   ],
+   [
+    "Death Wish",
+    1
+   ],
+   [
+    "Improved Intercept",
+    2
+   ],
+   [
+    "Improved Whirlwind",
+    2
+   ],
+   [
+    "Flurry",
+    3
+   ],
+   [
+    "Bloodthirst",
+    1
+   ]
+  ],
+  "Protection": [
+   [
+    "Iron Will",
+    3
+   ]
+  ]
+ },
+ "scored_with": "fury-dw-raid, pvp"
+}

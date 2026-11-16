@@ -1,0 +1,164 @@
+{
+ "id": "expansion-seed-restoration",
+ "class": "shaman",
+ "tree": "Restoration",
+ "from": "restoration-pvp",
+ "expansion_builds": 5,
+ "consensus": [
+  {
+   "talent": "Tidal Focus",
+   "rank": 5,
+   "builds": 5
+  },
+  {
+   "talent": "Guardian Totems",
+   "rank": 2,
+   "builds": 5
+  },
+  {
+   "talent": "Ancestral Healing",
+   "rank": 3,
+   "builds": 5
+  },
+  {
+   "talent": "Healing Focus",
+   "rank": 3,
+   "builds": 5
+  },
+  {
+   "talent": "Improved Ghost Wolf",
+   "rank": 2,
+   "builds": 5
+  },
+  {
+   "talent": "Nature's Swiftness",
+   "rank": 1,
+   "builds": 5
+  },
+  {
+   "talent": "Purification",
+   "rank": 5,
+   "builds": 5
+  },
+  {
+   "talent": "Ancestral Knowledge",
+   "rank": 4,
+   "builds": 4
+  },
+  {
+   "talent": "Mana Tide Totem",
+   "rank": 1,
+   "builds": 4
+  },
+  {
+   "talent": "Restorative Totems",
+   "rank": 4,
+   "builds": 4
+  },
+  {
+   "talent": "Totemic Focus",
+   "rank": 5,
+   "builds": 3
+  },
+  {
+   "talent": "Tidal Mastery",
+   "rank": 5,
+   "builds": 3
+  }
+ ],
+ "added": [
+  "Tidal Focus 5",
+  "Ancestral Knowledge 4",
+  "Restorative Totems 4",
+  "Totemic Focus 5",
+  "Tidal Mastery 5"
+ ],
+ "removed": {
+  "Mindfulness": 2,
+  "Thundering Strikes": 2,
+  "Toughness": 2,
+  "Stormstrike": 1,
+  "Improved Reincarnation": 2,
+  "Improved Healing Wave": 5,
+  "Riptide": 1,
+  "Healing Way": 1
+ },
+ "skipped": [],
+ "split": "0/17/34",
+ "allocation": {
+  "Elemental": [],
+  "Enhancement": [
+   [
+    "Earth's Grasp",
+    2
+   ],
+   [
+    "Thundering Strikes",
+    3
+   ],
+   [
+    "Ancestral Knowledge",
+    4
+   ],
+   [
+    "Guardian Totems",
+    2
+   ],
+   [
+    "Shamanistic Focus",
+    1
+   ],
+   [
+    "Anticipation",
+    3
+   ],
+   [
+    "Improved Ghost Wolf",
+    2
+   ]
+  ],
+  "Restoration": [
+   [
+    "Tidal Focus",
+    5
+   ],
+   [
+    "Totemic Focus",
+    5
+   ],
+   [
+    "Ancestral Healing",
+    3
+   ],
+   [
+    "Healing Focus",
+    3
+   ],
+   [
+    "Tidal Mastery",
+    5
+   ],
+   [
+    "Restorative Totems",
+    4
+   ],
+   [
+    "Mana Tide Totem",
+    1
+   ],
+   [
+    "Healing Way",
+    2
+   ],
+   [
+    "Nature's Swiftness",
+    1
+   ],
+   [
+    "Purification",
+    5
+   ]
+  ]
+ },
+ "scored_with": "resto-heal, pvp"
+}

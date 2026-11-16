@@ -1,0 +1,490 @@
+{
+ "classes": {
+  "warrior/arms-2h-raid": {
+   "build": "community:tf-arms",
+   "rotation": "arms-2h-raid",
+   "tuned": {},
+   "tests": {},
+   "kept": []
+  },
+  "rogue/subtlety-leveling": {
+   "build": "community:tf-hemo",
+   "rotation": "subtlety-leveling",
+   "tuned": {
+    "Slice and Dice": {
+     "off": true
+    },
+    "Kick": {
+     "off": true
+    },
+    "Kidney Shot": {
+     "off": true
+    }
+   },
+   "tests": {
+    "Kick": {
+     "rule": {
+      "off": true
+     },
+     "seed1": {
+      "win": 0.0,
+      "margin": 0.0,
+      "by": {
+       "warrior": 0.0,
+       "priest": 0.0,
+       "hunter": 0.0,
+       "warlock": 0.0,
+       "paladin": 0.0,
+       "shaman": 0.0,
+       "druid": 0.0,
+       "mage": 0.0
+      }
+     },
+     "kept": false
+    },
+    "Kidney Shot": {
+     "rule": {
+      "off": true
+     },
+     "seed1": {
+      "win": 0.0,
+      "margin": 0.0,
+      "by": {
+       "warrior": 0.0,
+       "priest": 0.0,
+       "hunter": 0.0,
+       "warlock": 0.0,
+       "paladin": 0.0,
+       "shaman": 0.0,
+       "druid": 0.0,
+       "mage": 0.0
+      }
+     },
+     "kept": false
+    },
+    "Slice and Dice": {
+     "rule": {
+      "off": true
+     },
+     "seed1": {
+      "win": 0.0,
+      "margin": 0.0,
+      "by": {
+       "warrior": 0.0,
+       "priest": 0.0,
+       "hunter": 0.0,
+       "warlock": 0.0,
+       "paladin": 0.0,
+       "shaman": 0.0,
+       "druid": 0.0,
+       "mage": 0.0
+      }
+     },
+     "kept": false
+    }
+   },
+   "kept": [],
+   "base_win": 0.325
+  },
+  "priest/shadow-dps": {
+   "build": "community:tf-shadow",
+   "rotation": "shadow-dps",
+   "tuned": {
+    "Devouring Plague": {
+     "off": true
+    },
+    "Smite": {
+     "off": true
+    }
+   },
+   "tests": {
+    "Devouring Plague": {
+     "rule": {
+      "off": true
+     },
+     "seed1": {
+      "win": -0.1462,
+      "margin": -0.1891,
+      "by": {
+       "warrior": -0.01,
+       "rogue": -0.185,
+       "hunter": -0.225,
+       "warlock": -0.88,
+       "paladin": 0.075,
+       "shaman": 0.055,
+       "druid": 0.0,
+       "mage": 0.0
+      }
+     },
+     "kept": false
+    },
+    "Smite": {
+     "rule": {
+      "off": true
+     },
+     "seed1": {
+      "win": -0.0006,
+      "margin": 0.0036,
+      "by": {
+       "warrior": 0.0,
+       "rogue": 0.0,
+       "hunter": 0.0,
+       "warlock": 0.005,
+       "paladin": -0.01,
+       "shaman": 0.0,
+       "druid": 0.0,
+       "mage": 0.0
+      }
+     },
+     "kept": false
+    }
+   },
+   "kept": [],
+   "base_win": 0.7481
+  },
+  "hunter/mm-raid": {
+   "build": "community:tf-mm",
+   "rotation": "mm-raid",
+   "tuned": {
+    "Multi-Shot": {
+     "off": true
+    },
+    "Arcane Shot": {
+     "max_hp": 0.35
+    },
+    "Feign Death": {
+     "min_hp": 0.35
+    }
+   },
+   "tests": {
+    "Arcane Shot": {
+     "rule": {
+      "max_hp": 0.35
+     },
+     "seed1": {
+      "win": -0.0387,
+      "margin": -0.0814,
+      "by": {
+       "warrior": -0.015,
+       "rogue": -0.005,
+       "priest": -0.065,
+       "warlock": -0.04,
+       "paladin": -0.065,
+       "shaman": -0.005,
+       "druid": 0.0,
+       "mage": -0.115
+      }
+     },
+     "kept": false
+    },
+    "Feign Death": {
+     "rule": {
+      "min_hp": 0.35
+     },
+     "seed1": {
+      "win": 0.0,
+      "margin": 0.0,
+      "by": {
+       "warrior": 0.0,
+       "rogue": 0.0,
+       "priest": 0.0,
+       "warlock": 0.0,
+       "paladin": 0.0,
+       "shaman": 0.0,
+       "druid": 0.0,
+       "mage": 0.0
+      }
+     },
+     "kept": false
+    },
+    "Multi-Shot": {
+     "rule": {
+      "off": true
+     },
+     "seed1": {
+      "win": -0.0156,
+      "margin": -0.0422,
+      "by": {
+       "warrior": -0.015,
+       "rogue": -0.005,
+       "priest": -0.06,
+       "warlock": -0.05,
+       "paladin": 0.015,
+       "shaman": -0.02,
+       "druid": 0.0,
+       "mage": 0.01
+      }
+     },
+     "kept": false
+    }
+   },
+   "kept": [],
+   "base_win": 0.6606
+  },
+  "warlock/demonology-leveling": {
+   "build": "community:tf-soul-link",
+   "rotation": "demonology-leveling",
+   "tuned": {
+    "Corruption": {
+     "min_hp": 0.35
+    },
+    "Searing Pain": {
+     "min_mana": 0.3,
+     "min_hp": 0.35
+    }
+   },
+   "tests": {
+    "Corruption": {
+     "rule": {
+      "min_hp": 0.35
+     },
+     "seed1": {
+      "win": -0.0063,
+      "margin": -0.0076,
+      "by": {
+       "warrior": 0.0,
+       "rogue": 0.0,
+       "priest": -0.01,
+       "hunter": 0.0,
+       "paladin": -0.015,
+       "shaman": 0.0,
+       "druid": -0.025,
+       "mage": 0.0
+      }
+     },
+     "kept": false
+    },
+    "Searing Pain": {
+     "rule": {
+      "min_mana": 0.3,
+      "min_hp": 0.35
+     },
+     "seed1": {
+      "win": 0.0,
+      "margin": 0.0,
+      "by": {
+       "warrior": 0.0,
+       "rogue": 0.0,
+       "priest": 0.0,
+       "hunter": 0.0,
+       "paladin": 0.0,
+       "shaman": 0.0,
+       "druid": 0.0,
+       "mage": 0.0
+      }
+     },
+     "kept": false
+    }
+   },
+   "kept": [],
+   "base_win": 0.4925
+  },
+  "paladin/ret-dps": {
+   "build": "community:tf-ret-prot",
+   "rotation": "ret-dps",
+   "tuned": {
+    "Consecration": {
+     "off": true
+    },
+    "Hammer of Wrath": {
+     "off": true
+    }
+   },
+   "tests": {
+    "Consecration": {
+     "rule": {
+      "off": true
+     },
+     "seed1": {
+      "win": -0.025,
+      "margin": -0.0309,
+      "by": {
+       "warrior": -0.07,
+       "rogue": 0.07,
+       "priest": -0.025,
+       "hunter": 0.0,
+       "warlock": -0.015,
+       "shaman": 0.0,
+       "druid": -0.16,
+       "mage": 0.0
+      }
+     },
+     "kept": false
+    },
+    "Hammer of Wrath": {
+     "rule": {
+      "off": true
+     },
+     "seed1": {
+      "win": -0.0338,
+      "margin": -0.0308,
+      "by": {
+       "warrior": -0.03,
+       "rogue": -0.055,
+       "priest": -0.085,
+       "hunter": 0.01,
+       "warlock": 0.0,
+       "shaman": -0.035,
+       "druid": -0.05,
+       "mage": -0.025
+      }
+     },
+     "kept": false
+    }
+   },
+   "kept": [],
+   "base_win": 0.7638
+  },
+  "shaman/enhancement-dps": {
+   "build": "community:tf-enhancement",
+   "rotation": "enhancement-dps",
+   "tuned": {
+    "Lightning Bolt": {
+     "max_hp": 0.35
+    }
+   },
+   "tests": {
+    "Lightning Bolt": {
+     "rule": {
+      "max_hp": 0.35
+     },
+     "seed1": {
+      "win": 0.0006,
+      "margin": -0.0006,
+      "by": {
+       "warrior": 0.0,
+       "rogue": 0.0,
+       "priest": 0.0,
+       "hunter": 0.0,
+       "warlock": -0.01,
+       "paladin": 0.0,
+       "druid": 0.02,
+       "mage": -0.005
+      }
+     },
+     "kept": false
+    }
+   },
+   "kept": [],
+   "base_win": 0.5806
+  },
+  "druid/feral-cat-dps": {
+   "build": "community:tf-feral-resto",
+   "rotation": "feral-cat-dps",
+   "tuned": {
+    "Shred": {
+     "off": true
+    }
+   },
+   "tests": {
+    "Shred": {
+     "rule": {
+      "off": true
+     },
+     "seed1": {
+      "win": 0.0,
+      "margin": 0.0,
+      "by": {
+       "warrior": 0.0,
+       "rogue": 0.0,
+       "priest": 0.0,
+       "hunter": 0.0,
+       "warlock": 0.0,
+       "paladin": 0.0,
+       "shaman": 0.0,
+       "mage": 0.0
+      }
+     },
+     "kept": false
+    }
+   },
+   "kept": [],
+   "base_win": 0.2625
+  },
+  "mage/frost-leveling": {
+   "build": "community:tf-frost",
+   "rotation": "frost-leveling",
+   "tuned": {
+    "Frostbolt": {
+     "min_hp": 0.2
+    },
+    "Cone of Cold": {
+     "off": true
+    },
+    "Fire Blast": {
+     "max_hp": 0.2,
+     "min_hp": 0.1
+    }
+   },
+   "tests": {
+    "Cone of Cold": {
+     "rule": {
+      "off": true
+     },
+     "seed1": {
+      "win": -0.0006,
+      "margin": -0.0023,
+      "by": {
+       "warrior": 0.0,
+       "rogue": -0.005,
+       "priest": 0.0,
+       "hunter": 0.0,
+       "warlock": 0.0,
+       "paladin": 0.005,
+       "shaman": 0.0,
+       "druid": -0.005
+      }
+     },
+     "kept": false
+    },
+    "Fire Blast": {
+     "rule": {
+      "max_hp": 0.2,
+      "min_hp": 0.1
+     },
+     "seed1": {
+      "win": -0.0387,
+      "margin": -0.0282,
+      "by": {
+       "warrior": 0.005,
+       "rogue": 0.0,
+       "priest": 0.0,
+       "hunter": 0.0,
+       "warlock": 0.0,
+       "paladin": 0.01,
+       "shaman": -0.34,
+       "druid": 0.015
+      }
+     },
+     "kept": false
+    },
+    "Frostbolt": {
+     "rule": {
+      "min_hp": 0.2
+     },
+     "seed1": {
+      "win": 0.0069,
+      "margin": 0.0041,
+      "by": {
+       "warrior": 0.005,
+       "rogue": 0.005,
+       "priest": 0.0,
+       "hunter": 0.035,
+       "warlock": 0.0,
+       "paladin": 0.005,
+       "shaman": 0.015,
+       "druid": -0.01
+      }
+     },
+     "kept": false
+    }
+   },
+   "kept": [],
+   "base_win": 0.4031
+  }
+ },
+ "date": "2026-11-15",
+ "n": 200,
+ "rule": "kept: +1 point of mean win rate over the eight other classes on seed 1 and +0.5 on seed 2, or the win rate within half a point on both and the mean health margin +0.02 on both; a class's kept vetoes together on seed 3, else the best single one",
+ "kept": {}
+}

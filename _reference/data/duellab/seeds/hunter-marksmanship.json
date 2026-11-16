@@ -1,0 +1,199 @@
+{
+ "id": "expansion-seed-marksmanship",
+ "class": "hunter",
+ "tree": "Marksmanship",
+ "from": "marksmanship-pvp",
+ "expansion_builds": 4,
+ "consensus": [
+  {
+   "talent": "Hawk Eye",
+   "rank": 3,
+   "builds": 4
+  },
+  {
+   "talent": "Lethal Attacks",
+   "rank": 5,
+   "builds": 4
+  },
+  {
+   "talent": "Careful Aim",
+   "rank": 3,
+   "builds": 4
+  },
+  {
+   "talent": "Improved Stings",
+   "rank": 3,
+   "builds": 4
+  },
+  {
+   "talent": "Mortal Shots",
+   "rank": 5,
+   "builds": 4
+  },
+  {
+   "talent": "Trueshot Aura",
+   "rank": 1,
+   "builds": 4
+  },
+  {
+   "talent": "Barrage",
+   "rank": 3,
+   "builds": 4
+  },
+  {
+   "talent": "Scatter Shot",
+   "rank": 1,
+   "builds": 4
+  },
+  {
+   "talent": "Entrapment",
+   "rank": 3,
+   "builds": 3
+  },
+  {
+   "talent": "Ranged Weapon Specialization",
+   "rank": 3,
+   "builds": 3
+  },
+  {
+   "talent": "Endurance Training",
+   "rank": 5,
+   "builds": 2
+  },
+  {
+   "talent": "Improved Concussive Shot",
+   "rank": 4,
+   "builds": 2
+  },
+  {
+   "talent": "Improved Tracking",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Efficiency",
+   "rank": 4,
+   "builds": 2
+  },
+  {
+   "talent": "Improved Revive Pet",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Improved Wing Clip",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Improved Arcane Shot",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Survival Tactics",
+   "rank": 2,
+   "builds": 2
+  }
+ ],
+ "added": [
+  "Lethal Attacks 5",
+  "Ranged Weapon Specialization 3",
+  "Improved Tracking 2"
+ ],
+ "removed": {
+  "Lone Wolf": 1,
+  "Rapid Killing": 2,
+  "Sniper Shot": 1,
+  "Surefooted": 2,
+  "Deflection": 2
+ },
+ "skipped": [
+  "Mortal Shots 5 (4 of 4): no legal way to take its points back outside the consensus",
+  "Barrage 3 (4 of 4): no legal way to take its points back outside the consensus",
+  "Endurance Training 5 (2 of 4): no legal way to take its points back outside the consensus",
+  "Efficiency 4 (2 of 4): no legal way to take its points back outside the consensus",
+  "Improved Revive Pet 2 (2 of 4): no legal way to take its points back outside the consensus"
+ ],
+ "split": "0/33/18",
+ "allocation": {
+  "Beast Mastery": [],
+  "Marksmanship": [
+   [
+    "Hawk Eye",
+    3
+   ],
+   [
+    "Improved Concussive Shot",
+    5
+   ],
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Improved Arcane Shot",
+    5
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Mortal Shots",
+    2
+   ],
+   [
+    "Scatter Shot",
+    1
+   ],
+   [
+    "Ranged Weapon Specialization",
+    3
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    2
+   ],
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Entrapment",
+    5
+   ],
+   [
+    "Improved Wing Clip",
+    3
+   ],
+   [
+    "Surefooted",
+    1
+   ],
+   [
+    "Deterrence",
+    1
+   ],
+   [
+    "Survival Tactics",
+    2
+   ],
+   [
+    "Counterattack",
+    1
+   ]
+  ]
+ },
+ "scored_with": "bm-leveling, pvp (borrowed: the tree has no stats model)"
+}

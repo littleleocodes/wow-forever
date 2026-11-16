@@ -1,0 +1,201 @@
+{
+ "id": "expansion-seed-arms",
+ "class": "warrior",
+ "tree": "Arms",
+ "from": "arms-pvp",
+ "expansion_builds": 5,
+ "consensus": [
+  {
+   "talent": "Cruelty",
+   "rank": 5,
+   "builds": 5
+  },
+  {
+   "talent": "Deflection",
+   "rank": 5,
+   "builds": 5
+  },
+  {
+   "talent": "Improved Overpower",
+   "rank": 2,
+   "builds": 5
+  },
+  {
+   "talent": "Improved Tactical Mastery",
+   "rank": 3,
+   "builds": 5
+  },
+  {
+   "talent": "Deep Wounds",
+   "rank": 3,
+   "builds": 5
+  },
+  {
+   "talent": "Piercing Howl",
+   "rank": 1,
+   "builds": 5
+  },
+  {
+   "talent": "Impale",
+   "rank": 2,
+   "builds": 5
+  },
+  {
+   "talent": "Two-Handed Weapon Specialization",
+   "rank": 3,
+   "builds": 5
+  },
+  {
+   "talent": "Improved Hamstring",
+   "rank": 3,
+   "builds": 5
+  },
+  {
+   "talent": "Mortal Strike",
+   "rank": 1,
+   "builds": 5
+  },
+  {
+   "talent": "Booming Voice",
+   "rank": 4,
+   "builds": 4
+  },
+  {
+   "talent": "Iron Will",
+   "rank": 5,
+   "builds": 4
+  },
+  {
+   "talent": "Blood Craze",
+   "rank": 3,
+   "builds": 4
+  },
+  {
+   "talent": "Anger Management",
+   "rank": 1,
+   "builds": 3
+  },
+  {
+   "talent": "Enrage",
+   "rank": 2,
+   "builds": 3
+  },
+  {
+   "talent": "Death Wish",
+   "rank": 1,
+   "builds": 3
+  },
+  {
+   "talent": "Improved Intercept",
+   "rank": 2,
+   "builds": 3
+  },
+  {
+   "talent": "Sweeping Strikes",
+   "rank": 1,
+   "builds": 3
+  },
+  {
+   "talent": "Weaponmaster",
+   "rank": 5,
+   "builds": 3
+  }
+ ],
+ "added": [
+  "Deflection 5",
+  "Improved Overpower 2",
+  "Booming Voice 4"
+ ],
+ "removed": {
+  "Improved Heroic Strike": 2,
+  "Unbridled Wrath": 4,
+  "Improved Charge": 2,
+  "Improved Slam": 1
+ },
+ "skipped": [
+  "Iron Will 5 (4 of 5): no legal way to take its points back outside the consensus",
+  "Death Wish 1 (3 of 5): no legal way to take its points back outside the consensus",
+  "Improved Intercept 2 (3 of 5): no legal way to take its points back outside the consensus"
+ ],
+ "split": "32/19/0",
+ "allocation": {
+  "Arms": [
+   [
+    "Deflection",
+    5
+   ],
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Tactical Mastery",
+    3
+   ],
+   [
+    "Improved Overpower",
+    2
+   ],
+   [
+    "Anger Management",
+    1
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Impale",
+    2
+   ],
+   [
+    "Sweeping Strikes",
+    1
+   ],
+   [
+    "Weaponmaster",
+    5
+   ],
+   [
+    "Improved Hamstring",
+    3
+   ],
+   [
+    "Mortal Strike",
+    1
+   ]
+  ],
+  "Fury": [
+   [
+    "Booming Voice",
+    4
+   ],
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    1
+   ],
+   [
+    "Piercing Howl",
+    1
+   ],
+   [
+    "Blood Craze",
+    3
+   ],
+   [
+    "Enrage",
+    5
+   ]
+  ],
+  "Protection": []
+ },
+ "scored_with": "arms-2h-raid, pvp"
+}

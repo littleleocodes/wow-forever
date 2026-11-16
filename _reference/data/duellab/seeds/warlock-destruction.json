@@ -1,0 +1,207 @@
+{
+ "id": "expansion-seed-destruction",
+ "class": "warlock",
+ "tree": "Destruction",
+ "from": "destruction-pvp",
+ "expansion_builds": 2,
+ "consensus": [
+  {
+   "talent": "Bane",
+   "rank": 5,
+   "builds": 2
+  },
+  {
+   "talent": "Demonic Embrace",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Destructive Reach",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Improved Health Funnel",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Aftermath",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Demonic Aegis",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Fel Vitality",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Molten Skin",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Master Summoner",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Ruin",
+   "rank": 5,
+   "builds": 2
+  },
+  {
+   "talent": "Shadowburn",
+   "rank": 1,
+   "builds": 2
+  },
+  {
+   "talent": "Conflagrate",
+   "rank": 1,
+   "builds": 2
+  },
+  {
+   "talent": "Fel Domination",
+   "rank": 1,
+   "builds": 2
+  },
+  {
+   "talent": "Intensity",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Fire and Brimstone",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Soul Link",
+   "rank": 1,
+   "builds": 2
+  },
+  {
+   "talent": "Improved Shadow Bolt",
+   "rank": 4,
+   "builds": 1
+  },
+  {
+   "talent": "Suppression",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Pyroclasm",
+   "rank": 1,
+   "builds": 1
+  }
+ ],
+ "added": [
+  "Bane 5",
+  "Demonic Embrace 3",
+  "Improved Health Funnel 2",
+  "Demonic Aegis 2",
+  "Fel Vitality 3",
+  "Master Summoner 2",
+  "Fire and Brimstone 3"
+ ],
+ "removed": {
+  "Bane of Havoc": 1,
+  "Agonizing Flames": 3,
+  "Siphon Life": 1,
+  "Pandemic": 3,
+  "Nightfall": 2,
+  "Curse of Exhaustion": 1,
+  "Fel Concentration": 3,
+  "Amplify Curse": 1,
+  "Improved Corruption": 2
+ },
+ "skipped": [
+  "Fel Domination 1 (2 of 2): no legal way to take its points back outside the consensus",
+  "Soul Link 1 (2 of 2): no legal way to take its points back outside the consensus",
+  "Improved Shadow Bolt 4 (1 of 2): no legal way to take its points back outside the consensus"
+ ],
+ "split": "8/12/31",
+ "allocation": {
+  "Affliction": [
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Corruption",
+    3
+   ]
+  ],
+  "Demonology": [
+   [
+    "Improved Health Funnel",
+    2
+   ],
+   [
+    "Demonic Embrace",
+    3
+   ],
+   [
+    "Demonic Aegis",
+    2
+   ],
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Master Summoner",
+    2
+   ]
+  ],
+  "Destruction": [
+   [
+    "Destructive Reach",
+    2
+   ],
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Molten Skin",
+    5
+   ],
+   [
+    "Aftermath",
+    5
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Shadowburn",
+    1
+   ],
+   [
+    "Intensity",
+    3
+   ],
+   [
+    "Conflagrate",
+    1
+   ],
+   [
+    "Pyroclasm",
+    1
+   ],
+   [
+    "Fire and Brimstone",
+    3
+   ]
+  ]
+ },
+ "scored_with": "sb-raid, pvp (borrowed: the tree has no stats model)"
+}

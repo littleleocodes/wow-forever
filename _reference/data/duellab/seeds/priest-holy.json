@@ -1,0 +1,182 @@
+{
+ "id": "expansion-seed-holy",
+ "class": "priest",
+ "tree": "Holy",
+ "from": "holy-pvp",
+ "expansion_builds": 1,
+ "consensus": [
+  {
+   "talent": "Holy Specialization",
+   "rank": 5,
+   "builds": 1
+  },
+  {
+   "talent": "Improved Renew",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Twilight Focus",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Silent Resolve",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Spell Warding",
+   "rank": 5,
+   "builds": 1
+  },
+  {
+   "talent": "Improved Power Word: Shield",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Inner Focus",
+   "rank": 1,
+   "builds": 1
+  },
+  {
+   "talent": "Inspiration",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Meditation",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Holy Reach",
+   "rank": 1,
+   "builds": 1
+  },
+  {
+   "talent": "Improved Inner Fire",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Spirit of Redemption",
+   "rank": 1,
+   "builds": 1
+  },
+  {
+   "talent": "Spiritual Guidance",
+   "rank": 5,
+   "builds": 1
+  },
+  {
+   "talent": "Spiritual Healing",
+   "rank": 3,
+   "builds": 1
+  }
+ ],
+ "added": [
+  "Holy Specialization 5",
+  "Improved Renew 3",
+  "Spell Warding 5"
+ ],
+ "removed": {
+  "Litany of Light": 1,
+  "Holy Nova": 1,
+  "Holy Binding": 1,
+  "Blessed Recovery": 3
+ },
+ "skipped": [
+  "Silent Resolve 2 (1 of 1): no legal way to take its points back outside the consensus",
+  "Improved Power Word: Shield 3 (1 of 1): no legal way to take its points back outside the consensus",
+  "Inner Focus 1 (1 of 1): no legal way to take its points back outside the consensus",
+  "Meditation 3 (1 of 1): no legal way to take its points back outside the consensus",
+  "Improved Inner Fire 3 (1 of 1): no legal way to take its points back outside the consensus"
+ ],
+ "split": "0/35/16",
+ "allocation": {
+  "Discipline": [],
+  "Holy": [
+   [
+    "Twilight Focus",
+    3
+   ],
+   [
+    "Improved Renew",
+    3
+   ],
+   [
+    "Holy Specialization",
+    5
+   ],
+   [
+    "Spell Warding",
+    5
+   ],
+   [
+    "Divine Fury",
+    5
+   ],
+   [
+    "Inspiration",
+    3
+   ],
+   [
+    "Holy Reach",
+    1
+   ],
+   [
+    "Spirit of Redemption",
+    1
+   ],
+   [
+    "Spiritual Guidance",
+    5
+   ],
+   [
+    "Spiritual Healing",
+    3
+   ],
+   [
+    "Prayer of Mending",
+    1
+   ]
+  ],
+  "Shadow": [
+   [
+    "Blackout",
+    5
+   ],
+   [
+    "Spirit Tap",
+    1
+   ],
+   [
+    "Improved Shadow Word: Pain",
+    2
+   ],
+   [
+    "Shadow Reach",
+    2
+   ],
+   [
+    "Improved Psychic Scream",
+    2
+   ],
+   [
+    "Mind Flay",
+    1
+   ],
+   [
+    "Improved Mind Flay",
+    2
+   ],
+   [
+    "Vampiric Embrace",
+    1
+   ]
+  ]
+ },
+ "scored_with": "holy-heal, pvp"
+}

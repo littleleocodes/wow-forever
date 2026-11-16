@@ -1,0 +1,188 @@
+{
+ "id": "expansion-seed-protection",
+ "class": "warrior",
+ "tree": "Protection",
+ "from": "protection-pvp",
+ "expansion_builds": 1,
+ "consensus": [
+  {
+   "talent": "Cruelty",
+   "rank": 4,
+   "builds": 1
+  },
+  {
+   "talent": "Deflection",
+   "rank": 5,
+   "builds": 1
+  },
+  {
+   "talent": "Improved Bloodrage",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Iron Will",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Shield Specialization",
+   "rank": 5,
+   "builds": 1
+  },
+  {
+   "talent": "Anticipation",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Improved Revenge",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Improved Tactical Mastery",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Deep Wounds",
+   "rank": 1,
+   "builds": 1
+  },
+  {
+   "talent": "Improved Disarm",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Last Stand",
+   "rank": 1,
+   "builds": 1
+  },
+  {
+   "talent": "Impale",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Improved Shield Bash",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Improved Sunder Armor",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Concussion Blow",
+   "rank": 1,
+   "builds": 1
+  },
+  {
+   "talent": "Focused Rage",
+   "rank": 3,
+   "builds": 1
+  }
+ ],
+ "added": [
+  "Deflection 5",
+  "Anticipation 3",
+  "Improved Revenge 2",
+  "Improved Tactical Mastery 2",
+  "Improved Sunder Armor 3"
+ ],
+ "removed": {
+  "Improved Thunder Clap": 2,
+  "Master of Defense": 2,
+  "Improved Shield Wall": 2,
+  "Vanguard": 1,
+  "Death Wish": 1,
+  "Furious Precision": 1,
+  "Blood Craze": 3,
+  "Enrage": 2
+ },
+ "skipped": [
+  "Deep Wounds 1 (1 of 1): no legal way to take its points back outside the consensus",
+  "Impale 2 (1 of 1): no legal way to take its points back outside the consensus"
+ ],
+ "split": "7/14/30",
+ "allocation": {
+  "Arms": [
+   [
+    "Deflection",
+    5
+   ],
+   [
+    "Improved Tactical Mastery",
+    2
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Piercing Howl",
+    1
+   ],
+   [
+    "Enrage",
+    3
+   ]
+  ],
+  "Protection": [
+   [
+    "Improved Bloodrage",
+    2
+   ],
+   [
+    "Shield Specialization",
+    5
+   ],
+   [
+    "Iron Will",
+    5
+   ],
+   [
+    "Anticipation",
+    3
+   ],
+   [
+    "Improved Revenge",
+    2
+   ],
+   [
+    "Last Stand",
+    1
+   ],
+   [
+    "Improved Disarm",
+    3
+   ],
+   [
+    "Improved Sunder Armor",
+    3
+   ],
+   [
+    "Improved Shield Bash",
+    2
+   ],
+   [
+    "Concussion Blow",
+    1
+   ],
+   [
+    "Focused Rage",
+    3
+   ]
+  ]
+ },
+ "scored_with": "fury-dw-raid, pvp (borrowed: the tree has no stats model)"
+}

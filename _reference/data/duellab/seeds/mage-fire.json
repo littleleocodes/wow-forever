@@ -1,0 +1,215 @@
+{
+ "id": "expansion-seed-fire",
+ "class": "mage",
+ "tree": "Fire",
+ "from": "fire-pvp",
+ "expansion_builds": 1,
+ "consensus": [
+  {
+   "talent": "Arcane Resilience",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Incineration",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Arcane Subtlety",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Flame Throwing",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Ignite",
+   "rank": 5,
+   "builds": 1
+  },
+  {
+   "talent": "Impact",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Magic Absorption",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Improved Fire Blast",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Pyroblast",
+   "rank": 1,
+   "builds": 1
+  },
+  {
+   "talent": "Arcane Shielding",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Heating Up",
+   "rank": 1,
+   "builds": 1
+  },
+  {
+   "talent": "Improved Counterspell",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Improved Scorch",
+   "rank": 1,
+   "builds": 1
+  },
+  {
+   "talent": "Blast Wave",
+   "rank": 1,
+   "builds": 1
+  },
+  {
+   "talent": "Critical Mass",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Fire Power",
+   "rank": 3,
+   "builds": 1
+  },
+  {
+   "talent": "Combustion",
+   "rank": 1,
+   "builds": 1
+  }
+ ],
+ "added": [
+  "Arcane Resilience 3",
+  "Incineration 3"
+ ],
+ "removed": {
+  "Burning Soul": 1,
+  "Shatter": 2,
+  "Accelerant": 3
+ },
+ "skipped": [
+  "Arcane Subtlety 2 (1 of 1): no legal way to take its points back outside the consensus",
+  "Magic Absorption 2 (1 of 1): no legal way to take its points back outside the consensus",
+  "Arcane Shielding 2 (1 of 1): no legal way to take its points back outside the consensus",
+  "Improved Counterspell 2 (1 of 1): no legal way to take its points back outside the consensus"
+ ],
+ "split": "3/31/17",
+ "allocation": {
+  "Arcane": [
+   [
+    "Arcane Resilience",
+    3
+   ]
+  ],
+  "Fire": [
+   [
+    "Incineration",
+    3
+   ],
+   [
+    "Accelerant",
+    2
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Flame Throwing",
+    2
+   ],
+   [
+    "Impact",
+    3
+   ],
+   [
+    "Burning Soul",
+    2
+   ],
+   [
+    "Pyroblast",
+    1
+   ],
+   [
+    "Improved Fire Blast",
+    2
+   ],
+   [
+    "Improved Scorch",
+    2
+   ],
+   [
+    "Heating Up",
+    1
+   ],
+   [
+    "Critical Mass",
+    3
+   ],
+   [
+    "Blast Wave",
+    1
+   ],
+   [
+    "Fire Power",
+    3
+   ],
+   [
+    "Combustion",
+    1
+   ]
+  ],
+  "Frost": [
+   [
+    "Frost Warding",
+    2
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Ice Shards",
+    1
+   ],
+   [
+    "Frostbite",
+    3
+   ],
+   [
+    "Improved Frost Nova",
+    2
+   ],
+   [
+    "Permafrost",
+    3
+   ],
+   [
+    "Ice Lance",
+    1
+   ],
+   [
+    "Ice Block",
+    1
+   ],
+   [
+    "Shatter",
+    1
+   ]
+  ]
+ },
+ "scored_with": "fire-leveling, pvp"
+}

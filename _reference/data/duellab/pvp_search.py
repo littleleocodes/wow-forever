@@ -139,10 +139,13 @@ def search(cls, refs, tree, steps=20, batch=48, n_screen=40, n_confirm=120, bar=
                 log(f"  step {step}: {nb[best][0]}: J {cur_j:.3f} (+{g2:.3f} confirmed), win {conf['new']['win']:.1%}")
             else:
                 log(f"  step {step}: {nb[best][0]} +{gain:.3f} on screening, {g2:+.3f} on seed {seed + 1}: not kept")
-        final = evaluate([("final", cls, cur)], n_confirm * 2, seed + 2, pool=pool)["final"]
+        # the winner and every start on the same duels (seed + 2, twice the confirmation duels): the comparison a report quotes
+        race = evaluate([("final", cls, cur)] + [(r, cls, a) for r, a in starts], n_confirm * 2, seed + 2, pool=pool)
+        final = race["final"]
     return {"class": cls, "tree": tree, "starts": [r for r, _ in starts], "history": hist, "final": cur, "J": round(final["J"], 4),
             "win": round(final["win"], 4), "margin": round(final["margin"], 4),
             "by": {k: [round(x, 4) for x in v] for k, v in final["by"].items()},
+            "race": {k: {"J": round(v["J"], 4), "win": round(v["win"], 4), "margin": round(v["margin"], 4)} for k, v in race.items()},
             "settings": {"steps": steps, "batch": batch, "n_screen": n_screen, "n_confirm": n_confirm, "bar": bar, "seed": seed,
                          "margin_weight": MARGIN_W, "field": PF.FIELD}, "date": datetime.date.today().isoformat()}
 

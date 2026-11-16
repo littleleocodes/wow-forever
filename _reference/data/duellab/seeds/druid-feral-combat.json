@@ -1,0 +1,187 @@
+{
+ "id": "expansion-seed-feral-combat",
+ "class": "druid",
+ "tree": "Feral Combat",
+ "from": "feral-combat-pvp",
+ "expansion_builds": 2,
+ "consensus": [
+  {
+   "talent": "Ferocity",
+   "rank": 5,
+   "builds": 2
+  },
+  {
+   "talent": "Furor",
+   "rank": 5,
+   "builds": 2
+  },
+  {
+   "talent": "Heart of the Wild",
+   "rank": 5,
+   "builds": 2
+  },
+  {
+   "talent": "Brutal Impact",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Feral Instinct",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Feral Swiftness",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Natural Shapeshifter",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Naturalist",
+   "rank": 5,
+   "builds": 2
+  },
+  {
+   "talent": "Feral Charge",
+   "rank": 1,
+   "builds": 2
+  },
+  {
+   "talent": "Sharpened Claws",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Shredding Attacks",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Blood Frenzy",
+   "rank": 2,
+   "builds": 2
+  },
+  {
+   "talent": "Predatory Strikes",
+   "rank": 3,
+   "builds": 2
+  },
+  {
+   "talent": "Leader of the Pack",
+   "rank": 1,
+   "builds": 2
+  },
+  {
+   "talent": "Savage Fury",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Natural Instinct",
+   "rank": 2,
+   "builds": 1
+  },
+  {
+   "talent": "Rend and Tear",
+   "rank": 5,
+   "builds": 1
+  }
+ ],
+ "added": [
+  "Ferocity 5",
+  "Shredding Attacks 2",
+  "Rend and Tear 5"
+ ],
+ "removed": {
+  "Primal Bite": 1,
+  "Thick Hide": 3,
+  "Nature's Focus": 4,
+  "Swiftmend": 1
+ },
+ "skipped": [],
+ "split": "0/37/14",
+ "allocation": {
+  "Balance": [],
+  "Feral Combat": [
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Furor",
+    5
+   ],
+   [
+    "Feral Swiftness",
+    2
+   ],
+   [
+    "Feral Instinct",
+    3
+   ],
+   [
+    "Brutal Impact",
+    2
+   ],
+   [
+    "Shredding Attacks",
+    2
+   ],
+   [
+    "Savage Fury",
+    2
+   ],
+   [
+    "Feral Charge",
+    1
+   ],
+   [
+    "Sharpened Claws",
+    2
+   ],
+   [
+    "Predatory Strikes",
+    3
+   ],
+   [
+    "Blood Frenzy",
+    2
+   ],
+   [
+    "Leader of the Pack",
+    1
+   ],
+   [
+    "Natural Instinct",
+    2
+   ],
+   [
+    "Rend and Tear",
+    5
+   ]
+  ],
+  "Restoration": [
+   [
+    "Nature's Focus",
+    1
+   ],
+   [
+    "Heart of the Wild",
+    5
+   ],
+   [
+    "Naturalist",
+    5
+   ],
+   [
+    "Natural Shapeshifter",
+    3
+   ]
+  ]
+ },
+ "scored_with": "feral-cat-dps, pvp"
+}
