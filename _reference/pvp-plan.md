@@ -71,6 +71,8 @@ necessary").
 - Pets cannot be attacked or controlled.
 - Warrior stances are not modelled (every ability is usable).
 - The AI plays well but not perfectly. A matchup's number is the model's AI against the model's AI.
+- The mage wears Ice Armor in every duel (`duel.PVE_KNOBS`, 2026-11-15). Frost Armor's longer chill, or Mage Armor's resistances and
+  regeneration, are untested in duels.
 
 ## Log
 
@@ -198,3 +200,13 @@ necessary").
     is a damage modifier on the whole off-hand hit, attack power included, as the raid simulator applies it. The melee Survival
     hunter's off hand is undervalued about 20%. Found 2026-11-14 comparing a guildmate's swords to a two-hander: the staff led by
     1.1% under the lab's rule and tied (±0.2%) under the whole-hit rule.
+- 2026-11-15, the full matrix on the current code (`pvp_field.py --matrix --n 200`, `_reference/pvp-matchups.md`; 2 minutes on 2 cores):
+  - A first run put the mage at 33%. The mage rules' new `MAGE_ARMOR` knob (Mage Armor from 34, tuned the same day for leveling
+    regeneration) reached the duel: `make_module` applies every rules knob, and the side cleared only the vetoes. The duel mage wore
+    Mage Armor and lost Ice Armor's armor and its chill on melee attackers: against the druid 62% -> 26%, the shaman 83% -> 76%, the
+    rogue 59% -> 53%, the hunter 12% -> 6%. `duel.PVE_KNOBS` now keeps the module's default for such knobs (MAGE_ARMOR), and the
+    rerun restores those cells. The other knobs that reach a duel shape the rotation and stay: the priest's WAND_BELOW and
+    SHIELD_BELOW, Fire's PYRO_OPENER.
+  - Means: paladin 77%, priest 74%, hunter 66%, shaman 59%, warlock 48%, mage 40%, rogue 33%, druid 27%, warrior 26%. Every class is
+    within a point of pass 2's means, which had carried pass 1's values for seven pairs.
+  - Next: the audit of the dropped tuned vetoes, then the searches.

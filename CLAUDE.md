@@ -437,7 +437,9 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   armor or ice armor?"; the module had always worn Ice Armor): `mage.MAGE_ARMOR` wears Mage Armor from 34 (50% of regeneration while
   casting at every rank in Forever, adding to Arcane Meditation). The tunes took it for Frost, Arcane, Arcane-Frost and Frostfire (up to 5%
   faster per kill on single pulls, most at 34-40; even from 50 for Arcane-Frost); Fire keeps Ice Armor, and so does the AoE variant (no rules file: Mage Armor was 9-20% slower in pulls
-  of four). A choice a module makes for the player belongs in `ROTATION_KNOBS`, where the tunes can compare it. **Save points**: `fl_open_search.SimCache` keeps every
+  of four). A choice a module makes for the player belongs in `ROTATION_KNOBS`, where the tunes can compare it. The duel lab plays every
+rules knob (`make_module`), so a knob that is a PvE choice also goes in `duellab/duel.PVE_KNOBS` (the duel mage had worn Mage Armor
+for the first matrix of 2026-11-15: 62% -> 26% against the druid). **Save points**: `fl_open_search.SimCache` keeps every
   fight-lab result of a rotation's level-60 block in `open/cache/<class>-<rotation>.simcache.jsonl` until the winner is saved, so a
   stopped search replays its finished work (the file is void after any change to the engine, a class module, the rules or the data).
   **Gear**: `raidsim/gear_check.py [classes] [--pool]` lists, without a simulator run, the sets that hold items the database lacks

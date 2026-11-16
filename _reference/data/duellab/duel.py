@@ -62,6 +62,10 @@ EPS = 1e-9
 FROZEN_ROOTS = {"Frost Nova", "Frostbite", "Freeze"}          # roots that count as Frozen for Shatter and Ice Lance
 KEEPS_STEALTH = {"Stealth", "Prowl", "Sap", "Distract", "Pick Pocket", "Vanish", "Premeditation", "Sprint", "Slice and Dice",
                  "Preparation", "Adrenaline Rush", "Dash", "Cold Blood"}   # a layer adds its own (PvPAI.keeps_stealth)
+# Rotation knobs of the leveling rules (ROTATION_KNOBS) that are PvE choices: a side keeps its module's default for them, as it drops the
+# tuned vetoes. 2026-11-15: the mage rules took MAGE_ARMOR (Mage Armor from 34, for its regeneration while casting) and the duel mage
+# wore Mage Armor, losing Ice Armor's armor and its chill on melee attackers; the mage layer is written for Ice Armor (pvp_mage.py).
+PVE_KNOBS = ("MAGE_ARMOR",)
 _GEAR = {"tier": None}
 
 
@@ -343,6 +347,8 @@ class Side:
         self.alloc = alloc
         self.mod = FR.make_module(cls, alloc, 60, spec)
         self.mod.veto = {}                      # the leveling rotation's tuned vetoes are PvE rules
+        for k in PVE_KNOBS:                     # and so are these knobs: the class default, set before make_player chooses the armor
+            self.mod.__dict__.pop(k, None)
         # off-GCD spells (spell_gcd.json's "off_gcd") cost no global cooldown: the fight lab's own rule since 2026-11-15 (tables.OFF_GCD);
         # this side had wrapped gcd_of for it until then
         self.p = self.mod.make_player(60)
