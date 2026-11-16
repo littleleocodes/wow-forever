@@ -6,11 +6,11 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Seconds per kill | Behind the fastest | In good Forever gear |
 |---|---|---|---|---|
-| 1 | [Prot-Ret](prot-ret.md) 🔬 | 25 | fastest | 20 |
-| 2 | [Retribution](retribution.md) — Leveling — Retribution | 26 | +3% | 21 |
-| 3 | [Protection](protection.md) — Leveling into the raid build 🔬 | 30 | +16% | 25 |
-| 4 | [Shockadin](shockadin.md) 🔬 | 30 | +20% | - |
-| 5 | [Holy](holy.md) — Leveling into the raid build 🔬 | 37 | +47% | 28 |
+| 1 | [Prot-Ret](prot-ret.md) 🔬 | 26 | fastest | 21 |
+| 2 | [Retribution](retribution.md) — Leveling — Retribution | 27 | +4% | 22 |
+| 3 | [Shockadin](shockadin.md) 🔬 | 29 | +12% | - |
+| 4 | [Protection](protection.md) — Leveling into the raid build 🔬 | 30 | +15% | 25 |
+| 5 | [Holy](holy.md) — Leveling into the raid build 🔬 | 35 | +36% | 26 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 

@@ -21,9 +21,11 @@ import json
 import pathlib
 import re
 
+import tables
 from engine import parse_interrupt, BaseModule, Player, Spell, Weapon
-from tables import (GCD, MELEE_MISS, MELEE_RANGE, WEAPON_SPEED, class_attack_power, class_base_health, class_base_mana, class_base_stats, class_dodge,
-                    class_health_regen_tick, class_mana_regen_tick, class_melee_crit, class_spell_crit, gear_stats, weapon_dps)
+from tables import (GCD, MELEE_MISS, MELEE_RANGE, TOOLTIP_LEVEL, WEAPON_SPEED, class_attack_power, class_base_health, class_base_mana, class_base_stats,
+                    class_dodge, class_health_regen_tick, class_mana_regen_tick, class_melee_crit, class_spell_crit, gear_stats, rank_amounts,
+                    weapon_dps)
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 SPELLBOOK = json.load(open(ROOT / "_reference/data/forever-spells/paladin.json", encoding="utf-8"))
@@ -347,6 +349,19 @@ class PaladinModule(BaseModule):
 
     AOE = {'direct': ['Consecration'], 'min_near': 2}
 
+    # Two choices the module made for the player, as rule knobs since 2026-11-16 (user: "Go with your rec"; search-improvements 0h):
+    # tuned by rotation_opt.py ("knobs" in rotations/paladin-<spec>.json); PvE choices, so a duel keeps the defaults (duellab/duel.PVE_KNOBS).
+    #   CASTER_GEAR_FROM: a Holy-path build with Holy Shock wears the caster row (spell power, Intellect: gear_stats "paladin-caster") from
+    #     this level and the melee row (Strength) before it. 0 = from Holy Shock on, the module's own choice until then (audit 2026-10-18
+    #     row 65); 61 = never. A check of 2026-11-16 (scratch pal_gear_seal.py) had the melee row 6-10% faster per kill at 30-45 and 2-5% at
+    #     60 for both the Shockadin and the Holy page build. The Protection and Retribution paths always wear the melee row.
+    #   SOR_FROM: Seal of Righteousness instead of Seal of Command from this level, on every path that would take Seal of Command
+    #     (61 = never, the module's own choice until then; 0 = always). The same check: in caster gear Righteousness 1-3% faster at 55-60
+    #     for the Shockadin, in melee gear Command as fast or faster at every level.
+    ROTATION_KNOBS = {"CASTER_GEAR_FROM": [0, 40, 50, 61], "SOR_FROM": [61, 0, 50, 55]}
+    CASTER_GEAR_FROM = 0
+    SOR_FROM = 61
+
     def __init__(self, talents, level, spec="ret-dps", gear="leveling"):
         self.t = {k: v for k, v in talents.items() if v > 0}
         self.level = level
@@ -385,12 +400,44 @@ class PaladinModule(BaseModule):
 
     def rank_at(self, name):
         ranks = [s for s in BOOK.get(name, []) if s.level <= self.level]
-        return self.scale_rank(ranks[-1]) if ranks else None   # the rank at this level (row 8)
+        return self._level_judgement(self.scale_rank(ranks[-1])) if ranks else None   # the rank at this level (row 8)
+
+    def _level_judgement(self, s):
+        """A seal's judgement at the paladin's level (2026-11-16, search-improvements 0i). Its damage lives in the Judgement of <seal> spell
+        the seal references and grows with the level inside a rank like any spell (spell_scaling.json's referenced "judgement" rows,
+        tables.rank_amounts): Seal of Command rank 1's judgement deals 97 at 20 and 141 from 28 (the stunned number; half otherwise),
+        Seal of Fury rank 1's 23 at 10 and 33 from 16. Until then each rank read its tooltip's level-60 number from the level it is
+        trained (up to 45% high at a rank's first level: Seal of Command rank 1 at 20). The tooltip's range is scaled by the amount at the level over
+        the amount at 60, as engine.scale_rank scales a rank's own numbers; at 60 nothing changes. The per-hit numbers need nothing:
+        Seal of Righteousness's follow SOR_PER_HIT, Seal of Command's proc is a share of weapon damage and Seal of Fury's per-hit
+        damage is a flat number."""
+        if s is None or s.name not in SEALS or not tables.RANK_LEVEL_SCALING:
+            return s
+        now = rank_amounts("paladin", s.name, s.level, self.level).get("judgement")
+        top = rank_amounts("paladin", s.name, s.level, TOOLTIP_LEVEL).get("judgement")
+        if not now or not top or now == top:
+            return s
+        f = now / top
+        c = copy.copy(s)
+        if getattr(c, "judge", None):
+            c.judge = (c.judge[0] * f, c.judge[1] * f)
+        if getattr(c, "judge_stunned", None):
+            c.judge_stunned = (c.judge_stunned[0] * f, c.judge_stunned[1] * f)
+        if getattr(c, "fury_judge", None):
+            c.fury_judge = (c.fury_judge[0] * f, c.fury_judge[1] * f)
+        return c
 
     def seal(self):
         if self.path != "ret":
             return self._seal_alt()
-        return self.spells.get("Seal of Command") or self.spells.get("Seal of Righteousness")
+        return self._command_or_righteousness()
+
+    def _command_or_righteousness(self):
+        """Seal of Command once talented, Seal of Righteousness before that, and from SOR_FROM on (a rule knob since 2026-11-16)."""
+        sp = self.spells
+        if self.level >= self.SOR_FROM and sp.get("Seal of Righteousness") is not None:
+            return sp["Seal of Righteousness"]
+        return sp.get("Seal of Command") or sp.get("Seal of Righteousness")
 
     # ------------------------------------------------------------ character
     def make_player(self, level):
@@ -876,13 +923,13 @@ class PaladinModule(BaseModule):
         sp = self.spells
         if self.seal_pref == "fury" and sp.get("Seal of Fury") is not None:
             return sp["Seal of Fury"]
-        return sp.get("Seal of Command") or sp.get("Seal of Righteousness")
+        return self._command_or_righteousness()
 
     def _make_player_alt(self, level):
         base = class_base_stats("paladin", level)
-        # caster gear row for a Holy-path build that casts Holy Shock (audit 2026-10-18 row 65); the Holy rotation's page builds without it
-        # (holy-leveling, shockadin-open-leveling on 2026-10-18) melee and judge for 100% of their damage: the melee row is 4-5% faster at 60
-        caster = self.path == "holy" and "Holy Shock" in self.spells
+        # caster gear row for a Holy-path build that casts Holy Shock (audit 2026-10-18 row 65), from CASTER_GEAR_FROM on (a rule knob since
+        # 2026-11-16: the melee row had been 6-10% faster per kill at 30-45 for the Shockadin and the Holy page build, never compared before)
+        caster = self.path == "holy" and "Holy Shock" in self.spells and level >= self.CASTER_GEAR_FROM
         g = gear_stats(level, self.gear, "paladin-caster" if caster else "paladin")
         kings = 1.10 if self.blessing == "kings" and self.book.get("Blessing of Kings") is not None else 1.0
         sh_armor = _interp(SHIELD_ARMOR, level) if self.shield else 0.0

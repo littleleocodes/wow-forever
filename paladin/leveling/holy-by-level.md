@@ -2,7 +2,7 @@
 
 [Paladin](../README.md) > [Leveling (solo)](README.md) > [Holy](holy.md) > Level by level
 
-What a Holy paladin presses from level 1 to 60, stage by stage, while leveling into the Holy raid build (32/5/14). It fights like a Retribution paladin with a two-handed weapon: **Seal of Righteousness**, **Judgement** and **Holy Strike** on cooldown, **Blessing of Wisdom** for mana. **Holy Shock** (30), the spec's signature spell, goes at the mob whenever it is ready, and **Hammer of Wrath** (44) finishes it. Below 40% health you heal yourself in the fight. Each stage lists the full priority, so you can jump in at your level.
+What a Holy paladin presses from level 1 to 60, stage by stage, while leveling into the Holy raid build (32/5/14). It fights like a Retribution paladin with a two-handed weapon: **Seal of Righteousness**, **Judgement** and **Holy Strike** on cooldown, **Blessing of Wisdom** for mana. **Holy Shock** (30), the spec's signature spell, goes at the mob whenever it is ready while the mob has more than 35% of its health, and **Hammer of Wrath** (44) finishes it. Below 40% health you heal yourself in the fight. Each stage lists the full priority, so you can jump in at your level.
 
 **The build:** 32/5/14 ([open the talent tree](https://talentsforever.com/paladin/60/54320215001101151-5-250300202-12)), the one on the [Holy leveling page](holy.md), which has the full talent table and the reasons behind the level-60 rotation.
 
@@ -167,7 +167,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Blessing of Protection** (10) and **Blessing of Freedom** (18) are tools for a bad pull, not rotation.
 - Buy the next rank of the defensive spells on your bars too: **Divine Protection** at 18 (8 seconds instead of 6), **Blessing of Protection** at 24 and 38 (8, then 10 seconds), **Lay on Hands** at 30 and 50 and **Divine Shield** at 50.
 
-*Fight lab, seconds per kill: 17 at level 10, 21 at level 19. Presses per kill at level 10: Melee 3.0, Judgement 1.3, Holy Strike 1.2, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 18 at level 10, 22 at level 19. Presses per kill at level 10: Melee 3.2, Judgement 1.4, Holy Strike 1.3, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
 
 ## Levels 20-29: Flash of Light, the same fight
 
@@ -194,7 +194,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Exorcism** (20) only works on Undead and Demons. Use it on cooldown against those; the fight lab does not model it.
 - The healing talents start early: **Illumination** (20-24) returns mana after a critical heal, **Spiritual Focus** (14, 19 and 25-27) keeps your heals from being pushed back, **Healing Light** (28-29) makes them bigger.
 
-*Fight lab, seconds per kill: 21 at level 20, 26 at level 29. Presses per kill at level 20: Melee 4.1, Judgement 1.8, Holy Strike 1.7, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 22 at level 20, 26 at level 29. Presses per kill at level 20: Melee 4.3, Judgement 1.8, Holy Strike 1.7, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
 
 ## Levels 30-43: Holy Shock
 
@@ -211,20 +211,20 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **What to press**, top to bottom:
 
 1. **Hammer of Justice** a mob that casts spells. It stands back and casts until you stop it.
-2. **Holy Shock** at the mob whenever it is ready, while the mob has more than a tenth of its health: from 40 yards as it walks in, then in melee.
+2. **Holy Shock** at the mob whenever it is ready, while the mob has more than 35% of its health: from 40 yards as it walks in, then in melee.
 3. **Seal of Righteousness** up before the pull: the first press of R.
 4. **Judgement** whenever it is ready.
 5. **Holy Strike** whenever it is ready.
 
 **If the fight goes wrong:** Below 40% of your health, with the mob above a fifth of its own: **Holy Shock** on yourself if it is ready, then **Divine Protection** if you are below 30%, then **Hammer of Justice**, then **Holy Light**. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%.
 
-- **Holy Shock** has a 10-second cooldown and costs mana: about two casts a kill in the fight lab, so you drink more often than before 30.
+- **Holy Shock** has a 10-second cooldown and costs mana: one or two casts a kill in the fight lab, so you drink more often than before 30.
 - With a mob targeted, **Holy Shock** hits the mob. Hold Alt, the self-cast key on the [keybinds page](keybinds.md), to heal yourself with it instead.
-- From 30 the fight lab dresses this build in caster gear (spell power and Intellect), as it does every Holy build with **Holy Shock**, and the seconds on this page are that gear's. A check of 2026-11-16 ran the same build and rules in melee gear (Strength): 6-10% faster per kill at 30-45 and about 5% at 50-60. For solo leveling, wear melee gear if you have it.
+- Wear melee gear (Strength), not spell power and Intellect: **Holy Shock** is a cast or two a kill, and your swings, seal and **Judgement** do the rest. A check of 2026-11-16 found this build 6-10% faster per kill in melee gear at 30-45 and about 5% at 50-60, and the tuned rules took melee gear at every level, so the seconds on this page are melee gear's (the fight lab had dressed every Holy build with **Holy Shock** in caster gear).
 - From 31 the points go into Retribution: **Benediction** (31-35) makes instant spells such as **Holy Shock**, your seal and **Judgement** 10% cheaper, **Conviction** (36-38) adds 6% critical chance to spells and attacks, **Deflection** (39-40) adds parry and **Pursuit of Justice** (41-42) 15% movement speed. Then Protection's **Divine Intellect** (43-47). Nothing new to press.
 - From 34, **Divine Shield** replaces **Divine Protection** as your bubble: longer, and it takes the same key.
 
-*Fight lab, seconds per kill: 33 at level 30, 38 at level 40, 39 at level 43. Presses per kill at level 30: Melee 4.7, Holy Shock 2.0, Judgement 2.0, Holy Strike 1.9, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 30 at level 30, 36 at level 40, 37 at level 43. Presses per kill at level 30: Melee 4.5, Judgement 1.9, Holy Strike 1.9, Holy Shock 1.5, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
 
 ## Levels 44-50: Hammer of Wrath
 
@@ -241,7 +241,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **What to press**, top to bottom:
 
 1. **Hammer of Justice** a mob that casts spells. It stands back and casts until you stop it.
-2. **Holy Shock** at the mob whenever it is ready, while the mob has more than a tenth of its health: from 40 yards as it walks in, then in melee.
+2. **Holy Shock** at the mob whenever it is ready, while the mob has more than 35% of its health: from 40 yards as it walks in, then in melee.
 3. **Seal of Righteousness** up before the pull: the first press of R.
 4. **Hammer of Wrath** when the mob is below 20% health.
 5. **Judgement** whenever it is ready.
@@ -252,7 +252,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Hammer of Wrath** has a 1-second cast and a 6-second cooldown.
 - **Unyielding Faith** (48-49) shortens fears and disorients on you by 30%, and **Healing Light** takes its last point at 50. Nothing new to press.
 
-*Fight lab, seconds per kill: 39 at level 44, 40 at level 50. Presses per kill at level 44: Melee 5.0, Holy Shock 2.2, Judgement 2.2, Holy Strike 1.9, Seal of Righteousness 1.0, Hammer of Wrath 1.0, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 37 at level 44, 38 at level 50. Presses per kill at level 44: Melee 4.9, Judgement 2.1, Holy Strike 2.0, Holy Shock 1.9, Seal of Righteousness 1.0, Hammer of Wrath 0.9, Hammer of Justice 0.1.*
 
 ## Levels 51-60: Divine Favor
 
@@ -269,7 +269,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **What to press**, top to bottom:
 
 1. **Hammer of Justice** a mob that casts spells. It stands back and casts until you stop it.
-2. **Holy Shock** at the mob whenever it is ready, while the mob has more than a tenth of its health; **Divine Favor** first while your own health is above 70%, for a sure critical.
+2. **Holy Shock** at the mob whenever it is ready, while the mob has more than 35% of its health; **Divine Favor** first while your own health is above 70%, for a sure critical.
 3. **Seal of Righteousness** up before the pull: the first press of R.
 4. **Hammer of Wrath** when the mob is below 20% health.
 5. **Judgement** whenever it is ready.
@@ -282,12 +282,12 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Oath of Light** (53), **Boundless Light** (59) and **Light's Vigil** (60) are raid talents for healing others; the fight lab does not use them solo.
 - **Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**.
 
-*Fight lab, seconds per kill: 40 at level 51, 42 at level 60. Presses per kill at level 51: Melee 5.4, Judgement 2.3, Holy Shock 2.2, Holy Strike 2.1, Seal of Righteousness 1.0, Hammer of Wrath 1.0, Divine Favor 0.3, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 38 at level 51, 39 at level 60. Presses per kill at level 51: Melee 5.4, Judgement 2.3, Holy Strike 2.2, Holy Shock 2.0, Seal of Righteousness 1.0, Hammer of Wrath 0.9, Divine Favor 0.3, Hammer of Justice 0.1.*
 
 ## Between fights
 
 - Heal yourself back to about 80% with **Holy Light**, or with **Flash of Light** from level 20.
-- Drink below 15% of your mana, and eat if you are still below 80% of your health after the heals: the tuned rules of 2026-11-15 (the Holy list's own defaults are a quarter of your mana and about two thirds of your health).
+- Drink below a quarter of your mana, and eat if you are still below 80% of your health after the heals: the tuned rules of 2026-11-16 (the drinking is the Holy list's own default; its eating default is about two thirds of your health).
 - Re-cast **Blessing of Wisdom** when it runs out, and your seal just before each pull.
 - Visit the trainer every even level for new ranks of your seal, **Holy Strike** and **Holy Light**.
 

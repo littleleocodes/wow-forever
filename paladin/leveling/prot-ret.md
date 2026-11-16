@@ -86,9 +86,9 @@ One point per level from 10, in this order:
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
-| 20 | 19 | 15 |
-| 30 | 21 | 17 |
-| 40 | 25 | 20 |
+| 20 | 20 | 16 |
+| 30 | 22 | 18 |
+| 40 | 26 | 20 |
 | 50 | 27 | 23 |
 | 60 | 29 | 22 |
 

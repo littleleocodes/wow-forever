@@ -10,44 +10,44 @@ Single-target leveling fights against normal mobs of your level with a two-hande
 
 | Level | Talents | Fight mean | median | p90 | Downtime/kill | Deaths/100 kills | Time/kill | Kills/hour | Mana/kill | Pushbacks/kill |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 20 | 11 | 10.7s | 11.4s | 14.8s | 0.3s | 0.0 | 19.0s | 190 | 30 | 0.00 |
-| 30 | 21 | 12.5s | 11.7s | 17.4s | 0.9s | 0.0 | 21.4s | 168 | 62 | 0.00 |
-| 40 | 31 | 15.7s | 15.2s | 21.6s | 2.2s | 0.0 | 26.0s | 139 | 90 | 0.00 |
-| 50 | 41 | 16.9s | 17.4s | 22.2s | 2.5s | 0.0 | 27.4s | 131 | 103 | 0.00 |
+| 20 | 11 | 11.8s | 11.7s | 15.2s | 0.4s | 0.0 | 20.1s | 179 | 26 | 0.00 |
+| 30 | 21 | 13.4s | 12.2s | 18.7s | 1.1s | 0.0 | 22.4s | 161 | 60 | 0.00 |
+| 40 | 31 | 16.5s | 15.9s | 22.2s | 2.4s | 0.0 | 26.9s | 134 | 88 | 0.00 |
+| 50 | 41 | 17.6s | 18.2s | 22.6s | 2.6s | 0.0 | 28.2s | 128 | 102 | 0.00 |
 | 60 | 51 | 20.3s | 19.8s | 25.7s | 2.4s | 0.0 | 30.7s | 117 | 61 | 0.00 |
 
 ## Measured damage shares (vs. the spec model's assumed shares)
 
 | Level | Holy Strike | Judgement | Melee | Seal of Command |
 |---|---|---|---|---|
-| 20 | 13% | 26% | 45% | 16% |
-| 30 | 16% | 25% | 43% | 16% |
-| 40 | 17% | 25% | 40% | 18% |
-| 50 | 19% | 23% | 39% | 19% |
+| 20 | 14% | 19% | 49% | 18% |
+| 30 | 17% | 20% | 46% | 17% |
+| 40 | 17% | 21% | 42% | 19% |
+| 50 | 20% | 21% | 40% | 20% |
 | 60 | 22% | 22% | 38% | 19% |
 
 Spec model (`_reference/data/scorer/specs`) assumes: white 22%, seal 26%, judgement 19%, consecration 13%, holy_strike 13%, hammer_of_wrath 7%.
 
 ## Realized crit rates and player at each level
 
-- **Level 20**: 1308 health, 1006 mana, 40 Int, 38 Spirit, 77 Str, 38 Agi, 220 AP, melee crit 9.3%, 0 spell power, base spell crit 9.0%, armor 1236 (Devotion Aura); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Seal of Command 10%, Hammer of Justice 0%, Melee 9%, Judgement 10%, Holy Strike 9%. Health after a fight 87%, mana 97%.
-- **Level 30**: 1818 health, 1401 mana, 47 Int, 49 Spirit, 124 Str, 52 Agi, 359 AP, melee crit 11.5%, 8 spell power, base spell crit 10.8%, armor 1584 (Devotion Aura); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Seal of Command 16%, Melee 11%, Hammer of Justice 0%, Judgement 11%, Holy Strike 11%. Health after a fight 86%, mana 73%.
-- **Level 40**: 2372 health, 1813 mana, 55 Int, 58 Spirit, 176 Str, 66 Agi, 513 AP, melee crit 11.6%, 16 spell power, base spell crit 10.7%, armor 2882 (Devotion Aura); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Seal of Command 18%, Melee 11%, Hammer of Justice 0%, Judgement 11%, Holy Strike 12%. Health after a fight 85%, mana 71%.
-- **Level 50**: 2962 health, 2346 mana, 73 Int, 73 Spirit, 237 Str, 84 Agi, 687 AP, melee crit 11.7%, 24 spell power, base spell crit 10.8%, armor 3476 (Devotion Aura); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Seal of Command 20%, Melee 12%, Hammer of Justice 0%, Judgement 12%, Holy Strike 11%. Health after a fight 84%, mana 70%.
+- **Level 20**: 1308 health, 1006 mana, 40 Int, 38 Spirit, 77 Str, 38 Agi, 220 AP, melee crit 9.3%, 0 spell power, base spell crit 9.0%, armor 1236 (Devotion Aura); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Seal of Command 11%, Hammer of Justice 0%, Melee 9%, Judgement 10%, Holy Strike 9%. Health after a fight 87%, mana 97%.
+- **Level 30**: 1818 health, 1401 mana, 47 Int, 49 Spirit, 124 Str, 52 Agi, 359 AP, melee crit 11.5%, 8 spell power, base spell crit 10.8%, armor 1584 (Devotion Aura); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Seal of Command 16%, Melee 11%, Hammer of Justice 0%, Judgement 11%, Holy Strike 11%. Health after a fight 86%, mana 72%.
+- **Level 40**: 2372 health, 1813 mana, 55 Int, 58 Spirit, 176 Str, 66 Agi, 513 AP, melee crit 11.6%, 16 spell power, base spell crit 10.7%, armor 2882 (Devotion Aura); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Seal of Command 19%, Melee 11%, Hammer of Justice 0%, Judgement 11%, Holy Strike 11%. Health after a fight 84%, mana 71%.
+- **Level 50**: 2962 health, 2346 mana, 73 Int, 73 Spirit, 237 Str, 84 Agi, 687 AP, melee crit 11.7%, 24 spell power, base spell crit 10.8%, armor 3476 (Devotion Aura); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Seal of Command 22%, Melee 11%, Hammer of Justice 0%, Judgement 12%, Holy Strike 11%. Health after a fight 83%, mana 70%.
 - **Level 60**: 3641 health, 2667 mana, 77 Int, 82 Spirit, 264 Str, 72 Agi, 821 AP, melee crit 10.3%, 60 spell power, base spell crit 10.6%, armor 3958 (Devotion Aura); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Seal of Command 20%, Melee 10%, Hammer of Justice 0%, Judgement 10%, Holy Strike 10%. Health after a fight 83%, mana 72%.
 
 ## Other builds (same mobs, same seeds)
 
 | Level | Build | Time/kill | vs. main | Fight mean | Deaths/100 | Downtime/kill |
 |---|---|---|---|---|---|---|
-| 20 | opt-ret-dps-leveling-st | 19.0s | - | 10.7s | 0.0 | 0.3s |
-| 20 | leveling-retribution | 19.0s | +0.0% | 10.7s | 0.0 | 0.3s |
-| 30 | opt-ret-dps-leveling-st | 21.4s | - | 12.5s | 0.0 | 0.9s |
-| 30 | leveling-retribution | 21.4s | +0.0% | 12.5s | 0.0 | 0.9s |
-| 40 | opt-ret-dps-leveling-st | 26.0s | - | 15.7s | 0.0 | 2.2s |
-| 40 | leveling-retribution | 26.0s | +0.0% | 15.7s | 0.0 | 2.2s |
-| 50 | opt-ret-dps-leveling-st | 27.4s | - | 16.9s | 0.0 | 2.5s |
-| 50 | leveling-retribution | 27.4s | +0.0% | 16.9s | 0.0 | 2.5s |
+| 20 | opt-ret-dps-leveling-st | 20.1s | - | 11.8s | 0.0 | 0.4s |
+| 20 | leveling-retribution | 20.1s | +0.0% | 11.8s | 0.0 | 0.4s |
+| 30 | opt-ret-dps-leveling-st | 22.4s | - | 13.4s | 0.0 | 1.1s |
+| 30 | leveling-retribution | 22.4s | +0.0% | 13.4s | 0.0 | 1.1s |
+| 40 | opt-ret-dps-leveling-st | 26.9s | - | 16.5s | 0.0 | 2.4s |
+| 40 | leveling-retribution | 26.9s | +0.0% | 16.5s | 0.0 | 2.4s |
+| 50 | opt-ret-dps-leveling-st | 28.2s | - | 17.6s | 0.0 | 2.6s |
+| 50 | leveling-retribution | 28.2s | +0.0% | 17.6s | 0.0 | 2.6s |
 | 60 | opt-ret-dps-leveling-st | 30.7s | - | 20.3s | 0.0 | 2.4s |
 | 60 | leveling-retribution | 30.0s | -2.3% | 19.6s | 0.0 | 2.4s |
 
@@ -57,14 +57,14 @@ Spec model (`_reference/data/scorer/specs`) assumes: white 22%, seal 26%, judgem
 
 | Level | Gear | Time/kill | vs. greens | Fight mean | Deaths/100 | Downtime/kill | Kills/hour |
 |---|---|---|---|---|---|---|---|
-| 20 | greens | 19.0s | - | 10.7s | 0.0 | 0.3s | 190 |
-| 20 | blues | 17.2s | -9.3% | 9.1s | 0.0 | 0.1s | 209 |
-| 30 | greens | 21.4s | - | 12.5s | 0.0 | 0.9s | 168 |
-| 30 | blues | 19.2s | -10.2% | 10.8s | 0.0 | 0.4s | 188 |
-| 40 | greens | 26.0s | - | 15.7s | 0.0 | 2.2s | 139 |
-| 40 | blues | 23.3s | -10.2% | 14.0s | 0.0 | 1.3s | 154 |
-| 50 | greens | 27.4s | - | 16.9s | 0.0 | 2.5s | 131 |
-| 50 | blues | 25.5s | -6.8% | 15.7s | 0.0 | 1.9s | 141 |
+| 20 | greens | 20.1s | - | 11.8s | 0.0 | 0.4s | 179 |
+| 20 | blues | 18.0s | -10.4% | 9.8s | 0.0 | 0.2s | 200 |
+| 30 | greens | 22.4s | - | 13.4s | 0.0 | 1.1s | 161 |
+| 30 | blues | 20.0s | -11.0% | 11.5s | 0.0 | 0.5s | 180 |
+| 40 | greens | 26.9s | - | 16.5s | 0.0 | 2.4s | 134 |
+| 40 | blues | 24.0s | -10.7% | 14.6s | 0.0 | 1.4s | 150 |
+| 50 | greens | 28.2s | - | 17.6s | 0.0 | 2.6s | 128 |
+| 50 | blues | 26.3s | -6.7% | 16.3s | 0.0 | 2.0s | 137 |
 | 60 | greens | 30.7s | - | 20.3s | 0.0 | 2.4s | 117 |
 | 60 | blues | 28.4s | -7.6% | 18.5s | 0.0 | 1.8s | 127 |
 
@@ -74,14 +74,14 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Sanctified Judgement | 3 | +13.6% | -0.1% ± 0.7 | +4.5% | +5.9% | 0.0 |
-| Seal of Command | 1 | +11.1% | +14.3% ± 0.6 | +11.1% | +7.2% | 0.0 |
-| Conviction | 3 | +5.7% | +8.0% ± 0.5 | +1.9% | +3.1% | 0.0 |
-| Two-Handed Weapon Specialization | 3 | +4.0% | +6.0% ± 0.5 | +1.3% | +2.4% | 0.0 |
-| Sacred Arbiter | 1 | +2.2% | +3.0% ± 0.4 | +2.2% | +2.3% | 0.0 |
-| Vengeance | 1 | +1.9% | +2.6% ± 0.4 | +1.9% | +1.2% | 0.0 |
-| Improved Judgement | 2 | +1.4% | +4.2% ± 0.5 | +0.7% | +1.8% | 0.0 |
-| Benediction | 5 | +1.2% | +0.1% ± 0.3 | +0.2% | +1.3% | 0.0 |
+| Sanctified Judgement | 3 | +12.9% | -0.8% ± 0.7 | +4.3% | +5.9% | 0.0 |
+| Seal of Command | 1 | +6.8% | +8.0% ± 0.6 | +6.8% | +7.2% | 0.0 |
+| Conviction | 3 | +5.4% | +7.4% ± 0.5 | +1.8% | +3.1% | 0.0 |
+| Two-Handed Weapon Specialization | 3 | +3.8% | +5.4% ± 0.5 | +1.3% | +2.4% | 0.0 |
+| Sacred Arbiter | 1 | +2.1% | +2.7% ± 0.5 | +2.1% | +2.3% | 0.0 |
+| Vengeance | 1 | +1.5% | +2.1% ± 0.4 | +1.5% | +1.2% | 0.0 |
+| Benediction | 5 | +1.0% | -0.2% ± 0.4 | +0.2% | +1.3% | 0.0 |
+| Improved Judgement | 2 | +0.1% | +2.7% ± 0.6 | +0.1% | +1.8% | 0.0 |
 | Pursuit of Justice | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +3.1% | 0.0 |
 
 ## Talent values at level 60

@@ -74,12 +74,12 @@ The Protection leveling build the open leveling search found on 2026-11-16: ever
 | 44 | Retribution | Vindication | 1 | 0/21/14 |
 | 45 | Holy | Divine Strength | 1 | 1/21/14 |
 | 46 | Retribution | Vindication | 1 | 1/21/15 |
-| 47-48 | Holy | Divine Strength | 2 | 3/21/15 |
-| 49 | Retribution | Sacred Arbiter | 1 | 3/21/16 |
-| 50 | Retribution | Vindication | 1 | 3/21/17 |
-| 51 | Protection | Toughness | 1 | 3/22/17 |
-| 52-53 | Protection | Improved Righteous Fury | 2 | 3/24/17 |
-| 54-58 | Protection | Reckoning | 5 | 3/29/17 |
+| 47-51 | Protection | Reckoning | 5 | 1/26/15 |
+| 52-53 | Holy | Divine Strength | 2 | 3/26/15 |
+| 54 | Retribution | Sacred Arbiter | 1 | 3/26/16 |
+| 55 | Retribution | Vindication | 1 | 3/26/17 |
+| 56 | Protection | Toughness | 1 | 3/27/17 |
+| 57-58 | Protection | Improved Righteous Fury | 2 | 3/29/17 |
 | 59 | Protection | Iron Creed | 1 | 3/30/17 |
 | 60 | Protection | Shieldsworn | 1 | 3/31/17 |
 
@@ -100,7 +100,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 29.06; protection-leveling 29.53. The search simulated 32,236 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 29.21; protection-leveling 29.83. The search simulated 32,236 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 

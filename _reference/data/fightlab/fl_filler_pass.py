@@ -36,6 +36,7 @@ import fl_levels as FL  # noqa: E402
 import fl_open_search as FO  # noqa: E402
 import fl_talent_opt as FT  # noqa: E402
 import level_guides as LG  # noqa: E402
+import signature as SG  # noqa: E402  (signature spells, user rule 2026-10-22)
 
 LEVELS = [20, 25, 30, 35, 40, 45, 50, 55, 60]
 OUT = HERE / "filler"
@@ -79,8 +80,15 @@ def main():
     space = MLT.Space(cls, "any", any_split=True)
     pts = FL.expand(order)
     total = len(pts)
+    # The spec's signature talents never move (2026-11-16): the talents that grant its required spells (signature.py, the user's rule of
+    # 2026-10-22: a spec plays its signature spells). The Shockadin's first pass moved Holy Shock to Deflection, its removal 3.8% faster in
+    # the melee gear the Holy rules had just taken, and the points that only serve it (Divine Favor, Infusion of Light, Oath of Light)
+    # followed: a Shockadin without Holy Shock. The build's own spec, as the pages judge it.
+    keep = set(SG.granting_talents(cls, (SG.rule(cls, b.get("spec") or a.spec, "leveling") or {}).get("required") or []))
     rec = {"class": cls, "spec": a.spec, "build": b["id"], "rotation": rot, "date": datetime.date.today().isoformat(), "fights": a.fights,
-           "start_order": FL.compress(pts), "steps": [], "moves": []}
+           "start_order": FL.compress(pts), "steps": [], "moves": [], "kept_signature": sorted(keep)}
+    if keep:
+        print(f"  signature talents kept where they are: {', '.join(sorted(keep))}", flush=True)
     print(f"== {cls} {a.spec}: {b['id']} ({rot}), {total} points", flush=True)
     with multiprocessing.Pool(a.jobs, initializer=FT._init, initargs=("greens",)) as pool:
         for _ in range(a.max_moves):
@@ -90,6 +98,8 @@ def main():
             held = sorted(flat_of(pts))
             drops = []
             for n in held:
+                if n in keep:
+                    continue
                 i = max(k for k, (_, x) in enumerate(pts) if x == n)
                 rest = pts[:i] + pts[i + 1:]
                 if FL.legal_order(space, rest, total - 1):
@@ -173,6 +183,8 @@ def main():
             filled = {m["to"] for m in rec["moves"]}
             gates = []
             for n in sorted(flat_of(pts)):
+                if n in keep:
+                    continue
                 i = max(k for k, (_, x) in enumerate(pts) if x == n)
                 if n not in filled and not FL.legal_order(space, pts[:i] + pts[i + 1:], total - 1):
                     gates.append((n, i))

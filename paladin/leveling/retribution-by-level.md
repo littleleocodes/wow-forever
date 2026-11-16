@@ -167,7 +167,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Blessing of Protection** (10) and **Blessing of Freedom** (18) are tools for a bad pull, not rotation.
 - Buy the next rank of the defensive spells on your bars too: **Divine Protection** at 18 (8 seconds instead of 6), **Blessing of Protection** at 24 and 38 (8, then 10 seconds), **Lay on Hands** at 30 and 50 and **Divine Shield** at 50.
 
-*Fight lab, seconds per kill: 17 at level 10, 20 at level 19. Presses per kill at level 10: Melee 2.9, Judgement 1.3, Holy Strike 1.2, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 18 at level 10, 21 at level 19. Presses per kill at level 10: Melee 3.1, Judgement 1.3, Holy Strike 1.2, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
 
 ## Levels 20-43: Seal of Command and the stun combo
 
@@ -197,7 +197,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Blessing of Kings** (20) is an alternative to **Blessing of Might**; the fight lab plays **Blessing of Might**. From 34, **Divine Shield** replaces **Divine Protection** as your bubble: longer, and it takes the same key.
 - If you spent **Hammer of Justice** on the combo, a mob that casts spells in the next fight runs free until the stun is back: when you see a caster, keep the stun for it.
 
-*Fight lab, seconds per kill: 19 at level 20, 22 at level 30, 26 at level 40, 27 at level 43. Presses per kill at level 20: Melee 3.4, Judgement 1.5, Holy Strike 1.4, Seal of Command 1.0, Hammer of Justice 0.3.*
+*Fight lab, seconds per kill: 20 at level 20, 22 at level 30, 26 at level 40, 28 at level 43. Presses per kill at level 20: Melee 3.7, Judgement 1.6, Holy Strike 1.5, Seal of Command 1.0, Hammer of Justice 0.3.*
 
 ## Levels 44-60: Hammer of Wrath
 
@@ -224,7 +224,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Hammer of Wrath** (44) hits a mob below 20% health from range. The tuned rules of 2026-11-02 switch it off against single mobs: kills measured no faster with it. Use it on a mob that runs.
 - **Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**.
 
-*Fight lab, seconds per kill: 27 at level 44, 27 at level 50, 30 at level 60. Presses per kill at level 44: Melee 5.0, Judgement 2.4, Holy Strike 2.0, Seal of Command 1.0, Hammer of Justice 0.4.*
+*Fight lab, seconds per kill: 27 at level 44, 28 at level 50, 30 at level 60. Presses per kill at level 44: Melee 5.0, Judgement 2.4, Holy Strike 2.0, Seal of Command 1.0, Hammer of Justice 0.4.*
 
 ## Between fights
 

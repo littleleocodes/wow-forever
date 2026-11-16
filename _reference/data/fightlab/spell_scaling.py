@@ -81,7 +81,12 @@ def kinds(sid, effects, depth=0):
 # amount (the proc's dummy effect: m1 per 100 s of swing) and Frostbrand's damage. Each grows with the caster's level like any rank
 # (Rockbiter rank 5: 212 attack power at 34, 355 from 42). Written as {kind: [[base, gain, spell level, max level]], "via": [ids]}
 # with kinds attack_power, proc and direct; the shaman module reads the amounts at its level (tables.rank_amounts).
-REFERENCED = {"shaman": ("Rockbiter Weapon", "Windfury Weapon", "Flametongue Weapon", "Frostbrand Weapon")}
+# Since 2026-11-16 (search-improvements 0i) also the paladin's seals: a seal's judgement deals the damage of the Judgement of <seal> spell
+# it references (Seal of Command rank 1: Judgement of Command 20467, 97 at 20 and 141 from 28), written as kind "judgement" (the
+# judgement spell's school damage only: Judgement of Righteousness's per-hit value is SOR_PER_HIT's, Judgement of Fury's dummy values are
+# not read); the paladin module scales each seal's judgement by it (paladin._level_judgement).
+REFERENCED = {"shaman": ("Rockbiter Weapon", "Windfury Weapon", "Flametongue Weapon", "Frostbrand Weapon"),
+              "paladin": ("Seal of Command", "Seal of Righteousness", "Seal of Fury")}
 
 
 def load_refs(path):
@@ -94,12 +99,16 @@ def load_refs(path):
     return out
 
 
-def referenced_kinds(sid, effects, refs):
-    out = {"attack_power": [], "proc": [], "direct": []}
+def referenced_kinds(sid, effects, refs, names=None):
+    out = {"attack_power": [], "proc": [], "direct": [], "judgement": []}
     for r in refs.get(sid, []):
+        judge = (names or {}).get(r, "").startswith("Judgement of")
         for e in effects.get(r, []):
             row = [e["base"], round(e["ppl"], 6), e["sl"], e["ml"]]
-            if e["aura"] == "A_MOD_ATTACK_POWER":
+            if judge:
+                if e["type"] in DIRECT and (e["base"] or e["ppl"]):
+                    out["judgement"].append(row)
+            elif e["aura"] == "A_MOD_ATTACK_POWER":
                 out["attack_power"].append(row)
             elif e["type"] == "E_DUMMY" and e["ppl"]:
                 out["proc"].append(row)
@@ -110,7 +119,7 @@ def referenced_kinds(sid, effects, refs):
 
 
 def referenced_rows(store):
-    effects, _ = load_store(store)
+    effects, spell_names = load_store(store)
     refs = load_refs(store)
     rows = {}
     for cls, names in REFERENCED.items():
@@ -120,7 +129,7 @@ def referenced_rows(store):
                 if sp["name"] not in names:
                     continue
                 for r in sp["ranks"]:
-                    k = referenced_kinds(r.get("id"), effects, refs) if r.get("id") else None
+                    k = referenced_kinds(r.get("id"), effects, refs, spell_names) if r.get("id") else None
                     if k:
                         rows.setdefault(cls, {}).setdefault(sp["name"], {})[str(int(r.get("level") or 1))] = dict(k, id=r["id"])
     return rows

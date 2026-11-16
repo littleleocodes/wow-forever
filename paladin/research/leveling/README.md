@@ -16,11 +16,11 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 
 | Build | Split | Role |
 |---|---|---|
-| [Shockadin — Leveling (open talent search)](builds/shockadin-open-leveling.md) 🔬 | 22/0/29 | DPS |
-| [Protection — Leveling (open talent search)](builds/protection-open-leveling.md) 🔬 | 3/31/17 | DPS |
-| [Prot-Ret — Leveling (open talent search)](builds/prot-ret-open-leveling.md) 🔬 | 12/16/23 | DPS |
 | [Holy — Leveling into the raid build](builds/holy-leveling.md) 🔬 | 32/5/14 | DPS |
 | [Protection — Leveling into the raid build](builds/protection-leveling.md) 🔬 | 0/35/16 | DPS |
+| [Shockadin — Leveling (open talent search)](builds/shockadin-open-leveling.md) 🔬 | 21/0/30 | DPS |
+| [Protection — Leveling (open talent search)](builds/protection-open-leveling.md) 🔬 | 3/31/17 | DPS |
+| [Prot-Ret — Leveling (open talent search)](builds/prot-ret-open-leveling.md) 🔬 | 12/16/23 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
@@ -47,11 +47,11 @@ Classic Era reference builds: [leveling-retribution](../talents/classic-baseline
 
 | Spec | Page build | Rotation | Seconds per kill |
 |---|---|---|---|
-| [Prot-Ret](../../leveling/prot-ret.md) ✅ | `prot-ret-open-leveling` | ret-dps | 25.4 |
-| [Retribution](../../leveling/retribution.md) | `leveling-retribution` | ret-dps | 26.1 |
-| [Protection](../../leveling/protection.md) | `protection-leveling` | prot-leveling | 29.5 |
-| [Shockadin](../../leveling/shockadin.md) | `shockadin-open-leveling` | holy-leveling | 30.5 |
-| [Holy](../../leveling/holy.md) | `holy-leveling` | holy-leveling | 37.2 |
+| [Prot-Ret](../../leveling/prot-ret.md) ✅ | `prot-ret-open-leveling` | ret-dps | 25.9 |
+| [Retribution](../../leveling/retribution.md) | `leveling-retribution` | ret-dps | 26.8 |
+| [Shockadin](../../leveling/shockadin.md) | `shockadin-open-leveling` | holy-leveling | 28.9 |
+| [Protection](../../leveling/protection.md) | `protection-leveling` | prot-leveling | 29.8 |
+| [Holy](../../leveling/holy.md) | `holy-leveling` | holy-leveling | 35.1 |
 
 ✅ = recommended (the fastest spec, or within 3% of it).
 
@@ -59,18 +59,18 @@ The `ret-dps` report below is the fight-lab pipeline's (research): its optimizer
 
 | Build | L20 | L30 | L40 | L50 | L60 | Deaths/100 at 60 | Downtime/kill at 60 |
 |---|---|---|---|---|---|---|---|
-| `opt-ret-dps-leveling-st` (optimizer) | 19.0s | 21.4s | 26.0s | 27.4s | 30.7s | 0.0 | 2.4s |
-| `leveling-retribution` (hand draft) | 19.0s (+0%) | 21.4s (+0%) | 26.0s (+0%) | 27.4s (+0%) | 30.0s (-2%) | 0.0 | 2.4s |
-| `opt-ret-dps-leveling-st` in blues (dungeon blues from the item database) | 17.2s (-9%) | 19.2s (-10%) | 23.3s (-10%) | 25.5s (-7%) | 28.4s (-8%) | 0.0 | 1.8s |
+| `opt-ret-dps-leveling-st` (optimizer) | 20.1s | 22.4s | 26.9s | 28.2s | 30.7s | 0.0 | 2.4s |
+| `leveling-retribution` (hand draft) | 20.1s (+0%) | 22.4s (+0%) | 26.9s (+0%) | 28.2s (+0%) | 30.0s (-2%) | 0.0 | 2.4s |
+| `opt-ret-dps-leveling-st` in blues (dungeon blues from the item database) | 18.0s (-10%) | 20.0s (-11%) | 24.0s (-11%) | 26.3s (-7%) | 28.4s (-8%) | 0.0 | 1.8s |
 
 Time per kill = fight + loot, travel, eating, drinking, healing and deaths; a build's cell shows its time and the difference to the optimizer build on the same mobs and seeds.
 
-- **Talents that matter** (time per kill lost when the talent is removed from `opt-ret-dps-leveling-st` at level 60): Sanctified Judgement +10% (L30 +14%), Conviction +9% (L30 +6%), Vengeance +6% (L30 +2%), Two-Handed Weapon Specialization +5% (L30 +4%), Precision +4%, Sacred Arbiter +3% (L30 +2%).
+- **Talents that matter** (time per kill lost when the talent is removed from `opt-ret-dps-leveling-st` at level 60): Sanctified Judgement +10% (L30 +13%), Conviction +9% (L30 +5%), Vengeance +6% (L30 +1%), Two-Handed Weapon Specialization +5% (L30 +4%), Precision +4%, Sacred Arbiter +3% (L30 +2%).
 - **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Divine Intellect, Pursuit of Justice, Repentance, Sacred Duty, Templar's Bulwark.
 - **Caster mobs:** 16% of pulls at level 30 are casters (creature-database share); 0.00 interrupts per kill at 60.
-- **Race** (hand draft vs every optimizer candidate, 2026-11-16, mean time per kill over levels 20/30/40/50/60): leveling-retribution 26.3s — fastest: **leveling-retribution**.
+- **Race** (hand draft vs every optimizer candidate, 2026-11-16, mean time per kill over levels 20/30/40/50/60): leveling-retribution 26.9s — fastest: **leveling-retribution**.
 - **Calibration:** the scorer's `ret-dps` leveling values were fitted jointly to the hand draft and every candidate in [`fightlab/candidates/`](fightlab/candidates/) (1 round, converged: the optimizer build repeats).
-- **AoE grinding, 3 mobs per pull:** `ret-dps` with `opt-ret-dps-leveling-aoe` ([report](fightlab/ret-dps-aoe.md)): L40 29.6s per mob in pulls of 3 (single-target build 26.0s), 0.1 deaths/100; L60 33.5s per mob in pulls of 3 (single-target build 30.7s), 1.6 deaths/100.
+- **AoE grinding, 3 mobs per pull:** `ret-dps` with `opt-ret-dps-leveling-aoe` ([report](fightlab/ret-dps-aoe.md)): L40 29.6s per mob in pulls of 3 (single-target build 26.9s), 0.1 deaths/100; L60 33.5s per mob in pulls of 3 (single-target build 30.7s), 1.6 deaths/100.
 - **Not simulated:** runners, adds, Exorcism / Holy Wrath (Undead and Demons), Repentance, Retribution Aura (Devotion Aura is assumed up), Seal of Wisdom / Seal of Light twisting, Blessing of Kings, shields, gear upgrades within a level bracket.
 - **Pipeline result:** the hand draft `leveling-retribution` holds (no candidate beats it by more than the 2% margin). The player pages pick by their own races (the table at the top of this section).
 

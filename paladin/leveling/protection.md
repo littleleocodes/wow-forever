@@ -10,7 +10,7 @@
 
 **Signature spells:** 71% of the damage at level 60 in the fight lab comes from the spec's core spells (Holy Shield, Seal of Fury, Judgement, melee; this build never casts Consecration, Seal of Righteousness) (the spec's rule: at least 60%; **Holy Shield** cast at level 60).
 
-**Leveling as Protection or as Retribution?** This build takes 30 s per kill (level-weighted, 20-60), [Retribution](../leveling/retribution.md) 26 s: Protection is 13% slower. Your first Protection point comes at level 10. Level this way if you want to tank dungeons later on the way; otherwise level as Retribution and switch at 60 (a respec at a class trainer).
+**Leveling as Protection or as Retribution?** This build takes 30 s per kill (level-weighted, 20-60), [Retribution](../leveling/retribution.md) 27 s: Protection is 11% slower. Your first Protection point comes at level 10. Level this way if you want to tank dungeons later on the way; otherwise level as Retribution and switch at 60 (a respec at a class trainer).
 
 ## How to play
 
@@ -86,10 +86,10 @@ One point per level from 10, in this order:
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
-| 20 | 22 | 18 |
+| 20 | 23 | 19 |
 | 30 | 28 | 22 |
 | 40 | 31 | 25 |
-| 50 | 30 | 27 |
+| 50 | 31 | 27 |
 | 60 | 31 | 28 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.

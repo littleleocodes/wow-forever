@@ -1,21 +1,21 @@
-# Shockadin — Leveling (open talent search) — 22/0/29
+# Shockadin — Leveling (open talent search) — 21/0/30
 
 *[Paladin](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 22/0/29 (Holy / Protection / Retribution) |
+| **Build** | 21/0/30 (Holy / Protection / Retribution) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Shockadin (a Holy/Retribution hybrid) leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the holy-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). +22.1% faster per kill than holy-leveling, the fastest of our leveling builds in that race.
+The Shockadin (a Holy/Retribution hybrid) leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the holy-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). +21.6% faster per kill than holy-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
-### Holy (22)
+### Holy (21)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -28,14 +28,13 @@ The Shockadin (a Holy/Retribution hybrid) leveling build the open leveling searc
 | **Divine Precision** | 2/2 | **NEW** | Improves your chance to hit with Holy spells by 8%, and reduces the duration of Silence effects on you by 20%. |
 | **Infusion of Light** | 1/2 | **NEW** | Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by 0.5 sec. |
 | **Oath of Light** | 1/1 | **NEW** | Swear an Oath to protect target ally for 5 min, increasing the healing of your Holy Light on them by up to 400, your Flash of Light by up to 115, and your Holy Shock by up to 229. Only one Oath of Light may be sworn by the Paladin at any one time. |
-| **Consecrated Ground** | 1/2 | **NEW** | Gives your Holy spells 5% increased damage against the first 4 enemies that enter your Consecration. |
 | **Holy Shock** | 1/1 | changed | Blasts the target with Holy energy, causing 129 to 139 Holy damage to an enemy, or 110 to 118 healing to an ally. |
 
 ### Protection (0)
 
 *No points.*
 
-### Retribution (29)
+### Retribution (30)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -49,7 +48,7 @@ The Shockadin (a Holy/Retribution hybrid) leveling build the open leveling searc
 | **Sacred Arbiter** | 1/1 | **NEW** | Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target. |
 | **Two-Handed Weapon Specialization** | 3/3 | unchanged | Increases the Holy and Physical damage you deal by 6%, and reduces all threat you generate by 20% while a two-handed melee weapon is equipped. |
 | **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 5 times. |
-| **Champion of the Light** | 4/5 | **NEW** | Increases your spell damage by up to 48% of your Intellect, and reduces the cast time of your Hammer of Wrath by 0.8 sec. |
+| **Champion of the Light** | 5/5 | **NEW** | Increases your spell damage by up to 60% of your Intellect, and reduces the cast time of your Hammer of Wrath by 1.0 sec. |
 
 ## Leveling order
 
@@ -79,20 +78,18 @@ The Shockadin (a Holy/Retribution hybrid) leveling build the open leveling searc
 | 51-53 | Retribution | Vengeance | 3 | 21/0/23 |
 | 54 | Retribution | Vindication | 1 | 21/0/24 |
 | 55 | Retribution | Deflection | 1 | 21/0/25 |
-| 56-58 | Retribution | Champion of the Light | 3 | 21/0/28 |
-| 59 | Holy | Consecrated Ground | 1 | 22/0/28 |
-| 60 | Retribution | Champion of the Light | 1 | 22/0/29 |
+| 56-60 | Retribution | Champion of the Light | 5 | 21/0/30 |
 
 ## Core talents (priority order)
 
-1. **Champion of the Light** — +2.9 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Sanctified Judgement** — +2.2 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Conviction** — +1.9 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Vengeance** — +1.7 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Holy Conduit** — +1.6 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Two-Handed Weapon Specialization** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Improved Seals** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Benediction** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Sanctified Judgement** — +1.9 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Conviction** — +1.9 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Holy Conduit** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Two-Handed Weapon Specialization** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Vengeance** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Champion of the Light** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Improved Seals** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Sacred Arbiter** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -100,7 +97,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 30.45; holy-leveling 37.18. The search simulated 38,773 builds.
+- 2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Consecrated Ground to Champion of the Light at 59 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 28.90; holy-leveling 35.13. The search simulated 38,773 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 

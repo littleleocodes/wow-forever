@@ -4,7 +4,7 @@
 
 ## The build and its order
 
-**Prot-Ret** ([player page](../../leveling/prot-ret.md)) — `prot-ret-open-leveling`: The Prot-Ret (a Protection/Retribution hybrid) leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the ret-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). +2.3% faster per kill than leveling-retribution, the fastest of our leveling builds in that race.
+**Prot-Ret** ([player page](../../leveling/prot-ret.md)) — `prot-ret-open-leveling`: The Prot-Ret (a Protection/Retribution hybrid) leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the ret-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). +2.7% faster per kill than leveling-retribution, the fastest of our leveling builds in that race.
 
 | Levels | Tree | Talent | Points |
 |---|---|---|---|
@@ -38,11 +38,11 @@ Level-weighted time per kill (seconds, higher levels count more) of the build ea
 
 | Spec | Page build | Rotation | L20 | L30 | L40 | L50 | L60 | Weighted |
 |---|---|---|---|---|---|---|---|---|
-| [Prot-Ret](../../leveling/prot-ret.md) ✅ | [`prot-ret-open-leveling`](builds/prot-ret-open-leveling.md) | ret-dps | 18.9 | 21.0 | 24.9 | 26.7 | 28.9 | 25.4 |
-| [Retribution](../../leveling/retribution.md) | [`leveling-retribution`](builds/leveling-retribution.md) | ret-dps | 19.0 | 21.4 | 26.0 | 27.4 | 30.0 | 26.1 |
-| [Protection](../../leveling/protection.md) | [`protection-leveling`](builds/protection-leveling.md) | prot-leveling | 22.4 | 27.8 | 30.7 | 30.3 | 31.4 | 29.5 |
-| [Shockadin](../../leveling/shockadin.md) | [`shockadin-open-leveling`](builds/shockadin-open-leveling.md) | holy-leveling | 21.2 | 31.0 | 34.7 | 31.1 | 29.9 | 30.5 |
-| [Holy](../../leveling/holy.md) | [`holy-leveling`](builds/holy-leveling.md) | holy-leveling | 21.6 | 32.7 | 38.3 | 39.6 | 41.9 | 37.2 |
+| [Prot-Ret](../../leveling/prot-ret.md) ✅ | [`prot-ret-open-leveling`](builds/prot-ret-open-leveling.md) | ret-dps | 19.9 | 21.7 | 25.6 | 27.4 | 28.9 | 25.9 |
+| [Retribution](../../leveling/retribution.md) | [`leveling-retribution`](builds/leveling-retribution.md) | ret-dps | 20.1 | 22.4 | 26.9 | 28.2 | 30.0 | 26.8 |
+| [Shockadin](../../leveling/shockadin.md) | [`shockadin-open-leveling`](builds/shockadin-open-leveling.md) | holy-leveling | 21.7 | 28.2 | 32.2 | 29.5 | 28.9 | 28.9 |
+| [Protection](../../leveling/protection.md) | [`protection-leveling`](builds/protection-leveling.md) | prot-leveling | 22.9 | 27.9 | 30.7 | 31.1 | 31.4 | 29.8 |
+| [Holy](../../leveling/holy.md) | [`holy-leveling`](builds/holy-leveling.md) | holy-leveling | 22.1 | 29.6 | 35.6 | 38.2 | 39.4 | 35.1 |
 
 The stats model's respec plan (its own optimizer builds, not the page build): **62.5 h** (30.5% faster than talentless), no respec ([respec plan](respec-plan.md)).
 
@@ -50,10 +50,10 @@ The stats model's respec plan (its own optimizer builds, not the page build): **
 
 | Level | Bracket | Time per kill | Kills/hour |
 |---|---|---|---|
-| 20 | levels 15-25 | 19s | 190 |
-| 30 | levels 25-35 | 21s | 172 |
-| 40 | levels 35-45 | 25s | 145 |
-| 50 | levels 45-55 | 27s | 135 |
+| 20 | levels 15-25 | 20s | 181 |
+| 30 | levels 25-35 | 22s | 166 |
+| 40 | levels 35-45 | 26s | 141 |
+| 50 | levels 45-55 | 27s | 131 |
 | 60 | level 55-60 | 29s | 125 |
 
 Fight time, deaths and downtime are not recorded for this build: its times come from the race of the search that found it, which keeps times only.

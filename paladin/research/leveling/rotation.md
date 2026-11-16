@@ -8,11 +8,11 @@ The build each spec's [leveling page](../../leveling/README.md) shows first, the
 
 | Spec | Page build | Rotation | L20 | L30 | L40 | L50 | L60 | Weighted |
 |---|---|---|---|---|---|---|---|---|
-| [Prot-Ret](../../leveling/prot-ret.md) ✅ | [`prot-ret-open-leveling`](builds/prot-ret-open-leveling.md) | [ret-dps](#ret-dps) | 18.9 | 21.0 | 24.9 | 26.7 | 28.9 | 25.4 |
-| [Retribution](../../leveling/retribution.md) | [`leveling-retribution`](builds/leveling-retribution.md) | [ret-dps](#ret-dps) | 19.0 | 21.4 | 26.0 | 27.4 | 30.0 | 26.1 |
-| [Protection](../../leveling/protection.md) | [`protection-leveling`](builds/protection-leveling.md) | [prot-leveling](#prot-leveling) | 22.4 | 27.8 | 30.7 | 30.3 | 31.4 | 29.5 |
-| [Shockadin](../../leveling/shockadin.md) | [`shockadin-open-leveling`](builds/shockadin-open-leveling.md) | [holy-leveling](#holy-leveling) | 21.2 | 31.0 | 34.7 | 31.1 | 29.9 | 30.5 |
-| [Holy](../../leveling/holy.md) | [`holy-leveling`](builds/holy-leveling.md) | [holy-leveling](#holy-leveling) | 21.6 | 32.7 | 38.3 | 39.6 | 41.9 | 37.2 |
+| [Prot-Ret](../../leveling/prot-ret.md) ✅ | [`prot-ret-open-leveling`](builds/prot-ret-open-leveling.md) | [ret-dps](#ret-dps) | 19.9 | 21.7 | 25.6 | 27.4 | 28.9 | 25.9 |
+| [Retribution](../../leveling/retribution.md) | [`leveling-retribution`](builds/leveling-retribution.md) | [ret-dps](#ret-dps) | 20.1 | 22.4 | 26.9 | 28.2 | 30.0 | 26.8 |
+| [Shockadin](../../leveling/shockadin.md) | [`shockadin-open-leveling`](builds/shockadin-open-leveling.md) | [holy-leveling](#holy-leveling) | 21.7 | 28.2 | 32.2 | 29.5 | 28.9 | 28.9 |
+| [Protection](../../leveling/protection.md) | [`protection-leveling`](builds/protection-leveling.md) | [prot-leveling](#prot-leveling) | 22.9 | 27.9 | 30.7 | 31.1 | 31.4 | 29.8 |
+| [Holy](../../leveling/holy.md) | [`holy-leveling`](builds/holy-leveling.md) | [holy-leveling](#holy-leveling) | 22.1 | 29.6 | 35.6 | 38.2 | 39.4 | 35.1 |
 
 ✅ = a recommended spec for leveling (the fastest, or within 3% of it).
 
@@ -43,9 +43,9 @@ Report: [fightlab/ret-dps.md](fightlab/ret-dps.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 3.4 | 4.0 | 4.9 | 5.3 | 6.3 | 38% |
-| Judgement | 1.5 | 2.0 | 2.4 | 2.5 | 2.9 | 22% |
-| Holy Strike | 1.4 | 1.6 | 2.0 | 2.1 | 2.4 | 22% |
+| Melee | 3.8 | 4.3 | 5.2 | 5.5 | 6.3 | 38% |
+| Judgement | 1.6 | 2.1 | 2.4 | 2.5 | 2.9 | 22% |
+| Holy Strike | 1.5 | 1.7 | 2.0 | 2.2 | 2.4 | 22% |
 | Seal of Command | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 19% |
 | Hammer of Justice | 0.3 | 0.3 | 0.4 | 0.4 | 0.4 | 0% |
 
@@ -53,13 +53,36 @@ Report: [fightlab/ret-dps.md](fightlab/ret-dps.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 3.4 | 4.0 | 4.9 | 5.3 | 6.1 | 37% |
-| Judgement | 1.5 | 2.0 | 2.4 | 2.5 | 2.8 | 23% |
-| Holy Strike | 1.4 | 1.6 | 2.0 | 2.1 | 2.4 | 21% |
+| Melee | 3.8 | 4.3 | 5.2 | 5.5 | 6.1 | 37% |
+| Judgement | 1.6 | 2.1 | 2.4 | 2.5 | 2.8 | 23% |
+| Holy Strike | 1.5 | 1.7 | 2.0 | 2.2 | 2.4 | 21% |
 | Seal of Command | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 19% |
 | Hammer of Justice | 0.3 | 0.3 | 0.4 | 0.4 | 0.4 | 0% |
 
 Casts per kill of [`prot-ret-open-leveling`](builds/prot-ret-open-leveling.md): not recorded (its times per kill come from the race records of the search that found it, which keep times only; the table above has them).
+
+## holy-leveling
+
+Played by the page builds of [Shockadin](../../leveling/shockadin.md) ([`shockadin-open-leveling`](builds/shockadin-open-leveling.md)), [Holy](../../leveling/holy.md) ([`holy-leveling`](builds/holy-leveling.md)).
+
+The priority in the player page's words:
+
+Before the fight: **Blessing of Wisdom** and **Devotion Aura** up, a two-handed weapon. **Seal of Righteousness** before each pull; **Seal of Command** instead once your build has it.
+
+1. **Hammer of Justice** a mob that casts spells.
+2. Once you have **Holy Shock**: cast it at the mob whenever it is ready while the mob has more than 35% of its health left, from range as it walks in and then in melee, after **Divine Favor** for a sure critical hit while you are healthy.
+3. Keep your seal up.
+4. **Hammer of Wrath** when the mob is below 20% health.
+5. With **Seal of Command**: **Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% health left (the judgement hits a stunned mob twice as hard).
+6. With **Swift Judgement**: whenever it is ready, with your seal up and the mob above a quarter of its health (free and off the global cooldown).
+7. **Judgement** and **Holy Strike** whenever ready. Against a single mob, no Consecration: the Holy list never casts it.
+8. Low on health (below 40%, with the mob above a fifth): **Templar's Bulwark** first if your build has it and Forbearance is not on you, then **Holy Shock** on yourself (after **Divine Favor** if it is ready), **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter; **Lay on Hands** below 15%.
+
+Between fights: Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink only below a quarter of your mana, and eat if you are still below 80% of your health.
+
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-16, on top of the priority below): CASTER_GEAR_FROM = 61; Holy Shock only while the mob has more than 35% health; eat below 80% health. Together +7.2% time per kill saved for `shockadin-open-leveling` (level-weighted, a third seed of 3000 fights per level).
+
+Casts per kill of [`shockadin-open-leveling`](builds/shockadin-open-leveling.md), [`holy-leveling`](builds/holy-leveling.md): not recorded (their times per kill come from the race records of the searches that found them, which keep times only; the table above has them).
 
 ## prot-leveling
 
@@ -79,29 +102,6 @@ Between fights: Drink below 15% of your mana; you rarely need to eat.
 **Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-06, on top of the priority below): never cast Consecration; never cast Hammer of Wrath; never cast Hammer of Justice. Together +6.0% time per kill saved for `protection-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 Casts per kill of [`protection-leveling`](builds/protection-leveling.md): not recorded (its times per kill come from the race records of the search that found it, which keep times only; the table above has them).
-
-## holy-leveling
-
-Played by the page builds of [Shockadin](../../leveling/shockadin.md) ([`shockadin-open-leveling`](builds/shockadin-open-leveling.md)), [Holy](../../leveling/holy.md) ([`holy-leveling`](builds/holy-leveling.md)).
-
-The priority in the player page's words:
-
-Before the fight: **Blessing of Wisdom** and **Devotion Aura** up, a two-handed weapon. **Seal of Righteousness** before each pull; **Seal of Command** instead once your build has it.
-
-1. **Hammer of Justice** a mob that casts spells.
-2. Once you have **Holy Shock**: cast it at the mob whenever it is ready while the mob has more than 10% of its health left, from range as it walks in and then in melee, after **Divine Favor** for a sure critical hit while you are healthy.
-3. Keep your seal up.
-4. **Hammer of Wrath** when the mob is below 20% health.
-5. With **Seal of Command**: **Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% health left (the judgement hits a stunned mob twice as hard).
-6. With **Swift Judgement**: whenever it is ready, with your seal up and the mob above a quarter of its health (free and off the global cooldown).
-7. **Judgement** and **Holy Strike** whenever ready. Against a single mob, no Consecration: the Holy list never casts it.
-8. Low on health (below 40%, with the mob above a fifth): **Templar's Bulwark** first if your build has it and Forbearance is not on you, then **Holy Shock** on yourself (after **Divine Favor** if it is ready), **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter; **Lay on Hands** below 15%.
-
-Between fights: Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink only below 15% of your mana, and eat if you are still below 80% of your health.
-
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-15, on top of the priority below): drink below 15% mana; eat below 80% health. Together +1.6% time per kill saved for `holy-leveling` (level-weighted, a third seed of 3000 fights per level).
-
-Casts per kill of [`shockadin-open-leveling`](builds/shockadin-open-leveling.md), [`holy-leveling`](builds/holy-leveling.md): not recorded (their times per kill come from the race records of the searches that found them, which keep times only; the table above has them).
 
 ## ret-dps in pulls of several mobs (research)
 

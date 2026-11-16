@@ -6,44 +6,44 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 
 | Rotation | Trees that level with it | Open winner | Family | Seconds per kill (20-60) | vs our fastest there |
 |---|---|---|---|---|---|
-| holy-leveling | Holy | [22/0/29](https://talentsforever.com/paladin/60/05025110221111--1523330100130034-12) | Hybrid Holy/Retribution | 30.45 | +22.1% faster than holy-leveling |
-| prot-leveling | Protection | [3/31/17](https://talentsforever.com/paladin/60/03-15310102412301511-05233300001-12) | Protection | 29.06 | +0.0% faster than protection-open-leveling |
-| ret-dps | Retribution | [11/16/24](https://talentsforever.com/paladin/60/05024-5230011031-421333010013003-12) | Hybrid Protection/Retribution | 25.37 | +2.3% faster than leveling-retribution |
+| holy-leveling | Holy | [22/0/29](https://talentsforever.com/paladin/60/05025110221111--1523330100130034-12) | Hybrid Holy/Retribution | 28.90 | +21.6% faster than holy-leveling |
+| prot-leveling | Protection | [3/31/17](https://talentsforever.com/paladin/60/03-15310102412301511-05233300001-12) | Protection | 29.21 | +0.2% faster than protection-open-leveling |
+| ret-dps | Retribution | [11/16/24](https://talentsforever.com/paladin/60/05024-5230011031-421333010013003-12) | Hybrid Protection/Retribution | 25.88 | +2.7% faster than leveling-retribution |
 
 ## holy-leveling
 
-**Open winner 22/0/29** (Hybrid Holy/Retribution): talent values at level 60 (seconds per kill lost without the talent; the build: 29.78 s):
+**Open winner 22/0/29** (Hybrid Holy/Retribution): talent values at level 60 (seconds per kill lost without the talent; the build: 28.92 s):
 
 | Talent | Ranks | Seconds lost without it | Per point |
 |---|---|---|---|
-| Champion of the Light | 4 | +2.91 | +0.73 |
-| Sanctified Judgement | 3 | +2.21 | +0.74 |
-| Conviction | 3 | +1.93 | +0.64 |
-| Vengeance | 3 | +1.67 | +0.56 |
-| Holy Conduit | 2 | +1.55 | +0.78 |
-| Two-Handed Weapon Specialization | 3 | +1.36 | +0.45 |
-| Improved Seals | 5 | +1.13 | +0.23 |
-| Benediction | 5 | +0.88 | +0.18 |
-| Vindication | 3 | +0.86 | +0.29 |
-| Improved Judgement | 2 | +0.79 | +0.39 |
-| Sacred Arbiter | 1 | +0.58 | +0.58 |
-| Reverence | 2 | +0.57 | +0.29 |
-| Divine Favor | 1 | +0.56 | +0.56 |
-| Divine Precision | 2 | +0.39 | +0.19 |
-| Divine Strength | 5 | +0.28 | +0.06 |
+| Sanctified Judgement | 3 | +1.95 | +0.65 |
+| Conviction | 3 | +1.89 | +0.63 |
+| Holy Conduit | 2 | +1.37 | +0.68 |
+| Two-Handed Weapon Specialization | 3 | +1.35 | +0.45 |
+| Vengeance | 3 | +1.24 | +0.41 |
+| Champion of the Light | 4 | +1.17 | +0.29 |
+| Improved Seals | 5 | +0.88 | +0.18 |
+| Sacred Arbiter | 1 | +0.71 | +0.71 |
+| Benediction | 5 | +0.69 | +0.14 |
+| Vindication | 3 | +0.61 | +0.20 |
+| Improved Judgement | 2 | +0.57 | +0.28 |
+| Reverence | 2 | +0.46 | +0.23 |
+| Divine Strength | 5 | +0.42 | +0.08 |
+| Divine Precision | 2 | +0.39 | +0.20 |
+| Divine Favor | 1 | +0.36 | +0.36 |
 | Deflection | 1 | +0.13 | +0.13 |
+| Holy Shock | 1 | +0.11 | +0.11 |
+| Seal of Command | 1 | +0.05 | +0.05 |
 | Purifying Power | 1 | +0.00 | +0.00 |
 | Infusion of Light | 1 | +0.00 | +0.00 |
 | Oath of Light | 1 | +0.00 | +0.00 |
 | Consecrated Ground | 1 | +0.00 | +0.00 |
-| Holy Shock | 1 | -0.68 | -0.68 |
-| Seal of Command | 1 | -0.70 | -0.70 |
 
-Race at levels 20-60 (seconds per kill): finalist 22/0/29 (own tree first order) 30.45, open winner 30.45, finalist 22/0/29 (own tree last order) 30.64, finalist 30/0/21 (before the 20-60 polish) 32.31, finalist 21/16/14 32.37, holy-leveling 37.18.
+Race at levels 20-60 (seconds per kill): open winner 28.90, finalist 22/0/29 (own tree first order) 28.90, finalist 22/0/29 (own tree last order) 29.05, finalist 21/16/14 (the previous record's winner) 30.44, finalist 30/0/21 30.53, holy-leveling 35.13.
 
-**Signature spells** (Hybrid Holy/Retribution, levels 20-60, 2026-11-16): OK; core share at 60 25% (rule 12%: Holy Shock).
+**Signature spells** (Hybrid Holy/Retribution, levels 20-60, 2026-11-16): OK; core share at 60 19% (rule 12%: Holy Shock).
 
-**Synergy certificate** (2026-11-15, fightlab/fl_synergy.py): 37 relevant talents, 18 the winner lacks; 608 pairs measured around 22/0/29 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Eye for an Eye + Holy Shock +112.3% (build +5.5%), Turn Evil + Holy Shock +111.2% (build +4.4%), Repentance + Holy Shock +111.2% (build +4.4%), Unsealed Wrath + Holy Shock +111.2% (build +4.4%), Eye for an Eye + Divine Favor +12.7% (build +0.6%), Swift Judgement + Eye for an Eye +12.1% (build +7.2%). No pair build within 1% of the winner. The certificate confirms the winner.
+**Synergy certificate** (2026-11-16, fightlab/fl_synergy.py): 37 relevant talents, 18 the winner lacks; 608 pairs measured around 22/0/29 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Eye for an Eye + Holy Shock +96.1% (build +0.4%), Turn Evil + Holy Shock +95.4% (build +0.4%), Repentance + Holy Shock +95.4% (build +0.4%), Unsealed Wrath + Holy Shock +95.4% (build +0.4%), Holy Shield + Holy Shock +12.2% (build -95.7%), Improved Hammer of Justice + Holy Shield +3.9% (build -11.6%). No pair build within 1% of the winner. The certificate confirms the winner.
 
 ## prot-leveling
 
@@ -73,7 +73,7 @@ Race at levels 20-60 (seconds per kill): finalist 22/0/29 (own tree first order)
 | Anticipation | 3 | +0.00 | +0.00 |
 | Divine Intellect | 1 | -0.03 | -0.03 |
 
-Race at levels 20-60 (seconds per kill): protection-open-leveling 29.06, open winner 29.06, finalist 0/30/21 29.21, finalist 13/25/13 (the previous record's winner) 29.42, protection-leveling 29.53, finalist 3/31/17 (own tree first order) 29.69.
+Race at levels 20-60 (seconds per kill): open winner 29.21, protection-open-leveling 29.26, finalist 3/31/17 (stats model order, before the order polish) 29.26, finalist 0/30/21 29.45, finalist 13/25/13 (the previous record's winner) 29.66, protection-leveling 29.83, finalist 3/31/17 (own tree first order) 29.89.
 
 **Signature spells** (Protection, levels 20-60, 2026-11-16): OK; core share at 60 72% (rule 60%: Holy Shield, Seal of Fury, Judgement, melee, Consecration, Seal of Righteousness).
 
@@ -106,7 +106,7 @@ Race at levels 20-60 (seconds per kill): protection-open-leveling 29.06, open wi
 | Templar's Bulwark | 1 | +0.00 | +0.00 |
 | Improved Hammer of Justice | 1 | -0.01 | -0.01 |
 
-Race at levels 20-60 (seconds per kill): open winner 25.37, finalist 11/16/24 (own tree first order) 25.39, finalist 12/16/23 25.51, finalist 12/16/23 (the previous record's winner) 25.75, leveling-retribution 25.95, opt-ret-dps-leveling-st 26.15, finalist 11/16/24 (own tree last order) 28.87.
+Race at levels 20-60 (seconds per kill): open winner 25.88, finalist 11/16/24 (own tree first order) 25.92, finalist 12/16/23 26.08, finalist 12/16/23 (the previous record's winner) 26.36, leveling-retribution 26.57, opt-ret-dps-leveling-st 26.77, finalist 11/16/24 (own tree last order) 29.15.
 
 **Signature spells** (Hybrid Protection/Retribution, levels 20-60, 2026-11-16): OK; core share at 60 100% (rule 60%: melee, Seal of Command, Seal of Righteousness, Seal of Fury, Judgement, Holy Strike).
 

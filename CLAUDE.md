@@ -251,7 +251,9 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   `live_spells.SPELLS` pointed at the spellbooks with each `live.before` restored: against today's text it drops every change taken.
   The same gap in the fight lab: spell_scaling.json scales a rank's own effects only, so a number from a referenced spell is read at
   its level-60 value at every level (the shaman's imbues scale since 2026-11-15 through `--referenced-only` rows and
-  `tables.rank_amounts`; the paladin's seals and a few small ones are open, search-improvements 0i).
+  `tables.rank_amounts`; the paladin's seal judgements since 2026-11-16 through the referenced "Judgement of <seal>" rows and
+  `paladin._level_judgement`: Retribution 3-5% slower per kill at 20-50, unchanged at 60; a few small ones are open,
+  search-improvements 0i).
   The client's own tables per build are on wago.tools (product wowf, `https://wago.tools/db2/<Table>/csv?build=<build>`; the CSVs go to
   ~/.wow-forever-tools/wago/, never the repository): diff them to see when a change landed.
 - Proposed Forever builds are **hypotheses**: validated for point math only. Mark performance claims as
@@ -393,7 +395,9 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   fastest set is installed only when it beats the saved rules by 0.3% on the final check; `--continued-only` skips the from-scratch half,
   for a new knob on mechanics the saved rules were tuned on the same day). Eight files had predated their class's patch
   port: warlock Destruction ran 9% slower under the old file, rogue Subtlety 0.7% (2.3% at level 60). Never change a rule file while
-  its rotation's search runs. The signature floor a tune enforces is its build's own spec: the `spec` field, as the pages and the
+  its rotation's search runs. `fightlab/fl_filler_pass.py` (a pick's zero-value points moved to useful talents) keeps the spec's
+  signature talents where they are (2026-11-16: the Shockadin's pass had moved Holy Shock to Deflection, 3.8% faster per kill in
+  melee gear; `level_guides --check` caught it). The signature floor a tune enforces is its build's own spec: the `spec` field, as the pages and the
   signature audit judge it, else its points (2026-11-15: the Discipline page's 29/22/0 raid-path build had been judged by its points as
   the Smite hybrid, and rules tuned to that floor, Smite and Holy Fire half the damage, starved Penance: 46 -> 58 s per kill). Tune a
   rotation two pages play on the build with the stricter floor: priest `holy-leveling` on `smite-open-leveling` (the Smite page, 50%),
@@ -456,9 +460,10 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
   leveling rotation took Instant Poison on both hands (0.8-1.7% faster per kill; Assassination's rules also dropped Kick). The
   shaman's tunes kept their rules, and a direct A/B put Rockbiter back from 54 in the Enhancement rules by hand (0.8-1.8% faster per
   kill at 54-60; the tune's 600-fight screening had read it as +0.16%: search-improvements 0j). The imbues' numbers are read at the
-  shaman's level (Rockbiter rank 5: 212 attack power at 34, 355 from 42). The paladin's Holy path still makes two such choices itself
-  (2026-11-16, measured, not yet knobs: caster gear from Holy Shock, 6% slower per kill than melee gear over 30-60 for the Shockadin
-  and Holy pages; Seal of Command whenever the build has it): search-improvements 0h, ask before a queue. **Save points**: `fl_open_search.SimCache` keeps every
+  shaman's level (Rockbiter rank 5: 212 attack power at 34, 355 from 42). The paladin's Holy-path gear row and seal are
+  knobs since 2026-11-16 (user: "Go with your rec"; `paladin.CASTER_GEAR_FROM`: caster gear from a level, 61 never; `SOR_FROM`:
+  Seal of Righteousness over Seal of Command from a level; both in PVE_KNOBS): the Holy rules took melee gear at every level (5%
+  faster per kill for the Shockadin; caster gear from Holy Shock on had been the module's own choice) and kept Seal of Command. **Save points**: `fl_open_search.SimCache` keeps every
   fight-lab result of a rotation's level-60 block in `open/cache/<class>-<rotation>.simcache.jsonl` until the winner is saved, so a
   stopped search replays its finished work (the file is void after any change to the engine, a class module, the rules or the data).
   **Gear**: `raidsim/gear_check.py [classes] [--pool]` lists, without a simulator run, the sets that hold items the database lacks

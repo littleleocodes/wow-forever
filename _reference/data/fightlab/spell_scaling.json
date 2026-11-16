@@ -2339,6 +2339,353 @@
      ],
      "id": 10318
     }
+   },
+   "Seal of Righteousness": {
+    "10": {
+     "judgement": [
+      [
+       26.0,
+       1.9,
+       10,
+       16
+      ]
+     ],
+     "via": [
+      20280
+     ],
+     "id": 20287
+    },
+    "18": {
+     "judgement": [
+      [
+       41.0,
+       2.4,
+       18,
+       24
+      ]
+     ],
+     "via": [
+      20281
+     ],
+     "id": 20288
+    },
+    "26": {
+     "judgement": [
+      [
+       60.0,
+       2.8,
+       26,
+       32
+      ]
+     ],
+     "via": [
+      20282
+     ],
+     "id": 20289
+    },
+    "34": {
+     "judgement": [
+      [
+       82.0,
+       3.1,
+       34,
+       40
+      ]
+     ],
+     "via": [
+      20283
+     ],
+     "id": 20290
+    },
+    "42": {
+     "judgement": [
+      [
+       107.0,
+       3.8,
+       42,
+       48
+      ]
+     ],
+     "via": [
+      20284
+     ],
+     "id": 20291
+    },
+    "50": {
+     "judgement": [
+      [
+       137.0,
+       4.1,
+       50,
+       56
+      ]
+     ],
+     "via": [
+      20285
+     ],
+     "id": 20292
+    },
+    "58": {
+     "judgement": [
+      [
+       170.0,
+       4.1,
+       58,
+       64
+      ]
+     ],
+     "via": [
+      20286
+     ],
+     "id": 20293
+    }
+   },
+   "Seal of Fury": {
+    "10": {
+     "direct": [
+      [
+       6.0,
+       0.0,
+       1,
+       0
+      ]
+     ],
+     "judgement": [
+      [
+       23.0,
+       1.71,
+       10,
+       16
+      ]
+     ],
+     "via": [
+      1311647,
+      1311650,
+      20232
+     ],
+     "id": 1311649
+    },
+    "18": {
+     "direct": [
+      [
+       9.0,
+       0.0,
+       1,
+       0
+      ]
+     ],
+     "judgement": [
+      [
+       36.900001525878906,
+       2.16,
+       18,
+       24
+      ]
+     ],
+     "via": [
+      1311654,
+      1311655,
+      20232
+     ],
+     "id": 1311656
+    },
+    "26": {
+     "direct": [
+      [
+       14.0,
+       0.0,
+       1,
+       0
+      ]
+     ],
+     "judgement": [
+      [
+       54.0,
+       2.52,
+       25,
+       31
+      ]
+     ],
+     "via": [
+      20231,
+      20183,
+      20232
+     ],
+     "id": 20163
+    },
+    "34": {
+     "direct": [
+      [
+       19.0,
+       0.0,
+       1,
+       0
+      ]
+     ],
+     "judgement": [
+      [
+       74.0,
+       2.79,
+       34,
+       40
+      ]
+     ],
+     "via": [
+      20415,
+      20411,
+      20232
+     ],
+     "id": 20419
+    },
+    "42": {
+     "direct": [
+      [
+       25.0,
+       0.0,
+       1,
+       0
+      ]
+     ],
+     "judgement": [
+      [
+       96.0,
+       3.42,
+       42,
+       48
+      ]
+     ],
+     "via": [
+      20416,
+      20412,
+      20232
+     ],
+     "id": 20421
+    },
+    "50": {
+     "direct": [
+      [
+       32.0,
+       0.0,
+       1,
+       0
+      ]
+     ],
+     "judgement": [
+      [
+       123.0,
+       3.69,
+       50,
+       56
+      ]
+     ],
+     "via": [
+      20417,
+      20413,
+      20232
+     ],
+     "id": 20422
+    },
+    "58": {
+     "direct": [
+      [
+       35.0,
+       0.0,
+       1,
+       0
+      ]
+     ],
+     "judgement": [
+      [
+       153.0,
+       3.69,
+       58,
+       64
+      ]
+     ],
+     "via": [
+      20418,
+      20414,
+      20232
+     ],
+     "id": 20423
+    }
+   },
+   "Seal of Command": {
+    "20": {
+     "judgement": [
+      [
+       97.0,
+       5.6,
+       20,
+       28
+      ]
+     ],
+     "via": [
+      20424,
+      20467
+     ],
+     "id": 20375
+    },
+    "30": {
+     "judgement": [
+      [
+       153.0,
+       6.1,
+       30,
+       38
+      ]
+     ],
+     "via": [
+      20424,
+      20963
+     ],
+     "id": 20915
+    },
+    "40": {
+     "judgement": [
+      [
+       214.0,
+       5.6,
+       40,
+       48
+      ]
+     ],
+     "via": [
+      20424,
+      20964
+     ],
+     "id": 20918
+    },
+    "50": {
+     "judgement": [
+      [
+       274.0,
+       6.1,
+       50,
+       58
+      ]
+     ],
+     "via": [
+      20424,
+      20965
+     ],
+     "id": 20919
+    },
+    "60": {
+     "judgement": [
+      [
+       356.0,
+       6.1,
+       60,
+       68
+      ]
+     ],
+     "via": [
+      20424,
+      20966
+     ],
+     "id": 20920
+    }
    }
   },
   "priest": {
@@ -5063,5 +5410,5 @@
   },
   "warrior": {}
  },
- "referenced_source": "RefIDs' effects in ~\\.wow-forever-tools\\wowsims-forever\\sim\\core\\spelldata\\spells_auto_gen.go for shaman: Rockbiter Weapon, Windfury Weapon, Flametongue Weapon, Frostbrand Weapon (spell_scaling.py --referenced-only)"
+ "referenced_source": "RefIDs' effects in ~\\.wow-forever-tools\\wowsims-forever\\sim\\core\\spelldata\\spells_auto_gen.go for shaman: Rockbiter Weapon, Windfury Weapon, Flametongue Weapon, Frostbrand Weapon; paladin: Seal of Command, Seal of Righteousness, Seal of Fury (spell_scaling.py --referenced-only)"
 }
