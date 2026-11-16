@@ -35,6 +35,14 @@ SHAMAN_1110 = ("2026-11-10", ["https://us.forums.blizzard.com/en/wow/t/2403040"]
 # live_spells.py lists it as not taken because the wording moved. Our text kept the 70753 tooltip (86 a second, +10% to the other Shadow
 # damage over time effects for 6 s) until 2026-11-16 (user: "Go with your rec"); the fight lab's warlock module reads both wordings.
 WARLOCK_1110 = ("2026-11-10", ["https://us.forums.blizzard.com/en/wow/t/2403040", "https://www.wowhead.com/forever/spell=1316697"])
+
+# 2026-11-16: two server hotfixes Blizzard's written notes left out, found when the re-pin to 2e6e77d84 brought them into the official
+# simulator (sim_value_audit's new row and the spell-data diff ff9babba5..2e6e77d84): Mental Dexterity 50/100/150% of Intellect as
+# attack power -> 33/66/100% (hotfix push 114027, wowsims/forever #969 of 2026-11-12: the push that carries the 10 Nov Stormstrike and
+# Maelstrom Weapon hotfix) and Wild Growth's spell power coefficient 3.3% -> 6.6% a tick on all three ranks (push 114015,
+# wowsims/forever 3b7e5d80c of 2026-11-12). Applied 2026-11-16 (user: "Run both tonight").
+SHAMAN_PUSH_114027 = ("2026-11-10", ["https://us.forums.blizzard.com/en/wow/t/2403040", "https://github.com/wowsims/forever/pull/969"])
+DRUID_PUSH_114015 = ("2026-11-12", ["https://github.com/wowsims/forever/commit/3b7e5d80c94d20aa75471f50940aecbf58cb8daa"])
 WRACK_OLD = ("Tears the target apart from within, inflicting 86 Shadow damage every 1 sec and increasing the damage they take from your other "
              "Shadow damage over time effects by 10% for 6 sec.")
 WRACK_NEW = ("Tears the target apart from within for 6 sec, inflicting 60 Shadow damage every 1 sec. While channeling, your Siphon Life, "
@@ -63,6 +71,9 @@ def _per_rank(pat, values):
     return lambda i, s: re.sub(pat, lambda m: m.group(0).replace(m.group(1), str(values[i])), s, count=1) if i < len(values) else s
 
 
+TALENTS[("shaman", "Mental Dexterity")] = ([_per_rank(r"equal to (\d+)% of your Intellect", [33, 66, 100])], SHAMAN_PUSH_114027)
+
+
 # 2026-11-03: the hunter hotfix first seen in the launch realms' hotfix cache on 3 Nov, applied over the 2 Nov build (no Blizzard notes;
 # per-rank numbers from foreverchanges.pro; the official simulator's draft PR #824 "Take the live hotfix's shot buffs" takes the same
 # change). talentsforever's export of 2026-11-03 already carries the talent half (Lightning Reflexes 3%, Barrage 5/10/15%, Trueshot Aura)
@@ -78,6 +89,7 @@ SPELLS = {
     ("shaman", "Stormstrike"): ([_sub(r"strike for 150% normalized weapon damage", lambda i, m: "strike for 100% normalized weapon damage")],
                                 {"cooldown": "8 sec cooldown"}, SHAMAN_1110),
     ("warlock", "Wrack"): ([_sub(re.escape(WRACK_OLD), lambda i, m: WRACK_NEW)], {"coefficient": "20% of spell power (per tick)"}, WARLOCK_1110),
+    ("druid", "Wild Growth"): ([], {"coefficient": "6.6% of spell power (per tick)"}, DRUID_PUSH_114015),
 }
 
 

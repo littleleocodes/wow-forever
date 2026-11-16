@@ -4,11 +4,11 @@
 
 **Leveling from level 1?** [The rotation level by level](elemental-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Elemental — Leveling](../research/leveling/builds/elemental-open-leveling.md)** (32/11/8) — [open the talent tree](https://talentsforever.com/shaman/60/530433100301135-05003201-053-12)
+**[Elemental — Leveling](../research/leveling/builds/elemental-open-leveling.md)** (32/11/8) — [open the talent tree](https://talentsforever.com/shaman/60/530333100302135-05003201-053-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-**Signature spells:** 75% of the damage at level 60 in the fight lab comes from the spec's core spells (Lightning Bolt, Earth Shock, Flame Shock; this build never casts Chain Lightning) (the spec's rule: at least 60%; **Lightning Bolt** cast at level 60).
+**Signature spells:** 76% of the damage at level 60 in the fight lab comes from the spec's core spells (Lightning Bolt, Earth Shock, Flame Shock; this build never casts Chain Lightning) (the spec's rule: at least 60%; **Lightning Bolt** cast at level 60).
 
 ## How to play
 
@@ -77,8 +77,7 @@ One point per level from 10, in this order:
 | 52 | Call of Thunder (Elemental) | 1 |
 | 53 | Reverberation (Elemental) | 1 |
 | 54-58 | Elemental Fury (Elemental) | 5 |
-| 59 | Reverberation (Elemental) | 1 |
-| 60 | Elemental Reach (Elemental) | 1 |
+| 59-60 | Elemental Reach (Elemental) | 2 |
 
 ## The numbers
 

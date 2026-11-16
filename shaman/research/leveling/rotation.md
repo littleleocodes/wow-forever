@@ -8,9 +8,9 @@ The build each spec's [leveling page](../../leveling/README.md) shows first, the
 
 | Spec | Page build | Rotation | L20 | L30 | L40 | L50 | L60 | Weighted |
 |---|---|---|---|---|---|---|---|---|
-| [Enhancement](../../leveling/enhancement.md) ✅ | [`enhancement-open-leveling`](builds/enhancement-open-leveling.md) | [enhancement-dps](#enhancement-dps) | 21.0 | 24.9 | 27.0 | 28.1 | 27.9 | 26.6 |
+| [Enhancement](../../leveling/enhancement.md) ✅ | [`enhancement-open-leveling`](builds/enhancement-open-leveling.md) | [enhancement-dps](#enhancement-dps) | 21.3 | 25.5 | 27.3 | 27.8 | 27.9 | 26.7 |
 | [Elemental](../../leveling/elemental.md) | [`elemental-open-leveling`](builds/elemental-open-leveling.md) | [elemental-dps](#elemental-dps) | 26.6 | 29.4 | 29.9 | 29.0 | 27.5 | 28.5 |
-| [Restoration](../../leveling/restoration.md) | [`restoration-leveling`](builds/restoration-leveling.md) | [enhancement-dps](#enhancement-dps) | 23.9 | 31.6 | 37.8 | 40.5 | 41.5 | 37.3 |
+| [Restoration](../../leveling/restoration.md) | [`restoration-leveling`](builds/restoration-leveling.md) | [enhancement-dps](#enhancement-dps) | 23.9 | 31.6 | 37.4 | 39.6 | 41.5 | 37.0 |
 
 ✅ = a recommended spec for leveling (the fastest, or within 3% of it).
 
@@ -22,7 +22,7 @@ Single-target leveling fights against normal mobs of your level with a slow two-
 
 The priority in the player page's words:
 
-Before the fight: **Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30, **Rockbiter Weapon** again from 54), a slow two-handed weapon. Walk in without an opening **Lightning Bolt** (its mana costs more drinking than it saves) and drop **Searing Totem** as you pull while you have more than half your mana.
+Before the fight: **Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30, **Rockbiter Weapon** again from 40), a slow two-handed weapon. Walk in without an opening **Lightning Bolt** (its mana costs more drinking than it saves) and drop **Searing Totem** as you pull while you have more than half your mana.
 
 1. **Rage of the Farseer** at the start of a fight whenever it is ready.
 2. **Earth Shock** a caster mob's spell: it interrupts and brings the mob to you.
@@ -33,7 +33,7 @@ Before the fight: **Lightning Shield** up, **Rockbiter Weapon** on your weapon (
 
 Between fights: Heal back to 80% health with **Lesser Healing Wave** (**Healing Wave** for a big gap); eat if you are still under 80% (out of mana for heals); drink below 15% of your mana.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-03, on top of the priority below): Lightning Bolt only when the mob is below 35% health; drink below 15% mana; eat below 80% health; Rockbiter Weapon again from 54 (IMBUE_TOP = rockbiter, IMBUE_TOP_FROM = 54). Together +11.1% time per kill saved for `leveling-enhancement` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-16, on top of the priority below): IMBUE_TOP_FROM = 40. Together +0.4% time per kill saved for `enhancement-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/enhancement-dps.md](fightlab/enhancement-dps.md).
 
@@ -41,25 +41,25 @@ Report: [fightlab/enhancement-dps.md](fightlab/enhancement-dps.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 3.1 | 3.2 | 3.6 | 3.9 | 4.3 | 30% |
-| Earth Shock | 2.0 | 1.8 | 2.0 | 2.1 | 2.2 | 37% |
+| Melee | 3.2 | 3.3 | 3.6 | 3.8 | 4.3 | 30% |
+| Earth Shock | 2.0 | 1.8 | 2.0 | 2.1 | 2.2 | 38% |
 | Stormstrike | 0.0 | 1.6 | 1.7 | 1.8 | 1.9 | 13% |
 | Lightning Shield | 0.6 | 0.6 | 0.7 | 0.7 | 0.7 | 13% |
-| Searing Totem | 0.8 | 0.6 | 0.6 | 0.6 | 0.6 | 4% |
-| Lightning Bolt | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 2% |
-| Windfury | 0.0 | 1.7 | 1.8 | 2.0 | 0.0 | 0% |
+| Searing Totem | 0.7 | 0.7 | 0.6 | 0.6 | 0.6 | 4% |
+| Lightning Bolt | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 3% |
+| Windfury | 0.0 | 1.7 | 0.0 | 0.0 | 0.0 | 0% |
 
 ### [`leveling-enhancement`](builds/leveling-enhancement.md)
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 3.1 | 3.4 | 3.8 | 3.9 | 4.1 | 31% |
-| Stormstrike | 0.0 | 1.6 | 1.9 | 1.9 | 2.1 | 15% |
-| Earth Shock | 2.0 | 1.8 | 1.8 | 1.8 | 2.0 | 34% |
+| Melee | 3.2 | 3.5 | 3.7 | 3.8 | 4.2 | 31% |
+| Stormstrike | 0.0 | 1.6 | 1.8 | 1.9 | 2.1 | 15% |
+| Earth Shock | 2.0 | 1.9 | 1.9 | 1.8 | 2.0 | 34% |
 | Lightning Shield | 0.6 | 0.6 | 0.6 | 0.7 | 0.7 | 11% |
 | Searing Totem | 0.7 | 0.6 | 0.6 | 0.6 | 0.6 | 4% |
-| Lightning Bolt | 0.0 | 0.0 | 0.3 | 0.5 | 0.4 | 5% |
-| Windfury | 0.0 | 1.6 | 1.9 | 2.0 | 0.0 | 0% |
+| Lightning Bolt | 0.0 | 0.0 | 0.2 | 0.4 | 0.4 | 5% |
+| Windfury | 0.0 | 1.7 | 0.0 | 0.0 | 0.0 | 0% |
 
 Casts per kill of [`enhancement-open-leveling`](builds/enhancement-open-leveling.md), [`restoration-leveling`](builds/restoration-leveling.md): not recorded (their times per kill come from the race records of the searches that found them, which keep times only; the table above has them).
 
@@ -155,19 +155,19 @@ Report: [fightlab/elemental-dps.md](fightlab/elemental-dps.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 3.1 | 3.2 | 3.6 | 3.9 | 4.3 | 30% |
-| Earth Shock | 2.0 | 1.8 | 2.0 | 2.1 | 2.2 | 37% |
+| Melee | 3.2 | 3.3 | 3.6 | 3.8 | 4.3 | 30% |
+| Earth Shock | 2.0 | 1.8 | 2.0 | 2.1 | 2.2 | 38% |
 | Stormstrike | 0.0 | 1.6 | 1.7 | 1.8 | 1.9 | 13% |
 | Lightning Shield | 0.6 | 0.6 | 0.7 | 0.7 | 0.7 | 13% |
-| Searing Totem | 0.8 | 0.6 | 0.6 | 0.6 | 0.6 | 4% |
-| Lightning Bolt | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 2% |
-| Windfury | 0.0 | 1.7 | 1.8 | 2.0 | 0.0 | 0% |
+| Searing Totem | 0.7 | 0.7 | 0.6 | 0.6 | 0.6 | 4% |
+| Lightning Bolt | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 3% |
+| Windfury | 0.0 | 1.7 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## enhancement-dps in pulls of several mobs (research)
 
 Pulls of several mobs: area attacks when enough mobs stand in reach, then damage over time spread over the pull, else the single-target priority below. Single-target leveling fights against normal mobs of your level with a slow two-hander: Lightning Shield (Water Shield when talented and mana is low) and the weapon imbue up (Rockbiter's attack power until 30, Windfury's extra attacks from 30), Searing Totem dropped at the pull, a Lightning Bolt while the mob walks in, then Stormstrike, Earth Shock (buffed by Stormstrike), Flame Shock while mana allows and instant Maelstrom Lightning Bolts between white swings; Stoneclaw Totem and a Lesser Healing Wave when low, Nature's Swiftness + Healing Wave in an emergency; a death with Reincarnation ready costs 30 s instead of 90. Between fights: 2 s loot, 6 s travel, heals back to 80% health, water below 35% mana.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-03, on top of the priority below): Lightning Bolt only when the mob is below 35% health; drink below 15% mana; eat below 80% health; Rockbiter Weapon again from 54 (IMBUE_TOP = rockbiter, IMBUE_TOP_FROM = 54). Together +11.1% time per kill saved for `leveling-enhancement` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-16, on top of the priority below): IMBUE_TOP_FROM = 40. Together +0.4% time per kill saved for `enhancement-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/enhancement-dps-aoe.md](fightlab/enhancement-dps-aoe.md).
 

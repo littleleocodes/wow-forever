@@ -13,7 +13,7 @@
 | warrior | `arms-2h-raid` | `opt-arms-2h-raid-leveling-st` | - | 22.5 | 22.7 | 24.2 | 25.2 | 28.4 | 127 |
 | rogue | `combat-swords-raid` | `opt-combat-swords-raid-leveling-st` | - | 18.2 | 20.0 | 23.4 | 23.7 | 24.2 | 148 |
 | paladin | `ret-dps` | `opt-ret-dps-leveling-st` | - | 20.1 | 22.4 | 26.9 | 28.2 | 30.7 | 117 |
-| shaman | `enhancement-dps` | `opt-enhancement-dps-leveling-st` | - | 21.1 | 25.4 | 28.0 | 29.5 | 28.9 | 124 |
+| shaman | `enhancement-dps` | `opt-enhancement-dps-leveling-st` | - | 21.5 | 26.1 | 28.4 | 29.6 | 29.1 | 124 |
 | druid | `feral-cat-dps` | `opt-feral-cat-dps-leveling-st` | 31.1 | 21.6 | 24.0 | 26.4 | 26.4 | 28.1 | 128 |
 
 ## Hand draft vs. the optimizer's build (time per kill, hand draft relative to the optimizer)
@@ -27,7 +27,7 @@
 | warrior | `leveling-arms` | - | 22.4 (-0%) | 22.6 (-0%) | 24.7 (+2%) | 25.7 (+2%) | 28.2 (-1%) | leveling-arms |
 | rogue | `leveling-combat-swords` | - | 18.9 (+3%) | 22.2 (+11%) | 25.0 (+7%) | 24.8 (+4%) | 23.1 (-5%) | leveling-combat-swords |
 | paladin | `leveling-retribution` | - | 20.1 (+0%) | 22.4 (+0%) | 26.9 (+0%) | 28.2 (+0%) | 30.0 (-2%) | leveling-retribution |
-| shaman | `leveling-enhancement` | - | 21.2 (+0%) | 25.5 (+0%) | 27.6 (-1%) | 28.3 (-4%) | 28.4 (-2%) | leveling-enhancement |
+| shaman | `leveling-enhancement` | - | 21.6 (+0%) | 26.2 (+1%) | 27.7 (-2%) | 28.1 (-5%) | 28.6 (-2%) | leveling-enhancement |
 | druid | `leveling-feral` | 31.1 (+0%) | 21.6 (+0%) | 24.0 (+0%) | 26.4 (+0%) | 26.4 (+0%) | 28.2 (+0%) | leveling-feral |
 
 Positive = the hand draft is slower. The race winner is the fastest build over all levels among the hand draft and every saved candidate (`rebuild.py`, `last-rebuild.json`); the class README says which build is recommended and why.
@@ -43,7 +43,7 @@ Positive = the hand draft is slower. The race winner is the fastest build over a
 | warrior | 0.0 | 0.0 | 0.1s | 0.9s | 14.6s | 19.5s | 16% | 0.00 |
 | rogue | 0.0 | 0.0 | 0.4s | 1.7s | 11.6s | 14.6s | 16% | 0.00 |
 | paladin | 0.0 | 0.0 | 1.1s | 2.4s | 13.4s | 20.3s | 16% | 0.00 |
-| shaman | 0.0 | 0.0 | 6.4s | 7.7s | 11.1s | 13.2s | 16% | 0.16 |
+| shaman | 0.0 | 0.0 | 6.6s | 7.8s | 11.4s | 13.4s | 16% | 0.17 |
 | druid | 0.0 | 0.0 | 1.3s | 2.3s | 14.8s | 17.8s | 16% | 0.00 |
 
 ## Gear tiers (time per kill, optimizer build): greens vs. dungeon blues (Classic 1.12 item database)
@@ -57,7 +57,7 @@ Positive = the hand draft is slower. The race winner is the fastest build over a
 | warrior | 22.7s | 20.4s (-10%) | 28.4s | 26.6s (-6%) |
 | rogue | 20.0s | 18.3s (-8%) | 24.2s | 23.3s (-4%) |
 | paladin | 22.4s | 20.0s (-11%) | 30.7s | 28.4s (-8%) |
-| shaman | 25.4s | 23.0s (-10%) | 28.9s | 27.2s (-6%) |
+| shaman | 26.1s | 23.6s (-9%) | 29.1s | 27.4s (-6%) |
 | druid | 24.0s | 21.6s (-10%) | 28.1s | 26.0s (-8%) |
 
 ## Top talents (time per kill lost when the talent is removed from the optimizer build)
@@ -71,12 +71,12 @@ Positive = the hand draft is slower. The race winner is the fastest build over a
 | warrior | Spearing Strike +8%, Bloodthrill +5%, Two-Handed Weapon Specialization +4% | Bloodthrill +7%, Cruelty +6%, Weaponmaster +6% | Deflection, Improved Hamstring, Improved Tactical Mastery, Spearing Strike, Sweeping Strikes |
 | rogue | Efficient Strikes +4%, Flawless Execution +3%, Riposte +3% | Flawless Execution +5%, Improved Poisons +5%, Coup de Grace +4% | Improved Expose Armor, Improved Gouge, Lightning Reflexes |
 | paladin | Sanctified Judgement +13%, Seal of Command +7%, Conviction +5% | Sanctified Judgement +10%, Conviction +9%, Vengeance +6% | Divine Intellect, Pursuit of Justice, Repentance, Sacred Duty, Templar's Bulwark |
-| shaman | Shamanistic Focus +14%, Stormstrike +8%, Mental Dexterity +8% | Shamanistic Focus +16%, Stormstrike +6%, Tidal Focus +4% | Call of Flame, Earth's Grasp, Guardian Totems, Improved Ghost Wolf |
+| shaman | Shamanistic Focus +13%, Stormstrike +8%, Mental Dexterity +5% | Shamanistic Focus +16%, Stormstrike +6%, Tidal Focus +4% | Anticipation, Call of Flame, Earth's Grasp, Guardian Totems, Improved Ghost Wolf |
 | druid | Ferocity +5%, Predatory Strikes +5%, Sharpened Claws +4% | Naturalist +7%, Ferocity +6%, Sharpened Claws +5% | Furor, Nature's Focus |
 
 ## Last rebuild
 
-`rebuild.py` ran on 2026-11-16 for warlock (steps regen; 6 min). Per class:
+`rebuild.py` ran on 2026-11-16 for shaman (steps race, report; 5 min). Per class:
 
 - **mage**: 1 calibration round(s), converged; race leveling-frost 30.4s
 - **priest**: 1 calibration round(s), converged; race cand-shadow-r4 25.5s, leveling-shadow 26.1s, cand-shadow-r5 26.1s, cand-shadow-r6 26.3s, cand-shadow-r3 27.9s, cand-shadow-hand-2026-09-26 28.6s, cand-shadow-r1 28.9s, cand-shadow-r2 28.9s, cand-shadow-r7 29.5s, cand-shadow-r8 30.7s
@@ -85,7 +85,7 @@ Positive = the hand draft is slower. The race winner is the fastest build over a
 - **warrior**: 1 calibration round(s), converged; race leveling-arms 25.5s, cand-arms-r4 26.7s, cand-arms-r3 26.8s, cand-arms-r5 26.8s, cand-arms-r2-ms40 27.0s, cand-arms-r2 27.0s, cand-arms-r7 27.2s, cand-arms-r1 27.7s, cand-arms-r6 29.3s
 - **rogue**: 1 calibration round(s), converged; race leveling-combat-swords 23.5s
 - **paladin**: 1 calibration round(s), converged; race leveling-retribution 26.9s
-- **shaman**: 1 calibration round(s), converged; race leveling-enhancement 27.1s, cand-enh-r7 27.6s, cand-enh-r2 28.5s, cand-enh-r1 28.6s, cand-enh-r6 28.6s, cand-enh-r5 28.7s, cand-enh-r4 29.7s, cand-enh-r3 29.9s
+- **shaman**: 1 calibration round(s), converged; race leveling-enhancement 27.3s, cand-enh-r7 27.9s, cand-enh-r2 28.9s, cand-enh-r6 28.9s, cand-enh-r5 28.9s, cand-enh-r1 29.0s, cand-enh-r4 29.8s, cand-enh-r3 30.0s
 - **druid**: 2 calibration round(s), converged; race leveling-feral 26.6s
 
 ## Not simulated (per class)

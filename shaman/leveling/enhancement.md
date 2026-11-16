@@ -6,17 +6,17 @@
 
 **Leveling from level 1?** [The rotation level by level](enhancement-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Enhancement — Leveling](../research/leveling/builds/enhancement-open-leveling.md)** (12/33/6) — [open the talent tree](https://talentsforever.com/shaman/60/5501001-050033313031012251-05001-12)
+**[Enhancement — Leveling](../research/leveling/builds/enhancement-open-leveling.md)** (13/32/6) — [open the talent tree](https://talentsforever.com/shaman/60/5501011-050033312031012251-05001-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Enhancement), which stays below as the alternative. A model of the beta, to check at launch.
 
-**Signature spells:** 80% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Stormstrike, Earth Shock; this build never casts Windfury Weapon, Flametongue Weapon, Flame Shock) (the spec's rule: at least 60%; **Stormstrike** cast at level 60).
+**Signature spells:** 79% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Stormstrike, Earth Shock; this build never casts Windfury Weapon, Flametongue Weapon, Flame Shock) (the spec's rule: at least 60%; **Stormstrike** cast at level 60).
 
 ## How to play
 
 **Not in this build:** **Nature's Swiftness** is a talent this build does not take: where a line below names it, that part does not apply. The fight lab played the build without it.
 
-**Before the fight:** **Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30, **Rockbiter Weapon** again from 54), a slow two-handed weapon. Walk in without an opening **Lightning Bolt** (its mana costs more drinking than it saves) and drop **Searing Totem** as you pull while you have more than half your mana.
+**Before the fight:** **Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30, **Rockbiter Weapon** again from 40), a slow two-handed weapon. Walk in without an opening **Lightning Bolt** (its mana costs more drinking than it saves) and drop **Searing Totem** as you pull while you have more than half your mana.
 
 **In the fight**, top to bottom:
 
@@ -31,11 +31,11 @@
 
 ## Why this rotation
 
-Melee with a slow two-hander and your weapon imbue (**Windfury Weapon** from 30, **Rockbiter Weapon** again from 54), and use your spells to finish mobs rather than to open on them: every spell costs mana, and mana costs drinking time.
+Melee with a slow two-hander and your weapon imbue (**Windfury Weapon** from 30, **Rockbiter Weapon** again from 40), and use your spells to finish mobs rather than to open on them: every spell costs mana, and mana costs drinking time.
 
 **Why it works**
 
-- Before every pull: **Lightning Shield** and your imbue: **Rockbiter Weapon** until 30, **Windfury Weapon** from 30, **Rockbiter Weapon** again from 54 (rank 7's attack power counts on every swing and **Stormstrike**: 1-2% faster per kill than Windfury there). At 60 in the fight lab your swings do about 30% of your damage, and **Lightning Shield** with **Improved Lightning Shield** (levels 18, 19 and 21) about 12%, because a mob hits you all fight.
+- Before every pull: **Lightning Shield** and your imbue: **Rockbiter Weapon** until 30, **Windfury Weapon** from 30, **Rockbiter Weapon** again from 40 (its attack power counts on every swing and **Stormstrike**: 0.4% faster per kill than Windfury at 40 and 1.2% at 50 in the rules re-tuned on 2026-11-16, after the hotfix that cut **Mental Dexterity** to 100% of your Intellect). At 60 in the fight lab your swings do about 30% of your damage, and **Lightning Shield** with **Improved Lightning Shield** (levels 18, 19 and 21) about 12%, because a mob hits you all fight.
 - **Searing Totem** at the pull while you have more than half your mana: it shoots the mob all fight, a few percent of your damage at 60.
 - **Stormstrike** (level 25) whenever it is ready: a weapon hit (100% weapon damage since the 2026-11-10 hotfix, 150% before) that makes your next **Earth Shock** or **Lightning Bolt** 20% stronger, and with **Improved Stormstrike** (38-39) half your mana regeneration continues while you cast. At 60 it is worth about 3 seconds per kill in the fight lab, second only to **Shamanistic Focus**.
 - One tuned rule shapes the fight: no **Lightning Bolt** until the mob is under 35% health, so no opening bolt, and a 5-stack bolt finishes the mob. The fight lab measured it about 10% faster per kill (re-tuned 2026-10-20).
@@ -84,15 +84,15 @@ One point per level from 10, in this order:
 | 57 | Elemental Weapons (Enhancement) | 1 |
 | 58 | Totemic Focus (Restoration) | 1 |
 | 59 | Reverberation (Elemental) | 1 |
-| 60 | Anticipation (Enhancement) | 1 |
+| 60 | Call of Flame (Elemental) | 1 |
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
 | 20 | 21 | 17 |
-| 30 | 25 | 18 |
-| 40 | 27 | 20 |
+| 30 | 26 | 18 |
+| 40 | 27 | 21 |
 | 50 | 28 | 22 |
 | 60 | 28 | 22 |
 
@@ -101,7 +101,7 @@ One point per level from 10, in this order:
 ## Other builds of this spec
 
 - [Leveling — Enhancement](../research/leveling/builds/leveling-enhancement.md) (7/34/10, 27 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/shaman/60/0502-055030310051012251-05005-12)
-- [Enhancement (optimized, solo at 60)](../research/leveling/builds/opt-enhancement-dps-solo-60.md) (12/31/8, 28 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/shaman/60/0505011-250233013051202011-053-12)
+- [Enhancement (optimized)](../research/leveling/builds/opt-enhancement-dps-leveling-st.md) (12/31/8, 28 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/shaman/60/0505011-250233013051202011-053-12)
 
 ---
 *Generated by `_reference/data/render_modes.py` on 2026-11-16 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*

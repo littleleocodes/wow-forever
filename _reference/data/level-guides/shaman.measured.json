@@ -8,7 +8,7 @@
    "build": "enhancement-open-leveling",
    "rotation": "enhancement-dps",
    "provisional_order": false,
-   "fingerprint": "c5b7502a7828",
+   "fingerprint": "1a46a6ac3f89",
    "levels": {
     "1": {
      "seconds": 12.4,
@@ -45,109 +45,106 @@
      }
     },
     "19": {
-     "seconds": 24.0,
+     "seconds": 24.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Lightning Shield": 0.57,
-      "Searing Totem": 0.68,
-      "Melee": 3.12,
-      "Earth Shock": 1.94
+      "Lightning Shield": 0.58,
+      "Searing Totem": 0.69,
+      "Melee": 3.23,
+      "Earth Shock": 1.99
      }
     },
     "20": {
-     "seconds": 20.9,
+     "seconds": 21.3,
      "deaths_per_100": 0.0,
      "casts": {
       "Lightning Shield": 0.57,
-      "Searing Totem": 0.77,
-      "Melee": 3.1,
-      "Earth Shock": 1.93
+      "Searing Totem": 0.74,
+      "Melee": 3.17,
+      "Earth Shock": 2.0
      }
     },
     "25": {
-     "seconds": 21.2,
+     "seconds": 21.6,
      "deaths_per_100": 0.0,
      "casts": {
-      "Lightning Shield": 0.5,
-      "Searing Totem": 0.67,
-      "Melee": 2.67,
-      "Stormstrike": 1.22,
-      "Earth Shock": 1.4
+      "Lightning Shield": 0.51,
+      "Searing Totem": 0.65,
+      "Melee": 2.72,
+      "Stormstrike": 1.24,
+      "Earth Shock": 1.44
      }
     },
     "30": {
-     "seconds": 25.0,
+     "seconds": 25.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Lightning Shield": 0.62,
-      "Searing Totem": 0.64,
-      "Melee": 3.15,
-      "Stormstrike": 1.52,
-      "Earth Shock": 1.77,
-      "Windfury": 1.54
+      "Searing Totem": 0.66,
+      "Melee": 3.21,
+      "Stormstrike": 1.54,
+      "Earth Shock": 1.79,
+      "Windfury": 1.66
      }
     },
     "35": {
-     "seconds": 26.6,
+     "seconds": 27.3,
      "deaths_per_100": 0.0,
      "casts": {
-      "Lightning Shield": 0.65,
-      "Searing Totem": 0.61,
-      "Melee": 3.52,
-      "Stormstrike": 1.66,
-      "Earth Shock": 1.93,
-      "Windfury": 1.82
+      "Lightning Shield": 0.67,
+      "Searing Totem": 0.62,
+      "Melee": 3.62,
+      "Stormstrike": 1.7,
+      "Earth Shock": 1.99,
+      "Windfury": 1.78
      }
     },
     "40": {
-     "seconds": 26.6,
+     "seconds": 27.2,
      "deaths_per_100": 0.0,
      "casts": {
-      "Lightning Shield": 0.6,
-      "Searing Totem": 0.63,
-      "Melee": 3.32,
-      "Stormstrike": 1.84,
-      "Earth Shock": 1.78,
-      "Windfury": 1.91,
-      "Lightning Bolt": 0.24
+      "Lightning Shield": 0.63,
+      "Searing Totem": 0.61,
+      "Melee": 3.4,
+      "Stormstrike": 1.9,
+      "Earth Shock": 1.8,
+      "Lightning Bolt": 0.2
      }
     },
     "45": {
-     "seconds": 26.9,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Lightning Shield": 0.65,
-      "Searing Totem": 0.61,
-      "Melee": 3.77,
-      "Stormstrike": 1.93,
-      "Earth Shock": 1.86,
-      "Windfury": 2.0,
-      "Lightning Bolt": 0.49
-     }
-    },
-    "50": {
-     "seconds": 27.6,
+     "seconds": 27.3,
      "deaths_per_100": 0.0,
      "casts": {
       "Lightning Shield": 0.66,
-      "Searing Totem": 0.62,
-      "Melee": 3.66,
-      "Stormstrike": 1.9,
-      "Earth Shock": 1.74,
-      "Windfury": 1.96,
-      "Lightning Bolt": 0.45
+      "Searing Totem": 0.61,
+      "Melee": 3.75,
+      "Stormstrike": 1.95,
+      "Earth Shock": 1.91,
+      "Lightning Bolt": 0.37
+     }
+    },
+    "50": {
+     "seconds": 27.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Lightning Shield": 0.64,
+      "Searing Totem": 0.63,
+      "Melee": 3.65,
+      "Stormstrike": 1.92,
+      "Earth Shock": 1.78,
+      "Lightning Bolt": 0.35
      }
     },
     "60": {
-     "seconds": 27.6,
+     "seconds": 27.7,
      "deaths_per_100": 0.0,
      "casts": {
-      "Lightning Shield": 0.68,
-      "Searing Totem": 0.62,
-      "Melee": 4.0,
-      "Stormstrike": 2.21,
-      "Earth Shock": 1.91,
-      "Lightning Bolt": 0.4
+      "Lightning Shield": 0.72,
+      "Searing Totem": 0.6,
+      "Melee": 4.05,
+      "Stormstrike": 2.1,
+      "Earth Shock": 1.92,
+      "Lightning Bolt": 0.42
      }
     }
    }
@@ -156,7 +153,7 @@
    "build": "elemental-open-leveling",
    "rotation": "elemental-dps",
    "provisional_order": false,
-   "fingerprint": "60b9174484b4",
+   "fingerprint": "df7a9c2b15b3",
    "levels": {
     "1": {
      "seconds": 12.4,
@@ -222,103 +219,103 @@
      }
     },
     "27": {
-     "seconds": 30.7,
+     "seconds": 30.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Lightning Shield": 0.61,
+      "Searing Totem": 0.63,
+      "Lightning Bolt": 3.37,
+      "Flame Shock": 0.8,
+      "Melee": 1.27,
+      "Earth Shock": 0.66
+     }
+    },
+    "28": {
+     "seconds": 28.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Lightning Shield": 0.61,
       "Searing Totem": 0.64,
-      "Lightning Bolt": 3.36,
+      "Lightning Bolt": 3.48,
       "Flame Shock": 0.8,
-      "Melee": 1.2,
-      "Earth Shock": 0.59
-     }
-    },
-    "28": {
-     "seconds": 28.4,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Lightning Shield": 0.62,
-      "Searing Totem": 0.64,
-      "Lightning Bolt": 3.45,
-      "Flame Shock": 0.8,
-      "Melee": 1.17,
-      "Earth Shock": 0.6
+      "Melee": 1.18,
+      "Earth Shock": 0.64
      }
     },
     "30": {
-     "seconds": 29.0,
+     "seconds": 29.3,
      "deaths_per_100": 0.0,
      "casts": {
-      "Lightning Shield": 0.65,
-      "Searing Totem": 0.62,
-      "Lightning Bolt": 3.56,
+      "Lightning Shield": 0.66,
+      "Searing Totem": 0.63,
+      "Lightning Bolt": 3.6,
       "Flame Shock": 0.83,
       "Melee": 1.43,
+      "Earth Shock": 0.72,
+      "Windfury": 0.56
+     }
+    },
+    "33": {
+     "seconds": 29.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Lightning Shield": 0.68,
+      "Searing Totem": 0.63,
+      "Lightning Bolt": 3.45,
+      "Flame Shock": 0.83,
+      "Melee": 1.46,
       "Earth Shock": 0.69,
       "Windfury": 0.51
      }
     },
-    "33": {
-     "seconds": 29.5,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Lightning Shield": 0.68,
-      "Searing Totem": 0.62,
-      "Lightning Bolt": 3.44,
-      "Flame Shock": 0.83,
-      "Melee": 1.37,
-      "Earth Shock": 0.64,
-      "Windfury": 0.49
-     }
-    },
     "34": {
-     "seconds": 29.6,
+     "seconds": 29.9,
      "deaths_per_100": 0.0,
      "casts": {
       "Lightning Shield": 0.59,
       "Searing Totem": 0.64,
-      "Lightning Bolt": 3.57,
+      "Lightning Bolt": 3.62,
       "Flame Shock": 0.83,
-      "Melee": 1.53,
-      "Earth Shock": 0.78,
-      "Windfury": 0.51
+      "Melee": 1.56,
+      "Earth Shock": 0.77,
+      "Windfury": 0.58
      }
     },
     "40": {
-     "seconds": 29.7,
+     "seconds": 29.9,
      "deaths_per_100": 0.0,
      "casts": {
-      "Lightning Shield": 0.54,
+      "Lightning Shield": 0.55,
       "Searing Totem": 0.63,
-      "Lightning Bolt": 3.77,
+      "Lightning Bolt": 3.81,
       "Flame Shock": 0.84,
-      "Melee": 1.36,
-      "Earth Shock": 0.72,
-      "Windfury": 0.55
-     }
-    },
-    "43": {
-     "seconds": 29.8,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Lightning Shield": 0.58,
-      "Searing Totem": 0.63,
-      "Lightning Bolt": 3.93,
-      "Flame Shock": 0.83,
-      "Melee": 1.5,
-      "Earth Shock": 0.77,
+      "Melee": 1.41,
+      "Earth Shock": 0.73,
       "Windfury": 0.56
      }
     },
-    "44": {
-     "seconds": 29.3,
+    "43": {
+     "seconds": 30.0,
      "deaths_per_100": 0.0,
      "casts": {
-      "Lightning Shield": 0.56,
+      "Lightning Shield": 0.59,
       "Searing Totem": 0.62,
-      "Lightning Bolt": 3.69,
+      "Lightning Bolt": 3.93,
+      "Flame Shock": 0.83,
+      "Melee": 1.51,
+      "Earth Shock": 0.78,
+      "Windfury": 0.57
+     }
+    },
+    "44": {
+     "seconds": 29.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Lightning Shield": 0.57,
+      "Searing Totem": 0.66,
+      "Lightning Bolt": 3.74,
       "Flame Shock": 0.82,
-      "Melee": 1.43,
+      "Melee": 1.38,
       "Earth Shock": 0.7,
       "Windfury": 0.56
      }
@@ -329,11 +326,11 @@
      "casts": {
       "Lightning Shield": 0.53,
       "Searing Totem": 0.65,
-      "Lightning Bolt": 3.92,
-      "Flame Shock": 0.85,
-      "Melee": 1.31,
-      "Earth Shock": 0.6,
-      "Windfury": 0.43
+      "Lightning Bolt": 3.9,
+      "Flame Shock": 0.86,
+      "Melee": 1.4,
+      "Earth Shock": 0.64,
+      "Windfury": 0.47
      }
     },
     "60": {
@@ -341,12 +338,12 @@
      "deaths_per_100": 0.0,
      "casts": {
       "Lightning Shield": 0.53,
-      "Searing Totem": 0.64,
-      "Lightning Bolt": 3.51,
+      "Searing Totem": 0.62,
+      "Lightning Bolt": 3.5,
       "Flame Shock": 0.91,
-      "Melee": 1.66,
-      "Earth Shock": 0.82,
-      "Windfury": 0.55
+      "Melee": 1.72,
+      "Earth Shock": 0.85,
+      "Windfury": 0.61
      }
     }
    }
@@ -355,7 +352,7 @@
    "build": "restoration-leveling",
    "rotation": "enhancement-dps",
    "provisional_order": false,
-   "fingerprint": "ee4c934a16ee",
+   "fingerprint": "1b94f8890723",
    "levels": {
     "1": {
      "seconds": 12.4,
@@ -454,25 +451,23 @@
      }
     },
     "40": {
-     "seconds": 37.6,
+     "seconds": 37.3,
      "deaths_per_100": 0.0,
      "casts": {
-      "Lightning Shield": 0.58,
-      "Searing Totem": 0.7,
-      "Melee": 5.03,
-      "Earth Shock": 2.82,
-      "Windfury": 1.81
+      "Lightning Shield": 0.57,
+      "Searing Totem": 0.67,
+      "Melee": 5.11,
+      "Earth Shock": 2.78
      }
     },
     "50": {
-     "seconds": 40.3,
+     "seconds": 39.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Lightning Shield": 0.52,
-      "Searing Totem": 0.75,
-      "Melee": 5.51,
-      "Earth Shock": 2.95,
-      "Windfury": 1.86
+      "Searing Totem": 0.74,
+      "Melee": 5.34,
+      "Earth Shock": 2.91
      }
     },
     "60": {

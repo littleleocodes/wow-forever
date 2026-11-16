@@ -8384,10 +8384,12 @@
    "done": true,
    "date": "2026-11-15",
    "builds": {
-    "written": [],
-    "why": "the elemental-dps rotation's record (shaman.json) has a faster Elemental build: that one is written",
+    "written": [
+     "elemental-open-leveling"
+    ],
+    "why": null,
     "spec": "Elemental",
-    "date": "2026-11-15"
+    "date": "2026-11-16"
    }
   }
  },

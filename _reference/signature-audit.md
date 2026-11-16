@@ -97,12 +97,12 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Elemental | page | elemental-open-leveling (32/11/8) | elemental-dps | - | Lightning Bolt 3.49 | 75% (min 60%) | 28.4 | OK |
-| Enhancement | page | enhancement-open-leveling (12/33/6) | enhancement-dps | - | Stormstrike 2.20 | 80% (min 60%) | 26.9 | OK |
-| Enhancement | slot | leveling-enhancement (7/34/10) | enhancement-dps | - | Stormstrike 2.09 | 80% (min 60%) | 27.2 | OK |
-| Enhancement | slot | opt-enhancement-dps-solo-60 (12/31/8) | enhancement-dps | - | Stormstrike 1.90 | 81% (min 60%) | 27.8 | OK |
-| Enhancement | slot | opt-enhancement-dps-leveling-st (12/31/8) | enhancement-dps | - | Stormstrike 1.90 | 81% (min 60%) | 27.8 | OK |
-| Restoration | page | restoration-leveling (0/10/41) | enhancement-dps | - | - | - (min -) | 37.5 | no rule |
+| Elemental | page | elemental-open-leveling (32/11/8) | elemental-dps | - | Lightning Bolt 3.54 | 76% (min 60%) | 28.5 | OK |
+| Enhancement | page | enhancement-open-leveling (13/32/6) | enhancement-dps | - | Stormstrike 2.15 | 79% (min 60%) | 26.8 | OK |
+| Enhancement | slot | leveling-enhancement (7/34/10) | enhancement-dps | - | Stormstrike 2.07 | 80% (min 60%) | 27.4 | OK |
+| Enhancement | slot | opt-enhancement-dps-leveling-st (12/31/8) | enhancement-dps | - | Stormstrike 1.92 | 81% (min 60%) | 28.0 | OK |
+| Enhancement | slot | opt-enhancement-dps-solo-60 (12/31/8) | enhancement-dps | - | Stormstrike 1.92 | 81% (min 60%) | 28.0 | OK |
+| Restoration | page | restoration-leveling (0/10/41) | enhancement-dps | - | - | - (min -) | 37.2 | no rule |
 
 ## Warlock
 

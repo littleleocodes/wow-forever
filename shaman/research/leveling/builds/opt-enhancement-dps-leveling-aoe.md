@@ -37,7 +37,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 | **Thundering Strikes** | 5/5 | changed | Improves your chance to get a critical strike with all spells and attacks by 5%. |
 | **Guardian Totems** | 2/2 | unchanged | Increases the amount of damage reduced by your Stoneskin Totem and Windwall Totem by 20% and reduces the cooldown of your Grounding Totem by 2 sec. |
 | **Improved Lightning Shield** | 3/3 | unchanged | Increases the damage done by your Lightning Shield orbs by 15%. |
-| **Mental Dexterity** | 3/3 | **NEW** | Increases your Attack Power by an amount equal to 150% of your Intellect. |
+| **Mental Dexterity** | 3/3 | **NEW** | Increases your Attack Power by an amount equal to 100% of your Intellect. |
 | **Anticipation** | 3/3 | changed | Increases your chance to dodge by an additional 6%. |
 | **Improved Ghost Wolf** | 2/2 | changed | Reduces the cast time of your Ghost Wolf spell by 3.0 sec, and Ghost Wolf may be used indoors. |
 | **Stormstrike** | 1/1 | changed | Instantly strike for 100% normalized weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec. |
@@ -85,7 +85,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 
 Pulls of several mobs: area attacks when enough mobs stand in reach, then damage over time spread over the pull, else the single-target priority below. Single-target leveling fights against normal mobs of your level with a slow two-hander: Lightning Shield (Water Shield when talented and mana is low) and the weapon imbue up (Rockbiter's attack power until 30, Windfury's extra attacks from 30), Searing Totem dropped at the pull, a Lightning Bolt while the mob walks in, then Stormstrike, Earth Shock (buffed by Stormstrike), Flame Shock while mana allows and instant Maelstrom Lightning Bolts between white swings; Stoneclaw Totem and a Lesser Healing Wave when low, Nature's Swiftness + Healing Wave in an emergency; a death with Reincarnation ready costs 30 s instead of 90. Between fights: 2 s loot, 6 s travel, heals back to 80% health, water below 35% mana.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-03, on top of the priority below): Lightning Bolt only when the mob is below 35% health; drink below 15% mana; eat below 80% health; Rockbiter Weapon again from 54 (IMBUE_TOP = rockbiter, IMBUE_TOP_FROM = 54). Together +11.1% time per kill saved for `leveling-enhancement` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-16, on top of the priority below): IMBUE_TOP_FROM = 40. Together +0.4% time per kill saved for `enhancement-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/enhancement-dps-aoe.md), all leveling builds: [leveling rotations](../rotation.md)):
 

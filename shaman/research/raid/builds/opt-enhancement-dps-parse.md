@@ -31,7 +31,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 | **Ancestral Knowledge** | 5/5 | changed | Increases your Intellect by 10%. |
 | **Thundering Strikes** | 5/5 | changed | Improves your chance to get a critical strike with all spells and attacks by 5%. |
 | **Earth's Grasp** | 1/2 | moved | Increases the health of your Stoneclaw Totem by 25% and the radius of your Earthbind Totem by 10%. |
-| **Mental Dexterity** | 3/3 | **NEW** | Increases your Attack Power by an amount equal to 150% of your Intellect. |
+| **Mental Dexterity** | 3/3 | **NEW** | Increases your Attack Power by an amount equal to 100% of your Intellect. |
 | **Shamanistic Focus** | 1/1 | **NEW** | Reduces the mana cost of your Shock and Lightning Shield spells by 45%. |
 | **Flurry** | 5/5 | changed | Increases your attack speed by 30% for your next 3 swings after dealing a melee critical strike. |
 | **Stormstrike** | 1/1 | changed | Instantly strike for 100% normalized weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec. |

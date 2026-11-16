@@ -6,15 +6,15 @@
 
 **[Restoration — Leveling into the raid build](../research/leveling/builds/restoration-leveling.md)** (0/10/41) — [open the talent tree](https://talentsforever.com/shaman/60/-055-0530503315513151-12)
 
-> 🔬 These are your **raid talents** ([Restoration — Raid Healer](../raid/restoration.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 37 s per kill; own tree last: 38 s per kill; own tree first: 38 s per kill). A model of the beta, to check at launch.
+> 🔬 These are your **raid talents** ([Restoration — Raid Healer](../raid/restoration.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 37 s per kill; own tree last: 37 s per kill; own tree first: 38 s per kill). A model of the beta, to check at launch.
 
-**Leveling as Restoration or as Enhancement?** This build takes 37 s per kill (level-weighted, 20-60), [Enhancement](../leveling/enhancement.md) 27 s: Restoration is 40% slower. Your first Restoration point comes at level 10. Level this way if you want to heal dungeons later on the way; otherwise level as Enhancement and switch at 60 (a respec at a class trainer).
+**Leveling as Restoration or as Enhancement?** This build takes 37 s per kill (level-weighted, 20-60), [Enhancement](../leveling/enhancement.md) 27 s: Restoration is 38% slower. Your first Restoration point comes at level 10. Level this way if you want to heal dungeons later on the way; otherwise level as Enhancement and switch at 60 (a respec at a class trainer).
 
 ## How to play
 
 **Not in this build:** **Stormstrike** is a talent this build does not take: where a line below names it, that part does not apply. The fight lab played the build without it.
 
-**Before the fight:** **Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30, **Rockbiter Weapon** again from 54), a slow two-handed weapon. Walk in without an opening **Lightning Bolt** (its mana costs more drinking than it saves) and drop **Searing Totem** as you pull while you have more than half your mana.
+**Before the fight:** **Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30, **Rockbiter Weapon** again from 40), a slow two-handed weapon. Walk in without an opening **Lightning Bolt** (its mana costs more drinking than it saves) and drop **Searing Totem** as you pull while you have more than half your mana.
 
 **In the fight**, top to bottom:
 
@@ -32,7 +32,7 @@ You level with the raid healer's talents in the fastest order and play a simple 
 
 - This build takes none of Enhancement's melee talents (the "Not in this build" line names them): skip the lines that use them. In the fight lab it opens no fight with a **Lightning Bolt**: the tuned rule allows a bolt only once the mob is under 35% health, and with no Maelstrom Weapon there is no instant one.
 - **Earth Shock** takes every free shock (it shares the cooldown with **Flame Shock**, which the list therefore never reaches on one mob), and it interrupts a caster mob.
-- Your damage is your weapon: **Rockbiter Weapon** until 30, **Windfury Weapon** from 30 and **Rockbiter Weapon** again from 54, on a slow two-hander, and **Lightning Shield** strikes back each time a mob hits you. From 28 you also have **Water Shield**: when your shield is gone and you are under 60% mana, the fight lab puts up Water Shield instead (only one shield can be up).
+- Your damage is your weapon: **Rockbiter Weapon** until 30, **Windfury Weapon** from 30 and **Rockbiter Weapon** again from 40, on a slow two-hander, and **Lightning Shield** strikes back each time a mob hits you. From 28 you also have **Water Shield**: when your shield is gone and you are under 60% mana, the fight lab puts up Water Shield instead (only one shield can be up).
 - The first points are **Tidal Focus** (10-14: 5% more chance to hit), **Mindfulness** (15-17) and **Thundering Strikes** (18-22: 5% crit); **Totemic Focus** (23-27) makes **Searing Totem** a quarter cheaper. Drop it at each pull while you have more than half your mana.
 - Low on health: **Stoneclaw Totem** taunts the mob onto itself for a few hits, then **Lesser Healing Wave**. From 35, **Nature's Swiftness** makes a **Healing Wave** instant when you drop under 30%.
 
@@ -77,8 +77,8 @@ One point per level from 10, in this order:
 |---|---|---|
 | 20 | 24 | 17 |
 | 30 | 32 | 22 |
-| 40 | 38 | 31 |
-| 50 | 41 | 35 |
+| 40 | 37 | 31 |
+| 50 | 40 | 34 |
 | 60 | 41 | 34 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.

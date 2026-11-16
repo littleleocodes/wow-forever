@@ -216,6 +216,11 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   above 60%). `addon_values.py` runs it after writing the gear values, so every lane's add-on step refreshes it; message the Addons
   session when a threshold moves. A mana gem tool shape is agreed with them ({item, item_ids best first, kind "item", min_level,
   mana_below, needs_ready, in_bags}) for when the leveling lab plays gems.
+  GearCheck (v0.2.4, 2026-11-16; user's yes in the Addons session) reads each leveling entry's `rotation` too: two page picks with
+  identical talents at the level it compares are one plan when their rotation ids match, and different play (a one-time note naming
+  the other builds and `/gear spec`) when they differ. Keep the field the fight-lab rotation id and never give two different plans
+  the same one (ties of 2026-11-16: druid 10-12, hunter 10-12, mage 10-22, priest 10-12, shaman 10-22, the last one raced: no reorder
+  separates Elemental and the Restoration path at 10 and 15 without costing speed).
 - File names: lowercase kebab-case. Build ids: `<spec>-<variant>-<content>` (e.g. `fury-dw-raid`, `pvp-frost`, `leveling-arms`).
 - Never put class-specific content in `_reference/`; never put cross-class facts inside a class folder.
 
@@ -1121,6 +1126,11 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
   line silently: Whirlwind's main-hand tag 1 -> 14 at b90e2b9 left every warrior rotation without Whirlwind), check every specs.json path
   exists, run `raidsim/spec_check.py` (every entry's `spec` fragment against the new protos: an option the update renamed is dropped
   silently otherwise), and re-run `rebuild.py --steps raid,regen`. `raidsim/repin_rehearsal.py` builds the patched bench on another commit in a worktree first.
+  Then compare the new pin's spell data with our text, not only the audit's multi-rank curves (`sim_value_audit.py` reads
+  `generatedCurves` alone): the diff of `sim/core/spelldata/spells_auto_gen.go` between the two pins (curves, BasePoints, SPCoef) shows
+  the server's hotfix pushes, which Blizzard's written notes can leave out. 2026-11-16: Mental Dexterity 150% -> 100% of Intellect
+  (push 114027) and Wild Growth's coefficient 3.3% -> 6.6% a tick (push 114015) had been in the simulator for four days; our text
+  takes them through `hotfix_text.py` (the leveling and healer labs read our text, not the simulator's).
 
 ## Writing style
 

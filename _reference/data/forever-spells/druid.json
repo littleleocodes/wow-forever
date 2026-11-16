@@ -4696,7 +4696,7 @@
        "id": 408120,
        "text": "Heals the target and their party for 336 over 7 sec. Party members must be within 43.5 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
        "school": "Nature",
-       "coefficient": "3.3% of spell power (per tick)",
+       "coefficient": "6.6% of spell power (per tick)",
        "tooltip_source": "beta",
        "source": "beta client 1.60.1.70753",
        "cost": "550 Mana",
@@ -4708,6 +4708,21 @@
        "not_from_class_trainer": "talent-taught",
        "classic": {
         "status": "new"
+       },
+       "hotfix": {
+        "date": "2026-11-12",
+        "sources": [
+         "https://github.com/wowsims/forever/commit/3b7e5d80c94d20aa75471f50940aecbf58cb8daa"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Heals the target and their party for 336 over 7 sec. Party members must be within 43.5 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
+          "coefficient": "3.3% of spell power (per tick)"
+         }
+        }
        }
       },
       {
@@ -4715,7 +4730,7 @@
        "id": 1238214,
        "text": "Heals the target and their party for 490 over 7 sec. Party members must be within 43.5 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
        "school": "Nature",
-       "coefficient": "3.3% of spell power (per tick)",
+       "coefficient": "6.6% of spell power (per tick)",
        "tooltip_source": "beta",
        "source": "beta client 1.60.1.70753",
        "cost": "755 Mana",
@@ -4726,6 +4741,21 @@
        "level": 50,
        "classic": {
         "status": "new"
+       },
+       "hotfix": {
+        "date": "2026-11-12",
+        "sources": [
+         "https://github.com/wowsims/forever/commit/3b7e5d80c94d20aa75471f50940aecbf58cb8daa"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Heals the target and their party for 490 over 7 sec. Party members must be within 43.5 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
+          "coefficient": "3.3% of spell power (per tick)"
+         }
+        }
        }
       },
       {
@@ -4733,7 +4763,7 @@
        "id": 1238215,
        "text": "Heals the target and their party for 769 over 7 sec. Party members must be within 43.5 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
        "school": "Nature",
-       "coefficient": "3.3% of spell power (per tick)",
+       "coefficient": "6.6% of spell power (per tick)",
        "tooltip_source": "beta",
        "source": "beta client 1.60.1.70753",
        "cost": "1,050 Mana",
@@ -4749,6 +4779,21 @@
         "build": "1.60.1.70888",
         "before": "Heals the target and their party for 679 over 7 sec. Party members must be within 43.5 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
         "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=1238215)"
+       },
+       "hotfix": {
+        "date": "2026-11-12",
+        "sources": [
+         "https://github.com/wowsims/forever/commit/3b7e5d80c94d20aa75471f50940aecbf58cb8daa"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Heals the target and their party for 769 over 7 sec. Party members must be within 43.5 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
+          "coefficient": "3.3% of spell power (per tick)"
+         }
+        }
        }
       }
      ]

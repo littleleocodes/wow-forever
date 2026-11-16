@@ -44,7 +44,8 @@
   "merge_notes": [
     "Elemental: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: Elemental Mastery, Lava Burst; only in the export: Call of Thunder, Lightning Mastery; moved or re-capped: none); the export's positions, rank caps and prerequisites used for this tree",
     "Enhancement: the Trait-edge snapshot disagrees with the talentsforever export (only in the snapshot: none; only in the export: none; moved or re-capped: Improved Ghost Wolf); the export's positions, rank caps and prerequisites used for this tree",
-    "live hotfix numbers of 2026-11-10 written into Stormstrike, Maelstrom Weapon (hotfix_text.py; source https://us.forums.blizzard.com/en/wow/t/2403040; applied 2026-11-15)"
+    "live hotfix numbers of 2026-11-10 written into Stormstrike, Maelstrom Weapon (hotfix_text.py; source https://us.forums.blizzard.com/en/wow/t/2403040; applied 2026-11-15)",
+    "live hotfix of 2026-11-10 (server push 114027, not in Blizzard's notes) written into Mental Dexterity (hotfix_text.py; source https://us.forums.blizzard.com/en/wow/t/2403040, https://github.com/wowsims/forever/pull/969; applied 2026-11-16)"
   ],
   "trees": [
     {
@@ -591,9 +592,9 @@
           "icon": "spell_nature_mentalquickness",
           "maxRank": 3,
           "ranks": [
-            "Increases your Attack Power by an amount equal to 50% of your Intellect.",
-            "Increases your Attack Power by an amount equal to 100% of your Intellect.",
-            "Increases your Attack Power by an amount equal to 150% of your Intellect."
+            "Increases your Attack Power by an amount equal to 33% of your Intellect.",
+            "Increases your Attack Power by an amount equal to 66% of your Intellect.",
+            "Increases your Attack Power by an amount equal to 100% of your Intellect."
           ],
           "status": "new",
           "evidence": "shaman/21-shaman-enhancement-mental-dexterity.jpg",
@@ -605,7 +606,24 @@
           "ranks_prev_build": "1.60.1.70205",
           "diff": [
             "tooltip changed in build 1.60.1.70753 (ranks 1, 2, 3)"
-          ]
+          ],
+          "hotfix": {
+            "date": "2026-11-10",
+            "sources": [
+              "https://us.forums.blizzard.com/en/wow/t/2403040",
+              "https://github.com/wowsims/forever/pull/969"
+            ],
+            "ranks": [
+              1,
+              2,
+              3
+            ],
+            "before": {
+              "1": "Increases your Attack Power by an amount equal to 50% of your Intellect.",
+              "2": "Increases your Attack Power by an amount equal to 100% of your Intellect.",
+              "3": "Increases your Attack Power by an amount equal to 150% of your Intellect."
+            }
+          }
         },
         {
           "id": "enhancement/improved-lightning-shield",

@@ -139,7 +139,7 @@
      ],
      "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
      "notes": [
-      "Each stack takes 20% off the bolt's cast time and mana at every rank (the 2026-11-10 hotfix); every point of **Maelstrom Weapon** (40-44) brings the stacks faster. Never cast **Lightning Bolt** with its cast time.",
+      "Each stack takes 20% off the bolt's cast time and mana at every rank (the 2026-11-10 hotfix); every point of **Maelstrom Weapon** (40-44) brings the stacks faster. Never cast **Lightning Bolt** with its cast time. From 40 put **Rockbiter Weapon** back on your weapon in place of Windfury (rank 5; rank 6 at 44, rank 7 at 54): its attack power on every swing and **Stormstrike** measured 0.4% faster per kill than Windfury's extra attacks at 40 and 1.2% at 50 in the fight lab (the rules re-tuned on 2026-11-16, after the hotfix that cut **Mental Dexterity** to 100% of your Intellect). Windfury Weapon's ranks 2-4 (40, 50, 60) are not needed.",
       "Do not spend the instant bolt on a mob it would overkill."
      ]
     },
@@ -158,7 +158,7 @@
      "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
      "notes": [
       "The remaining points go to Elemental for harder, cheaper shocks: **Concussion** (46-50) and **Convection** (51-55).",
-      "At 54 train **Rockbiter Weapon** rank 7 and put it back on your weapon in place of Windfury: its attack power on every swing and **Stormstrike** is 1-2% faster per kill than Windfury's extra attacks from 54 in the fight lab (the tuned rules, 2026-11-15). Windfury Weapon rank 4 (60) is not needed."
+      "Train **Rockbiter Weapon**'s new ranks at 44 and 54: it stays on your weapon from 40."
      ],
      "unsimulated": [
       "Rage of the Farseer"
@@ -418,7 +418,7 @@
     ],
     "notes": [
      "Two swaps on bar 1: **Lesser Healing Wave** takes the thumb at 20 and **Healing Wave** moves to C as the big heal.",
-     "**Lightning Shield** and your weapon imbue (**Rockbiter Weapon**, **Windfury Weapon** from 30, **Rockbiter Weapon** again from 54) are buffs: click them between fights. The fight lab puts the shield back before a pull, about every second kill, and never in the fight.",
+     "**Lightning Shield** and your weapon imbue (**Rockbiter Weapon**, **Windfury Weapon** from 30, **Rockbiter Weapon** again from 40) are buffs: click them between fights. The fight lab puts the shield back before a pull, about every second kill, and never in the fight.",
      "No key: **Lightning Shield**, the weapon imbue, **Ghost Wolf**, food, water, the mount and the Hearthstone. **Strength of Earth Totem** and the other buff totems cost more than they return against one mob.",
      "Right-click the mob to start swinging at levels 1-3. From 4, Q is a macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free.",
      "The single-target rotation never casts **Flame Shock**, **Fire Nova**, **Chain Lightning** or **Magma Totem**. They are there for a pull that brings friends."
@@ -574,9 +574,9 @@
      ],
      "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
      "notes": [
-      "**Reverberation** (44, 48, 53, 59) shortens the shock cooldown.",
+      "**Reverberation** (44, 48, 53) shortens the shock cooldown.",
       "**Lightning Overload** (49-51), **Call of Thunder** (52) and **Elemental Fury** (54-58): a free second bolt now and then, more bolt crits, and bigger crits. Nothing to press.",
-      "**Elemental Reach** (60) adds range to **Lightning Bolt**: start the pull a little farther out."
+      "**Elemental Reach** (59-60) adds range to **Lightning Bolt**: start the pull a little farther out."
      ]
     }
    ],
@@ -951,7 +951,7 @@
      "notes": [
       "From 37 the points go to **Ancestral Knowledge** (more Intellect) and then the healing talents: **Healing Focus**, **Tidal Mastery**, **Healing Way**, **Purification** and **Riptide** (60). They make you a healer at 60; solo, they do little.",
       "**Chain Heal** (40) and **Riptide** (60) heal a group in a dungeon. Solo, the fight lab never casts them.",
-      "At 54 train **Rockbiter Weapon** rank 7 and put it back on your weapon in place of Windfury: from 54 its attack power on every swing beats Windfury's extra attacks in the fight lab (the tuned rules, 2026-11-15). Windfury Weapon rank 4 (60) is not needed."
+      "**Rockbiter Weapon** is back on your weapon from 40, in place of Windfury (rank 5; rank 6 at 44, rank 7 at 54): its attack power on every swing beats Windfury's extra attacks there in the fight lab (the Enhancement rules re-tuned on 2026-11-16, which this page plays). Windfury Weapon's ranks 2-4 (40, 50, 60) are not needed."
      ]
     }
    ],
@@ -1221,7 +1221,7 @@
      "The keys of the [Enhancement guide](enhancement-by-level.md), with these changes: R stays free (no **Stormstrike** in this build); 4 holds **Mana Tide Totem** from 30 in place of Rage of the Farseer; 3 holds **Nature's Swiftness** from 35; Shift+C and Shift+X hold the dungeon heals, **Chain Heal** (40) and **Riptide** (60).",
      "Two swaps on bar 1: **Lesser Healing Wave** takes the thumb at 20 and **Healing Wave** moves to C as the big heal.",
      "The Instant big heal macro on the [macro page](../macros.md) casts **Nature's Swiftness** and **Healing Wave** in one press on C, and frees 3.",
-     "**Lightning Shield** and **Water Shield** are buffs, like your weapon imbue (**Rockbiter Weapon**, **Windfury Weapon** from 30, **Rockbiter Weapon** again from 54): click them between fights. No key either: **Ghost Wolf**, food, water, the mount and the Hearthstone.",
+     "**Lightning Shield** and **Water Shield** are buffs, like your weapon imbue (**Rockbiter Weapon**, **Windfury Weapon** from 30, **Rockbiter Weapon** again from 40): click them between fights. No key either: **Ghost Wolf**, food, water, the mount and the Hearthstone.",
      "Right-click the mob to start swinging at levels 1-3. From 4, Q is the Earth Shock macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free.",
      "The single-target rotation never casts **Lightning Bolt** after level 3, nor **Flame Shock**, **Fire Nova**, **Chain Lightning** or **Magma Totem**. **Lightning Bolt** stays on 1 to pull a mob from range; the others are for a pull that brings friends."
     ]

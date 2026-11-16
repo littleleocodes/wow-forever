@@ -4,7 +4,7 @@
 
 ## The build and its order
 
-**Enhancement** ([player page](../../leveling/enhancement.md)) — `enhancement-open-leveling`: The Enhancement leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the enhancement-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (enhancement-dps). 
+**Enhancement** ([player page](../../leveling/enhancement.md)) — `enhancement-open-leveling`: The Enhancement leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the enhancement-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (enhancement-dps). 
 
 | Levels | Tree | Talent | Points |
 |---|---|---|---|
@@ -31,7 +31,7 @@
 | 57 | Enhancement | Elemental Weapons | 1 |
 | 58 | Restoration | Totemic Focus | 1 |
 | 59 | Elemental | Reverberation | 1 |
-| 60 | Enhancement | Anticipation | 1 |
+| 60 | Elemental | Call of Flame | 1 |
 
 ## Every spec's page build
 
@@ -39,9 +39,9 @@ Level-weighted time per kill (seconds, higher levels count more) of the build ea
 
 | Spec | Page build | Rotation | L20 | L30 | L40 | L50 | L60 | Weighted |
 |---|---|---|---|---|---|---|---|---|
-| [Enhancement](../../leveling/enhancement.md) ✅ | [`enhancement-open-leveling`](builds/enhancement-open-leveling.md) | enhancement-dps | 21.0 | 24.9 | 27.0 | 28.1 | 27.9 | 26.6 |
+| [Enhancement](../../leveling/enhancement.md) ✅ | [`enhancement-open-leveling`](builds/enhancement-open-leveling.md) | enhancement-dps | 21.3 | 25.5 | 27.3 | 27.8 | 27.9 | 26.7 |
 | [Elemental](../../leveling/elemental.md) | [`elemental-open-leveling`](builds/elemental-open-leveling.md) | elemental-dps | 26.6 | 29.4 | 29.9 | 29.0 | 27.5 | 28.5 |
-| [Restoration](../../leveling/restoration.md) | [`restoration-leveling`](builds/restoration-leveling.md) | enhancement-dps | 23.9 | 31.6 | 37.8 | 40.5 | 41.5 | 37.3 |
+| [Restoration](../../leveling/restoration.md) | [`restoration-leveling`](builds/restoration-leveling.md) | enhancement-dps | 23.9 | 31.6 | 37.4 | 39.6 | 41.5 | 37.0 |
 
 The stats model's respec plan (its own optimizer builds, not the page build): **58.2 h** (35.4% faster than talentless), no respec ([respec plan](respec-plan.md)).
 
@@ -49,10 +49,10 @@ The stats model's respec plan (its own optimizer builds, not the page build): **
 
 | Level | Bracket | Time per kill | Kills/hour |
 |---|---|---|---|
-| 20 | levels 15-25 | 21s | 172 |
-| 30 | levels 25-35 | 25s | 145 |
-| 40 | levels 35-45 | 27s | 133 |
-| 50 | levels 45-55 | 28s | 128 |
+| 20 | levels 15-25 | 21s | 169 |
+| 30 | levels 25-35 | 26s | 141 |
+| 40 | levels 35-45 | 27s | 132 |
+| 50 | levels 45-55 | 28s | 130 |
 | 60 | level 55-60 | 28s | 129 |
 
 Fight time, deaths and downtime are not recorded for this build: its times come from the race of the search that found it, which keeps times only.
@@ -63,7 +63,7 @@ Single-target leveling fights against normal mobs of your level with a slow two-
 
 The rotation in the player page's words:
 
-Before the fight: **Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30, **Rockbiter Weapon** again from 54), a slow two-handed weapon. Walk in without an opening **Lightning Bolt** (its mana costs more drinking than it saves) and drop **Searing Totem** as you pull while you have more than half your mana.
+Before the fight: **Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30, **Rockbiter Weapon** again from 40), a slow two-handed weapon. Walk in without an opening **Lightning Bolt** (its mana costs more drinking than it saves) and drop **Searing Totem** as you pull while you have more than half your mana.
 
 1. **Rage of the Farseer** at the start of a fight whenever it is ready.
 2. **Earth Shock** a caster mob's spell: it interrupts and brings the mob to you.
@@ -74,11 +74,11 @@ Before the fight: **Lightning Shield** up, **Rockbiter Weapon** on your weapon (
 
 Between fights: Heal back to 80% health with **Lesser Healing Wave** (**Healing Wave** for a big gap); eat if you are still under 80% (out of mana for heals); drink below 15% of your mana.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-03, on top of the priority below): Lightning Bolt only when the mob is below 35% health; drink below 15% mana; eat below 80% health; Rockbiter Weapon again from 54 (IMBUE_TOP = rockbiter, IMBUE_TOP_FROM = 54). Together +11.1% time per kill saved for `leveling-enhancement` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-16, on top of the priority below): IMBUE_TOP_FROM = 40. Together +0.4% time per kill saved for `enhancement-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 ## Talents that carry the build
 
-- **Level 60** (seconds per kill lost without the talent, the open leveling search): Shamanistic Focus (+3.9 s), Stormstrike (+2.6 s), Improved Stormstrike (+1.0 s), Tidal Focus (+0.9 s), Thundering Strikes (+0.9 s), Maelstrom Weapon (+0.8 s).
+- **Level 60** (seconds per kill lost without the talent, the open leveling search): Shamanistic Focus (+3.8 s), Stormstrike (+2.7 s), Improved Stormstrike (+1.2 s), Tidal Focus (+1.1 s), Thundering Strikes (+0.9 s), Maelstrom Weapon (+0.9 s).
 - **About zero at 60** (under 0.1 s per kill): Reverberation, Totemic Focus.
 
 ## Not simulated

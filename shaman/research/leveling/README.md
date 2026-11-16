@@ -16,8 +16,8 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 
 | Build | Split | Role |
 |---|---|---|
+| [Enhancement — Leveling (open talent search)](builds/enhancement-open-leveling.md) 🔬 | 13/32/6 | DPS |
 | [Elemental — Leveling (open talent search)](builds/elemental-open-leveling.md) 🔬 | 32/11/8 | DPS |
-| [Enhancement — Leveling (open talent search)](builds/enhancement-open-leveling.md) 🔬 | 12/33/6 | DPS |
 | [Restoration — Leveling into the raid build](builds/restoration-leveling.md) 🔬 | 0/10/41 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
@@ -46,9 +46,9 @@ Classic Era reference builds: [leveling-enhancement](../talents/classic-baseline
 
 | Spec | Page build | Rotation | Seconds per kill |
 |---|---|---|---|
-| [Enhancement](../../leveling/enhancement.md) ✅ | `enhancement-open-leveling` | enhancement-dps | 26.6 |
+| [Enhancement](../../leveling/enhancement.md) ✅ | `enhancement-open-leveling` | enhancement-dps | 26.7 |
 | [Elemental](../../leveling/elemental.md) | `elemental-open-leveling` | elemental-dps | 28.5 |
-| [Restoration](../../leveling/restoration.md) | `restoration-leveling` | enhancement-dps | 37.3 |
+| [Restoration](../../leveling/restoration.md) | `restoration-leveling` | enhancement-dps | 37.0 |
 
 ✅ = recommended (the fastest spec, or within 3% of it).
 
@@ -56,20 +56,20 @@ The `enhancement-dps` report below is the fight-lab pipeline's (research): its o
 
 | Build | L20 | L30 | L40 | L50 | L60 | Deaths/100 at 60 | Downtime/kill at 60 |
 |---|---|---|---|---|---|---|---|
-| `opt-enhancement-dps-leveling-st` (optimizer) | 21.1s | 25.4s | 28.0s | 29.5s | 28.9s | 0.0 | 7.7s |
-| `leveling-enhancement` (hand draft) | 21.2s (+0%) | 25.5s (+0%) | 27.6s (-1%) | 28.3s (-4%) | 28.4s (-2%) | 0.0 | 7.5s |
-| `opt-enhancement-dps-leveling-st` in blues (dungeon blues from the item database) | 19.5s (-7%) | 23.0s (-10%) | 25.9s (-7%) | 27.6s (-7%) | 27.2s (-6%) | 0.0 | 7.0s |
+| `opt-enhancement-dps-leveling-st` (optimizer) | 21.5s | 26.1s | 28.4s | 29.6s | 29.1s | 0.0 | 7.8s |
+| `leveling-enhancement` (hand draft) | 21.6s (+0%) | 26.2s (+1%) | 27.7s (-2%) | 28.1s (-5%) | 28.6s (-2%) | 0.0 | 7.6s |
+| `opt-enhancement-dps-leveling-st` in blues (dungeon blues from the item database) | 19.8s (-8%) | 23.6s (-9%) | 26.8s (-6%) | 28.0s (-5%) | 27.4s (-6%) | 0.0 | 7.0s |
 
 Time per kill = fight + loot, travel, eating, drinking, healing and deaths; a build's cell shows its time and the difference to the optimizer build on the same mobs and seeds.
 
-- **Talents that matter** (time per kill lost when the talent is removed from `opt-enhancement-dps-leveling-st` at level 60): Shamanistic Focus +16% (L30 +14%), Stormstrike +6% (L30 +8%), Tidal Focus +4% (L30 +3%), Thundering Strikes +3% (L30 +3%), Mindfulness +3%, Mental Dexterity +3% (L30 +8%).
-- **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Call of Flame, Earth's Grasp, Guardian Totems, Improved Ghost Wolf.
-- **Caster mobs:** 16% of pulls at level 30 are casters (creature-database share); 0.16 interrupts per kill at 60.
-- **Race** (hand draft vs every optimizer candidate, 2026-11-15, mean time per kill over levels 20/30/40/50/60): leveling-enhancement 27.1s, cand-enh-r7 27.6s, cand-enh-r2 28.5s, cand-enh-r1 28.6s, cand-enh-r6 28.6s, cand-enh-r5 28.7s, cand-enh-r4 29.7s, cand-enh-r3 29.9s — fastest: **leveling-enhancement**.
+- **Talents that matter** (time per kill lost when the talent is removed from `opt-enhancement-dps-leveling-st` at level 60): Shamanistic Focus +16% (L30 +13%), Stormstrike +6% (L30 +8%), Tidal Focus +4% (L30 +3%), Thundering Strikes +3% (L30 +3%), Mindfulness +3%, Reverberation +2%.
+- **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Anticipation, Call of Flame, Earth's Grasp, Guardian Totems, Improved Ghost Wolf.
+- **Caster mobs:** 16% of pulls at level 30 are casters (creature-database share); 0.17 interrupts per kill at 60.
+- **Race** (hand draft vs every optimizer candidate, 2026-11-16, mean time per kill over levels 20/30/40/50/60): leveling-enhancement 27.3s, cand-enh-r7 27.9s, cand-enh-r2 28.9s, cand-enh-r6 28.9s, cand-enh-r5 28.9s, cand-enh-r1 29.0s, cand-enh-r4 29.8s, cand-enh-r3 30.0s — fastest: **leveling-enhancement**.
 - **Calibration:** the scorer's `enhancement-dps` leveling values were fitted jointly to the hand draft and every candidate in [`fightlab/candidates/`](fightlab/candidates/) (1 round, converged: the optimizer build repeats).
-- **Other spec, same module:** `elemental-dps` with `opt-elemental-dps-leveling-st` ([report](fightlab/elemental-dps.md)): L30 30.1s (+18% vs `opt-enhancement-dps-leveling-st`), L60 29.2s (+1% vs `opt-enhancement-dps-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
-- **AoE grinding, 3 mobs per pull:** `enhancement-dps` with `opt-enhancement-dps-leveling-aoe` ([report](fightlab/enhancement-dps-aoe.md)): L40 64.1s per mob in pulls of 2 (single-target build 28.0s), 30.7 deaths/100; L60 59.2s per mob in pulls of 2 (single-target build 28.9s), 34.7 deaths/100.
-- **Elemental (its own rotation):** `elemental-dps` with `opt-elemental-dps-leveling-st` ([report](fightlab/elemental-dps-opt.md)): L40 37.0s per mob in pulls of 1 (single-target build 28.0s), 0.0 deaths/100; L60 37.9s per mob in pulls of 1 (single-target build 28.9s), 0.1 deaths/100.
+- **Other spec, same module:** `elemental-dps` with `opt-elemental-dps-leveling-st` ([report](fightlab/elemental-dps.md)): L30 30.1s (+16% vs `opt-enhancement-dps-leveling-st`), L60 29.2s (+0% vs `opt-enhancement-dps-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
+- **AoE grinding, 3 mobs per pull:** `enhancement-dps` with `opt-enhancement-dps-leveling-aoe` ([report](fightlab/enhancement-dps-aoe.md)): L40 64.1s per mob in pulls of 2 (single-target build 28.4s), 30.7 deaths/100; L60 59.2s per mob in pulls of 2 (single-target build 29.1s), 34.7 deaths/100.
+- **Elemental (its own rotation):** `elemental-dps` with `opt-elemental-dps-leveling-st` ([report](fightlab/elemental-dps-opt.md)): L40 37.0s per mob in pulls of 1 (single-target build 28.4s), 0.0 deaths/100; L60 37.9s per mob in pulls of 1 (single-target build 29.1s), 0.1 deaths/100.
 - **Not simulated:** runners, adds, Strength of Earth / Stoneskin / Grace of Air totems (5-minute totems left behind between mobs), Frost Shock kiting, Totemic Call, Ghost Wolf travel, gear upgrades within a level bracket, where a Fire totem stands (Fire Nova and Magma Totem reach the mobs around you).
 - **Pipeline result:** the hand draft `leveling-enhancement` holds (no candidate beats it by more than the 2% margin). The player pages pick by their own races (the table at the top of this section).
 

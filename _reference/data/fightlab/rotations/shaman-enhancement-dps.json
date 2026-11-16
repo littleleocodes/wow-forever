@@ -6,9 +6,13 @@
  },
  "drink_below": 0.15,
  "eat_below": 0.8,
+ "knobs": {
+  "IMBUE_TOP": "rockbiter",
+  "IMBUE_TOP_FROM": 40
+ },
  "class": "shaman",
  "spec": "enhancement-dps",
- "build": "leveling-enhancement",
+ "build": "enhancement-open-leveling",
  "levels": [
   20,
   30,
@@ -16,101 +20,76 @@
   50,
   60
  ],
- "date": "2026-11-03",
+ "date": "2026-11-16",
  "signature": {
   "required": [
    "Stormstrike"
   ],
   "build_spec": "Enhancement",
   "dropped_saved_rules": [],
-  "core_share_before": 0.6144335415365954,
-  "core_share_after": 0.7614759962499975,
+  "core_share_before": 0.7949270977187999,
+  "core_share_after": 0.7949270977187999,
   "min_share": 0.6,
-  "floor_reached": null
+  "floor_reached": null,
+  "played_before": true,
+  "played_after": true
  },
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "Lightning Bolt only when the mob is below 35% health",
-   "rule": [
-    "max_hp",
-    "Lightning Bolt",
-    0.35
-   ],
-   "gain_seed1": 0.09691573809191034,
-   "gain_seed2": 0.0928183005890365
-  },
-  {
-   "round": 2,
-   "change": "drink below 15% mana",
-   "rule": [
-    "drink_below",
-    null,
-    0.15
-   ],
-   "gain_seed1": 0.01183339074345613,
-   "gain_seed2": 0.010858734355484012
-  },
-  {
-   "round": 3,
-   "change": "eat below 80% health",
-   "rule": [
-    "eat_below",
-    null,
-    0.8
-   ],
-   "gain_seed1": 0.012538048566865356,
-   "gain_seed2": 0.010200742571649934
-  },
-  {
-   "round": "A/B 2026-11-15",
-   "change": "Rockbiter Weapon again from 54 (IMBUE_TOP = rockbiter, IMBUE_TOP_FROM = 54)",
+   "change": "IMBUE_TOP_FROM = 40",
    "rule": [
     "knob",
-    "IMBUE_TOP",
-    "rockbiter"
+    "IMBUE_TOP_FROM",
+    40
    ],
-   "evidence": "rules_retune.py's screening (600 fights, seed 1) read IMBUE_TOP = rockbiter at +0.16% weighted and never confirmed it; a direct A/B on the page build (enhancement-open-leveling, these rules, 3000 fights, seeds 21 and 22, the same fights for both imbues): Rockbiter against Windfury per kill L44 +0.2%/-0.4%, L50 -0.4%/-0.6%, L54 -0.8%/-1.6%, L56 -1.3%/-1.3%, L60 -1.8%/-1.6%; about -0.5% on the tune's level-weighted score (its install bar 0.3%). From 54: Rockbiter rank 7 (554 attack power at 54, 653 at 60) against Windfury rank 3/4 (the imbues' numbers at their level since 2026-11-15)."
+   "gain_seed1": 0.003991583169688284,
+   "gain_seed2": 0.004466260030648206
   }
  ],
- "weighted_before": 28.59590502024355,
- "weighted_after": 25.408199215192045,
+ "weighted_before": 26.849793328386614,
+ "weighted_after": 26.74231669295823,
  "per_level": {
   "20": {
-   "before": 23.597189314024412,
-   "after": 21.165517032768026,
+   "before": 21.305053149447836,
+   "after": 21.305053149447836,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 27.154101156192855,
-   "after": 23.218038404909414,
+   "before": 25.519502493209473,
+   "after": 25.519502493209473,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 30.096806551110888,
-   "after": 26.29448454446596,
+   "before": 27.39592581842546,
+   "after": 27.279490998780393,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 29.715475627201783,
-   "after": 25.930970716009,
+   "before": 28.12004680353349,
+   "after": 27.783288117536,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 29.049468994631862,
-   "after": 26.89100721094463,
+   "before": 27.940552582973154,
+   "after": 27.940552582973154,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
  },
- "knobs": {
-  "IMBUE_TOP": "rockbiter",
-  "IMBUE_TOP_FROM": 54
+ "retune": {
+  "times": {
+   "saved": 26.85,
+   "from scratch": 26.766,
+   "continued": 26.742
+  },
+  "installed": "continued",
+  "reference_ok": true
  }
 }

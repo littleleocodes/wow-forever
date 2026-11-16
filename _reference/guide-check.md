@@ -71,11 +71,11 @@ Leveling steps that name a spell the tuned rules never cast (0; `fightlab/rotati
 | rogue | Hybrid Assassination/Combat | raid | 2026-11-10 | assassination-raid 05c720ea64be, combat-daggers-raid 11c6e97d2996, combat-swords-raid 402f621db62a |
 | rogue | Hybrid Combat/Subtlety | leveling | 2026-11-15 | leveling:combat-daggers-raid 5d52a58e63af, leveling:combat-swords-raid 8fe993c1421f, leveling:subtlety-leveling 923258fb1477 |
 | shaman | Elemental | raid | 2026-10-15 | elemental-dps 260725d0143a, stormcaller-dps fc9ab1b433fe |
-| shaman | Elemental | leveling | 2026-10-22 | leveling:elemental-dps 29615eae1d95, leveling:enhancement-dps 9b10626e8d2f |
+| shaman | Elemental | leveling | 2026-10-22 | leveling:elemental-dps 29615eae1d95, leveling:enhancement-dps 3472ad21a76f |
 | shaman | Enhancement | raid | 2026-10-15 | enhancement-dps f5e839848893 |
-| shaman | Enhancement | leveling | 2026-11-15 | leveling:elemental-dps 29615eae1d95, leveling:enhancement-dps 9b10626e8d2f |
+| shaman | Enhancement | leveling | 2026-11-15 | leveling:elemental-dps 29615eae1d95, leveling:enhancement-dps 3472ad21a76f |
 | shaman | Restoration | raid | 2026-10-22 | healer-policy f1d7847a3163 |
-| shaman | Restoration | leveling | 2026-10-22 | leveling:elemental-dps 29615eae1d95, leveling:enhancement-dps 9b10626e8d2f |
+| shaman | Restoration | leveling | 2026-10-22 | leveling:elemental-dps 29615eae1d95, leveling:enhancement-dps 3472ad21a76f |
 | shaman | Hybrid Elemental/Enhancement | raid | 2026-10-15 | elemental-dps 260725d0143a, enhancement-dps f5e839848893, stormcaller-dps fc9ab1b433fe |
 | warlock | Affliction | raid | 2026-11-08 | affliction-raid 8cea9e03d6ea |
 | warlock | Affliction | leveling | 2026-11-16 | leveling:affliction-leveling aad4b8d533a8, leveling:demonology-leveling 646c5ce02090, leveling:destruction-leveling 16f97003604b |

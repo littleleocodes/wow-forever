@@ -8,7 +8,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 |---|---|---|---|---|
 | 1 | [Enhancement](enhancement.md) 🔬 | 27 | fastest | 21 |
 | 2 | [Elemental](elemental.md) 🔬 | 29 | +7% | 21 |
-| 3 | [Restoration](restoration.md) — Leveling into the raid build 🔬 | 37 | +40% | 30 |
+| 3 | [Restoration](restoration.md) — Leveling into the raid build 🔬 | 37 | +38% | 30 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 

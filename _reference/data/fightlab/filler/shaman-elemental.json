@@ -3,7 +3,7 @@
  "spec": "Elemental",
  "build": "elemental-open-leveling",
  "rotation": "elemental-dps",
- "date": "2026-11-15",
+ "date": "2026-11-16",
  "fights": 1500,
  "start_order": [
   {
@@ -129,13 +129,25 @@
  ],
  "steps": [
   {
-   "weighted": 28.708,
+   "weighted": 28.872,
    "values_at_60": {
-    "Elemental Fury": -0.194,
-    "Elemental Reach": -0.11,
-    "Mindfulness": -0.29,
-    "Reverberation": -0.348,
-    "Shamanistic Focus": -3.104
+    "Elemental Fury": -0.158,
+    "Elemental Reach": -0.087,
+    "Mindfulness": -0.297,
+    "Reverberation": -0.012,
+    "Shamanistic Focus": -3.075
+   },
+   "zero": [
+    "Reverberation"
+   ]
+  },
+  {
+   "weighted": 28.83,
+   "values_at_60": {
+    "Elemental Fury": -0.216,
+    "Elemental Reach": -0.265,
+    "Mindfulness": -0.368,
+    "Shamanistic Focus": -3.352
    },
    "zero": []
   }
@@ -148,8 +160,17 @@
    "seed3": -0.0013,
    "seed4": -0.0014,
    "why": "gate"
+  },
+  {
+   "from": "Reverberation",
+   "to": "Elemental Reach",
+   "level": 59,
+   "seed3": -0.0015,
+   "seed4": -0.0011,
+   "why": "tie-break"
   }
  ],
+ "kept_signature": [],
  "final_order": [
   {
    "levels": "10-14",
@@ -266,16 +287,10 @@
    "points": 5
   },
   {
-   "levels": "59",
-   "tree": "Elemental",
-   "talent": "Reverberation",
-   "points": 1
-  },
-  {
-   "levels": "60",
+   "levels": "59-60",
    "tree": "Elemental",
    "talent": "Elemental Reach",
-   "points": 1
+   "points": 2
   }
  ],
  "written": {
@@ -291,7 +306,7 @@
     ],
     [
      "Reverberation",
-     4
+     3
     ],
     [
      "Elemental Alacrity",
@@ -311,7 +326,7 @@
     ],
     [
      "Elemental Reach",
-     1
+     2
     ],
     [
      "Call of Thunder",
@@ -471,18 +486,12 @@
     "points": 5
    },
    {
-    "levels": "59",
-    "tree": "Elemental",
-    "talent": "Reverberation",
-    "points": 1
-   },
-   {
-    "levels": "60",
+    "levels": "59-60",
     "tree": "Elemental",
     "talent": "Elemental Reach",
-    "points": 1
+    "points": 2
    }
   ],
-  "note": "2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Concussion to Reverberation at 44 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill)."
+  "note": "2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Reverberation to Elemental Reach at 59 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Concussion to Reverberation at 44 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill)."
  }
 }

@@ -4523,7 +4523,7 @@
    "spec": "enhancement-dps",
    "hand": "leveling-enhancement",
    "opt": "opt-enhancement-dps-leveling-st",
-   "started": "2026-11-15T23:50:12",
+   "started": "2026-11-16T13:27:05",
    "steps": [
     "race",
     "report"
@@ -4795,44 +4795,44 @@
      }
     }
    },
-   "seconds": 258,
+   "seconds": 327,
    "log": [
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py shaman --spec enhancement-dps --build leveling-enhancement --compare F:\\wow-forever\\shaman\\research\\leveling\\fightlab\\candidates\\cand-enh-r1.json F:\\wow-forever\\shaman\\research\\leveling\\fightlab\\candidates\\cand-enh-r2.json F:\\wow-forever\\shaman\\research\\leveling\\fightlab\\candidates\\cand-enh-r3.json F:\\wow-forever\\shaman\\research\\leveling\\fightlab\\candidates\\cand-enh-r4.json F:\\wow-forever\\shaman\\research\\leveling\\fightlab\\candidates\\cand-enh-r5.json F:\\wow-forever\\shaman\\research\\leveling\\fightlab\\candidates\\cand-enh-r6.json F:\\wow-forever\\shaman\\research\\leveling\\fightlab\\candidates\\cand-enh-r7.json --levels 20,30,40,50,60 --fights 1000",
      "rc": 0,
-     "seconds": 55,
+     "seconds": 64,
      "tail": [
-      "   vs cand-enh-r5: time/kill 30.8s (+8.5%), fight 13.3s, deaths/100 0.0",
-      "   vs cand-enh-r6: time/kill 30.3s (+6.8%), fight 13.3s, deaths/100 0.0",
-      "   vs cand-enh-r7: time/kill 29.5s (+4.1%), fight 12.5s, deaths/100 0.0",
-      "L60: fight 12.8s (median 12.4, p90 16.1), downtime 7.6s, deaths/100 0.0, time/kill 28.4s, 127 kills/h, mana/kill 853, shares Earth Shock 34%, Melee 31%, Stormstrike 15%, Lightning Shield 11%, Lightning Bolt 5%",
-      "   vs cand-enh-r1: time/kill 30.7s (+7.9%), fight 14.5s, deaths/100 0.0",
-      "   vs cand-enh-r2: time/kill 30.2s (+6.1%), fight 14.5s, deaths/100 0.0",
-      "   vs cand-enh-r3: time/kill 32.3s (+13.6%), fight 15.0s, deaths/100 0.0",
-      "   vs cand-enh-r4: time/kill 32.0s (+12.4%), fight 14.8s, deaths/100 0.0",
-      "   vs cand-enh-r5: time/kill 30.4s (+6.8%), fight 14.0s, deaths/100 0.0",
-      "   vs cand-enh-r6: time/kill 30.5s (+7.3%), fight 14.0s, deaths/100 0.0",
-      "   vs cand-enh-r7: time/kill 29.1s (+2.1%), fight 13.3s, deaths/100 0.0",
-      "done in 55s"
+      "   vs cand-enh-r5: time/kill 30.6s (+8.3%), fight 13.0s, deaths/100 0.0",
+      "   vs cand-enh-r6: time/kill 30.5s (+7.7%), fight 13.2s, deaths/100 0.0",
+      "   vs cand-enh-r7: time/kill 29.5s (+4.5%), fight 12.6s, deaths/100 0.0",
+      "L60: fight 13.0s (median 12.5, p90 16.6), downtime 7.6s, deaths/100 0.0, time/kill 28.6s, 126 kills/h, mana/kill 860, shares Earth Shock 34%, Melee 31%, Stormstrike 15%, Lightning Shield 11%, Lightning Bolt 5%",
+      "   vs cand-enh-r1: time/kill 31.0s (+8.1%), fight 14.6s, deaths/100 0.0",
+      "   vs cand-enh-r2: time/kill 30.5s (+6.6%), fight 14.8s, deaths/100 0.0",
+      "   vs cand-enh-r3: time/kill 32.6s (+13.8%), fight 15.2s, deaths/100 0.0",
+      "   vs cand-enh-r4: time/kill 32.4s (+13.3%), fight 15.2s, deaths/100 0.0",
+      "   vs cand-enh-r5: time/kill 30.6s (+6.8%), fight 14.2s, deaths/100 0.0",
+      "   vs cand-enh-r6: time/kill 30.9s (+7.7%), fight 14.3s, deaths/100 0.0",
+      "   vs cand-enh-r7: time/kill 29.2s (+2.0%), fight 13.4s, deaths/100 0.0",
+      "done in 64s"
      ],
      "stderr": []
     },
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py shaman --spec enhancement-dps --build opt-enhancement-dps-leveling-st --compare leveling-enhancement --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --gear-tiers --write",
      "rc": 0,
-     "seconds": 125,
+     "seconds": 176,
      "tail": [
-      "   Maelstrom Weapon         1  sim   +1.9% (fight   +2.6% +-0.6)  EV   +0.1%",
-      "   Mental Dexterity         3  sim   +2.5% (fight   +3.9% +-0.5)  EV   +5.2%",
-      "   Mental Quickness         2  sim   +0.9% (fight   +2.0% +-0.5)  EV   +2.8%",
-      "   Mindfulness              3  sim   +2.8% (fight   +1.1% +-0.6)  EV   +1.6%",
-      "   Rage of the Farseer      1  sim   +1.0% (fight   +1.7% +-0.4)  EV   +1.4%",
-      "   Reverberation            5  sim   +2.1% (fight   +5.4% +-0.5)  EV   +2.3%",
-      "   Shamanistic Focus        1  sim  +15.6% (fight   +7.4% +-0.7)  EV  +11.6%",
-      "   Stormstrike              1  sim   +5.9% (fight  +14.7% +-0.6)  EV  +11.1%",
-      "   Thundering Strikes       5  sim   +3.3% (fight   +5.1% +-0.6)  EV   +3.5%",
-      "   Tidal Focus              5  sim   +3.9% (fight   +6.1% +-0.6)  EV   +4.7%",
-      "done in 125s",
+      "   Maelstrom Weapon         1  sim   +1.8% (fight   +2.2% +-0.6)  EV   +0.1%",
+      "   Mental Dexterity         3  sim   +1.8% (fight   +2.6% +-0.5)  EV   +5.2%",
+      "   Mental Quickness         2  sim   +1.4% (fight   +2.2% +-0.5)  EV   +2.8%",
+      "   Mindfulness              3  sim   +3.1% (fight   +1.6% +-0.6)  EV   +1.6%",
+      "   Rage of the Farseer      1  sim   +0.9% (fight   +1.1% +-0.5)  EV   +1.4%",
+      "   Reverberation            5  sim   +2.1% (fight   +4.7% +-0.5)  EV   +2.3%",
+      "   Shamanistic Focus        1  sim  +15.9% (fight   +7.6% +-0.7)  EV  +11.6%",
+      "   Stormstrike              1  sim   +5.7% (fight  +14.2% +-0.6)  EV  +11.1%",
+      "   Thundering Strikes       5  sim   +3.1% (fight   +4.7% +-0.5)  EV   +3.5%",
+      "   Tidal Focus              5  sim   +3.6% (fight   +5.5% +-0.6)  EV   +4.7%",
+      "done in 175s",
       "wrote F:\\wow-forever\\shaman\\research\\leveling\\fightlab\\enhancement-dps.md"
      ],
      "stderr": []
@@ -4840,7 +4840,7 @@
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py shaman --spec elemental-dps --build opt-elemental-dps-leveling-st --compare opt-enhancement-dps-leveling-st --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --write",
      "rc": 0,
-     "seconds": 78,
+     "seconds": 87,
      "tail": [
       "   Elemental Focus          1  sim   +3.0% (fight   +1.8% +-0.5)  EV   +2.5%",
       "   Elemental Fury           1  sim   +0.7% (fight   +1.1% +-0.3)  EV   +0.9%",
@@ -4852,7 +4852,7 @@
       "   Shamanistic Focus        1  sim  +11.0% (fight   +7.5% +-0.7)  EV   +3.1%",
       "   Thundering Strikes       5  sim   +1.9% (fight   +3.2% +-0.4)  EV   +2.1%",
       "   Tidal Focus              5  sim   +3.5% (fight   +5.2% +-0.5)  EV   +3.9%",
-      "done in 78s",
+      "done in 86s",
       "wrote F:\\wow-forever\\shaman\\research\\leveling\\fightlab\\elemental-dps.md"
      ],
      "stderr": []
@@ -4862,7 +4862,7 @@
      "rc": 0,
      "seconds": 0,
      "tail": [
-      "0.924"
+      "0.934"
      ],
      "stderr": []
     }
@@ -4871,71 +4871,71 @@
    "race": {
     "time_per_kill": {
      "leveling-enhancement": {
-      "20": 21.5,
-      "30": 25.7,
-      "40": 27.6,
-      "50": 28.4,
-      "60": 28.4
+      "20": 21.8,
+      "30": 26.3,
+      "40": 27.8,
+      "50": 28.3,
+      "60": 28.6
      },
      "cand-enh-r1": {
-      "20": 21.3,
-      "30": 25.7,
-      "40": 28.9,
-      "50": 30.3,
-      "60": 30.7
+      "20": 21.7,
+      "30": 26.3,
+      "40": 29.8,
+      "50": 30.5,
+      "60": 31.0
      },
      "cand-enh-r2": {
-      "20": 21.3,
-      "30": 25.8,
-      "40": 29.1,
-      "50": 30.5,
-      "60": 30.2
-     },
-     "cand-enh-r3": {
-      "20": 21.5,
-      "30": 26.0,
-      "40": 30.3,
-      "50": 32.2,
-      "60": 32.3
-     },
-     "cand-enh-r4": {
-      "20": 21.3,
-      "30": 25.8,
-      "40": 30.3,
-      "50": 32.1,
-      "60": 32.0
-     },
-     "cand-enh-r5": {
-      "20": 21.6,
-      "30": 25.8,
-      "40": 29.3,
-      "50": 30.8,
-      "60": 30.4
-     },
-     "cand-enh-r6": {
-      "20": 21.6,
-      "30": 25.6,
-      "40": 29.2,
-      "50": 30.3,
+      "20": 21.7,
+      "30": 26.4,
+      "40": 29.6,
+      "50": 30.7,
       "60": 30.5
      },
+     "cand-enh-r3": {
+      "20": 21.8,
+      "30": 26.6,
+      "40": 30.5,
+      "50": 31.8,
+      "60": 32.6
+     },
+     "cand-enh-r4": {
+      "20": 21.7,
+      "30": 26.4,
+      "40": 30.5,
+      "50": 31.5,
+      "60": 32.4
+     },
+     "cand-enh-r5": {
+      "20": 21.9,
+      "30": 26.4,
+      "40": 29.8,
+      "50": 30.6,
+      "60": 30.6
+     },
+     "cand-enh-r6": {
+      "20": 21.9,
+      "30": 26.2,
+      "40": 29.5,
+      "50": 30.5,
+      "60": 30.9
+     },
      "cand-enh-r7": {
-      "20": 21.6,
-      "30": 25.2,
-      "40": 28.0,
+      "20": 21.9,
+      "30": 25.7,
+      "40": 28.4,
       "50": 29.5,
-      "60": 29.1
+      "60": 29.2
      }
     },
     "mean": {
-     "leveling-enhancement": 27.145,
-     "cand-enh-r1": 28.55,
-     "cand-enh-r2": 28.505000000000003,
-     "cand-enh-r3": 29.85,
-     "cand-enh-r4": 29.685000000000002,
-     "cand-enh-r5": 28.71,
-     "cand-enh-r6": 28.564999999999998,
-     "cand-enh-r7": 27.645
+     "leveling-enhancement": 27.339999999999996,
+     "cand-enh-r1": 29.0,
+     "cand-enh-r2": 28.875,
+     "cand-enh-r3": 30.0,
+     "cand-enh-r4": 29.825,
+     "cand-enh-r5": 28.939999999999998,
+     "cand-enh-r6": 28.915,
+     "cand-enh-r7": 27.859999999999996
     },
     "winner": "leveling-enhancement",
     "gain_vs_hand": 0.0,
@@ -5054,18 +5054,18 @@
    ],
    "converged": true,
    "time_per_kill": {
-    "20": 21.1,
-    "30": 25.4,
-    "40": 28.0,
-    "50": 29.5,
-    "60": 28.9
+    "20": 21.5,
+    "30": 26.1,
+    "40": 28.4,
+    "50": 29.6,
+    "60": 29.1
    },
    "hand_time_per_kill": {
-    "20": 21.2,
-    "30": 25.5,
-    "40": 27.6,
-    "50": 28.3,
-    "60": 28.4
+    "20": 21.6,
+    "30": 26.2,
+    "40": 27.7,
+    "50": 28.1,
+    "60": 28.6
    },
    "classic": {
     "elemental-dps": {
@@ -5781,9 +5781,9 @@
   }
  },
  "last_run": {
-  "date": "2026-11-16T13:10:07",
+  "date": "2026-11-16T14:33:27",
   "classes": [
-   "warlock"
+   "shaman"
   ],
   "steps": [
    "regen"
@@ -5794,71 +5794,72 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 188,
+  "seconds": 418,
   "refresh": null,
   "regen_log": [
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_trees.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_trees.py shaman",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote F:\\wow-forever\\warlock\\research\\talents\\forever\\talent-trees.md"
+     "wrote F:\\wow-forever\\shaman\\research\\talents\\forever\\talent-trees.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py shaman",
     "rc": 0,
     "seconds": 1,
     "tail": [
-     "formatted F:\\wow-forever\\warlock\\research\\talents\\forever\\proposed-builds.json",
-     "warlock: README section + leveling-affliction note written"
+     "formatted F:\\wow-forever\\shaman\\research\\talents\\forever\\proposed-builds.json",
+     "shaman: README section + leveling-enhancement note written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py shaman",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "warlock: raid sim section written (5 specs)",
+     "shaman: raid sim section written (3 specs)",
      "wrote _reference\\raidsim-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py shaman",
     "rc": 0,
     "seconds": 1,
     "tail": [
+     "shaman: healer lab section written (1 specs)",
      "wrote _reference\\heallab-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py shaman",
     "rc": 0,
     "seconds": 1,
     "tail": [
-     "warlock: leveling/guide.md written (affliction-demonology-open-leveling)"
+     "shaman: leveling/guide.md written (enhancement-open-leveling)"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py shaman",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "warlock: raid gear and consumables written"
+     "shaman: raid gear and consumables written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py shaman",
     "rc": 0,
     "seconds": 1,
     "tail": [
-     "warlock: raid and leveling rotations, DPS ranking written"
+     "shaman: raid and leveling rotations, DPS ranking written"
     ],
     "stderr": []
    },
@@ -5903,7 +5904,7 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py shaman",
     "rc": 0,
     "seconds": 1,
     "tail": [
@@ -5913,20 +5914,20 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\signature_audit.py warlock --write --no-default",
+    "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\signature_audit.py shaman --write --no-default",
     "rc": 0,
-    "seconds": 69,
+    "seconds": 5,
     "tail": [
-     "  Affliction-Demonology [page: affliction-demonology-open-leveling 27/24/0] demonology-leveling (tuned): casts/kill at 60 {'Corruption': 1.04}, core 71% (min 50%), 30.4 s/kill; rules: -; OK",
-     "      shares at 60: {'Wand': 0.239, 'Bane of Agony': 0.208, 'Corruption': 0.207, 'Voidwalker melee': 0.135, 'Siphon Life': 0.087, 'Demonic Brand': 0.077}",
-     "  Affliction-Demonology [slot: opt-affliction-leveling-leveling-st 27/24/0] demonology-leveling (tuned): casts/kill at 60 {'Corruption': 1.14}, core 68% (min 50%), 32.7 s/kill; rules: -; OK",
-     "      shares at 60: {'Wand': 0.255, 'Bane of Agony': 0.225, 'Corruption': 0.219, 'Voidwalker melee': 0.138, 'Siphon Life': 0.098, 'Immolate': 0.062}",
-     "  Affliction-Demonology [slot: leveling-affliction 23/26/2] demonology-leveling (tuned): casts/kill at 60 {'Corruption': 1.26}, core 69% (min 50%), 32.8 s/kill; rules: -; OK",
-     "      shares at 60: {'Wand': 0.264, 'Corruption': 0.222, 'Bane of Agony': 0.221, 'Voidwalker melee': 0.137, 'Siphon Life': 0.1, 'Immolate': 0.05}",
-     "  Affliction-Demonology [slot: opt-affliction-leveling-solo-60 27/24/0] demonology-leveling (tuned): casts/kill at 60 {'Corruption': 1.14}, core 68% (min 50%), 32.7 s/kill; rules: -; OK",
-     "      shares at 60: {'Wand': 0.255, 'Bane of Agony': 0.225, 'Corruption': 0.219, 'Voidwalker melee': 0.138, 'Siphon Life': 0.098, 'Immolate': 0.062}",
-     "  Affliction-Demonology [slot: opt-affliction-leveling-leveling-aoe 21/24/6] demonology-leveling (tuned): casts/kill at 60 {'Corruption': 1.28}, core 69% (min 50%), 33.6 s/kill; rules: -; OK",
-     "      shares at 60: {'Wand': 0.284, 'Corruption': 0.229, 'Bane of Agony': 0.213, 'Voidwalker melee': 0.134, 'Siphon Life': 0.106, 'Immolate': 0.021}",
+     "  Enhancement [page: enhancement-open-leveling 13/32/6] enhancement-dps (tuned): casts/kill at 60 {'Stormstrike': 2.15}, core 79% (min 60%), 26.8 s/kill; rules: -; OK",
+     "      shares at 60: {'Earth Shock': 0.339, 'Melee': 0.295, 'Stormstrike': 0.156, 'Lightning Shield': 0.124, 'Lightning Bolt': 0.05, 'Searing Totem': 0.036}",
+     "  Enhancement [slot: leveling-enhancement 7/34/10] enhancement-dps (tuned): casts/kill at 60 {'Stormstrike': 2.07}, core 80% (min 60%), 27.4 s/kill; rules: -; OK",
+     "      shares at 60: {'Earth Shock': 0.338, 'Melee': 0.309, 'Stormstrike': 0.151, 'Lightning Shield': 0.115, 'Lightning Bolt': 0.049, 'Searing Totem': 0.038}",
+     "  Enhancement [slot: opt-enhancement-dps-leveling-st 12/31/8] enhancement-dps (tuned): casts/kill at 60 {'Stormstrike': 1.92}, core 81% (min 60%), 28.0 s/kill; rules: -; OK",
+     "      shares at 60: {'Earth Shock': 0.376, 'Melee': 0.299, 'Stormstrike': 0.132, 'Lightning Shield': 0.129, 'Searing Totem': 0.039, 'Lightning Bolt': 0.025}",
+     "  Enhancement [slot: opt-enhancement-dps-solo-60 12/31/8] enhancement-dps (tuned): casts/kill at 60 {'Stormstrike': 1.92}, core 81% (min 60%), 28.0 s/kill; rules: -; OK",
+     "      shares at 60: {'Earth Shock': 0.376, 'Melee': 0.299, 'Stormstrike': 0.132, 'Lightning Shield': 0.129, 'Searing Totem': 0.039, 'Lightning Bolt': 0.025}",
+     "  Restoration [page: restoration-leveling 0/10/41] enhancement-dps (tuned): casts/kill at 60 {}, core - (min -), 37.2 s/kill; rules: -; no rule",
+     "      shares at 60: {'Earth Shock': 0.457, 'Melee': 0.401, 'Lightning Shield': 0.077, 'Searing Totem': 0.065}",
      "wrote _reference\\signature-audit.md",
      "wrote _reference\\data\\fightlab\\signature-audit.json"
     ],
@@ -5935,7 +5936,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_modes.py",
     "rc": 0,
-    "seconds": 13,
+    "seconds": 19,
     "tail": [
      "druid: README.md sections and 3 mode folders written",
      "hunter: README.md sections and 3 mode folders written",
@@ -5953,22 +5954,22 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_tier_list.py",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 4,
     "tail": [
      "wrote tier-list.md: 30 damage specs, 5 healers, 3 tanks"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py warlock --write",
+    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py shaman --write",
     "rc": 0,
-    "seconds": 88,
+    "seconds": 353,
     "tail": [
-     "| affliction-leveling -> level-20 build (11/0/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +25.7% |",
-     "| affliction-leveling -> level-30 build (21/0/0) | +1.2% | +5.2% | +7.7% | +9.3% | +16.9% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +25.7% |",
-     "| affliction-leveling -> level-40 build (31/0/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +25.9% |",
-     "| affliction-leveling -> level-50 build (32/9/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +26.0% |",
-     "| affliction-leveling -> level-60 build (27/24/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +20.3% | +22.4% | +22.5% | +22.7% | +28.3% |",
+     "| elemental-dps -> level-20 build (11/0/0) | +1.5% | +7.5% | +15.0% | +16.4% | +17.3% | +21.4% | +24.4% | +30.2% | +34.4% | +35.9% | +37.1% |",
+     "| elemental-dps -> level-30 build (12/1/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.4% | +24.7% | +27.4% | +28.6% | +33.1% | +35.9% | +37.1% |",
+     "| elemental-dps -> level-40 build (12/11/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.4% | +24.7% | +27.4% | +28.6% | +33.1% | +35.9% | +37.1% |",
+     "| elemental-dps -> level-50 build (11/22/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.1% | +24.5% | +27.2% | +30.6% | +34.4% | +35.9% | +37.1% |",
+     "| elemental-dps -> level-60 build (21/22/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.4% | +24.7% | +25.9% | +27.6% | +30.2% | +33.6% | +37.3% |",
      "",
      "## Reading it",
      "",
@@ -5999,7 +6000,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\compare_effects.py",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 2,
     "tail": [
      "druid    buff=10 nerf=16 reworked=0 new=18 removed=13 same=8 unscored=0",
      "hunter   buff=3 nerf=21 reworked=0 new=18 removed=14 same=8 unscored=0",
@@ -6016,7 +6017,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\loop_audit.py",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 6,
     "tail": [
      "druid    flagged 31/99  open 1",
      "hunter   flagged 23/62  open 6",
@@ -6034,7 +6035,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\build_launch_checklist.py",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
      "wrote _reference\\launch-checklist.md (321 per-build questions)"
     ],
@@ -6043,7 +6044,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\build_beta_checklist.py",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
      "wrote _reference\\beta-checklist.md"
     ],
@@ -6052,7 +6053,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\summary.py --write",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 2,
     "tail": [
      "wrote _reference\\fightlab-summary.md"
     ],
@@ -6061,7 +6062,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_report_index.py",
     "rc": 0,
-    "seconds": 5,
+    "seconds": 10,
     "tail": [
      "druid: leveling 3, raid 16, classic 10",
      "hunter: leveling 6, raid 14, classic 5",
@@ -6078,7 +6079,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\page_lint.py --write",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 5,
     "tail": [
      "| talents | 0 |",
      "| links | 0 |",

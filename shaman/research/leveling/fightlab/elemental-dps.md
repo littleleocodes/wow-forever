@@ -41,15 +41,15 @@ Spec model (`_reference/data/scorer/specs`) assumes: lightning_bolt 67%, chain_l
 | Level | Build | Time/kill | vs. main | Fight mean | Deaths/100 | Downtime/kill |
 |---|---|---|---|---|---|---|
 | 20 | opt-elemental-dps-leveling-st | 26.4s | - | 11.5s | 0.0 | 6.9s |
-| 20 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 21.1s | -20.2% | 10.7s | 0.0 | 2.4s |
+| 20 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 21.5s | -18.9% | 10.8s | 0.0 | 2.6s |
 | 30 | opt-elemental-dps-leveling-st | 30.1s | - | 12.3s | 0.0 | 9.9s |
-| 30 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 25.4s | -15.6% | 11.1s | 0.0 | 6.4s |
+| 30 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 26.1s | -13.5% | 11.4s | 0.0 | 6.6s |
 | 40 | opt-elemental-dps-leveling-st | 30.9s | - | 12.1s | 0.0 | 10.8s |
-| 40 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 28.0s | -9.6% | 12.1s | 0.0 | 7.9s |
+| 40 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 28.4s | -8.3% | 12.2s | 0.0 | 8.2s |
 | 50 | opt-elemental-dps-leveling-st | 31.0s | - | 12.5s | 0.0 | 10.5s |
-| 50 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 29.5s | -4.7% | 12.7s | 0.0 | 8.9s |
+| 50 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 29.6s | -4.4% | 12.7s | 0.0 | 8.9s |
 | 60 | opt-elemental-dps-leveling-st | 29.2s | - | 11.8s | 0.0 | 9.3s |
-| 60 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 28.9s | -0.7% | 13.2s | 0.0 | 7.7s |
+| 60 | opt-enhancement-dps-leveling-st (played as `enhancement-dps`) | 29.1s | -0.0% | 13.4s | 0.0 | 7.8s |
 
 ## Talent values at level 30
 

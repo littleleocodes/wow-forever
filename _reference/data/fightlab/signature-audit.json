@@ -1594,7 +1594,7 @@
     "rotation": "elemental-dps",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.7517,
+    "core_share": 0.7645,
     "min_share": 0.6,
     "required": [
      "Lightning Bolt"
@@ -1606,11 +1606,11 @@
      "Flame Shock"
     ],
     "casts_60": {
-     "Lightning Bolt": 3.49
+     "Lightning Bolt": 3.54
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "d260c863246e",
+    "fingerprint": "0ca7e290ef1e",
     "date": "2026-11-16",
     "fights": 300
    },
@@ -1619,7 +1619,7 @@
     "rotation": "enhancement-dps",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.7972,
+    "core_share": 0.7908,
     "min_share": 0.6,
     "required": [
      "Stormstrike"
@@ -1633,11 +1633,11 @@
      "Flame Shock"
     ],
     "casts_60": {
-     "Stormstrike": 2.2
+     "Stormstrike": 2.15
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "d8a52d795bcb",
+    "fingerprint": "ec77b671db7b",
     "date": "2026-11-16",
     "fights": 300
    },
@@ -1646,7 +1646,7 @@
     "rotation": "enhancement-dps",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.8042,
+    "core_share": 0.7985,
     "min_share": 0.6,
     "required": [
      "Stormstrike"
@@ -1660,38 +1660,11 @@
      "Flame Shock"
     ],
     "casts_60": {
-     "Stormstrike": 2.09
+     "Stormstrike": 2.07
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "52de156cc6c3",
-    "date": "2026-11-16",
-    "fights": 300
-   },
-   "opt-enhancement-dps-solo-60": {
-    "spec": "Enhancement",
-    "rotation": "enhancement-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.8069,
-    "min_share": 0.6,
-    "required": [
-     "Stormstrike"
-    ],
-    "core": [
-     "melee",
-     "Stormstrike",
-     "Windfury Weapon",
-     "Flametongue Weapon",
-     "Earth Shock",
-     "Flame Shock"
-    ],
-    "casts_60": {
-     "Stormstrike": 1.9
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "96cb5367ff55",
+    "fingerprint": "5416a9bf5ccd",
     "date": "2026-11-16",
     "fights": 300
    },
@@ -1700,7 +1673,7 @@
     "rotation": "enhancement-dps",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.8069,
+    "core_share": 0.8065,
     "min_share": 0.6,
     "required": [
      "Stormstrike"
@@ -1714,11 +1687,38 @@
      "Flame Shock"
     ],
     "casts_60": {
-     "Stormstrike": 1.9
+     "Stormstrike": 1.92
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "96cb5367ff55",
+    "fingerprint": "e8b1ea3a2407",
+    "date": "2026-11-16",
+    "fights": 300
+   },
+   "opt-enhancement-dps-solo-60": {
+    "spec": "Enhancement",
+    "rotation": "enhancement-dps",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.8065,
+    "min_share": 0.6,
+    "required": [
+     "Stormstrike"
+    ],
+    "core": [
+     "melee",
+     "Stormstrike",
+     "Windfury Weapon",
+     "Flametongue Weapon",
+     "Earth Shock",
+     "Flame Shock"
+    ],
+    "casts_60": {
+     "Stormstrike": 1.92
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "e8b1ea3a2407",
     "date": "2026-11-16",
     "fights": 300
    },
@@ -1734,7 +1734,7 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "1fcfa19ac4d7",
+    "fingerprint": "4473e6a52a51",
     "date": "2026-11-16",
     "fights": 300
    }
@@ -4557,29 +4557,29 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Lightning Bolt": 3.49
+     "Lightning Bolt": 3.54
     },
-    "core_share": 0.7517,
+    "core_share": 0.7645,
     "min_share": 0.6,
-    "weighted": 28.43,
+    "weighted": 28.52,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Lightning Bolt": 0.484,
-     "Flame Shock": 0.135,
-     "Earth Shock": 0.132,
-     "Lightning Shield": 0.098,
-     "Melee": 0.08,
-     "Windfury": 0.036
+     "Lightning Bolt": 0.492,
+     "Flame Shock": 0.139,
+     "Earth Shock": 0.133,
+     "Lightning Shield": 0.099,
+     "Melee": 0.071,
+     "Searing Totem": 0.035
     }
    },
    {
     "spec": "Enhancement",
     "name": "Enhancement",
     "build": "enhancement-open-leveling",
-    "split": "12/33/6",
+    "split": "13/32/6",
     "rotation": "enhancement-dps",
     "rules": "tuned",
     "kind": "page",
@@ -4596,21 +4596,21 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Stormstrike": 2.2
+     "Stormstrike": 2.15
     },
-    "core_share": 0.7972,
+    "core_share": 0.7908,
     "min_share": 0.6,
-    "weighted": 26.92,
+    "weighted": 26.84,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Earth Shock": 0.333,
-     "Melee": 0.301,
-     "Stormstrike": 0.163,
-     "Lightning Shield": 0.122,
-     "Lightning Bolt": 0.045,
+     "Earth Shock": 0.339,
+     "Melee": 0.295,
+     "Stormstrike": 0.156,
+     "Lightning Shield": 0.124,
+     "Lightning Bolt": 0.05,
      "Searing Totem": 0.036
     }
    },
@@ -4635,61 +4635,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Stormstrike": 2.09
+     "Stormstrike": 2.07
     },
-    "core_share": 0.8042,
+    "core_share": 0.7985,
     "min_share": 0.6,
-    "weighted": 27.22,
+    "weighted": 27.45,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Earth Shock": 0.334,
-     "Melee": 0.311,
-     "Stormstrike": 0.159,
-     "Lightning Shield": 0.111,
+     "Earth Shock": 0.338,
+     "Melee": 0.309,
+     "Stormstrike": 0.151,
+     "Lightning Shield": 0.115,
      "Lightning Bolt": 0.049,
-     "Searing Totem": 0.036
-    }
-   },
-   {
-    "spec": "Enhancement",
-    "name": "Enhancement",
-    "build": "opt-enhancement-dps-solo-60",
-    "split": "12/31/8",
-    "rotation": "enhancement-dps",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Stormstrike"
-    ],
-    "core": [
-     "melee",
-     "Stormstrike",
-     "Windfury Weapon",
-     "Flametongue Weapon",
-     "Earth Shock",
-     "Flame Shock"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Stormstrike": 1.9
-    },
-    "core_share": 0.8069,
-    "min_share": 0.6,
-    "weighted": 27.8,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Earth Shock": 0.374,
-     "Melee": 0.298,
-     "Stormstrike": 0.136,
-     "Lightning Shield": 0.132,
-     "Searing Totem": 0.039,
-     "Lightning Bolt": 0.022
+     "Searing Totem": 0.038
     }
    },
    {
@@ -4713,22 +4674,61 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Stormstrike": 1.9
+     "Stormstrike": 1.92
     },
-    "core_share": 0.8069,
+    "core_share": 0.8065,
     "min_share": 0.6,
-    "weighted": 27.8,
+    "weighted": 28.03,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Earth Shock": 0.374,
-     "Melee": 0.298,
-     "Stormstrike": 0.136,
-     "Lightning Shield": 0.132,
+     "Earth Shock": 0.376,
+     "Melee": 0.299,
+     "Stormstrike": 0.132,
+     "Lightning Shield": 0.129,
      "Searing Totem": 0.039,
-     "Lightning Bolt": 0.022
+     "Lightning Bolt": 0.025
+    }
+   },
+   {
+    "spec": "Enhancement",
+    "name": "Enhancement",
+    "build": "opt-enhancement-dps-solo-60",
+    "split": "12/31/8",
+    "rotation": "enhancement-dps",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Stormstrike"
+    ],
+    "core": [
+     "melee",
+     "Stormstrike",
+     "Windfury Weapon",
+     "Flametongue Weapon",
+     "Earth Shock",
+     "Flame Shock"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Stormstrike": 1.92
+    },
+    "core_share": 0.8065,
+    "min_share": 0.6,
+    "weighted": 28.03,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Earth Shock": 0.376,
+     "Melee": 0.299,
+     "Stormstrike": 0.132,
+     "Lightning Shield": 0.129,
+     "Searing Totem": 0.039,
+     "Lightning Bolt": 0.025
     }
    },
    {
@@ -4745,7 +4745,7 @@
     "casts_60": {},
     "core_share": null,
     "min_share": null,
-    "weighted": 37.46,
+    "weighted": 37.25,
     "verdict": "no rule",
     "ok": true,
     "missing_talents": [],

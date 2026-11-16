@@ -60,7 +60,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - The keys of the [Enhancement guide](enhancement-by-level.md), with these changes: R stays free (no **Stormstrike** in this build); 4 holds **Mana Tide Totem** from 30 in place of Rage of the Farseer; 3 holds **Nature's Swiftness** from 35; Shift+C and Shift+X hold the dungeon heals, **Chain Heal** (40) and **Riptide** (60).
 - Two swaps on bar 1: **Lesser Healing Wave** takes the thumb at 20 and **Healing Wave** moves to C as the big heal.
 - The Instant big heal macro on the [macro page](../macros.md) casts **Nature's Swiftness** and **Healing Wave** in one press on C, and frees 3.
-- **Lightning Shield** and **Water Shield** are buffs, like your weapon imbue (**Rockbiter Weapon**, **Windfury Weapon** from 30, **Rockbiter Weapon** again from 54): click them between fights. No key either: **Ghost Wolf**, food, water, the mount and the Hearthstone.
+- **Lightning Shield** and **Water Shield** are buffs, like your weapon imbue (**Rockbiter Weapon**, **Windfury Weapon** from 30, **Rockbiter Weapon** again from 40): click them between fights. No key either: **Ghost Wolf**, food, water, the mount and the Hearthstone.
 - Right-click the mob to start swinging at levels 1-3. From 4, Q is the Earth Shock macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free.
 - The single-target rotation never casts **Lightning Bolt** after level 3, nor **Flame Shock**, **Fire Nova**, **Chain Lightning** or **Magma Totem**. **Lightning Bolt** stays on 1 to pull a mob from range; the others are for a pull that brings friends.
 
@@ -244,9 +244,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - From 37 the points go to **Ancestral Knowledge** (more Intellect) and then the healing talents: **Healing Focus**, **Tidal Mastery**, **Healing Way**, **Purification** and **Riptide** (60). They make you a healer at 60; solo, they do little.
 - **Chain Heal** (40) and **Riptide** (60) heal a group in a dungeon. Solo, the fight lab never casts them.
-- At 54 train **Rockbiter Weapon** rank 7 and put it back on your weapon in place of Windfury: from 54 its attack power on every swing beats Windfury's extra attacks in the fight lab (the tuned rules, 2026-11-15). Windfury Weapon rank 4 (60) is not needed.
+- **Rockbiter Weapon** is back on your weapon from 40, in place of Windfury (rank 5; rank 6 at 44, rank 7 at 54): its attack power on every swing beats Windfury's extra attacks there in the fight lab (the Enhancement rules re-tuned on 2026-11-16, which this page plays). Windfury Weapon's ranks 2-4 (40, 50, 60) are not needed.
 
-*Fight lab, seconds per kill: 35 at level 35, 38 at level 40, 40 at level 50, 42 at level 60. Presses per kill at level 35: Melee 5.4, Earth Shock 3.1, Windfury 1.9, Searing Totem 0.6, Lightning Shield 0.4.*
+*Fight lab, seconds per kill: 35 at level 35, 37 at level 40, 40 at level 50, 42 at level 60. Presses per kill at level 35: Melee 5.4, Earth Shock 3.1, Windfury 1.9, Searing Totem 0.6, Lightning Shield 0.4.*
 
 ## Between fights
 

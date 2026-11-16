@@ -82,7 +82,7 @@
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
 | **Guardian Totems** | 2 | — | unchanged | Increases the amount of damage reduced by your Stoneskin Totem and Windwall Totem by 10% and reduces the cooldown of your Grounding Totem by 1 sec. | Increases the amount of damage reduced by your Stoneskin Totem and Windwall Totem by 20% and reduces the cooldown of your Grounding Totem by 2 sec. |
-| **Mental Dexterity** | 3 | — | **NEW** | Increases your Attack Power by an amount equal to 50% of your Intellect. | Increases your Attack Power by an amount equal to 150% of your Intellect. |
+| **Mental Dexterity** | 3 | — | **NEW** | Increases your Attack Power by an amount equal to 33% of your Intellect. | Increases your Attack Power by an amount equal to 100% of your Intellect. |
 | **Improved Lightning Shield** | 3 | — | unchanged | Increases the damage done by your Lightning Shield orbs by 5%. | Increases the damage done by your Lightning Shield orbs by 15%. |
 
 ### Tier 3 — requires 10 points in Enhancement
