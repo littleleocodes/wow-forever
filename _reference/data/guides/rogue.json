@@ -40,7 +40,7 @@
     ],
     "caveats": [
      "This build has no **Blade Flurry** or **Adrenaline Rush** (the list above leaves their line out) and no **Setup**, so **Evasion** is your only cooldown when a pull goes wrong.",
-     "**Improved Expose Armor** (54), **Improved Poisons** (56 and 59) and **Vile Poisons** (57-58) fill the Assassination tiers on the way to **Venom** (60), which makes each **Shank** strengthen your poisons for 6 seconds: the first improves a spell this list never casts, the two poison talents only your poisons (the filler pass of 2026-11-15 moved the Improved Slice and Dice point to **Improved Poisons**).",
+     "**Improved Expose Armor** (54), **Improved Poisons** (56-57) and **Vile Poisons** (58-59) fill the Assassination tiers on the way to **Venom** (60), which makes each **Shank** strengthen your poisons for 6 seconds: the first improves a spell this list never casts, the two poison talents only your poisons (the filler pass of 2026-11-15 moved the Improved Slice and Dice point to **Improved Poisons**).",
      "**Kidney Shot** is not in the list: the tuned rules never cast it (under 1% faster per kill). Keep it for an add or a pull that goes wrong.",
      "With swords the tuned rules never **Kick** (about 0.5% to 1% faster per kill): a caster mob that stays back walks in once it has cast. **Backstab** and **Ambush** need a dagger, so they are not in the list.",
      "Eat only below 40% health and bandage below 60%: the tuned rules measured eating that late about 4.5% faster per kill."
@@ -51,9 +51,9 @@
      "If a pull goes wrong, **Gouge**, **Kidney Shot**, **Vanish** and **Sprint** get you out; the fight lab does not model adds or escapes."
     ],
     "rotations": {
-     "leveling:combat-swords-raid": "395a598432df",
-     "leveling:combat-daggers-raid": "04f1e02086d3",
-     "leveling:subtlety-leveling": "713ef0f5f540"
+     "leveling:combat-swords-raid": "8fe993c1421f",
+     "leveling:combat-daggers-raid": "5d52a58e63af",
+     "leveling:subtlety-leveling": "923258fb1477"
     },
     "written": "2026-11-15"
    }
@@ -91,7 +91,7 @@
      "Open with **Garrote** from stealth: a combo point and an 18-second bleed (**Blood Splatter** at 24 makes it 9 seconds longer). The tuned rules never open with **Cheap Shot** (about 8% faster per kill without it): it gives points and a stun but no damage, for 60 energy.",
      "**Eviscerate** at 5 points, or earlier when it would kill the mob: points left on a dead mob are lost. **Cold Blood** (talent, level 25) makes the next **Sinister Strike**, **Mutilate** or **Eviscerate** a sure critical strike, but its cooldown is 3 minutes, about every eighth pull: press it right before an **Eviscerate** at 5 points so a builder does not use it up.",
      "**Shank** (level 24) is a free strike that gives energy back every 10 seconds; with **Venom** (30) each **Shank** also makes your poisons hit 30% harder and land 20% more often for 6 seconds.",
-     "Keep **Instant Poison** on the main hand and **Deadly Poison** (level 30) on the off hand: every weapon strike can apply them, and **Deadly Poison** keeps the target poisoned for **Mutilate**'s bonus. **Vile Poisons** (26) and **Improved Poisons** (27-29, 32) make both stronger.",
+     "Keep **Instant Poison** on both weapons: every weapon strike can apply it. Deadly Poison (30) on the off hand would keep the mob poisoned for **Mutilate**'s 20% bonus, and the fight lab still kills about 1.5% faster with Instant Poison on both (the tuned rules, 2026-11-15). **Improved Poisons** (26-29, 32) makes it land more often.",
      "**Relentless Strikes** (31-39) refunds 25 energy on some finishers and **Ruthlessness** (15-17) adds a point back; **Malice**, **Lethality** and **Remorseless Attacks** make the crits frequent. Pull the next mob within 20 seconds of a kill so the 40% crit chance from **Remorseless Attacks** is not wasted.",
      "Skip **Slice and Dice**: fights end before it pays back (about 3% faster per kill without it)."
     ],
@@ -99,7 +99,7 @@
      "Keep daggers in both hands: the build plays daggers, and **Mutilate** strikes with both weapons.",
      "The points after level 40 go to Combat's talents (**Coup de Grace**, **Puncturing Wounds**, **Precision**, **Aggression**): they make **Eviscerate** and **Mutilate** hit harder and land more often.",
      "**Kidney Shot** is not in the list: the tuned rules never cast it (under 1% faster per kill). Keep it for an add or a pull that goes wrong.",
-     "**Kick** a caster mob's spell: with daggers the tuned rules keep it.",
+     "The tuned rules never **Kick** (2026-11-15: about 0.4% to 1% faster per kill without it): a caster mob that stays back walks in once it has cast. Keep **Kick** for a caster that hits too hard.",
      "This build has no **Blade Flurry**, **Adrenaline Rush** or **Riposte**, so **Evasion** is your only cooldown when a pull goes wrong.",
      "Eat only below 40% health and bandage below 60%: the tuned rules measured eating that late about 4.2% faster per kill."
     ],
@@ -108,9 +108,9 @@
      "In a dungeon, where the tank holds the mob, stand behind it and build with **Backstab**; the fight lab only plays solo."
     ],
     "rotations": {
-     "leveling:combat-swords-raid": "395a598432df",
-     "leveling:combat-daggers-raid": "04f1e02086d3",
-     "leveling:subtlety-leveling": "713ef0f5f540"
+     "leveling:combat-swords-raid": "8fe993c1421f",
+     "leveling:combat-daggers-raid": "5d52a58e63af",
+     "leveling:subtlety-leveling": "923258fb1477"
     },
     "written": "2026-11-08"
    }
@@ -165,9 +165,9 @@
      "If a pull goes wrong, **Vanish** gets you out; the fight lab does not model adds or escapes."
     ],
     "rotations": {
-     "leveling:combat-swords-raid": "395a598432df",
-     "leveling:combat-daggers-raid": "04f1e02086d3",
-     "leveling:subtlety-leveling": "713ef0f5f540"
+     "leveling:combat-swords-raid": "8fe993c1421f",
+     "leveling:combat-daggers-raid": "5d52a58e63af",
+     "leveling:subtlety-leveling": "923258fb1477"
     },
     "written": "2026-11-15"
    }
@@ -177,11 +177,11 @@
     "plan": "Daggers (split) plays the dagger leveling list: **Garrote** from stealth, **Sinister Strike** to 5 points until **Mutilate** (level 40) takes over, then **Eviscerate**. Its last Subtlety points buy **Setup** and **Initiative**, which add combo points from dodges and from the opener.",
     "why": [
      "A mob you fight alone turns to face you after the opener, and **Backstab** needs you behind it, so the builder is **Sinister Strike** until you have **Mutilate**.",
-     "**Mutilate** hits with both daggers and gives 2 combo points for 60 energy, 20% more damage on a mob with your **Deadly Poison**: wait for the energy rather than fall back to **Sinister Strike**. The fight lab measured it about 1.2 seconds per kill at 60.",
+     "**Mutilate** hits with both daggers and gives 2 combo points for 60 energy (20% more on a mob your Deadly Poison is on, which the daggers rotation's tuned rules give up for Instant Poison on both weapons, the faster pair): wait for the energy rather than fall back to **Sinister Strike**. The fight lab measured it about 1.2 seconds per kill at 60.",
      "Open with **Garrote** from stealth: a combo point (2 with **Initiative**) and an 18-second bleed. The tuned rules never open with **Cheap Shot** (about 8% faster per kill): a stun deals no damage.",
      "**Setup** (levels 54-56) gives each dodge a 45% chance to add a combo point; the fight lab measured it the most valuable talent of this build at 60, about 2.4 seconds per kill. **Riposte** after a parry is your cheapest hit (10 energy for 150% weapon damage).",
      "**Eviscerate** at 5 points, or earlier when it would kill the mob. At 5 points **Relentless Strikes** always refunds 25 energy and **Ruthlessness** often adds a point back; press **Cold Blood** right before an **Eviscerate**, since your next builder would use it up otherwise.",
-     "Skip **Slice and Dice** (about 3% faster per kill without it). **Kidney Shot** is not in the list: the tuned rules never cast it (under 1% faster per kill). Keep it for an add or a pull that goes wrong. **Kick** a caster mob's spell.",
+     "Skip **Slice and Dice** (about 3% faster per kill without it). **Kidney Shot** is not in the list: the tuned rules never cast it (under 1% faster per kill). Keep it for an add or a pull that goes wrong. The tuned rules never **Kick** either (2026-11-15).",
      "Pull the next mob within 20 seconds of a kill: **Remorseless Attacks** gives your next builder 40% more crit chance."
     ],
     "caveats": [
@@ -195,9 +195,9 @@
      "In a dungeon, where the tank holds the mob, stand behind it and build with **Backstab**; the fight lab only plays solo."
     ],
     "rotations": {
-     "leveling:combat-swords-raid": "395a598432df",
-     "leveling:combat-daggers-raid": "04f1e02086d3",
-     "leveling:subtlety-leveling": "713ef0f5f540"
+     "leveling:combat-swords-raid": "8fe993c1421f",
+     "leveling:combat-daggers-raid": "5d52a58e63af",
+     "leveling:subtlety-leveling": "923258fb1477"
     },
     "written": "2026-10-26"
    },
@@ -251,9 +251,9 @@
      "If a pull goes wrong, **Vanish** gets you out; the fight lab does not model adds or escapes."
     ],
     "rotations": {
-     "leveling:combat-swords-raid": "395a598432df",
-     "leveling:combat-daggers-raid": "04f1e02086d3",
-     "leveling:subtlety-leveling": "713ef0f5f540"
+     "leveling:combat-swords-raid": "8fe993c1421f",
+     "leveling:combat-daggers-raid": "5d52a58e63af",
+     "leveling:subtlety-leveling": "923258fb1477"
     },
     "written": "2026-11-15"
    }

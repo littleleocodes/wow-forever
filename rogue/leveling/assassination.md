@@ -4,15 +4,15 @@
 
 **Leveling from level 1?** [The rotation level by level](assassination-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Assassination — Leveling](../research/leveling/builds/assassination-open-leveling.md)** (31/20/0) — [open the talent tree](https://talentsforever.com/rogue/60/02530021211451031-30232300020122--12)
+**[Assassination — Leveling](../research/leveling/builds/assassination-open-leveling.md)** (31/20/0) — [open the talent tree](https://talentsforever.com/rogue/60/02530021201551031-30232300020122--12)
 
-> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Assassination with Combat's weapon talents). A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Assassination with Combat's weapon talents), which stays below as the alternative. A model of the beta, to check at launch.
 
-**Signature spells:** 92% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Mutilate, Eviscerate, Venom, Deadly Poison, Instant Poison; this build never casts Rupture) (the spec's rule: at least 60%; **Mutilate** cast at level 60).
+**Signature spells:** 93% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Mutilate, Eviscerate, Venom, Deadly Poison, Instant Poison; this build never casts Rupture) (the spec's rule: at least 60%; **Mutilate** cast at level 60).
 
 ## How to play
 
-**Before the fight:** Daggers in both hands: **Instant Poison** on your main hand, **Deadly Poison** on your off hand. Stealth up behind the mob at full energy: **Poised** (level 18) makes your opener 10 energy cheaper.
+**Before the fight:** Daggers in both hands, **Instant Poison** on both. Stealth up behind the mob at full energy: **Poised** (level 18) makes your opener 10 energy cheaper.
 
 **In the fight**, top to bottom:
 
@@ -21,8 +21,7 @@
 3. **Sinister Strike** until you have 5 combo points; once your build has **Mutilate** (from about level 40), it replaces **Sinister Strike**: 2 points a press, so wait for its 60 energy. The mob faces you after the opener, so **Backstab** is out.
 4. At 5 points: **Eviscerate**; earlier when it would kill the mob.
 5. **Cold Blood** (a talent; 3-minute cooldown) right before an **Eviscerate** at 5 points.
-6. **Kick** a caster mob's spell.
-7. **Evasion** below half health while the mob still has more than 30% of its health.
+6. **Evasion** below half health while the mob still has more than 30% of its health.
 
 **Between fights:** Bandage below 60% health, eat below 40%.
 
@@ -37,7 +36,7 @@ Assassination levels with two daggers: **Garrote** from stealth, **Sinister Stri
 - Open with **Garrote** from stealth: a combo point and an 18-second bleed (**Blood Splatter** at 24 makes it 9 seconds longer). The tuned rules never open with **Cheap Shot** (about 8% faster per kill without it): it gives points and a stun but no damage, for 60 energy.
 - **Eviscerate** at 5 points, or earlier when it would kill the mob: points left on a dead mob are lost. **Cold Blood** (talent, level 25) makes the next **Sinister Strike**, **Mutilate** or **Eviscerate** a sure critical strike, but its cooldown is 3 minutes, about every eighth pull: press it right before an **Eviscerate** at 5 points so a builder does not use it up.
 - **Shank** (level 24) is a free strike that gives energy back every 10 seconds; with **Venom** (30) each **Shank** also makes your poisons hit 30% harder and land 20% more often for 6 seconds.
-- Keep **Instant Poison** on the main hand and **Deadly Poison** (level 30) on the off hand: every weapon strike can apply them, and **Deadly Poison** keeps the target poisoned for **Mutilate**'s bonus. **Vile Poisons** (26) and **Improved Poisons** (27-29, 32) make both stronger.
+- Keep **Instant Poison** on both weapons: every weapon strike can apply it. Deadly Poison (30) on the off hand would keep the mob poisoned for **Mutilate**'s 20% bonus, and the fight lab still kills about 1.5% faster with Instant Poison on both (the tuned rules, 2026-11-15). **Improved Poisons** (26-29, 32) makes it land more often.
 - **Relentless Strikes** (31-39) refunds 25 energy on some finishers and **Ruthlessness** (15-17) adds a point back; **Malice**, **Lethality** and **Remorseless Attacks** make the crits frequent. Pull the next mob within 20 seconds of a kill so the 40% crit chance from **Remorseless Attacks** is not wasted.
 - Skip **Slice and Dice**: fights end before it pays back (about 3% faster per kill without it).
 
@@ -46,7 +45,7 @@ Assassination levels with two daggers: **Garrote** from stealth, **Sinister Stri
 - Keep daggers in both hands: the build plays daggers, and **Mutilate** strikes with both weapons.
 - The points after level 40 go to Combat's talents (**Coup de Grace**, **Puncturing Wounds**, **Precision**, **Aggression**): they make **Eviscerate** and **Mutilate** hit harder and land more often.
 - **Kidney Shot** is not in the list: the tuned rules never cast it (under 1% faster per kill). Keep it for an add or a pull that goes wrong.
-- **Kick** a caster mob's spell: with daggers the tuned rules keep it.
+- The tuned rules never **Kick** (2026-11-15: about 0.4% to 1% faster per kill without it): a caster mob that stays back walks in once it has cast. Keep **Kick** for a caster that hits too hard.
 - This build has no **Blade Flurry**, **Adrenaline Rush** or **Riposte**, so **Evasion** is your only cooldown when a pull goes wrong.
 - Eat only below 40% health and bandage below 60%: the tuned rules measured eating that late about 4.2% faster per kill.
 
@@ -68,8 +67,7 @@ One point per level from 10, in this order:
 | 22-23 | Vigor (Assassination) | 2 |
 | 24 | Blood Splatter (Assassination) | 1 |
 | 25 | Cold Blood (Assassination) | 1 |
-| 26 | Vile Poisons (Assassination) | 1 |
-| 27-29 | Improved Poisons (Assassination) | 3 |
+| 26-29 | Improved Poisons (Assassination) | 4 |
 | 30 | Venom (Assassination) | 1 |
 | 31 | Relentless Strikes (Assassination) | 1 |
 | 32 | Improved Poisons (Assassination) | 1 |
@@ -92,18 +90,19 @@ One point per level from 10, in this order:
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
 | 20 | 20 | 16 |
-| 30 | 23 | 18 |
-| 40 | 24 | 20 |
-| 50 | 23 | 21 |
+| 30 | 22 | 18 |
+| 40 | 23 | 20 |
+| 50 | 23 | 20 |
 | 60 | 20 | 18 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
 ## Other builds of this spec
 
-- [Assassination (optimized)](../research/leveling/builds/opt-combat-daggers-raid-leveling-st.md) (31/18/2, 24 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/rogue/60/32531321221011031-00533300100102-002-12)
-- [Assassination (optimized, solo at 60)](../research/leveling/builds/opt-combat-swords-raid-solo-60.md) (33/16/2, 24 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/rogue/60/3253102025151003-323033001001-002-12)
+- [Leveling — Assassination with Combat's weapon talents](../research/leveling/builds/leveling-combat-swords.md) (31/20/0, 23 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/rogue/60/32530320111411031-32033321100101--12)
+- [Assassination (optimized)](../research/leveling/builds/opt-combat-daggers-raid-leveling-st.md) (31/18/2, 23 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/rogue/60/32531321221011031-00533300100102-002-12)
+- [Assassination (optimized)](../research/leveling/builds/opt-combat-swords-raid-leveling-st.md) (33/16/2, 24 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/rogue/60/3253102025151003-323033001001-002-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-15 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-16 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

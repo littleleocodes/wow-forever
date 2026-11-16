@@ -11,7 +11,7 @@
 
 ## Summary
 
-Level with the talents of the Protection raid build (protection-ml-tank) so you arrive at 60 ready to tank; the order is the fastest of three the fight lab raced (stats model's order: 29 s per kill over levels 20-60, the prot-leveling rotation).
+Level with the talents of the Protection raid build (protection-ml-tank) so you arrive at 60 ready to tank; the order is the fastest of three the fight lab raced (stats model's order: 30 s per kill over levels 20-60, the prot-leveling rotation).
 
 ## Point allocation
 
@@ -84,7 +84,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-11-15 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 29 s; own tree first 31 s; own tree last 29 s. First Protection point at level 10.
+- 2026-11-16 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 30 s; own tree first 31 s; own tree last 30 s. First Protection point at level 10.
 - Fight-lab numbers are a model of the beta, not in-game measurements.
 
 ## Open questions (verify in the live game)

@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Assassination leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the combat-daggers-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-daggers-raid). 
+The Assassination leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the combat-daggers-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-daggers-raid). 
 
 ## Point allocation
 
@@ -25,9 +25,8 @@ The Assassination leveling build the open leveling search found on 2026-11-15: e
 | **Vigor** | 2/2 | changed | Increases your maximum Energy by 10. |
 | **Blood Splatter** | 1/1 | **NEW** | Increases the duration of your Rupture ability by 6 seconds and your Garrote ability by 9 seconds. |
 | **Lethality** | 2/2 | changed | Grants 20% increased Critical Strike damage to your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities. |
-| **Vile Poisons** | 1/5 | moved | Increases the damage dealt by your poisons by 4% and gives your poisons an additional 8% chance to resist dispel effects. |
 | **Cold Blood** | 1/1 | changed | When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, Eviscerate, or Mutilate by 100%. |
-| **Improved Poisons** | 4/5 | changed | Increases the chance to apply Poisons to your target by 8%, and gives Poison applications a 40% chance to not consume a charge. |
+| **Improved Poisons** | 5/5 | changed | Increases the chance to apply Poisons to your target by 10%, and gives Poison applications a 50% chance to not consume a charge. |
 | **Relentless Strikes** | 5/5 | unchanged | Your finishing moves have a 20% chance per Combo Point to restore 25 Energy. |
 | **Venom** | 1/1 | **NEW** | Causes your Shank ability to increase your Poison damage by 30% and your chance to apply Poisons by 20% for 6 seconds. |
 | **Seal Fate** | 3/3 | moved | Your critical strikes from abilities that add Combo Points have a 100% chance to add an additional Combo Point. |
@@ -62,8 +61,7 @@ The Assassination leveling build the open leveling search found on 2026-11-15: e
 | 22-23 | Assassination | Vigor | 2 | 14/0/0 |
 | 24 | Assassination | Blood Splatter | 1 | 15/0/0 |
 | 25 | Assassination | Cold Blood | 1 | 16/0/0 |
-| 26 | Assassination | Vile Poisons | 1 | 17/0/0 |
-| 27-29 | Assassination | Improved Poisons | 3 | 20/0/0 |
+| 26-29 | Assassination | Improved Poisons | 4 | 20/0/0 |
 | 30 | Assassination | Venom | 1 | 21/0/0 |
 | 31 | Assassination | Relentless Strikes | 1 | 22/0/0 |
 | 32 | Assassination | Improved Poisons | 1 | 23/0/0 |
@@ -83,14 +81,14 @@ The Assassination leveling build the open leveling search found on 2026-11-15: e
 
 ## Core talents (priority order)
 
-1. **Mutilate** — +3.3 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Mutilate** — +3.0 s per kill at level 60 without it (removal, 3,000 fights).
 2. **Flawless Execution** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Seal Fate** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Relentless Strikes** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Remorseless Attacks** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Coup de Grace** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Venom** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Puncturing Wounds** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Venom** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Coup de Grace** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Seal Fate** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Remorseless Attacks** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Weapon Expertise** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Relentless Strikes** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -98,8 +96,9 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- +6.1% faster than the hand draft leveling-combat-swords, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 22.07; leveling-combat-swords 23.42, opt-combat-daggers-raid-leveling-st 23.77, opt-combat-swords-raid-leveling-st 24.36, opt-combat-swords-raid-solo-60 24.40. The search simulated 64,876 builds.
+- 2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Vile Poisons to Improved Poisons at 26 (gate: -0.1% seed 3, -0.3% seed 4, level-weighted time per kill).
+- +6.6% faster than the hand draft leveling-combat-swords, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 21.46; leveling-combat-swords 22.87, opt-combat-daggers-raid-leveling-st 23.38, opt-combat-swords-raid-leveling-st 23.77, opt-combat-swords-raid-solo-60 23.81. The search simulated 64,876 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 

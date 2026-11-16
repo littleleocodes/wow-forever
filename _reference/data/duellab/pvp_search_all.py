@@ -79,7 +79,15 @@ def main():
     for cls in sorted(F):
         if a.classes and cls not in a.classes:
             continue
-        for tree, refs in sorted(starts_for(cls, F[cls]).items(), key=lambda kv: list(F[cls]).index(kv[0])):
+        for attempt in range(6):   # a leveling lane may be rewriting the class's proposed-builds.json (2026-11-15): read it again
+            try:
+                starts = starts_for(cls, F[cls])
+                break
+            except json.JSONDecodeError:
+                if attempt == 5:
+                    raise
+                time.sleep(5)
+        for tree, refs in sorted(starts.items(), key=lambda kv: list(F[cls]).index(kv[0])):
             path = out_dir / f"{cls}-{tree.lower().replace(' ', '-')}.json"
             if path.exists() and json.load(open(path, encoding="utf-8")).get("round") == a.round:
                 print(f"== {cls} {tree}: done in this round", flush=True)

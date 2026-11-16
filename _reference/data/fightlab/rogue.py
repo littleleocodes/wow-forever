@@ -331,8 +331,15 @@ class RogueModule(BaseModule):
     DEATH_MARK_CP = 5
     DEATH_MARK_HP = 0.4
     GHOSTLY_GARROTE_HP = 0.5
+    # The poison on each hand (2026-11-15, search-improvements 0h; user: "go with your recs"), a rule knob: 0 = Instant Poison on the main
+    # hand and Deadly Poison on the off hand, the off hand bare until Deadly Poison is trained at 30 (the hand-written default); 1 = Instant
+    # on both hands; 2 = Instant on the main hand, the off hand Instant until Deadly is trained and Deadly after; 3 = Deadly on both hands
+    # from 30, Instant on both before; 4 = Deadly on the main hand and Instant on the off hand from 30, Instant on both before. A coat lasts
+    # many kills (60-250 charges at a 20-30% chance a hit), so the 3 s re-coat and the price are left out, as they always were for the main
+    # hand. A PvE choice: the duel lab keeps the default (duellab/duel.PVE_KNOBS).
+    POISONS = 0
     ROTATION_KNOBS = {"RUPTURE_HP": [1.01, 0.8, 0.6, 0.4], "DEATH_MARK_CP": [1, 3, 4, 5], "DEATH_MARK_HP": [0.0, 0.2, 0.4, 0.6],
-                      "GHOSTLY_GARROTE_HP": [1.01, 0.7, 0.5, 0.3]}
+                      "GHOSTLY_GARROTE_HP": [1.01, 0.7, 0.5, 0.3], "POISONS": [0, 1, 2, 3, 4]}
     # Death Mark's storage per combo point: an ASSUMPTION (the 70753 tooltip and Blizzard's notes give no number; Wowhead lists a 6 s periodic
     # aura of value 1 and a server-side script): 10% of the damage dealt to the marked mob per point (50% at 5 points), Garrote and Rupture at
     # twice the rate (100% at 5), times Coup de Grace's storage rate and damage bonus. A sensitivity, not a measurement.
@@ -410,7 +417,20 @@ class RogueModule(BaseModule):
         self.weapon_kind = "dagger" if self.mh_dagger else "1h"   # the same kind in both hands; "1h" is a sword (Hack and Slash: an extra attack)
         self._fight = None
         self.opened = False
-        self.armor_spell_used = "Instant Poison / Deadly Poison" if "Instant Poison" in self.spells else "none"
+        self.poison_hands()
+
+    def poison_hands(self):
+        """The poison each hand carries under the POISONS knob ({hand: poison name}; Deadly Poison only once this level knows it); called
+        again in make_player, after the rules have set the knob. on_swing looks the name up in self.spells at every hit, as it always did:
+        the duel lab's rogue (duellab/pvp_rogue.py) takes a poison out of mod.spells to free its hand, or both for a strike that applies none."""
+        ip, dp = "Instant Poison", "Deadly Poison" if self.book.get("Deadly Poison") is not None else "Instant Poison"
+        k = self.POISONS
+        self.poisons = ({"mh": ip, "oh": ip} if k == 1 else {"mh": ip, "oh": dp} if k == 2 else {"mh": dp, "oh": dp} if k == 3
+                        else {"mh": dp, "oh": ip} if k == 4 else {"mh": "Instant Poison", "oh": "Deadly Poison"})
+        if not k:
+            self.armor_spell_used = "Instant Poison / Deadly Poison" if "Instant Poison" in self.spells else "none"
+        else:
+            self.armor_spell_used = " / ".join(n if n in self.spells else "none" for n in (self.poisons["mh"], self.poisons["oh"]))
 
     def gcd_of(self, spell):
         g = self.NEW_GCD.get(spell.name)
@@ -438,6 +458,7 @@ class RogueModule(BaseModule):
 
     # ------------------------------------------------------------ character
     def make_player(self, level):
+        self.poison_hands()
         base = class_base_stats("rogue", level)
         g = gear_stats(level, self.gear, "rogue")
         strength = base["strength"] + g["strength"]
@@ -661,15 +682,16 @@ class RogueModule(BaseModule):
                 m.stun_until = max(m.stun_until, t + dur)
                 if m.casting(t):
                     m.cast_end = -1.0   # a stun breaks the mob's cast, as engine.apply_control does for a fixed stun
-        # poisons: Instant Poison on main-hand hits, Deadly Poison on off-hand hits
+        # poisons: each hand's coat (POISONS; by default Instant Poison on main-hand hits, Deadly Poison on off-hand hits)
         chance_bonus = self.tv("Improved Poisons", 0) / 100
         ven = p.buff("Venom", t)
         if ven:
             chance_bonus += ven["chance"]
-        ip, dp = self.spells.get("Instant Poison"), self.spells.get("Deadly Poison")
-        if hand == "mh" and ip is not None and fight.rng.random() < ip.poison_chance + chance_bonus:
-            self.poison_hit(fight, ip)
-        if hand == "oh" and dp is not None and fight.rng.random() < dp.poison_chance + chance_bonus:
+        ps = self.spells.get(self.poisons.get(hand))
+        if ps is not None and ps.name == "Instant Poison" and fight.rng.random() < ps.poison_chance + chance_bonus:
+            self.poison_hit(fight, ps)
+        if ps is not None and ps.name == "Deadly Poison" and fight.rng.random() < ps.poison_chance + chance_bonus:
+            dp = ps
             b = m.debuffs.get("Deadly Poison")
             stacks = min(5, (b["stacks"] if b and b["until"] > t else 0) + 1)
             m.debuffs["Deadly Poison"] = {"until": t + dp.dot_dur, "stacks": stacks}

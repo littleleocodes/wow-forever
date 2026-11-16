@@ -6,15 +6,15 @@ Row class's win rate against the column class:
 
 | | Warrior | Rogue | Priest | Hunter | Warlock | Paladin | Shaman | Druid | Mage | Mean |
 |---|---|---|---|---|---|---|---|---|---|---|
-| **Warrior** | - | 65% | 2% | 4% | 14% | 4% | 47% | 71% | 0% | 26% |
-| **Rogue** | 35% | - | 33% | 12% | 28% | 10% | 24% | 80% | 41% | 33% |
-| **Priest** | 98% | 67% | - | 92% | 88% | 10% | 42% | 100% | 100% | 74% |
-| **Hunter** | 96% | 88% | 8% | - | 8% | 41% | 98% | 99% | 87% | 66% |
-| **Warlock** | 86% | 72% | 12% | 92% | - | 11% | 8% | 6% | 100% | 48% |
-| **Paladin** | 96% | 90% | 90% | 59% | 89% | - | 21% | 68% | 98% | 77% |
-| **Shaman** | 52% | 75% | 58% | 3% | 92% | 79% | - | 97% | 17% | 59% |
-| **Druid** | 29% | 20% | 0% | 1% | 94% | 32% | 3% | - | 38% | 27% |
-| **Mage** | 100% | 59% | 1% | 12% | 0% | 2% | 83% | 62% | - | 40% |
+| **Warrior** | - | 65% | 2% | 4% | 14% | 4% | 50% | 71% | 0% | 26% |
+| **Rogue** | 35% | - | 33% | 12% | 28% | 11% | 24% | 80% | 41% | 33% |
+| **Priest** | 98% | 67% | - | 92% | 88% | 12% | 43% | 100% | 100% | 75% |
+| **Hunter** | 96% | 88% | 8% | - | 8% | 43% | 98% | 99% | 87% | 66% |
+| **Warlock** | 86% | 72% | 12% | 92% | - | 8% | 8% | 6% | 100% | 48% |
+| **Paladin** | 96% | 89% | 88% | 57% | 92% | - | 23% | 50% | 98% | 74% |
+| **Shaman** | 49% | 74% | 57% | 3% | 92% | 77% | - | 97% | 14% | 58% |
+| **Druid** | 29% | 20% | 0% | 1% | 94% | 50% | 3% | - | 38% | 29% |
+| **Mage** | 100% | 59% | 1% | 12% | 0% | 3% | 86% | 62% | - | 40% |
 
 Builds: Warrior `community:tf-arms`; Rogue `community:tf-hemo`; Priest `community:tf-shadow`; Hunter `community:tf-mm`; Warlock `community:tf-soul-link`; Paladin `community:tf-ret-prot`; Shaman `community:tf-enhancement`; Druid `community:tf-feral-resto`; Mage `community:tf-frost`.
 

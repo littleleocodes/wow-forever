@@ -101,9 +101,9 @@ What this build casts per kill ([report](../fightlab/elemental-dps.md), all leve
 | Melee | 1.1 | 1.6 | 1.5 | 1.6 | 1.6 | 5% |
 | Flame Shock | 0.8 | 0.8 | 0.9 | 0.9 | 0.9 | 14% |
 | Earth Shock | 0.4 | 0.8 | 0.8 | 0.8 | 0.7 | 11% |
-| Searing Totem | 0.6 | 0.6 | 0.6 | 0.6 | 0.6 | 4% |
+| Searing Totem | 0.6 | 0.7 | 0.6 | 0.6 | 0.6 | 4% |
 | Lightning Shield | 0.5 | 0.5 | 0.5 | 0.5 | 0.5 | 8% |
-| Windfury | 0.0 | 0.6 | 0.5 | 0.6 | 0.5 | 3% |
+| Windfury | 0.0 | 0.5 | 0.6 | 0.6 | 0.5 | 2% |
 
 ## Notes
 

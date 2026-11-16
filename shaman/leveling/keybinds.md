@@ -8,10 +8,10 @@ and [paladin](../../paladin/leveling/keybinds.md) layouts: Q the attack you pres
 save, the two thumb buttons the reactions, 1-4 the rest, the Shift bar the wider or rarer
 version of the key under it. Keys are for spells you press in a fight and for the things that help you there; buffs, food, drink, the
 mount and the Hearthstone have no key and are clicked between fights. It is built on the
-[Enhancement leveling page](enhancement.md): **this page is the Enhancement layout.** Elemental, Elemental-Enhancement and Restoration move a few
+[Enhancement leveling page](enhancement.md): **this page is the Enhancement layout.** Elemental and Restoration move a few
 spells (Elemental puts Lightning Bolt on Q and Earth Shock on R, Restoration frees R and holds Nature's Swiftness and Mana Tide Totem on 3 and 4):
 their keys are in the "Keybinds by level" table of their own by-level guide ([Elemental](elemental-by-level.md),
-[Elemental-Enhancement](elemental-enhancement-by-level.md), [Restoration](restoration-by-level.md)).
+[Restoration](restoration-by-level.md)).
 
 **Which spell is on each key at your level:** the "Keybinds by level" tables of the
 [Enhancement level-by-level guide](enhancement-by-level.md). This page is the layout at 60, the setup and the macros.

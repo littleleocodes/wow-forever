@@ -300,7 +300,7 @@
  "rogue": {
   "combat-swords-raid": {
    "before": [
-    "**Instant Poison** on your main hand, **Deadly Poison** on your off hand.",
+    "**Instant Poison** on both weapons.",
     "Stealth up behind the mob at full energy: **Poised** (level 18) makes your opener 10 energy cheaper."
    ],
    "steps": [
@@ -320,7 +320,7 @@
   },
   "combat-daggers-raid": {
    "before": [
-    "Daggers in both hands: **Instant Poison** on your main hand, **Deadly Poison** on your off hand.",
+    "Daggers in both hands, **Instant Poison** on both.",
     "Stealth up behind the mob at full energy: **Poised** (level 18) makes your opener 10 energy cheaper."
    ],
    "steps": [
@@ -330,7 +330,6 @@
     "At 5 points: **Eviscerate**; earlier when it would kill the mob.",
     "**Cold Blood** (a talent; 3-minute cooldown) right before an **Eviscerate** at 5 points.",
     "**Riposte** after you parry.",
-    "**Kick** a caster mob's spell.",
     "**Evasion** below half health while the mob still has more than 30% of its health."
    ],
    "between": [
@@ -339,7 +338,7 @@
   },
   "subtlety-leveling": {
    "before": [
-    "Daggers in both hands: **Instant Poison** on your main hand, **Deadly Poison** on your off hand.",
+    "Daggers in both hands, **Instant Poison** on both.",
     "Stealth up behind the mob at full energy: **Poised** (level 18) makes your opener 10 energy cheaper.",
     "**Premeditation** for two free combo points."
    ],
@@ -362,7 +361,7 @@
  "shaman": {
   "enhancement-dps": {
    "before": [
-    "**Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30), a slow two-handed weapon.",
+    "**Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30, **Rockbiter Weapon** again from 54), a slow two-handed weapon.",
     "Walk in without an opening **Lightning Bolt** (its mana costs more drinking than it saves) and drop **Searing Totem** as you pull while you have more than half your mana."
    ],
    "steps": [

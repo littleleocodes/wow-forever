@@ -232,3 +232,12 @@ necessary").
     our builds, the community's and the seed. The search's last step now races the winner and every start on the same duels
     (seed 3, 240 a matchup, the record's `race`), so the report compares them on equal terms. One tree at a time. The worker count
     is read from `deep-runs/pvp1115/workers` before each tree.
+- 2026-11-15 22:52, the search queue stopped and restarted on corrected data. It had run one tree (druid Balance, 21:15-22:41) and
+  part of a second when the poison and imbue check (user: "Go full power, go with your recs") found eight spell ranks at Wowhead's
+  MaxLevel numbers in forever-spells. The duel lab plays them at 60: Windfury Weapon rank 4 433 extra attack power for the client's
+  333, Seal of Command rank 5's judgement +14%, Seal of Fury rank 7's +10%, Holy Nova rank 6's heal +2%. Fixed in
+  `live_spells.to_level60` (it brings referenced spells' numbers to 60 now), forever-spells rebuilt. The Balance record moved to
+  `deep-runs/pvp1115/stale/`. `deep-runs/pvp_restart_1115.sh` waits for the leveling lane's rules tunes (rogue, shaman, paladin:
+  the duel lab plays a rules file's knobs outside `duel.PVE_KNOBS`), runs the matrix, then the queue at Idle on 10 of 12 cores
+  (BelowNormal once the lane ends). New PvE knobs kept out of duels: POISONS (pvp_rogue.py puts its own Crippling or Wound Poison
+  on the hand the default leaves free), IMBUE_EARLY, IMBUE_LATE, IMBUE_TOP, IMBUE_TOP_FROM (Windfury at 60).

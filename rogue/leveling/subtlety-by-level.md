@@ -200,9 +200,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Poised** (18) makes the opener 10 energy cheaper.
 - **Rupture** (20) is never cast: the points are worth more as **Eviscerate**.
 - **Serrated Blades** (20-22): your attacks ignore part of the mob's armor.
-- Put **Instant Poison** on your main hand once you have it (20).
+- Put **Instant Poison** on both weapons once you have it (20).
 
-*Fight lab, seconds per kill: 18 at level 18, 18 at level 20. Presses per kill at level 18: Melee 5.9, Melee (off-hand) 5.3, Sinister Strike 2.4, Ambush 1.0, Eviscerate 0.7.*
+*Fight lab, seconds per kill: 18 at level 18, 17 at level 20. Presses per kill at level 18: Melee 5.9, Melee (off-hand) 5.3, Sinister Strike 2.4, Ambush 1.0, Eviscerate 0.7.*
 
 ## Levels 22-23: Vanish, and Garrote rank 2
 
@@ -229,7 +229,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Vanish** (22) is the emergency exit: the mob loses you, and you walk away.
 - **Initiative** (23): your opener may add a second combo point.
 
-*Fight lab, seconds per kill: 19 at level 22. Presses per kill at level 22: Melee 6.2, Melee (off-hand) 5.6, Sinister Strike 2.7, Ambush 0.7, Eviscerate 0.7, Garrote 0.3.*
+*Fight lab, seconds per kill: 19 at level 22. Presses per kill at level 22: Melee 6.0, Melee (off-hand) 5.4, Sinister Strike 2.7, Ambush 0.7, Eviscerate 0.6, Garrote 0.3.*
 
 ## Level 24: Premeditation and Shank
 
@@ -287,7 +287,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Cheap Shot** (26): the rotation opens with it only when neither **Ambush** nor **Garrote** can go, which the fight lab never saw.
 - **Opportunity** (28-29) makes **Garrote** and **Ambush** hit harder.
 
-*Fight lab, seconds per kill: 19 at level 25. Presses per kill at level 25: Melee 6.2, Melee (off-hand) 5.7, Sinister Strike 2.1, Shank 1.5, Eviscerate 0.8, Ghostly Strike 0.8, Ambush 0.7, Garrote 0.4, Premeditation 0.1.*
+*Fight lab, seconds per kill: 19 at level 25. Presses per kill at level 25: Melee 6.2, Melee (off-hand) 5.6, Sinister Strike 2.0, Shank 1.5, Eviscerate 0.8, Ghostly Strike 0.8, Ambush 0.7, Garrote 0.4, Premeditation 0.1.*
 
 ## Levels 30-34: Hemorrhage
 
@@ -315,12 +315,12 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - Q keeps its job: change the Q macro's spell to **Hemorrhage** (the [macros page](../macros.md) has it). **Hemorrhage** also makes your **Garrote** bleed 15% harder for 15 seconds.
 - **Garrote** rank 3 (30) makes the bleed bigger still: at 30 the fight lab opens with it on almost every pull. **Ambush** rank 3 (34) tips most pulls back to **Ambush**.
-- **Deadly Poison** (30) on your off hand, **Instant Poison** on your main hand: buffs you reapply between fights, no key.
+- **Instant Poison** stays on both weapons: Deadly Poison (30) on the off hand measured about 1% slower per kill in the fight lab (the tuned rules, 2026-11-15). A buff you reapply between fights, no key.
 - **Kidney Shot** (30): off. The tuned rotation never casts it.
 - **Preparation** (31): when you need **Evasion** and it is on cooldown, Preparation resets it (and your other cooldowns). The fight lab never needed it.
 - The last point of **Improved Ambush** (33) adds crit to **Ambush**; **Dirty Tricks** (34) makes **Sap** and **Blind** cheaper. **Blind** (34) handles a second mob that joins mid-fight.
 
-*Fight lab, seconds per kill: 21 at level 30. Presses per kill at level 30: Melee 6.9, Melee (off-hand) 6.5, Hemorrhage 3.0, Shank 1.5, Eviscerate 1.1, Garrote 0.9, Ghostly Strike 0.9, Premeditation 0.2, Ambush 0.2.*
+*Fight lab, seconds per kill: 21 at level 30. Presses per kill at level 30: Melee 6.9, Melee (off-hand) 6.4, Hemorrhage 3.0, Shank 1.5, Eviscerate 1.1, Garrote 0.9, Ghostly Strike 0.8, Premeditation 0.2, Ambush 0.2.*
 
 ## Levels 35-39: Boot Knife
 
@@ -345,7 +345,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Boot Knife** takes a point a level: a 20% chance a point, a sure 2 combo points at 39.
 - At 35 the fight lab opens with **Ambush** on about two pulls in three. **Garrote** rank 4 (38) makes the bleed bigger again, and from 40 the fight lab opens with **Garrote** on every pull.
 
-*Fight lab, seconds per kill: 22 at level 35. Presses per kill at level 35: Melee 7.3, Melee (off-hand) 6.7, Hemorrhage 2.6, Shank 1.6, Eviscerate 1.3, Ghostly Strike 0.8, Ambush 0.6, Garrote 0.5, Premeditation 0.2.*
+*Fight lab, seconds per kill: 21 at level 35. Presses per kill at level 35: Melee 7.1, Melee (off-hand) 6.6, Hemorrhage 2.6, Shank 1.6, Eviscerate 1.3, Ghostly Strike 0.8, Ambush 0.6, Garrote 0.5, Premeditation 0.2.*
 
 ## Levels 40-60: Death Mark
 
@@ -376,7 +376,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Coup de Grace** (41-43) makes **Eviscerate** and **Death Mark** stronger. **Lightning Reflexes** (44-45) is dodge, and with **Setup** a dodge can be a combo point. **Precision** (46-48) is hit; **Efficient Strikes** (49-50) makes **Hemorrhage** cheaper.
 - **Puncturing Wounds** (51-52) is two tier points on the way to **Weapon Expertise** (57-58) and **Aggression** (59-60): this list casts no **Backstab** or **Mutilate**. **Lightning Reflexes** (53) takes its third point: more dodge. **Composure** (54-55) and **Flawless Execution** (56) make the opener and **Eviscerate** cheaper.
 
-*Fight lab, seconds per kill: 24 at level 40, 23 at level 50, 22 at level 60. Presses per kill at level 40: Melee 8.4, Melee (off-hand) 8.0, Hemorrhage 3.4, Shank 2.0, Garrote 1.1, Ghostly Strike 1.0, Death Mark 1.0, Eviscerate 0.9, Premeditation 0.2.*
+*Fight lab, seconds per kill: 24 at level 40, 23 at level 50, 22 at level 60. Presses per kill at level 40: Melee 8.2, Melee (off-hand) 7.8, Hemorrhage 3.4, Shank 1.9, Garrote 1.0, Ghostly Strike 1.0, Death Mark 1.0, Eviscerate 0.9, Premeditation 0.2.*
 
 ## Between fights
 
@@ -389,4 +389,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - The Combat-Subtlety split plays this same rotation with Combat's weapon talents and is faster in the fight lab; Combat with swords is the rogue's fastest leveling spec. Both have pages in this folder.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-15: the stages are hand-kept in `_reference/data/level-guides/rogue.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-16: the stages are hand-kept in `_reference/data/level-guides/rogue.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

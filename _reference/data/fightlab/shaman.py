@@ -20,8 +20,9 @@ import pathlib
 import re
 
 from engine import parse_interrupt, BaseModule, Player, Spell, Weapon
-from tables import (DEATH_TIME, GCD, MELEE_RANGE, WEAPON_SPEED, class_attack_power, class_base_health, class_base_mana, class_base_stats, class_dodge,
-                    class_health_regen_tick, class_mana_regen_tick, class_melee_crit, class_spell_crit, gear_stats, weapon_dps)
+from tables import (DEATH_TIME, GCD, MELEE_RANGE, PARTIAL_RESIST_LOSS, SPELL_HIT_CAP, WEAPON_SPEED, class_attack_power, class_base_health,
+                    class_base_mana, class_base_stats, class_dodge, class_health_regen_tick, class_mana_regen_tick, class_melee_crit,
+                    class_spell_crit, gear_stats, rank_amounts, spell_miss, weapon_dps)
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 SPELLBOOK = json.load(open(ROOT / "_reference/data/forever-spells/shaman.json", encoding="utf-8"))
@@ -42,6 +43,13 @@ ROCK = re.compile(r"increasing melee attack power by (\d+)")
 WF_ICD = 1.5
 WIND = re.compile(r"(\d+)% chance of granting you (\d) extra attacks with (\d+) extra melee attack power")
 FLAME_W = re.compile(r"Each (?:main hand )?hit causes (\d+) to (\d+) additional Fire damage")   # Flametongue Totem ranks 2-4: "Each main hand hit" (lint, 2026-10-18)
+# Flametongue Weapon's damage by weapon speed: the tooltip's X to Y spans swings of 1.3 to 4.0 s, linear in the speed (the raid simulator's
+# weapon_imbues.go: 16344's m1 per 100 s of swing plus 10444's base; every main-hand hit, no roll)
+FT_SPEEDS = (1.3, 4.0)
+FROST_W = re.compile(r"Each hit has a chance of causing (\d+) additional Frost damage")
+# Frostbrand Weapon's chance: 9 procs a minute of swinging, an ASSUMPTION (the tooltip says "a chance"; the raid simulator's
+# spell_overrides.go carries Classic's 9 as "Vanilla value - verify in-game"); the 25% slow is not modelled (mobs run only in a sensitivity)
+FROSTBRAND_PPM = 9.0
 SHIELD = re.compile(r"struck for (\d+) Nature damage")
 SEARING = re.compile(r"for (\d+) sec that repeatedly attacks an enemy within (\d+) yards for (\d+) to (\d+) Fire damage")
 CLAW = re.compile(r"Stoneclaw Totem with (\d+) health at the feet of the caster for (\d+) sec")
@@ -129,6 +137,9 @@ def load_spellbook():
                     s.kind, s.wf_chance, s.wf_attacks, s.wf_ap = "buff", float(wf.group(1)) / 100, int(wf.group(2)), float(wf.group(3))
                 if ft:
                     s.kind, s.ft_min, s.ft_max = "buff", float(ft.group(1)), float(ft.group(2))
+                fb = FROST_W.search(txt)
+                if fb:   # the kind stays as it was (a Frostbrand Weapon in the book changed nothing before the IMBUE knobs)
+                    s.fb_dmg = float(fb.group(1))
                 if sh:
                     s.kind, s.shield_dmg = "buff", float(sh.group(1))
                 if se:
@@ -250,7 +261,8 @@ FIT = {
     "Purification": "scale",
 }
 SHARE_SOURCE = {'Chain Lightning': 'chain_lightning', 'Fire Nova': 'fire_nova', 'Magma Totem': 'magma', "Melee": "white", "Windfury": "windfury", "Earth Shock": "earth_shock", "Lightning Bolt": "lightning_bolt", "Flame Shock": "flame_shock",
-                "Lightning Shield": "lightning_shield", "Stormstrike": "stormstrike", "Searing Totem": "searing_totem", "Flametongue Weapon": "rockbiter"}
+                "Lightning Shield": "lightning_shield", "Stormstrike": "stormstrike", "Searing Totem": "searing_totem", "Flametongue Weapon": "rockbiter",
+                "Frostbrand Weapon": "rockbiter"}
 NEW_SOURCES = {'chain_lightning': {'id': 'chain_lightning', 'share': 0.0, 'min_level': 32, 'tags': ['type:spell', 'school:nature', 'aoe', 'ability:Chain Lightning', 'enh-nature'], 'cast': 2.5, 'min_cast': 2.0}, 'fire_nova': {'id': 'fire_nova', 'share': 0.0, 'min_level': 12, 'tags': ['type:spell', 'school:fire', 'instant', 'aoe', 'ability:Fire Nova', 'ability:Fire Nova Totem', 'totem']}, 'magma': {'id': 'magma', 'share': 0.0, 'min_level': 26, 'tags': ['type:spell', 'school:fire', 'dot', 'aoe', 'ability:Magma Totem', 'totem']}, "stormstrike": {"id": "stormstrike", "share": 0.0, "min_level": 25, "tags": ["type:melee", "yellow", "school:physical", "ability:Stormstrike", "weapon:2h"], "cooldown": 8},
                "searing_totem": {"id": "searing_totem", "share": 0.0, "min_level": 10, "tags": ["type:spell", "school:fire", "ability:Searing Totem", "ability:Fire Totems", "totem"], "can_crit": True}}
 KEY_TALENTS = ["Stormstrike", "Flurry", "Maelstrom Weapon"]
@@ -293,10 +305,22 @@ MW_PPM_BY_RANK = (0.0, 6.0, 7.0, 8.0, 9.0, 10.0)
 class ShamanModule(BaseModule):
     resource = "mana"
     melee = True
-    IMBUE = "auto"   # "auto" = Windfury from 30, Rockbiter before; "rockbiter" / "windfury" / "flametongue" to test
+    IMBUE = "auto"   # "auto" = the IMBUE_* knobs; "rockbiter" / "windfury" / "flametongue" / "frostbrand" to force one
+    # The weapon imbue (2026-11-15, search-improvements 0h; user: "go with your recs"), rule knobs by level: IMBUE_EARLY before Windfury
+    # Weapon is trained (30), IMBUE_LATE from then on, IMBUE_TOP from IMBUE_TOP_FROM (with the imbues' numbers at their level, Rockbiter
+    # overtook Windfury for the Enhancement page build at 50-60: 1-2% per kill, Windfury ahead at 30-48). The defaults are the
+    # hand-written Rockbiter, then Windfury (IMBUE_TOP "windfury" changes nothing). An imbue the level does not know yet (Flametongue 10,
+    # Frostbrand 20) falls back to Rockbiter. Chosen in make_player, after the rules have set the knobs. A PvE choice: the duel lab keeps
+    # the defaults (duellab/duel.PVE_KNOBS).
+    IMBUE_EARLY = "rockbiter"
+    IMBUE_LATE = "windfury"
+    IMBUE_TOP = "windfury"
+    IMBUE_TOP_FROM = 50
     CL_SINGLE = 0          # Elemental: Chain Lightning on a single mob (0 never, 1 under Lightning Mastery, 2 whenever ready)
     CL_SINGLE_MANA = 0.5   # ... only above this share of the mana
-    ROTATION_KNOBS = {"CL_SINGLE": [0, 1, 2], "CL_SINGLE_MANA": [0.0, 0.3, 0.5, 0.7]}   # tuned by rotation_opt.py ("knobs" in rotations/shaman-<spec>.json)
+    ROTATION_KNOBS = {"CL_SINGLE": [0, 1, 2], "CL_SINGLE_MANA": [0.0, 0.3, 0.5, 0.7],   # tuned by rotation_opt.py ("knobs" in rotations/shaman-<spec>.json)
+                      "IMBUE_EARLY": ["rockbiter", "flametongue", "frostbrand"], "IMBUE_LATE": ["windfury", "rockbiter", "flametongue", "frostbrand"],
+                      "IMBUE_TOP": ["windfury", "rockbiter", "flametongue", "frostbrand"], "IMBUE_TOP_FROM": [40, 50, 54]}
 
     AOE = {'direct': ['Chain Lightning', 'Fire Nova', 'Magma Totem'], 'dots': ['Flame Shock'], 'min_near': 2}
 
@@ -322,18 +346,43 @@ class ShamanModule(BaseModule):
         self._base_mana = 0.0
         self.flurry_swings = 0
         self.fire_totem = None   # the active Fire totem: {"name", "until"} (+ Searing Totem's shot), for Fire Nova and one-Fire-totem rules
-        self.imbue = self.pick_imbue()
+        self.set_imbue()
+
+    def set_imbue(self):
+        """The imbue on the weapon (pick_imbue) and the report's label; again in make_player, after the rules have set the knobs."""
+        self.imbue = self.level_imbue(self.pick_imbue())
         self.armor_spell_used = f"{self.imbue.name if self.imbue else 'no imbue'}, Lightning Shield" if "Lightning Shield" in self.spells else "none"
 
+    def level_imbue(self, imb):
+        """The imbue's numbers at the shaman's level (2026-11-15): Rockbiter's and Windfury's attack power, Flametongue's per-swing amount
+        and Frostbrand's damage live in the spells the imbue references and grow with the level inside a rank like any spell
+        (spell_scaling.json's referenced rows, tables.rank_amounts; Rockbiter rank 5: 212 attack power at 34, 355 from 42). Before, every
+        rank read its tooltip's top number from the level it is trained. The tooltip's numbers stay when the rows are missing."""
+        if imb is None:
+            return None
+        am = rank_amounts("shaman", imb.name, imb.level, self.level)
+        if not am:
+            return imb
+        s = copy.copy(imb)
+        if "attack_power" in am and getattr(s, "wf_chance", 0.0):
+            s.wf_ap = float(am["attack_power"])
+        elif "attack_power" in am and getattr(s, "imbue_ap", 0.0):
+            s.imbue_ap = float(am["attack_power"])
+        if "proc" in am and getattr(s, "ft_max", 0.0):
+            s.ft_per_100s = float(am["proc"])
+        if "direct" in am and getattr(s, "fb_dmg", 0.0):
+            s.fb_dmg = float(am["direct"])
+        return s
+
     def pick_imbue(self):
-        wf, rb, ft = self.spells.get("Windfury Weapon"), self.spells.get("Rockbiter Weapon"), self.spells.get("Flametongue Weapon")
-        if self.IMBUE == "rockbiter":
-            return rb
-        if self.IMBUE == "windfury":
-            return wf or rb
-        if self.IMBUE == "flametongue":
-            return ft or rb
-        return wf if wf is not None else rb
+        wf, rb = self.spells.get("Windfury Weapon"), self.spells.get("Rockbiter Weapon")
+        by = {"rockbiter": rb, "windfury": wf, "flametongue": self.spells.get("Flametongue Weapon"),
+              "frostbrand": self.spells.get("Frostbrand Weapon")}
+        if self.IMBUE != "auto":
+            return by.get(self.IMBUE) or rb
+        if wf is None:
+            return by.get(self.IMBUE_EARLY) or rb
+        return by.get(self.IMBUE_TOP if self.level >= self.IMBUE_TOP_FROM else self.IMBUE_LATE) or rb
 
     # ------------------------------------------------------------ talent helpers
     def rank(self, name):
@@ -357,6 +406,7 @@ class ShamanModule(BaseModule):
 
     # ------------------------------------------------------------ character
     def make_player(self, level):
+        self.set_imbue()
         base = class_base_stats("shaman", level)
         g = gear_stats(level, self.gear, "shaman-caster" if self.spec.startswith("elemental") else "shaman")   # caster row (audit 2026-10-18 row 65)
         strength = base["strength"] + g["strength"]
@@ -575,9 +625,16 @@ class ShamanModule(BaseModule):
                     fight.resolve_attack(Spell("Windfury", "physical", kind="melee", resource="none"), white=True, hand="mh")
                 p.attack_power -= bonus
                 fight._wf = False
-            elif getattr(imb, "ft_max", 0.0):
-                dmg = fight.rng.uniform(imb.ft_min, imb.ft_max) * (1 + self.tv("Elemental Weapons", 2) / 100)
-                fight.deal(Spell("Flametongue Weapon", "fire"), dmg, False)
+            elif getattr(imb, "ft_max", 0.0) and hand == "mh":
+                if getattr(imb, "ft_per_100s", 0.0):   # the raid simulator's perSwing x speed / 100 (the attack's own base is 0)
+                    dmg = imb.ft_per_100s * p.mh.speed / 100.0
+                else:
+                    lo, hi = FT_SPEEDS
+                    dmg = imb.ft_min + (imb.ft_max - imb.ft_min) * (min(hi, max(lo, p.mh.speed)) - lo) / (hi - lo)
+                self.imbue_proc(fight, "Flametongue Weapon", "fire", dmg * (1 + self.tv("Elemental Weapons", 2) / 100))
+            elif (getattr(imb, "fb_dmg", 0.0) and hand == "mh"
+                  and fight.rng.random() < min(1.0, FROSTBRAND_PPM * p.mh.speed / 60.0)):
+                self.imbue_proc(fight, "Frostbrand Weapon", "frost", imb.fb_dmg * (1 + self.tv("Elemental Weapons", 2) / 100))
         if self.rank("Maelstrom Weapon") and fight.rng.random() < min(1.0, self.mw_ppm() * p.mh.speed / 60.0):
             b = p.buffs.get("Maelstrom Weapon")
             stacks = min(5, (b["stacks"] if b and b["until"] > t else 0) + 1)
@@ -587,6 +644,21 @@ class ShamanModule(BaseModule):
             # Improved Stormstrike: "a 50% (100% at 2/2) chance to gain 50% mana regeneration while casting spells for 15 sec"
             if self.rank("Improved Stormstrike") and fight.rng.random() < self.tv("Improved Stormstrike", 0) / 100:
                 p.buffs["Improved Stormstrike"] = {"until": t + self.tv("Improved Stormstrike", 2)}
+
+    def imbue_proc(self, fight, name, school, base):
+        """A weapon imbue's damage (Flametongue, Frostbrand): rolled like a spell, as the raid simulator's OutcomeMagicHitAndCrit (engine
+        resolve_spell's hit, crit and multipliers), without counting a cast or firing on_hit."""
+        p, m = fight.p, fight.m
+        sp = Spell(name, school)
+        if fight.rng.random() > min(SPELL_HIT_CAP, 1.0 - spell_miss(m.level - p.level) + self.hit_bonus(sp) + p.spell_hit):
+            fight.note(f"{name} MISS")
+            return
+        crit = fight.rng.random() < p.spell_crit + self.crit_bonus(sp, False)
+        amount = base * self.damage_multiplier(sp, False) * (1.0 - PARTIAL_RESIST_LOSS * self.resist_factor())
+        if crit:
+            amount *= 1.5 + self.crit_damage_bonus(sp)
+        fight.deal(sp, amount, crit)
+        fight.note(f"{name}{' CRIT' if crit else ''} {amount:.0f} -> mob {max(0, m.hp):.0f}")
 
     def stormstrike_reset(self, fight):
         """Improved Stormstrike: "Stormstrike's cooldown has a 50% (100% at 2/2) chance to reset each time you Dodge or Parry"."""

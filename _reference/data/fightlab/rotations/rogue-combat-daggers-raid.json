@@ -8,12 +8,18 @@
   },
   "Kidney Shot": {
    "off": true
+  },
+  "Kick": {
+   "off": true
   }
  },
  "eat_below": 0.4,
+ "knobs": {
+  "POISONS": 1
+ },
  "class": "rogue",
  "spec": "combat-daggers-raid",
- "build": "opt-combat-daggers-raid-leveling-st",
+ "build": "assassination-open-leveling",
  "levels": [
   20,
   30,
@@ -21,98 +27,86 @@
   50,
   60
  ],
- "date": "2026-11-03",
+ "date": "2026-11-15",
  "signature": {
   "required": [
    "Mutilate"
   ],
   "build_spec": "Assassination",
   "dropped_saved_rules": [],
-  "core_share_before": 0.9495156284845359,
-  "core_share_after": 0.8545826786290472,
+  "core_share_before": 0.9222305993570817,
+  "core_share_after": 0.9277472570333319,
   "min_share": 0.6,
-  "floor_reached": null
+  "floor_reached": null,
+  "played_before": true,
+  "played_after": true
  },
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "never cast Cheap Shot",
+   "change": "POISONS = 1",
    "rule": [
-    "off",
-    "Cheap Shot",
-    true
+    "knob",
+    "POISONS",
+    1
    ],
-   "gain_seed1": 0.07803886550902561,
-   "gain_seed2": 0.07916637571831242
+   "gain_seed1": 0.014345133109467056,
+   "gain_seed2": 0.01683761187373667
   },
   {
    "round": 2,
-   "change": "eat below 40% health",
-   "rule": [
-    "eat_below",
-    null,
-    0.4
-   ],
-   "gain_seed1": 0.041568808148719216,
-   "gain_seed2": 0.04221065095269427
-  },
-  {
-   "round": 3,
-   "change": "never cast Slice and Dice",
+   "change": "never cast Kick",
    "rule": [
     "off",
-    "Slice and Dice",
+    "Kick",
     true
    ],
-   "gain_seed1": 0.0331559909855913,
-   "gain_seed2": 0.02485328132126452
-  },
-  {
-   "round": 4,
-   "change": "never cast Kidney Shot",
-   "rule": [
-    "off",
-    "Kidney Shot",
-    true
-   ],
-   "gain_seed1": 0.004189859101926707,
-   "gain_seed2": 0.004665264119300794
+   "gain_seed1": 0.004255335384776404,
+   "gain_seed2": 0.009479736253878879
   }
  ],
- "weighted_before": 26.154794378455694,
- "weighted_after": 22.428534999919155,
+ "weighted_before": 22.06656833323577,
+ "weighted_after": 21.455758358279642,
  "per_level": {
   "20": {
-   "before": 17.641308186480057,
-   "after": 17.21616666658197,
+   "before": 20.401733333213915,
+   "after": 19.91216666655158,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 23.905102765143816,
-   "after": 19.879999999885676,
+   "before": 22.583666666556073,
+   "after": 21.810199999865645,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 26.59689623651266,
-   "after": 21.8511666665337,
+   "before": 23.67489999992694,
+   "after": 23.210466666577002,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 27.589580994375908,
-   "after": 23.65649999992658,
+   "before": 23.225099999914235,
+   "after": 22.66983343344003,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 28.62707883046537,
-   "after": 24.8018666666324,
+   "before": 20.325299999890074,
+   "after": 19.611533333230767,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
+ },
+ "retune": {
+  "times": {
+   "saved": 22.067,
+   "continued": 21.456
+  },
+  "installed": "continued",
+  "reference_ok": true
  }
 }

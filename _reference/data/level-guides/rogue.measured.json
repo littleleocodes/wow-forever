@@ -1,6 +1,6 @@
 {
  "class": "rogue",
- "date": "2026-11-15",
+ "date": "2026-11-16",
  "fights": 400,
  "seed": 3,
  "guides": {
@@ -8,7 +8,7 @@
    "build": "combat-open-leveling",
    "rotation": "combat-swords-raid",
    "provisional_order": false,
-   "fingerprint": "4cc9afc0d4f4",
+   "fingerprint": "ff30c7919b52",
    "levels": {
     "1": {
      "seconds": 9.1,
@@ -61,14 +61,14 @@
      }
     },
     "20": {
-     "seconds": 18.7,
+     "seconds": 18.5,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 4.47,
-      "Sinister Strike": 2.95,
+      "Melee": 4.43,
+      "Sinister Strike": 2.93,
       "Melee (off-hand)": 3.83,
-      "Eviscerate": 0.4
+      "Eviscerate": 0.38
      }
     },
     "21": {
@@ -76,106 +76,106 @@
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 4.45,
-      "Sinister Strike": 2.91,
-      "Melee (off-hand)": 3.83,
+      "Melee": 4.46,
+      "Sinister Strike": 2.9,
+      "Melee (off-hand)": 3.89,
       "Riposte": 0.57,
-      "Eviscerate": 0.34
+      "Eviscerate": 0.35
      }
     },
     "24": {
-     "seconds": 18.5,
+     "seconds": 18.2,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 4.25,
-      "Shank": 1.33,
-      "Melee (off-hand)": 3.81,
-      "Riposte": 0.62,
+      "Melee": 4.19,
+      "Shank": 1.29,
+      "Melee (off-hand)": 3.71,
+      "Riposte": 0.61,
       "Sinister Strike": 3.44,
-      "Eviscerate": 0.51
+      "Eviscerate": 0.48
      }
     },
     "29": {
-     "seconds": 19.4,
+     "seconds": 19.2,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 4.55,
-      "Shank": 1.36,
-      "Melee (off-hand)": 4.12,
-      "Sinister Strike": 3.89,
+      "Melee": 4.47,
+      "Shank": 1.32,
+      "Melee (off-hand)": 4.01,
+      "Sinister Strike": 3.86,
       "Eviscerate": 0.86,
       "Riposte": 0.45
      }
     },
     "30": {
-     "seconds": 18.8,
+     "seconds": 18.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 4.33,
+      "Melee": 4.34,
       "Shank": 1.27,
-      "Melee (off-hand)": 3.9,
-      "Sinister Strike": 3.81,
-      "Eviscerate": 0.86,
-      "Riposte": 0.37
+      "Melee (off-hand)": 3.85,
+      "Sinister Strike": 3.79,
+      "Eviscerate": 0.82,
+      "Riposte": 0.43
      }
     },
     "39": {
-     "seconds": 21.5,
+     "seconds": 21.4,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 5.13,
-      "Shank": 1.88,
-      "Melee (off-hand)": 4.7,
-      "Sinister Strike": 4.55,
-      "Eviscerate": 1.05,
-      "Hack and Slash": 0.32,
-      "Riposte": 0.5
+      "Melee": 5.08,
+      "Shank": 1.89,
+      "Melee (off-hand)": 4.66,
+      "Sinister Strike": 4.54,
+      "Eviscerate": 1.03,
+      "Riposte": 0.46,
+      "Hack and Slash": 0.28
      }
     },
     "40": {
-     "seconds": 21.2,
+     "seconds": 21.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 4.97,
+      "Melee": 4.93,
       "Shank": 1.84,
-      "Melee (off-hand)": 4.55,
-      "Sinister Strike": 4.44,
-      "Eviscerate": 1.09,
-      "Hack and Slash": 0.32,
-      "Riposte": 0.51
+      "Melee (off-hand)": 4.53,
+      "Sinister Strike": 4.42,
+      "Eviscerate": 1.08,
+      "Riposte": 0.46,
+      "Hack and Slash": 0.28
      }
     },
     "50": {
-     "seconds": 21.3,
+     "seconds": 21.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 4.86,
-      "Sinister Strike": 4.79,
-      "Melee (off-hand)": 4.44,
-      "Shank": 1.7,
-      "Hack and Slash": 0.33,
-      "Eviscerate": 1.33,
-      "Riposte": 0.45
+      "Melee": 4.82,
+      "Sinister Strike": 4.73,
+      "Melee (off-hand)": 4.43,
+      "Shank": 1.68,
+      "Eviscerate": 1.34,
+      "Riposte": 0.46,
+      "Hack and Slash": 0.28
      }
     },
     "54": {
-     "seconds": 21.7,
+     "seconds": 21.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 4.97,
-      "Sinister Strike": 4.95,
+      "Melee": 4.94,
+      "Sinister Strike": 4.91,
       "Melee (off-hand)": 4.54,
       "Shank": 1.75,
-      "Hack and Slash": 0.32,
       "Eviscerate": 1.38,
-      "Riposte": 0.45
+      "Riposte": 0.47,
+      "Hack and Slash": 0.28
      }
     },
     "55": {
@@ -183,29 +183,29 @@
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 4.95,
-      "Sinister Strike": 4.98,
-      "Melee (off-hand)": 4.57,
-      "Shank": 1.75,
-      "Hack and Slash": 0.3,
-      "Eviscerate": 1.36,
+      "Melee": 4.97,
+      "Sinister Strike": 4.95,
+      "Melee (off-hand)": 4.55,
+      "Shank": 1.74,
       "Cold Blood": 0.11,
-      "Riposte": 0.47
+      "Eviscerate": 1.37,
+      "Riposte": 0.47,
+      "Hack and Slash": 0.28
      }
     },
     "60": {
-     "seconds": 21.3,
+     "seconds": 21.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 4.83,
-      "Sinister Strike": 4.84,
-      "Melee (off-hand)": 4.44,
-      "Shank": 1.74,
-      "Hack and Slash": 0.32,
-      "Eviscerate": 1.4,
-      "Cold Blood": 0.11,
-      "Riposte": 0.49
+      "Melee": 4.77,
+      "Sinister Strike": 4.75,
+      "Melee (off-hand)": 4.38,
+      "Shank": 1.71,
+      "Cold Blood": 0.1,
+      "Eviscerate": 1.36,
+      "Hack and Slash": 0.28,
+      "Riposte": 0.52
      }
     }
    }
@@ -214,7 +214,7 @@
    "build": "assassination-open-leveling",
    "rotation": "combat-daggers-raid",
    "provisional_order": false,
-   "fingerprint": "c251f6b0acf1",
+   "fingerprint": "fe0161f47e4d",
    "levels": {
     "1": {
      "seconds": 9.6,
@@ -256,146 +256,125 @@
       "Eviscerate": 0.43
      }
     },
-    "12": {
-     "seconds": 19.5,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Sinister Strike": 3.88,
-      "Melee": 6.74,
-      "Melee (off-hand)": 6.15,
-      "Eviscerate": 0.51,
-      "Kick": 0.18
-     }
-    },
     "14": {
      "seconds": 19.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 6.24,
-      "Melee (off-hand)": 5.73,
-      "Sinister Strike": 2.51,
-      "Eviscerate": 0.54,
-      "Kick": 0.14
+      "Melee": 6.23,
+      "Melee (off-hand)": 5.71,
+      "Sinister Strike": 2.57,
+      "Eviscerate": 0.59
      }
     },
     "20": {
-     "seconds": 20.4,
+     "seconds": 20.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 6.91,
-      "Melee (off-hand)": 6.34,
-      "Sinister Strike": 3.03,
-      "Kick": 0.21,
-      "Eviscerate": 0.35
+      "Melee": 6.63,
+      "Melee (off-hand)": 6.11,
+      "Sinister Strike": 3.06,
+      "Eviscerate": 0.37
      }
     },
     "23": {
-     "seconds": 21.0,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Garrote": 1.0,
-      "Melee": 7.12,
-      "Melee (off-hand)": 6.62,
-      "Sinister Strike": 3.25,
-      "Eviscerate": 0.54,
-      "Kick": 0.27
-     }
-    },
-    "24": {
-     "seconds": 21.0,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Garrote": 1.0,
-      "Melee": 7.07,
-      "Melee (off-hand)": 6.61,
-      "Shank": 1.46,
-      "Sinister Strike": 3.46,
-      "Eviscerate": 0.48,
-      "Kick": 0.28
-     }
-    },
-    "25": {
-     "seconds": 21.7,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Garrote": 1.0,
-      "Melee": 7.39,
-      "Melee (off-hand)": 6.9,
-      "Shank": 1.55,
-      "Sinister Strike": 3.58,
-      "Eviscerate": 0.52,
-      "Kick": 0.3
-     }
-    },
-    "30": {
-     "seconds": 22.5,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Garrote": 1.0,
-      "Melee": 7.66,
-      "Melee (off-hand)": 7.19,
-      "Shank": 1.63,
-      "Sinister Strike": 3.83,
-      "Eviscerate": 0.45,
-      "Kick": 0.23
-     }
-    },
-    "39": {
-     "seconds": 26.2,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Garrote": 1.0,
-      "Melee": 9.23,
-      "Melee (off-hand)": 8.84,
-      "Shank": 1.98,
-      "Sinister Strike": 4.28,
-      "Cold Blood": 0.13,
-      "Eviscerate": 1.16,
-      "Kick": 0.26
-     }
-    },
-    "40": {
-     "seconds": 23.6,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Garrote": 1.0,
-      "Melee": 7.99,
-      "Melee (off-hand)": 7.58,
-      "Shank": 1.79,
-      "Mutilate": 2.73,
-      "Cold Blood": 0.12,
-      "Eviscerate": 1.4,
-      "Kick": 0.23
-     }
-    },
-    "50": {
-     "seconds": 23.1,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Garrote": 1.0,
-      "Melee": 7.5,
-      "Melee (off-hand)": 7.14,
-      "Shank": 1.69,
-      "Mutilate": 2.88,
-      "Cold Blood": 0.12,
-      "Eviscerate": 1.61,
-      "Kick": 0.23
-     }
-    },
-    "60": {
      "seconds": 20.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 6.5,
-      "Melee (off-hand)": 6.03,
-      "Shank": 1.53,
-      "Mutilate": 2.93,
-      "Cold Blood": 0.11,
-      "Eviscerate": 1.9,
-      "Kick": 0.11
+      "Melee": 6.9,
+      "Melee (off-hand)": 6.39,
+      "Sinister Strike": 3.29,
+      "Eviscerate": 0.54
+     }
+    },
+    "24": {
+     "seconds": 20.5,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Garrote": 1.0,
+      "Melee": 6.85,
+      "Melee (off-hand)": 6.31,
+      "Shank": 1.44,
+      "Sinister Strike": 3.5,
+      "Eviscerate": 0.47
+     }
+    },
+    "25": {
+     "seconds": 21.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Garrote": 1.0,
+      "Melee": 7.08,
+      "Melee (off-hand)": 6.57,
+      "Shank": 1.5,
+      "Sinister Strike": 3.62,
+      "Eviscerate": 0.48
+     }
+    },
+    "30": {
+     "seconds": 21.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Garrote": 1.0,
+      "Melee": 7.39,
+      "Melee (off-hand)": 6.93,
+      "Shank": 1.56,
+      "Sinister Strike": 3.81,
+      "Eviscerate": 0.46
+     }
+    },
+    "39": {
+     "seconds": 25.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Garrote": 1.0,
+      "Melee": 8.84,
+      "Melee (off-hand)": 8.45,
+      "Shank": 1.94,
+      "Sinister Strike": 4.25,
+      "Cold Blood": 0.12,
+      "Eviscerate": 1.19
+     }
+    },
+    "40": {
+     "seconds": 23.2,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Garrote": 1.0,
+      "Melee": 7.82,
+      "Melee (off-hand)": 7.38,
+      "Shank": 1.79,
+      "Mutilate": 2.74,
+      "Cold Blood": 0.12,
+      "Eviscerate": 1.47
+     }
+    },
+    "50": {
+     "seconds": 22.5,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Garrote": 1.0,
+      "Melee": 7.28,
+      "Melee (off-hand)": 6.9,
+      "Shank": 1.71,
+      "Mutilate": 2.84,
+      "Cold Blood": 0.12,
+      "Eviscerate": 1.7
+     }
+    },
+    "60": {
+     "seconds": 19.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Garrote": 1.0,
+      "Melee": 6.19,
+      "Melee (off-hand)": 5.75,
+      "Shank": 1.48,
+      "Mutilate": 2.85,
+      "Eviscerate": 1.8,
+      "Cold Blood": 0.1
      }
     }
    }
@@ -404,7 +383,7 @@
    "build": "subtlety-open-leveling",
    "rotation": "subtlety-leveling",
    "provisional_order": false,
-   "fingerprint": "8ccae6e16cf3",
+   "fingerprint": "bc64110fb5d8",
    "levels": {
     "1": {
      "seconds": 9.6,
@@ -469,130 +448,130 @@
      }
     },
     "20": {
-     "seconds": 17.6,
+     "seconds": 17.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Ambush": 1.0,
-      "Melee": 5.52,
-      "Melee (off-hand)": 4.96,
-      "Sinister Strike": 2.34,
+      "Melee": 5.21,
+      "Melee (off-hand)": 4.68,
+      "Sinister Strike": 2.22,
       "Eviscerate": 0.61
      }
     },
     "22": {
-     "seconds": 19.0,
+     "seconds": 18.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Ambush": 0.73,
-      "Melee": 6.15,
-      "Melee (off-hand)": 5.58,
-      "Sinister Strike": 2.73,
-      "Eviscerate": 0.65,
+      "Melee": 5.96,
+      "Melee (off-hand)": 5.38,
+      "Sinister Strike": 2.67,
+      "Eviscerate": 0.62,
       "Garrote": 0.27
      }
     },
     "24": {
-     "seconds": 19.3,
+     "seconds": 19.1,
      "deaths_per_100": 0.0,
      "casts": {
-      "Premeditation": 0.15,
+      "Premeditation": 0.14,
       "Ambush": 0.68,
-      "Melee": 6.22,
-      "Melee (off-hand)": 5.71,
-      "Shank": 1.51,
-      "Sinister Strike": 2.83,
-      "Eviscerate": 0.81,
+      "Melee": 6.17,
+      "Melee (off-hand)": 5.68,
+      "Shank": 1.49,
+      "Sinister Strike": 2.79,
+      "Eviscerate": 0.78,
       "Garrote": 0.32
      }
     },
     "25": {
-     "seconds": 19.2,
+     "seconds": 19.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Premeditation": 0.15,
       "Ambush": 0.65,
-      "Melee": 6.21,
-      "Melee (off-hand)": 5.71,
-      "Shank": 1.5,
-      "Ghostly Strike": 0.8,
+      "Melee": 6.16,
+      "Melee (off-hand)": 5.64,
+      "Shank": 1.49,
+      "Ghostly Strike": 0.78,
       "Garrote": 0.43,
       "Eviscerate": 0.83,
-      "Sinister Strike": 2.09
+      "Sinister Strike": 2.05
      }
     },
     "30": {
-     "seconds": 20.8,
+     "seconds": 20.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Premeditation": 0.16,
       "Ambush": 0.16,
-      "Melee": 6.93,
-      "Melee (off-hand)": 6.46,
-      "Shank": 1.54,
-      "Ghostly Strike": 0.86,
-      "Garrote": 0.92,
-      "Eviscerate": 1.12,
-      "Hemorrhage": 2.95
+      "Melee": 6.88,
+      "Melee (off-hand)": 6.38,
+      "Shank": 1.47,
+      "Ghostly Strike": 0.84,
+      "Garrote": 0.9,
+      "Eviscerate": 1.15,
+      "Hemorrhage": 2.96
      }
     },
     "35": {
-     "seconds": 21.5,
+     "seconds": 21.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Premeditation": 0.16,
       "Ambush": 0.63,
-      "Melee": 7.28,
-      "Melee (off-hand)": 6.74,
-      "Shank": 1.64,
+      "Melee": 7.08,
+      "Melee (off-hand)": 6.58,
+      "Shank": 1.6,
       "Ghostly Strike": 0.85,
-      "Garrote": 0.51,
-      "Eviscerate": 1.33,
-      "Hemorrhage": 2.65
+      "Garrote": 0.53,
+      "Eviscerate": 1.27,
+      "Hemorrhage": 2.57
      }
     },
     "40": {
-     "seconds": 24.3,
+     "seconds": 24.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Premeditation": 0.18,
-      "Garrote": 1.05,
-      "Melee": 8.38,
-      "Melee (off-hand)": 7.98,
-      "Shank": 1.96,
+      "Garrote": 1.04,
+      "Melee": 8.22,
+      "Melee (off-hand)": 7.83,
+      "Shank": 1.92,
       "Ghostly Strike": 0.99,
       "Death Mark": 0.97,
-      "Hemorrhage": 3.42,
-      "Eviscerate": 0.86
+      "Hemorrhage": 3.35,
+      "Eviscerate": 0.88
      }
     },
     "50": {
-     "seconds": 23.1,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Premeditation": 0.18,
-      "Garrote": 1.06,
-      "Melee": 7.69,
-      "Melee (off-hand)": 7.27,
-      "Shank": 1.89,
-      "Ghostly Strike": 0.98,
-      "Death Mark": 1.01,
-      "Hemorrhage": 3.85,
-      "Eviscerate": 0.91
-     }
-    },
-    "60": {
-     "seconds": 22.5,
+     "seconds": 22.9,
      "deaths_per_100": 0.0,
      "casts": {
       "Premeditation": 0.17,
-      "Garrote": 1.04,
-      "Melee": 7.38,
-      "Melee (off-hand)": 7.01,
+      "Garrote": 1.05,
+      "Melee": 7.57,
+      "Melee (off-hand)": 7.17,
+      "Shank": 1.82,
       "Ghostly Strike": 0.97,
-      "Death Mark": 0.97,
-      "Shank": 1.74,
-      "Hemorrhage": 3.96,
-      "Eviscerate": 1.33
+      "Death Mark": 1.02,
+      "Hemorrhage": 3.78,
+      "Eviscerate": 0.9
+     }
+    },
+    "60": {
+     "seconds": 22.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Premeditation": 0.17,
+      "Garrote": 1.05,
+      "Melee": 7.13,
+      "Melee (off-hand)": 6.82,
+      "Ghostly Strike": 0.95,
+      "Death Mark": 0.98,
+      "Shank": 1.69,
+      "Hemorrhage": 3.84,
+      "Eviscerate": 1.29
      }
     }
    }
@@ -601,7 +580,7 @@
    "build": "combat-subtlety-open-leveling",
    "rotation": "subtlety-leveling",
    "provisional_order": false,
-   "fingerprint": "e9d9ab3e9ecc",
+   "fingerprint": "4d1850a799da",
    "levels": {
     "1": {
      "seconds": 9.6,
@@ -666,67 +645,67 @@
      }
     },
     "20": {
-     "seconds": 16.3,
+     "seconds": 15.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Ambush": 1.0,
-      "Melee": 4.82,
-      "Melee (off-hand)": 4.32,
-      "Sinister Strike": 2.1,
-      "Eviscerate": 0.55
+      "Melee": 4.46,
+      "Melee (off-hand)": 4.0,
+      "Sinister Strike": 1.99,
+      "Eviscerate": 0.53
      }
     },
     "23": {
-     "seconds": 18.4,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Ambush": 1.0,
-      "Melee": 5.85,
-      "Melee (off-hand)": 5.29,
-      "Sinister Strike": 2.48,
-      "Eviscerate": 0.6
-     }
-    },
-    "24": {
-     "seconds": 18.1,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Premeditation": 0.14,
-      "Ambush": 1.0,
-      "Melee": 5.67,
-      "Melee (off-hand)": 5.15,
-      "Shank": 1.37,
-      "Sinister Strike": 2.49,
-      "Eviscerate": 0.66
-     }
-    },
-    "25": {
      "seconds": 17.9,
      "deaths_per_100": 0.0,
      "casts": {
-      "Premeditation": 0.14,
       "Ambush": 1.0,
-      "Melee": 5.61,
-      "Melee (off-hand)": 5.13,
-      "Shank": 1.38,
-      "Ghostly Strike": 0.73,
-      "Garrote": 0.1,
-      "Eviscerate": 0.76,
-      "Sinister Strike": 1.72
+      "Melee": 5.67,
+      "Melee (off-hand)": 5.08,
+      "Sinister Strike": 2.44,
+      "Eviscerate": 0.57
      }
     },
-    "30": {
-     "seconds": 19.1,
+    "24": {
+     "seconds": 17.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Premeditation": 0.14,
       "Ambush": 1.0,
-      "Melee": 6.16,
-      "Melee (off-hand)": 5.6,
-      "Shank": 1.48,
-      "Ghostly Strike": 0.79,
+      "Melee": 5.43,
+      "Melee (off-hand)": 4.91,
+      "Shank": 1.34,
+      "Sinister Strike": 2.4,
+      "Eviscerate": 0.63
+     }
+    },
+    "25": {
+     "seconds": 17.5,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Premeditation": 0.14,
+      "Ambush": 1.0,
+      "Melee": 5.42,
+      "Melee (off-hand)": 4.92,
+      "Shank": 1.34,
+      "Ghostly Strike": 0.7,
       "Garrote": 0.07,
-      "Eviscerate": 0.77,
+      "Eviscerate": 0.66,
+      "Sinister Strike": 1.73
+     }
+    },
+    "30": {
+     "seconds": 19.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Premeditation": 0.15,
+      "Ambush": 1.0,
+      "Melee": 6.09,
+      "Melee (off-hand)": 5.59,
+      "Shank": 1.47,
+      "Ghostly Strike": 0.78,
+      "Garrote": 0.05,
+      "Eviscerate": 0.74,
       "Sinister Strike": 1.91
      }
     },
@@ -735,43 +714,43 @@
      "deaths_per_100": 0.0,
      "casts": {
       "Premeditation": 0.18,
-      "Garrote": 0.35,
-      "Melee": 8.29,
-      "Melee (off-hand)": 7.87,
+      "Garrote": 0.33,
+      "Melee": 8.36,
+      "Melee (off-hand)": 7.88,
       "Shank": 1.84,
       "Ghostly Strike": 0.98,
-      "Eviscerate": 1.1,
-      "Sinister Strike": 2.46,
+      "Eviscerate": 1.02,
+      "Sinister Strike": 2.55,
       "Ambush": 1.0
      }
     },
     "40": {
-     "seconds": 23.4,
+     "seconds": 23.5,
      "deaths_per_100": 0.0,
      "casts": {
       "Premeditation": 0.18,
-      "Garrote": 0.43,
-      "Melee": 8.03,
-      "Melee (off-hand)": 7.61,
-      "Shank": 1.79,
+      "Garrote": 0.38,
+      "Melee": 8.04,
+      "Melee (off-hand)": 7.63,
+      "Shank": 1.77,
       "Ghostly Strike": 0.96,
-      "Eviscerate": 1.16,
-      "Sinister Strike": 2.27,
+      "Eviscerate": 1.12,
+      "Sinister Strike": 2.35,
       "Ambush": 1.0
      }
     },
     "50": {
-     "seconds": 21.5,
+     "seconds": 21.4,
      "deaths_per_100": 0.0,
      "casts": {
       "Premeditation": 0.17,
-      "Garrote": 0.4,
-      "Melee": 6.98,
-      "Melee (off-hand)": 6.55,
+      "Garrote": 0.39,
+      "Melee": 6.91,
+      "Melee (off-hand)": 6.48,
       "Shank": 1.46,
       "Ghostly Strike": 0.92,
-      "Sinister Strike": 2.91,
-      "Eviscerate": 1.4,
+      "Sinister Strike": 2.87,
+      "Eviscerate": 1.38,
       "Ambush": 1.0
      }
     },
@@ -780,28 +759,28 @@
      "deaths_per_100": 0.0,
      "casts": {
       "Premeditation": 0.16,
-      "Garrote": 0.41,
-      "Melee": 6.76,
+      "Garrote": 0.43,
+      "Melee": 6.78,
       "Melee (off-hand)": 6.38,
-      "Shank": 1.42,
-      "Ghostly Strike": 0.9,
-      "Eviscerate": 1.71,
-      "Sinister Strike": 2.61,
+      "Shank": 1.41,
+      "Ghostly Strike": 0.88,
+      "Eviscerate": 1.75,
+      "Sinister Strike": 2.63,
       "Ambush": 1.0
      }
     },
     "60": {
-     "seconds": 20.0,
+     "seconds": 19.9,
      "deaths_per_100": 0.0,
      "casts": {
-      "Premeditation": 0.16,
-      "Garrote": 0.41,
-      "Melee": 6.19,
-      "Melee (off-hand)": 5.82,
-      "Shank": 1.36,
-      "Ghostly Strike": 0.81,
-      "Eviscerate": 1.81,
-      "Hemorrhage": 3.15,
+      "Premeditation": 0.15,
+      "Garrote": 0.4,
+      "Melee": 6.15,
+      "Melee (off-hand)": 5.73,
+      "Shank": 1.34,
+      "Ghostly Strike": 0.8,
+      "Eviscerate": 1.8,
+      "Hemorrhage": 3.14,
       "Ambush": 1.0
      }
     }

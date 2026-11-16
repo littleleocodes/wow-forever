@@ -44,14 +44,14 @@ This file is hand-written: the regeneration that rewrites the rest of this folde
 
 | Key | Spell (learned at) | Press it when |
 |---|---|---|
-| Shift+E | Kick (12) | Combat with swords, Subtlety and Combat-Subtlety: the tuned rotations never interrupt, so this is for a caster that hits too hard. Assassination keeps Kick in its rotation: press it on a caster mob's spell |
+| Shift+E | Kick (12) | No tuned rogue rotation interrupts (Assassination dropped **Kick** on 2026-11-15): this is for a caster that hits too hard |
 | Shift+1 | Stealth (1) | Before each pull from 14: Shift+1, then 1 for the opener |
 | Shift+2 | Blind (34) | A second mob joins mid-fight |
 | Shift+Q, Shift+R, Shift+F, Shift+Mouse 5, Shift+Mouse 4, Shift+3, Shift+4, Shift+C, Shift+X | Free | |
 
 ## No key: click these between fights
 
-Instant Poison and Deadly Poison, food, bandages, your mount (40 in Classic) and the Hearthstone. Slice and Dice, Cheap Shot and Kidney
+Instant Poison (on both weapons), food, bandages, your mount (40 in Classic) and the Hearthstone. Slice and Dice, Cheap Shot and Kidney
 Shot are never cast by the tuned rotation, and Backstab, Ambush and Mutilate are for daggers. Tab and Space stay on WoW's defaults.
 
 ## Macros (Esc, Macros, New; pick the question-mark icon so the button shows the spell)

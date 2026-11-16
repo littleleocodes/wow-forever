@@ -6,126 +6,113 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 
 | Rotation | Trees that level with it | Open winner | Family | Seconds per kill (20-60) | vs our fastest there |
 |---|---|---|---|---|---|
-| combat-daggers-raid | Assassination | [31/20/0](https://talentsforever.com/rogue/60/02530021211451031-30232300020122--12) | Assassination | 22.07 | +6.1% faster than leveling-combat-swords |
-| combat-swords-raid | Combat | [21/30/0](https://talentsforever.com/rogue/60/02531120221101-321033001201232025--12) | Combat | 20.53 | +6.4% faster than combat-leveling |
-| subtlety-leveling | Subtlety | [5/25/21](https://talentsforever.com/rogue/60/023-32500300020123202-1051030313210001-12) | Hybrid Combat/Subtlety | 20.68 | +5.5% faster than subtlety-open-leveling |
+| combat-daggers-raid | Assassination | [31/20/0](https://talentsforever.com/rogue/60/02530021211451031-30232300020122--12) | Assassination | 21.46 | +0.0% faster than assassination-open-leveling |
+| combat-swords-raid | Combat | [21/30/0](https://talentsforever.com/rogue/60/02531020221201-321033001201232025--12) | Combat | 20.29 | +0.0% faster than combat-open-leveling |
+| subtlety-leveling | Subtlety | [5/25/21](https://talentsforever.com/rogue/60/023-32500300020123202-1051030313210001-12) | Hybrid Combat/Subtlety | 20.53 | +5.5% faster than subtlety-open-leveling |
 
 ## combat-daggers-raid
 
-**Open winner 31/20/0** (Assassination): talent values at level 60 (seconds per kill lost without the talent; the build: 20.20 s):
+**Open winner 31/20/0** (Assassination): talent values at level 60 (seconds per kill lost without the talent; the build: 19.56 s):
 
 | Talent | Ranks | Seconds lost without it | Per point |
 |---|---|---|---|
-| Mutilate | 1 | +3.29 | +3.29 |
-| Flawless Execution | 1 | +1.45 | +1.45 |
-| Seal Fate | 3 | +1.11 | +0.37 |
-| Relentless Strikes | 5 | +1.09 | +0.22 |
-| Remorseless Attacks | 2 | +1.07 | +0.53 |
-| Coup de Grace | 3 | +1.03 | +0.34 |
-| Venom | 1 | +0.97 | +0.97 |
-| Puncturing Wounds | 3 | +0.96 | +0.32 |
-| Weapon Expertise | 2 | +0.96 | +0.48 |
-| Vigor | 2 | +0.87 | +0.44 |
-| Composure | 2 | +0.86 | +0.43 |
-| Malice | 5 | +0.75 | +0.15 |
-| Precision | 3 | +0.64 | +0.21 |
-| Aggression | 2 | +0.55 | +0.27 |
-| Ruthlessness | 3 | +0.38 | +0.13 |
-| Improved Poisons | 4 | +0.37 | +0.09 |
-| Cold Blood | 1 | +0.32 | +0.32 |
-| Lethality | 2 | +0.26 | +0.13 |
-| Deflection | 2 | +0.13 | +0.07 |
-| Vile Poisons | 1 | +0.11 | +0.11 |
+| Mutilate | 1 | +2.99 | +2.99 |
+| Flawless Execution | 1 | +1.39 | +1.39 |
+| Venom | 1 | +1.33 | +1.33 |
+| Coup de Grace | 3 | +1.04 | +0.35 |
+| Seal Fate | 3 | +0.98 | +0.33 |
+| Remorseless Attacks | 2 | +0.96 | +0.48 |
+| Weapon Expertise | 2 | +0.93 | +0.47 |
+| Relentless Strikes | 5 | +0.92 | +0.18 |
+| Puncturing Wounds | 3 | +0.85 | +0.28 |
+| Vigor | 2 | +0.77 | +0.38 |
+| Composure | 2 | +0.76 | +0.38 |
+| Improved Poisons | 4 | +0.72 | +0.18 |
+| Precision | 3 | +0.69 | +0.23 |
+| Malice | 5 | +0.68 | +0.14 |
+| Aggression | 2 | +0.60 | +0.30 |
+| Ruthlessness | 3 | +0.31 | +0.10 |
+| Cold Blood | 1 | +0.30 | +0.30 |
+| Lethality | 2 | +0.23 | +0.11 |
+| Vile Poisons | 1 | +0.15 | +0.15 |
+| Deflection | 2 | +0.07 | +0.03 |
 | Lightning Reflexes | 2 | +0.04 | +0.02 |
 | Blood Splatter | 1 | +0.00 | +0.00 |
 
-Race at levels 20-60 (seconds per kill): assassination-open-leveling (the build this search wrote) 22.07, open winner 22.07, finalist 31/20/0 (stats model order) 22.19, finalist 31/20/0 22.29, leveling-combat-swords 23.42, opt-combat-daggers-raid-leveling-st 23.77, opt-combat-swords-raid-leveling-st 24.36, opt-combat-swords-raid-solo-60 24.40.
+Race at levels 20-60 (seconds per kill): assassination-open-leveling 21.46, open winner 21.46, finalist 31/20/0 (stats model order) 21.62, finalist 31/20/0 21.75, leveling-combat-swords 22.87, opt-combat-daggers-raid-leveling-st 23.38, opt-combat-swords-raid-leveling-st 23.77, opt-combat-swords-raid-solo-60 23.81.
 
 **Signature spells** (Assassination, levels 20-60, 2026-11-15): OK; core share at 60 92% (rule 60%: melee, Mutilate, Eviscerate, Venom, Rupture, Deadly Poison, Instant Poison).
 
-**Synergy certificate** (2026-11-15, fightlab/fl_synergy.py): 42 relevant talents, 25 the winner lacks; 785 pairs measured around 31/20/0 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Setup + Initiative +2.3% (build +6.7%), Death Mark + Aggression +2.0% (build -5.2%), Setup + Precision +1.8% (build -1.1%), Opportunity + Dirty Deeds +1.6% (build +13.2%), Death Mark + Flawless Execution +1.6% (build -8.7%), Hack and Slash + Remorseless Attacks +1.6% (build -1.2%). No pair build within 1% of the winner. The certificate confirms the winner.
-
-Under the other leveling rotations (seconds per kill, 20-60): combat-swords-raid 22.98, subtlety-leveling 23.62; its own rotation plays it best (22.07 s).
-
-Build (2026-11-15, open_builds.py): `assassination-open-leveling`.
+**Synergy certificate** (2026-11-15, fightlab/fl_synergy.py): 42 relevant talents, 25 the winner lacks; 785 pairs measured around 31/20/0 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Death Mark + Flawless Execution +2.5% (build -10.3%), Death Mark + Mutilate +2.2% (build -64.3%), Initiative + Remorseless Attacks +1.7% (build -1.2%), Flash of Steel + Initiative +1.7% (build +11.0%), Efficient Strikes + Mutilate +1.6% (build -59.1%), Flash of Steel + Seal Fate +1.6% (build +3.1%). No pair build within 1% of the winner. The certificate confirms the winner.
 
 ## combat-swords-raid
 
-**Open winner 21/30/0** (Combat): talent values at level 60 (seconds per kill lost without the talent; the build: 21.16 s):
+**Open winner 21/30/0** (Combat): talent values at level 60 (seconds per kill lost without the talent; the build: 20.73 s):
 
 | Talent | Ranks | Seconds lost without it | Per point |
 |---|---|---|---|
-| Efficient Strikes | 2 | +1.21 | +0.61 |
-| Aggression | 3 | +1.05 | +0.35 |
-| Venom | 1 | +0.86 | +0.86 |
-| Flash of Steel | 5 | +0.81 | +0.16 |
+| Efficient Strikes | 2 | +1.22 | +0.61 |
+| Aggression | 3 | +0.96 | +0.32 |
+| Venom | 1 | +0.94 | +0.94 |
 | Weapon Expertise | 2 | +0.76 | +0.38 |
-| Coup de Grace | 3 | +0.67 | +0.22 |
-| Malice | 5 | +0.59 | +0.12 |
-| Flawless Execution | 1 | +0.57 | +0.57 |
-| Precision | 3 | +0.55 | +0.18 |
-| Dual Wield Specialization | 2 | +0.52 | +0.26 |
-| Riposte | 1 | +0.32 | +0.32 |
-| Remorseless Attacks | 2 | +0.31 | +0.15 |
+| Flash of Steel | 5 | +0.72 | +0.14 |
+| Coup de Grace | 3 | +0.60 | +0.20 |
+| Precision | 3 | +0.58 | +0.19 |
+| Malice | 5 | +0.51 | +0.10 |
+| Flawless Execution | 1 | +0.51 | +0.51 |
+| Dual Wield Specialization | 2 | +0.47 | +0.24 |
+| Remorseless Attacks | 2 | +0.33 | +0.16 |
+| Riposte | 1 | +0.30 | +0.30 |
 | Vigor | 2 | +0.26 | +0.13 |
-| Cold Blood | 1 | +0.25 | +0.25 |
-| Deflection | 3 | +0.24 | +0.08 |
-| Hack and Slash | 2 | +0.23 | +0.11 |
-| Ruthlessness | 3 | +0.18 | +0.06 |
-| Vile Poisons | 2 | +0.14 | +0.07 |
-| Lethality | 2 | +0.13 | +0.07 |
-| Improved Poisons | 1 | +0.08 | +0.08 |
-| Lightning Reflexes | 1 | +0.06 | +0.06 |
-| Composure | 2 | +0.03 | +0.01 |
+| Improved Poisons | 2 | +0.23 | +0.11 |
+| Cold Blood | 1 | +0.22 | +0.22 |
+| Deflection | 3 | +0.22 | +0.07 |
+| Vile Poisons | 2 | +0.18 | +0.09 |
+| Hack and Slash | 2 | +0.17 | +0.09 |
+| Lethality | 2 | +0.15 | +0.07 |
+| Ruthlessness | 3 | +0.12 | +0.04 |
+| Lightning Reflexes | 1 | +0.04 | +0.04 |
 | Improved Expose Armor | 1 | +0.00 | +0.00 |
-| Improved Slice and Dice | 1 | +0.00 | +0.00 |
+| Composure | 2 | -0.12 | -0.06 |
 
-Race at levels 20-60 (seconds per kill): finalist 21/30/0 (carried order) 20.53, open winner 20.53, combat-open-leveling (the build this search wrote) 20.58, finalist 21/30/0 (previous order) 20.58, finalist 21/30/0 (before the 20-60 polish) 20.58, finalist 21/30/0 (stats model order) 20.85, finalist 21/30/0 20.92, finalist 21/30/0 (own tree last order) 21.68, combat-leveling 21.85.
+Race at levels 20-60 (seconds per kill): combat-open-leveling 20.29, open winner 20.29, finalist 21/30/0 (previous order) 20.29, finalist 21/30/0 (stats model order) 20.70, finalist 21/30/0 20.74, finalist 21/30/0 (own tree last order) 21.24, combat-leveling 21.73.
 
-**Signature spells** (Combat, levels 20-60, 2026-11-15): OK; core share at 60 75% (rule 70%: melee, Sinister Strike, Backstab, Eviscerate, Blade Flurry).
+**Signature spells** (Combat, levels 20-60, 2026-11-15): OK; core share at 60 72% (rule 70%: melee, Sinister Strike, Backstab, Eviscerate, Blade Flurry).
 
-**Synergy certificate** (2026-11-15, fightlab/fl_synergy.py): 42 relevant talents, 23 the winner lacks; 785 pairs measured around 21/30/0 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Death Mark + Flash of Steel +19.3% (build -7.4%), Death Mark + Composure +17.1% (build -6.7%), Death Mark + Precision +16.7% (build -7.3%), Death Mark + Flawless Execution +16.7% (build -7.2%), Death Mark + Weapon Expertise +16.6% (build -7.9%), Death Mark + Efficient Strikes +16.6% (build -9.8%). No pair build within 1% of the winner. The certificate confirms the winner.
-
-Under the other leveling rotations (seconds per kill, 20-60): combat-daggers-raid 21.9, subtlety-leveling 21.52; its own rotation plays it best (20.53 s).
-
-Build (2026-11-15, open_builds.py): `combat-open-leveling`.
+**Synergy certificate** (2026-11-15, fightlab/fl_synergy.py): 42 relevant talents, 23 the winner lacks; 785 pairs measured around 21/30/0 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Death Mark + Flash of Steel +19.5% (build -6.7%), Death Mark + Efficient Strikes +17.7% (build -8.4%), Death Mark + Precision +17.3% (build -6.1%), Death Mark + Weapon Expertise +17.2% (build -7.5%), Death Mark + Composure +17.1% (build -4.8%), Death Mark + Aggression +17.0% (build -7.3%). No pair build within 1% of the winner. The certificate confirms the winner.
 
 ## subtlety-leveling
 
-**Open winner 5/25/21** (Hybrid Combat/Subtlety): talent values at level 60 (seconds per kill lost without the talent; the build: 20.36 s):
+**Open winner 5/25/21** (Hybrid Combat/Subtlety): talent values at level 60 (seconds per kill lost without the talent; the build: 20.02 s):
 
 | Talent | Ranks | Seconds lost without it | Per point |
 |---|---|---|---|
-| Remorseless Attacks | 2 | +2.02 | +1.01 |
-| Improved Ambush | 3 | +1.79 | +0.60 |
-| Flawless Execution | 1 | +1.41 | +1.41 |
-| Coup de Grace | 3 | +1.18 | +0.39 |
-| Aggression | 3 | +0.89 | +0.30 |
-| Weapon Expertise | 2 | +0.87 | +0.43 |
-| Initiative | 3 | +0.85 | +0.28 |
-| Opportunity | 5 | +0.84 | +0.17 |
-| Efficient Strikes | 2 | +0.79 | +0.39 |
-| Hemorrhage | 1 | +0.78 | +0.78 |
-| Dual Wield Specialization | 2 | +0.64 | +0.32 |
-| Precision | 3 | +0.63 | +0.21 |
-| Serrated Blades | 3 | +0.62 | +0.21 |
-| Malice | 3 | +0.42 | +0.14 |
-| Composure | 2 | +0.36 | +0.18 |
+| Remorseless Attacks | 2 | +2.17 | +1.08 |
+| Improved Ambush | 3 | +1.96 | +0.65 |
+| Flawless Execution | 1 | +1.45 | +1.45 |
+| Coup de Grace | 3 | +1.21 | +0.40 |
+| Initiative | 3 | +1.04 | +0.35 |
+| Weapon Expertise | 2 | +0.93 | +0.47 |
+| Opportunity | 5 | +0.93 | +0.19 |
+| Aggression | 3 | +0.90 | +0.30 |
+| Efficient Strikes | 2 | +0.88 | +0.44 |
+| Hemorrhage | 1 | +0.86 | +0.86 |
+| Precision | 3 | +0.73 | +0.24 |
+| Serrated Blades | 3 | +0.65 | +0.22 |
+| Dual Wield Specialization | 2 | +0.63 | +0.31 |
+| Composure | 2 | +0.47 | +0.23 |
+| Malice | 3 | +0.45 | +0.15 |
+| Setup | 1 | +0.35 | +0.35 |
+| Dirty Deeds | 1 | +0.31 | +0.31 |
 | Hack and Slash | 2 | +0.28 | +0.14 |
-| Dirty Deeds | 1 | +0.24 | +0.24 |
-| Setup | 1 | +0.23 | +0.23 |
-| Lightning Reflexes | 5 | +0.16 | +0.03 |
-| Premeditation | 1 | +0.16 | +0.16 |
-| Ghostly Strike | 1 | +0.15 | +0.15 |
+| Lightning Reflexes | 5 | +0.21 | +0.04 |
+| Premeditation | 1 | +0.20 | +0.20 |
+| Ghostly Strike | 1 | +0.19 | +0.19 |
 | Elusiveness | 2 | +0.00 | +0.00 |
 
-Race at levels 20-60 (seconds per kill): open winner 20.68, finalist 5/25/21 (stats model order, before the order polish) 20.70, finalist 5/25/21 (stats model order) 20.70, finalist 5/25/21 (own tree last order) 20.87, finalist 5/25/21 (own tree first order) 21.71, finalist 7/23/21 21.75, subtlety-open-leveling 21.82, subtlety-leveling 23.08.
+Race at levels 20-60 (seconds per kill): open winner 20.53, finalist 5/25/21 (stats model order, before the order polish) 20.56, finalist 5/25/21 (own tree last order) 20.67, finalist 5/25/21 (own tree first order) 21.53, finalist 7/23/21 21.56, subtlety-open-leveling 21.65, subtlety-leveling 22.90.
 
-**Signature spells** (Hybrid Combat/Subtlety, levels 20-60, 2026-11-15): OK; core share at 60 89% (rule 60%: melee, Sinister Strike, Hemorrhage, Ghostly Strike, Ambush, Eviscerate).
+**Signature spells** (Hybrid Combat/Subtlety, levels 20-60, 2026-11-15): OK; core share at 60 88% (rule 60%: melee, Sinister Strike, Hemorrhage, Ghostly Strike, Ambush, Eviscerate).
 
-**Synergy certificate** (2026-11-15, fightlab/fl_synergy.py): 42 relevant talents, 21 the winner lacks; 737 pairs measured around 5/25/21 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Flash of Steel + Ghostly Strike +56.4% (build -27.9%), Flash of Steel + Remorseless Attacks +14.6% (build -25.3%), Flash of Steel + Hemorrhage +12.2% (build -19.5%), Flash of Steel + Improved Ambush +12.2% (build -26.8%), Death Mark + Remorseless Attacks +4.8% (build -13.2%), Flash of Steel + Opportunity +4.4% (build -28.5%). No pair build within 1% of the winner. The certificate confirms the winner.
-
-Under the other leveling rotations (seconds per kill, 20-60): combat-daggers-raid 24.18, combat-swords-raid 22.67; its own rotation plays it best (20.68 s).
-
-Build (2026-11-15, open_builds.py): `combat-subtlety-open-leveling`.
+**Synergy certificate** (2026-11-15, fightlab/fl_synergy.py): 42 relevant talents, 21 the winner lacks; 737 pairs measured around 5/25/21 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Flash of Steel + Ghostly Strike +54.6% (build -29.4%), Flash of Steel + Remorseless Attacks +13.3% (build -26.2%), Flash of Steel + Hemorrhage +12.8% (build -20.9%), Flash of Steel + Improved Ambush +11.6% (build -27.5%), Flash of Steel + Opportunity +4.9% (build -28.5%), Death Mark + Remorseless Attacks +3.8% (build -13.4%). No pair build within 1% of the winner. The certificate confirms the winner.
 

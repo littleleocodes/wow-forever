@@ -76,12 +76,79 @@ def kinds(sid, effects, depth=0):
     return out
 
 
+# Ranks whose numbers live in the spells they reference (2026-11-15, user: "go with your recs", the imbue knobs): a weapon imbue's cast
+# carries no effect of its own; its RefIDs hold the attack power (Rockbiter's passive, Windfury's proc aura), Flametongue's per-swing
+# amount (the proc's dummy effect: m1 per 100 s of swing) and Frostbrand's damage. Each grows with the caster's level like any rank
+# (Rockbiter rank 5: 212 attack power at 34, 355 from 42). Written as {kind: [[base, gain, spell level, max level]], "via": [ids]}
+# with kinds attack_power, proc and direct; the shaman module reads the amounts at its level (tables.rank_amounts).
+REFERENCED = {"shaman": ("Rockbiter Weapon", "Windfury Weapon", "Flametongue Weapon", "Frostbrand Weapon")}
+
+
+def load_refs(path):
+    """{spell id: [referenced spell ids]} (RefIDs)."""
+    out = {}
+    for line in open(path, encoding="utf-8"):
+        m = re.search(r"\{ID: (\d+), Name: .*?RefIDs: \[\]int32\{([\d, ]*)\}", line)
+        if m:
+            out[int(m.group(1))] = [int(x) for x in m.group(2).replace(" ", "").split(",") if x]
+    return out
+
+
+def referenced_kinds(sid, effects, refs):
+    out = {"attack_power": [], "proc": [], "direct": []}
+    for r in refs.get(sid, []):
+        for e in effects.get(r, []):
+            row = [e["base"], round(e["ppl"], 6), e["sl"], e["ml"]]
+            if e["aura"] == "A_MOD_ATTACK_POWER":
+                out["attack_power"].append(row)
+            elif e["type"] == "E_DUMMY" and e["ppl"]:
+                out["proc"].append(row)
+            elif e["type"] in DIRECT and (e["base"] or e["ppl"]):
+                out["direct"].append(row)
+    out = {k: v for k, v in out.items() if v}
+    return dict(out, via=refs.get(sid, [])) if out else None
+
+
+def referenced_rows(store):
+    effects, _ = load_store(store)
+    refs = load_refs(store)
+    rows = {}
+    for cls, names in REFERENCED.items():
+        d = json.load(open(SPELLS / f"{cls}.json", encoding="utf-8"))
+        for tab in d["tabs"]:
+            for sp in tab["spells"]:
+                if sp["name"] not in names:
+                    continue
+                for r in sp["ranks"]:
+                    k = referenced_kinds(r.get("id"), effects, refs) if r.get("id") else None
+                    if k:
+                        rows.setdefault(cls, {}).setdefault(sp["name"], {})[str(int(r.get("level") or 1))] = dict(k, id=r["id"])
+    return rows
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--store", default=str(STORE))
     ap.add_argument("--write", action="store_true")
     ap.add_argument("--out", default=str(OUT), help="where --write writes (default: the committed file the fight lab reads)")
+    ap.add_argument("--referenced-only", action="store_true",
+                    help="only (re)write the REFERENCED spells' rows into the existing file from --store, every other row as it is (the "
+                         "committed rows are the ElliotWood fork's until a decision to rewrite them; the referenced ones are the official "
+                         "simulator's)")
     a = ap.parse_args()
+    if a.referenced_only:
+        out = json.load(open(a.out, encoding="utf-8"))
+        rows = referenced_rows(a.store)
+        for cls, names in rows.items():
+            out["classes"].setdefault(cls, {}).update(names)
+        out["referenced_source"] = (f"RefIDs' effects in {a.store.replace(str(pathlib.Path.home()), '~')} for "
+                                    + "; ".join(f"{c}: {', '.join(n)}" for c, n in REFERENCED.items()) + " (spell_scaling.py --referenced-only)")
+        print(f"{sum(len(v) for n in rows.values() for v in n.values())} referenced ranks: "
+              + "; ".join(f"{n} {sorted(int(x) for x in v)}" for c in rows.values() for n, v in c.items()))
+        if a.write:
+            pathlib.Path(a.out).write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
+            print(f"wrote {a.out}")
+        return
     effects, _ = load_store(a.store)
     out = {"source": f"EffectBasePoints, EffectRealPointsPerLevel and SpellLevels of the raid simulator's spell store "
                      f"({a.store.replace(str(pathlib.Path.home()), '~')}; rule: effect.go Effect.Average), by our spellbooks' rank ids; "
@@ -105,6 +172,8 @@ def main():
                     n_rank += 1
                     n_eff += sum(1 for v in k.values() for row in v if row[1])
         out["classes"][cls] = rows
+    for cls, names in referenced_rows(a.store).items():
+        out["classes"].setdefault(cls, {}).update(names)
     print(f"{n_rank} ranks with {n_eff} scaling damage/heal/absorb effects")
     if a.write:
         pathlib.Path(a.out).write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")

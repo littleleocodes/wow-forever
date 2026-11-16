@@ -1097,7 +1097,7 @@
       {
        "rank": "Rank 3",
        "id": 1311595,
-       "text": "Applies Light's Vigil to a friendly target for 30 sec. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for 700 to 740. Only one Vigil per Paladin may be active in each party.",
+       "text": "Applies Light's Vigil to a friendly target for 30 sec. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for 684 to 724. Only one Vigil per Paladin may be active in each party.",
        "school": "Holy",
        "coefficient": "14.3% of spell power (heal)",
        "tooltip_source": "beta",
@@ -1110,11 +1110,6 @@
        "level": 60,
        "classic": {
         "status": "new"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Applies Light's Vigil to a friendly target for 30 sec. The caster's next Holy Shock on the target incurs no cooldown and heals the target and their party for 684 to 724. Only one Vigil per Paladin may be active in each party.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=1311595)"
        }
       }
      ]
@@ -2575,7 +2570,7 @@
       {
        "rank": "Rank 7",
        "id": 20423,
-       "text": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 35 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 168 to 182 Holy damage to an enemy and taunts the target to attack you for 3 sec.",
+       "text": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 35 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 153 to 167 Holy damage to an enemy and taunts the target to attack you for 3 sec.",
        "school": "Holy",
        "coefficient": "42.9% and 10% of spell power (direct)",
        "tooltip_source": "beta",
@@ -2588,11 +2583,6 @@
        "level": 58,
        "classic": {
         "status": "new"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 35 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy inflicts 153 to 167 Holy damage to an enemy and taunts the target to attack you for 3 sec.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=20423)"
        }
       }
      ]
@@ -3340,7 +3330,7 @@
       {
        "rank": "Rank 5",
        "id": 20920,
-       "text": "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing 194 to 211 Holy damage, 388 to 422 if the target is stunned or incapacitated.",
+       "text": "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing 169 to 187 Holy damage, 339 to 373 if the target is stunned or incapacitated.",
        "school": "Holy",
        "coefficient": "42.9% of spell power (direct)",
        "tooltip_source": "beta",
@@ -3353,11 +3343,6 @@
        "level": 60,
        "classic": {
         "status": "same"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing 169 to 187 Holy damage, 339 to 373 if the target is stunned or incapacitated.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=20920)"
        }
       }
      ]

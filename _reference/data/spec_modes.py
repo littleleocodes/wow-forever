@@ -45,7 +45,7 @@ HYBRID_NAMES = {
         "leveling": "Frost's Shatter and Fingers of Frost with Arcane's Missile Barrage: Frostbolt, Ice Lance into the freeze, free Arcane Missiles."}),
     ("mage", "Hybrid Fire/Frost"): ("Frostfire", "frostfire", "Built around Frostfire Bolt, a new Forever spell that uses both trees."),
     ("paladin", "Hybrid Holy/Retribution"): ("Shockadin", "shockadin", {
-        "leveling": "Retribution's two-handed melee (Vengeance, Two-Handed Weapon Specialization) with Holy's Sacred Arbiter; despite the name, the open leveling search's winner takes no Holy Shock.",
+        "leveling": "Holy Shock and Divine Favor with Retribution's two-handed melee (Seal of Command, Vengeance, Two-Handed Weapon Specialization, Champion of the Light): Holy's leveling rotation short of 30 Holy points (2026-11-16, the open leveling search).",
         "raid": "Holy Shock burst and heals with Retribution's melee talents."}),
     ("paladin", "Hybrid Protection/Retribution"): ("Prot-Ret", "prot-ret", "Retribution's melee talents with Protection's Seal of Fury, Swift Judgement and Toughness: a melee split short of 30 Retribution points."),
     ("paladin", "Hybrid Holy/Protection"): ("Holy-Prot", "hybrid-holy-protection", "Holy Shock and Divine Favor with Protection's Precision, Toughness and Swift Judgement and Retribution's judgement talents: Holy's leveling rotation short of 30 Holy points (2026-11-15, the open leveling search)."),

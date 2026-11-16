@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Combat leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the combat-swords-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-swords-raid). 
+The Combat leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the combat-swords-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-swords-raid). 
 
 ## Point allocation
 
@@ -77,21 +77,20 @@ The Combat leveling build the open leveling search found on 2026-11-15: every le
 | 52-53 | Assassination | Lethality | 2 | 14/30/0 |
 | 54 | Assassination | Improved Expose Armor | 1 | 15/30/0 |
 | 55 | Assassination | Cold Blood | 1 | 16/30/0 |
-| 56 | Assassination | Improved Poisons | 1 | 17/30/0 |
-| 57-58 | Assassination | Vile Poisons | 2 | 19/30/0 |
-| 59 | Assassination | Improved Poisons | 1 | 20/30/0 |
+| 56-57 | Assassination | Improved Poisons | 2 | 18/30/0 |
+| 58-59 | Assassination | Vile Poisons | 2 | 20/30/0 |
 | 60 | Assassination | Venom | 1 | 21/30/0 |
 
 ## Core talents (priority order)
 
 1. **Efficient Strikes** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Aggression** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Aggression** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
 3. **Venom** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Flash of Steel** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Weapon Expertise** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Coup de Grace** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Malice** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Flawless Execution** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Weapon Expertise** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Flash of Steel** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Coup de Grace** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Precision** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Malice** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -99,8 +98,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Slice and Dice to Improved Poisons at 59 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 20.53; combat-leveling 21.85. The search simulated 42,177 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 20.29; combat-leveling 21.73. The search simulated 42,177 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -110,7 +108,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/rogue>
-- <https://talentsforever.com/rogue/60/02531120221101-321033001201232025--12>
+- <https://talentsforever.com/rogue/60/02531020221201-321033001201232025--12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

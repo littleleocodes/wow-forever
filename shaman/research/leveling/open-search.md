@@ -6,76 +6,67 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 
 | Rotation | Trees that level with it | Open winner | Family | Seconds per kill (20-60) | vs our fastest there |
 |---|---|---|---|---|---|
-| elemental-dps | Elemental | [26/22/3](https://talentsforever.com/shaman/60/520333100301131-054033010400002-03-12) | Hybrid Elemental/Enhancement | 29.48 | +0.3% faster than elemental-open-leveling |
-| enhancement-dps | Enhancement, Restoration | [12/31/8](https://talentsforever.com/shaman/60/55000011-050033211051002251-05012-12) | Enhancement | 26.62 | +0.6% faster than enhancement-open-leveling |
+| elemental-dps | Elemental | [32/11/8](https://talentsforever.com/shaman/60/540333100301135-05003201-053-12) | Elemental | 28.54 | +0.3% faster than elemental-open-leveling |
+| enhancement-dps | Enhancement, Restoration | [12/33/6](https://talentsforever.com/shaman/60/5501001-050033213051002251-05001-12) | Enhancement | 26.62 | +0.0% faster than enhancement-open-leveling |
 
 ## elemental-dps
 
-**Open winner 26/22/3** (Hybrid Elemental/Enhancement): talent values at level 60 (seconds per kill lost without the talent; the build: 27.85 s):
+**Open winner 32/11/8** (Elemental): talent values at level 60 (seconds per kill lost without the talent; the build: 27.37 s):
 
 | Talent | Ranks | Seconds lost without it | Per point |
 |---|---|---|---|
-| Shamanistic Focus | 1 | +3.22 | +3.22 |
-| Mental Quickness | 2 | +1.42 | +0.71 |
-| Lightning Overload | 3 | +1.13 | +0.38 |
-| Elemental Alacrity | 3 | +1.08 | +0.36 |
-| Convection | 5 | +0.86 | +0.17 |
-| Elemental Focus | 1 | +0.73 | +0.73 |
-| Eye of the Storm | 3 | +0.67 | +0.22 |
+| Shamanistic Focus | 1 | +3.31 | +3.31 |
+| Elemental Alacrity | 3 | +1.27 | +0.42 |
+| Lightning Overload | 3 | +1.24 | +0.41 |
+| Convection | 5 | +0.93 | +0.19 |
+| Tidal Focus | 5 | +0.93 | +0.19 |
+| Elemental Fury | 5 | +0.88 | +0.18 |
+| Thundering Strikes | 5 | +0.87 | +0.17 |
+| Mindfulness | 3 | +0.86 | +0.29 |
+| Elemental Focus | 1 | +0.84 | +0.84 |
+| Eye of the Storm | 3 | +0.81 | +0.27 |
 | Reverberation | 3 | +0.63 | +0.21 |
-| Tidal Focus | 3 | +0.62 | +0.21 |
-| Thundering Strikes | 5 | +0.52 | +0.10 |
-| Mental Dexterity | 3 | +0.46 | +0.15 |
-| Call of Flame | 3 | +0.42 | +0.14 |
-| Improved Lightning Shield | 3 | +0.28 | +0.09 |
-| Call of Thunder | 1 | +0.24 | +0.24 |
-| Ancestral Knowledge | 4 | +0.19 | +0.05 |
-| Concussion | 2 | +0.18 | +0.09 |
-| Elemental Fury | 1 | +0.18 | +0.18 |
-| Elemental Reach | 1 | +0.04 | +0.04 |
-| Toughness | 4 | +0.03 | +0.01 |
+| Concussion | 4 | +0.57 | +0.14 |
+| Mental Dexterity | 3 | +0.52 | +0.17 |
+| Call of Thunder | 1 | +0.49 | +0.49 |
+| Call of Flame | 3 | +0.48 | +0.16 |
+| Improved Lightning Shield | 2 | +0.18 | +0.09 |
+| Elemental Reach | 1 | +0.17 | +0.17 |
 
-Race at levels 20-60 (seconds per kill): open winner 29.48, finalist 26/22/3 (stats model order, before the order polish) 29.54, elemental-open-leveling 29.57, finalist 26/22/3 (before the 20-60 polish) 29.57, finalist 29/22/0 29.78, finalist 26/22/3 (own tree last order) 29.78, finalist 26/22/3 (own tree first order) 29.86.
+Race at levels 20-60 (seconds per kill): open winner 28.54, elemental-open-leveling 28.62, finalist 32/11/8 (previous order) 28.62, finalist 26/22/3 29.30, finalist 29/22/0 29.51, finalist 32/11/8 (stats model order) 29.58, finalist 32/11/8 (own tree first order) 30.00.
 
-**Signature spells** (Hybrid Elemental/Enhancement, levels 20-60, 2026-11-03): OK; core share at 60 75% (rule 50%: Lightning Bolt, Chain Lightning, Earth Shock, Flame Shock).
+**Signature spells** (Elemental, levels 20-60, 2026-11-15): OK; core share at 60 76% (rule 60%: Lightning Bolt, Chain Lightning, Earth Shock, Flame Shock).
 
-**Synergy certificate** (2026-11-03, fightlab/fl_synergy.py): 36 relevant talents, 20 the winner lacks; 530 pairs measured around 26/22/3 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Maelstrom Weapon + Elemental Alacrity +1.8% (build -0.4%), Maelstrom Weapon + Eye of the Storm +1.3% (build +0.9%), Maelstrom Weapon + Reverberation +1.0% (build +0.5%), Spirit Weapons + Elemental Focus +0.5% (build -1.4%), Totemic Focus + Shamanistic Focus +0.5% (build -8.6%), Totemic Focus + Reverberation +0.4% (build -0.7%). Leads polished and raced at 20-60: Guardian Totems + Mindfulness -> 23/22/6 +0.2%, Stormstrike + Mindfulness -> 21/22/8 -2.1%, Improved Ghost Wolf + Mindfulness -> 21/22/8 +0.9%. The certificate confirms the winner.
-
-Under the other leveling rotations (seconds per kill, 20-60): enhancement-dps 32.05; its own rotation plays it best (29.48 s).
-
-Build (2026-11-03, open_builds.py): `elemental-enhancement-open-leveling`.
+**Synergy certificate** (2026-11-15, fightlab/fl_synergy.py): 36 relevant talents, 20 the winner lacks; 530 pairs measured around 32/11/8 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Spirit Weapons + Mindfulness +1.0% (build -0.9%), Stormstrike + Improved Stormstrike +0.9% (build +0.9%), Maelstrom Weapon + Elemental Alacrity +0.8% (build -1.2%), Maelstrom Weapon + Eye of the Storm +0.8% (build +0.4%), Water Shield + Shamanistic Focus +0.7% (build -8.6%), Flurry + Totemic Focus +0.6% (build +1.9%). Leads polished and raced at 20-60: Spirit Weapons + Mental Quickness -> 24/23/4 -2.5%, Stormstrike + Mental Quickness -> 24/23/4 -1.9%, Flurry + Mental Quickness -> 23/22/6 -1.9%. The certificate confirms the winner.
 
 ## enhancement-dps
 
-**Open winner 12/31/8** (Enhancement): talent values at level 60 (seconds per kill lost without the talent; the build: 28.32 s):
+**Open winner 12/33/6** (Enhancement): talent values at level 60 (seconds per kill lost without the talent; the build: 27.94 s):
 
 | Talent | Ranks | Seconds lost without it | Per point |
 |---|---|---|---|
-| Shamanistic Focus | 1 | +3.94 | +3.94 |
-| Stormstrike | 1 | +2.81 | +2.81 |
-| Maelstrom Weapon | 5 | +1.42 | +0.28 |
-| Mental Dexterity | 3 | +1.22 | +0.41 |
-| Tidal Focus | 5 | +1.17 | +0.23 |
-| Thundering Strikes | 5 | +1.07 | +0.21 |
-| Improved Stormstrike | 2 | +1.04 | +0.52 |
-| Flurry | 5 | +0.59 | +0.12 |
-| Convection | 5 | +0.55 | +0.11 |
-| Elemental Focus | 1 | +0.47 | +0.47 |
-| Concussion | 5 | +0.44 | +0.09 |
-| Rage of the Farseer | 1 | +0.42 | +0.42 |
-| Mental Quickness | 2 | +0.38 | +0.19 |
-| Improved Lightning Shield | 3 | +0.34 | +0.11 |
-| Elemental Weapons | 2 | +0.21 | +0.10 |
-| Anticipation | 1 | +0.21 | +0.21 |
-| Totemic Focus | 2 | +0.19 | +0.10 |
-| Elemental Warding | 1 | +0.00 | +0.00 |
-| Natural Grace | 1 | +0.00 | +0.00 |
+| Shamanistic Focus | 1 | +3.85 | +3.85 |
+| Stormstrike | 1 | +2.62 | +2.62 |
+| Improved Stormstrike | 2 | +1.00 | +0.50 |
+| Tidal Focus | 5 | +0.90 | +0.18 |
+| Thundering Strikes | 5 | +0.87 | +0.17 |
+| Maelstrom Weapon | 5 | +0.81 | +0.16 |
+| Mental Dexterity | 3 | +0.71 | +0.24 |
+| Convection | 5 | +0.34 | +0.07 |
+| Elemental Weapons | 2 | +0.31 | +0.16 |
+| Concussion | 5 | +0.30 | +0.06 |
+| Flurry | 5 | +0.29 | +0.06 |
+| Improved Lightning Shield | 3 | +0.28 | +0.09 |
+| Mental Quickness | 2 | +0.27 | +0.14 |
+| Rage of the Farseer | 1 | +0.24 | +0.24 |
+| Elemental Focus | 1 | +0.23 | +0.23 |
+| Anticipation | 3 | +0.10 | +0.03 |
+| Totemic Focus | 1 | +0.02 | +0.02 |
+| Reverberation | 1 | -0.01 | -0.01 |
 
-Race at levels 20-60 (seconds per kill): open winner 26.62, enhancement-open-leveling 26.78, finalist 12/32/7 (before the 20-60 polish) 26.78, finalist 12/31/8 (own tree first order) 26.78, finalist 13/32/6 (the previous record's winner) 26.88, finalist 15/31/5 27.01, leveling-enhancement 27.07, opt-enhancement-dps-leveling-st 27.48, opt-enhancement-dps-solo-60 27.48, finalist 12/31/8 (own tree last order) 27.53, restoration-leveling 37.54.
+Race at levels 20-60 (seconds per kill): open winner 26.62, enhancement-open-leveling 26.63, finalist 12/33/6 (before the 20-60 polish) 26.63, finalist 13/32/6 (the previous record's winner) 26.88, finalist 12/33/6 (own tree first order) 27.00, leveling-enhancement 27.08, finalist 15/31/5 27.09, finalist 12/33/6 (stats model order) 27.15, finalist 12/33/6 27.38, finalist 12/33/6 (own tree last order) 27.46, opt-enhancement-dps-leveling-st 27.53, opt-enhancement-dps-solo-60 27.53, restoration-leveling 37.26.
 
-**Signature spells** (Enhancement, levels 20-60, 2026-11-15): OK; core share at 60 77% (rule 60%: melee, Stormstrike, Windfury Weapon, Flametongue Weapon, Earth Shock, Flame Shock).
+**Signature spells** (Enhancement, levels 20-60, 2026-11-15): OK; core share at 60 79% (rule 60%: melee, Stormstrike, Windfury Weapon, Flametongue Weapon, Earth Shock, Flame Shock).
 
-**Synergy certificate** (2026-11-15, fightlab/fl_synergy.py): 36 relevant talents, 19 the winner lacks; 541 pairs measured around 12/31/8 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Water Shield + Mental Quickness +8.7% (build -26.5%), Water Shield + Elemental Weapons +8.3% (build -22.7%), Water Shield + Improved Lightning Shield +8.0% (build -23.8%), Water Shield + Improved Stormstrike +7.7% (build -26.6%), Water Shield + Mental Dexterity +7.6% (build -23.3%), Water Shield + Thundering Strikes +7.1% (build -25.2%). Leads polished and raced at 20-60: Reverberation + Mindfulness -> 11/33/7 -2.7%, Reverberation + Call of Flame -> 14/31/6 -2.3%, Reverberation + Spirit Weapons -> 11/32/8 -1.8%. The certificate confirms the winner.
-
-Under the other leveling rotations (seconds per kill, 20-60): elemental-dps 30.82; its own rotation plays it best (24.99 s).
+**Synergy certificate** (2026-11-15, fightlab/fl_synergy.py): 36 relevant talents, 20 the winner lacks; 544 pairs measured around 12/33/6 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Water Shield + Flurry +3.4% (build -62.4%), Water Shield + Thundering Strikes +3.3% (build -62.8%), Water Shield + Maelstrom Weapon +2.9% (build -65.3%), Mindfulness + Improved Stormstrike +2.1% (build -0.3%), Lightning Overload + Shamanistic Focus +0.9% (build -10.6%), Lightning Overload + Improved Lightning Shield +0.9% (build -0.3%). Leads polished and raced at 20-60: Spirit Weapons + Mindfulness -> 12/31/8 -0.7%, Improved Ghost Wolf + Spirit Weapons -> 12/34/5 -2.1%, Guardian Totems + Spirit Weapons -> 11/34/6 -2.1%. The certificate confirms the winner.
 

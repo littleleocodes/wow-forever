@@ -1,5 +1,5 @@
 {
- "date": "2026-11-15",
+ "date": "2026-11-16",
  "fights": 300,
  "levels": [
   20,
@@ -844,7 +844,7 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "fb9ac922ce02",
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "fights": 300
    },
    "protection-leveling": {
@@ -852,34 +852,7 @@
     "rotation": "prot-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.7191,
-    "min_share": 0.6,
-    "required": [
-     "Holy Shield"
-    ],
-    "core": [
-     "Holy Shield",
-     "Seal of Fury",
-     "Judgement",
-     "melee",
-     "Consecration",
-     "Seal of Righteousness"
-    ],
-    "casts_60": {
-     "Holy Shield": 2.02
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "facb91b898b3",
-    "date": "2026-11-15",
-    "fights": 300
-   },
-   "protection-open-leveling": {
-    "spec": "Protection",
-    "rotation": "prot-leveling",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.7189,
+    "core_share": 0.7118,
     "min_share": 0.6,
     "required": [
      "Holy Shield"
@@ -897,8 +870,35 @@
     },
     "missing_talents": [],
     "uncast": [],
+    "fingerprint": "facb91b898b3",
+    "date": "2026-11-16",
+    "fights": 300
+   },
+   "protection-open-leveling": {
+    "spec": "Protection",
+    "rotation": "prot-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.7197,
+    "min_share": 0.6,
+    "required": [
+     "Holy Shield"
+    ],
+    "core": [
+     "Holy Shield",
+     "Seal of Fury",
+     "Judgement",
+     "melee",
+     "Consecration",
+     "Seal of Righteousness"
+    ],
+    "casts_60": {
+     "Holy Shield": 2.01
+    },
+    "missing_talents": [],
+    "uncast": [],
     "fingerprint": "15bc46439f03",
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "fights": 300
    },
    "leveling-retribution": {
@@ -920,12 +920,12 @@
      "Vengeance"
     ],
     "casts_60": {
-     "Judgement": 2.7
+     "Judgement": 2.76
     },
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "f3086ae8d575",
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "fights": 300
    },
    "opt-ret-dps-leveling-st": {
@@ -947,28 +947,34 @@
      "Vengeance"
     ],
     "casts_60": {
-     "Judgement": 2.75
+     "Judgement": 2.82
     },
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "3122b28dddef",
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "fights": 300
    },
-   "hybrid-holy-protection-open-leveling": {
-    "spec": "Hybrid Holy/Protection",
+   "shockadin-open-leveling": {
+    "spec": "Hybrid Holy/Retribution",
     "rotation": "holy-leveling",
     "ok": true,
-    "verdict": "no rule",
-    "core_share": null,
-    "min_share": null,
-    "required": [],
-    "core": [],
-    "casts_60": {},
+    "verdict": "OK",
+    "core_share": 0.2552,
+    "min_share": 0.12,
+    "required": [
+     "Holy Shock"
+    ],
+    "core": [
+     "Holy Shock"
+    ],
+    "casts_60": {
+     "Holy Shock": 1.97
+    },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "8df557ef0731",
-    "date": "2026-11-15",
+    "fingerprint": "def6c3c0bde1",
+    "date": "2026-11-16",
     "fights": 300
    },
    "prot-ret-open-leveling": {
@@ -990,12 +996,12 @@
      "Holy Strike"
     ],
     "casts_60": {
-     "Judgement": 3.0
+     "Judgement": 3.05
     },
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "0884c3216a8a",
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "fights": 300
    },
    "opt-ret-dps-solo-60": {
@@ -1017,12 +1023,12 @@
      "Holy Strike"
     ],
     "casts_60": {
-     "Judgement": 3.16
+     "Judgement": 3.24
     },
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "fc4b33b0d0b9",
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "fights": 300
    },
    "opt-ret-dps-leveling-aoe": {
@@ -1044,12 +1050,12 @@
      "Holy Strike"
     ],
     "casts_60": {
-     "Judgement": 2.78
+     "Judgement": 2.87
     },
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "dd7e8e3b27b9",
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "fights": 300
    }
   },
@@ -1310,7 +1316,7 @@
     "rotation": "combat-daggers-raid",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.919,
+    "core_share": 0.9268,
     "min_share": 0.6,
     "required": [
      "Mutilate"
@@ -1325,12 +1331,40 @@
      "Instant Poison"
     ],
     "casts_60": {
-     "Mutilate": 2.95
+     "Mutilate": 2.85
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "4fcb1e3e897b",
-    "date": "2026-11-15",
+    "fingerprint": "255f174b7a8c",
+    "date": "2026-11-16",
+    "fights": 300
+   },
+   "leveling-combat-swords": {
+    "spec": "Assassination",
+    "rotation": "combat-daggers-raid",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.887,
+    "min_share": 0.6,
+    "required": [
+     "Mutilate"
+    ],
+    "core": [
+     "melee",
+     "Mutilate",
+     "Eviscerate",
+     "Venom",
+     "Rupture",
+     "Deadly Poison",
+     "Instant Poison"
+    ],
+    "casts_60": {
+     "Mutilate": 2.62
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "83b034ec7b7c",
+    "date": "2026-11-16",
     "fights": 300
    },
    "opt-combat-daggers-raid-leveling-st": {
@@ -1338,7 +1372,7 @@
     "rotation": "combat-daggers-raid",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.8673,
+    "core_share": 0.8716,
     "min_share": 0.6,
     "required": [
      "Mutilate"
@@ -1353,20 +1387,20 @@
      "Instant Poison"
     ],
     "casts_60": {
-     "Mutilate": 2.84
+     "Mutilate": 2.79
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "d128212cf090",
-    "date": "2026-11-15",
+    "fingerprint": "b796a528d3ba",
+    "date": "2026-11-16",
     "fights": 300
    },
-   "opt-combat-swords-raid-solo-60": {
+   "opt-combat-swords-raid-leveling-st": {
     "spec": "Assassination",
     "rotation": "combat-daggers-raid",
     "ok": false,
     "verdict": "FAIL: lacks Mutilate",
-    "core_share": 0.6819,
+    "core_share": 0.6863,
     "min_share": 0.6,
     "required": [
      "Mutilate"
@@ -1387,8 +1421,38 @@
      "Mutilate"
     ],
     "uncast": [],
-    "fingerprint": "cfe62bb8d29c",
-    "date": "2026-11-15",
+    "fingerprint": "c5165b0213d3",
+    "date": "2026-11-16",
+    "fights": 300
+   },
+   "opt-combat-swords-raid-solo-60": {
+    "spec": "Assassination",
+    "rotation": "combat-daggers-raid",
+    "ok": false,
+    "verdict": "FAIL: lacks Mutilate",
+    "core_share": 0.6863,
+    "min_share": 0.6,
+    "required": [
+     "Mutilate"
+    ],
+    "core": [
+     "melee",
+     "Mutilate",
+     "Eviscerate",
+     "Venom",
+     "Rupture",
+     "Deadly Poison",
+     "Instant Poison"
+    ],
+    "casts_60": {
+     "Mutilate": 0.0
+    },
+    "missing_talents": [
+     "Mutilate"
+    ],
+    "uncast": [],
+    "fingerprint": "ae7d0b404d9d",
+    "date": "2026-11-16",
     "fights": 300
    },
    "combat-open-leveling": {
@@ -1396,7 +1460,7 @@
     "rotation": "combat-swords-raid",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.7406,
+    "core_share": 0.7232,
     "min_share": 0.7,
     "required": [],
     "core": [
@@ -1409,8 +1473,8 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "66e4232e7dd8",
-    "date": "2026-11-15",
+    "fingerprint": "beeb75e8ce0d",
+    "date": "2026-11-16",
     "fights": 300
    },
    "combat-leveling": {
@@ -1418,7 +1482,7 @@
     "rotation": "combat-swords-raid",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.7689,
+    "core_share": 0.7567,
     "min_share": 0.7,
     "required": [],
     "core": [
@@ -1431,8 +1495,8 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "597f2b0205cc",
-    "date": "2026-11-15",
+    "fingerprint": "fd7684783f7a",
+    "date": "2026-11-16",
     "fights": 300
    },
    "subtlety-open-leveling": {
@@ -1440,7 +1504,7 @@
     "rotation": "subtlety-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.8113,
+    "core_share": 0.7988,
     "min_share": 0.6,
     "required": [
      "Hemorrhage",
@@ -1455,13 +1519,13 @@
      "Death Mark"
     ],
     "casts_60": {
-     "Hemorrhage": 3.97,
+     "Hemorrhage": 3.96,
      "Death Mark": 1.01
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "ce1b9870af71",
-    "date": "2026-11-15",
+    "fingerprint": "2fa8f12f6a62",
+    "date": "2026-11-16",
     "fights": 300
    },
    "subtlety-leveling": {
@@ -1469,7 +1533,7 @@
     "rotation": "subtlety-leveling",
     "ok": false,
     "verdict": "FAIL: lacks Hemorrhage, Death Mark",
-    "core_share": 0.7485,
+    "core_share": 0.7414,
     "min_share": 0.6,
     "required": [
      "Hemorrhage",
@@ -1492,8 +1556,8 @@
      "Death Mark"
     ],
     "uncast": [],
-    "fingerprint": "fcb077922424",
-    "date": "2026-11-15",
+    "fingerprint": "25a56022ea67",
+    "date": "2026-11-16",
     "fights": 300
    },
    "combat-subtlety-open-leveling": {
@@ -1501,7 +1565,7 @@
     "rotation": "subtlety-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.8955,
+    "core_share": 0.8868,
     "min_share": 0.6,
     "required": [
      "Ghostly Strike"
@@ -1515,12 +1579,12 @@
      "Eviscerate"
     ],
     "casts_60": {
-     "Ghostly Strike": 0.85
+     "Ghostly Strike": 0.82
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "8df38a3e0aac",
-    "date": "2026-11-15",
+    "fingerprint": "c2bab08ed633",
+    "date": "2026-11-16",
     "fights": 300
    }
   },
@@ -1530,7 +1594,7 @@
     "rotation": "elemental-dps",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.7534,
+    "core_share": 0.7517,
     "min_share": 0.6,
     "required": [
      "Lightning Bolt"
@@ -1542,12 +1606,12 @@
      "Flame Shock"
     ],
     "casts_60": {
-     "Lightning Bolt": 3.46
+     "Lightning Bolt": 3.49
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "71b7a6a6e036",
-    "date": "2026-11-15",
+    "fingerprint": "d260c863246e",
+    "date": "2026-11-16",
     "fights": 300
    },
    "enhancement-open-leveling": {
@@ -1555,7 +1619,7 @@
     "rotation": "enhancement-dps",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.7732,
+    "core_share": 0.7972,
     "min_share": 0.6,
     "required": [
      "Stormstrike"
@@ -1569,12 +1633,12 @@
      "Flame Shock"
     ],
     "casts_60": {
-     "Stormstrike": 2.26
+     "Stormstrike": 2.2
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "960f558bd2e1",
-    "date": "2026-11-15",
+    "fingerprint": "d8a52d795bcb",
+    "date": "2026-11-16",
     "fights": 300
    },
    "leveling-enhancement": {
@@ -1582,7 +1646,7 @@
     "rotation": "enhancement-dps",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.7858,
+    "core_share": 0.8042,
     "min_share": 0.6,
     "required": [
      "Stormstrike"
@@ -1596,12 +1660,12 @@
      "Flame Shock"
     ],
     "casts_60": {
-     "Stormstrike": 2.06
+     "Stormstrike": 2.09
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "bf8abc366b35",
-    "date": "2026-11-15",
+    "fingerprint": "52de156cc6c3",
+    "date": "2026-11-16",
     "fights": 300
    },
    "opt-enhancement-dps-solo-60": {
@@ -1609,7 +1673,7 @@
     "rotation": "enhancement-dps",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.7914,
+    "core_share": 0.8069,
     "min_share": 0.6,
     "required": [
      "Stormstrike"
@@ -1623,12 +1687,12 @@
      "Flame Shock"
     ],
     "casts_60": {
-     "Stormstrike": 1.87
+     "Stormstrike": 1.9
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "61b886f5ad83",
-    "date": "2026-11-15",
+    "fingerprint": "96cb5367ff55",
+    "date": "2026-11-16",
     "fights": 300
    },
    "opt-enhancement-dps-leveling-st": {
@@ -1636,7 +1700,7 @@
     "rotation": "enhancement-dps",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.7914,
+    "core_share": 0.8069,
     "min_share": 0.6,
     "required": [
      "Stormstrike"
@@ -1650,12 +1714,12 @@
      "Flame Shock"
     ],
     "casts_60": {
-     "Stormstrike": 1.87
+     "Stormstrike": 1.9
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "61b886f5ad83",
-    "date": "2026-11-15",
+    "fingerprint": "96cb5367ff55",
+    "date": "2026-11-16",
     "fights": 300
    },
    "restoration-leveling": {
@@ -1670,83 +1734,8 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "69dd5b51f49e",
-    "date": "2026-11-15",
-    "fights": 300
-   },
-   "elemental-enhancement-open-leveling": {
-    "spec": "Hybrid Elemental/Enhancement",
-    "rotation": "elemental-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.7525,
-    "min_share": 0.5,
-    "required": [
-     "Lightning Bolt"
-    ],
-    "core": [
-     "Lightning Bolt",
-     "Chain Lightning",
-     "Earth Shock",
-     "Flame Shock"
-    ],
-    "casts_60": {
-     "Lightning Bolt": 3.42
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "33e066b1bcab",
-    "date": "2026-11-15",
-    "fights": 300
-   },
-   "opt-elemental-dps-leveling-st": {
-    "spec": "Hybrid Elemental/Enhancement",
-    "rotation": "elemental-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.7908,
-    "min_share": 0.5,
-    "required": [
-     "Lightning Bolt"
-    ],
-    "core": [
-     "Lightning Bolt",
-     "Chain Lightning",
-     "Earth Shock",
-     "Flame Shock"
-    ],
-    "casts_60": {
-     "Lightning Bolt": 3.94
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "9ae23c43291b",
-    "date": "2026-11-15",
-    "fights": 300
-   },
-   "opt-enhancement-dps-leveling-aoe": {
-    "spec": "Hybrid Elemental/Enhancement",
-    "rotation": "elemental-dps",
-    "ok": true,
-    "verdict": "OK",
-    "core_share": 0.7164,
-    "min_share": 0.5,
-    "required": [
-     "Lightning Bolt"
-    ],
-    "core": [
-     "Lightning Bolt",
-     "Chain Lightning",
-     "Earth Shock",
-     "Flame Shock"
-    ],
-    "casts_60": {
-     "Lightning Bolt": 3.09
-    },
-    "missing_talents": [],
-    "uncast": [],
-    "fingerprint": "5ba483e48fb8",
-    "date": "2026-11-15",
+    "fingerprint": "1fcfa19ac4d7",
+    "date": "2026-11-16",
     "fights": 300
    }
   },
@@ -3467,22 +3456,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Holy Shield": 2.02
+     "Holy Shield": 2.0
     },
-    "core_share": 0.7191,
+    "core_share": 0.7118,
     "min_share": 0.6,
-    "weighted": 29.71,
+    "weighted": 29.77,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.295,
-     "Holy Strike": 0.225,
-     "Judgement": 0.178,
+     "Melee": 0.297,
+     "Holy Strike": 0.23,
      "Holy Shield": 0.17,
-     "Seal of Fury": 0.076,
-     "Reckoning": 0.056
+     "Judgement": 0.168,
+     "Seal of Fury": 0.077,
+     "Reckoning": 0.058
     }
    },
    {
@@ -3506,21 +3495,21 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Holy Shield": 2.0
+     "Holy Shield": 2.01
     },
-    "core_share": 0.7189,
+    "core_share": 0.7197,
     "min_share": 0.6,
-    "weighted": 29.18,
+    "weighted": 29.29,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.294,
-     "Holy Strike": 0.224,
-     "Judgement": 0.175,
-     "Holy Shield": 0.175,
-     "Seal of Fury": 0.075,
+     "Melee": 0.301,
+     "Holy Strike": 0.223,
+     "Holy Shield": 0.178,
+     "Judgement": 0.164,
+     "Seal of Fury": 0.076,
      "Reckoning": 0.057
     }
    },
@@ -3545,20 +3534,20 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Judgement": 2.7
+     "Judgement": 2.76
     },
     "core_share": 1.0,
     "min_share": 0.6,
-    "weighted": 26.11,
+    "weighted": 26.33,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.351,
-     "Judgement": 0.25,
-     "Holy Strike": 0.208,
-     "Seal of Command": 0.19
+     "Melee": 0.359,
+     "Judgement": 0.228,
+     "Holy Strike": 0.218,
+     "Seal of Command": 0.195
     }
    },
    {
@@ -3582,48 +3571,54 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Judgement": 2.75
+     "Judgement": 2.82
     },
     "core_share": 1.0,
     "min_share": 0.6,
-    "weighted": 26.31,
+    "weighted": 26.49,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.362,
-     "Judgement": 0.236,
-     "Holy Strike": 0.218,
-     "Seal of Command": 0.184
+     "Melee": 0.371,
+     "Holy Strike": 0.222,
+     "Judgement": 0.216,
+     "Seal of Command": 0.191
     }
    },
    {
-    "spec": "Hybrid Holy/Protection",
-    "name": "Holy-Prot",
-    "build": "hybrid-holy-protection-open-leveling",
-    "split": "21/16/14",
+    "spec": "Hybrid Holy/Retribution",
+    "name": "Shockadin",
+    "build": "shockadin-open-leveling",
+    "split": "22/0/29",
     "rotation": "holy-leveling",
     "rules": "tuned",
     "kind": "page",
-    "required": [],
-    "core": [],
+    "required": [
+     "Holy Shock"
+    ],
+    "core": [
+     "Holy Shock"
+    ],
     "rule_issues": [],
-    "casts_60": {},
-    "core_share": null,
-    "min_share": null,
-    "weighted": 32.22,
-    "verdict": "no rule",
+    "casts_60": {
+     "Holy Shock": 1.97
+    },
+    "core_share": 0.2552,
+    "min_share": 0.12,
+    "weighted": 30.71,
+    "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Judgement": 0.25,
-     "Holy Shock": 0.219,
-     "Melee": 0.185,
-     "Hammer of Wrath": 0.136,
-     "Holy Strike": 0.108,
-     "Seal of Command": 0.102
+     "Holy Shock": 0.255,
+     "Judgement": 0.202,
+     "Melee": 0.175,
+     "Hammer of Wrath": 0.156,
+     "Holy Strike": 0.118,
+     "Seal of Command": 0.094
     }
    },
    {
@@ -3647,20 +3642,20 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Judgement": 3.0
+     "Judgement": 3.05
     },
     "core_share": 1.0,
     "min_share": 0.6,
-    "weighted": 25.7,
+    "weighted": 25.99,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.35,
-     "Judgement": 0.26,
-     "Holy Strike": 0.209,
-     "Seal of Command": 0.181
+     "Melee": 0.364,
+     "Judgement": 0.24,
+     "Holy Strike": 0.213,
+     "Seal of Command": 0.183
     }
    },
    {
@@ -3684,20 +3679,20 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Judgement": 3.16
+     "Judgement": 3.24
     },
     "core_share": 1.0,
     "min_share": 0.6,
-    "weighted": 26.39,
+    "weighted": 26.63,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.359,
-     "Judgement": 0.268,
-     "Holy Strike": 0.199,
-     "Seal of Command": 0.174
+     "Melee": 0.366,
+     "Judgement": 0.242,
+     "Holy Strike": 0.212,
+     "Seal of Command": 0.18
     }
    },
    {
@@ -3721,20 +3716,20 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Judgement": 2.78
+     "Judgement": 2.87
     },
     "core_share": 1.0,
     "min_share": 0.6,
-    "weighted": 26.08,
+    "weighted": 26.43,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Melee": 0.367,
-     "Judgement": 0.239,
-     "Holy Strike": 0.209,
-     "Seal of Command": 0.184
+     "Melee": 0.376,
+     "Holy Strike": 0.221,
+     "Judgement": 0.216,
+     "Seal of Command": 0.187
     }
    }
   ],
@@ -4113,22 +4108,62 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Mutilate": 2.95
+     "Mutilate": 2.85
     },
-    "core_share": 0.919,
+    "core_share": 0.9268,
     "min_share": 0.6,
-    "weighted": 22.29,
+    "weighted": 21.79,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Eviscerate": 0.376,
-     "Mutilate": 0.232,
-     "Instant Poison": 0.124,
-     "Melee": 0.106,
-     "Garrote": 0.072,
-     "Melee (off-hand)": 0.05
+     "Eviscerate": 0.375,
+     "Instant Poison": 0.21,
+     "Mutilate": 0.199,
+     "Melee": 0.098,
+     "Garrote": 0.066,
+     "Melee (off-hand)": 0.045
+    }
+   },
+   {
+    "spec": "Assassination",
+    "name": "Assassination",
+    "build": "leveling-combat-swords",
+    "split": "31/20/0",
+    "rotation": "combat-daggers-raid",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Mutilate"
+    ],
+    "core": [
+     "melee",
+     "Mutilate",
+     "Eviscerate",
+     "Venom",
+     "Rupture",
+     "Deadly Poison",
+     "Instant Poison"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Mutilate": 2.62
+    },
+    "core_share": 0.887,
+    "min_share": 0.6,
+    "weighted": 23.34,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Eviscerate": 0.335,
+     "Instant Poison": 0.22,
+     "Mutilate": 0.167,
+     "Melee": 0.111,
+     "Garrote": 0.078,
+     "Melee (off-hand)": 0.054
     }
    },
    {
@@ -4153,22 +4188,64 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Mutilate": 2.84
+     "Mutilate": 2.79
     },
-    "core_share": 0.8673,
+    "core_share": 0.8716,
     "min_share": 0.6,
-    "weighted": 23.96,
+    "weighted": 23.94,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Eviscerate": 0.293,
-     "Mutilate": 0.234,
-     "Melee": 0.125,
-     "Instant Poison": 0.115,
-     "Garrote": 0.095,
-     "Melee (off-hand)": 0.058
+     "Eviscerate": 0.299,
+     "Mutilate": 0.199,
+     "Instant Poison": 0.194,
+     "Melee": 0.121,
+     "Garrote": 0.093,
+     "Melee (off-hand)": 0.06
+    }
+   },
+   {
+    "spec": "Assassination",
+    "name": "Assassination",
+    "build": "opt-combat-swords-raid-leveling-st",
+    "split": "33/16/2",
+    "rotation": "combat-daggers-raid",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Mutilate"
+    ],
+    "core": [
+     "melee",
+     "Mutilate",
+     "Eviscerate",
+     "Venom",
+     "Rupture",
+     "Deadly Poison",
+     "Instant Poison"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Mutilate": 0.0
+    },
+    "core_share": 0.6863,
+    "min_share": 0.6,
+    "weighted": 24.06,
+    "verdict": "FAIL: lacks Mutilate",
+    "ok": false,
+    "missing_talents": [
+     "Mutilate"
+    ],
+    "uncast": [],
+    "top_shares": {
+     "Eviscerate": 0.296,
+     "Instant Poison": 0.187,
+     "Sinister Strike": 0.167,
+     "Melee": 0.137,
+     "Garrote": 0.105,
+     "Melee (off-hand)": 0.066
     }
    },
    {
@@ -4195,9 +4272,9 @@
     "casts_60": {
      "Mutilate": 0.0
     },
-    "core_share": 0.6819,
+    "core_share": 0.6863,
     "min_share": 0.6,
-    "weighted": 24.52,
+    "weighted": 24.1,
     "verdict": "FAIL: lacks Mutilate",
     "ok": false,
     "missing_talents": [
@@ -4205,12 +4282,12 @@
     ],
     "uncast": [],
     "top_shares": {
-     "Eviscerate": 0.309,
+     "Eviscerate": 0.296,
+     "Instant Poison": 0.187,
      "Sinister Strike": 0.167,
-     "Melee": 0.14,
-     "Instant Poison": 0.124,
-     "Garrote": 0.107,
-     "Melee (off-hand)": 0.068
+     "Melee": 0.137,
+     "Garrote": 0.105,
+     "Melee (off-hand)": 0.066
     }
    },
    {
@@ -4231,20 +4308,20 @@
     ],
     "rule_issues": [],
     "casts_60": {},
-    "core_share": 0.7406,
+    "core_share": 0.7232,
     "min_share": 0.7,
-    "weighted": 20.64,
+    "weighted": 20.51,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Eviscerate": 0.288,
-     "Sinister Strike": 0.249,
-     "Instant Poison": 0.125,
-     "Melee": 0.116,
+     "Eviscerate": 0.279,
+     "Sinister Strike": 0.245,
+     "Instant Poison": 0.163,
+     "Melee": 0.111,
      "Melee (off-hand)": 0.079,
-     "Garrote": 0.074
+     "Garrote": 0.072
     }
    },
    {
@@ -4265,20 +4342,20 @@
     ],
     "rule_issues": [],
     "casts_60": {},
-    "core_share": 0.7689,
+    "core_share": 0.7567,
     "min_share": 0.7,
-    "weighted": 22.06,
+    "weighted": 21.85,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Eviscerate": 0.274,
-     "Sinister Strike": 0.245,
-     "Melee": 0.135,
-     "Melee (off-hand)": 0.097,
-     "Garrote": 0.086,
-     "Instant Poison": 0.081
+     "Eviscerate": 0.27,
+     "Sinister Strike": 0.241,
+     "Melee": 0.134,
+     "Instant Poison": 0.114,
+     "Melee (off-hand)": 0.096,
+     "Garrote": 0.086
     }
    },
    {
@@ -4303,23 +4380,23 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Hemorrhage": 3.97,
+     "Hemorrhage": 3.96,
      "Death Mark": 1.01
     },
-    "core_share": 0.8113,
+    "core_share": 0.7988,
     "min_share": 0.6,
-    "weighted": 22.3,
+    "weighted": 22.06,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Eviscerate": 0.243,
-     "Death Mark": 0.243,
+     "Death Mark": 0.245,
+     "Eviscerate": 0.23,
      "Melee": 0.118,
-     "Hemorrhage": 0.116,
-     "Garrote": 0.103,
-     "Instant Poison": 0.058
+     "Hemorrhage": 0.115,
+     "Garrote": 0.102,
+     "Instant Poison": 0.091
     }
    },
    {
@@ -4347,9 +4424,9 @@
      "Hemorrhage": 0.0,
      "Death Mark": 0.0
     },
-    "core_share": 0.7485,
+    "core_share": 0.7414,
     "min_share": 0.6,
-    "weighted": 23.35,
+    "weighted": 23.2,
     "verdict": "FAIL: lacks Hemorrhage, Death Mark",
     "ok": false,
     "missing_talents": [
@@ -4358,12 +4435,12 @@
     ],
     "uncast": [],
     "top_shares": {
-     "Eviscerate": 0.311,
+     "Eviscerate": 0.305,
      "Ambush": 0.199,
-     "Melee": 0.139,
-     "Sinister Strike": 0.079,
-     "Melee (off-hand)": 0.063,
-     "Instant Poison": 0.063
+     "Melee": 0.137,
+     "Instant Poison": 0.096,
+     "Sinister Strike": 0.082,
+     "Melee (off-hand)": 0.063
     }
    },
    {
@@ -4387,22 +4464,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Ghostly Strike": 0.85
+     "Ghostly Strike": 0.82
     },
-    "core_share": 0.8955,
+    "core_share": 0.8868,
     "min_share": 0.6,
-    "weighted": 20.9,
+    "weighted": 20.71,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Eviscerate": 0.364,
+     "Eviscerate": 0.354,
      "Ambush": 0.215,
      "Melee": 0.11,
-     "Hemorrhage": 0.099,
-     "Melee (off-hand)": 0.077,
-     "Instant Poison": 0.051
+     "Hemorrhage": 0.1,
+     "Instant Poison": 0.079,
+     "Melee (off-hand)": 0.078
     }
    }
   ],
@@ -4426,22 +4503,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Lightning Bolt": 3.46
+     "Lightning Bolt": 3.49
     },
-    "core_share": 0.7534,
+    "core_share": 0.7517,
     "min_share": 0.6,
-    "weighted": 28.5,
+    "weighted": 28.43,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Lightning Bolt": 0.486,
+     "Lightning Bolt": 0.484,
      "Flame Shock": 0.135,
      "Earth Shock": 0.132,
-     "Lightning Shield": 0.097,
-     "Melee": 0.075,
-     "Windfury": 0.04
+     "Lightning Shield": 0.098,
+     "Melee": 0.08,
+     "Windfury": 0.036
     }
    },
    {
@@ -4465,22 +4542,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Stormstrike": 2.26
+     "Stormstrike": 2.2
     },
-    "core_share": 0.7732,
+    "core_share": 0.7972,
     "min_share": 0.6,
-    "weighted": 26.8,
+    "weighted": 26.92,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Earth Shock": 0.324,
-     "Melee": 0.192,
-     "Windfury": 0.156,
-     "Lightning Shield": 0.123,
-     "Stormstrike": 0.101,
-     "Lightning Bolt": 0.069
+     "Earth Shock": 0.333,
+     "Melee": 0.301,
+     "Stormstrike": 0.163,
+     "Lightning Shield": 0.122,
+     "Lightning Bolt": 0.045,
+     "Searing Totem": 0.036
     }
    },
    {
@@ -4504,22 +4581,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Stormstrike": 2.06
+     "Stormstrike": 2.09
     },
-    "core_share": 0.7858,
+    "core_share": 0.8042,
     "min_share": 0.6,
-    "weighted": 27.39,
+    "weighted": 27.22,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Earth Shock": 0.34,
-     "Melee": 0.198,
-     "Windfury": 0.156,
+     "Earth Shock": 0.334,
+     "Melee": 0.311,
+     "Stormstrike": 0.159,
      "Lightning Shield": 0.111,
-     "Stormstrike": 0.091,
-     "Lightning Bolt": 0.065
+     "Lightning Bolt": 0.049,
+     "Searing Totem": 0.036
     }
    },
    {
@@ -4543,22 +4620,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Stormstrike": 1.87
+     "Stormstrike": 1.9
     },
-    "core_share": 0.7914,
+    "core_share": 0.8069,
     "min_share": 0.6,
-    "weighted": 27.63,
+    "weighted": 27.8,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Earth Shock": 0.365,
-     "Melee": 0.198,
-     "Windfury": 0.146,
-     "Lightning Shield": 0.13,
-     "Stormstrike": 0.082,
-     "Lightning Bolt": 0.04
+     "Earth Shock": 0.374,
+     "Melee": 0.298,
+     "Stormstrike": 0.136,
+     "Lightning Shield": 0.132,
+     "Searing Totem": 0.039,
+     "Lightning Bolt": 0.022
     }
    },
    {
@@ -4582,22 +4659,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Stormstrike": 1.87
+     "Stormstrike": 1.9
     },
-    "core_share": 0.7914,
+    "core_share": 0.8069,
     "min_share": 0.6,
-    "weighted": 27.63,
+    "weighted": 27.8,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Earth Shock": 0.365,
-     "Melee": 0.198,
-     "Windfury": 0.146,
-     "Lightning Shield": 0.13,
-     "Stormstrike": 0.082,
-     "Lightning Bolt": 0.04
+     "Earth Shock": 0.374,
+     "Melee": 0.298,
+     "Stormstrike": 0.136,
+     "Lightning Shield": 0.132,
+     "Searing Totem": 0.039,
+     "Lightning Bolt": 0.022
     }
    },
    {
@@ -4614,128 +4691,16 @@
     "casts_60": {},
     "core_share": null,
     "min_share": null,
-    "weighted": 37.64,
+    "weighted": 37.46,
     "verdict": "no rule",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Earth Shock": 0.466,
-     "Melee": 0.261,
-     "Windfury": 0.131,
-     "Lightning Shield": 0.075,
-     "Searing Totem": 0.067
-    }
-   },
-   {
-    "spec": "Hybrid Elemental/Enhancement",
-    "name": "Elemental-Enhancement",
-    "build": "elemental-enhancement-open-leveling",
-    "split": "26/22/3",
-    "rotation": "elemental-dps",
-    "rules": "tuned",
-    "kind": "page",
-    "required": [
-     "Lightning Bolt"
-    ],
-    "core": [
-     "Lightning Bolt",
-     "Chain Lightning",
-     "Earth Shock",
-     "Flame Shock"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Lightning Bolt": 3.42
-    },
-    "core_share": 0.7525,
-    "min_share": 0.5,
-    "weighted": 29.22,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Lightning Bolt": 0.491,
-     "Flame Shock": 0.136,
-     "Earth Shock": 0.126,
-     "Lightning Shield": 0.108,
-     "Melee": 0.072,
-     "Windfury": 0.034
-    }
-   },
-   {
-    "spec": "Hybrid Elemental/Enhancement",
-    "name": "Elemental-Enhancement",
-    "build": "opt-elemental-dps-leveling-st",
-    "split": "26/17/8",
-    "rotation": "elemental-dps",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Lightning Bolt"
-    ],
-    "core": [
-     "Lightning Bolt",
-     "Chain Lightning",
-     "Earth Shock",
-     "Flame Shock"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Lightning Bolt": 3.94
-    },
-    "core_share": 0.7908,
-    "min_share": 0.5,
-    "weighted": 29.72,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Lightning Bolt": 0.53,
-     "Flame Shock": 0.138,
-     "Earth Shock": 0.122,
-     "Lightning Shield": 0.091,
-     "Melee": 0.055,
-     "Searing Totem": 0.036
-    }
-   },
-   {
-    "spec": "Hybrid Elemental/Enhancement",
-    "name": "Elemental-Enhancement",
-    "build": "opt-enhancement-dps-leveling-aoe",
-    "split": "29/22/0",
-    "rotation": "elemental-dps",
-    "rules": "tuned",
-    "kind": "slot",
-    "required": [
-     "Lightning Bolt"
-    ],
-    "core": [
-     "Lightning Bolt",
-     "Chain Lightning",
-     "Earth Shock",
-     "Flame Shock"
-    ],
-    "rule_issues": [],
-    "casts_60": {
-     "Lightning Bolt": 3.09
-    },
-    "core_share": 0.7164,
-    "min_share": 0.5,
-    "weighted": 32.59,
-    "verdict": "OK",
-    "ok": true,
-    "missing_talents": [],
-    "uncast": [],
-    "top_shares": {
-     "Lightning Bolt": 0.444,
-     "Flame Shock": 0.153,
-     "Earth Shock": 0.12,
-     "Lightning Shield": 0.118,
-     "Melee": 0.084,
-     "Windfury": 0.045
+     "Earth Shock": 0.457,
+     "Melee": 0.401,
+     "Lightning Shield": 0.077,
+     "Searing Totem": 0.065
     }
    }
   ],

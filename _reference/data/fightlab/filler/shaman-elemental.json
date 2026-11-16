@@ -3,7 +3,7 @@
  "spec": "Elemental",
  "build": "elemental-open-leveling",
  "rotation": "elemental-dps",
- "date": "2026-11-09",
+ "date": "2026-11-15",
  "fights": 1500,
  "start_order": [
   {
@@ -25,16 +25,16 @@
    "points": 5
   },
   {
-   "levels": "23-24",
-   "tree": "Enhancement",
-   "talent": "Ancestral Knowledge",
-   "points": 2
-  },
-  {
-   "levels": "25-27",
+   "levels": "23-25",
    "tree": "Enhancement",
    "talent": "Mental Dexterity",
    "points": 3
+  },
+  {
+   "levels": "26-27",
+   "tree": "Enhancement",
+   "talent": "Improved Lightning Shield",
+   "points": 2
   },
   {
    "levels": "28",
@@ -67,34 +67,40 @@
    "points": 1
   },
   {
-   "levels": "40-43",
+   "levels": "40",
+   "tree": "Elemental",
+   "talent": "Call of Flame",
+   "points": 1
+  },
+  {
+   "levels": "41-44",
    "tree": "Elemental",
    "talent": "Concussion",
    "points": 4
   },
   {
-   "levels": "44-46",
+   "levels": "45-47",
    "tree": "Elemental",
    "talent": "Eye of the Storm",
    "points": 3
   },
   {
-   "levels": "47-48",
+   "levels": "48",
    "tree": "Elemental",
    "talent": "Reverberation",
-   "points": 2
-  },
-  {
-   "levels": "49",
-   "tree": "Elemental",
-   "talent": "Call of Thunder",
    "points": 1
   },
   {
-   "levels": "50-52",
+   "levels": "49-51",
    "tree": "Elemental",
    "talent": "Lightning Overload",
    "points": 3
+  },
+  {
+   "levels": "52",
+   "tree": "Elemental",
+   "talent": "Call of Thunder",
+   "points": 1
   },
   {
    "levels": "53",
@@ -109,63 +115,38 @@
    "points": 5
   },
   {
-   "levels": "59-60",
+   "levels": "59",
+   "tree": "Elemental",
+   "talent": "Reverberation",
+   "points": 1
+  },
+  {
+   "levels": "60",
    "tree": "Elemental",
    "talent": "Elemental Reach",
-   "points": 2
+   "points": 1
   }
  ],
  "steps": [
   {
-   "weighted": 29.195,
+   "weighted": 28.708,
    "values_at_60": {
-    "Elemental Fury": -0.141,
-    "Elemental Reach": -0.046,
-    "Mindfulness": -0.121,
-    "Shamanistic Focus": -3.061
+    "Elemental Fury": -0.194,
+    "Elemental Reach": -0.11,
+    "Mindfulness": -0.29,
+    "Reverberation": -0.348,
+    "Shamanistic Focus": -3.104
    },
-   "zero": [
-    "Elemental Reach"
-   ]
-  },
-  {
-   "weighted": 29.191,
-   "values_at_60": {
-    "Call of Flame": -0.072,
-    "Elemental Fury": -0.166,
-    "Elemental Reach": -0.081,
-    "Mindfulness": -0.253,
-    "Shamanistic Focus": -3.044
-   },
-   "zero": [
-    "Call of Flame",
-    "Elemental Reach"
-   ]
+   "zero": []
   }
  ],
  "moves": [
   {
-   "from": "Elemental Reach",
-   "to": "Call of Flame",
-   "level": 60,
-   "seed3": -0.0001,
-   "seed4": 0.0003,
-   "why": "no loss"
-  },
-  {
-   "from": "Ancestral Knowledge",
-   "to": "Improved Lightning Shield",
-   "level": 24,
-   "seed3": -0.0025,
-   "seed4": -0.0017,
-   "why": "gate"
-  },
-  {
-   "from": "Ancestral Knowledge",
-   "to": "Improved Lightning Shield",
-   "level": 23,
-   "seed3": -0.0029,
-   "seed4": -0.001,
+   "from": "Concussion",
+   "to": "Reverberation",
+   "level": 44,
+   "seed3": -0.0013,
+   "seed4": -0.0014,
    "why": "gate"
   }
  ],
@@ -189,16 +170,16 @@
    "points": 5
   },
   {
-   "levels": "23-24",
-   "tree": "Enhancement",
-   "talent": "Improved Lightning Shield",
-   "points": 2
-  },
-  {
-   "levels": "25-27",
+   "levels": "23-25",
    "tree": "Enhancement",
    "talent": "Mental Dexterity",
    "points": 3
+  },
+  {
+   "levels": "26-27",
+   "tree": "Enhancement",
+   "talent": "Improved Lightning Shield",
+   "points": 2
   },
   {
    "levels": "28",
@@ -231,34 +212,46 @@
    "points": 1
   },
   {
-   "levels": "40-43",
+   "levels": "40",
    "tree": "Elemental",
-   "talent": "Concussion",
-   "points": 4
+   "talent": "Call of Flame",
+   "points": 1
   },
   {
-   "levels": "44-46",
+   "levels": "41-43",
+   "tree": "Elemental",
+   "talent": "Concussion",
+   "points": 3
+  },
+  {
+   "levels": "44",
+   "tree": "Elemental",
+   "talent": "Reverberation",
+   "points": 1
+  },
+  {
+   "levels": "45-47",
    "tree": "Elemental",
    "talent": "Eye of the Storm",
    "points": 3
   },
   {
-   "levels": "47-48",
+   "levels": "48",
    "tree": "Elemental",
    "talent": "Reverberation",
-   "points": 2
-  },
-  {
-   "levels": "49",
-   "tree": "Elemental",
-   "talent": "Call of Thunder",
    "points": 1
   },
   {
-   "levels": "50-52",
+   "levels": "49-51",
    "tree": "Elemental",
    "talent": "Lightning Overload",
    "points": 3
+  },
+  {
+   "levels": "52",
+   "tree": "Elemental",
+   "talent": "Call of Thunder",
+   "points": 1
   },
   {
    "levels": "53",
@@ -275,13 +268,13 @@
   {
    "levels": "59",
    "tree": "Elemental",
-   "talent": "Elemental Reach",
+   "talent": "Reverberation",
    "points": 1
   },
   {
    "levels": "60",
    "tree": "Elemental",
-   "talent": "Call of Flame",
+   "talent": "Elemental Reach",
    "points": 1
   }
  ],
@@ -294,11 +287,11 @@
     ],
     [
      "Concussion",
-     4
+     3
     ],
     [
      "Reverberation",
-     3
+     4
     ],
     [
      "Elemental Alacrity",
@@ -382,16 +375,16 @@
     "points": 5
    },
    {
-    "levels": "23-24",
-    "tree": "Enhancement",
-    "talent": "Improved Lightning Shield",
-    "points": 2
-   },
-   {
-    "levels": "25-27",
+    "levels": "23-25",
     "tree": "Enhancement",
     "talent": "Mental Dexterity",
     "points": 3
+   },
+   {
+    "levels": "26-27",
+    "tree": "Enhancement",
+    "talent": "Improved Lightning Shield",
+    "points": 2
    },
    {
     "levels": "28",
@@ -424,34 +417,46 @@
     "points": 1
    },
    {
-    "levels": "40-43",
+    "levels": "40",
     "tree": "Elemental",
-    "talent": "Concussion",
-    "points": 4
+    "talent": "Call of Flame",
+    "points": 1
    },
    {
-    "levels": "44-46",
+    "levels": "41-43",
+    "tree": "Elemental",
+    "talent": "Concussion",
+    "points": 3
+   },
+   {
+    "levels": "44",
+    "tree": "Elemental",
+    "talent": "Reverberation",
+    "points": 1
+   },
+   {
+    "levels": "45-47",
     "tree": "Elemental",
     "talent": "Eye of the Storm",
     "points": 3
    },
    {
-    "levels": "47-48",
+    "levels": "48",
     "tree": "Elemental",
     "talent": "Reverberation",
-    "points": 2
-   },
-   {
-    "levels": "49",
-    "tree": "Elemental",
-    "talent": "Call of Thunder",
     "points": 1
    },
    {
-    "levels": "50-52",
+    "levels": "49-51",
     "tree": "Elemental",
     "talent": "Lightning Overload",
     "points": 3
+   },
+   {
+    "levels": "52",
+    "tree": "Elemental",
+    "talent": "Call of Thunder",
+    "points": 1
    },
    {
     "levels": "53",
@@ -468,16 +473,16 @@
    {
     "levels": "59",
     "tree": "Elemental",
-    "talent": "Elemental Reach",
+    "talent": "Reverberation",
     "points": 1
    },
    {
     "levels": "60",
     "tree": "Elemental",
-    "talent": "Call of Flame",
+    "talent": "Elemental Reach",
     "points": 1
    }
   ],
-  "note": "2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Elemental Reach to Call of Flame at 60 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Ancestral Knowledge to Improved Lightning Shield at 24 (gate: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Ancestral Knowledge to Improved Lightning Shield at 23 (gate: -0.3% seed 3, -0.1% seed 4, level-weighted time per kill)."
+  "note": "2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Concussion to Reverberation at 44 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill)."
  }
 }

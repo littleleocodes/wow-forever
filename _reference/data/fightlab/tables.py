@@ -210,6 +210,16 @@ def _effect_amount(row, level):
     return math.floor(base + max(0, lvl - sl) * gain)
 
 
+def rank_amounts(cls, name, rank_level, level):
+    """{kind: the rank's amount at `level`} from spell_scaling.json's rows (the client's rule, _effect_amount), or {} without rows: the
+    absolute amounts, for numbers a module reads from a referenced spell (the shaman's imbues: attack_power, proc, direct; 2026-11-15)."""
+    rec = _SCALING.get(cls, {}).get(name, {}).get(str(int(rank_level)))
+    if not rec:
+        return {}
+    return {kind: sum(_effect_amount(r, level) for r in rows) for kind, rows in rec.items() if isinstance(rows, list) and rows
+            and kind not in ("via",) and all(isinstance(r, list) for r in rows)}
+
+
 def rank_level_factor(cls, name, rank_level, level):
     """{"direct", "periodic", "absorb"}: the rank's amount at `level` over its tooltip (level-60) amount, for each kind the rank has
     (a kind without a gain reads 1.0: Immolate's periodic part); {} when nothing scales at that level."""

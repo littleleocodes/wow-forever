@@ -14,9 +14,12 @@
   }
  },
  "eat_below": 0.4,
+ "knobs": {
+  "POISONS": 1
+ },
  "class": "rogue",
  "spec": "combat-swords-raid",
- "build": "leveling-combat-swords",
+ "build": "combat-open-leveling",
  "levels": [
   20,
   30,
@@ -24,107 +27,73 @@
   50,
   60
  ],
- "date": "2026-11-03",
+ "date": "2026-11-15",
  "signature": {
   "required": [],
-  "build_spec": "Assassination",
+  "build_spec": "Combat",
   "dropped_saved_rules": [],
-  "core_share_before": 0.7193143041350272,
-  "core_share_after": 0.636317216631504,
-  "min_share": 0.6,
-  "floor_reached": null
+  "core_share_before": 0.7464116698156457,
+  "core_share_after": 0.7252464375016373,
+  "min_share": 0.7,
+  "floor_reached": null,
+  "played_before": true,
+  "played_after": true
  },
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "never cast Cheap Shot",
+   "change": "POISONS = 1",
    "rule": [
-    "off",
-    "Cheap Shot",
-    true
+    "knob",
+    "POISONS",
+    1
    ],
-   "gain_seed1": 0.06648191272335224,
-   "gain_seed2": 0.05897036962718927
-  },
-  {
-   "round": 2,
-   "change": "never cast Slice and Dice",
-   "rule": [
-    "off",
-    "Slice and Dice",
-    true
-   ],
-   "gain_seed1": 0.044521016478027864,
-   "gain_seed2": 0.04689622894806289
-  },
-  {
-   "round": 3,
-   "change": "eat below 40% health",
-   "rule": [
-    "eat_below",
-    null,
-    0.4
-   ],
-   "gain_seed1": 0.04523147836371488,
-   "gain_seed2": 0.042138718825625365
-  },
-  {
-   "round": 4,
-   "change": "never cast Kick",
-   "rule": [
-    "off",
-    "Kick",
-    true
-   ],
-   "gain_seed1": 0.005255488058203861,
-   "gain_seed2": 0.012722421934291406
-  },
-  {
-   "round": 5,
-   "change": "never cast Kidney Shot",
-   "rule": [
-    "off",
-    "Kidney Shot",
-    true
-   ],
-   "gain_seed1": 0.008892413832372492,
-   "gain_seed2": 0.007698261715310628
+   "gain_seed1": 0.010547051817527908,
+   "gain_seed2": 0.008719061486549773
   }
  ],
- "weighted_before": 25.591810922414737,
- "weighted_after": 21.56670166658592,
+ "weighted_before": 20.501923333217,
+ "weighted_after": 20.290948333219482,
  "per_level": {
   "20": {
-   "before": 15.825833333264997,
-   "after": 15.06466666660728,
+   "before": 18.79359999989715,
+   "after": 18.54033333323307,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 20.93698464665052,
-   "after": 17.624999999911726,
+   "before": 18.92836666656329,
+   "after": 18.828533333231253,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 26.600911786221612,
-   "after": 21.422399999872145,
+   "before": 20.823399999879403,
+   "after": 20.705466666547622,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 27.382901639151722,
-   "after": 22.94529999990353,
+   "before": 21.129633333211906,
+   "after": 20.96836666654722,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 29.00924041686135,
-   "after": 24.652266666627064,
+   "before": 21.120733333213128,
+   "after": 20.76483333321719,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
+ },
+ "retune": {
+  "times": {
+   "saved": 20.502,
+   "continued": 20.291
+  },
+  "installed": "continued",
+  "reference_ok": true
  }
 }

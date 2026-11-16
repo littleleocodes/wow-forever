@@ -43,226 +43,6 @@
    "points": 1
   },
   {
-   "levels": "23-24",
-   "tree": "Enhancement",
-   "talent": "Elemental Weapons",
-   "points": 2
-  },
-  {
-   "levels": "25",
-   "tree": "Enhancement",
-   "talent": "Stormstrike",
-   "points": 1
-  },
-  {
-   "levels": "26-30",
-   "tree": "Restoration",
-   "talent": "Tidal Focus",
-   "points": 5
-  },
-  {
-   "levels": "31-34",
-   "tree": "Enhancement",
-   "talent": "Flurry",
-   "points": 4
-  },
-  {
-   "levels": "35-36",
-   "tree": "Enhancement",
-   "talent": "Mental Quickness",
-   "points": 2
-  },
-  {
-   "levels": "37",
-   "tree": "Enhancement",
-   "talent": "Flurry",
-   "points": 1
-  },
-  {
-   "levels": "38-39",
-   "tree": "Enhancement",
-   "talent": "Improved Stormstrike",
-   "points": 2
-  },
-  {
-   "levels": "40-44",
-   "tree": "Enhancement",
-   "talent": "Maelstrom Weapon",
-   "points": 5
-  },
-  {
-   "levels": "45",
-   "tree": "Enhancement",
-   "talent": "Rage of the Farseer",
-   "points": 1
-  },
-  {
-   "levels": "46-50",
-   "tree": "Elemental",
-   "talent": "Concussion",
-   "points": 5
-  },
-  {
-   "levels": "51-55",
-   "tree": "Elemental",
-   "talent": "Convection",
-   "points": 5
-  },
-  {
-   "levels": "56",
-   "tree": "Elemental",
-   "talent": "Elemental Focus",
-   "points": 1
-  },
-  {
-   "levels": "57",
-   "tree": "Elemental",
-   "talent": "Elemental Warding",
-   "points": 1
-  },
-  {
-   "levels": "58-59",
-   "tree": "Restoration",
-   "talent": "Totemic Focus",
-   "points": 2
-  },
-  {
-   "levels": "60",
-   "tree": "Restoration",
-   "talent": "Natural Grace",
-   "points": 1
-  }
- ],
- "steps": [
-  {
-   "weighted": 26.611,
-   "values_at_60": {
-    "Elemental Focus": -0.153,
-    "Elemental Warding": 0.0,
-    "Natural Grace": 0.0,
-    "Rage of the Farseer": -0.241,
-    "Totemic Focus": 0.029
-   },
-   "zero": [
-    "Elemental Warding",
-    "Natural Grace",
-    "Totemic Focus"
-   ]
-  },
-  {
-   "weighted": 26.57,
-   "values_at_60": {
-    "Elemental Focus": -0.105,
-    "Natural Grace": 0.0,
-    "Rage of the Farseer": -0.159,
-    "Spirit Weapons": -0.248,
-    "Totemic Focus": -0.137
-   },
-   "zero": [
-    "Natural Grace"
-   ]
-  },
-  {
-   "weighted": 26.539,
-   "values_at_60": {
-    "Anticipation": -0.184,
-    "Elemental Focus": -0.437,
-    "Rage of the Farseer": -0.207,
-    "Spirit Weapons": -0.288,
-    "Totemic Focus": -0.084
-   },
-   "zero": [
-    "Totemic Focus"
-   ]
-  },
-  {
-   "weighted": 26.538,
-   "values_at_60": {
-    "Anticipation": 0.064,
-    "Elemental Focus": -0.277,
-    "Rage of the Farseer": -0.163,
-    "Reverberation": -0.091,
-    "Spirit Weapons": -0.151,
-    "Totemic Focus": -0.023
-   },
-   "zero": [
-    "Anticipation",
-    "Totemic Focus"
-   ]
-  }
- ],
- "moves": [
-  {
-   "from": "Elemental Warding",
-   "to": "Spirit Weapons",
-   "level": 57,
-   "seed3": -0.0016,
-   "seed4": -0.0009,
-   "why": "tie-break"
-  },
-  {
-   "from": "Natural Grace",
-   "to": "Anticipation",
-   "level": 60,
-   "seed3": -0.0012,
-   "seed4": -0.0017,
-   "why": "tie-break"
-  },
-  {
-   "from": "Totemic Focus",
-   "to": "Reverberation",
-   "level": 59,
-   "seed3": -0.0,
-   "seed4": -0.0004,
-   "why": "no loss"
-  },
-  {
-   "from": "Elemental Weapons",
-   "to": "Anticipation",
-   "level": 24,
-   "seed3": -0.0015,
-   "seed4": -0.0023,
-   "why": "gate"
-  }
- ],
- "final_order": [
-  {
-   "levels": "10-14",
-   "tree": "Enhancement",
-   "talent": "Thundering Strikes",
-   "points": 5
-  },
-  {
-   "levels": "15-17",
-   "tree": "Enhancement",
-   "talent": "Mental Dexterity",
-   "points": 3
-  },
-  {
-   "levels": "18-19",
-   "tree": "Enhancement",
-   "talent": "Improved Lightning Shield",
-   "points": 2
-  },
-  {
-   "levels": "20",
-   "tree": "Enhancement",
-   "talent": "Shamanistic Focus",
-   "points": 1
-  },
-  {
-   "levels": "21",
-   "tree": "Enhancement",
-   "talent": "Improved Lightning Shield",
-   "points": 1
-  },
-  {
-   "levels": "22",
-   "tree": "Enhancement",
-   "talent": "Anticipation",
-   "points": 1
-  },
-  {
    "levels": "23",
    "tree": "Enhancement",
    "talent": "Elemental Weapons",
@@ -343,7 +123,185 @@
   {
    "levels": "57",
    "tree": "Enhancement",
+   "talent": "Elemental Weapons",
+   "points": 1
+  },
+  {
+   "levels": "58",
+   "tree": "Restoration",
+   "talent": "Totemic Focus",
+   "points": 1
+  },
+  {
+   "levels": "59",
+   "tree": "Elemental",
+   "talent": "Reverberation",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Enhancement",
+   "talent": "Anticipation",
+   "points": 1
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 26.603,
+   "values_at_60": {
+    "Anticipation": -0.194,
+    "Elemental Focus": -0.32,
+    "Elemental Weapons": -0.345,
+    "Rage of the Farseer": -0.266,
+    "Reverberation": -0.093,
+    "Totemic Focus": -0.118
+   },
+   "zero": []
+  }
+ ],
+ "moves": [
+  {
+   "from": "Flurry",
+   "to": "Spirit Weapons",
+   "level": 37,
+   "seed3": -0.0028,
+   "seed4": -0.0026,
+   "why": "gate"
+  },
+  {
+   "from": "Flurry",
+   "to": "Elemental Weapons",
+   "level": 34,
+   "seed3": -0.0032,
+   "seed4": -0.0009,
+   "why": "gate"
+  }
+ ],
+ "final_order": [
+  {
+   "levels": "10-14",
+   "tree": "Enhancement",
+   "talent": "Thundering Strikes",
+   "points": 5
+  },
+  {
+   "levels": "15-17",
+   "tree": "Enhancement",
+   "talent": "Mental Dexterity",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Enhancement",
+   "talent": "Improved Lightning Shield",
+   "points": 2
+  },
+  {
+   "levels": "20",
+   "tree": "Enhancement",
+   "talent": "Shamanistic Focus",
+   "points": 1
+  },
+  {
+   "levels": "21",
+   "tree": "Enhancement",
+   "talent": "Improved Lightning Shield",
+   "points": 1
+  },
+  {
+   "levels": "22",
+   "tree": "Enhancement",
+   "talent": "Anticipation",
+   "points": 1
+  },
+  {
+   "levels": "23",
+   "tree": "Enhancement",
+   "talent": "Elemental Weapons",
+   "points": 1
+  },
+  {
+   "levels": "24",
+   "tree": "Enhancement",
+   "talent": "Anticipation",
+   "points": 1
+  },
+  {
+   "levels": "25",
+   "tree": "Enhancement",
+   "talent": "Stormstrike",
+   "points": 1
+  },
+  {
+   "levels": "26-30",
+   "tree": "Restoration",
+   "talent": "Tidal Focus",
+   "points": 5
+  },
+  {
+   "levels": "31-33",
+   "tree": "Enhancement",
+   "talent": "Flurry",
+   "points": 3
+  },
+  {
+   "levels": "34",
+   "tree": "Enhancement",
+   "talent": "Elemental Weapons",
+   "points": 1
+  },
+  {
+   "levels": "35-36",
+   "tree": "Enhancement",
+   "talent": "Mental Quickness",
+   "points": 2
+  },
+  {
+   "levels": "37",
+   "tree": "Enhancement",
    "talent": "Spirit Weapons",
+   "points": 1
+  },
+  {
+   "levels": "38-39",
+   "tree": "Enhancement",
+   "talent": "Improved Stormstrike",
+   "points": 2
+  },
+  {
+   "levels": "40-44",
+   "tree": "Enhancement",
+   "talent": "Maelstrom Weapon",
+   "points": 5
+  },
+  {
+   "levels": "45",
+   "tree": "Enhancement",
+   "talent": "Rage of the Farseer",
+   "points": 1
+  },
+  {
+   "levels": "46-50",
+   "tree": "Elemental",
+   "talent": "Concussion",
+   "points": 5
+  },
+  {
+   "levels": "51-55",
+   "tree": "Elemental",
+   "talent": "Convection",
+   "points": 5
+  },
+  {
+   "levels": "56",
+   "tree": "Elemental",
+   "talent": "Elemental Focus",
+   "points": 1
+  },
+  {
+   "levels": "57",
+   "tree": "Enhancement",
+   "talent": "Elemental Weapons",
    "points": 1
   },
   {
@@ -400,7 +358,7 @@
     ],
     [
      "Elemental Weapons",
-     1
+     3
     ],
     [
      "Shamanistic Focus",
@@ -412,7 +370,7 @@
     ],
     [
      "Flurry",
-     5
+     3
     ],
     [
      "Stormstrike",
@@ -512,10 +470,16 @@
     "points": 5
    },
    {
-    "levels": "31-34",
+    "levels": "31-33",
     "tree": "Enhancement",
     "talent": "Flurry",
-    "points": 4
+    "points": 3
+   },
+   {
+    "levels": "34",
+    "tree": "Enhancement",
+    "talent": "Elemental Weapons",
+    "points": 1
    },
    {
     "levels": "35-36",
@@ -526,7 +490,7 @@
    {
     "levels": "37",
     "tree": "Enhancement",
-    "talent": "Flurry",
+    "talent": "Spirit Weapons",
     "points": 1
    },
    {
@@ -568,7 +532,7 @@
    {
     "levels": "57",
     "tree": "Enhancement",
-    "talent": "Spirit Weapons",
+    "talent": "Elemental Weapons",
     "points": 1
    },
    {
@@ -590,6 +554,6 @@
     "points": 1
    }
   ],
-  "note": "2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Elemental Warding to Spirit Weapons at 57 (tie-break: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Natural Grace to Anticipation at 60 (tie-break: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill); Totemic Focus to Reverberation at 59 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Elemental Weapons to Anticipation at 24 (gate: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill)."
+  "note": "2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Flurry to Spirit Weapons at 37 (gate: -0.3% seed 3, -0.3% seed 4, level-weighted time per kill); Flurry to Elemental Weapons at 34 (gate: -0.3% seed 3, -0.1% seed 4, level-weighted time per kill)."
  }
 }

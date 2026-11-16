@@ -63,6 +63,16 @@
    ],
    "gain_seed1": 0.012538048566865356,
    "gain_seed2": 0.010200742571649934
+  },
+  {
+   "round": "A/B 2026-11-15",
+   "change": "Rockbiter Weapon again from 54 (IMBUE_TOP = rockbiter, IMBUE_TOP_FROM = 54)",
+   "rule": [
+    "knob",
+    "IMBUE_TOP",
+    "rockbiter"
+   ],
+   "evidence": "rules_retune.py's screening (600 fights, seed 1) read IMBUE_TOP = rockbiter at +0.16% weighted and never confirmed it; a direct A/B on the page build (enhancement-open-leveling, these rules, 3000 fights, seeds 21 and 22, the same fights for both imbues): Rockbiter against Windfury per kill L44 +0.2%/-0.4%, L50 -0.4%/-0.6%, L54 -0.8%/-1.6%, L56 -1.3%/-1.3%, L60 -1.8%/-1.6%; about -0.5% on the tune's level-weighted score (its install bar 0.3%). From 54: Rockbiter rank 7 (554 attack power at 54, 653 at 60) against Windfury rank 3/4 (the imbues' numbers at their level since 2026-11-15)."
   }
  ],
  "weighted_before": 28.59590502024355,
@@ -98,5 +108,9 @@
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
+ },
+ "knobs": {
+  "IMBUE_TOP": "rockbiter",
+  "IMBUE_TOP_FROM": 54
  }
 }

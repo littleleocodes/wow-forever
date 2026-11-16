@@ -1970,7 +1970,7 @@
       {
        "rank": "Shapeshift",
        "id": 9634,
-       "text": "Shapeshift into Dire Bear Form, increasing Attack Power by 210, Armor contribution from items by 360%, and Health by 1560. Also protects the caster from Polymorph effects and allows the use of various bear abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+       "text": "Shapeshift into Dire Bear Form, increasing Attack Power by 180, Armor contribution from items by 360%, and Health by 1,240. Also protects the caster from Polymorph effects and allows the use of various bear abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1985,11 +1985,6 @@
         "status": "changed",
         "text": "Shapeshift into a dire bear, increasing melee attack power by 180, armor contribution from items by 360%, and health by 1,240. Also protects the caster from Polymorph effects and allows the use of various bear abilities. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
         "change_kind": "reworded"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Shapeshift into Dire Bear Form, increasing Attack Power by 180, Armor contribution from items by 360%, and Health by 1,240. Also protects the caster from Polymorph effects and allows the use of various bear abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9634)"
        }
       }
      ]

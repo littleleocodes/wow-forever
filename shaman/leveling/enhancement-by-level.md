@@ -4,7 +4,7 @@
 
 What an Enhancement shaman presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Enhancement is the shaman's fastest leveling spec in the fight lab: you walk in, swing a slow weapon, and add a shock and a strike on short cooldowns. Mana goes to shocks, not to Lightning Bolts. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 12/33/6 ([open the talent tree](https://talentsforever.com/shaman/60/5501001-050033113051012251-05001-12)), the one on the [Enhancement leveling page](enhancement.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 12/33/6 ([open the talent tree](https://talentsforever.com/shaman/60/5501001-050033313031012251-05001-12)), the one on the [Enhancement leveling page](enhancement.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -60,7 +60,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Shift+X | Free | — | — | — | — | — | — | — | — | — | — |
 
 - Two swaps on bar 1: **Lesser Healing Wave** takes the thumb at 20 and **Healing Wave** moves to C as the big heal.
-- **Lightning Shield** and your weapon imbue (**Rockbiter Weapon**, **Windfury Weapon** from 30) are buffs: click them between fights. The fight lab puts the shield back before a pull, about every second kill, and never in the fight.
+- **Lightning Shield** and your weapon imbue (**Rockbiter Weapon**, **Windfury Weapon** from 30, **Rockbiter Weapon** again from 54) are buffs: click them between fights. The fight lab puts the shield back before a pull, about every second kill, and never in the fight.
 - No key: **Lightning Shield**, the weapon imbue, **Ghost Wolf**, food, water, the mount and the Hearthstone. **Strength of Earth Totem** and the other buff totems cost more than they return against one mob.
 - Right-click the mob to start swinging at levels 1-3. From 4, Q is a macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free.
 - The single-target rotation never casts **Flame Shock**, **Fire Nova**, **Chain Lightning** or **Magma Totem**. They are there for a pull that brings friends.
@@ -99,7 +99,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Earth Shock** also interrupts. Use it on a caster's spell and the mob walks to you.
 - **Stoneskin Totem** (4) and **Earthbind Totem** (6) are not part of a fight against one mob.
 
-*Fight lab, seconds per kill: 15 at level 4. Presses per kill at level 4: Melee 2.3, Earth Shock 1.2.*
+*Fight lab, seconds per kill: 15 at level 4. Presses per kill at level 4: Melee 2.4, Earth Shock 1.3.*
 
 ## Levels 8-9: Lightning Shield
 
@@ -118,7 +118,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Under 30% of your health: drop **Stoneclaw Totem**. The mob turns on the totem while you cast **Healing Wave**.
 
-*Fight lab, seconds per kill: 16 at level 8. Presses per kill at level 8: Melee 2.4, Earth Shock 1.4, Lightning Shield 0.5.*
+*Fight lab, seconds per kill: 17 at level 8. Presses per kill at level 8: Melee 2.5, Earth Shock 1.5, Lightning Shield 0.5.*
 
 ## Levels 10-19: Searing Totem, and talents begin
 
@@ -141,11 +141,11 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** Under 30% of your health: drop **Stoneclaw Totem** and cast **Healing Wave**.
 
 - **Flame Shock** (10) shares its cooldown with **Earth Shock**. Against one mob the fight lab never casts it.
-- Stay on **Rockbiter Weapon** until level 30. **Flametongue Weapon** (10) is not the leveling imbue.
+- Stay on **Rockbiter Weapon** until level 30: the fight lab finds it faster than Flametongue Weapon (10) and Frostbrand Weapon (20) at every level before 30.
 - Use a slow two-handed weapon as soon as you can: every strike and proc scales with the weapon's hit.
 - **Strength of Earth Totem** (10) and **Fire Nova** (12) cost more mana than they return against one mob.
 
-*Fight lab, seconds per kill: 16 at level 10, 24 at level 19. Presses per kill at level 10: Melee 2.3, Earth Shock 1.4, Searing Totem 1.0, Lightning Shield 0.5.*
+*Fight lab, seconds per kill: 16 at level 10, 24 at level 19. Presses per kill at level 10: Melee 2.4, Earth Shock 1.5, Searing Totem 1.0, Lightning Shield 0.5.*
 
 ## Levels 20-24: Lesser Healing Wave and Ghost Wolf
 
@@ -170,7 +170,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Ghost Wolf** (20) between pulls and on every walk back from the graveyard.
 - **Frost Shock** (20) is for a mob that runs away, or to slow one you want to escape. It shares the shock cooldown.
 
-*Fight lab, seconds per kill: 21 at level 20. Presses per kill at level 20: Melee 3.0, Earth Shock 1.9, Searing Totem 0.7, Lightning Shield 0.6.*
+*Fight lab, seconds per kill: 21 at level 20. Presses per kill at level 20: Melee 3.1, Earth Shock 1.9, Searing Totem 0.8, Lightning Shield 0.6.*
 
 ## Levels 25-29: Stormstrike
 
@@ -195,7 +195,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Tidal Focus** (26-30): 1% more chance to hit a point, and cheaper heals. Nothing to press.
 
-*Fight lab, seconds per kill: 20 at level 25. Presses per kill at level 25: Melee 2.5, Earth Shock 1.3, Stormstrike 1.2, Searing Totem 0.6, Lightning Shield 0.5.*
+*Fight lab, seconds per kill: 21 at level 25. Presses per kill at level 25: Melee 2.7, Earth Shock 1.4, Stormstrike 1.2, Searing Totem 0.7, Lightning Shield 0.5.*
 
 ## Levels 30-34: Windfury Weapon
 
@@ -203,7 +203,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Fire Nova at 32; Frost Shock at 34; Healing Stream Totem at 30; Healing Wave at 32; Lightning Bolt at 32; Lightning Shield at 32; Purge at 32; Searing Totem at 30.
 
-**Talents:** 30 Tidal Focus, 31-34 Flurry.
+**Talents:** 30 Tidal Focus, 31-33 Flurry, 34 Elemental Weapons.
 
 **Keys to set:** Mouse 4 = Grounding Totem; Shift+R = Chain Lightning (at 32).
 
@@ -218,8 +218,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.
 
-- Put **Windfury Weapon** on your weapon the moment you train it, and keep it there to 60.
-- **Flurry** (31-34, 37) makes you swing faster after every critical hit. Nothing to press.
+- Put **Windfury Weapon** on your weapon the moment you train it, and keep it there until 54.
+- **Flurry** (31-33) makes you swing faster after every critical hit. **Elemental Weapons** (23, 34 and 57) adds 40% to the **Windfury Weapon** effect and 20% to **Rockbiter Weapon**'s attack power at three points. Nothing to press.
 - **Chain Lightning** (32) and **Windfury Totem** (32) are not part of a fight against one mob.
 
 *Fight lab, seconds per kill: 25 at level 30. Presses per kill at level 30: Melee 3.1, Earth Shock 1.8, Windfury 1.5, Stormstrike 1.5, Searing Totem 0.6, Lightning Shield 0.6.*
@@ -230,7 +230,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Earth Shock at 36; Lesser Healing Wave at 36; Lightning Bolt at 38; Magma Totem at 36; Stoneclaw Totem at 38.
 
-**Talents:** 35-36 Mental Quickness, 37 Flurry, 38-39 Improved Stormstrike.
+**Talents:** 35-36 Mental Quickness, 37 Spirit Weapons, 38-39 Improved Stormstrike.
 
 **Your keys in this stage:** Q Earth Shock, R Stormstrike, F Stoneclaw Totem, Mouse 5 Lesser Healing Wave, 2 Searing Totem.
 
@@ -243,10 +243,10 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.
 
-- **Mental Quickness** (35-36) turns 30% of your Intellect into spell damage; **Flurry** takes its last point at 37.
+- **Mental Quickness** (35-36) turns 30% of your Intellect into spell damage; **Spirit Weapons** (37) gives you a chance to parry.
 - Still no **Lightning Bolt** in the fight: it waits for **Maelstrom Weapon** at 40.
 
-*Fight lab, seconds per kill: 27 at level 35. Presses per kill at level 35: Melee 3.6, Earth Shock 1.9, Windfury 1.9, Stormstrike 1.6, Lightning Shield 0.7, Searing Totem 0.6.*
+*Fight lab, seconds per kill: 27 at level 35. Presses per kill at level 35: Melee 3.5, Earth Shock 1.9, Windfury 1.8, Stormstrike 1.7, Lightning Shield 0.7, Searing Totem 0.6.*
 
 ## Levels 40-44: Maelstrom Weapon
 
@@ -271,13 +271,13 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Each stack takes 20% off the bolt's cast time and mana at every rank (the 2026-11-10 hotfix); every point of **Maelstrom Weapon** (40-44) brings the stacks faster. Never cast **Lightning Bolt** with its cast time.
 - Do not spend the instant bolt on a mob it would overkill.
 
-*Fight lab, seconds per kill: 26 at level 40. Presses per kill at level 40: Melee 3.4, Earth Shock 1.8, Windfury 1.8, Stormstrike 1.7, Lightning Shield 0.6, Searing Totem 0.6, Lightning Bolt 0.2.*
+*Fight lab, seconds per kill: 27 at level 40. Presses per kill at level 40: Melee 3.3, Windfury 1.9, Stormstrike 1.8, Earth Shock 1.8, Searing Totem 0.6, Lightning Shield 0.6, Lightning Bolt 0.2.*
 
 ## Levels 45-60: Rage of the Farseer, the finished rotation
 
 **New ranks to buy:** Chain Lightning at 48, 56; Earth Shock at 48, 60; Fire Nova at 52; Flame Shock at 52, 60; Frost Shock at 46, 58; Healing Stream Totem at 50, 60; Healing Wave at 48, 56, 60; Lesser Healing Wave at 52, 60; Lightning Bolt at 50, 56; Lightning Shield at 48, 56; Magma Totem at 46, 56; Searing Totem at 50, 60; Stoneclaw Totem at 48, 58.
 
-**Talents:** 45 Rage of the Farseer, 46-50 Concussion, 51-55 Convection, 56 Elemental Focus, 57 Spirit Weapons, 58 Totemic Focus, 59 Reverberation, 60 Anticipation.
+**Talents:** 45 Rage of the Farseer, 46-50 Concussion, 51-55 Convection, 56 Elemental Focus, 57 Elemental Weapons, 58 Totemic Focus, 59 Reverberation, 60 Anticipation.
 
 **Keys to set:** 4 = Rage of the Farseer.
 
@@ -295,8 +295,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.
 
 - The remaining points go to Elemental for harder, cheaper shocks: **Concussion** (46-50) and **Convection** (51-55).
+- At 54 train **Rockbiter Weapon** rank 7 and put it back on your weapon in place of Windfury: its attack power on every swing and **Stormstrike** is 1-2% faster per kill than Windfury's extra attacks from 54 in the fight lab (the tuned rules, 2026-11-15). Windfury Weapon rank 4 (60) is not needed.
 
-*Fight lab, seconds per kill: 27 at level 45, 28 at level 50, 28 at level 60. Presses per kill at level 45: Melee 3.8, Windfury 2.0, Earth Shock 1.9, Stormstrike 1.8, Lightning Shield 0.7, Searing Totem 0.6, Lightning Bolt 0.4.*
+*Fight lab, seconds per kill: 27 at level 45, 28 at level 50, 28 at level 60. Presses per kill at level 45: Melee 3.8, Windfury 2.0, Stormstrike 1.9, Earth Shock 1.9, Lightning Shield 0.7, Searing Totem 0.6, Lightning Bolt 0.5.*
 
 ## Between fights
 
@@ -311,4 +312,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - A shaman who wants to heal at 60 levels fastest as Enhancement and respecs, or levels into the Restoration build shown on its page.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-15: the stages are hand-kept in `_reference/data/level-guides/shaman.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-16: the stages are hand-kept in `_reference/data/level-guides/shaman.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

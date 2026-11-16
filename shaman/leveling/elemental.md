@@ -4,7 +4,7 @@
 
 **Leveling from level 1?** [The rotation level by level](elemental-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Elemental — Leveling](../research/leveling/builds/elemental-open-leveling.md)** (32/11/8) — [open the talent tree](https://talentsforever.com/shaman/60/540333100301135-05003201-053-12)
+**[Elemental — Leveling](../research/leveling/builds/elemental-open-leveling.md)** (32/11/8) — [open the talent tree](https://talentsforever.com/shaman/60/530433100301135-05003201-053-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
@@ -32,8 +32,8 @@ Kill as much as you can with **Lightning Bolt** before the mob reaches you, then
 **Why it works**
 
 - **Lightning Shield** before each pull: it strikes a mob each time it hits you, one ball every few seconds; about 10% of your damage at 60 in the fight lab (2026-11-15). **Shamanistic Focus** (level 28) makes it and your shocks 45% cheaper: the build's most valuable talent at 60 (about 3 seconds per kill without it).
-- **Lightning Bolt** while the mob walks in: nothing pushes those casts back. Once the mob hits you, each hit pushes a cast back (about 3 times per kill in the fight lab); **Eye of the Storm** (levels 44-46) cuts that by 70%. **Elemental Alacrity** (34-36) takes half a second off the cast.
-- The shocks share one cooldown and cannot be pushed back. **Flame Shock** goes first while it is not ticking and the mob is above 30% health (**Call of Flame**, 37-38, strengthens it and makes it last longer); **Earth Shock** takes every other shock, and comes first whenever it would kill. **Convection** (29-33) makes shocks and bolts 10% cheaper.
+- **Lightning Bolt** while the mob walks in: nothing pushes those casts back. Once the mob hits you, each hit pushes a cast back (about 3 times per kill in the fight lab); **Eye of the Storm** (levels 45-47) cuts that by 70%. **Elemental Alacrity** (34-36) takes half a second off the cast.
+- The shocks share one cooldown and cannot be pushed back. **Flame Shock** goes first while it is not ticking and the mob is above 30% health (**Call of Flame**, 37-38 and 40, strengthens it and makes it last longer); **Earth Shock** takes every other shock, and comes first whenever it would kill. **Convection** (29-33) makes shocks and bolts 10% cheaper.
 - **Elemental Fury** (levels 54-58) doubles the crit bonus of your spells and **Searing Totem**.
 - Bolt between shocks only while you keep the mana for the next **Earth Shock** and **Flame Shock**; otherwise let your weapon swing. The fight lab keeps **Rockbiter Weapon** (from 30, **Windfury Weapon**) on, and your weapon does about an eighth of your damage at 60.
 - Drop **Searing Totem** at each pull while you have more than half your mana: it does about 6% of your damage at 60.
@@ -42,7 +42,7 @@ Kill as much as you can with **Lightning Bolt** before the mob reaches you, then
 
 - From 39, **Elemental Focus** sometimes makes your next damage spell free: nothing to change, the next spell in the list takes it.
 - This list is for one mob at a time; the fight lab does not model area pulls for Elemental. **Chain Lightning** hits up to 3 targets if you pull more.
-- Levels 10-17 go into Restoration (**Tidal Focus**: 5% more chance to hit; **Mindfulness**: half your mana regeneration continues while you cast) and 18-28 into Enhancement (**Thundering Strikes**: 5% crit with spells and attacks; **Improved Lightning Shield** (23-24): more damage from **Lightning Shield**; **Mental Dexterity**, which mostly opens the tier of **Shamanistic Focus** at 28). From 29 every point goes to Elemental.
+- Levels 10-17 go into Restoration (**Tidal Focus**: 5% more chance to hit; **Mindfulness**: half your mana regeneration continues while you cast) and 18-28 into Enhancement (**Thundering Strikes**: 5% crit with spells and attacks; **Mental Dexterity** (23-25): attack power from your Intellect; **Improved Lightning Shield** (26-27): more damage from **Lightning Shield**; the last two mostly open the tier of **Shamanistic Focus** at 28, which makes shocks and **Lightning Shield** 45% cheaper). From 29 every point goes to Elemental.
 - Drink only below 15% mana and heal or eat back to 80% health between pulls: the tuned rules the fight lab plays.
 
 **When to change it**
@@ -61,35 +61,37 @@ One point per level from 10, in this order:
 | 10-14 | Tidal Focus (Restoration) | 5 |
 | 15-17 | Mindfulness (Restoration) | 3 |
 | 18-22 | Thundering Strikes (Enhancement) | 5 |
-| 23-24 | Improved Lightning Shield (Enhancement) | 2 |
-| 25-27 | Mental Dexterity (Enhancement) | 3 |
+| 23-25 | Mental Dexterity (Enhancement) | 3 |
+| 26-27 | Improved Lightning Shield (Enhancement) | 2 |
 | 28 | Shamanistic Focus (Enhancement) | 1 |
 | 29-33 | Convection (Elemental) | 5 |
 | 34-36 | Elemental Alacrity (Elemental) | 3 |
 | 37-38 | Call of Flame (Elemental) | 2 |
 | 39 | Elemental Focus (Elemental) | 1 |
-| 40-43 | Concussion (Elemental) | 4 |
-| 44-46 | Eye of the Storm (Elemental) | 3 |
-| 47-48 | Reverberation (Elemental) | 2 |
-| 49 | Call of Thunder (Elemental) | 1 |
-| 50-52 | Lightning Overload (Elemental) | 3 |
+| 40 | Call of Flame (Elemental) | 1 |
+| 41-43 | Concussion (Elemental) | 3 |
+| 44 | Reverberation (Elemental) | 1 |
+| 45-47 | Eye of the Storm (Elemental) | 3 |
+| 48 | Reverberation (Elemental) | 1 |
+| 49-51 | Lightning Overload (Elemental) | 3 |
+| 52 | Call of Thunder (Elemental) | 1 |
 | 53 | Reverberation (Elemental) | 1 |
 | 54-58 | Elemental Fury (Elemental) | 5 |
-| 59 | Elemental Reach (Elemental) | 1 |
-| 60 | Call of Flame (Elemental) | 1 |
+| 59 | Reverberation (Elemental) | 1 |
+| 60 | Elemental Reach (Elemental) | 1 |
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
 | 20 | 27 | 17 |
-| 30 | 30 | 21 |
+| 30 | 29 | 21 |
 | 40 | 30 | 23 |
-| 50 | 30 | 23 |
+| 50 | 29 | 23 |
 | 60 | 28 | 23 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-15 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-16 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

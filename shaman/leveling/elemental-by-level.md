@@ -4,7 +4,7 @@
 
 What an Elemental shaman presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Elemental fights from range: **Lightning Bolt** while the mob walks in, then the shocks on their shared cooldown, more bolts between them while your mana holds, and your weapon swinging in every gap. Mana is the limit, so the list always keeps enough for the next shock. The build's first points go to Restoration and Enhancement for hit, mana and crit; the Elemental talents start at 29. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 32/11/8 ([open the talent tree](https://talentsforever.com/shaman/60/540333100301135-05003201-053-12)), the one on the [Elemental leveling page](elemental.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 32/11/8 ([open the talent tree](https://talentsforever.com/shaman/60/530433100301135-05003201-053-12)), the one on the [Elemental leveling page](elemental.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -17,7 +17,7 @@ What an Elemental shaman presses from level 1 to 60, stage by stage, as the trai
 | 20-27 | Nothing new in the fight. **Lesser Healing Wave** is a fast heal, **Ghost Wolf** gets you between mobs sooner. |
 | 28-33 | **Shamanistic Focus** (talent) makes your shocks and **Lightning Shield** 45% cheaper. From 29, **Convection** cuts the cost of shocks and bolts. |
 | 34-43 | **Elemental Alacrity** (talent) takes up to half a second off **Lightning Bolt**'s cast: more bolts fit in while the mob walks in. |
-| 44-60 | **Eye of the Storm** (talent): at 3 points (46), 70% of a mob's hits no longer push your **Lightning Bolt** back. Nothing else new in the fight: buy every new rank. |
+| 44-60 | **Eye of the Storm** (talent): at 3 points (47), 70% of a mob's hits no longer push your **Lightning Bolt** back. Nothing else new in the fight: buy every new rank. |
 
 ## Keybinds by level
 
@@ -102,7 +102,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - In melee the bolts now stop where your mana would no longer cover the next **Earth Shock**: the shock is instant, and a mob's hits cannot push it back.
 - **Stoneskin Totem** (4) and **Earthbind Totem** (6) are not part of a fight against one mob.
 
-*Fight lab, seconds per kill: 14 at level 4. Presses per kill at level 4: Lightning Bolt 2.8, Melee 1.2, Earth Shock 0.9.*
+*Fight lab, seconds per kill: 14 at level 4. Presses per kill at level 4: Lightning Bolt 2.8, Melee 1.3, Earth Shock 1.0.*
 
 ## Levels 8-9: Lightning Shield
 
@@ -124,7 +124,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Under 30% of your health: drop **Stoneclaw Totem**. The mob turns on the totem while you cast **Healing Wave**.
 
-*Fight lab, seconds per kill: 19 at level 8. Presses per kill at level 8: Lightning Bolt 2.6, Melee 1.1, Earth Shock 1.0, Lightning Shield 0.4.*
+*Fight lab, seconds per kill: 19 at level 8. Presses per kill at level 8: Lightning Bolt 2.7, Melee 1.1, Earth Shock 1.0, Lightning Shield 0.4.*
 
 ## Levels 10-19: Flame Shock and Searing Totem, and talents begin
 
@@ -153,10 +153,10 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - The shocks share one cooldown: **Flame Shock** takes it while it is not ticking, **Earth Shock** every other time.
 - The first points go to Restoration: **Tidal Focus** (10-14) for 5% more chance to hit, **Mindfulness** (15-17) to keep half your mana regeneration going while you cast.
-- Stay on **Rockbiter Weapon** until level 30. **Flametongue Weapon** (10) is not the leveling imbue.
+- Stay on **Rockbiter Weapon** until level 30: the fight lab finds it faster than Flametongue Weapon (10) and Frostbrand Weapon (20) at every level before 30.
 - **Strength of Earth Totem** (10), **Fire Nova** (12) and **Purge** (12) are not part of a fight against one mob.
 
-*Fight lab, seconds per kill: 20 at level 10, 28 at level 19. Presses per kill at level 10: Lightning Bolt 2.7, Melee 1.1, Flame Shock 0.9, Searing Totem 0.7, Lightning Shield 0.4, Earth Shock 0.1.*
+*Fight lab, seconds per kill: 21 at level 10, 28 at level 19. Presses per kill at level 10: Lightning Bolt 2.8, Melee 1.1, Flame Shock 0.9, Searing Totem 0.7, Lightning Shield 0.4, Earth Shock 0.1.*
 
 ## Levels 20-27: Lesser Healing Wave and Frost Shock
 
@@ -164,7 +164,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Earth Shock at 24; Fire Nova at 22; Healing Wave at 24; Lightning Bolt at 20, 26; Lightning Shield at 24; Searing Totem at 20.
 
-**Talents:** 20-22 Thundering Strikes, 23-24 Improved Lightning Shield, 25-27 Mental Dexterity.
+**Talents:** 20-22 Thundering Strikes, 23-25 Mental Dexterity, 26-27 Improved Lightning Shield.
 
 **Keys to set:** E = Frost Shock; Mouse 5 = Lesser Healing Wave; C = Healing Wave; Shift+Mouse 5 = Healing Stream Totem; Shift+1 = Magma Totem (at 26).
 
@@ -185,9 +185,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Ghost Wolf** (20) between pulls and on every walk back from the graveyard.
 - **Frost Shock** (20) is for a mob that runs away, or to slow one you want to escape. It shares the shock cooldown.
-- The points of 18-28 go to Enhancement: **Thundering Strikes** for crit with spells and swings, **Ancestral Knowledge** for more Intellect and **Mental Dexterity**, which turns Intellect into attack power for your weapon.
+- The points of 18-28 go to Enhancement: **Thundering Strikes** (18-22) for crit with spells and swings, **Mental Dexterity** (23-25), which turns Intellect into attack power for your weapon, **Improved Lightning Shield** (26-27) for more damage from **Lightning Shield**, and **Shamanistic Focus** (28), which makes your shocks and **Lightning Shield** 45% cheaper.
 
-*Fight lab, seconds per kill: 26 at level 20, 30 at level 27. Presses per kill at level 20: Lightning Bolt 3.0, Melee 1.1, Flame Shock 0.8, Searing Totem 0.7, Lightning Shield 0.6, Earth Shock 0.4.*
+*Fight lab, seconds per kill: 26 at level 20, 31 at level 27. Presses per kill at level 20: Lightning Bolt 3.0, Melee 1.1, Flame Shock 0.8, Searing Totem 0.7, Lightning Shield 0.6, Earth Shock 0.4.*
 
 ## Levels 28-33: Shamanistic Focus, then the Elemental tree
 
@@ -219,7 +219,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Grounding Totem** (30) eats a caster mob's next spell.
 - **Chain Lightning** (32) and **Windfury Totem** (32) are not part of a fight against one mob.
 
-*Fight lab, seconds per kill: 28 at level 28, 29 at level 30, 29 at level 33. Presses per kill at level 28: Lightning Bolt 3.5, Melee 1.1, Flame Shock 0.8, Searing Totem 0.6, Lightning Shield 0.6, Earth Shock 0.6.*
+*Fight lab, seconds per kill: 28 at level 28, 29 at level 30, 30 at level 33. Presses per kill at level 28: Lightning Bolt 3.5, Melee 1.2, Flame Shock 0.8, Searing Totem 0.6, Lightning Shield 0.6, Earth Shock 0.6.*
 
 ## Levels 34-43: Elemental Alacrity: faster bolts
 
@@ -227,7 +227,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Chain Lightning at 40; Earth Shock at 36; Fire Nova at 42; Flame Shock at 40; Frost Shock at 34; Healing Stream Totem at 40; Healing Wave at 40; Lesser Healing Wave at 36; Lightning Bolt at 38; Lightning Shield at 40; Magma Totem at 36; Searing Totem at 40; Stoneclaw Totem at 38.
 
-**Talents:** 34-36 Elemental Alacrity, 37-38 Call of Flame, 39 Elemental Focus, 40-43 Concussion.
+**Talents:** 34-36 Elemental Alacrity, 37-38 Call of Flame, 39 Elemental Focus, 40 Call of Flame, 41-43 Concussion.
 
 **Your keys in this stage:** Q Lightning Bolt, R Earth Shock, F Stoneclaw Totem, Mouse 5 Lesser Healing Wave, 1 Flame Shock, 2 Searing Totem.
 
@@ -244,9 +244,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.
 
-- **Call of Flame** (37-38, 60) makes **Flame Shock** and **Searing Totem** hit harder and **Flame Shock** last longer.
+- **Call of Flame** (37-38, 40) makes **Flame Shock** and **Searing Totem** hit harder and **Flame Shock** last longer.
 - **Elemental Focus** (39): after a damage spell, sometimes the next one is free. Nothing to press: the next spell in the list takes it.
-- **Concussion** (40-43): your bolts and **Earth Shock** hit harder.
+- **Concussion** (41-43): your bolts and **Earth Shock** hit harder.
 
 *Fight lab, seconds per kill: 30 at level 34, 30 at level 40, 30 at level 43. Presses per kill at level 34: Lightning Bolt 3.6, Melee 1.5, Flame Shock 0.8, Earth Shock 0.8, Searing Totem 0.6, Lightning Shield 0.6, Windfury 0.5.*
 
@@ -254,7 +254,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Chain Lightning at 48, 56; Earth Shock at 48, 60; Fire Nova at 52; Flame Shock at 52, 60; Frost Shock at 46, 58; Healing Stream Totem at 50, 60; Healing Wave at 48, 56, 60; Lesser Healing Wave at 44, 52, 60; Lightning Bolt at 44, 50, 56; Lightning Shield at 48, 56; Magma Totem at 46, 56; Searing Totem at 50, 60; Stoneclaw Totem at 48, 58.
 
-**Talents:** 44-46 Eye of the Storm, 47-48 Reverberation, 49 Call of Thunder, 50-52 Lightning Overload, 53 Reverberation, 54-58 Elemental Fury, 59 Elemental Reach, 60 Call of Flame.
+**Talents:** 44 Reverberation, 45-47 Eye of the Storm, 48 Reverberation, 49-51 Lightning Overload, 52 Call of Thunder, 53 Reverberation, 54-58 Elemental Fury, 59 Reverberation, 60 Elemental Reach.
 
 **Your keys in this stage:** Q Lightning Bolt, R Earth Shock, F Stoneclaw Totem, Mouse 5 Lesser Healing Wave, 1 Flame Shock, 2 Searing Totem.
 
@@ -271,11 +271,11 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.
 
-- **Reverberation** (47-48, 53) shortens the shock cooldown.
-- **Call of Thunder** (49), **Lightning Overload** (50-52) and **Elemental Fury** (54-58): more bolt crits, a free second bolt now and then, and bigger crits. Nothing to press.
-- **Elemental Reach** (59) adds range to **Lightning Bolt**: start the pull a little farther out. **Call of Flame** (60) takes its third rank: **Flame Shock** and **Searing Totem** hit a little harder.
+- **Reverberation** (44, 48, 53, 59) shortens the shock cooldown.
+- **Lightning Overload** (49-51), **Call of Thunder** (52) and **Elemental Fury** (54-58): a free second bolt now and then, more bolt crits, and bigger crits. Nothing to press.
+- **Elemental Reach** (60) adds range to **Lightning Bolt**: start the pull a little farther out.
 
-*Fight lab, seconds per kill: 29 at level 44, 29 at level 50, 28 at level 60. Presses per kill at level 44: Lightning Bolt 3.8, Melee 1.4, Flame Shock 0.8, Earth Shock 0.7, Searing Totem 0.6, Lightning Shield 0.6, Windfury 0.5.*
+*Fight lab, seconds per kill: 29 at level 44, 29 at level 50, 27 at level 60. Presses per kill at level 44: Lightning Bolt 3.7, Melee 1.4, Flame Shock 0.8, Earth Shock 0.7, Searing Totem 0.6, Lightning Shield 0.6, Windfury 0.6.*
 
 ## Between fights
 
@@ -287,7 +287,6 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 ## Other ways to level this class
 
 - Enhancement is the shaman's fastest leveling spec in the fight lab. It fights in melee with **Stormstrike** and is on its own page in this folder.
-- The Elemental-Enhancement hybrid plays this same list with more Enhancement talents; it has its own page and guide in this folder.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-15: the stages are hand-kept in `_reference/data/level-guides/shaman.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-16: the stages are hand-kept in `_reference/data/level-guides/shaman.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

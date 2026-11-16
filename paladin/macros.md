@@ -23,7 +23,7 @@ To make one: Esc, Macros, New, pick the question-mark icon so the button shows t
 ```
 
 - **Replaces:** clicking a potion in your bags.
-- **Frees:** nothing: this fills a free key, C on your bars, for every spec. Swift Judgement never takes it: Prot-Ret holds it on 3, Protection and the Holy/Protection hybrid on Shift+3.
+- **Frees:** nothing: this fills a free key, C on your bars, for every spec. Swift Judgement never takes it: Prot-Ret holds it on 3, Protection on Shift+3.
 - **Why it works:** only the first potion you own goes off, because they share a cooldown.
 
 ### Best mana potion in your bags

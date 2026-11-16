@@ -18,7 +18,7 @@ What a Combat-Subtlety rogue presses from level 1 to 60, stage by stage, as the 
 | 18-23 | **Ambush** from stealth: one big hit with your dagger, your opener from here to 60. |
 | 24 | **Premeditation** (talent): 2 free combo points before the opener. **Shank** strikes on a cooldown and gives energy. |
 | 25-29 | **Ghostly Strike** (talent) on its 20-second cooldown: a big dagger strike and more dodge. A **Garrote** can follow it. |
-| 30-39 | Nothing new to press. **Deadly Poison** goes on your off hand. |
+| 30-39 | Nothing new to press: **Instant Poison** stays on both weapons and **Kidney Shot** (30) stays off. |
 | 40-59 | The rotation stays as it is until 60. The points go to Combat's energy and damage talents; buy every new rank. |
 | 60 | **Hemorrhage** (talent) takes over from **Sinister Strike** as your builder. |
 
@@ -198,7 +198,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Poised** (18) makes the opener 10 energy cheaper.
 - **Rupture** (20) is never cast: the points are worth more as **Eviscerate**.
 - **Serrated Blades** (20-22): your attacks ignore part of the mob's armor. **Initiative** (23): your opener may add a second combo point.
-- Put **Instant Poison** on your main hand once you have it (20).
+- Put **Instant Poison** on both weapons once you have it (20).
 - **Vanish** (22) is the emergency exit: the mob loses you, and you walk away.
 
 *Fight lab, seconds per kill: 17 at level 18, 16 at level 20, 18 at level 23. Presses per kill at level 18: Melee 5.1, Melee (off-hand) 4.6, Sinister Strike 2.2, Ambush 1.0, Eviscerate 0.6.*
@@ -229,7 +229,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Stealth** and **Premeditation** are off the global cooldown: Stealth, Premeditation, then **Ambush**. Use the points within 20 seconds.
 - **Mind-numbing Poison** (24) is for casters in groups.
 
-*Fight lab, seconds per kill: 18 at level 24. Presses per kill at level 24: Melee 5.7, Melee (off-hand) 5.2, Sinister Strike 2.5, Shank 1.4, Ambush 1.0, Eviscerate 0.7, Premeditation 0.1.*
+*Fight lab, seconds per kill: 18 at level 24. Presses per kill at level 24: Melee 5.4, Melee (off-hand) 4.9, Sinister Strike 2.4, Shank 1.3, Ambush 1.0, Eviscerate 0.6, Premeditation 0.1.*
 
 ## Levels 25-29: Ghostly Strike
 
@@ -259,9 +259,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Cheap Shot** (26): the rotation opens with it only when **Ambush** cannot go, which the fight lab never saw.
 - **Remorseless Attacks** (29-30): the first **Ambush** or strike after a kill is likelier to crit. Pull the next mob within 20 seconds.
 
-*Fight lab, seconds per kill: 18 at level 25. Presses per kill at level 25: Melee 5.6, Melee (off-hand) 5.1, Sinister Strike 1.7, Shank 1.4, Ambush 1.0, Eviscerate 0.8, Ghostly Strike 0.7, Premeditation 0.1, Garrote 0.1.*
+*Fight lab, seconds per kill: 18 at level 25. Presses per kill at level 25: Melee 5.4, Melee (off-hand) 4.9, Sinister Strike 1.7, Shank 1.3, Ambush 1.0, Ghostly Strike 0.7, Eviscerate 0.7, Premeditation 0.1, Garrote 0.1.*
 
-## Levels 30-39: Deadly Poison
+## Levels 30-39: Kidney Shot stays off
 
 **The trainer teaches:** Deadly Poison (30), Disarm Trap (30), Kidney Shot (30), Wound Poison (32), Blind (34), Blinding Powder (34).
 
@@ -285,12 +285,12 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather. **Vanish** is the emergency exit.
 
-- **Deadly Poison** (30) on your off hand, **Instant Poison** on your main hand: buffs you reapply between fights, no key.
+- Deadly Poison (30) on the off hand measured about 1% slower per kill than **Instant Poison** there in the fight lab (the tuned rules, 2026-11-15): Instant Poison on both weapons, a buff you reapply between fights, no key.
 - **Kidney Shot** (30): off. The tuned rotation never casts it.
 - **Malice** (31-33) is crit, **Efficient Strikes** (34-35) makes **Sinister Strike** cheaper, **Lightning Reflexes** (36-37, 41-43) is dodge (and with **Setup** a dodge can be a combo point), **Precision** (38-40) is hit.
 - **Blind** (34) handles a second mob that joins mid-fight.
 
-*Fight lab, seconds per kill: 19 at level 30, 24 at level 39. Presses per kill at level 30: Melee 6.2, Melee (off-hand) 5.6, Sinister Strike 1.9, Shank 1.5, Ambush 1.0, Ghostly Strike 0.8, Eviscerate 0.8, Premeditation 0.1, Garrote 0.1.*
+*Fight lab, seconds per kill: 19 at level 30, 24 at level 39. Presses per kill at level 30: Melee 6.1, Melee (off-hand) 5.6, Sinister Strike 1.9, Shank 1.5, Ambush 1.0, Ghostly Strike 0.8, Eviscerate 0.7, Premeditation 0.1, Garrote 0.1.*
 
 ## Levels 40-59: Nothing new to press
 
@@ -317,7 +317,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Composure** (44-45) makes the opener cheaper, **Flawless Execution** (46) makes **Eviscerate** cheaper, **Weapon Expertise** (47-48) cuts dodges and parries, **Aggression** (49-51) makes **Sinister Strike** and **Eviscerate** hit harder.
 - **Initiative** (52-53) makes the opener's second combo point certain. **Dual Wield Specialization** (54-55) and **Hack and Slash** (56-57) are off-hand damage and dagger crit. **Setup** (58-59) takes its last two points: a dodge adds a combo point 45% of the time instead of 15%.
 
-*Fight lab, seconds per kill: 23 at level 40, 22 at level 50, 21 at level 59. Presses per kill at level 40: Melee 8.0, Melee (off-hand) 7.6, Sinister Strike 2.3, Shank 1.8, Eviscerate 1.2, Ambush 1.0, Ghostly Strike 1.0, Garrote 0.4, Premeditation 0.2.*
+*Fight lab, seconds per kill: 24 at level 40, 21 at level 50, 21 at level 59. Presses per kill at level 40: Melee 8.0, Melee (off-hand) 7.6, Sinister Strike 2.4, Shank 1.8, Eviscerate 1.1, Ambush 1.0, Ghostly Strike 1.0, Garrote 0.4, Premeditation 0.2.*
 
 ## Level 60: Hemorrhage
 
@@ -343,7 +343,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - Q keeps its job: change the Q macro's spell to **Hemorrhage** (the [macros page](../macros.md) has it). **Hemorrhage** also makes your **Garrote** bleed 15% harder for 15 seconds.
 
-*Fight lab, seconds per kill: 20 at level 60. Presses per kill at level 60: Melee 6.2, Melee (off-hand) 5.8, Hemorrhage 3.1, Eviscerate 1.8, Shank 1.4, Ambush 1.0, Ghostly Strike 0.8, Garrote 0.4, Premeditation 0.2.*
+*Fight lab, seconds per kill: 20 at level 60. Presses per kill at level 60: Melee 6.2, Melee (off-hand) 5.7, Hemorrhage 3.1, Eviscerate 1.8, Shank 1.3, Ambush 1.0, Ghostly Strike 0.8, Garrote 0.4, Premeditation 0.1.*
 
 ## Between fights
 
@@ -356,4 +356,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Combat with swords is the rogue's fastest leveling spec in the fight lab, this split close behind it. Subtlety plays the same rotation deeper in its tree, with **Hemorrhage** from 30 and **Death Mark** from 40. Both have pages in this folder.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-15: the stages are hand-kept in `_reference/data/level-guides/rogue.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-16: the stages are hand-kept in `_reference/data/level-guides/rogue.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

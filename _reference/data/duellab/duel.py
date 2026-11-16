@@ -67,7 +67,10 @@ KEEPS_STEALTH = {"Stealth", "Prowl", "Sap", "Distract", "Pick Pocket", "Vanish",
 # Rotation knobs of the leveling rules (ROTATION_KNOBS) that are PvE choices: a side keeps its module's default for them, as it drops the
 # tuned vetoes. 2026-11-15: the mage rules took MAGE_ARMOR (Mage Armor from 34, for its regeneration while casting) and the duel mage
 # wore Mage Armor, losing Ice Armor's armor and its chill on melee attackers; the mage layer is written for Ice Armor (pvp_mage.py).
-PVE_KNOBS = ("MAGE_ARMOR",)
+# The same night the rogue's poisons (POISONS: pvp_rogue.py puts its own Crippling or Wound Poison on the hand the default leaves free)
+# and the shaman's imbues (IMBUE_EARLY, IMBUE_LATE, IMBUE_TOP, IMBUE_TOP_FROM: Windfury at 60) became knobs: a PvP choice of poison or
+# imbue is the duel lab's own.
+PVE_KNOBS = ("MAGE_ARMOR", "POISONS", "IMBUE_EARLY", "IMBUE_LATE", "IMBUE_TOP", "IMBUE_TOP_FROM")
 _GEAR = {"tier": None}
 _RESTORE = {}
 

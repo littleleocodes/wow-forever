@@ -98,20 +98,19 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 
 Single-target leveling fights against normal mobs of your level with two swords (the daggers models: two daggers, still Sinister Strike: the mob faces you after the opener, so no Backstab): open from stealth behind the mob with Cheap Shot (Garrote before 26; the mob turns to face you after the opener, so it can parry from then on; Poised makes the opener 10 energy cheaper), Slice and Dice at 1-2 points when it is down, Shank whenever its energy would not overflow (from 24), Sinister Strike to 5 points, Eviscerate (Kidney Shot instead when below 60% health, stunning for the tooltip's seconds per point), Eviscerate at fewer points when it would kill the mob, Cold Blood right before a 5-point Eviscerate, Riposte after a parry, Blade Flurry and Adrenaline Rush on the pull, Evasion when low; white swings with both hands (19% extra miss on white dual-wield hits), Instant Poison on the main hand and Deadly Poison on the off hand. Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 65%; a death costs 90 s. The tuned rules (rotations/rogue-<spec>.json) veto spells and move the thresholds on top of this list.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-03, on top of the priority below): never cast Cheap Shot; eat below 40% health; never cast Slice and Dice; never cast Kidney Shot. Together +14.2% time per kill saved for `opt-combat-daggers-raid-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-15, on top of the priority below): POISONS = 1; never cast Kick. Together +2.8% time per kill saved for `assassination-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/combat-daggers-raid.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 7.1 | 8.2 | 8.4 | 8.4 | 7.6 | 12% |
-| Melee (off-hand) | 6.5 | 7.6 | 7.9 | 7.9 | 7.1 | 6% |
-| Mutilate | 0.0 | 0.0 | 2.7 | 2.9 | 2.8 | 24% |
-| Eviscerate | 0.4 | 0.5 | 1.4 | 1.6 | 1.9 | 30% |
+| Melee | 6.8 | 8.1 | 8.3 | 8.3 | 7.4 | 12% |
+| Melee (off-hand) | 6.2 | 7.5 | 7.8 | 7.8 | 7.0 | 6% |
+| Mutilate | 0.0 | 0.0 | 2.7 | 2.9 | 2.8 | 20% |
+| Eviscerate | 0.4 | 0.5 | 1.5 | 1.7 | 1.8 | 30% |
 | Shank | 0.0 | 1.8 | 1.9 | 1.9 | 1.8 | 1% |
 | Garrote | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 9% |
 | Riposte | 0.0 | 0.0 | 0.0 | 0.0 | 0.9 | 3% |
-| Kick | 0.2 | 0.2 | 0.2 | 0.2 | 0.1 | 0% |
 | Cold Blood | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
 | Evasion | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Sinister Strike | 3.2 | 4.1 | 0.0 | 0.0 | 0.0 | 0% |

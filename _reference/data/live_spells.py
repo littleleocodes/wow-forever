@@ -91,25 +91,42 @@ def skeleton(t):
     return NUM.sub("#", tidy(t)).rstrip(".")
 
 
+REFERENCED = re.compile(r"\$(?:/(\d+);)?(\d+)[a-zA-Z]")   # "$16361s1", "$/2;20966s1" (half of it) in a spell's description
+
+
 def to_level60(text, sid, st):
-    """Wowhead's text with every number that is an effect's range at the spell's MaxLevel brought back to level 60."""
-    lv = (st["Levels"].get(str(sid)) or {})
-    eff = st["Effects"].get(str(sid))
-    eff = eff if isinstance(eff, list) else [eff] if eff else []
-    top = lv.get("MaxLevel") or 0
-    if top <= 60:
-        return text
-    subs = {}
-    for e in eff:
-        ppl, base = e.get("PPL") or 0, e.get("BasePoints") or 0
-        if not ppl or not base:
+    """Wowhead's text with every number that is an effect's range at its spell's MaxLevel brought back to level 60: the rank's own
+    effects and those of every spell its description takes a number from ($16361s1: Windfury Weapon's extra attack power, $16313s1:
+    Rockbiter Weapon's passive, $/2;20966s1: half of Seal of Command's judgement). 2026-11-15: only the rank's own effects were brought
+    back, so the 70888 pull took eight ranks' MaxLevel numbers for a change (Windfury Weapon rank 4: 433 extra attack power for the
+    client's 333 at level 60; Rockbiter rank 7, Frostbrand rank 5, Seal of Command rank 5, Seal of Fury rank 7, Light's Vigil rank 3,
+    Holy Nova rank 6, Dire Bear Form)."""
+    srcs = [(int(sid), 1)]
+    for m in REFERENCED.finditer(st["Descriptions"].get(str(sid)) or ""):
+        r = (int(m.group(2)), int(m.group(1) or 1))
+        if r not in srcs:
+            srcs.append(r)
+    subs, ref_subs = {}, {}
+    for i, (s, div) in enumerate(srcs):
+        lv = (st["Levels"].get(str(s)) or {})
+        top = lv.get("MaxLevel") or 0
+        if top <= 60:
             continue
-        v = e.get("Variance") or 0
-        b60 = base + ppl * (60 - (lv.get("BaseLevel") or 60))
-        d = ppl * (top - 60)
-        for x60 in {b60, b60 * (1 - v / 2), b60 * (1 + v / 2)}:
-            subs[round(x60 + d)] = round(x60)
-            subs[int(x60 + d)] = int(x60)
+        eff = st["Effects"].get(str(s))
+        eff = eff if isinstance(eff, list) else [eff] if eff else []
+        out = subs if i == 0 else ref_subs
+        for e in eff:
+            ppl, base = e.get("PPL") or 0, e.get("BasePoints") or 0
+            if not ppl or not base:
+                continue
+            v = e.get("Variance") or 0
+            b60 = base + ppl * (60 - (lv.get("BaseLevel") or 60))
+            d = ppl * (top - 60)
+            for x60 in {b60, b60 * (1 - v / 2), b60 * (1 + v / 2)}:
+                out[round((x60 + d) / div)] = round(x60 / div)
+                out[int((x60 + d) / div)] = int(x60 / div)
+    for k, v in ref_subs.items():   # the rank's own effects first, as before
+        subs.setdefault(k, v)
     if not subs:
         return text
 
@@ -192,7 +209,14 @@ def main():
         live = tips.get(str(sid))
         if not live:
             continue
-        live60 = to_level60(tidy(evaluate(base_value(live))), sid, st)
+        raw = base_value(live)
+        pre = to_level60(raw, sid, st)
+        if [m.group(0) for m in ARITH.finditer(raw)] != [m.group(0) for m in ARITH.finditer(pre)]:
+            # a MaxLevel number inside Wowhead's arithmetic, "( 3122 / 77 - 1 + 0)" (Flametongue Weapon rank 6's proc at level 64;
+            # 2026-11-15): brought to 60 first, then worked out (35 to 112, the client's level-60 text; 40 to 125 had been taken)
+            live60 = tidy(evaluate(pre))
+        else:
+            live60 = to_level60(tidy(evaluate(raw)), sid, st)
         a_, b_ = ([float(x.replace(",", "")) for x in NUM.findall(t)] for t in (text, live60))
         if len(a_) == len(b_) and all(abs(x - y) <= max(1.0, 0.02 * abs(x)) for x, y in zip(a_, b_)):
             continue   # the same numbers, give or take rounding (a point, or 2%)

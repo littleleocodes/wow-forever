@@ -96,10 +96,10 @@ What this build casts per kill ([report](../fightlab/ret-dps.md), all leveling b
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 3.4 | 4.0 | 4.9 | 5.3 | 6.1 | 37% |
-| Judgement | 1.5 | 2.0 | 2.4 | 2.5 | 2.8 | 24% |
-| Holy Strike | 1.4 | 1.6 | 2.0 | 2.1 | 2.4 | 21% |
-| Seal of Command | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 18% |
+| Melee | 3.4 | 4.0 | 4.9 | 5.3 | 6.3 | 38% |
+| Judgement | 1.5 | 2.0 | 2.4 | 2.5 | 2.9 | 22% |
+| Holy Strike | 1.4 | 1.6 | 2.0 | 2.1 | 2.4 | 22% |
+| Seal of Command | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 19% |
 | Hammer of Justice | 0.3 | 0.3 | 0.4 | 0.4 | 0.4 | 0% |
 
 ## Notes

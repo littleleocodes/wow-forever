@@ -1782,7 +1782,7 @@
       {
        "rank": "Rank 6",
        "id": 16342,
-       "text": "Imbue the Shaman's weapon with fire. Each hit causes 40 to 125 additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.",
+       "text": "Imbue the Shaman's weapon with fire. Each hit causes 35 to 112 additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.",
        "school": "Fire",
        "coefficient": "10% of spell power (direct)",
        "tooltip_source": "beta",
@@ -1797,11 +1797,6 @@
         "status": "changed",
         "text": "Imbue the Shaman's weapon with fire. Each hit causes 36 to 112 additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. Lasts for 5 minutes.",
         "change_kind": "reworded"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Imbue the Shaman's weapon with fire. Each hit causes 35 to 112 additional Fire damage, based on the speed of the weapon. Slower weapons cause more fire damage per swing. When applied to main hand, disables any benefit you personally receive from Flametongue Totem. Lasts for 60 minutes.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=16342)"
        }
       }
      ]
@@ -1957,7 +1952,7 @@
       {
        "rank": "Rank 5",
        "id": 16356,
-       "text": "Imbue the Shaman's weapon with frost. Each hit has a chance of causing 203 additional Frost damage and slowing the target's movement speed by 25% for 8 sec. Lasts for 60 minutes.",
+       "text": "Imbue the Shaman's weapon with frost. Each hit has a chance of causing 169 additional Frost damage and slowing the target's movement speed by 25% for 8 sec. Lasts for 60 minutes.",
        "school": "Frost",
        "coefficient": "10% of spell power (direct)",
        "tooltip_source": "beta",
@@ -1972,11 +1967,6 @@
         "status": "changed",
         "text": "Imbue the Shaman's weapon with frost. Each hit has a chance of causing 186 additional Frost damage and slowing the target's movement speed by 25% for 8 sec. Lasts for 5 minutes.",
         "change_kind": "numbers"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Imbue the Shaman's weapon with frost. Each hit has a chance of causing 169 additional Frost damage and slowing the target's movement speed by 25% for 8 sec. Lasts for 60 minutes.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=16356)"
        }
       }
      ]
@@ -2453,7 +2443,7 @@
       {
        "rank": "Rank 7",
        "id": 16316,
-       "text": "Imbue the Shaman's weapon, increasing melee attack power by 686 and allowing melee attacks to cause additional threat when using that weapon. Lasts for 60 minutes.",
+       "text": "Imbue the Shaman's weapon, increasing melee attack power by 653 and allowing melee attacks to cause additional threat when using that weapon. Lasts for 60 minutes.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2468,11 +2458,6 @@
         "status": "changed",
         "text": "Imbue the Shaman's weapon, increasing melee attack power by 653 and allowing melee attacks to cause additional threat when using that weapon. Lasts for 5 minutes.",
         "change_kind": "numbers"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Imbue the Shaman's weapon, increasing melee attack power by 653 and allowing melee attacks to cause additional threat when using that weapon. Lasts for 60 minutes.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=16316)"
        }
       }
      ]
@@ -2975,7 +2960,7 @@
       {
        "rank": "Rank 4",
        "id": 16362,
-       "text": "Imbue the Shaman's weapon with wind. Each hit has a 20% chance of granting you 2 extra attacks with 433 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.",
+       "text": "Imbue the Shaman's weapon with wind. Each hit has a 20% chance of granting you 2 extra attacks with 333 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2990,11 +2975,6 @@
         "status": "changed",
         "text": "Imbue the Shaman's weapon with wind. Each hit has a 20% chance of granting you 2 extra attacks with 333 extra melee attack power. Lasts for 5 minutes.",
         "change_kind": "reworded"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Imbue the Shaman's weapon with wind. Each hit has a 20% chance of granting you 2 extra attacks with 333 extra melee attack power. When applied to main hand, disables any benefit you personally receive from Windfury Totem. Lasts for 60 minutes.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=16362)"
        }
       }
      ]

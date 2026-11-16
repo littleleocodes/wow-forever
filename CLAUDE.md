@@ -243,6 +243,15 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   values the client's tooltip lacks: Oath of Light); each rank keeps `live` {build, before, source}; build_forever_spells.py applies the
   newest raw/*-live-*/live_spells.json after hotfix_text on every rebuild. Run it at every client or simulator update
   (`--pull <date>-live-<build> --build <client> --commit <sim commit> --write`) and read raw/<pull>/README.md's not-taken list.
+  Since 2026-11-15 `to_level60` also brings back the numbers a description takes from another spell (`$16361s1`, `$/2;20966s1`): only
+  the rank's own effects had been, and the 70888 pull took nine ranks' MaxLevel numbers for changes (Windfury Weapon rank 4: 433 for
+  the client's 333; Rockbiter 7, Frostbrand 5, Seal of Command 5, Seal of Fury 7, Light's Vigil 3, Holy Nova 6, Dire Bear Form; and
+  Flametongue 6, whose MaxLevel number sat inside Wowhead's arithmetic, "( 3122 / 77 - 1 + 0)": mapped before it is worked out;
+  archive regenerated offline against the pre-live text, 116 changes kept). Regenerate a pull from its own tooltips (`--cache`) with
+  `live_spells.SPELLS` pointed at the spellbooks with each `live.before` restored: against today's text it drops every change taken.
+  The same gap in the fight lab: spell_scaling.json scales a rank's own effects only, so a number from a referenced spell is read at
+  its level-60 value at every level (the shaman's imbues scale since 2026-11-15 through `--referenced-only` rows and
+  `tables.rank_amounts`; the paladin's seals and a few small ones are open, search-improvements 0i).
   The client's own tables per build are on wago.tools (product wowf, `https://wago.tools/db2/<Table>/csv?build=<build>`; the CSVs go to
   ~/.wow-forever-tools/wago/, never the repository): diff them to see when a change landed.
 - Proposed Forever builds are **hypotheses**: validated for point math only. Mark performance claims as
@@ -439,7 +448,17 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   faster per kill on single pulls, most at 34-40; even from 50 for Arcane-Frost); Fire keeps Ice Armor, and so does the AoE variant (no rules file: Mage Armor was 9-20% slower in pulls
   of four). A choice a module makes for the player belongs in `ROTATION_KNOBS`, where the tunes can compare it. The duel lab plays every
 rules knob (`make_module`), so a knob that is a PvE choice also goes in `duellab/duel.PVE_KNOBS` (the duel mage had worn Mage Armor
-for the first matrix of 2026-11-15: 62% -> 26% against the druid). **Save points**: `fl_open_search.SimCache` keeps every
+for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same night (user: "Go full power, go with your recs", idea 0h) the
+  rogue's poisons (`POISONS`: Instant main hand and Deadly off hand from 30 by default; Instant on both; Deadly on both ...) and the
+  shaman's weapon imbue (`IMBUE_EARLY` before Windfury Weapon at 30, `IMBUE_LATE` from 30, `IMBUE_TOP` from `IMBUE_TOP_FROM`:
+  Rockbiter, Windfury, Flametongue at the weapon's speed, Frostbrand at an assumed 9 procs a minute) became knobs, in PVE_KNOBS too
+  (pvp_rogue.py frees a hand by taking a poison out of mod.spells, so the module looks each hand's poison up at every hit). Every rogue
+  leveling rotation took Instant Poison on both hands (0.8-1.7% faster per kill; Assassination's rules also dropped Kick). The
+  shaman's tunes kept their rules, and a direct A/B put Rockbiter back from 54 in the Enhancement rules by hand (0.8-1.8% faster per
+  kill at 54-60; the tune's 600-fight screening had read it as +0.16%: search-improvements 0j). The imbues' numbers are read at the
+  shaman's level (Rockbiter rank 5: 212 attack power at 34, 355 from 42). The paladin's Holy path still makes two such choices itself
+  (2026-11-16, measured, not yet knobs: caster gear from Holy Shock, 6% slower per kill than melee gear over 30-60 for the Shockadin
+  and Holy pages; Seal of Command whenever the build has it): search-improvements 0h, ask before a queue. **Save points**: `fl_open_search.SimCache` keeps every
   fight-lab result of a rotation's level-60 block in `open/cache/<class>-<rotation>.simcache.jsonl` until the winner is saved, so a
   stopped search replays its finished work (the file is void after any change to the engine, a class module, the rules or the data).
   **Gear**: `raidsim/gear_check.py [classes] [--pool]` lists, without a simulator run, the sets that hold items the database lacks
