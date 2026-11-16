@@ -41,10 +41,41 @@
         "power_cost": null
        },
        "talent_rank": 2
+      },
+      {
+       "talent": {
+        "name": "Improved Channeling",
+        "id": 135343
+       },
+       "spell_tooltip": {
+        "spell": {
+         "name": "Improved Channeling",
+         "id": 11237
+        },
+        "description": "Gives your Arcane Missiles spell a 20% chance and your Arcane Blast and Arcane Wrath spells a 14% chance to not lose casting time when you take damage.",
+        "cast_time": "Passive",
+        "power_cost": null
+       },
+       "talent_rank": 1
+      },
+      {
+       "talent": {
+        "name": "Arcane Resilience",
+        "id": 135332
+       },
+       "spell_tooltip": {
+        "spell": {
+         "name": "Arcane Resilience",
+         "id": 28574
+        },
+        "description": "Increases your Armor by an amount equal to 25% of your Intellect.",
+        "cast_time": "Passive"
+       },
+       "talent_rank": 1
       }
      ],
      "specialization_name": "Arcane",
-     "spent_points": 2
+     "spent_points": 4
     },
     {
      "specialization": {

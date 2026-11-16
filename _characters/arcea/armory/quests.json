@@ -16,6 +16,13 @@
  "in_progress": [
   {
    "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/191?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Panther Mastery",
+   "id": 191
+  },
+  {
+   "key": {
     "href": "https://us.api.blizzard.com/data/wow/quest/1039?namespace=static-1.60.1_70399-forever-us"
    },
    "name": "The Barrens Port",
@@ -23,17 +30,17 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/1245?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "The Missing Diplomat",
-   "id": 1245
-  },
-  {
-   "key": {
     "href": "https://us.api.blizzard.com/data/wow/quest/340?namespace=static-1.60.1_70399-forever-us"
    },
    "name": "Chapter II",
    "id": 340
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/7905?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "The Darkmoon Faire",
+   "id": 7905
   },
   {
    "key": {
@@ -58,10 +65,45 @@
   },
   {
    "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/522?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Assassin's Contract",
+   "id": 522
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/94280?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Craftsman's Writ: Mechanical Dragonling",
+   "id": 94280
+  },
+  {
+   "key": {
     "href": "https://us.api.blizzard.com/data/wow/quest/341?namespace=static-1.60.1_70399-forever-us"
    },
    "name": "Chapter III",
    "id": 341
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/92489?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Power Overwhelming",
+   "id": 92489
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/231?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "A Daughter's Love",
+   "id": 231
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/1264?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "The Missing Diplomat",
+   "id": 1264
   },
   {
    "key": {
@@ -72,24 +114,17 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/222?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/564?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Worgen in the Woods",
-   "id": 222
+   "name": "Costly Menace",
+   "id": 564
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/228?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/2928?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Mor'Ladim",
-   "id": 228
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/335?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "A Noble Brew",
-   "id": 335
+   "name": "Gyrodrillmatic Excavationators",
+   "id": 2928
   },
   {
    "key": {
@@ -100,17 +135,24 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/337?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/1302?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "An Old History Book",
-   "id": 337
+   "name": "James Hyal",
+   "id": 1302
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/190?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/92432?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Panther Mastery",
-   "id": 190
+   "name": "An Alarming Request",
+   "id": 92432
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/186?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Tiger Mastery",
+   "id": 186
   },
   {
    "key": {
@@ -121,10 +163,10 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/94240?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/659?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Craftsman's Writ: Herbalist's Gloves",
-   "id": 94240
+   "name": "Hints of a New Plague?",
+   "id": 659
   },
   {
    "key": {
@@ -135,10 +177,24 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/185?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/2904?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Tiger Mastery",
-   "id": 185
+   "name": "A Fine Mess",
+   "id": 2904
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/560?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Farren's Proof",
+   "id": 560
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/690?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Malin's Request",
+   "id": 690
   },
   {
    "key": {
@@ -149,10 +205,10 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/253?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/1453?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Bride of the Embalmer",
-   "id": 253
+   "name": "Reclaimers' Business in Desolace",
+   "id": 1453
   },
   {
    "key": {
@@ -163,17 +219,10 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/79363?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/92456?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Silvia's Sword",
-   "id": 79363
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/95795?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "Fallen in the Fen",
-   "id": 95795
+   "name": "A Green Sample",
+   "id": 92456
   },
   {
    "key": {

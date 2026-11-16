@@ -523,6 +523,13 @@
       },
       {
        "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/7499?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Enchant Gloves - Fishing",
+       "id": 7499
+      },
+      {
+       "key": {
         "href": "https://us.api.blizzard.com/data/wow/recipe/7999?namespace=static-1.60.1_70399-forever-us"
        },
        "name": "Lesser Magic Wand",
@@ -754,7 +761,7 @@
    },
    "tiers": [
     {
-     "skill_points": 150,
+     "skill_points": 156,
      "max_skill_points": 225,
      "tier": {
       "name": "Cooking",
@@ -910,6 +917,13 @@
       },
       {
        "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/3963?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Goblin Deviled Clams",
+       "id": 3963
+      },
+      {
+       "key": {
         "href": "https://us.api.blizzard.com/data/wow/recipe/3964?namespace=static-1.60.1_70399-forever-us"
        },
        "name": "Boiled Clams",
@@ -957,7 +971,7 @@
    },
    "tiers": [
     {
-     "skill_points": 100,
+     "skill_points": 110,
      "max_skill_points": 150,
      "tier": {
       "name": "Fishing",
