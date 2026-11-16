@@ -93,7 +93,7 @@
  "mage": {
   "frost-leveling": {
    "before": [
-    "**Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up; **Ice Barrier** before each pull if your build has it.",
+    "**Frost Armor** (**Ice Armor** from level 30, **Mage Armor** from 34) and **Arcane Intellect** up; **Ice Barrier** before each pull if your build has it.",
     "Pull from as far away as you can."
    ],
    "steps": [
@@ -126,14 +126,14 @@
   },
   "frostfire-leveling": {
    "before": [
-    "**Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up.",
+    "**Frost Armor** (**Ice Armor** from level 30, **Mage Armor** from 34) and **Arcane Intellect** up.",
     "Pull from as far away as you can."
    ],
    "steps": [
-    "Your bolt: **Frostbolt** until level 40, **Frostfire Bolt** from 40, each only while the mob has more than about a third (35%) of its health. Cast it while the mob walks in and whenever nothing below applies; if the mob would reach you before the cast ends, **Fire Blast** (with it on cooldown and **Frost Nova** ready, wand the mob until it arrives).",
+    "Your bolt: **Frostbolt** until level 40, **Frostfire Bolt** from 40, each only while the mob has more than about a third (35%) of its health (**Frostfire Bolt** also only while you have more than 15% of your mana). Cast it while the mob walks in and whenever nothing below applies; if the mob would reach you before the cast ends, **Fire Blast** (with it on cooldown and **Frost Nova** ready, wand the mob until it arrives).",
     "**Frost Nova** when it reaches you, then step back; with **Frost Nova** on cooldown, **Fire Blast**, then keep casting the bolt.",
     "**Ice Lance** into the freeze whenever it is ready (an 8-second cooldown).",
-    "Below about a third of the mob's health: no bolt; **Fire Blast** whenever it is ready, an **Ice Lance** into a freeze or one that will kill, else your wand. No Cone of Cold (the tuned rules switch it off).",
+    "Below about a third of the mob's health (or, from 40, under 15% of your mana): no bolt; **Fire Blast** whenever it is ready, an **Ice Lance** into a freeze or one that will kill, else your wand. No Cone of Cold (the tuned rules switch it off).",
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
@@ -158,7 +158,7 @@
   },
   "arcane-leveling": {
    "before": [
-    "**Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up.",
+    "**Frost Armor** (**Ice Armor** from level 30, **Mage Armor** from 34) and **Arcane Intellect** up.",
     "Pull from as far away as you can; **Presence of Mind** at the pull (your first cast goes out instantly); **Arcane Power** at the pull when it is ready and you have more than half your mana (once you have the talent, at 42)."
    ],
    "steps": [
@@ -170,12 +170,12 @@
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
-    "Drink your conjured water below a third of your mana (35%), **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health (65%): the tuned rules set no thresholds for this list, so these are the fight lab's defaults."
+    "Drink your conjured water below 15% of your mana and eat below 40% of your health (the tuned rules), **Evocation** when it is ready and you are under 40% mana."
    ]
   },
   "barrage-frost-leveling": {
    "before": [
-    "**Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up.",
+    "**Frost Armor** (**Ice Armor** from level 30, **Mage Armor** from 34) and **Arcane Intellect** up.",
     "Pull from as far away as you can."
    ],
    "steps": [

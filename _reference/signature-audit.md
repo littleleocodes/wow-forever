@@ -38,16 +38,17 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Arcane | page | arcane-open-leveling (33/0/18) | arcane-leveling | - | Arcane Blast 1.86 | 78% (min 50%) | 30.1 | OK |
-| Arcane | slot | arcane-leveling (29/0/22) | arcane-leveling | - | Arcane Blast 0.00 | 66% (min 50%) | 37.3 | FAIL: lacks Arcane Blast |
+| Arcane | page | arcane-open-leveling (33/0/18) | arcane-leveling | - | Arcane Blast 1.81 | 78% (min 50%) | 29.5 | OK |
+| Arcane | slot | arcane-leveling (29/0/22) | arcane-leveling | - | Arcane Blast 0.00 | 71% (min 50%) | 36.5 | FAIL: lacks Arcane Blast |
 | Fire | page | fire-open-leveling (1/32/18) | fire-leveling | - | Fireball 0.91, Pyroblast 1.01 | 70% (min 60%) | 36.3 | OK |
 | Fire | slot | fire-leveling (1/32/18) | fire-leveling | - | Fireball 0.86, Pyroblast 1.01 | 69% (min 60%) | 36.9 | OK |
 | Fire | slot | opt-fire-leveling-leveling-st (4/31/16) | fire-leveling | - | Fireball 1.22, Pyroblast 1.01 | 74% (min 60%) | 39.9 | OK |
-| Frost | page | frost-open-leveling (18/3/30) | frost-leveling | - | Frostbolt 3.24 | 88% (min 60%) | 30.0 | OK |
-| Frost | slot | leveling-frost (17/0/34) | frost-leveling | - | Frostbolt 3.06 | 89% (min 60%) | 31.1 | OK |
-| Frost | slot | opt-frost-aoe-leveling-aoe (7/3/41) | frost-leveling | - | Frostbolt 3.42 | 88% (min 60%) | 35.7 | OK |
-| Arcane-Frost | page | arcane-frost-open-leveling (28/0/23) | barrage-frost-leveling | - | Frostbolt 2.54, Arcane Missiles 0.47 | 91% (min 60%) | 28.5 | OK |
-| Frostfire | page | frostfire-open-leveling (2/25/24) | frostfire-leveling | - | Frostfire Bolt 2.71 | 31% (min 30%) | 34.3 | OK |
+| Frost | page | frost-open-leveling (18/3/30) | frost-leveling | - | Frostbolt 3.26 | 89% (min 60%) | 29.2 | OK |
+| Frost | slot | leveling-frost (17/0/34) | frost-leveling | - | Frostbolt 3.36 | 89% (min 60%) | 30.2 | OK |
+| Frost | slot | opt-frost-aoe-leveling-aoe (7/3/41) | frost-leveling | - | Frostbolt 3.51 | 88% (min 60%) | 34.4 | OK |
+| Arcane-Frost | page | arcane-frost-open-leveling (28/0/23) | barrage-frost-leveling | - | Frostbolt 2.77, Arcane Missiles 0.49 | 92% (min 60%) | 28.0 | OK |
+| Arcane-Frost | slot | opt-frost-leveling-leveling-st (22/3/26) | barrage-frost-leveling | - | Frostbolt 2.79, Arcane Missiles 0.50 | 90% (min 60%) | 29.4 | OK |
+| Frostfire | page | frostfire-open-leveling (2/25/24) | frostfire-leveling | - | Frostfire Bolt 2.66 | 31% (min 30%) | 33.5 | OK |
 
 ## Paladin
 

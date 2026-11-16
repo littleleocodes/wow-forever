@@ -5,7 +5,7 @@
    "spec": "frost-leveling",
    "hand": "leveling-frost",
    "opt": "opt-frost-leveling-leveling-st",
-   "started": "2026-11-15T05:07:18",
+   "started": "2026-11-15T18:10:35",
    "steps": [
     "race",
     "report"
@@ -414,39 +414,39 @@
      }
     }
    },
-   "seconds": 527,
+   "seconds": 306,
    "log": [
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py mage --spec frost-leveling --build leveling-frost --compare --levels 20,30,40,50,60 --fights 1000",
      "rc": 0,
-     "seconds": 8,
+     "seconds": 5,
      "tail": [
       "== mage frost-leveling leveling-frost: 1000 fights per level, seed 1",
       "L20: fight 12.8s (median 12.6, p90 16.3), downtime 6.9s, deaths/100 0.0, time/kill 27.7s, 130 kills/h, mana/kill 350, shares Frostbolt 60%, Ice Lance 27%, Fire Blast 7%, Wand 4%, Frost Nova 3%",
       "L30: fight 17.5s (median 17.2, p90 22.3), downtime 9.1s, deaths/100 0.0, time/kill 34.7s, 104 kills/h, mana/kill 579, shares Frostbolt 52%, Ice Lance 30%, Fire Blast 11%, Wand 4%, Frost Nova 3%",
-      "L40: fight 17.9s (median 17.6, p90 23.7), downtime 10.4s, deaths/100 0.0, time/kill 36.3s, 99 kills/h, mana/kill 955, shares Frostbolt 54%, Ice Lance 30%, Fire Blast 8%, Wand 5%, Frost Nova 3%",
-      "L50: fight 15.1s (median 15.1, p90 20.1), downtime 8.5s, deaths/100 0.0, time/kill 31.6s, 114 kills/h, mana/kill 1091, shares Frostbolt 52%, Ice Lance 35%, Fire Blast 7%, Wand 5%, Frost Nova 2%",
-      "L60: fight 14.0s (median 13.7, p90 18.3), downtime 6.2s, deaths/100 0.0, time/kill 28.2s, 127 kills/h, mana/kill 1149, shares Frostbolt 53%, Ice Lance 36%, Fire Blast 6%, Wand 4%, Frost Nova 1%",
-      "done in 8s"
+      "L40: fight 18.1s (median 18.0, p90 23.5), downtime 8.3s, deaths/100 0.0, time/kill 34.4s, 105 kills/h, mana/kill 812, shares Frostbolt 56%, Ice Lance 28%, Fire Blast 8%, Wand 5%, Frost Nova 3%",
+      "L50: fight 15.2s (median 15.1, p90 20.0), downtime 6.4s, deaths/100 0.0, time/kill 29.7s, 121 kills/h, mana/kill 933, shares Frostbolt 54%, Ice Lance 34%, Fire Blast 7%, Wand 4%, Frost Nova 2%",
+      "L60: fight 14.1s (median 13.7, p90 18.2), downtime 5.0s, deaths/100 0.0, time/kill 27.1s, 133 kills/h, mana/kill 1013, shares Frostbolt 54%, Ice Lance 34%, Fire Blast 6%, Wand 4%, Frost Nova 2%",
+      "done in 5s"
      ],
      "stderr": []
     },
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py mage --spec frost-leveling --build opt-frost-leveling-leveling-st --compare leveling-frost opt-fire-leveling-leveling-st --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --gear-tiers --write",
      "rc": 0,
-     "seconds": 168,
+     "seconds": 102,
      "tail": [
-      "   Ice Shards               5  sim   +9.6% (fight  +12.0% +-0.5)  EV  +10.4%",
+      "   Ice Shards               5  sim   +8.4% (fight   +9.9% +-0.5)  EV  +10.4%",
       "   Improved Channeling      1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.0%",
-      "   Improved Frostbolt       5  sim   +6.4% (fight  +10.9% +-0.6)  EV   +3.0%",
-      "   Incineration             3  sim   +1.5% (fight   +1.7% +-0.5)  EV   +1.0%",
+      "   Improved Frostbolt       5  sim   +6.9% (fight  +11.5% +-0.6)  EV   +3.0%",
+      "   Incineration             3  sim   +1.4% (fight   +1.5% +-0.4)  EV   +1.0%",
       "   Magic Absorption         2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.1%",
       "   Missile Barrage          2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +1.8%",
-      "   Precision                2  sim   +3.7% (fight   +4.8% +-0.6)  EV   +3.7%",
-      "   Presence of Mind         1  sim   +0.9% (fight   +1.6% +-0.4)  EV   +0.9%",
-      "   Shatter                  3  sim  +18.5% (fight  +23.9% +-0.6)  EV  +18.9%",
-      "   Wand Specialization      2  sim   +1.1% (fight   +1.2% +-0.5)  EV   +0.3%",
-      "done in 168s",
+      "   Precision                2  sim   +4.7% (fight   +6.0% +-0.5)  EV   +3.7%",
+      "   Presence of Mind         1  sim   +1.2% (fight   +1.3% +-0.4)  EV   +0.9%",
+      "   Shatter                  3  sim  +15.3% (fight  +19.4% +-0.5)  EV  +18.9%",
+      "   Wand Specialization      2  sim   +1.4% (fight   +1.7% +-0.5)  EV   +0.3%",
+      "done in 102s",
       "wrote F:\\wow-forever\\mage\\research\\leveling\\fightlab\\frost-leveling.md"
      ],
      "stderr": []
@@ -454,7 +454,7 @@
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py mage --spec fire-leveling --build opt-fire-leveling-leveling-st --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --write",
      "rc": 0,
-     "seconds": 179,
+     "seconds": 94,
      "tail": [
       "   Ice Block                1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +3.4%",
       "   Ice Lance                1  sim   +7.5% (fight  +12.9% +-0.9)  EV  +65.6%",
@@ -466,7 +466,7 @@
       "   Precision                3  sim   +4.4% (fight   +6.2% +-0.9)  EV   +4.3%",
       "   Pyroblast                1  sim   +3.5% (fight   +4.4% +-0.8)  EV   +6.9%",
       "   Wand Specialization      2  sim   +0.4% (fight   +0.8% +-0.8)  EV   +0.1%",
-      "done in 179s",
+      "done in 94s",
       "wrote F:\\wow-forever\\mage\\research\\leveling\\fightlab\\fire-leveling.md"
      ],
      "stderr": []
@@ -474,19 +474,19 @@
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py mage --spec frostfire-leveling --build opt-frost-leveling-leveling-st --compare opt-frost-leveling-leveling-st --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --write",
      "rc": 0,
-     "seconds": 173,
+     "seconds": 105,
      "tail": [
-      "   Ice Shards               5  sim   +7.7% (fight  +10.4% +-0.5)  EV     n/a",
+      "   Ice Shards               5  sim   +7.4% (fight  +10.5% +-0.7)  EV     n/a",
       "   Improved Channeling      1  sim   +0.0% (fight   +0.0% +-0.0)  EV     n/a",
       "   Improved Frostbolt       5  sim   +0.0% (fight   +0.0% +-0.0)  EV     n/a",
-      "   Incineration             3  sim   +1.7% (fight   +1.9% +-0.5)  EV     n/a",
+      "   Incineration             3  sim   +1.2% (fight   +2.1% +-0.6)  EV     n/a",
       "   Magic Absorption         2  sim   +0.0% (fight   +0.0% +-0.0)  EV     n/a",
       "   Missile Barrage          2  sim   +0.0% (fight   +0.0% +-0.0)  EV     n/a",
-      "   Precision                2  sim   +3.5% (fight   +5.0% +-0.5)  EV     n/a",
-      "   Presence of Mind         1  sim   +0.7% (fight   +1.0% +-0.4)  EV     n/a",
-      "   Shatter                  3  sim  +15.7% (fight  +20.7% +-0.6)  EV     n/a",
-      "   Wand Specialization      2  sim   +1.3% (fight   +1.4% +-0.5)  EV     n/a",
-      "done in 172s",
+      "   Precision                2  sim   +5.3% (fight   +6.2% +-0.7)  EV     n/a",
+      "   Presence of Mind         1  sim   +0.3% (fight   +1.2% +-0.7)  EV     n/a",
+      "   Shatter                  3  sim  +14.9% (fight  +20.1% +-0.7)  EV     n/a",
+      "   Wand Specialization      2  sim   +1.5% (fight   +2.0% +-0.7)  EV     n/a",
+      "done in 104s",
       "wrote F:\\wow-forever\\mage\\research\\leveling\\fightlab\\frostfire-leveling.md"
      ],
      "stderr": []
@@ -498,13 +498,13 @@
      "leveling-frost": {
       "20": 27.7,
       "30": 34.7,
-      "40": 36.3,
-      "50": 31.6,
-      "60": 28.2
+      "40": 34.4,
+      "50": 29.7,
+      "60": 27.1
      }
     },
     "mean": {
-     "leveling-frost": 31.595
+     "leveling-frost": 30.409999999999997
     },
     "winner": "leveling-frost",
     "gain_vs_hand": 0.0,
@@ -632,16 +632,16 @@
    "time_per_kill": {
     "20": 27.3,
     "30": 34.5,
-    "40": 36.2,
-    "50": 30.0,
-    "60": 27.0
+    "40": 35.3,
+    "50": 29.8,
+    "60": 26.8
    },
    "hand_time_per_kill": {
     "20": 27.3,
     "30": 34.5,
-    "40": 36.4,
-    "50": 31.6,
-    "60": 28.3
+    "40": 34.3,
+    "50": 29.6,
+    "60": 27.2
    },
    "variants": {
     "frost-aoe": {
@@ -5781,17 +5781,9 @@
   }
  },
  "last_run": {
-  "date": "2026-11-15T12:18:34",
+  "date": "2026-11-15T20:31:04",
   "classes": [
-   "mage",
-   "priest",
-   "warlock",
-   "hunter",
-   "warrior",
-   "rogue",
-   "paladin",
-   "shaman",
-   "druid"
+   "mage"
   ],
   "steps": [
    "regen"
@@ -5802,132 +5794,78 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 3535,
+  "seconds": 229,
   "refresh": null,
   "regen_log": [
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_trees.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_trees.py mage",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote F:\\wow-forever\\warrior\\research\\talents\\forever\\talent-trees.md",
-     "wrote F:\\wow-forever\\paladin\\research\\talents\\forever\\talent-trees.md",
-     "wrote F:\\wow-forever\\hunter\\research\\talents\\forever\\talent-trees.md",
-     "wrote F:\\wow-forever\\rogue\\research\\talents\\forever\\talent-trees.md",
-     "wrote F:\\wow-forever\\priest\\research\\talents\\forever\\talent-trees.md",
-     "wrote F:\\wow-forever\\shaman\\research\\talents\\forever\\talent-trees.md",
-     "wrote F:\\wow-forever\\mage\\research\\talents\\forever\\talent-trees.md",
-     "wrote F:\\wow-forever\\warlock\\research\\talents\\forever\\talent-trees.md",
-     "wrote F:\\wow-forever\\druid\\research\\talents\\forever\\talent-trees.md"
+     "wrote F:\\wow-forever\\mage\\research\\talents\\forever\\talent-trees.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py mage",
     "rc": 0,
-    "seconds": 10,
+    "seconds": 1,
     "tail": [
-     "formatted F:\\wow-forever\\paladin\\research\\talents\\forever\\proposed-builds.json",
-     "formatted F:\\wow-forever\\shaman\\research\\talents\\forever\\proposed-builds.json",
-     "formatted F:\\wow-forever\\druid\\research\\talents\\forever\\proposed-builds.json",
-     "mage: README section + leveling-frost note written",
-     "priest: README section + leveling-shadow note written",
-     "warlock: README section + leveling-affliction note written",
-     "hunter: README section + leveling-beast-mastery note written",
-     "warrior: README section + leveling-arms note written",
-     "rogue: README section + leveling-combat-swords note written",
-     "paladin: README section + leveling-retribution note written",
-     "shaman: README section + leveling-enhancement note written",
-     "druid: README section + leveling-feral note written"
+     "formatted F:\\wow-forever\\mage\\research\\talents\\forever\\proposed-builds.json",
+     "mage: README section + leveling-frost note written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py mage",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 1,
     "tail": [
-     "druid: raid sim section written (3 specs)",
-     "hunter: raid sim section written (4 specs)",
      "mage: raid sim section written (4 specs)",
-     "paladin: raid sim section written (3 specs)",
-     "priest: raid sim section written (2 specs)",
-     "rogue: raid sim section written (4 specs)",
-     "shaman: raid sim section written (3 specs)",
-     "warlock: raid sim section written (5 specs)",
-     "warrior: raid sim section written (4 specs)",
      "wrote _reference\\raidsim-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py mage",
     "rc": 0,
-    "seconds": 4,
+    "seconds": 1,
     "tail": [
-     "druid: healer lab section written (1 specs)",
-     "paladin: healer lab section written (1 specs)",
-     "priest: healer lab section written (1 specs)",
-     "shaman: healer lab section written (1 specs)",
      "wrote _reference\\heallab-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py mage",
     "rc": 0,
-    "seconds": 6,
+    "seconds": 1,
     "tail": [
-     "mage: leveling/guide.md written (arcane-frost-open-leveling)",
-     "priest: leveling/guide.md written (shadow-open-leveling)",
-     "warlock: leveling/guide.md written (affliction-demonology-open-leveling)",
-     "hunter: leveling/guide.md written (beast-survival-open-leveling)",
-     "warrior: leveling/guide.md written (fury-open-leveling)",
-     "rogue: leveling/guide.md written (combat-open-leveling)",
-     "paladin: leveling/guide.md written (prot-ret-open-leveling)",
-     "shaman: leveling/guide.md written (enhancement-open-leveling)",
-     "druid: leveling/guide.md written (feral-combat-open-leveling)"
+     "mage: leveling/guide.md written (arcane-frost-open-leveling)"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py mage",
     "rc": 0,
-    "seconds": 3,
+    "seconds": 0,
     "tail": [
-     "mage: raid gear and consumables written",
-     "priest: raid gear and consumables written",
-     "warlock: raid gear and consumables written",
-     "hunter: raid gear and consumables written",
-     "warrior: raid gear and consumables written",
-     "rogue: raid gear and consumables written",
-     "paladin: raid gear and consumables written",
-     "shaman: raid gear and consumables written",
-     "druid: raid gear and consumables written"
+     "mage: raid gear and consumables written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py mage",
     "rc": 0,
-    "seconds": 7,
+    "seconds": 1,
     "tail": [
-     "mage: raid and leveling rotations, DPS ranking written",
-     "priest: raid and leveling rotations, DPS ranking written",
-     "warlock: raid and leveling rotations, DPS ranking written",
-     "hunter: raid and leveling rotations, DPS ranking written",
-     "warrior: raid and leveling rotations, DPS ranking written",
-     "rogue: raid and leveling rotations, DPS ranking written",
-     "paladin: raid and leveling rotations, DPS ranking written",
-     "shaman: raid and leveling rotations, DPS ranking written",
-     "druid: raid and leveling rotations, DPS ranking written"
+     "mage: raid and leveling rotations, DPS ranking written"
     ],
     "stderr": []
    },
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\validate_builds.py",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "  ok   opt-balance-dps-parse (33/0/18)",
      "  ok   opt-feral-cat-dps-raid-dps (9/30/12)",
@@ -5947,7 +5885,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_builds.py",
     "rc": 0,
-    "seconds": 4,
+    "seconds": 5,
     "tail": [
      "rogue/classic-baseline: 5 build pages + README.md",
      "rogue: 30 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
@@ -5965,30 +5903,30 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py mage",
     "rc": 0,
-    "seconds": 4,
+    "seconds": 1,
     "tail": [
      "wrote _reference\\new-builds-survey.md",
-     "wrote the New spells and builds section of 9 raid READMEs"
+     "wrote the New spells and builds section of 1 raid READMEs"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\signature_audit.py mage priest warlock hunter warrior rogue paladin shaman druid --write --no-default",
+    "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\signature_audit.py mage --write --no-default",
     "rc": 0,
-    "seconds": 276,
+    "seconds": 14,
     "tail": [
-     "  Feral Combat [page: feral-combat-open-leveling 11/29/11] feral-cat-dps (tuned): casts/kill at 60 {'Claw': 3.11, 'Ferocious Bite': 0.81}, core 96% (min 80%), 26.0 s/kill; rules: -; OK",
-     "      shares at 60: {'Melee': 0.26, 'Claw': 0.172, 'Ferocious Bite': 0.168, 'Rake': 0.147, 'Rip': 0.126, 'Ravage': 0.091}",
-     "  Feral Combat [slot: opt-feral-cat-dps-solo-60 9/30/12] feral-cat-dps (tuned): casts/kill at 60 {'Claw': 3.1, 'Ferocious Bite': 0.81}, core 96% (min 80%), 26.2 s/kill; rules: -; OK",
-     "      shares at 60: {'Melee': 0.258, 'Claw': 0.177, 'Ferocious Bite': 0.171, 'Rake': 0.145, 'Rip': 0.122, 'Ravage': 0.091}",
-     "  Feral Combat [slot: opt-feral-cat-dps-leveling-st 9/30/12] feral-cat-dps (tuned): casts/kill at 60 {'Claw': 3.09, 'Ferocious Bite': 0.8}, core 96% (min 80%), 26.2 s/kill; rules: -; OK",
-     "      shares at 60: {'Melee': 0.257, 'Claw': 0.176, 'Ferocious Bite': 0.17, 'Rake': 0.145, 'Rip': 0.124, 'Ravage': 0.091}",
-     "  Feral Combat [slot: leveling-feral 9/30/12] feral-cat-dps (tuned): casts/kill at 60 {'Claw': 3.13, 'Ferocious Bite': 0.79}, core 96% (min 80%), 26.2 s/kill; rules: -; OK",
-     "      shares at 60: {'Melee': 0.256, 'Claw': 0.175, 'Ferocious Bite': 0.166, 'Rake': 0.144, 'Rip': 0.133, 'Ravage': 0.089}",
-     "  Restoration [page: restoration-leveling 11/0/40] feral-cat-dps (tuned): casts/kill at 60 {}, core - (min -), 31.4 s/kill; rules: -; no rule",
-     "      shares at 60: {'Melee': 0.31, 'Rake': 0.161, 'Ferocious Bite': 0.158, 'Claw': 0.148, 'Rip': 0.095, 'Ravage': 0.071}",
+     "  Frost [slot: leveling-frost 17/0/34] frost-leveling (tuned): casts/kill at 60 {'Frostbolt': 3.36}, core 89% (min 60%), 30.2 s/kill; rules: -; OK",
+     "      shares at 60: {'Frostbolt': 0.555, 'Ice Lance': 0.335, 'Fire Blast': 0.056, 'Wand': 0.04, 'Frost Nova': 0.015}",
+     "  Frost [slot: opt-frost-aoe-leveling-aoe 7/3/41] frost-leveling (tuned): casts/kill at 60 {'Frostbolt': 3.51}, core 88% (min 60%), 34.4 s/kill; rules: -; OK",
+     "      shares at 60: {'Frostbolt': 0.556, 'Ice Lance': 0.328, 'Fire Blast': 0.062, 'Wand': 0.034, 'Frost Nova': 0.02}",
+     "  Arcane-Frost [page: arcane-frost-open-leveling 28/0/23] barrage-frost-leveling (tuned): casts/kill at 60 {'Frostbolt': 2.77, 'Arcane Missiles': 0.49}, core 92% (min 60%), 28.0 s/kill; rules: -; OK",
+     "      shares at 60: {'Frostbolt': 0.463, 'Ice Lance': 0.308, 'Arcane Missiles': 0.146, 'Fire Blast': 0.048, 'Wand': 0.022, 'Frost Nova': 0.013}",
+     "  Arcane-Frost [slot: opt-frost-leveling-leveling-st 22/3/26] barrage-frost-leveling (tuned): casts/kill at 60 {'Frostbolt': 2.79, 'Arcane Missiles': 0.5}, core 90% (min 60%), 29.4 s/kill; rules: -; OK",
+     "      shares at 60: {'Frostbolt': 0.448, 'Ice Lance': 0.322, 'Arcane Missiles': 0.134, 'Fire Blast': 0.048, 'Wand': 0.033, 'Frost Nova': 0.015}",
+     "  Frostfire [page: frostfire-open-leveling 2/25/24] frostfire-leveling (tuned): casts/kill at 60 {'Frostfire Bolt': 2.66}, core 31% (min 30%), 33.5 s/kill; rules: -; OK",
+     "      shares at 60: {'Ice Lance': 0.339, 'Frostfire Bolt': 0.28, 'Fire Blast': 0.243, 'Ignite': 0.057, 'Wand': 0.035, 'Frostfire Bolt burn': 0.029}",
      "wrote _reference\\signature-audit.md",
      "wrote _reference\\data\\fightlab\\signature-audit.json"
     ],
@@ -5997,7 +5935,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_modes.py",
     "rc": 0,
-    "seconds": 27,
+    "seconds": 10,
     "tail": [
      "druid: README.md sections and 3 mode folders written",
      "hunter: README.md sections and 3 mode folders written",
@@ -6015,7 +5953,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_tier_list.py",
     "rc": 0,
-    "seconds": 4,
+    "seconds": 1,
     "tail": [
      "wrote tier-list.md: 30 damage specs, 5 healers, 3 tanks"
     ],
@@ -6024,7 +5962,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py mage --write",
     "rc": 0,
-    "seconds": 560,
+    "seconds": 182,
     "tail": [
      "| fire-leveling -> level-20 build (0/0/11) | +2.0% | +4.2% | +43.2% | +47.7% | +55.4% | +58.9% | +62.6% | +63.6% | +65.2% | +68.3% | +69.5% |",
      "| fire-leveling -> level-30 build (0/10/11) | +1.8% | +13.1% | +25.5% | +25.9% | +55.4% | +58.9% | +62.6% | +63.6% | +65.2% | +68.3% | +69.5% |",
@@ -6042,169 +5980,9 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py priest --write",
-    "rc": 0,
-    "seconds": 308,
-    "tail": [
-     "| shadow-dps -> level-20 build (11/0/0) | +0.6% | +2.8% | +29.5% | +36.0% | +36.7% | +34.8% | +36.4% | +36.9% | +38.9% | +52.3% | +53.3% |",
-     "| shadow-dps -> level-30 build (17/0/4) | +0.6% | +2.8% | +29.0% | +36.1% | +38.6% | +37.2% | +37.8% | +39.4% | +40.0% | +41.5% | +53.5% |",
-     "| shadow-dps -> level-40 build (0/0/31) | +0.4% | +2.8% | +4.9% | +22.4% | +25.8% | +26.2% | +50.2% | +51.8% | +52.7% | +53.2% | +54.5% |",
-     "| shadow-dps -> level-50 build (5/3/33) | -0.1% | +0.4% | +3.7% | +23.5% | +25.8% | +26.2% | +50.2% | +51.8% | +52.7% | +53.2% | +54.5% |",
-     "| shadow-dps -> level-60 build (16/2/33) | +0.6% | +2.8% | +29.0% | +36.1% | +38.4% | +37.0% | +37.6% | +39.2% | +27.8% | +34.4% | +54.6% |",
-     "",
-     "## Reading it",
-     "",
-     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
-     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
-     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
-     ""
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py warlock --write",
-    "rc": 0,
-    "seconds": 182,
-    "tail": [
-     "| affliction-leveling -> level-20 build (11/0/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +25.7% |",
-     "| affliction-leveling -> level-30 build (21/0/0) | +1.2% | +5.2% | +7.7% | +9.3% | +16.9% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +25.7% |",
-     "| affliction-leveling -> level-40 build (31/0/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +25.9% |",
-     "| affliction-leveling -> level-50 build (32/9/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +26.0% |",
-     "| affliction-leveling -> level-60 build (27/24/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +20.3% | +22.4% | +22.5% | +22.7% | +28.3% |",
-     "",
-     "## Reading it",
-     "",
-     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
-     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
-     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
-     ""
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py hunter --write",
-    "rc": 0,
-    "seconds": 144,
-    "tail": [
-     "| bm-leveling -> level-20 build (1/10/0) | +0.8% | +2.0% | +6.6% | +8.8% | +10.9% | +13.5% | +16.2% | +20.9% | +22.2% | +24.3% | +26.5% |",
-     "| bm-leveling -> level-30 build (5/16/0) | +0.8% | +3.2% | +5.0% | +8.8% | +11.7% | +13.1% | +15.7% | +20.9% | +22.2% | +24.3% | +26.5% |",
-     "| bm-leveling -> level-40 build (0/31/0) | +0.3% | +2.4% | +6.5% | +9.5% | +11.0% | +13.6% | +19.0% | +21.0% | +21.8% | +25.1% | +26.7% |",
-     "| bm-leveling -> level-50 build (7/32/2) | +0.3% | +2.4% | +6.5% | +9.5% | +10.6% | +13.6% | +19.0% | +20.9% | +22.4% | +23.8% | +26.4% |",
-     "| bm-leveling -> level-60 build (20/31/0) | +0.3% | +2.4% | +6.5% | +9.5% | +11.0% | +13.6% | +19.0% | +20.9% | +21.8% | +25.1% | +26.7% |",
-     "",
-     "## Reading it",
-     "",
-     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
-     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
-     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
-     ""
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py warrior --write",
-    "rc": 0,
-    "seconds": 209,
-    "tail": [
-     "| fury-dw-raid -> level-20 build (0/11/0) | +0.6% | +4.1% | +8.9% | +13.6% | +19.7% | +22.2% | +34.2% | +35.6% | +36.4% | +37.2% | +38.3% |",
-     "| fury-dw-raid -> level-30 build (0/21/0) | +0.6% | +4.1% | +8.9% | +13.9% | +19.7% | +22.2% | +34.2% | +35.6% | +36.4% | +37.2% | +38.3% |",
-     "| fury-dw-raid -> level-40 build (0/31/0) | +0.6% | +4.1% | +8.9% | +13.9% | +19.7% | +22.2% | +34.2% | +35.6% | +36.4% | +37.2% | +38.3% |",
-     "| fury-dw-raid -> level-50 build (2/39/0) | +0.6% | +4.1% | +8.9% | +13.9% | +19.7% | +22.2% | +34.2% | +35.6% | +36.4% | +37.2% | +38.3% |",
-     "| fury-dw-raid -> level-60 build (11/40/0) | +0.6% | +4.1% | +8.9% | +13.9% | +19.7% | +22.2% | +34.2% | +35.6% | +36.4% | +37.2% | +38.3% |",
-     "",
-     "## Reading it",
-     "",
-     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
-     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
-     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
-     ""
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py rogue --write",
-    "rc": 0,
-    "seconds": 439,
-    "tail": [
-     "| combat-daggers-raid -> level-20 build (0/9/2) | +1.6% | +3.6% | +14.1% | +16.1% | +20.2% | +23.3% | +25.2% | +27.5% | +29.5% | +30.7% | +32.1% |",
-     "| combat-daggers-raid -> level-30 build (0/19/2) | +1.6% | +3.6% | +14.1% | +15.9% | +21.4% | +23.6% | +25.8% | +27.6% | +29.5% | +30.7% | +32.3% |",
-     "| combat-daggers-raid -> level-40 build (8/21/2) | +1.6% | +4.6% | +8.0% | +11.7% | +19.2% | +23.3% | +25.9% | +27.6% | +29.5% | +30.7% | +32.3% |",
-     "| combat-daggers-raid -> level-50 build (8/31/2) | +0.1% | +4.0% | +12.4% | +15.4% | +19.4% | +23.5% | +25.3% | +27.6% | +29.5% | +30.7% | +32.3% |",
-     "| combat-daggers-raid -> level-60 build (31/18/2) | +1.6% | +4.6% | +8.1% | +9.4% | +10.4% | +12.8% | +19.5% | +24.2% | +27.1% | +29.1% | +34.1% |",
-     "",
-     "## Reading it",
-     "",
-     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
-     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
-     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
-     ""
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py paladin --write",
-    "rc": 0,
-    "seconds": 255,
-    "tail": [
-     "| ret-dps -> level-20 build (0/0/11) | +1.4% | +7.5% | +17.6% | +23.1% | +26.5% | +29.3% | +33.0% | +32.6% | +35.6% | +37.1% | +39.4% |",
-     "| ret-dps -> level-30 build (0/0/21) | +1.4% | +7.5% | +17.6% | +23.1% | +26.5% | +29.3% | +33.0% | +32.6% | +35.6% | +37.1% | +39.4% |",
-     "| ret-dps -> level-40 build (8/0/23) | +1.4% | +7.5% | +17.6% | +23.1% | +26.5% | +29.3% | +33.0% | +33.0% | +34.6% | +37.1% | +39.8% |",
-     "| ret-dps -> level-50 build (8/8/25) | +1.4% | +7.5% | +17.6% | +23.1% | +26.5% | +29.3% | +33.0% | +32.7% | +35.6% | +37.1% | +39.8% |",
-     "| ret-dps -> level-60 build (8/16/27) | +1.4% | +7.5% | +17.6% | +23.1% | +26.5% | +29.3% | +33.0% | +33.0% | +34.6% | +37.1% | +39.8% |",
-     "",
-     "## Reading it",
-     "",
-     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
-     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
-     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
-     ""
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py shaman --write",
-    "rc": 0,
-    "seconds": 450,
-    "tail": [
-     "| elemental-dps -> level-20 build (11/0/0) | +1.5% | +7.5% | +15.0% | +16.4% | +17.3% | +21.4% | +24.4% | +30.2% | +34.4% | +35.9% | +37.1% |",
-     "| elemental-dps -> level-30 build (12/1/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.4% | +24.7% | +27.4% | +28.6% | +33.1% | +35.9% | +37.1% |",
-     "| elemental-dps -> level-40 build (12/11/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.4% | +24.7% | +27.4% | +28.6% | +33.1% | +35.9% | +37.1% |",
-     "| elemental-dps -> level-50 build (11/22/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.1% | +24.5% | +27.2% | +30.6% | +34.4% | +35.9% | +37.1% |",
-     "| elemental-dps -> level-60 build (21/22/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.4% | +24.7% | +25.9% | +27.6% | +30.2% | +33.6% | +37.3% |",
-     "",
-     "## Reading it",
-     "",
-     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
-     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
-     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
-     ""
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py druid --write",
-    "rc": 0,
-    "seconds": 620,
-    "tail": [
-     "| balance-dps -> level-20 build (11/0/0) | +1.4% | +11.5% | +21.0% | +26.3% | +34.7% | +44.5% | +51.1% | +55.8% | +56.2% | +57.5% | +58.7% |",
-     "| balance-dps -> level-30 build (21/0/0) | +1.4% | +11.5% | +19.3% | +25.5% | +35.9% | +45.9% | +53.0% | +56.9% | +57.1% | +58.7% | +59.5% |",
-     "| balance-dps -> level-40 build (31/0/0) | +1.4% | +10.6% | +19.3% | +25.5% | +35.9% | +45.9% | +53.1% | +56.9% | +57.1% | +58.7% | +59.5% |",
-     "| balance-dps -> level-50 build (35/0/6) | +1.4% | +10.6% | +19.3% | +25.5% | +35.9% | +45.9% | +53.0% | +56.7% | +57.1% | +58.7% | +59.5% |",
-     "| balance-dps -> level-60 build (35/7/9) | +1.4% | +10.6% | +19.3% | +25.5% | +35.9% | +45.9% | +53.0% | +56.7% | +57.1% | +58.1% | +59.6% |",
-     "",
-     "## Reading it",
-     "",
-     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
-     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
-     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
-     ""
-    ],
-    "stderr": []
-   },
-   {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_optimizer_sections.py",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "updated hunter/leveling/README.md and hunter/raid/README.md",
      "updated mage/leveling/README.md and mage/raid/README.md",
@@ -6221,7 +5999,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\compare_effects.py",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 1,
     "tail": [
      "druid    buff=10 nerf=16 reworked=0 new=18 removed=13 same=8 unscored=0",
      "hunter   buff=3 nerf=21 reworked=0 new=18 removed=14 same=8 unscored=0",
@@ -6238,7 +6016,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\loop_audit.py",
     "rc": 0,
-    "seconds": 6,
+    "seconds": 2,
     "tail": [
      "druid    flagged 31/99  open 1",
      "hunter   flagged 23/62  open 6",
@@ -6265,7 +6043,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\build_beta_checklist.py",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "wrote _reference\\beta-checklist.md"
     ],
@@ -6274,44 +6052,36 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\summary.py --write",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "wrote _reference\\fightlab-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_report_index.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_report_index.py mage",
     "rc": 0,
-    "seconds": 6,
+    "seconds": 7,
     "tail": [
-     "mage: leveling 3, raid 13, classic 10",
-     "priest: leveling 3, raid 11, classic 3",
-     "warlock: leveling 3, raid 16, classic 5",
-     "hunter: leveling 6, raid 14, classic 5",
-     "warrior: leveling 4, raid 14, classic 6",
-     "rogue: leveling 4, raid 12, classic 8",
-     "paladin: leveling 3, raid 14, classic 7",
-     "shaman: leveling 4, raid 15, classic 9",
-     "druid: leveling 3, raid 16, classic 10"
+     "mage: leveling 3, raid 13, classic 10"
     ],
     "stderr": []
    },
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\page_lint.py --write",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 1,
     "tail": [
+     "| talents | 0 |",
+     "| links | 0 |",
+     "| guide | 0 |",
+     "| build | 0 |",
+     "| dead | 0 |",
+     "| keys | 0 |",
+     "| steps | 0 |",
+     "| macros | 0 |",
      "| coverage | 0 |",
      "| names | 0 |",
-     "",
-     "## build",
-     "",
-     "- hunter: hunter/leveling/beast-marks.md: the guide names Pathfinding, which the page's build does not take",
-     "- hunter: hunter/leveling/survival.md: the guide names Rapid Killing, which the page's build does not take",
-     "- mage: mage/leveling/arcane-frost.md: the guide names Improved Frost Nova, Permafrost, Winter's Chill, which the page's build does not take",
-     "- paladin: paladin/leveling/hybrid-holy-protection.md: the guide names Redoubt, which the page's build does not take",
-     "- rogue: rogue/leveling/combat.md: the guide names Improved Slice and Dice, which the page's build does not take",
      "",
      ""
     ],

@@ -65,8 +65,9 @@ builds on the Frost page and for a pull that brings friends. Free slots stay fre
 
 ## No key: click these between fights
 
-Frost Armor (Ice Armor from 30), Arcane Intellect, Conjure Water, Conjure Food, the eat-and-drink macro, your mount (40 in Classic),
-the Hearthstone, Slow Fall and the teleports. Tab (target nearest enemy) and Space (jump) stay on WoW's defaults.
+Your armor (Frost Armor, Ice Armor from 30, Mage Armor from 34; Ice Armor again for a pack, and the Fire build keeps it), Arcane
+Intellect, Conjure Water, Conjure Food, the eat-and-drink macro, your mount (40 in Classic), the Hearthstone, Slow Fall and the
+teleports. Tab (target nearest enemy) and Space (jump) stay on WoW's defaults.
 
 ## Macros (Esc, Macros, New; pick the question-mark icon so the button shows the spell or the item count)
 

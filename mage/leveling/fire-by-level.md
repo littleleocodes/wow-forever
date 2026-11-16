@@ -78,7 +78,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 1. **Fireball** while the mob has more than about a third of its health and you have more than 15% of your mana. If it reaches you, keep casting.
 2. Below a third of its health, or under 15% of your mana: your wand, once you own one.
 
-- Keep **Frost Armor** and **Arcane Intellect** up at all times, from here to 60.
+- Keep your armor and **Arcane Intellect** up at all times, from here to 60: **Frost Armor** now, **Ice Armor** from 30.
 - **Frostbolt** (4) is not part of the Fire list: skip it. **Conjure Water** (4): drink between fights instead of waiting for your mana.
 
 *Fight lab, seconds per kill: 12 at level 1. Presses per kill at level 1: Fireball 2.2, Wand 0.8.*
@@ -184,7 +184,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Frostbite** (28-29): a chill can freeze the mob, and your armor chills a mob that hits you. Treat a freeze as a free **Frost Nova**: step back and keep casting.
 - **Frost Warding** (23-24) adds armor to **Frost Armor**; **Precision** (25) gets its third point and **Improved Frost Nova** (26-27) brings **Frost Nova** back 4 seconds sooner. **Cone of Cold** (26) goes on C for packs: the Fire list never casts it.
-- **Ice Armor** (30) replaces **Frost Armor** as your armor spell.
+- **Ice Armor** (30) replaces **Frost Armor** as your armor spell, and Fire keeps it to 60: the tuned rules of 2026-11-15 found Mage Armor (34) no faster for this list, and **Ice Armor**'s chill rolls **Frostbite**.
 
 *Fight lab, seconds per kill: 35 at level 24, 41 at level 30. Presses per kill at level 24: Wand 1.9, Fireball 1.5, Fire Blast 1.5, Pyroblast 1.0, Frost Nova 0.9, Counterspell 0.2.*
 

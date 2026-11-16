@@ -45,6 +45,7 @@ Fire levels with **Fireball** at range and **Fire Blast** up close, opens every 
 
 - This build has no Ice Block: a pull that goes wrong is **Blink**, **Mana Shield** or a healing potion.
 - Mana: **Fireball** costs 410 at top rank against 290 for a **Frostbolt**. Drink below 15% of your mana and eat below 40% of your health (the tuned rules); use **Evocation** between fights when it is ready and you are under 40% mana.
+- Armor: Fire keeps **Ice Armor** to 60. The tuned rules of 2026-11-15 found Mage Armor (34) no faster for this list (even at 34 and 50, slower at 40, faster at 60), and **Ice Armor**'s chill rolls **Frostbite**.
 - Pulls of several mobs: **Flamestrike** hits them all, but the fight lab only measured single pulls for Fire.
 - This is the open leveling search's 1/32/18 winner of 2026-11-15: the talents of the build it replaced in a new order (**Improved Frost Nova** complete at 27, **Shatter** by 38, **Master of Elements** (46-48) and **Critical Mass** (49-51) before most of **Incineration**), 0.6% faster per kill at levels 20-60. The talents come from the leveling filler pass of 2026-11-09, which moved eight points that measured nothing or only held a tier open (Blast Wave among them) to **Incineration**, **Improved Frost Nova** and **Wand Specialization**.
 

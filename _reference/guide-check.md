@@ -34,15 +34,15 @@ Leveling steps that name a spell the tuned rules never cast (0; `fightlab/rotati
 | hunter | Hybrid Beast Mastery/Survival | raid | 2026-11-11 | bm-raid 08b392250e22, melee-dps 88ff0967f0fa |
 | hunter | Hybrid Beast Mastery/Survival | leveling | 2026-11-15 | leveling:bm-leveling c776312d31d0, leveling:melee-dps 0e159439c0ea, leveling:mm-raid 4d924884d1e4 |
 | mage | Frost | raid | 2026-11-10 | frost-raid 9d92acd12c6d |
-| mage | Frost | leveling | 2026-11-15 | leveling:arcane-leveling c56d81e538f8, leveling:barrage-frost-leveling 9aac3f0a975d, leveling:fire-leveling 154f0acbd572, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 1af5e11a81be, leveling:frostfire-leveling cc68b479c9e9 |
+| mage | Frost | leveling | 2026-11-15 | leveling:arcane-leveling 07ceccb2d284, leveling:barrage-frost-leveling 81d5838d4941, leveling:fire-leveling 154f0acbd572, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 6f2e68b68584, leveling:frostfire-leveling 270857ee52fb |
 | mage | Hybrid Arcane/Frost | raid | 2026-11-10 | arcane-dps 2dde8eb89ed4, frost-raid 9d92acd12c6d |
-| mage | Hybrid Arcane/Frost | leveling | 2026-11-15 | leveling:arcane-leveling c56d81e538f8, leveling:barrage-frost-leveling 9aac3f0a975d, leveling:fire-leveling 154f0acbd572, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 1af5e11a81be, leveling:frostfire-leveling cc68b479c9e9 |
+| mage | Hybrid Arcane/Frost | leveling | 2026-11-15 | leveling:arcane-leveling 07ceccb2d284, leveling:barrage-frost-leveling 81d5838d4941, leveling:fire-leveling 154f0acbd572, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 6f2e68b68584, leveling:frostfire-leveling 270857ee52fb |
 | mage | Arcane | raid | 2026-11-04 | arcane-dps 2dde8eb89ed4 |
-| mage | Arcane | leveling | 2026-11-15 | leveling:arcane-leveling c56d81e538f8, leveling:barrage-frost-leveling 9aac3f0a975d, leveling:fire-leveling 154f0acbd572, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 1af5e11a81be, leveling:frostfire-leveling cc68b479c9e9 |
+| mage | Arcane | leveling | 2026-11-15 | leveling:arcane-leveling 07ceccb2d284, leveling:barrage-frost-leveling 81d5838d4941, leveling:fire-leveling 154f0acbd572, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 6f2e68b68584, leveling:frostfire-leveling 270857ee52fb |
 | mage | Fire | raid | 2026-11-10 | fire-raid 6e4d5a9fe906 |
-| mage | Fire | leveling | 2026-11-15 | leveling:arcane-leveling c56d81e538f8, leveling:barrage-frost-leveling 9aac3f0a975d, leveling:fire-leveling 154f0acbd572, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 1af5e11a81be, leveling:frostfire-leveling cc68b479c9e9 |
+| mage | Fire | leveling | 2026-11-15 | leveling:arcane-leveling 07ceccb2d284, leveling:barrage-frost-leveling 81d5838d4941, leveling:fire-leveling 154f0acbd572, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 6f2e68b68584, leveling:frostfire-leveling 270857ee52fb |
 | mage | Hybrid Fire/Frost | raid | 2026-11-11 | fire-raid 6e4d5a9fe906, frost-raid 9d92acd12c6d, frostfire-raid d47545516c78 |
-| mage | Hybrid Fire/Frost | leveling | 2026-11-15 | leveling:arcane-leveling c56d81e538f8, leveling:barrage-frost-leveling 9aac3f0a975d, leveling:fire-leveling 154f0acbd572, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 1af5e11a81be, leveling:frostfire-leveling cc68b479c9e9 |
+| mage | Hybrid Fire/Frost | leveling | 2026-11-15 | leveling:arcane-leveling 07ceccb2d284, leveling:barrage-frost-leveling 81d5838d4941, leveling:fire-leveling 154f0acbd572, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 6f2e68b68584, leveling:frostfire-leveling 270857ee52fb |
 | paladin | Retribution | raid | 2026-10-15 | ret-dps b8271e4a77aa |
 | paladin | Retribution | leveling | 2026-11-08 | leveling:holy-leveling 3ce03646602a, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 4e2e970e1edf |
 | paladin | Protection | raid | 2026-10-15 | prot-tank 271ef28b893a |

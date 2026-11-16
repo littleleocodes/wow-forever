@@ -1,7 +1,8 @@
 {
  "veto": {
   "Frostfire Bolt": {
-   "min_hp": 0.35
+   "min_hp": 0.35,
+   "min_mana": 0.15
   },
   "Cone of Cold": {
    "off": true
@@ -12,6 +13,9 @@
  },
  "drink_below": 0.15,
  "eat_below": 0.4,
+ "knobs": {
+  "MAGE_ARMOR": 1
+ },
  "class": "mage",
  "spec": "frostfire-leveling",
  "build": "frostfire-open-leveling",
@@ -29,8 +33,8 @@
   ],
   "build_spec": "Hybrid Fire/Frost",
   "dropped_saved_rules": [],
-  "core_share_before": 0.40479069012191954,
-  "core_share_after": 0.3081946677186157,
+  "core_share_before": 0.3081946677186157,
+  "core_share_after": 0.3105506735748271,
   "min_share": 0.3,
   "floor_reached": null,
   "played_before": true,
@@ -41,112 +45,67 @@
  "changes": [
   {
    "round": 1,
-   "change": "Frostfire Bolt only while the mob has more than 20% health",
+   "change": "MAGE_ARMOR = 1",
    "rule": [
-    "min_hp",
-    "Frostfire Bolt",
-    0.2
+    "knob",
+    "MAGE_ARMOR",
+    1
    ],
-   "gain_seed1": 0.021945722669047485,
-   "gain_seed2": 0.021647391864081378
+   "gain_seed1": 0.013294714633032667,
+   "gain_seed2": 0.014029459612659445
   },
   {
    "round": 2,
-   "change": "never cast Cone of Cold",
+   "change": "Frostfire Bolt only above 15% mana",
    "rule": [
-    "off",
-    "Cone of Cold",
-    true
-   ],
-   "gain_seed1": 0.011885045511298431,
-   "gain_seed2": 0.00869237480851559
-  },
-  {
-   "round": 3,
-   "change": "Frostfire Bolt only while the mob has more than 35% health",
-   "rule": [
-    "min_hp",
+    "min_mana",
     "Frostfire Bolt",
-    0.35
-   ],
-   "gain_seed1": 0.012289284578976378,
-   "gain_seed2": 0.017328433339414473
-  },
-  {
-   "round": 4,
-   "change": "drink below 15% mana",
-   "rule": [
-    "drink_below",
-    null,
     0.15
    ],
-   "gain_seed1": 0.004592387540689358,
-   "gain_seed2": 0.006120772865486734
-  },
-  {
-   "round": 5,
-   "change": "Frostbolt only while the mob has more than 35% health",
-   "rule": [
-    "min_hp",
-    "Frostbolt",
-    0.35
-   ],
-   "gain_seed1": 0.003350163526396277,
-   "gain_seed2": 0.006365432819132599
-  },
-  {
-   "round": 6,
-   "change": "eat below 40% health",
-   "rule": [
-    "eat_below",
-    null,
-    0.4
-   ],
-   "gain_seed1": 0.005603421792947039,
-   "gain_seed2": 0.004026155908440354
+   "gain_seed1": 0.00380100956937679,
+   "gain_seed2": 0.0046502837702442346
   }
  ],
- "weighted_before": 36.66895396928529,
- "weighted_after": 34.36315003161991,
+ "weighted_before": 34.36315003161991,
+ "weighted_after": 33.87997116239187,
  "per_level": {
   "20": {
-   "before": 29.924369317213422,
+   "before": 28.7564510450065,
    "after": 28.7564510450065,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 34.46867016920077,
+   "before": 32.20046305388859,
    "after": 32.20046305388859,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 46.59913391904677,
-   "after": 42.88199129093189,
+   "before": 42.88199129093189,
+   "after": 41.44311060570007,
    "deaths_before": 0.0,
-   "deaths_after": 0.0
+   "deaths_after": 0.1
   },
   "50": {
-   "before": 37.63477725970742,
-   "after": 35.113430869546505,
+   "before": 35.113430869546505,
+   "after": 34.8909064705883,
    "deaths_before": 0.0,
-   "deaths_after": 0.0
+   "deaths_after": 0.03333333333333333
   },
   "60": {
-   "before": 32.59231804482542,
-   "after": 31.008931644876565,
+   "before": 31.008931644876565,
+   "after": 30.543026203402807,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
  },
  "retune": {
   "times": {
-   "saved": 35.974,
-   "from scratch": 34.363,
-   "continued": 35.756
+   "saved": 34.363,
+   "continued": 33.88
   },
-  "installed": "from scratch",
+  "installed": "continued",
   "reference_ok": true
  }
 }

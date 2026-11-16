@@ -381,7 +381,8 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   `_reference/page-audit.md` K). `rotation_opt.py <class> --fresh --write` tunes a class pipeline's rotations only: after a mechanics
   change every other leveling rotation with a file under `fightlab/rotations/` (and the two `prot-leveling` ones without) needs
   `fightlab/rules_retune.py <class> <rotation> <build>` (rotation_opt's search from scratch and continued from the saved file; the
-  fastest set is installed only when it beats the saved rules by 0.3% on the final check). Eight files had predated their class's patch
+  fastest set is installed only when it beats the saved rules by 0.3% on the final check; `--continued-only` skips the from-scratch half,
+  for a new knob on mechanics the saved rules were tuned on the same day). Eight files had predated their class's patch
   port: warlock Destruction ran 9% slower under the old file, rogue Subtlety 0.7% (2.3% at level 60). Never change a rule file while
   its rotation's search runs. The signature floor a tune enforces is its build's own spec: the `spec` field, as the pages and the
   signature audit judge it, else its points (2026-11-15: the Discipline page's 29/22/0 raid-path build had been judged by its points as
@@ -432,7 +433,11 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   of its points in Feral Combat is a Feral Combat build (`spec_modes.LEVELING_FILE_AS`); a hybrid's leveling slot holding only
   optimizer exports is no page (`spec_modes.grid`). Fire opens every pull with a hard-cast Pyroblast (`mage.PYRO_OPENER`, a rule
   knob; the mob still runs in from the pull's first second, the lab's convention for every class), and `rules_retune.py` installs a
-  rule set that plays the required spells over a faster one that does not. **Save points**: `fl_open_search.SimCache` keeps every
+  rule set that plays the required spells over a faster one that does not. The mage's armor is a rule knob since 2026-11-15 (user: "Mage
+  armor or ice armor?"; the module had always worn Ice Armor): `mage.MAGE_ARMOR` wears Mage Armor from 34 (50% of regeneration while
+  casting at every rank in Forever, adding to Arcane Meditation). The tunes took it for Frost, Arcane, Arcane-Frost and Frostfire (up to 5%
+  faster per kill on single pulls, most at 34-40; even from 50 for Arcane-Frost); Fire keeps Ice Armor, and so does the AoE variant (no rules file: Mage Armor was 9-20% slower in pulls
+  of four). A choice a module makes for the player belongs in `ROTATION_KNOBS`, where the tunes can compare it. **Save points**: `fl_open_search.SimCache` keeps every
   fight-lab result of a rotation's level-60 block in `open/cache/<class>-<rotation>.simcache.jsonl` until the winner is saved, so a
   stopped search replays its finished work (the file is void after any change to the engine, a class module, the rules or the data).
   **Gear**: `raidsim/gear_check.py [classes] [--pool]` lists, without a simulator run, the sets that hold items the database lacks

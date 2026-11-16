@@ -12,9 +12,12 @@
   }
  },
  "drink_below": 0.15,
+ "knobs": {
+  "MAGE_ARMOR": 1
+ },
  "class": "mage",
  "spec": "frost-leveling",
- "build": "leveling-frost",
+ "build": "frost-open-leveling",
  "levels": [
   20,
   30,
@@ -22,109 +25,75 @@
   50,
   60
  ],
- "date": "2026-11-03",
+ "date": "2026-11-15",
  "signature": {
   "required": [
    "Frostbolt"
   ],
   "build_spec": "Frost",
   "dropped_saved_rules": [],
-  "core_share_before": 0.800265103986192,
-  "core_share_after": 0.8850983670242358,
+  "core_share_before": 0.8986355910334161,
+  "core_share_after": 0.8934635786219758,
   "min_share": 0.6,
-  "floor_reached": null
+  "floor_reached": null,
+  "played_before": true,
+  "played_after": true
  },
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "Frostbolt only while the mob has more than 20% health",
+   "change": "MAGE_ARMOR = 1",
    "rule": [
-    "min_hp",
-    "Frostbolt",
-    0.2
+    "knob",
+    "MAGE_ARMOR",
+    1
    ],
-   "gain_seed1": 0.011373451355389808,
-   "gain_seed2": 0.011602595304194385
-  },
-  {
-   "round": 2,
-   "change": "never cast Cone of Cold",
-   "rule": [
-    "off",
-    "Cone of Cold",
-    true
-   ],
-   "gain_seed1": 0.01417244829655695,
-   "gain_seed2": 0.012059485868135766
-  },
-  {
-   "round": 3,
-   "change": "Fire Blast only when the mob is below 20% health",
-   "rule": [
-    "max_hp",
-    "Fire Blast",
-    0.2
-   ],
-   "gain_seed1": 0.007264353345365904,
-   "gain_seed2": 0.013626685701309427
-  },
-  {
-   "round": 4,
-   "change": "drink below 15% mana",
-   "rule": [
-    "drink_below",
-    null,
-    0.15
-   ],
-   "gain_seed1": 0.008293428385061752,
-   "gain_seed2": 0.010886699882862394
-  },
-  {
-   "round": 5,
-   "change": "Fire Blast only while the mob has more than 10% health",
-   "rule": [
-    "min_hp",
-    "Fire Blast",
-    0.1
-   ],
-   "gain_seed1": 0.011231960843822497,
-   "gain_seed2": 0.00906766991116581
+   "gain_seed1": 0.021393567991081164,
+   "gain_seed2": 0.01971693270694208
   }
  ],
- "weighted_before": 30.735682044677283,
- "weighted_after": 29.041545898006074,
+ "weighted_before": 30.039323879546476,
+ "weighted_after": 29.49934437169377,
  "per_level": {
   "20": {
-   "before": 20.0996749636721,
-   "after": 18.78729213414639,
+   "before": 27.53434283238871,
+   "after": 27.53434283238871,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 30.344533959183877,
-   "after": 28.8372003455995,
+   "before": 33.796047485684824,
+   "after": 33.796047485684824,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 35.6747682659569,
-   "after": 33.55561198201526,
+   "before": 34.96785028970848,
+   "after": 33.960393376180086,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 31.81769723157139,
-   "after": 29.855709344986966,
+   "before": 29.179131130126066,
+   "after": 28.465002170246787,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 30.282188311160876,
-   "after": 28.873956333672382,
+   "before": 26.427098776605558,
+   "after": 25.893912492681537,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
+ },
+ "retune": {
+  "times": {
+   "saved": 30.039,
+   "continued": 29.499
+  },
+  "installed": "continued",
+  "reference_ok": true
  }
 }

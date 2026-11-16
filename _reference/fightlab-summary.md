@@ -6,7 +6,7 @@
 
 | Class | Spec model | Build | L15 | L20 | L30 | L40 | L50 | L60 | Kills/hour at 60 |
 |---|---|---|---|---|---|---|---|---|---|
-| mage | `frost-leveling` | `opt-frost-leveling-leveling-st` | - | 27.3 | 34.5 | 36.2 | 30.0 | 27.0 | 134 |
+| mage | `frost-leveling` | `opt-frost-leveling-leveling-st` | - | 27.3 | 34.5 | 35.3 | 29.8 | 26.8 | 134 |
 | priest | `shadow-dps` | `opt-shadow-dps-leveling-st` | - | 31.0 | 37.8 | 38.8 | 36.6 | 21.2 | 170 |
 | warlock | `affliction-leveling` | `opt-affliction-leveling-leveling-st` | - | 30.6 | 38.9 | 42.5 | 39.8 | 36.6 | 98 |
 | hunter | `bm-leveling` | `opt-bm-leveling-leveling-st` | - | 15.6 | 19.9 | 23.0 | 24.9 | 25.7 | 140 |
@@ -20,7 +20,7 @@
 
 | Class | Hand draft | L15 | L20 | L30 | L40 | L50 | L60 | Race winner (sim) |
 |---|---|---|---|---|---|---|---|---|
-| mage | `leveling-frost` | - | 27.3 (+0%) | 34.5 (+0%) | 36.4 (+0%) | 31.6 (+5%) | 28.3 (+5%) | leveling-frost |
+| mage | `leveling-frost` | - | 27.3 (+0%) | 34.5 (+0%) | 34.3 (-3%) | 29.6 (-0%) | 27.2 (+1%) | leveling-frost |
 | priest | `leveling-shadow` | - | 34.3 (+11%) | 36.6 (-3%) | 22.9 (-41%) | 22.4 (-39%) | 23.0 (+9%) | cand-shadow-r4 |
 | warlock | `leveling-affliction` | - | 31.6 (+3%) | 39.1 (+1%) | 42.1 (-1%) | 40.6 (+2%) | 38.4 (+5%) | cand-affliction-hand-2026-09-28 |
 | hunter | `leveling-beast-mastery` | - | 16.0 (+2%) | 20.2 (+1%) | 23.2 (+1%) | 25.3 (+2%) | 26.5 (+3%) | cand-bm-r6 |
@@ -36,7 +36,7 @@ Positive = the hand draft is slower. The race winner is the fastest build over a
 
 | Class | Deaths/100 kills L30 | L60 | Downtime/kill L30 | L60 | Fight L30 | L60 | Caster pulls L30 | Interrupts/kill L60 |
 |---|---|---|---|---|---|---|---|---|
-| mage | 0.0 | 0.0 | 9.0s | 5.0s | 17.5s | 14.0s | 16% | 0.08 |
+| mage | 0.0 | 0.0 | 9.0s | 4.4s | 17.5s | 14.4s | 16% | 0.08 |
 | priest | 0.0 | 0.0 | 10.1s | 0.1s | 19.7s | 13.1s | 16% | 0.00 |
 | warlock | 0.0 | 0.0 | 11.4s | 5.4s | 19.5s | 23.2s | 16% | 0.00 |
 | hunter | 0.0 | 0.0 | 2.5s | 3.2s | 9.4s | 14.5s | 16% | 0.00 |
@@ -50,7 +50,7 @@ Positive = the hand draft is slower. The race winner is the fastest build over a
 
 | Class | L30 greens | L30 blues | L60 greens | L60 blues |
 |---|---|---|---|---|
-| mage | 34.5s | 29.5s (-15%) | 27.0s | 25.6s (-5%) |
+| mage | 34.5s | 29.5s (-15%) | 26.8s | 25.3s (-5%) |
 | priest | 37.8s | 30.1s (-20%) | 21.2s | 20.6s (-3%) |
 | warlock | 38.9s | 34.6s (-11%) | 36.6s | 35.8s (-2%) |
 | hunter | 19.9s | 19.4s (-2%) | 25.7s | 25.0s (-3%) |
@@ -64,7 +64,7 @@ Positive = the hand draft is slower. The race winner is the fastest build over a
 
 | Class | Level 30 | Level 60 | Measures ~0 at 60 |
 |---|---|---|---|
-| mage | Ice Lance +15%, Shatter +14%, Improved Frostbolt +8% | Shatter +18%, Ice Lance +14%, Ice Shards +10% | Arcane Blast, Arcane Resilience, Arcane Wrath, Ice Block, Improved Channeling, Magic Absorption, Missile Barrage |
+| mage | Ice Lance +15%, Shatter +14%, Improved Frostbolt +8% | Shatter +15%, Ice Lance +12%, Ice Shards +8% | Arcane Blast, Arcane Resilience, Arcane Wrath, Ice Block, Improved Channeling, Magic Absorption, Missile Barrage |
 | priest | Spirit Tap +11%, Wand Specialization +5%, Twin Disciplines +3% | Shadowform +55%, Mind Flay +31%, Spirit Tap +20% | Blackout, Improved Mind Blast, Mental Agility, Mental Strength, Shadow Reach, Twilight Focus, Wand Specialization |
 | warlock | Suppression +2%, Improved Corruption +1%, Pandemic +1% | Siphon Life +9%, Suppression +7%, Demonic Knowledge +5% | Decimation, Demonic Embrace, Demonic Sacrifice, Improved Bane of Agony, Improved Imp |
 | hunter | Efficiency +4%, Lethal Attacks +2%, Careful Aim +1% | Unleashed Fury +4%, Efficiency +3%, Ferocity +3% | Barrage, Endurance Training, Rapid Killing, Scatter Shot, Sniper Shot |
@@ -76,9 +76,9 @@ Positive = the hand draft is slower. The race winner is the fastest build over a
 
 ## Last rebuild
 
-`rebuild.py` ran on 2026-11-15 for mage, priest, warlock, hunter, warrior, rogue, paladin, shaman, druid (steps regen; 18 min). Per class:
+`rebuild.py` ran on 2026-11-15 for mage (steps race, report; 5 min). Per class:
 
-- **mage**: 1 calibration round(s), converged; race leveling-frost 31.6s
+- **mage**: 1 calibration round(s), converged; race leveling-frost 30.4s
 - **priest**: 1 calibration round(s), converged; race cand-shadow-r4 25.5s, leveling-shadow 26.1s, cand-shadow-r5 26.1s, cand-shadow-r6 26.3s, cand-shadow-r3 27.9s, cand-shadow-hand-2026-09-26 28.6s, cand-shadow-r1 28.9s, cand-shadow-r2 28.9s, cand-shadow-r7 29.5s, cand-shadow-r8 30.7s
 - **warlock**: 1 calibration round(s), converged; race cand-affliction-hand-2026-09-28 38.2s, cand-affliction-r12 38.5s, cand-affliction-r3 38.5s, cand-affliction-r9 38.9s, cand-affliction-r2 39.0s, cand-affliction-r6 39.1s, cand-affliction-r4 39.1s, leveling-affliction 39.1s, cand-affliction-r5 39.6s, cand-affliction-r10 39.6s, cand-affliction-r11 39.6s, cand-affliction-r7 43.4s, cand-affliction-r8 44.4s, cand-affliction-r1 45.3s
 - **hunter**: 1 calibration round(s), converged; race cand-bm-r6 22.9s, cand-bm-r7 23.0s, cand-bm-r5 23.0s, cand-bm-r3 23.3s, cand-bm-r4 23.3s, leveling-beast-mastery 23.4s, cand-bm-r2 23.5s, cand-bm-r1 23.6s, cand-bm-hand-2026-09-26 24.2s

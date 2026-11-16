@@ -4,7 +4,7 @@
 
 ## The build and its order
 
-**Arcane-Frost** ([player page](../../leveling/arcane-frost.md)) — `arcane-frost-open-leveling`: The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the barrage-frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). +0.6% faster per kill than arcane-frost-open-leveling, the fastest of our leveling builds in that race.
+**Arcane-Frost** ([player page](../../leveling/arcane-frost.md)) — `arcane-frost-open-leveling`: The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the barrage-frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). 
 
 | Levels | Tree | Talent | Points |
 |---|---|---|---|
@@ -16,7 +16,8 @@
 | 21-23 | Frost | Frost Channeling | 3 |
 | 24 | Frost | Ice Shards | 1 |
 | 25 | Frost | Shatter | 1 |
-| 26-27 | Frost | Ice Shards | 2 |
+| 26 | Frost | Ice Shards | 1 |
+| 27 | Frost | Arctic Reach | 1 |
 | 28-29 | Frost | Shatter | 2 |
 | 30-31 | Frost | Fingers of Frost | 2 |
 | 32-33 | Arcane | Wand Specialization | 2 |
@@ -24,11 +25,12 @@
 | 35-36 | Arcane | Improved Channeling | 2 |
 | 37-38 | Arcane | Missile Barrage | 2 |
 | 39 | Frost | Arctic Reach | 1 |
-| 40-44 | Arcane | Arcane Concentration | 5 |
-| 45-46 | Arcane | Arcane Subtlety | 2 |
+| 40-41 | Arcane | Arcane Subtlety | 2 |
+| 42-46 | Arcane | Arcane Concentration | 5 |
 | 47 | Arcane | Improved Channeling | 1 |
 | 48-50 | Arcane | Arcane Meditation | 3 |
-| 51-52 | Arcane | Improved Channeling | 2 |
+| 51 | Arcane | Improved Channeling | 1 |
+| 52 | Arcane | Improved Counterspell | 1 |
 | 53 | Arcane | Presence of Mind | 1 |
 | 54-57 | Arcane | Arcane Mind | 4 |
 | 58-60 | Arcane | Arcane Instability | 3 |
@@ -39,10 +41,10 @@ Level-weighted time per kill (seconds, higher levels count more) of the build ea
 
 | Spec | Page build | Rotation | L20 | L30 | L40 | L50 | L60 | Weighted |
 |---|---|---|---|---|---|---|---|---|
-| [Arcane-Frost](../../leveling/arcane-frost.md) ✅ | [`arcane-frost-open-leveling`](builds/arcane-frost-open-leveling.md) | barrage-frost-leveling | 28.7 | 33.5 | 33.2 | 26.5 | 24.4 | 28.5 |
-| [Arcane](../../leveling/arcane.md) | [`arcane-open-leveling`](builds/arcane-open-leveling.md) | arcane-leveling | 35.1 | 31.3 | 31.4 | 29.7 | 27.0 | 30.0 |
-| [Frost](../../leveling/frost.md) | [`frost-open-leveling`](builds/frost-open-leveling.md) | frost-leveling | 27.5 | 33.8 | 35.0 | 29.2 | 26.4 | 30.0 |
-| [Frostfire](../../leveling/frostfire.md) | [`frostfire-open-leveling`](builds/frostfire-open-leveling.md) | frostfire-leveling | 28.8 | 32.2 | 42.9 | 35.1 | 31.0 | 34.4 |
+| [Arcane-Frost](../../leveling/arcane-frost.md) ✅ | [`arcane-frost-open-leveling`](builds/arcane-frost-open-leveling.md) | barrage-frost-leveling | 28.7 | 33.5 | 32.0 | 26.2 | 24.7 | 28.3 |
+| [Arcane](../../leveling/arcane.md) | [`arcane-open-leveling`](builds/arcane-open-leveling.md) | arcane-leveling | 34.4 | 31.1 | 30.5 | 29.0 | 26.5 | 29.4 |
+| [Frost](../../leveling/frost.md) | [`frost-open-leveling`](builds/frost-open-leveling.md) | frost-leveling | 27.5 | 33.8 | 34.0 | 28.5 | 25.9 | 29.5 |
+| [Frostfire](../../leveling/frostfire.md) | [`frostfire-open-leveling`](builds/frostfire-open-leveling.md) | frostfire-leveling | 28.8 | 32.2 | 41.4 | 34.7 | 30.3 | 33.8 |
 | [Fire](../../leveling/fire.md) | [`fire-open-leveling`](builds/fire-open-leveling.md) | fire-leveling | 34.7 | 41.5 | 42.5 | 35.1 | 31.2 | 36.4 |
 
 The stats model's respec plan (its own optimizer builds, not the page build): **38.0 h** (57.8% faster than talentless), no respec ([respec plan](respec-plan.md)).
@@ -53,9 +55,9 @@ The stats model's respec plan (its own optimizer builds, not the page build): **
 |---|---|---|---|
 | 20 | levels 15-25 | 29s | 125 |
 | 30 | levels 25-35 | 33s | 108 |
-| 40 | levels 35-45 | 33s | 108 |
-| 50 | levels 45-55 | 26s | 136 |
-| 60 | level 55-60 | 24s | 148 |
+| 40 | levels 35-45 | 32s | 113 |
+| 50 | levels 45-55 | 26s | 137 |
+| 60 | level 55-60 | 25s | 146 |
 
 Fight time, deaths and downtime are not recorded for this build: its times come from the race of the search that found it, which keeps times only.
 
@@ -63,7 +65,7 @@ Fight time, deaths and downtime are not recorded for this build: its times come 
 
 The rotation in the player page's words:
 
-Before the fight: **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up. Pull from as far away as you can.
+Before the fight: **Frost Armor** (**Ice Armor** from level 30, **Mage Armor** from 34) and **Arcane Intellect** up. Pull from as far away as you can.
 
 1. **Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, while the mob has more than a fifth of its health; if the mob would reach you before the cast ends, wand it until it arrives (the tuned rules keep **Fire Blast** for the finish).
 2. **Arcane Missiles** whenever **Missile Barrage** lights up (your Frostbolts give it): free and twice as fast; not while the mob hits you in melee unless it is frozen.
@@ -74,12 +76,12 @@ Before the fight: **Frost Armor** (**Ice Armor** from level 30) and **Arcane Int
 
 Between fights: Drink your conjured water below 15% of your mana, **Evocation** when it is ready and you are under 40% mana, eat below 40% of your health.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-06, on top of the priority below): Frostbolt only while the mob has more than 20% health; never cast Cone of Cold; Fire Blast only when the mob is below 20% health; Fire Blast only while the mob has more than 10% health; drink below 15% mana; eat below 40% health. Together +5.5% time per kill saved for `arcane-frost-open-leveling` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-15, on top of the priority below): MAGE_ARMOR = 1. Together +0.4% time per kill saved for `arcane-frost-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 ## Talents that carry the build
 
-- **Level 60** (seconds per kill lost without the talent, the open leveling search): Shatter (+3.6 s), Ice Lance (+2.5 s), Missile Barrage (+2.3 s), Ice Shards (+2.0 s), Arcane Meditation (+1.4 s), Frostbite (+1.3 s).
-- **About zero at 60** (under 0.1 s per kill): Arcane Resilience, Improved Channeling.
+- **Level 60** (seconds per kill lost without the talent, the open leveling search): Shatter (+2.9 s), Ice Lance (+2.0 s), Missile Barrage (+1.8 s), Ice Shards (+1.7 s), Frostbite (+1.2 s), Precision (+1.1 s).
+- **About zero at 60** (under 0.1 s per kill): Improved Channeling, Wand Specialization.
 
 ## Not simulated
 

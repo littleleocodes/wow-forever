@@ -49,10 +49,10 @@ Classic Era reference builds: [aoe-grinding-frost](../talents/classic-baseline/a
 
 | Spec | Page build | Rotation | Seconds per kill |
 |---|---|---|---|
-| [Arcane-Frost](../../leveling/arcane-frost.md) ✅ | `arcane-frost-open-leveling` | barrage-frost-leveling | 28.5 |
-| [Arcane](../../leveling/arcane.md) | `arcane-open-leveling` | arcane-leveling | 30.0 |
-| [Frost](../../leveling/frost.md) | `frost-open-leveling` | frost-leveling | 30.0 |
-| [Frostfire](../../leveling/frostfire.md) | `frostfire-open-leveling` | frostfire-leveling | 34.4 |
+| [Arcane-Frost](../../leveling/arcane-frost.md) ✅ | `arcane-frost-open-leveling` | barrage-frost-leveling | 28.3 |
+| [Arcane](../../leveling/arcane.md) | `arcane-open-leveling` | arcane-leveling | 29.4 |
+| [Frost](../../leveling/frost.md) | `frost-open-leveling` | frost-leveling | 29.5 |
+| [Frostfire](../../leveling/frostfire.md) | `frostfire-open-leveling` | frostfire-leveling | 33.8 |
 | [Fire](../../leveling/fire.md) | `fire-open-leveling` | fire-leveling | 36.4 |
 
 ✅ = recommended (the fastest spec, or within 3% of it).
@@ -61,21 +61,21 @@ The `frost-leveling` report below is the fight-lab pipeline's (research): its op
 
 | Build | L20 | L30 | L40 | L50 | L60 | Deaths/100 at 60 | Downtime/kill at 60 |
 |---|---|---|---|---|---|---|---|
-| `opt-frost-leveling-leveling-st` (optimizer) | 27.3s | 34.5s | 36.2s | 30.0s | 27.0s | 0.0 | 5.0s |
-| `leveling-frost` (hand draft) | 27.3s (+0%) | 34.5s (+0%) | 36.4s (+0%) | 31.6s (+5%) | 28.3s (+5%) | 0.0 | 6.2s |
-| `opt-fire-leveling-leveling-st` | 34.3s (+26%) | 40.5s (+17%) | 44.6s (+23%) | 41.1s (+37%) | 36.5s (+35%) | 0.0 | 12.3s |
-| `opt-frost-leveling-leveling-st` in blues (dungeon blues from the item database) | 25.5s (-6%) | 29.5s (-15%) | 29.4s (-19%) | 27.2s (-9%) | 25.6s (-5%) | 0.0 | 4.5s |
+| `opt-frost-leveling-leveling-st` (optimizer) | 27.3s | 34.5s | 35.3s | 29.8s | 26.8s | 0.0 | 4.4s |
+| `leveling-frost` (hand draft) | 27.3s (+0%) | 34.5s (+0%) | 34.3s (-3%) | 29.6s (-0%) | 27.2s (+1%) | 0.0 | 5.0s |
+| `opt-fire-leveling-leveling-st` | 34.3s (+26%) | 40.5s (+17%) | 44.6s (+26%) | 41.1s (+38%) | 36.5s (+36%) | 0.0 | 12.3s |
+| `opt-frost-leveling-leveling-st` in blues (dungeon blues from the item database) | 25.5s (-6%) | 29.5s (-15%) | 28.6s (-19%) | 26.6s (-11%) | 25.3s (-5%) | 0.0 | 3.9s |
 
 Time per kill = fight + loot, travel, eating, drinking, healing and deaths; a build's cell shows its time and the difference to the optimizer build on the same mobs and seeds.
 
-- **Talents that matter** (time per kill lost when the talent is removed from `opt-frost-leveling-leveling-st` at level 60): Shatter +18% (L30 +14%), Ice Lance +14% (L30 +15%), Ice Shards +10% (L30 +5%), Fingers of Frost +6% (L30 +4%), Improved Frostbolt +6% (L30 +8%), Frostbite +5% (L30 +5%).
+- **Talents that matter** (time per kill lost when the talent is removed from `opt-frost-leveling-leveling-st` at level 60): Shatter +15% (L30 +14%), Ice Lance +12% (L30 +15%), Ice Shards +8% (L30 +5%), Improved Frostbolt +7% (L30 +8%), Fingers of Frost +5% (L30 +4%), Frostbite +5% (L30 +5%).
 - **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Arcane Blast, Arcane Resilience, Arcane Wrath, Ice Block, Improved Channeling, Magic Absorption, Missile Barrage.
 - **Caster mobs:** 16% of pulls at level 30 are casters (creature-database share); 0.08 interrupts per kill at 60.
-- **Race** (hand draft vs every optimizer candidate, 2026-11-15, mean time per kill over levels 20/30/40/50/60): leveling-frost 31.6s — fastest: **leveling-frost**.
+- **Race** (hand draft vs every optimizer candidate, 2026-11-15, mean time per kill over levels 20/30/40/50/60): leveling-frost 30.4s — fastest: **leveling-frost**.
 - **Calibration:** the scorer's `frost-leveling` leveling values were fitted jointly to the hand draft and every candidate in [`fightlab/candidates/`](fightlab/candidates/) (1 round, converged: the optimizer build repeats).
 - **Other spec, same module:** `fire-leveling` with `opt-fire-leveling-leveling-st` ([report](fightlab/fire-leveling.md)): L30 40.5s, L60 36.5s. Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
-- **Other spec, same module:** `frostfire-leveling` with `opt-frost-leveling-leveling-st` ([report](fightlab/frostfire-leveling.md)): L30 33.7s (-2% vs `opt-frost-leveling-leveling-st`), L60 33.0s (+22% vs `opt-frost-leveling-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
-- **AoE grinding, 4 mobs per pull:** `frost-aoe` with `opt-frost-aoe-leveling-aoe` ([report](fightlab/frost-aoe.md)): L40 33.2s per mob in pulls of 3 (single-target build 36.2s), 11.6 deaths/100; L60 27.6s per mob in pulls of 4 (single-target build 27.0s), 8.8 deaths/100.
+- **Other spec, same module:** `frostfire-leveling` with `opt-frost-leveling-leveling-st` ([report](fightlab/frostfire-leveling.md)): L30 33.7s (-2% vs `opt-frost-leveling-leveling-st`), L60 33.2s (+24% vs `opt-frost-leveling-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
+- **AoE grinding, 4 mobs per pull:** `frost-aoe` with `opt-frost-aoe-leveling-aoe` ([report](fightlab/frost-aoe.md)): L40 33.2s per mob in pulls of 3 (single-target build 35.3s), 11.6 deaths/100; L60 27.6s per mob in pulls of 4 (single-target build 26.8s), 8.8 deaths/100.
 - **Not simulated:** runners, Ice Block, Mana Shield, Arcane Missiles (outside the arcane-leveling rotation), gear upgrades within a level bracket (adds and Blizzard only in the AoE variant, tables.MOBS_PER_PULL). Talents in the build the sim ignores: Arcane Blast, Arcane Wrath, Ice Block, Improved Channeling, Missile Barrage.
 - **Pipeline result:** the hand draft `leveling-frost` holds (no candidate beats it by more than the 2% margin). The player pages pick by their own races (the table at the top of this section).
 

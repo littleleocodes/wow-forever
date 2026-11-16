@@ -22,9 +22,8 @@ The Frost leveling build the open leveling search found on 2026-11-15: every leg
 | **Wand Specialization** | 2/2 | moved | Increases your damage with Wands by 25%. |
 | **Improved Channeling** | 3/5 | **NEW** | Gives your Arcane Missiles spell a 60% chance and your Arcane Blast and Arcane Wrath spells a 42% chance to not lose casting time when you take damage. |
 | **Arcane Resilience** | 3/3 | changed | Increases your Armor by an amount equal to 75% of your Intellect. |
-| **Arcane Subtlety** | 1/2 | changed | Reduces your target's resistance to all your spells by 8 and reduces the threat caused by your Arcane spells by 15%. |
+| **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
-| **Arcane Impact** | 1/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 2%. |
 | **Arcane Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 
 ### Fire (3)
@@ -37,13 +36,12 @@ The Frost leveling build the open leveling search found on 2026-11-15: every leg
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Frost Warding** | 1/2 | changed | Increases the Armor and resistances granted by your Frost Armor and Ice Armor spells by 15%, gives your Frost Ward a 10% chance to negate the warded damage spell, and increases the amount absorbed by your Ice Barrier and Frost Ward by 10%. |
 | **Improved Frostbolt** | 5/5 | changed | Reduces the casting time of your Frostbolt spell by 0.5 sec. |
 | **Precision** | 2/3 | changed | Improves your chance to hit with all spells by 4%. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
 | **Frostbite** | 3/3 | moved | Gives your Chill effects a 15% chance to Freeze the target for 5 sec. |
 | **Improved Frost Nova** | 2/2 | unchanged | Reduces the cooldown of your Frost Nova spell by 4 sec. |
-| **Permafrost** | 1/3 | changed | Increases the duration of your Chill effects by 11% and reduces the target's speed by an additional 3%. |
+| **Permafrost** | 2/3 | changed | Increases the duration of your Chill effects by 22% and reduces the target's speed by an additional 7%. |
 | **Frost Channeling** | 3/3 | moved | Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%. |
 | **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets. |
 | **Arctic Reach** | 2/2 | unchanged | Increases the range of your Frostbolt, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%. |
@@ -68,8 +66,7 @@ The Frost leveling build the open leveling search found on 2026-11-15: every leg
 | 32-33 | Frost | Ice Shards | 2 | 0/0/24 |
 | 34-35 | Frost | Arctic Reach | 2 | 0/0/26 |
 | 36-37 | Frost | Improved Frost Nova | 2 | 0/0/28 |
-| 38 | Frost | Frost Warding | 1 | 0/0/29 |
-| 39 | Frost | Permafrost | 1 | 0/0/30 |
+| 38-39 | Frost | Permafrost | 2 | 0/0/30 |
 | 40-41 | Arcane | Wand Specialization | 2 | 2/0/30 |
 | 42-43 | Arcane | Arcane Resilience | 2 | 4/0/30 |
 | 44 | Arcane | Improved Channeling | 1 | 5/0/30 |
@@ -77,20 +74,20 @@ The Frost leveling build the open leveling search found on 2026-11-15: every leg
 | 50 | Arcane | Arcane Subtlety | 1 | 11/0/30 |
 | 51-52 | Arcane | Improved Channeling | 2 | 13/0/30 |
 | 53 | Arcane | Arcane Resilience | 1 | 14/0/30 |
-| 54 | Arcane | Arcane Impact | 1 | 15/0/30 |
+| 54 | Arcane | Arcane Subtlety | 1 | 15/0/30 |
 | 55-57 | Arcane | Arcane Meditation | 3 | 18/0/30 |
 | 58-60 | Fire | Incineration | 3 | 18/3/30 |
 
 ## Core talents (priority order)
 
-1. **Shatter** — +4.5 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Ice Lance** — +3.3 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Ice Shards** — +2.4 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Shatter** — +4.2 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Ice Lance** — +3.2 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Ice Shards** — +2.2 s per kill at level 60 without it (removal, 3,000 fights).
 4. **Improved Frostbolt** — +2.0 s per kill at level 60 without it (removal, 3,000 fights).
 5. **Frost Channeling** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Fingers of Frost** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Arcane Meditation** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Precision** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Arcane Meditation** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Frostbite** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Fingers of Frost** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -98,8 +95,9 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- +4.6% faster than the hand draft leveling-frost, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 30.04; leveling-frost 31.43, opt-frost-aoe-leveling-aoe 35.83. The search simulated 66,618 builds.
+- 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Frost Warding to Permafrost at 38 (tie-break: -0.3% seed 3, -0.1% seed 4, level-weighted time per kill); Arcane Impact to Arcane Subtlety at 54 (gate: -0.3% seed 3, -0.2% seed 4, level-weighted time per kill).
+- +2.6% faster than the hand draft leveling-frost, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 29.50; leveling-frost 30.28, opt-frost-aoe-leveling-aoe 34.42. The search simulated 66,618 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)

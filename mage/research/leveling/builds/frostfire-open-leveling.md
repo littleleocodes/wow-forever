@@ -28,8 +28,8 @@ The Frostfire (a Fire/Frost hybrid) leveling build the open leveling search foun
 | **Incineration** | 5/5 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 10%. |
 | **Accelerant** | 5/5 | changed | Reduces the casting time of your Fireball, Frostfire Bolt, and Arcane Wrath spells by 0.5 sec. |
 | **Ignite** | 5/5 | unchanged | Your critical strikes from Fire damage spells cause the target to burn for an additional 40% of your spell's damage over 4 sec. |
-| **Impact** | 1/3 | changed | Gives your Fire spells a 3% chance to stun the target for 2 sec. |
-| **Burning Soul** | 3/3 | changed | Gives your Fire spells a 70% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 30%. |
+| **Impact** | 2/3 | changed | Gives your Fire spells a 7% chance to stun the target for 2 sec. |
+| **Improved Fire Blast** | 2/2 | **NEW** | Reduces the cooldown of your Fire Blast spell by 2 sec and increases its range by 15 yards. |
 | **Master of Elements** | 3/3 | changed | Your Fire and Frost critical strikes will refund 30% of their base mana cost. |
 | **Critical Mass** | 3/3 | unchanged | Increases the critical strike chance of your Fire spells by 6%. |
 
@@ -65,7 +65,8 @@ The Frostfire (a Fire/Frost hybrid) leveling build the open leveling search foun
 | 33-34 | Arcane | Wand Specialization | 2 | 2/0/23 |
 | 35-39 | Fire | Accelerant | 5 | 2/5/23 |
 | 40-44 | Fire | Ignite | 5 | 2/10/23 |
-| 45-47 | Fire | Burning Soul | 3 | 2/13/23 |
+| 45 | Fire | Impact | 1 | 2/11/23 |
+| 46-47 | Fire | Improved Fire Blast | 2 | 2/13/23 |
 | 48-49 | Fire | Incineration | 2 | 2/15/23 |
 | 50-52 | Fire | Master of Elements | 3 | 2/18/23 |
 | 53-54 | Fire | Incineration | 2 | 2/20/23 |
@@ -76,14 +77,14 @@ The Frostfire (a Fire/Frost hybrid) leveling build the open leveling search foun
 
 ## Core talents (priority order)
 
-1. **Shatter** — +6.5 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Ice Lance** — +5.6 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Ice Shards** — +2.8 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Fingers of Frost** — +2.3 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Frost Channeling** — +2.0 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Frostbite** — +1.7 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Master of Elements** — +1.6 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Ignite** — +1.6 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Shatter** — +5.7 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Ice Lance** — +4.3 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Ice Shards** — +2.2 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Precision** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Ignite** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Frostbite** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Fingers of Frost** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Frost Channeling** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -91,7 +92,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 34.36; . The search simulated 75,576 builds.
+- 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Burning Soul to Impact at 45 (gate: -0.6% seed 3, -0.3% seed 4, level-weighted time per kill).
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 33.76; . The search simulated 75,576 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -101,7 +103,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/mage>
-- <https://talentsforever.com/mage/60/2-55501300000033-0325320301003002-12>
+- <https://talentsforever.com/mage/60/2-55501100200033-0325320301003002-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

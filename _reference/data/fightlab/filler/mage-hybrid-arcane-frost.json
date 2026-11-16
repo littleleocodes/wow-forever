@@ -103,16 +103,16 @@
    "points": 1
   },
   {
-   "levels": "40-44",
-   "tree": "Arcane",
-   "talent": "Arcane Concentration",
-   "points": 5
-  },
-  {
-   "levels": "45-46",
+   "levels": "40-41",
    "tree": "Arcane",
    "talent": "Arcane Subtlety",
    "points": 2
+  },
+  {
+   "levels": "42-46",
+   "tree": "Arcane",
+   "talent": "Arcane Concentration",
+   "points": 5
   },
   {
    "levels": "47",
@@ -153,18 +153,33 @@
  ],
  "steps": [
   {
-   "weighted": 29.094,
+   "weighted": 28.881,
    "values_at_60": {
-    "Arcane Instability": -0.213,
-    "Arctic Reach": -0.013,
-    "Fingers of Frost": -0.421
+    "Arcane Instability": -0.443,
+    "Arctic Reach": -0.248,
+    "Fingers of Frost": -0.342
    },
-   "zero": [
-    "Arctic Reach"
-   ]
+   "zero": []
   }
  ],
- "moves": [],
+ "moves": [
+  {
+   "from": "Ice Shards",
+   "to": "Arctic Reach",
+   "level": 27,
+   "seed3": -0.0049,
+   "seed4": -0.0042,
+   "why": "gate"
+  },
+  {
+   "from": "Improved Channeling",
+   "to": "Improved Counterspell",
+   "level": 52,
+   "seed3": -0.001,
+   "seed4": -0.0008,
+   "why": "gate"
+  }
+ ],
  "final_order": [
   {
    "levels": "10-11",
@@ -215,10 +230,16 @@
    "points": 1
   },
   {
-   "levels": "26-27",
+   "levels": "26",
    "tree": "Frost",
    "talent": "Ice Shards",
-   "points": 2
+   "points": 1
+  },
+  {
+   "levels": "27",
+   "tree": "Frost",
+   "talent": "Arctic Reach",
+   "points": 1
   },
   {
    "levels": "28-29",
@@ -263,16 +284,16 @@
    "points": 1
   },
   {
-   "levels": "40-44",
-   "tree": "Arcane",
-   "talent": "Arcane Concentration",
-   "points": 5
-  },
-  {
-   "levels": "45-46",
+   "levels": "40-41",
    "tree": "Arcane",
    "talent": "Arcane Subtlety",
    "points": 2
+  },
+  {
+   "levels": "42-46",
+   "tree": "Arcane",
+   "talent": "Arcane Concentration",
+   "points": 5
   },
   {
    "levels": "47",
@@ -287,10 +308,16 @@
    "points": 3
   },
   {
-   "levels": "51-52",
+   "levels": "51",
    "tree": "Arcane",
    "talent": "Improved Channeling",
-   "points": 2
+   "points": 1
+  },
+  {
+   "levels": "52",
+   "tree": "Arcane",
+   "talent": "Improved Counterspell",
+   "points": 1
   },
   {
    "levels": "53",
@@ -310,5 +337,253 @@
    "talent": "Arcane Instability",
    "points": 3
   }
- ]
+ ],
+ "written": {
+  "allocation": {
+   "Arcane": [
+    [
+     "Wand Specialization",
+     2
+    ],
+    [
+     "Improved Channeling",
+     4
+    ],
+    [
+     "Arcane Resilience",
+     1
+    ],
+    [
+     "Arcane Subtlety",
+     2
+    ],
+    [
+     "Arcane Concentration",
+     5
+    ],
+    [
+     "Missile Barrage",
+     2
+    ],
+    [
+     "Improved Counterspell",
+     1
+    ],
+    [
+     "Arcane Meditation",
+     3
+    ],
+    [
+     "Presence of Mind",
+     1
+    ],
+    [
+     "Arcane Mind",
+     4
+    ],
+    [
+     "Arcane Instability",
+     3
+    ]
+   ],
+   "Fire": [],
+   "Frost": [
+    [
+     "Improved Frostbolt",
+     3
+    ],
+    [
+     "Precision",
+     2
+    ],
+    [
+     "Ice Shards",
+     4
+    ],
+    [
+     "Frostbite",
+     3
+    ],
+    [
+     "Frost Channeling",
+     3
+    ],
+    [
+     "Ice Lance",
+     1
+    ],
+    [
+     "Arctic Reach",
+     2
+    ],
+    [
+     "Shatter",
+     3
+    ],
+    [
+     "Fingers of Frost",
+     2
+    ]
+   ]
+  },
+  "order": [
+   {
+    "levels": "10-11",
+    "tree": "Frost",
+    "talent": "Precision",
+    "points": 2
+   },
+   {
+    "levels": "12-14",
+    "tree": "Frost",
+    "talent": "Improved Frostbolt",
+    "points": 3
+   },
+   {
+    "levels": "15-17",
+    "tree": "Frost",
+    "talent": "Frostbite",
+    "points": 3
+   },
+   {
+    "levels": "18-19",
+    "tree": "Frost",
+    "talent": "Ice Shards",
+    "points": 2
+   },
+   {
+    "levels": "20",
+    "tree": "Frost",
+    "talent": "Ice Lance",
+    "points": 1
+   },
+   {
+    "levels": "21-23",
+    "tree": "Frost",
+    "talent": "Frost Channeling",
+    "points": 3
+   },
+   {
+    "levels": "24",
+    "tree": "Frost",
+    "talent": "Ice Shards",
+    "points": 1
+   },
+   {
+    "levels": "25",
+    "tree": "Frost",
+    "talent": "Shatter",
+    "points": 1
+   },
+   {
+    "levels": "26",
+    "tree": "Frost",
+    "talent": "Ice Shards",
+    "points": 1
+   },
+   {
+    "levels": "27",
+    "tree": "Frost",
+    "talent": "Arctic Reach",
+    "points": 1
+   },
+   {
+    "levels": "28-29",
+    "tree": "Frost",
+    "talent": "Shatter",
+    "points": 2
+   },
+   {
+    "levels": "30-31",
+    "tree": "Frost",
+    "talent": "Fingers of Frost",
+    "points": 2
+   },
+   {
+    "levels": "32-33",
+    "tree": "Arcane",
+    "talent": "Wand Specialization",
+    "points": 2
+   },
+   {
+    "levels": "34",
+    "tree": "Arcane",
+    "talent": "Arcane Resilience",
+    "points": 1
+   },
+   {
+    "levels": "35-36",
+    "tree": "Arcane",
+    "talent": "Improved Channeling",
+    "points": 2
+   },
+   {
+    "levels": "37-38",
+    "tree": "Arcane",
+    "talent": "Missile Barrage",
+    "points": 2
+   },
+   {
+    "levels": "39",
+    "tree": "Frost",
+    "talent": "Arctic Reach",
+    "points": 1
+   },
+   {
+    "levels": "40-41",
+    "tree": "Arcane",
+    "talent": "Arcane Subtlety",
+    "points": 2
+   },
+   {
+    "levels": "42-46",
+    "tree": "Arcane",
+    "talent": "Arcane Concentration",
+    "points": 5
+   },
+   {
+    "levels": "47",
+    "tree": "Arcane",
+    "talent": "Improved Channeling",
+    "points": 1
+   },
+   {
+    "levels": "48-50",
+    "tree": "Arcane",
+    "talent": "Arcane Meditation",
+    "points": 3
+   },
+   {
+    "levels": "51",
+    "tree": "Arcane",
+    "talent": "Improved Channeling",
+    "points": 1
+   },
+   {
+    "levels": "52",
+    "tree": "Arcane",
+    "talent": "Improved Counterspell",
+    "points": 1
+   },
+   {
+    "levels": "53",
+    "tree": "Arcane",
+    "talent": "Presence of Mind",
+    "points": 1
+   },
+   {
+    "levels": "54-57",
+    "tree": "Arcane",
+    "talent": "Arcane Mind",
+    "points": 4
+   },
+   {
+    "levels": "58-60",
+    "tree": "Arcane",
+    "talent": "Arcane Instability",
+    "points": 3
+   }
+  ],
+  "note": "2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Ice Shards to Arctic Reach at 27 (gate: -0.5% seed 3, -0.4% seed 4, level-weighted time per kill); Improved Channeling to Improved Counterspell at 52 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill)."
+ }
 }

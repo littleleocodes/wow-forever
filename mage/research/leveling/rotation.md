@@ -8,10 +8,10 @@ The build each spec's [leveling page](../../leveling/README.md) shows first, the
 
 | Spec | Page build | Rotation | L20 | L30 | L40 | L50 | L60 | Weighted |
 |---|---|---|---|---|---|---|---|---|
-| [Arcane-Frost](../../leveling/arcane-frost.md) ✅ | [`arcane-frost-open-leveling`](builds/arcane-frost-open-leveling.md) | [barrage-frost-leveling](#barrage-frost-leveling) | 28.7 | 33.5 | 33.2 | 26.5 | 24.4 | 28.5 |
-| [Arcane](../../leveling/arcane.md) | [`arcane-open-leveling`](builds/arcane-open-leveling.md) | [arcane-leveling](#arcane-leveling) | 35.1 | 31.3 | 31.4 | 29.7 | 27.0 | 30.0 |
-| [Frost](../../leveling/frost.md) | [`frost-open-leveling`](builds/frost-open-leveling.md) | [frost-leveling](#frost-leveling) | 27.5 | 33.8 | 35.0 | 29.2 | 26.4 | 30.0 |
-| [Frostfire](../../leveling/frostfire.md) | [`frostfire-open-leveling`](builds/frostfire-open-leveling.md) | [frostfire-leveling](#frostfire-leveling) | 28.8 | 32.2 | 42.9 | 35.1 | 31.0 | 34.4 |
+| [Arcane-Frost](../../leveling/arcane-frost.md) ✅ | [`arcane-frost-open-leveling`](builds/arcane-frost-open-leveling.md) | [barrage-frost-leveling](#barrage-frost-leveling) | 28.7 | 33.5 | 32.0 | 26.2 | 24.7 | 28.3 |
+| [Arcane](../../leveling/arcane.md) | [`arcane-open-leveling`](builds/arcane-open-leveling.md) | [arcane-leveling](#arcane-leveling) | 34.4 | 31.1 | 30.5 | 29.0 | 26.5 | 29.4 |
+| [Frost](../../leveling/frost.md) | [`frost-open-leveling`](builds/frost-open-leveling.md) | [frost-leveling](#frost-leveling) | 27.5 | 33.8 | 34.0 | 28.5 | 25.9 | 29.5 |
+| [Frostfire](../../leveling/frostfire.md) | [`frostfire-open-leveling`](builds/frostfire-open-leveling.md) | [frostfire-leveling](#frostfire-leveling) | 28.8 | 32.2 | 41.4 | 34.7 | 30.3 | 33.8 |
 | [Fire](../../leveling/fire.md) | [`fire-open-leveling`](builds/fire-open-leveling.md) | [fire-leveling](#fire-leveling) | 34.7 | 41.5 | 42.5 | 35.1 | 31.2 | 36.4 |
 
 ✅ = a recommended spec for leveling (the fastest, or within 3% of it).
@@ -22,7 +22,7 @@ Played by the page build of [Arcane-Frost](../../leveling/arcane-frost.md) ([`ar
 
 The priority in the player page's words:
 
-Before the fight: **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up. Pull from as far away as you can.
+Before the fight: **Frost Armor** (**Ice Armor** from level 30, **Mage Armor** from 34) and **Arcane Intellect** up. Pull from as far away as you can.
 
 1. **Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, while the mob has more than a fifth of its health; if the mob would reach you before the cast ends, wand it until it arrives (the tuned rules keep **Fire Blast** for the finish).
 2. **Arcane Missiles** whenever **Missile Barrage** lights up (your Frostbolts give it): free and twice as fast; not while the mob hits you in melee unless it is frozen.
@@ -33,7 +33,7 @@ Before the fight: **Frost Armor** (**Ice Armor** from level 30) and **Arcane Int
 
 Between fights: Drink your conjured water below 15% of your mana, **Evocation** when it is ready and you are under 40% mana, eat below 40% of your health.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-06, on top of the priority below): Frostbolt only while the mob has more than 20% health; never cast Cone of Cold; Fire Blast only when the mob is below 20% health; Fire Blast only while the mob has more than 10% health; drink below 15% mana; eat below 40% health. Together +5.5% time per kill saved for `arcane-frost-open-leveling` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-15, on top of the priority below): MAGE_ARMOR = 1. Together +0.4% time per kill saved for `arcane-frost-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 Casts per kill of [`arcane-frost-open-leveling`](builds/arcane-frost-open-leveling.md): not recorded (its times per kill come from the race records of the search that found it, which keep times only; the table above has them).
 
@@ -43,7 +43,7 @@ Played by the page build of [Arcane](../../leveling/arcane.md) ([`arcane-open-le
 
 The priority in the player page's words:
 
-Before the fight: **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up. Pull from as far away as you can; **Presence of Mind** at the pull (your first cast goes out instantly); **Arcane Power** at the pull when it is ready and you have more than half your mana (once you have the talent, at 42).
+Before the fight: **Frost Armor** (**Ice Armor** from level 30, **Mage Armor** from 34) and **Arcane Intellect** up. Pull from as far away as you can; **Presence of Mind** at the pull (your first cast goes out instantly); **Arcane Power** at the pull when it is ready and you have more than half your mana (once you have the talent, at 42).
 
 1. With **Arcane Wrath**: cast it first on the pull if it will land before the mob reaches you, and again whenever it is ready and there is time.
 2. **Arcane Blast** while the mob walks in: at most two in a row, only if the cast ends before the mob reaches you and costs no more than a quarter of your mana. Each stack gives all your spells spell damage (12% of your Intellect) for 18 seconds.
@@ -52,9 +52,9 @@ Before the fight: **Frost Armor** (**Ice Armor** from level 30) and **Arcane Int
 5. When you cannot afford **Arcane Missiles**: **Fire Blast** if the mob is on you, else **Frostbolt**; finish with a **Fire Blast** that will kill, or your wand.
 6. **Counterspell** a mob that casts spells.
 
-Between fights: Drink your conjured water below a third of your mana (35%), **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health (65%): the tuned rules set no thresholds for this list, so these are the fight lab's defaults.
+Between fights: Drink your conjured water below 15% of your mana and eat below 40% of your health (the tuned rules), **Evocation** when it is ready and you are under 40% mana.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-06, on top of the priority below): Cone of Cold only when the mob is below 20% health. Together +2.2% time per kill saved for `arcane-open-leveling` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-15, on top of the priority below): drink below 15% mana; MAGE_ARMOR = 1; eat below 40% health. Together +2.1% time per kill saved for `arcane-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 Casts per kill of [`arcane-open-leveling`](builds/arcane-open-leveling.md): not recorded (its times per kill come from the race records of the search that found it, which keep times only; the table above has them).
 
@@ -66,7 +66,7 @@ Single-target leveling fights against normal mobs of your level: pull at max ran
 
 The priority in the player page's words:
 
-Before the fight: **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up; **Ice Barrier** before each pull if your build has it. Pull from as far away as you can.
+Before the fight: **Frost Armor** (**Ice Armor** from level 30, **Mage Armor** from 34) and **Arcane Intellect** up; **Ice Barrier** before each pull if your build has it. Pull from as far away as you can.
 
 1. **Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, but only while the mob has more than a fifth of its health; if the mob would reach you before the cast ends, wand it until it arrives (the tuned rules keep **Fire Blast** for the finish).
 2. **Frost Nova** when it reaches you, then step back out of melee; if your build has **Cold Snap**, it resets **Frost Nova** when more than 8 seconds of cooldown are left and the mob still has 40% of its health.
@@ -76,7 +76,7 @@ Before the fight: **Frost Armor** (**Ice Armor** from level 30) and **Arcane Int
 
 Between fights: Drink your conjured water below 15% of your mana (the tuned rule), **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-03, on top of the priority below): Frostbolt only while the mob has more than 20% health; never cast Cone of Cold; Fire Blast only when the mob is below 20% health; drink below 15% mana; Fire Blast only while the mob has more than 10% health. Together +5.5% time per kill saved for `leveling-frost` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-15, on top of the priority below): MAGE_ARMOR = 1. Together +1.8% time per kill saved for `frost-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/frost-leveling.md](fightlab/frost-leveling.md).
 
@@ -84,22 +84,22 @@ Report: [fightlab/frost-leveling.md](fightlab/frost-leveling.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Frostbolt | 3.9 | 4.2 | 4.1 | 3.4 | 3.1 | 52% |
-| Wand | 0.8 | 1.2 | 1.8 | 1.6 | 1.6 | 4% |
-| Ice Lance | 1.2 | 1.7 | 1.8 | 1.6 | 1.6 | 37% |
-| Frost Nova | 0.5 | 0.8 | 0.8 | 0.7 | 0.6 | 1% |
-| Fire Blast | 0.5 | 0.6 | 0.5 | 0.4 | 0.4 | 6% |
+| Frostbolt | 3.9 | 4.2 | 4.3 | 3.5 | 3.3 | 54% |
+| Wand | 0.8 | 1.2 | 1.7 | 1.5 | 1.6 | 4% |
+| Ice Lance | 1.2 | 1.7 | 1.8 | 1.6 | 1.5 | 35% |
+| Frost Nova | 0.5 | 0.8 | 0.9 | 0.7 | 0.7 | 2% |
+| Fire Blast | 0.5 | 0.6 | 0.6 | 0.5 | 0.4 | 6% |
 | Counterspell | 0.0 | 0.2 | 0.1 | 0.1 | 0.1 | 0% |
 
 ### [`leveling-frost`](builds/leveling-frost.md)
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Frostbolt | 3.9 | 4.2 | 4.1 | 3.5 | 3.1 | 53% |
-| Wand | 0.8 | 1.2 | 2.0 | 1.7 | 1.7 | 4% |
-| Ice Lance | 1.2 | 1.7 | 1.9 | 1.7 | 1.6 | 36% |
-| Frost Nova | 0.5 | 0.8 | 0.8 | 0.7 | 0.6 | 1% |
-| Fire Blast | 0.5 | 0.6 | 0.5 | 0.4 | 0.4 | 5% |
+| Frostbolt | 3.9 | 4.2 | 4.3 | 3.7 | 3.3 | 54% |
+| Wand | 0.8 | 1.2 | 1.9 | 1.6 | 1.7 | 4% |
+| Ice Lance | 1.2 | 1.7 | 1.8 | 1.6 | 1.6 | 34% |
+| Frost Nova | 0.5 | 0.8 | 0.9 | 0.7 | 0.7 | 2% |
+| Fire Blast | 0.5 | 0.6 | 0.5 | 0.5 | 0.4 | 6% |
 | Counterspell | 0.0 | 0.2 | 0.1 | 0.1 | 0.1 | 0% |
 
 ### [`opt-fire-leveling-leveling-st`](builds/opt-fire-leveling-leveling-st.md) (played with the `fire-leveling` rotation, for comparison)
@@ -125,17 +125,17 @@ Single-target leveling fights against normal mobs of your level: pull at max ran
 
 The priority in the player page's words:
 
-Before the fight: **Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up. Pull from as far away as you can.
+Before the fight: **Frost Armor** (**Ice Armor** from level 30, **Mage Armor** from 34) and **Arcane Intellect** up. Pull from as far away as you can.
 
-1. Your bolt: **Frostbolt** until level 40, **Frostfire Bolt** from 40, each only while the mob has more than about a third (35%) of its health. Cast it while the mob walks in and whenever nothing below applies; if the mob would reach you before the cast ends, **Fire Blast** (with it on cooldown and **Frost Nova** ready, wand the mob until it arrives).
+1. Your bolt: **Frostbolt** until level 40, **Frostfire Bolt** from 40, each only while the mob has more than about a third (35%) of its health (**Frostfire Bolt** also only while you have more than 15% of your mana). Cast it while the mob walks in and whenever nothing below applies; if the mob would reach you before the cast ends, **Fire Blast** (with it on cooldown and **Frost Nova** ready, wand the mob until it arrives).
 2. **Frost Nova** when it reaches you, then step back; with **Frost Nova** on cooldown, **Fire Blast**, then keep casting the bolt.
 3. **Ice Lance** into the freeze whenever it is ready (an 8-second cooldown).
-4. Below about a third of the mob's health: no bolt; **Fire Blast** whenever it is ready, an **Ice Lance** into a freeze or one that will kill, else your wand. No Cone of Cold (the tuned rules switch it off).
+4. Below about a third of the mob's health (or, from 40, under 15% of your mana): no bolt; **Fire Blast** whenever it is ready, an **Ice Lance** into a freeze or one that will kill, else your wand. No Cone of Cold (the tuned rules switch it off).
 5. **Counterspell** a mob that casts spells.
 
 Between fights: Drink your conjured water below 15% of your mana (the tuned rule), **Evocation** when it is ready and you are under 40% mana, eat below 40% of your health (the tuned rule).
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-15, on top of the priority below): Frostfire Bolt only while the mob has more than 20% health; never cast Cone of Cold; Frostfire Bolt only while the mob has more than 35% health; drink below 15% mana; Frostbolt only while the mob has more than 35% health; eat below 40% health. Together +6.3% time per kill saved for `frostfire-open-leveling` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-15, on top of the priority below): MAGE_ARMOR = 1; Frostfire Bolt only above 15% mana. Together +1.4% time per kill saved for `frostfire-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/frostfire-leveling.md](fightlab/frostfire-leveling.md).
 
@@ -143,11 +143,11 @@ Report: [fightlab/frostfire-leveling.md](fightlab/frostfire-leveling.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Frostfire Bolt | 0.0 | 0.0 | 2.9 | 2.5 | 2.4 | 25% |
-| Wand | 1.6 | 1.5 | 2.6 | 2.0 | 1.9 | 5% |
-| Fire Blast | 1.5 | 1.9 | 2.1 | 1.9 | 1.9 | 26% |
-| Ice Lance | 1.3 | 1.6 | 2.1 | 1.8 | 1.7 | 40% |
-| Frost Nova | 0.5 | 0.7 | 0.9 | 0.8 | 0.8 | 2% |
+| Frostfire Bolt | 0.0 | 0.0 | 3.1 | 2.5 | 2.4 | 26% |
+| Wand | 1.6 | 1.5 | 3.2 | 2.5 | 2.3 | 6% |
+| Fire Blast | 1.5 | 1.9 | 2.4 | 2.1 | 2.0 | 28% |
+| Ice Lance | 1.3 | 1.6 | 1.8 | 1.7 | 1.6 | 35% |
+| Frost Nova | 0.5 | 0.7 | 0.9 | 0.9 | 0.9 | 2% |
 | Counterspell | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
 | Frostbolt | 2.8 | 2.6 | 0.0 | 0.0 | 0.0 | 0% |
 
@@ -155,11 +155,11 @@ Report: [fightlab/frostfire-leveling.md](fightlab/frostfire-leveling.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Frostbolt | 3.9 | 4.2 | 4.1 | 3.4 | 3.1 | 52% |
-| Wand | 0.8 | 1.2 | 1.8 | 1.6 | 1.6 | 4% |
-| Ice Lance | 1.2 | 1.7 | 1.8 | 1.6 | 1.6 | 37% |
-| Frost Nova | 0.5 | 0.8 | 0.8 | 0.7 | 0.6 | 1% |
-| Fire Blast | 0.5 | 0.6 | 0.5 | 0.4 | 0.4 | 6% |
+| Frostbolt | 3.9 | 4.2 | 4.3 | 3.5 | 3.3 | 54% |
+| Wand | 0.8 | 1.2 | 1.7 | 1.5 | 1.6 | 4% |
+| Ice Lance | 1.2 | 1.7 | 1.8 | 1.6 | 1.5 | 35% |
+| Frost Nova | 0.5 | 0.8 | 0.9 | 0.7 | 0.7 | 2% |
+| Fire Blast | 0.5 | 0.6 | 0.6 | 0.5 | 0.4 | 6% |
 | Counterspell | 0.0 | 0.2 | 0.1 | 0.1 | 0.1 | 0% |
 
 Casts per kill of [`frostfire-open-leveling`](builds/frostfire-open-leveling.md): not recorded (its times per kill come from the race records of the search that found it, which keep times only; the table above has them).

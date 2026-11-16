@@ -3,7 +3,7 @@
  "spec": "Hybrid Fire/Frost",
  "build": "frostfire-open-leveling",
  "rotation": "frostfire-leveling",
- "date": "2026-11-09",
+ "date": "2026-11-15",
  "fights": 1500,
  "start_order": [
   {
@@ -13,16 +13,10 @@
    "points": 2
   },
   {
-   "levels": "12-13",
-   "tree": "Frost",
-   "talent": "Frost Warding",
-   "points": 2
-  },
-  {
-   "levels": "14",
+   "levels": "12-14",
    "tree": "Frost",
    "talent": "Improved Frostbolt",
-   "points": 1
+   "points": 3
   },
   {
    "levels": "15-17",
@@ -74,8 +68,8 @@
   },
   {
    "levels": "32",
-   "tree": "Arcane",
-   "talent": "Arcane Resilience",
+   "tree": "Frost",
+   "talent": "Improved Frost Nova",
    "points": 1
   },
   {
@@ -97,10 +91,16 @@
    "points": 5
   },
   {
-   "levels": "45-47",
+   "levels": "45",
    "tree": "Fire",
    "talent": "Burning Soul",
-   "points": 3
+   "points": 1
+  },
+  {
+   "levels": "46-47",
+   "tree": "Fire",
+   "talent": "Improved Fire Blast",
+   "points": 2
   },
   {
    "levels": "48-49",
@@ -122,8 +122,8 @@
   },
   {
    "levels": "55",
-   "tree": "Fire",
-   "talent": "Blast Wave",
+   "tree": "Frost",
+   "talent": "Improved Frost Nova",
    "points": 1
   },
   {
@@ -141,105 +141,31 @@
   {
    "levels": "60",
    "tree": "Fire",
-   "talent": "Fire Power",
+   "talent": "Impact",
    "points": 1
   }
  ],
  "steps": [
   {
-   "weighted": 36.709,
+   "weighted": 33.749,
    "values_at_60": {
-    "Arcane Resilience": -0.009,
-    "Fingers of Frost": -0.838,
-    "Fire Power": 0.015,
-    "Wand Specialization": -0.094
-   },
-   "zero": [
-    "Arcane Resilience",
-    "Fire Power",
-    "Wand Specialization"
-   ]
-  },
-  {
-   "weighted": 36.645,
-   "values_at_60": {
-    "Fingers of Frost": -0.856,
-    "Fire Power": 0.048,
-    "Improved Frost Nova": -0.06,
-    "Wand Specialization": -0.468
-   },
-   "zero": [
-    "Fire Power",
-    "Improved Frost Nova"
-   ]
-  },
-  {
-   "weighted": 36.615,
-   "values_at_60": {
-    "Blast Wave": 0.0,
-    "Critical Mass": -0.47,
-    "Fingers of Frost": -1.129,
-    "Impact": -0.132,
-    "Improved Frost Nova": -0.308,
-    "Incineration": -0.311,
-    "Wand Specialization": -0.388
-   },
-   "zero": [
-    "Blast Wave"
-   ]
-  },
-  {
-   "weighted": 36.54,
-   "values_at_60": {
-    "Critical Mass": -0.331,
-    "Fingers of Frost": -1.278,
-    "Impact": -0.179,
-    "Improved Frost Nova": -0.214,
-    "Incineration": -0.204,
-    "Wand Specialization": -0.521
+    "Critical Mass": -0.372,
+    "Fingers of Frost": -0.409,
+    "Impact": -0.627,
+    "Improved Frost Nova": -0.616,
+    "Incineration": -0.419,
+    "Wand Specialization": -0.239
    },
    "zero": []
   }
  ],
  "moves": [
   {
-   "from": "Arcane Resilience",
-   "to": "Improved Frost Nova",
-   "level": 32,
-   "seed3": -0.0018,
-   "seed4": -0.0029,
-   "why": "tie-break"
-  },
-  {
-   "from": "Fire Power",
+   "from": "Burning Soul",
    "to": "Impact",
-   "level": 60,
-   "seed3": -0.0008,
-   "seed4": -0.0008,
-   "why": "tie-break"
-  },
-  {
-   "from": "Blast Wave",
-   "to": "Improved Frost Nova",
-   "level": 55,
-   "seed3": -0.002,
-   "seed4": -0.0008,
-   "why": "tie-break"
-  },
-  {
-   "from": "Frost Warding",
-   "to": "Improved Frostbolt",
-   "level": 13,
-   "seed3": -0.0033,
-   "seed4": -0.0046,
-   "why": "gate"
-  },
-  {
-   "from": "Frost Warding",
-   "to": "Improved Frostbolt",
-   "level": 12,
-   "seed3": -0.0011,
-   "seed4": -0.0008,
+   "level": 45,
+   "seed3": -0.0062,
+   "seed4": -0.0031,
    "why": "gate"
   }
  ],
@@ -329,10 +255,16 @@
    "points": 5
   },
   {
-   "levels": "45-47",
+   "levels": "45",
    "tree": "Fire",
-   "talent": "Burning Soul",
-   "points": 3
+   "talent": "Impact",
+   "points": 1
+  },
+  {
+   "levels": "46-47",
+   "tree": "Fire",
+   "talent": "Improved Fire Blast",
+   "points": 2
   },
   {
    "levels": "48-49",
@@ -400,11 +332,11 @@
     ],
     [
      "Impact",
-     1
+     2
     ],
     [
-     "Burning Soul",
-     3
+     "Improved Fire Blast",
+     2
     ],
     [
      "Master of Elements",
@@ -540,10 +472,16 @@
     "points": 5
    },
    {
-    "levels": "45-47",
+    "levels": "45",
     "tree": "Fire",
-    "talent": "Burning Soul",
-    "points": 3
+    "talent": "Impact",
+    "points": 1
+   },
+   {
+    "levels": "46-47",
+    "tree": "Fire",
+    "talent": "Improved Fire Blast",
+    "points": 2
    },
    {
     "levels": "48-49",
@@ -588,6 +526,6 @@
     "points": 1
    }
   ],
-  "note": "2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Arcane Resilience to Improved Frost Nova at 32 (tie-break: -0.2% seed 3, -0.3% seed 4, level-weighted time per kill); Fire Power to Impact at 60 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Blast Wave to Improved Frost Nova at 55 (tie-break: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Frost Warding to Improved Frostbolt at 13 (gate: -0.3% seed 3, -0.5% seed 4, level-weighted time per kill); Frost Warding to Improved Frostbolt at 12 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill)."
+  "note": "2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Burning Soul to Impact at 45 (gate: -0.6% seed 3, -0.3% seed 4, level-weighted time per kill)."
  }
 }

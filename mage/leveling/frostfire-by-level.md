@@ -4,7 +4,7 @@
 
 What a Frostfire mage presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. It levels as a Frost mage until 40: **Frostbolt** at range, **Frost Nova** and a step back when the mob arrives, **Ice Lance** into the freeze, **Fire Blast** and the wand for the mob's last third. At 40 **Frostfire Bolt** replaces **Frostbolt**, and the Fire points that follow make it hit harder. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 2/25/24 ([open the talent tree](https://talentsforever.com/mage/60/2-55501300000033-0325320301003002-12)), the one on the [Frostfire leveling page](frostfire.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 2/25/24 ([open the talent tree](https://talentsforever.com/mage/60/2-55502000200033-0325320301003002-12)), the one on the [Frostfire leveling page](frostfire.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -16,7 +16,7 @@ What a Frostfire mage presses from level 1 to 60, stage by stage, as the trainer
 | 10-19 | **Frost Nova** roots the mob at your feet: step back and keep casting. Talent points start. |
 | 20-23 | **Ice Lance** (talent): an instant that deals four times its damage to a frozen mob. |
 | 24-29 | **Counterspell** for mobs that cast. **Shatter** makes spells crit far more often on a frozen mob. |
-| 30-39 | **Fingers of Frost** (talent): a chill can make your next 2 spells hit as if the mob were frozen. **Ice Armor** replaces Frost Armor. |
+| 30-39 | **Fingers of Frost** (talent): a chill can make your next 2 spells hit as if the mob were frozen. **Ice Armor** replaces Frost Armor, and **Mage Armor** replaces Ice Armor at 34. |
 | 40-60 | **Frostfire Bolt** replaces Frostbolt: it counts as Frost and Fire, so both trees' talents apply. |
 
 ## Keybinds by level
@@ -60,7 +60,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - The [Frost guide](frost-by-level.md)'s keys: Q takes **Frostfire Bolt** at 40, and key 1 and Shift+Q stay free (this build has no **Missile Barrage** and no **Presence of Mind**).
 - Levels 4 and 40 are the swaps on Q: **Frostbolt** replaces **Fireball**, then **Frostfire Bolt** replaces **Frostbolt**.
 - Levels 1-9 fight with three keys: Q, Mouse 5 (**Fire Blast** from 6) and the middle mouse button. Add a key when its spell arrives.
-- No key: **Frost Armor** and **Ice Armor**, **Arcane Intellect**, **Conjure Water** and **Conjure Food**, food, drink, the mount and the Hearthstone. Put them on a side bar and click them between fights.
+- No key: your armor (**Frost Armor**, **Ice Armor**, **Mage Armor**), **Arcane Intellect**, **Conjure Water** and **Conjure Food**, food, drink, the mount and the Hearthstone. Put them on a side bar and click them between fights.
 - **Evocation** on 4 is the one between-fights spell with a key: it has a cooldown and a mana rule, so it is a decision, not a chore. Click it instead if you want 4 free.
 - The single-target rotation never casts **Cone of Cold**, **Arcane Explosion** or **Blizzard**. They are there for a pull that brings friends.
 
@@ -77,7 +77,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 1. **Fireball** until the mob is dead.
 2. If it reaches you, keep casting. Nothing hits hard at these levels.
 
-- Keep **Frost Armor** and **Arcane Intellect** up at all times, from here to 60.
+- Keep your armor and **Arcane Intellect** up at all times, from here to 60: **Frost Armor** now, **Ice Armor** from 30, **Mage Armor** from 34.
 - The fight lab does not simulate these three levels: this rotation starts with **Frostbolt** at 4.
 
 ## Levels 4-5: Frostbolt replaces Fireball
@@ -222,12 +222,12 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.
 
-- **Ice Armor** (30) replaces **Frost Armor** as your armor spell.
+- **Ice Armor** (30) replaces **Frost Armor** as your armor spell until **Mage Armor** (34): half your mana regeneration then keeps going while you cast, so you drink less. Mage Armor gives no armor and no chill, so you eat a little more, and it still kills faster: about 2% per kill at 34 and 3.5% at 40 in the fight lab.
 - **Improved Frost Nova** (32) brings **Frost Nova** back 2 seconds sooner.
 - **Wand Specialization** (33-34) makes your wand hits stronger: from 40 the wand finishes a lot of mobs.
 - **Accelerant** (35-39) shortens **Frostfire Bolt** once you have it at 40; it does nothing for **Frostbolt**.
 
-*Fight lab, seconds per kill: 32 at level 30, 36 at level 39. Presses per kill at level 30: Frostbolt 2.4, Fire Blast 1.7, Ice Lance 1.6, Wand 1.3, Frost Nova 0.7, Counterspell 0.2.*
+*Fight lab, seconds per kill: 32 at level 30, 35 at level 39. Presses per kill at level 30: Frostbolt 2.4, Fire Blast 1.7, Ice Lance 1.6, Wand 1.3, Frost Nova 0.7, Counterspell 0.2.*
 
 ## Levels 40-60: Frostfire Bolt replaces Frostbolt
 
@@ -235,7 +235,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Arcane Explosion at 46, 54; Blizzard at 44, 52, 60; Cone of Cold at 42, 50, 58; Fire Blast at 46, 54; Fire Ward at 40, 50, 60; Frost Nova at 40, 54; Frost Ward at 42, 52, 60; Frostfire Bolt at 50, 60; Ice Lance at 42, 48, 56; Mana Shield at 44, 52, 60; Polymorph at 40, 60.
 
-**Talents:** 40-44 Ignite, 45-47 Burning Soul, 48-49 Incineration, 50-52 Master of Elements, 53-54 Incineration, 55 Improved Frost Nova, 56-58 Critical Mass, 59 Incineration, 60 Impact.
+**Talents:** 40-44 Ignite, 45 Impact, 46-47 Improved Fire Blast, 48-49 Incineration, 50-52 Master of Elements, 53-54 Incineration, 55 Improved Frost Nova, 56-58 Critical Mass, 59 Incineration, 60 Impact.
 
 **Keys to set:** Q = Frostfire Bolt.
 
@@ -244,20 +244,21 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **What to press**, top to bottom:
 
 1. **Counterspell** a mob that starts casting.
-2. **Frostfire Bolt** from maximum range while the mob walks in, and whenever nothing below applies, while the mob has more than about a third of its health.
+2. **Frostfire Bolt** from maximum range while the mob walks in, and whenever nothing below applies, while the mob has more than about a third of its health and you have more than 15% of your mana.
 3. **Fire Blast** when the mob would reach you before a **Frostfire Bolt** finishes. With **Fire Blast** on cooldown and **Frost Nova** ready, wand it until it arrives.
 4. **Frost Nova** when it reaches you, then step back out of its reach. Skip it on a mob that is almost dead.
 5. **Ice Lance** whenever the mob is frozen or **Fingers of Frost** lights up, as soon as its 8-second cooldown allows.
 6. If it reaches you with **Frost Nova** on cooldown: **Fire Blast**, then keep casting **Frostfire Bolt**.
-7. Below about a third of its health: **Fire Blast** whenever it is ready, an **Ice Lance** into a freeze or one that will kill, else your wand. No new bolt.
+7. Below about a third of its health, or under 15% of your mana: **Fire Blast** whenever it is ready, an **Ice Lance** into a freeze or one that will kill, else your wand. No new bolt: the last of your mana is for **Fire Blast**.
 
 **If the fight goes wrong:** Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.
 
 - **Frostfire Bolt** slows like **Frostbolt**, so its chill still rolls **Frostbite** and **Fingers of Frost**. Take **Frostbolt** off your bar.
-- **Ignite** (40-44), **Master of Elements** (50-52) and **Critical Mass** (56-58) work on **Frostfire Bolt** and **Fire Blast**, **Burning Soul** (45-47) keeps hits from pushing the bolt back, and **Incineration** (48-49, 53-54, 59) adds crit to **Fire Blast** and **Ice Lance**.
-- **Improved Frost Nova** (55) gets its second point: **Frost Nova** comes back 4 seconds sooner. **Impact** (60) gives your Fire spells, **Frostfire Bolt** included, a small chance to stun the mob for 2 seconds.
+- **Ignite** (40-44), **Master of Elements** (50-52) and **Critical Mass** (56-58) work on **Frostfire Bolt** and **Fire Blast**, **Improved Fire Blast** (46-47) brings **Fire Blast** back 2 seconds sooner, and **Incineration** (48-49, 53-54, 59) adds crit to **Fire Blast** and **Ice Lance**.
+- **Improved Frost Nova** (55) gets its second point: **Frost Nova** comes back 4 seconds sooner. **Impact** (45, 60) gives your Fire spells, **Frostfire Bolt** included, a small chance to stun the mob for 2 seconds. Hits push the bolt back: this build has no Burning Soul.
+- **Mage Armor** stays on to 60: 1-3.5% faster per kill than **Ice Armor** at 40-60 in the fight lab.
 
-*Fight lab, seconds per kill: 42 at level 40, 35 at level 50, 30 at level 60. Presses per kill at level 40: Frostfire Bolt 3.5, Wand 2.1, Ice Lance 2.0, Fire Blast 1.8, Frost Nova 0.8, Counterspell 0.1.*
+*Fight lab, seconds per kill: 41 at level 40, 34 at level 50, 30 at level 60. Presses per kill at level 40: Frostfire Bolt 3.5, Wand 2.7, Fire Blast 2.1, Ice Lance 1.8, Frost Nova 0.9, Counterspell 0.1.*
 
 ## Between fights
 
@@ -269,7 +270,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 ## Other ways to level this class
 
 - The [Frost guide](frost-by-level.md) plays the same loop with **Frostbolt** all the way, and [Arcane-Frost](arcane-frost-by-level.md), the recommended mage leveling spec, adds free **Arcane Missiles**.
-- Pulling packs is a different game: the AoE Frost build on the Frost page gathers about four mobs, freezes them with **Frost Nova** and channels **Blizzard**.
+- Pulling packs is a different game: the AoE Frost build on the Frost page gathers about four mobs, freezes them with **Frost Nova** and channels **Blizzard** in **Ice Armor**: in pulls of four, Mage Armor measured 9-20% slower per kill.
 
 ---
 *Generated by `_reference/data/level_guides.py` on 2026-11-15: the stages are hand-kept in `_reference/data/level-guides/mage.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

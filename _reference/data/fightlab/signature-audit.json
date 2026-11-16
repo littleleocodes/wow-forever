@@ -532,7 +532,7 @@
     "rotation": "arcane-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.781,
+    "core_share": 0.7754,
     "min_share": 0.5,
     "required": [
      "Arcane Blast"
@@ -543,11 +543,11 @@
      "Arcane Wrath"
     ],
     "casts_60": {
-     "Arcane Blast": 1.86
+     "Arcane Blast": 1.81
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "841503ab6ea7",
+    "fingerprint": "4d9328461a01",
     "date": "2026-11-15",
     "fights": 300
    },
@@ -556,7 +556,7 @@
     "rotation": "arcane-leveling",
     "ok": false,
     "verdict": "FAIL: lacks Arcane Blast",
-    "core_share": 0.6584,
+    "core_share": 0.71,
     "min_share": 0.5,
     "required": [
      "Arcane Blast"
@@ -573,7 +573,7 @@
      "Arcane Blast"
     ],
     "uncast": [],
-    "fingerprint": "79dafea2483c",
+    "fingerprint": "73cb6c3085aa",
     "date": "2026-11-15",
     "fights": 300
    },
@@ -669,7 +669,7 @@
     "rotation": "frost-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.8839,
+    "core_share": 0.8915,
     "min_share": 0.6,
     "required": [
      "Frostbolt"
@@ -682,11 +682,11 @@
      "Blizzard"
     ],
     "casts_60": {
-     "Frostbolt": 3.24
+     "Frostbolt": 3.26
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "f53486bd92a6",
+    "fingerprint": "e558acbfbf67",
     "date": "2026-11-15",
     "fights": 300
    },
@@ -695,7 +695,7 @@
     "rotation": "frost-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.8868,
+    "core_share": 0.8897,
     "min_share": 0.6,
     "required": [
      "Frostbolt"
@@ -708,11 +708,11 @@
      "Blizzard"
     ],
     "casts_60": {
-     "Frostbolt": 3.06
+     "Frostbolt": 3.36
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "07cdbc63e07c",
+    "fingerprint": "2ed490398454",
     "date": "2026-11-15",
     "fights": 300
    },
@@ -721,7 +721,7 @@
     "rotation": "frost-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.8766,
+    "core_share": 0.8835,
     "min_share": 0.6,
     "required": [
      "Frostbolt"
@@ -734,11 +734,11 @@
      "Blizzard"
     ],
     "casts_60": {
-     "Frostbolt": 3.42
+     "Frostbolt": 3.51
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "03c30c35ba5d",
+    "fingerprint": "78491543bce3",
     "date": "2026-11-15",
     "fights": 300
    },
@@ -747,7 +747,7 @@
     "rotation": "barrage-frost-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.9056,
+    "core_share": 0.9168,
     "min_share": 0.6,
     "required": [
      "Frostbolt",
@@ -760,12 +760,39 @@
      "Arcane Blast"
     ],
     "casts_60": {
-     "Frostbolt": 2.54,
-     "Arcane Missiles": 0.47
+     "Frostbolt": 2.77,
+     "Arcane Missiles": 0.49
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "7df5f9da3b3b",
+    "fingerprint": "33959836e9ed",
+    "date": "2026-11-15",
+    "fights": 300
+   },
+   "opt-frost-leveling-leveling-st": {
+    "spec": "Hybrid Arcane/Frost",
+    "rotation": "barrage-frost-leveling",
+    "ok": true,
+    "verdict": "OK",
+    "core_share": 0.9042,
+    "min_share": 0.6,
+    "required": [
+     "Frostbolt",
+     "Arcane Missiles"
+    ],
+    "core": [
+     "Frostbolt",
+     "Arcane Missiles",
+     "Ice Lance",
+     "Arcane Blast"
+    ],
+    "casts_60": {
+     "Frostbolt": 2.79,
+     "Arcane Missiles": 0.5
+    },
+    "missing_talents": [],
+    "uncast": [],
+    "fingerprint": "1adc9d0f1858",
     "date": "2026-11-15",
     "fights": 300
    },
@@ -774,7 +801,7 @@
     "rotation": "frostfire-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.3128,
+    "core_share": 0.3089,
     "min_share": 0.3,
     "required": [
      "Frostfire Bolt"
@@ -783,11 +810,11 @@
      "Frostfire Bolt"
     ],
     "casts_60": {
-     "Frostfire Bolt": 2.71
+     "Frostfire Bolt": 2.66
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "0d11bd094615",
+    "fingerprint": "4c6306d7dcf8",
     "date": "2026-11-15",
     "fights": 300
    }
@@ -2976,21 +3003,21 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Arcane Blast": 1.86
+     "Arcane Blast": 1.81
     },
-    "core_share": 0.781,
+    "core_share": 0.7754,
     "min_share": 0.5,
-    "weighted": 30.05,
+    "weighted": 29.51,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Arcane Missiles": 0.493,
-     "Arcane Blast": 0.151,
-     "Ice Lance": 0.142,
-     "Arcane Wrath": 0.137,
-     "Fire Blast": 0.059,
+     "Arcane Missiles": 0.503,
+     "Ice Lance": 0.15,
+     "Arcane Blast": 0.147,
+     "Arcane Wrath": 0.125,
+     "Fire Blast": 0.057,
      "Frost Nova": 0.014
     }
    },
@@ -3014,9 +3041,9 @@
     "casts_60": {
      "Arcane Blast": 0.0
     },
-    "core_share": 0.6584,
+    "core_share": 0.71,
     "min_share": 0.5,
-    "weighted": 37.26,
+    "weighted": 36.45,
     "verdict": "FAIL: lacks Arcane Blast",
     "ok": false,
     "missing_talents": [
@@ -3024,11 +3051,12 @@
     ],
     "uncast": [],
     "top_shares": {
-     "Arcane Missiles": 0.658,
-     "Ice Lance": 0.247,
-     "Fire Blast": 0.067,
-     "Frost Nova": 0.016,
-     "Cone of Cold": 0.011
+     "Arcane Missiles": 0.71,
+     "Ice Lance": 0.187,
+     "Fire Blast": 0.061,
+     "Frost Nova": 0.017,
+     "Frostbolt": 0.012,
+     "Cone of Cold": 0.009
     }
    },
    {
@@ -3174,21 +3202,21 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostbolt": 3.24
+     "Frostbolt": 3.26
     },
-    "core_share": 0.8839,
+    "core_share": 0.8915,
     "min_share": 0.6,
-    "weighted": 29.99,
+    "weighted": 29.24,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Frostbolt": 0.53,
-     "Ice Lance": 0.354,
-     "Fire Blast": 0.071,
-     "Wand": 0.031,
-     "Frost Nova": 0.015
+     "Frostbolt": 0.531,
+     "Ice Lance": 0.36,
+     "Fire Blast": 0.061,
+     "Wand": 0.032,
+     "Frost Nova": 0.016
     }
    },
    {
@@ -3211,21 +3239,21 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostbolt": 3.06
+     "Frostbolt": 3.36
     },
-    "core_share": 0.8868,
+    "core_share": 0.8897,
     "min_share": 0.6,
-    "weighted": 31.13,
+    "weighted": 30.17,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Frostbolt": 0.528,
-     "Ice Lance": 0.359,
-     "Fire Blast": 0.059,
-     "Wand": 0.041,
-     "Frost Nova": 0.014
+     "Frostbolt": 0.555,
+     "Ice Lance": 0.335,
+     "Fire Blast": 0.056,
+     "Wand": 0.04,
+     "Frost Nova": 0.015
     }
    },
    {
@@ -3248,21 +3276,21 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostbolt": 3.42
+     "Frostbolt": 3.51
     },
-    "core_share": 0.8766,
+    "core_share": 0.8835,
     "min_share": 0.6,
-    "weighted": 35.68,
+    "weighted": 34.4,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Frostbolt": 0.541,
-     "Ice Lance": 0.335,
-     "Fire Blast": 0.065,
-     "Wand": 0.037,
-     "Frost Nova": 0.021
+     "Frostbolt": 0.556,
+     "Ice Lance": 0.328,
+     "Fire Blast": 0.062,
+     "Wand": 0.034,
+     "Frost Nova": 0.02
     }
    },
    {
@@ -3285,23 +3313,62 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostbolt": 2.54,
-     "Arcane Missiles": 0.47
+     "Frostbolt": 2.77,
+     "Arcane Missiles": 0.49
     },
-    "core_share": 0.9056,
+    "core_share": 0.9168,
     "min_share": 0.6,
-    "weighted": 28.53,
+    "weighted": 28.02,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Frostbolt": 0.442,
-     "Ice Lance": 0.321,
-     "Arcane Missiles": 0.143,
-     "Fire Blast": 0.051,
-     "Wand": 0.029,
-     "Frost Nova": 0.014
+     "Frostbolt": 0.463,
+     "Ice Lance": 0.308,
+     "Arcane Missiles": 0.146,
+     "Fire Blast": 0.048,
+     "Wand": 0.022,
+     "Frost Nova": 0.013
+    }
+   },
+   {
+    "spec": "Hybrid Arcane/Frost",
+    "name": "Arcane-Frost",
+    "build": "opt-frost-leveling-leveling-st",
+    "split": "22/3/26",
+    "rotation": "barrage-frost-leveling",
+    "rules": "tuned",
+    "kind": "slot",
+    "required": [
+     "Frostbolt",
+     "Arcane Missiles"
+    ],
+    "core": [
+     "Frostbolt",
+     "Arcane Missiles",
+     "Ice Lance",
+     "Arcane Blast"
+    ],
+    "rule_issues": [],
+    "casts_60": {
+     "Frostbolt": 2.79,
+     "Arcane Missiles": 0.5
+    },
+    "core_share": 0.9042,
+    "min_share": 0.6,
+    "weighted": 29.39,
+    "verdict": "OK",
+    "ok": true,
+    "missing_talents": [],
+    "uncast": [],
+    "top_shares": {
+     "Frostbolt": 0.448,
+     "Ice Lance": 0.322,
+     "Arcane Missiles": 0.134,
+     "Fire Blast": 0.048,
+     "Wand": 0.033,
+     "Frost Nova": 0.015
     }
    },
    {
@@ -3320,22 +3387,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostfire Bolt": 2.71
+     "Frostfire Bolt": 2.66
     },
-    "core_share": 0.3128,
+    "core_share": 0.3089,
     "min_share": 0.3,
-    "weighted": 34.32,
+    "weighted": 33.51,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Ice Lance": 0.389,
-     "Frostfire Bolt": 0.285,
-     "Fire Blast": 0.199,
-     "Ignite": 0.049,
-     "Wand": 0.034,
-     "Frostfire Bolt burn": 0.028
+     "Ice Lance": 0.339,
+     "Frostfire Bolt": 0.28,
+     "Fire Blast": 0.243,
+     "Ignite": 0.057,
+     "Wand": 0.035,
+     "Frostfire Bolt burn": 0.029
     }
    }
   ],

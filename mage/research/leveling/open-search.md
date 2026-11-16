@@ -6,50 +6,46 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 
 | Rotation | Trees that level with it | Open winner | Family | Seconds per kill (20-60) | vs our fastest there |
 |---|---|---|---|---|---|
-| arcane-leveling | Arcane | [33/0/18](https://talentsforever.com/mage/60/051205203100311531--2321022021003-12) | Arcane | 30.00 | +24.4% faster than arcane-leveling |
+| arcane-leveling | Arcane | [33/0/18](https://talentsforever.com/mage/60/051205203100311531--2321022021003-12) | Arcane | 29.38 | +0.0% faster than arcane-open-leveling |
 | fire-leveling | Fire | [1/32/18](https://talentsforever.com/mage/60/1-55500201210133031-2034320001003-12) | Fire | 36.35 | +0.6% faster than fire-leveling |
-| frost-leveling | Frost | [18/3/30](https://talentsforever.com/mage/60/2331050010003-3-1525321301203002-12) | Frost | 30.04 | +4.6% faster than leveling-frost |
-| barrage-frost-leveling | Hybrid Arcane/Frost | [28/0/23](https://talentsforever.com/mage/60/25120520000030143--0325300301103002-12) | Hybrid Arcane/Frost | 28.47 | +3.2% faster than opt-frost-leveling-leveling-st |
-| frostfire-leveling | Hybrid Fire/Frost | [2/25/24](https://talentsforever.com/mage/60/2-55501300000033-0325320301003002-12) | Hybrid Fire/Frost | 34.36 | - |
+| frost-leveling | Frost | [18/3/30](https://talentsforever.com/mage/60/2331050010003-3-1525321301203002-12) | Frost | 29.50 | +0.0% faster than frost-open-leveling |
+| barrage-frost-leveling | Hybrid Arcane/Frost | [28/0/23](https://talentsforever.com/mage/60/25120520000030143--0325300301103002-12) | Hybrid Arcane/Frost | 28.26 | +0.4% faster than arcane-frost-open-leveling |
+| frostfire-leveling | Hybrid Fire/Frost | [2/25/24](https://talentsforever.com/mage/60/2-55501100200033-0325320301003002-12) | Hybrid Fire/Frost | 33.76 | +0.4% faster than frostfire-open-leveling |
 
 ## arcane-leveling
 
-**Open winner 33/0/18** (Arcane): talent values at level 60 (seconds per kill lost without the talent; the build: 27.08 s):
+**Open winner 33/0/18** (Arcane): talent values at level 60 (seconds per kill lost without the talent; the build: 26.37 s):
 
 | Talent | Ranks | Seconds lost without it | Per point |
 |---|---|---|---|
-| Missile Barrage | 2 | +4.22 | +2.11 |
-| Arcane Blast | 1 | +2.38 | +2.38 |
-| Improved Channeling | 5 | +1.42 | +0.28 |
-| Arcane Mind | 5 | +1.19 | +0.24 |
-| Precision | 2 | +1.03 | +0.52 |
-| Arcane Meditation | 3 | +0.99 | +0.33 |
-| Arcane Instability | 3 | +0.92 | +0.31 |
-| Arcane Concentration | 5 | +0.89 | +0.18 |
-| Arcane Impact | 3 | +0.72 | +0.24 |
-| Shatter | 3 | +0.63 | +0.21 |
-| Ice Lance | 1 | +0.54 | +0.54 |
-| Arcane Wrath | 1 | +0.53 | +0.53 |
-| Arcane Subtlety | 2 | +0.27 | +0.13 |
-| Arcane Power | 1 | +0.21 | +0.21 |
-| Presence of Mind | 1 | +0.13 | +0.13 |
-| Improved Frost Nova | 2 | +0.06 | +0.03 |
-| Improved Frostbolt | 3 | +0.00 | +0.00 |
+| Missile Barrage | 2 | +4.69 | +2.34 |
+| Arcane Blast | 1 | +2.35 | +2.35 |
+| Improved Channeling | 5 | +1.86 | +0.37 |
+| Arcane Concentration | 5 | +1.42 | +0.28 |
+| Arcane Mind | 5 | +1.39 | +0.28 |
+| Precision | 2 | +1.30 | +0.65 |
+| Arcane Meditation | 3 | +1.29 | +0.43 |
+| Arcane Instability | 3 | +1.08 | +0.36 |
+| Arcane Impact | 3 | +0.84 | +0.28 |
+| Shatter | 3 | +0.82 | +0.27 |
+| Arcane Wrath | 1 | +0.76 | +0.76 |
+| Arcane Subtlety | 2 | +0.58 | +0.29 |
+| Ice Lance | 1 | +0.51 | +0.51 |
+| Arcane Power | 1 | +0.44 | +0.44 |
+| Presence of Mind | 1 | +0.32 | +0.32 |
+| Improved Frost Nova | 2 | +0.26 | +0.13 |
+| Improved Frostbolt | 3 | +0.14 | +0.05 |
+| Permafrost | 2 | +0.13 | +0.06 |
+| Ice Shards | 1 | +0.08 | +0.08 |
+| Arcane Resilience | 1 | +0.06 | +0.06 |
+| Frost Warding | 2 | +0.00 | +0.00 |
 | Improved Blizzard | 2 | +0.00 | +0.00 |
-| Frost Warding | 2 | -0.03 | -0.02 |
-| Ice Shards | 1 | -0.03 | -0.03 |
-| Arcane Resilience | 1 | -0.05 | -0.05 |
-| Permafrost | 2 | -0.11 | -0.06 |
 
-Race at levels 20-60 (seconds per kill): open winner 30.00, finalist 33/0/18 (own tree first order, before the order polish) 30.13, finalist 33/0/18 (carried order) 30.35, arcane-open-leveling (the build this search wrote) 30.48, finalist 31/0/20 (before the 20-60 polish) 30.48, finalist 31/0/20 (own tree first order) 30.56, finalist 33/0/18 (stats model order) 32.71, finalist 31/0/20 (stats model order) 33.58, finalist 33/0/18 (own tree last order) 33.65, finalist 30/0/21 34.27, finalist 31/0/20 (own tree last order) 34.88, arcane-leveling 37.32.
+Race at levels 20-60 (seconds per kill): arcane-open-leveling 29.38, open winner 29.38, finalist 33/0/18 (own tree first order) 29.49, finalist 33/0/18 31.99, finalist 33/0/18 (stats model order) 31.99, finalist 33/0/18 (own tree last order) 32.89, finalist 30/0/21 33.56, arcane-leveling 36.59.
 
 **Signature spells** (Arcane, levels 20-60, 2026-11-15): OK; core share at 60 78% (rule 50%: Arcane Blast, Arcane Missiles, Arcane Wrath).
 
-**Synergy certificate** (2026-11-15, fightlab/fl_synergy.py): 50 relevant talents, 30 the winner lacks; 1101 pairs measured around 33/0/18 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Ice Barrier + Improved Channeling +3.9% (build -55.9%), Arcane Geometry + Ice Lance +2.7% (build -58.2%), Ice Barrier + Arcane Concentration +2.4% (build -57.0%), Arcane Geometry + Precision +2.3% (build -59.1%), Ice Barrier + Arcane Mind +2.1% (build -57.4%), Ice Barrier + Arcane Wrath +2.0% (build -3.3%). No pair build within 1% of the winner. The certificate confirms the winner.
-
-Under the other leveling rotations (seconds per kill, 20-60): fire-leveling 40.6, frost-leveling 41.1, barrage-frost-leveling 35.04, frostfire-leveling 45.21; its own rotation plays it best (30.0 s).
-
-Build (2026-11-15, open_builds.py): `arcane-open-leveling`.
+**Synergy certificate** (2026-11-15, fightlab/fl_synergy.py): 50 relevant talents, 30 the winner lacks; 1101 pairs measured around 33/0/18 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Arcane Geometry + Precision +3.2% (build -58.1%), Master of Elements + Arcane Subtlety +2.5% (build -0.5%), Master of Elements + Arcane Instability +2.3% (build -2.3%), Master of Elements + Arcane Impact +1.8% (build -0.7%), Fingers of Frost + Arcane Subtlety +1.7% (build -1.0%), Master of Elements + Improved Frost Nova +1.6% (build +1.0%). No pair build within 1% of the winner. The certificate confirms the winner.
 
 ## fire-leveling
 
@@ -90,108 +86,97 @@ Build (2026-11-15, open_builds.py): `fire-open-leveling`.
 
 ## frost-leveling
 
-**Open winner 18/3/30** (Frost): talent values at level 60 (seconds per kill lost without the talent; the build: 26.58 s):
+**Open winner 18/3/30** (Frost): talent values at level 60 (seconds per kill lost without the talent; the build: 25.91 s):
 
 | Talent | Ranks | Seconds lost without it | Per point |
 |---|---|---|---|
-| Shatter | 3 | +4.51 | +1.50 |
-| Ice Lance | 1 | +3.31 | +3.31 |
-| Ice Shards | 5 | +2.36 | +0.47 |
-| Improved Frostbolt | 5 | +1.98 | +0.40 |
-| Frost Channeling | 3 | +1.34 | +0.45 |
-| Fingers of Frost | 2 | +1.34 | +0.67 |
-| Arcane Meditation | 3 | +1.21 | +0.40 |
-| Precision | 2 | +1.18 | +0.59 |
-| Frostbite | 3 | +1.07 | +0.36 |
-| Arcane Concentration | 5 | +0.70 | +0.14 |
-| Arctic Reach | 2 | +0.70 | +0.35 |
-| Wand Specialization | 2 | +0.22 | +0.11 |
+| Shatter | 3 | +4.18 | +1.39 |
+| Ice Lance | 1 | +3.18 | +3.18 |
+| Ice Shards | 5 | +2.18 | +0.44 |
+| Improved Frostbolt | 5 | +2.00 | +0.40 |
+| Frost Channeling | 3 | +1.33 | +0.44 |
+| Arcane Meditation | 3 | +1.29 | +0.43 |
+| Frostbite | 3 | +1.27 | +0.42 |
+| Fingers of Frost | 2 | +1.20 | +0.60 |
+| Precision | 2 | +1.16 | +0.58 |
+| Arcane Concentration | 5 | +0.95 | +0.19 |
+| Arctic Reach | 2 | +0.83 | +0.42 |
+| Improved Frost Nova | 2 | +0.61 | +0.31 |
+| Wand Specialization | 2 | +0.25 | +0.12 |
 | Arcane Subtlety | 1 | +0.22 | +0.22 |
-| Improved Frost Nova | 2 | +0.20 | +0.10 |
-| Incineration | 3 | +0.18 | +0.06 |
+| Incineration | 3 | +0.22 | +0.07 |
 | Arcane Resilience | 3 | +0.07 | +0.02 |
-| Frost Warding | 1 | +0.03 | +0.03 |
+| Permafrost | 1 | +0.06 | +0.06 |
 | Improved Channeling | 3 | +0.00 | +0.00 |
 | Arcane Impact | 1 | +0.00 | +0.00 |
-| Permafrost | 1 | -0.02 | -0.02 |
+| Frost Warding | 1 | +0.00 | +0.00 |
 
-Race at levels 20-60 (seconds per kill): frost-open-leveling (the build this search wrote) 30.04, open winner 30.04, finalist 18/3/30 (previous order) 30.04, finalist 18/3/30 (polished order) 30.04, finalist 18/3/30 (stats model order) 30.39, finalist 18/3/30 30.59, leveling-frost 31.43, finalist 18/3/30 (own tree last order) 35.65, opt-frost-aoe-leveling-aoe 35.83.
+Race at levels 20-60 (seconds per kill): frost-open-leveling 29.50, open winner 29.50, finalist 18/3/30 (previous order) 29.50, finalist 18/3/30 (stats model order) 29.93, finalist 18/3/30 30.11, leveling-frost 30.28, opt-frost-aoe-leveling-aoe 34.42, finalist 18/3/30 (own tree last order) 34.80.
 
 **Signature spells** (Frost, levels 20-60, 2026-11-15): OK; core share at 60 89% (rule 60%: Frostbolt, Ice Lance, Frost Blast, Cone of Cold, Blizzard).
 
-**Synergy certificate** (2026-11-15, fightlab/fl_synergy.py): 50 relevant talents, 33 the winner lacks; 1083 pairs measured around 18/3/30 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Arcane Mind + Arctic Reach +1.2% (build -1.5%), Arcane Instability + Master of Elements +1.1% (build +8.7%), Master of Elements + Winter's Chill +1.0% (build +4.7%), Arcane Mind + Master of Elements +1.0% (build +5.1%), Impact + Arcane Concentration +0.9% (build -1.8%), Cold Snap + Arcane Concentration +0.9% (build -2.4%). No pair build within 1% of the winner. The certificate confirms the winner.
-
-Under the other leveling rotations (seconds per kill, 20-60): arcane-leveling 38.87, fire-leveling 36.62, barrage-frost-leveling 29.93, frostfire-leveling 35.37; its own rotation plays it best (30.04 s).
-
-Build (2026-11-15, open_builds.py): `frost-open-leveling`.
+**Synergy certificate** (2026-11-15, fightlab/fl_synergy.py): 50 relevant talents, 33 the winner lacks; 1083 pairs measured around 18/3/30 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Arcane Instability + Fingers of Frost +2.7% (build -0.6%), Magic Absorption + Precision +2.3% (build -4.5%), Presence of Mind + Arcane Instability +2.1% (build +4.7%), Arcane Mind + Precision +2.1% (build -4.1%), Presence of Mind + Precision +2.0% (build -4.9%), Arcane Instability + Precision +1.8% (build -2.2%). No pair build within 1% of the winner. The certificate confirms the winner.
 
 ## barrage-frost-leveling
 
-**Open winner 28/0/23** (Hybrid Arcane/Frost): talent values at level 60 (seconds per kill lost without the talent; the build: 24.34 s):
+**Open winner 28/0/23** (Hybrid Arcane/Frost): talent values at level 60 (seconds per kill lost without the talent; the build: 24.66 s):
 
 | Talent | Ranks | Seconds lost without it | Per point |
 |---|---|---|---|
-| Shatter | 3 | +3.59 | +1.20 |
-| Ice Lance | 1 | +2.51 | +2.51 |
-| Missile Barrage | 2 | +2.34 | +1.17 |
-| Ice Shards | 5 | +1.96 | +0.39 |
-| Arcane Meditation | 3 | +1.36 | +0.45 |
-| Frostbite | 3 | +1.27 | +0.42 |
-| Fingers of Frost | 2 | +1.18 | +0.59 |
-| Frost Channeling | 3 | +1.17 | +0.39 |
+| Shatter | 3 | +2.87 | +0.96 |
+| Ice Lance | 1 | +1.99 | +1.99 |
+| Missile Barrage | 2 | +1.82 | +0.91 |
+| Ice Shards | 5 | +1.72 | +0.34 |
+| Frostbite | 3 | +1.24 | +0.41 |
 | Precision | 2 | +1.08 | +0.54 |
-| Arcane Instability | 3 | +0.91 | +0.30 |
-| Arcane Concentration | 5 | +0.79 | +0.16 |
-| Improved Frostbolt | 3 | +0.71 | +0.24 |
-| Arcane Subtlety | 2 | +0.48 | +0.24 |
-| Arctic Reach | 1 | +0.23 | +0.23 |
-| Arcane Mind | 4 | +0.19 | +0.05 |
-| Wand Specialization | 2 | +0.17 | +0.08 |
-| Presence of Mind | 1 | +0.14 | +0.14 |
-| Arcane Resilience | 1 | +0.02 | +0.02 |
-| Improved Channeling | 5 | -0.02 | -0.00 |
+| Fingers of Frost | 2 | +1.05 | +0.52 |
+| Improved Frostbolt | 3 | +0.86 | +0.29 |
+| Arcane Instability | 3 | +0.81 | +0.27 |
+| Arcane Meditation | 3 | +0.80 | +0.27 |
+| Frost Channeling | 3 | +0.77 | +0.26 |
+| Arcane Concentration | 5 | +0.63 | +0.13 |
+| Arctic Reach | 1 | +0.39 | +0.39 |
+| Arcane Subtlety | 2 | +0.34 | +0.17 |
+| Arcane Mind | 4 | +0.15 | +0.04 |
+| Presence of Mind | 1 | +0.10 | +0.10 |
+| Wand Specialization | 2 | +0.03 | +0.02 |
+| Improved Channeling | 5 | -0.04 | -0.01 |
+| Arcane Resilience | 1 | -0.12 | -0.12 |
 
-Race at levels 20-60 (seconds per kill): open winner 28.47, arcane-frost-open-leveling (the build this search wrote) 28.63, finalist 23/0/28 (before the 20-60 polish) 28.63, finalist 28/0/23 (stats model order) 28.86, finalist 21/0/30 28.99, finalist 23/0/28 29.02, finalist 23/0/28 (stats model order) 29.02, finalist 28/0/23 (own tree last order) 29.11, opt-frost-leveling-leveling-st 29.39, finalist 23/0/28 (own tree first order) 29.68, finalist 23/0/28 (own tree last order) 31.27, finalist 28/0/23 (own tree first order) 31.44.
+Race at levels 20-60 (seconds per kill): open winner 28.26, arcane-frost-open-leveling 28.36, finalist 28/0/23 (previous order, before the order polish) 28.36, finalist 21/0/30 28.72, finalist 28/0/23 28.81, finalist 28/0/23 (stats model order) 28.81, finalist 28/0/23 (own tree last order) 28.93, opt-frost-leveling-leveling-st 29.14, finalist 28/0/23 (own tree first order) 31.20.
 
 **Signature spells** (Hybrid Arcane/Frost, levels 20-60, 2026-11-15): OK; core share at 60 91% (rule 60%: Frostbolt, Arcane Missiles, Ice Lance, Arcane Blast).
 
-**Synergy certificate** (2026-11-15, fightlab/fl_synergy.py): 50 relevant talents, 33 the winner lacks; 1089 pairs measured around 28/0/23 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Impact + Improved Channeling +2.6% (build +0.1%), Improved Frost Nova + Arcane Mind +2.6% (build +0.7%), Incineration + Impact +2.4% (build +1.6%), Master of Elements + Missile Barrage +2.2% (build -3.7%), Impact + Cold Snap +2.2% (build +1.2%), Impact + Frost Warding +2.1% (build -0.4%). No pair build within 1% of the winner. The certificate confirms the winner.
-
-Under the other leveling rotations (seconds per kill, 20-60): arcane-leveling 37.55, fire-leveling 35.84, frost-leveling 30.56, frostfire-leveling 34.54; its own rotation plays it best (28.47 s).
-
-Build (2026-11-15, open_builds.py): `arcane-frost-open-leveling`.
+**Synergy certificate** (2026-11-15, fightlab/fl_synergy.py): 50 relevant talents, 33 the winner lacks; 1089 pairs measured around 28/0/23 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Improved Frost Nova + Arcane Meditation +2.8% (build -0.5%), Improved Frost Nova + Wand Specialization +2.6% (build +3.0%), Critical Mass + Arcane Mind +2.3% (build -0.1%), Incineration + Ice Barrier +2.2% (build +8.5%), Ice Barrier + Presence of Mind +2.0% (build +6.3%), Incineration + Critical Mass +2.0% (build +1.8%). Leads polished and raced at 20-60: Cold Snap + Ice Barrier -> 20/0/31 -2.0%, Magic Absorption + Ice Barrier -> 20/0/31 -2.1%, Improved Frost Nova + Ice Barrier -> 20/0/31 -1.9%. The certificate confirms the winner.
 
 ## frostfire-leveling
 
-**Open winner 2/25/24** (Hybrid Fire/Frost): talent values at level 60 (seconds per kill lost without the talent; the build: 30.87 s):
+**Open winner 2/25/24** (Hybrid Fire/Frost): talent values at level 60 (seconds per kill lost without the talent; the build: 30.36 s):
 
 | Talent | Ranks | Seconds lost without it | Per point |
 |---|---|---|---|
-| Shatter | 3 | +6.54 | +2.18 |
-| Ice Lance | 1 | +5.58 | +5.58 |
-| Ice Shards | 5 | +2.78 | +0.56 |
-| Fingers of Frost | 2 | +2.26 | +1.13 |
-| Frost Channeling | 3 | +1.97 | +0.66 |
-| Frostbite | 3 | +1.67 | +0.56 |
-| Master of Elements | 3 | +1.59 | +0.53 |
-| Ignite | 5 | +1.55 | +0.31 |
-| Precision | 2 | +1.33 | +0.66 |
-| Critical Mass | 3 | +1.15 | +0.38 |
-| Incineration | 5 | +1.05 | +0.21 |
-| Accelerant | 5 | +0.87 | +0.17 |
-| Improved Frost Nova | 2 | +0.26 | +0.13 |
-| Wand Specialization | 2 | +0.23 | +0.12 |
-| Burning Soul | 3 | +0.07 | +0.02 |
+| Shatter | 3 | +5.71 | +1.90 |
+| Ice Lance | 1 | +4.26 | +4.26 |
+| Ice Shards | 5 | +2.17 | +0.43 |
+| Precision | 2 | +1.53 | +0.76 |
+| Ignite | 5 | +1.47 | +0.29 |
+| Frostbite | 3 | +1.42 | +0.47 |
+| Fingers of Frost | 2 | +1.42 | +0.71 |
+| Frost Channeling | 3 | +1.37 | +0.46 |
+| Accelerant | 5 | +1.34 | +0.27 |
+| Master of Elements | 3 | +1.21 | +0.40 |
+| Incineration | 5 | +0.95 | +0.19 |
+| Critical Mass | 3 | +0.91 | +0.30 |
+| Improved Frost Nova | 2 | +0.75 | +0.38 |
+| Improved Fire Blast | 2 | +0.21 | +0.10 |
+| Wand Specialization | 2 | +0.19 | +0.09 |
+| Impact | 1 | +0.03 | +0.03 |
 | Improved Frostbolt | 3 | +0.00 | +0.00 |
-| Impact | 1 | -0.03 | -0.03 |
+| Burning Soul | 1 | -0.06 | -0.06 |
 
-Race at levels 20-60 (seconds per kill): frostfire-open-leveling (the build this search wrote) 34.36, open winner 34.36, finalist 3/26/22 34.50, finalist 2/25/24 (own tree last order) 34.61, finalist 3/24/24 34.87, finalist 2/25/24 (stats model order) 34.88, finalist 2/25/24 (own tree first order) 41.15.
+Race at levels 20-60 (seconds per kill): open winner 33.76, finalist 2/25/24 (own tree last order) 33.81, frostfire-open-leveling 33.88, finalist 2/25/24 (before the 20-60 polish) 33.88, finalist 2/25/24 (stats model order) 34.06, finalist 2/25/24 34.19, finalist 3/24/24 34.35, finalist 2/25/24 (own tree first order) 39.62.
 
-**Signature spells** (Hybrid Fire/Frost, levels 20-60, 2026-11-15): OK; core share at 60 31% (rule 30%: Frostfire Bolt).
+**Signature spells** (Hybrid Fire/Frost, levels 20-60, 2026-11-15): OK; core share at 60 30% (rule 30%: Frostfire Bolt).
 
-**Synergy certificate** (2026-11-15, fightlab/fl_synergy.py): 50 relevant talents, 34 the winner lacks; 1075 pairs measured around 2/25/24 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Arcane Concentration + Fingers of Frost +2.2% (build -1.6%), Presence of Mind + Accelerant +2.1% (build -21.8%), Arcane Concentration + Ice Lance +1.8% (build -11.7%), Arcane Concentration + Critical Mass +1.5% (build +0.5%), Fire Power + Ice Lance +1.0% (build -15.1%), Arcane Concentration + Frost Channeling +0.9% (build -1.8%). No pair build within 1% of the winner. The certificate confirms the winner.
-
-Under the other leveling rotations (seconds per kill, 20-60): arcane-leveling 41.0, fire-leveling 35.65, frost-leveling 31.94, barrage-frost-leveling 31.79; frost-leveling plays it faster (31.94 s against 34.36 s). Research only: the pages keep each spec on its own rotation.
-
-Build (2026-11-15, open_builds.py): `frostfire-open-leveling`.
+**Synergy certificate** (2026-11-15, fightlab/fl_synergy.py): 50 relevant talents, 33 the winner lacks; 1073 pairs measured around 2/25/24 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Presence of Mind + Accelerant +2.4% (build -22.7%), Arcane Concentration + Arcane Meditation +2.2% (build +9.2%), Arcane Meditation + Fire Power +2.2% (build +6.0%), Arcane Meditation + Impact +2.2% (build +3.9%), Arcane Meditation + Ice Lance +2.1% (build -6.8%), Arcane Meditation + Precision +2.0% (build +0.2%). No pair build within 1% of the winner. The certificate confirms the winner.
 
