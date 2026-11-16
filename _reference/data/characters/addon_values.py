@@ -952,6 +952,14 @@ def main():
     p = OUT / "forever-gear-values.json"
     p.write_text(json.dumps(o, indent=1) + "\n", encoding="utf-8", newline="\n")
     print(f"wrote {p.relative_to(ROOT)}: {o['status']}; {len(o['test_vectors'])} test vectors")
+    # The rest-cue file from the same page picks (rest_cues.py, 2026-11-16): the RestCue add-on finds a character's spec through GearCheck's
+    # leveling build, so the two files are written together and their build ids never diverge. Its own process (it loads the fight lab's
+    # run.py); a failure there leaves forever-rest-cues.json as it was and never blocks the gear values.
+    import subprocess
+    rc = subprocess.run([sys.executable, "-u", str(HERE / "rest_cues.py")], capture_output=True, text=True, encoding="utf-8", errors="replace")
+    tail = ((rc.stdout or "") + (rc.stderr or "")).strip().splitlines()
+    print(("rest cues: " if rc.returncode == 0 else f"WARNING: rest_cues.py failed (rc {rc.returncode}); forever-rest-cues.json left as it was: ")
+          + (tail[-1] if tail else ""))
 
 
 if __name__ == "__main__":

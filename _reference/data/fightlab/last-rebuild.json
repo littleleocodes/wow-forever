@@ -1109,7 +1109,7 @@
    "spec": "affliction-leveling",
    "hand": "leveling-affliction",
    "opt": "opt-affliction-leveling-leveling-st",
-   "started": "2026-11-11T07:03:54",
+   "started": "2026-11-16T10:39:47",
    "steps": [
     "race",
     "report"
@@ -1638,44 +1638,44 @@
      }
     }
    },
-   "seconds": 687,
+   "seconds": 2215,
    "log": [
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py warlock --spec affliction-leveling --build leveling-affliction --compare F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-hand-2026-09-28.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r1.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r10.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r11.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r12.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r2.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r3.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r4.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r5.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r6.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r7.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r8.json F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-r9.json --levels 20,30,40,50,60 --fights 1000",
      "rc": 0,
-     "seconds": 317,
+     "seconds": 991,
      "tail": [
-      "   vs cand-affliction-r10: time/kill 38.8s (+1.1%), fight 22.7s, deaths/100 0.0",
-      "   vs cand-affliction-r11: time/kill 38.8s (+1.1%), fight 22.7s, deaths/100 0.0",
-      "   vs cand-affliction-r12: time/kill 36.8s (-4.0%), fight 23.1s, deaths/100 0.0",
-      "   vs cand-affliction-r2: time/kill 37.7s (-1.7%), fight 23.8s, deaths/100 0.0",
-      "   vs cand-affliction-r3: time/kill 36.8s (-4.1%), fight 23.2s, deaths/100 0.0",
-      "   vs cand-affliction-r4: time/kill 38.4s (+0.0%), fight 24.2s, deaths/100 0.0",
-      "   vs cand-affliction-r5: time/kill 38.1s (-0.8%), fight 24.5s, deaths/100 0.0",
-      "   vs cand-affliction-r6: time/kill 38.0s (-0.9%), fight 24.4s, deaths/100 0.0",
-      "   vs cand-affliction-r7: time/kill 45.9s (+19.7%), fight 24.5s, deaths/100 0.0",
-      "   vs cand-affliction-r8: time/kill 47.6s (+24.0%), fight 26.3s, deaths/100 0.0",
-      "   vs cand-affliction-r9: time/kill 37.0s (-3.5%), fight 23.8s, deaths/100 0.0",
-      "done in 317s"
+      "   vs cand-affliction-r10: time/kill 35.3s (+2.3%), fight 24.5s, deaths/100 0.0",
+      "   vs cand-affliction-r11: time/kill 35.3s (+2.3%), fight 24.5s, deaths/100 0.0",
+      "   vs cand-affliction-r12: time/kill 33.5s (-2.8%), fight 24.3s, deaths/100 0.0",
+      "   vs cand-affliction-r2: time/kill 34.1s (-1.2%), fight 24.9s, deaths/100 0.0",
+      "   vs cand-affliction-r3: time/kill 33.5s (-2.7%), fight 24.3s, deaths/100 0.0",
+      "   vs cand-affliction-r4: time/kill 34.5s (+0.0%), fight 25.1s, deaths/100 0.0",
+      "   vs cand-affliction-r5: time/kill 35.0s (+1.4%), fight 25.5s, deaths/100 0.0",
+      "   vs cand-affliction-r6: time/kill 34.6s (+0.4%), fight 25.3s, deaths/100 0.0",
+      "   vs cand-affliction-r7: time/kill 40.1s (+16.4%), fight 27.6s, deaths/100 0.0",
+      "   vs cand-affliction-r8: time/kill 43.6s (+26.4%), fight 27.1s, deaths/100 0.0",
+      "   vs cand-affliction-r9: time/kill 34.2s (-0.8%), fight 24.9s, deaths/100 0.0",
+      "done in 990s"
      ],
      "stderr": []
     },
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py warlock --spec affliction-leveling --build opt-affliction-leveling-leveling-st --compare leveling-affliction --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --gear-tiers --write",
      "rc": 0,
-     "seconds": 370,
+     "seconds": 1221,
      "tail": [
-      "   Improved Life Tap        2  sim   +2.8% (fight   -0.1% +-0.4)  EV   +2.4%",
-      "   Improved Voidwalker      3  sim   +4.3% (fight   +3.9% +-0.4)  EV   +1.5%",
-      "   Malevolence              5  sim   +1.8% (fight   +3.0% +-0.4)  EV   +2.4%",
-      "   Pandemic                 3  sim   +1.5% (fight   +2.8% +-0.4)  EV   +1.6%",
-      "   Shadow Mastery           2  sim   +1.6% (fight   +3.1% +-0.4)  EV   +2.3%",
-      "   Siphon Life              1  sim   +8.7% (fight   +4.1% +-0.5)  EV   +7.0%",
-      "   Soul Link                1  sim   +2.5% (fight   +2.4% +-0.4)  EV   +2.5%",
-      "   Soul Siphon              1  sim   +0.7% (fight   +0.2% +-0.4)  EV   +0.2%",
-      "   Suppression              5  sim   +6.9% (fight   +5.6% +-0.5)  EV   +3.5%",
-      "   Unholy Power             5  sim   +0.7% (fight   +1.9% +-0.4)  EV   +0.8%",
-      "done in 369s",
+      "   Improved Life Tap        2  sim   +1.6% (fight   +2.0% +-0.2)  EV   +2.4%",
+      "   Improved Voidwalker      3  sim   +1.8% (fight   +2.1% +-0.3)  EV   +1.5%",
+      "   Malevolence              5  sim   +1.9% (fight   +2.4% +-0.2)  EV   +2.4%",
+      "   Pandemic                 3  sim   +2.1% (fight   +2.7% +-0.3)  EV   +1.6%",
+      "   Shadow Mastery           2  sim   +1.6% (fight   +2.1% +-0.2)  EV   +2.3%",
+      "   Siphon Life              1  sim   +6.1% (fight   +9.9% +-0.3)  EV   +7.0%",
+      "   Soul Link                1  sim   +1.7% (fight   +2.2% +-0.2)  EV   +2.5%",
+      "   Soul Siphon              1  sim   -0.0% (fight   -0.0% +-0.2)  EV   +0.2%",
+      "   Suppression              5  sim   +3.4% (fight   +4.0% +-0.3)  EV   +3.5%",
+      "   Unholy Power             5  sim   +1.0% (fight   +1.4% +-0.2)  EV   +0.8%",
+      "done in 1220s",
       "wrote F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\affliction-leveling.md"
      ],
      "stderr": []
@@ -1685,123 +1685,123 @@
    "race": {
     "time_per_kill": {
      "leveling-affliction": {
-      "20": 31.5,
-      "30": 39.0,
-      "40": 42.1,
-      "50": 40.8,
-      "60": 38.4
+      "20": 24.0,
+      "30": 29.1,
+      "40": 33.5,
+      "50": 35.2,
+      "60": 34.5
      },
      "cand-affliction-hand-2026-09-28": {
-      "20": 31.2,
-      "30": 38.6,
-      "40": 39.9,
-      "50": 39.1,
-      "60": 38.5
+      "20": 23.5,
+      "30": 29.7,
+      "40": 32.5,
+      "50": 34.3,
+      "60": 35.4
      },
      "cand-affliction-r1": {
-      "20": 31.2,
-      "30": 39.8,
-      "40": 45.5,
-      "50": 49.9,
-      "60": 48.7
+      "20": 23.8,
+      "30": 30.0,
+      "40": 36.0,
+      "50": 40.1,
+      "60": 43.5
      },
      "cand-affliction-r10": {
-      "20": 31.2,
-      "30": 38.6,
-      "40": 42.8,
-      "50": 42.0,
-      "60": 38.8
+      "20": 23.5,
+      "30": 29.7,
+      "40": 34.8,
+      "50": 36.9,
+      "60": 35.3
      },
      "cand-affliction-r11": {
-      "20": 31.2,
-      "30": 38.6,
-      "40": 42.8,
-      "50": 42.0,
-      "60": 38.8
+      "20": 23.5,
+      "30": 29.7,
+      "40": 34.8,
+      "50": 36.9,
+      "60": 35.3
      },
      "cand-affliction-r12": {
-      "20": 30.6,
-      "30": 39.0,
-      "40": 42.9,
-      "50": 40.0,
-      "60": 36.8
+      "20": 23.6,
+      "30": 29.6,
+      "40": 34.4,
+      "50": 35.2,
+      "60": 33.5
      },
      "cand-affliction-r2": {
-      "20": 30.8,
-      "30": 38.6,
-      "40": 42.7,
-      "50": 41.2,
-      "60": 37.7
+      "20": 23.6,
+      "30": 29.5,
+      "40": 34.8,
+      "50": 35.5,
+      "60": 34.1
      },
      "cand-affliction-r3": {
-      "20": 31.2,
-      "30": 38.6,
-      "40": 43.0,
-      "50": 40.0,
-      "60": 36.8
+      "20": 23.5,
+      "30": 29.7,
+      "40": 34.4,
+      "50": 35.2,
+      "60": 33.5
      },
      "cand-affliction-r4": {
-      "20": 30.8,
-      "30": 38.6,
-      "40": 42.4,
-      "50": 40.9,
-      "60": 38.4
+      "20": 23.6,
+      "30": 29.5,
+      "40": 34.0,
+      "50": 36.0,
+      "60": 34.5
      },
      "cand-affliction-r5": {
-      "20": 31.2,
-      "30": 39.5,
-      "40": 43.9,
-      "50": 41.4,
-      "60": 38.1
+      "20": 24.3,
+      "30": 29.9,
+      "40": 35.1,
+      "50": 36.4,
+      "60": 35.0
      },
      "cand-affliction-r6": {
-      "20": 30.8,
-      "30": 38.6,
-      "40": 42.6,
-      "50": 41.2,
-      "60": 38.0
+      "20": 23.6,
+      "30": 29.5,
+      "40": 33.9,
+      "50": 36.1,
+      "60": 34.6
      },
      "cand-affliction-r7": {
-      "20": 31.2,
-      "30": 40.1,
-      "40": 44.7,
-      "50": 46.4,
-      "60": 45.9
+      "20": 24.3,
+      "30": 30.1,
+      "40": 35.6,
+      "50": 38.6,
+      "60": 40.1
      },
      "cand-affliction-r8": {
-      "20": 31.2,
-      "30": 39.9,
-      "40": 45.0,
-      "50": 48.1,
-      "60": 47.6
+      "20": 23.8,
+      "30": 30.1,
+      "40": 36.1,
+      "50": 39.4,
+      "60": 43.6
      },
      "cand-affliction-r9": {
-      "20": 31.2,
-      "30": 38.8,
-      "40": 43.3,
-      "50": 40.9,
-      "60": 37.0
+      "20": 23.5,
+      "30": 29.7,
+      "40": 34.8,
+      "50": 35.9,
+      "60": 34.2
      }
     },
     "mean": {
-     "leveling-affliction": 39.14,
-     "cand-affliction-hand-2026-09-28": 38.214999999999996,
-     "cand-affliction-r1": 45.275,
-     "cand-affliction-r10": 39.61,
-     "cand-affliction-r11": 39.61,
-     "cand-affliction-r12": 38.53,
-     "cand-affliction-r2": 39.019999999999996,
-     "cand-affliction-r3": 38.55,
-     "cand-affliction-r4": 39.095,
-     "cand-affliction-r5": 39.605000000000004,
-     "cand-affliction-r6": 39.089999999999996,
-     "cand-affliction-r7": 43.445,
-     "cand-affliction-r8": 44.410000000000004,
-     "cand-affliction-r9": 38.925
+     "leveling-affliction": 32.615,
+     "cand-affliction-hand-2026-09-28": 32.5,
+     "cand-affliction-r1": 37.155,
+     "cand-affliction-r10": 33.58,
+     "cand-affliction-r11": 33.58,
+     "cand-affliction-r12": 32.53,
+     "cand-affliction-r2": 32.85,
+     "cand-affliction-r3": 32.535000000000004,
+     "cand-affliction-r4": 32.935,
+     "cand-affliction-r5": 33.535000000000004,
+     "cand-affliction-r6": 32.97,
+     "cand-affliction-r7": 35.745,
+     "cand-affliction-r8": 37.045,
+     "cand-affliction-r9": 33.0
     },
     "winner": "cand-affliction-hand-2026-09-28",
-    "gain_vs_hand": 0.0236,
-    "recommended": "cand-affliction-hand-2026-09-28",
+    "gain_vs_hand": 0.0035,
+    "recommended": "leveling-affliction",
     "margin": 0.02,
     "candidate_files": {
      "cand-affliction-hand-2026-09-28": "F:\\wow-forever\\warlock\\research\\leveling\\fightlab\\candidates\\cand-affliction-hand-2026-09-28.json",
@@ -1927,18 +1927,18 @@
    ],
    "converged": true,
    "time_per_kill": {
-    "20": 30.6,
-    "30": 38.9,
-    "40": 42.5,
-    "50": 39.8,
-    "60": 36.6
+    "20": 23.6,
+    "30": 29.5,
+    "40": 34.4,
+    "50": 35.2,
+    "60": 33.6
    },
    "hand_time_per_kill": {
-    "20": 31.6,
-    "30": 39.1,
-    "40": 42.1,
-    "50": 40.6,
-    "60": 38.4
+    "20": 24.0,
+    "30": 29.1,
+    "40": 33.6,
+    "50": 35.2,
+    "60": 34.5
    },
    "classic": {
     "sb-raid": {
@@ -4078,7 +4078,7 @@
    "spec": "ret-dps",
    "hand": "leveling-retribution",
    "opt": "opt-ret-dps-leveling-st",
-   "started": "2026-11-16T00:39:23",
+   "started": "2026-11-16T08:20:11",
    "steps": [
     "race",
     "report"
@@ -4289,18 +4289,18 @@
      "environments": null
     }
    },
-   "seconds": 222,
+   "seconds": 230,
    "log": [
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py paladin --spec ret-dps --build leveling-retribution --compare --levels 20,30,40,50,60 --fights 1000",
      "rc": 0,
-     "seconds": 11,
+     "seconds": 12,
      "tail": [
       "== paladin ret-dps leveling-retribution: 1000 fights per level, seed 1",
-      "L20: fight 10.6s (median 11.3, p90 14.8), downtime 0.3s, deaths/100 0.0, time/kill 18.9s, 190 kills/h, mana/kill 31, shares Melee 45%, Judgement 25%, Seal of Command 16%, Holy Strike 13%",
-      "L30: fight 12.3s (median 11.7, p90 17.4), downtime 1.1s, deaths/100 0.0, time/kill 21.5s, 168 kills/h, mana/kill 63, shares Melee 43%, Judgement 25%, Seal of Command 16%, Holy Strike 16%",
-      "L40: fight 15.7s (median 15.2, p90 21.6), downtime 2.4s, deaths/100 0.0, time/kill 26.1s, 138 kills/h, mana/kill 90, shares Melee 40%, Judgement 25%, Seal of Command 18%, Holy Strike 17%",
-      "L50: fight 16.9s (median 17.2, p90 22.2), downtime 2.7s, deaths/100 0.0, time/kill 27.6s, 130 kills/h, mana/kill 103, shares Melee 39%, Judgement 23%, Holy Strike 19%, Seal of Command 19%",
+      "L20: fight 11.6s (median 11.4, p90 15.2), downtime 0.5s, deaths/100 0.0, time/kill 20.0s, 180 kills/h, mana/kill 27, shares Melee 49%, Judgement 19%, Seal of Command 18%, Holy Strike 14%",
+      "L30: fight 13.3s (median 12.0, p90 18.2), downtime 1.3s, deaths/100 0.0, time/kill 22.6s, 159 kills/h, mana/kill 61, shares Melee 46%, Judgement 20%, Holy Strike 17%, Seal of Command 17%",
+      "L40: fight 16.4s (median 15.6, p90 22.2), downtime 2.6s, deaths/100 0.0, time/kill 27.0s, 133 kills/h, mana/kill 89, shares Melee 42%, Judgement 21%, Seal of Command 19%, Holy Strike 18%",
+      "L50: fight 17.5s (median 18.2, p90 22.7), downtime 2.8s, deaths/100 0.0, time/kill 28.3s, 127 kills/h, mana/kill 103, shares Melee 40%, Judgement 20%, Seal of Command 20%, Holy Strike 20%",
       "L60: fight 19.6s (median 18.7, p90 25.5), downtime 2.5s, deaths/100 0.0, time/kill 30.1s, 120 kills/h, mana/kill 63, shares Melee 37%, Judgement 23%, Holy Strike 21%, Seal of Command 20%",
       "done in 11s"
      ],
@@ -4309,7 +4309,7 @@
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py paladin --spec ret-dps --build opt-ret-dps-leveling-st --compare leveling-retribution --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --gear-tiers --write",
      "rc": 0,
-     "seconds": 211,
+     "seconds": 219,
      "tail": [
       "   Repentance               1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.5%",
       "   Reverence                2  sim   +2.4% (fight   +0.6% +-0.4)  EV   +0.4%",
@@ -4321,7 +4321,7 @@
       "   Two-Handed Weapon Specialization 3  sim   +4.8% (fight   +6.4% +-0.4)  EV   +2.5%",
       "   Vengeance                3  sim   +5.5% (fight   +7.7% +-0.4)  EV   +3.8%",
       "   Vindication              3  sim   +2.5% (fight   +0.3% +-0.4)  EV   +1.1%",
-      "done in 211s",
+      "done in 218s",
       "wrote F:\\wow-forever\\paladin\\research\\leveling\\fightlab\\ret-dps.md"
      ],
      "stderr": []
@@ -4331,15 +4331,15 @@
    "race": {
     "time_per_kill": {
      "leveling-retribution": {
-      "20": 18.9,
-      "30": 21.5,
-      "40": 26.1,
-      "50": 27.6,
+      "20": 20.0,
+      "30": 22.6,
+      "40": 27.0,
+      "50": 28.3,
       "60": 30.1
      }
     },
     "mean": {
-     "leveling-retribution": 26.264999999999997
+     "leveling-retribution": 26.895
     },
     "winner": "leveling-retribution",
     "gain_vs_hand": 0.0,
@@ -4447,17 +4447,17 @@
    ],
    "converged": true,
    "time_per_kill": {
-    "20": 19.0,
-    "30": 21.4,
-    "40": 26.0,
-    "50": 27.4,
+    "20": 20.1,
+    "30": 22.4,
+    "40": 26.9,
+    "50": 28.2,
     "60": 30.7
    },
    "hand_time_per_kill": {
-    "20": 19.0,
-    "30": 21.4,
-    "40": 26.0,
-    "50": 27.4,
+    "20": 20.1,
+    "30": 22.4,
+    "40": 26.9,
+    "50": 28.2,
     "60": 30.0
    },
    "classic": {
@@ -5781,11 +5781,9 @@
   }
  },
  "last_run": {
-  "date": "2026-11-16T02:48:34",
+  "date": "2026-11-16T13:10:07",
   "classes": [
-   "rogue",
-   "shaman",
-   "paladin"
+   "warlock"
   ],
   "steps": [
    "regen"
@@ -5796,87 +5794,71 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 666,
+  "seconds": 188,
   "refresh": null,
   "regen_log": [
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_trees.py rogue shaman paladin",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_trees.py warlock",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote F:\\wow-forever\\paladin\\research\\talents\\forever\\talent-trees.md",
-     "wrote F:\\wow-forever\\rogue\\research\\talents\\forever\\talent-trees.md",
-     "wrote F:\\wow-forever\\shaman\\research\\talents\\forever\\talent-trees.md"
+     "wrote F:\\wow-forever\\warlock\\research\\talents\\forever\\talent-trees.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py rogue shaman paladin",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py warlock",
     "rc": 0,
     "seconds": 1,
     "tail": [
-     "formatted F:\\wow-forever\\rogue\\research\\talents\\forever\\proposed-builds.json",
-     "formatted F:\\wow-forever\\shaman\\research\\talents\\forever\\proposed-builds.json",
-     "formatted F:\\wow-forever\\paladin\\research\\talents\\forever\\proposed-builds.json",
-     "rogue: README section + leveling-combat-swords note written",
-     "shaman: README section + leveling-enhancement note written",
-     "paladin: README section + leveling-retribution note written"
+     "formatted F:\\wow-forever\\warlock\\research\\talents\\forever\\proposed-builds.json",
+     "warlock: README section + leveling-affliction note written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py rogue shaman paladin",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py warlock",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "paladin: raid sim section written (3 specs)",
-     "rogue: raid sim section written (4 specs)",
-     "shaman: raid sim section written (3 specs)",
+     "warlock: raid sim section written (5 specs)",
      "wrote _reference\\raidsim-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py rogue shaman paladin",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py warlock",
     "rc": 0,
     "seconds": 1,
     "tail": [
-     "paladin: healer lab section written (1 specs)",
-     "shaman: healer lab section written (1 specs)",
      "wrote _reference\\heallab-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py rogue shaman paladin",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py warlock",
     "rc": 0,
     "seconds": 1,
     "tail": [
-     "rogue: leveling/guide.md written (combat-open-leveling)",
-     "shaman: leveling/guide.md written (enhancement-open-leveling)",
-     "paladin: leveling/guide.md written (prot-ret-open-leveling)"
+     "warlock: leveling/guide.md written (affliction-demonology-open-leveling)"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py rogue shaman paladin",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py warlock",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
-     "rogue: raid gear and consumables written",
-     "shaman: raid gear and consumables written",
-     "paladin: raid gear and consumables written"
+     "warlock: raid gear and consumables written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py rogue shaman paladin",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py warlock",
     "rc": 0,
     "seconds": 1,
     "tail": [
-     "rogue: raid and leveling rotations, DPS ranking written",
-     "shaman: raid and leveling rotations, DPS ranking written",
-     "paladin: raid and leveling rotations, DPS ranking written"
+     "warlock: raid and leveling rotations, DPS ranking written"
     ],
     "stderr": []
    },
@@ -5903,7 +5885,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_builds.py",
     "rc": 0,
-    "seconds": 3,
+    "seconds": 2,
     "tail": [
      "rogue/classic-baseline: 5 build pages + README.md",
      "rogue: 30 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
@@ -5921,30 +5903,30 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py rogue shaman paladin",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py warlock",
     "rc": 0,
     "seconds": 1,
     "tail": [
      "wrote _reference\\new-builds-survey.md",
-     "wrote the New spells and builds section of 3 raid READMEs"
+     "wrote the New spells and builds section of 1 raid READMEs"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\signature_audit.py rogue shaman paladin --write --no-default",
+    "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\signature_audit.py warlock --write --no-default",
     "rc": 0,
-    "seconds": 29,
+    "seconds": 69,
     "tail": [
-     "  Retribution [slot: opt-ret-dps-leveling-st 10/11/30] ret-dps (tuned): casts/kill at 60 {'Judgement': 2.82}, core 100% (min 60%), 26.5 s/kill; rules: -; OK",
-     "      shares at 60: {'Melee': 0.371, 'Holy Strike': 0.222, 'Judgement': 0.216, 'Seal of Command': 0.191}",
-     "  Shockadin [page: shockadin-open-leveling 22/0/29] holy-leveling (tuned): casts/kill at 60 {'Holy Shock': 1.97}, core 26% (min 12%), 30.7 s/kill; rules: -; OK",
-     "      shares at 60: {'Holy Shock': 0.255, 'Judgement': 0.202, 'Melee': 0.175, 'Hammer of Wrath': 0.156, 'Holy Strike': 0.118, 'Seal of Command': 0.094}",
-     "  Prot-Ret [page: prot-ret-open-leveling 12/16/23] ret-dps (tuned): casts/kill at 60 {'Judgement': 3.05}, core 100% (min 60%), 26.0 s/kill; rules: -; OK",
-     "      shares at 60: {'Melee': 0.364, 'Judgement': 0.24, 'Holy Strike': 0.213, 'Seal of Command': 0.183}",
-     "  Prot-Ret [slot: opt-ret-dps-solo-60 8/19/24] ret-dps (tuned): casts/kill at 60 {'Judgement': 3.24}, core 100% (min 60%), 26.6 s/kill; rules: -; OK",
-     "      shares at 60: {'Melee': 0.366, 'Judgement': 0.242, 'Holy Strike': 0.212, 'Seal of Command': 0.18}",
-     "  Prot-Ret [slot: opt-ret-dps-leveling-aoe 8/14/29] ret-dps (tuned): casts/kill at 60 {'Judgement': 2.87}, core 100% (min 60%), 26.4 s/kill; rules: -; OK",
-     "      shares at 60: {'Melee': 0.376, 'Holy Strike': 0.221, 'Judgement': 0.216, 'Seal of Command': 0.187}",
+     "  Affliction-Demonology [page: affliction-demonology-open-leveling 27/24/0] demonology-leveling (tuned): casts/kill at 60 {'Corruption': 1.04}, core 71% (min 50%), 30.4 s/kill; rules: -; OK",
+     "      shares at 60: {'Wand': 0.239, 'Bane of Agony': 0.208, 'Corruption': 0.207, 'Voidwalker melee': 0.135, 'Siphon Life': 0.087, 'Demonic Brand': 0.077}",
+     "  Affliction-Demonology [slot: opt-affliction-leveling-leveling-st 27/24/0] demonology-leveling (tuned): casts/kill at 60 {'Corruption': 1.14}, core 68% (min 50%), 32.7 s/kill; rules: -; OK",
+     "      shares at 60: {'Wand': 0.255, 'Bane of Agony': 0.225, 'Corruption': 0.219, 'Voidwalker melee': 0.138, 'Siphon Life': 0.098, 'Immolate': 0.062}",
+     "  Affliction-Demonology [slot: leveling-affliction 23/26/2] demonology-leveling (tuned): casts/kill at 60 {'Corruption': 1.26}, core 69% (min 50%), 32.8 s/kill; rules: -; OK",
+     "      shares at 60: {'Wand': 0.264, 'Corruption': 0.222, 'Bane of Agony': 0.221, 'Voidwalker melee': 0.137, 'Siphon Life': 0.1, 'Immolate': 0.05}",
+     "  Affliction-Demonology [slot: opt-affliction-leveling-solo-60 27/24/0] demonology-leveling (tuned): casts/kill at 60 {'Corruption': 1.14}, core 68% (min 50%), 32.7 s/kill; rules: -; OK",
+     "      shares at 60: {'Wand': 0.255, 'Bane of Agony': 0.225, 'Corruption': 0.219, 'Voidwalker melee': 0.138, 'Siphon Life': 0.098, 'Immolate': 0.062}",
+     "  Affliction-Demonology [slot: opt-affliction-leveling-leveling-aoe 21/24/6] demonology-leveling (tuned): casts/kill at 60 {'Corruption': 1.28}, core 69% (min 50%), 33.6 s/kill; rules: -; OK",
+     "      shares at 60: {'Wand': 0.284, 'Corruption': 0.229, 'Bane of Agony': 0.213, 'Voidwalker melee': 0.134, 'Siphon Life': 0.106, 'Immolate': 0.021}",
      "wrote _reference\\signature-audit.md",
      "wrote _reference\\data\\fightlab\\signature-audit.json"
     ],
@@ -5953,7 +5935,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_modes.py",
     "rc": 0,
-    "seconds": 15,
+    "seconds": 13,
     "tail": [
      "druid: README.md sections and 3 mode folders written",
      "hunter: README.md sections and 3 mode folders written",
@@ -5978,55 +5960,15 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py rogue --write",
+    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py warlock --write",
     "rc": 0,
-    "seconds": 238,
+    "seconds": 88,
     "tail": [
-     "| combat-daggers-raid -> level-20 build (0/9/2) | +1.6% | +3.6% | +14.1% | +16.1% | +20.2% | +23.3% | +25.2% | +27.5% | +29.5% | +30.7% | +32.1% |",
-     "| combat-daggers-raid -> level-30 build (0/19/2) | +1.6% | +3.6% | +14.1% | +15.9% | +21.4% | +23.6% | +25.8% | +27.6% | +29.5% | +30.7% | +32.3% |",
-     "| combat-daggers-raid -> level-40 build (8/21/2) | +1.6% | +4.6% | +8.0% | +11.7% | +19.2% | +23.3% | +25.9% | +27.6% | +29.5% | +30.7% | +32.3% |",
-     "| combat-daggers-raid -> level-50 build (8/31/2) | +0.1% | +4.0% | +12.4% | +15.4% | +19.4% | +23.5% | +25.3% | +27.6% | +29.5% | +30.7% | +32.3% |",
-     "| combat-daggers-raid -> level-60 build (31/18/2) | +1.6% | +4.6% | +8.1% | +9.4% | +10.4% | +12.8% | +19.5% | +24.2% | +27.1% | +29.1% | +34.1% |",
-     "",
-     "## Reading it",
-     "",
-     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
-     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
-     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
-     ""
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py shaman --write",
-    "rc": 0,
-    "seconds": 228,
-    "tail": [
-     "| elemental-dps -> level-20 build (11/0/0) | +1.5% | +7.5% | +15.0% | +16.4% | +17.3% | +21.4% | +24.4% | +30.2% | +34.4% | +35.9% | +37.1% |",
-     "| elemental-dps -> level-30 build (12/1/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.4% | +24.7% | +27.4% | +28.6% | +33.1% | +35.9% | +37.1% |",
-     "| elemental-dps -> level-40 build (12/11/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.4% | +24.7% | +27.4% | +28.6% | +33.1% | +35.9% | +37.1% |",
-     "| elemental-dps -> level-50 build (11/22/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.1% | +24.5% | +27.2% | +30.6% | +34.4% | +35.9% | +37.1% |",
-     "| elemental-dps -> level-60 build (21/22/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.4% | +24.7% | +25.9% | +27.6% | +30.2% | +33.6% | +37.3% |",
-     "",
-     "## Reading it",
-     "",
-     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
-     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
-     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
-     ""
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py paladin --write",
-    "rc": 0,
-    "seconds": 138,
-    "tail": [
-     "| ret-dps -> level-20 build (0/0/11) | +1.4% | +7.5% | +17.6% | +23.1% | +26.5% | +29.3% | +33.0% | +32.6% | +35.6% | +37.1% | +39.4% |",
-     "| ret-dps -> level-30 build (0/0/21) | +1.4% | +7.5% | +17.6% | +23.1% | +26.5% | +29.3% | +33.0% | +32.6% | +35.6% | +37.1% | +39.4% |",
-     "| ret-dps -> level-40 build (8/0/23) | +1.4% | +7.5% | +17.6% | +23.1% | +26.5% | +29.3% | +33.0% | +33.0% | +34.6% | +37.1% | +39.8% |",
-     "| ret-dps -> level-50 build (8/8/25) | +1.4% | +7.5% | +17.6% | +23.1% | +26.5% | +29.3% | +33.0% | +32.7% | +35.6% | +37.1% | +39.8% |",
-     "| ret-dps -> level-60 build (8/16/27) | +1.4% | +7.5% | +17.6% | +23.1% | +26.5% | +29.3% | +33.0% | +33.0% | +34.6% | +37.1% | +39.8% |",
+     "| affliction-leveling -> level-20 build (11/0/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +25.7% |",
+     "| affliction-leveling -> level-30 build (21/0/0) | +1.2% | +5.2% | +7.7% | +9.3% | +16.9% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +25.7% |",
+     "| affliction-leveling -> level-40 build (31/0/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +25.9% |",
+     "| affliction-leveling -> level-50 build (32/9/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +26.0% |",
+     "| affliction-leveling -> level-60 build (27/24/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +20.3% | +22.4% | +22.5% | +22.7% | +28.3% |",
      "",
      "## Reading it",
      "",
@@ -6040,7 +5982,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_optimizer_sections.py",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
      "updated hunter/leveling/README.md and hunter/raid/README.md",
      "updated mage/leveling/README.md and mage/raid/README.md",
@@ -6119,7 +6061,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_report_index.py",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 5,
     "tail": [
      "druid: leveling 3, raid 16, classic 10",
      "hunter: leveling 6, raid 14, classic 5",

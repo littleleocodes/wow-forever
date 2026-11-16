@@ -10,7 +10,7 @@
 
 **[Affliction-Demonology — Leveling](../research/leveling/builds/affliction-demonology-open-leveling.md)** (27/24/0) — [open the talent tree](https://talentsforever.com/warlock/60/2551002013500102-00250332011003013--12)
 
-> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Affliction DoTs with a Voidwalker). A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Affliction DoTs with a Voidwalker), which stays below as the alternative. A model of the beta, to check at launch.
 
 **Signature spells:** 71% of the damage at level 60 in the fight lab comes from the spec's core spells (Corruption, Bane of Agony, Siphon Life, your pet; this build never casts Drain Life, Wrack) (the spec's rule: at least 50%; **Corruption** cast at level 60).
 
@@ -101,7 +101,8 @@ One point per level from 10, in this order:
 
 ## Other builds of this spec
 
-- [Affliction-Demonology (optimized, solo at 60)](../research/leveling/builds/opt-affliction-leveling-solo-60.md) (27/24/0) — [open the talent tree](https://talentsforever.com/warlock/60/2550002013500112-03450302010200013--12)
+- [Affliction-Demonology (optimized)](../research/leveling/builds/opt-affliction-leveling-leveling-st.md) (27/24/0, 33 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warlock/60/2550002013500112-03450302010200013--12)
+- [Leveling — Affliction DoTs with a Voidwalker](../research/leveling/builds/leveling-affliction.md) (23/26/2, 33 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warlock/60/23500020135011-20050302312110213-2-12)
 - [Affliction-Demonology (optimized, AoE pulls)](../research/leveling/builds/opt-affliction-leveling-leveling-aoe.md) (21/24/6) — [open the talent tree](https://talentsforever.com/warlock/60/05500020035001-00552031012010013-0051-12)
 
 ---

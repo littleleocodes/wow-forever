@@ -64,7 +64,7 @@
 
 | Talent | Pts | Requires | vs Classic | Rank 1 | Max rank |
 |---|---|---|---|---|---|
-| **Wrack** | 1 | Siphon Life (1) | **NEW** | Tears the target apart from within, inflicting 86 Shadow damage every 1 sec and increasing the damage they take from your other Shadow damage over time effects by 10% for 6 sec. | — |
+| **Wrack** | 1 | Siphon Life (1) | **NEW** | Tears the target apart from within for 6 sec, inflicting 60 Shadow damage every 1 sec. While channeling, your Siphon Life, Corruption, and Bane of Agony effects on the target deal their periodic damage 100% faster. | — |
 
 **Removed from Classic Affliction:** Improved Curse of Weakness, Improved Drain Soul, Improved Drain Life, Improved Curse of Agony, Improved Drain Mana, Improved Curse of Exhaustion, Dark Pact
 

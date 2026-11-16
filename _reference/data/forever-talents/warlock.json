@@ -35,7 +35,9 @@
       "build": "1.60.1.70753"
     }
   ],
-  "merge_notes": [],
+  "merge_notes": [
+    "live hotfix of 2026-11-10 written into Wrack (hotfix_text.py; source https://us.forums.blizzard.com/en/wow/t/2403040, https://www.wowhead.com/forever/spell=1316697; applied 2026-11-16)"
+  ],
   "trees": [
     {
       "id": "affliction",
@@ -390,7 +392,7 @@
           "icon": "ability_deathknight_hemorrhagicfever",
           "maxRank": 1,
           "ranks": [
-            "Tears the target apart from within, inflicting 86 Shadow damage every 1 sec and increasing the damage they take from your other Shadow damage over time effects by 10% for 6 sec."
+            "Tears the target apart from within for 6 sec, inflicting 60 Shadow damage every 1 sec. While channeling, your Siphon Life, Corruption, and Bane of Agony effects on the target deal their periodic damage 100% faster."
           ],
           "status": "new",
           "ranks_prev": [
@@ -403,6 +405,19 @@
           "prereq": {
             "id": "affliction/siphon-life",
             "rank": 1
+          },
+          "hotfix": {
+            "date": "2026-11-10",
+            "sources": [
+              "https://us.forums.blizzard.com/en/wow/t/2403040",
+              "https://www.wowhead.com/forever/spell=1316697"
+            ],
+            "ranks": [
+              1
+            ],
+            "before": {
+              "1": "Tears the target apart from within, inflicting 86 Shadow damage every 1 sec and increasing the damage they take from your other Shadow damage over time effects by 10% for 6 sec."
+            }
           }
         }
       ],

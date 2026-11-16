@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Affliction-Demonology (an Affliction/Demonology hybrid) leveling build the open leveling search found on 2026-11-08: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the demonology-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). +2.2% faster per kill than demonology-leveling, the fastest of our leveling builds in that race.
+The Affliction-Demonology (an Affliction/Demonology hybrid) leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the demonology-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). +2.2% faster per kill than demonology-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -101,9 +101,9 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Notes
 
 - 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Demonic Embrace to Fel Vitality at 24 (gate: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill); Improved Health Funnel to Fel Vitality at 20 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Embrace to Fel Vitality at 23 (gate: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill).
-- +28.5% faster than the hand draft leveling-affliction, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
+- +28.4% faster than the hand draft leveling-affliction, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 30.47; demonology-leveling 31.14. The search simulated 36,200 builds.
-- The spec's other leveling builds on the pages: opt-affliction-leveling-leveling-st 38.34 s, leveling-affliction 39.16 s.
+- The spec's other leveling builds on the pages: opt-affliction-leveling-leveling-st 38.35 s, leveling-affliction 39.12 s.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)

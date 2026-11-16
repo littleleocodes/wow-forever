@@ -1,7 +1,8 @@
 {
  "veto": {
   "Shadow Bolt": {
-   "min_hp": 0.35
+   "min_hp": 0.35,
+   "off": true
   },
   "Curse of the Elements": {
    "off": true
@@ -9,11 +10,17 @@
   "Corruption": {
    "min_hp": 0.35,
    "min_mana": 0.15
+  },
+  "Wrack": {
+   "min_mana": 0.3
+  },
+  "Fear": {
+   "off": true
   }
  },
  "class": "warlock",
  "spec": "affliction-leveling",
- "build": "leveling-affliction",
+ "build": "affliction-open-leveling",
  "levels": [
   20,
   30,
@@ -21,99 +28,99 @@
   50,
   60
  ],
- "date": "2026-11-04",
+ "date": "2026-11-16",
  "signature": {
   "required": [
    "Bane of Agony",
    "Corruption"
   ],
-  "build_spec": "Hybrid Affliction/Demonology",
+  "build_spec": "Affliction",
   "dropped_saved_rules": [],
-  "core_share_before": 0.6091350365729438,
-  "core_share_after": 0.6493901429242953,
+  "core_share_before": 0.8741635958660923,
+  "core_share_after": 0.7054640034871614,
   "min_share": 0.5,
-  "floor_reached": null
+  "floor_reached": null,
+  "played_before": true,
+  "played_after": true
  },
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "Shadow Bolt only while the mob has more than 35% health",
+   "change": "never cast Shadow Bolt",
    "rule": [
-    "min_hp",
+    "off",
     "Shadow Bolt",
-    0.35
+    true
    ],
-   "gain_seed1": 0.06340976404981569,
-   "gain_seed2": 0.06538846842960977
+   "gain_seed1": 0.06551411158807974,
+   "gain_seed2": 0.06556116933300549
   },
   {
    "round": 2,
-   "change": "never cast Curse of the Elements",
+   "change": "Wrack only above 30% mana",
    "rule": [
-    "off",
-    "Curse of the Elements",
-    true
+    "min_mana",
+    "Wrack",
+    0.3
    ],
-   "gain_seed1": 0.029668488348027378,
-   "gain_seed2": 0.021521370118482874
+   "gain_seed1": 0.027670095461551525,
+   "gain_seed2": 0.0302747383445926
   },
   {
    "round": 3,
-   "change": "Corruption only while the mob has more than 35% health",
+   "change": "never cast Fear",
    "rule": [
-    "min_hp",
-    "Corruption",
-    0.35
+    "off",
+    "Fear",
+    true
    ],
-   "gain_seed1": 0.021639383134226198,
-   "gain_seed2": 0.02204988648020345
-  },
-  {
-   "round": 4,
-   "change": "Corruption only above 15% mana",
-   "rule": [
-    "min_mana",
-    "Corruption",
-    0.15
-   ],
-   "gain_seed1": 0.00982032746957695,
-   "gain_seed2": 0.009654771953190311
+   "gain_seed1": 0.0066662221554194545,
+   "gain_seed2": 0.00788476750662881
   }
  ],
- "weighted_before": 43.98862668952272,
- "weighted_after": 38.992033276284886,
+ "weighted_before": 34.076818916968065,
+ "weighted_after": 30.61063352675343,
  "per_level": {
   "20": {
-   "before": 35.92324945393529,
-   "after": 31.498227185646936,
+   "before": 30.59389955547047,
+   "after": 23.535266666583556,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 45.75522267378284,
-   "after": 38.852939859754535,
+   "before": 38.78169042893999,
+   "after": 28.60173333343809,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 47.94281358227342,
-   "after": 42.20242266660631,
+   "before": 35.05230653677491,
+   "after": 32.10429419855539,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 45.45476449694468,
-   "after": 40.67532823469735,
+   "before": 34.06068193190747,
+   "after": 32.11055443775438,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 41.93588167456971,
-   "after": 38.01650995587136,
+   "before": 32.24847868916058,
+   "after": 31.727831369765617,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
+ },
+ "retune": {
+  "times": {
+   "saved": 34.077,
+   "from scratch": 32.816,
+   "continued": 30.611
+  },
+  "installed": "continued",
+  "reference_ok": true
  }
 }

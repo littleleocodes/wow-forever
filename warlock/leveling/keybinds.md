@@ -69,8 +69,10 @@ Free slots stay free until something earns them.
 
 Each spec's level-by-level guide has its own keybinds table. They keep the keys above for every spell they share with Demonology:
 
-- [Affliction](affliction-by-level.md): Mouse 5 holds Wrack (40) where Demonology keeps Searing Pain. R, E and F matter more here: it casts Fear and Drain Life when a mob reaches you. The Amplify Curse macro takes 1 at
-  20 and Siphon Life takes 3 at 34. Q's Shadow Bolt is the main nuke until 40.
+- [Affliction](affliction-by-level.md): Mouse 5 holds Wrack (40) where Demonology keeps Searing Pain. The tuned rules of
+  2026-11-16 cast no Shadow Bolt and no Fear: Q's Shadow Bolt is for the levels before you own a wand, E's Fear for a pull that
+  brings a second mob. The Amplify Curse macro takes 1 at 20 and Siphon Life takes 3 at 34; key 2's Immolate goes quiet from 40,
+  when Wrack takes its mana. R's Drain Life is the heal, F's Death Coil the save.
 - [Destruction](destruction-by-level.md): Mouse 4's pull macro casts Shadow Bolt in place of Corruption, from 10 (the fight lab opens with
   a bolt while the Voidwalker takes the mob, then Immolate). R holds Conflagrate (32) and Mouse 5 Shadowburn (31): the tuned rules of
   2026-11-07 never cast Drain Life, Searing Pain or Fear. 1 and 3 stay free (no Affliction dots). E keeps Fear for a pull that brings a

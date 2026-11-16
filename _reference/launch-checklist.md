@@ -421,6 +421,12 @@
 **Prot-Ret — Raid (machine-learning search)** (`paladin/research/raid/builds/prot-ret-ml-raid.md`)
 - [ ] A machine-searched Prot-Ret build: check it against the community's Prot-Ret builds at launch.
 
+**Holy — Leveling into the raid build** (`paladin/research/leveling/builds/holy-leveling.md`)
+- [ ] Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
+
+**Protection — Leveling into the raid build** (`paladin/research/leveling/builds/protection-leveling.md`)
+- [ ] Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
+
 **Shockadin — Leveling (open talent search)** (`paladin/research/leveling/builds/shockadin-open-leveling.md`)
 - [ ] An open-search Shockadin leveling build: check it while leveling at launch.
 
@@ -429,12 +435,6 @@
 
 **Prot-Ret — Leveling (open talent search)** (`paladin/research/leveling/builds/prot-ret-open-leveling.md`)
 - [ ] An open-search Prot-Ret leveling build: check it while leveling at launch.
-
-**Holy — Leveling into the raid build** (`paladin/research/leveling/builds/holy-leveling.md`)
-- [ ] Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
-
-**Protection — Leveling into the raid build** (`paladin/research/leveling/builds/protection-leveling.md`)
-- [ ] Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 
 ### Priest
 

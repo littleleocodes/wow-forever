@@ -8,11 +8,11 @@
 |---|---|---|---|---|---|---|---|---|---|
 | mage | `frost-leveling` | `opt-frost-leveling-leveling-st` | - | 27.3 | 34.5 | 35.3 | 29.8 | 26.8 | 134 |
 | priest | `shadow-dps` | `opt-shadow-dps-leveling-st` | - | 31.0 | 37.8 | 38.8 | 36.6 | 21.2 | 170 |
-| warlock | `affliction-leveling` | `opt-affliction-leveling-leveling-st` | - | 30.6 | 38.9 | 42.5 | 39.8 | 36.6 | 98 |
+| warlock | `affliction-leveling` | `opt-affliction-leveling-leveling-st` | - | 23.6 | 29.5 | 34.4 | 35.2 | 33.6 | 107 |
 | hunter | `bm-leveling` | `opt-bm-leveling-leveling-st` | - | 15.6 | 19.9 | 23.0 | 24.9 | 25.7 | 140 |
 | warrior | `arms-2h-raid` | `opt-arms-2h-raid-leveling-st` | - | 22.5 | 22.7 | 24.2 | 25.2 | 28.4 | 127 |
 | rogue | `combat-swords-raid` | `opt-combat-swords-raid-leveling-st` | - | 18.2 | 20.0 | 23.4 | 23.7 | 24.2 | 148 |
-| paladin | `ret-dps` | `opt-ret-dps-leveling-st` | - | 19.0 | 21.4 | 26.0 | 27.4 | 30.7 | 117 |
+| paladin | `ret-dps` | `opt-ret-dps-leveling-st` | - | 20.1 | 22.4 | 26.9 | 28.2 | 30.7 | 117 |
 | shaman | `enhancement-dps` | `opt-enhancement-dps-leveling-st` | - | 21.1 | 25.4 | 28.0 | 29.5 | 28.9 | 124 |
 | druid | `feral-cat-dps` | `opt-feral-cat-dps-leveling-st` | 31.1 | 21.6 | 24.0 | 26.4 | 26.4 | 28.1 | 128 |
 
@@ -22,11 +22,11 @@
 |---|---|---|---|---|---|---|---|---|
 | mage | `leveling-frost` | - | 27.3 (+0%) | 34.5 (+0%) | 34.3 (-3%) | 29.6 (-0%) | 27.2 (+1%) | leveling-frost |
 | priest | `leveling-shadow` | - | 34.3 (+11%) | 36.6 (-3%) | 22.9 (-41%) | 22.4 (-39%) | 23.0 (+9%) | cand-shadow-r4 |
-| warlock | `leveling-affliction` | - | 31.6 (+3%) | 39.1 (+1%) | 42.1 (-1%) | 40.6 (+2%) | 38.4 (+5%) | cand-affliction-hand-2026-09-28 |
+| warlock | `leveling-affliction` | - | 24.0 (+2%) | 29.1 (-1%) | 33.6 (-2%) | 35.2 (-0%) | 34.5 (+3%) | cand-affliction-hand-2026-09-28 |
 | hunter | `leveling-beast-mastery` | - | 16.0 (+2%) | 20.2 (+1%) | 23.2 (+1%) | 25.3 (+2%) | 26.5 (+3%) | cand-bm-r6 |
 | warrior | `leveling-arms` | - | 22.4 (-0%) | 22.6 (-0%) | 24.7 (+2%) | 25.7 (+2%) | 28.2 (-1%) | leveling-arms |
 | rogue | `leveling-combat-swords` | - | 18.9 (+3%) | 22.2 (+11%) | 25.0 (+7%) | 24.8 (+4%) | 23.1 (-5%) | leveling-combat-swords |
-| paladin | `leveling-retribution` | - | 19.0 (+0%) | 21.4 (+0%) | 26.0 (+0%) | 27.4 (+0%) | 30.0 (-2%) | leveling-retribution |
+| paladin | `leveling-retribution` | - | 20.1 (+0%) | 22.4 (+0%) | 26.9 (+0%) | 28.2 (+0%) | 30.0 (-2%) | leveling-retribution |
 | shaman | `leveling-enhancement` | - | 21.2 (+0%) | 25.5 (+0%) | 27.6 (-1%) | 28.3 (-4%) | 28.4 (-2%) | leveling-enhancement |
 | druid | `leveling-feral` | 31.1 (+0%) | 21.6 (+0%) | 24.0 (+0%) | 26.4 (+0%) | 26.4 (+0%) | 28.2 (+0%) | leveling-feral |
 
@@ -38,11 +38,11 @@ Positive = the hand draft is slower. The race winner is the fastest build over a
 |---|---|---|---|---|---|---|---|---|
 | mage | 0.0 | 0.0 | 9.0s | 4.4s | 17.5s | 14.4s | 16% | 0.08 |
 | priest | 0.0 | 0.0 | 10.1s | 0.1s | 19.7s | 13.1s | 16% | 0.00 |
-| warlock | 0.0 | 0.0 | 11.4s | 5.4s | 19.5s | 23.2s | 16% | 0.00 |
+| warlock | 0.0 | 0.0 | 2.1s | 1.2s | 19.4s | 24.4s | 16% | 0.00 |
 | hunter | 0.0 | 0.0 | 2.5s | 3.2s | 9.4s | 14.5s | 16% | 0.00 |
 | warrior | 0.0 | 0.0 | 0.1s | 0.9s | 14.6s | 19.5s | 16% | 0.00 |
 | rogue | 0.0 | 0.0 | 0.4s | 1.7s | 11.6s | 14.6s | 16% | 0.00 |
-| paladin | 0.0 | 0.0 | 0.9s | 2.4s | 12.5s | 20.3s | 16% | 0.00 |
+| paladin | 0.0 | 0.0 | 1.1s | 2.4s | 13.4s | 20.3s | 16% | 0.00 |
 | shaman | 0.0 | 0.0 | 6.4s | 7.7s | 11.1s | 13.2s | 16% | 0.16 |
 | druid | 0.0 | 0.0 | 1.3s | 2.3s | 14.8s | 17.8s | 16% | 0.00 |
 
@@ -52,11 +52,11 @@ Positive = the hand draft is slower. The race winner is the fastest build over a
 |---|---|---|---|---|
 | mage | 34.5s | 29.5s (-15%) | 26.8s | 25.3s (-5%) |
 | priest | 37.8s | 30.1s (-20%) | 21.2s | 20.6s (-3%) |
-| warlock | 38.9s | 34.6s (-11%) | 36.6s | 35.8s (-2%) |
+| warlock | 29.5s | 26.5s (-10%) | 33.6s | 31.8s (-5%) |
 | hunter | 19.9s | 19.4s (-2%) | 25.7s | 25.0s (-3%) |
 | warrior | 22.7s | 20.4s (-10%) | 28.4s | 26.6s (-6%) |
 | rogue | 20.0s | 18.3s (-8%) | 24.2s | 23.3s (-4%) |
-| paladin | 21.4s | 19.2s (-10%) | 30.7s | 28.4s (-8%) |
+| paladin | 22.4s | 20.0s (-11%) | 30.7s | 28.4s (-8%) |
 | shaman | 25.4s | 23.0s (-10%) | 28.9s | 27.2s (-6%) |
 | druid | 24.0s | 21.6s (-10%) | 28.1s | 26.0s (-8%) |
 
@@ -66,25 +66,25 @@ Positive = the hand draft is slower. The race winner is the fastest build over a
 |---|---|---|---|
 | mage | Ice Lance +15%, Shatter +14%, Improved Frostbolt +8% | Shatter +15%, Ice Lance +12%, Ice Shards +8% | Arcane Blast, Arcane Resilience, Arcane Wrath, Ice Block, Improved Channeling, Magic Absorption, Missile Barrage |
 | priest | Spirit Tap +11%, Wand Specialization +5%, Twin Disciplines +3% | Shadowform +55%, Mind Flay +31%, Spirit Tap +20% | Blackout, Improved Mind Blast, Mental Agility, Mental Strength, Shadow Reach, Twilight Focus, Wand Specialization |
-| warlock | Suppression +2%, Improved Corruption +1%, Pandemic +1% | Siphon Life +9%, Suppression +7%, Demonic Knowledge +5% | Decimation, Demonic Embrace, Demonic Sacrifice, Improved Bane of Agony, Improved Imp |
+| warlock | Improved Corruption +2%, Suppression +2%, Improved Life Tap +1% | Siphon Life +6%, Demonic Knowledge +5%, Demonic Energies +4% | Decimation, Demonic Embrace, Demonic Sacrifice, Improved Imp, Soul Siphon |
 | hunter | Efficiency +4%, Lethal Attacks +2%, Careful Aim +1% | Unleashed Fury +4%, Efficiency +3%, Ferocity +3% | Barrage, Endurance Training, Rapid Killing, Scatter Shot, Sniper Shot |
 | warrior | Spearing Strike +8%, Bloodthrill +5%, Two-Handed Weapon Specialization +4% | Bloodthrill +7%, Cruelty +6%, Weaponmaster +6% | Deflection, Improved Hamstring, Improved Tactical Mastery, Spearing Strike, Sweeping Strikes |
 | rogue | Efficient Strikes +4%, Flawless Execution +3%, Riposte +3% | Flawless Execution +5%, Improved Poisons +5%, Coup de Grace +4% | Improved Expose Armor, Improved Gouge, Lightning Reflexes |
-| paladin | Sanctified Judgement +14%, Seal of Command +11%, Conviction +6% | Sanctified Judgement +10%, Conviction +9%, Vengeance +6% | Divine Intellect, Pursuit of Justice, Repentance, Sacred Duty, Templar's Bulwark |
+| paladin | Sanctified Judgement +13%, Seal of Command +7%, Conviction +5% | Sanctified Judgement +10%, Conviction +9%, Vengeance +6% | Divine Intellect, Pursuit of Justice, Repentance, Sacred Duty, Templar's Bulwark |
 | shaman | Shamanistic Focus +14%, Stormstrike +8%, Mental Dexterity +8% | Shamanistic Focus +16%, Stormstrike +6%, Tidal Focus +4% | Call of Flame, Earth's Grasp, Guardian Totems, Improved Ghost Wolf |
 | druid | Ferocity +5%, Predatory Strikes +5%, Sharpened Claws +4% | Naturalist +7%, Ferocity +6%, Sharpened Claws +5% | Furor, Nature's Focus |
 
 ## Last rebuild
 
-`rebuild.py` ran on 2026-11-16 for paladin (steps race, report; 3 min). Per class:
+`rebuild.py` ran on 2026-11-16 for warlock (steps regen; 6 min). Per class:
 
 - **mage**: 1 calibration round(s), converged; race leveling-frost 30.4s
 - **priest**: 1 calibration round(s), converged; race cand-shadow-r4 25.5s, leveling-shadow 26.1s, cand-shadow-r5 26.1s, cand-shadow-r6 26.3s, cand-shadow-r3 27.9s, cand-shadow-hand-2026-09-26 28.6s, cand-shadow-r1 28.9s, cand-shadow-r2 28.9s, cand-shadow-r7 29.5s, cand-shadow-r8 30.7s
-- **warlock**: 1 calibration round(s), converged; race cand-affliction-hand-2026-09-28 38.2s, cand-affliction-r12 38.5s, cand-affliction-r3 38.5s, cand-affliction-r9 38.9s, cand-affliction-r2 39.0s, cand-affliction-r6 39.1s, cand-affliction-r4 39.1s, leveling-affliction 39.1s, cand-affliction-r5 39.6s, cand-affliction-r10 39.6s, cand-affliction-r11 39.6s, cand-affliction-r7 43.4s, cand-affliction-r8 44.4s, cand-affliction-r1 45.3s
+- **warlock**: 1 calibration round(s), converged; race cand-affliction-hand-2026-09-28 32.5s, cand-affliction-r12 32.5s, cand-affliction-r3 32.5s, leveling-affliction 32.6s, cand-affliction-r2 32.9s, cand-affliction-r4 32.9s, cand-affliction-r6 33.0s, cand-affliction-r9 33.0s, cand-affliction-r5 33.5s, cand-affliction-r10 33.6s, cand-affliction-r11 33.6s, cand-affliction-r7 35.7s, cand-affliction-r8 37.0s, cand-affliction-r1 37.2s
 - **hunter**: 1 calibration round(s), converged; race cand-bm-r6 22.9s, cand-bm-r7 23.0s, cand-bm-r5 23.0s, cand-bm-r3 23.3s, cand-bm-r4 23.3s, leveling-beast-mastery 23.4s, cand-bm-r2 23.5s, cand-bm-r1 23.6s, cand-bm-hand-2026-09-26 24.2s
 - **warrior**: 1 calibration round(s), converged; race leveling-arms 25.5s, cand-arms-r4 26.7s, cand-arms-r3 26.8s, cand-arms-r5 26.8s, cand-arms-r2-ms40 27.0s, cand-arms-r2 27.0s, cand-arms-r7 27.2s, cand-arms-r1 27.7s, cand-arms-r6 29.3s
 - **rogue**: 1 calibration round(s), converged; race leveling-combat-swords 23.5s
-- **paladin**: 1 calibration round(s), converged; race leveling-retribution 26.3s
+- **paladin**: 1 calibration round(s), converged; race leveling-retribution 26.9s
 - **shaman**: 1 calibration round(s), converged; race leveling-enhancement 27.1s, cand-enh-r7 27.6s, cand-enh-r2 28.5s, cand-enh-r1 28.6s, cand-enh-r6 28.6s, cand-enh-r5 28.7s, cand-enh-r4 29.7s, cand-enh-r3 29.9s
 - **druid**: 2 calibration round(s), converged; race leveling-feral 26.6s
 

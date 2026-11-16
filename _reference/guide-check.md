@@ -44,13 +44,13 @@ Leveling steps that name a spell the tuned rules never cast (0; `fightlab/rotati
 | mage | Hybrid Fire/Frost | raid | 2026-11-11 | fire-raid 6e4d5a9fe906, frost-raid 9d92acd12c6d, frostfire-raid d47545516c78 |
 | mage | Hybrid Fire/Frost | leveling | 2026-11-15 | leveling:arcane-leveling 07ceccb2d284, leveling:barrage-frost-leveling 81d5838d4941, leveling:fire-leveling 154f0acbd572, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 6f2e68b68584, leveling:frostfire-leveling 270857ee52fb |
 | paladin | Retribution | raid | 2026-10-15 | ret-dps b8271e4a77aa |
-| paladin | Retribution | leveling | 2026-11-08 | leveling:holy-leveling 3ce03646602a, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 4e2e970e1edf |
+| paladin | Retribution | leveling | 2026-11-08 | leveling:holy-leveling 0f24945e92e6, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 4e2e970e1edf |
 | paladin | Protection | raid | 2026-10-15 | prot-tank 271ef28b893a |
-| paladin | Protection | leveling | 2026-11-08 | leveling:holy-leveling 3ce03646602a, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 4e2e970e1edf |
+| paladin | Protection | leveling | 2026-11-08 | leveling:holy-leveling 0f24945e92e6, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 4e2e970e1edf |
 | paladin | Holy | raid | 2026-11-09 | healer-policy daf1051b3b18 |
-| paladin | Holy | leveling | 2026-11-15 | leveling:holy-leveling 3ce03646602a, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 4e2e970e1edf |
-| paladin | Hybrid Protection/Retribution | leveling | 2026-11-15 | leveling:holy-leveling 3ce03646602a, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 4e2e970e1edf |
-| paladin | Hybrid Holy/Retribution | leveling | 2026-11-16 | leveling:holy-leveling 3ce03646602a, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 4e2e970e1edf |
+| paladin | Holy | leveling | 2026-11-16 | leveling:holy-leveling 0f24945e92e6, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 4e2e970e1edf |
+| paladin | Hybrid Protection/Retribution | leveling | 2026-11-15 | leveling:holy-leveling 0f24945e92e6, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 4e2e970e1edf |
+| paladin | Hybrid Holy/Retribution | leveling | 2026-11-16 | leveling:holy-leveling 0f24945e92e6, leveling:prot-leveling 440bbcfa5ed4, leveling:ret-dps 4e2e970e1edf |
 | priest | Shadow | raid | 2026-11-04 | shadow-dps f98eed89871b |
 | priest | Shadow | leveling | 2026-11-15 | leveling:discipline-leveling 11d48ca4a0ea, leveling:holy-leveling 53a9cf1c7389, leveling:shadow-dps 7ea9b8d275e8 |
 | priest | Hybrid Discipline/Holy | raid | 2026-11-04 | smite-dps 15055efffd77 |
@@ -78,15 +78,15 @@ Leveling steps that name a spell the tuned rules never cast (0; `fightlab/rotati
 | shaman | Restoration | leveling | 2026-10-22 | leveling:elemental-dps 29615eae1d95, leveling:enhancement-dps 9b10626e8d2f |
 | shaman | Hybrid Elemental/Enhancement | raid | 2026-10-15 | elemental-dps 260725d0143a, enhancement-dps f5e839848893, stormcaller-dps fc9ab1b433fe |
 | warlock | Affliction | raid | 2026-11-08 | affliction-raid 8cea9e03d6ea |
-| warlock | Affliction | leveling | 2026-11-08 | leveling:affliction-leveling bc686a3c1cb2, leveling:demonology-leveling 646c5ce02090, leveling:destruction-leveling 16f97003604b |
+| warlock | Affliction | leveling | 2026-11-16 | leveling:affliction-leveling aad4b8d533a8, leveling:demonology-leveling 646c5ce02090, leveling:destruction-leveling 16f97003604b |
 | warlock | Demonology | raid | 2026-11-08 | demonology-raid e51e64619b71 |
-| warlock | Demonology | leveling | 2026-11-08 | leveling:affliction-leveling bc686a3c1cb2, leveling:demonology-leveling 646c5ce02090, leveling:destruction-leveling 16f97003604b |
+| warlock | Demonology | leveling | 2026-11-08 | leveling:affliction-leveling aad4b8d533a8, leveling:demonology-leveling 646c5ce02090, leveling:destruction-leveling 16f97003604b |
 | warlock | Destruction | raid | 2026-11-08 | fire-destro-raid 6aef8ea82862, incinerate-raid d307253b81ba, sb-raid e4dd2169691b |
-| warlock | Destruction | leveling | 2026-11-08 | leveling:affliction-leveling bc686a3c1cb2, leveling:demonology-leveling 646c5ce02090, leveling:destruction-leveling 16f97003604b |
+| warlock | Destruction | leveling | 2026-11-08 | leveling:affliction-leveling aad4b8d533a8, leveling:demonology-leveling 646c5ce02090, leveling:destruction-leveling 16f97003604b |
 | warlock | Hybrid Affliction/Destruction | raid | 2026-11-08 | affliction-raid 8cea9e03d6ea, fire-destro-raid 6aef8ea82862, incinerate-raid d307253b81ba, sb-raid e4dd2169691b |
-| warlock | Hybrid Affliction/Destruction | leveling | 2026-11-08 | leveling:affliction-leveling bc686a3c1cb2, leveling:demonology-leveling 646c5ce02090, leveling:destruction-leveling 16f97003604b |
-| warlock | Hybrid Affliction/Demonology | leveling | 2026-11-08 | leveling:affliction-leveling bc686a3c1cb2, leveling:demonology-leveling 646c5ce02090, leveling:destruction-leveling 16f97003604b |
-| warlock | Hybrid Demonology/Destruction | leveling | 2026-11-08 | leveling:affliction-leveling bc686a3c1cb2, leveling:demonology-leveling 646c5ce02090, leveling:destruction-leveling 16f97003604b |
+| warlock | Hybrid Affliction/Destruction | leveling | 2026-11-08 | leveling:affliction-leveling aad4b8d533a8, leveling:demonology-leveling 646c5ce02090, leveling:destruction-leveling 16f97003604b |
+| warlock | Hybrid Affliction/Demonology | leveling | 2026-11-08 | leveling:affliction-leveling aad4b8d533a8, leveling:demonology-leveling 646c5ce02090, leveling:destruction-leveling 16f97003604b |
+| warlock | Hybrid Demonology/Destruction | leveling | 2026-11-08 | leveling:affliction-leveling aad4b8d533a8, leveling:demonology-leveling 646c5ce02090, leveling:destruction-leveling 16f97003604b |
 | warrior | Arms | raid | 2026-11-09 | arms-2h-raid 815b46e57957, arms-battle-raid 6a4ba0b00cca, fury-dw-raid f9fcc0877b40 |
 | warrior | Arms | leveling | 2026-11-15 | leveling:arms-2h-raid 37b95d3dbf23, leveling:fury-dw-raid 650a88ea30a6, leveling:prot-leveling 8ab176ee6a9c |
 | warrior | Fury | raid | 2026-11-09 | arms-2h-raid 815b46e57957, fury-dw-raid f9fcc0877b40 |

@@ -207,6 +207,15 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   - Left out:
     - flat bonuses, temporary procs, weapon-type talents, and crit and hit talents;
     - leveling entries carry no oh_weapon_dps, so an off-hand adjustment reaches only the raid entries.
+  **Rest cues** (2026-11-16, user: "I want the addon to not proc during combat. Also, I just want to be eat/drink/evocation for now.
+  Also I want it to work across all different classes and specs"; the Addons session's RestCue add-on reads it):
+  `characters/rest_cues.py` writes `characters/addon/forever-rest-cues.json`: for every leveling page pick (the signature rule's
+  slots, as the gear values) the build id, the rotation and the between-fight thresholds its tuned rules play (`drink_below`,
+  `eat_below`: the rules file's, else the module's, else tables'), plus the class's own mana tools between fights, each checked against
+  the module on every run (the mage's Evocation from 20 below 40% mana when ready; the warlock's Life Tap back to 70% while health stays
+  above 60%). `addon_values.py` runs it after writing the gear values, so every lane's add-on step refreshes it; message the Addons
+  session when a threshold moves. A mana gem tool shape is agreed with them ({item, item_ids best first, kind "item", min_level,
+  mana_below, needs_ready, in_bags}) for when the leveling lab plays gems.
 - File names: lowercase kebab-case. Build ids: `<spec>-<variant>-<content>` (e.g. `fury-dw-raid`, `pvp-frost`, `leveling-arms`).
 - Never put class-specific content in `_reference/`; never put cross-class facts inside a class folder.
 
@@ -433,7 +442,8 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   pages for every class that finishes"): the by-level guide, its `keys` block and the keybinds page; keys hold fight spells and helpful
   things only, never buffs, food, drink, conjuring, the mount or the Hearthstone (user, the same day). No key holds Attack (user, 2026-11-07): a melee class's opening key is a macro with a `/startattack` line and the middle mouse button is free; casters keep the wand there. Keep the
   "between fights" lines of `leveling-steps.json` in step with the tuned drink and eat thresholds (three mage lines said a third of
-  the mana while the tuned rule was 15%). Done: mage (Frost), paladin (Retribution, provisional talents until its search runs), shaman (Enhancement), warrior (Arms), priest (Shadow), rogue (Combat), hunter (Beast-Survival), druid (Feral Combat: bar 1 once per form, since WoW swaps it in Bear Form, Cat Form and while prowling); owed: warlock. `level_guides.pick` loads `fightlab/signature_audit.py` by its path (`raidsim/` has a module of the same name and render_modes puts it first on sys.path). It takes the page's pick after the signature rule (`page_slots(cls, signature=True)`, as do stat_weights_all, addon_values, forever_base, forever_race and pawn_compare; the audit's own rows stay before the rule). Until 2026-11-15 they took the pick before it: the hunter's Beast Mastery guide and stat values followed the generated 30/21/0, faster but without Bestial Wrath, while the page shows the open search's 31/16/4.
+  the mana while the tuned rule was 15%). Done: mage (Frost), paladin (Retribution, provisional talents until its search runs), shaman (Enhancement), warrior (Arms), priest (Shadow), rogue (Combat), hunter (Beast-Survival), druid (Feral Combat: bar 1 once per form, since WoW swaps it in Bear Form, Cat Form and while prowling), warlock (Demonology); since
+  2026-11-07 every leveling spec has its own guide. `level_guides.pick` loads `fightlab/signature_audit.py` by its path (`raidsim/` has a module of the same name and render_modes puts it first on sys.path). It takes the page's pick after the signature rule (`page_slots(cls, signature=True)`, as do stat_weights_all, addon_values, forever_base, forever_race and pawn_compare; the audit's own rows stay before the rule). Until 2026-11-15 they took the pick before it: the hunter's Beast Mastery guide and stat values followed the generated 30/21/0, faster but without Bestial Wrath, while the page shows the open search's 31/16/4.
 - **Decisions of 2026-11-06** (user: "Go with your recs for the changes and fixes"; `_reference/page-audit.md` L,
   `_reference/search-improvements.md` 0f). **A spec takes its signature talent as early as its tree allows**: `signature.late_talents`
   fails a leveling order that takes one later (Mutilate 40, Pyroblast 20, Hemorrhage 30 and Death Mark 40), and every tool that makes

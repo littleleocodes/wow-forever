@@ -31,29 +31,31 @@
     "written": "2026-11-08"
    },
    "leveling": {
-    "plan": "Affliction levels on its damage-over-time spells while the Voidwalker holds the mob: **Corruption**, **Bane of Agony** and **Siphon Life** on a healthy mob, **Wrack** (level 40) channelled once **Corruption** is up, **Shadow Bolt** while the mob has more than a third of its health, then the wand while the dots finish it.",
+    "plan": "Affliction levels on its damage-over-time spells and the wand while the Voidwalker holds the mob: **Corruption**, **Bane of Agony** and **Immolate** on a healthy mob (**Siphon Life** from level 34), the wand while they finish it, **Drain Life** when you are hurt, and from level 40 **Wrack**, channelled while you have the mana. No **Shadow Bolt** and no **Fear**.",
     "why": [
-     "Send the Voidwalker in first: its **Torment** holds the mob while you stand at range. **Suppression** (levels 12-15 and 31) gives 5% hit and cuts your threat by 20%, so the Voidwalker keeps the mob through your bolts: the open search measured it the build's most valuable talent at 60. **Amplify Curse** (level 20) goes on whenever it is ready (3-minute cooldown): it makes that fight's **Bane of Agony** 50% stronger.",
-     "**Corruption**, **Bane of Agony** and **Siphon Life** (level 34) go on once each, none of them on a mob below about a third of its health: it dies before the spell pays for its mana. The 2026-11-04 re-tune measured the 35% rule on **Corruption** about 2% faster per kill, and keeping **Corruption** for when you have more than 15% mana a little under 1%.",
-     "**Wrack** (level 40) is channelled once **Corruption** is on a mob with more than a quarter of its health: 6 seconds of Shadow damage that also makes your other Shadow dots 10% stronger, and **Soul Siphon** (levels 32-33 and 41) adds 12% per other Affliction effect on the mob, up to 36%. From level 40 it replaces most of your **Shadow Bolt** casts. **Improved Drains** (42-43) now boosts only **Drain Life** and **Drain Soul**, not **Wrack**.",
-     "**Shadow Bolt** fills while the mob has more than 35% of its health and you keep the mana for **Fear** and **Drain Life**; below that, the wand while the dots finish the mob. The tuned rule (no **Shadow Bolt** on a mob below 35%) measured about 6.5% faster per kill, the largest gain of the re-tune.",
-     "**Immolate** only on a mob above about half its health and while you have more than half your mana: it is your most expensive dot, so the fight lab casts it on a minority of mobs.",
-     "**Drain Life** below 60% health, and in place of the wand below 85%. **Life Tap** in a fight only when the next **Shadow Bolt** would eat into your **Fear** and **Drain Life** mana, while you stay above 60% health; between fights tap back to about 70% mana and eat only below 55% health."
+     "Send the Voidwalker in first: its **Torment** holds the mob while you stand at range. **Suppression** (levels 12-15 and 31) gives 5% hit and cuts your threat by 20%, so the Voidwalker keeps the mob. **Amplify Curse** (level 20) goes on whenever it is ready (3-minute cooldown): it makes that fight's **Bane of Agony** 50% stronger.",
+     "No **Shadow Bolt** once you own a wand. The re-tune of 2026-11-16 measured kills about a quarter faster without it at levels 20 and 30 (23.5 against 30.6 seconds at 20), and a check at level 10 found 15%. While the Voidwalker holds the mob, a bolt hardly shortens the fight: the dots and the wand kill it in about the same time. But it triples the mana a kill costs, and drinking that back took 3 seconds a kill at level 10 and 7 to 10 seconds at 20 and 30 in the fight lab.",
+     "**Corruption**, **Bane of Agony** and **Siphon Life** (level 34) go on once each, none of them on a mob below about a third of its health: it dies before the spell pays for its mana. **Corruption** goes on only while you have more than 15% mana. **Immolate** only on a mob above about half its health, while you have more than half your mana: without bolts that is nearly every mob until 40, and from 40 **Wrack** spends that mana and the fight lab no longer casts it.",
+     "**Wrack** (level 40, changed by the hotfix of 2026-11-10) is a 6-second channel of Shadow damage, 60 a second at level 60, that makes your **Corruption**, **Bane of Agony** and **Siphon Life** tick twice as fast while you channel it. Channel it once **Corruption** is on a mob with more than a quarter of its health, and only while you have more than 30% of your mana: the re-tune measured that mana rule about 3% faster per kill. **Soul Siphon** (levels 32-33 and 41) adds 12% to it for each of your other Affliction effects on the mob, up to 36%. **Wrack** and **Siphon Life** are the build's two most valuable talents at 60: about 3.5 seconds a kill each in the open search, twice **Suppression**'s five points.",
+     "**Drain Life** below 60% health, and in place of the wand below 85%. **Life Tap** in a fight only when your mana is down to about 15% and you stay above 60% health; between fights tap back to about 70% mana, and eat only below 55% health."
     ],
     "caveats": [
-     "No **Curse of the Elements** while leveling: the 2026-11-04 re-tune measured about 3% faster per kill without it (it costs a global cooldown and mana on a mob that dies quickly).",
-     "This build has no **Nightfall** and no **Soul Link**. Its 11 Demonology points (levels 45-58) are for the Voidwalker and you: **Unholy Power** adds 10% to its damage, **Improved Voidwalker** makes **Torment** and **Consume Shadows** 30% stronger, **Demonic Energies** (one rank) heals it for 8% of your spell damage, **Demonic Embrace** adds 3% Stamina and **Demonic Aegis** makes **Demon Armor** 15% stronger. The last two points are **Grim Reach** (59: Affliction spells reach 10% farther) and **Improved Shadow Bolt** (60: a critical **Shadow Bolt** makes the mob take 4% more Shadow damage for 12 seconds). The fight lab measures these last few points at about nothing; they took points that did nothing at all for this build (the leveling filler pass, 2026-11-09).",
-     "Affliction spends more mana than the other warlock lists (**Shadow Bolt** and **Wrack**): when you are too hurt to **Life Tap**, drink below 15% mana.",
-     "When a mob reaches you: **Death Coil** (level 42) if you are below about 60% health (it heals you for its damage), otherwise **Fear** it and **Drain Life** while it runs, until the Voidwalker's **Torment** takes it back."
+     "No **Curse of the Elements** while leveling: the re-tune of 2026-11-04 measured about 3% faster per kill without it (a global cooldown and mana on a mob that dies quickly), and the re-tune of 2026-11-16 kept it off.",
+     "No **Fear**: with the Voidwalker holding the mob the fight lab hardly needs it, and the re-tune measured kills about 0.7% faster without it over levels 20-60. At level 8, before the Voidwalker, dotting and wanding a mob that reaches you was 3% faster than fearing it. Keep it for a pull that brings a second mob.",
+     "This build has no **Nightfall** and no **Soul Link**. Its 10 Demonology points (levels 45-55 and 60) are for the Voidwalker: **Unholy Power** adds 10% to its damage, **Improved Voidwalker** makes **Torment** and **Consume Shadows** 30% stronger, **Demonic Energies** heals it for 15% of your spell damage and gives it the mana of each **Life Tap** too. **Destructive Reach** (56), **Grim Reach** (57 and 59) and the third point of **Improved Drains** (58) close the build: the fight lab measures them at about nothing. The leveling filler pass of 2026-11-16 put into them the points that measured nothing at all: the build no longer takes **Improved Shadow Bolt** (this list never casts **Shadow Bolt**), nor **Demonic Aegis**, nor **Demonic Embrace**, and keeps two of the three **Fel Concentration** points.",
+     "Without **Shadow Bolt** Affliction spends little mana: the fight lab drinks well under a second a kill. When you are too hurt to **Life Tap**, drink below 15% mana.",
+     "When a mob reaches you: **Death Coil** (level 42) if you are below about 60% health (it heals you for its damage); otherwise keep dotting and wanding, with **Drain Life** when you are hurt, until the Voidwalker's **Torment** takes it back."
     ],
     "diverge": [
      "Finish a nearly dead mob with the wand; start no new spell on it.",
+     "No wand yet (the first levels): **Shadow Bolt** fills until you buy one.",
+     "A second mob joins: **Fear** it (or **Banish** a demon or an elemental) and keep dotting the first; the single-mob list does not cover it.",
      "Below about a third of your health with a mob on you, use a Healthstone (**Create Healthstone** between fights).",
      "If the Voidwalker dies, summon a new one before the next pull rather than fight without your tank, and heal a hurt one between fights with **Consume Shadows** (not usable in combat) or **Health Funnel**."
     ],
-    "written": "2026-11-08",
+    "written": "2026-11-16",
     "rotations": {
-     "leveling:affliction-leveling": "bc686a3c1cb2",
+     "leveling:affliction-leveling": "aad4b8d533a8",
      "leveling:demonology-leveling": "646c5ce02090",
      "leveling:destruction-leveling": "16f97003604b"
     }
@@ -107,7 +109,7 @@
     ],
     "written": "2026-11-08",
     "rotations": {
-     "leveling:affliction-leveling": "bc686a3c1cb2",
+     "leveling:affliction-leveling": "aad4b8d533a8",
      "leveling:demonology-leveling": "646c5ce02090",
      "leveling:destruction-leveling": "16f97003604b"
     }
@@ -161,7 +163,7 @@
     ],
     "written": "2026-11-08",
     "rotations": {
-     "leveling:affliction-leveling": "bc686a3c1cb2",
+     "leveling:affliction-leveling": "aad4b8d533a8",
      "leveling:demonology-leveling": "646c5ce02090",
      "leveling:destruction-leveling": "16f97003604b"
     }
@@ -213,7 +215,7 @@
     ],
     "written": "2026-11-08",
     "rotations": {
-     "leveling:affliction-leveling": "bc686a3c1cb2",
+     "leveling:affliction-leveling": "aad4b8d533a8",
      "leveling:demonology-leveling": "646c5ce02090",
      "leveling:destruction-leveling": "16f97003604b"
     }
@@ -240,7 +242,7 @@
     ],
     "written": "2026-11-08",
     "rotations": {
-     "leveling:affliction-leveling": "bc686a3c1cb2",
+     "leveling:affliction-leveling": "aad4b8d533a8",
      "leveling:demonology-leveling": "646c5ce02090",
      "leveling:destruction-leveling": "16f97003604b"
     }
@@ -266,7 +268,7 @@
     ],
     "written": "2026-11-08",
     "rotations": {
-     "leveling:affliction-leveling": "bc686a3c1cb2",
+     "leveling:affliction-leveling": "aad4b8d533a8",
      "leveling:demonology-leveling": "646c5ce02090",
      "leveling:destruction-leveling": "16f97003604b"
     }

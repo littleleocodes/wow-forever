@@ -1401,9 +1401,9 @@
       {
        "rank": "Rank 1",
        "id": 1316697,
-       "text": "Tears the target apart from within, inflicting 86 Shadow damage every 1 sec and increasing the damage they take from your other Shadow damage over time effects by 10% for 6 sec.",
+       "text": "Tears the target apart from within for 6 sec, inflicting 60 Shadow damage every 1 sec. While channeling, your Siphon Life, Corruption, and Bane of Agony effects on the target deal their periodic damage 100% faster.",
        "school": "Shadow",
-       "coefficient": "28.6% of spell power (per tick)",
+       "coefficient": "20% of spell power (per tick)",
        "tooltip_source": "beta",
        "source": "beta client 1.60.1.70753, Blizzard's notes 2026-11-02",
        "cost": "200 Mana",
@@ -1415,6 +1415,22 @@
        "not_from_class_trainer": "talent-taught",
        "classic": {
         "status": "new"
+       },
+       "hotfix": {
+        "date": "2026-11-10",
+        "sources": [
+         "https://us.forums.blizzard.com/en/wow/t/2403040",
+         "https://www.wowhead.com/forever/spell=1316697"
+        ],
+        "ranks": [
+         1
+        ],
+        "before": {
+         "1": {
+          "text": "Tears the target apart from within, inflicting 86 Shadow damage every 1 sec and increasing the damage they take from your other Shadow damage over time effects by 10% for 6 sec.",
+          "coefficient": "28.6% of spell power (per tick)"
+         }
+        }
        }
       }
      ]

@@ -95,23 +95,21 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
 
 Single-target leveling fights against normal mobs of your level with a Voidwalker: the pet runs in and meets the mob halfway, Torments it every 5 s, and holds it until your threat passes 130% of its own (it takes the mob back once its threat passes yours by 10%). You cast Corruption, Bane of Agony, Siphon Life and Immolate, channel Wrack once the DoTs are up, fill with Shadow Bolt while mana is plentiful and the wand otherwise, Drain Life when hurt, Life Tap when low on mana, Fear or Death Coil a mob that reaches you. Between fights: 2 s loot, 6 s travel, Life Tap back to 70% mana, Consume Shadows or Health Funnel for the pet, food only below 55% health, a 10-12 s re-summon after a pet death; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-04, on top of the priority below): Shadow Bolt only while the mob has more than 35% health; never cast Curse of the Elements; Corruption only while the mob has more than 35% health; Corruption only above 15% mana. Together +11.4% time per kill saved for `leveling-affliction` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-16, on top of the priority below): never cast Shadow Bolt; Wrack only above 30% mana; never cast Fear. Together +10.2% time per kill saved for `affliction-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/affliction-leveling.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Wand | 2.4 | 4.6 | 6.7 | 9.0 | 8.2 | 17% |
-| Torment | 3.0 | 4.0 | 4.7 | 5.1 | 4.3 | 0% |
-| Shadow Bolt | 2.2 | 2.3 | 2.5 | 1.9 | 1.4 | 15% |
-| Corruption | 1.0 | 1.0 | 1.0 | 1.1 | 1.0 | 20% |
-| Bane of Agony | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 21% |
-| Siphon Life | 0.0 | 1.0 | 1.0 | 1.0 | 1.0 | 9% |
-| Life Tap | 0.1 | 0.3 | 0.4 | 0.5 | 0.4 | 0% |
-| Immolate | 0.5 | 0.4 | 0.4 | 0.3 | 0.2 | 3% |
-| Drain Life | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 2% |
-| Fear | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 0% |
+| Wand | 6.4 | 8.7 | 11.1 | 12.4 | 12.0 | 25% |
+| Torment | 3.1 | 4.1 | 4.7 | 5.1 | 4.8 | 0% |
+| Corruption | 1.0 | 1.0 | 1.1 | 1.2 | 1.1 | 22% |
+| Bane of Agony | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 22% |
+| Siphon Life | 0.0 | 1.0 | 1.0 | 1.0 | 1.0 | 10% |
+| Immolate | 1.0 | 0.8 | 0.9 | 0.7 | 0.6 | 7% |
+| Drain Life | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Death Coil | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Life Tap | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes
 

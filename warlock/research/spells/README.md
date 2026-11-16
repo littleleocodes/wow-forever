@@ -72,7 +72,7 @@ Rank entries: 150 changed, 8 new in Forever, 76 as Classic; tooltips read: 234 f
 | Siphon Life | Rank 2 | 38 | 205 Mana | Instant | Transfers 19 health from the target to the caster every 3 sec. Lasts 30 sec. | 5% of spell power (per tick) | changed: Transfers 22 health from the target to the caster every 3 sec. Lasts 30 sec. |
 | Siphon Life | Rank 3 | 48 | 285 Mana | Instant | Transfers 29 health from the target to the caster every 3 sec. Lasts 30 sec. | 5% of spell power (per tick) | changed: Transfers 33 health from the target to the caster every 3 sec. Lasts 30 sec. |
 | Siphon Life | Rank 4 | 58 | 365 Mana | Instant | Transfers 41 health from the target to the caster every 3 sec. Lasts 30 sec. | 5% of spell power (per tick) | changed: Transfers 45 health from the target to the caster every 3 sec. Lasts 30 sec. |
-| Wrack | Rank 1 | 40 (talent-taught) | 200 Mana | Channeled | Tears the target apart from within, inflicting 86 Shadow damage every 1 sec and increasing the damage they take from your other Shadow damage over time effects by 10% for 6 sec. | 28.6% of spell power (per tick) | new in Forever |
+| Wrack | Rank 1 | 40 (talent-taught) | 200 Mana | Channeled | Tears the target apart from within for 6 sec, inflicting 60 Shadow damage every 1 sec. While channeling, your Siphon Life, Corruption, and Bane of Agony effects on the target deal their periodic damage 100% faster. | 20% of spell power (per tick) | new in Forever |
 
 ## Demonology
 

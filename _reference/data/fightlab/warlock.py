@@ -46,6 +46,11 @@ SIPHON = re.compile(r"Transfers (\d[\d,]*) health from the target to the caster 
 TICK = re.compile(r"(?:dealing|inflicting) (\d[\d,]*) (\w+) damage every (\d+) sec.*?(?:Lasts|for) (\d+) sec")
 # Wrack's debuff: "increasing the damage they take from your other Shadow damage over time effects by 10% for 6 sec" (client 70425)
 WRACK_DEBUFF = re.compile(r"increasing the damage they take from your other (\w+) damage over time effects by (\d+)% for (\d+) sec")
+# Wrack since the hotfix of 2026-11-10 (hotfix_text.WARLOCK_1110; the live tooltip, client 70938): "Tears the target apart from within for 6
+# sec, inflicting 60 Shadow damage every 1 sec. While channeling, your Siphon Life, Corruption, and Bane of Agony effects on the target deal
+# their periodic damage 100% faster." The duration comes first, which TICK does not read (it would parse to no damage, as before 2026-10-17).
+TICK_FOR = re.compile(r"for (\d+) sec, (?:dealing|inflicting) (\d[\d,]*) (\w+) damage every (\d+) sec")
+WRACK_SPEED = re.compile(r"While channeling, your (.+?) effects on the target deal their periodic damage (\d+)% faster")
 COE = re.compile(r"increas(?:ing|es) Magic damage taken by (\d+)%")   # Curse of the Elements: 4/6/8/10% by rank (client 70425)
 RAIN = re.compile(r"for (\d[\d,]*) (\w+) damage over (\d+) sec")                                             # Rain of Fire (a channel)
 HELLFIRE = re.compile(r"(\d[\d,]*) (\w+) damage to all nearby enemies every (\d+) sec\. Lasts (\d+) sec")   # Hellfire (a channel)
@@ -112,6 +117,10 @@ def load_spellbook():
                 elif tk:
                     per, every, dur = _num(tk.group(1)), float(tk.group(3)), float(tk.group(4))
                     s.dot, s.dot_dur, s.dot_ticks = per * dur / every, dur, int(dur / every)
+                elif TICK_FOR.search(txt):   # Wrack since the hotfix of 2026-11-10: the duration first
+                    tf = TICK_FOR.search(txt)
+                    dur, per, every = float(tf.group(1)), _num(tf.group(2)), float(tf.group(4))
+                    s.dot, s.dot_dur, s.dot_ticks = per * dur / every, dur, int(dur / every)
                 elif SIPHON.search(txt):
                     si = SIPHON.search(txt)
                     per, every, dur = _num(si.group(1)), float(si.group(2)), float(si.group(3))
@@ -147,6 +156,9 @@ def load_spellbook():
                     s.consume, s.consume_dur = _num(cs.group(1)), float(cs.group(2))
                 wd, ce = WRACK_DEBUFF.search(txt), COE.search(txt)
                 s.wrack = (wd.group(1).lower(), float(wd.group(2)) / 100, float(wd.group(3))) if wd else None
+                ws = WRACK_SPEED.search(txt)   # (the effects it speeds up, the share faster): Wrack since 2026-11-10
+                s.wrack_speed = (tuple(n.strip() for n in re.split(r",\s*(?:and\s+)?|\s+and\s+", ws.group(1)) if n.strip()),
+                                 float(ws.group(2)) / 100) if ws else None
                 s.coe_pct = float(ce.group(1)) / 100 if ce else 0.0
                 st = STONE.search(txt)
                 if st:
@@ -192,8 +204,10 @@ MECHANICS = {
     "Siphon Life": "unlocks Siphon Life (instant 30s drain DoT, heals you per tick)",
     "Soul Siphon": "+4%/rank drains and Wrack per other Affliction effect on the target (up to 3)",
     "Shadow Mastery": "+2%/rank Shadow damage and drains (client 70425; was 1%/rank), read from the tooltip",
-    "Wrack": "unlocks Wrack (6s channel, 86/s at 60 and 2.5 less a level below (client 70753; 36/s before), 28.6% of spell power a tick; +10% to the ticks of your other Shadow DoTs for 6 s from the "
-             "channel's start; parsed since 2026-10-17, before that a channel of nothing)",
+    "Wrack": "unlocks Wrack: since the hotfix of 2026-11-10 a 6s channel of 60/s at 60 and 1.75 less a level below, 20% of spell power a tick, "
+             "and while it channels your Siphon Life, Corruption and Bane of Agony on the target also tick on their half points (100% faster, "
+             "expiry kept); until then 86/s (2.5 less a level below), 28.6% a tick and +10% to your other Shadow DoTs' ticks for 6 s "
+             "(parsed since 2026-10-17, before that a channel of nothing)",
     "Improved Health Funnel": "+20%/rank Health Funnel healing, -15%/rank health cost",
     "Improved Imp": "+10%/rank Firebolt (levels 1-9)",
     "Demonic Embrace": "+3%/rank Stamina",
@@ -284,6 +298,8 @@ PETS = {
 DEMON_HP_PER_STAMINA = 2.0
 # Wrack's base per second grows this much a level (Blizzard's 2 Nov notes; 86 at 60): _scale_wrack
 WRACK_PER_LEVEL = 2.5
+# since the hotfix of 2026-11-10: 60 at 60, 25.2 + 1.75 a level from 40 (the official simulator's spell data, effect 1349556 of 1316697)
+WRACK_PER_LEVEL_1110 = 1.75
 
 
 def pet_health(level):
@@ -335,7 +351,8 @@ class WarlockModule(BaseModule):
         if s is None or self.level >= 60 or s.dot <= 0:
             return
         ticks = max(1, s.dot_ticks)
-        per = max(0.0, s.dot / ticks - WRACK_PER_LEVEL * (60 - self.level))
+        grow = WRACK_PER_LEVEL_1110 if getattr(s, "wrack_speed", None) else WRACK_PER_LEVEL   # the reworked rank grows 1.75 a level
+        per = max(0.0, s.dot / ticks - grow * (60 - self.level))
         s = copy.copy(s)
         s.dot = per * ticks
         self.spells["Wrack"] = self.book["Wrack"] = s
@@ -688,6 +705,8 @@ class WarlockModule(BaseModule):
 
     def on_tick(self, fight, spell, amount, crit):
         p, t = fight.p, fight.t
+        if spell.name == "Wrack" and getattr(spell, "wrack_speed", None):
+            self._wrack_half_ticks(fight, spell)
         if amount <= 0:
             return
         m = fight.m
@@ -710,6 +729,49 @@ class WarlockModule(BaseModule):
         if spell.name in ("Corruption", "Drain Life", "Drain Soul", "Wrack") and self.rank("Nightfall") and fight.rng.random() < self.tv("Nightfall", 0) / 100:
             p.buffs["Shadow Trance"] = {"until": t + 10.0}
         self.pet_heal_from_damage(fight, amount)
+
+    def _wrack_half_ticks(self, fight, spell):
+        """Wrack since the hotfix of 2026-11-10 (hotfix_text.WARLOCK_1110): while it channels, the warlock's Siphon Life, Corruption and
+        Bane of Agony on the target deal their periodic damage 100% faster with their expiry kept, so the half points between their ticks
+        tick too, each a full tick (the official simulator's wrack.go, measured at the channel's start: EV-0085). Dealt at each of Wrack's own
+        ticks for the half points since the tick before (the channel's start for the first): at most one tick interval late, never twice. A
+        half point before an effect was applied does not tick. Each extra tick is a tick of its effect: its crit roll, Siphon Life's heal,
+        Nightfall's chance (on_tick)."""
+        names, pct = spell.wrack_speed
+        ch = fight.channel
+        if pct <= 0 or not ch or ch[0] is not spell:
+            return
+        hi = ch[1]                     # this tick's own time; the channel's ticks are whole intervals apart
+        lo = hi - ch[3]
+        m = fight.m
+        for dot in list(m.dots):
+            if dot[0] not in names or dot[2] <= 0:
+                continue
+            every, nxt = dot[4], dot[3]
+            src = self.spells.get(dot[0])
+            total = getattr(src, "dot_ticks", 0) or dot[2]
+            applied = nxt - every * (total - dot[2] + 1)
+            step = every / (1.0 + pct)
+            if step <= 0 or step >= every:
+                continue
+            # the fast grid's points between two normal ticks: tick - k x step for k = 1 .. (1 + pct) - 1 (100%: the half point)
+            for base in (nxt, nxt - every):
+                k = 1
+                while k * step < every - 1e-9:
+                    h = base - k * step
+                    if lo < h <= hi and h > applied + 1e-9:
+                        amt = dot[1]
+                        hit_crit = len(dot) > 5 and dot[5] > 0 and fight.rng.random() < dot[5]
+                        if hit_crit:
+                            amt *= dot[6]
+                        m.hp -= amt
+                        fight.damage[dot[0]] = fight.damage.get(dot[0], 0.0) + amt
+                        m.threat_player += amt
+                        fight.note(f"{dot[0]} tick (Wrack){' CRIT' if hit_crit else ''} {amt:.0f} -> mob {max(0, m.hp):.0f}")
+                        if hit_crit:
+                            fight.crits[dot[0]] = fight.crits.get(dot[0], 0) + 1
+                        self.on_tick(fight, Spell(dot[0], "periodic"), amt, hit_crit)
+                    k += 1
 
     def after_cast(self, fight, spell):
         if spell.name == "Curse of the Elements":   # a Curse, not a Bane: it sits beside Bane of Agony (one of each per warlock)

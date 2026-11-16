@@ -175,6 +175,12 @@ def apply_spells(cls, obj, pull=None):
     return out
 
 
+def all_pulls():
+    """Every archived pull, oldest first: each records its changes against the text of its day (`before`), so a spellbook rebuilt from
+    the export takes them in turn (build_forever_spells.py, since 2026-11-16)."""
+    return sorted(p.parent.name for p in (HERE / "raw").glob("*-live-*/live_spells.json"))
+
+
 def newest_pull():
     ps = sorted(p.parent.name for p in (HERE / "raw").glob("*-live-*/live_spells.json"))
     return ps[-1] if ps else None

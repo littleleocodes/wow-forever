@@ -244,19 +244,18 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Keys to set:** 3 = Siphon Life.
 
-**Your keys in this stage:** E Fear, R Drain Life, F Death Coil, Mouse 5 Searing Pain, Mouse 4 Corruption, 1 Bane of Agony, 3 Siphon Life, 4 Life Tap.
+**Your keys in this stage:** E Fear, R Drain Life, F Death Coil, Mouse 5 Searing Pain, Mouse 4 Corruption, 1 Bane of Agony, 3 Siphon Life.
 
 **What to press**, top to bottom:
 
 1. Send the Voidwalker in with **Corruption** (Mouse 4), on a mob above about a third of its health; its **Torment** holds the mob.
 2. **Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob, the mob has more than about a third of its health and you have more than 30% of your mana.
 3. **Bane of Agony** (key 1's macro) and **Siphon Life** on a mob above about a third of its health.
-4. **Life Tap** in a fight only when you are short of mana and above 60% health.
-5. Your wand until the mob dies.
+4. Your wand until the mob dies.
 
 **If the fight goes wrong:** A mob on you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs. Your Healthstone below 35% health.
 
-- The third dot costs mana: the fight lab casts **Life Tap** in a fight now and then, about once in three fights at 60.
+- The third dot costs mana, yet the fight lab taps in a fight in fewer than one kill in twenty at 54-60 (measured 2026-11-16): **Life Tap** between fights, and in a fight only when you are short of mana and above 60% health.
 - **Pandemic** (55), **Malevolence** (56), **Suppression** (57) and **Shadow Mastery** (59-60) add damage and hit; **Grim Reach** (58) adds 20% to the range of your Affliction spells.
 
 *Fight lab, seconds per kill: 33 at level 54, 32 at level 60. Presses per kill at level 54: Wand 11.4, Torment 4.6, Corruption 1.1, Bane of Agony 1.0, Siphon Life 1.0, Searing Pain 1.0.*

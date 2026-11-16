@@ -54,15 +54,15 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Holy | page | holy-leveling (32/5/14) | holy-leveling | - | Holy Shock 2.47 | 75% (min 60%) | 37.6 | OK |
-| Protection | page | protection-leveling (0/35/16) | prot-leveling | - | Holy Shield 2.00 | 71% (min 60%) | 29.8 | OK |
-| Protection | slot | protection-open-leveling (3/31/17) | prot-leveling | - | Holy Shield 2.01 | 72% (min 60%) | 29.3 | OK |
-| Retribution | page | leveling-retribution (12/8/31) | ret-dps | - | Judgement 2.76 | 100% (min 60%) | 26.3 | OK |
-| Retribution | slot | opt-ret-dps-leveling-st (10/11/30) | ret-dps | - | Judgement 2.82 | 100% (min 60%) | 26.5 | OK |
-| Shockadin | page | shockadin-open-leveling (22/0/29) | holy-leveling | - | Holy Shock 1.97 | 26% (min 12%) | 30.7 | OK |
-| Prot-Ret | page | prot-ret-open-leveling (12/16/23) | ret-dps | - | Judgement 3.05 | 100% (min 60%) | 26.0 | OK |
-| Prot-Ret | slot | opt-ret-dps-solo-60 (8/19/24) | ret-dps | - | Judgement 3.24 | 100% (min 60%) | 26.6 | OK |
-| Prot-Ret | slot | opt-ret-dps-leveling-aoe (8/14/29) | ret-dps | - | Judgement 2.87 | 100% (min 60%) | 26.4 | OK |
+| Holy | page | holy-leveling (32/5/14) | holy-leveling | - | Holy Shock 2.05 | 73% (min 60%) | 35.5 | OK |
+| Protection | page | protection-leveling (0/35/16) | prot-leveling | - | Holy Shield 2.00 | 71% (min 60%) | 30.0 | OK |
+| Protection | slot | protection-open-leveling (3/31/17) | prot-leveling | - | Holy Shield 2.01 | 72% (min 60%) | 29.6 | OK |
+| Retribution | page | leveling-retribution (12/8/31) | ret-dps | - | Judgement 2.76 | 100% (min 60%) | 27.0 | OK |
+| Retribution | slot | opt-ret-dps-leveling-st (10/11/30) | ret-dps | - | Judgement 2.82 | 100% (min 60%) | 27.1 | OK |
+| Shockadin | page | shockadin-open-leveling (21/0/30) | holy-leveling | - | Holy Shock 1.66 | 19% (min 12%) | 29.0 | OK |
+| Prot-Ret | page | prot-ret-open-leveling (12/16/23) | ret-dps | - | Judgement 3.05 | 100% (min 60%) | 26.5 | OK |
+| Prot-Ret | slot | opt-ret-dps-solo-60 (8/19/24) | ret-dps | - | Judgement 3.24 | 100% (min 60%) | 27.4 | OK |
+| Prot-Ret | slot | opt-ret-dps-leveling-aoe (8/14/29) | ret-dps | - | Judgement 2.87 | 100% (min 60%) | 27.1 | OK |
 
 ## Priest
 
@@ -108,13 +108,15 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 
 | Spec | Row | Build | Rotation | Rules on required spells | Required casts per kill at 60 | Core share at 60 | s/kill (20-60) | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Affliction | page | affliction-open-leveling (39/11/1) | affliction-leveling | - | Corruption 1.00, Bane of Agony 1.00 | 83% (min 50%) | 36.2 | OK |
-| Affliction | slot | affliction-leveling (33/6/12) | affliction-leveling | - | Corruption 1.05, Bane of Agony 1.00 | 56% (min 50%) | 39.7 | OK |
+| Affliction | page | affliction-open-leveling (40/10/1) | affliction-leveling | - | Corruption 1.12, Bane of Agony 1.00 | 71% (min 50%) | 30.7 | OK |
+| Affliction | slot | affliction-leveling (33/6/12) | affliction-leveling | - | Corruption 1.30, Bane of Agony 1.00 | 57% (min 50%) | 33.6 | OK |
 | Demonology | page | demonology-open-leveling (22/29/0) | demonology-leveling | - | - | 21% (min 0%) | 31.0 | OK |
 | Demonology | slot | demonology-leveling (21/30/0) | demonology-leveling | - | - | 21% (min 0%) | 31.3 | OK |
 | Destruction | page | destruction-open-leveling (6/11/34) | destruction-leveling | - | - | 62% (min 60%) | 40.6 | OK |
 | Destruction | slot | destruction-leveling (21/0/30) | destruction-leveling | - | - | 47% (min 60%) | 48.1 | FAIL: core share 47% < 60% |
 | Affliction-Demonology | page | affliction-demonology-open-leveling (27/24/0) | demonology-leveling | - | Corruption 1.04 | 71% (min 50%) | 30.4 | OK |
+| Affliction-Demonology | slot | opt-affliction-leveling-leveling-st (27/24/0) | demonology-leveling | - | Corruption 1.14 | 68% (min 50%) | 32.7 | OK |
+| Affliction-Demonology | slot | leveling-affliction (23/26/2) | demonology-leveling | - | Corruption 1.26 | 69% (min 50%) | 32.8 | OK |
 | Affliction-Demonology | slot | opt-affliction-leveling-solo-60 (27/24/0) | demonology-leveling | - | Corruption 1.14 | 68% (min 50%) | 32.7 | OK |
 | Affliction-Demonology | slot | opt-affliction-leveling-leveling-aoe (21/24/6) | demonology-leveling | - | Corruption 1.28 | 69% (min 50%) | 33.6 | OK |
 

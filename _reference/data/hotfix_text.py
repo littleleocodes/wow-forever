@@ -28,6 +28,18 @@ def _sub(pat, rep):
 # proc rate is fightlab/shaman.py's MW_PPM_BY_RANK (the tooltip says "a chance").
 SHAMAN_1110 = ("2026-11-10", ["https://us.forums.blizzard.com/en/wow/t/2403040"])
 
+# 2026-11-10 (the same thread: Wrack's damage down 30%): the live game reworked Wrack, a 6 s channel of 60 Shadow damage a second (25.2 +
+# 1.75 a level from 40, 20% of spell power a tick) whose second effect makes the warlock's Siphon Life, Corruption and Bane of Agony on the
+# target tick 100% faster while it channels, their expiry kept, so the half points tick too (the official simulator's spell data and
+# wrack.go since aa897180c, 2026-11-10: our pin ff9babba5 had it). Wowhead's tooltip took the wording later (seen 2026-11-16, client 70938);
+# live_spells.py lists it as not taken because the wording moved. Our text kept the 70753 tooltip (86 a second, +10% to the other Shadow
+# damage over time effects for 6 s) until 2026-11-16 (user: "Go with your rec"); the fight lab's warlock module reads both wordings.
+WARLOCK_1110 = ("2026-11-10", ["https://us.forums.blizzard.com/en/wow/t/2403040", "https://www.wowhead.com/forever/spell=1316697"])
+WRACK_OLD = ("Tears the target apart from within, inflicting 86 Shadow damage every 1 sec and increasing the damage they take from your other "
+             "Shadow damage over time effects by 10% for 6 sec.")
+WRACK_NEW = ("Tears the target apart from within for 6 sec, inflicting 60 Shadow damage every 1 sec. While channeling, your Siphon Life, "
+             "Corruption, and Bane of Agony effects on the target deal their periodic damage 100% faster.")
+
 # (class, talent) -> [edits applied to every rank's text], or ([edits], (date, sources)) for a hotfix of its own date
 # 2026-10-31: talentsforever's export of 30 Oct (launch build 70685 = client 70630 + the hotfixes of 28 and 30 Oct) carries every
 # number below that was listed here (druid Genesis, Naturalist, Leader of the Pack, Moonkin Form; paladin Boundless Light; mage Ice
@@ -42,6 +54,7 @@ TALENTS = {
     ("shaman", "Stormstrike"): ([_sub(r"strike for 150% normalized weapon damage", lambda i, m: "strike for 100% normalized weapon damage")],
                                 SHAMAN_1110),
     ("shaman", "Maelstrom Weapon"): ([_sub(r"Lightning Bolt spell by \d+%", lambda i, m: "Lightning Bolt spell by 20%")], SHAMAN_1110),
+    ("warlock", "Wrack"): ([_sub(re.escape(WRACK_OLD), lambda i, m: WRACK_NEW)], WARLOCK_1110),
 }
 
 
@@ -64,6 +77,7 @@ SPELLS = {
     ("hunter", "Sniper Shot"): ([_per_rank(r"ranged damage plus (\d+)", [320, 450, 590])], {}, HUNTER_1103),
     ("shaman", "Stormstrike"): ([_sub(r"strike for 150% normalized weapon damage", lambda i, m: "strike for 100% normalized weapon damage")],
                                 {"cooldown": "8 sec cooldown"}, SHAMAN_1110),
+    ("warlock", "Wrack"): ([_sub(re.escape(WRACK_OLD), lambda i, m: WRACK_NEW)], {"coefficient": "20% of spell power (per tick)"}, WARLOCK_1110),
 }
 
 

@@ -16,18 +16,18 @@ The fastest leveling build found with no tree rule in each leveling rotation (fi
 | [priest](../priest/research/leveling/open-search.md) | shadow-dps | [13/3/35](https://talentsforever.com/priest/60/20500300003-3-40550201251300151-12) | Shadow | 24.25 | +2.9% |
 | [warrior](../warrior/research/leveling/open-search.md) | fury-dw-raid | [17/34/0](https://talentsforever.com/warrior/60/20323213001-050530355100120031--12) | Fury | 24.48 | +3.8% |
 | [warrior](../warrior/research/leveling/open-search.md) | arms-2h-raid | [32/17/2](https://talentsforever.com/warrior/60/02323213132215101-05140005002-2-12) | Arms | 24.70 | +2.1% |
-| [paladin](../paladin/research/leveling/open-search.md) | ret-dps | [11/16/24](https://talentsforever.com/paladin/60/05024-5230011031-421333010013003-12) | Hybrid Protection/Retribution | 25.37 | +2.3% |
+| [paladin](../paladin/research/leveling/open-search.md) | ret-dps | [11/16/24](https://talentsforever.com/paladin/60/05024-5230011031-421333010013003-12) | Hybrid Protection/Retribution | 25.88 | +2.7% |
 | [shaman](../shaman/research/leveling/open-search.md) | enhancement-dps | [12/33/6](https://talentsforever.com/shaman/60/5501001-050033213051002251-05001-12) | Enhancement | 26.62 | +1.7% |
 | [warrior](../warrior/research/leveling/open-search.md) | prot-leveling | [3/17/31](https://talentsforever.com/warrior/60/003-15222005-251133020101201351-12) | Protection | 26.95 | +3.3% |
 | [mage](../mage/research/leveling/open-search.md) | barrage-frost-leveling | [28/0/23](https://talentsforever.com/mage/60/25120520000030143--0325300301103002-12) | Hybrid Arcane/Frost | 28.26 | +3.1% |
 | [shaman](../shaman/research/leveling/open-search.md) | elemental-dps | [32/11/8](https://talentsforever.com/shaman/60/540333100301135-05003201-053-12) | Elemental | 28.54 | - |
-| [paladin](../paladin/research/leveling/open-search.md) | prot-leveling | [3/31/17](https://talentsforever.com/paladin/60/03-15310102412301511-05233300001-12) | Protection | 29.06 | +0.0% |
+| [paladin](../paladin/research/leveling/open-search.md) | holy-leveling | [22/0/29](https://talentsforever.com/paladin/60/05025110221111--1523330100130034-12) | Hybrid Holy/Retribution | 28.90 | +21.6% |
+| [paladin](../paladin/research/leveling/open-search.md) | prot-leveling | [3/31/17](https://talentsforever.com/paladin/60/03-15310102412301511-05233300001-12) | Protection | 29.21 | +2.1% |
 | [mage](../mage/research/leveling/open-search.md) | arcane-leveling | [33/0/18](https://talentsforever.com/mage/60/051205203100311531--2321022021003-12) | Arcane | 29.38 | +24.5% |
 | [mage](../mage/research/leveling/open-search.md) | frost-leveling | [18/3/30](https://talentsforever.com/mage/60/2331050010003-3-1525321301203002-12) | Frost | 29.50 | +2.6% |
-| [paladin](../paladin/research/leveling/open-search.md) | holy-leveling | [22/0/29](https://talentsforever.com/paladin/60/05025110221111--1523330100130034-12) | Hybrid Holy/Retribution | 30.45 | +22.1% |
 | [warlock](../warlock/research/leveling/open-search.md) | demonology-leveling | [27/24/0](https://talentsforever.com/warlock/60/2551002013500102-10450302011003013--12) | Hybrid Affliction/Demonology | 30.47 | +2.2% |
+| [warlock](../warlock/research/leveling/open-search.md) | affliction-leveling | [39/11/1](https://talentsforever.com/warlock/60/25510223135001351-00151301-01-12) | Affliction | 30.61 | +0.0% |
 | [mage](../mage/research/leveling/open-search.md) | frostfire-leveling | [2/25/24](https://talentsforever.com/mage/60/2-55501100200033-0325320301003002-12) | Hybrid Fire/Frost | 33.76 | - |
-| [warlock](../warlock/research/leveling/open-search.md) | affliction-leveling | [37/14/0](https://talentsforever.com/warlock/60/25500322134001351-0025030211--12) | Affliction | 36.20 | +9.0% |
 | [mage](../mage/research/leveling/open-search.md) | fire-leveling | [1/32/18](https://talentsforever.com/mage/60/1-55500201210133031-2034320001003-12) | Fire | 36.35 | +0.6% |
 | [druid](../druid/research/leveling/open-search.md) | balance-dps | [36/0/15](https://talentsforever.com/druid/60/5332200105501351--51530001-12) | Balance | 37.25 | +1.0% |
 | [warlock](../warlock/research/leveling/open-search.md) | destruction-leveling | [6/11/34](https://talentsforever.com/warlock/60/15-0015032-0050325133111351-12) | Destruction | 40.68 | +18.6% |
