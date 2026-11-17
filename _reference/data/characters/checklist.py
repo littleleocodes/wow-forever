@@ -290,6 +290,8 @@ def steps_html(C, lv):
                           "in this order · next: " + " · ".join(f"{L} {esc(n)}" for L, n in tal["path"][:4]) + link))
     elif tal.get("path"):
         path = " · ".join(f"{L} {esc(n)}" for L, n in tal["path"][:4])
+        if tal.get("raced"):   # the next points raced in the fight lab from your own talents (2026-11-17, next_talents.py)
+            path += f" · {esc(tal['raced'])}"
         if tal.get("stale"):   # Blizzard's talents predate the spellbook (2026-11-14): the page's order through the book's level assumed
             path += (f" · this assumes your points follow the page's order through level {tal['stale']['level']}: Blizzard's talents are "
                      f"older than your spellbook, which has {esc(', '.join(tal['stale']['ahead']))}")

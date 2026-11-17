@@ -67,12 +67,76 @@ def check_tools(cls, mod):
         assert mod.after_fight(p2, 0.0) == 0 or p2.mana == 0.75 * p2.mana_max, "warlock: Life Tap above 70% mana"
 
 
+VECTOR_STATES = [(0.30, 0.10), (0.95, 0.10), (0.30, 0.90), (1.00, 0.10), (0.97, 0.97)]   # (health, mana) shares after a kill
+VECTOR_LEVEL = 60
+
+
+def vectors(cls, spec, b, rot, level=VECTOR_LEVEL):
+    """Test cases for the add-on's rest cue (agreed with the Addons session 2026-11-17): the lab's own between-fight decision on set
+    states, run through the module's after_fight and engine.Session.downtime. Each: class, spec, level, hp and mana shares, tool_ready
+    (mage: Evocation off cooldown), does (in order: "Evocation" | "Life Tap" | "drink" | "eat" | "top-up drink" | "top-up eat"), after
+    {hp, mana} once a tool has run and more steps follow, and for warlocks health_max and tap_cost (Life Tap's health cost). A state
+    where after_fight does anything but a listed tool (a priest's Renew, a paladin's or shaman's heal, a druid's Rejuvenation) is left
+    out: the add-on cues none of those."""
+    import engine as E
+    out = []
+    talents = FR.allocation_at(b, level)
+    for hp, mana in VECTOR_STATES:
+        for ready in ((True, False) if cls == "mage" else (None,)):
+            mod = FR.make_module(cls, talents, level, rot)
+            s = E.Session(mod, level=level, fights=1, seed=1)
+            p = mod.make_player(level)
+            if p.mana_max <= 0:
+                return out
+            p.hp, p.mana = hp * p.hp_max, mana * p.mana_max
+            if p.pet is not None:
+                p.pet.hp = p.pet.hp_max
+            if ready is False:
+                p.cooldowns["Evocation"] = 1e9
+            pre = (p.hp, p.mana)
+            mod.after_fight(p, 0.0)
+            tool = None
+            if cls == "warlock" and p.mana > pre[1] + 1e-6:
+                tool = "Life Tap"
+            elif abs(p.hp - pre[0]) > 1e-6 or abs(p.mana - pre[1]) > 1e-6:
+                continue
+            if cls == "mage" and mod.evocation(p, 0.0) > 0:
+                tool = "Evocation"
+            after = {"hp": round(p.hp / p.hp_max, 4), "mana": round(p.mana / p.mana_max, 4)}
+            hp0, mana0 = p.hp, p.mana
+            d = s.downtime(p, 0.0)
+            does = [tool] if tool else []
+            if d["drink"] > 0:
+                does.append("drink")
+            if d["eat"] > 0:
+                does.append("eat")
+            if d["drink"] <= 0 and p.mana > mana0 + 1e-6:
+                does.append("top-up drink")
+            if d["eat"] <= 0 and p.hp > hp0 + 1e-6:
+                does.append("top-up eat")
+            v = {"class": cls, "spec": spec, "level": level, "hp": hp, "mana": mana, "does": does}
+            if cls == "mage":
+                v["tool_ready"] = ready
+            if tool and len(does) > 1:
+                v["after"] = after
+            if cls == "warlock":
+                tap = mod.spells.get("Life Tap")
+                v["health_max"] = round(p.hp_max, 1)
+                v["tap_cost"] = round(mod.mana_cost(tap), 1) if tap is not None else None
+            out.append(v)
+    return out
+
+
 def main():
     SA = LG.fightlab_signature_audit()
     out = {"made": datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
            "about": __doc__.split("\n\n")[0].replace("\n", " "),
            "rules": "Out of combat only. drink_below / eat_below: shares of maximum mana / health; tools: the class's own mana tools between "
-                    "fights, in order (a tool's cue comes before drinking). The fight lab drinks and eats back to full once a cue fires.",
+                    "fights, in order (a tool's cue comes before drinking). The fight lab drinks and eats back to full once a cue fires. "
+                    "eat_drink_together (per spec; absent = false): while you sit to drink or to eat, the other bar tops up too, at no extra "
+                    "time, only while it is below full; you stand when the bar that fired is full (the topped-up one may be left short). "
+                    "Evocation is not sitting and brings no top-up. vectors: the fight lab's own decision on set states, for the add-on's "
+                    "tests (hp and mana as shares; does in order; after: the bars once the tool ran; warlocks: health_max and tap_cost).",
            "classes": {}}
     for cls in CLASSES:
         specs = {}
@@ -96,6 +160,10 @@ def main():
                 checked = True
             specs[spec] = {"build": b["id"], "rotation": rot, "drink_below": round(drink, 3) if drink is not None else None,
                            "eat_below": round(eat, 3), "talents": {k: v for k, v in sorted(talents.items()) if v}}
+            if has_mana:   # the rules' REST_TOGETHER (2026-11-17): while you sit for one, the other bar tops up
+                specs[spec]["eat_drink_together"] = bool(getattr(mod, "REST_TOGETHER", False))
+                if sum(1 for v in out.setdefault("vectors", []) if v["class"] == cls and v["level"] == VECTOR_LEVEL) < 12:
+                    out["vectors"] += vectors(cls, spec, b, rot)
             dtxt = "-" if drink is None else f"{drink:.0%}"
             print(f"  {cls:8s} {spec:34s} {b['id']:38s} drink {dtxt:>5}  eat {eat:.0%}", flush=True)
         tools = TOOLS.get(cls, [])

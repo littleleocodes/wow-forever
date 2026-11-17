@@ -1743,6 +1743,10 @@ def fightlab_run():
     return FR
 
 
+NEXT_TALENTS_WORKERS = 4   # processes for next_talents.race (BelowNormal and the affinity are inherited from the caller)
+LAST_TALENT_RACE = {}      # the last talents_check's race of the next points ({"race": next_talents.race result}), for the page
+
+
 def talents_check(cfg, snap, level):
     FR = fightlab_run()
     b, order, prov, rot = pick(cfg)
@@ -1782,6 +1786,23 @@ def talents_check(cfg, snap, level):
     free = 60 - level
     owed = max(0, level - 9 - sum(have.values()))   # points you have and have not spent: due now, at your level (they had been labelled
     path = [(level + max(0, i + 1 - owed), n) for i, n in enumerate(queue[:free + owed])]   # from the next level, the last ones "dropped")
+    # off the page's order: the next points raced in the fight lab from the character's own talents (2026-11-17, user: "Yes, test the
+    # options"; next_talents.py). The same remaining points, so the destination stays the page's build; the rest keeps the page's order.
+    LAST_TALENT_RACE.clear()
+    if rows and path and cfg.get("metric") != "tank" and (cfg.get("talent_order") or {}).get("kind") != "tank":
+        import next_talents as NT
+        k = min(NT.POINTS, len(path))
+        try:
+            r = NT.race(cfg["class"], rot, cfg["spec"], have, [x for _, x in path], [L for L, _ in path[:k]], workers=NEXT_TALENTS_WORKERS)
+        except Exception as e:   # noqa: BLE001  (the page's order stays)
+            print(f"next talents: the race failed ({type(e).__name__}: {e}); the page's order stays", flush=True)
+            r = None
+        if r:
+            LAST_TALENT_RACE["race"] = r
+            left = [x for _, x in path]
+            for _, x in r["path"]:
+                left.remove(x)
+            path = list(r["path"]) + [(L, x) for (L, _), x in zip(path[k:], left)]
     # a character whose points mostly follow another build respecs (Tara, Retribution points for a tank, 2026-11-09): the order's points
     # up to its level to take after the respec, and the order's next points from there
     respec = []
@@ -1868,7 +1889,12 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     else:
         o += [f"Against the page's order at level {lv} ({want_n} points; you have {have_n} spent):", "", "| Talent | Yours | The page |", "|---|---|---|"]
         o += [f"| {n} | {h} | {w} |" for n, h, w in tdiff] + [""]
-        o += ["Your next talents (the page's order from where you are): " + ", ".join(f"{L} {n}" for L, n in tpath[:6]) + "."]
+        traced = LAST_TALENT_RACE.get("race")   # (not `race`: write_page's `race` is the character's)
+        if traced:
+            import next_talents as NT
+            o += ["Your next talents (" + NT.note(traced) + "): " + ", ".join(f"{L} {n}" for L, n in tpath[:6]) + "."]
+        else:
+            o += ["Your next talents (the page's order from where you are): " + ", ".join(f"{L} {n}" for L, n in tpath[:6]) + "."]
         if tdrop:
             o += [f"You stay one point off the page's order; at 60 you go without its last point ({', '.join(tdrop)}), which measures "
                   "least of its talents."]
@@ -1887,6 +1913,7 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
                          "ah_age": PRICES.age_hours() if PRICES else None, "spec": cfg["spec"], "page": cfg["page"],
                          "short": SHORT, "faster": FASTER},
                 "talents": {"diff": tdiff, "path": tpath[:6], "drop": tdrop, "have": have_n, "want": want_n, "respec": respec, "stale": tstale,
+                             "raced": __import__("next_talents").note(LAST_TALENT_RACE["race"]) if LAST_TALENT_RACE.get("race") else None,
                              "link": build_at(cfg["class"], twant)[1] if respec else None}})
     o += change_lines(d, events, lv)
     # now: the upgrades to go after at this level or within LOOKAHEAD levels, by what you do for them

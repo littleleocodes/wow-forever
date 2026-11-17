@@ -16,7 +16,7 @@ Against the page's order at level 37 (28 points; you have 27 spent):
 | Ice Shards | 5 | 4 |
 | Missile Barrage | 0 | 1 |
 
-Your next talents (the page's order from where you are): 37 Arctic Reach, 38 Missile Barrage, 39 Missile Barrage, 40 Arctic Reach, 41 Arcane Subtlety, 42 Arcane Subtlety.
+Your next talents (raced in the fight lab from your own talents: 31.68 s a kill over those levels against 31.90 s for the page's order; at 37: Missile Barrage 34.24 s a kill, Arctic Reach 35.01 s): 37 Missile Barrage, 38 Missile Barrage, 39 Arcane Subtlety, 40 Arctic Reach, 41 Arctic Reach, 42 Arcane Subtlety.
 You stay one point off the page's order; at 60 you go without its last point (Arcane Instability), which measures least of its talents.
 
 ## Legacy
@@ -31,13 +31,14 @@ Closest next points: Novice Paladin: Tara 22/25; Novice Spelunker: 5 of 6 dungeo
 
 ## Since your last refresh (2026-11-16 22:47, level 37)
 
-- Nothing new in the plan.
+- New in the plan: Regal Mantle of Magic (shoulder, level 37), Moonshadow Stave (weapon, level 52).
+- Left the plan: Elemental Raiment (chest: dropped: nothing in its place), Sorcerer Mantle of Frozen Wrath (shoulder: Regal Mantle of Magic at level 37 replaces it).
 
 ## Gold plan
 
 Gold now: **29g 11s 57c**. Training you need now and at the next two levels: **6g 80s**. Free for gear now: **22g 31s 57c**.
 
-Your spellbook (ForeverTape, 2026-11-16 21:54) lacks, at your level or below: Blizzard (rank 3) (36, 1g 30s), Mana Shield (rank 3) (36, 1g 30s): 2g 60s, train them first. Optional ranks it lacks: Detect Magic, Scorch (rank 1), Flamestrike (rank 2), Fireball (rank 5), Dampen Magic (rank 2), Scorch (rank 2), Fireball (rank 6), Amplify Magic (rank 2), Flamestrike (rank 3), Scorch (rank 3), Fireball (rank 7), Dampen Magic (rank 3) (8g 95s).
+Your spellbook (ForeverTape, 2026-11-17 07:23) lacks, at your level or below: Blizzard (rank 3) (36, 1g 30s), Mana Shield (rank 3) (36, 1g 30s): 2g 60s, train them first. Optional ranks it lacks: Detect Magic, Scorch (rank 1), Flamestrike (rank 2), Fireball (rank 5), Dampen Magic (rank 2), Scorch (rank 2), Fireball (rank 6), Amplify Magic (rank 2), Flamestrike (rank 3), Scorch (rank 3), Fireball (rank 7), Dampen Magic (rank 3) (8g 95s).
 
 Income is an estimate from Classic's data: coin and loot from about 165 kills a level (cloth, greens and other trade goods at the auction house's usual sale price after its cut, the rest at vendor prices), plus your pace of 12.0 quests a level at Classic's quest money. It assumes you sell what drops or use it in place of buying it. "Training" counts the spells your rotation and kit use; optional ones (spells your build does not press, teleports) are listed apart. Only spells your race can learn are counted, and a talent's spell only once your build has the talent. Spells new in Forever (Frostfire Bolt, Ice Lance, Teleport: Dalaran) are not in Classic's trainer table: their price here is Classic's usual price for the level, an estimate.
 
@@ -49,20 +50,23 @@ Income is an estimate from Classic's data: coin and loot from about 165 kills a 
 | 40 | 13g 48s 6c | - | - |
 | 41 | 18g 50s 29c | 10g 90s (Frost Ward, Conjure Food, Arcane Intellect, Cone of Cold, Ice Lance) | 4g 7s 50c |
 | 42 | 19g 50s 77c | - | - |
-| 43 | 22g 30c | 6g 90s (Frostbolt, Blizzard, Mana Shield) | - |
-| 44 | 28g 41s 65c | - | - |
-| 45 | 21g 56s 9c | 8g (Fire Blast, Arcane Explosion, Mage Armor) | 2g 60s |
-| 46 | 25g 76s 88c | - | - |
-| 47 | 25g 30s 6c | 5g 60s (Arcane Missiles, Ice Lance) | 11g 20s |
-| 48 | 39g 20s 8c | - | - |
-| 49 | 34g 33s 87c | 16g (Conjure Water, Cone of Cold, Frostbolt, Ice Armor, Fire Ward) | 9g 60s |
-| 50 | 35g 89s 47c | - | - |
+| 43 | 22g 27c | 6g 90s (Frostbolt, Blizzard, Mana Shield) | - |
+| 44 | 28g 42s 6c | - | - |
+| 45 | 21g 56s 59c | 8g (Fire Blast, Arcane Explosion, Mage Armor) | 2g 60s |
+| 46 | 25g 77s 2c | - | - |
+| 47 | 25g 30s 15c | 5g 60s (Arcane Missiles, Ice Lance) | 11g 20s |
+| 48 | 39g 20s 10c | - | - |
+| 49 | 34g 33s 90c | 16g (Conjure Water, Cone of Cold, Frostbolt, Ice Armor, Fire Ward) | 9g 60s |
+| 50 | 35g 87s 12c | - | - |
 
-Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Gnomeregan Exiles; Forever's not confirmed). At this income you would have about 49g 43s 24c by 40 after training and the plan's gear, enough for the mount at 44.
+Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Gnomeregan Exiles; Forever's not confirmed). At this income you would have about 49g 77s 46c by 40 after training and the plan's gear, enough for the mount at 44.
 
-Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 5g 30s 86c before 40 and 13g 27s 64c in all; you would reach 60 with about 663g 91s 23c after the mount.
+Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 4g 96s 64c before 40 and 12g 73s 54c in all; you would reach 60 with about 664g 15s 27c after the mount.
 
 Measured from your refreshes: 2g 30s 61c net a level (gold change after what you spent, 10.6 levels from 2026-11-09 14:38 to 2026-11-16 22:55).
+
+> **Heads up:** Gold is your bag add-on's (2026-11-17 07:23): Blizzard's data are from your logout at 2026-11-16 21:56.
+> **Heads up:** Catch up with your guide is off for this refresh: your quest log is Blizzard's from your logout at 2026-11-16 21:56, older than your guide's position (saved 2026-11-17 07:24), so it cannot tell which quests you picked up since. Log out once and refresh.
 
 ## Now (level 37)
 
@@ -70,17 +74,17 @@ Everything below is worth doing at your level or within 3 levels: items you can 
 
 ### Judging a drop or an auction find
 
-Count a piece's stats in spell power: 1 intellect = 0.10, 1 spirit = 0.58, 1 stamina = 0.01, 1 mana per 5 sec = 1.05, 100 armor = 1.08; school damage counts by your build's share (frost 85%, arcane 15%: +10 frost damage counts 8.5), "spell damage and healing" in full. A find is worth wearing when it reaches the number below: enough to save 20 minutes before the plan's next upgrade of the slot.
+Count a piece's stats in spell power: 1 intellect = 0.06, 1 spirit = 0.54, 1 stamina = 0.03, 1 mana per 5 sec = 0.95, 100 armor = 1.12; school damage counts by your build's share (frost 85%, arcane 15%: +10 frost damage counts 8.5), "spell damage and healing" in full. A find is worth wearing when it reaches the number below: enough to save 20 minutes before the plan's next upgrade of the slot.
 
 | Slot | You wear (or the plan's next piece) | Worth (spell power) | A find must reach | Next planned upgrade |
 |---|---|---|---|---|
 | head | Silk Headband | 9 | 21 | 45 |
 | neck | Ephemeral Choker | 3 | 6 | - |
-| shoulder | Sorcerer Mantle of Frozen Wrath (planned, level 37) | 15 | 18 | - |
+| shoulder | Regal Mantle of Magic (planned, level 37) | 15 | 19 | - |
 | back | Azure Silk Cloak | 10 | 14 | - |
-| chest | Elemental Raiment (planned, level 37) | 22 | 25 | - |
-| wrist | Spidertank Oilrag | 12 | 16 | - |
-| hands | Dreamweave Gloves (planned, level 40) | 23 | 27 | - |
+| chest | Crimson Silk Vest | 13 | 16 | - |
+| wrist | Spidertank Oilrag | 12 | 15 | - |
+| hands | Dreamweave Gloves (planned, level 40) | 22 | 26 | - |
 | waist | Elder's Sash of Frozen Wrath | 11 | 14 | - |
 | legs | Durable Pants of Frozen Wrath | 16 | 21 | 53 |
 | feet | Regal Boots of Frozen Wrath (planned, level 37) | 15 | 18 | - |
@@ -88,73 +92,64 @@ Count a piece's stats in spell power: 1 intellect = 0.10, 1 spirit = 0.58, 1 sta
 | finger2 | Runemender's Seal | 7 | 10 | - |
 | trinket1 | Satchel of Potions | 0 | 3 | - |
 | trinket2 | empty | 0 | 3 | - |
-| weapon | Debt Collector | 34 | 37 | - |
-| ranged | Icefury Wand (planned, level 37) | 21 | 24 | - |
+| weapon | Debt Collector | 34 | 40 | 52 |
+| ranged | Icefury Wand (planned, level 37) | 22 | 25 | - |
 
 ### Enchant
 
-- **Spidertank Oilrag** (wrist): skip, Enchant Bracer - Spirit saves only about 15 min of killing before you replace it.
-- **Elemental Raiment** (chest, once you have it at level 37): skip, Enchant Chest - Minor Stats saves only about 4 min of killing before you replace it.
-- **Debt Collector** (weapon): At Enchanting 190: Enchant Weapon - Winter's Might (pattern: Formula: Enchant Weapon - Winter's Might), 2.9% faster kills.
+- **Spidertank Oilrag** (wrist): skip, Enchant Bracer - Spirit saves only about 14 min of killing before you replace it.
+- **Crimson Silk Vest** (chest): skip, Enchant Chest - Minor Stats saves only about 3 min of killing before you replace it.
+- **Debt Collector** (weapon): At Enchanting 190: Enchant Weapon - Winter's Might (pattern: Formula: Enchant Weapon - Winter's Might), 3.0% faster kills.
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 0.6 hours old). "For your trip": enough to keep it up for about 2.5 hours of play, to your next training at level 38 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 0.8 hours old). "For your trip": enough to keep it up for about 2.5 hours of play, to your next training at level 38 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|
-| Weapon oil | Lesser Wizard Oil | +16 spell power | 3.7% | 30 min | buy (you make it at Enchanting 200; you have 165) | 11s 49c | ×6 (68s 94c) | no: saves 1.1 min an hour, costs 3.5 |
-| Weapon oil | Minor Wizard Oil | +8 spell power | 1.8% | 30 min | make it (Enchanting 45) | 2s 93c | ×6 (17s 58c) | no: saves 0.6 min an hour, costs 0.9 |
-| Food | Spotted Yellowtail | +22 spell power, +5% kill experience | 5.1% | 15 min | buy (you make it at Cooking 225; you have 161) | 72c | ×11 (7s 92c) | yes: saves 3.0 min an hour, costs 0.4 |
-| Food | Nightfin Soup | +22 spell power, +5% kill experience | 5.1% | 15 min | buy (you make it at Cooking 250; you have 161) | 4s 80c | ×11 (52s 80c) | yes: saves 3.0 min an hour, costs 2.9 |
-| Food | Briny Seafood Stew | +14 spell power, +5% kill experience | 3.2% | 15 min | buy | 15s 3c | ×11 (1g 65s 33c) | no: saves 2.5 min an hour, costs 9.1 |
-| Elixir | Arcane Elixir | +20 spell power | 4.6% | 30 min | buy | 16s 50c | ×6 (99s) | no: saves 1.4 min an hour, costs 5.0 |
-| Elixir | Lesser Arcane Elixir | +15 spell power | 3.4% | 30 min | buy | 9s 20c | ×6 (55s 20c) | no: saves 1.0 min an hour, costs 2.8 |
-| Elixir | Elixir of Frost Power | +12.75 spell power | 2.9% | 30 min | buy | no price | ? | ? |
-| Scroll | Scroll of Spirit III | +11 spirit | 1.5% | 30 min | buy | 2s 63c | ×6 (15s 78c) | no: saves 0.4 min an hour, costs 0.8 |
-| Scroll | Scroll of Spirit II | +7 spirit | 0.9% | 30 min | buy | 89c | ×6 (5s 34c) | yes: saves 0.3 min an hour, costs 0.3 |
+| Weapon oil | Lesser Wizard Oil | +16 spell power | 3.7% | 30 min | buy (you make it at Enchanting 200; you have 165) | 11s 50c | ×5 (57s 50c) | no: saves 1.1 min an hour, costs 3.4 |
+| Weapon oil | Minor Wizard Oil | +8 spell power | 1.9% | 30 min | make it (Enchanting 45) | 3s 7c | ×5 (15s 35c) | no: saves 0.6 min an hour, costs 0.9 |
+| Food | Spotted Yellowtail | +22 spell power, +5% kill experience | 5.1% | 15 min | buy (you make it at Cooking 225; you have 161) | 90c | ×10 (9s) | yes: saves 3.0 min an hour, costs 0.5 |
+| Food | Nightfin Soup | +22 spell power, +5% kill experience | 5.1% | 15 min | buy (you make it at Cooking 250; you have 161) | 3s 59c | ×10 (35s 90c) | yes: saves 3.0 min an hour, costs 2.1 |
+| Food | Briny Seafood Stew | +14 spell power, +5% kill experience | 3.3% | 15 min | buy | 17s 17c | ×10 (1g 71s 70c) | no: saves 2.5 min an hour, costs 10.3 |
+| Elixir | Arcane Elixir | +20 spell power | 4.7% | 30 min | buy | 30s 50c | ×5 (1g 52s 50c) | no: saves 1.4 min an hour, costs 9.1 |
+| Elixir | Lesser Arcane Elixir | +15 spell power | 3.5% | 30 min | buy | 7s 50c | ×5 (37s 50c) | no: saves 1.0 min an hour, costs 2.2 |
+| Elixir | Elixir of Frost Power | +12.75 spell power | 3.0% | 30 min | buy | no price | ? | ? |
+| Scroll | Scroll of Spirit III | +11 spirit | 1.4% | 30 min | buy | 2s 80c | ×5 (14s) | no: saves 0.4 min an hour, costs 0.8 |
+| Scroll | Scroll of Spirit II | +7 spirit | 0.9% | 30 min | buy | 1s 85c | ×5 (9s 25c) | no: saves 0.3 min an hour, costs 0.6 |
 
 One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience is extra: a food's +5% speeds up the experience you get from kills, not from quests. Elixirs: Classic lets several stack; Forever's rule is not confirmed.
 
 ### Quests to do
 
-- **ranged**: Icefury Wand, 1.7% faster kills, replaces Wand of Mana Concentration (wear it right away; best to the end of leveling; saves about 25 min of killing). quest "Mage's Wand" (level 40; the chain starts with "Journey to the Marsh" from Deino / Jennea Cannon, level 30). Not on your RestedXP route: from Tabetha (Dustwallow Marsh 46.0, 57.1). Why it stays: Freezing Shard at 37, only 0.0% faster; Wizard's Hand of Frozen Wrath at 48, only 0.5% faster.
+- **ranged**: Icefury Wand, 1.8% faster kills, replaces Wand of Mana Concentration (wear it right away; best to the end of leveling; saves about 25 min of killing). quest "Mage's Wand" (level 40; the chain starts with "Journey to the Marsh" from Deino / Jennea Cannon, level 30). Not on your RestedXP route: from Tabetha (Dustwallow Marsh 46.0, 57.1). Why it stays: Freezing Shard at 37, only 0.0% faster; Wizard's Hand of Frozen Wrath at 48, 0.5% faster, saves about 5 min before 60.
 
 ### Buy on the Auction House (listed now; prices change hourly; most minutes saved per gold first)
 
-- **hands**: Dreamweave Gloves, 3.8% faster kills, replaces Town Clerk's Mittens (wear at 40; best to the end of leveling; saves about 54 min of killing). Tailoring: learn it first (trainer; Classic asked skill 225, Forever often less; you have 177); Auction House now: 2g 38s. Saves about 54 min of killing; earning its price takes about 21 min of play. Fits your gear budget (20g 69s 69c left after it).
-- **shoulder**: Sorcerer Mantle of Frozen Wrath, 3.1% faster kills, replaces Violet Sorcerer's Mantle (wear it right away; best to the end of leveling; saves about 43 min of killing). Auction House now: 1g 29s 99c. Why it stays: Netherfroth Shoulders at 42, 0.9% faster, saves about 14 min before 60; Elegant Mantle of Frozen Wrath at 55, 1.2% faster, saves about 6 min before 60; Argent Shoulders at 56, 1.7% faster, saves about 7 min before 60. Saves about 43 min of killing; earning its price takes about 20 min of play. Fits your gear budget (19g 39s 70c left after it).
-- **chest**: Elemental Raiment, 2.0% faster kills, replaces Crimson Silk Vest (wear it right away; best to the end of leveling; saves about 27 min of killing). Auction House now: 99s 99c. Why it stays: Ghostweave Vest at 51, 1.2% faster, saves about 14 min before 60; Robe of Winter Night at 52, 1.8% faster, saves about 15 min before 60; Robe of the Archmage at 57, 2.7% faster, saves about 9 min before 60. Saves about 27 min of killing; earning its price takes about 15 min of play. Fits your gear budget (18g 39s 71c left after it).
+- **hands**: Dreamweave Gloves, 3.9% faster kills, replaces Town Clerk's Mittens (wear at 40; best to the end of leveling; saves about 53 min of killing). Tailoring: learn it first (trainer; Classic asked skill 225, Forever often less; you have 177); Auction House now: 2g 30s. Saves about 53 min of killing; earning its price takes about 20 min of play. Fits your gear budget (20g 71s 93c left after it).
 
 ### Look for on the Auction House (not listed this hour, usually is; usual prices)
 
-- **feet**: Regal Boots of Frozen Wrath, 1.6% faster kills, replaces Spidersilk Boots (wear it right away; best to the end of leveling; saves about 22 min of killing). Auction House: usually listed (in 26% of the hourly snapshots), about 1g 39s, not this hour. Why it stays: Gossamer Boots of Frozen Wrath at 40, 0.5% faster, saves about 7 min before 60; Councillor's Boots of Frozen Wrath at 51, 0.9% faster, saves about 9 min before 60; Venomspew Footpads at 53, 1.5% faster, saves about 12 min before 60. Saves about 22 min of killing; earning its price takes about 21 min of play. Fits your gear budget (17g 71c left after it).
+- **shoulder**: Regal Mantle of Magic, 3.4% faster kills, replaces Violet Sorcerer's Mantle (wear it right away; best to the end of leveling; saves about 47 min of killing). Auction House: usually listed (in 57% of the hourly snapshots), about 1g 98s, not this hour. Why it stays: Regal Mantle of Frozen Wrath at 37, only 0.3% faster; Ghostweave Mantle at 54, 0.9% faster, saves about 6 min before 60; Argent Shoulders at 56, 1.5% faster, saves about 7 min before 60. Saves about 47 min of killing; earning its price takes about 30 min of play. Fits your gear budget (18g 73s 93c left after it).
+- **feet**: Regal Boots of Frozen Wrath, 1.7% faster kills, replaces Spidersilk Boots (wear it right away; best to the end of leveling; saves about 23 min of killing). Auction House: usually listed (in 25% of the hourly snapshots), about 1g 39s, not this hour. Why it stays: Royal Boots of Frozen Wrath at 39, 0.6% faster, saves about 7 min before 60; Councillor's Boots of Frozen Wrath at 51, 0.9% faster, saves about 8 min before 60; Venomspew Footpads at 53, 1.5% faster, saves about 11 min before 60. Saves about 23 min of killing; earning its price takes about 21 min of play. Fits your gear budget (17g 34s 93c left after it).
 
 ### Dungeon runs
 
 Run each once, with its quests in your log first: the quests' experience is the main reward. A drop that beats what the plan has you wear is a bonus; the plan works without it.
 
-- **Razorfen Kraul** (29-38), run at level 33: your RestedXP guide runs it then.
+- **Razorfen Kraul** (29-38), run at level 33: your RestedXP guide runs it then; its drops are worth about 5 min on average.
   - Already in your log: The Crone of the Kraul (level 34)
-- **Scarlet Monastery** (30-45), run at level 39: your RestedXP guide runs it then and picks up 1 of its quests; its drops are worth about 37 min on average.
-  - Drop: Hypnotic Blade + Orb of the Forgotten Seer (weapon, from level 37; Arcanist Doan or Bloodmage Thalnos, 50% drop): over your Debt Collector + Orb of Mystic Insight, 4.3% faster, about 34 min saved if it drops
-  - Drop: Triune Amulet (neck, from level 39; High Inquisitor Whitemane, 40% drop): over your Ephemeral Choker, 1.9% faster, about 28 min saved if it drops
-  - Drop: Inventor's Focal Sword + Orb of the Forgotten Seer (weapon, from level 48; Bloodmage Thalnos, 50% drop; the other half drops in Maraudon, 33%): over your Debt Collector + Orb of Mystic Insight, 5.0% faster, about 54 min saved with both halves
+  - Drop: Swinetusk Shank + Orb of the Forgotten Seer (weapon, from level 37; Agathelos the Raging, 40% drop; the other half drops in Scarlet Monastery, 50%): over your Debt Collector + Orb of Mystic Insight, 3.5% faster, about 27 min saved with both halves
+- **Scarlet Monastery** (30-45), run at level 39: your RestedXP guide runs it then and picks up 1 of its quests; its drops are worth about 20 min on average.
+  - Drop: Swinetusk Shank + Orb of the Forgotten Seer (weapon, from level 37; Bloodmage Thalnos, 50% drop; the other half drops in Razorfen Kraul, 40%): over your Debt Collector + Orb of Mystic Insight, 3.5% faster, about 27 min saved with both halves
+  - Drop: Triune Amulet (neck, from level 39; High Inquisitor Whitemane, 40% drop): over your Ephemeral Choker, 2.0% faster, about 27 min saved if it drops
+  - Drop: Inventor's Focal Sword + Orb of the Forgotten Seer (weapon, from level 48; Bloodmage Thalnos, 50% drop; the other half drops in Maraudon, 33%): over your Debt Collector + Orb of Mystic Insight, 5.1% faster, about 24 min saved with both halves
 - **Razorfen Downs** (37-46), run at level 40: your RestedXP guide runs it then and picks up 3 of its quests.
-
-### Catch up with your guide
-
-Things your RestedXP guide did before your step that it still counts on: without them it skips the steps that hand them in or take their next part. Do each by its deadline (listed in Off the guide too).
-
-- **Level 33, step 34 of the guide's 33-34 part**, when the guide brings you to Thousand Needles (Thousand Needles 27.8, 16.7): **Pick up Highperch Venom, level 30** (catch up with your guide). Before step 46 of the guide's 33-34 part: the guide does its objectives at step 46 of its 33-34 part and hands it in after; a detour to Dustwallow Marsh from here; from Fiora Longears (Dustwallow Marsh 66.5, 45.1).
-- **Level 34, step 69 of the guide's 33-34 part**, right after you hand in "Lieutenant Paval Reethe" to Captain Garran Vimes (Dustwallow Marsh 68.2, 48.6): **Do They Call Him Smiling Jim, level 35** (catch up with your guide). Before step 70 of the guide's 33-34 part: the guide hands it in at step 70 of its 33-34 part; from Guard Byron (Dustwallow Marsh 66.2, 46.1).
 
 ### Off the guide
 
 In your RestedXP route's order (the full list: Off the guide, below).
 
-- **Level 33, step 34 of the guide's 33-34 part**, when the guide brings you to Thousand Needles (Thousand Needles 27.8, 16.7): **Pick up Highperch Venom, level 30** (catch up with your guide). Before step 46 of the guide's 33-34 part: the guide does its objectives at step 46 of its 33-34 part and hands it in after; a detour to Dustwallow Marsh from here; from Fiora Longears (Dustwallow Marsh 66.5, 45.1).
-- **Level 34, step 69 of the guide's 33-34 part**, right after you hand in "Lieutenant Paval Reethe" to Captain Garran Vimes (Dustwallow Marsh 68.2, 48.6): **Do They Call Him Smiling Jim, level 35** (catch up with your guide). Before step 70 of the guide's 33-34 part: the guide hands it in at step 70 of its 33-34 part; from Guard Byron (Dustwallow Marsh 66.2, 46.1).
 - **Level 37, step 85 of the guide's 36-37 part**, when the guide brings you to Elsharin (Stormwind City 36.9, 81.1): **Mage's Wand** (for the gear). Rewards Icefury Wand; start with "Journey to the Marsh" from Jennea Cannon (Stormwind City 36.9, 81.1).
 
 ### Talents and the rest
@@ -169,54 +164,50 @@ The cheapest way up with the recipes you know, materials at today's prices (auct
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 177-200 | Crimson Silk Pantaloons | 75 | 30g 27s 20c |
+| 177-200 | Crimson Silk Pantaloons | 75 | 30g 51s 18c |
 
-You spend about 30g 27s 20c in all to reach 200, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 200 no recipe you know gives points: learn new ones at the trainer.
+You spend about 30g 51s 18c in all to reach 200, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 200 no recipe you know gives points: learn new ones at the trainer.
 Materials: Bolt of Silk Cloth x300, Silken Thread x150, Red Dye x150.
 
 ### Enchanting 165 to 225
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 165-170 | Minor Mana Oil | 8 | 24s 83c |
-| 170-209 | Enchant Gloves - Fishing | 131 | 10g 45s 20c |
-| 209-215 | Runed Golden Rod | 98 | 35g 7s 42c |
+| 165-170 | Minor Mana Oil | 8 | 21s 86c |
+| 170-209 | Enchant Gloves - Fishing | 131 | 10g 53s 7c |
+| 209-215 | Runed Golden Rod | 98 | 40g 34s 66c |
 
-You spend about 45g 77s 45c in all to reach 215, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 215 no recipe you know gives points: learn new ones at the trainer.
+You spend about 51g 9s 59c in all to reach 215, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 215 no recipe you know gives points: learn new ones at the trainer.
 Materials: Greater Astral Essence x98, Golden Rod x98, Soul Dust x237, Iridescent Pearl x98, Blackmouth Oil x131, Maple Seed x16.
 
 ### Cooking 161 to 225
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 161-162 | Succulent Pork Ribs | 4 | makes 1s 35c |
-| 162-169 | Goblin Deviled Clams | 7 | makes 74c |
-| 169-176 | Curiously Tasty Omelet | 7 | 77c |
-| 176-177 | Goblin Deviled Clams | 1 | 34c |
-| 177-181 | Crocolisk Gumbo | 7 | 2s 51c |
-| 181-182 | Curiously Tasty Omelet | 1 | 1s 27c |
-| 182-190 | Goblin Deviled Clams | 17 | 13s 15c |
-| 190-197 | Tasty Lion Steak | 8 | 15s 40c |
-| 197-200 | Goblin Deviled Clams | 17 | 13s 73c |
-| 200-201 | Tasty Lion Steak | 1 | 5s 85c |
-| 201-203 | Curiously Tasty Omelet | 9 | 14s 36c |
-| 203-225 | Tasty Lion Steak | 64 | 3g 49s 93c |
+| 161-162 | Succulent Pork Ribs | 4 | makes 2s 7c |
+| 162-170 | Curiously Tasty Omelet | 8 | makes 76c |
+| 170-176 | Goblin Deviled Clams | 7 | 35c |
+| 176-178 | Gooey Spider Cake | 6 | 1s 14c |
+| 178-182 | Crocolisk Gumbo | 8 | 2s 85c |
+| 182-193 | Goblin Deviled Clams | 25 | 23s 20c |
+| 193-206 | Curiously Tasty Omelet | 54 | 71s 61c |
+| 206-225 | Tasty Lion Steak | 60 | 6g 44s 82c |
 
-You spend about 4g 15s 23c in all to reach 225, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
-Materials: Lion Meat x146, Soothing Spices x73, Hot Spices x73, Raptor Egg x18, Tangy Clam Meat x43, Boar Ribs x9.
+You spend about 7g 41s 13c in all to reach 225, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
+Materials: Lion Meat x119, Soothing Spices x60, Raptor Egg x62, Hot Spices x113, Tangy Clam Meat x33, Boar Ribs x9.
 
 ### First Aid 56 to 150
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 56-63 | Minor Healing Potion | 8 | 3s 14c |
+| 56-63 | Minor Healing Potion | 8 | 2s 77c |
 | 63-68 | Heavy Linen Bandage | 7 | 2s 72c |
-| 68-82 | Minor Healing Potion | 28 | 13s 8c |
+| 68-82 | Minor Healing Potion | 28 | 13s 7c |
 | 82-83 | Heavy Linen Bandage | 3 | 1s 40c |
 | 83-86 | Minor Healing Potion | 11 | 5s 5c |
 | 86-100 | Heavy Linen Bandage | 163 | 91s 4c |
 
-You spend about 1g 16s 43c in all to reach 100, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 100 no recipe you know gives points: learn new ones at the trainer.
+You spend about 1g 16s 5c in all to reach 100, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 100 no recipe you know gives points: learn new ones at the trainer.
 Materials: Linen Cloth x345, Peacebloom x47, Empty Vial x47, Mild Spices x47.
 
 ## Your gear
@@ -224,22 +215,22 @@ Materials: Linen Cloth x345, Peacebloom x47, Empty Vial x47, Mild Spices x47.
 | Slot | Item | Worth at your level | Replaced at |
 |---|---|---|---|
 | head | Silk Headband | 2.1% faster kills | level 45: Dreamweave Circlet |
-| neck | Ephemeral Choker | 0.7% faster kills | not before 60 by 0.5% |
-| shoulder | Violet Sorcerer's Mantle | 0.3% faster kills | level 37: Sorcerer Mantle of Frozen Wrath |
+| neck | Ephemeral Choker | 0.6% faster kills | not before 60 by 0.5% |
+| shoulder | Violet Sorcerer's Mantle | 0.2% faster kills | level 37: Regal Mantle of Magic |
 | back | Azure Silk Cloak | 2.4% faster kills | not before 60 by 0.5% |
-| chest | Crimson Silk Vest | 3.0% faster kills | level 37: Elemental Raiment |
+| chest | Crimson Silk Vest | 2.9% faster kills | not before 60 by 0.5% |
 | wrist | Spidertank Oilrag | 2.8% faster kills | not before 60 by 0.5% |
-| hands | Town Clerk's Mittens | 0.9% faster kills | level 40: Dreamweave Gloves |
-| waist | Elder's Sash of Frozen Wrath | 2.5% faster kills | not before 60 by 0.5% |
-| legs | Durable Pants of Frozen Wrath | 3.7% faster kills | level 53: Ghostweave Pants |
+| hands | Town Clerk's Mittens | 0.8% faster kills | level 40: Dreamweave Gloves |
+| waist | Elder's Sash of Frozen Wrath | 2.6% faster kills | not before 60 by 0.5% |
+| legs | Durable Pants of Frozen Wrath | 3.8% faster kills | level 53: Ghostweave Pants |
 | feet | Spidersilk Boots | 1.8% faster kills | level 37: Regal Boots of Frozen Wrath |
-| finger1 | Ring of Forlorn Spirits | 1.8% faster kills | not before 60 by 0.5% |
-| finger2 | Runemender's Seal | 1.6% faster kills | not before 60 by 0.5% |
+| finger1 | Ring of Forlorn Spirits | 1.9% faster kills | not before 60 by 0.5% |
+| finger2 | Runemender's Seal | 1.5% faster kills | not before 60 by 0.5% |
 | trinket1 | Satchel of Potions | 0.0% faster kills | not before 60 by 0.5% |
 | trinket2 | **empty** | 0 | nothing worth 0.5% before 60 |
-| main hand | Debt Collector | 7.8% faster kills | not before 60 by 0.5% |
-| off hand | Orb of Mystic Insight | 1.7% faster kills | not before 60 by 0.5% |
-| ranged | Wand of Mana Concentration | 3.0% faster kills | level 37: Icefury Wand |
+| main hand | Debt Collector | 7.9% faster kills | level 52: Moonshadow Stave |
+| off hand | Orb of Mystic Insight | 1.7% faster kills | level 52: Moonshadow Stave |
+| ranged | Wand of Mana Concentration | 3.2% faster kills | level 37: Icefury Wand |
 
 ## Level by level
 
@@ -249,14 +240,21 @@ Each upgrade worth 0.5% faster kills or more, under the level at which you can g
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **head**: Dreamweave Circlet, 3.4% faster kills, replaces Silk Headband (wear it right away; best to the end of leveling; saves about 43 min of killing). Tailoring: learn it first (trainer; Classic asked skill 250, Forever often less; you have 177); Auction House now: 4g 5s. Saves about 43 min of killing; earning its price takes about 27 min of play. Fits your gear budget (50g 99c left after it).
+- **head**: Dreamweave Circlet, 3.3% faster kills, replaces Silk Headband (wear it right away; best to the end of leveling; saves about 40 min of killing). Tailoring: learn it first (trainer; Classic asked skill 250, Forever often less; you have 177); Auction House now: 3g 54s. Saves about 40 min of killing; earning its price takes about 26 min of play. Fits your gear budget (50g 40s 82c left after it).
+
+
+### Level 50
+
+#### Quests to do
+
+- **weapon**: Moonshadow Stave, 3.6% faster kills, replaces Debt Collector (wear at 52; best to the end of leveling; saves about 30 min of killing). quest "A Better Ingredient" (level 52; the chain starts with "Bloodpetal Poison" from Torwa Pathfinder, level 50). Not on your RestedXP route: from Torwa Pathfinder (Un'Goro Crater 71.6, 76.0). Why it stays: Grove Subjugator's Blade at 55, 1.2% faster, saves about 7 min before 60; Grove Subjugator's Blade at 55, 1.2% faster, saves about 7 min before 60; Grove Subjugator's Blade at 59, 1.7% faster, saves about 2 min before 60.
 
 
 ### Level 53
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **legs**: Ghostweave Pants, 2.8% faster kills, replaces Durable Pants of Frozen Wrath (wear it right away; best to the end of leveling; saves about 22 min of killing). Tailoring: learn it first (pattern: Pattern: Ghostweave Pants (drop); Classic asked skill 290, Forever often less; you have 177); Auction House: usually listed (in 39% of the hourly snapshots), about 8g 99s, not this hour. Saves about 22 min of killing; earning its price takes about 19 min of play. Fits your gear budget (122g 95s left after it).
+- **legs**: Ghostweave Pants, 2.7% faster kills, replaces Durable Pants of Frozen Wrath (wear it right away; best to the end of leveling; saves about 20 min of killing). Tailoring: learn it first (pattern: Pattern: Ghostweave Pants (drop); Classic asked skill 290, Forever often less; you have 177); Auction House now: 7g 99s. Saves about 20 min of killing; earning its price takes about 18 min of play. Fits your gear budget (123g 45s 98c left after it).
 
 
 ## Off the guide
@@ -265,29 +263,30 @@ Only what is worth stepping off your RestedXP route for, in the route's order: c
 
 Checked against your RestedXP add-on: you are on step 34 of its 33-34 part; the add-on's own step id matches the guide text on this PC.
 
-- **Level 33, step 34 of the guide's 33-34 part**, when the guide brings you to Thousand Needles (Thousand Needles 27.8, 16.7): **Pick up Highperch Venom, level 30** (catch up with your guide). Before step 46 of the guide's 33-34 part: the guide does its objectives at step 46 of its 33-34 part and hands it in after; a detour to Dustwallow Marsh from here; from Fiora Longears (Dustwallow Marsh 66.5, 45.1).
-- **Level 34, step 69 of the guide's 33-34 part**, right after you hand in "Lieutenant Paval Reethe" to Captain Garran Vimes (Dustwallow Marsh 68.2, 48.6): **Do They Call Him Smiling Jim, level 35** (catch up with your guide). Before step 70 of the guide's 33-34 part: the guide hands it in at step 70 of its 33-34 part; from Guard Byron (Dustwallow Marsh 66.2, 46.1).
 - **Level 37, step 85 of the guide's 36-37 part**, when the guide brings you to Elsharin (Stormwind City 36.9, 81.1): **Mage's Wand** (for the gear). Rewards Icefury Wand; start with "Journey to the Marsh" from Jennea Cannon (Stormwind City 36.9, 81.1).
+- **Level 50, step 58 of the guide's 49-50 part**, when the guide brings you to Un'Goro Crater (Un'Goro Crater 71.6, 76.0): **A Better Ingredient** (for the gear). Rewards Moonshadow Stave; start with "Bloodpetal Poison" from Torwa Pathfinder (Un'Goro Crater 71.6, 76.0).
 
 ## Dungeon runs
 
 Every leveling dungeon you have not outgrown, once, at the level its quests fit: pick the quests up first. Drops are bonuses over what the plan has you wear: wear one if it drops, the plan goes on as written if not. Drop chances are Classic's (25% where it has none); "about N min" is a drop's minutes of killing saved over the plan's item, and a run's drops are worth that times their chances. Minutes assume 50% of your experience comes from kills.
 
-- **Razorfen Kraul** (29-38), run at level 33: your RestedXP guide runs it then.
+- **Razorfen Kraul** (29-38), run at level 33: your RestedXP guide runs it then; its drops are worth about 5 min on average.
   - Already in your log: The Crone of the Kraul (level 34)
-- **Scarlet Monastery** (30-45), run at level 39: your RestedXP guide runs it then and picks up 1 of its quests; its drops are worth about 37 min on average.
-  - Drop: Hypnotic Blade + Orb of the Forgotten Seer (weapon, from level 37; Arcanist Doan or Bloodmage Thalnos, 50% drop): over your Debt Collector + Orb of Mystic Insight, 4.3% faster, about 34 min saved if it drops
-  - Drop: Triune Amulet (neck, from level 39; High Inquisitor Whitemane, 40% drop): over your Ephemeral Choker, 1.9% faster, about 28 min saved if it drops
-  - Drop: Inventor's Focal Sword + Orb of the Forgotten Seer (weapon, from level 48; Bloodmage Thalnos, 50% drop; the other half drops in Maraudon, 33%): over your Debt Collector + Orb of Mystic Insight, 5.0% faster, about 54 min saved with both halves
+  - Drop: Swinetusk Shank + Orb of the Forgotten Seer (weapon, from level 37; Agathelos the Raging, 40% drop; the other half drops in Scarlet Monastery, 50%): over your Debt Collector + Orb of Mystic Insight, 3.5% faster, about 27 min saved with both halves
+- **Scarlet Monastery** (30-45), run at level 39: your RestedXP guide runs it then and picks up 1 of its quests; its drops are worth about 20 min on average.
+  - Drop: Swinetusk Shank + Orb of the Forgotten Seer (weapon, from level 37; Bloodmage Thalnos, 50% drop; the other half drops in Razorfen Kraul, 40%): over your Debt Collector + Orb of Mystic Insight, 3.5% faster, about 27 min saved with both halves
+  - Drop: Triune Amulet (neck, from level 39; High Inquisitor Whitemane, 40% drop): over your Ephemeral Choker, 2.0% faster, about 27 min saved if it drops
+  - Drop: Inventor's Focal Sword + Orb of the Forgotten Seer (weapon, from level 48; Bloodmage Thalnos, 50% drop; the other half drops in Maraudon, 33%): over your Debt Collector + Orb of Mystic Insight, 5.1% faster, about 24 min saved with both halves
 - **Razorfen Downs** (37-46), run at level 40: your RestedXP guide runs it then and picks up 3 of its quests.
 - **Uldaman** (41-51), run at level 46: your RestedXP guide runs it then.
   - Pick up first: Indurium Ore (level 42, start with "Martek the Exiled" from Fizzle Brassbolts (Thousand Needles 78.1, 77.1)); Back to Uldaman → Restoring the Necklace (3 parts, level 42-44, start with "The Shattered Necklace", which starts from Shattered Necklace, an 8% drop from 6 kinds of mobs in Badlands); Wild Leather Shoulders (level 45, start with "Wild Leather Armor" from Pratt McGrubben (Feralas 30.6, 42.7))
 - **Zul'Farrak** (44-54), run at level 47: your RestedXP guide runs it then and picks up 4 of its quests.
   - Pick up first: The Prophecy of Mosh'aru (level 47, start with "Screecher Spirits" from Yeh'kinya (Tanaris 67.0, 22.4))
-- **Maraudon** (46-55), run at level 53: your RestedXP guide runs it then and picks up 2 of its quests; its drops are worth about 9 min on average.
-  - Drop: Inventor's Focal Sword + Orb of the Forgotten Seer (weapon, from level 48; Tinkerer Gizlock, 33% drop; the other half drops in Scarlet Monastery, 50%): over your Debt Collector + Orb of Mystic Insight, 5.0% faster, about 54 min saved with both halves
-- **Sunken Temple** (50-56), run at level 56: your RestedXP guide runs it then and picks up 2 of its quests.
+- **Maraudon** (46-55), run at level 53: your RestedXP guide runs it then and picks up 2 of its quests; its drops are worth about 4 min on average.
+  - Drop: Inventor's Focal Sword + Orb of the Forgotten Seer (weapon, from level 48; Tinkerer Gizlock, 33% drop; the other half drops in Scarlet Monastery, 50%): over your Debt Collector + Orb of Mystic Insight, 5.1% faster, about 24 min saved with both halves
+- **Sunken Temple** (50-56), run at level 56: your RestedXP guide runs it then and picks up 2 of its quests; its drops are worth about 6 min on average.
   - Pick up first: Jammal'an the Prophet (level 53, from Atal'ai Exile)
+  - Drop: Embrace of the Wind Serpent (chest, from level 50; Avatar of Hakkar, drop chance unknown, counted as 25%): over your Crimson Silk Vest, 2.3% faster, about 25 min saved if it drops
 - **Blackrock Depths** (52-60), run at level 57: your RestedXP guide runs it then and picks up 14 of its quests.
   - Starts inside the run: The Love Potion (level 54, from Mistress Nagmara inside Blackrock Depths)
 - **Dire Maul** (55-60), run at level 57: worth a detour for 3 quests at full experience.
@@ -304,13 +303,13 @@ Quests your RestedXP route leaves out, played as a detour from where the route i
 ### Level 40
 
 - **Crushridge Warmongers** (worth it if you like it): from Marshal Redpath (Hillsbrad Foothills 49.5, 58.7), around level 40 while your route is in Hillsbrad Foothills. About 7,056 experience for about 12 min (5 of it walking); saves about 2 min against your usual pace.
-- **Fiery Blaze Enchantments** (worth it if you like it): from Sigrun Ironhew (Badlands 53.8, 43.3), around level 40 while your route is in Badlands. About 17,375 experience for about 32 min (2 of it walking); saves about 2 min against your usual pace.
+- **Fiery Blaze Enchantments** (worth it if you like it): from Sigrun Ironhew (Badlands 53.8, 43.3), around level 40 while your route is in Badlands. About 17,375 experience for about 31 min (2 of it walking); saves about 2 min against your usual pace.
 - **Stromgarde Badges** (worth it if you like it): from Captain Nials (Arathi Highlands 45.8, 47.5), around level 40 while your route is in Arathi Highlands. About 5,117 experience for about 8 min (3 of it walking); saves about 1 min against your usual pace.
 - **The Karnitol Shipwreck → The Karnitol Shipwreck** (worth it if you like it): 2-part chain: from Kreldig Ungor (Desolace 66.2, 9.6), around level 40 while your route is in Desolace. About 4,500 experience for about 7 min (6 of it walking); saves about 1 min against your usual pace.
 
 ### Level 42
 
-- **Mai'Zoth** (worth it if you like it): from Brother Nimetz (Stranglethorn Vale 37.8, 3.6), around level 42 while your route is in Duskwood. About 5,356 experience for about 7 min (6 of it walking); saves about 3 min against your usual pace.
+- **Mai'Zoth** (worth it if you like it): from Brother Nimetz (Stranglethorn Vale 37.8, 3.6), around level 42 while your route is in Duskwood. About 5,356 experience for about 7 min (6 of it walking); saves about 2 min against your usual pace.
 
 ### Level 51
 
@@ -323,6 +322,6 @@ Quests your RestedXP route leaves out, played as a detour from where the route i
 - School damage counts by the build's share: frost 85%, arcane 15% (an estimate).
 - Quests Forever added carry no level in Blizzard's data: their zone's level range stands in. Dungeons Forever added: the range of their drops' required levels. Crafts: the recipe's skill from the Classic database (Forever may differ); a craft counts once your profession rank allows the skill at that level.
 - An upgrade is listed when it is worth 0.5% of the time per kill or more over what you would be wearing then, and it saves at least 20 minutes of killing before the next upgrade of the slot replaces it, worn at least 3 levels (level 60 ends leveling). A smaller or shorter-lived upgrade is left out, and the next one is counted against what you would still be wearing. Quest rewards you get anyway: wear them when the game shows them as better. Enchants: only when the enchant saves 20 minutes before you replace the item.
-- Data: the simulator's WoW: Forever item database at 2e6e77d84 (7389 items; it grows as the game is played, and a refresh picks the new items up), the CMaNGOS Classic dump at c33f90b8e (recipe skills, quest levels, dungeon loot), Blizzard's API for the character (fetched 2026-11-16 22:55) and for Forever's own quests (asked again weekly), stat values measured 2026-11-16 for arcane-frost-open-leveling.
+- Data: the simulator's WoW: Forever item database at 2e6e77d84 (7389 items; it grows as the game is played, and a refresh picks the new items up), the CMaNGOS Classic dump at c33f90b8e (recipe skills, quest levels, dungeon loot), Blizzard's API for the character (fetched 2026-11-16 22:55) and for Forever's own quests (asked again weekly), stat values measured 2026-11-17 for arcane-frost-open-leveling.
 - Raid preparation (items worth keeping for 60) waits for the mage raid lane's gear redo: today's pre-raid set still holds Naxxramas and Ahn'Qiraj quest rewards (the gear pool fault of 2026-11-05).
 

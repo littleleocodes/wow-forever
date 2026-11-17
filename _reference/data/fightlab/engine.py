@@ -284,6 +284,9 @@ class BaseModule:
                            # list falls through to its next choice
     eat_below = None       # per-class override of tables.EAT_BELOW (a warlock Drain Lifes instead of eating)
     drink_below = None     # per-class override of tables.DRINK_BELOW (Life Tap instead of drinking)
+    REST_TOGETHER = False  # eat and drink together (a rules knob since 2026-11-17, user: "Yes, all classes"): while you sit to drink
+                           # or to eat, the other bar tops up for the sitting seconds at no extra time (Session.downtime); off = the
+                           # regression
 
     def not_simulated(self):
         return []
@@ -1744,19 +1747,29 @@ class Session:
         evo = mod.evocation(p, t)
         if evo:
             total += evo
+        drank = ate = False
         if p.mana_max > 0 and p.mana < (mod.drink_below or DRINK_BELOW) * p.mana_max:
             drink = (p.mana_max - p.mana) / drink_rate(self.level) + SIT_DOWN
             p.mana = p.mana_max
+            drank = True
         if p.hp < (mod.eat_below or EAT_BELOW) * p.hp_max:
             eat = (p.hp_max - p.hp) / food_rate(self.level) + SIT_DOWN
             p.hp = p.hp_max
+            ate = True
         if p.pet is not None and p.pet.alive and p.pet.hp < tables.PET_EAT_BELOW * p.pet.hp_max:
             eat = max(eat, (p.pet.hp_max - p.pet.hp) / (tables.PET_OOC_REGEN * p.pet.hp_max / 2.0 + food_rate(self.level)) + SIT_DOWN)
             p.pet.hp = p.pet.hp_max
         if p.pet is not None and not p.pet.alive:
             total += mod.resummon_time()
             p.pet.alive, p.pet.hp, p.pet.focus, p.pet.mana = True, p.pet.hp_max, p.pet.focus_max, p.pet.mana_max
-        total += max(drink, eat)   # eating and drinking happen at the same time
+        rest = max(drink, eat)   # eating and drinking happen at the same time
+        if mod.REST_TOGETHER and rest > 0:   # the bar that did not fire tops up while you sit, only while it is below full (the
+            sit = max(0.0, rest - SIT_DOWN)  # 2026-11-16 A/B, scratchpad rest_both.py variant B: never slower, mages 4-7.5% faster)
+            if not drank and p.mana_max > 0:
+                p.mana = min(p.mana_max, p.mana + drink_rate(self.level) * sit)
+            if not ate:
+                p.hp = min(p.hp_max, p.hp + food_rate(self.level) * sit)
+        total += rest
         return {"total": total, "drink": drink, "eat": eat}
 
     def summarise(self, s):
