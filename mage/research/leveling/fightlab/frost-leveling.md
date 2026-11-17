@@ -10,51 +10,51 @@ Single-target leveling fights against normal mobs of your level: pull at max ran
 
 | Level | Talents | Fight mean | median | p90 | Downtime/kill | Deaths/100 kills | Time/kill | Kills/hour | Mana/kill | Pushbacks/kill | Frozen casts |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 20 | 11 | 12.7s | 12.6s | 16.3s | 6.5s | 0.0 | 27.3s | 132 | 351 | 0.77 | 35% |
-| 30 | 21 | 17.5s | 17.1s | 22.3s | 9.0s | 0.0 | 34.5s | 104 | 574 | 1.33 | 46% |
-| 40 | 31 | 18.3s | 18.0s | 24.1s | 9.0s | 0.0 | 35.3s | 102 | 683 | 1.67 | 44% |
-| 50 | 41 | 15.3s | 15.2s | 20.1s | 6.5s | 0.0 | 29.8s | 121 | 726 | 1.40 | 43% |
-| 60 | 51 | 14.4s | 14.3s | 19.0s | 4.4s | 0.0 | 26.8s | 134 | 715 | 1.29 | 42% |
+| 20 | 11 | 12.8s | 12.6s | 16.3s | 6.2s | 0.0 | 27.0s | 134 | 351 | 0.81 | 34% |
+| 30 | 21 | 17.6s | 17.2s | 22.5s | 8.2s | 0.0 | 33.8s | 107 | 572 | 1.39 | 46% |
+| 40 | 31 | 18.2s | 17.8s | 24.0s | 8.5s | 0.0 | 34.7s | 104 | 679 | 1.67 | 44% |
+| 50 | 41 | 15.3s | 15.2s | 20.1s | 5.9s | 0.0 | 29.2s | 123 | 725 | 1.47 | 42% |
+| 60 | 51 | 14.3s | 14.2s | 19.0s | 4.2s | 0.0 | 26.6s | 135 | 713 | 1.32 | 42% |
 
 ## Measured damage shares (vs. the spec model's assumed shares)
 
 | Level | Fire Blast | Frost Nova | Frostbolt | Ice Lance | Wand |
 |---|---|---|---|---|---|
 | 20 | 7% | 3% | 60% | 27% | 4% |
-| 30 | 11% | 3% | 52% | 31% | 4% |
+| 30 | 11% | 3% | 51% | 31% | 4% |
 | 40 | 9% | 3% | 55% | 27% | 6% |
-| 50 | 7% | 2% | 53% | 34% | 4% |
-| 60 | 6% | 2% | 54% | 35% | 4% |
+| 50 | 7% | 2% | 54% | 34% | 4% |
+| 60 | 6% | 1% | 54% | 35% | 4% |
 
 Spec model (`_reference/data/scorer/specs`) assumes: frostbolt 19%, frost_nova 1%, fire_blast 12%, cone 4%, missiles 0%, wand 0%, ice_lance 64%.
 
 ## Realized crit rates and player at each level
 
-- **Level 20**: 872 health, 1686 mana, 88 Int, 72 Spirit, 0 spell power, base spell crit 6.1%, armor 396 (Frost Armor); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Frostbolt 6%, Fire Blast 5%, Ice Lance 6%, Frost Nova 8%, Wand 3%. Health after a fight 85%, mana 45%.
-- **Level 30**: 1262 health, 2940 mana, 155 Int, 109 Spirit, 0 spell power, base spell crit 6.6%, armor 566 (Ice Armor); mob 1002 health, hits for 48, casters 16% of pulls (0.15 interrupts per kill). Crit rates: Frostbolt 24%, Wand 3%, Frost Nova 14%, Ice Lance 53%, Fire Blast 26%, Counterspell 0%. Health after a fight 80%, mana 48%. Not simulated: Ice Block.
-- **Level 40**: 1361 health, 3892 mana, 203 Int, 143 Spirit, 16 spell power, base spell crit 6.5%, armor 428 (Mage Armor); mob 1844 health, hits for 68, casters 15% of pulls (0.14 interrupts per kill). Crit rates: Frostbolt 22%, Wand 3%, Frost Nova 12%, Ice Lance 51%, Fire Blast 29%, Counterspell 0%. Health after a fight 77%, mana 48%. Not simulated: Ice Block, Improved Channeling.
-- **Level 50**: 1831 health, 4529 mana, 232 Int, 185 Spirit, 36 spell power, base spell crit 5.8%, armor 520 (Mage Armor); mob 2672 health, hits for 95, casters 14% of pulls (0.13 interrupts per kill). Crit rates: Frostbolt 20%, Wand 2%, Frost Nova 10%, Ice Lance 50%, Fire Blast 32%, Counterspell 0%. Health after a fight 78%, mana 50%. Not simulated: Arcane Blast, Ice Block, Improved Channeling, Missile Barrage.
-- **Level 60**: 2155 health, 5480 mana, 284 Int, 203 Spirit, 74 spell power, base spell crit 5.7%, armor 619 (Mage Armor); mob 3878 health, hits for 117, casters 9% of pulls (0.08 interrupts per kill). Crit rates: Frostbolt 20%, Wand 3%, Frost Nova 11%, Ice Lance 55%, Fire Blast 39%, Counterspell 0%. Health after a fight 78%, mana 52%. Not simulated: Arcane Blast, Arcane Wrath, Ice Block, Improved Channeling, Missile Barrage.
+- **Level 20**: 872 health, 1686 mana, 88 Int, 72 Spirit, 0 spell power, base spell crit 6.1%, armor 396 (Frost Armor); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Frostbolt 6%, Fire Blast 4%, Ice Lance 6%, Frost Nova 8%, Wand 3%. Health after a fight 77%, mana 43%.
+- **Level 30**: 1262 health, 2940 mana, 155 Int, 109 Spirit, 0 spell power, base spell crit 6.6%, armor 566 (Ice Armor); mob 1002 health, hits for 48, casters 16% of pulls (0.15 interrupts per kill). Crit rates: Frostbolt 24%, Wand 2%, Frost Nova 13%, Ice Lance 53%, Fire Blast 28%, Counterspell 0%. Health after a fight 67%, mana 44%. Not simulated: Ice Block.
+- **Level 40**: 1361 health, 3892 mana, 203 Int, 143 Spirit, 16 spell power, base spell crit 6.5%, armor 428 (Mage Armor); mob 1844 health, hits for 68, casters 15% of pulls (0.14 interrupts per kill). Crit rates: Frostbolt 22%, Wand 3%, Frost Nova 12%, Ice Lance 52%, Fire Blast 30%, Counterspell 0%. Health after a fight 65%, mana 44%. Not simulated: Ice Block, Improved Channeling.
+- **Level 50**: 1831 health, 4529 mana, 232 Int, 185 Spirit, 36 spell power, base spell crit 5.8%, armor 520 (Mage Armor); mob 2672 health, hits for 95, casters 14% of pulls (0.13 interrupts per kill). Crit rates: Frostbolt 20%, Wand 2%, Frost Nova 12%, Ice Lance 50%, Fire Blast 31%, Counterspell 0%. Health after a fight 66%, mana 46%. Not simulated: Arcane Blast, Ice Block, Improved Channeling, Missile Barrage.
+- **Level 60**: 2155 health, 5480 mana, 284 Int, 203 Spirit, 74 spell power, base spell crit 5.7%, armor 619 (Mage Armor); mob 3878 health, hits for 117, casters 9% of pulls (0.08 interrupts per kill). Crit rates: Frostbolt 20%, Wand 3%, Frost Nova 11%, Ice Lance 55%, Fire Blast 38%, Counterspell 0%. Health after a fight 66%, mana 47%. Not simulated: Arcane Blast, Arcane Wrath, Ice Block, Improved Channeling, Missile Barrage.
 
 ## Other builds (same mobs, same seeds)
 
 | Level | Build | Time/kill | vs. main | Fight mean | Deaths/100 | Downtime/kill |
 |---|---|---|---|---|---|---|
-| 20 | opt-frost-leveling-leveling-st | 27.3s | - | 12.7s | 0.0 | 6.5s |
-| 20 | leveling-frost | 27.3s | +0.0% | 12.7s | 0.0 | 6.5s |
-| 20 | opt-fire-leveling-leveling-st (played as `fire-leveling`) | 34.3s | +25.9% | 17.6s | 0.0 | 8.7s |
-| 30 | opt-frost-leveling-leveling-st | 34.5s | - | 17.5s | 0.0 | 9.0s |
-| 30 | leveling-frost | 34.5s | +0.0% | 17.5s | 0.0 | 9.0s |
-| 30 | opt-fire-leveling-leveling-st (played as `fire-leveling`) | 40.5s | +17.3% | 16.6s | 0.0 | 15.8s |
-| 40 | opt-frost-leveling-leveling-st | 35.3s | - | 18.3s | 0.0 | 9.0s |
-| 40 | leveling-frost | 34.3s | -2.8% | 18.1s | 0.0 | 8.2s |
-| 40 | opt-fire-leveling-leveling-st (played as `fire-leveling`) | 44.6s | +26.2% | 18.9s | 0.1 | 17.6s |
-| 50 | opt-frost-leveling-leveling-st | 29.8s | - | 15.3s | 0.0 | 6.5s |
-| 50 | leveling-frost | 29.6s | -0.5% | 15.2s | 0.0 | 6.4s |
-| 50 | opt-fire-leveling-leveling-st (played as `fire-leveling`) | 41.1s | +38.3% | 18.4s | 0.0 | 14.7s |
-| 60 | opt-frost-leveling-leveling-st | 26.8s | - | 14.4s | 0.0 | 4.4s |
-| 60 | leveling-frost | 27.2s | +1.5% | 14.2s | 0.0 | 5.0s |
-| 60 | opt-fire-leveling-leveling-st (played as `fire-leveling`) | 36.5s | +36.3% | 16.2s | 0.0 | 12.3s |
+| 20 | opt-frost-leveling-leveling-st | 27.0s | - | 12.8s | 0.0 | 6.2s |
+| 20 | leveling-frost | 27.0s | +0.0% | 12.8s | 0.0 | 6.2s |
+| 20 | opt-fire-leveling-leveling-st (played as `fire-leveling`) | 33.8s | +25.5% | 17.7s | 0.0 | 8.1s |
+| 30 | opt-frost-leveling-leveling-st | 33.8s | - | 17.6s | 0.0 | 8.2s |
+| 30 | leveling-frost | 33.8s | +0.0% | 17.6s | 0.0 | 8.2s |
+| 30 | opt-fire-leveling-leveling-st (played as `fire-leveling`) | 39.8s | +17.8% | 16.7s | 0.0 | 15.1s |
+| 40 | opt-frost-leveling-leveling-st | 34.7s | - | 18.2s | 0.0 | 8.5s |
+| 40 | leveling-frost | 33.7s | -2.8% | 18.1s | 0.0 | 7.6s |
+| 40 | opt-fire-leveling-leveling-st (played as `fire-leveling`) | 44.1s | +26.9% | 19.0s | 0.0 | 17.0s |
+| 50 | opt-frost-leveling-leveling-st | 29.2s | - | 15.3s | 0.0 | 5.9s |
+| 50 | leveling-frost | 29.5s | +0.8% | 15.2s | 0.0 | 6.2s |
+| 50 | opt-fire-leveling-leveling-st (played as `fire-leveling`) | 41.0s | +40.2% | 18.6s | 0.1 | 14.3s |
+| 60 | opt-frost-leveling-leveling-st | 26.6s | - | 14.3s | 0.0 | 4.2s |
+| 60 | leveling-frost | 27.1s | +1.9% | 14.2s | 0.0 | 4.9s |
+| 60 | opt-fire-leveling-leveling-st (played as `fire-leveling`) | 36.4s | +36.7% | 16.4s | 0.0 | 12.0s |
 
 ## Gear tiers (main build)
 
@@ -62,16 +62,16 @@ Spec model (`_reference/data/scorer/specs`) assumes: frostbolt 19%, frost_nova 1
 
 | Level | Gear | Time/kill | vs. greens | Fight mean | Deaths/100 | Downtime/kill | Kills/hour |
 |---|---|---|---|---|---|---|---|
-| 20 | greens | 27.3s | - | 12.7s | 0.0 | 6.5s | 132 |
-| 20 | blues | 25.5s | -6.4% | 11.8s | 0.0 | 5.7s | 141 |
-| 30 | greens | 34.5s | - | 17.5s | 0.0 | 9.0s | 104 |
-| 30 | blues | 29.5s | -14.6% | 14.7s | 0.0 | 6.7s | 122 |
-| 40 | greens | 35.3s | - | 18.3s | 0.0 | 9.0s | 102 |
-| 40 | blues | 28.6s | -19.1% | 14.7s | 0.0 | 5.9s | 126 |
-| 50 | greens | 29.8s | - | 15.3s | 0.0 | 6.5s | 121 |
-| 50 | blues | 26.6s | -10.7% | 13.7s | 0.0 | 4.9s | 135 |
-| 60 | greens | 26.8s | - | 14.4s | 0.0 | 4.4s | 134 |
-| 60 | blues | 25.3s | -5.4% | 13.5s | 0.0 | 3.9s | 142 |
+| 20 | greens | 27.0s | - | 12.8s | 0.0 | 6.2s | 134 |
+| 20 | blues | 25.1s | -6.7% | 11.8s | 0.0 | 5.3s | 143 |
+| 30 | greens | 33.8s | - | 17.6s | 0.0 | 8.2s | 107 |
+| 30 | blues | 29.0s | -14.2% | 14.7s | 0.0 | 6.3s | 124 |
+| 40 | greens | 34.7s | - | 18.2s | 0.0 | 8.5s | 104 |
+| 40 | blues | 28.5s | -18.0% | 14.8s | 0.0 | 5.7s | 126 |
+| 50 | greens | 29.2s | - | 15.3s | 0.0 | 5.9s | 123 |
+| 50 | blues | 26.5s | -9.5% | 13.7s | 0.0 | 4.8s | 136 |
+| 60 | greens | 26.6s | - | 14.3s | 0.0 | 4.2s | 135 |
+| 60 | blues | 25.3s | -4.7% | 13.5s | 0.0 | 3.8s | 142 |
 
 ## Talent values at level 30
 
@@ -79,14 +79,14 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Ice Lance | 1 | +15.2% | +18.2% ± 0.5 | +15.2% | +25.4% | 0.0 |
-| Shatter | 3 | +14.2% | +15.3% ± 0.4 | +4.7% | +10.7% | 0.0 |
-| Improved Frostbolt | 5 | +7.7% | +11.8% ± 0.4 | +1.5% | +3.0% | 0.0 |
-| Frostbite | 3 | +5.1% | +0.9% ± 0.4 | +1.7% | +5.9% | 0.0 |
-| Precision | 2 | +5.0% | +5.3% ± 0.4 | +2.5% | +3.7% | 0.0 |
-| Ice Shards | 2 | +4.7% | +5.1% ± 0.4 | +2.3% | +3.9% | 0.0 |
-| Frost Channeling | 3 | +4.3% | +0.4% ± 0.3 | +1.4% | +12.3% | 0.0 |
-| Fingers of Frost | 1 | +4.1% | +4.5% ± 0.5 | +4.1% | +2.6% | 0.0 |
+| Ice Lance | 1 | +14.4% | +18.1% ± 0.5 | +14.4% | +25.4% | 0.0 |
+| Shatter | 3 | +13.5% | +15.1% ± 0.4 | +4.5% | +10.7% | 0.0 |
+| Improved Frostbolt | 5 | +7.8% | +11.4% ± 0.4 | +1.6% | +3.0% | 0.0 |
+| Frostbite | 3 | +5.5% | +1.5% ± 0.5 | +1.8% | +5.9% | 0.0 |
+| Precision | 2 | +4.9% | +5.4% ± 0.4 | +2.5% | +3.7% | 0.0 |
+| Frost Channeling | 3 | +4.4% | +0.1% ± 0.3 | +1.5% | +12.3% | 0.0 |
+| Ice Shards | 2 | +4.1% | +4.5% ± 0.4 | +2.0% | +3.9% | 0.0 |
+| Fingers of Frost | 1 | +3.7% | +4.2% ± 0.5 | +3.7% | +2.6% | 0.0 |
 | Ice Block | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +2.1% | 0.0 |
 
 ## Talent values at level 60
@@ -95,22 +95,22 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Shatter | 3 | +15.3% | +19.4% ± 0.5 | +5.1% | +18.9% | 0.0 |
-| Ice Lance | 1 | +11.8% | +19.0% ± 0.6 | +11.8% | +26.7% | 0.0 |
-| Ice Shards | 5 | +8.4% | +9.9% ± 0.5 | +1.7% | +10.4% | 0.0 |
-| Improved Frostbolt | 5 | +6.9% | +11.5% ± 0.6 | +1.4% | +3.0% | 0.0 |
-| Fingers of Frost | 2 | +5.4% | +7.7% ± 0.6 | +2.7% | +5.3% | 0.0 |
-| Frostbite | 3 | +5.3% | +3.7% ± 0.6 | +1.8% | +6.0% | 0.0 |
-| Arcane Meditation | 3 | +5.3% | -0.5% ± 0.4 | +1.8% | +2.8% | 0.0 |
-| Frost Channeling | 3 | +4.7% | -0.7% ± 0.4 | +1.6% | +4.3% | 0.0 |
-| Precision | 2 | +4.7% | +6.0% ± 0.5 | +2.3% | +3.7% | 0.0 |
-| Arcane Concentration | 5 | +3.8% | +0.3% ± 0.6 | +0.8% | +3.6% | 0.0 |
-| Arcane Subtlety | 2 | +2.2% | +2.5% ± 0.5 | +1.1% | +0.9% | 0.0 |
-| Arctic Reach | 1 | +1.7% | +0.7% ± 0.5 | +1.7% | +0.2% | 0.0 |
-| Incineration | 3 | +1.4% | +1.5% ± 0.4 | +0.5% | +1.0% | 0.0 |
-| Wand Specialization | 2 | +1.4% | +1.7% ± 0.5 | +0.7% | +0.3% | 0.0 |
-| Presence of Mind | 1 | +1.2% | +1.3% ± 0.4 | +1.2% | +0.9% | 0.0 |
-| Arcane Resilience | 2 | +0.1% | -0.2% ± 0.4 | +0.0% | +0.1% | 0.0 |
+| Shatter | 3 | +15.3% | +19.9% ± 0.6 | +5.1% | +18.9% | 0.0 |
+| Ice Lance | 1 | +12.0% | +19.0% ± 0.6 | +12.0% | +26.7% | 0.0 |
+| Ice Shards | 5 | +8.5% | +10.8% ± 0.5 | +1.7% | +10.4% | 0.0 |
+| Improved Frostbolt | 5 | +6.7% | +12.5% ± 0.6 | +1.3% | +3.0% | 0.0 |
+| Frostbite | 3 | +5.9% | +4.5% ± 0.6 | +2.0% | +6.0% | 0.0 |
+| Fingers of Frost | 2 | +5.8% | +7.8% ± 0.8 | +2.9% | +5.3% | 0.1 |
+| Arcane Meditation | 3 | +5.0% | +0.2% ± 0.4 | +1.7% | +2.8% | 0.0 |
+| Frost Channeling | 3 | +4.8% | +0.3% ± 0.4 | +1.6% | +4.3% | 0.0 |
+| Precision | 2 | +4.1% | +5.3% ± 0.8 | +2.1% | +3.7% | 0.1 |
+| Arcane Concentration | 5 | +4.0% | +1.3% ± 0.6 | +0.8% | +3.6% | 0.0 |
+| Arcane Subtlety | 2 | +2.3% | +2.7% ± 0.5 | +1.2% | +0.9% | 0.0 |
+| Arctic Reach | 1 | +1.5% | +1.0% ± 0.5 | +1.5% | +0.2% | 0.0 |
+| Incineration | 3 | +1.4% | +1.9% ± 0.5 | +0.5% | +1.0% | 0.0 |
+| Wand Specialization | 2 | +1.3% | +2.4% ± 0.5 | +0.7% | +0.3% | 0.0 |
+| Presence of Mind | 1 | +1.2% | +2.2% ± 0.4 | +1.2% | +0.9% | 0.0 |
+| Arcane Resilience | 2 | +0.5% | +0.2% ± 0.4 | +0.2% | +0.1% | 0.0 |
 | Arcane Blast | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.0% | 0.0 |
 | Arcane Wrath | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +2.7% | 0.0 |
 | Ice Block | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +2.6% | 0.0 |

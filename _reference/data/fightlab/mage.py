@@ -362,8 +362,16 @@ class MageModule(BaseModule):
     # A rule knob, so each rotation's tune decides; off by default (the regression, rule files tuned before it). Its +5/10/15 resistance
     # to all magic is not modelled (the lab gives the player no resistances against caster mobs).
     MAGE_ARMOR = 0           # 1: Mage Armor from the level the trainer teaches it (34), Ice Armor or Frost Armor before (0: never)
+    # Between fights (evocation): Evocation when it is ready and mana is under this share. 0.4 was a hand-set literal from the module's
+    # first version that no tune compared (2026-11-16, user: "Why is Evocation for mage used when below 40% and not when lower? It
+    # restores much more mana than 60%"). Forever's Evocation is Classic's: 1,500% of the Spirit regeneration for 8 s, 118% of the pool
+    # at 20 and about 70% at 60 in the lab's standard gear, so a 40% rule threw part of it away. An A/B of every leveling page pick in its
+    # tuned rules (20,000 fights, seeds 1-2, levels 20-60): 0.15 (the drink line) 0.6-1.1% faster per kill than 0.40, up to 1.9% at
+    # 20-35; 0.10 slower (under the drink line it rarely fires). A rule knob; the default keeps the regression.
+    EVO_BELOW = 0.4
     ROTATION_KNOBS = {"AB_MAX_STACKS": [1, 2, 3, 4], "AB_MANA_SHARE": [0.15, 0.25, 0.4], "AW_OPENER": [0, 1],
-                      "PYRO_HARDCAST": [0, 1], "FROST_BLAST": [0, 1, 2], "PYRO_OPENER": [0, 1], "MAGE_ARMOR": [0, 1]}
+                      "PYRO_HARDCAST": [0, 1], "FROST_BLAST": [0, 1, 2], "PYRO_OPENER": [0, 1], "MAGE_ARMOR": [0, 1],
+                      "EVO_BELOW": [0.15, 0.2, 0.25, 0.3, 0.4]}
 
     def __init__(self, talents, level, spec="frost-leveling", gear="leveling", armor_spell="auto"):
         self.t = {k: v for k, v in talents.items() if v > 0}
@@ -835,7 +843,7 @@ class MageModule(BaseModule):
             fight.apply_chill(Spell("Ice Armor chill", "frost"), 0.30, 5.0)
 
     def evocation(self, p, t):
-        if self.level < 20 or not p.ready("Evocation", t) or p.mana >= 0.4 * p.mana_max:
+        if self.level < 20 or not p.ready("Evocation", t) or p.mana >= self.EVO_BELOW * p.mana_max:
             return 0.0
         p.mana = min(p.mana_max, p.mana + 4 * 16 * mana_regen_tick(p.spirit))
         p.cooldowns["Evocation"] = t + 480.0

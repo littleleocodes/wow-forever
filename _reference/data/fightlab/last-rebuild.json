@@ -5,7 +5,7 @@
    "spec": "frost-leveling",
    "hand": "leveling-frost",
    "opt": "opt-frost-leveling-leveling-st",
-   "started": "2026-11-15T18:10:35",
+   "started": "2026-11-16T22:52:08",
    "steps": [
     "race",
     "report"
@@ -414,39 +414,39 @@
      }
     }
    },
-   "seconds": 306,
+   "seconds": 646,
    "log": [
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py mage --spec frost-leveling --build leveling-frost --compare --levels 20,30,40,50,60 --fights 1000",
      "rc": 0,
-     "seconds": 5,
+     "seconds": 11,
      "tail": [
       "== mage frost-leveling leveling-frost: 1000 fights per level, seed 1",
-      "L20: fight 12.8s (median 12.6, p90 16.3), downtime 6.9s, deaths/100 0.0, time/kill 27.7s, 130 kills/h, mana/kill 350, shares Frostbolt 60%, Ice Lance 27%, Fire Blast 7%, Wand 4%, Frost Nova 3%",
-      "L30: fight 17.5s (median 17.2, p90 22.3), downtime 9.1s, deaths/100 0.0, time/kill 34.7s, 104 kills/h, mana/kill 579, shares Frostbolt 52%, Ice Lance 30%, Fire Blast 11%, Wand 4%, Frost Nova 3%",
-      "L40: fight 18.1s (median 18.0, p90 23.5), downtime 8.3s, deaths/100 0.0, time/kill 34.4s, 105 kills/h, mana/kill 812, shares Frostbolt 56%, Ice Lance 28%, Fire Blast 8%, Wand 5%, Frost Nova 3%",
-      "L50: fight 15.2s (median 15.1, p90 20.0), downtime 6.4s, deaths/100 0.0, time/kill 29.7s, 121 kills/h, mana/kill 933, shares Frostbolt 54%, Ice Lance 34%, Fire Blast 7%, Wand 4%, Frost Nova 2%",
-      "L60: fight 14.1s (median 13.7, p90 18.2), downtime 5.0s, deaths/100 0.0, time/kill 27.1s, 133 kills/h, mana/kill 1013, shares Frostbolt 54%, Ice Lance 34%, Fire Blast 6%, Wand 4%, Frost Nova 2%",
-      "done in 5s"
+      "L20: fight 12.8s (median 12.6, p90 16.3), downtime 6.5s, deaths/100 0.0, time/kill 27.3s, 132 kills/h, mana/kill 350, shares Frostbolt 60%, Ice Lance 27%, Fire Blast 7%, Wand 4%, Frost Nova 3%",
+      "L30: fight 17.6s (median 17.2, p90 22.4), downtime 8.5s, deaths/100 0.0, time/kill 34.1s, 106 kills/h, mana/kill 578, shares Frostbolt 52%, Ice Lance 30%, Fire Blast 11%, Wand 4%, Frost Nova 3%",
+      "L40: fight 18.2s (median 18.0, p90 24.0), downtime 7.6s, deaths/100 0.0, time/kill 33.8s, 107 kills/h, mana/kill 802, shares Frostbolt 56%, Ice Lance 28%, Fire Blast 8%, Wand 5%, Frost Nova 3%",
+      "L50: fight 15.3s (median 15.1, p90 20.0), downtime 6.3s, deaths/100 0.0, time/kill 29.6s, 122 kills/h, mana/kill 936, shares Frostbolt 54%, Ice Lance 33%, Fire Blast 7%, Wand 4%, Frost Nova 2%",
+      "L60: fight 14.0s (median 13.7, p90 18.4), downtime 5.0s, deaths/100 0.0, time/kill 27.0s, 133 kills/h, mana/kill 1013, shares Frostbolt 54%, Ice Lance 34%, Fire Blast 6%, Wand 4%, Frost Nova 2%",
+      "done in 8s"
      ],
      "stderr": []
     },
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py mage --spec frost-leveling --build opt-frost-leveling-leveling-st --compare leveling-frost opt-fire-leveling-leveling-st --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --gear-tiers --write",
      "rc": 0,
-     "seconds": 102,
+     "seconds": 204,
      "tail": [
-      "   Ice Shards               5  sim   +8.4% (fight   +9.9% +-0.5)  EV  +10.4%",
+      "   Ice Shards               5  sim   +8.5% (fight  +10.8% +-0.5)  EV  +10.4%",
       "   Improved Channeling      1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.0%",
-      "   Improved Frostbolt       5  sim   +6.9% (fight  +11.5% +-0.6)  EV   +3.0%",
-      "   Incineration             3  sim   +1.4% (fight   +1.5% +-0.4)  EV   +1.0%",
+      "   Improved Frostbolt       5  sim   +6.7% (fight  +12.5% +-0.6)  EV   +3.0%",
+      "   Incineration             3  sim   +1.4% (fight   +1.9% +-0.5)  EV   +1.0%",
       "   Magic Absorption         2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.1%",
       "   Missile Barrage          2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +1.8%",
-      "   Precision                2  sim   +4.7% (fight   +6.0% +-0.5)  EV   +3.7%",
-      "   Presence of Mind         1  sim   +1.2% (fight   +1.3% +-0.4)  EV   +0.9%",
-      "   Shatter                  3  sim  +15.3% (fight  +19.4% +-0.5)  EV  +18.9%",
-      "   Wand Specialization      2  sim   +1.4% (fight   +1.7% +-0.5)  EV   +0.3%",
-      "done in 102s",
+      "   Precision                2  sim   +4.1% (fight   +5.3% +-0.8)  EV   +3.7%",
+      "   Presence of Mind         1  sim   +1.2% (fight   +2.2% +-0.4)  EV   +0.9%",
+      "   Shatter                  3  sim  +15.3% (fight  +19.9% +-0.6)  EV  +18.9%",
+      "   Wand Specialization      2  sim   +1.3% (fight   +2.4% +-0.5)  EV   +0.3%",
+      "done in 201s",
       "wrote F:\\wow-forever\\mage\\research\\leveling\\fightlab\\frost-leveling.md"
      ],
      "stderr": []
@@ -454,19 +454,19 @@
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py mage --spec fire-leveling --build opt-fire-leveling-leveling-st --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --write",
      "rc": 0,
-     "seconds": 94,
+     "seconds": 211,
      "tail": [
       "   Ice Block                1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +3.4%",
-      "   Ice Lance                1  sim   +7.5% (fight  +12.9% +-0.9)  EV  +65.6%",
-      "   Ignite                   5  sim   +4.3% (fight   +6.0% +-0.7)  EV  +15.7%",
-      "   Impact                   3  sim   -0.3% (fight   -0.4% +-0.8)  EV   +1.9%",
-      "   Improved Fire Blast      2  sim   +0.5% (fight   +3.0% +-0.8)  EV   +7.0%",
+      "   Ice Lance                1  sim   +8.7% (fight  +13.2% +-1.0)  EV  +65.6%",
+      "   Ignite                   5  sim   +5.1% (fight   +7.0% +-0.8)  EV  +15.7%",
+      "   Impact                   3  sim   +0.3% (fight   -0.0% +-0.8)  EV   +1.9%",
+      "   Improved Fire Blast      2  sim   +0.6% (fight   +2.9% +-0.8)  EV   +7.0%",
       "   Improved Scorch          1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.5%",
-      "   Permafrost               3  sim   +0.2% (fight   +0.0% +-0.8)  EV   +0.5%",
-      "   Precision                3  sim   +4.4% (fight   +6.2% +-0.9)  EV   +4.3%",
-      "   Pyroblast                1  sim   +3.5% (fight   +4.4% +-0.8)  EV   +6.9%",
-      "   Wand Specialization      2  sim   +0.4% (fight   +0.8% +-0.8)  EV   +0.1%",
-      "done in 94s",
+      "   Permafrost               3  sim   +0.5% (fight   +0.5% +-0.8)  EV   +0.5%",
+      "   Precision                3  sim   +4.3% (fight   +6.0% +-1.0)  EV   +4.3%",
+      "   Pyroblast                1  sim   +4.2% (fight   +4.8% +-0.9)  EV   +6.9%",
+      "   Wand Specialization      2  sim   +1.3% (fight   +2.2% +-0.8)  EV   +0.1%",
+      "done in 208s",
       "wrote F:\\wow-forever\\mage\\research\\leveling\\fightlab\\fire-leveling.md"
      ],
      "stderr": []
@@ -474,19 +474,19 @@
     {
      "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\run.py mage --spec frostfire-leveling --build opt-frost-leveling-leveling-st --compare opt-frost-leveling-leveling-st --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --write",
      "rc": 0,
-     "seconds": 105,
+     "seconds": 218,
      "tail": [
-      "   Ice Shards               5  sim   +7.4% (fight  +10.5% +-0.7)  EV     n/a",
+      "   Ice Shards               5  sim   +7.3% (fight  +10.0% +-0.7)  EV     n/a",
       "   Improved Channeling      1  sim   +0.0% (fight   +0.0% +-0.0)  EV     n/a",
       "   Improved Frostbolt       5  sim   +0.0% (fight   +0.0% +-0.0)  EV     n/a",
-      "   Incineration             3  sim   +1.2% (fight   +2.1% +-0.6)  EV     n/a",
+      "   Incineration             3  sim   +1.1% (fight   +2.0% +-0.7)  EV     n/a",
       "   Magic Absorption         2  sim   +0.0% (fight   +0.0% +-0.0)  EV     n/a",
       "   Missile Barrage          2  sim   +0.0% (fight   +0.0% +-0.0)  EV     n/a",
-      "   Precision                2  sim   +5.3% (fight   +6.2% +-0.7)  EV     n/a",
-      "   Presence of Mind         1  sim   +0.3% (fight   +1.2% +-0.7)  EV     n/a",
-      "   Shatter                  3  sim  +14.9% (fight  +20.1% +-0.7)  EV     n/a",
-      "   Wand Specialization      2  sim   +1.5% (fight   +2.0% +-0.7)  EV     n/a",
-      "done in 104s",
+      "   Precision                2  sim   +4.7% (fight   +6.3% +-0.9)  EV     n/a",
+      "   Presence of Mind         1  sim   +0.7% (fight   +1.4% +-0.5)  EV     n/a",
+      "   Shatter                  3  sim  +15.1% (fight  +19.7% +-0.7)  EV     n/a",
+      "   Wand Specialization      2  sim   +1.6% (fight   +2.0% +-0.5)  EV     n/a",
+      "done in 215s",
       "wrote F:\\wow-forever\\mage\\research\\leveling\\fightlab\\frostfire-leveling.md"
      ],
      "stderr": []
@@ -496,15 +496,15 @@
    "race": {
     "time_per_kill": {
      "leveling-frost": {
-      "20": 27.7,
-      "30": 34.7,
-      "40": 34.4,
-      "50": 29.7,
-      "60": 27.1
+      "20": 27.3,
+      "30": 34.1,
+      "40": 33.8,
+      "50": 29.6,
+      "60": 27.0
      }
     },
     "mean": {
-     "leveling-frost": 30.409999999999997
+     "leveling-frost": 30.105
     },
     "winner": "leveling-frost",
     "gain_vs_hand": 0.0,
@@ -630,18 +630,18 @@
    ],
    "converged": true,
    "time_per_kill": {
-    "20": 27.3,
-    "30": 34.5,
-    "40": 35.3,
-    "50": 29.8,
-    "60": 26.8
+    "20": 27.0,
+    "30": 33.8,
+    "40": 34.7,
+    "50": 29.2,
+    "60": 26.6
    },
    "hand_time_per_kill": {
-    "20": 27.3,
-    "30": 34.5,
-    "40": 34.3,
-    "50": 29.6,
-    "60": 27.2
+    "20": 27.0,
+    "30": 33.8,
+    "40": 33.7,
+    "50": 29.5,
+    "60": 27.1
    },
    "variants": {
     "frost-aoe": {
@@ -5781,9 +5781,9 @@
   }
  },
  "last_run": {
-  "date": "2026-11-16T14:33:27",
+  "date": "2026-11-17T01:08:30",
   "classes": [
-   "shaman"
+   "mage"
   ],
   "steps": [
    "regen"
@@ -5794,79 +5794,78 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 418,
+  "seconds": 469,
   "refresh": null,
   "regen_log": [
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_trees.py shaman",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_trees.py mage",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote F:\\wow-forever\\shaman\\research\\talents\\forever\\talent-trees.md"
+     "wrote F:\\wow-forever\\mage\\research\\talents\\forever\\talent-trees.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py shaman",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py mage",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 4,
     "tail": [
-     "formatted F:\\wow-forever\\shaman\\research\\talents\\forever\\proposed-builds.json",
-     "shaman: README section + leveling-enhancement note written"
+     "formatted F:\\wow-forever\\mage\\research\\talents\\forever\\proposed-builds.json",
+     "mage: README section + leveling-frost note written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py shaman",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py mage",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 5,
     "tail": [
-     "shaman: raid sim section written (3 specs)",
+     "mage: raid sim section written (4 specs)",
      "wrote _reference\\raidsim-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py shaman",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py mage",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 4,
     "tail": [
-     "shaman: healer lab section written (1 specs)",
      "wrote _reference\\heallab-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py shaman",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py mage",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 3,
     "tail": [
-     "shaman: leveling/guide.md written (enhancement-open-leveling)"
+     "mage: leveling/guide.md written (arcane-frost-open-leveling)"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py shaman",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py mage",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 2,
     "tail": [
-     "shaman: raid gear and consumables written"
+     "mage: raid gear and consumables written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py shaman",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py mage",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 3,
     "tail": [
-     "shaman: raid and leveling rotations, DPS ranking written"
+     "mage: raid and leveling rotations, DPS ranking written"
     ],
     "stderr": []
    },
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\validate_builds.py",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
      "  ok   opt-balance-dps-parse (33/0/18)",
      "  ok   opt-feral-cat-dps-raid-dps (9/30/12)",
@@ -5886,7 +5885,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_builds.py",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 7,
     "tail": [
      "rogue/classic-baseline: 5 build pages + README.md",
      "rogue: 30 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
@@ -5904,9 +5903,9 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py shaman",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py mage",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 2,
     "tail": [
      "wrote _reference\\new-builds-survey.md",
      "wrote the New spells and builds section of 1 raid READMEs"
@@ -5914,20 +5913,20 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\signature_audit.py shaman --write --no-default",
+    "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\signature_audit.py mage --write --no-default",
     "rc": 0,
-    "seconds": 5,
+    "seconds": 15,
     "tail": [
-     "  Enhancement [page: enhancement-open-leveling 13/32/6] enhancement-dps (tuned): casts/kill at 60 {'Stormstrike': 2.15}, core 79% (min 60%), 26.8 s/kill; rules: -; OK",
-     "      shares at 60: {'Earth Shock': 0.339, 'Melee': 0.295, 'Stormstrike': 0.156, 'Lightning Shield': 0.124, 'Lightning Bolt': 0.05, 'Searing Totem': 0.036}",
-     "  Enhancement [slot: leveling-enhancement 7/34/10] enhancement-dps (tuned): casts/kill at 60 {'Stormstrike': 2.07}, core 80% (min 60%), 27.4 s/kill; rules: -; OK",
-     "      shares at 60: {'Earth Shock': 0.338, 'Melee': 0.309, 'Stormstrike': 0.151, 'Lightning Shield': 0.115, 'Lightning Bolt': 0.049, 'Searing Totem': 0.038}",
-     "  Enhancement [slot: opt-enhancement-dps-leveling-st 12/31/8] enhancement-dps (tuned): casts/kill at 60 {'Stormstrike': 1.92}, core 81% (min 60%), 28.0 s/kill; rules: -; OK",
-     "      shares at 60: {'Earth Shock': 0.376, 'Melee': 0.299, 'Stormstrike': 0.132, 'Lightning Shield': 0.129, 'Searing Totem': 0.039, 'Lightning Bolt': 0.025}",
-     "  Enhancement [slot: opt-enhancement-dps-solo-60 12/31/8] enhancement-dps (tuned): casts/kill at 60 {'Stormstrike': 1.92}, core 81% (min 60%), 28.0 s/kill; rules: -; OK",
-     "      shares at 60: {'Earth Shock': 0.376, 'Melee': 0.299, 'Stormstrike': 0.132, 'Lightning Shield': 0.129, 'Searing Totem': 0.039, 'Lightning Bolt': 0.025}",
-     "  Restoration [page: restoration-leveling 0/10/41] enhancement-dps (tuned): casts/kill at 60 {}, core - (min -), 37.2 s/kill; rules: -; no rule",
-     "      shares at 60: {'Earth Shock': 0.457, 'Melee': 0.401, 'Lightning Shield': 0.077, 'Searing Totem': 0.065}",
+     "  Frost [slot: leveling-frost 17/0/34] frost-leveling (tuned): casts/kill at 60 {'Frostbolt': 3.33}, core 89% (min 60%), 29.9 s/kill; rules: -; OK",
+     "      shares at 60: {'Frostbolt': 0.551, 'Ice Lance': 0.341, 'Fire Blast': 0.054, 'Wand': 0.04, 'Frost Nova': 0.015}",
+     "  Frost [slot: opt-frost-aoe-leveling-aoe 7/3/41] frost-leveling (tuned): casts/kill at 60 {'Frostbolt': 3.56}, core 89% (min 60%), 33.8 s/kill; rules: -; OK",
+     "      shares at 60: {'Frostbolt': 0.56, 'Ice Lance': 0.327, 'Fire Blast': 0.057, 'Wand': 0.036, 'Frost Nova': 0.02}",
+     "  Arcane-Frost [page: arcane-frost-open-leveling 28/0/23] barrage-frost-leveling (tuned): casts/kill at 60 {'Frostbolt': 2.81, 'Arcane Missiles': 0.47}, core 91% (min 60%), 27.7 s/kill; rules: -; OK",
+     "      shares at 60: {'Frostbolt': 0.472, 'Ice Lance': 0.298, 'Arcane Missiles': 0.142, 'Fire Blast': 0.057, 'Wand': 0.017, 'Frost Nova': 0.013}",
+     "  Arcane-Frost [slot: opt-frost-leveling-leveling-st 22/3/26] barrage-frost-leveling (tuned): casts/kill at 60 {'Frostbolt': 2.85, 'Arcane Missiles': 0.49}, core 91% (min 60%), 29.1 s/kill; rules: -; OK",
+     "      shares at 60: {'Frostbolt': 0.461, 'Ice Lance': 0.312, 'Arcane Missiles': 0.132, 'Fire Blast': 0.049, 'Wand': 0.032, 'Frost Nova': 0.014}",
+     "  Frostfire [page: frostfire-open-leveling 2/25/24] frostfire-leveling (tuned): casts/kill at 60 {'Frostfire Bolt': 2.63}, core 30% (min 30%), 33.2 s/kill; rules: -; OK",
+     "      shares at 60: {'Ice Lance': 0.342, 'Frostfire Bolt': 0.275, 'Fire Blast': 0.241, 'Ignite': 0.056, 'Wand': 0.04, 'Frostfire Bolt burn': 0.028}",
      "wrote _reference\\signature-audit.md",
      "wrote _reference\\data\\fightlab\\signature-audit.json"
     ],
@@ -5936,7 +5935,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_modes.py",
     "rc": 0,
-    "seconds": 19,
+    "seconds": 31,
     "tail": [
      "druid: README.md sections and 3 mode folders written",
      "hunter: README.md sections and 3 mode folders written",
@@ -5961,15 +5960,15 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py shaman --write",
+    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py mage --write",
     "rc": 0,
-    "seconds": 353,
+    "seconds": 354,
     "tail": [
-     "| elemental-dps -> level-20 build (11/0/0) | +1.5% | +7.5% | +15.0% | +16.4% | +17.3% | +21.4% | +24.4% | +30.2% | +34.4% | +35.9% | +37.1% |",
-     "| elemental-dps -> level-30 build (12/1/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.4% | +24.7% | +27.4% | +28.6% | +33.1% | +35.9% | +37.1% |",
-     "| elemental-dps -> level-40 build (12/11/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.4% | +24.7% | +27.4% | +28.6% | +33.1% | +35.9% | +37.1% |",
-     "| elemental-dps -> level-50 build (11/22/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.1% | +24.5% | +27.2% | +30.6% | +34.4% | +35.9% | +37.1% |",
-     "| elemental-dps -> level-60 build (21/22/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.4% | +24.7% | +25.9% | +27.6% | +30.2% | +33.6% | +37.3% |",
+     "| fire-leveling -> level-20 build (0/0/11) | +2.0% | +4.2% | +43.2% | +47.7% | +55.4% | +58.9% | +62.6% | +63.6% | +65.2% | +68.3% | +69.5% |",
+     "| fire-leveling -> level-30 build (0/10/11) | +1.8% | +13.1% | +25.5% | +25.9% | +55.4% | +58.9% | +62.6% | +63.6% | +65.2% | +68.3% | +69.5% |",
+     "| fire-leveling -> level-40 build (0/20/11) | +1.8% | +13.1% | +26.3% | +30.1% | +36.6% | +38.1% | +62.6% | +63.5% | +65.7% | +68.3% | +69.5% |",
+     "| fire-leveling -> level-50 build (0/30/11) | +1.8% | +13.1% | +26.3% | +30.1% | +36.6% | +39.4% | +43.3% | +43.6% | +65.8% | +68.3% | +69.5% |",
+     "| fire-leveling -> level-60 build (0/35/16) | +1.8% | +13.1% | +26.3% | +30.1% | +36.6% | +39.4% | +42.3% | +47.7% | +48.0% | +68.3% | +69.5% |",
      "",
      "## Reading it",
      "",
@@ -6017,7 +6016,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\loop_audit.py",
     "rc": 0,
-    "seconds": 6,
+    "seconds": 4,
     "tail": [
      "druid    flagged 31/99  open 1",
      "hunter   flagged 23/62  open 6",
@@ -6035,7 +6034,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\build_launch_checklist.py",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "wrote _reference\\launch-checklist.md (321 per-build questions)"
     ],
@@ -6053,7 +6052,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\summary.py --write",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 1,
     "tail": [
      "wrote _reference\\fightlab-summary.md"
     ],
@@ -6062,7 +6061,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_report_index.py",
     "rc": 0,
-    "seconds": 10,
+    "seconds": 25,
     "tail": [
      "druid: leveling 3, raid 16, classic 10",
      "hunter: leveling 6, raid 14, classic 5",
@@ -6079,7 +6078,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\page_lint.py --write",
     "rc": 0,
-    "seconds": 5,
+    "seconds": 1,
     "tail": [
      "| talents | 0 |",
      "| links | 0 |",

@@ -100,16 +100,16 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-le
 
 Single-target leveling fights against normal mobs of your level: pull at max range, the mob walks in at 7 yd/s (slowed by chills), swings every 2 s once in melee (pushing casts back), Frost Nova when it arrives, a 2-second step back, Ice Lance/Frostbolt into the freeze, Fire Blast and wand to finish without overkill. Between fights: 2 s loot, 6 s travel, Evocation when low, conjured water below 35% mana, food below 65% health; a death costs 90 s. Every hit, miss, crit, partial resist, chill, freeze, proc and pushback is rolled.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-15, on top of the priority below): MAGE_ARMOR = 1. Together +1.8% time per kill saved for `frost-open-leveling` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-16, on top of the priority below): eat below 40% health. Together +0.4% time per kill saved for `frost-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/frost-leveling.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Frostbolt | 3.9 | 4.2 | 4.3 | 3.5 | 3.3 | 54% |
+| Frostbolt | 3.9 | 4.2 | 4.2 | 3.6 | 3.3 | 54% |
 | Wand | 0.8 | 1.2 | 1.7 | 1.5 | 1.6 | 4% |
 | Ice Lance | 1.2 | 1.7 | 1.8 | 1.6 | 1.5 | 35% |
-| Frost Nova | 0.5 | 0.8 | 0.9 | 0.7 | 0.7 | 2% |
+| Frost Nova | 0.5 | 0.8 | 0.8 | 0.7 | 0.7 | 1% |
 | Fire Blast | 0.5 | 0.6 | 0.6 | 0.5 | 0.4 | 6% |
 | Counterspell | 0.0 | 0.2 | 0.1 | 0.1 | 0.1 | 0% |
 

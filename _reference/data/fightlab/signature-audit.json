@@ -1,5 +1,5 @@
 {
- "date": "2026-11-16",
+ "date": "2026-11-17",
  "fights": 300,
  "levels": [
   20,
@@ -34,7 +34,7 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "891f140677f3",
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "fights": 300
    },
    "balance-open-leveling": {
@@ -61,7 +61,7 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "d999e3c12f1e",
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "fights": 300
    },
    "feral-combat-open-leveling": {
@@ -93,7 +93,7 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "d592612d7cf9",
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "fights": 300
    },
    "opt-feral-cat-dps-solo-60": {
@@ -125,7 +125,7 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "1b6fbd12e474",
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "fights": 300
    },
    "opt-feral-cat-dps-leveling-st": {
@@ -157,7 +157,7 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "1eee7cb4f226",
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "fights": 300
    },
    "leveling-feral": {
@@ -189,7 +189,7 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "9ea3a89e624f",
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "fights": 300
    },
    "restoration-leveling": {
@@ -205,7 +205,7 @@
     "missing_talents": [],
     "uncast": [],
     "fingerprint": "544015bd6f8a",
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "fights": 300
    }
   },
@@ -532,7 +532,7 @@
     "rotation": "arcane-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.7754,
+    "core_share": 0.7747,
     "min_share": 0.5,
     "required": [
      "Arcane Blast"
@@ -543,12 +543,12 @@
      "Arcane Wrath"
     ],
     "casts_60": {
-     "Arcane Blast": 1.81
+     "Arcane Blast": 1.78
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "4d9328461a01",
-    "date": "2026-11-15",
+    "fingerprint": "e475c919ce5e",
+    "date": "2026-11-17",
     "fights": 300
    },
    "arcane-leveling": {
@@ -556,7 +556,7 @@
     "rotation": "arcane-leveling",
     "ok": false,
     "verdict": "FAIL: lacks Arcane Blast",
-    "core_share": 0.71,
+    "core_share": 0.6916,
     "min_share": 0.5,
     "required": [
      "Arcane Blast"
@@ -573,8 +573,8 @@
      "Arcane Blast"
     ],
     "uncast": [],
-    "fingerprint": "73cb6c3085aa",
-    "date": "2026-11-15",
+    "fingerprint": "d5ddd4c60fc7",
+    "date": "2026-11-17",
     "fights": 300
    },
    "fire-open-leveling": {
@@ -582,7 +582,7 @@
     "rotation": "fire-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.7035,
+    "core_share": 0.6652,
     "min_share": 0.6,
     "required": [
      "Fireball",
@@ -597,13 +597,13 @@
      "Flamestrike"
     ],
     "casts_60": {
-     "Fireball": 0.91,
+     "Fireball": 0.8,
      "Pyroblast": 1.01
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "dd87d1ebe173",
-    "date": "2026-11-15",
+    "fingerprint": "e69f83b56899",
+    "date": "2026-11-17",
     "fights": 300
    },
    "fire-leveling": {
@@ -611,7 +611,7 @@
     "rotation": "fire-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.6891,
+    "core_share": 0.7031,
     "min_share": 0.6,
     "required": [
      "Fireball",
@@ -626,13 +626,13 @@
      "Flamestrike"
     ],
     "casts_60": {
-     "Fireball": 0.86,
-     "Pyroblast": 1.01
+     "Fireball": 0.84,
+     "Pyroblast": 1.03
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "00480799ccb4",
-    "date": "2026-11-15",
+    "fingerprint": "f5a049745061",
+    "date": "2026-11-17",
     "fights": 300
    },
    "opt-fire-leveling-leveling-st": {
@@ -640,7 +640,7 @@
     "rotation": "fire-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.7422,
+    "core_share": 0.7299,
     "min_share": 0.6,
     "required": [
      "Fireball",
@@ -655,13 +655,13 @@
      "Flamestrike"
     ],
     "casts_60": {
-     "Fireball": 1.22,
-     "Pyroblast": 1.01
+     "Fireball": 1.17,
+     "Pyroblast": 1.02
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "d7251fb2b419",
-    "date": "2026-11-15",
+    "fingerprint": "b7f1b3cdcc19",
+    "date": "2026-11-17",
     "fights": 300
    },
    "frost-open-leveling": {
@@ -669,7 +669,7 @@
     "rotation": "frost-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.8915,
+    "core_share": 0.8932,
     "min_share": 0.6,
     "required": [
      "Frostbolt"
@@ -682,12 +682,12 @@
      "Blizzard"
     ],
     "casts_60": {
-     "Frostbolt": 3.26
+     "Frostbolt": 3.24
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "e558acbfbf67",
-    "date": "2026-11-15",
+    "fingerprint": "e155ac8b78aa",
+    "date": "2026-11-17",
     "fights": 300
    },
    "leveling-frost": {
@@ -695,7 +695,7 @@
     "rotation": "frost-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.8897,
+    "core_share": 0.8912,
     "min_share": 0.6,
     "required": [
      "Frostbolt"
@@ -708,12 +708,12 @@
      "Blizzard"
     ],
     "casts_60": {
-     "Frostbolt": 3.36
+     "Frostbolt": 3.33
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "2ed490398454",
-    "date": "2026-11-15",
+    "fingerprint": "325d1e47ea77",
+    "date": "2026-11-17",
     "fights": 300
    },
    "opt-frost-aoe-leveling-aoe": {
@@ -721,7 +721,7 @@
     "rotation": "frost-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.8835,
+    "core_share": 0.8866,
     "min_share": 0.6,
     "required": [
      "Frostbolt"
@@ -734,12 +734,12 @@
      "Blizzard"
     ],
     "casts_60": {
-     "Frostbolt": 3.51
+     "Frostbolt": 3.56
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "78491543bce3",
-    "date": "2026-11-15",
+    "fingerprint": "4acbb92a88de",
+    "date": "2026-11-17",
     "fights": 300
    },
    "arcane-frost-open-leveling": {
@@ -747,7 +747,7 @@
     "rotation": "barrage-frost-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.9168,
+    "core_share": 0.9126,
     "min_share": 0.6,
     "required": [
      "Frostbolt",
@@ -760,13 +760,13 @@
      "Arcane Blast"
     ],
     "casts_60": {
-     "Frostbolt": 2.77,
-     "Arcane Missiles": 0.49
+     "Frostbolt": 2.81,
+     "Arcane Missiles": 0.47
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "33959836e9ed",
-    "date": "2026-11-15",
+    "fingerprint": "a149a30a0510",
+    "date": "2026-11-17",
     "fights": 300
    },
    "opt-frost-leveling-leveling-st": {
@@ -774,7 +774,7 @@
     "rotation": "barrage-frost-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.9042,
+    "core_share": 0.9051,
     "min_share": 0.6,
     "required": [
      "Frostbolt",
@@ -787,13 +787,13 @@
      "Arcane Blast"
     ],
     "casts_60": {
-     "Frostbolt": 2.79,
-     "Arcane Missiles": 0.5
+     "Frostbolt": 2.85,
+     "Arcane Missiles": 0.49
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "1adc9d0f1858",
-    "date": "2026-11-15",
+    "fingerprint": "2a2458a7c1ed",
+    "date": "2026-11-17",
     "fights": 300
    },
    "frostfire-open-leveling": {
@@ -801,7 +801,7 @@
     "rotation": "frostfire-leveling",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.3089,
+    "core_share": 0.3038,
     "min_share": 0.3,
     "required": [
      "Frostfire Bolt"
@@ -810,12 +810,12 @@
      "Frostfire Bolt"
     ],
     "casts_60": {
-     "Frostfire Bolt": 2.66
+     "Frostfire Bolt": 2.63
     },
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "4c6306d7dcf8",
-    "date": "2026-11-15",
+    "fingerprint": "831e68900bca",
+    "date": "2026-11-17",
     "fights": 300
    }
   },
@@ -3046,20 +3046,20 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Arcane Blast": 1.81
+     "Arcane Blast": 1.78
     },
-    "core_share": 0.7754,
+    "core_share": 0.7747,
     "min_share": 0.5,
-    "weighted": 29.51,
+    "weighted": 29.15,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Arcane Missiles": 0.503,
-     "Ice Lance": 0.15,
-     "Arcane Blast": 0.147,
-     "Arcane Wrath": 0.125,
+     "Arcane Missiles": 0.502,
+     "Ice Lance": 0.147,
+     "Arcane Blast": 0.146,
+     "Arcane Wrath": 0.126,
      "Fire Blast": 0.057,
      "Frost Nova": 0.014
     }
@@ -3084,9 +3084,9 @@
     "casts_60": {
      "Arcane Blast": 0.0
     },
-    "core_share": 0.71,
+    "core_share": 0.6916,
     "min_share": 0.5,
-    "weighted": 36.45,
+    "weighted": 36.27,
     "verdict": "FAIL: lacks Arcane Blast",
     "ok": false,
     "missing_talents": [
@@ -3094,19 +3094,19 @@
     ],
     "uncast": [],
     "top_shares": {
-     "Arcane Missiles": 0.71,
-     "Ice Lance": 0.187,
-     "Fire Blast": 0.061,
+     "Arcane Missiles": 0.692,
+     "Ice Lance": 0.2,
+     "Fire Blast": 0.064,
      "Frost Nova": 0.017,
-     "Frostbolt": 0.012,
-     "Cone of Cold": 0.009
+     "Frostbolt": 0.013,
+     "Cone of Cold": 0.01
     }
    },
    {
     "spec": "Fire",
     "name": "Fire",
     "build": "fire-open-leveling",
-    "split": "1/32/18",
+    "split": "1/31/19",
     "rotation": "fire-leveling",
     "rules": "tuned",
     "kind": "page",
@@ -3124,22 +3124,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Fireball": 0.91,
+     "Fireball": 0.8,
      "Pyroblast": 1.01
     },
-    "core_share": 0.7035,
+    "core_share": 0.6652,
     "min_share": 0.6,
-    "weighted": 36.26,
+    "weighted": 35.87,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Fire Blast": 0.257,
-     "Ice Lance": 0.244,
-     "Pyroblast": 0.181,
-     "Fireball": 0.155,
-     "Ignite": 0.059,
+     "Ice Lance": 0.279,
+     "Fire Blast": 0.238,
+     "Pyroblast": 0.182,
+     "Fireball": 0.135,
+     "Ignite": 0.061,
      "Pyroblast burn": 0.045
     }
    },
@@ -3165,23 +3165,23 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Fireball": 0.86,
-     "Pyroblast": 1.01
+     "Fireball": 0.84,
+     "Pyroblast": 1.03
     },
-    "core_share": 0.6891,
+    "core_share": 0.7031,
     "min_share": 0.6,
-    "weighted": 36.89,
+    "weighted": 36.18,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Fire Blast": 0.261,
-     "Ice Lance": 0.258,
-     "Pyroblast": 0.181,
-     "Fireball": 0.14,
-     "Ignite": 0.056,
-     "Pyroblast burn": 0.046
+     "Fire Blast": 0.267,
+     "Ice Lance": 0.245,
+     "Pyroblast": 0.184,
+     "Fireball": 0.142,
+     "Ignite": 0.06,
+     "Pyroblast burn": 0.045
     }
    },
    {
@@ -3206,23 +3206,23 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Fireball": 1.22,
-     "Pyroblast": 1.01
+     "Fireball": 1.17,
+     "Pyroblast": 1.02
     },
-    "core_share": 0.7422,
+    "core_share": 0.7299,
     "min_share": 0.6,
-    "weighted": 39.88,
+    "weighted": 39.24,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Fire Blast": 0.25,
-     "Fireball": 0.195,
-     "Pyroblast": 0.183,
-     "Ice Lance": 0.167,
-     "Pyroblast burn": 0.053,
-     "Wand": 0.051
+     "Fire Blast": 0.244,
+     "Pyroblast": 0.186,
+     "Fireball": 0.185,
+     "Ice Lance": 0.171,
+     "Wand": 0.064,
+     "Pyroblast burn": 0.053
     }
    },
    {
@@ -3245,19 +3245,19 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostbolt": 3.26
+     "Frostbolt": 3.24
     },
-    "core_share": 0.8915,
+    "core_share": 0.8932,
     "min_share": 0.6,
-    "weighted": 29.24,
+    "weighted": 28.79,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Frostbolt": 0.531,
-     "Ice Lance": 0.36,
-     "Fire Blast": 0.061,
+     "Frostbolt": 0.529,
+     "Ice Lance": 0.364,
+     "Fire Blast": 0.059,
      "Wand": 0.032,
      "Frost Nova": 0.016
     }
@@ -3282,19 +3282,19 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostbolt": 3.36
+     "Frostbolt": 3.33
     },
-    "core_share": 0.8897,
+    "core_share": 0.8912,
     "min_share": 0.6,
-    "weighted": 30.17,
+    "weighted": 29.85,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Frostbolt": 0.555,
-     "Ice Lance": 0.335,
-     "Fire Blast": 0.056,
+     "Frostbolt": 0.551,
+     "Ice Lance": 0.341,
+     "Fire Blast": 0.054,
      "Wand": 0.04,
      "Frost Nova": 0.015
     }
@@ -3319,20 +3319,20 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostbolt": 3.51
+     "Frostbolt": 3.56
     },
-    "core_share": 0.8835,
+    "core_share": 0.8866,
     "min_share": 0.6,
-    "weighted": 34.4,
+    "weighted": 33.79,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Frostbolt": 0.556,
-     "Ice Lance": 0.328,
-     "Fire Blast": 0.062,
-     "Wand": 0.034,
+     "Frostbolt": 0.56,
+     "Ice Lance": 0.327,
+     "Fire Blast": 0.057,
+     "Wand": 0.036,
      "Frost Nova": 0.02
     }
    },
@@ -3356,22 +3356,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostbolt": 2.77,
-     "Arcane Missiles": 0.49
+     "Frostbolt": 2.81,
+     "Arcane Missiles": 0.47
     },
-    "core_share": 0.9168,
+    "core_share": 0.9126,
     "min_share": 0.6,
-    "weighted": 28.02,
+    "weighted": 27.73,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Frostbolt": 0.463,
-     "Ice Lance": 0.308,
-     "Arcane Missiles": 0.146,
-     "Fire Blast": 0.048,
-     "Wand": 0.022,
+     "Frostbolt": 0.472,
+     "Ice Lance": 0.298,
+     "Arcane Missiles": 0.142,
+     "Fire Blast": 0.057,
+     "Wand": 0.017,
      "Frost Nova": 0.013
     }
    },
@@ -3395,23 +3395,23 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostbolt": 2.79,
-     "Arcane Missiles": 0.5
+     "Frostbolt": 2.85,
+     "Arcane Missiles": 0.49
     },
-    "core_share": 0.9042,
+    "core_share": 0.9051,
     "min_share": 0.6,
-    "weighted": 29.39,
+    "weighted": 29.08,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Frostbolt": 0.448,
-     "Ice Lance": 0.322,
-     "Arcane Missiles": 0.134,
-     "Fire Blast": 0.048,
-     "Wand": 0.033,
-     "Frost Nova": 0.015
+     "Frostbolt": 0.461,
+     "Ice Lance": 0.312,
+     "Arcane Missiles": 0.132,
+     "Fire Blast": 0.049,
+     "Wand": 0.032,
+     "Frost Nova": 0.014
     }
    },
    {
@@ -3430,22 +3430,22 @@
     ],
     "rule_issues": [],
     "casts_60": {
-     "Frostfire Bolt": 2.66
+     "Frostfire Bolt": 2.63
     },
-    "core_share": 0.3089,
+    "core_share": 0.3038,
     "min_share": 0.3,
-    "weighted": 33.51,
+    "weighted": 33.25,
     "verdict": "OK",
     "ok": true,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Ice Lance": 0.339,
-     "Frostfire Bolt": 0.28,
-     "Fire Blast": 0.243,
-     "Ignite": 0.057,
-     "Wand": 0.035,
-     "Frostfire Bolt burn": 0.029
+     "Ice Lance": 0.342,
+     "Frostfire Bolt": 0.275,
+     "Fire Blast": 0.241,
+     "Ignite": 0.056,
+     "Wand": 0.04,
+     "Frostfire Bolt burn": 0.028
     }
    }
   ],

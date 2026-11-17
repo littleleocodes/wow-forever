@@ -3,7 +3,7 @@
  "spec": "Fire",
  "build": "fire-open-leveling",
  "rotation": "fire-leveling",
- "date": "2026-11-15",
+ "date": "2026-11-16",
  "fights": 1500,
  "start_order": [
   {
@@ -74,15 +74,21 @@
   },
   {
    "levels": "39",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 1
+  },
+  {
+   "levels": "40",
    "tree": "Arcane",
    "talent": "Wand Specialization",
    "points": 1
   },
   {
-   "levels": "40-41",
+   "levels": "41",
    "tree": "Fire",
    "talent": "Improved Fire Blast",
-   "points": 2
+   "points": 1
   },
   {
    "levels": "42-43",
@@ -93,79 +99,73 @@
   {
    "levels": "44",
    "tree": "Fire",
-   "talent": "Heating Up",
+   "talent": "Incineration",
    "points": 1
   },
   {
    "levels": "45",
    "tree": "Fire",
+   "talent": "Heating Up",
+   "points": 1
+  },
+  {
+   "levels": "46",
+   "tree": "Fire",
    "talent": "Improved Scorch",
    "points": 1
   },
   {
-   "levels": "46-48",
+   "levels": "47-49",
    "tree": "Fire",
    "talent": "Master of Elements",
    "points": 3
   },
   {
-   "levels": "49-51",
+   "levels": "50-52",
    "tree": "Fire",
    "talent": "Critical Mass",
    "points": 3
   },
   {
-   "levels": "52-53",
+   "levels": "53-54",
    "tree": "Fire",
    "talent": "Incineration",
    "points": 2
   },
   {
-   "levels": "54-56",
+   "levels": "55-57",
    "tree": "Fire",
    "talent": "Fire Power",
    "points": 3
   },
   {
-   "levels": "57-58",
+   "levels": "58-59",
    "tree": "Fire",
    "talent": "Incineration",
    "points": 2
   },
   {
-   "levels": "59",
-   "tree": "Fire",
-   "talent": "Combustion",
-   "points": 1
-  },
-  {
    "levels": "60",
    "tree": "Fire",
-   "talent": "Incineration",
+   "talent": "Combustion",
    "points": 1
   }
  ],
  "steps": [
   {
-   "weighted": 36.733,
+   "weighted": 36.152,
    "values_at_60": {
-    "Combustion": -0.739,
-    "Incineration": -0.257,
-    "Shatter": -1.273,
-    "Wand Specialization": -0.124
+    "Combustion": -1.099,
+    "Ice Shards": -0.174,
+    "Shatter": -1.13,
+    "Wand Specialization": -0.296
    },
    "zero": []
   }
  ],
- "moves": [
-  {
-   "from": "Frostbite",
-   "to": "Ice Shards",
-   "level": 30,
-   "seed3": -0.0022,
-   "seed4": -0.0027,
-   "why": "gate"
-  }
+ "moves": [],
+ "kept_signature": [
+  "Pyroblast"
  ],
  "final_order": [
   {
@@ -211,16 +211,10 @@
    "points": 2
   },
   {
-   "levels": "28-29",
+   "levels": "28-30",
    "tree": "Frost",
    "talent": "Frostbite",
-   "points": 2
-  },
-  {
-   "levels": "30",
-   "tree": "Frost",
-   "talent": "Ice Shards",
-   "points": 1
+   "points": 3
   },
   {
    "levels": "31",
@@ -242,15 +236,21 @@
   },
   {
    "levels": "39",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 1
+  },
+  {
+   "levels": "40",
    "tree": "Arcane",
    "talent": "Wand Specialization",
    "points": 1
   },
   {
-   "levels": "40-41",
+   "levels": "41",
    "tree": "Fire",
    "talent": "Improved Fire Blast",
-   "points": 2
+   "points": 1
   },
   {
    "levels": "42-43",
@@ -261,293 +261,56 @@
   {
    "levels": "44",
    "tree": "Fire",
-   "talent": "Heating Up",
+   "talent": "Incineration",
    "points": 1
   },
   {
    "levels": "45",
    "tree": "Fire",
+   "talent": "Heating Up",
+   "points": 1
+  },
+  {
+   "levels": "46",
+   "tree": "Fire",
    "talent": "Improved Scorch",
    "points": 1
   },
   {
-   "levels": "46-48",
+   "levels": "47-49",
    "tree": "Fire",
    "talent": "Master of Elements",
    "points": 3
   },
   {
-   "levels": "49-51",
+   "levels": "50-52",
    "tree": "Fire",
    "talent": "Critical Mass",
    "points": 3
   },
   {
-   "levels": "52-53",
+   "levels": "53-54",
    "tree": "Fire",
    "talent": "Incineration",
    "points": 2
   },
   {
-   "levels": "54-56",
+   "levels": "55-57",
    "tree": "Fire",
    "talent": "Fire Power",
    "points": 3
   },
   {
-   "levels": "57-58",
+   "levels": "58-59",
    "tree": "Fire",
    "talent": "Incineration",
    "points": 2
   },
   {
-   "levels": "59",
+   "levels": "60",
    "tree": "Fire",
    "talent": "Combustion",
    "points": 1
-  },
-  {
-   "levels": "60",
-   "tree": "Fire",
-   "talent": "Incineration",
-   "points": 1
   }
- ],
- "written": {
-  "allocation": {
-   "Arcane": [
-    [
-     "Wand Specialization",
-     1
-    ]
-   ],
-   "Fire": [
-    [
-     "Incineration",
-     5
-    ],
-    [
-     "Accelerant",
-     5
-    ],
-    [
-     "Ignite",
-     5
-    ],
-    [
-     "Burning Soul",
-     2
-    ],
-    [
-     "Pyroblast",
-     1
-    ],
-    [
-     "Improved Fire Blast",
-     2
-    ],
-    [
-     "Improved Scorch",
-     1
-    ],
-    [
-     "Heating Up",
-     1
-    ],
-    [
-     "Master of Elements",
-     3
-    ],
-    [
-     "Critical Mass",
-     3
-    ],
-    [
-     "Fire Power",
-     3
-    ],
-    [
-     "Combustion",
-     1
-    ]
-   ],
-   "Frost": [
-    [
-     "Frost Warding",
-     2
-    ],
-    [
-     "Precision",
-     3
-    ],
-    [
-     "Ice Shards",
-     5
-    ],
-    [
-     "Frostbite",
-     2
-    ],
-    [
-     "Improved Frost Nova",
-     2
-    ],
-    [
-     "Ice Lance",
-     1
-    ],
-    [
-     "Shatter",
-     3
-    ]
-   ]
-  },
-  "order": [
-   {
-    "levels": "10-14",
-    "tree": "Fire",
-    "talent": "Accelerant",
-    "points": 5
-   },
-   {
-    "levels": "15-19",
-    "tree": "Fire",
-    "talent": "Ignite",
-    "points": 5
-   },
-   {
-    "levels": "20",
-    "tree": "Fire",
-    "talent": "Pyroblast",
-    "points": 1
-   },
-   {
-    "levels": "21-22",
-    "tree": "Frost",
-    "talent": "Precision",
-    "points": 2
-   },
-   {
-    "levels": "23-24",
-    "tree": "Frost",
-    "talent": "Frost Warding",
-    "points": 2
-   },
-   {
-    "levels": "25",
-    "tree": "Frost",
-    "talent": "Precision",
-    "points": 1
-   },
-   {
-    "levels": "26-27",
-    "tree": "Frost",
-    "talent": "Improved Frost Nova",
-    "points": 2
-   },
-   {
-    "levels": "28-29",
-    "tree": "Frost",
-    "talent": "Frostbite",
-    "points": 2
-   },
-   {
-    "levels": "30",
-    "tree": "Frost",
-    "talent": "Ice Shards",
-    "points": 1
-   },
-   {
-    "levels": "31",
-    "tree": "Frost",
-    "talent": "Ice Lance",
-    "points": 1
-   },
-   {
-    "levels": "32-35",
-    "tree": "Frost",
-    "talent": "Ice Shards",
-    "points": 4
-   },
-   {
-    "levels": "36-38",
-    "tree": "Frost",
-    "talent": "Shatter",
-    "points": 3
-   },
-   {
-    "levels": "39",
-    "tree": "Arcane",
-    "talent": "Wand Specialization",
-    "points": 1
-   },
-   {
-    "levels": "40-41",
-    "tree": "Fire",
-    "talent": "Improved Fire Blast",
-    "points": 2
-   },
-   {
-    "levels": "42-43",
-    "tree": "Fire",
-    "talent": "Burning Soul",
-    "points": 2
-   },
-   {
-    "levels": "44",
-    "tree": "Fire",
-    "talent": "Heating Up",
-    "points": 1
-   },
-   {
-    "levels": "45",
-    "tree": "Fire",
-    "talent": "Improved Scorch",
-    "points": 1
-   },
-   {
-    "levels": "46-48",
-    "tree": "Fire",
-    "talent": "Master of Elements",
-    "points": 3
-   },
-   {
-    "levels": "49-51",
-    "tree": "Fire",
-    "talent": "Critical Mass",
-    "points": 3
-   },
-   {
-    "levels": "52-53",
-    "tree": "Fire",
-    "talent": "Incineration",
-    "points": 2
-   },
-   {
-    "levels": "54-56",
-    "tree": "Fire",
-    "talent": "Fire Power",
-    "points": 3
-   },
-   {
-    "levels": "57-58",
-    "tree": "Fire",
-    "talent": "Incineration",
-    "points": 2
-   },
-   {
-    "levels": "59",
-    "tree": "Fire",
-    "talent": "Combustion",
-    "points": 1
-   },
-   {
-    "levels": "60",
-    "tree": "Fire",
-    "talent": "Incineration",
-    "points": 1
-   }
-  ],
-  "note": "2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Frostbite to Ice Shards at 30 (gate: -0.2% seed 3, -0.3% seed 4, level-weighted time per kill)."
- }
+ ]
 }

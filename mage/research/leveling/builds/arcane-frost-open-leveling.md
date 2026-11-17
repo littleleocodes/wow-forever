@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the barrage-frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). 
+The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the barrage-frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). 
 
 ## Point allocation
 
@@ -21,14 +21,14 @@ The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling searc
 |---|---|---|---|
 | **Wand Specialization** | 2/2 | moved | Increases your damage with Wands by 25%. |
 | **Improved Channeling** | 4/5 | **NEW** | Gives your Arcane Missiles spell a 80% chance and your Arcane Blast and Arcane Wrath spells a 56% chance to not lose casting time when you take damage. |
-| **Arcane Resilience** | 1/3 | changed | Increases your Armor by an amount equal to 25% of your Intellect. |
+| **Arcane Resilience** | 2/3 | changed | Increases your Armor by an amount equal to 50% of your Intellect. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Improved Counterspell** | 1/2 | changed | Your Counterspell also Silences the target for 2 sec. |
 | **Arcane Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 | **Presence of Mind** | 1/1 | unchanged | When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell. |
-| **Arcane Mind** | 4/5 | changed | Increases your Intellect by 8% and increases the critical strike damage bonus of your Arcane spells by 80%. |
+| **Arcane Mind** | 3/5 | changed | Increases your Intellect by 6% and increases the critical strike damage bonus of your Arcane spells by 60%. |
 | **Arcane Instability** | 3/3 | changed | Increases the damage done by your spells by 3% and your critical strike chance by 3%. |
 
 ### Fire (0)
@@ -77,19 +77,20 @@ The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling searc
 | 51 | Arcane | Improved Channeling | 1 | 19/0/23 |
 | 52 | Arcane | Improved Counterspell | 1 | 20/0/23 |
 | 53 | Arcane | Presence of Mind | 1 | 21/0/23 |
-| 54-57 | Arcane | Arcane Mind | 4 | 25/0/23 |
+| 54-56 | Arcane | Arcane Mind | 3 | 24/0/23 |
+| 57 | Arcane | Arcane Resilience | 1 | 25/0/23 |
 | 58-60 | Arcane | Arcane Instability | 3 | 28/0/23 |
 
 ## Core talents (priority order)
 
-1. **Shatter** — +2.9 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Ice Lance** — +2.0 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Missile Barrage** — +1.8 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Ice Shards** — +1.7 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Frostbite** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Precision** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Fingers of Frost** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Improved Frostbolt** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Shatter** — +2.5 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Ice Lance** — +2.3 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Missile Barrage** — +2.1 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Improved Frostbolt** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Frostbite** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Ice Shards** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Precision** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Arctic Reach** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -97,8 +98,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Ice Shards to Arctic Reach at 27 (gate: -0.5% seed 3, -0.4% seed 4, level-weighted time per kill); Improved Channeling to Improved Counterspell at 52 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 28.26; opt-frost-leveling-leveling-st 29.14. The search simulated 56,559 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 27.79; opt-frost-leveling-leveling-st 28.91. The search simulated 56,559 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -108,7 +108,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/mage>
-- <https://talentsforever.com/mage/60/25120520000030143--0325300301103002-12>
+- <https://talentsforever.com/mage/60/24220520000130133--0324300301203002-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

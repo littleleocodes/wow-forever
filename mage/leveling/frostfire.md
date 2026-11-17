@@ -6,11 +6,11 @@
 
 **Leveling from level 1?** [The rotation level by level](frostfire-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Frostfire — Leveling](../research/leveling/builds/frostfire-open-leveling.md)** (2/25/24) — [open the talent tree](https://talentsforever.com/mage/60/2-55502000200033-0325320301003002-12)
+**[Frostfire — Leveling](../research/leveling/builds/frostfire-open-leveling.md)** (2/25/24) — [open the talent tree](https://talentsforever.com/mage/60/2-55511000200033-0325320301003002-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-**Signature spells:** 31% of the damage at level 60 in the fight lab comes from the spec's core spells (Frostfire Bolt) (the spec's rule: at least 30%; **Frostfire Bolt** cast at level 60).
+**Signature spells:** 30% of the damage at level 60 in the fight lab comes from the spec's core spells (Frostfire Bolt) (the spec's rule: at least 30%; **Frostfire Bolt** cast at level 60).
 
 ## How to play
 
@@ -24,11 +24,11 @@
 4. Below about a third of the mob's health (or, from 40, under 15% of your mana): no bolt; **Fire Blast** whenever it is ready, an **Ice Lance** into a freeze or one that will kill, else your wand. No Cone of Cold (the tuned rules switch it off).
 5. **Counterspell** a mob that casts spells.
 
-**Between fights:** Drink your conjured water below 15% of your mana (the tuned rule), **Evocation** when it is ready and you are under 40% mana, eat below 40% of your health (the tuned rule).
+**Between fights:** Drink your conjured water below 15% of your mana (the tuned rule), **Evocation** in place of a drink when it is ready and you are under 15% mana, eat below 40% of your health (the tuned rule).
 
 ## Why this rotation
 
-The Frostfire leveling build is a Frost mage whose bolt changes at level 40: **Frostbolt** before, **Frostfire Bolt** after, with **Frost Nova**, a step back, **Ice Lance** into the freeze and **Fire Blast** throughout. Frost points come first (**Ice Lance** at 20, **Shatter** by 27, **Fingers of Frost** at 30-31), then **Accelerant** (35-39) and the Fire points: **Ignite**, **Impact** (45, 60), **Improved Fire Blast**, **Incineration**, **Master of Elements** and **Critical Mass**. In the open leveling search's 20-60 race of 2026-11-15 it took about 33.8 seconds per kill level-weighted, behind the Frost page's 29.5; the page's numbers table has each level.
+The Frostfire leveling build is a Frost mage whose bolt changes at level 40: **Frostbolt** before, **Frostfire Bolt** after, with **Frost Nova**, a step back, **Ice Lance** into the freeze and **Fire Blast** throughout. Frost points come first (**Ice Lance** at 20, **Shatter** by 27, **Fingers of Frost** at 30-31), then **Accelerant** (35-39) and the Fire points: **Ignite** (40-44), **Impact** (45), **Improved Fire Blast**, **Incineration**, **Master of Elements** and **Critical Mass**. In the open leveling search's 20-60 race of 2026-11-16 it took about 33.4 seconds per kill level-weighted, behind the Frost page's 28.9; the page's numbers table has each level.
 
 **Why it works**
 
@@ -43,7 +43,7 @@ The Frostfire leveling build is a Frost mage whose bolt changes at level 40: **F
 
 - The leveling filler pass of 2026-11-09 moved five points that measured nothing or only held a tier open (Blast Wave, Fire Power, Arcane Resilience and both Frost Warding) to **Improved Frostbolt**, **Improved Frost Nova** and **Impact**; on 2026-11-15, under **Mage Armor**, the open search and the filler pass moved the three Burning Soul points to **Improved Fire Blast** (46-47) and **Impact** (45): 2/25/24, with no Blast Wave for packs and nothing that keeps hits from pushing the bolt back.
 - The signature rule: the Frostfire spec must do at least 30% of its damage with **Frostfire Bolt** from level 40. The page shows the build at 31% at level 60 in the fight lab, just above the floor: the re-tuned rules of 2026-11-15 moved part of the damage to **Fire Blast**.
-- Mana: **Frostfire Bolt** costs 370 at top rank. Drink below 15% of your mana and eat below 40% of your health (the tuned rules), and wear **Mage Armor** from 34 (1.5-3.5% faster per kill at 34-46 in the fight lab, 1-2% at 50-60); use **Evocation** between fights when it is ready and you are under 40% mana.
+- Mana: **Frostfire Bolt** costs 370 at top rank. Drink below 15% of your mana and eat below 40% of your health (the tuned rules), and wear **Mage Armor** from 34 (1.5-3.5% faster per kill at 34-46 in the fight lab, 1-2% at 50-60); use **Evocation** between fights in place of a drink, when it is ready and you are under 15% mana.
 
 **When to change it**
 
@@ -78,20 +78,20 @@ One point per level from 10, in this order:
 | 55 | Improved Frost Nova (Frost) | 1 |
 | 56-58 | Critical Mass (Fire) | 3 |
 | 59 | Incineration (Fire) | 1 |
-| 60 | Impact (Fire) | 1 |
+| 60 | Flame Throwing (Fire) | 1 |
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
-| 20 | 29 | 16 |
+| 20 | 28 | 16 |
 | 30 | 32 | 19 |
 | 40 | 41 | 25 |
-| 50 | 35 | 26 |
+| 50 | 34 | 25 |
 | 60 | 30 | 22 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-16 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-17 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

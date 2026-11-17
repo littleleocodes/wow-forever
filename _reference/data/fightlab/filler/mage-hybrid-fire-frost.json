@@ -3,7 +3,7 @@
  "spec": "Hybrid Fire/Frost",
  "build": "frostfire-open-leveling",
  "rotation": "frostfire-leveling",
- "date": "2026-11-15",
+ "date": "2026-11-16",
  "fights": 1500,
  "start_order": [
   {
@@ -147,16 +147,34 @@
  ],
  "steps": [
   {
-   "weighted": 33.749,
+   "weighted": 33.234,
    "values_at_60": {
-    "Critical Mass": -0.372,
-    "Fingers of Frost": -0.409,
-    "Impact": -0.627,
-    "Improved Frost Nova": -0.616,
-    "Incineration": -0.419,
-    "Wand Specialization": -0.239
+    "Critical Mass": -0.247,
+    "Fingers of Frost": -0.534,
+    "Impact": 0.012,
+    "Improved Frost Nova": -0.572,
+    "Incineration": -0.116,
+    "Wand Specialization": -0.085
    },
-   "zero": []
+   "zero": [
+    "Impact",
+    "Wand Specialization"
+   ]
+  },
+  {
+   "weighted": 33.223,
+   "values_at_60": {
+    "Critical Mass": -0.368,
+    "Fingers of Frost": -0.491,
+    "Flame Throwing": -0.054,
+    "Improved Frost Nova": -0.39,
+    "Incineration": -0.185,
+    "Wand Specialization": -0.067
+   },
+   "zero": [
+    "Flame Throwing",
+    "Wand Specialization"
+   ]
   }
  ],
  "moves": [
@@ -167,8 +185,17 @@
    "seed3": -0.0062,
    "seed4": -0.0031,
    "why": "gate"
+  },
+  {
+   "from": "Impact",
+   "to": "Flame Throwing",
+   "level": 60,
+   "seed3": -0.0003,
+   "seed4": 0.0003,
+   "why": "no loss"
   }
  ],
+ "kept_signature": [],
  "final_order": [
   {
    "levels": "10-11",
@@ -305,7 +332,7 @@
   {
    "levels": "60",
    "tree": "Fire",
-   "talent": "Impact",
+   "talent": "Flame Throwing",
    "points": 1
   }
  ],
@@ -331,8 +358,12 @@
      5
     ],
     [
+     "Flame Throwing",
+     1
+    ],
+    [
      "Impact",
-     2
+     1
     ],
     [
      "Improved Fire Blast",
@@ -522,10 +553,10 @@
    {
     "levels": "60",
     "tree": "Fire",
-    "talent": "Impact",
+    "talent": "Flame Throwing",
     "points": 1
    }
   ],
-  "note": "2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Burning Soul to Impact at 45 (gate: -0.6% seed 3, -0.3% seed 4, level-weighted time per kill)."
+  "note": "2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Impact to Flame Throwing at 60 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Burning Soul to Impact at 45 (gate: -0.6% seed 3, -0.3% seed 4, level-weighted time per kill)."
  }
 }

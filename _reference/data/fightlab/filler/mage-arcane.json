@@ -3,7 +3,7 @@
  "spec": "Arcane",
  "build": "arcane-open-leveling",
  "rotation": "arcane-leveling",
- "date": "2026-11-15",
+ "date": "2026-11-16",
  "fights": 1500,
  "start_order": [
   {
@@ -159,11 +159,11 @@
  ],
  "steps": [
   {
-   "weighted": 29.583,
+   "weighted": 29.336,
    "values_at_60": {
-    "Arcane Mind": -0.179,
-    "Arcane Power": -0.311,
-    "Shatter": -0.27
+    "Arcane Mind": -0.416,
+    "Arcane Power": -0.286,
+    "Shatter": -0.161
    },
    "zero": []
   }
@@ -176,7 +176,18 @@
    "seed3": -0.002,
    "seed4": -0.0033,
    "why": "gate"
+  },
+  {
+   "from": "Improved Blizzard",
+   "to": "Frost Channeling",
+   "level": 55,
+   "seed3": -0.001,
+   "seed4": -0.0014,
+   "why": "gate"
   }
+ ],
+ "kept_signature": [
+  "Arcane Blast"
  ],
  "final_order": [
   {
@@ -318,10 +329,16 @@
    "points": 1
   },
   {
-   "levels": "54-55",
+   "levels": "54",
    "tree": "Frost",
    "talent": "Improved Blizzard",
-   "points": 2
+   "points": 1
+  },
+  {
+   "levels": "55",
+   "tree": "Frost",
+   "talent": "Frost Channeling",
+   "points": 1
   },
   {
    "levels": "56-57",
@@ -419,8 +436,12 @@
      2
     ],
     [
+     "Frost Channeling",
+     1
+    ],
+    [
      "Improved Blizzard",
-     2
+     1
     ],
     [
      "Ice Lance",
@@ -572,10 +593,16 @@
     "points": 1
    },
    {
-    "levels": "54-55",
+    "levels": "54",
     "tree": "Frost",
     "talent": "Improved Blizzard",
-    "points": 2
+    "points": 1
+   },
+   {
+    "levels": "55",
+    "tree": "Frost",
+    "talent": "Frost Channeling",
+    "points": 1
    },
    {
     "levels": "56-57",
@@ -590,6 +617,6 @@
     "points": 3
    }
   ],
-  "note": "2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Frost Warding to Ice Shards at 52 (gate: -0.2% seed 3, -0.3% seed 4, level-weighted time per kill)."
+  "note": "2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Blizzard to Frost Channeling at 55 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Frost Warding to Ice Shards at 52 (gate: -0.2% seed 3, -0.3% seed 4, level-weighted time per kill)."
  }
 }

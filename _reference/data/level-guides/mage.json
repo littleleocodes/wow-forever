@@ -78,7 +78,7 @@
       "Below a fifth of its health: **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand."
      ],
      "notes": [
-      "**Evocation** (20) is for between fights: channel it whenever it is ready and you are under 40% mana.",
+      "**Evocation** (20) is for between fights: channel it in place of a drink, whenever it is ready and you are under 15% mana.",
       "**Blink** (20) and **Mana Shield** (20) are escapes for a pull that goes wrong, not rotation. **Blizzard** (20) is for packs."
      ]
     },
@@ -138,8 +138,8 @@
    ],
    "between": [
     "Drink your conjured water when you are below about 15% of your mana. That is the tuned rule: topping up earlier cost more time in the fight lab than the wand hits it saved.",
-    "**Evocation** (from 20) whenever it is ready and you are under 40% mana.",
-    "Eat when you are below two thirds of your health. Conjure both food and water yourself.",
+    "**Evocation** (from 20) in place of a drink: whenever it is ready and you are under 15% mana, channel it instead of drinking (it gives back 70% to more than all of your mana, so at 40% part of it was lost: 0.6-1.1% faster per kill in the fight lab, 2026-11-16).",
+    "Eat when you are below 40% of your health (the tuned rule). Conjure both food and water yourself.",
     "Visit the trainer every even level. **Frostbolt** alone has eleven ranks."
    ],
    "other": [
@@ -471,7 +471,7 @@
      "if_hurt": "Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.",
      "notes": [
       "**Frost Channeling** (21-23) makes your Frost spells cheaper.",
-      "**Evocation** (20) is for between fights: channel it whenever it is ready and you are under 40% mana.",
+      "**Evocation** (20) is for between fights: channel it in place of a drink, whenever it is ready and you are under 15% mana.",
       "**Blink** (20) and **Mana Shield** (20) are for a pull that goes wrong, not rotation. **Blizzard** (20) is for packs."
      ]
     },
@@ -554,13 +554,13 @@
      "if_hurt": "Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.",
      "notes": [
       "**Presence of Mind** (53) makes your next cast instant; the fight lab spends it on the pull's first **Frostbolt**.",
-      "**Arcane Mind** (54-57) adds 8% Intellect, and **Arcane Instability** (58-60) 3% more spell damage and 3% more crit."
+      "**Arcane Mind** (54-56) adds 6% Intellect, **Arcane Resilience** (57) gets its second point, and **Arcane Instability** (58-60) 3% more spell damage and 3% more crit."
      ]
     }
    ],
    "between": [
     "Drink your conjured water when you are below about 15% of your mana, and eat below 40% of your health. Those are the tuned rules: resting earlier cost more time in the fight lab than it saved.",
-    "**Evocation** (from 20) whenever it is ready and you are under 40% mana.",
+    "**Evocation** (from 20) in place of a drink: whenever it is ready and you are under 15% mana, channel it instead of drinking (it gives back 70% to more than all of your mana, so at 40% part of it was lost: 0.6-1.1% faster per kill in the fight lab, 2026-11-16).",
     "Conjure both food and water yourself.",
     "Visit the trainer every even level. **Frostbolt** alone has eleven ranks."
    ],
@@ -906,7 +906,7 @@
       "**Missile Barrage** (21-22): an **Arcane Blast** that lands can make your next **Arcane Missiles** free, half as long and twice as dense.",
       "Each **Arcane Blast** makes the next one cost more; the stacks last 18 seconds from the first, and the fight lab stops at two.",
       "**Arcane Subtlety** (23-24) lowers the mob's resistance to all your spells by 15. **Counterspell** (24): a mob that starts casting stops standing back and walks to you.",
-      "**Evocation** (20) is for between fights. **Blink** (20) and **Mana Shield** (20) are for a pull that goes wrong. **Blizzard** (20) is for packs."
+      "**Evocation** (20) is for between fights, in place of a drink under 15% mana. **Blink** (20) and **Mana Shield** (20) are for a pull that goes wrong. **Blizzard** (20) is for packs."
      ]
     },
     {
@@ -989,14 +989,14 @@
      ],
      "if_hurt": "Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.",
      "notes": [
-      "**Improved Blizzard** (54-55) only matters in packs. **Permafrost** (56-57) makes your chills last longer.",
+      "**Improved Blizzard** (54) only matters in packs, **Frost Channeling** (55) makes your Frost spells 5% cheaper, and **Permafrost** (56-57) makes your chills last longer.",
       "**Shatter** (58-60): your spells crit more often on a frozen mob, 50% more with the third point at 60, so the **Ice Lance** into a **Frost Nova** crits far more often."
      ]
     }
    ],
    "between": [
     "Drink your conjured water when you are below about 15% of your mana, and eat below 40% of your health. Those are the tuned rules (2026-11-15, with **Mage Armor**): resting earlier cost more time in the fight lab than it saved.",
-    "**Evocation** (from 20) whenever it is ready and you are under 40% mana.",
+    "**Evocation** (from 20) in place of a drink: whenever it is ready and you are under 15% mana, channel it instead of drinking (it gives back 70% to more than all of your mana, so at 40% part of it was lost: 0.6-1.1% faster per kill in the fight lab, 2026-11-16).",
     "Conjure both food and water yourself.",
     "Visit the trainer every even level. **Arcane Missiles** alone has seven ranks."
    ],
@@ -1326,7 +1326,7 @@
      "notes": [
       "The opener is a tuned rule: **Pyroblast** is the Fire signature spell, so every pull starts with one. The fight lab lets the mob run at you from the first second of the cast; a mob that only notices you when the **Pyroblast** lands gives you more time.",
       "**Scorch** (22): the tuned rules never cast it. Leave it off your bar. **Precision** (21-22) adds hit.",
-      "**Evocation** (20) is for between fights: channel it whenever it is ready and you are under 40% mana. **Blink** (20) and **Mana Shield** (20) are for a pull that goes wrong."
+      "**Evocation** (20) is for between fights: channel it in place of a drink, whenever it is ready and you are under 15% mana. **Blink** (20) and **Mana Shield** (20) are for a pull that goes wrong."
      ]
     },
     {
@@ -1365,13 +1365,13 @@
      ],
      "if_hurt": "Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.",
      "notes": [
-      "**Ice Shards** (30 and 32-35) and **Shatter** (36-38) make the **Ice Lance** into a freeze your biggest hit.",
-      "**Wand Specialization** (39) makes your wand hit harder for the finish.",
-      "**Improved Fire Blast** (40-41) brings **Fire Blast** back 2 seconds sooner and adds 15 yards of range; **Burning Soul** (42-43) keeps hits from pushing your Fire casts back. **Frostfire Bolt** (40) is not part of the Fire list."
+      "**Ice Shards** (32-35, 39) and **Shatter** (36-38) make the **Ice Lance** into a freeze your biggest hit.",
+      "**Wand Specialization** (40) makes your wand hit harder for the finish.",
+      "**Improved Fire Blast** (41, one point) brings **Fire Blast** back 1 second sooner and adds 8 yards of range; **Burning Soul** (42-43) keeps hits from pushing your Fire casts back. **Frostfire Bolt** (40) is not part of the Fire list."
      ]
     },
     {
-     "from": 44,
+     "from": 45,
      "title": "Heating Up: fast Pyroblasts",
      "change": "**Heating Up** (talent): Fire crits and every **Fire Blast** add stacks; at 3 your next **Pyroblast** takes a quarter of the time.",
      "press": [
@@ -1388,12 +1388,12 @@
      "if_hurt": "Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.",
      "notes": [
       "On one mob the 3 stacks rarely come together before it dies: the opener stays your main **Pyroblast**.",
-      "**Improved Scorch** (45) does nothing in this list: the tuned rules never cast **Scorch**. **Master of Elements** (46-48) refunds mana on your Fire and Frost crits, **Critical Mass** (49-51) adds Fire crit.",
-      "**Incineration** (52-53, 57-58) adds crit to **Fire Blast** and **Ice Lance**: 8% by 58. **Fire Power** (54-56) adds Fire damage for each Fire effect on the mob."
+      "**Improved Scorch** (46) does nothing in this list: the tuned rules never cast **Scorch**. **Master of Elements** (47-49) refunds mana on your Fire and Frost crits, **Critical Mass** (50-52) adds Fire crit.",
+      "**Incineration** (53-54, 58-59) adds crit to **Fire Blast** and **Ice Lance**, 2% a point: its first point came at 44, all five by 59. **Fire Power** (55-57) adds Fire damage for each Fire effect on the mob."
      ]
     },
     {
-     "from": 59,
+     "from": 60,
      "title": "Combustion on the pull",
      "change": "**Combustion** (talent): every 3 minutes, more Fire crit for the opening **Pyroblast** and the hits after it.",
      "press": [
@@ -1409,14 +1409,13 @@
      ],
      "if_hurt": "Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.",
      "notes": [
-      "**Combustion** (59) raises your Fire crit with every Fire hit until 3 crits; the fight lab uses it at the pull whenever it is ready.",
-      "**Incineration** (60) gets its fifth point: 10% more crit for **Fire Blast** and **Ice Lance**."
+      "**Combustion** (60) raises your Fire crit with every Fire hit until 3 crits; the fight lab uses it at the pull whenever it is ready."
      ]
     }
    ],
    "between": [
     "Drink your conjured water when you are below about 15% of your mana, and eat below 40% of your health. Those are the tuned rules: resting earlier cost more time in the fight lab than it saved.",
-    "**Evocation** (from 20) whenever it is ready and you are under 40% mana.",
+    "**Evocation** (from 20) in place of a drink: whenever it is ready and you are under 15% mana, channel it instead of drinking (it gives back 70% to more than all of your mana, so at 40% part of it was lost: 0.6-1.1% faster per kill in the fight lab, 2026-11-16).",
     "Conjure both food and water yourself.",
     "Visit the trainer every even level. **Fireball** alone has eleven ranks."
    ],
@@ -1560,7 +1559,7 @@
         "role": "The opener with your cooldown: Combustion and Pyroblast",
         "binds": [
          {
-          "from": 59,
+          "from": 60,
           "spell": "Combustion",
           "only": "macro"
          }
@@ -1659,7 +1658,7 @@
      "The [Frost guide](frost-by-level.md)'s keys, with the changes Fire needs: Q keeps **Fireball** to 60 (Fire never casts **Frostbolt**), **Pyroblast** goes on 1 (the free-Missiles key of the Arcane-Frost build), **Flamestrike** takes Shift+R in place of **Blizzard**, and Shift+Q holds the **Combustion** macro.",
      "**Ice Lance** stays on R, as in every mage guide; it arrives at 31 in this build.",
      "Levels 1-9 fight with three keys: Q, Mouse 5 and the middle mouse button. Add a key when its spell arrives.",
-     "The Shift+Q macro from 59, one line each: `#showtooltip Pyroblast`, `/cast Combustion`, `/cast Pyroblast`. **Combustion** is off the global cooldown, so one press fires both; while it is on cooldown the second line still casts **Pyroblast**, so Shift+Q can open every pull.",
+     "The Shift+Q macro from 60, one line each: `#showtooltip Pyroblast`, `/cast Combustion`, `/cast Pyroblast`. **Combustion** is off the global cooldown, so one press fires both; while it is on cooldown the second line still casts **Pyroblast**, so Shift+Q can open every pull.",
      "No key: **Frost Armor** and **Ice Armor**, **Arcane Intellect**, **Conjure Water** and **Conjure Food**, food, drink, the mount and the Hearthstone. Put them on a side bar and click them between fights.",
      "**Evocation** on 4 is the one between-fights spell with a key: it has a cooldown and a mana rule, so it is a decision, not a chore. Click it instead if you want 4 free.",
      "The single-target rotation never casts **Cone of Cold**, **Arcane Explosion**, **Flamestrike** or **Scorch**. The first three are there for a pull that brings friends; **Scorch** has no key."
@@ -1744,7 +1743,7 @@
      "if_hurt": "Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.",
      "notes": [
       "**Ice Shards** (21-23) gets its last points.",
-      "**Evocation** (20) is for between fights: channel it whenever it is ready and you are under 40% mana. **Blizzard** (20) is for packs."
+      "**Evocation** (20) is for between fights: channel it in place of a drink, whenever it is ready and you are under 15% mana. **Blizzard** (20) is for packs."
      ]
     },
     {
@@ -1804,14 +1803,14 @@
      "notes": [
       "**Frostfire Bolt** slows like **Frostbolt**, so its chill still rolls **Frostbite** and **Fingers of Frost**. Take **Frostbolt** off your bar.",
       "**Ignite** (40-44), **Master of Elements** (50-52) and **Critical Mass** (56-58) work on **Frostfire Bolt** and **Fire Blast**, **Improved Fire Blast** (46-47) brings **Fire Blast** back 2 seconds sooner, and **Incineration** (48-49, 53-54, 59) adds crit to **Fire Blast** and **Ice Lance**.",
-      "**Improved Frost Nova** (55) gets its second point: **Frost Nova** comes back 4 seconds sooner. **Impact** (45, 60) gives your Fire spells, **Frostfire Bolt** included, a small chance to stun the mob for 2 seconds. Hits push the bolt back: this build has no Burning Soul.",
+      "**Improved Frost Nova** (55) gets its second point: **Frost Nova** comes back 4 seconds sooner. **Impact** (45) gives your Fire spells, **Frostfire Bolt** included, a small chance to stun the mob for 2 seconds. Hits push the bolt back: this build has no Burning Soul.",
       "**Mage Armor** stays on to 60: 1-3.5% faster per kill than **Ice Armor** at 40-60 in the fight lab."
      ]
     }
    ],
    "between": [
     "Drink your conjured water when you are below about 15% of your mana, and eat below 40% of your health. Those are the tuned rules: resting earlier cost more time in the fight lab than it saved.",
-    "**Evocation** (from 20) whenever it is ready and you are under 40% mana.",
+    "**Evocation** (from 20) in place of a drink: whenever it is ready and you are under 15% mana, channel it instead of drinking (it gives back 70% to more than all of your mana, so at 40% part of it was lost: 0.6-1.1% faster per kill in the fight lab, 2026-11-16).",
     "Conjure both food and water yourself.",
     "Visit the trainer every even level: **Frostbolt** to 40, then **Frostfire Bolt** at 50 and 60."
    ],

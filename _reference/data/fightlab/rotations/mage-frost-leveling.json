@@ -13,8 +13,10 @@
  },
  "drink_below": 0.15,
  "knobs": {
-  "MAGE_ARMOR": 1
+  "MAGE_ARMOR": 1,
+  "EVO_BELOW": 0.15
  },
+ "eat_below": 0.4,
  "class": "mage",
  "spec": "frost-leveling",
  "build": "frost-open-leveling",
@@ -25,15 +27,15 @@
   50,
   60
  ],
- "date": "2026-11-15",
+ "date": "2026-11-16",
  "signature": {
   "required": [
    "Frostbolt"
   ],
   "build_spec": "Frost",
   "dropped_saved_rules": [],
-  "core_share_before": 0.8986355910334161,
-  "core_share_after": 0.8934635786219758,
+  "core_share_before": 0.8932317567651429,
+  "core_share_after": 0.8927868868825646,
   "min_share": 0.6,
   "floor_reached": null,
   "played_before": true,
@@ -44,54 +46,54 @@
  "changes": [
   {
    "round": 1,
-   "change": "MAGE_ARMOR = 1",
+   "change": "eat below 40% health",
    "rule": [
-    "knob",
-    "MAGE_ARMOR",
-    1
+    "eat_below",
+    null,
+    0.4
    ],
-   "gain_seed1": 0.021393567991081164,
-   "gain_seed2": 0.01971693270694208
+   "gain_seed1": 0.004795399040234072,
+   "gain_seed2": 0.0049855357826360525
   }
  ],
- "weighted_before": 30.039323879546476,
- "weighted_after": 29.49934437169377,
+ "weighted_before": 28.994904940414663,
+ "weighted_after": 28.879388877331508,
  "per_level": {
   "20": {
-   "before": 27.53434283238871,
-   "after": 27.53434283238871,
+   "before": 27.186768655520407,
+   "after": 27.08394556320128,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 33.796047485684824,
-   "after": 33.796047485684824,
+   "before": 33.189726522433205,
+   "after": 33.06269997508226,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 34.96785028970848,
-   "after": 33.960393376180086,
+   "before": 33.40769066534063,
+   "after": 33.264380309624876,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 29.179131130126066,
-   "after": 28.465002170246787,
+   "before": 27.97650901307354,
+   "after": 27.828522701704607,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 26.427098776605558,
-   "after": 25.893912492681537,
+   "before": 25.407012367203773,
+   "after": 25.33860862465972,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
  },
  "retune": {
   "times": {
-   "saved": 30.039,
-   "continued": 29.499
+   "saved": 28.995,
+   "continued": 28.879
   },
   "installed": "continued",
   "reference_ok": true

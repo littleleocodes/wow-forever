@@ -465,7 +465,12 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   armor or ice armor?"; the module had always worn Ice Armor): `mage.MAGE_ARMOR` wears Mage Armor from 34 (50% of regeneration while
   casting at every rank in Forever, adding to Arcane Meditation). The tunes took it for Frost, Arcane, Arcane-Frost and Frostfire (up to 5%
   faster per kill on single pulls, most at 34-40; even from 50 for Arcane-Frost); Fire keeps Ice Armor, and so does the AoE variant (no rules file: Mage Armor was 9-20% slower in pulls
-  of four). A choice a module makes for the player belongs in `ROTATION_KNOBS`, where the tunes can compare it. The duel lab plays every
+  of four). A choice a module makes for the player belongs in `ROTATION_KNOBS`, where the tunes can compare it. The mage's between-fight Evocation is one since 2026-11-16 (user: "Why is Evocation for mage used
+  when below 40% and not when lower? It restores much more mana than 60%"): `mage.EVO_BELOW`, a hand-set 0.4 before. Forever's
+  Evocation is Classic's (1,500% of the Spirit regeneration for 8 s: 118% of the pool at 20, about 70% at 60), and 0.15, the drink
+  line, was 0.6-1.1% faster per kill than 0.4 on every mage leveling pick (up to 1.9% at 20-35; 0.10 slower, it rarely fires under
+  the drink line); the five rules files carry 0.15, the AoE variant keeps 0.4, and `rest_cues.py` requires one value across the
+  mage specs (the add-on's cue is one per class). The duel lab plays every
 rules knob (`make_module`), so a knob that is a PvE choice also goes in `duellab/duel.PVE_KNOBS` (the duel mage had worn Mage Armor
 for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same night (user: "Go full power, go with your recs", idea 0h) the
   rogue's poisons (`POISONS`: Instant main hand and Deadly off hand from 30 by default; Instant on both; Deadly on both ...) and the

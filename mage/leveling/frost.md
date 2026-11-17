@@ -24,11 +24,11 @@
 4. Below a fifth of the mob's health: **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand. No Cone of Cold at all.
 5. **Counterspell** a mob that casts spells.
 
-**Between fights:** Drink your conjured water below 15% of your mana (the tuned rule), **Evocation** when it is ready and you are under 40% mana, eat below two thirds of your health.
+**Between fights:** Drink your conjured water below 15% of your mana (the tuned rule), **Evocation** in place of a drink when it is ready and you are under 15% mana, eat below 40% of your health (the tuned rule).
 
 ## Why this rotation
 
-Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as it walks in, **Frost Nova** freezes it when it arrives, you step back, and **Ice Lance** hits the frozen target for four times its damage with **Shatter**'s crit chance. Frost points first (**Ice Lance** at 20, **Shatter** complete by 29, **Fingers of Frost** at 30-31, the rest of the Frost tree to 39), then the Arcane mana talents from 40 (**Arcane Concentration** by 49, **Arcane Meditation** by 57), **Incineration** last (58-60). In the open leveling search's 20-60 race of 2026-11-15 this build took about 29.5 seconds per kill, level-weighted; the page's numbers table has each level.
+Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as it walks in, **Frost Nova** freezes it when it arrives, you step back, and **Ice Lance** hits the frozen target for four times its damage with **Shatter**'s crit chance. Frost points first (**Ice Lance** at 20, **Shatter** complete by 29, **Fingers of Frost** at 30-31, the rest of the Frost tree to 39), then the Arcane mana talents from 40 (**Arcane Concentration** by 49, **Arcane Meditation** by 57), **Incineration** last (58-60). In the open leveling search's 20-60 race of 2026-11-16 this build took about 28.9 seconds per kill, level-weighted; the page's numbers table has each level.
 
 **Why it works**
 
@@ -44,7 +44,7 @@ Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as
 - This build takes neither Cold Snap nor Ice Barrier: skip the list's lines for them. The hand-made build under Other builds has both.
 - This is the open leveling search's 18/3/30 winner: **Improved Frostbolt** at 5 points and **Improved Channeling** instead of an earlier version's Missile Barrage and Magic Absorption. The leveling filler pass of 2026-11-15, under **Mage Armor**, moved the Frost Warding point to **Permafrost** at 38 and Arcane Impact to **Arcane Subtlety** at 54.
 - **Cone of Cold** stays out of single pulls: the tuned rules switch it off (kills measured faster without).
-- Drink below 15% of your mana (the tuned rule); **Evocation** between fights, whenever it is ready and you are under 40% mana; eat below two thirds of your health (the tuned rules set no eat threshold for this list, so the fight lab's default of 65% applies).
+- Drink below 15% of your mana (the tuned rule); **Evocation** in place of that drink, whenever it is ready (under 15% mana); eat below 40% of your health (the tuned rules).
 - Armor: **Mage Armor** from 34 (the tuned rules of 2026-11-15). It keeps half your mana regeneration going while you cast, so you drink less: 4-5% faster per kill at 34-40 in the fight lab, 2-3% at 46-50, 1.4-2.5% at 56-60, though you eat a little more without armor. Before 34, **Frost Armor** and **Ice Armor** can chill a mob that hits you, another roll for **Frostbite** to freeze it; **Mage Armor** does not.
 - Pulls of several mobs are a different game: the AoE build under Other builds gathers about four, freezes them with **Frost Nova** and uses **Blizzard** and **Cone of Cold**, in **Ice Armor** (in pulls of four, Mage Armor measured 9-20% slower per kill, with more deaths).
 
@@ -78,10 +78,9 @@ One point per level from 10, in this order:
 | 42-43 | Arcane Resilience (Arcane) | 2 |
 | 44 | Improved Channeling (Arcane) | 1 |
 | 45-49 | Arcane Concentration (Arcane) | 5 |
-| 50 | Arcane Subtlety (Arcane) | 1 |
-| 51-52 | Improved Channeling (Arcane) | 2 |
-| 53 | Arcane Resilience (Arcane) | 1 |
-| 54 | Arcane Subtlety (Arcane) | 1 |
+| 50-51 | Arcane Subtlety (Arcane) | 2 |
+| 52-53 | Improved Channeling (Arcane) | 2 |
+| 54 | Arcane Resilience (Arcane) | 1 |
 | 55-57 | Arcane Meditation (Arcane) | 3 |
 | 58-60 | Incineration (Fire) | 3 |
 
@@ -89,11 +88,11 @@ One point per level from 10, in this order:
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
-| 20 | 28 | 15 |
-| 30 | 34 | 20 |
-| 40 | 34 | 23 |
-| 50 | 28 | 22 |
-| 60 | 26 | 20 |
+| 20 | 27 | 15 |
+| 30 | 33 | 20 |
+| 40 | 33 | 22 |
+| 50 | 28 | 21 |
+| 60 | 25 | 19 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
@@ -105,5 +104,5 @@ One point per level from 10, in this order:
 - [Frost (optimized, AoE pulls)](../research/leveling/builds/opt-frost-aoe-leveling-aoe.md) (7/3/41, 34 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/mage/60/2120002-3-242502333121331231-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-16 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-17 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 
