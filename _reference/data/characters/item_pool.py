@@ -402,6 +402,12 @@ def pool(cls, faction, school_share, region="us"):
     # the Classic required level where the Forever database lists none (2026-11-09: Holy Shroud, Classic level 27, read as wearable
     # at 26 because its reqLvl is missing)
     classic_req = {int(r["item"]): int(r["required_level"] or 0) for r in csv.DictReader(open(RAW / "item_names.csv", encoding="utf-8"))}
+    # an item with no required level in the Forever database nor in Classic's takes it from Blizzard's own item data (item_texts: the
+    # static API's required_level, cached); one Blizzard does not know is no item of the game and is left out. 2026-11-16: the re-pin to
+    # 2e6e77d84 brought 192 such items with sources (vendor sets sold by Deliana and Mokvar, quest and PvP rewards), read as wearable
+    # from level 0: Arcea's level-37 plan bought the Sorcerer's Regalia, an item-level-60 epic set
+    unknown = sorted(it["id"] for it in items if not it.get("reqLvl") and it["id"] not in classic_req and it.get("sources"))
+    blizz = {i: v for i, v in (item_texts(unknown, region) if unknown else {}).items() if i in set(unknown)}   # (the cache holds more)
     out = []
     for it in items:
         st = lab_stats(it, school_share)
@@ -409,6 +415,10 @@ def pool(cls, faction, school_share, region="us"):
             continue
         srcs = []
         req = it.get("reqLvl") or classic_req.get(it["id"], 0)
+        if it["id"] in blizz:
+            if blizz[it["id"]].get("error"):
+                continue
+            req = blizz[it["id"]].get("level") or 0
         for s in it.get("sources") or []:
             if "quest" in s:
                 q = s["quest"]

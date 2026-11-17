@@ -23,8 +23,8 @@
     "id": 47
    },
    "standing": {
-    "raw": 13793,
-    "value": 4793,
+    "raw": 14300,
+    "value": 5300,
     "max": 12000,
     "tier": 5,
     "name": "Honored"
@@ -71,8 +71,8 @@
     "id": 69
    },
    "standing": {
-    "raw": 10315,
-    "value": 1315,
+    "raw": 10840,
+    "value": 1840,
     "max": 12000,
     "tier": 5,
     "name": "Honored"
@@ -87,8 +87,8 @@
     "id": 72
    },
    "standing": {
-    "raw": 13577,
-    "value": 4577,
+    "raw": 14646,
+    "value": 5646,
     "max": 12000,
     "tier": 5,
     "name": "Honored"
@@ -119,8 +119,8 @@
     "id": 54
    },
    "standing": {
-    "raw": 13151,
-    "value": 4151,
+    "raw": 13601,
+    "value": 4601,
     "max": 12000,
     "tier": 5,
     "name": "Honored"
@@ -169,6 +169,22 @@
    "standing": {
     "raw": 650,
     "value": 650,
+    "max": 3000,
+    "tier": 3,
+    "name": "Neutral"
+   }
+  },
+  {
+   "faction": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/reputation-faction/2740?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Kirin Tor",
+    "id": 2740
+   },
+   "standing": {
+    "raw": 640,
+    "value": 640,
     "max": 3000,
     "tier": 3,
     "name": "Neutral"

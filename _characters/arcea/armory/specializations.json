@@ -52,11 +52,11 @@
          "name": "Improved Channeling",
          "id": 11237
         },
-        "description": "Gives your Arcane Missiles spell a 20% chance and your Arcane Blast and Arcane Wrath spells a 14% chance to not lose casting time when you take damage.",
+        "description": "Gives your Arcane Missiles spell a 40% chance and your Arcane Blast and Arcane Wrath spells a 28% chance to not lose casting time when you take damage.",
         "cast_time": "Passive",
         "power_cost": null
        },
-       "talent_rank": 1
+       "talent_rank": 2
       },
       {
        "talent": {
@@ -75,7 +75,7 @@
       }
      ],
      "specialization_name": "Arcane",
-     "spent_points": 4
+     "spent_points": 5
     },
     {
      "specialization": {

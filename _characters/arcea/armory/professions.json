@@ -24,7 +24,7 @@
    },
    "tiers": [
     {
-     "skill_points": 164,
+     "skill_points": 177,
      "max_skill_points": 225,
      "tier": {
       "name": "Tailoring",
@@ -507,7 +507,7 @@
    },
    "tiers": [
     {
-     "skill_points": 151,
+     "skill_points": 165,
      "max_skill_points": 225,
      "tier": {
       "name": "Enchanting",
@@ -527,6 +527,13 @@
        },
        "name": "Enchant Gloves - Fishing",
        "id": 7499
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/7502?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Runed Golden Rod",
+       "id": 7502
       },
       {
        "key": {
@@ -761,7 +768,7 @@
    },
    "tiers": [
     {
-     "skill_points": 156,
+     "skill_points": 161,
      "max_skill_points": 225,
      "tier": {
       "name": "Cooking",
@@ -795,6 +802,13 @@
        },
        "name": "Gooey Spider Cake",
        "id": 1876
+      },
+      {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/recipe/1903?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Tasty Lion Steak",
+       "id": 1903
       },
       {
        "key": {
@@ -971,7 +985,7 @@
    },
    "tiers": [
     {
-     "skill_points": 110,
+     "skill_points": 115,
      "max_skill_points": 150,
      "tier": {
       "name": "Fishing",

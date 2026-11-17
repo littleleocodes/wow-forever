@@ -126,8 +126,8 @@
     "display_string": "Item Level 32"
    },
    "durability": {
-    "value": 36,
-    "display_string": "Durability 36 / 45"
+    "value": 45,
+    "display_string": "Durability 45 / 45"
    }
   },
   {
@@ -219,26 +219,26 @@
   {
    "item": {
     "key": {
-     "href": "https://us.api.blizzard.com/data/wow/item/3560?namespace=static-1.60.1_70399-forever-us"
+     "href": "https://us.api.blizzard.com/data/wow/item/273051?namespace=static-1.60.1_70399-forever-us"
     },
-    "id": 3560
+    "id": 273051
    },
    "slot": {
     "type": "SHOULDER",
     "name": "Shoulders"
    },
    "quantity": 1,
-   "context": 11,
+   "context": 1,
    "quality": {
-    "type": "UNCOMMON",
-    "name": "Uncommon"
+    "type": "RARE",
+    "name": "Rare"
    },
-   "name": "Mantle of Honor",
+   "name": "Violet Sorcerer's Mantle",
    "media": {
     "key": {
-     "href": "https://us.api.blizzard.com/data/wow/media/item/3560?namespace=static-1.60.1_70399-forever-us"
+     "href": "https://us.api.blizzard.com/data/wow/media/item/273051?namespace=static-1.60.1_70399-forever-us"
     },
-    "id": 3560
+    "id": 273051
    },
    "item_class": {
     "key": {
@@ -263,9 +263,9 @@
     "name": "Binds when picked up"
    },
    "armor": {
-    "value": 35,
+    "value": 38,
     "display": {
-     "display_string": "35 Armor",
+     "display_string": "38 Armor",
      "color": {
       "r": 255,
       "g": 255,
@@ -280,9 +280,9 @@
       "type": "INTELLECT",
       "name": "Intellect"
      },
-     "value": 7,
+     "value": 9,
      "display": {
-      "display_string": "+7 Intellect",
+      "display_string": "+9 Intellect",
       "color": {
        "r": 255,
        "g": 255,
@@ -293,13 +293,13 @@
     },
     {
      "type": {
-      "type": "SPIRIT",
-      "name": "Spirit"
+      "type": "SPELL_PENETRATION",
+      "name": "Spell Piercing"
      },
-     "value": 7,
+     "value": 4,
      "is_equip_bonus": true,
      "display": {
-      "display_string": "+7 Spirit",
+      "display_string": "+4 Spell Piercing",
       "color": {
        "r": 0,
        "g": 255,
@@ -310,21 +310,103 @@
     }
    ],
    "sell_price": {
-    "value": 2102,
+    "value": 2659,
     "display_strings": {
      "header": "Sell Price:",
      "gold": "0",
-     "silver": "21",
-     "copper": "2"
+     "silver": "26",
+     "copper": "59"
     }
+   },
+   "requirements": {
+    "level": {
+     "value": 30,
+     "display_string": "Requires Level 30"
+    }
+   },
+   "set": {
+    "item_set": {
+     "key": {
+      "href": "https://us.api.blizzard.com/data/wow/item-set/2134?namespace=static-1.60.1_70399-forever-us"
+     },
+     "name": "Violet Sorcerer's Vestments",
+     "id": 2134
+    },
+    "items": [
+     {
+      "item": {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item/273051?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Violet Sorcerer's Mantle",
+       "id": 273051
+      },
+      "is_equipped": true
+     },
+     {
+      "item": {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item/286988?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Violet Sorcerer's Leggings",
+       "id": 286988
+      }
+     },
+     {
+      "item": {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item/286987?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Violet Sorcerer's Sandals",
+       "id": 286987
+      }
+     },
+     {
+      "item": {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item/286989?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Violet Sorcerer's Wraps",
+       "id": 286989
+      }
+     },
+     {
+      "item": {
+       "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item/273044?namespace=static-1.60.1_70399-forever-us"
+       },
+       "name": "Violet Sorcerer's Robes",
+       "id": 273044
+      }
+     }
+    ],
+    "effects": [
+     {
+      "display_string": "(2) Set: +5 Arcane Resistance.",
+      "required_count": 2
+     },
+     {
+      "display_string": "(3) Set: +10 Spirit.",
+      "required_count": 3
+     },
+     {
+      "display_string": "(4) Set: Chance on damaging spell to allow 15% of your Mana regeneration to continue while casting for 15 sec. This Mana Regeneration is doubled in Strongholds and Cities.",
+      "required_count": 4
+     },
+     {
+      "display_string": "(5) Set: Chance on damaging spell to summon an Arcane elemental to aid you in combat.",
+      "required_count": 5
+     }
+    ],
+    "display_string": "Violet Sorcerer's Vestments (1/5)"
    },
    "level": {
     "value": 35,
     "display_string": "Item Level 35"
    },
    "durability": {
-    "value": 40,
-    "display_string": "Durability 40 / 45"
+    "value": 50,
+    "display_string": "Durability 50 / 50"
    }
   },
   {
@@ -496,8 +578,8 @@
     "display_string": "Item Level 37"
    },
    "durability": {
-    "value": 61,
-    "display_string": "Durability 61 / 70"
+    "value": 70,
+    "display_string": "Durability 70 / 70"
    }
   },
   {
@@ -836,8 +918,8 @@
     "display_string": "Item Level 25"
    },
    "durability": {
-    "value": 35,
-    "display_string": "Durability 35 / 40"
+    "value": 40,
+    "display_string": "Durability 40 / 40"
    }
   },
   {
@@ -954,8 +1036,8 @@
     "display_string": "Item Level 34"
    },
    "durability": {
-    "value": 29,
-    "display_string": "Durability 29 / 30"
+    "value": 30,
+    "display_string": "Durability 30 / 30"
    }
   },
   {
@@ -1065,8 +1147,8 @@
     "display_string": "Item Level 28"
    },
    "durability": {
-    "value": 22,
-    "display_string": "Durability 22 / 25"
+    "value": 25,
+    "display_string": "Durability 25 / 25"
    }
   },
   {
@@ -1168,26 +1250,26 @@
   {
    "item": {
     "key": {
-     "href": "https://us.api.blizzard.com/data/wow/item/271670?namespace=static-1.60.1_70399-forever-us"
+     "href": "https://us.api.blizzard.com/data/wow/item/273031?namespace=static-1.60.1_70399-forever-us"
     },
-    "id": 271670
+    "id": 273031
    },
    "slot": {
     "type": "FINGER_2",
     "name": "Ring 2"
    },
    "quantity": 1,
-   "context": 11,
+   "context": 1,
    "quality": {
-    "type": "UNCOMMON",
-    "name": "Uncommon"
+    "type": "RARE",
+    "name": "Rare"
    },
-   "name": "Curl of Life",
+   "name": "Runemender's Seal",
    "media": {
     "key": {
-     "href": "https://us.api.blizzard.com/data/wow/media/item/271670?namespace=static-1.60.1_70399-forever-us"
+     "href": "https://us.api.blizzard.com/data/wow/media/item/273031?namespace=static-1.60.1_70399-forever-us"
     },
-    "id": 271670
+    "id": 273031
    },
    "item_class": {
     "key": {
@@ -1215,12 +1297,12 @@
    "stats": [
     {
      "type": {
-      "type": "STAMINA",
-      "name": "Stamina"
+      "type": "INTELLECT",
+      "name": "Intellect"
      },
-     "value": 5,
+     "value": 6,
      "display": {
-      "display_string": "+5 Stamina",
+      "display_string": "+6 Intellect",
       "color": {
        "r": 255,
        "g": 255,
@@ -1231,13 +1313,47 @@
     },
     {
      "type": {
-      "type": "SPELL_POWER",
-      "name": "Spell Power"
+      "type": "SPELL_DAMAGE_DONE",
+      "name": "Spell Damage"
      },
-     "value": 5,
+     "value": 3,
      "is_equip_bonus": true,
      "display": {
-      "display_string": "+5 Spell Power",
+      "display_string": "+3 Spell Damage",
+      "color": {
+       "r": 0,
+       "g": 255,
+       "b": 0,
+       "a": 1.0
+      }
+     }
+    },
+    {
+     "type": {
+      "type": "SPELL_HEALING_DONE",
+      "name": "Spell Healing"
+     },
+     "value": 9,
+     "is_equip_bonus": true,
+     "display": {
+      "display_string": "+9 Spell Healing",
+      "color": {
+       "r": 0,
+       "g": 255,
+       "b": 0,
+       "a": 1.0
+      }
+     }
+    },
+    {
+     "type": {
+      "type": "SPIRIT",
+      "name": "Spirit"
+     },
+     "value": 6,
+     "is_equip_bonus": true,
+     "display": {
+      "display_string": "+6 Spirit",
       "color": {
        "r": 0,
        "g": 255,
@@ -1248,17 +1364,23 @@
     }
    ],
    "sell_price": {
-    "value": 2335,
+    "value": 2664,
     "display_strings": {
      "header": "Sell Price:",
      "gold": "0",
-     "silver": "23",
-     "copper": "35"
+     "silver": "26",
+     "copper": "64"
+    }
+   },
+   "requirements": {
+    "level": {
+     "value": 27,
+     "display_string": "Requires Level 27"
     }
    },
    "level": {
-    "value": 33,
-    "display_string": "Item Level 33"
+    "value": 32,
+    "display_string": "Item Level 32"
    },
    "is_subclass_hidden": true
   },
@@ -1655,25 +1777,26 @@
   {
    "item": {
     "key": {
-     "href": "https://us.api.blizzard.com/data/wow/item/5214?namespace=static-1.60.1_70399-forever-us"
+     "href": "https://us.api.blizzard.com/data/wow/item/273043?namespace=static-1.60.1_70399-forever-us"
     },
-    "id": 5214
+    "id": 273043
    },
    "slot": {
     "type": "RANGED",
     "name": "Ranged"
    },
    "quantity": 1,
+   "context": 1,
    "quality": {
-    "type": "UNCOMMON",
-    "name": "Uncommon"
+    "type": "RARE",
+    "name": "Rare"
    },
-   "name": "Wand of Eventide",
+   "name": "Wand of Mana Concentration",
    "media": {
     "key": {
-     "href": "https://us.api.blizzard.com/data/wow/media/item/5214?namespace=static-1.60.1_70399-forever-us"
+     "href": "https://us.api.blizzard.com/data/wow/media/item/273043?namespace=static-1.60.1_70399-forever-us"
     },
-    "id": 5214
+    "id": 273043
    },
    "item_class": {
     "key": {
@@ -1694,38 +1817,54 @@
     "name": "Ranged"
    },
    "binding": {
-    "type": "ON_EQUIP",
-    "name": "Binds when equipped"
+    "type": "ON_ACQUIRE",
+    "name": "Binds when picked up"
    },
    "weapon": {
     "damage": {
-     "min_value": 23,
-     "max_value": 44,
-     "display_string": "23 - 44 Arcane Damage",
+     "min_value": 37,
+     "max_value": 69,
+     "display_string": "37 - 69 Arcane Damage",
      "damage_class": {
       "type": "ARCANE",
       "name": "Arcane"
      }
     },
     "attack_speed": {
-     "value": 1300,
-     "display_string": "Speed 1.30"
+     "value": 1700,
+     "display_string": "Speed 1.70"
     },
     "dps": {
-     "value": 25.76923,
-     "display_string": "(25.8 damage per second)"
+     "value": 31.17647,
+     "display_string": "(31.2 damage per second)"
     }
    },
    "stats": [
     {
      "type": {
-      "type": "SPELL_POWER",
-      "name": "Spell Power"
+      "type": "INTELLECT",
+      "name": "Intellect"
      },
-     "value": 5,
+     "value": 4,
+     "display": {
+      "display_string": "+4 Intellect",
+      "color": {
+       "r": 255,
+       "g": 255,
+       "b": 255,
+       "a": 1.0
+      }
+     }
+    },
+    {
+     "type": {
+      "type": "MANA_REGENERATION",
+      "name": "Mana Regeneration per 5 sec"
+     },
+     "value": 2,
      "is_equip_bonus": true,
      "display": {
-      "display_string": "+5 Spell Power",
+      "display_string": "+2 Mana Regeneration per 5 sec",
       "color": {
        "r": 0,
        "g": 255,
@@ -1736,12 +1875,12 @@
     }
    ],
    "sell_price": {
-    "value": 3935,
+    "value": 4722,
     "display_strings": {
      "header": "Sell Price:",
      "gold": "0",
-     "silver": "39",
-     "copper": "35"
+     "silver": "47",
+     "copper": "22"
     }
    },
    "requirements": {
@@ -1755,9 +1894,87 @@
     "display_string": "Item Level 32"
    },
    "durability": {
-    "value": 55,
-    "display_string": "Durability 55 / 55"
+    "value": 65,
+    "display_string": "Durability 65 / 65"
    }
+  }
+ ],
+ "equipped_item_sets": [
+  {
+   "item_set": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/item-set/2134?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Violet Sorcerer's Vestments",
+    "id": 2134
+   },
+   "items": [
+    {
+     "item": {
+      "key": {
+       "href": "https://us.api.blizzard.com/data/wow/item/273051?namespace=static-1.60.1_70399-forever-us"
+      },
+      "name": "Violet Sorcerer's Mantle",
+      "id": 273051
+     },
+     "is_equipped": true
+    },
+    {
+     "item": {
+      "key": {
+       "href": "https://us.api.blizzard.com/data/wow/item/286988?namespace=static-1.60.1_70399-forever-us"
+      },
+      "name": "Violet Sorcerer's Leggings",
+      "id": 286988
+     }
+    },
+    {
+     "item": {
+      "key": {
+       "href": "https://us.api.blizzard.com/data/wow/item/286987?namespace=static-1.60.1_70399-forever-us"
+      },
+      "name": "Violet Sorcerer's Sandals",
+      "id": 286987
+     }
+    },
+    {
+     "item": {
+      "key": {
+       "href": "https://us.api.blizzard.com/data/wow/item/286989?namespace=static-1.60.1_70399-forever-us"
+      },
+      "name": "Violet Sorcerer's Wraps",
+      "id": 286989
+     }
+    },
+    {
+     "item": {
+      "key": {
+       "href": "https://us.api.blizzard.com/data/wow/item/273044?namespace=static-1.60.1_70399-forever-us"
+      },
+      "name": "Violet Sorcerer's Robes",
+      "id": 273044
+     }
+    }
+   ],
+   "effects": [
+    {
+     "display_string": "(2) Set: +5 Arcane Resistance.",
+     "required_count": 2
+    },
+    {
+     "display_string": "(3) Set: +10 Spirit.",
+     "required_count": 3
+    },
+    {
+     "display_string": "(4) Set: Chance on damaging spell to allow 15% of your Mana regeneration to continue while casting for 15 sec. This Mana Regeneration is doubled in Strongholds and Cities.",
+     "required_count": 4
+    },
+    {
+     "display_string": "(5) Set: Chance on damaging spell to summon an Arcane elemental to aid you in combat.",
+     "required_count": 5
+    }
+   ],
+   "display_string": "Violet Sorcerer's Vestments (1/5)"
   }
  ]
 }
