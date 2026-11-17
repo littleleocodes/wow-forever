@@ -4,11 +4,11 @@
  "game": "forever",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
-  "commit": "ff9babba5",
+  "commit": "2e6e77d84",
   "racials": "off",
   "pet_normalize": false,
   "simulator": "wowsims/forever",
-  "client": "1.60.1.70888",
+  "client": "1.60.1.70938",
   "spec_folder": "shaman/elemental",
   "gear": "_reference/data/raidsim/gear_sets/forever/shaman-elemental-phase_1.p1opt.gear.json",
   "apl": "_reference/data/raidsim/apls/shaman/elemental-dps.apl.json",
@@ -34,7 +34,7 @@
   "seed": 1,
   "duration": 180.0
  },
- "date": "2026-11-11",
+ "date": "2026-11-17",
  "results": [
   {
    "label": "elemental-raid-dps",
@@ -43,46 +43,46 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "10392": 68.225,
+    "10605": 6.342,
     "15208": 1.0,
     "10438": 3.0,
-    "10605": 6.359666666666667,
-    "29228": 9.260333333333334
+    "29228": 9.249666666666666,
+    "10392": 68.325
    },
    "casts": {
+    "Major Mana Potion": 1.9956666666666667,
+    "Chain Lightning": 6.342,
     "Demonic Rune": 2.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Major Mana Potion": 1.996,
-    "item 272438": 1.0,
-    "Lightning Bolt": 69.225,
+    "Lightning Bolt": 69.325,
     "Searing Totem": 3.0,
-    "Chain Lightning": 6.359666666666667,
-    "OtherActionManaGain": 3.996,
-    "Flame Shock": 9.260333333333334
+    "item 272438": 1.0,
+    "Flame Shock": 9.249666666666666,
+    "OtherActionManaGain": 3.9956666666666667,
+    "Talisman of Ephemeral Power": 2.0
    },
-   "dps": 562.3047202849175,
-   "dps_stdev": 34.06025579814174,
-   "threat": 531.3007421364747,
-   "dtps": 9.795679088374715,
+   "dps": 560.4875547127984,
+   "dps_stdev": 33.487866292335596,
+   "threat": 529.33698229498,
+   "dtps": 9.82518489052219,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 14.855799999864908,
+   "oom_seconds": 14.675966666545227,
    "error": null,
    "scorer": 0.8525250109317885,
    "shares": {
-    "Lightning Bolt": 0.6963393814473233,
-    "Flame Shock": 0.1583293278359389,
-    "Chain Lightning": 0.07851632370967464,
-    "Searing Totem": 0.04969265928082244,
-    "Demonic Rune": 0.017122307726240647
+    "Lightning Bolt": 0.6988232588809715,
+    "Flame Shock": 0.15910241621944168,
+    "Chain Lightning": 0.07909685716987737,
+    "Searing Totem": 0.045749753515651866,
+    "Demonic Rune": 0.017227714214057503
    },
    "source_shares": {
-    "lightning_bolt": 0.7085,
-    "flame_shock": 0.1611,
-    "chain_lightning": 0.0799,
-    "searing_totem": 0.0506
+    "lightning_bolt": 0.7111,
+    "flame_shock": 0.1619,
+    "chain_lightning": 0.0805,
+    "searing_totem": 0.0466
    },
-   "unmatched_share": 0.0171
+   "unmatched_share": 0.0172
   },
   {
    "label": "opt-elemental-dps-raid-dps",
@@ -91,48 +91,48 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "10605": 7.057666666666667,
-    "29228": 9.034333333333333,
-    "10392": 73.34833333333333,
-    "15208": 1.0,
     "10438": 3.0,
-    "16166": 1.189
+    "15208": 1.0,
+    "29228": 9.051333333333334,
+    "10605": 7.097,
+    "16166": 1.1836666666666666,
+    "10392": 73.28166666666667
    },
    "casts": {
-    "OtherActionManaGain": 3.9966666666666666,
-    "Talisman of Ephemeral Power": 2.0646666666666667,
-    "Chain Lightning": 7.057666666666667,
-    "Flame Shock": 9.034333333333333,
-    "Major Mana Potion": 1.9966666666666666,
-    "Lightning Bolt": 74.34833333333333,
     "Searing Totem": 3.0,
+    "Talisman of Ephemeral Power": 2.062333333333333,
+    "Lightning Bolt": 74.28166666666667,
+    "Major Mana Potion": 1.9973333333333334,
     "Demonic Rune": 2.0,
-    "Lightning Mastery": 1.189,
-    "item 272438": 1.0
+    "Flame Shock": 9.051333333333334,
+    "item 272438": 1.0,
+    "Chain Lightning": 7.097,
+    "OtherActionManaGain": 3.997333333333333,
+    "Lightning Mastery": 1.1836666666666666
    },
-   "dps": 589.9322376470733,
-   "dps_stdev": 29.013545053131693,
-   "threat": 499.8643412044316,
-   "dtps": 9.764568211149731,
+   "dps": 587.1394394711051,
+   "dps_stdev": 30.64502997025799,
+   "threat": 497.4501256277892,
+   "dtps": 9.821395472547644,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 6.556033333333323,
+   "oom_seconds": 6.534733333333313,
    "error": null,
    "scorer": 0.9399109016410174,
    "shares": {
-    "Lightning Bolt": 0.7020375604658122,
-    "Flame Shock": 0.1485348330304982,
-    "Chain Lightning": 0.08368996647316837,
-    "Searing Totem": 0.049455131743394866,
-    "Demonic Rune": 0.016282508287126345
+    "Lightning Bolt": 0.7042838250167482,
+    "Flame Shock": 0.1492040358274233,
+    "Chain Lightning": 0.08462503255901684,
+    "Searing Totem": 0.04543477857520076,
+    "Demonic Rune": 0.016452328021610823
    },
    "source_shares": {
-    "lightning_bolt": 0.7137,
-    "flame_shock": 0.151,
-    "chain_lightning": 0.0851,
-    "searing_totem": 0.0503
+    "lightning_bolt": 0.7161,
+    "flame_shock": 0.1517,
+    "chain_lightning": 0.086,
+    "searing_totem": 0.0462
    },
-   "unmatched_share": 0.0163
+   "unmatched_share": 0.0165
   },
   {
    "label": "elemental-raid",
@@ -141,46 +141,46 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "10392": 69.88433333333333,
+    "10392": 69.885,
+    "10605": 6.3213333333333335,
+    "29228": 8.864666666666666,
     "10438": 3.0,
-    "10605": 6.308666666666666,
-    "15208": 1.0,
-    "29228": 8.863
+    "15208": 1.0
    },
    "casts": {
-    "Lightning Bolt": 70.88433333333333,
+    "Lightning Bolt": 70.885,
+    "Chain Lightning": 6.3213333333333335,
+    "Major Mana Potion": 1.9706666666666666,
+    "Flame Shock": 8.864666666666666,
     "item 272438": 1.0,
+    "Demonic Rune": 2.0,
     "Searing Totem": 3.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Chain Lightning": 6.308666666666666,
-    "OtherActionManaGain": 3.9663333333333335,
-    "Major Mana Potion": 1.9663333333333333,
-    "Flame Shock": 8.863,
-    "Demonic Rune": 2.0
+    "OtherActionManaGain": 3.970666666666667,
+    "Talisman of Ephemeral Power": 2.0
    },
-   "dps": 561.8326964042525,
-   "dps_stdev": 31.14983097683749,
-   "threat": 528.2400319121083,
-   "dtps": 9.798454487797189,
+   "dps": 559.5508090346522,
+   "dps_stdev": 30.33559266516978,
+   "threat": 525.3668311221339,
+   "dtps": 9.806388593545282,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 12.623966666666416,
+   "oom_seconds": 12.693833333332732,
    "error": null,
    "scorer": 0.8654291685727531,
    "shares": {
-    "Lightning Bolt": 0.7003896611240714,
-    "Flame Shock": 0.15240958261321969,
-    "Chain Lightning": 0.07830412597528273,
-    "Searing Totem": 0.051755411736781505,
-    "Demonic Rune": 0.017141218550644675
+    "Lightning Bolt": 0.7037728819668756,
+    "Flame Shock": 0.15248398925128354,
+    "Chain Lightning": 0.07896524564264264,
+    "Searing Totem": 0.04755426915065757,
+    "Demonic Rune": 0.017223613988540654
    },
    "source_shares": {
-    "lightning_bolt": 0.7126,
-    "flame_shock": 0.1551,
-    "chain_lightning": 0.0797,
-    "searing_totem": 0.0527
+    "lightning_bolt": 0.7161,
+    "flame_shock": 0.1552,
+    "chain_lightning": 0.0803,
+    "searing_totem": 0.0484
    },
-   "unmatched_share": 0.0171
+   "unmatched_share": 0.0172
   },
   {
    "label": "elemental-ml-raid",
@@ -189,48 +189,48 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "10392": 74.85866666666666,
-    "15208": 1.0,
+    "16166": 1.2676666666666667,
     "10438": 3.0,
-    "10605": 7.047666666666666,
-    "29228": 9.258,
-    "16166": 1.269
+    "10392": 74.76366666666667,
+    "10605": 7.116333333333333,
+    "29228": 9.247666666666667,
+    "15208": 1.0
    },
    "casts": {
-    "Major Mana Potion": 1.987,
-    "Lightning Bolt": 75.85866666666666,
-    "Talisman of Ephemeral Power": 2.046333333333333,
-    "Demonic Rune": 2.0,
+    "Talisman of Ephemeral Power": 2.046666666666667,
+    "Major Mana Potion": 1.982,
+    "Lightning Mastery": 1.2676666666666667,
     "Searing Totem": 3.0,
-    "OtherActionManaGain": 3.987,
-    "Chain Lightning": 7.047666666666666,
-    "Flame Shock": 9.258,
+    "Lightning Bolt": 75.76366666666667,
+    "Demonic Rune": 2.0,
+    "Chain Lightning": 7.116333333333333,
     "item 272438": 1.0,
-    "Lightning Mastery": 1.269
+    "Flame Shock": 9.247666666666667,
+    "OtherActionManaGain": 3.982
    },
-   "dps": 599.2284115238639,
-   "dps_stdev": 28.698957731177877,
-   "threat": 534.5561657936661,
-   "dtps": 9.72430962606451,
+   "dps": 596.9517174090178,
+   "dps_stdev": 28.713497650316974,
+   "threat": 532.2923613419213,
+   "dtps": 9.811121391911577,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 2.89350000000003,
+   "oom_seconds": 2.9747666666663686,
    "error": null,
    "scorer": 0.9399009016410175,
    "shares": {
-    "Lightning Bolt": 0.7039391346461235,
-    "Flame Shock": 0.14899074313611135,
-    "Chain Lightning": 0.08237787065391246,
-    "Searing Totem": 0.048723344145717856,
-    "Demonic Rune": 0.01596890741813489
+    "Lightning Bolt": 0.7058014471942319,
+    "Flame Shock": 0.14941362739428266,
+    "Chain Lightning": 0.0838979506310747,
+    "Searing Totem": 0.044717359958085665,
+    "Demonic Rune": 0.01616961482232513
    },
    "source_shares": {
-    "lightning_bolt": 0.7154,
-    "flame_shock": 0.1514,
-    "chain_lightning": 0.0837,
-    "searing_totem": 0.0495
+    "lightning_bolt": 0.7174,
+    "flame_shock": 0.1519,
+    "chain_lightning": 0.0853,
+    "searing_totem": 0.0455
    },
-   "unmatched_share": 0.016
+   "unmatched_share": 0.0162
   },
   {
    "label": "sim preset: Mana Tide",
@@ -238,50 +238,50 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "16166": 1.239,
-    "15208": 1.0,
-    "29228": 8.686,
-    "10438": 3.0,
+    "10392": 71.49033333333334,
+    "29228": 8.711,
+    "16166": 1.244,
     "1325256": 1.0,
-    "10605": 5.735333333333333,
-    "10392": 71.481
+    "10438": 3.0,
+    "10605": 5.758666666666667,
+    "15208": 1.0
    },
    "casts": {
-    "Lightning Mastery": 1.239,
-    "Lightning Bolt": 72.481,
-    "OtherActionManaGain": 3.421,
-    "Major Mana Potion": 1.421,
-    "Flame Shock": 8.686,
-    "Talisman of Ephemeral Power": 2.025333333333333,
-    "Searing Totem": 3.0,
+    "Lightning Bolt": 72.49033333333334,
+    "Flame Shock": 8.711,
+    "item 272438": 1.0,
+    "Lightning Mastery": 1.244,
     "Mana Tide Totem": 1.0,
+    "Major Mana Potion": 1.426,
     "Demonic Rune": 2.0,
-    "Chain Lightning": 5.735333333333333,
-    "item 272438": 1.0
+    "OtherActionManaGain": 3.426,
+    "Searing Totem": 3.0,
+    "Talisman of Ephemeral Power": 2.0323333333333333,
+    "Chain Lightning": 5.758666666666667
    },
-   "dps": 560.5287287173243,
-   "dps_stdev": 31.589431974953484,
-   "threat": 497.9985413151315,
-   "dtps": 9.737555314972271,
+   "dps": 558.9463941159893,
+   "dps_stdev": 31.72476879725905,
+   "threat": 496.1576502419423,
+   "dtps": 9.656729406659501,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 13.724599999999171,
+   "oom_seconds": 13.66929999999984,
    "error": null,
    "scorer": null,
    "shares": {
-    "Lightning Bolt": 0.7110472725871612,
-    "Flame Shock": 0.14969945855970157,
-    "Chain Lightning": 0.07090391055614201,
-    "Searing Totem": 0.05127390497347253,
-    "Demonic Rune": 0.01707545332352277
+    "Lightning Bolt": 0.7139072970350366,
+    "Flame Shock": 0.15008329549212665,
+    "Chain Lightning": 0.0719392711461373,
+    "Searing Totem": 0.04708688560722834,
+    "Demonic Rune": 0.016983250719471075
    },
    "source_shares": {
-    "lightning_bolt": 0.7234,
-    "flame_shock": 0.1523,
-    "chain_lightning": 0.0721,
-    "searing_totem": 0.0522
+    "lightning_bolt": 0.7262,
+    "flame_shock": 0.1527,
+    "chain_lightning": 0.0732,
+    "searing_totem": 0.0479
    },
-   "unmatched_share": 0.0171
+   "unmatched_share": 0.017
   },
   {
    "label": "sim preset: Standard",
@@ -289,48 +289,48 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "15208": 1.0,
-    "16166": 1.2606666666666666,
-    "29228": 9.162,
-    "10392": 74.867,
+    "10392": 74.8,
+    "10605": 7.109666666666667,
     "10438": 3.0,
-    "10605": 7.046666666666667
+    "15208": 1.0,
+    "29228": 9.160666666666666,
+    "16166": 1.2706666666666666
    },
    "casts": {
-    "Lightning Bolt": 75.867,
-    "item 272438": 1.0,
-    "Lightning Mastery": 1.2606666666666666,
-    "Talisman of Ephemeral Power": 2.046,
-    "Flame Shock": 9.162,
-    "OtherActionManaGain": 3.9876666666666667,
-    "Major Mana Potion": 1.9876666666666667,
+    "Lightning Bolt": 75.8,
+    "Chain Lightning": 7.109666666666667,
     "Searing Totem": 3.0,
+    "OtherActionManaGain": 3.9836666666666667,
+    "Talisman of Ephemeral Power": 2.044,
+    "Major Mana Potion": 1.9836666666666667,
     "Demonic Rune": 2.0,
-    "Chain Lightning": 7.046666666666667
+    "Flame Shock": 9.160666666666666,
+    "Lightning Mastery": 1.2706666666666666,
+    "item 272438": 1.0
    },
-   "dps": 598.7119537288237,
-   "dps_stdev": 28.783689477881083,
-   "threat": 561.1239812243648,
-   "dtps": 9.735548529390147,
+   "dps": 596.2474921032252,
+   "dps_stdev": 28.746929899491622,
+   "threat": 558.9053510918817,
+   "dtps": 9.791094641943214,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 2.934366666666699,
+   "oom_seconds": 2.9423666666667003,
    "error": null,
    "scorer": null,
    "shares": {
-    "Lightning Bolt": 0.7048812138258425,
-    "Flame Shock": 0.14796937126749446,
-    "Chain Lightning": 0.08238468135298635,
-    "Searing Totem": 0.04876409505445159,
-    "Demonic Rune": 0.016000638499225124
+    "Lightning Bolt": 0.7067538391627207,
+    "Flame Shock": 0.1485667797466718,
+    "Chain Lightning": 0.08376312766827951,
+    "Searing Totem": 0.044760360289304996,
+    "Demonic Rune": 0.016155893133022944
    },
    "source_shares": {
-    "lightning_bolt": 0.7163,
-    "flame_shock": 0.1504,
-    "chain_lightning": 0.0837,
-    "searing_totem": 0.0496
+    "lightning_bolt": 0.7184,
+    "flame_shock": 0.151,
+    "chain_lightning": 0.0851,
+    "searing_totem": 0.0455
    },
-   "unmatched_share": 0.016
+   "unmatched_share": 0.0162
   }
  ],
  "deltas": {}

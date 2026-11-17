@@ -52,14 +52,14 @@ The Subtlety build the machine-learning talent search found in a full raid (ever
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `subtlety-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 4** for `subtlety-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`subtlety-ml-raid`](subtlety-ml-raid.md)** | ours: derived (ML search) | 12/8/31 | 478 | +0.0% | 798 | -0.9% | 0 s |
-| 2 | *Subtlety Hemo* | community simulator | - | 478 | +0.0% | 798 | -0.9% | 0 s |
-| 3 | [`hybrid-assassination-subtlety-open-raid`](hybrid-assassination-subtlety-open-raid.md) | ours: derived (open search) | 27/2/22 | 458 | -4.1% | 806 | +0.0% | 0 s |
-| 4 | [`subtlety-hemo-raid`](subtlety-hemo-raid.md) | ours: hand draft | 21/0/30 | 357 | -25.3% | 645 | -19.9% | 0 s |
+| 1 | **[`subtlety-ml-raid`](subtlety-ml-raid.md)** | ours: derived (ML search) | 12/8/31 | 478 | +0.0% | 817 | -0.6% | 0 s |
+| 2 | *Subtlety Hemo* | community simulator | - | 478 | +0.0% | 817 | -0.6% | 0 s |
+| 3 | [`hybrid-assassination-subtlety-open-raid`](hybrid-assassination-subtlety-open-raid.md) | ours: derived (open search) | 27/2/22 | 459 | -3.9% | 822 | +0.0% | 0 s |
+| 4 | [`subtlety-hemo-raid`](subtlety-hemo-raid.md) | ours: hand draft | 21/0/30 | 357 | -25.2% | 661 | -19.5% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -124,7 +124,7 @@ Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: i
 | 11 | if combo points ≤ 3: cast Premeditation | 1.0 |
 | 12 | if combo points ≥ 4: cast Death Mark | 4.6 |
 | 13 | if (talentIsKnown or talentIsKnown) and (combo points ≥ 3) and not Rupture is on the target and not “Fight About to End” and not “Expose - Prevent Other Finishers” and not talentIsKnown: cast Rupture | 2.8 |
-| 14 | if “At or Below SnD Clipping Threshold” and “Above SnD Point Threshold” and not “Fight About to End” and not “Expose - Prevent Other Finishers”: cast Slice and Dice | 3.0 |
+| 14 | if “At or Below SnD Clipping Threshold” and “Above SnD Point Threshold” and not “Fight About to End” and not “Expose - Prevent Other Finishers”: cast Slice and Dice | 2.9 |
 | 15 | if “Current Points less than 5” and (not in front of the target or “Dirty Deeds Known”) and time left on Garrote ≤ 4s: cast Ghostly Strike | 2.0 |
 | 16 | if “Use Backstab” and not Hemorrhage is up and “Current Points less than 5”: cast Hemorrhage | 12.7 |
 | 17 | if not “Use Backstab” and “Current Points less than 5” and (not “SnD Fall Imminent” or energy > (current cost + current cost) and not “SnD Fall Imminent” or not “Above SnD Point Threshold” or “In Danger of Energy Capping” or “Expose - Low Duration”) and “Gnome Eureka - Active or Not Ready” and (time left on Garrote ≥ 8s or not talentIsKnown): cast Hemorrhage | 12.7 |
@@ -136,7 +136,7 @@ Damage by ability:
 | Ability | [`subtlety-ml-raid`](subtlety-ml-raid.md) |
 |---|---|
 | Death Mark | 27% |
-| Auto Attack | 27% |
+| Auto Attack | 26% |
 | Garrote | 14% |
 | Rupture | 12% |
 | Hemorrhage | 8% |

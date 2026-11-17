@@ -50,25 +50,25 @@ The Frost build the machine-learning talent search found in a full raid (every r
 
 ## Rank among our builds and the community simulator's
 
-**5 of 15** for `frost-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**5 of 15** for `frost-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 28/1/22 | 564 | +0.0% | 659 | -3.3% | 7 s |
-| 2 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 32/3/16 | 561 | -0.6% | 670 | -1.7% | 3 s |
-| 3 | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) | ours: optimizer | 29/0/22 | 559 | -0.9% | 666 | -2.3% | 7 s |
-| 4 | [`arcane-frost-open-raid`](arcane-frost-open-raid.md) | ours: derived (open search) | 28/10/13 | 529 | -6.2% | 682 | +0.0% | 5 s |
-| 5 | **[`frost-ml-raid`](frost-ml-raid.md)** | ours: derived (ML search) | 21/0/30 | 506 | -10.3% | 601 | -11.9% | 8 s |
-| 6 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 503 | -10.9% | 568 | -16.8% | 0 s |
-| 7 | *Arcane Fire* | community simulator | - | 493 | -12.5% | 629 | -7.7% | 2 s |
-| 8 | *Arcane* | community simulator | - | 493 | -12.6% | 643 | -5.7% | 2 s |
-| 9 | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) | ours: hand draft | 21/0/30 | 451 | -20.1% | 514 | -24.7% | 0 s |
-| 10 | *Frost Med* | community simulator | - | 451 | -20.1% | 536 | -21.5% | 7 s |
-| 11 | *Frost Incin* | community simulator | - | 443 | -21.4% | 540 | -20.8% | 9 s |
-| 12 | *Fire Skyborne GT 180* | community simulator | - | 422 | -25.3% | 488 | -28.5% | 5 s |
-| 13 | *Fire Skyborne LT 180* | community simulator | - | 418 | -25.9% | 490 | -28.2% | 7 s |
-| 14 | *Fire* | community simulator | - | 416 | -26.2% | 488 | -28.5% | 7 s |
-| 15 | *FFB* | community simulator | - | 390 | -30.9% | 443 | -35.1% | 0 s |
+| 1 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 28/1/22 | 582 | +0.0% | 682 | -3.2% | 7 s |
+| 2 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 32/3/16 | 578 | -0.7% | 692 | -1.7% | 3 s |
+| 3 | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) | ours: optimizer | 29/0/22 | 577 | -0.8% | 689 | -2.1% | 7 s |
+| 4 | [`arcane-frost-open-raid`](arcane-frost-open-raid.md) | ours: derived (open search) | 28/10/13 | 547 | -6.1% | 704 | +0.0% | 4 s |
+| 5 | **[`frost-ml-raid`](frost-ml-raid.md)** | ours: derived (ML search) | 21/0/30 | 524 | -9.9% | 623 | -11.5% | 8 s |
+| 6 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 522 | -10.2% | 591 | -16.1% | 0 s |
+| 7 | *Arcane Fire* | community simulator | - | 510 | -12.4% | 650 | -7.7% | 2 s |
+| 8 | *Arcane* | community simulator | - | 510 | -12.4% | 665 | -5.5% | 2 s |
+| 9 | *Frost Med* | community simulator | - | 468 | -19.5% | 557 | -20.9% | 7 s |
+| 10 | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) | ours: hand draft | 21/0/30 | 468 | -19.6% | 533 | -24.3% | 0 s |
+| 11 | *Frost Incin* | community simulator | - | 460 | -20.9% | 562 | -20.2% | 9 s |
+| 12 | *Fire Skyborne GT 180* | community simulator | - | 438 | -24.8% | 507 | -27.9% | 5 s |
+| 13 | *Fire Skyborne LT 180* | community simulator | - | 434 | -25.4% | 509 | -27.7% | 7 s |
+| 14 | *Fire* | community simulator | - | 432 | -25.8% | 507 | -28.0% | 7 s |
+| 15 | *FFB* | community simulator | - | 404 | -30.6% | 459 | -34.8% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -101,7 +101,7 @@ The Frost build the machine-learning talent search found in a full raid (every r
 | 4 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles (rank 7) | 4.5 |
 | 5 | if (time left on Arcane Blast < cast time of Arcane Blast or stacks of Arcane Blast < 2): cast Arcane Blast | 8.2 |
 | 6 | if mana % < 5% and time left in the fight > 50s: cast Evocation | 0.1 |
-| 7 | if time left in the fight ≥ 3s: cast Frostbolt (rank 10) | 12.4 |
+| 7 | if time left in the fight ≥ 3s: cast Frostbolt (rank 10) | 12.3 |
 | 8 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.1 |
 | 9 | cast Arcane Blast | 8.2 |
 | 10 | cast Robe of the Archmage | as ready |

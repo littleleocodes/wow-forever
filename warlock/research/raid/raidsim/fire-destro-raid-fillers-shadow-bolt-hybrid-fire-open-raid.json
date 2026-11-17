@@ -3,24 +3,25 @@
  "spec": "fire-destro-raid",
  "build": "shadow-bolt-hybrid-fire-open-raid",
  "setting": "raid",
- "date": "2026-11-01",
+ "date": "2026-11-17",
  "tank": false,
  "removal": {
-  "Agonizing Flames": 0.06112265610422274,
-  "Bane": 0.10713818517960005,
-  "Cataclysm": 0.011429893191290397,
+  "Aftermath": 0.0029167876052158537,
+  "Agonizing Flames": 0.06402598603154741,
+  "Bane": 0.09656588458458293,
+  "Cataclysm": 0.018795947366112897,
+  "Conflagrate": 0.11863252936877466,
   "Demonic Aegis": -0.0,
   "Demonic Embrace": -0.0,
-  "Demonic Sacrifice": 0.11492337941963504,
-  "Fel Vitality": 0.013574422665832642,
-  "Improved Bane of Agony": 0.015720813752753027,
-  "Improved Corruption": 0.03312340133335556,
-  "Improved Life Tap": 0.011694956850700988,
-  "Improved Shadow Bolt": 0.0757711845158705,
-  "Malevolence": 0.05000781591935177,
-  "Pandemic": 0.029262914266563356,
-  "Ruin": 0.05592003451421901,
-  "Suppression": 0.048832560058133745
+  "Demonic Sacrifice": 0.10282371768382059,
+  "Fel Vitality": 0.009312028413738571,
+  "Fire and Brimstone": 0.017026138443674954,
+  "Improved Corruption": 0.03801454081999889,
+  "Improved Life Tap": 0.009172490313885895,
+  "Improved Shadow Bolt": 0.049822397482958136,
+  "Ruin": 0.05692597340917882,
+  "Shadow and Flame": 0.18384203547526978,
+  "Suppression": 0.05454679675810947
  },
  "free": [
   "Demonic Aegis",
@@ -45,19 +46,7 @@
    ],
    [
     "Improved Corruption",
-    3
-   ],
-   [
-    "Improved Bane of Agony",
     2
-   ],
-   [
-    "Pandemic",
-    3
-   ],
-   [
-    "Malevolence",
-    5
    ]
   ],
   "Demonology": [
@@ -89,7 +78,11 @@
    ],
    [
     "Cataclysm",
-    2
+    3
+   ],
+   [
+    "Aftermath",
+    1
    ],
    [
     "Ruin",
@@ -98,6 +91,18 @@
    [
     "Agonizing Flames",
     3
+   ],
+   [
+    "Conflagrate",
+    1
+   ],
+   [
+    "Fire and Brimstone",
+    3
+   ],
+   [
+    "Shadow and Flame",
+    5
    ]
   ]
  },
@@ -113,19 +118,7 @@
    ],
    [
     "Improved Corruption",
-    3
-   ],
-   [
-    "Improved Bane of Agony",
     2
-   ],
-   [
-    "Pandemic",
-    3
-   ],
-   [
-    "Malevolence",
-    5
    ]
   ],
   "Demonology": [
@@ -157,7 +150,11 @@
    ],
    [
     "Cataclysm",
-    2
+    3
+   ],
+   [
+    "Aftermath",
+    1
    ],
    [
     "Ruin",
@@ -166,6 +163,18 @@
    [
     "Agonizing Flames",
     3
+   ],
+   [
+    "Conflagrate",
+    1
+   ],
+   [
+    "Fire and Brimstone",
+    3
+   ],
+   [
+    "Shadow and Flame",
+    5
    ]
   ]
  }

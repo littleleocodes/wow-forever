@@ -80,30 +80,30 @@
  "raid": {
   "class": "warlock",
   "spec": "incinerate-raid",
-  "date": "2026-11-08",
-  "commit": "16e85426c",
+  "date": "2026-11-17",
+  "commit": "2e6e77d84",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/warlock/incinerate-raid.base.apl.json",
   "start": "_reference\\data\\raidsim\\apls\\warlock\\incinerate-raid-raid.apl.json",
   "builds": [
    {
-    "label": "open winner",
-    "talents": "253-0050203001-055031500310025"
+    "label": "destruction-incinerate-open-raid",
+    "talents": "253-0050203001-055030500310035"
+   },
+   {
+    "label": "sim preset: Destro",
+    "talents": "2550002013--0050355103101351"
    },
    {
     "label": "destruction-incinerate-raid",
     "talents": "153-0050203001-0050245103101351",
     "protect_only": true
-   },
-   {
-    "label": "sim preset: Destro",
-    "talents": "2550002013--0050355103101351",
-    "protect_only": true
    }
   ],
   "tuned_on": [
-   "open winner"
+   "destruction-incinerate-open-raid",
+   "sim preset: Destro"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -207,32 +207,32 @@
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 414.2878722055203,
-     "after": 787.5921500216336,
-     "base": 414.2878722055203,
+    "destruction-incinerate-open-raid": {
+     "before": 424.59041632896464,
+     "after": 802.654535656706,
+     "base": 424.59041632896464,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.16089359998424693,
-     "oom_after": 0.16089359998424693
-    },
-    "destruction-incinerate-raid": {
-     "before": 697.1952202932622,
-     "after": 749.0814202828731,
-     "base": 697.1952202932622,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.2113386499713436,
-     "oom_after": 0.2113386499713436
+     "oom_before": 0.16864699998224617,
+     "oom_after": 0.16864699998224617
     },
     "sim preset: Destro": {
-     "before": 702.7153349217423,
-     "after": 707.5735346267818,
-     "base": 702.7153349217423,
+     "before": 729.0046877178023,
+     "after": 720.6266497788658,
+     "base": 729.0046877178023,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.44619699996621764,
-     "oom_after": 0.44619699996621764
+     "oom_before": 0.45190449996511944,
+     "oom_after": 0.45190449996511944
+    },
+    "destruction-incinerate-raid": {
+     "before": 723.1003159035424,
+     "after": 761.9796316987298,
+     "base": 723.1003159035424,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.22080429996914253,
+     "oom_after": 0.22080429996914253
     }
    }
   },
@@ -249,6 +249,6 @@
    "on": true
   },
   "first_date": "2026-10-09",
-  "passes": 7
+  "passes": 8
  }
 }

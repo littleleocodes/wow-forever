@@ -66,14 +66,14 @@ The Assassination/Subtlety hybrid (an Assassination/Subtlety hybrid) raid build 
 
 ## Rank among our builds and the community simulator's
 
-**3 of 4** for `subtlety-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 4** for `subtlety-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`subtlety-ml-raid`](subtlety-ml-raid.md) | ours: derived (ML search) | 12/8/31 | 478 | +0.0% | 798 | -0.9% | 0 s |
-| 2 | *Subtlety Hemo* | community simulator | - | 478 | +0.0% | 798 | -0.9% | 0 s |
-| 3 | **[`hybrid-assassination-subtlety-open-raid`](hybrid-assassination-subtlety-open-raid.md)** | ours: derived (open search) | 27/2/22 | 458 | -4.1% | 806 | +0.0% | 0 s |
-| 4 | [`subtlety-hemo-raid`](subtlety-hemo-raid.md) | ours: hand draft | 21/0/30 | 357 | -25.3% | 645 | -19.9% | 0 s |
+| 1 | [`subtlety-ml-raid`](subtlety-ml-raid.md) | ours: derived (ML search) | 12/8/31 | 478 | +0.0% | 817 | -0.6% | 0 s |
+| 2 | *Subtlety Hemo* | community simulator | - | 478 | +0.0% | 817 | -0.6% | 0 s |
+| 3 | **[`hybrid-assassination-subtlety-open-raid`](hybrid-assassination-subtlety-open-raid.md)** | ours: derived (open search) | 27/2/22 | 459 | -3.9% | 822 | +0.0% | 0 s |
+| 4 | [`subtlety-hemo-raid`](subtlety-hemo-raid.md) | ours: hand draft | 21/0/30 | 357 | -25.2% | 661 | -19.5% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -137,7 +137,7 @@ Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: i
 | 10 | if (energy ≤ 15 and not talentIsKnown or Eureka! is known and energy ≤ 25 and energy ≤ 25 or energy ≤ 25 and Death Mark is on the target) and (combo points < 3 or “Expose - Low Duration” or Eureka! is up): cast Thistle Tea | as ready |
 | 11 | if combo points ≤ 3: cast Premeditation | 1.0 |
 | 12 | if (talentIsKnown or talentIsKnown) and (combo points ≥ 3) and not Rupture is on the target and not “Fight About to End” and not “Expose - Prevent Other Finishers” and not talentIsKnown: cast Rupture | 2.9 |
-| 13 | if “At or Below SnD Clipping Threshold” and “Above SnD Point Threshold” and not “Fight About to End” and not “Expose - Prevent Other Finishers”: cast Slice and Dice | 3.0 |
+| 13 | if “At or Below SnD Clipping Threshold” and “Above SnD Point Threshold” and not “Fight About to End” and not “Expose - Prevent Other Finishers”: cast Slice and Dice | 3.1 |
 | 14 | if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not “SnD Fall Imminent” or combo points ≥ 3 and “Fight About to End”) and not “Expose - Prevent Other Finishers” and not talentIsKnown: cast Eviscerate (rank 8) | 3.3 |
 | 15 | if “Current Points less than 5” and (not in front of the target or “Dirty Deeds Known”) and time left on Garrote ≤ 4s: cast Ghostly Strike | 2.0 |
 | 16 | if “Use Backstab” and not Hemorrhage is up and “Current Points less than 5”: cast Hemorrhage | 18.4 |

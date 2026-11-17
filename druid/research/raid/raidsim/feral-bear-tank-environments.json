@@ -2,14 +2,14 @@
  "class": "druid",
  "spec": "feral-bear-tank",
  "game": "forever",
- "date": "2026-11-11",
+ "date": "2026-11-17",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
-  "commit": "ff9babba5",
+  "commit": "2e6e77d84",
   "racials": "off",
   "pet_normalize": false,
   "simulator": "wowsims/forever",
-  "client": "1.60.1.70888",
+  "client": "1.60.1.70938",
   "gear_raid": "ui/specs/druid/feralbear/gear_sets/default.gear.json",
   "gear_max": "ui/specs/druid/feralbear/gear_sets/default.gear.json",
   "iterations": 3000,
@@ -80,28 +80,29 @@
    "ours": true,
    "dps": {
     "dummy": 135.1007177352941,
-    "dummy60": 148.52073351604616,
-    "raid": 1902.7709499702346,
-    "max": 1902.7709499702346,
-    "max60": 1899.3360469640118
+    "dummy60": 148.5298137251099,
+    "raid": 1821.53509348386,
+    "max": 1821.53509348386,
+    "max60": 1816.3450637378526
    },
    "raid_spell_casts": {
-    "9881": 449.45466666666664,
     "5229": 3.009333333333333,
+    "9881": 441.745,
     "22812": 3.009333333333333
    },
    "raid_casts": {
-    "Maul": 449.45466666666664,
+    "Auto Attack": 72.00533333333334,
     "Enrage": 3.009333333333333,
-    "OtherActionRageGain": 157.019,
+    "Maul": 441.745,
     "Barkskin": 3.009333333333333,
-    "Auto Attack": 150.21800000000002
+    "OtherActionRageGain": 153.79266666666666
    },
    "raid_shares": {
-    "Maul": 0.8132,
-    "Auto Attack": 0.1815,
-    "Retribution Aura": 0.0028,
-    "Thorns": 0.0025
+    "Maul": 0.7982,
+    "Windfury Totem": 0.1112,
+    "Auto Attack": 0.085,
+    "Retribution Aura": 0.0029,
+    "Thorns": 0.0026
    }
   },
   {
@@ -110,28 +111,29 @@
    "ours": true,
    "dps": {
     "dummy": 195.05969447331518,
-    "dummy60": 210.5611494555869,
-    "raid": 2379.906994695495,
-    "max": 2379.906994695495,
-    "max60": 2374.9579830755433
+    "dummy60": 210.63349757643417,
+    "raid": 2268.138334198683,
+    "max": 2268.138334198683,
+    "max60": 2265.8001680293655
    },
    "raid_spell_casts": {
     "5229": 3.009333333333333,
-    "9881": 542.3976666666666,
-    "22812": 3.009333333333333
+    "22812": 3.009333333333333,
+    "9881": 533.9273333333333
    },
    "raid_casts": {
     "Enrage": 3.009333333333333,
-    "Auto Attack": 167.534,
-    "Maul": 542.3976666666666,
     "Barkskin": 3.009333333333333,
-    "OtherActionRageGain": 305.545
+    "Maul": 533.9273333333333,
+    "Auto Attack": 72.00533333333334,
+    "OtherActionRageGain": 299.587
    },
    "raid_shares": {
-    "Maul": 0.8397,
-    "Auto Attack": 0.1564,
-    "Retribution Aura": 0.002,
-    "Thorns": 0.0018
+    "Maul": 0.8248,
+    "Windfury Totem": 0.1055,
+    "Auto Attack": 0.0656,
+    "Retribution Aura": 0.0021,
+    "Thorns": 0.0019
    }
   },
   {
@@ -140,28 +142,29 @@
    "ours": true,
    "dps": {
     "dummy": 139.9137624682439,
-    "dummy60": 150.44671597015213,
-    "raid": 1923.2146171872866,
-    "max": 1923.2146171872866,
-    "max60": 1918.904350020784
+    "dummy60": 150.45377550280048,
+    "raid": 1851.3552119851702,
+    "max": 1851.3552119851702,
+    "max60": 1848.8091111541378
    },
    "raid_spell_casts": {
-    "9881": 448.8686666666667,
+    "9881": 444.005,
     "5229": 3.009333333333333,
     "22812": 3.009333333333333
    },
    "raid_casts": {
-    "Maul": 448.8686666666667,
+    "Maul": 444.005,
     "Enrage": 3.009333333333333,
-    "Auto Attack": 153.4766666666667,
-    "OtherActionRageGain": 160.692,
+    "Auto Attack": 72.00533333333334,
+    "OtherActionRageGain": 158.522,
     "Barkskin": 3.009333333333333
    },
    "raid_shares": {
-    "Maul": 0.8114,
-    "Auto Attack": 0.1833,
-    "Retribution Aura": 0.0028,
-    "Thorns": 0.0025
+    "Maul": 0.7957,
+    "Windfury Totem": 0.1154,
+    "Auto Attack": 0.0834,
+    "Retribution Aura": 0.0029,
+    "Thorns": 0.0026
    }
   },
   {
@@ -169,32 +172,33 @@
    "split": "",
    "ours": false,
    "dps": {
-    "dummy": 300.0885094624861,
-    "dummy60": 322.2133555288007,
-    "raid": 1902.697994417337,
-    "max": 1902.697994417337,
-    "max60": 1873.3022897327098
+    "dummy": 323.2435516161725,
+    "dummy60": 346.17611214202856,
+    "raid": 2208.3023646694933,
+    "max": 2208.3023646694933,
+    "max60": 2179.804994869431
    },
    "raid_spell_casts": {
-    "22812": 3.005,
-    "9881": 326.399,
-    "5229": 3.0083333333333333,
-    "1235827": 16.486
+    "22812": 3.0056666666666665,
+    "5229": 3.008,
+    "1235827": 16.407333333333334,
+    "9881": 399.017
    },
    "raid_casts": {
-    "Auto Attack": 137.03033333333335,
-    "Barkskin": 3.005,
-    "Maul": 326.399,
-    "OtherActionRageGain": 200.57966666666667,
-    "Enrage": 3.0083333333333333,
-    "Lacerate": 16.486
+    "Barkskin": 3.0056666666666665,
+    "Enrage": 3.008,
+    "Lacerate": 16.407333333333334,
+    "Maul": 399.017,
+    "OtherActionRageGain": 130.222,
+    "Auto Attack": 72.00533333333334
    },
    "raid_shares": {
-    "Maul": 0.7903,
-    "Auto Attack": 0.1732,
-    "Lacerate": 0.0307,
-    "Retribution Aura": 0.003,
-    "Thorns": 0.0027
+    "Maul": 0.7966,
+    "Windfury Totem": 0.0959,
+    "Auto Attack": 0.074,
+    "Lacerate": 0.0284,
+    "Retribution Aura": 0.0026,
+    "Thorns": 0.0024
    }
   },
   {
@@ -202,31 +206,32 @@
    "split": "",
    "ours": false,
    "dps": {
-    "dummy": 280.1331114019445,
-    "dummy60": 298.56532855403185,
-    "raid": 1779.2528317016313,
-    "max": 1779.2528317016313,
-    "max60": 1759.3952268506466
+    "dummy": 310.21957274062305,
+    "dummy60": 332.50894697924605,
+    "raid": 1822.61642571891,
+    "max": 1822.61642571891,
+    "max60": 1790.115182648712
    },
    "raid_spell_casts": {
-    "1235827": 16.470333333333333,
-    "22812": 3.0056666666666665,
-    "5229": 3.0083333333333333,
-    "9881": 335.26
+    "1235827": 16.345666666666666,
+    "22812": 3.0046666666666666,
+    "9881": 326.0493333333333,
+    "5229": 3.0073333333333334
    },
    "raid_casts": {
-    "Lacerate": 16.470333333333333,
-    "Auto Attack": 136.16333333333336,
-    "Barkskin": 3.0056666666666665,
-    "OtherActionRageGain": 33.00833333333333,
-    "Enrage": 3.0083333333333333,
-    "Maul": 335.26
+    "Lacerate": 16.345666666666666,
+    "Auto Attack": 72.00533333333334,
+    "Barkskin": 3.0046666666666666,
+    "Maul": 326.0493333333333,
+    "OtherActionRageGain": 33.007333333333335,
+    "Enrage": 3.0073333333333334
    },
    "raid_shares": {
-    "Maul": 0.7794,
-    "Auto Attack": 0.1843,
-    "Lacerate": 0.0301,
-    "Retribution Aura": 0.0033,
+    "Maul": 0.7748,
+    "Windfury Totem": 0.0978,
+    "Auto Attack": 0.0878,
+    "Lacerate": 0.0335,
+    "Retribution Aura": 0.0032,
     "Thorns": 0.0029
    }
   }

@@ -63,15 +63,15 @@ The Fury raid build the open talent search found on 2026-11-08: every legal 51-p
 
 ## Rank among our builds and the community simulator's
 
-**1 of 5** for `fury-dw-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 5** for `fury-dw-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`fury-dual-wield-open-raid`](fury-dual-wield-open-raid.md)** | ours: derived (open search) | 17/32/2 | 484 | +0.0% | 858 | +0.0% | 0 s |
-| 2 | *Fury* | community simulator | - | 482 | -0.5% | 857 | -0.1% | 0 s |
-| 3 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 18/33/0 | 482 | -0.6% | 821 | -4.3% | 0 s |
-| 4 | [`fury-dw-raid`](fury-dw-raid.md) | ours: hand draft | 13/38/0 | 457 | -5.6% | 783 | -8.7% | 0 s |
-| 5 | *Arms* | community simulator | - | 348 | -28.1% | 576 | -32.8% | 0 s |
+| 1 | **[`fury-dual-wield-open-raid`](fury-dual-wield-open-raid.md)** | ours: derived (open search) | 17/32/2 | 494 | +0.0% | 937 | +0.0% | 0 s |
+| 2 | *Fury* | community simulator | - | 492 | -0.3% | 935 | -0.2% | 0 s |
+| 3 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 18/33/0 | 490 | -0.7% | 905 | -3.4% | 0 s |
+| 4 | [`fury-dw-raid`](fury-dw-raid.md) | ours: hand draft | 13/38/0 | 466 | -5.6% | 863 | -7.9% | 0 s |
+| 5 | *Arms* | community simulator | - | 350 | -29.0% | 635 | -32.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -126,8 +126,8 @@ The Fury raid build the open talent search found on 2026-11-08: every legal 51-p
 | # | Priority (the first line whose condition holds is cast) | [`fury-dual-wield-open-raid`](fury-dual-wield-open-raid.md) casts/min |
 |---|---|---|
 | 1 | if (time left in the fight ≤ 45s or time left in the fight ≥ 211.5s): cast Death Wish | 0.3 |
-| 2 | if execute phase (E20): cast Execute | 6.7 |
-| 3 | cast Bloodthirst | 7.4 |
+| 2 | if execute phase (E20): cast Execute | 6.8 |
+| 3 | cast Bloodthirst | 7.5 |
 | 4 | if time left in the fight ≤ 33.75s: cast Recklessness | 0.3 |
 | 5 | cast Goblin Sapper Charge | as ready |
 | 6 | cast Dense Dynamite | as ready |
@@ -140,7 +140,7 @@ The Fury raid build the open talent search found on 2026-11-08: every legal 51-p
 | 13 | cast Whirlwind | 5.4 |
 | 14 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 5.4 |
 | 15 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 16 | if stacks of Sunder Armor < 5: cast Sunder Armor | 6.7 |
+| 16 | if stacks of Sunder Armor < 5: cast Sunder Armor | 6.6 |
 
 Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Heroic Strike, cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
@@ -148,7 +148,7 @@ Damage by ability:
 
 | Ability | [`fury-dual-wield-open-raid`](fury-dual-wield-open-raid.md) |
 |---|---|
-| Auto Attack | 43% |
+| Auto Attack | 42% |
 | Execute | 24% |
 | Bloodthirst | 16% |
 | Whirlwind | 12% |

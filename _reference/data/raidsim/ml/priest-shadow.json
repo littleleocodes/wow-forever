@@ -14,16 +14,93 @@
   "bis": {
    "entry": "shadow-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-shadow-bis.gear.json",
-   "date": "2026-11-12",
-   "setting": "raid",
+   "date": "2026-11-17",
    "chosen": "all-slots",
-   "ilvl": 61.6,
+   "ilvl": 63.9,
    "trinkets": [
     "Talisman of Ephemeral Power",
-    "Weakness Analyzer"
+    "Eye of the Beast"
    ],
+   "trinket_screen": {
+    "Talisman of Ephemeral Power (18820)": 1.016,
+    "Eye of the Beast (13968)": 1.015,
+    "Weakness Analyzer (272438)": 1.0145,
+    "Briarwood Reed (12930)": 1.0096,
+    "Jewel of the Guard Captain (270225)": 1.0094,
+    "Frozen Heart of the Mountain (249469)": 1.0083,
+    "Smolderweb's Eye (13213)": 1.0076,
+    "Draconic Infused Emblem (22268)": 1.0067,
+    "Rune of the Guard Captain (19120)": 1.0055,
+    "Cleansed Vilebranch Medallion (270275)": 1.0055,
+    "Serenity Field (272439)": 1.0048,
+    "Blackhand's Breadth (13965)": 1.0043,
+    "Cannonball Runner (13382)": 1.004,
+    "Second Wind (11819)": 1.0039,
+    "Shard of the Splithooves (10659)": 1.0005,
+    "Theka's Last Breath (274641)": 1.0005,
+    "Enriched Seal (271905)": 1.0005,
+    "Darkspear Voodoo Seal (272059)": 1.0005,
+    "Burst of Knowledge (11832)": 1.0004,
+    "Roogug's Severed Head (274152)": 1.0003,
+    "Alchemist's Stone (13503)": 1.0002,
+    "Worgenbane Talisman (273643)": 1.0002,
+    "Enriched Seal (271903)": 1.0002,
+    "Darkspear Voodoo Seal (272061)": 1.0002,
+    "Everlook Delivery Bot (274760)": 1.0002,
+    "Dog Whistle (3456)": 1.0,
+    "Minor Recombobulator (4381)": 1.0,
+    "Gnomish Universal Remote (7506)": 1.0,
+    "Demon's Blood (10779)": 1.0,
+    "Force of Will (11810)": 1.0,
+    "Smoking Heart of the Mountain (11811)": 1.0,
+    "Hand of Justice (11815)": 1.0,
+    "Heart of the Scale (13164)": 1.0,
+    "Ramstein's Lightning Bolts (13515)": 1.0,
+    "The Lion Horn of Stormwind (14557)": 1.0,
+    "Arcanite Dragonling (16022)": 1.0,
+    "Heart of Noxxion (17744)": 1.0,
+    "Vigilance Charm (18370)": 1.0,
+    "Counterattack Lodestone (18537)": 1.0,
+    "Gyrofreeze Ice Reflector (18634)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Hyper-Radiant Flame Reflector (18638)": 1.0,
+    "Ultra-Flash Shadow Reflector (18639)": 1.0,
+    "The Eye of Divinity (18646)": 1.0,
+    "The Eye of Shadow (18665)": 1.0,
+    "Essence of the Pure Flame (18815)": 1.0,
+    "Arena Grand Master (19024)": 1.0,
+    "Talisman of Arathor (20071)": 1.0,
+    "Defiler's Talisman (20072)": 1.0,
+    "Defiler's Talisman (21115)": 1.0,
+    "Defiler's Talisman (21116)": 1.0,
+    "Talisman of Arathor (21117)": 1.0,
+    "Talisman of Arathor (21118)": 1.0,
+    "Talisman of Arathor (21119)": 1.0,
+    "Defiler's Talisman (21120)": 1.0,
+    "Defender of the Timbermaw (21326)": 1.0,
+    "Heart of Wyrmthalak (22321)": 1.0,
+    "Molten Heart of the Mountain (249470)": 1.0,
+    "Dormant Heart of the Mountain (249473)": 1.0,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
+    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
+    "Gnomish Poultryizer (260824)": 1.0,
+    "Volunteer's Lucky Seal (271904)": 1.0,
+    "Volunteer's Lucky Seal (271906)": 1.0,
+    "Relentless Raider's Seal (272060)": 1.0,
+    "Relentless Raider's Seal (272062)": 1.0,
+    "Adaptive Combat Assistant (272437)": 1.0,
+    "Defender's Grip Stabilizer (272440)": 1.0,
+    "Cursed Murloc Eye (273840)": 1.0,
+    "The Desert Rose (274648)": 1.0,
+    "Everlook Pathcarver (274759)": 1.0,
+    "Parachute-Priest Pager (274761)": 1.0,
+    "Mark of the Red Flight (282778)": 1.0,
+    "Lookie's Spyglass (273298)": 0.9999,
+    "Mindtap Talisman (18371)": 0.9938
+   },
    "names": [
-    "Crimson Felt Hat",
+    "Spellweaver's Turban",
     "Choker of the Fire Lord",
     "Mantle of the Timbermaw",
     "Arcanoweave Cloak",
@@ -32,95 +109,252 @@
     "Gloves of Spell Mastery",
     "Belt of the Archmage",
     "Flarecore Leggings",
-    "Earthen Silk Slippers",
+    "Omnicast Boots",
     "Ring of Spell Power",
     "Warden's Signet of Brilliance",
     "Talisman of Ephemeral Power",
-    "Weakness Analyzer",
+    "Eye of the Beast",
     "Sageclaw",
-    "Mordresh's Lifeless Skull",
-    "Ritssyn's Wand of Bad Mojo"
+    "Obsidian Bauble",
+    "Skul's Ghastly Touch"
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.0335965405754601,
-    "keep-sets-and-effects": 1.0122987200450706,
-    "previous": 1.033292900267824
+    "all-slots": 1.0115065349999188,
+    "keep-sets-and-effects": 1.0115065349999188,
+    "previous": 0.9871161938426571,
+    "previous+trinkets": 0.9866332167372062
    },
    "confirm_seed2": {
     "current": 1.0,
-    "all-slots": 1.0330414804758308
+    "all-slots": 1.0117740472308496
    },
    "weights": {
-    "StatCritRating": 0.4713,
-    "StatHasteRating": 0.2956,
-    "StatHitRating": 0.6139,
-    "StatIntellect": 0.1305,
-    "StatShadowDamage": 0.4903,
-    "StatSpellDamage": 0.4903,
-    "StatSpellPiercing": 1.0138,
-    "StatSpirit": 0.0006
+    "StatCritRating": 0.4725,
+    "StatHasteRating": 0.2122,
+    "StatHitRating": 0.5451,
+    "StatIntellect": 0.1398,
+    "StatShadowDamage": 0.4974,
+    "StatSpellDamage": 0.4974,
+    "StatSpellPiercing": 1.111,
+    "StatSpirit": -0.0022
    },
    "evaluated_on": [
     "shadow-dps: ml winner"
    ],
-   "commit": "ff9babba5"
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Crimson Felt Hat",
+     "to": "Spellweaver's Turban"
+    },
+    {
+     "slot": 9,
+     "from": "Earthen Silk Slippers",
+     "to": "Omnicast Boots"
+    },
+    {
+     "slot": 13,
+     "from": "Weakness Analyzer",
+     "to": "Eye of the Beast"
+    },
+    {
+     "slot": 15,
+     "from": "Mordresh's Lifeless Skull",
+     "to": "Obsidian Bauble"
+    },
+    {
+     "slot": 16,
+     "from": "Ritssyn's Wand of Bad Mojo",
+     "to": "Skul's Ghastly Touch"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 2e6e77d84",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 1.9
+   }
   },
   "bis2": true,
   "prebis": {
    "entry": "shadow-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-shadow-prebis.gear.json",
-   "date": "2026-11-12",
-   "setting": "raid",
-   "chosen": "previous",
-   "ilvl": 59.7,
+   "date": "2026-11-17",
+   "chosen": "all-slots",
+   "ilvl": 62.4,
    "trinkets": [
     "Eye of the Beast",
     "Weakness Analyzer"
    ],
+   "trinket_screen": {
+    "Eye of the Beast (13968)": 1.0149,
+    "Weakness Analyzer (272438)": 1.0147,
+    "Briarwood Reed (12930)": 1.0098,
+    "Jewel of the Guard Captain (270225)": 1.0094,
+    "Frozen Heart of the Mountain (249469)": 1.0084,
+    "Smolderweb's Eye (13213)": 1.0076,
+    "Draconic Infused Emblem (22268)": 1.0068,
+    "Rune of the Guard Captain (19120)": 1.0055,
+    "Cleansed Vilebranch Medallion (270275)": 1.0055,
+    "Serenity Field (272439)": 1.0049,
+    "Blackhand's Breadth (13965)": 1.0043,
+    "Cannonball Runner (13382)": 1.004,
+    "Second Wind (11819)": 1.004,
+    "Shard of the Splithooves (10659)": 1.0005,
+    "Theka's Last Breath (274641)": 1.0005,
+    "Enriched Seal (271905)": 1.0005,
+    "Darkspear Voodoo Seal (272059)": 1.0005,
+    "Burst of Knowledge (11832)": 1.0004,
+    "Everlook Delivery Bot (274760)": 1.0003,
+    "Roogug's Severed Head (274152)": 1.0003,
+    "Alchemist's Stone (13503)": 1.0003,
+    "Enriched Seal (271903)": 1.0002,
+    "Darkspear Voodoo Seal (272061)": 1.0002,
+    "Worgenbane Talisman (273643)": 1.0002,
+    "Dog Whistle (3456)": 1.0,
+    "Minor Recombobulator (4381)": 1.0,
+    "Gnomish Universal Remote (7506)": 1.0,
+    "Demon's Blood (10779)": 1.0,
+    "Force of Will (11810)": 1.0,
+    "Smoking Heart of the Mountain (11811)": 1.0,
+    "Hand of Justice (11815)": 1.0,
+    "Heart of the Scale (13164)": 1.0,
+    "Ramstein's Lightning Bolts (13515)": 1.0,
+    "The Lion Horn of Stormwind (14557)": 1.0,
+    "Arcanite Dragonling (16022)": 1.0,
+    "Heart of Noxxion (17744)": 1.0,
+    "Vigilance Charm (18370)": 1.0,
+    "Counterattack Lodestone (18537)": 1.0,
+    "Gyrofreeze Ice Reflector (18634)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Hyper-Radiant Flame Reflector (18638)": 1.0,
+    "Ultra-Flash Shadow Reflector (18639)": 1.0,
+    "The Eye of Shadow (18665)": 1.0,
+    "Talisman of Arathor (20071)": 1.0,
+    "Defiler's Talisman (20072)": 1.0,
+    "Defiler's Talisman (21115)": 1.0,
+    "Defiler's Talisman (21116)": 1.0,
+    "Talisman of Arathor (21117)": 1.0,
+    "Talisman of Arathor (21118)": 1.0,
+    "Talisman of Arathor (21119)": 1.0,
+    "Defiler's Talisman (21120)": 1.0,
+    "Defender of the Timbermaw (21326)": 1.0,
+    "Heart of Wyrmthalak (22321)": 1.0,
+    "Molten Heart of the Mountain (249470)": 1.0,
+    "Dormant Heart of the Mountain (249473)": 1.0,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
+    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
+    "Gnomish Poultryizer (260824)": 1.0,
+    "Volunteer's Lucky Seal (271904)": 1.0,
+    "Volunteer's Lucky Seal (271906)": 1.0,
+    "Relentless Raider's Seal (272060)": 1.0,
+    "Relentless Raider's Seal (272062)": 1.0,
+    "Adaptive Combat Assistant (272437)": 1.0,
+    "Defender's Grip Stabilizer (272440)": 1.0,
+    "Cursed Murloc Eye (273840)": 1.0,
+    "The Desert Rose (274648)": 1.0,
+    "Everlook Pathcarver (274759)": 1.0,
+    "Parachute-Priest Pager (274761)": 1.0,
+    "Mark of the Red Flight (282778)": 1.0,
+    "Lookie's Spyglass (273298)": 0.9999,
+    "Mindtap Talisman (18371)": 0.9939
+   },
    "names": [
-    "Felcloth Hood",
-    "Nacreous Shell Necklace",
+    "Spellweaver's Turban",
+    "Dark Advisor's Pendant",
     "Mantle of the Timbermaw",
     "Arcanoweave Cloak",
     "Earthpower Vest",
     "Rockfury Bracers",
     "Gloves of Spell Mastery",
     "Belt of the Archmage",
-    "Skyshroud Leggings",
-    "Earthen Silk Slippers",
+    "Leggings of Torment",
+    "Omnicast Boots",
     "Warden's Signet of Brilliance",
     "Elemental Focus Band",
-    "Weakness Analyzer",
     "Eye of the Beast",
+    "Weakness Analyzer",
     "Sageclaw",
-    "Mordresh's Lifeless Skull",
-    "Ritssyn's Wand of Bad Mojo"
+    "Obsidian Bauble",
+    "Skul's Ghastly Touch"
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9840261740876052,
-    "previous": 0.9990055962171338,
-    "previous+trinkets": 0.9990105106669804
+    "keep-sets-and-effects": 1.0,
+    "previous": 0.9715364722437857,
+    "previous+trinkets": 0.9715406173524969
    },
    "confirm_seed2": {
     "previous": 1.0,
-    "all-slots": 0.9992286237123612
+    "all-slots": 1.0287186578154808
    },
    "weights": {
-    "StatCritRating": 0.4636,
-    "StatHasteRating": 0.2066,
-    "StatHitRating": 0.5286,
-    "StatIntellect": 0.1317,
-    "StatShadowDamage": 0.4964,
-    "StatSpellDamage": 0.4964,
-    "StatSpellPiercing": 0.9958,
-    "StatSpirit": -0.0058
+    "StatCritRating": 0.4641,
+    "StatHasteRating": 0.2106,
+    "StatHitRating": 0.5324,
+    "StatIntellect": 0.1292,
+    "StatShadowDamage": 0.4998,
+    "StatSpellDamage": 0.4998,
+    "StatSpellPiercing": 1.0932,
+    "StatSpirit": -0.0009
    },
    "evaluated_on": [
     "shadow-dps: ml winner (bis)"
    ],
-   "commit": "ff9babba5"
+   "replaced": [
+    {
+     "slot": 0,
+     "from": "Felcloth Hood",
+     "to": "Spellweaver's Turban"
+    },
+    {
+     "slot": 1,
+     "from": "Nacreous Shell Necklace",
+     "to": "Dark Advisor's Pendant"
+    },
+    {
+     "slot": 8,
+     "from": "Skyshroud Leggings",
+     "to": "Leggings of Torment"
+    },
+    {
+     "slot": 9,
+     "from": "Earthen Silk Slippers",
+     "to": "Omnicast Boots"
+    },
+    {
+     "slot": 12,
+     "from": "Weakness Analyzer",
+     "to": "Eye of the Beast"
+    },
+    {
+     "slot": 13,
+     "from": "Eye of the Beast",
+     "to": "Weakness Analyzer"
+    },
+    {
+     "slot": 15,
+     "from": "Mordresh's Lifeless Skull",
+     "to": "Obsidian Bauble"
+    },
+    {
+     "slot": 16,
+     "from": "Ritssyn's Wand of Bad Mojo",
+     "to": "Skul's Ghastly Touch"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 2e6e77d84",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 2.4
+   }
   }
  },
  "search": {

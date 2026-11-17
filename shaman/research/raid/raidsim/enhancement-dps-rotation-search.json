@@ -145,20 +145,26 @@
  "raid": {
   "class": "shaman",
   "spec": "enhancement-dps",
-  "date": "2026-11-11",
-  "commit": "ff9babba5",
+  "date": "2026-11-17",
+  "commit": "2e6e77d84",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/shaman/enhancement/apls/forever.apl.json",
   "start": "ui\\specs\\shaman\\enhancement\\apls\\forever.apl.json",
   "builds": [
    {
+    "label": "open winner",
+    "talents": "053403102-055030110051002251-02"
+   },
+   {
     "label": "enhancement-ml-raid",
-    "talents": "253103102-053030310051002251-03"
+    "talents": "253103102-053030310051002251-03",
+    "protect_only": true
    },
    {
     "label": "sim preset: Standard",
-    "talents": "053303102-053030310051002251-03"
+    "talents": "053303102-053030310051002251-03",
+    "protect_only": true
    },
    {
     "label": "enhancement-raid-dps",
@@ -177,8 +183,7 @@
    }
   ],
   "tuned_on": [
-   "enhancement-ml-raid",
-   "sim preset: Standard"
+   "open winner"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -286,54 +291,71 @@
     "gain_seed2": 0.001655357563924209,
     "candidates": 316,
     "pass": 13
+   },
+   {
+    "round": 14,
+    "change": "drop: if auraIsInactive: cast Rockbiter Weapon",
+    "gain_seed1": 0.10042200319788441,
+    "gain_seed2": 0.09769565375993627,
+    "candidates": 316,
+    "pass": 16
    }
   ],
   "final": {
    "raid": {
-    "enhancement-ml-raid": {
-     "before": 923.7480828942904,
-     "after": 984.2138064206449,
-     "base": 923.7480828942904,
+    "open winner": {
+     "before": 833.5584542533863,
+     "after": 907.7583746220041,
+     "base": 833.5584542533863,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.41006666670155,
-     "oom_after": 0.41006666670155
+     "oom_before": 0.03942196500080003,
+     "oom_after": 0.03942196500080003
+    },
+    "enhancement-ml-raid": {
+     "before": 827.2373725645813,
+     "after": 892.5797588188399,
+     "base": 827.2373725645813,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.022742255340899978,
+     "oom_after": 0.022742255340899978
     },
     "sim preset: Standard": {
-     "before": 928.536426857197,
-     "after": 981.0668822782816,
-     "base": 928.536426857197,
+     "before": 835.1348242475377,
+     "after": 905.7552766493556,
+     "base": 835.1348242475377,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.9087345400623608,
-     "oom_after": 0.9087345400623608
+     "oom_before": 0.05663152270845011,
+     "oom_after": 0.05663152270845011
     },
     "enhancement-raid-dps": {
-     "before": 880.3861546468759,
-     "after": 917.1159679326527,
-     "base": 880.3861546468759,
+     "before": 788.9884402561142,
+     "after": 829.5742409973732,
+     "base": 788.9884402561142,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.593962588363202,
-     "oom_after": 0.593962588363202
+     "oom_before": 0.011696486916049997,
+     "oom_after": 0.011696486916049997
     },
     "opt-enhancement-dps-raid-dps": {
-     "before": 856.9471496724058,
-     "after": 902.1285296878133,
-     "base": 856.9471496724058,
+     "before": 793.4374137071355,
+     "after": 856.3540691640062,
+     "base": 793.4374137071355,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.0540107928273554,
-     "oom_after": 1.0540107928273554
+     "oom_before": 0.21187225623984954,
+     "oom_after": 0.21187225623984954
     },
     "elemental-enhancement-ml-raid": {
-     "before": 863.3492834896572,
-     "after": 914.5945577746205,
-     "base": 863.3492834896572,
+     "before": 815.2303953440605,
+     "after": 883.3577225521008,
+     "base": 815.2303953440605,
      "before_value": null,
      "after_value": null,
-     "oom_before": 2.6801895246432403,
-     "oom_after": 2.6801895246432403
+     "oom_before": 0.030115366328300013,
+     "oom_after": 0.030115366328300013
     }
    }
   },
@@ -346,13 +368,13 @@
     "Stormstrike"
    ],
    "rejected": {
-    "structure": 13,
+    "structure": 54,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 15
+  "passes": 17
  }
 }

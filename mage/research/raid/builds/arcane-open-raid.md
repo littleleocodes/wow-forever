@@ -63,13 +63,13 @@ The Arcane raid build the open talent search found on 2026-11-11: every legal 51
 
 ## Rank among our builds and the community simulator's
 
-**2 of 3** for `arcane-dps` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 3** for `arcane-dps` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Arcane Fire* | community simulator | - | 567 | +0.0% | 760 | -1.7% | 4 s |
-| 2 | **[`arcane-open-raid`](arcane-open-raid.md)** | ours: derived (open search) | 31/17/3 | 566 | -0.3% | 773 | +0.0% | 7 s |
-| 3 | [`arcane-blast-raid`](arcane-blast-raid.md) | ours: hand draft | 31/13/7 | 546 | -3.7% | 692 | -10.5% | 6 s |
+| 1 | *Arcane Fire* | community simulator | - | 584 | +0.0% | 785 | -1.5% | 5 s |
+| 2 | **[`arcane-open-raid`](arcane-open-raid.md)** | ours: derived (open search) | 31/17/3 | 582 | -0.4% | 797 | +0.0% | 8 s |
+| 3 | [`arcane-blast-raid`](arcane-blast-raid.md) | ours: hand draft | 31/13/7 | 563 | -3.7% | 715 | -10.4% | 6 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -137,7 +137,7 @@ Damage by ability:
 
 | Ability | [`arcane-open-raid`](arcane-open-raid.md) |
 |---|---|
-| Arcane Wrath | 29% |
+| Arcane Wrath | 28% |
 | Arcane Missiles | 25% |
 | Fire Blast | 19% |
 | Arcane Blast | 14% |

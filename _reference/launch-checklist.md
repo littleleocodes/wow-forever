@@ -671,9 +671,6 @@
 **Enhancement — Raid (machine-learning search)** (`shaman/research/raid/builds/enhancement-ml-raid.md`)
 - [ ] A machine-searched Enhancement build: check it against the community's Enhancement builds at launch.
 
-**Elemental-Enhancement — Raid (machine-learning search)** (`shaman/research/raid/builds/elemental-enhancement-ml-raid.md`)
-- [ ] A machine-searched Elemental-Enhancement build: check it against the community's Elemental-Enhancement builds at launch.
-
 **Enhancement — Leveling (open talent search)** (`shaman/research/leveling/builds/enhancement-open-leveling.md`)
 - [ ] An open-search Enhancement leveling build: check it while leveling at launch.
 
@@ -682,6 +679,12 @@
 
 **Restoration — Leveling into the raid build** (`shaman/research/leveling/builds/restoration-leveling.md`)
 - [ ] Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
+
+**Enhancement — Raid (open talent search)** (`shaman/research/raid/builds/enhancement-open-raid.md`)
+- [ ] An open-search Enhancement build: check it against the community's Enhancement builds at launch.
+
+**Elemental-Enhancement — Raid (machine-learning search)** (`shaman/research/raid/builds/elemental-enhancement-ml-raid.md`)
+- [ ] A machine-searched Elemental-Enhancement build: check it against the community's Elemental-Enhancement builds at launch.
 
 ### Warlock
 
@@ -765,12 +768,6 @@
 **Destruction — Raid (machine-learning search)** (`warlock/research/raid/builds/destruction-ml-raid.md`)
 - [ ] A machine-searched Destruction build: check it against the community's Destruction builds at launch.
 
-**Shadow Bolt hybrid — Raid (open talent search)** (`warlock/research/raid/builds/shadow-bolt-hybrid-open-raid.md`)
-- [ ] An open-search Shadow Bolt hybrid build: check it against the community's Shadow Bolt hybrid builds at launch.
-
-**Destruction — Incinerate (open talent search)** (`warlock/research/raid/builds/destruction-incinerate-open-raid.md`)
-- [ ] An open-search Destruction build: check it against the community's Destruction builds at launch.
-
 **Affliction — Leveling (open talent search)** (`warlock/research/leveling/builds/affliction-open-leveling.md`)
 - [ ] An open-search Affliction leveling build: check it while leveling at launch.
 
@@ -782,6 +779,12 @@
 
 **Demonology — Leveling (open talent search)** (`warlock/research/leveling/builds/demonology-open-leveling.md`)
 - [ ] An open-search Demonology leveling build: check it while leveling at launch.
+
+**Shadow Bolt hybrid — Fire (open talent search)** (`warlock/research/raid/builds/shadow-bolt-hybrid-fire-open-raid.md`)
+- [ ] An open-search Shadow Bolt hybrid build: check it against the community's Shadow Bolt hybrid builds at launch.
+
+**Destruction — Incinerate (open talent search)** (`warlock/research/raid/builds/destruction-incinerate-open-raid.md`)
+- [ ] An open-search Destruction build: check it against the community's Destruction builds at launch.
 
 ### Warrior
 

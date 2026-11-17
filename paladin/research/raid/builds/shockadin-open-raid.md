@@ -62,11 +62,11 @@ The Shockadin (a Holy/Retribution hybrid) raid build the open talent search foun
 
 ## Rank among our builds and the community simulator's
 
-**1 of 1** for `shockadin-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 1** for `shockadin-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`shockadin-open-raid`](shockadin-open-raid.md)** | ours: derived (open search) | 23/0/28 | 484 | +0.0% | 805 | +0.0% | 49 s |
+| 1 | **[`shockadin-open-raid`](shockadin-open-raid.md)** | ours: derived (open search) | 23/0/28 | 484 | +0.0% | 804 | +0.0% | 40 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -82,13 +82,13 @@ Before the pull: at -20s: groupReference; at -30s: if Manual Crowd Pummeler is k
 | 1 | groupReference | as ready |
 | 2 | if time into the fight ≥ “Delay Major CDs”: use every other cooldown when ready | as ready |
 | 3 | groupReference | as ready |
-| 4 | cast Judgement | 6.9 |
-| 5 | cast Consecration | 5.6 |
+| 4 | cast Judgement | 7.0 |
+| 5 | cast Consecration | 5.9 |
 | 6 | if “Should refresh seal”: groupReference | as ready |
 | 7 | cast Holy Strike | 6.0 |
 | 8 | if Holy Shock is ready: cast Divine Favor | 0.6 |
-| 9 | cast Holy Shock | 4.3 |
-| 10 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 0.6 |
+| 9 | cast Holy Shock | 4.5 |
+| 10 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 0.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Exorcism (its condition never held in these fights).
 
@@ -96,11 +96,11 @@ Damage by ability:
 
 | Ability | [`shockadin-open-raid`](shockadin-open-raid.md) |
 |---|---|
-| Auto Attack | 20% |
+| Auto Attack | 19% |
 | Judgement of Righteousness | 18% |
+| Consecration | 15% |
 | Holy Strike | 15% |
 | Seal of Righteousness | 15% |
-| Consecration | 14% |
 | Holy Shock | 14% |
 | Hammer of Wrath | 3% |
 | Demonic Rune | 2% |

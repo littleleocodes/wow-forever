@@ -70,20 +70,18 @@ Allocation adopted on 2026-09-26 from `opt-mm-lonewolf-raid-raid-dps`, the best 
 
 ## Rank among our builds and the community simulator's
 
-**3 of 10** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 8** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *MM* | community simulator | - | 483 | +0.0% | 990 | -0.7% | 41 s |
-| 2 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 7/41/3 | 475 | -1.7% | 924 | -7.3% | 24 s |
-| 3 | **[`mm-lone-wolf-raid`](mm-lone-wolf-raid.md)** | ours: hand draft | 5/41/5 | 472 | -2.4% | 997 | +0.0% | 47 s |
-| 4 | *SV* | community simulator | - | 426 | -11.9% | 815 | -18.2% | 36 s |
-| 5 | *SV Weave* | community simulator | - | 421 | -13.0% | 807 | -19.0% | 36 s |
-| 6 | *MM Weave* | community simulator | - | 410 | -15.2% | 824 | -17.3% | 45 s |
-| 7 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 406 | -16.1% | 805 | -19.2% | 29 s |
-| 8 | *BM Weave* | community simulator | - | 308 | -36.4% | 629 | -36.9% | 26 s |
-| 9 | *BM* | community simulator | - | 298 | -38.3% | 641 | -35.7% | 31 s |
-| 10 | *SV Melee* | community simulator | - | 267 | -44.8% | 593 | -40.5% | 45 s |
+| 1 | *MM* | community simulator | - | 485 | +0.0% | 995 | -0.7% | 43 s |
+| 2 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 7/41/3 | 477 | -1.8% | 930 | -7.2% | 25 s |
+| 3 | **[`mm-lone-wolf-raid`](mm-lone-wolf-raid.md)** | ours: hand draft | 5/41/5 | 475 | -2.2% | 1002 | +0.0% | 48 s |
+| 4 | *SV* | community simulator | - | 424 | -12.7% | 849 | -15.3% | 47 s |
+| 5 | *SV Weave* | community simulator | - | 423 | -12.8% | 812 | -19.0% | 37 s |
+| 6 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 407 | -16.1% | 810 | -19.2% | 31 s |
+| 7 | *BM* | community simulator | - | 340 | -29.9% | 686 | -31.6% | 32 s |
+| 8 | *SV Melee* | community simulator | - | 293 | -39.6% | 615 | -38.6% | 46 s |
 
 ## Rotation (community simulator, training dummy)
 

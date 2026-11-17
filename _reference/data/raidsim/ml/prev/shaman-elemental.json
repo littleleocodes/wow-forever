@@ -14,36 +14,32 @@
   "bis": {
    "entry": "elemental-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-bis.gear.json",
-   "date": "2026-11-11",
+   "date": "2026-11-17",
    "chosen": "all-slots",
-   "ilvl": 63.4,
+   "ilvl": 63.5,
    "trinkets": [
     "Talisman of Ephemeral Power",
     "Eye of the Beast"
    ],
    "trinket_screen": {
-    "Talisman of Ephemeral Power (18820)": 1.0249,
-    "Eye of the Beast (13968)": 1.0186,
+    "Talisman of Ephemeral Power (18820)": 1.0237,
+    "Eye of the Beast (13968)": 1.0158,
     "Weakness Analyzer (272438)": 1.0149,
-    "Smolderweb's Eye (13213)": 1.0122,
-    "Frozen Heart of the Mountain (249469)": 1.0107,
+    "Briarwood Reed (12930)": 1.0116,
+    "Smolderweb's Eye (13213)": 1.0107,
     "Jewel of the Guard Captain (270225)": 1.0102,
-    "Rune of the Guard Captain (19120)": 1.0087,
-    "Cleansed Vilebranch Medallion (270275)": 1.0087,
-    "Cannonball Runner (13382)": 1.0064,
-    "Second Wind (11819)": 1.0059,
-    "Serenity Field (272439)": 1.0057,
-    "Everlook Delivery Bot (274760)": 1.0036,
-    "Burst of Knowledge (11832)": 1.0017,
-    "Enriched Seal (271903)": 1.0014,
-    "Darkspear Voodoo Seal (272061)": 1.0014,
-    "Shard of the Splithooves (10659)": 1.0013,
-    "Alchemist's Stone (13503)": 1.0013,
-    "Enriched Seal (271905)": 1.0006,
-    "Darkspear Voodoo Seal (272059)": 1.0006,
-    "Worgenbane Talisman (273643)": 1.0004,
-    "Roogug's Severed Head (274152)": 1.0003,
-    "Lookie's Spyglass (273298)": 1.0,
+    "Frozen Heart of the Mountain (249469)": 1.0095,
+    "Draconic Infused Emblem (22268)": 1.008,
+    "Rune of the Guard Captain (19120)": 1.0068,
+    "Cleansed Vilebranch Medallion (270275)": 1.0068,
+    "Serenity Field (272439)": 1.0059,
+    "Second Wind (11819)": 1.0052,
+    "Cannonball Runner (13382)": 1.0049,
+    "Blackhand's Breadth (13965)": 1.0045,
+    "Everlook Delivery Bot (274760)": 1.0018,
+    "Alchemist's Stone (13503)": 1.0005,
+    "Burst of Knowledge (11832)": 1.0003,
+    "Lookie's Spyglass (273298)": 1.0002,
     "Dog Whistle (3456)": 1.0,
     "Minor Recombobulator (4381)": 1.0,
     "Gnomish Universal Remote (7506)": 1.0,
@@ -52,7 +48,8 @@
     "Smoking Heart of the Mountain (11811)": 1.0,
     "Hand of Justice (11815)": 1.0,
     "Heart of the Scale (13164)": 1.0,
-    "Blackhand's Breadth (13965)": 1.0,
+    "Ramstein's Lightning Bolts (13515)": 1.0,
+    "The Lion Horn of Stormwind (14557)": 1.0,
     "Arcanite Dragonling (16022)": 1.0,
     "Heart of Noxxion (17744)": 1.0,
     "Vigilance Charm (18370)": 1.0,
@@ -87,12 +84,22 @@
     "Adaptive Combat Assistant (272437)": 1.0,
     "Defender's Grip Stabilizer (272440)": 1.0,
     "Cursed Murloc Eye (273840)": 1.0,
+    "The Desert Rose (274648)": 1.0,
     "Everlook Pathcarver (274759)": 1.0,
     "Parachute-Priest Pager (274761)": 1.0,
-    "Mindtap Talisman (18371)": 0.9849
+    "Mark of the Red Flight (282778)": 1.0,
+    "Enriched Seal (271903)": 0.9998,
+    "Darkspear Voodoo Seal (272061)": 0.9998,
+    "Enriched Seal (271905)": 0.9997,
+    "Darkspear Voodoo Seal (272059)": 0.9997,
+    "Shard of the Splithooves (10659)": 0.9997,
+    "Theka's Last Breath (274641)": 0.9997,
+    "Roogug's Severed Head (274152)": 0.9997,
+    "Worgenbane Talisman (273643)": 0.9997,
+    "Mindtap Talisman (18371)": 0.9825
    },
    "names": [
-    "Blue Dragonscale Helm",
+    "Spellweaver's Turban",
     "Choker of the Fire Lord",
     "Mantle of the Timbermaw",
     "Arcanoweave Cloak",
@@ -112,85 +119,80 @@
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.0243511546609396,
-    "keep-sets-and-effects": 1.0243511546609396
+    "all-slots": 1.0268513255629172,
+    "keep-sets-and-effects": 1.0268513255629172,
+    "previous": 1.0238277078074733
    },
    "confirm_seed2": {
     "current": 1.0,
-    "all-slots": 1.0235942458289322
+    "all-slots": 1.0279551738500807
    },
    "weights": {
-    "StatCritRating": 0.4414,
-    "StatFireDamage": 0.0755,
-    "StatHasteRating": 0.8667,
-    "StatHitRating": 0.9041,
-    "StatIntellect": 0.1826,
-    "StatNatureDamage": 0.5174,
-    "StatSpellDamage": 0.5929,
-    "StatSpellPiercing": 1.3465,
-    "StatSpirit": 0.0195
+    "StatCritRating": 0.4486,
+    "StatFireDamage": 0.0742,
+    "StatHasteRating": 0.8308,
+    "StatHitRating": 0.9814,
+    "StatIntellect": 0.2177,
+    "StatNatureDamage": 0.5161,
+    "StatSpellDamage": 0.5903,
+    "StatSpellPiercing": 1.4183,
+    "StatSpirit": 0.0761
    },
    "evaluated_on": [
     "elemental-dps: ml winner"
    ],
    "replaced": [
     {
-     "slot": 9,
-     "from": "Sorcerer's Boots (not in the database)",
-     "to": "Greaves of Withering Despair"
-    },
-    {
-     "slot": 11,
-     "from": "Warden's Signet of Brilliance",
-     "to": "Ring of Spell Power"
-    },
-    {
-     "slot": 13,
-     "from": "Weakness Analyzer",
-     "to": "Eye of the Beast"
+     "slot": 0,
+     "from": "Blue Dragonscale Helm",
+     "to": "Spellweaver's Turban"
     }
    ],
    "remade": {
-    "simulator": "wowsims/forever ff9babba5",
+    "simulator": "wowsims/forever 2e6e77d84",
     "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
-    "missing_before": [
-     "item:22064"
-    ],
+    "missing_before": [],
     "winner_of": "bis-dummy",
     "talents_left_out": [],
-    "minutes": 0.5
+    "minutes": 3.8
    }
   },
   "bis2": true,
   "prebis": {
    "entry": "elemental-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-prebis.gear.json",
-   "date": "2026-11-11",
-   "chosen": "keep-sets-and-effects",
-   "ilvl": 62.1,
+   "date": "2026-11-17",
+   "chosen": "all-slots",
+   "ilvl": 60.9,
    "trinkets": [
     "Weakness Analyzer",
     "Eye of the Beast"
    ],
    "trinket_screen": {
-    "Weakness Analyzer (272438)": 1.0156,
-    "Eye of the Beast (13968)": 1.0149,
-    "Smolderweb's Eye (13213)": 1.0105,
+    "Weakness Analyzer (272438)": 1.0153,
+    "Eye of the Beast (13968)": 1.015,
+    "Briarwood Reed (12930)": 1.0121,
+    "Smolderweb's Eye (13213)": 1.0113,
+    "Frozen Heart of the Mountain (249469)": 1.0108,
     "Jewel of the Guard Captain (270225)": 1.0103,
-    "Frozen Heart of the Mountain (249469)": 1.0096,
-    "Rune of the Guard Captain (19120)": 1.0074,
-    "Cleansed Vilebranch Medallion (270275)": 1.0074,
-    "Cannonball Runner (13382)": 1.0056,
-    "Second Wind (11819)": 1.0055,
-    "Serenity Field (272439)": 1.0054,
-    "Everlook Delivery Bot (274760)": 1.0029,
-    "Burst of Knowledge (11832)": 1.0017,
-    "Shard of the Splithooves (10659)": 1.0015,
-    "Enriched Seal (271903)": 1.001,
-    "Darkspear Voodoo Seal (272061)": 1.001,
-    "Alchemist's Stone (13503)": 1.0007,
-    "Enriched Seal (271905)": 1.0004,
-    "Darkspear Voodoo Seal (272059)": 1.0004,
+    "Rune of the Guard Captain (19120)": 1.0083,
+    "Cleansed Vilebranch Medallion (270275)": 1.0083,
+    "Draconic Infused Emblem (22268)": 1.0081,
+    "Serenity Field (272439)": 1.0059,
+    "Cannonball Runner (13382)": 1.0059,
+    "Second Wind (11819)": 1.005,
+    "Blackhand's Breadth (13965)": 1.0045,
+    "Everlook Delivery Bot (274760)": 1.0037,
+    "Alchemist's Stone (13503)": 1.0008,
+    "Burst of Knowledge (11832)": 1.0008,
+    "Shard of the Splithooves (10659)": 1.0007,
+    "Theka's Last Breath (274641)": 1.0007,
+    "Roogug's Severed Head (274152)": 1.0007,
+    "Enriched Seal (271905)": 1.0006,
+    "Darkspear Voodoo Seal (272059)": 1.0006,
+    "Enriched Seal (271903)": 1.0005,
+    "Darkspear Voodoo Seal (272061)": 1.0005,
+    "Worgenbane Talisman (273643)": 1.0004,
     "Dog Whistle (3456)": 1.0,
     "Minor Recombobulator (4381)": 1.0,
     "Gnomish Universal Remote (7506)": 1.0,
@@ -199,7 +201,8 @@
     "Smoking Heart of the Mountain (11811)": 1.0,
     "Hand of Justice (11815)": 1.0,
     "Heart of the Scale (13164)": 1.0,
-    "Blackhand's Breadth (13965)": 1.0,
+    "Ramstein's Lightning Bolts (13515)": 1.0,
+    "The Lion Horn of Stormwind (14557)": 1.0,
     "Arcanite Dragonling (16022)": 1.0,
     "Heart of Noxxion (17744)": 1.0,
     "Vigilance Charm (18370)": 1.0,
@@ -232,26 +235,26 @@
     "Adaptive Combat Assistant (272437)": 1.0,
     "Defender's Grip Stabilizer (272440)": 1.0,
     "Cursed Murloc Eye (273840)": 1.0,
+    "The Desert Rose (274648)": 1.0,
     "Everlook Pathcarver (274759)": 1.0,
     "Parachute-Priest Pager (274761)": 1.0,
-    "Roogug's Severed Head (274152)": 0.9999,
-    "Lookie's Spyglass (273298)": 0.9999,
-    "Worgenbane Talisman (273643)": 0.9997,
-    "Mindtap Talisman (18371)": 0.9845
+    "Mark of the Red Flight (282778)": 1.0,
+    "Lookie's Spyglass (273298)": 0.9997,
+    "Mindtap Talisman (18371)": 0.9841
    },
    "names": [
-    "Blue Dragonscale Helm",
+    "Spellweaver's Turban",
     "Nacreous Shell Necklace",
     "Mantle of the Timbermaw",
     "Arcanoweave Cloak",
     "Earthpower Vest",
     "Rockfury Bracers",
-    "Storm Gauntlets",
+    "Gloves of the Greatfather",
     "Belt of the Archmage",
     "Ironfeather Leggings",
     "Greaves of Withering Despair",
+    "Channeler's Ring",
     "Warden's Signet of Brilliance",
-    "Blessed Band of Light",
     "Weakness Analyzer",
     "Eye of the Beast",
     "Ironbark Staff",
@@ -260,62 +263,56 @@
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0
+    "keep-sets-and-effects": 0.9984644561059557,
+    "previous": 0.9957931089495908
    },
    "confirm_seed2": {
-    "keep-sets-and-effects": 1.0,
-    "all-slots": 1.0
+    "previous": 1.0,
+    "all-slots": 1.0044049205844432
    },
    "weights": {
-    "StatCritRating": 0.4216,
-    "StatFireDamage": 0.0767,
-    "StatHasteRating": 0.8409,
-    "StatHitRating": 0.9476,
-    "StatIntellect": 0.1641,
-    "StatNatureDamage": 0.5284,
-    "StatSpellDamage": 0.6051,
-    "StatSpellPiercing": 1.3238,
-    "StatSpirit": 0.0101
+    "StatCritRating": 0.4259,
+    "StatFireDamage": 0.0757,
+    "StatHasteRating": 0.8486,
+    "StatHitRating": 0.8355,
+    "StatIntellect": 0.1781,
+    "StatNatureDamage": 0.5347,
+    "StatSpellDamage": 0.6104,
+    "StatSpellPiercing": 1.4055,
+    "StatSpirit": 0.0333
    },
    "evaluated_on": [
     "elemental-dps: ml winner (bis)"
    ],
    "replaced": [
     {
-     "slot": 1,
-     "from": "Orb of the Darkmoon",
-     "to": "Nacreous Shell Necklace"
+     "slot": 0,
+     "from": "Blue Dragonscale Helm",
+     "to": "Spellweaver's Turban"
     },
     {
      "slot": 6,
-     "from": "Gloves of the Greatfather",
-     "to": "Storm Gauntlets"
+     "from": "Storm Gauntlets",
+     "to": "Gloves of the Greatfather"
     },
     {
-     "slot": 9,
-     "from": "Sorcerer's Boots (not in the database)",
-     "to": "Greaves of Withering Despair"
+     "slot": 10,
+     "from": "Warden's Signet of Brilliance",
+     "to": "Channeler's Ring"
     },
     {
      "slot": 11,
      "from": "Elemental Focus Band",
-     "to": "Blessed Band of Light"
-    },
-    {
-     "slot": 13,
-     "from": "Jewel of the Guard Captain",
-     "to": "Eye of the Beast"
+     "to": "Warden's Signet of Brilliance"
     }
    ],
    "remade": {
-    "simulator": "wowsims/forever ff9babba5",
+    "simulator": "wowsims/forever 2e6e77d84",
     "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
-    "missing_before": [
-     "item:22064"
-    ],
+    "missing_before": [],
     "winner_of": "bis-dummy",
     "talents_left_out": [],
-    "minutes": 0.6
+    "minutes": 4.3
    }
   }
  },
@@ -800,14 +797,14 @@
    "minutes": 2.4,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-bis.gear.json",
    "commit": "30f67f5d2",
-   "sig_start": "2026-11-07: the stored winner is not legal on the current talent trees; the final step starts from the elemental-dps open-search winner (shaman.json)"
+   "sig_start": "2026-11-11: the stored winner is not legal on the current talent trees; the final step starts from the elemental-dps open-search winner (shaman.json)"
   },
   "bis-dummy": {
    "class": "shaman",
    "spec": "Elemental",
    "setting": "dummy",
    "entry": "elemental-dps",
-   "date": "2026-11-07",
+   "date": "2026-11-11",
    "constraint": "Elemental 30+",
    "protected": [
     "Elemental Focus"
@@ -828,10 +825,6 @@
        5
       ],
       [
-       "Reverberation",
-       3
-      ],
-      [
        "Elemental Alacrity",
        3
       ],
@@ -844,7 +837,11 @@
        1
       ],
       [
-       "Elemental Warding",
+       "Eye of the Storm",
+       3
+      ],
+      [
+       "Elemental Reach",
        1
       ],
       [
@@ -894,14 +891,14 @@
      ]
     },
     "split": "31/11/9",
-    "dps": 589.47,
-    "se": 0.0982,
+    "dps": 591.93,
+    "se": 0.0975,
     "iterations": 100000
    },
    "runner_up": {
     "split": "31/11/9",
-    "dps": 589.47,
-    "se": 0.0982,
+    "dps": 591.93,
+    "se": 0.0975,
     "differs": [
      [
       "Elemental Warding",
@@ -909,7 +906,11 @@
      ],
      [
       "Eye of the Storm",
-      1
+      2
+     ],
+     [
+      "Eye of the Storm",
+      3
      ]
     ]
    },
@@ -927,8 +928,85 @@
         5
        ],
        [
-        "Reverberation",
+        "Elemental Alacrity",
         3
+       ],
+       [
+        "Call of Flame",
+        3
+       ],
+       [
+        "Elemental Focus",
+        1
+       ],
+       [
+        "Eye of the Storm",
+        3
+       ],
+       [
+        "Elemental Reach",
+        1
+       ],
+       [
+        "Call of Thunder",
+        1
+       ],
+       [
+        "Lightning Overload",
+        3
+       ],
+       [
+        "Elemental Fury",
+        5
+       ],
+       [
+        "Lightning Mastery",
+        1
+       ]
+      ],
+      "Enhancement": [
+       [
+        "Thundering Strikes",
+        5
+       ],
+       [
+        "Ancestral Knowledge",
+        5
+       ],
+       [
+        "Shamanistic Focus",
+        1
+       ]
+      ],
+      "Restoration": [
+       [
+        "Tidal Focus",
+        5
+       ],
+       [
+        "Mindfulness",
+        3
+       ],
+       [
+        "Totemic Focus",
+        1
+       ]
+      ]
+     },
+     "split": "31/11/9",
+     "dps": 591.93,
+     "se": 0.0975
+    },
+    {
+     "allocation": {
+      "Elemental": [
+       [
+        "Convection",
+        5
+       ],
+       [
+        "Concussion",
+        5
        ],
        [
         "Elemental Alacrity",
@@ -947,84 +1025,11 @@
         1
        ],
        [
-        "Call of Thunder",
-        1
-       ],
-       [
-        "Lightning Overload",
-        3
-       ],
-       [
-        "Elemental Fury",
-        5
-       ],
-       [
-        "Lightning Mastery",
-        1
-       ]
-      ],
-      "Enhancement": [
-       [
-        "Thundering Strikes",
-        5
-       ],
-       [
-        "Ancestral Knowledge",
-        5
-       ],
-       [
-        "Shamanistic Focus",
-        1
-       ]
-      ],
-      "Restoration": [
-       [
-        "Tidal Focus",
-        5
-       ],
-       [
-        "Mindfulness",
-        3
-       ],
-       [
-        "Totemic Focus",
-        1
-       ]
-      ]
-     },
-     "split": "31/11/9",
-     "dps": 589.47,
-     "se": 0.0982
-    },
-    {
-     "allocation": {
-      "Elemental": [
-       [
-        "Convection",
-        5
-       ],
-       [
-        "Concussion",
-        5
-       ],
-       [
-        "Reverberation",
-        3
-       ],
-       [
-        "Elemental Alacrity",
-        3
-       ],
-       [
-        "Call of Flame",
-        3
-       ],
-       [
-        "Elemental Focus",
-        1
-       ],
-       [
         "Eye of the Storm",
+        2
+       ],
+       [
+        "Elemental Reach",
         1
        ],
        [
@@ -1074,8 +1079,8 @@
       ]
      },
      "split": "31/11/9",
-     "dps": 589.47,
-     "se": 0.0982
+     "dps": 591.93,
+     "se": 0.0975
     }
    ],
    "runs": [
@@ -1083,37 +1088,37 @@
      "entry": "elemental-dps",
      "run": 1,
      "simulated": 1193,
-     "best_screen": 588.89,
+     "best_screen": 592.78,
      "best_split": "31/11/9",
      "trace": [
       {
        "round": 0,
        "simulated": 393,
-       "best": 588.64
+       "best": 592.78
       },
       {
        "round": 1,
        "simulated": 593,
-       "best": 588.89,
-       "predicted_top": 585.74
+       "best": 592.78,
+       "predicted_top": 590.28
       },
       {
        "round": 2,
        "simulated": 793,
-       "best": 588.89,
-       "predicted_top": 588.17
+       "best": 592.78,
+       "predicted_top": 592.07
       },
       {
        "round": 3,
        "simulated": 993,
-       "best": 588.89,
-       "predicted_top": 588.36
+       "best": 592.78,
+       "predicted_top": 592.43
       },
       {
        "round": 4,
        "simulated": 1193,
-       "best": 588.89,
-       "predicted_top": 588.52
+       "best": 592.78,
+       "predicted_top": 592.74
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1126,93 +1131,93 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      589.4,
-      589.4,
-      589.4,
-      589.4,
-      589.4,
-      589.4
+      591.31,
+      591.31,
+      591.31,
+      591.31,
+      591.31,
+      591.31
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      589.58,
-      589.58,
-      589.58,
-      589.58,
-      589.57
+      591.87,
+      591.87,
+      591.87,
+      591.87,
+      591.87
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      589.47,
-      589.47
+      591.93,
+      591.93
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 203,
-     "best_gap": 0.0,
-     "best_move": "1 Elemental Warding -> Elemental Reach"
+     "neighbours": 192,
+     "best_gap": 0.0003,
+     "best_move": "3 Eye of the Storm -> Reverberation"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Elemental Fury",
-     "importance": 0.4002
+     "importance": 0.3963
     },
     {
      "feature": "Mindfulness",
-     "importance": 0.1902
+     "importance": 0.1833
     },
     {
      "feature": "Shamanistic Focus",
-     "importance": 0.1542
+     "importance": 0.113
     },
     {
      "feature": "Lightning Overload",
-     "importance": 0.0733
-    },
-    {
-     "feature": "Elemental Devastation",
-     "importance": 0.0323
-    },
-    {
-     "feature": "Elemental Warding",
-     "importance": 0.0258
-    },
-    {
-     "feature": "Elemental points",
-     "importance": 0.0208
+     "importance": 0.1128
     },
     {
      "feature": "Tidal Focus",
-     "importance": 0.0198
+     "importance": 0.0358
+    },
+    {
+     "feature": "Elemental points",
+     "importance": 0.0258
+    },
+    {
+     "feature": "Elemental Devastation",
+     "importance": 0.0206
     },
     {
      "feature": "Enhancement points",
-     "importance": 0.0188
-    },
-    {
-     "feature": "Restoration points",
-     "importance": 0.0123
+     "importance": 0.0198
     },
     {
      "feature": "Improved Healing Wave",
-     "importance": 0.0099
+     "importance": 0.017
     },
     {
-     "feature": "Elemental Reach",
-     "importance": 0.0078
+     "feature": "Elemental Warding",
+     "importance": 0.0159
+    },
+    {
+     "feature": "Reverberation",
+     "importance": 0.0104
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0103
     }
    ],
-   "simulated_builds": 1410,
+   "simulated_builds": 1399,
    "signature_check": {
     "spec": "Elemental",
     "ok": true,
@@ -1222,17 +1227,17 @@
     "missing_talents": [],
     "why": ""
    },
-   "simulated_fights": 2215000,
-   "minutes": 4.6,
+   "simulated_fights": 2182000,
+   "minutes": 3.0,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-bis.gear.json",
-   "commit": "16e85426c"
+   "commit": "ff9babba5"
   },
   "bis-raid": {
    "class": "shaman",
    "spec": "Elemental",
    "setting": "raid",
    "entry": "elemental-dps",
-   "date": "2026-11-07",
+   "date": "2026-11-11",
    "constraint": "Elemental 30+",
    "protected": [],
    "entries_screened": {},
@@ -1252,7 +1257,7 @@
       ],
       [
        "Reverberation",
-       3
+       4
       ],
       [
        "Elemental Alacrity",
@@ -1264,10 +1269,6 @@
       ],
       [
        "Elemental Focus",
-       1
-      ],
-      [
-       "Elemental Warding",
        1
       ],
       [
@@ -1311,118 +1312,33 @@
        3
       ],
       [
-       "Totemic Focus",
+       "Improved Reincarnation",
        1
       ]
      ]
     },
     "split": "31/11/9",
-    "dps": 778.34,
+    "dps": 795.49,
     "se": 0.1091,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "31/11/9",
-    "dps": 778.34,
+    "split": "32/11/8",
+    "dps": 795.49,
     "se": 0.1091,
     "differs": [
      [
-      "Elemental Warding",
+      "Eye of the Storm",
       1
      ],
      [
-      "Reverberation",
-      3
-     ],
-     [
-      "Reverberation",
-      4
+      "Improved Reincarnation",
+      1
      ]
     ]
    },
    "gap_to_runner_up": 0.0,
    "finalists": [
-    {
-     "allocation": {
-      "Elemental": [
-       [
-        "Convection",
-        5
-       ],
-       [
-        "Concussion",
-        5
-       ],
-       [
-        "Reverberation",
-        3
-       ],
-       [
-        "Elemental Alacrity",
-        3
-       ],
-       [
-        "Call of Flame",
-        3
-       ],
-       [
-        "Elemental Focus",
-        1
-       ],
-       [
-        "Elemental Warding",
-        1
-       ],
-       [
-        "Call of Thunder",
-        1
-       ],
-       [
-        "Lightning Overload",
-        3
-       ],
-       [
-        "Elemental Fury",
-        5
-       ],
-       [
-        "Lightning Mastery",
-        1
-       ]
-      ],
-      "Enhancement": [
-       [
-        "Thundering Strikes",
-        5
-       ],
-       [
-        "Ancestral Knowledge",
-        5
-       ],
-       [
-        "Shamanistic Focus",
-        1
-       ]
-      ],
-      "Restoration": [
-       [
-        "Tidal Focus",
-        5
-       ],
-       [
-        "Mindfulness",
-        3
-       ],
-       [
-        "Totemic Focus",
-        1
-       ]
-      ]
-     },
-     "split": "31/11/9",
-     "dps": 778.34,
-     "se": 0.1091
-    },
     {
      "allocation": {
       "Elemental": [
@@ -1491,13 +1407,90 @@
         3
        ],
        [
-        "Totemic Focus",
+        "Improved Reincarnation",
         1
        ]
       ]
      },
      "split": "31/11/9",
-     "dps": 778.34,
+     "dps": 795.49,
+     "se": 0.1091
+    },
+    {
+     "allocation": {
+      "Elemental": [
+       [
+        "Convection",
+        5
+       ],
+       [
+        "Concussion",
+        5
+       ],
+       [
+        "Reverberation",
+        4
+       ],
+       [
+        "Elemental Alacrity",
+        3
+       ],
+       [
+        "Call of Flame",
+        3
+       ],
+       [
+        "Elemental Focus",
+        1
+       ],
+       [
+        "Eye of the Storm",
+        1
+       ],
+       [
+        "Call of Thunder",
+        1
+       ],
+       [
+        "Lightning Overload",
+        3
+       ],
+       [
+        "Elemental Fury",
+        5
+       ],
+       [
+        "Lightning Mastery",
+        1
+       ]
+      ],
+      "Enhancement": [
+       [
+        "Thundering Strikes",
+        5
+       ],
+       [
+        "Ancestral Knowledge",
+        5
+       ],
+       [
+        "Shamanistic Focus",
+        1
+       ]
+      ],
+      "Restoration": [
+       [
+        "Tidal Focus",
+        5
+       ],
+       [
+        "Mindfulness",
+        3
+       ]
+      ]
+     },
+     "split": "32/11/8",
+     "dps": 795.49,
      "se": 0.1091
     }
    ],
@@ -1505,38 +1498,38 @@
     {
      "entry": "elemental-dps",
      "run": 1,
-     "simulated": 1194,
-     "best_screen": 779.26,
-     "best_split": "31/11/9",
+     "simulated": 1191,
+     "best_screen": 795.99,
+     "best_split": "32/11/8",
      "trace": [
       {
        "round": 0,
-       "simulated": 394,
-       "best": 779.26
+       "simulated": 391,
+       "best": 795.96
       },
       {
        "round": 1,
-       "simulated": 594,
-       "best": 779.26,
-       "predicted_top": 776.83
+       "simulated": 591,
+       "best": 795.96,
+       "predicted_top": 794.22
       },
       {
        "round": 2,
-       "simulated": 794,
-       "best": 779.26,
-       "predicted_top": 777.76
+       "simulated": 791,
+       "best": 795.96,
+       "predicted_top": 795.46
       },
       {
        "round": 3,
-       "simulated": 994,
-       "best": 779.26,
-       "predicted_top": 777.83
+       "simulated": 991,
+       "best": 795.98,
+       "predicted_top": 795.9
       },
       {
        "round": 4,
-       "simulated": 1194,
-       "best": 779.26,
-       "predicted_top": 778.47
+       "simulated": 1191,
+       "best": 795.99,
+       "predicted_top": 795.9
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1549,113 +1542,113 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      777.98,
-      777.96,
-      777.96,
-      777.92,
-      777.9,
-      777.9
+      795.33,
+      795.33,
+      795.33,
+      795.33,
+      795.33,
+      795.33
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      778.46,
-      778.45,
-      778.45,
-      778.45,
-      778.44
+      795.39,
+      795.39,
+      795.39,
+      795.39,
+      795.39
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      778.34,
-      778.34
+      795.49,
+      795.49
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 210,
-     "best_gap": 0.0,
-     "best_move": "1 Elemental Warding -> Reverberation"
+     "neighbours": 204,
+     "best_gap": 0.0001,
+     "best_move": "1 Improved Reincarnation -> Totemic Focus"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Elemental Fury",
-     "importance": 0.4913
+     "importance": 0.4099
     },
     {
      "feature": "Lightning Overload",
-     "importance": 0.2163
+     "importance": 0.2412
+    },
+    {
+     "feature": "Elemental Devastation",
+     "importance": 0.0657
     },
     {
      "feature": "Tidal Focus",
-     "importance": 0.0577
-    },
-    {
-     "feature": "Mindfulness",
-     "importance": 0.0457
-    },
-    {
-     "feature": "Reverberation",
-     "importance": 0.0385
-    },
-    {
-     "feature": "Elemental points",
-     "importance": 0.0213
-    },
-    {
-     "feature": "Elemental Alacrity",
-     "importance": 0.0174
-    },
-    {
-     "feature": "Lightning Mastery",
-     "importance": 0.0161
+     "importance": 0.0546
     },
     {
      "feature": "Elemental Warding",
-     "importance": 0.0145
+     "importance": 0.0509
     },
     {
-     "feature": "Earthbound",
-     "importance": 0.0141
-    },
-    {
-     "feature": "Thundering Strikes",
-     "importance": 0.0136
+     "feature": "Lightning Mastery",
+     "importance": 0.0333
     },
     {
      "feature": "Improved Healing Wave",
-     "importance": 0.0087
+     "importance": 0.0229
+    },
+    {
+     "feature": "Elemental points",
+     "importance": 0.0203
+    },
+    {
+     "feature": "Mindfulness",
+     "importance": 0.0196
+    },
+    {
+     "feature": "Elemental Alacrity",
+     "importance": 0.0133
+    },
+    {
+     "feature": "Reverberation",
+     "importance": 0.0132
+    },
+    {
+     "feature": "Elemental Reach",
+     "importance": 0.0084
     }
    ],
-   "simulated_builds": 1418,
+   "simulated_builds": 1409,
    "signature_check": {
     "spec": "Elemental",
     "ok": true,
-    "core_share": 0.945,
+    "core_share": 0.9455,
     "min_share": 0.6,
     "uncast": [],
     "missing_talents": [],
     "why": ""
    },
-   "simulated_fights": 2237000,
-   "minutes": 5.1,
+   "simulated_fights": 2216000,
+   "minutes": 3.2,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-bis.gear.json",
-   "commit": "16e85426c"
+   "commit": "ff9babba5"
   },
   "prebis-dummy": {
    "class": "shaman",
    "spec": "Elemental",
    "setting": "dummy",
    "entry": "elemental-dps",
-   "date": "2026-11-07",
+   "date": "2026-11-11",
    "constraint": "Elemental 30+",
    "protected": [
     "Elemental Focus"
@@ -1693,7 +1686,7 @@
       ],
       [
        "Trial by Fire",
-       1
+       2
       ],
       [
        "Eye of the Storm",
@@ -1738,27 +1731,19 @@
       [
        "Mindfulness",
        3
-      ],
-      [
-       "Totemic Focus",
-       1
       ]
      ]
     },
-    "split": "31/11/9",
-    "dps": 574.0,
-    "se": 0.0963,
+    "split": "32/11/8",
+    "dps": 576.77,
+    "se": 0.0914,
     "iterations": 100000
    },
    "runner_up": {
     "split": "31/11/9",
-    "dps": 574.0,
-    "se": 0.0963,
+    "dps": 576.77,
+    "se": 0.0914,
     "differs": [
-     [
-      "Elemental Warding",
-      1
-     ],
      [
       "Eye of the Storm",
       1
@@ -1766,6 +1751,10 @@
      [
       "Eye of the Storm",
       2
+     ],
+     [
+      "Improved Reincarnation",
+      1
      ]
     ]
    },
@@ -1800,7 +1789,7 @@
        ],
        [
         "Trial by Fire",
-        1
+        2
        ],
        [
         "Eye of the Storm",
@@ -1845,16 +1834,12 @@
        [
         "Mindfulness",
         3
-       ],
-       [
-        "Totemic Focus",
-        1
        ]
       ]
      },
-     "split": "31/11/9",
-     "dps": 574.0,
-     "se": 0.0963
+     "split": "32/11/8",
+     "dps": 576.77,
+     "se": 0.0914
     },
     {
      "allocation": {
@@ -1884,12 +1869,8 @@
         1
        ],
        [
-        "Elemental Warding",
-        1
-       ],
-       [
         "Trial by Fire",
-        1
+        2
        ],
        [
         "Eye of the Storm",
@@ -1936,52 +1917,52 @@
         3
        ],
        [
-        "Totemic Focus",
+        "Improved Reincarnation",
         1
        ]
       ]
      },
      "split": "31/11/9",
-     "dps": 574.0,
-     "se": 0.0963
+     "dps": 576.77,
+     "se": 0.0914
     }
    ],
    "runs": [
     {
      "entry": "elemental-dps",
      "run": 1,
-     "simulated": 1199,
-     "best_screen": 574.41,
-     "best_split": "31/11/9",
+     "simulated": 1191,
+     "best_screen": 577.52,
+     "best_split": "32/11/8",
      "trace": [
       {
        "round": 0,
-       "simulated": 399,
-       "best": 574.39
+       "simulated": 391,
+       "best": 577.52
       },
       {
        "round": 1,
-       "simulated": 599,
-       "best": 574.41,
-       "predicted_top": 571.16
+       "simulated": 591,
+       "best": 577.52,
+       "predicted_top": 575.72
       },
       {
        "round": 2,
-       "simulated": 799,
-       "best": 574.41,
-       "predicted_top": 573.96
+       "simulated": 791,
+       "best": 577.52,
+       "predicted_top": 577.37
       },
       {
        "round": 3,
-       "simulated": 999,
-       "best": 574.41,
-       "predicted_top": 574.13
+       "simulated": 991,
+       "best": 577.52,
+       "predicted_top": 577.46
       },
       {
        "round": 4,
-       "simulated": 1199,
-       "best": 574.41,
-       "predicted_top": 574.25
+       "simulated": 1191,
+       "best": 577.52,
+       "predicted_top": 577.48
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1994,117 +1975,113 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      574.1,
-      574.1,
-      574.1,
-      574.1,
-      574.1,
-      574.1
+      576.73,
+      576.73,
+      576.73,
+      576.73,
+      576.73,
+      576.73
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      574.14,
-      574.14,
-      574.14,
-      574.14,
-      574.14
+      576.73,
+      576.73,
+      576.73,
+      576.73,
+      576.73
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      574.0,
-      574.0
+      576.77,
+      576.77
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 201,
-     "best_gap": 0.0013,
-     "best_move": "2 Eye of the Storm -> Reverberation",
-     "raced": [
-      "2 Eye of the Storm -> Reverberation"
-     ],
-     "confirmed_gap": 0.0007
+     "neighbours": 266,
+     "best_gap": 0.0007,
+     "best_move": "2 Eye of the Storm -> Reverberation"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Elemental Fury",
-     "importance": 0.4134
-    },
-    {
-     "feature": "Mindfulness",
-     "importance": 0.1384
-    },
-    {
-     "feature": "Shamanistic Focus",
-     "importance": 0.117
+     "importance": 0.4083
     },
     {
      "feature": "Lightning Overload",
-     "importance": 0.0915
+     "importance": 0.168
     },
     {
-     "feature": "Elemental Devastation",
-     "importance": 0.0781
+     "feature": "Shamanistic Focus",
+     "importance": 0.1227
+    },
+    {
+     "feature": "Mindfulness",
+     "importance": 0.1199
     },
     {
      "feature": "Reverberation",
-     "importance": 0.0415
-    },
-    {
-     "feature": "Elemental Warding",
-     "importance": 0.0242
+     "importance": 0.0308
     },
     {
      "feature": "Elemental points",
-     "importance": 0.0219
+     "importance": 0.0253
+    },
+    {
+     "feature": "Elemental Devastation",
+     "importance": 0.0224
     },
     {
      "feature": "Enhancement points",
-     "importance": 0.0109
+     "importance": 0.0162
     },
     {
-     "feature": "Earthbound",
-     "importance": 0.01
+     "feature": "Elemental Warding",
+     "importance": 0.012
     },
     {
      "feature": "Restoration points",
-     "importance": 0.0091
+     "importance": 0.0111
     },
     {
-     "feature": "Tidal Focus",
-     "importance": 0.0079
+     "feature": "Thundering Strikes",
+     "importance": 0.0109
+    },
+    {
+     "feature": "Lightning Mastery",
+     "importance": 0.0088
     }
    ],
-   "simulated_builds": 1416,
+   "simulated_builds": 1471,
    "signature_check": {
     "spec": "Elemental",
     "ok": true,
-    "core_share": 0.9326,
+    "core_share": 0.9312,
     "min_share": 0.6,
     "uncast": [],
     "missing_talents": [],
     "why": ""
    },
-   "simulated_fights": 2275000,
-   "minutes": 5.0,
+   "simulated_fights": 2402000,
+   "minutes": 3.1,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-prebis.gear.json",
-   "commit": "16e85426c"
+   "commit": "ff9babba5"
   },
   "prebis-raid": {
    "class": "shaman",
    "spec": "Elemental",
    "setting": "raid",
    "entry": "elemental-dps",
-   "date": "2026-11-07",
+   "date": "2026-11-11",
    "constraint": "Elemental 30+",
    "protected": [],
    "entries_screened": {},
@@ -2124,7 +2101,7 @@
       ],
       [
        "Reverberation",
-       3
+       4
       ],
       [
        "Elemental Alacrity",
@@ -2136,10 +2113,6 @@
       ],
       [
        "Elemental Focus",
-       1
-      ],
-      [
-       "Elemental Warding",
        1
       ],
       [
@@ -2169,6 +2142,10 @@
        5
       ],
       [
+       "Guardian Totems",
+       1
+      ],
+      [
        "Shamanistic Focus",
        1
       ]
@@ -2181,34 +2158,34 @@
       [
        "Mindfulness",
        3
-      ],
-      [
-       "Totemic Focus",
-       1
       ]
      ]
     },
-    "split": "31/11/9",
-    "dps": 755.36,
-    "se": 0.1086,
+    "split": "31/12/8",
+    "dps": 773.24,
+    "se": 0.1023,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "31/11/9",
-    "dps": 755.36,
-    "se": 0.1086,
+    "split": "31/12/8",
+    "dps": 771.79,
+    "se": 0.1029,
     "differs": [
      [
-      "Elemental Warding",
-      1
+      "Convection",
+      4
      ],
      [
-      "Eye of the Storm",
+      "Convection",
+      5
+     ],
+     [
+      "Elemental Reach",
       1
      ]
     ]
    },
-   "gap_to_runner_up": 0.0,
+   "gap_to_runner_up": 0.0019,
    "finalists": [
     {
      "allocation": {
@@ -2223,7 +2200,7 @@
        ],
        [
         "Reverberation",
-        3
+        4
        ],
        [
         "Elemental Alacrity",
@@ -2235,10 +2212,6 @@
        ],
        [
         "Elemental Focus",
-        1
-       ],
-       [
-        "Elemental Warding",
         1
        ],
        [
@@ -2268,6 +2241,10 @@
         5
        ],
        [
+        "Guardian Totems",
+        1
+       ],
+       [
         "Shamanistic Focus",
         1
        ]
@@ -2280,23 +2257,19 @@
        [
         "Mindfulness",
         3
-       ],
-       [
-        "Totemic Focus",
-        1
        ]
       ]
      },
-     "split": "31/11/9",
-     "dps": 755.36,
-     "se": 0.1086
+     "split": "31/12/8",
+     "dps": 773.24,
+     "se": 0.1023
     },
     {
      "allocation": {
       "Elemental": [
        [
         "Convection",
-        5
+        4
        ],
        [
         "Concussion",
@@ -2304,7 +2277,7 @@
        ],
        [
         "Reverberation",
-        3
+        4
        ],
        [
         "Elemental Alacrity",
@@ -2319,7 +2292,7 @@
         1
        ],
        [
-        "Eye of the Storm",
+        "Elemental Reach",
         1
        ],
        [
@@ -2349,6 +2322,10 @@
         5
        ],
        [
+        "Guardian Totems",
+        1
+       ],
+       [
         "Shamanistic Focus",
         1
        ]
@@ -2361,54 +2338,50 @@
        [
         "Mindfulness",
         3
-       ],
-       [
-        "Totemic Focus",
-        1
        ]
       ]
      },
-     "split": "31/11/9",
-     "dps": 755.36,
-     "se": 0.1086
+     "split": "31/12/8",
+     "dps": 771.79,
+     "se": 0.1029
     }
    ],
    "runs": [
     {
      "entry": "elemental-dps",
      "run": 1,
-     "simulated": 1191,
-     "best_screen": 755.82,
+     "simulated": 1209,
+     "best_screen": 773.4,
      "best_split": "31/11/9",
      "trace": [
       {
        "round": 0,
-       "simulated": 391,
-       "best": 755.82
+       "simulated": 409,
+       "best": 773.32
       },
       {
        "round": 1,
-       "simulated": 591,
-       "best": 755.82,
-       "predicted_top": 753.18
+       "simulated": 609,
+       "best": 773.38,
+       "predicted_top": 772.07
       },
       {
        "round": 2,
-       "simulated": 791,
-       "best": 755.82,
-       "predicted_top": 755.09
+       "simulated": 809,
+       "best": 773.38,
+       "predicted_top": 773.09
       },
       {
        "round": 3,
-       "simulated": 991,
-       "best": 755.82,
-       "predicted_top": 755.36
+       "simulated": 1009,
+       "best": 773.38,
+       "predicted_top": 773.34
       },
       {
        "round": 4,
-       "simulated": 1191,
-       "best": 755.82,
-       "predicted_top": 755.35
+       "simulated": 1209,
+       "best": 773.4,
+       "predicted_top": 773.35
       }
      ],
      "best_stage1_gap": 0.0,
@@ -2421,109 +2394,128 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      755.34,
-      755.34,
-      755.34,
-      755.34,
-      755.34,
-      755.34
+      771.95,
+      771.95,
+      771.95,
+      771.95,
+      771.95,
+      771.95
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      755.53,
-      755.53,
-      755.53,
-      755.53,
-      755.53
+      771.72,
+      771.72,
+      771.72,
+      771.72,
+      771.71
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      755.36,
-      755.36
+      771.79,
+      771.79
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      773.24,
+      771.79
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 210,
+     "neighbours": 241,
+     "best_gap": 0.0016,
+     "best_move": "1 Guardian Totems -> Convection",
+     "raced": [
+      "1 Guardian Totems -> Convection",
+      "1 Elemental Reach -> Convection",
+      "1 Reverberation -> Convection"
+     ],
+     "confirmed_gap": 0.002
+    },
+    {
+     "neighbours": 230,
      "best_gap": 0.0,
-     "best_move": "1 Elemental Warding -> Reverberation"
+     "best_move": "1 Guardian Totems -> Totemic Focus"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Elemental Fury",
-     "importance": 0.424
+     "importance": 0.4961
     },
     {
      "feature": "Lightning Overload",
-     "importance": 0.1867
+     "importance": 0.2286
     },
     {
      "feature": "Elemental Devastation",
-     "importance": 0.0982
-    },
-    {
-     "feature": "Tidal Focus",
-     "importance": 0.0484
-    },
-    {
-     "feature": "Lightning Mastery",
-     "importance": 0.0425
-    },
-    {
-     "feature": "Improved Healing Wave",
-     "importance": 0.0337
-    },
-    {
-     "feature": "Reverberation",
-     "importance": 0.0328
+     "importance": 0.0631
     },
     {
      "feature": "Elemental Warding",
-     "importance": 0.0235
+     "importance": 0.0487
     },
     {
      "feature": "Thundering Strikes",
-     "importance": 0.0221
+     "importance": 0.0318
     },
     {
-     "feature": "Elemental Alacrity",
-     "importance": 0.017
+     "feature": "Lightning Mastery",
+     "importance": 0.0265
+    },
+    {
+     "feature": "Tidal Focus",
+     "importance": 0.0202
     },
     {
      "feature": "Elemental points",
-     "importance": 0.0117
+     "importance": 0.0165
     },
     {
-     "feature": "Mindfulness",
-     "importance": 0.0091
+     "feature": "Improved Healing Wave",
+     "importance": 0.0128
+    },
+    {
+     "feature": "Elemental Alacrity",
+     "importance": 0.0087
+    },
+    {
+     "feature": "Shamanistic Focus",
+     "importance": 0.0071
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0066
     }
    ],
-   "simulated_builds": 1415,
+   "simulated_builds": 1700,
    "signature_check": {
     "spec": "Elemental",
     "ok": true,
-    "core_share": 0.9442,
+    "core_share": 0.9439,
     "min_share": 0.6,
     "uncast": [],
     "missing_talents": [],
     "why": ""
    },
-   "simulated_fights": 2234000,
-   "minutes": 5.3,
+   "simulated_fights": 3258000,
+   "minutes": 4.5,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-prebis.gear.json",
-   "commit": "16e85426c"
+   "commit": "ff9babba5"
   }
  },
- "commit": "16e85426c",
+ "commit": "ff9babba5",
  "spells_done": {
   "date": "2026-10-14",
   "lines_kept": 0
@@ -2533,55 +2525,55 @@
   "dps": {
    "winner": {
     "entry": "elemental-dps",
-    "dps": 589.29,
-    "se": 0.098
+    "dps": 592.03,
+    "se": 0.097
    },
    "elemental-raid-dps": {
     "entry": "elemental-dps",
-    "dps": 537.22,
-    "se": 0.104
+    "dps": 541.18,
+    "se": 0.102
    },
    "elemental-raid": {
     "entry": "elemental-dps",
-    "dps": 548.38,
-    "se": 0.099
+    "dps": 550.3,
+    "se": 0.098
    }
   },
   "best_hand": "elemental-raid-dps",
-  "gain_vs_hand": 0.0969,
-  "commit": "16e85426c"
+  "gain_vs_hand": 0.094,
+  "commit": "ff9babba5"
  },
  "compare_raid": {
   "setting": "raid",
   "dps": {
    "winner": {
     "entry": "elemental-dps",
-    "dps": 778.47,
+    "dps": 795.58,
     "se": 0.109
    },
    "elemental-raid-dps": {
     "entry": "elemental-dps",
-    "dps": 749.53,
+    "dps": 764.7,
     "se": 0.126
+   },
+   "elemental-ml-raid": {
+    "entry": "elemental-dps",
+    "dps": 795.58,
+    "se": 0.109
    },
    "opt-elemental-dps-raid-dps": {
     "entry": "elemental-dps",
-    "dps": 774.47,
+    "dps": 791.83,
     "se": 0.11
-   },
-   "elemental-raid": {
-    "entry": "elemental-dps",
-    "dps": 752.0,
-    "se": 0.108
    }
   },
   "best_hand": "elemental-raid-dps",
-  "gain_vs_hand": 0.0386
+  "gain_vs_hand": 0.0404
  },
  "signature_check": {
   "spec": "Elemental",
   "ok": true,
-  "core_share": 0.9449,
+  "core_share": 0.9456,
   "min_share": 0.6,
   "uncast": [],
   "missing_talents": [],
@@ -2589,22 +2581,22 @@
   "entry": "elemental-dps",
   "setting": "raid",
   "iterations": 6000,
-  "dps": 778.5,
-  "date": "2026-11-07",
-  "commit": "16e85426c",
+  "dps": 796.0,
+  "date": "2026-11-11",
+  "commit": "ff9babba5",
   "shares": {
-   "Lightning Bolt": 0.6767,
-   "Flame Shock": 0.1358,
-   "Chain Lightning": 0.1324,
-   "Searing Totem": 0.0493,
-   "Demonic Rune": 0.0058
+   "Lightning Bolt": 0.6885,
+   "Flame Shock": 0.1317,
+   "Chain Lightning": 0.1253,
+   "Searing Totem": 0.0488,
+   "Demonic Rune": 0.0057
   },
   "casts": {
-   "Chain Lightning": 12.83,
-   "Lightning Mastery": 1.05,
-   "Lightning Bolt": 70.96,
+   "Lightning Bolt": 71.64,
    "Searing Totem": 4.0,
-   "Flame Shock": 9.19
+   "Flame Shock": 9.1,
+   "Lightning Mastery": 1.05,
+   "Chain Lightning": 12.2
   },
   "allocation": {
    "Elemental": [
@@ -2618,7 +2610,7 @@
     ],
     [
      "Reverberation",
-     3
+     4
     ],
     [
      "Elemental Alacrity",
@@ -2630,10 +2622,6 @@
     ],
     [
      "Elemental Focus",
-     1
-    ],
-    [
-     "Elemental Warding",
      1
     ],
     [
@@ -2677,108 +2665,18 @@
      3
     ],
     [
-     "Totemic Focus",
+     "Improved Reincarnation",
      1
     ]
    ]
   }
  },
- "aligned_raid": {
-  "target": "elemental-raid-dps",
-  "moves": [
-   {
-    "from": "Elemental Warding",
-    "to": "Eye of the Storm",
-    "ratio": 1.0
-   },
-   {
-    "from": "Totemic Focus",
-    "to": "Eye of the Storm",
-    "ratio": 1.00002
-   }
-  ],
-  "allocation": {
-   "Elemental": [
-    [
-     "Convection",
-     5
-    ],
-    [
-     "Concussion",
-     5
-    ],
-    [
-     "Reverberation",
-     3
-    ],
-    [
-     "Elemental Alacrity",
-     3
-    ],
-    [
-     "Call of Flame",
-     3
-    ],
-    [
-     "Elemental Focus",
-     1
-    ],
-    [
-     "Eye of the Storm",
-     2
-    ],
-    [
-     "Call of Thunder",
-     1
-    ],
-    [
-     "Lightning Overload",
-     3
-    ],
-    [
-     "Elemental Fury",
-     5
-    ],
-    [
-     "Lightning Mastery",
-     1
-    ]
-   ],
-   "Enhancement": [
-    [
-     "Thundering Strikes",
-     5
-    ],
-    [
-     "Ancestral Knowledge",
-     5
-    ],
-    [
-     "Shamanistic Focus",
-     1
-    ]
-   ],
-   "Restoration": [
-    [
-     "Tidal Focus",
-     5
-    ],
-    [
-     "Mindfulness",
-     3
-    ]
-   ]
-  },
-  "split": "32/11/8",
-  "ratio": 1.00002
- },
  "builds": {
-  "written": [
-   "elemental-ml-raid"
-  ],
+  "written": [],
   "superseded": [],
-  "date": "2026-11-07",
-  "setting": "raid"
+  "date": "2026-11-11",
+  "setting": "raid",
+  "why": "confirms elemental-ml-raid (+0.00% in a full raid)"
  },
  "tidied": {
   "bis-dummy": null,

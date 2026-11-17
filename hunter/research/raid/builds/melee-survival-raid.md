@@ -74,15 +74,15 @@ Forever's melee hunter for raids, built around traps: Survival's melee package (
 
 ## Rank among our builds and the community simulator's
 
-**1 of 5** for `melee-dps` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 5** for `melee-dps` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`melee-survival-raid`](melee-survival-raid.md)** | ours: hand draft | 5/11/35 | 375 | +0.0% | 735 | +0.0% | 0 s |
-| 2 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 351 | -6.6% | 706 | -3.9% | 0 s |
-| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 329 | -12.2% | 691 | -6.0% | 0 s |
-| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 271 | -27.8% | 698 | -5.0% | 97 s |
-| 5 | *SV Melee* | community simulator | - | 220 | -41.4% | 630 | -14.3% | 120 s |
+| 1 | **[`melee-survival-raid`](melee-survival-raid.md)** | ours: hand draft | 5/11/35 | 364 | +0.0% | 738 | +0.0% | 0 s |
+| 2 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 346 | -4.8% | 711 | -3.7% | 0 s |
+| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 318 | -12.6% | 696 | -5.6% | 0 s |
+| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 262 | -27.9% | 703 | -4.7% | 97 s |
+| 5 | *SV Melee* | community simulator | - | 230 | -36.7% | 680 | -7.9% | 120 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -116,7 +116,7 @@ Before the pull: at -3s: cast Hunter's Mark.
 | 5 | use every other cooldown when ready | as ready |
 | 6 | cast Strider Kick | 6.6 |
 | 7 | cast Major Mana Potion | as ready |
-| 8 | cast Wing Clip | 25.2 |
+| 8 | cast Wing Clip | 25.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
 
@@ -125,12 +125,12 @@ Damage by ability:
 | Ability | [`melee-survival-raid`](melee-survival-raid.md) |
 |---|---|
 | Auto Attack | 44% |
-| Immolation Trap | 22% |
+| Immolation Trap | 23% |
 | Raptor Strike | 11% |
 | Strider Kick | 8% |
 | Mongoose Bite | 7% |
 | Wing Clip | 5% |
-| Lacerating Strikes | 3% |
+| Lacerating Strikes | 2% |
 
 ## Notes
 

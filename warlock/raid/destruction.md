@@ -8,13 +8,15 @@
 
 **Other setups of this spec.** This build is the Shadow Bolt setup. The spec's best build for each other setup, in a full raid:
 
-- Incinerate: [Destruction — Incinerate](../research/raid/builds/destruction-incinerate-open-raid.md) (10/11/30, 787 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/253-0050203001-055030500310035-12)
+- Incinerate: [Destruction — Incinerate](../research/raid/builds/destruction-incinerate-open-raid.md) (10/11/30, 802 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/253-0050203001-055030500310035-12)
 
 ## How to play
 
 **Setup, before the pull:** **Summon Imp**, then **Demonic Sacrifice** it: you fight with its buff and no demon, which the rotation below assumes. Keep **Demon Armor** on you.
 
 **Before the pull:** **Life Tap**.
+
+**Talents with no line below:** **Demonic Sacrifice**: before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it).
 
 **Then press the first one that is ready**, top to bottom:
 
@@ -71,22 +73,22 @@ Before the pull: put on **Demon Armor**, summon the Imp, use **Demonic Sacrifice
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 808 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 826 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever ff9babb (client 70888); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 2e6e77d (client 70938); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 779 | this build |
-| Phase 1 BiS | 809 | [10/11/30](https://talentsforever.com/warlock/60/253-0050203001-055030500310035-12) (as good as this build in this gear) |
+| Pre-BiS | 793 | [10/11/30](https://talentsforever.com/warlock/60/253-0050203001-055030500310035-12) |
+| Phase 1 BiS | 825 | this build |
 
 *Each row is in that tier's own gear set; the DPS at the top of the page is this build in the standard set, so the two do not match.*
 
-**The gear** (average item level: Pre-BiS 59.4; Phase 1 BiS 61.2; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 62.3; Phase 1 BiS 64.2; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
-| Head | [Crimson Felt Hat](https://www.wowhead.com/forever/item=18727) · *Magistrate Barthilas, Stratholme*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Crimson Felt Hat](https://www.wowhead.com/forever/item=18727) · *Magistrate Barthilas, Stratholme*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
+| Head | [Spellweaver's Turban](https://www.wowhead.com/forever/item=22267) · *General Drakkisath, Blackrock Spire*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Spellweaver's Turban](https://www.wowhead.com/forever/item=22267) · *General Drakkisath, Blackrock Spire*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
 | Neck | [Nacreous Shell Necklace](https://www.wowhead.com/forever/item=22403) · *Cannon Master Willey, Stratholme* | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
 | Shoulders | [Mantle of the Timbermaw](https://www.wowhead.com/forever/item=19050) · *Tailoring* | [Mantle of the Timbermaw](https://www.wowhead.com/forever/item=19050) · *Tailoring* |
 | Back | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411) · *sold by Pix Xizzix* | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411) · *sold by Pix Xizzix* |
@@ -95,21 +97,21 @@ Before the pull: put on **Demon Armor**, summon the Imp, use **Demonic Sacrifice
 | Hands | [Gloves of Spell Mastery](https://www.wowhead.com/forever/item=14146) · *Tailoring* | [Gloves of Spell Mastery](https://www.wowhead.com/forever/item=14146) · *Tailoring* |
 | Waist | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* |
 | Legs | [Skyshroud Leggings](https://www.wowhead.com/forever/item=13170) · *Highlord Omokk, Blackrock Spire*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Flarecore Leggings](https://www.wowhead.com/forever/item=19165) · *Tailoring*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
-| Feet | [item 254013](https://www.wowhead.com/forever/item=254013)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [item 254013](https://www.wowhead.com/forever/item=254013)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
+| Feet | [Omnicast Boots](https://www.wowhead.com/forever/item=11822) · *Golem Lord Argelmach, Blackrock Depths*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Omnicast Boots](https://www.wowhead.com/forever/item=11822) · *Golem Lord Argelmach, Blackrock Depths*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
 | Finger | [Warden's Signet of Brilliance](https://www.wowhead.com/forever/item=275982) | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
-| Finger | [Elemental Focus Band](https://www.wowhead.com/forever/item=20682) · *Prince Skaldrenox, Silithus* | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
-| Trinket | [Eye of the Beast](https://www.wowhead.com/forever/item=13968) · *quest: For The Horde!* | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) · *sold by Pix Xizzix* |
-| Trinket | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) · *sold by Pix Xizzix* | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
+| Finger | [Channeler's Ring](https://www.wowhead.com/forever/item=272406) · *sold by Pix Xizzix* | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
+| Trinket | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) · *sold by Pix Xizzix* | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) · *sold by Pix Xizzix* |
+| Trinket | [Eye of the Beast](https://www.wowhead.com/forever/item=13968) · *quest: For The Horde!* | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
 | Main hand | [Sageblade](https://www.wowhead.com/forever/item=22383) · *Blacksmithing*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Sageblade](https://www.wowhead.com/forever/item=22383) · *Blacksmithing*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
-| Off hand | [Orb of the Forgotten Seer](https://www.wowhead.com/forever/item=7685) · *Bloodmage Thalnos, Scarlet Monastery* | [Orb of the Forgotten Seer](https://www.wowhead.com/forever/item=7685) · *Bloodmage Thalnos, Scarlet Monastery* |
-| Ranged/relic | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* |
+| Off hand | [Obsidian Bauble](https://www.wowhead.com/forever/item=18316) | [Obsidian Bauble](https://www.wowhead.com/forever/item=18316) |
+| Ranged/relic | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzElV9oI1UUxnPu3GRuTrWZvat0OqsyBrLEwIQ7E8amRcjsPi0+FZ+EBd1kk5oETUImDysirGxFEc3KxpeNBf+u2wpq8aEWQaiFQuqD5MmXUixKUUSwiPRRZCaTKmkffEjZ83Bzcj5uzu+754aLDzFQQAUdknAFytCA6wCvA7wPsAzA7/NV4qlZ0D6ZYJIS1VyU2d1boO5PIGU3vgCk7Ld3vPXdvoIRtl1Tf55EmW3eAXVnEiW2WUPK9m8CRtifC94umX2zEVNvykhZ+3cFKfvuA0CJvf0CUrbWV1Bmf3wOau8sSuzVJ5CylaVY3FJ6leT3bRCHhfm3PoQ3gCxWbgE5LHQh/MuF9+7ApyDfXYLVS+3KKnxU3YPFykXm04MDX5NHLNsyhLCFJTJCmIawbZExbSEyphAZu0ekPpn4iSxH8SwyLYKUHbQhLmMYJcN28QGUtTBKbOVyPIoyhg0zbbv8Ye0cnonH8P4vAZGyjdfmOVHC/m4vtzSBSX4ez6RiLMLJkyHN/z3Tdv0S5aQQlGbshEaRqCrvAH8m33j+2XqjpVvCetwwhSGsOf1qOV97rlTU6009XyyWinrhRb1VLunNeivfqtRrulvKN6+W9aRbKuluwWjmK0VjKBoDMV1167XHNPN/QmVFwvOsHBY41chcaGB3AH60LW37dr/qwElyJpBvvAn8pRFjYtawZsZqbBqV1CST/GONIEViJ4KhcdSOhsrjmo5TqQcZ5XLVk7+9rLEuCbLBB18aHYNHmx0r7RwKnsbp1BSjnFU9uB+3QIt2SZAem5BwtUA6GW/mlPF2/8XbPY5nBXi7W8CrI3TeHTbHSjeY5l8d4C+P9jINMd6TODe0OvxjWHbCa68sdk6wOvb2vlVlra8cXeKdLVClX0kPDoj1ihTyY9bpEoYRpDpxIP43iXrF0PUFZ7p724vt3KMLfvyQs/aISvVcap2E7km0nGF2qnH+s1PrM+uvT33sXAgKzhXvzbwN/pfQXi4lsfWpi/95WgVkwYFLMA9PQxkacA2ukX8GAI+cjik=); Phase 1 BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzElUFoI1UYx/O9ecm8fNVm9q3S6azKGMgSAxPeTBibFiGze1o8FU/Cgm6yyZoESUImwooIK0YU0S407mFjQVGX7QrK4mEtglALhRRBcvJSgkUpihd7kB6LzGQSJe3BQ8p+h5cv3z8v3+8/3xsePsFAARV0SMIVKEMDbgC8B/ApwDoAf8RXiadmQVufYZIS1V5Dmd1dBXV/Bik7WgWk7M+PvPXjvoIRtlNTf5tFmW3dAXV3FiW2VUPK9m8Cymxwy98ms+83Y+pNGSn78RaM1wd9BSlrd7xf/vU1qL2zKLF3nkPK7q3F4pbSqyR/WgFxWFj+8DN4H0i7sgrksNCF8O8XPrkDX4J8dw3uX1qp3IfPq3vQrlxkPj848B15yrIzhhC2sERGCNMQti0ywhYiYwqRsXtE6pOZX8l6FM8i0yJI2cEKxGUMo2TYLj6GshZGid27HI+ijGHDTNsuf1I7h2fiMXz0G0CkbPPdZU6UsL/byy1NYJKfxzOpGItw8nxI8//PtF2/RDkpBKUFO6FRJKrKO8BfyjdefbneaOmWsJ41TGEIa0m/Ws7XXikV9XpTzxeLpaJeeF1vlUt6s97Ktyr1mu6W8s2rZT3plkq6WzCa+UrRGInGUExX3XrtGc38n1BZkfA8K4cFTjWyFBraHYKPt6Vt3+63HThJzgTy2x8Af2PCmFg0rIWpGptHJTXLJP+xRpAisRPB0Dhq46HyuKbjXOpxRrlc9eQfLmusS4Js+MHXJsfg0WanSruEgqdxPjXHKGdVD+6XbdCiXRKkxyYkXC2QTsZbOGW8wb94g+N4VoA32AZenaDzzrA5VbrhNP/uAH9zspdpiOk+iXMjq6MXw7ITXnul3TnB6tTb+1aVB31lfIh3t0GV/iA9OCDWW1LIj0WnSxhGkOrEgfgRiXrF0I1rznz3thc7uaev+fFzztojKtVzqQ0SeijRckbZqcb5r06tz6K/vvCFcyEoOFe8W/M2+F9Ce7mUxDbmLv7nchWQBQcuwTK8CGVowHW4Tv4ZAKmTjo8=).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzElUFoI1UYx/O9ecm8fNXu7Ful01mVMZAlBia8mTA27SWze1o8FU/Cim6ySU3CmoRMDisirGxBkTUVI0JjQVGLVWgtHmrxpIVCepGcvJRiUYoigqVIL4LITCZV0h48pOx3ePny/Xn5fv/3vfDwMQYKqKBDAm5CCepwF+BNgI8AVgD4Q75KPDUD2vIYk5So1kCZ/bUK6sEYUnbvS0DKfnvPWz/oKRhhO1X153GU2dYyqLvjKLGtKlJ2sAAYYUdz3q4IW3teXZCRstbvClL2fs9bN3oKSuydl1Fmf6yB2r2ElN1fAJTY0e2YpXTLie9bII7zs29/DG8BmS+/C+Q434HwL1c/XIYvQP5sCdavt8rr8EllH+bL15gPDw58Q56w7LQhhC0skRbCNIRti7SwhUibQqTtLpF6ZOwnshLFS8i0CFJ22IKYjGGUDNvFR1DWwiixz2/Eoihj2DBTtssf1y7jxdgFfPgrQKTs2zdmOVHC/m4vtzSBCX4FLyYvsAgnz4Q0//dM2/VLlJN8UJqy4xpFoqq8DfyFXP32i7V6U7eE9bRhCkNYM/qtUq76UrGg1xp6rlAoFvT8K3qzVNQbtWauWa5VdbeYa9wq6Qm3WNTdvNHIlQvGQDT6Yqri1qpPaeb/hMqIuOdZOc5zqpGZUN9uH/xkW8r27X7dhrPkdCDfuw/81SFjYtqwpkZqbBKV5DiT/GONIEVix4OhcdROhspjmo4TyUcZ5XLFk7+7obEOCbL+B18aHoNHmxkp7QwKnsLJ5ASjnFU8uB+3QYt2SJCempBwtUA6G2/qnPH2/sXbO41nBXh728ArQ3TeHTZHStef5p9t4K8N9zINMdqTuDywOvhjWHbca6/Mt8+wOvL2vlVlo6ecXOLdbVClX0kXDon1uhTyY9rpEIYRpDpxIPY3iXrF0N05Z7Kz6MVO9sk5P37IWvtEpXo2uUlCDySaziA717iyem59pv312U+dq0HBuek9mYvgfwntZ5MS25y49p+XVUAGHLgOs/AclKAOd+AO+WcA8Y+Ogg==); Phase 1 BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzElUFoI1UYx/O9ecm8fNXu7Ful01mVMZAlBia8mTA27SWze1o8FU/Cim6yyZqEJQmZHFZEWDGgyNrCxj1sXFDUpVVoKR5q8aSFQoogOXkpwaIUxYtFpBehyEwmUdIePKT4HV6+fP+8fL//fG94+BQDBVTQIQHXoQR1uAPwLsDHAKsA/DFfJZ6aAW1liklKVGuizP5aA/VgCik7vgdI2W8feOuHPQUjbLeq/jyNMtt+BOreNEpsu4qUHSwDyqx/398WYesvq8syUvbdfRitmz0FKWu1vR/+vg5q9wJSdncZUGJ/3IpZSrec+H4JxFF+8f1P4D0grfI9IEf5DoR/ufzRI/gC5JWHsHF1qbwBn1b2oVW+wnx8cOBr8oxlW4YQtrBEWgjTELYt0qYtRNoUIm13idQjUz+R1SheQKZFkLLDJYjJGEbJsF18AmUtjBL7/FosijKGDTNlu/xp7SKej53Dx78ERMq+eWeREyXs7/ZySxOY4JfwfPIci3DyQkjz/8+0Xb9EOckHpTk7rlEkqsrbwF/J1W+9Wqs3dUtYzxumMIS1oN8o5aqvFQt6raHnCoViQc+/rjdLRb1Ra+aa5VpVd4u5xo2SnnCLRd3NG41cuWAMRWMgpipurfqcZv5HqIyIe56VozynGlkIDewOwEfbUrZv96s2nCanA/ntu8DfGDMm5g1rbqLGZlFJTjPJf6wRpEjseDA0jtpoqDym6TiTfJJRLlc8+dtrGuuQIBt88IfjY/BoMxOlXUDBUzibnGGUs4oH9+MOaNEOCdITExKuFkin482dMV7/H7z+STwrwOvvAK+M0Xln2Jwo3WCaf7aBvzneyzTEZJ/ExaHV4Yth2XGvvdJqn2J14u19q8pmTxkd4r0dUKVfSRcOifWWFPJj3ukQhhGkOnEgdkyiXjF056Yz23ngxW722Zt+/JC19olK9Wxyi4T+l2g6w+xM49LamfWZ99cXP3MuBwXnundpPgD/S2g/m5TY1syVf92tAjLgwFVYhJegBHW4DbfJ3wMAxAaO3g==).
 
 ## Other builds of this spec
 
-- [Destruction — Incinerate](../research/raid/builds/destruction-incinerate-raid.md) (9/11/31, 748 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/153-0050203001-0050245103101351-12)
+- [Destruction — Incinerate](../research/raid/builds/destruction-incinerate-raid.md) (9/11/31, 762 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/153-0050203001-0050245103101351-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-16 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at ff9babb (client 1.60.1.70888)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-17 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 2e6e77d (client 1.60.1.70938)). Simulations, not in-game measurements. Do not hand-edit.*
 

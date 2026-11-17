@@ -269,26 +269,6 @@
     }
    },
    "notes": "apl_opt 2026-11-04: changed or added by the rotation search (see enhancement-dps-rotation-search.json)"
-  },
-  {
-   "action": {
-    "condition": {
-     "auraIsInactive": {
-      "sourceUnit": {
-       "type": "Self"
-      },
-      "auraId": {
-       "spellId": 16316
-      }
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 16316
-     }
-    }
-   },
-   "notes": "apl_opt 2026-10-26: changed or added by the rotation search (see enhancement-dps-rotation-search.json)"
   }
  ]
 }

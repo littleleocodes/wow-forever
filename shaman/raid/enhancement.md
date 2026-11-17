@@ -4,15 +4,15 @@
 
 **✅ Recommended** for raid (the best shaman spec here, or within 3% of it).
 
-**[Enhancement — Raid](../research/raid/builds/enhancement-ml-raid.md)** (17/31/3) — [open the talent tree](https://talentsforever.com/shaman/60/253103102-053030310051002251-03-12)
+**[Enhancement — Raid](../research/raid/builds/enhancement-open-raid.md)** (18/31/2) — [open the talent tree](https://talentsforever.com/shaman/60/053403102-055030110051002251-02-12)
 
-> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds); it beat the hand-made build (Enhancement — Stormstrike / Maelstrom Weapon), which stays below as the alternative. A model of the beta, to check at launch.
+> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (Enhancement — Stormstrike / Maelstrom Weapon), which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
 **Before the pull:** **Strength of Earth Totem**, **Grace of Air Totem**, **Searing Totem**.
 
-**Keep up all fight:** **Strength of Earth Totem**, **Grace of Air Totem**, **Magma Totem**, **Searing Totem**, **Rockbiter Weapon**.
+**Keep up all fight:** **Strength of Earth Totem**, **Grace of Air Totem**, **Magma Totem**, **Searing Totem**.
 
 **Then press the first one that is ready**, top to bottom:
 
@@ -33,81 +33,85 @@ Between these, your white swings do the rest.
 
 ## Why this rotation
 
-Enhancement is a melee spec that spends mana: your two-hander and **Windfury Weapon** do about half the damage, and you fill the gaps between swings with **Flame Shock**, **Stormstrike**, instant **Maelstrom Weapon** bolts, **Earth Shock** and **Fire Nova**, in that order. Mana is the limit, so the list puts the cheap and free casts first and **Fire Nova**, your most expensive, last.
+Enhancement is a melee spec that spends mana: your two-hander and **Windfury Weapon** do the most damage, and you fill the gaps between swings with **Flame Shock**, **Stormstrike**, **Magma Totem**, instant **Maelstrom Weapon** bolts, **Earth Shock** and **Fire Nova**, in that order. Mana is the limit, so the list puts the cheap and free casts first, saves **Magma Totem** for when you have a quarter of your mana, and casts **Fire Nova**, a 375-mana spell, last.
 
 **Why it works**
 
-- Before the pull, drop **Strength of Earth Totem**, **Grace of Air Totem** and **Searing Totem** (one by one, or all at once with **Call of the Elements**). In Forever the first two last 5 minutes, so one cast covers the fight. Grace of Air rather than **Windfury Totem**: your own **Windfury Weapon** turns Windfury Totem off for you, and a party gets only one of the two.
-- **Flame Shock** goes on the target whenever it is off (it lasts 21 seconds with **Call of Flame**; keeping it up measured about 1% better), so most presses go to **Stormstrike**: it costs only 8% of your base mana, hits for 150% weapon damage and makes your next **Lightning Bolt**, **Chain Lightning** or **Earth Shock** deal 20% more for 12 seconds. With **Improved Stormstrike** each one also keeps half your mana regeneration going while you cast for 15 seconds, so on its 6-second cooldown that never drops.
-- **Flame Shock** and **Earth Shock** share one cooldown (6 seconds, 5.8 with your point in **Reverberation**), and **Shamanistic Focus** makes both 45% cheaper. Every shock that is not a Flame Shock is an **Earth Shock**, which also takes **Stormstrike**'s 20%.
+- Before the pull, drop **Strength of Earth Totem**, **Grace of Air Totem** and **Searing Totem** (one by one, or all at once with **Call of the Elements**). In Forever the first two last 5 minutes, so one cast covers the fight. Grace of Air rather than **Windfury Totem**: your own **Windfury Weapon** switches Windfury Totem off for you (the imbue's tooltip), and you can keep only one Air totem down.
+- **Flame Shock** goes on the target whenever it is off and at least 10 seconds of the fight are left (it lasts 21 seconds with **Call of Flame**; keeping it up measured about 1% better), so most presses go to **Stormstrike**: it costs only 8% of your base mana, hits for 100% of your weapon damage (150% before the 2026-11-10 hotfix) and makes your next **Lightning Bolt**, **Chain Lightning** or **Earth Shock** deal 20% more for 12 seconds. With **Improved Stormstrike** each one also keeps half your mana regeneration going while you cast for 15 seconds, so on its 8-second cooldown that never drops, and a dodge or parry resets the cooldown. In the simulator's removal runs it is 18% of the build, its most valuable talent.
+- **Magma Totem** replaces **Searing Totem** once the fight starts (one Fire totem at a time): it burns everything within 8 yards for 73 Fire damage every 2 seconds, and **Trial by Fire** stretches it to 40 seconds, so about 4 or 5 a fight. It costs 650 mana: drop it at the boss's feet whenever it is down while you have a quarter of your mana; below that, **Searing Totem** fills the gap.
+- **Flame Shock** and **Earth Shock** share one cooldown (6 seconds, 5.2 with your 4 points in **Reverberation**), and **Shamanistic Focus** makes both 45% cheaper. Every shock that is not a Flame Shock is an **Earth Shock**: about 23 a fight and your biggest spell, 5% stronger with **Concussion** and 20% with **Stormstrike**.
 - **Lightning Bolt** only at 5 stacks of **Maelstrom Weapon**: 5 stacks make the bolt instant and free. Waiting for the full stack measured better than casting at 3.
-- **Fire Nova** erupts around your Fire totem, not around you, so keep **Searing Totem** down within 10 yards of the boss and replace it the moment it expires, even late in the fight. Adding Fire Nova measured about 7% more damage in the rotation search, the biggest single change to this list. With **Trial by Fire** its cooldown is 6 seconds (10 without), so it is not a true filler: the list casts it with at least 10% mana, and when nothing is ready you keep swinging.
-- Put **Windfury Weapon** on your two-hander with an Elemental Sharpening Stone on top: in Forever an imbue and a stone stack. Its extra attacks are about a fifth of your damage, and **Elemental Weapons** makes them 40% stronger. Press **Rage of the Farseer** (30% attack speed for 25 seconds) at the pull with your trinkets and potion.
+- **Fire Nova** erupts around your Fire totem, not around you, so keep the totem within 10 yards of the boss. Adding Fire Nova measured about 7% more damage in the rotation search. With **Trial by Fire** it hits 20% harder and its cooldown is 6 seconds (10 without), about 24 casts a fight; it is not a true filler: the list casts it with at least 10% mana, and when nothing is ready you keep swinging.
+- Your Elemental points: **Elemental Devastation** turns each spell crit into 9% more melee crit chance for 10 seconds, which feeds **Flurry** (10% of the build in the removal runs); **Call of Flame** adds 15% to your Fire spells and totems; **Elemental Focus** makes a damage spell free now and then. The two Restoration points are **Tidal Focus**: 2% more chance to hit.
+- Put **Windfury Weapon** on your two-hander with an Elemental Sharpening Stone on top: in Forever an imbue and a stone stack. Its extra attacks are about a sixth of your damage, and your point in **Elemental Weapons** makes them 13% stronger. Keep it on: the re-tune of 2026-11-17 measured **Rockbiter Weapon** about 10% worse in a full raid. Press **Rage of the Farseer** (30% attack speed for 25 seconds) at the pull with your trinkets and potion.
 
 **Caveats**
 
-- Mana runs short: with only your own buffs the simulator's build runs out of mana for part of a 3-minute fight. Do not hold shocks in reserve (casting **Earth Shock** freely measured 3% better than keeping 60% of your mana, on the training dummy), and use a mana potion and a Demonic Rune when low. Clearcasting from **Elemental Focus** makes your next damage spell free: nothing to change, the next line takes it.
-- Several targets: **Fire Nova** hits every enemy within 10 yards of your Fire totem, so it gains the most from adds. You can have only one Fire totem out at a time; if the adds stand away from it, **Totemic Call** brings it to you, with all your other totems.
+- Mana runs short: with only your own buffs the simulator's build runs out of mana for a few seconds of a 3-minute fight. Do not hold shocks in reserve (casting **Earth Shock** freely measured 3% better than keeping 60% of your mana, on the training dummy), and use a mana potion and a Demonic Rune when low. Clearcasting from **Elemental Focus** makes your next damage spell free: nothing to change, the next line takes it.
+- Several targets: **Magma Totem** and **Fire Nova** hit every enemy within 8 and 10 yards of your Fire totem, so they gain the most from adds. You can have only one Fire totem out at a time; if the adds stand away from it, **Totemic Call** brings it to you, with all your other totems.
 - **Maelstrom Weapon**'s proc rate is not published. The stacks last 30 seconds, so cast the bolt when you reach 5.
 - Forced out of melee range? A 5-stack **Lightning Bolt** (instant) and the shocks (20 yards) still land.
+- The simulator's full raid also hands you a party's **Windfury Totem**, about 9% of this build's damage there, but in Forever your own **Windfury Weapon** switches it off for you (the imbue's tooltip): expect less than the page's full-raid number.
 
 **When to change it**
 
 - In the last 10 seconds, skip **Flame Shock**: its burn would not finish. Use the shock on **Earth Shock** instead.
 - If the fight runs past 3 minutes, press **Rage of the Farseer** again as soon as it is ready.
-- In a party of warriors and rogues, ask whether they want **Windfury Totem** instead of **Grace of Air Totem**. A party gets only one of the two, and Windfury Totem does nothing for you while you use **Windfury Weapon**.
+- In a party of warriors and rogues, ask whether they want **Windfury Totem** instead of **Grace of Air Totem**: you can keep only one Air totem down, and Windfury Totem does nothing for you while you use **Windfury Weapon**.
 
 ## Talents
 
 | Tree | Points | Talents (ranks) |
 |---|---|---|
-| Elemental | 17 | Convection 2, Concussion 5, Elemental Devastation 3, Reverberation 1, Call of Flame 3, Elemental Focus 1, Trial by Fire 2 |
-| Enhancement | 31 | Thundering Strikes 5, Ancestral Knowledge 3, Mental Dexterity 3, Elemental Weapons 3, Shamanistic Focus 1, Flurry 5, Stormstrike 1, Mental Quickness 2, Improved Stormstrike 2, Maelstrom Weapon 5, Rage of the Farseer 1 |
-| Restoration | 3 | Tidal Focus 3 |
+| Elemental | 18 | Concussion 5, Elemental Devastation 3, Reverberation 4, Call of Flame 3, Elemental Focus 1, Trial by Fire 2 |
+| Enhancement | 31 | Thundering Strikes 5, Ancestral Knowledge 5, Mental Dexterity 3, Elemental Weapons 1, Shamanistic Focus 1, Flurry 5, Stormstrike 1, Mental Quickness 2, Improved Stormstrike 2, Maelstrom Weapon 5, Rage of the Farseer 1 |
+| Restoration | 2 | Tidal Focus 2 |
 
 ## The numbers
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 985 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 909 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever ff9babb (client 70888); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 2e6e77d (client 70938); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 971 | [17/31/3](https://talentsforever.com/shaman/60/153203102-053030310051002251-03-12) |
-| Phase 1 BiS | 984 | this build |
+| Pre-BiS | 914 | [16/31/4](https://talentsforever.com/shaman/60/053303101-055030210051002151-04-12) |
+| Phase 1 BiS | 927 | [17/31/3](https://talentsforever.com/shaman/60/053303102-054030210051002251-03-12) (as good as this build in this gear) |
 
 *Each row is in that tier's own gear set; the DPS at the top of the page is this build in the standard set, so the two do not match.*
 
-**The gear** (average item level: Pre-BiS 62.6; Phase 1 BiS 62.7; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 62.2; Phase 1 BiS 61.9; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
 | Head | [Black Dragonscale Helm](https://www.wowhead.com/forever/item=252605) · *Leatherworking*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11645) | [Black Dragonscale Helm](https://www.wowhead.com/forever/item=252605) · *Leatherworking*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11645) |
-| Neck | [Star of Mystaria](https://www.wowhead.com/forever/item=12103) · *Balnazzar, Stratholme* | [Onyxia Tooth Pendant](https://www.wowhead.com/forever/item=18404) · *quest: For All To See* |
-| Shoulders | [Soulstealer Mantle](https://www.wowhead.com/forever/item=13374) · *Ramstein the Gorger, Stratholme* | [Soulstealer Mantle](https://www.wowhead.com/forever/item=13374) · *Ramstein the Gorger, Stratholme* |
-| Back | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411) · *sold by Pix Xizzix*<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411) · *sold by Pix Xizzix*<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) |
-| Chest | [Dawn Armor](https://www.wowhead.com/forever/item=252483) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Magister's Robes](https://www.wowhead.com/forever/item=16688) · *General Drakkisath, Blackrock Spire*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
-| Wrist | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186) · *quest: Stalwart's Battlegear*<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) | [Wildheart Bracers](https://www.wowhead.com/forever/item=16714) · *Scholomance*<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) |
-| Hands | [Stormshroud Gloves](https://www.wowhead.com/forever/item=21278) · *Leatherworking*<br>+ [Enchant Gloves - Strength](https://www.wowhead.com/forever/item=273529) | [Stormshroud Gloves](https://www.wowhead.com/forever/item=21278) · *Leatherworking*<br>+ [Enchant Gloves - Strength](https://www.wowhead.com/forever/item=273529) |
-| Waist | [Clutch of Andros](https://www.wowhead.com/forever/item=13956) · *Kirtonos the Herald, Scholomance* | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* |
+| Neck | [Mark of Fordring](https://www.wowhead.com/forever/item=15411) · *quest: In Dreams* | [Onyxia Tooth Pendant](https://www.wowhead.com/forever/item=18404) · *quest: For All To See* |
+| Shoulders | [Mantle of the Timbermaw](https://www.wowhead.com/forever/item=19050) · *Tailoring* | [Mantle of the Timbermaw](https://www.wowhead.com/forever/item=19050) · *Tailoring* |
+| Back | [Heliotrope Cloak](https://www.wowhead.com/forever/item=18496) · *Guard Mol'dar, Dire Maul*<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) | [Heliotrope Cloak](https://www.wowhead.com/forever/item=18496) · *Guard Mol'dar, Dire Maul*<br>+ [Enchant Cloak - Lesser Agility](https://www.wowhead.com/forever/spell=13364) |
+| Chest | [Timbermaw Tunic](https://www.wowhead.com/forever/item=252484) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Timbermaw Tunic](https://www.wowhead.com/forever/item=252484) · *Leatherworking*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
+| Wrist | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186) · *quest: Stalwart's Battlegear*<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186) · *quest: Stalwart's Battlegear*<br>+ [Enchant Bracer - Superior Strength](https://www.wowhead.com/forever/spell=19984) |
+| Hands | [Bloodmail Gauntlets](https://www.wowhead.com/forever/item=14615) · *Instructor Malicia, Scholomance*<br>+ [Enchant Gloves - Strength](https://www.wowhead.com/forever/item=273529) | [Bloodmail Gauntlets](https://www.wowhead.com/forever/item=14615) · *Instructor Malicia, Scholomance*<br>+ [Enchant Gloves - Strength](https://www.wowhead.com/forever/item=273529) |
+| Waist | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* |
 | Legs | [Ironfeather Leggings](https://www.wowhead.com/forever/item=252486) · *Leatherworking*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11645) | [Ironfeather Leggings](https://www.wowhead.com/forever/item=252486) · *Leatherworking*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11645) |
 | Feet | [Bloodmail Boots](https://www.wowhead.com/forever/item=14616) · *Instructor Malicia, Scholomance*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) | [Bloodmail Boots](https://www.wowhead.com/forever/item=14616) · *Instructor Malicia, Scholomance*<br>+ [Enchant Boots - Greater Agility](https://www.wowhead.com/forever/item=16245) |
+| Finger | [Warden's Signet of Brilliance](https://www.wowhead.com/forever/item=275982) | [Quick Strike Ring](https://www.wowhead.com/forever/item=18821) · *Magmadar, Molten Core* |
 | Finger | [Channeler's Ring](https://www.wowhead.com/forever/item=272406) · *sold by Pix Xizzix* | [Band of Earthen Might](https://www.wowhead.com/forever/item=21182) · *quest: Veteran's Battlegear* |
-| Finger | [Warden's Signet of Ferocity](https://www.wowhead.com/forever/item=275981) | [Channeler's Ring](https://www.wowhead.com/forever/item=272406) · *sold by Pix Xizzix* |
-| Trinket | [Hand of Justice](https://www.wowhead.com/forever/item=11815) · *Emperor Dagran Thaurissan, Blackrock Depths* | [Hand of Justice](https://www.wowhead.com/forever/item=11815) · *Emperor Dagran Thaurissan, Blackrock Depths* |
-| Trinket | [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437) · *sold by Pix Xizzix* | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
+| Trinket | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) · *quest: For The Horde!* | [Smolderweb's Eye](https://www.wowhead.com/forever/item=13213) · *Mother Smolderweb, Blackrock Spire* |
+| Trinket | [Hand of Justice](https://www.wowhead.com/forever/item=11815) · *Emperor Dagran Thaurissan, Blackrock Depths* | [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) · *quest: Job Opening: Guard Captain of Revantusk Village* |
 | Main hand | [Fist of Cenarius](https://www.wowhead.com/forever/item=21188) · *quest: Champion's Battlegear*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Fist of Cenarius](https://www.wowhead.com/forever/item=21188) · *quest: Champion's Battlegear*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
 | Ranged/relic | [Totem of the Storm](https://www.wowhead.com/forever/item=23199) | [Totem of the Storm](https://www.wowhead.com/forever/item=23199) |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/shaman/enhancement/#eJzEVU1MM1UU7X0znXm9foH5HhDHEcNQgsHqNG+mlBQ2LayMK2DFwigDHWxV2qZTDa7ABH9CBMIGBY2YKGIMuoIEDbpAU3FXE8MCYiSoCQsWxBg1LoyZaWsQ3JbvLCZv7j2TOefekzxsp6CACjr0wDhkoABzAK8DvAfwEQC743eJ102AdhmikiJrL6BMv9htVs/uQ4F+8xQK9MsMyvTtiqJ+J6FMv9ppVn9qQpkebIL6g3d490NQN2QU6Pw0yrS8438r0beK6o9NKNLVioIiXbxQUKBbT6JIdysKyvTrTVAvmjCAIt3YhfCjymG259fnho+WYOy38QUg89l1kN63t+3jwY8h9EZ26x34xVzKnsJ8doj6wiEFn5MOMx6zeMzklsHjMR7zjjxucm5ZcdPgsUMCFSKckT9lbEOqSSjSlTKEQyhj0OiNxl1sqZWXyxCWMYiCEXOxFWUtiAItj9SoZjTusjeBTdmF55/OF0q6xa0+g/cbVmJAn8zYuWectJ4v6nY67aT1iZf0UsbRi/mSXcrmc7rr2MXJjN7jOo7u5DJ2btKZdnIlI11wjTrJqJKiz7r53COagV2sE++EEanlid7+GfBupJlKjDwR0HydJne1Wot1aA9hS+QuFVlwQSAUvAaSGmGlfINA/kNYLgMTNTIQYKhVh/H9a8BWr7s1uWH1NcTtY1W3x1IIBXoyyogi1t1O1Nxa8W5/IyejbPF/hPH+hgjrQi2iUomFDsAby2d/qJqfh96oZSZ8PecvsldvLxbtV5co/LtET0h5hIW0amo/HWGv3JiRafDehmh68PqqTN7tKaNrv6ts9tYy1FbPz/6slx9/EPuzqnBODuGSWC8LAR+tqb9A0kQkFMJ/k5BXCsxNpR5YX/PwbbJzysdR0jolqqgnI3skcE9QStVPDcXDnzTsP/3+c/SD1GCtkBr3bp818F8Cp8mIQPfuH7pySXFIQAoeh2EYgwwUYAZmyD8DAAvxb9c=); Phase 1 BiS: [full raid](https://wowsims.com/forever/shaman/enhancement/#eJzEVU1MK1UU7rkznbk9EigXiOOIYSjBYHWaO1NKCpsWVsYVsGJhIgMdbP1pm06juAIJ/oQoDTFBQSMmihiDxoUkaJCFMQ26wsSwgBgJQsLChSFGzVu8vMy0feHB25b3LSZ3zvkm833nfMnFdgpBUECDHhiHNORhFuBtgE8AvgBgDV6XuN04qBcBKgVl9VWU6Q9bTcrJQyjS0xKgQHfTKNMP94PKrxLK9Js5UP5sRJn+MgfK7+7h489BWZNRpGclQJmWv/W+lugHBeWPRhTp7jqgSJf3gyjQjWdRpPPvubyf1kH5qxF9KNK1LQg9GdzL9Fy8OHywCGP/jC8Amc+sgvSptWkdDn4JgXcyGx/BmbGYOYb5zBD1pEMSvicdZixq8KjBTZ3HojzqHnnM4Nw0Y4bOo3sE9olwQv6XsQ2pKqFIl8oQCqCMfr03EnOwpVoulSEkox8FPepgK8qqHwVaHqlSjUjMYe8Dm7LyLz2Xyxc1k5t9Ou/XzfiANpm2ss/bKS1X0KxUyk5pE69pxbStFXJFq5jJZTXHtgqTaa3HsW3Nzqat7KT9sp0t6qm8o9dIeoUUecHJZZ9QdexindgQQqSmK3rzFLA53EQlRp7xqZ5OgztqtcU61MewJdxMReZfEAgFt4GkSlgqXyOQewilMjBRJQM+hmplGL+9BWz5qluD62ZfXdw+VXF7KAVQoEejjATFmtuJqlsz1u1t5GiUvXsfYby/LsK6UA0rVGKBH8Edy3f/KaqXh96IacQ9PeevsDdvLhbtl5co3F2iK6Q8wgJqJbVfj7A3rs3I0HlvXTQ9enVVBu92ldGVfxU2c2MZaqvlZ2fGzY83iJ0ZRTgne/A3MV8XfB5ak7dAUkUkFEK3ScAt+Wanko+srrj4OdE55eEgYR4TRdQS4W3ieyAoJmunuuLxr+r2n37vOfpZcrBaSI67988KeC++40RYoNsPD126pjjEIQlPwzCMQRryMA3T5M4A7btvoA==).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/shaman/enhancement/#eJzEVV9ILFUY3+/M7MzZL1nXo9E0GY4rhm3NcmbWkdWXXX2KntQnH4Ic3bHdyt1lZwt7M7A/SGpCaEpgUGKE9ZKCBUFILPZmED4okViChFBcLle4D5fLzK4Xr97Xvff3MMx8329mfr/v+8452EohAgpo0AWjkIUiTAN8DPAlwDcArMHPEi+bBPU/SqWIrL6DMv15u1E5eQoF+sMUivTfzwBl+sunoPwuoUx/3WpU/g6jTHfXQfkzjBJdLilrMor0dMEjVrb8lyX6eUn5K4winT+PoEiX9iMo0LlJFOjGa95n1kE5D2MARbq2DdGXInu5rltvDR7Mw8jt0VkgM7lVkL6yN+3D/m8h9Elu4ws4NeZzxzCTG6C+cEjDT6SNW4kETxjc0Lll8QQ3Dc4tg3PTsAydd+8R2CfCCbmQ8GmkqoQiXaxANIQyBvXuuOVicy28UIGojEEU9ISLLSirQRRoZahGNeKWy5aBTdjFt18vFMuayc0enffqZrJPG8/a+TecjFYoaXYm42S0sfe0ctbRSoWyXc4V8prr2KXxrNblOo7m5LN2ftyZdPJlPVN09UuSXiXF33QL+RdVHTtYOzZEEanpid78B7Ap1kglRl4NqL5Og7tqLcXa1OexOdZERRacFQgFL4GkRlis3CCQhwgLFWCiSvoCDNVqMf74CNjSdbcG182eurh9uer2UAqhQI+GGYmIl27Ham5Nq9PvyNEwm3uEMN5bF2EdqMYUKrHQLnhl+fFCUf156I6bRtLXc/Yu+/DxjUXr1SYKD5roCakMsZBandrvh9gHN2rkrYa6aHrueqsM3ukpoyt3FEU4I3vwPzHfFwI+WtJ3QVJFJBSi90jICwWmJ9LPrq54+C3VPuHjIGUeE0XUUrEdEngiKKcv7+qKF76r2396/evw1+n+WiA96m3+K+A/BI5TMYHuPDNw5YzgkIQ0vAKDMAJZKMIUTJH7AwAj9Eb0); Phase 1 BiS: [full raid](https://wowsims.com/forever/shaman/enhancement/#eJzElU9II3cUx/N+M5n55VVi/GnpdGpxjFhs2gm/mSQSvSR6Kj2pJ291NKNJ/yQhE1p7s6BtkdZU+scqLRZaaSm29KBgCy1FJNhbC8WDUipWQcoedpdlhT0sy0zi4upes/sOw8x735n5fN97zGA7hRAooEEPjEEWijAD8D7AVwDfAbAmr0rcahLUG5RKIVl9C2X662azcvQEivS4AijS/z8BlOnvH4Hyl4Qy3dloVv4Loky310D5J4gSXSopqzKK9KTiCqsb3t0S/byk/BtEkc597D7ltzVAgX45hSL96VNXt7MGyrUg+lCkq5sQfiG0m+u5+drQ3gKM3hqbBzKbWwHpa2vd2h/4HgIf5L79Ak6MhdwhzOYGqYcOafiFdPBELMZjBjd1nojzGDcNzhMG56aZMHQe2yXwJxGOyJmETyJVJRTpYhXCAZTRr8ejCQdb6+lKFcIy+lHQYw62oaz6UaDV4brUiCYctgRs0iq+/kqhWNZMbvbqvE83k/3aRNbKT9kZrVDSrEzGzmjjb2vlrK2VCmWrnCvkNce2ShNZrcexbc3OZ638hP2GnS/rmaKjn4v0mij6qlPIP6/q2MU6sSmMSE0Xev0YsCXSTCVGXvapHqfBHbVeYh3qs9gaaaEi888LhIJbQFIXLFavCMgDgkoVmKiSfh9DtdaMv98D9tlltwbXzd6GuH2x5nZfCqBAD0YYCYnnbsfrbs1EtzeRgxH24UPAeF9DwLpQjShUYoFtcNvy85mievsQj5pG0uM5fZO9++jWov3iEIX7Q3RBqsMsoNa29sdhNnelR4bO4w1heubyqAze7ZLR5duKIpySXbhOzHcEnxdt6TsgqSISCuG7JOCmfDOT6adXlt34I9U56cVeyjwkiqilIlvE91iinD4/a2g890PD3tPnHUe+SQ/UE+kx9/O/DN6F7zAVEejWU4MX/hIckpCGl2AIRiELRZiGaXJvAPEmRw0=).
 
 ## Other builds of this spec
 
-- [Enhancement — Stormstrike / Maelstrom Weapon](../research/raid/builds/enhancement-raid-dps.md) (11/31/9, 918 DPS in a full raid) — [open the talent tree](https://talentsforever.com/shaman/60/5230001-055030310051002051-05004-12)
-- [Enhancement (optimized)](../research/raid/builds/opt-enhancement-dps-raid-dps.md) (14/31/6, 902 DPS in a full raid) — [open the talent tree](https://talentsforever.com/shaman/60/5005031-155030010151012051-051-12)
+- [Enhancement — Raid](../research/raid/builds/enhancement-ml-raid.md) (17/31/3, 894 DPS in a full raid) — [open the talent tree](https://talentsforever.com/shaman/60/253103102-053030310051002251-03-12)
+- [Enhancement (optimized)](../research/raid/builds/opt-enhancement-dps-raid-dps.md) (14/31/6, 857 DPS in a full raid) — [open the talent tree](https://talentsforever.com/shaman/60/5005031-155030010151012051-051-12)
+- [Enhancement — Stormstrike / Maelstrom Weapon](../research/raid/builds/enhancement-raid-dps.md) (11/31/9, 830 DPS in a full raid) — [open the talent tree](https://talentsforever.com/shaman/60/5230001-055030310051002051-05004-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-16 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at ff9babb (client 1.60.1.70888)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-17 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 2e6e77d (client 1.60.1.70938)). Simulations, not in-game measurements. Do not hand-edit.*
 

@@ -3,31 +3,28 @@
  "spec": "enhancement-dps",
  "build": "elemental-enhancement-ml-raid",
  "setting": "raid",
- "date": "2026-11-07",
+ "date": "2026-11-17",
  "tank": false,
  "removal": {
-  "Ancestral Knowledge": 0.010438683536265758,
-  "Call of Flame": 0.04139102783257842,
-  "Concussion": 0.010789031718381636,
-  "Convection": 0.0014757874062358844,
-  "Elemental Devastation": 0.02833497316163558,
-  "Elemental Focus": 0.014205790474205116,
-  "Elemental Weapons": 0.021212213310401795,
-  "Flurry": 0.08169218948291324,
-  "Improved Stormstrike": 0.05087207637036284,
-  "Maelstrom Weapon": 0.04137828982659353,
-  "Mental Dexterity": 0.08569150339652809,
-  "Mental Quickness": 0.026704958475795126,
-  "Reverberation": 0.006467227439716394,
-  "Shamanistic Focus": 0.06491173190858923,
-  "Stormstrike": 0.28450161386133765,
-  "Thundering Strikes": 0.04534593246960028,
-  "Tidal Focus": 0.03486944301591732,
-  "Trial by Fire": 0.03074430845732834
+  "Ancestral Knowledge": 0.008393980091472741,
+  "Call of Flame": 0.0444247251088028,
+  "Concussion": 0.009791360008998162,
+  "Elemental Devastation": 0.02473312756717594,
+  "Elemental Focus": 0.006369570136635527,
+  "Elemental Weapons": 0.00785633603292435,
+  "Flurry": 0.09898509193270488,
+  "Improved Stormstrike": 0.0198592418419119,
+  "Maelstrom Weapon": 0.05692847371784138,
+  "Mental Dexterity": 0.08084942291956732,
+  "Mental Quickness": 0.028053213195089466,
+  "Reverberation": 0.02201438827075375,
+  "Shamanistic Focus": 0.05471155964362284,
+  "Stormstrike": 0.18202541350444312,
+  "Thundering Strikes": 0.043300072617554086,
+  "Tidal Focus": 0.03420718249068477,
+  "Trial by Fire": 0.03235934970895793
  },
- "free": [
-  "Convection"
- ],
+ "free": [],
  "kept_for_rotation": [
   "Maelstrom Weapon",
   "Stormstrike"
@@ -39,10 +36,6 @@
  "start": {
   "Elemental": [
    [
-    "Convection",
-    1
-   ],
-   [
     "Concussion",
     5
    ],
@@ -52,7 +45,7 @@
    ],
    [
     "Reverberation",
-    2
+    3
    ],
    [
     "Call of Flame",
@@ -119,10 +112,6 @@
  "allocation": {
   "Elemental": [
    [
-    "Convection",
-    1
-   ],
-   [
     "Concussion",
     5
    ],
@@ -132,7 +121,7 @@
    ],
    [
     "Reverberation",
-    2
+    3
    ],
    [
     "Call of Flame",

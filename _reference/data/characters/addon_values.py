@@ -583,6 +583,7 @@ def raid(cls, below, page, werr=None):
     out = []
     B = builds_of(cls)
     we = (werr or {}).get("entries") or {}
+    measured = {}   # {ML record stem: the build its BiS weights were measured on, when the entry carries that build's id}
     for f in sorted((RAID / "ml").glob(f"{cls}-*.json")):
         d = json.loads(f.read_text(encoding="utf-8"))
         w = ((d.get("gear") or {}).get("bis") or {}).get("weights")
@@ -594,11 +595,18 @@ def raid(cls, below, page, werr=None):
         if hb and hb.get("hit_below_cap"):
             vals["hit_rating_below_cap"] = hb["hit_below_cap"]
         bid = d.get("best") if d.get("best") in B else (page.get(f.stem) or {}).get("build", d.get("best"))
+        if bid == d.get("best"):
+            measured[f.stem] = bid
         out.append(raid_row(cls, d["spec"], f.stem.split("-", 1)[1], bid, B, vals,
                             f"raid simulator, {f.name} (the spec's best build in its phase-1 BiS set, full raid)",
                             we.get(f"ml:{f.stem}"), we.get(f"{'hit' if in_below else 'pagehit'}:{f.stem}") if hb else None))
     for stem, row in sorted(page.items()):
         if row.get("class") != cls or not row.get("weights"):
+            continue
+        # The page's pick when the spec's ML record has since measured that same build in the spec's own BiS set: a second copy of the
+        # entry (same id, spec and talents) that GearCheck never reaches, since /gear spec takes the first match (2026-11-16, the
+        # Addons session: paladin ret-full-buffs-raid and rogue hybrid-assassination-subtlety-open-raid were listed twice)
+        if measured.get(stem) == row.get("build"):
             continue
         vals = sim_keys(row["weights"])
         if row.get("hit_below_cap"):
@@ -618,7 +626,7 @@ def heal(cls, hv):
         v = {k: max(0.0, x["healing_eq"]) for k, x in row["values"].items()}
         b = B.get(row["build"])
         out.append({"spec": row["spec"], "build": row["build"], "tree_points": tree_points(cls, b["allocation"]) if b else None,
-                    "talents": talents_of(b), "unit": "healing", "source": f"healer lab, heallab/heal-values.json ({hv['date']}): capacity per point in {row['gear']}",
+                    "talents": talents_of(b), "unit": "healing", "source": f"healer lab, heallab/heal-values.json ({row.get('date') or hv['date']}): capacity per point in {row['gear']}",
                     "values": norm(v, "heal", cls),
                     "errors": {k: x["healing_eq_se"] for k, x in row["values"].items()},
                     "errors_note": "the bootstrap standard error of each value, same unit; for Shift details at most, not the main line",

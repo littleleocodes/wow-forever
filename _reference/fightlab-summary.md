@@ -76,7 +76,7 @@ Positive = the hand draft is slower. The race winner is the fastest build over a
 
 ## Last rebuild
 
-`rebuild.py` ran on 2026-11-16 for mage (steps race, report; 10 min). Per class:
+`rebuild.py` ran on 2026-11-17 for mage, priest, warlock, hunter, warrior, rogue, paladin, shaman, druid (steps regen; 18 min). Per class:
 
 - **mage**: 1 calibration round(s), converged; race leveling-frost 30.1s
 - **priest**: 1 calibration round(s), converged; race cand-shadow-r4 25.5s, leveling-shadow 26.1s, cand-shadow-r5 26.1s, cand-shadow-r6 26.3s, cand-shadow-r3 27.9s, cand-shadow-hand-2026-09-26 28.6s, cand-shadow-r1 28.9s, cand-shadow-r2 28.9s, cand-shadow-r7 29.5s, cand-shadow-r8 30.7s

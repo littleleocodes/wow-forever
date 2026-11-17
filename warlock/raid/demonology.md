@@ -12,6 +12,8 @@
 
 **Setup, before the pull:** **Summon Succubus** and keep it out all fight. Keep **Demon Armor** on you.
 
+**Talents with no line below:** **Demonic Sacrifice**: before the pull, summon your Imp and sacrifice it (+15% Shadow damage), then summon your Succubus: Demonic Pact keeps the Imp's buff while another demon is out; **Soul Link**: turn it on with your demon out (it lasts while the demon lives).
+
 **Then press the first one that is ready**, top to bottom:
 
 1. **Curse of the Elements**: keep it on the target
@@ -66,22 +68,22 @@ Before the pull: summon the Imp, use **Demonic Sacrifice** (+15% Shadow damage f
 
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 851 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 867 |
 
-**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever ff9babb (client 70888); [every spec](../../_reference/dps-rankings.md)):
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 2e6e77d (client 70938); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Pre-BiS | 827 | [2/31/18](https://talentsforever.com/warlock/60/002-0025003031220301351-0550005003-12) |
-| Phase 1 BiS | 851 | this build |
+| Pre-BiS | 845 | this build |
+| Phase 1 BiS | 867 | this build |
 
 *Each row is in that tier's own gear set; the DPS at the top of the page is this build in the standard set, so the two do not match.*
 
-**The gear** (average item level: Pre-BiS 59.6; Phase 1 BiS 62.8; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 62.5; Phase 1 BiS 64.2; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
-| Head | [Crimson Felt Hat](https://www.wowhead.com/forever/item=18727) · *Magistrate Barthilas, Stratholme*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Crimson Felt Hat](https://www.wowhead.com/forever/item=18727) · *Magistrate Barthilas, Stratholme*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
+| Head | [Spellweaver's Turban](https://www.wowhead.com/forever/item=22267) · *General Drakkisath, Blackrock Spire*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Spellweaver's Turban](https://www.wowhead.com/forever/item=22267) · *General Drakkisath, Blackrock Spire*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
 | Neck | [Nacreous Shell Necklace](https://www.wowhead.com/forever/item=22403) · *Cannon Master Willey, Stratholme* | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
 | Shoulders | [Mantle of the Timbermaw](https://www.wowhead.com/forever/item=19050) · *Tailoring* | [Mantle of the Timbermaw](https://www.wowhead.com/forever/item=19050) · *Tailoring* |
 | Back | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411) · *sold by Pix Xizzix* | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411) · *sold by Pix Xizzix* |
@@ -89,22 +91,22 @@ Before the pull: summon the Imp, use **Demonic Sacrifice** (+15% Shadow damage f
 | Wrist | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186) · *quest: Stalwart's Battlegear*<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) | [Rockfury Bracers](https://www.wowhead.com/forever/item=21186) · *quest: Stalwart's Battlegear*<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) |
 | Hands | [Gloves of Spell Mastery](https://www.wowhead.com/forever/item=14146) · *Tailoring* | [Gloves of Spell Mastery](https://www.wowhead.com/forever/item=14146) · *Tailoring* |
 | Waist | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* |
-| Legs | [Skyshroud Leggings](https://www.wowhead.com/forever/item=13170) · *Highlord Omokk, Blackrock Spire*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Flarecore Leggings](https://www.wowhead.com/forever/item=19165) · *Tailoring*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
-| Feet | [item 254013](https://www.wowhead.com/forever/item=254013)<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Omnicast Boots](https://www.wowhead.com/forever/item=11822) · *Golem Lord Argelmach, Blackrock Depths*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
+| Legs | [Leggings of Torment](https://www.wowhead.com/forever/item=22342) · *Lord Valthalak, Blackrock Spire*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Flarecore Leggings](https://www.wowhead.com/forever/item=19165) · *Tailoring*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
+| Feet | [Omnicast Boots](https://www.wowhead.com/forever/item=11822) · *Golem Lord Argelmach, Blackrock Depths*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Omnicast Boots](https://www.wowhead.com/forever/item=11822) · *Golem Lord Argelmach, Blackrock Depths*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
 | Finger | [Warden's Signet of Brilliance](https://www.wowhead.com/forever/item=275982) | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
 | Finger | [Elemental Focus Band](https://www.wowhead.com/forever/item=20682) · *Prince Skaldrenox, Silithus* | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
 | Trinket | [Eye of the Beast](https://www.wowhead.com/forever/item=13968) · *quest: For The Horde!* | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) · *sold by Pix Xizzix* |
 | Trinket | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) · *sold by Pix Xizzix* | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
 | Main hand | [Sageblade](https://www.wowhead.com/forever/item=22383) · *Blacksmithing*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Sageblade](https://www.wowhead.com/forever/item=22383) · *Blacksmithing*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
-| Off hand | [Mordresh's Lifeless Skull](https://www.wowhead.com/forever/item=10770) · *Mordresh Fire Eye, Razorfen Downs* | [Mordresh's Lifeless Skull](https://www.wowhead.com/forever/item=10770) · *Mordresh Fire Eye, Razorfen Downs* |
-| Ranged/relic | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* | [Brilliant Wand](https://www.wowhead.com/forever/item=249385) · *Enchanting* |
+| Off hand | [Obsidian Bauble](https://www.wowhead.com/forever/item=18316) | [Obsidian Bauble](https://www.wowhead.com/forever/item=18316) |
+| Ranged/relic | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzElU9oK1UUxnPuTDIn52kz74p0Ok9hDPQRA1NuJsx7TTeZ91YPcVHEhdCFTZqkSWgzIcmi3VVaUURbqW4aC/5rqRVqi4IUQaiFQupCunJTikUpighKF12KzGSCYl24Cf0Wd775zj1zf3Nn4NJTCCpoYEACJqEMdVgAeB3gA4BPAPhjfpV51VHQv4iipEb1Jim4tQraxS2ScXEXSMZf3/XG905UiuBxTftpgBQ83ATtdIAkPKyRjBcrQBG8LHldCn59ENNWFJJx+TeVZPz2QyAJ354lGb88UUnB3z8DrfMESbj6Ism4vR6LW2qnkvhuGcRVfvytj+ANYEuVVWBX+TaEf37w/iZ8CsrWOuw9Wq7swcfVc1iqPESfHhz4isWFsEwhLFuItEinLEukRSptp0xh20IIL+4w6YTd+pHtKvxp/Q7djsfo8c+BSMaD18Y5U8N6JPCWLijB79LtZAwjnD0X0hUKk5Sym34kc5YPovv2sC4T0zSe1lP/s+eeGNbDJKlXeS7rbCzUpek+t9eWHrF9msU3gS8CL+XqMy+79ZZhCeueKTKmNTpmTJVzteliwXAbRq5QKBaM/LzRKheNhtvKtSpuzWgWc42pspFoFotGoTjr1twZd3rebOQqBbM3yexOGqk23dqz+hCpyQGU/PeLkEzM9lFxe4LHdYMGk0+izJWqF30zoWObBa574Rv/Jk0JU1h9IR0jwUdoKDmIMseqt1U/HIEebbPAXvsOoqkHpZvFPPsb8+w6phVgnh0Bf/UaZsoU9/uCeafH0ftHLXvY41CX3gHe+I/dyvQFA701cefyeU6BPz0CTfqFdeAPZr0ihXxlnDYjQoqgZDAH4n+yqBeHFkrOUHvN03H2mZKv77PWOdNkI5vcZ6EbUcvpub7q7k7f1sn44wsbzoMgcCa9A2QN/JvQeTYp4f7gw3+cMwJGwYFHMA4vQRnqMAdz7K8BAH4VUUY=); Phase 1 BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzElUFINGUYx/d5Z3bn3cfS8Y1wHAumBWVbGHlnllHXy46eJDpIdAgMctdd3V1sZ9ndg94MN4oohTUPbkJRihloEhHSqQRhJQhPXWRJCim6FB08SszsbMXnd/gui8/hmf/8n+eZ9zfvDLz4HAUZFNAgCvOQgxKsAbwL8AnA5wDsKa9K3OoEqF+HqSCH1SpK9KAOyk0PivSuDijSPz5080eXMoboRVH5tRclerYPylUvCvSsiCK92QSUaGvbGwvR49eVTQlF+sM2/Ju/uZRRpLUtt/HPY1Caz6BA66+iSA93+yKm3MxHf9wAfpue/eBTeA9ILV8HcptuQPC3qY/34QuQDnbhZGYjfwKfFa6hlp+mHj7Y8C2JcMPQOTctzuM8bpgmj3Mjbhk6tyzOuWs3iXBJen4hX0rseXUI+yN9+PRXgCjS796ZZUQOqiFfmyrHKBvB/lgfDTHyUkCVMIiCYVU8S2Qk7Vvj1rAqIlEUFleNJ5wZ48NqEAX5Ns1ElUwG2jTt53bG4qOWR7P+PrB1YIup0vIbTqmqmdwc03lCNycmtYVcqriUzWhOWUtlMtmMll7VqrmsVnaqqWreKWqVbKq8kNOilWxWy2TfdIrOsrO0qpdT+YzeadLbTaOFilN8UR1EOdZLBe/9QigisTxUejjHIqqGA7Fnqcikgmt9P6fSBvFV+8L2HiU1uM7NrpBOImejOBgboCKjBXerfj4HNdwgvrz3HXhF9UsPi9n6D7N1H9P0MVvnwN6+h2nofLwrmEMdjs4/alrDLodc2wJWfsxuJbqCQd016dHfLzP09dU5KMLvpAl/EfMtIeBFwm4QRIohKmjEhsgdCbt2YG3RHmzsuHGRfGHRi5+S5jVRRC0ZOyWBB4mq3VFdjZGjrq2T8PIre/aUb9jz7gmyA95N4DoZE+jpwPT/DhoOE2DDDMzCa5CDEqzACvlnAPZ9USc=).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzElU9II1ccx/N7M8m8/Gx1fKU4ji1MA0oaGHkzYdR4yehJSg/SU8FCTUw0CZoJSQ56s2hpKVZL24tpof+U/gH/0EKRnrqCS9zD4mkvIiu7yC7Lwi4evCwsy0wm7LLuYS/B7+HNd76/95v3mTcDD9+hIIMCGkRhEnJQgkWALwF+BvgDgL3hVYlbHQL1nzAV5LBaQYk+2QLlrA1FurQDKNIH37vjD0cyhuhhUbnbjhLd3wTluB0Ful9EkZ6tAUr0+rbXFqLbnyhrEop09aGMIr3xC6BAv5lDkf57JKNEH22DUn8LRbqy5lbOZyOmXM9Hb64Cv0iPf/0rfAVkOf8tkIt0DYL3Rn7ahL9A+v1H2B1bze/Cb4VTWM6PUo8ebPiPRLhh6JybFudxHjdMk8e5EbcMnVsW59yN60Q4Im13yI7E3lV7sDPSgW/+DYgi/f+LcUbkoBryvalyjLI+7Ix10BAjHwRUCYMoGFbFi0RG0n40aPWqIhJFYXHVeM2eAd6rBlGQL9JMVMlwoEHTeG6zLd5veTRLK8CWgE2nSrOfOqWqZnJzQOcJ3Rwa1qZyqeJMNqM5ZS2VyWQzWnpBq+ayWtmppqp5p6hVsqnyVE6LVrJZLZOdc4rOrDOzoJdT+YzenKQ3JvUXKk7xfbUb5Vg7Fbz3C6GIxPJQ6Z8TLKJq2BV7m4pMKrjRtQmV1ojvGhe28TKpwXVutoR0GDnrx+5YFxUZLbhbdfsA1HCN+PbSd+AV1S9dLebJc8yTy5imj3lyAOzzS5iGzgdbgtnT5Gj+o6bV63LIy98BK79itxItwaDumnTr/EOGvj8+AEW4T+rwmJifCQFPCbtGECmGqKARGyJPSdiNA4vTdndt3dVh8r1pT7eS5ilRRC0Z2yOBK1HVbrqWqm+rZeskvPGjDXvED+xJ9wBZB+8mcJqMCXSva/SFc4bDENgwBuPwMeSgBPMwT54NAE2DUZA=); Phase 1 BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzElU9IK1cUxnPuTDI3x1bHW4rj2MI0oKSBkTsTRo2bjK6kdCFdFSzUxESTYDMhyUJ3FlNailXQujAttLRK/4BWSinSVSsIkUJx1Y2ESou0dPMeLtw8kMdMJu89nm/xNsGzOPPNd86Z+5s7AxdfoSCDAhpEYRZyUIIVgI8AvgT4FoC94FWJWx0D9acwFeSwWkWJPtgH5bILRXqzCSjS/z9182dnMoboaVH5pxslerwHynk3CvS4iCK93ACUaHPbGwvRg3eUDQlF+vs2PMo/n8ko0tqW23jvAJTGSyjStQ1AgV4tRky5kY/+sQ78Oj39yVfwMZBafhPIdboOwX8nvtiD70H65nM4nFrPH8LXhQuo5Sephw82/EIi3DB0zk2L8ziPG6bJ49yIW4bOLYtz7toNIpyRrr/JDxJ7VR3A3kgPvvgjIIr01w+nGZGDasjXpsoxyoawN9ZDQ4y8EVAlDKJgWBXPEhlJ+9aoNaiKSBSFxVXjOWdG+KAaREG+TjNRJeOBFk3rue2x+LDl0ayuAVsFNp8qLb7rlKqayc0RnSd0c2xcm8uligvZjOaUtVQmk81o6WWtmstqZaeaquadolbJpspzOS1ayWa1TPY9p+gsOgvLejmVz+jtJr3VNFyoOMXX1X6UY91U8N4vhCISy0Ol382wiKphX+xlKjKp4Fq/zai0TnzVurDdp0kNrnOzI6TjyNkw9sf6qMhowd2qv05ADdeJL299B15R/dLdYjYfYzZvY5o+ZvME2Ae3MA2dj3YEc6DN0f5HTWvQ5ZBrW8DKz9itREcwqLsm3b96k6Gvz09AEf4jDbhPzPeFgBcJu04QKYaooBEbIjck7NqBlXm7v77jxmnytXkv/kyaF0QRtWTsiATuJKp2W3U0hvY7tk7Cy2/t2hO+Yc+6J8gOeDeBi2RMoEd9k08cNBzGwIYpmIa3IQclWIIl8nAALD1R1g==).
 
 ## Other builds of this spec
 
-- [Demonology — Demonic Pact](../research/raid/builds/demonology-pact-raid.md) (2/31/18, 846 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/101-0035003021220301351-0550005003-12)
+- [Demonology — Demonic Pact](../research/raid/builds/demonology-pact-raid.md) (2/31/18, 862 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/101-0035003021220301351-0550005003-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-16 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at ff9babb (client 1.60.1.70888)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-17 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 2e6e77d (client 1.60.1.70938)). Simulations, not in-game measurements. Do not hand-edit.*
 

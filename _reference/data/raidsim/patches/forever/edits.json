@@ -13,9 +13,9 @@
  },
  {
   "file": "sim/hunter/pets.go",
-  "replace": "\t\thp.AutoAttacks.MHConfig().DamageMultiplier /= 1 + attackSpeed.Effect(dbcenums.A_MOD_ATTACKSPEED, 0).Percent()\n",
-  "with": "\t\tif foreverPetNormalize() { // wow-forever patch: Forever keeps a faster pet's swing damage whole (patches/forever/sim/hunter/forever_pet_rule.go)\n\t\t\thp.AutoAttacks.MHConfig().DamageMultiplier /= 1 + attackSpeed.Effect(dbcenums.A_MOD_ATTACKSPEED, 0).Percent()\n\t\t}\n",
-  "why": "forum measurements put a 1.2 s cat 42% ahead of a 2.0 s pet at levels 20-30: Forever does not normalize pet damage by speed; the official simulator does"
+  "replace": "\thp.applyAttackSpeed(petAttackSpeeds[opts.PetAttackSpeed].Highest())\n",
+  "with": "\tif foreverPetNormalize() { // wow-forever patch: Forever keeps a faster pet's swing damage whole (patches/forever/sim/hunter/forever_pet_rule.go)\n\t\thp.applyAttackSpeed(petAttackSpeeds[opts.PetAttackSpeed].Highest())\n\t} else if rank := petAttackSpeeds[opts.PetAttackSpeed].Highest(); rank != spelldata.Nil {\n\t\thp.applyPassiveAura(rank)\n\t}\n",
+  "why": "forum measurements put a 1.2 s cat 42% ahead of a 2.0 s pet at levels 20-30: Forever does not normalize pet damage by speed; the official simulator does. Re-anchored 2026-11-16 for 2e6e77d: upstream moved the normalization into applyAttackSpeed, which Cobra Reflexes also calls (its damage reduction stays upstream's); only the Faster Attack passive is guarded"
  },
  {
   "file": "sim/core/apl_values_aura.go",
@@ -64,11 +64,5 @@
   "replace": "\tif spell == nil {\n\t\treturn nil\n\t}\n\treturn &APLValueSpellCanCast{",
   "with": "\tif spell == nil {\n\t\treturn rot.foreverAbsent(\"false\") // wow-forever patch: absent reads as false (patches/forever/sim/core/forever_absent.go)\n\t}\n\treturn &APLValueSpellCanCast{",
   "why": "a condition on an aura/dot/spell the build lacks reads false (upstream drops it and the action casts always)"
- },
- {
-  "file": "sim/hunter/talents_survival.go",
-  "replace": "\t\tdot := spell.Dot(target)\n\t\ttotalDamage := dot.OutstandingDmg() + bleedDamage\n\n\t\tif dot.IsActive() {\n\t\t\tdot.DurationExtend(sim, laceratingStrikesBleed.Duration())\n\t\t} else {\n\t\t\tdot.Apply(sim)\n\t\t}\n\t\tdot.SnapshotBaseDamage = totalDamage / float64(dot.RemainingTicks())",
-  "with": "\t\tdot := spell.Dot(target)\n\t\tif !foreverLaceratingRoll { // wow-forever patch: the new bleed overwrites (patches/forever/sim/hunter/forever_lacerating.go)\n\t\t\tdot.Apply(sim)\n\t\t\tdot.SnapshotBaseDamage = bleedDamage / float64(dot.RemainingTicks())\n\t\t\treturn\n\t\t}\n\t\ttotalDamage := dot.OutstandingDmg() + bleedDamage\n\n\t\tif dot.IsActive() {\n\t\t\tdot.DurationExtend(sim, laceratingStrikesBleed.Duration())\n\t\t} else {\n\t\t\tdot.Apply(sim)\n\t\t}\n\t\tdot.SnapshotBaseDamage = totalDamage / float64(dot.RemainingTicks())",
-  "why": "Lacerating Strikes' bleed overwrites in game (user 2026-11-12); upstream rolls it (WOW_FOREVER_LACERATING_ROLL=1)"
  }
 ]

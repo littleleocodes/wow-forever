@@ -1,4 +1,4 @@
-# Shadow Bolt hybrid — Raid (open talent search) — 9/11/31
+# Shadow Bolt hybrid — Fire (open talent search) — 9/11/31
 
 *[Warlock](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Shadow Bolt hybrid (an Affliction/Destruction hybrid) raid build the open talent search found on 2026-11-08: every legal 51-point build with no tree rule, searched in the community simulator's fire-destro-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +4.1% over shadow-bolt-hybrid-fire-open-raid, the best of our builds in that rotation.
+The Shadow Bolt hybrid (an Affliction/Destruction hybrid) raid build the open talent search found on 2026-11-17: every legal 51-point build with no tree rule, searched in the community simulator's fire-destro-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). 
 
 ## Point allocation
 
@@ -59,18 +59,18 @@ The Shadow Bolt hybrid (an Affliction/Destruction hybrid) raid build the open ta
 
 ## Rank among our builds and the community simulator's
 
-**1 of 8** for `fire-destro-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 8** for `fire-destro-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`shadow-bolt-hybrid-open-raid`](shadow-bolt-hybrid-open-raid.md)** | ours: derived (open search) | 9/11/31 | 702 | +0.0% | 787 | +0.0% | 1 s |
-| 2 | [`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md) | ours: optimizer | 20/11/20 | 661 | -5.7% | 741 | -5.9% | 1 s |
-| 3 | [`destruction-fire-raid`](destruction-fire-raid.md) | ours: hand draft | 22/11/18 | 654 | -6.8% | 733 | -6.8% | 1 s |
-| 4 | *SM/Ruin* | community simulator | - | 648 | -7.7% | 722 | -8.3% | 1 s |
-| 5 | *Destro* | community simulator | - | 638 | -9.1% | 706 | -10.4% | 1 s |
-| 6 | *Aff (Wrack)* | community simulator | - | 602 | -14.2% | 660 | -16.2% | 1 s |
-| 7 | *Demo (Shadow Brand)* | community simulator | - | 570 | -18.8% | 640 | -18.7% | 1 s |
-| 8 | *Demo (Fire Brand)* | community simulator | - | 558 | -20.5% | 617 | -21.6% | 1 s |
+| 1 | **[`shadow-bolt-hybrid-fire-open-raid`](shadow-bolt-hybrid-fire-open-raid.md)** | ours: derived (open search) | 9/11/31 | 715 | +0.0% | 802 | +0.0% | 1 s |
+| 2 | [`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md) | ours: optimizer | 20/11/20 | 673 | -5.9% | 755 | -5.9% | 1 s |
+| 3 | [`destruction-fire-raid`](destruction-fire-raid.md) | ours: hand draft | 22/11/18 | 666 | -6.9% | 747 | -6.9% | 1 s |
+| 4 | *SM/Ruin* | community simulator | - | 658 | -8.0% | 738 | -8.1% | 1 s |
+| 5 | *Destro* | community simulator | - | 650 | -9.2% | 719 | -10.4% | 1 s |
+| 6 | *Aff (Wrack)* | community simulator | - | 611 | -14.5% | 672 | -16.2% | 1 s |
+| 7 | *Demo (Shadow Brand)* | community simulator | - | 579 | -19.0% | 653 | -18.6% | 1 s |
+| 8 | *Demo (Fire Brand)* | community simulator | - | 566 | -20.9% | 628 | -21.8% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -90,7 +90,7 @@ The Shadow Bolt hybrid (an Affliction/Destruction hybrid) raid build the open ta
   13. drop: if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion (+0.2%, pass 5)
   14. only with 20s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.2%, pass 5)
   15. only with 10s or more of the fight left: if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 12 passes, the last 2026-11-07, 12 changes to the base rotation; third-seed check: open winner 711 -> 786 DPS (+10.7%), shadow-bolt-hybrid-fire-open-raid 764 -> 756 DPS (-1.1%), sim preset: SM/Ruin 739 -> 729 DPS (-1.4%), destruction-fire-raid 751 -> 738 DPS (-1.7%), opt-fire-destro-raid-raid-dps 762 -> 746 DPS (-2.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 13 passes, the last 2026-11-17, 12 changes to the base rotation; third-seed check: shadow-bolt-hybrid-open-raid 721 -> 801 DPS (+11.1%), sim preset: SM/Ruin 749 -> 738 DPS (-1.5%), destruction-fire-raid 762 -> 748 DPS (-1.8%), opt-fire-destro-raid-raid-dps 772 -> 755 DPS (-2.2%)):
   1. drop: cast Shadowburn (+0.8%, pass 1)
   2. threshold 10% -> 5%: if mana % < 10%: cast Life Tap (+0.4%, pass 1)
   3. move down below 'if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony': if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 1)
@@ -106,17 +106,17 @@ The Shadow Bolt hybrid (an Affliction/Destruction hybrid) raid build the open ta
 
 Before the pull: at -1.5s: cast Life Tap.
 
-| # | Priority (the first line whose condition holds is cast) | [`shadow-bolt-hybrid-open-raid`](shadow-bolt-hybrid-open-raid.md) casts/min |
+| # | Priority (the first line whose condition holds is cast) | [`shadow-bolt-hybrid-fire-open-raid`](shadow-bolt-hybrid-fire-open-raid.md) casts/min |
 |---|---|---|
-| 1 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 20s: cast Corruption | 3.3 |
+| 1 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 20s: cast Corruption | 3.2 |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
-| 5 | if time left on Bane of Agony ≤ cast time of Bane of Agony and time left in the fight ≥ 10s: cast Bane of Agony | 2.6 |
+| 5 | if time left on Bane of Agony ≤ cast time of Bane of Agony and time left in the fight ≥ 10s: cast Bane of Agony | 2.5 |
 | 6 | if mana % < 10%: cast Life Tap | 6.5 |
 | 7 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
 | 8 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
-| 9 | cast Conflagrate | 3.8 |
+| 9 | cast Conflagrate | 3.9 |
 | 10 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
 | 11 | cast Shadow Bolt (rank 9) | 12.4 |
 
@@ -124,7 +124,7 @@ Lines of the simulator's rotation these builds never cast: cast Shadowburn (need
 
 Damage by ability:
 
-| Ability | [`shadow-bolt-hybrid-open-raid`](shadow-bolt-hybrid-open-raid.md) |
+| Ability | [`shadow-bolt-hybrid-fire-open-raid`](shadow-bolt-hybrid-fire-open-raid.md) |
 |---|---|
 | Shadow Bolt | 47% |
 | Corruption | 16% |
@@ -136,13 +136,12 @@ Damage by ability:
 
 ## Notes
 
-- +1.1% over the best hand draft of the spec, ds-ruin-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.
-- Open search result (fire-destro-raid, full raid): 9/11/31 (Shadow Bolt hybrid (an Affliction/Destruction hybrid)) at 787.3 DPS; shadow-bolt-hybrid-fire-open-raid 756.3, opt-fire-destro-raid-raid-dps 745.7, destruction-fire-raid 738.4 in the same fights; 2,884 builds simulated, 1 independent runs reached the top.
-- The spec's other builds on the pages (their best entry, full raid): ds-ruin-raid 779.1, opt-sb-raid-raid-dps 777.4.
+- The best fire build: +5.6% over opt-fire-destro-raid-raid-dps, the best of our builds in fire-destro-raid. The spec's raid pick may be another variant; the page lists this one among the spec's other builds.
+- Open search result (fire-destro-raid, full raid): 9/11/31 (Shadow Bolt hybrid (an Affliction/Destruction hybrid)) at 787.3 DPS; opt-fire-destro-raid-raid-dps 745.7, destruction-fire-raid 738.4 in the same fights; 2,884 builds simulated, 1 independent runs reached the top.
 - The fire-destro-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.
 - Sibling rotations tried on it (10,000 fights): affliction-raid -0.3%, sb-raid -0.1%, demonology-raid -0.3%, incinerate-raid -0.1%; none adopted.
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Demonic Embrace, Demonic Aegis.
-- Simulator numbers are the community's model of the beta (wowsims/forever 16e8542 (client 70790) with this project's patches), not in-game measurements.
+- Simulator numbers are the community's model of the beta (wowsims/forever 2e6e77d (client 70938) with this project's patches), not in-game measurements.
 
 ## Open questions (verify in the live game)
 

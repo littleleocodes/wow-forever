@@ -144,21 +144,20 @@
  "raid": {
   "class": "warlock",
   "spec": "sb-raid",
-  "date": "2026-11-07",
-  "commit": "16e85426c",
+  "date": "2026-11-17",
+  "commit": "2e6e77d84",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warlock/dps/apls/ds_ruin.apl.json",
   "start": "ui\\specs\\warlock\\dps\\apls\\ds_ruin.apl.json",
   "builds": [
    {
-    "label": "open winner",
+    "label": "destruction-ml-raid",
     "talents": "252-0050203001-055031500310035"
    },
    {
     "label": "sim preset: SM/Ruin",
-    "talents": "2550002013520105--0550205003",
-    "protect_only": true
+    "talents": "2550002013520105--0550205003"
    },
    {
     "label": "ds-ruin-raid",
@@ -169,15 +168,11 @@
     "label": "opt-sb-raid-raid-dps",
     "talents": "25500010135-2300203001-0550005003",
     "protect_only": true
-   },
-   {
-    "label": "shadow-bolt-hybrid-open-raid",
-    "talents": "25300020135-0050203001-0550105003",
-    "protect_only": true
    }
   ],
   "tuned_on": [
-   "open winner"
+   "destruction-ml-raid",
+   "sim preset: SM/Ruin"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -257,50 +252,41 @@
   ],
   "final": {
    "raid": {
-    "open winner": {
-     "before": 732.5924839368483,
-     "after": 810.6114386146918,
-     "base": 732.5924839368483,
+    "destruction-ml-raid": {
+     "before": 743.0962610212177,
+     "after": 824.9630937917723,
+     "base": 743.0962610212177,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: SM/Ruin": {
-     "before": 763.143419331308,
-     "after": 759.0916354977317,
-     "base": 763.143419331308,
+     "before": 773.4380339258597,
+     "after": 768.178671498457,
+     "base": 773.4380339258597,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.9423867500012595,
-     "oom_after": 0.9423867500012595
+     "oom_before": 1.1904740000000358,
+     "oom_after": 1.1904740000000358
     },
     "ds-ruin-raid": {
-     "before": 780.9425031973,
-     "after": 779.5112542335455,
-     "base": 780.9425031973,
+     "before": 792.0876397186244,
+     "after": 790.1167177050773,
+     "base": 792.0876397186244,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.05719850000010177,
-     "oom_after": 0.05719850000010177
+     "oom_before": 0.16666999999999926,
+     "oom_after": 0.16666999999999926
     },
     "opt-sb-raid-raid-dps": {
-     "before": 783.9157188750949,
-     "after": 777.7388914254684,
-     "base": 783.9157188750949,
+     "before": 795.0518238171042,
+     "after": 788.4367117696286,
+     "base": 795.0518238171042,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.046575500000300266,
-     "oom_after": 0.046575500000300266
-    },
-    "shadow-bolt-hybrid-open-raid": {
-     "before": 785.5970570826652,
-     "after": 783.9672551723531,
-     "base": 785.5970570826652,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
+     "oom_before": 0.15113999999999927,
+     "oom_after": 0.15113999999999927
     }
    }
   },
@@ -320,6 +306,6 @@
    "on": true
   },
   "first_date": "2026-09-27",
-  "passes": 13
+  "passes": 14
  }
 }

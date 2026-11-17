@@ -56,17 +56,17 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
 
 ## Rank among our builds and the community simulator's
 
-**1 of 7** for `affliction-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 7** for `affliction-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md)** | ours: optimizer | 30/0/21 | 715 | +0.0% | 825 | +0.0% | 0 s |
-| 2 | [`affliction-dot-raid`](affliction-dot-raid.md) | ours: hand draft | 30/0/21 | 709 | -0.8% | 817 | -0.9% | 0 s |
-| 3 | *SM/Ruin* | community simulator | - | 707 | -1.1% | 818 | -0.8% | 0 s |
-| 4 | *Demo (Shadow Brand)* | community simulator | - | 656 | -8.2% | 763 | -7.4% | 0 s |
-| 5 | *Demo (Fire Brand)* | community simulator | - | 640 | -10.5% | 734 | -11.0% | 0 s |
-| 6 | *Destro* | community simulator | - | 609 | -14.9% | 693 | -16.0% | 0 s |
-| 7 | *Aff (Wrack)* | community simulator | - | 599 | -16.2% | 668 | -19.0% | 0 s |
+| 1 | **[`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md)** | ours: optimizer | 30/0/21 | 728 | +0.0% | 838 | +0.0% | 0 s |
+| 2 | [`affliction-dot-raid`](affliction-dot-raid.md) | ours: hand draft | 30/0/21 | 722 | -0.8% | 833 | -0.7% | 0 s |
+| 3 | *SM/Ruin* | community simulator | - | 719 | -1.3% | 834 | -0.5% | 0 s |
+| 4 | *Demo (Shadow Brand)* | community simulator | - | 668 | -8.3% | 777 | -7.3% | 0 s |
+| 5 | *Demo (Fire Brand)* | community simulator | - | 650 | -10.7% | 745 | -11.1% | 0 s |
+| 6 | *Destro* | community simulator | - | 619 | -15.1% | 705 | -16.0% | 0 s |
+| 7 | *Aff (Wrack)* | community simulator | - | 608 | -16.6% | 679 | -19.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -75,7 +75,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
   2. threshold 75% -> 55%: if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion (+0.2%, pass 2)
   3. only with 20s or more of the fight left: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.2%, pass 2)
   4. only with 10s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.2%, pass 4)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 10 passes, the last 2026-11-07, 10 changes to the base rotation; third-seed check: opt-affliction-raid-raid-dps 829 -> 827 DPS (-0.2%), sim preset: SM/Ruin 820 -> 822 DPS (+0.2%), affliction-dot-raid 822 -> 821 DPS (-0.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 11 passes, the last 2026-11-17, 10 changes to the base rotation; third-seed check: opt-affliction-raid-raid-dps 840 -> 839 DPS (-0.1%), sim preset: SM/Ruin 831 -> 833 DPS (+0.3%), affliction-dot-raid 833 -> 832 DPS (-0.1%)):
   1. only with 6s or more of the fight left: if mana % < 10%: cast Life Tap (+0.2%, pass 1)
   2. move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.2%, pass 1)
   3. insert before the filler: cast Talisman of Ephemeral Power (+0.4%, pass 5)
@@ -101,7 +101,7 @@ Before the pull: at -5s: cast Amplify Curse.
 | 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
 | 9 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.3 |
 | 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
-| 11 | cast Shadow Bolt (rank 9) | 14.7 |
+| 11 | cast Shadow Bolt (rank 9) | 14.8 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Siphon Life (needs the Siphon Life talent).
 
@@ -110,7 +110,7 @@ Damage by ability:
 | Ability | [`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md) |
 |---|---|
 | Shadow Bolt | 49% |
-| Bane of Agony | 18% |
+| Bane of Agony | 17% |
 | Corruption | 16% |
 | Immolate | 10% |
 | Pet: Auto Attack | 4% |

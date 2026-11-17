@@ -19,19 +19,19 @@ Your next talents: 23 Toughness, 24 Toughness, 25 Improved Righteous Fury, 26 Im
 
 Order: Well Rested 5 → Talented 5 → Gourmand 3 → The Quick and the Dead 2 → Reinforce 1. Your group character. Thrill of Adventure does nothing in dungeons and little in a group (the killing blows are shared), so it is left out. Well Rested first: you are logged out between group nights, so your rested bar fills and caps, and rested experience doubles kill experience, dungeon kills included; it is also the price of Talented. Talented gives your next five tank talents five levels early (more threat and survival in every dungeon until 55). Then Gourmand (one meal lasts a whole dungeon), The Quick and the Dead (a faster corpse run and free heals and blessings after a wipe) and Reinforce (tanks die most). At 60, respec into an endgame build.
 
-Closest next points: Novice Paladin: Tara 22/25; Novice Spelunker: 5 of 6 dungeons; left: Shadowfang Keep; Expert Tailor: Tailoring 164/225; Experienced Mage: Arcea 32/45; Expert Enchanter: Enchanting 151/225.
+Closest next points: Novice Paladin: Tara 22/25; Novice Spelunker: 5 of 6 dungeons; left: Shadowfang Keep; Experienced Mage: Arcea 37/45; Expert Tailor: Tailoring 177/225; Expert Enchanter: Enchanting 165/225.
 
 ## Since your last refresh (2026-11-13 22:31, level 22)
 
-- New in the plan: Guard's Chain Helm (head, level 25), Furious Falchion of the Elder (weapon, level 40).
-- Left the plan: Protector's Silvered Chain Shirt (chest: dropped: nothing in its place), Guard's Silvered Chain Helm (head: Guard's Chain Helm at level 25 replaces it), Ebon Scimitar of the Sorcerer (weapon: Furious Falchion of the Elder at level 40 replaces it).
+- New in the plan: Guard's Chain Helm (head, level 25), Furious Falchion of the Sorcerer (weapon, level 40).
+- Left the plan: Protector's Silvered Chain Shirt (chest: dropped: nothing in its place), Guard's Silvered Chain Helm (head: Guard's Chain Helm at level 25 replaces it), Ebon Scimitar of the Sorcerer (weapon: Furious Falchion of the Sorcerer at level 40 replaces it).
 - Moved: Protector's Gloves (hands) level 22 to 23.
 
 ## Gold plan
 
-Gold now: **1g 85s 63c**. Training you need at the next two levels: **2g 50s**. Free for gear now: **0c**. You are **64s 37c short** of that training: sell your crafts before you buy anything.
+Gold now: **1g 85s 63c**. Training you need now and at the next two levels: **3g 70s**. Free for gear now: **0c**. You are **1g 84s 37c short** of that training: sell your crafts before you buy anything.
 
-Which ranks you know is unknown: ForeverTape (0.9.5 or later) writes your spellbook after a /reload or a logout.
+Your spellbook (ForeverTape, 2026-11-14 22:46) lacks, at your level or below: Holy Light (rank 4) (22, 40s), Blessing of Might (rank 3) (22, 40s), Seal of the Crusader (rank 3) (22, 40s): 1g 20s, train them first. Optional ranks it lacks: Voice of Truth, Concentration Aura, Seal of Justice (1g 20s).
 
 Income is an estimate from Classic's data: coin and loot from about 88 kills a level (cloth, greens and other trade goods at the auction house's usual sale price after its cut, the rest at vendor prices), plus your pace of 8.9 quests a level at Classic's quest money. It assumes you sell what drops or use it in place of buying it. "Training" counts the spells your rotation and kit use; optional ones (spells your build does not press, teleports) are listed apart. Only spells your race can learn are counted, and a talent's spell only once your build has the talent. Spells new in Forever (Holy Shield, Holy Strike, Seal of Fury) are not in Classic's trainer table: their price here is Classic's usual price for the level, an estimate.
 
@@ -41,10 +41,10 @@ Income is an estimate from Classic's data: coin and loot from about 88 kills a l
 | 23 | 2g 92s 75c | 2g 50s (Turn Undead, Hammer of Justice, Blessing of Protection, Redemption, Blessing of Wisdom) | - |
 | 24 | 3g 43s 42c | - | - |
 | 25 | 3g 49s 91c | 2g 40s (Retribution Aura, Flash of Light, Seal of Righteousness, Seal of Fury) | 60s |
-| 26 | 4g 35s 13c | - | - |
+| 26 | 4g 35s 40c | - | - |
 | 27 | 4g 34s 85c | 1g 80s (Exorcism, Holy Strike) | 90s |
-| 28 | 4g 13s 25c | - | - |
-| 29 | 4g 54s 38c | 4g 42s (Holy Light, Lay on Hands, Devotion Aura, Divine Intervention, Consecration) | 1g 10s |
+| 28 | 4g 13s 13c | - | - |
+| 29 | 4g 54s 38c | 4g 42s (Holy Light, Lay on Hands, Devotion Aura, Divine Intervention, Consecration) | 1g 12s |
 | 30 | 6g 13s 58c | - | - |
 | 31 | 6g 60s 2c | 2g 40s (Blessing of Might, Seal of the Crusader) | 1g 20s |
 | 32 | 8g 38c | - | - |
@@ -52,12 +52,12 @@ Income is an estimate from Classic's data: coin and loot from about 88 kills a l
 | 34 | 8g 46s 22c | - | - |
 | 35 | 9g 34s 1c | 5g 60s (Exorcism, Retribution Aura, Redemption, Holy Strike) | 1g 40s |
 
-Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Stormwind; Forever's not confirmed). At this income you would have about 91g 44s by 40 after training and the plan's gear, enough for the mount at 41.
+Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Stormwind; Forever's not confirmed). At this income you would have about 90g 77s 53c by 40 after training and the plan's gear, enough for the mount at 41.
 
-Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 5g 6s 71c before 40 and 16g 38s 91c in all; you would reach 60 with about 652g 35s 81c after the mount.
+Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 4g 52s 42c before 40 and 14g 70s 6c in all; you would reach 60 with about 651g 67s 16c after the mount.
 
-> **Heads up:** Gold is your bag add-on's (2026-11-14 07:48): Blizzard's data are from your logout at 2026-11-13 07:08.
-> **Heads up:** Catch up with your guide is off for this refresh: your quest log is Blizzard's from your logout at 2026-11-13 07:08, older than your guide's position (saved 2026-11-14 07:53), so it cannot tell which quests you picked up since. Log out once and refresh.
+> **Heads up:** Gold is your bag add-on's (2026-11-14 22:46): Blizzard's data are from your logout at 2026-11-13 07:08.
+> **Heads up:** Catch up with your guide is off for this refresh: your quest log is Blizzard's from your logout at 2026-11-13 07:08, older than your guide's position (saved 2026-11-14 22:46), so it cannot tell which quests you picked up since. Log out once and refresh.
 
 ## Now (level 22)
 
@@ -65,16 +65,16 @@ Everything below is worth doing at your level or within 3 levels: items you can 
 
 ### Judging a drop or an auction find
 
-Count a piece's stats in stamina: 100 armor = 5.68, 1 weapon damage per second = 1.50, 1 hit = 0.93, 1 defense = 0.75, 1 block = 0.67, 1 agility = 0.59, 1 expertise = 0.56, 1 spell power = 0.48, 1 mana per 5 sec = 0.43. A find is worth wearing when it reaches the number below: enough to save 20 minutes before the plan's next upgrade of the slot.
+Count a piece's stats in stamina: 100 armor = 5.73, 1 weapon damage per second = 1.54, 1 hit = 1.06, 1 defense = 0.75, 1 expertise = 0.66, 1 agility = 0.58, 1 block = 0.51, 1 spell power = 0.48, 1 mana per 5 sec = 0.39. A find is worth wearing when it reaches the number below: enough to save 20 minutes before the plan's next upgrade of the slot.
 
 | Slot | You wear (or the plan's next piece) | Worth (stamina) | A find must reach | Next planned upgrade |
 |---|---|---|---|---|
 | head | Guard's Chain Helm (planned, level 25) | 28 | 46 | 50 |
 | neck | empty | 0 | 10 | - |
 | shoulder | Laced Mail Shoulderpads | 0 | 32 | 40 |
-| back | Catacomb Cloak | 2 | 12 | - |
-| chest | Burnished Tunic | 14 | 24 | - |
-| wrist | Bravo's Armbands | 3 | 44 | 37 |
+| back | Catacomb Cloak | 2 | 13 | - |
+| chest | Burnished Tunic | 14 | 25 | - |
+| wrist | Bravo's Armbands | 2 | 44 | 37 |
 | hands | Protector's Gloves (planned, level 23) | 16 | 33 | 50 |
 | waist | Atrophic Girdle | 14 | 104 | 30 |
 | legs | Chausses of Westfall | 18 | 67 | 35 |
@@ -83,7 +83,7 @@ Count a piece's stats in stamina: 100 armor = 5.68, 1 weapon damage per second =
 | finger2 | First Mate Band | 6 | 16 | - |
 | trinket1 | Lookie's Spyglass | 0 | 10 | - |
 | trinket2 | empty | 0 | 10 | - |
-| weapon | Stinging Viper | 23 | 55 | 40 |
+| weapon | Stinging Viper | 24 | 56 | 40 |
 | ranged | empty | 0 | 10 | - |
 
 ### Enchant
@@ -92,21 +92,21 @@ Count a piece's stats in stamina: 100 armor = 5.68, 1 weapon damage per second =
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 0.6 hours old). "For your trip": enough to keep it up for about 1.7 hours of play, to your next training at level 24 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 2.8 hours old). "For your trip": enough to keep it up for about 1.7 hours of play, to your next training at level 24 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Better tanking | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|
 | Food | Curiously Tasty Omelet | +5 stamina, +5% kill experience | 0.3% | 15 min | buy (you make it at Cooking 130; you have 53) | 1s 50c | ×7 (10s 50c) | no: saves 1.6 min an hour, costs 1.7 |
-| Food | Gooey Spider Cake | +5 stamina, +5% kill experience | 0.3% | 15 min | buy (you make it at Cooking 110; you have 53) | 1s 89c | ×7 (13s 23c) | no: saves 1.6 min an hour, costs 2.1 |
+| Food | Gooey Spider Cake | +5 stamina, +5% kill experience | 0.3% | 15 min | buy (you make it at Cooking 110; you have 53) | 1s 90c | ×7 (13s 30c) | no: saves 1.6 min an hour, costs 2.1 |
 | Food | Soothing Turtle Bisque | +5 stamina, +5% kill experience | 0.3% | 15 min | buy (you make it at Cooking 175; you have 53) | 3s | ×7 (21s) | no: saves 1.6 min an hour, costs 3.4 |
-| Scroll | Scroll of Stamina II | +8 stamina | 0.5% | 30 min | buy | 1s 39c | ×4 (5s 56c) | no: saves 0.2 min an hour, costs 0.8 |
+| Scroll | Scroll of Stamina II | +8 stamina | 0.5% | 30 min | buy | 1s 75c | ×4 (7s) | no: saves 0.2 min an hour, costs 1.0 |
 
 One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience is extra: a food's +5% speeds up the experience you get from kills, not from quests. Elixirs: Classic lets several stack; Forever's rule is not confirmed.
 
 ### Craft
 
-- **head**: Guard's Chain Helm, 1.9% better tanking (wear it right away; best until level 50; saves about 41 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 130 in the client's data; you have 40). Why it stays: Warbringer's Crown of the Beast at 40, 0.8% better, saves about 9 min before its next upgrade; Warbringer's Crown of the Champion at 40, 0.7% better, saves about 8 min before its next upgrade; Warbringer's Crown of the Defender at 40, 0.9% better, saves about 10 min before its next upgrade. If you do not craft it, wear Chief Brigadier Coif from level 34 (1.9% better tanking; Auction House: usually listed (in 94% of the hourly snapshots), about 57s, not this hour). Materials: Bronze Bar x8, Coarse Grinding Stone x2, Shadowgem x6 (about 35s 78c at today's prices).
-- **hands**: Protector's Gloves, 1.0% better tanking, replaces Dusty Mining Gloves (wear it right away; best until level 50; saves about 21 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 110 in the client's data; you have 40). Why it stays: Justicar's Gauntlet at 35, 0.6% better, saves about 9 min before its next upgrade; Sentinel's Gauntlet at 35, 0.7% better, saves about 11 min before its next upgrade; Warder's Gauntlet at 35, 0.9% better, saves about 14 min before its next upgrade. If you do not craft it, wear Krol'dok Warplate Gauntlets from level 40 (1.9% better tanking; Auction House now: 4g 9s). Materials: Bronze Bar x10, Rough Grinding Stone x4, Sulfuric Acid x2, Tigerseye x3 (about 30s 77c at today's prices).
+- **head**: Guard's Chain Helm, 1.9% better tanking (wear it right away; best until level 50; saves about 39 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 130 in the client's data; you have 40). Why it stays: Warbringer's Crown of the Beast at 40, 0.8% better, saves about 9 min before its next upgrade; Warbringer's Crown of the Champion at 40, 0.8% better, saves about 8 min before its next upgrade; Warbringer's Crown of the Defender at 40, 0.9% better, saves about 10 min before its next upgrade. If you do not craft it, wear Chief Brigadier Coif from level 34 (1.8% better tanking; Auction House: usually listed (in 96% of the hourly snapshots), about 52s, not this hour). Materials: Bronze Bar x8, Coarse Grinding Stone x2, Shadowgem x6 (about 35s 70c at today's prices).
+- **hands**: Protector's Gloves, 1.0% better tanking, replaces Dusty Mining Gloves (wear it right away; best until level 50; saves about 21 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 110 in the client's data; you have 40). Why it stays: Justicar's Gauntlet at 35, 0.6% better, saves about 9 min before its next upgrade; Sentinel's Gauntlet at 35, 0.7% better, saves about 11 min before its next upgrade; Warder's Gauntlet at 35, 0.9% better, saves about 14 min before its next upgrade. If you do not craft it, wear Krol'dok Warplate Gauntlets from level 40 (1.9% better tanking; Auction House: listed now at 6g 40s 99c, usually about 2g 69s: wait for a cheaper one). Materials: Bronze Bar x10, Rough Grinding Stone x4, Sulfuric Acid x2, Tigerseye x3 (about 34s 48c at today's prices).
 
 ### Dungeon runs
 
@@ -134,29 +134,29 @@ Crafts in your plan:
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 40-46 | Coarse Sharpening Stone | 7 | makes 74c |
-| 46-50 | Coarse Weightstone | 8 | makes 27c |
-| 50-75 | Rough Grinding Stone | 49 | 11s 31c |
+| 40-48 | Copper Axe | 8 | makes 6s 72c |
+| 48-51 | Coarse Sharpening Stone | 8 | makes 1s 77c |
+| 51-75 | Rough Grinding Stone | 48 | 7s 31c |
 
-You spend about 10s 30c in all to reach 75, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
-Materials: Coarse Stone x16, Rough Stone x97.
+You make about 1s 19c in all to reach 75, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
+Materials: Copper Bar x48, Rough Stone x95, Weak Flux x8, Coarse Stone x8, Linen Cloth x16.
 
 ### Cooking 53 to 75
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 53-75 | Rainbow Fin Albacore | 22 | 70c |
+| 53-75 | Rainbow Fin Albacore | 22 | 26c |
 
-You spend about 70c in all to reach 75, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
+You spend about 26c in all to reach 75, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
 Materials: Raw Rainbow Fin Albacore x22.
 
 ### First Aid 73 to 75
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 73-75 | Minor Healing Potion | 4 | 1s 32c |
+| 73-75 | Minor Healing Potion | 4 | 1s 50c |
 
-You spend about 1s 32c in all to reach 75, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
+You spend about 1s 50c in all to reach 75, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
 Materials: Peacebloom x4, Empty Vial x4, Mild Spices x4.
 
 **Mining** 75/75: at your rank's cap; train the next rank to go on.
@@ -179,8 +179,8 @@ Materials: Peacebloom x4, Empty Vial x4, Mild Spices x4.
 | finger2 | First Mate Band | 0.4% better tanking | not before 60 by 0.5% |
 | trinket1 | Lookie's Spyglass | 0.0% better tanking | not before 60 by 0.5% |
 | trinket2 | **empty** | 0 | nothing worth 0.5% before 60 |
-| main hand | Stinging Viper | 1.6% better tanking | level 40: Furious Falchion of the Elder + Captain's Buckler of the Defender |
-| off hand | Kresh's Back | 2.5% better tanking | level 40: Furious Falchion of the Elder + Captain's Buckler of the Defender |
+| main hand | Stinging Viper | 1.6% better tanking | level 40: Furious Falchion of the Sorcerer + Crest of Elucidation |
+| off hand | Kresh's Back | 2.5% better tanking | level 40: Furious Falchion of the Sorcerer + Crest of Elucidation |
 | ranged | **empty** | 0 | nothing worth 0.5% before 60 |
 
 ## Level by level
@@ -191,73 +191,57 @@ Each upgrade worth 0.5% better tanking or more, under the level at which you can
 
 #### Craft
 
-- **waist**: Warder's Belt, 0.8% better tanking, replaces Atrophic Girdle (wear it right away; best to the end of leveling; saves about 28 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 155 in the client's data; you have 40). Why it stays: Justicar's Waistguard at 50, 1.1% better, saves about 16 min before 60; Sentinel's Waistguard at 50, 1.2% better, saves about 17 min before 60; Warder's Waistguard at 50, 1.5% better, saves about 21 min, but its 9g 57s 48c takes about 70 min of play to earn. If you do not craft it, keep your Atrophic Girdle. Materials: Iron Bar x6, Heavy Grinding Stone x2, Black Pearl x2 (about 73s 8c at today's prices).
+- **waist**: Warder's Belt, 0.8% better tanking, replaces Atrophic Girdle (wear it right away; best to the end of leveling; saves about 28 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 155 in the client's data; you have 40). Why it stays: Justicar's Waistguard at 50, 1.1% better, saves about 15 min before 60; Sentinel's Waistguard at 50, 1.2% better, saves about 17 min before 60; Warder's Waistguard at 50, 1.4% better, saves about 21 min, but its 7g 77s 58c takes about 57 min of play to earn. If you do not craft it, keep your Atrophic Girdle. Materials: Iron Bar x6, Heavy Grinding Stone x2, Black Pearl x2 (about 71s 52c at today's prices).
 
 
 ### Level 35
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **legs**: Risen Sentry's Links, 1.2% better tanking, replaces Chausses of Westfall (wear it right away; best to the end of leveling; saves about 37 min of group play). Auction House now: 1g 8s. Why it stays: Krol'dok Warplate Legplates at 41, 1.1% better, saves about 27 min, but its 8g 59s takes about 95 min of play to earn; Titanic Leggings at 55, 1.9% better, saves about 16 min before 60. Saves about 37 min of group play; earning its price takes about 28 min of play. Fits your gear budget (11g 61s 44c left after it).
+- **legs**: Risen Sentry's Links, 1.2% better tanking, replaces Chausses of Westfall (wear it right away; best to the end of leveling; saves about 37 min of group play). Auction House now: 1g 45s. Why it stays: Krol'dok Warplate Legplates at 41, 1.1% better, saves about 27 min, but its 8g 22s 50c takes about 88 min of play to earn; Titanic Leggings at 55, 2.2% better, saves about 17 min before 60. Saves about 37 min of group play; earning its price takes about 27 min of play. Fits your gear budget (11g 56s 42c left after it).
 
 
 ### Level 37
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **wrist**: Turtle Scale Bracers, 1.3% better tanking, replaces Bravo's Armbands (wear it right away; best to the end of leveling; saves about 37 min of group play). Auction House: usually listed (in 70% of the hourly snapshots), about 2g 24s 99c, not this hour. Why it stays: Sentinel's Wristguards at 45, 0.7% better, saves about 14 min before 60; Warder's Wristguards at 45, 0.8% better, saves about 17 min before 60. Saves about 37 min of group play; earning its price takes about 33 min of play. Fits your gear budget (15g 23s 56c left after it).
+- **wrist**: Turtle Scale Bracers, 1.3% better tanking, replaces Bravo's Armbands (wear it right away; best to the end of leveling; saves about 36 min of group play). Auction House now: 2g 20s 96c. Why it stays: Sentinel's Wristguards at 45, 0.7% better, saves about 15 min before 60; Warder's Wristguards at 45, 0.8% better, saves about 17 min before 60. Saves about 36 min of group play; earning its price takes about 23 min of play. Fits your gear budget (15g 77s 90c left after it).
 
 
 ### Level 40
 
+#### Quests to do
+
+- **weapon**: Furious Falchion of the Sorcerer + Crest of Elucidation, 7.0% better tanking, replaces Stinging Viper (wear it right away; best to the end of leveling; saves about 181 min of group play). Auction House now: 4g 10s 4c / quest "Greater Friend of the Library". Not on your RestedXP route: a detour to its zone. Why it stays: Sageblade at 59, 6.5% better, saves about 10 min before 60; Sageblade at 59, 6.5% better, saves about 10 min before 60; Sageblade at 59, 6.8% better, saves about 11 min before 60.
+
 #### Craft
 
-- **feet**: Warder's Boots, 2.3% better tanking, replaces War Paint Anklewraps (wear it right away; best to the end of leveling; saves about 60 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 205 in the client's data; you have 40). If you do not craft it, keep your War Paint Anklewraps. Materials: Steel Bar x4, Heavy Grinding Stone x4, Black Pearl x4 (about 1g 42s 12c at today's prices).
+- **feet**: Warder's Boots, 2.3% better tanking, replaces War Paint Anklewraps (wear it right away; best to the end of leveling; saves about 60 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 205 in the client's data; you have 40). If you do not craft it, keep your War Paint Anklewraps. Materials: Steel Bar x4, Heavy Grinding Stone x4, Black Pearl x4 (about 1g 36s 48c at today's prices).
 
 #### Buy on the Auction House (usually listed; usual prices, look again then)
 
-- **shoulder**: Tyrant's Epaulets, 2.2% better tanking, replaces Laced Mail Shoulderpads (wear it right away; best to the end of leveling; saves about 58 min of group play). Auction House now: 90s 99c. Why it stays: Krol'dok Warplate Pauldrons at 41, 1.0% better, saves about 25 min, but its 9g 10s takes about 100 min of play to earn; Stockade Pauldrons at 50, 1.9% better, saves about 28 min, but its 75g 80s takes about 552 min of play to earn. Saves about 58 min of group play; earning its price takes about 15 min of play. Fits your gear budget (22g 15s 3c left after it).
-- **weapon**: Furious Falchion of the Elder + Captain's Buckler of the Defender, 6.4% better tanking, replaces Stinging Viper (wear it right away; best to the end of leveling; saves about 170 min of group play). Auction House: listed now at 6g 69s, usually about 3g: wait for a cheaper one / Auction House: usually listed (in 26% of the hourly snapshots), about 2g 89s, not this hour. Why it stays: Sageblade at 59, 6.3% better, saves about 10 min before 60; Sageblade at 59, 6.6% better, saves about 11 min before 60; Sageblade at 59, 6.8% better, saves about 11 min before 60. Saves about 170 min of group play; earning its price takes about 88 min of play. Fits your gear budget (14g 83s 91c left after it).
+- **shoulder**: Tyrant's Epaulets, 2.2% better tanking, replaces Laced Mail Shoulderpads (wear it right away; best to the end of leveling; saves about 57 min of group play). Auction House now: 1g 1s 98c. Why it stays: Brutish Shoulders of the Defender at 40, only 0.1% better; Krol'dok Warplate Pauldrons at 41, 1.1% better, saves about 27 min, but its 9g 20s takes about 99 min of play to earn; Stockade Pauldrons at 50, 1.9% better, saves about 27 min, but its 80g takes about 589 min of play to earn. Saves about 57 min of group play; earning its price takes about 14 min of play. Fits your gear budget (22g 68s 7c left after it).
 
 
 ### Level 50
 
 #### Quests to do
 
-- **head**: Avenguard Helm, 2.0% better tanking, replaces Guard's Chain Helm (wear it right away; best to the end of leveling; saves about 29 min of group play). quest "The God Hakkar" (level 53; the chain starts with "Screecher Spirits" from Yeh'kinya, level 40). Not on your RestedXP route (it takes the chain as far as "Screecher Spirits", at about level 47): from Yeh'kinya (Tanaris 67.0, 22.4). Why it stays: Lionheart Helm at 56, 0.5% better, saves about 3 min before 60.
+- **head**: Avenguard Helm, 2.0% better tanking, replaces Guard's Chain Helm (wear it right away; best to the end of leveling; saves about 29 min of group play). quest "The God Hakkar" (level 53; the chain starts with "Screecher Spirits" from Yeh'kinya, level 40). Not on your RestedXP route (it takes the chain as far as "Screecher Spirits", at about level 47): from Yeh'kinya (Tanaris 67.0, 22.4). Why it stays: Lionheart Helm at 56, 0.7% better, saves about 5 min before 60.
 
 #### Craft
 
-- **hands**: Warder's Gloves, 2.4% better tanking, replaces Protector's Gloves (wear it right away; best to the end of leveling; saves about 34 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 255 in the client's data; you have 40). If you do not craft it, wear Krol'dok Warplate Gauntlets instead (1.0% better tanking; Auction House now: 4g 9s). Materials: Thorium Bar x8, Solid Grinding Stone x4, Black Pearl x4 (about 3g 2s 8c at today's prices).
+- **hands**: Warder's Gloves, 2.3% better tanking, replaces Protector's Gloves (wear it right away; best to the end of leveling; saves about 34 min of group play). Blacksmithing: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 255 in the client's data; you have 40). If you do not craft it, wear Krol'dok Warplate Gauntlets instead (1.0% better tanking; Auction House: listed now at 6g 40s 99c, usually about 2g 69s: wait for a cheaper one). Materials: Thorium Bar x8, Solid Grinding Stone x4, Black Pearl x4 (about 2g 31s 16c at today's prices).
 
 
-## When to leave the guide
+## Off the guide
 
-Everything worth stepping off your RestedXP route for, in the route's order: the guide's own dungeons where it runs them, side-trip dungeons, detour quests (clear wins, worth it if you like it, for the gear) and the gear plan's quests the route leaves out. Each is tied to the moment in the guide it starts from: the quest it has you hand in or pick up there (the step number is the guide's own count within that part, an estimate). Do it, then pick the guide up where you left it.
+Only what is worth stepping off your RestedXP route for, in the route's order: catching up with your guide, and gear the plan counts on that the route leaves out (its quests, a side trip for a reward or drops). The route is a good leveling path as it is: side quests for experience (a few minutes each, inside the estimate's own error) and the guide's own dungeons are left to it (2026-11-15). Each is tied to the moment in the guide it starts from: the quest it has you hand in or pick up there (the step number is the guide's own count within that part, an estimate). Do it, then pick the guide up where you left it.
 
 Checked against your RestedXP add-on: you are on step 4 of its 20-21 part; the add-on's own step id matches the guide text on this PC.
 
-- **Level 26, step 85 of the guide's 24-28 part**, while the guide has you on "An Unwelcome Guest" (Redridge Mountains 15.7, 49.3): **Run Blackfathom Deeps** (side trip). 3 quests at full experience; tick it in RestedXP's dungeon settings and the guide picks up its quests on the way. Pick up first: In Search of Thaelrid → Blackfathom Villainy (2 parts, level 24-27, from Argent Guard Manados (Darnassus 55.4, 25.0)); Twilight Falls (level 25, from Argent Guard Manados (Darnassus 55.4, 25.0)).
-- **Level 26, step 120 of the guide's 24-28 part**, when the guide brings you to Stormwind City (Stormwind City 39.8, 54.4): **Run The Stockade** (with your guide). Your guide runs it here and takes 5 of its quests. Pick up first: The Fury Runs Deep (level 27, start with "The Dark Iron War" from Motley Garmason (Wetlands 50.0, 18.2)).
-- **Level 31, step 151 of the guide's 28-31 part**, when the guide has you pick up "Lightforge Iron" from Glorin Steelbrow (Wetlands 10.6, 60.6): **Lightforge Ingots** (worth it if you like it). +2,740 experience in about 5 min, about 2 min ahead of your usual pace; from Glorin Steelbrow (Wetlands 10.6, 60.6).
-- **Level 31, step 8 of the guide's 31-31 part**, when the guide brings you to Baritanas Skyriver (Desolace 64.7, 10.5), before the flight to Stonetalon: **Vahlarriel's Search → Vahlarriel's Search → Vahlarriel's Search → Search for Tyranis** (clear win). +9,434 experience in about 11 min, about 12 min ahead of your usual pace; from Vahlarriel Demonslayer (Desolace 66.4, 11.8).
-- **Level 33, step 163 of the guide's 31-33 part**, when the guide brings you to Dun Morogh (Dun Morogh 22.0, 39.1): **Run Gnomeregan** (with your guide). Your guide runs it here and takes 3 of its quests.
-- **Level 34, step 68 of the guide's 33-34 part**, when the guide has you pick up "Northfold Manor" from Captain Nials (Arathi Highlands 45.8, 47.5): **Stromgarde Badges** (worth it if you like it). +5,666 experience in about 10 min, about 3 min ahead of your usual pace; from Captain Nials (Arathi Highlands 45.8, 47.5).
-- **Level 34, step 24 of the guide's 34-35 part**, when the guide has you pick up "Stepping Stones" (The Barrens 46.4, 73.8), before the trip to Thousand Needles: **Run Razorfen Kraul** (side trip). 2 quests at full experience; tick it in RestedXP's dungeon settings and the guide picks up its quests on the way. Starts inside the run: Mortality Wanes (level 30, from Heralath Fallowbrook or Willix the Importer inside Razorfen Kraul); Willix the Importer (level 30, from Heralath Fallowbrook or Willix the Importer inside Razorfen Kraul).
-- **Level 39, step 31 of the guide's 39-40 part**, when the guide has you pick up "Crushridge Bounty" from Marshal Redpath (Hillsbrad Foothills 49.5, 58.7): **Crushridge Warmongers** (clear win). +7,056 experience in about 12 min, about 3 min ahead of your usual pace; from Marshal Redpath (Hillsbrad Foothills 49.5, 58.7).
-- **Level 40, step 9 of the guide's 40-41 part**, when the guide brings you to Dustwallow Marsh (Dustwallow Marsh 29.7, 75.1), before the trip to Wetlands: **Run Razorfen Downs** (with your guide). Your guide runs it here and takes 3 of its quests.
-- **Level 41, step 20 of the guide's 41-42 part**, when the guide has you pick up "A Dwarf and His Tools" from Prospector Ryedol (Badlands 53.8, 43.3): **Fiery Blaze Enchantments** (worth it if you like it). +17,375 experience in about 36 min, about 2 min ahead of your usual pace; from Sigrun Ironhew (Badlands 53.8, 43.3).
-- **Level 43, step 46 of the guide's 42-44 part**, right after you hand in "Troll Witchery" to Brother Nimetz (Stranglethorn Vale 37.8, 3.6): **Mai'Zoth** (clear win). +5,356 experience in about 7 min, about 4 min ahead of your usual pace; from Brother Nimetz (Stranglethorn Vale 37.8, 3.6).
-- **Level 46, step 16 of the guide's 46-46 part**, when the guide brings you to Loch Modan (Loch Modan 34.9, 85.5): **Run Uldaman** (with your guide). Your guide runs it here. Pick up first: Indurium Ore (level 42, start with "Martek the Exiled" from Fizzle Brassbolts (Thousand Needles 78.1, 77.1)); Back to Uldaman → Restoring the Necklace (3 parts, level 42-44, start with "The Shattered Necklace", which starts from Shattered Necklace, an 8% drop from 6 kinds of mobs in Badlands); Wild Leather Shoulders (level 45, start with "Wild Leather Armor" from Pratt McGrubben (Feralas 30.6, 42.7)).
-- **Level 47, step 47 of the guide's 46-47 part**, when the guide brings you to Tanaris (Tanaris 38.7, 19.8): **Run Zul'Farrak** (with your guide). Your guide runs it here and takes 4 of its quests. Pick up first: The Prophecy of Mosh'aru (level 47, start with "Screecher Spirits" from Yeh'kinya (Tanaris 67.0, 22.4)).
+- **Level 40, step 75 of the guide's 39-40 part**, when the guide has you pick up "Hints of a New Plague?" from Phin Odelic (Hillsbrad Foothills 50.3, 59.0): **Greater Friend of the Library** (for the gear). Rewards Furious Falchion of the Sorcerer + Crest of Elucidation; who gives it is not in the data, so ask around while the guide has you in its zone.
 - **Level 50, step 46 of the guide's 49-50 part**, right after you hand in "Insect Part Analysis" to Senior Surveyor Fizzledowser (Tanaris 50.2, 27.5): **The God Hakkar** (for the gear). Rewards Avenguard Helm; start with "Screecher Spirits" from Yeh'kinya (Tanaris 67.0, 22.4).
-- **Level 50, step 76 of the guide's 49-50 part**, right after you hand in "Williden's Journal" to Williden Marshal (Un'Goro Crater 43.9, 7.1): **Muigin and Larion** (clear win). +11,489 experience in about 15 min, about 7 min ahead of your usual pace; from Muigin (Un'Goro Crater 42.9, 9.6).
-- **Level 51, step 4 of the guide's 51-51 part**, right after you hand in "Petty Squabbles" to Fallen Hero of the Horde (Swamp of Sorrows 34.3, 66.1): **The Stones That Bind Us** (clear win). +13,940 experience in about 19 min, about 5 min ahead of your usual pace; from Fallen Hero of the Horde (Swamp of Sorrows 34.3, 66.1).
-- **Level 51, step 6 of the guide's 51-51 part**, right after you hand in "A Tale of Sorrow" to Fallen Hero of the Horde (Swamp of Sorrows 34.3, 66.1): **Run Sunken Temple** (side trip). 2 quests at full experience; tick it in RestedXP's dungeon settings and the guide picks up its quests on the way. Pick up first: Jammal'an the Prophet (level 53, from Atal'ai Exile). Starts inside the run: The Essence of Eranikus (level 55, starts from Essence of Eranikus, a drop from Shade of Eranikus in Sunken Temple).
-- **Level 53, step 37 of the guide's 52-53 part**, when the guide brings you to Desolace (Desolace 36.0, 64.4): **Run Maraudon** (with your guide). Your guide runs it here and takes 2 of its quests.
-- **Level 56, step 48 of the guide's 56-57 part**, when the guide brings you to Borgus Stoutarm (Burning Steppes 84.3, 68.3), before the flight to Redridge: **Run Blackrock Spire** (side trip). 3 quests at full experience. Pick up first: Put Her Down (level 59, from Helendis Riverhorn (Burning Steppes 85.8, 68.9)). Starts inside the run: Bijou's Belongings → Message to Maxwell (2 parts, level 59, from Bijou inside Blackrock Spire).
-- **Level 57, step 75 of the guide's 56-57 part**, when the guide brings you to Innkeeper Firebrew (Ironforge 18.1, 51.6): **Run Dire Maul** (side trip). 3 quests at full experience. Pick up first: Enticing Negolash (level 52, from Ruined Lifeboat); Lethtendris's Web (level 57, from Latronicus Moonspear (Feralas 30.3, 46.2)); Pusillin and the Elder Azj'Tordin (level 58, from Azj'Tordin).
-- **Level 57, step 91 of the guide's 56-57 part**, right after you hand in "Dark Iron Legacy" to Franclorn Forgewright (Burning Steppes 29.0, 28.9): **Run Blackrock Depths** (with your guide). Your guide runs it here and takes 14 of its quests. Starts inside the run: The Love Potion (level 54, from Mistress Nagmara inside Blackrock Depths).
 
 ## Dungeon runs
 
@@ -279,16 +263,14 @@ Every leveling dungeon you have not outgrown, once, at the level its quests fit:
 - **Sunken Temple** (50-56), run at level 51: worth a detour for 2 quests at full experience; tick it in RestedXP's dungeon settings and the guide picks up its quests on the way.
   - Pick up first: Jammal'an the Prophet (level 53, from Atal'ai Exile)
   - Starts inside the run: The Essence of Eranikus (level 55, starts from Essence of Eranikus, a drop from Shade of Eranikus in Sunken Temple)
-- **Blackrock Depths** (52-60), run at level 57: your RestedXP guide runs it then and picks up 14 of its quests; its drops are worth about 10 min on average.
+- **Blackrock Depths** (52-60), run at level 57: your RestedXP guide runs it then and picks up 14 of its quests.
   - Starts inside the run: The Love Potion (level 54, from Mistress Nagmara inside Blackrock Depths)
-  - Drop: Carapace of Anub'shiah (chest, from level 52; Anub'shiah, drop chance unknown, counted as 25%): over your Burnished Tunic, 3.4% better, about 41 min saved if it drops
-- **Dire Maul** (55-60), run at level 57: worth a detour for 3 quests at full experience; its drops are worth about 8 min on average.
+- **Dire Maul** (55-60), run at level 57: worth a detour for 3 quests at full experience.
   - Pick up first: Enticing Negolash (level 52, from Ruined Lifeboat); Lethtendris's Web (level 57, from Latronicus Moonspear (Feralas 30.3, 46.2)); Pusillin and the Elder Azj'Tordin (level 58, from Azj'Tordin)
-  - Drop: Crystal Sword of the Sorcerer + Observer's Shield (weapon, from level 56; Tribute or Cho'Rush the Observer, 25% drop): over your Furious Falchion of the Elder + Captain's Buckler of the Defender, 5.3% better, about 34 min saved if it drops
 - **Blackrock Spire** (55-60), run at level 56: worth a detour for 3 quests at full experience.
   - Pick up first: Put Her Down (level 59, from Helendis Riverhorn (Burning Steppes 85.8, 68.9))
   - Starts inside the run: Bijou's Belongings → Message to Maxwell (2 parts, level 59, from Bijou inside Blackrock Spire)
-- Skip: Wailing Caverns (only 1 quest at full experience and no drops for you); The Deadmines (you ran it: The Defias Brotherhood, The Unsent Letter, Underground Assault are done; your guide ran it at 18-20); Scarlet Monastery (only 1 quest at full experience and drops worth about 7 min); Scholomance (you will have outgrown it).
+- Skip: Wailing Caverns (only 1 quest at full experience and no drops for you); The Deadmines (you ran it: The Defias Brotherhood, The Unsent Letter, Underground Assault are done; your guide ran it at 18-20); Scarlet Monastery (only 1 quest at full experience and no drops for you); Scholomance (you will have outgrown it).
 
 ## Detours off your route
 
@@ -296,7 +278,7 @@ Quests your RestedXP route leaves out, played as a detour from where the route i
 
 ### Level 30
 
-- **Vahlarriel's Search → Vahlarriel's Search → Vahlarriel's Search → Search for Tyranis** (clear win): 4-part chain: from Vahlarriel Demonslayer (Desolace 66.4, 11.8), around level 30 while your route is in Desolace. About 9,434 experience for about 11 min (9 of it walking); saves about 12 min against your usual pace.
+- **Vahlarriel's Search → Vahlarriel's Search → Vahlarriel's Search → Search for Tyranis** (clear win): 4-part chain: from Vahlarriel Demonslayer (Desolace 66.4, 11.8), around level 30 while your route is in Desolace. About 9,434 experience for about 11 min (9 of it walking); saves about 11 min against your usual pace.
 
 ### Level 31
 
@@ -304,12 +286,12 @@ Quests your RestedXP route leaves out, played as a detour from where the route i
 
 ### Level 34
 
-- **Stromgarde Badges** (worth it if you like it): from Captain Nials (Arathi Highlands 45.8, 47.5), around level 34 while your route is in Arathi Highlands. About 5,666 experience for about 10 min (5 of it walking); saves about 3 min against your usual pace.
+- **Stromgarde Badges** (worth it if you like it): from Captain Nials (Arathi Highlands 45.8, 47.5), around level 34 while your route is in Arathi Highlands. About 5,666 experience for about 10 min (5 of it walking); saves about 2 min against your usual pace.
 
 ### Level 40
 
-- **Crushridge Warmongers** (clear win): from Marshal Redpath (Hillsbrad Foothills 49.5, 58.7), around level 40 while your route is in Hillsbrad Foothills. About 7,056 experience for about 12 min (5 of it walking); saves about 3 min against your usual pace.
-- **Fiery Blaze Enchantments** (worth it if you like it): from Sigrun Ironhew (Badlands 53.8, 43.3), around level 40 while your route is in Badlands. About 17,375 experience for about 36 min (2 of it walking); saves about 2 min against your usual pace.
+- **Crushridge Warmongers** (worth it if you like it): from Marshal Redpath (Hillsbrad Foothills 49.5, 58.7), around level 40 while your route is in Hillsbrad Foothills. About 7,056 experience for about 12 min (5 of it walking); saves about 3 min against your usual pace.
+- **Fiery Blaze Enchantments** (worth it if you like it): from Sigrun Ironhew (Badlands 53.8, 43.3), around level 40 while your route is in Badlands. About 17,375 experience for about 34 min (2 of it walking); saves about 2 min against your usual pace.
 
 ### Level 42
 
@@ -317,7 +299,7 @@ Quests your RestedXP route leaves out, played as a detour from where the route i
 
 ### Level 49
 
-- **Muigin and Larion** (clear win): from Muigin (Un'Goro Crater 42.9, 9.6), around level 49 while your route is in Un'Goro Crater. About 11,489 experience for about 15 min (2 of it walking); saves about 7 min against your usual pace.
+- **Muigin and Larion** (clear win): from Muigin (Un'Goro Crater 42.9, 9.6), around level 49 while your route is in Un'Goro Crater. About 11,489 experience for about 15 min (2 of it walking); saves about 6 min against your usual pace.
 
 ### Level 51
 
@@ -330,6 +312,6 @@ Quests your RestedXP route leaves out, played as a detour from where the route i
 - School damage counts by the build's share: holy 100% (an estimate).
 - Quests Forever added carry no level in Blizzard's data: their zone's level range stands in. Dungeons Forever added: the range of their drops' required levels. Crafts: the recipe's skill from the Classic database (Forever may differ); a craft counts once your profession rank allows the skill at that level.
 - An upgrade is listed when it is worth 0.5% of tank value or more over what you would be wearing then, and it saves at least 20 minutes of group play before the next upgrade of the slot replaces it, worn at least 3 levels (level 60 ends leveling). A smaller or shorter-lived upgrade is left out, and the next one is counted against what you would still be wearing. Quest rewards you get anyway: wear them when the game shows them as better. Enchants: only when the enchant saves 20 minutes before you replace the item.
-- Data: the simulator's WoW: Forever item database at ff9babba5 (7043 items; it grows as the game is played, and a refresh picks the new items up), the CMaNGOS Classic dump at c33f90b8e (recipe skills, quest levels, dungeon loot), Blizzard's API for the character (fetched 2026-11-13 22:39) and for Forever's own quests (asked again weekly), stat values measured 2026-11-12 for protection-ml-tank.
+- Data: the simulator's WoW: Forever item database at 2e6e77d84 (7389 items; it grows as the game is played, and a refresh picks the new items up), the CMaNGOS Classic dump at c33f90b8e (recipe skills, quest levels, dungeon loot), Blizzard's API for the character (fetched 2026-11-13 22:39) and for Forever's own quests (asked again weekly), stat values measured 2026-11-17 for protection-ml-tank.
 - Raid preparation (items worth keeping for 60) waits for the mage raid lane's gear redo: today's pre-raid set still holds Naxxramas and Ahn'Qiraj quest rewards (the gear pool fault of 2026-11-05).
 

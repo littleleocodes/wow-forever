@@ -49,14 +49,14 @@ The Shadow build the machine-learning talent search found in a full raid (every 
 
 ## Rank among our builds and the community simulator's
 
-**3 of 4** for `shadow-dps` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 4** for `shadow-dps` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md) | ours: optimizer | 20/0/31 | 665 | +0.0% | 761 | -0.5% | 0 s |
-| 2 | *Standard* | community simulator | - | 620 | -6.7% | 760 | -0.5% | 0 s |
-| 3 | **[`shadow-ml-raid`](shadow-ml-raid.md)** | ours: derived (ML search) | 16/0/35 | 603 | -9.4% | 764 | +0.0% | 11 s |
-| 4 | *Smite* | community simulator | - | 225 | -66.1% | 302 | -60.5% | 3 s |
+| 1 | [`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md) | ours: optimizer | 20/0/31 | 688 | +0.0% | 788 | -0.4% | 1 s |
+| 2 | *Standard* | community simulator | - | 643 | -6.5% | 787 | -0.5% | 0 s |
+| 3 | **[`shadow-ml-raid`](shadow-ml-raid.md)** | ours: derived (ML search) | 16/0/35 | 616 | -10.5% | 791 | +0.0% | 16 s |
+| 4 | *Smite* | community simulator | - | 229 | -66.7% | 311 | -60.7% | 8 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -77,9 +77,9 @@ Before the pull: at -1s: cast Shadowform.
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain | 2.6 |
 | 3 | strict sequence: cast Inner Focus; cast Devouring Plague | 0.7 |
-| 4 | cast Shadow Word: Death | 3.2 |
+| 4 | cast Shadow Word: Death | 3.1 |
 | 5 | cast Shadow Word: Death (rank 2) | 0.2 |
-| 6 | cast Mind Blast | 6.6 |
+| 6 | cast Mind Blast | 6.5 |
 | 7 | channel Mind Flay | as ready |
 
 Damage by ability:
@@ -87,7 +87,7 @@ Damage by ability:
 | Ability | [`shadow-ml-raid`](shadow-ml-raid.md) |
 |---|---|
 | Mind Flay | 45% |
-| Shadow Word: Pain | 21% |
+| Shadow Word: Pain | 22% |
 | Mind Blast | 19% |
 | Shadow Word: Death | 10% |
 | Devouring Plague | 2% |

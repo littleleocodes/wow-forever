@@ -29,6 +29,13 @@ Retired 2026-10-31 (stage 2 of the live re-pin): Champion of the Light 10/20/30%
 client's hotfix push 113554 made it 5 ranks of 12% of Intellect each, and the official simulator reads it from the live spell
 data since its paladin port (db28d84a8, merged 2026-10-31); the 70425 tooltip the patch followed is gone.
 
+Retired 2026-11-16 (the re-pin to 2e6e77d, deep-runs/tonight_1116.sh): the Lacerating Strikes overwrite (`forever_lacerating.go` and its
+edit in `sim/hunter/talents_survival.go`, patched 2026-11-13 after the user's report that the bleed overwrites in game). Upstream's
+774fc188d (2026-11-15) makes a Mongoose Bite replace the bleed outright, the patch's own two lines: the unticked damage is lost and the
+new bleed runs a full 7 ticks on a new timer. The same re-pin re-anchors the pet swing rule: upstream moved the normalization into
+`applyAttackSpeed`, which Cobra Reflexes also calls, so the guard now wraps the Faster Attack passive's call only (Cobra Reflexes keeps
+upstream's damage reduction; no entry of ours takes it).
+
 Numbers from a patched spell or mechanic are **our** model of the beta, not the community's: reports name the patch where a build depends
 on it.
 

@@ -73,15 +73,15 @@ Seal Fate daggers: Malice, Cold Blood, Seal Fate and Improved Poisons from Assas
 
 ## Rank among our builds and the community simulator's
 
-**4 of 5** for `assassination-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 5** for `assassination-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Asn Muti* | community simulator | - | 448 | +0.0% | 834 | +0.0% | 0 s |
-| 2 | [`assassination-open-raid`](assassination-open-raid.md) | ours: derived (open search) | 31/19/1 | 447 | -0.2% | 833 | -0.1% | 0 s |
-| 3 | [`assassination-ml-raid`](assassination-ml-raid.md) | ours: derived (ML search) | 29/22/0 | 326 | -27.2% | 704 | -15.6% | 0 s |
-| 4 | **[`assassination-seal-fate-raid`](assassination-seal-fate-raid.md)** | ours: hand draft | 28/21/2 | 317 | -29.3% | 695 | -16.7% | 0 s |
-| 5 | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) | ours: hand draft | 29/22/0 | 312 | -30.4% | 685 | -17.8% | 0 s |
+| 1 | *Asn Muti* | community simulator | - | 449 | +0.0% | 843 | -0.1% | 0 s |
+| 2 | [`assassination-open-raid`](assassination-open-raid.md) | ours: derived (open search) | 31/19/1 | 449 | -0.1% | 844 | +0.0% | 0 s |
+| 3 | [`assassination-ml-raid`](assassination-ml-raid.md) | ours: derived (ML search) | 29/22/0 | 327 | -27.1% | 715 | -15.3% | 0 s |
+| 4 | **[`assassination-seal-fate-raid`](assassination-seal-fate-raid.md)** | ours: hand draft | 28/21/2 | 317 | -29.3% | 706 | -16.3% | 0 s |
+| 5 | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) | ours: hand draft | 29/22/0 | 313 | -30.3% | 697 | -17.5% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -125,7 +125,7 @@ Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: i
 | 9 | if (energy ≤ 15 and not talentIsKnown or Eureka! is known and energy ≤ 25 and energy ≤ 25 or energy ≤ 25 and Death Mark is on the target) and (combo points < 3 or “Expose - Low Duration” or Eureka! is up): cast Thistle Tea | as ready |
 | 10 | if “At or Below SnD Clipping Threshold” and “Above SnD Point Threshold” and not “Fight About to End” and not “Expose - Prevent Other Finishers”: cast Slice and Dice | 3.2 |
 | 11 | if combo points = 5 and not “SnD Fall Imminent” and energy ≥ current cost and not “Expose - Prevent Other Finishers” and not Elune's Light is up: cast Cold Blood | 0.3 |
-| 12 | if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not “SnD Fall Imminent” or combo points ≥ 3 and “Fight About to End”) and not “Expose - Prevent Other Finishers” and not talentIsKnown: cast Eviscerate (rank 8) | 3.5 |
+| 12 | if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not “SnD Fall Imminent” or combo points ≥ 3 and “Fight About to End”) and not “Expose - Prevent Other Finishers” and not talentIsKnown: cast Eviscerate (rank 8) | 3.6 |
 | 13 | if not Mutilate is known and not Hemorrhage is known and not “Use Backstab” and “Current Points less than 5” and (not “SnD Fall Imminent” or energy > (current cost + current cost) and not “SnD Fall Imminent” or not “Above SnD Point Threshold” or “In Danger of Energy Capping” or “Expose - Low Duration”) and “Gnome Eureka - Active or Not Ready”: cast Sinister Strike | 14.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Ambush, cast Blood Fury, cast Elune's Light, cast Eureka!, cast Rupture, cast Backstab (rank 8) (its condition never held in these fights); cast Preparation (needs the Preparation talent); strict sequence: cast Blood Fury; cast Blade Flurry (needs the Blade Flurry talent); cast Adrenaline Rush, strict sequence: cast Blood Fury; cast Adrenaline Rush, strict sequence: cast Elune's Light; cast Adrenaline Rush (needs the Adrenaline Rush talent); cast Premeditation (needs the Premeditation talent); cast Death Mark (needs the Death Mark talent); cast Ghostly Strike (needs the Ghostly Strike talent); cast Hemorrhage (needs the Hemorrhage talent); cast Mutilate (needs the Mutilate talent).
@@ -134,11 +134,11 @@ Damage by ability:
 
 | Ability | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) |
 |---|---|
-| Auto Attack | 41% |
-| Eviscerate | 17% |
+| Auto Attack | 40% |
+| Eviscerate | 18% |
 | Sinister Strike | 16% |
 | spell 25349 | 12% |
-| spell 11337 | 10% |
+| spell 11337 | 9% |
 | Goblin Sapper Charge | 2% |
 | Garrote | 2% |
 | Shank | 1% |

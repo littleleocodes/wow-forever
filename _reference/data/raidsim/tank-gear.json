@@ -1,6 +1,6 @@
 {
- "simulator": "wowsims/forever ff9babba5 (with this project's patches)",
- "date": "2026-11-12",
+ "simulator": "wowsims/forever 2e6e77d84 (with this project's patches)",
+ "date": "2026-11-17",
  "budget": {
   "iterations": 3000,
   "confirm": 12000,
@@ -15,12 +15,12 @@
   "rotation": "_reference/data/raidsim/apls/warrior/prot-tank-raid.apl.json",
   "reference": {
    "build": "prot-raid-tank",
-   "threat": 1732.5310453582583,
-   "dtps": 281.4759057372284,
+   "threat": 1939.9599029190053,
+   "dtps": 286.5238486468704,
    "fights": 20000,
    "seed": 77,
    "gear": "ui/specs/warrior/protection/gear_sets/prebis.gear.json",
-   "simulator": "wowsims/forever ff9babba5",
+   "simulator": "wowsims/forever 2e6e77d84",
    "missing_gear": []
   },
   "standard_gear": "ui/specs/warrior/protection/gear_sets/prebis.gear.json",
@@ -29,56 +29,54 @@
     "prot-tank: protection-ml-tank"
    ],
    "weights": {
-    "StatHitRating": 0.0181,
-    "StatBonusArmor": 0.1464,
-    "StatStrength": 1.4887,
-    "StatParryRating": 2.3708,
-    "StatArmorPenetration": 0.2418,
-    "StatBlockValue": 2.4606,
-    "StatArmor": 0.1464,
-    "StatDefenseRating": 4.0687,
-    "StatExpertiseRating": 2.3341,
-    "StatAttackPower": 0.6208,
-    "PseudoStatMainHandDps": 3.6474,
-    "StatHasteRating": 0.7399,
-    "StatCritRating": 1.2486,
-    "StatDodgeRating": 2.8274,
-    "StatAgility": 3.192,
-    "StatBlockRating": 0.0611,
-    "StatArmorNoMods": 0.1464
+    "StatBlockRating": 0.0553,
+    "StatBlockValue": 2.7555,
+    "StatHitRating": 2.4683,
+    "PseudoStatMainHandDps": 3.6129,
+    "StatCritRating": 1.2189,
+    "StatDodgeRating": 3.3824,
+    "StatDefenseRating": 4.8813,
+    "StatBonusArmor": 0.1738,
+    "StatArmor": 0.1738,
+    "StatExpertiseRating": 2.4505,
+    "StatArmorPenetration": 0.2411,
+    "StatAgility": 3.5529,
+    "StatParryRating": 2.7746,
+    "StatAttackPower": 0.6095,
+    "StatHasteRating": 0.5669,
+    "StatStrength": 1.5578,
+    "StatArmorNoMods": 0.1738
    },
    "trinkets": [
-    "Defender's Grip Stabilizer",
-    "Hand of Justice"
+    "The Lion Horn of Stormwind",
+    "Defender's Grip Stabilizer"
    ],
    "trinket_screen": {
-    "Defender's Grip Stabilizer (272440)": 1.0142,
-    "Adaptive Combat Assistant (272437)": 1.0134,
-    "Hand of Justice (11815)": 1.0128,
-    "Vigilance Charm (18370)": 1.0116,
-    "Talisman of Arathor (20071)": 1.0083,
-    "Defiler's Talisman (20072)": 1.0083,
-    "Rune of the Guard Captain (19120)": 1.0074,
-    "Cleansed Vilebranch Medallion (270275)": 1.0074,
-    "Defiler's Talisman (21115)": 1.0071,
-    "Talisman of Arathor (21117)": 1.0071,
-    "Smolderweb's Eye (13213)": 1.0064,
-    "Frozen Heart of the Mountain (249469)": 1.006,
-    "Defiler's Talisman (21116)": 1.0058,
-    "Talisman of Arathor (21118)": 1.0058,
-    "Demon's Blood (10779)": 1.0048,
-    "Force of Will (11810)": 1.0048,
-    "Counterattack Lodestone (18537)": 1.0045,
-    "Blackhand's Breadth (13965)": 1.0043,
-    "Heart of the Scale (13164)": 1.0043,
-    "Everlook Delivery Bot (274760)": 1.0033,
-    "Cannonball Runner (13382)": 1.0032,
-    "Everlook Pathcarver (274759)": 1.0028,
-    "Jewel of the Guard Captain (270225)": 1.0024,
-    "Molten Heart of the Mountain (249470)": 1.0022,
-    "Major Recombobulator (18637)": 1.0021,
+    "The Lion Horn of Stormwind (14557)": 1.0164,
+    "Defender's Grip Stabilizer (272440)": 1.013,
+    "Adaptive Combat Assistant (272437)": 1.01,
+    "Vigilance Charm (18370)": 1.0084,
+    "Rune of the Guard Captain (19120)": 1.0055,
+    "Cleansed Vilebranch Medallion (270275)": 1.0055,
+    "Blackhand's Breadth (13965)": 1.0053,
+    "Talisman of Arathor (20071)": 1.0053,
+    "Defiler's Talisman (20072)": 1.0053,
+    "Hand of Justice (11815)": 1.0047,
+    "Frozen Heart of the Mountain (249469)": 1.0046,
+    "Counterattack Lodestone (18537)": 1.0043,
+    "Demon's Blood (10779)": 1.0041,
+    "Force of Will (11810)": 1.0041,
+    "Defiler's Talisman (21115)": 1.004,
+    "Talisman of Arathor (21117)": 1.004,
+    "Smolderweb's Eye (13213)": 1.0039,
+    "Defiler's Talisman (21116)": 1.0028,
+    "Talisman of Arathor (21118)": 1.0028,
+    "Molten Heart of the Mountain (249470)": 1.0021,
+    "Heart of the Scale (13164)": 1.0019,
+    "Cannonball Runner (13382)": 1.0016,
+    "Jewel of the Guard Captain (270225)": 1.0016,
     "Smoking Heart of the Mountain (11811)": 1.0014,
-    "Weakness Analyzer (272438)": 1.0009,
+    "Weakness Analyzer (272438)": 1.0005,
     "Eye of the Beast (13968)": 1.0,
     "Dog Whistle (3456)": 1.0,
     "Minor Recombobulator (4381)": 1.0,
@@ -86,7 +84,9 @@
     "Shard of the Splithooves (10659)": 1.0,
     "Second Wind (11819)": 1.0,
     "Burst of Knowledge (11832)": 1.0,
+    "Briarwood Reed (12930)": 1.0,
     "Alchemist's Stone (13503)": 1.0,
+    "Ramstein's Lightning Bolts (13515)": 1.0,
     "Arcanite Dragonling (16022)": 1.0,
     "Heart of Noxxion (17744)": 1.0,
     "Mindtap Talisman (18371)": 1.0,
@@ -97,6 +97,7 @@
     "Talisman of Arathor (21119)": 1.0,
     "Defiler's Talisman (21120)": 1.0,
     "Defender of the Timbermaw (21326)": 1.0,
+    "Draconic Infused Emblem (22268)": 1.0,
     "Heart of Wyrmthalak (22321)": 1.0,
     "Dormant Heart of the Mountain (249473)": 1.0,
     "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
@@ -116,18 +117,24 @@
     "Worgenbane Talisman (273643)": 1.0,
     "Cursed Murloc Eye (273840)": 1.0,
     "Roogug's Severed Head (274152)": 1.0,
-    "Parachute-Priest Pager (274761)": 1.0
+    "Theka's Last Breath (274641)": 1.0,
+    "The Desert Rose (274648)": 1.0,
+    "Parachute-Priest Pager (274761)": 1.0,
+    "Mark of the Red Flight (282778)": 1.0,
+    "Everlook Delivery Bot (274760)": 0.9998,
+    "Major Recombobulator (18637)": 0.9983,
+    "Everlook Pathcarver (274759)": 0.9978
    },
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0025272827856366
+    "keep-sets-and-effects": 0.994798027795507
    },
    "confirm_seed2": {
-    "all-slots": 1.0,
-    "keep-sets-and-effects": 1.004645421494392
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.0013807554753806
    },
-   "chosen": "keep-sets-and-effects",
-   "ilvl": 60.9,
+   "chosen": "all-slots",
+   "ilvl": 62.5,
    "items": [
     {
      "id": 12640,
@@ -144,7 +151,7 @@
      "enchant": 1889
     },
     {
-     "id": 10845,
+     "id": 226862,
      "enchant": 1891
     },
     {
@@ -167,19 +174,19 @@
      "enchant": 1887
     },
     {
+     "id": 272408
+    },
+    {
      "id": 275980
     },
     {
-     "id": 22255
+     "id": 14557
     },
     {
      "id": 272440
     },
     {
-     "id": 11815
-    },
-    {
-     "id": 12798,
+     "id": 279261,
      "enchant": 1900
     },
     {
@@ -187,7 +194,7 @@
      "enchant": 1886
     },
     {
-     "id": 13022
+     "id": 18680
     }
    ],
    "names": [
@@ -195,61 +202,62 @@
     "Talisman of Evasion",
     "Highlander's Plate Spaulders",
     "Shifting Cloak",
-    "Warrior's Embrace",
+    "Breastplate of Heroism",
     "Deeprock Bracers",
     "Theramore Gauntlets",
     "Valiant's Waistguard",
     "Legplates of Valor",
     "Grimy Metal Boots",
+    "Cutthroat's Signet",
     "Watcher's Signet of Vigilance",
-    "Magma Forged Band",
+    "The Lion Horn of Stormwind",
     "Defender's Grip Stabilizer",
-    "Hand of Justice",
-    "Annihilator",
+    "Greenhammer",
     "Evergreen Shield",
-    "Gryphonwing Long Bow"
+    "Ancient Bone Bow"
    ],
    "weights_unit": "threat per second equivalents of tank value (threat weight - k x damage-taken weight)",
    "raw_weights": {
-    "k": 8.14361,
-    "dtps": 244.7,
-    "threat": 2053.9,
+    "k": 9.69108,
+    "dtps": 239.5,
+    "threat": 2031.5,
     "finite_differences": [],
     "tps_per_point": {
-     "PseudoStatMainHandDps": 3.64743,
-     "StatAgility": 0.76834,
-     "StatArmorPenetration": 0.24177,
-     "StatAttackPower": 0.62075,
-     "StatBlockRating": 0.03751,
-     "StatBlockValue": 0.65845,
-     "StatCritRating": 1.26068,
-     "StatDefenseRating": -0.53398,
-     "StatDodgeRating": -0.33712,
-     "StatExpertiseRating": 2.28752,
-     "StatHasteRating": 0.74005,
-     "StatHitRating": 0.01809,
-     "StatParryRating": -0.15736,
-     "StatStrength": 1.39858
+     "PseudoStatMainHandDps": 3.6129,
+     "StatAgility": 0.72331,
+     "StatArmorPenetration": 0.24111,
+     "StatAttackPower": 0.60953,
+     "StatBlockRating": 0.00148,
+     "StatBlockValue": 0.62298,
+     "StatCritRating": 1.21302,
+     "StatDefenseRating": -0.50051,
+     "StatDodgeRating": -0.3321,
+     "StatExpertiseRating": 2.43532,
+     "StatHasteRating": 0.59064,
+     "StatHitRating": 2.45319,
+     "StatParryRating": -0.21484,
+     "StatStrength": 1.39005
     },
     "dtps_per_point": {
-     "StatAgility": -0.29762,
-     "StatArmor": -0.01797,
-     "StatArmorNoMods": -0.01797,
-     "StatBlockRating": -0.00289,
-     "StatBlockValue": -0.2213,
-     "StatBonusArmor": -0.01797,
-     "StatCritRating": 0.00148,
-     "StatDefenseRating": -0.56519,
-     "StatDodgeRating": -0.38859,
-     "StatExpertiseRating": -0.00572,
-     "StatHasteRating": 2e-05,
-     "StatParryRating": -0.31044,
-     "StatStrength": -0.01106
+     "StatAgility": -0.29198,
+     "StatArmor": -0.01793,
+     "StatArmorNoMods": -0.01793,
+     "StatBlockRating": -0.00555,
+     "StatBlockValue": -0.22005,
+     "StatBonusArmor": -0.01793,
+     "StatCritRating": -0.00061,
+     "StatDefenseRating": -0.55533,
+     "StatDodgeRating": -0.38329,
+     "StatExpertiseRating": -0.00156,
+     "StatHasteRating": 0.00245,
+     "StatHitRating": -0.00156,
+     "StatParryRating": -0.30848,
+     "StatStrength": -0.0173
     }
    },
    "enchants_by_weight": {
     "0": [
-     2543,
+     1506,
      1508
     ],
     "3": [
@@ -261,11 +269,11 @@
      923
     ],
     "6": [
-     8206,
+     8207,
      1887
     ],
     "8": [
-     2543,
+     1506,
      1508
     ]
    },
@@ -275,99 +283,101 @@
      2504
     ],
     "race_seed1": {
-     "1900": 1.1791,
-     "2504": 1.1619
+     "1900": 1.1488,
+     "2504": 1.1304
     },
     "confirm_seed2": {
-     "1900": 1.1791
+     "1900": 1.1488
     },
     "chosen": 1900
    },
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-protection-prebis.gear.json",
    "pick": {
-    "value": 1.1803,
-    "threat": 2035.1,
-    "dtps": 237.3,
-    "dps": 596.0,
+    "value": 1.1487,
+    "threat": 2065.0,
+    "dtps": 232.4,
+    "dps": 608.5,
     "tmi": 0,
     "fights": 20000,
     "seed": 3,
     "stats": {
-     "StatStrength": 147,
-     "StatAgility": 158,
-     "StatStamina": 154,
-     "StatHitRating": 20,
+     "StatStrength": 161,
+     "StatAgility": 178,
+     "StatStamina": 175,
+     "StatHitRating": 50,
      "StatExpertiseRating": 10,
      "StatDefenseRating": 42,
      "StatBlockValue": 75,
-     "StatDodgeRating": 54,
-     "StatArmor": 6365,
+     "StatDodgeRating": 36,
+     "StatArmor": 6482,
      "StatBonusArmor": 170
     }
    },
    "vs_standard": {
-    "value": 0.1638,
-    "threat": 0.1408,
-    "dtps": -0.1579
+    "value": 0.1347,
+    "threat": 0.0373,
+    "dtps": -0.1902
    },
-   "date": "2026-11-10"
+   "date": "2026-11-16"
   },
   "bis": {
    "evaluated_on": [
     "prot-tank: protection-ml-tank"
    ],
    "weights": {
-    "StatHitRating": 0.0177,
-    "StatBonusArmor": 0.1482,
-    "StatStrength": 1.4652,
-    "StatParryRating": 2.3893,
-    "StatArmorPenetration": 0.24,
-    "StatBlockValue": 2.4812,
-    "StatArmor": 0.1482,
-    "StatDefenseRating": 4.1945,
-    "StatExpertiseRating": 2.0639,
-    "StatAttackPower": 0.6096,
-    "PseudoStatMainHandDps": 3.4426,
-    "StatHasteRating": 0.5539,
-    "StatCritRating": 1.2947,
-    "StatDodgeRating": 2.9156,
-    "StatAgility": 3.2652,
-    "StatBlockRating": 0.0615,
-    "StatArmorNoMods": 0.1482
+    "StatBlockRating": 0.0354,
+    "StatBlockValue": 2.7656,
+    "StatHitRating": 2.2001,
+    "PseudoStatMainHandDps": 3.338,
+    "StatCritRating": 1.2844,
+    "StatDodgeRating": 3.3882,
+    "StatDefenseRating": 4.9833,
+    "StatBonusArmor": 0.1758,
+    "StatArmor": 0.1758,
+    "StatExpertiseRating": 2.1822,
+    "StatArmorPenetration": 0.2352,
+    "StatAgility": 3.5281,
+    "StatParryRating": 2.7733,
+    "StatAttackPower": 0.5877,
+    "StatHasteRating": 0.7026,
+    "StatStrength": 1.5165,
+    "StatArmorNoMods": 0.1758
    },
    "trinkets": [
     "Arena Grand Master",
     "Vigilance Charm"
    ],
    "trinket_screen": {
-    "Arena Grand Master (19024)": 1.0207,
-    "Defender's Grip Stabilizer (272440)": 1.0133,
-    "Vigilance Charm (18370)": 1.0106,
-    "Adaptive Combat Assistant (272437)": 1.0105,
-    "Hand of Justice (11815)": 1.0098,
-    "Talisman of Arathor (20071)": 1.0066,
-    "Defiler's Talisman (20072)": 1.0066,
-    "Defiler's Talisman (21115)": 1.0053,
-    "Talisman of Arathor (21117)": 1.0053,
-    "Blackhand's Breadth (13965)": 1.0048,
-    "Rune of the Guard Captain (19120)": 1.0047,
-    "Cleansed Vilebranch Medallion (270275)": 1.0047,
-    "Counterattack Lodestone (18537)": 1.0043,
-    "Smolderweb's Eye (13213)": 1.0043,
-    "Frozen Heart of the Mountain (249469)": 1.0043,
-    "Defiler's Talisman (21116)": 1.0041,
-    "Talisman of Arathor (21118)": 1.0041,
-    "Demon's Blood (10779)": 1.0029,
-    "Force of Will (11810)": 1.0029,
-    "Heart of the Scale (13164)": 1.0026,
-    "Jewel of the Guard Captain (270225)": 1.0026,
-    "Molten Heart of the Mountain (249470)": 1.0023,
-    "Essence of the Pure Flame (18815)": 1.0019,
-    "Weakness Analyzer (272438)": 1.0015,
-    "Smoking Heart of the Mountain (11811)": 1.0014,
-    "Everlook Delivery Bot (274760)": 1.0013,
-    "Cannonball Runner (13382)": 1.0009,
-    "Everlook Pathcarver (274759)": 1.0009,
+    "Arena Grand Master (19024)": 1.0241,
+    "The Lion Horn of Stormwind (14557)": 1.0169,
+    "Defender's Grip Stabilizer (272440)": 1.0161,
+    "Adaptive Combat Assistant (272437)": 1.0128,
+    "Vigilance Charm (18370)": 1.0122,
+    "Talisman of Arathor (20071)": 1.0076,
+    "Defiler's Talisman (20072)": 1.0076,
+    "Blackhand's Breadth (13965)": 1.0068,
+    "Rune of the Guard Captain (19120)": 1.0064,
+    "Cleansed Vilebranch Medallion (270275)": 1.0064,
+    "Defiler's Talisman (21115)": 1.0062,
+    "Talisman of Arathor (21117)": 1.0062,
+    "Demon's Blood (10779)": 1.0055,
+    "Force of Will (11810)": 1.0055,
+    "Smolderweb's Eye (13213)": 1.0053,
+    "Hand of Justice (11815)": 1.0052,
+    "Frozen Heart of the Mountain (249469)": 1.005,
+    "Defiler's Talisman (21116)": 1.0048,
+    "Talisman of Arathor (21118)": 1.0048,
+    "Counterattack Lodestone (18537)": 1.0041,
+    "Cannonball Runner (13382)": 1.0039,
+    "Everlook Delivery Bot (274760)": 1.003,
+    "Jewel of the Guard Captain (270225)": 1.0027,
+    "Everlook Pathcarver (274759)": 1.0022,
+    "Molten Heart of the Mountain (249470)": 1.0022,
+    "Heart of the Scale (13164)": 1.0018,
+    "Smoking Heart of the Mountain (11811)": 1.0015,
+    "Major Recombobulator (18637)": 1.0013,
+    "Essence of the Pure Flame (18815)": 1.0012,
+    "Weakness Analyzer (272438)": 1.0003,
     "Eye of the Beast (13968)": 1.0,
     "Dog Whistle (3456)": 1.0,
     "Minor Recombobulator (4381)": 1.0,
@@ -375,7 +385,9 @@
     "Shard of the Splithooves (10659)": 1.0,
     "Second Wind (11819)": 1.0,
     "Burst of Knowledge (11832)": 1.0,
+    "Briarwood Reed (12930)": 1.0,
     "Alchemist's Stone (13503)": 1.0,
+    "Ramstein's Lightning Bolts (13515)": 1.0,
     "Arcanite Dragonling (16022)": 1.0,
     "Heart of Noxxion (17744)": 1.0,
     "Mindtap Talisman (18371)": 1.0,
@@ -387,6 +399,7 @@
     "Talisman of Arathor (21119)": 1.0,
     "Defiler's Talisman (21120)": 1.0,
     "Defender of the Timbermaw (21326)": 1.0,
+    "Draconic Infused Emblem (22268)": 1.0,
     "Heart of Wyrmthalak (22321)": 1.0,
     "Dormant Heart of the Mountain (249473)": 1.0,
     "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
@@ -406,20 +419,22 @@
     "Worgenbane Talisman (273643)": 1.0,
     "Cursed Murloc Eye (273840)": 1.0,
     "Roogug's Severed Head (274152)": 1.0,
+    "Theka's Last Breath (274641)": 1.0,
+    "The Desert Rose (274648)": 1.0,
     "Parachute-Priest Pager (274761)": 1.0,
-    "Major Recombobulator (18637)": 0.9995
+    "Mark of the Red Flight (282778)": 1.0
    },
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.1779693147913377,
-    "keep-sets-and-effects": 1.1837814452205724
+    "all-slots": 1.1368805294891642,
+    "keep-sets-and-effects": 1.1370996102432283
    },
    "confirm_seed2": {
     "current": 1.0,
-    "keep-sets-and-effects": 1.1824889134586714
+    "keep-sets-and-effects": 1.1363371757142124
    },
    "chosen": "keep-sets-and-effects",
-   "ilvl": 61.1,
+   "ilvl": 61.4,
    "items": [
     {
      "id": 12640,
@@ -459,10 +474,10 @@
      "enchant": 1887
     },
     {
-     "id": 275980
+     "id": 272408
     },
     {
-     "id": 272409
+     "id": 275980
     },
     {
      "id": 19024
@@ -479,7 +494,7 @@
      "enchant": 1886
     },
     {
-     "id": 13022
+     "id": 18680
     }
    ],
    "names": [
@@ -493,58 +508,56 @@
     "Valiant's Waistguard",
     "Legplates of Valor",
     "Grimy Metal Boots",
+    "Cutthroat's Signet",
     "Watcher's Signet of Vigilance",
-    "Ring of Awareness",
     "Arena Grand Master",
     "Vigilance Charm",
     "Annihilator",
     "Evergreen Shield",
-    "Gryphonwing Long Bow"
+    "Ancient Bone Bow"
    ],
    "weights_unit": "threat per second equivalents of tank value (threat weight - k x damage-taken weight)",
    "raw_weights": {
-    "k": 8.31171,
-    "dtps": 242.2,
-    "threat": 2051.6,
+    "k": 9.87897,
+    "dtps": 237.2,
+    "threat": 1999.8,
     "finite_differences": [],
     "tps_per_point": {
-     "PseudoStatMainHandDps": 3.44256,
-     "StatAgility": 0.78916,
-     "StatArmor": -0.0,
-     "StatArmorNoMods": -0.0,
-     "StatArmorPenetration": 0.24004,
-     "StatAttackPower": 0.60963,
-     "StatBlockRating": 0.02132,
-     "StatBlockValue": 0.65824,
-     "StatBonusArmor": -0.0,
-     "StatCritRating": 1.28166,
-     "StatDefenseRating": -0.48566,
-     "StatDodgeRating": -0.29514,
-     "StatExpertiseRating": 2.04222,
-     "StatHasteRating": 0.52402,
-     "StatHitRating": 0.0177,
-     "StatParryRating": -0.17992,
-     "StatStrength": 1.3741
+     "PseudoStatMainHandDps": 3.33797,
+     "StatAgility": 0.6409,
+     "StatArmorPenetration": 0.23519,
+     "StatAttackPower": 0.58772,
+     "StatBlockRating": 0.01482,
+     "StatBlockValue": 0.61782,
+     "StatCritRating": 1.29069,
+     "StatDefenseRating": -0.51884,
+     "StatDodgeRating": -0.35992,
+     "StatExpertiseRating": 2.19788,
+     "StatHasteRating": 0.66701,
+     "StatHitRating": 2.21572,
+     "StatParryRating": -0.24179,
+     "StatStrength": 1.34294
     },
     "dtps_per_point": {
-     "StatAgility": -0.2979,
-     "StatArmor": -0.01783,
-     "StatArmorNoMods": -0.01783,
-     "StatBlockRating": -0.00483,
-     "StatBlockValue": -0.21933,
-     "StatBonusArmor": -0.01783,
-     "StatCritRating": -0.00157,
-     "StatDefenseRating": -0.56308,
-     "StatDodgeRating": -0.38629,
-     "StatExpertiseRating": -0.00261,
-     "StatHasteRating": -0.00359,
-     "StatParryRating": -0.30911,
-     "StatStrength": -0.01097
+     "StatAgility": -0.29225,
+     "StatArmor": -0.0178,
+     "StatArmorNoMods": -0.0178,
+     "StatBlockRating": -0.00209,
+     "StatBlockValue": -0.21741,
+     "StatBonusArmor": -0.0178,
+     "StatCritRating": 0.00064,
+     "StatDefenseRating": -0.55695,
+     "StatDodgeRating": -0.3794,
+     "StatExpertiseRating": 0.00159,
+     "StatHasteRating": -0.0036,
+     "StatHitRating": 0.00159,
+     "StatParryRating": -0.3052,
+     "StatStrength": -0.01756
     }
    },
    "enchants_by_weight": {
     "0": [
-     2543,
+     1506,
      1508
     ],
     "3": [
@@ -556,11 +569,11 @@
      923
     ],
     "6": [
-     8206,
+     8207,
      1887
     ],
     "8": [
-     2543,
+     1506,
      1508
     ]
    },
@@ -570,30 +583,30 @@
      2504
     ],
     "race_seed1": {
-     "1900": 1.2017,
-     "2504": 1.1812
+     "1900": 1.1583,
+     "2504": 1.1422
     },
     "confirm_seed2": {
-     "1900": 1.2017
+     "1900": 1.1583
     },
     "chosen": 1900
    },
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-protection-bis.gear.json",
    "pick": {
-    "value": 1.2009,
-    "threat": 1992.7,
-    "dtps": 224.9,
-    "dps": 579.7,
+    "value": 1.1581,
+    "threat": 2027.3,
+    "dtps": 225.4,
+    "dps": 596.5,
     "tmi": 0,
     "fights": 20000,
     "seed": 3,
     "stats": {
-     "StatStrength": 158,
-     "StatAgility": 146,
-     "StatStamina": 157,
-     "StatHitRating": 20,
+     "StatStrength": 150,
+     "StatAgility": 163,
+     "StatStamina": 151,
+     "StatHitRating": 30,
      "StatExpertiseRating": 10,
-     "StatDefenseRating": 38,
+     "StatDefenseRating": 29,
      "StatBlockValue": 75,
      "StatDodgeRating": 66,
      "StatArmor": 6365,
@@ -601,13 +614,13 @@
     }
    },
    "vs_standard": {
-    "value": 0.1841,
-    "threat": 0.117,
-    "dtps": -0.2019
+    "value": 0.144,
+    "threat": 0.0184,
+    "dtps": -0.2146
    },
-   "date": "2026-11-10"
+   "date": "2026-11-16"
   },
-  "minutes": 3.7,
+  "minutes": 54.2,
   "reference_fork": {
    "build": "prot-raid-tank",
    "threat": 1167.5719659674585,
@@ -616,22 +629,22 @@
    "source": "raidsim/deep/warrior-tank.json (ElliotWood/Forever)"
   },
   "standard": {
-   "value": 1.0142,
-   "threat": 1783.9,
-   "dtps": 281.8,
-   "dps": 510.7,
+   "value": 1.0123,
+   "threat": 1990.7,
+   "dtps": 287.0,
+   "dps": 574.5,
    "tmi": 0,
    "fights": 20000,
    "seed": 3,
    "stats": {
-    "StatStrength": 30,
-    "StatAgility": 72,
-    "StatStamina": 80,
-    "StatHitRating": 33,
-    "StatDefenseRating": 51,
-    "StatBlockValue": 39,
-    "StatArmor": 4793,
-    "StatBonusArmor": 320
+    "StatStrength": 123,
+    "StatAgility": 16,
+    "StatStamina": 72,
+    "StatHitRating": 80,
+    "StatExpertiseRating": 10,
+    "StatDefenseRating": 59,
+    "StatBlockValue": 38,
+    "StatArmor": 5507
    }
   }
  },
@@ -642,12 +655,12 @@
   "rotation": "_reference/data/raidsim/apls/paladin/prot-tank-raid.apl.json",
   "reference": {
    "build": "prot-tank",
-   "threat": 1114.3919628829287,
-   "dtps": 280.97011122077186,
+   "threat": 1137.4790284873309,
+   "dtps": 274.9282646950115,
    "fights": 20000,
    "seed": 77,
    "gear": "_reference/data/raidsim/gear_sets/forever/paladin-protection-default.gear.json",
-   "simulator": "wowsims/forever ff9babba5",
+   "simulator": "wowsims/forever 2e6e77d84",
    "missing_gear": []
   },
   "standard_gear": "_reference/data/raidsim/gear_sets/forever/paladin-protection-default.gear.json",
@@ -657,77 +670,91 @@
    ],
    "weights": {
     "StatHealth": 0.0078,
-    "StatSpellDamage": 0.9257,
-    "StatExpertiseRating": 1.0491,
-    "StatHitRating": 0.4327,
-    "StatAgility": 1.5687,
-    "StatBonusArmor": 0.091,
-    "StatAttackPower": 0.1826,
-    "StatDodgeRating": 1.2922,
-    "StatBlockValue": 0.8361,
-    "StatCritRating": 0.6133,
-    "StatArmorPenetration": 0.0317,
-    "PseudoStatMainHandDps": 2.3127,
-    "StatArmorNoMods": 0.0827,
-    "StatMana": -0.0015,
-    "StatDefenseRating": 2.4869,
-    "StatBlockRating": 1.0701,
-    "StatIntellect": 0.2425,
-    "StatSpirit": 0.0052,
-    "StatHolyDamage": 0.9257,
-    "StatStamina": 0.0853,
-    "StatMP5": 0.328,
-    "StatStrength": 0.449,
-    "StatArmor": 0.091,
-    "StatParryRating": 1.0792,
-    "StatHasteRating": 0.5772
+    "StatStrength": 0.4694,
+    "StatDefenseRating": 2.4676,
+    "StatSpirit": 0.0044,
+    "StatParryRating": 1.0913,
+    "PseudoStatMainHandDps": 2.4092,
+    "StatMana": 0.0078,
+    "StatBlockRating": 0.9552,
+    "StatAttackPower": 0.1894,
+    "StatBonusArmor": 0.0909,
+    "StatHolyDamage": 0.9459,
+    "StatMP5": 0.2545,
+    "StatDodgeRating": 1.2717,
+    "StatExpertiseRating": 1.0747,
+    "StatIntellect": 0.1295,
+    "StatStamina": 0.0854,
+    "StatAgility": 1.4546,
+    "StatArmor": 0.0909,
+    "StatArmorNoMods": 0.0826,
+    "StatBlockValue": 0.9104,
+    "StatHitRating": 0.4529,
+    "StatCritRating": 0.6232,
+    "StatArmorPenetration": 0.0335,
+    "StatHasteRating": 0.6253,
+    "StatSpellDamage": 0.9459
    },
    "trinkets": [
     "Defender's Grip Stabilizer",
-    "Hand of Justice"
+    "The Lion Horn of Stormwind"
    ],
    "trinket_screen": {
-    "Defender's Grip Stabilizer (272440)": 1.0219,
-    "Vigilance Charm (18370)": 1.0116,
-    "Hand of Justice (11815)": 1.0093,
-    "Smolderweb's Eye (13213)": 1.0075,
-    "Second Wind (11819)": 1.0072,
-    "Frozen Heart of the Mountain (249469)": 1.0069,
-    "Weakness Analyzer (272438)": 1.0069,
-    "Rune of the Guard Captain (19120)": 1.0059,
-    "Cleansed Vilebranch Medallion (270275)": 1.0059,
-    "Adaptive Combat Assistant (272437)": 1.0058,
-    "Demon's Blood (10779)": 1.0057,
-    "Force of Will (11810)": 1.0057,
-    "Mindtap Talisman (18371)": 1.0053,
-    "Jewel of the Guard Captain (270225)": 1.0046,
-    "Cannonball Runner (13382)": 1.0042,
-    "Blackhand's Breadth (13965)": 1.003,
-    "Serenity Field (272439)": 1.0027,
-    "Everlook Delivery Bot (274760)": 1.0025,
-    "Heart of the Scale (13164)": 1.0024,
+    "Defender's Grip Stabilizer (272440)": 1.0177,
+    "The Lion Horn of Stormwind (14557)": 1.0147,
+    "Vigilance Charm (18370)": 1.0094,
+    "Weakness Analyzer (272438)": 1.0068,
+    "Second Wind (11819)": 1.0059,
+    "Rune of the Guard Captain (19120)": 1.0058,
+    "Cleansed Vilebranch Medallion (270275)": 1.0058,
+    "Demon's Blood (10779)": 1.0056,
+    "Force of Will (11810)": 1.0056,
+    "Briarwood Reed (12930)": 1.0054,
+    "Smolderweb's Eye (13213)": 1.0053,
+    "Blackhand's Breadth (13965)": 1.0048,
+    "Frozen Heart of the Mountain (249469)": 1.0046,
+    "Jewel of the Guard Captain (270225)": 1.0045,
+    "Hand of Justice (11815)": 1.0042,
+    "Cannonball Runner (13382)": 1.0036,
+    "Mindtap Talisman (18371)": 1.0036,
+    "Adaptive Combat Assistant (272437)": 1.0035,
+    "Draconic Infused Emblem (22268)": 1.0031,
+    "Heart of the Scale (13164)": 1.0028,
+    "Serenity Field (272439)": 1.0028,
+    "Burst of Knowledge (11832)": 1.0026,
     "Counterattack Lodestone (18537)": 1.0022,
-    "Burst of Knowledge (11832)": 1.002,
-    "Eye of the Beast (13968)": 1.0018,
-    "Enriched Seal (271905)": 1.0017,
-    "Darkspear Voodoo Seal (272059)": 1.0017,
-    "Enriched Seal (271903)": 1.0015,
-    "Darkspear Voodoo Seal (272061)": 1.0015,
+    "Enriched Seal (271903)": 1.002,
+    "Darkspear Voodoo Seal (272061)": 1.002,
+    "Shard of the Splithooves (10659)": 1.0017,
+    "Theka's Last Breath (274641)": 1.0017,
+    "Eye of the Beast (13968)": 1.0015,
+    "Everlook Pathcarver (274759)": 1.0014,
+    "Enriched Seal (271905)": 1.0013,
+    "Darkspear Voodoo Seal (272059)": 1.0013,
     "Smoking Heart of the Mountain (11811)": 1.0012,
     "Molten Heart of the Mountain (249470)": 1.0011,
-    "Shard of the Splithooves (10659)": 1.001,
-    "Worgenbane Talisman (273643)": 1.0009,
-    "Everlook Pathcarver (274759)": 1.0004,
+    "Worgenbane Talisman (273643)": 1.0005,
+    "Talisman of Arathor (20071)": 1.0004,
+    "Defiler's Talisman (20072)": 1.0004,
     "Volunteer's Lucky Seal (271906)": 1.0003,
     "Relentless Raider's Seal (272060)": 1.0003,
+    "Defiler's Talisman (21115)": 1.0003,
+    "Talisman of Arathor (21117)": 1.0003,
     "Volunteer's Lucky Seal (271904)": 1.0002,
     "Relentless Raider's Seal (272062)": 1.0002,
     "Talisman of Arathor (21119)": 1.0002,
     "Defiler's Talisman (21120)": 1.0002,
+    "Defiler's Talisman (21116)": 1.0001,
+    "Talisman of Arathor (21118)": 1.0001,
+    "Alchemist's Stone (13503)": 1.0,
+    "Everlook Delivery Bot (274760)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
     "Lookie's Spyglass (273298)": 1.0,
+    "Roogug's Severed Head (274152)": 1.0,
     "Dog Whistle (3456)": 1.0,
     "Minor Recombobulator (4381)": 1.0,
     "Gnomish Universal Remote (7506)": 1.0,
+    "Ramstein's Lightning Bolts (13515)": 1.0,
     "Arcanite Dragonling (16022)": 1.0,
     "Heart of Noxxion (17744)": 1.0,
     "Gyrofreeze Ice Reflector (18634)": 1.0,
@@ -742,27 +769,20 @@
     "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
     "Gnomish Poultryizer (260824)": 1.0,
     "Cursed Murloc Eye (273840)": 1.0,
+    "The Desert Rose (274648)": 1.0,
     "Parachute-Priest Pager (274761)": 1.0,
-    "Roogug's Severed Head (274152)": 0.9999,
-    "Alchemist's Stone (13503)": 0.9999,
-    "Talisman of Arathor (20071)": 0.9997,
-    "Defiler's Talisman (20072)": 0.9997,
-    "Defiler's Talisman (21115)": 0.9996,
-    "Talisman of Arathor (21117)": 0.9996,
-    "Defiler's Talisman (21116)": 0.9995,
-    "Talisman of Arathor (21118)": 0.9995,
-    "Major Recombobulator (18637)": 0.9992
+    "Mark of the Red Flight (282778)": 1.0
    },
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9900219399448401
+    "keep-sets-and-effects": 0.9979061211479714
    },
    "confirm_seed2": {
     "keep-sets-and-effects": 1.0,
-    "all-slots": 1.00836858178874
+    "all-slots": 1.003308449925196
    },
    "chosen": "all-slots",
-   "ilvl": 61.8,
+   "ilvl": 62.6,
    "items": [
     {
      "id": 250599,
@@ -779,7 +799,7 @@
      "enchant": 1889
     },
     {
-     "id": 10845,
+     "id": 18503,
      "enchant": 1891
     },
     {
@@ -805,13 +825,13 @@
      "id": 275984
     },
     {
-     "id": 272408
+     "id": 272409
     },
     {
      "id": 272440
     },
     {
-     "id": 11815
+     "id": 14557
     },
     {
      "id": 22383,
@@ -830,74 +850,74 @@
     "Talisman of Evasion",
     "Highlander's Lamellar Spaulders",
     "Shifting Cloak",
-    "Warrior's Embrace",
+    "Kromcrush's Chestplate",
     "Deeprock Bracers",
     "Theramore Gauntlets",
     "Warder's Waistguard",
     "Legplates of the Eternal Guardian",
     "Grimy Metal Boots",
     "Warden's Signet of Vigilance",
-    "Cutthroat's Signet",
+    "Ring of Awareness",
     "Defender's Grip Stabilizer",
-    "Hand of Justice",
+    "The Lion Horn of Stormwind",
     "Sageblade",
     "Evergreen Shield",
     "Libram of Fervor"
    ],
    "weights_unit": "threat per second equivalents of tank value (threat weight - k x damage-taken weight)",
    "raw_weights": {
-    "k": 4.15778,
-    "dtps": 274.4,
-    "threat": 1376.5,
+    "k": 4.19241,
+    "dtps": 273.1,
+    "threat": 1400.9,
     "finite_differences": [],
     "tps_per_point": {
-     "PseudoStatMainHandDps": 2.31273,
-     "StatAgility": 0.32884,
-     "StatArmor": -1e-05,
+     "PseudoStatMainHandDps": 2.4092,
+     "StatAgility": 0.2606,
+     "StatArmor": -0.0,
      "StatArmorNoMods": -0.0,
-     "StatArmorPenetration": 0.03171,
-     "StatAttackPower": 0.18256,
-     "StatBlockRating": 0.75095,
-     "StatBlockValue": -5e-05,
-     "StatBonusArmor": -1e-05,
-     "StatCritRating": 0.5827,
-     "StatDefenseRating": -0.17039,
-     "StatDodgeRating": -0.15457,
-     "StatExpertiseRating": 1.03435,
-     "StatHasteRating": 0.51859,
-     "StatHealth": 0.00775,
-     "StatHitRating": 0.43431,
-     "StatHolyDamage": 0.86041,
-     "StatIntellect": 0.28328,
-     "StatMP5": 0.39728,
-     "StatMana": 0.01998,
-     "StatParryRating": -0.06627,
-     "StatSpellDamage": 0.86041,
-     "StatSpirit": 0.00092,
-     "StatStamina": 0.08527,
-     "StatStrength": 0.40164
+     "StatArmorPenetration": 0.03347,
+     "StatAttackPower": 0.18936,
+     "StatBlockRating": 0.56117,
+     "StatBlockValue": -6e-05,
+     "StatBonusArmor": -0.0,
+     "StatCritRating": 0.5921,
+     "StatDefenseRating": -0.15869,
+     "StatDodgeRating": -0.17947,
+     "StatExpertiseRating": 1.03569,
+     "StatHasteRating": 0.54323,
+     "StatHealth": 0.00776,
+     "StatHitRating": 0.44881,
+     "StatHolyDamage": 0.87834,
+     "StatIntellect": 0.15703,
+     "StatMP5": 0.25283,
+     "StatMana": 0.01443,
+     "StatParryRating": -0.08647,
+     "StatSpellDamage": 0.87834,
+     "StatSpirit": 0.00609,
+     "StatStamina": 0.0854,
+     "StatStrength": 0.41659
     },
     "dtps_per_point": {
-     "StatAgility": -0.29821,
-     "StatArmor": -0.02188,
-     "StatArmorNoMods": -0.01989,
-     "StatBlockRating": -0.07676,
-     "StatBlockValue": -0.20109,
-     "StatBonusArmor": -0.02188,
-     "StatCritRating": -0.00735,
-     "StatDefenseRating": -0.63912,
-     "StatDodgeRating": -0.34796,
-     "StatExpertiseRating": -0.00354,
-     "StatHasteRating": -0.0141,
-     "StatHitRating": 0.0004,
-     "StatHolyDamage": -0.01571,
-     "StatIntellect": 0.00981,
-     "StatMP5": 0.01665,
-     "StatMana": 0.00515,
-     "StatParryRating": -0.27551,
-     "StatSpellDamage": -0.01571,
-     "StatSpirit": -0.00103,
-     "StatStrength": -0.01138
+     "StatAgility": -0.2848,
+     "StatArmor": -0.02167,
+     "StatArmorNoMods": -0.0197,
+     "StatBlockRating": -0.09398,
+     "StatBlockValue": -0.21716,
+     "StatBonusArmor": -0.02167,
+     "StatCritRating": -0.00741,
+     "StatDefenseRating": -0.62644,
+     "StatDodgeRating": -0.34613,
+     "StatExpertiseRating": -0.0093,
+     "StatHasteRating": -0.01957,
+     "StatHitRating": -0.00097,
+     "StatHolyDamage": -0.01611,
+     "StatIntellect": 0.00657,
+     "StatMP5": -0.00039,
+     "StatMana": 0.00159,
+     "StatParryRating": -0.28093,
+     "StatSpellDamage": -0.01611,
+     "StatSpirit": 0.00041,
+     "StatStrength": -0.0126
     }
    },
    "enchants_by_weight": {
@@ -924,129 +944,136 @@
      2504
     ],
     "race_seed1": {
-     "1900": 1.189,
-     "2504": 1.1925
+     "1900": 1.1882,
+     "2504": 1.1884
     },
     "confirm_seed2": {
-     "1900": 1.19,
-     "2504": 1.1917
+     "1900": 1.1882,
+     "2504": 1.1909
     },
     "chosen": 2504
    },
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-protection-prebis.gear.json",
    "pick": {
-    "value": 1.1917,
-    "threat": 1357.4,
-    "dtps": 241.1,
-    "dps": 532.8,
+    "value": 1.1912,
+    "threat": 1339.0,
+    "dtps": 228.1,
+    "dps": 529.0,
     "tmi": 0,
     "fights": 20000,
     "seed": 3,
     "stats": {
-     "StatStrength": 97,
-     "StatAgility": 117,
-     "StatStamina": 150,
-     "StatHitRating": 40,
+     "StatStrength": 121,
+     "StatAgility": 97,
+     "StatStamina": 154,
+     "StatHitRating": 30,
      "StatExpertiseRating": 10,
-     "StatDefenseRating": 67,
+     "StatDefenseRating": 86,
      "StatBlockRating": 10,
      "StatBlockValue": 58,
-     "StatDodgeRating": 54,
-     "StatArmor": 6269,
-     "StatBonusArmor": 330
+     "StatDodgeRating": 36,
+     "StatArmor": 6349,
+     "StatBonusArmor": 460
     }
    },
    "vs_standard": {
-    "value": 0.1657,
-    "threat": 0.1466,
-    "dtps": -0.157
+    "value": 0.1645,
+    "threat": 0.106,
+    "dtps": -0.1856
    },
-   "date": "2026-11-10"
+   "date": "2026-11-16"
   },
   "bis": {
    "evaluated_on": [
     "prot-tank: protection-ml-tank"
    ],
    "weights": {
-    "StatArmorNoMods": 0.0821,
-    "StatDefenseRating": 2.5155,
-    "StatDodgeRating": 1.2777,
-    "StatIntellect": 0.2661,
-    "StatBonusArmor": 0.0903,
-    "StatArmor": 0.0903,
-    "StatCritRating": 0.6077,
-    "StatBlockValue": 0.8093,
-    "StatStamina": 0.0849,
-    "StatHolyDamage": 0.9269,
-    "StatMP5": 0.2944,
-    "StatStrength": 0.4481,
-    "StatSpellDamage": 0.9269,
-    "StatParryRating": 1.0492,
-    "StatArmorPenetration": 0.0318,
-    "StatBlockRating": 1.0734,
-    "StatExpertiseRating": 1.0936,
-    "StatHasteRating": 0.5911,
-    "StatHitRating": 0.4439,
-    "StatHealth": 0.0077,
-    "StatMana": 0.0142,
-    "StatAttackPower": 0.1829,
-    "StatSpirit": -0.0075,
-    "PseudoStatMainHandDps": 2.317,
-    "StatAgility": 1.4956
+    "StatHealth": 0.0078,
+    "StatStrength": 0.4694,
+    "StatDefenseRating": 2.4676,
+    "StatSpirit": 0.0044,
+    "StatParryRating": 1.0913,
+    "PseudoStatMainHandDps": 2.4092,
+    "StatMana": 0.0078,
+    "StatBlockRating": 0.9552,
+    "StatAttackPower": 0.1894,
+    "StatBonusArmor": 0.0909,
+    "StatHolyDamage": 0.9459,
+    "StatMP5": 0.2545,
+    "StatDodgeRating": 1.2717,
+    "StatExpertiseRating": 1.0747,
+    "StatIntellect": 0.1295,
+    "StatStamina": 0.0854,
+    "StatAgility": 1.4546,
+    "StatArmor": 0.0909,
+    "StatArmorNoMods": 0.0826,
+    "StatBlockValue": 0.9104,
+    "StatHitRating": 0.4529,
+    "StatCritRating": 0.6232,
+    "StatArmorPenetration": 0.0335,
+    "StatHasteRating": 0.6253,
+    "StatSpellDamage": 0.9459
    },
    "trinkets": [
     "Defender's Grip Stabilizer",
-    "Hand of Justice"
+    "The Lion Horn of Stormwind"
    ],
    "trinket_screen": {
-    "Defender's Grip Stabilizer (272440)": 1.0167,
+    "Defender's Grip Stabilizer (272440)": 1.0177,
+    "The Lion Horn of Stormwind (14557)": 1.0174,
     "Talisman of Ephemeral Power (18820)": 1.0098,
-    "Vigilance Charm (18370)": 1.0092,
-    "Second Wind (11819)": 1.0072,
-    "Hand of Justice (11815)": 1.0072,
-    "Weakness Analyzer (272438)": 1.0067,
-    "Arena Grand Master (19024)": 1.0065,
-    "Smolderweb's Eye (13213)": 1.0061,
-    "Mindtap Talisman (18371)": 1.0059,
-    "Frozen Heart of the Mountain (249469)": 1.0057,
-    "Rune of the Guard Captain (19120)": 1.0054,
-    "Cleansed Vilebranch Medallion (270275)": 1.0054,
-    "Adaptive Combat Assistant (272437)": 1.0051,
-    "Demon's Blood (10779)": 1.0046,
-    "Force of Will (11810)": 1.0046,
-    "Jewel of the Guard Captain (270225)": 1.0046,
-    "Cannonball Runner (13382)": 1.0035,
-    "Blackhand's Breadth (13965)": 1.0031,
-    "Everlook Delivery Bot (274760)": 1.0029,
-    "Serenity Field (272439)": 1.0024,
-    "Heart of the Scale (13164)": 1.0021,
-    "Counterattack Lodestone (18537)": 1.0021,
-    "Eye of the Beast (13968)": 1.0019,
-    "Burst of Knowledge (11832)": 1.0014,
+    "Vigilance Charm (18370)": 1.0088,
+    "Arena Grand Master (19024)": 1.0076,
+    "Weakness Analyzer (272438)": 1.0068,
+    "Second Wind (11819)": 1.0066,
+    "Smolderweb's Eye (13213)": 1.0062,
+    "Rune of the Guard Captain (19120)": 1.0062,
+    "Cleansed Vilebranch Medallion (270275)": 1.0062,
+    "Adaptive Combat Assistant (272437)": 1.0058,
+    "Frozen Heart of the Mountain (249469)": 1.0055,
+    "Briarwood Reed (12930)": 1.0054,
+    "Hand of Justice (11815)": 1.0051,
+    "Demon's Blood (10779)": 1.0051,
+    "Force of Will (11810)": 1.0051,
+    "Blackhand's Breadth (13965)": 1.0049,
+    "Jewel of the Guard Captain (270225)": 1.0045,
+    "Mindtap Talisman (18371)": 1.0045,
+    "Cannonball Runner (13382)": 1.0044,
+    "Heart of the Scale (13164)": 1.0032,
+    "Everlook Delivery Bot (274760)": 1.003,
+    "Serenity Field (272439)": 1.0027,
+    "Shard of the Splithooves (10659)": 1.0025,
+    "Theka's Last Breath (274641)": 1.0025,
+    "Everlook Pathcarver (274759)": 1.0023,
+    "Essence of the Pure Flame (18815)": 1.0023,
+    "Enriched Seal (271905)": 1.0022,
+    "Darkspear Voodoo Seal (272059)": 1.0022,
+    "Counterattack Lodestone (18537)": 1.0022,
+    "Enriched Seal (271903)": 1.0021,
+    "Darkspear Voodoo Seal (272061)": 1.0021,
+    "Talisman of Arathor (20071)": 1.0021,
+    "Defiler's Talisman (20072)": 1.0021,
+    "Defiler's Talisman (21115)": 1.002,
+    "Talisman of Arathor (21117)": 1.002,
+    "Defiler's Talisman (21116)": 1.0018,
+    "Talisman of Arathor (21118)": 1.0018,
+    "Burst of Knowledge (11832)": 1.0018,
+    "Draconic Infused Emblem (22268)": 1.0017,
+    "Eye of the Beast (13968)": 1.0017,
     "Smoking Heart of the Mountain (11811)": 1.0012,
-    "Molten Heart of the Mountain (249470)": 1.001,
-    "Essence of the Pure Flame (18815)": 1.001,
-    "Enriched Seal (271905)": 1.0009,
-    "Darkspear Voodoo Seal (272059)": 1.0009,
-    "Worgenbane Talisman (273643)": 1.0008,
-    "Everlook Pathcarver (274759)": 1.0005,
-    "Enriched Seal (271903)": 1.0005,
-    "Darkspear Voodoo Seal (272061)": 1.0005,
-    "Roogug's Severed Head (274152)": 1.0004,
-    "Alchemist's Stone (13503)": 1.0004,
+    "Molten Heart of the Mountain (249470)": 1.0011,
+    "Worgenbane Talisman (273643)": 1.0007,
+    "Major Recombobulator (18637)": 1.0007,
     "Volunteer's Lucky Seal (271906)": 1.0003,
     "Relentless Raider's Seal (272060)": 1.0003,
-    "Shard of the Splithooves (10659)": 1.0003,
-    "Lookie's Spyglass (273298)": 1.0002,
     "Volunteer's Lucky Seal (271904)": 1.0002,
     "Relentless Raider's Seal (272062)": 1.0002,
     "Talisman of Arathor (21119)": 1.0002,
     "Defiler's Talisman (21120)": 1.0002,
-    "Talisman of Arathor (20071)": 1.0001,
-    "Defiler's Talisman (20072)": 1.0001,
     "Dog Whistle (3456)": 1.0,
     "Minor Recombobulator (4381)": 1.0,
     "Gnomish Universal Remote (7506)": 1.0,
+    "Ramstein's Lightning Bolts (13515)": 1.0,
     "Arcanite Dragonling (16022)": 1.0,
     "Heart of Noxxion (17744)": 1.0,
     "Gyrofreeze Ice Reflector (18634)": 1.0,
@@ -1061,23 +1088,23 @@
     "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
     "Gnomish Poultryizer (260824)": 1.0,
     "Cursed Murloc Eye (273840)": 1.0,
+    "The Desert Rose (274648)": 1.0,
     "Parachute-Priest Pager (274761)": 1.0,
-    "Defiler's Talisman (21115)": 1.0,
-    "Talisman of Arathor (21117)": 1.0,
-    "Defiler's Talisman (21116)": 0.9998,
-    "Talisman of Arathor (21118)": 0.9998,
-    "Major Recombobulator (18637)": 0.9986
+    "Mark of the Red Flight (282778)": 1.0,
+    "Alchemist's Stone (13503)": 1.0,
+    "Lookie's Spyglass (273298)": 1.0,
+    "Roogug's Severed Head (274152)": 0.9999
    },
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9921761935020768
+    "keep-sets-and-effects": 0.9965063615477031
    },
    "confirm_seed2": {
     "keep-sets-and-effects": 1.0,
-    "all-slots": 1.0064535192825406
+    "all-slots": 1.0032504807050104
    },
    "chosen": "the pre-BiS set (the BiS search ended below it)",
-   "ilvl": 61.8,
+   "ilvl": 62.6,
    "items": [
     {
      "id": 250599,
@@ -1094,7 +1121,7 @@
      "enchant": 1889
     },
     {
-     "id": 10845,
+     "id": 18503,
      "enchant": 1891
     },
     {
@@ -1120,13 +1147,13 @@
      "id": 275984
     },
     {
-     "id": 272408
+     "id": 272409
     },
     {
      "id": 272440
     },
     {
-     "id": 11815
+     "id": 14557
     },
     {
      "id": 22383,
@@ -1145,74 +1172,74 @@
     "Talisman of Evasion",
     "Highlander's Lamellar Spaulders",
     "Shifting Cloak",
-    "Warrior's Embrace",
+    "Kromcrush's Chestplate",
     "Deeprock Bracers",
     "Theramore Gauntlets",
     "Warder's Waistguard",
     "Legplates of the Eternal Guardian",
     "Grimy Metal Boots",
     "Warden's Signet of Vigilance",
-    "Cutthroat's Signet",
+    "Ring of Awareness",
     "Defender's Grip Stabilizer",
-    "Hand of Justice",
+    "The Lion Horn of Stormwind",
     "Sageblade",
     "Evergreen Shield",
     "Libram of Fervor"
    ],
    "weights_unit": "threat per second equivalents of tank value (threat weight - k x damage-taken weight)",
    "raw_weights": {
-    "k": 4.05483,
-    "dtps": 277.9,
-    "threat": 1367.0,
+    "k": 4.19241,
+    "dtps": 273.1,
+    "threat": 1400.9,
     "finite_differences": [],
     "tps_per_point": {
-     "PseudoStatMainHandDps": 2.317,
-     "StatAgility": 0.3039,
-     "StatArmor": 5e-05,
-     "StatArmorNoMods": 5e-05,
-     "StatArmorPenetration": 0.0318,
-     "StatAttackPower": 0.18288,
-     "StatBlockRating": 0.69922,
-     "StatBlockValue": 0.00084,
-     "StatBonusArmor": 5e-05,
-     "StatCritRating": 0.57839,
-     "StatDefenseRating": -0.11828,
-     "StatDodgeRating": -0.16377,
-     "StatExpertiseRating": 1.04324,
-     "StatHasteRating": 0.52807,
-     "StatHealth": 0.00772,
-     "StatHitRating": 0.43293,
-     "StatHolyDamage": 0.86303,
-     "StatIntellect": 0.28889,
-     "StatMP5": 0.35788,
-     "StatMana": 0.01452,
-     "StatParryRating": -0.07785,
-     "StatSpellDamage": 0.86303,
-     "StatSpirit": -0.00238,
-     "StatStamina": 0.08492,
-     "StatStrength": 0.40233
+     "PseudoStatMainHandDps": 2.4092,
+     "StatAgility": 0.2606,
+     "StatArmor": -0.0,
+     "StatArmorNoMods": -0.0,
+     "StatArmorPenetration": 0.03347,
+     "StatAttackPower": 0.18936,
+     "StatBlockRating": 0.56117,
+     "StatBlockValue": -6e-05,
+     "StatBonusArmor": -0.0,
+     "StatCritRating": 0.5921,
+     "StatDefenseRating": -0.15869,
+     "StatDodgeRating": -0.17947,
+     "StatExpertiseRating": 1.03569,
+     "StatHasteRating": 0.54323,
+     "StatHealth": 0.00776,
+     "StatHitRating": 0.44881,
+     "StatHolyDamage": 0.87834,
+     "StatIntellect": 0.15703,
+     "StatMP5": 0.25283,
+     "StatMana": 0.01443,
+     "StatParryRating": -0.08647,
+     "StatSpellDamage": 0.87834,
+     "StatSpirit": 0.00609,
+     "StatStamina": 0.0854,
+     "StatStrength": 0.41659
     },
     "dtps_per_point": {
-     "StatAgility": -0.29389,
-     "StatArmor": -0.02226,
-     "StatArmorNoMods": -0.02024,
-     "StatBlockRating": -0.09229,
-     "StatBlockValue": -0.19937,
-     "StatBonusArmor": -0.02226,
-     "StatCritRating": -0.00724,
-     "StatDefenseRating": -0.64955,
-     "StatDodgeRating": -0.3555,
-     "StatExpertiseRating": -0.01242,
-     "StatHasteRating": -0.01554,
-     "StatHitRating": -0.00271,
-     "StatHolyDamage": -0.01576,
-     "StatIntellect": 0.00562,
-     "StatMP5": 0.01567,
-     "StatMana": 7e-05,
-     "StatParryRating": -0.27795,
-     "StatSpellDamage": -0.01576,
-     "StatSpirit": 0.00127,
-     "StatStrength": -0.01129
+     "StatAgility": -0.2848,
+     "StatArmor": -0.02167,
+     "StatArmorNoMods": -0.0197,
+     "StatBlockRating": -0.09398,
+     "StatBlockValue": -0.21716,
+     "StatBonusArmor": -0.02167,
+     "StatCritRating": -0.00741,
+     "StatDefenseRating": -0.62644,
+     "StatDodgeRating": -0.34613,
+     "StatExpertiseRating": -0.0093,
+     "StatHasteRating": -0.01957,
+     "StatHitRating": -0.00097,
+     "StatHolyDamage": -0.01611,
+     "StatIntellect": 0.00657,
+     "StatMP5": -0.00039,
+     "StatMana": 0.00159,
+     "StatParryRating": -0.28093,
+     "StatSpellDamage": -0.01611,
+     "StatSpirit": 0.00041,
+     "StatStrength": -0.0126
     }
    },
    "enchants_by_weight": {
@@ -1239,46 +1266,46 @@
      2504
     ],
     "race_seed1": {
-     "1900": 1.189,
-     "2504": 1.1925
+     "1900": 1.1882,
+     "2504": 1.1884
     },
     "confirm_seed2": {
-     "1900": 1.19,
-     "2504": 1.1917
+     "1900": 1.1882,
+     "2504": 1.1909
     },
     "chosen": 2504
    },
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-protection-bis.gear.json",
    "pick": {
-    "value": 1.1917,
-    "threat": 1357.4,
-    "dtps": 241.1,
-    "dps": 532.8,
+    "value": 1.1912,
+    "threat": 1339.0,
+    "dtps": 228.1,
+    "dps": 529.0,
     "tmi": 0,
     "fights": 20000,
     "seed": 3,
     "stats": {
-     "StatStrength": 97,
-     "StatAgility": 117,
-     "StatStamina": 150,
-     "StatHitRating": 40,
+     "StatStrength": 121,
+     "StatAgility": 97,
+     "StatStamina": 154,
+     "StatHitRating": 30,
      "StatExpertiseRating": 10,
-     "StatDefenseRating": 67,
+     "StatDefenseRating": 86,
      "StatBlockRating": 10,
      "StatBlockValue": 58,
-     "StatDodgeRating": 54,
-     "StatArmor": 6269,
-     "StatBonusArmor": 330
+     "StatDodgeRating": 36,
+     "StatArmor": 6349,
+     "StatBonusArmor": 460
     }
    },
    "vs_standard": {
-    "value": 0.1657,
-    "threat": 0.1466,
-    "dtps": -0.157
+    "value": 0.1645,
+    "threat": 0.106,
+    "dtps": -0.1856
    },
-   "date": "2026-11-12"
+   "date": "2026-11-16"
   },
-  "minutes": 2.2,
+  "minutes": 77.1,
   "reference_fork": {
    "build": "prot-tank",
    "threat": 1138.5295826533659,
@@ -1287,10 +1314,10 @@
    "source": "raidsim/deep/paladin-tank.json (ElliotWood/Forever)"
   },
   "standard": {
-   "value": 1.0223,
-   "threat": 1183.8,
-   "dtps": 286.0,
-   "dps": 471.4,
+   "value": 1.0229,
+   "threat": 1210.7,
+   "dtps": 280.1,
+   "dps": 488.8,
    "tmi": 0,
    "fights": 20000,
    "seed": 3,
@@ -1314,12 +1341,12 @@
   "rotation": "_reference/data/raidsim/apls/druid/feral-bear-tank-raid.apl.json",
   "reference": {
    "build": "feral-bear-tank",
-   "threat": 6727.826873439087,
-   "dtps": 396.12658541910776,
+   "threat": 6375.093331400122,
+   "dtps": 396.631984709381,
    "fights": 20000,
    "seed": 77,
    "gear": "ui/specs/druid/feralbear/gear_sets/default.gear.json",
-   "simulator": "wowsims/forever ff9babba5",
+   "simulator": "wowsims/forever 2e6e77d84",
    "missing_gear": []
   },
   "standard_gear": "ui/specs/druid/feralbear/gear_sets/default.gear.json",
@@ -1328,52 +1355,55 @@
     "feral-bear-tank: opt-feral-bear-tank-raid-tank"
    ],
    "weights": {
-    "StatArmorPenetration": 1.4269,
-    "StatExpertiseRating": 13.3628,
-    "StatHasteRating": -1.7693,
-    "StatBonusArmor": 2.159,
-    "StatCritRating": 17.8136,
-    "StatFeralAttackPower": 3.1673,
-    "StatHitRating": 13.3848,
-    "StatAgility": 18.5894,
-    "PseudoStatMainHandDps": 44.3428,
-    "StatAttackPower": 3.1673,
-    "StatArmor": 2.159,
-    "StatDefenseRating": 11.5927,
-    "StatDodgeRating": 5.8513,
-    "StatStrength": 6.9682,
-    "StatArmorNoMods": 0.4814
+    "StatArmor": 2.0615,
+    "StatCritRating": 16.5416,
+    "StatDodgeRating": 5.2423,
+    "StatStrength": 6.9221,
+    "StatBonusArmor": 2.0615,
+    "StatAttackPower": 3.1464,
+    "StatArmorPenetration": 1.3491,
+    "StatDefenseRating": 10.6861,
+    "StatHasteRating": -1.7176,
+    "StatExpertiseRating": 14.9486,
+    "StatFeralAttackPower": 3.1464,
+    "PseudoStatMainHandDps": 44.0499,
+    "StatArmorNoMods": 0.4597,
+    "StatAgility": 18.145,
+    "StatHitRating": 4.1908
    },
    "trinkets": [
     "Hand of Justice",
     "Blackhand's Breadth"
    ],
    "trinket_screen": {
-    "Hand of Justice (11815)": 1.063,
-    "Blackhand's Breadth (13965)": 1.0136,
-    "Adaptive Combat Assistant (272437)": 1.0124,
-    "Vigilance Charm (18370)": 1.0098,
-    "Rune of the Guard Captain (19120)": 1.0092,
-    "Cleansed Vilebranch Medallion (270275)": 1.0092,
+    "Hand of Justice (11815)": 1.0249,
+    "Blackhand's Breadth (13965)": 1.0219,
+    "Adaptive Combat Assistant (272437)": 1.0134,
+    "The Lion Horn of Stormwind (14557)": 1.0132,
+    "Smolderweb's Eye (13213)": 1.0108,
+    "Vigilance Charm (18370)": 1.0105,
+    "Rune of the Guard Captain (19120)": 1.0105,
+    "Cleansed Vilebranch Medallion (270275)": 1.0105,
+    "Frozen Heart of the Mountain (249469)": 1.0091,
     "Defender's Grip Stabilizer (272440)": 1.0089,
-    "Jewel of the Guard Captain (270225)": 1.0068,
-    "Smolderweb's Eye (13213)": 1.0064,
-    "Frozen Heart of the Mountain (249469)": 1.0064,
-    "Counterattack Lodestone (18537)": 1.0056,
-    "Talisman of Arathor (20071)": 1.0055,
-    "Defiler's Talisman (20072)": 1.0055,
+    "Jewel of the Guard Captain (270225)": 1.0073,
+    "Counterattack Lodestone (18537)": 1.0057,
+    "Talisman of Arathor (20071)": 1.0056,
+    "Defiler's Talisman (20072)": 1.0056,
+    "Cannonball Runner (13382)": 1.0051,
     "Defiler's Talisman (21115)": 1.0047,
     "Talisman of Arathor (21117)": 1.0047,
-    "Cannonball Runner (13382)": 1.004,
-    "Defiler's Talisman (21116)": 1.004,
-    "Talisman of Arathor (21118)": 1.004,
+    "Defiler's Talisman (21116)": 1.0039,
+    "Talisman of Arathor (21118)": 1.0039,
+    "Demon's Blood (10779)": 1.0037,
+    "Force of Will (11810)": 1.0037,
     "Molten Heart of the Mountain (249470)": 1.003,
-    "Demon's Blood (10779)": 1.0019,
-    "Force of Will (11810)": 1.0019,
+    "Heart of the Scale (13164)": 1.0019,
     "Smoking Heart of the Mountain (11811)": 1.0015,
-    "Heart of the Scale (13164)": 1.0005,
-    "Everlook Pathcarver (274759)": 1.0003,
-    "Everlook Delivery Bot (274760)": 1.0002,
+    "Weakness Analyzer (272438)": 1.0012,
+    "Everlook Pathcarver (274759)": 1.0009,
+    "Everlook Delivery Bot (274760)": 1.0008,
+    "Major Recombobulator (18637)": 1.0007,
     "Eye of the Beast (13968)": 1.0,
     "Dog Whistle (3456)": 1.0,
     "Minor Recombobulator (4381)": 1.0,
@@ -1381,7 +1411,9 @@
     "Shard of the Splithooves (10659)": 1.0,
     "Second Wind (11819)": 1.0,
     "Burst of Knowledge (11832)": 1.0,
+    "Briarwood Reed (12930)": 1.0,
     "Alchemist's Stone (13503)": 1.0,
+    "Ramstein's Lightning Bolts (13515)": 1.0,
     "Arcanite Dragonling (16022)": 1.0,
     "Heart of Noxxion (17744)": 1.0,
     "Mindtap Talisman (18371)": 1.0,
@@ -1392,6 +1424,7 @@
     "Talisman of Arathor (21119)": 1.0,
     "Defiler's Talisman (21120)": 1.0,
     "Defender of the Timbermaw (21326)": 1.0,
+    "Draconic Infused Emblem (22268)": 1.0,
     "Heart of Wyrmthalak (22321)": 1.0,
     "Dormant Heart of the Mountain (249473)": 1.0,
     "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
@@ -1411,9 +1444,10 @@
     "Worgenbane Talisman (273643)": 1.0,
     "Cursed Murloc Eye (273840)": 1.0,
     "Roogug's Severed Head (274152)": 1.0,
+    "Theka's Last Breath (274641)": 1.0,
+    "The Desert Rose (274648)": 1.0,
     "Parachute-Priest Pager (274761)": 1.0,
-    "Weakness Analyzer (272438)": 0.9998,
-    "Major Recombobulator (18637)": 0.9992
+    "Mark of the Red Flight (282778)": 1.0
    },
    "relic_race": {
     "23197": 1.0,
@@ -1430,7 +1464,7 @@
     "all-slots": 1.0
    },
    "chosen": "keep-sets-and-effects",
-   "ilvl": 62.1,
+   "ilvl": 62.2,
    "items": [
     {
      "id": 279253,
@@ -1462,7 +1496,7 @@
      "id": 13252
     },
     {
-     "id": 15057,
+     "id": 18736,
      "enchant": 1508
     },
     {
@@ -1470,7 +1504,7 @@
      "enchant": 1887
     },
     {
-     "id": 272408
+     "id": 15855
     },
     {
      "id": 15855
@@ -1499,9 +1533,9 @@
     "Shadowcraft Bracers",
     "Theramore Gloves",
     "Cloudrunner Girdle",
-    "Stormshroud Pants",
+    "Plaguehound Leggings",
     "Mongoose Boots",
-    "Cutthroat's Signet",
+    "Ring of Protection",
     "Ring of Protection",
     "Hand of Justice",
     "Blackhand's Breadth",
@@ -1511,38 +1545,38 @@
    ],
    "weights_unit": "threat per second equivalents of tank value (threat weight - k x damage-taken weight)",
    "raw_weights": {
-    "k": 21.98685,
-    "dtps": 348.2,
-    "threat": 9630.0,
+    "k": 21.52596,
+    "dtps": 342.7,
+    "threat": 9088.0,
     "finite_differences": [
      "StatParryRating",
      "StatBlockRating",
      "StatBlockValue"
     ],
     "tps_per_point": {
-     "PseudoStatMainHandDps": 44.34281,
-     "StatAgility": 11.44758,
+     "PseudoStatMainHandDps": 44.0499,
+     "StatAgility": 11.38429,
      "StatArmor": -0.0002,
      "StatArmorNoMods": -5e-05,
-     "StatArmorPenetration": 1.42691,
-     "StatAttackPower": 3.16734,
+     "StatArmorPenetration": 1.34906,
+     "StatAttackPower": 3.14642,
      "StatBonusArmor": -0.0002,
-     "StatCritRating": 17.81358,
-     "StatDefenseRating": -5.60257,
-     "StatDodgeRating": -3.21024,
-     "StatExpertiseRating": 13.36284,
-     "StatFeralAttackPower": 3.16734,
-     "StatHasteRating": -1.76933,
-     "StatHitRating": 13.38477,
-     "StatStrength": 6.96816
+     "StatCritRating": 16.54164,
+     "StatDefenseRating": -6.05505,
+     "StatDodgeRating": -3.37857,
+     "StatExpertiseRating": 14.94859,
+     "StatFeralAttackPower": 3.14642,
+     "StatHasteRating": -1.71758,
+     "StatHitRating": 4.19083,
+     "StatStrength": 6.92213
     },
     "dtps_per_point": {
-     "StatAgility": -0.32482,
-     "StatArmor": -0.0982,
-     "StatArmorNoMods": -0.0219,
-     "StatBonusArmor": -0.0982,
-     "StatDefenseRating": -0.78207,
-     "StatDodgeRating": -0.41214
+     "StatAgility": -0.31407,
+     "StatArmor": -0.09578,
+     "StatArmorNoMods": -0.02136,
+     "StatBonusArmor": -0.09578,
+     "StatDefenseRating": -0.77772,
+     "StatDodgeRating": -0.40049
     }
    },
    "enchants_by_weight": {
@@ -1561,95 +1595,96 @@
      1896
     ],
     "race_seed1": {
-     "1900": 1.379,
-     "1896": 1.3415
+     "1900": 1.3382,
+     "1896": 1.3022
     },
     "confirm_seed2": {
-     "1900": 1.379
+     "1900": 1.3382
     },
     "chosen": 1900
    },
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-tank-prebis.gear.json",
    "pick": {
-    "value": 1.3786,
-    "threat": 10856.5,
-    "dtps": 346.4,
-    "dps": 3025.8,
+    "value": 1.3396,
+    "threat": 9451.7,
+    "dtps": 331.4,
+    "dps": 2658.8,
     "tmi": 0,
     "fights": 20000,
     "seed": 3,
     "stats": {
      "StatStrength": 38,
-     "StatAgility": 231,
-     "StatStamina": 105,
+     "StatAgility": 247,
+     "StatStamina": 115,
      "StatHitRating": 20,
      "StatDefenseRating": 12,
-     "StatDodgeRating": 12,
-     "StatArmor": 1086,
-     "StatBonusArmor": 510
+     "StatArmor": 1100,
+     "StatBonusArmor": 660
     }
    },
    "vs_standard": {
-    "value": 0.1858,
-    "threat": 0.2705,
-    "dtps": -0.0773
+    "value": 0.1549,
+    "threat": 0.1745,
+    "dtps": -0.1165
    },
-   "date": "2026-11-11"
+   "date": "2026-11-17"
   },
   "bis": {
    "evaluated_on": [
     "feral-bear-tank: opt-feral-bear-tank-raid-tank"
    ],
    "weights": {
-    "StatArmorNoMods": 0.4775,
-    "StatDefenseRating": 11.1453,
-    "StatDodgeRating": 5.6605,
-    "StatBonusArmor": 2.1418,
-    "StatFeralAttackPower": 3.344,
-    "StatArmor": 2.1418,
-    "StatCritRating": 19.7776,
-    "StatStrength": 7.3568,
-    "StatArmorPenetration": 1.5042,
-    "StatExpertiseRating": 12.5832,
-    "StatHasteRating": -2.5711,
-    "StatHitRating": 0.0218,
-    "StatAttackPower": 3.344,
-    "PseudoStatMainHandDps": 46.8162,
-    "StatAgility": 19.1889
+    "StatArmor": 2.0398,
+    "StatCritRating": 17.2922,
+    "StatDodgeRating": 4.4593,
+    "StatStrength": 7.2137,
+    "StatBonusArmor": 2.0398,
+    "StatAttackPower": 3.2789,
+    "StatArmorPenetration": 1.4021,
+    "StatDefenseRating": 10.6587,
+    "StatHasteRating": -2.7933,
+    "StatExpertiseRating": 14.0036,
+    "StatFeralAttackPower": 3.2789,
+    "PseudoStatMainHandDps": 45.9053,
+    "StatArmorNoMods": 0.4548,
+    "StatAgility": 17.8656,
+    "StatHitRating": 0.0228
    },
    "trinkets": [
     "Hand of Justice",
     "Blackhand's Breadth"
    ],
    "trinket_screen": {
-    "Hand of Justice (11815)": 1.0631,
-    "Blackhand's Breadth (13965)": 1.0157,
-    "Arena Grand Master (19024)": 1.0111,
-    "Adaptive Combat Assistant (272437)": 1.011,
-    "Vigilance Charm (18370)": 1.0095,
-    "Defender's Grip Stabilizer (272440)": 1.0087,
-    "Rune of the Guard Captain (19120)": 1.0085,
-    "Cleansed Vilebranch Medallion (270275)": 1.0085,
-    "Smolderweb's Eye (13213)": 1.0069,
-    "Jewel of the Guard Captain (270225)": 1.0067,
-    "Frozen Heart of the Mountain (249469)": 1.0058,
-    "Counterattack Lodestone (18537)": 1.0056,
-    "Cannonball Runner (13382)": 1.004,
-    "Talisman of Arathor (20071)": 1.0038,
-    "Defiler's Talisman (20072)": 1.0038,
-    "Defiler's Talisman (21115)": 1.003,
-    "Talisman of Arathor (21117)": 1.003,
-    "Molten Heart of the Mountain (249470)": 1.0029,
-    "Demon's Blood (10779)": 1.0023,
-    "Force of Will (11810)": 1.0023,
-    "Defiler's Talisman (21116)": 1.0023,
-    "Talisman of Arathor (21118)": 1.0023,
-    "Major Recombobulator (18637)": 1.0016,
+    "Hand of Justice (11815)": 1.0268,
+    "Blackhand's Breadth (13965)": 1.0257,
+    "Adaptive Combat Assistant (272437)": 1.0152,
+    "Arena Grand Master (19024)": 1.0145,
+    "The Lion Horn of Stormwind (14557)": 1.0134,
+    "Smolderweb's Eye (13213)": 1.0119,
+    "Rune of the Guard Captain (19120)": 1.0109,
+    "Cleansed Vilebranch Medallion (270275)": 1.0109,
+    "Defender's Grip Stabilizer (272440)": 1.0103,
+    "Frozen Heart of the Mountain (249469)": 1.0103,
+    "Vigilance Charm (18370)": 1.0099,
+    "Jewel of the Guard Captain (270225)": 1.0092,
+    "Talisman of Arathor (20071)": 1.0073,
+    "Defiler's Talisman (20072)": 1.0073,
+    "Defiler's Talisman (21115)": 1.0066,
+    "Talisman of Arathor (21117)": 1.0066,
+    "Cannonball Runner (13382)": 1.0061,
+    "Counterattack Lodestone (18537)": 1.0058,
+    "Defiler's Talisman (21116)": 1.0058,
+    "Talisman of Arathor (21118)": 1.0058,
+    "Everlook Pathcarver (274759)": 1.0042,
+    "Demon's Blood (10779)": 1.0031,
+    "Force of Will (11810)": 1.0031,
+    "Molten Heart of the Mountain (249470)": 1.0031,
+    "Major Recombobulator (18637)": 1.0029,
+    "Heart of the Scale (13164)": 1.0017,
+    "Essence of the Pure Flame (18815)": 1.0015,
     "Smoking Heart of the Mountain (11811)": 1.0014,
-    "Everlook Pathcarver (274759)": 1.0014,
-    "Weakness Analyzer (272438)": 1.0011,
-    "Heart of the Scale (13164)": 1.0004,
-    "Essence of the Pure Flame (18815)": 1.0001,
+    "Everlook Delivery Bot (274760)": 1.0009,
+    "Weakness Analyzer (272438)": 1.0003,
     "Eye of the Beast (13968)": 1.0,
     "Dog Whistle (3456)": 1.0,
     "Minor Recombobulator (4381)": 1.0,
@@ -1657,7 +1692,9 @@
     "Shard of the Splithooves (10659)": 1.0,
     "Second Wind (11819)": 1.0,
     "Burst of Knowledge (11832)": 1.0,
+    "Briarwood Reed (12930)": 1.0,
     "Alchemist's Stone (13503)": 1.0,
+    "Ramstein's Lightning Bolts (13515)": 1.0,
     "Arcanite Dragonling (16022)": 1.0,
     "Heart of Noxxion (17744)": 1.0,
     "Mindtap Talisman (18371)": 1.0,
@@ -1669,6 +1706,7 @@
     "Talisman of Arathor (21119)": 1.0,
     "Defiler's Talisman (21120)": 1.0,
     "Defender of the Timbermaw (21326)": 1.0,
+    "Draconic Infused Emblem (22268)": 1.0,
     "Heart of Wyrmthalak (22321)": 1.0,
     "Dormant Heart of the Mountain (249473)": 1.0,
     "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
@@ -1688,8 +1726,10 @@
     "Worgenbane Talisman (273643)": 1.0,
     "Cursed Murloc Eye (273840)": 1.0,
     "Roogug's Severed Head (274152)": 1.0,
+    "Theka's Last Breath (274641)": 1.0,
+    "The Desert Rose (274648)": 1.0,
     "Parachute-Priest Pager (274761)": 1.0,
-    "Everlook Delivery Bot (274760)": 0.9997
+    "Mark of the Red Flight (282778)": 1.0
    },
    "relic_race": {
     "23197": 1.0,
@@ -1705,8 +1745,8 @@
     "keep-sets-and-effects": 1.0,
     "all-slots": 1.0
    },
-   "chosen": "the pre-BiS set (the BiS search ended below it)",
-   "ilvl": 62.1,
+   "chosen": "keep-sets-and-effects",
+   "ilvl": 62.7,
    "items": [
     {
      "id": 279253,
@@ -1738,7 +1778,7 @@
      "id": 13252
     },
     {
-     "id": 15057,
+     "id": 18736,
      "enchant": 1508
     },
     {
@@ -1746,7 +1786,7 @@
      "enchant": 1887
     },
     {
-     "id": 272408
+     "id": 18821
     },
     {
      "id": 15855
@@ -1775,9 +1815,9 @@
     "Shadowcraft Bracers",
     "Theramore Gloves",
     "Cloudrunner Girdle",
-    "Stormshroud Pants",
+    "Plaguehound Leggings",
     "Mongoose Boots",
-    "Cutthroat's Signet",
+    "Quick Strike Ring",
     "Ring of Protection",
     "Hand of Justice",
     "Blackhand's Breadth",
@@ -1787,38 +1827,38 @@
    ],
    "weights_unit": "threat per second equivalents of tank value (threat weight - k x damage-taken weight)",
    "raw_weights": {
-    "k": 19.74863,
-    "dtps": 367.4,
-    "threat": 10150.1,
+    "k": 19.30706,
+    "dtps": 361.9,
+    "threat": 9444.6,
     "finite_differences": [
      "StatParryRating",
      "StatBlockRating",
      "StatBlockValue"
     ],
     "tps_per_point": {
-     "PseudoStatMainHandDps": 46.81624,
-     "StatAgility": 12.45475,
+     "PseudoStatMainHandDps": 45.9053,
+     "StatAgility": 11.32576,
      "StatArmor": -0.00019,
      "StatArmorNoMods": -5e-05,
-     "StatArmorPenetration": 1.50422,
-     "StatAttackPower": 3.34402,
+     "StatArmorPenetration": 1.40206,
+     "StatAttackPower": 3.27895,
      "StatBonusArmor": -0.00019,
-     "StatCritRating": 19.77758,
-     "StatDefenseRating": -5.82948,
-     "StatDodgeRating": -2.96867,
-     "StatExpertiseRating": 12.58316,
-     "StatFeralAttackPower": 3.34402,
-     "StatHasteRating": -2.57109,
-     "StatHitRating": 0.02177,
-     "StatStrength": 7.35684
+     "StatCritRating": 17.29223,
+     "StatDefenseRating": -5.15264,
+     "StatDodgeRating": -3.79394,
+     "StatExpertiseRating": 14.00362,
+     "StatFeralAttackPower": 3.27895,
+     "StatHasteRating": -2.79329,
+     "StatHitRating": 0.02278,
+     "StatStrength": 7.21369
     },
     "dtps_per_point": {
-     "StatAgility": -0.341,
-     "StatArmor": -0.10846,
-     "StatArmorNoMods": -0.02418,
-     "StatBonusArmor": -0.10846,
-     "StatDefenseRating": -0.85954,
-     "StatDodgeRating": -0.43695
+     "StatAgility": -0.33873,
+     "StatArmor": -0.10566,
+     "StatArmorNoMods": -0.02356,
+     "StatBonusArmor": -0.10566,
+     "StatDefenseRating": -0.81894,
+     "StatDodgeRating": -0.42747
     }
    },
    "enchants_by_weight": {
@@ -1837,42 +1877,41 @@
      1896
     ],
     "race_seed1": {
-     "1900": 1.379,
-     "1896": 1.3415
+     "1900": 1.3465,
+     "1896": 1.3074
     },
     "confirm_seed2": {
-     "1900": 1.379
+     "1900": 1.3465
     },
     "chosen": 1900
    },
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-tank-bis.gear.json",
    "pick": {
-    "value": 1.3786,
-    "threat": 10856.5,
-    "dtps": 346.4,
-    "dps": 3025.8,
+    "value": 1.3462,
+    "threat": 9835.6,
+    "dtps": 345.0,
+    "dps": 2766.5,
     "tmi": 0,
     "fights": 20000,
     "seed": 3,
     "stats": {
-     "StatStrength": 38,
-     "StatAgility": 231,
-     "StatStamina": 105,
+     "StatStrength": 43,
+     "StatAgility": 247,
+     "StatStamina": 114,
      "StatHitRating": 20,
      "StatDefenseRating": 12,
-     "StatDodgeRating": 12,
-     "StatArmor": 1086,
+     "StatArmor": 1100,
      "StatBonusArmor": 510
     }
    },
    "vs_standard": {
-    "value": 0.1858,
-    "threat": 0.2705,
-    "dtps": -0.0773
+    "value": 0.1606,
+    "threat": 0.2222,
+    "dtps": -0.0802
    },
-   "date": "2026-11-12"
+   "date": "2026-11-17"
   },
-  "minutes": 3.0,
+  "minutes": 23.9,
   "reference_fork": {
    "build": "feral-bear-tank",
    "threat": 3648.59622058297,
@@ -1881,10 +1920,10 @@
    "source": "raidsim/deep/druid-tank.json (ElliotWood/Forever)"
   },
   "standard": {
-   "value": 1.1626,
-   "threat": 8545.0,
-   "dtps": 375.4,
-   "dps": 2380.3,
+   "value": 1.1599,
+   "threat": 8047.3,
+   "dtps": 375.1,
+   "dps": 2266.0,
    "tmi": 0,
    "fights": 20000,
    "seed": 3,

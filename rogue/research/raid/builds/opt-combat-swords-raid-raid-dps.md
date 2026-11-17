@@ -58,17 +58,17 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
 
 ## Rank among our builds and the community simulator's
 
-**5 of 7** for `combat-swords-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**5 of 7** for `combat-swords-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Subtlety Hemo* | community simulator | - | 478 | +0.0% | 797 | +0.0% | 0 s |
-| 2 | *Combat Venom* | community simulator | - | 413 | -13.6% | 787 | -1.3% | 0 s |
-| 3 | *Combat SS* | community simulator | - | 374 | -21.7% | 754 | -5.5% | 0 s |
-| 4 | *Combat BS* | community simulator | - | 362 | -24.1% | 730 | -8.4% | 0 s |
-| 5 | **[`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md)** | ours: optimizer | 21/30/0 | 352 | -26.2% | 703 | -11.9% | 0 s |
-| 6 | [`combat-swords-raid`](combat-swords-raid.md) | ours: hand draft | 21/30/0 | 338 | -29.2% | 683 | -14.3% | 0 s |
-| 7 | *Asn Muti* | community simulator | - | 145 | -69.6% | 288 | -63.9% | 0 s |
+| 1 | *Subtlety Hemo* | community simulator | - | 478 | +0.0% | 818 | +0.0% | 0 s |
+| 2 | *Combat Venom* | community simulator | - | 413 | -13.6% | 799 | -2.3% | 0 s |
+| 3 | *Combat SS* | community simulator | - | 375 | -21.4% | 768 | -6.1% | 0 s |
+| 4 | *Combat BS* | community simulator | - | 364 | -23.9% | 743 | -9.1% | 0 s |
+| 5 | **[`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md)** | ours: optimizer | 21/30/0 | 353 | -26.1% | 713 | -12.8% | 0 s |
+| 6 | [`combat-swords-raid`](combat-swords-raid.md) | ours: hand draft | 21/30/0 | 339 | -29.1% | 694 | -15.1% | 0 s |
+| 7 | *Asn Muti* | community simulator | - | 146 | -69.4% | 296 | -63.8% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -122,12 +122,12 @@ Damage by ability:
 |---|---|
 | Auto Attack | 44% |
 | Sinister Strike | 21% |
-| Eviscerate | 13% |
-| spell 25349 | 8% |
+| Eviscerate | 14% |
+| spell 25349 | 9% |
 | spell 11337 | 8% |
 | Goblin Sapper Charge | 2% |
-| Shank | 1% |
 | Garrote | 1% |
+| Shank | 1% |
 
 ## Notes
 

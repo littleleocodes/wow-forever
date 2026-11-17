@@ -61,30 +61,33 @@
   },
   "Enhancement": {
    "raid": {
-    "plan": "Enhancement is a melee spec that spends mana: your two-hander and **Windfury Weapon** do about half the damage, and you fill the gaps between swings with **Flame Shock**, **Stormstrike**, instant **Maelstrom Weapon** bolts, **Earth Shock** and **Fire Nova**, in that order. Mana is the limit, so the list puts the cheap and free casts first and **Fire Nova**, your most expensive, last.",
+    "plan": "Enhancement is a melee spec that spends mana: your two-hander and **Windfury Weapon** do the most damage, and you fill the gaps between swings with **Flame Shock**, **Stormstrike**, **Magma Totem**, instant **Maelstrom Weapon** bolts, **Earth Shock** and **Fire Nova**, in that order. Mana is the limit, so the list puts the cheap and free casts first, saves **Magma Totem** for when you have a quarter of your mana, and casts **Fire Nova**, a 375-mana spell, last.",
     "why": [
-     "Before the pull, drop **Strength of Earth Totem**, **Grace of Air Totem** and **Searing Totem** (one by one, or all at once with **Call of the Elements**). In Forever the first two last 5 minutes, so one cast covers the fight. Grace of Air rather than **Windfury Totem**: your own **Windfury Weapon** turns Windfury Totem off for you, and a party gets only one of the two.",
-     "**Flame Shock** goes on the target whenever it is off (it lasts 21 seconds with **Call of Flame**; keeping it up measured about 1% better), so most presses go to **Stormstrike**: it costs only 8% of your base mana, hits for 150% weapon damage and makes your next **Lightning Bolt**, **Chain Lightning** or **Earth Shock** deal 20% more for 12 seconds. With **Improved Stormstrike** each one also keeps half your mana regeneration going while you cast for 15 seconds, so on its 6-second cooldown that never drops.",
-     "**Flame Shock** and **Earth Shock** share one cooldown (6 seconds, 5.8 with your point in **Reverberation**), and **Shamanistic Focus** makes both 45% cheaper. Every shock that is not a Flame Shock is an **Earth Shock**, which also takes **Stormstrike**'s 20%.",
+     "Before the pull, drop **Strength of Earth Totem**, **Grace of Air Totem** and **Searing Totem** (one by one, or all at once with **Call of the Elements**). In Forever the first two last 5 minutes, so one cast covers the fight. Grace of Air rather than **Windfury Totem**: your own **Windfury Weapon** switches Windfury Totem off for you (the imbue's tooltip), and you can keep only one Air totem down.",
+     "**Flame Shock** goes on the target whenever it is off and at least 10 seconds of the fight are left (it lasts 21 seconds with **Call of Flame**; keeping it up measured about 1% better), so most presses go to **Stormstrike**: it costs only 8% of your base mana, hits for 100% of your weapon damage (150% before the 2026-11-10 hotfix) and makes your next **Lightning Bolt**, **Chain Lightning** or **Earth Shock** deal 20% more for 12 seconds. With **Improved Stormstrike** each one also keeps half your mana regeneration going while you cast for 15 seconds, so on its 8-second cooldown that never drops, and a dodge or parry resets the cooldown. In the simulator's removal runs it is 18% of the build, its most valuable talent.",
+     "**Magma Totem** replaces **Searing Totem** once the fight starts (one Fire totem at a time): it burns everything within 8 yards for 73 Fire damage every 2 seconds, and **Trial by Fire** stretches it to 40 seconds, so about 4 or 5 a fight. It costs 650 mana: drop it at the boss's feet whenever it is down while you have a quarter of your mana; below that, **Searing Totem** fills the gap.",
+     "**Flame Shock** and **Earth Shock** share one cooldown (6 seconds, 5.2 with your 4 points in **Reverberation**), and **Shamanistic Focus** makes both 45% cheaper. Every shock that is not a Flame Shock is an **Earth Shock**: about 23 a fight and your biggest spell, 5% stronger with **Concussion** and 20% with **Stormstrike**.",
      "**Lightning Bolt** only at 5 stacks of **Maelstrom Weapon**: 5 stacks make the bolt instant and free. Waiting for the full stack measured better than casting at 3.",
-     "**Fire Nova** erupts around your Fire totem, not around you, so keep **Searing Totem** down within 10 yards of the boss and replace it the moment it expires, even late in the fight. Adding Fire Nova measured about 7% more damage in the rotation search, the biggest single change to this list. With **Trial by Fire** its cooldown is 6 seconds (10 without), so it is not a true filler: the list casts it with at least 10% mana, and when nothing is ready you keep swinging.",
-     "Put **Windfury Weapon** on your two-hander with an Elemental Sharpening Stone on top: in Forever an imbue and a stone stack. Its extra attacks are about a fifth of your damage, and **Elemental Weapons** makes them 40% stronger. Press **Rage of the Farseer** (30% attack speed for 25 seconds) at the pull with your trinkets and potion."
+     "**Fire Nova** erupts around your Fire totem, not around you, so keep the totem within 10 yards of the boss. Adding Fire Nova measured about 7% more damage in the rotation search. With **Trial by Fire** it hits 20% harder and its cooldown is 6 seconds (10 without), about 24 casts a fight; it is not a true filler: the list casts it with at least 10% mana, and when nothing is ready you keep swinging.",
+     "Your Elemental points: **Elemental Devastation** turns each spell crit into 9% more melee crit chance for 10 seconds, which feeds **Flurry** (10% of the build in the removal runs); **Call of Flame** adds 15% to your Fire spells and totems; **Elemental Focus** makes a damage spell free now and then. The two Restoration points are **Tidal Focus**: 2% more chance to hit.",
+     "Put **Windfury Weapon** on your two-hander with an Elemental Sharpening Stone on top: in Forever an imbue and a stone stack. Its extra attacks are about a sixth of your damage, and your point in **Elemental Weapons** makes them 13% stronger. Keep it on: the re-tune of 2026-11-17 measured **Rockbiter Weapon** about 10% worse in a full raid. Press **Rage of the Farseer** (30% attack speed for 25 seconds) at the pull with your trinkets and potion."
     ],
     "caveats": [
-     "Mana runs short: with only your own buffs the simulator's build runs out of mana for part of a 3-minute fight. Do not hold shocks in reserve (casting **Earth Shock** freely measured 3% better than keeping 60% of your mana, on the training dummy), and use a mana potion and a Demonic Rune when low. Clearcasting from **Elemental Focus** makes your next damage spell free: nothing to change, the next line takes it.",
-     "Several targets: **Fire Nova** hits every enemy within 10 yards of your Fire totem, so it gains the most from adds. You can have only one Fire totem out at a time; if the adds stand away from it, **Totemic Call** brings it to you, with all your other totems.",
+     "Mana runs short: with only your own buffs the simulator's build runs out of mana for a few seconds of a 3-minute fight. Do not hold shocks in reserve (casting **Earth Shock** freely measured 3% better than keeping 60% of your mana, on the training dummy), and use a mana potion and a Demonic Rune when low. Clearcasting from **Elemental Focus** makes your next damage spell free: nothing to change, the next line takes it.",
+     "Several targets: **Magma Totem** and **Fire Nova** hit every enemy within 8 and 10 yards of your Fire totem, so they gain the most from adds. You can have only one Fire totem out at a time; if the adds stand away from it, **Totemic Call** brings it to you, with all your other totems.",
      "**Maelstrom Weapon**'s proc rate is not published. The stacks last 30 seconds, so cast the bolt when you reach 5.",
-     "Forced out of melee range? A 5-stack **Lightning Bolt** (instant) and the shocks (20 yards) still land."
+     "Forced out of melee range? A 5-stack **Lightning Bolt** (instant) and the shocks (20 yards) still land.",
+     "The simulator's full raid also hands you a party's **Windfury Totem**, about 9% of this build's damage there, but in Forever your own **Windfury Weapon** switches it off for you (the imbue's tooltip): expect less than the page's full-raid number."
     ],
     "diverge": [
      "In the last 10 seconds, skip **Flame Shock**: its burn would not finish. Use the shock on **Earth Shock** instead.",
      "If the fight runs past 3 minutes, press **Rage of the Farseer** again as soon as it is ready.",
-     "In a party of warriors and rogues, ask whether they want **Windfury Totem** instead of **Grace of Air Totem**. A party gets only one of the two, and Windfury Totem does nothing for you while you use **Windfury Weapon**."
+     "In a party of warriors and rogues, ask whether they want **Windfury Totem** instead of **Grace of Air Totem**: you can keep only one Air totem down, and Windfury Totem does nothing for you while you use **Windfury Weapon**."
     ],
     "rotations": {
-     "enhancement-dps": "f5e839848893"
+     "enhancement-dps": "d412c35f5ecf"
     },
-    "written": "2026-10-15"
+    "written": "2026-11-17"
    },
    "leveling": {
     "plan": "Melee with a slow two-hander and your weapon imbue (**Windfury Weapon** from 30, **Rockbiter Weapon** again from 40), and use your spells to finish mobs rather than to open on them: every spell costs mana, and mana costs drinking time.",
@@ -169,32 +172,34 @@
   },
   "Hybrid Elemental/Enhancement": {
    "raid": {
-    "plan": "This hybrid is a melee shaman: Enhancement's **Stormstrike**, **Flurry** and **Maelstrom Weapon** with Elemental's **Elemental Devastation**, **Call of Flame** and **Trial by Fire**. It plays the Enhancement raid list: **Flame Shock**, **Stormstrike**, an instant **Lightning Bolt** at 5 **Maelstrom Weapon** stacks, **Earth Shock** and **Fire Nova** between your swings, which with **Windfury Weapon** do about half the damage.",
+    "plan": "This hybrid is a melee shaman: Enhancement's **Stormstrike**, **Flurry** and **Maelstrom Weapon** with Elemental's **Elemental Devastation**, **Call of Flame** and **Trial by Fire**. It plays the Enhancement raid list: **Flame Shock**, **Stormstrike**, **Magma Totem**, an instant **Lightning Bolt** at 5 **Maelstrom Weapon** stacks, **Earth Shock** and **Fire Nova** between your swings, which with **Windfury Weapon** do the most damage.",
     "why": [
      "Before the pull, drop **Strength of Earth Totem**, **Grace of Air Totem** and **Searing Totem**; the first two last 5 minutes, so one cast covers the fight.",
-     "**Stormstrike** is your main button: 8% of your base mana, a weapon hit and 20% more on your next **Lightning Bolt**, **Chain Lightning** or **Earth Shock**; with **Improved Stormstrike** each one keeps half your mana regeneration going while you cast for 15 seconds.",
-     "**Flame Shock** whenever the burn is off the target, **Earth Shock** on every other free shock. Your Elemental points shape them: 2 points in **Reverberation** bring the shared cooldown to 5.6 seconds, **Concussion** adds 5% to **Earth Shock** and your bolts, **Shamanistic Focus** halves their cost, and **Call of Flame** adds 15% to **Flame Shock**, **Fire Nova** and **Searing Totem**.",
+     "**Stormstrike** is your main button: 8% of your base mana, a hit for 100% of your weapon damage and 20% more on your next **Lightning Bolt**, **Chain Lightning** or **Earth Shock**; with **Improved Stormstrike** each one keeps half your mana regeneration going while you cast for 15 seconds.",
+     "**Flame Shock** whenever the burn is off the target, **Earth Shock** on every other free shock. Your Elemental points shape them: 3 points in **Reverberation** bring the shared cooldown to 5.4 seconds, **Concussion** adds 5% to **Earth Shock** and your bolts, **Shamanistic Focus** makes them 45% cheaper, and **Call of Flame** adds 15% to **Flame Shock**, **Fire Nova** and your Fire totems.",
      "**Lightning Bolt** only at 5 stacks of **Maelstrom Weapon**, when it is instant and free. This build takes 4 of the 5 points, so the stacks come a little slower than in the Enhancement build.",
-     "**Fire Nova** last: it erupts around your Fire totem, so keep **Searing Totem** within 10 yards of the boss and replace it when it expires. **Trial by Fire** makes it 20% stronger on a 6-second cooldown; adding Fire Nova to the Enhancement list measured about 7% more damage in the rotation search.",
-     "**Elemental Devastation** turns every spell crit into 9% more melee crit chance for 10 seconds, which feeds **Flurry**: another reason to keep a shock going between swings.",
-     "Put **Windfury Weapon** on your weapon with a sharpening stone on top: in Forever an imbue and a stone stack, and **Elemental Weapons** makes the Windfury attacks 40% stronger."
+     "**Magma Totem** replaces **Searing Totem** once the fight starts (one Fire totem at a time): it burns everything within 8 yards for 73 Fire damage every 2 seconds, and **Trial by Fire** stretches it to 40 seconds, so about 4 or 5 a fight. It costs 650 mana: drop it at the boss's feet whenever it is down while you have a quarter of your mana; below that, **Searing Totem** fills the gap.",
+     "**Fire Nova** last: it erupts around your Fire totem, so keep the totem within 10 yards of the boss. **Trial by Fire** makes it 20% stronger on a 6-second cooldown; adding Fire Nova to the Enhancement list measured about 7% more damage in the rotation search.",
+     "**Elemental Devastation** turns every spell crit into 9% more melee crit chance for 10 seconds, which feeds **Flurry**: another reason to keep a shock going between swings. The five Restoration points are **Tidal Focus**: 5% more chance to hit.",
+     "Put **Windfury Weapon** on your weapon with a sharpening stone on top: in Forever an imbue and a stone stack, and **Elemental Weapons** makes the Windfury attacks 40% stronger. Keep it on: the re-tune of 2026-11-17 measured **Rockbiter Weapon** about 10% worse in a full raid."
     ],
     "caveats": [
      "No **Rage of the Farseer** in this build: use your trinkets and potion at the pull.",
-     "Mana: **Improved Stormstrike** and **Shamanistic Focus** pay for the shocks; with only your own buffs the simulator's build still runs out of mana for part of a 3-minute fight. Use a mana potion when low, and do not hold shocks back.",
-     "Several targets: **Fire Nova** hits every enemy within 10 yards of your Fire totem. You can have only one Fire totem out; **Totemic Call** brings it to you, with your other totems.",
-     "For a **Lightning Bolt** caster, play Elemental: this split is a melee build."
+     "Mana: **Improved Stormstrike** and **Shamanistic Focus** pay for the shocks; with only your own buffs the simulator's build still runs short for part of a 3-minute fight. Use a mana potion when low, and do not hold shocks back.",
+     "Several targets: **Magma Totem** and **Fire Nova** hit every enemy within 8 and 10 yards of your Fire totem. You can have only one Fire totem out; **Totemic Call** brings it to you, with your other totems.",
+     "For a **Lightning Bolt** caster, play Elemental: this split is a melee build.",
+     "The simulator's full raid also hands you a party's **Windfury Totem**, about 9% of this build's damage there, but in Forever your own **Windfury Weapon** switches it off for you (the imbue's tooltip): expect less than the page's full-raid number."
     ],
     "diverge": [
      "In the last 10 seconds, skip **Flame Shock** (its burn would not finish) and use **Earth Shock**.",
-     "In a party of warriors and rogues, ask whether they want **Windfury Totem** instead of **Grace of Air Totem**: a party gets only one, and it does nothing for you while you use **Windfury Weapon**."
+     "In a party of warriors and rogues, ask whether they want **Windfury Totem** instead of **Grace of Air Totem**: you can keep only one Air totem down, and it does nothing for you while you use **Windfury Weapon**."
     ],
     "rotations": {
      "elemental-dps": "260725d0143a",
-     "enhancement-dps": "f5e839848893",
+     "enhancement-dps": "d412c35f5ecf",
      "stormcaller-dps": "fc9ab1b433fe"
     },
-    "written": "2026-10-15"
+    "written": "2026-11-17"
    }
   }
  }

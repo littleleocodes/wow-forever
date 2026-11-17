@@ -1,35 +1,210 @@
 {
- "date": "2026-11-13",
+ "date": "2026-11-17",
  "rows": [
   {
-   "class": "paladin",
-   "entry": "ret-dps",
-   "build": "retribution-open-raid",
-   "spec": "Retribution",
-   "talent": "Repentance",
+   "class": "warlock",
+   "entry": "fire-destro-raid",
+   "build": "destruction-fire-raid",
+   "spec": "Hybrid Affliction/Destruction",
+   "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0,
-   "kind": "prerequisite",
-   "needed_by": [
-    "Unsealed Wrath"
-   ],
-   "advice": "taken because Unsealed Wrath requires it"
+   "removal_loss": 0.1149,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
   },
   {
-   "class": "paladin",
-   "entry": "shockadin-raid",
-   "build": "shockadin-open-raid",
-   "spec": "Hybrid Holy/Retribution",
-   "talent": "Seal of Command",
+   "class": "warlock",
+   "entry": "fire-destro-raid",
+   "build": "destruction-fire-raid",
+   "spec": "Hybrid Affliction/Destruction",
+   "talent": "Shadowburn",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0,
+   "kind": "wasted",
+   "needed_by": [],
+   "advice": "not cast by the rotation"
+  },
+  {
+   "class": "warlock",
+   "entry": "fire-destro-raid",
+   "build": "opt-fire-destro-raid-raid-dps",
+   "spec": "Hybrid Affliction/Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1148,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
+  },
+  {
+   "class": "warlock",
+   "entry": "fire-destro-raid",
+   "build": "shadow-bolt-hybrid-fire-open-raid",
+   "spec": "Hybrid Affliction/Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1042,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
+  },
+  {
+   "class": "warlock",
+   "entry": "sb-raid",
+   "build": "ds-ruin-raid",
+   "spec": "Hybrid Affliction/Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1157,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
+  },
+  {
+   "class": "warlock",
+   "entry": "sb-raid",
+   "build": "opt-sb-raid-raid-dps",
+   "spec": "Hybrid Affliction/Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1156,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
+  },
+  {
+   "class": "warlock",
+   "entry": "sb-raid",
+   "build": "destruction-ml-raid",
+   "spec": "Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1049,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
+  },
+  {
+   "class": "warlock",
+   "entry": "demonology-raid",
+   "build": "demonology-pact-raid",
+   "spec": "Demonology",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1064,
+   "kind": "automatic",
+   "needed_by": [
+    "Soul Link"
+   ],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage), then summon your Succubus: Demonic Pact keeps the Imp's buff while another demon is out"
+  },
+  {
+   "class": "warlock",
+   "entry": "demonology-raid",
+   "build": "demonology-pact-raid",
+   "spec": "Demonology",
+   "talent": "Soul Link",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0291,
+   "kind": "automatic",
+   "needed_by": [
+    "Demonic Pact"
+   ],
+   "advice": "turn it on with your demon out (it lasts while the demon lives)"
+  },
+  {
+   "class": "warlock",
+   "entry": "demonology-raid",
+   "build": "demonology-ml-raid",
+   "spec": "Demonology",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1061,
+   "kind": "automatic",
+   "needed_by": [
+    "Soul Link"
+   ],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage), then summon your Succubus: Demonic Pact keeps the Imp's buff while another demon is out"
+  },
+  {
+   "class": "warlock",
+   "entry": "demonology-raid",
+   "build": "demonology-ml-raid",
+   "spec": "Demonology",
+   "talent": "Soul Link",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0291,
+   "kind": "automatic",
+   "needed_by": [
+    "Demonic Pact"
+   ],
+   "advice": "turn it on with your demon out (it lasts while the demon lives)"
+  },
+  {
+   "class": "warlock",
+   "entry": "incinerate-raid",
+   "build": "destruction-incinerate-raid",
+   "spec": "Destruction",
+   "talent": "Bane of Havoc",
    "ranks": 1,
    "setting": "dummy",
    "removal_loss": 0.0,
    "kind": "prerequisite",
    "needed_by": [
-    "Vengeance"
+    "Incinerate"
    ],
-   "advice": "taken because Vengeance requires it"
+   "advice": "taken because Incinerate requires it"
+  },
+  {
+   "class": "warlock",
+   "entry": "incinerate-raid",
+   "build": "destruction-incinerate-raid",
+   "spec": "Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1011,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
+  },
+  {
+   "class": "warlock",
+   "entry": "incinerate-raid",
+   "build": "destruction-incinerate-raid",
+   "spec": "Destruction",
+   "talent": "Shadowburn",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0,
+   "kind": "wasted",
+   "needed_by": [],
+   "advice": "not cast by the rotation"
+  },
+  {
+   "class": "warlock",
+   "entry": "incinerate-raid",
+   "build": "destruction-incinerate-open-raid",
+   "spec": "Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1044,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
   }
  ]
 }

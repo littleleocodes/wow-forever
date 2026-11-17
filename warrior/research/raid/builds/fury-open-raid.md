@@ -63,15 +63,15 @@ The Fury raid build the open talent search found on 2026-11-08: every legal 51-p
 
 ## Rank among our builds and the community simulator's
 
-**2 of 5** for `arms-2h-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 5** for `arms-2h-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 420 | +0.0% | 845 | -1.2% | 0 s |
-| 2 | **[`fury-open-raid`](fury-open-raid.md)** | ours: derived (open search) | 20/31/0 | 419 | -0.1% | 856 | +0.0% | 0 s |
-| 3 | [`arms-2h-raid`](arms-2h-raid.md) | ours: hand draft | 19/32/0 | 407 | -3.0% | 833 | -2.7% | 0 s |
-| 4 | *Fury* | community simulator | - | 398 | -5.3% | 811 | -5.2% | 0 s |
-| 5 | *Arms* | community simulator | - | 334 | -20.3% | 703 | -17.8% | 0 s |
+| 1 | **[`fury-open-raid`](fury-open-raid.md)** | ours: derived (open search) | 20/31/0 | 413 | +0.0% | 938 | +0.0% | 0 s |
+| 2 | [`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 413 | -0.0% | 930 | -0.9% | 0 s |
+| 3 | [`arms-2h-raid`](arms-2h-raid.md) | ours: hand draft | 19/32/0 | 400 | -3.0% | 916 | -2.3% | 0 s |
+| 4 | *Fury* | community simulator | - | 391 | -5.2% | 889 | -5.2% | 0 s |
+| 5 | *Arms* | community simulator | - | 328 | -20.7% | 744 | -20.6% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -117,22 +117,22 @@ The Fury raid build the open talent search found on 2026-11-08: every legal 51-p
 |---|---|---|
 | 1 | cast Berserker Rage | 2.0 |
 | 2 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 3 | if execute phase (E20): cast Execute | 5.2 |
+| 3 | if execute phase (E20): cast Execute | 5.1 |
 | 4 | cast Goblin Sapper Charge | as ready |
 | 5 | cast Dense Dynamite | as ready |
 | 6 | if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish | 0.3 |
 | 7 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
 | 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
 | 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
-| 10 | if stacks of Sunder Armor < 4 and not Expose Armor is up: cast Sunder Armor | 7.2 |
+| 10 | if stacks of Sunder Armor < 4 and not Expose Armor is up: cast Sunder Armor | 7.1 |
 | 11 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 12 | if (time left in the fight ≤ 25.5s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
 | 13 | cast Whirlwind | 4.8 |
-| 14 | cast Bloodthirst | 5.5 |
+| 14 | cast Bloodthirst | 5.4 |
 | 15 | cast Death Wish | 0.3 |
 | 16 | cast Whirlwind | 4.8 |
-| 17 | if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring | 1.3 |
-| 18 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.2 |
+| 17 | if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring | 1.1 |
+| 18 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.1 |
 
 Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
@@ -143,7 +143,7 @@ Damage by ability:
 | Auto Attack | 44% |
 | Bloodthirst | 17% |
 | Execute | 17% |
-| Whirlwind | 15% |
+| Whirlwind | 16% |
 | Deep Wound | 7% |
 | Hamstring | 0% |
 

@@ -71,15 +71,15 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
 
 ## Rank among our builds and the community simulator's
 
-**4 of 5** for `fury-dw-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 5** for `fury-dw-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`fury-dual-wield-open-raid`](fury-dual-wield-open-raid.md) | ours: derived (open search) | 17/32/2 | 484 | +0.0% | 858 | +0.0% | 0 s |
-| 2 | *Fury* | community simulator | - | 482 | -0.5% | 857 | -0.1% | 0 s |
-| 3 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 18/33/0 | 482 | -0.6% | 821 | -4.3% | 0 s |
-| 4 | **[`fury-dw-raid`](fury-dw-raid.md)** | ours: hand draft | 13/38/0 | 457 | -5.6% | 783 | -8.7% | 0 s |
-| 5 | *Arms* | community simulator | - | 348 | -28.1% | 576 | -32.8% | 0 s |
+| 1 | [`fury-dual-wield-open-raid`](fury-dual-wield-open-raid.md) | ours: derived (open search) | 17/32/2 | 494 | +0.0% | 937 | +0.0% | 0 s |
+| 2 | *Fury* | community simulator | - | 492 | -0.3% | 935 | -0.2% | 0 s |
+| 3 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 18/33/0 | 490 | -0.7% | 905 | -3.4% | 0 s |
+| 4 | **[`fury-dw-raid`](fury-dw-raid.md)** | ours: hand draft | 13/38/0 | 466 | -5.6% | 863 | -7.9% | 0 s |
+| 5 | *Arms* | community simulator | - | 350 | -29.0% | 635 | -32.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -135,7 +135,7 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
 |---|---|---|
 | 1 | if (time left in the fight ≤ 45s or time left in the fight ≥ 211.5s): cast Death Wish | 0.3 |
 | 2 | if execute phase (E20): cast Execute | 6.7 |
-| 3 | cast Bloodthirst | 7.2 |
+| 3 | cast Bloodthirst | 7.3 |
 | 4 | if time left in the fight ≤ 33.75s: cast Recklessness | 0.3 |
 | 5 | cast Goblin Sapper Charge | as ready |
 | 6 | cast Dense Dynamite | as ready |
@@ -157,8 +157,8 @@ Damage by ability:
 | Ability | [`fury-dw-raid`](fury-dw-raid.md) |
 |---|---|
 | Auto Attack | 45% |
-| Execute | 23% |
-| Bloodthirst | 15% |
+| Execute | 24% |
+| Bloodthirst | 16% |
 | Whirlwind | 12% |
 | Deep Wound | 4% |
 

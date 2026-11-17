@@ -50,14 +50,14 @@ The Demonology build the machine-learning talent search found in a full raid (ev
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `demonology-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 4** for `demonology-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`demonology-pact-raid`](demonology-pact-raid.md) | ours: hand draft | 2/31/18 | 733 | +0.0% | 846 | -0.6% | 1 s |
-| 2 | **[`demonology-ml-raid`](demonology-ml-raid.md)** | ours: derived (ML search) | 2/31/18 | 733 | -0.0% | 851 | +0.0% | 1 s |
-| 3 | *Demo (Shadow Brand)* | community simulator | - | 733 | -0.0% | 851 | +0.0% | 1 s |
-| 4 | *Demo (Fire Brand)* | community simulator | - | 715 | -2.4% | 814 | -4.3% | 1 s |
+| 1 | [`demonology-pact-raid`](demonology-pact-raid.md) | ours: hand draft | 2/31/18 | 748 | +0.0% | 862 | -0.5% | 0 s |
+| 2 | **[`demonology-ml-raid`](demonology-ml-raid.md)** | ours: derived (ML search) | 2/31/18 | 747 | -0.1% | 867 | +0.0% | 0 s |
+| 3 | *Demo (Shadow Brand)* | community simulator | - | 747 | -0.1% | 867 | +0.0% | 0 s |
+| 4 | *Demo (Fire Brand)* | community simulator | - | 728 | -2.7% | 827 | -4.6% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -72,7 +72,7 @@ The Demonology build the machine-learning talent search found in a full raid (ev
   8. move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 5)
   9. move down below 'if time left on Corruption ≤ cast time of Corruption: cast Corruption': if mana % < 15% and time left in the fight ≥ 6s: cast Life Tap (+0.2%, pass 5)
   10. only with 10s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 11 passes, the last 2026-11-07, 8 changes to the base rotation; third-seed check: demonology-ml-raid 872 -> 856 DPS (-1.9%), sim preset: Demo (Shadow Brand) 872 -> 856 DPS (-1.9%), demonology-pact-raid 868 -> 851 DPS (-2.0%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 12 passes, the last 2026-11-17, 8 changes to the base rotation; third-seed check: demonology-ml-raid 884 -> 867 DPS (-1.9%), sim preset: Demo (Shadow Brand) 884 -> 867 DPS (-1.9%), demonology-pact-raid 880 -> 862 DPS (-2.1%)):
   1. drop: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.6%, pass 1)
   2. threshold 10% -> 5%: if mana % < 10%: cast Life Tap (+0.5%, pass 1)
   3. only with 10s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.2%, pass 5)
@@ -88,25 +88,25 @@ The Demonology build the machine-learning talent search found in a full raid (ev
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
-| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.3 |
+| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
 | 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.8 |
 | 7 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.4 |
 | 8 | if mana % < 15% and time left in the fight ≥ 6s: cast Life Tap | 7.8 |
-| 9 | if time left on Immolate ≤ cast time of Immolate: cast Immolate | 3.8 |
-| 10 | cast Shadow Bolt (rank 9) | 13.1 |
+| 9 | if time left on Immolate ≤ cast time of Immolate: cast Immolate | 3.7 |
+| 10 | cast Shadow Bolt (rank 9) | 13.2 |
 
 Damage by ability:
 
 | Ability | [`demonology-ml-raid`](demonology-ml-raid.md) |
 |---|---|
-| Shadow Bolt | 48% |
+| Shadow Bolt | 49% |
 | Bane of Agony | 16% |
-| Corruption | 16% |
+| Corruption | 15% |
 | Immolate | 11% |
 | Pet: Auto Attack | 5% |
 | Pet: Lash of Pain | 2% |
 | Demonic Rune | 2% |
-| Searing Pain | 0% |
+| Searing Pain | 1% |
 | Pet: spell 1293697 | 0% |
 
 ## Notes

@@ -15,115 +15,349 @@
   "bis": {
    "entry": "fury-dw-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-fury-bis.gear.json",
-   "date": "2026-11-13",
-   "setting": "raid",
-   "chosen": "all-slots",
-   "ilvl": 63.1,
+   "date": "2026-11-16",
+   "chosen": "keep-sets-and-effects",
+   "ilvl": 61.9,
    "trinkets": [
-    "Hand of Justice",
-    "Adaptive Combat Assistant"
+    "Adaptive Combat Assistant",
+    "Hand of Justice"
    ],
+   "trinket_screen": {
+    "Adaptive Combat Assistant (272437)": 1.0184,
+    "Hand of Justice (11815)": 1.0165,
+    "Blackhand's Breadth (13965)": 1.013,
+    "Counterattack Lodestone (18537)": 1.01,
+    "Rune of the Guard Captain (19120)": 1.009,
+    "Cleansed Vilebranch Medallion (270275)": 1.009,
+    "Vigilance Charm (18370)": 1.0073,
+    "Molten Heart of the Mountain (249470)": 1.0073,
+    "Smolderweb's Eye (13213)": 1.0071,
+    "Frozen Heart of the Mountain (249469)": 1.0067,
+    "Cannonball Runner (13382)": 1.0047,
+    "Jewel of the Guard Captain (270225)": 1.0045,
+    "Everlook Pathcarver (274759)": 1.0042,
+    "Everlook Delivery Bot (274760)": 1.0033,
+    "Dog Whistle (3456)": 1.0,
+    "Minor Recombobulator (4381)": 1.0,
+    "Gnomish Universal Remote (7506)": 1.0,
+    "Shard of the Splithooves (10659)": 1.0,
+    "Demon's Blood (10779)": 1.0,
+    "Force of Will (11810)": 1.0,
+    "Smoking Heart of the Mountain (11811)": 1.0,
+    "Second Wind (11819)": 1.0,
+    "Burst of Knowledge (11832)": 1.0,
+    "Briarwood Reed (12930)": 1.0,
+    "Heart of the Scale (13164)": 1.0,
+    "Alchemist's Stone (13503)": 1.0,
+    "Ramstein's Lightning Bolts (13515)": 1.0,
+    "Eye of the Beast (13968)": 1.0,
+    "The Lion Horn of Stormwind (14557)": 1.0,
+    "Arcanite Dragonling (16022)": 1.0,
+    "Heart of Noxxion (17744)": 1.0,
+    "Mindtap Talisman (18371)": 1.0,
+    "Gyrofreeze Ice Reflector (18634)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Hyper-Radiant Flame Reflector (18638)": 1.0,
+    "Ultra-Flash Shadow Reflector (18639)": 1.0,
+    "The Eye of Shadow (18665)": 1.0,
+    "Essence of the Pure Flame (18815)": 1.0,
+    "Talisman of Ephemeral Power (18820)": 1.0,
+    "Arena Grand Master (19024)": 1.0,
+    "Talisman of Arathor (20071)": 1.0,
+    "Defiler's Talisman (20072)": 1.0,
+    "Defiler's Talisman (21115)": 1.0,
+    "Defiler's Talisman (21116)": 1.0,
+    "Talisman of Arathor (21117)": 1.0,
+    "Talisman of Arathor (21118)": 1.0,
+    "Talisman of Arathor (21119)": 1.0,
+    "Defiler's Talisman (21120)": 1.0,
+    "Defender of the Timbermaw (21326)": 1.0,
+    "Draconic Infused Emblem (22268)": 1.0,
+    "Heart of Wyrmthalak (22321)": 1.0,
+    "Dormant Heart of the Mountain (249473)": 1.0,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
+    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
+    "Gnomish Poultryizer (260824)": 1.0,
+    "Enriched Seal (271903)": 1.0,
+    "Volunteer's Lucky Seal (271904)": 1.0,
+    "Enriched Seal (271905)": 1.0,
+    "Volunteer's Lucky Seal (271906)": 1.0,
+    "Darkspear Voodoo Seal (272059)": 1.0,
+    "Relentless Raider's Seal (272060)": 1.0,
+    "Darkspear Voodoo Seal (272061)": 1.0,
+    "Relentless Raider's Seal (272062)": 1.0,
+    "Weakness Analyzer (272438)": 1.0,
+    "Serenity Field (272439)": 1.0,
+    "Defender's Grip Stabilizer (272440)": 1.0,
+    "Lookie's Spyglass (273298)": 1.0,
+    "Worgenbane Talisman (273643)": 1.0,
+    "Cursed Murloc Eye (273840)": 1.0,
+    "Roogug's Severed Head (274152)": 1.0,
+    "Theka's Last Breath (274641)": 1.0,
+    "The Desert Rose (274648)": 1.0,
+    "Parachute-Priest Pager (274761)": 1.0,
+    "Mark of the Red Flight (282778)": 1.0
+   },
    "names": [
     "Lionheart Helm",
     "Onyxia Tooth Pendant",
-    "Theramore Pauldrons",
+    "Spaulders of Containment",
     "Howler's Furs",
     "Timbermaw Tunic",
-    "Deeprock Bracers",
+    "Battleborn Armbraces",
     "Theramore Gauntlets",
-    "Valiant's Waistguard",
+    "Highlander's Chain Girdle",
     "Titanic Leggings",
-    "Windreaver Greaves",
-    "Quick Strike Ring",
+    "Furbolg Berserker's Boots",
     "Band of Earthen Might",
-    "Hand of Justice",
+    "Warden's Signet of Ferocity",
     "Adaptive Combat Assistant",
-    "Blackguard",
+    "Hand of Justice",
+    "Ironwood Blade",
     "Persuader",
     "Satyr's Bow"
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9932752268762762,
-    "previous": 0.9746617071116624
+    "keep-sets-and-effects": 1.0056726258424573,
+    "previous": 0.9746436282010353,
+    "previous+trinkets": 0.9746436282010353
    },
    "confirm_seed2": {
     "previous": 1.0,
-    "all-slots": 1.0284060234307908
+    "keep-sets-and-effects": 1.0309713421431814
    },
    "weights": {
-    "PseudoStatMainHandDps": 2.9866,
-    "PseudoStatOffHandDps": 0.8692,
-    "StatAgility": 0.4669,
-    "StatArmorPenetration": 0.1145,
-    "StatAttackPower": 0.2806,
-    "StatCritRating": 0.6398,
-    "StatExpertiseRating": 1.2315,
-    "StatHasteRating": 0.6711,
-    "StatHitRating": 0.6207,
-    "StatStrength": 0.6172
+    "PseudoStatMainHandDps": 2.8555,
+    "PseudoStatOffHandDps": 1.0762,
+    "StatAgility": 0.3894,
+    "StatArmorPenetration": 0.1286,
+    "StatAttackPower": 0.2984,
+    "StatCritRating": 0.5178,
+    "StatExpertiseRating": 1.7631,
+    "StatHasteRating": 0.6672,
+    "StatHitRating": 1.103,
+    "StatStrength": 0.6565
    },
    "evaluated_on": [
     "fury-dw-raid: ml winner"
    ],
-   "commit": "ff9babba5"
+   "replaced": [
+    {
+     "slot": 2,
+     "from": "Theramore Pauldrons",
+     "to": "Spaulders of Containment"
+    },
+    {
+     "slot": 5,
+     "from": "Deeprock Bracers",
+     "to": "Battleborn Armbraces"
+    },
+    {
+     "slot": 7,
+     "from": "Valiant's Waistguard",
+     "to": "Highlander's Chain Girdle"
+    },
+    {
+     "slot": 9,
+     "from": "Windreaver Greaves",
+     "to": "Furbolg Berserker's Boots"
+    },
+    {
+     "slot": 10,
+     "from": "Quick Strike Ring",
+     "to": "Band of Earthen Might"
+    },
+    {
+     "slot": 11,
+     "from": "Band of Earthen Might",
+     "to": "Warden's Signet of Ferocity"
+    },
+    {
+     "slot": 12,
+     "from": "Hand of Justice",
+     "to": "Adaptive Combat Assistant"
+    },
+    {
+     "slot": 13,
+     "from": "Adaptive Combat Assistant",
+     "to": "Hand of Justice"
+    },
+    {
+     "slot": 14,
+     "from": "Blackguard",
+     "to": "Ironwood Blade"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 2e6e77d84",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 9.9
+   }
   },
   "bis2": true,
   "prebis": {
    "entry": "fury-dw-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-fury-prebis.gear.json",
-   "date": "2026-11-13",
-   "setting": "raid",
+   "date": "2026-11-16",
    "chosen": "all-slots",
-   "ilvl": 62.4,
+   "ilvl": 62.1,
    "trinkets": [
-    "Hand of Justice",
-    "Adaptive Combat Assistant"
+    "Adaptive Combat Assistant",
+    "Hand of Justice"
    ],
+   "trinket_screen": {
+    "Adaptive Combat Assistant (272437)": 1.0169,
+    "Hand of Justice (11815)": 1.0168,
+    "Blackhand's Breadth (13965)": 1.0129,
+    "Counterattack Lodestone (18537)": 1.0099,
+    "Rune of the Guard Captain (19120)": 1.0083,
+    "Cleansed Vilebranch Medallion (270275)": 1.0083,
+    "Vigilance Charm (18370)": 1.0073,
+    "Molten Heart of the Mountain (249470)": 1.007,
+    "Smolderweb's Eye (13213)": 1.006,
+    "Jewel of the Guard Captain (270225)": 1.0051,
+    "Frozen Heart of the Mountain (249469)": 1.0043,
+    "Everlook Pathcarver (274759)": 1.0038,
+    "Cannonball Runner (13382)": 1.002,
+    "Everlook Delivery Bot (274760)": 1.0019,
+    "Dog Whistle (3456)": 1.0,
+    "Minor Recombobulator (4381)": 1.0,
+    "Gnomish Universal Remote (7506)": 1.0,
+    "Shard of the Splithooves (10659)": 1.0,
+    "Demon's Blood (10779)": 1.0,
+    "Force of Will (11810)": 1.0,
+    "Smoking Heart of the Mountain (11811)": 1.0,
+    "Second Wind (11819)": 1.0,
+    "Burst of Knowledge (11832)": 1.0,
+    "Briarwood Reed (12930)": 1.0,
+    "Heart of the Scale (13164)": 1.0,
+    "Alchemist's Stone (13503)": 1.0,
+    "Ramstein's Lightning Bolts (13515)": 1.0,
+    "Eye of the Beast (13968)": 1.0,
+    "The Lion Horn of Stormwind (14557)": 1.0,
+    "Arcanite Dragonling (16022)": 1.0,
+    "Heart of Noxxion (17744)": 1.0,
+    "Mindtap Talisman (18371)": 1.0,
+    "Gyrofreeze Ice Reflector (18634)": 1.0,
+    "Major Recombobulator (18637)": 1.0,
+    "Hyper-Radiant Flame Reflector (18638)": 1.0,
+    "Ultra-Flash Shadow Reflector (18639)": 1.0,
+    "The Eye of Shadow (18665)": 1.0,
+    "Talisman of Arathor (20071)": 1.0,
+    "Defiler's Talisman (20072)": 1.0,
+    "Defiler's Talisman (21115)": 1.0,
+    "Defiler's Talisman (21116)": 1.0,
+    "Talisman of Arathor (21117)": 1.0,
+    "Talisman of Arathor (21118)": 1.0,
+    "Talisman of Arathor (21119)": 1.0,
+    "Defiler's Talisman (21120)": 1.0,
+    "Defender of the Timbermaw (21326)": 1.0,
+    "Draconic Infused Emblem (22268)": 1.0,
+    "Heart of Wyrmthalak (22321)": 1.0,
+    "Dormant Heart of the Mountain (249473)": 1.0,
+    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
+    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
+    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
+    "Gnomish Poultryizer (260824)": 1.0,
+    "Enriched Seal (271903)": 1.0,
+    "Volunteer's Lucky Seal (271904)": 1.0,
+    "Enriched Seal (271905)": 1.0,
+    "Volunteer's Lucky Seal (271906)": 1.0,
+    "Darkspear Voodoo Seal (272059)": 1.0,
+    "Relentless Raider's Seal (272060)": 1.0,
+    "Darkspear Voodoo Seal (272061)": 1.0,
+    "Relentless Raider's Seal (272062)": 1.0,
+    "Weakness Analyzer (272438)": 1.0,
+    "Serenity Field (272439)": 1.0,
+    "Defender's Grip Stabilizer (272440)": 1.0,
+    "Lookie's Spyglass (273298)": 1.0,
+    "Worgenbane Talisman (273643)": 1.0,
+    "Cursed Murloc Eye (273840)": 1.0,
+    "Roogug's Severed Head (274152)": 1.0,
+    "Theka's Last Breath (274641)": 1.0,
+    "The Desert Rose (274648)": 1.0,
+    "Parachute-Priest Pager (274761)": 1.0,
+    "Mark of the Red Flight (282778)": 1.0
+   },
    "names": [
     "Lionheart Helm",
     "Mark of Fordring",
     "Theramore Pauldrons",
-    "Cape of the Black Baron",
+    "Earthweave Cloak",
     "Timbermaw Tunic",
     "Deeprock Bracers",
     "Theramore Gauntlets",
     "Valiant's Waistguard",
     "Titanic Leggings",
-    "Windreaver Greaves",
+    "Furbolg Berserker's Boots",
     "Warden's Signet of Ferocity",
     "Cutthroat's Signet",
-    "Hand of Justice",
     "Adaptive Combat Assistant",
+    "Hand of Justice",
     "Persuader",
     "Ironwood Blade",
     "Satyr's Bow"
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9948453443045201,
-    "previous": 0.9891090124279661
+    "keep-sets-and-effects": 0.9962771325252977,
+    "previous": 0.9918495961022633,
+    "previous+trinkets": 0.9918495961022633
    },
    "confirm_seed2": {
     "previous": 1.0,
-    "all-slots": 1.0104144901665069
+    "all-slots": 1.010447585039162
    },
    "weights": {
-    "PseudoStatMainHandDps": 2.9214,
-    "PseudoStatOffHandDps": 1.0638,
-    "StatAgility": 0.6039,
-    "StatArmorPenetration": 0.1181,
-    "StatAttackPower": 0.2891,
-    "StatCritRating": 0.7544,
-    "StatExpertiseRating": 1.3351,
-    "StatHasteRating": 0.7387,
-    "StatHitRating": 0.5311,
-    "StatStrength": 0.636
+    "PseudoStatMainHandDps": 3.2345,
+    "PseudoStatOffHandDps": 1.0778,
+    "StatAgility": 0.6112,
+    "StatArmorPenetration": 0.1323,
+    "StatAttackPower": 0.3061,
+    "StatCritRating": 0.7734,
+    "StatExpertiseRating": 1.5553,
+    "StatHasteRating": 0.7339,
+    "StatHitRating": 0.6767,
+    "StatStrength": 0.6735
    },
    "evaluated_on": [
     "fury-dw-raid: ml winner (bis)"
    ],
-   "commit": "ff9babba5"
+   "replaced": [
+    {
+     "slot": 3,
+     "from": "Cape of the Black Baron",
+     "to": "Earthweave Cloak"
+    },
+    {
+     "slot": 9,
+     "from": "Windreaver Greaves",
+     "to": "Furbolg Berserker's Boots"
+    },
+    {
+     "slot": 12,
+     "from": "Hand of Justice",
+     "to": "Adaptive Combat Assistant"
+    },
+    {
+     "slot": 13,
+     "from": "Adaptive Combat Assistant",
+     "to": "Hand of Justice"
+    }
+   ],
+   "remade": {
+    "simulator": "wowsims/forever 2e6e77d84",
+    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
+    "missing_before": [],
+    "winner_of": "bis-dummy",
+    "talents_left_out": [],
+    "minutes": 6.7
+   }
   }
  },
  "search": {

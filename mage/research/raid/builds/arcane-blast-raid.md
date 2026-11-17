@@ -70,13 +70,13 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 
 ## Rank among our builds and the community simulator's
 
-**3 of 3** for `arcane-dps` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 3** for `arcane-dps` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Arcane Fire* | community simulator | - | 567 | +0.0% | 760 | -1.7% | 4 s |
-| 2 | [`arcane-open-raid`](arcane-open-raid.md) | ours: derived (open search) | 31/17/3 | 566 | -0.3% | 773 | +0.0% | 7 s |
-| 3 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 31/13/7 | 546 | -3.7% | 692 | -10.5% | 6 s |
+| 1 | *Arcane Fire* | community simulator | - | 584 | +0.0% | 785 | -1.5% | 5 s |
+| 2 | [`arcane-open-raid`](arcane-open-raid.md) | ours: derived (open search) | 31/17/3 | 582 | -0.4% | 797 | +0.0% | 8 s |
+| 3 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 31/13/7 | 563 | -3.7% | 715 | -10.4% | 6 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -132,7 +132,7 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 | 2 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 4.0 |
 | 3 | cast Fire Blast | 8.1 |
 | 4 | if Arcane Blast is up and time left on Arcane Blast < cast time of Arcane Blast: cast Arcane Blast | 7.8 |
-| 5 | if stacks of Arcane Blast ≥ 1.5 and time left in the fight ≥ 10s: cast Frostbolt (rank 10) | 8.3 |
+| 5 | if stacks of Arcane Blast ≥ 1.5 and time left in the fight ≥ 10s: cast Frostbolt (rank 10) | 8.2 |
 | 6 | cast Arcane Blast | 7.8 |
 | 7 | cast Fireball (rank 11) | 0.1 |
 | 8 | cast Robe of the Archmage | as ready |

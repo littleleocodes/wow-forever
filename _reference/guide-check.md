@@ -24,7 +24,7 @@ Leveling steps that name a spell the tuned rules never cast (0; `fightlab/rotati
 | druid | Restoration | leveling | 2026-11-08 | leveling:balance-dps 7fff053cfaa6, leveling:feral-cat-dps 029eb15b2e21 |
 | hunter | Beast Mastery | raid | 2026-11-11 | bm-raid 08b392250e22 |
 | hunter | Beast Mastery | leveling | 2026-11-15 | leveling:bm-leveling c776312d31d0, leveling:melee-dps 0e159439c0ea, leveling:mm-raid 4d924884d1e4 |
-| hunter | Marksmanship | raid | 2026-11-11 | mm-lonewolf-raid 422dd63d194f, mm-raid 5ff764097e08 |
+| hunter | Marksmanship | raid | 2026-11-17 | mm-lonewolf-raid 422dd63d194f, mm-raid 5ff764097e08 |
 | hunter | Marksmanship | leveling | 2026-10-26 | leveling:bm-leveling c776312d31d0, leveling:melee-dps 0e159439c0ea, leveling:mm-raid 4d924884d1e4 |
 | hunter | Survival | raid | 2026-11-11 | melee-dps 88ff0967f0fa |
 | hunter | Survival | leveling | 2026-11-15 | leveling:bm-leveling c776312d31d0, leveling:melee-dps 0e159439c0ea, leveling:mm-raid 4d924884d1e4 |
@@ -72,11 +72,11 @@ Leveling steps that name a spell the tuned rules never cast (0; `fightlab/rotati
 | rogue | Hybrid Combat/Subtlety | leveling | 2026-11-15 | leveling:combat-daggers-raid 5d52a58e63af, leveling:combat-swords-raid 8fe993c1421f, leveling:subtlety-leveling 923258fb1477 |
 | shaman | Elemental | raid | 2026-10-15 | elemental-dps 260725d0143a, stormcaller-dps fc9ab1b433fe |
 | shaman | Elemental | leveling | 2026-10-22 | leveling:elemental-dps 29615eae1d95, leveling:enhancement-dps 3472ad21a76f |
-| shaman | Enhancement | raid | 2026-10-15 | enhancement-dps f5e839848893 |
+| shaman | Enhancement | raid | 2026-11-17 | enhancement-dps d412c35f5ecf |
 | shaman | Enhancement | leveling | 2026-11-15 | leveling:elemental-dps 29615eae1d95, leveling:enhancement-dps 3472ad21a76f |
 | shaman | Restoration | raid | 2026-10-22 | healer-policy f1d7847a3163 |
 | shaman | Restoration | leveling | 2026-10-22 | leveling:elemental-dps 29615eae1d95, leveling:enhancement-dps 3472ad21a76f |
-| shaman | Hybrid Elemental/Enhancement | raid | 2026-10-15 | elemental-dps 260725d0143a, enhancement-dps f5e839848893, stormcaller-dps fc9ab1b433fe |
+| shaman | Hybrid Elemental/Enhancement | raid | 2026-11-17 | elemental-dps 260725d0143a, enhancement-dps d412c35f5ecf, stormcaller-dps fc9ab1b433fe |
 | warlock | Affliction | raid | 2026-11-08 | affliction-raid 8cea9e03d6ea |
 | warlock | Affliction | leveling | 2026-11-16 | leveling:affliction-leveling aad4b8d533a8, leveling:demonology-leveling 646c5ce02090, leveling:destruction-leveling 16f97003604b |
 | warlock | Demonology | raid | 2026-11-08 | demonology-raid e51e64619b71 |

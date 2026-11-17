@@ -62,32 +62,34 @@
   },
   "Marksmanship": {
    "raid": {
-    "plan": "Marksmanship plays without a pet: **Lone Wolf** adds 20% to everything you do while no pet is out. **Auto Shot** is about half your damage; **Aimed Shot**, **Arcane Shot** and **Sniper Shot** go out as soon as their cooldowns allow, biggest first.",
+    "plan": "Marksmanship raids with its pet out: the cat does about a fifth of the damage in the simulator's full raid, and **Focused Fire** adds 2% to everything you and the pet do while it is out. **Auto Shot** is about a third of your damage; **Aimed Shot**, **Arcane Shot** and **Sniper Shot** go out as soon as their cooldowns allow, **Aimed Shot** first.",
     "why": [
-     "Before the pull: **Dismiss Pet**, cast **Trueshot Aura** (in Forever a buff you cast, 30 minutes for your party and raid) and **Aspect of the Hawk**, and track the boss's creature type, since **Improved Tracking** adds 5% only against the tracked type. In the simulator **Lone Wolf** is about 16% of this build's damage, more than any other talent.",
-     "**Aimed Shot** comes first: it is your biggest regular hit (weapon damage plus 350, 10% more with **Barrage**), and its 6-second cooldown starts only when the 2-second cast ends, so any delay pushes every later cast back. The simulator measured about 4% more damage with it at the top.",
+     "Before the pull: call your cat, cast **Trueshot Aura** (in Forever a buff you cast, 30 minutes for your party and raid) and **Aspect of the Hawk**, and track the boss's creature type, since **Improved Tracking** adds 5% only against the tracked type.",
+     "**Aimed Shot** comes first: it is your biggest regular hit (weapon damage plus 350, 10% more with **Barrage**), and its 6-second cooldown starts only when the 2-second cast ends, so any delay pushes every later cast back. Start it while the next **Auto Shot** is more than half a second away, so the cast does not clip one.",
+     "**Arcane Shot** every time it is ready: 2 points in **Improved Arcane Shot** bring its cooldown to 5.4 seconds, about 31 casts in a 3-minute fight, more than any other button.",
      "**Rapid Fire** gives 40% faster attacks for 15 seconds; **Rapid Killing** cuts its cooldown to 3 minutes, so it comes once in a 3-minute fight, at the pull. The full rotation presses it right before an **Auto Shot**.",
-     "**Serpent Sting**: recast it with under 0.75 seconds left, but not when **Aimed Shot** or **Multi-Shot** is half a second from ready. Each sting also starts **Rapid Recuperation** (a quarter of your mana regeneration keeps going while you cast, for 15 seconds), so it pays back some mana.",
-     "**Arcane Shot** comes back every 4.5 seconds with 5 points in **Improved Arcane Shot**: about 33 casts a fight, more than any other button, filling the gaps between **Aimed Shot** casts.",
-     "**Sniper Shot** hits hardest (weapon damage plus 590) but takes 4 seconds, so it goes last: start it only when **Aimed Shot** is at least 2.25 seconds from ready (2 seconds in the Lone Wolf rotation) and **Multi-Shot** at least 1, so the long cast barely delays your biggest hit. The 2026-11-10 search widened that margin from 1 second (about 0.6% better in a full raid for Lone Wolf). It comes about 9 times a fight on its 15-second cooldown; between casts **Auto Shot** does the work."
+     "**Serpent Sting**: recast it with under 0.75 seconds left, but not when **Aimed Shot** or **Multi-Shot** is half a second from ready, and not in the last 6 seconds. Each sting also starts **Rapid Recuperation**: with both points, half your mana regeneration keeps going while you cast for 15 seconds (all of it once a **Rapid Killing** is spent).",
+     "**Sniper Shot** hits hardest (weapon damage plus 590) but takes 4 seconds, so it goes last: start it only when **Aimed Shot** is at least 2.25 seconds from ready and **Multi-Shot** at least 1, so the long cast barely delays your biggest hit. It comes about 9 times a fight on its 15-second cooldown; between casts **Auto Shot** does the work.",
+     "The pet: Forever pets take their stats from your gear (a tenth of your attack power and all of your crit chance), so the cat grows with you. It claws on its own; keep it on the boss and alive with **Mend Pet**."
     ],
     "caveats": [
-     "**Multi-Shot** is on the list but shares **Aimed Shot**'s cooldown, so on one target it almost never comes up (the simulator cast it about once in five fights). It is there for groups of targets.",
-     "Mana is tight even in a full raid: the simulator's hunter uses two mana potions a fight and still runs dry for a few seconds. With only your own buffs its rotation never casts **Sniper Shot** (365 mana) and casts **Aimed Shot** only above 10% mana.",
+     "**Multi-Shot** is on the list but shares **Aimed Shot**'s cooldown, so on one target it almost never comes up. It is there for groups of targets.",
+     "Mana is tight even in a full raid: the simulator's hunter drinks a mana potion a fight. With only your own buffs its rotation drops **Sniper Shot** (365 mana) and holds **Aimed Shot** when your mana runs low.",
      "Moving: **Auto Shot**, **Aimed Shot** and **Sniper Shot** need you to stand still, while **Arcane Shot** and **Serpent Sting** are instant. Do not start a 4-second **Sniper Shot** when you know you must move.",
      "**Rapid Killing**'s other half (a kill makes your next Shot within 20 seconds hit 20% harder) never happens on a boss; on trash, let the next pull's first **Aimed Shot** spend it.",
+     "A fight that kills pets (cleaves, area damage) takes about a fifth of this build's damage with the cat.",
      "Watch your ranks: in the beta client (build 70753) the top ranks are the strongest. **Hunter's Mark** rank 4 gives +143 ranged attack power (rank 3 +98), **Trueshot Aura** rank 5 +100 (rank 4 +75; if your build has it) and **Aspect of the Hawk** rank 7 +120 (rank 6 +110). Cast the highest rank you have."
     ],
     "diverge": [
      "Two or three targets close together: **Multi-Shot** instead of **Aimed Shot** (same cooldown, up to 3 targets for weapon damage each). For a pack, **Volley**: a 6-second channel with no cooldown in Forever.",
      "In the last seconds, skip the **Serpent Sting** refresh and do not start a **Sniper Shot** that will not finish; **Arcane Shot** instead.",
-     "With a pet out **Lone Wolf** does nothing: if you want the pet, take the pet build linked above, whose rotation puts **Arcane Shot** first."
+     "Without a pet, play the Lone Wolf setup linked above, about 1% behind this build in a full raid: its Lone Wolf talent adds 20% to everything you do while no pet is out, and its rotation starts **Sniper Shot** with **Aimed Shot** 2 seconds from ready."
     ],
     "rotations": {
      "mm-raid": "5ff764097e08",
      "mm-lonewolf-raid": "422dd63d194f"
     },
-    "written": "2026-11-11"
+    "written": "2026-11-17"
    },
    "leveling": {
     "plan": "Marksmanship levels with the pet tanking, but more of the damage is your own: **Aimed Shot** on its cooldown, **Serpent Sting** on every mob, **Arcane Shot** to finish once the mob is below 35% of its health, **Trueshot Aura** always on and **Auto Shot** in between. The build spends its first 30 points on Marksmanship (**Lethal Attacks**, **Careful Aim**, **Efficiency**) and the other 21 on the pet.",

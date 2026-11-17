@@ -69,19 +69,19 @@ The conservative dagger adaptation: Puncturing Wounds replaces Improved Backstab
 
 ## Rank among our builds and the community simulator's
 
-**8 of 9** for `combat-daggers-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**8 of 9** for `combat-daggers-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Subtlety Hemo* | community simulator | - | 483 | +0.0% | 794 | -4.3% | 0 s |
-| 2 | *Asn Muti* | community simulator | - | 448 | -7.4% | 829 | +0.0% | 0 s |
-| 3 | *Combat Venom* | community simulator | - | 399 | -17.5% | 714 | -13.9% | 0 s |
-| 4 | [`daggers-split-open-raid`](daggers-split-open-raid.md) | ours: derived (open search) | 29/22/0 | 375 | -22.4% | 797 | -3.9% | 0 s |
-| 5 | *Combat SS* | community simulator | - | 360 | -25.4% | 682 | -17.8% | 0 s |
-| 6 | *Combat BS* | community simulator | - | 347 | -28.2% | 764 | -7.9% | 0 s |
-| 7 | [`combat-ml-raid`](combat-ml-raid.md) | ours: derived (ML search) | 13/33/5 | 334 | -30.8% | 773 | -6.8% | 0 s |
-| 8 | **[`combat-daggers-raid`](combat-daggers-raid.md)** | ours: hand draft | 21/30/0 | 312 | -35.5% | 681 | -17.9% | 0 s |
-| 9 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 21/30/0 | 312 | -35.5% | 681 | -17.9% | 0 s |
+| 1 | *Subtlety Hemo* | community simulator | - | 486 | +0.0% | 812 | -3.5% | 0 s |
+| 2 | *Asn Muti* | community simulator | - | 449 | -7.6% | 841 | +0.0% | 0 s |
+| 3 | *Combat Venom* | community simulator | - | 399 | -17.8% | 723 | -14.1% | 0 s |
+| 4 | [`daggers-split-open-raid`](daggers-split-open-raid.md) | ours: derived (open search) | 29/22/0 | 377 | -22.5% | 808 | -4.0% | 0 s |
+| 5 | *Combat SS* | community simulator | - | 361 | -25.7% | 690 | -18.0% | 0 s |
+| 6 | *Combat BS* | community simulator | - | 348 | -28.3% | 773 | -8.1% | 0 s |
+| 7 | [`combat-ml-raid`](combat-ml-raid.md) | ours: derived (ML search) | 13/33/5 | 336 | -30.8% | 781 | -7.2% | 0 s |
+| 8 | **[`combat-daggers-raid`](combat-daggers-raid.md)** | ours: hand draft | 21/30/0 | 313 | -35.7% | 689 | -18.1% | 0 s |
+| 9 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 21/30/0 | 313 | -35.7% | 689 | -18.1% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -125,7 +125,7 @@ Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: i
 | 11 | if “At or Below SnD Clipping Threshold” and “Above SnD Point Threshold” and not “Fight About to End” and not “Expose - Prevent Other Finishers”: cast Slice and Dice | 3.3 |
 | 12 | if combo points = 5 and not “SnD Fall Imminent” and energy ≥ current cost and not “Expose - Prevent Other Finishers” and not Elune's Light is up: cast Cold Blood | 0.3 |
 | 13 | if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not “SnD Fall Imminent” or combo points ≥ 3 and “Fight About to End”) and not “Expose - Prevent Other Finishers” and not talentIsKnown: cast Eviscerate (rank 8) | 2.7 |
-| 14 | if not Mutilate is known and not Hemorrhage is known and not “Use Backstab” and “Current Points less than 5” and (not “SnD Fall Imminent” or energy > (current cost + current cost) and not “SnD Fall Imminent” or not “Above SnD Point Threshold” or “In Danger of Energy Capping” or “Expose - Low Duration”) and “Gnome Eureka - Active or Not Ready”: cast Sinister Strike | 14.8 |
+| 14 | if not Mutilate is known and not Hemorrhage is known and not “Use Backstab” and “Current Points less than 5” and (not “SnD Fall Imminent” or energy > (current cost + current cost) and not “SnD Fall Imminent” or not “Above SnD Point Threshold” or “In Danger of Energy Capping” or “Expose - Low Duration”) and “Gnome Eureka - Active or Not Ready”: cast Sinister Strike | 14.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Ambush, cast Blood Fury, cast Elune's Light, cast Eureka!, cast Rupture, cast Backstab (rank 8) (its condition never held in these fights); cast Preparation (needs the Preparation talent); cast Adrenaline Rush, strict sequence: cast Blood Fury; cast Adrenaline Rush, strict sequence: cast Elune's Light; cast Adrenaline Rush (needs the Adrenaline Rush talent); cast Premeditation (needs the Premeditation talent); cast Death Mark (needs the Death Mark talent); cast Ghostly Strike (needs the Ghostly Strike talent); cast Hemorrhage (needs the Hemorrhage talent); cast Mutilate (needs the Mutilate talent).
 

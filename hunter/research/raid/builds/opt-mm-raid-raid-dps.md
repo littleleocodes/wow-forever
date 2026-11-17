@@ -58,21 +58,19 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 
 ## Rank among our builds and the community simulator's
 
-**1 of 11** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 9** for `mm-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md)** | ours: optimizer | 31/16/4 | 551 | +0.0% | 945 | -5.5% | 29 s |
-| 2 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 519 | -5.8% | 1000 | +0.0% | 28 s |
-| 3 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 517 | -6.2% | 921 | -7.9% | 23 s |
-| 4 | *BM Weave* | community simulator | - | 506 | -8.2% | 964 | -3.6% | 35 s |
-| 5 | *BM* | community simulator | - | 494 | -10.4% | 989 | -1.2% | 40 s |
-| 6 | *MM* | community simulator | - | 490 | -11.1% | 972 | -2.8% | 39 s |
-| 7 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 478 | -13.4% | 910 | -9.0% | 15 s |
-| 8 | *SV* | community simulator | - | 447 | -19.0% | 834 | -16.6% | 36 s |
-| 9 | *SV Weave* | community simulator | - | 443 | -19.7% | 824 | -17.6% | 35 s |
-| 10 | *MM Weave* | community simulator | - | 431 | -21.9% | 834 | -16.6% | 44 s |
-| 11 | *SV Melee* | community simulator | - | 399 | -27.6% | 817 | -18.3% | 43 s |
+| 1 | **[`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md)** | ours: optimizer | 31/16/4 | 564 | +0.0% | 968 | -4.6% | 30 s |
+| 2 | *BM* | community simulator | - | 550 | -2.5% | 1013 | -0.2% | 41 s |
+| 3 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 531 | -5.8% | 932 | -8.2% | 17 s |
+| 4 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 529 | -6.1% | 942 | -7.2% | 24 s |
+| 5 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 528 | -6.4% | 1015 | +0.0% | 29 s |
+| 6 | *MM* | community simulator | - | 498 | -11.7% | 987 | -2.8% | 41 s |
+| 7 | *SV Weave* | community simulator | - | 450 | -20.1% | 838 | -17.5% | 37 s |
+| 8 | *SV* | community simulator | - | 449 | -20.4% | 868 | -14.5% | 44 s |
+| 9 | *SV Melee* | community simulator | - | 433 | -23.3% | 816 | -19.6% | 44 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -112,11 +110,11 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | cast Arcane Shot | 9.1 |
+| 1 | cast Arcane Shot | 9.0 |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if mana % ≥ 60%: cast Intimidation | 0.3 |
 | 4 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
-| 5 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 15%: cast Aimed Shot | 4.3 |
+| 5 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 15%: cast Aimed Shot | 4.2 |
 | 6 | if time to the next auto attack > 1s and mana % ≥ 10%: cast Multi-Shot | 0.5 |
 | 7 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.6 |
 
@@ -126,14 +124,14 @@ Damage by ability:
 
 | Ability | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) |
 |---|---|
-| Pet: Auto Attack | 32% |
-| Auto Shot | 30% |
+| Pet: Auto Attack | 31% |
+| Auto Shot | 29% |
 | Arcane Shot | 17% |
-| Serpent Sting | 10% |
+| Serpent Sting | 9% |
 | Aimed Shot | 7% |
-| Pet: Bite | 2% |
-| Pet: Claw | 2% |
+| Pet: Claw | 5% |
 | Multi-Shot | 1% |
+| Pet: Bite | 0% |
 
 ## Notes
 

@@ -1,0 +1,2121 @@
+{
+ "made": "2026-11-17T17:14:51-05:00",
+ "about": "Out-of-combat rest cues for an in-game add-on, every class and leveling spec (2026-11-16, user: \"I want the addon to not proc during combat. Also, I just want to be eat/drink/evocation for now. Also I want it to work across all different classes and specs\").",
+ "rules": "Out of combat only. drink_below / eat_below: shares of maximum mana / health; tools: the class's own mana tools between fights, in order (a tool's cue comes before drinking). The fight lab drinks and eats back to full once a cue fires. eat_drink_together (per spec; absent = false): while you sit to drink or to eat, the other bar tops up too, at no extra time, only while it is below full; you stand when the bar that fired is full (the topped-up one may be left short). Evocation is not sitting and brings no top-up. vectors: the fight lab's own decision on set states, for the add-on's tests (hp and mana as shares; does in order; after: the bars once the tool ran; warlocks: health_max and tap_cost).",
+ "classes": {
+  "druid": {
+   "tools": [],
+   "specs": {
+    "Balance": {
+     "build": "opt-balance-dps-leveling-st",
+     "rotation": "balance-dps",
+     "drink_below": 0.35,
+     "eat_below": 0.4,
+     "talents": {
+      "Eclipse": 3,
+      "Genesis": 3,
+      "Heart of the Wild": 2,
+      "Improved Moonfire": 2,
+      "Improved Starfire": 5,
+      "Improved Wrath": 5,
+      "Moonfury": 5,
+      "Moonglow": 3,
+      "Moonkin Form": 1,
+      "Naturalist": 5,
+      "Nature's Focus": 5,
+      "Nature's Grace": 1,
+      "Nature's Majesty": 2,
+      "Nature's Splendor": 1,
+      "Reflection": 3,
+      "Vengeance": 5
+     },
+     "eat_drink_together": false
+    },
+    "Feral Combat": {
+     "build": "feral-combat-open-leveling",
+     "rotation": "feral-cat-dps",
+     "drink_below": 0.35,
+     "eat_below": 0.65,
+     "talents": {
+      "Blood Frenzy": 2,
+      "Brutal Impact": 1,
+      "Feral Charge": 1,
+      "Feral Swiftness": 2,
+      "Ferocity": 5,
+      "Furor": 1,
+      "Genesis": 5,
+      "Heart of the Wild": 5,
+      "Improved Wrath": 1,
+      "Leader of the Pack": 1,
+      "Natural Instinct": 2,
+      "Natural Shapeshifter": 1,
+      "Naturalist": 5,
+      "Nature's Majesty": 2,
+      "Nature's Reach": 2,
+      "Nature's Splendor": 1,
+      "Predatory Strikes": 3,
+      "Rend and Tear": 4,
+      "Savage Fury": 2,
+      "Sharpened Claws": 2,
+      "Thick Hide": 3
+     },
+     "eat_drink_together": false
+    },
+    "Restoration": {
+     "build": "restoration-leveling",
+     "rotation": "feral-cat-dps",
+     "drink_below": 0.35,
+     "eat_below": 0.65,
+     "talents": {
+      "Bloom": 1,
+      "Genesis": 5,
+      "Gift of Nature": 5,
+      "Heart of the Wild": 5,
+      "Improved Moonfire": 2,
+      "Improved Regrowth": 5,
+      "Improved Rejuvenation": 3,
+      "Improved Wrath": 1,
+      "Living Spirit": 3,
+      "Naturalist": 5,
+      "Nature's Focus": 3,
+      "Nature's Majesty": 2,
+      "Nature's Splendor": 1,
+      "Nature's Swiftness": 1,
+      "Reflection": 3,
+      "Swiftmend": 1,
+      "Tranquil Spirit": 5
+     },
+     "eat_drink_together": false
+    }
+   }
+  },
+  "hunter": {
+   "tools": [],
+   "specs": {
+    "Beast Mastery": {
+     "build": "beast-mastery-open-leveling",
+     "rotation": "bm-leveling",
+     "drink_below": 0.15,
+     "eat_below": 0.65,
+     "talents": {
+      "Bestial Discipline": 2,
+      "Bestial Swiftness": 1,
+      "Bestial Wrath": 1,
+      "Careful Aim": 2,
+      "Deadly Aspects": 5,
+      "Efficiency": 5,
+      "Endurance Training": 3,
+      "Ferocity": 5,
+      "Focused Fire": 2,
+      "Frenzy": 5,
+      "Improved Stings": 3,
+      "Improved Tracking": 4,
+      "Intimidation": 1,
+      "Lethal Attacks": 5,
+      "Spirit Bond": 1,
+      "Trueshot Aura": 1,
+      "Unleashed Fury": 5
+     },
+     "eat_drink_together": false
+    },
+    "Marksmanship": {
+     "build": "marksmanship-open-leveling",
+     "rotation": "mm-raid",
+     "drink_below": 0.15,
+     "eat_below": 0.65,
+     "talents": {
+      "Barrage": 3,
+      "Bestial Discipline": 1,
+      "Careful Aim": 5,
+      "Deadly Aspects": 5,
+      "Efficiency": 5,
+      "Endurance Training": 1,
+      "Ferocity": 5,
+      "Focused Fire": 2,
+      "Improved Aspect of the Monkey": 2,
+      "Improved Stings": 3,
+      "Lethal Attacks": 5,
+      "Ranged Weapon Specialization": 5,
+      "Rapid Killing": 2,
+      "Rapid Recuperation": 1,
+      "Trueshot Aura": 1,
+      "Unleashed Fury": 5
+     },
+     "eat_drink_together": false
+    },
+    "Survival": {
+     "build": "survival-open-leveling",
+     "rotation": "melee-dps",
+     "drink_below": 0.35,
+     "eat_below": 0.65,
+     "talents": {
+      "Careful Aim": 4,
+      "Clever Traps": 2,
+      "Deadly Aspects": 2,
+      "Deflection": 1,
+      "Efficiency": 5,
+      "Endurance Training": 1,
+      "Improved Stings": 2,
+      "Improved Tracking": 5,
+      "Lethal Attacks": 5,
+      "Lightning Reflexes": 5,
+      "Predator's Edge": 5,
+      "Resourcefulness": 2,
+      "Savage Strikes": 2,
+      "Strider Kick": 1,
+      "Surefooted": 3,
+      "Survival Tactics": 1,
+      "Survivalist": 2,
+      "Survivalist's Discipline": 2,
+      "Trueshot Aura": 1
+     },
+     "eat_drink_together": false
+    },
+    "Hybrid Beast Mastery/Marksmanship": {
+     "build": "beast-marks-open-leveling",
+     "rotation": "bm-leveling",
+     "drink_below": 0.15,
+     "eat_below": 0.65,
+     "talents": {
+      "Bestial Discipline": 1,
+      "Bestial Swiftness": 1,
+      "Careful Aim": 5,
+      "Deadly Aspects": 5,
+      "Efficiency": 5,
+      "Endurance Training": 2,
+      "Ferocity": 5,
+      "Focused Fire": 2,
+      "Improved Revive Pet": 1,
+      "Improved Stings": 3,
+      "Improved Tracking": 5,
+      "Lethal Attacks": 5,
+      "Mortal Shots": 1,
+      "Rapid Killing": 2,
+      "Rapid Recuperation": 1,
+      "Spirit Bond": 1,
+      "Trueshot Aura": 1,
+      "Unleashed Fury": 5
+     },
+     "eat_drink_together": false
+    },
+    "Hybrid Beast Mastery/Survival": {
+     "build": "beast-survival-open-leveling",
+     "rotation": "melee-dps",
+     "drink_below": 0.35,
+     "eat_below": 0.65,
+     "talents": {
+      "Bestial Discipline": 2,
+      "Clever Traps": 2,
+      "Deadly Aspects": 5,
+      "Endurance Training": 3,
+      "Entrapment": 1,
+      "Ferocity": 5,
+      "Focused Fire": 2,
+      "Improved Tracking": 5,
+      "Lethal Attacks": 4,
+      "Predator's Edge": 5,
+      "Resourcefulness": 2,
+      "Savage Strikes": 2,
+      "Surefooted": 3,
+      "Survival Tactics": 1,
+      "Survivalist": 2,
+      "Survivalist's Discipline": 2,
+      "Unleashed Fury": 5
+     },
+     "eat_drink_together": false
+    }
+   }
+  },
+  "mage": {
+   "tools": [
+    {
+     "spell": "Evocation",
+     "min_level": 20,
+     "mana_below": 0.15,
+     "needs_ready": true,
+     "note": "between fights, before drinking: Evocation when it is ready and mana is under 15% (fightlab/mage.py, evocation; the rules' EVO_BELOW)"
+    }
+   ],
+   "specs": {
+    "Arcane": {
+     "build": "arcane-open-leveling",
+     "rotation": "arcane-leveling",
+     "drink_below": 0.15,
+     "eat_below": 0.4,
+     "talents": {
+      "Arcane Blast": 1,
+      "Arcane Concentration": 5,
+      "Arcane Impact": 3,
+      "Arcane Instability": 3,
+      "Arcane Meditation": 3,
+      "Arcane Mind": 5,
+      "Arcane Power": 1,
+      "Arcane Resilience": 1,
+      "Arcane Subtlety": 2,
+      "Arcane Wrath": 1,
+      "Frost Channeling": 1,
+      "Frost Warding": 1,
+      "Ice Lance": 1,
+      "Ice Shards": 2,
+      "Improved Blizzard": 1,
+      "Improved Channeling": 5,
+      "Improved Frost Nova": 2,
+      "Improved Frostbolt": 3,
+      "Missile Barrage": 2,
+      "Permafrost": 2,
+      "Precision": 2,
+      "Presence of Mind": 1,
+      "Shatter": 3
+     },
+     "eat_drink_together": false
+    },
+    "Fire": {
+     "build": "fire-open-leveling",
+     "rotation": "fire-leveling",
+     "drink_below": 0.15,
+     "eat_below": 0.4,
+     "talents": {
+      "Accelerant": 5,
+      "Burning Soul": 2,
+      "Combustion": 1,
+      "Critical Mass": 3,
+      "Fire Power": 3,
+      "Frost Warding": 2,
+      "Frostbite": 3,
+      "Heating Up": 1,
+      "Ice Lance": 1,
+      "Ice Shards": 5,
+      "Ignite": 5,
+      "Improved Fire Blast": 1,
+      "Improved Frost Nova": 2,
+      "Improved Scorch": 1,
+      "Incineration": 5,
+      "Master of Elements": 3,
+      "Precision": 3,
+      "Pyroblast": 1,
+      "Shatter": 3,
+      "Wand Specialization": 1
+     },
+     "eat_drink_together": false
+    },
+    "Frost": {
+     "build": "frost-open-leveling",
+     "rotation": "frost-leveling",
+     "drink_below": 0.15,
+     "eat_below": 0.4,
+     "talents": {
+      "Arcane Concentration": 5,
+      "Arcane Meditation": 3,
+      "Arcane Resilience": 3,
+      "Arcane Subtlety": 2,
+      "Arctic Reach": 2,
+      "Fingers of Frost": 2,
+      "Frost Channeling": 3,
+      "Frostbite": 3,
+      "Ice Lance": 1,
+      "Ice Shards": 5,
+      "Improved Channeling": 3,
+      "Improved Frost Nova": 2,
+      "Improved Frostbolt": 5,
+      "Incineration": 3,
+      "Permafrost": 2,
+      "Precision": 2,
+      "Shatter": 3,
+      "Wand Specialization": 2
+     },
+     "eat_drink_together": false
+    },
+    "Hybrid Arcane/Frost": {
+     "build": "arcane-frost-open-leveling",
+     "rotation": "barrage-frost-leveling",
+     "drink_below": 0.15,
+     "eat_below": 0.4,
+     "talents": {
+      "Arcane Concentration": 5,
+      "Arcane Instability": 3,
+      "Arcane Meditation": 3,
+      "Arcane Mind": 3,
+      "Arcane Resilience": 2,
+      "Arcane Subtlety": 2,
+      "Arctic Reach": 2,
+      "Fingers of Frost": 2,
+      "Frost Channeling": 3,
+      "Frostbite": 3,
+      "Ice Lance": 1,
+      "Ice Shards": 4,
+      "Improved Channeling": 4,
+      "Improved Counterspell": 1,
+      "Improved Frostbolt": 3,
+      "Missile Barrage": 2,
+      "Precision": 2,
+      "Presence of Mind": 1,
+      "Shatter": 3,
+      "Wand Specialization": 2
+     },
+     "eat_drink_together": false
+    },
+    "Hybrid Fire/Frost": {
+     "build": "frostfire-open-leveling",
+     "rotation": "frostfire-leveling",
+     "drink_below": 0.15,
+     "eat_below": 0.4,
+     "talents": {
+      "Accelerant": 5,
+      "Critical Mass": 3,
+      "Fingers of Frost": 2,
+      "Flame Throwing": 1,
+      "Frost Channeling": 3,
+      "Frostbite": 3,
+      "Ice Lance": 1,
+      "Ice Shards": 5,
+      "Ignite": 5,
+      "Impact": 1,
+      "Improved Fire Blast": 2,
+      "Improved Frost Nova": 2,
+      "Improved Frostbolt": 3,
+      "Incineration": 5,
+      "Master of Elements": 3,
+      "Precision": 2,
+      "Shatter": 3,
+      "Wand Specialization": 2
+     },
+     "eat_drink_together": false
+    }
+   }
+  },
+  "paladin": {
+   "tools": [],
+   "specs": {
+    "Holy": {
+     "build": "holy-leveling",
+     "rotation": "holy-leveling",
+     "drink_below": 0.25,
+     "eat_below": 0.8,
+     "talents": {
+      "Benediction": 5,
+      "Boundless Light": 1,
+      "Conviction": 3,
+      "Deflection": 2,
+      "Divine Favor": 1,
+      "Divine Intellect": 5,
+      "Divine Strength": 4,
+      "Healing Light": 3,
+      "Holy Power": 5,
+      "Holy Shock": 1,
+      "Illumination": 5,
+      "Infusion of Light": 1,
+      "Light's Vigil": 1,
+      "Oath of Light": 1,
+      "Purifying Power": 2,
+      "Pursuit of Justice": 2,
+      "Reverence": 2,
+      "Spiritual Focus": 5,
+      "Unyielding Faith": 2
+     },
+     "eat_drink_together": false
+    },
+    "Protection": {
+     "build": "protection-leveling",
+     "rotation": "prot-leveling",
+     "drink_below": 0.15,
+     "eat_below": 0.65,
+     "talents": {
+      "Anticipation": 3,
+      "Benediction": 2,
+      "Conviction": 3,
+      "Deflection": 5,
+      "Guardian's Favor": 1,
+      "Holy Shield": 1,
+      "Improved Judgement": 2,
+      "Improved Righteous Fury": 3,
+      "Iron Creed": 3,
+      "Precision": 3,
+      "Reckoning": 5,
+      "Redoubt": 5,
+      "Sacred Arbiter": 1,
+      "Sacred Duty": 1,
+      "Sanctified Judgement": 3,
+      "Shield Specialization": 2,
+      "Shieldsworn": 1,
+      "Swift Judgement": 1,
+      "Templar's Bulwark": 1,
+      "Toughness": 5
+     },
+     "eat_drink_together": false
+    },
+    "Retribution": {
+     "build": "leveling-retribution",
+     "rotation": "ret-dps",
+     "drink_below": 0.35,
+     "eat_below": 0.65,
+     "talents": {
+      "Benediction": 5,
+      "Champion of the Light": 4,
+      "Conviction": 3,
+      "Divine Intellect": 5,
+      "Divine Strength": 5,
+      "Improved Judgement": 2,
+      "Improved Seals": 5,
+      "Precision": 3,
+      "Pursuit of Justice": 2,
+      "Repentance": 1,
+      "Reverence": 2,
+      "Sacred Arbiter": 1,
+      "Sanctified Judgement": 3,
+      "Seal of Command": 1,
+      "Two-Handed Weapon Specialization": 3,
+      "Vengeance": 3,
+      "Vindication": 3
+     },
+     "eat_drink_together": false
+    },
+    "Hybrid Holy/Retribution": {
+     "build": "shockadin-open-leveling",
+     "rotation": "holy-leveling",
+     "drink_below": 0.25,
+     "eat_below": 0.8,
+     "talents": {
+      "Benediction": 5,
+      "Champion of the Light": 5,
+      "Conviction": 3,
+      "Deflection": 1,
+      "Divine Favor": 1,
+      "Divine Precision": 2,
+      "Divine Strength": 5,
+      "Holy Conduit": 2,
+      "Holy Shock": 1,
+      "Improved Judgement": 2,
+      "Improved Seals": 5,
+      "Infusion of Light": 1,
+      "Oath of Light": 1,
+      "Purifying Power": 1,
+      "Reverence": 2,
+      "Sacred Arbiter": 1,
+      "Sanctified Judgement": 3,
+      "Seal of Command": 1,
+      "Two-Handed Weapon Specialization": 3,
+      "Vengeance": 3,
+      "Vindication": 3
+     },
+     "eat_drink_together": false
+    },
+    "Hybrid Protection/Retribution": {
+     "build": "prot-ret-open-leveling",
+     "rotation": "ret-dps",
+     "drink_below": 0.35,
+     "eat_below": 0.65,
+     "talents": {
+      "Benediction": 2,
+      "Conviction": 3,
+      "Deflection": 3,
+      "Divine Intellect": 5,
+      "Divine Strength": 5,
+      "Improved Hammer of Justice": 1,
+      "Improved Judgement": 1,
+      "Improved Seals": 5,
+      "Precision": 3,
+      "Reverence": 2,
+      "Sacred Arbiter": 1,
+      "Sacred Duty": 2,
+      "Sanctified Judgement": 3,
+      "Seal of Command": 1,
+      "Swift Judgement": 1,
+      "Templar's Bulwark": 1,
+      "Toughness": 3,
+      "Two-Handed Weapon Specialization": 3,
+      "Vengeance": 3,
+      "Vindication": 3
+     },
+     "eat_drink_together": false
+    }
+   }
+  },
+  "priest": {
+   "tools": [],
+   "specs": {
+    "Discipline": {
+     "build": "discipline-leveling",
+     "rotation": "discipline-leveling",
+     "drink_below": 0.15,
+     "eat_below": 0.65,
+     "talents": {
+      "Blessed Recovery": 2,
+      "Divine Aegis": 3,
+      "Divine Fury": 1,
+      "Holy Precision": 1,
+      "Holy Reach": 2,
+      "Holy Specialization": 5,
+      "Improved Healing": 3,
+      "Improved Power Word: Shield": 3,
+      "Improved Renew": 1,
+      "Inner Focus": 1,
+      "Inspiration": 3,
+      "Litany of Light": 2,
+      "Meditation": 3,
+      "Mental Agility": 3,
+      "Mental Strength": 5,
+      "Penance": 1,
+      "Power in Light": 1,
+      "Silent Resolve": 3,
+      "Soul Warding": 1,
+      "Twilight Focus": 3,
+      "Twin Disciplines": 4
+     },
+     "eat_drink_together": false
+    },
+    "Holy": {
+     "build": "holy-leveling",
+     "rotation": "holy-leveling",
+     "drink_below": 0.15,
+     "eat_below": 0.8,
+     "talents": {
+      "Divine Fury": 1,
+      "Holy Binding": 1,
+      "Holy Nova": 1,
+      "Holy Specialization": 5,
+      "Improved Healing": 3,
+      "Improved Power Word: Shield": 3,
+      "Improved Renew": 3,
+      "Inner Focus": 1,
+      "Inspiration": 3,
+      "Litany of Light": 2,
+      "Meditation": 3,
+      "Mental Strength": 5,
+      "Penance": 1,
+      "Silent Resolve": 3,
+      "Soul Warding": 1,
+      "Spiritual Guidance": 4,
+      "Spiritual Healing": 3,
+      "Twilight Focus": 3,
+      "Twin Disciplines": 5
+     },
+     "eat_drink_together": false
+    },
+    "Shadow": {
+     "build": "shadow-open-leveling",
+     "rotation": "shadow-dps",
+     "drink_below": 0.15,
+     "eat_below": 0.4,
+     "talents": {
+      "Dark Inspiration": 5,
+      "Darkness": 5,
+      "Early Demise": 1,
+      "Improved Mind Blast": 5,
+      "Improved Mind Flay": 2,
+      "Meditation": 3,
+      "Mental Strength": 3,
+      "Mind Flay": 1,
+      "Power in Light": 2,
+      "Shadow Focus": 4,
+      "Shadow Reach": 2,
+      "Shadow Weaving": 3,
+      "Shadowform": 1,
+      "Spirit Tap": 5,
+      "Twilight Focus": 3,
+      "Twin Disciplines": 5,
+      "Vampiric Embrace": 1
+     },
+     "eat_drink_together": false
+    },
+    "Hybrid Discipline/Holy": {
+     "build": "smite-open-leveling",
+     "rotation": "holy-leveling",
+     "drink_below": 0.15,
+     "eat_below": 0.8,
+     "talents": {
+      "Divine Fury": 5,
+      "Holy Nova": 1,
+      "Holy Precision": 1,
+      "Holy Specialization": 5,
+      "Improved Healing": 3,
+      "Improved Inner Fire": 1,
+      "Improved Mind Blast": 1,
+      "Improved Power Word: Shield": 3,
+      "Improved Renew": 1,
+      "Improved Shadow Word: Pain": 2,
+      "Inner Focus": 1,
+      "Litany of Light": 1,
+      "Meditation": 3,
+      "Mental Agility": 3,
+      "Power in Light": 5,
+      "Searing Light": 2,
+      "Soul Warding": 1,
+      "Spirit Tap": 5,
+      "Twilight Focus": 3,
+      "Twin Disciplines": 2,
+      "Wand Specialization": 2
+     },
+     "eat_drink_together": false
+    }
+   }
+  },
+  "rogue": {
+   "tools": [],
+   "specs": {
+    "Assassination": {
+     "build": "assassination-open-leveling",
+     "rotation": "combat-daggers-raid",
+     "drink_below": null,
+     "eat_below": 0.4,
+     "talents": {
+      "Aggression": 2,
+      "Blood Splatter": 1,
+      "Cold Blood": 1,
+      "Composure": 2,
+      "Coup de Grace": 3,
+      "Deflection": 2,
+      "Flawless Execution": 1,
+      "Improved Poisons": 5,
+      "Lethality": 2,
+      "Lightning Reflexes": 2,
+      "Malice": 5,
+      "Mutilate": 1,
+      "Precision": 3,
+      "Puncturing Wounds": 3,
+      "Relentless Strikes": 5,
+      "Remorseless Attacks": 2,
+      "Ruthlessness": 3,
+      "Seal Fate": 3,
+      "Venom": 1,
+      "Vigor": 2,
+      "Weapon Expertise": 2
+     }
+    },
+    "Combat": {
+     "build": "combat-open-leveling",
+     "rotation": "combat-swords-raid",
+     "drink_below": null,
+     "eat_below": 0.4,
+     "talents": {
+      "Aggression": 3,
+      "Cold Blood": 1,
+      "Composure": 2,
+      "Coup de Grace": 3,
+      "Deflection": 3,
+      "Dual Wield Specialization": 2,
+      "Efficient Strikes": 2,
+      "Flash of Steel": 5,
+      "Flawless Execution": 1,
+      "Hack and Slash": 2,
+      "Improved Expose Armor": 1,
+      "Improved Poisons": 2,
+      "Lethality": 2,
+      "Lightning Reflexes": 1,
+      "Malice": 5,
+      "Precision": 3,
+      "Remorseless Attacks": 2,
+      "Riposte": 1,
+      "Ruthlessness": 3,
+      "Venom": 1,
+      "Vigor": 2,
+      "Vile Poisons": 2,
+      "Weapon Expertise": 2
+     }
+    },
+    "Subtlety": {
+     "build": "subtlety-open-leveling",
+     "rotation": "subtlety-leveling",
+     "drink_below": null,
+     "eat_below": 0.4,
+     "talents": {
+      "Aggression": 2,
+      "Boot Knife": 5,
+      "Composure": 2,
+      "Coup de Grace": 3,
+      "Death Mark": 1,
+      "Dirty Deeds": 2,
+      "Dirty Tricks": 1,
+      "Efficient Strikes": 2,
+      "Flawless Execution": 1,
+      "Ghostly Strike": 1,
+      "Hemorrhage": 1,
+      "Improved Ambush": 3,
+      "Initiative": 3,
+      "Lightning Reflexes": 3,
+      "Master of Deception": 1,
+      "Opportunity": 5,
+      "Precision": 3,
+      "Premeditation": 1,
+      "Preparation": 1,
+      "Puncturing Wounds": 2,
+      "Serrated Blades": 3,
+      "Setup": 3,
+      "Weapon Expertise": 2
+     }
+    },
+    "Hybrid Combat/Subtlety": {
+     "build": "combat-subtlety-open-leveling",
+     "rotation": "subtlety-leveling",
+     "drink_below": null,
+     "eat_below": 0.4,
+     "talents": {
+      "Aggression": 3,
+      "Composure": 2,
+      "Coup de Grace": 3,
+      "Dirty Deeds": 1,
+      "Dual Wield Specialization": 2,
+      "Efficient Strikes": 2,
+      "Flawless Execution": 1,
+      "Ghostly Strike": 1,
+      "Hack and Slash": 2,
+      "Hemorrhage": 1,
+      "Improved Ambush": 3,
+      "Initiative": 3,
+      "Lightning Reflexes": 5,
+      "Malice": 3,
+      "Opportunity": 5,
+      "Precision": 3,
+      "Premeditation": 1,
+      "Remorseless Attacks": 2,
+      "Serrated Blades": 3,
+      "Setup": 3,
+      "Weapon Expertise": 2
+     }
+    }
+   }
+  },
+  "shaman": {
+   "tools": [],
+   "specs": {
+    "Elemental": {
+     "build": "elemental-open-leveling",
+     "rotation": "elemental-dps",
+     "drink_below": 0.15,
+     "eat_below": 0.8,
+     "talents": {
+      "Call of Flame": 3,
+      "Call of Thunder": 1,
+      "Concussion": 3,
+      "Convection": 5,
+      "Elemental Alacrity": 3,
+      "Elemental Focus": 1,
+      "Elemental Fury": 5,
+      "Elemental Reach": 2,
+      "Eye of the Storm": 3,
+      "Improved Lightning Shield": 2,
+      "Lightning Overload": 3,
+      "Mental Dexterity": 3,
+      "Mindfulness": 3,
+      "Reverberation": 3,
+      "Shamanistic Focus": 1,
+      "Thundering Strikes": 5,
+      "Tidal Focus": 5
+     },
+     "eat_drink_together": false
+    },
+    "Enhancement": {
+     "build": "enhancement-open-leveling",
+     "rotation": "enhancement-dps",
+     "drink_below": 0.15,
+     "eat_below": 0.8,
+     "talents": {
+      "Anticipation": 2,
+      "Call of Flame": 1,
+      "Concussion": 5,
+      "Convection": 5,
+      "Elemental Focus": 1,
+      "Elemental Weapons": 3,
+      "Flurry": 3,
+      "Improved Lightning Shield": 3,
+      "Improved Stormstrike": 2,
+      "Maelstrom Weapon": 5,
+      "Mental Dexterity": 3,
+      "Mental Quickness": 2,
+      "Rage of the Farseer": 1,
+      "Reverberation": 1,
+      "Shamanistic Focus": 1,
+      "Spirit Weapons": 1,
+      "Stormstrike": 1,
+      "Thundering Strikes": 5,
+      "Tidal Focus": 5,
+      "Totemic Focus": 1
+     },
+     "eat_drink_together": false
+    },
+    "Restoration": {
+     "build": "restoration-leveling",
+     "rotation": "enhancement-dps",
+     "drink_below": 0.15,
+     "eat_below": 0.8,
+     "talents": {
+      "Ancestral Healing": 3,
+      "Ancestral Knowledge": 5,
+      "Healing Focus": 3,
+      "Healing Way": 3,
+      "Mana Tide Totem": 1,
+      "Mindfulness": 3,
+      "Nature's Swiftness": 1,
+      "Purification": 5,
+      "Restorative Totems": 5,
+      "Riptide": 1,
+      "Thundering Strikes": 5,
+      "Tidal Focus": 5,
+      "Tidal Mastery": 5,
+      "Totemic Focus": 5,
+      "Water Shield": 1
+     },
+     "eat_drink_together": false
+    }
+   }
+  },
+  "warlock": {
+   "tools": [
+    {
+     "spell": "Life Tap",
+     "min_level": 6,
+     "mana_below": 0.7,
+     "health_above": 0.6,
+     "repeat": true,
+     "note": "between fights, instead of drinking: Life Tap back to 70% mana while health stays above 60% (fightlab/warlock.py, after_fight); eat afterwards when health is under eat_below"
+    }
+   ],
+   "specs": {
+    "Affliction": {
+     "build": "affliction-open-leveling",
+     "rotation": "affliction-leveling",
+     "drink_below": 0.15,
+     "eat_below": 0.55,
+     "talents": {
+      "Amplify Curse": 1,
+      "Demonic Energies": 2,
+      "Destructive Reach": 1,
+      "Fel Concentration": 2,
+      "Grim Reach": 2,
+      "Improved Bane of Agony": 2,
+      "Improved Corruption": 5,
+      "Improved Drains": 3,
+      "Improved Life Tap": 2,
+      "Improved Voidwalker": 3,
+      "Malevolence": 5,
+      "Pandemic": 3,
+      "Shadow Mastery": 5,
+      "Siphon Life": 1,
+      "Soul Siphon": 3,
+      "Suppression": 5,
+      "Unholy Power": 5,
+      "Wrack": 1
+     },
+     "eat_drink_together": false
+    },
+    "Demonology": {
+     "build": "demonology-open-leveling",
+     "rotation": "demonology-leveling",
+     "drink_below": 0.15,
+     "eat_below": 0.55,
+     "talents": {
+      "Amplify Curse": 1,
+      "Demonic Aegis": 2,
+      "Demonic Brand": 3,
+      "Demonic Energies": 2,
+      "Demonic Knowledge": 3,
+      "Demonic Sacrifice": 1,
+      "Grim Reach": 1,
+      "Improved Bane of Agony": 2,
+      "Improved Corruption": 5,
+      "Improved Felhunter": 1,
+      "Improved Imp": 2,
+      "Improved Life Tap": 2,
+      "Improved Sayaad": 1,
+      "Improved Voidwalker": 3,
+      "Malevolence": 3,
+      "Master Demonologist": 4,
+      "Master Summoner": 1,
+      "Pandemic": 3,
+      "Siphon Life": 1,
+      "Soul Link": 1,
+      "Suppression": 4,
+      "Unholy Power": 5
+     },
+     "eat_drink_together": false
+    },
+    "Destruction": {
+     "build": "destruction-open-leveling",
+     "rotation": "destruction-leveling",
+     "drink_below": 0.15,
+     "eat_below": 0.4,
+     "talents": {
+      "Agonizing Flames": 3,
+      "Bane": 5,
+      "Bane of Havoc": 1,
+      "Cataclysm": 3,
+      "Conflagrate": 1,
+      "Demonic Energies": 1,
+      "Destructive Reach": 2,
+      "Fel Vitality": 2,
+      "Fire and Brimstone": 3,
+      "Improved Life Tap": 1,
+      "Improved Voidwalker": 3,
+      "Incinerate": 1,
+      "Intensity": 3,
+      "Pyroclasm": 1,
+      "Ruin": 5,
+      "Shadow and Flame": 5,
+      "Shadowburn": 1,
+      "Suppression": 5,
+      "Unholy Power": 5
+     },
+     "eat_drink_together": false
+    },
+    "Hybrid Affliction/Demonology": {
+     "build": "affliction-demonology-open-leveling",
+     "rotation": "demonology-leveling",
+     "drink_below": 0.15,
+     "eat_below": 0.55,
+     "talents": {
+      "Amplify Curse": 1,
+      "Demonic Brand": 3,
+      "Demonic Embrace": 2,
+      "Demonic Energies": 2,
+      "Demonic Knowledge": 3,
+      "Demonic Sacrifice": 1,
+      "Fel Vitality": 3,
+      "Grim Reach": 1,
+      "Improved Bane of Agony": 2,
+      "Improved Corruption": 5,
+      "Improved Life Tap": 2,
+      "Improved Voidwalker": 3,
+      "Malevolence": 5,
+      "Master Summoner": 1,
+      "Pandemic": 3,
+      "Shadow Mastery": 2,
+      "Siphon Life": 1,
+      "Soul Link": 1,
+      "Suppression": 5,
+      "Unholy Power": 5
+     },
+     "eat_drink_together": false
+    }
+   }
+  },
+  "warrior": {
+   "tools": [],
+   "specs": {
+    "Arms": {
+     "build": "arms-open-leveling",
+     "rotation": "arms-2h-raid",
+     "drink_below": null,
+     "eat_below": 0.4,
+     "talents": {
+      "Anger Management": 1,
+      "Bloodthrill": 2,
+      "Cruelty": 5,
+      "Deep Wounds": 3,
+      "Deflection": 2,
+      "Enrage": 5,
+      "Impale": 2,
+      "Improved Bloodrage": 2,
+      "Improved Charge": 2,
+      "Improved Execute": 2,
+      "Improved Overpower": 2,
+      "Improved Rend": 3,
+      "Improved Slam": 1,
+      "Improved Tactical Mastery": 3,
+      "Lingering Rage": 1,
+      "Mortal Strike": 1,
+      "Spearing Strike": 1,
+      "Sweeping Strikes": 1,
+      "Two-Handed Weapon Specialization": 3,
+      "Unbridled Wrath": 4,
+      "Weaponmaster": 5
+     }
+    },
+    "Fury": {
+     "build": "fury-open-leveling",
+     "rotation": "fury-dw-raid",
+     "drink_below": null,
+     "eat_below": 0.4,
+     "talents": {
+      "Anger Management": 1,
+      "Blood Craze": 3,
+      "Bloodthirst": 1,
+      "Cruelty": 5,
+      "Death Wish": 1,
+      "Deep Wounds": 3,
+      "Dual Wield Specialization": 5,
+      "Enrage": 5,
+      "Flurry": 3,
+      "Furious Precision": 3,
+      "Gore Drinker": 2,
+      "Impale": 1,
+      "Improved Charge": 2,
+      "Improved Heroic Strike": 2,
+      "Improved Overpower": 2,
+      "Improved Rend": 3,
+      "Improved Tactical Mastery": 3,
+      "Reckless Swings": 1,
+      "Unbridled Wrath": 5
+     }
+    },
+    "Protection": {
+     "build": "protection-leveling",
+     "rotation": "prot-leveling",
+     "drink_below": null,
+     "eat_below": 0.65,
+     "talents": {
+      "Anticipation": 5,
+      "Bastion": 5,
+      "Concussion Blow": 1,
+      "Cruelty": 3,
+      "Deep Wounds": 3,
+      "Defiance": 3,
+      "Deflection": 5,
+      "Focused Rage": 3,
+      "Impale": 2,
+      "Improved Heroic Strike": 3,
+      "Improved Overpower": 1,
+      "Improved Rend": 3,
+      "Improved Revenge": 3,
+      "Improved Sunder Armor": 3,
+      "Master of Defense": 2,
+      "Shield Slam": 1,
+      "Shield Specialization": 5
+     }
+    }
+   }
+  }
+ },
+ "vectors": [
+  {
+   "class": "druid",
+   "spec": "Balance",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.1,
+   "does": [
+    "drink",
+    "eat"
+   ]
+  },
+  {
+   "class": "druid",
+   "spec": "Balance",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "druid",
+   "spec": "Balance",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.9,
+   "does": [
+    "eat"
+   ]
+  },
+  {
+   "class": "druid",
+   "spec": "Balance",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "druid",
+   "spec": "Balance",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": []
+  },
+  {
+   "class": "druid",
+   "spec": "Feral Combat",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.1,
+   "does": [
+    "drink",
+    "eat"
+   ]
+  },
+  {
+   "class": "druid",
+   "spec": "Feral Combat",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "druid",
+   "spec": "Feral Combat",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "druid",
+   "spec": "Feral Combat",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": []
+  },
+  {
+   "class": "druid",
+   "spec": "Restoration",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.1,
+   "does": [
+    "drink",
+    "eat"
+   ]
+  },
+  {
+   "class": "druid",
+   "spec": "Restoration",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "druid",
+   "spec": "Restoration",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "druid",
+   "spec": "Restoration",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": []
+  },
+  {
+   "class": "hunter",
+   "spec": "Beast Mastery",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.1,
+   "does": [
+    "drink",
+    "eat"
+   ]
+  },
+  {
+   "class": "hunter",
+   "spec": "Beast Mastery",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "hunter",
+   "spec": "Beast Mastery",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.9,
+   "does": [
+    "eat"
+   ]
+  },
+  {
+   "class": "hunter",
+   "spec": "Beast Mastery",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "hunter",
+   "spec": "Beast Mastery",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": []
+  },
+  {
+   "class": "hunter",
+   "spec": "Marksmanship",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.1,
+   "does": [
+    "drink",
+    "eat"
+   ]
+  },
+  {
+   "class": "hunter",
+   "spec": "Marksmanship",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "hunter",
+   "spec": "Marksmanship",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.9,
+   "does": [
+    "eat"
+   ]
+  },
+  {
+   "class": "hunter",
+   "spec": "Marksmanship",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "hunter",
+   "spec": "Marksmanship",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": []
+  },
+  {
+   "class": "hunter",
+   "spec": "Survival",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.1,
+   "does": [
+    "drink",
+    "eat"
+   ]
+  },
+  {
+   "class": "hunter",
+   "spec": "Survival",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "hunter",
+   "spec": "Survival",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.9,
+   "does": [
+    "eat"
+   ]
+  },
+  {
+   "class": "hunter",
+   "spec": "Survival",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "hunter",
+   "spec": "Survival",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": []
+  },
+  {
+   "class": "mage",
+   "spec": "Arcane",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.1,
+   "does": [
+    "Evocation",
+    "eat"
+   ],
+   "tool_ready": true,
+   "after": {
+    "hp": 0.3,
+    "mana": 0.7907
+   }
+  },
+  {
+   "class": "mage",
+   "spec": "Arcane",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.1,
+   "does": [
+    "drink",
+    "eat"
+   ],
+   "tool_ready": false
+  },
+  {
+   "class": "mage",
+   "spec": "Arcane",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "Evocation"
+   ],
+   "tool_ready": true
+  },
+  {
+   "class": "mage",
+   "spec": "Arcane",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ],
+   "tool_ready": false
+  },
+  {
+   "class": "mage",
+   "spec": "Arcane",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.9,
+   "does": [
+    "eat"
+   ],
+   "tool_ready": true
+  },
+  {
+   "class": "mage",
+   "spec": "Arcane",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.9,
+   "does": [
+    "eat"
+   ],
+   "tool_ready": false
+  },
+  {
+   "class": "mage",
+   "spec": "Arcane",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "Evocation"
+   ],
+   "tool_ready": true
+  },
+  {
+   "class": "mage",
+   "spec": "Arcane",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ],
+   "tool_ready": false
+  },
+  {
+   "class": "mage",
+   "spec": "Arcane",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": [],
+   "tool_ready": true
+  },
+  {
+   "class": "mage",
+   "spec": "Arcane",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": [],
+   "tool_ready": false
+  },
+  {
+   "class": "mage",
+   "spec": "Fire",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.1,
+   "does": [
+    "Evocation",
+    "eat"
+   ],
+   "tool_ready": true,
+   "after": {
+    "hp": 0.3,
+    "mana": 0.8445
+   }
+  },
+  {
+   "class": "mage",
+   "spec": "Fire",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.1,
+   "does": [
+    "drink",
+    "eat"
+   ],
+   "tool_ready": false
+  },
+  {
+   "class": "mage",
+   "spec": "Fire",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "Evocation"
+   ],
+   "tool_ready": true
+  },
+  {
+   "class": "mage",
+   "spec": "Fire",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ],
+   "tool_ready": false
+  },
+  {
+   "class": "mage",
+   "spec": "Fire",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.9,
+   "does": [
+    "eat"
+   ],
+   "tool_ready": true
+  },
+  {
+   "class": "mage",
+   "spec": "Fire",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.9,
+   "does": [
+    "eat"
+   ],
+   "tool_ready": false
+  },
+  {
+   "class": "mage",
+   "spec": "Fire",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "Evocation"
+   ],
+   "tool_ready": true
+  },
+  {
+   "class": "mage",
+   "spec": "Fire",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ],
+   "tool_ready": false
+  },
+  {
+   "class": "mage",
+   "spec": "Fire",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": [],
+   "tool_ready": true
+  },
+  {
+   "class": "mage",
+   "spec": "Fire",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": [],
+   "tool_ready": false
+  },
+  {
+   "class": "paladin",
+   "spec": "Holy",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.1,
+   "does": [
+    "drink",
+    "eat"
+   ]
+  },
+  {
+   "class": "paladin",
+   "spec": "Holy",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "paladin",
+   "spec": "Holy",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "paladin",
+   "spec": "Holy",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": []
+  },
+  {
+   "class": "paladin",
+   "spec": "Protection",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.1,
+   "does": [
+    "drink",
+    "eat"
+   ]
+  },
+  {
+   "class": "paladin",
+   "spec": "Protection",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "paladin",
+   "spec": "Protection",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "paladin",
+   "spec": "Protection",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": []
+  },
+  {
+   "class": "paladin",
+   "spec": "Retribution",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.1,
+   "does": [
+    "drink",
+    "eat"
+   ]
+  },
+  {
+   "class": "paladin",
+   "spec": "Retribution",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "paladin",
+   "spec": "Retribution",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "paladin",
+   "spec": "Retribution",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": []
+  },
+  {
+   "class": "priest",
+   "spec": "Discipline",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "priest",
+   "spec": "Discipline",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "priest",
+   "spec": "Discipline",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": []
+  },
+  {
+   "class": "priest",
+   "spec": "Holy",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "priest",
+   "spec": "Holy",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "priest",
+   "spec": "Holy",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": []
+  },
+  {
+   "class": "priest",
+   "spec": "Shadow",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.1,
+   "does": [
+    "drink",
+    "eat"
+   ]
+  },
+  {
+   "class": "priest",
+   "spec": "Shadow",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "priest",
+   "spec": "Shadow",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.9,
+   "does": [
+    "eat"
+   ]
+  },
+  {
+   "class": "priest",
+   "spec": "Shadow",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "priest",
+   "spec": "Shadow",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": []
+  },
+  {
+   "class": "priest",
+   "spec": "Hybrid Discipline/Holy",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "priest",
+   "spec": "Hybrid Discipline/Holy",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "priest",
+   "spec": "Hybrid Discipline/Holy",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": []
+  },
+  {
+   "class": "shaman",
+   "spec": "Elemental",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.1,
+   "does": [
+    "drink",
+    "eat"
+   ]
+  },
+  {
+   "class": "shaman",
+   "spec": "Elemental",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "shaman",
+   "spec": "Elemental",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "shaman",
+   "spec": "Elemental",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": []
+  },
+  {
+   "class": "shaman",
+   "spec": "Enhancement",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.1,
+   "does": [
+    "drink",
+    "eat"
+   ]
+  },
+  {
+   "class": "shaman",
+   "spec": "Enhancement",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "shaman",
+   "spec": "Enhancement",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "shaman",
+   "spec": "Enhancement",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": []
+  },
+  {
+   "class": "shaman",
+   "spec": "Restoration",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.1,
+   "does": [
+    "drink",
+    "eat"
+   ]
+  },
+  {
+   "class": "shaman",
+   "spec": "Restoration",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "shaman",
+   "spec": "Restoration",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "drink"
+   ]
+  },
+  {
+   "class": "shaman",
+   "spec": "Restoration",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": []
+  },
+  {
+   "class": "warlock",
+   "spec": "Affliction",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.1,
+   "does": [
+    "drink",
+    "eat"
+   ],
+   "health_max": 2499.0,
+   "tap_cost": 608.5
+  },
+  {
+   "class": "warlock",
+   "spec": "Affliction",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "Life Tap"
+   ],
+   "health_max": 2499.0,
+   "tap_cost": 608.5
+  },
+  {
+   "class": "warlock",
+   "spec": "Affliction",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.9,
+   "does": [
+    "eat"
+   ],
+   "health_max": 2499.0,
+   "tap_cost": 608.5
+  },
+  {
+   "class": "warlock",
+   "spec": "Affliction",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "Life Tap"
+   ],
+   "health_max": 2499.0,
+   "tap_cost": 608.5
+  },
+  {
+   "class": "warlock",
+   "spec": "Affliction",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": [],
+   "health_max": 2499.0,
+   "tap_cost": 608.5
+  },
+  {
+   "class": "warlock",
+   "spec": "Demonology",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.1,
+   "does": [
+    "drink",
+    "eat"
+   ],
+   "health_max": 2499.0,
+   "tap_cost": 608.5
+  },
+  {
+   "class": "warlock",
+   "spec": "Demonology",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "Life Tap"
+   ],
+   "health_max": 2499.0,
+   "tap_cost": 608.5
+  },
+  {
+   "class": "warlock",
+   "spec": "Demonology",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.9,
+   "does": [
+    "eat"
+   ],
+   "health_max": 2499.0,
+   "tap_cost": 608.5
+  },
+  {
+   "class": "warlock",
+   "spec": "Demonology",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "Life Tap"
+   ],
+   "health_max": 2499.0,
+   "tap_cost": 608.5
+  },
+  {
+   "class": "warlock",
+   "spec": "Demonology",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": [],
+   "health_max": 2499.0,
+   "tap_cost": 608.5
+  },
+  {
+   "class": "warlock",
+   "spec": "Destruction",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.1,
+   "does": [
+    "drink",
+    "eat"
+   ],
+   "health_max": 2499.0,
+   "tap_cost": 608.5
+  },
+  {
+   "class": "warlock",
+   "spec": "Destruction",
+   "level": 60,
+   "hp": 0.95,
+   "mana": 0.1,
+   "does": [
+    "Life Tap"
+   ],
+   "health_max": 2499.0,
+   "tap_cost": 608.5
+  },
+  {
+   "class": "warlock",
+   "spec": "Destruction",
+   "level": 60,
+   "hp": 0.3,
+   "mana": 0.9,
+   "does": [
+    "eat"
+   ],
+   "health_max": 2499.0,
+   "tap_cost": 608.5
+  },
+  {
+   "class": "warlock",
+   "spec": "Destruction",
+   "level": 60,
+   "hp": 1.0,
+   "mana": 0.1,
+   "does": [
+    "Life Tap"
+   ],
+   "health_max": 2499.0,
+   "tap_cost": 608.5
+  },
+  {
+   "class": "warlock",
+   "spec": "Destruction",
+   "level": 60,
+   "hp": 0.97,
+   "mana": 0.97,
+   "does": [],
+   "health_max": 2499.0,
+   "tap_cost": 608.5
+  }
+ ]
+}

@@ -72,13 +72,13 @@ Destruction to Incinerate, the Forever capstone (Fire damage, +25% on a target w
 
 ## Rank among our builds and the community simulator's
 
-**2 of 3** for `incinerate-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 3** for `incinerate-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`destruction-incinerate-open-raid`](destruction-incinerate-open-raid.md) | ours: derived (open search) | 10/11/30 | 697 | +0.0% | 787 | +0.0% | 1 s |
-| 2 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 671 | -3.8% | 748 | -5.0% | 1 s |
-| 3 | *Destro* | community simulator | - | 634 | -9.0% | 707 | -10.2% | 1 s |
+| 1 | [`destruction-incinerate-open-raid`](destruction-incinerate-open-raid.md) | ours: derived (open search) | 10/11/30 | 712 | +0.0% | 802 | +0.0% | 1 s |
+| 2 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 683 | -4.0% | 762 | -5.0% | 1 s |
+| 3 | *Destro* | community simulator | - | 646 | -9.2% | 721 | -10.2% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -87,7 +87,7 @@ Destruction to Incinerate, the Forever capstone (Fire damage, +25% on a target w
   2. move to the top: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.8%)
   3. threshold 3.5 -> 5.25: if time left in the fight ≤ 3.5: cast Searing Pain (+0.2%)
   4. only with 10s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption + threshold 5.25 -> 3.938: if time left in the fight ≤ 5.25: cast Searing Pain (+0.2%)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-09, 7 passes, the last 2026-11-08, 12 changes to the base rotation; third-seed check: open winner 414 -> 788 DPS (+90.1%), destruction-incinerate-raid 697 -> 749 DPS (+7.4%), sim preset: Destro 703 -> 708 DPS (+0.7%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-09, 8 passes, the last 2026-11-17, 12 changes to the base rotation; third-seed check: destruction-incinerate-open-raid 425 -> 803 DPS (+89.0%), sim preset: Destro 729 -> 721 DPS (-1.1%), destruction-incinerate-raid 723 -> 762 DPS (+5.4%)):
   1. insert before the filler: cast Shadowburn (+6.9%, pass 1)
   2. insert before the filler: cast Shadow Bolt (+1.8%, pass 1)
   3. insert at the top: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.4%, pass 1)
@@ -124,7 +124,7 @@ Damage by ability:
 | Ability | [`destruction-incinerate-raid`](destruction-incinerate-raid.md) |
 |---|---|
 | Shadow Bolt | 44% |
-| Corruption | 17% |
+| Corruption | 16% |
 | Bane of Agony | 16% |
 | Immolate | 12% |
 | Conflagrate | 9% |

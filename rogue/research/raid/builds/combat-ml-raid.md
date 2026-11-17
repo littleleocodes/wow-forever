@@ -50,19 +50,19 @@ The Combat build the machine-learning talent search found in a full raid (every 
 
 ## Rank among our builds and the community simulator's
 
-**7 of 9** for `combat-daggers-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**7 of 9** for `combat-daggers-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Subtlety Hemo* | community simulator | - | 483 | +0.0% | 794 | -4.3% | 0 s |
-| 2 | *Asn Muti* | community simulator | - | 448 | -7.4% | 829 | +0.0% | 0 s |
-| 3 | *Combat Venom* | community simulator | - | 399 | -17.5% | 714 | -13.9% | 0 s |
-| 4 | [`daggers-split-open-raid`](daggers-split-open-raid.md) | ours: derived (open search) | 29/22/0 | 375 | -22.4% | 797 | -3.9% | 0 s |
-| 5 | *Combat SS* | community simulator | - | 360 | -25.4% | 682 | -17.8% | 0 s |
-| 6 | *Combat BS* | community simulator | - | 347 | -28.2% | 764 | -7.9% | 0 s |
-| 7 | **[`combat-ml-raid`](combat-ml-raid.md)** | ours: derived (ML search) | 13/33/5 | 334 | -30.8% | 773 | -6.8% | 0 s |
-| 8 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 21/30/0 | 312 | -35.5% | 681 | -17.9% | 0 s |
-| 9 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 21/30/0 | 312 | -35.5% | 681 | -17.9% | 0 s |
+| 1 | *Subtlety Hemo* | community simulator | - | 486 | +0.0% | 812 | -3.5% | 0 s |
+| 2 | *Asn Muti* | community simulator | - | 449 | -7.6% | 841 | +0.0% | 0 s |
+| 3 | *Combat Venom* | community simulator | - | 399 | -17.8% | 723 | -14.1% | 0 s |
+| 4 | [`daggers-split-open-raid`](daggers-split-open-raid.md) | ours: derived (open search) | 29/22/0 | 377 | -22.5% | 808 | -4.0% | 0 s |
+| 5 | *Combat SS* | community simulator | - | 361 | -25.7% | 690 | -18.0% | 0 s |
+| 6 | *Combat BS* | community simulator | - | 348 | -28.3% | 773 | -8.1% | 0 s |
+| 7 | **[`combat-ml-raid`](combat-ml-raid.md)** | ours: derived (ML search) | 13/33/5 | 336 | -30.8% | 781 | -7.2% | 0 s |
+| 8 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 21/30/0 | 313 | -35.7% | 689 | -18.1% | 0 s |
+| 9 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 21/30/0 | 313 | -35.7% | 689 | -18.1% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -116,13 +116,13 @@ Damage by ability:
 
 | Ability | [`combat-ml-raid`](combat-ml-raid.md) |
 |---|---|
-| Auto Attack | 44% |
+| Auto Attack | 43% |
 | Sinister Strike | 20% |
 | Eviscerate | 17% |
 | spell 25349 | 8% |
 | spell 11337 | 6% |
-| Goblin Sapper Charge | 2% |
 | Garrote | 2% |
+| Goblin Sapper Charge | 2% |
 | Shank | 1% |
 
 ## Notes

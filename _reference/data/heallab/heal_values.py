@@ -90,17 +90,26 @@ def main():
     rec = json.loads(HG.RECORD.read_text(encoding="utf-8"))
     if a.haste_only:
         return haste_only(a, B, rec)
-    out = {"date": datetime.date.today().isoformat(), "budgets": B, "deltas": dict(HG.DELTA, haste_gear=HASTE_DELTA),
+    today = datetime.date.today().isoformat()
+    out = {"date": today, "budgets": B, "deltas": dict(HG.DELTA, haste_gear=HASTE_DELTA),
            "unit": "healing power per point (crit and haste: per rating point)", "specs": {}}
+    # A run for some classes keeps the other specs' rows as they were measured, each with its own date (2026-11-16: `heal_values.py
+    # druid` had written the druid's row alone, and addon_values.py then wrote the add-on file without the other four healers).
+    prev = json.loads(RECORD.read_text(encoding="utf-8")) if a.classes and RECORD.exists() else {}
+    kept = {k: dict(v, date=v.get("date") or prev.get("date")) for k, v in (prev.get("specs") or {}).items() if v.get("class") not in a.classes}
+    if prev.get("haste_date"):
+        out["haste_date"] = prev["haste_date"]
     seeds = list(range(HG.WEIGHT_SEED0, HG.WEIGHT_SEED0 + B["weight_seeds"]))
     HG.DELTA["haste_gear"] = HASTE_DELTA
     for key, r in rec["specs"].items():
         cls, spec = r["class"], r["spec"]
         if a.classes and cls not in a.classes:
+            if key in kept:
+                out["specs"][key] = kept.pop(key)
             continue
         bid, alloc, _ = HG.raid_pick(cls, spec)
         gear, st = lab_stats(r["sets"]["bis"]["gear"])
-        row = {"class": cls, "spec": spec, "build": bid, "gear": r["sets"]["bis"]["gear"], "stats": gear}
+        row = {"class": cls, "spec": spec, "build": bid, "date": today, "gear": r["sets"]["bis"]["gear"], "stats": gear}
         for gcd in (False, True):
             os.environ["WOW_HL_HASTE_GCD"] = "1" if gcd else "0"
             lab = HG.Lab(cls, alloc, a.jobs)
@@ -123,9 +132,11 @@ def main():
         v = row["values"]
         print(f"{cls:8s} {spec:12s} {bid}: capacity {row['capacity']:.4f}; " + ", ".join(f"{k} {x['healing_eq']:.3f}±{x['healing_eq_se']:.3f}" for k, x in v.items())
               + f"; haste with a hasted GCD {row['haste_if_gcd_hasted']['healing_eq']:.3f}", flush=True)
+    out["specs"].update(kept)   # rows of specs heal-gear.json no longer lists stay at the end
     if not a.smoke:
         RECORD.write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8", newline="\n")
-        print(f"wrote {RECORD.relative_to(HG.ROOT).as_posix()}")
+        n_kept = sum(1 for v in out["specs"].values() if a.classes and v.get("class") not in a.classes)
+        print(f"wrote {RECORD.relative_to(HG.ROOT).as_posix()}" + (f" (kept the rows of {n_kept} other specs)" if n_kept else ""))
 
 
 if __name__ == "__main__":

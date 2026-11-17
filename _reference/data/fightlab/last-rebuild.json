@@ -5781,9 +5781,10 @@
   }
  },
  "last_run": {
-  "date": "2026-11-17T01:08:30",
+  "date": "2026-11-17T17:47:09",
   "classes": [
-   "mage"
+   "hunter",
+   "shaman"
   ],
   "steps": [
    "regen"
@@ -5794,78 +5795,86 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 469,
+  "seconds": 199,
   "refresh": null,
   "regen_log": [
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_trees.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_trees.py hunter shaman",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote F:\\wow-forever\\mage\\research\\talents\\forever\\talent-trees.md"
+     "wrote F:\\wow-forever\\hunter\\research\\talents\\forever\\talent-trees.md",
+     "wrote F:\\wow-forever\\shaman\\research\\talents\\forever\\talent-trees.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py hunter shaman",
     "rc": 0,
-    "seconds": 4,
+    "seconds": 1,
     "tail": [
-     "formatted F:\\wow-forever\\mage\\research\\talents\\forever\\proposed-builds.json",
-     "mage: README section + leveling-frost note written"
+     "formatted F:\\wow-forever\\hunter\\research\\talents\\forever\\proposed-builds.json",
+     "formatted F:\\wow-forever\\shaman\\research\\talents\\forever\\proposed-builds.json",
+     "hunter: README section + leveling-beast-mastery note written",
+     "shaman: README section + leveling-enhancement note written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py hunter shaman",
     "rc": 0,
-    "seconds": 5,
+    "seconds": 0,
     "tail": [
-     "mage: raid sim section written (4 specs)",
+     "hunter: raid sim section written (4 specs)",
+     "shaman: raid sim section written (3 specs)",
      "wrote _reference\\raidsim-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py hunter shaman",
     "rc": 0,
-    "seconds": 4,
+    "seconds": 1,
     "tail": [
+     "shaman: healer lab section written (1 specs)",
      "wrote _reference\\heallab-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py hunter shaman",
     "rc": 0,
-    "seconds": 3,
+    "seconds": 1,
     "tail": [
-     "mage: leveling/guide.md written (arcane-frost-open-leveling)"
+     "hunter: leveling/guide.md written (beast-survival-open-leveling)",
+     "shaman: leveling/guide.md written (enhancement-open-leveling)"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py hunter shaman",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 0,
     "tail": [
-     "mage: raid gear and consumables written"
+     "hunter: raid gear and consumables written",
+     "shaman: raid gear and consumables written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py hunter shaman",
     "rc": 0,
-    "seconds": 3,
+    "seconds": 1,
     "tail": [
-     "mage: raid and leveling rotations, DPS ranking written"
+     "hunter: raid and leveling rotations, DPS ranking written",
+     "shaman: raid and leveling rotations, DPS ranking written"
     ],
     "stderr": []
    },
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\validate_builds.py",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "  ok   opt-balance-dps-parse (33/0/18)",
      "  ok   opt-feral-cat-dps-raid-dps (9/30/12)",
@@ -5885,14 +5894,14 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_builds.py",
     "rc": 0,
-    "seconds": 7,
+    "seconds": 2,
     "tail": [
      "rogue/classic-baseline: 5 build pages + README.md",
      "rogue: 30 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "priest/classic-baseline: 4 build pages + README.md",
      "priest: 22 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "shaman/classic-baseline: 5 build pages + README.md",
-     "shaman: 24 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
+     "shaman: 25 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "mage/classic-baseline: 7 build pages + README.md",
      "mage: 32 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "warlock/classic-baseline: 4 build pages + README.md",
@@ -5903,30 +5912,40 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py mage",
+    "cmd": "F:\\wow-forever\\_reference\\data\\duellab\\render_pvp_research.py hunter shaman",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 0,
     "tail": [
-     "wrote _reference\\new-builds-survey.md",
-     "wrote the New spells and builds section of 1 raid READMEs"
+     "wrote hunter\\research\\pvp\\README.md (Duel lab)",
+     "wrote shaman\\research\\pvp\\README.md (Duel lab)"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\signature_audit.py mage --write --no-default",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py hunter shaman",
     "rc": 0,
-    "seconds": 15,
+    "seconds": 0,
     "tail": [
-     "  Frost [slot: leveling-frost 17/0/34] frost-leveling (tuned): casts/kill at 60 {'Frostbolt': 3.33}, core 89% (min 60%), 29.9 s/kill; rules: -; OK",
-     "      shares at 60: {'Frostbolt': 0.551, 'Ice Lance': 0.341, 'Fire Blast': 0.054, 'Wand': 0.04, 'Frost Nova': 0.015}",
-     "  Frost [slot: opt-frost-aoe-leveling-aoe 7/3/41] frost-leveling (tuned): casts/kill at 60 {'Frostbolt': 3.56}, core 89% (min 60%), 33.8 s/kill; rules: -; OK",
-     "      shares at 60: {'Frostbolt': 0.56, 'Ice Lance': 0.327, 'Fire Blast': 0.057, 'Wand': 0.036, 'Frost Nova': 0.02}",
-     "  Arcane-Frost [page: arcane-frost-open-leveling 28/0/23] barrage-frost-leveling (tuned): casts/kill at 60 {'Frostbolt': 2.81, 'Arcane Missiles': 0.47}, core 91% (min 60%), 27.7 s/kill; rules: -; OK",
-     "      shares at 60: {'Frostbolt': 0.472, 'Ice Lance': 0.298, 'Arcane Missiles': 0.142, 'Fire Blast': 0.057, 'Wand': 0.017, 'Frost Nova': 0.013}",
-     "  Arcane-Frost [slot: opt-frost-leveling-leveling-st 22/3/26] barrage-frost-leveling (tuned): casts/kill at 60 {'Frostbolt': 2.85, 'Arcane Missiles': 0.49}, core 91% (min 60%), 29.1 s/kill; rules: -; OK",
-     "      shares at 60: {'Frostbolt': 0.461, 'Ice Lance': 0.312, 'Arcane Missiles': 0.132, 'Fire Blast': 0.049, 'Wand': 0.032, 'Frost Nova': 0.014}",
-     "  Frostfire [page: frostfire-open-leveling 2/25/24] frostfire-leveling (tuned): casts/kill at 60 {'Frostfire Bolt': 2.63}, core 30% (min 30%), 33.2 s/kill; rules: -; OK",
-     "      shares at 60: {'Ice Lance': 0.342, 'Frostfire Bolt': 0.275, 'Fire Blast': 0.241, 'Ignite': 0.056, 'Wand': 0.04, 'Frostfire Bolt burn': 0.028}",
+     "wrote _reference\\new-builds-survey.md",
+     "wrote the New spells and builds section of 2 raid READMEs"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\signature_audit.py hunter shaman --write --no-default",
+    "rc": 0,
+    "seconds": 14,
+    "tail": [
+     "  Enhancement [page: enhancement-open-leveling 13/32/6] enhancement-dps (tuned): casts/kill at 60 {'Stormstrike': 2.15}, core 79% (min 60%), 26.8 s/kill; rules: -; OK",
+     "      shares at 60: {'Earth Shock': 0.339, 'Melee': 0.295, 'Stormstrike': 0.156, 'Lightning Shield': 0.124, 'Lightning Bolt': 0.05, 'Searing Totem': 0.036}",
+     "  Enhancement [slot: leveling-enhancement 7/34/10] enhancement-dps (tuned): casts/kill at 60 {'Stormstrike': 2.07}, core 80% (min 60%), 27.4 s/kill; rules: -; OK",
+     "      shares at 60: {'Earth Shock': 0.338, 'Melee': 0.309, 'Stormstrike': 0.151, 'Lightning Shield': 0.115, 'Lightning Bolt': 0.049, 'Searing Totem': 0.038}",
+     "  Enhancement [slot: opt-enhancement-dps-leveling-st 12/31/8] enhancement-dps (tuned): casts/kill at 60 {'Stormstrike': 1.92}, core 81% (min 60%), 28.0 s/kill; rules: -; OK",
+     "      shares at 60: {'Earth Shock': 0.376, 'Melee': 0.299, 'Stormstrike': 0.132, 'Lightning Shield': 0.129, 'Searing Totem': 0.039, 'Lightning Bolt': 0.025}",
+     "  Enhancement [slot: opt-enhancement-dps-solo-60 12/31/8] enhancement-dps (tuned): casts/kill at 60 {'Stormstrike': 1.92}, core 81% (min 60%), 28.0 s/kill; rules: -; OK",
+     "      shares at 60: {'Earth Shock': 0.376, 'Melee': 0.299, 'Stormstrike': 0.132, 'Lightning Shield': 0.129, 'Searing Totem': 0.039, 'Lightning Bolt': 0.025}",
+     "  Restoration [page: restoration-leveling 0/10/41] enhancement-dps (tuned): casts/kill at 60 {}, core - (min -), 37.2 s/kill; rules: -; no rule",
+     "      shares at 60: {'Earth Shock': 0.457, 'Melee': 0.401, 'Lightning Shield': 0.077, 'Searing Totem': 0.065}",
      "wrote _reference\\signature-audit.md",
      "wrote _reference\\data\\fightlab\\signature-audit.json"
     ],
@@ -5935,7 +5954,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_modes.py",
     "rc": 0,
-    "seconds": 31,
+    "seconds": 10,
     "tail": [
      "druid: README.md sections and 3 mode folders written",
      "hunter: README.md sections and 3 mode folders written",
@@ -5953,22 +5972,42 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_tier_list.py",
     "rc": 0,
-    "seconds": 4,
+    "seconds": 1,
     "tail": [
      "wrote tier-list.md: 30 damage specs, 5 healers, 3 tanks"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py mage --write",
+    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py hunter --write",
     "rc": 0,
-    "seconds": 354,
+    "seconds": 39,
     "tail": [
-     "| fire-leveling -> level-20 build (0/0/11) | +2.0% | +4.2% | +43.2% | +47.7% | +55.4% | +58.9% | +62.6% | +63.6% | +65.2% | +68.3% | +69.5% |",
-     "| fire-leveling -> level-30 build (0/10/11) | +1.8% | +13.1% | +25.5% | +25.9% | +55.4% | +58.9% | +62.6% | +63.6% | +65.2% | +68.3% | +69.5% |",
-     "| fire-leveling -> level-40 build (0/20/11) | +1.8% | +13.1% | +26.3% | +30.1% | +36.6% | +38.1% | +62.6% | +63.5% | +65.7% | +68.3% | +69.5% |",
-     "| fire-leveling -> level-50 build (0/30/11) | +1.8% | +13.1% | +26.3% | +30.1% | +36.6% | +39.4% | +43.3% | +43.6% | +65.8% | +68.3% | +69.5% |",
-     "| fire-leveling -> level-60 build (0/35/16) | +1.8% | +13.1% | +26.3% | +30.1% | +36.6% | +39.4% | +42.3% | +47.7% | +48.0% | +68.3% | +69.5% |",
+     "| bm-leveling -> level-20 build (1/10/0) | +0.8% | +2.0% | +6.6% | +8.8% | +10.9% | +13.5% | +16.2% | +20.9% | +22.2% | +24.3% | +26.5% |",
+     "| bm-leveling -> level-30 build (5/16/0) | +0.8% | +3.2% | +5.0% | +8.8% | +11.7% | +13.1% | +15.7% | +20.9% | +22.2% | +24.3% | +26.5% |",
+     "| bm-leveling -> level-40 build (0/31/0) | +0.3% | +2.4% | +6.5% | +9.5% | +11.0% | +13.6% | +19.0% | +21.0% | +21.8% | +25.1% | +26.7% |",
+     "| bm-leveling -> level-50 build (7/32/2) | +0.3% | +2.4% | +6.5% | +9.5% | +10.6% | +13.6% | +19.0% | +20.9% | +22.4% | +23.8% | +26.4% |",
+     "| bm-leveling -> level-60 build (20/31/0) | +0.3% | +2.4% | +6.5% | +9.5% | +11.0% | +13.6% | +19.0% | +20.9% | +21.8% | +25.1% | +26.7% |",
+     "",
+     "## Reading it",
+     "",
+     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
+     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
+     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
+     ""
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py shaman --write",
+    "rc": 0,
+    "seconds": 121,
+    "tail": [
+     "| elemental-dps -> level-20 build (11/0/0) | +1.5% | +7.5% | +15.0% | +16.4% | +17.3% | +21.4% | +24.4% | +30.2% | +34.4% | +35.9% | +37.1% |",
+     "| elemental-dps -> level-30 build (12/1/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.4% | +24.7% | +27.4% | +28.6% | +33.1% | +35.9% | +37.1% |",
+     "| elemental-dps -> level-40 build (12/11/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.4% | +24.7% | +27.4% | +28.6% | +33.1% | +35.9% | +37.1% |",
+     "| elemental-dps -> level-50 build (11/22/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.1% | +24.5% | +27.2% | +30.6% | +34.4% | +35.9% | +37.1% |",
+     "| elemental-dps -> level-60 build (21/22/8) | +1.5% | +7.5% | +15.0% | +18.2% | +23.4% | +24.7% | +25.9% | +27.6% | +30.2% | +33.6% | +37.3% |",
      "",
      "## Reading it",
      "",
@@ -5982,7 +6021,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_optimizer_sections.py",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "updated hunter/leveling/README.md and hunter/raid/README.md",
      "updated mage/leveling/README.md and mage/raid/README.md",
@@ -5999,7 +6038,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\compare_effects.py",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 0,
     "tail": [
      "druid    buff=10 nerf=16 reworked=0 new=18 removed=13 same=8 unscored=0",
      "hunter   buff=3 nerf=21 reworked=0 new=18 removed=14 same=8 unscored=0",
@@ -6016,7 +6055,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\loop_audit.py",
     "rc": 0,
-    "seconds": 4,
+    "seconds": 1,
     "tail": [
      "druid    flagged 31/99  open 1",
      "hunter   flagged 23/62  open 6",
@@ -6036,14 +6075,14 @@
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote _reference\\launch-checklist.md (321 per-build questions)"
+     "wrote _reference\\launch-checklist.md (322 per-build questions)"
     ],
     "stderr": []
    },
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\build_beta_checklist.py",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "wrote _reference\\beta-checklist.md"
     ],
@@ -6052,7 +6091,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\summary.py --write",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "wrote _reference\\fightlab-summary.md"
     ],
@@ -6061,7 +6100,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_report_index.py",
     "rc": 0,
-    "seconds": 25,
+    "seconds": 4,
     "tail": [
      "druid: leveling 3, raid 16, classic 10",
      "hunter: leveling 6, raid 14, classic 5",
@@ -6080,16 +6119,16 @@
     "rc": 0,
     "seconds": 1,
     "tail": [
-     "| talents | 0 |",
-     "| links | 0 |",
-     "| guide | 0 |",
-     "| build | 0 |",
-     "| dead | 0 |",
      "| keys | 0 |",
      "| steps | 0 |",
      "| macros | 0 |",
      "| coverage | 0 |",
      "| names | 0 |",
+     "",
+     "## build",
+     "",
+     "- hunter: hunter/raid/marksmanship.md: the guide names Lone Wolf, which the page's build does not take",
+     "- hunter: hunter/raid/marksmanship.md: the guide gives Improved Arcane Shot (5 said, 2 taken)",
      "",
      ""
     ],

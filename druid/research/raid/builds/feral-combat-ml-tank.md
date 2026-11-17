@@ -48,15 +48,15 @@ The Feral Combat tank build the machine-learning talent search found in the comm
 
 ## Rank among our builds and the community simulator's
 
-**2 of 5** for `feral-bear-tank` by tank value in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 5** for `feral-bear-tank` by tank value in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) | ours: optimizer | 9/37/5 | 1.163 | +0.0% | 8543 | 375 |
-| 2 | **[`feral-combat-ml-tank`](feral-combat-ml-tank.md)** | ours: derived (ML search) | 9/35/7 | 1.004 | -13.6% | 6794 | 396 |
-| 3 | [`feral-bear-tank`](feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | -14.0% | 6723 | 396 |
-| 4 | *Bear* | community simulator | - | 0.986 | -15.2% | 6650 | 403 |
-| 5 | *Hybrid* | community simulator | - | 0.949 | -18.3% | 6148 | 402 |
+| 1 | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) | ours: optimizer | 9/37/5 | 1.157 | +0.0% | 8055 | 376 |
+| 2 | *Bear* | community simulator | - | 1.120 | -3.3% | 8012 | 403 |
+| 3 | *Hybrid* | community simulator | - | 1.009 | -12.8% | 6587 | 401 |
+| 4 | **[`feral-combat-ml-tank`](feral-combat-ml-tank.md)** | ours: derived (ML search) | 9/35/7 | 1.008 | -12.9% | 6481 | 396 |
+| 5 | [`feral-bear-tank`](feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | -13.6% | 6380 | 396 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -73,7 +73,7 @@ The Feral Combat tank build the machine-learning talent search found in the comm
 | # | Priority (the first line whose condition holds is cast) | [`feral-combat-ml-tank`](feral-combat-ml-tank.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | cast Maul | 149.6 |
+| 2 | cast Maul | 148.0 |
 | 3 | cast Barkskin | 1.0 |
 | 4 | if rage < 20: cast Enrage | 1.0 |
 
@@ -84,9 +84,10 @@ Damage by ability (threat for tanks):
 | Ability | [`feral-combat-ml-tank`](feral-combat-ml-tank.md) |
 |---|---|
 | Maul | 86% |
-| Auto Attack | 11% |
-| Judgement of Light | 1% |
-| OtherActionRageGain | 1% |
+| Windfury Totem | 7% |
+| Auto Attack | 5% |
+| Judgement of Light | 2% |
+| OtherActionRageGain | 0% |
 | Retribution Aura | 0% |
 | Thorns | 0% |
 

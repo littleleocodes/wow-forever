@@ -96,8 +96,8 @@
  "raid": {
   "class": "warlock",
   "spec": "affliction-raid",
-  "date": "2026-11-07",
-  "commit": "16e85426c",
+  "date": "2026-11-17",
+  "commit": "2e6e77d84",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warlock/dps/apls/affliction.apl.json",
@@ -208,31 +208,31 @@
   "final": {
    "raid": {
     "opt-affliction-raid-raid-dps": {
-     "before": 828.5955837750403,
-     "after": 827.2845282683119,
-     "base": 828.5955837750403,
+     "before": 839.6281830254778,
+     "after": 838.851956439629,
+     "base": 839.6281830254778,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.2400428999036469,
-     "oom_after": 0.17321824992809945
+     "oom_before": 0.18369394993514787,
+     "oom_after": 0.18369394993514787
     },
     "sim preset: SM/Ruin": {
-     "before": 820.3042730862502,
-     "after": 822.2333035097477,
-     "base": 820.3042730862502,
+     "before": 830.89422299927,
+     "after": 833.2011232121662,
+     "base": 830.89422299927,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.2988206498917468,
-     "oom_after": 0.23313809991414877
+     "oom_before": 0.25108674992379737,
+     "oom_after": 0.25108674992379737
     },
     "affliction-dot-raid": {
-     "before": 821.7904653919693,
-     "after": 821.167775062797,
-     "base": 821.7904653919693,
+     "before": 832.7068313046506,
+     "after": 831.9410078659204,
+     "base": 832.7068313046506,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.40257724987484655,
-     "oom_after": 0.33164944989444833
+     "oom_before": 0.3513482999016002,
+     "oom_after": 0.3513482999016002
     }
    }
   },
@@ -245,13 +245,13 @@
     "Corruption"
    ],
    "rejected": {
-    "structure": 74,
+    "structure": 37,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-27",
-  "passes": 10
+  "passes": 11
  }
 }

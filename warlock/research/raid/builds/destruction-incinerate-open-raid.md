@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Destruction raid build the open talent search found on 2026-11-08: every legal 51-point build with no tree rule, searched in the community simulator's incinerate-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +5.3% over destruction-incinerate-raid, the best of our builds in that rotation.
+The Destruction raid build the open talent search found on 2026-11-17: every legal 51-point build with no tree rule, searched in the community simulator's incinerate-raid rotation in a full raid (every raid buff and debuff: the group setting; raidsim/family_search.py: every pair of keystones polished by a short hill climb first, then the machine-learning search, the winner raced against the rotation's builds over 30,000 fights). +5.3% over destruction-incinerate-raid, the best of our builds in that rotation.
 
 ## Point allocation
 
@@ -58,13 +58,13 @@ The Destruction raid build the open talent search found on 2026-11-08: every leg
 
 ## Rank among our builds and the community simulator's
 
-**1 of 3** for `incinerate-raid` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 3** for `incinerate-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`destruction-incinerate-open-raid`](destruction-incinerate-open-raid.md)** | ours: derived (open search) | 10/11/30 | 697 | +0.0% | 787 | +0.0% | 1 s |
-| 2 | [`destruction-incinerate-raid`](destruction-incinerate-raid.md) | ours: hand draft | 9/11/31 | 671 | -3.8% | 748 | -5.0% | 1 s |
-| 3 | *Destro* | community simulator | - | 634 | -9.0% | 707 | -10.2% | 1 s |
+| 1 | **[`destruction-incinerate-open-raid`](destruction-incinerate-open-raid.md)** | ours: derived (open search) | 10/11/30 | 712 | +0.0% | 802 | +0.0% | 1 s |
+| 2 | [`destruction-incinerate-raid`](destruction-incinerate-raid.md) | ours: hand draft | 9/11/31 | 683 | -4.0% | 762 | -5.0% | 1 s |
+| 3 | *Destro* | community simulator | - | 646 | -9.2% | 721 | -10.2% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -73,7 +73,7 @@ The Destruction raid build the open talent search found on 2026-11-08: every leg
   2. move to the top: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.8%)
   3. threshold 3.5 -> 5.25: if time left in the fight ≤ 3.5: cast Searing Pain (+0.2%)
   4. only with 10s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption + threshold 5.25 -> 3.938: if time left in the fight ≤ 5.25: cast Searing Pain (+0.2%)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-09, 7 passes, the last 2026-11-08, 12 changes to the base rotation; third-seed check: open winner 414 -> 788 DPS (+90.1%), destruction-incinerate-raid 697 -> 749 DPS (+7.4%), sim preset: Destro 703 -> 708 DPS (+0.7%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-09, 8 passes, the last 2026-11-17, 12 changes to the base rotation; third-seed check: destruction-incinerate-open-raid 425 -> 803 DPS (+89.0%), sim preset: Destro 729 -> 721 DPS (-1.1%), destruction-incinerate-raid 723 -> 762 DPS (+5.4%)):
   1. insert before the filler: cast Shadowburn (+6.9%, pass 1)
   2. insert before the filler: cast Shadow Bolt (+1.8%, pass 1)
   3. insert at the top: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.4%, pass 1)
@@ -100,7 +100,7 @@ Before the pull: at -1.5s: cast Life Tap.
 | 7 | if mana % < 10%: cast Life Tap | 6.6 |
 | 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
 | 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
-| 10 | if Immolate is on the target: cast Conflagrate | 3.8 |
+| 10 | if Immolate is on the target: cast Conflagrate | 3.9 |
 | 11 | cast Shadow Bolt (rank 9) | 12.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Incinerate (needs the Incinerate talent).
@@ -124,8 +124,8 @@ Damage by ability:
 - The incinerate-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.
 - Sibling rotations tried on it (10,000 fights): affliction-raid -0.2%, fire-destro-raid +0.1%, sb-raid -0.0%, demonology-raid -0.2%; none adopted.
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Unholy Power, Improved Voidwalker.
-- Simulator numbers are the community's model of the beta (wowsims/forever 16e8542 (client 70790) with this project's patches), not in-game measurements.
-- 2026-11-08 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Voidwalker -> Demonic Embrace (survival); Improved Voidwalker -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Aegis (survival); Unholy Power -> Demonic Aegis (survival). Net +0.00% on a third seed.
+- Simulator numbers are the community's model of the beta (wowsims/forever 2e6e77d (client 70938) with this project's patches), not in-game measurements.
+- 2026-11-17 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Voidwalker -> Demonic Embrace (survival); Improved Voidwalker -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Aegis (survival); Unholy Power -> Demonic Aegis (survival). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 

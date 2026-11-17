@@ -41,26 +41,25 @@ The healer lab's Holy priest heals the tank with **Penance** every time it is re
 
 Healing capacity 0.69 (the raid damage it heals through in this project's healer lab), 391 healing per second. Healers are not in the community simulator.
 
-**The gear** (average item level: Pre-BiS 60.2; Phase 1 BiS 61.6; chosen by the stat weights this project's healer lab measures for this build, the healing capacity each stat adds; healers are in no community simulator, so this is our model; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 60.2; Phase 1 BiS 61.2; chosen by the stat weights this project's healer lab measures for this build, the healing capacity each stat adds; healers are in no community simulator, so this is our model; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Pre-BiS | Phase 1 BiS |
 |---|---|---|
 | Head | [Devout Crown](https://www.wowhead.com/forever/item=16693) · *Darkmaster Gandling, Scholomance*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11649) | [Devout Crown](https://www.wowhead.com/forever/item=16693) · *Darkmaster Gandling, Scholomance*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11649) |
 | Neck | [Wavefront Necklace](https://www.wowhead.com/forever/item=20685) · *Lord Skwol, Silithus* | [Wavefront Necklace](https://www.wowhead.com/forever/item=20685) · *Lord Skwol, Silithus* |
-| Shoulders | [Mantle of the Scarlet Crusade](https://www.wowhead.com/forever/item=22405) · *Cannon Master Willey, Stratholme* | [Devout Mantle](https://www.wowhead.com/forever/item=16695) · *Solakar Flamewreath, Blackrock Spire* |
+| Shoulders | [Shroud of the Nathrezim](https://www.wowhead.com/forever/item=18720) · *Balnazzar, Stratholme* | [Mantle of the Scarlet Crusade](https://www.wowhead.com/forever/item=22405) · *Cannon Master Willey, Stratholme* |
 | Back | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) · *Leatherworking* | [Hide of the Wild](https://www.wowhead.com/forever/item=18510) · *Leatherworking* |
-| Chest | [Embrace of the Wind Serpent](https://www.wowhead.com/forever/item=12462) · *Avatar of Hakkar, The Temple of Atal'Hakkar*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Embrace of the Wind Serpent](https://www.wowhead.com/forever/item=12462) · *Avatar of Hakkar, The Temple of Atal'Hakkar*<br>+ [Enchant Chest - Major Intellect](https://www.wowhead.com/forever/spell=19991) |
-| Wrist | [Devout Bracers](https://www.wowhead.com/forever/item=16697) · *Stratholme*<br>+ [Enchant Bracer - Healing Power](https://www.wowhead.com/forever/spell=23796) | [Flarecore Wraps](https://www.wowhead.com/forever/item=18263) · *Tailoring*<br>+ [Enchant Bracer - Healing Power](https://www.wowhead.com/forever/spell=23796) |
+| Chest | [Embrace of the Wind Serpent](https://www.wowhead.com/forever/item=12462) · *Avatar of Hakkar, The Temple of Atal'Hakkar*<br>+ [Enchant Chest - Major Intellect](https://www.wowhead.com/forever/spell=19991) | [Embrace of the Wind Serpent](https://www.wowhead.com/forever/item=12462) · *Avatar of Hakkar, The Temple of Atal'Hakkar*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
+| Wrist | [Devout Bracers](https://www.wowhead.com/forever/item=16697) · *Stratholme*<br>+ [Enchant Bracer - Mana Regeneration](https://www.wowhead.com/forever/spell=23795) | [Flarecore Wraps](https://www.wowhead.com/forever/item=18263) · *Tailoring*<br>+ [Enchant Bracer - Healing Power](https://www.wowhead.com/forever/spell=23796) |
 | Hands | [Hands of the Exalted Herald](https://www.wowhead.com/forever/item=12554) · *Princess Moira Bronzebeard, Blackrock Depths* | [Hands of the Exalted Herald](https://www.wowhead.com/forever/item=12554) · *Princess Moira Bronzebeard, Blackrock Depths* |
 | Waist | [Whipvine Cord](https://www.wowhead.com/forever/item=18327) · *Alzzin the Wildshaper, Dire Maul* | [Whipvine Cord](https://www.wowhead.com/forever/item=18327) · *Alzzin the Wildshaper, Dire Maul* |
 | Legs | [Padre's Trousers](https://www.wowhead.com/forever/item=18386) · *Illyanna Ravenoak, Dire Maul*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11649) | [Padre's Trousers](https://www.wowhead.com/forever/item=18386) · *Illyanna Ravenoak, Dire Maul*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11649) |
 | Feet | [Ogreseer Tower Boots](https://www.wowhead.com/forever/item=13282) · *Spirestone Lord Magus, Blackrock Spire*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/item=16220) | [Ogreseer Tower Boots](https://www.wowhead.com/forever/item=13282) · *Spirestone Lord Magus, Blackrock Spire*<br>+ [Enchant Boots - Spirit](https://www.wowhead.com/forever/item=16220) |
 | Finger | [Warden's Signet of Resolve](https://www.wowhead.com/forever/item=275983) | [Warden's Signet of Resolve](https://www.wowhead.com/forever/item=275983) |
-| Finger | [Rosewine Circle](https://www.wowhead.com/forever/item=13178) · *Urok Doomhowl, Blackrock Spire* | [Band of Sulfuras](https://www.wowhead.com/forever/item=19138) · *Ragnaros, Molten Core* |
+| Finger | [Rosewine Circle](https://www.wowhead.com/forever/item=13178) · *Urok Doomhowl, Blackrock Spire* | [Cauterizing Band](https://www.wowhead.com/forever/item=19140) · *Majordomo Executus, Molten Core* |
 | Trinket | [Burst of Knowledge](https://www.wowhead.com/forever/item=11832) · *Ambassador Flamelash, Blackrock Depths* | [Burst of Knowledge](https://www.wowhead.com/forever/item=11832) · *Ambassador Flamelash, Blackrock Depths* |
 | Trinket | [Mindtap Talisman](https://www.wowhead.com/forever/item=18371) · *Magister Kalendris, Dire Maul* | [Mindtap Talisman](https://www.wowhead.com/forever/item=18371) · *Magister Kalendris, Dire Maul* |
-| Main hand | [Gift of the Elven Magi](https://www.wowhead.com/forever/item=13360) · *Balnazzar, Stratholme*<br>+ [Enchant Weapon - Mighty Spirit](https://www.wowhead.com/forever/spell=23797) | [Gift of the Elven Magi](https://www.wowhead.com/forever/item=13360) · *Balnazzar, Stratholme*<br>+ [Enchant Weapon - Mighty Spirit](https://www.wowhead.com/forever/spell=23797) |
-| Off hand | [Thaurissan's Royal Scepter](https://www.wowhead.com/forever/item=11928) · *Emperor Dagran Thaurissan, Blackrock Depths* | [Thaurissan's Royal Scepter](https://www.wowhead.com/forever/item=11928) · *Emperor Dagran Thaurissan, Blackrock Depths* |
+| Main hand | [Redemption](https://www.wowhead.com/forever/item=22406) · *Cannon Master Willey, Stratholme*<br>+ [Enchant Weapon - Mighty Spirit](https://www.wowhead.com/forever/spell=23797) | [Redemption](https://www.wowhead.com/forever/item=22406) · *Cannon Master Willey, Stratholme*<br>+ [Enchant Weapon - Mighty Spirit](https://www.wowhead.com/forever/spell=23797) |
 | Ranged/relic | [Wand of Eternal Light](https://www.wowhead.com/forever/item=22254) · *Dark Coffer, Blackrock Depths* | [Wand of Eternal Light](https://www.wowhead.com/forever/item=22254) · *Dark Coffer, Blackrock Depths* |
 
 ## Other builds of this spec
@@ -69,5 +68,5 @@ Healing capacity 0.69 (the raid damage it heals through in this project's healer
 - [Holy — Raid healing](../research/raid/builds/holy-ml-heal.md) (21/30/0) — [open the talent tree](https://talentsforever.com/priest/60/113113031330001-0350510303002053--12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-16 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-17 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

@@ -59,14 +59,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-d
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `shadow-dps` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 4** for `shadow-dps` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md)** | ours: optimizer | 20/0/31 | 665 | +0.0% | 761 | -0.5% | 0 s |
-| 2 | *Standard* | community simulator | - | 620 | -6.7% | 760 | -0.5% | 0 s |
-| 3 | [`shadow-ml-raid`](shadow-ml-raid.md) | ours: derived (ML search) | 16/0/35 | 603 | -9.4% | 764 | +0.0% | 11 s |
-| 4 | *Smite* | community simulator | - | 225 | -66.1% | 302 | -60.5% | 3 s |
+| 1 | **[`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md)** | ours: optimizer | 20/0/31 | 688 | +0.0% | 788 | -0.4% | 1 s |
+| 2 | *Standard* | community simulator | - | 643 | -6.5% | 787 | -0.5% | 0 s |
+| 3 | [`shadow-ml-raid`](shadow-ml-raid.md) | ours: derived (ML search) | 16/0/35 | 616 | -10.5% | 791 | +0.0% | 16 s |
+| 4 | *Smite* | community simulator | - | 229 | -66.7% | 311 | -60.7% | 8 s |
 
 ## Rotation (community simulator, training dummy)
 

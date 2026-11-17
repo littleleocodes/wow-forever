@@ -63,18 +63,18 @@ The Retribution raid build the open talent search found on 2026-11-10: every leg
 
 ## Rank among our builds and the community simulator's
 
-**2 of 8** for `ret-dps` by training-dummy DPS in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 8** for `ret-dps` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Unsealed Wrath* | community simulator | - | 504 | +0.0% | 815 | -0.3% | 13 s |
-| 2 | **[`retribution-open-raid`](retribution-open-raid.md)** | ours: derived (open search) | 16/4/31 | 477 | -5.4% | 817 | +0.0% | 33 s |
-| 3 | *Holy Shock* | community simulator | - | 460 | -8.7% | 709 | -13.3% | 0 s |
-| 4 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/6/28 | 422 | -16.3% | 654 | -20.0% | 0 s |
-| 5 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 17/6/28 | 422 | -16.3% | 654 | -20.0% | 0 s |
-| 6 | [`prot-ret-ml-raid`](prot-ret-ml-raid.md) | ours: derived (ML search) | 10/12/29 | 403 | -20.2% | 682 | -16.5% | 8 s |
-| 7 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: derived (ML search) | 9/14/28 | 389 | -22.9% | 652 | -20.2% | 8 s |
-| 8 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 8/15/28 | 387 | -23.2% | 652 | -20.2% | 8 s |
+| 1 | *Unsealed Wrath* | community simulator | - | 509 | +0.0% | 841 | -0.2% | 6 s |
+| 2 | **[`retribution-open-raid`](retribution-open-raid.md)** | ours: derived (open search) | 16/4/31 | 479 | -5.8% | 843 | +0.0% | 25 s |
+| 3 | *Holy Shock* | community simulator | - | 457 | -10.2% | 757 | -10.2% | 0 s |
+| 4 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/6/28 | 418 | -17.8% | 701 | -16.9% | 0 s |
+| 5 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 17/6/28 | 418 | -17.8% | 701 | -16.9% | 0 s |
+| 6 | [`prot-ret-ml-raid`](prot-ret-ml-raid.md) | ours: derived (ML search) | 10/12/29 | 403 | -20.7% | 727 | -13.8% | 6 s |
+| 7 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: derived (ML search) | 9/14/28 | 387 | -23.8% | 695 | -17.6% | 6 s |
+| 8 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 8/15/28 | 386 | -24.1% | 694 | -17.7% | 6 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -88,12 +88,12 @@ Before the pull: at -20s: groupReference; at -20s: move to “Pull range” yd; 
 | # | Priority (the first line whose condition holds is cast) | [`retribution-open-raid`](retribution-open-raid.md) casts/min |
 |---|---|---|
 | 1 | if not spellInRange: groupReference | as ready |
-| 2 | if “WF guard”: cast Judgement | 7.3 |
+| 2 | if “WF guard”: cast Judgement | 7.4 |
 | 3 | if time into the fight ≥ “Delay Major CDs”: use every other cooldown when ready | as ready |
 | 4 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 1.0 |
 | 5 | if “WF guard” and not Judgement is ready and “Judge realism protection”: cast Holy Strike | 5.9 |
-| 6 | if “Should refresh SoC”: cast Seal of Command | 3.6 |
-| 7 | if “Should refresh SoR”: cast Seal of Righteousness | 3.4 |
+| 6 | if “Should refresh SoC”: cast Seal of Command | 3.7 |
+| 7 | if “Should refresh SoR”: cast Seal of Righteousness | 3.5 |
 | 8 | groupReference | as ready |
 | 9 | groupReference | as ready |
 
@@ -104,12 +104,12 @@ Damage by ability:
 | Ability | [`retribution-open-raid`](retribution-open-raid.md) |
 |---|---|
 | Seal of Command | 22% |
-| Auto Attack | 21% |
+| Auto Attack | 19% |
 | Holy Strike | 14% |
-| Judgement of Command | 13% |
-| Consecration | 11% |
-| Seal of Righteousness | 8% |
-| Judgement of Righteousness | 6% |
+| Judgement of Command | 14% |
+| Consecration | 12% |
+| Seal of Righteousness | 7% |
+| Judgement of Righteousness | 5% |
 | Hammer of Wrath | 4% |
 | Demonic Rune | 2% |
 

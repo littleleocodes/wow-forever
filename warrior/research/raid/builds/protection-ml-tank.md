@@ -49,14 +49,14 @@ The Protection tank build the machine-learning talent search found in the commun
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `prot-tank` by tank value in the community simulator (wowsims/forever ff9babb (client 70888)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 4** for `prot-tank` by tank value in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | **[`protection-ml-tank`](protection-ml-tank.md)** | ours: derived (ML search) | 17/3/31 | 1.013 | +0.0% | 1771 | 282 |
-| 2 | *Protection* | community simulator | - | 1.008 | -0.5% | 1756 | 282 |
-| 3 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 8/5/38 | 1.002 | -1.1% | 1731 | 282 |
-| 4 | [`prot-raid-tank`](prot-raid-tank.md) | ours: hand draft | 12/5/34 | 1.000 | -1.3% | 1719 | 281 |
+| 1 | **[`protection-ml-tank`](protection-ml-tank.md)** | ours: derived (ML search) | 17/3/31 | 1.011 | +0.0% | 1990 | 287 |
+| 2 | *Protection* | community simulator | - | 1.011 | -0.0% | 1982 | 286 |
+| 3 | [`prot-raid-tank`](prot-raid-tank.md) | ours: hand draft | 12/5/34 | 1.000 | -1.1% | 1940 | 286 |
+| 4 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 8/5/38 | 1.000 | -1.1% | 1953 | 288 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -78,13 +78,13 @@ Before the pull: at -1s: cast Battle Shout.
 | 1 | cast Shield Block | 11.8 |
 | 2 | cast Shield Wall | 0.3 |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | cast Revenge | 10.9 |
+| 4 | cast Revenge | 10.8 |
 | 5 | if rage < 90: cast Bloodrage | 1.0 |
 | 6 | cast Shield Slam | 8.8 |
-| 7 | if stacks of Sunder Armor < 5: cast Sunder Armor | 14.9 |
+| 7 | if stacks of Sunder Armor < 5: cast Sunder Armor | 15.3 |
 | 8 | if rage ≥ 33.75: cast Heroic Strike | 15.9 |
-| 9 | if not Rend is on the target: cast Rend | 3.0 |
-| 10 | cast Sunder Armor | 14.9 |
+| 9 | if not Rend is on the target: cast Rend | 2.8 |
+| 10 | cast Sunder Armor | 15.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Defensive Stance (its condition never held in these fights).
 
@@ -94,14 +94,14 @@ Damage by ability (threat for tanks):
 |---|---|
 | Revenge | 37% |
 | Heroic Strike | 19% |
-| Shield Slam | 18% |
-| Auto Attack | 12% |
+| Shield Slam | 17% |
+| Windfury Totem | 8% |
 | Sunder Armor | 7% |
+| Auto Attack | 5% |
 | Rend | 3% |
-| Judgement of Light | 2% |
+| Judgement of Light | 1% |
 | Deep Wound | 1% |
 | OtherActionRageGain | 1% |
-| Retribution Aura | 0% |
 
 ## Notes
 

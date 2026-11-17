@@ -51,7 +51,14 @@
     "line": ""
    }
   },
-  "frostfire-raid:frostfire-raid.apl.json": {},
+  "frostfire-raid:frostfire-raid.apl.json": {
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20554}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 20554}}}"
+   }
+  },
   "frostfire-raid:frostfire-raid-raid.apl.json": {},
   "frostfire-raid:frostfire-raid.base.apl.json": {}
  },
@@ -79,16 +86,51 @@
  },
  "warlock": {
   "affliction-raid:affliction-raid.apl.json": {},
-  "affliction-raid:affliction-raid-raid.apl.json": {},
+  "affliction-raid:affliction-raid-raid.apl.json": {
+   "priority[12]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259821}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1259821}}}"
+   }
+  },
   "affliction-raid:affliction.apl.json": {},
-  "fire-destro-raid:fire-destro-raid.apl.json": {},
-  "fire-destro-raid:fire-destro-raid-raid.apl.json": {},
+  "fire-destro-raid:fire-destro-raid.apl.json": {
+   "priority[11]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259821}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1259821}}}"
+   }
+  },
+  "fire-destro-raid:fire-destro-raid-raid.apl.json": {
+   "priority[11]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259821}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1259821}}}"
+   }
+  },
   "fire-destro-raid:destruction.apl.json": {},
-  "sb-raid:sb-raid.apl.json": {},
+  "sb-raid:sb-raid.apl.json": {
+   "priority[13]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259821}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1259821}}}"
+   }
+  },
   "sb-raid:sb-raid-raid.apl.json": {},
   "sb-raid:ds_ruin.apl.json": {},
   "demonology-raid:demonology-raid.apl.json": {},
-  "demonology-raid:demonology-raid-raid.apl.json": {},
+  "demonology-raid:demonology-raid-raid.apl.json": {
+   "priority[10]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 1259821}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1259821}}}"
+   }
+  },
   "demonology-raid:demonic_pact.apl.json": {},
   "incinerate-raid:incinerate-raid.apl.json": {},
   "incinerate-raid:incinerate-raid-raid.apl.json": {},
@@ -1407,6 +1449,12 @@
     ],
     "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpLt\", \"lhs\": {\"auraNumStacks\": {\"sourceUnit\": {\"type\": \"CurrentTarget\"}, \"auraId\": {\"spellId\": 11597, \"rank\": 5}}}, \"rhs\": {\"const\": {\"val\": \"1\"}}}}, {\"not\": {\"val\": {\"aur"
    },
+   "priority[27]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 274759}"
+    ],
+    "line": "{\"castSpell\": {\"spellId\": {\"itemId\": 274759}}}"
+   },
    "priority[3]": {
     "messages": [
      "Warning:  (#1) does not know spell {ItemID: 10646}"
@@ -1484,8 +1532,9 @@
   }
  },
  "paladin": {
-  "ret-dps:retribution-default.apl.json": {},
+  "ret-dps:ret-dps.apl.json": {},
   "ret-dps:ret-dps-raid.apl.json": {},
+  "ret-dps:retribution-default.apl.json": {},
   "prot-tank:protection-default.apl.json": {},
   "prot-tank:prot-tank-raid.apl.json": {},
   "shockadin-raid:retribution-holy_shock.apl.json": {
@@ -1636,30 +1685,50 @@
     ],
     "line": "{\"condition\": {\"variableRef\": {\"name\": \"Ready to use Elune's Light\"}}, \"castSpell\": {\"spellId\": {\"spellId\": 1259799}}}"
    },
-   "priority[14]": {
+   "priority[12]": {
     "messages": [
-     "Warning:  (#1) does not know spell {ItemID: 7676}"
+     "Warning:  (#1) does not know spell {ItemID: 7676}",
+     "Warning: No aura found on  (#1) for: {SpellID: 1270842}",
+     "Warning: No aura found on  (#1) for: {SpellID: 27851}",
+     "Warning: No aura found on  (#1) for: {SpellID: 446212}"
     ],
-    "line": "{\"condition\": {\"variableRef\": {\"name\": \"Tea is selected and energy is low\"}}, \"castSpell\": {\"spellId\": {\"itemId\": 7676}}}"
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"2\"}}}}, {\"variableRef\": {\"name\": \"Use Shred cleave tuning\"}}]}}, \"groupReference\": {\"groupName\": \"2 targets: "
+   },
+   "priority[13]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 7676}",
+     "Warning: No aura found on  (#1) for: {SpellID: 1270842}",
+     "Warning: No aura found on  (#1) for: {SpellID: 27851}",
+     "Warning: No aura found on  (#1) for: {SpellID: 446212}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"2\"}}}}, {\"not\": {\"val\": {\"variableRef\": {\"name\": \"Use Shred cleave tuning\"}}}}]}}, {\"talent"
    },
    "priority[15]": {
     "messages": [
      "Warning:  (#1) does not know spell {ItemID: 7676}",
-     "Warning: A condition branch in this 'And' check could not be resolved and was dropped."
+     "Warning: No aura found on  (#1) for: {SpellID: 1270842}",
+     "Warning: No aura found on  (#1) for: {SpellID: 27851}",
+     "Warning: No aura found on  (#1) for: {SpellID: 446212}"
     ],
-    "line": "{\"condition\": {\"variableRef\": {\"name\": \"Rune can restore mana after Tea\"}}, \"castSpell\": {\"spellId\": {\"itemId\": 12662}}}"
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"3\"}}}}, {\"variableRef\": {\"name\": \"Use Shred cleave tuning\"}}]}}, \"groupReference\": {\"groupName\": \"3 targets: "
    },
    "priority[16]": {
     "messages": [
-     "Warning:  (#1) picks no potion for {OtherID: 26}"
+     "Warning:  (#1) does not know spell {ItemID: 7676}",
+     "Warning: No aura found on  (#1) for: {SpellID: 1270842}",
+     "Warning: No aura found on  (#1) for: {SpellID: 27851}",
+     "Warning: No aura found on  (#1) for: {SpellID: 446212}"
     ],
-    "line": "{\"condition\": {\"auraIsActive\": {\"auraId\": {\"spellId\": 768}}}, \"castSpell\": {\"spellId\": {\"otherId\": \"OtherActionOffensivePotion\"}}}"
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"3\"}}}}, {\"not\": {\"val\": {\"variableRef\": {\"name\": \"Use Shred cleave tuning\"}}}}]}}, {\"talent"
    },
-   "priority[23]": {
+   "priority[18]": {
     "messages": [
-     "Warning: No aura found on  (#1) for: {SpellID: 1270842}"
+     "Warning:  (#1) does not know spell {ItemID: 7676}",
+     "Warning: No aura found on  (#1) for: {SpellID: 1270842}",
+     "Warning: No aura found on  (#1) for: {SpellID: 27851}",
+     "Warning: No aura found on  (#1) for: {SpellID: 446212}"
     ],
-    "line": "{\"condition\": {\"variableRef\": {\"name\": \"Innervate can restore needed mana\"}}, \"castSpell\": {\"spellId\": {\"spellId\": 29166}}}"
+    "line": "{\"condition\": {\"not\": {\"val\": {\"or\": {\"vals\": [{\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"2\"}}}}, {\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"3\"}}}}]"
    },
    "priority[6]": {
     "messages": [
@@ -1679,33 +1748,51 @@
     "messages": [
      "Warning: No aura found on Target 1 for: {SpellID: 440667, Tag: -1}"
     ],
-    "line": "{\"condition\": {\"not\": {\"val\": {\"variableRef\": {\"name\": \"Attack-power reduction is covered\"}}}}, \"castSpell\": {\"spellId\": {\"spellId\": 9898}}}"
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"2\"}}}}, \"groupReference\": {\"groupName\": \"Two targets: Swipe and Primal Bite\"}}"
    },
-   "priority[4]": {
+   "priority[15]": {
+    "messages": [
+     "Warning: No aura found on Target 1 for: {SpellID: 440667, Tag: -1}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"3\"}}}}, \"groupReference\": {\"groupName\": \"Three targets: Swipe priority\"}}"
+   },
+   "priority[16]": {
+    "messages": [
+     "Warning: No aura found on Target 1 for: {SpellID: 440667, Tag: -1}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"not\": {\"val\": {\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"3\"}}}}}}, {\"not\": {\"val\": {\"cmp\": {\"op\": \"OpEq\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const"
+   },
+   "priority[3]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {ItemID: 9449}"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpLe\", \"lhs\": {\"unitDistance\": {}}, \"rhs\": {\"const\": {\"val\": \"5\"}}}}, \"castSpell\": {\"spellId\": {\"itemId\": 9449}}}"
+   },
+   "priority[5]": {
     "messages": [
      "Warning:  (#1) does not know spell {SpellID: 1259799}"
     ],
     "line": "{\"condition\": {\"variableRef\": {\"name\": \"Ready to use Elune's Light\"}}, \"castSpell\": {\"spellId\": {\"spellId\": 1259799}}}"
    },
-   "priority[5]": {
+   "priority[6]": {
     "messages": [
      "Warning:  (#1) does not know spell {ItemID: 10646}"
     ],
     "line": "{\"condition\": {\"spellIsKnown\": {\"spellId\": {\"itemId\": 10646}}}, \"castSpell\": {\"spellId\": {\"itemId\": 10646}}}"
    },
-   "priority[6]": {
+   "priority[7]": {
     "messages": [
      "Warning:  (#1) picks no potion for {OtherID: 25}"
     ],
     "line": "{\"condition\": {\"spellIsKnown\": {\"spellId\": {\"otherId\": \"OtherActionDefensivePotion\"}}}, \"castSpell\": {\"spellId\": {\"otherId\": \"OtherActionDefensivePotion\"}}}"
    },
-   "priority[7]": {
+   "priority[8]": {
     "messages": [
      "Warning:  (#1) picks no potion for {OtherID: 26}"
     ],
     "line": "{\"condition\": {\"variableRef\": {\"name\": \"Offensive potion is useful without a defensive potion\"}}, \"castSpell\": {\"spellId\": {\"otherId\": \"OtherActionOffensivePotion\"}}}"
    },
-   "priority[8]": {
+   "priority[9]": {
     "messages": [
      "Warning:  (#1) does not know spell {ItemID: 9421}"
     ],
@@ -1714,12 +1801,6 @@
    "prepull[2]": {
     "messages": [
      "Warning: No swap set configured in Settings."
-    ],
-    "line": ""
-   },
-   "prepull[3]": {
-    "messages": [
-     "Warning:  (#1) does not know spell {ItemID: 9449}"
     ],
     "line": ""
    }
