@@ -169,11 +169,13 @@ class PetBody:
     """The other side's view of this side's pet, as one more mob of a pull: area spells and cleaves land on it through the fight
     lab's own hit_others and hit_others_melee, their control holds it, its dots tick, and it dies (2026-11-14, the warlock layer: a
     demon nobody could touch decided its duels: Soul Link against a warrior 93.5% with it untouched, 24.5% if it died at 10 s). It is
-    in reach of whoever it attacks; a caster pet (the Imp) stands by its owner. Nobody targets a pet on purpose yet."""
+    in reach of whoever it attacks; a caster pet (the Imp) stands by its owner. Since round 2 (2026-11-17) the other side answers it:
+    its single-target control (Duel.pet_cc: Polymorph, Hibernate, Scare Beast, Fear, Banish), and a melee kept from the player swings at
+    the pet in its reach (tick_attacks, PvPAI.swing_at_pet)."""
     _plain = dict(level=60, swing_at=0.0, slow=0.0, slow_until=0.0, root_until=0.0, attack_slow=0.25, attack_slow_until=0.0,
                   stun_until=0.0, fear_until=0.0, incap_until=0.0, target="player", threat_player=0.0, threat_pet=0.0, armor_debuff=0.0,
                   pet_in_melee=False, caster=False, runner=False, fled=False, flee_until=-1.0, cast_dmg=0.0, cast_end=-1.0, cast_next=0.0,
-                  lockout_until=0.0, dmg_reduction=0.0, dmg_reduction_until=0.0, dmg=0.0)
+                  lockout_until=0.0, dmg_reduction=0.0, dmg_reduction_until=0.0, dmg=0.0, banish_until=0.0)
 
     def __init__(self, side):
         self.__dict__["side"] = side
@@ -755,6 +757,9 @@ class Duel:
         pet, pb, t = dst.p.pet, dst.pet_body, self.t
         if pet is None or not pet.alive or amount <= 0:
             return 0.0
+        if t < pb.banish_until:   # banished: "invulnerable"
+            src.fight.note(f"{spell.name} -> {dst.name}'s {pet.name}: immune (Banish)")
+            return 0.0
         pet.hp -= amount
         self.combat = True
         key = f"{spell.name} (pet)"
@@ -771,14 +776,22 @@ class Duel:
             dst.fight.note(f"{pet.name} dies")
         return amount
 
-    def pet_cc(self, dst, kind, dur):
-        """Control on dst's pet from an area effect a layer applies by hand (Psychic Scream, Howl of Terror, Intimidating Shout)."""
+    def pet_cc(self, dst, kind, dur, banish=False):
+        """Control on dst's pet: an area effect a layer applies by hand (Psychic Scream, Howl of Terror, Intimidating Shout), or since
+        round 2 a single-target one (Polymorph, Hibernate, Scare Beast, Fear, Banish). The hunter's Bestial Wrath makes its pet immune
+        ("cannot be stopped unless killed", 18 s). A banish also makes the pet take no damage. -> the seconds applied (0: none)."""
         pb = dst.pet_body
         if not pb.alive() or dur <= 0:
-            return
-        setattr(pb, {"stun": "stun_until", "fear": "fear_until", "root": "root_until", "incap": "incap_until"}[kind],
-                max(getattr(pb, {"stun": "stun_until", "fear": "fear_until", "root": "root_until", "incap": "incap_until"}[kind]), self.t + dur))
-        dst.fight.note(f"{dst.p.pet.name}: {kind} {dur:.1f}s")
+            return 0.0
+        if dst.p.buff("Bestial Wrath", self.t):
+            dst.fight.note(f"{dst.p.pet.name}: immune to {kind} (Bestial Wrath)")
+            return 0.0
+        key = {"stun": "stun_until", "fear": "fear_until", "root": "root_until", "incap": "incap_until"}[kind]
+        setattr(pb, key, max(getattr(pb, key), self.t + dur))
+        if banish:
+            pb.banish_until = max(pb.banish_until, self.t + dur)
+        dst.fight.note(f"{dst.p.pet.name}: {'banished' if banish else kind} {dur:.1f}s")
+        return dur
 
     def damage(self, src, dst, spell, amount, crit=False, source="player", periodic=False):
         t = self.t
@@ -926,6 +939,18 @@ class Duel:
             if p.oh is not None and t + EPS >= p.swing_oh:
                 f.auto_swing("oh")
                 p.swing_oh = t + p.oh.speed * s.mod.swing_speed_factor() * (1.0 + s.attack_slow if t < s.attack_slow_until else 1.0)
+        elif s.mod.melee and s.ai.auto_attack and not f.casting and t >= s.disarm_until and s.ai.swing_at_pet(self, s, s.foe):
+            pb, old = s.foe.pet_body, f.m   # round 2: the foe out of reach, its pet in it: the white swings go to the pet
+            f.m = pb
+            try:
+                if p.mh is not None and t + EPS >= p.swing_mh:
+                    f.auto_swing("mh")
+                    p.swing_mh = t + p.mh.speed * s.mod.swing_speed_factor() * (1.0 + s.attack_slow if t < s.attack_slow_until else 1.0)
+                if p.oh is not None and t + EPS >= p.swing_oh and pb.alive():
+                    f.auto_swing("oh")
+                    p.swing_oh = t + p.oh.speed * s.mod.swing_speed_factor() * (1.0 + s.attack_slow if t < s.attack_slow_until else 1.0)
+            finally:
+                f.m = old
         if s.mod.ranged and p.ranged is not None and not f.casting and not f.channel and self.dist >= T.MIN_RANGED \
                 and t >= f.last_move + FT.AUTO_SHOT_STAND_STILL and t + EPS >= p.shot_at and self.dist <= 35.0:
             f.auto_shot()

@@ -80,6 +80,33 @@ OFFENSIVE_BALANCE = ("Wrath", "Starfire", "Moonfire", "Insect Swarm", "Entanglin
 FF_ARMOR = re.compile(r"armor of the target by (\d+)")
 
 
+def spell_lands(me, spell):
+    """A spell hit roll against a same-level player or its pet (the fight lab's spell table: 4% miss less the hit bonuses)."""
+    import tables as FT   # the fight lab's (duel.py put it first on the path)
+    hit = 1.0 - FT.spell_miss(0) + me.mod.hit_bonus(spell) + me.p.spell_hit
+    return me.fight.rng.random() <= min(FT.SPELL_HIT_CAP, hit)
+
+
+def pet_open(d, foe, kinds=("hunter",)):
+    """The foe's pet stands in my reach, free: alive, engaged, not under my control or banished, not under Bestial Wrath."""
+    pet, pb, t = foe.p.pet, foe.pet_body, d.t
+    return (foe.cls in kinds and pet is not None and pb.alive() and pet.engaged and not pb.incapacitated(t)
+            and t >= pb.banish_until and not foe.p.buff("Bestial Wrath", t))
+
+
+def can_at_pet(me, ai, name):
+    """me.can(name) with the spell's reach stretched: the pet stands beside me, the player maybe out of the spell's range."""
+    old = ai.ranges.get(name)
+    ai.ranges[name] = 99.0
+    try:
+        return me.can(name)
+    finally:
+        if old is None:
+            ai.ranges.pop(name, None)
+        else:
+            ai.ranges[name] = old
+
+
 def cat(name):
     """The diminishing-returns category of a control (dtables.DR_CATEGORY; None: none)."""
     return T.DR_CATEGORY.get(name)
@@ -161,7 +188,8 @@ class DruidPvP(PvPAI):
     def effects_for(self, me):
         return {"Pounce": self.pounce, "Bash": self.bash, "Feral Charge": self.feral_charge, "Swiftmend": self.swiftmend,
                 "Barkskin": self.barkskin, "Innervate": self.innervate, "Faerie Fire": self.faerie_fire, "Dash": self.dash,
-                "Nature's Grasp": self.natures_grasp, "Nature's Swiftness": self.plain, "Rejuvenation": self.plain}
+                "Nature's Grasp": self.natures_grasp, "Nature's Swiftness": self.plain, "Rejuvenation": self.plain,
+                **({"Hibernate": self.hibernate} if me.foe.cls == "hunter" else {})}
 
     def prefight(self, d, me, foe):
         """Undo the module's mob pull (it prowls up to melee and presses Berserk) and stand at the duel's distance: a cat in Prowl,
@@ -310,6 +338,19 @@ class DruidPvP(PvPAI):
         me.mod.on_swing(f, spell, out, 0.0, "mh")           # opened, Omen of Clarity
         foe.apply_cc("stun", spell.stun + me.mod.tv("Brutal Impact", 0), cat("Pounce"), "Pounce", physical=True)
         return 0.0
+
+    def hibernate(self, d, me, foe, spell):
+        """Hibernate on a hunter's pet (round 2, 2026-11-17): Beasts and Dragonkin only, so in a duel a hunter's pet; asleep up to
+        40 s (the engine's PvP cap), any damage wakes it."""
+        if not pet_open(d, foe) or not spell_lands(me, spell):
+            me.fight.note("Hibernate: MISS or no pet")
+            return 0.0
+        d.pet_cc(foe, "incap", T.PVP_CC_CAP)
+        return 0.0
+
+    def want_hibernate(self, d, me, foe):
+        """A hunter's free pet on me and the cast safe enough: no free melee in reach (the hunter keeps range)."""
+        return "Hibernate" in me.mod.spells and pet_open(d, foe) and can_at_pet(me, self, "Hibernate")
 
     def bash(self, d, me, foe, spell):
         if self._roll(me, spell) is None:
@@ -608,6 +649,8 @@ class DruidPvP(PvPAI):
 
         if p.buff("Nature's Swiftness", t) and ok("Healing Touch"):
             return "Healing Touch"
+        if foe.cls == "hunter" and hp >= 0.35 and ok("Hibernate") and self.want_hibernate(d, me, foe):
+            return "Hibernate"   # round 2: in caster form anyway, the hunter's pet goes to sleep first
         immune = foe.immune(t)
         done = hp >= (max(self.heal_out, 0.9) if immune else self.heal_out)   # the foe's immunity is healing time
         rooted_foe = self.melee_foe(foe) and foe.body.rooted(t) and not foe.controlled(t)
@@ -661,6 +704,8 @@ class DruidPvP(PvPAI):
             return self.rotation(d, me, foe, hide=("Wrath", "Starfire", "Moonfire", "Insect Swarm", "Hurricane", "Entangling Roots"))
         if self.ff_wanted(d, me, foe) and me.can("Faerie Fire"):
             return "Faerie Fire"
+        if foe.cls == "hunter" and self.want_hibernate(d, me, foe):   # round 2: the pet asleep, the hunter alone
+            return "Hibernate"
         if melee and d.dist <= T.MELEE + 0.5 and not foe.controlled(t) and hp < 0.8 and t >= self.barkskin_until and "Barkskin" in sp \
                 and me.can("Barkskin"):
             return "Barkskin"

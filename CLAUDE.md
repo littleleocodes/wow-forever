@@ -540,6 +540,30 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
   sum of per-level scores (`order_label` in the report). Level-60 raid DPS stays with the scorer and the
   ElliotWood/Forever simulator.
 
+## Duel lab (`_reference/data/duellab/`, PvP)
+
+- Level-60 one-against-one duels on the fight lab's class modules: each side plays its spec's own leveling rotation under a PvP layer
+  (`pvp_<class>.py`), Forever's PvP rules in `dtables.py`. The engine is `duel.py`; the plan, the decisions and the log are in
+  `_reference/pvp-plan.md`, the research in `_reference/pvp-research.md`.
+- A build's score is J, the mean win rate against the field (`pvp_field.FIELD`: each class's most-tagged talentsforever PvP
+  build) plus 0.25 times the mean health margin.
+- `pvp_search.py` / `pvp_search_all.py` search each tree. `blind_spots.py` checks what each winner lacks that real PvP rates highly;
+  `blind_followups.py` makes the improved builds and the battleground versions. `render_pvp_research.py` writes each class's
+  `research/pvp/README.md` "## Duel lab" section; the regen step runs it.
+- A PvE choice a rules file makes (a `ROTATION_KNOBS` entry) goes in `duel.PVE_KNOBS`, so duels keep the module's default.
+- User decisions:
+  - 2026-11-15, "I want to see the results of PvP before deciding if they go on the page or not". On 2026-11-17, after the report,
+    "Go with all your recommendations": the results go on the research pages now, and the PvP player pages after round 2. Each page
+    carries the duel build and the battleground version, which is judged by duels only.
+  - The signature rule covers PvP in a light form: a PvP build holds its spec's signature talents and casts their spells, with no
+    damage-share floor.
+- Known limits:
+  - an open field with no line of sight;
+  - no consumables or racials, dungeon-blue gear;
+  - AI against AI;
+  - pets answered only by control and white swings since round 2 (Bestial Wrath's 18 s of immunity covers the Beast Mastery hunter's
+    short duels).
+
 ## Healer lab (`_reference/data/heallab/`)
 
 - Healers are not in any community simulator, so `heallab/` models one raid healer keeping a five-member group (a tank under

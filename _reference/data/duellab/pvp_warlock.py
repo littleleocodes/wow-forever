@@ -110,16 +110,99 @@ class WarlockPvP(PvPAI):
         self.cc_since = None          # when the current control on me began (the felhunter's reaction)
         self.md_shadow = self.md_magic = 0.0
         self.coex_slow = 0.30
+        self.fear_target = None       # round 2: "pet" when the next Fear goes to a hunter's pet
+        self.pet_fear_until = 0.0
+        self.player_fear_until = 0.0
+        self.fel_dom = False          # Fel Domination's next summon
+        self.resummons = 0
+        self.demon_name = None
 
     def effects_for(self, me):
-        return {"Curse of Exhaustion": self.exhaustion, "Curse of Tongues": self.tongues, "Howl of Terror": self.howl,
-                "Shadow Ward": self.shadow_ward, "Create Healthstone": self.healthstone}
+        fx = {"Curse of Exhaustion": self.exhaustion, "Curse of Tongues": self.tongues, "Howl of Terror": self.howl,
+              "Shadow Ward": self.shadow_ward, "Create Healthstone": self.healthstone}
+        # round 2 (2026-11-17): a hunter's pet feared, a warlock's demon banished, my own demon summoned again (Fel Domination)
+        if me.foe.cls == "warlock":
+            fx["Banish"] = self.banish
+        if me.p.pet is not None:
+            fx["Fel Domination"] = self.fel_domination
+            fx.update({f"Summon {n}": self.summon for n in ("Felhunter", "Succubus", "Imp", "Voidwalker")})
+        return fx
+
+    def fear(self, d, me, foe, spell):
+        """Fear against a hunter: on its pet when this layer chose the pet (fear_target), else the fight lab's own Fear on the hunter;
+        one target feared at a time. NOT USED (2026-11-17): fearing a hunter's pet cost the warlock 6-9 points against hunters (the
+        Demonology winner 90% -> 84%, the field warlock against the Marksmanship winner 39% -> 0%); the Fear stays on the hunter."""
+        t = d.t
+        if self.fear_target == "pet":
+            self.fear_target = None
+            import pvp_druid as PD
+            if t < self.player_fear_until:
+                foe.fear_until = min(foe.fear_until, t)   # my fear on the hunter ends
+                self.player_fear_until = t
+            if not PD.pet_open(d, foe) or not PD.spell_lands(me, spell):
+                me.fight.note("Fear: MISS or no pet")
+                return 0.0
+            self.pet_fear_until = t + d.pet_cc(foe, "fear", T.PVP_CC_CAP)
+            return 0.0
+        if t < self.pet_fear_until:
+            foe.pet_body.fear_until = min(foe.pet_body.fear_until, t)   # the pet's fear ends
+            self.pet_fear_until = t
+        amount = me.fight._splashing(FE.Fight.resolve_spell, me.fight, spell)
+        me.fight.casts[spell.name] = me.fight.casts.get(spell.name, 1) - 1   # counted once already (SideFight.resolve_spell)
+        if foe.fear_until > t:
+            self.player_fear_until = foe.fear_until
+        return amount
+
+    def banish(self, d, me, foe, spell):
+        """Banish on the other warlock's demon (round 2): it does nothing and takes nothing for up to 30 s (the engine's PvP cap)."""
+        import pvp_druid as PD
+        if not PD.pet_open(d, foe, ("warlock",)) or not PD.spell_lands(me, spell):
+            me.fight.note("Banish: MISS or no demon")
+            return 0.0
+        d.pet_cc(foe, "incap", T.PVP_CC_CAP, banish=True)
+        return 0.0
+
+    def fel_domination(self, d, me, foe, spell):
+        """"Your next ... Summon spell has its casting time reduced by 5.5 sec and its Mana cost reduced by 50%" (round 2)."""
+        self.fel_dom = True
+        return 0.0
+
+    def summon(self, d, me, foe, spell):
+        """My demon again (round 2: until then a dead demon stayed dead), the one this foe calls for (DEMON_FOR), full health."""
+        name = spell.name.replace("Summon ", "")
+        me.p.pet = self.make_demon(me, name)
+        self.pet_arrives = d.t + d.dist / 14.0   # it runs to the foe as at the start
+        self.fel_dom = False
+        self.resummons += 1
+        me.fight.note(f"{name} summoned again ({me.p.pet.hp_max:.0f} health)")
+        return 0.0
+
+    def summon_cost(self, me, base):
+        """Fel Domination's -50% and Master Summoner's -20% a rank of a summon's mana cost."""
+        return base * (0.5 if self.fel_dom else 1.0) * (1.0 - 0.2 * me.mod.rank("Master Summoner"))
+
+    def dead_demon(self, me):
+        pet = me.p.pet
+        return self.demon_name is not None and (pet is None or not pet.alive)
 
     # ------------------------------------------------------------------ set-up
     def prefight(self, d, me, foe):
         if me.p.pet is not None:
             me.p.pet = self.make_demon(me, DEMON_FOR.get(foe.cls, "Felhunter"))
             me.fight.note(f"{me.p.pet.name} out ({me.p.pet.hp_max:.0f} health)")
+            self.demon_name = me.p.pet.name
+            # round 2: a summon's cast with Fel Domination (-5.5 s) and Master Summoner (-2 s a rank), and its mana
+            base_ct, base_cost = me.mod.cast_time, me.mod.mana_cost
+
+            def cast_time(s, _base=base_ct, _me=me, _ai=self):
+                if s.name.startswith("Summon "):
+                    return max(0.5, 10.0 - (5.5 if _ai.fel_dom else 0.0) - 2.0 * _me.mod.rank("Master Summoner"))
+                return _base(s)
+
+            def mana_cost(s, _base=base_cost, _me=me, _ai=self):
+                c = _base(s)
+                return _ai.summon_cost(_me, c) if s.name.startswith("Summon ") else c
+            me.mod.cast_time, me.mod.mana_cost = cast_time, mana_cost
         if me.mod.rank("Master Demonologist") and me.p.pet is not None:   # the tooltip's numbers by demon: Imp, Voidwalker, Succubus, Felhunter
             if me.p.pet.name == "Succubus":
                 self.md_shadow = me.mod.tv("Master Demonologist", 2) / 100
@@ -426,6 +509,8 @@ class WarlockPvP(PvPAI):
         self.gcd_before = me.p.gcd_until
         if me.hp_frac() < STONE_AT and me.can("Create Healthstone", ignore_gcd=True):
             return "Create Healthstone"
+        if self.dead_demon(me) and not self.fel_dom and me.mod.rank("Fel Domination") and me.can("Fel Domination", ignore_gcd=True):
+            return "Fel Domination"   # round 2: the demon died; the next summon comes fast
         return None
 
     def intent(self, d, me, foe):
@@ -456,6 +541,14 @@ class WarlockPvP(PvPAI):
         dist = d.dist
         free = not foe.controlled(t) and not foe.immune(t)
         seducing = self.pet_cast is not None   # the Succubus's Seduction is on its way: no Fear on top (one category)
+        # round 2 (2026-11-17): my demon dead and Fel Domination's fast summon ready
+        if self.dead_demon(me) and self.fel_dom and me.can(f"Summon {self.demon_name}"):
+            return f"Summon {self.demon_name}"
+        # round 2: the other warlock's demon on me: Banish it
+        if foe.cls == "warlock" and "Banish" in me.mod.spells:
+            import pvp_druid as PD
+            if PD.pet_open(d, foe, ("warlock",)) and PD.can_at_pet(me, self, "Banish"):
+                return "Banish"
         # a free melee on me: Death Coil, then Fear or Howl of Terror when the cast cannot be answered
         if melee and free and dist <= PEEL:
             if me.can("Death Coil"):

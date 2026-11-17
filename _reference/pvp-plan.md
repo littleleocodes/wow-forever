@@ -291,3 +291,40 @@ necessary").
   - Battleground versions (scratch keepers2.py): the duel build with the talents duels undervalue put back one at a time, the
     high-rated first, each kept while the whole stays within a point of the duel build. Judged by duels only; step 7 measures
     battlegrounds.
+- 2026-11-17, the user's decisions on the report (asked for recommendations, then "Go with all your recommendations"):
+  1. Pages: the duel lab's results on the research pages now (`<class>/research/pvp/README.md`, a generated "Duel lab" section);
+     PvP player pages after round 2. Each player page will carry the duel build and the battleground version, the latter labelled
+     as judged by duels only. Battleground scenarios (step 7) are not a precondition.
+  2. The signature rule covers PvP in a light form: a PvP build holds its spec's signature talents and casts their spells in its
+     duels; no damage-share floor (PvP damage comes in bursts around control).
+  3. Round 2, in order:
+     - pets targetable: each class's layer answers a pet the way players do (Polymorph, Scare Beast, Hibernate, Fear or Banish on
+       a pet, killing a demon), and the warlock re-summons a dead demon (Fel Domination);
+     - the Holy paladin's gear row raced both ways in duels (no gear tied to a talent);
+     - the search gains tier-chain moves, several payments a move, more steps, and the 14 improved builds as starts;
+     - the blind-spot check again, the battleground versions, then the player pages.
+     Later: the stats model's calibration (step 5), then battleground scenarios (step 7) as their own project.
+  4. CPU order: the night's raid lane and its commit, the eat-and-drink lane (approved the same day), the PvP fixes as code meanwhile,
+     PvP round 2 the night after.
+- 2026-11-17, round 2's code (the decisions above):
+  - Research pages: `duellab/render_pvp_research.py` writes each class's `research/pvp/README.md` "## Duel lab" section (regen step).
+  - Pets (`duel.py`, `pvp_base.py`, the druid, hunter and warlock layers):
+    - a melee side whose foe stands out of reach swings at the foe's pet in its reach (`PvPAI.swing_at_pet`; not a side that shoots
+      or keeps range: a ranged hunter had meleed the Succubus while shooting the warlock);
+    - Bestial Wrath makes the pet immune to control; Banish leaves a pet untouchable;
+    - Hibernate (druid) and Scare Beast (hunter) on a hunter's pet; Banish on a warlock's demon;
+    - the warlock summons a dead demon again through Fel Domination (cast 10 - 5.5 - 2 a Master Summoner rank s; mana -50%, -20% a rank).
+    - Tried and dropped: the warlock fearing a hunter's pet cost it 6-9 points against hunters (the Fear belongs on the hunter).
+    Effect on the search winners (seed 3, 240): matchups without a pet bit-identical; the warlocks -1 to -9 points against warrior, rogue
+    and cat (they kill the demon), +6 to +12 in the mirror (Banish, the re-summon); Marksmanship against the field hunter 95% -> 100%
+    (Scare Beast); Beast Mastery unchanged at 96%: Bestial Wrath's 18 s of immunity covers its duels (14-18 s), and no layer switches
+    its abilities to the pet (white swings only).
+  - The search (`pvp_search.py`): tier-chain moves, the tree's signature talents kept (starts without them skipped), the Holy-path
+    paladin with Holy Shock raced in both gear rows, PATIENCE 6; the record carries the winner's signature casts, gear and casts.
+    `pvp_search_all.py` adds `duellab/seeds/r2/` (`round2_seeds.py`: the round-1 winner, improved build, battleground version, the
+    Holy signature put-back).
+  - The blind-spot check races two payments a candidate (the check's costs, and floored: inert points first, every other at least
+    0.002 a rank). `duellab/blind_followups.py` (improve, battleground) replaces round 1's scratch scripts; record
+    `duellab/results-<date>.json`.
+  - Runner `deep-runs/pvp_round2.sh`: waits for the eat-and-drink lane's numbers, then the matrix, the search (--round r2), the check
+    (round 1's record kept as `blind-spots-r1.json`), the follow-ups and the research pages. Then the PvP player pages.

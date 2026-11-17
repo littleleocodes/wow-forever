@@ -56,6 +56,10 @@ def starts_for(cls, trees):
         p = SD.SEEDS / f"{cls}-{SD.slug(tree)}.json"
         if p.exists():
             out[tree].append(p.relative_to(ROOT).as_posix())   # relative: the queue runs from the repository root
+        # round 2 (2026-11-17, round2_seeds.py): the round-1 winner, the blind-spot check's improved build and battleground version,
+        # and a signature put-back where the winner lacked its tree's signature talent
+        for q in sorted((SD.SEEDS / "r2").glob(f"{cls}-{SD.slug(tree)}-*.json")):
+            out[tree].append(q.relative_to(ROOT).as_posix())
     return out
 
 

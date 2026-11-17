@@ -17,7 +17,8 @@ It races the winner with each one put back on the search's final-race duels (see
 its evidence's rank (the full rank for the stats model and the tooltip), its prerequisites, and up to 5 tier points its tree lacks
 (each lower-row talent with room tried as the filler, the best kept); the points come from the winner's cheapest ranks by their
 measured removal cost (seed 1, the screening duels; the rest of a talent's ranks at the mean of its remaining cost), every state
-legal and 30+ points kept in the tree. A put-back build that beats the winner by the search's bar (0.005 J) on seed 3 is raced again
+legal and 30+ points kept in the tree; since round 2 also by the floored costs (inert points first, every other at least 0.002 a
+rank), the better of the payments kept. A put-back build that beats the winner by the search's bar (0.005 J) on seed 3 is raced again
 on seed 4 (`confirmed`). Each row carries the casts and the control the foe took, the field means and per opponent for the talent's
 own spell. Also listed: the abilities the winner holds that its duels never cast, and its points whose removal changes no duel
 (bit-identical: the lab does not model them).
@@ -253,6 +254,19 @@ def removal_costs(cls, W, pool):
     return out, inert
 
 
+FLOOR = 0.002   # a measured removal cost under this (40 duels) counts as this much: only inert points are free (round 2)
+
+
+def floored_costs(cost, inert, W):
+    """The removal costs with the noise taken out (round 2, 2026-11-17: round 1 paid the Frost winner's Ice Block with Arcane
+    Shielding, whose 40-duel cost read below zero; on 240 duels that point costs 1.2, 11 of them against the druid, while a Frostbite
+    point costs 0.6): points that changed no duel pay first, every other at least FLOOR a rank. The check races both payments."""
+    out = {}
+    for t, (c1, ca) in cost.items():
+        out[t] = [0.0, 0.0] if t in inert else [max(c1, FLOOR), max(ca, FLOOR * W.get(t, 1))]
+    return out
+
+
 def rank_cost(cost, W, t, cur):
     """The cost of taking one more rank from talent t, which holds `cur` of the winner's W[t] ranks now."""
     c1, ca = cost[t]
@@ -350,8 +364,13 @@ def run_tree(cls, tree, pool, log=print):
     log(f"  {len(cands)} candidates; costs measured; inert points: {', '.join(inert) or 'none'}")
     builds, rows, out_of_reach = [("winner", cls, W)], [], []
     protect = signature_talents(cls, tree, T)
+    floored = floored_costs(cost, inert, W)
     for n, c in sorted(cands.items()):
-        pb, why = put_back(T, W, n, c["rank"], cost, tree, protect=[p for p in protect if p != n], prefer=set(cands))
+        prot = [p for p in protect if p != n]
+        pb, why = put_back(T, W, n, c["rank"], cost, tree, protect=prot, prefer=set(cands))
+        pb2, _ = put_back(T, W, n, c["rank"], floored, tree, protect=prot, prefer=set(cands))   # a second payment (round 2)
+        seen = {tuple(sorted(al.items())) for _, al in pb}
+        pb += [(d2, al) for d2, al in pb2 if tuple(sorted(al.items())) not in seen]
         if not pb:
             out_of_reach.append({"talent": n, "rank": c["rank"], "sources": c["sources"], "why": why})
             continue

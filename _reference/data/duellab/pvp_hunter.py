@@ -119,7 +119,18 @@ class HunterPvP(PvPAI):
                    "Wing Clip": self.wing_clip, "Concussive Shot": self.concussive, "Intimidation": self.intimidation,
                    "Bestial Wrath": self.wrath, "Deterrence": self.deterrence, "Strider Kick": self.strider, "Flare": self.flare,
                    "Enchanted Flare": self.flare})
+        if me.foe.cls == "hunter":
+            fx["Scare Beast"] = self.scare_beast   # round 2: the other hunter's pet
         return fx
+
+    def scare_beast(self, d, me, foe, spell):
+        """Scare Beast on the other hunter's pet (round 2, 2026-11-17): a fear of up to 20 s (the engine's PvP cap), Beasts only."""
+        import pvp_druid as PD
+        if not PD.pet_open(d, foe) or not PD.spell_lands(me, spell):
+            me.fight.note("Scare Beast: MISS or no pet")
+            return 0.0
+        d.pet_cc(foe, "fear", T.PVP_CC_CAP)
+        return 0.0
 
     def prefight(self, d, me, foe):
         """The first Auto Shot waits for the 0.5 s stand-still from the duel's start (the engine's attack phase would fire it at 0.00,
@@ -407,6 +418,10 @@ class HunterPvP(PvPAI):
                 return "Scatter Shot"
             if me.can("Intimidation"):
                 return "Intimidation"
+        if foe.cls == "hunter" and "Scare Beast" in me.mod.spells:   # round 2: the other hunter's pet on me, Scare Beast it
+            import pvp_druid as PD
+            if PD.pet_open(d, foe) and PD.can_at_pet(me, self, "Scare Beast"):
+                return "Scare Beast"
         if self.melee_spec:
             return self.decide_melee(d, me, foe)
         if self.held_by_me(foe, t):

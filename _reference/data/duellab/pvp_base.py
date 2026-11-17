@@ -180,6 +180,19 @@ class PvPAI:
     def pet_held(self, d, me, t):
         return False
 
+    def swing_at_pet(self, d, me, foe):
+        """My white swings on the foe's pet (round 2, 2026-11-17: no side had ever hit a pet on purpose, and the Beast Mastery winner
+        won 95% with its pet untouched, 48% without it): the foe stands out of my reach, its pet stands in it (a pet stands in reach of
+        whoever it attacks) and no control of mine holds it (a swing would break a Polymorph, a Hibernate or a Fear)."""
+        pet, pb, t = foe.p.pet, foe.pet_body, d.t
+        if me.mod.ranged or self.keep_range > 0:
+            return False   # a side that shoots or keeps its range does not melee the pet (an Auto Shot and a swing are one or the other)
+        if pet is None or not pb.alive() or not pet.engaged or pet.caster or d.dist <= T.MELEE + 1e-6:
+            return False
+        if t < pb.incap_until or t < pb.fear_until or t < pb.banish_until:
+            return False
+        return pb.dist <= T.MELEE + 1e-6
+
     def foe_retaliating(self, foe, t):
         """A free warrior under Retaliation (a buff players see): every melee strike from the front is answered (pvp_warrior); a
         stunned, incapacitated or feared warrior answers nothing."""
