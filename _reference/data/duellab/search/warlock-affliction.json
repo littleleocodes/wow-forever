@@ -1,0 +1,227 @@
+{
+ "class": "warlock",
+ "tree": "Affliction",
+ "starts": [
+  "pvp-soul-link",
+  "affliction-pvp",
+  "community:tf-affliction",
+  "_reference/data/duellab/seeds/warlock-affliction.json"
+ ],
+ "history": [
+  {
+   "step": 0,
+   "from": "affliction-pvp",
+   "J": 0.5553,
+   "win": 0.5361,
+   "alloc": {
+    "Improved Life Tap": 1,
+    "Suppression": 5,
+    "Improved Corruption": 5,
+    "Improved Drains": 3,
+    "Improved Bane of Agony": 2,
+    "Fel Concentration": 3,
+    "Amplify Curse": 1,
+    "Pandemic": 3,
+    "Nightfall": 2,
+    "Curse of Exhaustion": 1,
+    "Siphon Life": 1,
+    "Soul Siphon": 3,
+    "Demonic Embrace": 5,
+    "Unholy Power": 3,
+    "Demonic Aegis": 2,
+    "Improved Voidwalker": 1,
+    "Fel Vitality": 3,
+    "Demonic Energies": 2,
+    "Demonic Sacrifice": 1,
+    "Master Summoner": 2,
+    "Fel Domination": 1,
+    "Soul Link": 1
+   }
+  },
+  {
+   "step": 1,
+   "move": "2 points Suppression -> Shadow Mastery",
+   "J": 0.5695,
+   "win": 0.5472,
+   "gain": 0.0142
+  },
+  {
+   "step": 2,
+   "move": "3 points Fel Concentration -> Shadow Mastery",
+   "J": 0.6326,
+   "win": 0.5991,
+   "gain": 0.0631
+  },
+  {
+   "step": 3,
+   "move": "1 point Improved Life Tap -> Suppression",
+   "J": 0.6517,
+   "win": 0.6139,
+   "gain": 0.0192
+  },
+  {
+   "step": 4,
+   "move": "1 point Curse of Exhaustion -> Soul Harvest",
+   "J": 0.7099,
+   "win": 0.662,
+   "gain": 0.0582
+  },
+  {
+   "step": 10,
+   "move": "1 point Soul Harvest -> Fel Concentration",
+   "J": 0.7216,
+   "win": 0.6731,
+   "gain": 0.0117
+  }
+ ],
+ "final": {
+  "Suppression": 4,
+  "Improved Corruption": 5,
+  "Improved Drains": 3,
+  "Improved Bane of Agony": 2,
+  "Amplify Curse": 1,
+  "Pandemic": 3,
+  "Nightfall": 2,
+  "Siphon Life": 1,
+  "Soul Siphon": 3,
+  "Demonic Embrace": 5,
+  "Unholy Power": 3,
+  "Demonic Aegis": 2,
+  "Improved Voidwalker": 1,
+  "Fel Vitality": 3,
+  "Demonic Energies": 2,
+  "Demonic Sacrifice": 1,
+  "Master Summoner": 2,
+  "Fel Domination": 1,
+  "Soul Link": 1,
+  "Shadow Mastery": 5,
+  "Fel Concentration": 1
+ },
+ "J": 0.7164,
+ "win": 0.6676,
+ "margin": 0.1954,
+ "by": {
+  "warrior": [
+   0.8375,
+   0.0,
+   0.2505
+  ],
+  "rogue": [
+   0.55,
+   0.0,
+   0.0665
+  ],
+  "priest": [
+   0.175,
+   0.0042,
+   -0.2546
+  ],
+  "hunter": [
+   0.8208,
+   0.0,
+   0.2062
+  ],
+  "warlock": [
+   0.6208,
+   0.0083,
+   0.0971
+  ],
+  "paladin": [
+   0.1292,
+   0.0,
+   -0.3849
+  ],
+  "shaman": [
+   0.9542,
+   0.0,
+   0.5338
+  ],
+  "druid": [
+   0.9208,
+   0.0,
+   0.6305
+  ],
+  "mage": [
+   1.0,
+   0.0,
+   0.6137
+  ]
+ },
+ "race": {
+  "final": {
+   "J": 0.7164,
+   "win": 0.6676,
+   "margin": 0.1954
+  },
+  "pvp-soul-link": {
+   "J": 0.5432,
+   "win": 0.5287,
+   "margin": 0.0579
+  },
+  "affliction-pvp": {
+   "J": 0.5745,
+   "win": 0.5528,
+   "margin": 0.0869
+  },
+  "community:tf-affliction": {
+   "J": 0.3507,
+   "win": 0.3773,
+   "margin": -0.1065
+  },
+  "_reference/data/duellab/seeds/warlock-affliction.json": {
+   "J": 0.4879,
+   "win": 0.4833,
+   "margin": 0.0184
+  }
+ },
+ "settings": {
+  "steps": 20,
+  "batch": 48,
+  "n_screen": 40,
+  "n_confirm": 120,
+  "bar": 0.005,
+  "seed": 1,
+  "margin_weight": 0.25,
+  "field": [
+   [
+    "warrior",
+    "community:tf-arms"
+   ],
+   [
+    "rogue",
+    "community:tf-hemo"
+   ],
+   [
+    "priest",
+    "community:tf-shadow"
+   ],
+   [
+    "hunter",
+    "community:tf-mm"
+   ],
+   [
+    "warlock",
+    "community:tf-soul-link"
+   ],
+   [
+    "paladin",
+    "community:tf-ret-prot"
+   ],
+   [
+    "shaman",
+    "community:tf-enhancement"
+   ],
+   [
+    "druid",
+    "community:tf-feral-resto"
+   ],
+   [
+    "mage",
+    "community:tf-frost"
+   ]
+  ]
+ },
+ "date": "2026-11-17",
+ "round": "2026-11-15",
+ "minutes": 72.0
+}

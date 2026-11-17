@@ -1,0 +1,200 @@
+{
+ "class": "warrior",
+ "tree": "Fury",
+ "starts": [
+  "fury-pvp",
+  "_reference/data/duellab/seeds/warrior-fury.json"
+ ],
+ "history": [
+  {
+   "step": 0,
+   "from": "fury-pvp",
+   "J": 0.1881,
+   "win": 0.262,
+   "alloc": {
+    "Deflection": 5,
+    "Improved Rend": 1,
+    "Improved Charge": 2,
+    "Improved Tactical Mastery": 3,
+    "Anger Management": 1,
+    "Cruelty": 5,
+    "Unbridled Wrath": 5,
+    "Blood Craze": 3,
+    "Enrage": 5,
+    "Furious Precision": 1,
+    "Piercing Howl": 1,
+    "Dual Wield Specialization": 5,
+    "Improved Execute": 2,
+    "Death Wish": 1,
+    "Gore Drinker": 2,
+    "Improved Berserker Rage": 2,
+    "Improved Intercept": 2,
+    "Flurry": 2,
+    "Improved Whirlwind": 1,
+    "Bloodthirst": 1,
+    "Iron Will": 1
+   }
+  },
+  {
+   "step": 1,
+   "move": "2 points Dual Wield Specialization -> Improved Overpower",
+   "J": 0.1944,
+   "win": 0.2676,
+   "gain": 0.0063
+  },
+  {
+   "step": 7,
+   "move": "1 point Enrage -> Flurry",
+   "J": 0.2018,
+   "win": 0.2694,
+   "gain": 0.0074
+  },
+  {
+   "step": 8,
+   "move": "1 point Iron Will -> Dual Wield Specialization",
+   "J": 0.2073,
+   "win": 0.275,
+   "gain": 0.0055
+  }
+ ],
+ "final": {
+  "Deflection": 5,
+  "Improved Rend": 1,
+  "Improved Charge": 2,
+  "Improved Tactical Mastery": 3,
+  "Anger Management": 1,
+  "Cruelty": 5,
+  "Unbridled Wrath": 5,
+  "Blood Craze": 3,
+  "Enrage": 4,
+  "Furious Precision": 1,
+  "Piercing Howl": 1,
+  "Dual Wield Specialization": 4,
+  "Improved Execute": 2,
+  "Death Wish": 1,
+  "Gore Drinker": 2,
+  "Improved Berserker Rage": 2,
+  "Improved Intercept": 2,
+  "Flurry": 3,
+  "Improved Whirlwind": 1,
+  "Bloodthirst": 1,
+  "Improved Overpower": 2
+ },
+ "J": 0.2132,
+ "win": 0.2792,
+ "margin": -0.2638,
+ "by": {
+  "warrior": [
+   0.1958,
+   0.0,
+   -0.4155
+  ],
+  "rogue": [
+   0.7542,
+   0.0,
+   0.2155
+  ],
+  "priest": [
+   0.0,
+   0.0,
+   -0.7881
+  ],
+  "hunter": [
+   0.0375,
+   0.0,
+   -0.4553
+  ],
+  "warlock": [
+   0.05,
+   0.0,
+   -0.4431
+  ],
+  "paladin": [
+   0.0292,
+   0.0,
+   -0.4513
+  ],
+  "shaman": [
+   0.5667,
+   0.0208,
+   0.013
+  ],
+  "druid": [
+   0.8542,
+   0.0,
+   0.532
+  ],
+  "mage": [
+   0.025,
+   0.0,
+   -0.5814
+  ]
+ },
+ "race": {
+  "final": {
+   "J": 0.2132,
+   "win": 0.2792,
+   "margin": -0.2638
+  },
+  "fury-pvp": {
+   "J": 0.1763,
+   "win": 0.2514,
+   "margin": -0.3003
+  },
+  "_reference/data/duellab/seeds/warrior-fury.json": {
+   "J": 0.12,
+   "win": 0.2093,
+   "margin": -0.3571
+  }
+ },
+ "settings": {
+  "steps": 20,
+  "batch": 48,
+  "n_screen": 40,
+  "n_confirm": 120,
+  "bar": 0.005,
+  "seed": 1,
+  "margin_weight": 0.25,
+  "field": [
+   [
+    "warrior",
+    "community:tf-arms"
+   ],
+   [
+    "rogue",
+    "community:tf-hemo"
+   ],
+   [
+    "priest",
+    "community:tf-shadow"
+   ],
+   [
+    "hunter",
+    "community:tf-mm"
+   ],
+   [
+    "warlock",
+    "community:tf-soul-link"
+   ],
+   [
+    "paladin",
+    "community:tf-ret-prot"
+   ],
+   [
+    "shaman",
+    "community:tf-enhancement"
+   ],
+   [
+    "druid",
+    "community:tf-feral-resto"
+   ],
+   [
+    "mage",
+    "community:tf-frost"
+   ]
+  ]
+ },
+ "date": "2026-11-17",
+ "round": "2026-11-15",
+ "minutes": 38.3
+}

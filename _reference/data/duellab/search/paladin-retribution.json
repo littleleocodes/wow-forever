@@ -1,0 +1,201 @@
+{
+ "class": "paladin",
+ "tree": "Retribution",
+ "starts": [
+  "community:tf-ret-prot"
+ ],
+ "history": [
+  {
+   "step": 0,
+   "from": "community:tf-ret-prot",
+   "J": 0.7598,
+   "win": 0.6991,
+   "alloc": {
+    "Divine Intellect": 5,
+    "Precision": 3,
+    "Guardian's Favor": 2,
+    "Sacred Duty": 2,
+    "Templar's Bulwark": 1,
+    "Improved Hammer of Justice": 3,
+    "Swift Judgement": 1,
+    "Improved Righteous Fury": 3,
+    "Benediction": 5,
+    "Improved Judgement": 2,
+    "Conviction": 3,
+    "Sanctified Judgement": 3,
+    "Unyielding Faith": 1,
+    "Seal of Command": 1,
+    "Pursuit of Justice": 2,
+    "Sacred Arbiter": 1,
+    "Two-Handed Weapon Specialization": 3,
+    "Repentance": 1,
+    "Vengeance": 3,
+    "Champion of the Light": 5,
+    "Unsealed Wrath": 1
+   }
+  },
+  {
+   "step": 1,
+   "move": "3 points Improved Righteous Fury -> Spiritual Focus",
+   "J": 0.8859,
+   "win": 0.7935,
+   "gain": 0.126
+  },
+  {
+   "step": 2,
+   "move": "5 points Benediction -> Deflection",
+   "J": 0.893,
+   "win": 0.7981,
+   "gain": 0.0071
+  },
+  {
+   "step": 3,
+   "move": "2 points Pursuit of Justice -> Vindication",
+   "J": 0.9038,
+   "win": 0.8074,
+   "gain": 0.0108
+  },
+  {
+   "step": 4,
+   "move": "1 point Unsealed Wrath -> Eye for an Eye",
+   "J": 0.915,
+   "win": 0.8167,
+   "gain": 0.0113
+  }
+ ],
+ "final": {
+  "Divine Intellect": 5,
+  "Precision": 3,
+  "Guardian's Favor": 2,
+  "Sacred Duty": 2,
+  "Templar's Bulwark": 1,
+  "Improved Hammer of Justice": 3,
+  "Swift Judgement": 1,
+  "Improved Judgement": 2,
+  "Conviction": 3,
+  "Sanctified Judgement": 3,
+  "Unyielding Faith": 1,
+  "Seal of Command": 1,
+  "Sacred Arbiter": 1,
+  "Two-Handed Weapon Specialization": 3,
+  "Repentance": 1,
+  "Vengeance": 3,
+  "Champion of the Light": 5,
+  "Spiritual Focus": 3,
+  "Deflection": 5,
+  "Vindication": 2,
+  "Eye for an Eye": 1
+ },
+ "J": 0.8992,
+ "win": 0.8046,
+ "margin": 0.3784,
+ "by": {
+  "warrior": [
+   0.9833,
+   0.0,
+   0.3458
+  ],
+  "rogue": [
+   0.9875,
+   0.0,
+   0.5632
+  ],
+  "priest": [
+   0.8667,
+   0.0,
+   0.5182
+  ],
+  "hunter": [
+   0.4417,
+   0.0,
+   0.0395
+  ],
+  "warlock": [
+   0.95,
+   0.0,
+   0.4773
+  ],
+  "paladin": [
+   0.7792,
+   0.0,
+   0.3466
+  ],
+  "shaman": [
+   0.5083,
+   0.0,
+   0.1199
+  ],
+  "druid": [
+   0.7542,
+   0.0,
+   0.3389
+  ],
+  "mage": [
+   0.9708,
+   0.0,
+   0.6567
+  ]
+ },
+ "race": {
+  "final": {
+   "J": 0.8992,
+   "win": 0.8046,
+   "margin": 0.3784
+  },
+  "community:tf-ret-prot": {
+   "J": 0.7536,
+   "win": 0.6949,
+   "margin": 0.2348
+  }
+ },
+ "settings": {
+  "steps": 20,
+  "batch": 48,
+  "n_screen": 40,
+  "n_confirm": 120,
+  "bar": 0.005,
+  "seed": 1,
+  "margin_weight": 0.25,
+  "field": [
+   [
+    "warrior",
+    "community:tf-arms"
+   ],
+   [
+    "rogue",
+    "community:tf-hemo"
+   ],
+   [
+    "priest",
+    "community:tf-shadow"
+   ],
+   [
+    "hunter",
+    "community:tf-mm"
+   ],
+   [
+    "warlock",
+    "community:tf-soul-link"
+   ],
+   [
+    "paladin",
+    "community:tf-ret-prot"
+   ],
+   [
+    "shaman",
+    "community:tf-enhancement"
+   ],
+   [
+    "druid",
+    "community:tf-feral-resto"
+   ],
+   [
+    "mage",
+    "community:tf-frost"
+   ]
+  ]
+ },
+ "date": "2026-11-16",
+ "round": "2026-11-15",
+ "minutes": 93.7
+}

@@ -1,0 +1,231 @@
+{
+ "class": "mage",
+ "tree": "Frost",
+ "starts": [
+  "pvp-frost",
+  "frost-pvp",
+  "community:tf-frost",
+  "_reference/data/duellab/seeds/mage-frost.json"
+ ],
+ "history": [
+  {
+   "step": 0,
+   "from": "frost-pvp",
+   "J": 0.3785,
+   "win": 0.4056,
+   "alloc": {
+    "Arcane Resilience": 2,
+    "Improved Channeling": 1,
+    "Wand Specialization": 2,
+    "Arcane Concentration": 3,
+    "Arcane Subtlety": 2,
+    "Magic Absorption": 2,
+    "Missile Barrage": 2,
+    "Arcane Geometry": 2,
+    "Arcane Shielding": 1,
+    "Improved Counterspell": 2,
+    "Improved Frostbolt": 5,
+    "Precision": 2,
+    "Frostbite": 3,
+    "Ice Shards": 5,
+    "Improved Frost Nova": 2,
+    "Permafrost": 3,
+    "Frost Channeling": 1,
+    "Ice Lance": 1,
+    "Arctic Reach": 2,
+    "Ice Block": 1,
+    "Shatter": 3,
+    "Cold Snap": 1,
+    "Fingers of Frost": 2,
+    "Ice Barrier": 1
+   }
+  },
+  {
+   "step": 1,
+   "move": "2 Arcane Geometry + 1 Ice Block -> 2 Arcane Concentration + 1 Arcane Meditation",
+   "J": 0.4154,
+   "win": 0.4343,
+   "gain": 0.0369
+  },
+  {
+   "step": 3,
+   "move": "1 point Permafrost -> Improved Cone of Cold",
+   "J": 0.4253,
+   "win": 0.437,
+   "gain": 0.0099
+  },
+  {
+   "step": 8,
+   "move": "1 point Magic Absorption -> Arcane Meditation",
+   "J": 0.4311,
+   "win": 0.4417,
+   "gain": 0.0058
+  },
+  {
+   "step": 11,
+   "move": "2 points Improved Frost Nova -> Improved Cone of Cold",
+   "J": 0.4498,
+   "win": 0.4556,
+   "gain": 0.0187
+  },
+  {
+   "step": 12,
+   "move": "2 points Frostbite -> Frost Channeling",
+   "J": 0.4561,
+   "win": 0.4593,
+   "gain": 0.0064
+  }
+ ],
+ "final": {
+  "Arcane Resilience": 2,
+  "Improved Channeling": 1,
+  "Wand Specialization": 2,
+  "Arcane Concentration": 5,
+  "Arcane Subtlety": 2,
+  "Magic Absorption": 1,
+  "Missile Barrage": 2,
+  "Arcane Shielding": 1,
+  "Improved Counterspell": 2,
+  "Improved Frostbolt": 5,
+  "Precision": 2,
+  "Frostbite": 1,
+  "Ice Shards": 5,
+  "Permafrost": 2,
+  "Frost Channeling": 3,
+  "Ice Lance": 1,
+  "Arctic Reach": 2,
+  "Shatter": 3,
+  "Cold Snap": 1,
+  "Fingers of Frost": 2,
+  "Ice Barrier": 1,
+  "Arcane Meditation": 2,
+  "Improved Cone of Cold": 3
+ },
+ "J": 0.4472,
+ "win": 0.4519,
+ "margin": -0.0186,
+ "by": {
+  "warrior": [
+   1.0,
+   0.0,
+   0.8489
+  ],
+  "rogue": [
+   0.5708,
+   0.0,
+   0.2101
+  ],
+  "priest": [
+   0.0,
+   0.0,
+   -0.8562
+  ],
+  "hunter": [
+   0.1042,
+   0.0042,
+   -0.3486
+  ],
+  "warlock": [
+   0.0,
+   0.0,
+   -0.6307
+  ],
+  "paladin": [
+   0.0333,
+   0.0,
+   -0.5819
+  ],
+  "shaman": [
+   0.9792,
+   0.0,
+   0.6281
+  ],
+  "druid": [
+   0.8292,
+   0.0,
+   0.5359
+  ],
+  "mage": [
+   0.55,
+   0.0,
+   0.0275
+  ]
+ },
+ "race": {
+  "final": {
+   "J": 0.4472,
+   "win": 0.4519,
+   "margin": -0.0186
+  },
+  "pvp-frost": {
+   "J": 0.3406,
+   "win": 0.3773,
+   "margin": -0.1467
+  },
+  "frost-pvp": {
+   "J": 0.3824,
+   "win": 0.4106,
+   "margin": -0.1129
+  },
+  "community:tf-frost": {
+   "J": 0.3947,
+   "win": 0.4176,
+   "margin": -0.0915
+  },
+  "_reference/data/duellab/seeds/mage-frost.json": {
+   "J": 0.364,
+   "win": 0.3972,
+   "margin": -0.1328
+  }
+ },
+ "settings": {
+  "steps": 20,
+  "batch": 48,
+  "n_screen": 40,
+  "n_confirm": 120,
+  "bar": 0.005,
+  "seed": 1,
+  "margin_weight": 0.25,
+  "field": [
+   [
+    "warrior",
+    "community:tf-arms"
+   ],
+   [
+    "rogue",
+    "community:tf-hemo"
+   ],
+   [
+    "priest",
+    "community:tf-shadow"
+   ],
+   [
+    "hunter",
+    "community:tf-mm"
+   ],
+   [
+    "warlock",
+    "community:tf-soul-link"
+   ],
+   [
+    "paladin",
+    "community:tf-ret-prot"
+   ],
+   [
+    "shaman",
+    "community:tf-enhancement"
+   ],
+   [
+    "druid",
+    "community:tf-feral-resto"
+   ],
+   [
+    "mage",
+    "community:tf-frost"
+   ]
+  ]
+ },
+ "date": "2026-11-16",
+ "round": "2026-11-15",
+ "minutes": 36.6
+}

@@ -1,0 +1,235 @@
+{
+ "class": "druid",
+ "tree": "Feral Combat",
+ "starts": [
+  "feral-combat-pvp",
+  "_reference/data/duellab/seeds/druid-feral-combat.json"
+ ],
+ "history": [
+  {
+   "step": 0,
+   "from": "feral-combat-pvp",
+   "J": 0.0588,
+   "win": 0.1769,
+   "alloc": {
+    "Ferocity": 2,
+    "Furor": 5,
+    "Brutal Impact": 2,
+    "Feral Instinct": 3,
+    "Feral Swiftness": 2,
+    "Thick Hide": 3,
+    "Feral Charge": 1,
+    "Savage Fury": 2,
+    "Sharpened Claws": 2,
+    "Blood Frenzy": 2,
+    "Predatory Strikes": 3,
+    "Leader of the Pack": 1,
+    "Natural Instinct": 2,
+    "Rend and Tear": 1,
+    "Primal Bite": 1,
+    "Heart of the Wild": 5,
+    "Nature's Focus": 5,
+    "Natural Shapeshifter": 3,
+    "Naturalist": 5,
+    "Swiftmend": 1
+   }
+  },
+  {
+   "step": 1,
+   "move": "5 points Heart of the Wild -> Gift of Nature",
+   "J": 0.0979,
+   "win": 0.2065,
+   "gain": 0.0391
+  },
+  {
+   "step": 2,
+   "move": "1 point Feral Charge -> Predatory Discipline",
+   "J": 0.114,
+   "win": 0.2231,
+   "gain": 0.0161
+  },
+  {
+   "step": 3,
+   "move": "2 points Gift of Nature -> Improved Rejuvenation",
+   "J": 0.1407,
+   "win": 0.2426,
+   "gain": 0.0266
+  },
+  {
+   "step": 4,
+   "move": "1 point Savage Fury -> Improved Rejuvenation",
+   "J": 0.1464,
+   "win": 0.2472,
+   "gain": 0.0057
+  },
+  {
+   "step": 5,
+   "move": "2 points Feral Instinct -> Natural Reaction",
+   "J": 0.1568,
+   "win": 0.2546,
+   "gain": 0.0105
+  },
+  {
+   "step": 10,
+   "move": "1 point Primal Bite -> Nature's Swiftness",
+   "J": 0.2616,
+   "win": 0.3278,
+   "gain": 0.1048
+  },
+  {
+   "step": 11,
+   "move": "1 Ferocity + 1 Blood Frenzy -> 1 Savage Fury + 1 Lacerate",
+   "J": 0.2708,
+   "win": 0.3361,
+   "gain": 0.0092
+  },
+  {
+   "step": 12,
+   "move": "1 point Feral Instinct -> Blood Frenzy",
+   "J": 0.3055,
+   "win": 0.362,
+   "gain": 0.0347
+  }
+ ],
+ "final": {
+  "Ferocity": 1,
+  "Furor": 5,
+  "Brutal Impact": 2,
+  "Feral Swiftness": 2,
+  "Thick Hide": 3,
+  "Savage Fury": 2,
+  "Sharpened Claws": 2,
+  "Blood Frenzy": 2,
+  "Predatory Strikes": 3,
+  "Leader of the Pack": 1,
+  "Natural Instinct": 2,
+  "Rend and Tear": 1,
+  "Nature's Focus": 5,
+  "Natural Shapeshifter": 3,
+  "Naturalist": 5,
+  "Swiftmend": 1,
+  "Gift of Nature": 3,
+  "Predatory Discipline": 1,
+  "Improved Rejuvenation": 3,
+  "Natural Reaction": 2,
+  "Nature's Swiftness": 1,
+  "Lacerate": 1
+ },
+ "J": 0.2857,
+ "win": 0.3454,
+ "margin": -0.2388,
+ "by": {
+  "warrior": [
+   0.275,
+   0.0,
+   -0.1971
+  ],
+  "rogue": [
+   0.3708,
+   0.0042,
+   -0.1709
+  ],
+  "priest": [
+   0.0,
+   0.0,
+   -0.8815
+  ],
+  "hunter": [
+   0.0042,
+   0.0,
+   -0.9159
+  ],
+  "warlock": [
+   0.9208,
+   0.0,
+   0.3855
+  ],
+  "paladin": [
+   0.3708,
+   0.0,
+   -0.1127
+  ],
+  "shaman": [
+   0.1083,
+   0.0,
+   -0.3845
+  ],
+  "druid": [
+   0.4083,
+   0.0083,
+   -0.1184
+  ],
+  "mage": [
+   0.65,
+   0.0,
+   0.2461
+  ]
+ },
+ "race": {
+  "final": {
+   "J": 0.2857,
+   "win": 0.3454,
+   "margin": -0.2388
+  },
+  "feral-combat-pvp": {
+   "J": 0.084,
+   "win": 0.1958,
+   "margin": -0.4475
+  },
+  "_reference/data/duellab/seeds/druid-feral-combat.json": {
+   "J": 0.0606,
+   "win": 0.1731,
+   "margin": -0.4502
+  }
+ },
+ "settings": {
+  "steps": 20,
+  "batch": 48,
+  "n_screen": 40,
+  "n_confirm": 120,
+  "bar": 0.005,
+  "seed": 1,
+  "margin_weight": 0.25,
+  "field": [
+   [
+    "warrior",
+    "community:tf-arms"
+   ],
+   [
+    "rogue",
+    "community:tf-hemo"
+   ],
+   [
+    "priest",
+    "community:tf-shadow"
+   ],
+   [
+    "hunter",
+    "community:tf-mm"
+   ],
+   [
+    "warlock",
+    "community:tf-soul-link"
+   ],
+   [
+    "paladin",
+    "community:tf-ret-prot"
+   ],
+   [
+    "shaman",
+    "community:tf-enhancement"
+   ],
+   [
+    "druid",
+    "community:tf-feral-resto"
+   ],
+   [
+    "mage",
+    "community:tf-frost"
+   ]
+  ]
+ },
+ "date": "2026-11-16",
+ "round": "2026-11-15",
+ "minutes": 134.3
+}

@@ -1,0 +1,217 @@
+{
+ "class": "paladin",
+ "tree": "Protection",
+ "starts": [
+  "_reference/data/duellab/seeds/paladin-protection.json"
+ ],
+ "history": [
+  {
+   "step": 0,
+   "from": "_reference/data/duellab/seeds/paladin-protection.json",
+   "J": 0.5488,
+   "win": 0.5407,
+   "alloc": {
+    "Spiritual Focus": 5,
+    "Divine Intellect": 5,
+    "Redoubt": 5,
+    "Guardian's Favor": 2,
+    "Sacred Duty": 2,
+    "Improved Hammer of Justice": 3,
+    "Toughness": 5,
+    "Improved Righteous Fury": 3,
+    "Stoicism": 2,
+    "Holy Shield": 1,
+    "Reckoning": 3,
+    "Benediction": 5,
+    "Improved Judgement": 2,
+    "Conviction": 3,
+    "Unyielding Faith": 2,
+    "Seal of Command": 1,
+    "Pursuit of Justice": 2
+   }
+  },
+  {
+   "step": 1,
+   "move": "1 Redoubt + 1 Unyielding Faith -> 1 Templar's Bulwark + 1 Swift Judgement",
+   "J": 0.6291,
+   "win": 0.6037,
+   "gain": 0.0803
+  },
+  {
+   "step": 2,
+   "move": "2 Sacred Duty + 1 Holy Shield -> 1 Redoubt + 2 Shield Specialization",
+   "J": 0.7306,
+   "win": 0.687,
+   "gain": 0.1016
+  },
+  {
+   "step": 3,
+   "move": "1 Improved Hammer of Justice + 1 Toughness -> 1 Holy Shield + 1 Shieldsworn",
+   "J": 0.7389,
+   "win": 0.688,
+   "gain": 0.0083
+  },
+  {
+   "step": 4,
+   "move": "2 points Pursuit of Justice -> Reverence",
+   "J": 0.8065,
+   "win": 0.7407,
+   "gain": 0.0676
+  },
+  {
+   "step": 5,
+   "move": "2 points Toughness -> Reckoning",
+   "J": 0.8144,
+   "win": 0.7472,
+   "gain": 0.0079
+  },
+  {
+   "step": 6,
+   "move": "1 point Stoicism -> Sacred Duty",
+   "J": 0.8198,
+   "win": 0.7519,
+   "gain": 0.0054
+  },
+  {
+   "step": 14,
+   "move": "1 point Stoicism -> Improved Hammer of Justice",
+   "J": 0.8316,
+   "win": 0.762,
+   "gain": 0.0118
+  }
+ ],
+ "final": {
+  "Spiritual Focus": 5,
+  "Divine Intellect": 5,
+  "Redoubt": 5,
+  "Guardian's Favor": 2,
+  "Improved Hammer of Justice": 3,
+  "Toughness": 2,
+  "Improved Righteous Fury": 3,
+  "Reckoning": 5,
+  "Benediction": 5,
+  "Improved Judgement": 2,
+  "Conviction": 3,
+  "Unyielding Faith": 1,
+  "Seal of Command": 1,
+  "Templar's Bulwark": 1,
+  "Swift Judgement": 1,
+  "Shield Specialization": 2,
+  "Holy Shield": 1,
+  "Shieldsworn": 1,
+  "Reverence": 2,
+  "Sacred Duty": 1
+ },
+ "J": 0.8345,
+ "win": 0.763,
+ "margin": 0.2863,
+ "by": {
+  "warrior": [
+   0.9958,
+   0.0,
+   0.3776
+  ],
+  "rogue": [
+   1.0,
+   0.0,
+   0.6483
+  ],
+  "priest": [
+   0.0,
+   0.0,
+   -0.6552
+  ],
+  "hunter": [
+   0.7208,
+   0.0042,
+   0.2107
+  ],
+  "warlock": [
+   0.7833,
+   0.0,
+   0.2178
+  ],
+  "paladin": [
+   0.8292,
+   0.0,
+   0.3674
+  ],
+  "shaman": [
+   0.6625,
+   0.0042,
+   0.2288
+  ],
+  "druid": [
+   0.975,
+   0.0,
+   0.5726
+  ],
+  "mage": [
+   0.9,
+   0.0,
+   0.6086
+  ]
+ },
+ "race": {
+  "final": {
+   "J": 0.8345,
+   "win": 0.763,
+   "margin": 0.2863
+  },
+  "_reference/data/duellab/seeds/paladin-protection.json": {
+   "J": 0.5454,
+   "win": 0.5375,
+   "margin": 0.0316
+  }
+ },
+ "settings": {
+  "steps": 20,
+  "batch": 48,
+  "n_screen": 40,
+  "n_confirm": 120,
+  "bar": 0.005,
+  "seed": 1,
+  "margin_weight": 0.25,
+  "field": [
+   [
+    "warrior",
+    "community:tf-arms"
+   ],
+   [
+    "rogue",
+    "community:tf-hemo"
+   ],
+   [
+    "priest",
+    "community:tf-shadow"
+   ],
+   [
+    "hunter",
+    "community:tf-mm"
+   ],
+   [
+    "warlock",
+    "community:tf-soul-link"
+   ],
+   [
+    "paladin",
+    "community:tf-ret-prot"
+   ],
+   [
+    "shaman",
+    "community:tf-enhancement"
+   ],
+   [
+    "druid",
+    "community:tf-feral-resto"
+   ],
+   [
+    "mage",
+    "community:tf-frost"
+   ]
+  ]
+ },
+ "date": "2026-11-16",
+ "round": "2026-11-15",
+ "minutes": 183.3
+}

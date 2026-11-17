@@ -1,0 +1,204 @@
+{
+ "class": "shaman",
+ "tree": "Enhancement",
+ "starts": [
+  "enhancement-pvp",
+  "community:tf-enhancement",
+  "_reference/data/duellab/seeds/shaman-enhancement.json"
+ ],
+ "history": [
+  {
+   "step": 0,
+   "from": "enhancement-pvp",
+   "J": 0.5766,
+   "win": 0.5611,
+   "alloc": {
+    "Concussion": 5,
+    "Call of Flame": 2,
+    "Reverberation": 5,
+    "Elemental Warding": 3,
+    "Eye of the Storm": 3,
+    "Thundering Strikes": 5,
+    "Guardian Totems": 2,
+    "Mental Dexterity": 3,
+    "Anticipation": 3,
+    "Elemental Weapons": 1,
+    "Shamanistic Focus": 1,
+    "Flurry": 4,
+    "Improved Ghost Wolf": 2,
+    "Stormstrike": 1,
+    "Toughness": 4,
+    "Improved Stormstrike": 2,
+    "Mental Quickness": 2,
+    "Maelstrom Weapon": 2,
+    "Rage of the Farseer": 1
+   }
+  },
+  {
+   "step": 1,
+   "move": "1 point Improved Stormstrike -> Spirit Weapons",
+   "J": 0.6092,
+   "win": 0.587,
+   "gain": 0.0326
+  },
+  {
+   "step": 4,
+   "move": "2 points Maelstrom Weapon -> Improved Lightning Shield",
+   "J": 0.6161,
+   "win": 0.5944,
+   "gain": 0.0069
+  },
+  {
+   "step": 5,
+   "move": "1 point Eye of the Storm -> Ancestral Knowledge",
+   "J": 0.6237,
+   "win": 0.6019,
+   "gain": 0.0075
+  }
+ ],
+ "final": {
+  "Concussion": 5,
+  "Call of Flame": 2,
+  "Reverberation": 5,
+  "Elemental Warding": 3,
+  "Eye of the Storm": 2,
+  "Thundering Strikes": 5,
+  "Guardian Totems": 2,
+  "Mental Dexterity": 3,
+  "Anticipation": 3,
+  "Elemental Weapons": 1,
+  "Shamanistic Focus": 1,
+  "Flurry": 4,
+  "Improved Ghost Wolf": 2,
+  "Stormstrike": 1,
+  "Toughness": 4,
+  "Improved Stormstrike": 1,
+  "Mental Quickness": 2,
+  "Rage of the Farseer": 1,
+  "Spirit Weapons": 1,
+  "Improved Lightning Shield": 2,
+  "Ancestral Knowledge": 1
+ },
+ "J": 0.6018,
+ "win": 0.5833,
+ "margin": 0.0738,
+ "by": {
+  "warrior": [
+   0.575,
+   0.025,
+   0.068
+  ],
+  "rogue": [
+   0.8083,
+   0.0042,
+   0.2677
+  ],
+  "priest": [
+   0.4542,
+   0.0,
+   -0.0654
+  ],
+  "hunter": [
+   0.0167,
+   0.0042,
+   -0.5124
+  ],
+  "warlock": [
+   0.9667,
+   0.0,
+   0.4539
+  ],
+  "paladin": [
+   0.725,
+   0.0042,
+   0.1498
+  ],
+  "shaman": [
+   0.4875,
+   0.0125,
+   -0.0013
+  ],
+  "druid": [
+   0.9083,
+   0.0,
+   0.5479
+  ],
+  "mage": [
+   0.3083,
+   0.0,
+   -0.2444
+  ]
+ },
+ "race": {
+  "final": {
+   "J": 0.6018,
+   "win": 0.5833,
+   "margin": 0.0738
+  },
+  "enhancement-pvp": {
+   "J": 0.543,
+   "win": 0.5324,
+   "margin": 0.0423
+  },
+  "community:tf-enhancement": {
+   "J": 0.5576,
+   "win": 0.5468,
+   "margin": 0.0433
+  },
+  "_reference/data/duellab/seeds/shaman-enhancement.json": {
+   "J": 0.4999,
+   "win": 0.5005,
+   "margin": -0.0022
+  }
+ },
+ "settings": {
+  "steps": 20,
+  "batch": 48,
+  "n_screen": 40,
+  "n_confirm": 120,
+  "bar": 0.005,
+  "seed": 1,
+  "margin_weight": 0.25,
+  "field": [
+   [
+    "warrior",
+    "community:tf-arms"
+   ],
+   [
+    "rogue",
+    "community:tf-hemo"
+   ],
+   [
+    "priest",
+    "community:tf-shadow"
+   ],
+   [
+    "hunter",
+    "community:tf-mm"
+   ],
+   [
+    "warlock",
+    "community:tf-soul-link"
+   ],
+   [
+    "paladin",
+    "community:tf-ret-prot"
+   ],
+   [
+    "shaman",
+    "community:tf-enhancement"
+   ],
+   [
+    "druid",
+    "community:tf-feral-resto"
+   ],
+   [
+    "mage",
+    "community:tf-frost"
+   ]
+  ]
+ },
+ "date": "2026-11-16",
+ "round": "2026-11-15",
+ "minutes": 54.4
+}

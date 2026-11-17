@@ -1,0 +1,210 @@
+{
+ "class": "rogue",
+ "tree": "Assassination",
+ "starts": [
+  "pvp-seal-fate-daggers",
+  "assassination-pvp",
+  "_reference/data/duellab/seeds/rogue-assassination.json"
+ ],
+ "history": [
+  {
+   "step": 0,
+   "from": "pvp-seal-fate-daggers",
+   "J": 0.4182,
+   "win": 0.4454,
+   "alloc": {
+    "Improved Gouge": 3,
+    "Malice": 5,
+    "Remorseless Attacks": 2,
+    "Ruthlessness": 3,
+    "Lethality": 2,
+    "Vigor": 2,
+    "Cold Blood": 1,
+    "Improved Poisons": 1,
+    "Vile Poisons": 1,
+    "Improved Kidney Shot": 2,
+    "Relentless Strikes": 4,
+    "Venom": 1,
+    "Seal Fate": 3,
+    "Mutilate": 1,
+    "Coup de Grace": 3,
+    "Lightning Reflexes": 2,
+    "Puncturing Wounds": 3,
+    "Master of Deception": 3,
+    "Opportunity": 2,
+    "Dirty Deeds": 1,
+    "Dirty Tricks": 1,
+    "Improved Ambush": 3,
+    "Initiative": 1,
+    "Premeditation": 1
+   }
+  },
+  {
+   "step": 1,
+   "move": "1 point Dirty Tricks -> Dirty Deeds",
+   "J": 0.4615,
+   "win": 0.4759,
+   "gain": 0.0433
+  },
+  {
+   "step": 2,
+   "move": "1 point Improved Kidney Shot -> Relentless Strikes",
+   "J": 0.4744,
+   "win": 0.4861,
+   "gain": 0.0129
+  },
+  {
+   "step": 4,
+   "move": "2 points Remorseless Attacks -> Vile Poisons",
+   "J": 0.487,
+   "win": 0.4963,
+   "gain": 0.0126
+  }
+ ],
+ "final": {
+  "Improved Gouge": 3,
+  "Malice": 5,
+  "Ruthlessness": 3,
+  "Lethality": 2,
+  "Vigor": 2,
+  "Cold Blood": 1,
+  "Improved Poisons": 1,
+  "Vile Poisons": 3,
+  "Improved Kidney Shot": 1,
+  "Relentless Strikes": 5,
+  "Venom": 1,
+  "Seal Fate": 3,
+  "Mutilate": 1,
+  "Coup de Grace": 3,
+  "Lightning Reflexes": 2,
+  "Puncturing Wounds": 3,
+  "Master of Deception": 3,
+  "Opportunity": 2,
+  "Dirty Deeds": 2,
+  "Improved Ambush": 3,
+  "Initiative": 1,
+  "Premeditation": 1
+ },
+ "J": 0.4763,
+ "win": 0.4884,
+ "margin": -0.0487,
+ "by": {
+  "warrior": [
+   0.3708,
+   0.0,
+   -0.0843
+  ],
+  "rogue": [
+   0.5,
+   0.0,
+   0.0455
+  ],
+  "priest": [
+   0.6667,
+   0.0,
+   0.2644
+  ],
+  "hunter": [
+   0.0333,
+   0.0,
+   -0.8836
+  ],
+  "warlock": [
+   0.7,
+   0.0,
+   0.1569
+  ],
+  "paladin": [
+   0.2,
+   0.0,
+   -0.3471
+  ],
+  "shaman": [
+   0.4708,
+   0.0042,
+   -0.0824
+  ],
+  "druid": [
+   0.9083,
+   0.0,
+   0.4795
+  ],
+  "mage": [
+   0.5458,
+   0.0,
+   0.0131
+  ]
+ },
+ "race": {
+  "final": {
+   "J": 0.4763,
+   "win": 0.4884,
+   "margin": -0.0487
+  },
+  "pvp-seal-fate-daggers": {
+   "J": 0.4373,
+   "win": 0.4611,
+   "margin": -0.0951
+  },
+  "assassination-pvp": {
+   "J": 0.3401,
+   "win": 0.3787,
+   "margin": -0.1545
+  },
+  "_reference/data/duellab/seeds/rogue-assassination.json": {
+   "J": 0.3354,
+   "win": 0.3782,
+   "margin": -0.1714
+  }
+ },
+ "settings": {
+  "steps": 20,
+  "batch": 48,
+  "n_screen": 40,
+  "n_confirm": 120,
+  "bar": 0.005,
+  "seed": 1,
+  "margin_weight": 0.25,
+  "field": [
+   [
+    "warrior",
+    "community:tf-arms"
+   ],
+   [
+    "rogue",
+    "community:tf-hemo"
+   ],
+   [
+    "priest",
+    "community:tf-shadow"
+   ],
+   [
+    "hunter",
+    "community:tf-mm"
+   ],
+   [
+    "warlock",
+    "community:tf-soul-link"
+   ],
+   [
+    "paladin",
+    "community:tf-ret-prot"
+   ],
+   [
+    "shaman",
+    "community:tf-enhancement"
+   ],
+   [
+    "druid",
+    "community:tf-feral-resto"
+   ],
+   [
+    "mage",
+    "community:tf-frost"
+   ]
+  ]
+ },
+ "date": "2026-11-16",
+ "round": "2026-11-15",
+ "minutes": 40.1
+}

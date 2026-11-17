@@ -1,0 +1,243 @@
+{
+ "class": "rogue",
+ "tree": "Combat",
+ "starts": [
+  "combat-pvp",
+  "_reference/data/duellab/seeds/rogue-combat.json"
+ ],
+ "history": [
+  {
+   "step": 0,
+   "from": "combat-pvp",
+   "J": 0.3156,
+   "win": 0.3657,
+   "alloc": {
+    "Improved Gouge": 2,
+    "Coup de Grace": 3,
+    "Efficient Strikes": 2,
+    "Lightning Reflexes": 5,
+    "Deflection": 3,
+    "Improved Sprint": 2,
+    "Precision": 3,
+    "Endurance": 2,
+    "Riposte": 1,
+    "Aggression": 3,
+    "Flawless Execution": 1,
+    "Improved Kick": 2,
+    "Weapon Expertise": 2,
+    "Blade Flurry": 1,
+    "Adrenaline Rush": 1,
+    "Master of Deception": 3,
+    "Setup": 3,
+    "Dirty Deeds": 2,
+    "Dirty Tricks": 2,
+    "Improved Ambush": 1,
+    "Initiative": 3,
+    "Premeditation": 1,
+    "Elusiveness": 2,
+    "Ghostly Strike": 1
+   }
+  },
+  {
+   "step": 1,
+   "move": "2 points Improved Sprint -> Dual Wield Specialization",
+   "J": 0.3576,
+   "win": 0.3981,
+   "gain": 0.042
+  },
+  {
+   "step": 2,
+   "move": "2 points Elusiveness -> Flash of Steel",
+   "J": 0.4061,
+   "win": 0.4398,
+   "gain": 0.0485
+  },
+  {
+   "step": 4,
+   "move": "2 points Endurance -> Serrated Blades",
+   "J": 0.4196,
+   "win": 0.4509,
+   "gain": 0.0135
+  },
+  {
+   "step": 6,
+   "move": "1 point Dirty Tricks -> Elusiveness",
+   "J": 0.433,
+   "win": 0.4593,
+   "gain": 0.0134
+  },
+  {
+   "step": 12,
+   "move": "1 point Initiative -> Camouflage",
+   "J": 0.4413,
+   "win": 0.4657,
+   "gain": 0.0083
+  },
+  {
+   "step": 13,
+   "move": "2 points Improved Gouge -> Flash of Steel",
+   "J": 0.45,
+   "win": 0.4713,
+   "gain": 0.0087
+  },
+  {
+   "step": 17,
+   "move": "1 point Dirty Deeds -> Serrated Blades",
+   "J": 0.4599,
+   "win": 0.4787,
+   "gain": 0.0099
+  },
+  {
+   "step": 20,
+   "move": "1 point Improved Kick -> Malice",
+   "J": 0.4763,
+   "win": 0.4935,
+   "gain": 0.0164
+  }
+ ],
+ "final": {
+  "Coup de Grace": 3,
+  "Efficient Strikes": 2,
+  "Lightning Reflexes": 5,
+  "Deflection": 3,
+  "Precision": 3,
+  "Riposte": 1,
+  "Aggression": 3,
+  "Flawless Execution": 1,
+  "Improved Kick": 1,
+  "Weapon Expertise": 2,
+  "Blade Flurry": 1,
+  "Adrenaline Rush": 1,
+  "Master of Deception": 3,
+  "Setup": 3,
+  "Dirty Deeds": 1,
+  "Dirty Tricks": 1,
+  "Improved Ambush": 1,
+  "Initiative": 2,
+  "Premeditation": 1,
+  "Ghostly Strike": 1,
+  "Dual Wield Specialization": 2,
+  "Flash of Steel": 4,
+  "Serrated Blades": 3,
+  "Elusiveness": 1,
+  "Camouflage": 1,
+  "Malice": 1
+ },
+ "J": 0.4521,
+ "win": 0.4722,
+ "margin": -0.0807,
+ "by": {
+  "warrior": [
+   0.5,
+   0.0,
+   -0.0017
+  ],
+  "rogue": [
+   0.775,
+   0.0,
+   0.3035
+  ],
+  "priest": [
+   0.8208,
+   0.0,
+   0.4197
+  ],
+  "hunter": [
+   0.0042,
+   0.0,
+   -0.9211
+  ],
+  "warlock": [
+   0.2625,
+   0.0,
+   -0.2629
+  ],
+  "paladin": [
+   0.0458,
+   0.0,
+   -0.5374
+  ],
+  "shaman": [
+   0.7042,
+   0.025,
+   0.0843
+  ],
+  "druid": [
+   0.9417,
+   0.0,
+   0.5659
+  ],
+  "mage": [
+   0.1958,
+   0.0,
+   -0.3761
+  ]
+ },
+ "race": {
+  "final": {
+   "J": 0.4521,
+   "win": 0.4722,
+   "margin": -0.0807
+  },
+  "combat-pvp": {
+   "J": 0.318,
+   "win": 0.3662,
+   "margin": -0.1928
+  },
+  "_reference/data/duellab/seeds/rogue-combat.json": {
+   "J": 0.2855,
+   "win": 0.3352,
+   "margin": -0.1986
+  }
+ },
+ "settings": {
+  "steps": 20,
+  "batch": 48,
+  "n_screen": 40,
+  "n_confirm": 120,
+  "bar": 0.005,
+  "seed": 1,
+  "margin_weight": 0.25,
+  "field": [
+   [
+    "warrior",
+    "community:tf-arms"
+   ],
+   [
+    "rogue",
+    "community:tf-hemo"
+   ],
+   [
+    "priest",
+    "community:tf-shadow"
+   ],
+   [
+    "hunter",
+    "community:tf-mm"
+   ],
+   [
+    "warlock",
+    "community:tf-soul-link"
+   ],
+   [
+    "paladin",
+    "community:tf-ret-prot"
+   ],
+   [
+    "shaman",
+    "community:tf-enhancement"
+   ],
+   [
+    "druid",
+    "community:tf-feral-resto"
+   ],
+   [
+    "mage",
+    "community:tf-frost"
+   ]
+  ]
+ },
+ "date": "2026-11-16",
+ "round": "2026-11-15",
+ "minutes": 37.9
+}

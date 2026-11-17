@@ -1,0 +1,190 @@
+{
+ "class": "priest",
+ "tree": "Holy",
+ "starts": [
+  "holy-pvp",
+  "_reference/data/duellab/seeds/priest-holy.json"
+ ],
+ "history": [
+  {
+   "step": 0,
+   "from": "_reference/data/duellab/seeds/priest-holy.json",
+   "J": 0.0879,
+   "win": 0.1815,
+   "alloc": {
+    "Twilight Focus": 3,
+    "Improved Renew": 3,
+    "Holy Specialization": 5,
+    "Spell Warding": 5,
+    "Divine Fury": 5,
+    "Inspiration": 3,
+    "Holy Reach": 1,
+    "Spirit of Redemption": 1,
+    "Spiritual Guidance": 5,
+    "Spiritual Healing": 3,
+    "Prayer of Mending": 1,
+    "Blackout": 5,
+    "Spirit Tap": 1,
+    "Improved Shadow Word: Pain": 2,
+    "Shadow Reach": 2,
+    "Improved Psychic Scream": 2,
+    "Mind Flay": 1,
+    "Improved Mind Flay": 2,
+    "Vampiric Embrace": 1
+   }
+  },
+  {
+   "step": 1,
+   "move": "1 point Prayer of Mending -> Blessed Recovery",
+   "J": 0.1216,
+   "win": 0.2083,
+   "gain": 0.0336
+  },
+  {
+   "step": 6,
+   "move": "2 points Inspiration -> Wand Specialization",
+   "J": 0.1763,
+   "win": 0.2509,
+   "gain": 0.0548
+  }
+ ],
+ "final": {
+  "Twilight Focus": 3,
+  "Improved Renew": 3,
+  "Holy Specialization": 5,
+  "Spell Warding": 5,
+  "Divine Fury": 5,
+  "Inspiration": 1,
+  "Holy Reach": 1,
+  "Spirit of Redemption": 1,
+  "Spiritual Guidance": 5,
+  "Spiritual Healing": 3,
+  "Blackout": 5,
+  "Spirit Tap": 1,
+  "Improved Shadow Word: Pain": 2,
+  "Shadow Reach": 2,
+  "Improved Psychic Scream": 2,
+  "Mind Flay": 1,
+  "Improved Mind Flay": 2,
+  "Vampiric Embrace": 1,
+  "Blessed Recovery": 1,
+  "Wand Specialization": 2
+ },
+ "J": 0.1614,
+ "win": 0.2384,
+ "margin": -0.308,
+ "by": {
+  "warrior": [
+   0.4542,
+   0.0,
+   -0.011
+  ],
+  "rogue": [
+   0.2417,
+   0.0,
+   -0.328
+  ],
+  "priest": [
+   0.0,
+   0.0,
+   -0.5615
+  ],
+  "hunter": [
+   0.5333,
+   0.0,
+   -0.0327
+  ],
+  "warlock": [
+   0.0208,
+   0.0,
+   -0.5438
+  ],
+  "paladin": [
+   0.0,
+   0.0,
+   -0.6638
+  ],
+  "shaman": [
+   0.0083,
+   0.0,
+   -0.4889
+  ],
+  "druid": [
+   0.0042,
+   0.0,
+   -0.8265
+  ],
+  "mage": [
+   0.8833,
+   0.0,
+   0.6839
+  ]
+ },
+ "race": {
+  "final": {
+   "J": 0.1614,
+   "win": 0.2384,
+   "margin": -0.308
+  },
+  "holy-pvp": {
+   "J": 0.1031,
+   "win": 0.1981,
+   "margin": -0.3803
+  },
+  "_reference/data/duellab/seeds/priest-holy.json": {
+   "J": 0.1059,
+   "win": 0.1972,
+   "margin": -0.3653
+  }
+ },
+ "settings": {
+  "steps": 20,
+  "batch": 48,
+  "n_screen": 40,
+  "n_confirm": 120,
+  "bar": 0.005,
+  "seed": 1,
+  "margin_weight": 0.25,
+  "field": [
+   [
+    "warrior",
+    "community:tf-arms"
+   ],
+   [
+    "rogue",
+    "community:tf-hemo"
+   ],
+   [
+    "priest",
+    "community:tf-shadow"
+   ],
+   [
+    "hunter",
+    "community:tf-mm"
+   ],
+   [
+    "warlock",
+    "community:tf-soul-link"
+   ],
+   [
+    "paladin",
+    "community:tf-ret-prot"
+   ],
+   [
+    "shaman",
+    "community:tf-enhancement"
+   ],
+   [
+    "druid",
+    "community:tf-feral-resto"
+   ],
+   [
+    "mage",
+    "community:tf-frost"
+   ]
+  ]
+ },
+ "date": "2026-11-16",
+ "round": "2026-11-15",
+ "minutes": 118.1
+}

@@ -1,0 +1,214 @@
+{
+ "class": "warlock",
+ "tree": "Demonology",
+ "starts": [
+  "demonology-pvp",
+  "community:tf-soul-link"
+ ],
+ "history": [
+  {
+   "step": 0,
+   "from": "demonology-pvp",
+   "J": 0.5731,
+   "win": 0.5556,
+   "alloc": {
+    "Suppression": 5,
+    "Improved Corruption": 5,
+    "Fel Concentration": 3,
+    "Amplify Curse": 1,
+    "Pandemic": 3,
+    "Nightfall": 2,
+    "Curse of Exhaustion": 1,
+    "Siphon Life": 1,
+    "Demonic Embrace": 5,
+    "Unholy Power": 4,
+    "Demonic Aegis": 2,
+    "Fel Vitality": 3,
+    "Demonic Energies": 2,
+    "Demonic Sacrifice": 1,
+    "Master Summoner": 2,
+    "Decimation": 1,
+    "Fel Domination": 1,
+    "Soul Link": 1,
+    "Demonic Knowledge": 3,
+    "Master Demonologist": 5
+   }
+  },
+  {
+   "step": 1,
+   "move": "2 points Pandemic -> Improved Drains",
+   "J": 0.6232,
+   "win": 0.5935,
+   "gain": 0.0501
+  },
+  {
+   "step": 2,
+   "move": "1 point Curse of Exhaustion -> Improved Bane of Agony",
+   "J": 0.6987,
+   "win": 0.6537,
+   "gain": 0.0755
+  },
+  {
+   "step": 4,
+   "move": "1 point Fel Concentration -> Improved Drains",
+   "J": 0.7296,
+   "win": 0.6796,
+   "gain": 0.0309
+  },
+  {
+   "step": 5,
+   "move": "1 point Nightfall -> Improved Bane of Agony",
+   "J": 0.7355,
+   "win": 0.6843,
+   "gain": 0.0059
+  },
+  {
+   "step": 8,
+   "move": "1 point Improved Corruption -> Malevolence",
+   "J": 0.7414,
+   "win": 0.6889,
+   "gain": 0.0058
+  }
+ ],
+ "final": {
+  "Suppression": 5,
+  "Improved Corruption": 4,
+  "Fel Concentration": 2,
+  "Amplify Curse": 1,
+  "Pandemic": 1,
+  "Nightfall": 1,
+  "Siphon Life": 1,
+  "Demonic Embrace": 5,
+  "Unholy Power": 4,
+  "Demonic Aegis": 2,
+  "Fel Vitality": 3,
+  "Demonic Energies": 2,
+  "Demonic Sacrifice": 1,
+  "Master Summoner": 2,
+  "Decimation": 1,
+  "Fel Domination": 1,
+  "Soul Link": 1,
+  "Demonic Knowledge": 3,
+  "Master Demonologist": 5,
+  "Improved Drains": 3,
+  "Improved Bane of Agony": 2,
+  "Malevolence": 1
+ },
+ "J": 0.727,
+ "win": 0.6769,
+ "margin": 0.2008,
+ "by": {
+  "warrior": [
+   0.8417,
+   0.0,
+   0.2455
+  ],
+  "rogue": [
+   0.5667,
+   0.0,
+   0.0811
+  ],
+  "priest": [
+   0.1917,
+   0.0042,
+   -0.307
+  ],
+  "hunter": [
+   0.9042,
+   0.0,
+   0.293
+  ],
+  "warlock": [
+   0.6917,
+   0.0125,
+   0.1534
+  ],
+  "paladin": [
+   0.1167,
+   0.0,
+   -0.4139
+  ],
+  "shaman": [
+   0.9458,
+   0.0,
+   0.511
+  ],
+  "druid": [
+   0.8333,
+   0.0,
+   0.5534
+  ],
+  "mage": [
+   1.0,
+   0.0,
+   0.6903
+  ]
+ },
+ "race": {
+  "final": {
+   "J": 0.727,
+   "win": 0.6769,
+   "margin": 0.2008
+  },
+  "demonology-pvp": {
+   "J": 0.5932,
+   "win": 0.5727,
+   "margin": 0.0821
+  },
+  "community:tf-soul-link": {
+   "J": 0.4706,
+   "win": 0.4796,
+   "margin": -0.036
+  }
+ },
+ "settings": {
+  "steps": 20,
+  "batch": 48,
+  "n_screen": 40,
+  "n_confirm": 120,
+  "bar": 0.005,
+  "seed": 1,
+  "margin_weight": 0.25,
+  "field": [
+   [
+    "warrior",
+    "community:tf-arms"
+   ],
+   [
+    "rogue",
+    "community:tf-hemo"
+   ],
+   [
+    "priest",
+    "community:tf-shadow"
+   ],
+   [
+    "hunter",
+    "community:tf-mm"
+   ],
+   [
+    "warlock",
+    "community:tf-soul-link"
+   ],
+   [
+    "paladin",
+    "community:tf-ret-prot"
+   ],
+   [
+    "shaman",
+    "community:tf-enhancement"
+   ],
+   [
+    "druid",
+    "community:tf-feral-resto"
+   ],
+   [
+    "mage",
+    "community:tf-frost"
+   ]
+  ]
+ },
+ "date": "2026-11-17",
+ "round": "2026-11-15",
+ "minutes": 75.7
+}

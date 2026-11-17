@@ -1,0 +1,184 @@
+{
+ "class": "druid",
+ "tree": "Restoration",
+ "starts": [
+  "pvp-resto",
+  "restoration-pvp",
+  "_reference/data/duellab/seeds/druid-restoration.json"
+ ],
+ "history": [
+  {
+   "step": 0,
+   "from": "pvp-resto",
+   "J": 0.3185,
+   "win": 0.3676,
+   "alloc": {
+    "Genesis": 5,
+    "Moonglow": 1,
+    "Nature's Majesty": 2,
+    "Nature's Reach": 2,
+    "Improved Entangling Roots": 3,
+    "Nature's Splendor": 1,
+    "Furor": 5,
+    "Feral Swiftness": 1,
+    "Nature's Focus": 5,
+    "Natural Shapeshifter": 3,
+    "Naturalist": 5,
+    "Reflection": 3,
+    "Gift of Nature": 5,
+    "Improved Rejuvenation": 3,
+    "Swiftmend": 1,
+    "Nature's Swiftness": 1,
+    "Improved Regrowth": 5
+   }
+  },
+  {
+   "step": 1,
+   "move": "3 points Improved Entangling Roots -> Ferocity",
+   "J": 0.3572,
+   "win": 0.3972,
+   "gain": 0.0387
+  }
+ ],
+ "final": {
+  "Genesis": 5,
+  "Moonglow": 1,
+  "Nature's Majesty": 2,
+  "Nature's Reach": 2,
+  "Nature's Splendor": 1,
+  "Furor": 5,
+  "Feral Swiftness": 1,
+  "Nature's Focus": 5,
+  "Natural Shapeshifter": 3,
+  "Naturalist": 5,
+  "Reflection": 3,
+  "Gift of Nature": 5,
+  "Improved Rejuvenation": 3,
+  "Swiftmend": 1,
+  "Nature's Swiftness": 1,
+  "Improved Regrowth": 5,
+  "Ferocity": 3
+ },
+ "J": 0.3596,
+ "win": 0.4,
+ "margin": -0.1617,
+ "by": {
+  "warrior": [
+   0.4,
+   0.0,
+   -0.0508
+  ],
+  "rogue": [
+   0.425,
+   0.0,
+   -0.1365
+  ],
+  "priest": [
+   0.0,
+   0.0,
+   -0.8939
+  ],
+  "hunter": [
+   0.0,
+   0.0,
+   -0.9227
+  ],
+  "warlock": [
+   0.9833,
+   0.0,
+   0.6698
+  ],
+  "paladin": [
+   0.3708,
+   0.0,
+   -0.1928
+  ],
+  "shaman": [
+   0.1458,
+   0.0,
+   -0.3658
+  ],
+  "druid": [
+   0.4792,
+   0.0,
+   -0.0479
+  ],
+  "mage": [
+   0.7958,
+   0.0,
+   0.4855
+  ]
+ },
+ "race": {
+  "final": {
+   "J": 0.3596,
+   "win": 0.4,
+   "margin": -0.1617
+  },
+  "pvp-resto": {
+   "J": 0.3273,
+   "win": 0.3736,
+   "margin": -0.1852
+  },
+  "restoration-pvp": {
+   "J": 0.1858,
+   "win": 0.2653,
+   "margin": -0.3181
+  },
+  "_reference/data/duellab/seeds/druid-restoration.json": {
+   "J": 0.2045,
+   "win": 0.2792,
+   "margin": -0.2988
+  }
+ },
+ "settings": {
+  "steps": 20,
+  "batch": 48,
+  "n_screen": 40,
+  "n_confirm": 120,
+  "bar": 0.005,
+  "seed": 1,
+  "margin_weight": 0.25,
+  "field": [
+   [
+    "warrior",
+    "community:tf-arms"
+   ],
+   [
+    "rogue",
+    "community:tf-hemo"
+   ],
+   [
+    "priest",
+    "community:tf-shadow"
+   ],
+   [
+    "hunter",
+    "community:tf-mm"
+   ],
+   [
+    "warlock",
+    "community:tf-soul-link"
+   ],
+   [
+    "paladin",
+    "community:tf-ret-prot"
+   ],
+   [
+    "shaman",
+    "community:tf-enhancement"
+   ],
+   [
+    "druid",
+    "community:tf-feral-resto"
+   ],
+   [
+    "mage",
+    "community:tf-frost"
+   ]
+  ]
+ },
+ "date": "2026-11-16",
+ "round": "2026-11-15",
+ "minutes": 47.2
+}

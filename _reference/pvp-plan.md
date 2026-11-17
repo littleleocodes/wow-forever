@@ -45,6 +45,20 @@ necessary").
      battleground builds, mapped onto Forever's trees. Their consensus talents seed the search, and a consensus talent the winner
      skips is raced as a swap in the duel lab (as `popular_swaps.py` does for raid and leveling). Evidence, not a template: those
      builds were shaped by arenas and resilience, which Forever lacks.
+   - **The blind-spot check, before the report** (2026-11-16, user: "make sure we double check everything like that at the end",
+     after the Frost winner, 20/0/31, traded Ice Block for Arcane Concentration and Arcane Meditation). The lab plays Ice Block
+     (`pvp_mage.py`: below 22% health, only when it can change the duel), but a duel scores wins, so time bought for help, escapes,
+     several attackers and battlegrounds count for nothing. For every tree's winner, after the queue:
+     - list what it lacks that real PvP rates highly: the community's Classic builds (`pvp-community-builds.json`), the TBC and
+       WotLK consensus (`pvp-expansion-builds.json`), and every talent that grants or improves a defensive, escape or control tool;
+       also the abilities the winner holds that its duels never cast;
+     - for each, read how the class layer plays it and how often it fires in the winner's duels (`duel_profile.py`), then race the
+       winner with it put back (legal, paid from the cheapest points) on the final race's duels;
+     - the report gives each one a verdict: the lab's verdict (modelled, and the race shows what it costs), or a blind spot (its
+       value lies outside a one-against-one duel, or the layer's use of it is limited), with the build that keeps it and its
+       measured cost;
+     - with the known items: the Holy paladin winner without Holy Shock (the signature rule), the Beast Mastery hunter's 96% (check
+       the pet).
 5. **The stats model's PvP profile, calibrated on the duel lab** (as the fight-lab calibration fits leveling), and the PvP values
    brought up to the current trees. It stays the fast screen. `pvp_check.py`'s cases (Classic Era community builds) gain the TBC and
    WotLK builds, restricted to the talents Forever has.
@@ -241,3 +255,39 @@ necessary").
   the duel lab plays a rules file's knobs outside `duel.PVE_KNOBS`), runs the matrix, then the queue at Idle on 10 of 12 cores
   (BelowNormal once the lane ends). New PvE knobs kept out of duels: POISONS (pvp_rogue.py puts its own Crippling or Wound Poison
   on the hand the default leaves free), IMBUE_EARLY, IMBUE_LATE, IMBUE_TOP, IMBUE_TOP_FROM (Windfury at 60).
+- 2026-11-16 22:01 to 2026-11-17 06:15, the search queue finished all 27 trees (restarted after the 20:17 BrokenProcessPool; records
+  `duellab/search/`). Two data changes landed while it ran: Mental Dexterity 150% -> 100% (about 14:00 on 11-16) and the Wrack rework
+  (about 13:00). Druid, hunter, mage, paladin and Discipline were searched against the old field shaman. Raced again on today's data,
+  every winner's score moved by 0.009 or less, and the field matrix moved only in the shaman's cells (priest against shaman 43% -> 53%).
+- 2026-11-17, the blind-spot check (step 4; `duellab/blind_spots.py`, record `duellab/blind-spots.json`, runner
+  `deep-runs/pvp_blind_1117.sh`, 06:26-09:53). Per winner:
+  - the candidates: the community's builds of the tree, the TBC/WotLK consensus, the class audits' control, escape and defense kinds
+    and high ratings, tooltip words, the signature talents;
+  - removal costs (40 duels, seed 1); each candidate put back, legal, paid from the cheapest ranks, and raced on the final race's
+    duels (seed 3, 240 a matchup); a gain re-raced on seed 4;
+  - the casts, damage shares and control on the foe; never-cast abilities; points whose removal changes no duel.
+  Findings:
+  - Confirmed gains on 14 of 27 trees: the search had not converged (20 steps of 48 random neighbours, no tier-chain moves). Combined
+    (scratch improve.py) and raced on seeds 3 and 4, all 14 held: Feral +5.6/+3.6 points (Heart of the Wild, Ferocity, Rend and Tear),
+    Holy priest +5.0/+5.2 (Martyrdom, Silent Resolve, Blessed Recovery), Assassination +5.5/+1.6 (Setup, Dirty Tricks), Enhancement
+    +2.9/+3.8 (Tidal Focus), Arcane +1.6/+3.8 (Flame Throwing 2 behind 5 Incineration: a 7-point tier chain), and nine more.
+  - Pets: the engine never targets a pet (no single-target attack, control or dispel). Lost at 15 s or from the start (scratch
+    pet_sensitivity.py), the winners fall: Beast Mastery 95% -> 81% / 48%, Marksmanship 86% / 75% / 59%, the warlocks about 68% -> 23% /
+    5% (no AI stall: the demon's damage, Spell Lock and Soul Link go). Hunter and warlock numbers are upper bounds.
+  - Ice Block: the check paid it with costly points. The Frost winner's Arcane Shielding read free on 40 duels and costs 1.2 points on
+    240, 11 of them against the druid. With the cheapest point (scratch iceblock_pay.py) Ice Block costs Frost 0.6, Arcane 0.0
+    and Fire +0.6. A block rule that does not race healers changed nothing (66-68% against the druid either way). Keep it.
+  - Holy Shock: `paladin.CASTER_GEAR_FROM` = 0 puts a Holy-path build that has Holy Shock into the caster gear row, and the duels
+    reset the knob to that default (`duel.PVE_KNOBS`), so Holy Shock swapped the gear too. In melee gear for both (scratch
+    holy_gear.py) Holy Shock costs 2.4 points (75.0% -> 72.6%), not 6.3; the Shockadin start wins 65.8% in melee gear and 58.6% in caster
+    gear, so the Holy search ran against Holy Shock. Matchups still swing with it (priest 1% -> 32%, hunter 72% -> 46%). Open: the Holy tree
+    searched again with the gear fixed, and the paladin layer's Holy Shock play reviewed.
+  - "Never cast" flags that are not: Arcane Power, Presence of Mind and Combustion (applied at the pull), Shadowform, Inner Focus,
+    Trueshot Aura, Rage of the Farseer, Soul Link and Amplify Curse (applied without a cast). Real: Fel Domination (a fast re-summon; the lab
+    never kills a demon), Bane of Havoc (no use one against one), prerequisites (Sweeping Strikes, Demonic Sacrifice).
+  - Payment: a second rule (scratch repay.py: points that changed no duel first, every other at least 0.002 a rank) beat the check's
+    payment on few rows (Frost Arcane Resilience -1.1 -> +0.1, Magic Absorption -1.2 -> 0.0, Combat Camouflage, Elemental Reach); the
+    report keeps the better of the two.
+  - Battleground versions (scratch keepers2.py): the duel build with the talents duels undervalue put back one at a time, the
+    high-rated first, each kept while the whole stays within a point of the duel build. Judged by duels only; step 7 measures
+    battlegrounds.

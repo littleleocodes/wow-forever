@@ -1,0 +1,221 @@
+{
+ "class": "warrior",
+ "tree": "Protection",
+ "starts": [
+  "protection-pvp",
+  "_reference/data/duellab/seeds/warrior-protection.json"
+ ],
+ "history": [
+  {
+   "step": 0,
+   "from": "_reference/data/duellab/seeds/warrior-protection.json",
+   "J": 0.1842,
+   "win": 0.2778,
+   "alloc": {
+    "Deflection": 5,
+    "Improved Tactical Mastery": 2,
+    "Cruelty": 5,
+    "Unbridled Wrath": 5,
+    "Piercing Howl": 1,
+    "Enrage": 3,
+    "Improved Bloodrage": 2,
+    "Shield Specialization": 5,
+    "Iron Will": 5,
+    "Anticipation": 3,
+    "Improved Revenge": 2,
+    "Last Stand": 1,
+    "Improved Disarm": 3,
+    "Improved Sunder Armor": 3,
+    "Improved Shield Bash": 2,
+    "Concussion Blow": 1,
+    "Focused Rage": 3
+   }
+  },
+  {
+   "step": 1,
+   "move": "1 point Improved Tactical Mastery -> Shield Slam",
+   "J": 0.3565,
+   "win": 0.4046,
+   "gain": 0.1723
+  },
+  {
+   "step": 2,
+   "move": "2 points Enrage -> Improved Tactical Mastery",
+   "J": 0.4293,
+   "win": 0.463,
+   "gain": 0.0728
+  },
+  {
+   "step": 3,
+   "move": "3 points Improved Sunder Armor -> Bastion",
+   "J": 0.4771,
+   "win": 0.5009,
+   "gain": 0.0478
+  },
+  {
+   "step": 5,
+   "move": "2 points Iron Will -> Master of Defense",
+   "J": 0.5189,
+   "win": 0.5352,
+   "gain": 0.0417
+  },
+  {
+   "step": 8,
+   "move": "2 points Iron Will -> Bastion",
+   "J": 0.525,
+   "win": 0.537,
+   "gain": 0.0062
+  },
+  {
+   "step": 9,
+   "move": "1 point Improved Disarm -> Anticipation",
+   "J": 0.5307,
+   "win": 0.5426,
+   "gain": 0.0057
+  },
+  {
+   "step": 10,
+   "move": "2 points Improved Disarm -> Iron Will",
+   "J": 0.5412,
+   "win": 0.5509,
+   "gain": 0.0106
+  }
+ ],
+ "final": {
+  "Deflection": 5,
+  "Improved Tactical Mastery": 3,
+  "Cruelty": 5,
+  "Unbridled Wrath": 5,
+  "Piercing Howl": 1,
+  "Enrage": 1,
+  "Improved Bloodrage": 2,
+  "Shield Specialization": 5,
+  "Iron Will": 3,
+  "Anticipation": 4,
+  "Improved Revenge": 2,
+  "Last Stand": 1,
+  "Improved Shield Bash": 2,
+  "Concussion Blow": 1,
+  "Focused Rage": 3,
+  "Shield Slam": 1,
+  "Bastion": 5,
+  "Master of Defense": 2
+ },
+ "J": 0.5404,
+ "win": 0.5505,
+ "margin": -0.0404,
+ "by": {
+  "warrior": [
+   0.9917,
+   0.0,
+   0.3938
+  ],
+  "rogue": [
+   0.9417,
+   0.0,
+   0.3893
+  ],
+  "priest": [
+   0.0125,
+   0.0,
+   -0.5071
+  ],
+  "hunter": [
+   0.025,
+   0.0,
+   -0.4513
+  ],
+  "warlock": [
+   0.8125,
+   0.0,
+   0.1858
+  ],
+  "paladin": [
+   0.35,
+   0.0,
+   -0.2023
+  ],
+  "shaman": [
+   0.975,
+   0.0042,
+   0.3057
+  ],
+  "druid": [
+   0.75,
+   0.0125,
+   0.1637
+  ],
+  "mage": [
+   0.0958,
+   0.0,
+   -0.6408
+  ]
+ },
+ "race": {
+  "final": {
+   "J": 0.5404,
+   "win": 0.5505,
+   "margin": -0.0404
+  },
+  "protection-pvp": {
+   "J": 0.2064,
+   "win": 0.3014,
+   "margin": -0.3798
+  },
+  "_reference/data/duellab/seeds/warrior-protection.json": {
+   "J": 0.1849,
+   "win": 0.2787,
+   "margin": -0.375
+  }
+ },
+ "settings": {
+  "steps": 20,
+  "batch": 48,
+  "n_screen": 40,
+  "n_confirm": 120,
+  "bar": 0.005,
+  "seed": 1,
+  "margin_weight": 0.25,
+  "field": [
+   [
+    "warrior",
+    "community:tf-arms"
+   ],
+   [
+    "rogue",
+    "community:tf-hemo"
+   ],
+   [
+    "priest",
+    "community:tf-shadow"
+   ],
+   [
+    "hunter",
+    "community:tf-mm"
+   ],
+   [
+    "warlock",
+    "community:tf-soul-link"
+   ],
+   [
+    "paladin",
+    "community:tf-ret-prot"
+   ],
+   [
+    "shaman",
+    "community:tf-enhancement"
+   ],
+   [
+    "druid",
+    "community:tf-feral-resto"
+   ],
+   [
+    "mage",
+    "community:tf-frost"
+   ]
+  ]
+ },
+ "date": "2026-11-17",
+ "round": "2026-11-15",
+ "minutes": 82.8
+}

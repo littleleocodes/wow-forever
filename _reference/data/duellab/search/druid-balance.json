@@ -1,0 +1,200 @@
+{
+ "class": "druid",
+ "tree": "Balance",
+ "starts": [
+  "balance-pvp",
+  "_reference/data/duellab/seeds/druid-balance.json"
+ ],
+ "history": [
+  {
+   "step": 0,
+   "from": "balance-pvp",
+   "J": 0.047,
+   "win": 0.1676,
+   "alloc": {
+    "Improved Wrath": 5,
+    "Improved Moonfire": 2,
+    "Moonglow": 3,
+    "Nature's Majesty": 2,
+    "Nature's Reach": 1,
+    "Improved Entangling Roots": 2,
+    "Nature's Splendor": 1,
+    "Improved Starfire": 5,
+    "Vengeance": 5,
+    "Eclipse": 3,
+    "Nature's Grace": 1,
+    "Moonfury": 1,
+    "Moonkin Form": 1,
+    "Furor": 5,
+    "Brutal Impact": 2,
+    "Feral Instinct": 1,
+    "Feral Swiftness": 2,
+    "Feral Charge": 1,
+    "Nature's Focus": 5,
+    "Natural Shapeshifter": 3
+   }
+  },
+  {
+   "step": 1,
+   "move": "1 point Improved Entangling Roots -> Insect Swarm",
+   "J": 0.0921,
+   "win": 0.2046,
+   "gain": 0.0451
+  },
+  {
+   "step": 9,
+   "move": "2 points Natural Shapeshifter -> Naturalist",
+   "J": 0.1075,
+   "win": 0.2148,
+   "gain": 0.0153
+  },
+  {
+   "step": 10,
+   "move": "2 points Vengeance -> Moonfury",
+   "J": 0.1499,
+   "win": 0.2463,
+   "gain": 0.0424
+  }
+ ],
+ "final": {
+  "Improved Wrath": 5,
+  "Improved Moonfire": 2,
+  "Moonglow": 3,
+  "Nature's Majesty": 2,
+  "Nature's Reach": 1,
+  "Improved Entangling Roots": 1,
+  "Nature's Splendor": 1,
+  "Improved Starfire": 5,
+  "Vengeance": 3,
+  "Eclipse": 3,
+  "Nature's Grace": 1,
+  "Moonfury": 3,
+  "Moonkin Form": 1,
+  "Furor": 5,
+  "Brutal Impact": 2,
+  "Feral Instinct": 1,
+  "Feral Swiftness": 2,
+  "Feral Charge": 1,
+  "Nature's Focus": 5,
+  "Natural Shapeshifter": 1,
+  "Insect Swarm": 1,
+  "Naturalist": 2
+ },
+ "J": 0.1277,
+ "win": 0.2259,
+ "margin": -0.3929,
+ "by": {
+  "warrior": [
+   0.6917,
+   0.0042,
+   0.1403
+  ],
+  "rogue": [
+   0.1,
+   0.0,
+   -0.6222
+  ],
+  "priest": [
+   0.0,
+   0.0,
+   -0.6785
+  ],
+  "hunter": [
+   0.0,
+   0.0,
+   -0.5605
+  ],
+  "warlock": [
+   0.0042,
+   0.0,
+   -0.8211
+  ],
+  "paladin": [
+   0.2375,
+   0.0,
+   -0.3857
+  ],
+  "shaman": [
+   0.0125,
+   0.0042,
+   -0.4934
+  ],
+  "druid": [
+   0.3625,
+   0.0,
+   -0.2352
+  ],
+  "mage": [
+   0.625,
+   0.0042,
+   0.1201
+  ]
+ },
+ "race": {
+  "final": {
+   "J": 0.1277,
+   "win": 0.2259,
+   "margin": -0.3929
+  },
+  "balance-pvp": {
+   "J": 0.0406,
+   "win": 0.1644,
+   "margin": -0.4951
+  },
+  "_reference/data/duellab/seeds/druid-balance.json": {
+   "J": 0.0434,
+   "win": 0.1653,
+   "margin": -0.4873
+  }
+ },
+ "settings": {
+  "steps": 20,
+  "batch": 48,
+  "n_screen": 40,
+  "n_confirm": 120,
+  "bar": 0.005,
+  "seed": 1,
+  "margin_weight": 0.25,
+  "field": [
+   [
+    "warrior",
+    "community:tf-arms"
+   ],
+   [
+    "rogue",
+    "community:tf-hemo"
+   ],
+   [
+    "priest",
+    "community:tf-shadow"
+   ],
+   [
+    "hunter",
+    "community:tf-mm"
+   ],
+   [
+    "warlock",
+    "community:tf-soul-link"
+   ],
+   [
+    "paladin",
+    "community:tf-ret-prot"
+   ],
+   [
+    "shaman",
+    "community:tf-enhancement"
+   ],
+   [
+    "druid",
+    "community:tf-feral-resto"
+   ],
+   [
+    "mage",
+    "community:tf-frost"
+   ]
+  ]
+ },
+ "date": "2026-11-16",
+ "round": "2026-11-15",
+ "minutes": 71.7
+}

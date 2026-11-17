@@ -1,0 +1,194 @@
+{
+ "class": "hunter",
+ "tree": "Survival",
+ "starts": [
+  "survival-pvp",
+  "_reference/data/duellab/seeds/hunter-survival.json"
+ ],
+ "history": [
+  {
+   "step": 0,
+   "from": "_reference/data/duellab/seeds/hunter-survival.json",
+   "J": 0.3413,
+   "win": 0.3806,
+   "alloc": {
+    "Hawk Eye": 3,
+    "Improved Concussive Shot": 5,
+    "Lethal Attacks": 5,
+    "Improved Stings": 3,
+    "Careful Aim": 3,
+    "Trueshot Aura": 1,
+    "Scatter Shot": 1,
+    "Deflection": 5,
+    "Entrapment": 3,
+    "Survivalist": 4,
+    "Improved Wing Clip": 2,
+    "Clever Traps": 2,
+    "Surefooted": 3,
+    "Deterrence": 1,
+    "Survival Tactics": 1,
+    "Counterattack": 1,
+    "Resourcefulness": 2,
+    "Strider Kick": 1,
+    "Lightning Reflexes": 5
+   }
+  },
+  {
+   "step": 2,
+   "move": "1 point Strider Kick -> Survivalist",
+   "J": 0.3645,
+   "win": 0.4009,
+   "gain": 0.0231
+  },
+  {
+   "step": 4,
+   "move": "2 points Improved Wing Clip -> Improved Tracking",
+   "J": 0.3886,
+   "win": 0.4204,
+   "gain": 0.0241
+  },
+  {
+   "step": 5,
+   "move": "3 points Entrapment -> Improved Tracking",
+   "J": 0.4127,
+   "win": 0.4398,
+   "gain": 0.0241
+  }
+ ],
+ "final": {
+  "Hawk Eye": 3,
+  "Improved Concussive Shot": 5,
+  "Lethal Attacks": 5,
+  "Improved Stings": 3,
+  "Careful Aim": 3,
+  "Trueshot Aura": 1,
+  "Scatter Shot": 1,
+  "Deflection": 5,
+  "Survivalist": 5,
+  "Clever Traps": 2,
+  "Surefooted": 3,
+  "Deterrence": 1,
+  "Survival Tactics": 1,
+  "Counterattack": 1,
+  "Resourcefulness": 2,
+  "Lightning Reflexes": 5,
+  "Improved Tracking": 5
+ },
+ "J": 0.3913,
+ "win": 0.4231,
+ "margin": -0.1275,
+ "by": {
+  "warrior": [
+   0.5625,
+   0.0,
+   0.0287
+  ],
+  "rogue": [
+   0.8458,
+   0.0,
+   0.2703
+  ],
+  "priest": [
+   0.0,
+   0.0,
+   -0.8214
+  ],
+  "hunter": [
+   0.5083,
+   0.0083,
+   -0.0097
+  ],
+  "warlock": [
+   0.0208,
+   0.0,
+   -0.3343
+  ],
+  "paladin": [
+   0.0167,
+   0.0042,
+   -0.5636
+  ],
+  "shaman": [
+   0.6125,
+   0.0042,
+   0.0459
+  ],
+  "druid": [
+   0.7458,
+   0.0,
+   0.2343
+  ],
+  "mage": [
+   0.4958,
+   0.0042,
+   0.0027
+  ]
+ },
+ "race": {
+  "final": {
+   "J": 0.3913,
+   "win": 0.4231,
+   "margin": -0.1275
+  },
+  "survival-pvp": {
+   "J": 0.1495,
+   "win": 0.2292,
+   "margin": -0.3188
+  },
+  "_reference/data/duellab/seeds/hunter-survival.json": {
+   "J": 0.3608,
+   "win": 0.3995,
+   "margin": -0.1548
+  }
+ },
+ "settings": {
+  "steps": 20,
+  "batch": 48,
+  "n_screen": 40,
+  "n_confirm": 120,
+  "bar": 0.005,
+  "seed": 1,
+  "margin_weight": 0.25,
+  "field": [
+   [
+    "warrior",
+    "community:tf-arms"
+   ],
+   [
+    "rogue",
+    "community:tf-hemo"
+   ],
+   [
+    "priest",
+    "community:tf-shadow"
+   ],
+   [
+    "hunter",
+    "community:tf-mm"
+   ],
+   [
+    "warlock",
+    "community:tf-soul-link"
+   ],
+   [
+    "paladin",
+    "community:tf-ret-prot"
+   ],
+   [
+    "shaman",
+    "community:tf-enhancement"
+   ],
+   [
+    "druid",
+    "community:tf-feral-resto"
+   ],
+   [
+    "mage",
+    "community:tf-frost"
+   ]
+  ]
+ },
+ "date": "2026-11-16",
+ "round": "2026-11-15",
+ "minutes": 21.9
+}

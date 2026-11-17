@@ -1,0 +1,217 @@
+{
+ "class": "mage",
+ "tree": "Fire",
+ "starts": [
+  "fire-pvp",
+  "_reference/data/duellab/seeds/mage-fire.json"
+ ],
+ "history": [
+  {
+   "step": 0,
+   "from": "fire-pvp",
+   "J": 0.3616,
+   "win": 0.3917,
+   "alloc": {
+    "Accelerant": 5,
+    "Flame Throwing": 2,
+    "Ignite": 5,
+    "Impact": 3,
+    "Burning Soul": 3,
+    "Improved Fire Blast": 2,
+    "Pyroblast": 1,
+    "Heating Up": 1,
+    "Improved Scorch": 2,
+    "Blast Wave": 1,
+    "Critical Mass": 3,
+    "Fire Power": 3,
+    "Combustion": 1,
+    "Frost Warding": 2,
+    "Precision": 3,
+    "Frostbite": 3,
+    "Ice Shards": 1,
+    "Improved Frost Nova": 2,
+    "Permafrost": 3,
+    "Ice Lance": 1,
+    "Ice Block": 1,
+    "Shatter": 3
+   }
+  },
+  {
+   "step": 1,
+   "move": "2 points Improved Scorch -> Incineration",
+   "J": 0.3729,
+   "win": 0.3991,
+   "gain": 0.0113
+  },
+  {
+   "step": 2,
+   "move": "1 point Flame Throwing -> Arctic Reach",
+   "J": 0.3802,
+   "win": 0.4028,
+   "gain": 0.0073
+  },
+  {
+   "step": 3,
+   "move": "1 point Improved Frost Nova -> Improved Frostbolt",
+   "J": 0.3915,
+   "win": 0.413,
+   "gain": 0.0113
+  },
+  {
+   "step": 4,
+   "move": "1 point Ice Block -> Arctic Reach",
+   "J": 0.3997,
+   "win": 0.4148,
+   "gain": 0.0082
+  },
+  {
+   "step": 12,
+   "move": "2 points Shatter -> Incineration",
+   "J": 0.4047,
+   "win": 0.4185,
+   "gain": 0.005
+  }
+ ],
+ "final": {
+  "Accelerant": 5,
+  "Flame Throwing": 1,
+  "Ignite": 5,
+  "Impact": 3,
+  "Burning Soul": 3,
+  "Improved Fire Blast": 2,
+  "Pyroblast": 1,
+  "Heating Up": 1,
+  "Blast Wave": 1,
+  "Critical Mass": 3,
+  "Fire Power": 3,
+  "Combustion": 1,
+  "Frost Warding": 2,
+  "Precision": 3,
+  "Frostbite": 3,
+  "Ice Shards": 1,
+  "Improved Frost Nova": 1,
+  "Permafrost": 3,
+  "Ice Lance": 1,
+  "Shatter": 1,
+  "Incineration": 4,
+  "Arctic Reach": 2,
+  "Improved Frostbolt": 1
+ },
+ "J": 0.3819,
+ "win": 0.4005,
+ "margin": -0.0741,
+ "by": {
+  "warrior": [
+   0.9917,
+   0.0,
+   0.7841
+  ],
+  "rogue": [
+   0.3417,
+   0.0,
+   -0.1248
+  ],
+  "priest": [
+   0.0167,
+   0.0,
+   -0.5314
+  ],
+  "hunter": [
+   0.0542,
+   0.0042,
+   -0.3783
+  ],
+  "warlock": [
+   0.0083,
+   0.0,
+   -0.4695
+  ],
+  "paladin": [
+   0.0,
+   0.0,
+   -0.7051
+  ],
+  "shaman": [
+   0.6125,
+   0.0,
+   0.1321
+  ],
+  "druid": [
+   0.6667,
+   0.0,
+   0.2386
+  ],
+  "mage": [
+   0.9125,
+   0.0042,
+   0.3869
+  ]
+ },
+ "race": {
+  "final": {
+   "J": 0.3819,
+   "win": 0.4005,
+   "margin": -0.0741
+  },
+  "fire-pvp": {
+   "J": 0.3369,
+   "win": 0.3722,
+   "margin": -0.1414
+  },
+  "_reference/data/duellab/seeds/mage-fire.json": {
+   "J": 0.3086,
+   "win": 0.3532,
+   "margin": -0.1787
+  }
+ },
+ "settings": {
+  "steps": 20,
+  "batch": 48,
+  "n_screen": 40,
+  "n_confirm": 120,
+  "bar": 0.005,
+  "seed": 1,
+  "margin_weight": 0.25,
+  "field": [
+   [
+    "warrior",
+    "community:tf-arms"
+   ],
+   [
+    "rogue",
+    "community:tf-hemo"
+   ],
+   [
+    "priest",
+    "community:tf-shadow"
+   ],
+   [
+    "hunter",
+    "community:tf-mm"
+   ],
+   [
+    "warlock",
+    "community:tf-soul-link"
+   ],
+   [
+    "paladin",
+    "community:tf-ret-prot"
+   ],
+   [
+    "shaman",
+    "community:tf-enhancement"
+   ],
+   [
+    "druid",
+    "community:tf-feral-resto"
+   ],
+   [
+    "mage",
+    "community:tf-frost"
+   ]
+  ]
+ },
+ "date": "2026-11-16",
+ "round": "2026-11-15",
+ "minutes": 32.2
+}

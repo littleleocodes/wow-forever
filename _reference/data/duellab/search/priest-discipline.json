@@ -1,0 +1,210 @@
+{
+ "class": "priest",
+ "tree": "Discipline",
+ "starts": [
+  "discipline-pvp",
+  "_reference/data/duellab/seeds/priest-discipline.json"
+ ],
+ "history": [
+  {
+   "step": 0,
+   "from": "discipline-pvp",
+   "J": 0.4138,
+   "win": 0.4306,
+   "alloc": {
+    "Twin Disciplines": 5,
+    "Silent Resolve": 3,
+    "Improved Power Word: Shield": 3,
+    "Martyrdom": 2,
+    "Inner Focus": 1,
+    "Meditation": 3,
+    "Improved Inner Fire": 2,
+    "Soul Warding": 1,
+    "Improved Mana Burn": 2,
+    "Penance": 1,
+    "Renewed Hope": 5,
+    "Divine Aegis": 3,
+    "Power Infusion": 1,
+    "Twilight Focus": 3,
+    "Blackout": 5,
+    "Spirit Tap": 1,
+    "Improved Shadow Word: Pain": 2,
+    "Shadow Reach": 2,
+    "Improved Psychic Scream": 2,
+    "Mind Flay": 1,
+    "Improved Mind Flay": 2,
+    "Vampiric Embrace": 1
+   }
+  },
+  {
+   "step": 1,
+   "move": "5 points Renewed Hope -> Mental Strength",
+   "J": 0.4349,
+   "win": 0.4426,
+   "gain": 0.021
+  },
+  {
+   "step": 3,
+   "move": "1 point Twilight Focus -> Mental Agility",
+   "J": 0.4402,
+   "win": 0.4491,
+   "gain": 0.0054
+  },
+  {
+   "step": 6,
+   "move": "2 points Divine Aegis -> Wand Specialization",
+   "J": 0.4708,
+   "win": 0.4685,
+   "gain": 0.0305
+  },
+  {
+   "step": 7,
+   "move": "1 point Divine Aegis -> Mental Agility",
+   "J": 0.4774,
+   "win": 0.4741,
+   "gain": 0.0066
+  }
+ ],
+ "final": {
+  "Twin Disciplines": 5,
+  "Silent Resolve": 3,
+  "Improved Power Word: Shield": 3,
+  "Martyrdom": 2,
+  "Inner Focus": 1,
+  "Meditation": 3,
+  "Improved Inner Fire": 2,
+  "Soul Warding": 1,
+  "Improved Mana Burn": 2,
+  "Penance": 1,
+  "Power Infusion": 1,
+  "Twilight Focus": 2,
+  "Blackout": 5,
+  "Spirit Tap": 1,
+  "Improved Shadow Word: Pain": 2,
+  "Shadow Reach": 2,
+  "Improved Psychic Scream": 2,
+  "Mind Flay": 1,
+  "Improved Mind Flay": 2,
+  "Vampiric Embrace": 1,
+  "Mental Strength": 5,
+  "Mental Agility": 2,
+  "Wand Specialization": 2
+ },
+ "J": 0.4649,
+ "win": 0.4625,
+ "margin": 0.0096,
+ "by": {
+  "warrior": [
+   0.8417,
+   0.0042,
+   0.3253
+  ],
+  "rogue": [
+   0.6792,
+   0.0,
+   0.2025
+  ],
+  "priest": [
+   0.0,
+   0.0,
+   -0.6109
+  ],
+  "hunter": [
+   0.8958,
+   0.0,
+   0.6711
+  ],
+  "warlock": [
+   0.0,
+   0.0,
+   -0.6272
+  ],
+  "paladin": [
+   0.25,
+   0.0,
+   -0.2625
+  ],
+  "shaman": [
+   0.0417,
+   0.0,
+   -0.4479
+  ],
+  "druid": [
+   0.475,
+   0.0,
+   0.0734
+  ],
+  "mage": [
+   0.9792,
+   0.0,
+   0.7624
+  ]
+ },
+ "race": {
+  "final": {
+   "J": 0.4649,
+   "win": 0.4625,
+   "margin": 0.0096
+  },
+  "discipline-pvp": {
+   "J": 0.3907,
+   "win": 0.413,
+   "margin": -0.0891
+  },
+  "_reference/data/duellab/seeds/priest-discipline.json": {
+   "J": 0.3988,
+   "win": 0.4079,
+   "margin": -0.0364
+  }
+ },
+ "settings": {
+  "steps": 20,
+  "batch": 48,
+  "n_screen": 40,
+  "n_confirm": 120,
+  "bar": 0.005,
+  "seed": 1,
+  "margin_weight": 0.25,
+  "field": [
+   [
+    "warrior",
+    "community:tf-arms"
+   ],
+   [
+    "rogue",
+    "community:tf-hemo"
+   ],
+   [
+    "priest",
+    "community:tf-shadow"
+   ],
+   [
+    "hunter",
+    "community:tf-mm"
+   ],
+   [
+    "warlock",
+    "community:tf-soul-link"
+   ],
+   [
+    "paladin",
+    "community:tf-ret-prot"
+   ],
+   [
+    "shaman",
+    "community:tf-enhancement"
+   ],
+   [
+    "druid",
+    "community:tf-feral-resto"
+   ],
+   [
+    "mage",
+    "community:tf-frost"
+   ]
+  ]
+ },
+ "date": "2026-11-16",
+ "round": "2026-11-15",
+ "minutes": 125.8
+}

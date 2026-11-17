@@ -1,0 +1,194 @@
+{
+ "class": "warrior",
+ "tree": "Arms",
+ "starts": [
+  "arms-pvp",
+  "community:tf-arms",
+  "_reference/data/duellab/seeds/warrior-arms.json"
+ ],
+ "history": [
+  {
+   "step": 0,
+   "from": "_reference/data/duellab/seeds/warrior-arms.json",
+   "J": 0.2455,
+   "win": 0.3046,
+   "alloc": {
+    "Deflection": 5,
+    "Improved Rend": 3,
+    "Improved Tactical Mastery": 3,
+    "Improved Overpower": 2,
+    "Anger Management": 1,
+    "Deep Wounds": 3,
+    "Two-Handed Weapon Specialization": 3,
+    "Impale": 2,
+    "Sweeping Strikes": 1,
+    "Weaponmaster": 5,
+    "Improved Hamstring": 3,
+    "Mortal Strike": 1,
+    "Booming Voice": 4,
+    "Cruelty": 5,
+    "Unbridled Wrath": 1,
+    "Piercing Howl": 1,
+    "Blood Craze": 3,
+    "Enrage": 5
+   }
+  },
+  {
+   "step": 1,
+   "move": "1 point Enrage -> Improved Slam",
+   "J": 0.2567,
+   "win": 0.313,
+   "gain": 0.0111
+  },
+  {
+   "step": 5,
+   "move": "1 point Piercing Howl -> Improved Charge",
+   "J": 0.2658,
+   "win": 0.3213,
+   "gain": 0.0092
+  }
+ ],
+ "final": {
+  "Deflection": 5,
+  "Improved Rend": 3,
+  "Improved Tactical Mastery": 3,
+  "Improved Overpower": 2,
+  "Anger Management": 1,
+  "Deep Wounds": 3,
+  "Two-Handed Weapon Specialization": 3,
+  "Impale": 2,
+  "Sweeping Strikes": 1,
+  "Weaponmaster": 5,
+  "Improved Hamstring": 3,
+  "Mortal Strike": 1,
+  "Booming Voice": 4,
+  "Cruelty": 5,
+  "Unbridled Wrath": 1,
+  "Blood Craze": 3,
+  "Enrage": 4,
+  "Improved Slam": 1,
+  "Improved Charge": 1
+ },
+ "J": 0.2584,
+ "win": 0.3162,
+ "margin": -0.2314,
+ "by": {
+  "warrior": [
+   0.5625,
+   0.0,
+   0.0318
+  ],
+  "rogue": [
+   0.65,
+   0.0,
+   0.1313
+  ],
+  "priest": [
+   0.0083,
+   0.0,
+   -0.5507
+  ],
+  "hunter": [
+   0.0083,
+   0.0,
+   -0.5998
+  ],
+  "warlock": [
+   0.2292,
+   0.0,
+   -0.2684
+  ],
+  "paladin": [
+   0.0542,
+   0.0,
+   -0.3007
+  ],
+  "shaman": [
+   0.6833,
+   0.0292,
+   0.0776
+  ],
+  "druid": [
+   0.6375,
+   0.0,
+   0.2035
+  ],
+  "mage": [
+   0.0125,
+   0.0,
+   -0.8071
+  ]
+ },
+ "race": {
+  "final": {
+   "J": 0.2584,
+   "win": 0.3162,
+   "margin": -0.2314
+  },
+  "arms-pvp": {
+   "J": 0.2311,
+   "win": 0.2981,
+   "margin": -0.2684
+  },
+  "community:tf-arms": {
+   "J": 0.2267,
+   "win": 0.2889,
+   "margin": -0.2486
+  },
+  "_reference/data/duellab/seeds/warrior-arms.json": {
+   "J": 0.2541,
+   "win": 0.3144,
+   "margin": -0.241
+  }
+ },
+ "settings": {
+  "steps": 20,
+  "batch": 48,
+  "n_screen": 40,
+  "n_confirm": 120,
+  "bar": 0.005,
+  "seed": 1,
+  "margin_weight": 0.25,
+  "field": [
+   [
+    "warrior",
+    "community:tf-arms"
+   ],
+   [
+    "rogue",
+    "community:tf-hemo"
+   ],
+   [
+    "priest",
+    "community:tf-shadow"
+   ],
+   [
+    "hunter",
+    "community:tf-mm"
+   ],
+   [
+    "warlock",
+    "community:tf-soul-link"
+   ],
+   [
+    "paladin",
+    "community:tf-ret-prot"
+   ],
+   [
+    "shaman",
+    "community:tf-enhancement"
+   ],
+   [
+    "druid",
+    "community:tf-feral-resto"
+   ],
+   [
+    "mage",
+    "community:tf-frost"
+   ]
+  ]
+ },
+ "date": "2026-11-17",
+ "round": "2026-11-15",
+ "minutes": 37.3
+}
