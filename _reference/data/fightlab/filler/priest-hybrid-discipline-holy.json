@@ -3,7 +3,7 @@
  "spec": "Hybrid Discipline/Holy",
  "build": "smite-open-leveling",
  "rotation": "holy-leveling",
- "date": "2026-11-09",
+ "date": "2026-11-17",
  "fights": 1500,
  "start_order": [
   {
@@ -103,16 +103,22 @@
    "points": 5
   },
   {
-   "levels": "47-51",
+   "levels": "47",
    "tree": "Holy",
    "talent": "Divine Fury",
-   "points": 5
+   "points": 1
   },
   {
-   "levels": "52",
+   "levels": "48",
    "tree": "Holy",
    "talent": "Holy Nova",
    "points": 1
+  },
+  {
+   "levels": "49-52",
+   "tree": "Holy",
+   "talent": "Divine Fury",
+   "points": 4
   },
   {
    "levels": "53-55",
@@ -127,91 +133,114 @@
    "points": 2
   },
   {
-   "levels": "58",
-   "tree": "Holy",
-   "talent": "Litany of Light",
-   "points": 1
-  },
-  {
-   "levels": "59-60",
+   "levels": "58-59",
    "tree": "Shadow",
    "talent": "Improved Shadow Word: Pain",
    "points": 2
+  },
+  {
+   "levels": "60",
+   "tree": "Holy",
+   "talent": "Spiritual Guidance",
+   "points": 1
   }
  ],
  "steps": [
   {
-   "weighted": 51.514,
+   "weighted": 49.999,
    "values_at_60": {
-    "Improved Inner Fire": -0.054,
-    "Improved Mind Blast": -0.113,
-    "Improved Shadow Word: Pain": -0.272,
-    "Inner Focus": -0.458,
-    "Litany of Light": 0.0,
-    "Meditation": -0.682,
-    "Mental Agility": -0.41,
-    "Soul Warding": -0.425
+    "Improved Inner Fire": -0.084,
+    "Improved Mind Blast": -0.288,
+    "Improved Shadow Word: Pain": -0.062,
+    "Inner Focus": -5.818,
+    "Meditation": -6.779,
+    "Mental Agility": -6.138,
+    "Soul Warding": -5.971,
+    "Spiritual Guidance": -0.135
    },
    "zero": [
     "Improved Inner Fire",
-    "Improved Mind Blast",
-    "Litany of Light"
+    "Improved Shadow Word: Pain",
+    "Spiritual Guidance"
    ]
   },
   {
-   "weighted": 51.484,
+   "weighted": 49.992,
    "values_at_60": {
-    "Improved Inner Fire": -0.022,
-    "Improved Mind Blast": -0.118,
-    "Improved Shadow Word: Pain": -0.162,
-    "Inner Focus": -0.438,
-    "Meditation": -0.616,
-    "Mental Agility": -0.436,
-    "Soul Warding": -0.422,
-    "Spiritual Guidance": -0.176
+    "Improved Inner Fire": -0.146,
+    "Improved Mind Blast": -0.314,
+    "Improved Shadow Word: Pain": -0.41,
+    "Inner Focus": -5.944,
+    "Meditation": -6.809,
+    "Mental Agility": -6.181,
+    "Shadow Focus": -0.1,
+    "Soul Warding": -0.593,
+    "Spiritual Guidance": -0.164
    },
    "zero": [
-    "Improved Inner Fire",
-    "Improved Mind Blast"
-   ]
-  },
-  {
-   "weighted": 51.451,
-   "values_at_60": {
-    "Improved Inner Fire": -0.086,
-    "Improved Shadow Word: Pain": -0.191,
-    "Inner Focus": -0.511,
-    "Meditation": -0.681,
-    "Mental Agility": -0.52,
-    "Shadow Focus": -0.136,
-    "Soul Warding": -0.424,
-    "Spirit Tap": -0.301,
-    "Spiritual Guidance": -0.225
-   },
-   "zero": [
-    "Improved Inner Fire",
     "Shadow Focus"
+   ]
+  },
+  {
+   "weighted": 49.96,
+   "values_at_60": {
+    "Improved Inner Fire": -0.069,
+    "Improved Mind Blast": -0.368,
+    "Improved Shadow Word: Pain": -0.269,
+    "Inner Focus": -0.475,
+    "Meditation": -6.301,
+    "Mental Agility": -0.556,
+    "Soul Warding": -0.546,
+    "Spiritual Guidance": -0.296
+   },
+   "zero": [
+    "Improved Inner Fire"
+   ]
+  },
+  {
+   "weighted": 50.003,
+   "values_at_60": {
+    "Improved Mind Blast": -0.347,
+    "Improved Shadow Word: Pain": -0.343,
+    "Inner Focus": -0.508,
+    "Meditation": -6.68,
+    "Mental Agility": -6.123,
+    "Soul Warding": -0.627,
+    "Spiritual Guidance": -5.716,
+    "Twin Disciplines": -0.079
+   },
+   "zero": [
+    "Twin Disciplines"
    ]
   }
  ],
  "moves": [
   {
-   "from": "Litany of Light",
-   "to": "Spiritual Guidance",
-   "level": 58,
-   "seed3": -0.0006,
-   "seed4": -0.0005,
+   "from": "Improved Shadow Word: Pain",
+   "to": "Shadow Focus",
+   "level": 59,
+   "seed3": -0.0001,
+   "seed4": -0.0001,
    "why": "no loss"
   },
   {
-   "from": "Improved Mind Blast",
-   "to": "Shadow Focus",
-   "level": 40,
+   "from": "Shadow Focus",
+   "to": "Spiritual Guidance",
+   "level": 59,
    "seed3": -0.0007,
-   "seed4": -0.0005,
+   "seed4": -0.0007,
+   "why": "tie-break"
+  },
+  {
+   "from": "Improved Inner Fire",
+   "to": "Twin Disciplines",
+   "level": 30,
+   "seed3": 0.0009,
+   "seed4": 0.0008,
    "why": "no loss"
   }
  ],
+ "kept_signature": [],
  "final_order": [
   {
    "levels": "10-11",
@@ -270,7 +299,7 @@
   {
    "levels": "30",
    "tree": "Discipline",
-   "talent": "Improved Inner Fire",
+   "talent": "Twin Disciplines",
    "points": 1
   },
   {
@@ -294,7 +323,7 @@
   {
    "levels": "40",
    "tree": "Shadow",
-   "talent": "Shadow Focus",
+   "talent": "Improved Mind Blast",
    "points": 1
   },
   {
@@ -310,16 +339,22 @@
    "points": 5
   },
   {
-   "levels": "47-51",
+   "levels": "47",
    "tree": "Holy",
    "talent": "Divine Fury",
-   "points": 5
+   "points": 1
   },
   {
-   "levels": "52",
+   "levels": "48",
    "tree": "Holy",
    "talent": "Holy Nova",
    "points": 1
+  },
+  {
+   "levels": "49-52",
+   "tree": "Holy",
+   "talent": "Divine Fury",
+   "points": 4
   },
   {
    "levels": "53-55",
@@ -335,15 +370,246 @@
   },
   {
    "levels": "58",
-   "tree": "Holy",
-   "talent": "Spiritual Guidance",
+   "tree": "Shadow",
+   "talent": "Improved Shadow Word: Pain",
    "points": 1
   },
   {
    "levels": "59-60",
-   "tree": "Shadow",
-   "talent": "Improved Shadow Word: Pain",
+   "tree": "Holy",
+   "talent": "Spiritual Guidance",
    "points": 2
   }
- ]
+ ],
+ "written": {
+  "allocation": {
+   "Discipline": [
+    [
+     "Power in Light",
+     5
+    ],
+    [
+     "Wand Specialization",
+     2
+    ],
+    [
+     "Twin Disciplines",
+     3
+    ],
+    [
+     "Holy Precision",
+     1
+    ],
+    [
+     "Mental Agility",
+     3
+    ],
+    [
+     "Inner Focus",
+     1
+    ],
+    [
+     "Improved Power Word: Shield",
+     3
+    ],
+    [
+     "Meditation",
+     3
+    ],
+    [
+     "Soul Warding",
+     1
+    ]
+   ],
+   "Holy": [
+    [
+     "Twilight Focus",
+     3
+    ],
+    [
+     "Improved Renew",
+     1
+    ],
+    [
+     "Holy Specialization",
+     5
+    ],
+    [
+     "Divine Fury",
+     5
+    ],
+    [
+     "Holy Nova",
+     1
+    ],
+    [
+     "Improved Healing",
+     3
+    ],
+    [
+     "Searing Light",
+     2
+    ],
+    [
+     "Spiritual Guidance",
+     2
+    ]
+   ],
+   "Shadow": [
+    [
+     "Spirit Tap",
+     5
+    ],
+    [
+     "Improved Mind Blast",
+     1
+    ],
+    [
+     "Improved Shadow Word: Pain",
+     1
+    ]
+   ]
+  },
+  "order": [
+   {
+    "levels": "10-11",
+    "tree": "Discipline",
+    "talent": "Wand Specialization",
+    "points": 2
+   },
+   {
+    "levels": "12-13",
+    "tree": "Discipline",
+    "talent": "Twin Disciplines",
+    "points": 2
+   },
+   {
+    "levels": "14-18",
+    "tree": "Discipline",
+    "talent": "Power in Light",
+    "points": 5
+   },
+   {
+    "levels": "19",
+    "tree": "Discipline",
+    "talent": "Holy Precision",
+    "points": 1
+   },
+   {
+    "levels": "20-21",
+    "tree": "Discipline",
+    "talent": "Mental Agility",
+    "points": 2
+   },
+   {
+    "levels": "22-24",
+    "tree": "Discipline",
+    "talent": "Meditation",
+    "points": 3
+   },
+   {
+    "levels": "25",
+    "tree": "Discipline",
+    "talent": "Mental Agility",
+    "points": 1
+   },
+   {
+    "levels": "26",
+    "tree": "Discipline",
+    "talent": "Inner Focus",
+    "points": 1
+   },
+   {
+    "levels": "27-29",
+    "tree": "Discipline",
+    "talent": "Improved Power Word: Shield",
+    "points": 3
+   },
+   {
+    "levels": "30",
+    "tree": "Discipline",
+    "talent": "Twin Disciplines",
+    "points": 1
+   },
+   {
+    "levels": "31",
+    "tree": "Discipline",
+    "talent": "Soul Warding",
+    "points": 1
+   },
+   {
+    "levels": "32-36",
+    "tree": "Shadow",
+    "talent": "Spirit Tap",
+    "points": 5
+   },
+   {
+    "levels": "37-39",
+    "tree": "Holy",
+    "talent": "Twilight Focus",
+    "points": 3
+   },
+   {
+    "levels": "40",
+    "tree": "Shadow",
+    "talent": "Improved Mind Blast",
+    "points": 1
+   },
+   {
+    "levels": "41",
+    "tree": "Holy",
+    "talent": "Improved Renew",
+    "points": 1
+   },
+   {
+    "levels": "42-46",
+    "tree": "Holy",
+    "talent": "Holy Specialization",
+    "points": 5
+   },
+   {
+    "levels": "47",
+    "tree": "Holy",
+    "talent": "Divine Fury",
+    "points": 1
+   },
+   {
+    "levels": "48",
+    "tree": "Holy",
+    "talent": "Holy Nova",
+    "points": 1
+   },
+   {
+    "levels": "49-52",
+    "tree": "Holy",
+    "talent": "Divine Fury",
+    "points": 4
+   },
+   {
+    "levels": "53-55",
+    "tree": "Holy",
+    "talent": "Improved Healing",
+    "points": 3
+   },
+   {
+    "levels": "56-57",
+    "tree": "Holy",
+    "talent": "Searing Light",
+    "points": 2
+   },
+   {
+    "levels": "58",
+    "tree": "Shadow",
+    "talent": "Improved Shadow Word: Pain",
+    "points": 1
+   },
+   {
+    "levels": "59-60",
+    "tree": "Holy",
+    "talent": "Spiritual Guidance",
+    "points": 2
+   }
+  ],
+  "note": "2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Shadow Word: Pain to Shadow Focus at 59 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Shadow Focus to Spiritual Guidance at 59 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Inner Fire to Twin Disciplines at 30 (no loss: +0.1% seed 3, +0.1% seed 4, level-weighted time per kill)."
+ }
 }

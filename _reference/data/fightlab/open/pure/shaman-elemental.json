@@ -8350,12 +8350,12 @@
    "signature": {
     "spec": "Elemental",
     "rotation": "elemental-dps",
-    "date": "2026-11-15",
+    "date": "2026-11-17",
     "fights": 600,
     "split": "32/11/8",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.7577,
+    "core_share": 0.7632,
     "min_share": 0.6,
     "required": [
      "Lightning Bolt"
@@ -8371,25 +8371,23 @@
     "late": [],
     "casts": {
      "Lightning Bolt": {
-      "20": 3.04,
-      "30": 3.53,
-      "40": 3.72,
-      "50": 3.81,
-      "60": 3.5
+      "20": 3.02,
+      "30": 3.5,
+      "40": 3.75,
+      "50": 3.92,
+      "60": 3.56
      }
     },
-    "fingerprint": "4182833ba13a"
+    "fingerprint": "5b5845565b9a"
    },
    "minutes": 3.5,
    "done": true,
    "date": "2026-11-15",
    "builds": {
-    "written": [
-     "elemental-open-leveling"
-    ],
-    "why": null,
+    "written": [],
+    "why": "the elemental-dps rotation's record (shaman.json) has a faster Elemental build: that one is written",
     "spec": "Elemental",
-    "date": "2026-11-16"
+    "date": "2026-11-17"
    }
   }
  },

@@ -77,8 +77,8 @@ Each spec's level-by-level guide has its own keybinds table. They keep the keys 
   a bolt while the Voidwalker takes the mob, then Immolate). R holds Conflagrate (32) and Mouse 5 Shadowburn (31): the tuned rules of
   2026-11-07 never cast Drain Life, Searing Pain or Fear. 1 and 3 stay free (no Affliction dots). E keeps Fear for a pull that brings a
   second mob, though those rules never cast it.
-- [Affliction-Demonology](affliction-demonology-by-level.md) (27/24/0): this layout unchanged. Searing Pain arrives at 27, the Amplify
-  Curse macro at 44 and Siphon Life at 54, and Health Funnel on Shift+R is a fight spell from 20 (Improved Health Funnel).
+- [Affliction-Demonology](affliction-demonology-by-level.md) (25/26/0): this layout unchanged. Searing Pain arrives at 27, the Amplify
+  Curse macro at 47 and Siphon Life at 60; Health Funnel on Shift+R heals the Voidwalker between fights (no Improved Health Funnel).
 
 ## No key: click these between fights
 
@@ -105,7 +105,7 @@ Destruction's pull macro, on Mouse 4 from level 10, is the same with Shadow Bolt
 /cast Shadow Bolt
 ```
 
-The Amplify Curse macro, on 1 from level 50 (Affliction from 20, Affliction-Demonology from 44). Amplify Curse is off the global
+The Amplify Curse macro, on 1 from level 50 (Affliction from 20, Affliction-Demonology from 47). Amplify Curse is off the global
 cooldown in the simulator's data, so one press casts both. While it is on its 3-minute cooldown the first line fails and the bane goes
 out alone, so the key stays your plain Bane of Agony.
 

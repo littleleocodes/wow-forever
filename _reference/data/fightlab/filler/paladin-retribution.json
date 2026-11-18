@@ -3,7 +3,7 @@
  "spec": "Retribution",
  "build": "leveling-retribution",
  "rotation": "ret-dps",
- "date": "2026-11-16",
+ "date": "2026-11-17",
  "fights": 1500,
  "start_order": [
   {
@@ -141,18 +141,19 @@
  ],
  "steps": [
   {
-   "weighted": 26.281,
+   "weighted": 26.277,
    "values_at_60": {
     "Champion of the Light": -0.169,
     "Improved Seals": -0.276,
     "Precision": -0.317,
-    "Reverence": -0.324,
+    "Reverence": -0.334,
     "Vindication": -0.531
    },
    "zero": []
   }
  ],
  "moves": [],
+ "kept_signature": [],
  "final_order": [
   {
    "levels": "10-14",

@@ -3,7 +3,7 @@
  "spec": "Survival",
  "build": "survival-open-leveling",
  "rotation": "melee-dps",
- "date": "2026-11-15",
+ "date": "2026-11-17",
  "fights": 1500,
  "start_order": [
   {
@@ -141,63 +141,32 @@
  ],
  "steps": [
   {
-   "weighted": 21.133,
+   "weighted": 21.013,
    "values_at_60": {
-    "Careful Aim": -0.094,
-    "Deadly Aspects": -0.141,
-    "Efficiency": -0.118,
-    "Improved Stings": -0.14,
-    "Lightning Reflexes": -0.095,
-    "Rapid Killing": -0.11,
-    "Strider Kick": -0.184,
-    "Survival Tactics": 0.0
+    "Careful Aim": -0.097,
+    "Deadly Aspects": -0.055,
+    "Efficiency": -0.084,
+    "Endurance Training": 0.0,
+    "Improved Stings": -0.166,
+    "Lightning Reflexes": -0.084,
+    "Strider Kick": -0.127,
+    "Trueshot Aura": -0.15
    },
    "zero": [
-    "Survival Tactics"
-   ]
-  },
-  {
-   "weighted": 21.098,
-   "values_at_60": {
-    "Careful Aim": -0.173,
-    "Deadly Aspects": -0.122,
-    "Efficiency": -0.103,
-    "Improved Stings": -0.081,
-    "Lightning Reflexes": -0.102,
-    "Rapid Killing": -0.067,
-    "Strider Kick": -0.292
-   },
-   "zero": [
-    "Rapid Killing"
-   ]
-  },
-  {
-   "weighted": 21.107,
-   "values_at_60": {
-    "Careful Aim": -0.013,
-    "Deadly Aspects": 0.034,
-    "Efficiency": -0.102,
-    "Improved Stings": -0.061,
-    "Lightning Reflexes": 0.006,
-    "Strider Kick": -0.12
-   },
-   "zero": [
-    "Careful Aim",
     "Deadly Aspects",
-    "Improved Stings",
-    "Lightning Reflexes"
+    "Endurance Training"
    ]
   },
   {
-   "weighted": 21.099,
+   "weighted": 20.972,
    "values_at_60": {
-    "Careful Aim": -0.038,
-    "Deadly Aspects": -0.054,
-    "Efficiency": -0.056,
-    "Improved Stings": -0.088,
-    "Lightning Reflexes": -0.015,
-    "Strider Kick": -0.09,
-    "Trueshot Aura": -0.112
+    "Careful Aim": -0.061,
+    "Deadly Aspects": -0.013,
+    "Efficiency": -0.039,
+    "Improved Stings": -0.128,
+    "Lightning Reflexes": -0.05,
+    "Strider Kick": -0.156,
+    "Trueshot Aura": -0.157
    },
    "zero": [
     "Careful Aim",
@@ -207,23 +176,54 @@
    ]
   },
   {
-   "weighted": 21.11,
+   "weighted": 20.979,
    "values_at_60": {
-    "Careful Aim": 0.065,
-    "Deadly Aspects": 0.015,
-    "Efficiency": -0.133,
-    "Endurance Training": 0.0,
-    "Improved Stings": -0.061,
-    "Lightning Reflexes": -0.077,
-    "Strider Kick": -0.126,
-    "Trueshot Aura": -0.047
+    "Careful Aim": -0.115,
+    "Deadly Aspects": -0.079,
+    "Deterrence": 0.0,
+    "Efficiency": -0.162,
+    "Improved Stings": -0.173,
+    "Lightning Reflexes": -0.067,
+    "Strider Kick": -0.241,
+    "Trueshot Aura": -0.182
+   },
+   "zero": [
+    "Deterrence",
+    "Lightning Reflexes"
+   ]
+  },
+  {
+   "weighted": 20.973,
+   "values_at_60": {
+    "Careful Aim": -0.038,
+    "Deadly Aspects": -0.032,
+    "Efficiency": -0.136,
+    "Improved Stings": -0.209,
+    "Lightning Reflexes": -0.034,
+    "Strider Kick": -0.184,
+    "Trueshot Aura": -0.183
    },
    "zero": [
     "Careful Aim",
     "Deadly Aspects",
-    "Endurance Training",
-    "Improved Stings",
-    "Trueshot Aura"
+    "Lightning Reflexes"
+   ]
+  },
+  {
+   "weighted": 20.979,
+   "values_at_60": {
+    "Careful Aim": -0.081,
+    "Deadly Aspects": -0.06,
+    "Deflection": -0.025,
+    "Efficiency": -0.145,
+    "Improved Stings": -0.211,
+    "Lightning Reflexes": -0.075,
+    "Strider Kick": -0.152,
+    "Trueshot Aura": -0.209
+   },
+   "zero": [
+    "Deadly Aspects",
+    "Deflection"
    ]
   }
  ],
@@ -259,8 +259,41 @@
    "seed3": 0.0005,
    "seed4": -0.0002,
    "why": "no loss"
+  },
+  {
+   "from": "Endurance Training",
+   "to": "Improved Stings",
+   "level": 52,
+   "seed3": -0.0019,
+   "seed4": -0.0021,
+   "why": "tie-break"
+  },
+  {
+   "from": "Efficiency",
+   "to": "Deterrence",
+   "level": 59,
+   "seed3": 0.0003,
+   "seed4": 0.0009,
+   "why": "no loss"
+  },
+  {
+   "from": "Deterrence",
+   "to": "Careful Aim",
+   "level": 59,
+   "seed3": -0.0003,
+   "seed4": -0.0005,
+   "why": "tie-break"
+  },
+  {
+   "from": "Deadly Aspects",
+   "to": "Deflection",
+   "level": 51,
+   "seed3": 0.0003,
+   "seed4": 0.0008,
+   "why": "no loss"
   }
  ],
+ "kept_signature": [],
  "final_order": [
   {
    "levels": "10-14",
@@ -353,15 +386,21 @@
    "points": 2
   },
   {
-   "levels": "50-51",
+   "levels": "50",
    "tree": "Beast Mastery",
    "talent": "Deadly Aspects",
-   "points": 2
+   "points": 1
+  },
+  {
+   "levels": "51",
+   "tree": "Survival",
+   "talent": "Deflection",
+   "points": 1
   },
   {
    "levels": "52",
-   "tree": "Beast Mastery",
-   "talent": "Endurance Training",
+   "tree": "Marksmanship",
+   "talent": "Improved Stings",
    "points": 1
   },
   {
@@ -383,16 +422,10 @@
    "points": 3
   },
   {
-   "levels": "58",
+   "levels": "58-59",
    "tree": "Marksmanship",
    "talent": "Careful Aim",
-   "points": 1
-  },
-  {
-   "levels": "59",
-   "tree": "Marksmanship",
-   "talent": "Efficiency",
-   "points": 1
+   "points": 2
   },
   {
    "levels": "60",
@@ -406,10 +439,6 @@
    "Beast Mastery": [
     [
      "Deadly Aspects",
-     2
-    ],
-    [
-     "Endurance Training",
      1
     ]
    ],
@@ -420,15 +449,15 @@
     ],
     [
      "Improved Stings",
-     2
+     3
     ],
     [
      "Efficiency",
-     5
+     4
     ],
     [
      "Careful Aim",
-     4
+     5
     ],
     [
      "Trueshot Aura",
@@ -442,7 +471,7 @@
     ],
     [
      "Deflection",
-     1
+     2
     ],
     [
      "Savage Strikes",
@@ -578,15 +607,21 @@
     "points": 2
    },
    {
-    "levels": "50-51",
+    "levels": "50",
     "tree": "Beast Mastery",
     "talent": "Deadly Aspects",
-    "points": 2
+    "points": 1
+   },
+   {
+    "levels": "51",
+    "tree": "Survival",
+    "talent": "Deflection",
+    "points": 1
    },
    {
     "levels": "52",
-    "tree": "Beast Mastery",
-    "talent": "Endurance Training",
+    "tree": "Marksmanship",
+    "talent": "Improved Stings",
     "points": 1
    },
    {
@@ -608,16 +643,10 @@
     "points": 3
    },
    {
-    "levels": "58",
+    "levels": "58-59",
     "tree": "Marksmanship",
     "talent": "Careful Aim",
-    "points": 1
-   },
-   {
-    "levels": "59",
-    "tree": "Marksmanship",
-    "talent": "Efficiency",
-    "points": 1
+    "points": 2
    },
    {
     "levels": "60",
@@ -626,6 +655,6 @@
     "points": 1
    }
   ],
-  "note": "2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Survival Tactics to Efficiency at 53 (tie-break: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Rapid Killing to Careful Aim at 58 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Stings to Trueshot Aura at 60 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Deadly Aspects to Endurance Training at 52 (no loss: +0.1% seed 3, -0.0% seed 4, level-weighted time per kill)."
+  "note": "2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Endurance Training to Improved Stings at 52 (tie-break: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Efficiency to Deterrence at 59 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Deterrence to Careful Aim at 59 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Deadly Aspects to Deflection at 51 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Survival Tactics to Efficiency at 53 (tie-break: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Rapid Killing to Careful Aim at 58 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Stings to Trueshot Aura at 60 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Deadly Aspects to Endurance Training at 52 (no loss: +0.1% seed 3, -0.0% seed 4, level-weighted time per kill)."
  }
 }

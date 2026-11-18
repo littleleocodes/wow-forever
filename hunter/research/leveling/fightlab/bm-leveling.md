@@ -13,7 +13,7 @@ Single-target leveling fights against normal mobs of your level with a cat: the 
 | 20 | 11 | 6.5s | 5.9s | 8.5s | 1.1s | 0.0 | 15.6s | 231 | 120 | 0.00 | 0% |
 | 30 | 21 | 9.4s | 8.8s | 11.7s | 2.5s | 0.0 | 19.9s | 181 | 211 | 0.00 | 0% |
 | 40 | 31 | 12.9s | 12.9s | 16.2s | 2.1s | 0.0 | 23.0s | 156 | 229 | 0.00 | 0% |
-| 50 | 41 | 14.4s | 14.1s | 17.2s | 2.5s | 0.0 | 24.9s | 145 | 333 | 0.00 | 0% |
+| 50 | 41 | 14.4s | 14.1s | 17.2s | 2.5s | 0.0 | 24.9s | 145 | 335 | 0.00 | 0% |
 | 60 | 51 | 14.5s | 14.1s | 16.9s | 3.2s | 0.0 | 25.7s | 140 | 503 | 0.00 | 0% |
 
 ## Measured damage shares (vs. the spec model's assumed shares)
@@ -32,9 +32,9 @@ Spec model (`_reference/data/scorer/specs`) assumes: auto 40%, multi 13%, arcane
 
 - **Level 20**: 1209 health, 1021 mana, 38 Int, 36 Spirit, 33 Str, 86 Agi, 139 AP, melee crit 9.1%, 0 spell power, base spell crit 5.1%, armor 492 (Aspect of the Hawk); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 9%, Hunter's Mark 0%, Serpent Sting 9%, Growl 0%, Bite 8%, Claw 8%, Aimed Shot 8%, Melee 0%, Mongoose Bite 0%. Health after a fight 100%, mana 51%.
 - **Level 30**: 1736 health, 1527 mana, 50 Int, 60 Spirit, 41 Str, 126 Agi, 256 AP, melee crit 8.7%, 0 spell power, base spell crit 5.1%, armor 564 (Aspect of the Hawk); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 9%, Hunter's Mark 0%, Growl 0%, Bite 8%, Claw 7%, Serpent Sting 9%, Aimed Shot 8%, Feign Death 0%, Melee 8%, Wing Clip 8%, Raptor Strike 11%, Mongoose Bite 12%. Health after a fight 99%, mana 49%.
-- **Level 40**: 2183 health, 1881 mana, 52 Int, 63 Spirit, 56 Str, 167 Agi, 335 AP, melee crit 8.5%, 0 spell power, base spell crit 4.9%, armor 866 (Aspect of the Hawk); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 9%, Hunter's Mark 0%, Growl 0%, Bite 8%, Claw 7%, Serpent Sting 8%, Aimed Shot 8%, Feign Death 0%, Melee 7%, Wing Clip 11%, Raptor Strike 5%, Mongoose Bite 7%. Health after a fight 98%, mana 50%.
-- **Level 50**: 2540 health, 2348 mana, 62 Int, 92 Spirit, 70 Str, 209 Agi, 421 AP, melee crit 8.4%, 0 spell power, base spell crit 4.8%, armor 1520 (Aspect of the Hawk); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 8%, Hunter's Mark 0%, Growl 0%, Bite 7%, Claw 7%, Serpent Sting 8%, Aimed Shot 10%, Feign Death 0%, Melee 9%, Wing Clip 5%, Raptor Strike 9%, Mongoose Bite 5%. Health after a fight 96%, mana 49%.
-- **Level 60**: 3227 health, 2868 mana, 76 Int, 94 Spirit, 65 Str, 240 Agi, 481 AP, melee crit 8.0%, 0 spell power, base spell crit 4.9%, armor 1700 (Aspect of the Hawk); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 8%, Hunter's Mark 0%, Growl 0%, Bite 15%, Claw 15%, Serpent Sting 8%, Aimed Shot 8%, Feign Death 0%, Melee 9%, Wing Clip 9%, Raptor Strike 9%, Mongoose Bite 8%. Health after a fight 95%, mana 46%.
+- **Level 40**: 2183 health, 1881 mana, 52 Int, 63 Spirit, 56 Str, 167 Agi, 335 AP, melee crit 8.5%, 0 spell power, base spell crit 4.9%, armor 866 (Aspect of the Hawk); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 9%, Hunter's Mark 0%, Growl 0%, Bite 8%, Claw 7%, Serpent Sting 8%, Aimed Shot 8%, Feign Death 0%, Melee 7%, Wing Clip 11%, Raptor Strike 5%, Mongoose Bite 7%. Health after a fight 99%, mana 50%.
+- **Level 50**: 2540 health, 2348 mana, 62 Int, 92 Spirit, 70 Str, 209 Agi, 421 AP, melee crit 8.4%, 0 spell power, base spell crit 4.8%, armor 1520 (Aspect of the Hawk); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 8%, Hunter's Mark 0%, Growl 0%, Bite 6%, Claw 7%, Serpent Sting 8%, Aimed Shot 9%, Feign Death 0%, Melee 9%, Wing Clip 6%, Raptor Strike 10%, Mongoose Bite 3%. Health after a fight 97%, mana 49%.
+- **Level 60**: 3227 health, 2868 mana, 76 Int, 94 Spirit, 65 Str, 240 Agi, 481 AP, melee crit 8.0%, 0 spell power, base spell crit 4.9%, armor 1700 (Aspect of the Hawk); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Auto Shot 8%, Hunter's Mark 0%, Growl 0%, Bite 15%, Claw 15%, Serpent Sting 8%, Aimed Shot 8%, Feign Death 0%, Melee 9%, Wing Clip 9%, Raptor Strike 9%, Mongoose Bite 8%. Health after a fight 97%, mana 46%.
 
 ## Other builds (same mobs, same seeds)
 
@@ -49,7 +49,7 @@ Spec model (`_reference/data/scorer/specs`) assumes: auto 40%, multi 13%, arcane
 | 50 | opt-bm-leveling-leveling-st | 24.9s | - | 14.4s | 0.0 | 2.5s |
 | 50 | leveling-beast-mastery | 25.3s | +1.6% | 14.7s | 0.0 | 2.5s |
 | 60 | opt-bm-leveling-leveling-st | 25.7s | - | 14.5s | 0.0 | 3.2s |
-| 60 | leveling-beast-mastery | 26.5s | +3.1% | 15.2s | 0.0 | 3.3s |
+| 60 | leveling-beast-mastery | 26.5s | +3.0% | 15.2s | 0.0 | 3.3s |
 
 ## Gear tiers (main build)
 
@@ -64,7 +64,7 @@ Spec model (`_reference/data/scorer/specs`) assumes: auto 40%, multi 13%, arcane
 | 40 | greens | 23.0s | - | 12.9s | 0.0 | 2.1s | 156 |
 | 40 | blues | 22.7s | -1.6% | 12.2s | 0.0 | 2.5s | 159 |
 | 50 | greens | 24.9s | - | 14.4s | 0.0 | 2.5s | 145 |
-| 50 | blues | 24.5s | -1.6% | 13.9s | 0.0 | 2.6s | 147 |
+| 50 | blues | 24.4s | -1.7% | 13.9s | 0.0 | 2.6s | 147 |
 | 60 | greens | 25.7s | - | 14.5s | 0.0 | 3.2s | 140 |
 | 60 | blues | 25.0s | -2.8% | 13.7s | 0.0 | 3.3s | 144 |
 
@@ -88,17 +88,17 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Unleashed Fury | 5 | +4.2% | +5.0% ± 0.3 | +0.8% | +4.8% | 0.0 |
-| Efficiency | 5 | +3.0% | +0.1% ± 0.2 | +0.6% | +3.4% | 0.0 |
-| Ferocity | 5 | +2.8% | +3.1% ± 0.3 | +0.6% | +2.2% | 0.0 |
+| Unleashed Fury | 5 | +4.3% | +5.2% ± 0.3 | +0.9% | +4.8% | 0.0 |
+| Efficiency | 5 | +2.9% | +0.0% ± 0.2 | +0.6% | +3.4% | 0.0 |
 | Rapid Recuperation | 2 | +2.7% | -0.1% ± 0.2 | +1.3% | +2.0% | 0.0 |
+| Ferocity | 5 | +2.6% | +3.1% ± 0.3 | +0.5% | +2.2% | 0.0 |
 | Lethal Attacks | 5 | +2.1% | +3.6% ± 0.3 | +0.4% | +1.4% | 0.0 |
-| Improved Stings | 3 | +1.9% | +3.8% ± 0.3 | +0.6% | +1.7% | 0.0 |
-| Deadly Aspects | 5 | +1.4% | +2.6% ± 0.3 | +0.3% | +2.4% | 0.0 |
-| Trueshot Aura | 1 | +1.2% | +2.8% ± 0.2 | +1.2% | +1.3% | 0.0 |
-| Focused Fire | 2 | +1.1% | +1.9% ± 0.2 | +0.6% | +0.9% | 0.0 |
-| Careful Aim | 5 | +1.1% | +2.3% ± 0.2 | +0.2% | +1.7% | 0.0 |
-| Ranged Weapon Specialization | 5 | +1.1% | +2.8% ± 0.2 | +0.2% | +3.1% | 0.0 |
+| Improved Stings | 3 | +1.9% | +3.7% ± 0.3 | +0.6% | +1.7% | 0.0 |
+| Deadly Aspects | 5 | +1.4% | +2.7% ± 0.3 | +0.3% | +2.4% | 0.0 |
+| Ranged Weapon Specialization | 5 | +1.2% | +2.9% ± 0.2 | +0.2% | +3.1% | 0.0 |
+| Trueshot Aura | 1 | +1.1% | +2.8% ± 0.2 | +1.1% | +1.3% | 0.0 |
+| Focused Fire | 2 | +1.1% | +1.9% ± 0.2 | +0.5% | +0.9% | 0.0 |
+| Careful Aim | 5 | +1.0% | +2.4% ± 0.2 | +0.2% | +1.7% | 0.0 |
 | Rapid Killing | 2 | +0.1% | +0.5% ± 0.2 | +0.0% | +0.0% | 0.0 |
 | Endurance Training | 3 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.2% | 0.0 |
 | Scatter Shot | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.8% | 0.0 |

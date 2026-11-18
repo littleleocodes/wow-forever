@@ -1705,9 +1705,9 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Arcane",
-      "generated": "2026-11-16",
+      "generated": "2026-11-17",
       "derived": "leveling",
-      "summary": "The Arcane leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the arcane-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). ",
+      "summary": "The Arcane leveling build the open leveling search found on 2026-11-17: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the arcane-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). ",
       "allocation": {
         "Arcane": [
           ["Improved Channeling", 5],
@@ -1726,14 +1726,12 @@
         ],
         "Fire": [],
         "Frost": [
-          ["Frost Warding", 1],
           ["Improved Frostbolt", 3],
           ["Precision", 2],
-          ["Ice Shards", 2],
+          ["Ice Shards", 4],
           ["Improved Frost Nova", 2],
           ["Permafrost", 2],
           ["Frost Channeling", 1],
-          ["Improved Blizzard", 1],
           ["Ice Lance", 1],
           ["Shatter", 3]
         ]
@@ -1759,28 +1757,27 @@
         {"levels": "45-47", "tree": "Frost", "talent": "Improved Frostbolt", "points": 3},
         {"levels": "48", "tree": "Frost", "talent": "Ice Shards", "points": 1},
         {"levels": "49-50", "tree": "Frost", "talent": "Improved Frost Nova", "points": 2},
-        {"levels": "51", "tree": "Frost", "talent": "Frost Warding", "points": 1},
-        {"levels": "52", "tree": "Frost", "talent": "Ice Shards", "points": 1},
+        {"levels": "51-52", "tree": "Frost", "talent": "Ice Shards", "points": 2},
         {"levels": "53", "tree": "Frost", "talent": "Ice Lance", "points": 1},
-        {"levels": "54", "tree": "Frost", "talent": "Improved Blizzard", "points": 1},
+        {"levels": "54", "tree": "Frost", "talent": "Ice Shards", "points": 1},
         {"levels": "55", "tree": "Frost", "talent": "Frost Channeling", "points": 1},
         {"levels": "56-57", "tree": "Frost", "talent": "Permafrost", "points": 2},
         {"levels": "58-60", "tree": "Frost", "talent": "Shatter", "points": 3}
       ],
       "core": [
-        {"talent": "Missile Barrage", "why": "+4.4 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Arcane Blast", "why": "+2.3 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Improved Channeling", "why": "+1.8 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Arcane Mind", "why": "+1.3 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Arcane Meditation", "why": "+1.3 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Precision", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Arcane Concentration", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Arcane Instability", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."}
+        {"talent": "Missile Barrage", "why": "+4.0 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Arcane Blast", "why": "+2.5 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Improved Channeling", "why": "+2.1 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Arcane Concentration", "why": "+1.3 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Arcane Meditation", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Arcane Mind", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Precision", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Arcane Instability", "why": "+1.0 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Blizzard to Frost Channeling at 55 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 29.11; arcane-leveling 36.41. The search simulated 53,708 builds.", "The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Frost Warding to Ice Shards at 51 (gate: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Blizzard to Ice Shards at 54 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 27.13; arcane-leveling 33.97. The search simulated 53,708 builds.", "The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Arcane leveling build: check it while leveling at launch."],
-      "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/mage/60/051205203100311531--1322022021003-12"]
+      "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/mage/60/051205203100311531--1322022111003-12"]
     },
     {
       "id": "fire-open-leveling",
@@ -1789,9 +1786,9 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Fire",
-      "generated": "2026-11-16",
+      "generated": "2026-11-17",
       "derived": "leveling",
-      "summary": "The Fire leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the fire-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (fire-leveling). ",
+      "summary": "The Fire leveling build the open leveling search found on 2026-11-17: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the fire-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (fire-leveling). +1.1% faster per kill than fire-open-leveling, the fastest of our leveling builds in that race.",
       "allocation": {
         "Arcane": [
           ["Wand Specialization", 1]
@@ -1814,8 +1811,8 @@
           ["Frost Warding", 2],
           ["Precision", 3],
           ["Ice Shards", 5],
-          ["Frostbite", 3],
           ["Improved Frost Nova", 2],
+          ["Frost Channeling", 3],
           ["Ice Lance", 1],
           ["Shatter", 3]
         ]
@@ -1828,9 +1825,10 @@
         {"levels": "23-24", "tree": "Frost", "talent": "Frost Warding", "points": 2},
         {"levels": "25", "tree": "Frost", "talent": "Precision", "points": 1},
         {"levels": "26-27", "tree": "Frost", "talent": "Improved Frost Nova", "points": 2},
-        {"levels": "28-30", "tree": "Frost", "talent": "Frostbite", "points": 3},
+        {"levels": "28-30", "tree": "Frost", "talent": "Ice Shards", "points": 3},
         {"levels": "31", "tree": "Frost", "talent": "Ice Lance", "points": 1},
-        {"levels": "32-35", "tree": "Frost", "talent": "Ice Shards", "points": 4},
+        {"levels": "32-34", "tree": "Frost", "talent": "Frost Channeling", "points": 3},
+        {"levels": "35", "tree": "Frost", "talent": "Ice Shards", "points": 1},
         {"levels": "36-38", "tree": "Frost", "talent": "Shatter", "points": 3},
         {"levels": "39", "tree": "Frost", "talent": "Ice Shards", "points": 1},
         {"levels": "40", "tree": "Arcane", "talent": "Wand Specialization", "points": 1},
@@ -1847,19 +1845,19 @@
         {"levels": "60", "tree": "Fire", "talent": "Combustion", "points": 1}
       ],
       "core": [
-        {"talent": "Ice Lance", "why": "+4.6 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Shatter", "why": "+3.9 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Ignite", "why": "+1.8 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Master of Elements", "why": "+1.5 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Precision", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Heating Up", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Ice Shards", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Incineration", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."}
+        {"talent": "Ice Lance", "why": "+3.5 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Shatter", "why": "+2.8 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Heating Up", "why": "+1.5 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Ignite", "why": "+1.4 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Precision", "why": "+1.4 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Master of Elements", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Improved Frost Nova", "why": "+0.9 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Critical Mass", "why": "+0.9 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 35.98; fire-leveling 36.25, opt-fire-leveling-leveling-st 39.20. The search simulated 54,185 builds.", "The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 33.62; fire-open-leveling 33.99, fire-leveling 34.14, opt-fire-leveling-leveling-st 36.11. The search simulated 54,185 builds.", "The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Fire leveling build: check it while leveling at launch."],
-      "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/mage/60/1-55500201110133031-2035320001003-12"]
+      "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/mage/60/1-55500201110133031-2035020301003-12"]
     },
     {
       "id": "frost-open-leveling",
@@ -1868,9 +1866,9 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Frost",
-      "generated": "2026-11-16",
+      "generated": "2026-11-17",
       "derived": "leveling",
-      "summary": "The Frost leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). ",
+      "summary": "The Frost leveling build the open leveling search found on 2026-11-17: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). ",
       "allocation": {
         "Arcane": [
           ["Wand Specialization", 2],
@@ -1881,7 +1879,8 @@
           ["Arcane Meditation", 3]
         ],
         "Fire": [
-          ["Incineration", 3]
+          ["Incineration", 2],
+          ["Accelerant", 1]
         ],
         "Frost": [
           ["Improved Frostbolt", 5],
@@ -1889,11 +1888,12 @@
           ["Ice Shards", 5],
           ["Frostbite", 3],
           ["Improved Frost Nova", 2],
-          ["Permafrost", 2],
+          ["Permafrost", 1],
           ["Frost Channeling", 3],
           ["Ice Lance", 1],
           ["Arctic Reach", 2],
           ["Shatter", 3],
+          ["Cold Snap", 1],
           ["Fingers of Frost", 2]
         ]
       },
@@ -1912,7 +1912,8 @@
         {"levels": "32-33", "tree": "Frost", "talent": "Ice Shards", "points": 2},
         {"levels": "34-35", "tree": "Frost", "talent": "Arctic Reach", "points": 2},
         {"levels": "36-37", "tree": "Frost", "talent": "Improved Frost Nova", "points": 2},
-        {"levels": "38-39", "tree": "Frost", "talent": "Permafrost", "points": 2},
+        {"levels": "38", "tree": "Frost", "talent": "Permafrost", "points": 1},
+        {"levels": "39", "tree": "Frost", "talent": "Cold Snap", "points": 1},
         {"levels": "40-41", "tree": "Arcane", "talent": "Wand Specialization", "points": 2},
         {"levels": "42-43", "tree": "Arcane", "talent": "Arcane Resilience", "points": 2},
         {"levels": "44", "tree": "Arcane", "talent": "Improved Channeling", "points": 1},
@@ -1921,20 +1922,21 @@
         {"levels": "52-53", "tree": "Arcane", "talent": "Improved Channeling", "points": 2},
         {"levels": "54", "tree": "Arcane", "talent": "Arcane Resilience", "points": 1},
         {"levels": "55-57", "tree": "Arcane", "talent": "Arcane Meditation", "points": 3},
-        {"levels": "58-60", "tree": "Fire", "talent": "Incineration", "points": 3}
+        {"levels": "58-59", "tree": "Fire", "talent": "Incineration", "points": 2},
+        {"levels": "60", "tree": "Fire", "talent": "Accelerant", "points": 1}
       ],
       "core": [
-        {"talent": "Shatter", "why": "+4.0 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Shatter", "why": "+3.8 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Ice Lance", "why": "+3.0 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Ice Shards", "why": "+2.2 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Improved Frostbolt", "why": "+1.9 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Precision", "why": "+1.3 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Frost Channeling", "why": "+1.3 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Ice Shards", "why": "+2.1 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Improved Frostbolt", "why": "+1.7 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Arcane Meditation", "why": "+1.3 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Frostbite", "why": "+1.3 s per kill at level 60 without it (removal, 3,000 fights)."}
+        {"talent": "Frost Channeling", "why": "+1.3 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Fingers of Frost", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Precision", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["+3.5% faster than the hand draft leveling-frost, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 28.88; leveling-frost 29.89, opt-frost-aoe-leveling-aoe 33.95. The search simulated 66,618 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Permafrost to Cold Snap at 39 (no loss: +0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Incineration to Accelerant at 60 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill).", "+6.1% faster than the hand draft leveling-frost, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 27.89; leveling-frost 29.59, opt-frost-aoe-leveling-aoe 33.51. The search simulated 66,618 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Frost leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/mage/60/2332050000003-3-0525322301203002-12"],
       "replaces": "leveling-frost"
@@ -1946,9 +1948,9 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Hybrid Arcane/Frost",
-      "generated": "2026-11-16",
+      "generated": "2026-11-17",
       "derived": "leveling",
-      "summary": "The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the barrage-frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). ",
+      "summary": "The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling search found on 2026-11-17: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the barrage-frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). ",
       "allocation": {
         "Arcane": [
           ["Wand Specialization", 2],
@@ -2006,17 +2008,17 @@
         {"levels": "58-60", "tree": "Arcane", "talent": "Arcane Instability", "points": 3}
       ],
       "core": [
-        {"talent": "Shatter", "why": "+2.5 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Ice Lance", "why": "+2.3 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Missile Barrage", "why": "+2.1 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Shatter", "why": "+2.3 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Ice Lance", "why": "+2.2 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Missile Barrage", "why": "+2.0 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Improved Frostbolt", "why": "+1.4 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Frostbite", "why": "+1.3 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Ice Shards", "why": "+1.3 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Precision", "why": "+1.3 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Arctic Reach", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."}
+        {"talent": "Frostbite", "why": "+1.0 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Precision", "why": "+1.0 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Fingers of Frost", "why": "+1.0 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 27.79; opt-frost-leveling-leveling-st 28.91. The search simulated 56,559 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 26.67; opt-frost-leveling-leveling-st 27.50. The search simulated 56,559 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Arcane-Frost leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/mage/60/24220520000130133--0324300301203002-12"]
     },
@@ -2027,9 +2029,9 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Hybrid Fire/Frost",
-      "generated": "2026-11-16",
+      "generated": "2026-11-17",
       "derived": "leveling",
-      "summary": "The Frostfire (a Fire/Frost hybrid) leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the frostfire-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (fire-leveling). ",
+      "summary": "The Frostfire (a Fire/Frost hybrid) leveling build the open leveling search found on 2026-11-17: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the frostfire-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (fire-leveling). ",
       "allocation": {
         "Arcane": [
           ["Wand Specialization", 2]
@@ -2038,8 +2040,7 @@
           ["Incineration", 5],
           ["Accelerant", 5],
           ["Ignite", 5],
-          ["Flame Throwing", 1],
-          ["Impact", 1],
+          ["Impact", 2],
           ["Improved Fire Blast", 2],
           ["Master of Elements", 3],
           ["Critical Mass", 3]
@@ -2079,22 +2080,22 @@
         {"levels": "55", "tree": "Frost", "talent": "Improved Frost Nova", "points": 1},
         {"levels": "56-58", "tree": "Fire", "talent": "Critical Mass", "points": 3},
         {"levels": "59", "tree": "Fire", "talent": "Incineration", "points": 1},
-        {"levels": "60", "tree": "Fire", "talent": "Flame Throwing", "points": 1}
+        {"levels": "60", "tree": "Fire", "talent": "Impact", "points": 1}
       ],
       "core": [
-        {"talent": "Shatter", "why": "+5.8 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Shatter", "why": "+5.6 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Ice Lance", "why": "+4.5 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Ice Shards", "why": "+2.3 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Precision", "why": "+1.6 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Frost Channeling", "why": "+1.6 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Fingers of Frost", "why": "+1.6 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Frostbite", "why": "+1.5 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Frost Channeling", "why": "+1.5 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Ignite", "why": "+1.5 s per kill at level 60 without it (removal, 3,000 fights)."}
+        {"talent": "Precision", "why": "+1.4 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Ignite", "why": "+1.4 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Master of Elements", "why": "+1.4 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Impact to Flame Throwing at 60 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill).", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 33.39; . The search simulated 75,576 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Flame Throwing to Impact at 60 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill).", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 31.86; . The search simulated 75,576 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Frostfire leveling build: check it while leveling at launch."],
-      "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/mage/60/2-55502000200033-0325320301003002-12"]
+      "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/mage/60/2-55511000200033-0325320301003002-12"]
     }
   ]
 }

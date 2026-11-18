@@ -10,12 +10,12 @@ Single-target leveling fights against normal mobs of your level. Levels 10-19 in
 
 | Level | Talents | Fight mean | median | p90 | Downtime/kill | Deaths/100 kills | Time/kill | Kills/hour | Energy/kill | Pushbacks/kill |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 15 | 6 | 16.9s | 17.1s | 20.1s | 9.3s | 0.0 | 34.3s | 105 | 227 | 5.30 |
-| 20 | 11 | 19.5s | 19.6s | 23.6s | 8.8s | 0.0 | 36.3s | 99 | 244 | 5.75 |
-| 30 | 21 | 19.2s | 19.2s | 24.1s | 14.4s | 0.0 | 41.6s | 87 | 580 | 5.90 |
-| 40 | 31 | 20.4s | 20.4s | 26.1s | 15.8s | 0.0 | 44.2s | 82 | 846 | 6.30 |
-| 50 | 41 | 16.4s | 16.1s | 20.6s | 12.8s | 0.0 | 37.3s | 97 | 1044 | 4.89 |
-| 60 | 51 | 14.1s | 14.1s | 17.6s | 8.6s | 0.0 | 30.7s | 117 | 1011 | 4.23 |
+| 15 | 6 | 16.9s | 17.1s | 20.1s | 8.6s | 0.0 | 33.5s | 107 | 227 | 5.28 |
+| 20 | 11 | 19.5s | 19.6s | 23.6s | 8.3s | 0.0 | 35.8s | 100 | 244 | 5.75 |
+| 30 | 21 | 19.2s | 19.2s | 24.1s | 13.7s | 0.0 | 40.9s | 88 | 577 | 5.90 |
+| 40 | 31 | 20.2s | 20.2s | 25.7s | 11.6s | 0.0 | 39.8s | 90 | 829 | 6.26 |
+| 50 | 41 | 16.3s | 16.1s | 20.6s | 10.0s | 0.0 | 34.3s | 105 | 1035 | 4.86 |
+| 60 | 51 | 14.0s | 14.1s | 17.6s | 6.6s | 0.0 | 28.5s | 126 | 999 | 4.22 |
 
 ## Measured damage shares (vs. the spec model's assumed shares)
 
@@ -32,29 +32,29 @@ Spec model (`_reference/data/scorer/specs`) assumes: starfire 66%, wrath 0%, moo
 
 ## Realized crit rates and player at each level
 
-- **Level 15**: 841 health, 1176 mana, 62 Int, 52 Spirit, 34 Str, 32 Agi, 47 AP, melee crit 5.4%, 0 spell power, base spell crit 6.2%, armor 286 (caster); mob 328 health, hits for 24, casters 13% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 22%, Wrath 6%. Health after a fight 73%, mana 57%.
-- **Level 20**: 1134 health, 1565 mana, 81 Int, 75 Spirit, 40 Str, 38 Agi, 61 AP, melee crit 7.3%, 0 spell power, base spell crit 8.1%, armor 415 (caster); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 61%, Wrath 8%. Health after a fight 74%, mana 59%.
-- **Level 30**: 1655 health, 2441 mana, 122 Int, 106 Spirit, 52 Str, 48 Agi, 83 AP, melee crit 9.2%, 5 spell power, base spell crit 10.1%, armor 578 (caster); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 84%, Wrath 10%, Starfire 10%. Health after a fight 76%, mana 52%.
-- **Level 40**: 1846 health, 3507 mana, 177 Int, 138 Spirit, 61 Str, 57 Agi, 101 AP, melee crit 9.1%, 16 spell power, base spell crit 10.4%, armor 2262 (caster); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 97%, Wrath 13%, Starfire 13%, Entangling Roots 34%, Regrowth 3%, Moonkin Form 0%. Health after a fight 60%, mana 51%.
-- **Level 50**: 2477 health, 4191 mana, 208 Int, 183 Spirit, 86 Str, 70 Agi, 153 AP, melee crit 9.1%, 30 spell power, base spell crit 10.1%, armor 2693 (caster); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 95%, Wrath 13%, Starfire 12%, Entangling Roots 33%, Regrowth 9%, Moonkin Form 0%. Health after a fight 62%, mana 50%.
-- **Level 60**: 2758 health, 4894 mana, 243 Int, 212 Spirit, 84 Str, 76 Agi, 148 AP, melee crit 8.8%, 62 spell power, base spell crit 9.9%, armor 3131 (caster); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 88%, Wrath 13%, Starfire 13%, Entangling Roots 14%, Regrowth 7%, Moonkin Form 0%. Health after a fight 63%, mana 53%.
+- **Level 15**: 841 health, 1176 mana, 62 Int, 52 Spirit, 34 Str, 32 Agi, 47 AP, melee crit 5.4%, 0 spell power, base spell crit 6.2%, armor 286 (caster); mob 328 health, hits for 24, casters 13% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 22%, Wrath 6%. Health after a fight 78%, mana 57%.
+- **Level 20**: 1134 health, 1565 mana, 81 Int, 75 Spirit, 40 Str, 38 Agi, 61 AP, melee crit 7.3%, 0 spell power, base spell crit 8.1%, armor 415 (caster); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 61%, Wrath 8%. Health after a fight 76%, mana 60%.
+- **Level 30**: 1655 health, 2441 mana, 122 Int, 106 Spirit, 52 Str, 48 Agi, 83 AP, melee crit 9.2%, 5 spell power, base spell crit 10.1%, armor 578 (caster); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 85%, Wrath 10%, Starfire 10%. Health after a fight 81%, mana 53%.
+- **Level 40**: 1846 health, 3507 mana, 177 Int, 138 Spirit, 61 Str, 57 Agi, 101 AP, melee crit 9.1%, 16 spell power, base spell crit 10.4%, armor 2262 (caster); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 98%, Wrath 14%, Starfire 13%, Regrowth 7%, Moonkin Form 0%, Entangling Roots 25%. Health after a fight 68%, mana 51%.
+- **Level 50**: 2477 health, 4191 mana, 208 Int, 183 Spirit, 86 Str, 70 Agi, 153 AP, melee crit 9.1%, 30 spell power, base spell crit 10.1%, armor 2693 (caster); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 98%, Wrath 13%, Starfire 12%, Entangling Roots 100%, Regrowth 0%, Moonkin Form 0%. Health after a fight 75%, mana 50%.
+- **Level 60**: 2758 health, 4894 mana, 243 Int, 212 Spirit, 84 Str, 76 Agi, 148 AP, melee crit 8.8%, 62 spell power, base spell crit 9.9%, armor 3131 (caster); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Moonfire 86%, Wrath 13%, Starfire 13%, Regrowth 0%. Health after a fight 73%, mana 53%.
 
 ## Other builds (same mobs, same seeds)
 
 | Level | Build | Time/kill | vs. main | Fight mean | Deaths/100 | Downtime/kill |
 |---|---|---|---|---|---|---|
-| 15 | opt-balance-dps-leveling-st | 34.3s | - | 16.9s | 0.0 | 9.3s |
-| 15 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 31.1s | -9.3% | 22.1s | 0.0 | 1.0s |
-| 20 | opt-balance-dps-leveling-st | 36.3s | - | 19.5s | 0.0 | 8.8s |
-| 20 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 21.6s | -40.4% | 12.7s | 0.0 | 0.9s |
-| 30 | opt-balance-dps-leveling-st | 41.6s | - | 19.2s | 0.0 | 14.4s |
-| 30 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 24.0s | -42.3% | 14.8s | 0.0 | 1.3s |
-| 40 | opt-balance-dps-leveling-st | 44.2s | - | 20.4s | 0.0 | 15.8s |
-| 40 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 26.4s | -40.1% | 16.7s | 0.0 | 1.7s |
-| 50 | opt-balance-dps-leveling-st | 37.3s | - | 16.4s | 0.0 | 12.8s |
-| 50 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 26.4s | -29.1% | 16.1s | 0.0 | 2.4s |
-| 60 | opt-balance-dps-leveling-st | 30.7s | - | 14.1s | 0.0 | 8.6s |
-| 60 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 28.1s | -8.4% | 17.8s | 0.0 | 2.3s |
+| 15 | opt-balance-dps-leveling-st | 33.5s | - | 16.9s | 0.0 | 8.6s |
+| 15 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 31.1s | -7.3% | 22.1s | 0.0 | 1.0s |
+| 20 | opt-balance-dps-leveling-st | 35.8s | - | 19.5s | 0.0 | 8.3s |
+| 20 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 21.6s | -39.6% | 12.7s | 0.0 | 0.9s |
+| 30 | opt-balance-dps-leveling-st | 40.9s | - | 19.2s | 0.0 | 13.7s |
+| 30 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 24.0s | -41.2% | 14.8s | 0.0 | 1.3s |
+| 40 | opt-balance-dps-leveling-st | 39.8s | - | 20.2s | 0.0 | 11.6s |
+| 40 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 26.4s | -33.6% | 16.7s | 0.0 | 1.7s |
+| 50 | opt-balance-dps-leveling-st | 34.3s | - | 16.3s | 0.0 | 10.0s |
+| 50 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 26.4s | -22.9% | 16.1s | 0.0 | 2.4s |
+| 60 | opt-balance-dps-leveling-st | 28.5s | - | 14.0s | 0.0 | 6.6s |
+| 60 | opt-feral-cat-dps-leveling-st (played as `feral-cat-dps`) | 28.1s | -1.6% | 17.8s | 0.0 | 2.3s |
 
 ## Talent values at level 30
 
@@ -62,14 +62,14 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Eclipse | 1 | +19.8% | +35.3% ± 0.3 | +19.8% | +4.6% | 0.0 |
-| Moonglow | 3 | +11.0% | +0.3% ± 0.2 | +3.7% | +12.7% | 0.0 |
-| Improved Starfire | 5 | +7.1% | +12.6% ± 0.3 | +1.4% | +14.6% | 0.0 |
-| Improved Wrath | 5 | +6.1% | +6.2% ± 0.3 | +1.2% | +1.4% | 0.0 |
-| Nature's Splendor | 1 | +3.4% | +1.5% ± 0.3 | +3.4% | +3.8% | 0.0 |
-| Improved Moonfire | 2 | +2.3% | +2.9% ± 0.2 | +1.2% | +2.4% | 0.0 |
-| Nature's Majesty | 2 | +1.6% | +2.0% ± 0.2 | +0.8% | +1.0% | 0.0 |
-| Genesis | 2 | +0.8% | +0.8% ± 0.2 | +0.4% | +0.0% | 0.0 |
+| Eclipse | 1 | +20.5% | +35.4% ± 0.3 | +20.5% | +4.6% | 0.0 |
+| Moonglow | 3 | +11.1% | +0.5% ± 0.2 | +3.7% | +12.7% | 0.0 |
+| Improved Starfire | 5 | +7.3% | +12.9% ± 0.3 | +1.5% | +14.6% | 0.0 |
+| Improved Wrath | 5 | +5.8% | +5.9% ± 0.3 | +1.2% | +1.4% | 0.0 |
+| Nature's Splendor | 1 | +2.7% | +1.6% ± 0.3 | +2.7% | +3.8% | 0.0 |
+| Improved Moonfire | 2 | +2.7% | +3.3% ± 0.2 | +1.4% | +2.4% | 0.0 |
+| Nature's Majesty | 2 | +1.6% | +1.9% ± 0.2 | +0.8% | +1.0% | 0.0 |
+| Genesis | 2 | +0.7% | +0.6% ± 0.1 | +0.3% | +0.0% | 0.0 |
 
 ## Talent values at level 60
 
@@ -77,22 +77,22 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Eclipse | 3 | +36.7% | +73.3% ± 0.5 | +12.2% | +15.8% | 0.0 |
-| Moonglow | 3 | +10.6% | +0.2% ± 0.3 | +3.5% | +7.3% | 0.0 |
-| Moonkin Form | 1 | +8.5% | +2.2% ± 0.3 | +8.5% | +6.3% | 0.0 |
-| Moonfury | 5 | +7.5% | +9.4% ± 0.4 | +1.5% | +10.2% | 0.0 |
-| Naturalist | 5 | +7.5% | +9.4% ± 0.4 | +1.5% | +3.7% | 0.0 |
-| Nature's Focus | 5 | +6.3% | +11.7% ± 0.5 | +1.3% | +0.0% | 0.0 |
-| Improved Starfire | 5 | +6.1% | +11.7% ± 0.5 | +1.2% | +18.2% | 0.0 |
-| Improved Wrath | 5 | +5.4% | +6.7% ± 0.4 | +1.1% | +1.0% | 0.0 |
-| Reflection | 3 | +4.9% | -0.5% ± 0.3 | +1.6% | +2.1% | 0.0 |
-| Vengeance | 5 | +4.4% | +5.2% ± 0.3 | +0.9% | +11.4% | 0.0 |
-| Improved Moonfire | 2 | +3.1% | +3.5% ± 0.3 | +1.5% | +3.6% | 0.0 |
-| Nature's Majesty | 2 | +3.0% | +3.6% ± 0.3 | +1.5% | +3.0% | 0.0 |
-| Nature's Grace | 1 | +1.4% | +1.8% ± 0.3 | +1.4% | +3.6% | 0.0 |
-| Nature's Splendor | 1 | +1.3% | +0.7% ± 0.3 | +1.3% | +3.8% | 0.0 |
-| Genesis | 3 | +0.9% | +0.7% ± 0.3 | +0.3% | +0.0% | 0.0 |
-| Heart of the Wild | 2 | +0.3% | +0.1% ± 0.3 | +0.2% | +0.1% | 0.0 |
+| Eclipse | 3 | +39.0% | +75.0% ± 0.5 | +13.0% | +15.8% | 0.0 |
+| Moonkin Form | 1 | +16.4% | +3.0% ± 0.3 | +16.4% | +6.3% | 0.0 |
+| Moonglow | 3 | +11.5% | +0.1% ± 0.3 | +3.8% | +7.3% | 0.0 |
+| Moonfury | 5 | +6.9% | +9.3% ± 0.4 | +1.4% | +10.2% | 0.0 |
+| Naturalist | 5 | +6.9% | +9.3% ± 0.4 | +1.4% | +3.7% | 0.0 |
+| Reflection | 3 | +5.6% | +0.2% ± 0.3 | +1.9% | +2.1% | 0.0 |
+| Nature's Focus | 5 | +5.2% | +12.4% ± 0.5 | +1.0% | +0.0% | 0.0 |
+| Improved Wrath | 5 | +4.9% | +6.7% ± 0.4 | +1.0% | +1.0% | 0.0 |
+| Improved Starfire | 5 | +4.7% | +12.3% ± 0.4 | +0.9% | +18.2% | 0.0 |
+| Vengeance | 5 | +4.0% | +5.0% ± 0.3 | +0.8% | +11.4% | 0.0 |
+| Nature's Majesty | 2 | +2.3% | +3.4% ± 0.3 | +1.1% | +3.0% | 0.0 |
+| Improved Moonfire | 2 | +2.1% | +3.5% ± 0.3 | +1.1% | +3.6% | 0.0 |
+| Nature's Grace | 1 | +1.2% | +1.9% ± 0.3 | +1.2% | +3.6% | 0.0 |
+| Nature's Splendor | 1 | +1.1% | +1.2% ± 0.3 | +1.1% | +3.8% | 0.0 |
+| Genesis | 3 | +0.4% | +0.6% ± 0.2 | +0.1% | +0.0% | 0.0 |
+| Heart of the Wild | 2 | +0.1% | +0.1% ± 0.2 | +0.1% | +0.1% | 0.0 |
 
 ## Assumptions (edit `tables.py` to change them)
 

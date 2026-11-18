@@ -3,7 +3,7 @@
  "spec": "Hybrid Holy/Retribution",
  "build": "shockadin-open-leveling",
  "rotation": "holy-leveling",
- "date": "2026-11-16",
+ "date": "2026-11-17",
  "fights": 1500,
  "start_order": [
   {
@@ -171,19 +171,9 @@
  ],
  "steps": [
   {
-   "weighted": 28.893,
+   "weighted": 28.199,
    "values_at_60": {
-    "Champion of the Light": -0.406,
-    "Consecrated Ground": 0.0
-   },
-   "zero": [
-    "Consecrated Ground"
-   ]
-  },
-  {
-   "weighted": 28.867,
-   "values_at_60": {
-    "Champion of the Light": -0.156
+    "Champion of the Light": -0.239
    },
    "zero": []
   }
@@ -196,6 +186,14 @@
    "seed3": -0.0009,
    "seed4": -0.0014,
    "why": "tie-break"
+  },
+  {
+   "from": "Infusion of Light",
+   "to": "Illumination",
+   "level": 28,
+   "seed3": -0.0008,
+   "seed4": -0.0016,
+   "why": "gate"
   }
  ],
  "kept_signature": [
@@ -253,7 +251,7 @@
   {
    "levels": "28",
    "tree": "Holy",
-   "talent": "Infusion of Light",
+   "talent": "Illumination",
    "points": 1
   },
   {
@@ -377,16 +375,16 @@
      1
     ],
     [
+     "Illumination",
+     1
+    ],
+    [
      "Holy Conduit",
      2
     ],
     [
      "Divine Precision",
      2
-    ],
-    [
-     "Infusion of Light",
-     1
     ],
     [
      "Oath of Light",
@@ -497,7 +495,7 @@
    {
     "levels": "28",
     "tree": "Holy",
-    "talent": "Infusion of Light",
+    "talent": "Illumination",
     "points": 1
    },
    {
@@ -597,6 +595,6 @@
     "points": 5
    }
   ],
-  "note": "2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Consecrated Ground to Champion of the Light at 59 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill)."
+  "note": "2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Infusion of Light to Illumination at 28 (gate: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill). Earlier: 2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Consecrated Ground to Champion of the Light at 59 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill)."
  }
 }

@@ -3,7 +3,7 @@
  "spec": "Feral Combat",
  "build": "feral-combat-open-leveling",
  "rotation": "feral-cat-dps",
- "date": "2026-11-13",
+ "date": "2026-11-18",
  "fights": 3000,
  "seeds": [
   3,
@@ -59,28 +59,28 @@
    }
   },
   "15": {
-   "time_per_kill": 22.104,
+   "time_per_kill": 22.123,
    "weights": {
-    "strength": 0.03865,
-    "agility": 0.01496,
-    "stamina": 0.00039,
-    "attack_power": 0.01932,
-    "armor": 0.00025,
-    "mh_weapon_dps": 0.29162,
+    "strength": 0.03952,
+    "agility": 0.01549,
+    "stamina": 0.00095,
+    "attack_power": 0.01976,
+    "armor": 0.00026,
+    "mh_weapon_dps": 0.29775,
     "crit_rating": 0.00948,
-    "hit_rating": 0.01733,
-    "haste_rating": 0.01394,
-    "expertise_rating": 0.03583,
-    "weapon_skill": 0.05342,
-    "defense_rating": 0.00023,
-    "dodge_rating": -0.00055,
+    "hit_rating": 0.01574,
+    "haste_rating": 0.01388,
+    "expertise_rating": 0.03613,
+    "weapon_skill": 0.05737,
+    "defense_rating": 0.00063,
+    "dodge_rating": 8e-05,
     "parry_rating": 0.0,
     "intellect": 0.0,
-    "spirit": 0.00255,
+    "spirit": 0.00259,
     "mp5": 0.0,
-    "spell_power": 0.0132,
+    "spell_power": 0.0136,
     "healing": 0.0,
-    "spell_penetration": 0.00987
+    "spell_penetration": 0.01225
    }
   },
   "20": {
@@ -259,28 +259,28 @@
    }
   },
   "55": {
-   "time_per_kill": 21.909,
+   "time_per_kill": 21.851,
    "weights": {
-    "strength": 0.01533,
-    "agility": 0.016,
-    "stamina": 0.00267,
-    "attack_power": 0.00702,
+    "strength": 0.01514,
+    "agility": 0.01623,
+    "stamina": 0.00273,
+    "attack_power": 0.00701,
     "armor": 0.00019,
-    "mh_weapon_dps": 0.07733,
-    "crit_rating": 0.01103,
-    "hit_rating": 0.01913,
-    "haste_rating": 0.00688,
-    "expertise_rating": 0.0382,
-    "weapon_skill": 0.05044,
-    "defense_rating": 0.00178,
-    "dodge_rating": 0.00126,
+    "mh_weapon_dps": 0.07641,
+    "crit_rating": 0.01105,
+    "hit_rating": 0.01924,
+    "haste_rating": 0.00718,
+    "expertise_rating": 0.03825,
+    "weapon_skill": 0.05084,
+    "defense_rating": 0.00197,
+    "dodge_rating": 0.0011,
     "parry_rating": 0.0,
-    "intellect": 0.00061,
-    "spirit": 0.00129,
-    "mp5": 0.0005,
-    "spell_power": 0.0016,
+    "intellect": 0.00073,
+    "spirit": 0.00141,
+    "mp5": 0.00091,
+    "spell_power": 0.00102,
     "healing": 0.0,
-    "spell_penetration": 0.00087
+    "spell_penetration": 0.00046
    }
   },
   "60": {
@@ -327,11 +327,10 @@
    "spirit": 10.0,
    "stamina": -3.0,
    "agility": 0.5,
-   "strength": 15.0,
+   "strength": 32.0,
    "armor": 35.5,
    "spell_power": 10.0,
    "healing": 10.0,
-   "attack_power": 34,
    "mh_weapon_dps": 9.7
   },
   "20": {
@@ -411,13 +410,12 @@
   },
   "55": {
    "spirit": 44.5,
-   "stamina": 74.5,
-   "agility": 38.0,
-   "strength": 102.5,
-   "armor": 127.5,
+   "stamina": 60.5,
+   "agility": 39.0,
+   "strength": 112.5,
+   "armor": 123.5,
    "spell_power": -42.0,
    "mp5": 8,
-   "attack_power": 11,
    "mh_weapon_dps": 18.6
   },
   "60": {
@@ -430,8 +428,5 @@
    "attack_power": 54,
    "mh_weapon_dps": 23.6
   }
- },
- "added": {
-  "spell_penetration": "2026-11-13"
  }
 }

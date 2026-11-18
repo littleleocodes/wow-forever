@@ -1,7 +1,9 @@
 {
  "knobs": {
   "PYRO_OPENER": 1,
-  "EVO_BELOW": 0.15
+  "EVO_BELOW": 0.15,
+  "REST_TOGETHER": true,
+  "MAGE_ARMOR": 1
  },
  "veto": {
   "Fireball": {
@@ -22,7 +24,7 @@
  "eat_below": 0.4,
  "class": "mage",
  "spec": "fire-leveling",
- "build": "fire-leveling",
+ "build": "fire-open-leveling",
  "levels": [
   20,
   30,
@@ -30,7 +32,7 @@
   50,
   60
  ],
- "date": "2026-11-15",
+ "date": "2026-11-17",
  "signature": {
   "required": [
    "Fireball",
@@ -38,8 +40,8 @@
   ],
   "build_spec": "Fire",
   "dropped_saved_rules": [],
-  "core_share_before": 0.7335121849947273,
-  "core_share_after": 0.7020517249193176,
+  "core_share_before": 0.6817025232110986,
+  "core_share_after": 0.7098115706659373,
   "min_share": 0.6,
   "floor_reached": null,
   "played_before": true,
@@ -50,66 +52,54 @@
  "changes": [
   {
    "round": 1,
-   "change": "drop the rules on Frost Nova",
+   "change": "MAGE_ARMOR = 1",
    "rule": [
-    "clear",
-    "Frost Nova",
-    null
+    "knob",
+    "MAGE_ARMOR",
+    1
    ],
-   "gain_seed1": 0.008958348486669543,
-   "gain_seed2": 0.008938015312924152
-  },
-  {
-   "round": 2,
-   "change": "Fireball only above 15% mana",
-   "rule": [
-    "min_mana",
-    "Fireball",
-    0.15
-   ],
-   "gain_seed1": 0.00595887714496135,
-   "gain_seed2": 0.005620421970132017
+   "gain_seed1": 0.01391345569060598,
+   "gain_seed2": 0.012172140965816536
   }
  ],
- "weighted_before": 36.99668380097855,
- "weighted_after": 36.557673840036315,
+ "weighted_before": 34.39989372341558,
+ "weighted_after": 33.99273299996774,
  "per_level": {
   "20": {
-   "before": 34.7779920540715,
-   "after": 34.723849521167324,
+   "before": 32.22579875899393,
+   "after": 32.22579875899393,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 41.699645439472526,
-   "after": 41.72590951179294,
+   "before": 39.13117027785164,
+   "after": 39.13117027785164,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 42.9725506644399,
-   "after": 42.52263263790318,
-   "deaths_before": 0.1,
-   "deaths_after": 0.0
+   "before": 39.60457539952075,
+   "after": 39.49553159846714,
+   "deaths_before": 0.0,
+   "deaths_after": 0.4
   },
   "50": {
-   "before": 36.65662739896101,
-   "after": 35.84864579789728,
-   "deaths_before": 0.06666666666666667,
-   "deaths_after": 0.06666666666666667
+   "before": 33.36910811158772,
+   "after": 32.516899388650586,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
   },
   "60": {
-   "before": 31.684235990074317,
-   "after": 31.199048280318976,
-   "deaths_before": 0.03333333333333333,
-   "deaths_after": 0.0
+   "before": 30.148153993457868,
+   "after": 29.573821385115085,
+   "deaths_before": 0.0,
+   "deaths_after": 0.1
   }
  },
  "retune": {
   "times": {
-   "saved": 36.997,
-   "from scratch": 36.767,
-   "continued": 36.558
+   "saved": 34.4,
+   "continued": 33.993
   },
   "installed": "continued",
   "reference_ok": true

@@ -415,7 +415,7 @@ def main():
                 rows.append({"class": cls, "spec": spec, "build": b["id"], "level": L, "pawn_scale": f"{cls} {TREES[cls][ti - 1]}",
                              "pawn_set": {s: x["name"] for s, x in sorted(pset.items())}, "our_set": {s: x["name"] for s, x in sorted(oset.items())},
                              "pawn_bonus": {kk: round(v, 1) for kk, v in pb.items()}, "our_bonus": {kk: round(v, 1) for kk, v in ob.items()},
-                             "pool": len(pool)})
+                             "pool": len(pool), "date": datetime.date.today().isoformat()})
                 for which, bon in (("pawn", pb), ("ours", ob)):
                     for seed in (3, 4):
                         jobs.append((k, which, seed, (cls, alloc, L, rot, a.fights, seed, bon)))
@@ -433,9 +433,20 @@ def main():
         r["same_slots"] = same
         print(f"{r['class']:8s} {r['spec'][:28]:28s} {r['level']:2d}: Pawn {p:6.2f}s, ours {o:6.2f}s ({100 * r['ours_faster']:+.1f}%), "
               f"{same}/{len(r['our_set'])} slots alike", flush=True)
-    rec = {"date": datetime.date.today().isoformat(), "fights": a.fights, "seeds": [3, 4], "levels": levels, "rows": rows,
-           "pawn": "Pawn 2.14.2, ClassicHawsJon.lua Forever weights"}
-    (HERE / "pawn-compare.json").write_text(json.dumps(rec, indent=1) + "\n", encoding="utf-8", newline="\n")
+    rec_path = HERE / "pawn-compare.json"
+    # a run for some classes or levels keeps the rows it did not redo, each with its own run's date (2026-11-18: a class or level run had
+    # written only its rows, and the page was made from them)
+    old = json.loads(rec_path.read_text(encoding="utf-8")) if rec_path.exists() else {}
+    keep = [dict(r, date=r.get("date") or old.get("date")) for r in old.get("rows", []) if r.get("class") not in a.classes
+            or r.get("level") not in levels]
+    if keep:
+        cls_order, first = {c: i for i, c in enumerate(PAWN_CLASS)}, {}
+        for r in rows + keep:
+            first.setdefault((r["class"], r["spec"]), len(first))
+        rows = sorted(rows + keep, key=lambda r: (cls_order.get(r["class"], 99), first[(r["class"], r["spec"])], r["level"]))
+    rec = {"date": datetime.date.today().isoformat(), "fights": a.fights, "seeds": [3, 4], "levels": sorted({r["level"] for r in rows}),
+           "rows": rows, "pawn": "Pawn 2.14.2, ClassicHawsJon.lua Forever weights"}
+    rec_path.write_text(json.dumps(rec, indent=1) + "\n", encoding="utf-8", newline="\n")
     if a.write:
         write_page(rec)
 

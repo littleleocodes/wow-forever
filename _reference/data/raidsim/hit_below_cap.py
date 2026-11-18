@@ -6,7 +6,9 @@ The ML records' BiS stat weights (gear.bis.weights) are measured in each spec's 
 (Arms: no StatHitRating at all), which says nothing about a player below the cap. This runs the simulator's stat weights once more for the
 spec's best build in that set with the set's own hit rating taken off again (bonus_stats StatHitRating = minus the items' hit), so only the
 build's talents and racial hit remain: the value of a hit point under the cap (in the same DPS-per-point unit as the record's weights).
-Record raidsim/hit-below-cap.json.
+Record raidsim/hit-below-cap.json. A run for some classes keeps the other classes' specs, each with the date of its own run (2026-11-18:
+until then a class run wrote only its own classes; `hit_below_cap.py shaman` in the Windfury lane had dropped 24 specs, and with them
+their GearCheck hit values and weight_errors.py's hit: keys).
 """
 import argparse
 import datetime
@@ -57,10 +59,17 @@ def main():
         w = row["weights"]
         out["specs"][f.stem] = {"gear_hit_rating": hit, "hit_below_cap": round(w.get("StatHitRating", 0.0), 4),
                                 "spell_damage": round(w.get("StatSpellDamage", 0.0), 4), "attack_power": round(w.get("StatAttackPower", 0.0), 4),
-                                "at_bis": (bis.get("weights") or {}).get("StatHitRating", 0.0)}
+                                "at_bis": (bis.get("weights") or {}).get("StatHitRating", 0.0), "date": out["date"]}
         print(f"{f.stem:42s} gear hit {hit:4.0f}: below the cap {w.get('StatHitRating', 0):.4f} (at BiS "
               f"{(bis.get('weights') or {}).get('StatHitRating', 0):.4f})", flush=True)
-    (HERE / "hit-below-cap.json").write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8", newline="\n")
+    rec = HERE / "hit-below-cap.json"
+    if a.classes and rec.exists():   # a run for some classes keeps the other classes' specs (stems are "<class>-<spec slug>")
+        old = json.loads(rec.read_text(encoding="utf-8"))
+        for stem, row in old.get("specs", {}).items():
+            if stem.split("-")[0] not in a.classes and stem not in out["specs"]:
+                out["specs"][stem] = dict(row, date=row.get("date") or old.get("date"))
+        out["specs"] = dict(sorted(out["specs"].items()))
+    rec.write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8", newline="\n")
 
 
 if __name__ == "__main__":

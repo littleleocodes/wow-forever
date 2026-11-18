@@ -3,7 +3,7 @@
  "spec": "Feral Combat",
  "build": "feral-combat-open-leveling",
  "rotation": "feral-cat-dps",
- "date": "2026-11-09",
+ "date": "2026-11-17",
  "fights": 1500,
  "start_order": [
   {
@@ -135,17 +135,18 @@
  ],
  "steps": [
   {
-   "weighted": 22.886,
+   "weighted": 25.819,
    "values_at_60": {
-    "Natural Shapeshifter": -0.126,
-    "Naturalist": -0.378,
-    "Nature's Splendor": -0.591,
-    "Rend and Tear": -0.097
+    "Natural Shapeshifter": -0.134,
+    "Naturalist": -0.29,
+    "Nature's Splendor": -0.77,
+    "Rend and Tear": -0.185
    },
    "zero": []
   }
  ],
  "moves": [],
+ "kept_signature": [],
  "final_order": [
   {
    "levels": "10-14",

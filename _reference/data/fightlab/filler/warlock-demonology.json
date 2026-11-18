@@ -3,7 +3,7 @@
  "spec": "Demonology",
  "build": "demonology-open-leveling",
  "rotation": "demonology-leveling",
- "date": "2026-11-09",
+ "date": "2026-11-17",
  "fights": 1500,
  "start_order": [
   {
@@ -153,52 +153,87 @@
  ],
  "steps": [
   {
-   "weighted": 30.88,
+   "weighted": 30.753,
    "values_at_60": {
-    "Master Demonologist": -0.066,
-    "Siphon Life": -1.864
+    "Amplify Curse": -0.3,
+    "Grim Reach": -0.01,
+    "Improved Bane of Agony": -0.174,
+    "Improved Corruption": -0.05,
+    "Improved Life Tap": -0.405,
+    "Malevolence": -0.12,
+    "Master Demonologist": 0.014,
+    "Pandemic": -0.144,
+    "Siphon Life": -1.676,
+    "Suppression": -0.213
    },
    "zero": [
+    "Grim Reach",
+    "Improved Corruption",
     "Master Demonologist"
    ]
   },
   {
-   "weighted": 30.738,
+   "weighted": 30.714,
    "values_at_60": {
-    "Amplify Curse": -0.279,
-    "Grim Reach": -0.05,
-    "Improved Bane of Agony": -0.266,
-    "Improved Corruption": -0.183,
-    "Improved Life Tap": -0.358,
-    "Malevolence": -0.094,
-    "Master Demonologist": -0.023,
-    "Pandemic": -0.237,
-    "Siphon Life": -1.782,
-    "Suppression": -0.244
+    "Amplify Curse": -0.276,
+    "Grim Reach": 0.0,
+    "Improved Bane of Agony": -0.198,
+    "Improved Corruption": -0.022,
+    "Improved Life Tap": -0.373,
+    "Malevolence": -0.089,
+    "Master Demonologist": 0.078,
+    "Pandemic": -0.147,
+    "Siphon Life": -1.617,
+    "Suppression": 0.006
+   },
+   "zero": [
+    "Grim Reach",
+    "Improved Corruption",
+    "Malevolence",
+    "Master Demonologist",
+    "Suppression"
+   ]
+  },
+  {
+   "weighted": 30.718,
+   "values_at_60": {
+    "Curse of Exhaustion": 0.0,
+    "Grim Reach": -0.074,
+    "Improved Bane of Agony": -0.221,
+    "Improved Corruption": -0.148,
+    "Improved Life Tap": -0.354,
+    "Malevolence": -0.173,
+    "Master Demonologist": 0.011,
+    "Pandemic": -0.199,
+    "Siphon Life": -1.793,
+    "Suppression": -0.007
+   },
+   "zero": [
+    "Curse of Exhaustion",
+    "Grim Reach",
+    "Master Demonologist",
+    "Suppression"
+   ]
+  },
+  {
+   "weighted": 30.705,
+   "values_at_60": {
+    "Amplify Curse": -0.306,
+    "Grim Reach": 0.066,
+    "Improved Bane of Agony": -0.147,
+    "Improved Corruption": -0.102,
+    "Improved Life Tap": -0.314,
+    "Malevolence": -0.075,
+    "Master Demonologist": 0.039,
+    "Pandemic": -0.173,
+    "Siphon Life": -1.77,
+    "Suppression": -0.017
    },
    "zero": [
     "Grim Reach",
     "Malevolence",
-    "Master Demonologist"
-   ]
-  },
-  {
-   "weighted": 30.744,
-   "values_at_60": {
-    "Amplify Curse": -0.359,
-    "Grim Reach": -0.082,
-    "Improved Bane of Agony": -0.301,
-    "Improved Corruption": -0.059,
-    "Improved Life Tap": -0.4,
-    "Malevolence": -0.204,
-    "Master Demonologist": -0.119,
-    "Pandemic": -0.229,
-    "Siphon Life": -1.681,
-    "Suppression": -0.25
-   },
-   "zero": [
-    "Grim Reach",
-    "Improved Corruption"
+    "Master Demonologist",
+    "Suppression"
    ]
   }
  ],
@@ -218,8 +253,57 @@
    "seed3": 0.0002,
    "seed4": 0.0004,
    "why": "no loss"
+  },
+  {
+   "from": "Master Demonologist",
+   "to": "Suppression",
+   "level": 41,
+   "seed3": -0.0013,
+   "seed4": -0.0005,
+   "why": "tie-break"
+  },
+  {
+   "from": "Improved Corruption",
+   "to": "Curse of Exhaustion",
+   "level": 58,
+   "seed3": 0.0001,
+   "seed4": 0.0005,
+   "why": "no loss"
+  },
+  {
+   "from": "Curse of Exhaustion",
+   "to": "Malevolence",
+   "level": 58,
+   "seed3": -0.0004,
+   "seed4": -0.0009,
+   "why": "tie-break"
+  },
+  {
+   "from": "Demonic Aegis",
+   "to": "Fel Vitality",
+   "level": 23,
+   "seed3": -0.0011,
+   "seed4": -0.0014,
+   "why": "gate"
+  },
+  {
+   "from": "Improved Imp",
+   "to": "Fel Vitality",
+   "level": 21,
+   "seed3": -0.0013,
+   "seed4": -0.001,
+   "why": "gate"
+  },
+  {
+   "from": "Improved Imp",
+   "to": "Fel Vitality",
+   "level": 20,
+   "seed3": -0.0008,
+   "seed4": -0.0011,
+   "why": "gate"
   }
  ],
+ "kept_signature": [],
  "final_order": [
   {
    "levels": "10-14",
@@ -248,14 +332,20 @@
   {
    "levels": "20-21",
    "tree": "Demonology",
-   "talent": "Improved Imp",
+   "talent": "Fel Vitality",
    "points": 2
   },
   {
-   "levels": "22-23",
+   "levels": "22",
    "tree": "Demonology",
    "talent": "Demonic Aegis",
-   "points": 2
+   "points": 1
+  },
+  {
+   "levels": "23",
+   "tree": "Demonology",
+   "talent": "Fel Vitality",
+   "points": 1
   },
   {
    "levels": "24",
@@ -306,10 +396,16 @@
    "points": 3
   },
   {
-   "levels": "38-41",
+   "levels": "38-40",
    "tree": "Demonology",
    "talent": "Master Demonologist",
-   "points": 4
+   "points": 3
+  },
+  {
+   "levels": "41",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 1
   },
   {
    "levels": "42",
@@ -354,16 +450,10 @@
    "points": 2
   },
   {
-   "levels": "55-57",
+   "levels": "55-58",
    "tree": "Affliction",
    "talent": "Malevolence",
-   "points": 3
-  },
-  {
-   "levels": "58",
-   "tree": "Affliction",
-   "talent": "Improved Corruption",
-   "points": 1
+   "points": 4
   },
   {
    "levels": "59",
@@ -387,11 +477,11 @@
     ],
     [
      "Suppression",
-     4
+     5
     ],
     [
      "Improved Corruption",
-     5
+     4
     ],
     [
      "Grim Reach",
@@ -411,7 +501,7 @@
     ],
     [
      "Malevolence",
-     3
+     4
     ],
     [
      "Siphon Life",
@@ -420,19 +510,19 @@
    ],
    "Demonology": [
     [
-     "Improved Imp",
-     2
-    ],
-    [
      "Unholy Power",
      5
     ],
     [
      "Demonic Aegis",
-     2
+     1
     ],
     [
      "Improved Voidwalker",
+     3
+    ],
+    [
+     "Fel Vitality",
      3
     ],
     [
@@ -469,7 +559,7 @@
     ],
     [
      "Master Demonologist",
-     4
+     3
     ]
    ],
    "Destruction": []
@@ -502,14 +592,20 @@
    {
     "levels": "20-21",
     "tree": "Demonology",
-    "talent": "Improved Imp",
+    "talent": "Fel Vitality",
     "points": 2
    },
    {
-    "levels": "22-23",
+    "levels": "22",
     "tree": "Demonology",
     "talent": "Demonic Aegis",
-    "points": 2
+    "points": 1
+   },
+   {
+    "levels": "23",
+    "tree": "Demonology",
+    "talent": "Fel Vitality",
+    "points": 1
    },
    {
     "levels": "24",
@@ -560,10 +656,16 @@
     "points": 3
    },
    {
-    "levels": "38-41",
+    "levels": "38-40",
     "tree": "Demonology",
     "talent": "Master Demonologist",
-    "points": 4
+    "points": 3
+   },
+   {
+    "levels": "41",
+    "tree": "Affliction",
+    "talent": "Suppression",
+    "points": 1
    },
    {
     "levels": "42",
@@ -608,16 +710,10 @@
     "points": 2
    },
    {
-    "levels": "55-57",
+    "levels": "55-58",
     "tree": "Affliction",
     "talent": "Malevolence",
-    "points": 3
-   },
-   {
-    "levels": "58",
-    "tree": "Affliction",
-    "talent": "Improved Corruption",
-    "points": 1
+    "points": 4
    },
    {
     "levels": "59",
@@ -632,6 +728,6 @@
     "points": 1
    }
   ],
-  "note": "2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Master Demonologist to Improved Corruption at 42 (measured: -0.5% seed 3, -0.5% seed 4, level-weighted time per kill); Malevolence to Improved Corruption at 58 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill)."
+  "note": "2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Master Demonologist to Suppression at 41 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Corruption to Curse of Exhaustion at 58 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Curse of Exhaustion to Malevolence at 58 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Aegis to Fel Vitality at 23 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Imp to Fel Vitality at 21 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Imp to Fel Vitality at 20 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Master Demonologist to Improved Corruption at 42 (measured: -0.5% seed 3, -0.5% seed 4, level-weighted time per kill); Malevolence to Improved Corruption at 58 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill)."
  }
 }

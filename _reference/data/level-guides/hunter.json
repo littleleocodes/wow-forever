@@ -134,6 +134,7 @@
    ],
    "between": [
     "Mend the pet below half its health, drink below 35% of your mana, eat below 65% of your health. Feed the pet when it sulks.",
+    "Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. This build seldom sits down, so it saves almost nothing (under 0.3% per kill in the fight lab, 2026-11-16), but it never costs time.",
     "Keep the right tracking on: **Improved Tracking** only pays for the mobs you track.",
     "Visit the trainer every even level: **Raptor Strike**, **Serpent Sting** and **Immolation Trap** have many ranks."
    ],
@@ -538,8 +539,8 @@
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
      "notes": [
       "**Bestial Wrath** (40) has a 2-minute cooldown, so it is ready for some pulls, not all: use it on the first pull it is ready for, as the fight lab does.",
-      "**Lethal Attacks** (41-45), **Efficiency** (46-50), **Improved Stings** (51-53) and **Careful Aim** (54-55): more crit, cheaper shots, a stronger sting and attack power from your Intellect. Nothing new to press.",
-      "**Trueshot Aura** (56) is a buff you cast in Forever: keep it on. **Improved Tracking** (57-60): keep the tracking of the mobs you fight switched on.",
+      "**Lethal Attacks** (41-45), **Efficiency** (46-50), **Improved Stings** (51-53) and **Careful Aim** (54-55, its third point at 60): more crit, cheaper shots, a stronger sting and attack power from your Intellect. Nothing new to press.",
+      "**Trueshot Aura** (56) is a buff you cast in Forever: keep it on. **Improved Tracking** (57-59): keep the tracking of the mobs you fight switched on.",
       "**Volley** (40) is a channel for packs, with **Multi-Shot**. Buy every new rank."
      ],
      "unsimulated": [
@@ -550,6 +551,7 @@
    ],
    "between": [
     "Mend the pet below half its health, drink below 15% of your mana, eat below 65% of your health. The tuned rules drink this late: fewer stops measured slightly faster. Feed the pet when it sulks, and revive it before the next pull if it died.",
+    "Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. This build seldom sits down, so it saves almost nothing (under 0.3% per kill in the fight lab, 2026-11-16), but it never costs time.",
     "Keep **Aspect of the Hawk** on, and **Trueshot Aura** from 56. From 57, keep the right tracking on: **Improved Tracking** only pays for the mobs you track.",
     "Visit the trainer every even level: **Serpent Sting**, **Aimed Shot** and **Mend Pet** have many ranks."
    ],
@@ -950,7 +952,7 @@
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you while it has more than 35% of its health: **Feign Death** sends it back to the pet. A weaker mob, or **Feign Death** on cooldown: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip**.",
      "notes": [
       "The tuned rules keep **Feign Death** for a mob with more than 35% of its health. A weaker one, the fight lab finishes in melee: that measured faster.",
-      "**Rapid Recuperation** (30): after **Serpent Sting**, a quarter of your mana regeneration continues while casting for 15 seconds (half after you spend a **Rapid Killing**). **Barrage** (32-34): **Aimed Shot**, **Multi-Shot** and **Volley** do 15% more damage. **Ranged Weapon Specialization** (35-39): 5% more damage with your bow.",
+      "**Rapid Recuperation** (30): after **Serpent Sting**, a quarter of your mana regeneration continues while casting for 15 seconds (half after you spend a **Rapid Killing**). **Barrage** (32-34): **Aimed Shot**, **Multi-Shot** and **Volley** do 15% more damage. **Ranged Weapon Specialization** (35-38): 4% more damage with your bow. **Improved Tracking** (39, its second point at 60): 1% more damage a point against the creature type you track.",
       "**Explosive Trap** (34) is for packs."
      ],
      "unsimulated": [
@@ -973,7 +975,7 @@
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you while it has more than 35% of its health: **Feign Death** sends it back to the pet. A weaker mob, or **Feign Death** on cooldown: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip**.",
      "notes": [
       "**Deadly Aspects** (40-44): while **Aspect of the Hawk** is on, **Auto Shot** sometimes speeds up your shooting by 30% for 12 seconds.",
-      "**Focused Fire** (45-46), **Endurance Training** (47), **Unleashed Fury** (50-54), **Ferocity** (55-59) and **Bestial Discipline** (60) go to the pet: more damage and crit, health and focus. **Improved Aspect of the Monkey** (48-49) holds the points the row needs: a ranged hunter has no use for the Monkey.",
+      "**Focused Fire** (45-46), **Endurance Training** (47), **Unleashed Fury** (50-54) and **Ferocity** (55-59) go to the pet: more damage and crit, and health. The last point (60) is **Improved Tracking**'s second. **Improved Aspect of the Monkey** (48-49) holds the points the row needs: a ranged hunter has no use for the Monkey.",
       "**Volley** (40) is a channel for packs, with **Multi-Shot**."
      ],
      "unsimulated": [
@@ -983,7 +985,8 @@
    ],
    "between": [
     "Mend the pet below half its health, drink below 15% of your mana, eat below 65% of your health. The tuned rules drink this late: fewer stops measured slightly faster. Feed the pet when it sulks, and revive it before the next pull if it died.",
-    "Keep **Aspect of the Hawk** on, and **Trueshot Aura** from 25.",
+    "Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. This build seldom sits down, so it saves almost nothing (under 0.3% per kill in the fight lab, 2026-11-16), but it never costs time.",
+    "Keep **Aspect of the Hawk** on, and **Trueshot Aura** from 25. From 39, keep the right tracking on: **Improved Tracking** only pays for the mobs you track.",
     "Visit the trainer every even level: **Serpent Sting**, **Arcane Shot** and **Aimed Shot** have many ranks."
    ],
    "other": [
@@ -1384,8 +1387,8 @@
      ],
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A pull gone wrong: **Feign Death**.",
      "notes": [
-      "**Careful Aim** (40-42): attack power from 60% of your Intellect. **Lightning Reflexes** (43-47): 15% more Agility. **Improved Stings** (48-49): **Serpent Sting** does 13% more damage. **Deadly Aspects** (50-51): with **Aspect of the Beast** on, your swings sometimes speed up by 30% for 12 seconds.",
-      "**Endurance Training** (52): the pet's health and armor 3% higher. **Efficiency** (53): your strikes and stings 3% cheaper.",
+      "**Careful Aim** (40-42): attack power from 60% of your Intellect. **Lightning Reflexes** (43-47): 15% more Agility. **Improved Stings** (48-49): **Serpent Sting** does 13% more damage. **Deadly Aspects** (50): with **Aspect of the Beast** on, 2% of your swings speed up the next ones by 30% for 12 seconds.",
+      "**Deflection** (51): its second point, 2% parry. **Improved Stings** (52): its third point, **Serpent Sting** 20% stronger. **Efficiency** (53): your shots, stings and strikes 3% cheaper.",
       "**Explosive Trap** (34) replaces **Immolation Trap** when two or more mobs stand at your feet: they share the cooldown."
      ],
      "unsimulated": [
@@ -1410,7 +1413,7 @@
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A pull gone wrong: **Feign Death**.",
      "notes": [
       "**Strider Kick** (54) deals your weapon's damage and gives you 30% movement speed for 3 seconds. The tuned rules cast it only below 20% of the mob's health: cast whenever it was ready, it measured slower in the fight lab.",
-      "**Efficiency** (55-57 and 59) makes your strikes and stings cheaper, 15% at five points. **Careful Aim** (58): its fourth point, attack power from 80% of your Intellect. **Trueshot Aura** (60): 20 ranged attack power for you and your party.",
+      "**Efficiency** (55-57) makes your strikes and stings cheaper, 12% at four points. **Careful Aim** (58-59): its fourth and fifth points, attack power from all of your Intellect. **Trueshot Aura** (60): 20 ranged attack power for you and your party.",
       "**Explosive Trap** (34) replaces **Immolation Trap** when two or more mobs stand at your feet: they share the cooldown."
      ],
      "unsimulated": [
@@ -1421,6 +1424,7 @@
    ],
    "between": [
     "Mend the pet below half its health, drink below 35% of your mana, eat below 65% of your health. Feed the pet when it sulks.",
+    "Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. It saves a little for this build (0.9% per kill in the fight lab, 2026-11-16), and the tuned rules play it.",
     "Keep the right tracking on: **Improved Tracking** only pays for the mobs you track.",
     "Visit the trainer every even level: **Raptor Strike**, **Serpent Sting** and **Immolation Trap** have many ranks."
    ],
@@ -1825,6 +1829,7 @@
    ],
    "between": [
     "Mend the pet below half its health, drink below 15% of your mana, eat below 65% of your health. The tuned rules drink this late: fewer stops measured slightly faster. Feed the pet when it sulks, and revive it before the next pull if it died.",
+    "Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. This build seldom sits down, so it saves almost nothing (under 0.3% per kill in the fight lab, 2026-11-16), but it never costs time.",
     "Keep **Aspect of the Hawk** on, and **Trueshot Aura** from 25. From 33, keep the right tracking on: **Improved Tracking** only pays for the mobs you track.",
     "Visit the trainer every even level: **Serpent Sting**, **Aimed Shot** and **Mend Pet** have many ranks."
    ],

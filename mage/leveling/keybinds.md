@@ -54,7 +54,7 @@ This file is hand-written: the regeneration that rewrites the rest of this folde
 | Shift+Mouse 5 | Fire Ward (20) | A fire caster is on you: absorbs its next spells |
 | Shift+Mouse 4 | Frost Ward (22) | A frost caster is on you |
 | Shift+1 | Free; Ice Barrier with the hand-made Leveling - Frost build (under Other builds on the Frost page) | Before every pull, with that build only |
-| Shift+2 | Free; Cold Snap with that same build | Frost Nova has more than 8 seconds of cooldown left and the mob still has 40% of its health |
+| Shift+2 | Cold Snap (39, talent; the hand-made build has it too) | Frost Nova has more than 8 seconds of cooldown left and the mob still has 40% of its health |
 | Shift+3 | Remove Lesser Curse (18) | A curse is on you |
 | Shift+4 | Free | |
 | Shift+C | Healing potion macro (any level) | A bad pull: the best healing potion in your bags. Every potion shares one cooldown |

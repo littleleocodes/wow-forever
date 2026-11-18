@@ -3,7 +3,7 @@
  "spec": "Affliction",
  "build": "affliction-open-leveling",
  "rotation": "affliction-leveling",
- "date": "2026-11-16",
+ "date": "2026-11-17",
  "fights": 1500,
  "start_order": [
   {
@@ -165,126 +165,79 @@
  ],
  "steps": [
   {
-   "weighted": 30.756,
+   "weighted": 30.676,
    "values_at_60": {
-    "Demonic Aegis": -0.141,
-    "Demonic Embrace": -0.155,
-    "Demonic Energies": -0.572,
-    "Fel Concentration": -0.044,
-    "Grim Reach": -0.056,
-    "Improved Drains": -0.059,
-    "Improved Shadow Bolt": 0.0,
-    "Improved Voidwalker": -0.297,
-    "Malevolence": -0.171,
-    "Soul Siphon": -0.205,
-    "Wrack": -3.775
-   },
-   "zero": [
-    "Fel Concentration",
-    "Grim Reach",
-    "Improved Drains",
-    "Improved Shadow Bolt"
-   ]
-  },
-  {
-   "weighted": 30.745,
-   "values_at_60": {
-    "Demonic Aegis": 0.0,
-    "Demonic Embrace": -0.053,
-    "Demonic Energies": -0.065,
-    "Fel Concentration": -0.023,
-    "Grim Reach": -0.03,
-    "Improved Drains": -0.061,
-    "Improved Voidwalker": -0.26,
-    "Malevolence": -0.219,
-    "Soul Siphon": -0.174,
-    "Wrack": -3.215
-   },
-   "zero": [
-    "Demonic Aegis",
-    "Demonic Embrace",
-    "Demonic Energies",
-    "Fel Concentration",
-    "Grim Reach",
-    "Improved Drains"
-   ]
-  },
-  {
-   "weighted": 30.745,
-   "values_at_60": {
-    "Curse of Exhaustion": 0.0,
-    "Demonic Embrace": -0.081,
-    "Demonic Energies": -0.207,
-    "Fel Concentration": -0.113,
-    "Grim Reach": -0.029,
-    "Improved Drains": -0.121,
-    "Improved Voidwalker": -0.252,
-    "Malevolence": -0.197,
-    "Soul Siphon": -0.355,
-    "Wrack": -3.216
-   },
-   "zero": [
-    "Curse of Exhaustion",
-    "Demonic Embrace",
-    "Grim Reach"
-   ]
-  },
-  {
-   "weighted": 30.73,
-   "values_at_60": {
-    "Demonic Embrace": -0.045,
-    "Demonic Energies": -0.095,
-    "Fel Concentration": -0.007,
-    "Grim Reach": -0.093,
-    "Improved Drains": -0.087,
-    "Improved Voidwalker": -0.257,
-    "Malevolence": -0.13,
-    "Soul Siphon": -0.268,
-    "Wrack": -3.323
-   },
-   "zero": [
-    "Demonic Embrace",
-    "Fel Concentration",
-    "Grim Reach",
-    "Improved Drains"
-   ]
-  },
-  {
-   "weighted": 30.732,
-   "values_at_60": {
-    "Demonic Embrace": -0.086,
-    "Demonic Energies": -0.117,
+    "Demonic Energies": -0.179,
     "Destructive Reach": 0.0,
-    "Fel Concentration": -0.137,
-    "Grim Reach": -0.142,
-    "Improved Drains": -0.193,
-    "Improved Voidwalker": -0.33,
-    "Malevolence": -0.158,
-    "Soul Siphon": -0.278,
-    "Wrack": -3.315
-   },
-   "zero": [
-    "Demonic Embrace",
-    "Destructive Reach"
-   ]
-  },
-  {
-   "weighted": 30.737,
-   "values_at_60": {
-    "Demonic Energies": -0.116,
-    "Destructive Reach": 0.0,
-    "Fel Concentration": -0.026,
-    "Grim Reach": -0.053,
-    "Improved Drains": -0.096,
-    "Improved Voidwalker": -0.271,
-    "Malevolence": -0.134,
-    "Soul Siphon": -0.226,
-    "Wrack": -3.255
+    "Fel Concentration": -0.051,
+    "Grim Reach": -0.145,
+    "Improved Drains": -0.161,
+    "Improved Voidwalker": -0.299,
+    "Malevolence": -0.194,
+    "Soul Siphon": -0.365,
+    "Wrack": -3.32
    },
    "zero": [
     "Destructive Reach",
-    "Fel Concentration",
-    "Grim Reach"
+    "Fel Concentration"
+   ]
+  },
+  {
+   "weighted": 30.676,
+   "values_at_60": {
+    "Curse of Exhaustion": 0.0,
+    "Demonic Energies": -0.179,
+    "Fel Concentration": -0.051,
+    "Grim Reach": -0.145,
+    "Improved Drains": -0.161,
+    "Improved Voidwalker": -0.299,
+    "Malevolence": -0.194,
+    "Soul Siphon": -0.365,
+    "Wrack": -3.32
+   },
+   "zero": [
+    "Curse of Exhaustion",
+    "Fel Concentration"
+   ]
+  },
+  {
+   "weighted": 30.704,
+   "values_at_60": {
+    "Curse of Exhaustion": 0.0,
+    "Demonic Energies": -0.12,
+    "Fel Concentration": -0.178,
+    "Grim Reach": -0.088,
+    "Improved Drains": -0.026,
+    "Improved Health Funnel": 0.0,
+    "Improved Voidwalker": -0.285,
+    "Malevolence": -0.202,
+    "Soul Siphon": -0.263,
+    "Wrack": -3.3
+   },
+   "zero": [
+    "Curse of Exhaustion",
+    "Grim Reach",
+    "Improved Drains",
+    "Improved Health Funnel"
+   ]
+  },
+  {
+   "weighted": 30.708,
+   "values_at_60": {
+    "Curse of Exhaustion": 0.0,
+    "Demonic Energies": -0.218,
+    "Demonic Sacrifice": 0.0,
+    "Fel Concentration": -0.089,
+    "Grim Reach": -0.229,
+    "Improved Drains": -0.172,
+    "Malevolence": -0.174,
+    "Soul Siphon": -0.389,
+    "Wrack": -3.246
+   },
+   "zero": [
+    "Curse of Exhaustion",
+    "Demonic Sacrifice",
+    "Fel Concentration"
    ]
   }
  ],
@@ -367,6 +320,30 @@
    "level": 57,
    "seed3": 0.0002,
    "seed4": -0.0007,
+   "why": "no loss"
+  },
+  {
+   "from": "Destructive Reach",
+   "to": "Curse of Exhaustion",
+   "level": 56,
+   "seed3": 0.0,
+   "seed4": 0.0,
+   "why": "no loss"
+  },
+  {
+   "from": "Fel Concentration",
+   "to": "Improved Health Funnel",
+   "level": 52,
+   "seed3": 0.0009,
+   "seed4": 0.0006,
+   "why": "no loss"
+  },
+  {
+   "from": "Improved Drains",
+   "to": "Demonic Sacrifice",
+   "level": 58,
+   "seed3": 0.0001,
+   "seed4": 0.0004,
    "why": "no loss"
   }
  ],
@@ -499,10 +476,16 @@
    "points": 1
   },
   {
-   "levels": "51-52",
+   "levels": "51",
    "tree": "Affliction",
    "talent": "Fel Concentration",
-   "points": 2
+   "points": 1
+  },
+  {
+   "levels": "52",
+   "tree": "Demonology",
+   "talent": "Improved Health Funnel",
+   "points": 1
   },
   {
    "levels": "53-55",
@@ -512,8 +495,8 @@
   },
   {
    "levels": "56",
-   "tree": "Destruction",
-   "talent": "Destructive Reach",
+   "tree": "Affliction",
+   "talent": "Curse of Exhaustion",
    "points": 1
   },
   {
@@ -524,8 +507,8 @@
   },
   {
    "levels": "58",
-   "tree": "Affliction",
-   "talent": "Improved Drains",
+   "tree": "Demonology",
+   "talent": "Demonic Sacrifice",
    "points": 1
   },
   {
@@ -562,7 +545,7 @@
     ],
     [
      "Improved Drains",
-     3
+     2
     ],
     [
      "Improved Bane of Agony",
@@ -570,7 +553,7 @@
     ],
     [
      "Fel Concentration",
-     2
+     1
     ],
     [
      "Amplify Curse",
@@ -583,6 +566,10 @@
     [
      "Malevolence",
      5
+    ],
+    [
+     "Curse of Exhaustion",
+     1
     ],
     [
      "Siphon Life",
@@ -603,6 +590,10 @@
    ],
    "Demonology": [
     [
+     "Improved Health Funnel",
+     1
+    ],
+    [
      "Unholy Power",
      5
     ],
@@ -613,14 +604,13 @@
     [
      "Demonic Energies",
      2
-    ]
-   ],
-   "Destruction": [
+    ],
     [
-     "Destructive Reach",
+     "Demonic Sacrifice",
      1
     ]
-   ]
+   ],
+   "Destruction": []
   },
   "order": [
    {
@@ -750,10 +740,16 @@
     "points": 1
    },
    {
-    "levels": "51-52",
+    "levels": "51",
     "tree": "Affliction",
     "talent": "Fel Concentration",
-    "points": 2
+    "points": 1
+   },
+   {
+    "levels": "52",
+    "tree": "Demonology",
+    "talent": "Improved Health Funnel",
+    "points": 1
    },
    {
     "levels": "53-55",
@@ -763,8 +759,8 @@
    },
    {
     "levels": "56",
-    "tree": "Destruction",
-    "talent": "Destructive Reach",
+    "tree": "Affliction",
+    "talent": "Curse of Exhaustion",
     "points": 1
    },
    {
@@ -775,8 +771,8 @@
    },
    {
     "levels": "58",
-    "tree": "Affliction",
-    "talent": "Improved Drains",
+    "tree": "Demonology",
+    "talent": "Demonic Sacrifice",
     "points": 1
    },
    {
@@ -792,6 +788,6 @@
     "points": 1
    }
   ],
-  "note": "2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Shadow Bolt to Demonic Energies at 60 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Demonic Aegis to Curse of Exhaustion at 58 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Curse of Exhaustion to Improved Drains at 58 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Fel Concentration to Destructive Reach at 56 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Demonic Embrace to Grim Reach at 57 (no loss: +0.0% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing moved: Improved Drains to Malevolence at 44 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Energies to Fel Concentration at 56 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Sacrifice to Grim Reach at 59 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Demonic Embrace to Demonic Aegis at 58 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Sayaad to Improved Shadow Bolt at 60 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill)."
+  "note": "2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Destructive Reach to Curse of Exhaustion at 56 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Fel Concentration to Improved Health Funnel at 52 (no loss: +0.1% seed 3, +0.1% seed 4, level-weighted time per kill); Improved Drains to Demonic Sacrifice at 58 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Shadow Bolt to Demonic Energies at 60 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Demonic Aegis to Curse of Exhaustion at 58 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Curse of Exhaustion to Improved Drains at 58 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Fel Concentration to Destructive Reach at 56 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Demonic Embrace to Grim Reach at 57 (no loss: +0.0% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing moved: Improved Drains to Malevolence at 44 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Energies to Fel Concentration at 56 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Sacrifice to Grim Reach at 59 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Demonic Embrace to Demonic Aegis at 58 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Sayaad to Improved Shadow Bolt at 60 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill)."
  }
 }

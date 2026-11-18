@@ -3,7 +3,7 @@
  "spec": "Marksmanship",
  "build": "marksmanship-open-leveling",
  "rotation": "mm-raid",
- "date": "2026-11-15",
+ "date": "2026-11-17",
  "fights": 1500,
  "start_order": [
   {
@@ -111,15 +111,55 @@
  ],
  "steps": [
   {
-   "weighted": 22.554,
+   "weighted": 22.533,
    "values_at_60": {
-    "Bestial Discipline": -0.086,
+    "Bestial Discipline": -0.051,
     "Ranged Weapon Specialization": -0.112
+   },
+   "zero": [
+    "Bestial Discipline"
+   ]
+  },
+  {
+   "weighted": 22.528,
+   "values_at_60": {
+    "Ferocity": -0.106,
+    "Improved Tracking": -0.08,
+    "Ranged Weapon Specialization": -0.072
+   },
+   "zero": [
+    "Ranged Weapon Specialization"
+   ]
+  },
+  {
+   "weighted": 22.531,
+   "values_at_60": {
+    "Ferocity": -0.119,
+    "Improved Tracking": -0.079,
+    "Ranged Weapon Specialization": -0.077
    },
    "zero": []
   }
  ],
- "moves": [],
+ "moves": [
+  {
+   "from": "Bestial Discipline",
+   "to": "Improved Tracking",
+   "level": 60,
+   "seed3": -0.0002,
+   "seed4": 0.0007,
+   "why": "no loss"
+  },
+  {
+   "from": "Ranged Weapon Specialization",
+   "to": "Improved Tracking",
+   "level": 39,
+   "seed3": 0.0001,
+   "seed4": -0.0005,
+   "why": "no loss"
+  }
+ ],
+ "kept_signature": [],
  "final_order": [
   {
    "levels": "10-14",
@@ -176,10 +216,16 @@
    "points": 3
   },
   {
-   "levels": "35-39",
+   "levels": "35-38",
    "tree": "Marksmanship",
    "talent": "Ranged Weapon Specialization",
-   "points": 5
+   "points": 4
+  },
+  {
+   "levels": "39",
+   "tree": "Survival",
+   "talent": "Improved Tracking",
+   "points": 1
   },
   {
    "levels": "40-44",
@@ -219,9 +265,194 @@
   },
   {
    "levels": "60",
-   "tree": "Beast Mastery",
-   "talent": "Bestial Discipline",
+   "tree": "Survival",
+   "talent": "Improved Tracking",
    "points": 1
   }
- ]
+ ],
+ "written": {
+  "allocation": {
+   "Beast Mastery": [
+    [
+     "Deadly Aspects",
+     5
+    ],
+    [
+     "Endurance Training",
+     1
+    ],
+    [
+     "Focused Fire",
+     2
+    ],
+    [
+     "Improved Aspect of the Monkey",
+     2
+    ],
+    [
+     "Unleashed Fury",
+     5
+    ],
+    [
+     "Ferocity",
+     5
+    ]
+   ],
+   "Marksmanship": [
+    [
+     "Lethal Attacks",
+     5
+    ],
+    [
+     "Improved Stings",
+     3
+    ],
+    [
+     "Efficiency",
+     5
+    ],
+    [
+     "Careful Aim",
+     5
+    ],
+    [
+     "Rapid Killing",
+     2
+    ],
+    [
+     "Trueshot Aura",
+     1
+    ],
+    [
+     "Rapid Recuperation",
+     1
+    ],
+    [
+     "Barrage",
+     3
+    ],
+    [
+     "Ranged Weapon Specialization",
+     4
+    ]
+   ],
+   "Survival": [
+    [
+     "Improved Tracking",
+     2
+    ]
+   ]
+  },
+  "order": [
+   {
+    "levels": "10-14",
+    "tree": "Marksmanship",
+    "talent": "Lethal Attacks",
+    "points": 5
+   },
+   {
+    "levels": "15-19",
+    "tree": "Marksmanship",
+    "talent": "Careful Aim",
+    "points": 5
+   },
+   {
+    "levels": "20-22",
+    "tree": "Marksmanship",
+    "talent": "Improved Stings",
+    "points": 3
+   },
+   {
+    "levels": "23-24",
+    "tree": "Marksmanship",
+    "talent": "Rapid Killing",
+    "points": 2
+   },
+   {
+    "levels": "25",
+    "tree": "Marksmanship",
+    "talent": "Trueshot Aura",
+    "points": 1
+   },
+   {
+    "levels": "26-29",
+    "tree": "Marksmanship",
+    "talent": "Efficiency",
+    "points": 4
+   },
+   {
+    "levels": "30",
+    "tree": "Marksmanship",
+    "talent": "Rapid Recuperation",
+    "points": 1
+   },
+   {
+    "levels": "31",
+    "tree": "Marksmanship",
+    "talent": "Efficiency",
+    "points": 1
+   },
+   {
+    "levels": "32-34",
+    "tree": "Marksmanship",
+    "talent": "Barrage",
+    "points": 3
+   },
+   {
+    "levels": "35-38",
+    "tree": "Marksmanship",
+    "talent": "Ranged Weapon Specialization",
+    "points": 4
+   },
+   {
+    "levels": "39",
+    "tree": "Survival",
+    "talent": "Improved Tracking",
+    "points": 1
+   },
+   {
+    "levels": "40-44",
+    "tree": "Beast Mastery",
+    "talent": "Deadly Aspects",
+    "points": 5
+   },
+   {
+    "levels": "45-46",
+    "tree": "Beast Mastery",
+    "talent": "Focused Fire",
+    "points": 2
+   },
+   {
+    "levels": "47",
+    "tree": "Beast Mastery",
+    "talent": "Endurance Training",
+    "points": 1
+   },
+   {
+    "levels": "48-49",
+    "tree": "Beast Mastery",
+    "talent": "Improved Aspect of the Monkey",
+    "points": 2
+   },
+   {
+    "levels": "50-54",
+    "tree": "Beast Mastery",
+    "talent": "Unleashed Fury",
+    "points": 5
+   },
+   {
+    "levels": "55-59",
+    "tree": "Beast Mastery",
+    "talent": "Ferocity",
+    "points": 5
+   },
+   {
+    "levels": "60",
+    "tree": "Survival",
+    "talent": "Improved Tracking",
+    "points": 1
+   }
+  ],
+  "note": "2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Bestial Discipline to Improved Tracking at 60 (no loss: -0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Ranged Weapon Specialization to Improved Tracking at 39 (no loss: +0.0% seed 3, -0.1% seed 4, level-weighted time per kill)."
+ }
 }

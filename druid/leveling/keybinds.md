@@ -150,4 +150,4 @@ Shift+1 holds **Hurricane** from 40. The emergency heal in Moonkin Form is E (ro
 Shift+Q (back in); the Regrowth macro on the [macros page](../macros.md) makes it two presses. No key holds Attack.
 
 **Restoration** levels as a cat, so it keeps the Feral layout. **Swiftmend** (36) takes the middle mouse button of the caster bar,
-**Tranquility** (30) Shift+1 and **Nature's Swiftness** (54) Shift+2; E on the Cat Form bar stays free (no **Feral Charge** in the build).
+**Tranquility** (30) Shift+1 and **Wild Growth** (60) Shift+2; E on the Cat Form bar stays free (no **Feral Charge** in the build).

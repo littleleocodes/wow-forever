@@ -1,14 +1,14 @@
 {
  "class": "hunter",
- "date": "2026-11-15",
+ "date": "2026-11-18",
  "fights": 400,
  "seed": 3,
  "guides": {
   "Hybrid Beast Mastery/Survival": {
-   "build": "beast-survival-open-leveling",
+   "build": "opt-melee-dps-leveling-st",
    "rotation": "melee-dps",
    "provisional_order": false,
-   "fingerprint": "9e713504b4ef",
+   "fingerprint": "7cc71c6e8fcd",
    "levels": {
     "1": {
      "seconds": 9.8,
@@ -110,98 +110,103 @@
      }
     },
     "29": {
-     "seconds": 18.6,
+     "seconds": 18.8,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.19,
       "Serpent Sting": 1.0,
-      "Growl": 2.23,
+      "Growl": 2.25,
       "Bite": 1.18,
-      "Claw": 5.28,
+      "Claw": 5.32,
       "Immolation Trap": 0.51,
-      "Melee": 3.1,
-      "Melee (off-hand)": 3.84,
-      "Raptor Strike": 0.74
+      "Melee": 3.11,
+      "Melee (off-hand)": 3.91,
+      "Raptor Strike": 0.8
      }
     },
     "30": {
-     "seconds": 18.3,
+     "seconds": 19.6,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 1.18,
+      "Auto Shot": 1.17,
       "Serpent Sting": 1.0,
-      "Growl": 2.21,
-      "Bite": 1.16,
-      "Claw": 5.27,
-      "Lacerate": 0.56,
-      "Melee": 3.1,
-      "Melee (off-hand)": 3.83,
-      "Immolation Trap": 0.49,
-      "Raptor Strike": 0.73
+      "Growl": 2.13,
+      "Bite": 1.12,
+      "Claw": 5.15,
+      "Lacerate": 0.18,
+      "Melee": 3.12,
+      "Melee (off-hand)": 3.64,
+      "Immolation Trap": 0.53,
+      "Strider Kick": 0.99,
+      "Raptor Strike": 0.53
      }
     },
     "39": {
-     "seconds": 20.6,
+     "seconds": 21.3,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.17,
       "Serpent Sting": 1.0,
-      "Growl": 2.66,
-      "Bite": 1.5,
-      "Claw": 5.76,
-      "Lacerate": 0.12,
-      "Melee": 3.92,
-      "Melee (off-hand)": 4.76,
-      "Immolation Trap": 1.0,
-      "Raptor Strike": 0.83
+      "Growl": 2.77,
+      "Bite": 1.59,
+      "Claw": 5.85,
+      "Lacerate": 0.21,
+      "Melee": 4.22,
+      "Melee (off-hand)": 4.9,
+      "Immolation Trap": 0.54,
+      "Strider Kick": 0.99,
+      "Raptor Strike": 0.69
      }
     },
     "40": {
-     "seconds": 21.0,
+     "seconds": 21.5,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.17,
       "Serpent Sting": 1.0,
-      "Growl": 2.65,
-      "Bite": 1.52,
-      "Claw": 5.79,
-      "Lacerate": 0.18,
-      "Melee": 4.07,
-      "Melee (off-hand)": 4.94,
-      "Immolation Trap": 1.0,
-      "Raptor Strike": 0.84
+      "Growl": 2.77,
+      "Bite": 1.6,
+      "Claw": 5.87,
+      "Lacerate": 0.17,
+      "Melee": 4.25,
+      "Melee (off-hand)": 4.96,
+      "Immolation Trap": 0.55,
+      "Strider Kick": 0.99,
+      "Raptor Strike": 0.71
      }
     },
     "50": {
-     "seconds": 22.1,
+     "seconds": 23.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.15,
       "Serpent Sting": 1.0,
-      "Growl": 2.79,
-      "Bite": 1.57,
-      "Claw": 5.92,
-      "Lacerate": 0.2,
-      "Melee": 4.37,
-      "Melee (off-hand)": 5.29,
-      "Immolation Trap": 1.0,
-      "Raptor Strike": 0.87
+      "Growl": 2.98,
+      "Bite": 1.69,
+      "Claw": 6.13,
+      "Lacerate": 0.19,
+      "Melee": 4.93,
+      "Melee (off-hand)": 5.72,
+      "Immolation Trap": 0.58,
+      "Strider Kick": 1.0,
+      "Raptor Strike": 0.78
      }
     },
     "60": {
-     "seconds": 22.7,
+     "seconds": 24.5,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 1.09,
+      "Auto Shot": 1.1,
       "Serpent Sting": 1.0,
-      "Growl": 2.95,
-      "Bite": 1.0,
-      "Claw": 8.15,
-      "Lacerate": 0.19,
-      "Melee": 4.67,
-      "Melee (off-hand)": 5.6,
-      "Immolation Trap": 1.0,
-      "Raptor Strike": 0.91
+      "Growl": 3.12,
+      "Bite": 1.81,
+      "Claw": 6.25,
+      "Lacerate": 0.24,
+      "Melee": 5.18,
+      "Melee (off-hand)": 6.04,
+      "Immolation Trap": 0.88,
+      "Strider Kick": 1.0,
+      "Raptor Strike": 0.82
      }
     }
    }
@@ -210,7 +215,7 @@
    "build": "beast-mastery-open-leveling",
    "rotation": "bm-leveling",
    "provisional_order": false,
-   "fingerprint": "7014bda44ba7",
+   "fingerprint": "fc54ad4c6823",
    "levels": {
     "1": {
      "seconds": 10.3,
@@ -380,7 +385,7 @@
       "Bestial Wrath": 0.18,
       "Auto Shot": 6.04,
       "Hunter's Mark": 1.0,
-      "Growl": 2.73,
+      "Growl": 2.75,
       "Bite": 1.0,
       "Claw": 7.55,
       "Serpent Sting": 1.03,
@@ -388,20 +393,20 @@
      }
     },
     "60": {
-     "seconds": 25.2,
+     "seconds": 25.3,
      "deaths_per_100": 0.0,
      "casts": {
       "Bestial Wrath": 0.19,
-      "Auto Shot": 5.86,
+      "Auto Shot": 5.87,
       "Hunter's Mark": 1.0,
-      "Growl": 2.73,
-      "Bite": 0.99,
-      "Claw": 7.74,
-      "Serpent Sting": 1.04,
-      "Aimed Shot": 1.03,
-      "Feign Death": 0.25,
+      "Growl": 2.74,
+      "Bite": 1.0,
+      "Claw": 7.75,
+      "Serpent Sting": 1.03,
+      "Aimed Shot": 1.04,
+      "Feign Death": 0.24,
       "Melee": 0.07,
-      "Wing Clip": 0.05
+      "Wing Clip": 0.06
      }
     }
    }
@@ -410,7 +415,7 @@
    "build": "marksmanship-open-leveling",
    "rotation": "mm-raid",
    "provisional_order": false,
-   "fingerprint": "5a94d22137bd",
+   "fingerprint": "9c9d42781e0d",
    "levels": {
     "1": {
      "seconds": 10.3,
@@ -562,7 +567,7 @@
      "seconds": 22.7,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 4.23,
+      "Auto Shot": 4.22,
       "Hunter's Mark": 1.0,
       "Growl": 2.04,
       "Bite": 1.25,
@@ -581,36 +586,36 @@
      "casts": {
       "Auto Shot": 4.89,
       "Hunter's Mark": 1.0,
-      "Growl": 2.24,
+      "Growl": 2.23,
       "Bite": 1.4,
       "Claw": 5.12,
       "Serpent Sting": 1.02,
-      "Aimed Shot": 1.07,
-      "Arcane Shot": 0.92,
+      "Aimed Shot": 1.08,
+      "Arcane Shot": 0.91,
       "Melee": 0.35,
       "Feign Death": 0.3,
       "Wing Clip": 0.12,
-      "Raptor Strike": 0.11,
+      "Raptor Strike": 0.12,
       "Mongoose Bite": 0.07
      }
     },
     "60": {
-     "seconds": 25.0,
+     "seconds": 24.9,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 4.95,
+      "Auto Shot": 4.81,
       "Hunter's Mark": 1.0,
-      "Growl": 2.37,
-      "Bite": 1.26,
-      "Claw": 6.26,
+      "Growl": 2.35,
+      "Bite": 1.48,
+      "Claw": 5.46,
       "Serpent Sting": 1.03,
       "Aimed Shot": 1.06,
-      "Feign Death": 0.35,
-      "Arcane Shot": 0.87,
-      "Melee": 0.38,
-      "Wing Clip": 0.15,
-      "Raptor Strike": 0.14,
-      "Mongoose Bite": 0.06
+      "Arcane Shot": 0.84,
+      "Melee": 0.45,
+      "Raptor Strike": 0.17,
+      "Feign Death": 0.36,
+      "Wing Clip": 0.16,
+      "Mongoose Bite": 0.08
      }
     }
    }
@@ -619,7 +624,7 @@
    "build": "survival-open-leveling",
    "rotation": "melee-dps",
    "provisional_order": false,
-   "fingerprint": "8155a0cd0870",
+   "fingerprint": "874dce4e43f2",
    "levels": {
     "1": {
      "seconds": 9.8,
@@ -806,8 +811,8 @@
       "Serpent Sting": 1.0,
       "Growl": 2.76,
       "Bite": 1.56,
-      "Claw": 5.86,
-      "Lacerate": 0.2,
+      "Claw": 5.87,
+      "Lacerate": 0.21,
       "Melee": 4.04,
       "Melee (off-hand)": 4.8,
       "Immolation Trap": 1.0,
@@ -816,56 +821,56 @@
      }
     },
     "53": {
-     "seconds": 23.0,
+     "seconds": 22.8,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 1.22,
+      "Auto Shot": 1.21,
       "Serpent Sting": 1.0,
       "Growl": 2.95,
-      "Bite": 1.7,
-      "Claw": 6.06,
-      "Lacerate": 0.18,
-      "Melee": 4.49,
-      "Melee (off-hand)": 5.34,
+      "Bite": 1.68,
+      "Claw": 6.04,
+      "Lacerate": 0.23,
+      "Melee": 4.39,
+      "Melee (off-hand)": 5.17,
       "Immolation Trap": 1.0,
-      "Raptor Strike": 0.89,
-      "Mongoose Bite": 0.12
+      "Raptor Strike": 0.88,
+      "Mongoose Bite": 0.1
      }
     },
     "54": {
      "seconds": 23.2,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 1.24,
+      "Auto Shot": 1.22,
       "Serpent Sting": 1.0,
       "Growl": 2.92,
-      "Bite": 1.65,
-      "Claw": 6.0,
+      "Bite": 1.66,
+      "Claw": 5.98,
       "Lacerate": 0.25,
-      "Melee": 4.5,
-      "Melee (off-hand)": 5.18,
+      "Melee": 4.43,
+      "Melee (off-hand)": 5.11,
       "Immolation Trap": 1.0,
-      "Strider Kick": 1.0,
-      "Raptor Strike": 0.73,
-      "Mongoose Bite": 0.1
+      "Strider Kick": 0.99,
+      "Raptor Strike": 0.74,
+      "Mongoose Bite": 0.09
      }
     },
     "60": {
-     "seconds": 23.5,
+     "seconds": 22.8,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.09,
       "Serpent Sting": 1.0,
-      "Growl": 2.9,
-      "Bite": 1.68,
-      "Claw": 6.0,
-      "Lacerate": 0.23,
-      "Melee": 4.57,
-      "Melee (off-hand)": 5.19,
+      "Growl": 2.84,
+      "Bite": 1.64,
+      "Claw": 5.96,
+      "Lacerate": 0.27,
+      "Melee": 4.38,
+      "Melee (off-hand)": 4.96,
       "Immolation Trap": 1.0,
       "Strider Kick": 0.99,
-      "Raptor Strike": 0.79,
-      "Mongoose Bite": 0.24
+      "Raptor Strike": 0.71,
+      "Mongoose Bite": 0.31
      }
     }
    }
@@ -874,7 +879,7 @@
    "build": "beast-marks-open-leveling",
    "rotation": "bm-leveling",
    "provisional_order": false,
-   "fingerprint": "89fb759c11b4",
+   "fingerprint": "03b61cfaed5c",
    "levels": {
     "1": {
      "seconds": 10.3,
@@ -1049,13 +1054,13 @@
      }
     },
     "50": {
-     "seconds": 23.8,
+     "seconds": 23.7,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 5.9,
+      "Auto Shot": 5.93,
       "Hunter's Mark": 1.0,
       "Growl": 2.58,
-      "Bite": 1.58,
+      "Bite": 1.59,
       "Claw": 5.43,
       "Serpent Sting": 1.02,
       "Aimed Shot": 1.06,

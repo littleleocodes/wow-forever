@@ -9,7 +9,10 @@ simulator's stat weights for the spec's best build, trinkets and variants raced)
 points (before 2026-11-13 every spec read its class's first tree: pawn_scales.tree_points) (characters/pawn_scales.py: "+N Spell Power" 0, ratings times Classic's factors, no caps), the two trinkets with the
 highest Pawn score, the relic and enchants kept. Both race the spec's best build in a full raid (seeds 1 and 2). Unlike the leveling race,
 the simulator is not where our numbers come from by construction: its own engine plays the real items (procs, set bonuses, caps).
-Record raidsim/pawn-raid-compare.json; characters/pawn_compare.py --write puts it on _reference/pawn-comparison.md.
+Record raidsim/pawn-raid-compare.json; characters/pawn_compare.py --write puts it on _reference/pawn-comparison.md, and
+characters/addon_values.py takes each class's default raid spec from its `ours_dps`. A run for some classes keeps the other classes' rows,
+each with the date of its own run (2026-11-18: a class run had written only its classes, which would have left every other class's
+default at its first listed spec).
 """
 import argparse
 import datetime
@@ -103,12 +106,18 @@ def main():
         diff = {i: (name(pawn, i), name(ours, i)) for i in range(17) if (pawn[i].get("id") if i < len(pawn) else None) != (ours[i].get("id") if i < len(ours) else None)}
         row = {"class": cls, "spec": rec["spec"], "build": b["id"], "entry": entry_name, "pawn_scale": f"{cls} {PC.TREES[cls][ti - 1]}",
                "ours_dps": round(o, 1), "pawn_dps": round(p, 1), "ours_ahead": round(o / p - 1, 4) if p else None,
-               "slots_differ": len(diff), "diff": {str(k): {"pawn": v[0], "ours": v[1]} for k, v in diff.items()}}
+               "slots_differ": len(diff), "diff": {str(k): {"pawn": v[0], "ours": v[1]} for k, v in diff.items()},
+               "date": datetime.date.today().isoformat()}
         rows.append(row)
         print(f"{cls:8s} {rec['spec'][:30]:30s}: ours {o:7.1f}, Pawn {p:7.1f} ({100 * row['ours_ahead']:+.1f}%), {len(diff)} slots differ", flush=True)
+    rec_path = HERE / "pawn-raid-compare.json"
+    if a.classes and rec_path.exists():   # a run for some classes keeps the other classes' rows (sorted by class, stable within one)
+        old = json.loads(rec_path.read_text(encoding="utf-8"))
+        rows = sorted([dict(r, date=r.get("date") or old.get("date")) for r in old.get("rows", []) if r.get("class") not in a.classes]
+                      + rows, key=lambda r: r["class"])
     rec = {"date": datetime.date.today().isoformat(), "iterations": a.iterations, "seeds": [1, 2], "setting": "raid", "rows": rows,
            "pawn": "Pawn 2.14.2, ClassicHawsJon.lua Forever weights"}
-    (HERE / "pawn-raid-compare.json").write_text(json.dumps(rec, indent=1) + "\n", encoding="utf-8", newline="\n")
+    rec_path.write_text(json.dumps(rec, indent=1) + "\n", encoding="utf-8", newline="\n")
 
 
 if __name__ == "__main__":

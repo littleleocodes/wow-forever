@@ -971,6 +971,7 @@
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
     },
     "enhancement-dps": {
+      "buffs_off": ["windfury_totem"],
       "apl_opt_raid": "_reference/data/raidsim/apls/shaman/enhancement-dps-raid.apl.json",
       "apl_opt": "_reference/data/raidsim/apls/shaman/enhancement-dps.apl.json",
       "sim_class": "ClassShaman",

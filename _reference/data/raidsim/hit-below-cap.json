@@ -1,5 +1,5 @@
 {
- "date": "2026-11-17",
+ "date": "2026-11-18",
  "iterations": 6000,
  "unit": "DPS per point (the ML record's weights' unit)",
  "specs": {
@@ -8,189 +8,216 @@
    "hit_below_cap": 0.6896,
    "spell_damage": 0.6142,
    "attack_power": 0,
-   "at_bis": 0.6747
+   "at_bis": 0.6747,
+   "date": "2026-11-17"
   },
   "druid-feral-combat": {
    "gear_hit_rating": 20,
    "hit_below_cap": 0.5189,
    "spell_damage": 0,
    "attack_power": 0.2603,
-   "at_bis": 0.5677
+   "at_bis": 0.5677,
+   "date": "2026-11-17"
   },
   "hunter-hybrid-beast-mastery-marksmanship": {
    "gear_hit_rating": 70,
    "hit_below_cap": 1.046,
    "spell_damage": 0,
    "attack_power": 0,
-   "at_bis": 0.853
+   "at_bis": 0.853,
+   "date": "2026-11-17"
   },
   "hunter-marksmanship": {
    "gear_hit_rating": 63,
    "hit_below_cap": 0.8674,
    "spell_damage": 0,
    "attack_power": 0,
-   "at_bis": 0.8456
+   "at_bis": 0.8456,
+   "date": "2026-11-17"
   },
   "hunter-survival": {
    "gear_hit_rating": 60,
    "hit_below_cap": 0.966,
    "spell_damage": 0,
    "attack_power": 0.2171,
-   "at_bis": 0.4875
+   "at_bis": 0.4875,
+   "date": "2026-11-17"
   },
   "mage-arcane": {
    "gear_hit_rating": 80,
    "hit_below_cap": 0.8004,
    "spell_damage": 0.4494,
    "attack_power": 0,
-   "at_bis": 0.8323
+   "at_bis": 0.8323,
+   "date": "2026-11-17"
   },
   "mage-fire": {
    "gear_hit_rating": 55,
    "hit_below_cap": 1.2067,
    "spell_damage": 0.6113,
    "attack_power": 0,
-   "at_bis": 1.0863
+   "at_bis": 1.0863,
+   "date": "2026-11-17"
   },
   "mage-frost": {
    "gear_hit_rating": 60,
    "hit_below_cap": 0.7275,
    "spell_damage": 0.4283,
    "attack_power": 0,
-   "at_bis": 0.7446
+   "at_bis": 0.7446,
+   "date": "2026-11-17"
   },
   "mage-hybrid-arcane-frost": {
    "gear_hit_rating": 50,
    "hit_below_cap": 0.6831,
    "spell_damage": 0.4525,
    "attack_power": 0,
-   "at_bis": 0.7793
+   "at_bis": 0.7793,
+   "date": "2026-11-17"
   },
   "mage-hybrid-fire-frost": {
    "gear_hit_rating": 40,
    "hit_below_cap": 0.9318,
    "spell_damage": 0.563,
    "attack_power": 0,
-   "at_bis": 0.7131
+   "at_bis": 0.7131,
+   "date": "2026-11-17"
   },
   "paladin-hybrid-protection-retribution": {
    "gear_hit_rating": 130,
    "hit_below_cap": 0.9777,
    "spell_damage": 0.2495,
    "attack_power": 0.175,
-   "at_bis": 0.9715
+   "at_bis": 0.9715,
+   "date": "2026-11-17"
   },
   "paladin-retribution": {
    "gear_hit_rating": 120,
    "hit_below_cap": 0.8432,
    "spell_damage": 0.2515,
    "attack_power": 0.1723,
-   "at_bis": 1.2849
+   "at_bis": 1.2849,
+   "date": "2026-11-17"
   },
   "priest-hybrid-discipline-holy": {
    "gear_hit_rating": 30,
    "hit_below_cap": 0.2535,
    "spell_damage": 0.4979,
    "attack_power": 0,
-   "at_bis": 0.214
+   "at_bis": 0.214,
+   "date": "2026-11-17"
   },
   "priest-shadow": {
    "gear_hit_rating": 30,
    "hit_below_cap": 0.5778,
    "spell_damage": 0.4921,
    "attack_power": 0,
-   "at_bis": 0.5451
+   "at_bis": 0.5451,
+   "date": "2026-11-17"
   },
   "rogue-assassination": {
    "gear_hit_rating": 87,
    "hit_below_cap": 0.8841,
    "spell_damage": 0,
    "attack_power": 0.2136,
-   "at_bis": 0.5606
+   "at_bis": 0.5606,
+   "date": "2026-11-17"
   },
   "rogue-combat": {
    "gear_hit_rating": 87,
    "hit_below_cap": 0.863,
    "spell_damage": 0,
    "attack_power": 0.2169,
-   "at_bis": 0.5803
+   "at_bis": 0.5803,
+   "date": "2026-11-17"
   },
   "rogue-hybrid-assassination-combat": {
    "gear_hit_rating": 94,
    "hit_below_cap": 1.0312,
    "spell_damage": 0,
    "attack_power": 0.2307,
-   "at_bis": 0.5843
+   "at_bis": 0.5843,
+   "date": "2026-11-17"
   },
   "rogue-hybrid-assassination-subtlety": {
    "gear_hit_rating": 117,
    "hit_below_cap": 1.1955,
    "spell_damage": 0,
    "attack_power": 0.2539,
-   "at_bis": 0.7193
+   "at_bis": 0.7193,
+   "date": "2026-11-17"
   },
   "rogue-subtlety": {
    "gear_hit_rating": 97,
    "hit_below_cap": 1.1974,
    "spell_damage": 0,
    "attack_power": 0.2068,
-   "at_bis": 0.4839
+   "at_bis": 0.4839,
+   "date": "2026-11-17"
   },
   "shaman-elemental": {
    "gear_hit_rating": 50,
    "hit_below_cap": 0.8181,
    "spell_damage": 0.5507,
    "attack_power": 0,
-   "at_bis": 0.9836
+   "at_bis": 0.9836,
+   "date": "2026-11-18"
   },
   "shaman-enhancement": {
    "gear_hit_rating": 57,
-   "hit_below_cap": 1.3038,
-   "spell_damage": 0.2061,
-   "attack_power": 0.1988,
-   "at_bis": 0.3683
+   "hit_below_cap": 1.0319,
+   "spell_damage": 0.202,
+   "attack_power": 0.1627,
+   "at_bis": 0.33,
+   "date": "2026-11-18"
   },
   "shaman-hybrid-elemental-enhancement": {
-   "gear_hit_rating": 50,
-   "hit_below_cap": 0.9365,
-   "spell_damage": 0.4934,
+   "gear_hit_rating": 60,
+   "hit_below_cap": 1.0159,
+   "spell_damage": 0.4952,
    "attack_power": 0,
-   "at_bis": 0.5534
+   "at_bis": 0.577,
+   "date": "2026-11-18"
   },
   "warlock-affliction": {
    "gear_hit_rating": 40,
    "hit_below_cap": 0.8875,
    "spell_damage": 0.6597,
    "attack_power": 0,
-   "at_bis": 0.7909
+   "at_bis": 0.7909,
+   "date": "2026-11-17"
   },
   "warlock-demonology": {
    "gear_hit_rating": 40,
    "hit_below_cap": 1.0292,
    "spell_damage": 0.6429,
    "attack_power": 0,
-   "at_bis": 0.8442
+   "at_bis": 0.8442,
+   "date": "2026-11-17"
   },
   "warlock-destruction": {
    "gear_hit_rating": 40,
    "hit_below_cap": 0.9036,
    "spell_damage": 0.6727,
    "attack_power": 0,
-   "at_bis": 0.8647
+   "at_bis": 0.8647,
+   "date": "2026-11-17"
   },
   "warrior-arms": {
    "gear_hit_rating": 80,
    "hit_below_cap": 1.1879,
    "spell_damage": 0,
    "attack_power": 0.2319,
-   "at_bis": 0.0
+   "at_bis": 0.0,
+   "date": "2026-11-17"
   },
   "warrior-fury": {
    "gear_hit_rating": 120,
    "hit_below_cap": 1.4759,
    "spell_damage": 0,
    "attack_power": 0.2537,
-   "at_bis": 1.103
+   "at_bis": 1.103,
+   "date": "2026-11-17"
   }
  }
 }

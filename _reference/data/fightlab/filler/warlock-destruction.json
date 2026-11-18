@@ -3,7 +3,7 @@
  "spec": "Destruction",
  "build": "destruction-open-leveling",
  "rotation": "destruction-leveling",
- "date": "2026-11-09",
+ "date": "2026-11-18",
  "fights": 1500,
  "start_order": [
   {
@@ -123,33 +123,35 @@
  ],
  "steps": [
   {
-   "weighted": 41.226,
+   "weighted": 39.878,
    "values_at_60": {
-    "Demonic Embrace": 0.022,
-    "Fel Vitality": -0.245,
-    "Fire and Brimstone": -0.475,
-    "Improved Life Tap": -0.19,
-    "Improved Voidwalker": -0.675,
-    "Incinerate": -2.037,
-    "Suppression": -0.358
+    "Demonic Energies": -0.353,
+    "Fel Vitality": -0.08,
+    "Fire and Brimstone": -0.288,
+    "Improved Life Tap": -0.108,
+    "Improved Voidwalker": -1.014,
+    "Incinerate": -2.236,
+    "Suppression": -0.793
    },
    "zero": [
-    "Demonic Embrace"
+    "Fel Vitality",
+    "Improved Life Tap"
    ]
   },
   {
-   "weighted": 41.176,
+   "weighted": 39.879,
    "values_at_60": {
-    "Demonic Energies": -0.283,
-    "Fel Vitality": -0.332,
-    "Fire and Brimstone": -0.548,
-    "Improved Life Tap": -0.091,
-    "Improved Voidwalker": -0.841,
-    "Incinerate": -2.165,
-    "Suppression": -0.641
+    "Demonic Aegis": -0.069,
+    "Demonic Energies": -0.4,
+    "Fel Vitality": -0.207,
+    "Fire and Brimstone": -0.466,
+    "Improved Life Tap": -0.156,
+    "Improved Voidwalker": -0.831,
+    "Incinerate": -2.387,
+    "Suppression": -0.807
    },
    "zero": [
-    "Improved Life Tap"
+    "Demonic Aegis"
    ]
   }
  ],
@@ -177,8 +179,17 @@
    "seed3": -0.0034,
    "seed4": -0.0023,
    "why": "gate"
+  },
+  {
+   "from": "Fel Vitality",
+   "to": "Demonic Aegis",
+   "level": 60,
+   "seed3": 0.0,
+   "seed4": -0.0001,
+   "why": "no loss"
   }
  ],
+ "kept_signature": [],
  "final_order": [
   {
    "levels": "10-14",
@@ -289,10 +300,16 @@
    "points": 1
   },
   {
-   "levels": "59-60",
+   "levels": "59",
    "tree": "Demonology",
    "talent": "Fel Vitality",
-   "points": 2
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Demonology",
+   "talent": "Demonic Aegis",
+   "points": 1
   }
  ],
  "written": {
@@ -313,12 +330,16 @@
      5
     ],
     [
+     "Demonic Aegis",
+     1
+    ],
+    [
      "Improved Voidwalker",
      3
     ],
     [
      "Fel Vitality",
-     2
+     1
     ],
     [
      "Demonic Energies",
@@ -490,12 +511,18 @@
     "points": 1
    },
    {
-    "levels": "59-60",
+    "levels": "59",
     "tree": "Demonology",
     "talent": "Fel Vitality",
-    "points": 2
+    "points": 1
+   },
+   {
+    "levels": "60",
+    "tree": "Demonology",
+    "talent": "Demonic Aegis",
+    "points": 1
    }
   ],
-  "note": "2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Demonic Embrace to Demonic Energies at 58 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Aftermath to Destructive Reach at 16 (gate: -0.1% seed 3, -0.3% seed 4, level-weighted time per kill); Aftermath to Destructive Reach at 15 (gate: -0.3% seed 3, -0.2% seed 4, level-weighted time per kill)."
+  "note": "2026-11-18: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Fel Vitality to Demonic Aegis at 60 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Demonic Embrace to Demonic Energies at 58 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Aftermath to Destructive Reach at 16 (gate: -0.1% seed 3, -0.3% seed 4, level-weighted time per kill); Aftermath to Destructive Reach at 15 (gate: -0.3% seed 3, -0.2% seed 4, level-weighted time per kill)."
  }
 }

@@ -3,7 +3,7 @@
  "spec": "Hybrid Arcane/Frost",
  "build": "arcane-frost-open-leveling",
  "rotation": "barrage-frost-leveling",
- "date": "2026-11-16",
+ "date": "2026-11-17",
  "fights": 1500,
  "start_order": [
   {
@@ -171,11 +171,11 @@
  ],
  "steps": [
   {
-   "weighted": 28.503,
+   "weighted": 27.243,
    "values_at_60": {
-    "Arcane Instability": -0.273,
-    "Arctic Reach": -0.702,
-    "Fingers of Frost": -0.418
+    "Arcane Instability": -0.208,
+    "Arctic Reach": -0.558,
+    "Fingers of Frost": -0.407
    },
    "zero": []
   }

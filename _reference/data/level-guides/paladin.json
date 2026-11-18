@@ -119,6 +119,7 @@
    "between": [
     "Heal yourself back to about 80% with **Holy Light**, or with **Flash of Light** from level 20.",
     "Drink when you are below about a third of your mana: the fight lab's default, which the tuned rules of 2026-11-09 keep (the 2026-11-02 tune drank below 15%, about 0.4% faster per kill; the re-tune did not keep it). Eat only if you are still below 65% of your health after the heals.",
+    "Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. This build seldom sits down, so it saves almost nothing (under 0.3% per kill in the fight lab, 2026-11-16), but it never costs time.",
     "Re-cast **Blessing of Might** when it runs out, and your seal just before each pull.",
     "Visit the trainer every even level for new ranks of your seal and **Holy Strike**."
    ],
@@ -510,6 +511,7 @@
    "between": [
     "Heal yourself back to about 80% with **Holy Light**, or with **Flash of Light** from level 20.",
     "Drink when you are below about a third of your mana: the fight lab's default, which the tuned rules of 2026-11-09 keep. Eat only if you are still below 65% of your health after the heals.",
+    "Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. This build seldom sits down, so it saves almost nothing (under 0.3% per kill in the fight lab, 2026-11-16), but it never costs time.",
     "Re-cast **Blessing of Might** when it runs out, and your seal just before each pull.",
     "Visit the trainer every even level for new ranks of your seal and **Holy Strike**."
    ],
@@ -873,7 +875,7 @@
      ],
      "notes": [
       "**Divine Favor** is off the global cooldown, on a 2-minute cooldown: press it, then the heal.",
-      "**Infusion of Light** (28) and **Oath of Light** (29) are the last points **Holy Shock**'s row asks for: neither changes what you press."
+      "**Illumination** (28) and **Oath of Light** (29) are the last points **Holy Shock**'s row asks for: neither changes what you press."
      ],
      "if_hurt": "Below 40% of your health, with the mob above a fifth of its own: **Divine Protection** first if you are below 30%, then **Hammer of Justice**, then **Holy Light**; **Divine Favor** before the heal if it is ready. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%."
     },
@@ -940,7 +942,8 @@
    ],
    "between": [
     "Heal yourself back to about 80% with **Holy Light**, or with **Flash of Light** from level 20.",
-    "Drink below a quarter of your mana, and eat if you are still below 80% of your health after the heals: the tuned rules of 2026-11-16 (the drinking is the Holy list's own default; its eating default is about two thirds of your health).",
+    "Drink below 15% of your mana, and eat if you are still below 80% of your health after the heals: the tuned rules (eating at 80% since 2026-11-16, against the Holy list's own two thirds; drinking at 15% since 2026-11-17, against its quarter: about 1% faster per kill once you eat while you drink).",
+    "Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. It was 1.4% faster per kill for this build in the fight lab (2026-11-16), and the tuned rules play it.",
     "Re-cast **Blessing of Wisdom** when it runs out, and your seal just before each pull.",
     "Visit the trainer every even level for new ranks of your seal, **Holy Strike** and **Holy Light**."
    ],
@@ -1352,7 +1355,8 @@
    ],
    "between": [
     "Heal yourself back to about 80% with **Holy Light**, or with **Flash of Light** from level 20.",
-    "Drink below a quarter of your mana, and eat if you are still below 80% of your health after the heals: the tuned rules of 2026-11-16 (the drinking is the Holy list's own default; its eating default is about two thirds of your health).",
+    "Drink below 15% of your mana, and eat if you are still below 80% of your health after the heals: the tuned rules (eating at 80% since 2026-11-16, against the Holy list's own two thirds; drinking at 15% since 2026-11-17, against its quarter: about 1% faster per kill once you eat while you drink).",
+    "Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. It was 1.4% faster per kill for this build in the fight lab (2026-11-16), and the tuned rules play it.",
     "Re-cast **Blessing of Wisdom** when it runs out, and your seal just before each pull.",
     "Visit the trainer every even level for new ranks of your seal, **Holy Strike** and **Holy Light**."
    ],
@@ -1777,6 +1781,7 @@
    "between": [
     "Heal yourself back to about 80% with **Holy Light**, or with **Flash of Light** from level 20.",
     "Drink below 15% of your mana: the Protection list's default, which its tuned rules of 2026-11-06 keep. Eat only if you are still below about two thirds of your health after the heals.",
+    "Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. It saves a little for this build (0.6% per kill in the fight lab, 2026-11-16), and the tuned rules play it.",
     "Re-cast **Blessing of Might** when it runs out, your seal just before each pull, and from 49 **Righteous Fury** every 30 minutes.",
     "Visit the trainer every even level for new ranks of your seal and **Holy Strike**."
    ],

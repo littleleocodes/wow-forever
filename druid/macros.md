@@ -138,6 +138,8 @@ Healing. Restoration levels as a cat, with Feral's macros.
 
 ### Instant big heal
 
+For a build with **Nature's Swiftness**: the raid page's 11/0/40 pick takes none (the hand-made build under Other builds does).
+
 ```
 #showtooltip Nature's Swiftness
 /cast Nature's Swiftness

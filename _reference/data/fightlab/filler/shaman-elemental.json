@@ -3,175 +3,9 @@
  "spec": "Elemental",
  "build": "elemental-open-leveling",
  "rotation": "elemental-dps",
- "date": "2026-11-16",
+ "date": "2026-11-17",
  "fights": 1500,
  "start_order": [
-  {
-   "levels": "10-14",
-   "tree": "Restoration",
-   "talent": "Tidal Focus",
-   "points": 5
-  },
-  {
-   "levels": "15-17",
-   "tree": "Restoration",
-   "talent": "Mindfulness",
-   "points": 3
-  },
-  {
-   "levels": "18-22",
-   "tree": "Enhancement",
-   "talent": "Thundering Strikes",
-   "points": 5
-  },
-  {
-   "levels": "23-25",
-   "tree": "Enhancement",
-   "talent": "Mental Dexterity",
-   "points": 3
-  },
-  {
-   "levels": "26-27",
-   "tree": "Enhancement",
-   "talent": "Improved Lightning Shield",
-   "points": 2
-  },
-  {
-   "levels": "28",
-   "tree": "Enhancement",
-   "talent": "Shamanistic Focus",
-   "points": 1
-  },
-  {
-   "levels": "29-33",
-   "tree": "Elemental",
-   "talent": "Convection",
-   "points": 5
-  },
-  {
-   "levels": "34-36",
-   "tree": "Elemental",
-   "talent": "Elemental Alacrity",
-   "points": 3
-  },
-  {
-   "levels": "37-38",
-   "tree": "Elemental",
-   "talent": "Call of Flame",
-   "points": 2
-  },
-  {
-   "levels": "39",
-   "tree": "Elemental",
-   "talent": "Elemental Focus",
-   "points": 1
-  },
-  {
-   "levels": "40",
-   "tree": "Elemental",
-   "talent": "Call of Flame",
-   "points": 1
-  },
-  {
-   "levels": "41-44",
-   "tree": "Elemental",
-   "talent": "Concussion",
-   "points": 4
-  },
-  {
-   "levels": "45-47",
-   "tree": "Elemental",
-   "talent": "Eye of the Storm",
-   "points": 3
-  },
-  {
-   "levels": "48",
-   "tree": "Elemental",
-   "talent": "Reverberation",
-   "points": 1
-  },
-  {
-   "levels": "49-51",
-   "tree": "Elemental",
-   "talent": "Lightning Overload",
-   "points": 3
-  },
-  {
-   "levels": "52",
-   "tree": "Elemental",
-   "talent": "Call of Thunder",
-   "points": 1
-  },
-  {
-   "levels": "53",
-   "tree": "Elemental",
-   "talent": "Reverberation",
-   "points": 1
-  },
-  {
-   "levels": "54-58",
-   "tree": "Elemental",
-   "talent": "Elemental Fury",
-   "points": 5
-  },
-  {
-   "levels": "59",
-   "tree": "Elemental",
-   "talent": "Reverberation",
-   "points": 1
-  },
-  {
-   "levels": "60",
-   "tree": "Elemental",
-   "talent": "Elemental Reach",
-   "points": 1
-  }
- ],
- "steps": [
-  {
-   "weighted": 28.872,
-   "values_at_60": {
-    "Elemental Fury": -0.158,
-    "Elemental Reach": -0.087,
-    "Mindfulness": -0.297,
-    "Reverberation": -0.012,
-    "Shamanistic Focus": -3.075
-   },
-   "zero": [
-    "Reverberation"
-   ]
-  },
-  {
-   "weighted": 28.83,
-   "values_at_60": {
-    "Elemental Fury": -0.216,
-    "Elemental Reach": -0.265,
-    "Mindfulness": -0.368,
-    "Shamanistic Focus": -3.352
-   },
-   "zero": []
-  }
- ],
- "moves": [
-  {
-   "from": "Concussion",
-   "to": "Reverberation",
-   "level": 44,
-   "seed3": -0.0013,
-   "seed4": -0.0014,
-   "why": "gate"
-  },
-  {
-   "from": "Reverberation",
-   "to": "Elemental Reach",
-   "level": 59,
-   "seed3": -0.0015,
-   "seed4": -0.0011,
-   "why": "tie-break"
-  }
- ],
- "kept_signature": [],
- "final_order": [
   {
    "levels": "10-14",
    "tree": "Restoration",
@@ -245,22 +79,161 @@
    "points": 3
   },
   {
-   "levels": "44",
-   "tree": "Elemental",
-   "talent": "Reverberation",
-   "points": 1
-  },
-  {
-   "levels": "45-47",
+   "levels": "44-46",
    "tree": "Elemental",
    "talent": "Eye of the Storm",
    "points": 3
   },
   {
-   "levels": "48",
+   "levels": "47-48",
+   "tree": "Elemental",
+   "talent": "Reverberation",
+   "points": 2
+  },
+  {
+   "levels": "49-51",
+   "tree": "Elemental",
+   "talent": "Lightning Overload",
+   "points": 3
+  },
+  {
+   "levels": "52",
+   "tree": "Elemental",
+   "talent": "Call of Thunder",
+   "points": 1
+  },
+  {
+   "levels": "53",
    "tree": "Elemental",
    "talent": "Reverberation",
    "points": 1
+  },
+  {
+   "levels": "54-58",
+   "tree": "Elemental",
+   "talent": "Elemental Fury",
+   "points": 5
+  },
+  {
+   "levels": "59-60",
+   "tree": "Elemental",
+   "talent": "Elemental Reach",
+   "points": 2
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 28.383,
+   "values_at_60": {
+    "Elemental Fury": -0.119,
+    "Elemental Reach": -0.128,
+    "Mindfulness": -0.193,
+    "Shamanistic Focus": -3.016
+   },
+   "zero": []
+  }
+ ],
+ "moves": [
+  {
+   "from": "Concussion",
+   "to": "Reverberation",
+   "level": 43,
+   "seed3": -0.0012,
+   "seed4": -0.0018,
+   "why": "gate"
+  }
+ ],
+ "kept_signature": [],
+ "final_order": [
+  {
+   "levels": "10-14",
+   "tree": "Restoration",
+   "talent": "Tidal Focus",
+   "points": 5
+  },
+  {
+   "levels": "15-17",
+   "tree": "Restoration",
+   "talent": "Mindfulness",
+   "points": 3
+  },
+  {
+   "levels": "18-22",
+   "tree": "Enhancement",
+   "talent": "Thundering Strikes",
+   "points": 5
+  },
+  {
+   "levels": "23-25",
+   "tree": "Enhancement",
+   "talent": "Mental Dexterity",
+   "points": 3
+  },
+  {
+   "levels": "26-27",
+   "tree": "Enhancement",
+   "talent": "Improved Lightning Shield",
+   "points": 2
+  },
+  {
+   "levels": "28",
+   "tree": "Enhancement",
+   "talent": "Shamanistic Focus",
+   "points": 1
+  },
+  {
+   "levels": "29-33",
+   "tree": "Elemental",
+   "talent": "Convection",
+   "points": 5
+  },
+  {
+   "levels": "34-36",
+   "tree": "Elemental",
+   "talent": "Elemental Alacrity",
+   "points": 3
+  },
+  {
+   "levels": "37-38",
+   "tree": "Elemental",
+   "talent": "Call of Flame",
+   "points": 2
+  },
+  {
+   "levels": "39",
+   "tree": "Elemental",
+   "talent": "Elemental Focus",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Elemental",
+   "talent": "Call of Flame",
+   "points": 1
+  },
+  {
+   "levels": "41-42",
+   "tree": "Elemental",
+   "talent": "Concussion",
+   "points": 2
+  },
+  {
+   "levels": "43",
+   "tree": "Elemental",
+   "talent": "Reverberation",
+   "points": 1
+  },
+  {
+   "levels": "44-46",
+   "tree": "Elemental",
+   "talent": "Eye of the Storm",
+   "points": 3
+  },
+  {
+   "levels": "47-48",
+   "tree": "Elemental",
+   "talent": "Reverberation",
+   "points": 2
   },
   {
    "levels": "49-51",
@@ -302,11 +275,11 @@
     ],
     [
      "Concussion",
-     3
+     2
     ],
     [
      "Reverberation",
-     3
+     4
     ],
     [
      "Elemental Alacrity",
@@ -438,28 +411,28 @@
     "points": 1
    },
    {
-    "levels": "41-43",
+    "levels": "41-42",
     "tree": "Elemental",
     "talent": "Concussion",
-    "points": 3
+    "points": 2
    },
    {
-    "levels": "44",
+    "levels": "43",
     "tree": "Elemental",
     "talent": "Reverberation",
     "points": 1
    },
    {
-    "levels": "45-47",
+    "levels": "44-46",
     "tree": "Elemental",
     "talent": "Eye of the Storm",
     "points": 3
    },
    {
-    "levels": "48",
+    "levels": "47-48",
     "tree": "Elemental",
     "talent": "Reverberation",
-    "points": 1
+    "points": 2
    },
    {
     "levels": "49-51",
@@ -492,6 +465,6 @@
     "points": 2
    }
   ],
-  "note": "2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Reverberation to Elemental Reach at 59 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Concussion to Reverberation at 44 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill)."
+  "note": "2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Concussion to Reverberation at 43 (gate: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill)."
  }
 }

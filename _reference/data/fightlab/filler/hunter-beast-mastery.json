@@ -3,7 +3,7 @@
  "spec": "Beast Mastery",
  "build": "beast-mastery-open-leveling",
  "rotation": "bm-leveling",
- "date": "2026-11-09",
+ "date": "2026-11-17",
  "fights": 1500,
  "start_order": [
   {
@@ -111,27 +111,24 @@
  ],
  "steps": [
   {
-   "weighted": 23.084,
+   "weighted": 22.81,
    "values_at_60": {
-    "Bestial Wrath": -31.472,
-    "Improved Tracking": -0.017,
-    "Trueshot Aura": -0.339
+    "Improved Tracking": -0.023,
+    "Trueshot Aura": -0.377
    },
    "zero": [
     "Improved Tracking"
    ]
   },
   {
-   "weighted": 23.081,
+   "weighted": 22.813,
    "values_at_60": {
-    "Bestial Wrath": -31.645,
-    "Careful Aim": -0.036,
-    "Improved Tracking": -0.043,
-    "Trueshot Aura": -0.37
+    "Careful Aim": -0.005,
+    "Improved Tracking": -0.081,
+    "Trueshot Aura": -0.409
    },
    "zero": [
-    "Careful Aim",
-    "Improved Tracking"
+    "Careful Aim"
    ]
   }
  ],
@@ -140,10 +137,13 @@
    "from": "Improved Tracking",
    "to": "Careful Aim",
    "level": 60,
-   "seed3": -0.0001,
-   "seed4": 0.0003,
+   "seed3": 0.0001,
+   "seed4": -0.0004,
    "why": "no loss"
   }
+ ],
+ "kept_signature": [
+  "Bestial Wrath"
  ],
  "final_order": [
   {
@@ -254,5 +254,194 @@
    "talent": "Careful Aim",
    "points": 1
   }
- ]
+ ],
+ "written": {
+  "allocation": {
+   "Beast Mastery": [
+    [
+     "Deadly Aspects",
+     5
+    ],
+    [
+     "Endurance Training",
+     3
+    ],
+    [
+     "Focused Fire",
+     2
+    ],
+    [
+     "Bestial Swiftness",
+     1
+    ],
+    [
+     "Unleashed Fury",
+     5
+    ],
+    [
+     "Ferocity",
+     5
+    ],
+    [
+     "Spirit Bond",
+     1
+    ],
+    [
+     "Intimidation",
+     1
+    ],
+    [
+     "Bestial Discipline",
+     2
+    ],
+    [
+     "Frenzy",
+     5
+    ],
+    [
+     "Bestial Wrath",
+     1
+    ]
+   ],
+   "Marksmanship": [
+    [
+     "Lethal Attacks",
+     5
+    ],
+    [
+     "Improved Stings",
+     3
+    ],
+    [
+     "Efficiency",
+     5
+    ],
+    [
+     "Careful Aim",
+     3
+    ],
+    [
+     "Trueshot Aura",
+     1
+    ]
+   ],
+   "Survival": [
+    [
+     "Improved Tracking",
+     3
+    ]
+   ]
+  },
+  "order": [
+   {
+    "levels": "10-14",
+    "tree": "Beast Mastery",
+    "talent": "Deadly Aspects",
+    "points": 5
+   },
+   {
+    "levels": "15-16",
+    "tree": "Beast Mastery",
+    "talent": "Focused Fire",
+    "points": 2
+   },
+   {
+    "levels": "17-19",
+    "tree": "Beast Mastery",
+    "talent": "Endurance Training",
+    "points": 3
+   },
+   {
+    "levels": "20-24",
+    "tree": "Beast Mastery",
+    "talent": "Unleashed Fury",
+    "points": 5
+   },
+   {
+    "levels": "25-29",
+    "tree": "Beast Mastery",
+    "talent": "Ferocity",
+    "points": 5
+   },
+   {
+    "levels": "30-31",
+    "tree": "Beast Mastery",
+    "talent": "Bestial Discipline",
+    "points": 2
+   },
+   {
+    "levels": "32",
+    "tree": "Beast Mastery",
+    "talent": "Spirit Bond",
+    "points": 1
+   },
+   {
+    "levels": "33",
+    "tree": "Beast Mastery",
+    "talent": "Bestial Swiftness",
+    "points": 1
+   },
+   {
+    "levels": "34",
+    "tree": "Beast Mastery",
+    "talent": "Intimidation",
+    "points": 1
+   },
+   {
+    "levels": "35-39",
+    "tree": "Beast Mastery",
+    "talent": "Frenzy",
+    "points": 5
+   },
+   {
+    "levels": "40",
+    "tree": "Beast Mastery",
+    "talent": "Bestial Wrath",
+    "points": 1
+   },
+   {
+    "levels": "41-45",
+    "tree": "Marksmanship",
+    "talent": "Lethal Attacks",
+    "points": 5
+   },
+   {
+    "levels": "46-50",
+    "tree": "Marksmanship",
+    "talent": "Efficiency",
+    "points": 5
+   },
+   {
+    "levels": "51-53",
+    "tree": "Marksmanship",
+    "talent": "Improved Stings",
+    "points": 3
+   },
+   {
+    "levels": "54-55",
+    "tree": "Marksmanship",
+    "talent": "Careful Aim",
+    "points": 2
+   },
+   {
+    "levels": "56",
+    "tree": "Marksmanship",
+    "talent": "Trueshot Aura",
+    "points": 1
+   },
+   {
+    "levels": "57-59",
+    "tree": "Survival",
+    "talent": "Improved Tracking",
+    "points": 3
+   },
+   {
+    "levels": "60",
+    "tree": "Marksmanship",
+    "talent": "Careful Aim",
+    "points": 1
+   }
+  ],
+  "note": "2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Tracking to Careful Aim at 60 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill)."
+ }
 }

@@ -16,7 +16,8 @@
    ],
    "between": [
     "Below 70% health: leave **Cat Form**, cast **Rejuvenation** (and **Regrowth** if still below 85%), then shift back; only with the mana to shift back.",
-    "Drink when your mana is below about a third (35%): it only pays for shifts and heals. Eat below two thirds of your health when there was no mana to heal."
+    "Drink when your mana is below about a third (35%): it only pays for shifts and heals. Eat below two thirds of your health when there was no mana to heal.",
+    "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full."
    ]
   },
   "balance-dps": {
@@ -32,7 +33,8 @@
    ],
    "between": [
     "In **Moonkin Form**, stay in it and eat when your health is below 40%. Before 40: **Rejuvenation** below 85% health, **Regrowth** below 70%.",
-    "Drink when your mana is below about a third (35%)."
+    "Drink when your mana is below about a third (35%).",
+    "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full."
    ]
   }
  },
@@ -51,7 +53,8 @@
     "If a mob reaches you: **Feign Death** to send it back to the pet; when that is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back."
    ],
    "between": [
-    "Mend the pet below half its health, drink below 15% of your mana, eat below 65% of your health."
+    "Mend the pet below half its health, drink below 15% of your mana, eat below 65% of your health.",
+    "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full."
    ]
   },
   "mm-raid": {
@@ -68,7 +71,8 @@
     "If a mob reaches you while it has more than about a third of its health: **Feign Death** to send it back to the pet; when that is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip**."
    ],
    "between": [
-    "Mend the pet below half its health, drink below 15% mana, eat below 65% of your health."
+    "Mend the pet below half its health, drink below 15% mana, eat below 65% of your health.",
+    "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full."
    ]
   },
   "melee-dps": {
@@ -86,7 +90,8 @@
     "**Mend Pet** when the pet drops below a third of its health."
    ],
    "between": [
-    "Mend the pet below half its health, drink below 35% of your mana, eat below 65% of your health."
+    "Mend the pet below half its health, drink below 35% of your mana, eat below 65% of your health.",
+    "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full."
    ]
   }
  },
@@ -104,12 +109,13 @@
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
-    "Drink your conjured water below 15% of your mana (the tuned rule), **Evocation** in place of a drink when it is ready and you are under 15% mana, eat below 40% of your health (the tuned rule)."
+    "Drink your conjured water below 15% of your mana (the tuned rule), **Evocation** in place of a drink when it is ready and you are under 15% mana, eat below 40% of your health (the tuned rule).",
+    "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full. **Evocation** is not a sit and brings no food."
    ]
   },
   "fire-leveling": {
    "before": [
-    "**Frost Armor** (**Ice Armor** from level 30) and **Arcane Intellect** up; **Combustion** at the pull when it is ready (once you have the talent, at 59).",
+    "**Frost Armor** (**Ice Armor** from level 30, **Mage Armor** from 34) and **Arcane Intellect** up; **Combustion** at the pull when it is ready (once you have the talent, at 59).",
     "Pull from as far away as you can."
    ],
    "steps": [
@@ -121,7 +127,8 @@
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
-    "Drink your conjured water below 15% of your mana and eat below 40% of your health (the tuned rules), **Evocation** in place of a drink when it is ready and you are under 15% mana."
+    "Drink your conjured water below 15% of your mana and eat below 40% of your health (the tuned rules), **Evocation** in place of a drink when it is ready and you are under 15% mana.",
+    "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full. **Evocation** is not a sit and brings no food."
    ]
   },
   "frostfire-leveling": {
@@ -133,11 +140,12 @@
     "Your bolt: **Frostbolt** until level 40, **Frostfire Bolt** from 40, each only while the mob has more than about a third (35%) of its health (**Frostfire Bolt** also only while you have more than 15% of your mana). Cast it while the mob walks in and whenever nothing below applies; if the mob would reach you before the cast ends, **Fire Blast** (with it on cooldown and **Frost Nova** ready, wand the mob until it arrives).",
     "**Frost Nova** when it reaches you, then step back; with **Frost Nova** on cooldown, **Fire Blast**, then keep casting the bolt.",
     "**Ice Lance** into the freeze whenever it is ready (an 8-second cooldown).",
-    "Below about a third of the mob's health (or, from 40, under 15% of your mana): no bolt; **Fire Blast** whenever it is ready, an **Ice Lance** into a freeze or one that will kill, else your wand. No Cone of Cold (the tuned rules switch it off).",
+    "Below about a third of the mob's health (or, from 40, under 15% of your mana): no bolt; **Fire Blast** whenever it is ready until the mob is down to a tenth of its health, an **Ice Lance** into a freeze or one that will kill, else your wand. No Cone of Cold (the tuned rules switch it off).",
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
-    "Drink your conjured water below 15% of your mana (the tuned rule), **Evocation** in place of a drink when it is ready and you are under 15% mana, eat below 40% of your health (the tuned rule)."
+    "Drink your conjured water below 15% of your mana (the tuned rule), **Evocation** in place of a drink when it is ready and you are under 15% mana, eat below 40% of your health (the tuned rule).",
+    "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full. **Evocation** is not a sit and brings no food."
    ]
   },
   "frost-aoe": {
@@ -170,7 +178,8 @@
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
-    "Drink your conjured water below 15% of your mana and eat below 40% of your health (the tuned rules), **Evocation** in place of a drink when it is ready and you are under 15% mana."
+    "Drink your conjured water below 15% of your mana and eat below 40% of your health (the tuned rules), **Evocation** in place of a drink when it is ready and you are under 15% mana.",
+    "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full. **Evocation** is not a sit and brings no food."
    ]
   },
   "barrage-frost-leveling": {
@@ -187,7 +196,8 @@
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
-    "Drink your conjured water below 15% of your mana, **Evocation** in place of a drink when it is ready and you are under 15% mana, eat below 40% of your health."
+    "Drink your conjured water below 15% of your mana, **Evocation** in place of a drink when it is ready and you are under 15% mana, eat below 40% of your health.",
+    "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full. **Evocation** is not a sit and brings no food."
    ]
   }
  },
@@ -206,7 +216,8 @@
     "Low on health (below a third, with the mob above a quarter): **Divine Protection** and **Holy Light** inside it, or **Hammer of Justice** and heal during the stun; **Flash of Light** below a quarter; **Lay on Hands** below 15%."
    ],
    "between": [
-    "Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink below about a third of your mana, and eat only if you are still below 65% of your health."
+    "Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink below about a third of your mana, and eat only if you are still below 65% of your health.",
+    "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full."
    ]
   },
   "holy-leveling": {
@@ -225,7 +236,8 @@
     "Low on health (below 40%, with the mob above a fifth): **Templar's Bulwark** first if your build has it and Forbearance is not on you, then **Holy Shock** on yourself (after **Divine Favor** if it is ready), **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter; **Lay on Hands** below 15%."
    ],
    "between": [
-    "Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink only below a quarter of your mana, and eat if you are still below 80% of your health."
+    "Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink only below 15% of your mana, and eat if you are still below 80% of your health.",
+    "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full."
    ]
   },
   "prot-leveling": {
@@ -240,7 +252,8 @@
     "Low on health (below about a third, with the mob above a fifth): **Templar's Bulwark**, then **Holy Light** behind its absorb; otherwise **Divine Protection** (below 30%) and **Holy Light** while the mob cannot hit you; **Flash of Light** below a quarter; **Lay on Hands** below 15%. The tuned rules cast no Hammer of Justice, Hammer of Wrath or Consecration against a single mob."
    ],
    "between": [
-    "Drink below 15% of your mana; you rarely need to eat."
+    "Drink below 15% of your mana; you rarely need to eat.",
+    "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full."
    ]
   }
  },
@@ -259,7 +272,8 @@
     "Below a third of your health outside **Shadowform**: **Flash Heal**."
    ],
    "between": [
-    "Drink only below 15% mana, eat below 40% of your health (the tuned rule) (**Renew** yourself instead outside **Shadowform**)."
+    "Drink only below 15% mana, eat below 40% of your health (the tuned rule) (**Renew** yourself instead outside **Shadowform**).",
+    "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full."
    ]
   },
   "holy-leveling": {
@@ -270,13 +284,14 @@
    "steps": [
     "Open with **Holy Fire** from range, and cast it again once its burn has ended while the mob has more than 40% of its health (in melee only while your shield holds).",
     "**Shadow Word: Pain** next, and again when it runs out while the mob has more than 30% of its health.",
-    "**Mind Blast** whenever it is ready while you have more than 30% mana and the mob more than 10% of its health (also to finish a mob one cast will kill).",
+    "**Mind Blast** whenever it is ready, at any mana (also to finish a mob one cast will kill).",
     "**Smite** in every gap, at any mana, until the mob has less health left than about half a **Smite** hit; then your wand.",
     "Skip Devouring Plague and **Penance**: the tuned rules never cast them (without **Penance**, **Smite** and **Holy Fire** stay at least half your damage).",
     "Hurt: **Power Word: Shield** again in melee below 80% health once Weakened Soul is gone (below half at any time), **Flash Heal** below a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%."
    ],
    "between": [
-    "Drink only below 15% mana; **Renew** yourself after a fight below 85% health, and eat below 80%."
+    "Drink only below 15% mana; **Renew** yourself after a fight below 85% health, and eat below 80%.",
+    "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full."
    ]
   },
   "discipline-leveling": {
@@ -293,7 +308,8 @@
     "Hurt: **Power Word: Shield** in melee below 80% health once Weakened Soul is gone (below half at any time), **Flash Heal** below a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%."
    ],
    "between": [
-    "Drink only below 15% mana; **Renew** yourself after a fight below 85% health, and eat only if you are still below two thirds."
+    "Drink only below 15% mana; **Renew** yourself after a fight below 85% health, and eat only if you are still below two thirds.",
+    "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full."
    ]
   }
  },
@@ -373,12 +389,13 @@
     "Low on health at any point: under 30% drop **Stoneclaw Totem** (or **Nature's Swiftness** and **Healing Wave** if you have it), under 40% cast **Lesser Healing Wave**."
    ],
    "between": [
-    "Heal back to 80% health with **Lesser Healing Wave** (**Healing Wave** for a big gap); eat if you are still under 80% (out of mana for heals); drink below 15% of your mana."
+    "Heal back to 80% health with **Lesser Healing Wave** (**Healing Wave** for a big gap); eat if you are still under 90%; drink below 15% of your mana.",
+    "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full."
    ]
   },
   "elemental-dps": {
    "before": [
-    "**Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30): you swing it whenever nothing else is ready.",
+    "**Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30, **Rockbiter Weapon** again from 50): you swing it whenever nothing else is ready.",
     "Drop **Searing Totem** as you pull while you have more than half your mana, and pull from range with **Lightning Bolt**."
    ],
    "steps": [
@@ -390,7 +407,8 @@
     "Low on health at any point: under 30% drop **Stoneclaw Totem**, under 40% cast **Lesser Healing Wave**."
    ],
    "between": [
-    "Heal back to 80% health with **Lesser Healing Wave** (eat if you cannot), drink below 15% of your mana."
+    "Heal back to 80% health with **Lesser Healing Wave**; eat if you are still under 90%; drink below 15% of your mana.",
+    "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full."
    ]
   }
  },
@@ -412,7 +430,8 @@
     "If a mob reaches you: **Death Coil** below 60% health; otherwise keep casting (never **Fear** it) until the Voidwalker's **Torment** takes it back. Your Healthstone below 35% health."
    ],
    "between": [
-    "**Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, eat only below 55% health, and drink only below 15% mana (when you are too hurt to **Life Tap**)."
+    "**Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, eat only below 55% health, and drink only below 15% mana (when you are too hurt to **Life Tap**).",
+    "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full."
    ]
   },
   "demonology-leveling": {
@@ -432,7 +451,8 @@
     "If a mob reaches you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs. Your Healthstone below 35% health."
    ],
    "between": [
-    "**Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, eat only below 55% health, and drink only below 15% mana (when you are too hurt to **Life Tap**)."
+    "**Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, eat only below 55% health, and drink only below 15% mana (when you are too hurt to **Life Tap**).",
+    "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full."
    ]
   },
   "destruction-leveling": {
@@ -450,7 +470,8 @@
     "If a mob reaches you: **Death Coil** below 60% health, and let the Voidwalker's **Torment** take it back. No Fear: the tuned rules of 2026-11-07 never cast it. Your Healthstone below 35% health."
    ],
    "between": [
-    "**Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, eat only below 40% health (the tuned rule), and drink only below 15% mana (when you are too hurt to **Life Tap**)."
+    "**Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, eat only below 40% health (the tuned rule), and drink only below 15% mana (when you are too hurt to **Life Tap**).",
+    "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full."
    ]
   }
  },

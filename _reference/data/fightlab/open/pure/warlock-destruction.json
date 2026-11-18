@@ -13804,12 +13804,12 @@
    "signature": {
     "spec": "Destruction",
     "rotation": "destruction-leveling",
-    "date": "2026-11-08",
+    "date": "2026-11-17",
     "fights": 600,
     "split": "6/11/34",
     "ok": true,
     "verdict": "OK",
-    "core_share": 0.647,
+    "core_share": 0.6571,
     "min_share": 0.6,
     "required": [],
     "core": [
@@ -13825,7 +13825,7 @@
     "uncast": [],
     "late": [],
     "casts": {},
-    "fingerprint": "9bf9ebf345ca"
+    "fingerprint": "a76f6c5c3851"
    },
    "minutes": 641.3,
    "done": true,
@@ -13834,7 +13834,7 @@
     "written": [],
     "why": "the destruction-leveling rotation's record (warlock.json) has a faster Destruction build: that one is written",
     "spec": "Destruction",
-    "date": "2026-11-16"
+    "date": "2026-11-17"
    }
   }
  },

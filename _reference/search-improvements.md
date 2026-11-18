@@ -55,6 +55,7 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 | Date | Change | Why (evidence) | Effect |
 |---|---|---|---|
+| 2026-11-18 | A tool run for some classes keeps the other classes' rows of a shared record, each with the date of its own run: `raidsim/hit_below_cap.py`, `raidsim/unused_abilities.py`, `raidsim/apl_validate.py` (a failed bench is a `bench` row, not a missing one), `raidsim/pawn_raid_compare.py`, `characters/pawn_compare.py` (rows by class and level); the fourth to eighth tool after `heallab/heal_values.py` (2026-11-16) | The Windfury lane's `hit_below_cap.py shaman` wrote hit-below-cap.json with three specs (24 dropped), so weight_errors.py left 24 `hit:` keys out and the 06:14 GearCheck file lost their hit values; `unused_abilities.py <class> --write` had left its record with one class's rows after every lane since 2026-11-04 (32 rows on 11-02, then mage 2, paladin 2, hunter 8, warrior 1, none, none, paladin 2, warlock 15): the raid pages' "Talents with no line below" showed for one class at a time. A subagent read the other 30 tools that take classes and write JSON: three more cut their record (no lane ran them for a subset), the rest merge, write per class or always run every class | Records restored the same day (hit and its 24 error entries from 107eb67c, inputs checked unchanged; the unused audit re-run for every class); GearCheck's file made again. Lesser hazards (no lock, read before hours of measuring, never pruned) in page-audit Q5 |
 | 2026-11-16 | `mage.EVO_BELOW`: the between-fight Evocation threshold is a rules knob (default 0.4, the regression); 0.15 in the five mage leveling rules files (`fl_evo_1116.sh`: continued tunes, records from the race on, filler, weights, GearCheck, rest cues 0.40 -> 0.15) | The user asked why 40%: a literal no tune compared. Evocation restores 70-118% of the pool by level; an A/B of every mage leveling pick (20,000 fights, seeds 1-2, levels 20-60) put 0.15 ahead of 0.40 by 0.6-1.1% per kill, 0.10 behind | Frost's tune also took eat_below 0.40 (+0.4%; it had none, so 65%). Level-weighted: Arcane/Frost 28.3 -> 27.8 s, Frost 29.5 -> 28.9, Arcane 29.4 -> 29.1, Frostfire 33.8 -> 33.4, Fire 36.0. Builds moved a point or an order step: Fire's order shifted a level from 30 (Heating Up 45, Combustion 60) |
 | 2026-11-16 | Character planner: an item with no required level in the Forever database or Classic's takes Blizzard's static item API's (cached); an item Blizzard does not know is left out | The re-pin to 2e6e77d84 brought 192 such items with sources, read as wearable from level 0: Arcea's level-37 plan bought the Sorcerer's Regalia, an item-level-60 epic set (Blizzard: 404) | GearCheck's pool needs a required level and takes greens and blues only: unaffected |
 | 2026-11-16 | `heallab/heal_values.py <classes>` keeps the other specs' rows, each with its own date; `addon_values.py` skips a page-stat-weights row whose build the spec's ML record measured | `heal_values.py druid` had written the druid's row alone, so the 19:07 add-on file had no paladin, priest or shaman heal entry (restored 19:30); the Addons session found two raid entries listed twice (paladin ret-full-buffs-raid, rogue hybrid-assassination-subtlety-open-raid) | Nothing changes in game; the duplicates leave with the next add-on file |
@@ -152,6 +153,16 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 | 2026-10-07 | Rank-3 Seal of Command on Retribution's twist line | Rotation search | Best for mana-hungry builds, but costs the hand draft 0.6% | Rejected by the protection rule; a mana-conditional rank line stays open (below) |
 
 ## Open ideas, ranked by what they could still find
+
+0l. **One eat line for every level hides a loss at 20-23 (2026-11-17, the eat-and-drink re-tune)**.
+    The Enhancement rules took eating below 90% of your health (80% before): 0.95% faster on the level-weighted score. A direct check
+    on the page pick (scratchpad `shaman_eat_levels.py`, 3,000 fights, seeds 1-2, everything else as the rules file has it) had the
+    90% line 8.7% slower at 20 and 10.2% at 22 (the shaman sits down to eat after almost every kill: 4.5-5.4 s a kill against 0.1),
+    even at 24, 0.9-3.6% faster at 26-40. Restoration, on the same rules: even at 20, 2.9% slower at 22, 2.4-3.2% faster at 24-40;
+    Elemental 1.1-2.5% faster at every level from 20. The Enhancement guides say "under 80% until 24" by hand. Open: a rest line by
+    level (`eat_below` / `drink_below` as {from level: share}, the engine reading the level's value, the tune choosing the switch
+    level as it does `IMBUE_TOP_FROM`); first check every class's rest lines level by level the same way (cheap: two lines x seven
+    levels x two seeds per page pick).
 
 0k. **The warlock's in-fight Life Tap reserve counts spells the rules switch off (2026-11-16, the Affliction re-tune)**.
     `warlock.decide` taps in a fight when the mana left after a **Shadow Bolt** is under the cost of **Fear** plus **Drain Life**, and
@@ -463,6 +474,7 @@ polish kept two block moves for the Combat-Subtlety pick (-0.3% and -0.8% at lev
 
 ## Self-audit checklist (after every class)
 
+- (2026-11-18) After a lane that ran a tool for some classes: every shared record it wrote still holds every class (`git diff --stat` and a count of classes against HEAD: hit-below-cap.json, unused-abilities.json, weight-errors.json, heal-values.json, page-stat-weights.json, pawn-raid-compare.json). A new tool that takes classes and writes one record for every class merges from the start.
 - After a re-baseline or a simulator update: every entry's best simulator preset against our best build in a full raid (2026-10-09: Feral's preset was 16% ahead, our builds dummy-optimized), and the build each raid rotation was tuned on (`tuned_on` in the rotation record) against the entry's full-raid best.
 - After a data refresh: `fightlab/module_lint.py` (renamed or removed talents, tooltips that parse to no damage), and a crit-damage talent's semantics ("increases the critical strike damage bonus by X%": X% of the 50% spell bonus, of the 100% melee bonus).
 - After a fight-lab mechanics fix: the class's leveling rules re-tuned from scratch (`rotation_opt.py <class> --fresh --write`) and its fight-lab races and reports re-run (`rebuild.py <class> --steps race,report,regen`), or the pages mix numbers from both sides.

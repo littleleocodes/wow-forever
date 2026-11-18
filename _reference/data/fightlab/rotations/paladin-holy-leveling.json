@@ -1,6 +1,7 @@
 {
  "knobs": {
-  "CASTER_GEAR_FROM": 61
+  "CASTER_GEAR_FROM": 61,
+  "REST_TOGETHER": true
  },
  "veto": {
   "Holy Shock": {
@@ -8,9 +9,10 @@
   }
  },
  "eat_below": 0.8,
+ "drink_below": 0.15,
  "class": "paladin",
  "spec": "holy-leveling",
- "build": "shockadin-open-leveling",
+ "build": "holy-leveling",
  "levels": [
   20,
   30,
@@ -18,16 +20,16 @@
   50,
   60
  ],
- "date": "2026-11-16",
+ "date": "2026-11-17",
  "signature": {
   "required": [
    "Holy Shock"
   ],
-  "build_spec": "Hybrid Holy/Retribution",
+  "build_spec": "Holy",
   "dropped_saved_rules": [],
-  "core_share_before": 0.2553548920346611,
-  "core_share_after": 0.18985558830409394,
-  "min_share": 0.12,
+  "core_share_before": 0.7271483737584341,
+  "core_share_after": 0.7378360647263893,
+  "min_share": 0.6,
   "floor_reached": null,
   "played_before": true,
   "played_after": true
@@ -37,79 +39,56 @@
  "changes": [
   {
    "round": 1,
-   "change": "CASTER_GEAR_FROM = 61",
+   "change": "drink below 15% mana",
    "rule": [
-    "knob",
-    "CASTER_GEAR_FROM",
-    61
-   ],
-   "gain_seed1": 0.05318565478101012,
-   "gain_seed2": 0.05075248732004689
-  },
-  {
-   "round": 2,
-   "change": "Holy Shock only while the mob has more than 35% health",
-   "rule": [
-    "min_hp",
-    "Holy Shock",
-    0.35
-   ],
-   "gain_seed1": 0.007981623270342464,
-   "gain_seed2": 0.014297461356412411
-  },
-  {
-   "round": 3,
-   "change": "eat below 80% health",
-   "rule": [
-    "eat_below",
+    "drink_below",
     null,
-    0.8
+    0.15
    ],
-   "gain_seed1": 0.009145571432588873,
-   "gain_seed2": 0.007301194295398772
+   "gain_seed1": 0.008311485597540913,
+   "gain_seed2": 0.010127824189409829
   }
  ],
- "weighted_before": 31.134501440077013,
- "weighted_after": 28.904153153441673,
+ "weighted_before": 34.690395899876215,
+ "weighted_after": 34.34188577778606,
  "per_level": {
   "20": {
-   "before": 21.70366666653065,
-   "after": 21.70366666653065,
+   "before": 22.132666666538125,
+   "after": 22.132666666538125,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 31.671877553337623,
-   "after": 28.202432086266057,
+   "before": 29.260236214127804,
+   "after": 28.850866007164164,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 34.9459537228065,
-   "after": 32.18333458060521,
+   "before": 35.16656205485884,
+   "after": 34.6795034655089,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 32.21793771405394,
-   "after": 29.52356246275213,
+   "before": 37.945503355179014,
+   "after": 37.65150555684738,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 30.565593224495068,
-   "after": 28.952880473465406,
+   "before": 38.56135183778905,
+   "after": 38.17404042581332,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
  },
  "retune": {
   "times": {
-   "saved": 30.706,
-   "from scratch": 28.904,
-   "continued": 28.907
+   "saved": 34.69,
+   "continued": 34.342
   },
-  "installed": "from scratch",
+  "installed": "continued",
   "reference_ok": true
  }
 }

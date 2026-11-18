@@ -30,7 +30,7 @@
     }
    },
    "leveling": {
-    "plan": "Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as it walks in, **Frost Nova** freezes it when it arrives, you step back, and **Ice Lance** hits the frozen target for four times its damage with **Shatter**'s crit chance. Frost points first (**Ice Lance** at 20, **Shatter** complete by 29, **Fingers of Frost** at 30-31, the rest of the Frost tree to 39), then the Arcane mana talents from 40 (**Arcane Concentration** by 49, **Arcane Meditation** by 57), **Incineration** last (58-60). In the open leveling search's 20-60 race of 2026-11-16 this build took about 28.9 seconds per kill, level-weighted; the page's numbers table has each level.",
+    "plan": "Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as it walks in, **Frost Nova** freezes it when it arrives, you step back, and **Ice Lance** hits the frozen target for four times its damage with **Shatter**'s crit chance. Frost points first (**Ice Lance** at 20, **Shatter** complete by 29, **Fingers of Frost** at 30-31, the rest of the Frost tree to 38 and **Cold Snap** at 39), then the Arcane mana talents from 40 (**Arcane Concentration** by 49, **Arcane Meditation** by 57), **Incineration** (58-59) and a point of **Accelerant** (60) last. In the open leveling search's 20-60 race of 2026-11-16 this build took about 28.9 seconds per kill, level-weighted; the page's numbers table has each level.",
     "why": [
      "**Frostbolt** from as far away as you can and whenever nothing else applies, while the mob has more than a fifth of its health: 2.5 seconds with **Improved Frostbolt** at 5 points, 290 mana at top rank less **Frost Channeling**'s 15%, and a 40% slow for 9 seconds that buys extra casts before the mob reaches you (**Permafrost** lengthens it). Every chill can freeze the mob (**Frostbite**, 15%) or light up **Fingers of Frost** (15%: your next 2 spells count as cast on a frozen target). If the mob would reach you before the cast ends and **Frost Nova** is ready, wand it until it arrives; if it is already on you with **Frost Nova** down, keep casting.",
      "**Frost Nova** when it reaches you, then step back out of melee: it freezes the mob for up to 8 seconds (damage can break it), and out of reach it cannot hit you or push your casts back. **Improved Frost Nova** takes 4 seconds off its 25-second cooldown.",
@@ -40,25 +40,25 @@
      "**Counterspell** (level 24) a mob that casts spells: it stops the cast and locks that school for 10 seconds."
     ],
     "caveats": [
-     "This build takes neither Cold Snap nor Ice Barrier: skip the list's lines for them. The hand-made build under Other builds has both.",
-     "This is the open leveling search's 18/3/30 winner: **Improved Frostbolt** at 5 points and **Improved Channeling** instead of an earlier version's Missile Barrage and Magic Absorption. The leveling filler pass of 2026-11-15, under **Mage Armor**, moved the Frost Warding point to **Permafrost** at 38 and Arcane Impact to **Arcane Subtlety** at 54.",
+     "This build takes **Cold Snap** (39) but no Ice Barrier: skip the list's Ice Barrier line. The hand-made build under Other builds has both.",
+     "This is the open leveling search's 18/3/30 winner: **Improved Frostbolt** at 5 points and **Improved Channeling** instead of an earlier version's Missile Barrage and Magic Absorption. The leveling filler pass of 2026-11-15, under **Mage Armor**, moved the Frost Warding point to **Permafrost** at 38 and Arcane Impact to **Arcane Subtlety** at 54. The pass of 2026-11-17 moved Permafrost's second point to **Cold Snap** (39) and **Incineration**'s third to **Accelerant** (60): neither cost anything in the fight lab.",
      "**Cone of Cold** stays out of single pulls: the tuned rules switch it off (kills measured faster without).",
-     "Drink below 15% of your mana (the tuned rule); **Evocation** in place of that drink, whenever it is ready (under 15% mana); eat below 40% of your health (the tuned rules).",
+     "Drink below 15% of your mana (the tuned rule); **Evocation** in place of that drink, whenever it is ready (under 15% mana); eat below 40% of your health (the tuned rules). Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17).",
      "Armor: **Mage Armor** from 34 (the tuned rules of 2026-11-15). It keeps half your mana regeneration going while you cast, so you drink less: 4-5% faster per kill at 34-40 in the fight lab, 2-3% at 46-50, 1.4-2.5% at 56-60, though you eat a little more without armor. Before 34, **Frost Armor** and **Ice Armor** can chill a mob that hits you, another roll for **Frostbite** to freeze it; **Mage Armor** does not.",
      "Pulls of several mobs are a different game: the AoE build under Other builds gathers about four, freezes them with **Frost Nova** and uses **Blizzard** and **Cone of Cold**, in **Ice Armor** (in pulls of four, Mage Armor measured 9-20% slower per kill, with more deaths)."
     ],
     "diverge": [
-     "If **Frost Nova** is on cooldown when the mob arrives, keep casting **Frostbolt**; a build with Cold Snap resets **Frost Nova** instead when it has more than 8 seconds left and the mob still has 40% of its health.",
+     "If **Frost Nova** is on cooldown when the mob arrives, **Cold Snap** (from 39) resets it when it has more than 8 seconds left and the mob still has 40% of its health; otherwise keep casting **Frostbolt**.",
      "Low on mana in a fight: let an **Ice Lance** into the freeze or the wand finish a nearly dead mob rather than start a **Frostbolt**."
     ],
     "written": "2026-11-15",
     "rotations": {
-     "leveling:frost-leveling": "9439ac0363d0",
-     "leveling:fire-leveling": "6a7250666fa9",
-     "leveling:frostfire-leveling": "b3765a46d584",
+     "leveling:frost-leveling": "0f2f740aa890",
+     "leveling:fire-leveling": "6b74c3c92a05",
+     "leveling:frostfire-leveling": "46f76c659cce",
      "leveling:frost-aoe": "2943a8d95023",
-     "leveling:arcane-leveling": "bc56f0cedcdb",
-     "leveling:barrage-frost-leveling": "2ba5169ca3f1"
+     "leveling:arcane-leveling": "48b0f2bbbab2",
+     "leveling:barrage-frost-leveling": "410cf796f661"
     }
    }
   },
@@ -100,7 +100,7 @@
     "caveats": [
      "This build takes no Cold Snap: skip that part of the list. Before the Arcane half it is a plain Frost mage without **Missile Barrage**.",
      "**Cone of Cold** stays out of single pulls: the tuned rules switch it off (kills measured faster without).",
-     "Rest: drink below 15% of your mana, **Evocation** in place of that drink when it is ready (under 15% mana), eat below 40% of your health.",
+     "Rest: drink below 15% of your mana, **Evocation** in place of that drink when it is ready (under 15% mana), eat below 40% of your health. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17).",
      "Armor: **Mage Armor** from 34 (the tuned rules of 2026-11-15): it keeps half your mana regeneration going while you cast, about 4% faster per kill at 34-40 and 2% at 46 in the fight lab. From 50, with **Arcane Meditation** complete, the two armors are even (within about 1%): wear either.",
      "This is the open leveling search's 28/0/23 winner of 2026-11-15, 0.6% faster per kill at levels 20-60 than the 23/0/28 build it replaced: its last five Frost points (Improved Frost Nova, Permafrost, Winter's Chill) moved to **Arcane Mind** and **Arcane Instability**. The leveling filler pass of the same day, under **Mage Armor**, moved an **Ice Shards** point to **Arctic Reach** at 27 and an **Improved Channeling** point to **Improved Counterspell** at 52. Arcane Blast is not in this build: skip any line for it."
     ],
@@ -110,12 +110,12 @@
     ],
     "written": "2026-11-15",
     "rotations": {
-     "leveling:frost-leveling": "9439ac0363d0",
-     "leveling:fire-leveling": "6a7250666fa9",
-     "leveling:frostfire-leveling": "b3765a46d584",
+     "leveling:frost-leveling": "0f2f740aa890",
+     "leveling:fire-leveling": "6b74c3c92a05",
+     "leveling:frostfire-leveling": "46f76c659cce",
      "leveling:frost-aoe": "2943a8d95023",
-     "leveling:arcane-leveling": "bc56f0cedcdb",
-     "leveling:barrage-frost-leveling": "2ba5169ca3f1"
+     "leveling:arcane-leveling": "48b0f2bbbab2",
+     "leveling:barrage-frost-leveling": "410cf796f661"
     }
    }
   },
@@ -155,13 +155,13 @@
      "**Arcane Blast** twice while the mob walks in: each cast gives you 12% of your Intellect as spell damage for 18 seconds and doubles the next cast's cost, so the fight lab stops at two and starts one only while it costs at most a quarter of your mana and will finish before the mob reaches you. Each cast rolls 40% for **Missile Barrage**. Without **Arcane Blast** a kill at 60 takes about 2.4 seconds longer in the open search.",
      "**Arcane Missiles** is the main spell, at range and in melee: **Improved Channeling** at 5 points gives a 100% chance that hits do not interrupt the channel (70% for **Arcane Blast** and **Arcane Wrath**). **Missile Barrage** makes the next one free, 2.5 seconds long and twice as dense: cast it at once after your two stacks, or when the mob is on you. At level 60 the build loses about 4.7 seconds per kill without **Missile Barrage**, 1.9 without **Improved Channeling**, then **Arcane Concentration** (1.4), **Arcane Mind** (1.4), **Precision** (1.3), **Arcane Meditation** (1.3) and **Arcane Instability** (1.1).",
      "**Frost Nova** is in the list: when the mob reaches you and has more than about a tenth of its health, freeze it and step back, then keep channeling. The tuned rules (2026-11-06) hold back only **Cone of Cold**: it is cast just when the mob is on you, **Frost Nova** is down and the mob is below a fifth of its health.",
-     "**Fire Blast** finishes a mob it will kill, and when you cannot afford **Arcane Missiles** it is the instant for a mob on you, else **Frostbolt**. The 18 Frost points: **Precision** (38-39) for hit, then **Improved Frostbolt** (45-47), **Ice Shards** (48, 52), **Improved Frost Nova** (49-50), **Frost Warding** (51), **Ice Lance** (53), **Improved Blizzard** (54), **Frost Channeling** (55), **Permafrost** (56-57) and **Shatter** (58-60). Only **Frost Nova** freezes the mob in this build (it has no **Frostbite**); in the open search **Ice Lance** into the freeze is worth about 0.5 seconds per kill at 60 and **Shatter** 0.8."
+     "**Fire Blast** finishes a mob it will kill, and when you cannot afford **Arcane Missiles** it is the instant for a mob on you, else **Frostbolt**. The 18 Frost points: **Precision** (38-39) for hit, then **Improved Frostbolt** (45-47), **Ice Shards** (48, 51-52 and 54), **Improved Frost Nova** (49-50), **Ice Lance** (53), **Frost Channeling** (55), **Permafrost** (56-57) and **Shatter** (58-60). Only **Frost Nova** freezes the mob in this build (it has no **Frostbite**); in the open search **Ice Lance** into the freeze is worth about 0.5 seconds per kill at 60 and **Shatter** 0.8."
     ],
     "caveats": [
      "This build takes **Ice Lance** only at level 53: before that, skip its line of the list.",
-     "Mana: **Arcane Missiles** costs 655 at top rank, every **Arcane Blast** stack makes the next one dearer. **Frostbolt** (290) is for when you cannot afford the Missiles. The tuned rules of 2026-11-15 drink below 15% of your mana, eat below 40% of your health and wear **Mage Armor** from 34 (with **Arcane Meditation** it keeps all of your regeneration going while you cast: 4% faster per kill at 34 in the fight lab, 0-1% from 40); use **Evocation** between fights in place of a drink, when it is ready and you are under 15% mana.",
+     "Mana: **Arcane Missiles** costs 655 at top rank, every **Arcane Blast** stack makes the next one dearer. **Frostbolt** (290) is for when you cannot afford the Missiles. The tuned rules of 2026-11-15 drink below 15% of your mana, eat below 40% of your health and wear **Mage Armor** from 34 (with **Arcane Meditation** it keeps all of your regeneration going while you cast: 4% faster per kill at 34 in the fight lab, 0-1% from 40); use **Evocation** between fights in place of a drink, when it is ready and you are under 15% mana. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17).",
      "Single pulls only: with several mobs on you, **Frost Nova** and **Arcane Explosion** are back in play.",
-     "This is the open leveling search's 33/0/18 winner of 2026-11-15, 1.6% faster per kill at levels 20-60 than the 31/0/20 build it replaced: two points moved from **Ice Shards** to **Arcane Subtlety**, **Arcane Power** at 42 instead of 59 and **Ice Lance** at 53 instead of 50. The filler pass of the same day, under **Mage Armor**, moved a Frost Warding point to **Ice Shards** at 52."
+     "This is the open leveling search's 33/0/18 winner of 2026-11-15, 1.6% faster per kill at levels 20-60 than the 31/0/20 build it replaced: two points moved from **Ice Shards** to **Arcane Subtlety**, **Arcane Power** at 42 instead of 59 and **Ice Lance** at 53 instead of 50. The filler pass of the same day, under **Mage Armor**, moved a Frost Warding point to **Ice Shards** at 52; the pass of 2026-11-17 moved the other one and Improved Blizzard to **Ice Shards** too (51 and 54), each a little faster."
     ],
     "diverge": [
      "If the mob would reach you before an **Arcane Blast** or **Arcane Wrath** finishes, do not start it: channel **Arcane Missiles** instead (an instant cast with **Presence of Mind** is the exception).",
@@ -170,12 +170,12 @@
     ],
     "written": "2026-11-15",
     "rotations": {
-     "leveling:frost-leveling": "9439ac0363d0",
-     "leveling:fire-leveling": "6a7250666fa9",
-     "leveling:frostfire-leveling": "b3765a46d584",
+     "leveling:frost-leveling": "0f2f740aa890",
+     "leveling:fire-leveling": "6b74c3c92a05",
+     "leveling:frostfire-leveling": "46f76c659cce",
      "leveling:frost-aoe": "2943a8d95023",
-     "leveling:arcane-leveling": "bc56f0cedcdb",
-     "leveling:barrage-frost-leveling": "2ba5169ca3f1"
+     "leveling:arcane-leveling": "48b0f2bbbab2",
+     "leveling:barrage-frost-leveling": "410cf796f661"
     }
    }
   },
@@ -210,7 +210,7 @@
    "leveling": {
     "plan": "Fire levels with **Fireball** at range and **Fire Blast** up close, opens every pull from level 20 with a hard-cast **Pyroblast**, and borrows the Frost tree's freeze: **Frost Nova**, a step back, and **Ice Lance** into the frozen mob; **Heating Up** (level 45) makes some later **Pyroblast** casts fast. The page's order is **Accelerant** and **Ignite** to 19, **Pyroblast** at 20, 18 Frost points and one Arcane point from 21 to 39 (**Ice Lance** at 31, **Shatter** by 38, **Wand Specialization** at 39), then Fire again from 40 (**Improved Fire Blast**, **Burning Soul**, **Heating Up**, **Improved Scorch**, **Master of Elements**, **Critical Mass**, **Incineration**, **Fire Power**, **Combustion** at 59, the last **Incineration** point at 60). In the open leveling search's 20-60 race of 2026-11-16 it took about 36 seconds per kill level-weighted, the slowest of the five mage leveling pages; the page's numbers table has each level.",
     "why": [
-     "The 18 Frost points: **Precision** (hit), **Frost Warding**, **Improved Frost Nova** (**Frost Nova** back 4 seconds sooner), **Frostbite**, **Ice Shards**, **Ice Lance** and **Shatter**. A frozen mob takes 300% more damage from **Ice Lance**, which crits 50% more often there with **Shatter** and for double with **Ice Shards**; **Ice Lance** has an 8-second cooldown, one per freeze. In the open search of 2026-11-15 the build loses about 4.2 seconds per kill at 60 without **Ice Lance** and 3.7 without **Shatter**.",
+     "The 19 Frost points: **Precision** (hit), **Frost Warding**, **Improved Frost Nova** (**Frost Nova** back 4 seconds sooner), **Ice Shards**, **Ice Lance**, **Frost Channeling** (Frost spells 15% cheaper) and **Shatter**; since the open search of 2026-11-17 no **Frostbite**, so only **Frost Nova** freezes the mob. A frozen mob takes 300% more damage from **Ice Lance**, which crits 50% more often there with **Shatter** and for double with **Ice Shards**; **Ice Lance** has an 8-second cooldown, one per freeze. In the open search of 2026-11-15 the build loses about 4.2 seconds per kill at 60 without **Ice Lance** and 3.7 without **Shatter**.",
      "**Fireball** from as far away as you can, and as the filler whenever nothing else applies, while the mob has more than about a third (35%) of its health and you have more than 15% of your mana. Below that health the tuned rules (2026-11-15) start no **Fireball** or **Pyroblast**: a long cast overkills. Under 15% mana they start no **Fireball** either: **Fire Blast** and the wand end the fight, and you drink after it (the drink rule is 15% too). **Accelerant** takes half a second off its cast at 5 points.",
      "**Pyroblast** opens every pull (a tuned rule that makes the Fire signature spell part of every fight): a 6-second cast the mob runs in during, so finish it and go on. After that it is cast only at 3 stacks of **Heating Up**, while the mob has more than a third of its health.",
      "**Fire Blast** is your instant: when the mob would reach you before a **Fireball** lands, when it is on you and **Frost Nova** is down, to finish a mob it will kill, and whenever it is ready once the rules start no **Fireball** (the mob's last third, or under 15% of your mana). **Improved Fire Blast** (level 41, one point) takes 1 second off its 8-second cooldown, **Critical Mass** and **Incineration** (10% on **Fire Blast** and **Ice Lance** at 5 points) add crit, and every hit adds a **Heating Up** stack.",
@@ -220,8 +220,8 @@
     ],
     "caveats": [
      "This build has no Ice Block: a pull that goes wrong is **Blink**, **Mana Shield** or a healing potion.",
-     "Mana: **Fireball** costs 410 at top rank against 290 for a **Frostbolt**. Drink below 15% of your mana and eat below 40% of your health (the tuned rules); use **Evocation** between fights in place of a drink, when it is ready and you are under 15% mana.",
-     "Armor: Fire keeps **Ice Armor** to 60. The tuned rules of 2026-11-15 found Mage Armor (34) no faster for this list (even at 34 and 50, slower at 40, faster at 60), and **Ice Armor**'s chill rolls **Frostbite**.",
+     "Mana: **Fireball** costs 410 at top rank against 290 for a **Frostbolt**. Drink below 15% of your mana and eat below 40% of your health (the tuned rules); use **Evocation** between fights in place of a drink, when it is ready and you are under 15% mana. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17).",
+     "Armor: **Mage Armor** from 34, as on the other mage leveling pages: the tune of 2026-11-17, once you eat while you drink, found it about 1.2% faster per kill. The rules of 2026-11-15 had kept **Ice Armor** to 60 (Mage Armor was no faster then).",
      "Pulls of several mobs: **Flamestrike** hits them all, but the fight lab only measured single pulls for Fire.",
      "This is the open leveling search's 1/32/18 winner of 2026-11-15: the talents of the build it replaced in a new order (**Improved Frost Nova** complete at 27, **Shatter** by 38, **Master of Elements** (47-49) and **Critical Mass** (50-52) before most of **Incineration**), 0.6% faster per kill at levels 20-60. The talents come from the leveling filler pass of 2026-11-09, which moved eight points that measured nothing or only held a tier open (Blast Wave among them) to **Incineration**, **Improved Frost Nova** and **Wand Specialization**."
     ],
@@ -230,12 +230,12 @@
     ],
     "written": "2026-11-15",
     "rotations": {
-     "leveling:frost-leveling": "9439ac0363d0",
-     "leveling:fire-leveling": "6a7250666fa9",
-     "leveling:frostfire-leveling": "b3765a46d584",
+     "leveling:frost-leveling": "0f2f740aa890",
+     "leveling:fire-leveling": "6b74c3c92a05",
+     "leveling:frostfire-leveling": "46f76c659cce",
      "leveling:frost-aoe": "2943a8d95023",
-     "leveling:arcane-leveling": "bc56f0cedcdb",
-     "leveling:barrage-frost-leveling": "2ba5169ca3f1"
+     "leveling:arcane-leveling": "48b0f2bbbab2",
+     "leveling:barrage-frost-leveling": "410cf796f661"
     }
    }
   },
@@ -275,26 +275,26 @@
      "Before level 40 **Frostbolt** does the same job, under the same rule: no new bolt once the mob is below about a third of its health.",
      "**Shatter** and **Ice Lance** are the build's two most valuable talents in the open search of 2026-11-15 (about 5.7 and 4.3 seconds per kill at 60, then **Ice Shards** 2.2, **Precision** and **Ignite** 1.5 each, and **Frostbite**, **Fingers of Frost** and **Frost Channeling** 1.4 each): a frozen mob takes 300% more damage from **Ice Lance**, with 50% more crit chance and **Ice Shards**' bigger crits. It has an 8-second cooldown, one per freeze.",
      "**Frost Nova** when the mob reaches you, then step back out of melee. **Improved Frost Nova** (32, 55) brings it back 4 seconds sooner with both points.",
-     "**Fire Blast** is the instant: when the mob would reach you before the bolt lands (with it on cooldown and **Frost Nova** ready, wand the mob in), when the mob is on you with **Frost Nova** down, to finish a mob it will kill, and whenever it is ready on the mob's last third, with the wand between. The rules before 2026-11-15 switched it off; the re-tuned rules press it about 1.5 to 2 times a kill. **Cone of Cold** stays off for single pulls.",
+     "**Fire Blast** is the instant: when the mob would reach you before the bolt lands (with it on cooldown and **Frost Nova** ready, wand the mob in), when the mob is on you with **Frost Nova** down, to finish a mob it will kill, and whenever it is ready on the mob's last third until the mob is down to a tenth of its health (the tune of 2026-11-17), with the wand between. The rules before 2026-11-15 switched it off; the re-tuned rules press it about 1.5 to 2 times a kill. **Cone of Cold** stays off for single pulls.",
      "**Master of Elements** refunds 30% of a spell's base cost on each Fire or Frost crit, which **Shatter** makes common; **Critical Mass** adds 6% crit to your Fire spells, **Frostfire Bolt** and **Fire Blast** included, and **Incineration** adds crit to **Fire Blast** and **Ice Lance**."
     ],
     "caveats": [
-     "The leveling filler pass of 2026-11-09 moved five points that measured nothing or only held a tier open (Blast Wave, Fire Power, Arcane Resilience and both Frost Warding) to **Improved Frostbolt**, **Improved Frost Nova** and **Impact**; on 2026-11-15, under **Mage Armor**, the open search and the filler pass moved the three Burning Soul points to **Improved Fire Blast** (46-47) and **Impact** (45): 2/25/24, with no Blast Wave for packs and nothing that keeps hits from pushing the bolt back.",
+     "The leveling filler pass of 2026-11-09 moved five points that measured nothing or only held a tier open (Blast Wave, Fire Power, Arcane Resilience and both Frost Warding) to **Improved Frostbolt**, **Improved Frost Nova** and **Impact**; on 2026-11-15, under **Mage Armor**, the open search and the filler pass moved the three Burning Soul points to **Improved Fire Blast** (46-47) and **Impact** (45): 2/25/24, with no Blast Wave for packs and nothing that keeps hits from pushing the bolt back. The pass of 2026-11-17 moved Flame Throwing (60) to **Impact**'s second point, at no cost.",
      "The signature rule: the Frostfire spec must do at least 30% of its damage with **Frostfire Bolt** from level 40. The page shows the build at 31% at level 60 in the fight lab, just above the floor: the re-tuned rules of 2026-11-15 moved part of the damage to **Fire Blast**.",
-     "Mana: **Frostfire Bolt** costs 370 at top rank. Drink below 15% of your mana and eat below 40% of your health (the tuned rules), and wear **Mage Armor** from 34 (1.5-3.5% faster per kill at 34-46 in the fight lab, 1-2% at 50-60); use **Evocation** between fights in place of a drink, when it is ready and you are under 15% mana."
+     "Mana: **Frostfire Bolt** costs 370 at top rank. Drink below 15% of your mana and eat below 40% of your health (the tuned rules), and wear **Mage Armor** from 34 (1.5-3.5% faster per kill at 34-46 in the fight lab, 1-2% at 50-60); use **Evocation** between fights in place of a drink, when it is ready and you are under 15% mana. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17)."
     ],
     "diverge": [
-     "On a nearly dead mob (below about a third of its health), start no bolt: **Fire Blast** when it is ready, an **Ice Lance** into a freeze or one that will kill, else the wand.",
+     "On a nearly dead mob (below about a third of its health), start no bolt: **Fire Blast** when it is ready (not under a tenth of its health), an **Ice Lance** into a freeze or one that will kill, else the wand.",
      "Mob on you with **Frost Nova** and **Fire Blast** both down: keep casting the bolt; hits push it back (this build has no Burning Soul). With a pack, **Cone of Cold** is back in play."
     ],
     "written": "2026-11-15",
     "rotations": {
-     "leveling:frost-leveling": "9439ac0363d0",
-     "leveling:fire-leveling": "6a7250666fa9",
-     "leveling:frostfire-leveling": "b3765a46d584",
+     "leveling:frost-leveling": "0f2f740aa890",
+     "leveling:fire-leveling": "6b74c3c92a05",
+     "leveling:frostfire-leveling": "46f76c659cce",
      "leveling:frost-aoe": "2943a8d95023",
-     "leveling:arcane-leveling": "bc56f0cedcdb",
-     "leveling:barrage-frost-leveling": "2ba5169ca3f1"
+     "leveling:arcane-leveling": "48b0f2bbbab2",
+     "leveling:barrage-frost-leveling": "410cf796f661"
     }
    }
   }

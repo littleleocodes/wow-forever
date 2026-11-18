@@ -105,7 +105,7 @@
      ],
      "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
      "notes": [
-      "Put **Windfury Weapon** on your weapon the moment you train it, and keep it there until 54.",
+      "Put **Windfury Weapon** on your weapon the moment you train it, and keep it there until 40.",
       "**Flurry** (31-33) makes you swing faster after every critical hit. **Elemental Weapons** (23, 34 and 57) adds 40% to the **Windfury Weapon** effect and 20% to **Rockbiter Weapon**'s attack power at three points. Nothing to press.",
       "**Chain Lightning** (32) and **Windfury Totem** (32) are not part of a fight against one mob."
      ]
@@ -167,7 +167,8 @@
    ],
    "between": [
     "Heal back to about 80% of your health with **Lesser Healing Wave** from level 20, or **Healing Wave** for a big gap and before 20.",
-    "Eat if you are still under 80% and out of mana for heals. Drink only below about 15% of your mana.",
+    "Eat if you are still under 90% after the heals: the tuned rules of 2026-11-17 (80% before), faster from 26 on (3.6% per kill at 40). Below level 24 eat only under 80%: there the 90% line sits you down after almost every kill, 9-10% slower per kill at 20-22 in the fight lab (the seconds on this page play 90% from 20). Drink only below about 15% of your mana.",
+    "Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. It saves a little for this build (1.0% per kill in the fight lab, 2026-11-16), and the tuned rules play it.",
     "Recast your weapon imbue when it runs out, and **Lightning Shield** before each pull.",
     "Visit the trainer every even level for new ranks of **Earth Shock** and **Lightning Shield**."
    ],
@@ -532,7 +533,7 @@
      "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
      "notes": [
       "Cheaper shocks mean more bolts between them: the list does not change, your mana lasts longer.",
-      "Put **Windfury Weapon** (30) on your weapon the moment you train it, and keep it there to 60.",
+      "Put **Windfury Weapon** (30) on your weapon the moment you train it, and keep it there until 50.",
       "**Grounding Totem** (30) eats a caster mob's next spell.",
       "**Chain Lightning** (32) and **Windfury Totem** (32) are not part of a fight against one mob."
      ]
@@ -555,13 +556,13 @@
      "notes": [
       "**Call of Flame** (37-38, 40) makes **Flame Shock** and **Searing Totem** hit harder and **Flame Shock** last longer.",
       "**Elemental Focus** (39): after a damage spell, sometimes the next one is free. Nothing to press: the next spell in the list takes it.",
-      "**Concussion** (41-43): your bolts and **Earth Shock** hit harder."
+      "**Concussion** (41-42): your bolts and **Earth Shock** hit harder."
      ]
     },
     {
      "from": 44,
      "title": "Eye of the Storm, the finished rotation",
-     "change": "**Eye of the Storm** (talent): at 3 points (47), 70% of a mob's hits no longer push your **Lightning Bolt** back. Nothing else new in the fight: buy every new rank.",
+     "change": "**Eye of the Storm** (talent): at 3 points (46), 70% of a mob's hits no longer push your **Lightning Bolt** back. Nothing else new in the fight: buy every new rank.",
      "press": [
       "**Searing Totem** as you pull, while you have more than half your mana.",
       "**Lightning Shield** up before the pull.",
@@ -574,15 +575,17 @@
      ],
      "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
      "notes": [
-      "**Reverberation** (44, 48, 53) shortens the shock cooldown.",
+      "**Reverberation** (43, 47-48 and 53) shortens the shock cooldown.",
       "**Lightning Overload** (49-51), **Call of Thunder** (52) and **Elemental Fury** (54-58): a free second bolt now and then, more bolt crits, and bigger crits. Nothing to press.",
-      "**Elemental Reach** (59-60) adds range to **Lightning Bolt**: start the pull a little farther out."
+      "**Elemental Reach** (59-60) adds range to **Lightning Bolt**: start the pull a little farther out.",
+      "From 50 put **Rockbiter Weapon** back on your weapon in place of Windfury (rank 6, trained from 44; rank 7 at 54): its attack power on every swing measured 0.4% faster per kill than Windfury's extra attacks at 50 and 1% at 60 in the fight lab (the tune of 2026-11-17). Windfury Weapon's ranks 3 and 4 (50, 60) are not needed."
      ]
     }
    ],
    "between": [
     "Heal back to about 80% of your health with **Lesser Healing Wave** from level 20, or **Healing Wave** for a big gap and before 20.",
-    "Eat if you are still under 80% and out of mana for heals. Drink only below about 15% of your mana.",
+    "Eat if you are still under 90% after the heals: the tuned rules of 2026-11-17 (80% before), 1-2.5% faster per kill at every level from 20 in the fight lab. Drink only below about 15% of your mana.",
+    "Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. It saves a little for this build (0.7% per kill in the fight lab, 2026-11-16), and the tuned rules play it.",
     "Recast your weapon imbue when it runs out, and **Lightning Shield** before each pull.",
     "Visit the trainer every even level for new ranks of **Lightning Bolt**, **Earth Shock**, **Flame Shock** and your heals."
    ],
@@ -824,7 +827,7 @@
      "Three spells sit on other keys than in the [Enhancement guide](enhancement-by-level.md): **Lightning Bolt**, the spell you press most here, takes Q; **Earth Shock** moves to R (Stormstrike's key, a talent this build lacks); **Flame Shock**, cast once per mob, moves up from Shift+Q to 1, the key Lightning Bolt leaves. Key 4 stays free: no Rage of the Farseer here. The heals, the totems and **Frost Shock** keep their keys, so a shaman who switches specs finds them where they were.",
      "Q is plain **Lightning Bolt**, no macro: a spell never starts your swings. Right-click the mob once it reaches you, and your weapon swings between casts (the fight lab's weapon does a part of your damage at every level). The middle mouse button stays free.",
      "Two swaps on bar 1: **Lesser Healing Wave** takes the thumb at 20 and **Healing Wave** moves to C as the big heal.",
-     "No key: **Lightning Shield**, the weapon imbue (**Rockbiter Weapon**, **Windfury Weapon** from 30), **Ghost Wolf**, food, water, the mount and the Hearthstone. **Strength of Earth Totem** and the other buff totems cost more than they return against one mob.",
+     "No key: **Lightning Shield**, the weapon imbue (**Rockbiter Weapon**, **Windfury Weapon** from 30, **Rockbiter Weapon** again from 50), **Ghost Wolf**, food, water, the mount and the Hearthstone. **Strength of Earth Totem** and the other buff totems cost more than they return against one mob.",
      "The single-target rotation never casts **Fire Nova**, **Chain Lightning** or **Magma Totem**. They are there for a pull that brings friends."
     ]
    }
@@ -932,7 +935,7 @@
      ],
      "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
      "notes": [
-      "Put **Windfury Weapon** on your weapon the moment you train it, and keep it there until 54.",
+      "Put **Windfury Weapon** on your weapon the moment you train it, and keep it there until 40.",
       "**Mana Tide Totem** (30) has a long cooldown, and the fight lab does not use it solo. Keep it for a long fight or a dungeon.",
       "**Restorative Totems** (31-34) makes **Healing Stream Totem** and **Mana Spring Totem** stronger: a healer's talent.",
       "**Chain Lightning** (32) and **Windfury Totem** (32) are not part of a fight against one mob."
@@ -957,7 +960,8 @@
    ],
    "between": [
     "Heal back to about 80% of your health with **Lesser Healing Wave** from level 20, or **Healing Wave** for a big gap and before 20.",
-    "Eat if you are still under 80% and out of mana for heals. Drink only below about 15% of your mana.",
+    "Eat if you are still under 90% after the heals: the Enhancement rules of 2026-11-17, which this page plays (80% before), 2-3% faster per kill at 24-40 in the fight lab and no faster at 20-22. Drink only below about 15% of your mana.",
+    "Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. It saves a little for this build (0.7% per kill in the fight lab, 2026-11-16), and the tuned rules play it.",
     "Recast your weapon imbue when it runs out, and your shield before each pull: **Lightning Shield**, or **Water Shield** from 28 when you are under 60% of your mana.",
     "Visit the trainer every even level for new ranks of **Earth Shock**, **Lightning Shield** and your heals."
    ],

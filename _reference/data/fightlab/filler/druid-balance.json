@@ -1,9 +1,9 @@
 {
  "class": "druid",
  "spec": "Balance",
- "build": "opt-balance-dps-leveling-st",
+ "build": "balance-open-leveling",
  "rotation": "balance-dps",
- "date": "2026-11-09",
+ "date": "2026-11-17",
  "fights": 1500,
  "start_order": [
   {
@@ -57,7 +57,7 @@
   {
    "levels": "23-24",
    "tree": "Balance",
-   "talent": "Improved Entangling Roots",
+   "talent": "Genesis",
    "points": 2
   },
   {
@@ -85,22 +85,10 @@
    "points": 1
   },
   {
-   "levels": "35-36",
+   "levels": "35-38",
    "tree": "Balance",
    "talent": "Moonfury",
-   "points": 2
-  },
-  {
-   "levels": "37",
-   "tree": "Balance",
-   "talent": "Vengeance",
-   "points": 1
-  },
-  {
-   "levels": "38",
-   "tree": "Balance",
-   "talent": "Moonfury",
-   "points": 1
+   "points": 4
   },
   {
    "levels": "39",
@@ -115,118 +103,208 @@
    "points": 1
   },
   {
-   "levels": "41-42",
-   "tree": "Balance",
-   "talent": "Vengeance",
-   "points": 2
-  },
-  {
-   "levels": "43-44",
+   "levels": "41",
    "tree": "Balance",
    "talent": "Moonfury",
-   "points": 2
-  },
-  {
-   "levels": "45",
-   "tree": "Balance",
-   "talent": "Improved Entangling Roots",
    "points": 1
   },
   {
-   "levels": "46-47",
-   "tree": "Restoration",
-   "talent": "Heart of the Wild",
-   "points": 2
-  },
-  {
-   "levels": "48-50",
+   "levels": "42-46",
    "tree": "Restoration",
    "talent": "Nature's Focus",
+   "points": 5
+  },
+  {
+   "levels": "47-49",
+   "tree": "Restoration",
+   "talent": "Reflection",
    "points": 3
   },
   {
-   "levels": "51",
-   "tree": "Restoration",
-   "talent": "Reflection",
-   "points": 1
-  },
-  {
-   "levels": "52-56",
+   "levels": "50-54",
    "tree": "Restoration",
    "talent": "Naturalist",
    "points": 5
   },
   {
-   "levels": "57-58",
-   "tree": "Restoration",
-   "talent": "Reflection",
-   "points": 2
+   "levels": "55",
+   "tree": "Balance",
+   "talent": "Genesis",
+   "points": 1
   },
   {
-   "levels": "59-60",
+   "levels": "56-58",
+   "tree": "Feral Combat",
+   "talent": "Ferocity",
+   "points": 3
+  },
+  {
+   "levels": "59",
    "tree": "Restoration",
-   "talent": "Nature's Focus",
-   "points": 2
+   "talent": "Natural Shapeshifter",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Restoration",
+   "talent": "Subtlety",
+   "points": 1
   }
  ],
  "steps": [
   {
-   "weighted": 37.828,
+   "weighted": 34.779,
    "values_at_60": {
-    "Improved Entangling Roots": 0.0,
-    "Moonfury": -0.215,
-    "Moonkin Form": -2.286,
-    "Naturalist": -0.215,
-    "Nature's Focus": -0.167,
-    "Reflection": -0.481,
-    "Vengeance": -0.241
+    "Ferocity": 0.0,
+    "Genesis": -0.075,
+    "Moonfury": -0.426,
+    "Moonkin Form": -4.57,
+    "Natural Shapeshifter": -0.0,
+    "Naturalist": -0.426,
+    "Reflection": -0.575,
+    "Subtlety": 0.0
    },
    "zero": [
-    "Improved Entangling Roots"
+    "Ferocity",
+    "Genesis",
+    "Natural Shapeshifter",
+    "Subtlety"
    ]
   },
   {
-   "weighted": 37.815,
+   "weighted": 34.721,
    "values_at_60": {
-    "Genesis": 0.025,
-    "Moonfury": -0.287,
-    "Moonkin Form": -2.174,
-    "Naturalist": -0.287,
-    "Nature's Focus": -0.155,
-    "Reflection": -0.267,
-    "Vengeance": -0.215
+    "Ferocity": 0.0,
+    "Moonfury": -0.326,
+    "Moonkin Form": -4.579,
+    "Natural Shapeshifter": -0.001,
+    "Naturalist": -0.326,
+    "Reflection": -0.593,
+    "Subtlety": 0.0,
+    "Vengeance": -0.212
    },
    "zero": [
-    "Genesis"
+    "Ferocity",
+    "Natural Shapeshifter",
+    "Subtlety"
+   ]
+  },
+  {
+   "weighted": 34.698,
+   "values_at_60": {
+    "Ferocity": 0.0,
+    "Moonfury": -0.257,
+    "Moonkin Form": -4.476,
+    "Natural Shapeshifter": -0.0,
+    "Naturalist": -0.257,
+    "Reflection": -0.458,
+    "Subtlety": 0.0,
+    "Vengeance": -0.141
+   },
+   "zero": [
+    "Ferocity",
+    "Natural Shapeshifter",
+    "Subtlety"
+   ]
+  },
+  {
+   "weighted": 34.663,
+   "values_at_60": {
+    "Ferocity": 0.0,
+    "Moonfury": -0.336,
+    "Moonkin Form": -4.553,
+    "Natural Shapeshifter": -0.0,
+    "Naturalist": -0.336,
+    "Reflection": -0.517,
+    "Subtlety": 0.0,
+    "Vengeance": -0.206
+   },
+   "zero": [
+    "Ferocity",
+    "Natural Shapeshifter",
+    "Subtlety"
+   ]
+  },
+  {
+   "weighted": 34.658,
+   "values_at_60": {
+    "Ferocity": 0.0,
+    "Heart of the Wild": -0.031,
+    "Moonfury": -0.286,
+    "Moonkin Form": -4.566,
+    "Natural Shapeshifter": -0.0,
+    "Naturalist": -0.286,
+    "Reflection": -0.507,
+    "Vengeance": -0.195
+   },
+   "zero": [
+    "Ferocity",
+    "Heart of the Wild",
+    "Natural Shapeshifter"
+   ]
+  },
+  {
+   "weighted": 34.658,
+   "values_at_60": {
+    "Bloom": 0.0,
+    "Ferocity": 0.0,
+    "Heart of the Wild": -0.031,
+    "Moonfury": -0.286,
+    "Moonkin Form": -4.566,
+    "Naturalist": -0.286,
+    "Reflection": -0.512,
+    "Vengeance": -0.195
+   },
+   "zero": [
+    "Bloom",
+    "Ferocity",
+    "Heart of the Wild"
    ]
   }
  ],
  "moves": [
   {
-   "from": "Improved Entangling Roots",
-   "to": "Genesis",
-   "level": 45,
-   "seed3": -0.0003,
-   "seed4": -0.0017,
+   "from": "Genesis",
+   "to": "Vengeance",
+   "level": 55,
+   "seed3": -0.0017,
+   "seed4": -0.0024,
    "why": "tie-break"
   },
   {
-   "from": "Improved Entangling Roots",
-   "to": "Genesis",
-   "level": 24,
-   "seed3": -0.0041,
-   "seed4": -0.002,
-   "why": "gate"
+   "from": "Ferocity",
+   "to": "Vengeance",
+   "level": 58,
+   "seed3": -0.0007,
+   "seed4": -0.0007,
+   "why": "tie-break"
   },
   {
-   "from": "Improved Entangling Roots",
-   "to": "Genesis",
-   "level": 23,
-   "seed3": -0.0044,
-   "seed4": -0.0027,
-   "why": "gate"
+   "from": "Ferocity",
+   "to": "Vengeance",
+   "level": 57,
+   "seed3": -0.001,
+   "seed4": -0.001,
+   "why": "tie-break"
+  },
+  {
+   "from": "Subtlety",
+   "to": "Heart of the Wild",
+   "level": 60,
+   "seed3": -0.0002,
+   "seed4": 0.0,
+   "why": "no loss"
+  },
+  {
+   "from": "Natural Shapeshifter",
+   "to": "Bloom",
+   "level": 59,
+   "seed3": 0.0,
+   "seed4": 0.0,
+   "why": "no loss"
   }
  ],
+ "kept_signature": [],
  "final_order": [
   {
    "levels": "10-14",
@@ -307,22 +385,10 @@
    "points": 1
   },
   {
-   "levels": "35-36",
+   "levels": "35-38",
    "tree": "Balance",
    "talent": "Moonfury",
-   "points": 2
-  },
-  {
-   "levels": "37",
-   "tree": "Balance",
-   "talent": "Vengeance",
-   "points": 1
-  },
-  {
-   "levels": "38",
-   "tree": "Balance",
-   "talent": "Moonfury",
-   "points": 1
+   "points": 4
   },
   {
    "levels": "39",
@@ -337,58 +403,58 @@
    "points": 1
   },
   {
-   "levels": "41-42",
-   "tree": "Balance",
-   "talent": "Vengeance",
-   "points": 2
-  },
-  {
-   "levels": "43-44",
+   "levels": "41",
    "tree": "Balance",
    "talent": "Moonfury",
-   "points": 2
-  },
-  {
-   "levels": "45",
-   "tree": "Balance",
-   "talent": "Genesis",
    "points": 1
   },
   {
-   "levels": "46-47",
-   "tree": "Restoration",
-   "talent": "Heart of the Wild",
-   "points": 2
-  },
-  {
-   "levels": "48-50",
+   "levels": "42-46",
    "tree": "Restoration",
    "talent": "Nature's Focus",
+   "points": 5
+  },
+  {
+   "levels": "47-49",
+   "tree": "Restoration",
+   "talent": "Reflection",
    "points": 3
   },
   {
-   "levels": "51",
-   "tree": "Restoration",
-   "talent": "Reflection",
-   "points": 1
-  },
-  {
-   "levels": "52-56",
+   "levels": "50-54",
    "tree": "Restoration",
    "talent": "Naturalist",
    "points": 5
   },
   {
+   "levels": "55",
+   "tree": "Balance",
+   "talent": "Vengeance",
+   "points": 1
+  },
+  {
+   "levels": "56",
+   "tree": "Feral Combat",
+   "talent": "Ferocity",
+   "points": 1
+  },
+  {
    "levels": "57-58",
-   "tree": "Restoration",
-   "talent": "Reflection",
+   "tree": "Balance",
+   "talent": "Vengeance",
    "points": 2
   },
   {
-   "levels": "59-60",
+   "levels": "59",
    "tree": "Restoration",
-   "talent": "Nature's Focus",
-   "points": 2
+   "talent": "Bloom",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Restoration",
+   "talent": "Heart of the Wild",
+   "points": 1
   }
  ],
  "written": {
@@ -400,7 +466,7 @@
     ],
     [
      "Genesis",
-     3
+     2
     ],
     [
      "Moonglow",
@@ -443,7 +509,12 @@
      1
     ]
    ],
-   "Feral Combat": [],
+   "Feral Combat": [
+    [
+     "Ferocity",
+     1
+    ]
+   ],
    "Restoration": [
     [
      "Nature's Focus",
@@ -451,7 +522,7 @@
     ],
     [
      "Heart of the Wild",
-     2
+     1
     ],
     [
      "Naturalist",
@@ -460,6 +531,10 @@
     [
      "Reflection",
      3
+    ],
+    [
+     "Bloom",
+     1
     ]
    ]
   },
@@ -543,22 +618,10 @@
     "points": 1
    },
    {
-    "levels": "35-36",
+    "levels": "35-38",
     "tree": "Balance",
     "talent": "Moonfury",
-    "points": 2
-   },
-   {
-    "levels": "37",
-    "tree": "Balance",
-    "talent": "Vengeance",
-    "points": 1
-   },
-   {
-    "levels": "38",
-    "tree": "Balance",
-    "talent": "Moonfury",
-    "points": 1
+    "points": 4
    },
    {
     "levels": "39",
@@ -573,60 +636,60 @@
     "points": 1
    },
    {
-    "levels": "41-42",
-    "tree": "Balance",
-    "talent": "Vengeance",
-    "points": 2
-   },
-   {
-    "levels": "43-44",
+    "levels": "41",
     "tree": "Balance",
     "talent": "Moonfury",
-    "points": 2
-   },
-   {
-    "levels": "45",
-    "tree": "Balance",
-    "talent": "Genesis",
     "points": 1
    },
    {
-    "levels": "46-47",
-    "tree": "Restoration",
-    "talent": "Heart of the Wild",
-    "points": 2
-   },
-   {
-    "levels": "48-50",
+    "levels": "42-46",
     "tree": "Restoration",
     "talent": "Nature's Focus",
+    "points": 5
+   },
+   {
+    "levels": "47-49",
+    "tree": "Restoration",
+    "talent": "Reflection",
     "points": 3
    },
    {
-    "levels": "51",
-    "tree": "Restoration",
-    "talent": "Reflection",
-    "points": 1
-   },
-   {
-    "levels": "52-56",
+    "levels": "50-54",
     "tree": "Restoration",
     "talent": "Naturalist",
     "points": 5
    },
    {
+    "levels": "55",
+    "tree": "Balance",
+    "talent": "Vengeance",
+    "points": 1
+   },
+   {
+    "levels": "56",
+    "tree": "Feral Combat",
+    "talent": "Ferocity",
+    "points": 1
+   },
+   {
     "levels": "57-58",
-    "tree": "Restoration",
-    "talent": "Reflection",
+    "tree": "Balance",
+    "talent": "Vengeance",
     "points": 2
    },
    {
-    "levels": "59-60",
+    "levels": "59",
     "tree": "Restoration",
-    "talent": "Nature's Focus",
-    "points": 2
+    "talent": "Bloom",
+    "points": 1
+   },
+   {
+    "levels": "60",
+    "tree": "Restoration",
+    "talent": "Heart of the Wild",
+    "points": 1
    }
   ],
-  "note": "2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Entangling Roots to Genesis at 45 (tie-break: -0.0% seed 3, -0.2% seed 4, level-weighted time per kill); Improved Entangling Roots to Genesis at 24 (gate: -0.4% seed 3, -0.2% seed 4, level-weighted time per kill); Improved Entangling Roots to Genesis at 23 (gate: -0.4% seed 3, -0.3% seed 4, level-weighted time per kill)."
+  "note": "2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Genesis to Vengeance at 55 (tie-break: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Ferocity to Vengeance at 58 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Ferocity to Vengeance at 57 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Subtlety to Heart of the Wild at 60 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Natural Shapeshifter to Bloom at 59 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill)."
  }
 }

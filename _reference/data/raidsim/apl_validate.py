@@ -6,7 +6,9 @@ For every entry of specs.json and each rotation it runs (base, dummy, raid), the
 parsed against the character the entry's first build makes) lists the simulator's validation messages per priority-list and prepull
 line: an unknown spell or aura, a condition it cannot resolve and drops or treats as always true. The fork resolved conditions the
 official simulator does not (a totem as a dot: the Elemental rotation's Searing Totem line lost its guard and recast 58 times a fight).
-Record `raidsim/apl-validate.json`; the lines it lists need a rewrite before their numbers mean anything.
+Record `raidsim/apl-validate.json`; the lines it lists need a rewrite before their numbers mean anything. A run for some classes keeps
+the other classes' entries, and a rotation whose bench run failed is a `bench` row, not a missing one (2026-11-18: a class run had
+written only its classes, and a failed run read like a rotation with no warnings).
 """
 import argparse
 import json
@@ -68,6 +70,8 @@ def main():
                 name = pathlib.Path(apl).name
                 if r.returncode or not rows:
                     print(f"  {cls} {spec} {name}: bench failed {r.stderr[-300:]}")
+                    record.setdefault(cls, {})[f"{spec}:{name}"] = {"bench": {"messages": [f"bench failed: {r.stderr[-300:].strip()}"],
+                                                                              "line": ""}}
                     continue
                 d = rows[0]
                 prio = json.load(open(apl, encoding="utf-8")).get("priorityList", [])
@@ -84,6 +88,10 @@ def main():
                     print(f"    {k}: {'; '.join(v['messages'])[:160]} | {v['line'][:150]}")
     if a.write:
         out = HERE / ("apl-validate-all-talents.json" if a.all_talents else "apl-validate.json")
+        if a.classes and out.exists():   # a run for some classes keeps the other classes' entries
+            old = json.loads(out.read_text(encoding="utf-8"))
+            merged = {**{c: v for c, v in old.items() if c not in a.classes}, **record}
+            record = {c: merged[c] for c in [*R.SPECS, *merged] if c in merged}
         out.write_text(json.dumps(record, indent=1) + "\n", encoding="utf-8")
         print(f"wrote {out}")
 

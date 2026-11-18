@@ -3,7 +3,7 @@
  "spec": "Fire",
  "build": "fire-open-leveling",
  "rotation": "fire-leveling",
- "date": "2026-11-16",
+ "date": "2026-11-17",
  "fights": 1500,
  "start_order": [
   {
@@ -51,7 +51,7 @@
   {
    "levels": "28-30",
    "tree": "Frost",
-   "talent": "Frostbite",
+   "talent": "Ice Shards",
    "points": 3
   },
   {
@@ -61,10 +61,16 @@
    "points": 1
   },
   {
-   "levels": "32-35",
+   "levels": "32-34",
+   "tree": "Frost",
+   "talent": "Frost Channeling",
+   "points": 3
+  },
+  {
+   "levels": "35",
    "tree": "Frost",
    "talent": "Ice Shards",
-   "points": 4
+   "points": 1
   },
   {
    "levels": "36-38",
@@ -153,12 +159,12 @@
  ],
  "steps": [
   {
-   "weighted": 36.152,
+   "weighted": 33.66,
    "values_at_60": {
-    "Combustion": -1.099,
-    "Ice Shards": -0.174,
-    "Shatter": -1.13,
-    "Wand Specialization": -0.296
+    "Combustion": -0.707,
+    "Ice Shards": -0.111,
+    "Shatter": -0.696,
+    "Wand Specialization": -0.138
    },
    "zero": []
   }
@@ -213,7 +219,7 @@
   {
    "levels": "28-30",
    "tree": "Frost",
-   "talent": "Frostbite",
+   "talent": "Ice Shards",
    "points": 3
   },
   {
@@ -223,10 +229,16 @@
    "points": 1
   },
   {
-   "levels": "32-35",
+   "levels": "32-34",
+   "tree": "Frost",
+   "talent": "Frost Channeling",
+   "points": 3
+  },
+  {
+   "levels": "35",
    "tree": "Frost",
    "talent": "Ice Shards",
-   "points": 4
+   "points": 1
   },
   {
    "levels": "36-38",

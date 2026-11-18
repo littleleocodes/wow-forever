@@ -470,7 +470,8 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   rule set that plays the required spells over a faster one that does not. The mage's armor is a rule knob since 2026-11-15 (user: "Mage
   armor or ice armor?"; the module had always worn Ice Armor): `mage.MAGE_ARMOR` wears Mage Armor from 34 (50% of regeneration while
   casting at every rank in Forever, adding to Arcane Meditation). The tunes took it for Frost, Arcane, Arcane-Frost and Frostfire (up to 5%
-  faster per kill on single pulls, most at 34-40; even from 50 for Arcane-Frost); Fire keeps Ice Armor, and so does the AoE variant (no rules file: Mage Armor was 9-20% slower in pulls
+  faster per kill on single pulls, most at 34-40; even from 50 for Arcane-Frost); Fire kept Ice Armor until the eat-and-drink re-tune of 2026-11-17 took Mage Armor (about 1.2% faster per kill once you eat while
+  you drink), and the AoE variant keeps Ice Armor (no rules file: Mage Armor was 9-20% slower in pulls
   of four). A choice a module makes for the player belongs in `ROTATION_KNOBS`, where the tunes can compare it. The mage's between-fight Evocation is one since 2026-11-16 (user: "Why is Evocation for mage used
   when below 40% and not when lower? It restores much more mana than 60%"): `mage.EVO_BELOW`, a hand-set 0.4 before. Forever's
   Evocation is Classic's (1,500% of the Spirit regeneration for 8 s: 118% of the pool at 20, about 70% at 60), and 0.15, the drink
@@ -494,7 +495,9 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
   (pvp_rogue.py frees a hand by taking a poison out of mod.spells, so the module looks each hand's poison up at every hit). Every rogue
   leveling rotation took Instant Poison on both hands (0.8-1.7% faster per kill; Assassination's rules also dropped Kick). The
   shaman's tunes kept their rules, and a direct A/B put Rockbiter back from 54 in the Enhancement rules by hand (0.8-1.8% faster per
-  kill at 54-60; the tune's 600-fight screening had read it as +0.16%: search-improvements 0j). The imbues' numbers are read at the
+  kill at 54-60; the tune's 600-fight screening had read it as +0.16%: search-improvements 0j; from 40 since the re-tune of 2026-11-16,
+  and Elemental's from 50 since the eat-and-drink re-tune of 2026-11-17, which also moved the shaman's eat line to 90%: the Enhancement
+  guides say 80% until 24, search-improvements 0l). The imbues' numbers are read at the
   shaman's level (Rockbiter rank 5: 212 attack power at 34, 355 from 42). The paladin's Holy-path gear row and seal are
   knobs since 2026-11-16 (user: "Go with your rec"; `paladin.CASTER_GEAR_FROM`: caster gear from a level, 61 never; `SOR_FROM`:
   Seal of Righteousness over Seal of Command from a level; both in PVE_KNOBS): the Holy rules took melee gear at every level (5%
@@ -633,7 +636,12 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
   (the profile's threat and mitigation weights, relative to the hand draft), maps threat per action onto the model's threat
   sources and combines threat and mitigation in the removal deltas; `calibrate.py` then fits the tank-mode values.
   A talent that duplicates one of the simulator's full raid buffs measures zero unless the spec entry lists the buff in
-  `buffs_off` / `debuffs_off` (proto field names; the bench clears them). Optimizer exports are seeded with the hand drafts
+  `buffs_off` / `debuffs_off` (proto field names; the bench clears them). A buff the class cannot benefit from goes there too:
+  since 2026-11-18 the shaman's `enhancement-dps` lists `windfury_totem` (Forever's Windfury Weapon tooltip: on the main hand it
+  "disables any benefit you personally receive from Windfury Totem"; the full raid had given Enhancement both). Every Enhancement
+  build lost 12-13% in a full raid, the page's pick still leads (no search: `deep-runs/wf_enh_1117.sh`), and the gear tiers and
+  GearCheck's raid values were made again (physical stats about 20% lower against spell power). The environments run's `max` column
+  ("everything on") still has the totem. Optimizer exports are seeded with the hand drafts
   (`scorer/run.py --seed`, `--compare` seeds too), so an exported build never scores below them under its own model.
   **The simulator's presets compete** (2026-09-27): the raid step first saves every preset within 6% of the spec's best build in the
   last race as `raidsim/candidates/cand-<spec>-preset-<name>.json` (`run.py --preset-candidates`; stale ones are removed). The

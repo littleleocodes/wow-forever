@@ -11,10 +11,10 @@ Single-target leveling fights against normal mobs of your level with a Voidwalke
 | Level | Talents | Fight mean | median | p90 | Downtime/kill | Deaths/100 kills | Time/kill | Kills/hour | Mana/kill | Pushbacks/kill | Pet deaths/100 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | 20 | 11 | 14.7s | 15.0s | 17.0s | 0.8s | 0.0 | 23.6s | 153 | 123 | 0.00 | 0% |
-| 30 | 21 | 19.4s | 19.2s | 22.6s | 2.1s | 0.0 | 29.5s | 122 | 319 | 0.00 | 0% |
-| 40 | 31 | 23.5s | 23.2s | 28.3s | 2.9s | 0.0 | 34.4s | 105 | 474 | 0.00 | 0% |
-| 50 | 41 | 25.3s | 25.6s | 30.1s | 1.9s | 0.0 | 35.2s | 102 | 614 | 0.00 | 0% |
-| 60 | 51 | 24.4s | 24.1s | 29.6s | 1.2s | 0.0 | 33.6s | 107 | 784 | 0.03 | 0% |
+| 30 | 21 | 19.4s | 19.5s | 22.6s | 2.1s | 0.0 | 29.5s | 122 | 319 | 0.00 | 0% |
+| 40 | 31 | 23.4s | 23.2s | 28.3s | 3.0s | 0.0 | 34.4s | 105 | 476 | 0.00 | 0% |
+| 50 | 41 | 25.3s | 25.6s | 30.1s | 1.9s | 0.0 | 35.2s | 102 | 617 | 0.00 | 0% |
+| 60 | 51 | 24.4s | 24.1s | 29.6s | 1.2s | 0.0 | 33.6s | 107 | 785 | 0.03 | 0% |
 
 ## Measured damage shares (vs. the spec model's assumed shares)
 
@@ -23,7 +23,7 @@ Single-target leveling fights against normal mobs of your level with a Voidwalke
 | 20 | 14% | 14% | 0% | 0% | 14% | 0% | 25% | 32% |
 | 30 | 15% | 15% | 0% | 0% | 10% | 6% | 22% | 31% |
 | 40 | 18% | 15% | 0% | 0% | 10% | 8% | 19% | 29% |
-| 50 | 21% | 16% | 0% | 0% | 8% | 10% | 17% | 28% |
+| 50 | 21% | 16% | 0% | 0% | 9% | 10% | 17% | 28% |
 | 60 | 22% | 22% | 0% | 0% | 7% | 10% | 14% | 25% |
 
 Spec model (`_reference/data/scorer/specs`) assumes: corruption 22%, agony 22%, drain_life 2%, shadow_bolt 23%, immolate 4%, wand 6%, voidwalker 10%, siphon_life 10%, death_coil 0%, rain_of_fire 0%.
@@ -31,10 +31,10 @@ Spec model (`_reference/data/scorer/specs`) assumes: corruption 22%, agony 22%, 
 ## Realized crit rates and player at each level
 
 - **Level 20**: 1051 health, 1583 mana, 80 Int, 70 Spirit, 0 spell power, base spell crit 6.0%, armor 444 (Demon Armor); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Corruption 26%, Bane of Agony 24%, Torment 0%, Immolate 24%, Wand 3%. Health after a fight 99%, mana 77%.
-- **Level 30**: 1512 health, 2532 mana, 126 Int, 101 Spirit, 0 spell power, base spell crit 6.2%, armor 572 (Demon Armor); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Corruption 58%, Torment 0%, Bane of Agony 56%, Siphon Life 51%, Immolate 29%, Wand 3%. Health after a fight 77%, mana 54%.
-- **Level 40**: 1602 health, 3570 mana, 176 Int, 119 Spirit, 26 spell power, base spell crit 6.3%, armor 712 (Demon Armor); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Corruption 61%, Torment 0%, Bane of Agony 76%, Siphon Life 73%, Immolate 34%, Wand 3%. Health after a fight 86%, mana 56%.
-- **Level 50**: 2133 health, 4122 mana, 197 Int, 149 Spirit, 48 spell power, base spell crit 5.7%, armor 871 (Demon Armor); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Corruption 57%, Torment 0%, Bane of Agony 76%, Siphon Life 78%, Immolate 30%, Wand 3%, Death Coil 0%. Health after a fight 87%, mana 51%.
-- **Level 60**: 2629 health, 4898 mana, 235 Int, 184 Spirit, 138 spell power, base spell crit 5.6%, armor 1042 (Demon Armor); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Corruption 62%, Torment 0%, Bane of Agony 73%, Siphon Life 71%, Immolate 29%, Wand 3%, Drain Life 33%, Death Coil 0%, Life Tap 0%. Health after a fight 90%, mana 48%. Not simulated: Decimation.
+- **Level 30**: 1512 health, 2532 mana, 126 Int, 101 Spirit, 0 spell power, base spell crit 6.2%, armor 572 (Demon Armor); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Corruption 59%, Torment 0%, Bane of Agony 55%, Siphon Life 53%, Immolate 28%, Wand 3%. Health after a fight 77%, mana 55%.
+- **Level 40**: 1602 health, 3570 mana, 176 Int, 119 Spirit, 26 spell power, base spell crit 6.3%, armor 712 (Demon Armor); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Corruption 62%, Torment 0%, Bane of Agony 75%, Siphon Life 73%, Immolate 35%, Wand 3%. Health after a fight 86%, mana 56%.
+- **Level 50**: 2133 health, 4122 mana, 197 Int, 149 Spirit, 48 spell power, base spell crit 5.7%, armor 871 (Demon Armor); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Corruption 57%, Torment 0%, Bane of Agony 77%, Siphon Life 79%, Immolate 30%, Wand 3%, Death Coil 0%. Health after a fight 87%, mana 51%.
+- **Level 60**: 2629 health, 4898 mana, 235 Int, 184 Spirit, 138 spell power, base spell crit 5.6%, armor 1042 (Demon Armor); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Corruption 61%, Torment 0%, Bane of Agony 74%, Siphon Life 70%, Immolate 28%, Wand 3%, Drain Life 42%, Death Coil 0%, Life Tap 0%. Health after a fight 90%, mana 49%. Not simulated: Decimation.
 
 ## Other builds (same mobs, same seeds)
 
@@ -44,12 +44,12 @@ Spec model (`_reference/data/scorer/specs`) assumes: corruption 22%, agony 22%, 
 | 20 | leveling-affliction | 24.0s | +2.0% | 15.4s | 0.0 | 0.7s |
 | 30 | opt-affliction-leveling-leveling-st | 29.5s | - | 19.4s | 0.0 | 2.1s |
 | 30 | leveling-affliction | 29.1s | -1.3% | 20.2s | 0.0 | 0.9s |
-| 40 | opt-affliction-leveling-leveling-st | 34.4s | - | 23.5s | 0.0 | 2.9s |
-| 40 | leveling-affliction | 33.6s | -2.4% | 24.3s | 0.0 | 1.2s |
+| 40 | opt-affliction-leveling-leveling-st | 34.4s | - | 23.4s | 0.0 | 3.0s |
+| 40 | leveling-affliction | 33.5s | -2.6% | 24.3s | 0.0 | 1.2s |
 | 50 | opt-affliction-leveling-leveling-st | 35.2s | - | 25.3s | 0.0 | 1.9s |
-| 50 | leveling-affliction | 35.2s | -0.0% | 26.0s | 0.0 | 1.2s |
+| 50 | leveling-affliction | 35.3s | +0.2% | 26.0s | 0.0 | 1.3s |
 | 60 | opt-affliction-leveling-leveling-st | 33.6s | - | 24.4s | 0.0 | 1.2s |
-| 60 | leveling-affliction | 34.5s | +2.7% | 25.2s | 0.0 | 1.3s |
+| 60 | leveling-affliction | 34.5s | +2.6% | 25.2s | 0.0 | 1.2s |
 
 ## Gear tiers (main build)
 
@@ -61,12 +61,12 @@ Spec model (`_reference/data/scorer/specs`) assumes: corruption 22%, agony 22%, 
 | 20 | blues | 21.8s | -7.5% | 13.1s | 0.0 | 0.7s | 165 |
 | 30 | greens | 29.5s | - | 19.4s | 0.0 | 2.1s | 122 |
 | 30 | blues | 26.5s | -10.2% | 17.0s | 0.0 | 1.5s | 136 |
-| 40 | greens | 34.4s | - | 23.5s | 0.0 | 2.9s | 105 |
+| 40 | greens | 34.4s | - | 23.4s | 0.0 | 3.0s | 105 |
 | 40 | blues | 30.3s | -12.0% | 20.2s | 0.0 | 2.1s | 119 |
 | 50 | greens | 35.2s | - | 25.3s | 0.0 | 1.9s | 102 |
-| 50 | blues | 31.6s | -10.4% | 22.4s | 0.0 | 1.2s | 114 |
+| 50 | blues | 31.5s | -10.4% | 22.3s | 0.0 | 1.2s | 114 |
 | 60 | greens | 33.6s | - | 24.4s | 0.0 | 1.2s | 107 |
-| 60 | blues | 31.8s | -5.4% | 22.5s | 0.0 | 1.2s | 113 |
+| 60 | blues | 31.8s | -5.5% | 22.5s | 0.0 | 1.2s | 113 |
 
 ## Talent values at level 30
 
@@ -76,12 +76,12 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 |---|---|---|---|---|---|---|
 | Improved Corruption | 5 | +2.4% | +3.2% ± 0.2 | +0.5% | +2.3% | 0.0 |
 | Suppression | 4 | +1.5% | +1.9% ± 0.2 | +0.4% | +3.2% | 0.0 |
-| Improved Life Tap | 2 | +0.9% | +1.0% ± 0.2 | +0.4% | +2.7% | 0.0 |
-| Pandemic | 2 | +0.7% | +0.9% ± 0.2 | +0.3% | +1.0% | 0.0 |
-| Malevolence | 4 | +0.7% | +0.9% ± 0.2 | +0.2% | +1.8% | 0.0 |
-| Improved Bane of Agony | 2 | +0.6% | +0.9% ± 0.2 | +0.3% | +0.8% | 0.0 |
-| Amplify Curse | 1 | +0.6% | +0.7% ± 0.1 | +0.6% | +0.7% | 0.0 |
-| Siphon Life | 1 | -2.7% | -0.1% ± 0.2 | -2.7% | +6.9% | 0.0 |
+| Malevolence | 4 | +0.7% | +0.9% ± 0.1 | +0.2% | +1.8% | 0.0 |
+| Improved Life Tap | 2 | +0.7% | +0.9% ± 0.2 | +0.3% | +2.7% | 0.0 |
+| Improved Bane of Agony | 2 | +0.7% | +1.0% ± 0.2 | +0.3% | +0.8% | 0.0 |
+| Pandemic | 2 | +0.6% | +0.9% ± 0.2 | +0.3% | +1.0% | 0.0 |
+| Amplify Curse | 1 | +0.5% | +0.7% ± 0.1 | +0.5% | +0.7% | 0.0 |
+| Siphon Life | 1 | -2.7% | -0.0% ± 0.2 | -2.7% | +6.9% | 0.0 |
 
 ## Talent values at level 60
 
@@ -89,25 +89,25 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Siphon Life | 1 | +6.1% | +9.9% ± 0.3 | +6.1% | +7.0% | 0.0 |
-| Demonic Knowledge | 3 | +5.0% | +6.0% ± 0.3 | +1.7% | +5.2% | 0.0 |
-| Demonic Energies | 2 | +3.9% | -1.4% ± 0.2 | +1.9% | +1.2% | 0.0 |
-| Suppression | 5 | +3.4% | +4.0% ± 0.3 | +0.7% | +3.5% | 0.0 |
-| Improved Corruption | 5 | +2.6% | +3.2% ± 0.3 | +0.5% | +2.5% | 0.0 |
-| Pandemic | 3 | +2.1% | +2.7% ± 0.3 | +0.7% | +1.6% | 0.0 |
-| Malevolence | 5 | +1.9% | +2.4% ± 0.2 | +0.4% | +2.4% | 0.0 |
-| Improved Voidwalker | 3 | +1.8% | +2.1% ± 0.3 | +0.6% | +1.5% | 0.0 |
-| Soul Link | 1 | +1.7% | +2.2% ± 0.2 | +1.7% | +2.5% | 0.0 |
-| Shadow Mastery | 2 | +1.6% | +2.1% ± 0.2 | +0.8% | +2.3% | 0.0 |
-| Improved Life Tap | 2 | +1.6% | +2.0% ± 0.2 | +0.8% | +2.4% | 0.0 |
-| Improved Bane of Agony | 2 | +1.4% | +1.7% ± 0.2 | +0.7% | +0.9% | 0.0 |
-| Amplify Curse | 1 | +1.1% | +1.4% ± 0.2 | +1.1% | +0.7% | 0.0 |
-| Unholy Power | 5 | +1.0% | +1.4% ± 0.2 | +0.2% | +0.8% | 0.0 |
-| Demonic Embrace | 4 | +0.0% | +0.1% ± 0.2 | +0.0% | +0.0% | 0.0 |
+| Siphon Life | 1 | +5.8% | +9.5% ± 0.3 | +5.8% | +7.0% | 0.0 |
+| Demonic Knowledge | 3 | +4.9% | +5.9% ± 0.2 | +1.6% | +5.2% | 0.0 |
+| Demonic Energies | 2 | +3.8% | -1.5% ± 0.3 | +1.9% | +1.2% | 0.0 |
+| Suppression | 5 | +3.2% | +3.8% ± 0.3 | +0.6% | +3.5% | 0.0 |
+| Improved Corruption | 5 | +2.5% | +3.1% ± 0.3 | +0.5% | +2.5% | 0.0 |
+| Pandemic | 3 | +2.0% | +2.6% ± 0.2 | +0.7% | +1.6% | 0.0 |
+| Malevolence | 5 | +1.8% | +2.2% ± 0.2 | +0.4% | +2.4% | 0.0 |
+| Soul Link | 1 | +1.7% | +2.1% ± 0.3 | +1.7% | +2.5% | 0.0 |
+| Improved Voidwalker | 3 | +1.7% | +1.9% ± 0.3 | +0.6% | +1.5% | 0.0 |
+| Shadow Mastery | 2 | +1.6% | +2.0% ± 0.3 | +0.8% | +2.3% | 0.0 |
+| Improved Life Tap | 2 | +1.6% | +1.9% ± 0.3 | +0.8% | +2.4% | 0.0 |
+| Improved Bane of Agony | 2 | +1.4% | +1.6% ± 0.2 | +0.7% | +0.9% | 0.0 |
+| Amplify Curse | 1 | +1.1% | +1.3% ± 0.2 | +1.1% | +0.7% | 0.0 |
+| Unholy Power | 5 | +0.9% | +1.2% ± 0.3 | +0.2% | +0.8% | 0.0 |
 | Decimation | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.2% | 0.0 |
 | Demonic Sacrifice | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.0% | 0.0 |
 | Improved Imp | 3 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.0% | 0.0 |
-| Soul Siphon | 1 | -0.0% | -0.0% ± 0.2 | -0.0% | +0.2% | 0.0 |
+| Demonic Embrace | 4 | -0.1% | -0.0% ± 0.2 | -0.0% | +0.0% | 0.0 |
+| Soul Siphon | 1 | -0.1% | -0.1% ± 0.2 | -0.1% | +0.2% | 0.0 |
 
 ## Assumptions (edit `tables.py` to change them)
 
