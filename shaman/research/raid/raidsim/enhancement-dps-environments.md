@@ -4,18 +4,18 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| sim preset: Standard | - | 481 | 529 | 796 | 908 | 950 |
-| `enhancement-open-raid` | 18/31/2 | 481 | 534 | 797 | 909 | 953 |
-| `elemental-enhancement-ml-raid` | 17/29/5 | 474 | 517 | 784 | 892 | 901 |
-| `opt-enhancement-dps-parse` | 15/31/5 | 471 | 515 | 764 | 878 | 933 |
-| `opt-enhancement-dps-raid-dps` | 14/31/6 | 467 | 511 | 749 | 857 | 905 |
-| `enhancement-ml-raid` | 17/31/3 | 467 | 515 | 784 | 894 | 937 |
-| `enhancement-raid-dps` | 11/31/9 | 443 | 486 | 719 | 830 | 876 |
+| sim preset: Standard | - | 481 | 529 | 796 | 796 | 832 |
+| `enhancement-open-raid` | 18/31/2 | 481 | 534 | 797 | 797 | 834 |
+| `elemental-enhancement-ml-raid` | 17/29/5 | 474 | 517 | 784 | 784 | 795 |
+| `opt-enhancement-dps-parse` | 15/31/5 | 471 | 515 | 764 | 764 | 814 |
+| `opt-enhancement-dps-raid-dps` | 14/31/6 | 467 | 511 | 749 | 749 | 792 |
+| `enhancement-ml-raid` | 17/31/3 | 467 | 515 | 784 | 784 | 819 |
+| `enhancement-raid-dps` | 11/31/9 | 443 | 486 | 719 | 719 | 758 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
 - **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
 - **raid**: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 180 s
-- **maximum**: the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 180 s
+- **maximum**: the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else; none the spec cannot benefit from, such as Enhancement's Windfury Totem), consumables (and the Classic sim's world buffs), 180 s
 - **maximum, 60 s**: as maximum with a 60 s fight: cooldowns weigh more
 
 ## Where the raid gain comes from

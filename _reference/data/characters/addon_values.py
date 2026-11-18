@@ -916,9 +916,18 @@ def main():
         print(f"{cls}: {len(o['classes'][cls]['leveling'])} leveling builds, {len(o['classes'][cls]['raid'])} raid specs, "
               f"{len(o['classes'][cls]['heal'])} healer specs, tank {'yes' if o['classes'][cls]['tank'] else 'no'}", flush=True)
     # exact-tie defaults for the raid and heal lists too (Addons, 2026-11-13: a priest halfway between Holy and Discipline): the healer
-    # spec with the highest healer-lab capacity, the damage spec with the highest full-raid DPS in its BiS set (raidsim/pawn-raid-compare.json)
+    # spec with the highest healer-lab capacity, the damage spec with the highest full-raid DPS in its BiS set (the ML records' comparison, else raidsim/pawn-raid-compare.json)
     rc = json.loads((RAID / "pawn-raid-compare.json").read_text(encoding="utf-8")) if (RAID / "pawn-raid-compare.json").exists() else {"rows": []}
     dps = {(x["class"], x["spec"]): x["ours_dps"] for x in rc["rows"]}
+    # 2026-11-18 (page-audit Q4): the ML records' own full-raid comparison in the BiS set first (the best of the builds it races; every
+    # ML final refreshes it), the Pawn comparison where a spec has none: pawn-raid-compare.json was of 2026-11-13, before the 11-16
+    # re-pin, and on current numbers the rogue's default was the Assassination/Combat hybrid where Assassination leads by 4.7%
+    for f in sorted((RAID / "ml").glob("*.json")):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        cmp_ = next((c for c in (d.get("compare_raid"), d.get("compare")) if isinstance(c, dict) and c.get("setting") == "raid"), None)
+        best = max((v["dps"] for v in ((cmp_ or {}).get("dps") or {}).values() if isinstance(v, dict) and v.get("dps")), default=None)
+        if best and d.get("class") and d.get("spec"):
+            dps[(d["class"], d["spec"])] = best
     for cls, c in o["classes"].items():
         if c["heal"]:
             best = max(c["heal"], key=lambda e: (hv.get("specs") or {}).get(f"{cls}|{e['spec']}", {}).get("capacity", 0))

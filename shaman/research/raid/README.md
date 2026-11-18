@@ -144,13 +144,13 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 | `elemental-dps` | `elemental-raid-dps` | 29/22/0 | 560 | 647 | 759 | 759 | 771 |
 | `elemental-dps` | `elemental-raid` | 30/8/13 | 560 | 611 | 747 | 747 | 760 |
 | `elemental-dps` | sim preset: Mana Tide | - | 559 | 611 | 750 | 750 | 755 |
-| `enhancement-dps` | sim preset: Standard | - | 481 | 529 | 796 | 908 | 950 |
-| `enhancement-dps` | `enhancement-open-raid` | 18/31/2 | 481 | 534 | 797 | 909 | 953 |
-| `enhancement-dps` | `elemental-enhancement-ml-raid` | 17/29/5 | 474 | 517 | 784 | 892 | 901 |
-| `enhancement-dps` | `opt-enhancement-dps-parse` | 15/31/5 | 471 | 515 | 764 | 878 | 933 |
-| `enhancement-dps` | `opt-enhancement-dps-raid-dps` | 14/31/6 | 467 | 511 | 749 | 857 | 905 |
-| `enhancement-dps` | `enhancement-ml-raid` | 17/31/3 | 467 | 515 | 784 | 894 | 937 |
-| `enhancement-dps` | `enhancement-raid-dps` | 11/31/9 | 443 | 486 | 719 | 830 | 876 |
+| `enhancement-dps` | sim preset: Standard | - | 481 | 529 | 796 | 796 | 832 |
+| `enhancement-dps` | `enhancement-open-raid` | 18/31/2 | 481 | 534 | 797 | 797 | 834 |
+| `enhancement-dps` | `elemental-enhancement-ml-raid` | 17/29/5 | 474 | 517 | 784 | 784 | 795 |
+| `enhancement-dps` | `opt-enhancement-dps-parse` | 15/31/5 | 471 | 515 | 764 | 764 | 814 |
+| `enhancement-dps` | `opt-enhancement-dps-raid-dps` | 14/31/6 | 467 | 511 | 749 | 749 | 792 |
+| `enhancement-dps` | `enhancement-ml-raid` | 17/31/3 | 467 | 515 | 784 | 784 | 819 |
+| `enhancement-dps` | `enhancement-raid-dps` | 11/31/9 | 443 | 486 | 719 | 719 | 758 |
 
 **Classic Era check** — [`../talents/classic-baseline/raidsim/`](../talents/classic-baseline/raidsim/): the same run of our Classic-era community builds through the upstream wowsims/classic simulator (commit 7779ebb, its phase-1 presets), which the scorer's classic-era models are calibrated against. Our builds there are the community's; a preset ahead of them means the simulator's rotation prefers other talents.
 

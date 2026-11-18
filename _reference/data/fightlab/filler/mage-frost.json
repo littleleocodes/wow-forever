@@ -3,7 +3,7 @@
  "spec": "Frost",
  "build": "frost-open-leveling",
  "rotation": "frost-leveling",
- "date": "2026-11-17",
+ "date": "2026-11-18",
  "fights": 1500,
  "start_order": [
   {
@@ -153,21 +153,24 @@
  ],
  "steps": [
   {
-   "weighted": 28.049,
+   "weighted": 28.062,
    "values_at_60": {
-    "Arcane Meditation": -0.369,
-    "Arctic Reach": -0.06,
-    "Fingers of Frost": -0.241,
-    "Ice Shards": -0.304,
-    "Improved Frost Nova": -0.038,
-    "Incineration": -0.046,
-    "Permafrost": -0.01
+    "Accelerant": 0.0,
+    "Arcane Meditation": -0.493,
+    "Arctic Reach": -0.294,
+    "Cold Snap": -0.006,
+    "Fingers of Frost": -0.37,
+    "Ice Shards": -0.394,
+    "Improved Frost Nova": -0.227,
+    "Incineration": -0.166,
+    "Permafrost": -0.082
    },
    "zero": [
-    "Arctic Reach",
-    "Improved Frost Nova",
-    "Incineration",
-    "Permafrost"
+    "Accelerant"
+   ],
+   "dead_held": [
+    "Accelerant",
+    "Improved Channeling"
    ]
   },
   {
@@ -182,28 +185,9 @@
     "Incineration": -0.034,
     "Permafrost": -0.015
    },
-   "zero": [
-    "Cold Snap",
-    "Incineration",
-    "Permafrost"
-   ]
-  },
-  {
-   "weighted": 28.062,
-   "values_at_60": {
-    "Accelerant": 0.0,
-    "Arcane Meditation": -0.493,
-    "Arctic Reach": -0.294,
-    "Cold Snap": -0.006,
-    "Fingers of Frost": -0.37,
-    "Ice Shards": -0.394,
-    "Improved Frost Nova": -0.227,
-    "Incineration": -0.166,
-    "Permafrost": -0.082
-   },
-   "zero": [
-    "Accelerant",
-    "Cold Snap"
+   "zero": [],
+   "dead_held": [
+    "Improved Channeling"
    ]
   }
  ],
@@ -223,6 +207,14 @@
    "seed3": 0.0002,
    "seed4": 0.0006,
    "why": "no loss"
+  },
+  {
+   "from": "Accelerant",
+   "to": "Incineration",
+   "level": 60,
+   "seed3": -0.0002,
+   "seed4": -0.0006,
+   "why": "tie-break"
   }
  ],
  "kept_signature": [],
@@ -372,16 +364,10 @@
    "points": 3
   },
   {
-   "levels": "58-59",
+   "levels": "58-60",
    "tree": "Fire",
    "talent": "Incineration",
-   "points": 2
-  },
-  {
-   "levels": "60",
-   "tree": "Fire",
-   "talent": "Accelerant",
-   "points": 1
+   "points": 3
   }
  ],
  "written": {
@@ -415,11 +401,7 @@
    "Fire": [
     [
      "Incineration",
-     2
-    ],
-    [
-     "Accelerant",
-     1
+     3
     ]
    ],
    "Frost": [
@@ -619,18 +601,12 @@
     "points": 3
    },
    {
-    "levels": "58-59",
+    "levels": "58-60",
     "tree": "Fire",
     "talent": "Incineration",
-    "points": 2
-   },
-   {
-    "levels": "60",
-    "tree": "Fire",
-    "talent": "Accelerant",
-    "points": 1
+    "points": 3
    }
   ],
-  "note": "2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Permafrost to Cold Snap at 39 (no loss: +0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Incineration to Accelerant at 60 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill)."
+  "note": "2026-11-18: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Accelerant to Incineration at 60 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Permafrost to Cold Snap at 39 (no loss: +0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Incineration to Accelerant at 60 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill)."
  }
 }

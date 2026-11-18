@@ -1,5 +1,5 @@
 {
- "made": "2026-11-18T07:27:03-05:00",
+ "made": "2026-11-18T08:46:38-05:00",
  "about": "Out-of-combat rest cues for an in-game add-on, every class and leveling spec (2026-11-16, user: \"I want the addon to not proc during combat. Also, I just want to be eat/drink/evocation for now. Also I want it to work across all different classes and specs\").",
  "rules": "Out of combat only. drink_below / eat_below: shares of maximum mana / health; tools: the class's own mana tools between fights, in order (a tool's cue comes before drinking). The fight lab drinks and eats back to full once a cue fires. eat_drink_together (per spec; absent = false): while you sit to drink or to eat, the other bar tops up too, at no extra time, only while it is below full; you stand when the bar that fired is full (the topped-up one may be left short). Evocation is not sitting and brings no top-up. vectors: the fight lab's own decision on set states, for the add-on's tests (hp and mana as shares; does in order; after: the bars once the tool ran; warlocks: health_max and tap_cost).",
  "classes": {
@@ -14,8 +14,7 @@
      "talents": {
       "Bloom": 1,
       "Eclipse": 3,
-      "Ferocity": 1,
-      "Genesis": 2,
+      "Genesis": 3,
       "Heart of the Wild": 1,
       "Improved Moonfire": 2,
       "Improved Starfire": 5,
@@ -304,7 +303,6 @@
      "drink_below": 0.15,
      "eat_below": 0.4,
      "talents": {
-      "Accelerant": 1,
       "Arcane Concentration": 5,
       "Arcane Meditation": 3,
       "Arcane Resilience": 3,
@@ -319,7 +317,7 @@
       "Improved Channeling": 3,
       "Improved Frost Nova": 2,
       "Improved Frostbolt": 5,
-      "Incineration": 2,
+      "Incineration": 3,
       "Permafrost": 1,
       "Precision": 2,
       "Shatter": 3,

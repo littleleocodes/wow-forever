@@ -16,7 +16,7 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 
 | Build | Split | Role |
 |---|---|---|
-| [Balance — Leveling (open talent search)](builds/balance-open-leveling.md) 🔬 | 35/1/15 | DPS |
+| [Balance — Leveling (open talent search)](builds/balance-open-leveling.md) 🔬 | 36/0/15 | DPS |
 | [Feral Combat — Leveling (open talent search)](builds/feral-combat-open-leveling.md) 🔬 | 11/29/11 | DPS |
 | [Restoration — Leveling into the raid build](builds/restoration-leveling.md) 🔬 | 11/0/40 | DPS |
 

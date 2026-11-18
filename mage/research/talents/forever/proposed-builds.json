@@ -1879,8 +1879,7 @@
           ["Arcane Meditation", 3]
         ],
         "Fire": [
-          ["Incineration", 2],
-          ["Accelerant", 1]
+          ["Incineration", 3]
         ],
         "Frost": [
           ["Improved Frostbolt", 5],
@@ -1922,8 +1921,7 @@
         {"levels": "52-53", "tree": "Arcane", "talent": "Improved Channeling", "points": 2},
         {"levels": "54", "tree": "Arcane", "talent": "Arcane Resilience", "points": 1},
         {"levels": "55-57", "tree": "Arcane", "talent": "Arcane Meditation", "points": 3},
-        {"levels": "58-59", "tree": "Fire", "talent": "Incineration", "points": 2},
-        {"levels": "60", "tree": "Fire", "talent": "Accelerant", "points": 1}
+        {"levels": "58-60", "tree": "Fire", "talent": "Incineration", "points": 3}
       ],
       "core": [
         {"talent": "Shatter", "why": "+3.8 s per kill at level 60 without it (removal, 3,000 fights)."},
@@ -1936,7 +1934,7 @@
         {"talent": "Precision", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Permafrost to Cold Snap at 39 (no loss: +0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Incineration to Accelerant at 60 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill).", "+6.1% faster than the hand draft leveling-frost, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 27.89; leveling-frost 29.59, opt-frost-aoe-leveling-aoe 33.51. The search simulated 66,618 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["2026-11-18: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Accelerant to Incineration at 60 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill).", "2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Permafrost to Cold Snap at 39 (no loss: +0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Incineration to Accelerant at 60 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill).", "+6.1% faster than the hand draft leveling-frost, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 27.89; leveling-frost 29.59, opt-frost-aoe-leveling-aoe 33.51. The search simulated 66,618 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Frost leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/mage/60/2332050000003-3-0525322301203002-12"],
       "replaces": "leveling-frost"

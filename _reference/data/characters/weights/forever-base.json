@@ -10257,30 +10257,29 @@
    "60": {
     "set": {
      "back": "Adventurer's Cape of the Boar",
-     "chest": "High Councillor's Robe of the Channeler",
+     "chest": "High Councillor's Robe of the Prophet",
      "feet": "Elunarian Boots",
      "finger1": "Peridot Circle of the Wolf",
      "finger2": "Vermilion Band of the Wolf",
      "hands": "Eternal Gloves of the Owl",
-     "head": "Wizardweave Turban",
-     "legs": "Eternal Sarong of the Channeler",
+     "head": "Eternal Crown of the Prophet",
+     "legs": "High Councillor's Pants of the Prophet",
      "neck": "Vermilion Necklace of the Wolf",
-     "ranged": "Greater Eternal Wand",
+     "ranged": "Lunar Wand of Healing",
      "shoulder": "Eternal Spaulders of the Owl",
-     "waist": "Eternal Cord of the Prophet",
+     "waist": "High Councillor's Sash of Healing",
      "weapon": "63 Green Frost Staff",
-     "wrist": "High Councillor's Bracers of Healing"
+     "wrist": "Master's Bracers of the Owl"
     },
     "totals": {
-     "healing": 97,
-     "spell_power": 90.3,
-     "armor": 499,
+     "armor": 503,
+     "intellect": 123,
+     "healing": 124,
+     "spell_power": 67.3,
+     "spirit": 128,
      "agility": 30,
-     "spirit": 115,
-     "intellect": 68,
      "strength": 10,
-     "stamina": 40,
-     "wand_dps": 53.3,
+     "wand_dps": 56.8,
      "mh_weapon_dps": 48.9
     },
     "standard": {
@@ -10295,15 +10294,15 @@
      "attack_power": 0.0
     },
     "bonus": {
-     "intellect": -60.5,
-     "spirit": 32.0,
-     "stamina": 6.5,
+     "intellect": -5.5,
+     "spirit": 45.0,
+     "stamina": -33.5,
      "agility": 30.0,
      "strength": 7.0,
-     "armor": 22.0,
-     "spell_power": 16.1,
-     "healing": 89.0,
-     "wand_dps": -1.1
+     "armor": 26.0,
+     "spell_power": -7.0,
+     "healing": 116.0,
+     "wand_dps": 2.3
     },
     "pool": 2252,
     "best": {
@@ -10327,7 +10326,7 @@
      },
      "totals": {
       "healing": 259,
-      "spell_power": 435.7,
+      "spell_power": 435.5,
       "spirit": 97,
       "hit": 10,
       "armor": 635,
@@ -10342,7 +10341,7 @@
       "stamina": -6.5,
       "strength": -3.0,
       "armor": 158.0,
-      "spell_power": 361.5,
+      "spell_power": 361.3,
       "healing": 251.0,
       "wand_dps": 47.5
      }
@@ -37844,29 +37843,29 @@
    },
    "60": {
     "set": {
-     "back": "Supreme Cape of Spirit",
+     "back": "Supreme Cape of the Physician",
      "chest": "Celestial Tunic of the Prophet",
-     "feet": "High Councillor's Boots of the Sorcerer",
-     "finger1": "Granite Ring of Spirit",
-     "finger2": "Jungle Ring of Spirit",
+     "feet": "Eternal Boots of the Sorcerer",
+     "finger1": "Granite Ring of the Physician",
+     "finger2": "Jungle Ring of the Physician",
      "hands": "High Councillor's Gloves of the Sorcerer",
      "head": "High Councillor's Circlet of the Prophet",
      "legs": "Eternal Sarong of the Sorcerer",
-     "neck": "Granite Necklace of Spirit",
+     "neck": "Granite Necklace of the Physician",
      "shoulder": "High Councillor's Mantle of the Sorcerer",
      "waist": "Supreme Sash of Spirit",
-     "weapon": "Fierce Mauler of the Knight",
-     "wrist": "High Councillor's Bracers of the Prophet"
+     "weapon": "Brutehammer of the Knight",
+     "wrist": "Master's Bracers of the Prophet"
     },
     "totals": {
-     "armor": 539,
-     "intellect": 116,
-     "healing": 90,
-     "spell_power": 57,
-     "spirit": 108,
-     "stamina": 55,
+     "armor": 541,
+     "intellect": 140,
+     "healing": 134,
+     "spell_power": 73,
+     "spirit": 48,
+     "stamina": 100,
      "strength": 11,
-     "mh_weapon_dps": 47.4
+     "mh_weapon_dps": 49.0
     },
     "standard": {
      "intellect": 118.0,
@@ -37880,20 +37879,20 @@
      "attack_power": 0.0
     },
     "bonus": {
-     "intellect": -2.0,
-     "spirit": 22.0,
-     "stamina": 13.5,
+     "intellect": 22.0,
+     "spirit": -38.0,
+     "stamina": 58.5,
      "strength": 8.0,
-     "armor": -58.0,
-     "spell_power": -5.5,
-     "healing": 82.0
+     "armor": -56.0,
+     "spell_power": 10.5,
+     "healing": 126.0
     },
     "pool": 3590,
     "best": {
      "set": {
       "back": "Archivist Cape of Arcane Wrath",
       "chest": "Bloodvine Vest",
-      "feet": "Supreme Shoes of Arcane Wrath",
+      "feet": "Master's Boots of Arcane Wrath",
       "finger1": "Emperor's Seal of Arcane Wrath",
       "finger2": "Maiden's Circle",
       "hands": "Slaghide Gauntlets of Arcane Wrath",
@@ -37904,16 +37903,16 @@
       "shoulder": "Argent Shoulders",
       "trinket1": "Weakness Analyzer",
       "trinket2": "Briarwood Reed",
-      "waist": "Adventurer's Belt of Arcane Wrath",
+      "waist": "High Councillor's Sash of Arcane Wrath",
       "weapon": "Crackling Staff",
-      "wrist": "Adventurer's Bracers of Arcane Wrath"
+      "wrist": "High Councillor's Bracers of Arcane Wrath"
      },
      "totals": {
       "healing": 294,
-      "spell_power": 434.4,
+      "spell_power": 434.7,
       "spirit": 26,
       "hit": 40,
-      "armor": 827,
+      "armor": 694,
       "mp5": 4,
       "intellect": 51,
       "mh_weapon_dps": 41.3
@@ -37923,8 +37922,8 @@
       "spirit": -60.0,
       "stamina": -41.5,
       "strength": -3.0,
-      "armor": 230.0,
-      "spell_power": 371.9,
+      "armor": 97.0,
+      "spell_power": 372.2,
       "healing": 286.0,
       "mp5": 4
      }

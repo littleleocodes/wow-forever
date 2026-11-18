@@ -417,7 +417,11 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   port: warlock Destruction ran 9% slower under the old file, rogue Subtlety 0.7% (2.3% at level 60). Never change a rule file while
   its rotation's search runs. `fightlab/fl_filler_pass.py` (a pick's zero-value points moved to useful talents) keeps the spec's
   signature talents where they are (2026-11-16: the Shockadin's pass had moved Holy Shock to Deflection, 3.8% faster per kill in
-  melee gear; `level_guides --check` caught it). The signature floor a tune enforces is its build's own spec: the `spec` field, as the pages and the
+  melee gear; `level_guides --check` caught it). Since 2026-11-18 a tie-break or "no loss" move never goes into a talent that only
+  improves spells the build never casts in the lab (page_lint's dead rule on the lab's casts; talent abilities are not judged that way),
+  and a dead talent's last points may move again. `--dead-only` moves nothing else: the 2026-11-17 passes had put Frost's last point in
+  Accelerant and left Balance a Ferocity point, and a full re-run of the Frost pass also moved Cold Snap and Permafrost on 0.1-0.2% of
+  noise at Arcea's next levels. The signature floor a tune enforces is its build's own spec: the `spec` field, as the pages and the
   signature audit judge it, else its points (2026-11-15: the Discipline page's 29/22/0 raid-path build had been judged by its points as
   the Smite hybrid, and rules tuned to that floor, Smite and Holy Fire half the damage, starved Penance: 46 -> 58 s per kill). Tune a
   rotation two pages play on the build with the stricter floor: priest `holy-leveling` on `smite-open-leveling` (the Smite page, 50%),
@@ -640,8 +644,9 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
   since 2026-11-18 the shaman's `enhancement-dps` lists `windfury_totem` (Forever's Windfury Weapon tooltip: on the main hand it
   "disables any benefit you personally receive from Windfury Totem"; the full raid had given Enhancement both). Every Enhancement
   build lost 12-13% in a full raid, the page's pick still leads (no search: `deep-runs/wf_enh_1117.sh`), and the gear tiers and
-  GearCheck's raid values were made again (physical stats about 20% lower against spell power). The environments run's `max` column
-  ("everything on") still has the totem. Optimizer exports are seeded with the hand drafts
+  GearCheck's raid values were made again (physical stats about 20% lower against spell power). A buff the spec can never benefit
+  from also goes in `never_buffs`, which the environments run's `max` columns ("everything on") leave out as well (`buffs_off` alone
+  had left Enhancement's maximum with the totem). Optimizer exports are seeded with the hand drafts
   (`scorer/run.py --seed`, `--compare` seeds too), so an exported build never scores below them under its own model.
   **The simulator's presets compete** (2026-09-27): the raid step first saves every preset within 6% of the spec's best build in the
   last race as `raidsim/candidates/cand-<spec>-preset-<name>.json` (`run.py --preset-candidates`; stale ones are removed). The

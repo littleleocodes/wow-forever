@@ -4,7 +4,7 @@
 
 What a Frost mage presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Frost levels by slowing the mob, freezing it at your feet, stepping back and hitting it while it cannot reach you. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 18/3/30 ([open the talent tree](https://talentsforever.com/mage/60/2332050000003-21-0525321301203012-12)), the one on the [Frost leveling page](frost.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 18/3/30 ([open the talent tree](https://talentsforever.com/mage/60/2332050000003-3-0525321301203012-12)), the one on the [Frost leveling page](frost.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -229,7 +229,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Arcane Explosion at 46, 54; Arcane Missiles at 40, 48, 56; Blizzard at 44, 52, 60; Cone of Cold at 42, 50, 58; Fire Blast at 46, 54; Fire Ward at 40, 50, 60; Frost Nova at 40, 54; Frost Ward at 42, 52, 60; Frostbolt at 44, 50, 56, 60; Ice Lance at 42, 48, 56; Mana Shield at 44, 52, 60; Polymorph at 40, 60.
 
-**Talents:** 40-41 Wand Specialization, 42-43 Arcane Resilience, 44 Improved Channeling, 45-49 Arcane Concentration, 50-51 Arcane Subtlety, 52-53 Improved Channeling, 54 Arcane Resilience, 55-57 Arcane Meditation, 58-59 Incineration, 60 Accelerant.
+**Talents:** 40-41 Wand Specialization, 42-43 Arcane Resilience, 44 Improved Channeling, 45-49 Arcane Concentration, 50-51 Arcane Subtlety, 52-53 Improved Channeling, 54 Arcane Resilience, 55-57 Arcane Meditation, 58-60 Incineration.
 
 **Keys to set:** Shift+Q = Presence of Mind macro (at 53).
 
@@ -246,9 +246,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Arcane Concentration** (45-49) makes about one cast in ten free, and **Arcane Meditation** (55-57) keeps another half of your mana regeneration going while you cast: with **Mage Armor**, all of it.
 - **Mage Armor** stays on to 60: 2-3% faster per kill than **Ice Armor** at 46-50 in the fight lab, 1.4-2.5% at 56-60.
-- This build takes no **Ice Barrier**: the hand-made Frost build on the spec page casts it before every pull. **Cold Snap** (39) came with the leveling filler pass of 2026-11-17, in place of Permafrost's second point: both measured nothing in the fight lab, and **Cold Snap** is a second **Frost Nova** when a pull goes wrong. **Incineration** stops at 2 points (58-59) and the last point goes to **Accelerant** (60), which helps only **Fireball** and **Frostfire Bolt**: the same pass, no loss either.
+- This build takes no **Ice Barrier**: the hand-made Frost build on the spec page casts it before every pull. **Cold Snap** (39) came with the leveling filler pass of 2026-11-17, in place of Permafrost's second point: both measured nothing in the fight lab, and **Cold Snap** is a second **Frost Nova** when a pull goes wrong. **Incineration** (58-60) adds 6% crit chance to **Ice Lance** and **Fire Blast**. The same pass had moved its third point to Accelerant, which helps only spells this build never casts; the point went back on 2026-11-18, no slower in the fight lab.
 
-*Fight lab, seconds per kill: 31 at level 40, 27 at level 50, 25 at level 60. Presses per kill at level 40: Frostbolt 4.3, Ice Lance 1.8, Wand 1.4, Frost Nova 0.9, Fire Blast 0.5, Counterspell 0.1.*
+*Fight lab, seconds per kill: 31 at level 40, 27 at level 50, 24 at level 60. Presses per kill at level 40: Frostbolt 4.3, Ice Lance 1.8, Wand 1.4, Frost Nova 0.9, Fire Blast 0.5, Counterspell 0.1.*
 
 ## Between fights
 

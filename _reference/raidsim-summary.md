@@ -72,7 +72,7 @@ The best of our builds per spec model on the boss-level training dummy with your
 | rogue | Classic | `combat-daggers-raid` | `combat-daggers-raid` (15/31/5) | 440 | - | 1259 | 1275 | 1367 | - | Backstab 1297 |
 | rogue | Classic | `combat-swords-raid` | `combat-swords-raid` (19/32/0) | 419 | - | 1267 | 1286 | 1395 | - | Sinister Strike 1292 |
 | shaman | Forever | `elemental-dps` | `elemental-ml-raid` (31/11/9) | 597 | 649 | 774 | 774 | 789 | `opt-elemental-dps-parse` 773 | Standard 773 |
-| shaman | Forever | `enhancement-dps` | `enhancement-open-raid` (18/31/2) | 481 | 534 | 797 | 909 | 953 | `opt-enhancement-dps-parse` 878 | Standard 908 |
+| shaman | Forever | `enhancement-dps` | `enhancement-open-raid` (18/31/2) | 481 | 534 | 797 | 797 | 834 | `opt-enhancement-dps-parse` 764 | Standard 796 |
 | shaman | Classic | `elemental-dps` | `elemental-raid-dps` (31/0/20) | 298 | - | 730 | 1051 | 1184 | - | Level 60 1014 |
 | shaman | Classic | `enhancement-dps` | `enhancement-raid-support` (0/31/20) | 222 | - | 777 | 938 | 958 | - | Level 60 938 |
 | warlock | Forever | `affliction-raid` | `opt-affliction-raid-raid-dps` (30/0/21) | 728 | 790 | 838 | 838 | 889 | `opt-affliction-raid-parse` 833 | SM/Ruin 834 |

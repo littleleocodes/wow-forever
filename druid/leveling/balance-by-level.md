@@ -4,7 +4,7 @@
 
 What a Balance druid presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Balance stays a caster the whole way: **Wrath** from level 1, **Moonfire** at the pull from 4, **Regrowth** from range from 12, **Starfire** woven with **Eclipse** from 30 and **Moonkin Form** from 40. The page build (36/0/15) puts 36 points in Balance and 15 in Restoration for Intellect, pushback, mana and damage; it skips **Insect Swarm**. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 35/1/15 ([open the talent tree](https://talentsforever.com/druid/60/5232200105501351-1-51530001-12)), the one on the [Balance leveling page](balance.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 36/0/15 ([open the talent tree](https://talentsforever.com/druid/60/5332200105501351--51530001-12)), the one on the [Balance leveling page](balance.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -233,7 +233,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Entangling Roots at 48, 58; Healing Touch at 50, 56, 60; Hibernate at 58; Hurricane at 50, 60; Moonfire at 46, 52, 58; Nature's Grasp at 48, 58; Regrowth at 48, 54, 60; Rejuvenation at 46, 52, 58, 60; Starfire at 50, 58, 60; Wrath at 46, 54.
 
-**Talents:** 46 Nature's Focus, 47-49 Reflection, 50-54 Naturalist, 55 Vengeance, 56 Ferocity, 57-58 Vengeance, 59 Bloom, 60 Heart of the Wild.
+**Talents:** 46 Nature's Focus, 47-49 Reflection, 50-54 Naturalist, 55 Vengeance, 56 Genesis, 57-58 Vengeance, 59 Bloom, 60 Heart of the Wild.
 
 **Your keys in this stage:** Q Wrath, E Entangling Roots, R Starfire, Mouse 5 Regrowth, Middle mouse Moonfire, Shift+Q Moonkin Form.
 
@@ -250,7 +250,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Reflection** (47-49): half your mana regeneration keeps going while you cast.
 - **Naturalist** (50-54): 10% more damage at 5 points.
 - **Vengeance** fills to 5 points at 55 and 57-58: your Arcane and Nature critical hits do double the bonus.
-- **Ferocity** (56), **Bloom** (59) and **Heart of the Wild** (60, 2% more Intellect) are the build's last points: the fight lab measures nothing for them, and no other talent it can reach there measured faster.
+- **Genesis**'s third point (56: **Moonfire**'s burn 6% stronger), **Bloom** (59) and **Heart of the Wild** (60, 2% more Intellect) are the build's last points: the fight lab measures nothing for them, and no other talent it can reach there measured faster. The point at 56 was Ferocity until 2026-11-18, which only cheapens cat and bear attacks this build never uses.
 
 *Fight lab, seconds per kill: 35 at level 46, 32 at level 50, 28 at level 60. Presses per kill at level 46: Starfire 4.2, Wrath 2.1, Moonfire 1.5.*
 

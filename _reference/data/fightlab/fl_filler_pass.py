@@ -15,6 +15,12 @@ filled with a talent nobody presses. For the spec page's pick (level_guides.pick
 5. then the tier-gate points (2026-11-09): a point the build cannot drop is moved to any talent legal along the order when that is
    faster on both seeds (`--no-gates` skips it). A gate that does nothing by mechanics (Redoubt's block without a shield) and costs
    nothing to move is a judgment call the pass leaves to the reader: its swap measures 0.00%.
+Dead destinations (2026-11-18, page_lint's dead check after the eat-and-drink regen): a tie-break or "no loss" move never goes into a
+talent that only improves spells or forms the rotation never casts (page_lint's tooltip reading, against the spells the build casts at
+20-60 in the lab; talent abilities are not judged this way, Cold Snap being a module note rather than a cast). An unheld talent was
+never measured, so "not a zero point" let the 2026-11-17 Frost pass move Incineration's third point into Accelerant (Fireball, Frostfire
+Bolt and Arcane Wrath only). A dead talent's last points may move again, where "no loss" otherwise never moves a talent twice: the
+Balance pass had moved two Ferocity points to Vengeance and left the third.
 
     python _reference/data/fightlab/fl_filler_pass.py <class> --spec "<Spec>" [--fights 1500] [--jobs 10] [--write]
 
@@ -61,6 +67,36 @@ def per_level(pool, cls, rot, space, builds, levels, fights, seed):
     return [{L: res[i * len(levels) + k][0] for k, L in enumerate(levels)} for i in range(len(builds))]
 
 
+def _casts(job):
+    """The spells an allocation casts at a level (the fight lab's session counts)."""
+    cls, rot, alloc, level, fights, seed = job
+    o = FL.FR.simulate(cls, alloc, level, rot, fights, seed, 0)
+    return {s for s, n in (o.get("casts") or {}).items() if n}
+
+
+def dead_talents(cls, used):
+    """{talent: the spells it improves}: the class's talents that only improve spells or forms of which `used` holds none, read from
+    the tooltips as page_lint.dead_talents reads them (a family word, "your Shock spells", or a general effect makes a talent live).
+    Talent abilities are left out (a module can play one without a cast: the mage's Cold Snap is a note)."""
+    import re
+    import page_lint as PL
+    book = set(LG.book(cls)) | PL.FORMS
+    out = {}
+    for tr in PL.talents(cls):
+        for t in tr["talents"]:
+            if t["name"] in book:
+                continue
+            tip = PL.rank_text(t)
+            names = {n for n in book if re.search(rf"\b{re.escape(n)}\b", tip)}
+            names -= {n for n in names if any(n != o and n in o for o in names)}   # "Bear Form" inside "Dire Bear Form"
+            rest = tip
+            for n in names:
+                rest = rest.replace(n, " ")
+            if names and not PL.FAMILY.search(rest) and not PL.GENERIC.search(rest) and not (names & used):
+                out[t["name"]] = sorted(names)
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("cls")
@@ -71,7 +107,13 @@ def main():
     ap.add_argument("--max-moves", type=int, default=6)
     ap.add_argument("--write", action="store_true")
     ap.add_argument("--no-gates", dest="gates", action="store_false", help="skip step 5, the tier-gate points")
+    ap.add_argument("--dead-only", action="store_true",
+                    help="move only the points of talents that do nothing for what the build casts (a correction after a pass: 2026-11-18, "
+                         "a full re-run of the Frost pass also moved Cold Snap and Permafrost on 0.1-0.2%% of noise, at Arcea's next "
+                         "levels); no gates")
     a = ap.parse_args()
+    if a.dead_only:
+        a.gates = False
     cls = a.cls
     b, order, prov, rot = LG.pick(cls, a.spec)
     if not b:
@@ -108,8 +150,17 @@ def main():
             value = {n: base[60] - r[60] for (n, _, _), r in zip(drops, r60)}   # negative: the build is slower without it
             floor = 0.003 * base[60]
             zero = [(n, i) for n, i, _ in drops if value[n] > -floor]
-            print(f"  weighted {w0:.2f} s; zero points: {', '.join(n for n, _ in zero) or 'none'}", flush=True)
-            rec["steps"].append({"weighted": round(w0, 3), "values_at_60": {n: round(v, 3) for n, v in value.items()}, "zero": [n for n, _ in zero]})
+            # the talents that do nothing for what this build casts (2026-11-18): never a tie-break or "no loss" destination
+            bb = {"allocation": FL.alloc_of(space, flat_of(pts)), "order": FL.compress(pts)}
+            used = set().union(*pool.map(_casts, [(cls, rot, FL.FR.allocation_at(bb, L), L, a.fights, 3) for L in LEVELS], chunksize=1))
+            dead = dead_talents(cls, used)
+            zero_all = {z for z, _ in zero}   # no destination is a zero point, dead or not
+            if a.dead_only:
+                zero = [(n, i) for n, i in zero if n in dead]
+            print(f"  weighted {w0:.2f} s; zero points{' (dead only)' if a.dead_only else ''}: {', '.join(n for n, _ in zero) or 'none'}"
+                  + (f"; dead talents held: {', '.join(n for n in held if n in dead)}" if any(n in dead for n in held) else ""), flush=True)
+            rec["steps"].append({"weighted": round(w0, 3), "values_at_60": {n: round(v, 3) for n, v in value.items()}, "zero": [n for n, _ in zero],
+                                 "dead_held": [n for n in held if n in dead]})
             if not zero:
                 break
             # 3: every move of a zero point to another talent at the same level
@@ -146,7 +197,8 @@ def main():
             # seed 3 that also cost no time on seed 4, a talent that is not itself a zero point
             tie = None
             moved = {m['from'] for m in rec['moves']}   # never move a point back into a talent it left
-            for w1, n, d, i, new in [s for s in scored if s[0] < w0 and s[2] not in {z for z, _ in zero} and s[2] not in moved][:4]:
+            for w1, n, d, i, new in [s for s in scored if s[0] < w0 and s[2] not in zero_all and s[2] not in moved
+                                     and s[2] not in dead][:4]:
                 b2, n2 = per_level(pool, cls, rot, space, [pts, new], LEVELS, a.fights, 4)
                 g2 = FL.weighted_at(n2, LEVELS) / FL.weighted_at(b2, LEVELS) - 1
                 if g2 < -0.0005 and (tie is None or (w1 / w0 - 1) + g2 < (tie[0] / w0 - 1) + tie[5]):   # faster on both seeds: the best
@@ -157,8 +209,8 @@ def main():
                 # Sayaad, a Succubus talent in a Voidwalker build). A zero point still goes to a talent that measured something, when the
                 # move costs no time beyond NO_LOSS on either seed: a point that does nothing is never better than one that does
                 done = {m["from"] for m in rec["moves"]} | {m["to"] for m in rec["moves"]}
-                for w1, n, d, i, new in [s for s in scored if s[0] <= w0 * (1 + NO_LOSS) and s[2] not in {z for z, _ in zero}
-                                         and s[2] not in moved and s[1] not in done][:4]:
+                for w1, n, d, i, new in [s for s in scored if s[0] <= w0 * (1 + NO_LOSS) and s[2] not in zero_all
+                                         and s[2] not in moved and s[2] not in dead and (s[1] not in done or s[1] in dead)][:4]:
                     b2, n2 = per_level(pool, cls, rot, space, [pts, new], LEVELS, a.fights, 4)
                     g2 = FL.weighted_at(n2, LEVELS) / FL.weighted_at(b2, LEVELS) - 1
                     if g2 <= NO_LOSS and (tie is None or (w1 / w0 - 1) + g2 < (tie[0] / w0 - 1) + tie[5]):

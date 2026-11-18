@@ -1,10 +1,10 @@
-# Balance — Leveling (open talent search) — 35/1/15
+# Balance — Leveling (open talent search) — 36/0/15
 
 *[Druid](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 35/1/15 (Balance / Feral Combat / Restoration) |
+| **Build** | 36/0/15 (Balance / Feral Combat / Restoration) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -15,12 +15,12 @@ The Balance leveling build the open leveling search found on 2026-11-17: every l
 
 ## Point allocation
 
-### Balance (35)
+### Balance (36)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Wrath** | 5/5 | changed | Reduces the cast time of your Wrath spell by 0.5 sec and its Mana cost by 50%. |
-| **Genesis** | 2/5 | **NEW** | Increases the periodic damage and healing done by your spells and abilities by 4%. |
+| **Genesis** | 3/5 | **NEW** | Increases the periodic damage and healing done by your spells and abilities by 6%. |
 | **Moonglow** | 3/3 | changed | Reduces the Mana cost of your damaging spells by 25%. |
 | **Improved Moonfire** | 2/2 | changed | Increases the damage and critical strike chance of your Moonfire spell by 10%. |
 | **Nature's Majesty** | 2/2 | **NEW** | Increases your critical strike chance with spells and melee attacks by 4%. |
@@ -32,11 +32,9 @@ The Balance leveling build the open leveling search found on 2026-11-17: every l
 | **Moonfury** | 5/5 | changed | Increases the damage done by your Arcane and Nature spells by 10%. |
 | **Moonkin Form** | 1/1 | changed | Shapeshift into Moonkin Form, increasing Omen of Clarity's chance to trigger by 100%, Armor contribution from items by 360%, and all party or raid members within 45 yards have their Critical Strike chance increased by 3%. Also protects the caster from Polymorph effects and prevents the use of healing spells.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects. |
 
-### Feral Combat (1)
+### Feral Combat (0)
 
-| Talent | Pts | vs Classic | Effect at this rank |
-|---|---|---|---|
-| **Ferocity** | 1/5 | changed | Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 1 Rage or Energy. |
+*No points.*
 
 ### Restoration (15)
 
@@ -73,10 +71,10 @@ The Balance leveling build the open leveling search found on 2026-11-17: every l
 | 47-49 | Restoration | Reflection | 3 | 32/0/8 |
 | 50-54 | Restoration | Naturalist | 5 | 32/0/13 |
 | 55 | Balance | Vengeance | 1 | 33/0/13 |
-| 56 | Feral Combat | Ferocity | 1 | 33/1/13 |
-| 57-58 | Balance | Vengeance | 2 | 35/1/13 |
-| 59 | Restoration | Bloom | 1 | 35/1/14 |
-| 60 | Restoration | Heart of the Wild | 1 | 35/1/15 |
+| 56 | Balance | Genesis | 1 | 34/0/13 |
+| 57-58 | Balance | Vengeance | 2 | 36/0/13 |
+| 59 | Restoration | Bloom | 1 | 36/0/14 |
+| 60 | Restoration | Heart of the Wild | 1 | 36/0/15 |
 
 ## Core talents (priority order)
 
@@ -95,6 +93,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
+- 2026-11-18: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Ferocity to Genesis at 56 (no loss: -0.1% seed 3, +0.0% seed 4, level-weighted time per kill).
 - 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Genesis to Vengeance at 55 (tie-break: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Ferocity to Vengeance at 58 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Ferocity to Vengeance at 57 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Subtlety to Heart of the Wild at 60 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Natural Shapeshifter to Bloom at 59 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill).
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 34.43; balance-open-leveling 34.62, opt-balance-dps-leveling-st 34.86. The search simulated 49,461 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.

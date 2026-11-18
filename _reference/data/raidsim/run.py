@@ -754,7 +754,7 @@ ENVIRONMENTS = {
     "dummy": {"label": "training dummy", "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)"},
     "dummy60": {"label": "level-60 dummy", "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s"},
     "raid": {"label": "raid", "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 180 s"},
-    "max": {"label": "maximum", "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 180 s"},
+    "max": {"label": "maximum", "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else; none the spec cannot benefit from, such as Enhancement's Windfury Totem), consumables (and the Classic sim's world buffs), 180 s"},
     "max60": {"label": "maximum, 60 s", "how": "as maximum with a 60 s fight: cooldowns weigh more"},
     **{f"ladder-{g}": {"label": f"+ {g}", "how": f"the training dummy plus the raid's {g} buffs and debuffs"
                        + (" (and every group before it)" if i else "") + ": " + ", ".join([*gb, *gd])} for i, (g, gb, gd) in enumerate(LADDER)},
@@ -825,9 +825,12 @@ def run_environments(cls, spec, a, repo):
     if GAME == "forever" and not entry.get("tank"):
         for n in CURVE:
             envs[f"curve{n}"] = dict(base_cfg, gear=sim_path(entry["gear"]), duration=float(n), apl=dummy_apl, **setting_cfg(entry, "dummy", no_execute=True))
+    # everything on, but never a buff the spec cannot benefit from (`never_buffs`, 2026-11-18: Forever's Windfury Weapon switches a
+    # party's Windfury Totem off for its shaman, so Enhancement's maximum had kept the totem its raid column no longer has)
+    never = list(entry.get("never_buffs", []))
     envs.update({
-        "max": dict(base_cfg, gear=gear_max, consumables=entry.get("consumables", {}), buffs="full", buffs_off=[], debuffs_off=[], duration=FIGHT, apl=raid_apl),
-        "max60": dict(base_cfg, gear=gear_max, consumables=entry.get("consumables", {}), buffs="full", buffs_off=[], debuffs_off=[], duration=60.0, apl=raid_apl),
+        "max": dict(base_cfg, gear=gear_max, consumables=entry.get("consumables", {}), buffs="full", buffs_off=never, debuffs_off=[], duration=FIGHT, apl=raid_apl),
+        "max60": dict(base_cfg, gear=gear_max, consumables=entry.get("consumables", {}), buffs="full", buffs_off=never, debuffs_off=[], duration=60.0, apl=raid_apl),
     })
     bench = GAMES[GAME]["bench"]
     exe = repo / (f"{bench}.exe" if (repo / f"{bench}.exe").exists() else bench)

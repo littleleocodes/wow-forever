@@ -972,6 +972,7 @@
     },
     "enhancement-dps": {
       "buffs_off": ["windfury_totem"],
+      "never_buffs": ["windfury_totem"],
       "apl_opt_raid": "_reference/data/raidsim/apls/shaman/enhancement-dps-raid.apl.json",
       "apl_opt": "_reference/data/raidsim/apls/shaman/enhancement-dps.apl.json",
       "sim_class": "ClassShaman",

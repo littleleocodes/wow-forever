@@ -30,8 +30,7 @@ The Frost leveling build the open leveling search found on 2026-11-17: every leg
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Incineration** | 2/5 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 4%. |
-| **Accelerant** | 1/5 | changed | Reduces the casting time of your Fireball, Frostfire Bolt, and Arcane Wrath spells by 0.1 sec. |
+| **Incineration** | 3/5 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 6%. |
 
 ### Frost (30)
 
@@ -78,8 +77,7 @@ The Frost leveling build the open leveling search found on 2026-11-17: every leg
 | 52-53 | Arcane | Improved Channeling | 2 | 14/0/30 |
 | 54 | Arcane | Arcane Resilience | 1 | 15/0/30 |
 | 55-57 | Arcane | Arcane Meditation | 3 | 18/0/30 |
-| 58-59 | Fire | Incineration | 2 | 18/2/30 |
-| 60 | Fire | Accelerant | 1 | 18/3/30 |
+| 58-60 | Fire | Incineration | 3 | 18/3/30 |
 
 ## Core talents (priority order)
 
@@ -98,6 +96,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
+- 2026-11-18: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Accelerant to Incineration at 60 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill).
 - 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Permafrost to Cold Snap at 39 (no loss: +0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Incineration to Accelerant at 60 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill).
 - +6.1% faster than the hand draft leveling-frost, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 27.89; leveling-frost 29.59, opt-frost-aoe-leveling-aoe 33.51. The search simulated 66,618 builds.

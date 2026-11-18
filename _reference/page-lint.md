@@ -9,15 +9,10 @@
 | links | 0 |
 | guide | 0 |
 | build | 0 |
-| dead | 2 |
+| dead | 0 |
 | keys | 0 |
 | steps | 0 |
 | macros | 0 |
 | coverage | 0 |
 | names | 0 |
-
-## dead
-
-- druid: druid/leveling/balance.md: Ferocity (1) improves only Claw, Maul, Primal Bite, Rake, Swipe, which the page never uses; 1 of its points could go elsewhere
-- mage: mage/leveling/frost.md: Accelerant (1) improves only Arcane Wrath, Fireball, Frostfire Bolt, which the page never uses; 1 of its points could go elsewhere
 

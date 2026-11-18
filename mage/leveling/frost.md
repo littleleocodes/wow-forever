@@ -4,11 +4,11 @@
 
 **Leveling from level 1?** [The rotation level by level](frost-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Frost — Leveling](../research/leveling/builds/frost-open-leveling.md)** (18/3/30) — [open the talent tree](https://talentsforever.com/mage/60/2332050000003-21-0525321301203012-12)
+**[Frost — Leveling](../research/leveling/builds/frost-open-leveling.md)** (18/3/30) — [open the talent tree](https://talentsforever.com/mage/60/2332050000003-3-0525321301203012-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Frost), which stays below as the alternative. A model of the beta, to check at launch.
 
-**Signature spells:** 89% of the damage at level 60 in the fight lab comes from the spec's core spells (Frostbolt, Ice Lance; this build never casts Cone of Cold, Blizzard) (the spec's rule: at least 60%; **Frostbolt** cast at level 60).
+*Signature spells (**Frostbolt**): not checked for this build in its rotation yet (fightlab/signature_audit.py).*
 
 ## How to play
 
@@ -28,7 +28,7 @@
 
 ## Why this rotation
 
-Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as it walks in, **Frost Nova** freezes it when it arrives, you step back, and **Ice Lance** hits the frozen target for four times its damage with **Shatter**'s crit chance. Frost points first (**Ice Lance** at 20, **Shatter** complete by 29, **Fingers of Frost** at 30-31, the rest of the Frost tree to 38 and **Cold Snap** at 39), then the Arcane mana talents from 40 (**Arcane Concentration** by 49, **Arcane Meditation** by 57), **Incineration** (58-59) and a point of **Accelerant** (60) last. In the open leveling search's 20-60 race of 2026-11-16 this build took about 28.9 seconds per kill, level-weighted; the page's numbers table has each level.
+Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as it walks in, **Frost Nova** freezes it when it arrives, you step back, and **Ice Lance** hits the frozen target for four times its damage with **Shatter**'s crit chance. Frost points first (**Ice Lance** at 20, **Shatter** complete by 29, **Fingers of Frost** at 30-31, the rest of the Frost tree to 38 and **Cold Snap** at 39), then the Arcane mana talents from 40 (**Arcane Concentration** by 49, **Arcane Meditation** by 57), **Incineration** (58-60) last. In the open leveling search's 20-60 race of 2026-11-16 this build took about 28.9 seconds per kill, level-weighted; the page's numbers table has each level.
 
 **Why it works**
 
@@ -42,7 +42,7 @@ Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as
 **Caveats**
 
 - This build takes **Cold Snap** (39) but no Ice Barrier: skip the list's Ice Barrier line. The hand-made build under Other builds has both.
-- This is the open leveling search's 18/3/30 winner: **Improved Frostbolt** at 5 points and **Improved Channeling** instead of an earlier version's Missile Barrage and Magic Absorption. The leveling filler pass of 2026-11-15, under **Mage Armor**, moved the Frost Warding point to **Permafrost** at 38 and Arcane Impact to **Arcane Subtlety** at 54. The pass of 2026-11-17 moved Permafrost's second point to **Cold Snap** (39) and **Incineration**'s third to **Accelerant** (60): neither cost anything in the fight lab.
+- This is the open leveling search's 18/3/30 winner: **Improved Frostbolt** at 5 points and **Improved Channeling** instead of an earlier version's Missile Barrage and Magic Absorption. The leveling filler pass of 2026-11-15, under **Mage Armor**, moved the Frost Warding point to **Permafrost** at 38 and Arcane Impact to **Arcane Subtlety** at 54. The pass of 2026-11-17 moved Permafrost's second point to **Cold Snap** (39), at no cost in the fight lab. It also moved Incineration's third point to Accelerant (60), which helps only spells this build never casts; the point went back on 2026-11-18 (page_lint's dead check), no slower.
 - **Cone of Cold** stays out of single pulls: the tuned rules switch it off (kills measured faster without).
 - Drink below 15% of your mana (the tuned rule); **Evocation** in place of that drink, whenever it is ready (under 15% mana); eat below 40% of your health (the tuned rules). Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17).
 - Armor: **Mage Armor** from 34 (the tuned rules of 2026-11-15). It keeps half your mana regeneration going while you cast, so you drink less: 4-5% faster per kill at 34-40 in the fight lab, 2-3% at 46-50, 1.4-2.5% at 56-60, though you eat a little more without armor. Before 34, **Frost Armor** and **Ice Armor** can chill a mob that hits you, another roll for **Frostbite** to freeze it; **Mage Armor** does not.
@@ -83,8 +83,7 @@ One point per level from 10, in this order:
 | 52-53 | Improved Channeling (Arcane) | 2 |
 | 54 | Arcane Resilience (Arcane) | 1 |
 | 55-57 | Arcane Meditation (Arcane) | 3 |
-| 58-59 | Incineration (Fire) | 2 |
-| 60 | Accelerant (Fire) | 1 |
+| 58-60 | Incineration (Fire) | 3 |
 
 ## The numbers
 
@@ -98,7 +97,7 @@ One point per level from 10, in this order:
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
-**Points that do nothing for this spec:** **Improved Channeling** (3) only counts toward the points the tree needs before **Arcane Meditation**; **Accelerant** (1) opens nothing and could go to any talent.
+**Points that do nothing for this spec:** **Improved Channeling** (3) only counts toward the points the tree needs before **Arcane Meditation**.
 
 ## Other builds of this spec
 
