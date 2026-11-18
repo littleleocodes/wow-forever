@@ -13,8 +13,6 @@ DPS in a full raid: a 3-minute fight against a raid boss with every raid buff an
 | **S** | [Hunter: Marksmanship](hunter/raid/marksmanship.md) | 7/39/5 | 1015 | 1.3% |
 | **A** | [Warrior: Fury](warrior/raid/fury.md) | 17/32/2 | 937 | 8.8% |
 | **A** | [Druid: Feral Combat](druid/raid/feral-combat.md) | 9/32/10 | 927 | 9.9% |
-| **B** | [Shaman: Enhancement](shaman/raid/enhancement.md) | 18/31/2 | 909 | 11.6% |
-| **B** | [Shaman: Elemental-Enhancement](shaman/raid/elemental-enhancement.md) | 17/29/5 | 892 | 13.2% |
 | **B** | [Mage: Fire](mage/raid/fire.md) | 17/31/3 | 887 | 13.7% |
 | **B** | [Warlock: Demonology](warlock/raid/demonology.md) | 2/31/18 | 867 | 15.7% |
 | **B** | [Warrior: Arms](warrior/raid/arms.md) | 34/17/0 | 864 | 16.0% |
@@ -29,7 +27,9 @@ DPS in a full raid: a 3-minute fight against a raid boss with every raid buff an
 | **C** | [Warlock: Shadow Bolt hybrid](warlock/raid/shadow-bolt-hybrid.md) | 9/11/31 | 802 | 21.9% |
 | **C** | [Mage: Frostfire](mage/raid/frostfire.md) | 0/29/22 | 798 | 22.4% |
 | **C** | [Mage: Arcane](mage/raid/arcane.md) | 31/17/3 | 797 | 22.4% |
+| **C** | [Shaman: Enhancement](shaman/raid/enhancement.md) | 18/31/2 | 797 | 22.5% |
 | **C** | [Priest: Shadow](priest/raid/shadow.md) | 20/0/31 | 788 | 23.4% |
+| **C** | [Shaman: Elemental-Enhancement](shaman/raid/elemental-enhancement.md) | 17/29/5 | 784 | 23.7% |
 | **C** | [Rogue: Combat](rogue/raid/combat.md) | 13/33/5 | 781 | 24.0% |
 | **C** | [Shaman: Elemental](shaman/raid/elemental.md) | 31/11/9 | 771 | 25.0% |
 | **C** | [Hunter: Survival](hunter/raid/survival.md) | 5/11/35 | 738 | 28.2% |
@@ -72,8 +72,6 @@ The tiers above run with racials off. With them on, the race matters by this muc
 | [Hunter: Marksmanship](hunter/raid/marksmanship.md) | Skyborne (Windshaper) | 4.5% (Dwarf) |
 | [Warrior: Fury](warrior/raid/fury.md) | Skyborne (Windshaper) | 6.7% (Dwarf) |
 | [Druid: Feral Combat](druid/raid/feral-combat.md) | Skyborne (Windshaper) | 5.0% (Night Elf) |
-| [Shaman: Enhancement](shaman/raid/enhancement.md) | Skyborne (Windshaper) | 6.2% (Troll) |
-| [Shaman: Elemental-Enhancement](shaman/raid/elemental-enhancement.md) | Skyborne (Windshaper) | 6.2% (Troll) |
 | [Mage: Fire](mage/raid/fire.md) | Skyborne (High Order) | 6.8% (Troll) |
 | [Warlock: Demonology](warlock/raid/demonology.md) | Human | 1.8% (Troll) |
 | [Warrior: Arms](warrior/raid/arms.md) | Skyborne (Windshaper) | 6.1% (Gnome) |
@@ -88,7 +86,9 @@ The tiers above run with racials off. With them on, the race matters by this muc
 | [Warlock: Shadow Bolt hybrid](warlock/raid/shadow-bolt-hybrid.md) | Human | 1.8% (Troll) |
 | [Mage: Frostfire](mage/raid/frostfire.md) | Skyborne (High Order) | 4.8% (Troll) |
 | [Mage: Arcane](mage/raid/arcane.md) | Skyborne (High Order) | 5.6% (Troll) |
+| [Shaman: Enhancement](shaman/raid/enhancement.md) | Skyborne (Windshaper) | 6.2% (Troll) |
 | [Priest: Shadow](priest/raid/shadow.md) | Human | 1.7% (Dwarf) |
+| [Shaman: Elemental-Enhancement](shaman/raid/elemental-enhancement.md) | Skyborne (Windshaper) | 6.2% (Troll) |
 | [Rogue: Combat](rogue/raid/combat.md) | Skyborne (Windshaper) | 6.4% (Dwarf) |
 | [Shaman: Elemental](shaman/raid/elemental.md) | Skyborne (Windshaper) | 6.8% (Dwarf) |
 | [Hunter: Survival](hunter/raid/survival.md) | Skyborne (Windshaper) | 6.6% (Dwarf) |
@@ -131,8 +131,8 @@ The trinket pair in each spec's own gear sets (damage specs and tanks: raced in 
 | [Rogue: Assassination/Subtlety hybrid](rogue/raid/hybrid-assassination-subtlety.md) | [Hand of Justice](https://www.wowhead.com/forever/item=11815), [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965), [Hand of Justice](https://www.wowhead.com/forever/item=11815) |
 | [Rogue: Subtlety](rogue/raid/subtlety.md) | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965), [Hand of Justice](https://www.wowhead.com/forever/item=11815) | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965), [Counterattack Lodestone](https://www.wowhead.com/forever/item=18537) |
 | [Shaman: Elemental](shaman/raid/elemental.md) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438), [Eye of the Beast](https://www.wowhead.com/forever/item=13968) | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820), [Eye of the Beast](https://www.wowhead.com/forever/item=13968) |
-| [Shaman: Enhancement](shaman/raid/enhancement.md) | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965), [Hand of Justice](https://www.wowhead.com/forever/item=11815) | [Smolderweb's Eye](https://www.wowhead.com/forever/item=13213), [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) |
-| [Shaman: Elemental-Enhancement](shaman/raid/elemental-enhancement.md) | [Hand of Justice](https://www.wowhead.com/forever/item=11815), [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437) | [Smolderweb's Eye](https://www.wowhead.com/forever/item=13213), [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437) |
+| [Shaman: Enhancement](shaman/raid/enhancement.md) | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965), [Adaptive Combat Assistant](https://www.wowhead.com/forever/item=272437) | [Smolderweb's Eye](https://www.wowhead.com/forever/item=13213), [Rune of the Guard Captain](https://www.wowhead.com/forever/item=19120) |
+| [Shaman: Elemental-Enhancement](shaman/raid/elemental-enhancement.md) | [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965), [Hand of Justice](https://www.wowhead.com/forever/item=11815) | [Hand of Justice](https://www.wowhead.com/forever/item=11815), [Blackhand's Breadth](https://www.wowhead.com/forever/item=13965) |
 | [Shaman: Restoration](shaman/raid/restoration.md) | [Burst of Knowledge](https://www.wowhead.com/forever/item=11832), [Mindtap Talisman](https://www.wowhead.com/forever/item=18371) | [Burst of Knowledge](https://www.wowhead.com/forever/item=11832), [Mindtap Talisman](https://www.wowhead.com/forever/item=18371) |
 | [Warlock: Affliction](warlock/raid/affliction.md) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438), [Eye of the Beast](https://www.wowhead.com/forever/item=13968) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438), [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) |
 | [Warlock: Demonology](warlock/raid/demonology.md) | [Eye of the Beast](https://www.wowhead.com/forever/item=13968), [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438), [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) |
@@ -143,5 +143,5 @@ The trinket pair in each spec's own gear sets (damage specs and tanks: raced in 
 | [Warrior: Protection](warrior/raid/protection.md) (tank) | [The Lion Horn of Stormwind](https://www.wowhead.com/forever/item=14557), [Defender's Grip Stabilizer](https://www.wowhead.com/forever/item=272440) | [Arena Grand Master](https://www.wowhead.com/forever/item=19024), [Vigilance Charm](https://www.wowhead.com/forever/item=18370) |
 
 ---
-*Generated by `_reference/data/render_tier_list.py` on 2026-11-17 from the pages' own picks and numbers (talent and spell data: client build 1.60.1.70753; raid numbers: wowsims/forever at 2e6e77d (client 70938)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_tier_list.py` on 2026-11-18 from the pages' own picks and numbers (talent and spell data: client build 1.60.1.70753; raid numbers: wowsims/forever at 2e6e77d (client 70938)). Simulations, not in-game measurements. Do not hand-edit.*
 

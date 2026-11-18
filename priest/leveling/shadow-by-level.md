@@ -4,7 +4,7 @@
 
 What a Shadow priest presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Shadow levels on a small mana budget: one damage-over-time spell, **Mind Blast** on cooldown, and the wand for everything else until **Mind Flay** arrives at 20. The spec comes alive at 40 with **Shadowform**. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 13/3/35 ([open the talent tree](https://talentsforever.com/priest/60/20500300003-3-40550201251300151-12)), the one on the [Shadow leveling page](shadow.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 13/2/36 ([open the talent tree](https://talentsforever.com/priest/60/20500300003-2-40550201251300251-12)), the one on the [Shadow leveling page](shadow.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -149,7 +149,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Improved Mind Blast** (24, 31-34) shortens the cooldown, so **Mind Blast** comes round more often as you level.
 - Racial spells in the list above: Feedback (Human), Chastise (Dwarf), Elune's Grace (Night Elf), Contingency Plan (Gnome), Dark Sacrifice (Undead), Shadowguard (Troll). Only that race can learn its own.
 
-*Fight lab, seconds per kill: 31 at level 20, 35 at level 30, 36 at level 31. Presses per kill at level 20: Wand 4.6, Mind Blast 2.1, Mind Flay 1.7, Shadow Word: Pain 1.0.*
+*Fight lab, seconds per kill: 30 at level 20, 34 at level 30, 35 at level 31. Presses per kill at level 20: Wand 5.2, Mind Blast 2.1, Mind Flay 1.5, Shadow Word: Pain 1.0.*
 
 ## Levels 32-38: Shadow Word: Death
 
@@ -176,7 +176,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Early Demise** (35) adds 15% critical strike chance to **Shadow Word: Death** on a mob at or below 20% of its health. It does not unlock a cast: the spell was always castable. The fight lab casts it there too.
 - **Shadow Word: Death** hurts you for 30% of your maximum health when the mob survives it. Keep it for the finish.
 
-*Fight lab, seconds per kill: 35 at level 32, 37 at level 38. Presses per kill at level 32: Mind Flay 2.3, Wand 2.2, Mind Blast 2.0, Shadow Word: Pain 1.1, Shadow Word: Death 1.0.*
+*Fight lab, seconds per kill: 34 at level 32, 36 at level 38. Presses per kill at level 32: Mind Flay 2.4, Wand 2.2, Mind Blast 2.0, Shadow Word: Pain 1.0, Shadow Word: Death 1.0.*
 
 ## Levels 39-60: Vampiric Embrace, then Shadowform
 
@@ -184,7 +184,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Desperate Prayer at 42, 50, 58; Flash Heal at 44, 50, 56; Mind Blast at 40, 46, 52, 58; Mind Flay at 44, 52, 60; Power Word: Shield at 42, 48, 54, 60; Psychic Scream at 42, 56; Shackle Undead at 40, 60; Shadow Word: Death at 40, 48, 56; Shadow Word: Pain at 42, 50, 58.
 
-**Talents:** 39 Vampiric Embrace, 40 Shadowform, 41-42 Darkness, 43-44 Dark Inspiration, 45-49 Twin Disciplines, 50-52 Twilight Focus, 53-55 Mental Strength, 56-57 Power in Light, 58-60 Meditation.
+**Talents:** 39 Vampiric Embrace, 40 Shadowform, 41-42 Darkness, 43-44 Dark Inspiration, 45-49 Twin Disciplines, 50-51 Twilight Focus, 52 Early Demise, 53-55 Mental Strength, 56-57 Power in Light, 58-60 Meditation.
 
 **Keys to set:** 1 = Vampiric Embrace.
 
@@ -202,14 +202,15 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Shadowform** at 40 is the biggest jump of the whole climb: the fight lab's time per kill drops by more than a third. Never leave it.
 - In **Shadowform** you cannot cast Holy spells. Eat or bandage between fights instead of healing yourself.
-- The remaining points: **Darkness** (41-42) and **Dark Inspiration** (43-44), then mana: **Twin Disciplines** (45-49), **Twilight Focus** (50-52), **Mental Strength** (53-55), **Power in Light** (56-57, which this rotation never uses) and **Meditation** (58-60).
+- The remaining points: **Darkness** (41-42) and **Dark Inspiration** (43-44), then mana: **Twin Disciplines** (45-49), **Twilight Focus** (50-51), **Early Demise**'s second point (52: 30% crit chance for **Shadow Word: Death** on a mob at or below 20% of its health), **Mental Strength** (53-55), **Power in Light** (56-57, which this rotation never uses) and **Meditation** (58-60).
 
-*Fight lab, seconds per kill: 37 at level 39, 22 at level 40, 21 at level 50, 20 at level 60. Presses per kill at level 39: Wand 2.9, Mind Blast 2.3, Mind Flay 2.1, Shadow Word: Pain 1.0, Shadow Word: Death 1.0, Vampiric Embrace 0.8.*
+*Fight lab, seconds per kill: 36 at level 39, 22 at level 40, 21 at level 50, 20 at level 60. Presses per kill at level 39: Wand 2.8, Mind Blast 2.3, Mind Flay 2.1, Shadow Word: Pain 1.0, Shadow Word: Death 1.0, Vampiric Embrace 0.8.*
 
 ## Between fights
 
 - Drink only when you are below about 15% of your mana. **Spirit Tap** and the wand keep you going.
 - Eat when you are below 40% of your health. Before **Shadowform**, a **Renew** on yourself does the same for a little mana.
+- Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. It was 1.4% faster per kill for this build in the fight lab (2026-11-16), and the tuned rules play it.
 - Recast **Power Word: Fortitude** and **Inner Fire** when they run out.
 - Visit the trainer every even level, and replace your wand whenever a better one turns up: it is half your damage before 20.
 
@@ -219,4 +220,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Shadow is the fastest priest leveler at every level the fight lab simulates (20 to 60). Before 20 the wand does most of the work in every spec.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-17: the stages are hand-kept in `_reference/data/level-guides/priest.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-18: the stages are hand-kept in `_reference/data/level-guides/priest.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

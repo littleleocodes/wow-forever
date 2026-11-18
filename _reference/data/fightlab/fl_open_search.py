@@ -365,7 +365,12 @@ def main():
             def sig(b, order):   # 2026-11-06 (page-audit K5): every order made here takes the spec's signature talents as early as
                 return FS.sig_order(cls, spec, {"allocation": b["allocation"], "order": order})   # their tree allows (fl_signature.sig_order)
 
-            ours = {bid: b for bid, b in data.items() if SM.mode_of(b) == "leveling" and SM.spec_of(cls, b) in trees}
+            # our builds of the trees that level with this rotation, and since 2026-11-18 of the hybrids that do
+            # (spec_modes.HYBRID_LEVELING_ROTATION): only the trees' builds raced, so a hybrid whose rotation a pure build won had no
+            # current number and open_builds.py dropped its open build (the hunter's 23/3/25 Beast-Survival after the eat-and-drink
+            # refresh of 2026-11-17)
+            hybs = {h for (c, h), rot in SM.HYBRID_LEVELING_ROTATION.items() if c == cls and rot == spec}
+            ours = {bid: b for bid, b in data.items() if SM.mode_of(b) == "leveling" and SM.spec_of(cls, b) in set(trees) | hybs}
             for bid, b in list(ours.items()):   # 2026-10-06 audit: a leveling build without an order (the mage's Fire ones) was left out of the
                 if not b.get("order"):          # race, so a winner raced against nothing; it gets the stats model's order instead
                     try:

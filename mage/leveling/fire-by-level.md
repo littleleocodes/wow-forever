@@ -4,7 +4,7 @@
 
 What a Fire mage presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Fire levels with **Fireball** at range and **Fire Blast** up close, opens every pull from 20 with a hard-cast **Pyroblast**, and borrows the Frost tree's freeze: **Frost Nova**, a step back and, from 31, **Ice Lance** into the frozen mob. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 1/31/19 ([open the talent tree](https://talentsforever.com/mage/60/1-55500201110133031-2035320001003-12)), the one on the [Fire leveling page](fire.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 1/31/19 ([open the talent tree](https://talentsforever.com/mage/60/1-55500201110133031-2035020301003-12)), the one on the [Fire leveling page](fire.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -14,7 +14,7 @@ What a Fire mage presses from level 1 to 60, stage by stage, as the trainer and 
 | 6-9 | **Fire Blast** for the moment the mob reaches you, and to finish it. |
 | 10-19 | **Frost Nova** roots the mob at your feet: step back and keep casting. Talent points start. |
 | 20-23 | **Pyroblast** (talent): a long, heavy cast that opens every pull. |
-| 24-30 | **Counterspell** for mobs that cast. From 28 **Frostbite** sometimes freezes a mob that hits you. |
+| 24-30 | **Counterspell** for mobs that cast. |
 | 31-44 | **Ice Lance** (talent): an instant that deals four times its damage to a frozen mob. |
 | 45-59 | **Heating Up** (talent): Fire crits and every **Fire Blast** add stacks; at 3 your next **Pyroblast** takes a quarter of the time. |
 | 60 | **Combustion** (talent): every 3 minutes, more Fire crit for the opening **Pyroblast** and the hits after it. |
@@ -61,7 +61,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Ice Lance** stays on R, as in every mage guide; it arrives at 31 in this build.
 - Levels 1-9 fight with three keys: Q, Mouse 5 and the middle mouse button. Add a key when its spell arrives.
 - The Shift+Q macro from 60, one line each: `#showtooltip Pyroblast`, `/cast Combustion`, `/cast Pyroblast`. **Combustion** is off the global cooldown, so one press fires both; while it is on cooldown the second line still casts **Pyroblast**, so Shift+Q can open every pull.
-- No key: **Frost Armor** and **Ice Armor**, **Arcane Intellect**, **Conjure Water** and **Conjure Food**, food, drink, the mount and the Hearthstone. Put them on a side bar and click them between fights.
+- No key: **Frost Armor**, **Ice Armor** and **Mage Armor**, **Arcane Intellect**, **Conjure Water** and **Conjure Food**, food, drink, the mount and the Hearthstone. Put them on a side bar and click them between fights.
 - **Evocation** on 4 is the one between-fights spell with a key: it has a cooldown and a mana rule, so it is a decision, not a chore. Click it instead if you want 4 free.
 - The single-target rotation never casts **Cone of Cold**, **Arcane Explosion**, **Flamestrike** or **Scorch**. The first three are there for a pull that brings friends; **Scorch** has no key.
 
@@ -78,7 +78,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 1. **Fireball** while the mob has more than about a third of its health and you have more than 15% of your mana. If it reaches you, keep casting.
 2. Below a third of its health, or under 15% of your mana: your wand, once you own one.
 
-- Keep your armor and **Arcane Intellect** up at all times, from here to 60: **Frost Armor** now, **Ice Armor** from 30.
+- Keep your armor and **Arcane Intellect** up at all times, from here to 60: **Frost Armor** now, **Ice Armor** from 30, **Mage Armor** from 34.
 - **Frostbolt** (4) is not part of the Fire list: skip it. **Conjure Water** (4): drink between fights instead of waiting for your mana.
 
 *Fight lab, seconds per kill: 12 at level 1. Presses per kill at level 1: Fireball 2.2, Wand 0.8.*
@@ -127,7 +127,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Accelerant** (10-14) takes half a second off your **Fireball** cast. **Ignite** (15-19): your Fire crits burn the mob for more.
 - **Arcane Explosion** (14) and **Flamestrike** (16) are for packs. One mob at a time never needs them.
 
-*Fight lab, seconds per kill: 28 at level 10, 35 at level 19. Presses per kill at level 10: Fireball 2.9, Wand 2.3, Fire Blast 1.5, Frost Nova 0.6.*
+*Fight lab, seconds per kill: 27 at level 10, 33 at level 19. Presses per kill at level 10: Fireball 2.9, Wand 2.3, Fire Blast 1.5, Frost Nova 0.6.*
 
 ## Levels 20-23: Pyroblast opens every pull
 
@@ -156,7 +156,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Scorch** (22): the tuned rules never cast it. Leave it off your bar. **Precision** (21-22) adds hit.
 - **Evocation** (20) is for between fights: channel it in place of a drink, whenever it is ready and you are under 15% mana. **Blink** (20) and **Mana Shield** (20) are for a pull that goes wrong.
 
-*Fight lab, seconds per kill: 34 at level 20. Presses per kill at level 20: Wand 2.0, Fireball 1.9, Fire Blast 1.4, Pyroblast 1.0, Frost Nova 0.8.*
+*Fight lab, seconds per kill: 32 at level 20. Presses per kill at level 20: Wand 2.0, Fireball 1.9, Fire Blast 1.4, Pyroblast 1.0, Frost Nova 0.8.*
 
 ## Levels 24-30: Counterspell and the Frost points
 
@@ -164,7 +164,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Arcane Explosion at 30; Fire Blast at 30; Fire Ward at 30; Fireball at 24, 30; Flamestrike at 24; Frost Nova at 26; Mana Shield at 28; Pyroblast at 24, 30.
 
-**Talents:** 24 Frost Warding, 25 Precision, 26-27 Improved Frost Nova, 28-30 Frostbite.
+**Talents:** 24 Frost Warding, 25 Precision, 26-27 Improved Frost Nova, 28-30 Ice Shards.
 
 **Keys to set:** Mouse 4 = Counterspell; C = Cone of Cold (at 26).
 
@@ -182,11 +182,11 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.
 
-- **Frostbite** (28-29): a chill can freeze the mob, and your armor chills a mob that hits you. Treat a freeze as a free **Frost Nova**: step back and keep casting.
+- **Ice Shards** (28-30) comes ahead of **Ice Lance** (31): your Frost crits, the **Ice Lance** into a freeze above all, hit harder. Since the open search of 2026-11-17 this build takes no **Frostbite**, so only **Frost Nova** freezes the mob.
 - **Frost Warding** (23-24) adds armor to **Frost Armor**; **Precision** (25) gets its third point and **Improved Frost Nova** (26-27) brings **Frost Nova** back 4 seconds sooner. **Cone of Cold** (26) goes on C for packs: the Fire list never casts it.
-- **Ice Armor** (30) replaces **Frost Armor** as your armor spell, and Fire keeps it to 60: the tuned rules of 2026-11-15 found Mage Armor (34) no faster for this list, and **Ice Armor**'s chill rolls **Frostbite**.
+- **Ice Armor** (30) replaces **Frost Armor** as your armor spell until **Mage Armor** (34): half your mana regeneration then keeps going while you cast, so you drink less. The rules of 2026-11-15 had kept Ice Armor to 60; once you eat while you drink, **Mage Armor** was about 1.2% faster per kill (the tune of 2026-11-17).
 
-*Fight lab, seconds per kill: 34 at level 24, 41 at level 30. Presses per kill at level 24: Wand 1.8, Fireball 1.5, Fire Blast 1.5, Pyroblast 1.0, Frost Nova 0.9, Counterspell 0.2.*
+*Fight lab, seconds per kill: 33 at level 24, 38 at level 30. Presses per kill at level 24: Wand 1.9, Fireball 1.5, Fire Blast 1.5, Pyroblast 1.0, Frost Nova 0.8, Counterspell 0.2.*
 
 ## Levels 31-44: Ice Lance into every freeze
 
@@ -194,7 +194,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Arcane Explosion at 38; Cone of Cold at 34, 42; Fire Blast at 38; Fire Ward at 40; Fireball at 36, 42; Flamestrike at 32, 40; Frost Nova at 40; Frost Ward at 32, 42; Ice Lance at 34, 42; Mana Shield at 36, 44; Polymorph at 40; Pyroblast at 36, 42.
 
-**Talents:** 31 Ice Lance, 32-35 Ice Shards, 36-38 Shatter, 39 Ice Shards, 40 Wand Specialization, 41 Improved Fire Blast, 42-43 Burning Soul, 44 Incineration.
+**Talents:** 31 Ice Lance, 32-34 Frost Channeling, 35 Ice Shards, 36-38 Shatter, 39 Ice Shards, 40 Wand Specialization, 41 Improved Fire Blast, 42-43 Burning Soul, 44 Incineration.
 
 **Keys to set:** R = Ice Lance.
 
@@ -207,17 +207,17 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 3. **Fireball** while the mob walks in, and whenever nothing below applies, while the mob has more than about a third of its health and you have more than 15% of your mana.
 4. **Fire Blast** when the mob would reach you before a **Fireball** finishes. With **Fire Blast** on cooldown and **Frost Nova** ready, wand it until it arrives.
 5. **Frost Nova** when it reaches you, then step back out of its reach. Skip it on a mob that is almost dead.
-6. **Ice Lance** the moment the mob is frozen, by **Frost Nova** or by **Frostbite**. One per freeze: it has an 8-second cooldown.
+6. **Ice Lance** the moment **Frost Nova** has frozen the mob. One per freeze: it has an 8-second cooldown.
 7. If it reaches you with **Frost Nova** on cooldown: **Fire Blast**, then keep casting **Fireball**.
 8. Below about a third of its health, or under 15% of your mana: **Fire Blast** whenever it is ready, an **Ice Lance** into a freeze or one that will kill, else your wand. No new **Fireball**.
 
 **If the fight goes wrong:** Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.
 
-- **Ice Shards** (32-35, 39) and **Shatter** (36-38) make the **Ice Lance** into a freeze your biggest hit.
+- **Frost Channeling** (32-34) makes your Frost spells 15% cheaper. **Ice Shards** (35 and 39, after 28-30) and **Shatter** (36-38) make the **Ice Lance** into a freeze your biggest hit.
 - **Wand Specialization** (40) makes your wand hit harder for the finish.
 - **Improved Fire Blast** (41, one point) brings **Fire Blast** back 1 second sooner and adds 8 yards of range; **Burning Soul** (42-43) keeps hits from pushing your Fire casts back. **Frostfire Bolt** (40) is not part of the Fire list.
 
-*Fight lab, seconds per kill: 39 at level 31, 42 at level 40, 37 at level 44. Presses per kill at level 31: Wand 1.8, Ice Lance 1.5, Fire Blast 1.5, Fireball 1.4, Pyroblast 1.0, Frost Nova 1.0, Counterspell 0.2.*
+*Fight lab, seconds per kill: 37 at level 31, 38 at level 40, 34 at level 44. Presses per kill at level 31: Wand 2.2, Fire Blast 1.5, Fireball 1.4, Ice Lance 1.4, Pyroblast 1.0, Frost Nova 1.0, Counterspell 0.2.*
 
 ## Levels 45-59: Heating Up: fast Pyroblasts
 
@@ -237,7 +237,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 4. **Fireball** while the mob walks in, and whenever nothing below applies, while the mob has more than about a third of its health and you have more than 15% of your mana.
 5. **Fire Blast** when the mob would reach you before a **Fireball** finishes. With **Fire Blast** on cooldown and **Frost Nova** ready, wand it until it arrives.
 6. **Frost Nova** when it reaches you, then step back out of its reach. Skip it on a mob that is almost dead.
-7. **Ice Lance** the moment the mob is frozen, by **Frost Nova** or by **Frostbite**. One per freeze: it has an 8-second cooldown.
+7. **Ice Lance** the moment **Frost Nova** has frozen the mob. One per freeze: it has an 8-second cooldown.
 8. If it reaches you with **Frost Nova** on cooldown: **Fire Blast**, then keep casting **Fireball**.
 9. Below about a third of its health, or under 15% of your mana: **Fire Blast** whenever it is ready, an **Ice Lance** into a freeze or one that will kill, else your wand. No new **Fireball**.
 
@@ -247,7 +247,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Improved Scorch** (46) does nothing in this list: the tuned rules never cast **Scorch**. **Master of Elements** (47-49) refunds mana on your Fire and Frost crits, **Critical Mass** (50-52) adds Fire crit.
 - **Incineration** (53-54, 58-59) adds crit to **Fire Blast** and **Ice Lance**, 2% a point: its first point came at 44, all five by 59. **Fire Power** (55-57) adds Fire damage for each Fire effect on the mob.
 
-*Fight lab, seconds per kill: 36 at level 45, 35 at level 50, 33 at level 59. Presses per kill at level 45: Wand 2.0, Fire Blast 1.7, Ice Lance 1.4, Fireball 1.1, Pyroblast 1.0, Frost Nova 0.9, Counterspell 0.2.*
+*Fight lab, seconds per kill: 33 at level 45, 32 at level 50, 30 at level 59. Presses per kill at level 45: Wand 2.2, Fire Blast 1.9, Ice Lance 1.3, Fireball 1.2, Pyroblast 1.0, Frost Nova 1.0, Counterspell 0.2.*
 
 ## Level 60: Combustion on the pull
 
@@ -267,7 +267,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 4. **Fireball** while the mob walks in, and whenever nothing below applies, while the mob has more than about a third of its health and you have more than 15% of your mana.
 5. **Fire Blast** when the mob would reach you before a **Fireball** finishes. With **Fire Blast** on cooldown and **Frost Nova** ready, wand it until it arrives.
 6. **Frost Nova** when it reaches you, then step back out of its reach. Skip it on a mob that is almost dead.
-7. **Ice Lance** the moment the mob is frozen, by **Frost Nova** or by **Frostbite**. One per freeze: it has an 8-second cooldown.
+7. **Ice Lance** the moment **Frost Nova** has frozen the mob. One per freeze: it has an 8-second cooldown.
 8. If it reaches you with **Frost Nova** on cooldown: **Fire Blast**, then keep casting **Fireball**.
 9. Below about a third of its health, or under 15% of your mana: **Fire Blast** whenever it is ready, an **Ice Lance** into a freeze or one that will kill, else your wand. No new **Fireball**.
 
@@ -275,13 +275,14 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Combustion** (60) raises your Fire crit with every Fire hit until 3 crits; the fight lab uses it at the pull whenever it is ready.
 
-*Fight lab, seconds per kill: 31 at level 60. Presses per kill at level 60: Wand 1.7, Fire Blast 1.6, Ice Lance 1.2, Pyroblast 1.0, Fireball 0.8, Frost Nova 0.8, Counterspell 0.1.*
+*Fight lab, seconds per kill: 29 at level 60. Presses per kill at level 60: Fire Blast 1.7, Wand 1.4, Ice Lance 1.1, Fireball 1.1, Pyroblast 1.0, Frost Nova 0.9, Counterspell 0.1.*
 
 ## Between fights
 
 - Drink your conjured water when you are below about 15% of your mana, and eat below 40% of your health. Those are the tuned rules: resting earlier cost more time in the fight lab than it saved.
 - **Evocation** (from 20) in place of a drink: whenever it is ready and you are under 15% mana, channel it instead of drinking (it gives back 70% to more than all of your mana, so at 40% part of it was lost: 0.6-1.1% faster per kill in the fight lab, 2026-11-16).
 - Conjure both food and water yourself.
+- Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. **Evocation** is not a sit and brings no food. It was 4.8% faster per kill for this build in the fight lab (2026-11-16), and the tuned rules play it.
 - Visit the trainer every even level. **Fireball** alone has eleven ranks.
 
 ## Other ways to level this class
@@ -290,4 +291,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - [Arcane-Frost](arcane-frost-by-level.md) is the recommended mage leveling spec in the fight lab; [Frost](frost-by-level.md) is close behind.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-17: the stages are hand-kept in `_reference/data/level-guides/mage.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-18: the stages are hand-kept in `_reference/data/level-guides/mage.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

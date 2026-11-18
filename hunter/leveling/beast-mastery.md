@@ -4,7 +4,7 @@
 
 **Leveling from level 1?** [The rotation level by level](beast-mastery-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Beast Mastery — Leveling](../research/leveling/builds/beast-mastery-open-leveling.md)** (31/16/4) — [open the talent tree](https://talentsforever.com/hunter/60/5320001505011251-0053520001-4-12)
+**[Beast Mastery — Leveling](../research/leveling/builds/beast-mastery-open-leveling.md)** (31/17/3) — [open the talent tree](https://talentsforever.com/hunter/60/5320001505011251-0053530001-3-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Beast Mastery), which stays below as the alternative. A model of the beta, to check at launch.
 
@@ -23,7 +23,7 @@
 5. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards. **Mend Pet** when the pet drops below a third of its health.
 6. If a mob reaches you: **Feign Death** to send it back to the pet; when that is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.
 
-**Between fights:** Mend the pet below half its health, drink below 15% of your mana, eat below 65% of your health.
+**Between fights:** Mend the pet below half its health, drink below 15% of your mana, eat below 65% of your health. Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full.
 
 ## Why this rotation
 
@@ -36,14 +36,14 @@ Beast Mastery levels with the cat as the tank: it holds the mob while **Auto Sho
 - The pet talents come first: **Deadly Aspects** (levels 10-14), **Unleashed Fury** (20-24), **Ferocity** (25-29) and **Bestial Discipline** (30-31, half your mana regeneration keeps running while you cast). In the fight lab's removal runs at 60 (seconds a kill costs without the talent) **Unleashed Fury** is worth about 1.0 second, **Bestial Discipline** about 0.9, **Efficiency** (46-50) about 0.8 and **Ferocity** about 0.7: the build's four most valuable talents. **Trueshot Aura** (56) is a buff you cast in Forever: keep it on.
 - **Rapid Fire** (26) at the start of a fight whenever it is ready (a 5-minute cooldown here: no **Rapid Killing**); **Intimidation** (34) and **Bestial Wrath** (40) likewise, the pet's stun and rage at the pull. **Bestial Wrath** has a 2-minute cooldown, so it goes on the first pull and then again every few pulls.
 - At 60 the pet is about a third of your damage (35% in the fight lab) and your shots most of the rest. The bow cannot fire within 8 yards: if the mob ends up next to you while the pet holds it, step back rather than melee.
-- **Mend Pet** when the pet drops below about a third while it holds the mob, and between fights below half. A dead pet costs a **Revive Pet** before the next pull and your **Focused Fire** bonus until then. Between fights the lab drinks below 15% of your mana and eats below 65% of your health: the tuned rules of 2026-11-15 drink this late, since fewer stops measured slightly faster.
+- **Mend Pet** when the pet drops below about a third while it holds the mob, and between fights below half. A dead pet costs a **Revive Pet** before the next pull and your **Focused Fire** bonus until then. Between fights the lab drinks below 15% of your mana and eats below 65% of your health: the tuned rules of 2026-11-15 drink this late, since fewer stops measured slightly faster. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17).
 
 **Caveats**
 
 - **Intimidation** is the point that opens **Bestial Wrath**: cast on its own it measured slightly slower in the fight lab (about 0.2 seconds a kill), and **Bestial Wrath** itself is worth about 0.2. **Endurance Training**, **Bestial Swiftness** and **Spirit Bond** measured nothing at 60 (a sturdier, faster, self-healing pet; the lab's pet rarely dies).
 - A mob that turns on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet's Growl takes the mob back.
 - Several mobs at once: **Multi-Shot** and **Volley** (from level 40; a 6-second channel with no cooldown in Forever) are your area damage.
-- **Improved Tracking** (levels 57-60, 4 points) adds 1% a point, and only against the creature type you are tracking: switch tracking to what you are killing.
+- **Improved Tracking** (levels 57-59, 3 points) adds 1% a point, and only against the creature type you are tracking: switch tracking to what you are killing.
 - Buy the new ranks: in the beta client (build 70753) the top ranks are the strongest. **Aspect of the Hawk** rank 7 gives +120 ranged attack power (rank 6 +110), **Hunter's Mark** rank 4 +143 (rank 3 +98) and **Trueshot Aura** rank 5 +100 (rank 4 +75). Cast the highest rank you know; the fight lab does.
 - **Auto Shot** keeps firing while you cast **Aimed Shot**, but after you step back it waits until you have stood still for half a second (Blizzard's 16 Oct notes), so don't shuffle between shots.
 
@@ -74,7 +74,8 @@ One point per level from 10, in this order:
 | 51-53 | Improved Stings (Marksmanship) | 3 |
 | 54-55 | Careful Aim (Marksmanship) | 2 |
 | 56 | Trueshot Aura (Marksmanship) | 1 |
-| 57-60 | Improved Tracking (Survival) | 4 |
+| 57-59 | Improved Tracking (Survival) | 3 |
+| 60 | Careful Aim (Marksmanship) | 1 |
 
 ## The numbers
 
@@ -94,5 +95,5 @@ One point per level from 10, in this order:
 - [Beast Mastery — Leveling](../research/leveling/builds/beast-mastery-leveling.md) (30/21/0, 23 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/hunter/60/532002050510025-005355200001--12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-17 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-18 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

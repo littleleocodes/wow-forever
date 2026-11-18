@@ -65,12 +65,12 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Standard* | community simulator | - | 481 | +0.0% | 908 | -0.0% | 3 s |
-| 2 | [`enhancement-open-raid`](enhancement-open-raid.md) | ours: derived (open search) | 18/31/2 | 481 | -0.0% | 909 | +0.0% | 2 s |
-| 3 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 17/29/5 | 474 | -1.5% | 892 | -1.9% | 3 s |
-| 4 | **[`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md)** | ours: optimizer | 14/31/6 | 467 | -2.9% | 857 | -5.7% | 6 s |
-| 5 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: derived (ML search) | 17/31/3 | 467 | -2.9% | 894 | -1.6% | 0 s |
-| 6 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 443 | -8.0% | 830 | -8.7% | 2 s |
+| 1 | *Standard* | community simulator | - | 481 | +0.0% | 796 | -0.1% | 3 s |
+| 2 | [`enhancement-open-raid`](enhancement-open-raid.md) | ours: derived (open search) | 18/31/2 | 481 | -0.0% | 797 | +0.0% | 2 s |
+| 3 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 17/29/5 | 474 | -1.5% | 784 | -1.6% | 3 s |
+| 4 | **[`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md)** | ours: optimizer | 14/31/6 | 467 | -2.9% | 749 | -6.0% | 6 s |
+| 5 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: derived (ML search) | 17/31/3 | 467 | -2.9% | 784 | -1.6% | 0 s |
+| 6 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 443 | -8.0% | 719 | -9.8% | 2 s |
 
 ## Rotation (community simulator, training dummy)
 

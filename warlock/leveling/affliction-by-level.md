@@ -4,7 +4,7 @@
 
 What an Affliction warlock presses from level 1 to 60, stage by stage. Affliction levels on its damage-over-time spells and the wand while the Voidwalker (from 10) holds the mob: **Corruption**, **Bane of Agony** and **Immolate** on every healthy mob, **Siphon Life** from 34, and from 40 **Wrack**, whose channel makes your other dots tick twice as fast. You never cast **Shadow Bolt** once you own a wand: the fight lab's re-tune of 2026-11-16 measured every level faster without it (a bolt hardly shortens the fight, and the mana it costs took 3 to 10 seconds of drinking a kill to win back at levels 10-30). Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 40/10/1 ([open the talent tree](https://talentsforever.com/warlock/60/25520322135001351-00050302-1-12)), the one on the [Affliction leveling page](affliction.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 39/12/0 ([open the talent tree](https://talentsforever.com/warlock/60/25520221135011351-1005030201--12)), the one on the [Affliction leveling page](affliction.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -237,7 +237,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Bane of Agony at 48, 58; Banish at 48; Corruption at 44, 54, 60; Death Coil at 50, 58; Drain Life at 46, 54; Drain Soul at 52; Fear at 56; Health Funnel at 44, 52, 60; Howl of Terror at 54; Immolate at 50, 60; Life Tap at 46, 56; Rain of Fire at 46, 58; Shadow Bolt at 44, 52, 60; Shadow Ward at 42, 52, 60; Siphon Life at 48, 58; Torment at 50, 60.
 
-**Talents:** 42-43 Improved Drains, 44 Malevolence, 45-49 Unholy Power, 50 Demonic Energies, 51-52 Fel Concentration, 53-55 Improved Voidwalker, 56 Destructive Reach, 57 Grim Reach, 58 Improved Drains, 59 Grim Reach, 60 Demonic Energies.
+**Talents:** 42-43 Improved Drains, 44 Malevolence, 45-49 Unholy Power, 50 Demonic Energies, 51 Fel Concentration, 52 Improved Health Funnel, 53-55 Improved Voidwalker, 56 Curse of Exhaustion, 57 Grim Reach, 58 Demonic Sacrifice, 59 Grim Reach, 60 Demonic Energies.
 
 **Keys to set:** F = Death Coil.
 
@@ -254,15 +254,16 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** A mob on you below 60% health: **Death Coil** first. Your Healthstone below 35% health.
 
-- **Improved Drains** (42-43, 58) adds 13% to **Drain Life**, 20% with the third point. **Fel Concentration** (51-52) gives your drains and **Wrack** a 47% chance not to lose casting time when you take damage.
-- The 10 Demonology points are for the Voidwalker: **Unholy Power** (45-49) adds 10% to its damage, **Demonic Energies** (50, 60) heals it for 15% of your spell damage and gives it the mana of each **Life Tap** too, **Improved Voidwalker** (53-55) makes **Torment** and **Consume Shadows** 30% stronger. **Destructive Reach** (56) and **Grim Reach** (57, 59) only lengthen your spells' range: the fight lab measures them at about nothing, and the leveling filler pass of 2026-11-16 moved points that measured nothing at all into them.
+- **Improved Drains** (42-43) adds 13% to **Drain Life**. **Fel Concentration** (51) gives your drains and **Wrack** a 23% chance not to lose casting time when you take damage.
+- The 12 Demonology points are for the Voidwalker: **Unholy Power** (45-49) adds 10% to its damage, **Demonic Energies** (50, 60) heals it for 15% of your spell damage and gives it the mana of each **Life Tap** too, **Improved Voidwalker** (53-55) makes **Torment** and **Consume Shadows** 30% stronger, and **Improved Health Funnel** (52) makes **Health Funnel** heal it 20% more for 15% less of your health. **Curse of Exhaustion** (56) slows a mob by 30% for 12 seconds, for one that runs at low health (the fight lab has no runners), **Grim Reach** (57, 59) only lengthens the range of your Affliction spells, and **Demonic Sacrifice** (58) is not for leveling: never sacrifice the Voidwalker that tanks for you. The fight lab measures these four at about nothing; the leveling filler passes of 2026-11-16 and 2026-11-17 moved points that measured nothing at all into them.
 
-*Fight lab, seconds per kill: 32 at level 42, 32 at level 50, 32 at level 60. Presses per kill at level 42: Wand 7.4, Torment 4.2, Corruption 1.1, Bane of Agony 1.0, Siphon Life 1.0, Wrack 0.9, Drain Life 0.1.*
+*Fight lab, seconds per kill: 32 at level 42, 32 at level 50, 31 at level 60. Presses per kill at level 42: Wand 7.3, Torment 4.2, Corruption 1.1, Bane of Agony 1.0, Siphon Life 1.0, Wrack 1.0, Drain Life 0.1.*
 
 ## Between fights
 
 - **Life Tap** back to about 70% mana while your health stays above 60%. Your health comes back while you rest, and the Voidwalker takes the next mob.
 - Eat only below 55% of your health. Drink only below 15% of your mana, when you are too hurt to **Life Tap**: without **Shadow Bolt** a kill costs little mana, and the fight lab drinks well under a second a kill.
+- Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. This build seldom sits down, so it saves almost nothing (under 0.3% per kill in the fight lab, 2026-11-16), but it never costs time.
 - Heal a Voidwalker below 60% of its health with **Consume Shadows** (not usable in a fight), or with **Health Funnel** when it is below half.
 - Keep two or three Soul Shards: **Drain Soul** a dying mob for one. **Summon Voidwalker** and **Create Healthstone** use one each.
 - Visit the trainer every even level for new ranks of your dots, **Drain Life** and **Life Tap**.
@@ -273,4 +274,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - The Affliction/Demonology hybrid plays the Demonology list, not this one: see its own guide.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-17: the stages are hand-kept in `_reference/data/level-guides/warlock.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-18: the stages are hand-kept in `_reference/data/level-guides/warlock.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

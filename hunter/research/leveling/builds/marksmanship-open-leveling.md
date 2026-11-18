@@ -1,21 +1,21 @@
-# Marksmanship — Leveling (open talent search) — 21/30/0
+# Marksmanship — Leveling (open talent search) — 20/29/2
 
 *[Hunter](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 21/30/0 (Beast Mastery / Marksmanship / Survival) |
+| **Build** | 20/29/2 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Marksmanship leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the mm-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (mm-raid). 
+The Marksmanship leveling build the open leveling search found on 2026-11-18: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the mm-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (mm-raid). 
 
 ## Point allocation
 
-### Beast Mastery (21)
+### Beast Mastery (20)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -25,9 +25,8 @@ The Marksmanship leveling build the open leveling search found on 2026-11-15: ev
 | **Improved Aspect of the Monkey** | 2/3 | changed | Increases the Dodge bonus of your Aspect of the Monkey by 4%. Additionally, your pet gains 50% of the effect of your Aspect of the Monkey ability. |
 | **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
 | **Ferocity** | 5/5 | changed | Increases the critical strike chance of your pets and hawks by 10%. |
-| **Bestial Discipline** | 1/2 | changed | Increases the Focus regeneration of your pets by 10% and allows 25% of your Mana regeneration to continue while casting. |
 
-### Marksmanship (30)
+### Marksmanship (29)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -39,11 +38,13 @@ The Marksmanship leveling build the open leveling search found on 2026-11-15: ev
 | **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 20. |
 | **Rapid Recuperation** | 1/2 | **NEW** | Afflicting a target with Serpent Sting allows 25% of your Mana Regeneration to continue while casting for 15 sec, increased to 50% when Rapid Killing is consumed. |
 | **Barrage** | 3/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 15%. |
-| **Ranged Weapon Specialization** | 5/5 | unchanged | Increases the damage you deal with ranged weapons by 5%. |
+| **Ranged Weapon Specialization** | 4/5 | unchanged | Increases the damage you deal with ranged weapons by 4%. |
 
-### Survival (0)
+### Survival (2)
 
-*No points.*
+| Talent | Pts | vs Classic | Effect at this rank |
+|---|---|---|---|
+| **Improved Tracking** | 2/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 2%. |
 
 ## Leveling order
 
@@ -58,14 +59,15 @@ The Marksmanship leveling build the open leveling search found on 2026-11-15: ev
 | 30 | Marksmanship | Rapid Recuperation | 1 | 0/21/0 |
 | 31 | Marksmanship | Efficiency | 1 | 0/22/0 |
 | 32-34 | Marksmanship | Barrage | 3 | 0/25/0 |
-| 35-39 | Marksmanship | Ranged Weapon Specialization | 5 | 0/30/0 |
-| 40-44 | Beast Mastery | Deadly Aspects | 5 | 5/30/0 |
-| 45-46 | Beast Mastery | Focused Fire | 2 | 7/30/0 |
-| 47 | Beast Mastery | Endurance Training | 1 | 8/30/0 |
-| 48-49 | Beast Mastery | Improved Aspect of the Monkey | 2 | 10/30/0 |
-| 50-54 | Beast Mastery | Unleashed Fury | 5 | 15/30/0 |
-| 55-59 | Beast Mastery | Ferocity | 5 | 20/30/0 |
-| 60 | Beast Mastery | Bestial Discipline | 1 | 21/30/0 |
+| 35-38 | Marksmanship | Ranged Weapon Specialization | 4 | 0/29/0 |
+| 39 | Survival | Improved Tracking | 1 | 0/29/1 |
+| 40-44 | Beast Mastery | Deadly Aspects | 5 | 5/29/1 |
+| 45-46 | Beast Mastery | Focused Fire | 2 | 7/29/1 |
+| 47 | Beast Mastery | Endurance Training | 1 | 8/29/1 |
+| 48-49 | Beast Mastery | Improved Aspect of the Monkey | 2 | 10/29/1 |
+| 50-54 | Beast Mastery | Unleashed Fury | 5 | 15/29/1 |
+| 55-59 | Beast Mastery | Ferocity | 5 | 20/29/1 |
+| 60 | Survival | Improved Tracking | 1 | 20/29/2 |
 
 ## Core talents (priority order)
 
@@ -84,8 +86,9 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
+- 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Bestial Discipline to Improved Tracking at 60 (no loss: -0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Ranged Weapon Specialization to Improved Tracking at 39 (no loss: +0.0% seed 3, -0.1% seed 4, level-weighted time per kill).
 - +3.6% faster than the hand draft leveling-beast-mastery, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 22.74; opt-bm-leveling-solo-60 22.89, opt-bm-leveling-leveling-st 22.96, opt-mm-raid-leveling-st 23.22, leveling-beast-mastery 23.57. The search simulated 27,163 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 22.74; opt-bm-leveling-solo-60 22.88, opt-bm-leveling-leveling-st 22.96, opt-mm-raid-leveling-st 23.20, leveling-beast-mastery 23.57. The search simulated 27,163 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)

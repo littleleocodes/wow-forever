@@ -97,14 +97,14 @@ What this build casts per kill ([report](../fightlab/shadow-dps.md), all levelin
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Mind Flay | 1.6 | 2.2 | 2.8 | 2.6 | 2.6 | 46% |
+| Mind Flay | 1.6 | 2.2 | 2.9 | 2.5 | 2.6 | 46% |
 | Mind Blast | 2.1 | 2.2 | 2.1 | 2.2 | 1.3 | 20% |
 | Shadow Word: Pain | 1.0 | 1.0 | 1.1 | 1.1 | 1.0 | 16% |
 | Shadow Word: Death | 0.0 | 0.0 | 1.0 | 1.0 | 0.8 | 17% |
 | Vampiric Embrace | 0.0 | 0.0 | 0.0 | 0.9 | 0.6 | 0% |
-| Wand | 5.0 | 5.2 | 2.9 | 3.3 | 0.5 | 1% |
-| Power Word: Shield | 0.0 | 0.1 | 0.0 | 0.0 | 0.0 | 0% |
-| Psychic Scream | 0.0 | 0.1 | 0.0 | 0.0 | 0.0 | 0% |
+| Wand | 5.0 | 5.2 | 2.7 | 3.3 | 0.5 | 1% |
+| Power Word: Shield | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Psychic Scream | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Flash Heal | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes

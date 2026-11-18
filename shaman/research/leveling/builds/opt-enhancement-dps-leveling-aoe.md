@@ -85,7 +85,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 
 Pulls of several mobs: area attacks when enough mobs stand in reach, then damage over time spread over the pull, else the single-target priority below. Single-target leveling fights against normal mobs of your level with a slow two-hander: Lightning Shield (Water Shield when talented and mana is low) and the weapon imbue up (Rockbiter's attack power until 30, Windfury's extra attacks from 30), Searing Totem dropped at the pull, a Lightning Bolt while the mob walks in, then Stormstrike, Earth Shock (buffed by Stormstrike), Flame Shock while mana allows and instant Maelstrom Lightning Bolts between white swings; Stoneclaw Totem and a Lesser Healing Wave when low, Nature's Swiftness + Healing Wave in an emergency; a death with Reincarnation ready costs 30 s instead of 90. Between fights: 2 s loot, 6 s travel, heals back to 80% health, water below 35% mana.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-16, on top of the priority below): IMBUE_TOP_FROM = 40. Together +0.4% time per kill saved for `enhancement-open-leveling` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-17, on top of the priority below): eat below 90% health. Together +1.0% time per kill saved for `enhancement-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/enhancement-dps-aoe.md), all leveling builds: [leveling rotations](../rotation.md)):
 

@@ -1107,7 +1107,11 @@ def mode_section(cls, spec, mode, builds, nums, src):
                     play += ["**Before the pull:** " + ", ".join(f"**{x}**" for x in pre) + ".", ""]
                 if keep:
                     play += ["**Keep up all fight:** " + keep_text + ".", ""]
-            quiet = [u for u in UNUSED.get((cls, top["id"]), []) if u["kind"] != "wasted"]
+            quiet, seen = [], set()
+            for u in UNUSED.get((cls, top["id"]), []):   # one line per talent: a build raced in two entries has a row in each
+                if u["kind"] != "wasted" and u["talent"] not in seen:   # (2026-11-18: Trueshot Aura twice on the Marksmanship page)
+                    seen.add(u["talent"])
+                    quiet.append(u)
             if quiet:   # talents the build takes whose ability has no line in the rotation (2026-10-02, user report on unused abilities)
                 play += ["**Talents with no line below:** " + "; ".join(f"**{u['talent']}**: {u['advice']}" for u in quiet) + ".", ""]
             if prio:   # "Then" only after a pre-pull, keep-up or talent line (2026-10-15 page audit B9)

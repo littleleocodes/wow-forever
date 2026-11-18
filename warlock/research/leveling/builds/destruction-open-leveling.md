@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Destruction leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the destruction-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). +1.6% faster per kill than destruction-open-leveling, the fastest of our leveling builds in that race.
+The Destruction leveling build the open leveling search found on 2026-11-17: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the destruction-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (affliction-leveling). 
 
 ## Point allocation
 
@@ -27,8 +27,9 @@ The Destruction leveling build the open leveling search found on 2026-11-16: eve
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Unholy Power** | 5/5 | changed | Increases all damage done by your Imp, Voidwalker, Succubus, Incubus, and Felhunter pets by 10%. |
+| **Demonic Aegis** | 1/2 | **NEW** | Increases the effectiveness of your Demon Skin and Demon Armor spells by 15%. |
 | **Improved Voidwalker** | 3/3 | unchanged | Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice, and Suffering spells by 30%. |
-| **Fel Vitality** | 2/3 | **NEW** | Increases the maximum health and Mana of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 10%, and increases your maximum Mana by 10%. |
+| **Fel Vitality** | 1/3 | **NEW** | Increases the maximum health and Mana of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 5%, and increases your maximum Mana by 5%. |
 | **Demonic Energies** | 1/2 | **NEW** | You heal your pet for 8% of all spell damage you deal. When you gain Mana from Life Tap, your summoned demon gains 50% of the Mana you gain. |
 
 ### Destruction (34)
@@ -71,18 +72,19 @@ The Destruction leveling build the open leveling search found on 2026-11-16: eve
 | 50-54 | Demonology | Unholy Power | 5 | 6/5/34 |
 | 55-57 | Demonology | Improved Voidwalker | 3 | 6/8/34 |
 | 58 | Demonology | Demonic Energies | 1 | 6/9/34 |
-| 59-60 | Demonology | Fel Vitality | 2 | 6/11/34 |
+| 59 | Demonology | Fel Vitality | 1 | 6/10/34 |
+| 60 | Demonology | Demonic Aegis | 1 | 6/11/34 |
 
 ## Core talents (priority order)
 
-1. **Conflagrate** — +3.6 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Shadow and Flame** — +3.6 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Shadowburn** — +2.7 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Suppression** — +2.5 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Incinerate** — +2.2 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Agonizing Flames** — +1.9 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Cataclysm** — +1.7 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Fire and Brimstone** — +1.6 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Conflagrate** — +4.7 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Shadow and Flame** — +4.5 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Shadowburn** — +3.0 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Suppression** — +3.0 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Incinerate** — +2.3 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Improved Voidwalker** — +2.1 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Agonizing Flames** — +1.7 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Cataclysm** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -90,8 +92,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Demonic Embrace to Demonic Energies at 58 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Aftermath to Destructive Reach at 16 (gate: -0.1% seed 3, -0.3% seed 4, level-weighted time per kill); Aftermath to Destructive Reach at 15 (gate: -0.3% seed 3, -0.2% seed 4, level-weighted time per kill).
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 40.68; destruction-open-leveling 41.32, destruction-leveling 48.23. The search simulated 36,382 builds.
+- 2026-11-18: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Fel Vitality to Demonic Aegis at 60 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill).
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 39.26; destruction-leveling 47.04. The search simulated 36,382 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -101,7 +103,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/warlock>
-- <https://talentsforever.com/warlock/60/15-0015032-0050325133111351-12>
+- <https://talentsforever.com/warlock/60/15-00050321-2050305133111351-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

@@ -31,7 +31,7 @@ Total: **58.2 h** (35.4% faster than talentless), no respec.
   - at level 60: **Elemental**: Convection 5, Elemental Alacrity 3, Call of Flame 3, Elemental Focus 1, Concussion 4, Earthbound 1; **Restoration**: Tidal Focus 5, Mindfulness 3, Totemic Focus 2, Water Shield 1; **Enhancement**: Thundering Strikes 5, Guardian Totems 2, Earth's Grasp 2, Ancestral Knowledge 2, Shamanistic Focus 1, Anticipation 3, Improved Ghost Wolf 2, Toughness 3, Mental Quickness 2, Spirit Weapons 1
   - order: 10-14 Convection x5, 15-17 Elemental Alacrity x3, 18-19 Call of Flame x2, 20 Elemental Focus, 21-25 Tidal Focus x5, 26-28 Mindfulness x3, 29-33 Thundering Strikes x5, 34-35 Guardian Totems x2, 36-37 Earth's Grasp x2, 38 Ancestral Knowledge, 39 Shamanistic Focus, 40-42 Anticipation x3, 43 Ancestral Knowledge, 44-45 Improved Ghost Wolf x2, 46-48 Toughness x3, 49-50 Mental Quickness x2, 51 Call of Flame, 52 Spirit Weapons, 53-55 Concussion x3, 56 Earthbound, 57-58 Totemic Focus x2, 59 Water Shield, 60 Concussion
 
-Total: **69.7 h** (22.6% faster than talentless), no respec.
+Total: **69.6 h** (22.6% faster than talentless), no respec.
 
 ## Never respec: best single plan
 
@@ -42,11 +42,11 @@ Total: **69.7 h** (22.6% faster than talentless), no respec.
 | enhancement-dps -> level-20 build (0/11/0) | 58.2 | +0.0 h |
 | enhancement-dps -> level-60 build (12/31/8) | 58.2 | +0.0 h |
 | enhancement-dps -> level-30 build (0/18/3) | 58.8 | +0.6 h |
-| elemental-dps -> level-50 build (11/22/8) | 69.7 | +11.6 h |
-| elemental-dps -> level-30 build (12/1/8) | 69.7 | +11.6 h |
-| elemental-dps -> level-40 build (12/11/8) | 69.7 | +11.6 h |
-| elemental-dps -> level-20 build (11/0/0) | 70.4 | +12.2 h |
-| elemental-dps -> level-60 build (21/22/8) | 71.2 | +13.1 h |
+| elemental-dps -> level-50 build (11/22/8) | 69.6 | +11.5 h |
+| elemental-dps -> level-30 build (12/1/8) | 69.7 | +11.5 h |
+| elemental-dps -> level-40 build (12/11/8) | 69.7 | +11.5 h |
+| elemental-dps -> level-20 build (11/0/0) | 70.3 | +12.2 h |
+| elemental-dps -> level-60 build (21/22/8) | 71.2 | +13.0 h |
 
 ## Leveling score by level (fraction of time per kill saved)
 

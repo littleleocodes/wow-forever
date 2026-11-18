@@ -1,17 +1,17 @@
-# Beast Mastery — Leveling (open talent search) — 31/16/4
+# Beast Mastery — Leveling (open talent search) — 31/17/3
 
 *[Hunter](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 31/16/4 (Beast Mastery / Marksmanship / Survival) |
+| **Build** | 31/17/3 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Beast Mastery leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the bm-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (bm-leveling). -0.8% faster per kill than beast-mastery-leveling, the fastest of our leveling builds in that race.
+The Beast Mastery leveling build the open leveling search found on 2026-11-18: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the bm-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (bm-leveling). -0.8% faster per kill than beast-mastery-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -31,21 +31,21 @@ The Beast Mastery leveling build the open leveling search found on 2026-11-15: e
 | **Frenzy** | 5/5 | unchanged | Gives your pet a 100% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike. |
 | **Bestial Wrath** | 1/1 | unchanged | Send your pet into a rage causing 50% additional damage for 18 sec. While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed. |
 
-### Marksmanship (16)
+### Marksmanship (17)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
 | **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
 | **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
-| **Careful Aim** | 2/5 | **NEW** | Increases your Attack Power by 40% of your Intellect. |
+| **Careful Aim** | 3/5 | **NEW** | Increases your Attack Power by 60% of your Intellect. |
 | **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 20. |
 
-### Survival (4)
+### Survival (3)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Tracking** | 4/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 4%. |
+| **Improved Tracking** | 3/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 3%. |
 
 ## Leveling order
 
@@ -67,7 +67,8 @@ The Beast Mastery leveling build the open leveling search found on 2026-11-15: e
 | 51-53 | Marksmanship | Improved Stings | 3 | 31/13/0 |
 | 54-55 | Marksmanship | Careful Aim | 2 | 31/15/0 |
 | 56 | Marksmanship | Trueshot Aura | 1 | 31/16/0 |
-| 57-60 | Survival | Improved Tracking | 4 | 31/16/4 |
+| 57-59 | Survival | Improved Tracking | 3 | 31/16/3 |
+| 60 | Marksmanship | Careful Aim | 1 | 31/17/3 |
 
 ## Core talents (priority order)
 
@@ -86,8 +87,9 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- +4.8% faster than the hand draft bm-solo-farm, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 22.88; beast-mastery-leveling 22.69, bm-solo-farm 23.97. The search simulated 22,683 builds.
+- 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Tracking to Careful Aim at 60 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill).
+- +4.9% faster than the hand draft bm-solo-farm, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 22.86; beast-mastery-leveling 22.68, bm-solo-farm 23.97. The search simulated 22,683 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 

@@ -1,5 +1,5 @@
 {
- "made": "2026-11-18T06:34:13-05:00",
+ "made": "2026-11-18T07:27:03-05:00",
  "about": "Out-of-combat rest cues for an in-game add-on, every class and leveling spec (2026-11-16, user: \"I want the addon to not proc during combat. Also, I just want to be eat/drink/evocation for now. Also I want it to work across all different classes and specs\").",
  "rules": "Out of combat only. drink_below / eat_below: shares of maximum mana / health; tools: the class's own mana tools between fights, in order (a tool's cue comes before drinking). The fight lab drinks and eats back to full once a cue fires. eat_drink_together (per spec; absent = false): while you sit to drink or to eat, the other bar tops up too, at no extra time, only while it is below full; you stand when the bar that fired is full (the topped-up one may be left short). Evocation is not sitting and brings no top-up. vectors: the fight lab's own decision on set states, for the add-on's tests (hp and mana as shares; does in order; after: the bars once the tool ran; warlocks: health_max and tap_cost).",
  "classes": {
@@ -201,27 +201,27 @@
      "eat_drink_together": true
     },
     "Hybrid Beast Mastery/Survival": {
-     "build": "opt-melee-dps-leveling-st",
+     "build": "beast-survival-open-leveling",
      "rotation": "melee-dps",
      "drink_below": 0.35,
      "eat_below": 0.65,
      "talents": {
-      "Careful Aim": 5,
+      "Bestial Discipline": 2,
+      "Clever Traps": 2,
       "Deadly Aspects": 5,
-      "Deflection": 4,
-      "Deterrence": 1,
-      "Endurance Training": 1,
-      "Expose Prey": 2,
+      "Endurance Training": 3,
+      "Entrapment": 1,
+      "Ferocity": 5,
       "Focused Fire": 2,
-      "Improved Revive Pet": 2,
       "Improved Tracking": 5,
-      "Lethal Attacks": 5,
+      "Lethal Attacks": 4,
       "Predator's Edge": 5,
       "Resourcefulness": 2,
       "Savage Strikes": 2,
-      "Strider Kick": 1,
       "Surefooted": 3,
-      "Survivalist's Discipline": 1,
+      "Survival Tactics": 1,
+      "Survivalist": 2,
+      "Survivalist's Discipline": 2,
       "Unleashed Fury": 5
      },
      "eat_drink_together": true

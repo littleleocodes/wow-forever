@@ -6,7 +6,7 @@
 
 **Leveling from level 1?** [The rotation level by level](enhancement-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Enhancement — Leveling](../research/leveling/builds/enhancement-open-leveling.md)** (13/32/6) — [open the talent tree](https://talentsforever.com/shaman/60/5501011-050033312031012251-05001-12)
+**[Enhancement — Leveling](../research/leveling/builds/enhancement-open-leveling.md)** (13/32/6) — [open the talent tree](https://talentsforever.com/shaman/60/5501011-050033312031012251-050001-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Enhancement), which stays below as the alternative. A model of the beta, to check at launch.
 
@@ -27,7 +27,7 @@
 5. **Earth Shock** whenever the shock cooldown is free: it takes **Stormstrike**'s 20%. It shares that cooldown with **Flame Shock**, which the fight lab therefore never casts on one mob.
 6. Low on health at any point: under 30% drop **Stoneclaw Totem** (or **Nature's Swiftness** and **Healing Wave** if you have it), under 40% cast **Lesser Healing Wave**.
 
-**Between fights:** Heal back to 80% health with **Lesser Healing Wave** (**Healing Wave** for a big gap); eat if you are still under 80% (out of mana for heals); drink below 15% of your mana.
+**Between fights:** Heal back to 80% health with **Lesser Healing Wave** (**Healing Wave** for a big gap); eat if you are still under 90%; drink below 15% of your mana. Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full.
 
 ## Why this rotation
 
@@ -47,7 +47,7 @@ Melee with a slow two-hander and your weapon imbue (**Windfury Weapon** from 30,
 - **Shamanistic Focus** (at 20) makes shocks and **Lightning Shield** 45% cheaper; at 60 it is worth about 4 seconds per kill in the fight lab, the most of any talent in this build.
 - Before 25 you have no **Stormstrike** and before 40 no **Maelstrom Weapon**: until then it is weapon, shield, **Earth Shock** and **Searing Totem**.
 - **Anticipation** (22 and 24) and **Elemental Weapons** (23) mostly fill the 15 Enhancement points that **Stormstrike**'s row asks for before you can take it at 25.
-- Drink only below 15% mana and heal or eat back to 80% health between pulls: the tuned rules the fight lab plays.
+- Between pulls heal back to 80% health, eat if you are still under 90% and drink only below 15% mana, and whenever you sit down for one, take the other too: it costs no extra time (the tuned rules of 2026-11-17). Below level 24 eat only under 80%: there the 90% line sits you down after almost every kill, 9-10% slower per kill at 20-22 in the fight lab; from 26 on it is faster.
 
 **When to change it**
 
@@ -82,7 +82,7 @@ One point per level from 10, in this order:
 | 51-55 | Convection (Elemental) | 5 |
 | 56 | Elemental Focus (Elemental) | 1 |
 | 57 | Elemental Weapons (Enhancement) | 1 |
-| 58 | Totemic Focus (Restoration) | 1 |
+| 58 | Improved Reincarnation (Restoration) | 1 |
 | 59 | Reverberation (Elemental) | 1 |
 | 60 | Call of Flame (Elemental) | 1 |
 
@@ -90,10 +90,10 @@ One point per level from 10, in this order:
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
-| 20 | 21 | 17 |
-| 30 | 26 | 18 |
-| 40 | 27 | 21 |
-| 50 | 28 | 22 |
+| 20 | 23 | 18 |
+| 30 | 25 | 18 |
+| 40 | 26 | 20 |
+| 50 | 27 | 22 |
 | 60 | 28 | 22 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
@@ -101,8 +101,8 @@ One point per level from 10, in this order:
 ## Other builds of this spec
 
 - [Leveling — Enhancement](../research/leveling/builds/leveling-enhancement.md) (7/34/10, 27 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/shaman/60/0502-055030310051012251-05005-12)
-- [Enhancement (optimized)](../research/leveling/builds/opt-enhancement-dps-leveling-st.md) (12/31/8, 28 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/shaman/60/0505011-250233013051202011-053-12)
+- [Enhancement (optimized, solo at 60)](../research/leveling/builds/opt-enhancement-dps-solo-60.md) (12/31/8, 27 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/shaman/60/0505011-250233013051202011-053-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-17 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-18 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

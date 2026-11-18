@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Protection leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the prot-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). 
+The Protection leveling build the open leveling search found on 2026-11-17: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the prot-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). 
 
 ## Point allocation
 
@@ -85,13 +85,13 @@ The Protection leveling build the open leveling search found on 2026-11-16: ever
 
 ## Core talents (priority order)
 
-1. **Holy Shield** — +3.6 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Holy Shield** — +3.8 s per kill at level 60 without it (removal, 3,000 fights).
 2. **Sanctified Judgement** — +3.1 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Shield Specialization** — +2.1 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Reckoning** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Conviction** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Redoubt** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Shieldsworn** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Shield Specialization** — +2.0 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Reckoning** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Shieldsworn** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Conviction** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Redoubt** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
 8. **Swift Judgement** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
@@ -100,7 +100,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 29.21; protection-leveling 29.83. The search simulated 32,236 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 29.12; protection-leveling 29.69. The search simulated 32,236 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 

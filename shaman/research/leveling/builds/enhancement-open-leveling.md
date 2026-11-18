@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Enhancement leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the enhancement-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (enhancement-dps). 
+The Enhancement leveling build the open leveling search found on 2026-11-17: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the enhancement-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (enhancement-dps). 
 
 ## Point allocation
 
@@ -48,7 +48,7 @@ The Enhancement leveling build the open leveling search found on 2026-11-16: eve
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Tidal Focus** | 5/5 | changed | Reduces the Mana cost of your healing spells by 5% and improves your chance to hit by 5%. |
-| **Totemic Focus** | 1/5 | changed | Reduces the Mana cost of your totems and any spells that summon or move them by 5%. |
+| **Improved Reincarnation** | 1/2 | changed | Reduces the cooldown of your Reincarnation spell by 10 min, increases your maximum health by 2%, and increases the amount of health and Mana you reincarnate with by an additional 10%. |
 
 ## Leveling order
 
@@ -75,20 +75,20 @@ The Enhancement leveling build the open leveling search found on 2026-11-16: eve
 | 51-55 | Elemental | Convection | 5 | 10/31/5 |
 | 56 | Elemental | Elemental Focus | 1 | 11/31/5 |
 | 57 | Enhancement | Elemental Weapons | 1 | 11/32/5 |
-| 58 | Restoration | Totemic Focus | 1 | 11/32/6 |
+| 58 | Restoration | Improved Reincarnation | 1 | 11/32/6 |
 | 59 | Elemental | Reverberation | 1 | 12/32/6 |
 | 60 | Elemental | Call of Flame | 1 | 13/32/6 |
 
 ## Core talents (priority order)
 
-1. **Shamanistic Focus** — +3.8 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Shamanistic Focus** — +3.9 s per kill at level 60 without it (removal, 3,000 fights).
 2. **Stormstrike** — +2.7 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Improved Stormstrike** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Tidal Focus** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Improved Stormstrike** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Tidal Focus** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
 5. **Thundering Strikes** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
 6. **Maelstrom Weapon** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
 7. **Elemental Weapons** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Mental Dexterity** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Mental Dexterity** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -96,9 +96,9 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Anticipation to Call of Flame at 60 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).
-- +1.8% faster than the hand draft leveling-enhancement, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 26.74; leveling-enhancement 27.22, opt-enhancement-dps-leveling-st 27.89, opt-enhancement-dps-solo-60 27.89, restoration-leveling 36.97. The search simulated 43,694 builds.
+- 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Totemic Focus to Improved Reincarnation at 58 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill).
+- +1.9% faster than the hand draft leveling-enhancement, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 26.19; leveling-enhancement 26.70, opt-enhancement-dps-leveling-st 27.30, opt-enhancement-dps-solo-60 27.30, restoration-leveling 36.21. The search simulated 43,694 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
@@ -109,7 +109,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/shaman>
-- <https://talentsforever.com/shaman/60/5501001-050033313031012251-05001-12>
+- <https://talentsforever.com/shaman/60/5501011-050033312031012251-05001-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

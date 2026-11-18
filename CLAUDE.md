@@ -891,6 +891,13 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
   the record, `render_modes.leveling_numbers`). One build per spec; raid builds join their entry in specs.json and go through the filler
   audit; re-race the entries and regen afterwards. A new hybrid family needs a name in `spec_modes.HYBRID_NAMES` (the hunter's
   Beast-Survival, 16/11/24 Summon Hawk + Lone Wolf, 2026-10-06).
+  Hybrids that share a rotation (2026-11-18, user: "Keep 23/3/25 (Recommended)"): a rotation's 20-60 race also races the builds of the
+  hybrids that level with it (`spec_modes.HYBRID_LEVELING_ROTATION`), and a hybrid whose rotation another spec's build won keeps its open
+  build. The build must have its own race row, pass the signature check and run 0.5% faster than the hybrid's other builds; the record
+  lists it under `builds.kept`, and the pages read its own row. The melee rotation had raced Survival's builds only, so once our
+  Survival build won it the Beast-Survival page lost its build (kept: 22/4/25, 21.00 s per kill against Survival's 20.98). A leveling
+  filler pass carries over to a rewrite when the record's winner is a state its chain of one-point moves went through
+  (`open_builds.filler_applies`): a chained second pass had stopped matching once the race picked our build after the first pass.
 - Gear presets must be complete (weapon, rings, trinkets, neck, back): some of the simulator's presets list only the armor slots
   (shadow priest and Protection warrior `p1.bis`, feral cat `p0.bis` in 40be98e). `specs.json` names complete ones (`gear_note`
   says why) and `run.py`'s `best_gear` skips incomplete presets (`gear_complete`).

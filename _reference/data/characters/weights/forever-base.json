@@ -7260,7 +7260,7 @@
      "feet": "Linen Boots",
      "hands": "Cloudy Gustwoven Gloves",
      "legs": "Primal Leggings of Strength",
-     "offhand": "Stonesplinter Dagger",
+     "offhand": "Bloodstained Knife",
      "ranged": "Blackwood Recurve Bow",
      "waist": "Cloudy Gustwoven Belt",
      "weapon": "Stonesplinter Axe",
@@ -7273,7 +7273,7 @@
      "agility": 2,
      "ranged_weapon_dps": 3.9,
      "mh_weapon_dps": 6.8,
-     "oh_weapon_dps": 7.0
+     "oh_weapon_dps": 5.9
     },
     "standard": {
      "intellect": 0.0,
@@ -7292,7 +7292,7 @@
      "strength": 4.5,
      "armor": -69.0,
      "mh_weapon_dps": -0.0,
-     "oh_weapon_dps": 0.2
+     "oh_weapon_dps": -0.9
     },
     "pool": 607,
     "best": {
@@ -7303,7 +7303,7 @@
       "finger1": "The 1 Ring",
       "hands": "Ceremonial Leather Gloves",
       "legs": "Gypsy Trousers of Agility",
-      "offhand": "Carving Knife of the Tiger",
+      "offhand": "Ritual Blade",
       "ranged": "Rough Boomstick",
       "waist": "Bard's Belt of Agility",
       "weapon": "Quilboar Tomahawk",
@@ -7312,23 +7312,23 @@
      "totals": {
       "armor": 267,
       "agility": 23,
-      "strength": 4,
+      "strength": 3,
       "stamina": 6,
       "spirit": 1,
       "intellect": 1,
       "ranged_weapon_dps": 4.1,
       "mh_weapon_dps": 7.8,
-      "oh_weapon_dps": 5.9
+      "oh_weapon_dps": 7.5
      },
      "bonus": {
       "intellect": 1.0,
       "spirit": 1.0,
       "stamina": -7.0,
       "agility": 13.5,
-      "strength": 1.5,
+      "strength": 0.5,
       "armor": -36.0,
       "mh_weapon_dps": 1.0,
-      "oh_weapon_dps": -0.9
+      "oh_weapon_dps": 0.7
      }
     }
    },
@@ -7340,7 +7340,7 @@
      "finger1": "The 1 Ring",
      "hands": "Feral Gloves of Strength",
      "legs": "Barbaric Loincloth",
-     "offhand": "Hollowfang Blade",
+     "offhand": "Northern Shortsword of Strength",
      "ranged": "Satchel of Copper Bombs",
      "waist": "Wendigo Collar",
      "weapon": "Slicer Blade",
@@ -7355,7 +7355,7 @@
      "spirit": 1,
      "ranged_weapon_dps": 3.0,
      "mh_weapon_dps": 8.7,
-     "oh_weapon_dps": 8.9
+     "oh_weapon_dps": 9.1
     },
     "standard": {
      "intellect": 0.0,
@@ -7376,7 +7376,7 @@
      "strength": 20.5,
      "armor": -94.0,
      "mh_weapon_dps": 0.9,
-     "oh_weapon_dps": 1.1
+     "oh_weapon_dps": 1.3
     },
     "pool": 1627,
     "best": {
@@ -7432,7 +7432,7 @@
      "finger2": "Demon Band",
      "hands": "Inscribed Leather Gloves",
      "legs": "Scouting Trousers of Strength",
-     "offhand": "Spikelash Dagger",
+     "offhand": "Bronze Axe",
      "ranged": "Cracked Blacksmith Hammer",
      "shoulder": "Double-Stitched Woolen Shoulders",
      "waist": "Rigid Belt of Strength",
@@ -7440,16 +7440,16 @@
      "wrist": "Wrangler's Wristbands of Strength"
     },
     "totals": {
-     "stamina": 13,
+     "stamina": 11,
      "healing": 4,
      "spell_power": 4,
      "armor": 337,
-     "strength": 45,
+     "strength": 48,
      "spirit": 5,
-     "agility": 4,
+     "agility": 2,
      "ranged_weapon_dps": 10.0,
      "mh_weapon_dps": 12.4,
-     "oh_weapon_dps": 11.1
+     "oh_weapon_dps": 11.6
     },
     "standard": {
      "intellect": 3.5,
@@ -7465,14 +7465,14 @@
     "bonus": {
      "intellect": -3.5,
      "spirit": 5.0,
-     "stamina": -14.0,
-     "agility": -28.0,
-     "strength": 43.5,
+     "stamina": -16.0,
+     "agility": -30.0,
+     "strength": 46.5,
      "armor": -154.5,
      "spell_power": 4.0,
      "healing": 4.0,
      "mh_weapon_dps": 1.3,
-     "oh_weapon_dps": -0.1
+     "oh_weapon_dps": 0.5
     },
     "pool": 2071,
     "best": {
@@ -7531,7 +7531,7 @@
      "hands": "Robust Gloves of the Bear",
      "head": "Azure Silk Hood",
      "legs": "Scouting Trousers of Strength",
-     "offhand": "Bronze Shortsword",
+     "offhand": "Cross Dagger of the Bear",
      "ranged": "Silver-plated Shotgun",
      "shoulder": "Superior Shoulders of the Bear",
      "waist": "Pathfinder Belt of the Bear",
@@ -7539,15 +7539,15 @@
      "wrist": "Cutthroat's Armguards of the Bear"
     },
     "totals": {
-     "stamina": 41,
+     "stamina": 44,
      "spell_power": 0,
      "armor": 490,
-     "strength": 46,
+     "strength": 49,
      "intellect": 4,
-     "agility": 7,
+     "agility": 4,
      "ranged_weapon_dps": 10.4,
      "mh_weapon_dps": 13.9,
-     "oh_weapon_dps": 12.2
+     "oh_weapon_dps": 14.6
     },
     "standard": {
      "intellect": 5.5,
@@ -7563,12 +7563,12 @@
     "bonus": {
      "intellect": -1.5,
      "spirit": -5.5,
-     "stamina": 1.5,
-     "agility": -37.5,
-     "strength": 46.0,
+     "stamina": 4.5,
+     "agility": -40.5,
+     "strength": 49.0,
      "armor": -40.5,
      "mh_weapon_dps": 1.1,
-     "oh_weapon_dps": -0.6
+     "oh_weapon_dps": 1.8
     },
     "pool": 3202,
     "best": {
@@ -7620,14 +7620,14 @@
     "set": {
      "back": "Marauder's Cloak of the Bear",
      "chest": "Beastwalker Robe",
-     "feet": "Infiltrator Boots of the Boar",
+     "feet": "Scaled Leather Boots of the Boar",
      "finger1": "Tundra Ring of Strength",
      "finger2": "Cerulean Ring of Strength",
-     "hands": "Cutthroat's Mitts of the Boar",
+     "hands": "Infiltrator Gloves of the Boar",
      "head": "Robust Helm of the Boar",
      "legs": "Cutthroat's Pants of the Boar",
      "neck": "Basalt Necklace of Strength",
-     "offhand": "Callous Axe",
+     "offhand": "Hillborne Axe of Strength",
      "ranged": "Sturdy Recurve",
      "shoulder": "Robust Shoulders of the Boar",
      "waist": "Emblazoned Belt",
@@ -7635,16 +7635,14 @@
      "wrist": "Ghostwalker Bindings of the Boar"
     },
     "totals": {
-     "armor": 526,
-     "strength": 76,
+     "armor": 522,
+     "strength": 81,
      "spirit": 45,
      "stamina": 18,
      "agility": 3,
      "ranged_weapon_dps": 13.0,
      "mh_weapon_dps": 17.1,
-     "attack_power": 8,
-     "oh_weapon_dps": 15.0,
-     "ranged_ap": 8
+     "oh_weapon_dps": 17.7
     },
     "standard": {
      "intellect": 8.0,
@@ -7662,11 +7660,10 @@
      "spirit": 29.5,
      "stamina": -26.0,
      "agility": -51.0,
-     "strength": 72.5,
-     "armor": -38.0,
-     "attack_power": 8,
+     "strength": 77.5,
+     "armor": -42.0,
      "mh_weapon_dps": 0.7,
-     "oh_weapon_dps": -1.4
+     "oh_weapon_dps": 1.4
     },
     "pool": 4340,
     "best": {
@@ -7680,7 +7677,7 @@
       "head": "Pathfinder Hat of Power",
       "legs": "Headhunter's Woolies of Power",
       "neck": "Mark of the Marsh",
-      "offhand": "Vendetta",
+      "offhand": "Pronged Reaver",
       "ranged": "Glass Shooter",
       "shoulder": "Forest Tracker Epaulets",
       "trinket1": "Roogug's Severed Head",
@@ -7693,55 +7690,57 @@
       "armor": 618,
       "attack_power": 200,
       "ranged_ap": 200,
-      "strength": 20,
-      "agility": 57,
+      "strength": 25,
+      "agility": 50,
       "stamina": 11,
-      "spirit": 10,
+      "spirit": 15,
       "ranged_weapon_dps": 17.9,
       "mh_weapon_dps": 21.9,
-      "oh_weapon_dps": 19.2
+      "oh_weapon_dps": 22.9
      },
      "bonus": {
       "intellect": -8.0,
-      "spirit": -5.5,
+      "spirit": -0.5,
       "stamina": -33.0,
-      "agility": 3.0,
-      "strength": 16.5,
+      "agility": -4.0,
+      "strength": 21.5,
       "armor": 54.0,
       "attack_power": 200,
       "mh_weapon_dps": 5.5,
-      "oh_weapon_dps": 2.9
+      "oh_weapon_dps": 6.6
      }
     }
    },
    "35": {
     "set": {
-     "back": "Huntsman's Cape of the Owl",
-     "chest": "Headhunter's Armor of the Beast",
-     "feet": "Sentinel Boots of the Boar",
+     "back": "Knight's Cloak of the Owl",
+     "chest": "Infiltrator Armor of the Beast",
+     "feet": "Archer's Boots of the Beast",
      "finger1": "Amethyst Band of Spirit",
      "finger2": "Cerulean Ring of Spirit",
-     "hands": "Trickster's Handwraps of the Boar",
+     "hands": "Ghostwalker Gloves of the Beast",
      "head": "Pathfinder Hat of the Beast",
      "legs": "Archer's Trousers of the Beast",
      "neck": "Thallium Choker of Spirit",
-     "offhand": "Daring Dirk",
+     "offhand": "Jade Serpentblade",
      "ranged": "Whipwood Recurve Bow",
-     "shoulder": "Sentinel Shoulders of the Boar",
-     "waist": "Trickster's Sash of the Boar",
-     "weapon": "Gloom Reaper of the Boar",
+     "shoulder": "Archer's Shoulderpads of the Beast",
+     "waist": "Nocturnal Sash of the Beast",
+     "weapon": "Gloom Reaper of Spirit",
      "wrist": "Nocturnal Wristbands of the Beast"
     },
     "totals": {
-     "armor": 626,
-     "strength": 48,
-     "agility": 26,
-     "stamina": 37,
-     "spirit": 61,
+     "armor": 620,
+     "strength": 32,
+     "agility": 45,
+     "stamina": 69,
+     "spirit": 35,
      "intellect": 5,
      "ranged_weapon_dps": 13.6,
      "mh_weapon_dps": 19.6,
-     "oh_weapon_dps": 17.5
+     "attack_power": 4,
+     "oh_weapon_dps": 18.2,
+     "ranged_ap": 4
     },
     "standard": {
      "intellect": 2.0,
@@ -7756,13 +7755,14 @@
     },
     "bonus": {
      "intellect": 3.0,
-     "spirit": 47.5,
-     "stamina": -16.5,
-     "agility": -44.0,
-     "strength": 44.5,
-     "armor": 17.0,
+     "spirit": 21.5,
+     "stamina": 15.5,
+     "agility": -25.0,
+     "strength": 28.5,
+     "armor": 11.0,
+     "attack_power": 4,
      "mh_weapon_dps": 0.9,
-     "oh_weapon_dps": -1.2
+     "oh_weapon_dps": -0.5
     },
     "pool": 4255,
     "best": {
@@ -7776,69 +7776,69 @@
       "head": "Huntsman's Cap of the Wolf",
       "legs": "Brinebelly Leggings",
       "neck": "Jet Chain of the Wolf",
-      "offhand": "Nobles Brand of the Wolf",
+      "offhand": "Sickle Axe",
       "ranged": "Swiftwind",
       "shoulder": "Nocturnal Shoulder Pads of the Wolf",
       "trinket1": "Gill's Gills",
-      "trinket2": "Arena Master",
+      "trinket2": "Cold Basilisk Eye",
       "waist": "Skulker's Leather Belt",
       "weapon": "Shovelphlange's Mining Axe",
-      "wrist": "Unearthed Bands of the Wolf"
+      "wrist": "Unearthed Bands of Power"
      },
      "totals": {
       "armor": 697,
-      "agility": 125,
-      "spirit": 57,
-      "strength": 38,
-      "attack_power": 59,
-      "ranged_ap": 59,
-      "stamina": 42,
+      "agility": 119,
+      "spirit": 46,
+      "strength": 44,
+      "attack_power": 78,
+      "ranged_ap": 78,
+      "stamina": 38,
       "ranged_weapon_dps": 21.2,
       "mh_weapon_dps": 27.3,
-      "oh_weapon_dps": 22.1
+      "oh_weapon_dps": 26.5
      },
      "bonus": {
       "intellect": -2.0,
-      "spirit": 43.5,
-      "stamina": -11.5,
-      "agility": 55.0,
-      "strength": 34.5,
+      "spirit": 32.5,
+      "stamina": -15.5,
+      "agility": 49.0,
+      "strength": 40.5,
       "armor": 88.0,
-      "attack_power": 59,
+      "attack_power": 78,
       "mh_weapon_dps": 8.6,
-      "oh_weapon_dps": 3.4
+      "oh_weapon_dps": 7.8
      }
     }
    },
    "40": {
     "set": {
      "back": "Tracker's Cloak of the Whale",
-     "chest": "Marauder's Tunic of the Beast",
+     "chest": "Nocturnal Tunic of Spirit",
      "feet": "Brigade Boots of Spirit",
      "finger1": "Jet Loop of the Boar",
      "finger2": "Carnelian Loop of the Boar",
-     "hands": "Captain's Gauntlets of the Beast",
-     "head": "Jazeraint Helm of Spirit",
-     "legs": "Sparkleshell Legguards of the Beast",
+     "hands": "Captain's Gauntlets of Spirit",
+     "head": "Chief Brigadier Coif",
+     "legs": "Huntsman's Leggings of Spirit",
      "neck": "Lodestone Necklace of the Boar",
-     "offhand": "Blade of the Magram Clan",
+     "offhand": "Ebon Scimitar of Spirit",
      "ranged": "Serrated Raptor Teeth",
      "shoulder": "Chief Brigadier Pauldrons",
      "waist": "Imposing Belt of Spirit",
      "weapon": "Darkmist Dirk",
-     "wrist": "Ancient Vambraces of Spirit"
+     "wrist": "Ripscaled Cuffs"
     },
     "totals": {
-     "armor": 1306,
-     "spirit": 88,
-     "strength": 42,
-     "stamina": 48,
-     "agility": 23,
+     "armor": 1028,
+     "stamina": 29,
+     "agility": 20,
+     "strength": 28,
+     "spirit": 114,
      "ranged_weapon_dps": 19.7,
-     "attack_power": 17,
+     "attack_power": 8,
      "mh_weapon_dps": 24.1,
-     "ranged_ap": 17,
-     "oh_weapon_dps": 20.5
+     "ranged_ap": 8,
+     "oh_weapon_dps": 25.0
     },
     "standard": {
      "intellect": 2.0,
@@ -7853,14 +7853,14 @@
     },
     "bonus": {
      "intellect": -2.0,
-     "spirit": 78.0,
-     "stamina": -5.0,
-     "agility": -55.0,
-     "strength": 29.0,
-     "armor": 440.5,
-     "attack_power": 17,
+     "spirit": 104.0,
+     "stamina": -24.0,
+     "agility": -58.0,
+     "strength": 15.0,
+     "armor": 162.5,
+     "attack_power": 8,
      "mh_weapon_dps": 1.1,
-     "oh_weapon_dps": -2.5
+     "oh_weapon_dps": 2.0
     },
     "pool": 5800,
     "best": {
@@ -7870,41 +7870,44 @@
       "feet": "Skulker's Leather Shoes",
       "finger1": "Assault Band",
       "finger2": "Protector's Band",
-      "hands": "Gauntlets of Divinity",
+      "hands": "Ritual-Binder's Gloves",
       "head": "Ancient Crown of the Wolf",
       "legs": "Basilisk Hide Pants",
       "neck": "Corrupted Riverglades Pendant",
       "offhand": "Kroog's Backscratcher",
       "ranged": "The Silencer",
-      "shoulder": "Revelosh's Spaulders of Power",
+      "shoulder": "Revelosh's Spaulders of the Wolf",
       "trinket1": "Ankh of Life",
       "trinket2": "Gill's Gills",
-      "waist": "Tracker's Belt of Power",
+      "waist": "Brigade Girdle of the Wolf",
       "weapon": "Guardian's Maulers",
-      "wrist": "Oathbound Bracers"
+      "wrist": "Revelosh's Armguards of the Wolf"
      },
      "totals": {
-      "armor": 941,
-      "agility": 102,
-      "spirit": 61,
+      "armor": 984,
+      "agility": 139,
+      "spirit": 97,
       "strength": 35,
-      "attack_power": 156,
-      "ranged_ap": 156,
       "intellect": 6,
-      "stamina": 40,
-      "hit": 9,
+      "stamina": 33,
+      "healing": 8,
+      "spell_power": 8,
+      "attack_power": 60,
+      "ranged_ap": 60,
       "ranged_weapon_dps": 22.3,
       "mh_weapon_dps": 30.4,
       "oh_weapon_dps": 29.2
      },
      "bonus": {
       "intellect": 4.0,
-      "spirit": 51.0,
-      "stamina": -13.0,
-      "agility": 24.0,
+      "spirit": 87.0,
+      "stamina": -20.0,
+      "agility": 61.0,
       "strength": 22.0,
-      "armor": 75.5,
-      "attack_power": 156,
+      "armor": 118.5,
+      "spell_power": 8.0,
+      "healing": 8.0,
+      "attack_power": 60,
       "mh_weapon_dps": 7.4,
       "oh_weapon_dps": 6.2
      }
@@ -7913,31 +7916,31 @@
    "45": {
     "set": {
      "back": "Ironhide Cloak of the Whale",
-     "chest": "Tracker's Tunic of the Beast",
-     "feet": "Windchaser Footpads",
+     "chest": "Ancient Chestpiece of Spirit",
+     "feet": "Formidable Sabatons of Spirit",
      "finger1": "Desert Ring of the Boar",
-     "finger2": "Aquamarine Ring of the Falcon",
-     "hands": "Warmonger's Gauntlets of the Beast",
-     "head": "Wild Leather Helmet of the Beast",
+     "finger2": "Aquamarine Ring of the Beast",
+     "hands": "Formidable Gauntlets of Spirit",
+     "head": "Wild Leather Helmet of Spirit",
      "legs": "Blackforge Leggings",
      "neck": "Tellurium Necklace of the Boar",
-     "offhand": "Dazzling Mithril Rapier",
+     "offhand": "Mithril Stiletto",
      "ranged": "Crusader Bow of the Falcon",
-     "shoulder": "Brigade Pauldrons of the Beast",
-     "waist": "Chieftain's Belt of the Beast",
-     "weapon": "Crescent Edge of the Beast",
+     "shoulder": "Rageclaw Shoulder Pads of Spirit",
+     "waist": "Chieftain's Belt of Spirit",
+     "weapon": "Crescent Edge of Spirit",
      "wrist": "Formidable Bracers of the Boar"
     },
     "totals": {
-     "armor": 1055,
-     "strength": 51,
-     "agility": 71,
-     "stamina": 77,
-     "spirit": 42,
-     "intellect": 24,
+     "armor": 1238,
+     "spirit": 136,
+     "strength": 26,
+     "stamina": 16,
+     "agility": 29,
+     "intellect": 17,
      "ranged_weapon_dps": 20.9,
      "mh_weapon_dps": 28.6,
-     "oh_weapon_dps": 28.5
+     "oh_weapon_dps": 28.1
     },
     "standard": {
      "intellect": 8.0,
@@ -7951,28 +7954,28 @@
      "attack_power": 0.0
     },
     "bonus": {
-     "intellect": 16.0,
-     "spirit": 15.5,
-     "stamina": 23.5,
-     "agility": -21.5,
-     "strength": 41.5,
-     "armor": -337.0,
+     "intellect": 9.0,
+     "spirit": 109.5,
+     "stamina": -37.5,
+     "agility": -63.5,
+     "strength": 16.5,
+     "armor": -154.0,
      "mh_weapon_dps": 1.1,
-     "oh_weapon_dps": 1.0
+     "oh_weapon_dps": 0.6
     },
     "pool": 5590,
     "best": {
      "set": {
-      "back": "First Sergeant's Cloak",
+      "back": "Wild Leather Cloak of the Wolf",
       "chest": "Sacrificial Chain Vest",
       "feet": "Elven Chain Boots",
       "finger1": "Assault Band",
       "finger2": "Archaedic Stone of Power",
-      "hands": "Gauntlets of Divinity",
+      "hands": "Lord's Gauntlets of the Wolf",
       "head": "Embrace of the Lycan",
       "legs": "Infernal Trickster Leggings",
       "neck": "Skibi's Pendant",
-      "offhand": "Guardian's Maulers",
+      "offhand": "Widowmaker",
       "ranged": "Guttbuster",
       "shoulder": "Skulker's Leather Shoulder",
       "trinket1": "Theka's Last Breath",
@@ -7982,45 +7985,45 @@
       "wrist": "Arena Bands"
      },
      "totals": {
-      "strength": 31,
-      "stamina": 52,
-      "spirit": 73,
-      "attack_power": 196,
-      "armor": 1509,
-      "ranged_ap": 196,
-      "agility": 96,
-      "intellect": 20,
+      "strength": 32,
+      "stamina": 39,
+      "spirit": 82,
+      "attack_power": 164,
+      "armor": 1513,
+      "ranged_ap": 164,
+      "agility": 108,
+      "intellect": 14,
       "mp5": 6,
       "ranged_weapon_dps": 26.1,
       "mh_weapon_dps": 33.3,
-      "oh_weapon_dps": 30.4
+      "oh_weapon_dps": 31.6
      },
      "bonus": {
-      "intellect": 12.0,
-      "spirit": 46.5,
-      "stamina": -1.5,
-      "agility": 3.5,
-      "strength": 21.5,
-      "armor": 117.0,
+      "intellect": 6.0,
+      "spirit": 55.5,
+      "stamina": -14.5,
+      "agility": 15.5,
+      "strength": 22.5,
+      "armor": 121.0,
       "mp5": 6,
-      "attack_power": 196,
+      "attack_power": 164,
       "mh_weapon_dps": 5.8,
-      "oh_weapon_dps": 2.9
+      "oh_weapon_dps": 4.1
      }
     }
    },
    "50": {
     "set": {
      "back": "Impenetrable Cloak of the Monkey",
-     "chest": "Formidable Chestpiece of the Bandit",
-     "feet": "Atal'ai Boots of the Bandit",
+     "chest": "Chieftain's Breastplate of the Bandit",
+     "feet": "Crusader's Boots of the Bandit",
      "finger1": "Arctic Ring of the Tiger",
      "finger2": "Topaz Ring of the Tiger",
      "hands": "Keeper's Gloves",
-     "head": "Lord's Crown of the Bandit",
+     "head": "Formidable Circlet of the Bandit",
      "legs": "Tough Scorpid Leggings",
      "neck": "Selenium Chain of the Tiger",
-     "offhand": "Rune Sword of the Elder",
+     "offhand": "Ebon Shiv",
      "ranged": "Silithid Sinew Crossbow",
      "shoulder": "Ironhide Pauldrons of the Bandit",
      "waist": "Merciless Belt of the Bandit",
@@ -8028,18 +8031,16 @@
      "wrist": "Merciless Bracers of the Bandit"
     },
     "totals": {
-     "armor": 1561,
-     "agility": 92,
-     "stamina": 91,
-     "attack_power": 88,
-     "ranged_ap": 88,
+     "armor": 1424,
+     "agility": 101,
+     "stamina": 92,
+     "attack_power": 89,
+     "ranged_ap": 89,
      "strength": 33,
-     "intellect": 28,
-     "spirit": 15,
+     "intellect": 21,
+     "spirit": 10,
      "ranged_weapon_dps": 22.8,
      "mh_weapon_dps": 31.2,
-     "healing": 43,
-     "spell_power": 43,
      "oh_weapon_dps": 30.3
     },
     "standard": {
@@ -8054,15 +8055,13 @@
      "attack_power": 0.0
     },
     "bonus": {
-     "intellect": 23.5,
-     "spirit": -15.0,
-     "stamina": 38.0,
-     "agility": -10.0,
+     "intellect": 16.5,
+     "spirit": -20.0,
+     "stamina": 39.0,
+     "agility": -1.0,
      "strength": 12.5,
-     "armor": 40.5,
-     "spell_power": 43.0,
-     "healing": 43.0,
-     "attack_power": 88,
+     "armor": -96.5,
+     "attack_power": 89,
      "mh_weapon_dps": -0.1,
      "oh_weapon_dps": -1.0
     },
@@ -8078,7 +8077,7 @@
       "head": "Ironhide Helmet of the Wolf",
       "legs": "Windscale Sarong",
       "neck": "Darkmoon Necklace",
-      "offhand": "Widow Blade of the Wolf",
+      "offhand": "Corpse Harvester of the Wolf",
       "ranged": "Harpy Needler of the Wolf",
       "shoulder": "Atal'ai Spaulders of the Wolf",
       "trinket1": "Winds of Tanaris",
@@ -8098,11 +8097,11 @@
       "stamina": 22,
       "hit": 29,
       "defense": 4,
-      "attack_power": 36,
-      "ranged_ap": 36,
+      "attack_power": 46,
+      "ranged_ap": 46,
       "ranged_weapon_dps": 23.7,
       "mh_weapon_dps": 35.2,
-      "oh_weapon_dps": 32.2
+      "oh_weapon_dps": 32.7
      },
      "bonus": {
       "intellect": 9.5,
@@ -8115,9 +8114,9 @@
       "healing": 30.0,
       "defense_rating": 4,
       "mp5": 14,
-      "attack_power": 36,
+      "attack_power": 46,
       "mh_weapon_dps": 3.9,
-      "oh_weapon_dps": 1.0
+      "oh_weapon_dps": 1.4
      }
     }
    },
@@ -8128,9 +8127,9 @@
      "feet": "Peerless Boots of the Bandit",
      "finger1": "Quicksilver Ring of the Whale",
      "finger2": "Marble Circle of the Whale",
-     "hands": "Pridelord Gloves",
+     "hands": "Wanderer's Gloves of the Bandit",
      "head": "Ironhide Helmet of the Bandit",
-     "legs": "Wicked Leather Pants",
+     "legs": "Peerless Leggings of the Bandit",
      "neck": "Selenium Chain of the Whale",
      "offhand": "Clack's Claw",
      "ranged": "Balanced Knives of the Tiger",
@@ -8140,15 +8139,15 @@
      "wrist": "Ornate Bracers of the Bandit"
     },
     "totals": {
-     "armor": 1005,
-     "agility": 79,
-     "stamina": 130,
-     "attack_power": 86,
-     "ranged_ap": 86,
+     "armor": 1006,
+     "agility": 61,
+     "stamina": 142,
+     "attack_power": 122,
+     "ranged_ap": 122,
      "spirit": 48,
      "healing": 40,
      "spell_power": 14,
-     "strength": 20,
+     "strength": 13,
      "ranged_weapon_dps": 30.0,
      "mh_weapon_dps": 33.9,
      "oh_weapon_dps": 32.8
@@ -8167,20 +8166,20 @@
     "bonus": {
      "intellect": -10.0,
      "spirit": 32.0,
-     "stamina": 50.5,
-     "agility": -26.5,
-     "strength": 10.0,
-     "armor": -614.5,
+     "stamina": 62.5,
+     "agility": -44.5,
+     "strength": 3.0,
+     "armor": -613.5,
      "spell_power": 14.0,
      "healing": 40.0,
-     "attack_power": 86,
+     "attack_power": 122,
      "mh_weapon_dps": 1.1,
      "oh_weapon_dps": -0.1
     },
-    "pool": 4993,
+    "pool": 4995,
     "best": {
      "set": {
-      "back": "Dark Phantom Cape",
+      "back": "Gracious Cape",
       "chest": "Ghostweave Vest",
       "feet": "Boots of Elements",
       "finger1": "Blackstone Ring",
@@ -8189,77 +8188,78 @@
       "head": "Impish Chain Hood",
       "legs": "Windrunner Legguards",
       "neck": "Everstaring Abomination Eye",
-      "offhand": "Fist of Revelation",
+      "offhand": "The Shadowfoot Stabber",
       "ranged": "Satyr's Bow",
       "shoulder": "Impenetrable Pauldrons of the Wolf",
       "trinket1": "Burst of Knowledge",
       "trinket2": "Lucky Shovelnose Tuft",
-      "waist": "Shadowcraft Belt",
+      "waist": "Chiselbrand Girdle",
       "weapon": "Fiendish Machete",
       "wrist": "Slashclaw Bracers"
      },
      "totals": {
-      "stamina": 65,
-      "spirit": 153,
-      "attack_power": 76,
-      "armor": 1629,
-      "ranged_ap": 76,
-      "hit": 65,
-      "agility": 90,
-      "healing": 153,
-      "spell_power": 70,
-      "mp5": 20,
-      "intellect": 20,
-      "strength": 20,
+      "stamina": 63,
+      "spirit": 133,
+      "attack_power": 138,
+      "armor": 1738,
+      "ranged_ap": 138,
+      "hit": 59,
+      "agility": 61,
+      "intellect": 27,
+      "healing": 36,
+      "spell_power": 32,
+      "mp5": 26,
+      "strength": 11,
       "ranged_weapon_dps": 29.8,
       "mh_weapon_dps": 38.8,
-      "oh_weapon_dps": 25.0
+      "oh_weapon_dps": 37.5
      },
      "bonus": {
-      "intellect": 10.0,
-      "spirit": 137.0,
-      "stamina": -14.5,
-      "agility": -15.5,
-      "strength": 10.0,
-      "armor": 9.5,
-      "spell_power": 70.0,
-      "healing": 153.0,
-      "mp5": 20,
-      "attack_power": 76,
+      "intellect": 17.0,
+      "spirit": 117.0,
+      "stamina": -16.5,
+      "agility": -44.5,
+      "strength": 1.0,
+      "armor": 118.5,
+      "spell_power": 32.0,
+      "healing": 36.0,
+      "mp5": 26,
+      "attack_power": 138,
       "mh_weapon_dps": 5.9,
-      "oh_weapon_dps": -7.9
+      "oh_weapon_dps": 4.6
      }
     }
    },
    "60": {
     "set": {
-     "back": "Masterwork Cape of the Channeler",
-     "chest": "Nightshade Tunic of the Elder",
+     "back": "Adventurer's Cape of the Channeler",
+     "chest": "Mighty Tunic of the Elder",
      "feet": "Master's Boots of the Hierophant",
-     "finger1": "Vermilion Band of the Elder",
-     "finger2": "Granite Ring of the Elder",
+     "finger1": "Granite Ring of the Tiger",
+     "finger2": "Jungle Ring of the Tiger",
      "hands": "Master's Gloves of the Hierophant",
      "head": "Adventurer's Bandana of the Elder",
      "legs": "Masterwork Legplates of the Elder",
-     "neck": "Vermilion Necklace of the Elder",
-     "offhand": "Dimensional Blade of the Hierophant",
+     "neck": "Vermilion Necklace of the Tiger",
+     "offhand": "Felstone Reaver of the Hierophant",
      "ranged": "Sharpshooter Harquebus of Agility",
      "shoulder": "Triumphant Shoulder Pads of the Prophet",
-     "waist": "Supreme Sash of the Prophet",
+     "waist": "Supreme Sash of the Elder",
      "weapon": "Demon Blade of the Hierophant",
-     "wrist": "Adventurer's Bracers of the Prophet"
+     "wrist": "Adventurer's Bracers of the Elder"
     },
     "totals": {
-     "armor": 1144,
-     "intellect": 134,
-     "healing": 320,
-     "spell_power": 144,
-     "spirit": 110,
+     "armor": 1147,
+     "intellect": 101,
+     "healing": 290,
+     "spell_power": 130,
+     "spirit": 92,
+     "strength": 30,
+     "agility": 38,
      "stamina": 57,
-     "agility": 8,
      "ranged_weapon_dps": 28.0,
      "mh_weapon_dps": 36.9,
-     "oh_weapon_dps": 35.0
+     "oh_weapon_dps": 36.5
     },
     "standard": {
      "intellect": 11.5,
@@ -8273,30 +8273,30 @@
      "attack_power": 0.0
     },
     "bonus": {
-     "intellect": 122.5,
-     "spirit": 85.5,
+     "intellect": 89.5,
+     "spirit": 67.5,
      "stamina": -29.0,
-     "agility": -106.5,
-     "strength": -10.0,
-     "armor": -555.5,
-     "spell_power": 144.0,
-     "healing": 320.0,
+     "agility": -76.5,
+     "strength": 20.0,
+     "armor": -552.5,
+     "spell_power": 130.0,
+     "healing": 290.0,
      "mh_weapon_dps": 1.1,
-     "oh_weapon_dps": -0.9
+     "oh_weapon_dps": 0.6
     },
     "pool": 4889,
     "best": {
      "set": {
       "back": "Archivist Cape of Spirit",
       "chest": "Shadowcraft Tunic",
-      "feet": "Boots of Elements",
+      "feet": "Wind Dancer Boots",
       "finger1": "Ragnaros Core of Spirit",
       "finger2": "Ring of Demonic Guile",
       "hands": "Gauntlets of Accuracy",
       "head": "Bloodvine Goggles",
-      "legs": "Magister's Leggings",
+      "legs": "Earthborn Kilt",
       "neck": "Everstaring Abomination Eye",
-      "offhand": "Holy War Sword of Spirit",
+      "offhand": "Zulian Hacker of the Wolf",
       "ranged": "Archstrike Bow of Spirit",
       "shoulder": "Master's Mantle of Spirit",
       "trinket1": "Mindtap Talisman",
@@ -8306,34 +8306,32 @@
       "wrist": "Slashclaw Bracers"
      },
      "totals": {
-      "hit": 87,
+      "hit": 78,
       "crit": 14,
-      "armor": 1253,
+      "armor": 1332,
       "mp5": 25,
       "stamina": 53,
-      "spirit": 175,
-      "agility": 92,
-      "intellect": 25,
-      "healing": 21,
-      "spell_power": 21,
+      "spirit": 178,
+      "agility": 103,
+      "dodge": 12,
+      "intellect": 10,
       "strength": 11,
       "ranged_weapon_dps": 30.2,
       "mh_weapon_dps": 59.5,
-      "oh_weapon_dps": 38.6
+      "oh_weapon_dps": 42.7
      },
      "bonus": {
-      "intellect": 13.5,
-      "spirit": 150.5,
+      "intellect": -1.5,
+      "spirit": 153.5,
       "stamina": -33.0,
-      "agility": -22.5,
+      "agility": -11.5,
       "strength": 1.0,
-      "armor": -446.5,
-      "spell_power": 21.0,
-      "healing": 21.0,
+      "armor": -367.5,
       "crit_rating": 14,
+      "dodge_rating": 12,
       "mp5": 25,
       "mh_weapon_dps": 23.6,
-      "oh_weapon_dps": 2.8
+      "oh_weapon_dps": 6.8
      }
     }
    }

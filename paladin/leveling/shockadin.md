@@ -6,7 +6,7 @@
 
 **Leveling from level 1?** [The rotation level by level](shockadin-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Shockadin — Leveling](../research/leveling/builds/shockadin-open-leveling.md)** (21/0/30) — [open the talent tree](https://talentsforever.com/paladin/60/05025110221101--1523330100130035-12)
+**[Shockadin — Leveling](../research/leveling/builds/shockadin-open-leveling.md)** (21/0/30) — [open the talent tree](https://talentsforever.com/paladin/60/05025111220101--1523330100130035-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
@@ -25,7 +25,7 @@
 5. With **Seal of Command**: **Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% health left (the judgement hits a stunned mob twice as hard).
 6. **Judgement** and **Holy Strike** whenever ready. Against a single mob, no Consecration: the Holy list never casts it.
 
-**Between fights:** Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink only below a quarter of your mana, and eat if you are still below 80% of your health.
+**Between fights:** Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink only below 15% of your mana, and eat if you are still below 80% of your health. Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full.
 
 ## Why this rotation
 
@@ -33,15 +33,15 @@ The Shockadin leveling page is the open search's winner for the Holy rotation (2
 
 **Why it works**
 
-- Levels 10-30 are Holy: **Divine Strength** (10-14, 2% Strength a rank), **Improved Seals** (15-17 and 23-24, 3% seal and judgement damage a rank), **Reverence** (18-19, 30% of mana regeneration while casting), **Holy Conduit** (20-21: **Exorcism**, **Consecration**, **Holy Wrath** and **Hammer of Wrath** 40% cheaper), **Purifying Power** (22), **Divine Precision** (25-26, 8% hit for Holy spells), **Divine Favor** (27), **Infusion of Light** (28), **Oath of Light** (29) and **Holy Shock** (30).
+- Levels 10-30 are Holy: **Divine Strength** (10-14, 2% Strength a rank), **Improved Seals** (15-17 and 23-24, 3% seal and judgement damage a rank), **Reverence** (18-19, 30% of mana regeneration while casting), **Holy Conduit** (20-21: **Exorcism**, **Consecration**, **Holy Wrath** and **Hammer of Wrath** 40% cheaper), **Purifying Power** (22), **Divine Precision** (25-26, 8% hit for Holy spells), **Divine Favor** (27), **Illumination** (28), **Oath of Light** (29) and **Holy Shock** (30).
 - **Holy Shock** (level 30, 10-second cooldown): at the mob whenever it is ready while it has more than 35% of its health left, from range as it walks in and then in melee, about twice a kill; **Divine Favor** first while your health is above 70%, for a sure critical. The tuned rules of 2026-11-16 hold it once the mob is below 35% of its health (about 1% faster per kill: the mob dies to your swings, seal and **Judgement** anyway, and the mana goes to the next pull). Wear melee gear (Strength): the same rules took it over caster gear (spell power and Intellect), 6-10% faster per kill at 30-45 and 2-5% at 60, so the page's seconds are melee gear's (the fight lab had dressed every Holy build with **Holy Shock** in caster gear).
 - Then Retribution: **Benediction** (31-35, instants 10% cheaper), **Sanctified Judgement** (36-38: **Judgement** returns 60% of the judged seal's mana cost), **Conviction** (39-40 and 42, 6% critical strike chance), **Seal of Command** (41), **Improved Judgement** (43-44, 2 seconds off **Judgement**'s cooldown), **Vindication** (45, 50 and 54: your swings can lower the mob's attack power by 204), **Sacred Arbiter** (46: **Holy Strike** 20% harder, and it refreshes your judgement on the mob), **Two-Handed Weapon Specialization** (47-49, 6% Holy and physical damage with a two-hander), **Vengeance** (51-53: 3% damage a stack for 30 seconds after a critical, up to five), **Deflection** (55) and **Champion of the Light** (56-60: spell damage equal to 12% of your Intellect a rank, and 0.2 seconds a rank off **Hammer of Wrath**'s cast).
 - With **Seal of Command** (41): **Hammer of Justice**, then **Judgement**, when both are ready and the mob has more than 30% health left: the seal's judgement hits a stunned mob twice as hard. **Hammer of Wrath** below 20% health from 44. No **Consecration** against a single mob.
-- Heal in the fight once you drop below 40% health and the mob has more than a fifth left: **Holy Shock** on yourself (after **Divine Favor** if it is ready), **Divine Protection** (**Divine Shield** from 34) below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter, **Lay on Hands** below 15%. Drink below a quarter of your mana and eat if you are still below 80% of your health (the tuned rules of 2026-11-16); between fights heal back to 80% with **Holy Light** or **Flash of Light**.
+- Heal in the fight once you drop below 40% health and the mob has more than a fifth left: **Holy Shock** on yourself (after **Divine Favor** if it is ready), **Divine Protection** (**Divine Shield** from 34) below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter, **Lay on Hands** below 15%. Drink below 15% of your mana and eat if you are still below 80% of your health, both together whenever you sit down for one (the tuned rules of 2026-11-16 and 2026-11-17); between fights heal back to 80% with **Holy Light** or **Flash of Light**.
 
 **Caveats**
 
-- **Purifying Power** (22), **Infusion of Light** (28) and **Oath of Light** (29) fill Holy's rows on the way to **Holy Shock**: the fight lab measures none of them against a single mob. In melee gear the build measured 3-4% faster per kill with **Holy Shock**'s point moved to **Deflection** (the leveling filler pass of 2026-11-16, two seeds): the page keeps **Holy Shock**, the Shockadin's signature spell. For speed alone, the Prot-Ret and Retribution pages level faster.
+- **Purifying Power** (22), **Illumination** (28) and **Oath of Light** (29) fill Holy's rows on the way to **Holy Shock**: the fight lab measures little for them against a single mob (**Illumination**, mana back from your heals' crits, in place of Infusion of Light was 0.16% faster per kill: the leveling filler pass of 2026-11-17). In melee gear the build measured 3-4% faster per kill with **Holy Shock**'s point moved to **Deflection** (the leveling filler pass of 2026-11-16, two seeds): the page keeps **Holy Shock**, the Shockadin's signature spell. For speed alone, the Prot-Ret and Retribution pages level faster.
 - The Holy list switches to **Seal of Command** as soon as you have it (41), and the tuned rules of 2026-11-16 keep it to 60 (the seal is a rules setting since): in melee gear it is faster than **Seal of Righteousness** at 41-55 and ties at 60. In spell-power gear **Seal of Righteousness** would be 1-3% faster per kill from 55, because its damage grows with spell power.
 - Undead and Demons: use **Exorcism** on cooldown (**Holy Conduit** makes it 40% cheaper, **Purifying Power** its cooldown 17% shorter). Unmeasured: the fight lab has no Undead or Demon mobs.
 
@@ -64,7 +64,7 @@ One point per level from 10, in this order:
 | 23-24 | Improved Seals (Holy) | 2 |
 | 25-26 | Divine Precision (Holy) | 2 |
 | 27 | Divine Favor (Holy) | 1 |
-| 28 | Infusion of Light (Holy) | 1 |
+| 28 | Illumination (Holy) | 1 |
 | 29 | Oath of Light (Holy) | 1 |
 | 30 | Holy Shock (Holy) | 1 |
 | 31-35 | Benediction (Retribution) | 5 |
@@ -89,9 +89,9 @@ One point per level from 10, in this order:
 | 20 | 22 |
 | 30 | 28 |
 | 40 | 32 |
-| 50 | 30 |
-| 60 | 29 |
+| 50 | 29 |
+| 60 | 28 |
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-17 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-18 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

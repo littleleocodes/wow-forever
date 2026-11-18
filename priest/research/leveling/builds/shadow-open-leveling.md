@@ -1,17 +1,17 @@
-# Shadow — Leveling (open talent search) — 13/3/35
+# Shadow — Leveling (open talent search) — 13/2/36
 
 *[Priest](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 13/3/35 (Discipline / Holy / Shadow) |
+| **Build** | 13/2/36 (Discipline / Holy / Shadow) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Shadow leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the shadow-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). 
+The Shadow leveling build the open leveling search found on 2026-11-17: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the shadow-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). 
 
 ## Point allocation
 
@@ -24,13 +24,13 @@ The Shadow leveling build the open leveling search found on 2026-11-15: every le
 | **Mental Strength** | 3/5 | changed | Increases your total Intellect by 6%. |
 | **Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 
-### Holy (3)
+### Holy (2)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Twilight Focus** | 3/3 | **NEW** | Gives your spells a 70% chance to not lose casting time when you take damage. |
+| **Twilight Focus** | 2/3 | **NEW** | Gives your spells a 47% chance to not lose casting time when you take damage. |
 
-### Shadow (35)
+### Shadow (36)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -43,7 +43,7 @@ The Shadow leveling build the open leveling search found on 2026-11-15: every le
 | **Dark Inspiration** | 5/5 | moved | Your Mind Blast and fully channeled Mind Flay causes Dark Inspiration, increasing yours and your party's Spirit by 15% for 10 sec. |
 | **Vampiric Embrace** | 1/1 | changed | Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 30 sec. |
 | **Shadow Weaving** | 3/3 | changed | Your Shadow damage spells have a 100% chance to increase the Shadow damage the target takes from you by 2% for 15 sec, stacking up to 5 times. |
-| **Early Demise** | 1/2 | **NEW** | Increases Shadow Word: Death's critical strike chance on targets at or below 20% health by 15%. |
+| **Early Demise** | 2/2 | **NEW** | Increases Shadow Word: Death's critical strike chance on targets at or below 20% health by 30%. |
 | **Darkness** | 5/5 | changed | Increases your Shadow damage done by 10%. |
 | **Shadowform** | 1/1 | changed | Assume Shadowform, increasing your Shadow damage by 10%, reducing the Mana cost of all Shadow spells by 50%, increasing the critical strike damage bonus of your Shadow spells by 100%, and reducing Physical damage taken by you by 15%. However, you may not cast healing spells while in this form. |
 
@@ -68,21 +68,22 @@ The Shadow leveling build the open leveling search found on 2026-11-15: every le
 | 41-42 | Shadow | Darkness | 2 | 0/0/33 |
 | 43-44 | Shadow | Dark Inspiration | 2 | 0/0/35 |
 | 45-49 | Discipline | Twin Disciplines | 5 | 5/0/35 |
-| 50-52 | Holy | Twilight Focus | 3 | 5/3/35 |
-| 53-55 | Discipline | Mental Strength | 3 | 8/3/35 |
-| 56-57 | Discipline | Power in Light | 2 | 10/3/35 |
-| 58-60 | Discipline | Meditation | 3 | 13/3/35 |
+| 50-51 | Holy | Twilight Focus | 2 | 5/2/35 |
+| 52 | Shadow | Early Demise | 1 | 5/2/36 |
+| 53-55 | Discipline | Mental Strength | 3 | 8/2/36 |
+| 56-57 | Discipline | Power in Light | 2 | 10/2/36 |
+| 58-60 | Discipline | Meditation | 3 | 13/2/36 |
 
 ## Core talents (priority order)
 
-1. **Shadowform** — +12.8 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Shadowform** — +12.6 s per kill at level 60 without it (removal, 3,000 fights).
 2. **Mind Flay** — +6.7 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Spirit Tap** — +4.5 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Vampiric Embrace** — +3.0 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Darkness** — +2.8 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Dark Inspiration** — +2.7 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Improved Mind Flay** — +2.2 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Meditation** — +2.0 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Spirit Tap** — +4.1 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Meditation** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Darkness** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Improved Mind Flay** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Dark Inspiration** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Improved Mind Blast** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -90,8 +91,9 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- +7.2% faster than the hand draft leveling-shadow, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 24.25; opt-shadow-dps-solo-60 24.96, leveling-shadow 26.00, opt-shadow-dps-leveling-aoe 29.58, opt-shadow-dps-leveling-st 32.11. The search simulated 45,475 builds.
+- 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Twilight Focus to Early Demise at 52 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill).
+- +6.8% faster than the hand draft leveling-shadow, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 23.93; opt-shadow-dps-solo-60 24.66, leveling-shadow 25.55, opt-shadow-dps-leveling-aoe 28.88, opt-shadow-dps-leveling-st 31.60. The search simulated 45,475 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 

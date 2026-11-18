@@ -4,7 +4,7 @@
 
 What a Frost mage presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Frost levels by slowing the mob, freezing it at your feet, stepping back and hitting it while it cannot reach you. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 18/3/30 ([open the talent tree](https://talentsforever.com/mage/60/2332050000003-3-0525322301203002-12)), the one on the [Frost leveling page](frost.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 18/3/30 ([open the talent tree](https://talentsforever.com/mage/60/2332050000003-21-0525321301203012-12)), the one on the [Frost leveling page](frost.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -51,7 +51,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Shift+Mouse 5 | Absorb a fire caster's spells | — | — | — | — | **Fire Ward** | Fire Ward | Fire Ward | Fire Ward |
 | Shift+Mouse 4 | Absorb a frost caster's spells | — | — | — | — | **Frost Ward** from 22 | Frost Ward | Frost Ward | Frost Ward |
 | Shift+1 | Free (Ice Barrier with the hand-made Frost build) | — | — | — | — | — | — | — | — |
-| Shift+2 | Free (Cold Snap with the hand-made Frost build) | — | — | — | — | — | — | — | — |
+| Shift+2 | Frost Nova again: Cold Snap when it has more than 8 seconds of cooldown left and the mob still has 40% of its health | — | — | — | — | — | — | **Cold Snap** from 39 | Cold Snap |
 | Shift+3 | Lift a curse | — | — | — | **Remove Lesser Curse** from 18 | Remove Lesser Curse | Remove Lesser Curse | Remove Lesser Curse | Remove Lesser Curse |
 | Shift+4 | Free | — | — | — | — | — | — | — | — |
 | Shift+C | A bad pull: the best healing potion in your bags (one cooldown for every potion) | **Healing potion macro** | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro |
@@ -117,7 +117,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Polymorph** (8): when a second mob joins, sheep it, kill the first, then fight the sheep.
 - **Arcane Missiles** (8) is not part of the Frost rotation. **Conjure Food** (6) saves you buying bread.
 
-*Fight lab, seconds per kill: 28 at level 6. Presses per kill at level 6: Frostbolt 5.8, Fire Blast 0.7, Wand 0.4.*
+*Fight lab, seconds per kill: 27 at level 6. Presses per kill at level 6: Frostbolt 5.8, Fire Blast 0.7, Wand 0.4.*
 
 ## Levels 10-19: Frost Nova: the kite begins
 
@@ -142,7 +142,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Frostbite** (15-17) sometimes freezes a mob your chill hits. Treat it as a free **Frost Nova**: step back and cast.
 - **Arcane Explosion** (14) and **Flamestrike** (16) are for packs. One mob at a time never needs them.
 
-*Fight lab, seconds per kill: 28 at level 10, 36 at level 19. Presses per kill at level 10: Frostbolt 4.8, Wand 1.2, Frost Nova 0.6, Fire Blast 0.6.*
+*Fight lab, seconds per kill: 28 at level 10, 35 at level 19. Presses per kill at level 10: Frostbolt 4.8, Wand 1.2, Frost Nova 0.6, Fire Blast 0.6.*
 
 ## Levels 20-23: Ice Lance into every freeze
 
@@ -167,7 +167,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Evocation** (20) is for between fights: channel it in place of a drink, whenever it is ready and you are under 15% mana.
 - **Blink** (20) and **Mana Shield** (20) are escapes for a pull that goes wrong, not rotation. **Blizzard** (20) is for packs.
 
-*Fight lab, seconds per kill: 27 at level 20. Presses per kill at level 20: Frostbolt 3.9, Ice Lance 1.2, Wand 0.8, Fire Blast 0.5, Frost Nova 0.5.*
+*Fight lab, seconds per kill: 26 at level 20. Presses per kill at level 20: Frostbolt 3.9, Ice Lance 1.2, Wand 0.8, Fire Blast 0.5, Frost Nova 0.5.*
 
 ## Levels 24-29: Counterspell and Shatter
 
@@ -193,7 +193,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Shatter** (25, 28-29) and **Ice Shards** (24, 26-27) are why the **Ice Lance** into a freeze is your biggest hit from here on.
 - **Cone of Cold** (26) goes on C for packs. The tuned rotation never casts it on a single mob; kills measured faster without.
 
-*Fight lab, seconds per kill: 30 at level 24, 33 at level 29. Presses per kill at level 24: Frostbolt 4.8, Ice Lance 1.4, Frost Nova 0.7, Wand 0.7, Fire Blast 0.6, Counterspell 0.2.*
+*Fight lab, seconds per kill: 29 at level 24, 31 at level 29. Presses per kill at level 24: Frostbolt 4.8, Ice Lance 1.4, Frost Nova 0.7, Wand 0.7, Fire Blast 0.6, Counterspell 0.2.*
 
 ## Levels 30-39: Fingers of Frost
 
@@ -201,9 +201,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Arcane Explosion at 30, 38; Arcane Missiles at 32; Blizzard at 36; Cone of Cold at 34; Fire Blast at 30, 38; Fire Ward at 30; Frost Ward at 32; Frostbolt at 32, 38; Ice Lance at 34; Mana Shield at 36.
 
-**Talents:** 30-31 Fingers of Frost, 32-33 Ice Shards, 34-35 Arctic Reach, 36-37 Improved Frost Nova, 38-39 Permafrost.
+**Talents:** 30-31 Fingers of Frost, 32-33 Ice Shards, 34-35 Arctic Reach, 36-37 Improved Frost Nova, 38 Permafrost, 39 Cold Snap.
 
-**Keys to set:** 1 = Arcane Missiles (at 37).
+**Keys to set:** 1 = Arcane Missiles (at 37); Shift+2 = Cold Snap (at 39).
 
 **Your keys in this stage:** Q Frostbolt, E Frost Nova, R Ice Lance, Mouse 5 Fire Blast, Mouse 4 Counterspell.
 
@@ -219,8 +219,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Ice Armor** (30) replaces **Frost Armor** as your armor spell until **Mage Armor** (34): half your mana regeneration then keeps going while you cast, so you drink less. Mage Armor gives no armor and no chill, so you eat a little more, and it still kills faster: 5% per kill at 34 and 4% at 40 in the fight lab (drinking 6.5 to 3.5 seconds a kill at 34).
 - **Arctic Reach** (34-35) lets you pull from farther away: one more **Frostbolt** before the mob arrives.
 - **Improved Frost Nova** (36-37) brings **Frost Nova** back 4 seconds sooner.
+- **Permafrost** (38) makes your chills last longer. **Cold Snap** (39, talent): it finishes the cooldown on your Frost spells, so **Frost Nova** is ready again. Press it when a mob reaches you with more than 8 seconds left on **Frost Nova** and 40% of its health or more: the fight lab's list does, about once in 50 kills at 40 and more rarely later.
 
-*Fight lab, seconds per kill: 33 at level 30, 32 at level 39. Presses per kill at level 30: Frostbolt 4.0, Ice Lance 1.6, Wand 1.1, Frost Nova 0.8, Fire Blast 0.6, Counterspell 0.2.*
+*Fight lab, seconds per kill: 31 at level 30, 31 at level 39. Presses per kill at level 30: Frostbolt 4.0, Ice Lance 1.7, Wand 1.1, Frost Nova 0.8, Fire Blast 0.6, Counterspell 0.2.*
 
 ## Levels 40-60: The finished rotation
 
@@ -228,7 +229,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Arcane Explosion at 46, 54; Arcane Missiles at 40, 48, 56; Blizzard at 44, 52, 60; Cone of Cold at 42, 50, 58; Fire Blast at 46, 54; Fire Ward at 40, 50, 60; Frost Nova at 40, 54; Frost Ward at 42, 52, 60; Frostbolt at 44, 50, 56, 60; Ice Lance at 42, 48, 56; Mana Shield at 44, 52, 60; Polymorph at 40, 60.
 
-**Talents:** 40-41 Wand Specialization, 42-43 Arcane Resilience, 44 Improved Channeling, 45-49 Arcane Concentration, 50-51 Arcane Subtlety, 52-53 Improved Channeling, 54 Arcane Resilience, 55-57 Arcane Meditation, 58-60 Incineration.
+**Talents:** 40-41 Wand Specialization, 42-43 Arcane Resilience, 44 Improved Channeling, 45-49 Arcane Concentration, 50-51 Arcane Subtlety, 52-53 Improved Channeling, 54 Arcane Resilience, 55-57 Arcane Meditation, 58-59 Incineration, 60 Accelerant.
 
 **Keys to set:** Shift+Q = Presence of Mind macro (at 53).
 
@@ -245,15 +246,16 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Arcane Concentration** (45-49) makes about one cast in ten free, and **Arcane Meditation** (55-57) keeps another half of your mana regeneration going while you cast: with **Mage Armor**, all of it.
 - **Mage Armor** stays on to 60: 2-3% faster per kill than **Ice Armor** at 46-50 in the fight lab, 1.4-2.5% at 56-60.
-- This build takes neither **Ice Barrier** nor **Cold Snap**. The hand-made Frost build on the spec page has both: **Ice Barrier** before every pull, **Cold Snap** to get a second **Frost Nova**.
+- This build takes no **Ice Barrier**: the hand-made Frost build on the spec page casts it before every pull. **Cold Snap** (39) came with the leveling filler pass of 2026-11-17, in place of Permafrost's second point: both measured nothing in the fight lab, and **Cold Snap** is a second **Frost Nova** when a pull goes wrong. **Incineration** stops at 2 points (58-59) and the last point goes to **Accelerant** (60), which helps only **Fireball** and **Frostfire Bolt**: the same pass, no loss either.
 
-*Fight lab, seconds per kill: 33 at level 40, 28 at level 50, 25 at level 60. Presses per kill at level 40: Frostbolt 4.3, Ice Lance 1.8, Wand 1.3, Frost Nova 0.8, Fire Blast 0.6, Counterspell 0.1.*
+*Fight lab, seconds per kill: 31 at level 40, 27 at level 50, 25 at level 60. Presses per kill at level 40: Frostbolt 4.3, Ice Lance 1.8, Wand 1.4, Frost Nova 0.9, Fire Blast 0.5, Counterspell 0.1.*
 
 ## Between fights
 
 - Drink your conjured water when you are below about 15% of your mana. That is the tuned rule: topping up earlier cost more time in the fight lab than the wand hits it saved.
 - **Evocation** (from 20) in place of a drink: whenever it is ready and you are under 15% mana, channel it instead of drinking (it gives back 70% to more than all of your mana, so at 40% part of it was lost: 0.6-1.1% faster per kill in the fight lab, 2026-11-16).
 - Eat when you are below 40% of your health (the tuned rule). Conjure both food and water yourself.
+- Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. **Evocation** is not a sit and brings no food. It was 4.0% faster per kill for this build in the fight lab (2026-11-16), and the tuned rules play it.
 - Visit the trainer every even level. **Frostbolt** alone has eleven ranks.
 
 ## Other ways to level this class
@@ -262,4 +264,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Pulling packs is a different game: the AoE Frost build on the Frost page gathers about four mobs, freezes them with **Frost Nova** and channels **Blizzard**. It wears **Ice Armor**: in pulls of four, Mage Armor measured 9-20% slower per kill, with more deaths.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-17: the stages are hand-kept in `_reference/data/level-guides/mage.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-18: the stages are hand-kept in `_reference/data/level-guides/mage.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

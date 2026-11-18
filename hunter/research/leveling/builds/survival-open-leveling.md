@@ -1,43 +1,42 @@
-# Survival — Leveling (open talent search) — 3/17/31
+# Survival — Leveling (open talent search) — 1/18/32
 
 *[Hunter](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 3/17/31 (Beast Mastery / Marksmanship / Survival) |
+| **Build** | 1/18/32 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Survival leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the melee-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (melee-dps). 
+The Survival leveling build the open leveling search found on 2026-11-18: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the melee-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (melee-dps). 
 
 ## Point allocation
 
-### Beast Mastery (3)
+### Beast Mastery (1)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Deadly Aspects** | 2/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 4% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 4% chance of increasing melee attack speed by 30% for 12 sec. |
-| **Endurance Training** | 1/5 | changed | Increases the Health and Armor of your pets by 3%. |
+| **Deadly Aspects** | 1/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 2% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 2% chance of increasing melee attack speed by 30% for 12 sec. |
 
-### Marksmanship (17)
+### Marksmanship (18)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
-| **Improved Stings** | 2/3 | **NEW** | Increases the damage of your Serpent Sting ability by 13%, reduces the cooldown of your Viper Sting ability by 4 sec, and increases the duration of your Scorpid Sting ability by 30 sec. |
-| **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
-| **Careful Aim** | 4/5 | **NEW** | Increases your Attack Power by 80% of your Intellect. |
+| **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
+| **Efficiency** | 4/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 12%. |
+| **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
 | **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 20. |
 
-### Survival (31)
+### Survival (32)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
-| **Deflection** | 1/5 | unchanged | Increases your Parry chance by 1%. |
+| **Deflection** | 2/5 | unchanged | Increases your Parry chance by 2%. |
 | **Savage Strikes** | 2/2 | changed | Increases the critical strike chance of all your melee abilities by 4%. |
 | **Survivalist** | 2/5 | changed | Increases your total Health by 4%. |
 | **Clever Traps** | 2/2 | unchanged | Increases the duration of Freezing and Frost trap effects by 30% and the damage of Immolation and Explosive trap effects by 30%. |
@@ -68,22 +67,25 @@ The Survival leveling build the open leveling search found on 2026-11-15: every 
 | 40-42 | Marksmanship | Careful Aim | 3 | 0/8/25 |
 | 43-47 | Survival | Lightning Reflexes | 5 | 0/8/30 |
 | 48-49 | Marksmanship | Improved Stings | 2 | 0/10/30 |
-| 50-51 | Beast Mastery | Deadly Aspects | 2 | 2/10/30 |
-| 52 | Beast Mastery | Endurance Training | 1 | 3/10/30 |
-| 53 | Marksmanship | Efficiency | 1 | 3/11/30 |
-| 54 | Survival | Strider Kick | 1 | 3/11/31 |
-| 55-57 | Marksmanship | Efficiency | 3 | 3/14/31 |
-| 58 | Marksmanship | Careful Aim | 1 | 3/15/31 |
-| 59 | Marksmanship | Efficiency | 1 | 3/16/31 |
-| 60 | Marksmanship | Trueshot Aura | 1 | 3/17/31 |
+| 50 | Beast Mastery | Deadly Aspects | 1 | 1/10/30 |
+| 51 | Survival | Deflection | 1 | 1/10/31 |
+| 52 | Marksmanship | Improved Stings | 1 | 1/11/31 |
+| 53 | Marksmanship | Efficiency | 1 | 1/12/31 |
+| 54 | Survival | Strider Kick | 1 | 1/12/32 |
+| 55-57 | Marksmanship | Efficiency | 3 | 1/15/32 |
+| 58-59 | Marksmanship | Careful Aim | 2 | 1/17/32 |
+| 60 | Marksmanship | Trueshot Aura | 1 | 1/18/32 |
 
 ## Core talents (priority order)
 
 1. **Resourcefulness** — +2.5 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Survivalist's Discipline** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Lethal Attacks** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Surefooted** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Efficiency** — +0.3 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Survivalist's Discipline** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Clever Traps** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Lethal Attacks** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Predator's Edge** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Improved Tracking** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Efficiency** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Surefooted** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -91,8 +93,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Survival Tactics to Efficiency at 53 (tie-break: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Rapid Killing to Careful Aim at 58 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Stings to Trueshot Aura at 60 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Deadly Aspects to Endurance Training at 52 (no loss: +0.1% seed 3, -0.0% seed 4, level-weighted time per kill).
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 21.12; opt-bm-leveling-leveling-aoe 24.58. The search simulated 43,753 builds.
+- 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Endurance Training to Improved Stings at 52 (tie-break: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Efficiency to Deterrence at 59 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Deterrence to Careful Aim at 59 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Deadly Aspects to Deflection at 51 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Survival Tactics to Efficiency at 53 (tie-break: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Rapid Killing to Careful Aim at 58 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Stings to Trueshot Aura at 60 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Deadly Aspects to Endurance Training at 52 (no loss: +0.1% seed 3, -0.0% seed 4, level-weighted time per kill).
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 20.98; opt-melee-dps-solo-60 22.11, opt-melee-dps-leveling-st 22.11, leveling-melee 22.20, opt-bm-leveling-leveling-aoe 24.57. The search simulated 60,489 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -102,7 +104,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/hunter>
-- <https://talentsforever.com/hunter/60/3-0053431-51022023025020215-12>
+- <https://talentsforever.com/hunter/60/21-0052540001-51022023015020215-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

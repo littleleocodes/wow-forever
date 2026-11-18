@@ -91,19 +91,19 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `elementa
 
 Elemental: Lightning Mastery on a fresh mob when ready, Lightning Bolts from range (the pull and while the mob walks in), then Flame Shock and Earth Shock on cooldown with Lightning Bolts between them while mana lasts (Chain Lightning on a single mob only as CL_SINGLE allows); a bolt in melee eats pushback (Eye of the Storm resists it); the weapon swings whenever nothing is cast. Lava Burst left the game on 2026-11-02 (it was cast on cooldown here).
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-03, on top of the priority below): drink below 15% mana; eat below 80% health. Together +1.3% time per kill saved for `opt-elemental-dps-leveling-st` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-17, on top of the priority below): eat below 90% health; IMBUE_TOP = rockbiter. Together +1.2% time per kill saved for `elemental-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/elemental-dps.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Lightning Bolt | 3.2 | 4.0 | 4.0 | 4.0 | 4.1 | 55% |
-| Melee | 1.1 | 1.6 | 1.5 | 1.6 | 1.6 | 5% |
-| Flame Shock | 0.8 | 0.8 | 0.9 | 0.9 | 0.9 | 14% |
-| Earth Shock | 0.4 | 0.8 | 0.8 | 0.8 | 0.7 | 11% |
-| Searing Totem | 0.6 | 0.7 | 0.6 | 0.6 | 0.6 | 4% |
+| Lightning Bolt | 3.1 | 4.1 | 4.0 | 4.0 | 4.1 | 56% |
+| Melee | 1.1 | 1.5 | 1.5 | 1.5 | 1.4 | 8% |
+| Flame Shock | 0.8 | 0.8 | 0.9 | 0.9 | 0.9 | 13% |
+| Searing Totem | 0.8 | 0.7 | 0.7 | 0.7 | 0.7 | 4% |
+| Earth Shock | 0.4 | 0.8 | 0.8 | 0.8 | 0.7 | 10% |
 | Lightning Shield | 0.5 | 0.5 | 0.5 | 0.5 | 0.5 | 8% |
-| Windfury | 0.0 | 0.5 | 0.6 | 0.6 | 0.5 | 2% |
+| Windfury | 0.0 | 0.5 | 0.5 | 0.0 | 0.0 | 0% |
 
 ## Notes
 

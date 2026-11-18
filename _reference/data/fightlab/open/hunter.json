@@ -9065,7 +9065,7 @@
     ],
     "why": null,
     "spec": "Hybrid Beast Mastery/Marksmanship",
-    "date": "2026-11-17"
+    "date": "2026-11-18"
    }
   },
   "mm-raid": {
@@ -17976,7 +17976,7 @@
     ],
     "why": null,
     "spec": "Marksmanship",
-    "date": "2026-11-17"
+    "date": "2026-11-18"
    }
   },
   "melee-dps": {
@@ -18730,6 +18730,46 @@
       "40": 23.16,
       "50": 24.62,
       "60": 23.1
+     }
+    },
+    "leveling-melee": {
+     "weighted": 22.2,
+     "levels": {
+      "20": 15.9,
+      "30": 19.8,
+      "40": 21.58,
+      "50": 23.23,
+      "60": 25.05
+     }
+    },
+    "opt-melee-dps-solo-60": {
+     "weighted": 22.11,
+     "levels": {
+      "20": 15.9,
+      "30": 19.8,
+      "40": 21.58,
+      "50": 23.23,
+      "60": 24.75
+     }
+    },
+    "opt-melee-dps-leveling-st": {
+     "weighted": 22.11,
+     "levels": {
+      "20": 15.9,
+      "30": 19.8,
+      "40": 21.58,
+      "50": 23.23,
+      "60": 24.75
+     }
+    },
+    "beast-survival-open-leveling": {
+     "weighted": 21.0,
+     "levels": {
+      "20": 15.9,
+      "30": 18.46,
+      "40": 21.08,
+      "50": 22.28,
+      "60": 22.86
      }
     }
    },
@@ -26981,7 +27021,14 @@
     ],
     "why": null,
     "spec": "Survival",
-    "date": "2026-11-17"
+    "date": "2026-11-18",
+    "kept": [
+     {
+      "id": "beast-survival-open-leveling",
+      "spec": "Hybrid Beast Mastery/Survival",
+      "why": "Beast-Survival's open build, kept: the melee-dps rotation's winner is another spec's; 21.00 s per kill in its race (levels 20-60), +5.3% faster than opt-melee-dps-solo-60"
+     }
+    ]
    }
   }
  },

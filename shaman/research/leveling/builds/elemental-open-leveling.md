@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Elemental leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the elemental-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (elemental-dps). 
+The Elemental leveling build the open leveling search found on 2026-11-17: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the elemental-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (elemental-dps). 
 
 ## Point allocation
 
@@ -20,8 +20,8 @@ The Elemental leveling build the open leveling search found on 2026-11-16: every
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Convection** | 5/5 | changed | Reduces the mana cost of your Shock, Lightning Bolt, and Chain Lightning spells by 10%. |
-| **Concussion** | 3/5 | changed | Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by 3%. |
-| **Reverberation** | 3/5 | changed | Reduces the cooldown of your Shock spells by 0.6 sec. |
+| **Concussion** | 2/5 | changed | Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by 2%. |
+| **Reverberation** | 4/5 | changed | Reduces the cooldown of your Shock spells by 0.8 sec. |
 | **Elemental Alacrity** | 3/3 | **NEW** | Reduces the cast time of your Lightning Bolt and Chain Lightning spells by 0.50 sec. |
 | **Call of Flame** | 3/3 | changed | Increases the damage done by your Fire Totems and by your Flame Shock and Fire Nova spells by 15%, as well as increases the duration of your Flame Shock spell by 9 sec. |
 | **Elemental Focus** | 1/1 | moved | Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
@@ -62,10 +62,10 @@ The Elemental leveling build the open leveling search found on 2026-11-16: every
 | 37-38 | Elemental | Call of Flame | 2 | 10/11/8 |
 | 39 | Elemental | Elemental Focus | 1 | 11/11/8 |
 | 40 | Elemental | Call of Flame | 1 | 12/11/8 |
-| 41-43 | Elemental | Concussion | 3 | 15/11/8 |
-| 44 | Elemental | Reverberation | 1 | 16/11/8 |
-| 45-47 | Elemental | Eye of the Storm | 3 | 19/11/8 |
-| 48 | Elemental | Reverberation | 1 | 20/11/8 |
+| 41-42 | Elemental | Concussion | 2 | 14/11/8 |
+| 43 | Elemental | Reverberation | 1 | 15/11/8 |
+| 44-46 | Elemental | Eye of the Storm | 3 | 18/11/8 |
+| 47-48 | Elemental | Reverberation | 2 | 20/11/8 |
 | 49-51 | Elemental | Lightning Overload | 3 | 23/11/8 |
 | 52 | Elemental | Call of Thunder | 1 | 24/11/8 |
 | 53 | Elemental | Reverberation | 1 | 25/11/8 |
@@ -74,14 +74,14 @@ The Elemental leveling build the open leveling search found on 2026-11-16: every
 
 ## Core talents (priority order)
 
-1. **Shamanistic Focus** — +3.3 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Elemental Alacrity** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Shamanistic Focus** — +3.1 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Elemental Alacrity** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
 3. **Lightning Overload** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
 4. **Convection** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Tidal Focus** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Elemental Fury** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Thundering Strikes** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Mindfulness** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Tidal Focus** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Elemental Fury** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Thundering Strikes** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Elemental Focus** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -89,9 +89,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Reverberation to Elemental Reach at 59 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).
-- 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Concussion to Reverberation at 44 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 28.54; . The search simulated 26,225 builds.
+- 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Concussion to Reverberation at 43 (gate: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill).
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 28.12; . The search simulated 47,381 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -101,7 +100,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/shaman>
-- <https://talentsforever.com/shaman/60/540333100301135-05003201-053-12>
+- <https://talentsforever.com/shaman/60/530333100302135-05003201-053-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

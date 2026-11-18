@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Arcane leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the arcane-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). 
+The Arcane leveling build the open leveling search found on 2026-11-17: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the arcane-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). 
 
 ## Point allocation
 
@@ -41,14 +41,12 @@ The Arcane leveling build the open leveling search found on 2026-11-16: every le
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Frost Warding** | 1/2 | changed | Increases the Armor and resistances granted by your Frost Armor and Ice Armor spells by 15%, gives your Frost Ward a 10% chance to negate the warded damage spell, and increases the amount absorbed by your Ice Barrier and Frost Ward by 10%. |
 | **Improved Frostbolt** | 3/5 | changed | Reduces the casting time of your Frostbolt spell by 0.3 sec. |
 | **Precision** | 2/3 | changed | Improves your chance to hit with all spells by 4%. |
-| **Ice Shards** | 2/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 40%. |
+| **Ice Shards** | 4/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 80%. |
 | **Improved Frost Nova** | 2/2 | unchanged | Reduces the cooldown of your Frost Nova spell by 4 sec. |
 | **Permafrost** | 2/3 | changed | Increases the duration of your Chill effects by 22% and reduces the target's speed by an additional 7%. |
 | **Frost Channeling** | 1/3 | moved | Reduces the mana cost of your Frost spells by 5% and reduces the threat caused by your Frost spells by 10%. |
-| **Improved Blizzard** | 1/3 | changed | Adds a Chill effect to your Blizzard spell. This effect lowers the target's movement speed by 15% for 1.5 sec. |
 | **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets. |
 | **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 
@@ -76,24 +74,23 @@ The Arcane leveling build the open leveling search found on 2026-11-16: every le
 | 45-47 | Frost | Improved Frostbolt | 3 | 33/0/5 |
 | 48 | Frost | Ice Shards | 1 | 33/0/6 |
 | 49-50 | Frost | Improved Frost Nova | 2 | 33/0/8 |
-| 51 | Frost | Frost Warding | 1 | 33/0/9 |
-| 52 | Frost | Ice Shards | 1 | 33/0/10 |
+| 51-52 | Frost | Ice Shards | 2 | 33/0/10 |
 | 53 | Frost | Ice Lance | 1 | 33/0/11 |
-| 54 | Frost | Improved Blizzard | 1 | 33/0/12 |
+| 54 | Frost | Ice Shards | 1 | 33/0/12 |
 | 55 | Frost | Frost Channeling | 1 | 33/0/13 |
 | 56-57 | Frost | Permafrost | 2 | 33/0/15 |
 | 58-60 | Frost | Shatter | 3 | 33/0/18 |
 
 ## Core talents (priority order)
 
-1. **Missile Barrage** — +4.4 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Arcane Blast** — +2.3 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Improved Channeling** — +1.8 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Arcane Mind** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Arcane Meditation** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Precision** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Arcane Concentration** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Arcane Instability** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Missile Barrage** — +4.0 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Arcane Blast** — +2.5 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Improved Channeling** — +2.1 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Arcane Concentration** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Arcane Meditation** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Arcane Mind** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Precision** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Arcane Instability** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -101,8 +98,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Blizzard to Frost Channeling at 55 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 29.11; arcane-leveling 36.41. The search simulated 53,708 builds.
+- 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Frost Warding to Ice Shards at 51 (gate: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Blizzard to Ice Shards at 54 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 27.13; arcane-leveling 33.97. The search simulated 53,708 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
@@ -113,7 +110,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/mage>
-- <https://talentsforever.com/mage/60/051205203100311531--1322022021003-12>
+- <https://talentsforever.com/mage/60/051205203100311531--1322022111003-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

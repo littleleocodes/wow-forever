@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Fire leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the fire-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (fire-leveling). 
+The Fire leveling build the open leveling search found on 2026-11-17: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the fire-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (fire-leveling). +1.1% faster per kill than fire-open-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -45,8 +45,8 @@ The Fire leveling build the open leveling search found on 2026-11-16: every lega
 | **Frost Warding** | 2/2 | changed | Increases the Armor and resistances granted by your Frost Armor and Ice Armor spells by 30%, gives your Frost Ward a 20% chance to negate the warded damage spell, and increases the amount absorbed by your Ice Barrier and Frost Ward by 20%. |
 | **Precision** | 3/3 | changed | Improves your chance to hit with all spells by 6%. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
-| **Frostbite** | 3/3 | moved | Gives your Chill effects a 15% chance to Freeze the target for 5 sec. |
 | **Improved Frost Nova** | 2/2 | unchanged | Reduces the cooldown of your Frost Nova spell by 4 sec. |
+| **Frost Channeling** | 3/3 | moved | Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%. |
 | **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets. |
 | **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 
@@ -61,9 +61,10 @@ The Fire leveling build the open leveling search found on 2026-11-16: every lega
 | 23-24 | Frost | Frost Warding | 2 | 0/11/4 |
 | 25 | Frost | Precision | 1 | 0/11/5 |
 | 26-27 | Frost | Improved Frost Nova | 2 | 0/11/7 |
-| 28-30 | Frost | Frostbite | 3 | 0/11/10 |
+| 28-30 | Frost | Ice Shards | 3 | 0/11/10 |
 | 31 | Frost | Ice Lance | 1 | 0/11/11 |
-| 32-35 | Frost | Ice Shards | 4 | 0/11/15 |
+| 32-34 | Frost | Frost Channeling | 3 | 0/11/14 |
+| 35 | Frost | Ice Shards | 1 | 0/11/15 |
 | 36-38 | Frost | Shatter | 3 | 0/11/18 |
 | 39 | Frost | Ice Shards | 1 | 0/11/19 |
 | 40 | Arcane | Wand Specialization | 1 | 1/11/19 |
@@ -81,14 +82,14 @@ The Fire leveling build the open leveling search found on 2026-11-16: every lega
 
 ## Core talents (priority order)
 
-1. **Ice Lance** — +4.6 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Shatter** — +3.9 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Ignite** — +1.8 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Master of Elements** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Precision** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Heating Up** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Ice Shards** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Incineration** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Ice Lance** — +3.5 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Shatter** — +2.8 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Heating Up** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Ignite** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Precision** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Master of Elements** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Improved Frost Nova** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Critical Mass** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -96,7 +97,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 35.98; fire-leveling 36.25, opt-fire-leveling-leveling-st 39.20. The search simulated 54,185 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 33.62; fire-open-leveling 33.99, fire-leveling 34.14, opt-fire-leveling-leveling-st 36.11. The search simulated 54,185 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
@@ -107,7 +108,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/mage>
-- <https://talentsforever.com/mage/60/1-55500201110133031-2035320001003-12>
+- <https://talentsforever.com/mage/60/1-55500201110133031-2035020301003-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

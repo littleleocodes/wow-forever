@@ -97,19 +97,19 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-lev
 
 Single-target leveling fights against normal mobs of your level: pull at max range, the mob walks in at 7 yd/s (slowed by chills), swings every 2 s once in melee (pushing casts back), Frost Nova when it arrives, a 2-second step back, Ice Lance/Frostbolt into the freeze, Fire Blast and wand to finish without overkill. Between fights: 2 s loot, 6 s travel, Evocation when low, conjured water below 35% mana, food below 65% health; a death costs 90 s. Every hit, miss, crit, partial resist, chill, freeze, proc and pushback is rolled.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-15, on top of the priority below): drop the rules on Frost Nova; Fireball only above 15% mana. Together +1.2% time per kill saved for `fire-leveling` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-17, on top of the priority below): MAGE_ARMOR = 1. Together +1.2% time per kill saved for `fire-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/fire-leveling.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Wand | 2.0 | 2.7 | 3.4 | 3.4 | 2.2 | 6% |
-| Fire Blast | 1.4 | 2.0 | 2.2 | 2.1 | 1.7 | 24% |
-| Ice Lance | 0.0 | 0.0 | 0.0 | 0.0 | 1.3 | 17% |
-| Fireball | 2.0 | 1.5 | 1.9 | 1.8 | 1.2 | 19% |
-| Pyroblast | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 18% |
-| Frost Nova | 0.8 | 0.9 | 0.9 | 0.8 | 0.8 | 2% |
-| Blast Wave | 0.0 | 0.2 | 0.2 | 0.2 | 0.1 | 2% |
+| Wand | 2.0 | 2.6 | 3.1 | 3.0 | 2.2 | 6% |
+| Fire Blast | 1.4 | 2.1 | 2.3 | 2.2 | 1.8 | 26% |
+| Fireball | 2.0 | 1.5 | 2.0 | 1.8 | 1.2 | 20% |
+| Ice Lance | 0.0 | 0.0 | 0.0 | 0.0 | 1.1 | 14% |
+| Pyroblast | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 19% |
+| Frost Nova | 0.8 | 0.8 | 0.9 | 0.8 | 0.8 | 2% |
+| Blast Wave | 0.0 | 0.2 | 0.2 | 0.2 | 0.2 | 3% |
 | Counterspell | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
 
 ## Notes

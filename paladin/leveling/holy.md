@@ -6,11 +6,11 @@
 
 **[Holy — Leveling into the raid build](../research/leveling/builds/holy-leveling.md)** (32/5/14) — [open the talent tree](https://talentsforever.com/paladin/60/54320215001101151-5-250300202-12)
 
-> 🔬 These are your **raid talents** ([Holy — Raid healing](../raid/holy.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 35 s per kill; own tree last: 35 s per kill; own tree first: 36 s per kill). A model of the beta, to check at launch.
+> 🔬 These are your **raid talents** ([Holy — Raid healing](../raid/holy.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 34 s per kill; own tree last: 34 s per kill; own tree first: 35 s per kill). A model of the beta, to check at launch.
 
-**Signature spells:** 73% of the damage at level 60 in the fight lab comes from the spec's core spells (Holy Shock, Judgement, melee, Seal of Righteousness; this build never casts Exorcism, Seal of Command) (the spec's rule: at least 60%; **Holy Shock** cast at level 60).
+**Signature spells:** 74% of the damage at level 60 in the fight lab comes from the spec's core spells (Holy Shock, Judgement, melee, Seal of Righteousness; this build never casts Exorcism, Seal of Command) (the spec's rule: at least 60%; **Holy Shock** cast at level 60).
 
-**Leveling as Holy or as Retribution?** This build takes 35 s per kill (level-weighted, 20-60), [Retribution](../leveling/retribution.md) 27 s: Holy is 31% slower. Your first Holy point comes at level 10. Level this way if you want to heal dungeons later on the way; otherwise level as Retribution and switch at 60 (a respec at a class trainer).
+**Leveling as Holy or as Retribution?** This build takes 34 s per kill (level-weighted, 20-60), [Retribution](../leveling/retribution.md) 27 s: Holy is 28% slower. Your first Holy point comes at level 10. Level this way if you want to heal dungeons later on the way; otherwise level as Retribution and switch at 60 (a respec at a class trainer).
 
 ## How to play
 
@@ -26,7 +26,7 @@
 4. **Hammer of Wrath** when the mob is below 20% health.
 5. **Judgement** and **Holy Strike** whenever ready. Against a single mob, no Consecration: the Holy list never casts it.
 
-**Between fights:** Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink only below a quarter of your mana, and eat if you are still below 80% of your health.
+**Between fights:** Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink only below 15% of your mana, and eat if you are still below 80% of your health. Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full.
 
 ## Why this rotation
 
@@ -40,7 +40,7 @@ Holy levels with its raid healing talents in the order that levels fastest, so R
 - **Benediction** (31-35) makes instants 10% cheaper, **Conviction** (36-38) adds 6% critical strike chance, **Deflection** (39-40) 2% parry, **Pursuit of Justice** (41-42) 15% movement speed, **Divine Intellect** (43-47) 10% Intellect, **Unyielding Faith** (48-49) 30% shorter fears and disorients, **Holy Power** (54-58) 10% a rank to the critical healing bonus of your Holy spells. The lab applies **Holy Power** to heals only: it does nothing for **Holy Shock** or **Holy Strike** damage.
 - **Hammer of Wrath** below 20% health from level 44 (the tuned rules do not skip it for this list). No **Consecration** against a single mob: the Holy list never casts it.
 - Heal in the fight once you drop below 40% health and the mob has more than a fifth left: **Holy Shock** on yourself (after **Divine Favor** if it is ready), **Divine Protection** below 30%, **Hammer of Justice**, then **Holy Light**; **Flash of Light** below a quarter, **Lay on Hands** below 15%. **Illumination** (five ranks: every critical heal refunds half its base cost), **Spiritual Focus** (70% of heals not pushed back), **Healing Light** (28-29 and 50, 12%) and **Infusion of Light** (52: a critical **Flash of Light** or **Holy Shock** makes your next **Holy Light** half a second faster) all feed these heals. Against same-level mobs the fight lab rarely needed them.
-- Drink below a quarter of your mana and eat if you are still below 80% of your health (the tuned rules of 2026-11-16: the list's own drinking default, and eating at 80% against its 65%); between fights heal back to 80% with **Holy Light** or **Flash of Light**.
+- Drink below 15% of your mana and eat if you are still below 80% of your health, and whenever you sit down for one, take the other too: no extra time (the tuned rules: eating at 80% since 2026-11-16, against the list's own 65%; drinking at 15% and both together since 2026-11-17, against its quarter). Between fights heal back to 80% with **Holy Light** or **Flash of Light**.
 
 **Caveats**
 
@@ -88,13 +88,13 @@ One point per level from 10, in this order:
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
 | 20 | 22 | 17 |
-| 30 | 30 | 19 |
-| 40 | 36 | 25 |
-| 50 | 38 | 30 |
-| 60 | 39 | 30 |
+| 30 | 29 | 19 |
+| 40 | 35 | 24 |
+| 50 | 38 | 29 |
+| 60 | 38 | 29 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-17 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-18 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

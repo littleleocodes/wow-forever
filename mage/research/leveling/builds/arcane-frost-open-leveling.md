@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the barrage-frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). 
+The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling search found on 2026-11-17: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the barrage-frost-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (frost-leveling). 
 
 ## Point allocation
 
@@ -83,14 +83,14 @@ The Arcane-Frost (an Arcane/Frost hybrid) leveling build the open leveling searc
 
 ## Core talents (priority order)
 
-1. **Shatter** — +2.5 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Ice Lance** — +2.3 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Missile Barrage** — +2.1 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Shatter** — +2.3 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Ice Lance** — +2.2 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Missile Barrage** — +2.0 s per kill at level 60 without it (removal, 3,000 fights).
 4. **Improved Frostbolt** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Frostbite** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Ice Shards** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Precision** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Arctic Reach** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Ice Shards** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Frostbite** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Precision** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Fingers of Frost** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -98,7 +98,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 27.79; opt-frost-leveling-leveling-st 28.91. The search simulated 56,559 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 26.67; opt-frost-leveling-leveling-st 27.50. The search simulated 56,559 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)

@@ -4,7 +4,7 @@
 
 What a Destruction warlock presses from level 1 to 60, stage by stage. Destruction levels as a nuker behind the Voidwalker (from 10): **Shadow Bolt** and **Immolate**, **Shadowburn** (31) to finish and **Conflagrate** (32) on its cooldown. No Affliction dots, no **Fear** and no **Drain Life**: the tuned rules of 2026-11-07 level faster without them. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 6/11/34 ([open the talent tree](https://talentsforever.com/warlock/60/15-00050321-2050305133111351-12)), the one on the [Destruction leveling page](destruction.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 6/11/34 ([open the talent tree](https://talentsforever.com/warlock/60/15-00051311-2050305133111351-12)), the one on the [Destruction leveling page](destruction.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -112,7 +112,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Drain Life** (14) and **Searing Pain** (18) are not part of this list: the tuned rules measured faster kills without them.
 - **Demon Armor** (20) replaces **Demon Skin**. **Rain of Fire** (20) is for packs: one mob at a time never needs it.
 
-*Fight lab, seconds per kill: 23 at level 10, 31 at level 20, 40 at level 30. Presses per kill at level 10: Shadow Bolt 3.2, Torment 2.4, Wand 2.3, Immolate 1.0.*
+*Fight lab, seconds per kill: 23 at level 10, 30 at level 20, 39 at level 30. Presses per kill at level 10: Shadow Bolt 3.2, Torment 2.4, Wand 2.3, Immolate 1.0.*
 
 ## Level 31: Shadowburn
 
@@ -132,7 +132,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Shadowburn** costs a Soul Shard and gives it back when the mob dies within 8 seconds, so a killing **Shadowburn** is free.
 
-*Fight lab, seconds per kill: 44 at level 31. Presses per kill at level 31: Shadow Bolt 4.5, Wand 4.5, Torment 3.8, Immolate 1.0, Shadowburn 1.0, Life Tap 0.1.*
+*Fight lab, seconds per kill: 42 at level 31. Presses per kill at level 31: Shadow Bolt 4.6, Wand 4.4, Torment 3.7, Immolate 1.1, Shadowburn 1.0.*
 
 ## Levels 32-39: Conflagrate
 
@@ -160,7 +160,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Shadow and Flame** (35-39): at 5 points (39) **Conflagrate** no longer uses up **Immolate**, so cast it whenever it is ready; it also adds 20% to your Shadow damage for 20 seconds.
 - **Pyroclasm** (33) and **Bane of Havoc** (34) are tier points before **Shadow and Flame**: this list casts no **Soul Fire** and fights one mob at a time, so neither does anything here.
 
-*Fight lab, seconds per kill: 45 at level 32, 47 at level 39. Presses per kill at level 32: Shadow Bolt 4.7, Torment 3.7, Wand 3.4, Immolate 1.1, Shadowburn 1.0, Conflagrate 0.4, Life Tap 0.1.*
+*Fight lab, seconds per kill: 43 at level 32, 45 at level 39. Presses per kill at level 32: Shadow Bolt 4.6, Torment 3.7, Wand 3.4, Immolate 1.0, Shadowburn 1.0, Conflagrate 0.4, Life Tap 0.1.*
 
 ## Levels 40-41: Conflagrate on cooldown, the wand on a burning mob
 
@@ -187,7 +187,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Fire and Brimstone** (41-43) adds 25% critical strike chance to **Conflagrate**.
 - **Howl of Terror** (40) fears every mob near you: the escape from a pull that brings friends (Shift+F).
 
-*Fight lab, seconds per kill: 42 at level 40. Presses per kill at level 40: Wand 10.6, Torment 4.2, Conflagrate 1.8, Shadow Bolt 1.2, Immolate 1.1, Shadowburn 1.0, Create Healthstone 0.1.*
+*Fight lab, seconds per kill: 40 at level 40. Presses per kill at level 40: Wand 10.7, Torment 4.2, Conflagrate 1.8, Shadow Bolt 1.2, Immolate 1.1, Shadowburn 1.0, Create Healthstone 0.1.*
 
 ## Levels 42-60: Death Coil
 
@@ -195,7 +195,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Banish at 48; Conflagrate at 48, 54, 60; Death Coil at 50, 58; Drain Soul at 52; Fear at 56; Health Funnel at 44, 52, 60; Howl of Terror at 54; Immolate at 50, 60; Life Tap at 46, 56; Rain of Fire at 46, 58; Shadow Bolt at 44, 52, 60; Shadow Ward at 42, 52, 60; Shadowburn at 48, 56; Torment at 50, 60.
 
-**Talents:** 42-43 Fire and Brimstone, 44 Improved Life Tap, 45-49 Suppression, 50-54 Unholy Power, 55-57 Improved Voidwalker, 58 Demonic Energies, 59-60 Fel Vitality.
+**Talents:** 42-43 Fire and Brimstone, 44 Improved Life Tap, 45-49 Suppression, 50-54 Unholy Power, 55-57 Improved Voidwalker, 58 Demonic Energies, 59 Fel Vitality, 60 Demonic Aegis.
 
 **Keys to set:** F = Death Coil.
 
@@ -212,14 +212,15 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** A mob on you: **Shadowburn** or **Conflagrate** if ready, otherwise wand it until the Voidwalker's taunt takes it back. Your Healthstone below 35% health.
 
 - **Life Tap** in a fight only when you are short of mana and above 60% health: rare from 40, since the wand costs nothing.
-- **Improved Life Tap** (44) adds 20% to each **Life Tap**. **Suppression** (45-49) gives 5% hit and cuts your threat by 20%, so the Voidwalker keeps the mob. From 50 to 60, **Unholy Power**, **Improved Voidwalker**, **Demonic Energies** and **Fel Vitality** make the Voidwalker hit harder and last longer.
+- **Improved Life Tap** (44) adds 10% to each **Life Tap**. **Suppression** (45-49) gives 5% hit and cuts your threat by 20%, so the Voidwalker keeps the mob. From 50 to 59, **Unholy Power**, **Improved Voidwalker**, **Demonic Energies** and **Fel Vitality** make the Voidwalker hit harder and last longer, and **Demonic Aegis** (60) makes **Demon Armor** 15% stronger.
 
-*Fight lab, seconds per kill: 41 at level 42, 41 at level 50, 40 at level 60. Presses per kill at level 42: Wand 10.4, Torment 4.1, Conflagrate 1.7, Shadow Bolt 1.2, Immolate 1.1, Shadowburn 1.0, Death Coil 0.2, Create Healthstone 0.1.*
+*Fight lab, seconds per kill: 40 at level 42, 41 at level 50, 40 at level 60. Presses per kill at level 42: Wand 10.4, Torment 4.0, Conflagrate 1.7, Shadow Bolt 1.2, Immolate 1.1, Shadowburn 1.0, Death Coil 0.2.*
 
 ## Between fights
 
 - **Life Tap** back to about 70% mana while your health stays above 60%. Your health comes back while you rest, and the Voidwalker takes the next mob.
 - Eat only below 40% of your health (the tuned rule of 2026-11-07). Drink only below 15% of your mana, when you are too hurt to **Life Tap**.
+- Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. It was 2.5% faster per kill for this build in the fight lab (2026-11-16), and the tuned rules play it.
 - Heal a Voidwalker below 60% of its health with **Consume Shadows** (not usable in a fight), or with **Health Funnel** when it is below half.
 - Keep two or three Soul Shards: **Drain Soul** a dying mob for one. **Summon Voidwalker** and **Create Healthstone** use one each; a killing **Shadowburn** gives its shard back.
 - Visit the trainer every even level for new ranks of **Shadow Bolt** and **Immolate**.
@@ -229,4 +230,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Demonology and Affliction level with lists of their own: their guides are in this folder, and the leveling index ranks the specs by time per kill.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-17: the stages are hand-kept in `_reference/data/level-guides/warlock.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-18: the stages are hand-kept in `_reference/data/level-guides/warlock.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

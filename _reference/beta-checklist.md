@@ -26,7 +26,7 @@ Global checks: respec cost schedule in Forever (the planner assumes 1g then +5g,
 
 Plan: **feral-cat-dps -> level-30 build (0/21/0)** (from `druid/leveling/respec-plan.md`)
 
-- 10-14 Ferocity x5; 15-17 Thick Hide x3; 18-19 Feral Swiftness x2; 20-21 Sharpened Claws x2; 22-23 Savage Fury x2; 24 Furor; 25-27 Predatory Strikes x3; 28-29 Blood Frenzy x2; 30 Leader of the Pack
+- 10-14 Ferocity x5; 15-17 Thick Hide x3; 18-19 Feral Swiftness x2; 20-21 Sharpened Claws x2; 22-23 Savage Fury x2; 24 Furor; 25-27 Predatory Strikes x3; 28-29 Blood Frenzy x2
 
 Log per level bracket: kills per hour, deaths, drink/eat time; compare with the alternative plans on the same page.
 
@@ -99,9 +99,9 @@ Models: bm-leveling, mm-raid, mm-lonewolf-raid, melee-dps. Same mob, same gear, 
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 - An open-search Beast-Marks leveling build: check it while leveling at launch.
 - An open-search Marksmanship leveling build: check it while leveling at launch.
+- An open-search Survival leveling build: check it while leveling at launch.
 - An open-search Beast-Survival leveling build: check it while leveling at launch.
 - An open-search Beast Mastery leveling build: check it while leveling at launch.
-- An open-search Survival leveling build: check it while leveling at launch.
 
 ## Mage
 
@@ -195,11 +195,11 @@ Models: holy-heal, ret-dps, prot-tank. Same mob, same gear, ~10 kills each, note
 - Holy Strike: level learned, damage and cooldown (Sacred Arbiter and Improved Holy Strike depend on it).
 - Improved Seals rank scaling (5% read at rank 1).
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
-- Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 - An open-search Shockadin leveling build: check it while leveling at launch.
 - An open-search Protection leveling build: check it while leveling at launch.
 - An open-search Prot-Ret leveling build: check it while leveling at launch.
+- Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
+- Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 
 ## Priest
 
@@ -336,8 +336,8 @@ Models: resto-heal, elemental-dps, enhancement-dps. Same mob, same gear, ~10 kil
 - Two-hander / dual-wield availability for shamans.
 - Mental Dexterity and Mental Quickness scaling at max rank (only rank 1 read).
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- An open-search Enhancement leveling build: check it while leveling at launch.
 - An open-search Elemental leveling build: check it while leveling at launch.
+- An open-search Enhancement leveling build: check it while leveling at launch.
 - Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 
 ## Warlock

@@ -92,7 +92,7 @@ What this build casts per kill ([report](../fightlab/feral-cat-dps.md), all leve
 
 | Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|---|
-| Melee | 5.0 | 12.0 | 13.8 | 15.6 | 15.0 | 16.5 | 25% |
+| Melee | 5.0 | 12.0 | 13.8 | 15.6 | 15.0 | 16.6 | 25% |
 | Claw | 0.0 | 4.7 | 3.7 | 3.0 | 2.9 | 3.1 | 17% |
 | Rake | 0.0 | 0.0 | 1.7 | 1.7 | 1.7 | 1.9 | 15% |
 | Ravage | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 9% |
@@ -102,7 +102,7 @@ What this build casts per kill ([report](../fightlab/feral-cat-dps.md), all leve
 | Cat Form | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Enrage | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Demoralizing Roar | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Maul | 4.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Maul | 3.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Bash | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes

@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Prot-Ret (a Protection/Retribution hybrid) leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the ret-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). +2.7% faster per kill than leveling-retribution, the fastest of our leveling builds in that race.
+The Prot-Ret (a Protection/Retribution hybrid) leveling build the open leveling search found on 2026-11-17: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the ret-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (ret-dps). +2.6% faster per kill than leveling-retribution, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -80,7 +80,7 @@ The Prot-Ret (a Protection/Retribution hybrid) leveling build the open leveling 
 
 ## Core talents (priority order)
 
-1. **Sanctified Judgement** — +3.2 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Sanctified Judgement** — +2.7 s per kill at level 60 without it (removal, 3,000 fights).
 2. **Conviction** — +2.5 s per kill at level 60 without it (removal, 3,000 fights).
 3. **Vengeance** — +1.6 s per kill at level 60 without it (removal, 3,000 fights).
 4. **Swift Judgement** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
@@ -96,7 +96,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Notes
 
 - 2026-11-15: by hand, Redoubt to Sacred Duty at 49, 50: Redoubt only adds block, which needs a shield, and this build fights with a two-hander; Sacred Duty holds the row to Templar's Bulwark open as well and takes 30 seconds a point off Divine Shield, Divine Protection and Templar's Bulwark (the fight lab measures the swap at 0.00%). Earlier: 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Deflection to Improved Seals at 59 (tie-break: -0.3% seed 3, -0.2% seed 4, level-weighted time per kill).
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 25.88; leveling-retribution 26.57, opt-ret-dps-leveling-st 26.77. The search simulated 47,144 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 25.89; leveling-retribution 26.57, opt-ret-dps-leveling-st 26.77. The search simulated 47,144 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)

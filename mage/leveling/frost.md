@@ -4,7 +4,7 @@
 
 **Leveling from level 1?** [The rotation level by level](frost-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Frost — Leveling](../research/leveling/builds/frost-open-leveling.md)** (18/3/30) — [open the talent tree](https://talentsforever.com/mage/60/2332050000003-3-0525322301203002-12)
+**[Frost — Leveling](../research/leveling/builds/frost-open-leveling.md)** (18/3/30) — [open the talent tree](https://talentsforever.com/mage/60/2332050000003-21-0525321301203012-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Frost), which stays below as the alternative. A model of the beta, to check at launch.
 
@@ -12,7 +12,7 @@
 
 ## How to play
 
-**Not in this build:** **Cold Snap**, **Ice Barrier** are talents this build does not take: where a line below names them, that part does not apply. The fight lab played the build without them.
+**Not in this build:** **Ice Barrier** is a talent this build does not take: where a line below names it, that part does not apply. The fight lab played the build without it.
 
 **Before the fight:** **Frost Armor** (**Ice Armor** from level 30, **Mage Armor** from 34) and **Arcane Intellect** up; **Ice Barrier** before each pull if your build has it. Pull from as far away as you can.
 
@@ -24,11 +24,11 @@
 4. Below a fifth of the mob's health: **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand. No Cone of Cold at all.
 5. **Counterspell** a mob that casts spells.
 
-**Between fights:** Drink your conjured water below 15% of your mana (the tuned rule), **Evocation** in place of a drink when it is ready and you are under 15% mana, eat below 40% of your health (the tuned rule).
+**Between fights:** Drink your conjured water below 15% of your mana (the tuned rule), **Evocation** in place of a drink when it is ready and you are under 15% mana, eat below 40% of your health (the tuned rule). Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full. **Evocation** is not a sit and brings no food.
 
 ## Why this rotation
 
-Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as it walks in, **Frost Nova** freezes it when it arrives, you step back, and **Ice Lance** hits the frozen target for four times its damage with **Shatter**'s crit chance. Frost points first (**Ice Lance** at 20, **Shatter** complete by 29, **Fingers of Frost** at 30-31, the rest of the Frost tree to 39), then the Arcane mana talents from 40 (**Arcane Concentration** by 49, **Arcane Meditation** by 57), **Incineration** last (58-60). In the open leveling search's 20-60 race of 2026-11-16 this build took about 28.9 seconds per kill, level-weighted; the page's numbers table has each level.
+Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as it walks in, **Frost Nova** freezes it when it arrives, you step back, and **Ice Lance** hits the frozen target for four times its damage with **Shatter**'s crit chance. Frost points first (**Ice Lance** at 20, **Shatter** complete by 29, **Fingers of Frost** at 30-31, the rest of the Frost tree to 38 and **Cold Snap** at 39), then the Arcane mana talents from 40 (**Arcane Concentration** by 49, **Arcane Meditation** by 57), **Incineration** (58-59) and a point of **Accelerant** (60) last. In the open leveling search's 20-60 race of 2026-11-16 this build took about 28.9 seconds per kill, level-weighted; the page's numbers table has each level.
 
 **Why it works**
 
@@ -41,16 +41,16 @@ Frost levels by slowing, freezing and shattering: **Frostbolt** slows the mob as
 
 **Caveats**
 
-- This build takes neither Cold Snap nor Ice Barrier: skip the list's lines for them. The hand-made build under Other builds has both.
-- This is the open leveling search's 18/3/30 winner: **Improved Frostbolt** at 5 points and **Improved Channeling** instead of an earlier version's Missile Barrage and Magic Absorption. The leveling filler pass of 2026-11-15, under **Mage Armor**, moved the Frost Warding point to **Permafrost** at 38 and Arcane Impact to **Arcane Subtlety** at 54.
+- This build takes **Cold Snap** (39) but no Ice Barrier: skip the list's Ice Barrier line. The hand-made build under Other builds has both.
+- This is the open leveling search's 18/3/30 winner: **Improved Frostbolt** at 5 points and **Improved Channeling** instead of an earlier version's Missile Barrage and Magic Absorption. The leveling filler pass of 2026-11-15, under **Mage Armor**, moved the Frost Warding point to **Permafrost** at 38 and Arcane Impact to **Arcane Subtlety** at 54. The pass of 2026-11-17 moved Permafrost's second point to **Cold Snap** (39) and **Incineration**'s third to **Accelerant** (60): neither cost anything in the fight lab.
 - **Cone of Cold** stays out of single pulls: the tuned rules switch it off (kills measured faster without).
-- Drink below 15% of your mana (the tuned rule); **Evocation** in place of that drink, whenever it is ready (under 15% mana); eat below 40% of your health (the tuned rules).
+- Drink below 15% of your mana (the tuned rule); **Evocation** in place of that drink, whenever it is ready (under 15% mana); eat below 40% of your health (the tuned rules). Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17).
 - Armor: **Mage Armor** from 34 (the tuned rules of 2026-11-15). It keeps half your mana regeneration going while you cast, so you drink less: 4-5% faster per kill at 34-40 in the fight lab, 2-3% at 46-50, 1.4-2.5% at 56-60, though you eat a little more without armor. Before 34, **Frost Armor** and **Ice Armor** can chill a mob that hits you, another roll for **Frostbite** to freeze it; **Mage Armor** does not.
 - Pulls of several mobs are a different game: the AoE build under Other builds gathers about four, freezes them with **Frost Nova** and uses **Blizzard** and **Cone of Cold**, in **Ice Armor** (in pulls of four, Mage Armor measured 9-20% slower per kill, with more deaths).
 
 **When to change it**
 
-- If **Frost Nova** is on cooldown when the mob arrives, keep casting **Frostbolt**; a build with Cold Snap resets **Frost Nova** instead when it has more than 8 seconds left and the mob still has 40% of its health.
+- If **Frost Nova** is on cooldown when the mob arrives, **Cold Snap** (from 39) resets it when it has more than 8 seconds left and the mob still has 40% of its health; otherwise keep casting **Frostbolt**.
 - Low on mana in a fight: let an **Ice Lance** into the freeze or the wand finish a nearly dead mob rather than start a **Frostbolt**.
 
 ## Talents while leveling
@@ -73,7 +73,8 @@ One point per level from 10, in this order:
 | 32-33 | Ice Shards (Frost) | 2 |
 | 34-35 | Arctic Reach (Frost) | 2 |
 | 36-37 | Improved Frost Nova (Frost) | 2 |
-| 38-39 | Permafrost (Frost) | 2 |
+| 38 | Permafrost (Frost) | 1 |
+| 39 | Cold Snap (Frost) | 1 |
 | 40-41 | Wand Specialization (Arcane) | 2 |
 | 42-43 | Arcane Resilience (Arcane) | 2 |
 | 44 | Improved Channeling (Arcane) | 1 |
@@ -82,21 +83,22 @@ One point per level from 10, in this order:
 | 52-53 | Improved Channeling (Arcane) | 2 |
 | 54 | Arcane Resilience (Arcane) | 1 |
 | 55-57 | Arcane Meditation (Arcane) | 3 |
-| 58-60 | Incineration (Fire) | 3 |
+| 58-59 | Incineration (Fire) | 2 |
+| 60 | Accelerant (Fire) | 1 |
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
 | 20 | 27 | 15 |
-| 30 | 33 | 20 |
-| 40 | 33 | 22 |
-| 50 | 28 | 21 |
+| 30 | 32 | 19 |
+| 40 | 32 | 21 |
+| 50 | 27 | 21 |
 | 60 | 25 | 19 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
-**Points that do nothing for this spec:** **Improved Channeling** (3) only counts toward the points the tree needs before **Arcane Meditation**.
+**Points that do nothing for this spec:** **Improved Channeling** (3) only counts toward the points the tree needs before **Arcane Meditation**; **Accelerant** (1) opens nothing and could go to any talent.
 
 ## Other builds of this spec
 
@@ -104,5 +106,5 @@ One point per level from 10, in this order:
 - [Frost (optimized, AoE pulls)](../research/leveling/builds/opt-frost-aoe-leveling-aoe.md) (7/3/41, 34 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/mage/60/2120002-3-242502333121331231-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-17 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-18 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

@@ -4,7 +4,7 @@
 
 What a Marksmanship hunter presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. The cat still tanks, but more of the damage is your own: **Serpent Sting** on every mob, **Aimed Shot** on its cooldown from 20, **Arcane Shot** to finish below 35% of the mob's health and **Auto Shot** in between. The build fills Marksmanship to 30 points by level 39, then puts the rest into the pet. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 21/30/0 ([open the talent tree](https://talentsforever.com/hunter/60/51220005050001-005355200101305--12)), the one on the [Marksmanship leveling page](marksmanship.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 20/29/2 ([open the talent tree](https://talentsforever.com/hunter/60/5122000505-005355200101304-2-12)), the one on the [Marksmanship leveling page](marksmanship.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -251,7 +251,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Aimed Shot at 36; Arcane Shot at 36; Mend Pet at 36; Mongoose Bite at 30; Raptor Strike at 32; Scare Beast at 30; Serpent Sting at 34; Wing Clip at 38.
 
-**Talents:** 30 Rapid Recuperation, 31 Efficiency, 32-34 Barrage, 35-39 Ranged Weapon Specialization.
+**Talents:** 30 Rapid Recuperation, 31 Efficiency, 32-34 Barrage, 35-38 Ranged Weapon Specialization, 39 Improved Tracking.
 
 **Keys to set:** F = Feign Death; Shift+R = Explosive Trap (at 34).
 
@@ -270,7 +270,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** **Mend Pet** when the pet drops below a third of its health. A mob on you while it has more than 35% of its health: **Feign Death** sends it back to the pet. A weaker mob, or **Feign Death** on cooldown: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip**.
 
 - The tuned rules keep **Feign Death** for a mob with more than 35% of its health. A weaker one, the fight lab finishes in melee: that measured faster.
-- **Rapid Recuperation** (30): after **Serpent Sting**, a quarter of your mana regeneration continues while casting for 15 seconds (half after you spend a **Rapid Killing**). **Barrage** (32-34): **Aimed Shot**, **Multi-Shot** and **Volley** do 15% more damage. **Ranged Weapon Specialization** (35-39): 5% more damage with your bow.
+- **Rapid Recuperation** (30): after **Serpent Sting**, a quarter of your mana regeneration continues while casting for 15 seconds (half after you spend a **Rapid Killing**). **Barrage** (32-34): **Aimed Shot**, **Multi-Shot** and **Volley** do 15% more damage. **Ranged Weapon Specialization** (35-38): 4% more damage with your bow. **Improved Tracking** (39, its second point at 60): 1% more damage a point against the creature type you track.
 - **Explosive Trap** (34) is for packs.
 
 *Fight lab, seconds per kill: 19 at level 30, 22 at level 39. Presses per kill at level 30: Claw 3.9, Auto Shot 3.3, Growl 1.4, Serpent Sting 1.0, Hunter's Mark 1.0, Bite 1.0, Aimed Shot 1.0, Arcane Shot 1.0, Melee 0.2.*
@@ -281,7 +281,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Aimed Shot at 44, 52, 60; Arcane Shot at 44, 52, 60; Explosive Trap at 44, 54; Freezing Trap at 40, 60; Hunter's Mark at 40, 58; Mend Pet at 44, 52, 60; Mongoose Bite at 44, 58; Raptor Strike at 40, 48, 56; Scare Beast at 46; Serpent Sting at 42, 50, 58, 60; Volley at 50, 58; Wing Clip at 60.
 
-**Talents:** 40-44 Deadly Aspects, 45-46 Focused Fire, 47 Endurance Training, 48-49 Improved Aspect of the Monkey, 50-54 Unleashed Fury, 55-59 Ferocity, 60 Bestial Discipline.
+**Talents:** 40-44 Deadly Aspects, 45-46 Focused Fire, 47 Endurance Training, 48-49 Improved Aspect of the Monkey, 50-54 Unleashed Fury, 55-59 Ferocity, 60 Improved Tracking.
 
 **Keys to set:** Shift+3 = Volley.
 
@@ -300,7 +300,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** **Mend Pet** when the pet drops below a third of its health. A mob on you while it has more than 35% of its health: **Feign Death** sends it back to the pet. A weaker mob, or **Feign Death** on cooldown: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip**.
 
 - **Deadly Aspects** (40-44): while **Aspect of the Hawk** is on, **Auto Shot** sometimes speeds up your shooting by 30% for 12 seconds.
-- **Focused Fire** (45-46), **Endurance Training** (47), **Unleashed Fury** (50-54), **Ferocity** (55-59) and **Bestial Discipline** (60) go to the pet: more damage and crit, health and focus. **Improved Aspect of the Monkey** (48-49) holds the points the row needs: a ranged hunter has no use for the Monkey.
+- **Focused Fire** (45-46), **Endurance Training** (47), **Unleashed Fury** (50-54) and **Ferocity** (55-59) go to the pet: more damage and crit, and health. The last point (60) is **Improved Tracking**'s second. **Improved Aspect of the Monkey** (48-49) holds the points the row needs: a ranged hunter has no use for the Monkey.
 - **Volley** (40) is a channel for packs, with **Multi-Shot**.
 
 *Fight lab, seconds per kill: 23 at level 40, 24 at level 50, 25 at level 60. Presses per kill at level 40: Claw 4.8, Auto Shot 4.2, Growl 2.0, Bite 1.2, Serpent Sting 1.0, Aimed Shot 1.0, Hunter's Mark 1.0, Arcane Shot 1.0, Melee 0.3, Feign Death 0.2, Raptor Strike 0.1.*
@@ -308,7 +308,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 ## Between fights
 
 - Mend the pet below half its health, drink below 15% of your mana, eat below 65% of your health. The tuned rules drink this late: fewer stops measured slightly faster. Feed the pet when it sulks, and revive it before the next pull if it died.
-- Keep **Aspect of the Hawk** on, and **Trueshot Aura** from 25.
+- Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. This build seldom sits down, so it saves almost nothing (under 0.3% per kill in the fight lab, 2026-11-16), but it never costs time.
+- Keep **Aspect of the Hawk** on, and **Trueshot Aura** from 25. From 39, keep the right tracking on: **Improved Tracking** only pays for the mobs you track.
 - Visit the trainer every even level: **Serpent Sting**, **Arcane Shot** and **Aimed Shot** have many ranks.
 
 ## Other ways to level this class
@@ -317,4 +318,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Beast Mastery and Beast-Marks shoot with the same pet, give it more talents and never cast **Arcane Shot**: [Beast Mastery](beast-mastery-by-level.md), [Beast-Marks](beast-marks-by-level.md).
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-17: the stages are hand-kept in `_reference/data/level-guides/hunter.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-18: the stages are hand-kept in `_reference/data/level-guides/hunter.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

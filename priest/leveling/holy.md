@@ -6,11 +6,11 @@
 
 **[Holy — Leveling into the raid build](../research/leveling/builds/holy-leveling.md)** (22/29/0) — [open the talent tree](https://talentsforever.com/priest/60/005305001330011-3350110303012043--12)
 
-> 🔬 These are your **raid talents** ([Holy — Raid Healer](../raid/holy.md)), taken in the order that levels fastest: the fight lab raced three orders to them (own tree last: 59 s per kill; stats model's order: 59 s per kill; own tree first: 60 s per kill). A model of the beta, to check at launch.
+> 🔬 These are your **raid talents** ([Holy — Raid Healer](../raid/holy.md)), taken in the order that levels fastest: the fight lab raced three orders to them (own tree last: 56 s per kill; stats model's order: 57 s per kill; own tree first: 58 s per kill). A model of the beta, to check at launch.
 
-**Signature spells:** 51% of the damage at level 60 in the fight lab comes from the spec's core spells (Smite, Holy Fire) (the spec's rule: at least 40%; **Smite**, **Holy Fire** cast at level 60).
+**Signature spells:** 45% of the damage at level 60 in the fight lab comes from the spec's core spells (Smite, Holy Fire) (the spec's rule: at least 40%; **Smite**, **Holy Fire** cast at level 60).
 
-**Leveling as Holy or as Shadow?** This build takes 59 s per kill (level-weighted, 20-60), [Shadow](../leveling/shadow.md) 24 s: Holy is about 2.4 times as slow. The fastest order puts its first point into Holy at level 32: the damage talents come first. Level this way if you want to heal dungeons later on the way; otherwise level as Shadow and switch at 60 (a respec at a class trainer).
+**Leveling as Holy or as Shadow?** This build takes 56 s per kill (level-weighted, 20-60), [Shadow](../leveling/shadow.md) 24 s: Holy is about 2.4 times as slow. The fastest order puts its first point into Holy at level 32: the damage talents come first. Level this way if you want to heal dungeons later on the way; otherwise level as Shadow and switch at 60 (a respec at a class trainer).
 
 ## How to play
 
@@ -20,12 +20,12 @@
 
 1. Open with **Holy Fire** from range, and cast it again once its burn has ended while the mob has more than 40% of its health (in melee only while your shield holds).
 2. **Shadow Word: Pain** next, and again when it runs out while the mob has more than 30% of its health.
-3. **Mind Blast** whenever it is ready while you have more than 30% mana and the mob more than 10% of its health (also to finish a mob one cast will kill).
+3. **Mind Blast** whenever it is ready, at any mana (also to finish a mob one cast will kill).
 4. **Smite** in every gap, at any mana, until the mob has less health left than about half a **Smite** hit; then your wand.
 5. Skip Devouring Plague and **Penance**: the tuned rules never cast them (without **Penance**, **Smite** and **Holy Fire** stay at least half your damage).
 6. Hurt: **Power Word: Shield** again in melee below 80% health once Weakened Soul is gone (below half at any time), **Flash Heal** below a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.
 
-**Between fights:** Drink only below 15% mana; **Renew** yourself after a fight below 85% health, and eat below 80%.
+**Between fights:** Drink only below 15% mana; **Renew** yourself after a fight below 85% health, and eat below 80%. Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full.
 
 ## Why this rotation
 
@@ -36,16 +36,16 @@ You level with your raid talents, Discipline first: the first Holy point comes a
 - **Holy Fire** (level 20) opens from range: a 3.4-second cast (this build takes one point of **Divine Fury**, 0.1 seconds off) that hits hard and burns for 10 seconds more. The fight lab casts it again once the burn has ended while the mob has more than 40% of its health, in melee only while your **Power Word: Shield** holds (damage would push the long cast back). **Inner Focus** (23) goes up as the pull starts, so the opening **Holy Fire** is free and its hit 25% more likely to crit.
 - **Shadow Word: Pain** is instant and ticks for the whole fight; **Twin Disciplines** (10-14) adds 5% to it and your other instant spells.
 - **Penance** (30) is in the build for the raid healer, but the tuned rules (2026-11-15) never cast it: with it, **Smite** and **Holy Fire** made only about 40% of your damage at 60, and this list, which the Smite page plays too, must keep them at half (the signature rule). Without it a kill takes about 2 seconds longer.
-- **Mind Blast** whenever it is ready while you have more than 30% of your mana and the mob more than 10% of its health; **Smite** fills every gap at any mana until the mob has less health left than about half a **Smite** hit, then your wand finishes.
+- **Mind Blast** whenever it is ready, at any mana; **Smite** fills every gap at any mana until the mob has less health left than about half a **Smite** hit, then your wand finishes.
 - Mana: you drink only below 15%. **Meditation** (20-22) keeps half your regeneration going while you cast and **Mental Strength** (15-19) adds 10% Intellect.
 - The pre-pull **Power Word: Shield** is part of this rotation: while it holds, damage does not push your casts back; **Soul Warding** (31) takes its 4-second cooldown away and **Twilight Focus** (32-34) avoids most pushback after it breaks.
 
 **Caveats**
 
 - Most of your Holy points are for healing (**Improved Renew**, **Inspiration**, **Holy Binding**, **Improved Healing**, **Litany of Light**, **Spiritual Guidance**, **Spiritual Healing**), so this is a slow way to level: 59 seconds per kill level-weighted in the fight lab against 24 for Shadow.
-- The tuned rules never cast **Devouring Plague** or **Penance**, hold **Mind Blast** below 30% mana (the gates that keep **Smite** and **Holy Fire** your main damage, the spec's rule) and skip it on a mob under 10% of its health.
+- The tuned rules never cast **Devouring Plague** or **Penance** (the gates that keep **Smite** and **Holy Fire** your main damage, the spec's rule). Until 2026-11-17 they also held **Mind Blast** below 30% mana; once you eat while you drink, that hold only cost time (about 2.5% per kill on the Smite build the list is tuned on), and **Smite** and **Holy Fire** still do half the damage.
 - **Holy Nova** (42) is for pulls of several mobs: the fight lab casts it only when two or more are in reach.
-- After a fight, **Renew** heals you while you loot and walk on (below 85% health); you eat below 80% health (a tuned rule).
+- After a fight, **Renew** heals you while you loot and walk on (below 85% health); you eat below 80% health (a tuned rule). Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17).
 
 **When to change it**
 
@@ -83,14 +83,14 @@ One point per level from 10, in this order:
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
-| 20 | 45 | 28 |
-| 30 | 54 | 35 |
-| 40 | 67 | 40 |
-| 50 | 63 | 43 |
-| 60 | 58 | 42 |
+| 20 | 43 | 27 |
+| 30 | 52 | 33 |
+| 40 | 63 | 38 |
+| 50 | 60 | 40 |
+| 60 | 56 | 40 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-17 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-18 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
 

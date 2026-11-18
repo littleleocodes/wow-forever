@@ -120,7 +120,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Polymorph** (8): when a second mob joins, sheep it, kill the first, then fight the sheep.
 - **Arcane Missiles** (8) waits until level 37 in this build: leave key 1 empty until then. **Conjure Food** (6) saves you buying bread.
 
-*Fight lab, seconds per kill: 28 at level 6. Presses per kill at level 6: Frostbolt 5.8, Fire Blast 0.7, Wand 0.4.*
+*Fight lab, seconds per kill: 27 at level 6. Presses per kill at level 6: Frostbolt 5.8, Fire Blast 0.7, Wand 0.4.*
 
 ## Levels 10-19: Frost Nova: the kite begins
 
@@ -146,7 +146,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Frostbite** (15-17) sometimes freezes a mob your chill hits. Treat it as a free **Frost Nova**: step back and cast.
 - **Arcane Explosion** (14) and **Flamestrike** (16) are for packs. One mob at a time never needs them.
 
-*Fight lab, seconds per kill: 28 at level 10, 38 at level 19. Presses per kill at level 10: Frostbolt 4.8, Wand 1.2, Frost Nova 0.6, Fire Blast 0.6.*
+*Fight lab, seconds per kill: 28 at level 10, 36 at level 19. Presses per kill at level 10: Frostbolt 4.8, Wand 1.2, Frost Nova 0.6, Fire Blast 0.6.*
 
 ## Levels 20-23: Ice Lance into every freeze
 
@@ -175,7 +175,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Evocation** (20) is for between fights: channel it in place of a drink, whenever it is ready and you are under 15% mana.
 - **Blink** (20) and **Mana Shield** (20) are for a pull that goes wrong, not rotation. **Blizzard** (20) is for packs.
 
-*Fight lab, seconds per kill: 28 at level 20. Presses per kill at level 20: Frostbolt 3.6, Ice Lance 1.3, Wand 1.1, Frost Nova 0.6, Fire Blast 0.5.*
+*Fight lab, seconds per kill: 27 at level 20. Presses per kill at level 20: Frostbolt 3.6, Ice Lance 1.3, Wand 1.2, Frost Nova 0.6, Fire Blast 0.5.*
 
 ## Levels 24-29: Counterspell and Shatter
 
@@ -204,7 +204,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Shatter** (25, 28-29) and **Ice Shards** (24, 26) are why the **Ice Lance** into a freeze is your biggest hit from here on. **Arctic Reach** (27) lets you pull from a little farther: one more **Frostbolt** before the mob arrives.
 - **Cone of Cold** (26) goes on C for packs. The tuned rules never cast it on a single mob: kills measured faster without.
 
-*Fight lab, seconds per kill: 32 at level 24, 33 at level 29. Presses per kill at level 24: Frostbolt 4.3, Ice Lance 1.5, Wand 1.3, Frost Nova 0.8, Fire Blast 0.6, Counterspell 0.2.*
+*Fight lab, seconds per kill: 30 at level 24, 31 at level 29. Presses per kill at level 24: Frostbolt 4.4, Ice Lance 1.5, Wand 1.1, Frost Nova 0.7, Fire Blast 0.7, Counterspell 0.2.*
 
 ## Levels 30-36: Fingers of Frost
 
@@ -231,7 +231,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Ice Armor** (30) replaces **Frost Armor** as your armor spell until **Mage Armor** (34): half your mana regeneration then keeps going while you cast, so you drink less. Mage Armor gives no armor and no chill, so you eat a little more, and it still kills about 4% faster at 34-40 in the fight lab (drinking 6.6 to 3.5 seconds a kill at 34).
 - From 32 the points go to Arcane: **Wand Specialization** (32-33) makes your finishing wand hits stronger, **Arcane Resilience** (34) adds armor, **Improved Channeling** (35-36) prepares the Missiles of the next stage.
 
-*Fight lab, seconds per kill: 32 at level 30, 34 at level 36. Presses per kill at level 30: Frostbolt 3.9, Ice Lance 1.6, Wand 1.3, Frost Nova 0.7, Fire Blast 0.5, Counterspell 0.1.*
+*Fight lab, seconds per kill: 31 at level 30, 32 at level 36. Presses per kill at level 30: Frostbolt 3.9, Ice Lance 1.6, Wand 1.3, Frost Nova 0.7, Fire Blast 0.5, Counterspell 0.1.*
 
 ## Levels 37-52: Missile Barrage: free Arcane Missiles
 
@@ -264,7 +264,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Mage Armor** is still 2% faster per kill than **Ice Armor** at 46. From 50, with **Arcane Meditation** complete, the two armors are even in the fight lab (within about 1%): wear either.
 - Frostfire Bolt (40) is not part of this list: **Frostbolt** stays on Q.
 
-*Fight lab, seconds per kill: 34 at level 37, 31 at level 40, 26 at level 50, 26 at level 52. Presses per kill at level 37: Frostbolt 4.0, Ice Lance 1.8, Wand 1.5, Frost Nova 0.9, Fire Blast 0.5, Arcane Missiles 0.3, Counterspell 0.1.*
+*Fight lab, seconds per kill: 31 at level 37, 30 at level 40, 25 at level 50, 26 at level 52. Presses per kill at level 37: Frostbolt 4.0, Ice Lance 1.8, Wand 1.4, Frost Nova 0.9, Fire Blast 0.5, Arcane Missiles 0.4, Counterspell 0.1.*
 
 ## Levels 53-60: Presence of Mind opens the pull
 
@@ -295,13 +295,14 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Presence of Mind** (53) makes your next cast instant; the fight lab spends it on the pull's first **Frostbolt**.
 - **Arcane Mind** (54-56) adds 6% Intellect, **Arcane Resilience** (57) gets its second point, and **Arcane Instability** (58-60) 3% more spell damage and 3% more crit.
 
-*Fight lab, seconds per kill: 27 at level 53, 24 at level 60. Presses per kill at level 53: Frostbolt 3.3, Ice Lance 1.5, Wand 0.8, Frost Nova 0.7, Arcane Missiles 0.6, Fire Blast 0.4, Counterspell 0.2.*
+*Fight lab, seconds per kill: 26 at level 53, 23 at level 60. Presses per kill at level 53: Frostbolt 3.3, Ice Lance 1.5, Wand 0.8, Frost Nova 0.7, Arcane Missiles 0.6, Fire Blast 0.4, Counterspell 0.2.*
 
 ## Between fights
 
 - Drink your conjured water when you are below about 15% of your mana, and eat below 40% of your health. Those are the tuned rules: resting earlier cost more time in the fight lab than it saved.
 - **Evocation** (from 20) in place of a drink: whenever it is ready and you are under 15% mana, channel it instead of drinking (it gives back 70% to more than all of your mana, so at 40% part of it was lost: 0.6-1.1% faster per kill in the fight lab, 2026-11-16).
 - Conjure both food and water yourself.
+- Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. **Evocation** is not a sit and brings no food. It was 5.3% faster per kill for this build in the fight lab (2026-11-16), and the tuned rules play it.
 - Visit the trainer every even level. **Frostbolt** alone has eleven ranks.
 
 ## Other ways to level this class
@@ -310,4 +311,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Pulling packs is a different game: the AoE Frost build on the Frost page gathers about four mobs, freezes them with **Frost Nova** and channels **Blizzard** in **Ice Armor**: in pulls of four, Mage Armor measured 9-20% slower per kill.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-17: the stages are hand-kept in `_reference/data/level-guides/mage.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-18: the stages are hand-kept in `_reference/data/level-guides/mage.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

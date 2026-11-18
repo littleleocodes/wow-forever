@@ -55,6 +55,7 @@ MIN_GAIN = 0.005    # the replacement bar (hand draft -> derived build): 0.5% si
 CORE_SHARE = 0.02   # raid: a talent worth this share of the build's full-raid DPS is core
 CORE_SECONDS = 0.3  # leveling: a talent saving this many seconds per kill at 60 is core
 CORE_MAX = 8
+KEPT = {}           # {build id: why}: hybrids' open leveling builds kept as they are (leveling_candidates' keep rule, 2026-11-18)
 
 
 def _load(name, path):
@@ -462,6 +463,38 @@ def leveling_candidates(cls, st, data, RM):
         else:
             b = None if why else make_leveling_build(cls, spec_rot, r, spec, allr, raced, bh, hands.get(bh), replaces)
         out.append((spec_rot, spec, wt, b, why))
+    # 2026-11-18 (user: "Keep 23/3/25 (Recommended)"): a hybrid whose own leveling rotation (spec_modes.HYBRID_LEVELING_ROTATION) a build
+    # of another spec won keeps its open build when that build raced in the rotation's 20-60 race (fl_open_search.py races the rotation's
+    # hybrids too since the same day), plays its signature spells and clears the bar against the hybrid's other builds. It stays as it
+    # is (allocation and order); its numbers are its own race row, so the record lists it under builds.kept, not written (a written
+    # build reads the winner's row). The hunter's 23/3/25 Beast-Survival had been dropped once Survival's 3/17/31 won the melee rotation.
+    byid = {b["id"]: b for b in data["builds"]}
+    for (c, hyb), rot in SM.HYBRID_LEVELING_ROTATION.items():
+        r = st["rotations"].get(rot) if c == cls and not st.get("tree") else None   # (a one-tree record files its own tree only)
+        if not r or not r.get("done") or any(s == hyb and b is not None for _, s, _, b, _ in out):
+            continue
+        race = r.get("race") or {}
+        for bid, b in byid.items():
+            row = race.get(bid) or {}
+            if not (bid.endswith("-open-leveling") and SM.spec_of(cls, b) == hyb and row.get("weighted")):
+                continue
+            wt = row["weighted"]
+            name = SM.spec_name(cls, hyb)
+            if not (RM.lev_sig_check(cls, b) or {}).get("ok", True):
+                print(f"  leveling {rot}: {bid} fails {name}'s signature-spell check: not kept", flush=True)
+                break
+            rivals = {k: v["weighted"] for k, v in race.items() if k in byid and k != bid and SM.spec_of(cls, byid[k]) == hyb and v.get("weighted")}
+            pages = {x["id"]: RM.weighted(nums.get(x["id"]) or {}) for x in data["builds"]
+                     if SM.mode_of(x) == "leveling" and not is_open(x) and SM.spec_of(cls, x) == hyb and x["id"] not in rivals}
+            allr = {k: v for k, v in {**rivals, **pages}.items() if v}
+            best = min(allr, key=allr.get) if allr else None
+            if best is not None and allr[best] / wt - 1 < GAIN_NEW:
+                print(f"  leveling {rot}: {bid} {wt:.2f} s is not {GAIN_NEW:.1%} faster than {best} ({allr[best]:.2f} s): not kept", flush=True)
+                break
+            KEPT[bid] = (f"{name}'s open build, kept: the {rot} rotation's winner is another spec's; {wt:.2f} s per kill in its race (levels "
+                         f"20-60)" + (f", {allr[best] / wt - 1:+.1%} faster than {best}" if best else ""))
+            out.append((rot, hyb, wt, b, None))
+            break
     # one build per spec: the winner from the spec's own leveling rotation (spec_modes.own_leveling_rotation: the tree's, a hybrid's lead
     # tree's); until 2026-10-08 the fastest rotation's winner was taken (the rogue's Daggers split from the swords rotation)
     for i, (rot, spec, wt, b, why) in enumerate(out):
@@ -485,6 +518,30 @@ def core_leveling(vals):
         if v.get("seconds", 0) >= CORE_SECONDS and len(core) < CORE_MAX:
             core.append({"talent": n, "why": f"{v['seconds']:+.1f} s per kill at level 60 without it (removal, 3,000 fights)."})
     return core
+
+
+def filler_applies(fr, r):
+    """Whether a written leveling filler pass (fightlab/fl_filler_pass.py --write) carries over to a build rewritten from record r: the
+    pass started from the record's order, or the record's winner is a state its chain of one-point moves went through. 2026-11-18: the
+    refresh of 2026-11-17 had raced our survival-open-leveling as it stood after the first of two chained passes, so the record's order
+    matched neither the chain's start nor its end, and a rewrite would have dropped the second pass's four moves. The replay must end on
+    the written build, else the moves are not what this reads them as."""
+    if fr.get("start_order") == r["order"]:
+        return True
+    try:
+        cur = {k: v for k, v in dict(lev_sig().SG.order_alloc(fr["start_order"])).items() if v}
+    except Exception:  # noqa: BLE001  (a start order the trees no longer allow)
+        return False
+    target = {k: v for k, v in flat_of(r["winner"]["allocation"]).items() if v}
+    end = {k: v for k, v in flat_of(fr["written"]["allocation"]).items() if v}
+    seen = cur == target
+    for mv in fr.get("moves") or []:
+        cur[mv["from"]] = cur.get(mv["from"], 0) - 1
+        if cur[mv["from"]] <= 0:
+            cur.pop(mv["from"])
+        cur[mv["to"]] = cur.get(mv["to"], 0) + 1
+        seen = seen or cur == target
+    return seen and cur == end
 
 
 def make_leveling_build(cls, rot, r, spec, allr, rivals, best_hand, hand_t, replaces):
@@ -522,7 +579,7 @@ def make_leveling_build(cls, rot, r, spec, allr, rivals, best_hand, hand_t, repl
     # talents that do something, at no measured cost) survives the rewrite while it started from the order the record still carries
     for f in sorted((HERE / "fightlab" / "filler").glob(f"{cls}-*.json")):
         fr = json.load(open(f, encoding="utf-8"))
-        if fr.get("build") == b["id"] and fr.get("written") and fr.get("start_order") == r["order"]:
+        if fr.get("build") == b["id"] and fr.get("written") and filler_applies(fr, r):
             b["allocation"], b["order"] = fr["written"]["allocation"], fr["written"]["order"]
             b["notes"].insert(0, fr["written"]["note"])
             print(f"  {b['id']}: the leveling filler pass of {fr['date']} re-applied ({len(fr['moves'])} moves)")
@@ -547,6 +604,7 @@ def main():
     import render_modes as RM
     ML = _load("ml_builds_open", HERE / "raidsim" / "ml_builds.py")
     for cls in a.classes or SM.CLASSES:
+        KEPT.clear()
         fam = load_record(FAMILIES / f"{cls}.json") if a.only != "leveling" else None
         lvl = load_record(OPEN / f"{cls}.json") if a.only != "raid" else None
         use_fam = fam and (complete(fam, "entries") or (a.partial and fam.get("entries")))
@@ -596,7 +654,9 @@ def main():
         for entry, spec, wd, b, why in rc:
             print(f"  raid {entry}: {SM.spec_name(cls, spec)} {wd:.1f} DPS -> " + (f"new build {b['id']}" + (f" (replaces {b['replaces']})" if b.get("replaces") else "") if b else why))
         for pf, _, (rot, spec, wt, b, why) in lc:
-            print(f"  leveling {rot}" + (f" ({pf.stem})" if pf.parent.name == "pure" else "") + f": {SM.spec_name(cls, spec)} {wt:.2f} s per kill -> " + (f"new build {b['id']}" + (f" (replaces {b['replaces']})" if b.get("replaces") else "") if b else why))
+            print(f"  leveling {rot}" + (f" ({pf.stem})" if pf.parent.name == "pure" else "") + f": {SM.spec_name(cls, spec)} {wt:.2f} s per kill -> "
+                  + ((f"kept {b['id']} ({KEPT[b['id']]})" if b["id"] in KEPT else f"new build {b['id']}" + (f" (replaces {b['replaces']})" if b.get("replaces") else ""))
+                     if b else why))
         if not a.write:
             continue
         new = [b for *_, b, _ in rc if b] + [x[3] for *_, x in lc if x[3]]
@@ -623,10 +683,18 @@ def main():
                     if not a.no_tidy:
                         ML.tidy(cls, entry, b["id"])
         if use_lvl:
-            recs = {}
-            for pf, pr, (rot, spec, wt, b, why) in lc:
+            recs, seen = {}, set()
+            for pf, pr, (rot, spec, wt, b, why) in lc:   # each rotation's own entry, once; a hybrid's kept build joins it below
+                if (b is not None and b["id"] in KEPT) or (pf, rot) in seen:
+                    continue
+                seen.add((pf, rot))
                 pr["rotations"][rot]["builds"] = {"written": [b["id"]] if b else [], "why": why, "spec": spec, "date": TODAY}
                 recs[pf] = pr
+            for pf, pr, (rot, spec, wt, b, why) in lc:
+                if b is not None and b["id"] in KEPT:
+                    pr["rotations"][rot].setdefault("builds", {"written": [], "date": TODAY}).setdefault("kept", []).append(
+                        {"id": b["id"], "spec": spec, "why": KEPT[b["id"]]})
+                    recs[pf] = pr
             for pf, pr in recs.items():
                 save_record(pf, pr)
         if a.race or a.regen:
