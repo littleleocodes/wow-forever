@@ -1,5 +1,7 @@
 # Handoff — continuing this project in a Claude Code cloud session (updated 2026-10-17)
 
+> **2026-11-19: the audit session.** A fresh local session for the full audit the user asked for reads [`_reference/audit-brief-1119.md`](_reference/audit-brief-1119.md) first: the Ice Barrier miss, the failure patterns, the measured checks, the running gear night and how to work next to the lane session. This page's cloud notes and its 2026-10-17 state are older.
+
 This knowledge base was built in local Claude Code sessions on Windows (project in `F:\wow-forever`, simulator tools in
 `%USERPROFILE%\.wow-forever-tools`) and moved to GitHub on 2026-09-28 so the work can continue in Claude Code cloud sessions.
 Read `CLAUDE.md` (the conventions, loaded automatically) and `_reference/README.md` (the top-level `README.md` is the player
