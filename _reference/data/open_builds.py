@@ -56,6 +56,8 @@ CORE_SHARE = 0.02   # raid: a talent worth this share of the build's full-raid D
 CORE_SECONDS = 0.3  # leveling: a talent saving this many seconds per kill at 60 is core
 CORE_MAX = 8
 KEPT = {}           # {build id: why}: hybrids' open leveling builds kept as they are (leveling_candidates' keep rule, 2026-11-18)
+KEPT_RAID = {}      # {build id: why}: hybrids' raid builds kept from the hybrid check (raid_kept, 2026-11-19)
+HYBRID_CHECK = HERE / "hybrid-check.json"
 
 
 def _load(name, path):
@@ -286,6 +288,62 @@ def raid_candidates(cls, st, data, RM):
         vb = variants.get(entry)
         if b is None and vb is not None and main_from.get(spec) != entry:
             out[i] = (entry, spec, wd, vb, f"{why}; kept as the {vb['name'].split(' — ')[1].split(' (')[0].lower()} variant's build")
+    return out
+
+
+def raid_kept(cls, data, rc):
+    """The raid side of the keep rule (2026-11-19; the hybrid check found the hunter's Beast-Survival 16/11/24, Summon Hawk and Lone
+    Wolf, 804.6 DPS in a full raid against the Survival page's 739.0 in the same fights, with no raid page since 2026-10-25; user: "Go
+    with your recs"). An open search writes one build per entry, filed under the winner's spec, so a hybrid that loses a shared entry
+    keeps no raid build. A hybrid with no raid build at all (none written from an entry here, none in the builds file) keeps the best
+    family the hybrid check raced for it (hybrid_check.py: the searches' cached families, raced in a full raid on the current simulator
+    together with the entry's best build of ours) when that family passes the raid signature check and is no more than GAIN_NEW behind
+    the entry's best build of ours in the same fights (a hybrid page that loses to its rotation's build is no lead: the hunter's 5/21/25
+    Marksmanship/Survival split, 5.6% behind Survival, stays out). Hybrids with raid builds are left
+    to the searches: the check found none of their families more than 0.7% ahead of a build their page or entry shows. Returns
+    (entry, spec, dps, build, why) tuples like raid_candidates; a kept build's id is in KEPT_RAID."""
+    if not HYBRID_CHECK.exists():
+        return []
+    rec = json.loads(HYBRID_CHECK.read_text(encoding="utf-8"))
+    written = {spec for _, spec, _, b, _ in rc if b is not None}
+    have = {SM.spec_of(cls, b) for b in data["builds"] if SM.mode_of(b) == "raid" and b.get("role", "dps") == "dps" and not is_open(b)}
+    best = {}
+    for r in rec.get("rows", []):
+        if r.get("class") != cls or r.get("mode") != "raid" or not r.get("allocation") or not (r.get("signature") or {}).get("ok"):
+            continue
+        h = r["hybrid"]
+        if h in written or h in have:
+            continue
+        if h not in best or r["value"] > best[h]["value"]:
+            best[h] = r
+    out = []
+    for h, r in sorted(best.items()):
+        name = SM.spec_name(cls, h)
+        if r.get("vs_ref") is not None and r["vs_ref"] < -GAIN_NEW:
+            print(f"  raid {r['where']}: {name} {r['value']:.1f} DPS (hybrid check) is {r['vs_ref']:+.1%} against {r['ref']}: no raid build kept",
+                  flush=True)
+            continue
+        flat = flat_of(r["allocation"])
+        bid = f"{SM.spec_slug(cls, h)}-open-raid"
+        why = (f"{name}'s raid build, kept from the hybrid check of {r['date']}: no raid build of its own (an open search writes each entry's "
+               f"winner only), {r['value']:.1f} DPS in a full raid in the {r['where']} rotation against {r['ref']} {r['ref_value']:.1f} in the "
+               f"same {r['fights']:,} fights ({r['vs_ref']:+.1%})")
+        b = {"id": bid, "name": f"{name} — Raid (open talent search)", "role": "dps", "content": "raid", "tier": "draft", "spec": h,
+             "generated": TODAY, "derived": "raid",
+             "summary": (f"The {family_text(cls, h)} raid build: the best {r['family']} family of the {r['where']} open search (raidsim/"
+                         f"family_search.py: every pair of keystones of two trees polished by a short hill climb), raced again on "
+                         f"{r['date']} in a full raid (every raid buff and debuff) on the current simulator by the hybrid check: "
+                         f"{r['value']:.1f} DPS, {r['vs_ref']:+.1%} against {r['ref']}, the best of our builds in that rotation."),
+             "allocation": r["allocation"], "core": [], "flex": [],
+             "notes": [f"Kept from the hybrid check ({r['date']}, `_reference/hybrid-check.md`): an open search writes one build per raid entry, "
+                       f"filed under its winner's spec, and the {r['where']} entry's winner was another spec's, so {name} had no raid build. "
+                       f"This family passed the raid signature check (core share {r['signature'].get('core_share', 0):.0%}).",
+                       f"Simulator numbers are the community's model of the beta ({SI.label(sim_commit(), short=True)} with this project's "
+                       "patches), not in-game measurements."],
+             "open_questions": [f"An open-search {name} build: check it against the community's {name} builds at launch."],
+             "sources": [RSH.tf_link(cls, flat)]}
+        KEPT_RAID[bid] = why
+        out.append((r["where"], h, r["value"], b, None))
     return out
 
 
@@ -600,6 +658,8 @@ def main():
     ap.add_argument("--only", choices=["raid", "leveling"], help="one kind of record only (raid while the class's leveling search still runs)")
     ap.add_argument("--race", action="store_true", help="re-race the entries that got a build (raidsim/run.py --write and --env environments --write)")
     ap.add_argument("--regen", action="store_true", help="rebuild.py <class> --steps regen afterwards (the pages)")
+    ap.add_argument("--kept-only", action="store_true", help="write only the hybrids' raid builds the keep rule keeps (raid_kept), "
+                    "leaving every other build and verdict as it is (2026-11-19: a full write would also rewrite builds from older records)")
     a = ap.parse_args()
     import render_modes as RM
     ML = _load("ml_builds_open", HERE / "raidsim" / "ml_builds.py")
@@ -624,7 +684,12 @@ def main():
             subprocess.run([sys.executable, "-u", str(HERE / "fightlab" / "signature_audit.py"), cls, "--write", "--jobs", "3"],
                            check=False, stdout=subprocess.DEVNULL)
             RM._LEV_SIG.clear()
+        KEPT_RAID.clear()
         rc = raid_candidates(cls, fam, data, RM) if use_fam else []
+        if use_fam:
+            rc += raid_kept(cls, data, rc)   # 2026-11-19: hybrids with no raid build keep the hybrid check's best family
+        if a.kept_only:
+            rc = [x for x in rc if x[3] is not None and x[3]["id"] in KEPT_RAID]
         lc = [(OPEN / f"{cls}.json", lvl, x) for x in leveling_candidates(cls, lvl, data, RM)] if use_lvl else []
         if a.only != "raid":   # the one-tree searches (fl_open_search.py --tree, 2026-10-25): a pure spec whose rotation a hybrid won
             for pf in sorted(x for x in (OPEN / "pure").glob(f"{cls}-*.json") if not x.stem.endswith((".pre-mutilate", ".pre-fix", ".prev"))):
@@ -649,10 +714,13 @@ def main():
                 pf2, r2 = faster[0]
                 lc[i] = (pf, pr, (rot, spec, wt, None, f"the {r2} rotation's record ({pf2.name}) has a faster {SM.spec_name(cls, spec)} build: "
                                                       "that one is written"))
+        if a.kept_only:   # the kept hybrids' raid builds only: no leveling build is written or rewritten
+            lc, use_lvl = [], False
         use_lvl = use_lvl or bool(lc)
         print(f"== {cls}")
         for entry, spec, wd, b, why in rc:
-            print(f"  raid {entry}: {SM.spec_name(cls, spec)} {wd:.1f} DPS -> " + (f"new build {b['id']}" + (f" (replaces {b['replaces']})" if b.get("replaces") else "") if b else why))
+            print(f"  raid {entry}: {SM.spec_name(cls, spec)} {wd:.1f} DPS -> " + ((f"kept {b['id']} ({KEPT_RAID[b['id']]})" if b["id"] in KEPT_RAID
+                  else f"new build {b['id']}" + (f" (replaces {b['replaces']})" if b.get("replaces") else "")) if b else why))
         for pf, _, (rot, spec, wt, b, why) in lc:
             print(f"  leveling {rot}" + (f" ({pf.stem})" if pf.parent.name == "pure" else "") + f": {SM.spec_name(cls, spec)} {wt:.2f} s per kill -> "
                   + ((f"kept {b['id']} ({KEPT[b['id']]})" if b["id"] in KEPT else f"new build {b['id']}" + (f" (replaces {b['replaces']})" if b.get("replaces") else ""))
@@ -662,6 +730,8 @@ def main():
         new = [b for *_, b, _ in rc if b] + [x[3] for *_, x in lc if x[3]]
         kinds = ("-open-raid",) if a.only == "raid" else ("-open-leveling",) if a.only == "leveling" else ("-open-raid", "-open-leveling")
         old = [b["id"] for b in data["builds"] if b["id"].endswith(kinds)]   # rewritten from the records (the other kind stays with --only)
+        if a.kept_only:
+            old = [b["id"] for b in data["builds"] if b["id"] in KEPT_RAID]
         data = BIO.update(cls, remove=old, add=new)   # locked, on the file as it is now (2026-10-24 audit)
         with locked(HERE / "raidsim" / "specs.json.lock"):   # a running search of another class may point an entry at a new rotation
             if old:
@@ -675,7 +745,13 @@ def main():
         raced = []
         if use_fam:
             for entry, spec, wd, b, why in rc:
+                if b is not None and b["id"] in KEPT_RAID:   # a hybrid's kept build joins its entry's record, never replaces its verdict
+                    continue
                 fam["entries"][entry]["builds"] = {"written": [b["id"]] if b else [], "why": why, "spec": spec, "date": TODAY}
+            for entry, spec, wd, b, why in rc:
+                if b is not None and b["id"] in KEPT_RAID:
+                    fam["entries"][entry].setdefault("builds", {"written": [], "date": TODAY}).setdefault("kept", []).append(
+                        {"id": b["id"], "spec": spec, "why": KEPT_RAID[b["id"]]})
             save_record(FAMILIES / f"{cls}.json", fam)
             for entry, spec, wd, b, why in rc:
                 if b:

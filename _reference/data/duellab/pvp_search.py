@@ -207,17 +207,18 @@ def search(cls, refs, tree, steps=20, batch=48, n_screen=40, n_confirm=120, bar=
     TO, VB = talent_opt()
     trees = VB.load_forever()[cls]
     TO.MIN_TREE.clear()
-    TO.MIN_TREE[tree] = 30
+    if tree:   # tree=None: any split (the no-rules search, 2026-11-19: no tree rule and no signature talents)
+        TO.MIN_TREE[tree] = 30
     rng = random.Random(seed)
-    protect = signature(cls, tree, trees) if keep_signature else []
+    protect = signature(cls, tree, trees) if keep_signature and tree else []
     starts = []
     for ref in refs:
-        name, alloc = DR.load_build(cls, ref)
+        name, alloc = (ref, dict(refs[ref])) if isinstance(refs, dict) else DR.load_build(cls, ref)
         lacks = [q for q in protect if not alloc.get(q)]
-        if tree_points(trees, alloc, tree) >= 30 and TO.valid(trees, alloc) and not lacks:
+        if (not tree or tree_points(trees, alloc, tree) >= 30) and TO.valid(trees, alloc) and not lacks:
             starts.append((ref, alloc))
         else:
-            log(f"  start {ref} skipped: {tree_points(trees, alloc, tree)} points in {tree}, "
+            log(f"  start {ref} skipped: " + (f"{tree_points(trees, alloc, tree)} points in {tree}, " if tree else "")
                 + (f"lacks the signature talent {', '.join(lacks)}" if lacks else "or not legal"))
     if not starts:
         raise SystemExit(f"{cls}: no legal start with 30+ points in {tree}")

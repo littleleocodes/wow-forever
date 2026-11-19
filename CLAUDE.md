@@ -567,6 +567,14 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
   "Which spec is best?" and "Most duels won" to the player index (the best spec and any within 3 points). No spec is marked
   recommended for PvP. `page_lint.py` reads the folder.
 - A PvE choice a rules file makes (a `ROTATION_KNOBS` entry) goes in `duel.PVE_KNOBS`, so duels keep the module's default.
+- **The no-rules PvP search** (`pvp_unrestricted.py`, 2026-11-19; part of the user's no-rules search of 2026-11-18: "checking all
+  combinations for each class to see what is the best spec all around, even if it's a weird super hybrid build"): one search per class
+  with no tree rule and no signature talents (`pvp_search.search` with `tree=None`). Its starts:
+  - each tree's duel build and battleground version, and the class's community PvP builds;
+  - ten blends of the trees' duel builds (each ordered pair at 31/20, each pair at 26/25, all three at 17/17/17; a tree's share is
+    its duel build's talents in that tree, lowest rows first), each after a short climb.
+  Then the round-2 search with 30 steps. Record `duellab/unrestricted/<class>.json`; about an hour a class at 10 workers. Queued with
+  the raid and leveling halves after the gear night.
 - User decisions:
   - 2026-11-15, "I want to see the results of PvP before deciding if they go on the page or not". On 2026-11-17, after the report,
     "Go with all your recommendations": the results go on the research pages now, and the PvP player pages after round 2. Each page
@@ -922,8 +930,13 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
   from the search caches, raced against each entry's (rotation's) best build of ours and the hybrid's own page build, with the
   signature check. Record `hybrid-check.json`, page `_reference/hybrid-check.md`; it writes no build. Result, all classes: one gap.
   The hunter's Beast-Survival 16/11/24 (Summon Hawk and Lone Wolf) does 804.6 DPS in a full raid against Survival's raid page 738.9
-  (+8.9%), passes the signature rule and has no raid page: the raid side of the keep rule is open. Every other hybrid is behind or
-  within 0.7% of a build its page or its entry already shows; leveling has none. A leveling
+  (+8.9%), passes the signature rule and has no raid page. Every other hybrid is behind or within 0.7% of a build its page or its entry
+  already shows; leveling has none. **The raid keep rule** (`open_builds.raid_kept`, 2026-11-19, user: "Go with your recs"): a hybrid
+  with no raid build at all keeps the hybrid check's best family when it passes the raid signature check and is no more than 0.5%
+  behind the entry's best build of ours in the same fights. It is written as `<hybrid slug>-open-raid` into the entry, under the entry
+  record's `builds.kept`. `open_builds.py <class> --kept-only --only raid --write --race --regen` writes only those builds: a full
+  write would also rewrite every open build from older records (the hunter's mm-raid record would add a Marksmanship variant).
+  Only Beast-Survival qualifies. The Marksmanship/Survival split, 5.6% behind Survival, does not. A leveling
   filler pass carries over to a rewrite when the record's winner is a state its chain of one-point moves went through
   (`open_builds.filler_applies`): a chained second pass had stopped matching once the race picked our build after the first pass.
 - Gear presets must be complete (weapon, rings, trinkets, neck, back): some of the simulator's presets list only the armor slots
