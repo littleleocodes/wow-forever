@@ -2,14 +2,17 @@
  "class": "rogue",
  "tree": "Subtlety",
  "starts": [
-  "_reference/data/duellab/seeds/r2/rogue-subtlety-signature-death-mark.json"
+  "pvp-hemo-prep",
+  "_reference/data/duellab/seeds/r2/rogue-subtlety-battleground.json",
+  "_reference/data/duellab/seeds/r2/rogue-subtlety-signature-death-mark.json",
+  "_reference/data/duellab/seeds/r2/rogue-subtlety-winner.json"
  ],
  "history": [
   {
    "step": 0,
-   "from": "_reference/data/duellab/seeds/r2/rogue-subtlety-signature-death-mark.json",
-   "J": 0.2208,
-   "win": 0.2806,
+   "from": "_reference/data/duellab/seeds/r2/rogue-subtlety-winner.json",
+   "J": 0.5126,
+   "win": 0.5028,
    "alloc": {
     "Malice": 5,
     "Remorseless Attacks": 1,
@@ -32,57 +35,23 @@
     "Hemorrhage": 1,
     "Preparation": 1,
     "Boot Knife": 5,
+    "Venom": 1,
     "Vile Poisons": 1,
     "Improved Ambush": 2,
-    "Improved Slice and Dice": 3,
-    "Death Mark": 1
+    "Improved Slice and Dice": 3
    }
-  },
-  {
-   "step": 1,
-   "move": "1 point Lethality -> Blood Splatter",
-   "J": 0.2425,
-   "win": 0.2963,
-   "gain": 0.0217
-  },
-  {
-   "step": 2,
-   "move": "1 point Vile Poisons -> Coup de Grace",
-   "J": 0.2706,
-   "win": 0.3185,
-   "gain": 0.0281
-  },
-  {
-   "step": 3,
-   "move": "1 point Improved Poisons -> Efficient Strikes",
-   "J": 0.291,
-   "win": 0.3389,
-   "gain": 0.0204
-  },
-  {
-   "step": 4,
-   "move": "2 points Heightened Senses -> Opportunity",
-   "J": 0.3088,
-   "win": 0.3528,
-   "gain": 0.0177
-  },
-  {
-   "step": 10,
-   "move": "2 points Improved Poisons -> Coup de Grace",
-   "J": 0.3565,
-   "win": 0.3917,
-   "gain": 0.0477
   }
  ],
  "final": {
   "Malice": 5,
   "Remorseless Attacks": 1,
   "Ruthlessness": 3,
-  "Lethality": 1,
+  "Lethality": 2,
   "Vigor": 1,
   "Cold Blood": 1,
+  "Improved Poisons": 3,
   "Master of Deception": 1,
-  "Opportunity": 4,
+  "Opportunity": 2,
   "Setup": 3,
   "Camouflage": 1,
   "Dirty Deeds": 2,
@@ -91,104 +60,116 @@
   "Premeditation": 1,
   "Serrated Blades": 3,
   "Ghostly Strike": 1,
+  "Heightened Senses": 2,
   "Hemorrhage": 1,
   "Preparation": 1,
   "Boot Knife": 5,
+  "Venom": 1,
+  "Vile Poisons": 1,
   "Improved Ambush": 2,
-  "Improved Slice and Dice": 3,
-  "Death Mark": 1,
-  "Blood Splatter": 1,
-  "Coup de Grace": 3,
-  "Efficient Strikes": 1
+  "Improved Slice and Dice": 3
  },
- "J": 0.3673,
- "win": 0.4023,
- "margin": -0.1402,
+ "J": 0.5119,
+ "win": 0.5056,
+ "margin": 0.0253,
  "by": {
   "warrior": [
-   0.2875,
+   0.4083,
    0.0,
-   -0.2062
+   -0.0468
   ],
   "rogue": [
-   0.5292,
+   0.5917,
    0.0,
-   0.0441
+   0.246
   ],
   "priest": [
-   0.65,
+   0.7292,
    0.0,
-   0.2132
+   0.3684
   ],
   "hunter": [
-   0.0208,
+   0.0958,
    0.0,
-   -0.7683
+   -0.6515
   ],
   "warlock": [
-   0.4667,
+   0.5542,
    0.0,
-   -0.1096
+   0.0129
   ],
   "paladin": [
-   0.1208,
+   0.1542,
    0.0,
-   -0.3978
+   -0.3869
   ],
   "shaman": [
-   0.3833,
-   0.0,
-   -0.1951
+   0.575,
+   0.0125,
+   0.0588
   ],
   "druid": [
-   0.8167,
+   0.9292,
    0.0,
-   0.3964
+   0.5729
   ],
   "mage": [
-   0.3458,
+   0.5125,
    0.0,
-   -0.2388
+   0.0538
   ]
  },
  "signature": {
-  "Hemorrhage": 2.78,
-  "Death Mark": 1.16
+  "Hemorrhage": 2.12
  },
  "gear": null,
  "casts": {
-  "Melee": 10.13,
-  "Melee (off-hand)": 10.13,
-  "Hemorrhage": 2.78,
-  "Shank": 2.15,
+  "Melee": 9.58,
+  "Melee (off-hand)": 9.58,
+  "Hemorrhage": 2.12,
+  "Shank": 2.04,
+  "Eviscerate": 1.68,
   "Kidney Shot": 1.24,
-  "Ghostly Strike": 1.2,
-  "Death Mark": 1.16,
-  "Cheap Shot": 0.89,
-  "Premeditation": 0.86,
-  "Garrote": 0.83,
-  "Eviscerate": 0.62,
+  "Ghostly Strike": 1.18,
+  "Cheap Shot": 0.93,
+  "Cold Blood": 0.92,
+  "Premeditation": 0.87,
+  "Garrote": 0.82,
   "Sap": 0.61,
-  "Kick": 0.54,
-  "Sprint": 0.54,
-  "Evasion": 0.41,
-  "Vanish": 0.37,
-  "Cold Blood": 0.33,
-  "Gouge": 0.21,
-  "Blind": 0.2,
-  "Preparation": 0.15,
+  "Sprint": 0.52,
+  "Kick": 0.5,
+  "Vanish": 0.41,
+  "Evasion": 0.39,
+  "Blind": 0.3,
+  "Gouge": 0.18,
+  "Preparation": 0.17,
   "Ambush": 0.06
  },
  "race": {
   "final": {
-   "J": 0.3673,
-   "win": 0.4023,
-   "margin": -0.1402
+   "J": 0.5119,
+   "win": 0.5056,
+   "margin": 0.0253
+  },
+  "pvp-hemo-prep": {
+   "J": 0.2913,
+   "win": 0.3296,
+   "margin": -0.1534
+  },
+  "_reference/data/duellab/seeds/r2/rogue-subtlety-battleground.json": {
+   "J": 0.5071,
+   "win": 0.5019,
+   "margin": 0.0211
   },
   "_reference/data/duellab/seeds/r2/rogue-subtlety-signature-death-mark.json": {
    "J": 0.2518,
    "win": 0.3074,
    "margin": -0.2224
+  },
+  "_reference/data/duellab/seeds/r2/rogue-subtlety-winner.json": {
+   "J": 0.5119,
+   "win": 0.5056,
+   "margin": 0.0253
   }
  },
  "settings": {
@@ -240,12 +221,11 @@
   "patience": 6,
   "tier_chains": true,
   "signature": [
-   "Hemorrhage",
-   "Death Mark"
+   "Hemorrhage"
   ],
   "gear_race": true
  },
  "date": "2026-11-18",
  "round": "r2",
- "minutes": 18.1
+ "minutes": 11.0
 }

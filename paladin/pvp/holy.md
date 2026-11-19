@@ -2,17 +2,17 @@
 
 [Paladin](../README.md) > [PvP (duels)](README.md) > Holy
 
-**Duel build** 🔬 (30/0/21) — [open the talent tree](https://talentsforever.com/paladin/60/5132301511200105--23033310021201-12). It wins 75% of its duels against the field, number 3 of the 3 paladin specs.
+**Duel build** 🔬 (30/0/21) — [open the talent tree](https://talentsforever.com/paladin/60/5132301511200105--23033310021201-12). It wins 79% of its duels against the field, number 2 of the 3 paladin specs.
 
-**Battleground version** (30/0/21) — [open the talent tree](https://talentsforever.com/paladin/60/5132301511200105--23033320011201-12): the duel build with **Unyielding Faith 2** put back, talents for escapes, defense and control that duels undervalue. It wins 0.5 points fewer of its duels. Judged by duels only: no battleground is simulated yet.
+**Battleground version** (30/0/21) — [open the talent tree](https://talentsforever.com/paladin/60/5122321511200104--23033320011201-12): the duel build with **Unyielding Faith 2**, **Purifying Power 2** put back, talents for escapes, defense and control that duels undervalue. It wins 0.6 points fewer of its duels. Judged by duels only: no battleground is simulated yet.
 
 ## How it plays
 
 In the lab's duels (averages a duel, against the whole field):
 
 - **Presses:** Holy Strike 3.9, Judgement 3.6, Holy Shock 3.1, Holy Light 2.0, Seal of Righteousness 1.9, Flash of Light 1.6, Hammer of Justice 1.2, Divine Favor 1.0, Repentance 1.0, Cleanse 0.9; between them, white swings.
-- **Damage:** Melee 24%, Holy Shock 23%, Judgement 14%, Holy Strike 13%, Seal of Righteousness 13%.
-- **Control on the foe:** Hammer of Justice 5.9 s, Repentance 5.3 s.
+- **Damage:** Melee 33%, Holy Strike 17%, Holy Shock 17%, Judgement 11%, Seal of Righteousness 10%.
+- **Control on the foe:** Hammer of Justice 6.9 s, Repentance 6.0 s.
 - **Signature:** **Holy Shock**, cast 3.1 times a duel: every PvP build here keeps its spec's signature talents and casts their spells.
 - **Gear:** melee gear, the better of melee and caster gear in its duels.
 
@@ -20,15 +20,15 @@ In the lab's duels (averages a duel, against the whole field):
 
 | Against | Their build | Wins | Health margin |
 |---|---|---|---|
-| Warrior | [31/20/0](https://talentsforever.com/warrior/60/03303213032215111-5500013501--12) | 83% | +52 |
-| Rogue | [16/7/28](https://talentsforever.com/rogue/60/30502021201-3200002-0232132313211211-12) | 62% (2% draws) | +17 |
-| Priest | [14/3/34](https://talentsforever.com/priest/60/00531010103-3-45002221211312251-12) | 64% | +10 |
-| Hunter | [5/46/0](https://talentsforever.com/hunter/60/5-3453552011523151--12) | 81% | +45 |
-| Warlock | [5/36/10](https://talentsforever.com/warlock/60/14-0055203201221301351-0055-12) | 100% | +62 |
-| Paladin | [0/20/31](https://talentsforever.com/paladin/60/-50322130013-05233011201301351-12) | 69% | +32 |
-| Shaman | [8/39/4](https://talentsforever.com/shaman/60/053-055030313051212251-04-12) | 61% | +29 |
-| Druid | [11/24/16](https://talentsforever.com/druid/60/05102201-0523200212011212-05033031001-12) | 66% | +22 |
-| Mage | [3/5/43](https://talentsforever.com/mage/60/003-5-053532330121331251-12) | 89% | +63 |
+| Warrior | [31/20/0](https://talentsforever.com/warrior/60/03303213032215111-5500013501--12) | 96% | +77 |
+| Rogue | [16/7/28](https://talentsforever.com/rogue/60/30502021201-3200002-0232132313211211-12) | 93% | +56 |
+| Priest | [14/3/34](https://talentsforever.com/priest/60/00531010103-3-45002221211312251-12) | 52% | -12 |
+| Hunter | [5/46/0](https://talentsforever.com/hunter/60/5-3453552011523151--12) | 54% | +10 |
+| Warlock | [5/36/10](https://talentsforever.com/warlock/60/14-0055203201221301351-0055-12) | 100% | +49 |
+| Paladin | [0/20/31](https://talentsforever.com/paladin/60/-50322130013-05233011201301351-12) | 83% | +40 |
+| Shaman | [8/39/4](https://talentsforever.com/shaman/60/053-055030313051212251-04-12) | 81% | +54 |
+| Druid | [11/24/16](https://talentsforever.com/druid/60/05102201-0523200212011212-05033031001-12) | 64% | +18 |
+| Mage | [3/5/43](https://talentsforever.com/mage/60/003-5-053532330121331251-12) | 93% | +64 |
 
 **Their build:** the class's most-tagged PvP build on talentsforever.com (the field). **Health margin:** your share of health left at the end minus theirs, in points, averaged over the duels (above 0: you end healthier).
 
@@ -36,12 +36,12 @@ In the lab's duels (averages a duel, against the whole field):
 
 What taking each would change in the duels (points of win rate, its points taken from the build's cheapest talents), and who rates it:
 
-- **Unyielding Faith** 1 -> 2: -0.5 (5 of 6 TBC/WotLK builds; class audit: high, resist); [that build](https://talentsforever.com/paladin/60/5132301511200105--23033320011201-12)
-- **Purifying Power** 0 -> 2: -0.7 (class audit: low, dispel); [that build](https://talentsforever.com/paladin/60/5132321311200105--23033310021201-12)
-- **Pursuit of Justice** 0 -> 2: -1.2 (class audit: high, move); [that build](https://talentsforever.com/paladin/60/5132301511200105--23033300211201-12)
-- **Light's Vigil** 0 -> 1: -3.6 (class audit: high); [that build](https://talentsforever.com/paladin/60/51323015112001051--230333100212-12)
-- **Divine Intellect** 0 -> 5: -6.6 (6 of 6 TBC/WotLK builds); [that build](https://talentsforever.com/paladin/60/5132301511200105-5-23033310001-12)
-- **Redoubt** 0 -> 5: -7.8 (4 of 6 TBC/WotLK builds); [that build](https://talentsforever.com/paladin/60/5132301511200105-05-23033310001-12)
+- **Unyielding Faith** 1 -> 2: +0.6 (5 of 6 TBC/WotLK builds; class audit: high, resist); [that build](https://talentsforever.com/paladin/60/5132301511200105--23033320011201-12)
+- **Pursuit of Justice** 0 -> 2: +0.1 (class audit: high, move); [that build](https://talentsforever.com/paladin/60/5132301511200105--23033300211201-12)
+- **Purifying Power** 0 -> 2: -0.9 (class audit: low, dispel); [that build](https://talentsforever.com/paladin/60/5122321511200104--23033310021201-12)
+- **Light's Vigil** 0 -> 1: -3.5 (class audit: high); [that build](https://talentsforever.com/paladin/60/51323015112001051--230333100212-12)
+- **Divine Intellect** 0 -> 5: -6.1 (6 of 6 TBC/WotLK builds); [that build](https://talentsforever.com/paladin/60/5132301511200105-5-23033310001-12)
+- **Redoubt** 0 -> 5: -7.1 (4 of 6 TBC/WotLK builds); [that build](https://talentsforever.com/paladin/60/5132301511200105-05-23033310001-12)
 
 ## Limits
 

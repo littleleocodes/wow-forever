@@ -13,7 +13,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 |---|---|---|---|
 | **Assassination** | [Assassination — Leveling](leveling/assassination.md) 🔬<br>21 s/kill | **✅ Recommended**<br>[Assassination — Raid](raid/assassination.md) 🔬<br>844 DPS (raid) | [Assassination — PvP](pvp/assassination.md) 🔬<br>54% of duels |
 | **Combat** | **✅ Recommended**<br>[Combat — Leveling](leveling/combat.md) 🔬<br>20 s/kill | [Combat — Raid](raid/combat.md) 🔬<br>781 DPS (raid) | [Combat — PvP](pvp/combat.md) 🔬<br>48% of duels |
-| **Subtlety** | [Subtlety — Leveling](leveling/subtlety.md) 🔬<br>22 s/kill | [Subtlety — Raid](raid/subtlety.md) 🔬<br>817 DPS (raid) | [Subtlety — PvP](pvp/subtlety.md) 🔬<br>40% of duels |
+| **Subtlety** | [Subtlety — Leveling](leveling/subtlety.md) 🔬<br>22 s/kill | [Subtlety — Raid](raid/subtlety.md) 🔬<br>817 DPS (raid) | [Subtlety — PvP](pvp/subtlety.md) 🔬<br>51% of duels |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand. **PvP:** the share of duels the build wins in this project's duel lab against one PvP build of every class; no spec is marked recommended there (the lab's AI against itself in an open field is a model of PvP, not PvP).
 
@@ -63,8 +63,8 @@ Ranked by the share of duels the spec's best build wins against the field (nine 
 | # | Spec and build | Wins vs the field | Easiest matchup | Hardest matchup |
 |---|---|---|---|---|
 | 1 | [Assassination](pvp/assassination.md) 🔬 31/8/12 | 54% | Druid 97% | Hunter 3% |
-| 2 | [Combat](pvp/combat.md) 🔬 2/32/17 | 48% | Druid 94% | Hunter 0% |
-| 3 | [Subtlety](pvp/subtlety.md) 🔬 16/4/31 | 40% | Druid 82% | Hunter 2% |
+| 2 | [Subtlety](pvp/subtlety.md) 🔬 21/0/30 | 51% | Druid 93% | Hunter 10% |
+| 3 | [Combat](pvp/combat.md) 🔬 2/32/17 | 48% | Druid 94% | Hunter 0% |
 
 Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie. Everything is a simulation of the beta, not a measurement in the game.
 

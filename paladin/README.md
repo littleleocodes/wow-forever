@@ -10,7 +10,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling (solo) | Raid (group: full raid DPS) | PvP (duels) |
 |---|---|---|---|
-| **Holy** | [Holy — Leveling into the raid build](leveling/holy.md) 🔬<br>34 s/kill | [Holy — Raid healing](raid/holy.md) 🔬<br>healer | [Holy — PvP](pvp/holy.md) 🔬<br>75% of duels |
+| **Holy** | [Holy — Leveling into the raid build](leveling/holy.md) 🔬<br>34 s/kill | [Holy — Raid healing](raid/holy.md) 🔬<br>healer | [Holy — PvP](pvp/holy.md) 🔬<br>79% of duels |
 | **Protection** | [Protection — Leveling into the raid build](leveling/protection.md) 🔬<br>30 s/kill | [Protection — Raid tank](raid/protection.md) 🔬<br>tank | [Protection — PvP](pvp/protection.md) 🔬<br>77% of duels |
 | **Retribution** | [Leveling — Retribution](leveling/retribution.md)<br>27 s/kill | **✅ Recommended**<br>[Retribution — Raid](raid/retribution.md) 🔬<br>843 DPS (raid) | [Retribution — PvP](pvp/retribution.md) 🔬<br>83% of duels |
 
@@ -64,8 +64,8 @@ Ranked by the share of duels the spec's best build wins against the field (nine 
 | # | Spec and build | Wins vs the field | Easiest matchup | Hardest matchup |
 |---|---|---|---|---|
 | 1 | [Retribution](pvp/retribution.md) 🔬 5/16/30 | 83% | Warrior 100% | Hunter 48% |
-| 2 | [Protection](pvp/protection.md) 🔬 10/31/10 | 77% | Rogue 100% | Priest 0% |
-| 3 | [Holy](pvp/holy.md) 🔬 30/0/21 | 75% | Warlock 100% | Shaman 61% |
+| 2 | [Holy](pvp/holy.md) 🔬 30/0/21 | 79% | Warlock 100% | Priest 52% |
+| 3 | [Protection](pvp/protection.md) 🔬 10/31/10 | 77% | Rogue 100% | Priest 0% |
 
 Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie. Everything is a simulation of the beta, not a measurement in the game.
 

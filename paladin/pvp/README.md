@@ -9,8 +9,8 @@ Ranked by the share of duels the spec's best build wins against the field (nine 
 | # | Spec and build | Wins vs the field | Easiest matchup | Hardest matchup |
 |---|---|---|---|---|
 | 1 | [Retribution](retribution.md) 🔬 5/16/30 | 83% | Warrior 100% | Hunter 48% |
-| 2 | [Protection](protection.md) 🔬 10/31/10 | 77% | Rogue 100% | Priest 0% |
-| 3 | [Holy](holy.md) 🔬 30/0/21 | 75% | Warlock 100% | Shaman 61% |
+| 2 | [Holy](holy.md) 🔬 30/0/21 | 79% | Warlock 100% | Priest 52% |
+| 3 | [Protection](protection.md) 🔬 10/31/10 | 77% | Rogue 100% | Priest 0% |
 
 Holy: since round 2 (2026-11-17) a Holy build with Holy Shock duels in the better of melee and caster gear, and every Holy build keeps Holy Shock (the PvP signature rule); the Holy duel build plays in melee gear.
 

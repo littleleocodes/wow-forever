@@ -18305,362 +18305,232 @@
     "Deflection": 2,
     "Repentance": 1
    },
-   "J": 0.8419,
-   "win": 0.75,
-   "margin": 0.3676,
+   "J": 0.8932,
+   "win": 0.7944,
+   "margin": 0.3949,
    "by": {
     "warrior": [
-     0.8333,
+     0.9583,
      0.0,
-     0.5227
+     0.7655
     ],
     "rogue": [
-     0.6167,
-     0.0208,
-     0.1702
+     0.9292,
+     0.0,
+     0.5556
     ],
     "priest": [
-     0.6417,
+     0.5208,
      0.0,
-     0.0965
+     -0.1206
     ],
     "hunter": [
-     0.8083,
-     0.0,
-     0.447
+     0.5375,
+     0.0042,
+     0.1043
     ],
     "warlock": [
-     1.0,
+     0.9958,
      0.0,
-     0.619
+     0.4915
     ],
     "paladin": [
-     0.6875,
+     0.8333,
      0.0,
-     0.3219
+     0.4017
     ],
     "shaman": [
-     0.6125,
+     0.8083,
      0.0,
-     0.2873
+     0.5431
     ],
     "druid": [
-     0.6583,
-     0.0042,
-     0.2168
+     0.6375,
+     0.0,
+     0.1768
     ],
     "mage": [
-     0.8917,
+     0.9292,
      0.0,
-     0.6267
+     0.6364
     ]
    },
    "casts": {
-    "Melee": 9.71,
-    "Holy Shock": 3.48,
-    "Judgement": 3.48,
-    "Holy Strike": 3.18,
-    "Holy Light": 2.52,
+    "Melee": 11.16,
+    "Holy Strike": 3.9,
+    "Judgement": 3.62,
+    "Holy Shock": 3.06,
+    "Holy Light": 1.97,
     "Seal of Righteousness": 1.87,
-    "Cleanse": 1.59,
-    "Hammer of Justice": 1.06,
-    "Divine Favor": 0.99,
-    "Repentance": 0.92,
-    "Hammer of Wrath": 0.7,
-    "Voice of Truth": 0.51,
-    "Divine Shield": 0.42,
-    "Blessing of Freedom": 0.41,
-    "Flash of Light": 0.41,
-    "Holy Shock (heal)": 0.38,
-    "Lay on Hands": 0.07,
-    "Divine Protection": 0.04
+    "Flash of Light": 1.57,
+    "Hammer of Justice": 1.23,
+    "Divine Favor": 1.04,
+    "Repentance": 1.03,
+    "Cleanse": 0.87,
+    "Hammer of Wrath": 0.49,
+    "Voice of Truth": 0.49,
+    "Divine Shield": 0.45,
+    "Blessing of Freedom": 0.43,
+    "Holy Shock (heal)": 0.39,
+    "Lay on Hands": 0.23,
+    "Divine Protection": 0.16,
+    "Blessing of Protection": 0.02
    },
    "dmg_share": {
-    "Melee": 0.2391,
-    "Holy Shock": 0.2266,
-    "Judgement": 0.1419,
-    "Holy Strike": 0.1277,
-    "Seal of Righteousness": 0.1268,
-    "Hammer of Wrath": 0.0613,
-    "Melee (pet)": 0.0387,
-    "Eye for an Eye": 0.0225,
-    "Seal of Righteousness (pet)": 0.0153
+    "Melee": 0.3302,
+    "Holy Strike": 0.1746,
+    "Holy Shock": 0.1671,
+    "Judgement": 0.1145,
+    "Seal of Righteousness": 0.0961,
+    "Melee (pet)": 0.0513,
+    "Hammer of Wrath": 0.036,
+    "Eye for an Eye": 0.0192,
+    "Seal of Righteousness (pet)": 0.0109
    },
    "foe_cc": {
-    "Hammer of Justice": 5.94,
-    "Repentance": 5.32
+    "Hammer of Justice": 6.92,
+    "Repentance": 5.99
    },
+   "gear": "melee",
    "abilities": [
     {
      "talent": "Divine Favor",
-     "casts": 0.99,
+     "casts": 1.04,
      "by": {
       "warrior": 1.0,
-      "rogue": 0.89,
+      "rogue": 0.95,
       "priest": 1.0,
-      "hunter": 0.92,
-      "warlock": 1.08,
-      "paladin": 1.01,
+      "hunter": 1.22,
+      "warlock": 1.13,
+      "paladin": 1.05,
       "shaman": 1.0,
-      "druid": 1.01,
+      "druid": 1.02,
       "mage": 1.0
      }
     },
     {
      "talent": "Holy Shock",
-     "casts": 3.48,
+     "casts": 3.06,
      "by": {
-      "warrior": 2.33,
-      "rogue": 1.94,
-      "priest": 3.42,
-      "hunter": 2.64,
-      "warlock": 6.35,
-      "paladin": 3.82,
-      "shaman": 2.84,
-      "druid": 5.62,
-      "mage": 2.4
+      "warrior": 2.42,
+      "rogue": 2.8,
+      "priest": 3.1,
+      "hunter": 1.12,
+      "warlock": 4.55,
+      "paladin": 3.61,
+      "shaman": 2.73,
+      "druid": 4.94,
+      "mage": 2.24
      }
     },
     {
      "talent": "Repentance",
-     "casts": 0.92,
+     "casts": 1.03,
      "by": {
-      "warrior": 0.19,
-      "rogue": 0.07,
-      "priest": 1.08,
-      "hunter": 1.32,
-      "warlock": 2.0,
-      "paladin": 0.76,
-      "shaman": 0.75,
-      "druid": 1.09,
-      "mage": 1.0
+      "warrior": 0.05,
+      "rogue": 0.04,
+      "priest": 1.19,
+      "hunter": 2.06,
+      "warlock": 2.1,
+      "paladin": 0.87,
+      "shaman": 0.92,
+      "druid": 1.05,
+      "mage": 1.01
      }
     }
    ],
    "inert": [],
    "costs": {
     "Divine Strength": [
-     -0.0028,
-     -0.0028
+     0.0081,
+     0.0081
     ],
     "Spiritual Focus": [
-     0.0739,
-     0.2562
+     0.0174,
+     0.124
     ],
     "Healing Light": [
-     0.0261,
-     0.0812
+     0.005,
+     0.0271
     ],
     "Reverence": [
-     0.024,
-     0.0514
+     0.0232,
+     0.0804
     ],
     "Divine Favor": [
-     0.0818,
-     0.0818
-    ],
-    "Illumination": [
-     0.0039,
-     -0.0113
-    ],
-    "Divine Precision": [
-     0.0102,
-     0.0102
-    ],
-    "Infusion of Light": [
-     0.0481,
-     0.0442
-    ],
-    "Holy Power": [
-     0.0115,
-     0.0191
-    ],
-    "Benediction": [
-     0.0038,
-     0.0269
-    ],
-    "Conviction": [
-     0.0083,
-     0.0768
-    ],
-    "Sanctified Judgement": [
-     0.0393,
-     0.1103
-    ],
-    "Unyielding Faith": [
-     -0.0015,
-     -0.0015
-    ],
-    "Vindication": [
-     0.0103,
-     0.0473
-    ],
-    "Holy Conduit": [
-     0.0132,
-     0.0132
-    ],
-    "Two-Handed Weapon Specialization": [
-     0.0423,
-     0.0933
-    ],
-    "Improved Seals": [
-     0.0101,
-     0.055
-    ],
-    "Eye for an Eye": [
-     0.0012,
-     0.0345
-    ],
-    "Holy Shock": [
-     0.0227,
-     0.0227
-    ],
-    "Sacred Arbiter": [
      0.0695,
      0.0695
     ],
+    "Illumination": [
+     0.0139,
+     0.0452
+    ],
+    "Divine Precision": [
+     0.0069,
+     0.0069
+    ],
+    "Infusion of Light": [
+     0.0237,
+     0.0375
+    ],
+    "Holy Power": [
+     0.0035,
+     0.0426
+    ],
+    "Benediction": [
+     0.0259,
+     0.0285
+    ],
+    "Conviction": [
+     0.0254,
+     0.1054
+    ],
+    "Sanctified Judgement": [
+     0.0583,
+     0.0688
+    ],
+    "Unyielding Faith": [
+     0.0033,
+     0.0033
+    ],
+    "Vindication": [
+     0.022,
+     0.023
+    ],
+    "Holy Conduit": [
+     0.0076,
+     0.0076
+    ],
+    "Two-Handed Weapon Specialization": [
+     0.0126,
+     0.0297
+    ],
+    "Improved Seals": [
+     0.0189,
+     0.0107
+    ],
+    "Eye for an Eye": [
+     0.0031,
+     0.0287
+    ],
+    "Holy Shock": [
+     0.0838,
+     0.0838
+    ],
+    "Sacred Arbiter": [
+     0.0326,
+     0.0326
+    ],
     "Deflection": [
-     0.0179,
-     0.0565
+     -0.0014,
+     0.0093
     ],
     "Repentance": [
-     0.0744,
-     0.0744
+     0.043,
+     0.043
     ]
    },
    "rows": [
-    {
-     "talent": "Divine Precision",
-     "rank": 2,
-     "held": 1,
-     "sources": [
-      "tooltip: duration of silence"
-     ],
-     "move": "1 Divine Strength -> 1 Divine Precision",
-     "allocation": {
-      "Spiritual Focus": 5,
-      "Healing Light": 3,
-      "Reverence": 2,
-      "Divine Favor": 1,
-      "Illumination": 5,
-      "Divine Precision": 2,
-      "Infusion of Light": 2,
-      "Holy Power": 5,
-      "Benediction": 3,
-      "Conviction": 3,
-      "Sanctified Judgement": 3,
-      "Unyielding Faith": 1,
-      "Vindication": 3,
-      "Holy Conduit": 1,
-      "Two-Handed Weapon Specialization": 2,
-      "Improved Seals": 3,
-      "Eye for an Eye": 2,
-      "Holy Shock": 1,
-      "Sacred Arbiter": 1,
-      "Deflection": 2,
-      "Repentance": 1
-     },
-     "J": 0.8404,
-     "dJ": -0.0015,
-     "win": 0.7486,
-     "dwin": -0.0014,
-     "margin": 0.3672,
-     "by": {
-      "warrior": [
-       0.8333,
-       0.0,
-       0.5219
-      ],
-      "rogue": [
-       0.6167,
-       0.0208,
-       0.1747
-      ],
-      "priest": [
-       0.6458,
-       0.0,
-       0.1024
-      ],
-      "hunter": [
-       0.8125,
-       0.0,
-       0.4507
-      ],
-      "warlock": [
-       1.0,
-       0.0,
-       0.6217
-      ],
-      "paladin": [
-       0.6792,
-       0.0,
-       0.3175
-      ],
-      "shaman": [
-       0.6167,
-       0.0,
-       0.2937
-      ],
-      "druid": [
-       0.65,
-       0.0,
-       0.2038
-      ],
-      "mage": [
-       0.8833,
-       0.0,
-       0.6186
-      ]
-     },
-     "casts": {
-      "Melee": 9.7,
-      "Holy Shock": 3.48,
-      "Judgement": 3.47,
-      "Holy Strike": 3.18,
-      "Holy Light": 2.52,
-      "Seal of Righteousness": 1.87,
-      "Cleanse": 1.59,
-      "Hammer of Justice": 1.06,
-      "Divine Favor": 0.99,
-      "Repentance": 0.92,
-      "Hammer of Wrath": 0.7,
-      "Voice of Truth": 0.51,
-      "Divine Shield": 0.42,
-      "Blessing of Freedom": 0.41,
-      "Flash of Light": 0.41,
-      "Holy Shock (heal)": 0.38,
-      "Lay on Hands": 0.08,
-      "Divine Protection": 0.04
-     },
-     "foe_cc": {
-      "Hammer of Justice": 5.93,
-      "Repentance": 5.32
-     },
-     "dmg_share": {
-      "Melee": 0.2385,
-      "Holy Shock": 0.2268,
-      "Judgement": 0.1419,
-      "Holy Strike": 0.1293,
-      "Seal of Righteousness": 0.1265,
-      "Hammer of Wrath": 0.0613,
-      "Melee (pet)": 0.0381,
-      "Eye for an Eye": 0.0224,
-      "Seal of Righteousness (pet)": 0.0152
-     },
-     "own_casts": 0.0,
-     "own_casts_by": {
-      "warrior": 0.0,
-      "rogue": 0.0,
-      "priest": 0.0,
-      "hunter": 0.0,
-      "warlock": 0.0,
-      "paladin": 0.0,
-      "shaman": 0.0,
-      "druid": 0.0,
-      "mage": 0.0
-     },
-     "filler_options": 1
-    },
     {
      "talent": "Unyielding Faith",
      "rank": 2,
@@ -18694,92 +18564,93 @@
       "Deflection": 2,
       "Repentance": 1
      },
-     "J": 0.8327,
-     "dJ": -0.0092,
-     "win": 0.7449,
-     "dwin": -0.0051,
-     "margin": 0.3512,
+     "J": 0.8969,
+     "dJ": 0.0037,
+     "win": 0.8,
+     "dwin": 0.0056,
+     "margin": 0.3877,
      "by": {
       "warrior": [
-       0.8208,
+       0.9542,
        0.0,
-       0.4904
+       0.7429
       ],
       "rogue": [
-       0.6458,
-       0.0083,
-       0.1875
+       0.9583,
+       0.0,
+       0.5894
       ],
       "priest": [
-       0.6833,
+       0.525,
        0.0,
-       0.1652
+       -0.1257
       ],
       "hunter": [
-       0.7792,
-       0.0,
-       0.3917
+       0.5375,
+       0.0042,
+       0.0991
       ],
       "warlock": [
-       1.0,
+       0.9917,
        0.0,
-       0.5909
+       0.4227
       ],
       "paladin": [
-       0.6792,
+       0.8417,
        0.0,
-       0.3039
+       0.4006
       ],
       "shaman": [
-       0.5958,
+       0.8208,
        0.0,
-       0.2762
+       0.5429
       ],
       "druid": [
-       0.6083,
+       0.6417,
        0.0,
-       0.128
+       0.1805
       ],
       "mage": [
-       0.8917,
+       0.9292,
        0.0,
-       0.6267
+       0.6364
       ]
      },
      "casts": {
-      "Melee": 9.93,
-      "Judgement": 3.55,
-      "Holy Shock": 3.54,
-      "Holy Strike": 3.28,
-      "Holy Light": 2.47,
-      "Seal of Righteousness": 1.87,
-      "Cleanse": 1.5,
-      "Hammer of Justice": 1.07,
-      "Divine Favor": 0.98,
-      "Repentance": 0.92,
-      "Hammer of Wrath": 0.71,
-      "Voice of Truth": 0.51,
-      "Flash of Light": 0.44,
-      "Divine Shield": 0.41,
-      "Blessing of Freedom": 0.41,
-      "Holy Shock (heal)": 0.39,
-      "Lay on Hands": 0.08,
-      "Divine Protection": 0.05
+      "Melee": 11.34,
+      "Holy Strike": 3.98,
+      "Judgement": 3.68,
+      "Holy Shock": 3.14,
+      "Holy Light": 1.93,
+      "Seal of Righteousness": 1.85,
+      "Flash of Light": 1.58,
+      "Hammer of Justice": 1.23,
+      "Divine Favor": 1.04,
+      "Repentance": 1.04,
+      "Cleanse": 0.84,
+      "Hammer of Wrath": 0.53,
+      "Voice of Truth": 0.49,
+      "Divine Shield": 0.44,
+      "Blessing of Freedom": 0.43,
+      "Holy Shock (heal)": 0.35,
+      "Lay on Hands": 0.24,
+      "Divine Protection": 0.15,
+      "Blessing of Protection": 0.02
      },
      "foe_cc": {
-      "Hammer of Justice": 5.98,
-      "Repentance": 5.36
+      "Hammer of Justice": 6.93,
+      "Repentance": 6.0
      },
      "dmg_share": {
-      "Melee": 0.2435,
-      "Holy Shock": 0.2284,
-      "Judgement": 0.144,
-      "Holy Strike": 0.1299,
-      "Seal of Righteousness": 0.1288,
-      "Hammer of Wrath": 0.0609,
-      "Melee (pet)": 0.0389,
-      "Seal of Righteousness (pet)": 0.0143,
-      "Eye for an Eye": 0.0114
+      "Melee": 0.3344,
+      "Holy Strike": 0.1778,
+      "Holy Shock": 0.1709,
+      "Judgement": 0.1158,
+      "Seal of Righteousness": 0.0974,
+      "Melee (pet)": 0.0473,
+      "Hammer of Wrath": 0.0373,
+      "Eye for an Eye": 0.0096,
+      "Seal of Righteousness (pet)": 0.0094
      },
      "own_casts": 0.0,
      "own_casts_by": {
@@ -18796,23 +18667,23 @@
      "filler_options": 1
     },
     {
-     "talent": "Purifying Power",
+     "talent": "Divine Precision",
      "rank": 2,
-     "held": 0,
+     "held": 1,
      "sources": [
-      "stats model: low, dispel"
+      "tooltip: duration of silence"
      ],
-     "move": "2 Illumination -> 2 Purifying Power",
+     "move": "1 Holy Power -> 1 Divine Precision",
      "allocation": {
       "Divine Strength": 1,
       "Spiritual Focus": 5,
       "Healing Light": 3,
       "Reverence": 2,
       "Divine Favor": 1,
-      "Illumination": 3,
-      "Divine Precision": 1,
+      "Illumination": 5,
+      "Divine Precision": 2,
       "Infusion of Light": 2,
-      "Holy Power": 5,
+      "Holy Power": 4,
       "Benediction": 3,
       "Conviction": 3,
       "Sanctified Judgement": 3,
@@ -18825,95 +18696,95 @@
       "Holy Shock": 1,
       "Sacred Arbiter": 1,
       "Deflection": 2,
-      "Repentance": 1,
-      "Purifying Power": 2
+      "Repentance": 1
      },
-     "J": 0.832,
-     "dJ": -0.0098,
-     "win": 0.7426,
-     "dwin": -0.0074,
-     "margin": 0.3578,
+     "J": 0.8968,
+     "dJ": 0.0036,
+     "win": 0.7968,
+     "dwin": 0.0023,
+     "margin": 0.4001,
      "by": {
       "warrior": [
-       0.8333,
+       0.9583,
        0.0,
-       0.5227
+       0.7638
       ],
       "rogue": [
-       0.6167,
-       0.0208,
-       0.1702
+       0.9292,
+       0.0,
+       0.5503
       ],
       "priest": [
-       0.6417,
+       0.525,
        0.0,
-       0.0963
+       -0.1054
       ],
       "hunter": [
-       0.8,
+       0.5375,
        0.0,
-       0.4303
+       0.0932
       ],
       "warlock": [
-       1.0,
+       0.9958,
        0.0,
-       0.608
+       0.4939
       ],
       "paladin": [
-       0.6792,
+       0.8292,
        0.0,
-       0.31
+       0.3997
       ],
       "shaman": [
-       0.6083,
+       0.8208,
        0.0,
-       0.2744
+       0.5572
       ],
       "druid": [
-       0.6125,
-       0.0,
-       0.1816
+       0.6458,
+       0.0125,
+       0.2148
       ],
       "mage": [
-       0.8917,
+       0.9292,
        0.0,
-       0.6267
+       0.633
       ]
      },
      "casts": {
-      "Melee": 9.76,
-      "Judgement": 3.48,
-      "Holy Shock": 3.46,
-      "Holy Strike": 3.2,
-      "Holy Light": 2.5,
-      "Seal of Righteousness": 1.87,
-      "Cleanse": 1.58,
-      "Hammer of Justice": 1.06,
-      "Divine Favor": 0.99,
-      "Repentance": 0.92,
-      "Hammer of Wrath": 0.68,
-      "Voice of Truth": 0.51,
-      "Flash of Light": 0.44,
-      "Divine Shield": 0.42,
-      "Blessing of Freedom": 0.42,
+      "Melee": 11.1,
+      "Holy Strike": 3.88,
+      "Judgement": 3.59,
+      "Holy Shock": 3.05,
+      "Holy Light": 1.96,
+      "Seal of Righteousness": 1.86,
+      "Flash of Light": 1.58,
+      "Hammer of Justice": 1.23,
+      "Divine Favor": 1.05,
+      "Repentance": 1.04,
+      "Cleanse": 0.87,
+      "Hammer of Wrath": 0.49,
+      "Voice of Truth": 0.49,
+      "Divine Shield": 0.45,
+      "Blessing of Freedom": 0.43,
       "Holy Shock (heal)": 0.39,
-      "Lay on Hands": 0.08,
-      "Divine Protection": 0.05
+      "Lay on Hands": 0.24,
+      "Divine Protection": 0.16,
+      "Blessing of Protection": 0.02
      },
      "foe_cc": {
-      "Hammer of Justice": 5.97,
-      "Repentance": 5.34
+      "Hammer of Justice": 6.92,
+      "Repentance": 6.02
      },
      "dmg_share": {
-      "Melee": 0.2402,
-      "Holy Shock": 0.2254,
-      "Judgement": 0.1422,
-      "Holy Strike": 0.1288,
-      "Seal of Righteousness": 0.1267,
-      "Hammer of Wrath": 0.0599,
-      "Melee (pet)": 0.0388,
-      "Eye for an Eye": 0.0226,
-      "Seal of Righteousness (pet)": 0.0153
+      "Melee": 0.3288,
+      "Holy Strike": 0.177,
+      "Holy Shock": 0.1672,
+      "Judgement": 0.114,
+      "Seal of Righteousness": 0.0957,
+      "Melee (pet)": 0.0511,
+      "Hammer of Wrath": 0.0362,
+      "Eye for an Eye": 0.0192,
+      "Seal of Righteousness (pet)": 0.0108
      },
      "own_casts": 0.0,
      "own_casts_by": {
@@ -18936,7 +18807,7 @@
      "sources": [
       "stats model: high, move"
      ],
-     "move": "1 Unyielding Faith + 1 Eye for an Eye -> 2 Pursuit of Justice",
+     "move": "1 Eye for an Eye + 1 Unyielding Faith -> 2 Pursuit of Justice",
      "allocation": {
       "Divine Strength": 1,
       "Spiritual Focus": 5,
@@ -18961,92 +18832,93 @@
       "Repentance": 1,
       "Pursuit of Justice": 2
      },
-     "J": 0.8257,
-     "dJ": -0.0162,
-     "win": 0.7384,
-     "dwin": -0.0116,
-     "margin": 0.3491,
+     "J": 0.8928,
+     "dJ": -0.0004,
+     "win": 0.7954,
+     "dwin": 0.0009,
+     "margin": 0.3897,
      "by": {
       "warrior": [
-       0.8208,
+       0.9542,
        0.0,
-       0.4904
+       0.7429
       ],
       "rogue": [
-       0.6333,
-       0.0167,
-       0.1774
+       0.9583,
+       0.0,
+       0.6037
       ],
       "priest": [
-       0.6167,
+       0.5208,
        0.0,
-       0.0789
+       -0.1158
       ],
       "hunter": [
-       0.8,
+       0.4958,
        0.0,
-       0.4224
+       0.0312
       ],
       "warlock": [
-       1.0,
+       0.9958,
        0.0,
-       0.6376
+       0.4848
       ],
       "paladin": [
-       0.6792,
+       0.8417,
        0.0,
-       0.3039
+       0.4006
       ],
       "shaman": [
-       0.5958,
+       0.8208,
        0.0,
-       0.2762
+       0.5429
       ],
       "druid": [
-       0.6083,
+       0.6417,
        0.0,
-       0.128
+       0.1805
       ],
       "mage": [
-       0.8917,
+       0.9292,
        0.0,
-       0.6267
+       0.6364
       ]
      },
      "casts": {
-      "Melee": 9.85,
-      "Judgement": 3.55,
-      "Holy Shock": 3.5,
-      "Holy Strike": 3.22,
-      "Holy Light": 2.55,
-      "Seal of Righteousness": 1.9,
-      "Cleanse": 1.61,
-      "Hammer of Justice": 1.07,
-      "Divine Favor": 0.99,
-      "Repentance": 0.95,
-      "Hammer of Wrath": 0.68,
-      "Voice of Truth": 0.51,
-      "Flash of Light": 0.45,
-      "Blessing of Freedom": 0.42,
-      "Divine Shield": 0.42,
-      "Holy Shock (heal)": 0.4,
-      "Lay on Hands": 0.09,
-      "Divine Protection": 0.05
+      "Melee": 11.27,
+      "Holy Strike": 3.95,
+      "Judgement": 3.62,
+      "Holy Shock": 3.05,
+      "Holy Light": 1.98,
+      "Seal of Righteousness": 1.87,
+      "Flash of Light": 1.58,
+      "Hammer of Justice": 1.24,
+      "Divine Favor": 1.05,
+      "Repentance": 1.03,
+      "Cleanse": 0.85,
+      "Hammer of Wrath": 0.5,
+      "Voice of Truth": 0.49,
+      "Divine Shield": 0.46,
+      "Blessing of Freedom": 0.43,
+      "Holy Shock (heal)": 0.41,
+      "Lay on Hands": 0.23,
+      "Divine Protection": 0.15,
+      "Blessing of Protection": 0.02
      },
      "foe_cc": {
-      "Hammer of Justice": 6.03,
-      "Repentance": 5.49
+      "Hammer of Justice": 6.96,
+      "Repentance": 5.99
      },
      "dmg_share": {
-      "Melee": 0.2434,
-      "Holy Shock": 0.2288,
-      "Judgement": 0.1455,
-      "Seal of Righteousness": 0.129,
-      "Holy Strike": 0.1289,
-      "Hammer of Wrath": 0.0596,
-      "Melee (pet)": 0.0382,
-      "Seal of Righteousness (pet)": 0.015,
-      "Eye for an Eye": 0.0116
+      "Melee": 0.3341,
+      "Holy Strike": 0.1787,
+      "Holy Shock": 0.1679,
+      "Judgement": 0.1151,
+      "Seal of Righteousness": 0.0965,
+      "Melee (pet)": 0.0508,
+      "Hammer of Wrath": 0.0366,
+      "Seal of Righteousness (pet)": 0.0106,
+      "Eye for an Eye": 0.0097
      },
      "own_casts": 0.0,
      "own_casts_by": {
@@ -19069,7 +18941,7 @@
      "sources": [
       "tooltip: incapacitated, stunned"
      ],
-     "move": "1 Unyielding Faith -> 1 Seal of Command",
+     "move": "1 Eye for an Eye -> 1 Seal of Command",
      "allocation": {
       "Divine Strength": 1,
       "Spiritual Focus": 5,
@@ -19083,6 +18955,142 @@
       "Benediction": 3,
       "Conviction": 3,
       "Sanctified Judgement": 3,
+      "Unyielding Faith": 1,
+      "Vindication": 3,
+      "Holy Conduit": 1,
+      "Two-Handed Weapon Specialization": 2,
+      "Improved Seals": 3,
+      "Eye for an Eye": 1,
+      "Holy Shock": 1,
+      "Sacred Arbiter": 1,
+      "Deflection": 2,
+      "Repentance": 1,
+      "Seal of Command": 1
+     },
+     "J": 0.888,
+     "dJ": -0.0052,
+     "win": 0.7935,
+     "dwin": -0.0009,
+     "margin": 0.3778,
+     "by": {
+      "warrior": [
+       0.9833,
+       0.0083,
+       0.6074
+      ],
+      "rogue": [
+       0.95,
+       0.0,
+       0.6081
+      ],
+      "priest": [
+       0.7042,
+       0.0042,
+       0.1348
+      ],
+      "hunter": [
+       0.5167,
+       0.0042,
+       0.101
+      ],
+      "warlock": [
+       1.0,
+       0.0,
+       0.493
+      ],
+      "paladin": [
+       0.675,
+       0.0,
+       0.1437
+      ],
+      "shaman": [
+       0.7208,
+       0.0,
+       0.4152
+      ],
+      "druid": [
+       0.65,
+       0.0042,
+       0.2478
+      ],
+      "mage": [
+       0.9417,
+       0.0,
+       0.6497
+      ]
+     },
+     "casts": {
+      "Melee": 11.01,
+      "Holy Strike": 3.71,
+      "Judgement": 3.28,
+      "Holy Shock": 2.85,
+      "Holy Light": 1.93,
+      "Seal of Command": 1.8,
+      "Flash of Light": 1.62,
+      "Hammer of Justice": 1.39,
+      "Repentance": 1.08,
+      "Divine Favor": 1.05,
+      "Cleanse": 0.82,
+      "Hammer of Wrath": 0.54,
+      "Voice of Truth": 0.47,
+      "Holy Shock (heal)": 0.42,
+      "Blessing of Freedom": 0.4,
+      "Divine Shield": 0.37,
+      "Lay on Hands": 0.24,
+      "Divine Protection": 0.2,
+      "Blessing of Protection": 0.01
+     },
+     "foe_cc": {
+      "Hammer of Justice": 7.89,
+      "Repentance": 6.25
+     },
+     "dmg_share": {
+      "Melee": 0.3271,
+      "Holy Strike": 0.1723,
+      "Holy Shock": 0.1552,
+      "Judgement": 0.1267,
+      "Seal of Command": 0.108,
+      "Melee (pet)": 0.0518,
+      "Hammer of Wrath": 0.0374,
+      "Seal of Command (pet)": 0.0126,
+      "Eye for an Eye": 0.009
+     },
+     "own_casts": 1.8,
+     "own_casts_by": {
+      "warrior": 1.06,
+      "rogue": 1.65,
+      "priest": 1.22,
+      "hunter": 1.97,
+      "warlock": 3.46,
+      "paladin": 2.09,
+      "shaman": 1.34,
+      "druid": 2.05,
+      "mage": 1.32
+     },
+     "filler_options": 1
+    },
+    {
+     "talent": "Purifying Power",
+     "rank": 2,
+     "held": 0,
+     "sources": [
+      "stats model: low, dispel"
+     ],
+     "move": "1 Holy Power + 1 Healing Light -> 2 Purifying Power",
+     "allocation": {
+      "Divine Strength": 1,
+      "Spiritual Focus": 5,
+      "Healing Light": 2,
+      "Reverence": 2,
+      "Divine Favor": 1,
+      "Illumination": 5,
+      "Divine Precision": 1,
+      "Infusion of Light": 2,
+      "Holy Power": 4,
+      "Benediction": 3,
+      "Conviction": 3,
+      "Sanctified Judgement": 3,
+      "Unyielding Faith": 1,
       "Vindication": 3,
       "Holy Conduit": 1,
       "Two-Handed Weapon Specialization": 2,
@@ -19092,106 +19100,107 @@
       "Sacred Arbiter": 1,
       "Deflection": 2,
       "Repentance": 1,
-      "Seal of Command": 1
+      "Purifying Power": 2
      },
-     "J": 0.8172,
-     "dJ": -0.0247,
-     "win": 0.7324,
-     "dwin": -0.0176,
-     "margin": 0.3392,
+     "J": 0.8814,
+     "dJ": -0.0118,
+     "win": 0.7856,
+     "dwin": -0.0088,
+     "margin": 0.3829,
      "by": {
       "warrior": [
-       0.8333,
-       0.0042,
-       0.5123
+       0.9583,
+       0.0,
+       0.7613
       ],
       "rogue": [
-       0.6583,
-       0.025,
-       0.2315
+       0.9333,
+       0.0,
+       0.5613
       ],
       "priest": [
-       0.6083,
+       0.4875,
        0.0,
-       0.0793
+       -0.1544
       ],
       "hunter": [
-       0.7792,
-       0.0042,
-       0.3792
+       0.525,
+       0.0083,
+       0.082
       ],
       "warlock": [
-       1.0,
+       0.9958,
        0.0,
-       0.5925
+       0.4851
       ],
       "paladin": [
-       0.6125,
+       0.7958,
        0.0,
-       0.1562
+       0.3481
       ],
       "shaman": [
-       0.6125,
+       0.8125,
        0.0042,
-       0.2873
+       0.545
       ],
       "druid": [
-       0.6125,
-       0.0042,
-       0.1893
+       0.6292,
+       0.0125,
+       0.1785
       ],
       "mage": [
-       0.875,
+       0.9333,
        0.0,
-       0.6254
+       0.6393
       ]
      },
      "casts": {
-      "Melee": 10.03,
-      "Holy Shock": 3.43,
-      "Judgement": 3.4,
-      "Holy Strike": 3.24,
-      "Holy Light": 2.64,
-      "Seal of Command": 1.9,
-      "Cleanse": 1.57,
-      "Hammer of Justice": 1.22,
-      "Repentance": 1.01,
-      "Divine Favor": 1.0,
-      "Hammer of Wrath": 0.68,
-      "Flash of Light": 0.57,
+      "Melee": 11.32,
+      "Holy Strike": 3.96,
+      "Judgement": 3.63,
+      "Holy Shock": 3.03,
+      "Holy Light": 1.98,
+      "Seal of Righteousness": 1.88,
+      "Flash of Light": 1.66,
+      "Hammer of Justice": 1.25,
+      "Repentance": 1.05,
+      "Divine Favor": 1.05,
+      "Cleanse": 0.86,
       "Voice of Truth": 0.49,
+      "Hammer of Wrath": 0.49,
+      "Divine Shield": 0.46,
       "Blessing of Freedom": 0.42,
       "Holy Shock (heal)": 0.41,
-      "Divine Shield": 0.4,
-      "Lay on Hands": 0.11,
-      "Divine Protection": 0.07
+      "Lay on Hands": 0.25,
+      "Divine Protection": 0.17,
+      "Blessing of Protection": 0.02
      },
      "foe_cc": {
-      "Hammer of Justice": 6.85,
-      "Repentance": 5.84
+      "Hammer of Justice": 7.0,
+      "Repentance": 6.11
      },
      "dmg_share": {
-      "Melee": 0.2495,
-      "Holy Shock": 0.2187,
-      "Judgement": 0.1622,
-      "Holy Strike": 0.1359,
-      "Seal of Command": 0.1037,
-      "Hammer of Wrath": 0.0581,
-      "Melee (pet)": 0.0382,
-      "Eye for an Eye": 0.0226,
-      "Seal of Command (pet)": 0.0111
+      "Melee": 0.3312,
+      "Holy Strike": 0.1764,
+      "Holy Shock": 0.1653,
+      "Judgement": 0.114,
+      "Seal of Righteousness": 0.0951,
+      "Melee (pet)": 0.0527,
+      "Hammer of Wrath": 0.035,
+      "Eye for an Eye": 0.0191,
+      "Seal of Righteousness (pet)": 0.0112
      },
-     "own_casts": 1.9,
+     "own_casts": 0.0,
      "own_casts_by": {
-      "warrior": 1.05,
-      "rogue": 1.5,
-      "priest": 1.43,
-      "hunter": 2.22,
-      "warlock": 3.62,
-      "paladin": 2.11,
-      "shaman": 1.39,
-      "druid": 2.38,
-      "mage": 1.39
+      "warrior": 0.0,
+      "rogue": 0.0,
+      "priest": 0.0,
+      "hunter": 0.0,
+      "warlock": 0.0,
+      "paladin": 0.0,
+      "shaman": 0.0,
+      "druid": 0.0,
+      "mage": 0.0
      },
      "filler_options": 1
     },
@@ -19227,90 +19236,91 @@
       "Deflection": 2,
       "Light's Vigil": 1
      },
-     "J": 0.7898,
+     "J": 0.8411,
      "dJ": -0.0521,
-     "win": 0.7139,
-     "dwin": -0.0361,
-     "margin": 0.3037,
+     "win": 0.7593,
+     "dwin": -0.0352,
+     "margin": 0.3274,
      "by": {
       "warrior": [
-       0.875,
-       0.0042,
-       0.5052
+       0.9375,
+       0.0,
+       0.7217
       ],
       "rogue": [
-       0.6083,
-       0.0208,
-       0.15
+       0.9333,
+       0.0,
+       0.5543
       ],
       "priest": [
-       0.5542,
+       0.4292,
        0.0,
-       0.083
+       -0.1199
       ],
       "hunter": [
-       0.7625,
-       0.0,
-       0.3583
+       0.4917,
+       0.0042,
+       -0.004
       ],
       "warlock": [
        0.9958,
        0.0,
-       0.5871
+       0.472
       ],
       "paladin": [
-       0.6875,
+       0.7833,
        0.0,
-       0.3031
+       0.3555
       ],
       "shaman": [
-       0.5417,
+       0.75,
        0.0042,
-       0.1203
+       0.3292
       ],
       "druid": [
-       0.5542,
+       0.675,
        0.0042,
-       0.0843
+       0.1963
       ],
       "mage": [
-       0.8458,
+       0.8375,
        0.0,
-       0.542
+       0.4414
       ]
      },
      "casts": {
-      "Melee": 9.81,
-      "Holy Shock": 3.75,
-      "Judgement": 3.6,
-      "Holy Strike": 3.27,
-      "Holy Light": 2.53,
+      "Melee": 11.4,
+      "Holy Strike": 3.98,
+      "Judgement": 3.76,
+      "Holy Shock": 3.26,
       "Seal of Righteousness": 1.93,
-      "Cleanse": 1.76,
-      "Hammer of Justice": 1.06,
-      "Divine Favor": 1.0,
-      "Hammer of Wrath": 0.66,
-      "Voice of Truth": 0.52,
-      "Divine Shield": 0.51,
-      "Blessing of Freedom": 0.44,
-      "Flash of Light": 0.41,
-      "Holy Shock (heal)": 0.4,
-      "Lay on Hands": 0.08,
-      "Divine Protection": 0.04
+      "Holy Light": 1.92,
+      "Flash of Light": 1.78,
+      "Hammer of Justice": 1.24,
+      "Cleanse": 1.1,
+      "Divine Favor": 1.05,
+      "Divine Shield": 0.53,
+      "Voice of Truth": 0.51,
+      "Holy Shock (heal)": 0.44,
+      "Blessing of Freedom": 0.43,
+      "Hammer of Wrath": 0.43,
+      "Lay on Hands": 0.27,
+      "Divine Protection": 0.16,
+      "Blessing of Protection": 0.02
      },
      "foe_cc": {
-      "Hammer of Justice": 5.99
+      "Hammer of Justice": 7.05
      },
      "dmg_share": {
-      "Holy Shock": 0.2305,
-      "Melee": 0.2305,
-      "Judgement": 0.1423,
-      "Holy Strike": 0.1268,
-      "Seal of Righteousness": 0.1261,
-      "Hammer of Wrath": 0.0581,
-      "Melee (pet)": 0.0454,
-      "Eye for an Eye": 0.0228,
-      "Seal of Righteousness (pet)": 0.0175
+      "Melee": 0.3232,
+      "Holy Strike": 0.1742,
+      "Holy Shock": 0.1696,
+      "Judgement": 0.1154,
+      "Seal of Righteousness": 0.097,
+      "Melee (pet)": 0.0581,
+      "Hammer of Wrath": 0.0305,
+      "Eye for an Eye": 0.0195,
+      "Seal of Righteousness (pet)": 0.0124
      },
      "own_casts": 0.0,
      "own_casts_by": {
@@ -19356,89 +19366,90 @@
       "Deflection": 2,
       "Divine Intellect": 5
      },
-     "J": 0.7516,
-     "dJ": -0.0903,
-     "win": 0.6843,
-     "dwin": -0.0657,
-     "margin": 0.2693,
+     "J": 0.8095,
+     "dJ": -0.0837,
+     "win": 0.7338,
+     "dwin": -0.0606,
+     "margin": 0.3028,
      "by": {
       "warrior": [
-       0.7833,
+       0.9292,
        0.0,
-       0.3624
+       0.6624
       ],
       "rogue": [
-       0.5958,
+       0.9292,
        0.0,
-       0.1308
+       0.5776
       ],
       "priest": [
-       0.4042,
+       0.2833,
        0.0,
-       -0.0361
+       -0.2274
       ],
       "hunter": [
-       0.7667,
-       0.0,
-       0.3558
+       0.4583,
+       0.0208,
+       -0.0227
       ],
       "warlock": [
        1.0,
        0.0,
-       0.6172
+       0.4899
       ],
       "paladin": [
-       0.675,
+       0.825,
        0.0,
-       0.2863
+       0.385
       ],
       "shaman": [
-       0.4875,
+       0.675,
        0.0,
-       0.0289
+       0.2378
       ],
       "druid": [
-       0.5917,
+       0.6708,
        0.0,
-       0.1065
+       0.1822
       ],
       "mage": [
-       0.8542,
+       0.8333,
        0.0,
-       0.5717
+       0.4403
       ]
      },
      "casts": {
-      "Melee": 10.44,
-      "Holy Shock": 3.97,
-      "Judgement": 3.84,
-      "Holy Strike": 3.47,
-      "Holy Light": 2.72,
+      "Melee": 12.19,
+      "Holy Strike": 4.24,
+      "Judgement": 4.0,
+      "Holy Shock": 3.44,
+      "Holy Light": 2.1,
       "Seal of Righteousness": 2.02,
-      "Cleanse": 1.79,
-      "Hammer of Justice": 1.08,
-      "Divine Favor": 1.0,
-      "Hammer of Wrath": 0.67,
-      "Divine Shield": 0.54,
-      "Voice of Truth": 0.53,
-      "Blessing of Freedom": 0.47,
-      "Holy Shock (heal)": 0.43,
-      "Flash of Light": 0.37,
-      "Lay on Hands": 0.1,
-      "Divine Protection": 0.04
+      "Flash of Light": 1.87,
+      "Hammer of Justice": 1.3,
+      "Cleanse": 1.13,
+      "Divine Favor": 1.07,
+      "Divine Shield": 0.56,
+      "Voice of Truth": 0.52,
+      "Holy Shock (heal)": 0.46,
+      "Hammer of Wrath": 0.43,
+      "Blessing of Freedom": 0.41,
+      "Lay on Hands": 0.27,
+      "Divine Protection": 0.17,
+      "Blessing of Protection": 0.02
      },
      "foe_cc": {
-      "Hammer of Justice": 6.13
+      "Hammer of Justice": 7.38
      },
      "dmg_share": {
-      "Melee": 0.2397,
-      "Holy Shock": 0.2364,
-      "Judgement": 0.1471,
-      "Seal of Righteousness": 0.131,
-      "Holy Strike": 0.1306,
-      "Hammer of Wrath": 0.0559,
-      "Melee (pet)": 0.0426,
-      "Seal of Righteousness (pet)": 0.0167
+      "Melee": 0.3351,
+      "Holy Strike": 0.1781,
+      "Holy Shock": 0.1716,
+      "Judgement": 0.1165,
+      "Seal of Righteousness": 0.0987,
+      "Melee (pet)": 0.0571,
+      "Hammer of Wrath": 0.0304,
+      "Seal of Righteousness (pet)": 0.0126
      },
      "own_casts": 0.0,
      "own_casts_by": {
@@ -19484,89 +19495,90 @@
       "Deflection": 2,
       "Redoubt": 5
      },
-     "J": 0.7338,
-     "dJ": -0.1081,
-     "win": 0.6722,
-     "dwin": -0.0778,
-     "margin": 0.2465,
+     "J": 0.7925,
+     "dJ": -0.1007,
+     "win": 0.7231,
+     "dwin": -0.0713,
+     "margin": 0.2773,
      "by": {
       "warrior": [
-       0.7833,
+       0.9292,
        0.0,
-       0.3624
+       0.6629
       ],
       "rogue": [
-       0.5875,
+       0.9292,
        0.0,
-       0.1243
+       0.5834
       ],
       "priest": [
-       0.4,
+       0.2833,
        0.0,
-       -0.0494
+       -0.2842
       ],
       "hunter": [
-       0.7667,
-       0.0,
-       0.346
+       0.4625,
+       0.0083,
+       -0.0537
       ],
       "warlock": [
-       1.0,
+       0.9958,
        0.0,
-       0.5933
+       0.4627
       ],
       "paladin": [
-       0.6667,
+       0.7542,
        0.0,
-       0.2618
+       0.324
       ],
       "shaman": [
-       0.4417,
+       0.6667,
        0.0,
-       -0.0256
+       0.2229
       ],
       "druid": [
-       0.55,
+       0.6458,
        0.0,
-       0.0408
+       0.1443
       ],
       "mage": [
-       0.8542,
+       0.8417,
        0.0,
-       0.5645
+       0.4336
       ]
      },
      "casts": {
-      "Melee": 10.56,
-      "Holy Shock": 3.91,
-      "Judgement": 3.86,
-      "Holy Strike": 3.54,
-      "Holy Light": 2.66,
-      "Seal of Righteousness": 2.03,
-      "Cleanse": 1.77,
-      "Hammer of Justice": 1.1,
-      "Divine Favor": 1.0,
-      "Hammer of Wrath": 0.62,
-      "Divine Shield": 0.55,
-      "Flash of Light": 0.55,
-      "Voice of Truth": 0.53,
-      "Blessing of Freedom": 0.47,
-      "Holy Shock (heal)": 0.44,
-      "Lay on Hands": 0.12,
-      "Divine Protection": 0.05
+      "Melee": 12.17,
+      "Holy Strike": 4.26,
+      "Judgement": 3.92,
+      "Holy Shock": 3.3,
+      "Flash of Light": 2.0,
+      "Seal of Righteousness": 2.0,
+      "Holy Light": 1.99,
+      "Hammer of Justice": 1.31,
+      "Cleanse": 1.12,
+      "Divine Favor": 1.06,
+      "Divine Shield": 0.57,
+      "Voice of Truth": 0.52,
+      "Holy Shock (heal)": 0.46,
+      "Blessing of Freedom": 0.44,
+      "Hammer of Wrath": 0.41,
+      "Lay on Hands": 0.29,
+      "Divine Protection": 0.17,
+      "Blessing of Protection": 0.02
      },
      "foe_cc": {
-      "Hammer of Justice": 6.25
+      "Hammer of Justice": 7.4
      },
      "dmg_share": {
-      "Melee": 0.243,
-      "Holy Shock": 0.2331,
-      "Judgement": 0.1481,
-      "Holy Strike": 0.1334,
-      "Seal of Righteousness": 0.1315,
-      "Hammer of Wrath": 0.0506,
-      "Melee (pet)": 0.0435,
-      "Seal of Righteousness (pet)": 0.0168
+      "Melee": 0.3356,
+      "Holy Strike": 0.1817,
+      "Holy Shock": 0.1678,
+      "Judgement": 0.1158,
+      "Seal of Righteousness": 0.0984,
+      "Melee (pet)": 0.0586,
+      "Hammer of Wrath": 0.0294,
+      "Seal of Righteousness (pet)": 0.0125
      },
      "own_casts": 0.0,
      "own_casts_by": {
@@ -19581,6 +19593,134 @@
       "mage": 0.0
      },
      "filler_options": 1
+    },
+    {
+     "talent": "Sacred Duty",
+     "rank": 2,
+     "held": 0,
+     "sources": [
+      "stats model: medium, defensive"
+     ],
+     "move": "2 Eye for an Eye + 2 Two-Handed Weapon Specialization + 1 Repentance + 1 Sacred Arbiter + 1 Unyielding Faith -> 2 Sacred Duty + 5 Divine Intellect (tier points)",
+     "allocation": {
+      "Divine Strength": 1,
+      "Spiritual Focus": 5,
+      "Healing Light": 3,
+      "Reverence": 2,
+      "Divine Favor": 1,
+      "Illumination": 5,
+      "Divine Precision": 1,
+      "Infusion of Light": 2,
+      "Holy Power": 5,
+      "Benediction": 3,
+      "Conviction": 3,
+      "Sanctified Judgement": 3,
+      "Vindication": 3,
+      "Holy Conduit": 1,
+      "Improved Seals": 3,
+      "Holy Shock": 1,
+      "Deflection": 2,
+      "Sacred Duty": 2,
+      "Divine Intellect": 5
+     },
+     "J": 0.7725,
+     "dJ": -0.1207,
+     "win": 0.7065,
+     "dwin": -0.088,
+     "margin": 0.2641,
+     "by": {
+      "warrior": [
+       0.9375,
+       0.0,
+       0.6455
+      ],
+      "rogue": [
+       0.9417,
+       0.0,
+       0.5786
+      ],
+      "priest": [
+       0.1792,
+       0.0,
+       -0.3846
+      ],
+      "hunter": [
+       0.4542,
+       0.0167,
+       -0.0159
+      ],
+      "warlock": [
+       1.0,
+       0.0,
+       0.4452
+      ],
+      "paladin": [
+       0.7667,
+       0.0,
+       0.3333
+      ],
+      "shaman": [
+       0.65,
+       0.0,
+       0.2193
+      ],
+      "druid": [
+       0.575,
+       0.0,
+       0.0665
+      ],
+      "mage": [
+       0.8542,
+       0.0,
+       0.4889
+      ]
+     },
+     "casts": {
+      "Melee": 12.46,
+      "Holy Strike": 4.36,
+      "Judgement": 4.05,
+      "Holy Shock": 3.46,
+      "Holy Light": 2.15,
+      "Seal of Righteousness": 2.06,
+      "Flash of Light": 1.96,
+      "Hammer of Justice": 1.35,
+      "Cleanse": 1.14,
+      "Divine Favor": 1.08,
+      "Divine Shield": 0.58,
+      "Voice of Truth": 0.53,
+      "Holy Shock (heal)": 0.5,
+      "Blessing of Freedom": 0.43,
+      "Hammer of Wrath": 0.41,
+      "Lay on Hands": 0.29,
+      "Divine Protection": 0.2,
+      "Blessing of Protection": 0.02
+     },
+     "foe_cc": {
+      "Hammer of Justice": 7.64
+     },
+     "dmg_share": {
+      "Melee": 0.348,
+      "Holy Shock": 0.1742,
+      "Holy Strike": 0.1541,
+      "Judgement": 0.1206,
+      "Seal of Righteousness": 0.103,
+      "Melee (pet)": 0.0576,
+      "Hammer of Wrath": 0.0298,
+      "Seal of Righteousness (pet)": 0.0127
+     },
+     "own_casts": 0.0,
+     "own_casts_by": {
+      "warrior": 0.0,
+      "rogue": 0.0,
+      "priest": 0.0,
+      "hunter": 0.0,
+      "warlock": 0.0,
+      "paladin": 0.0,
+      "shaman": 0.0,
+      "druid": 0.0,
+      "mage": 0.0
+     },
+     "filler_options": 2
     },
     {
      "talent": "Guardian's Favor",
@@ -19612,217 +19752,90 @@
       "Guardian's Favor": 2,
       "Divine Intellect": 5
      },
-     "J": 0.7234,
-     "dJ": -0.1185,
-     "win": 0.6593,
-     "dwin": -0.0907,
-     "margin": 0.2565,
+     "J": 0.7724,
+     "dJ": -0.1208,
+     "win": 0.7046,
+     "dwin": -0.0898,
+     "margin": 0.2711,
      "by": {
       "warrior": [
-       0.7708,
+       0.9375,
        0.0,
-       0.339
+       0.6455
       ],
       "rogue": [
-       0.6,
+       0.9417,
        0.0,
-       0.1286
+       0.5786
       ],
       "priest": [
-       0.2417,
+       0.1792,
        0.0,
-       -0.2003
+       -0.3846
       ],
       "hunter": [
-       0.8167,
-       0.0,
-       0.437
+       0.4417,
+       0.0042,
+       -0.0184
       ],
       "warlock": [
-       0.9917,
+       1.0,
        0.0,
-       0.6117
+       0.4432
       ],
       "paladin": [
-       0.675,
-       0.0,
-       0.2979
-      ],
-      "shaman": [
-       0.4042,
-       0.0,
-       -0.0302
-      ],
-      "druid": [
-       0.6167,
-       0.0,
-       0.1447
-      ],
-      "mage": [
-       0.8167,
-       0.0,
-       0.58
-      ]
-     },
-     "casts": {
-      "Melee": 10.59,
-      "Holy Shock": 3.99,
-      "Judgement": 3.93,
-      "Holy Strike": 3.58,
-      "Holy Light": 2.75,
-      "Seal of Righteousness": 2.06,
-      "Cleanse": 1.5,
-      "Hammer of Justice": 1.1,
-      "Divine Favor": 1.0,
-      "Hammer of Wrath": 0.66,
-      "Divine Shield": 0.58,
-      "Voice of Truth": 0.53,
-      "Blessing of Freedom": 0.47,
-      "Holy Shock (heal)": 0.44,
-      "Flash of Light": 0.37,
-      "Lay on Hands": 0.12,
-      "Divine Protection": 0.04
-     },
-     "foe_cc": {
-      "Hammer of Justice": 6.26
-     },
-     "dmg_share": {
-      "Melee": 0.2445,
-      "Holy Shock": 0.2409,
-      "Judgement": 0.1517,
-      "Seal of Righteousness": 0.1355,
-      "Holy Strike": 0.1126,
-      "Hammer of Wrath": 0.0566,
-      "Melee (pet)": 0.0417,
-      "Seal of Righteousness (pet)": 0.0164
-     },
-     "own_casts": 0.0,
-     "own_casts_by": {
-      "warrior": 0.0,
-      "rogue": 0.0,
-      "priest": 0.0,
-      "hunter": 0.0,
-      "warlock": 0.0,
-      "paladin": 0.0,
-      "shaman": 0.0,
-      "druid": 0.0,
-      "mage": 0.0
-     },
-     "filler_options": 2
-    },
-    {
-     "talent": "Sacred Duty",
-     "rank": 2,
-     "held": 0,
-     "sources": [
-      "stats model: medium, defensive"
-     ],
-     "move": "2 Eye for an Eye + 2 Two-Handed Weapon Specialization + 1 Repentance + 1 Sacred Arbiter + 1 Unyielding Faith -> 2 Sacred Duty + 5 Divine Intellect (tier points)",
-     "allocation": {
-      "Divine Strength": 1,
-      "Spiritual Focus": 5,
-      "Healing Light": 3,
-      "Reverence": 2,
-      "Divine Favor": 1,
-      "Illumination": 5,
-      "Divine Precision": 1,
-      "Infusion of Light": 2,
-      "Holy Power": 5,
-      "Benediction": 3,
-      "Conviction": 3,
-      "Sanctified Judgement": 3,
-      "Vindication": 3,
-      "Holy Conduit": 1,
-      "Improved Seals": 3,
-      "Holy Shock": 1,
-      "Deflection": 2,
-      "Sacred Duty": 2,
-      "Divine Intellect": 5
-     },
-     "J": 0.7174,
-     "dJ": -0.1245,
-     "win": 0.656,
-     "dwin": -0.094,
-     "margin": 0.2456,
-     "by": {
-      "warrior": [
-       0.7708,
-       0.0,
-       0.339
-      ],
-      "rogue": [
-       0.6,
-       0.0,
-       0.1286
-      ],
-      "priest": [
-       0.2417,
-       0.0,
-       -0.1987
-      ],
-      "hunter": [
        0.7667,
        0.0,
-       0.376
-      ],
-      "warlock": [
-       0.9917,
-       0.0,
-       0.616
-      ],
-      "paladin": [
-       0.675,
-       0.0,
-       0.2972
+       0.3327
       ],
       "shaman": [
-       0.4167,
+       0.65,
        0.0,
-       -0.0301
+       0.2187
       ],
       "druid": [
-       0.6167,
+       0.5625,
        0.0,
-       0.1447
+       0.0606
       ],
       "mage": [
-       0.825,
+       0.8625,
        0.0,
-       0.5379
+       0.5633
       ]
      },
      "casts": {
-      "Melee": 10.58,
-      "Holy Shock": 4.0,
-      "Judgement": 3.91,
-      "Holy Strike": 3.56,
-      "Holy Light": 2.76,
+      "Melee": 12.36,
+      "Holy Strike": 4.32,
+      "Judgement": 4.06,
+      "Holy Shock": 3.48,
+      "Holy Light": 2.16,
       "Seal of Righteousness": 2.06,
-      "Cleanse": 1.84,
-      "Hammer of Justice": 1.11,
-      "Divine Favor": 1.0,
-      "Hammer of Wrath": 0.62,
+      "Flash of Light": 1.79,
+      "Hammer of Justice": 1.32,
+      "Divine Favor": 1.07,
+      "Cleanse": 0.94,
       "Divine Shield": 0.56,
       "Voice of Truth": 0.53,
-      "Blessing of Freedom": 0.47,
-      "Holy Shock (heal)": 0.43,
-      "Flash of Light": 0.41,
-      "Lay on Hands": 0.12,
-      "Divine Protection": 0.05,
-      "Blessing of Protection": 0.01
+      "Holy Shock (heal)": 0.48,
+      "Hammer of Wrath": 0.43,
+      "Blessing of Freedom": 0.4,
+      "Lay on Hands": 0.29,
+      "Divine Protection": 0.19,
+      "Blessing of Protection": 0.02
      },
      "foe_cc": {
-      "Hammer of Justice": 6.26
+      "Hammer of Justice": 7.47
      },
      "dmg_share": {
-      "Melee": 0.2453,
-      "Holy Shock": 0.2419,
-      "Judgement": 0.1518,
-      "Seal of Righteousness": 0.1351,
-      "Holy Strike": 0.112,
-      "Hammer of Wrath": 0.0556,
-      "Melee (pet)": 0.0418,
-      "Seal of Righteousness (pet)": 0.0164
+      "Melee": 0.3446,
+      "Holy Shock": 0.1769,
+      "Holy Strike": 0.153,
+      "Judgement": 0.1215,
+      "Seal of Righteousness": 0.1033,
+      "Melee (pet)": 0.0578,
+      "Hammer of Wrath": 0.0301,
+      "Seal of Righteousness (pet)": 0.0127
      },
      "own_casts": 0.0,
      "own_casts_by": {
@@ -19845,7 +19858,7 @@
      "sources": [
       "expansions 3 of 6 (3)"
      ],
-     "move": "2 Eye for an Eye + 2 Two-Handed Weapon Specialization + 1 Repentance + 1 Sacred Arbiter + 1 Unyielding Faith + 1 Conviction -> 3 Precision + 5 Divine Intellect (tier points)",
+     "move": "2 Eye for an Eye + 2 Two-Handed Weapon Specialization + 2 Vindication + 1 Repentance + 1 Sacred Arbiter -> 3 Precision + 5 Divine Intellect (tier points)",
      "allocation": {
       "Divine Strength": 1,
       "Spiritual Focus": 5,
@@ -19857,9 +19870,10 @@
       "Infusion of Light": 2,
       "Holy Power": 5,
       "Benediction": 3,
-      "Conviction": 2,
+      "Conviction": 3,
       "Sanctified Judgement": 3,
-      "Vindication": 3,
+      "Unyielding Faith": 1,
+      "Vindication": 1,
       "Holy Conduit": 1,
       "Improved Seals": 3,
       "Holy Shock": 1,
@@ -19867,89 +19881,90 @@
       "Precision": 3,
       "Divine Intellect": 5
      },
-     "J": 0.7017,
-     "dJ": -0.1401,
-     "win": 0.6431,
-     "dwin": -0.1069,
-     "margin": 0.2347,
+     "J": 0.7709,
+     "dJ": -0.1223,
+     "win": 0.7046,
+     "dwin": -0.0898,
+     "margin": 0.2651,
      "by": {
       "warrior": [
-       0.7792,
+       0.9583,
        0.0,
-       0.3561
+       0.6765
       ],
       "rogue": [
-       0.5792,
+       0.9292,
        0.0,
-       0.0945
+       0.5727
       ],
       "priest": [
-       0.2,
+       0.25,
        0.0,
-       -0.2044
+       -0.3017
       ],
       "hunter": [
-       0.7667,
-       0.0,
-       0.3709
+       0.4458,
+       0.025,
+       -0.044
       ],
       "warlock": [
        1.0,
        0.0,
-       0.5951
+       0.4507
       ],
       "paladin": [
-       0.6375,
+       0.7542,
        0.0,
-       0.2846
+       0.3134
       ],
       "shaman": [
-       0.4292,
+       0.6042,
        0.0,
-       0.0024
+       0.1624
       ],
       "druid": [
-       0.5542,
+       0.5333,
        0.0,
-       0.0531
+       0.0563
       ],
       "mage": [
-       0.8417,
+       0.8667,
        0.0,
-       0.5604
+       0.4994
       ]
      },
      "casts": {
-      "Melee": 10.53,
-      "Holy Shock": 3.98,
-      "Judgement": 3.91,
-      "Holy Strike": 3.55,
-      "Holy Light": 2.77,
-      "Seal of Righteousness": 2.06,
-      "Cleanse": 1.82,
-      "Hammer of Justice": 1.1,
-      "Divine Favor": 1.0,
-      "Hammer of Wrath": 0.61,
-      "Divine Shield": 0.56,
+      "Melee": 12.11,
+      "Holy Strike": 4.24,
+      "Judgement": 4.03,
+      "Holy Shock": 3.43,
+      "Holy Light": 2.15,
+      "Seal of Righteousness": 2.03,
+      "Flash of Light": 1.93,
+      "Hammer of Justice": 1.33,
+      "Cleanse": 1.14,
+      "Divine Favor": 1.07,
+      "Divine Shield": 0.58,
       "Voice of Truth": 0.53,
-      "Blessing of Freedom": 0.48,
-      "Holy Shock (heal)": 0.43,
-      "Flash of Light": 0.42,
-      "Lay on Hands": 0.13,
-      "Divine Protection": 0.06
+      "Holy Shock (heal)": 0.49,
+      "Hammer of Wrath": 0.42,
+      "Blessing of Freedom": 0.42,
+      "Lay on Hands": 0.27,
+      "Divine Protection": 0.17,
+      "Blessing of Protection": 0.02
      },
      "foe_cc": {
-      "Hammer of Justice": 6.22
+      "Hammer of Justice": 7.52
      },
      "dmg_share": {
-      "Melee": 0.2465,
-      "Holy Shock": 0.2385,
-      "Judgement": 0.1539,
-      "Seal of Righteousness": 0.1364,
-      "Holy Strike": 0.1117,
-      "Hammer of Wrath": 0.0527,
-      "Melee (pet)": 0.043,
-      "Seal of Righteousness (pet)": 0.0172
+      "Melee": 0.3464,
+      "Holy Shock": 0.1725,
+      "Holy Strike": 0.1521,
+      "Judgement": 0.1219,
+      "Seal of Righteousness": 0.1044,
+      "Melee (pet)": 0.06,
+      "Hammer of Wrath": 0.0296,
+      "Seal of Righteousness (pet)": 0.0132
      },
      "own_casts": 0.0,
      "own_casts_by": {
@@ -19994,89 +20009,90 @@
       "Redoubt": 5,
       "Divine Intellect": 5
      },
-     "J": 0.6281,
-     "dJ": -0.2138,
-     "win": 0.5875,
-     "dwin": -0.1625,
-     "margin": 0.1625,
+     "J": 0.7118,
+     "dJ": -0.1813,
+     "win": 0.6597,
+     "dwin": -0.1347,
+     "margin": 0.2085,
      "by": {
       "warrior": [
-       0.6667,
+       0.9417,
        0.0,
-       0.2637
+       0.6311
       ],
       "rogue": [
-       0.6042,
+       0.9292,
        0.0,
-       0.0767
+       0.5505
       ],
       "priest": [
-       0.1458,
+       0.0958,
        0.0,
-       -0.2802
+       -0.4817
       ],
       "hunter": [
-       0.75,
-       0.0,
-       0.3472
+       0.4167,
+       0.0208,
+       -0.0731
       ],
       "warlock": [
-       0.9958,
+       1.0,
        0.0,
-       0.6189
+       0.4551
       ],
       "paladin": [
-       0.5833,
+       0.6875,
        0.0,
-       0.1785
+       0.2253
       ],
       "shaman": [
-       0.2708,
-       0.0,
-       -0.2025
+       0.5708,
+       0.0042,
+       0.1469
       ],
       "druid": [
-       0.4458,
+       0.4417,
        0.0,
-       -0.0902
+       -0.0811
       ],
       "mage": [
-       0.825,
+       0.8542,
        0.0,
-       0.5501
+       0.5032
       ]
      },
      "casts": {
-      "Melee": 10.34,
-      "Holy Shock": 3.89,
-      "Judgement": 3.83,
-      "Holy Strike": 3.48,
-      "Holy Light": 2.74,
-      "Seal of Righteousness": 2.06,
-      "Cleanse": 1.84,
-      "Hammer of Justice": 1.11,
-      "Divine Favor": 1.0,
-      "Divine Shield": 0.56,
-      "Hammer of Wrath": 0.56,
-      "Voice of Truth": 0.52,
-      "Blessing of Freedom": 0.47,
-      "Flash of Light": 0.44,
-      "Holy Shock (heal)": 0.42,
-      "Lay on Hands": 0.13,
-      "Divine Protection": 0.05
+      "Melee": 12.6,
+      "Holy Strike": 4.42,
+      "Judgement": 4.07,
+      "Holy Shock": 3.41,
+      "Holy Light": 2.22,
+      "Seal of Righteousness": 2.08,
+      "Flash of Light": 1.95,
+      "Hammer of Justice": 1.37,
+      "Cleanse": 1.13,
+      "Divine Favor": 1.09,
+      "Divine Shield": 0.6,
+      "Voice of Truth": 0.54,
+      "Holy Shock (heal)": 0.51,
+      "Blessing of Freedom": 0.43,
+      "Hammer of Wrath": 0.38,
+      "Lay on Hands": 0.31,
+      "Divine Protection": 0.19,
+      "Blessing of Protection": 0.02
      },
      "foe_cc": {
-      "Hammer of Justice": 6.25
+      "Hammer of Justice": 7.76
      },
      "dmg_share": {
-      "Melee": 0.2443,
-      "Holy Shock": 0.2431,
-      "Judgement": 0.1523,
-      "Seal of Righteousness": 0.1352,
-      "Holy Strike": 0.1137,
-      "Hammer of Wrath": 0.0518,
-      "Melee (pet)": 0.0427,
-      "Seal of Righteousness (pet)": 0.0169
+      "Melee": 0.3484,
+      "Holy Shock": 0.1724,
+      "Holy Strike": 0.1566,
+      "Judgement": 0.1206,
+      "Seal of Righteousness": 0.1033,
+      "Melee (pet)": 0.0587,
+      "Hammer of Wrath": 0.0271,
+      "Seal of Righteousness (pet)": 0.0128
      },
      "own_casts": 0.0,
      "own_casts_by": {
@@ -33167,17 +33183,18 @@
    "class": "rogue",
    "tree": "Subtlety",
    "date": "2026-11-18",
-   "record_J": 0.3673,
-   "record_win": 0.4023,
+   "record_J": 0.5119,
+   "record_win": 0.5056,
    "winner": {
     "Malice": 5,
     "Remorseless Attacks": 1,
     "Ruthlessness": 3,
-    "Lethality": 1,
+    "Lethality": 2,
     "Vigor": 1,
     "Cold Blood": 1,
+    "Improved Poisons": 3,
     "Master of Deception": 1,
-    "Opportunity": 4,
+    "Opportunity": 2,
     "Setup": 3,
     "Camouflage": 1,
     "Dirty Deeds": 2,
@@ -33186,330 +33203,314 @@
     "Premeditation": 1,
     "Serrated Blades": 3,
     "Ghostly Strike": 1,
+    "Heightened Senses": 2,
     "Hemorrhage": 1,
     "Preparation": 1,
     "Boot Knife": 5,
+    "Venom": 1,
+    "Vile Poisons": 1,
     "Improved Ambush": 2,
-    "Improved Slice and Dice": 3,
-    "Death Mark": 1,
-    "Blood Splatter": 1,
-    "Coup de Grace": 3,
-    "Efficient Strikes": 1
+    "Improved Slice and Dice": 3
    },
-   "J": 0.3673,
-   "win": 0.4023,
-   "margin": -0.1402,
+   "J": 0.5119,
+   "win": 0.5056,
+   "margin": 0.0253,
    "by": {
     "warrior": [
-     0.2875,
+     0.4083,
      0.0,
-     -0.2062
+     -0.0468
     ],
     "rogue": [
-     0.5292,
+     0.5917,
      0.0,
-     0.0441
+     0.246
     ],
     "priest": [
-     0.65,
+     0.7292,
      0.0,
-     0.2132
+     0.3684
     ],
     "hunter": [
-     0.0208,
+     0.0958,
      0.0,
-     -0.7683
+     -0.6515
     ],
     "warlock": [
-     0.4667,
+     0.5542,
      0.0,
-     -0.1096
+     0.0129
     ],
     "paladin": [
-     0.1208,
+     0.1542,
      0.0,
-     -0.3978
+     -0.3869
     ],
     "shaman": [
-     0.3833,
-     0.0,
-     -0.1951
+     0.575,
+     0.0125,
+     0.0588
     ],
     "druid": [
-     0.8167,
+     0.9292,
      0.0,
-     0.3964
+     0.5729
     ],
     "mage": [
-     0.3458,
+     0.5125,
      0.0,
-     -0.2388
+     0.0538
     ]
    },
    "casts": {
-    "Melee": 10.13,
-    "Melee (off-hand)": 10.13,
-    "Hemorrhage": 2.78,
-    "Shank": 2.15,
+    "Melee": 9.58,
+    "Melee (off-hand)": 9.58,
+    "Hemorrhage": 2.12,
+    "Shank": 2.04,
+    "Eviscerate": 1.68,
     "Kidney Shot": 1.24,
-    "Ghostly Strike": 1.2,
-    "Death Mark": 1.16,
-    "Cheap Shot": 0.89,
-    "Premeditation": 0.86,
-    "Garrote": 0.83,
-    "Eviscerate": 0.62,
+    "Ghostly Strike": 1.18,
+    "Cheap Shot": 0.92,
+    "Cold Blood": 0.92,
+    "Premeditation": 0.87,
+    "Garrote": 0.82,
     "Sap": 0.61,
-    "Kick": 0.54,
-    "Sprint": 0.54,
-    "Evasion": 0.41,
-    "Vanish": 0.37,
-    "Cold Blood": 0.33,
-    "Gouge": 0.21,
-    "Blind": 0.2,
-    "Preparation": 0.15,
+    "Sprint": 0.52,
+    "Kick": 0.5,
+    "Vanish": 0.41,
+    "Evasion": 0.39,
+    "Blind": 0.3,
+    "Gouge": 0.18,
+    "Preparation": 0.17,
     "Ambush": 0.06
    },
    "dmg_share": {
-    "Melee": 0.1978,
-    "Eviscerate": 0.1674,
-    "Death Mark": 0.1546,
-    "Hemorrhage": 0.1099,
-    "Garrote": 0.1081,
-    "Melee (off-hand)": 0.0988,
-    "Instant Poison": 0.0591,
-    "Ghostly Strike": 0.0559,
-    "Shank": 0.0141,
-    "Melee (pet)": 0.0099,
-    "Ambush": 0.0079,
-    "Kick": 0.0073,
-    "Melee (off-hand) (pet)": 0.005,
-    "Gouge": 0.0024,
-    "Instant Poison (pet)": 0.0018
+    "Eviscerate": 0.4049,
+    "Melee": 0.161,
+    "Instant Poison": 0.1302,
+    "Melee (off-hand)": 0.08,
+    "Hemorrhage": 0.0736,
+    "Garrote": 0.0612,
+    "Ghostly Strike": 0.0486,
+    "Melee (pet)": 0.0106,
+    "Shank": 0.0105,
+    "Kick": 0.0058,
+    "Melee (off-hand) (pet)": 0.0052,
+    "Instant Poison (pet)": 0.0036,
+    "Ambush": 0.0027,
+    "Gouge": 0.0021
    },
    "foe_cc": {
     "Sap": 6.11,
-    "Kidney Shot": 5.7,
-    "Cheap Shot": 3.06,
-    "Blind": 1.96,
-    "Gouge": 0.35
+    "Kidney Shot": 5.77,
+    "Cheap Shot": 3.17,
+    "Blind": 2.85,
+    "Gouge": 0.32
    },
+   "gear": null,
    "abilities": [
     {
      "talent": "Cold Blood",
-     "casts": 0.33,
+     "casts": 0.92,
      "by": {
-      "warrior": 0.19,
-      "rogue": 0.42,
-      "priest": 0.81,
-      "hunter": 0.02,
-      "warlock": 0.3,
-      "paladin": 0.42,
-      "shaman": 0.25,
-      "druid": 0.48,
-      "mage": 0.1
-     }
-    },
-    {
-     "talent": "Death Mark",
-     "casts": 1.16,
-     "by": {
-      "warrior": 0.9,
-      "rogue": 0.95,
-      "priest": 1.19,
-      "hunter": 0.33,
-      "warlock": 2.15,
-      "paladin": 1.3,
-      "shaman": 0.9,
-      "druid": 1.16,
-      "mage": 1.57
+      "warrior": 0.88,
+      "rogue": 0.83,
+      "priest": 1.0,
+      "hunter": 0.34,
+      "warlock": 1.02,
+      "paladin": 1.18,
+      "shaman": 0.88,
+      "druid": 0.98,
+      "mage": 1.22
      }
     },
     {
      "talent": "Ghostly Strike",
-     "casts": 1.2,
+     "casts": 1.18,
      "by": {
-      "warrior": 1.35,
-      "rogue": 1.09,
-      "priest": 1.05,
-      "hunter": 0.38,
-      "warlock": 2.24,
-      "paladin": 1.29,
+      "warrior": 1.25,
+      "rogue": 1.08,
+      "priest": 1.13,
+      "hunter": 0.39,
+      "warlock": 2.04,
+      "paladin": 1.31,
       "shaman": 1.0,
-      "druid": 1.39,
-      "mage": 1.05
+      "druid": 1.25,
+      "mage": 1.16
      }
     },
     {
      "talent": "Hemorrhage",
-     "casts": 2.78,
+     "casts": 2.12,
      "by": {
-      "warrior": 1.9,
-      "rogue": 3.3,
-      "priest": 3.9,
-      "hunter": 0.59,
-      "warlock": 4.82,
-      "paladin": 2.92,
-      "shaman": 2.72,
-      "druid": 4.11,
-      "mage": 0.74
+      "warrior": 1.34,
+      "rogue": 1.5,
+      "priest": 3.27,
+      "hunter": 0.47,
+      "warlock": 3.77,
+      "paladin": 3.62,
+      "shaman": 1.98,
+      "druid": 2.6,
+      "mage": 0.5
      }
     },
     {
      "talent": "Premeditation",
-     "casts": 0.86,
+     "casts": 0.87,
      "by": {
       "warrior": 1.0,
       "rogue": 0.51,
       "priest": 1.0,
-      "hunter": 0.67,
+      "hunter": 0.66,
       "warlock": 1.0,
-      "paladin": 1.0,
+      "paladin": 1.01,
       "shaman": 1.0,
       "druid": 0.5,
-      "mage": 1.09
+      "mage": 1.18
      }
     },
     {
      "talent": "Preparation",
-     "casts": 0.15,
+     "casts": 0.17,
      "by": {
-      "warrior": 0.02,
+      "warrior": 0.01,
       "rogue": 0.06,
       "priest": 0.0,
       "hunter": 0.25,
-      "warlock": 0.1,
-      "paladin": 0.16,
+      "warlock": 0.02,
+      "paladin": 0.35,
       "shaman": 0.0,
       "druid": 0.04,
-      "mage": 0.75
+      "mage": 0.81
      }
     }
    ],
    "inert": [
     "Remorseless Attacks",
     "Master of Deception",
+    "Heightened Senses",
     "Improved Slice and Dice"
    ],
    "costs": {
     "Malice": [
-     0.001,
-     0.0482
+     -0.0002,
+     0.0445
     ],
     "Remorseless Attacks": [
      0.0,
      0.0
     ],
     "Ruthlessness": [
-     0.0108,
-     0.0421
+     0.0255,
+     0.0397
     ],
     "Lethality": [
-     0.0001,
-     0.0001
+     0.007,
+     0.0097
     ],
     "Vigor": [
-     0.0773,
-     0.0773
+     -0.0067,
+     -0.0067
     ],
     "Cold Blood": [
-     0.0394,
-     0.0394
+     0.1064,
+     0.1064
+    ],
+    "Improved Poisons": [
+     0.0218,
+     0.0163
     ],
     "Master of Deception": [
      0.0,
      0.0
     ],
     "Opportunity": [
-     -0.0054,
-     0.0234
+     0.0042,
+     0.0168
     ],
     "Setup": [
-     0.0108,
-     0.0203
+     0.0254,
+     0.0686
     ],
     "Camouflage": [
-     0.021,
-     0.021
+     0.0439,
+     0.0439
     ],
     "Dirty Deeds": [
-     0.0353,
-     0.1781
+     0.0813,
+     0.2176
     ],
     "Dirty Tricks": [
-     0.0263,
-     0.0262
+     -0.0176,
+     0.0077
     ],
     "Initiative": [
-     0.0513,
-     0.0006
+     0.0466,
+     0.095
     ],
     "Premeditation": [
-     0.0602,
-     0.0602
+     0.0441,
+     0.0441
     ],
     "Serrated Blades": [
-     -0.0097,
-     -0.0113
+     0.0103,
+     0.0301
     ],
     "Ghostly Strike": [
-     0.2024,
-     0.2024
+     0.115,
+     0.115
+    ],
+    "Heightened Senses": [
+     0.0,
+     0.0
     ],
     "Hemorrhage": [
-     0.0417,
-     0.0417
+     0.0536,
+     0.0536
     ],
     "Preparation": [
-     0.0482,
-     0.0482
+     0.0717,
+     0.0717
     ],
     "Boot Knife": [
-     0.0739,
-     0.19
+     0.024,
+     0.2004
+    ],
+    "Venom": [
+     0.1123,
+     0.1123
+    ],
+    "Vile Poisons": [
+     0.0077,
+     0.0077
     ],
     "Improved Ambush": [
-     0.0036,
-     0.0065
+     0.0065,
+     0.0098
     ],
     "Improved Slice and Dice": [
      0.0,
      0.0
-    ],
-    "Death Mark": [
-     -0.1207,
-     -0.1207
-    ],
-    "Blood Splatter": [
-     0.0402,
-     0.0402
-    ],
-    "Coup de Grace": [
-     0.0358,
-     0.0811
-    ],
-    "Efficient Strikes": [
-     0.0423,
-     0.0423
     ]
    },
    "rows": [
     {
-     "talent": "Lethality",
-     "rank": 2,
-     "held": 1,
+     "talent": "Improved Ambush",
+     "rank": 3,
+     "held": 2,
      "sources": [
-      "community tf-hemo (2)",
-      "expansions 1 of 2 (2)"
+      "community tf-hemo (3)"
      ],
-     "move": "1 Remorseless Attacks -> 1 Lethality",
+     "move": "1 Master of Deception -> 1 Improved Ambush",
      "allocation": {
       "Malice": 5,
+      "Remorseless Attacks": 1,
       "Ruthlessness": 3,
       "Lethality": 2,
       "Vigor": 1,
       "Cold Blood": 1,
-      "Master of Deception": 1,
-      "Opportunity": 4,
+      "Improved Poisons": 3,
+      "Opportunity": 2,
       "Setup": 3,
       "Camouflage": 1,
       "Dirty Deeds": 2,
@@ -33518,114 +33519,111 @@
       "Premeditation": 1,
       "Serrated Blades": 3,
       "Ghostly Strike": 1,
+      "Heightened Senses": 2,
       "Hemorrhage": 1,
       "Preparation": 1,
       "Boot Knife": 5,
-      "Improved Ambush": 2,
-      "Improved Slice and Dice": 3,
-      "Death Mark": 1,
-      "Blood Splatter": 1,
-      "Coup de Grace": 3,
-      "Efficient Strikes": 1
+      "Venom": 1,
+      "Vile Poisons": 1,
+      "Improved Ambush": 3,
+      "Improved Slice and Dice": 3
      },
-     "J": 0.3746,
-     "dJ": 0.0073,
-     "win": 0.4083,
-     "dwin": 0.006,
-     "margin": -0.135,
+     "J": 0.5137,
+     "dJ": 0.0019,
+     "win": 0.5069,
+     "dwin": 0.0014,
+     "margin": 0.0272,
      "by": {
       "warrior": [
-       0.2917,
+       0.4083,
        0.0,
-       -0.2045
+       -0.0468
       ],
       "rogue": [
-       0.5458,
+       0.5917,
        0.0,
-       0.0551
+       0.246
       ],
       "priest": [
-       0.6667,
+       0.7292,
        0.0,
-       0.2226
+       0.3684
       ],
       "hunter": [
-       0.0208,
+       0.0958,
        0.0,
-       -0.7675
+       -0.6515
       ],
       "warlock": [
-       0.4625,
+       0.5542,
        0.0,
-       -0.1011
+       0.0129
       ],
       "paladin": [
-       0.1292,
+       0.1542,
        0.0,
-       -0.3916
+       -0.3869
       ],
       "shaman": [
-       0.3833,
-       0.0,
-       -0.1939
+       0.575,
+       0.0125,
+       0.0588
       ],
       "druid": [
-       0.8333,
+       0.9292,
        0.0,
-       0.4084
+       0.5729
       ],
       "mage": [
-       0.3417,
+       0.525,
        0.0,
-       -0.2424
+       0.0711
       ]
      },
      "casts": {
-      "Melee": 10.1,
-      "Melee (off-hand)": 10.1,
-      "Hemorrhage": 2.77,
-      "Shank": 2.14,
+      "Melee": 9.58,
+      "Melee (off-hand)": 9.58,
+      "Hemorrhage": 2.12,
+      "Shank": 2.04,
+      "Eviscerate": 1.69,
       "Kidney Shot": 1.24,
-      "Ghostly Strike": 1.2,
-      "Death Mark": 1.16,
-      "Cheap Shot": 0.89,
-      "Premeditation": 0.86,
-      "Garrote": 0.83,
-      "Eviscerate": 0.61,
+      "Ghostly Strike": 1.18,
+      "Cheap Shot": 0.92,
+      "Cold Blood": 0.92,
+      "Premeditation": 0.87,
+      "Garrote": 0.82,
       "Sap": 0.61,
-      "Sprint": 0.54,
-      "Kick": 0.54,
-      "Evasion": 0.41,
-      "Vanish": 0.37,
-      "Cold Blood": 0.33,
-      "Gouge": 0.21,
-      "Blind": 0.2,
-      "Preparation": 0.15,
+      "Sprint": 0.52,
+      "Kick": 0.5,
+      "Vanish": 0.41,
+      "Evasion": 0.39,
+      "Blind": 0.3,
+      "Gouge": 0.18,
+      "Preparation": 0.17,
       "Ambush": 0.06
      },
      "foe_cc": {
       "Sap": 6.11,
-      "Kidney Shot": 5.7,
-      "Cheap Shot": 3.06,
-      "Blind": 1.96,
-      "Gouge": 0.35
+      "Kidney Shot": 5.76,
+      "Cheap Shot": 3.17,
+      "Blind": 2.85,
+      "Gouge": 0.32
      },
      "dmg_share": {
-      "Melee": 0.1972,
-      "Eviscerate": 0.1668,
-      "Death Mark": 0.1545,
-      "Hemorrhage": 0.1115,
-      "Garrote": 0.1075,
-      "Melee (off-hand)": 0.0985,
-      "Instant Poison": 0.0589,
-      "Ghostly Strike": 0.0567,
-      "Shank": 0.014,
-      "Melee (pet)": 0.0098,
-      "Ambush": 0.0079,
-      "Kick": 0.0073,
-      "Melee (off-hand) (pet)": 0.005,
-      "Gouge": 0.0024,
-      "Instant Poison (pet)": 0.0018
+      "Eviscerate": 0.4052,
+      "Melee": 0.1608,
+      "Instant Poison": 0.1301,
+      "Melee (off-hand)": 0.0799,
+      "Hemorrhage": 0.0735,
+      "Garrote": 0.0611,
+      "Ghostly Strike": 0.0484,
+      "Melee (pet)": 0.0106,
+      "Shank": 0.0105,
+      "Kick": 0.0058,
+      "Melee (off-hand) (pet)": 0.0052,
+      "Instant Poison (pet)": 0.0036,
+      "Ambush": 0.003,
+      "Gouge": 0.0021
      },
      "own_casts": 0.0,
      "own_casts_by": {
@@ -33639,30 +33637,27 @@
       "druid": 0.0,
       "mage": 0.0
      },
-     "filler_options": 1,
-     "confirm": {
-      "seed": 4,
-      "dJ": 0.005,
-      "dwin": 0.0042
-     },
-     "confirmed": false
+     "filler_options": 2
     },
     {
-     "talent": "Improved Ambush",
+     "talent": "Improved Gouge",
      "rank": 3,
-     "held": 2,
+     "held": 0,
      "sources": [
-      "community tf-hemo (3)"
+      "community tf-hemo (3)",
+      "expansions 1 of 2 (3)",
+      "stats model: stun"
      ],
-     "move": "1 Master of Deception -> 1 Improved Ambush",
+     "move": "2 Improved Slice and Dice + 1 Remorseless Attacks -> 3 Improved Gouge",
      "allocation": {
       "Malice": 5,
-      "Remorseless Attacks": 1,
       "Ruthlessness": 3,
-      "Lethality": 1,
+      "Lethality": 2,
       "Vigor": 1,
       "Cold Blood": 1,
-      "Opportunity": 4,
+      "Improved Poisons": 3,
+      "Master of Deception": 1,
+      "Opportunity": 2,
       "Setup": 3,
       "Camouflage": 1,
       "Dirty Deeds": 2,
@@ -33671,114 +33666,257 @@
       "Premeditation": 1,
       "Serrated Blades": 3,
       "Ghostly Strike": 1,
+      "Heightened Senses": 2,
       "Hemorrhage": 1,
       "Preparation": 1,
       "Boot Knife": 5,
-      "Improved Ambush": 3,
-      "Improved Slice and Dice": 3,
-      "Death Mark": 1,
-      "Blood Splatter": 1,
-      "Coup de Grace": 3,
-      "Efficient Strikes": 1
+      "Venom": 1,
+      "Vile Poisons": 1,
+      "Improved Ambush": 2,
+      "Improved Slice and Dice": 1,
+      "Improved Gouge": 3
      },
-     "J": 0.3706,
-     "dJ": 0.0033,
-     "win": 0.4051,
-     "dwin": 0.0028,
-     "margin": -0.138,
+     "J": 0.5136,
+     "dJ": 0.0018,
+     "win": 0.5069,
+     "dwin": 0.0014,
+     "margin": 0.0268,
      "by": {
       "warrior": [
-       0.2875,
+       0.4083,
        0.0,
-       -0.2062
+       -0.0434
       ],
       "rogue": [
-       0.5292,
+       0.5917,
        0.0,
-       0.0441
+       0.246
       ],
       "priest": [
-       0.65,
+       0.7292,
        0.0,
-       0.2132
+       0.3686
       ],
       "hunter": [
-       0.0208,
+       0.0958,
        0.0,
-       -0.7683
+       -0.6515
       ],
       "warlock": [
-       0.4667,
+       0.5583,
        0.0,
-       -0.1096
+       0.0164
       ],
       "paladin": [
-       0.1208,
+       0.1583,
        0.0,
-       -0.3978
+       -0.382
       ],
       "shaman": [
-       0.3833,
-       0.0,
-       -0.1951
+       0.5792,
+       0.0125,
+       0.0601
       ],
       "druid": [
-       0.8167,
+       0.9292,
        0.0,
-       0.3964
+       0.5729
       ],
       "mage": [
-       0.3708,
+       0.5125,
        0.0,
-       -0.2185
+       0.0538
       ]
      },
      "casts": {
-      "Melee": 10.13,
-      "Melee (off-hand)": 10.13,
-      "Hemorrhage": 2.78,
-      "Shank": 2.15,
+      "Melee": 9.57,
+      "Melee (off-hand)": 9.57,
+      "Hemorrhage": 2.13,
+      "Shank": 2.04,
+      "Eviscerate": 1.68,
       "Kidney Shot": 1.24,
-      "Ghostly Strike": 1.2,
-      "Death Mark": 1.16,
-      "Cheap Shot": 0.89,
-      "Premeditation": 0.86,
-      "Garrote": 0.83,
-      "Eviscerate": 0.62,
+      "Ghostly Strike": 1.18,
+      "Cheap Shot": 0.92,
+      "Cold Blood": 0.92,
+      "Premeditation": 0.87,
+      "Garrote": 0.82,
       "Sap": 0.61,
-      "Kick": 0.54,
-      "Sprint": 0.54,
-      "Evasion": 0.41,
-      "Vanish": 0.37,
-      "Cold Blood": 0.33,
-      "Gouge": 0.21,
-      "Blind": 0.2,
-      "Preparation": 0.15,
+      "Sprint": 0.52,
+      "Kick": 0.5,
+      "Vanish": 0.41,
+      "Evasion": 0.38,
+      "Blind": 0.29,
+      "Gouge": 0.18,
+      "Preparation": 0.17,
       "Ambush": 0.06
      },
      "foe_cc": {
       "Sap": 6.11,
-      "Kidney Shot": 5.7,
-      "Cheap Shot": 3.06,
-      "Blind": 1.96,
-      "Gouge": 0.35
+      "Kidney Shot": 5.77,
+      "Cheap Shot": 3.17,
+      "Blind": 2.8,
+      "Gouge": 0.44
      },
      "dmg_share": {
-      "Melee": 0.1975,
-      "Eviscerate": 0.1675,
-      "Death Mark": 0.1541,
-      "Hemorrhage": 0.1098,
-      "Garrote": 0.1079,
-      "Melee (off-hand)": 0.0987,
-      "Instant Poison": 0.059,
-      "Ghostly Strike": 0.0558,
-      "Shank": 0.0141,
-      "Melee (pet)": 0.0099,
-      "Ambush": 0.0095,
-      "Kick": 0.0073,
-      "Melee (off-hand) (pet)": 0.005,
-      "Gouge": 0.0024,
-      "Instant Poison (pet)": 0.0018
+      "Eviscerate": 0.4055,
+      "Melee": 0.1609,
+      "Instant Poison": 0.1301,
+      "Melee (off-hand)": 0.0799,
+      "Hemorrhage": 0.0739,
+      "Garrote": 0.0612,
+      "Ghostly Strike": 0.0485,
+      "Shank": 0.0105,
+      "Melee (pet)": 0.0103,
+      "Kick": 0.0058,
+      "Melee (off-hand) (pet)": 0.0051,
+      "Instant Poison (pet)": 0.0036,
+      "Ambush": 0.0027,
+      "Gouge": 0.0021
+     },
+     "own_casts": 0.0,
+     "own_casts_by": {
+      "warrior": 0.0,
+      "rogue": 0.0,
+      "priest": 0.0,
+      "hunter": 0.0,
+      "warlock": 0.0,
+      "paladin": 0.0,
+      "shaman": 0.0,
+      "druid": 0.0,
+      "mage": 0.0
+     },
+     "filler_options": 2
+    },
+    {
+     "talent": "Opportunity",
+     "rank": 3,
+     "held": 2,
+     "sources": [
+      "community tf-hemo (3)"
+     ],
+     "move": "1 Master of Deception -> 1 Opportunity",
+     "allocation": {
+      "Malice": 5,
+      "Remorseless Attacks": 1,
+      "Ruthlessness": 3,
+      "Lethality": 2,
+      "Vigor": 1,
+      "Cold Blood": 1,
+      "Improved Poisons": 3,
+      "Opportunity": 3,
+      "Setup": 3,
+      "Camouflage": 1,
+      "Dirty Deeds": 2,
+      "Dirty Tricks": 2,
+      "Initiative": 3,
+      "Premeditation": 1,
+      "Serrated Blades": 3,
+      "Ghostly Strike": 1,
+      "Heightened Senses": 2,
+      "Hemorrhage": 1,
+      "Preparation": 1,
+      "Boot Knife": 5,
+      "Venom": 1,
+      "Vile Poisons": 1,
+      "Improved Ambush": 2,
+      "Improved Slice and Dice": 3
+     },
+     "J": 0.5135,
+     "dJ": 0.0016,
+     "win": 0.5069,
+     "dwin": 0.0014,
+     "margin": 0.0261,
+     "by": {
+      "warrior": [
+       0.4083,
+       0.0,
+       -0.0465
+      ],
+      "rogue": [
+       0.5917,
+       0.0,
+       0.2505
+      ],
+      "priest": [
+       0.7333,
+       0.0,
+       0.3713
+      ],
+      "hunter": [
+       0.0958,
+       0.0,
+       -0.6508
+      ],
+      "warlock": [
+       0.5542,
+       0.0,
+       0.0087
+      ],
+      "paladin": [
+       0.1458,
+       0.0,
+       -0.3954
+      ],
+      "shaman": [
+       0.575,
+       0.0083,
+       0.0585
+      ],
+      "druid": [
+       0.9333,
+       0.0,
+       0.5731
+      ],
+      "mage": [
+       0.525,
+       0.0,
+       0.0657
+      ]
+     },
+     "casts": {
+      "Melee": 9.57,
+      "Melee (off-hand)": 9.57,
+      "Hemorrhage": 2.12,
+      "Shank": 2.03,
+      "Eviscerate": 1.68,
+      "Kidney Shot": 1.24,
+      "Ghostly Strike": 1.18,
+      "Cheap Shot": 0.92,
+      "Cold Blood": 0.92,
+      "Premeditation": 0.87,
+      "Garrote": 0.82,
+      "Sap": 0.61,
+      "Sprint": 0.52,
+      "Kick": 0.5,
+      "Vanish": 0.41,
+      "Evasion": 0.38,
+      "Blind": 0.29,
+      "Gouge": 0.18,
+      "Preparation": 0.17,
+      "Ambush": 0.06
+     },
+     "foe_cc": {
+      "Sap": 6.11,
+      "Kidney Shot": 5.77,
+      "Cheap Shot": 3.17,
+      "Blind": 2.83,
+      "Gouge": 0.32
+     },
+     "dmg_share": {
+      "Eviscerate": 0.4039,
+      "Melee": 0.1604,
+      "Instant Poison": 0.1299,
+      "Melee (off-hand)": 0.0797,
+      "Hemorrhage": 0.0736,
+      "Garrote": 0.0633,
+      "Ghostly Strike": 0.0484,
+      "Melee (pet)": 0.0107,
+      "Shank": 0.0105,
+      "Kick": 0.0058,
+      "Melee (off-hand) (pet)": 0.0053,
+      "Instant Poison (pet)": 0.0036,
+      "Ambush": 0.0029,
+      "Gouge": 0.0021
      },
      "own_casts": 0.0,
      "own_casts_by": {
@@ -33806,10 +33944,11 @@
       "Malice": 5,
       "Remorseless Attacks": 1,
       "Ruthlessness": 3,
-      "Lethality": 1,
+      "Lethality": 2,
       "Vigor": 1,
       "Cold Blood": 1,
-      "Opportunity": 4,
+      "Improved Poisons": 3,
+      "Opportunity": 2,
       "Setup": 3,
       "Camouflage": 1,
       "Dirty Deeds": 2,
@@ -33818,115 +33957,260 @@
       "Premeditation": 1,
       "Serrated Blades": 3,
       "Ghostly Strike": 1,
+      "Heightened Senses": 2,
       "Hemorrhage": 1,
       "Preparation": 1,
       "Boot Knife": 5,
+      "Venom": 1,
+      "Vile Poisons": 1,
       "Improved Ambush": 2,
       "Improved Slice and Dice": 3,
-      "Death Mark": 1,
-      "Blood Splatter": 1,
-      "Coup de Grace": 3,
-      "Efficient Strikes": 1,
       "Quick Getaway": 1
      },
-     "J": 0.3686,
+     "J": 0.5133,
      "dJ": 0.0014,
-     "win": 0.4032,
-     "dwin": 0.0009,
-     "margin": -0.1385,
+     "win": 0.5069,
+     "dwin": 0.0014,
+     "margin": 0.0255,
      "by": {
       "warrior": [
-       0.2875,
+       0.4083,
        0.0,
-       -0.2062
+       -0.0468
       ],
       "rogue": [
-       0.5292,
+       0.5917,
        0.0,
-       0.0441
+       0.246
       ],
       "priest": [
-       0.65,
+       0.7292,
        0.0,
-       0.2132
+       0.3684
       ],
       "hunter": [
-       0.0208,
+       0.0958,
        0.0,
-       -0.7683
+       -0.6515
       ],
       "warlock": [
-       0.4667,
+       0.5542,
        0.0,
-       -0.1096
+       0.0129
       ],
       "paladin": [
-       0.1208,
+       0.1542,
        0.0,
-       -0.3978
+       -0.3869
       ],
       "shaman": [
-       0.3833,
-       0.0,
-       -0.1951
+       0.575,
+       0.0125,
+       0.0588
       ],
       "druid": [
-       0.8167,
+       0.9292,
        0.0,
-       0.3964
+       0.5729
       ],
       "mage": [
-       0.3542,
+       0.525,
        0.0,
-       -0.2235
+       0.0558
       ]
      },
      "casts": {
-      "Melee": 10.14,
-      "Melee (off-hand)": 10.14,
-      "Hemorrhage": 2.78,
-      "Shank": 2.15,
+      "Melee": 9.58,
+      "Melee (off-hand)": 9.58,
+      "Hemorrhage": 2.12,
+      "Shank": 2.03,
+      "Eviscerate": 1.68,
       "Kidney Shot": 1.24,
-      "Ghostly Strike": 1.2,
-      "Death Mark": 1.16,
-      "Cheap Shot": 0.89,
-      "Premeditation": 0.86,
-      "Garrote": 0.83,
-      "Eviscerate": 0.62,
+      "Ghostly Strike": 1.18,
+      "Cheap Shot": 0.93,
+      "Cold Blood": 0.93,
+      "Premeditation": 0.87,
+      "Garrote": 0.82,
       "Sap": 0.61,
-      "Kick": 0.54,
-      "Sprint": 0.54,
-      "Evasion": 0.41,
-      "Vanish": 0.37,
-      "Cold Blood": 0.33,
-      "Gouge": 0.21,
-      "Blind": 0.2,
-      "Preparation": 0.15,
+      "Sprint": 0.52,
+      "Kick": 0.5,
+      "Vanish": 0.41,
+      "Evasion": 0.39,
+      "Blind": 0.3,
+      "Gouge": 0.18,
+      "Preparation": 0.17,
       "Ambush": 0.06
      },
      "foe_cc": {
       "Sap": 6.11,
-      "Kidney Shot": 5.71,
-      "Cheap Shot": 3.06,
-      "Blind": 1.96,
-      "Gouge": 0.35
+      "Kidney Shot": 5.77,
+      "Cheap Shot": 3.18,
+      "Blind": 2.85,
+      "Gouge": 0.32
      },
      "dmg_share": {
-      "Melee": 0.1978,
-      "Eviscerate": 0.1676,
-      "Death Mark": 0.1544,
-      "Hemorrhage": 0.1099,
-      "Garrote": 0.1083,
-      "Melee (off-hand)": 0.0988,
-      "Instant Poison": 0.059,
-      "Ghostly Strike": 0.0558,
-      "Shank": 0.0141,
-      "Melee (pet)": 0.0099,
-      "Ambush": 0.008,
-      "Kick": 0.0073,
-      "Melee (off-hand) (pet)": 0.005,
-      "Gouge": 0.0024,
-      "Instant Poison (pet)": 0.0018
+      "Eviscerate": 0.4045,
+      "Melee": 0.1611,
+      "Instant Poison": 0.1302,
+      "Melee (off-hand)": 0.08,
+      "Hemorrhage": 0.0736,
+      "Garrote": 0.0614,
+      "Ghostly Strike": 0.0486,
+      "Melee (pet)": 0.0106,
+      "Shank": 0.0104,
+      "Kick": 0.0058,
+      "Melee (off-hand) (pet)": 0.0052,
+      "Instant Poison (pet)": 0.0036,
+      "Ambush": 0.0028,
+      "Gouge": 0.0021
+     },
+     "own_casts": 0.0,
+     "own_casts_by": {
+      "warrior": 0.0,
+      "rogue": 0.0,
+      "priest": 0.0,
+      "hunter": 0.0,
+      "warlock": 0.0,
+      "paladin": 0.0,
+      "shaman": 0.0,
+      "druid": 0.0,
+      "mage": 0.0
+     },
+     "filler_options": 1
+    },
+    {
+     "talent": "Elusiveness",
+     "rank": 2,
+     "held": 0,
+     "sources": [
+      "community tf-hemo (2)",
+      "expansions 2 of 2 (2)",
+      "stats model: high, escape"
+     ],
+     "move": "1 Master of Deception + 1 Heightened Senses -> 2 Elusiveness",
+     "allocation": {
+      "Malice": 5,
+      "Remorseless Attacks": 1,
+      "Ruthlessness": 3,
+      "Lethality": 2,
+      "Vigor": 1,
+      "Cold Blood": 1,
+      "Improved Poisons": 3,
+      "Opportunity": 2,
+      "Setup": 3,
+      "Camouflage": 1,
+      "Dirty Deeds": 2,
+      "Dirty Tricks": 2,
+      "Initiative": 3,
+      "Premeditation": 1,
+      "Serrated Blades": 3,
+      "Ghostly Strike": 1,
+      "Heightened Senses": 1,
+      "Hemorrhage": 1,
+      "Preparation": 1,
+      "Boot Knife": 5,
+      "Venom": 1,
+      "Vile Poisons": 1,
+      "Improved Ambush": 2,
+      "Improved Slice and Dice": 3,
+      "Elusiveness": 2
+     },
+     "J": 0.5119,
+     "dJ": 0.0,
+     "win": 0.5056,
+     "dwin": 0.0,
+     "margin": 0.0253,
+     "by": {
+      "warrior": [
+       0.4083,
+       0.0,
+       -0.0468
+      ],
+      "rogue": [
+       0.5917,
+       0.0,
+       0.246
+      ],
+      "priest": [
+       0.7292,
+       0.0,
+       0.3684
+      ],
+      "hunter": [
+       0.0958,
+       0.0,
+       -0.6515
+      ],
+      "warlock": [
+       0.5542,
+       0.0,
+       0.0129
+      ],
+      "paladin": [
+       0.1542,
+       0.0,
+       -0.3869
+      ],
+      "shaman": [
+       0.575,
+       0.0125,
+       0.0588
+      ],
+      "druid": [
+       0.9292,
+       0.0,
+       0.5729
+      ],
+      "mage": [
+       0.5125,
+       0.0,
+       0.0538
+      ]
+     },
+     "casts": {
+      "Melee": 9.58,
+      "Melee (off-hand)": 9.58,
+      "Hemorrhage": 2.12,
+      "Shank": 2.04,
+      "Eviscerate": 1.68,
+      "Kidney Shot": 1.24,
+      "Ghostly Strike": 1.18,
+      "Cheap Shot": 0.92,
+      "Cold Blood": 0.92,
+      "Premeditation": 0.87,
+      "Garrote": 0.82,
+      "Sap": 0.61,
+      "Sprint": 0.52,
+      "Kick": 0.5,
+      "Vanish": 0.41,
+      "Evasion": 0.39,
+      "Blind": 0.3,
+      "Gouge": 0.18,
+      "Preparation": 0.17,
+      "Ambush": 0.06
+     },
+     "foe_cc": {
+      "Sap": 6.11,
+      "Kidney Shot": 5.77,
+      "Cheap Shot": 3.17,
+      "Blind": 2.85,
+      "Gouge": 0.32
+     },
+     "dmg_share": {
+      "Eviscerate": 0.4049,
+      "Melee": 0.161,
+      "Instant Poison": 0.1302,
+      "Melee (off-hand)": 0.08,
+      "Hemorrhage": 0.0736,
+      "Garrote": 0.0612,
+      "Ghostly Strike": 0.0486,
+      "Melee (pet)": 0.0106,
+      "Shank": 0.0105,
+      "Kick": 0.0058,
+      "Melee (off-hand) (pet)": 0.0052,
+      "Instant Poison (pet)": 0.0036,
+      "Ambush": 0.0027,
+      "Gouge": 0.0021
      },
      "own_casts": 0.0,
      "own_casts_by": {
@@ -33953,11 +34237,12 @@
      "allocation": {
       "Malice": 5,
       "Ruthlessness": 3,
-      "Lethality": 1,
+      "Lethality": 2,
       "Vigor": 1,
       "Cold Blood": 1,
+      "Improved Poisons": 3,
       "Master of Deception": 1,
-      "Opportunity": 4,
+      "Opportunity": 2,
       "Setup": 3,
       "Camouflage": 1,
       "Dirty Deeds": 2,
@@ -33966,115 +34251,112 @@
       "Premeditation": 1,
       "Serrated Blades": 3,
       "Ghostly Strike": 1,
+      "Heightened Senses": 2,
       "Hemorrhage": 1,
       "Preparation": 1,
       "Boot Knife": 5,
+      "Venom": 1,
+      "Vile Poisons": 1,
       "Improved Ambush": 2,
       "Improved Slice and Dice": 2,
-      "Death Mark": 1,
-      "Blood Splatter": 1,
-      "Coup de Grace": 3,
-      "Efficient Strikes": 1,
       "Improved Expose Armor": 2
      },
-     "J": 0.3673,
+     "J": 0.5119,
      "dJ": 0.0,
-     "win": 0.4023,
+     "win": 0.5056,
      "dwin": 0.0,
-     "margin": -0.1402,
+     "margin": 0.0253,
      "by": {
       "warrior": [
-       0.2875,
+       0.4083,
        0.0,
-       -0.2062
+       -0.0468
       ],
       "rogue": [
-       0.5292,
+       0.5917,
        0.0,
-       0.0441
+       0.246
       ],
       "priest": [
-       0.65,
+       0.7292,
        0.0,
-       0.2132
+       0.3684
       ],
       "hunter": [
-       0.0208,
+       0.0958,
        0.0,
-       -0.7683
+       -0.6515
       ],
       "warlock": [
-       0.4667,
+       0.5542,
        0.0,
-       -0.1096
+       0.0129
       ],
       "paladin": [
-       0.1208,
+       0.1542,
        0.0,
-       -0.3978
+       -0.3869
       ],
       "shaman": [
-       0.3833,
-       0.0,
-       -0.1951
+       0.575,
+       0.0125,
+       0.0588
       ],
       "druid": [
-       0.8167,
+       0.9292,
        0.0,
-       0.3964
+       0.5729
       ],
       "mage": [
-       0.3458,
+       0.5125,
        0.0,
-       -0.2388
+       0.0538
       ]
      },
      "casts": {
-      "Melee": 10.13,
-      "Melee (off-hand)": 10.13,
-      "Hemorrhage": 2.78,
-      "Shank": 2.15,
+      "Melee": 9.58,
+      "Melee (off-hand)": 9.58,
+      "Hemorrhage": 2.12,
+      "Shank": 2.04,
+      "Eviscerate": 1.68,
       "Kidney Shot": 1.24,
-      "Ghostly Strike": 1.2,
-      "Death Mark": 1.16,
-      "Cheap Shot": 0.89,
-      "Premeditation": 0.86,
-      "Garrote": 0.83,
-      "Eviscerate": 0.62,
+      "Ghostly Strike": 1.18,
+      "Cheap Shot": 0.92,
+      "Cold Blood": 0.92,
+      "Premeditation": 0.87,
+      "Garrote": 0.82,
       "Sap": 0.61,
-      "Kick": 0.54,
-      "Sprint": 0.54,
-      "Evasion": 0.41,
-      "Vanish": 0.37,
-      "Cold Blood": 0.33,
-      "Gouge": 0.21,
-      "Blind": 0.2,
-      "Preparation": 0.15,
+      "Sprint": 0.52,
+      "Kick": 0.5,
+      "Vanish": 0.41,
+      "Evasion": 0.39,
+      "Blind": 0.3,
+      "Gouge": 0.18,
+      "Preparation": 0.17,
       "Ambush": 0.06
      },
      "foe_cc": {
       "Sap": 6.11,
-      "Kidney Shot": 5.7,
-      "Cheap Shot": 3.06,
-      "Blind": 1.96,
-      "Gouge": 0.35
+      "Kidney Shot": 5.77,
+      "Cheap Shot": 3.17,
+      "Blind": 2.85,
+      "Gouge": 0.32
      },
      "dmg_share": {
-      "Melee": 0.1978,
-      "Eviscerate": 0.1674,
-      "Death Mark": 0.1546,
-      "Hemorrhage": 0.1099,
-      "Garrote": 0.1081,
-      "Melee (off-hand)": 0.0988,
-      "Instant Poison": 0.0591,
-      "Ghostly Strike": 0.0559,
-      "Shank": 0.0141,
-      "Melee (pet)": 0.0099,
-      "Ambush": 0.0079,
-      "Kick": 0.0073,
-      "Melee (off-hand) (pet)": 0.005,
-      "Gouge": 0.0024,
-      "Instant Poison (pet)": 0.0018
+      "Eviscerate": 0.4049,
+      "Melee": 0.161,
+      "Instant Poison": 0.1302,
+      "Melee (off-hand)": 0.08,
+      "Hemorrhage": 0.0736,
+      "Garrote": 0.0612,
+      "Ghostly Strike": 0.0486,
+      "Melee (pet)": 0.0106,
+      "Shank": 0.0105,
+      "Kick": 0.0058,
+      "Melee (off-hand) (pet)": 0.0052,
+      "Instant Poison (pet)": 0.0036,
+      "Ambush": 0.0027,
+      "Gouge": 0.0021
      },
      "own_casts": 0.0,
      "own_casts_by": {
@@ -34088,457 +34370,7 @@
       "druid": 0.0,
       "mage": 0.0
      },
-     "filler_options": 1
-    },
-    {
-     "talent": "Improved Gouge",
-     "rank": 3,
-     "held": 0,
-     "sources": [
-      "community tf-hemo (3)",
-      "expansions 1 of 2 (3)",
-      "stats model: stun"
-     ],
-     "move": "2 Improved Slice and Dice + 1 Remorseless Attacks -> 3 Improved Gouge",
-     "allocation": {
-      "Malice": 5,
-      "Ruthlessness": 3,
-      "Lethality": 1,
-      "Vigor": 1,
-      "Cold Blood": 1,
-      "Master of Deception": 1,
-      "Opportunity": 4,
-      "Setup": 3,
-      "Camouflage": 1,
-      "Dirty Deeds": 2,
-      "Dirty Tricks": 2,
-      "Initiative": 3,
-      "Premeditation": 1,
-      "Serrated Blades": 3,
-      "Ghostly Strike": 1,
-      "Hemorrhage": 1,
-      "Preparation": 1,
-      "Boot Knife": 5,
-      "Improved Ambush": 2,
-      "Improved Slice and Dice": 1,
-      "Death Mark": 1,
-      "Blood Splatter": 1,
-      "Coup de Grace": 3,
-      "Efficient Strikes": 1,
-      "Improved Gouge": 3
-     },
-     "J": 0.3645,
-     "dJ": -0.0027,
-     "win": 0.4,
-     "dwin": -0.0023,
-     "margin": -0.1419,
-     "by": {
-      "warrior": [
-       0.2917,
-       0.0,
-       -0.2052
-      ],
-      "rogue": [
-       0.5292,
-       0.0,
-       0.0441
-      ],
-      "priest": [
-       0.6542,
-       0.0042,
-       0.2173
-      ],
-      "hunter": [
-       0.0208,
-       0.0,
-       -0.7683
-      ],
-      "warlock": [
-       0.45,
-       0.0,
-       -0.1168
-      ],
-      "paladin": [
-       0.1042,
-       0.0,
-       -0.4118
-      ],
-      "shaman": [
-       0.3833,
-       0.0,
-       -0.1951
-      ],
-      "druid": [
-       0.8167,
-       0.0,
-       0.3964
-      ],
-      "mage": [
-       0.35,
-       0.0,
-       -0.238
-      ]
-     },
-     "casts": {
-      "Melee": 10.16,
-      "Melee (off-hand)": 10.16,
-      "Hemorrhage": 2.79,
-      "Shank": 2.16,
-      "Kidney Shot": 1.25,
-      "Ghostly Strike": 1.21,
-      "Death Mark": 1.16,
-      "Cheap Shot": 0.89,
-      "Premeditation": 0.86,
-      "Garrote": 0.83,
-      "Eviscerate": 0.61,
-      "Sap": 0.61,
-      "Kick": 0.54,
-      "Sprint": 0.54,
-      "Evasion": 0.42,
-      "Vanish": 0.38,
-      "Cold Blood": 0.33,
-      "Gouge": 0.21,
-      "Blind": 0.2,
-      "Preparation": 0.16,
-      "Ambush": 0.06
-     },
-     "foe_cc": {
-      "Sap": 6.11,
-      "Kidney Shot": 5.73,
-      "Cheap Shot": 3.08,
-      "Blind": 1.99,
-      "Gouge": 0.49
-     },
-     "dmg_share": {
-      "Melee": 0.1981,
-      "Eviscerate": 0.1658,
-      "Death Mark": 0.1551,
-      "Hemorrhage": 0.1102,
-      "Garrote": 0.1086,
-      "Melee (off-hand)": 0.0988,
-      "Instant Poison": 0.0591,
-      "Ghostly Strike": 0.0556,
-      "Shank": 0.0141,
-      "Melee (pet)": 0.01,
-      "Ambush": 0.0079,
-      "Kick": 0.0073,
-      "Melee (off-hand) (pet)": 0.005,
-      "Gouge": 0.0024,
-      "Instant Poison (pet)": 0.0018
-     },
-     "own_casts": 0.0,
-     "own_casts_by": {
-      "warrior": 0.0,
-      "rogue": 0.0,
-      "priest": 0.0,
-      "hunter": 0.0,
-      "warlock": 0.0,
-      "paladin": 0.0,
-      "shaman": 0.0,
-      "druid": 0.0,
-      "mage": 0.0
-     },
-     "filler_options": 1
-    },
-    {
-     "talent": "Elusiveness",
-     "rank": 2,
-     "held": 0,
-     "sources": [
-      "community tf-hemo (2)",
-      "expansions 2 of 2 (2)",
-      "stats model: high, escape"
-     ],
-     "move": "1 Opportunity + 1 Master of Deception -> 2 Elusiveness",
-     "allocation": {
-      "Malice": 5,
-      "Remorseless Attacks": 1,
-      "Ruthlessness": 3,
-      "Lethality": 1,
-      "Vigor": 1,
-      "Cold Blood": 1,
-      "Opportunity": 3,
-      "Setup": 3,
-      "Camouflage": 1,
-      "Dirty Deeds": 2,
-      "Dirty Tricks": 2,
-      "Initiative": 3,
-      "Premeditation": 1,
-      "Serrated Blades": 3,
-      "Ghostly Strike": 1,
-      "Hemorrhage": 1,
-      "Preparation": 1,
-      "Boot Knife": 5,
-      "Improved Ambush": 2,
-      "Improved Slice and Dice": 3,
-      "Death Mark": 1,
-      "Blood Splatter": 1,
-      "Coup de Grace": 3,
-      "Efficient Strikes": 1,
-      "Elusiveness": 2
-     },
-     "J": 0.3578,
-     "dJ": -0.0094,
-     "win": 0.3949,
-     "dwin": -0.0074,
-     "margin": -0.1484,
-     "by": {
-      "warrior": [
-       0.2875,
-       0.0,
-       -0.2101
-      ],
-      "rogue": [
-       0.5333,
-       0.0,
-       0.0452
-      ],
-      "priest": [
-       0.6333,
-       0.0,
-       0.201
-      ],
-      "hunter": [
-       0.0208,
-       0.0,
-       -0.7699
-      ],
-      "warlock": [
-       0.45,
-       0.0,
-       -0.1329
-      ],
-      "paladin": [
-       0.1292,
-       0.0,
-       -0.391
-      ],
-      "shaman": [
-       0.3792,
-       0.0,
-       -0.1983
-      ],
-      "druid": [
-       0.8,
-       0.0,
-       0.3784
-      ],
-      "mage": [
-       0.3208,
-       0.0,
-       -0.2579
-      ]
-     },
-     "casts": {
-      "Melee": 10.18,
-      "Melee (off-hand)": 10.18,
-      "Hemorrhage": 2.8,
-      "Shank": 2.17,
-      "Kidney Shot": 1.25,
-      "Ghostly Strike": 1.21,
-      "Death Mark": 1.17,
-      "Cheap Shot": 0.89,
-      "Premeditation": 0.86,
-      "Garrote": 0.83,
-      "Eviscerate": 0.62,
-      "Sap": 0.61,
-      "Kick": 0.54,
-      "Sprint": 0.54,
-      "Evasion": 0.41,
-      "Vanish": 0.37,
-      "Cold Blood": 0.33,
-      "Gouge": 0.21,
-      "Blind": 0.2,
-      "Preparation": 0.16,
-      "Ambush": 0.06
-     },
-     "foe_cc": {
-      "Sap": 6.11,
-      "Kidney Shot": 5.73,
-      "Cheap Shot": 3.07,
-      "Blind": 2.0,
-      "Gouge": 0.35
-     },
-     "dmg_share": {
-      "Melee": 0.1996,
-      "Eviscerate": 0.1684,
-      "Death Mark": 0.1526,
-      "Hemorrhage": 0.111,
-      "Garrote": 0.1052,
-      "Melee (off-hand)": 0.0995,
-      "Instant Poison": 0.0594,
-      "Ghostly Strike": 0.0564,
-      "Shank": 0.0143,
-      "Melee (pet)": 0.0099,
-      "Kick": 0.0073,
-      "Ambush": 0.0073,
-      "Melee (off-hand) (pet)": 0.005,
-      "Gouge": 0.0024,
-      "Instant Poison (pet)": 0.0018
-     },
-     "own_casts": 0.0,
-     "own_casts_by": {
-      "warrior": 0.0,
-      "rogue": 0.0,
-      "priest": 0.0,
-      "hunter": 0.0,
-      "warlock": 0.0,
-      "paladin": 0.0,
-      "shaman": 0.0,
-      "druid": 0.0,
-      "mage": 0.0
-     },
-     "filler_options": 1
-    },
-    {
-     "talent": "Heightened Senses",
-     "rank": 2,
-     "held": 0,
-     "sources": [
-      "community tf-hemo (2)",
-      "expansions 1 of 2 (2)",
-      "stats model: medium, stealth"
-     ],
-     "move": "1 Opportunity + 1 Master of Deception -> 2 Heightened Senses",
-     "allocation": {
-      "Malice": 5,
-      "Remorseless Attacks": 1,
-      "Ruthlessness": 3,
-      "Lethality": 1,
-      "Vigor": 1,
-      "Cold Blood": 1,
-      "Opportunity": 3,
-      "Setup": 3,
-      "Camouflage": 1,
-      "Dirty Deeds": 2,
-      "Dirty Tricks": 2,
-      "Initiative": 3,
-      "Premeditation": 1,
-      "Serrated Blades": 3,
-      "Ghostly Strike": 1,
-      "Hemorrhage": 1,
-      "Preparation": 1,
-      "Boot Knife": 5,
-      "Improved Ambush": 2,
-      "Improved Slice and Dice": 3,
-      "Death Mark": 1,
-      "Blood Splatter": 1,
-      "Coup de Grace": 3,
-      "Efficient Strikes": 1,
-      "Heightened Senses": 2
-     },
-     "J": 0.3578,
-     "dJ": -0.0094,
-     "win": 0.3949,
-     "dwin": -0.0074,
-     "margin": -0.1484,
-     "by": {
-      "warrior": [
-       0.2875,
-       0.0,
-       -0.2101
-      ],
-      "rogue": [
-       0.5333,
-       0.0,
-       0.0452
-      ],
-      "priest": [
-       0.6333,
-       0.0,
-       0.201
-      ],
-      "hunter": [
-       0.0208,
-       0.0,
-       -0.7699
-      ],
-      "warlock": [
-       0.45,
-       0.0,
-       -0.1329
-      ],
-      "paladin": [
-       0.1292,
-       0.0,
-       -0.391
-      ],
-      "shaman": [
-       0.3792,
-       0.0,
-       -0.1983
-      ],
-      "druid": [
-       0.8,
-       0.0,
-       0.3784
-      ],
-      "mage": [
-       0.3208,
-       0.0,
-       -0.2579
-      ]
-     },
-     "casts": {
-      "Melee": 10.18,
-      "Melee (off-hand)": 10.18,
-      "Hemorrhage": 2.8,
-      "Shank": 2.17,
-      "Kidney Shot": 1.25,
-      "Ghostly Strike": 1.21,
-      "Death Mark": 1.17,
-      "Cheap Shot": 0.89,
-      "Premeditation": 0.86,
-      "Garrote": 0.83,
-      "Eviscerate": 0.62,
-      "Sap": 0.61,
-      "Kick": 0.54,
-      "Sprint": 0.54,
-      "Evasion": 0.41,
-      "Vanish": 0.37,
-      "Cold Blood": 0.33,
-      "Gouge": 0.21,
-      "Blind": 0.2,
-      "Preparation": 0.16,
-      "Ambush": 0.06
-     },
-     "foe_cc": {
-      "Sap": 6.11,
-      "Kidney Shot": 5.73,
-      "Cheap Shot": 3.07,
-      "Blind": 2.0,
-      "Gouge": 0.35
-     },
-     "dmg_share": {
-      "Melee": 0.1996,
-      "Eviscerate": 0.1684,
-      "Death Mark": 0.1526,
-      "Hemorrhage": 0.111,
-      "Garrote": 0.1052,
-      "Melee (off-hand)": 0.0995,
-      "Instant Poison": 0.0594,
-      "Ghostly Strike": 0.0564,
-      "Shank": 0.0143,
-      "Melee (pet)": 0.0099,
-      "Kick": 0.0073,
-      "Ambush": 0.0073,
-      "Melee (off-hand) (pet)": 0.005,
-      "Gouge": 0.0024,
-      "Instant Poison (pet)": 0.0018
-     },
-     "own_casts": 0.0,
-     "own_casts_by": {
-      "warrior": 0.0,
-      "rogue": 0.0,
-      "priest": 0.0,
-      "hunter": 0.0,
-      "warlock": 0.0,
-      "paladin": 0.0,
-      "shaman": 0.0,
-      "druid": 0.0,
-      "mage": 0.0
-     },
-     "filler_options": 1
+     "filler_options": 2
     },
     {
      "talent": "Master of Deception",
@@ -34549,16 +34381,17 @@
       "expansions 2 of 2 (3)",
       "stats model: medium, stealth"
      ],
-     "move": "1 Opportunity + 1 Improved Ambush -> 2 Master of Deception",
+     "move": "2 Heightened Senses -> 2 Master of Deception",
      "allocation": {
       "Malice": 5,
       "Remorseless Attacks": 1,
       "Ruthlessness": 3,
-      "Lethality": 1,
+      "Lethality": 2,
       "Vigor": 1,
       "Cold Blood": 1,
+      "Improved Poisons": 3,
       "Master of Deception": 3,
-      "Opportunity": 3,
+      "Opportunity": 2,
       "Setup": 3,
       "Camouflage": 1,
       "Dirty Deeds": 2,
@@ -34570,111 +34403,107 @@
       "Hemorrhage": 1,
       "Preparation": 1,
       "Boot Knife": 5,
-      "Improved Ambush": 1,
-      "Improved Slice and Dice": 3,
-      "Death Mark": 1,
-      "Blood Splatter": 1,
-      "Coup de Grace": 3,
-      "Efficient Strikes": 1
+      "Venom": 1,
+      "Vile Poisons": 1,
+      "Improved Ambush": 2,
+      "Improved Slice and Dice": 3
      },
-     "J": 0.3556,
-     "dJ": -0.0117,
-     "win": 0.3931,
-     "dwin": -0.0093,
-     "margin": -0.15,
+     "J": 0.5119,
+     "dJ": 0.0,
+     "win": 0.5056,
+     "dwin": 0.0,
+     "margin": 0.0253,
      "by": {
       "warrior": [
-       0.2875,
+       0.4083,
        0.0,
-       -0.2101
+       -0.0468
       ],
       "rogue": [
-       0.5333,
+       0.5917,
        0.0,
-       0.0452
+       0.246
       ],
       "priest": [
-       0.6333,
+       0.7292,
        0.0,
-       0.201
+       0.3684
       ],
       "hunter": [
-       0.0208,
+       0.0958,
        0.0,
-       -0.7699
+       -0.6515
       ],
       "warlock": [
-       0.45,
+       0.5542,
        0.0,
-       -0.1329
+       0.0129
       ],
       "paladin": [
-       0.1292,
+       0.1542,
        0.0,
-       -0.391
+       -0.3869
       ],
       "shaman": [
-       0.3792,
-       0.0,
-       -0.1983
+       0.575,
+       0.0125,
+       0.0588
       ],
       "druid": [
-       0.8,
+       0.9292,
        0.0,
-       0.3784
+       0.5729
       ],
       "mage": [
-       0.3042,
+       0.5125,
        0.0,
-       -0.2721
+       0.0538
       ]
      },
      "casts": {
-      "Melee": 10.19,
-      "Melee (off-hand)": 10.18,
-      "Hemorrhage": 2.8,
-      "Shank": 2.17,
-      "Kidney Shot": 1.25,
-      "Ghostly Strike": 1.21,
-      "Death Mark": 1.17,
-      "Cheap Shot": 0.89,
-      "Premeditation": 0.86,
-      "Garrote": 0.83,
-      "Eviscerate": 0.61,
+      "Melee": 9.58,
+      "Melee (off-hand)": 9.58,
+      "Hemorrhage": 2.12,
+      "Shank": 2.04,
+      "Eviscerate": 1.68,
+      "Kidney Shot": 1.24,
+      "Ghostly Strike": 1.18,
+      "Cheap Shot": 0.92,
+      "Cold Blood": 0.92,
+      "Premeditation": 0.87,
+      "Garrote": 0.82,
       "Sap": 0.61,
-      "Kick": 0.54,
-      "Sprint": 0.54,
-      "Evasion": 0.41,
-      "Vanish": 0.37,
-      "Cold Blood": 0.33,
-      "Gouge": 0.21,
-      "Blind": 0.2,
-      "Preparation": 0.16,
+      "Sprint": 0.52,
+      "Kick": 0.5,
+      "Vanish": 0.41,
+      "Evasion": 0.39,
+      "Blind": 0.3,
+      "Gouge": 0.18,
+      "Preparation": 0.17,
       "Ambush": 0.06
      },
      "foe_cc": {
       "Sap": 6.11,
-      "Kidney Shot": 5.74,
-      "Cheap Shot": 3.07,
-      "Blind": 2.0,
-      "Gouge": 0.35
+      "Kidney Shot": 5.77,
+      "Cheap Shot": 3.17,
+      "Blind": 2.85,
+      "Gouge": 0.32
      },
      "dmg_share": {
-      "Melee": 0.2,
-      "Eviscerate": 0.1678,
-      "Death Mark": 0.1533,
-      "Hemorrhage": 0.1111,
-      "Garrote": 0.1055,
-      "Melee (off-hand)": 0.0997,
-      "Instant Poison": 0.0595,
-      "Ghostly Strike": 0.0566,
-      "Shank": 0.0143,
-      "Melee (pet)": 0.0099,
-      "Kick": 0.0074,
-      "Ambush": 0.0057,
-      "Melee (off-hand) (pet)": 0.005,
-      "Gouge": 0.0024,
-      "Instant Poison (pet)": 0.0018
+      "Eviscerate": 0.4049,
+      "Melee": 0.161,
+      "Instant Poison": 0.1302,
+      "Melee (off-hand)": 0.08,
+      "Hemorrhage": 0.0736,
+      "Garrote": 0.0612,
+      "Ghostly Strike": 0.0486,
+      "Melee (pet)": 0.0106,
+      "Shank": 0.0105,
+      "Kick": 0.0058,
+      "Melee (off-hand) (pet)": 0.0052,
+      "Instant Poison (pet)": 0.0036,
+      "Ambush": 0.0027,
+      "Gouge": 0.0021
      },
      "own_casts": 0.0,
      "own_casts_by": {
@@ -34688,7 +34517,7 @@
       "druid": 0.0,
       "mage": 0.0
      },
-     "filler_options": 1
+     "filler_options": 2
     },
     {
      "talent": "Camouflage",
@@ -34698,131 +34527,422 @@
       "expansions 2 of 2 (2)",
       "stats model: stealth"
      ],
-     "move": "1 Opportunity + 1 Master of Deception -> 2 Camouflage",
+     "move": "1 Dirty Tricks + 1 Master of Deception -> 2 Camouflage",
      "allocation": {
       "Malice": 5,
       "Remorseless Attacks": 1,
       "Ruthlessness": 3,
-      "Lethality": 1,
+      "Lethality": 2,
       "Vigor": 1,
       "Cold Blood": 1,
-      "Opportunity": 3,
+      "Improved Poisons": 3,
+      "Opportunity": 2,
       "Setup": 3,
       "Camouflage": 3,
+      "Dirty Deeds": 2,
+      "Dirty Tricks": 1,
+      "Initiative": 3,
+      "Premeditation": 1,
+      "Serrated Blades": 3,
+      "Ghostly Strike": 1,
+      "Heightened Senses": 2,
+      "Hemorrhage": 1,
+      "Preparation": 1,
+      "Boot Knife": 5,
+      "Venom": 1,
+      "Vile Poisons": 1,
+      "Improved Ambush": 2,
+      "Improved Slice and Dice": 3
+     },
+     "J": 0.5038,
+     "dJ": -0.0081,
+     "win": 0.4949,
+     "dwin": -0.0106,
+     "margin": 0.0357,
+     "by": {
+      "warrior": [
+       0.3708,
+       0.0,
+       -0.056
+      ],
+      "rogue": [
+       0.5708,
+       0.0,
+       0.2685
+      ],
+      "priest": [
+       0.7125,
+       0.0,
+       0.3286
+      ],
+      "hunter": [
+       0.1458,
+       0.0,
+       -0.496
+      ],
+      "warlock": [
+       0.4708,
+       0.0,
+       -0.05
+      ],
+      "paladin": [
+       0.1542,
+       0.0,
+       -0.3682
+      ],
+      "shaman": [
+       0.6,
+       0.0083,
+       0.0668
+      ],
+      "druid": [
+       0.9167,
+       0.0042,
+       0.5776
+      ],
+      "mage": [
+       0.5125,
+       0.0,
+       0.0497
+      ]
+     },
+     "casts": {
+      "Melee": 9.79,
+      "Melee (off-hand)": 9.79,
+      "Hemorrhage": 2.12,
+      "Shank": 2.08,
+      "Eviscerate": 1.64,
+      "Kidney Shot": 1.25,
+      "Ghostly Strike": 1.2,
+      "Cheap Shot": 0.95,
+      "Cold Blood": 0.92,
+      "Premeditation": 0.84,
+      "Garrote": 0.84,
+      "Sap": 0.61,
+      "Sprint": 0.55,
+      "Kick": 0.52,
+      "Vanish": 0.43,
+      "Evasion": 0.38,
+      "Blind": 0.28,
+      "Gouge": 0.2,
+      "Preparation": 0.2,
+      "Ambush": 0.06
+     },
+     "foe_cc": {
+      "Sap": 6.11,
+      "Kidney Shot": 5.84,
+      "Cheap Shot": 3.29,
+      "Blind": 2.65,
+      "Gouge": 0.36
+     },
+     "dmg_share": {
+      "Eviscerate": 0.4031,
+      "Melee": 0.1626,
+      "Instant Poison": 0.1316,
+      "Melee (off-hand)": 0.0813,
+      "Hemorrhage": 0.0731,
+      "Garrote": 0.061,
+      "Ghostly Strike": 0.0498,
+      "Shank": 0.0109,
+      "Melee (pet)": 0.009,
+      "Kick": 0.0061,
+      "Melee (off-hand) (pet)": 0.0045,
+      "Instant Poison (pet)": 0.003,
+      "Gouge": 0.0024,
+      "Ambush": 0.0016
+     },
+     "own_casts": 0.0,
+     "own_casts_by": {
+      "warrior": 0.0,
+      "rogue": 0.0,
+      "priest": 0.0,
+      "hunter": 0.0,
+      "warlock": 0.0,
+      "paladin": 0.0,
+      "shaman": 0.0,
+      "druid": 0.0,
+      "mage": 0.0
+     },
+     "filler_options": 2
+    },
+    {
+     "talent": "Blood Splatter",
+     "rank": 1,
+     "held": 0,
+     "sources": [
+      "community tf-hemo (1)"
+     ],
+     "move": "1 Remorseless Attacks -> 1 Blood Splatter",
+     "allocation": {
+      "Malice": 5,
+      "Ruthlessness": 3,
+      "Lethality": 2,
+      "Vigor": 1,
+      "Cold Blood": 1,
+      "Improved Poisons": 3,
+      "Master of Deception": 1,
+      "Opportunity": 2,
+      "Setup": 3,
+      "Camouflage": 1,
       "Dirty Deeds": 2,
       "Dirty Tricks": 2,
       "Initiative": 3,
       "Premeditation": 1,
       "Serrated Blades": 3,
       "Ghostly Strike": 1,
+      "Heightened Senses": 2,
       "Hemorrhage": 1,
       "Preparation": 1,
       "Boot Knife": 5,
+      "Venom": 1,
+      "Vile Poisons": 1,
       "Improved Ambush": 2,
       "Improved Slice and Dice": 3,
-      "Death Mark": 1,
-      "Blood Splatter": 1,
-      "Coup de Grace": 3,
-      "Efficient Strikes": 1
+      "Blood Splatter": 1
      },
-     "J": 0.3528,
-     "dJ": -0.0144,
-     "win": 0.3875,
-     "dwin": -0.0148,
-     "margin": -0.1388,
+     "J": 0.5035,
+     "dJ": -0.0084,
+     "win": 0.4972,
+     "dwin": -0.0083,
+     "margin": 0.0251,
      "by": {
       "warrior": [
-       0.2875,
+       0.4333,
        0.0,
-       -0.2101
+       -0.0341
       ],
       "rogue": [
-       0.5333,
+       0.5958,
        0.0,
-       0.0452
+       0.2519
       ],
       "priest": [
-       0.6417,
+       0.7417,
        0.0,
-       0.184
+       0.3737
       ],
       "hunter": [
-       0.025,
+       0.0917,
        0.0,
-       -0.6416
+       -0.6526
       ],
       "warlock": [
-       0.4042,
+       0.475,
        0.0,
-       -0.1352
+       -0.02
       ],
       "paladin": [
-       0.125,
+       0.1375,
        0.0,
-       -0.3851
+       -0.359
       ],
       "shaman": [
-       0.35,
-       0.0,
-       -0.2163
+       0.575,
+       0.0125,
+       0.0588
       ],
       "druid": [
-       0.8083,
+       0.9125,
        0.0,
-       0.375
+       0.5513
       ],
       "mage": [
-       0.3125,
+       0.5125,
        0.0,
-       -0.2647
+       0.0557
       ]
      },
      "casts": {
-      "Melee": 10.38,
-      "Melee (off-hand)": 10.37,
-      "Hemorrhage": 2.83,
-      "Shank": 2.27,
-      "Kidney Shot": 1.28,
-      "Ghostly Strike": 1.25,
-      "Death Mark": 1.19,
-      "Cheap Shot": 0.9,
-      "Garrote": 0.85,
-      "Premeditation": 0.84,
+      "Melee": 9.65,
+      "Melee (off-hand)": 9.65,
+      "Hemorrhage": 2.14,
+      "Shank": 2.0,
+      "Eviscerate": 1.65,
+      "Kidney Shot": 1.24,
+      "Ghostly Strike": 1.21,
+      "Cold Blood": 0.91,
+      "Cheap Shot": 0.89,
+      "Premeditation": 0.87,
+      "Garrote": 0.8,
       "Sap": 0.61,
-      "Eviscerate": 0.61,
-      "Sprint": 0.55,
-      "Kick": 0.54,
-      "Evasion": 0.42,
-      "Vanish": 0.39,
-      "Cold Blood": 0.33,
-      "Gouge": 0.25,
-      "Blind": 0.22,
+      "Sprint": 0.52,
+      "Kick": 0.49,
+      "Vanish": 0.38,
+      "Evasion": 0.37,
+      "Blind": 0.24,
+      "Gouge": 0.18,
+      "Preparation": 0.15,
+      "Ambush": 0.06
+     },
+     "foe_cc": {
+      "Sap": 6.11,
+      "Kidney Shot": 5.79,
+      "Cheap Shot": 3.06,
+      "Blind": 2.34,
+      "Gouge": 0.31
+     },
+     "dmg_share": {
+      "Eviscerate": 0.3957,
+      "Melee": 0.1618,
+      "Instant Poison": 0.1295,
+      "Melee (off-hand)": 0.0805,
+      "Hemorrhage": 0.0742,
+      "Garrote": 0.0705,
+      "Ghostly Strike": 0.0492,
+      "Shank": 0.0102,
+      "Melee (pet)": 0.0099,
+      "Kick": 0.0057,
+      "Melee (off-hand) (pet)": 0.0048,
+      "Instant Poison (pet)": 0.0033,
+      "Ambush": 0.0027,
+      "Gouge": 0.0021
+     },
+     "own_casts": 0.0,
+     "own_casts_by": {
+      "warrior": 0.0,
+      "rogue": 0.0,
+      "priest": 0.0,
+      "hunter": 0.0,
+      "warlock": 0.0,
+      "paladin": 0.0,
+      "shaman": 0.0,
+      "druid": 0.0,
+      "mage": 0.0
+     },
+     "filler_options": 2
+    },
+    {
+     "talent": "Coup de Grace",
+     "rank": 3,
+     "held": 0,
+     "sources": [
+      "community tf-hemo (3)",
+      "expansions 1 of 2 (3)"
+     ],
+     "move": "2 Improved Poisons + 1 Venom -> 3 Coup de Grace",
+     "allocation": {
+      "Malice": 5,
+      "Remorseless Attacks": 1,
+      "Ruthlessness": 3,
+      "Lethality": 2,
+      "Vigor": 1,
+      "Cold Blood": 1,
+      "Improved Poisons": 1,
+      "Master of Deception": 1,
+      "Opportunity": 2,
+      "Setup": 3,
+      "Camouflage": 1,
+      "Dirty Deeds": 2,
+      "Dirty Tricks": 2,
+      "Initiative": 3,
+      "Premeditation": 1,
+      "Serrated Blades": 3,
+      "Ghostly Strike": 1,
+      "Heightened Senses": 2,
+      "Hemorrhage": 1,
+      "Preparation": 1,
+      "Boot Knife": 5,
+      "Vile Poisons": 1,
+      "Improved Ambush": 2,
+      "Improved Slice and Dice": 3,
+      "Coup de Grace": 3
+     },
+     "J": 0.4877,
+     "dJ": -0.0242,
+     "win": 0.4847,
+     "dwin": -0.0208,
+     "margin": 0.0117,
+     "by": {
+      "warrior": [
+       0.3792,
+       0.0,
+       -0.0742
+      ],
+      "rogue": [
+       0.6125,
+       0.0,
+       0.2833
+      ],
+      "priest": [
+       0.6792,
+       0.0,
+       0.2894
+      ],
+      "hunter": [
+       0.125,
+       0.0,
+       -0.6462
+      ],
+      "warlock": [
+       0.3833,
+       0.0,
+       -0.0718
+      ],
+      "paladin": [
+       0.1083,
+       0.0,
+       -0.4109
+      ],
+      "shaman": [
+       0.5792,
+       0.0208,
+       0.0288
+      ],
+      "druid": [
+       0.95,
+       0.0042,
+       0.6022
+      ],
+      "mage": [
+       0.5458,
+       0.0,
+       0.105
+      ]
+     },
+     "casts": {
+      "Melee": 9.35,
+      "Melee (off-hand)": 9.35,
+      "Hemorrhage": 2.04,
+      "Shank": 1.97,
+      "Eviscerate": 1.65,
+      "Kidney Shot": 1.2,
+      "Ghostly Strike": 1.14,
+      "Cheap Shot": 0.93,
+      "Cold Blood": 0.91,
+      "Premeditation": 0.87,
+      "Garrote": 0.83,
+      "Sap": 0.61,
+      "Sprint": 0.52,
+      "Kick": 0.47,
+      "Vanish": 0.41,
+      "Evasion": 0.38,
+      "Blind": 0.3,
+      "Gouge": 0.18,
       "Preparation": 0.17,
       "Ambush": 0.06
      },
      "foe_cc": {
       "Sap": 6.11,
-      "Kidney Shot": 5.83,
-      "Cheap Shot": 3.12,
-      "Blind": 2.14,
-      "Gouge": 0.42
+      "Kidney Shot": 5.66,
+      "Cheap Shot": 3.19,
+      "Blind": 2.86,
+      "Gouge": 0.32
      },
      "dmg_share": {
-      "Melee": 0.2019,
-      "Eviscerate": 0.1644,
-      "Death Mark": 0.1554,
-      "Hemorrhage": 0.1081,
-      "Garrote": 0.1055,
-      "Melee (off-hand)": 0.0997,
-      "Instant Poison": 0.0592,
-      "Ghostly Strike": 0.0577,
-      "Shank": 0.0149,
-      "Melee (pet)": 0.0095,
-      "Ambush": 0.0073,
-      "Kick": 0.0072,
-      "Melee (off-hand) (pet)": 0.0046,
-      "Gouge": 0.0029,
-      "Instant Poison (pet)": 0.0017
+      "Eviscerate": 0.4867,
+      "Melee": 0.1599,
+      "Melee (off-hand)": 0.079,
+      "Hemorrhage": 0.0707,
+      "Garrote": 0.0597,
+      "Instant Poison": 0.0593,
+      "Ghostly Strike": 0.0478,
+      "Shank": 0.0102,
+      "Melee (pet)": 0.0099,
+      "Kick": 0.0054,
+      "Melee (off-hand) (pet)": 0.005,
+      "Instant Poison (pet)": 0.0022,
+      "Ambush": 0.0022,
+      "Gouge": 0.0021
      },
      "own_casts": 0.0,
      "own_casts_by": {
@@ -34849,11 +34969,12 @@
      "allocation": {
       "Malice": 5,
       "Ruthlessness": 3,
-      "Lethality": 1,
+      "Lethality": 2,
       "Vigor": 2,
       "Cold Blood": 1,
+      "Improved Poisons": 3,
       "Master of Deception": 1,
-      "Opportunity": 4,
+      "Opportunity": 2,
       "Setup": 3,
       "Camouflage": 1,
       "Dirty Deeds": 2,
@@ -34862,114 +34983,111 @@
       "Premeditation": 1,
       "Serrated Blades": 3,
       "Ghostly Strike": 1,
+      "Heightened Senses": 2,
       "Hemorrhage": 1,
       "Preparation": 1,
       "Boot Knife": 5,
+      "Venom": 1,
+      "Vile Poisons": 1,
       "Improved Ambush": 2,
-      "Improved Slice and Dice": 3,
-      "Death Mark": 1,
-      "Blood Splatter": 1,
-      "Coup de Grace": 3,
-      "Efficient Strikes": 1
+      "Improved Slice and Dice": 3
      },
-     "J": 0.3516,
-     "dJ": -0.0156,
-     "win": 0.388,
-     "dwin": -0.0144,
-     "margin": -0.1454,
+     "J": 0.4858,
+     "dJ": -0.0261,
+     "win": 0.481,
+     "dwin": -0.0245,
+     "margin": 0.0191,
      "by": {
       "warrior": [
-       0.3042,
+       0.35,
        0.0,
-       -0.1888
+       -0.0637
       ],
       "rogue": [
-       0.5583,
-       0.0,
-       0.0522
+       0.5625,
+       0.0042,
+       0.2781
       ],
       "priest": [
-       0.5208,
+       0.6625,
        0.0,
-       0.1389
+       0.3275
       ],
       "hunter": [
-       0.0167,
+       0.0958,
        0.0,
-       -0.7661
+       -0.6518
       ],
       "warlock": [
-       0.4125,
-       0.0,
-       -0.105
+       0.4833,
+       0.0042,
+       -0.0456
       ],
       "paladin": [
-       0.1417,
+       0.15,
        0.0,
-       -0.3977
+       -0.3929
       ],
       "shaman": [
-       0.3667,
-       0.0042,
-       -0.1947
+       0.6167,
+       0.0125,
+       0.0903
       ],
       "druid": [
-       0.8375,
-       0.0125,
-       0.4022
+       0.9292,
+       0.0,
+       0.5805
       ],
       "mage": [
-       0.3333,
+       0.4792,
        0.0,
-       -0.2492
+       0.0497
       ]
      },
      "casts": {
-      "Melee": 10.08,
-      "Melee (off-hand)": 10.08,
-      "Hemorrhage": 2.9,
-      "Shank": 2.13,
-      "Kidney Shot": 1.25,
-      "Ghostly Strike": 1.22,
-      "Death Mark": 1.16,
-      "Cheap Shot": 0.88,
-      "Premeditation": 0.86,
-      "Garrote": 0.83,
-      "Eviscerate": 0.64,
+      "Melee": 9.52,
+      "Melee (off-hand)": 9.51,
+      "Hemorrhage": 2.1,
+      "Shank": 2.0,
+      "Eviscerate": 1.64,
+      "Kidney Shot": 1.24,
+      "Ghostly Strike": 1.2,
+      "Cheap Shot": 0.93,
+      "Cold Blood": 0.91,
+      "Premeditation": 0.87,
+      "Garrote": 0.82,
       "Sap": 0.61,
-      "Sprint": 0.53,
-      "Kick": 0.46,
-      "Evasion": 0.42,
-      "Vanish": 0.37,
-      "Cold Blood": 0.34,
-      "Gouge": 0.22,
-      "Blind": 0.2,
-      "Preparation": 0.15,
+      "Sprint": 0.52,
+      "Kick": 0.52,
+      "Vanish": 0.4,
+      "Evasion": 0.38,
+      "Blind": 0.3,
+      "Gouge": 0.25,
+      "Preparation": 0.17,
       "Ambush": 0.06
      },
      "foe_cc": {
       "Sap": 6.11,
-      "Kidney Shot": 5.72,
-      "Cheap Shot": 3.05,
-      "Blind": 1.96,
-      "Gouge": 0.38
+      "Kidney Shot": 5.76,
+      "Cheap Shot": 3.19,
+      "Blind": 2.9,
+      "Gouge": 0.46
      },
      "dmg_share": {
-      "Melee": 0.1934,
-      "Eviscerate": 0.1738,
-      "Death Mark": 0.1524,
-      "Hemorrhage": 0.1161,
-      "Garrote": 0.1062,
-      "Melee (off-hand)": 0.0969,
-      "Instant Poison": 0.0585,
-      "Ghostly Strike": 0.0563,
-      "Shank": 0.0139,
-      "Melee (pet)": 0.0098,
-      "Ambush": 0.0077,
-      "Kick": 0.0058,
-      "Melee (off-hand) (pet)": 0.005,
-      "Gouge": 0.0024,
-      "Instant Poison (pet)": 0.0017
+      "Eviscerate": 0.401,
+      "Melee": 0.1614,
+      "Instant Poison": 0.1307,
+      "Melee (off-hand)": 0.0801,
+      "Hemorrhage": 0.0743,
+      "Garrote": 0.0599,
+      "Ghostly Strike": 0.0502,
+      "Melee (pet)": 0.0108,
+      "Shank": 0.0104,
+      "Kick": 0.006,
+      "Melee (off-hand) (pet)": 0.0053,
+      "Instant Poison (pet)": 0.0039,
+      "Gouge": 0.0031,
+      "Ambush": 0.003
      },
      "own_casts": 0.0,
      "own_casts_by": {
@@ -34988,20 +35106,21 @@
     {
      "talent": "Efficient Strikes",
      "rank": 2,
-     "held": 1,
+     "held": 0,
      "sources": [
       "community tf-hemo (2)"
      ],
-     "move": "1 Coup de Grace -> 1 Efficient Strikes",
+     "move": "1 Venom + 1 Vile Poisons -> 2 Efficient Strikes",
      "allocation": {
       "Malice": 5,
       "Remorseless Attacks": 1,
       "Ruthlessness": 3,
-      "Lethality": 1,
+      "Lethality": 2,
       "Vigor": 1,
       "Cold Blood": 1,
+      "Improved Poisons": 3,
       "Master of Deception": 1,
-      "Opportunity": 4,
+      "Opportunity": 2,
       "Setup": 3,
       "Camouflage": 1,
       "Dirty Deeds": 2,
@@ -35010,114 +35129,396 @@
       "Premeditation": 1,
       "Serrated Blades": 3,
       "Ghostly Strike": 1,
+      "Heightened Senses": 2,
       "Hemorrhage": 1,
       "Preparation": 1,
       "Boot Knife": 5,
       "Improved Ambush": 2,
       "Improved Slice and Dice": 3,
-      "Death Mark": 1,
-      "Blood Splatter": 1,
-      "Coup de Grace": 2,
       "Efficient Strikes": 2
      },
-     "J": 0.3349,
-     "dJ": -0.0323,
-     "win": 0.3764,
-     "dwin": -0.0259,
-     "margin": -0.1659,
+     "J": 0.4165,
+     "dJ": -0.0953,
+     "win": 0.4269,
+     "dwin": -0.0787,
+     "margin": -0.0412,
      "by": {
       "warrior": [
-       0.2792,
+       0.325,
        0.0,
-       -0.2029
+       -0.1011
       ],
       "rogue": [
-       0.5542,
+       0.5917,
        0.0,
-       0.0524
+       0.2575
+      ],
+      "priest": [
+       0.5458,
+       0.0083,
+       0.1875
+      ],
+      "hunter": [
+       0.0625,
+       0.0,
+       -0.6882
+      ],
+      "warlock": [
+       0.3583,
+       0.0042,
+       -0.1168
+      ],
+      "paladin": [
+       0.075,
+       0.0,
+       -0.4396
+      ],
+      "shaman": [
+       0.5375,
+       0.0125,
+       0.0086
+      ],
+      "druid": [
+       0.9458,
+       0.0,
+       0.5827
+      ],
+      "mage": [
+       0.4,
+       0.0,
+       -0.0617
+      ]
+     },
+     "casts": {
+      "Melee": 9.62,
+      "Melee (off-hand)": 9.62,
+      "Hemorrhage": 2.52,
+      "Shank": 2.0,
+      "Eviscerate": 1.62,
+      "Kidney Shot": 1.25,
+      "Ghostly Strike": 1.18,
+      "Cheap Shot": 0.92,
+      "Cold Blood": 0.91,
+      "Premeditation": 0.87,
+      "Garrote": 0.83,
+      "Sap": 0.61,
+      "Sprint": 0.54,
+      "Kick": 0.5,
+      "Vanish": 0.41,
+      "Evasion": 0.38,
+      "Blind": 0.28,
+      "Gouge": 0.19,
+      "Preparation": 0.18,
+      "Ambush": 0.07
+     },
+     "foe_cc": {
+      "Sap": 6.11,
+      "Kidney Shot": 5.87,
+      "Cheap Shot": 3.17,
+      "Blind": 2.74,
+      "Gouge": 0.37
+     },
+     "dmg_share": {
+      "Eviscerate": 0.4194,
+      "Melee": 0.1718,
+      "Hemorrhage": 0.0917,
+      "Melee (off-hand)": 0.084,
+      "Instant Poison": 0.0746,
+      "Garrote": 0.0672,
+      "Ghostly Strike": 0.0503,
+      "Melee (pet)": 0.011,
+      "Shank": 0.0109,
+      "Kick": 0.0057,
+      "Melee (off-hand) (pet)": 0.0056,
+      "Ambush": 0.0032,
+      "Gouge": 0.0024,
+      "Instant Poison (pet)": 0.0022
+     },
+     "own_casts": 0.0,
+     "own_casts_by": {
+      "warrior": 0.0,
+      "rogue": 0.0,
+      "priest": 0.0,
+      "hunter": 0.0,
+      "warlock": 0.0,
+      "paladin": 0.0,
+      "shaman": 0.0,
+      "druid": 0.0,
+      "mage": 0.0
+     },
+     "filler_options": 1
+    },
+    {
+     "talent": "Improved Poisons",
+     "rank": 5,
+     "held": 3,
+     "sources": [
+      "stats model: stick"
+     ],
+     "move": "1 Vile Poisons + 1 Cold Blood -> 2 Improved Poisons",
+     "allocation": {
+      "Malice": 5,
+      "Remorseless Attacks": 1,
+      "Ruthlessness": 3,
+      "Lethality": 2,
+      "Vigor": 1,
+      "Improved Poisons": 5,
+      "Master of Deception": 1,
+      "Opportunity": 2,
+      "Setup": 3,
+      "Camouflage": 1,
+      "Dirty Deeds": 2,
+      "Dirty Tricks": 2,
+      "Initiative": 3,
+      "Premeditation": 1,
+      "Serrated Blades": 3,
+      "Ghostly Strike": 1,
+      "Heightened Senses": 2,
+      "Hemorrhage": 1,
+      "Preparation": 1,
+      "Boot Knife": 5,
+      "Venom": 1,
+      "Improved Ambush": 2,
+      "Improved Slice and Dice": 3
+     },
+     "J": 0.3863,
+     "dJ": -0.1255,
+     "win": 0.4102,
+     "dwin": -0.0954,
+     "margin": -0.0954,
+     "by": {
+      "warrior": [
+       0.3,
+       0.0,
+       -0.1498
+      ],
+      "rogue": [
+       0.5417,
+       0.0,
+       0.0697
       ],
       "priest": [
        0.5583,
        0.0,
-       0.1078
+       0.158
+      ],
+      "hunter": [
+       0.0375,
+       0.0,
+       -0.7128
+      ],
+      "warlock": [
+       0.5042,
+       0.0,
+       -0.0378
+      ],
+      "paladin": [
+       0.05,
+       0.0,
+       -0.5002
+      ],
+      "shaman": [
+       0.3917,
+       0.0125,
+       -0.0763
+      ],
+      "druid": [
+       0.9,
+       0.0,
+       0.5072
+      ],
+      "mage": [
+       0.4083,
+       0.0,
+       -0.1165
+      ]
+     },
+     "casts": {
+      "Melee": 10.41,
+      "Melee (off-hand)": 10.41,
+      "Hemorrhage": 2.39,
+      "Shank": 2.18,
+      "Eviscerate": 1.75,
+      "Kidney Shot": 1.31,
+      "Ghostly Strike": 1.24,
+      "Cheap Shot": 0.92,
+      "Premeditation": 0.88,
+      "Garrote": 0.84,
+      "Sap": 0.61,
+      "Kick": 0.57,
+      "Sprint": 0.54,
+      "Evasion": 0.42,
+      "Vanish": 0.41,
+      "Blind": 0.31,
+      "Gouge": 0.2,
+      "Preparation": 0.18,
+      "Ambush": 0.07
+     },
+     "foe_cc": {
+      "Sap": 6.11,
+      "Kidney Shot": 6.03,
+      "Cheap Shot": 3.15,
+      "Blind": 3.01,
+      "Gouge": 0.38
+     },
+     "dmg_share": {
+      "Eviscerate": 0.3024,
+      "Melee": 0.1838,
+      "Instant Poison": 0.1549,
+      "Melee (off-hand)": 0.0924,
+      "Hemorrhage": 0.0868,
+      "Garrote": 0.0792,
+      "Ghostly Strike": 0.054,
+      "Shank": 0.0122,
+      "Melee (pet)": 0.0112,
+      "Kick": 0.0068,
+      "Melee (off-hand) (pet)": 0.0058,
+      "Instant Poison (pet)": 0.0041,
+      "Ambush": 0.004,
+      "Gouge": 0.0025
+     },
+     "own_casts": 0.0,
+     "own_casts_by": {
+      "warrior": 0.0,
+      "rogue": 0.0,
+      "priest": 0.0,
+      "hunter": 0.0,
+      "warlock": 0.0,
+      "paladin": 0.0,
+      "shaman": 0.0,
+      "druid": 0.0,
+      "mage": 0.0
+     },
+     "filler_options": 1
+    },
+    {
+     "talent": "Vile Poisons",
+     "rank": 5,
+     "held": 1,
+     "sources": [
+      "expansions 1 of 2 (5)"
+     ],
+     "move": "3 Improved Poisons + 1 Cold Blood -> 4 Vile Poisons",
+     "allocation": {
+      "Malice": 5,
+      "Remorseless Attacks": 1,
+      "Ruthlessness": 3,
+      "Lethality": 2,
+      "Vigor": 1,
+      "Master of Deception": 1,
+      "Opportunity": 2,
+      "Setup": 3,
+      "Camouflage": 1,
+      "Dirty Deeds": 2,
+      "Dirty Tricks": 2,
+      "Initiative": 3,
+      "Premeditation": 1,
+      "Serrated Blades": 3,
+      "Ghostly Strike": 1,
+      "Heightened Senses": 2,
+      "Hemorrhage": 1,
+      "Preparation": 1,
+      "Boot Knife": 5,
+      "Venom": 1,
+      "Vile Poisons": 5,
+      "Improved Ambush": 2,
+      "Improved Slice and Dice": 3
+     },
+     "J": 0.3659,
+     "dJ": -0.1459,
+     "win": 0.3935,
+     "dwin": -0.112,
+     "margin": -0.1103,
+     "by": {
+      "warrior": [
+       0.275,
+       0.0,
+       -0.149
+      ],
+      "rogue": [
+       0.5542,
+       0.0,
+       0.0861
+      ],
+      "priest": [
+       0.5333,
+       0.0,
+       0.1365
       ],
       "hunter": [
        0.0208,
        0.0,
-       -0.7673
+       -0.7161
       ],
       "warlock": [
-       0.3083,
-       0.0083,
-       -0.1947
+       0.4625,
+       0.0,
+       -0.0719
       ],
       "paladin": [
-       0.15,
+       0.0583,
        0.0,
-       -0.3855
+       -0.5036
       ],
       "shaman": [
-       0.375,
-       0.0042,
-       -0.1955
+       0.3625,
+       0.025,
+       -0.0922
       ],
       "druid": [
-       0.8125,
+       0.8833,
        0.0,
-       0.3634
+       0.4797
       ],
       "mage": [
-       0.3292,
+       0.3917,
        0.0,
-       -0.2705
+       -0.162
       ]
      },
      "casts": {
-      "Melee": 10.3,
-      "Melee (off-hand)": 10.29,
-      "Hemorrhage": 3.11,
-      "Shank": 2.15,
-      "Kidney Shot": 1.27,
-      "Ghostly Strike": 1.22,
-      "Death Mark": 1.16,
-      "Cheap Shot": 0.89,
-      "Premeditation": 0.86,
-      "Garrote": 0.84,
-      "Eviscerate": 0.63,
+      "Melee": 10.44,
+      "Melee (off-hand)": 10.44,
+      "Hemorrhage": 2.4,
+      "Shank": 2.19,
+      "Eviscerate": 1.75,
+      "Kidney Shot": 1.3,
+      "Ghostly Strike": 1.24,
+      "Cheap Shot": 0.91,
+      "Premeditation": 0.87,
+      "Garrote": 0.85,
       "Sap": 0.61,
-      "Sprint": 0.53,
-      "Kick": 0.53,
+      "Kick": 0.57,
+      "Sprint": 0.54,
       "Evasion": 0.42,
-      "Vanish": 0.37,
-      "Cold Blood": 0.36,
-      "Blind": 0.21,
-      "Gouge": 0.21,
-      "Preparation": 0.15,
-      "Ambush": 0.06
+      "Vanish": 0.4,
+      "Blind": 0.3,
+      "Gouge": 0.19,
+      "Preparation": 0.17,
+      "Ambush": 0.07
      },
      "foe_cc": {
       "Sap": 6.11,
-      "Kidney Shot": 5.84,
-      "Cheap Shot": 3.07,
-      "Blind": 2.1,
-      "Gouge": 0.36
+      "Kidney Shot": 6.02,
+      "Cheap Shot": 3.14,
+      "Blind": 2.88,
+      "Gouge": 0.37
      },
      "dmg_share": {
-      "Melee": 0.1998,
-      "Eviscerate": 0.1645,
-      "Death Mark": 0.1348,
-      "Hemorrhage": 0.125,
-      "Garrote": 0.1095,
-      "Melee (off-hand)": 0.1002,
-      "Instant Poison": 0.0602,
-      "Ghostly Strike": 0.0568,
-      "Shank": 0.0142,
-      "Melee (pet)": 0.0108,
-      "Ambush": 0.0075,
-      "Kick": 0.0072,
-      "Melee (off-hand) (pet)": 0.0054,
-      "Gouge": 0.0023,
-      "Instant Poison (pet)": 0.002
+      "Eviscerate": 0.3121,
+      "Melee": 0.1841,
+      "Instant Poison": 0.1441,
+      "Melee (off-hand)": 0.0921,
+      "Hemorrhage": 0.0869,
+      "Garrote": 0.0797,
+      "Ghostly Strike": 0.0543,
+      "Shank": 0.0122,
+      "Melee (pet)": 0.0117,
+      "Kick": 0.0069,
+      "Melee (off-hand) (pet)": 0.0057,
+      "Ambush": 0.0046,
+      "Instant Poison (pet)": 0.0032,
+      "Gouge": 0.0024
      },
      "own_casts": 0.0,
      "own_casts_by": {
@@ -35141,14 +35542,14 @@
       "community tf-hemo (2)",
       "stats model: medium, escape"
      ],
-     "move": "1 Cold Blood + 1 Remorseless Attacks + 1 Improved Slice and Dice -> 2 Improved Sprint + 1 Lightning Reflexes (tier points)",
+     "move": "3 Improved Poisons + 1 Venom + 1 Vile Poisons + 1 Cold Blood + 1 Remorseless Attacks -> 2 Improved Sprint + 5 Lightning Reflexes (tier points)",
      "allocation": {
       "Malice": 5,
       "Ruthlessness": 3,
-      "Lethality": 1,
+      "Lethality": 2,
       "Vigor": 1,
       "Master of Deception": 1,
-      "Opportunity": 4,
+      "Opportunity": 2,
       "Setup": 3,
       "Camouflage": 1,
       "Dirty Deeds": 2,
@@ -35157,115 +35558,110 @@
       "Premeditation": 1,
       "Serrated Blades": 3,
       "Ghostly Strike": 1,
+      "Heightened Senses": 2,
       "Hemorrhage": 1,
       "Preparation": 1,
       "Boot Knife": 5,
       "Improved Ambush": 2,
-      "Improved Slice and Dice": 2,
-      "Death Mark": 1,
-      "Blood Splatter": 1,
-      "Coup de Grace": 3,
-      "Efficient Strikes": 1,
+      "Improved Slice and Dice": 3,
       "Improved Sprint": 2,
-      "Lightning Reflexes": 1
+      "Lightning Reflexes": 5
      },
-     "J": 0.3257,
-     "dJ": -0.0416,
-     "win": 0.3667,
-     "dwin": -0.0356,
-     "margin": -0.164,
+     "J": 0.2905,
+     "dJ": -0.2214,
+     "win": 0.3324,
+     "dwin": -0.1731,
+     "margin": -0.1677,
      "by": {
       "warrior": [
-       0.3167,
+       0.2417,
        0.0,
-       -0.1417
+       -0.1679
       ],
       "rogue": [
-       0.525,
+       0.5625,
        0.0,
-       0.049
+       0.07
       ],
       "priest": [
-       0.425,
-       0.0,
-       -0.0234
+       0.25,
+       0.0042,
+       -0.1348
       ],
       "hunter": [
-       0.0583,
+       0.0625,
        0.0,
-       -0.696
+       -0.6622
       ],
       "warlock": [
-       0.4042,
-       0.0,
-       -0.1385
+       0.3333,
+       0.0042,
+       -0.1867
       ],
       "paladin": [
-       0.0792,
+       0.0458,
        0.0,
-       -0.4361
+       -0.5267
       ],
       "shaman": [
-       0.3583,
-       0.0042,
-       -0.1818
+       0.3208,
+       0.0208,
+       -0.1251
       ],
       "druid": [
-       0.8833,
-       0.0,
-       0.4529
+       0.9,
+       0.0042,
+       0.4898
       ],
       "mage": [
-       0.25,
+       0.275,
        0.0,
-       -0.3601
+       -0.2657
       ]
      },
      "casts": {
-      "Melee": 10.6,
-      "Melee (off-hand)": 10.6,
-      "Hemorrhage": 2.94,
-      "Shank": 2.24,
-      "Kidney Shot": 1.29,
-      "Ghostly Strike": 1.24,
-      "Death Mark": 1.15,
+      "Melee": 11.03,
+      "Melee (off-hand)": 11.03,
+      "Hemorrhage": 2.59,
+      "Shank": 2.28,
+      "Eviscerate": 1.82,
+      "Kidney Shot": 1.35,
+      "Ghostly Strike": 1.3,
       "Cheap Shot": 0.91,
       "Premeditation": 0.87,
-      "Garrote": 0.84,
-      "Eviscerate": 0.68,
+      "Garrote": 0.87,
       "Sap": 0.61,
-      "Sprint": 0.59,
-      "Kick": 0.57,
-      "Evasion": 0.41,
-      "Vanish": 0.38,
-      "Blind": 0.22,
-      "Gouge": 0.21,
-      "Preparation": 0.17,
-      "Ambush": 0.05
+      "Sprint": 0.6,
+      "Kick": 0.59,
+      "Evasion": 0.42,
+      "Vanish": 0.4,
+      "Blind": 0.31,
+      "Gouge": 0.19,
+      "Preparation": 0.18,
+      "Ambush": 0.06
      },
      "foe_cc": {
+      "Kidney Shot": 6.17,
       "Sap": 6.11,
-      "Kidney Shot": 5.89,
-      "Cheap Shot": 3.13,
-      "Blind": 2.15,
-      "Gouge": 0.38
+      "Cheap Shot": 3.15,
+      "Blind": 2.96,
+      "Gouge": 0.37
      },
      "dmg_share": {
-      "Melee": 0.2081,
-      "Death Mark": 0.1555,
-      "Eviscerate": 0.1341,
-      "Hemorrhage": 0.1152,
-      "Garrote": 0.1151,
-      "Melee (off-hand)": 0.1032,
-      "Instant Poison": 0.0625,
-      "Ghostly Strike": 0.0581,
-      "Shank": 0.0146,
-      "Melee (pet)": 0.0106,
-      "Kick": 0.0078,
-      "Ambush": 0.0055,
-      "Melee (off-hand) (pet)": 0.0051,
-      "Gouge": 0.0026,
-      "Instant Poison (pet)": 0.0019
+      "Eviscerate": 0.3349,
+      "Melee": 0.2033,
+      "Melee (off-hand)": 0.1023,
+      "Hemorrhage": 0.0985,
+      "Garrote": 0.0896,
+      "Instant Poison": 0.0651,
+      "Ghostly Strike": 0.0601,
+      "Shank": 0.0138,
+      "Melee (pet)": 0.0117,
+      "Kick": 0.0073,
+      "Melee (off-hand) (pet)": 0.0057,
+      "Ambush": 0.0033,
+      "Gouge": 0.0024,
+      "Instant Poison (pet)": 0.0021
      },
      "own_casts": 0.0,
      "own_casts_by": {
@@ -35288,13 +35684,14 @@
      "sources": [
       "expansions 1 of 2 (3)"
      ],
-     "move": "1 Cold Blood + 1 Remorseless Attacks + 1 Improved Slice and Dice + 1 Lethality -> 3 Puncturing Wounds + 1 Lightning Reflexes (tier points)",
+     "move": "3 Improved Poisons + 1 Venom + 1 Vile Poisons + 1 Cold Blood + 1 Remorseless Attacks + 1 Improved Slice and Dice -> 3 Puncturing Wounds + 5 Lightning Reflexes (tier points)",
      "allocation": {
       "Malice": 5,
       "Ruthlessness": 3,
+      "Lethality": 2,
       "Vigor": 1,
       "Master of Deception": 1,
-      "Opportunity": 4,
+      "Opportunity": 2,
       "Setup": 3,
       "Camouflage": 1,
       "Dirty Deeds": 2,
@@ -35303,115 +35700,110 @@
       "Premeditation": 1,
       "Serrated Blades": 3,
       "Ghostly Strike": 1,
+      "Heightened Senses": 2,
       "Hemorrhage": 1,
       "Preparation": 1,
       "Boot Knife": 5,
       "Improved Ambush": 2,
       "Improved Slice and Dice": 2,
-      "Death Mark": 1,
-      "Blood Splatter": 1,
-      "Coup de Grace": 3,
-      "Efficient Strikes": 1,
       "Puncturing Wounds": 3,
-      "Lightning Reflexes": 1
+      "Lightning Reflexes": 5
      },
-     "J": 0.3051,
-     "dJ": -0.0621,
-     "win": 0.3505,
-     "dwin": -0.0519,
-     "margin": -0.1814,
+     "J": 0.2749,
+     "dJ": -0.2369,
+     "win": 0.3218,
+     "dwin": -0.1838,
+     "margin": -0.1873,
      "by": {
       "warrior": [
-       0.2375,
+       0.2667,
        0.0,
-       -0.2199
+       -0.2015
       ],
       "rogue": [
-       0.5292,
+       0.5625,
        0.0,
-       0.0489
+       0.07
       ],
       "priest": [
-       0.4208,
-       0.0,
-       -0.0293
+       0.25,
+       0.0042,
+       -0.1343
       ],
       "hunter": [
        0.0208,
        0.0,
-       -0.7666
+       -0.7422
       ],
       "warlock": [
-       0.3625,
-       0.0,
-       -0.1779
+       0.3292,
+       0.0042,
+       -0.1506
       ],
       "paladin": [
-       0.0792,
+       0.0458,
        0.0,
-       -0.4291
+       -0.5267
       ],
       "shaman": [
-       0.3583,
-       0.0042,
-       -0.1832
+       0.3208,
+       0.0208,
+       -0.1251
       ],
       "druid": [
-       0.825,
-       0.0042,
-       0.3992
+       0.8208,
+       0.0,
+       0.4108
       ],
       "mage": [
-       0.3208,
+       0.2792,
        0.0,
-       -0.2744
+       -0.2862
       ]
      },
      "casts": {
-      "Melee": 10.49,
-      "Melee (off-hand)": 10.49,
-      "Hemorrhage": 2.89,
-      "Shank": 2.22,
-      "Kidney Shot": 1.27,
-      "Ghostly Strike": 1.22,
-      "Death Mark": 1.17,
-      "Cheap Shot": 0.89,
-      "Premeditation": 0.86,
-      "Garrote": 0.84,
-      "Eviscerate": 0.67,
+      "Melee": 10.96,
+      "Melee (off-hand)": 10.96,
+      "Hemorrhage": 2.61,
+      "Shank": 2.28,
+      "Eviscerate": 1.81,
+      "Kidney Shot": 1.35,
+      "Ghostly Strike": 1.29,
+      "Cheap Shot": 0.9,
+      "Garrote": 0.87,
+      "Premeditation": 0.87,
       "Sap": 0.61,
-      "Kick": 0.56,
+      "Kick": 0.58,
       "Sprint": 0.54,
-      "Evasion": 0.41,
-      "Vanish": 0.38,
-      "Gouge": 0.22,
-      "Blind": 0.21,
+      "Evasion": 0.42,
+      "Vanish": 0.39,
+      "Blind": 0.3,
+      "Gouge": 0.19,
       "Preparation": 0.16,
       "Ambush": 0.06
      },
      "foe_cc": {
+      "Kidney Shot": 6.2,
       "Sap": 6.11,
-      "Kidney Shot": 5.79,
-      "Cheap Shot": 3.07,
-      "Blind": 2.06,
-      "Gouge": 0.38
+      "Cheap Shot": 3.1,
+      "Blind": 2.88,
+      "Gouge": 0.35
      },
      "dmg_share": {
-      "Melee": 0.2079,
-      "Death Mark": 0.1591,
-      "Eviscerate": 0.1323,
-      "Garrote": 0.1143,
-      "Hemorrhage": 0.1135,
-      "Melee (off-hand)": 0.1035,
-      "Instant Poison": 0.0625,
-      "Ghostly Strike": 0.0571,
-      "Shank": 0.0147,
-      "Melee (pet)": 0.0102,
-      "Kick": 0.0078,
-      "Ambush": 0.0074,
-      "Melee (off-hand) (pet)": 0.0051,
-      "Gouge": 0.0026,
-      "Instant Poison (pet)": 0.0018
+      "Eviscerate": 0.3333,
+      "Melee": 0.2045,
+      "Melee (off-hand)": 0.1017,
+      "Hemorrhage": 0.0995,
+      "Garrote": 0.0895,
+      "Instant Poison": 0.0648,
+      "Ghostly Strike": 0.0601,
+      "Shank": 0.0139,
+      "Melee (pet)": 0.0115,
+      "Kick": 0.0069,
+      "Melee (off-hand) (pet)": 0.0056,
+      "Ambush": 0.0045,
+      "Gouge": 0.0024,
+      "Instant Poison (pet)": 0.0019
      },
      "own_casts": 0.0,
      "own_casts_by": {
@@ -35426,444 +35818,6 @@
       "mage": 0.0
      },
      "filler_options": 2
-    },
-    {
-     "talent": "Riposte",
-     "rank": 1,
-     "held": 0,
-     "sources": [
-      "stats model: stun"
-     ],
-     "move": "2 Improved Slice and Dice + 1 Cold Blood + 1 Remorseless Attacks + 1 Lethality + 1 Blood Splatter + 1 Vigor -> 1 Riposte + 3 Deflection + 3 Lightning Reflexes (tier points)",
-     "allocation": {
-      "Malice": 5,
-      "Ruthlessness": 3,
-      "Master of Deception": 1,
-      "Opportunity": 4,
-      "Setup": 3,
-      "Camouflage": 1,
-      "Dirty Deeds": 2,
-      "Dirty Tricks": 2,
-      "Initiative": 3,
-      "Premeditation": 1,
-      "Serrated Blades": 3,
-      "Ghostly Strike": 1,
-      "Hemorrhage": 1,
-      "Preparation": 1,
-      "Boot Knife": 5,
-      "Improved Ambush": 2,
-      "Improved Slice and Dice": 1,
-      "Death Mark": 1,
-      "Coup de Grace": 3,
-      "Efficient Strikes": 1,
-      "Riposte": 1,
-      "Deflection": 3,
-      "Lightning Reflexes": 3
-     },
-     "J": 0.2795,
-     "dJ": -0.0878,
-     "win": 0.3278,
-     "dwin": -0.0745,
-     "margin": -0.1933,
-     "by": {
-      "warrior": [
-       0.3667,
-       0.0,
-       -0.1215
-      ],
-      "rogue": [
-       0.5333,
-       0.0,
-       0.0642
-      ],
-      "priest": [
-       0.2167,
-       0.0,
-       -0.1728
-      ],
-      "hunter": [
-       0.0292,
-       0.0,
-       -0.7577
-      ],
-      "warlock": [
-       0.1583,
-       0.0,
-       -0.3063
-      ],
-      "paladin": [
-       0.1292,
-       0.0,
-       -0.4208
-      ],
-      "shaman": [
-       0.4042,
-       0.0083,
-       -0.1322
-      ],
-      "druid": [
-       0.8833,
-       0.0,
-       0.4632
-      ],
-      "mage": [
-       0.2292,
-       0.0,
-       -0.3557
-      ]
-     },
-     "casts": {
-      "Melee": 10.79,
-      "Melee (off-hand)": 10.78,
-      "Hemorrhage": 2.77,
-      "Shank": 2.22,
-      "Kidney Shot": 1.3,
-      "Ghostly Strike": 1.26,
-      "Death Mark": 1.23,
-      "Cheap Shot": 0.92,
-      "Premeditation": 0.86,
-      "Garrote": 0.86,
-      "Sap": 0.61,
-      "Eviscerate": 0.57,
-      "Kick": 0.54,
-      "Sprint": 0.53,
-      "Riposte": 0.46,
-      "Evasion": 0.42,
-      "Vanish": 0.39,
-      "Blind": 0.3,
-      "Gouge": 0.26,
-      "Preparation": 0.16,
-      "Ambush": 0.05
-     },
-     "foe_cc": {
-      "Sap": 6.11,
-      "Kidney Shot": 6.04,
-      "Cheap Shot": 3.17,
-      "Blind": 2.87,
-      "Riposte": 1.17,
-      "Gouge": 0.46
-     },
-     "dmg_share": {
-      "Melee": 0.2139,
-      "Death Mark": 0.1687,
-      "Eviscerate": 0.1094,
-      "Hemorrhage": 0.1087,
-      "Melee (off-hand)": 0.1067,
-      "Garrote": 0.1008,
-      "Instant Poison": 0.0652,
-      "Ghostly Strike": 0.0574,
-      "Riposte": 0.0181,
-      "Shank": 0.015,
-      "Melee (pet)": 0.0113,
-      "Kick": 0.0074,
-      "Ambush": 0.0063,
-      "Melee (off-hand) (pet)": 0.0058,
-      "Gouge": 0.0032,
-      "Instant Poison (pet)": 0.002
-     },
-     "own_casts": 0.46,
-     "own_casts_by": {
-      "warrior": 0.61,
-      "rogue": 1.25,
-      "priest": 0.0,
-      "hunter": 0.15,
-      "warlock": 0.0,
-      "paladin": 0.28,
-      "shaman": 0.73,
-      "druid": 1.11,
-      "mage": 0.0
-     },
-     "filler_options": 1
-    },
-    {
-     "talent": "Improved Poisons",
-     "rank": 5,
-     "held": 0,
-     "sources": [
-      "stats model: stick"
-     ],
-     "move": "3 Coup de Grace + 1 Cold Blood + 1 Efficient Strikes -> 5 Improved Poisons",
-     "allocation": {
-      "Malice": 5,
-      "Remorseless Attacks": 1,
-      "Ruthlessness": 3,
-      "Lethality": 1,
-      "Vigor": 1,
-      "Master of Deception": 1,
-      "Opportunity": 4,
-      "Setup": 3,
-      "Camouflage": 1,
-      "Dirty Deeds": 2,
-      "Dirty Tricks": 2,
-      "Initiative": 3,
-      "Premeditation": 1,
-      "Serrated Blades": 3,
-      "Ghostly Strike": 1,
-      "Hemorrhage": 1,
-      "Preparation": 1,
-      "Boot Knife": 5,
-      "Improved Ambush": 2,
-      "Improved Slice and Dice": 3,
-      "Death Mark": 1,
-      "Blood Splatter": 1,
-      "Improved Poisons": 5
-     },
-     "J": 0.2611,
-     "dJ": -0.1061,
-     "win": 0.3125,
-     "dwin": -0.0898,
-     "margin": -0.2054,
-     "by": {
-      "warrior": [
-       0.2208,
-       0.0,
-       -0.2313
-      ],
-      "rogue": [
-       0.5042,
-       0.0,
-       0.0112
-      ],
-      "priest": [
-       0.3333,
-       0.0,
-       -0.0689
-      ],
-      "hunter": [
-       0.0125,
-       0.0,
-       -0.767
-      ],
-      "warlock": [
-       0.2583,
-       0.0,
-       -0.2327
-      ],
-      "paladin": [
-       0.1083,
-       0.0,
-       -0.4134
-      ],
-      "shaman": [
-       0.2583,
-       0.0083,
-       -0.2327
-      ],
-      "druid": [
-       0.8083,
-       0.0,
-       0.3672
-      ],
-      "mage": [
-       0.3083,
-       0.0,
-       -0.2811
-      ]
-     },
-     "casts": {
-      "Melee": 10.96,
-      "Melee (off-hand)": 10.96,
-      "Hemorrhage": 2.73,
-      "Shank": 2.31,
-      "Kidney Shot": 1.33,
-      "Ghostly Strike": 1.3,
-      "Death Mark": 1.21,
-      "Cheap Shot": 0.92,
-      "Premeditation": 0.87,
-      "Garrote": 0.83,
-      "Eviscerate": 0.65,
-      "Kick": 0.64,
-      "Sap": 0.61,
-      "Sprint": 0.54,
-      "Evasion": 0.43,
-      "Vanish": 0.4,
-      "Gouge": 0.3,
-      "Blind": 0.23,
-      "Preparation": 0.17,
-      "Ambush": 0.06
-     },
-     "foe_cc": {
-      "Sap": 6.11,
-      "Kidney Shot": 5.92,
-      "Cheap Shot": 3.16,
-      "Blind": 2.24,
-      "Gouge": 0.55
-     },
-     "dmg_share": {
-      "Melee": 0.2205,
-      "Garrote": 0.122,
-      "Hemorrhage": 0.1122,
-      "Death Mark": 0.1115,
-      "Melee (off-hand)": 0.1094,
-      "Eviscerate": 0.1055,
-      "Instant Poison": 0.1002,
-      "Ghostly Strike": 0.0627,
-      "Shank": 0.0154,
-      "Melee (pet)": 0.0112,
-      "Kick": 0.009,
-      "Ambush": 0.0083,
-      "Melee (off-hand) (pet)": 0.0055,
-      "Gouge": 0.0038,
-      "Instant Poison (pet)": 0.0028
-     },
-     "own_casts": 0.0,
-     "own_casts_by": {
-      "warrior": 0.0,
-      "rogue": 0.0,
-      "priest": 0.0,
-      "hunter": 0.0,
-      "warlock": 0.0,
-      "paladin": 0.0,
-      "shaman": 0.0,
-      "druid": 0.0,
-      "mage": 0.0
-     },
-     "filler_options": 1
-    },
-    {
-     "talent": "Vile Poisons",
-     "rank": 5,
-     "held": 0,
-     "sources": [
-      "expansions 1 of 2 (5)"
-     ],
-     "move": "3 Coup de Grace + 1 Cold Blood + 1 Efficient Strikes -> 5 Vile Poisons",
-     "allocation": {
-      "Malice": 5,
-      "Remorseless Attacks": 1,
-      "Ruthlessness": 3,
-      "Lethality": 1,
-      "Vigor": 1,
-      "Master of Deception": 1,
-      "Opportunity": 4,
-      "Setup": 3,
-      "Camouflage": 1,
-      "Dirty Deeds": 2,
-      "Dirty Tricks": 2,
-      "Initiative": 3,
-      "Premeditation": 1,
-      "Serrated Blades": 3,
-      "Ghostly Strike": 1,
-      "Hemorrhage": 1,
-      "Preparation": 1,
-      "Boot Knife": 5,
-      "Improved Ambush": 2,
-      "Improved Slice and Dice": 3,
-      "Death Mark": 1,
-      "Blood Splatter": 1,
-      "Vile Poisons": 5
-     },
-     "J": 0.2117,
-     "dJ": -0.1556,
-     "win": 0.2736,
-     "dwin": -0.1287,
-     "margin": -0.2477,
-     "by": {
-      "warrior": [
-       0.2042,
-       0.0,
-       -0.2551
-      ],
-      "rogue": [
-       0.5292,
-       0.0,
-       0.026
-      ],
-      "priest": [
-       0.2208,
-       0.0,
-       -0.1768
-      ],
-      "hunter": [
-       0.0167,
-       0.0,
-       -0.7792
-      ],
-      "warlock": [
-       0.1667,
-       0.0,
-       -0.295
-      ],
-      "paladin": [
-       0.0792,
-       0.0,
-       -0.4495
-      ],
-      "shaman": [
-       0.2083,
-       0.0125,
-       -0.2542
-      ],
-      "druid": [
-       0.75,
-       0.0083,
-       0.2697
-      ],
-      "mage": [
-       0.2875,
-       0.0,
-       -0.3155
-      ]
-     },
-     "casts": {
-      "Melee": 11.04,
-      "Melee (off-hand)": 11.04,
-      "Hemorrhage": 2.8,
-      "Shank": 2.31,
-      "Kidney Shot": 1.34,
-      "Ghostly Strike": 1.3,
-      "Death Mark": 1.22,
-      "Cheap Shot": 0.91,
-      "Premeditation": 0.87,
-      "Garrote": 0.84,
-      "Kick": 0.63,
-      "Sap": 0.61,
-      "Eviscerate": 0.61,
-      "Sprint": 0.54,
-      "Evasion": 0.43,
-      "Vanish": 0.4,
-      "Gouge": 0.29,
-      "Blind": 0.23,
-      "Preparation": 0.17,
-      "Ambush": 0.06
-     },
-     "foe_cc": {
-      "Sap": 6.11,
-      "Kidney Shot": 6.01,
-      "Cheap Shot": 3.15,
-      "Blind": 2.21,
-      "Gouge": 0.53
-     },
-     "dmg_share": {
-      "Melee": 0.2267,
-      "Garrote": 0.1255,
-      "Hemorrhage": 0.1163,
-      "Melee (off-hand)": 0.1136,
-      "Death Mark": 0.1129,
-      "Eviscerate": 0.105,
-      "Instant Poison": 0.0789,
-      "Ghostly Strike": 0.0646,
-      "Shank": 0.0158,
-      "Melee (pet)": 0.0112,
-      "Kick": 0.0091,
-      "Ambush": 0.0084,
-      "Melee (off-hand) (pet)": 0.0056,
-      "Gouge": 0.0038,
-      "Instant Poison (pet)": 0.0026
-     },
-     "own_casts": 0.0,
-     "own_casts_by": {
-      "warrior": 0.0,
-      "rogue": 0.0,
-      "priest": 0.0,
-      "hunter": 0.0,
-      "warlock": 0.0,
-      "paladin": 0.0,
-      "shaman": 0.0,
-      "druid": 0.0,
-      "mage": 0.0
-     },
-     "filler_options": 1
     }
    ],
    "out_of_reach": [
@@ -35873,7 +35827,7 @@
      "sources": [
       "stats model: move"
      ],
-     "why": "needs 6 more points in Combat below row 3"
+     "why": "needs 10 more points in Combat below row 3"
     },
     {
      "talent": "Improved Kick",
@@ -35881,7 +35835,7 @@
      "sources": [
       "stats model: medium, stun"
      ],
-     "why": "needs 11 more points in Combat below row 4"
+     "why": "needs 15 more points in Combat below row 4"
     },
     {
      "talent": "Improved Kidney Shot",
@@ -35900,12 +35854,12 @@
      "why": "no legal way to pay its points with 30 kept in Subtlety"
     },
     {
-     "talent": "Venom",
+     "talent": "Riposte",
      "rank": 1,
      "sources": [
-      "stats model: low, stick"
+      "stats model: stun"
      ],
-     "why": "no legal way to pay its points with 30 kept in Subtlety"
+     "why": "needs 7 more points in Combat below row 3"
     }
    ],
    "settings": {

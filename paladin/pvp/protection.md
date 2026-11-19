@@ -2,7 +2,7 @@
 
 [Paladin](../README.md) > [PvP (duels)](README.md) > Protection
 
-**Duel build** 🔬 (10/31/10) — [open the talent tree](https://talentsforever.com/paladin/60/5032-55020132213001501-0523-12). It wins 77% of its duels against the field, number 2 of the 3 paladin specs.
+**Duel build** 🔬 (10/31/10) — [open the talent tree](https://talentsforever.com/paladin/60/5032-55020132213001501-0523-12). It wins 77% of its duels against the field, number 3 of the 3 paladin specs.
 
 **Battleground version:** the same build (no talent duels undervalue fits within a point of its win rate).
 

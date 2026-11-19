@@ -30,7 +30,7 @@ Classic Era reference builds: [pvp-seal-fate-daggers](../talents/classic-baselin
 |---|---|---|---|---|
 | Assassination | [31/8/12](https://talentsforever.com/rogue/60/30530020231151131-3023-302201211-12) | 53.9% | [31/8/12](https://talentsforever.com/rogue/60/30530020231151221-3023-302230011-12) -0.7: Improved Kidney Shot 2, Camouflage 3 | the duel build |
 | Combat | [2/32/17](https://talentsforever.com/rogue/60/002-3250330010112321041-330111121211-12) | 47.9% | [2/31/18](https://talentsforever.com/rogue/60/002-3250330010111321041-320130121221-12) -0.4: Elusiveness 2, Camouflage 3 | the duel build |
-| Subtlety | [16/4/31](https://talentsforever.com/rogue/60/01530311101-31-314212231301001151-12) | 40.2% | [16/4/31](https://talentsforever.com/rogue/60/30530111101-31-303212231321001151-12) -0.9: Elusiveness 2, Improved Gouge 3 | the duel build |
+| Subtlety | [21/0/30](https://talentsforever.com/rogue/60/01530310211301--31221223130102115-12) | 50.6% | [21/0/30](https://talentsforever.com/rogue/60/30530110211301--30221223132101115-12) +0.1: Elusiveness 2, Improved Gouge 3 | the duel build |
 
 Battleground version: the duel build with the talents duels undervalue (escapes, defensive cooldowns, control, resistances) put back one at a time, each kept only while the whole stays within a point of the duel build (the number after the link). Judged by duels only: no battleground is simulated yet.
 
@@ -40,7 +40,7 @@ Win rate of each duel build against the field (its row against each class's fiel
 |---|---|---|---|---|---|---|---|---|---|
 | Assassination | 45% | 60% | 73% | 3% | 79% | 19% | 59% | 97% | 50% |
 | Combat | 50% | 78% | 82% | 0% | 30% | 4% | 70% | 94% | 22% |
-| Subtlety | 29% | 53% | 65% | 2% | 47% | 12% | 38% | 82% | 35% |
+| Subtlety | 41% | 59% | 73% | 10% | 55% | 15% | 57% | 93% | 51% |
 
 ### Assassination
 
@@ -82,22 +82,22 @@ Out of reach in one step: Heightened Senses (no legal way to pay its points with
 
 ### Subtlety
 
-How the search's winner plays: damage Melee 20%, Eviscerate 17%, Death Mark 15%, Hemorrhage 11%; control on the foe Sap 6.1 s, Kidney Shot 5.7 s, Cheap Shot 3.1 s a duel.
+How the search's winner plays: damage Eviscerate 40%, Melee 16%, Instant Poison 13%, Melee (off-hand) 8%; control on the foe Sap 6.1 s, Kidney Shot 5.8 s, Cheap Shot 3.2 s a duel.
 
 What real PvP rates highly that the winner lacks, and the cost of keeping it (points of win rate; its points taken from the winner's cheapest):
 
-- **Lethality** 1 -> 2 (the community's build; 1 of 2 TBC/WotLK builds): +0.6; [build](https://talentsforever.com/rogue/60/00530311201-31-314212231301001151-12)
-- **Improved Ambush** 2 -> 3 (the community's build): +0.3; [build](https://talentsforever.com/rogue/60/01530311101-31-304213231301001151-12)
-- **Quick Getaway** 0 -> 1 (the community's build): +0.1; [build](https://talentsforever.com/rogue/60/01530311101-31-304212231301101151-12)
-- **Improved Expose Armor** 0 -> 2 (the community's build): +0.0; [build](https://talentsforever.com/rogue/60/00532211101-31-314212231301001151-12)
-- **Improved Gouge** 0 -> 3 (the community's build; 1 of 2 TBC/WotLK builds; class audit: stun): -0.2; [build](https://talentsforever.com/rogue/60/30530111101-31-314212231301001151-12)
-- **Elusiveness** 0 -> 2 (the community's build; 2 of 2 TBC/WotLK builds; class audit: high, escape): -0.7; [build](https://talentsforever.com/rogue/60/01530311101-31-303212231321001151-12)
-- **Heightened Senses** 0 -> 2 (the community's build; 1 of 2 TBC/WotLK builds; class audit: medium, stealth): -0.7; [build](https://talentsforever.com/rogue/60/01530311101-31-303212231301021151-12)
-- **Master of Deception** 1 -> 3 (the community's build; 2 of 2 TBC/WotLK builds; class audit: medium, stealth): -0.9; [build](https://talentsforever.com/rogue/60/01530311101-31-333211231301001151-12)
-- **Vigor** 1 -> 2 (the community's build): -1.4; [build](https://talentsforever.com/rogue/60/00530321101-31-314212231301001151-12)
-- **Camouflage** 1 -> 3 (2 of 2 TBC/WotLK builds; class audit: stealth): -1.5; [build](https://talentsforever.com/rogue/60/01530311101-31-303232231301001151-12)
+- **Improved Ambush** 2 -> 3 (the community's build): +0.1; [build](https://talentsforever.com/rogue/60/01530310211301--30221323130102115-12)
+- **Improved Gouge** 0 -> 3 (the community's build; 1 of 2 TBC/WotLK builds; class audit: stun): +0.1; [build](https://talentsforever.com/rogue/60/30530110211301--31221223130102115-12)
+- **Opportunity** 2 -> 3 (the community's build): +0.1; [build](https://talentsforever.com/rogue/60/01530310211301--30321223130102115-12)
+- **Quick Getaway** 0 -> 1 (the community's build): +0.1; [build](https://talentsforever.com/rogue/60/01530310211301--30221223130112115-12)
+- **Elusiveness** 0 -> 2 (the community's build; 2 of 2 TBC/WotLK builds; class audit: high, escape): +0.0; [build](https://talentsforever.com/rogue/60/01530310211301--30221223132101115-12)
+- **Improved Expose Armor** 0 -> 2 (the community's build): +0.0; [build](https://talentsforever.com/rogue/60/00532210211301--31221223130102115-12)
+- **Master of Deception** 1 -> 3 (the community's build; 2 of 2 TBC/WotLK builds; class audit: medium, stealth): +0.0; [build](https://talentsforever.com/rogue/60/01530310211301--33221223130100115-12)
+- **Blood Splatter** 0 -> 1 (the community's build): -0.8; [build](https://talentsforever.com/rogue/60/00530311211301--31221223130102115-12)
+- **Camouflage** 1 -> 3 (2 of 2 TBC/WotLK builds; class audit: stealth): -1.1; [build](https://talentsforever.com/rogue/60/01530310211301--30223213130102115-12)
+- **Coup de Grace** 0 -> 3 (the community's build; 1 of 2 TBC/WotLK builds): -2.1; [build](https://talentsforever.com/rogue/60/015303102111-3-31221223130102115-12)
 
-Out of reach in one step: Improved Kick (needs 11 more points in Combat below row 4); Improved Kidney Shot (no legal way to pay its points with 30 kept in Subtlety); Relentless Strikes (no legal way to pay its points with 30 kept in Subtlety).
+Out of reach in one step: Improved Kick (needs 15 more points in Combat below row 4); Improved Kidney Shot (no legal way to pay its points with 30 kept in Subtlety); Relentless Strikes (no legal way to pay its points with 30 kept in Subtlety).
 
 ---
 *Generated section — do not edit by hand.*

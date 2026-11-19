@@ -30,7 +30,7 @@ Holy: since round 2 (2026-11-17) a Holy build with Holy Shock duels in the bette
 
 | Tree | Duel build | Wins vs field | Battleground version | The search's winner |
 |---|---|---|---|---|
-| Holy | [30/0/21](https://talentsforever.com/paladin/60/5132301511200105--23033310021201-12) | 75.0% | [30/0/21](https://talentsforever.com/paladin/60/5132301511200105--23033320011201-12) -0.5: Unyielding Faith 2 | the duel build |
+| Holy | [30/0/21](https://talentsforever.com/paladin/60/5132301511200105--23033310021201-12) | 79.4% | [30/0/21](https://talentsforever.com/paladin/60/5122321511200104--23033320011201-12) -0.6: Unyielding Faith 2, Purifying Power 2 | the duel build |
 | Protection | [10/31/10](https://talentsforever.com/paladin/60/5032-55020132213001501-0523-12) | 77.1% | the same | the duel build |
 | Retribution | [5/16/30](https://talentsforever.com/paladin/60/5-5032113001-4123330101130125-12) | 83.5% | [5/16/30](https://talentsforever.com/paladin/60/5-5032113001-4123322101130115-12) -1.0: Unyielding Faith 2 | the duel build |
 
@@ -40,26 +40,26 @@ Win rate of each duel build against the field (its row against each class's fiel
 
 | Duel build vs | Warrior | Rogue | Priest | Hunter | Warlock | Paladin | Shaman | Druid | Mage |
 |---|---|---|---|---|---|---|---|---|---|
-| Holy | 83% | 62% | 64% | 81% | 100% | 69% | 61% | 66% | 89% |
+| Holy | 96% | 93% | 52% | 54% | 100% | 83% | 81% | 64% | 93% |
 | Protection | 100% | 100% | 0% | 78% | 68% | 84% | 74% | 99% | 92% |
 | Retribution | 100% | 100% | 88% | 48% | 98% | 77% | 61% | 82% | 97% |
 
 ### Holy
 
-How the search's winner plays: damage Melee 24%, Holy Shock 23%, Judgement 14%, Holy Strike 13%; control on the foe Hammer of Justice 5.9 s, Repentance 5.3 s a duel.
+How the search's winner plays: damage Melee 33%, Holy Strike 17%, Holy Shock 17%, Judgement 11%; control on the foe Hammer of Justice 6.9 s, Repentance 6.0 s a duel.
 
 What real PvP rates highly that the winner lacks, and the cost of keeping it (points of win rate; its points taken from the winner's cheapest):
 
-- **Unyielding Faith** 1 -> 2 (5 of 6 TBC/WotLK builds; class audit: high, resist): -0.5; [build](https://talentsforever.com/paladin/60/5132301511200105--23033320011201-12)
-- **Purifying Power** 0 -> 2 (class audit: low, dispel): -0.7; [build](https://talentsforever.com/paladin/60/5132321311200105--23033310021201-12)
-- **Pursuit of Justice** 0 -> 2 (class audit: high, move): -1.2; [build](https://talentsforever.com/paladin/60/5132301511200105--23033300211201-12)
-- **Light's Vigil** 0 -> 1 (class audit: high): -3.6; [build](https://talentsforever.com/paladin/60/51323015112001051--230333100212-12)
-- **Divine Intellect** 0 -> 5 (6 of 6 TBC/WotLK builds): -6.6; [build](https://talentsforever.com/paladin/60/5132301511200105-5-23033310001-12)
-- **Redoubt** 0 -> 5 (4 of 6 TBC/WotLK builds): -7.8; [build](https://talentsforever.com/paladin/60/5132301511200105-05-23033310001-12)
-- **Guardian's Favor** 0 -> 2 (6 of 6 TBC/WotLK builds; class audit: high, escape): -9.1; [build](https://talentsforever.com/paladin/60/5132301511200105-5002-230333-12)
-- **Sacred Duty** 0 -> 2 (class audit: medium, defensive): -9.4; [build](https://talentsforever.com/paladin/60/5132301511200105-50002-230333-12)
-- **Precision** 0 -> 3 (3 of 6 TBC/WotLK builds): -10.7; [build](https://talentsforever.com/paladin/60/5132301511200105-503-230233-12)
-- **Shield Specialization** 0 -> 1 (3 of 6 TBC/WotLK builds): -16.2; [build](https://talentsforever.com/paladin/60/5132301511200105-55000001-23023-12)
+- **Unyielding Faith** 1 -> 2 (5 of 6 TBC/WotLK builds; class audit: high, resist): +0.6; [build](https://talentsforever.com/paladin/60/5132301511200105--23033320011201-12)
+- **Pursuit of Justice** 0 -> 2 (class audit: high, move): +0.1; [build](https://talentsforever.com/paladin/60/5132301511200105--23033300211201-12)
+- **Purifying Power** 0 -> 2 (class audit: low, dispel): -0.9; [build](https://talentsforever.com/paladin/60/5122321511200104--23033310021201-12)
+- **Light's Vigil** 0 -> 1 (class audit: high): -3.5; [build](https://talentsforever.com/paladin/60/51323015112001051--230333100212-12)
+- **Divine Intellect** 0 -> 5 (6 of 6 TBC/WotLK builds): -6.1; [build](https://talentsforever.com/paladin/60/5132301511200105-5-23033310001-12)
+- **Redoubt** 0 -> 5 (4 of 6 TBC/WotLK builds): -7.1; [build](https://talentsforever.com/paladin/60/5132301511200105-05-23033310001-12)
+- **Sacred Duty** 0 -> 2 (class audit: medium, defensive): -8.8; [build](https://talentsforever.com/paladin/60/5132301511200105-50002-230333-12)
+- **Guardian's Favor** 0 -> 2 (6 of 6 TBC/WotLK builds; class audit: high, escape): -9.0; [build](https://talentsforever.com/paladin/60/5132301511200105-5002-230333-12)
+- **Precision** 0 -> 3 (3 of 6 TBC/WotLK builds): -9.0; [build](https://talentsforever.com/paladin/60/5132301511200105-503-2303311-12)
+- **Shield Specialization** 0 -> 1 (3 of 6 TBC/WotLK builds): -13.5; [build](https://talentsforever.com/paladin/60/5132301511200105-55000001-23023-12)
 
 Out of reach in one step: Improved Hammer of Justice (needs 10 more points in Protection below row 3); Improved Righteous Fury (needs 15 more points in Protection below row 4); Stoicism (needs 20 more points in Protection below row 5); Toughness (needs 10 more points in Protection below row 3).
 

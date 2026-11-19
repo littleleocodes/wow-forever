@@ -9,8 +9,8 @@ Ranked by the share of duels the spec's best build wins against the field (nine 
 | # | Spec and build | Wins vs the field | Easiest matchup | Hardest matchup |
 |---|---|---|---|---|
 | 1 | [Assassination](assassination.md) 🔬 31/8/12 | 54% | Druid 97% | Hunter 3% |
-| 2 | [Combat](combat.md) 🔬 2/32/17 | 48% | Druid 94% | Hunter 0% |
-| 3 | [Subtlety](subtlety.md) 🔬 16/4/31 | 40% | Druid 82% | Hunter 2% |
+| 2 | [Subtlety](subtlety.md) 🔬 21/0/30 | 51% | Druid 93% | Hunter 10% |
+| 3 | [Combat](combat.md) 🔬 2/32/17 | 48% | Druid 94% | Hunter 0% |
 
 No spec is marked recommended: duels between the lab's AI in an open field are a model of PvP, not PvP, and battlegrounds are not simulated. 🔬: a build searched in the duel lab.
 

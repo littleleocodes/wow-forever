@@ -2,7 +2,7 @@
 
 [Rogue](../README.md) > [PvP (duels)](README.md) > Combat
 
-**Duel build** 🔬 (2/32/17) — [open the talent tree](https://talentsforever.com/rogue/60/002-3250330010112321041-330111121211-12). It wins 48% of its duels against the field, number 2 of the 3 rogue specs.
+**Duel build** 🔬 (2/32/17) — [open the talent tree](https://talentsforever.com/rogue/60/002-3250330010112321041-330111121211-12). It wins 48% of its duels against the field, number 3 of the 3 rogue specs.
 
 **Battleground version** (2/31/18) — [open the talent tree](https://talentsforever.com/rogue/60/002-3250330010111321041-320130121221-12): the duel build with **Elusiveness 2**, **Camouflage 3** put back, talents for escapes, defense and control that duels undervalue. It wins 0.4 points fewer of its duels. Judged by duels only: no battleground is simulated yet.
 

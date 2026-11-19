@@ -346,3 +346,8 @@ necessary").
 - 2026-11-18, the PvP player pages (`duellab/render_pvp_pages.py`, by `render_modes.py`): `<class>/pvp/`, a PvP column in "Pick
   your spec", a PvP ranking in "Which spec is best?", "Most duels won" in the player index; no recommendation badge. The research
   pages' caveats now say round 2's (pets answered; the Holy gear raced both ways; which mage duel builds hold Ice Block).
+- 2026-11-18, after the user's "Drop it": Subtlety's PvP rule holds Hemorrhage only (`modes.pvp`). The search from every start kept
+  the round-1 build, 21/0/30, at 50.6% (11 min; no move kept). Its battleground version adds Elusiveness 2 and Improved Gouge 3 for
+  50.7%. Subtlety ranks second of the rogue specs again (Assassination 54%, Combat 48%).
+- 2026-11-18, the Holy paladin's blind-spot check again in its better gear (`blind_spots.evaluate` races the gear rows): 79.4% in melee
+  gear, as the search had found. No put-back kept. The battleground version adds Unyielding Faith 2 and Purifying Power 2 for 78.8%.

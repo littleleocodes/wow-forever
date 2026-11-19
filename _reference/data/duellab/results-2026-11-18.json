@@ -1280,22 +1280,22 @@
   },
   "paladin:Holy": {
    "added": [
-    "Unyielding Faith 2"
+    "Unyielding Faith 2",
+    "Purifying Power 2"
    ],
    "skipped": [
-    "Pursuit of Justice (-2.4 with the others)",
-    "Purifying Power (-1.2 with the others)"
+    "Pursuit of Justice (-2.9 with the others)"
    ],
    "allocation": {
     "Divine Strength": 1,
     "Spiritual Focus": 5,
-    "Healing Light": 3,
+    "Healing Light": 2,
     "Reverence": 2,
     "Divine Favor": 1,
     "Illumination": 5,
     "Divine Precision": 1,
     "Infusion of Light": 2,
-    "Holy Power": 5,
+    "Holy Power": 4,
     "Benediction": 3,
     "Conviction": 3,
     "Sanctified Judgement": 3,
@@ -1308,58 +1308,59 @@
     "Holy Shock": 1,
     "Sacred Arbiter": 1,
     "Deflection": 2,
-    "Repentance": 1
+    "Repentance": 1,
+    "Purifying Power": 2
    },
-   "link": "https://talentsforever.com/paladin/60/5132301511200105--23033320011201-12",
-   "win": 0.7449,
-   "dwin": -0.0051,
-   "J": 0.8327,
-   "dJ": -0.0092,
+   "link": "https://talentsforever.com/paladin/60/5122321511200104--23033320011201-12",
+   "win": 0.788,
+   "dwin": -0.0064,
+   "J": 0.8823,
+   "dJ": -0.0109,
    "by": {
     "warrior": [
-     0.8208,
+     0.95,
      0.0,
-     0.4904
+     0.7364
     ],
     "rogue": [
-     0.6458,
-     0.0083,
-     0.1875
-    ],
-    "priest": [
-     0.6833,
-     0.0,
-     0.1652
-    ],
-    "hunter": [
-     0.7792,
-     0.0,
-     0.3917
-    ],
-    "warlock": [
-     1.0,
+     0.95,
      0.0,
      0.5909
     ],
-    "paladin": [
-     0.6792,
+    "priest": [
+     0.5,
      0.0,
-     0.3039
+     -0.1423
+    ],
+    "hunter": [
+     0.5167,
+     0.0042,
+     0.0663
+    ],
+    "warlock": [
+     0.9917,
+     0.0,
+     0.4319
+    ],
+    "paladin": [
+     0.7875,
+     0.0,
+     0.3452
     ],
     "shaman": [
-     0.5958,
+     0.825,
      0.0,
-     0.2762
+     0.5432
     ],
     "druid": [
-     0.6083,
-     0.0,
-     0.128
+     0.6375,
+     0.0042,
+     0.1841
     ],
     "mage": [
-     0.8917,
+     0.9333,
      0.0,
-     0.6267
+     0.6393
     ]
    },
    "from": "winner"
@@ -1807,17 +1808,17 @@
     "Improved Gouge 3"
    ],
    "skipped": [
-    "Heightened Senses (-1.4 with the others)",
-    "Master of Deception (-6.1 with the others)",
-    "Camouflage (-2.5 with the others)"
+    "Master of Deception (-2.3 with the others)",
+    "Camouflage (-1.3 with the others)"
    ],
    "allocation": {
     "Malice": 5,
     "Ruthlessness": 3,
-    "Lethality": 1,
+    "Lethality": 2,
     "Vigor": 1,
     "Cold Blood": 1,
-    "Opportunity": 3,
+    "Improved Poisons": 3,
+    "Opportunity": 2,
     "Setup": 3,
     "Camouflage": 1,
     "Dirty Deeds": 2,
@@ -1826,68 +1827,67 @@
     "Premeditation": 1,
     "Serrated Blades": 3,
     "Ghostly Strike": 1,
+    "Heightened Senses": 1,
     "Hemorrhage": 1,
     "Preparation": 1,
     "Boot Knife": 5,
+    "Venom": 1,
+    "Vile Poisons": 1,
     "Improved Ambush": 2,
     "Improved Slice and Dice": 1,
-    "Death Mark": 1,
-    "Blood Splatter": 1,
-    "Coup de Grace": 3,
-    "Efficient Strikes": 1,
     "Elusiveness": 2,
     "Improved Gouge": 3
    },
-   "link": "https://talentsforever.com/rogue/60/30530111101-31-303212231321001151-12",
-   "win": 0.3935,
-   "dwin": -0.0088,
-   "J": 0.356,
-   "dJ": -0.0113,
+   "link": "https://talentsforever.com/rogue/60/30530110211301--30221223132101115-12",
+   "win": 0.5069,
+   "dwin": 0.0013,
+   "J": 0.5136,
+   "dJ": 0.0017,
    "by": {
     "warrior": [
-     0.2917,
+     0.4083,
      0.0,
-     -0.2091
+     -0.0434
     ],
     "rogue": [
-     0.5333,
+     0.5917,
      0.0,
-     0.0452
+     0.246
     ],
     "priest": [
-     0.6375,
-     0.0042,
-     0.2051
+     0.7292,
+     0.0,
+     0.3686
     ],
     "hunter": [
-     0.0208,
+     0.0958,
      0.0,
-     -0.7699
+     -0.6515
     ],
     "warlock": [
-     0.4375,
+     0.5583,
      0.0,
-     -0.1405
+     0.0164
     ],
     "paladin": [
-     0.1167,
+     0.1583,
      0.0,
-     -0.4033
+     -0.382
     ],
     "shaman": [
-     0.3792,
-     0.0,
-     -0.1983
+     0.5792,
+     0.0125,
+     0.0601
     ],
     "druid": [
-     0.8,
+     0.9292,
      0.0,
-     0.3784
+     0.5729
     ],
     "mage": [
-     0.325,
+     0.5125,
      0.0,
-     -0.257
+     0.0538
     ]
    },
    "from": "winner"

@@ -575,7 +575,11 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
     damage-share floor. Its cost in round 2 (2026-11-18): Subtlety only. Hemorrhage and Death Mark are required; every Subtlety start
     without Death Mark was skipped, so the search ran from one start. The result was 40.2% of duels against the field, while the
     round-1 build without Death Mark wins 50.6% on the same duels (seed 3, 240 a matchup). The other signature talents cost nothing:
-    Holy Shock, Holy Shield, Shield Slam, Mutilate, Bestial Wrath and the rest were already in the winners. Put to the user.
+    Holy Shock, Holy Shield, Shield Slam, Mutilate, Bestial Wrath and the rest were already in the winners. The user, the same day:
+    "Drop it". Subtlety's PvP rule holds Hemorrhage only (`signature_spells.json` `modes.pvp`, read by `pvp_search.pvp_required`;
+    leveling still requires Death Mark). The search, run again from every start, kept the round-1 build: 50.6%, a 21/0/30. A
+    signature entry's `note` feeds the leveling and raid checks' fingerprints, so a PvP reason goes in `modes.pvp`; editing the note
+    had blanked the Subtlety leveling page's signature line until it was put back.
 - Known limits:
   - an open field with no line of sight;
   - no consumables or racials, dungeon-blue gear;
