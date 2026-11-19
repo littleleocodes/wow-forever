@@ -140,7 +140,13 @@ def signature(cls, tree, trees):
     """The talents that grant the tree's required signature spells (signature_spells.json; the PvP rule of 2026-11-17)."""
     sig = json.load(open(DATA / "signature_spells.json", encoding="utf-8")).get(cls, {}).get(tree, {})
     names = {n for tr in trees.values() for n in tr["talents"]}
-    return [s for s in sig.get("required", []) if s in names]
+    return [s for s in pvp_required(sig) if s in names]
+
+
+def pvp_required(sig):
+    """A tree's required signature spells for PvP: its "modes.pvp" list when it has one (2026-11-18, user: "Drop it": Subtlety
+    holds Hemorrhage only, Death Mark cost 10 points of duels), else its general list."""
+    return ((sig.get("modes") or {}).get("pvp") or {}).get("required", sig.get("required", []))
 
 
 def tier_chain_moves(TO, trees, flat, protect, max_gap=5):

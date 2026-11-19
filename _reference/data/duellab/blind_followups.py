@@ -185,15 +185,21 @@ def main():
     ap.add_argument("step", choices=("improve", "battleground"))
     ap.add_argument("--workers", type=int, default=10)
     ap.add_argument("--date", help="the record's date (default today)")
+    ap.add_argument("--only", nargs="*", default=[], help="class:tree keys to redo; the record keeps the other trees' results")
     a = ap.parse_args()
     d = json.loads(B.RECORD.read_text(encoding="utf-8"))["trees"]
+    if a.only:   # 2026-11-18: one tree again (the Holy paladin after the check's gear fix) without the other 26
+        d = {k: v for k, v in d.items() if k in a.only}
     p = record_path(a.date)
     out = load_out(p)
+    key = "improved" if a.step == "improve" else "battleground"
+    keep = {k: v for k, v in (out.get(key) or {}).items() if a.only and k not in a.only}
     with CF.ProcessPoolExecutor(max_workers=a.workers) as pool:
         if a.step == "improve":
-            out["improved"] = improve(d, pool)
+            new = improve(d, pool)
         else:
-            out["battleground"] = battleground(d, out.get("improved") or {}, pool)
+            new = battleground(d, out.get("improved") or {}, pool)
+    out[key] = dict(sorted({**keep, **new}.items()))
     save_out(p, out)
     print(f"wrote {p}")
 

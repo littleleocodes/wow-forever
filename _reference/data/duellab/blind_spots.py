@@ -45,6 +45,7 @@ DATA = HERE.parent
 sys.path.insert(0, str(HERE))
 import duel_run as DR  # noqa: E402  (first: it sets the path)
 import pvp_field as PF  # noqa: E402
+import pvp_search as PS  # noqa: E402  (gear_rows, set_gear: a Holy-path paladin duels in its better gear, as in the search)
 
 RECORD = HERE / "blind-spots.json"
 SEARCH = HERE / "search"
@@ -71,8 +72,11 @@ def slug(s):
 
 
 def matchup(args):
-    """(label, opponent class) -> (win, draw, margin, casts, damage, foe control taken): field-shaped duels with what the side did."""
-    label, cls, alloc, fcls, fref, n, seed = args
+    """(label, opponent class, gear) -> (win, draw, margin, casts, damage, foe control taken): field-shaped duels with what the side
+    did. The gear row is set first (pvp_search.set_gear; None: the module's own)."""
+    label, cls, alloc, fcls, fref, n, seed = args[:7]
+    gear = args[7] if len(args) > 7 else None
+    PS.set_gear(cls, gear)
     a = DR.side(cls, alloc)
     b = DR.side(fcls, DR.load_build(fcls, fref)[1])
     wins = draws = 0
@@ -88,32 +92,45 @@ def matchup(args):
         dmg.update(me.fight.damage)
         cc.update(foe.stats["cc_taken"])
     per = lambda c: {k: v / n for k, v in c.items()}  # noqa: E731
-    return (label, fcls), (wins / n, draws / n, statistics.mean(margins), per(casts), per(dmg), per(cc))
+    return (label, fcls, gear), (wins / n, draws / n, statistics.mean(margins), per(casts), per(dmg), per(cc))
 
 
 def evaluate(cands, n, seed, pool):
-    """[(label, class, allocation)] -> {label: {"J", "win", "margin", "by", "casts", "casts_by", "dmg_share", "foe_cc"}}."""
-    jobs = [(lb, c, al, fc, fr, n, seed) for lb, c, al in cands for fc, fr in PF.FIELD]
+    """[(label, class, allocation)] -> {label: {"J", "win", "margin", "by", "casts", "casts_by", "dmg_share", "foe_cc"[, "gear"]}}.
+    Each build duels in each of its gear rows (pvp_search.gear_rows: both for a Holy-path paladin with Holy Shock) and keeps the
+    better, as the search scores it (2026-11-18: the round-2 check had run the Holy winner in caster gear only, 75.0% against the
+    search's 79.4% in melee gear on the same duels)."""
+    rows_of = {lb: PS.gear_rows(c, al) for lb, c, al in cands}
+    jobs = [(lb, c, al, fc, fr, n, seed, g) for lb, c, al in cands for g in rows_of[lb] for fc, fr in PF.FIELD]
     res = dict(pool.map(matchup, jobs, chunksize=1))
     out = {}
     for lb, c, al in cands:
-        rows = {fc: res[(lb, fc)] for fc, _ in PF.FIELD}
-        win = statistics.mean(v[0] for v in rows.values())
-        mg = statistics.mean(v[2] for v in rows.values())
-        casts, dmg, cc = collections.Counter(), collections.Counter(), collections.Counter()
-        for v in rows.values():
-            casts.update(v[3])
-            dmg.update(v[4])
-            cc.update(v[5])
-        k = len(rows)
-        tot = sum(dmg.values()) or 1.0
-        out[lb] = {"J": win + MARGIN_W * mg, "win": win, "margin": mg,
-                   "by": {fc: [round(v[0], 4), round(v[1], 4), round(v[2], 4)] for fc, v in rows.items()},
-                   "casts": {s: round(x / k, 2) for s, x in casts.most_common() if x / k >= 0.005},
-                   "casts_by": {fc: v[3] for fc, v in rows.items()},
-                   "dmg_share": {s: round(x / tot, 4) for s, x in dmg.most_common() if x / tot >= 0.001},
-                   "foe_cc": {s: round(x / k, 2) for s, x in cc.most_common() if x / k >= 0.005}}
+        for g in rows_of[lb]:
+            row = one_row({fc: res[(lb, fc, g)] for fc, _ in PF.FIELD})
+            if g:
+                row["gear"] = g
+            if lb not in out or row["J"] > out[lb]["J"]:
+                out[lb] = row
     return out
+
+
+def one_row(rows):
+    """{opponent class: matchup result} -> the build's scores, casts, damage and control."""
+    win = statistics.mean(v[0] for v in rows.values())
+    mg = statistics.mean(v[2] for v in rows.values())
+    casts, dmg, cc = collections.Counter(), collections.Counter(), collections.Counter()
+    for v in rows.values():
+        casts.update(v[3])
+        dmg.update(v[4])
+        cc.update(v[5])
+    k = len(rows)
+    tot = sum(dmg.values()) or 1.0
+    return {"J": win + MARGIN_W * mg, "win": win, "margin": mg,
+            "by": {fc: [round(v[0], 4), round(v[1], 4), round(v[2], 4)] for fc, v in rows.items()},
+            "casts": {s: round(x / k, 2) for s, x in casts.most_common() if x / k >= 0.005},
+            "casts_by": {fc: v[3] for fc, v in rows.items()},
+            "dmg_share": {s: round(x / tot, 4) for s, x in dmg.most_common() if x / tot >= 0.001},
+            "foe_cc": {s: round(x / k, 2) for s, x in cc.most_common() if x / k >= 0.005}}
 
 
 # ---- the talent data
@@ -177,7 +194,7 @@ def pvp_values(cls):
 
 def signature_talents(cls, tree, T):
     sig = json.load(open(DATA / "signature_spells.json", encoding="utf-8")).get(cls, {}).get(tree, {})
-    return [s for s in sig.get("required", []) if s in T.info]
+    return [s for s in PS.pvp_required(sig) if s in T.info]
 
 
 def active_spells(cls):
@@ -404,7 +421,7 @@ def run_tree(cls, tree, pool, log=print):
     rows.sort(key=lambda r: -r["dJ"])
     entry = {"class": cls, "tree": tree, "date": datetime.date.today().isoformat(), "record_J": rec["J"], "record_win": rec["win"],
              "winner": W, "J": round(base["J"], 4), "win": round(base["win"], 4), "margin": round(base["margin"], 4), "by": base["by"],
-             "casts": base["casts"], "dmg_share": base["dmg_share"], "foe_cc": base["foe_cc"],
+             "casts": base["casts"], "dmg_share": base["dmg_share"], "foe_cc": base["foe_cc"], "gear": base.get("gear"),
              "abilities": ability_rows(cls, W, base, T), "inert": inert, "costs": cost, "rows": rows, "out_of_reach": out_of_reach,
              "settings": {"race": RACE, "confirm": CONFIRM, "cost": COST, "bar": BAR, "max_gap": MAX_GAP, "field": PF.FIELD}}
     return entry

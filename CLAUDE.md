@@ -912,7 +912,14 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
   hybrids that level with it (`spec_modes.HYBRID_LEVELING_ROTATION`), and a hybrid whose rotation another spec's build won keeps its open
   build. The build must have its own race row, pass the signature check and run 0.5% faster than the hybrid's other builds; the record
   lists it under `builds.kept`, and the pages read its own row. The melee rotation had raced Survival's builds only, so once our
-  Survival build won it the Beast-Survival page lost its build (kept: 22/4/25, 21.00 s per kill against Survival's 20.98). A leveling
+  Survival build won it the Beast-Survival page lost its build (kept: 22/4/25, 21.00 s per kill against Survival's 20.98).
+  **The hybrid check** (`_reference/data/hybrid_check.py`, 2026-11-18, user: "how would we go about checking hybrid builds within
+  classes? Ones that don't need rules but may be better than others", then "Let's queue it"): every hybrid's best polished families
+  from the search caches, raced against each entry's (rotation's) best build of ours and the hybrid's own page build, with the
+  signature check. Record `hybrid-check.json`, page `_reference/hybrid-check.md`; it writes no build. Result, all classes: one gap.
+  The hunter's Beast-Survival 16/11/24 (Summon Hawk and Lone Wolf) does 804.6 DPS in a full raid against Survival's raid page 738.9
+  (+8.9%), passes the signature rule and has no raid page: the raid side of the keep rule is open. Every other hybrid is behind or
+  within 0.7% of a build its page or its entry already shows; leveling has none. A leveling
   filler pass carries over to a rewrite when the record's winner is a state its chain of one-point moves went through
   (`open_builds.filler_applies`): a chained second pass had stopped matching once the race picked our build after the first pass.
 - Gear presets must be complete (weapon, rings, trinkets, neck, back): some of the simulator's presets list only the armor slots
