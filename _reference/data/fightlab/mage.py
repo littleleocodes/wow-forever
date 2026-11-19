@@ -63,6 +63,13 @@ AB_STACK = re.compile(r"gain (\d+)% of your Intellect as Spell Damage and the ma
 # +7% spell damage coefficient (the triggered spell 12579's two effects, as the community simulator reads them, f72c7d7/de2b4da), and that
 # Cone of Cold spends them. The tooltip's "40%" was read until 2026-10-17 (any Frost spell, never spent).
 WC_DMG, WC_COEF = 0.05, 0.07
+# Ice Barrier's damage (2026-11-19, user: "how is Ice Barrier not worth it for Frost and Arcane-Frost? It increases damage done by 20%
+# while its active"). Forever's tooltip: "absorbing 447 damage and increasing your Frost damage by 15% for 1 min. While shielded, your
+# Frost damage is increased by an additional 5%". The lab had modelled the shield alone; the raid simulator (Frigid Power,
+# sim/mage/ice_barrier.go) and the duel lab (pvp_mage.ICE_BARRIER_DAMAGE) had the damage. False reproduces the lab before.
+ICE_BARRIER_DAMAGE = True
+IB_FRIGID_RE = re.compile(r"increasing your Frost damage by (\d+)% for (\d+) min")
+IB_SHIELD_RE = re.compile(r"increased by an additional (\d+)%")
 WC_SOURCES = ("Frostbolt", "Frost Blast")
 # Missile Barrage's triggers (audit 2026-10-18 #24): the 70425 tooltip names Arcane Blast (index 0), each Arcane Missile hit (index 1) and
 # Arcane Wrath, Fireball, Frostbolt, Frostfire Bolt (index 2). The hotfixes read from the 70450 hotfix cache (fan site's decode, quoted in
@@ -233,7 +240,8 @@ MECHANICS = {
     "Winter's Chill": ("20%/rank per Frostbolt, Frost Blast or Fingers of Frost Ice Lance hit: the next Cone of Cold +5% damage and +7% "
                        "spell damage coefficient per stack and spends them, up to 5 stacks, 15s (client 70425 and the 16 Oct beta notes; the "
                        "duration is an assumption; until 70291 +2% Frostbolt/Ice Lance crit per stack)"),
-    "Ice Barrier": "absorb (447..819 by level) before every pull, 30s cooldown; no pushback while it holds",
+    "Ice Barrier": "absorb (447..819 by level) before every pull, 30s cooldown; no pushback while it holds; Frigid Power: +15% Frost "
+                   "damage for 1 min from each cast, +5% more while the shield holds (since 2026-11-19, ICE_BARRIER_DAMAGE)",
     "Frost Warding": "+15/30% armor from Frost/Ice Armor",
     "Wand Specialization": "+13/25% wand damage",
     "Arcane Concentration": "2%/rank per damaging spell hit: next damage spell is free (Clearcasting)",
@@ -619,8 +627,28 @@ class MageModule(BaseModule):
         sc, im = f.m.debuffs.get("Improved Scorch"), f.m.debuffs.get("Impact")
         return len(names) + (1 if sc and sc["until"] > f.t else 0) + (1 if im and im["until"] > f.t else 0)
 
+    def ice_barrier_bonus(self):
+        """(Frigid Power's %, its seconds, the shield's extra %) from Ice Barrier's tooltip; zeros without the spell (not cached then:
+        the talent's ability arrives at a later level)."""
+        if getattr(self, "_ib_bonus", None):
+            return self._ib_bonus
+        ib = self.spells.get("Ice Barrier")
+        txt = (ib.text if ib is not None else "") or ""
+        m1, m2 = IB_FRIGID_RE.search(txt), IB_SHIELD_RE.search(txt)
+        if not m1:
+            return (0.0, 0.0, 0.0)
+        self._ib_bonus = (float(m1.group(1)), 60.0 * float(m1.group(2)), float(m2.group(1)) if m2 else 0.0)
+        return self._ib_bonus
+
     def talent_multiplier(self, spell, frozen):
         m = 1.0 + self.tv("Arcane Instability", 0) / 100
+        # `ib_damage` (an instance switch, default ICE_BARRIER_DAMAGE): the duel lab turns it off and adds the bonus in its own layer
+        if getattr(self, "ib_damage", ICE_BARRIER_DAMAGE) and self._fight is not None and self.sch(spell, "frost"):
+            f = self._fight
+            fp = f.p.buffs.get("Frigid Power")
+            if fp and fp["until"] > f.t:   # each cast's +15% for its minute, +5% more while the shield holds (the duel lab adds them too)
+                pct, _, add = self.ice_barrier_bonus()
+                m *= 1 + pct / 100 + (add / 100 if f.p.absorb > 0 and f.t < f.p.absorb_until else 0.0)
         if self.sch(spell, "fire"):
             if self.rank("Fire Power"):   # per Fire effect, up to the cap (client 70425; a flat 2%/rank before)
                 m *= 1 + min(self.fire_effects() * self.tv("Fire Power", 0), self.tv("Fire Power", 1)) / 100
@@ -688,6 +716,9 @@ class MageModule(BaseModule):
                 p.fsr_until = t + 5.0
                 p.absorb, p.absorb_until = ib.absorb, t + 60.0
                 p.cooldowns["Ice Barrier"] = t + ib.cooldown
+                pct, dur, _ = self.ice_barrier_bonus()
+                if getattr(self, "ib_damage", ICE_BARRIER_DAMAGE) and pct:
+                    p.buffs["Frigid Power"] = {"until": t + dur}
                 fight.note(f"Ice Barrier ({ib.absorb:.0f})")
         # one 3-minute cooldown for both (client category 1151, the simulator since 2ce8265): a Fire model with Combustion uses it,
         # anything else Presence of Mind

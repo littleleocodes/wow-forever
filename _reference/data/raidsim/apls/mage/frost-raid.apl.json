@@ -1,6 +1,49 @@
 {
  "type": "TypeAPL",
+ "prepullActions": [
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 13033
+     }
+    }
+   },
+   "doAtValue": {
+    "const": {
+     "val": "-2s"
+    }
+   }
+  }
+ ],
  "priorityList": [
+  {
+   "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpLt",
+      "lhs": {
+       "auraRemainingTime": {
+        "auraId": {
+         "spellId": 1326891
+        }
+       }
+      },
+      "rhs": {
+       "const": {
+        "val": "2s"
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 13033
+     }
+    }
+   },
+   "notes": "added 2026-11-19 (user: \"how is Ice Barrier not worth it for Frost ... It increases damage done by 20% while its active\"): Ice Barrier whenever Frigid Power, its +15% Frost damage for 1 min, has under 2 s left; the shield adds 5% while it holds (sim/mage/ice_barrier.go models both). No rotation of ours had cast it, so every search valued the talent at 0 and the Frost builds stopped at 30 Frost points (it is the 31-point talent): one Arcane point into it, the Winter's Chill build 523 -> 588 DPS and frost-ml-raid 613 -> 660 in a full raid (6,000 fights)"
+  },
   {
    "action": {
     "condition": {

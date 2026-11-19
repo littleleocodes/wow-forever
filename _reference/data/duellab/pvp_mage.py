@@ -262,6 +262,9 @@ class MagePvP(PvPAI):
     def _wrap(self, me):
         """Instance-level wrappers on this side's own module: Ice Barrier's damage buff."""
         mod, ai = me.mod, self
+        # the fight lab models Frigid Power too since 2026-11-19 (mage.ICE_BARRIER_DAMAGE); in a duel this layer's bonus below is the
+        # only one, so its numbers stay as they were (the duel recasts Ice Barrier, which the fight lab's pull-time buff would not see)
+        mod.ib_damage = False
         if ICE_BARRIER_DAMAGE and "Ice Barrier" in mod.spells:
             base_dm, base_pm = mod.damage_multiplier, mod.periodic_multiplier
 
