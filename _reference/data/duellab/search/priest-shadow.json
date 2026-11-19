@@ -4,88 +4,53 @@
  "starts": [
   "shadow-pvp",
   "community:tf-shadow",
-  "_reference/data/duellab/seeds/priest-shadow.json"
+  "_reference/data/duellab/seeds/priest-shadow.json",
+  "_reference/data/duellab/seeds/r2/priest-shadow-battleground.json",
+  "_reference/data/duellab/seeds/r2/priest-shadow-winner.json"
  ],
  "history": [
   {
    "step": 0,
-   "from": "community:tf-shadow",
-   "J": 0.7862,
-   "win": 0.7185,
+   "from": "_reference/data/duellab/seeds/r2/priest-shadow-battleground.json",
+   "J": 0.9355,
+   "win": 0.8398,
    "alloc": {
     "Twin Disciplines": 5,
     "Silent Resolve": 3,
-    "Holy Precision": 1,
-    "Martyrdom": 1,
+    "Martyrdom": 2,
     "Inner Focus": 1,
-    "Meditation": 3,
+    "Meditation": 2,
     "Twilight Focus": 3,
     "Shadow Focus": 4,
     "Blackout": 5,
     "Improved Shadow Word: Pain": 2,
-    "Shadow Reach": 2,
     "Improved Psychic Scream": 2,
     "Mind Flay": 1,
     "Improved Mind Flay": 2,
-    "Dark Inspiration": 1,
+    "Dark Inspiration": 2,
     "Vampiric Embrace": 1,
     "Shadow Weaving": 3,
-    "Silence": 1,
     "Devouring Contagion": 2,
-    "Early Demise": 2,
+    "Early Demise": 1,
     "Darkness": 5,
-    "Shadowform": 1
+    "Shadowform": 1,
+    "Improved Power Word: Shield": 2,
+    "Improved Inner Fire": 1,
+    "Improved Mind Blast": 1
    }
-  },
-  {
-   "step": 1,
-   "move": "1 point Silence -> Improved Power Word: Shield",
-   "J": 0.8032,
-   "win": 0.7343,
-   "gain": 0.0169
-  },
-  {
-   "step": 2,
-   "move": "1 point Shadow Reach -> Dark Inspiration",
-   "J": 0.8923,
-   "win": 0.8065,
-   "gain": 0.0891
-  },
-  {
-   "step": 3,
-   "move": "1 point Meditation -> Improved Power Word: Shield",
-   "J": 0.9032,
-   "win": 0.813,
-   "gain": 0.0109
-  },
-  {
-   "step": 11,
-   "move": "1 point Early Demise -> Improved Inner Fire",
-   "J": 0.923,
-   "win": 0.8287,
-   "gain": 0.0198
-  },
-  {
-   "step": 12,
-   "move": "1 point Improved Psychic Scream -> Improved Mind Blast",
-   "J": 0.935,
-   "win": 0.8398,
-   "gain": 0.0121
   }
  ],
  "final": {
   "Twin Disciplines": 5,
   "Silent Resolve": 3,
-  "Holy Precision": 1,
-  "Martyrdom": 1,
+  "Martyrdom": 2,
   "Inner Focus": 1,
   "Meditation": 2,
   "Twilight Focus": 3,
   "Shadow Focus": 4,
   "Blackout": 5,
   "Improved Shadow Word: Pain": 2,
-  "Shadow Reach": 1,
-  "Improved Psychic Scream": 1,
+  "Improved Psychic Scream": 2,
   "Mind Flay": 1,
   "Improved Mind Flay": 2,
   "Dark Inspiration": 2,
@@ -99,24 +64,24 @@
   "Improved Inner Fire": 1,
   "Improved Mind Blast": 1
  },
- "J": 0.9306,
- "win": 0.8366,
- "margin": 0.376,
+ "J": 0.9289,
+ "win": 0.8347,
+ "margin": 0.3768,
  "by": {
   "warrior": [
    0.9917,
    0.0,
-   0.569
+   0.5655
   ],
   "rogue": [
-   0.9083,
+   0.9042,
    0.0,
-   0.2357
+   0.2342
   ],
   "priest": [
-   0.725,
+   0.7167,
    0.0042,
-   0.2259
+   0.2219
   ],
   "hunter": [
    0.9708,
@@ -124,19 +89,19 @@
    0.3764
   ],
   "warlock": [
-   0.8333,
-   0.0,
-   0.299
+   0.8208,
+   0.0042,
+   0.304
   ],
   "paladin": [
-   0.3125,
+   0.325,
    0.0,
-   -0.308
+   -0.2949
   ],
   "shaman": [
-   0.8375,
+   0.8333,
    0.0,
-   0.4828
+   0.4771
   ],
   "druid": [
    1.0,
@@ -146,14 +111,33 @@
   "mage": [
    0.95,
    0.0,
-   0.5323
+   0.5363
   ]
+ },
+ "signature": {
+  "Mind Flay": 1.67
+ },
+ "gear": null,
+ "casts": {
+  "Power Word: Shield": 2.1,
+  "Mind Flay": 1.67,
+  "Mind Blast": 1.64,
+  "Shadow Word: Pain": 1.31,
+  "Vampiric Embrace": 1.24,
+  "Devouring Plague": 1.23,
+  "Dispel Magic": 0.96,
+  "Smite": 0.93,
+  "Wand": 0.73,
+  "Shadow Word: Death": 0.57,
+  "Psychic Scream": 0.47,
+  "Abolish Disease": 0.11,
+  "Mana Burn": 0.02
  },
  "race": {
   "final": {
-   "J": 0.9306,
-   "win": 0.8366,
-   "margin": 0.376
+   "J": 0.9289,
+   "win": 0.8347,
+   "margin": 0.3768
   },
   "shadow-pvp": {
    "J": 0.7385,
@@ -169,6 +153,16 @@
    "J": 0.7234,
    "win": 0.6708,
    "margin": 0.2105
+  },
+  "_reference/data/duellab/seeds/r2/priest-shadow-battleground.json": {
+   "J": 0.9289,
+   "win": 0.8347,
+   "margin": 0.3768
+  },
+  "_reference/data/duellab/seeds/r2/priest-shadow-winner.json": {
+   "J": 0.9306,
+   "win": 0.8366,
+   "margin": 0.376
   }
  },
  "settings": {
@@ -216,9 +210,15 @@
     "mage",
     "community:tf-frost"
    ]
-  ]
+  ],
+  "patience": 6,
+  "tier_chains": true,
+  "signature": [
+   "Mind Flay"
+  ],
+  "gear_race": true
  },
- "date": "2026-11-16",
- "round": "2026-11-15",
- "minutes": 60.5
+ "date": "2026-11-18",
+ "round": "r2",
+ "minutes": 8.0
 }

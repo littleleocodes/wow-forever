@@ -3,96 +3,51 @@
  "tree": "Combat",
  "starts": [
   "combat-pvp",
-  "_reference/data/duellab/seeds/rogue-combat.json"
+  "_reference/data/duellab/seeds/rogue-combat.json",
+  "_reference/data/duellab/seeds/r2/rogue-combat-battleground.json",
+  "_reference/data/duellab/seeds/r2/rogue-combat-winner.json"
  ],
  "history": [
   {
    "step": 0,
-   "from": "combat-pvp",
-   "J": 0.3156,
-   "win": 0.3657,
+   "from": "_reference/data/duellab/seeds/r2/rogue-combat-winner.json",
+   "J": 0.4647,
+   "win": 0.4833,
    "alloc": {
-    "Improved Gouge": 2,
     "Coup de Grace": 3,
     "Efficient Strikes": 2,
     "Lightning Reflexes": 5,
     "Deflection": 3,
-    "Improved Sprint": 2,
     "Precision": 3,
-    "Endurance": 2,
     "Riposte": 1,
     "Aggression": 3,
     "Flawless Execution": 1,
-    "Improved Kick": 2,
+    "Improved Kick": 1,
     "Weapon Expertise": 2,
     "Blade Flurry": 1,
     "Adrenaline Rush": 1,
     "Master of Deception": 3,
     "Setup": 3,
-    "Dirty Deeds": 2,
-    "Dirty Tricks": 2,
+    "Dirty Deeds": 1,
+    "Dirty Tricks": 1,
     "Improved Ambush": 1,
-    "Initiative": 3,
+    "Initiative": 2,
     "Premeditation": 1,
-    "Elusiveness": 2,
-    "Ghostly Strike": 1
+    "Ghostly Strike": 1,
+    "Dual Wield Specialization": 2,
+    "Flash of Steel": 4,
+    "Serrated Blades": 3,
+    "Elusiveness": 1,
+    "Camouflage": 1,
+    "Malice": 1
    }
   },
   {
-   "step": 1,
-   "move": "2 points Improved Sprint -> Dual Wield Specialization",
-   "J": 0.3576,
-   "win": 0.3981,
-   "gain": 0.042
-  },
-  {
-   "step": 2,
-   "move": "2 points Elusiveness -> Flash of Steel",
-   "J": 0.4061,
-   "win": 0.4398,
-   "gain": 0.0485
-  },
-  {
    "step": 4,
-   "move": "2 points Endurance -> Serrated Blades",
-   "J": 0.4196,
-   "win": 0.4509,
-   "gain": 0.0135
-  },
-  {
-   "step": 6,
-   "move": "1 point Dirty Tricks -> Elusiveness",
-   "J": 0.433,
-   "win": 0.4593,
-   "gain": 0.0134
-  },
-  {
-   "step": 12,
-   "move": "1 point Initiative -> Camouflage",
-   "J": 0.4413,
-   "win": 0.4657,
-   "gain": 0.0083
-  },
-  {
-   "step": 13,
-   "move": "2 points Improved Gouge -> Flash of Steel",
-   "J": 0.45,
-   "win": 0.4713,
-   "gain": 0.0087
-  },
-  {
-   "step": 17,
-   "move": "1 point Dirty Deeds -> Serrated Blades",
-   "J": 0.4599,
-   "win": 0.4787,
-   "gain": 0.0099
-  },
-  {
-   "step": 20,
-   "move": "1 point Improved Kick -> Malice",
-   "J": 0.4763,
-   "win": 0.4935,
-   "gain": 0.0164
+   "move": "1 point Serrated Blades -> Malice",
+   "J": 0.4762,
+   "win": 0.4926,
+   "gain": 0.0114
   }
  ],
  "final": {
@@ -118,76 +73,109 @@
   "Ghostly Strike": 1,
   "Dual Wield Specialization": 2,
   "Flash of Steel": 4,
-  "Serrated Blades": 3,
+  "Serrated Blades": 2,
   "Elusiveness": 1,
   "Camouflage": 1,
-  "Malice": 1
+  "Malice": 2
  },
- "J": 0.4521,
- "win": 0.4722,
- "margin": -0.0807,
+ "J": 0.4603,
+ "win": 0.4787,
+ "margin": -0.0735,
  "by": {
   "warrior": [
-   0.5,
+   0.5042,
    0.0,
-   -0.0017
+   -0.0039
   ],
   "rogue": [
-   0.775,
+   0.7833,
    0.0,
-   0.3035
+   0.3072
   ],
   "priest": [
    0.8208,
    0.0,
-   0.4197
+   0.4381
   ],
   "hunter": [
    0.0042,
    0.0,
-   -0.9211
+   -0.9205
   ],
   "warlock": [
-   0.2625,
+   0.2958,
    0.0,
-   -0.2629
+   -0.2463
   ],
   "paladin": [
-   0.0458,
+   0.0417,
    0.0,
-   -0.5374
+   -0.5451
   ],
   "shaman": [
-   0.7042,
+   0.7,
    0.025,
-   0.0843
+   0.086
   ],
   "druid": [
    0.9417,
    0.0,
-   0.5659
+   0.5731
   ],
   "mage": [
-   0.1958,
+   0.2167,
    0.0,
-   -0.3761
+   -0.3505
   ]
+ },
+ "signature": {},
+ "gear": null,
+ "casts": {
+  "Melee": 6.97,
+  "Melee (off-hand)": 6.97,
+  "Sinister Strike": 4.49,
+  "Shank": 1.55,
+  "Eviscerate": 1.23,
+  "Kidney Shot": 1.02,
+  "Adrenaline Rush": 0.91,
+  "Blade Flurry": 0.9,
+  "Cheap Shot": 0.87,
+  "Premeditation": 0.84,
+  "Ghostly Strike": 0.67,
+  "Sap": 0.61,
+  "Kick": 0.56,
+  "Sprint": 0.43,
+  "Evasion": 0.37,
+  "Gouge": 0.33,
+  "Riposte": 0.31,
+  "Vanish": 0.29,
+  "Blind": 0.27
  },
  "race": {
   "final": {
-   "J": 0.4521,
-   "win": 0.4722,
-   "margin": -0.0807
+   "J": 0.4603,
+   "win": 0.4787,
+   "margin": -0.0735
   },
   "combat-pvp": {
-   "J": 0.318,
-   "win": 0.3662,
-   "margin": -0.1928
+   "J": 0.3192,
+   "win": 0.3676,
+   "margin": -0.1937
   },
   "_reference/data/duellab/seeds/rogue-combat.json": {
-   "J": 0.2855,
-   "win": 0.3352,
-   "margin": -0.1986
+   "J": 0.2801,
+   "win": 0.3301,
+   "margin": -0.1998
+  },
+  "_reference/data/duellab/seeds/r2/rogue-combat-battleground.json": {
+   "J": 0.4448,
+   "win": 0.4676,
+   "margin": -0.0912
+  },
+  "_reference/data/duellab/seeds/r2/rogue-combat-winner.json": {
+   "J": 0.4536,
+   "win": 0.4736,
+   "margin": -0.0799
   }
  },
  "settings": {
@@ -235,9 +223,13 @@
     "mage",
     "community:tf-frost"
    ]
-  ]
+  ],
+  "patience": 6,
+  "tier_chains": true,
+  "signature": [],
+  "gear_race": true
  },
- "date": "2026-11-16",
- "round": "2026-11-15",
- "minutes": 37.9
+ "date": "2026-11-18",
+ "round": "r2",
+ "minutes": 10.7
 }

@@ -2,82 +2,37 @@
  "class": "paladin",
  "tree": "Protection",
  "starts": [
-  "_reference/data/duellab/seeds/paladin-protection.json"
+  "_reference/data/duellab/seeds/paladin-protection.json",
+  "_reference/data/duellab/seeds/r2/paladin-protection-battleground.json",
+  "_reference/data/duellab/seeds/r2/paladin-protection-improved.json",
+  "_reference/data/duellab/seeds/r2/paladin-protection-winner.json"
  ],
  "history": [
   {
    "step": 0,
-   "from": "_reference/data/duellab/seeds/paladin-protection.json",
-   "J": 0.5488,
-   "win": 0.5407,
+   "from": "_reference/data/duellab/seeds/r2/paladin-protection-improved.json",
+   "J": 0.8481,
+   "win": 0.7722,
    "alloc": {
     "Spiritual Focus": 5,
     "Divine Intellect": 5,
     "Redoubt": 5,
     "Guardian's Favor": 2,
-    "Sacred Duty": 2,
     "Improved Hammer of Justice": 3,
-    "Toughness": 5,
+    "Toughness": 2,
     "Improved Righteous Fury": 3,
-    "Stoicism": 2,
-    "Holy Shield": 1,
-    "Reckoning": 3,
+    "Reckoning": 5,
     "Benediction": 5,
     "Improved Judgement": 2,
     "Conviction": 3,
-    "Unyielding Faith": 2,
-    "Seal of Command": 1,
-    "Pursuit of Justice": 2
+    "Templar's Bulwark": 1,
+    "Swift Judgement": 1,
+    "Shield Specialization": 2,
+    "Holy Shield": 1,
+    "Shieldsworn": 1,
+    "Reverence": 2,
+    "Healing Light": 3
    }
-  },
-  {
-   "step": 1,
-   "move": "1 Redoubt + 1 Unyielding Faith -> 1 Templar's Bulwark + 1 Swift Judgement",
-   "J": 0.6291,
-   "win": 0.6037,
-   "gain": 0.0803
-  },
-  {
-   "step": 2,
-   "move": "2 Sacred Duty + 1 Holy Shield -> 1 Redoubt + 2 Shield Specialization",
-   "J": 0.7306,
-   "win": 0.687,
-   "gain": 0.1016
-  },
-  {
-   "step": 3,
-   "move": "1 Improved Hammer of Justice + 1 Toughness -> 1 Holy Shield + 1 Shieldsworn",
-   "J": 0.7389,
-   "win": 0.688,
-   "gain": 0.0083
-  },
-  {
-   "step": 4,
-   "move": "2 points Pursuit of Justice -> Reverence",
-   "J": 0.8065,
-   "win": 0.7407,
-   "gain": 0.0676
-  },
-  {
-   "step": 5,
-   "move": "2 points Toughness -> Reckoning",
-   "J": 0.8144,
-   "win": 0.7472,
-   "gain": 0.0079
-  },
-  {
-   "step": 6,
-   "move": "1 point Stoicism -> Sacred Duty",
-   "J": 0.8198,
-   "win": 0.7519,
-   "gain": 0.0054
-  },
-  {
-   "step": 14,
-   "move": "1 point Stoicism -> Improved Hammer of Justice",
-   "J": 0.8316,
-   "win": 0.762,
-   "gain": 0.0118
   }
  ],
  "final": {
@@ -92,76 +47,115 @@
   "Benediction": 5,
   "Improved Judgement": 2,
   "Conviction": 3,
-  "Unyielding Faith": 1,
-  "Seal of Command": 1,
   "Templar's Bulwark": 1,
   "Swift Judgement": 1,
   "Shield Specialization": 2,
   "Holy Shield": 1,
   "Shieldsworn": 1,
   "Reverence": 2,
-  "Sacred Duty": 1
+  "Healing Light": 3
  },
- "J": 0.8345,
- "win": 0.763,
- "margin": 0.2863,
+ "J": 0.8452,
+ "win": 0.7713,
+ "margin": 0.2956,
  "by": {
   "warrior": [
    0.9958,
    0.0,
-   0.3776
+   0.3773
   ],
   "rogue": [
    1.0,
    0.0,
-   0.6483
+   0.6958
   ],
   "priest": [
    0.0,
    0.0,
-   -0.6552
+   -0.6886
   ],
   "hunter": [
-   0.7208,
-   0.0042,
-   0.2107
+   0.775,
+   0.0,
+   0.2389
   ],
   "warlock": [
-   0.7833,
+   0.6792,
    0.0,
-   0.2178
+   0.0803
   ],
   "paladin": [
-   0.8292,
+   0.8417,
    0.0,
-   0.3674
+   0.3898
   ],
   "shaman": [
-   0.6625,
+   0.7417,
    0.0042,
-   0.2288
+   0.3235
   ],
   "druid": [
-   0.975,
+   0.9917,
    0.0,
-   0.5726
+   0.6014
   ],
   "mage": [
-   0.9,
+   0.9167,
    0.0,
-   0.6086
+   0.6416
   ]
+ },
+ "signature": {
+  "Holy Shield": 2.71
+ },
+ "gear": null,
+ "casts": {
+  "Melee": 15.02,
+  "Holy Strike": 5.4,
+  "Judgement": 5.38,
+  "Shield block": 4.75,
+  "Reckoning": 3.13,
+  "Holy Shield": 2.71,
+  "Seal of Fury": 2.01,
+  "Hammer of Justice": 1.56,
+  "Swift Judgement": 1.12,
+  "Cleanse": 1.06,
+  "Holy Light": 0.97,
+  "Consecration": 0.86,
+  "Templar's Bulwark": 0.83,
+  "Flash of Light": 0.69,
+  "Blessing of Freedom": 0.52,
+  "Hammer of Wrath": 0.47,
+  "Voice of Truth": 0.42,
+  "Lay on Hands": 0.34,
+  "Divine Protection": 0.1,
+  "Divine Shield": 0.06
  },
  "race": {
   "final": {
-   "J": 0.8345,
-   "win": 0.763,
-   "margin": 0.2863
+   "J": 0.8452,
+   "win": 0.7713,
+   "margin": 0.2956
   },
   "_reference/data/duellab/seeds/paladin-protection.json": {
-   "J": 0.5454,
-   "win": 0.5375,
-   "margin": 0.0316
+   "J": 0.5543,
+   "win": 0.5468,
+   "margin": 0.0302
+  },
+  "_reference/data/duellab/seeds/r2/paladin-protection-battleground.json": {
+   "J": 0.8327,
+   "win": 0.7597,
+   "margin": 0.2917
+  },
+  "_reference/data/duellab/seeds/r2/paladin-protection-improved.json": {
+   "J": 0.8452,
+   "win": 0.7713,
+   "margin": 0.2956
+  },
+  "_reference/data/duellab/seeds/r2/paladin-protection-winner.json": {
+   "J": 0.8279,
+   "win": 0.7579,
+   "margin": 0.2802
   }
  },
  "settings": {
@@ -209,9 +203,15 @@
     "mage",
     "community:tf-frost"
    ]
-  ]
+  ],
+  "patience": 6,
+  "tier_chains": true,
+  "signature": [
+   "Holy Shield"
+  ],
+  "gear_race": true
  },
- "date": "2026-11-16",
- "round": "2026-11-15",
- "minutes": 183.3
+ "date": "2026-11-18",
+ "round": "r2",
+ "minutes": 29.4
 }

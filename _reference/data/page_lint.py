@@ -124,7 +124,7 @@ def known_names():
 
 
 def check_links(tree, cls, out):
-    pages = tree.list(f"{cls}/leveling") + tree.list(f"{cls}/raid") + [f"{cls}/README.md"]
+    pages = tree.list(f"{cls}/leveling") + tree.list(f"{cls}/raid") + tree.list(f"{cls}/pvp") + [f"{cls}/README.md"]   # pvp/: 2026-11-18
     for p in pages:
         for m in LINK.finditer(tree.text(p)):
             link = m.group(1)

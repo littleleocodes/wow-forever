@@ -3,14 +3,16 @@
  "tree": "Fury",
  "starts": [
   "fury-pvp",
-  "_reference/data/duellab/seeds/warrior-fury.json"
+  "_reference/data/duellab/seeds/warrior-fury.json",
+  "_reference/data/duellab/seeds/r2/warrior-fury-battleground.json",
+  "_reference/data/duellab/seeds/r2/warrior-fury-winner.json"
  ],
  "history": [
   {
    "step": 0,
-   "from": "fury-pvp",
-   "J": 0.1881,
-   "win": 0.262,
+   "from": "_reference/data/duellab/seeds/r2/warrior-fury-winner.json",
+   "J": 0.2126,
+   "win": 0.2796,
    "alloc": {
     "Deflection": 5,
     "Improved Rend": 1,
@@ -20,41 +22,20 @@
     "Cruelty": 5,
     "Unbridled Wrath": 5,
     "Blood Craze": 3,
-    "Enrage": 5,
+    "Enrage": 4,
     "Furious Precision": 1,
     "Piercing Howl": 1,
-    "Dual Wield Specialization": 5,
+    "Dual Wield Specialization": 4,
     "Improved Execute": 2,
     "Death Wish": 1,
     "Gore Drinker": 2,
     "Improved Berserker Rage": 2,
     "Improved Intercept": 2,
-    "Flurry": 2,
+    "Flurry": 3,
     "Improved Whirlwind": 1,
     "Bloodthirst": 1,
-    "Iron Will": 1
+    "Improved Overpower": 2
    }
-  },
-  {
-   "step": 1,
-   "move": "2 points Dual Wield Specialization -> Improved Overpower",
-   "J": 0.1944,
-   "win": 0.2676,
-   "gain": 0.0063
-  },
-  {
-   "step": 7,
-   "move": "1 point Enrage -> Flurry",
-   "J": 0.2018,
-   "win": 0.2694,
-   "gain": 0.0074
-  },
-  {
-   "step": 8,
-   "move": "1 point Iron Will -> Dual Wield Specialization",
-   "J": 0.2073,
-   "win": 0.275,
-   "gain": 0.0055
   }
  ],
  "final": {
@@ -80,9 +61,9 @@
   "Bloodthirst": 1,
   "Improved Overpower": 2
  },
- "J": 0.2132,
- "win": 0.2792,
- "margin": -0.2638,
+ "J": 0.2145,
+ "win": 0.2801,
+ "margin": -0.2623,
  "by": {
   "warrior": [
    0.1958,
@@ -105,9 +86,9 @@
    -0.4553
   ],
   "warlock": [
-   0.05,
+   0.0583,
    0.0,
-   -0.4431
+   -0.4299
   ],
   "paladin": [
    0.0292,
@@ -130,21 +111,61 @@
    -0.5814
   ]
  },
+ "signature": {
+  "Bloodthirst": 1.89
+ },
+ "gear": null,
+ "casts": {
+  "Melee (off-hand)": 7.52,
+  "Melee": 7.16,
+  "Hamstring": 2.35,
+  "Overpower": 2.03,
+  "Bloodthirst": 1.89,
+  "Berserker Stance": 1.63,
+  "Battle Stance": 1.59,
+  "Retaliation": 1.35,
+  "Intercept": 1.14,
+  "Bloodrage": 1.0,
+  "Death Wish": 1.0,
+  "Berserker Rage": 0.91,
+  "Charge": 0.67,
+  "Pummel": 0.46,
+  "Heroic Strike": 0.35,
+  "Recklessness": 0.33,
+  "Piercing Howl": 0.32,
+  "Defensive Stance": 0.29,
+  "Disarm": 0.29,
+  "Execute": 0.23,
+  "Cleave": 0.17,
+  "Whirlwind": 0.15,
+  "Intimidating Shout": 0.13,
+  "Battle Shout": 0.05
+ },
  "race": {
   "final": {
-   "J": 0.2132,
-   "win": 0.2792,
-   "margin": -0.2638
+   "J": 0.2145,
+   "win": 0.2801,
+   "margin": -0.2623
   },
   "fury-pvp": {
-   "J": 0.1763,
-   "win": 0.2514,
-   "margin": -0.3003
+   "J": 0.176,
+   "win": 0.2509,
+   "margin": -0.2997
   },
   "_reference/data/duellab/seeds/warrior-fury.json": {
-   "J": 0.12,
-   "win": 0.2093,
-   "margin": -0.3571
+   "J": 0.1211,
+   "win": 0.2102,
+   "margin": -0.3562
+  },
+  "_reference/data/duellab/seeds/r2/warrior-fury-battleground.json": {
+   "J": 0.2014,
+   "win": 0.2713,
+   "margin": -0.2795
+  },
+  "_reference/data/duellab/seeds/r2/warrior-fury-winner.json": {
+   "J": 0.2145,
+   "win": 0.2801,
+   "margin": -0.2623
   }
  },
  "settings": {
@@ -192,9 +213,15 @@
     "mage",
     "community:tf-frost"
    ]
-  ]
+  ],
+  "patience": 6,
+  "tier_chains": true,
+  "signature": [
+   "Bloodthirst"
+  ],
+  "gear_race": true
  },
- "date": "2026-11-17",
- "round": "2026-11-15",
- "minutes": 38.3
+ "date": "2026-11-18",
+ "round": "r2",
+ "minutes": 9.3
 }

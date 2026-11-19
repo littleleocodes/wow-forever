@@ -9,13 +9,13 @@
 
 Pick what you want to do (the columns) and the spec you want to play (the rows). Every link opens a page with the talents (and a link that shows them in a talent calculator), the talent order while leveling, what to press, and the numbers behind the choice.
 
-| Spec | Leveling (solo) | Raid (group: full raid DPS) |
-|---|---|---|
-| **Arcane** | **✅ Recommended**<br>[Arcane — Leveling](leveling/arcane.md) 🔬<br>27 s/kill | [Arcane — Raid](raid/arcane.md) 🔬<br>797 DPS (raid) |
-| **Fire** | [Fire — Leveling](leveling/fire.md) 🔬<br>34 s/kill | **✅ Recommended**<br>[Fire — Raid](raid/fire.md) 🔬<br>887 DPS (raid) |
-| **Frost** | [Frost — Leveling](leveling/frost.md) 🔬<br>28 s/kill | [Frost — Winter's Chill](raid/frost.md)<br>533 DPS (raid) |
+| Spec | Leveling (solo) | Raid (group: full raid DPS) | PvP (duels) |
+|---|---|---|---|
+| **Arcane** | **✅ Recommended**<br>[Arcane — Leveling](leveling/arcane.md) 🔬<br>27 s/kill | [Arcane — Raid](raid/arcane.md) 🔬<br>797 DPS (raid) | [Arcane — PvP](pvp/arcane.md) 🔬<br>52% of duels |
+| **Fire** | [Fire — Leveling](leveling/fire.md) 🔬<br>34 s/kill | **✅ Recommended**<br>[Fire — Raid](raid/fire.md) 🔬<br>887 DPS (raid) | [Fire — PvP](pvp/fire.md) 🔬<br>40% of duels |
+| **Frost** | [Frost — Leveling](leveling/frost.md) 🔬<br>28 s/kill | [Frost — Winter's Chill](raid/frost.md)<br>533 DPS (raid) | [Frost — PvP](pvp/frost.md) 🔬<br>45% of duels |
 
-**✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
+**✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand. **PvP:** the share of duels the build wins in this project's duel lab against one PvP build of every class; no spec is marked recommended there (the lab's AI against itself in an open field is a model of PvP, not PvP).
 
 ### Hybrid builds
 
@@ -55,6 +55,16 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | 3 | [Arcane](raid/arcane.md) 🔬 | 797 | -10% |
 | 4 | [Arcane-Frost](raid/arcane-frost.md) 🔬 | 704 | -21% |
 | 5 | [Frost](raid/frost.md) — Winter's Chill | 533 | -40% |
+
+### PvP (duels)
+
+Ranked by the share of duels the spec's best build wins against the field (nine opponents, one PvP build per class; level 60, one against one):
+
+| # | Spec and build | Wins vs the field | Easiest matchup | Hardest matchup |
+|---|---|---|---|---|
+| 1 | [Arcane](pvp/arcane.md) 🔬 33/7/11 | 52% | Mage 96% | Paladin 0% |
+| 2 | [Frost](pvp/frost.md) 🔬 20/0/31 | 45% | Warrior 100% | Warlock 0% |
+| 3 | [Fire](pvp/fire.md) 🔬 0/33/18 | 40% | Warrior 99% | Paladin 0% |
 
 Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie. Everything is a simulation of the beta, not a measurement in the game.
 

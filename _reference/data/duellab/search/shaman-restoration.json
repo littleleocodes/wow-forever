@@ -3,19 +3,20 @@
  "tree": "Restoration",
  "starts": [
   "restoration-pvp",
-  "_reference/data/duellab/seeds/shaman-restoration.json"
+  "_reference/data/duellab/seeds/shaman-restoration.json",
+  "_reference/data/duellab/seeds/r2/shaman-restoration-battleground.json",
+  "_reference/data/duellab/seeds/r2/shaman-restoration-improved.json",
+  "_reference/data/duellab/seeds/r2/shaman-restoration-winner.json"
  ],
  "history": [
   {
    "step": 0,
-   "from": "restoration-pvp",
-   "J": 0.7701,
-   "win": 0.6843,
+   "from": "_reference/data/duellab/seeds/r2/shaman-restoration-improved.json",
+   "J": 0.812,
+   "win": 0.7167,
    "alloc": {
-    "Ancestral Knowledge": 2,
-    "Earth's Grasp": 2,
-    "Thundering Strikes": 5,
-    "Guardian Totems": 2,
+    "Ancestral Knowledge": 4,
+    "Thundering Strikes": 2,
     "Anticipation": 3,
     "Shamanistic Focus": 1,
     "Improved Ghost Wolf": 2,
@@ -25,41 +26,29 @@
     "Tidal Focus": 4,
     "Improved Reincarnation": 2,
     "Mindfulness": 2,
-    "Ancestral Healing": 3,
+    "Ancestral Healing": 1,
     "Healing Focus": 3,
     "Mana Tide Totem": 1,
     "Restorative Totems": 1,
     "Healing Way": 3,
     "Nature's Swiftness": 1,
     "Purification": 5,
-    "Riptide": 1
+    "Riptide": 1,
+    "Mental Dexterity": 3,
+    "Tidal Mastery": 2,
+    "Improved Lightning Shield": 2
    }
   },
   {
-   "step": 1,
-   "move": "3 points Thundering Strikes -> Mental Dexterity",
-   "J": 0.7813,
-   "win": 0.6917,
-   "gain": 0.0112
-  },
-  {
    "step": 2,
-   "move": "2 points Ancestral Healing -> Tidal Mastery",
-   "J": 0.7938,
-   "win": 0.7019,
-   "gain": 0.0126
-  },
-  {
-   "step": 3,
-   "move": "2 points Guardian Totems -> Improved Lightning Shield",
-   "J": 0.811,
-   "win": 0.7157,
-   "gain": 0.0171
+   "move": "1 point Ancestral Healing -> Mindfulness",
+   "J": 0.8194,
+   "win": 0.7222,
+   "gain": 0.0073
   }
  ],
  "final": {
-  "Ancestral Knowledge": 2,
-  "Earth's Grasp": 2,
+  "Ancestral Knowledge": 4,
   "Thundering Strikes": 2,
   "Anticipation": 3,
   "Shamanistic Focus": 1,
@@ -69,8 +58,7 @@
   "Improved Healing Wave": 5,
   "Tidal Focus": 4,
   "Improved Reincarnation": 2,
-  "Mindfulness": 2,
-  "Ancestral Healing": 1,
+  "Mindfulness": 3,
   "Healing Focus": 3,
   "Mana Tide Totem": 1,
   "Restorative Totems": 1,
@@ -82,71 +70,108 @@
   "Tidal Mastery": 2,
   "Improved Lightning Shield": 2
  },
- "J": 0.8167,
- "win": 0.7231,
- "margin": 0.3744,
+ "J": 0.825,
+ "win": 0.7287,
+ "margin": 0.385,
  "by": {
   "warrior": [
-   0.4792,
+   0.4917,
    0.0,
-   0.0712
+   0.0729
   ],
   "rogue": [
-   0.8208,
+   0.8292,
    0.0042,
-   0.3257
+   0.3348
   ],
   "priest": [
-   0.5458,
+   0.5625,
    0.0,
-   0.1609
+   0.1817
   ],
   "hunter": [
    0.0792,
    0.0,
-   -0.3544
+   -0.3174
   ],
   "warlock": [
    1.0,
    0.0,
-   0.7096
+   0.6823
   ],
   "paladin": [
-   0.9583,
+   0.9708,
    0.0,
-   0.6904
+   0.7104
   ],
   "shaman": [
-   0.7875,
-   0.0083,
-   0.4362
+   0.7625,
+   0.0042,
+   0.4239
   ],
   "druid": [
-   0.9375,
-   0.0,
-   0.6871
+   0.9583,
+   0.0042,
+   0.702
   ],
   "mage": [
-   0.9,
+   0.9042,
    0.0,
-   0.643
+   0.6744
   ]
+ },
+ "signature": {},
+ "gear": null,
+ "casts": {
+  "Melee": 6.15,
+  "Earth Shock": 2.83,
+  "Windfury": 2.79,
+  "Stormstrike": 2.58,
+  "Riptide": 1.79,
+  "Lightning Shield": 1.6,
+  "Searing Totem": 1.03,
+  "Healing Wave": 0.94,
+  "Tremor Totem": 0.93,
+  "Grounding Totem": 0.86,
+  "Ghost Wolf": 0.79,
+  "Mana Tide Totem": 0.58,
+  "Purge": 0.49,
+  "Nature's Swiftness": 0.46,
+  "Fire Nova": 0.42,
+  "Frost Shock": 0.37,
+  "Lesser Healing Wave": 0.2,
+  "Lightning Bolt": 0.12
  },
  "race": {
   "final": {
-   "J": 0.8167,
-   "win": 0.7231,
-   "margin": 0.3744
+   "J": 0.825,
+   "win": 0.7287,
+   "margin": 0.385
   },
   "restoration-pvp": {
-   "J": 0.7823,
-   "win": 0.6958,
-   "margin": 0.3459
+   "J": 0.7808,
+   "win": 0.6954,
+   "margin": 0.3416
   },
   "_reference/data/duellab/seeds/shaman-restoration.json": {
-   "J": 0.5046,
-   "win": 0.4954,
-   "margin": 0.0368
+   "J": 0.5221,
+   "win": 0.5088,
+   "margin": 0.0531
+  },
+  "_reference/data/duellab/seeds/r2/shaman-restoration-battleground.json": {
+   "J": 0.8202,
+   "win": 0.7264,
+   "margin": 0.3754
+  },
+  "_reference/data/duellab/seeds/r2/shaman-restoration-improved.json": {
+   "J": 0.824,
+   "win": 0.7292,
+   "margin": 0.3793
+  },
+  "_reference/data/duellab/seeds/r2/shaman-restoration-winner.json": {
+   "J": 0.8159,
+   "win": 0.7231,
+   "margin": 0.3711
   }
  },
  "settings": {
@@ -194,9 +219,13 @@
     "mage",
     "community:tf-frost"
    ]
-  ]
+  ],
+  "patience": 6,
+  "tier_chains": true,
+  "signature": [],
+  "gear_race": true
  },
- "date": "2026-11-17",
- "round": "2026-11-15",
- "minutes": 87.8
+ "date": "2026-11-18",
+ "round": "r2",
+ "minutes": 17.2
 }

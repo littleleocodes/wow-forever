@@ -4,61 +4,42 @@
  "starts": [
   "pvp-seal-fate-daggers",
   "assassination-pvp",
-  "_reference/data/duellab/seeds/rogue-assassination.json"
+  "_reference/data/duellab/seeds/rogue-assassination.json",
+  "_reference/data/duellab/seeds/r2/rogue-assassination-battleground.json",
+  "_reference/data/duellab/seeds/r2/rogue-assassination-improved.json",
+  "_reference/data/duellab/seeds/r2/rogue-assassination-winner.json"
  ],
  "history": [
   {
    "step": 0,
-   "from": "pvp-seal-fate-daggers",
-   "J": 0.4182,
-   "win": 0.4454,
+   "from": "_reference/data/duellab/seeds/r2/rogue-assassination-improved.json",
+   "J": 0.5236,
+   "win": 0.5259,
    "alloc": {
     "Improved Gouge": 3,
     "Malice": 5,
-    "Remorseless Attacks": 2,
     "Ruthlessness": 3,
     "Lethality": 2,
     "Vigor": 2,
     "Cold Blood": 1,
     "Improved Poisons": 1,
-    "Vile Poisons": 1,
-    "Improved Kidney Shot": 2,
-    "Relentless Strikes": 4,
+    "Vile Poisons": 3,
+    "Improved Kidney Shot": 1,
+    "Relentless Strikes": 5,
     "Venom": 1,
     "Seal Fate": 3,
     "Mutilate": 1,
     "Coup de Grace": 3,
     "Lightning Reflexes": 2,
     "Puncturing Wounds": 3,
-    "Master of Deception": 3,
     "Opportunity": 2,
-    "Dirty Deeds": 1,
-    "Dirty Tricks": 1,
-    "Improved Ambush": 3,
+    "Dirty Deeds": 2,
+    "Improved Ambush": 1,
     "Initiative": 1,
-    "Premeditation": 1
+    "Premeditation": 1,
+    "Setup": 3,
+    "Dirty Tricks": 2
    }
-  },
-  {
-   "step": 1,
-   "move": "1 point Dirty Tricks -> Dirty Deeds",
-   "J": 0.4615,
-   "win": 0.4759,
-   "gain": 0.0433
-  },
-  {
-   "step": 2,
-   "move": "1 point Improved Kidney Shot -> Relentless Strikes",
-   "J": 0.4744,
-   "win": 0.4861,
-   "gain": 0.0129
-  },
-  {
-   "step": 4,
-   "move": "2 points Remorseless Attacks -> Vile Poisons",
-   "J": 0.487,
-   "win": 0.4963,
-   "gain": 0.0126
   }
  ],
  "final": {
@@ -78,83 +59,121 @@
   "Coup de Grace": 3,
   "Lightning Reflexes": 2,
   "Puncturing Wounds": 3,
-  "Master of Deception": 3,
   "Opportunity": 2,
   "Dirty Deeds": 2,
-  "Improved Ambush": 3,
+  "Improved Ambush": 1,
   "Initiative": 1,
-  "Premeditation": 1
+  "Premeditation": 1,
+  "Setup": 3,
+  "Dirty Tricks": 2
  },
- "J": 0.4763,
- "win": 0.4884,
- "margin": -0.0487,
+ "J": 0.5409,
+ "win": 0.5389,
+ "margin": 0.008,
  "by": {
   "warrior": [
-   0.3708,
+   0.4458,
    0.0,
-   -0.0843
+   -0.0412
   ],
   "rogue": [
-   0.5,
+   0.5958,
    0.0,
-   0.0455
+   0.1797
   ],
   "priest": [
-   0.6667,
-   0.0,
-   0.2644
+   0.7333,
+   0.0042,
+   0.3198
   ],
   "hunter": [
    0.0333,
    0.0,
-   -0.8836
+   -0.8952
   ],
   "warlock": [
-   0.7,
+   0.7875,
    0.0,
-   0.1569
+   0.2431
   ],
   "paladin": [
-   0.2,
-   0.0,
-   -0.3471
+   0.1917,
+   0.0042,
+   -0.3325
   ],
   "shaman": [
-   0.4708,
-   0.0042,
-   -0.0824
+   0.5917,
+   0.0083,
+   0.0132
   ],
   "druid": [
-   0.9083,
+   0.9667,
    0.0,
-   0.4795
+   0.5615
   ],
   "mage": [
-   0.5458,
+   0.5042,
    0.0,
-   0.0131
+   0.0234
   ]
+ },
+ "signature": {
+  "Mutilate": 3.24
+ },
+ "gear": null,
+ "casts": {
+  "Melee": 8.95,
+  "Melee (off-hand)": 8.95,
+  "Mutilate": 3.24,
+  "Shank": 1.81,
+  "Eviscerate": 1.3,
+  "Kidney Shot": 1.12,
+  "Premeditation": 0.84,
+  "Cheap Shot": 0.81,
+  "Cold Blood": 0.77,
+  "Sap": 0.61,
+  "Kick": 0.54,
+  "Sprint": 0.42,
+  "Evasion": 0.36,
+  "Gouge": 0.29,
+  "Vanish": 0.23,
+  "Blind": 0.12
  },
  "race": {
   "final": {
-   "J": 0.4763,
-   "win": 0.4884,
-   "margin": -0.0487
+   "J": 0.5409,
+   "win": 0.5389,
+   "margin": 0.008
   },
   "pvp-seal-fate-daggers": {
-   "J": 0.4373,
-   "win": 0.4611,
-   "margin": -0.0951
+   "J": 0.4354,
+   "win": 0.4597,
+   "margin": -0.0975
   },
   "assassination-pvp": {
-   "J": 0.3401,
-   "win": 0.3787,
-   "margin": -0.1545
+   "J": 0.3341,
+   "win": 0.3731,
+   "margin": -0.1561
   },
   "_reference/data/duellab/seeds/rogue-assassination.json": {
-   "J": 0.3354,
-   "win": 0.3782,
-   "margin": -0.1714
+   "J": 0.3341,
+   "win": 0.3769,
+   "margin": -0.1709
+  },
+  "_reference/data/duellab/seeds/r2/rogue-assassination-battleground.json": {
+   "J": 0.5431,
+   "win": 0.5421,
+   "margin": 0.004
+  },
+  "_reference/data/duellab/seeds/r2/rogue-assassination-improved.json": {
+   "J": 0.5409,
+   "win": 0.5389,
+   "margin": 0.008
+  },
+  "_reference/data/duellab/seeds/r2/rogue-assassination-winner.json": {
+   "J": 0.4791,
+   "win": 0.4912,
+   "margin": -0.0482
   }
  },
  "settings": {
@@ -202,9 +221,15 @@
     "mage",
     "community:tf-frost"
    ]
-  ]
+  ],
+  "patience": 6,
+  "tier_chains": true,
+  "signature": [
+   "Mutilate"
+  ],
+  "gear_race": true
  },
- "date": "2026-11-16",
- "round": "2026-11-15",
- "minutes": 40.1
+ "date": "2026-11-18",
+ "round": "r2",
+ "minutes": 7.1
 }

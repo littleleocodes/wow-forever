@@ -3,158 +3,158 @@
  "tree": "Discipline",
  "starts": [
   "discipline-pvp",
-  "_reference/data/duellab/seeds/priest-discipline.json"
+  "_reference/data/duellab/seeds/priest-discipline.json",
+  "_reference/data/duellab/seeds/r2/priest-discipline-improved.json",
+  "_reference/data/duellab/seeds/r2/priest-discipline-winner.json"
  ],
  "history": [
   {
    "step": 0,
-   "from": "discipline-pvp",
-   "J": 0.4138,
-   "win": 0.4306,
+   "from": "_reference/data/duellab/seeds/r2/priest-discipline-improved.json",
+   "J": 0.5319,
+   "win": 0.5065,
    "alloc": {
     "Twin Disciplines": 5,
     "Silent Resolve": 3,
     "Improved Power Word: Shield": 3,
-    "Martyrdom": 2,
     "Inner Focus": 1,
     "Meditation": 3,
-    "Improved Inner Fire": 2,
+    "Improved Inner Fire": 3,
     "Soul Warding": 1,
     "Improved Mana Burn": 2,
     "Penance": 1,
-    "Renewed Hope": 5,
-    "Divine Aegis": 3,
     "Power Infusion": 1,
     "Twilight Focus": 3,
-    "Blackout": 5,
-    "Spirit Tap": 1,
-    "Improved Shadow Word: Pain": 2,
-    "Shadow Reach": 2,
-    "Improved Psychic Scream": 2,
-    "Mind Flay": 1,
-    "Improved Mind Flay": 2,
-    "Vampiric Embrace": 1
+    "Blackout": 3,
+    "Mental Strength": 5,
+    "Mental Agility": 2,
+    "Wand Specialization": 2,
+    "Spell Warding": 5,
+    "Divine Fury": 5,
+    "Improved Renew": 3
    }
-  },
-  {
-   "step": 1,
-   "move": "5 points Renewed Hope -> Mental Strength",
-   "J": 0.4349,
-   "win": 0.4426,
-   "gain": 0.021
-  },
-  {
-   "step": 3,
-   "move": "1 point Twilight Focus -> Mental Agility",
-   "J": 0.4402,
-   "win": 0.4491,
-   "gain": 0.0054
-  },
-  {
-   "step": 6,
-   "move": "2 points Divine Aegis -> Wand Specialization",
-   "J": 0.4708,
-   "win": 0.4685,
-   "gain": 0.0305
-  },
-  {
-   "step": 7,
-   "move": "1 point Divine Aegis -> Mental Agility",
-   "J": 0.4774,
-   "win": 0.4741,
-   "gain": 0.0066
   }
  ],
  "final": {
   "Twin Disciplines": 5,
   "Silent Resolve": 3,
   "Improved Power Word: Shield": 3,
-  "Martyrdom": 2,
   "Inner Focus": 1,
   "Meditation": 3,
-  "Improved Inner Fire": 2,
+  "Improved Inner Fire": 3,
   "Soul Warding": 1,
   "Improved Mana Burn": 2,
   "Penance": 1,
   "Power Infusion": 1,
-  "Twilight Focus": 2,
-  "Blackout": 5,
-  "Spirit Tap": 1,
-  "Improved Shadow Word: Pain": 2,
-  "Shadow Reach": 2,
-  "Improved Psychic Scream": 2,
-  "Mind Flay": 1,
-  "Improved Mind Flay": 2,
-  "Vampiric Embrace": 1,
+  "Twilight Focus": 3,
+  "Blackout": 3,
   "Mental Strength": 5,
   "Mental Agility": 2,
-  "Wand Specialization": 2
+  "Wand Specialization": 2,
+  "Spell Warding": 5,
+  "Divine Fury": 5,
+  "Improved Renew": 3
  },
- "J": 0.4649,
- "win": 0.4625,
- "margin": 0.0096,
+ "J": 0.4944,
+ "win": 0.4764,
+ "margin": 0.0722,
  "by": {
   "warrior": [
-   0.8417,
-   0.0042,
-   0.3253
+   0.8625,
+   0.0,
+   0.3908
   ],
   "rogue": [
-   0.6792,
-   0.0,
-   0.2025
+   0.675,
+   0.0042,
+   0.2269
   ],
   "priest": [
+   0.0042,
    0.0,
-   0.0,
-   -0.6109
+   -0.5631
   ],
   "hunter": [
-   0.8958,
+   0.95,
    0.0,
-   0.6711
+   0.7489
   ],
   "warlock": [
+   0.0083,
    0.0,
-   0.0,
-   -0.6272
+   -0.4684
   ],
   "paladin": [
-   0.25,
+   0.3375,
    0.0,
-   -0.2625
+   -0.1369
   ],
   "shaman": [
-   0.0417,
+   0.0708,
    0.0,
-   -0.4479
+   -0.3403
   ],
   "druid": [
-   0.475,
+   0.3917,
    0.0,
-   0.0734
+   -0.0322
   ],
   "mage": [
-   0.9792,
+   0.9875,
    0.0,
-   0.7624
+   0.8237
   ]
+ },
+ "signature": {
+  "Penance": 1.94
+ },
+ "gear": null,
+ "casts": {
+  "Wand": 16.0,
+  "Power Word: Shield": 3.58,
+  "Renew": 2.31,
+  "Penance": 1.94,
+  "Mana Burn": 1.43,
+  "Dispel Magic": 1.25,
+  "Shadow Word: Pain": 1.14,
+  "Psychic Scream": 1.13,
+  "Mind Blast": 0.97,
+  "Holy Fire": 0.75,
+  "Devouring Plague": 0.74,
+  "Power Infusion": 0.58,
+  "Inner Focus": 0.27,
+  "Greater Heal": 0.25,
+  "Flash Heal": 0.2,
+  "Smite": 0.19,
+  "Abolish Disease": 0.14,
+  "Heal": 0.11,
+  "Inner Fire": 0.04
  },
  "race": {
   "final": {
-   "J": 0.4649,
-   "win": 0.4625,
-   "margin": 0.0096
+   "J": 0.4944,
+   "win": 0.4764,
+   "margin": 0.0722
   },
   "discipline-pvp": {
-   "J": 0.3907,
-   "win": 0.413,
-   "margin": -0.0891
+   "J": 0.3919,
+   "win": 0.4134,
+   "margin": -0.086
   },
   "_reference/data/duellab/seeds/priest-discipline.json": {
-   "J": 0.3988,
-   "win": 0.4079,
-   "margin": -0.0364
+   "J": 0.4004,
+   "win": 0.4088,
+   "margin": -0.0336
+  },
+  "_reference/data/duellab/seeds/r2/priest-discipline-improved.json": {
+   "J": 0.4944,
+   "win": 0.4764,
+   "margin": 0.0722
+  },
+  "_reference/data/duellab/seeds/r2/priest-discipline-winner.json": {
+   "J": 0.4658,
+   "win": 0.463,
+   "margin": 0.0112
   }
  },
  "settings": {
@@ -202,9 +202,15 @@
     "mage",
     "community:tf-frost"
    ]
-  ]
+  ],
+  "patience": 6,
+  "tier_chains": true,
+  "signature": [
+   "Penance"
+  ],
+  "gear_race": true
  },
- "date": "2026-11-16",
- "round": "2026-11-15",
- "minutes": 125.8
+ "date": "2026-11-18",
+ "round": "r2",
+ "minutes": 31.2
 }

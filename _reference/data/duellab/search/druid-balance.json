@@ -3,27 +3,29 @@
  "tree": "Balance",
  "starts": [
   "balance-pvp",
-  "_reference/data/duellab/seeds/druid-balance.json"
+  "_reference/data/duellab/seeds/druid-balance.json",
+  "_reference/data/duellab/seeds/r2/druid-balance-battleground.json",
+  "_reference/data/duellab/seeds/r2/druid-balance-winner.json"
  ],
  "history": [
   {
    "step": 0,
-   "from": "balance-pvp",
-   "J": 0.047,
-   "win": 0.1676,
+   "from": "_reference/data/duellab/seeds/r2/druid-balance-winner.json",
+   "J": 0.1504,
+   "win": 0.2463,
    "alloc": {
     "Improved Wrath": 5,
     "Improved Moonfire": 2,
     "Moonglow": 3,
     "Nature's Majesty": 2,
     "Nature's Reach": 1,
-    "Improved Entangling Roots": 2,
+    "Improved Entangling Roots": 1,
     "Nature's Splendor": 1,
     "Improved Starfire": 5,
-    "Vengeance": 5,
+    "Vengeance": 3,
     "Eclipse": 3,
     "Nature's Grace": 1,
-    "Moonfury": 1,
+    "Moonfury": 3,
     "Moonkin Form": 1,
     "Furor": 5,
     "Brutal Impact": 2,
@@ -31,29 +33,10 @@
     "Feral Swiftness": 2,
     "Feral Charge": 1,
     "Nature's Focus": 5,
-    "Natural Shapeshifter": 3
+    "Natural Shapeshifter": 1,
+    "Insect Swarm": 1,
+    "Naturalist": 2
    }
-  },
-  {
-   "step": 1,
-   "move": "1 point Improved Entangling Roots -> Insect Swarm",
-   "J": 0.0921,
-   "win": 0.2046,
-   "gain": 0.0451
-  },
-  {
-   "step": 9,
-   "move": "2 points Natural Shapeshifter -> Naturalist",
-   "J": 0.1075,
-   "win": 0.2148,
-   "gain": 0.0153
-  },
-  {
-   "step": 10,
-   "move": "2 points Vengeance -> Moonfury",
-   "J": 0.1499,
-   "win": 0.2463,
-   "gain": 0.0424
   }
  ],
  "final": {
@@ -80,9 +63,9 @@
   "Insect Swarm": 1,
   "Naturalist": 2
  },
- "J": 0.1277,
- "win": 0.2259,
- "margin": -0.3929,
+ "J": 0.1302,
+ "win": 0.2278,
+ "margin": -0.3903,
  "by": {
   "warrior": [
    0.6917,
@@ -115,9 +98,9 @@
    -0.3857
   ],
   "shaman": [
-   0.0125,
+   0.0292,
    0.0042,
-   -0.4934
+   -0.4698
   ],
   "druid": [
    0.3625,
@@ -130,21 +113,45 @@
    0.1201
   ]
  },
+ "signature": {},
+ "gear": null,
+ "casts": {
+  "Moonfire": 2.64,
+  "Starfire": 1.75,
+  "Insect Swarm": 1.23,
+  "Wrath": 1.16,
+  "Entangling Roots": 1.1,
+  "Barkskin": 0.54,
+  "Regrowth": 0.36,
+  "Faerie Fire": 0.24,
+  "Moonkin Form": 0.12,
+  "Innervate": 0.1
+ },
  "race": {
   "final": {
-   "J": 0.1277,
-   "win": 0.2259,
-   "margin": -0.3929
+   "J": 0.1302,
+   "win": 0.2278,
+   "margin": -0.3903
   },
   "balance-pvp": {
-   "J": 0.0406,
-   "win": 0.1644,
-   "margin": -0.4951
+   "J": 0.0416,
+   "win": 0.1648,
+   "margin": -0.4928
   },
   "_reference/data/duellab/seeds/druid-balance.json": {
-   "J": 0.0434,
+   "J": 0.0438,
    "win": 0.1653,
-   "margin": -0.4873
+   "margin": -0.4859
+  },
+  "_reference/data/duellab/seeds/r2/druid-balance-battleground.json": {
+   "J": 0.1178,
+   "win": 0.2199,
+   "margin": -0.4084
+  },
+  "_reference/data/duellab/seeds/r2/druid-balance-winner.json": {
+   "J": 0.1302,
+   "win": 0.2278,
+   "margin": -0.3903
   }
  },
  "settings": {
@@ -192,9 +199,13 @@
     "mage",
     "community:tf-frost"
    ]
-  ]
+  ],
+  "patience": 6,
+  "tier_chains": true,
+  "signature": [],
+  "gear_race": true
  },
- "date": "2026-11-16",
- "round": "2026-11-15",
- "minutes": 71.7
+ "date": "2026-11-18",
+ "round": "r2",
+ "minutes": 5.9
 }

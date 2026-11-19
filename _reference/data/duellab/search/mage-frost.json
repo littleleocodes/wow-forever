@@ -5,75 +5,41 @@
   "pvp-frost",
   "frost-pvp",
   "community:tf-frost",
-  "_reference/data/duellab/seeds/mage-frost.json"
+  "_reference/data/duellab/seeds/mage-frost.json",
+  "_reference/data/duellab/seeds/r2/mage-frost-battleground.json",
+  "_reference/data/duellab/seeds/r2/mage-frost-winner.json"
  ],
  "history": [
   {
    "step": 0,
-   "from": "frost-pvp",
-   "J": 0.3785,
-   "win": 0.4056,
+   "from": "_reference/data/duellab/seeds/r2/mage-frost-winner.json",
+   "J": 0.4563,
+   "win": 0.4593,
    "alloc": {
     "Arcane Resilience": 2,
     "Improved Channeling": 1,
     "Wand Specialization": 2,
-    "Arcane Concentration": 3,
+    "Arcane Concentration": 5,
     "Arcane Subtlety": 2,
-    "Magic Absorption": 2,
+    "Magic Absorption": 1,
     "Missile Barrage": 2,
-    "Arcane Geometry": 2,
     "Arcane Shielding": 1,
     "Improved Counterspell": 2,
     "Improved Frostbolt": 5,
     "Precision": 2,
-    "Frostbite": 3,
+    "Frostbite": 1,
     "Ice Shards": 5,
-    "Improved Frost Nova": 2,
-    "Permafrost": 3,
-    "Frost Channeling": 1,
+    "Permafrost": 2,
+    "Frost Channeling": 3,
     "Ice Lance": 1,
     "Arctic Reach": 2,
-    "Ice Block": 1,
     "Shatter": 3,
     "Cold Snap": 1,
     "Fingers of Frost": 2,
-    "Ice Barrier": 1
+    "Ice Barrier": 1,
+    "Arcane Meditation": 2,
+    "Improved Cone of Cold": 3
    }
-  },
-  {
-   "step": 1,
-   "move": "2 Arcane Geometry + 1 Ice Block -> 2 Arcane Concentration + 1 Arcane Meditation",
-   "J": 0.4154,
-   "win": 0.4343,
-   "gain": 0.0369
-  },
-  {
-   "step": 3,
-   "move": "1 point Permafrost -> Improved Cone of Cold",
-   "J": 0.4253,
-   "win": 0.437,
-   "gain": 0.0099
-  },
-  {
-   "step": 8,
-   "move": "1 point Magic Absorption -> Arcane Meditation",
-   "J": 0.4311,
-   "win": 0.4417,
-   "gain": 0.0058
-  },
-  {
-   "step": 11,
-   "move": "2 points Improved Frost Nova -> Improved Cone of Cold",
-   "J": 0.4498,
-   "win": 0.4556,
-   "gain": 0.0187
-  },
-  {
-   "step": 12,
-   "move": "2 points Frostbite -> Frost Channeling",
-   "J": 0.4561,
-   "win": 0.4593,
-   "gain": 0.0064
   }
  ],
  "final": {
@@ -101,9 +67,9 @@
   "Arcane Meditation": 2,
   "Improved Cone of Cold": 3
  },
- "J": 0.4472,
+ "J": 0.4471,
  "win": 0.4519,
- "margin": -0.0186,
+ "margin": -0.019,
  "by": {
   "warrior": [
    1.0,
@@ -138,7 +104,7 @@
   "shaman": [
    0.9792,
    0.0,
-   0.6281
+   0.6242
   ],
   "druid": [
    0.8292,
@@ -151,31 +117,62 @@
    0.0275
   ]
  },
+ "signature": {},
+ "gear": null,
+ "casts": {
+  "Fire Blast": 1.71,
+  "Frostbolt": 1.63,
+  "Arcane Explosion": 1.31,
+  "Mana Shield": 1.09,
+  "Cone of Cold": 0.87,
+  "Wand": 0.72,
+  "Blink": 0.7,
+  "Frost Nova": 0.61,
+  "Ice Lance": 0.56,
+  "Counterspell": 0.52,
+  "Remove Lesser Curse": 0.25,
+  "Frost Ward": 0.11,
+  "Arcane Missiles": 0.06,
+  "Ice Barrier": 0.05,
+  "Fireball": 0.05,
+  "Cold Snap": 0.03,
+  "Scorch": 0.02
+ },
  "race": {
   "final": {
-   "J": 0.4472,
+   "J": 0.4471,
    "win": 0.4519,
-   "margin": -0.0186
+   "margin": -0.019
   },
   "pvp-frost": {
-   "J": 0.3406,
-   "win": 0.3773,
-   "margin": -0.1467
+   "J": 0.3364,
+   "win": 0.3736,
+   "margin": -0.1489
   },
   "frost-pvp": {
-   "J": 0.3824,
-   "win": 0.4106,
-   "margin": -0.1129
+   "J": 0.3825,
+   "win": 0.4102,
+   "margin": -0.1106
   },
   "community:tf-frost": {
-   "J": 0.3947,
-   "win": 0.4176,
-   "margin": -0.0915
+   "J": 0.3987,
+   "win": 0.4208,
+   "margin": -0.0886
   },
   "_reference/data/duellab/seeds/mage-frost.json": {
-   "J": 0.364,
-   "win": 0.3972,
-   "margin": -0.1328
+   "J": 0.3669,
+   "win": 0.3995,
+   "margin": -0.1307
+  },
+  "_reference/data/duellab/seeds/r2/mage-frost-battleground.json": {
+   "J": 0.4483,
+   "win": 0.4556,
+   "margin": -0.0289
+  },
+  "_reference/data/duellab/seeds/r2/mage-frost-winner.json": {
+   "J": 0.4471,
+   "win": 0.4519,
+   "margin": -0.019
   }
  },
  "settings": {
@@ -223,9 +220,13 @@
     "mage",
     "community:tf-frost"
    ]
-  ]
+  ],
+  "patience": 6,
+  "tier_chains": true,
+  "signature": [],
+  "gear_race": true
  },
- "date": "2026-11-16",
- "round": "2026-11-15",
- "minutes": 36.6
+ "date": "2026-11-18",
+ "round": "r2",
+ "minutes": 20.7
 }

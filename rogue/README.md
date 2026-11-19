@@ -9,13 +9,13 @@
 
 Pick what you want to do (the columns) and the spec you want to play (the rows). Every link opens a page with the talents (and a link that shows them in a talent calculator), the talent order while leveling, what to press, and the numbers behind the choice.
 
-| Spec | Leveling (solo) | Raid (group: full raid DPS) |
-|---|---|---|
-| **Assassination** | [Assassination — Leveling](leveling/assassination.md) 🔬<br>21 s/kill | **✅ Recommended**<br>[Assassination — Raid](raid/assassination.md) 🔬<br>844 DPS (raid) |
-| **Combat** | **✅ Recommended**<br>[Combat — Leveling](leveling/combat.md) 🔬<br>20 s/kill | [Combat — Raid](raid/combat.md) 🔬<br>781 DPS (raid) |
-| **Subtlety** | [Subtlety — Leveling](leveling/subtlety.md) 🔬<br>22 s/kill | [Subtlety — Raid](raid/subtlety.md) 🔬<br>817 DPS (raid) |
+| Spec | Leveling (solo) | Raid (group: full raid DPS) | PvP (duels) |
+|---|---|---|---|
+| **Assassination** | [Assassination — Leveling](leveling/assassination.md) 🔬<br>21 s/kill | **✅ Recommended**<br>[Assassination — Raid](raid/assassination.md) 🔬<br>844 DPS (raid) | [Assassination — PvP](pvp/assassination.md) 🔬<br>54% of duels |
+| **Combat** | **✅ Recommended**<br>[Combat — Leveling](leveling/combat.md) 🔬<br>20 s/kill | [Combat — Raid](raid/combat.md) 🔬<br>781 DPS (raid) | [Combat — PvP](pvp/combat.md) 🔬<br>48% of duels |
+| **Subtlety** | [Subtlety — Leveling](leveling/subtlety.md) 🔬<br>22 s/kill | [Subtlety — Raid](raid/subtlety.md) 🔬<br>817 DPS (raid) | [Subtlety — PvP](pvp/subtlety.md) 🔬<br>40% of duels |
 
-**✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
+**✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand. **PvP:** the share of duels the build wins in this project's duel lab against one PvP build of every class; no spec is marked recommended there (the lab's AI against itself in an open field is a model of PvP, not PvP).
 
 ### Hybrid builds
 
@@ -55,6 +55,16 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | 3 | [Subtlety](raid/subtlety.md) 🔬 | 817 | -3% |
 | 4 | [Daggers (split)](raid/daggers-split.md) — Daggers — Raid 🔬 | 808 | -4% |
 | 5 | [Combat](raid/combat.md) 🔬 | 781 | -7% |
+
+### PvP (duels)
+
+Ranked by the share of duels the spec's best build wins against the field (nine opponents, one PvP build per class; level 60, one against one):
+
+| # | Spec and build | Wins vs the field | Easiest matchup | Hardest matchup |
+|---|---|---|---|---|
+| 1 | [Assassination](pvp/assassination.md) 🔬 31/8/12 | 54% | Druid 97% | Hunter 3% |
+| 2 | [Combat](pvp/combat.md) 🔬 2/32/17 | 48% | Druid 94% | Hunter 0% |
+| 3 | [Subtlety](pvp/subtlety.md) 🔬 16/4/31 | 40% | Druid 82% | Hunter 2% |
 
 Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie. Everything is a simulation of the beta, not a measurement in the game.
 

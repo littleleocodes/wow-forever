@@ -3,25 +3,25 @@
  "tree": "Destruction",
  "starts": [
   "destruction-pvp",
-  "_reference/data/duellab/seeds/warlock-destruction.json"
+  "_reference/data/duellab/seeds/warlock-destruction.json",
+  "_reference/data/duellab/seeds/r2/warlock-destruction-battleground.json",
+  "_reference/data/duellab/seeds/r2/warlock-destruction-improved.json",
+  "_reference/data/duellab/seeds/r2/warlock-destruction-winner.json"
  ],
  "history": [
   {
    "step": 0,
-   "from": "destruction-pvp",
-   "J": 0.066,
-   "win": 0.1528,
+   "from": "_reference/data/duellab/seeds/r2/warlock-destruction-improved.json",
+   "J": 0.2166,
+   "win": 0.2704,
    "alloc": {
     "Suppression": 5,
     "Improved Corruption": 5,
-    "Fel Concentration": 3,
+    "Fel Concentration": 1,
     "Amplify Curse": 1,
-    "Pandemic": 3,
-    "Nightfall": 2,
+    "Nightfall": 1,
     "Curse of Exhaustion": 1,
-    "Siphon Life": 1,
-    "Destructive Reach": 2,
-    "Bane": 3,
+    "Bane": 5,
     "Molten Skin": 5,
     "Aftermath": 5,
     "Ruin": 5,
@@ -30,50 +30,11 @@
     "Agonizing Flames": 3,
     "Conflagrate": 1,
     "Pyroclasm": 1,
-    "Bane of Havoc": 1
+    "Bane of Havoc": 1,
+    "Incinerate": 1,
+    "Demonic Embrace": 3,
+    "Improved Drains": 3
    }
-  },
-  {
-   "step": 1,
-   "move": "1 point Siphon Life -> Incinerate",
-   "J": 0.1424,
-   "win": 0.2111,
-   "gain": 0.0764
-  },
-  {
-   "step": 2,
-   "move": "2 points Fel Concentration -> Demonic Embrace",
-   "J": 0.1593,
-   "win": 0.2259,
-   "gain": 0.0169
-  },
-  {
-   "step": 3,
-   "move": "1 point Nightfall -> Bane",
-   "J": 0.1694,
-   "win": 0.2315,
-   "gain": 0.0101
-  },
-  {
-   "step": 4,
-   "move": "3 points Pandemic -> Improved Drains",
-   "J": 0.1843,
-   "win": 0.2417,
-   "gain": 0.0149
-  },
-  {
-   "step": 7,
-   "move": "1 point Destructive Reach -> Unholy Power",
-   "J": 0.193,
-   "win": 0.2491,
-   "gain": 0.0088
-  },
-  {
-   "step": 8,
-   "move": "1 point Aftermath -> Bane",
-   "J": 0.1991,
-   "win": 0.2583,
-   "gain": 0.006
   }
  ],
  "final": {
@@ -83,10 +44,9 @@
   "Amplify Curse": 1,
   "Nightfall": 1,
   "Curse of Exhaustion": 1,
-  "Destructive Reach": 1,
   "Bane": 5,
   "Molten Skin": 5,
-  "Aftermath": 4,
+  "Aftermath": 5,
   "Ruin": 5,
   "Shadowburn": 1,
   "Intensity": 3,
@@ -95,75 +55,109 @@
   "Pyroclasm": 1,
   "Bane of Havoc": 1,
   "Incinerate": 1,
-  "Demonic Embrace": 2,
-  "Improved Drains": 3,
-  "Unholy Power": 1
+  "Demonic Embrace": 3,
+  "Improved Drains": 3
  },
- "J": 0.1972,
- "win": 0.2556,
- "margin": -0.2333,
+ "J": 0.2068,
+ "win": 0.2616,
+ "margin": -0.2189,
  "by": {
   "warrior": [
-   0.1083,
-   0.0,
-   -0.2436
-  ],
-  "rogue": [
-   0.0833,
-   0.0,
-   -0.5512
-  ],
-  "priest": [
    0.0625,
    0.0,
-   -0.3628
+   -0.305
+  ],
+  "rogue": [
+   0.0667,
+   0.0,
+   -0.5811
+  ],
+  "priest": [
+   0.0792,
+   0.0,
+   -0.3461
   ],
   "hunter": [
-   0.4333,
+   0.4375,
    0.0083,
-   -0.0584
+   -0.0493
   ],
   "warlock": [
+   0.0167,
    0.0,
-   0.0,
-   -0.5202
+   -0.3736
   ],
   "paladin": [
-   0.0083,
+   0.0458,
    0.0,
-   -0.5719
+   -0.5334
   ],
   "shaman": [
-   0.7333,
+   0.775,
    0.0,
-   0.2746
+   0.3123
   ],
   "druid": [
-   0.0333,
+   0.0083,
    0.0,
-   -0.4887
+   -0.5396
   ],
   "mage": [
-   0.8375,
+   0.8625,
    0.0,
-   0.4227
+   0.4453
   ]
+ },
+ "signature": {},
+ "gear": null,
+ "casts": {
+  "Wand": 4.91,
+  "Drain Life": 2.99,
+  "Fear": 1.95,
+  "Incinerate": 1.91,
+  "Curse of Exhaustion": 1.71,
+  "Immolate": 1.14,
+  "Curse of Tongues": 1.05,
+  "Death Coil": 0.88,
+  "Create Healthstone": 0.82,
+  "Banish": 0.82,
+  "Shadow Ward": 0.42,
+  "Shadowburn": 0.16,
+  "Shadow Bolt": 0.16,
+  "Conflagrate": 0.11,
+  "Life Tap": 0.08,
+  "Searing Pain": 0.07
  },
  "race": {
   "final": {
-   "J": 0.1972,
-   "win": 0.2556,
-   "margin": -0.2333
+   "J": 0.2068,
+   "win": 0.2616,
+   "margin": -0.2189
   },
   "destruction-pvp": {
-   "J": 0.0584,
-   "win": 0.1463,
-   "margin": -0.3514
+   "J": 0.0997,
+   "win": 0.1806,
+   "margin": -0.3234
   },
   "_reference/data/duellab/seeds/warlock-destruction.json": {
-   "J": 0.0507,
-   "win": 0.1435,
-   "margin": -0.3714
+   "J": 0.0539,
+   "win": 0.1458,
+   "margin": -0.3677
+  },
+  "_reference/data/duellab/seeds/r2/warlock-destruction-battleground.json": {
+   "J": 0.2043,
+   "win": 0.2588,
+   "margin": -0.2179
+  },
+  "_reference/data/duellab/seeds/r2/warlock-destruction-improved.json": {
+   "J": 0.2068,
+   "win": 0.2616,
+   "margin": -0.2189
+  },
+  "_reference/data/duellab/seeds/r2/warlock-destruction-winner.json": {
+   "J": 0.1987,
+   "win": 0.2556,
+   "margin": -0.2274
   }
  },
  "settings": {
@@ -211,9 +205,13 @@
     "mage",
     "community:tf-frost"
    ]
-  ]
+  ],
+  "patience": 6,
+  "tier_chains": true,
+  "signature": [],
+  "gear_race": true
  },
- "date": "2026-11-17",
- "round": "2026-11-15",
- "minutes": 46.0
+ "date": "2026-11-18",
+ "round": "r2",
+ "minutes": 16.0
 }

@@ -8,13 +8,13 @@
 
 Pick what you want to do (the columns) and the spec you want to play (the rows). Every link opens a page with the talents (and a link that shows them in a talent calculator), the talent order while leveling, what to press, and the numbers behind the choice.
 
-| Spec | Leveling (solo) | Raid (group: full raid DPS) |
-|---|---|---|
-| **Holy** | [Holy — Leveling into the raid build](leveling/holy.md) 🔬<br>34 s/kill | [Holy — Raid healing](raid/holy.md) 🔬<br>healer |
-| **Protection** | [Protection — Leveling into the raid build](leveling/protection.md) 🔬<br>30 s/kill | [Protection — Raid tank](raid/protection.md) 🔬<br>tank |
-| **Retribution** | [Leveling — Retribution](leveling/retribution.md)<br>27 s/kill | **✅ Recommended**<br>[Retribution — Raid](raid/retribution.md) 🔬<br>843 DPS (raid) |
+| Spec | Leveling (solo) | Raid (group: full raid DPS) | PvP (duels) |
+|---|---|---|---|
+| **Holy** | [Holy — Leveling into the raid build](leveling/holy.md) 🔬<br>34 s/kill | [Holy — Raid healing](raid/holy.md) 🔬<br>healer | [Holy — PvP](pvp/holy.md) 🔬<br>75% of duels |
+| **Protection** | [Protection — Leveling into the raid build](leveling/protection.md) 🔬<br>30 s/kill | [Protection — Raid tank](raid/protection.md) 🔬<br>tank | [Protection — PvP](pvp/protection.md) 🔬<br>77% of duels |
+| **Retribution** | [Leveling — Retribution](leveling/retribution.md)<br>27 s/kill | **✅ Recommended**<br>[Retribution — Raid](raid/retribution.md) 🔬<br>843 DPS (raid) | [Retribution — PvP](pvp/retribution.md) 🔬<br>83% of duels |
 
-**✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
+**✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand. **PvP:** the share of duels the build wins in this project's duel lab against one PvP build of every class; no spec is marked recommended there (the lab's AI against itself in an open field is a model of PvP, not PvP).
 
 ### Hybrid builds
 
@@ -56,6 +56,16 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 **Tanking**: [Protection](raid/protection.md) — Raid tank 🔬.
 
 **Healing**: [Holy](raid/holy.md) — Raid healing 🔬.
+
+### PvP (duels)
+
+Ranked by the share of duels the spec's best build wins against the field (nine opponents, one PvP build per class; level 60, one against one):
+
+| # | Spec and build | Wins vs the field | Easiest matchup | Hardest matchup |
+|---|---|---|---|---|
+| 1 | [Retribution](pvp/retribution.md) 🔬 5/16/30 | 83% | Warrior 100% | Hunter 48% |
+| 2 | [Protection](pvp/protection.md) 🔬 10/31/10 | 77% | Rogue 100% | Priest 0% |
+| 3 | [Holy](pvp/holy.md) 🔬 30/0/21 | 75% | Warlock 100% | Shaman 61% |
 
 Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie. Everything is a simulation of the beta, not a measurement in the game.
 

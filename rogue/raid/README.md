@@ -16,7 +16,7 @@
 
 **By gear tier**: each damage spec with its best talents for each tier, in its own gear (DPS in a full raid; [every class](../../_reference/dps-rankings.md)):
 
-| Spec | Pre-BiS | Phase 1 BiS |
+| Spec | Pre-BiS | Raid BiS |
 |---|---|---|
 | [Assassination](assassination.md) | 825 | 835 |
 | [Assassination/Subtlety hybrid](hybrid-assassination-subtlety.md) | 805 | 815 |

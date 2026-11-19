@@ -44,7 +44,7 @@ import spec_modes as SM  # noqa: E402
 OUT = HERE / "gear-links.json"
 SITE = "https://wowsims.com/forever"   # the official simulator's web UI (vite base /forever/); the fork's elliotwood.github.io/Forever/forever until 2026-10-18
 WOWHEAD = "https://www.wowhead.com/forever"
-KEYS = ("prebis-raid", "bis-raid", "prebis-dummy", "bis-dummy")
+KEYS = ("dungeon-raid", "prebis-raid", "bis-raid", "prebis-dummy", "bis-dummy")   # (dungeon-raid: raidsim/dungeon_tier.py, 2026-11-18)
 TODAY = datetime.date.today().isoformat()
 
 
@@ -253,7 +253,7 @@ def main():
     old = json.load(open(OUT, encoding="utf-8")) if OUT.exists() else {}
     specs = dict(old.get("specs", {})) if a.classes else {}
     for r in page_records(a.classes or None):
-        sets = {t: (MB.page_gear(r, t) or {}) for t in ("prebis", "bis")}   # the pages' sets (full raid)
+        sets = {t: (MB.page_gear(r, t) or {}) for t in ("dungeon", "prebis", "bis")}   # the pages' sets (full raid)
         gear = {t: db.rows(v["gear"]) for t, v in sets.items() if v.get("gear")}
         key = f"{r['class']}|{r['spec']}"
         specs[key] = {"class": r["class"], "spec": r["spec"], "gear": gear, "ilvl": {t: sets[t].get("ilvl") for t in gear},

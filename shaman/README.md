@@ -9,13 +9,13 @@
 
 Pick what you want to do (the columns) and the spec you want to play (the rows). Every link opens a page with the talents (and a link that shows them in a talent calculator), the talent order while leveling, what to press, and the numbers behind the choice.
 
-| Spec | Leveling (solo) | Raid (group: full raid DPS) |
-|---|---|---|
-| **Elemental** | [Elemental — Leveling](leveling/elemental.md) 🔬<br>28 s/kill | [Elemental (optimized)](raid/elemental.md)<br>771 DPS (raid) |
-| **Enhancement** | **✅ Recommended**<br>[Enhancement — Leveling](leveling/enhancement.md) 🔬<br>26 s/kill | **✅ Recommended**<br>[Enhancement — Raid](raid/enhancement.md) 🔬<br>797 DPS (raid) |
-| **Restoration** | [Restoration — Leveling into the raid build](leveling/restoration.md) 🔬<br>36 s/kill | [Restoration — Raid Healer](raid/restoration.md)<br>healer |
+| Spec | Leveling (solo) | Raid (group: full raid DPS) | PvP (duels) |
+|---|---|---|---|
+| **Elemental** | [Elemental — Leveling](leveling/elemental.md) 🔬<br>28 s/kill | [Elemental (optimized)](raid/elemental.md)<br>771 DPS (raid) | [Elemental — PvP](pvp/elemental.md) 🔬<br>48% of duels |
+| **Enhancement** | **✅ Recommended**<br>[Enhancement — Leveling](leveling/enhancement.md) 🔬<br>26 s/kill | **✅ Recommended**<br>[Enhancement — Raid](raid/enhancement.md) 🔬<br>797 DPS (raid) | [Enhancement — PvP](pvp/enhancement.md) 🔬<br>61% of duels |
+| **Restoration** | [Restoration — Leveling into the raid build](leveling/restoration.md) 🔬<br>36 s/kill | [Restoration — Raid Healer](raid/restoration.md)<br>healer | [Restoration — PvP](pvp/restoration.md) 🔬<br>73% of duels |
 
-**✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
+**✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand. **PvP:** the share of duels the build wins in this project's duel lab against one PvP build of every class; no spec is marked recommended there (the lab's AI against itself in an open field is a model of PvP, not PvP).
 
 ### Hybrid builds
 
@@ -52,6 +52,16 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | 3 | [Elemental](raid/elemental.md) (optimized) | 771 | -3% |
 
 **Healing**: [Restoration](raid/restoration.md) — Raid Healer.
+
+### PvP (duels)
+
+Ranked by the share of duels the spec's best build wins against the field (nine opponents, one PvP build per class; level 60, one against one):
+
+| # | Spec and build | Wins vs the field | Easiest matchup | Hardest matchup |
+|---|---|---|---|---|
+| 1 | [Restoration](pvp/restoration.md) 🔬 0/20/31 | 73% | Warlock 100% | Hunter 8% |
+| 2 | [Enhancement](pvp/enhancement.md) 🔬 15/31/5 | 61% | Warlock 99% | Hunter 3% |
+| 3 | [Elemental](pvp/elemental.md) 🔬 30/0/21 | 48% | Druid 94% | Warlock 0% |
 
 Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie. Everything is a simulation of the beta, not a measurement in the game.
 

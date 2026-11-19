@@ -41,9 +41,9 @@ The healer lab's Holy priest heals the tank with **Penance** every time it is re
 
 Healing capacity 0.69 (the raid damage it heals through in this project's healer lab), 391 healing per second. Healers are not in the community simulator.
 
-**The gear** (average item level: Pre-BiS 60.2; Phase 1 BiS 61.2; chosen by the stat weights this project's healer lab measures for this build, the healing capacity each stat adds; healers are in no community simulator, so this is our model; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 60.2; Raid BiS 61.2; chosen by the stat weights this project's healer lab measures for this build, the healing capacity each stat adds; healers are in no community simulator, so this is our model; each item opens its Wowhead page, with where it drops and its enchant):
 
-| Slot | Pre-BiS | Phase 1 BiS |
+| Slot | Pre-BiS | Raid BiS |
 |---|---|---|
 | Head | [Devout Crown](https://www.wowhead.com/forever/item=16693) · *Darkmaster Gandling, Scholomance*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11649) | [Devout Crown](https://www.wowhead.com/forever/item=16693) · *Darkmaster Gandling, Scholomance*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11649) |
 | Neck | [Wavefront Necklace](https://www.wowhead.com/forever/item=20685) · *Lord Skwol, Silithus* | [Wavefront Necklace](https://www.wowhead.com/forever/item=20685) · *Lord Skwol, Silithus* |

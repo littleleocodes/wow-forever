@@ -3,24 +3,25 @@
  "tree": "Fire",
  "starts": [
   "fire-pvp",
-  "_reference/data/duellab/seeds/mage-fire.json"
+  "_reference/data/duellab/seeds/mage-fire.json",
+  "_reference/data/duellab/seeds/r2/mage-fire-battleground.json",
+  "_reference/data/duellab/seeds/r2/mage-fire-winner.json"
  ],
  "history": [
   {
    "step": 0,
-   "from": "fire-pvp",
-   "J": 0.3616,
-   "win": 0.3917,
+   "from": "_reference/data/duellab/seeds/r2/mage-fire-winner.json",
+   "J": 0.4093,
+   "win": 0.4222,
    "alloc": {
     "Accelerant": 5,
-    "Flame Throwing": 2,
+    "Flame Throwing": 1,
     "Ignite": 5,
     "Impact": 3,
     "Burning Soul": 3,
     "Improved Fire Blast": 2,
     "Pyroblast": 1,
     "Heating Up": 1,
-    "Improved Scorch": 2,
     "Blast Wave": 1,
     "Critical Mass": 3,
     "Fire Power": 3,
@@ -29,47 +30,14 @@
     "Precision": 3,
     "Frostbite": 3,
     "Ice Shards": 1,
-    "Improved Frost Nova": 2,
+    "Improved Frost Nova": 1,
     "Permafrost": 3,
     "Ice Lance": 1,
-    "Ice Block": 1,
-    "Shatter": 3
+    "Shatter": 1,
+    "Incineration": 4,
+    "Arctic Reach": 2,
+    "Improved Frostbolt": 1
    }
-  },
-  {
-   "step": 1,
-   "move": "2 points Improved Scorch -> Incineration",
-   "J": 0.3729,
-   "win": 0.3991,
-   "gain": 0.0113
-  },
-  {
-   "step": 2,
-   "move": "1 point Flame Throwing -> Arctic Reach",
-   "J": 0.3802,
-   "win": 0.4028,
-   "gain": 0.0073
-  },
-  {
-   "step": 3,
-   "move": "1 point Improved Frost Nova -> Improved Frostbolt",
-   "J": 0.3915,
-   "win": 0.413,
-   "gain": 0.0113
-  },
-  {
-   "step": 4,
-   "move": "1 point Ice Block -> Arctic Reach",
-   "J": 0.3997,
-   "win": 0.4148,
-   "gain": 0.0082
-  },
-  {
-   "step": 12,
-   "move": "2 points Shatter -> Incineration",
-   "J": 0.4047,
-   "win": 0.4185,
-   "gain": 0.005
   }
  ],
  "final": {
@@ -97,9 +65,9 @@
   "Arctic Reach": 2,
   "Improved Frostbolt": 1
  },
- "J": 0.3819,
- "win": 0.4005,
- "margin": -0.0741,
+ "J": 0.384,
+ "win": 0.4028,
+ "margin": -0.0752,
  "by": {
   "warrior": [
    0.9917,
@@ -132,9 +100,9 @@
    -0.7051
   ],
   "shaman": [
-   0.6125,
+   0.6333,
    0.0,
-   0.1321
+   0.1228
   ],
   "druid": [
    0.6667,
@@ -147,21 +115,54 @@
    0.3869
   ]
  },
+ "signature": {
+  "Pyroblast": 0.54
+ },
+ "gear": null,
+ "casts": {
+  "Fire Blast": 2.6,
+  "Mana Shield": 1.29,
+  "Fireball": 0.97,
+  "Wand": 0.97,
+  "Arcane Explosion": 0.69,
+  "Blink": 0.69,
+  "Frost Nova": 0.6,
+  "Cone of Cold": 0.58,
+  "Pyroblast": 0.54,
+  "Counterspell": 0.35,
+  "Scorch": 0.34,
+  "Remove Lesser Curse": 0.34,
+  "Blast Wave": 0.26,
+  "Frostbolt": 0.14,
+  "Frost Ward": 0.11,
+  "Ice Lance": 0.1,
+  "Polymorph": 0.01
+ },
  "race": {
   "final": {
-   "J": 0.3819,
-   "win": 0.4005,
-   "margin": -0.0741
+   "J": 0.384,
+   "win": 0.4028,
+   "margin": -0.0752
   },
   "fire-pvp": {
-   "J": 0.3369,
-   "win": 0.3722,
-   "margin": -0.1414
+   "J": 0.3394,
+   "win": 0.3745,
+   "margin": -0.1405
   },
   "_reference/data/duellab/seeds/mage-fire.json": {
-   "J": 0.3086,
-   "win": 0.3532,
-   "margin": -0.1787
+   "J": 0.3163,
+   "win": 0.3597,
+   "margin": -0.1736
+  },
+  "_reference/data/duellab/seeds/r2/mage-fire-battleground.json": {
+   "J": 0.3768,
+   "win": 0.4009,
+   "margin": -0.0964
+  },
+  "_reference/data/duellab/seeds/r2/mage-fire-winner.json": {
+   "J": 0.384,
+   "win": 0.4028,
+   "margin": -0.0752
   }
  },
  "settings": {
@@ -209,9 +210,15 @@
     "mage",
     "community:tf-frost"
    ]
-  ]
+  ],
+  "patience": 6,
+  "tier_chains": true,
+  "signature": [
+   "Pyroblast"
+  ],
+  "gear_race": true
  },
- "date": "2026-11-16",
- "round": "2026-11-15",
- "minutes": 32.2
+ "date": "2026-11-18",
+ "round": "r2",
+ "minutes": 15.1
 }

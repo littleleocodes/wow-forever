@@ -15,7 +15,7 @@
 
 **By gear tier**: each damage spec with its best talents for each tier, in its own gear (DPS in a full raid; [every class](../../_reference/dps-rankings.md)):
 
-| Spec | Pre-BiS | Phase 1 BiS |
+| Spec | Pre-BiS | Raid BiS |
 |---|---|---|
 | [Arms](arms.md) | 843 | 883 |
 | [Fury](fury.md) | 908 | 883 |

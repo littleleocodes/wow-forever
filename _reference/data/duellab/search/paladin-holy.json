@@ -4,100 +4,65 @@
  "starts": [
   "pvp-shockadin",
   "holy-pvp",
-  "_reference/data/duellab/seeds/paladin-holy.json"
+  "_reference/data/duellab/seeds/paladin-holy.json",
+  "_reference/data/duellab/seeds/r2/paladin-holy-signature-holy-shock.json"
  ],
  "history": [
   {
    "step": 0,
-   "from": "pvp-shockadin",
-   "J": 0.6017,
-   "win": 0.575,
+   "from": "_reference/data/duellab/seeds/r2/paladin-holy-signature-holy-shock.json",
+   "J": 0.8072,
+   "win": 0.7296,
    "alloc": {
     "Divine Strength": 1,
     "Spiritual Focus": 5,
     "Healing Light": 3,
-    "Purifying Power": 2,
     "Reverence": 2,
     "Divine Favor": 1,
     "Illumination": 5,
     "Divine Precision": 1,
     "Infusion of Light": 2,
-    "Boundless Light": 2,
-    "Holy Shock": 1,
     "Holy Power": 5,
-    "Light's Vigil": 1,
     "Benediction": 5,
     "Conviction": 3,
-    "Improved Judgement": 2,
     "Sanctified Judgement": 3,
-    "Pursuit of Justice": 2,
-    "Seal of Command": 1,
     "Unyielding Faith": 2,
-    "Vindication": 2
+    "Vindication": 3,
+    "Holy Conduit": 1,
+    "Two-Handed Weapon Specialization": 1,
+    "Improved Seals": 4,
+    "Eye for an Eye": 2,
+    "Improved Judgement": 1,
+    "Holy Shock": 1
    }
   },
   {
    "step": 1,
-   "move": "1 point Seal of Command -> Holy Conduit",
-   "J": 0.6406,
-   "win": 0.6037,
-   "gain": 0.0389
-  },
-  {
-   "step": 2,
-   "move": "2 points Pursuit of Justice -> Two-Handed Weapon Specialization",
-   "J": 0.679,
-   "win": 0.6306,
-   "gain": 0.0384
-  },
-  {
-   "step": 3,
-   "move": "2 points Improved Judgement -> Improved Seals",
-   "J": 0.6885,
-   "win": 0.6389,
-   "gain": 0.0095
+   "move": "1 point Improved Judgement -> Sacred Arbiter",
+   "J": 0.8338,
+   "win": 0.7519,
+   "gain": 0.0266
   },
   {
    "step": 4,
-   "move": "1 point Holy Power -> Deflection",
-   "J": 0.7003,
-   "win": 0.6491,
-   "gain": 0.0119
+   "move": "1 point Improved Seals -> Two-Handed Weapon Specialization",
+   "J": 0.8402,
+   "win": 0.7583,
+   "gain": 0.0064
+  },
+  {
+   "step": 5,
+   "move": "2 points Benediction -> Deflection",
+   "J": 0.8546,
+   "win": 0.7713,
+   "gain": 0.0144
   },
   {
    "step": 6,
-   "move": "2 points Boundless Light -> Eye for an Eye",
-   "J": 0.7153,
-   "win": 0.6583,
-   "gain": 0.0149
-  },
-  {
-   "step": 7,
-   "move": "2 points Purifying Power -> Improved Seals",
-   "J": 0.7311,
-   "win": 0.6704,
-   "gain": 0.0158
-  },
-  {
-   "step": 8,
-   "move": "1 point Light's Vigil -> Improved Judgement",
-   "J": 0.7438,
-   "win": 0.6796,
-   "gain": 0.0127
-  },
-  {
-   "step": 10,
-   "move": "1 point Holy Shock -> Holy Power",
-   "J": 0.8202,
-   "win": 0.7352,
-   "gain": 0.0764
-  },
-  {
-   "step": 12,
-   "move": "1 point Two-Handed Weapon Specialization -> Vindication",
-   "J": 0.8362,
-   "win": 0.75,
-   "gain": 0.0161
+   "move": "1 point Unyielding Faith -> Repentance",
+   "J": 0.9132,
+   "win": 0.8102,
+   "gain": 0.0586
   }
  ],
  "final": {
@@ -110,88 +75,120 @@
   "Divine Precision": 1,
   "Infusion of Light": 2,
   "Holy Power": 5,
-  "Benediction": 5,
+  "Benediction": 3,
   "Conviction": 3,
   "Sanctified Judgement": 3,
-  "Unyielding Faith": 2,
+  "Unyielding Faith": 1,
   "Vindication": 3,
   "Holy Conduit": 1,
-  "Two-Handed Weapon Specialization": 1,
-  "Improved Seals": 4,
-  "Deflection": 1,
+  "Two-Handed Weapon Specialization": 2,
+  "Improved Seals": 3,
   "Eye for an Eye": 2,
-  "Improved Judgement": 1
+  "Holy Shock": 1,
+  "Sacred Arbiter": 1,
+  "Deflection": 2,
+  "Repentance": 1
  },
- "J": 0.828,
- "win": 0.7426,
- "margin": 0.3417,
+ "J": 0.8932,
+ "win": 0.7944,
+ "margin": 0.3949,
  "by": {
   "warrior": [
-   0.9375,
-   0.0083,
-   0.5636
+   0.9583,
+   0.0,
+   0.7655
   ],
   "rogue": [
-   0.9583,
-   0.0083,
-   0.6187
+   0.9292,
+   0.0,
+   0.5556
   ],
   "priest": [
-   0.0083,
+   0.5208,
    0.0,
-   -0.5779
+   -0.1206
   ],
   "hunter": [
-   0.7208,
-   0.0208,
-   0.3098
+   0.5375,
+   0.0042,
+   0.1043
   ],
   "warlock": [
-   0.9917,
+   0.9958,
    0.0,
-   0.6179
+   0.4915
   ],
   "paladin": [
-   0.775,
+   0.8333,
    0.0,
-   0.4137
+   0.4017
   ],
   "shaman": [
-   0.6833,
-   0.0042,
-   0.2231
+   0.8083,
+   0.0,
+   0.5431
   ],
   "druid": [
-   0.7875,
-   0.0042,
-   0.3508
+   0.6375,
+   0.0,
+   0.1768
   ],
   "mage": [
-   0.8208,
+   0.9292,
    0.0,
-   0.5559
+   0.6364
   ]
+ },
+ "signature": {
+  "Holy Shock": 3.06
+ },
+ "gear": "melee",
+ "casts": {
+  "Melee": 11.16,
+  "Holy Strike": 3.9,
+  "Judgement": 3.62,
+  "Holy Shock": 3.06,
+  "Holy Light": 1.97,
+  "Seal of Righteousness": 1.87,
+  "Flash of Light": 1.57,
+  "Hammer of Justice": 1.23,
+  "Divine Favor": 1.04,
+  "Repentance": 1.03,
+  "Cleanse": 0.87,
+  "Hammer of Wrath": 0.49,
+  "Voice of Truth": 0.49,
+  "Divine Shield": 0.45,
+  "Blessing of Freedom": 0.43,
+  "Holy Shock (heal)": 0.39,
+  "Lay on Hands": 0.23,
+  "Divine Protection": 0.16,
+  "Blessing of Protection": 0.02
  },
  "race": {
   "final": {
-   "J": 0.828,
-   "win": 0.7426,
-   "margin": 0.3417
+   "J": 0.8932,
+   "win": 0.7944,
+   "margin": 0.3949
   },
   "pvp-shockadin": {
-   "J": 0.6184,
-   "win": 0.5866,
-   "margin": 0.1272
+   "J": 0.711,
+   "win": 0.6593,
+   "margin": 0.2068
   },
   "holy-pvp": {
-   "J": 0.463,
-   "win": 0.4657,
-   "margin": -0.0109
+   "J": 0.5601,
+   "win": 0.5412,
+   "margin": 0.0755
   },
   "_reference/data/duellab/seeds/paladin-holy.json": {
-   "J": 0.452,
-   "win": 0.456,
-   "margin": -0.0162
+   "J": 0.5488,
+   "win": 0.5338,
+   "margin": 0.06
+  },
+  "_reference/data/duellab/seeds/r2/paladin-holy-signature-holy-shock.json": {
+   "J": 0.7991,
+   "win": 0.7264,
+   "margin": 0.2907
   }
  },
  "settings": {
@@ -239,9 +236,15 @@
     "mage",
     "community:tf-frost"
    ]
-  ]
+  ],
+  "patience": 6,
+  "tier_chains": true,
+  "signature": [
+   "Holy Shock"
+  ],
+  "gear_race": true
  },
- "date": "2026-11-16",
- "round": "2026-11-15",
- "minutes": 95.3
+ "date": "2026-11-18",
+ "round": "r2",
+ "minutes": 79.4
 }

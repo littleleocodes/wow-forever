@@ -6,8 +6,10 @@ like WoWSims does").
 
 (ml_pipeline.py makes every spec's sets through `make`.)
 
-Two tiers, one item pool each (the simulator's item database at the pinned wowsims/forever commit, raidsim/setup.py; the
-ElliotWood/Forever fork's until 2026-10-18, `_reference/sim-port.md`):
+Three tiers, one item pool each (the simulator's item database at the pinned wowsims/forever commit, raidsim/setup.py; the
+ElliotWood/Forever fork's until 2026-10-18, `_reference/sim-port.md`). The third, **dungeon** (quests and dungeons, 2026-11-18), is
+the strictest: quest rewards of no raid, 5-player dungeon boss drops at 5%+, trainer recipes, reputation to Honored (DUNGEONS below;
+made by raidsim/dungeon_tier.py). Tier 0.5 is in neither pre-raid tier since the same day (T05_SETS).
 - **bis** (phase 1): `gear_opt.py`'s pool: dungeons, Molten Core, Onyxia, world drops, crafted, quest; items with no listed source only
   when a community phase-0/1, launch or pre-raid preset uses them (the Forever launch items); no BWL, ZG, AQ, Naxxramas, world bosses
   or legendaries; the hunter's Molten Core quest bow and stave (Rhok'delar, Lok'delar) count.
@@ -55,12 +57,8 @@ RAID_ZONES = G.RAID_OK | G.RAID_NO
 # Crafted items (the database has the recipe, not its materials; our lists, 2026-10-01):
 # - made from Molten Core or Onyxia materials (Fiery Core, Lava Core, Core Leather, Sulfuron Ingot, Scale of Onyxia), and the rewards of
 #   Onyxia's quest: phase 1, so in bis and not in prebis;
-PHASE1_RAID_MADE = {"Flarecore Gloves", "Flarecore Mantle", "Flarecore Wraps", "Flarecore Robe", "Flarecore Leggings", "Corehound Boots",
-                    "Corehound Belt", "Molten Helm", "Molten Belt", "Fiery Chain Girdle", "Fiery Chain Shoulders", "Core Marksman Rifle",
-                    "Sulfuron Hammer", "Onyxia Scale Cloak", "Onyxia Scale Breastplate", "Dark Iron Leggings", "Dark Iron Helm",
-                    "Dark Iron Gauntlets", "Dark Iron Boots", "Dark Iron Reaver", "Dark Iron Destroyer", "Lavashard Axe", "Lava Belt",
-                    "Blackguard", "Ebon Hand", "Nightfall", "Black Amnesty", "Blackfury"}
-RAID_QUEST = {"Dragonslayer's Signet", "Onyxia Tooth Pendant", "Onyxia Blood Talisman"}
+PHASE1_RAID_MADE = G.PHASE1_RAID_MADE   # (both lists live in gear_opt.py since 2026-11-18: its later_phase reads them)
+RAID_QUEST = G.RAID_QUEST
 # - made from later raids' materials or later reputations (Zul'Gurub's Bloodvine and hides, Ahn'Qiraj's Cenarion Circle recipes and
 #   obsidian, Naxxramas's frost-resistance sets): in neither tier. gear_opt.py's pool let them in, so the 2026-09-30 phase-1 sets of the
 #   hunter and the Retribution paladin carried Bloodvine pieces (Zul'Gurub);
@@ -69,6 +67,73 @@ LATER_PREFIXES = G.LATER_PREFIXES   # gear_opt.py's list (its pool excludes them
 CRAFTED_MAX_ILVL = 64
 VETTED_PRE = set()   # item ids in the simulator's launch and pre-raid presets (every class)
 PRE_NAMES = ("launch", "p0", "prebis", "preraid", "pre-bis", "pre_raid")
+# Tier 0.5 (Dungeon Set 2, Season of Discovery's reissue; _reference/tier-0.5-research.md, 2026-11-18): a long gold and group project
+# (a level-58 chain that consumes the Tier 0 pieces, 10-player Upper Blackrock Spire, the vendors' gold) whose set bonuses players
+# report broken in the game: in neither pre-raid tier (user, the same day: "Go with your recs"). The BiS tier keeps what its presets vet.
+T05_SETS = {"Battlegear of Heroism", "Beastmaster Armor", "Darkmantle Armor", "Deathmist Raiment", "Feralheart Raiment", "Sorcerer's Regalia",
+            "Soulforge Armor", "The Five Thunders", "Vestments of the Virtuous"}
+# The quests-and-dungeons tier ("dungeon", 2026-11-18; user: "a pre-BIS list for the things that can just be obtained through questing or
+# doing dungeons and not having to do all of the work to get the 0.5 tier set"; the definitions are Claude's, on the user's "Go with
+# your recs"). An item counts when one of its sources does:
+# - a quest of no raid (Forever's own quests, unknown to the Classic dump, count; Silithus's are the Ahn'Qiraj war's);
+# - a drop of a named mob in a 5-player dungeon (the planner's dungeons, plan.ENTRANCE) at a 5% chance or more where the Classic dump
+#   has the pair (boss loot is 14-20%, the rare drops 1-2%); trash drops, world drops and Upper Blackrock Spire's bosses (10 players in
+#   Forever) do not;
+# - a recipe a trainer teaches (the craft spell, or the spell that teaches it, among the dump's trainer spells): no rare recipe;
+# - a reputation reward up to Honored;
+# - the vendor items gear_opt vets.
+# Never Tier 0.5, the auction house or PvP.
+DUNGEONS = {"Ragefire Chasm", "Wailing Caverns", "The Deadmines", "Shadowfang Keep", "Blackfathom Deeps", "The Stockade", "Gnomeregan",
+            "Razorfen Kraul", "Scarlet Monastery", "Razorfen Downs", "Uldaman", "Zul'Farrak", "Maraudon", "Sunken Temple",
+            "The Temple of Atal'Hakkar", "Blackrock Depths", "Blackrock Spire", "Dire Maul", "Scholomance", "Stratholme", "The Hall of Thanes",
+            "Ruins of Lordaeron", "Excavation Site: Wetlands", "City of Dalaran"}
+UBRS_BOSSES = {"Pyroguard Emberseer", "Solakar Flamewreath", "Jed Runewatcher", "Goraluk Anvilcrack", "Gyth", "Warchief Rend Blackhand",
+               "The Beast", "General Drakkisath", "Lord Valthalak"}
+DROP_MIN = 0.05
+REP_MAX = 6   # Honored (the simulator's RepLevel)
+NO_QUEST_ZONES = {2717, 2159, 2677, 1977, 3429, 3428, 3456, 1377}   # Molten Core, Onyxia, BWL, Zul'Gurub, AQ20, AQ40, Naxxramas, Silithus
+CMANGOS = ROOT / "_reference/data/raw/2026-11-09-cmangos-classic-db-c33f90b8e"
+_DUNGEON_DATA = {}
+
+
+def dungeon_data(repo):
+    """(npc names, {(creature, item): chance}, trainer-taught craft spells, {quest: (zone, level)}) for the quests-and-dungeons tier."""
+    if not _DUNGEON_DATA:
+        import csv
+        raw = json.load(open(pathlib.Path(repo) / "assets" / "database" / "db.json", encoding="utf-8"))
+        npcs = {n["id"]: n.get("name") for n in raw.get("npcs", [])}
+        chance = {(int(r["creature"]), int(r["item"])): float(r["chance"]) for r in csv.DictReader(open(CMANGOS / "dungeon_drops.csv", encoding="utf-8"))}
+        trainer = {int(r["spell"]) for r in csv.DictReader(open(CMANGOS / "trainer_spells.csv", encoding="utf-8"))}
+        taught = set(trainer)
+        for r in csv.DictReader(open(CMANGOS / "learn_spells.csv", encoding="utf-8")):   # a trainer teaches the learn spell of a craft
+            if int(r["spell"]) in trainer:
+                taught.add(int(r["learns"]))
+        quests = {int(r["quest"]): (int(r["zone_or_sort"] or 0), int(r["quest_level"] or 0))
+                  for r in csv.DictReader(open(CMANGOS / "quests.csv", encoding="utf-8"))}
+        _DUNGEON_DATA.update(npcs=npcs, chance=chance, taught=taught, quests=quests)
+    d = _DUNGEON_DATA
+    return d["npcs"], d["chance"], d["taught"], d["quests"]
+
+
+def dungeon_source(s, it, zones, data):
+    """Whether one source entry counts for the quests-and-dungeons tier (see DUNGEONS above)."""
+    npcs, chance, taught, quests = data
+    so = it.get("scalingOptions", {}).get("0", {})
+    if s.get("quest"):
+        zone, level = quests.get(int(s["quest"].get("id") or 0), (0, 0))
+        return zone not in NO_QUEST_ZONES and level <= 62 and not G.later_reward(it) and so.get("ilvl", 0) <= G.SOURCELESS_MAX_ILVL
+    if s.get("drop"):
+        d = s["drop"]
+        npc = d.get("npcId")
+        if not npc or zones.get(d.get("zoneId")) not in DUNGEONS or npcs.get(npc) in UBRS_BOSSES:
+            return False
+        c = chance.get((int(npc), int(it["id"])))
+        return c is None or c >= DROP_MIN
+    if s.get("crafted"):
+        return int(s["crafted"].get("spellId") or 0) in taught
+    if s.get("rep"):
+        return int(s["rep"].get("repLevel") or 0) <= REP_MAX
+    return False
 
 
 def load_vetted_pre(repo):
@@ -92,12 +157,27 @@ def crafted_ok(it, tier):
     return it.get("scalingOptions", {}).get("0", {}).get("ilvl", 0) <= CRAFTED_MAX_ILVL
 
 
-def pool_of(tier, zones):
+def pool_of(tier, zones, repo=None):
     def bis(it):
         return G.in_pool(it, zones) and crafted_ok(it, "bis")
 
+    def dungeon(it):
+        if (it.get("phase") or 1) >= 2:   # what Forever has now only (gear_opt.later_phase)
+            return False
+        if it.get("quality", 0) >= 5 or it.get("quality", 0) < 2 or it.get("name") in RAID_QUEST or it.get("setName") in T05_SETS \
+                or it.get("id") in G.SUSPECT_ITEMS or G.later_rep(it) or not crafted_ok(it, "prebis"):
+            return False
+        if it["id"] in G.VENDOR_ITEMS:
+            return True
+        data = dungeon_data(repo or R.repo_path(argparse.Namespace(repo=None)))
+        return any(dungeon_source(s, it, zones, data) for s in it.get("sources") or [])
+
     def prebis(it):
         if it.get("quality", 0) >= 5 or it.get("quality", 0) < 2 or it.get("name") in RAID_QUEST or not crafted_ok(it, "prebis")                 or it.get("id") in G.SUSPECT_ITEMS or G.later_rep(it):   # (2026-11-06: gear_opt.LATER_FACTIONS)
+            return False
+        if it.get("setName") in T05_SETS:   # 2026-11-18: Tier 0.5 is in neither pre-raid tier (T05_SETS)
+            return False
+        if (it.get("phase") or 1) >= 2:   # 2026-11-18: a pre-raid set holds what Forever has now (gear_opt.later_phase)
             return False
         srcs = G.dated_sources(it)
         drops = [s["drop"] for s in srcs if s.get("drop")]
@@ -115,7 +195,7 @@ def pool_of(tier, zones):
             so = it.get("scalingOptions", {}).get("0", {})
             return it["id"] in VETTED_PRE and so.get("ilvl", 0) <= G.SOURCELESS_MAX_ILVL
         return True
-    return bis if tier == "bis" else prebis
+    return {"bis": bis, "dungeon": dungeon}.get(tier, prebis)
 
 
 def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, weights_fn=None, score=None, extra=None):
@@ -211,7 +291,7 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
     Frostfire mage, and its full-raid set measured +2.7% over the dummy's, confirmed on seed 2)."""
     e = R.SPECS[cls][entry_name]
     cur = json.load(open(R.sim_path(e["gear"]) if pathlib.Path(R.sim_path(e["gear"])).is_absolute() else repo / e["gear"], encoding="utf-8"))["items"]
-    pool = pool_of(tier, zones)
+    pool = pool_of(tier, zones, repo)
     p = path or set_path(cls, spec, tier)
     # 2026-10-09: empty enchant slots are filled from the role's template before and after the search (fill_enchants.py: a set grown
     # from a preset without enchants kept none, the Balance, feral, Retribution, Arms and Fury sets)

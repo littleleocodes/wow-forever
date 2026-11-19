@@ -4,24 +4,26 @@
  "starts": [
   "pvp-resto",
   "restoration-pvp",
-  "_reference/data/duellab/seeds/druid-restoration.json"
+  "_reference/data/duellab/seeds/druid-restoration.json",
+  "_reference/data/duellab/seeds/r2/druid-restoration-battleground.json",
+  "_reference/data/duellab/seeds/r2/druid-restoration-improved.json",
+  "_reference/data/duellab/seeds/r2/druid-restoration-winner.json"
  ],
  "history": [
   {
    "step": 0,
-   "from": "pvp-resto",
-   "J": 0.3185,
-   "win": 0.3676,
+   "from": "_reference/data/duellab/seeds/r2/druid-restoration-improved.json",
+   "J": 0.4304,
+   "win": 0.4509,
    "alloc": {
     "Genesis": 5,
     "Moonglow": 1,
     "Nature's Majesty": 2,
     "Nature's Reach": 2,
-    "Improved Entangling Roots": 3,
     "Nature's Splendor": 1,
     "Furor": 5,
     "Feral Swiftness": 1,
-    "Nature's Focus": 5,
+    "Nature's Focus": 2,
     "Natural Shapeshifter": 3,
     "Naturalist": 5,
     "Reflection": 3,
@@ -29,15 +31,10 @@
     "Improved Rejuvenation": 3,
     "Swiftmend": 1,
     "Nature's Swiftness": 1,
-    "Improved Regrowth": 5
+    "Ferocity": 3,
+    "Heart of the Wild": 5,
+    "Living Spirit": 3
    }
-  },
-  {
-   "step": 1,
-   "move": "3 points Improved Entangling Roots -> Ferocity",
-   "J": 0.3572,
-   "win": 0.3972,
-   "gain": 0.0387
   }
  ],
  "final": {
@@ -48,7 +45,7 @@
   "Nature's Splendor": 1,
   "Furor": 5,
   "Feral Swiftness": 1,
-  "Nature's Focus": 5,
+  "Nature's Focus": 2,
   "Natural Shapeshifter": 3,
   "Naturalist": 5,
   "Reflection": 3,
@@ -56,79 +53,119 @@
   "Improved Rejuvenation": 3,
   "Swiftmend": 1,
   "Nature's Swiftness": 1,
-  "Improved Regrowth": 5,
-  "Ferocity": 3
+  "Ferocity": 3,
+  "Heart of the Wild": 5,
+  "Living Spirit": 3
  },
- "J": 0.3596,
- "win": 0.4,
- "margin": -0.1617,
+ "J": 0.4178,
+ "win": 0.4421,
+ "margin": -0.0973,
  "by": {
   "warrior": [
-   0.4,
-   0.0,
-   -0.0508
+   0.4042,
+   0.0083,
+   -0.0437
   ],
   "rogue": [
-   0.425,
-   0.0,
-   -0.1365
+   0.4042,
+   0.0208,
+   -0.1343
   ],
   "priest": [
    0.0,
    0.0,
-   -0.8939
+   -0.8965
   ],
   "hunter": [
+   0.0125,
    0.0,
-   0.0,
-   -0.9227
+   -0.8916
   ],
   "warlock": [
-   0.9833,
+   0.9875,
    0.0,
-   0.6698
+   0.7027
   ],
   "paladin": [
-   0.3708,
+   0.5417,
    0.0,
-   -0.1928
+   0.0611
   ],
   "shaman": [
-   0.1458,
+   0.2208,
    0.0,
-   -0.3658
+   -0.2962
   ],
   "druid": [
-   0.4792,
+   0.5458,
    0.0,
-   -0.0479
+   0.0619
   ],
   "mage": [
-   0.7958,
+   0.8625,
    0.0,
-   0.4855
+   0.561
   ]
+ },
+ "signature": {},
+ "gear": null,
+ "casts": {
+  "Melee": 20.52,
+  "Claw": 4.43,
+  "Rake": 3.19,
+  "Cat Form": 2.6,
+  "Rejuvenation": 2.3,
+  "Swiftmend": 1.35,
+  "Nature's Swiftness": 0.74,
+  "Rip": 0.69,
+  "Pounce": 0.67,
+  "Healing Touch": 0.63,
+  "Bear Form": 0.57,
+  "Bash": 0.56,
+  "Ferocious Bite": 0.53,
+  "Barkskin": 0.53,
+  "Entangling Roots": 0.48,
+  "Innervate": 0.44,
+  "Dash": 0.38,
+  "Regrowth": 0.35,
+  "Faerie Fire": 0.21,
+  "Nature's Grasp": 0.07
  },
  "race": {
   "final": {
-   "J": 0.3596,
-   "win": 0.4,
-   "margin": -0.1617
+   "J": 0.4178,
+   "win": 0.4421,
+   "margin": -0.0973
   },
   "pvp-resto": {
-   "J": 0.3273,
-   "win": 0.3736,
-   "margin": -0.1852
+   "J": 0.3346,
+   "win": 0.3782,
+   "margin": -0.1746
   },
   "restoration-pvp": {
-   "J": 0.1858,
-   "win": 0.2653,
-   "margin": -0.3181
+   "J": 0.1934,
+   "win": 0.2704,
+   "margin": -0.308
   },
   "_reference/data/duellab/seeds/druid-restoration.json": {
-   "J": 0.2045,
-   "win": 0.2792,
-   "margin": -0.2988
+   "J": 0.2237,
+   "win": 0.2931,
+   "margin": -0.2772
+  },
+  "_reference/data/duellab/seeds/r2/druid-restoration-battleground.json": {
+   "J": 0.4204,
+   "win": 0.444,
+   "margin": -0.0944
+  },
+  "_reference/data/duellab/seeds/r2/druid-restoration-improved.json": {
+   "J": 0.4178,
+   "win": 0.4421,
+   "margin": -0.0973
+  },
+  "_reference/data/duellab/seeds/r2/druid-restoration-winner.json": {
+   "J": 0.371,
+   "win": 0.4088,
+   "margin": -0.1513
   }
  },
  "settings": {
@@ -176,9 +213,13 @@
     "mage",
     "community:tf-frost"
    ]
-  ]
+  ],
+  "patience": 6,
+  "tier_chains": true,
+  "signature": [],
+  "gear_race": true
  },
- "date": "2026-11-16",
- "round": "2026-11-15",
- "minutes": 47.2
+ "date": "2026-11-18",
+ "round": "r2",
+ "minutes": 18.0
 }

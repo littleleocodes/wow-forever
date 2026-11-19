@@ -10,7 +10,8 @@ import pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent
 LINKS = HERE / "raidsim" / "gear-links.json"
-TIER_NAME = {"prebis": "Pre-BiS", "bis": "Phase 1 BiS"}
+TIER_NAME = {"dungeon": "Quests and dungeons", "prebis": "Pre-BiS", "bis": "Raid BiS"}   # (2026-11-18: the third tier; "Phase 1 BiS" before)
+TIERS = ("dungeon", "prebis", "bis")
 
 
 @functools.lru_cache(maxsize=None)
@@ -43,11 +44,11 @@ def cell(row):
 
 
 def table(cls, spec_name, role=None):
-    """Markdown lines: a Slot | Pre-BiS | Phase 1 BiS table of the spec's two sets, every item linked; [] without links."""
+    """Markdown lines: a Slot | Quests and dungeons | Pre-BiS | Raid BiS table of the spec's sets, every item linked; [] without links."""
     s = spec(cls, spec_name, role)
     if not s or not s.get("gear"):
         return []
-    tiers = [t for t in ("prebis", "bis") if t in s["gear"]]
+    tiers = [t for t in TIERS if t in s["gear"]]
     keyed = {}
     order = []
     for t in tiers:
@@ -67,12 +68,12 @@ def table(cls, spec_name, role=None):
 
 
 def sim_line(cls, spec_name, raid_first=True, role=None):
-    """'Open in the simulator' links for both tiers and settings, or ''."""
+    """'Open in the simulator' links for every tier, or ''."""
     s = spec(cls, spec_name, role)
     if not s or not s.get("sim"):
         return ""
     parts = []
-    for t in ("prebis", "bis"):
+    for t in TIERS:
         # the full raid only: the player pages show no training-dummy setting since 2026-10-04 (user decision: raid and leveling only)
         links = [f"[{lab}]({s['sim'][f'{t}-{st}']})" for st, lab in (("raid", "full raid"),) if s["sim"].get(f"{t}-{st}")]
         if links:

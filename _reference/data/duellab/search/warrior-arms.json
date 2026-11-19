@@ -4,16 +4,18 @@
  "starts": [
   "arms-pvp",
   "community:tf-arms",
-  "_reference/data/duellab/seeds/warrior-arms.json"
+  "_reference/data/duellab/seeds/warrior-arms.json",
+  "_reference/data/duellab/seeds/r2/warrior-arms-battleground.json",
+  "_reference/data/duellab/seeds/r2/warrior-arms-winner.json"
  ],
  "history": [
   {
    "step": 0,
-   "from": "_reference/data/duellab/seeds/warrior-arms.json",
-   "J": 0.2455,
-   "win": 0.3046,
+   "from": "_reference/data/duellab/seeds/r2/warrior-arms-battleground.json",
+   "J": 0.2527,
+   "win": 0.3083,
    "alloc": {
-    "Deflection": 5,
+    "Deflection": 3,
     "Improved Rend": 3,
     "Improved Tactical Mastery": 3,
     "Improved Overpower": 2,
@@ -28,28 +30,17 @@
     "Booming Voice": 4,
     "Cruelty": 5,
     "Unbridled Wrath": 1,
-    "Piercing Howl": 1,
     "Blood Craze": 3,
-    "Enrage": 5
+    "Enrage": 4,
+    "Improved Slam": 1,
+    "Improved Charge": 1,
+    "Piercing Howl": 1,
+    "Spearing Strike": 1
    }
-  },
-  {
-   "step": 1,
-   "move": "1 point Enrage -> Improved Slam",
-   "J": 0.2567,
-   "win": 0.313,
-   "gain": 0.0111
-  },
-  {
-   "step": 5,
-   "move": "1 point Piercing Howl -> Improved Charge",
-   "J": 0.2658,
-   "win": 0.3213,
-   "gain": 0.0092
   }
  ],
  "final": {
-  "Deflection": 5,
+  "Deflection": 3,
   "Improved Rend": 3,
   "Improved Tactical Mastery": 3,
   "Improved Overpower": 2,
@@ -67,78 +58,119 @@
   "Blood Craze": 3,
   "Enrage": 4,
   "Improved Slam": 1,
-  "Improved Charge": 1
+  "Improved Charge": 1,
+  "Piercing Howl": 1,
+  "Spearing Strike": 1
  },
- "J": 0.2584,
- "win": 0.3162,
- "margin": -0.2314,
+ "J": 0.2574,
+ "win": 0.313,
+ "margin": -0.2224,
  "by": {
   "warrior": [
-   0.5625,
+   0.5417,
    0.0,
-   0.0318
+   0.01
   ],
   "rogue": [
-   0.65,
+   0.7333,
    0.0,
-   0.1313
+   0.1928
   ],
   "priest": [
-   0.0083,
-   0.0,
-   -0.5507
-  ],
-  "hunter": [
-   0.0083,
-   0.0,
-   -0.5998
-  ],
-  "warlock": [
-   0.2292,
-   0.0,
-   -0.2684
-  ],
-  "paladin": [
-   0.0542,
-   0.0,
-   -0.3007
-  ],
-  "shaman": [
-   0.6833,
-   0.0292,
-   0.0776
-  ],
-  "druid": [
-   0.6375,
-   0.0,
-   0.2035
-  ],
-  "mage": [
    0.0125,
    0.0,
-   -0.8071
+   -0.5132
+  ],
+  "hunter": [
+   0.0208,
+   0.0,
+   -0.579
+  ],
+  "warlock": [
+   0.1167,
+   0.0,
+   -0.2716
+  ],
+  "paladin": [
+   0.05,
+   0.0,
+   -0.3006
+  ],
+  "shaman": [
+   0.6792,
+   0.0375,
+   0.082
+  ],
+  "druid": [
+   0.6625,
+   0.0042,
+   0.2026
+  ],
+  "mage": [
+   0.0,
+   0.0,
+   -0.8247
   ]
+ },
+ "signature": {
+  "Mortal Strike": 1.78
+ },
+ "gear": null,
+ "casts": {
+  "Melee": 4.99,
+  "Mortal Strike": 1.78,
+  "Hamstring": 1.76,
+  "Battle Stance": 1.69,
+  "Berserker Stance": 1.59,
+  "Retaliation": 1.26,
+  "Overpower": 1.2,
+  "Intercept": 1.01,
+  "Bloodrage": 1.0,
+  "Charge": 0.67,
+  "Recklessness": 0.6,
+  "Pummel": 0.46,
+  "Berserker Rage": 0.45,
+  "Piercing Howl": 0.34,
+  "Defensive Stance": 0.33,
+  "Disarm": 0.33,
+  "Slam": 0.26,
+  "Execute": 0.25,
+  "Intimidating Shout": 0.14,
+  "Spearing Strike": 0.07,
+  "Whirlwind": 0.05,
+  "Cleave": 0.05,
+  "Battle Shout": 0.03
  },
  "race": {
   "final": {
-   "J": 0.2584,
-   "win": 0.3162,
-   "margin": -0.2314
+   "J": 0.2574,
+   "win": 0.313,
+   "margin": -0.2224
   },
   "arms-pvp": {
-   "J": 0.2311,
-   "win": 0.2981,
-   "margin": -0.2684
+   "J": 0.2246,
+   "win": 0.2898,
+   "margin": -0.2607
   },
   "community:tf-arms": {
-   "J": 0.2267,
-   "win": 0.2889,
-   "margin": -0.2486
+   "J": 0.2254,
+   "win": 0.2866,
+   "margin": -0.2448
   },
   "_reference/data/duellab/seeds/warrior-arms.json": {
-   "J": 0.2541,
-   "win": 0.3144,
-   "margin": -0.241
+   "J": 0.2477,
+   "win": 0.3079,
+   "margin": -0.2405
+  },
+  "_reference/data/duellab/seeds/r2/warrior-arms-battleground.json": {
+   "J": 0.2574,
+   "win": 0.313,
+   "margin": -0.2224
+  },
+  "_reference/data/duellab/seeds/r2/warrior-arms-winner.json": {
+   "J": 0.2464,
+   "win": 0.3046,
+   "margin": -0.2329
   }
  },
  "settings": {
@@ -186,9 +218,15 @@
     "mage",
     "community:tf-frost"
    ]
-  ]
+  ],
+  "patience": 6,
+  "tier_chains": true,
+  "signature": [
+   "Mortal Strike"
+  ],
+  "gear_race": true
  },
- "date": "2026-11-17",
- "round": "2026-11-15",
- "minutes": 37.3
+ "date": "2026-11-18",
+ "round": "r2",
+ "minutes": 10.5
 }

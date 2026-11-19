@@ -73,6 +73,28 @@ TODAY = datetime.date.today().isoformat()
 
 RAID_OK = {"Molten Core", "Onyxia's Lair"}
 RAID_NO = {"Blackwing Lair", "Zul'Gurub", "Ahn'Qiraj", "Ruins of Ahn'Qiraj", "Naxxramas", "Temple of Ahn'Qiraj"}
+# Molten Core and Onyxia items that are no drop (moved from gear_tiers.py on 2026-11-18, for later_phase below): crafted from their
+# materials (the database has the recipe, not its materials: our list), and Onyxia's quest rewards
+PHASE1_RAID_MADE = {"Flarecore Gloves", "Flarecore Mantle", "Flarecore Wraps", "Flarecore Robe", "Flarecore Leggings", "Corehound Boots",
+                    "Corehound Belt", "Molten Helm", "Molten Belt", "Fiery Chain Girdle", "Fiery Chain Shoulders", "Core Marksman Rifle",
+                    "Sulfuron Hammer", "Onyxia Scale Cloak", "Onyxia Scale Breastplate", "Dark Iron Leggings", "Dark Iron Helm",
+                    "Dark Iron Gauntlets", "Dark Iron Boots", "Dark Iron Reaver", "Dark Iron Destroyer", "Lavashard Axe", "Lava Belt",
+                    "Blackguard", "Ebon Hand", "Nightfall", "Black Amnesty", "Blackfury"}
+RAID_QUEST = {"Dragonslayer's Signet", "Onyxia Tooth Pendant", "Onyxia Blood Talisman"}
+
+
+def later_phase(it, zones):
+    """An item of the database's phase 2 that is no Molten Core or Onyxia item (2026-11-18). The simulator's database dates every item:
+    phase 1 is what Forever has now, phase 2 the raids (from 2026-12-09) and later content, so every raid drop is phase 2 and every
+    dungeon drop phase 1. Our pools never read the field, and 15 later items had come in through the community presets they trust: the
+    Silithus war's quest rewards (Rockfury Bracers sat in 41 of our 99 sets, Earthweave Cloak in 19, Band of Earthen Might in 17), a
+    Blackwing Lair craft, a rank-14 PvP mace in a BiS set. A Molten Core or Onyxia item (a drop there, a craft from their materials, a
+    quest reward of theirs) is the BiS tier's own; the pre-raid tiers take phase 1 only (gear_tiers.pool_of)."""
+    if (it.get("phase") or 1) < 2:
+        return False
+    if any(s.get("drop") and zones.get(s["drop"].get("zoneId")) in RAID_OK for s in it.get("sources") or []):
+        return False
+    return it.get("name") not in PHASE1_RAID_MADE | RAID_QUEST | PHASE1_QUEST
 SOURCELESS_MAX_ILVL = 70
 WORLD_BOSSES = {6109, 12397, 14887, 14888, 14889, 14890}
 # the Scourge Invasion's bosses (Sever, Balzaphon, Lady Falther'ess, Revanchion, Scorn, Lord Blackwood): an event of Classic's last phase that
@@ -283,7 +305,8 @@ VENDOR_ITEMS = {
 
 
 def in_pool(it, zones):
-    if it.get("quality", 0) >= 5 or it.get("quality", 0) < 2 or later_craft(it) or later_rep(it) or it.get("id") in SUSPECT_ITEMS:
+    if it.get("quality", 0) >= 5 or it.get("quality", 0) < 2 or later_craft(it) or later_rep(it) or it.get("id") in SUSPECT_ITEMS \
+            or later_phase(it, zones):
         return False
     so = it.get("scalingOptions", {}).get("0", {})
     srcs = dated_sources(it)
@@ -297,6 +320,8 @@ def in_pool(it, zones):
     if it["id"] in VENDOR_ITEMS:
         return True
     if not srcs:   # no dated source (custom items, quest, vendor and PvP rewards): only items a phase-1 community preset uses
+        if it.get("name") in RAID_QUEST | PHASE1_QUEST:   # 2026-11-18: Onyxia's and Molten Core's quest rewards count unvetted (the
+            return True                                     # database lists none of Onyxia's drops, and no preset used her ring)
         return not later_reward(it) and it["id"] in VETTED and (so.get("ilvl", 0) <= SOURCELESS_MAX_ILVL or it.get("name") in PHASE1_QUEST)
     return True
 

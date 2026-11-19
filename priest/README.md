@@ -9,13 +9,13 @@
 
 Pick what you want to do (the columns) and the spec you want to play (the rows). Every link opens a page with the talents (and a link that shows them in a talent calculator), the talent order while leveling, what to press, and the numbers behind the choice.
 
-| Spec | Leveling (solo) | Raid (group: full raid DPS) |
-|---|---|---|
-| **Discipline** | [Discipline — Leveling into the raid build](leveling/discipline.md) 🔬<br>46 s/kill | [Discipline — Raid healing](raid/discipline.md) 🔬<br>healer |
-| **Holy** | [Holy — Leveling into the raid build](leveling/holy.md) 🔬<br>56 s/kill | [Holy — Raid Healer](raid/holy.md)<br>healer |
-| **Shadow** | **✅ Recommended**<br>[Shadow — Leveling](leveling/shadow.md) 🔬<br>24 s/kill | **✅ Recommended**<br>[Shadow (optimized)](raid/shadow.md)<br>788 DPS (raid) |
+| Spec | Leveling (solo) | Raid (group: full raid DPS) | PvP (duels) |
+|---|---|---|---|
+| **Discipline** | [Discipline — Leveling into the raid build](leveling/discipline.md) 🔬<br>46 s/kill | [Discipline — Raid healing](raid/discipline.md) 🔬<br>healer | [Discipline — PvP](pvp/discipline.md) 🔬<br>49% of duels |
+| **Holy** | [Holy — Leveling into the raid build](leveling/holy.md) 🔬<br>56 s/kill | [Holy — Raid Healer](raid/holy.md)<br>healer | [Holy — PvP](pvp/holy.md) 🔬<br>46% of duels |
+| **Shadow** | **✅ Recommended**<br>[Shadow — Leveling](leveling/shadow.md) 🔬<br>24 s/kill | **✅ Recommended**<br>[Shadow (optimized)](raid/shadow.md)<br>788 DPS (raid) | [Shadow — PvP](pvp/shadow.md) 🔬<br>84% of duels |
 
-**✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
+**✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand. **PvP:** the share of duels the build wins in this project's duel lab against one PvP build of every class; no spec is marked recommended there (the lab's AI against itself in an open field is a model of PvP, not PvP).
 
 ### Hybrid builds
 
@@ -52,6 +52,16 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | 2 | [Smite](raid/smite.md) 🔬 | 623 | -21% |
 
 **Healing** (ranked by the healer lab's capacity: the multiple of the lab's standard raid damage the healer keeps up with): [Holy](raid/holy.md) — Raid Healer (capacity 0.69), [Discipline](raid/discipline.md) — Raid healing 🔬 (capacity 0.65).
+
+### PvP (duels)
+
+Ranked by the share of duels the spec's best build wins against the field (nine opponents, one PvP build per class; level 60, one against one):
+
+| # | Spec and build | Wins vs the field | Easiest matchup | Hardest matchup |
+|---|---|---|---|---|
+| 1 | [Shadow](pvp/shadow.md) 🔬 16/3/32 | 84% | Druid 100% | Paladin 39% |
+| 2 | [Discipline](pvp/discipline.md) 🔬 33/15/3 | 49% | Mage 99% | Warlock 0% |
+| 3 | [Holy](pvp/holy.md) 🔬 21/30/0 | 46% | Mage 100% | Priest 0% |
 
 Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie. Everything is a simulation of the beta, not a measurement in the game.
 

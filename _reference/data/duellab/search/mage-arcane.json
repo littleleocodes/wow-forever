@@ -3,203 +3,200 @@
  "tree": "Arcane",
  "starts": [
   "arcane-pvp",
-  "_reference/data/duellab/seeds/mage-arcane.json"
+  "_reference/data/duellab/seeds/mage-arcane.json",
+  "_reference/data/duellab/seeds/r2/mage-arcane-improved.json",
+  "_reference/data/duellab/seeds/r2/mage-arcane-winner.json"
  ],
  "history": [
   {
    "step": 0,
-   "from": "_reference/data/duellab/seeds/mage-arcane.json",
-   "J": 0.21,
-   "win": 0.275,
+   "from": "_reference/data/duellab/seeds/r2/mage-arcane-improved.json",
+   "J": 0.4666,
+   "win": 0.4639,
    "alloc": {
     "Wand Specialization": 2,
-    "Improved Channeling": 1,
-    "Arcane Resilience": 2,
-    "Arcane Subtlety": 2,
-    "Magic Absorption": 2,
+    "Improved Channeling": 3,
     "Arcane Concentration": 5,
     "Missile Barrage": 1,
     "Arcane Geometry": 2,
     "Arcane Impact": 1,
     "Arcane Blast": 1,
-    "Arcane Shielding": 1,
-    "Improved Counterspell": 2,
+    "Arcane Shielding": 2,
     "Arcane Meditation": 3,
     "Arcane Wrath": 1,
     "Presence of Mind": 1,
     "Arcane Instability": 3,
     "Arcane Power": 1,
-    "Incineration": 2,
-    "Improved Frostbolt": 5,
-    "Ice Shards": 4,
+    "Improved Frostbolt": 3,
     "Frostbite": 3,
-    "Improved Frost Nova": 2,
     "Ice Lance": 1,
-    "Ice Block": 1,
-    "Shatter": 2
+    "Precision": 2,
+    "Permafrost": 2,
+    "Arcane Mind": 5,
+    "Frost Warding": 2,
+    "Flame Throwing": 2,
+    "Accelerant": 5
    }
   },
   {
-   "step": 1,
-   "move": "1 point Ice Block -> Arcane Shielding",
-   "J": 0.2511,
-   "win": 0.3065,
-   "gain": 0.0411
-  },
-  {
-   "step": 3,
-   "move": "2 points Improved Frostbolt -> Precision",
-   "J": 0.2883,
-   "win": 0.3343,
-   "gain": 0.0372
+   "step": 2,
+   "move": "2 points Arcane Shielding -> Improved Channeling",
+   "J": 0.5055,
+   "win": 0.4954,
+   "gain": 0.039
   },
   {
    "step": 4,
-   "move": "2 points Improved Frost Nova -> Permafrost",
-   "J": 0.3392,
-   "win": 0.3704,
-   "gain": 0.0509
-  },
-  {
-   "step": 5,
-   "move": "1 point Improved Counterspell -> Arctic Reach",
-   "J": 0.3569,
-   "win": 0.3852,
-   "gain": 0.0177
-  },
-  {
-   "step": 7,
-   "move": "2 points Shatter -> Arcane Mind",
-   "J": 0.3747,
-   "win": 0.3981,
-   "gain": 0.0177
-  },
-  {
-   "step": 9,
-   "move": "1 point Improved Counterspell -> Arctic Reach",
-   "J": 0.3913,
-   "win": 0.4102,
+   "move": "1 point Arcane Mind -> Missile Barrage",
+   "J": 0.5221,
+   "win": 0.5074,
    "gain": 0.0166
   },
   {
-   "step": 10,
-   "move": "2 points Incineration -> Frost Warding",
-   "J": 0.4004,
-   "win": 0.4167,
-   "gain": 0.0091
+   "step": 5,
+   "move": "5 points Accelerant -> Incineration",
+   "J": 0.5429,
+   "win": 0.5231,
+   "gain": 0.0208
   },
   {
-   "step": 11,
-   "move": "2 points Magic Absorption -> Arcane Mind",
-   "J": 0.4252,
-   "win": 0.4352,
-   "gain": 0.0248
+   "step": 7,
+   "move": "1 point Frostbite -> Arcane Impact",
+   "J": 0.548,
+   "win": 0.5259,
+   "gain": 0.005
   },
   {
-   "step": 18,
-   "move": "2 points Arcane Subtlety -> Improved Channeling",
-   "J": 0.4365,
-   "win": 0.4426,
-   "gain": 0.0113
-  },
-  {
-   "step": 19,
-   "move": "1 point Arcane Resilience -> Arcane Mind",
-   "J": 0.4422,
-   "win": 0.4463,
-   "gain": 0.0057
+   "step": 9,
+   "move": "1 point Frostbite -> Arcane Shielding",
+   "J": 0.5703,
+   "win": 0.5444,
+   "gain": 0.0223
   }
  ],
  "final": {
   "Wand Specialization": 2,
-  "Improved Channeling": 3,
-  "Arcane Resilience": 1,
+  "Improved Channeling": 5,
   "Arcane Concentration": 5,
-  "Missile Barrage": 1,
+  "Missile Barrage": 2,
   "Arcane Geometry": 2,
-  "Arcane Impact": 1,
+  "Arcane Impact": 2,
   "Arcane Blast": 1,
-  "Arcane Shielding": 2,
   "Arcane Meditation": 3,
   "Arcane Wrath": 1,
   "Presence of Mind": 1,
   "Arcane Instability": 3,
   "Arcane Power": 1,
   "Improved Frostbolt": 3,
-  "Ice Shards": 4,
-  "Frostbite": 3,
+  "Frostbite": 1,
   "Ice Lance": 1,
   "Precision": 2,
   "Permafrost": 2,
-  "Arctic Reach": 2,
-  "Arcane Mind": 5,
-  "Frost Warding": 2
+  "Arcane Mind": 4,
+  "Frost Warding": 2,
+  "Flame Throwing": 2,
+  "Incineration": 5,
+  "Arcane Shielding": 1
  },
- "J": 0.4568,
- "win": 0.4593,
- "margin": -0.0097,
+ "J": 0.5393,
+ "win": 0.5194,
+ "margin": 0.0793,
  "by": {
   "warrior": [
-   0.9208,
+   0.7917,
    0.0,
-   0.6567
+   0.5412
   ],
   "rogue": [
-   0.4,
+   0.3167,
    0.0,
-   -0.2188
+   -0.2536
   ],
   "priest": [
-   0.0583,
+   0.4083,
    0.0,
-   -0.5028
+   -0.0807
   ],
   "hunter": [
-   0.1792,
-   0.0167,
-   -0.1532
+   0.45,
+   0.0208,
+   0.0276
   ],
   "warlock": [
-   0.0083,
+   0.05,
    0.0,
-   -0.5252
+   -0.412
   ],
   "paladin": [
    0.0,
    0.0,
-   -0.6153
+   -0.6262
   ],
   "shaman": [
-   0.975,
+   0.95,
    0.0,
-   0.5339
+   0.4603
   ],
   "druid": [
-   0.7083,
+   0.75,
    0.0,
-   0.3297
+   0.3873
   ],
   "mage": [
-   0.8833,
-   0.0,
-   0.4081
+   0.9583,
+   0.0042,
+   0.6701
   ]
+ },
+ "signature": {
+  "Arcane Blast": 1.13
+ },
+ "gear": null,
+ "casts": {
+  "Fire Blast": 2.06,
+  "Mana Shield": 1.28,
+  "Wand": 1.24,
+  "Arcane Blast": 1.13,
+  "Arcane Wrath": 0.76,
+  "Cone of Cold": 0.68,
+  "Blink": 0.66,
+  "Frost Nova": 0.65,
+  "Counterspell": 0.54,
+  "Arcane Explosion": 0.53,
+  "Arcane Missiles": 0.48,
+  "Remove Lesser Curse": 0.43,
+  "Frostbolt": 0.38,
+  "Scorch": 0.18,
+  "Polymorph": 0.18,
+  "Ice Lance": 0.12,
+  "Frost Ward": 0.11,
+  "Fireball": 0.01
  },
  "race": {
   "final": {
-   "J": 0.4568,
-   "win": 0.4593,
-   "margin": -0.0097
+   "J": 0.5393,
+   "win": 0.5194,
+   "margin": 0.0793
   },
   "arcane-pvp": {
-   "J": 0.248,
-   "win": 0.306,
-   "margin": -0.2322
+   "J": 0.2521,
+   "win": 0.3093,
+   "margin": -0.2286
   },
   "_reference/data/duellab/seeds/mage-arcane.json": {
-   "J": 0.2534,
-   "win": 0.3111,
-   "margin": -0.231
+   "J": 0.2575,
+   "win": 0.3144,
+   "margin": -0.2274
+  },
+  "_reference/data/duellab/seeds/r2/mage-arcane-improved.json": {
+   "J": 0.4807,
+   "win": 0.4759,
+   "margin": 0.0193
+  },
+  "_reference/data/duellab/seeds/r2/mage-arcane-winner.json": {
+   "J": 0.4581,
+   "win": 0.4602,
+   "margin": -0.0085
   }
  },
  "settings": {
@@ -247,9 +244,15 @@
     "mage",
     "community:tf-frost"
    ]
-  ]
+  ],
+  "patience": 6,
+  "tier_chains": true,
+  "signature": [
+   "Arcane Blast"
+  ],
+  "gear_race": true
  },
- "date": "2026-11-16",
- "round": "2026-11-15",
- "minutes": 36.3
+ "date": "2026-11-18",
+ "round": "r2",
+ "minutes": 26.6
 }

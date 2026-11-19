@@ -5,69 +5,35 @@
   "pvp-mm-surv",
   "marksmanship-pvp",
   "community:tf-mm",
-  "_reference/data/duellab/seeds/hunter-marksmanship.json"
+  "_reference/data/duellab/seeds/hunter-marksmanship.json",
+  "_reference/data/duellab/seeds/r2/hunter-marksmanship-battleground.json",
+  "_reference/data/duellab/seeds/r2/hunter-marksmanship-improved.json",
+  "_reference/data/duellab/seeds/r2/hunter-marksmanship-winner.json"
  ],
  "history": [
   {
    "step": 0,
-   "from": "pvp-mm-surv",
-   "J": 0.8783,
-   "win": 0.7898,
+   "from": "_reference/data/duellab/seeds/r2/hunter-marksmanship-improved.json",
+   "J": 1.0118,
+   "win": 0.9,
    "alloc": {
-    "Improved Concussive Shot": 5,
+    "Improved Concussive Shot": 3,
     "Lethal Attacks": 5,
-    "Improved Stings": 1,
+    "Improved Stings": 3,
     "Careful Aim": 5,
     "Trueshot Aura": 1,
-    "Mortal Shots": 5,
-    "Barrage": 3,
+    "Barrage": 2,
     "Scatter Shot": 1,
     "Ranged Weapon Specialization": 5,
     "Improved Tracking": 5,
-    "Entrapment": 2,
-    "Survivalist": 2,
-    "Improved Wing Clip": 3,
-    "Clever Traps": 1,
-    "Surefooted": 3,
+    "Entrapment": 1,
+    "Survivalist": 5,
     "Deterrence": 1,
-    "Survival Tactics": 2,
-    "Counterattack": 1
+    "Survival Tactics": 1,
+    "Improved Arcane Shot": 5,
+    "Surefooted": 3,
+    "Deadly Aspects": 5
    }
-  },
-  {
-   "step": 3,
-   "move": "3 points Surefooted -> Survivalist",
-   "J": 0.9053,
-   "win": 0.812,
-   "gain": 0.027
-  },
-  {
-   "step": 4,
-   "move": "1 point Improved Wing Clip -> Improved Stings",
-   "J": 0.9104,
-   "win": 0.8148,
-   "gain": 0.005
-  },
-  {
-   "step": 5,
-   "move": "5 points Mortal Shots -> Improved Arcane Shot",
-   "J": 0.9472,
-   "win": 0.8472,
-   "gain": 0.0369
-  },
-  {
-   "step": 6,
-   "move": "2 points Improved Concussive Shot -> Surefooted",
-   "J": 0.9711,
-   "win": 0.8704,
-   "gain": 0.0239
-  },
-  {
-   "step": 7,
-   "move": "1 point Clever Traps -> Improved Stings",
-   "J": 0.9893,
-   "win": 0.887,
-   "gain": 0.0182
   }
  ],
  "final": {
@@ -76,94 +42,132 @@
   "Improved Stings": 3,
   "Careful Aim": 5,
   "Trueshot Aura": 1,
-  "Barrage": 3,
+  "Barrage": 2,
   "Scatter Shot": 1,
   "Ranged Weapon Specialization": 5,
   "Improved Tracking": 5,
-  "Entrapment": 2,
+  "Entrapment": 1,
   "Survivalist": 5,
-  "Improved Wing Clip": 2,
   "Deterrence": 1,
-  "Survival Tactics": 2,
-  "Counterattack": 1,
+  "Survival Tactics": 1,
   "Improved Arcane Shot": 5,
-  "Surefooted": 2
+  "Surefooted": 3,
+  "Deadly Aspects": 5
  },
- "J": 0.9728,
- "win": 0.8704,
- "margin": 0.4098,
+ "J": 1.0042,
+ "win": 0.8926,
+ "margin": 0.4463,
  "by": {
   "warrior": [
    0.9708,
    0.0,
-   0.5811
+   0.4997
   ],
   "rogue": [
-   0.9625,
-   0.0042,
-   0.5145
+   0.9583,
+   0.0,
+   0.5225
   ],
   "priest": [
-   0.4958,
-   0.0167,
-   -0.0255
+   0.5542,
+   0.0,
+   0.0146
   ],
   "hunter": [
-   0.9542,
-   0.0125,
-   0.2537
+   1.0,
+   0.0,
+   0.4698
   ],
   "warlock": [
-   0.6125,
-   0.0208,
-   0.0373
+   0.6875,
+   0.0167,
+   0.0995
   ],
   "paladin": [
-   0.8375,
+   0.8625,
    0.0,
-   0.2131
+   0.2452
   ],
   "shaman": [
    1.0,
    0.0,
-   0.6434
+   0.704
   ],
   "druid": [
    1.0,
    0.0,
-   0.7983
+   0.8067
   ],
   "mage": [
    1.0,
    0.0,
-   0.6721
+   0.6543
   ]
+ },
+ "signature": {},
+ "gear": null,
+ "casts": {
+  "Claw": 6.42,
+  "Auto Shot": 5.71,
+  "Arcane Shot": 2.28,
+  "Concussive Shot": 2.17,
+  "Bite": 2.13,
+  "Wing Clip": 1.74,
+  "Multi-Shot": 1.23,
+  "Hunter's Mark": 1.0,
+  "Melee": 0.96,
+  "Serpent Sting": 0.78,
+  "Viper Sting": 0.76,
+  "Scatter Shot": 0.65,
+  "Freezing Trap": 0.59,
+  "Aimed Shot": 0.58,
+  "Growl": 0.44,
+  "Feign Death": 0.33,
+  "Enchanted Flare": 0.22,
+  "Deterrence": 0.19,
+  "Frost Trap": 0.18,
+  "Flare": 0.08
  },
  "race": {
   "final": {
-   "J": 0.9728,
-   "win": 0.8704,
-   "margin": 0.4098
+   "J": 1.0042,
+   "win": 0.8926,
+   "margin": 0.4463
   },
   "pvp-mm-surv": {
-   "J": 0.8714,
-   "win": 0.7815,
-   "margin": 0.3598
+   "J": 0.8715,
+   "win": 0.7778,
+   "margin": 0.3749
   },
   "marksmanship-pvp": {
-   "J": 0.6516,
-   "win": 0.5921,
-   "margin": 0.2379
+   "J": 0.6522,
+   "win": 0.5926,
+   "margin": 0.2386
   },
   "community:tf-mm": {
-   "J": 0.7174,
-   "win": 0.6579,
-   "margin": 0.2382
+   "J": 0.718,
+   "win": 0.6583,
+   "margin": 0.2387
   },
   "_reference/data/duellab/seeds/hunter-marksmanship.json": {
-   "J": 0.8289,
-   "win": 0.7458,
-   "margin": 0.3321
+   "J": 0.8269,
+   "win": 0.7421,
+   "margin": 0.339
+  },
+  "_reference/data/duellab/seeds/r2/hunter-marksmanship-battleground.json": {
+   "J": 0.9982,
+   "win": 0.8894,
+   "margin": 0.4354
+  },
+  "_reference/data/duellab/seeds/r2/hunter-marksmanship-improved.json": {
+   "J": 1.0042,
+   "win": 0.8926,
+   "margin": 0.4463
+  },
+  "_reference/data/duellab/seeds/r2/hunter-marksmanship-winner.json": {
+   "J": 0.9839,
+   "win": 0.8759,
+   "margin": 0.4318
   }
  },
  "settings": {
@@ -211,9 +215,13 @@
     "mage",
     "community:tf-frost"
    ]
-  ]
+  ],
+  "patience": 6,
+  "tier_chains": true,
+  "signature": [],
+  "gear_race": true
  },
- "date": "2026-11-16",
- "round": "2026-11-15",
- "minutes": 22.1
+ "date": "2026-11-18",
+ "round": "r2",
+ "minutes": 19.9
 }

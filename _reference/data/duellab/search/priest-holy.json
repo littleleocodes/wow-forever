@@ -3,128 +3,198 @@
  "tree": "Holy",
  "starts": [
   "holy-pvp",
-  "_reference/data/duellab/seeds/priest-holy.json"
+  "_reference/data/duellab/seeds/priest-holy.json",
+  "_reference/data/duellab/seeds/r2/priest-holy-battleground.json",
+  "_reference/data/duellab/seeds/r2/priest-holy-improved.json",
+  "_reference/data/duellab/seeds/r2/priest-holy-winner.json"
  ],
  "history": [
   {
    "step": 0,
-   "from": "_reference/data/duellab/seeds/priest-holy.json",
-   "J": 0.0879,
-   "win": 0.1815,
+   "from": "_reference/data/duellab/seeds/r2/priest-holy-battleground.json",
+   "J": 0.2376,
+   "win": 0.3,
    "alloc": {
     "Twilight Focus": 3,
     "Improved Renew": 3,
     "Holy Specialization": 5,
     "Spell Warding": 5,
     "Divine Fury": 5,
-    "Inspiration": 3,
-    "Holy Reach": 1,
-    "Spirit of Redemption": 1,
     "Spiritual Guidance": 5,
     "Spiritual Healing": 3,
-    "Prayer of Mending": 1,
-    "Blackout": 5,
+    "Blackout": 4,
     "Spirit Tap": 1,
     "Improved Shadow Word: Pain": 2,
-    "Shadow Reach": 2,
-    "Improved Psychic Scream": 2,
-    "Mind Flay": 1,
-    "Improved Mind Flay": 2,
-    "Vampiric Embrace": 1
+    "Blessed Recovery": 3,
+    "Wand Specialization": 2,
+    "Martyrdom": 2,
+    "Power in Light": 3,
+    "Silent Resolve": 3,
+    "Holy Binding": 1,
+    "Holy Nova": 1
    }
   },
   {
    "step": 1,
-   "move": "1 point Prayer of Mending -> Blessed Recovery",
-   "J": 0.1216,
-   "win": 0.2083,
-   "gain": 0.0336
+   "move": "1 point Silent Resolve -> Shadow Reach",
+   "J": 0.2524,
+   "win": 0.312,
+   "gain": 0.0149
+  },
+  {
+   "step": 2,
+   "move": "1 Spirit Tap + 2 Improved Shadow Word: Pain + 1 Shadow Reach -> 1 Power in Light + 3 Improved Power Word: Shield (tier chain)",
+   "J": 0.2871,
+   "win": 0.3352,
+   "gain": 0.0346
+  },
+  {
+   "step": 3,
+   "move": "3 Blackout -> 2 Twin Disciplines + 1 Improved Mana Burn (tier chain)",
+   "J": 0.307,
+   "win": 0.35,
+   "gain": 0.02
+  },
+  {
+   "step": 4,
+   "move": "3 points Improved Renew -> Improved Inner Fire",
+   "J": 0.3532,
+   "win": 0.3852,
+   "gain": 0.0462
+  },
+  {
+   "step": 5,
+   "move": "1 Blackout + 1 Holy Binding -> 1 Soul Warding + 1 Renewed Hope (tier chain)",
+   "J": 0.3675,
+   "win": 0.3944,
+   "gain": 0.0143
   },
   {
    "step": 6,
-   "move": "2 points Inspiration -> Wand Specialization",
-   "J": 0.1763,
-   "win": 0.2509,
-   "gain": 0.0548
+   "move": "1 point Martyrdom -> Meditation",
+   "J": 0.3859,
+   "win": 0.4056,
+   "gain": 0.0184
+  },
+  {
+   "step": 7,
+   "move": "2 points Power in Light -> Twin Disciplines",
+   "J": 0.4067,
+   "win": 0.4222,
+   "gain": 0.0208
+  },
+  {
+   "step": 11,
+   "move": "2 points Power in Light -> Mental Strength",
+   "J": 0.4192,
+   "win": 0.4296,
+   "gain": 0.0125
+  },
+  {
+   "step": 13,
+   "move": "1 point Renewed Hope -> Inner Focus",
+   "J": 0.439,
+   "win": 0.4444,
+   "gain": 0.0198
   }
  ],
  "final": {
   "Twilight Focus": 3,
-  "Improved Renew": 3,
   "Holy Specialization": 5,
   "Spell Warding": 5,
   "Divine Fury": 5,
-  "Inspiration": 1,
-  "Holy Reach": 1,
-  "Spirit of Redemption": 1,
   "Spiritual Guidance": 5,
   "Spiritual Healing": 3,
-  "Blackout": 5,
-  "Spirit Tap": 1,
-  "Improved Shadow Word: Pain": 2,
-  "Shadow Reach": 2,
-  "Improved Psychic Scream": 2,
-  "Mind Flay": 1,
-  "Improved Mind Flay": 2,
-  "Vampiric Embrace": 1,
-  "Blessed Recovery": 1,
-  "Wand Specialization": 2
+  "Blessed Recovery": 3,
+  "Wand Specialization": 2,
+  "Martyrdom": 1,
+  "Silent Resolve": 2,
+  "Holy Nova": 1,
+  "Improved Power Word: Shield": 3,
+  "Twin Disciplines": 4,
+  "Improved Mana Burn": 1,
+  "Improved Inner Fire": 3,
+  "Soul Warding": 1,
+  "Meditation": 1,
+  "Mental Strength": 2,
+  "Inner Focus": 1
  },
- "J": 0.1614,
- "win": 0.2384,
- "margin": -0.308,
+ "J": 0.4508,
+ "win": 0.4528,
+ "margin": -0.008,
  "by": {
   "warrior": [
-   0.4542,
+   0.9208,
    0.0,
-   -0.011
+   0.3774
   ],
   "rogue": [
-   0.2417,
-   0.0,
-   -0.328
+   0.8958,
+   0.0042,
+   0.3463
   ],
   "priest": [
    0.0,
    0.0,
-   -0.5615
+   -0.5609
   ],
   "hunter": [
-   0.5333,
+   0.8875,
    0.0,
-   -0.0327
+   0.6213
   ],
   "warlock": [
-   0.0208,
    0.0,
-   -0.5438
+   0.0,
+   -0.5455
   ],
   "paladin": [
+   0.0667,
    0.0,
-   0.0,
-   -0.6638
+   -0.4956
   ],
   "shaman": [
-   0.0083,
+   0.0417,
    0.0,
-   -0.4889
+   -0.3581
   ],
   "druid": [
-   0.0042,
+   0.2708,
    0.0,
-   -0.8265
+   -0.2936
   ],
   "mage": [
-   0.8833,
+   0.9917,
    0.0,
-   0.6839
+   0.8368
   ]
+ },
+ "signature": {},
+ "gear": null,
+ "casts": {
+  "Wand": 13.2,
+  "Power Word: Shield": 3.18,
+  "Renew": 2.13,
+  "Dispel Magic": 1.28,
+  "Shadow Word: Pain": 1.15,
+  "Mana Burn": 0.98,
+  "Psychic Scream": 0.95,
+  "Mind Blast": 0.9,
+  "Smite": 0.84,
+  "Devouring Plague": 0.79,
+  "Holy Fire": 0.71,
+  "Flash Heal": 0.59,
+  "Inner Focus": 0.4,
+  "Greater Heal": 0.39,
+  "Abolish Disease": 0.12,
+  "Heal": 0.1,
+  "Inner Fire": 0.01
  },
  "race": {
   "final": {
-   "J": 0.1614,
-   "win": 0.2384,
-   "margin": -0.308
+   "J": 0.4508,
+   "win": 0.4528,
+   "margin": -0.008
   },
   "holy-pvp": {
    "J": 0.1031,
@@ -135,6 +205,21 @@
    "J": 0.1059,
    "win": 0.1972,
    "margin": -0.3653
+  },
+  "_reference/data/duellab/seeds/r2/priest-holy-battleground.json": {
+   "J": 0.2257,
+   "win": 0.288,
+   "margin": -0.249
+  },
+  "_reference/data/duellab/seeds/r2/priest-holy-improved.json": {
+   "J": 0.2257,
+   "win": 0.288,
+   "margin": -0.2492
+  },
+  "_reference/data/duellab/seeds/r2/priest-holy-winner.json": {
+   "J": 0.1614,
+   "win": 0.2384,
+   "margin": -0.308
   }
  },
  "settings": {
@@ -182,9 +267,13 @@
     "mage",
     "community:tf-frost"
    ]
-  ]
+  ],
+  "patience": 6,
+  "tier_chains": true,
+  "signature": [],
+  "gear_race": true
  },
- "date": "2026-11-16",
- "round": "2026-11-15",
- "minutes": 118.1
+ "date": "2026-11-18",
+ "round": "r2",
+ "minutes": 66.6
 }

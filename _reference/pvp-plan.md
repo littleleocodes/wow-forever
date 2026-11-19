@@ -328,3 +328,21 @@ necessary").
     `duellab/results-<date>.json`.
   - Runner `deep-runs/pvp_round2.sh`: waits for the eat-and-drink lane's numbers, then the matrix, the search (--round r2), the check
     (round 1's record kept as `blind-spots-r1.json`), the follow-ups and the research pages. Then the PvP player pages.
+- 2026-11-18, round 2's results (`deep-runs/pvp_round2.sh`, 06:15-20:32; records `duellab/search/`, `duellab/blind-spots.json`,
+  `duellab/results-2026-11-18.json`). Wins against the field, round 1 -> round 2:
+  - up most: Holy priest 24% -> 45% (a Holy/Discipline build, 30/21/0, found from round 2's extra starts and tier-chain moves:
+    shields, Renew, Dispel Magic and the wand), Feral 35% -> 41%, Survival 42% -> 50%, Arcane 46% -> 52%, Holy paladin
+    74% -> 79% (melee gear raced against caster gear), Assassination 49% -> 54%, Demonology 68% -> 72%;
+  - down: Subtlety 50% -> 40%, the signature rule's cost (below);
+  - the rest within 3 points.
+  The blind-spot check adopted six improved builds: Feral Blood Frenzy 2, Beast Mastery Improved Concussive Shot 5, Discipline
+  Martyrdom 2 and Mental Agility 3, Holy Improved Renew 3 and Meditation 3, Shadow Improved Power Word: Shield 3, Affliction
+  Improved Sayaad 3. 24 trees have a battleground version.
+- 2026-11-18, the signature rule's cost: it cost Subtlety alone. Every Subtlety start lacked Death Mark (the round-1 winner, its
+  battleground version, the hand draft, the community's most-tagged build), so the search ran from one start, the round-1 winner with
+  Death Mark put in (J 0.22), and climbed to 40.2%. On the same duels (seed 3, 240 a matchup) the round-1 winner without Death Mark
+  wins 50.6% and its battleground version 50.2%: the field's changes did not move it. Holy Shock, Holy Shield and Shield Slam had
+  lacked only in hand drafts; those trees held or rose. Asked the user whether Death Mark stays required for PvP.
+- 2026-11-18, the PvP player pages (`duellab/render_pvp_pages.py`, by `render_modes.py`): `<class>/pvp/`, a PvP column in "Pick
+  your spec", a PvP ranking in "Which spec is best?", "Most duels won" in the player index; no recommendation badge. The research
+  pages' caveats now say round 2's (pets answered; the Holy gear raced both ways; which mage duel builds hold Ice Block).

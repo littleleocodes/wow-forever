@@ -42,9 +42,9 @@ Heal the tank with **Healing Wave** at the rank that covers what it is missing, 
 
 Healing capacity 0.69 (the raid damage it heals through in this project's healer lab), 391 healing per second. Healers are not in the community simulator.
 
-**The gear** (average item level: Pre-BiS 60.6; Phase 1 BiS 62.8; chosen by the stat weights this project's healer lab measures for this build, the healing capacity each stat adds; healers are in no community simulator, so this is our model; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 60.6; Raid BiS 62.8; chosen by the stat weights this project's healer lab measures for this build, the healing capacity each stat adds; healers are in no community simulator, so this is our model; each item opens its Wowhead page, with where it drops and its enchant):
 
-| Slot | Pre-BiS | Phase 1 BiS |
+| Slot | Pre-BiS | Raid BiS |
 |---|---|---|
 | Head | [Living Crown](https://www.wowhead.com/forever/item=252561) · *Leatherworking*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Living Crown](https://www.wowhead.com/forever/item=252561) · *Leatherworking*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
 | Neck | [Wavefront Necklace](https://www.wowhead.com/forever/item=20685) · *Lord Skwol, Silithus* | [Wavefront Necklace](https://www.wowhead.com/forever/item=20685) · *Lord Skwol, Silithus* |

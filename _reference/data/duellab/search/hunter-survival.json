@@ -3,14 +3,16 @@
  "tree": "Survival",
  "starts": [
   "survival-pvp",
-  "_reference/data/duellab/seeds/hunter-survival.json"
+  "_reference/data/duellab/seeds/hunter-survival.json",
+  "_reference/data/duellab/seeds/r2/hunter-survival-battleground.json",
+  "_reference/data/duellab/seeds/r2/hunter-survival-winner.json"
  ],
  "history": [
   {
    "step": 0,
-   "from": "_reference/data/duellab/seeds/hunter-survival.json",
-   "J": 0.3413,
-   "win": 0.3806,
+   "from": "_reference/data/duellab/seeds/r2/hunter-survival-winner.json",
+   "J": 0.4715,
+   "win": 0.4852,
    "alloc": {
     "Hawk Eye": 3,
     "Improved Concussive Shot": 5,
@@ -20,39 +22,30 @@
     "Trueshot Aura": 1,
     "Scatter Shot": 1,
     "Deflection": 5,
-    "Entrapment": 3,
-    "Survivalist": 4,
-    "Improved Wing Clip": 2,
+    "Survivalist": 5,
     "Clever Traps": 2,
     "Surefooted": 3,
     "Deterrence": 1,
     "Survival Tactics": 1,
     "Counterattack": 1,
     "Resourcefulness": 2,
-    "Strider Kick": 1,
-    "Lightning Reflexes": 5
+    "Lightning Reflexes": 5,
+    "Improved Tracking": 5
    }
   },
   {
-   "step": 2,
-   "move": "1 point Strider Kick -> Survivalist",
-   "J": 0.3645,
-   "win": 0.4009,
-   "gain": 0.0231
+   "step": 6,
+   "move": "2 points Resourcefulness -> Expose Prey",
+   "J": 0.4901,
+   "win": 0.5,
+   "gain": 0.0186
   },
   {
-   "step": 4,
-   "move": "2 points Improved Wing Clip -> Improved Tracking",
-   "J": 0.3886,
-   "win": 0.4204,
-   "gain": 0.0241
-  },
-  {
-   "step": 5,
-   "move": "3 points Entrapment -> Improved Tracking",
-   "J": 0.4127,
-   "win": 0.4398,
-   "gain": 0.0241
+   "step": 12,
+   "move": "5 points Deflection -> Predator's Edge",
+   "J": 0.4952,
+   "win": 0.5037,
+   "gain": 0.005
   }
  ],
  "final": {
@@ -63,82 +56,115 @@
   "Careful Aim": 3,
   "Trueshot Aura": 1,
   "Scatter Shot": 1,
-  "Deflection": 5,
   "Survivalist": 5,
   "Clever Traps": 2,
   "Surefooted": 3,
   "Deterrence": 1,
   "Survival Tactics": 1,
   "Counterattack": 1,
-  "Resourcefulness": 2,
   "Lightning Reflexes": 5,
-  "Improved Tracking": 5
+  "Improved Tracking": 5,
+  "Expose Prey": 2,
+  "Predator's Edge": 5
  },
- "J": 0.3913,
- "win": 0.4231,
- "margin": -0.1275,
+ "J": 0.4909,
+ "win": 0.4991,
+ "margin": -0.0327,
  "by": {
   "warrior": [
-   0.5625,
-   0.0,
-   0.0287
+   0.4625,
+   0.0042,
+   -0.0145
   ],
   "rogue": [
-   0.8458,
-   0.0,
-   0.2703
+   0.8667,
+   0.0042,
+   0.2709
   ],
   "priest": [
    0.0,
    0.0,
-   -0.8214
+   -0.7962
   ],
   "hunter": [
-   0.5083,
-   0.0083,
-   -0.0097
+   0.9542,
+   0.0042,
+   0.5777
   ],
   "warlock": [
-   0.0208,
-   0.0,
-   -0.3343
+   0.1167,
+   0.0042,
+   -0.2462
   ],
   "paladin": [
-   0.0167,
-   0.0042,
-   -0.5636
+   0.0458,
+   0.0,
+   -0.5504
   ],
   "shaman": [
-   0.6125,
+   0.75,
    0.0042,
-   0.0459
+   0.1291
   ],
   "druid": [
-   0.7458,
-   0.0,
-   0.2343
+   0.825,
+   0.0042,
+   0.3244
   ],
   "mage": [
-   0.4958,
-   0.0042,
-   0.0027
+   0.4708,
+   0.0,
+   0.0113
   ]
+ },
+ "signature": {},
+ "gear": null,
+ "casts": {
+  "Claw": 6.62,
+  "Wing Clip": 6.12,
+  "Melee (off-hand)": 6.06,
+  "Melee": 4.54,
+  "Growl": 2.45,
+  "Concussive Shot": 2.08,
+  "Bite": 1.95,
+  "Raptor Strike": 1.52,
+  "Counterattack": 1.01,
+  "Mongoose Bite": 1.0,
+  "Scatter Shot": 0.98,
+  "Serpent Sting": 0.88,
+  "Immolation Trap": 0.74,
+  "Deterrence": 0.73,
+  "Hunter's Mark": 0.62,
+  "Lacerate": 0.57,
+  "Feign Death": 0.39,
+  "Auto Shot": 0.32,
+  "Enchanted Flare": 0.22
  },
  "race": {
   "final": {
-   "J": 0.3913,
-   "win": 0.4231,
-   "margin": -0.1275
+   "J": 0.4909,
+   "win": 0.4991,
+   "margin": -0.0327
   },
   "survival-pvp": {
-   "J": 0.1495,
-   "win": 0.2292,
-   "margin": -0.3188
+   "J": 0.1565,
+   "win": 0.2356,
+   "margin": -0.3168
   },
   "_reference/data/duellab/seeds/hunter-survival.json": {
-   "J": 0.3608,
-   "win": 0.3995,
-   "margin": -0.1548
+   "J": 0.3948,
+   "win": 0.4245,
+   "margin": -0.1188
+  },
+  "_reference/data/duellab/seeds/r2/hunter-survival-battleground.json": {
+   "J": 0.4264,
+   "win": 0.45,
+   "margin": -0.0945
+  },
+  "_reference/data/duellab/seeds/r2/hunter-survival-winner.json": {
+   "J": 0.4488,
+   "win": 0.4657,
+   "margin": -0.0678
   }
  },
  "settings": {
@@ -186,9 +212,13 @@
     "mage",
     "community:tf-frost"
    ]
-  ]
+  ],
+  "patience": 6,
+  "tier_chains": true,
+  "signature": [],
+  "gear_race": true
  },
- "date": "2026-11-16",
- "round": "2026-11-15",
- "minutes": 21.9
+ "date": "2026-11-18",
+ "round": "r2",
+ "minutes": 21.3
 }

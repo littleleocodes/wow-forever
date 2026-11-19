@@ -9,13 +9,13 @@
 
 Pick what you want to do (the columns) and the spec you want to play (the rows). Every link opens a page with the talents (and a link that shows them in a talent calculator), the talent order while leveling, what to press, and the numbers behind the choice.
 
-| Spec | Leveling (solo) | Raid (group: full raid DPS) |
-|---|---|---|
-| **Beast Mastery** | [Beast Mastery — Leveling](leveling/beast-mastery.md) 🔬<br>23 s/kill | **✅ Recommended**<br>[Beast Mastery — Raid](raid/beast-mastery.md) 🔬<br>1028 DPS (raid) |
-| **Marksmanship** | [Marksmanship — Leveling](leveling/marksmanship.md) 🔬<br>23 s/kill | **✅ Recommended**<br>[Marksmanship — Raid](raid/marksmanship.md) 🔬<br>1015 DPS (raid) |
-| **Survival** | **✅ Recommended**<br>[Survival — Leveling](leveling/survival.md) 🔬<br>21 s/kill | [Melee Survival — Lone Wolf](raid/survival.md)<br>738 DPS (raid) |
+| Spec | Leveling (solo) | Raid (group: full raid DPS) | PvP (duels) |
+|---|---|---|---|
+| **Beast Mastery** | [Beast Mastery — Leveling](leveling/beast-mastery.md) 🔬<br>23 s/kill | **✅ Recommended**<br>[Beast Mastery — Raid](raid/beast-mastery.md) 🔬<br>1028 DPS (raid) | [Beast Mastery — PvP](pvp/beast-mastery.md) 🔬<br>96% of duels |
+| **Marksmanship** | [Marksmanship — Leveling](leveling/marksmanship.md) 🔬<br>23 s/kill | **✅ Recommended**<br>[Marksmanship — Raid](raid/marksmanship.md) 🔬<br>1015 DPS (raid) | [Marksmanship — PvP](pvp/marksmanship.md) 🔬<br>89% of duels |
+| **Survival** | **✅ Recommended**<br>[Survival — Leveling](leveling/survival.md) 🔬<br>21 s/kill | [Melee Survival — Lone Wolf](raid/survival.md)<br>738 DPS (raid) | [Survival — PvP](pvp/survival.md) 🔬<br>50% of duels |
 
-**✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
+**✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand. **PvP:** the share of duels the build wins in this project's duel lab against one PvP build of every class; no spec is marked recommended there (the lab's AI against itself in an open field is a model of PvP, not PvP).
 
 ### Hybrid builds
 
@@ -54,6 +54,16 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | 2 | [Beast-Marks](raid/beast-marks.md) 🔬 | 1017 | -1% |
 | 3 | [Marksmanship](raid/marksmanship.md) 🔬 | 1015 | -1% |
 | 4 | [Survival](raid/survival.md) — Melee Survival — Lone Wolf | 738 | -28% |
+
+### PvP (duels)
+
+Ranked by the share of duels the spec's best build wins against the field (nine opponents, one PvP build per class; level 60, one against one):
+
+| # | Spec and build | Wins vs the field | Easiest matchup | Hardest matchup |
+|---|---|---|---|---|
+| 1 | [Beast Mastery](pvp/beast-mastery.md) 🔬 31/19/1 | 96% | Warlock 100% | Rogue 85% |
+| 2 | [Marksmanship](pvp/marksmanship.md) 🔬 5/30/16 | 89% | Hunter 100% | Priest 55% |
+| 3 | [Survival](pvp/survival.md) 🔬 0/21/30 | 50% | Hunter 95% | Priest 0% |
 
 Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie. Everything is a simulation of the beta, not a measurement in the game.
 

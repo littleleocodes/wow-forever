@@ -11,7 +11,7 @@ spec-builds.json for the generated builds; spec_modes.py decides a build's spec)
                                       recommended picks marked) and "Which spec is best?" (per mode); the rest is hand-written
   <class>/<mode>/README.md            one mode: its specs ranked
   <class>/<mode>/<spec>.md            one spec in one mode: the build (talentsforever.com link), talent order (leveling), what to
-                                      press, the numbers (raid: also by gear tier, pre-BiS and phase-1 BiS, from the
+                                      press, the numbers (raid: also by gear tier, quests and dungeons, pre-BiS and raid BiS, from the
                                       machine-learning pipeline's records raidsim/ml/), alternatives
 
 Everything technical stays in <class>/research/. Generated: never hand-edit (rebuild.py's regen step runs this).
@@ -36,6 +36,8 @@ import render_start_here as rs  # noqa: E402
 import spec_modes as SM  # noqa: E402
 import sim_info as SI  # noqa: E402  (which simulator a record ran on)
 from data_build import BUILD as DATA_BUILD, CAPTURED as DATA_CAPTURED  # noqa: E402
+sys.path.insert(1, str(HERE / "duellab"))
+import render_pvp_pages as PP  # noqa: E402  (the PvP player pages from the duel lab, 2026-11-18)
 
 TODAY = datetime.date.today().isoformat()
 BUILD = DATA_BUILD
@@ -103,7 +105,7 @@ def unused_talents():
 
 
 UNUSED = unused_talents()
-TIER_KEYS = (("prebis", "Pre-BiS"), ("bis", "Phase 1 BiS"))
+TIER_KEYS = (("dungeon", "Quests and dungeons"), ("prebis", "Pre-BiS"), ("bis", "Raid BiS"))   # (2026-11-18: the third tier; "Phase 1 BiS" before)
 SLOTS = ["Head", "Neck", "Shoulders", "Back", "Chest", "Wrist", "Hands", "Waist", "Legs", "Feet", "Finger", "Finger", "Trinket", "Trinket",
          "Main hand", "Off hand", "Ranged/relic"]
 RANKINGS = ROOT / "_reference" / "dps-rankings.md"
@@ -120,6 +122,14 @@ def tier_sim(r):
     the record's own, else the pin of its date."""
     c = (r.get("compare") or {}).get("commit") or ((r.get("search") or {}).get("bis-dummy") or {}).get("commit") or r.get("commit")
     return {"commit": c[:7]} if c else {"commit": SI.commit_of_date(r.get("date"))}
+
+
+def tier_names():
+    """The gear tiers the ML records have searches for, in words ("pre-BiS and raid BiS"; the quests-and-dungeons tier once
+    dungeon_tier.py has run, 2026-11-18)."""
+    have = [name for t, name in TIER_KEYS if any(((r.get("search") or {}).get(f"{t}-raid") or {}).get("winner") for r in TIERS.values())]
+    names = [n[0].lower() + n[1:] for n in have] or ["pre-BiS", "raid BiS"]
+    return ", ".join(names[:-1]) + " and " + names[-1] if len(names) > 1 else names[0]
 
 
 def tier_date(r):
@@ -306,10 +316,13 @@ def tier_table(cls, specs, src):
         return []
     rows.sort(key=lambda x: 0 if tier_not_split(x[1], "bis-raid") else
               -((((x[1].get("search") or {}).get("bis-raid") or {}).get("winner") or {}).get("dps") or 0))
+    # a tier no spec of the class has a search for yet stays out (2026-11-18: the quests-and-dungeons tier until dungeon_tier.py has run)
+    keys = [(t, name) for t, name in TIER_KEYS if any(((r.get("search") or {}).get(f"{t}-raid") or {}).get("winner") for _, r in rows)]
     o = ["**By gear tier**: each damage spec with its best talents for each tier, in its own gear (DPS in a full raid; "
-         f"[every class]({paths.rel(src, RANKINGS)})):", "", "| Spec | Pre-BiS | Phase 1 BiS |", "|---|---|---|"]
+         f"[every class]({paths.rel(src, RANKINGS)})):", "", "| Spec | " + " | ".join(name for _, name in keys) + " |",
+         "|---" * (len(keys) + 1) + "|"]
     for spec, r in rows:
-        o.append(f"| [{SM.spec_name(cls, spec)}]({SM.spec_slug(cls, spec)}.md) | {tier_dps(r, 'prebis-raid')} | {tier_dps(r, 'bis-raid')} |")
+        o.append(f"| [{SM.spec_name(cls, spec)}]({SM.spec_slug(cls, spec)}.md) | " + " | ".join(tier_dps(r, f"{t}-raid") for t, _ in keys) + " |")
     return o + [""] + tier_stale_note([tier_date(r) for _, r in rows])
 
 
@@ -806,7 +819,7 @@ def derived_text(mode, top):
                 "(threat and damage taken), then raced against the spec's builds")
     return {"leveling": "searched in the fight lab (this project's leveling simulator) from the spec's builds and the stats model's best one",
             "raid": ("found by this project's machine-learning search over every legal build of the spec in the community's raid "
-                     "simulator (phase-1 BiS gear, then raced against the spec's builds)" if top["id"].endswith("-ml-raid")
+                     "simulator (raid BiS gear, then raced against the spec's builds)" if top["id"].endswith("-ml-raid")
                      else "searched in the community's raid simulator from the spec's best build"),
             "pvp": "the stats model's best PvP build, with the community's most-picked talents where the model rates talents alike"}[mode]
 
@@ -1384,7 +1397,8 @@ def class_pages(cls):
     rec = {m: recommended(cls, g, specs, m, nums) for m in SM.MODES}
     readme = ROOT / cls / "README.md"
     import shutil
-    for gone in set(SM.MODES) - set(PAGE_MODES):   # player pages of a mode no longer shown
+    # player pages of a mode no longer shown; pvp/ is the duel lab's since 2026-11-18 (render_pvp_pages.py, written below)
+    for gone in set(SM.MODES) - set(PAGE_MODES) - {"pvp"}:
         shutil.rmtree(ROOT / cls / gone, ignore_errors=True)
     for mode in PAGE_MODES:
         d = ROOT / cls / mode
@@ -1426,16 +1440,21 @@ def class_pages(cls):
         (d / "README.md").write_text("\n".join(idx) + "\n", encoding="utf-8")
         if mode == "leveling":   # the by-level guides live in this generated folder, emptied above: written again at every regen
             LG.write(cls, d)
+    # 2026-11-18 (user, 2026-11-17: "Go with all your recommendations": PvP player pages after the duel lab's round 2)
+    PP.write(cls)
     # the class README: two generated sections on top, the hand-written overview and the research index below
     o = ["## Pick your spec", "",
          "Pick what you want to do (the columns) and the spec you want to play (the rows). Every link opens a page with the talents "
          "(and a link that shows them in a talent calculator), the talent order while leveling, what to press, and the numbers behind the choice.", "",
-         "| Spec | Leveling (solo) | Raid (group: full raid DPS) |", "|---|---|---|"]
+         "| Spec | Leveling (solo) | Raid (group: full raid DPS) | PvP (duels) |", "|---|---|---|---|"]
     for spec in SM.trees(cls):   # the three specs: every cell filled (spec_builds.py)
-        o.append(f"| **{SM.spec_name(cls, spec)}** | " + " | ".join(cell(cls, spec, m, g[spec][m], nums, readme, rec=spec in rec[m]) for m in PAGE_MODES) + " |")
+        o.append(f"| **{SM.spec_name(cls, spec)}** | " + " | ".join(cell(cls, spec, m, g[spec][m], nums, readme, rec=spec in rec[m]) for m in PAGE_MODES)
+                 + f" | {PP.cell(cls, spec)} |")
     o += ["", f"**{BADGE}**: the best spec for that column, or within {TIE:.0%} of it (a tie in the simulations). "
           f"{DER_MARK}: a derived build (searched in a simulator). "
-          f"{GEN_MARK}: a generated build, a starting point until someone drafts that spec by hand.", ""]
+          f"{GEN_MARK}: a generated build, a starting point until someone drafts that spec by hand. "
+          "**PvP:** the share of duels the build wins in this project's duel lab against one PvP build of every class; no spec is "
+          "marked recommended there (the lab's AI against itself in an open field is a model of PvP, not PvP).", ""]
     hyb = [spec for spec in specs if spec.startswith("Hybrid")]
     if hyb:
         # hybrids exist for one purpose each (a raid build, a leveling build...): listed apart with only the modes they are built for,
@@ -1457,6 +1476,9 @@ def class_pages(cls):
     o = ["## Which spec is best?", ""]
     for m in PAGE_MODES:
         o += [f"### {SM.MODE_TITLE[m]}", ""] + ranking(cls, g, specs, m, nums, prefix=f"{m}/")
+    pv = PP.ranking(cls, prefix="pvp/")
+    if pv:
+        o += [f"### {PP.TITLE}", ""] + pv
     o += ["Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie. Everything is a simulation of the "
           "beta, not a measurement in the game.", "", f"*Generated by `_reference/data/render_modes.py` on {TODAY}. Do not hand-edit this section.*"]
     readme_sections.splice_ordered(readme, "class", "## Which spec is best?", "\n".join(o))
@@ -1473,7 +1495,7 @@ def class_pages(cls):
     # the tank and healer picks for the index (2026-10-15 page audit B18): (spec, the build's name when it is not the spec page's pick)
     tank_rows = [(sp, None if rank_builds(cls, "raid", g[sp]["raid"], nums)[0]["id"] == b["id"] else bname(cls, b)) for sp, b in tanks]
     return {"cls": cls, "lvl": [(sp, v) for v, sp in lvl], "raid": [(sp, -v, solo(sp)) for v, sp in raid], "roles": roles,
-            "tank": tank_rows, "heal": [(sp, -c) for c, sp, _ in heals], "sims": raid_sims(R)}
+            "tank": tank_rows, "heal": [(sp, -c) for c, sp, _ in heals], "sims": raid_sims(R), "pvp": PP.best(cls)}
 
 
 def root_page(infos):
@@ -1481,11 +1503,11 @@ def root_page(infos):
          "The best talents and the best way to play every class in **World of Warcraft: Forever** (the Classic+ release, launching "
          "2026-11-04), worked out from the beta's talent trees and simulations: the community's combat simulator for raids and this "
          "project's own simulators for leveling and healing.", "",
-         "**How to use it:** pick your class below. Its page has a grid of every spec against the two modes (leveling, raid), the "
-         "recommended picks marked, and a ranking of the specs for each mode. Every link in the grid opens a build page: the talents (with a "
+         "**How to use it:** pick your class below. Its page has a grid of every spec against leveling, raid and PvP, the "
+         "recommended picks marked, and a ranking of the specs for each. Every link in the grid opens a build page: the talents (with a "
          "talent calculator link), the order to take them while leveling, and what to press.", "",
-         "| Class | Roles | Fastest leveling (solo) | Most raid damage (DPS in a full raid) | Raid healing | Raid tanking |",
-         "|---|---|---|---|---|---|"]
+         "| Class | Roles | Fastest leveling (solo) | Most raid damage (DPS in a full raid) | Raid healing | Raid tanking | Most duels won (PvP) |",
+         "|---|---|---|---|---|---|---|"]
     for i in infos:
         cls = i["cls"]
         lvl = ", ".join(f"[{SM.spec_name(cls, sp)}]({cls}/leveling/{SM.spec_slug(cls, sp)}.md) ({v:.0f} s/kill)" for sp, v in i["lvl"]) or "-"
@@ -1496,7 +1518,7 @@ def root_page(infos):
                          for sp, c in i["heal"]) or "-"
         tank = ", ".join(f"[{SM.spec_name(cls, sp)}]({cls}/raid/{SM.spec_slug(cls, sp)}.md)" + (f" ({n})" if n else "")
                          for sp, n in i["tank"]) or "-"
-        o.append(f"| [**{cls.capitalize()}**]({cls}/README.md) | {', '.join(i['roles'])} | {lvl} | {raid} | {heal} | {tank} |")
+        o.append(f"| [**{cls.capitalize()}**]({cls}/README.md) | {', '.join(i['roles'])} | {lvl} | {raid} | {heal} | {tank} | {i.get('pvp') or '-'} |")
     o += ["", "Several specs in one damage or leveling cell share the recommendation: each is within 3% of the class's best spec in that "
           "column, a tie in the simulations. Leveling times compare across classes: every class runs in the same fight simulator, solo "
           "against same-level mobs. Raid numbers assume a group: every raid buff and debuff is up, which is where classes that live on raid "
@@ -1507,12 +1529,15 @@ def root_page(infos):
           "every raid buff and debuff up, as in a real raid group. Each spec's raid page shows where its raid gain comes from (mana, armor "
           "debuffs, physical buffs, spell buffs).",
           "- **Seconds per kill** (leveling): a whole kill cycle against same-level mobs, including eating and drinking.",
+          "- **Duels won** (PvP): the share of level-60 one-against-one duels a build wins in this project's duel lab against nine "
+          "opponents, each class's most-tagged PvP build on talentsforever.com. The lab's AI against itself in an open field: a model of "
+          "PvP, so no PvP pick is marked recommended; the cell lists the class's best spec and any within 3 points of it.",
           f"- **{BADGE}**: the best spec for that mode in its class, or within 3% of it. **{GEN_MARK}**: a generated build (a starting point).",
           "- Everything is a simulation of the beta, not a measurement in the game. Treat differences under 2-3% as a tie.", "",
           "## Everything else", "",
           "- [Tier list](tier-list.md): every spec of every class in S/A/B/C tiers for raid damage and healing (the tanks listed), from "
           "the same picks and numbers as the class pages.",
-          "- [Raid DPS rankings by gear tier](_reference/dps-rankings.md): every raid damage spec in pre-BiS and phase-1 BiS gear, in a "
+          f"- [Raid DPS rankings by gear tier](_reference/dps-rankings.md): every raid damage spec in {tier_names()} gear, in a "
           "full raid, with its best talents and gear for each.",
           "- [_reference/README.md](_reference/README.md): how the project works, its tools and its rules.",
           "- [_reference/](_reference/): cross-class reports (simulator summaries, the talentsforever.com comparison, launch checklists).",

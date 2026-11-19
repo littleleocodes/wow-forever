@@ -4,74 +4,39 @@
  "starts": [
   "pvp-elemental-ns",
   "elemental-pvp",
-  "_reference/data/duellab/seeds/shaman-elemental.json"
+  "_reference/data/duellab/seeds/shaman-elemental.json",
+  "_reference/data/duellab/seeds/r2/shaman-elemental-battleground.json",
+  "_reference/data/duellab/seeds/r2/shaman-elemental-improved.json",
+  "_reference/data/duellab/seeds/r2/shaman-elemental-winner.json"
  ],
  "history": [
   {
    "step": 0,
-   "from": "pvp-elemental-ns",
-   "J": 0.3742,
-   "win": 0.3935,
+   "from": "_reference/data/duellab/seeds/r2/shaman-elemental-improved.json",
+   "J": 0.5016,
+   "win": 0.4898,
    "alloc": {
     "Concussion": 5,
-    "Convection": 5,
     "Elemental Alacrity": 3,
-    "Reverberation": 5,
+    "Reverberation": 4,
     "Elemental Focus": 1,
     "Earthbound": 1,
-    "Eye of the Storm": 2,
+    "Eye of the Storm": 3,
     "Lightning Overload": 3,
     "Elemental Fury": 5,
     "Tidal Focus": 5,
     "Mindfulness": 3,
-    "Natural Grace": 1,
-    "Totemic Focus": 5,
+    "Totemic Focus": 4,
     "Water Shield": 1,
-    "Tidal Mastery": 5,
-    "Nature's Swiftness": 1
+    "Tidal Mastery": 2,
+    "Nature's Swiftness": 1,
+    "Mana Tide Totem": 1,
+    "Call of Flame": 2,
+    "Elemental Warding": 2,
+    "Improved Reincarnation": 1,
+    "Healing Focus": 3,
+    "Call of Thunder": 1
    }
-  },
-  {
-   "step": 1,
-   "move": "1 point Tidal Mastery -> Mana Tide Totem",
-   "J": 0.422,
-   "win": 0.4333,
-   "gain": 0.0478
-  },
-  {
-   "step": 2,
-   "move": "2 points Convection -> Call of Flame",
-   "J": 0.4319,
-   "win": 0.4398,
-   "gain": 0.0099
-  },
-  {
-   "step": 3,
-   "move": "1 point Convection -> Eye of the Storm",
-   "J": 0.4509,
-   "win": 0.4528,
-   "gain": 0.019
-  },
-  {
-   "step": 4,
-   "move": "1 point Reverberation -> Elemental Warding",
-   "J": 0.461,
-   "win": 0.4583,
-   "gain": 0.0101
-  },
-  {
-   "step": 6,
-   "move": "2 points Convection -> Elemental Warding",
-   "J": 0.4819,
-   "win": 0.4759,
-   "gain": 0.0209
-  },
-  {
-   "step": 7,
-   "move": "1 point Totemic Focus -> Improved Reincarnation",
-   "J": 0.496,
-   "win": 0.488,
-   "gain": 0.0141
   }
  ],
  "final": {
@@ -85,71 +50,95 @@
   "Elemental Fury": 5,
   "Tidal Focus": 5,
   "Mindfulness": 3,
-  "Natural Grace": 1,
   "Totemic Focus": 4,
   "Water Shield": 1,
-  "Tidal Mastery": 4,
+  "Tidal Mastery": 2,
   "Nature's Swiftness": 1,
   "Mana Tide Totem": 1,
   "Call of Flame": 2,
-  "Elemental Warding": 3,
-  "Improved Reincarnation": 1
+  "Elemental Warding": 2,
+  "Improved Reincarnation": 1,
+  "Healing Focus": 3,
+  "Call of Thunder": 1
  },
- "J": 0.4718,
- "win": 0.4667,
- "margin": 0.0204,
+ "J": 0.489,
+ "win": 0.4792,
+ "margin": 0.0394,
  "by": {
   "warrior": [
-   0.2708,
+   0.2792,
    0.025,
-   -0.1103
+   -0.105
   ],
   "rogue": [
-   0.7958,
+   0.8417,
    0.0,
-   0.33
+   0.3467
   ],
   "priest": [
-   0.0542,
+   0.0833,
    0.0,
-   -0.5147
+   -0.4582
   ],
   "hunter": [
-   0.0,
    0.0042,
-   -0.4478
+   0.0083,
+   -0.4115
   ],
   "warlock": [
    0.0042,
    0.0,
-   -0.5735
+   -0.5593
   ],
   "paladin": [
-   0.5792,
+   0.6083,
    0.0,
-   0.0187
+   0.0652
   ],
   "shaman": [
-   0.6458,
-   0.0083,
-   0.1857
+   0.65,
+   0.0042,
+   0.1994
   ],
   "druid": [
-   0.9167,
+   0.9417,
    0.0,
-   0.637
+   0.6799
   ],
   "mage": [
-   0.9333,
+   0.9,
    0.0,
-   0.6582
+   0.5977
   ]
+ },
+ "signature": {},
+ "gear": null,
+ "casts": {
+  "Lightning Bolt": 2.15,
+  "Searing Totem": 1.79,
+  "Melee": 1.77,
+  "Frost Shock": 1.32,
+  "Earth Shock": 1.28,
+  "Lightning Shield": 1.16,
+  "Grounding Totem": 0.99,
+  "Nature's Swiftness": 0.85,
+  "Earthbind Totem": 0.81,
+  "Healing Wave": 0.69,
+  "Flame Shock": 0.54,
+  "Windfury": 0.53,
+  "Fire Nova": 0.52,
+  "Purge": 0.47,
+  "Tremor Totem": 0.44,
+  "Lesser Healing Wave": 0.43,
+  "Mana Tide Totem": 0.37,
+  "Chain Lightning": 0.21,
+  "Water Shield": 0.14
  },
  "race": {
   "final": {
-   "J": 0.4718,
-   "win": 0.4667,
-   "margin": 0.0204
+   "J": 0.489,
+   "win": 0.4792,
+   "margin": 0.0394
   },
   "pvp-elemental-ns": {
    "J": 0.3808,
@@ -165,6 +154,21 @@
    "J": 0.1068,
    "win": 0.1796,
    "margin": -0.2912
+  },
+  "_reference/data/duellab/seeds/r2/shaman-elemental-battleground.json": {
+   "J": 0.4779,
+   "win": 0.4704,
+   "margin": 0.03
+  },
+  "_reference/data/duellab/seeds/r2/shaman-elemental-improved.json": {
+   "J": 0.489,
+   "win": 0.4792,
+   "margin": 0.0394
+  },
+  "_reference/data/duellab/seeds/r2/shaman-elemental-winner.json": {
+   "J": 0.4718,
+   "win": 0.4667,
+   "margin": 0.0204
   }
  },
  "settings": {
@@ -212,9 +216,13 @@
     "mage",
     "community:tf-frost"
    ]
-  ]
+  ],
+  "patience": 6,
+  "tier_chains": true,
+  "signature": [],
+  "gear_race": true
  },
- "date": "2026-11-16",
- "round": "2026-11-15",
- "minutes": 40.8
+ "date": "2026-11-18",
+ "round": "r2",
+ "minutes": 10.2
 }

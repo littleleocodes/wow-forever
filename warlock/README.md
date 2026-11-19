@@ -9,13 +9,13 @@
 
 Pick what you want to do (the columns) and the spec you want to play (the rows). Every link opens a page with the talents (and a link that shows them in a talent calculator), the talent order while leveling, what to press, and the numbers behind the choice.
 
-| Spec | Leveling (solo) | Raid (group: full raid DPS) |
-|---|---|---|
-| **Affliction** | **✅ Recommended**<br>[Affliction — Leveling](leveling/affliction.md) 🔬<br>31 s/kill | [Affliction (optimized)](raid/affliction.md)<br>838 DPS (raid) |
-| **Demonology** | **✅ Recommended**<br>[Demonology — Leveling](leveling/demonology.md) 🔬<br>31 s/kill | **✅ Recommended**<br>[Demonology — Raid](raid/demonology.md) 🔬<br>867 DPS (raid) |
-| **Destruction** | [Destruction — Leveling](leveling/destruction.md) 🔬<br>39 s/kill | [Destruction — Raid](raid/destruction.md) 🔬<br>826 DPS (raid) |
+| Spec | Leveling (solo) | Raid (group: full raid DPS) | PvP (duels) |
+|---|---|---|---|
+| **Affliction** | **✅ Recommended**<br>[Affliction — Leveling](leveling/affliction.md) 🔬<br>31 s/kill | [Affliction (optimized)](raid/affliction.md)<br>838 DPS (raid) | [Affliction — PvP](pvp/affliction.md) 🔬<br>67% of duels |
+| **Demonology** | **✅ Recommended**<br>[Demonology — Leveling](leveling/demonology.md) 🔬<br>31 s/kill | **✅ Recommended**<br>[Demonology — Raid](raid/demonology.md) 🔬<br>867 DPS (raid) | [Demonology — PvP](pvp/demonology.md) 🔬<br>72% of duels |
+| **Destruction** | [Destruction — Leveling](leveling/destruction.md) 🔬<br>39 s/kill | [Destruction — Raid](raid/destruction.md) 🔬<br>826 DPS (raid) | [Destruction — PvP](pvp/destruction.md) 🔬<br>26% of duels |
 
-**✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand.
+**✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). 🔬: a derived build (searched in a simulator). ⚗: a generated build, a starting point until someone drafts that spec by hand. **PvP:** the share of duels the build wins in this project's duel lab against one PvP build of every class; no spec is marked recommended there (the lab's AI against itself in an open field is a model of PvP, not PvP).
 
 ### Hybrid builds
 
@@ -53,6 +53,16 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | 2 | [Affliction](raid/affliction.md) (optimized) | 838 | -3% |
 | 3 | [Destruction](raid/destruction.md) 🔬 | 826 | -5% |
 | 4 | [Shadow Bolt hybrid](raid/shadow-bolt-hybrid.md) — Fire 🔬 | 802 | -7% |
+
+### PvP (duels)
+
+Ranked by the share of duels the spec's best build wins against the field (nine opponents, one PvP build per class; level 60, one against one):
+
+| # | Spec and build | Wins vs the field | Easiest matchup | Hardest matchup |
+|---|---|---|---|---|
+| 1 | [Demonology](pvp/demonology.md) 🔬 11/30/10 | 72% | Mage 100% | Paladin 10% |
+| 2 | [Affliction](pvp/affliction.md) 🔬 30/21/0 | 67% | Mage 100% | Paladin 12% |
+| 3 | [Destruction](pvp/destruction.md) 🔬 17/3/31 | 26% | Mage 86% | Druid 1% |
 
 Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie. Everything is a simulation of the beta, not a measurement in the game.
 

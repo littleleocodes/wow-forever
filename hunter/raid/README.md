@@ -15,7 +15,7 @@
 
 **By gear tier**: each damage spec with its best talents for each tier, in its own gear (DPS in a full raid; [every class](../../_reference/dps-rankings.md)):
 
-| Spec | Pre-BiS | Phase 1 BiS |
+| Spec | Pre-BiS | Raid BiS |
 |---|---|---|
 | [Marksmanship](marksmanship.md) | 981 | 1024 |
 | [Beast Mastery](beast-mastery.md) | 983 | 1021 |

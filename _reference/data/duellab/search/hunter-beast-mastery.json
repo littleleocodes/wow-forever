@@ -3,68 +3,38 @@
  "tree": "Beast Mastery",
  "starts": [
   "beast-mastery-pvp",
-  "_reference/data/duellab/seeds/hunter-beast-mastery.json"
+  "_reference/data/duellab/seeds/hunter-beast-mastery.json",
+  "_reference/data/duellab/seeds/r2/hunter-beast-mastery-battleground.json",
+  "_reference/data/duellab/seeds/r2/hunter-beast-mastery-winner.json"
  ],
  "history": [
   {
    "step": 0,
-   "from": "_reference/data/duellab/seeds/hunter-beast-mastery.json",
-   "J": 0.9995,
-   "win": 0.8861,
+   "from": "_reference/data/duellab/seeds/r2/hunter-beast-mastery-winner.json",
+   "J": 1.1057,
+   "win": 0.9611,
    "alloc": {
     "Deadly Aspects": 5,
     "Endurance Training": 3,
     "Focused Fire": 2,
-    "Improved Revive Pet": 2,
     "Bestial Swiftness": 1,
     "Unleashed Fury": 5,
-    "Improved Mend Pet": 2,
     "Ferocity": 5,
     "Intimidation": 1,
     "Bestial Discipline": 2,
     "Frenzy": 4,
     "Bestial Wrath": 1,
-    "Hawk Eye": 3,
+    "Hawk Eye": 1,
     "Lethal Attacks": 5,
-    "Efficiency": 5,
+    "Efficiency": 2,
     "Careful Aim": 3,
-    "Rapid Killing": 2
+    "Rapid Killing": 1,
+    "Trueshot Aura": 1,
+    "Improved Arcane Shot": 3,
+    "Improved Stings": 2,
+    "Spirit Bond": 2,
+    "Improved Tracking": 2
    }
-  },
-  {
-   "step": 1,
-   "move": "1 point Rapid Killing -> Trueshot Aura",
-   "J": 1.0127,
-   "win": 0.8935,
-   "gain": 0.0132
-  },
-  {
-   "step": 2,
-   "move": "3 points Efficiency -> Improved Arcane Shot",
-   "J": 1.0386,
-   "win": 0.9139,
-   "gain": 0.0258
-  },
-  {
-   "step": 3,
-   "move": "2 points Improved Revive Pet -> Improved Stings",
-   "J": 1.0665,
-   "win": 0.937,
-   "gain": 0.0279
-  },
-  {
-   "step": 4,
-   "move": "2 points Improved Mend Pet -> Spirit Bond",
-   "J": 1.0885,
-   "win": 0.95,
-   "gain": 0.022
-  },
-  {
-   "step": 6,
-   "move": "2 points Hawk Eye -> Improved Tracking",
-   "J": 1.0958,
-   "win": 0.9556,
-   "gain": 0.0073
   }
  ],
  "final": {
@@ -89,19 +59,19 @@
   "Spirit Bond": 2,
   "Improved Tracking": 2
  },
- "J": 1.0988,
- "win": 0.9579,
- "margin": 0.5639,
+ "J": 1.101,
+ "win": 0.9588,
+ "margin": 0.5689,
  "by": {
   "warrior": [
-   0.9542,
+   0.9458,
    0.0,
-   0.5926
+   0.5303
   ],
   "rogue": [
-   0.7917,
-   0.0042,
-   0.3339
+   0.8042,
+   0.0,
+   0.3421
   ],
   "priest": [
    0.9167,
@@ -119,41 +89,77 @@
    0.4692
   ],
   "paladin": [
-   0.9625,
+   0.9667,
    0.0,
-   0.4032
+   0.4562
   ],
   "shaman": [
    1.0,
    0.0,
-   0.8514
+   0.8535
   ],
   "druid": [
    1.0,
    0.0,
-   0.8315
+   0.8323
   ],
   "mage": [
    1.0,
    0.0,
-   0.8858
+   0.9295
   ]
+ },
+ "signature": {
+  "Bestial Wrath": 1.0
+ },
+ "gear": null,
+ "casts": {
+  "Claw": 6.31,
+  "Auto Shot": 5.05,
+  "Bite": 2.0,
+  "Arcane Shot": 1.85,
+  "Concussive Shot": 1.83,
+  "Wing Clip": 1.66,
+  "Multi-Shot": 1.19,
+  "Hunter's Mark": 1.0,
+  "Bestial Wrath": 1.0,
+  "Melee": 0.73,
+  "Serpent Sting": 0.7,
+  "Viper Sting": 0.6,
+  "Freezing Trap": 0.6,
+  "Growl": 0.49,
+  "Aimed Shot": 0.37,
+  "Enchanted Flare": 0.22,
+  "Feign Death": 0.15,
+  "Flare": 0.1,
+  "Intimidation": 0.08,
+  "Mongoose Bite": 0.01
  },
  "race": {
   "final": {
-   "J": 1.0988,
-   "win": 0.9579,
-   "margin": 0.5639
+   "J": 1.101,
+   "win": 0.9588,
+   "margin": 0.5689
   },
   "beast-mastery-pvp": {
-   "J": 0.9895,
-   "win": 0.8745,
-   "margin": 0.4599
+   "J": 0.9642,
+   "win": 0.85,
+   "margin": 0.4567
   },
   "_reference/data/duellab/seeds/hunter-beast-mastery.json": {
-   "J": 1.0106,
-   "win": 0.8944,
-   "margin": 0.4645
+   "J": 1.0133,
+   "win": 0.8935,
+   "margin": 0.4792
+  },
+  "_reference/data/duellab/seeds/r2/hunter-beast-mastery-battleground.json": {
+   "J": 1.1006,
+   "win": 0.9583,
+   "margin": 0.5692
+  },
+  "_reference/data/duellab/seeds/r2/hunter-beast-mastery-winner.json": {
+   "J": 1.101,
+   "win": 0.9588,
+   "margin": 0.5689
   }
  },
  "settings": {
@@ -201,9 +207,15 @@
     "mage",
     "community:tf-frost"
    ]
-  ]
+  ],
+  "patience": 6,
+  "tier_chains": true,
+  "signature": [
+   "Bestial Wrath"
+  ],
+  "gear_race": true
  },
- "date": "2026-11-16",
- "round": "2026-11-15",
- "minutes": 18.8
+ "date": "2026-11-18",
+ "round": "r2",
+ "minutes": 8.9
 }
