@@ -62,15 +62,15 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md)** | ours: optimizer | 31/16/4 | 564 | +0.0% | 968 | -4.6% | 30 s |
-| 2 | *BM* | community simulator | - | 550 | -2.5% | 1013 | -0.2% | 41 s |
-| 3 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 531 | -5.8% | 932 | -8.2% | 17 s |
-| 4 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 529 | -6.1% | 942 | -7.2% | 24 s |
-| 5 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 528 | -6.4% | 1015 | +0.0% | 29 s |
-| 6 | *MM* | community simulator | - | 498 | -11.7% | 987 | -2.8% | 41 s |
-| 7 | *SV Weave* | community simulator | - | 450 | -20.1% | 838 | -17.5% | 37 s |
-| 8 | *SV* | community simulator | - | 449 | -20.4% | 868 | -14.5% | 44 s |
-| 9 | *SV Melee* | community simulator | - | 433 | -23.3% | 816 | -19.6% | 44 s |
+| 1 | **[`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md)** | ours: optimizer | 31/16/4 | 557 | +0.0% | 958 | -6.4% | 31 s |
+| 2 | *BM* | community simulator | - | 544 | -2.4% | 1001 | -2.2% | 42 s |
+| 3 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 524 | -5.9% | 921 | -10.0% | 16 s |
+| 4 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 521 | -6.5% | 931 | -9.1% | 24 s |
+| 5 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 508 | -8.8% | 1023 | +0.0% | 48 s |
+| 6 | *MM* | community simulator | - | 490 | -12.1% | 974 | -4.8% | 41 s |
+| 7 | *SV Weave* | community simulator | - | 443 | -20.5% | 826 | -19.2% | 37 s |
+| 8 | *SV* | community simulator | - | 442 | -20.8% | 856 | -16.3% | 44 s |
+| 9 | *SV Melee* | community simulator | - | 427 | -23.4% | 808 | -21.1% | 44 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -116,7 +116,7 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 | 4 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
 | 5 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 15%: cast Aimed Shot | 4.2 |
 | 6 | if time to the next auto attack > 1s and mana % ≥ 10%: cast Multi-Shot | 0.5 |
-| 7 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.6 |
+| 7 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent).
 

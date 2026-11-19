@@ -63,14 +63,14 @@ The Shadow Bolt hybrid (an Affliction/Destruction hybrid) raid build the open ta
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`shadow-bolt-hybrid-fire-open-raid`](shadow-bolt-hybrid-fire-open-raid.md)** | ours: derived (open search) | 9/11/31 | 715 | +0.0% | 802 | +0.0% | 1 s |
-| 2 | [`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md) | ours: optimizer | 20/11/20 | 673 | -5.9% | 755 | -5.9% | 1 s |
-| 3 | [`destruction-fire-raid`](destruction-fire-raid.md) | ours: hand draft | 22/11/18 | 666 | -6.9% | 747 | -6.9% | 1 s |
-| 4 | *SM/Ruin* | community simulator | - | 658 | -8.0% | 738 | -8.1% | 1 s |
-| 5 | *Destro* | community simulator | - | 650 | -9.2% | 719 | -10.4% | 1 s |
-| 6 | *Aff (Wrack)* | community simulator | - | 611 | -14.5% | 672 | -16.2% | 1 s |
-| 7 | *Demo (Shadow Brand)* | community simulator | - | 579 | -19.0% | 653 | -18.6% | 1 s |
-| 8 | *Demo (Fire Brand)* | community simulator | - | 566 | -20.9% | 628 | -21.8% | 1 s |
+| 1 | **[`shadow-bolt-hybrid-fire-open-raid`](shadow-bolt-hybrid-fire-open-raid.md)** | ours: derived (open search) | 9/11/31 | 700 | +0.0% | 785 | +0.0% | 1 s |
+| 2 | [`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md) | ours: optimizer | 20/11/20 | 660 | -5.6% | 739 | -5.8% | 1 s |
+| 3 | [`destruction-fire-raid`](destruction-fire-raid.md) | ours: hand draft | 22/11/18 | 653 | -6.6% | 731 | -6.8% | 1 s |
+| 4 | *SM/Ruin* | community simulator | - | 647 | -7.5% | 721 | -8.2% | 1 s |
+| 5 | *Destro* | community simulator | - | 636 | -9.0% | 703 | -10.5% | 1 s |
+| 6 | *Aff (Wrack)* | community simulator | - | 600 | -14.2% | 658 | -16.2% | 1 s |
+| 7 | *Demo (Shadow Brand)* | community simulator | - | 568 | -18.7% | 639 | -18.6% | 1 s |
+| 8 | *Demo (Fire Brand)* | community simulator | - | 556 | -20.6% | 615 | -21.7% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -108,15 +108,15 @@ Before the pull: at -1.5s: cast Life Tap.
 
 | # | Priority (the first line whose condition holds is cast) | [`shadow-bolt-hybrid-fire-open-raid`](shadow-bolt-hybrid-fire-open-raid.md) casts/min |
 |---|---|---|
-| 1 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 20s: cast Corruption | 3.2 |
+| 1 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 20s: cast Corruption | 3.3 |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
-| 5 | if time left on Bane of Agony ≤ cast time of Bane of Agony and time left in the fight ≥ 10s: cast Bane of Agony | 2.5 |
+| 5 | if time left on Bane of Agony ≤ cast time of Bane of Agony and time left in the fight ≥ 10s: cast Bane of Agony | 2.6 |
 | 6 | if mana % < 10%: cast Life Tap | 6.5 |
 | 7 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
 | 8 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
-| 9 | cast Conflagrate | 3.9 |
+| 9 | cast Conflagrate | 3.8 |
 | 10 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
 | 11 | cast Shadow Bolt (rank 9) | 12.4 |
 

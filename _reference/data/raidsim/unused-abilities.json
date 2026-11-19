@@ -1,5 +1,5 @@
 {
- "date": "2026-11-18",
+ "date": "2026-11-19",
  "rows": [
   {
    "class": "hunter",
@@ -9,11 +9,11 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0268,
+   "removal_loss": 0.027,
    "kind": "automatic",
    "needed_by": [],
    "advice": "turn it on before the pull",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "hunter",
@@ -23,11 +23,11 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.027,
+   "removal_loss": 0.0272,
    "kind": "automatic",
    "needed_by": [],
    "advice": "turn it on before the pull",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "hunter",
@@ -37,11 +37,11 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0248,
+   "removal_loss": 0.025,
    "kind": "automatic",
    "needed_by": [],
    "advice": "turn it on before the pull",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "hunter",
@@ -51,18 +51,34 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0284,
+   "removal_loss": 0.0287,
    "kind": "automatic",
    "needed_by": [
     "Sniper Shot"
    ],
    "advice": "turn it on before the pull",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "hunter",
    "entry": "mm-lonewolf-raid",
    "build": "mm-lone-wolf-raid",
+   "spec": "Marksmanship",
+   "talent": "Trueshot Aura",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0345,
+   "kind": "automatic",
+   "needed_by": [
+    "Sniper Shot"
+   ],
+   "advice": "turn it on before the pull",
+   "date": "2026-11-19"
+  },
+  {
+   "class": "hunter",
+   "entry": "mm-lonewolf-raid",
+   "build": "opt-mm-lonewolf-raid-raid-dps",
    "spec": "Marksmanship",
    "talent": "Trueshot Aura",
    "ranks": 1,
@@ -73,23 +89,7 @@
     "Sniper Shot"
    ],
    "advice": "turn it on before the pull",
-   "date": "2026-11-18"
-  },
-  {
-   "class": "hunter",
-   "entry": "mm-lonewolf-raid",
-   "build": "opt-mm-lonewolf-raid-raid-dps",
-   "spec": "Marksmanship",
-   "talent": "Trueshot Aura",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.0337,
-   "kind": "automatic",
-   "needed_by": [
-    "Sniper Shot"
-   ],
-   "advice": "turn it on before the pull",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "hunter",
@@ -99,13 +99,13 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0337,
+   "removal_loss": 0.0345,
    "kind": "automatic",
    "needed_by": [
     "Sniper Shot"
    ],
    "advice": "turn it on before the pull",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "hunter",
@@ -115,11 +115,11 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0268,
+   "removal_loss": 0.027,
    "kind": "automatic",
    "needed_by": [],
    "advice": "turn it on before the pull",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "mage",
@@ -135,7 +135,7 @@
     "Fingers of Frost"
    ],
    "advice": "taken because Fingers of Frost requires it",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "mage",
@@ -151,7 +151,7 @@
     "Fingers of Frost"
    ],
    "advice": "taken because Fingers of Frost requires it",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "paladin",
@@ -167,7 +167,7 @@
     "Unsealed Wrath"
    ],
    "advice": "taken because Unsealed Wrath requires it",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "paladin",
@@ -183,7 +183,7 @@
     "Vengeance"
    ],
    "advice": "taken because Vengeance requires it",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "priest",
@@ -199,7 +199,7 @@
     "Shadowform"
    ],
    "advice": "taken because Shadowform requires it",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "priest",
@@ -215,7 +215,7 @@
     "Shadowform"
    ],
    "advice": "taken because Shadowform requires it",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "priest",
@@ -229,7 +229,7 @@
    "kind": "situational",
    "needed_by": [],
    "advice": "a defensive or healing spell: cast it when you need it, it is not part of the damage rotation",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "priest",
@@ -243,7 +243,7 @@
    "kind": "situational",
    "needed_by": [],
    "advice": "a defensive or healing spell: cast it when you need it, it is not part of the damage rotation",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "warlock",
@@ -253,11 +253,11 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.1149,
+   "removal_loss": 0.115,
    "kind": "automatic",
    "needed_by": [],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "warlock",
@@ -271,7 +271,7 @@
    "kind": "wasted",
    "needed_by": [],
    "advice": "not cast by the rotation",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "warlock",
@@ -281,11 +281,11 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.1148,
+   "removal_loss": 0.1149,
    "kind": "automatic",
    "needed_by": [],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "warlock",
@@ -295,11 +295,11 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.1042,
+   "removal_loss": 0.1046,
    "kind": "automatic",
    "needed_by": [],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "warlock",
@@ -309,11 +309,11 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.1157,
+   "removal_loss": 0.1158,
    "kind": "automatic",
    "needed_by": [],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "warlock",
@@ -323,11 +323,11 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.1156,
+   "removal_loss": 0.1158,
    "kind": "automatic",
    "needed_by": [],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "warlock",
@@ -337,11 +337,11 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.1049,
+   "removal_loss": 0.1054,
    "kind": "automatic",
    "needed_by": [],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "warlock",
@@ -357,7 +357,7 @@
     "Soul Link"
    ],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage), then summon your Succubus: Demonic Pact keeps the Imp's buff while another demon is out",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "warlock",
@@ -373,7 +373,7 @@
     "Demonic Pact"
    ],
    "advice": "turn it on with your demon out (it lasts while the demon lives)",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "warlock",
@@ -383,13 +383,13 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.1061,
+   "removal_loss": 0.1062,
    "kind": "automatic",
    "needed_by": [
     "Soul Link"
    ],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage), then summon your Succubus: Demonic Pact keeps the Imp's buff while another demon is out",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "warlock",
@@ -405,7 +405,7 @@
     "Demonic Pact"
    ],
    "advice": "turn it on with your demon out (it lasts while the demon lives)",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "warlock",
@@ -421,7 +421,7 @@
     "Incinerate"
    ],
    "advice": "taken because Incinerate requires it",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "warlock",
@@ -431,11 +431,11 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.1011,
+   "removal_loss": 0.1015,
    "kind": "automatic",
    "needed_by": [],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "warlock",
@@ -449,7 +449,7 @@
    "kind": "wasted",
    "needed_by": [],
    "advice": "not cast by the rotation",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "warlock",
@@ -459,11 +459,11 @@
    "talent": "Demonic Sacrifice",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.1044,
+   "removal_loss": 0.1048,
    "kind": "automatic",
    "needed_by": [],
    "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   },
   {
    "class": "warrior",
@@ -477,7 +477,7 @@
    "kind": "wasted",
    "needed_by": [],
    "advice": "not cast by the rotation",
-   "date": "2026-11-18"
+   "date": "2026-11-19"
   }
  ]
 }

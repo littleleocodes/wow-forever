@@ -65,11 +65,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`fury-dual-wield-open-raid`](fury-dual-wield-open-raid.md) | ours: derived (open search) | 17/32/2 | 494 | +0.0% | 937 | +0.0% | 0 s |
-| 2 | *Fury* | community simulator | - | 492 | -0.3% | 935 | -0.2% | 0 s |
-| 3 | **[`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md)** | ours: optimizer | 18/33/0 | 490 | -0.7% | 905 | -3.4% | 0 s |
-| 4 | [`fury-dw-raid`](fury-dw-raid.md) | ours: hand draft | 13/38/0 | 466 | -5.6% | 863 | -7.9% | 0 s |
-| 5 | *Arms* | community simulator | - | 350 | -29.0% | 635 | -32.3% | 0 s |
+| 1 | [`fury-dual-wield-open-raid`](fury-dual-wield-open-raid.md) | ours: derived (open search) | 17/32/2 | 504 | +0.0% | 990 | +0.0% | 0 s |
+| 2 | *Fury* | community simulator | - | 502 | -0.4% | 988 | -0.2% | 0 s |
+| 3 | **[`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md)** | ours: optimizer | 18/33/0 | 501 | -0.6% | 962 | -2.9% | 0 s |
+| 4 | [`fury-dw-raid`](fury-dw-raid.md) | ours: hand draft | 13/38/0 | 474 | -5.8% | 916 | -7.5% | 0 s |
+| 5 | *Arms* | community simulator | - | 355 | -29.6% | 671 | -32.2% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -124,7 +124,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-
 | # | Priority (the first line whose condition holds is cast) | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) casts/min |
 |---|---|---|
 | 1 | if (time left in the fight ≤ 45s or time left in the fight ≥ 211.5s): cast Death Wish | 0.3 |
-| 2 | if execute phase (E20): cast Execute | 6.7 |
+| 2 | if execute phase (E20): cast Execute | 6.6 |
 | 3 | cast Bloodthirst | 7.4 |
 | 4 | if time left in the fight ≤ 33.75s: cast Recklessness | 0.3 |
 | 5 | cast Goblin Sapper Charge | as ready |
@@ -135,10 +135,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-
 | 10 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 11 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 12 | if (time left in the fight ≤ 33.75s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
-| 13 | cast Whirlwind | 5.4 |
-| 14 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 5.4 |
+| 13 | cast Whirlwind | 5.3 |
+| 14 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 5.3 |
 | 15 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 16 | if stacks of Sunder Armor < 5: cast Sunder Armor | 6.7 |
+| 16 | if stacks of Sunder Armor < 5: cast Sunder Armor | 6.6 |
 
 Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Spearing Strike, cast Heroic Strike, cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent).
 
@@ -146,11 +146,11 @@ Damage by ability:
 
 | Ability | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) |
 |---|---|
-| Auto Attack | 43% |
-| Execute | 24% |
+| Auto Attack | 42% |
+| Execute | 23% |
 | Bloodthirst | 16% |
-| Whirlwind | 12% |
-| Deep Wound | 5% |
+| Whirlwind | 13% |
+| Deep Wound | 6% |
 
 ## Notes
 

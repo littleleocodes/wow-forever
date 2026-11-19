@@ -66,7 +66,7 @@
     "why": [
      "Before the pull: call your cat, cast **Trueshot Aura** (in Forever a buff you cast, 30 minutes for your party and raid) and **Aspect of the Hawk**, and track the boss's creature type, since **Improved Tracking** adds 5% only against the tracked type.",
      "**Aimed Shot** comes first: it is your biggest regular hit (weapon damage plus 350, 10% more with **Barrage**), and its 6-second cooldown starts only when the 2-second cast ends, so any delay pushes every later cast back. Start it while the next **Auto Shot** is more than half a second away, so the cast does not clip one.",
-     "**Arcane Shot** every time it is ready: 2 points in **Improved Arcane Shot** bring its cooldown to 5.4 seconds, about 31 casts in a 3-minute fight, more than any other button.",
+     "**Arcane Shot** every time it is ready: 5 points in **Improved Arcane Shot** bring its cooldown to 4.5 seconds, about 35 casts in a 3-minute fight, more than any other button.",
      "**Rapid Fire** gives 40% faster attacks for 15 seconds; **Rapid Killing** cuts its cooldown to 3 minutes, so it comes once in a 3-minute fight, at the pull. The full rotation presses it right before an **Auto Shot**.",
      "**Serpent Sting**: recast it with under 0.75 seconds left, but not when **Aimed Shot** or **Multi-Shot** is half a second from ready, and not in the last 6 seconds. Each sting also starts **Rapid Recuperation**: with both points, half your mana regeneration keeps going while you cast for 15 seconds (all of it once a **Rapid Killing** is spent).",
      "**Sniper Shot** hits hardest (weapon damage plus 590) but takes 4 seconds, so it goes last: start it only when **Aimed Shot** is at least 2.25 seconds from ready and **Multi-Shot** at least 1, so the long cast barely delays your biggest hit. It comes about 9 times a fight on its 15-second cooldown; between casts **Auto Shot** does the work.",
@@ -89,7 +89,7 @@
      "mm-raid": "5ff764097e08",
      "mm-lonewolf-raid": "422dd63d194f"
     },
-    "written": "2026-11-17"
+    "written": "2026-11-19"
    },
    "leveling": {
     "plan": "Marksmanship levels with the pet tanking, but more of the damage is your own: **Aimed Shot** on its cooldown, **Serpent Sting** on every mob, **Arcane Shot** to finish once the mob is below 35% of its health, **Trueshot Aura** always on and **Auto Shot** in between. The build spends its first 30 points on Marksmanship (**Lethal Attacks**, **Careful Aim**, **Efficiency**) and the other 21 on the pet.",

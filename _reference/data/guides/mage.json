@@ -4,29 +4,30 @@
  "guides": {
   "Frost": {
    "raid": {
-    "plan": "Frost in a raid is one spell and one proc: **Frostbolt** on every cast and a free, fast **Arcane Missiles** whenever **Missile Barrage** lights up, with **Presence of Mind** at the pull and one **Fire Blast** in the last 3 seconds. It is the weakest mage page in the simulator (526 DPS in a full raid against Fire's 869): the search's best Frost build, 612, fails the spec's signature rule and sits under Other builds.",
+    "plan": "Frost in a raid is **Frostbolt** with one buff kept up and two procs spent: **Ice Barrier** before the pull and again whenever its Frigid Power is about to run out, a free **Arcane Missiles** on every **Missile Barrage** proc and **Ice Lance** on every **Fingers of Frost** proc. 652 DPS in a full raid, the fifth mage page (Fire 873); **Ice Barrier** is the reason the build takes 31 Frost points.",
     "why": [
-     "**Frostbolt** is the list: 62 casts and 76% of the damage in a 3-minute raid fight. It casts in 2.5 seconds with **Improved Frostbolt**, costs 260 mana at the rank the list names (rank 10) less **Frost Channeling**'s 15%, crits for double with **Ice Shards**, and every one that lands has a 20% chance (**Missile Barrage**) to make your next **Arcane Missiles** free, half as long and twice as dense.",
-     "**Arcane Missiles** on a **Missile Barrage** proc comes first: about 10 casts and 23% of the damage, each a 2.5-second channel that costs nothing, with **Arcane Impact**'s 6% crit. **Improved Channeling** at 4 points gives an 80% chance that a hit does not cut it short. The list names rank 7, as the simulator's rotation has since October; a free cast costs the same at any rank.",
-     "**Fire Blast** only in the last 3 seconds (about one a fight): a **Frostbolt** started then is still in the air when the boss dies, while **Fire Blast** is instant. Earlier in the fight the search kept it out: it rolls for no proc, costs 340 mana against the **Frostbolt**'s 260, and no talent of this build improves it.",
-     "**Presence of Mind** at the pull makes one **Frostbolt** instant; its cooldown is 3 minutes, so a 3-minute fight gets one.",
-     "Mana is not a problem with a raid's buffs: the full list uses your mana gem (from **Conjure Mana Ruby**) below 80% mana and **Evocation** below 20% with more than 25 seconds left; the simulator used the gem in about one fight in six and never channeled **Evocation**. **Arcane Concentration** makes one cast in ten free and **Arcane Meditation** keeps a third of your regeneration going while you cast.",
-     "**Winter's Chill**, the build's name, no longer helps this list: since the 2026-11-02 patch its stacks only make your next **Cone of Cold** hit harder (20% more damage and 7% of your spell damage per stack, up to 5), and no single-target list casts **Cone of Cold** on a boss. **Frostbite** does nothing on a boss either: bosses cannot be frozen. The build is a hand draft from before the change and stays until a Frost build that passes the signature rule is found."
+     "**Ice Barrier** gives Frigid Power on every cast: 15% more Frost damage for a minute, and another 5% while its shield holds, which on a boss that does not hit you it does. Its cooldown is 30 seconds, so the list recasts it once a minute: 4 casts in a 3-minute fight, one before the pull. It is the 31-point Frost talent. Until 2026-11-19 no rotation of ours cast it, so every search valued it at nothing and the Frost builds stopped at 30 points; with one Arcane point moved into it the best Frost build went from 614 to 664 DPS in a full raid.",
+     "**Frostbolt** is the list: 57 casts and 72% of the damage. **Improved Frostbolt** takes its cast to 2.5 seconds, **Ice Shards** doubles its critical bonus, **Frost Channeling** cuts its cost by 15%, and **Precision** adds 6% hit. Each one that lands can set up the next two lines: a 20% chance of **Missile Barrage** and, through its chill, a 15% chance of **Fingers of Frost**.",
+     "**Arcane Missiles** on a **Missile Barrage** proc comes before **Frostbolt**: about 10 casts and 18% of the damage, each free, half as long and firing every half second, with **Arcane Impact**'s 6% crit. **Improved Channeling** at 2 points gives a 40% chance that a hit does not cut it short.",
+     "**Ice Lance** while **Fingers of Frost** is up: about 5 casts and 9% of the damage. The proc makes your next two spells treat the boss as frozen, so **Ice Lance** deals 300% more damage and **Shatter** adds 50% crit chance (**Incineration** another 10%); the list spends both charges on **Ice Lance**.",
+     "Mana holds in a raid: the mana gem (from **Conjure Mana Ruby**) about once a fight and a potion one fight in four; **Evocation** never ran in the simulator. **Arcane Concentration** at 2 points makes 4% of your casts free.",
+     "**Fire Blast** only in the last 3 seconds (under one a fight): a **Frostbolt** started then would still be in the air when the boss dies."
     ],
     "caveats": [
-     "The 612-DPS Frost build under Other builds (from the machine-learning search) takes Arcane Blast, Ice Lance, Shatter and Fingers of Frost in place of Winter's Chill, Ice Block, Presence of Mind and Arcane Meditation, and plays a longer list: two stacks of the Arcane Blast buff kept up and Ice Lance on a Fingers of Frost proc. It fails the signature check because Frost's own spells carry 53% of its damage, under the 60% the rule asks for (Arcane Blast and **Arcane Missiles** carry the rest). If the rule does not matter to you, it is 16% more damage.",
-     "Several targets: **Blizzard**, **Cone of Cold** (five **Frostbolt** hits first: five **Winter's Chill** stacks double its damage and add 35% of your spell damage) and **Arcane Explosion**. The simulator's fights are one boss.",
-     "Moving: **Fire Blast** is this build's only instant ranged attack (it takes no Ice Lance), and **Presence of Mind** makes one **Frostbolt** instant.",
+     "The hand-made Winter's Chill build (21/0/30, under Other builds) stops at 30 Frost points, a point short of the 31st row: 523 DPS in a full raid against this build's 652. **Winter's Chill** itself only helps **Cone of Cold** since the 2026-11-02 patch; this build keeps 3 points in it to reach the talents below it.",
+     "The shield's 5% lasts only while it holds. When raid damage breaks it, cast **Ice Barrier** again as soon as its 30-second cooldown allows: the simulator's boss never hits you, so its list recasts only near the end of the minute.",
+     "Several targets: **Blizzard**, **Cone of Cold** (with **Winter's Chill** stacks from your **Frostbolt** hits) and **Arcane Explosion**. The simulator's fights are one boss.",
+     "Moving: **Ice Lance** on a proc, **Fire Blast** and **Ice Barrier** are instant.",
      "Threat: **Frost Channeling** and **Arcane Subtlety** cut your Frost and Arcane threat by 30%; the simulator ignores threat, so give the tank a few seconds on a fresh pull."
     ],
     "diverge": [
      "In the last 3 seconds, **Fire Blast** instead of a **Frostbolt**.",
-     "Without a paladin's or shaman's mana buffs, the simulator's list for playing alone channels **Evocation** only below 5% mana and with more than 50 seconds left, not at the raid list's 20%.",
-     "On a pack, five **Frostbolt** hits and then **Cone of Cold** use the **Winter's Chill** stacks this list otherwise wastes."
+     "When your shield breaks early, **Ice Barrier** again as soon as it is ready.",
+     "On a pack, **Blizzard**, or five **Frostbolt** hits and then **Cone of Cold** on the **Winter's Chill** stacks."
     ],
-    "written": "2026-11-10",
+    "written": "2026-11-19",
     "rotations": {
-     "frost-raid": "9d92acd12c6d"
+     "frost-raid": "ce303d213c2f"
     }
    },
    "leveling": {

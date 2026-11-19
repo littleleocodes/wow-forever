@@ -2,7 +2,7 @@
  "class": "druid",
  "spec": "feral-bear-tank",
  "game": "forever",
- "date": "2026-11-17",
+ "date": "2026-11-19",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
   "commit": "2e6e77d84",
@@ -30,7 +30,7 @@
   },
   "max": {
    "label": "maximum",
-   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 180 s"
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else; none the spec cannot benefit from, such as Enhancement's Windfury Totem), consumables (and the Classic sim's world buffs), 180 s"
   },
   "max60": {
    "label": "maximum, 60 s",
@@ -86,16 +86,16 @@
     "max60": 1816.3450637378526
    },
    "raid_spell_casts": {
+    "22812": 3.009333333333333,
     "5229": 3.009333333333333,
-    "9881": 441.745,
-    "22812": 3.009333333333333
+    "9881": 441.745
    },
    "raid_casts": {
-    "Auto Attack": 72.00533333333334,
-    "Enrage": 3.009333333333333,
-    "Maul": 441.745,
     "Barkskin": 3.009333333333333,
-    "OtherActionRageGain": 153.79266666666666
+    "OtherActionRageGain": 153.79266666666666,
+    "Enrage": 3.009333333333333,
+    "Auto Attack": 72.00533333333334,
+    "Maul": 441.745
    },
    "raid_shares": {
     "Maul": 0.7982,
@@ -117,16 +117,16 @@
     "max60": 2265.8001680293655
    },
    "raid_spell_casts": {
-    "5229": 3.009333333333333,
+    "9881": 533.9273333333333,
     "22812": 3.009333333333333,
-    "9881": 533.9273333333333
+    "5229": 3.009333333333333
    },
    "raid_casts": {
-    "Enrage": 3.009333333333333,
-    "Barkskin": 3.009333333333333,
-    "Maul": 533.9273333333333,
     "Auto Attack": 72.00533333333334,
-    "OtherActionRageGain": 299.587
+    "Maul": 533.9273333333333,
+    "OtherActionRageGain": 299.587,
+    "Barkskin": 3.009333333333333,
+    "Enrage": 3.009333333333333
    },
    "raid_shares": {
     "Maul": 0.8248,
@@ -148,16 +148,16 @@
     "max60": 1848.8091111541378
    },
    "raid_spell_casts": {
+    "22812": 3.009333333333333,
     "9881": 444.005,
-    "5229": 3.009333333333333,
-    "22812": 3.009333333333333
+    "5229": 3.009333333333333
    },
    "raid_casts": {
-    "Maul": 444.005,
-    "Enrage": 3.009333333333333,
-    "Auto Attack": 72.00533333333334,
     "OtherActionRageGain": 158.522,
-    "Barkskin": 3.009333333333333
+    "Auto Attack": 72.00533333333334,
+    "Barkskin": 3.009333333333333,
+    "Maul": 444.005,
+    "Enrage": 3.009333333333333
    },
    "raid_shares": {
     "Maul": 0.7957,
@@ -179,18 +179,18 @@
     "max60": 2179.804994869431
    },
    "raid_spell_casts": {
-    "22812": 3.0056666666666665,
+    "9881": 399.017,
     "5229": 3.008,
-    "1235827": 16.407333333333334,
-    "9881": 399.017
+    "22812": 3.0056666666666665,
+    "1235827": 16.407333333333334
    },
    "raid_casts": {
-    "Barkskin": 3.0056666666666665,
-    "Enrage": 3.008,
-    "Lacerate": 16.407333333333334,
     "Maul": 399.017,
-    "OtherActionRageGain": 130.222,
-    "Auto Attack": 72.00533333333334
+    "Enrage": 3.008,
+    "Barkskin": 3.0056666666666665,
+    "Lacerate": 16.407333333333334,
+    "Auto Attack": 72.00533333333334,
+    "OtherActionRageGain": 130.222
    },
    "raid_shares": {
     "Maul": 0.7966,
@@ -214,17 +214,17 @@
    },
    "raid_spell_casts": {
     "1235827": 16.345666666666666,
+    "5229": 3.0073333333333334,
     "22812": 3.0046666666666666,
-    "9881": 326.0493333333333,
-    "5229": 3.0073333333333334
+    "9881": 326.0493333333333
    },
    "raid_casts": {
-    "Lacerate": 16.345666666666666,
     "Auto Attack": 72.00533333333334,
+    "Lacerate": 16.345666666666666,
+    "Enrage": 3.0073333333333334,
     "Barkskin": 3.0046666666666666,
     "Maul": 326.0493333333333,
-    "OtherActionRageGain": 33.007333333333335,
-    "Enrage": 3.0073333333333334
+    "OtherActionRageGain": 33.007333333333335
    },
    "raid_shares": {
     "Maul": 0.7748,

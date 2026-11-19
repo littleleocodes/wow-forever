@@ -63,10 +63,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-d
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md)** | ours: optimizer | 20/0/31 | 688 | +0.0% | 788 | -0.4% | 1 s |
-| 2 | *Standard* | community simulator | - | 643 | -6.5% | 787 | -0.5% | 0 s |
-| 3 | [`shadow-ml-raid`](shadow-ml-raid.md) | ours: derived (ML search) | 16/0/35 | 616 | -10.5% | 791 | +0.0% | 16 s |
-| 4 | *Smite* | community simulator | - | 229 | -66.7% | 311 | -60.7% | 8 s |
+| 1 | **[`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md)** | ours: optimizer | 20/0/31 | 677 | +0.0% | 776 | -0.5% | 1 s |
+| 2 | *Standard* | community simulator | - | 633 | -6.5% | 775 | -0.5% | 0 s |
+| 3 | [`shadow-ml-raid`](shadow-ml-raid.md) | ours: derived (ML search) | 16/0/35 | 603 | -10.9% | 779 | +0.0% | 17 s |
+| 4 | *Smite* | community simulator | - | 226 | -66.6% | 307 | -60.6% | 9 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -98,8 +98,8 @@ Damage by ability:
 | Ability | [`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md) |
 |---|---|
 | Mind Flay | 40% |
-| Shadow Word: Pain | 19% |
-| Mind Blast | 19% |
+| Shadow Word: Pain | 20% |
+| Mind Blast | 18% |
 | Devouring Plague | 12% |
 | Shadow Word: Death | 9% |
 | Demonic Rune | 2% |

@@ -71,10 +71,10 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 7/31/13 | 482 | +0.0% | 724 | -9.9% | 25 s |
-| 2 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 473 | -1.7% | 789 | -1.9% | 32 s |
-| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 0/29/22 | 468 | -2.8% | 798 | -0.8% | 33 s |
-| 4 | *FFB* | community simulator | - | 457 | -5.1% | 804 | +0.0% | 40 s |
+| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 7/31/13 | 482 | +0.0% | 708 | -9.7% | 20 s |
+| 2 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 474 | -1.8% | 771 | -1.7% | 28 s |
+| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 0/29/22 | 469 | -2.7% | 779 | -0.6% | 30 s |
+| 4 | *FFB* | community simulator | - | 459 | -4.8% | 784 | +0.0% | 36 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -139,18 +139,18 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-raid`](frostfire-raid.md) casts/min |
 |---|---|---|
 | 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 6.8 |
-| 2 | cast Fire Blast | 5.4 |
+| 2 | cast Fire Blast | 5.5 |
 | 3 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 6.8 |
 | 4 | if mana % ≤ 80%: cast Mana Ruby | as ready |
 | 5 | use every other cooldown when ready | as ready |
 | 6 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 7 | if stacks of Heating Up = 2: cast Pyroblast | 5.6 |
-| 8 | if stacks of Heating Up = 3: cast Pyroblast | 5.6 |
+| 7 | if stacks of Heating Up = 2: cast Pyroblast | 5.7 |
+| 8 | if stacks of Heating Up = 3: cast Pyroblast | 5.7 |
 | 9 | cast Combustion | 0.3 |
 | 10 | cast Mana Citrine | as ready |
-| 11 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 2.3 |
+| 11 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 2.4 |
 | 12 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 0.1 |
-| 13 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 1.2 |
+| 13 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 1.3 |
 | 14 | cast Robe of the Archmage | as ready |
 | 15 | cast Scorch | 6.8 |
 

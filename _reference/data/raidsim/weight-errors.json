@@ -27,32 +27,32 @@
     "duration": 180.0,
     "talents": "0532220115501051--5553",
     "bonus_stats": {
-     "StatHitRating": -30.0
+     "StatHitRating": -20.0
     },
-    "gear": "22267/1509 18814 19050 272411 21183/1891 21186/1883 21178 18405 252486/1509 18322/911 19147 275982 18820 272438 20069/2504 0 272430"
+    "gear": "22267/1509 18814 19050 272411 13314/1891 18497/1883 17721 18405 252486/1509 18322/911 19147 275982 18820 272438 20069/2504 0 272430"
    },
-   "seconds": 11.0,
+   "seconds": 11.5,
    "weights": {
-    "StatArcaneDamage": 0.4875258,
-    "StatCritRating": 0.4524306,
-    "StatHasteRating": 0.7935321,
-    "StatHitRating": 0.6895635,
-    "StatIntellect": 0.1381483,
-    "StatNatureDamage": 0.126655,
-    "StatSpellDamage": 0.6141807,
-    "StatSpellPiercing": 1.286844,
-    "StatSpirit": -0.001055375
+    "StatArcaneDamage": 0.48705,
+    "StatCritRating": 0.4391035,
+    "StatHasteRating": 0.7604053,
+    "StatHitRating": 0.6954287,
+    "StatIntellect": 0.1226483,
+    "StatNatureDamage": 0.1268817,
+    "StatSpellDamage": 0.6139316,
+    "StatSpellPiercing": 1.230886,
+    "StatSpirit": 0.0007461354
    },
    "se": {
-    "StatArcaneDamage": 0.0004167574,
-    "StatCritRating": 0.009807827,
-    "StatHasteRating": 0.03420502,
-    "StatHitRating": 0.03403391,
-    "StatIntellect": 0.006490245,
-    "StatNatureDamage": 6.695957e-05,
-    "StatSpellDamage": 0.0004262551,
-    "StatSpellPiercing": 0.01088623,
-    "StatSpirit": 0.001127263
+    "StatArcaneDamage": 0.0004154022,
+    "StatCritRating": 0.009832043,
+    "StatHasteRating": 0.03355893,
+    "StatHitRating": 0.03339497,
+    "StatIntellect": 0.00654234,
+    "StatNatureDamage": 6.705717e-05,
+    "StatSpellDamage": 0.0004244711,
+    "StatSpellPiercing": 0.008473546,
+    "StatSpirit": 0.000872595
    }
   },
   "hit:druid-feral-combat": {
@@ -82,40 +82,40 @@
     "duration": 180.0,
     "talents": "050022-55000032123012125001-054",
     "bonus_stats": {
-     "StatHitRating": -20.0
+     "StatHitRating": -10.0
     },
-    "gear": "279253/1508 19491 271955 21187/849 252484/1891 18375/1885 271948/1887 272396 15065/1508 20715/1887 18821 21182 13965 18537 19170/1900 0 23197"
+    "gear": "279253/1508 19491 271955 13340/849 252484/1891 18375/1885 271948/1887 272396 15065/1508 12553/1887 18821 272408 13965 18537 19170/1900 0 23197"
    },
-   "seconds": 50.4,
+   "seconds": 50.7,
    "weights": {
-    "PseudoStatMainHandDps": 2.297557,
-    "StatAgility": 0.6869585,
-    "StatArmorPenetration": 0.08094823,
-    "StatAttackPower": 0.2603007,
-    "StatCritRating": 0.5282686,
-    "StatExpertiseRating": 0.5028432,
-    "StatFeralAttackPower": 0.2603007,
-    "StatHasteRating": 0.2470094,
-    "StatHitRating": 0.5189017,
-    "StatIntellect": 0.0004958994,
-    "StatSpellPiercing": 0.01296785,
-    "StatSpirit": -0.0001188571,
-    "StatStrength": 0.6247217
+    "PseudoStatMainHandDps": 2.294823,
+    "StatAgility": 0.6972385,
+    "StatArmorPenetration": 0.0811775,
+    "StatAttackPower": 0.2599744,
+    "StatCritRating": 0.5340573,
+    "StatExpertiseRating": 0.5143508,
+    "StatFeralAttackPower": 0.2599744,
+    "StatHasteRating": 0.2518379,
+    "StatHitRating": 0.530984,
+    "StatIntellect": 0.0004938944,
+    "StatSpellPiercing": 0.01295689,
+    "StatSpirit": -0.0001334476,
+    "StatStrength": 0.6239385
    },
    "se": {
-    "PseudoStatMainHandDps": 0.001167221,
-    "StatAgility": 0.007401782,
-    "StatArmorPenetration": 5.648198e-05,
-    "StatAttackPower": 0.0001005282,
-    "StatCritRating": 0.007185675,
-    "StatExpertiseRating": 0.02994237,
-    "StatFeralAttackPower": 0.0001005282,
-    "StatHasteRating": 0.02537192,
-    "StatHitRating": 0.03005027,
-    "StatIntellect": 0.0001081639,
-    "StatSpellPiercing": 0.0003351046,
-    "StatSpirit": 0.000204337,
-    "StatStrength": 0.0002412677
+    "PseudoStatMainHandDps": 0.001165522,
+    "StatAgility": 0.007477327,
+    "StatArmorPenetration": 5.656635e-05,
+    "StatAttackPower": 0.0001004261,
+    "StatCritRating": 0.007241751,
+    "StatExpertiseRating": 0.0299965,
+    "StatFeralAttackPower": 0.0001004261,
+    "StatHasteRating": 0.02544488,
+    "StatHitRating": 0.03010187,
+    "StatIntellect": 0.0001089132,
+    "StatSpellPiercing": 0.0003337123,
+    "StatSpirit": 0.000201809,
+    "StatStrength": 0.0002410226
    }
   },
   "hit:hunter-hybrid-beast-mastery-marksmanship": {
@@ -145,36 +145,36 @@
     "duration": 180.0,
     "talents": "532000150510123-00530503005-2",
     "bonus_stats": {
-     "StatHitRating": -70.0
+     "StatHitRating": -90.0
     },
-    "gear": "252605/1508 18404 271955 21187/849 252483/1891 18375/1885 271948/1887 22232 18524/1508 13967/1887 21182 18821 13965 18473 250619/1900 0 18713/2523"
+    "gear": "252605/1508 18404 271955 13340/849 252483/1891 13211/1885 18349/1887 22232 18736/1508 13967/1887 272408 18821 13965 18473 250619/1900 0 18713/2523"
    },
-   "seconds": 36.4,
+   "seconds": 35.9,
    "weights": {
-    "PseudoStatRangedDps": 1.87592,
-    "StatAgility": 0.7033939,
-    "StatArmorPenetration": 0.06299628,
-    "StatCritRating": 0.6821873,
-    "StatExpertiseRating": 0.303109,
-    "StatHasteRating": 0.411611,
-    "StatHitRating": 1.045974,
-    "StatIntellect": 0.5783638,
-    "StatRangedAttackPower": 0.2256824,
-    "StatSpellPiercing": 0.3234549,
-    "StatSpirit": 0.2215483
+    "PseudoStatRangedDps": 1.84596,
+    "StatAgility": 0.6900724,
+    "StatArmorPenetration": 0.06227634,
+    "StatCritRating": 0.7001729,
+    "StatExpertiseRating": 0.2685225,
+    "StatHasteRating": 0.4093557,
+    "StatHitRating": 1.013506,
+    "StatIntellect": 0.5571622,
+    "StatRangedAttackPower": 0.2221658,
+    "StatSpellPiercing": 0.3201941,
+    "StatSpirit": 0.2120758
    },
    "se": {
-    "PseudoStatRangedDps": 0.001386481,
-    "StatAgility": 0.01309008,
-    "StatArmorPenetration": 4.922556e-05,
-    "StatCritRating": 0.01664016,
-    "StatExpertiseRating": 0.03821939,
-    "StatHasteRating": 0.03204434,
-    "StatHitRating": 0.04161,
-    "StatIntellect": 0.009432574,
-    "StatRangedAttackPower": 0.0001163173,
-    "StatSpellPiercing": 0.002014114,
-    "StatSpirit": 0.01113688
+    "PseudoStatRangedDps": 0.001336631,
+    "StatAgility": 0.01300806,
+    "StatArmorPenetration": 4.769894e-05,
+    "StatCritRating": 0.01663869,
+    "StatExpertiseRating": 0.0378156,
+    "StatHasteRating": 0.03151687,
+    "StatHitRating": 0.04129195,
+    "StatIntellect": 0.008858931,
+    "StatRangedAttackPower": 0.0001129485,
+    "StatSpellPiercing": 0.002011836,
+    "StatSpirit": 0.01038281
    }
   },
   "hit:hunter-marksmanship": {
@@ -204,36 +204,36 @@
     "duration": 180.0,
     "talents": "53200005050001-005155000150305",
     "bonus_stats": {
-     "StatHitRating": -63.0
+     "StatHitRating": -50.0
     },
-    "gear": "252605/1508 18404 271955 21187/849 252483/1891 16681/1885 271948/1887 19163 16678/1508 16711/1887 272408 21182 13965 18537 250619/1900 0 18713/2523"
+    "gear": "252605/1508 18404 271955 18496/849 252483/1891 16683/1885 18349/1887 20044 16678/1508 16675/1887 272406 19138 13965 18473 250619/1900 0 18713/2523"
    },
-   "seconds": 35.5,
+   "seconds": 35.8,
    "weights": {
-    "PseudoStatRangedDps": 1.984563,
-    "StatAgility": 0.6590304,
-    "StatArmorPenetration": 0.06872557,
-    "StatCritRating": 0.6342697,
-    "StatExpertiseRating": 0.2480202,
-    "StatHasteRating": 0.4878706,
-    "StatHitRating": 0.8674483,
-    "StatIntellect": 0.2375336,
-    "StatRangedAttackPower": 0.2159396,
-    "StatSpellPiercing": 0.2621197,
-    "StatSpirit": 7.41974e-05
+    "PseudoStatRangedDps": 1.973641,
+    "StatAgility": 0.65631,
+    "StatArmorPenetration": 0.06605695,
+    "StatCritRating": 0.6236843,
+    "StatExpertiseRating": 0.2465331,
+    "StatHasteRating": 0.4711578,
+    "StatHitRating": 0.8479959,
+    "StatIntellect": 0.2363974,
+    "StatRangedAttackPower": 0.2149067,
+    "StatSpellPiercing": 0.2543821,
+    "StatSpirit": -0.0001236623
    },
    "se": {
-    "PseudoStatRangedDps": 0.001432144,
-    "StatAgility": 0.003349803,
-    "StatArmorPenetration": 5.198036e-05,
-    "StatCritRating": 0.005184548,
-    "StatExpertiseRating": 0.02189739,
-    "StatHasteRating": 0.02991823,
-    "StatHitRating": 0.03175848,
-    "StatIntellect": 0.0001247468,
-    "StatRangedAttackPower": 0.0001134061,
-    "StatSpellPiercing": 0.001774508,
-    "StatSpirit": 6.676799e-05
+    "PseudoStatRangedDps": 0.001422365,
+    "StatAgility": 0.003295781,
+    "StatArmorPenetration": 4.995817e-05,
+    "StatCritRating": 0.005044844,
+    "StatExpertiseRating": 0.02122101,
+    "StatHasteRating": 0.02900465,
+    "StatHitRating": 0.03057423,
+    "StatIntellect": 0.0001239453,
+    "StatRangedAttackPower": 0.0001126775,
+    "StatSpellPiercing": 0.001905355,
+    "StatSpirit": 6.975899e-05
    }
   },
   "hit:hunter-survival": {
@@ -263,42 +263,42 @@
     "duration": 180.0,
     "talents": "5-005055001-50023023005022213",
     "bonus_stats": {
-     "StatHitRating": -60.0
+     "StatHitRating": -70.0
     },
-    "gear": "252605/1508 18404 271955 13340/849 252483/1891 18375/1885 271948/1887 20043 18736/1508 13967/1887 18821 275981 13965 272437 19168/1900 279259/1900 18713"
+    "gear": "252605/1508 18404 271955 272414/849 252483/1891 18375/1885 271948/1887 20043 18736/1508 13967/1887 18821 275981 13965 11815 19168/1900 279259/1900 18713"
    },
-   "seconds": 28.0,
+   "seconds": 28.4,
    "weights": {
-    "PseudoStatMainHandDps": 2.097972,
-    "PseudoStatOffHandDps": 0.7898301,
-    "StatAgility": 0.4173288,
-    "StatArmorPenetration": 0.08751019,
-    "StatAttackPower": 0.2170548,
-    "StatCritRating": 0.4412897,
-    "StatExpertiseRating": 0.9109412,
-    "StatHasteRating": 0.4469673,
-    "StatHitRating": 0.9659987,
-    "StatIntellect": 0.2553983,
-    "StatRangedAttackPower": 0.009626105,
-    "StatSpellPiercing": 0.07909914,
+    "PseudoStatMainHandDps": 2.083882,
+    "PseudoStatOffHandDps": 0.7768129,
+    "StatAgility": 0.4130914,
+    "StatArmorPenetration": 0.08664916,
+    "StatAttackPower": 0.2149095,
+    "StatCritRating": 0.4366858,
+    "StatExpertiseRating": 0.9351873,
+    "StatHasteRating": 0.5033067,
+    "StatHitRating": 0.9895834,
+    "StatIntellect": 0.2530257,
+    "StatRangedAttackPower": 0.009628949,
+    "StatSpellPiercing": 0.07889235,
     "StatSpirit": 0.0,
-    "StatStrength": 0.2387603
+    "StatStrength": 0.2364004
    },
    "se": {
-    "PseudoStatMainHandDps": 0.001879848,
-    "PseudoStatOffHandDps": 0.00107824,
-    "StatAgility": 0.002206876,
-    "StatArmorPenetration": 6.860844e-05,
-    "StatAttackPower": 0.0001707117,
-    "StatCritRating": 0.003325613,
-    "StatExpertiseRating": 0.03263476,
-    "StatHasteRating": 0.02854161,
-    "StatHitRating": 0.03282348,
-    "StatIntellect": 0.0003880658,
-    "StatRangedAttackPower": 1.79066e-05,
-    "StatSpellPiercing": 0.0009020853,
+    "PseudoStatMainHandDps": 0.001945674,
+    "PseudoStatOffHandDps": 0.001055505,
+    "StatAgility": 0.00222434,
+    "StatArmorPenetration": 6.973933e-05,
+    "StatAttackPower": 0.0001737935,
+    "StatCritRating": 0.003309844,
+    "StatExpertiseRating": 0.03477544,
+    "StatHasteRating": 0.0290886,
+    "StatHitRating": 0.0349272,
+    "StatIntellect": 0.0003899168,
+    "StatRangedAttackPower": 1.793364e-05,
+    "StatSpellPiercing": 0.0008987612,
     "StatSpirit": 0.0,
-    "StatStrength": 0.0001877829
+    "StatStrength": 0.0001911728
    }
   },
   "hit:mage-arcane": {
@@ -328,32 +328,32 @@
     "duration": 180.0,
     "talents": "050205203100301531-505001002-043",
     "bonus_stats": {
-     "StatHitRating": -80.0
+     "StatHitRating": -70.0
     },
-    "gear": "22267/1509 18814 19050 272411 14152/1891 21186/1883 226930 18405 226933/1509 22231/911 272406 19147 18820 272438 22383/2504 18316 13938"
+    "gear": "22267/1509 18814 19050 272411 14152/1891 226929/1883 226930 18405 226933/1509 22231/911 272406 19147 18820 272438 22383/2504 18316 13938"
    },
    "seconds": 20.3,
    "weights": {
-    "StatArcaneDamage": 0.3312844,
-    "StatCritRating": 0.3663905,
-    "StatFireDamage": 0.1180711,
-    "StatHasteRating": 0.3909266,
-    "StatHitRating": 0.8003771,
-    "StatIntellect": 0.391082,
-    "StatSpellDamage": 0.4493555,
-    "StatSpellPiercing": 1.19436,
-    "StatSpirit": 0.2942618
+    "StatArcaneDamage": 0.3374705,
+    "StatCritRating": 0.368169,
+    "StatFireDamage": 0.1188296,
+    "StatHasteRating": 0.4002986,
+    "StatHitRating": 0.7754132,
+    "StatIntellect": 0.3901085,
+    "StatSpellDamage": 0.4563001,
+    "StatSpellPiercing": 1.179347,
+    "StatSpirit": 0.2656359
    },
    "se": {
-    "StatArcaneDamage": 0.0005107061,
-    "StatCritRating": 0.004458622,
-    "StatFireDamage": 0.000265834,
-    "StatHasteRating": 0.02176213,
-    "StatHitRating": 0.03532843,
-    "StatIntellect": 0.02810809,
-    "StatSpellDamage": 0.0004033114,
-    "StatSpellPiercing": 0.003309637,
-    "StatSpirit": 0.02712969
+    "StatArcaneDamage": 0.0005136301,
+    "StatCritRating": 0.004363863,
+    "StatFireDamage": 0.0002761125,
+    "StatHasteRating": 0.02073261,
+    "StatHitRating": 0.03351406,
+    "StatIntellect": 0.02679834,
+    "StatSpellDamage": 0.0003916685,
+    "StatSpellPiercing": 0.003215037,
+    "StatSpirit": 0.02602715
    }
   },
   "hit:mage-fire": {
@@ -383,32 +383,32 @@
     "duration": 180.0,
     "talents": "0502152000001-35500201230133031-003",
     "bonus_stats": {
-     "StatHitRating": -55.0
+     "StatHitRating": -60.0
     },
-    "gear": "22267/1509 18814 19050 272411 14152/1891 21186/1883 14146 18405 226933/1509 13369/911 19147 19147 18820 13968 22383/2504 22329 13938"
+    "gear": "22267/1509 18814 19050 272411 14152/1891 226929/1883 226930 18405 226933/1509 22231/911 19147 19147 18820 13968 22383/2504 18316 13938"
    },
-   "seconds": 16.8,
+   "seconds": 17.7,
    "weights": {
-    "StatArcaneDamage": 0.03380741,
-    "StatCritRating": 0.5865176,
-    "StatFireDamage": 0.5775314,
-    "StatHasteRating": 0.5375209,
-    "StatHitRating": 1.206745,
-    "StatIntellect": 0.5740296,
-    "StatSpellDamage": 0.6113388,
-    "StatSpellPiercing": 1.346974,
-    "StatSpirit": 0.4094875
+    "StatArcaneDamage": 0.0356293,
+    "StatCritRating": 0.541731,
+    "StatFireDamage": 0.5794992,
+    "StatHasteRating": 0.6633159,
+    "StatHitRating": 1.196714,
+    "StatIntellect": 0.4671242,
+    "StatSpellDamage": 0.6151285,
+    "StatSpellPiercing": 1.303975,
+    "StatSpirit": 0.3196806
    },
    "se": {
-    "StatArcaneDamage": 0.0001979271,
-    "StatCritRating": 0.02345849,
-    "StatFireDamage": 0.0005922126,
-    "StatHasteRating": 0.06475603,
-    "StatHitRating": 0.0648342,
-    "StatIntellect": 0.03278425,
-    "StatSpellDamage": 0.0006253938,
-    "StatSpellPiercing": 0.004512721,
-    "StatSpirit": 0.03102046
+    "StatArcaneDamage": 0.0001952832,
+    "StatCritRating": 0.02135408,
+    "StatFireDamage": 0.0005645241,
+    "StatHasteRating": 0.05854136,
+    "StatHitRating": 0.05925945,
+    "StatIntellect": 0.02548313,
+    "StatSpellDamage": 0.0005833897,
+    "StatSpellPiercing": 0.004373298,
+    "StatSpirit": 0.02327829
    }
   },
   "hit:mage-frost": {
@@ -436,36 +436,36 @@
     "iterations": 6000,
     "seed": 1,
     "duration": 180.0,
-    "talents": "0502252031000001--2535300301203012",
+    "talents": "023212203-5-153500030121301231",
     "bonus_stats": {
-     "StatHitRating": -60.0
+     "StatHitRating": -50.0
     },
-    "gear": "22267/1509 18814 19050 272411 14152/1891 21186/1883 226930 18405 19165/1509 22231/911 19147 19147 18820 272438 22383/2504 18316 19108"
+    "gear": "22267/1509 18814 19050 272411 14152/1891 226929/1883 226930 18405 19165/1509 22231/911 19147 19147 18820 272438 22383/2504 18316 13938"
    },
-   "seconds": 16.4,
+   "seconds": 14.9,
    "weights": {
-    "StatArcaneDamage": 0.1973109,
-    "StatCritRating": 0.2923676,
-    "StatFireDamage": 0.00131464,
-    "StatFrostDamage": 0.2297243,
-    "StatHasteRating": 0.5941508,
-    "StatHitRating": 0.7274666,
-    "StatIntellect": 0.1938729,
-    "StatSpellDamage": 0.4283499,
-    "StatSpellPiercing": 1.081369,
-    "StatSpirit": 0.0008929115
+    "StatArcaneDamage": 0.08706931,
+    "StatCritRating": 0.3327624,
+    "StatFireDamage": 0.002066353,
+    "StatFrostDamage": 0.4107409,
+    "StatHasteRating": 0.6049803,
+    "StatHitRating": 0.7599847,
+    "StatIntellect": 0.08277437,
+    "StatSpellDamage": 0.4998765,
+    "StatSpellPiercing": 1.137558,
+    "StatSpirit": -0.001780091
    },
    "se": {
-    "StatArcaneDamage": 0.0002543608,
-    "StatCritRating": 0.004215088,
-    "StatFireDamage": 1.936418e-05,
-    "StatFrostDamage": 0.0002939574,
-    "StatHasteRating": 0.01662544,
-    "StatHitRating": 0.02397469,
-    "StatIntellect": 0.002892976,
-    "StatSpellDamage": 0.0002784427,
-    "StatSpellPiercing": 0.003150214,
-    "StatSpirit": 0.001552744
+    "StatArcaneDamage": 0.0002491857,
+    "StatCritRating": 0.005244281,
+    "StatFireDamage": 1.949146e-05,
+    "StatFrostDamage": 0.0004380821,
+    "StatHasteRating": 0.009997608,
+    "StatHitRating": 0.02882609,
+    "StatIntellect": 0.003279886,
+    "StatSpellDamage": 0.0003813661,
+    "StatSpellPiercing": 0.003814802,
+    "StatSpirit": 0.001489143
    }
   },
   "hit:mage-hybrid-arcane-frost": {
@@ -495,34 +495,34 @@
     "duration": 180.0,
     "talents": "0322052030003011--05350003012130024",
     "bonus_stats": {
-     "StatHitRating": -50.0
+     "StatHitRating": -60.0
     },
-    "gear": "22267/1509 18814 19050 272411 14152/1891 21186/1883 14146 18405 19165/1509 22231/911 19147 19147 18820 13968 22383/2504 18316 13938"
+    "gear": "22267/1509 18814 19050 272411 14152/1891 226929/1883 14146 18405 226933/1509 22231/911 272406 19147 18820 13968 22383/2504 18316 13938"
    },
-   "seconds": 14.7,
+   "seconds": 14.6,
    "weights": {
-    "StatArcaneDamage": 0.09218645,
-    "StatCritRating": 0.2946108,
-    "StatFireDamage": 0.001812534,
-    "StatFrostDamage": 0.3584768,
-    "StatHasteRating": 0.5233598,
-    "StatHitRating": 0.683142,
-    "StatIntellect": 0.07788465,
-    "StatSpellDamage": 0.4524758,
-    "StatSpellPiercing": 1.04774,
-    "StatSpirit": -0.0003341334
+    "StatArcaneDamage": 0.09323654,
+    "StatCritRating": 0.2801238,
+    "StatFireDamage": 0.001835637,
+    "StatFrostDamage": 0.3632222,
+    "StatHasteRating": 0.5036524,
+    "StatHitRating": 0.6565597,
+    "StatIntellect": 0.07305082,
+    "StatSpellDamage": 0.4582943,
+    "StatSpellPiercing": 0.9861648,
+    "StatSpirit": -0.0005123706
    },
    "se": {
-    "StatArcaneDamage": 0.0002617745,
-    "StatCritRating": 0.004374788,
-    "StatFireDamage": 1.896659e-05,
-    "StatFrostDamage": 0.0003725603,
-    "StatHasteRating": 0.006936272,
-    "StatHitRating": 0.02338525,
-    "StatIntellect": 0.002678161,
-    "StatSpellDamage": 0.0003326933,
-    "StatSpellPiercing": 0.003323799,
-    "StatSpirit": 0.0004790136
+    "StatArcaneDamage": 0.0002648433,
+    "StatCritRating": 0.004155842,
+    "StatFireDamage": 1.9261e-05,
+    "StatFrostDamage": 0.0003770994,
+    "StatHasteRating": 0.006749479,
+    "StatHitRating": 0.0223495,
+    "StatIntellect": 0.0025322,
+    "StatSpellDamage": 0.0003367902,
+    "StatSpellPiercing": 0.003178016,
+    "StatSpirit": 0.0003790033
    }
   },
   "hit:mage-hybrid-fire-frost": {
@@ -552,30 +552,30 @@
     "duration": 180.0,
     "talents": "0410011-32510301230133031-20350003",
     "bonus_stats": {
-     "StatHitRating": -40.0
+     "StatHitRating": -35.0
     },
-    "gear": "22267/1509 18814 19050 272411 14152/1891 21186/1883 14146 18405 19165/1509 13369/911 19147 19147 18820 13968 22383/2504 18316 11748"
+    "gear": "22267/1509 18814 19050 272411 14152/1891 254065/1883 14146 18405 19165/1509 13369/911 19147 19147 18820 13968 22383/2504 22329 11748"
    },
-   "seconds": 19.2,
+   "seconds": 18.5,
    "weights": {
-    "StatCritRating": 0.5597944,
-    "StatFireDamage": 0.5629823,
-    "StatHasteRating": 0.4550191,
-    "StatHitRating": 0.9317794,
-    "StatIntellect": 0.1448685,
-    "StatSpellDamage": 0.5629823,
-    "StatSpellPiercing": 0.7280026,
-    "StatSpirit": -0.005984229
+    "StatCritRating": 0.5846832,
+    "StatFireDamage": 0.5675073,
+    "StatHasteRating": 0.4447243,
+    "StatHitRating": 0.9329941,
+    "StatIntellect": 0.1608035,
+    "StatSpellDamage": 0.5675073,
+    "StatSpellPiercing": 0.7174305,
+    "StatSpirit": 0.03004025
    },
    "se": {
-    "StatCritRating": 0.02065984,
-    "StatFireDamage": 0.0005389235,
-    "StatHasteRating": 0.03340685,
-    "StatHitRating": 0.04923653,
-    "StatIntellect": 0.03318344,
-    "StatSpellDamage": 0.0005389235,
-    "StatSpellPiercing": 0.004154485,
-    "StatSpirit": 0.02420748
+    "StatCritRating": 0.01992286,
+    "StatFireDamage": 0.0005380799,
+    "StatHasteRating": 0.03186049,
+    "StatHitRating": 0.0484407,
+    "StatIntellect": 0.03149589,
+    "StatSpellDamage": 0.0005380799,
+    "StatSpellPiercing": 0.00410964,
+    "StatSpirit": 0.02433671
    }
   },
   "hit:paladin-hybrid-protection-retribution": {
@@ -605,42 +605,42 @@
     "duration": 180.0,
     "talents": "05003-053020005-1523330100130033",
     "bonus_stats": {
-     "StatHitRating": -130.0
+     "StatHitRating": -145.0
     },
-    "gear": "12640/1506 18404 20058 272414/849 252483/1891 21186/1885 21278/927 22232 22385/1506 14616/1887 21182 275981 11815 272437 21188/1900 0 272435"
+    "gear": "12640/1506 18404 12927 272414/849 252483/1891 12936/1885 21278/927 22232 22385/1506 14616/1887 275981 272408 18820 13965 19167/1900 0 272435"
    },
-   "seconds": 40.0,
+   "seconds": 39.3,
    "weights": {
-    "PseudoStatMainHandDps": 2.469512,
-    "StatAgility": 0.2752581,
-    "StatArmorPenetration": 0.0419524,
-    "StatAttackPower": 0.1750368,
-    "StatCritRating": 0.375434,
-    "StatExpertiseRating": 0.7598001,
-    "StatHasteRating": 0.7043335,
-    "StatHitRating": 0.9777063,
-    "StatHolyDamage": 0.2495433,
-    "StatIntellect": 0.1072643,
-    "StatSpellDamage": 0.2495433,
+    "PseudoStatMainHandDps": 1.9392,
+    "StatAgility": 0.2420628,
+    "StatArmorPenetration": 0.03809095,
+    "StatAttackPower": 0.1461755,
+    "StatCritRating": 0.3244286,
+    "StatExpertiseRating": 0.5581424,
+    "StatHasteRating": 0.2373528,
+    "StatHitRating": 0.7664045,
+    "StatHolyDamage": 0.2485451,
+    "StatIntellect": 0.104828,
+    "StatSpellDamage": 0.2485451,
     "StatSpellPiercing": 0.0,
-    "StatSpirit": -6.258282e-09,
-    "StatStrength": 0.4200882
+    "StatSpirit": -1.854538e-05,
+    "StatStrength": 0.3508212
    },
    "se": {
-    "PseudoStatMainHandDps": 0.002820003,
-    "StatAgility": 0.004192306,
-    "StatArmorPenetration": 5.637142e-05,
-    "StatAttackPower": 0.0002010297,
-    "StatCritRating": 0.004036295,
-    "StatExpertiseRating": 0.0249288,
-    "StatHasteRating": 0.02137384,
-    "StatHitRating": 0.02635853,
-    "StatHolyDamage": 0.0001816729,
-    "StatIntellect": 0.001136896,
-    "StatSpellDamage": 0.0001816729,
+    "PseudoStatMainHandDps": 0.001857089,
+    "StatAgility": 0.003299429,
+    "StatArmorPenetration": 4.079319e-05,
+    "StatAttackPower": 0.0001356656,
+    "StatCritRating": 0.003146596,
+    "StatExpertiseRating": 0.01757105,
+    "StatHasteRating": 0.01608934,
+    "StatHitRating": 0.01867792,
+    "StatHolyDamage": 0.0001871117,
+    "StatIntellect": 0.0003001009,
+    "StatSpellDamage": 0.0001871117,
     "StatSpellPiercing": 0.0,
-    "StatSpirit": 1.376033e-05,
-    "StatStrength": 0.0004824712
+    "StatSpirit": 3.511681e-05,
+    "StatStrength": 0.0003255974
    }
   },
   "hit:paladin-retribution": {
@@ -670,40 +670,40 @@
     "duration": 180.0,
     "talents": "0502320122-051-1523330100130033",
     "bonus_stats": {
-     "StatHitRating": -120.0
+     "StatHitRating": -99.0
     },
-    "gear": "12640/1506 18404 20058 272411/849 252483/1891 21186/1885 21278/927 22232 22385/1506 20049/1887 21182 275981 11815 272437 21188/1900 0 272435"
+    "gear": "250599/1506 18404 13374 272411/849 226973/1891 16714/1885 16672/927 18405 22385/1506 22231/1887 272406 18403 18820 13965 19167/1900 0 272435"
    },
-   "seconds": 41.6,
+   "seconds": 42.3,
    "weights": {
-    "PseudoStatMainHandDps": 2.43254,
-    "StatAgility": 0.2632378,
-    "StatArmorPenetration": 0.04077896,
-    "StatAttackPower": 0.1723101,
-    "StatCritRating": 0.3693122,
-    "StatExpertiseRating": 0.7743777,
-    "StatHasteRating": 0.6845202,
-    "StatHitRating": 0.8432244,
-    "StatHolyDamage": 0.2515182,
-    "StatIntellect": 0.1064165,
-    "StatSpellDamage": 0.2515182,
-    "StatSpirit": 2.683476e-06,
-    "StatStrength": 0.4135443
+    "PseudoStatMainHandDps": 1.792914,
+    "StatAgility": 0.2428935,
+    "StatArmorPenetration": 0.03392717,
+    "StatAttackPower": 0.1357564,
+    "StatCritRating": 0.3410577,
+    "StatExpertiseRating": 0.5912444,
+    "StatHasteRating": 0.2218032,
+    "StatHitRating": 0.7377871,
+    "StatHolyDamage": 0.2402874,
+    "StatIntellect": 0.102205,
+    "StatSpellDamage": 0.2402874,
+    "StatSpirit": 0.0,
+    "StatStrength": 0.3393909
    },
    "se": {
-    "PseudoStatMainHandDps": 0.002774875,
-    "StatAgility": 0.004115787,
-    "StatArmorPenetration": 5.561109e-05,
-    "StatAttackPower": 0.0001978169,
-    "StatCritRating": 0.004000686,
-    "StatExpertiseRating": 0.0259784,
-    "StatHasteRating": 0.02283734,
-    "StatHitRating": 0.02589053,
-    "StatHolyDamage": 0.0001794353,
-    "StatIntellect": 0.0001747864,
-    "StatSpellDamage": 0.0001794353,
-    "StatSpirit": 2.466405e-06,
-    "StatStrength": 0.0004747605
+    "PseudoStatMainHandDps": 0.001761976,
+    "StatAgility": 0.003541148,
+    "StatArmorPenetration": 3.752689e-05,
+    "StatAttackPower": 0.0001284455,
+    "StatCritRating": 0.003336336,
+    "StatExpertiseRating": 0.01815961,
+    "StatHasteRating": 0.01615322,
+    "StatHitRating": 0.01836806,
+    "StatHolyDamage": 0.0001757375,
+    "StatIntellect": 0.0001825199,
+    "StatSpellDamage": 0.0001757375,
+    "StatSpirit": 0.0,
+    "StatStrength": 0.0003660538
    }
   },
   "hit:priest-hybrid-discipline-holy": {
@@ -733,32 +733,32 @@
     "duration": 180.0,
     "talents": "505235231030001001-30505101002-3",
     "bonus_stats": {
-     "StatHitRating": -30.0
+     "StatHitRating": -20.0
     },
-    "gear": "22267/1509 18814 19059 272411 21183/1891 21186/1883 20716 18405 19165/1509 275606/911 19147 20682 18820 272438 20070/2504 18316 13938"
+    "gear": "22267/1509 18814 19059 272411 18385/1891 18497/1883 13253 18405 19165/1509 275606/911 19147 20682 18820 272438 20070/2504 18316 13938"
    },
-   "seconds": 16.1,
+   "seconds": 16.9,
    "weights": {
-    "StatCritRating": 0.2012715,
-    "StatHasteRating": 0.2087088,
-    "StatHitRating": 0.2535044,
-    "StatHolyDamage": 0.3474047,
-    "StatIntellect": 0.1048335,
-    "StatShadowDamage": 0.1504567,
-    "StatSpellDamage": 0.4978614,
-    "StatSpellPiercing": 0.2673494,
-    "StatSpirit": 0.03665456
+    "StatCritRating": 0.1990338,
+    "StatHasteRating": 0.2325504,
+    "StatHitRating": 0.2500306,
+    "StatHolyDamage": 0.3450878,
+    "StatIntellect": 0.09838828,
+    "StatShadowDamage": 0.1501048,
+    "StatSpellDamage": 0.4951926,
+    "StatSpellPiercing": 0.2644713,
+    "StatSpirit": 0.03303143
    },
    "se": {
-    "StatCritRating": 0.002283323,
-    "StatHasteRating": 0.01158589,
-    "StatHitRating": 0.01013672,
-    "StatHolyDamage": 0.000112182,
-    "StatIntellect": 0.006640704,
-    "StatShadowDamage": 9.908989e-05,
-    "StatSpellDamage": 0.000152105,
-    "StatSpellPiercing": 0.001741091,
-    "StatSpirit": 0.005897109
+    "StatCritRating": 0.002220071,
+    "StatHasteRating": 0.01110557,
+    "StatHitRating": 0.009667872,
+    "StatHolyDamage": 0.000111511,
+    "StatIntellect": 0.006194623,
+    "StatShadowDamage": 9.735404e-05,
+    "StatSpellDamage": 0.000147248,
+    "StatSpellPiercing": 0.001726314,
+    "StatSpirit": 0.005481713
    }
   },
   "hit:priest-shadow": {
@@ -788,30 +788,30 @@
     "duration": 180.0,
     "talents": "52500500003--50052101231302051",
     "bonus_stats": {
-     "StatHitRating": -30.0
+     "StatHitRating": -20.0
     },
-    "gear": "22267/1509 18814 19050 272411 21183/1891 21186/1883 14146 18405 19165/1509 11822/911 19147 275982 18820 13968 20070/2504 18316 13396"
+    "gear": "22267/1509 18814 19050 272411 14136/1891 254067/1883 14146 18405 19165/1509 11822/911 19147 275982 18820 272438 20070/2504 18316 13396"
    },
-   "seconds": 14.7,
+   "seconds": 16.1,
    "weights": {
-    "StatCritRating": 0.4640545,
-    "StatHasteRating": 0.2736372,
-    "StatHitRating": 0.5778201,
-    "StatIntellect": 0.1266168,
-    "StatShadowDamage": 0.4920639,
-    "StatSpellDamage": 0.4920639,
-    "StatSpellPiercing": 1.099984,
-    "StatSpirit": 0.002672289
+    "StatCritRating": 0.4633117,
+    "StatHasteRating": 0.2639294,
+    "StatHitRating": 0.5637208,
+    "StatIntellect": 0.1345371,
+    "StatShadowDamage": 0.4824673,
+    "StatSpellDamage": 0.4824673,
+    "StatSpellPiercing": 1.090523,
+    "StatSpirit": -0.00360617
    },
    "se": {
-    "StatCritRating": 0.004440217,
-    "StatHasteRating": 0.008417353,
-    "StatHitRating": 0.01993492,
-    "StatIntellect": 0.002724068,
-    "StatShadowDamage": 0.0002186006,
-    "StatSpellDamage": 0.0002186006,
-    "StatSpellPiercing": 0.003687849,
-    "StatSpirit": 0.004122711
+    "StatCritRating": 0.004340658,
+    "StatHasteRating": 0.008023902,
+    "StatHitRating": 0.02045815,
+    "StatIntellect": 0.00281741,
+    "StatShadowDamage": 0.000218895,
+    "StatSpellDamage": 0.000218895,
+    "StatSpellPiercing": 0.003670266,
+    "StatSpirit": 0.004098781
    }
   },
   "hit:rogue-assassination": {
@@ -841,36 +841,36 @@
     "duration": 180.0,
     "talents": "0053231022151003-305313000001221-002",
     "bonus_stats": {
-     "StatHitRating": -87.0
+     "StatHitRating": -77.0
     },
-    "gear": "279253/1508 18404 271955 21187/849 252483/1891 18375/1885 271948/1887 272395 18736/1508 226831/1887 18821 21182 13965 11815 19166/1900 12783/1900 18323"
+    "gear": "279253/1508 18404 271955 13340/849 252483/1891 18375/1885 271948/1887 272395 18736/1508 226831/1887 18821 275981 13965 11815 19166/1900 12783/1900 18323"
    },
-   "seconds": 35.3,
+   "seconds": 35.7,
    "weights": {
-    "PseudoStatMainHandDps": 1.894099,
-    "PseudoStatOffHandDps": 0.6492028,
-    "StatAgility": 0.343326,
-    "StatArmorPenetration": 0.08455341,
-    "StatAttackPower": 0.2135792,
-    "StatCritRating": 0.2225754,
-    "StatExpertiseRating": 0.794616,
-    "StatHasteRating": 0.3092696,
-    "StatHitRating": 0.8841057,
-    "StatSpellPiercing": 0.07970592,
-    "StatStrength": 0.2349372
+    "PseudoStatMainHandDps": 1.887955,
+    "PseudoStatOffHandDps": 0.6491435,
+    "StatAgility": 0.3424135,
+    "StatArmorPenetration": 0.08563888,
+    "StatAttackPower": 0.2128529,
+    "StatCritRating": 0.2217199,
+    "StatExpertiseRating": 0.7946051,
+    "StatHasteRating": 0.3147099,
+    "StatHitRating": 0.8821369,
+    "StatSpellPiercing": 0.07970137,
+    "StatStrength": 0.2341381
    },
    "se": {
-    "PseudoStatMainHandDps": 0.001318368,
-    "PseudoStatOffHandDps": 0.0006321884,
-    "StatAgility": 0.005973002,
-    "StatArmorPenetration": 5.247268e-05,
-    "StatAttackPower": 0.0001153439,
-    "StatCritRating": 0.006531999,
-    "StatExpertiseRating": 0.02918573,
-    "StatHasteRating": 0.02515221,
-    "StatHitRating": 0.02934706,
-    "StatSpellPiercing": 0.000448386,
-    "StatStrength": 0.0001268783
+    "PseudoStatMainHandDps": 0.001325512,
+    "PseudoStatOffHandDps": 0.0006308281,
+    "StatAgility": 0.005753597,
+    "StatArmorPenetration": 5.373877e-05,
+    "StatAttackPower": 0.0001162806,
+    "StatCritRating": 0.006597153,
+    "StatExpertiseRating": 0.02991267,
+    "StatHasteRating": 0.02543713,
+    "StatHitRating": 0.03002526,
+    "StatSpellPiercing": 0.0004466671,
+    "StatStrength": 0.0001279087
    }
   },
   "hit:rogue-combat": {
@@ -902,34 +902,34 @@
     "bonus_stats": {
      "StatHitRating": -87.0
     },
-    "gear": "279253/1508 18404 271955 21187/849 252483/1891 18375/1885 271948/1887 272395 18736/1508 226831/1887 18821 275981 11815 13965 19166/1900 12783/1900 18323"
+    "gear": "279253/1508 18404 271955 272414/849 252483/1891 18375/1885 271948/1887 272395 18736/1508 226831/1887 18821 275981 13965 18537 19166/1900 12783/1900 18323"
    },
-   "seconds": 35.1,
+   "seconds": 33.7,
    "weights": {
-    "PseudoStatMainHandDps": 1.912588,
-    "PseudoStatOffHandDps": 0.7915881,
-    "StatAgility": 0.3157777,
-    "StatArmorPenetration": 0.08364141,
-    "StatAttackPower": 0.2169295,
-    "StatCritRating": 0.1623392,
-    "StatExpertiseRating": 0.8025343,
-    "StatHasteRating": 0.3625651,
-    "StatHitRating": 0.8630002,
-    "StatSpellPiercing": 0.0521101,
-    "StatStrength": 0.2386225
+    "PseudoStatMainHandDps": 1.890743,
+    "PseudoStatOffHandDps": 0.7906141,
+    "StatAgility": 0.3131203,
+    "StatArmorPenetration": 0.08403279,
+    "StatAttackPower": 0.215226,
+    "StatCritRating": 0.1575773,
+    "StatExpertiseRating": 0.8137843,
+    "StatHasteRating": 0.3730363,
+    "StatHitRating": 0.8779118,
+    "StatSpellPiercing": 0.05165442,
+    "StatStrength": 0.2367485
    },
    "se": {
-    "PseudoStatMainHandDps": 0.001358009,
-    "PseudoStatOffHandDps": 0.0007765832,
-    "StatAgility": 0.002125686,
-    "StatArmorPenetration": 4.8887e-05,
-    "StatAttackPower": 0.0001159956,
-    "StatCritRating": 0.002430836,
-    "StatExpertiseRating": 0.02323041,
-    "StatHasteRating": 0.01951394,
-    "StatHitRating": 0.02328485,
-    "StatSpellPiercing": 0.0003882247,
-    "StatStrength": 0.0001275952
+    "PseudoStatMainHandDps": 0.001335282,
+    "PseudoStatOffHandDps": 0.0007585727,
+    "StatAgility": 0.002088485,
+    "StatArmorPenetration": 4.915488e-05,
+    "StatAttackPower": 0.0001158477,
+    "StatCritRating": 0.002391178,
+    "StatExpertiseRating": 0.02229371,
+    "StatHasteRating": 0.02012124,
+    "StatHitRating": 0.02246329,
+    "StatSpellPiercing": 0.0003826039,
+    "StatStrength": 0.0001274324
    }
   },
   "hit:rogue-hybrid-assassination-combat": {
@@ -959,36 +959,36 @@
     "duration": 180.0,
     "talents": "0053031122125103-304303000201132",
     "bonus_stats": {
-     "StatHitRating": -94.0
+     "StatHitRating": -87.0
     },
-    "gear": "279253/1508 18404 271955 21187/849 252483/1891 18375/1885 271948/1887 272395 18736/1508 226831/1887 18821 275981 13965 19120 19166/1900 12783/1900 18323"
+    "gear": "279253/1508 18404 271955 272414/849 252483/1891 18375/1885 271948/1887 272395 18736/1508 226831/1887 18821 275981 13965 11815 19166/1900 12783/1900 18323"
    },
-   "seconds": 35.6,
+   "seconds": 37.7,
    "weights": {
-    "PseudoStatMainHandDps": 1.910395,
-    "PseudoStatOffHandDps": 0.7550683,
-    "StatAgility": 0.3753794,
-    "StatArmorPenetration": 0.0932497,
-    "StatAttackPower": 0.2306689,
-    "StatCritRating": 0.2837651,
-    "StatExpertiseRating": 0.9226719,
-    "StatHasteRating": 0.3567406,
-    "StatHitRating": 1.031174,
-    "StatSpellPiercing": 0.1181686,
-    "StatStrength": 0.2537358
+    "PseudoStatMainHandDps": 1.927346,
+    "PseudoStatOffHandDps": 0.7532017,
+    "StatAgility": 0.3878858,
+    "StatArmorPenetration": 0.09371932,
+    "StatAttackPower": 0.2315949,
+    "StatCritRating": 0.2845374,
+    "StatExpertiseRating": 0.9374665,
+    "StatHasteRating": 0.3411083,
+    "StatHitRating": 1.045758,
+    "StatSpellPiercing": 0.1189347,
+    "StatStrength": 0.2547544
    },
    "se": {
-    "PseudoStatMainHandDps": 0.001391751,
-    "PseudoStatOffHandDps": 0.0007467268,
-    "StatAgility": 0.007866493,
-    "StatArmorPenetration": 6.250942e-05,
-    "StatAttackPower": 0.0001299555,
-    "StatCritRating": 0.009285791,
-    "StatExpertiseRating": 0.03605241,
-    "StatHasteRating": 0.03103596,
-    "StatHitRating": 0.03616499,
-    "StatSpellPiercing": 0.0005740066,
-    "StatStrength": 0.000142951
+    "PseudoStatMainHandDps": 0.001387904,
+    "PseudoStatOffHandDps": 0.0007491835,
+    "StatAgility": 0.007824264,
+    "StatArmorPenetration": 6.293387e-05,
+    "StatAttackPower": 0.0001316616,
+    "StatCritRating": 0.008712917,
+    "StatExpertiseRating": 0.03624105,
+    "StatHasteRating": 0.03080719,
+    "StatHitRating": 0.03640201,
+    "StatSpellPiercing": 0.000567999,
+    "StatStrength": 0.0001448277
    }
   },
   "hit:rogue-hybrid-assassination-subtlety": {
@@ -1022,7 +1022,7 @@
     },
     "gear": "13404/1508 18404 271955 272414/849 252483/1891 18375/1885 271948/1887 272395 18736/1508 226831/1887 275981 18821 13965 11815 279259/1900 19168/1900 18323"
    },
-   "seconds": 42.1,
+   "seconds": 41.2,
    "weights": {
     "PseudoStatMainHandDps": 2.209609,
     "PseudoStatOffHandDps": 0.4860291,
@@ -1081,7 +1081,7 @@
     },
     "gear": "279253/1508 18404 271955 272414/849 252483/1891 18375/1885 271948/1887 272395 18736/1508 226831/1887 18821 275981 13965 18537 19168/1900 279259/1900 18323"
    },
-   "seconds": 42.4,
+   "seconds": 41.4,
    "weights": {
     "PseudoStatMainHandDps": 1.615658,
     "PseudoStatOffHandDps": 0.4997946,
@@ -1136,32 +1136,32 @@
     "duration": 180.0,
     "talents": "550033100301135-053-05305",
     "bonus_stats": {
-     "StatHitRating": -50.0
+     "StatHitRating": -40.0
     },
-    "gear": "22267/1509 18814 19050 272411 21183/1891 21186/1883 12632 18405 252486/1509 22240/911 19147 19147 18820 13968 20069/2504 0 23199"
+    "gear": "22267/1509 18814 19050 272411 13314/1891 18497/1883 17721 18405 252486/1509 22240/911 19147 272406 18820 13968 20069/2504 0 23199"
    },
-   "seconds": 23.1,
+   "seconds": 20.4,
    "weights": {
-    "StatCritRating": 0.3974164,
-    "StatFireDamage": 0.07256776,
-    "StatHasteRating": 0.5704604,
-    "StatHitRating": 0.818108,
-    "StatIntellect": 0.2068548,
-    "StatNatureDamage": 0.4780935,
-    "StatSpellDamage": 0.5506613,
-    "StatSpellPiercing": 1.29468,
-    "StatSpirit": 0.08799611
+    "StatCritRating": 0.3945086,
+    "StatFireDamage": 0.07260415,
+    "StatHasteRating": 0.5330605,
+    "StatHitRating": 0.7907701,
+    "StatIntellect": 0.1554954,
+    "StatNatureDamage": 0.4802862,
+    "StatSpellDamage": 0.5528904,
+    "StatSpellPiercing": 1.26787,
+    "StatSpirit": 0.01420388
    },
    "se": {
-    "StatCritRating": 0.004638616,
-    "StatFireDamage": 5.586612e-05,
-    "StatHasteRating": 0.03633115,
-    "StatHitRating": 0.04029486,
-    "StatIntellect": 0.02247257,
-    "StatNatureDamage": 0.0003771093,
-    "StatSpellDamage": 0.0003858149,
-    "StatSpellPiercing": 0.004584476,
-    "StatSpirit": 0.01823487
+    "StatCritRating": 0.004614313,
+    "StatFireDamage": 5.540006e-05,
+    "StatHasteRating": 0.0362009,
+    "StatHitRating": 0.04061212,
+    "StatIntellect": 0.02622433,
+    "StatNatureDamage": 0.0003771383,
+    "StatSpellDamage": 0.0003845833,
+    "StatSpellPiercing": 0.005230562,
+    "StatSpirit": 0.01859487
    }
   },
   "hit:shaman-enhancement": {
@@ -1191,44 +1191,44 @@
     "duration": 180.0,
     "talents": "5005031-155030010151012051-051",
     "bonus_stats": {
-     "StatHitRating": -57.0
+     "StatHitRating": -125.0
     },
-    "gear": "252605/1506 18404 19050 18496/849 252484/1891 21186/1885 14615/927 18405 252486/1506 14616/1887 18821 21182 13213 19120 21188/1900 0 23199"
+    "gear": "13404/1506 18404 12927 272411/849 252483/1891 12966/1885 21278/927 13956 252486/1506 14616/1887 272406 275981 13965 11815 19169/1900 0 23199"
    },
-   "seconds": 19.1,
+   "seconds": 20.1,
    "weights": {
-    "PseudoStatMainHandDps": 2.302951,
-    "StatAgility": 0.2326293,
-    "StatArmorPenetration": 0.06264452,
-    "StatAttackPower": 0.1626786,
-    "StatCritRating": 0.3969455,
-    "StatExpertiseRating": 0.6969628,
-    "StatFireDamage": 0.0843587,
-    "StatHasteRating": 0.3785045,
-    "StatHitRating": 1.031889,
-    "StatIntellect": 0.4494831,
-    "StatNatureDamage": 0.1176032,
-    "StatSpellDamage": 0.2019619,
-    "StatSpellPiercing": 0.5189429,
-    "StatSpirit": 0.04565536,
-    "StatStrength": 0.3578929
+    "PseudoStatMainHandDps": 2.192696,
+    "StatAgility": 0.2474516,
+    "StatArmorPenetration": 0.0575424,
+    "StatAttackPower": 0.1548812,
+    "StatCritRating": 0.4030403,
+    "StatExpertiseRating": 0.6582678,
+    "StatFireDamage": 0.08326283,
+    "StatHasteRating": 0.370188,
+    "StatHitRating": 0.9783297,
+    "StatIntellect": 0.4532448,
+    "StatNatureDamage": 0.1175257,
+    "StatSpellDamage": 0.2007886,
+    "StatSpellPiercing": 0.4837739,
+    "StatSpirit": 0.06153435,
+    "StatStrength": 0.3407386
    },
    "se": {
-    "PseudoStatMainHandDps": 0.0026637,
-    "StatAgility": 0.009720725,
-    "StatArmorPenetration": 7.907639e-05,
-    "StatAttackPower": 0.0001896105,
-    "StatCritRating": 0.009092465,
-    "StatExpertiseRating": 0.03271207,
-    "StatFireDamage": 5.314118e-05,
-    "StatHasteRating": 0.02378119,
-    "StatHitRating": 0.03392566,
-    "StatIntellect": 0.0148908,
-    "StatNatureDamage": 0.0001438964,
-    "StatSpellDamage": 0.0001617912,
-    "StatSpellPiercing": 0.00223044,
-    "StatSpirit": 0.01124885,
-    "StatStrength": 0.000417143
+    "PseudoStatMainHandDps": 0.002626493,
+    "StatAgility": 0.01002807,
+    "StatArmorPenetration": 7.510226e-05,
+    "StatAttackPower": 0.0001868452,
+    "StatCritRating": 0.009454331,
+    "StatExpertiseRating": 0.03234237,
+    "StatFireDamage": 5.690211e-05,
+    "StatHasteRating": 0.02366771,
+    "StatHitRating": 0.03369198,
+    "StatIntellect": 0.01712386,
+    "StatNatureDamage": 0.0001530573,
+    "StatSpellDamage": 0.0001756259,
+    "StatSpellPiercing": 0.002088929,
+    "StatSpirit": 0.01398149,
+    "StatStrength": 0.0004110594
    }
   },
   "hit:shaman-hybrid-elemental-enhancement": {
@@ -1258,32 +1258,32 @@
     "duration": 180.0,
     "talents": "550233100200134-255000013400002",
     "bonus_stats": {
-     "StatHitRating": -60.0
+     "StatHitRating": -40.0
     },
-    "gear": "252604/1509 18814 272957 272411 13314/1891 21186/1883 12632 18405 252486/1509 22240/911 272406 19147 18820 272438 20069/2504 0 23199"
+    "gear": "252604/1509 18814 272957 272411 13314/1891 18497/1883 17721 18405 252486/1509 22240/911 272406 19147 18820 272438 20069/2504 0 23199"
    },
-   "seconds": 18.1,
+   "seconds": 17.7,
    "weights": {
-    "StatCritRating": 0.3655776,
-    "StatFireDamage": 0.06884621,
-    "StatHasteRating": 0.6053911,
-    "StatHitRating": 1.01585,
-    "StatIntellect": 0.4538504,
-    "StatNatureDamage": 0.4263993,
-    "StatSpellDamage": 0.4952455,
-    "StatSpellPiercing": 1.243558,
-    "StatSpirit": 0.004106094
+    "StatCritRating": 0.3672074,
+    "StatFireDamage": 0.06909554,
+    "StatHasteRating": 0.6241567,
+    "StatHitRating": 0.9024978,
+    "StatIntellect": 0.4440719,
+    "StatNatureDamage": 0.4275504,
+    "StatSpellDamage": 0.496646,
+    "StatSpellPiercing": 1.256238,
+    "StatSpirit": 1.665421e-05
    },
    "se": {
-    "StatCritRating": 0.004476182,
-    "StatFireDamage": 5.214677e-05,
-    "StatHasteRating": 0.0410659,
-    "StatHitRating": 0.042692,
-    "StatIntellect": 0.03162845,
-    "StatNatureDamage": 0.0003913298,
-    "StatSpellDamage": 0.0004021072,
-    "StatSpellPiercing": 0.005416472,
-    "StatSpirit": 0.002831292
+    "StatCritRating": 0.00446675,
+    "StatFireDamage": 5.121907e-05,
+    "StatHasteRating": 0.04085285,
+    "StatHitRating": 0.04326655,
+    "StatIntellect": 0.03081427,
+    "StatNatureDamage": 0.0003883693,
+    "StatSpellDamage": 0.0003981155,
+    "StatSpellPiercing": 0.00544788,
+    "StatSpirit": 0.003405642
    }
   },
   "hit:warlock-affliction": {
@@ -1313,32 +1313,32 @@
     "duration": 180.0,
     "talents": "2550002013520005--0550305003",
     "bonus_stats": {
-     "StatHitRating": -40.0
+     "StatHitRating": -30.0
     },
-    "gear": "22267/1509 18814 19050 272411 14153/1891 21186/1883 14146 18405 19165/1509 11822/911 19147 19147 272438 18820 22383/2504 18316 13938"
+    "gear": "22267/1509 18814 19050 272411 14153/1891 18497/1883 14146 18405 19165/1509 275606/911 19147 19147 272438 18820 22383/2504 18316 13396"
    },
-   "seconds": 21.5,
+   "seconds": 23.9,
    "weights": {
-    "StatCritRating": 0.617431,
-    "StatFireDamage": 0.06892069,
-    "StatHasteRating": 0.5569767,
-    "StatHitRating": 0.8875127,
-    "StatIntellect": 0.2787225,
-    "StatShadowDamage": 0.5907789,
-    "StatSpellDamage": 0.6596996,
-    "StatSpellPiercing": 0.8989307,
-    "StatSpirit": 0.09158544
+    "StatCritRating": 0.6130813,
+    "StatFireDamage": 0.06886516,
+    "StatHasteRating": 0.5320468,
+    "StatHitRating": 0.8661839,
+    "StatIntellect": 0.2342905,
+    "StatShadowDamage": 0.59036,
+    "StatSpellDamage": 0.6592251,
+    "StatSpellPiercing": 0.8907876,
+    "StatSpirit": 0.06909671
    },
    "se": {
-    "StatCritRating": 0.007818634,
-    "StatFireDamage": 6.081027e-05,
-    "StatHasteRating": 0.0412585,
-    "StatHitRating": 0.05059401,
-    "StatIntellect": 0.03395401,
-    "StatShadowDamage": 0.0005073951,
-    "StatSpellDamage": 0.0005151872,
-    "StatSpellPiercing": 0.004313222,
-    "StatSpirit": 0.02370442
+    "StatCritRating": 0.007759977,
+    "StatFireDamage": 5.90158e-05,
+    "StatHasteRating": 0.04051583,
+    "StatHitRating": 0.04921687,
+    "StatIntellect": 0.03323572,
+    "StatShadowDamage": 0.0005006064,
+    "StatSpellDamage": 0.0005093732,
+    "StatSpellPiercing": 0.004314351,
+    "StatSpirit": 0.02330464
    }
   },
   "hit:warlock-demonology": {
@@ -1368,32 +1368,32 @@
     "duration": 180.0,
     "talents": "011-0025003031220301351-0550005003",
     "bonus_stats": {
-     "StatHitRating": -40.0
+     "StatHitRating": -30.0
     },
-    "gear": "22267/1509 18814 19050 272411 14153/1891 21186/1883 14146 18405 19165/1509 11822/911 19147 19147 272438 18820 22383/2504 18316 13938"
+    "gear": "22267/1509 18814 19050 272411 14153/1891 18497/1883 14146 18405 19165/1509 11822/911 19147 19147 272438 18820 22383/2504 18316 13938"
    },
-   "seconds": 22.7,
+   "seconds": 23.0,
    "weights": {
-    "StatCritRating": 0.600582,
-    "StatFireDamage": 0.06597725,
-    "StatHasteRating": 0.5950995,
-    "StatHitRating": 1.029212,
-    "StatIntellect": 0.360531,
-    "StatShadowDamage": 0.576954,
-    "StatSpellDamage": 0.6429312,
-    "StatSpellPiercing": 0.9566461,
-    "StatSpirit": 0.1092673
+    "StatCritRating": 0.5920682,
+    "StatFireDamage": 0.06584459,
+    "StatHasteRating": 0.5862315,
+    "StatHitRating": 1.004503,
+    "StatIntellect": 0.2915295,
+    "StatShadowDamage": 0.5798434,
+    "StatSpellDamage": 0.645688,
+    "StatSpellPiercing": 0.9549078,
+    "StatSpirit": 0.07725247
    },
    "se": {
-    "StatCritRating": 0.009000538,
-    "StatFireDamage": 6.919283e-05,
-    "StatHasteRating": 0.0463027,
-    "StatHitRating": 0.05592825,
-    "StatIntellect": 0.03966289,
-    "StatShadowDamage": 0.0005514164,
-    "StatSpellDamage": 0.0005563874,
-    "StatSpellPiercing": 0.00519042,
-    "StatSpirit": 0.02985638
+    "StatCritRating": 0.008978652,
+    "StatFireDamage": 6.985701e-05,
+    "StatHasteRating": 0.04519981,
+    "StatHitRating": 0.05694622,
+    "StatIntellect": 0.03949292,
+    "StatShadowDamage": 0.0005424887,
+    "StatSpellDamage": 0.0005507955,
+    "StatSpellPiercing": 0.004993814,
+    "StatSpirit": 0.0271367
    }
   },
   "hit:warlock-destruction": {
@@ -1423,32 +1423,32 @@
     "duration": 180.0,
     "talents": "252-0050203001-055031500310035",
     "bonus_stats": {
-     "StatHitRating": -40.0
+     "StatHitRating": -30.0
     },
-    "gear": "22267/1509 18814 19050 272411 14153/1891 21186/1883 14146 18405 19165/1509 11822/911 19147 19147 272438 18820 22383/2504 18316 13938"
+    "gear": "22267/1509 18814 19050 272411 14153/1891 18497/1883 14146 18405 19165/1509 11822/911 19147 19147 18820 13968 22383/2504 18316 13938"
    },
-   "seconds": 17.6,
+   "seconds": 16.9,
    "weights": {
-    "StatCritRating": 0.5450396,
-    "StatFireDamage": 0.1135009,
-    "StatHasteRating": 0.600117,
-    "StatHitRating": 0.9035801,
-    "StatIntellect": 0.2825475,
-    "StatShadowDamage": 0.5591672,
-    "StatSpellDamage": 0.672668,
-    "StatSpellPiercing": 1.01822,
-    "StatSpirit": 0.07490163
+    "StatCritRating": 0.5448822,
+    "StatFireDamage": 0.1148141,
+    "StatHasteRating": 0.6281598,
+    "StatHitRating": 0.9352115,
+    "StatIntellect": 0.2651325,
+    "StatShadowDamage": 0.5724195,
+    "StatSpellDamage": 0.6872336,
+    "StatSpellPiercing": 1.000953,
+    "StatSpirit": 0.07768424
    },
    "se": {
-    "StatCritRating": 0.008437399,
-    "StatFireDamage": 0.0001360394,
-    "StatHasteRating": 0.0405165,
-    "StatHitRating": 0.0493544,
-    "StatIntellect": 0.0352548,
-    "StatShadowDamage": 0.0005094971,
-    "StatSpellDamage": 0.0005433216,
-    "StatSpellPiercing": 0.004982906,
-    "StatSpirit": 0.02388298
+    "StatCritRating": 0.008407492,
+    "StatFireDamage": 0.0001314047,
+    "StatHasteRating": 0.04485924,
+    "StatHitRating": 0.05139986,
+    "StatIntellect": 0.03530572,
+    "StatShadowDamage": 0.0005085811,
+    "StatSpellDamage": 0.0005418694,
+    "StatSpellPiercing": 0.004882615,
+    "StatSpirit": 0.02313946
    }
   },
   "hit:warrior-arms": {
@@ -1478,32 +1478,32 @@
     "duration": 180.0,
     "talents": "05303213132215201-55050000002",
     "bonus_stats": {
-     "StatHitRating": -80.0
+     "StatHitRating": -67.0
     },
-    "gear": "12640/1506 15411 271955 13340/849 252484/1891 21184/1885 21278/927 20043 22385/1506 226857/1887 18821 21182 11815 13213 19169/1900 0 12653"
+    "gear": "12640/1506 15411 271955 13340/849 252484/1891 13400/1885 21278/927 20043 22385/1506 226857/1887 18821 13098 11815 19120 19169/1900 0 12653"
    },
-   "seconds": 26.5,
+   "seconds": 27.3,
    "weights": {
-    "PseudoStatMainHandDps": 4.000813,
-    "StatAgility": 0.465751,
-    "StatArmorPenetration": 0.1059258,
-    "StatAttackPower": 0.231892,
-    "StatCritRating": 0.603638,
-    "StatExpertiseRating": 0.3424529,
-    "StatHasteRating": 0.3511056,
-    "StatHitRating": 1.187928,
-    "StatStrength": 0.5101624
+    "PseudoStatMainHandDps": 4.024024,
+    "StatAgility": 0.4633633,
+    "StatArmorPenetration": 0.1059427,
+    "StatAttackPower": 0.2328683,
+    "StatCritRating": 0.5839605,
+    "StatExpertiseRating": 0.3203305,
+    "StatHasteRating": 0.3405582,
+    "StatHitRating": 1.155128,
+    "StatStrength": 0.5123103
    },
    "se": {
-    "PseudoStatMainHandDps": 0.003990197,
-    "StatAgility": 0.01568678,
-    "StatArmorPenetration": 0.0001084282,
-    "StatAttackPower": 0.0002139259,
-    "StatCritRating": 0.01475956,
-    "StatExpertiseRating": 0.06569683,
-    "StatHasteRating": 0.05414699,
-    "StatHitRating": 0.0721525,
-    "StatStrength": 0.0004706371
+    "PseudoStatMainHandDps": 0.003976503,
+    "StatAgility": 0.01529171,
+    "StatArmorPenetration": 0.000107675,
+    "StatAttackPower": 0.0002129869,
+    "StatCritRating": 0.01449004,
+    "StatExpertiseRating": 0.0647341,
+    "StatHasteRating": 0.05388933,
+    "StatHitRating": 0.07042383,
+    "StatStrength": 0.0004685711
    }
   },
   "hit:warrior-fury": {
@@ -1533,34 +1533,34 @@
     "duration": 180.0,
     "talents": "32303013032-050530310122120231",
     "bonus_stats": {
-     "StatHitRating": -120.0
+     "StatHitRating": -110.0
     },
-    "gear": "12640/1506 18404 287022 272414/849 252484/1891 12936/1885 271940/927 20043 22385/1506 287033/1887 21182 275981 272437 11815 279259/1900 22384/1900 18323"
+    "gear": "12640/1506 18404 271955 272414/849 252484/1891 12936/1885 271940/927 20043 22385/1506 287033/1887 18821 275981 13965 272437 22384/1900 279259/1900 18323"
    },
-   "seconds": 36.8,
+   "seconds": 36.5,
    "weights": {
-    "PseudoStatMainHandDps": 2.709972,
-    "PseudoStatOffHandDps": 0.7722608,
-    "StatAgility": 0.3167996,
-    "StatArmorPenetration": 0.1087239,
-    "StatAttackPower": 0.2536851,
-    "StatCritRating": 0.4659958,
-    "StatExpertiseRating": 1.495447,
-    "StatHasteRating": 0.5860915,
-    "StatHitRating": 1.475904,
-    "StatStrength": 0.5581072
+    "PseudoStatMainHandDps": 2.992429,
+    "PseudoStatOffHandDps": 0.7582469,
+    "StatAgility": 0.3131674,
+    "StatArmorPenetration": 0.1107883,
+    "StatAttackPower": 0.258246,
+    "StatCritRating": 0.4656259,
+    "StatExpertiseRating": 1.456931,
+    "StatHasteRating": 0.6247154,
+    "StatHitRating": 1.497062,
+    "StatStrength": 0.5681411
    },
    "se": {
-    "PseudoStatMainHandDps": 0.003047226,
-    "PseudoStatOffHandDps": 0.000712791,
-    "StatAgility": 0.02988714,
-    "StatArmorPenetration": 0.0001010629,
-    "StatAttackPower": 0.0002113053,
-    "StatCritRating": 0.02675275,
-    "StatExpertiseRating": 0.07139291,
-    "StatHasteRating": 0.0537566,
-    "StatHitRating": 0.07095035,
-    "StatStrength": 0.0004648716
+    "PseudoStatMainHandDps": 0.003384006,
+    "PseudoStatOffHandDps": 0.0007019482,
+    "StatAgility": 0.03181583,
+    "StatArmorPenetration": 0.0001060227,
+    "StatAttackPower": 0.0002228815,
+    "StatCritRating": 0.02799614,
+    "StatExpertiseRating": 0.07663953,
+    "StatHasteRating": 0.05763566,
+    "StatHitRating": 0.07679575,
+    "StatStrength": 0.0004903393
    }
   },
   "ml:druid-balance": {
@@ -1588,32 +1588,32 @@
     "iterations": 3000,
     "seed": 1,
     "duration": 180.0,
-    "talents": "5532220115501051--0553",
+    "talents": "0532220115501051--5553",
     "bonus_stats": null,
-    "gear": "22267/1509 18814 19050 272411 21183/1891 21186/1883 21178 18405 252486/1509 18322/911 19147 275982 18820 272438 20069/2504 0 272430"
+    "gear": "22267/1509 18814 19050 272411 13314/1891 18497/1883 17721 18405 252486/1509 18322/911 19147 275982 18820 272438 20069/2504 0 272430"
    },
-   "seconds": 7.5,
+   "seconds": 6.7,
    "weights": {
-    "StatArcaneDamage": 0.5039784,
-    "StatCritRating": 0.4230908,
-    "StatHasteRating": 0.8146936,
-    "StatHitRating": 0.6747089,
-    "StatIntellect": 0.1292277,
-    "StatNatureDamage": 0.1272663,
-    "StatSpellDamage": 0.6312447,
-    "StatSpellPiercing": 1.311002,
-    "StatSpirit": -0.0005210213
+    "StatArcaneDamage": 0.4985768,
+    "StatCritRating": 0.4481775,
+    "StatHasteRating": 0.7878963,
+    "StatHitRating": 0.6526273,
+    "StatIntellect": 0.1320093,
+    "StatNatureDamage": 0.1272329,
+    "StatSpellDamage": 0.6258096,
+    "StatSpellPiercing": 1.249694,
+    "StatSpirit": 8.325613e-05
    },
    "se": {
-    "StatArcaneDamage": 0.0005604673,
-    "StatCritRating": 0.01294621,
-    "StatHasteRating": 0.04964089,
-    "StatHitRating": 0.04747168,
-    "StatIntellect": 0.008765913,
-    "StatNatureDamage": 9.215517e-05,
-    "StatSpellDamage": 0.0005760122,
-    "StatSpellPiercing": 0.01457474,
-    "StatSpirit": 0.001562003
+    "StatArcaneDamage": 0.0005634303,
+    "StatCritRating": 0.01279936,
+    "StatHasteRating": 0.04921789,
+    "StatHitRating": 0.04789824,
+    "StatIntellect": 0.007988177,
+    "StatNatureDamage": 9.227679e-05,
+    "StatSpellDamage": 0.0005763209,
+    "StatSpellPiercing": 0.01187577,
+    "StatSpirit": 0.00106188
    }
   },
   "ml:druid-feral-combat": {
@@ -1641,40 +1641,40 @@
     "iterations": 3000,
     "seed": 1,
     "duration": 180.0,
-    "talents": "05002-55000032023012125001-05502",
+    "talents": "050022-55000032023012125001-055",
     "bonus_stats": null,
-    "gear": "279253/1508 19491 271955 13340/849 252484/1891 18375/1885 271948/1887 272396 15065/1508 20715/1887 18821 21182 13965 18371 279261/1900 0 23197"
+    "gear": "279253/1508 19491 271955 13340/849 252484/1891 18375/1885 271948/1887 272396 15065/1508 12553/1887 18821 272408 13965 18371 279261/1900 0 23197"
    },
-   "seconds": 24.5,
+   "seconds": 27.6,
    "weights": {
-    "PseudoStatMainHandDps": 2.304552,
-    "StatAgility": 0.6943276,
-    "StatArmorPenetration": 0.07969345,
-    "StatAttackPower": 0.262561,
-    "StatCritRating": 0.5375788,
-    "StatExpertiseRating": 0.5408734,
-    "StatFeralAttackPower": 0.262561,
-    "StatHasteRating": 0.2007504,
-    "StatHitRating": 0.5677079,
-    "StatIntellect": 0.0002674612,
-    "StatSpellPiercing": 0.008224019,
-    "StatSpirit": 0.0,
-    "StatStrength": 0.6301465
+    "PseudoStatMainHandDps": 2.383983,
+    "StatAgility": 0.7078417,
+    "StatArmorPenetration": 0.08219368,
+    "StatAttackPower": 0.2685907,
+    "StatCritRating": 0.5340174,
+    "StatExpertiseRating": 0.5427933,
+    "StatFeralAttackPower": 0.2685907,
+    "StatHasteRating": 0.2328361,
+    "StatHitRating": 0.5569799,
+    "StatIntellect": 0.0002361312,
+    "StatSpellPiercing": 0.008348103,
+    "StatSpirit": -4.899458e-06,
+    "StatStrength": 0.6446178
    },
    "se": {
-    "PseudoStatMainHandDps": 0.001661292,
-    "StatAgility": 0.01048501,
-    "StatArmorPenetration": 7.829427e-05,
-    "StatAttackPower": 0.0001421446,
-    "StatCritRating": 0.01062862,
-    "StatExpertiseRating": 0.04358954,
-    "StatFeralAttackPower": 0.0001421446,
-    "StatHasteRating": 0.03544315,
-    "StatHitRating": 0.04379252,
-    "StatIntellect": 0.0001351258,
-    "StatSpellPiercing": 0.000446633,
-    "StatSpirit": 0.0,
-    "StatStrength": 0.000341147
+    "PseudoStatMainHandDps": 0.0016325,
+    "StatAgility": 0.01120769,
+    "StatArmorPenetration": 7.952879e-05,
+    "StatAttackPower": 0.0001396852,
+    "StatCritRating": 0.01046547,
+    "StatExpertiseRating": 0.04257911,
+    "StatFeralAttackPower": 0.0001396852,
+    "StatHasteRating": 0.03635628,
+    "StatHitRating": 0.04285213,
+    "StatIntellect": 0.0001186654,
+    "StatSpellPiercing": 0.0004452224,
+    "StatSpirit": 6.598716e-05,
+    "StatStrength": 0.0003352444
    }
   },
   "ml:hunter-beast-mastery": {
@@ -1702,36 +1702,36 @@
     "iterations": 3000,
     "seed": 1,
     "duration": 180.0,
-    "talents": "5420001505001251-0053250001-4",
+    "talents": "5120201505101251-0053350001-3",
     "bonus_stats": null,
-    "gear": "252605/1508 15411 271955 13340/849 252483/1891 18375/1885 271948/1887 19163 18524/1508 18506/1887 18821 13098 13965 18537 250619/1900 0 18713/2523"
+    "gear": "252605/1508 15411 271955 13340/849 252483/1891 18375/1885 271948/1887 18393 18524/1508 18506/1887 18821 18403 13965 18537 250619/1900 0 18713/2523"
    },
-   "seconds": 20.9,
+   "seconds": 20.8,
    "weights": {
-    "PseudoStatRangedDps": 1.847189,
-    "StatAgility": 0.6584372,
-    "StatArmorPenetration": 0.06371815,
-    "StatCritRating": 0.5991922,
-    "StatExpertiseRating": 0.2551711,
-    "StatHasteRating": 0.4381979,
-    "StatHitRating": 0.8328749,
-    "StatIntellect": 0.2475145,
-    "StatRangedAttackPower": 0.2208109,
-    "StatSpellPiercing": 0.2822714,
-    "StatSpirit": 0.003868419
+    "PseudoStatRangedDps": 1.838934,
+    "StatAgility": 0.6594679,
+    "StatArmorPenetration": 0.06293548,
+    "StatCritRating": 0.6025284,
+    "StatExpertiseRating": 0.2664432,
+    "StatHasteRating": 0.4277214,
+    "StatHitRating": 0.8311144,
+    "StatIntellect": 0.2424179,
+    "StatRangedAttackPower": 0.2201584,
+    "StatSpellPiercing": 0.2788357,
+    "StatSpirit": 0.0001750409
    },
    "se": {
-    "PseudoStatRangedDps": 0.001647266,
-    "StatAgility": 0.005697891,
-    "StatArmorPenetration": 5.96973e-05,
-    "StatCritRating": 0.00835666,
-    "StatExpertiseRating": 0.02660821,
-    "StatHasteRating": 0.0336879,
-    "StatHitRating": 0.03585498,
-    "StatIntellect": 0.001176519,
-    "StatRangedAttackPower": 0.0001287889,
-    "StatSpellPiercing": 0.002627737,
-    "StatSpirit": 0.001233064
+    "PseudoStatRangedDps": 0.001643199,
+    "StatAgility": 0.005168607,
+    "StatArmorPenetration": 5.90756e-05,
+    "StatCritRating": 0.008091163,
+    "StatExpertiseRating": 0.02584168,
+    "StatHasteRating": 0.03330438,
+    "StatHitRating": 0.03503522,
+    "StatIntellect": 0.0002372813,
+    "StatRangedAttackPower": 0.0001280972,
+    "StatSpellPiercing": 0.002601583,
+    "StatSpirit": 0.0002009376
    }
   },
   "ml:hunter-hybrid-beast-mastery-marksmanship": {
@@ -1759,36 +1759,36 @@
     "iterations": 3000,
     "seed": 1,
     "duration": 180.0,
-    "talents": "522010150501123-10531500014-3",
+    "talents": "522020150501022-00533500015-2",
     "bonus_stats": null,
-    "gear": "252605/1508 15411 271955 13340/849 252483/1891 18375/1885 271948/1887 18393 18524/1508 18506/1887 18821 13098 13965 18537 250619/1900 0 18713/2523"
+    "gear": "252605/1508 15411 271955 13340/849 252483/1891 18375/1885 271948/1887 18393 18524/1508 18506/1887 18821 18403 13965 18537 250619/1900 0 18713/2523"
    },
-   "seconds": 18.5,
+   "seconds": 19.4,
    "weights": {
-    "PseudoStatRangedDps": 1.929689,
-    "StatAgility": 0.6849024,
-    "StatArmorPenetration": 0.06601821,
-    "StatCritRating": 0.6750792,
-    "StatExpertiseRating": 0.2549462,
-    "StatHasteRating": 0.4012013,
-    "StatHitRating": 0.8530038,
-    "StatIntellect": 0.2542398,
-    "StatRangedAttackPower": 0.2267737,
-    "StatSpellPiercing": 0.2934784,
-    "StatSpirit": 0.005401084
+    "PseudoStatRangedDps": 1.932646,
+    "StatAgility": 0.7283893,
+    "StatArmorPenetration": 0.06617295,
+    "StatCritRating": 0.7515035,
+    "StatExpertiseRating": 0.3283361,
+    "StatHasteRating": 0.4268311,
+    "StatHitRating": 0.8825534,
+    "StatIntellect": 0.2491383,
+    "StatRangedAttackPower": 0.2264894,
+    "StatSpellPiercing": 0.2943375,
+    "StatSpirit": -5.326993e-05
    },
    "se": {
-    "PseudoStatRangedDps": 0.001884661,
-    "StatAgility": 0.01444016,
-    "StatArmorPenetration": 6.750486e-05,
-    "StatCritRating": 0.01924734,
-    "StatExpertiseRating": 0.04275431,
-    "StatHasteRating": 0.03864841,
-    "StatHitRating": 0.04789794,
-    "StatIntellect": 0.001289364,
-    "StatRangedAttackPower": 0.0001482119,
-    "StatSpellPiercing": 0.002723069,
-    "StatSpirit": 0.001754357
+    "PseudoStatRangedDps": 0.001931237,
+    "StatAgility": 0.01739726,
+    "StatArmorPenetration": 6.867277e-05,
+    "StatCritRating": 0.02315274,
+    "StatExpertiseRating": 0.04702404,
+    "StatHasteRating": 0.04078058,
+    "StatHitRating": 0.05246091,
+    "StatIntellect": 0.0001674988,
+    "StatRangedAttackPower": 0.0001522716,
+    "StatSpellPiercing": 0.002748959,
+    "StatSpirit": 0.0001072692
    }
   },
   "ml:hunter-marksmanship": {
@@ -1816,36 +1816,36 @@
     "iterations": 3000,
     "seed": 1,
     "duration": 180.0,
-    "talents": "51220005050001-005355200122005",
+    "talents": "502-0053352501522051-5",
     "bonus_stats": null,
-    "gear": "252605/1508 15411 271955 13340/849 252483/1891 18375/1885 271948/1887 19163 18524/1508 18506/1887 18821 13098 13965 18537 250619/1900 0 18713/2523"
+    "gear": "252605/1508 15411 271955 13340/849 252483/1891 18375/1885 271948/1887 18393 18524/1508 13402/1887 18821 18403 13965 18537 250619/1900 0 18713/2523"
    },
-   "seconds": 18.1,
+   "seconds": 20.3,
    "weights": {
-    "PseudoStatRangedDps": 1.919508,
-    "StatAgility": 0.6370808,
-    "StatArmorPenetration": 0.06637276,
-    "StatCritRating": 0.5709076,
-    "StatExpertiseRating": 0.2276931,
-    "StatHasteRating": 0.4660879,
-    "StatHitRating": 0.8455665,
-    "StatIntellect": 0.235981,
-    "StatRangedAttackPower": 0.2145282,
-    "StatSpellPiercing": 0.2631564,
-    "StatSpirit": 4.845027e-05
+    "PseudoStatRangedDps": 2.261736,
+    "StatAgility": 0.7521918,
+    "StatArmorPenetration": 0.08148548,
+    "StatCritRating": 0.70994,
+    "StatExpertiseRating": 0.07651347,
+    "StatHasteRating": 0.4446985,
+    "StatHitRating": 1.056716,
+    "StatIntellect": 0.8555064,
+    "StatRangedAttackPower": 0.2490747,
+    "StatSpellPiercing": 0.3635017,
+    "StatSpirit": 0.1797883
    },
    "se": {
-    "PseudoStatRangedDps": 0.001729677,
-    "StatAgility": 0.003924022,
-    "StatArmorPenetration": 6.221888e-05,
-    "StatCritRating": 0.006265578,
-    "StatExpertiseRating": 0.02552468,
-    "StatHasteRating": 0.03542877,
-    "StatHitRating": 0.03721984,
-    "StatIntellect": 0.0001506761,
-    "StatRangedAttackPower": 0.0001369783,
-    "StatSpellPiercing": 0.002473654,
-    "StatSpirit": 5.661639e-05
+    "PseudoStatRangedDps": 0.002150814,
+    "StatAgility": 0.005290354,
+    "StatArmorPenetration": 8.548308e-05,
+    "StatCritRating": 0.008382194,
+    "StatExpertiseRating": 0.05210905,
+    "StatHasteRating": 0.06082952,
+    "StatHitRating": 0.06852368,
+    "StatIntellect": 0.01972568,
+    "StatRangedAttackPower": 0.0001814774,
+    "StatSpellPiercing": 0.003023094,
+    "StatSpirit": 0.02424963
    }
   },
   "ml:hunter-survival": {
@@ -1873,42 +1873,42 @@
     "iterations": 3000,
     "seed": 1,
     "duration": 180.0,
-    "talents": "5-005005001-500230230250222151",
+    "talents": "5-005055001-50023023015022212",
     "bonus_stats": null,
-    "gear": "252605/1508 18404 271955 21187/849 252483/1891 18375/1885 271948/1887 22232 18736/1508 13967/1887 18821 21182 11815 272437 19168/1900 279259/1900 18713"
+    "gear": "252605/1508 18404 271955 272414/849 252483/1891 18375/1885 271948/1887 20043 18736/1508 13967/1887 18821 275981 13965 11815 19168/1900 279259/1900 18713"
    },
-   "seconds": 16.5,
+   "seconds": 15.7,
    "weights": {
-    "PseudoStatMainHandDps": 2.386361,
-    "PseudoStatOffHandDps": 0.8700396,
-    "StatAgility": 0.4871216,
-    "StatArmorPenetration": 0.09839171,
-    "StatAttackPower": 0.2452688,
-    "StatCritRating": 0.502949,
-    "StatExpertiseRating": 0.8689203,
-    "StatHasteRating": 0.4880973,
-    "StatHitRating": 0.4875085,
-    "StatIntellect": 0.2893076,
-    "StatRangedAttackPower": 0.01118556,
-    "StatSpellPiercing": 0.09179996,
+    "PseudoStatMainHandDps": 2.283364,
+    "PseudoStatOffHandDps": 0.8495334,
+    "StatAgility": 0.4337775,
+    "StatArmorPenetration": 0.09421114,
+    "StatAttackPower": 0.2351284,
+    "StatCritRating": 0.4844565,
+    "StatExpertiseRating": 0.9071482,
+    "StatHasteRating": 0.4856847,
+    "StatHitRating": 0.5901504,
+    "StatIntellect": 0.2771694,
+    "StatRangedAttackPower": 0.01098798,
+    "StatSpellPiercing": 0.08881998,
     "StatSpirit": 0.0,
-    "StatStrength": 0.2697957
+    "StatStrength": 0.2586412
    },
    "se": {
-    "PseudoStatMainHandDps": 0.00269117,
-    "PseudoStatOffHandDps": 0.001431395,
-    "StatAgility": 0.00340351,
-    "StatArmorPenetration": 9.863102e-05,
-    "StatAttackPower": 0.0002421871,
-    "StatCritRating": 0.00506053,
-    "StatExpertiseRating": 0.04841735,
-    "StatHasteRating": 0.04135907,
-    "StatHitRating": 0.04132447,
-    "StatIntellect": 0.0006261863,
-    "StatRangedAttackPower": 1.252375e-05,
-    "StatSpellPiercing": 0.001372228,
+    "PseudoStatMainHandDps": 0.002622823,
+    "PseudoStatOffHandDps": 0.001450614,
+    "StatAgility": 0.003240593,
+    "StatArmorPenetration": 9.557109e-05,
+    "StatAttackPower": 0.0002356317,
+    "StatCritRating": 0.004987803,
+    "StatExpertiseRating": 0.04543789,
+    "StatHasteRating": 0.03983785,
+    "StatHitRating": 0.03934036,
+    "StatIntellect": 0.0005679867,
+    "StatRangedAttackPower": 1.528648e-05,
+    "StatSpellPiercing": 0.00133717,
     "StatSpirit": 0.0,
-    "StatStrength": 0.0002664058
+    "StatStrength": 0.0002591948
    }
   },
   "ml:mage-arcane": {
@@ -1936,32 +1936,32 @@
     "iterations": 3000,
     "seed": 1,
     "duration": 180.0,
-    "talents": "050205203100311531-5550000000001-003",
+    "talents": "041205203100211531-554000011001-003",
     "bonus_stats": null,
-    "gear": "22267/1509 18814 19050 272411 14152/1891 21186/1883 226930 18405 226933/1509 22231/911 272406 19147 18820 13503 22383/2504 22329 13938"
+    "gear": "22267/1509 18814 19050 272411 14152/1891 226929/1883 226930 18405 226933/1509 22231/911 272406 20682 18820 13503 22383/2504 18316 18761"
    },
-   "seconds": 11.0,
+   "seconds": 11.7,
    "weights": {
-    "StatArcaneDamage": 0.4655806,
-    "StatCritRating": 0.4334938,
-    "StatFireDamage": 0.05900106,
-    "StatHasteRating": 0.4897387,
-    "StatHitRating": 0.8322938,
-    "StatIntellect": 0.4746324,
-    "StatSpellDamage": 0.5245817,
-    "StatSpellPiercing": 1.40794,
-    "StatSpirit": 0.0912416
+    "StatArcaneDamage": 0.4414468,
+    "StatCritRating": 0.4520635,
+    "StatFireDamage": 0.1047736,
+    "StatHasteRating": 0.6664274,
+    "StatHitRating": 0.8743064,
+    "StatIntellect": 0.5356263,
+    "StatSpellDamage": 0.5462204,
+    "StatSpellPiercing": 1.401759,
+    "StatSpirit": 0.09442865
    },
    "se": {
-    "StatArcaneDamage": 0.0005263229,
-    "StatCritRating": 0.008473129,
-    "StatFireDamage": 0.0002119364,
-    "StatHasteRating": 0.0228017,
-    "StatHitRating": 0.04947369,
-    "StatIntellect": 0.0243642,
-    "StatSpellDamage": 0.0004826943,
-    "StatSpellPiercing": 0.005730028,
-    "StatSpirit": 0.02514273
+    "StatArcaneDamage": 0.0005494258,
+    "StatCritRating": 0.01113704,
+    "StatFireDamage": 0.0003755523,
+    "StatHasteRating": 0.02807525,
+    "StatHitRating": 0.05981739,
+    "StatIntellect": 0.02585914,
+    "StatSpellDamage": 0.0005179408,
+    "StatSpellPiercing": 0.005697569,
+    "StatSpirit": 0.02611442
    }
   },
   "ml:mage-fire": {
@@ -1989,32 +1989,32 @@
     "iterations": 3000,
     "seed": 1,
     "duration": 180.0,
-    "talents": "2302052010002-55500001130133031-003",
+    "talents": "2302052001002-55500001230123031-003",
     "bonus_stats": null,
-    "gear": "22267/1509 18814 19050 272411 14152/1891 21186/1883 14146 18405 19165/1509 13369/911 19147 19147 18820 13503 22383/2504 18316 11748"
+    "gear": "22267/1509 18814 19050 272411 14152/1891 226929/1883 226930 18405 226933/1509 22231/911 19147 19147 18820 13503 22383/2504 18316 13938"
    },
-   "seconds": 11.1,
+   "seconds": 11.2,
    "weights": {
-    "StatArcaneDamage": 0.03411307,
-    "StatCritRating": 0.5909776,
-    "StatFireDamage": 0.6120505,
-    "StatHasteRating": 0.5684974,
-    "StatHitRating": 1.08625,
-    "StatIntellect": 0.2844241,
-    "StatSpellDamage": 0.6461636,
-    "StatSpellPiercing": 1.448773,
-    "StatSpirit": 0.1757524
+    "StatArcaneDamage": 0.08252874,
+    "StatCritRating": 0.5122119,
+    "StatFireDamage": 0.5761867,
+    "StatHasteRating": 0.5988206,
+    "StatHitRating": 1.147161,
+    "StatIntellect": 0.2875762,
+    "StatSpellDamage": 0.6587155,
+    "StatSpellPiercing": 1.454933,
+    "StatSpirit": 0.06854449
    },
    "se": {
-    "StatArcaneDamage": 0.0002820153,
-    "StatCritRating": 0.03253177,
-    "StatFireDamage": 0.0007295468,
-    "StatHasteRating": 0.06066896,
-    "StatHitRating": 0.08498076,
-    "StatIntellect": 0.03185183,
-    "StatSpellDamage": 0.0006970165,
-    "StatSpellPiercing": 0.006640476,
-    "StatSpirit": 0.02636956
+    "StatArcaneDamage": 0.0003129569,
+    "StatCritRating": 0.02800272,
+    "StatFireDamage": 0.0006883938,
+    "StatHasteRating": 0.08120281,
+    "StatHitRating": 0.08497307,
+    "StatIntellect": 0.02373256,
+    "StatSpellDamage": 0.0006326571,
+    "StatSpellPiercing": 0.006463302,
+    "StatSpirit": 0.01838493
    }
   },
   "ml:mage-frost": {
@@ -2042,34 +2042,34 @@
     "iterations": 3000,
     "seed": 1,
     "duration": 180.0,
-    "talents": "0512152030001001--25353003012030021",
+    "talents": "0502252031000001--2535300301203012",
     "bonus_stats": null,
-    "gear": "22267/1509 18814 19050 272411 14152/1891 21186/1883 14146 18405 19165/1509 11822/911 19147 19147 18820 13503 22383/2504 18316 19108"
+    "gear": "22267/1509 18814 19050 272411 14152/1891 226929/1883 226930 18405 19165/1509 22231/911 19147 19147 18820 13503 22383/2504 18316 13938"
    },
-   "seconds": 7.6,
+   "seconds": 9.4,
    "weights": {
-    "StatArcaneDamage": 0.09404483,
-    "StatCritRating": 0.3049162,
-    "StatFireDamage": 0.001906345,
-    "StatFrostDamage": 0.3662618,
-    "StatHasteRating": 0.57062,
-    "StatHitRating": 0.7446189,
-    "StatIntellect": 0.0783099,
-    "StatSpellDamage": 0.4622129,
-    "StatSpellPiercing": 1.091194,
-    "StatSpirit": 0.0004269094
+    "StatArcaneDamage": 0.2100777,
+    "StatCritRating": 0.3058578,
+    "StatFireDamage": 0.001412016,
+    "StatFrostDamage": 0.2455087,
+    "StatHasteRating": 0.6360268,
+    "StatHitRating": 0.6617015,
+    "StatIntellect": 0.2130076,
+    "StatSpellDamage": 0.4569984,
+    "StatSpellPiercing": 1.114159,
+    "StatSpirit": -0.0009358311
    },
    "se": {
-    "StatArcaneDamage": 0.0003692977,
-    "StatCritRating": 0.006333591,
-    "StatFireDamage": 2.756749e-05,
-    "StatFrostDamage": 0.0004876383,
-    "StatHasteRating": 0.009528921,
-    "StatHitRating": 0.03443732,
-    "StatIntellect": 0.003833291,
-    "StatSpellDamage": 0.0004267886,
-    "StatSpellPiercing": 0.004773816,
-    "StatSpirit": 0.0005384232
+    "StatArcaneDamage": 0.0003668426,
+    "StatCritRating": 0.006057548,
+    "StatFireDamage": 2.800091e-05,
+    "StatFrostDamage": 0.0003912632,
+    "StatHasteRating": 0.02206827,
+    "StatHitRating": 0.03182239,
+    "StatIntellect": 0.003991841,
+    "StatSpellDamage": 0.0003636117,
+    "StatSpellPiercing": 0.004404013,
+    "StatSpirit": 0.002139422
    }
   },
   "ml:mage-hybrid-arcane-frost": {
@@ -2097,34 +2097,34 @@
     "iterations": 3000,
     "seed": 1,
     "duration": 180.0,
-    "talents": "14020520310030053--0535000301003002",
+    "talents": "03220421310101053-55-0535",
     "bonus_stats": null,
-    "gear": "22267/1509 18814 19050 272411 14152/1891 21186/1883 14146 18405 19165/1509 22231/911 19147 19147 18820 13503 22383/2504 18316 13938"
+    "gear": "22267/1509 18814 19050 272411 14152/1891 226929/1883 14146 18405 226933/1509 22231/911 19147 19147 18820 13503 22383/2504 18316 13938"
    },
-   "seconds": 7.9,
+   "seconds": 8.4,
    "weights": {
-    "StatArcaneDamage": 0.2425873,
-    "StatCritRating": 0.3768175,
-    "StatFireDamage": 0.001385757,
-    "StatFrostDamage": 0.2617768,
-    "StatHasteRating": 0.7067689,
-    "StatHitRating": 0.7792667,
-    "StatIntellect": 0.2514139,
-    "StatSpellDamage": 0.5057499,
-    "StatSpellPiercing": 1.275311,
-    "StatSpirit": 0.0004798918
+    "StatArcaneDamage": 0.3395301,
+    "StatCritRating": 0.3818073,
+    "StatFireDamage": 0.001388268,
+    "StatFrostDamage": 0.1617379,
+    "StatHasteRating": 0.547288,
+    "StatHitRating": 0.7358795,
+    "StatIntellect": 0.3426958,
+    "StatSpellDamage": 0.5026562,
+    "StatSpellPiercing": 1.257548,
+    "StatSpirit": 0.0003071442
    },
    "se": {
-    "StatArcaneDamage": 0.0004446634,
-    "StatCritRating": 0.006533251,
-    "StatFireDamage": 2.857509e-05,
-    "StatFrostDamage": 0.0004287494,
-    "StatHasteRating": 0.0233864,
-    "StatHitRating": 0.03551067,
-    "StatIntellect": 0.004228741,
-    "StatSpellDamage": 0.0004391583,
-    "StatSpellPiercing": 0.005028933,
-    "StatSpirit": 0.001277808
+    "StatArcaneDamage": 0.0004775178,
+    "StatCritRating": 0.007355865,
+    "StatFireDamage": 3.011328e-05,
+    "StatFrostDamage": 0.0003262675,
+    "StatHasteRating": 0.02000819,
+    "StatHitRating": 0.03790729,
+    "StatIntellect": 0.005509806,
+    "StatSpellDamage": 0.0004408614,
+    "StatSpellPiercing": 0.005312139,
+    "StatSpirit": 0.003125094
    }
   },
   "ml:mage-hybrid-fire-frost": {
@@ -2152,30 +2152,30 @@
     "iterations": 3000,
     "seed": 1,
     "duration": 180.0,
-    "talents": "2030052-5550001102003301-20350003",
+    "talents": "-3550000123013303-2135000301113002",
     "bonus_stats": null,
-    "gear": "22267/1509 18814 19050 272411 14152/1891 21186/1883 14146 18405 19165/1509 13369/911 19147 19147 18820 13503 22383/2504 18316 13938"
+    "gear": "22267/1509 18814 19050 272411 14152/1891 18497/1883 14146 18405 19165/1509 13369/911 19147 19147 18820 13503 22383/2504 18316 11748"
    },
-   "seconds": 9.2,
+   "seconds": 9.1,
    "weights": {
-    "StatCritRating": 0.4991508,
-    "StatFireDamage": 0.4957653,
-    "StatHasteRating": 0.4804058,
-    "StatHitRating": 0.7131234,
-    "StatIntellect": 0.2125474,
-    "StatSpellDamage": 0.4957653,
-    "StatSpellPiercing": 0.4369017,
-    "StatSpirit": 0.0508218
+    "StatCritRating": 0.628109,
+    "StatFireDamage": 0.6492295,
+    "StatHasteRating": 0.7187855,
+    "StatHitRating": 1.084488,
+    "StatIntellect": 0.1957599,
+    "StatSpellDamage": 0.6492295,
+    "StatSpellPiercing": 0.7113446,
+    "StatSpirit": 0.04274192
    },
    "se": {
-    "StatCritRating": 0.01312746,
-    "StatFireDamage": 0.000684072,
-    "StatHasteRating": 0.01965086,
-    "StatHitRating": 0.04521124,
-    "StatIntellect": 0.01672537,
-    "StatSpellDamage": 0.000684072,
-    "StatSpellPiercing": 0.003867664,
-    "StatSpirit": 0.01456625
+    "StatCritRating": 0.03013077,
+    "StatFireDamage": 0.0009217674,
+    "StatHasteRating": 0.06602817,
+    "StatHitRating": 0.07619175,
+    "StatIntellect": 0.0500421,
+    "StatSpellDamage": 0.0009217674,
+    "StatSpellPiercing": 0.005954129,
+    "StatSpirit": 0.03711249
    }
   },
   "ml:paladin-hybrid-protection-retribution": {
@@ -2203,42 +2203,40 @@
     "iterations": 3000,
     "seed": 1,
     "duration": 180.0,
-    "talents": "050150002-533100002-252330011013003",
+    "talents": "050150002-543000002-252330011013003",
     "bonus_stats": null,
-    "gear": "12640/1506 15411 20058 13340/849 252484/1891 21184/1885 271940/927 19044 250598/1506 287033/1887 18821 275982 18820 13965 21188/1900 0 272435"
+    "gear": "12640/1506 18814 271955 13340/849 252484/1891 13400/1885 271940/927 19044 250598/1506 287033/1887 18821 275982 18820 13965 19167/1900 0 272435"
    },
-   "seconds": 17.4,
+   "seconds": 19.4,
    "weights": {
-    "PseudoStatMainHandDps": 2.50551,
-    "StatAgility": 0.2881508,
-    "StatArmorPenetration": 0.04602719,
-    "StatAttackPower": 0.1776427,
-    "StatCritRating": 0.406745,
-    "StatExpertiseRating": 0.7411529,
-    "StatHasteRating": 0.07440113,
-    "StatHitRating": 0.9715282,
-    "StatHolyDamage": 0.2667383,
-    "StatIntellect": 0.006993976,
-    "StatSpellDamage": 0.2667383,
-    "StatSpellPiercing": 0.0,
-    "StatSpirit": 0.0001364506,
-    "StatStrength": 0.4263425
+    "PseudoStatMainHandDps": 2.039582,
+    "StatAgility": 0.2557645,
+    "StatArmorPenetration": 0.04248991,
+    "StatAttackPower": 0.1536863,
+    "StatCritRating": 0.3583375,
+    "StatExpertiseRating": 0.5963961,
+    "StatHasteRating": 0.2495311,
+    "StatHitRating": 0.8055689,
+    "StatHolyDamage": 0.2621698,
+    "StatIntellect": 0.007149867,
+    "StatSpellDamage": 0.2621698,
+    "StatSpirit": 7.92047e-06,
+    "StatStrength": 0.3688471
    },
    "se": {
-    "PseudoStatMainHandDps": 0.003824766,
-    "StatAgility": 0.006271203,
-    "StatArmorPenetration": 8.261413e-05,
-    "StatAttackPower": 0.000272659,
-    "StatCritRating": 0.006086744,
-    "StatExpertiseRating": 0.03529456,
-    "StatHasteRating": 0.03530152,
-    "StatHitRating": 0.03785523,
-    "StatHolyDamage": 0.000259352,
-    "StatIntellect": 0.0002286019,
-    "StatSpellDamage": 0.000259352,
-    "StatSpellPiercing": 0.0,
-    "StatSpirit": 8.869133e-05,
-    "StatStrength": 0.0006543816
+    "PseudoStatMainHandDps": 0.002660704,
+    "StatAgility": 0.004972774,
+    "StatArmorPenetration": 6.110833e-05,
+    "StatAttackPower": 0.000193844,
+    "StatCritRating": 0.004865766,
+    "StatExpertiseRating": 0.02600251,
+    "StatHasteRating": 0.0285104,
+    "StatHitRating": 0.02770607,
+    "StatHolyDamage": 0.0002650396,
+    "StatIntellect": 0.0002336949,
+    "StatSpellDamage": 0.0002650396,
+    "StatSpirit": 7.91915e-06,
+    "StatStrength": 0.0004652257
    }
   },
   "ml:paladin-retribution": {
@@ -2266,42 +2264,42 @@
     "iterations": 3000,
     "seed": 1,
     "duration": 180.0,
-    "talents": "0502500121-4-05233011201301351",
+    "talents": "0502500121-4-32232021201301351",
     "bonus_stats": null,
-    "gear": "12640/1506 18814 20058 13340/849 252484/1891 21184/1885 271940/927 18405 250598/1506 287033/1887 18821 275982 18820 13965 21188/1900 0 272435"
+    "gear": "252605/1506 18814 19050 18496/849 252484/1891 13400/1885 271940/927 18405 250598/1506 287033/1887 18821 275982 18820 13965 19167/1900 0 272435"
    },
-   "seconds": 22.7,
+   "seconds": 24.1,
    "weights": {
-    "PseudoStatMainHandDps": 2.625957,
-    "StatAgility": 0.349752,
-    "StatArmorPenetration": 0.04376809,
-    "StatAttackPower": 0.18623,
-    "StatCritRating": 0.4659484,
-    "StatExpertiseRating": 0.9995797,
-    "StatHasteRating": 0.4309344,
-    "StatHitRating": 1.284941,
-    "StatHolyDamage": 0.3146477,
-    "StatIntellect": 0.2240652,
-    "StatSpellDamage": 0.3146477,
+    "PseudoStatMainHandDps": 2.027556,
+    "StatAgility": 0.3077522,
+    "StatArmorPenetration": 0.03879977,
+    "StatAttackPower": 0.1526675,
+    "StatCritRating": 0.4203571,
+    "StatExpertiseRating": 0.8119365,
+    "StatHasteRating": 0.5388991,
+    "StatHitRating": 1.079214,
+    "StatHolyDamage": 0.3287274,
+    "StatIntellect": 0.2444794,
+    "StatSpellDamage": 0.3287274,
     "StatSpellPiercing": 0.0,
-    "StatSpirit": 0.0002427787,
-    "StatStrength": 0.4469519
+    "StatSpirit": 0.0002505962,
+    "StatStrength": 0.366402
    },
    "se": {
-    "PseudoStatMainHandDps": 0.004215838,
-    "StatAgility": 0.006818668,
-    "StatArmorPenetration": 8.293031e-05,
-    "StatAttackPower": 0.0003006181,
-    "StatCritRating": 0.006456635,
-    "StatExpertiseRating": 0.04654084,
-    "StatHasteRating": 0.04687751,
-    "StatHitRating": 0.04918878,
-    "StatHolyDamage": 0.0003056102,
-    "StatIntellect": 0.0003675854,
-    "StatSpellDamage": 0.0003056102,
+    "PseudoStatMainHandDps": 0.00287853,
+    "StatAgility": 0.005400961,
+    "StatArmorPenetration": 6.049682e-05,
+    "StatAttackPower": 0.0002097424,
+    "StatCritRating": 0.005178818,
+    "StatExpertiseRating": 0.03802613,
+    "StatHasteRating": 0.03298352,
+    "StatHitRating": 0.03946062,
+    "StatHolyDamage": 0.0003248827,
+    "StatIntellect": 0.0004084342,
+    "StatSpellDamage": 0.0003248827,
     "StatSpellPiercing": 0.0,
-    "StatSpirit": 0.0002524892,
-    "StatStrength": 0.0007214835
+    "StatSpirit": 0.0004313005,
+    "StatStrength": 0.0005033818
    }
   },
   "ml:priest-hybrid-discipline-holy": {
@@ -2329,32 +2327,32 @@
     "iterations": 3000,
     "seed": 1,
     "duration": 180.0,
-    "talents": "50503513103-20505111002-51002",
+    "talents": "505235231030001001-30505101002-3",
     "bonus_stats": null,
-    "gear": "22267/1509 18814 19059 272411 21183/1891 21186/1883 20716 18405 19165/1509 275606/911 19147 20682 18820 11819 20070/2504 22253 13938"
+    "gear": "22267/1509 18814 19059 272411 18385/1891 18497/1883 13253 18405 19165/1509 275606/911 19147 20682 18820 11819 20070/2504 22253 13938"
    },
-   "seconds": 8.7,
+   "seconds": 9.0,
    "weights": {
-    "StatCritRating": 0.2050989,
-    "StatHasteRating": 0.2533458,
-    "StatHitRating": 0.2139815,
-    "StatHolyDamage": 0.3539497,
-    "StatIntellect": 0.0831902,
-    "StatShadowDamage": 0.1516716,
-    "StatSpellDamage": 0.5056213,
-    "StatSpellPiercing": 0.266792,
-    "StatSpirit": 0.01138896
+    "StatCritRating": 0.2025264,
+    "StatHasteRating": 0.2532325,
+    "StatHitRating": 0.2330606,
+    "StatHolyDamage": 0.3437685,
+    "StatIntellect": 0.08074013,
+    "StatShadowDamage": 0.1513136,
+    "StatSpellDamage": 0.4950821,
+    "StatSpellPiercing": 0.2698115,
+    "StatSpirit": 0.01486804
    },
    "se": {
-    "StatCritRating": 0.003181393,
-    "StatHasteRating": 0.01784881,
-    "StatHitRating": 0.01272765,
-    "StatHolyDamage": 0.0001587067,
-    "StatIntellect": 0.007187336,
-    "StatShadowDamage": 0.0001067377,
-    "StatSpellDamage": 0.0001901769,
-    "StatSpellPiercing": 0.002478143,
-    "StatSpirit": 0.006102899
+    "StatCritRating": 0.003154365,
+    "StatHasteRating": 0.01524957,
+    "StatHitRating": 0.0132815,
+    "StatHolyDamage": 0.0001577489,
+    "StatIntellect": 0.007881626,
+    "StatShadowDamage": 0.00012944,
+    "StatSpellDamage": 0.0002031952,
+    "StatSpellPiercing": 0.002527155,
+    "StatSpirit": 0.00662885
    }
   },
   "ml:priest-shadow": {
@@ -2382,30 +2380,30 @@
     "iterations": 3000,
     "seed": 1,
     "duration": 180.0,
-    "talents": "00500503003--50042101251312251",
+    "talents": "20530321101--50052001231312251",
     "bonus_stats": null,
-    "gear": "22267/1509 18814 19050 272411 21183/1891 21186/1883 14146 18405 19165/1509 11822/911 19147 275982 18820 11819 20070/2504 18316 13396"
+    "gear": "22267/1509 18814 19050 272411 14136/1891 254067/1883 14146 18405 19165/1509 11822/911 19147 275982 18820 11819 20070/2504 18316 13396"
    },
-   "seconds": 8.0,
+   "seconds": 8.1,
    "weights": {
-    "StatCritRating": 0.4725234,
-    "StatHasteRating": 0.2122171,
-    "StatHitRating": 0.5451225,
-    "StatIntellect": 0.1397998,
-    "StatShadowDamage": 0.4973969,
-    "StatSpellDamage": 0.4973969,
-    "StatSpellPiercing": 1.111028,
-    "StatSpirit": -0.002166378
+    "StatCritRating": 0.463012,
+    "StatHasteRating": 0.2963187,
+    "StatHitRating": 0.6152618,
+    "StatIntellect": 0.129223,
+    "StatShadowDamage": 0.4888086,
+    "StatSpellDamage": 0.4888086,
+    "StatSpellPiercing": 1.095241,
+    "StatSpirit": -0.0006978051
    },
    "se": {
-    "StatCritRating": 0.006298022,
-    "StatHasteRating": 0.01081034,
-    "StatHitRating": 0.02927904,
-    "StatIntellect": 0.004127295,
-    "StatShadowDamage": 0.0002915558,
-    "StatSpellDamage": 0.0002915558,
-    "StatSpellPiercing": 0.005253959,
-    "StatSpirit": 0.00427591
+    "StatCritRating": 0.006206518,
+    "StatHasteRating": 0.0112397,
+    "StatHitRating": 0.02919456,
+    "StatIntellect": 0.003969654,
+    "StatShadowDamage": 0.0002947232,
+    "StatSpellDamage": 0.0002947232,
+    "StatSpellPiercing": 0.005283485,
+    "StatSpirit": 0.002007843
    }
   },
   "ml:rogue-assassination": {
@@ -2433,36 +2431,36 @@
     "iterations": 3000,
     "seed": 1,
     "duration": 180.0,
-    "talents": "00530311250251031-31130311020103",
+    "talents": "00530320250151031-31131301020103-001",
     "bonus_stats": null,
-    "gear": "279253/1508 18404 271955 21187/849 252483/1891 18375/1885 271948/1887 272395 18736/1508 226831/1887 18821 21182 13965 18537 19166/1900 12783/1900 18323"
+    "gear": "279253/1508 18404 271955 13340/849 252483/1891 18375/1885 271948/1887 272395 18736/1508 226831/1887 18821 275981 13965 18537 19166/1900 12783/1900 18323"
    },
-   "seconds": 21.4,
+   "seconds": 21.0,
    "weights": {
-    "PseudoStatMainHandDps": 1.923741,
-    "PseudoStatOffHandDps": 0.848087,
-    "StatAgility": 0.5109989,
-    "StatArmorPenetration": 0.1014021,
-    "StatAttackPower": 0.2496337,
-    "StatCritRating": 0.5080626,
-    "StatExpertiseRating": 0.6794564,
-    "StatHasteRating": 0.3591901,
-    "StatHitRating": 0.560623,
-    "StatSpellPiercing": 0.1867801,
-    "StatStrength": 0.274597
+    "PseudoStatMainHandDps": 1.912657,
+    "PseudoStatOffHandDps": 0.8459074,
+    "StatAgility": 0.5163992,
+    "StatArmorPenetration": 0.1028961,
+    "StatAttackPower": 0.2471708,
+    "StatCritRating": 0.5047939,
+    "StatExpertiseRating": 0.6611544,
+    "StatHasteRating": 0.3489358,
+    "StatHitRating": 0.5397099,
+    "StatSpellPiercing": 0.1762768,
+    "StatStrength": 0.2718879
    },
    "se": {
-    "PseudoStatMainHandDps": 0.001851876,
-    "PseudoStatOffHandDps": 0.0008096311,
-    "StatAgility": 0.009997738,
-    "StatArmorPenetration": 8.754011e-05,
-    "StatAttackPower": 0.000173165,
-    "StatCritRating": 0.01147916,
-    "StatExpertiseRating": 0.04755911,
-    "StatHasteRating": 0.04074417,
-    "StatHitRating": 0.0332001,
-    "StatSpellPiercing": 0.001076119,
-    "StatStrength": 0.0001904815
+    "PseudoStatMainHandDps": 0.001904986,
+    "PseudoStatOffHandDps": 0.0008011905,
+    "StatAgility": 0.01044239,
+    "StatArmorPenetration": 8.873457e-05,
+    "StatAttackPower": 0.0001762905,
+    "StatCritRating": 0.01185661,
+    "StatExpertiseRating": 0.04596164,
+    "StatHasteRating": 0.04082593,
+    "StatHitRating": 0.03319391,
+    "StatSpellPiercing": 0.001052523,
+    "StatStrength": 0.0001939196
    }
   },
   "ml:rogue-combat": {
@@ -2490,36 +2488,36 @@
     "iterations": 3000,
     "seed": 1,
     "duration": 180.0,
-    "talents": "02530320221001-320033220001232115",
+    "talents": "0053032020051-32503300000123215",
     "bonus_stats": null,
-    "gear": "279253/1508 18404 271955 21187/849 252483/1891 18375/1885 271948/1887 272395 18736/1508 226831/1887 18821 275981 13965 18537 19166/1900 12783/1900 18323"
+    "gear": "13404/1508 18404 271955 272414/849 252483/1891 18375/1885 271948/1887 272395 18736/1508 226831/1887 275981 18821 13965 18537 19166/1900 13368/1900 18323"
    },
-   "seconds": 18.6,
+   "seconds": 22.0,
    "weights": {
-    "PseudoStatMainHandDps": 2.068394,
-    "PseudoStatOffHandDps": 0.9089057,
-    "StatAgility": 0.453634,
-    "StatArmorPenetration": 0.08740788,
-    "StatAttackPower": 0.2398772,
-    "StatCritRating": 0.3896185,
-    "StatExpertiseRating": 0.6204415,
-    "StatHasteRating": 0.4260667,
-    "StatHitRating": 0.5803018,
-    "StatSpellPiercing": 0.1383568,
-    "StatStrength": 0.2638649
+    "PseudoStatMainHandDps": 2.005442,
+    "PseudoStatOffHandDps": 0.9050384,
+    "StatAgility": 0.4268191,
+    "StatArmorPenetration": 0.08308464,
+    "StatAttackPower": 0.2291859,
+    "StatCritRating": 0.3606925,
+    "StatExpertiseRating": 0.5553217,
+    "StatHasteRating": 0.3884746,
+    "StatHitRating": 0.4796647,
+    "StatSpellPiercing": 0.08973898,
+    "StatStrength": 0.2521045
    },
    "se": {
-    "PseudoStatMainHandDps": 0.00190844,
-    "PseudoStatOffHandDps": 0.001062924,
-    "StatAgility": 0.003546761,
-    "StatArmorPenetration": 6.681657e-05,
-    "StatAttackPower": 0.0001628872,
-    "StatCritRating": 0.004151231,
-    "StatExpertiseRating": 0.02971778,
-    "StatHasteRating": 0.02731047,
-    "StatHitRating": 0.02464814,
-    "StatSpellPiercing": 0.0009188973,
-    "StatStrength": 0.0001791759
+    "PseudoStatMainHandDps": 0.001902626,
+    "PseudoStatOffHandDps": 0.0009252637,
+    "StatAgility": 0.003315801,
+    "StatArmorPenetration": 6.398391e-05,
+    "StatAttackPower": 0.0001551933,
+    "StatCritRating": 0.003802147,
+    "StatExpertiseRating": 0.0246359,
+    "StatHasteRating": 0.02316459,
+    "StatHitRating": 0.02038109,
+    "StatSpellPiercing": 0.0006610237,
+    "StatStrength": 0.0001707127
    }
   },
   "ml:rogue-hybrid-assassination-combat": {
@@ -2528,11 +2526,11 @@
    "spec": "Hybrid Assassination/Combat",
    "source": "raidsim/ml/rogue-hybrid-assassination-combat.json gear.bis.weights",
    "reproduced": true,
-   "config_from": "replayed: the bis-dummy winner (a remade set), assassination-raid's set and its weights, the first greedy pass (the tag's bench config, gearopt-w-rogue-hybrid-assassination-combat-bis.json, is the later bis-raid set's)",
+   "config_from": "replayed: the combat-daggers-raid open-search winner (families/rogue.json, as the sig_start note says), assassination-raid's set and its weights, the first greedy pass (the tag's bench config, gearopt-w-rogue-hybrid-assassination-combat-bis.json, is the later bis-raid set's)",
    "racials": "off",
    "tries": [
     {
-     "config": "replayed: the bis-dummy winner (a remade set), assassination-raid's set and its weights, the first greedy pass (the tag's bench config, gearopt-w-rogue-hybrid-assassination-combat-bis.json, is the later bis-raid set's)",
+     "config": "replayed: the combat-daggers-raid open-search winner (families/rogue.json, as the sig_start note says), assassination-raid's set and its weights, the first greedy pass (the tag's bench config, gearopt-w-rogue-hybrid-assassination-combat-bis.json, is the later bis-raid set's)",
      "racials": "off",
      "differences": 0
     }
@@ -2547,36 +2545,36 @@
     "iterations": 3000,
     "seed": 1,
     "duration": 180.0,
-    "talents": "0053031123025103-322203010201132",
+    "talents": "0053031122125103-312303010201132",
     "bonus_stats": null,
-    "gear": "279253/1508 18404 271955 21187/849 252483/1891 18375/1885 271948/1887 272395 18736/1508 226831/1887 18821 21182 13965 18537 19166/1900 12783/1900 18323"
+    "gear": "279253/1508 18404 271955 13340/849 252483/1891 18375/1885 271948/1887 272395 18736/1508 226831/1887 18821 275981 13965 18537 19166/1900 12783/1900 18323"
    },
-   "seconds": 18.7,
+   "seconds": 20.8,
    "weights": {
-    "PseudoStatMainHandDps": 2.076823,
-    "PseudoStatOffHandDps": 0.8602451,
-    "StatAgility": 0.5071925,
-    "StatArmorPenetration": 0.09569846,
-    "StatAttackPower": 0.2487419,
-    "StatCritRating": 0.4686642,
-    "StatExpertiseRating": 0.6718385,
-    "StatHasteRating": 0.4452948,
-    "StatHitRating": 0.5842876,
-    "StatSpellPiercing": 0.1421212,
-    "StatStrength": 0.273616
+    "PseudoStatMainHandDps": 2.096953,
+    "PseudoStatOffHandDps": 0.8439871,
+    "StatAgility": 0.5039261,
+    "StatArmorPenetration": 0.1015584,
+    "StatAttackPower": 0.2524926,
+    "StatCritRating": 0.470189,
+    "StatExpertiseRating": 0.6290434,
+    "StatHasteRating": 0.3385309,
+    "StatHitRating": 0.5640663,
+    "StatSpellPiercing": 0.1369784,
+    "StatStrength": 0.2777419
    },
    "se": {
-    "PseudoStatMainHandDps": 0.002001894,
-    "PseudoStatOffHandDps": 0.001059895,
-    "StatAgility": 0.01025052,
-    "StatArmorPenetration": 8.785048e-05,
-    "StatAttackPower": 0.0001816929,
-    "StatCritRating": 0.01212037,
-    "StatExpertiseRating": 0.0474841,
-    "StatHasteRating": 0.041746,
-    "StatHitRating": 0.03948604,
-    "StatSpellPiercing": 0.0008957195,
-    "StatStrength": 0.0001998622
+    "PseudoStatMainHandDps": 0.001967606,
+    "PseudoStatOffHandDps": 0.001076097,
+    "StatAgility": 0.0110482,
+    "StatArmorPenetration": 9.147286e-05,
+    "StatAttackPower": 0.0001833137,
+    "StatCritRating": 0.01304142,
+    "StatExpertiseRating": 0.0487565,
+    "StatHasteRating": 0.04360251,
+    "StatHitRating": 0.03936833,
+    "StatSpellPiercing": 0.0008895465,
+    "StatStrength": 0.0002016451
    }
   },
   "ml:rogue-hybrid-assassination-subtlety": {
@@ -2604,36 +2602,36 @@
     "iterations": 3000,
     "seed": 1,
     "duration": 180.0,
-    "talents": "1153032120115003-02-2152002313010001",
+    "talents": "1153032120115002-02-1152012313010011",
     "bonus_stats": null,
     "gear": "279253/1508 18404 271955 13340/849 252483/1891 18375/1885 271948/1887 272395 18736/1508 226831/1887 18821 275981 13965 18537 19168/1900 279259/1900 12653"
    },
-   "seconds": 21.0,
+   "seconds": 22.3,
    "weights": {
-    "PseudoStatMainHandDps": 2.156626,
-    "PseudoStatOffHandDps": 0.58187,
-    "StatAgility": 0.502743,
-    "StatArmorPenetration": 0.08208649,
-    "StatAttackPower": 0.275408,
-    "StatCritRating": 0.4010546,
-    "StatExpertiseRating": 0.833427,
-    "StatHasteRating": 0.2756473,
-    "StatHitRating": 0.7192541,
-    "StatSpellPiercing": 0.06786568,
-    "StatStrength": 0.3029488
+    "PseudoStatMainHandDps": 2.175685,
+    "PseudoStatOffHandDps": 0.5797331,
+    "StatAgility": 0.4625518,
+    "StatArmorPenetration": 0.08196208,
+    "StatAttackPower": 0.2772742,
+    "StatCritRating": 0.3902699,
+    "StatExpertiseRating": 0.6993585,
+    "StatHasteRating": 0.2927597,
+    "StatHitRating": 0.6214617,
+    "StatSpellPiercing": 0.06849286,
+    "StatStrength": 0.3050016
    },
    "se": {
-    "PseudoStatMainHandDps": 0.00222661,
-    "PseudoStatOffHandDps": 0.0008071126,
-    "StatAgility": 0.01732976,
-    "StatArmorPenetration": 8.123642e-05,
-    "StatAttackPower": 0.0002161293,
-    "StatCritRating": 0.01978239,
-    "StatExpertiseRating": 0.06685134,
-    "StatHasteRating": 0.05889688,
-    "StatHitRating": 0.05702396,
-    "StatSpellPiercing": 0.0006182419,
-    "StatStrength": 0.0002377422
+    "PseudoStatMainHandDps": 0.002161711,
+    "PseudoStatOffHandDps": 0.0008545414,
+    "StatAgility": 0.01348168,
+    "StatArmorPenetration": 7.38089e-05,
+    "StatAttackPower": 0.0001895813,
+    "StatCritRating": 0.01514764,
+    "StatExpertiseRating": 0.04660844,
+    "StatHasteRating": 0.04115451,
+    "StatHitRating": 0.04115255,
+    "StatSpellPiercing": 0.0006086968,
+    "StatStrength": 0.0002085394
    }
   },
   "ml:rogue-subtlety": {
@@ -2665,7 +2663,7 @@
     "bonus_stats": null,
     "gear": "279253/1508 18404 271955 13340/849 252483/1891 18375/1885 271948/1887 272395 18736/1508 226831/1887 18821 275981 13965 18537 19168/1900 279259/1900 12653"
    },
-   "seconds": 20.5,
+   "seconds": 23.4,
    "weights": {
     "PseudoStatMainHandDps": 2.02581,
     "PseudoStatOffHandDps": 0.6204253,
@@ -2720,30 +2718,30 @@
     "duration": 180.0,
     "talents": "5504331000001351-05500001-05301",
     "bonus_stats": null,
-    "gear": "22267/1509 18814 19050 272411 21183/1891 21186/1883 12632 18405 252486/1509 22240/911 19147 19147 18820 272438 20069/2504 0 23199"
+    "gear": "22267/1509 18814 19050 272411 13314/1891 18458/1883 17721 18405 252486/1509 22240/911 19147 275982 18820 272438 20069/2504 0 23199"
    },
-   "seconds": 13.2,
+   "seconds": 12.8,
    "weights": {
-    "StatCritRating": 0.4448238,
-    "StatFireDamage": 0.07469856,
-    "StatHasteRating": 0.8766365,
-    "StatHitRating": 0.9836103,
-    "StatIntellect": 0.2244426,
-    "StatNatureDamage": 0.5157634,
-    "StatSpellDamage": 0.5904619,
-    "StatSpellPiercing": 1.412311,
-    "StatSpirit": 0.06754425
+    "StatCritRating": 0.4139971,
+    "StatFireDamage": 0.074481,
+    "StatHasteRating": 0.8837956,
+    "StatHitRating": 0.8591708,
+    "StatIntellect": 0.2103727,
+    "StatNatureDamage": 0.509148,
+    "StatSpellDamage": 0.583629,
+    "StatSpellPiercing": 1.362947,
+    "StatSpirit": 0.003945554
    },
    "se": {
-    "StatCritRating": 0.007063201,
-    "StatFireDamage": 6.392039e-05,
-    "StatHasteRating": 0.05135885,
-    "StatHitRating": 0.06096805,
-    "StatIntellect": 0.0347232,
-    "StatNatureDamage": 0.000495601,
-    "StatSpellDamage": 0.0005048626,
-    "StatSpellPiercing": 0.007015225,
-    "StatSpirit": 0.02712469
+    "StatCritRating": 0.006605878,
+    "StatFireDamage": 6.536162e-05,
+    "StatHasteRating": 0.05224333,
+    "StatHitRating": 0.05787434,
+    "StatIntellect": 0.03635771,
+    "StatNatureDamage": 0.0005055806,
+    "StatSpellDamage": 0.0005170751,
+    "StatSpellPiercing": 0.007830997,
+    "StatSpirit": 0.02578795
    }
   },
   "ml:shaman-enhancement": {
@@ -2773,42 +2771,42 @@
     "duration": 180.0,
     "talents": "5434031-055030310051002051",
     "bonus_stats": null,
-    "gear": "252605/1506 18404 13374 272411/849 252483/1891 21186/1885 21278/927 13956 252486/1506 14616/1887 21182 272406 11815 18820 21188/1900 0 23199"
+    "gear": "252605/1506 18404 19050 18496/849 252484/1891 16714/1885 14615/927 18405 252486/1506 14616/1887 18403 18821 18820 11832 18538/1900 0 23199"
    },
    "seconds": 12.2,
    "weights": {
-    "PseudoStatMainHandDps": 2.445952,
-    "StatAgility": 0.2152685,
-    "StatArmorPenetration": 0.06411997,
-    "StatAttackPower": 0.1728144,
-    "StatCritRating": 0.4469576,
-    "StatExpertiseRating": 0.6922045,
-    "StatFireDamage": 0.08555997,
-    "StatHasteRating": 0.3978736,
-    "StatHitRating": 0.3300478,
-    "StatIntellect": 0.5614447,
-    "StatNatureDamage": 0.1287686,
-    "StatSpellDamage": 0.2143286,
-    "StatSpellPiercing": 0.5661769,
-    "StatSpirit": 0.01605164,
-    "StatStrength": 0.3801918
+    "PseudoStatMainHandDps": 2.160095,
+    "StatAgility": 0.224724,
+    "StatArmorPenetration": 0.06095496,
+    "StatAttackPower": 0.1597088,
+    "StatCritRating": 0.4282332,
+    "StatExpertiseRating": 0.6825899,
+    "StatFireDamage": 0.08470816,
+    "StatHasteRating": 0.4149519,
+    "StatHitRating": 1.030866,
+    "StatIntellect": 0.3939698,
+    "StatNatureDamage": 0.1121545,
+    "StatSpellDamage": 0.1968626,
+    "StatSpellPiercing": 0.5063137,
+    "StatSpirit": -0.004996817,
+    "StatStrength": 0.3513594
    },
    "se": {
-    "PseudoStatMainHandDps": 0.003921928,
-    "StatAgility": 0.01349011,
-    "StatArmorPenetration": 0.0001153941,
-    "StatAttackPower": 0.0002791622,
-    "StatCritRating": 0.0147458,
-    "StatExpertiseRating": 0.04893434,
-    "StatFireDamage": 6.685198e-05,
-    "StatHasteRating": 0.0350312,
-    "StatHitRating": 0.0351129,
-    "StatIntellect": 0.02461724,
-    "StatNatureDamage": 0.0001943992,
-    "StatSpellDamage": 0.0002176382,
-    "StatSpellPiercing": 0.003517979,
-    "StatSpirit": 0.006849967,
-    "StatStrength": 0.0006141569
+    "PseudoStatMainHandDps": 0.003353957,
+    "StatAgility": 0.0133046,
+    "StatArmorPenetration": 0.0001025879,
+    "StatAttackPower": 0.0002425458,
+    "StatCritRating": 0.01334269,
+    "StatExpertiseRating": 0.04919942,
+    "StatFireDamage": 7.896536e-05,
+    "StatHasteRating": 0.03339476,
+    "StatHitRating": 0.05250814,
+    "StatIntellect": 0.02031123,
+    "StatNatureDamage": 0.0002147636,
+    "StatSpellDamage": 0.0002440506,
+    "StatSpellPiercing": 0.003228113,
+    "StatSpirit": 0.005217146,
+    "StatStrength": 0.0005336008
    }
   },
   "ml:shaman-hybrid-elemental-enhancement": {
@@ -2838,30 +2836,30 @@
     "duration": 180.0,
     "talents": "053303102-05303031005100224-05",
     "bonus_stats": null,
-    "gear": "252604/1509 18814 272957 272411 13314/1891 21186/1883 21178 18405 252486/1509 22240/911 272406 19147 18820 272438 20069/2504 0 23199"
+    "gear": "252604/1509 18814 272957 272411 13314/1891 18458/1883 271950 18405 252486/1509 22240/911 272406 19147 18820 272438 20069/2504 0 23199"
    },
-   "seconds": 9.3,
+   "seconds": 9.2,
    "weights": {
-    "StatCritRating": 0.1749048,
-    "StatFireDamage": 0.06660952,
-    "StatHasteRating": 0.4679117,
-    "StatHitRating": 0.5769773,
-    "StatIntellect": 0.2439237,
-    "StatNatureDamage": 0.3096606,
-    "StatSpellDamage": 0.3762701,
-    "StatSpellPiercing": 0.9648945,
-    "StatSpirit": 0.002134764
+    "StatCritRating": 0.1714178,
+    "StatFireDamage": 0.06652709,
+    "StatHasteRating": 0.4553217,
+    "StatHitRating": 0.5261552,
+    "StatIntellect": 0.2669632,
+    "StatNatureDamage": 0.3069905,
+    "StatSpellDamage": 0.3735176,
+    "StatSpellPiercing": 0.9528222,
+    "StatSpirit": 0.001489221
    },
    "se": {
-    "StatCritRating": 0.003305924,
-    "StatFireDamage": 4.434922e-05,
-    "StatHasteRating": 0.02957704,
-    "StatHitRating": 0.02787104,
-    "StatIntellect": 0.01093804,
-    "StatNatureDamage": 0.0002569076,
-    "StatSpellDamage": 0.0002645446,
-    "StatSpellPiercing": 0.006329605,
-    "StatSpirit": 0.001889755
+    "StatCritRating": 0.003166317,
+    "StatFireDamage": 4.625536e-05,
+    "StatHasteRating": 0.03018949,
+    "StatHitRating": 0.02758867,
+    "StatIntellect": 0.008410416,
+    "StatNatureDamage": 0.0002576742,
+    "StatSpellDamage": 0.0002662675,
+    "StatSpellPiercing": 0.006165219,
+    "StatSpirit": 0.001577865
    }
   },
   "ml:warlock-affliction": {
@@ -2891,30 +2889,30 @@
     "duration": 180.0,
     "talents": "2550002013520005--0550305003",
     "bonus_stats": null,
-    "gear": "22267/1509 18814 19050 272411 14153/1891 21186/1883 14146 18405 19165/1509 11822/911 19147 19147 272438 18820 22383/2504 18316 13938"
+    "gear": "22267/1509 18814 19050 272411 14153/1891 18497/1883 14146 18405 19165/1509 11822/911 19147 19147 272438 18820 22383/2504 18316 13938"
    },
-   "seconds": 11.8,
+   "seconds": 12.1,
    "weights": {
-    "StatCritRating": 0.650449,
-    "StatFireDamage": 0.07006505,
-    "StatHasteRating": 0.5635712,
-    "StatHitRating": 0.7908767,
-    "StatIntellect": 0.2369705,
-    "StatShadowDamage": 0.6181613,
-    "StatSpellDamage": 0.6882264,
-    "StatSpellPiercing": 0.9603154,
-    "StatSpirit": 0.09391492
+    "StatCritRating": 0.6313382,
+    "StatFireDamage": 0.07016785,
+    "StatHasteRating": 0.5113059,
+    "StatHitRating": 0.8820272,
+    "StatIntellect": 0.2298103,
+    "StatShadowDamage": 0.6132329,
+    "StatSpellDamage": 0.6834008,
+    "StatSpellPiercing": 0.931101,
+    "StatSpirit": 0.09398942
    },
    "se": {
-    "StatCritRating": 0.01154599,
-    "StatFireDamage": 8.39241e-05,
-    "StatHasteRating": 0.05778397,
-    "StatHitRating": 0.07325628,
-    "StatIntellect": 0.04842421,
-    "StatShadowDamage": 0.000697968,
-    "StatSpellDamage": 0.0007077897,
-    "StatSpellPiercing": 0.006394933,
-    "StatSpirit": 0.03318157
+    "StatCritRating": 0.0112426,
+    "StatFireDamage": 8.413036e-05,
+    "StatHasteRating": 0.05786339,
+    "StatHitRating": 0.07213043,
+    "StatIntellect": 0.04834687,
+    "StatShadowDamage": 0.0007047232,
+    "StatSpellDamage": 0.0007126179,
+    "StatSpellPiercing": 0.006104756,
+    "StatSpirit": 0.03284339
    }
   },
   "ml:warlock-demonology": {
@@ -2944,30 +2942,30 @@
     "duration": 180.0,
     "talents": "011-0005003231220301351-0550005003",
     "bonus_stats": null,
-    "gear": "22267/1509 18814 19050 272411 21183/1891 21186/1883 14146 18405 19165/1509 18102/911 19147 19147 272438 18820 22383/2504 18316 13938"
+    "gear": "22267/1509 18814 19050 272411 14153/1891 18497/1883 14146 18405 19165/1509 22231/911 19147 19147 272438 18820 22383/2504 18316 13938"
    },
-   "seconds": 10.4,
+   "seconds": 12.7,
    "weights": {
-    "StatCritRating": 0.6238065,
-    "StatFireDamage": 0.06790565,
-    "StatHasteRating": 0.6094662,
-    "StatHitRating": 0.844203,
-    "StatIntellect": 0.2710699,
-    "StatShadowDamage": 0.6167931,
-    "StatSpellDamage": 0.6846988,
-    "StatSpellPiercing": 1.025433,
-    "StatSpirit": 0.04675238
+    "StatCritRating": 0.6241305,
+    "StatFireDamage": 0.06748844,
+    "StatHasteRating": 0.6566918,
+    "StatHitRating": 0.8405079,
+    "StatIntellect": 0.2869031,
+    "StatShadowDamage": 0.6100787,
+    "StatSpellDamage": 0.6775672,
+    "StatSpellPiercing": 1.007227,
+    "StatSpirit": 0.04001163
    },
    "se": {
-    "StatCritRating": 0.01288385,
-    "StatFireDamage": 9.815676e-05,
-    "StatHasteRating": 0.06603844,
-    "StatHitRating": 0.07958163,
-    "StatIntellect": 0.05564121,
-    "StatShadowDamage": 0.0007597361,
-    "StatSpellDamage": 0.000771936,
-    "StatSpellPiercing": 0.007202577,
-    "StatSpirit": 0.03854978
+    "StatCritRating": 0.01297512,
+    "StatFireDamage": 9.778418e-05,
+    "StatHasteRating": 0.06389227,
+    "StatHitRating": 0.07804911,
+    "StatIntellect": 0.0544725,
+    "StatShadowDamage": 0.0007477525,
+    "StatSpellDamage": 0.0007622609,
+    "StatSpellPiercing": 0.007093964,
+    "StatSpirit": 0.03636883
    }
   },
   "ml:warlock-destruction": {
@@ -2997,30 +2995,30 @@
     "duration": 180.0,
     "talents": "252-0005113001-055030510310035",
     "bonus_stats": null,
-    "gear": "22267/1509 18814 19050 272411 14153/1891 21186/1883 14146 18405 19165/1509 11822/911 19147 19147 272438 18820 22383/2504 18316 13938"
+    "gear": "22267/1509 18814 19050 272411 14153/1891 18497/1883 14146 18405 19165/1509 22231/911 19147 19147 272438 18820 22383/2504 18316 13938"
    },
-   "seconds": 9.7,
+   "seconds": 10.4,
    "weights": {
-    "StatCritRating": 0.5696527,
-    "StatFireDamage": 0.1166159,
-    "StatHasteRating": 0.6282948,
-    "StatHitRating": 0.8646687,
-    "StatIntellect": 0.2852055,
-    "StatShadowDamage": 0.5861161,
-    "StatSpellDamage": 0.702732,
-    "StatSpellPiercing": 1.080835,
-    "StatSpirit": 0.08015371
+    "StatCritRating": 0.579532,
+    "StatFireDamage": 0.1174891,
+    "StatHasteRating": 0.6263447,
+    "StatHitRating": 0.7979844,
+    "StatIntellect": 0.261629,
+    "StatShadowDamage": 0.5896994,
+    "StatSpellDamage": 0.7071885,
+    "StatSpellPiercing": 1.058593,
+    "StatSpirit": 0.009088774
    },
    "se": {
-    "StatCritRating": 0.0123503,
-    "StatFireDamage": 0.0001764823,
-    "StatHasteRating": 0.06014811,
-    "StatHitRating": 0.07130892,
-    "StatIntellect": 0.05315424,
-    "StatShadowDamage": 0.0006899956,
-    "StatSpellDamage": 0.0007193283,
-    "StatSpellPiercing": 0.00722834,
-    "StatSpirit": 0.0355587
+    "StatCritRating": 0.01242123,
+    "StatFireDamage": 0.0001753754,
+    "StatHasteRating": 0.05849311,
+    "StatHitRating": 0.0700701,
+    "StatIntellect": 0.05019025,
+    "StatShadowDamage": 0.0006856738,
+    "StatSpellDamage": 0.0007187312,
+    "StatSpellPiercing": 0.007045577,
+    "StatSpirit": 0.03385218
    }
   },
   "ml:warlock-hybrid-affliction-destruction": {
@@ -3050,30 +3048,30 @@
     "duration": 180.0,
     "talents": "25300020035-0050203001-0550105103",
     "bonus_stats": null,
-    "gear": "22267/1509 18814 19050 272411 14153/1891 21186/1883 14146 18405 19165/1509 11822/911 19147 19147 272438 18820 22383/2504 18316 13938"
+    "gear": "22267/1509 18814 19050 272411 14153/1891 18497/1883 14146 18405 19165/1509 11822/911 19147 19147 272438 18820 22383/2504 18316 13938"
    },
-   "seconds": 9.4,
+   "seconds": 9.9,
    "weights": {
-    "StatCritRating": 0.6126398,
-    "StatFireDamage": 0.06704665,
-    "StatHasteRating": 0.5948374,
-    "StatHitRating": 0.8860878,
-    "StatIntellect": 0.3194211,
-    "StatShadowDamage": 0.6137844,
-    "StatSpellDamage": 0.680831,
-    "StatSpellPiercing": 0.9840399,
-    "StatSpirit": 0.09336775
+    "StatCritRating": 0.5978156,
+    "StatFireDamage": 0.06711134,
+    "StatHasteRating": 0.6391029,
+    "StatHitRating": 0.8213347,
+    "StatIntellect": 0.2433584,
+    "StatShadowDamage": 0.6100564,
+    "StatSpellDamage": 0.6771678,
+    "StatSpellPiercing": 0.970993,
+    "StatSpirit": 0.1172963
    },
    "se": {
-    "StatCritRating": 0.01189906,
-    "StatFireDamage": 9.245048e-05,
-    "StatHasteRating": 0.05498132,
-    "StatHitRating": 0.06763343,
-    "StatIntellect": 0.04990776,
-    "StatShadowDamage": 0.0006958437,
-    "StatSpellDamage": 0.0007031102,
-    "StatSpellPiercing": 0.00690062,
-    "StatSpirit": 0.03230412
+    "StatCritRating": 0.01175687,
+    "StatFireDamage": 9.376027e-05,
+    "StatHasteRating": 0.05306631,
+    "StatHitRating": 0.06533902,
+    "StatIntellect": 0.04897585,
+    "StatShadowDamage": 0.0007191594,
+    "StatSpellDamage": 0.0007270551,
+    "StatSpellPiercing": 0.00682209,
+    "StatSpirit": 0.03192069
    }
   },
   "ml:warrior-arms": {
@@ -3103,28 +3101,28 @@
     "duration": 180.0,
     "talents": "30303213132215201-55050000002-2",
     "bonus_stats": null,
-    "gear": "12640/1506 18404 12927 272414/849 252483/1891 12936/1885 21278/927 22232 22385/1506 226857/1887 21182 275981 11815 19120 19169/1900 0 18323"
+    "gear": "12640/1506 18404 12927 272414/849 252483/1891 12936/1885 21278/927 22232 22385/1506 226857/1887 275981 18821 13965 11815 19169/1900 0 18323"
    },
-   "seconds": 14.1,
+   "seconds": 13.3,
    "weights": {
-    "PseudoStatMainHandDps": 4.359147,
-    "StatAgility": 0.4733081,
-    "StatArmorPenetration": 0.1120301,
-    "StatAttackPower": 0.2543979,
-    "StatCritRating": 0.5994088,
-    "StatExpertiseRating": 0.3482275,
-    "StatHasteRating": 0.3829728,
-    "StatStrength": 0.5596754
+    "PseudoStatMainHandDps": 4.409545,
+    "StatAgility": 0.4730922,
+    "StatArmorPenetration": 0.1135372,
+    "StatAttackPower": 0.2565118,
+    "StatCritRating": 0.6018463,
+    "StatExpertiseRating": 0.3803197,
+    "StatHasteRating": 0.3897164,
+    "StatStrength": 0.5643259
    },
    "se": {
-    "PseudoStatMainHandDps": 0.005160369,
-    "StatAgility": 0.01720427,
-    "StatArmorPenetration": 0.0001360946,
-    "StatAttackPower": 0.000273528,
-    "StatCritRating": 0.01599149,
-    "StatExpertiseRating": 0.07898241,
-    "StatHasteRating": 0.06623492,
-    "StatStrength": 0.0006017616
+    "PseudoStatMainHandDps": 0.005220902,
+    "StatAgility": 0.016902,
+    "StatArmorPenetration": 0.0001383146,
+    "StatAttackPower": 0.0002760292,
+    "StatCritRating": 0.0158444,
+    "StatExpertiseRating": 0.07872843,
+    "StatHasteRating": 0.06671984,
+    "StatStrength": 0.0006072642
    }
   },
   "ml:warrior-fury": {
@@ -3152,34 +3150,34 @@
     "iterations": 3000,
     "seed": 1,
     "duration": 180.0,
-    "talents": "05303013102-150530305020100231-2",
+    "talents": "32303013032-050530320122110231",
     "bonus_stats": null,
-    "gear": "12640/1506 18404 271955 13340/849 252484/1891 21184/1885 271940/927 272403 22385/1506 287033/1887 18821 21182 13965 272437 19168/1900 22384/1900 18323"
+    "gear": "12640/1506 18404 271955 13340/849 252484/1891 13400/1885 271940/927 272403 22385/1506 287033/1887 18821 275981 13965 272437 19168/1900 22384/1900 12653"
    },
-   "seconds": 18.1,
+   "seconds": 20.4,
    "weights": {
-    "PseudoStatMainHandDps": 2.855511,
-    "PseudoStatOffHandDps": 1.076221,
-    "StatAgility": 0.3893769,
-    "StatArmorPenetration": 0.1285876,
-    "StatAttackPower": 0.298428,
-    "StatCritRating": 0.5177709,
-    "StatExpertiseRating": 1.763087,
-    "StatHasteRating": 0.6671995,
-    "StatHitRating": 1.102973,
-    "StatStrength": 0.6565416
+    "PseudoStatMainHandDps": 2.761251,
+    "PseudoStatOffHandDps": 0.8478212,
+    "StatAgility": 0.3627453,
+    "StatArmorPenetration": 0.1212909,
+    "StatAttackPower": 0.2784494,
+    "StatCritRating": 0.4651126,
+    "StatExpertiseRating": 1.48152,
+    "StatHasteRating": 0.6433254,
+    "StatHitRating": 1.426018,
+    "StatStrength": 0.6125888
    },
    "se": {
-    "PseudoStatMainHandDps": 0.003531616,
-    "PseudoStatOffHandDps": 0.001296515,
-    "StatAgility": 0.04095535,
-    "StatArmorPenetration": 0.0001307753,
-    "StatAttackPower": 0.0002604701,
-    "StatCritRating": 0.03607608,
-    "StatExpertiseRating": 0.09717037,
-    "StatHasteRating": 0.07137613,
-    "StatHitRating": 0.09085369,
-    "StatStrength": 0.0005730343
+    "PseudoStatMainHandDps": 0.003483922,
+    "PseudoStatOffHandDps": 0.0009894157,
+    "StatAgility": 0.03778333,
+    "StatArmorPenetration": 0.0001255056,
+    "StatAttackPower": 0.0002548344,
+    "StatCritRating": 0.03340472,
+    "StatExpertiseRating": 0.09109568,
+    "StatHasteRating": 0.06638031,
+    "StatHitRating": 0.09132977,
+    "StatStrength": 0.0005606356
    }
   },
   "page:paladin-hybrid-holy-retribution": {
@@ -3211,7 +3209,7 @@
     "bonus_stats": null,
     "gear": "12640/1506 18404 271955 21187 22009/1891 21186/1885 12632/927 20216 22385/1506 22064/1887 21182 19325 18820 272437 23455/1900 0 272435"
    },
-   "seconds": 38.0,
+   "seconds": 40.4,
    "weights": {
     "PseudoStatMainHandDps": 1.861464,
     "StatAgility": 0.2776975,
@@ -3272,36 +3270,36 @@
     "duration": 180.0,
     "talents": "5320001505101251-00530502005",
     "bonus_stats": {
-     "StatHitRating": -63.0
+     "StatHitRating": -110.0
     },
-    "gear": "252605/1508 18404 271955 21187/849 252483/1891 16681/1885 271948/1887 19163 16678/1508 16711/1887 272408 21182 13965 18537 250619/1900 0 18713/2523"
+    "gear": "252605/1508 18404 271955 272414/849 252483/1891 13211/1885 18349/1887 22232 18736/1508 13967/1887 272408 275981 13965 18473 250619/1900 0 18713/2523"
    },
-   "seconds": 34.9,
+   "seconds": 36.2,
    "weights": {
-    "PseudoStatRangedDps": 1.807216,
-    "StatAgility": 0.6790282,
-    "StatArmorPenetration": 0.06120451,
-    "StatCritRating": 0.6828419,
-    "StatExpertiseRating": 0.2765613,
-    "StatHasteRating": 0.4118105,
-    "StatHitRating": 0.9685662,
-    "StatIntellect": 0.5750377,
-    "StatRangedAttackPower": 0.2191477,
-    "StatSpellPiercing": 0.3023674,
-    "StatSpirit": 0.2014643
+    "PseudoStatRangedDps": 1.779761,
+    "StatAgility": 0.6798418,
+    "StatArmorPenetration": 0.0595555,
+    "StatCritRating": 0.6782684,
+    "StatExpertiseRating": 0.3144887,
+    "StatHasteRating": 0.4130036,
+    "StatHitRating": 0.990576,
+    "StatIntellect": 0.5461983,
+    "StatRangedAttackPower": 0.2158843,
+    "StatSpellPiercing": 0.2970097,
+    "StatSpirit": 0.204229
    },
    "se": {
-    "PseudoStatRangedDps": 0.00131935,
-    "StatAgility": 0.005515692,
-    "StatArmorPenetration": 4.761823e-05,
-    "StatCritRating": 0.007913936,
-    "StatExpertiseRating": 0.03110372,
-    "StatHasteRating": 0.03108892,
-    "StatHitRating": 0.03760098,
-    "StatIntellect": 0.009776243,
-    "StatRangedAttackPower": 0.000111029,
-    "StatSpellPiercing": 0.001908467,
-    "StatSpirit": 0.01136524
+    "PseudoStatRangedDps": 0.001298789,
+    "StatAgility": 0.00528519,
+    "StatArmorPenetration": 4.612049e-05,
+    "StatCritRating": 0.008047536,
+    "StatExpertiseRating": 0.02981873,
+    "StatHasteRating": 0.03000528,
+    "StatHitRating": 0.03650111,
+    "StatIntellect": 0.009015721,
+    "StatRangedAttackPower": 0.0001084337,
+    "StatSpellPiercing": 0.001861409,
+    "StatSpirit": 0.01060499
    }
   },
   "pagehit:paladin-hybrid-holy-retribution": {
@@ -3335,7 +3333,7 @@
     },
     "gear": "12640/1506 18404 271955 21187 22009/1891 21186/1885 12632/927 20216 22385/1506 22064/1887 21182 19325 18820 272437 23455/1900 0 272435"
    },
-   "seconds": 39.3,
+   "seconds": 43.0,
    "weights": {
     "PseudoStatMainHandDps": 1.735107,
     "StatAgility": 0.2690731,
@@ -3400,7 +3398,7 @@
     },
     "gear": "12640/1506 18404 20058 272414/849 252483/1891 21186/1885 21278/927 22232 22385/1506 14616/1887 21182 275981 11815 272437 21188/1900 0 272435"
    },
-   "seconds": 37.7,
+   "seconds": 39.0,
    "weights": {
     "PseudoStatMainHandDps": 2.459966,
     "StatAgility": 0.2835254,
@@ -3465,7 +3463,7 @@
     },
     "gear": "13404/1508 18404 271955 272414/849 252483/1891 18375/1885 271948/1887 272395 18736/1508 226831/1887 275981 18821 13965 11815 279259/1900 19168/1900 18323"
    },
-   "seconds": 34.3,
+   "seconds": 40.7,
    "weights": {
     "PseudoStatMainHandDps": 2.209609,
     "PseudoStatOffHandDps": 0.4860291,
@@ -3520,32 +3518,32 @@
     "duration": 180.0,
     "talents": "252-0050203001-055031500310035",
     "bonus_stats": {
-     "StatHitRating": -40.0
+     "StatHitRating": -30.0
     },
-    "gear": "22267/1509 18814 19050 272411 14153/1891 21186/1883 14146 18405 19165/1509 11822/911 19147 19147 272438 18820 22383/2504 18316 13938"
+    "gear": "22267/1509 18814 19050 272411 14153/1891 18497/1883 14146 18405 19165/1509 11822/911 19147 19147 272438 18820 22383/2504 18316 13938"
    },
-   "seconds": 17.1,
+   "seconds": 18.7,
    "weights": {
-    "StatCritRating": 0.5070117,
-    "StatFireDamage": 0.1235403,
-    "StatHasteRating": 0.5803321,
-    "StatHitRating": 0.901677,
-    "StatIntellect": 0.2102819,
-    "StatShadowDamage": 0.5462103,
-    "StatSpellDamage": 0.6697507,
-    "StatSpellPiercing": 0.9932367,
-    "StatSpirit": 0.06157486
+    "StatCritRating": 0.5070599,
+    "StatFireDamage": 0.1240191,
+    "StatHasteRating": 0.5721737,
+    "StatHitRating": 0.8368986,
+    "StatIntellect": 0.2697632,
+    "StatShadowDamage": 0.5481277,
+    "StatSpellDamage": 0.6721468,
+    "StatSpellPiercing": 0.9796945,
+    "StatSpirit": 0.08467745
    },
    "se": {
-    "StatCritRating": 0.008013619,
-    "StatFireDamage": 0.0001272321,
-    "StatHasteRating": 0.03594561,
-    "StatHitRating": 0.04609546,
-    "StatIntellect": 0.0318113,
-    "StatShadowDamage": 0.0004969798,
-    "StatSpellDamage": 0.0005219466,
-    "StatSpellPiercing": 0.004755889,
-    "StatSpirit": 0.02154224
+    "StatCritRating": 0.008007182,
+    "StatFireDamage": 0.0001271017,
+    "StatHasteRating": 0.03609143,
+    "StatHitRating": 0.04506775,
+    "StatIntellect": 0.0314206,
+    "StatShadowDamage": 0.0005070455,
+    "StatSpellDamage": 0.00053098,
+    "StatSpellPiercing": 0.004629264,
+    "StatSpirit": 0.02073223
    }
   },
   "tank:druid": {
@@ -3577,7 +3575,7 @@
     "bonus_stats": null,
     "gear": "ui/specs/druid/feralbear/gear_sets/default.gear.json"
    },
-   "seconds": 40.2,
+   "seconds": 43.4,
    "weights": {
     "PseudoStatMainHandDps": 32.10652,
     "StatAgility": 4.6308,
@@ -3681,7 +3679,7 @@
     "bonus_stats": null,
     "gear": "_reference/data/raidsim/gear_sets/forever/paladin-protection-default.gear.json"
    },
-   "seconds": 39.4,
+   "seconds": 37.9,
    "weights": {
     "PseudoStatMainHandDps": 2.522045,
     "StatAgility": 0.2502692,
@@ -3829,7 +3827,7 @@
     "bonus_stats": null,
     "gear": "ui/specs/warrior/protection/gear_sets/prebis.gear.json"
    },
-   "seconds": 18.6,
+   "seconds": 31.1,
    "weights": {
     "PseudoStatMainHandDps": 3.549583,
     "StatAgility": 0.9233616,
@@ -3913,7 +3911,7 @@
    }
   }
  },
- "date": "2026-11-18",
+ "date": "2026-11-19",
  "simulator": {
   "repo": "wowsims/forever",
   "commit": "2e6e77d844dc4d6790f984b9a1817fc583f7ca2e",
@@ -3933,8 +3931,8 @@
  "bench": "foreverbench",
  "unit": "weights: the simulator's DPS per point (tanks: threat per second per point; dtps_weights: damage taken per second per point), means as the run printed them; se: one standard error, weights_stdev / sqrt(sample_counts), same unit",
  "pass": {
-  "runs": 46,
-  "minutes": 6.9,
+  "runs": 70,
+  "minutes": 13.1,
   "jobs": 2
  },
  "study": {
@@ -5144,38 +5142,5 @@
     }
    }
   }
- },
- "partial_passes": [
-  {
-   "keys": [
-    "hit:druid-balance",
-    "hit:druid-feral-combat",
-    "hit:hunter-hybrid-beast-mastery-marksmanship",
-    "hit:hunter-marksmanship",
-    "hit:hunter-survival",
-    "hit:mage-arcane",
-    "hit:mage-fire",
-    "hit:mage-frost",
-    "hit:mage-hybrid-arcane-frost",
-    "hit:mage-hybrid-fire-frost",
-    "hit:paladin-hybrid-protection-retribution",
-    "hit:paladin-retribution",
-    "hit:priest-hybrid-discipline-holy",
-    "hit:priest-shadow",
-    "hit:rogue-assassination",
-    "hit:rogue-combat",
-    "hit:rogue-hybrid-assassination-combat",
-    "hit:rogue-hybrid-assassination-subtlety",
-    "hit:rogue-subtlety",
-    "hit:warlock-affliction",
-    "hit:warlock-demonology",
-    "hit:warlock-destruction",
-    "hit:warrior-arms",
-    "hit:warrior-fury"
-   ],
-   "date": "2026-11-18",
-   "restored_from": "107eb67c",
-   "note": "dropped by the 06:04 pass (hit_below_cap.py shaman had left their hit: keys out); put back from the committed record: same inputs, and every other entry re-ran bit-identical"
-  }
- ]
+ }
 }

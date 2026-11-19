@@ -72,12 +72,12 @@ Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best bui
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Cat* | community simulator | - | 462 | +0.0% | 916 | -1.2% | 54 s |
-| 2 | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) | ours: derived (simulator preset) | 9/33/9 | 458 | -0.9% | 910 | -1.8% | 55 s |
-| 3 | [`feral-combat-open-raid`](feral-combat-open-raid.md) | ours: derived (open search) | 9/32/10 | 453 | -1.9% | 927 | +0.0% | 55 s |
-| 4 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/30/12 | 407 | -12.0% | 757 | -18.3% | 0 s |
-| 5 | **[`feral-cat-dps`](feral-cat-dps.md)** | ours: hand draft | 9/32/10 | 395 | -14.6% | 739 | -20.3% | 0 s |
-| 6 | *Hybrid* | community simulator | - | 345 | -25.5% | 793 | -14.5% | 62 s |
+| 1 | *Cat* | community simulator | - | 461 | +0.0% | 913 | -1.1% | 54 s |
+| 2 | [`feral-combat-shifting-power-raid`](feral-combat-shifting-power-raid.md) | ours: derived (simulator preset) | 9/33/9 | 456 | -0.9% | 907 | -1.8% | 55 s |
+| 3 | [`feral-combat-open-raid`](feral-combat-open-raid.md) | ours: derived (open search) | 9/32/10 | 452 | -1.9% | 923 | +0.0% | 55 s |
+| 4 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/30/12 | 405 | -12.0% | 755 | -18.2% | 0 s |
+| 5 | **[`feral-cat-dps`](feral-cat-dps.md)** | ours: hand draft | 9/32/10 | 393 | -14.7% | 736 | -20.3% | 0 s |
+| 6 | *Hybrid* | community simulator | - | 343 | -25.5% | 790 | -14.5% | 62 s |
 
 ## Rotation (community simulator, training dummy)
 

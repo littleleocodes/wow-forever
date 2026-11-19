@@ -13,3 +13,15 @@ The community-standard WoW Classic Era builds, used as the *starting point* for 
 Classic Era community-standard builds. Paladins raid as Holy healers (Alliance only in Classic; Forever adds Undead paladins). Retribution DPS and Protection tanking are viable in dungeons and late raids but are not mainstream raid roles in Classic Era. Allocations validated against the Classic tree data.
 
 Source of truth: `builds.json` in this folder. Regenerate with `python _reference/data/validate_builds.py && python _reference/data/render_builds.py`.
+
+## Report index
+
+Reports under this folder that no other page links to (generated):
+
+- [optimizer/holy-heal-raid-heal.md](optimizer/holy-heal-raid-heal.md): paladin / classic-era / spec holy-heal / profile raid-heal
+- [optimizer/prot-tank-raid-tank.md](optimizer/prot-tank-raid-tank.md): paladin / classic-era / spec prot-tank / profile raid-tank
+- [optimizer/ret-dps-leveling-st.md](optimizer/ret-dps-leveling-st.md): paladin / classic-era / spec ret-dps / profile leveling-st
+- [optimizer/ret-dps-raid-dps.md](optimizer/ret-dps-raid-dps.md): paladin / classic-era / spec ret-dps / profile raid-dps
+- [raidsim/ret-dps-environments.md](raidsim/ret-dps-environments.md): DPS by environment — paladin ret-dps (Classic Era)
+- [raidsim/ret-dps.md](raidsim/ret-dps.md): Raid sim — paladin ret-dps (Classic Era)
+- [respec-plan.md](respec-plan.md): Paladin / classic-era: respec plan for `leveling-st`

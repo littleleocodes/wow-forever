@@ -53,10 +53,10 @@ The Shadow build the machine-learning talent search found in a full raid (every 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md) | ours: optimizer | 20/0/31 | 688 | +0.0% | 788 | -0.4% | 1 s |
-| 2 | *Standard* | community simulator | - | 643 | -6.5% | 787 | -0.5% | 0 s |
-| 3 | **[`shadow-ml-raid`](shadow-ml-raid.md)** | ours: derived (ML search) | 16/0/35 | 616 | -10.5% | 791 | +0.0% | 16 s |
-| 4 | *Smite* | community simulator | - | 229 | -66.7% | 311 | -60.7% | 8 s |
+| 1 | [`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md) | ours: optimizer | 20/0/31 | 677 | +0.0% | 776 | -0.5% | 1 s |
+| 2 | *Standard* | community simulator | - | 633 | -6.5% | 775 | -0.5% | 0 s |
+| 3 | **[`shadow-ml-raid`](shadow-ml-raid.md)** | ours: derived (ML search) | 16/0/35 | 603 | -10.9% | 779 | +0.0% | 17 s |
+| 4 | *Smite* | community simulator | - | 226 | -66.6% | 307 | -60.6% | 9 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -78,8 +78,8 @@ Before the pull: at -1s: cast Shadowform.
 | 2 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain | 2.6 |
 | 3 | strict sequence: cast Inner Focus; cast Devouring Plague | 0.7 |
 | 4 | cast Shadow Word: Death | 3.1 |
-| 5 | cast Shadow Word: Death (rank 2) | 0.2 |
-| 6 | cast Mind Blast | 6.5 |
+| 5 | cast Shadow Word: Death (rank 2) | 0.3 |
+| 6 | cast Mind Blast | 6.4 |
 | 7 | channel Mind Flay | as ready |
 
 Damage by ability:

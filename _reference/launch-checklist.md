@@ -219,9 +219,6 @@
 **Beast-Marks — Raid (machine-learning search)** (`hunter/research/raid/builds/beast-marks-ml-raid.md`)
 - [ ] A machine-searched Beast-Marks build: check it against the community's Beast-Marks builds at launch.
 
-**Marksmanship — Raid (machine-learning search)** (`hunter/research/raid/builds/marksmanship-ml-raid.md`)
-- [ ] A machine-searched Marksmanship build: check it against the community's Marksmanship builds at launch.
-
 **Beast-Marks — Leveling (open talent search)** (`hunter/research/leveling/builds/beast-marks-open-leveling.md`)
 - [ ] An open-search Beast-Marks leveling build: check it while leveling at launch.
 
@@ -236,6 +233,9 @@
 
 **Beast Mastery — Leveling (open talent search)** (`hunter/research/leveling/builds/beast-mastery-open-leveling.md`)
 - [ ] An open-search Beast Mastery leveling build: check it while leveling at launch.
+
+**Marksmanship — Raid (machine-learning search)** (`hunter/research/raid/builds/marksmanship-ml-raid.md`)
+- [ ] A machine-searched Marksmanship build: check it against the community's Marksmanship builds at launch.
 
 ### Mage
 
@@ -314,9 +314,6 @@
 **Optimizer — Raid Fireball spam with Scorch upkeep (parse)** (`mage/research/raid/builds/opt-fire-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Frost — Raid (machine-learning search)** (`mage/research/raid/builds/frost-ml-raid.md`)
-- [ ] A machine-searched Frost build: check it against the community's Frost builds at launch.
-
 **Frostfire — Raid (machine-learning search)** (`mage/research/raid/builds/frostfire-ml-raid.md`)
 - [ ] A machine-searched Frostfire build: check it against the community's Frostfire builds at launch.
 
@@ -343,6 +340,9 @@
 
 **Frostfire — Leveling (open talent search)** (`mage/research/leveling/builds/frostfire-open-leveling.md`)
 - [ ] An open-search Frostfire leveling build: check it while leveling at launch.
+
+**Frost — Raid (machine-learning search)** (`mage/research/raid/builds/frost-ml-raid.md`)
+- [ ] A machine-searched Frost build: check it against the community's Frost builds at launch.
 
 ### Paladin
 
@@ -586,9 +586,6 @@
 **Assassination/Subtlety hybrid — Raid (open talent search)** (`rogue/research/raid/builds/hybrid-assassination-subtlety-open-raid.md`)
 - [ ] An open-search Assassination/Subtlety hybrid build: check it against the community's Assassination/Subtlety hybrid builds at launch.
 
-**Combat — Raid (machine-learning search)** (`rogue/research/raid/builds/combat-ml-raid.md`)
-- [ ] A machine-searched Combat build: check it against the community's Combat builds at launch.
-
 **Subtlety — Raid (machine-learning search)** (`rogue/research/raid/builds/subtlety-ml-raid.md`)
 - [ ] A machine-searched Subtlety build: check it against the community's Subtlety builds at launch.
 
@@ -603,6 +600,9 @@
 
 **Subtlety — Leveling (open talent search)** (`rogue/research/leveling/builds/subtlety-open-leveling.md`)
 - [ ] An open-search Subtlety leveling build: check it while leveling at launch.
+
+**Combat — Raid (machine-learning search)** (`rogue/research/raid/builds/combat-ml-raid.md`)
+- [ ] A machine-searched Combat build: check it against the community's Combat builds at launch.
 
 ### Shaman
 

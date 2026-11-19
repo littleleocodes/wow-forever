@@ -54,10 +54,10 @@ The Demonology build the machine-learning talent search found in a full raid (ev
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`demonology-pact-raid`](demonology-pact-raid.md) | ours: hand draft | 2/31/18 | 748 | +0.0% | 862 | -0.5% | 0 s |
-| 2 | **[`demonology-ml-raid`](demonology-ml-raid.md)** | ours: derived (ML search) | 2/31/18 | 747 | -0.1% | 867 | +0.0% | 0 s |
-| 3 | *Demo (Shadow Brand)* | community simulator | - | 747 | -0.1% | 867 | +0.0% | 0 s |
-| 4 | *Demo (Fire Brand)* | community simulator | - | 728 | -2.7% | 827 | -4.6% | 0 s |
+| 1 | [`demonology-pact-raid`](demonology-pact-raid.md) | ours: hand draft | 2/31/18 | 734 | +0.0% | 845 | -0.6% | 1 s |
+| 2 | **[`demonology-ml-raid`](demonology-ml-raid.md)** | ours: derived (ML search) | 2/31/18 | 731 | -0.4% | 850 | +0.0% | 1 s |
+| 3 | *Demo (Shadow Brand)* | community simulator | - | 731 | -0.4% | 850 | +0.0% | 1 s |
+| 4 | *Demo (Fire Brand)* | community simulator | - | 713 | -2.9% | 813 | -4.4% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -88,25 +88,25 @@ The Demonology build the machine-learning talent search found in a full raid (ev
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
-| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
+| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.3 |
 | 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.8 |
 | 7 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.4 |
-| 8 | if mana % < 15% and time left in the fight ≥ 6s: cast Life Tap | 7.8 |
-| 9 | if time left on Immolate ≤ cast time of Immolate: cast Immolate | 3.7 |
-| 10 | cast Shadow Bolt (rank 9) | 13.2 |
+| 8 | if mana % < 15% and time left in the fight ≥ 6s: cast Life Tap | 7.7 |
+| 9 | if time left on Immolate ≤ cast time of Immolate: cast Immolate | 3.8 |
+| 10 | cast Shadow Bolt (rank 9) | 13.1 |
 
 Damage by ability:
 
 | Ability | [`demonology-ml-raid`](demonology-ml-raid.md) |
 |---|---|
-| Shadow Bolt | 49% |
+| Shadow Bolt | 48% |
 | Bane of Agony | 16% |
-| Corruption | 15% |
+| Corruption | 16% |
 | Immolate | 11% |
 | Pet: Auto Attack | 5% |
 | Pet: Lash of Pain | 2% |
 | Demonic Rune | 2% |
-| Searing Pain | 1% |
+| Searing Pain | 0% |
 | Pet: spell 1293697 | 0% |
 
 ## Notes

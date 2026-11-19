@@ -14,98 +14,22 @@
   "bis": {
    "entry": "balance-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-bis.gear.json",
-   "date": "2026-11-17",
+   "date": "2026-11-19",
+   "setting": "raid",
    "chosen": "all-slots",
-   "ilvl": 64.1,
+   "ilvl": 62.2,
    "trinkets": [
     "Talisman of Ephemeral Power",
     "Weakness Analyzer"
    ],
-   "trinket_screen": {
-    "Talisman of Ephemeral Power (18820)": 1.027,
-    "Weakness Analyzer (272438)": 1.0184,
-    "Eye of the Beast (13968)": 1.016,
-    "Briarwood Reed (12930)": 1.0135,
-    "Jewel of the Guard Captain (270225)": 1.0112,
-    "Smolderweb's Eye (13213)": 1.0101,
-    "Frozen Heart of the Mountain (249469)": 1.0091,
-    "Rune of the Guard Captain (19120)": 1.0069,
-    "Cleansed Vilebranch Medallion (270275)": 1.0069,
-    "Serenity Field (272439)": 1.0062,
-    "Draconic Infused Emblem (22268)": 1.006,
-    "Cannonball Runner (13382)": 1.0051,
-    "Second Wind (11819)": 1.0044,
-    "Blackhand's Breadth (13965)": 1.0039,
-    "Everlook Delivery Bot (274760)": 1.0006,
-    "Enriched Seal (271903)": 1.0004,
-    "Darkspear Voodoo Seal (272061)": 1.0004,
-    "Shard of the Splithooves (10659)": 1.0003,
-    "Theka's Last Breath (274641)": 1.0003,
-    "Roogug's Severed Head (274152)": 1.0001,
-    "Lookie's Spyglass (273298)": 1.0001,
-    "Worgenbane Talisman (273643)": 1.0,
-    "Dog Whistle (3456)": 1.0,
-    "Minor Recombobulator (4381)": 1.0,
-    "Gnomish Universal Remote (7506)": 1.0,
-    "Demon's Blood (10779)": 1.0,
-    "Force of Will (11810)": 1.0,
-    "Smoking Heart of the Mountain (11811)": 1.0,
-    "Hand of Justice (11815)": 1.0,
-    "Heart of the Scale (13164)": 1.0,
-    "Ramstein's Lightning Bolts (13515)": 1.0,
-    "The Lion Horn of Stormwind (14557)": 1.0,
-    "Arcanite Dragonling (16022)": 1.0,
-    "Heart of Noxxion (17744)": 1.0,
-    "Vigilance Charm (18370)": 1.0,
-    "Counterattack Lodestone (18537)": 1.0,
-    "Gyrofreeze Ice Reflector (18634)": 1.0,
-    "Major Recombobulator (18637)": 1.0,
-    "Hyper-Radiant Flame Reflector (18638)": 1.0,
-    "Ultra-Flash Shadow Reflector (18639)": 1.0,
-    "The Eye of Shadow (18665)": 1.0,
-    "Essence of the Pure Flame (18815)": 1.0,
-    "Arena Grand Master (19024)": 1.0,
-    "Talisman of Arathor (20071)": 1.0,
-    "Defiler's Talisman (20072)": 1.0,
-    "Defiler's Talisman (21115)": 1.0,
-    "Defiler's Talisman (21116)": 1.0,
-    "Talisman of Arathor (21117)": 1.0,
-    "Talisman of Arathor (21118)": 1.0,
-    "Talisman of Arathor (21119)": 1.0,
-    "Defiler's Talisman (21120)": 1.0,
-    "Defender of the Timbermaw (21326)": 1.0,
-    "Heart of Wyrmthalak (22321)": 1.0,
-    "Molten Heart of the Mountain (249470)": 1.0,
-    "Dormant Heart of the Mountain (249473)": 1.0,
-    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
-    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
-    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
-    "Gnomish Poultryizer (260824)": 1.0,
-    "Volunteer's Lucky Seal (271904)": 1.0,
-    "Volunteer's Lucky Seal (271906)": 1.0,
-    "Relentless Raider's Seal (272060)": 1.0,
-    "Relentless Raider's Seal (272062)": 1.0,
-    "Adaptive Combat Assistant (272437)": 1.0,
-    "Defender's Grip Stabilizer (272440)": 1.0,
-    "Cursed Murloc Eye (273840)": 1.0,
-    "The Desert Rose (274648)": 1.0,
-    "Everlook Pathcarver (274759)": 1.0,
-    "Parachute-Priest Pager (274761)": 1.0,
-    "Mark of the Red Flight (282778)": 1.0,
-    "Burst of Knowledge (11832)": 1.0,
-    "Alchemist's Stone (13503)": 0.9997,
-    "Enriched Seal (271905)": 0.9997,
-    "Darkspear Voodoo Seal (272059)": 0.9997,
-    "Mindtap Talisman (18371)": 0.994
-   },
    "names": [
     "Spellweaver's Turban",
     "Choker of the Fire Lord",
     "Mantle of the Timbermaw",
     "Arcanoweave Cloak",
-    "Earthpower Vest",
-    "Rockfury Bracers",
-    "Gloves of Earthen Power",
+    "Alanna's Embrace",
+    "Sublime Wristguards",
+    "Gloves of the Greatfather",
     "Belt of the Archmage",
     "Ironfeather Leggings",
     "Waterspout Boots",
@@ -119,142 +43,49 @@
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.0124713177333815,
-    "keep-sets-and-effects": 1.0072778753389775,
-    "previous": 0.9873371618835871
+    "all-slots": 1.010166880387328,
+    "keep-sets-and-effects": 1.005015744301882
    },
    "confirm_seed2": {
     "current": 1.0,
-    "all-slots": 1.0123380732650422
+    "all-slots": 1.0077944745426444
    },
    "weights": {
-    "StatArcaneDamage": 0.504,
-    "StatCritRating": 0.4231,
-    "StatHasteRating": 0.8147,
-    "StatHitRating": 0.6747,
-    "StatIntellect": 0.1292,
-    "StatNatureDamage": 0.1273,
-    "StatSpellDamage": 0.6312,
-    "StatSpellPiercing": 1.311,
-    "StatSpirit": -0.0005
+    "StatArcaneDamage": 0.4986,
+    "StatCritRating": 0.4482,
+    "StatHasteRating": 0.7879,
+    "StatHitRating": 0.6526,
+    "StatIntellect": 0.132,
+    "StatNatureDamage": 0.1272,
+    "StatSpellDamage": 0.6258,
+    "StatSpellPiercing": 1.2497,
+    "StatSpirit": 0.0001
    },
    "evaluated_on": [
     "balance-dps: ml winner"
    ],
-   "replaced": [
-    {
-     "slot": 0,
-     "from": "Crimson Felt Hat",
-     "to": "Spellweaver's Turban"
-    },
-    {
-     "slot": 9,
-     "from": "Earthen Silk Slippers",
-     "to": "Waterspout Boots"
-    }
-   ],
-   "remade": {
-    "simulator": "wowsims/forever 2e6e77d84",
-    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
-    "missing_before": [],
-    "winner_of": "bis-dummy",
-    "talents_left_out": [],
-    "minutes": 2.1
-   }
+   "commit": "2e6e77d84"
   },
   "bis2": true,
   "prebis": {
    "entry": "balance-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-prebis.gear.json",
-   "date": "2026-11-17",
+   "date": "2026-11-19",
+   "setting": "raid",
    "chosen": "all-slots",
-   "ilvl": 63.0,
+   "ilvl": 61.1,
    "trinkets": [
     "Weakness Analyzer",
     "Eye of the Beast"
    ],
-   "trinket_screen": {
-    "Weakness Analyzer (272438)": 1.0188,
-    "Eye of the Beast (13968)": 1.0163,
-    "Briarwood Reed (12930)": 1.0137,
-    "Jewel of the Guard Captain (270225)": 1.0116,
-    "Smolderweb's Eye (13213)": 1.0104,
-    "Frozen Heart of the Mountain (249469)": 1.0092,
-    "Draconic Infused Emblem (22268)": 1.007,
-    "Serenity Field (272439)": 1.007,
-    "Rune of the Guard Captain (19120)": 1.007,
-    "Cleansed Vilebranch Medallion (270275)": 1.007,
-    "Cannonball Runner (13382)": 1.0051,
-    "Second Wind (11819)": 1.005,
-    "Blackhand's Breadth (13965)": 1.004,
-    "Everlook Delivery Bot (274760)": 1.0007,
-    "Roogug's Severed Head (274152)": 1.0006,
-    "Worgenbane Talisman (273643)": 1.0006,
-    "Alchemist's Stone (13503)": 1.0006,
-    "Enriched Seal (271905)": 1.0005,
-    "Darkspear Voodoo Seal (272059)": 1.0005,
-    "Shard of the Splithooves (10659)": 1.0003,
-    "Theka's Last Breath (274641)": 1.0003,
-    "Burst of Knowledge (11832)": 1.0003,
-    "Enriched Seal (271903)": 1.0003,
-    "Darkspear Voodoo Seal (272061)": 1.0003,
-    "Lookie's Spyglass (273298)": 1.0002,
-    "Dog Whistle (3456)": 1.0,
-    "Minor Recombobulator (4381)": 1.0,
-    "Gnomish Universal Remote (7506)": 1.0,
-    "Demon's Blood (10779)": 1.0,
-    "Force of Will (11810)": 1.0,
-    "Smoking Heart of the Mountain (11811)": 1.0,
-    "Hand of Justice (11815)": 1.0,
-    "Heart of the Scale (13164)": 1.0,
-    "Ramstein's Lightning Bolts (13515)": 1.0,
-    "The Lion Horn of Stormwind (14557)": 1.0,
-    "Arcanite Dragonling (16022)": 1.0,
-    "Heart of Noxxion (17744)": 1.0,
-    "Vigilance Charm (18370)": 1.0,
-    "Counterattack Lodestone (18537)": 1.0,
-    "Gyrofreeze Ice Reflector (18634)": 1.0,
-    "Major Recombobulator (18637)": 1.0,
-    "Hyper-Radiant Flame Reflector (18638)": 1.0,
-    "Ultra-Flash Shadow Reflector (18639)": 1.0,
-    "The Eye of Shadow (18665)": 1.0,
-    "Talisman of Arathor (20071)": 1.0,
-    "Defiler's Talisman (20072)": 1.0,
-    "Defiler's Talisman (21115)": 1.0,
-    "Defiler's Talisman (21116)": 1.0,
-    "Talisman of Arathor (21117)": 1.0,
-    "Talisman of Arathor (21118)": 1.0,
-    "Talisman of Arathor (21119)": 1.0,
-    "Defiler's Talisman (21120)": 1.0,
-    "Defender of the Timbermaw (21326)": 1.0,
-    "Heart of Wyrmthalak (22321)": 1.0,
-    "Molten Heart of the Mountain (249470)": 1.0,
-    "Dormant Heart of the Mountain (249473)": 1.0,
-    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
-    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
-    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
-    "Gnomish Poultryizer (260824)": 1.0,
-    "Volunteer's Lucky Seal (271904)": 1.0,
-    "Volunteer's Lucky Seal (271906)": 1.0,
-    "Relentless Raider's Seal (272060)": 1.0,
-    "Relentless Raider's Seal (272062)": 1.0,
-    "Adaptive Combat Assistant (272437)": 1.0,
-    "Defender's Grip Stabilizer (272440)": 1.0,
-    "Cursed Murloc Eye (273840)": 1.0,
-    "The Desert Rose (274648)": 1.0,
-    "Everlook Pathcarver (274759)": 1.0,
-    "Parachute-Priest Pager (274761)": 1.0,
-    "Mark of the Red Flight (282778)": 1.0,
-    "Mindtap Talisman (18371)": 0.9944
-   },
    "names": [
     "Spellweaver's Turban",
     "Orb of the Darkmoon",
     "Mantle of the Timbermaw",
     "Arcanoweave Cloak",
-    "Earthpower Vest",
-    "Rockfury Bracers",
-    "Gloves of Earthen Power",
+    "Alanna's Embrace",
+    "Sublime Wristguards",
+    "Gloves of the Greatfather",
     "Belt of the Archmage",
     "Ironfeather Leggings",
     "Waterspout Boots",
@@ -268,47 +99,155 @@
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9947330633202549,
-    "previous": 0.9748368243835501
+    "keep-sets-and-effects": 0.9964829476779922
    },
    "confirm_seed2": {
-    "previous": 1.0,
-    "all-slots": 1.026890855573875
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.0021818764289558
    },
    "weights": {
-    "StatArcaneDamage": 0.5105,
-    "StatCritRating": 0.4285,
-    "StatHasteRating": 0.7873,
-    "StatHitRating": 0.7354,
-    "StatIntellect": 0.1143,
-    "StatNatureDamage": 0.1275,
-    "StatSpellDamage": 0.638,
-    "StatSpellPiercing": 1.278,
-    "StatSpirit": -0.0005
+    "StatArcaneDamage": 0.4988,
+    "StatCritRating": 0.4335,
+    "StatHasteRating": 0.7736,
+    "StatHitRating": 0.6417,
+    "StatIntellect": 0.1201,
+    "StatNatureDamage": 0.1273,
+    "StatSpellDamage": 0.6261,
+    "StatSpellPiercing": 1.2249,
+    "StatSpirit": 0.0001
    },
    "evaluated_on": [
     "balance-dps: ml winner (bis)"
    ],
-   "replaced": [
-    {
-     "slot": 0,
-     "from": "Crimson Felt Hat",
-     "to": "Spellweaver's Turban"
-    },
-    {
-     "slot": 9,
-     "from": "Earthen Silk Slippers",
-     "to": "Waterspout Boots"
-    }
+   "commit": "2e6e77d84"
+  },
+  "dungeon": {
+   "entry": "balance-dps",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-dungeon.gear.json",
+   "date": "2026-11-19",
+   "chosen": "keep-sets-and-effects",
+   "ilvl": 60.8,
+   "trinkets": [
+    "Eye of the Beast",
+    "Smolderweb's Eye"
    ],
-   "remade": {
-    "simulator": "wowsims/forever 2e6e77d84",
-    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
-    "missing_before": [],
-    "winner_of": "bis-dummy",
-    "talents_left_out": [],
-    "minutes": 1.9
-   }
+   "trinket_screen": {
+    "Eye of the Beast (13968)": 1.0165,
+    "Smolderweb's Eye (13213)": 1.0095,
+    "Rune of the Guard Captain (19120)": 1.0071,
+    "Royal Seal of Eldre'Thalas (18470)": 1.0069,
+    "Cannonball Runner (13382)": 1.0056,
+    "Smokey's Lighter (13171)": 1.0055,
+    "Second Wind (11819)": 1.0054,
+    "Blackhand's Breadth (13965)": 1.0051,
+    "Everlook Delivery Bot (274760)": 1.002,
+    "Worgenbane Talisman (273643)": 1.0003,
+    "Roogug's Severed Head (274152)": 1.0003,
+    "Guardian Talisman (1490)": 1.0002,
+    "Nifty Stopwatch (2820)": 1.0002,
+    "Dog Whistle (3456)": 1.0002,
+    "Smotts' Compass (4130)": 1.0002,
+    "Glimmering Mithril Insignia (10418)": 1.0002,
+    "Chained Essence of Eranikus (10455)": 1.0002,
+    "Demon's Blood (10779)": 1.0002,
+    "Carrot on a Stick (11122)": 1.0002,
+    "Force of Will (11810)": 1.0002,
+    "Hand of Justice (11815)": 1.0002,
+    "Ward of the Elements (12065)": 1.0002,
+    "Heart of the Scale (13164)": 1.0002,
+    "Seal of the Dawn (13209)": 1.0002,
+    "Ramstein's Lightning Bolts (13515)": 1.0002,
+    "Spectral Essence (13544)": 1.0002,
+    "Mark of Tyranny (13966)": 1.0002,
+    "Barov Peasant Caller (14022)": 1.0002,
+    "Barov Peasant Caller (14023)": 1.0002,
+    "Prismcharm (15867)": 1.0002,
+    "Ragged John's Neverending Cup (15873)": 1.0002,
+    "Heart of Noxxion (17744)": 1.0002,
+    "Mark of Resolution (17759)": 1.0002,
+    "Mark of the Chosen (17774)": 1.0002,
+    "Vigilance Charm (18370)": 1.0002,
+    "Counterattack Lodestone (18537)": 1.0002,
+    "Arena Grand Master (19024)": 1.0002,
+    "Luffa (19141)": 1.0002,
+    "Rune of the Dawn (19812)": 1.0002,
+    "Hook of the Master Angler (19979)": 1.0002,
+    "Talisman of Arathor (20071)": 1.0002,
+    "Defiler's Talisman (20072)": 1.0002,
+    "Defiler's Talisman (21115)": 1.0002,
+    "Defiler's Talisman (21116)": 1.0002,
+    "Talisman of Arathor (21117)": 1.0002,
+    "Talisman of Arathor (21118)": 1.0002,
+    "Talisman of Arathor (21119)": 1.0002,
+    "Defiler's Talisman (21120)": 1.0002,
+    "Defender of the Timbermaw (21326)": 1.0002,
+    "Heart of Wyrmthalak (22321)": 1.0002,
+    "Volunteer's Lucky Seal (271904)": 1.0002,
+    "Volunteer's Lucky Seal (271906)": 1.0002,
+    "Relentless Raider's Seal (272060)": 1.0002,
+    "Relentless Raider's Seal (272062)": 1.0002,
+    "Adaptive Combat Assistant (272437)": 1.0002,
+    "Cursed Murloc Eye (273840)": 1.0002,
+    "The Desert Rose (274648)": 1.0002,
+    "Everlook Pathcarver (274759)": 1.0002,
+    "Parachute-Priest Pager (274761)": 1.0002,
+    "Transformative Cocoon (276895)": 1.0002,
+    "Satchel of Potions (280766)": 1.0002,
+    "Lookie's Spyglass (273298)": 1.0001,
+    "Thunderbrew's Boot Flask (744)": 1.0,
+    "Enriched Seal (271905)": 1.0,
+    "Darkspear Voodoo Seal (272059)": 1.0,
+    "Linken's Boomerang (11905)": 1.0,
+    "Evonice's Landin' Pilla (18951)": 0.9998,
+    "Shard of the Splithooves (10659)": 0.9997,
+    "Theka's Last Breath (274641)": 0.9997,
+    "Enriched Seal (271903)": 0.9996,
+    "Darkspear Voodoo Seal (272061)": 0.9996,
+    "Burst of Knowledge (11832)": 0.9995,
+    "Mindtap Talisman (18371)": 0.9935
+   },
+   "names": [
+    "Crimson Felt Hat",
+    "Orb of the Darkmoon",
+    "Shroud of the Nathrezim",
+    "Spritecaster Cape",
+    "Robe of Everlasting Night",
+    "Sublime Wristguards",
+    "Hands of Power",
+    "Highlander's Cloth Girdle",
+    "Skyshroud Leggings",
+    "Waterspout Boots",
+    "Songstone of Ironforge",
+    "Eye of Orgrimmar",
+    "Eye of the Beast",
+    "Smolderweb's Eye",
+    "Headmaster's Charge",
+    null,
+    "Swarming Idol"
+   ],
+   "race_seed1": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0
+   },
+   "confirm_seed2": {
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.0
+   },
+   "weights": {
+    "StatArcaneDamage": 0.4694,
+    "StatCritRating": 0.3922,
+    "StatHasteRating": 0.6082,
+    "StatHitRating": 0.5624,
+    "StatIntellect": 0.1226,
+    "StatNatureDamage": 0.122,
+    "StatSpellDamage": 0.5914,
+    "StatSpellPiercing": 1.1238,
+    "StatSpirit": 0.0096
+   },
+   "evaluated_on": [
+    "balance-dps: ml winner (pre-BiS, full raid)"
+   ],
+   "commit": "2e6e77d84"
   }
  },
  "search": {
@@ -759,7 +698,7 @@
    "spec": "Balance",
    "setting": "dummy",
    "entry": "balance-dps",
-   "date": "2026-11-01",
+   "date": "2026-11-19",
    "constraint": "Balance 30+",
    "protected": [],
    "entries_screened": {},
@@ -839,14 +778,14 @@
      ]
     },
     "split": "38/0/13",
-    "dps": 585.04,
-    "se": 0.1043,
+    "dps": 626.36,
+    "se": 0.1164,
     "iterations": 100000
    },
    "runner_up": {
     "split": "38/0/13",
-    "dps": 583.91,
-    "se": 0.1061,
+    "dps": 624.95,
+    "se": 0.1184,
     "differs": [
      [
       "Eclipse",
@@ -862,7 +801,7 @@
      ]
     ]
    },
-   "gap_to_runner_up": 0.0019,
+   "gap_to_runner_up": 0.0023,
    "finalists": [
     {
      "allocation": {
@@ -937,8 +876,8 @@
       ]
      },
      "split": "38/0/13",
-     "dps": 585.04,
-     "se": 0.1043
+     "dps": 626.36,
+     "se": 0.1164
     },
     {
      "allocation": {
@@ -1017,8 +956,8 @@
       ]
      },
      "split": "38/0/13",
-     "dps": 583.91,
-     "se": 0.1061
+     "dps": 624.95,
+     "se": 0.1184
     }
    ],
    "runs": [
@@ -1026,49 +965,49 @@
      "entry": "balance-dps",
      "run": 1,
      "simulated": 1585,
-     "best_screen": 583.99,
+     "best_screen": 625.96,
      "best_split": "38/0/13",
      "trace": [
       {
        "round": 0,
        "simulated": 385,
-       "best": 577.59
+       "best": 618.91
       },
       {
        "round": 1,
        "simulated": 585,
-       "best": 579.32,
-       "predicted_top": 572.24
+       "best": 620.29,
+       "predicted_top": 612.72
       },
       {
        "round": 2,
        "simulated": 785,
-       "best": 579.32,
-       "predicted_top": 577.36
+       "best": 620.29,
+       "predicted_top": 618.51
       },
       {
        "round": 3,
        "simulated": 985,
-       "best": 582.15,
-       "predicted_top": 578.8
+       "best": 620.29,
+       "predicted_top": 619.54
       },
       {
        "round": 4,
        "simulated": 1185,
-       "best": 582.15,
-       "predicted_top": 579.33
+       "best": 621.57,
+       "predicted_top": 620.17
       },
       {
        "round": 5,
        "simulated": 1385,
-       "best": 583.99,
-       "predicted_top": 580.71
+       "best": 623.81,
+       "predicted_top": 620.79
       },
       {
        "round": 6,
        "simulated": 1585,
-       "best": 583.99,
-       "predicted_top": 581.7
+       "best": 625.96,
+       "predicted_top": 622.13
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1081,38 +1020,38 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      584.92,
-      583.78,
-      582.96,
-      582.96,
-      582.96,
-      582.66
+      626.23,
+      624.81,
+      623.61,
+      623.61,
+      623.61,
+      623.61
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      584.72,
-      583.68,
-      582.69,
-      582.69,
-      582.69
+      626.2,
+      624.89,
+      623.73,
+      623.73,
+      623.73
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      585.04,
-      583.91
+      626.36,
+      624.95
      ]
     }
    ],
    "certificate": [
     {
      "neighbours": 506,
-     "best_gap": -0.0018,
+     "best_gap": -0.0023,
      "best_move": "1 Improved Wrath -> Eclipse"
     }
    ],
@@ -1120,51 +1059,51 @@
    "important_features": [
     {
      "feature": "Naturalist",
-     "importance": 0.2792
-    },
-    {
-     "feature": "Reflection",
-     "importance": 0.1673
+     "importance": 0.3087
     },
     {
      "feature": "Moonkin Form",
-     "importance": 0.1378
+     "importance": 0.189
+    },
+    {
+     "feature": "Reflection",
+     "importance": 0.1436
     },
     {
      "feature": "Feral Combat points",
-     "importance": 0.1148
-    },
-    {
-     "feature": "Restoration points",
-     "importance": 0.0579
-    },
-    {
-     "feature": "Moonfury",
-     "importance": 0.0458
+     "importance": 0.1038
     },
     {
      "feature": "Improved Wrath",
-     "importance": 0.0331
+     "importance": 0.0396
     },
     {
-     "feature": "Insect Swarm",
-     "importance": 0.0328
-    },
-    {
-     "feature": "Moonglow",
-     "importance": 0.0251
-    },
-    {
-     "feature": "Vengeance",
-     "importance": 0.0215
+     "feature": "Restoration points",
+     "importance": 0.0358
     },
     {
      "feature": "Improved Entangling Roots",
-     "importance": 0.0199
+     "importance": 0.035
+    },
+    {
+     "feature": "Moonfury",
+     "importance": 0.0305
+    },
+    {
+     "feature": "Moonglow",
+     "importance": 0.0274
+    },
+    {
+     "feature": "Insect Swarm",
+     "importance": 0.0213
     },
     {
      "feature": "Balance points",
-     "importance": 0.0182
+     "importance": 0.0154
+    },
+    {
+     "feature": "Vengeance",
+     "importance": 0.0128
     }
    ],
    "simulated_builds": 2105,
@@ -1178,16 +1117,16 @@
     "why": ""
    },
    "simulated_fights": 3516000,
-   "minutes": 7.8,
+   "minutes": 2.7,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-bis.gear.json",
-   "commit": "54ceac638"
+   "commit": "2e6e77d84"
   },
   "bis-raid": {
    "class": "druid",
    "spec": "Balance",
    "setting": "raid",
    "entry": "balance-dps",
-   "date": "2026-11-01",
+   "date": "2026-11-19",
    "constraint": "Balance 30+",
    "protected": [],
    "entries_screened": {},
@@ -1267,14 +1206,14 @@
      ]
     },
     "split": "33/0/18",
-    "dps": 665.89,
-    "se": 0.1107,
+    "dps": 716.87,
+    "se": 0.1212,
     "iterations": 100000
    },
    "runner_up": {
     "split": "38/0/13",
-    "dps": 665.89,
-    "se": 0.1107,
+    "dps": 716.87,
+    "se": 0.1212,
     "differs": [
      [
       "Improved Wrath",
@@ -1361,8 +1300,8 @@
       ]
      },
      "split": "33/0/18",
-     "dps": 665.89,
-     "se": 0.1107
+     "dps": 716.87,
+     "se": 0.1212
     },
     {
      "allocation": {
@@ -1437,8 +1376,8 @@
       ]
      },
      "split": "38/0/13",
-     "dps": 665.89,
-     "se": 0.1107
+     "dps": 716.87,
+     "se": 0.1212
     }
    ],
    "runs": [
@@ -1446,37 +1385,37 @@
      "entry": "balance-dps",
      "run": 1,
      "simulated": 1187,
-     "best_screen": 667.83,
+     "best_screen": 717.17,
      "best_split": "33/0/18",
      "trace": [
       {
        "round": 0,
        "simulated": 387,
-       "best": 667.83
+       "best": 717.17
       },
       {
        "round": 1,
        "simulated": 587,
-       "best": 667.83,
-       "predicted_top": 666.89
+       "best": 717.17,
+       "predicted_top": 716.37
       },
       {
        "round": 2,
        "simulated": 787,
-       "best": 667.83,
-       "predicted_top": 667.82
+       "best": 717.17,
+       "predicted_top": 717.17
       },
       {
        "round": 3,
        "simulated": 987,
-       "best": 667.83,
-       "predicted_top": 667.83
+       "best": 717.17,
+       "predicted_top": 717.17
       },
       {
        "round": 4,
        "simulated": 1187,
-       "best": 667.83,
-       "predicted_top": 667.83
+       "best": 717.17,
+       "predicted_top": 717.17
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1489,100 +1428,93 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      665.86,
-      665.86,
-      665.86,
-      665.86,
-      665.86,
-      665.86
+      716.57,
+      716.57,
+      716.57,
+      716.57,
+      716.57,
+      716.57
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      665.63,
-      665.63,
-      665.63,
-      665.63,
-      665.63
+      716.69,
+      716.69,
+      716.69,
+      716.69,
+      716.69
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      665.89,
-      665.89
+      716.87,
+      716.87
      ]
     }
    ],
    "certificate": [
     {
      "neighbours": 302,
-     "best_gap": 0.0012,
-     "best_move": "1 Moonkin Form -> Swiftmend",
-     "raced": [
-      "1 Moonkin Form -> Swiftmend",
-      "1 Moonkin Form -> Improved Rejuvenation",
-      "1 Moonkin Form -> Tranquil Spirit",
-      "1 Moonkin Form -> Bloom"
-     ],
-     "confirmed_gap": -0.0002
+     "best_gap": 0.0,
+     "best_move": "1 Nature's Focus -> Swiftmend"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Naturalist",
-     "importance": 0.3863
+     "importance": 0.3812
     },
     {
      "feature": "Improved Wrath",
-     "importance": 0.1547
+     "importance": 0.1929
     },
     {
      "feature": "Moonfury",
-     "importance": 0.1363
+     "importance": 0.136
     },
     {
      "feature": "Feral Combat points",
-     "importance": 0.0775
+     "importance": 0.0732
     },
     {
      "feature": "Vengeance",
-     "importance": 0.0502
-    },
-    {
-     "feature": "Balance points",
-     "importance": 0.0328
-    },
-    {
-     "feature": "Insect Swarm",
-     "importance": 0.0324
-    },
-    {
-     "feature": "Improved Entangling Roots",
-     "importance": 0.0317
+     "importance": 0.0432
     },
     {
      "feature": "Improved Starfire",
-     "importance": 0.0273
+     "importance": 0.0408
+    },
+    {
+     "feature": "Balance points",
+     "importance": 0.0288
+    },
+    {
+     "feature": "Insect Swarm",
+     "importance": 0.0229
+    },
+    {
+     "feature": "Improved Entangling Roots",
+     "importance": 0.0199
     },
     {
      "feature": "Restoration points",
-     "importance": 0.0255
+     "importance": 0.0184
     },
     {
-     "feature": "Eclipse",
-     "importance": 0.0076
+     "feature": "Ferocity",
+     "importance": 0.0057
     },
     {
-     "feature": "Overgrowth",
-     "importance": 0.0051
+     "feature": "Reflection",
+     "importance": 0.005
     }
    ],
-   "simulated_builds": 1508,
+   "simulated_builds": 1503,
    "signature_check": {
     "spec": "Balance",
     "ok": true,
@@ -1592,17 +1524,17 @@
     "missing_talents": [],
     "why": ""
    },
-   "simulated_fights": 2656000,
-   "minutes": 6.5,
+   "simulated_fights": 2506000,
+   "minutes": 2.1,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-bis.gear.json",
-   "commit": "54ceac638"
+   "commit": "2e6e77d84"
   },
   "prebis-dummy": {
    "class": "druid",
    "spec": "Balance",
    "setting": "dummy",
    "entry": "balance-dps",
-   "date": "2026-11-01",
+   "date": "2026-11-19",
    "constraint": "Balance 30+",
    "protected": [],
    "entries_screened": {},
@@ -1682,14 +1614,14 @@
      ]
     },
     "split": "38/0/13",
-    "dps": 568.39,
-    "se": 0.099,
+    "dps": 611.92,
+    "se": 0.1094,
     "iterations": 100000
    },
    "runner_up": {
     "split": "38/0/13",
-    "dps": 567.81,
-    "se": 0.1001,
+    "dps": 611.11,
+    "se": 0.1111,
     "differs": [
      [
       "Eclipse",
@@ -1705,7 +1637,7 @@
      ]
     ]
    },
-   "gap_to_runner_up": 0.001,
+   "gap_to_runner_up": 0.0013,
    "finalists": [
     {
      "allocation": {
@@ -1780,8 +1712,8 @@
       ]
      },
      "split": "38/0/13",
-     "dps": 568.39,
-     "se": 0.099
+     "dps": 611.92,
+     "se": 0.1094
     },
     {
      "allocation": {
@@ -1860,8 +1792,8 @@
       ]
      },
      "split": "38/0/13",
-     "dps": 567.81,
-     "se": 0.1001
+     "dps": 611.11,
+     "se": 0.1111
     }
    ],
    "runs": [
@@ -1869,37 +1801,37 @@
      "entry": "balance-dps",
      "run": 1,
      "simulated": 1194,
-     "best_screen": 567.88,
+     "best_screen": 611.44,
      "best_split": "38/0/13",
      "trace": [
       {
        "round": 0,
        "simulated": 394,
-       "best": 567.88
+       "best": 611.44
       },
       {
        "round": 1,
        "simulated": 594,
-       "best": 567.88,
-       "predicted_top": 560.58
+       "best": 611.44,
+       "predicted_top": 604.21
       },
       {
        "round": 2,
        "simulated": 794,
-       "best": 567.88,
-       "predicted_top": 564.89
+       "best": 611.44,
+       "predicted_top": 607.72
       },
       {
        "round": 3,
        "simulated": 994,
-       "best": 567.88,
-       "predicted_top": 565.66
+       "best": 611.44,
+       "predicted_top": 608.77
       },
       {
        "round": 4,
        "simulated": 1194,
-       "best": 567.88,
-       "predicted_top": 565.18
+       "best": 611.44,
+       "predicted_top": 608.29
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1912,38 +1844,38 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      568.26,
-      567.68,
-      567.27,
-      566.95,
-      566.95,
-      566.95
+      611.9,
+      611.17,
+      610.55,
+      610.09,
+      609.94,
+      609.91
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      567.98,
-      567.51,
-      567.09,
-      566.71,
-      566.71
+      611.67,
+      610.77,
+      610.26,
+      609.91,
+      609.68
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      568.39,
-      567.81
+      611.92,
+      611.11
      ]
     }
    ],
    "certificate": [
     {
      "neighbours": 506,
-     "best_gap": -0.0008,
+     "best_gap": -0.0019,
      "best_move": "1 Improved Wrath -> Eclipse"
     }
    ],
@@ -1951,51 +1883,51 @@
    "important_features": [
     {
      "feature": "Naturalist",
-     "importance": 0.3
+     "importance": 0.3195
     },
     {
      "feature": "Moonkin Form",
-     "importance": 0.1825
+     "importance": 0.2066
     },
     {
      "feature": "Reflection",
-     "importance": 0.1606
-    },
-    {
-     "feature": "Moonfury",
-     "importance": 0.0875
+     "importance": 0.1389
     },
     {
      "feature": "Feral Combat points",
-     "importance": 0.0563
-    },
-    {
-     "feature": "Improved Entangling Roots",
-     "importance": 0.0553
-    },
-    {
-     "feature": "Restoration points",
-     "importance": 0.0251
-    },
-    {
-     "feature": "Vengeance",
-     "importance": 0.0214
+     "importance": 0.0775
     },
     {
      "feature": "Moonglow",
-     "importance": 0.0199
+     "importance": 0.0539
+    },
+    {
+     "feature": "Moonfury",
+     "importance": 0.0537
+    },
+    {
+     "feature": "Improved Entangling Roots",
+     "importance": 0.0483
     },
     {
      "feature": "Balance points",
-     "importance": 0.0198
+     "importance": 0.016
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0146
+    },
+    {
+     "feature": "Vengeance",
+     "importance": 0.0145
     },
     {
      "feature": "Insect Swarm",
-     "importance": 0.0188
+     "importance": 0.0093
     },
     {
      "feature": "Improved Wrath",
-     "importance": 0.0106
+     "importance": 0.0072
     }
    ],
    "simulated_builds": 1714,
@@ -2009,22 +1941,426 @@
     "why": ""
    },
    "simulated_fights": 3125000,
-   "minutes": 7.2,
+   "minutes": 2.4,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-prebis.gear.json",
-   "commit": "54ceac638"
+   "commit": "2e6e77d84"
   },
   "prebis-raid": {
    "class": "druid",
    "spec": "Balance",
    "setting": "raid",
    "entry": "balance-dps",
-   "date": "2026-11-01",
+   "date": "2026-11-19",
    "constraint": "Balance 30+",
    "protected": [],
    "entries_screened": {},
    "entries_searched": [
     "balance-dps"
    ],
+   "winner": {
+    "allocation": {
+     "Balance": [
+      [
+       "Genesis",
+       5
+      ],
+      [
+       "Moonglow",
+       3
+      ],
+      [
+       "Improved Moonfire",
+       2
+      ],
+      [
+       "Nature's Majesty",
+       2
+      ],
+      [
+       "Nature's Reach",
+       2
+      ],
+      [
+       "Nature's Splendor",
+       1
+      ],
+      [
+       "Insect Swarm",
+       1
+      ],
+      [
+       "Vengeance",
+       5
+      ],
+      [
+       "Improved Starfire",
+       5
+      ],
+      [
+       "Nature's Grace",
+       1
+      ],
+      [
+       "Moonfury",
+       5
+      ]
+     ],
+     "Feral Combat": [],
+     "Restoration": [
+      [
+       "Nature's Focus",
+       5
+      ],
+      [
+       "Heart of the Wild",
+       5
+      ],
+      [
+       "Naturalist",
+       5
+      ],
+      [
+       "Reflection",
+       3
+      ],
+      [
+       "Subtlety",
+       1
+      ]
+     ]
+    },
+    "split": "32/0/19",
+    "dps": 694.21,
+    "se": 0.1162,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "32/0/19",
+    "dps": 694.21,
+    "se": 0.1162,
+    "differs": [
+     [
+      "Bloom",
+      1
+     ],
+     [
+      "Subtlety",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Balance": [
+       [
+        "Genesis",
+        5
+       ],
+       [
+        "Moonglow",
+        3
+       ],
+       [
+        "Improved Moonfire",
+        2
+       ],
+       [
+        "Nature's Majesty",
+        2
+       ],
+       [
+        "Nature's Reach",
+        2
+       ],
+       [
+        "Nature's Splendor",
+        1
+       ],
+       [
+        "Insect Swarm",
+        1
+       ],
+       [
+        "Vengeance",
+        5
+       ],
+       [
+        "Improved Starfire",
+        5
+       ],
+       [
+        "Nature's Grace",
+        1
+       ],
+       [
+        "Moonfury",
+        5
+       ]
+      ],
+      "Feral Combat": [],
+      "Restoration": [
+       [
+        "Nature's Focus",
+        5
+       ],
+       [
+        "Heart of the Wild",
+        5
+       ],
+       [
+        "Naturalist",
+        5
+       ],
+       [
+        "Reflection",
+        3
+       ],
+       [
+        "Subtlety",
+        1
+       ]
+      ]
+     },
+     "split": "32/0/19",
+     "dps": 694.21,
+     "se": 0.1162
+    },
+    {
+     "allocation": {
+      "Balance": [
+       [
+        "Genesis",
+        5
+       ],
+       [
+        "Moonglow",
+        3
+       ],
+       [
+        "Improved Moonfire",
+        2
+       ],
+       [
+        "Nature's Majesty",
+        2
+       ],
+       [
+        "Nature's Reach",
+        2
+       ],
+       [
+        "Nature's Splendor",
+        1
+       ],
+       [
+        "Insect Swarm",
+        1
+       ],
+       [
+        "Vengeance",
+        5
+       ],
+       [
+        "Improved Starfire",
+        5
+       ],
+       [
+        "Nature's Grace",
+        1
+       ],
+       [
+        "Moonfury",
+        5
+       ]
+      ],
+      "Feral Combat": [],
+      "Restoration": [
+       [
+        "Nature's Focus",
+        5
+       ],
+       [
+        "Heart of the Wild",
+        5
+       ],
+       [
+        "Naturalist",
+        5
+       ],
+       [
+        "Reflection",
+        3
+       ],
+       [
+        "Bloom",
+        1
+       ]
+      ]
+     },
+     "split": "32/0/19",
+     "dps": 694.21,
+     "se": 0.1162
+    }
+   ],
+   "runs": [
+    {
+     "entry": "balance-dps",
+     "run": 1,
+     "simulated": 1188,
+     "best_screen": 694.81,
+     "best_split": "32/0/19",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 388,
+       "best": 694.81
+      },
+      {
+       "round": 1,
+       "simulated": 588,
+       "best": 694.81,
+       "predicted_top": 692.38
+      },
+      {
+       "round": 2,
+       "simulated": 788,
+       "best": 694.81,
+       "predicted_top": 694.0
+      },
+      {
+       "round": 3,
+       "simulated": 988,
+       "best": 694.81,
+       "predicted_top": 694.79
+      },
+      {
+       "round": 4,
+       "simulated": 1188,
+       "best": 694.81,
+       "predicted_top": 694.81
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      693.89,
+      693.89,
+      693.89,
+      693.89,
+      693.89,
+      693.89
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      693.92,
+      693.92,
+      693.92,
+      693.92,
+      693.92
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      694.21,
+      694.21
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 376,
+     "best_gap": 0.0005,
+     "best_move": "1 Reflection -> Moonkin Form"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Naturalist",
+     "importance": 0.3712
+    },
+    {
+     "feature": "Improved Wrath",
+     "importance": 0.1836
+    },
+    {
+     "feature": "Moonfury",
+     "importance": 0.1319
+    },
+    {
+     "feature": "Vengeance",
+     "importance": 0.064
+    },
+    {
+     "feature": "Feral Combat points",
+     "importance": 0.059
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0522
+    },
+    {
+     "feature": "Balance points",
+     "importance": 0.0332
+    },
+    {
+     "feature": "Improved Starfire",
+     "importance": 0.031
+    },
+    {
+     "feature": "Insect Swarm",
+     "importance": 0.0201
+    },
+    {
+     "feature": "Improved Entangling Roots",
+     "importance": 0.0083
+    },
+    {
+     "feature": "Ferocity",
+     "importance": 0.0056
+    },
+    {
+     "feature": "Genesis",
+     "importance": 0.0052
+    }
+   ],
+   "simulated_builds": 1578,
+   "signature_check": {
+    "spec": "Balance",
+    "ok": true,
+    "core_share": 1.0,
+    "min_share": 0.7,
+    "uncast": [],
+    "missing_talents": [],
+    "why": ""
+   },
+   "simulated_fights": 2729000,
+   "minutes": 2.3,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-prebis.gear.json",
+   "commit": "2e6e77d84"
+  },
+  "dungeon-raid": {
+   "class": "druid",
+   "spec": "Balance",
+   "setting": "raid",
+   "entry": "balance-dps",
+   "date": "2026-11-19",
+   "commit": "2e6e77d84",
+   "method": "the record's tier winners raced in the tier's set in a full raid (no search of its own)",
    "winner": {
     "allocation": {
      "Balance": [
@@ -2098,331 +2434,29 @@
      ]
     },
     "split": "33/0/18",
-    "dps": 642.07,
-    "se": 0.1066,
-    "iterations": 100000
+    "dps": 631.5,
+    "from": "bis-raid"
    },
-   "runner_up": {
-    "split": "38/0/13",
-    "dps": 642.07,
-    "se": 0.1066,
-    "differs": [
-     [
-      "Improved Wrath",
-      5
-     ],
-     [
-      "Nature's Focus",
-      5
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Balance": [
-       [
-        "Genesis",
-        5
-       ],
-       [
-        "Moonglow",
-        3
-       ],
-       [
-        "Improved Moonfire",
-        2
-       ],
-       [
-        "Nature's Majesty",
-        2
-       ],
-       [
-        "Nature's Reach",
-        2
-       ],
-       [
-        "Nature's Splendor",
-        1
-       ],
-       [
-        "Insect Swarm",
-        1
-       ],
-       [
-        "Vengeance",
-        5
-       ],
-       [
-        "Improved Starfire",
-        5
-       ],
-       [
-        "Nature's Grace",
-        1
-       ],
-       [
-        "Moonfury",
-        5
-       ],
-       [
-        "Moonkin Form",
-        1
-       ]
-      ],
-      "Feral Combat": [],
-      "Restoration": [
-       [
-        "Nature's Focus",
-        5
-       ],
-       [
-        "Heart of the Wild",
-        5
-       ],
-       [
-        "Naturalist",
-        5
-       ],
-       [
-        "Reflection",
-        3
-       ]
-      ]
-     },
-     "split": "33/0/18",
-     "dps": 642.07,
-     "se": 0.1066
-    },
-    {
-     "allocation": {
-      "Balance": [
-       [
-        "Improved Wrath",
-        5
-       ],
-       [
-        "Genesis",
-        5
-       ],
-       [
-        "Moonglow",
-        3
-       ],
-       [
-        "Improved Moonfire",
-        2
-       ],
-       [
-        "Nature's Majesty",
-        2
-       ],
-       [
-        "Nature's Reach",
-        2
-       ],
-       [
-        "Nature's Splendor",
-        1
-       ],
-       [
-        "Insect Swarm",
-        1
-       ],
-       [
-        "Vengeance",
-        5
-       ],
-       [
-        "Improved Starfire",
-        5
-       ],
-       [
-        "Nature's Grace",
-        1
-       ],
-       [
-        "Moonfury",
-        5
-       ],
-       [
-        "Moonkin Form",
-        1
-       ]
-      ],
-      "Feral Combat": [],
-      "Restoration": [
-       [
-        "Heart of the Wild",
-        5
-       ],
-       [
-        "Naturalist",
-        5
-       ],
-       [
-        "Reflection",
-        3
-       ]
-      ]
-     },
-     "split": "38/0/13",
-     "dps": 642.07,
-     "se": 0.1066
-    }
-   ],
-   "runs": [
-    {
-     "entry": "balance-dps",
-     "run": 1,
-     "simulated": 1188,
-     "best_screen": 644.11,
-     "best_split": "33/0/18",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 388,
-       "best": 644.11
-      },
-      {
-       "round": 1,
-       "simulated": 588,
-       "best": 644.11,
-       "predicted_top": 642.97
-      },
-      {
-       "round": 2,
-       "simulated": 788,
-       "best": 644.11,
-       "predicted_top": 644.04
-      },
-      {
-       "round": 3,
-       "simulated": 988,
-       "best": 644.11,
-       "predicted_top": 644.09
-      },
-      {
-       "round": 4,
-       "simulated": 1188,
-       "best": 644.11,
-       "predicted_top": 644.08
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
    "race": [
     {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      642.3,
-      642.3,
-      642.3,
-      642.3,
-      642.3,
-      642.3
-     ]
-    },
-    {
      "iterations": 30000,
-     "seed": 3,
+     "seed": 1,
      "dps": [
-      641.75,
-      641.75,
-      641.75,
-      641.75,
-      641.75
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      642.07,
-      642.07
+      631.5,
+      631.5,
+      631.3
      ]
     }
    ],
-   "certificate": [
-    {
-     "neighbours": 302,
-     "best_gap": 0.0007,
-     "best_move": "1 Reflection -> Swiftmend"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Naturalist",
-     "importance": 0.3723
-    },
-    {
-     "feature": "Improved Wrath",
-     "importance": 0.1436
-    },
-    {
-     "feature": "Moonfury",
-     "importance": 0.0897
-    },
-    {
-     "feature": "Insect Swarm",
-     "importance": 0.074
-    },
-    {
-     "feature": "Feral Combat points",
-     "importance": 0.0673
-    },
-    {
-     "feature": "Vengeance",
-     "importance": 0.0597
-    },
-    {
-     "feature": "Improved Entangling Roots",
-     "importance": 0.052
-    },
-    {
-     "feature": "Balance points",
-     "importance": 0.0339
-    },
-    {
-     "feature": "Restoration points",
-     "importance": 0.0299
-    },
-    {
-     "feature": "Improved Starfire",
-     "importance": 0.0233
-    },
-    {
-     "feature": "Furor",
-     "importance": 0.0081
-    },
-    {
-     "feature": "Ferocity",
-     "importance": 0.0069
-    }
-   ],
-   "simulated_builds": 1504,
-   "signature_check": {
-    "spec": "Balance",
-    "ok": true,
-    "core_share": 1.0,
-    "min_share": 0.7,
-    "uncast": [],
-    "missing_talents": [],
-    "why": ""
+   "candidates": {
+    "prebis-raid": 631.3,
+    "bis-raid": 631.5,
+    "prebis-dummy": 631.5
    },
-   "simulated_fights": 2507000,
-   "minutes": 6.6,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-prebis.gear.json",
-   "commit": "54ceac638"
+   "minutes": 0.4
   }
  },
- "commit": "54ceac638",
+ "commit": "2e6e77d84",
  "spells_done": {
   "date": "2026-10-14",
   "lines_kept": 0
@@ -2435,36 +2469,36 @@
   "dps": {
    "winner": {
     "entry": "balance-dps",
-    "dps": 584.82,
-    "se": 0.104
+    "dps": 626.23,
+    "se": 0.116
    },
    "balance-moonkin-raid": {
     "entry": "balance-dps",
-    "dps": 578.05,
-    "se": 0.111
+    "dps": 617.94,
+    "se": 0.124
    }
   },
   "best_hand": "balance-moonkin-raid",
-  "gain_vs_hand": 0.0117,
-  "commit": "54ceac638"
+  "gain_vs_hand": 0.0134,
+  "commit": "2e6e77d84"
  },
  "compare_raid": {
   "setting": "raid",
   "dps": {
    "winner": {
     "entry": "balance-dps",
-    "dps": 665.65,
-    "se": 0.111
+    "dps": 716.72,
+    "se": 0.121
    },
    "balance-moonkin-raid": {
     "entry": "balance-dps",
-    "dps": 665.65,
-    "se": 0.111
+    "dps": 716.72,
+    "se": 0.121
    },
    "opt-balance-dps-raid-dps": {
     "entry": "balance-dps",
-    "dps": 665.65,
-    "se": 0.111
+    "dps": 716.72,
+    "se": 0.121
    }
   },
   "best_hand": "balance-moonkin-raid",
@@ -2481,19 +2515,19 @@
   "entry": "balance-dps",
   "setting": "raid",
   "iterations": 6000,
-  "dps": 666.2,
-  "date": "2026-11-02",
-  "commit": "54ceac638",
+  "dps": 717.2,
+  "date": "2026-11-19",
+  "commit": "2e6e77d84",
   "shares": {
-   "Starfire": 0.6399,
-   "Moonfire": 0.1883,
-   "Insect Swarm": 0.1718
+   "Starfire": 0.6723,
+   "Moonfire": 0.1707,
+   "Insect Swarm": 0.157
   },
   "casts": {
-   "Starfire": 48.81,
-   "Insect Swarm": 11.96,
-   "Moonfire": 12.57,
-   "Innervate": 0.0
+   "Starfire": 48.9,
+   "Innervate": 0.01,
+   "Insect Swarm": 11.83,
+   "Moonfire": 12.45
   },
   "allocation": {
    "Balance": [
@@ -2570,12 +2604,138 @@
  "builds": {
   "written": [],
   "superseded": [],
-  "date": "2026-11-11",
+  "date": "2026-11-19",
   "setting": "raid",
   "why": "confirms balance-moonkin-raid (+0.00% in a full raid)"
  },
  "tidied": {
-  "bis-dummy": null,
+  "bis-dummy": {
+   "allocation": {
+    "Balance": [
+     [
+      "Genesis",
+      5
+     ],
+     [
+      "Moonglow",
+      3
+     ],
+     [
+      "Improved Moonfire",
+      2
+     ],
+     [
+      "Nature's Majesty",
+      2
+     ],
+     [
+      "Nature's Reach",
+      2
+     ],
+     [
+      "Nature's Splendor",
+      1
+     ],
+     [
+      "Insect Swarm",
+      1
+     ],
+     [
+      "Vengeance",
+      5
+     ],
+     [
+      "Improved Starfire",
+      5
+     ],
+     [
+      "Nature's Grace",
+      1
+     ],
+     [
+      "Moonfury",
+      5
+     ],
+     [
+      "Moonkin Form",
+      1
+     ],
+     [
+      "Improved Entangling Roots",
+      3
+     ]
+    ],
+    "Feral Combat": [],
+    "Restoration": [
+     [
+      "Heart of the Wild",
+      5
+     ],
+     [
+      "Naturalist",
+      5
+     ],
+     [
+      "Reflection",
+      3
+     ],
+     [
+      "Subtlety",
+      2
+     ]
+    ]
+   },
+   "split": "36/0/15",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Improved Wrath",
+     "to": "Improved Entangling Roots",
+     "seed1": -0.0002565709493492774,
+     "seed2": -0.0002796380025832379,
+     "utility": "interrupt"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Improved Wrath",
+     "to": "Improved Entangling Roots",
+     "seed1": -0.0001417235167189279,
+     "seed2": -0.00017407426804039172,
+     "utility": "interrupt"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Improved Wrath",
+     "to": "Improved Entangling Roots",
+     "seed1": -0.0001862211833645322,
+     "seed2": -0.00020209787583724825,
+     "utility": "interrupt"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Improved Wrath",
+     "to": "Subtlety",
+     "seed1": -5.6724267296082154e-05,
+     "seed2": -9.812627966310217e-05,
+     "utility": "threat"
+    },
+    {
+     "round": 5,
+     "kind": "utility",
+     "from": "Improved Wrath",
+     "to": "Subtlety",
+     "seed1": -5.025062396335489e-05,
+     "seed2": -0.00017942297740114466,
+     "utility": "threat"
+    }
+   ],
+   "abilities_never_cast": [],
+   "final_seed3": -0.0007738221754737262
+  },
   "bis-raid": {
    "allocation": {
     "Balance": [
@@ -2644,11 +2804,11 @@
      ],
      [
       "Reflection",
-      3
+      2
      ],
      [
       "Subtlety",
-      2
+      3
      ]
     ]
    },
@@ -2698,13 +2858,21 @@
      "seed1": 0.0,
      "seed2": 0.0,
      "utility": "threat"
+    },
+    {
+     "round": 6,
+     "kind": "utility",
+     "from": "Reflection",
+     "to": "Subtlety",
+     "seed1": -0.00011373416792681557,
+     "seed2": -0.0004684752506146639,
+     "utility": "threat"
     }
    ],
    "abilities_never_cast": [],
-   "final_seed3": 0.0
+   "final_seed3": 0.0008905451538452347
   },
-  "prebis-dummy": null,
-  "prebis-raid": {
+  "prebis-dummy": {
    "allocation": {
     "Balance": [
      [
@@ -2785,51 +2953,52 @@
     {
      "round": 1,
      "kind": "utility",
-     "from": "Nature's Focus",
+     "from": "Improved Wrath",
      "to": "Improved Entangling Roots",
-     "seed1": 0.0,
-     "seed2": 0.0,
+     "seed1": -0.0002565709493492774,
+     "seed2": -0.0002796380025832379,
      "utility": "interrupt"
     },
     {
      "round": 2,
      "kind": "utility",
-     "from": "Nature's Focus",
+     "from": "Improved Wrath",
      "to": "Improved Entangling Roots",
-     "seed1": 0.0,
-     "seed2": 0.0,
+     "seed1": -0.0001417235167189279,
+     "seed2": -0.00017407426804039172,
      "utility": "interrupt"
     },
     {
      "round": 3,
      "kind": "utility",
-     "from": "Nature's Focus",
+     "from": "Improved Wrath",
      "to": "Improved Entangling Roots",
-     "seed1": 0.0,
-     "seed2": 0.0,
+     "seed1": -0.0001862211833645322,
+     "seed2": -0.00020209787583724825,
      "utility": "interrupt"
     },
     {
      "round": 4,
      "kind": "utility",
-     "from": "Nature's Focus",
+     "from": "Improved Wrath",
      "to": "Subtlety",
-     "seed1": 0.0,
-     "seed2": 0.0,
+     "seed1": -5.6724267296082154e-05,
+     "seed2": -9.812627966310217e-05,
      "utility": "threat"
     },
     {
      "round": 5,
      "kind": "utility",
-     "from": "Nature's Focus",
+     "from": "Improved Wrath",
      "to": "Subtlety",
-     "seed1": 0.0,
-     "seed2": 0.0,
+     "seed1": -5.025062396335489e-05,
+     "seed2": -0.00017942297740114466,
      "utility": "threat"
     }
    ],
    "abilities_never_cast": [],
-   "final_seed3": 0.0
-  }
+   "final_seed3": -0.0007738221754737262
+  },
+  "prebis-raid": null
  }
 }

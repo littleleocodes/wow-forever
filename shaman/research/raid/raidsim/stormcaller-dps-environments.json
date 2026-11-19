@@ -2,7 +2,7 @@
  "class": "shaman",
  "spec": "stormcaller-dps",
  "game": "forever",
- "date": "2026-11-17",
+ "date": "2026-11-19",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
   "commit": "2e6e77d84",
@@ -30,7 +30,7 @@
   },
   "max": {
    "label": "maximum",
-   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 180 s"
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else; none the spec cannot benefit from, such as Enhancement's Windfury Totem), consumables (and the Classic sim's world buffs), 180 s"
   },
   "max60": {
    "label": "maximum, 60 s",

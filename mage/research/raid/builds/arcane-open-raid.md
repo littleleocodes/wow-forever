@@ -67,9 +67,9 @@ The Arcane raid build the open talent search found on 2026-11-11: every legal 51
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Arcane Fire* | community simulator | - | 584 | +0.0% | 785 | -1.5% | 5 s |
-| 2 | **[`arcane-open-raid`](arcane-open-raid.md)** | ours: derived (open search) | 31/17/3 | 582 | -0.4% | 797 | +0.0% | 8 s |
-| 3 | [`arcane-blast-raid`](arcane-blast-raid.md) | ours: hand draft | 31/13/7 | 563 | -3.7% | 715 | -10.4% | 6 s |
+| 1 | *Arcane Fire* | community simulator | - | 581 | +0.0% | 778 | -1.6% | 3 s |
+| 2 | **[`arcane-open-raid`](arcane-open-raid.md)** | ours: derived (open search) | 31/17/3 | 580 | -0.0% | 790 | +0.0% | 5 s |
+| 3 | [`arcane-blast-raid`](arcane-blast-raid.md) | ours: hand draft | 31/13/7 | 560 | -3.6% | 707 | -10.5% | 4 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -123,11 +123,11 @@ The Arcane raid build the open talent search found on 2026-11-11: every legal 51
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 3.6 |
-| 3 | cast Fire Blast | 7.1 |
-| 4 | if Arcane Blast is up and time left on Arcane Blast < cast time of Arcane Blast: cast Arcane Blast | 6.4 |
-| 5 | cast Arcane Wrath | 5.1 |
+| 3 | cast Fire Blast | 7.2 |
+| 4 | if Arcane Blast is up and time left on Arcane Blast < cast time of Arcane Blast: cast Arcane Blast | 6.5 |
+| 5 | cast Arcane Wrath | 5.2 |
 | 6 | if stacks of Arcane Blast ≥ 1.5 and time left in the fight ≥ 10s: cast Frostbolt (rank 10) | 3.7 |
-| 7 | cast Arcane Blast | 6.4 |
+| 7 | cast Arcane Blast | 6.5 |
 | 8 | cast Robe of the Archmage | as ready |
 | 9 | cast Mana Citrine | as ready |
 
@@ -137,7 +137,7 @@ Damage by ability:
 
 | Ability | [`arcane-open-raid`](arcane-open-raid.md) |
 |---|---|
-| Arcane Wrath | 28% |
+| Arcane Wrath | 29% |
 | Arcane Missiles | 25% |
 | Fire Blast | 19% |
 | Arcane Blast | 14% |

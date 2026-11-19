@@ -78,11 +78,11 @@ Forever's melee hunter for raids, built around traps: Survival's melee package (
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`melee-survival-raid`](melee-survival-raid.md)** | ours: hand draft | 5/11/35 | 364 | +0.0% | 738 | +0.0% | 0 s |
-| 2 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 346 | -4.8% | 711 | -3.7% | 0 s |
-| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 318 | -12.6% | 696 | -5.6% | 0 s |
-| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 262 | -27.9% | 703 | -4.7% | 97 s |
-| 5 | *SV Melee* | community simulator | - | 230 | -36.7% | 680 | -7.9% | 120 s |
+| 1 | **[`melee-survival-raid`](melee-survival-raid.md)** | ours: hand draft | 5/11/35 | 363 | +0.0% | 737 | +0.0% | 0 s |
+| 2 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 346 | -4.7% | 711 | -3.5% | 0 s |
+| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 317 | -12.7% | 694 | -5.8% | 0 s |
+| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 262 | -27.8% | 703 | -4.6% | 97 s |
+| 5 | *SV Melee* | community simulator | - | 231 | -36.6% | 678 | -7.9% | 120 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -110,7 +110,7 @@ Before the pull: at -3s: cast Hunter's Mark.
 | # | Priority (the first line whose condition holds is cast) | [`melee-survival-raid`](melee-survival-raid.md) casts/min |
 |---|---|---|
 | 1 | if auraIsInactive: cast Aspect of the Beast | 0.3 |
-| 2 | cast Mongoose Bite | 4.5 |
+| 2 | cast Mongoose Bite | 4.4 |
 | 3 | cast Raptor Strike | 8.4 |
 | 4 | cast Immolation Trap | 3.3 |
 | 5 | use every other cooldown when ready | as ready |

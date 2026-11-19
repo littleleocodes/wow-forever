@@ -74,14 +74,14 @@ Allocation adopted on 2026-09-26 from `opt-mm-lonewolf-raid-raid-dps`, the best 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *MM* | community simulator | - | 485 | +0.0% | 995 | -0.7% | 43 s |
-| 2 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 7/41/3 | 477 | -1.8% | 930 | -7.2% | 25 s |
-| 3 | **[`mm-lone-wolf-raid`](mm-lone-wolf-raid.md)** | ours: hand draft | 5/41/5 | 475 | -2.2% | 1002 | +0.0% | 48 s |
-| 4 | *SV* | community simulator | - | 424 | -12.7% | 849 | -15.3% | 47 s |
-| 5 | *SV Weave* | community simulator | - | 423 | -12.8% | 812 | -19.0% | 37 s |
-| 6 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 407 | -16.1% | 810 | -19.2% | 31 s |
-| 7 | *BM* | community simulator | - | 340 | -29.9% | 686 | -31.6% | 32 s |
-| 8 | *SV Melee* | community simulator | - | 293 | -39.6% | 615 | -38.6% | 46 s |
+| 1 | *MM* | community simulator | - | 476 | +0.0% | 982 | -0.6% | 43 s |
+| 2 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 7/41/3 | 468 | -1.8% | 917 | -7.1% | 25 s |
+| 3 | **[`mm-lone-wolf-raid`](mm-lone-wolf-raid.md)** | ours: hand draft | 5/41/5 | 465 | -2.3% | 987 | +0.0% | 48 s |
+| 4 | *SV* | community simulator | - | 416 | -12.7% | 836 | -15.4% | 46 s |
+| 5 | *SV Weave* | community simulator | - | 415 | -12.9% | 799 | -19.1% | 38 s |
+| 6 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 385 | -19.1% | 824 | -16.5% | 50 s |
+| 7 | *BM* | community simulator | - | 335 | -29.6% | 676 | -31.5% | 31 s |
+| 8 | *SV Melee* | community simulator | - | 289 | -39.4% | 608 | -38.4% | 46 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -117,9 +117,9 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
-| 3 | cast Arcane Shot | 9.8 |
-| 4 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Aimed Shot | 3.7 |
-| 5 | if time left on Serpent Sting < 2s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.5 |
+| 3 | cast Arcane Shot | 9.7 |
+| 4 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Aimed Shot | 3.6 |
+| 5 | if time left on Serpent Sting < 2s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent).
 

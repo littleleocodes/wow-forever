@@ -56,10 +56,10 @@ The Arms build the machine-learning talent search found in a full raid (every ra
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Arms* | community simulator | - | 409 | +0.0% | 865 | +0.0% | 0 s |
-| 2 | [`arms-battle-raid`](arms-battle-raid.md) | ours: hand draft | 34/17/0 | 406 | -0.8% | 864 | -0.2% | 0 s |
-| 3 | **[`arms-ml-raid`](arms-ml-raid.md)** | ours: derived (ML search) | 39/10/2 | 401 | -2.0% | 857 | -1.0% | 0 s |
-| 4 | [`arms-community-parse`](arms-community-parse.md) | ours: derived (simulator search) | 37/14/0 | 397 | -2.8% | 853 | -1.5% | 0 s |
+| 1 | *Arms* | community simulator | - | 409 | +0.0% | 878 | +0.0% | 0 s |
+| 2 | [`arms-battle-raid`](arms-battle-raid.md) | ours: hand draft | 34/17/0 | 406 | -0.7% | 874 | -0.4% | 0 s |
+| 3 | **[`arms-ml-raid`](arms-ml-raid.md)** | ours: derived (ML search) | 39/10/2 | 401 | -1.9% | 867 | -1.2% | 0 s |
+| 4 | [`arms-community-parse`](arms-community-parse.md) | ours: derived (simulator search) | 37/14/0 | 398 | -2.7% | 863 | -1.6% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -111,15 +111,15 @@ Before the pull: at -1s: cast Battle Stance.
 | 10 | if time left in the fight ≤ 36.75s: use every other cooldown when ready | as ready |
 | 11 | if rage < 90: cast Bloodrage | 1.0 |
 | 12 | if number of targets > 1: cast Whirlwind | 0.9 |
-| 13 | cast Mortal Strike | 2.6 |
+| 13 | cast Mortal Strike | 2.8 |
 | 14 | if not Rend is on the target: cast Rend | 2.5 |
 | 15 | cast Slam | 3.5 |
 | 16 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 17 | if stacks of Sunder Armor < 5: cast Sunder Armor | 5.8 |
-| 18 | if not Berserker Stance is up: cast Berserker Stance | 26.1 |
-| 19 | cast Spearing Strike | 1.3 |
+| 17 | if stacks of Sunder Armor < 5: cast Sunder Armor | 5.7 |
+| 18 | if not Berserker Stance is up: cast Berserker Stance | 26.2 |
+| 19 | cast Spearing Strike | 1.2 |
 | 20 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 0.9 |
-| 21 | cast Sunder Armor | 5.8 |
+| 21 | cast Sunder Armor | 5.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Cleave, cast Hamstring (its condition never held in these fights); cast Bloodthirst (needs the Bloodthirst talent).
 
@@ -128,11 +128,11 @@ Damage by ability:
 | Ability | [`arms-ml-raid`](arms-ml-raid.md) |
 |---|---|
 | Auto Attack | 36% |
-| Overpower | 16% |
-| Execute | 14% |
+| Overpower | 15% |
+| Execute | 13% |
 | Slam | 9% |
-| Mortal Strike | 7% |
-| Deep Wound | 7% |
+| Deep Wound | 8% |
+| Mortal Strike | 8% |
 | Rend | 6% |
 | Whirlwind | 2% |
 | Spearing Strike | 2% |

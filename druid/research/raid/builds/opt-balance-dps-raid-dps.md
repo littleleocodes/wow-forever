@@ -62,9 +62,9 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`balance-moonkin-raid`](balance-moonkin-raid.md) | ours: hand draft | 33/0/18 | 643 | +0.0% | 725 | +0.0% | 1 s |
-| 2 | **[`opt-balance-dps-raid-dps`](opt-balance-dps-raid-dps.md)** | ours: optimizer | 33/0/18 | 643 | +0.0% | 725 | +0.0% | 1 s |
-| 3 | *Moonkin* | community simulator | - | 631 | -1.8% | 711 | -2.0% | 1 s |
+| 1 | [`balance-moonkin-raid`](balance-moonkin-raid.md) | ours: hand draft | 33/0/18 | 630 | +0.0% | 711 | +0.0% | 0 s |
+| 2 | **[`opt-balance-dps-raid-dps`](opt-balance-dps-raid-dps.md)** | ours: optimizer | 33/0/18 | 630 | +0.0% | 711 | +0.0% | 0 s |
+| 3 | *Moonkin* | community simulator | - | 619 | -1.9% | 695 | -2.2% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -88,9 +88,9 @@ Before the pull: at -10s: activate Moonkin Form.
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if mana % ≤ 30%: cast Innervate | 0.3 |
 | 3 | if time left in the fight ≥ 10s: keep Insect Swarm on up to 1 targets (refresh under 0ms) | 3.7 |
-| 4 | keep Moonfire on up to 1 targets (refresh under 0ms) | 3.9 |
+| 4 | keep Moonfire on up to 1 targets (refresh under 0ms) | 4.0 |
 | 5 | cast Starfire | 16.2 |
-| 6 | cast Wrath | 0.2 |
+| 6 | cast Wrath | 0.1 |
 
 Lines of the simulator's rotation these builds never cast: cast Starfire (rank 6) (its condition never held in these fights).
 

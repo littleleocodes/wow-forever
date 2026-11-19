@@ -3,133 +3,105 @@
  "spec": "frost-raid",
  "build": "frost-ml-raid",
  "setting": "raid",
- "date": "2026-10-29",
+ "date": "2026-11-19",
  "tank": false,
  "removal": {
-  "Arcane Blast": 0.05097703038248147,
-  "Arcane Concentration": -0.0008057165837520586,
-  "Arcane Focus": 0.019090519908088077,
-  "Arcane Impact": 0.010583648158019932,
-  "Arcane Meditation": 0.0008723129267630414,
-  "Arcane Mind": 0.009971352689834068,
-  "Arcane Subtlety": 0.02524003940298225,
+  "Arcane Concentration": -0.00040633019416680405,
+  "Arcane Impact": 0.004733803567188111,
+  "Arcane Resilience": -0.0,
+  "Arcane Subtlety": 0.027609242498083608,
+  "Arctic Reach": -0.0,
   "Cold Snap": -0.0,
-  "Elemental Precision": 0.04665265178023803,
-  "Fingers of Frost": 0.048738819996898,
-  "Frost Channeling": 0.0011330785423416811,
-  "Frostbite": 0.003720296619009411,
-  "Ice Lance": 0.0014992762964537443,
-  "Ice Shards": 0.060042823875466,
+  "Fingers of Frost": 0.09836752445676211,
+  "Frost Channeling": -0.0005415192395530344,
+  "Frost Warding": 1.6156631372776786e-05,
+  "Ice Barrier": 0.11896593450364412,
+  "Ice Block": -0.0,
+  "Ice Lance": 0.034328332847260556,
+  "Ice Shards": 0.08369213431298195,
   "Improved Channeling": -0.0,
-  "Improved Frostbolt": 0.11976279893543151,
-  "Missile Barrage": 0.06358830246108205,
-  "Shatter": 0.04048976787146785,
-  "Winter's Chill": -0.0
+  "Improved Frostbolt": 0.1402334861100879,
+  "Incineration": 0.00549196186346701,
+  "Missile Barrage": 0.009218347922392178,
+  "Precision": 0.06709696249922537,
+  "Shatter": 0.06958638634005543,
+  "Winter's Chill": -0.0008722755424865891
  },
  "free": [
   "Arcane Concentration",
-  "Arcane Meditation",
+  "Arcane Resilience",
+  "Arctic Reach",
   "Frost Channeling",
+  "Frost Warding",
   "Improved Channeling",
   "Winter's Chill"
  ],
  "kept_for_rotation": [
-  "Arcane Blast",
   "Fingers of Frost",
+  "Ice Barrier",
   "Missile Barrage"
  ],
  "active_never_worth": [
   "Cold Snap",
-  "Ice Lance"
+  "Ice Block"
  ],
  "abilities_never_cast": [],
  "moves": [
   {
    "round": 1,
    "kind": "utility",
-   "from": "Arcane Meditation",
-   "to": "Improved Channeling",
-   "seed1": -0.0008723129267630414,
-   "seed2": -7.153295271977722e-05,
-   "utility": "interrupt"
+   "from": "Arcane Concentration",
+   "to": "Frost Channeling",
+   "seed1": -0.00035953168292501836,
+   "seed2": -0.0002964687330371252,
+   "utility": "threat"
   },
   {
    "round": 2,
    "kind": "utility",
-   "from": "Arcane Concentration",
-   "to": "Improved Channeling",
-   "seed1": 0.00040598790211632263,
-   "seed2": -0.0005163147581596084,
-   "utility": "interrupt"
+   "from": "Arctic Reach",
+   "to": "Magic Absorption",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "mana"
   },
   {
    "round": 3,
    "kind": "utility",
-   "from": "Arcane Concentration",
-   "to": "Improved Channeling",
-   "seed1": 0.0003348450196918318,
-   "seed2": 8.019413991311453e-06,
-   "utility": "interrupt"
+   "from": "Frost Warding",
+   "to": "Arctic Reach",
+   "seed1": 0.0,
+   "seed2": -2.3596707231510194e-06,
+   "utility": "range"
   },
   {
    "round": 4,
    "kind": "utility",
-   "from": "Winter's Chill",
-   "to": "Frost Channeling",
-   "seed1": 0.0009177238628692574,
-   "seed2": 9.16120740905857e-05,
-   "utility": "threat"
+   "from": "Improved Channeling",
+   "to": "Arcane Resilience",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
   },
   {
    "round": 5,
    "kind": "utility",
-   "from": "Winter's Chill",
-   "to": "Arctic Reach",
+   "from": "Improved Channeling",
+   "to": "Arcane Resilience",
    "seed1": 0.0,
    "seed2": 0.0,
-   "utility": "range"
-  },
-  {
-   "round": 6,
-   "kind": "utility",
-   "from": "Winter's Chill",
-   "to": "Arctic Reach",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "range"
-  },
-  {
-   "round": 7,
-   "kind": "utility",
-   "from": "Winter's Chill",
-   "to": "Frost Warding",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
-  },
-  {
-   "round": 8,
-   "kind": "utility",
-   "from": "Winter's Chill",
-   "to": "Frost Warding",
-   "seed1": -0.0009214513587749718,
-   "seed2": 0.00036187456788550065,
    "utility": "survival"
   }
  ],
- "final_seed3": -0.00016001881615701485,
+ "final_seed3": 0.0004205448078182794,
  "start": {
   "Arcane": [
    [
-    "Arcane Focus",
-    5
-   ],
-   [
     "Improved Channeling",
-    2
+    4
    ],
    [
-    "Missile Barrage",
+    "Arcane Resilience",
     1
    ],
    [
@@ -138,33 +110,34 @@
    ],
    [
     "Arcane Concentration",
-    5
+    3
+   ],
+   [
+    "Missile Barrage",
+    2
    ],
    [
     "Arcane Impact",
     3
-   ],
-   [
-    "Arcane Blast",
-    1
-   ],
-   [
-    "Arcane Meditation",
-    1
-   ],
-   [
-    "Arcane Mind",
-    1
    ]
   ],
-  "Fire": [],
+  "Fire": [
+   [
+    "Incineration",
+    5
+   ]
+  ],
   "Frost": [
+   [
+    "Frost Warding",
+    2
+   ],
    [
     "Improved Frostbolt",
     5
    ],
    [
-    "Elemental Precision",
+    "Precision",
     3
    ],
    [
@@ -172,15 +145,19 @@
     5
    ],
    [
-    "Frostbite",
-    3
-   ],
-   [
     "Frost Channeling",
     2
    ],
    [
     "Ice Lance",
+    1
+   ],
+   [
+    "Arctic Reach",
+    2
+   ],
+   [
+    "Ice Block",
     1
    ],
    [
@@ -197,23 +174,23 @@
    ],
    [
     "Winter's Chill",
-    5
+    3
+   ],
+   [
+    "Ice Barrier",
+    1
    ]
   ]
  },
  "allocation": {
   "Arcane": [
    [
-    "Arcane Focus",
-    5
-   ],
-   [
     "Improved Channeling",
-    5
+    2
    ],
    [
-    "Missile Barrage",
-    1
+    "Arcane Resilience",
+    3
    ],
    [
     "Arcane Subtlety",
@@ -221,29 +198,38 @@
    ],
    [
     "Arcane Concentration",
-    3
+    2
+   ],
+   [
+    "Missile Barrage",
+    2
    ],
    [
     "Arcane Impact",
     3
    ],
    [
-    "Arcane Blast",
-    1
-   ],
-   [
-    "Arcane Mind",
+    "Magic Absorption",
     1
    ]
   ],
-  "Fire": [],
+  "Fire": [
+   [
+    "Incineration",
+    5
+   ]
+  ],
   "Frost": [
+   [
+    "Frost Warding",
+    1
+   ],
    [
     "Improved Frostbolt",
     5
    ],
    [
-    "Elemental Precision",
+    "Precision",
     3
    ],
    [
@@ -251,15 +237,19 @@
     5
    ],
    [
-    "Frostbite",
-    3
-   ],
-   [
     "Frost Channeling",
     3
    ],
    [
     "Ice Lance",
+    1
+   ],
+   [
+    "Arctic Reach",
+    2
+   ],
+   [
+    "Ice Block",
     1
    ],
    [
@@ -275,12 +265,12 @@
     2
    ],
    [
-    "Arctic Reach",
-    2
+    "Winter's Chill",
+    3
    ],
    [
-    "Frost Warding",
-    2
+    "Ice Barrier",
+    1
    ]
   ]
  }

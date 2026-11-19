@@ -52,14 +52,14 @@ The Prot-Ret build the machine-learning talent search found in a full raid (ever
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Unsealed Wrath* | community simulator | - | 509 | +0.0% | 841 | -0.2% | 6 s |
-| 2 | [`retribution-open-raid`](retribution-open-raid.md) | ours: derived (open search) | 16/4/31 | 479 | -5.8% | 843 | +0.0% | 25 s |
-| 3 | *Holy Shock* | community simulator | - | 457 | -10.2% | 757 | -10.2% | 0 s |
-| 4 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/6/28 | 418 | -17.8% | 701 | -16.9% | 0 s |
-| 5 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 17/6/28 | 418 | -17.8% | 701 | -16.9% | 0 s |
-| 6 | **[`prot-ret-ml-raid`](prot-ret-ml-raid.md)** | ours: derived (ML search) | 10/12/29 | 403 | -20.7% | 727 | -13.8% | 6 s |
-| 7 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: derived (ML search) | 9/14/28 | 387 | -23.8% | 695 | -17.6% | 6 s |
-| 8 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 8/15/28 | 386 | -24.1% | 694 | -17.7% | 6 s |
+| 1 | *Unsealed Wrath* | community simulator | - | 442 | +0.0% | 768 | -0.2% | 32 s |
+| 2 | *Holy Shock* | community simulator | - | 431 | -2.6% | 680 | -11.6% | 0 s |
+| 3 | [`retribution-open-raid`](retribution-open-raid.md) | ours: derived (open search) | 16/4/31 | 426 | -3.7% | 769 | +0.0% | 45 s |
+| 4 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/6/28 | 396 | -10.4% | 632 | -17.8% | 0 s |
+| 5 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 17/6/28 | 396 | -10.4% | 632 | -17.8% | 0 s |
+| 6 | **[`prot-ret-ml-raid`](prot-ret-ml-raid.md)** | ours: derived (ML search) | 10/12/29 | 366 | -17.1% | 655 | -14.9% | 9 s |
+| 7 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: derived (ML search) | 9/14/28 | 351 | -20.7% | 629 | -18.3% | 9 s |
+| 8 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 8/15/28 | 348 | -21.2% | 628 | -18.3% | 12 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -73,11 +73,11 @@ Before the pull: at -20s: groupReference; at -20s: move to “Pull range” yd; 
 | # | Priority (the first line whose condition holds is cast) | [`prot-ret-ml-raid`](prot-ret-ml-raid.md) casts/min |
 |---|---|---|
 | 1 | if not spellInRange: groupReference | as ready |
-| 2 | if “WF guard”: cast Judgement | 7.4 |
+| 2 | if “WF guard”: cast Judgement | 7.3 |
 | 3 | if time into the fight ≥ “Delay Major CDs”: use every other cooldown when ready | as ready |
-| 4 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 0.7 |
-| 5 | if “WF guard” and not Judgement is ready and “Judge realism protection”: cast Holy Strike | 5.9 |
-| 6 | if “Should refresh SoC”: cast Seal of Command | 2.3 |
+| 4 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 0.9 |
+| 5 | if “WF guard” and not Judgement is ready and “Judge realism protection”: cast Holy Strike | 5.8 |
+| 6 | if “Should refresh SoC”: cast Seal of Command | 2.1 |
 | 7 | groupReference | as ready |
 | 8 | groupReference | as ready |
 
@@ -87,13 +87,13 @@ Damage by ability:
 
 | Ability | [`prot-ret-ml-raid`](prot-ret-ml-raid.md) |
 |---|---|
-| Auto Attack | 22% |
+| Auto Attack | 25% |
 | Judgement of Command | 22% |
-| Seal of Command | 19% |
-| Holy Strike | 17% |
+| Holy Strike | 16% |
 | Consecration | 15% |
-| Hammer of Wrath | 3% |
-| Demonic Rune | 2% |
+| Seal of Command | 15% |
+| Hammer of Wrath | 4% |
+| Demonic Rune | 3% |
 
 ## Notes
 

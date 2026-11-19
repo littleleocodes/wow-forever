@@ -74,9 +74,9 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Arcane Fire* | community simulator | - | 584 | +0.0% | 785 | -1.5% | 5 s |
-| 2 | [`arcane-open-raid`](arcane-open-raid.md) | ours: derived (open search) | 31/17/3 | 582 | -0.4% | 797 | +0.0% | 8 s |
-| 3 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 31/13/7 | 563 | -3.7% | 715 | -10.4% | 6 s |
+| 1 | *Arcane Fire* | community simulator | - | 581 | +0.0% | 778 | -1.6% | 3 s |
+| 2 | [`arcane-open-raid`](arcane-open-raid.md) | ours: derived (open search) | 31/17/3 | 580 | -0.0% | 790 | +0.0% | 5 s |
+| 3 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 31/13/7 | 560 | -3.6% | 707 | -10.5% | 4 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -130,10 +130,10 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 4.0 |
-| 3 | cast Fire Blast | 8.1 |
-| 4 | if Arcane Blast is up and time left on Arcane Blast < cast time of Arcane Blast: cast Arcane Blast | 7.8 |
-| 5 | if stacks of Arcane Blast ≥ 1.5 and time left in the fight ≥ 10s: cast Frostbolt (rank 10) | 8.2 |
-| 6 | cast Arcane Blast | 7.8 |
+| 3 | cast Fire Blast | 8.2 |
+| 4 | if Arcane Blast is up and time left on Arcane Blast < cast time of Arcane Blast: cast Arcane Blast | 7.9 |
+| 5 | if stacks of Arcane Blast ≥ 1.5 and time left in the fight ≥ 10s: cast Frostbolt (rank 10) | 8.3 |
+| 6 | cast Arcane Blast | 7.9 |
 | 7 | cast Fireball (rank 11) | 0.1 |
 | 8 | cast Robe of the Archmage | as ready |
 | 9 | cast Mana Citrine | as ready |

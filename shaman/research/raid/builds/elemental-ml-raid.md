@@ -53,12 +53,12 @@ The Elemental build the machine-learning talent search found in a full raid (eve
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`elemental-ml-raid`](elemental-ml-raid.md)** | ours: derived (ML search) | 31/11/9 | 597 | +0.0% | 774 | +0.0% | 3 s |
-| 2 | *Standard* | community simulator | - | 596 | -0.1% | 773 | -0.1% | 3 s |
-| 3 | [`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md) | ours: optimizer | 31/11/9 | 587 | -1.6% | 771 | -0.4% | 7 s |
-| 4 | [`elemental-raid-dps`](elemental-raid-dps.md) | ours: hand draft | 29/22/0 | 560 | -6.1% | 759 | -1.9% | 15 s |
-| 5 | [`elemental-raid`](elemental-raid.md) | ours: generated | 30/8/13 | 560 | -6.3% | 747 | -3.5% | 13 s |
-| 6 | *Mana Tide* | community simulator | - | 559 | -6.4% | 750 | -3.1% | 14 s |
+| 1 | **[`elemental-ml-raid`](elemental-ml-raid.md)** | ours: derived (ML search) | 31/11/9 | 584 | +0.0% | 752 | +0.0% | 1 s |
+| 2 | *Standard* | community simulator | - | 584 | -0.0% | 751 | -0.1% | 1 s |
+| 3 | [`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md) | ours: optimizer | 31/11/9 | 579 | -0.9% | 751 | -0.2% | 3 s |
+| 4 | [`elemental-raid-dps`](elemental-raid-dps.md) | ours: hand draft | 29/22/0 | 559 | -4.4% | 750 | -0.3% | 10 s |
+| 5 | *Mana Tide* | community simulator | - | 553 | -5.3% | 731 | -2.8% | 9 s |
+| 6 | [`elemental-raid`](elemental-raid.md) | ours: generated | 30/8/13 | 552 | -5.4% | 726 | -3.5% | 8 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -89,8 +89,8 @@ Before the pull: at -2s: cast Lightning Bolt.
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if not Flame Shock is on the target: cast Flame Shock | 3.1 |
 | 4 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 2.4 |
-| 5 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt (rank 8) | 24.9 |
-| 6 | cast Lightning Bolt (rank 8) | 24.9 |
+| 5 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt (rank 8) | 25.2 |
+| 6 | cast Lightning Bolt (rank 8) | 25.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Magma Totem, cast Lava Burst (its condition never held in these fights).
 
@@ -101,7 +101,7 @@ Damage by ability:
 | Lightning Bolt | 71% |
 | Flame Shock | 15% |
 | Chain Lightning | 8% |
-| Searing Totem | 4% |
+| Searing Totem | 5% |
 | Demonic Rune | 2% |
 
 ## Notes

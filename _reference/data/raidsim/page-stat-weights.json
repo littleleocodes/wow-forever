@@ -7,8 +7,8 @@
    "entry": "bm-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-beast-mastery-bis.gear.json",
    "gear_why": "the spec's ML record's BiS set",
-   "gear_hit_rating": 63,
-   "hit_below_cap": 0.9686
+   "gear_hit_rating": 110,
+   "hit_below_cap": 0.9906
   },
   "paladin-hybrid-holy-retribution": {
    "class": "paladin",
@@ -128,10 +128,10 @@
    "entry": "fire-destro-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-hybrid-affliction-destruction-bis.gear.json",
    "gear_why": "the spec's ML record's BiS set",
-   "gear_hit_rating": 40,
-   "hit_below_cap": 0.9017
+   "gear_hit_rating": 30,
+   "hit_below_cap": 0.8369
   }
  },
- "date": "2026-11-17",
+ "date": "2026-11-19",
  "iterations": 6000
 }

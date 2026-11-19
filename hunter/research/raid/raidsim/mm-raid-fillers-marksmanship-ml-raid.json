@@ -3,24 +3,24 @@
  "spec": "mm-raid",
  "build": "marksmanship-ml-raid",
  "setting": "raid",
- "date": "2026-11-10",
+ "date": "2026-11-19",
  "tank": false,
  "removal": {
-  "Barrage": 0.01988414722170051,
-  "Careful Aim": 0.06138078499652688,
-  "Deadly Aspects": 0.035447084683206564,
-  "Efficiency": 0.01258072591168724,
-  "Focused Fire": 0.019306574081248695,
-  "Improved Arcane Shot": 0.01639256560662128,
-  "Improved Stings": 0.02110798825795457,
-  "Improved Tracking": 0.03881861508295925,
-  "Lethal Attacks": 0.05022385322840406,
-  "Mortal Shots": 0.04195465200668724,
-  "Ranged Weapon Specialization": 0.03881861508295925,
+  "Barrage": 0.01911624698945069,
+  "Careful Aim": 0.0623879283342329,
+  "Deadly Aspects": 0.0450294030658851,
+  "Efficiency": 0.009439644646191292,
+  "Focused Fire": 0.019277525049050448,
+  "Improved Arcane Shot": 0.03477582611383845,
+  "Improved Stings": 0.020284025041338527,
+  "Improved Tracking": 0.03841314445453159,
+  "Lethal Attacks": 0.04953820438058265,
+  "Mortal Shots": 0.0425264059278363,
+  "Ranged Weapon Specialization": 0.03841314445453159,
   "Rapid Killing": -0.0,
-  "Rapid Recuperation": 0.003480343605617664,
-  "Sniper Shot": 0.05297726920375989,
-  "Trueshot Aura": 0.025259582303098105
+  "Rapid Recuperation": 0.029459952853714166,
+  "Sniper Shot": 0.044397976033633824,
+  "Trueshot Aura": 0.024659260211157608
  },
  "free": [
   "Rapid Killing"
@@ -54,7 +54,7 @@
    ],
    [
     "Efficiency",
-    5
+    2
    ],
    [
     "Careful Aim",
@@ -66,7 +66,7 @@
    ],
    [
     "Improved Arcane Shot",
-    2
+    5
    ],
    [
     "Trueshot Aura",
@@ -122,7 +122,7 @@
    ],
    [
     "Efficiency",
-    5
+    2
    ],
    [
     "Careful Aim",
@@ -134,7 +134,7 @@
    ],
    [
     "Improved Arcane Shot",
-    2
+    5
    ],
    [
     "Trueshot Aura",

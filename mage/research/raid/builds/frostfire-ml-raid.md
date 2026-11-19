@@ -55,10 +55,10 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 7/31/13 | 482 | +0.0% | 724 | -9.9% | 25 s |
-| 2 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 473 | -1.7% | 789 | -1.9% | 32 s |
-| 3 | **[`frostfire-ml-raid`](frostfire-ml-raid.md)** | ours: derived (ML search) | 0/29/22 | 468 | -2.8% | 798 | -0.8% | 33 s |
-| 4 | *FFB* | community simulator | - | 457 | -5.1% | 804 | +0.0% | 40 s |
+| 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 7/31/13 | 482 | +0.0% | 708 | -9.7% | 20 s |
+| 2 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 474 | -1.8% | 771 | -1.7% | 28 s |
+| 3 | **[`frostfire-ml-raid`](frostfire-ml-raid.md)** | ours: derived (ML search) | 0/29/22 | 469 | -2.7% | 779 | -0.6% | 30 s |
+| 4 | *FFB* | community simulator | - | 459 | -4.8% | 784 | +0.0% | 36 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -122,19 +122,19 @@ The Frostfire build the machine-learning talent search found in a full raid (eve
 
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-ml-raid`](frostfire-ml-raid.md) casts/min |
 |---|---|---|
-| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 7.0 |
-| 2 | cast Fire Blast | 5.2 |
-| 3 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 7.0 |
+| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 7.1 |
+| 2 | cast Fire Blast | 5.3 |
+| 3 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 7.1 |
 | 4 | if mana % ≤ 80%: cast Mana Ruby | as ready |
 | 5 | use every other cooldown when ready | as ready |
 | 6 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 7 | if stacks of Heating Up = 2: cast Pyroblast | 5.4 |
-| 8 | if stacks of Heating Up = 3: cast Pyroblast | 5.4 |
+| 7 | if stacks of Heating Up = 2: cast Pyroblast | 5.5 |
+| 8 | if stacks of Heating Up = 3: cast Pyroblast | 5.5 |
 | 9 | cast Mana Citrine | as ready |
-| 10 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 2.3 |
-| 11 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 1.2 |
+| 10 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 2.4 |
+| 11 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 1.3 |
 | 12 | cast Robe of the Archmage | as ready |
-| 13 | cast Scorch | 7.0 |
+| 13 | cast Scorch | 7.1 |
 
 Lines of the simulator's rotation these builds never cast: cast Arcane Power (needs the Arcane Power talent); cast Berserking, cast Arcane Missiles (rank 7) (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent); cast Combustion (needs the Combustion talent).
 

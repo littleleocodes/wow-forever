@@ -2,7 +2,7 @@
  "class": "rogue",
  "spec": "assassination-raid",
  "game": "forever",
- "date": "2026-11-17",
+ "date": "2026-11-19",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
   "commit": "2e6e77d84",
@@ -30,7 +30,7 @@
   },
   "max": {
    "label": "maximum",
-   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 180 s"
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else; none the spec cannot benefit from, such as Enhancement's Windfury Totem), consumables (and the Classic sim's world buffs), 180 s"
   },
   "max60": {
    "label": "maximum, 60 s",
@@ -95,30 +95,30 @@
     "max60": 759.5968092339846
    },
    "raid_spell_casts": {
-    "25349": 30.494666666666667,
-    "14177": 0.7166666666666667,
-    "11337": 42.37566666666667,
-    "6774": 9.587,
     "11300": 18.233,
-    "25300": 30.878,
-    "1329549": 18.0,
+    "11337": 42.37566666666667,
     "11290": 1.0,
-    "1857": 1.0
+    "14177": 0.7166666666666667,
+    "6774": 9.587000000000002,
+    "25300": 30.878,
+    "25349": 30.494666666666667,
+    "1857": 1.0,
+    "1329549": 18.0
    },
    "raid_casts": {
-    "spell 25349": 30.494666666666667,
-    "Cold Blood": 0.7166666666666667,
-    "spell 11337": 42.37566666666667,
-    "Slice and Dice": 9.587,
-    "Goblin Sapper Charge": 1.0,
     "Eviscerate": 18.233,
-    "Thistle Tea": 1.0,
-    "Backstab": 30.878,
-    "Shank": 18.0,
-    "Auto Attack": 261.134,
+    "spell 11337": 42.37566666666667,
     "Garrote": 1.0,
+    "Cold Blood": 0.7166666666666667,
+    "Slice and Dice": 9.587000000000002,
+    "item 13965": 1.0,
+    "Backstab": 30.878,
+    "spell 25349": 30.494666666666667,
     "Vanish": 1.0,
-    "item 13965": 1.0
+    "Auto Attack": 261.134,
+    "Goblin Sapper Charge": 1.0,
+    "Shank": 18.0,
+    "Thistle Tea": 1.0
    },
    "raid_shares": {
     "Auto Attack": 0.4073,
@@ -153,30 +153,30 @@
     "max60": 770.8785139650516
    },
    "raid_spell_casts": {
-    "11300": 18.15233333333333,
-    "11290": 1.0,
-    "1857": 1.0,
-    "6774": 9.588000000000001,
     "25300": 30.790666666666667,
-    "1329549": 18.0,
-    "11337": 57.556,
+    "11300": 18.152333333333335,
+    "6774": 9.588000000000001,
     "25349": 38.06666666666667,
-    "14177": 0.7493333333333333
+    "11290": 1.0,
+    "14177": 0.7493333333333333,
+    "1857": 1.0,
+    "1329549": 18.0,
+    "11337": 57.556
    },
    "raid_casts": {
-    "Auto Attack": 261.05400000000003,
-    "Eviscerate": 18.15233333333333,
-    "Garrote": 1.0,
-    "Vanish": 1.0,
-    "item 13965": 1.0,
-    "Slice and Dice": 9.588000000000001,
     "Backstab": 30.790666666666667,
-    "Shank": 18.0,
-    "spell 11337": 57.556,
-    "Thistle Tea": 1.0,
+    "Eviscerate": 18.152333333333335,
+    "Slice and Dice": 9.588000000000001,
     "spell 25349": 38.06666666666667,
+    "Garrote": 1.0,
+    "Auto Attack": 261.05400000000003,
+    "Cold Blood": 0.7493333333333333,
+    "Thistle Tea": 1.0,
+    "Vanish": 1.0,
     "Goblin Sapper Charge": 1.0,
-    "Cold Blood": 0.7493333333333333
+    "Shank": 18.0,
+    "item 13965": 1.0,
+    "spell 11337": 57.556
    },
    "raid_shares": {
     "Auto Attack": 0.3754,
@@ -211,30 +211,30 @@
     "max60": 779.6700692823875
    },
    "raid_spell_casts": {
-    "25300": 30.926333333333332,
-    "11300": 18.237666666666666,
-    "6774": 9.585333333333335,
     "25349": 38.12833333333333,
+    "11300": 18.237666666666666,
     "14177": 0.7253333333333334,
-    "11290": 1.0,
-    "1857": 1.0,
+    "6774": 9.585333333333333,
     "11337": 57.864,
-    "1329549": 18.0
+    "11290": 1.0,
+    "25300": 30.926333333333332,
+    "1329549": 18.0,
+    "1857": 1.0
    },
    "raid_casts": {
-    "Backstab": 30.926333333333332,
-    "Eviscerate": 18.237666666666666,
-    "Slice and Dice": 9.585333333333335,
-    "item 13965": 1.0,
-    "Goblin Sapper Charge": 1.0,
     "spell 25349": 38.12833333333333,
-    "Cold Blood": 0.7253333333333334,
-    "Garrote": 1.0,
-    "Thistle Tea": 1.0,
-    "Vanish": 1.0,
     "Auto Attack": 261.128,
+    "item 13965": 1.0,
+    "Eviscerate": 18.237666666666666,
+    "Cold Blood": 0.7253333333333334,
+    "Thistle Tea": 1.0,
+    "Slice and Dice": 9.585333333333333,
     "spell 11337": 57.864,
-    "Shank": 18.0
+    "Garrote": 1.0,
+    "Backstab": 30.926333333333332,
+    "Shank": 18.0,
+    "Vanish": 1.0,
+    "Goblin Sapper Charge": 1.0
    },
    "raid_shares": {
     "Auto Attack": 0.3977,
@@ -271,26 +271,26 @@
    "raid_spell_casts": {
     "11300": 29.484333333333336,
     "6774": 9.141,
-    "1329549": 18.0,
     "1241584": 36.94866666666667,
+    "1329549": 18.0,
     "1857": 1.0,
+    "25349": 56.50533333333333,
     "11290": 1.0,
-    "11337": 85.046,
-    "25349": 56.50533333333333
+    "11337": 85.046
    },
    "raid_casts": {
     "Eviscerate": 29.484333333333336,
-    "Slice and Dice": 9.141,
-    "Shank": 18.0,
-    "Mutilate": 36.94866666666667,
-    "Vanish": 1.0,
-    "Thistle Tea": 1.0,
-    "Garrote": 1.0,
-    "spell 11337": 85.046,
     "Auto Attack": 260.8826666666667,
+    "Slice and Dice": 9.141,
+    "item 13965": 1.0,
+    "Mutilate": 36.94866666666667,
     "Goblin Sapper Charge": 1.0,
+    "Shank": 18.0,
+    "Thistle Tea": 1.0,
+    "Vanish": 1.0,
     "spell 25349": 56.50533333333333,
-    "item 13965": 1.0
+    "Garrote": 1.0,
+    "spell 11337": 85.046
    },
    "raid_shares": {
     "Auto Attack": 0.287,
@@ -327,28 +327,28 @@
    "raid_spell_casts": {
     "11300": 29.402,
     "6774": 9.176333333333332,
-    "25349": 59.24666666666667,
     "11290": 1.0,
+    "1857": 1.0,
     "14177": 0.7733333333333333,
     "1241584": 36.74066666666667,
-    "11337": 89.53933333333333,
     "1329549": 18.0,
-    "1857": 1.0
+    "25349": 59.24666666666667,
+    "11337": 89.53933333333333
    },
    "raid_casts": {
-    "Goblin Sapper Charge": 1.0,
     "Eviscerate": 29.402,
     "Slice and Dice": 9.176333333333332,
-    "spell 25349": 59.24666666666667,
+    "item 13965": 1.0,
     "Garrote": 1.0,
+    "Vanish": 1.0,
+    "Goblin Sapper Charge": 1.0,
     "Cold Blood": 0.7733333333333333,
     "Mutilate": 36.74066666666667,
-    "Thistle Tea": 1.0,
-    "Auto Attack": 260.9216666666667,
-    "item 13965": 1.0,
-    "spell 11337": 89.53933333333333,
     "Shank": 18.0,
-    "Vanish": 1.0
+    "spell 25349": 59.24666666666667,
+    "spell 11337": 89.53933333333333,
+    "Thistle Tea": 1.0,
+    "Auto Attack": 260.9216666666667
    },
    "raid_shares": {
     "Auto Attack": 0.2869,

@@ -3,35 +3,38 @@
  "spec": "combat-daggers-raid",
  "build": "combat-ml-raid",
  "setting": "raid",
- "date": "2026-11-10",
+ "date": "2026-11-19",
  "tank": false,
  "removal": {
-  "Adrenaline Rush": 0.02790509209922365,
-  "Aggression": 0.018686526304527495,
-  "Blade Flurry": 0.00731537456780873,
-  "Coup de Grace": 0.02387722805578596,
+  "Aggression": 0.011361354589083827,
+  "Blade Flurry": 0.009271422497885928,
+  "Blood Splatter": 0.003687943156243212,
+  "Coup de Grace": 0.02082915007998498,
   "Deflection": -0.0,
-  "Dual Wield Specialization": 0.053572431157883904,
-  "Flash of Steel": 0.08119701395762347,
-  "Flawless Execution": 0.03580027432121424,
-  "Hack and Slash": 0.03000315246604912,
-  "Improved Slice and Dice": 0.03264627031833767,
-  "Lethality": 0.022025959934666606,
+  "Dual Wield Specialization": 0.050691628930127686,
+  "Flash of Steel": 0.08897154611941827,
+  "Flawless Execution": 0.02216100337367677,
+  "Hack and Slash": 0.012861613837640506,
+  "Improved Poisons": 0.011983989559248398,
+  "Improved Slice and Dice": 0.03140597167369796,
+  "Lethality": 0.016826708528892675,
   "Lightning Reflexes": -0.0,
-  "Malice": 0.040149308254886606,
-  "Opportunity": 0.05024114933383195,
-  "Precision": 0.024863583462357286,
-  "Puncturing Wounds": 0.09679069884172076,
-  "Ruthlessness": 0.02779732978713989,
-  "Weapon Expertise": 0.006771441818228419
+  "Malice": 0.03735991326490351,
+  "Precision": 0.02300797735897242,
+  "Puncturing Wounds": 0.08093211024581382,
+  "Ruthlessness": 0.02851919176659412,
+  "Venom": 0.07327997050264845,
+  "Vigor": 0.0034668293434612085,
+  "Vile Poisons": 0.01804909789916087,
+  "Weapon Expertise": 0.014891841708786324
  },
  "free": [
   "Deflection",
   "Lightning Reflexes"
  ],
  "kept_for_rotation": [
-  "Adrenaline Rush",
   "Blade Flurry",
+  "Blood Splatter",
   "Flawless Execution"
  ],
  "active_never_worth": [],
@@ -53,8 +56,28 @@
     3
    ],
    [
+    "Vigor",
+    1
+   ],
+   [
+    "Blood Splatter",
+    1
+   ],
+   [
     "Lethality",
     2
+   ],
+   [
+    "Vile Poisons",
+    3
+   ],
+   [
+    "Improved Poisons",
+    2
+   ],
+   [
+    "Venom",
+    1
    ]
   ],
   "Combat": [
@@ -84,11 +107,11 @@
    ],
    [
     "Weapon Expertise",
-    1
+    2
    ],
    [
     "Aggression",
-    3
+    2
    ],
    [
     "Dual Wield Specialization",
@@ -100,23 +123,14 @@
    ],
    [
     "Hack and Slash",
-    4
+    2
    ],
    [
     "Flash of Steel",
     5
-   ],
-   [
-    "Adrenaline Rush",
-    1
    ]
   ],
-  "Subtlety": [
-   [
-    "Opportunity",
-    5
-   ]
-  ]
+  "Subtlety": []
  },
  "allocation": {
   "Assassination": [
@@ -133,8 +147,28 @@
     3
    ],
    [
+    "Vigor",
+    1
+   ],
+   [
+    "Blood Splatter",
+    1
+   ],
+   [
     "Lethality",
     2
+   ],
+   [
+    "Vile Poisons",
+    3
+   ],
+   [
+    "Improved Poisons",
+    2
+   ],
+   [
+    "Venom",
+    1
    ]
   ],
   "Combat": [
@@ -164,11 +198,11 @@
    ],
    [
     "Weapon Expertise",
-    1
+    2
    ],
    [
     "Aggression",
-    3
+    2
    ],
    [
     "Dual Wield Specialization",
@@ -180,22 +214,13 @@
    ],
    [
     "Hack and Slash",
-    4
+    2
    ],
    [
     "Flash of Steel",
     5
-   ],
-   [
-    "Adrenaline Rush",
-    1
    ]
   ],
-  "Subtlety": [
-   [
-    "Opportunity",
-    5
-   ]
-  ]
+  "Subtlety": []
  }
 }

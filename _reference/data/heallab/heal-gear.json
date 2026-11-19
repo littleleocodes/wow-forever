@@ -11,7 +11,7 @@
     "opt-holy-heal-raid-heal": 0.6906494140625,
     "holy-ml-heal": 0.6887451171875001
    },
-   "date": "2026-11-17",
+   "date": "2026-11-18",
    "budgets": {
     "weight_seeds": 800,
     "weight_steps": 12,
@@ -443,7 +443,7 @@
       "ratio": 1.0003211881215297,
       "ratio_se": 0.002177436463344401
      },
-     "pool_items": 1152
+     "pool_items": 1144
     },
     "bis": {
      "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-holy-bis.gear.json",
@@ -707,7 +707,7 @@
       "ratio": 0.9956429656989135,
       "ratio_se": 0.002678654878299065
      },
-     "pool_items": 1183
+     "pool_items": 1174
     }
    },
    "check": {
@@ -754,7 +754,7 @@
      }
     }
    },
-   "seconds": 2076
+   "seconds": 1112
   },
   "priest|Discipline": {
    "class": "priest",
@@ -766,7 +766,7 @@
     "discipline-ml-heal": 0.6465332031250001,
     "disc-penance-healer": 0.6001953125
    },
-   "date": "2026-11-17",
+   "date": "2026-11-18",
    "budgets": {
     "weight_seeds": 800,
     "weight_steps": 12,
@@ -1210,7 +1210,7 @@
       "ratio": 0.9939537890466177,
       "ratio_se": 0.0025464404367616343
      },
-     "pool_items": 1152
+     "pool_items": 1144
     },
     "bis": {
      "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-discipline-bis.gear.json",
@@ -1474,7 +1474,7 @@
       "ratio": 1.0011265294804097,
       "ratio_se": 0.0024201854556279772
      },
-     "pool_items": 1183
+     "pool_items": 1174
     }
    },
    "check": {
@@ -1521,7 +1521,7 @@
      }
     }
    },
-   "seconds": 2074
+   "seconds": 1127
   },
   "paladin|Holy": {
    "class": "paladin",
@@ -1534,7 +1534,7 @@
     "holy-raid-healer": 0.50244140625,
     "opt-holy-heal-raid-heal": 0.4932373046875
    },
-   "date": "2026-11-16",
+   "date": "2026-11-18",
    "budgets": {
     "weight_seeds": 800,
     "weight_steps": 12,
@@ -1955,7 +1955,7 @@
       "ratio": 0.9992749058679078,
       "ratio_se": 0.0029549928696733104
      },
-     "pool_items": 2106
+     "pool_items": 2092
     },
     "bis": {
      "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-holy-bis.gear.json",
@@ -1968,18 +1968,18 @@
        "id": 20685
       },
       {
-       "id": 18720
+       "id": 22234
       },
       {
        "id": 18510
       },
       {
-       "id": 250601,
+       "id": 18532,
        "enchant": 1893
       },
       {
        "id": 18263,
-       "enchant": 2566
+       "enchant": 2565
       },
       {
        "id": 12554
@@ -1988,7 +1988,7 @@
        "id": 19162
       },
       {
-       "id": 250600,
+       "id": 18386,
        "enchant": 1509
       },
       {
@@ -2008,32 +2008,34 @@
        "id": 18371
       },
       {
-       "id": 18717,
+       "id": 22315,
        "enchant": 2568
       },
-      {},
+      {
+       "id": 22319
+      },
       {}
      ],
      "names": [
       "Living Crown",
       "Wavefront Necklace",
-      "Shroud of the Nathrezim",
+      "Mantle of Lost Hope",
       "Hide of the Wild",
-      "Breastplate of Salvation",
+      "Mindsurge Robe",
       "Flarecore Wraps",
       "Hands of the Exalted Herald",
       "Corehound Belt",
-      "Martyr's Legplates",
+      "Padre's Trousers",
       "Mooncloth Boots",
       "Cauterizing Band",
       "Band of Sulfuras",
       "Burst of Knowledge",
       "Mindtap Talisman",
-      "Hammer of the Grand Crusader",
-      null,
+      "Hammer of Revitalization",
+      "Tome of Divine Right",
       null
      ],
-     "ilvl": 63.5,
+     "ilvl": 62.7,
      "rows": [
       {
        "slot": "Head",
@@ -2057,10 +2059,10 @@
       },
       {
        "slot": "Shoulder",
-       "id": 18720,
-       "name": "Shroud of the Nathrezim",
-       "ilvl": 63,
-       "source": "Balnazzar, Stratholme",
+       "id": 22234,
+       "name": "Mantle of Lost Hope",
+       "ilvl": 53,
+       "source": "Lord Roccor, Blackrock Depths",
        "effects": false,
        "set": null,
        "enchant": null
@@ -2077,10 +2079,10 @@
       },
       {
        "slot": "Chest",
-       "id": 250601,
-       "name": "Breastplate of Salvation",
-       "ilvl": 61,
-       "source": "crafted",
+       "id": 18532,
+       "name": "Mindsurge Robe",
+       "ilvl": 62,
+       "source": "Tribute, Dire Maul",
        "effects": false,
        "set": null,
        "enchant": "Enchant Chest - Major Intellect"
@@ -2093,7 +2095,7 @@
        "source": "crafted",
        "effects": false,
        "set": null,
-       "enchant": "Enchant Bracer - Healing Power"
+       "enchant": "Enchant Bracer - Mana Regeneration"
       },
       {
        "slot": "Hands",
@@ -2117,10 +2119,10 @@
       },
       {
        "slot": "Legs",
-       "id": 250600,
-       "name": "Martyr's Legplates",
+       "id": 18386,
+       "name": "Padre's Trousers",
        "ilvl": 61,
-       "source": "crafted",
+       "source": "Illyanna Ravenoak, Dire Maul",
        "effects": false,
        "set": null,
        "enchant": "Lesser Arcane Amalgamation"
@@ -2177,38 +2179,48 @@
       },
       {
        "slot": "Main hand",
-       "id": 18717,
-       "name": "Hammer of the Grand Crusader",
-       "ilvl": 63,
-       "source": "Balnazzar, Stratholme",
+       "id": 22315,
+       "name": "Hammer of Revitalization",
+       "ilvl": 61,
+       "source": "Isalien, Dire Maul",
        "effects": false,
        "set": null,
        "enchant": "Enchant Weapon - Mighty Intellect"
+      },
+      {
+       "slot": "Off hand",
+       "id": 22319,
+       "name": "Tome of Divine Right",
+       "ilvl": 61,
+       "source": "Mor Grayhoof, Blackrock Spire",
+       "effects": false,
+       "set": null,
+       "enchant": null
       }
      ],
      "stats": {
-      "intellect": 238,
-      "spirit": 130,
-      "healing": 581,
-      "mp5": 31,
-      "crit_gear": 0.01,
+      "intellect": 218,
+      "spirit": 54,
+      "healing": 542,
+      "mp5": 65,
+      "crit_gear": 0.0,
       "ignored": {
-       "stamina": 45,
-       "spell_damage": 200,
+       "stamina": 63,
+       "spell_damage": 181,
        "haste_rating": 0
       }
      },
      "notes": [
-      "two-hander (0.0730) over main hand + off-hand (0.0713)",
+      "main hand + off-hand (0.0761) over a two-hander (0.0743)",
       "no wand or relic with static healing stats in the pool: ranged slot left empty (relic effects are not modelled)"
      ],
      "refresh_race": {
       "first": 0.67210791015625,
-      "refreshed": 0.6718984375000001,
-      "ratio": 0.9996883347851073,
-      "ratio_se": 0.0029966343830494695
+      "refreshed": 0.67275537109375,
+      "ratio": 1.0009633288460322,
+      "ratio_se": 0.003430989464635768
      },
-     "pool_items": 2150
+     "pool_items": 2136
     }
    },
    "check": {
@@ -2241,21 +2253,21 @@
      }
     },
     "bis": {
-     "capacity": 0.67210791015625,
-     "capacity_se": 0.0019078157562882397,
-     "vs_default": 1.0765282420348092,
-     "vs_default_se": 0.003840916583726994,
-     "standard_seeds": 0.6690673828125,
+     "capacity": 0.67275537109375,
+     "capacity_se": 0.0018591933182478032,
+     "vs_default": 1.0775652927439299,
+     "vs_default_se": 0.003627884744433156,
+     "standard_seeds": 0.6665283203125,
      "stats": {
-      "intellect": 238.0,
-      "spirit": 130.0,
-      "healing": 581.0,
-      "mp5": 31.0,
-      "crit_gear": 0.01
+      "intellect": 218.0,
+      "spirit": 54.0,
+      "healing": 542.0,
+      "mp5": 65.0,
+      "crit_gear": 0.0
      }
     }
    },
-   "seconds": 2912
+   "seconds": 1527
   },
   "druid|Restoration": {
    "class": "druid",
@@ -2269,7 +2281,7 @@
     "opt-resto-heal-raid-heal": 0.6709716796874999,
     "resto-regrowth-natures-grace": 0.6074951171874999
    },
-   "date": "2026-11-17",
+   "date": "2026-11-19",
    "budgets": {
     "weight_seeds": 800,
     "weight_steps": 12,
@@ -2702,7 +2714,7 @@
       "ratio": 0.9938062494351798,
       "ratio_se": 0.0030316980733071115
      },
-     "pool_items": 1546
+     "pool_items": 1536
     },
     "bis": {
      "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-restoration-bis.gear.json",
@@ -2967,7 +2979,7 @@
       "ratio": 0.9846272419421258,
       "ratio_se": 0.0026473640375748136
      },
-     "pool_items": 1581
+     "pool_items": 1570
     }
    },
    "check": {
@@ -3014,7 +3026,7 @@
      }
     }
    },
-   "seconds": 1857
+   "seconds": 978
   },
   "shaman|Restoration": {
    "class": "shaman",
@@ -3026,7 +3038,7 @@
     "resto-raid-healer": 0.6877929687500001,
     "opt-resto-heal-raid-heal": 0.6877929687500001
    },
-   "date": "2026-11-17",
+   "date": "2026-11-19",
    "budgets": {
     "weight_seeds": 800,
     "weight_steps": 12,
@@ -3460,7 +3472,7 @@
       "ratio": 1.0044337913034243,
       "ratio_se": 0.0028018869680237024
      },
-     "pool_items": 1879
+     "pool_items": 1868
     },
     "bis": {
      "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-restoration-bis.gear.json",
@@ -3725,7 +3737,7 @@
       "ratio": 1.0008027494000957,
       "ratio_se": 0.0031481106989782893
      },
-     "pool_items": 1918
+     "pool_items": 1906
     }
    },
    "check": {
@@ -3772,10 +3784,10 @@
      }
     }
    },
-   "seconds": 1879
+   "seconds": 1080
   }
  },
- "date": "2026-11-17",
+ "date": "2026-11-19",
  "tool": "_reference/data/heallab/heal_gear.py",
  "deltas": {
   "healing": 50.0,

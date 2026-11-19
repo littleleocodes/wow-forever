@@ -76,9 +76,9 @@ Destruction to Incinerate, the Forever capstone (Fire damage, +25% on a target w
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`destruction-incinerate-open-raid`](destruction-incinerate-open-raid.md) | ours: derived (open search) | 10/11/30 | 712 | +0.0% | 802 | +0.0% | 1 s |
-| 2 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 683 | -4.0% | 762 | -5.0% | 1 s |
-| 3 | *Destro* | community simulator | - | 646 | -9.2% | 721 | -10.2% | 1 s |
+| 1 | [`destruction-incinerate-open-raid`](destruction-incinerate-open-raid.md) | ours: derived (open search) | 10/11/30 | 695 | +0.0% | 785 | +0.0% | 1 s |
+| 2 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 669 | -3.8% | 746 | -5.0% | 1 s |
+| 3 | *Destro* | community simulator | - | 633 | -9.0% | 705 | -10.2% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -124,7 +124,7 @@ Damage by ability:
 | Ability | [`destruction-incinerate-raid`](destruction-incinerate-raid.md) |
 |---|---|
 | Shadow Bolt | 44% |
-| Corruption | 16% |
+| Corruption | 17% |
 | Bane of Agony | 16% |
 | Immolate | 12% |
 | Conflagrate | 9% |

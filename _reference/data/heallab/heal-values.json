@@ -1,5 +1,5 @@
 {
- "date": "2026-11-17",
+ "date": "2026-11-19",
  "budgets": {
   "weight_seeds": 800,
   "weight_steps": 12,
@@ -19,7 +19,7 @@
    "class": "priest",
    "spec": "Holy",
    "build": "holy-raid-healer",
-   "date": "2026-11-17",
+   "date": "2026-11-19",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-holy-bis.gear.json",
    "stats": {
     "intellect": 147.0,
@@ -73,7 +73,7 @@
    "class": "priest",
    "spec": "Discipline",
    "build": "discipline-ml-heal",
-   "date": "2026-11-17",
+   "date": "2026-11-19",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-discipline-bis.gear.json",
    "stats": {
     "intellect": 162.0,
@@ -127,61 +127,61 @@
    "class": "paladin",
    "spec": "Holy",
    "build": "holy-ml-heal",
-   "date": "2026-11-17",
+   "date": "2026-11-19",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-holy-bis.gear.json",
    "stats": {
-    "intellect": 238.0,
-    "spirit": 130.0,
-    "healing": 581.0,
-    "mp5": 31.0,
-    "crit_gear": 0.01,
+    "intellect": 218.0,
+    "spirit": 54.0,
+    "healing": 542.0,
+    "mp5": 65.0,
+    "crit_gear": 0.0,
     "haste_gear": 0.0
    },
-   "capacity": 0.6721,
-   "capacity_se": 0.0019,
+   "capacity": 0.6751,
+   "capacity_se": 0.0018,
    "values": {
     "healing": {
      "healing_eq": 1.0,
      "healing_eq_se": 0.0,
-     "z": 11.12
+     "z": 10.54
     },
     "intellect": {
-     "healing_eq": 2.7926,
-     "healing_eq_se": 0.3139,
-     "z": 15.35
+     "healing_eq": 3.0052,
+     "healing_eq_se": 0.3292,
+     "z": 18.1
     },
     "spirit": {
-     "healing_eq": 1.3699,
-     "healing_eq_se": 0.1982,
-     "z": 8.69
+     "healing_eq": 1.2616,
+     "healing_eq_se": 0.1802,
+     "z": 9.08
     },
     "mp5": {
-     "healing_eq": 7.1307,
-     "healing_eq_se": 0.864,
-     "z": 12.74
+     "healing_eq": 6.4897,
+     "healing_eq_se": 0.7857,
+     "z": 12.86
     },
     "crit_rating": {
-     "healing_eq": 1.6135,
-     "healing_eq_se": 0.262,
-     "z": 7.6
+     "healing_eq": 1.345,
+     "healing_eq_se": 0.3329,
+     "z": 4.28
     },
     "haste_rating": {
-     "healing_eq": -0.1413,
-     "healing_eq_se": 0.0433,
-     "z": -3.38
+     "healing_eq": -0.2421,
+     "healing_eq_se": 0.0494,
+     "z": -5.58
     }
    },
    "haste_if_gcd_hasted": {
-    "healing_eq": -0.1764,
-    "healing_eq_se": 0.0475,
-    "z": -3.99
+    "healing_eq": -0.2115,
+    "healing_eq_se": 0.049,
+    "z": -4.88
    }
   },
   "druid|Restoration": {
    "class": "druid",
    "spec": "Restoration",
    "build": "restoration-ml-heal",
-   "date": "2026-11-17",
+   "date": "2026-11-19",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-restoration-bis.gear.json",
    "stats": {
     "intellect": 154.0,
@@ -235,7 +235,7 @@
    "class": "shaman",
    "spec": "Restoration",
    "build": "resto-raid-healer",
-   "date": "2026-11-17",
+   "date": "2026-11-19",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-restoration-bis.gear.json",
    "stats": {
     "intellect": 210.0,

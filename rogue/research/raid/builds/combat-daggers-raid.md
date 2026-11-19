@@ -76,10 +76,10 @@ The conservative dagger adaptation: Puncturing Wounds replaces Improved Backstab
 | 1 | *Subtlety Hemo* | community simulator | - | 486 | +0.0% | 812 | -3.5% | 0 s |
 | 2 | *Asn Muti* | community simulator | - | 449 | -7.6% | 841 | +0.0% | 0 s |
 | 3 | *Combat Venom* | community simulator | - | 399 | -17.8% | 723 | -14.1% | 0 s |
-| 4 | [`daggers-split-open-raid`](daggers-split-open-raid.md) | ours: derived (open search) | 29/22/0 | 377 | -22.5% | 808 | -4.0% | 0 s |
-| 5 | *Combat SS* | community simulator | - | 361 | -25.7% | 690 | -18.0% | 0 s |
-| 6 | *Combat BS* | community simulator | - | 348 | -28.3% | 773 | -8.1% | 0 s |
-| 7 | [`combat-ml-raid`](combat-ml-raid.md) | ours: derived (ML search) | 13/33/5 | 336 | -30.8% | 781 | -7.2% | 0 s |
+| 4 | [`combat-ml-raid`](combat-ml-raid.md) | ours: derived (ML search) | 21/30/0 | 382 | -21.3% | 796 | -5.4% | 0 s |
+| 5 | [`daggers-split-open-raid`](daggers-split-open-raid.md) | ours: derived (open search) | 29/22/0 | 377 | -22.5% | 808 | -4.0% | 0 s |
+| 6 | *Combat SS* | community simulator | - | 361 | -25.7% | 690 | -18.0% | 0 s |
+| 7 | *Combat BS* | community simulator | - | 348 | -28.3% | 773 | -8.1% | 0 s |
 | 8 | **[`combat-daggers-raid`](combat-daggers-raid.md)** | ours: hand draft | 21/30/0 | 313 | -35.7% | 689 | -18.1% | 0 s |
 | 9 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 21/30/0 | 313 | -35.7% | 689 | -18.1% | 0 s |
 

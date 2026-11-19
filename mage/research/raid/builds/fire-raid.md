@@ -75,17 +75,17 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`fire-open-raid`](fire-open-raid.md) | ours: derived (open search) | 17/31/3 | 584 | +0.0% | 887 | +0.0% | 5 s |
-| 2 | *Fire Skyborne GT 180* | community simulator | - | 583 | -0.1% | 877 | -1.1% | 3 s |
-| 3 | *Fire* | community simulator | - | 582 | -0.4% | 885 | -0.2% | 6 s |
-| 4 | *Fire Skyborne LT 180* | community simulator | - | 579 | -0.9% | 875 | -1.3% | 5 s |
-| 5 | **[`fire-raid`](fire-raid.md)** | ours: hand draft | 16/32/3 | 575 | -1.6% | 850 | -4.2% | 6 s |
-| 6 | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) | ours: optimizer | 18/31/2 | 574 | -1.8% | 843 | -4.9% | 2 s |
-| 7 | *FFB* | community simulator | - | 477 | -18.3% | 625 | -29.6% | 34 s |
-| 8 | *Arcane Fire* | community simulator | - | 410 | -29.7% | 596 | -32.8% | 1 s |
-| 9 | *Arcane* | community simulator | - | 364 | -37.7% | 438 | -50.6% | 1 s |
-| 10 | *Frost Incin* | community simulator | - | 328 | -43.8% | 381 | -57.0% | 0 s |
-| 11 | *Frost Med* | community simulator | - | 320 | -45.1% | 400 | -54.9% | 1 s |
+| 1 | [`fire-open-raid`](fire-open-raid.md) | ours: derived (open search) | 17/31/3 | 577 | +0.0% | 873 | +0.0% | 3 s |
+| 2 | *Fire Skyborne GT 180* | community simulator | - | 576 | -0.3% | 862 | -1.3% | 2 s |
+| 3 | *Fire* | community simulator | - | 575 | -0.3% | 871 | -0.2% | 4 s |
+| 4 | *Fire Skyborne LT 180* | community simulator | - | 571 | -1.0% | 861 | -1.4% | 3 s |
+| 5 | **[`fire-raid`](fire-raid.md)** | ours: hand draft | 16/32/3 | 569 | -1.4% | 837 | -4.1% | 4 s |
+| 6 | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) | ours: optimizer | 18/31/2 | 565 | -2.2% | 828 | -5.2% | 1 s |
+| 7 | *FFB* | community simulator | - | 478 | -17.3% | 626 | -28.2% | 30 s |
+| 8 | *Arcane Fire* | community simulator | - | 406 | -29.7% | 595 | -31.8% | 1 s |
+| 9 | *Arcane* | community simulator | - | 360 | -37.7% | 430 | -50.7% | 1 s |
+| 10 | *Frost Incin* | community simulator | - | 321 | -44.3% | 383 | -56.1% | 0 s |
+| 11 | *Frost Med* | community simulator | - | 318 | -45.0% | 392 | -55.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -145,7 +145,7 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
 | 5 | if stacks of Heating Up = 3: cast Pyroblast | 5.2 |
 | 6 | cast Fire Blast | 5.9 |
 | 7 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 0.7 |
-| 8 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 5.5 |
+| 8 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 5.6 |
 | 9 | cast Robe of the Archmage | as ready |
 | 10 | cast Scorch | 6.5 |
 

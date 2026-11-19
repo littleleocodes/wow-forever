@@ -14,91 +14,14 @@
   "bis": {
    "entry": "subtlety-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-subtlety-bis.gear.json",
-   "date": "2026-11-16",
-   "chosen": "all-slots",
+   "date": "2026-11-19",
+   "setting": "raid",
+   "chosen": "previous",
    "ilvl": 62.8,
    "trinkets": [
     "Blackhand's Breadth",
-    "Hand of Justice"
+    "Counterattack Lodestone"
    ],
-   "trinket_screen": {
-    "Blackhand's Breadth (13965)": 1.0146,
-    "Hand of Justice (11815)": 1.0129,
-    "Counterattack Lodestone (18537)": 1.0109,
-    "Adaptive Combat Assistant (272437)": 1.0105,
-    "Rune of the Guard Captain (19120)": 1.0095,
-    "Cleansed Vilebranch Medallion (270275)": 1.0095,
-    "Molten Heart of the Mountain (249470)": 1.0066,
-    "Smolderweb's Eye (13213)": 1.0061,
-    "Royal Seal of Eldre'Thalas (18465)": 1.0061,
-    "Frozen Heart of the Mountain (249469)": 1.0058,
-    "Everlook Delivery Bot (274760)": 1.0045,
-    "Jewel of the Guard Captain (270225)": 1.0045,
-    "Everlook Pathcarver (274759)": 1.0043,
-    "Vigilance Charm (18370)": 1.004,
-    "Cannonball Runner (13382)": 1.0031,
-    "Draconic Infused Emblem (22268)": 1.0012,
-    "Eye of the Beast (13968)": 1.0005,
-    "Weakness Analyzer (272438)": 1.0004,
-    "Dog Whistle (3456)": 1.0,
-    "Minor Recombobulator (4381)": 1.0,
-    "Gnomish Universal Remote (7506)": 1.0,
-    "Shard of the Splithooves (10659)": 1.0,
-    "Demon's Blood (10779)": 1.0,
-    "Force of Will (11810)": 1.0,
-    "Smoking Heart of the Mountain (11811)": 1.0,
-    "Second Wind (11819)": 1.0,
-    "Burst of Knowledge (11832)": 1.0,
-    "Briarwood Reed (12930)": 1.0,
-    "Heart of the Scale (13164)": 1.0,
-    "Alchemist's Stone (13503)": 1.0,
-    "Ramstein's Lightning Bolts (13515)": 1.0,
-    "The Lion Horn of Stormwind (14557)": 1.0,
-    "Arcanite Dragonling (16022)": 1.0,
-    "Heart of Noxxion (17744)": 1.0,
-    "Mindtap Talisman (18371)": 1.0,
-    "Gyrofreeze Ice Reflector (18634)": 1.0,
-    "Major Recombobulator (18637)": 1.0,
-    "Hyper-Radiant Flame Reflector (18638)": 1.0,
-    "Ultra-Flash Shadow Reflector (18639)": 1.0,
-    "The Eye of Shadow (18665)": 1.0,
-    "Essence of the Pure Flame (18815)": 1.0,
-    "Talisman of Ephemeral Power (18820)": 1.0,
-    "Arena Grand Master (19024)": 1.0,
-    "Talisman of Arathor (20071)": 1.0,
-    "Defiler's Talisman (20072)": 1.0,
-    "Defiler's Talisman (21115)": 1.0,
-    "Defiler's Talisman (21116)": 1.0,
-    "Talisman of Arathor (21117)": 1.0,
-    "Talisman of Arathor (21118)": 1.0,
-    "Talisman of Arathor (21119)": 1.0,
-    "Defiler's Talisman (21120)": 1.0,
-    "Defender of the Timbermaw (21326)": 1.0,
-    "Heart of Wyrmthalak (22321)": 1.0,
-    "Dormant Heart of the Mountain (249473)": 1.0,
-    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
-    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
-    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
-    "Gnomish Poultryizer (260824)": 1.0,
-    "Enriched Seal (271903)": 1.0,
-    "Volunteer's Lucky Seal (271904)": 1.0,
-    "Enriched Seal (271905)": 1.0,
-    "Volunteer's Lucky Seal (271906)": 1.0,
-    "Darkspear Voodoo Seal (272059)": 1.0,
-    "Relentless Raider's Seal (272060)": 1.0,
-    "Darkspear Voodoo Seal (272061)": 1.0,
-    "Relentless Raider's Seal (272062)": 1.0,
-    "Serenity Field (272439)": 1.0,
-    "Defender's Grip Stabilizer (272440)": 1.0,
-    "Lookie's Spyglass (273298)": 1.0,
-    "Worgenbane Talisman (273643)": 1.0,
-    "Cursed Murloc Eye (273840)": 1.0,
-    "Roogug's Severed Head (274152)": 1.0,
-    "Theka's Last Breath (274641)": 1.0,
-    "The Desert Rose (274648)": 1.0,
-    "Parachute-Priest Pager (274761)": 1.0,
-    "Mark of the Red Flight (282778)": 1.0
-   },
    "names": [
     "Mask of the Unforgiven",
     "Onyxia Tooth Pendant",
@@ -120,126 +43,45 @@
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.02297939337533,
-    "keep-sets-and-effects": 1.02297939337533,
-    "previous": 1.02297939337533
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0,
+    "previous": 1.0166793349630587,
+    "previous+trinkets": 1.0154717289708206
    },
    "confirm_seed2": {
     "current": 1.0,
-    "all-slots": 1.02223550867872
+    "previous": 1.0153503324408413
    },
    "weights": {
-    "PseudoStatMainHandDps": 2.1566,
-    "PseudoStatOffHandDps": 0.5819,
-    "StatAgility": 0.5027,
-    "StatArmorPenetration": 0.0821,
-    "StatAttackPower": 0.2754,
-    "StatCritRating": 0.4011,
-    "StatExpertiseRating": 0.8334,
-    "StatHasteRating": 0.2756,
-    "StatHitRating": 0.7193,
-    "StatSpellPiercing": 0.0679,
-    "StatStrength": 0.3029
+    "PseudoStatMainHandDps": 2.1757,
+    "PseudoStatOffHandDps": 0.5797,
+    "StatAgility": 0.4626,
+    "StatArmorPenetration": 0.082,
+    "StatAttackPower": 0.2773,
+    "StatCritRating": 0.3903,
+    "StatExpertiseRating": 0.6994,
+    "StatHasteRating": 0.2928,
+    "StatHitRating": 0.6215,
+    "StatSpellPiercing": 0.0685,
+    "StatStrength": 0.305
    },
    "evaluated_on": [
     "subtlety-raid: ml winner"
    ],
-   "replaced": [],
-   "remade": {
-    "simulator": "wowsims/forever 2e6e77d84",
-    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
-    "missing_before": [],
-    "winner_of": "bis-dummy",
-    "talents_left_out": [],
-    "minutes": 5.8
-   }
+   "commit": "2e6e77d84"
   },
   "bis2": true,
   "prebis": {
    "entry": "subtlety-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-subtlety-prebis.gear.json",
-   "date": "2026-11-16",
+   "date": "2026-11-19",
+   "setting": "raid",
    "chosen": "previous",
    "ilvl": 61.4,
    "trinkets": [
     "Blackhand's Breadth",
     "Hand of Justice"
    ],
-   "trinket_screen": {
-    "Blackhand's Breadth (13965)": 1.0158,
-    "Counterattack Lodestone (18537)": 1.0111,
-    "Adaptive Combat Assistant (272437)": 1.0106,
-    "Hand of Justice (11815)": 1.0103,
-    "Rune of the Guard Captain (19120)": 1.0095,
-    "Cleansed Vilebranch Medallion (270275)": 1.0095,
-    "Molten Heart of the Mountain (249470)": 1.0064,
-    "Smolderweb's Eye (13213)": 1.006,
-    "Royal Seal of Eldre'Thalas (18465)": 1.006,
-    "Frozen Heart of the Mountain (249469)": 1.0056,
-    "Everlook Pathcarver (274759)": 1.0044,
-    "Jewel of the Guard Captain (270225)": 1.0043,
-    "Cannonball Runner (13382)": 1.0041,
-    "Vigilance Charm (18370)": 1.0041,
-    "Everlook Delivery Bot (274760)": 1.0035,
-    "Eye of the Beast (13968)": 1.0007,
-    "Draconic Infused Emblem (22268)": 1.0004,
-    "Weakness Analyzer (272438)": 1.0001,
-    "Dog Whistle (3456)": 1.0,
-    "Minor Recombobulator (4381)": 1.0,
-    "Gnomish Universal Remote (7506)": 1.0,
-    "Shard of the Splithooves (10659)": 1.0,
-    "Demon's Blood (10779)": 1.0,
-    "Force of Will (11810)": 1.0,
-    "Smoking Heart of the Mountain (11811)": 1.0,
-    "Second Wind (11819)": 1.0,
-    "Burst of Knowledge (11832)": 1.0,
-    "Briarwood Reed (12930)": 1.0,
-    "Heart of the Scale (13164)": 1.0,
-    "Alchemist's Stone (13503)": 1.0,
-    "Ramstein's Lightning Bolts (13515)": 1.0,
-    "The Lion Horn of Stormwind (14557)": 1.0,
-    "Arcanite Dragonling (16022)": 1.0,
-    "Heart of Noxxion (17744)": 1.0,
-    "Mindtap Talisman (18371)": 1.0,
-    "Gyrofreeze Ice Reflector (18634)": 1.0,
-    "Major Recombobulator (18637)": 1.0,
-    "Hyper-Radiant Flame Reflector (18638)": 1.0,
-    "Ultra-Flash Shadow Reflector (18639)": 1.0,
-    "The Eye of Shadow (18665)": 1.0,
-    "Talisman of Arathor (20071)": 1.0,
-    "Defiler's Talisman (20072)": 1.0,
-    "Defiler's Talisman (21115)": 1.0,
-    "Defiler's Talisman (21116)": 1.0,
-    "Talisman of Arathor (21117)": 1.0,
-    "Talisman of Arathor (21118)": 1.0,
-    "Talisman of Arathor (21119)": 1.0,
-    "Defiler's Talisman (21120)": 1.0,
-    "Defender of the Timbermaw (21326)": 1.0,
-    "Heart of Wyrmthalak (22321)": 1.0,
-    "Dormant Heart of the Mountain (249473)": 1.0,
-    "EZ-Thro Field Transporter: Gadgetzan (260819)": 1.0,
-    "SAF-T Emergency Ripper: Everlook (260820)": 1.0,
-    "EZ and SAF Field Transporter: Mt. Hyjal (260821)": 1.0,
-    "Gnomish Poultryizer (260824)": 1.0,
-    "Enriched Seal (271903)": 1.0,
-    "Volunteer's Lucky Seal (271904)": 1.0,
-    "Enriched Seal (271905)": 1.0,
-    "Volunteer's Lucky Seal (271906)": 1.0,
-    "Darkspear Voodoo Seal (272059)": 1.0,
-    "Relentless Raider's Seal (272060)": 1.0,
-    "Darkspear Voodoo Seal (272061)": 1.0,
-    "Relentless Raider's Seal (272062)": 1.0,
-    "Serenity Field (272439)": 1.0,
-    "Defender's Grip Stabilizer (272440)": 1.0,
-    "Lookie's Spyglass (273298)": 1.0,
-    "Worgenbane Talisman (273643)": 1.0,
-    "Cursed Murloc Eye (273840)": 1.0,
-    "Roogug's Severed Head (274152)": 1.0,
-    "Theka's Last Breath (274641)": 1.0,
-    "The Desert Rose (274648)": 1.0,
-    "Parachute-Priest Pager (274761)": 1.0,
-    "Mark of the Red Flight (282778)": 1.0
-   },
    "names": [
     "Outlaw's Collar",
     "Mark of Fordring",
@@ -262,37 +104,159 @@
    "race_seed1": {
     "all-slots": 1.0,
     "keep-sets-and-effects": 1.0,
-    "previous": 1.0038020690924427,
-    "previous+trinkets": 1.0030714449038887
+    "previous": 1.0400753329196981,
+    "previous+trinkets": 1.0396671961824053
    },
    "confirm_seed2": {
     "previous": 1.0
    },
    "weights": {
-    "PseudoStatMainHandDps": 2.454,
-    "PseudoStatOffHandDps": 0.5766,
-    "StatAgility": 0.5569,
-    "StatArmorPenetration": 0.0844,
-    "StatAttackPower": 0.2781,
-    "StatCritRating": 0.4523,
-    "StatExpertiseRating": 0.9891,
-    "StatHasteRating": 0.336,
-    "StatHitRating": 0.7746,
-    "StatSpellPiercing": 0.0602,
-    "StatStrength": 0.306
+    "PseudoStatMainHandDps": 2.4263,
+    "PseudoStatOffHandDps": 0.571,
+    "StatAgility": 0.4882,
+    "StatArmorPenetration": 0.0834,
+    "StatAttackPower": 0.2749,
+    "StatCritRating": 0.3914,
+    "StatExpertiseRating": 0.9992,
+    "StatHasteRating": 0.316,
+    "StatHitRating": 1.25,
+    "StatSpellPiercing": 0.0563,
+    "StatStrength": 0.3024
    },
    "evaluated_on": [
     "subtlety-raid: ml winner (bis)"
    ],
-   "replaced": [],
-   "remade": {
-    "simulator": "wowsims/forever 2e6e77d84",
-    "why": "port to wowsims/forever (_reference/sim-port.md): the fork-era set held items the official database lacks",
-    "missing_before": [],
-    "winner_of": "bis-dummy",
-    "talents_left_out": [],
-    "minutes": 3.5
-   }
+   "commit": "2e6e77d84"
+  },
+  "dungeon": {
+   "entry": "subtlety-raid",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-subtlety-dungeon.gear.json",
+   "date": "2026-11-19",
+   "chosen": "keep-sets-and-effects",
+   "ilvl": 60.2,
+   "trinkets": [
+    "Blackhand's Breadth",
+    "Rune of the Guard Captain"
+   ],
+   "trinket_screen": {
+    "Blackhand's Breadth (13965)": 1.0145,
+    "Counterattack Lodestone (18537)": 1.0104,
+    "Rune of the Guard Captain (19120)": 1.0104,
+    "Adaptive Combat Assistant (272437)": 1.0083,
+    "Hand of Justice (11815)": 1.008,
+    "Smolderweb's Eye (13213)": 1.008,
+    "Royal Seal of Eldre'Thalas (18465)": 1.008,
+    "Cannonball Runner (13382)": 1.0039,
+    "Vigilance Charm (18370)": 1.0031,
+    "Everlook Pathcarver (274759)": 1.0028,
+    "Everlook Delivery Bot (274760)": 1.0023,
+    "Smokey's Lighter (13171)": 1.0018,
+    "Thunderbrew's Boot Flask (744)": 1.0,
+    "Eye of the Beast (13968)": 0.9996,
+    "Guardian Talisman (1490)": 0.9988,
+    "Nifty Stopwatch (2820)": 0.9988,
+    "Dog Whistle (3456)": 0.9988,
+    "Smotts' Compass (4130)": 0.9988,
+    "Glimmering Mithril Insignia (10418)": 0.9988,
+    "Chained Essence of Eranikus (10455)": 0.9988,
+    "Shard of the Splithooves (10659)": 0.9988,
+    "Demon's Blood (10779)": 0.9988,
+    "Carrot on a Stick (11122)": 0.9988,
+    "Force of Will (11810)": 0.9988,
+    "Second Wind (11819)": 0.9988,
+    "Burst of Knowledge (11832)": 0.9988,
+    "Linken's Boomerang (11905)": 0.9988,
+    "Ward of the Elements (12065)": 0.9988,
+    "Heart of the Scale (13164)": 0.9988,
+    "Seal of the Dawn (13209)": 0.9988,
+    "Ramstein's Lightning Bolts (13515)": 0.9988,
+    "Spectral Essence (13544)": 0.9988,
+    "Mark of Tyranny (13966)": 0.9988,
+    "Barov Peasant Caller (14022)": 0.9988,
+    "Barov Peasant Caller (14023)": 0.9988,
+    "Prismcharm (15867)": 0.9988,
+    "Ragged John's Neverending Cup (15873)": 0.9988,
+    "Heart of Noxxion (17744)": 0.9988,
+    "Mark of Resolution (17759)": 0.9988,
+    "Mindtap Talisman (18371)": 0.9988,
+    "Evonice's Landin' Pilla (18951)": 0.9988,
+    "Arena Grand Master (19024)": 0.9988,
+    "Luffa (19141)": 0.9988,
+    "Rune of the Dawn (19812)": 0.9988,
+    "Hook of the Master Angler (19979)": 0.9988,
+    "Talisman of Arathor (20071)": 0.9988,
+    "Defiler's Talisman (20072)": 0.9988,
+    "Defiler's Talisman (21115)": 0.9988,
+    "Defiler's Talisman (21116)": 0.9988,
+    "Talisman of Arathor (21117)": 0.9988,
+    "Talisman of Arathor (21118)": 0.9988,
+    "Talisman of Arathor (21119)": 0.9988,
+    "Defiler's Talisman (21120)": 0.9988,
+    "Defender of the Timbermaw (21326)": 0.9988,
+    "Heart of Wyrmthalak (22321)": 0.9988,
+    "Enriched Seal (271903)": 0.9988,
+    "Volunteer's Lucky Seal (271904)": 0.9988,
+    "Enriched Seal (271905)": 0.9988,
+    "Volunteer's Lucky Seal (271906)": 0.9988,
+    "Darkspear Voodoo Seal (272059)": 0.9988,
+    "Relentless Raider's Seal (272060)": 0.9988,
+    "Darkspear Voodoo Seal (272061)": 0.9988,
+    "Relentless Raider's Seal (272062)": 0.9988,
+    "Lookie's Spyglass (273298)": 0.9988,
+    "Worgenbane Talisman (273643)": 0.9988,
+    "Cursed Murloc Eye (273840)": 0.9988,
+    "Roogug's Severed Head (274152)": 0.9988,
+    "Theka's Last Breath (274641)": 0.9988,
+    "The Desert Rose (274648)": 0.9988,
+    "Parachute-Priest Pager (274761)": 0.9988,
+    "Transformative Cocoon (276895)": 0.9988,
+    "Satchel of Potions (280766)": 0.9988,
+    "Mark of the Chosen (17774)": 0.9983
+   },
+   "names": [
+    "Mask of the Unforgiven",
+    "Beads of Ogre Might",
+    "Shadowcraft Spaulders",
+    "Cape of the Black Baron",
+    "Tombstone Breastplate",
+    "Bracers of the Eclipse",
+    "Gordok's Gloves",
+    "Highlander's Leather Girdle",
+    "Shadowcraft Pants",
+    "Shadowcraft Boots",
+    "Tracker's Signet of Ferocity",
+    "Blackstone Ring",
+    "Blackhand's Breadth",
+    "Rune of the Guard Captain",
+    "Mirah's Song",
+    "Fiendish Machete",
+    "Satyr's Bow"
+   ],
+   "race_seed1": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.009504080488674
+   },
+   "confirm_seed2": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0116688440912702
+   },
+   "weights": {
+    "PseudoStatMainHandDps": 2.037,
+    "PseudoStatOffHandDps": 0.5413,
+    "StatAgility": 0.5164,
+    "StatArmorPenetration": 0.0722,
+    "StatAttackPower": 0.2592,
+    "StatCritRating": 0.463,
+    "StatExpertiseRating": 0.6356,
+    "StatHasteRating": 0.2757,
+    "StatHitRating": 0.7888,
+    "StatSpellPiercing": 0.0629,
+    "StatStrength": 0.2851
+   },
+   "evaluated_on": [
+    "subtlety-raid: ml winner (pre-BiS, full raid)"
+   ],
+   "commit": "2e6e77d84"
   }
  },
  "search": {
@@ -938,7 +902,551 @@
    "spec": "Hybrid Assassination/Subtlety",
    "setting": "dummy",
    "entry": "subtlety-raid",
-   "date": "2026-11-12",
+   "date": "2026-11-19",
+   "constraint": "spec field (entry rotation)",
+   "protected": [
+    "Blood Splatter",
+    "Ghostly Strike",
+    "Hemorrhage"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "subtlety-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Assassination": [
+      [
+       "Improved Gouge",
+       1
+      ],
+      [
+       "Remorseless Attacks",
+       1
+      ],
+      [
+       "Malice",
+       5
+      ],
+      [
+       "Ruthlessness",
+       3
+      ],
+      [
+       "Improved Slice and Dice",
+       3
+      ],
+      [
+       "Vigor",
+       2
+      ],
+      [
+       "Blood Splatter",
+       1
+      ],
+      [
+       "Lethality",
+       2
+      ],
+      [
+       "Vile Poisons",
+       1
+      ],
+      [
+       "Cold Blood",
+       1
+      ],
+      [
+       "Relentless Strikes",
+       5
+      ],
+      [
+       "Seal Fate",
+       3
+      ]
+     ],
+     "Combat": [
+      [
+       "Efficient Strikes",
+       2
+      ]
+     ],
+     "Subtlety": [
+      [
+       "Setup",
+       1
+      ],
+      [
+       "Opportunity",
+       5
+      ],
+      [
+       "Dirty Deeds",
+       2
+      ],
+      [
+       "Camouflage",
+       3
+      ],
+      [
+       "Initiative",
+       3
+      ],
+      [
+       "Premeditation",
+       1
+      ],
+      [
+       "Serrated Blades",
+       3
+      ],
+      [
+       "Elusiveness",
+       1
+      ],
+      [
+       "Ghostly Strike",
+       1
+      ],
+      [
+       "Hemorrhage",
+       1
+      ]
+     ]
+    },
+    "split": "28/2/21",
+    "dps": 354.87,
+    "se": 0.0501,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "28/2/21",
+    "dps": 354.87,
+    "se": 0.0501,
+    "differs": [
+     [
+      "Camouflage",
+      1
+     ],
+     [
+      "Camouflage",
+      3
+     ],
+     [
+      "Dirty Tricks",
+      1
+     ],
+     [
+      "Elusiveness",
+      1
+     ],
+     [
+      "Improved Ambush",
+      1
+     ],
+     [
+      "Improved Gouge",
+      1
+     ],
+     [
+      "Improved Gouge",
+      2
+     ],
+     [
+      "Master of Deception",
+      1
+     ],
+     [
+      "Remorseless Attacks",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
+    {
+     "allocation": {
+      "Assassination": [
+       [
+        "Improved Gouge",
+        1
+       ],
+       [
+        "Remorseless Attacks",
+        1
+       ],
+       [
+        "Malice",
+        5
+       ],
+       [
+        "Ruthlessness",
+        3
+       ],
+       [
+        "Improved Slice and Dice",
+        3
+       ],
+       [
+        "Vigor",
+        2
+       ],
+       [
+        "Blood Splatter",
+        1
+       ],
+       [
+        "Lethality",
+        2
+       ],
+       [
+        "Vile Poisons",
+        1
+       ],
+       [
+        "Cold Blood",
+        1
+       ],
+       [
+        "Relentless Strikes",
+        5
+       ],
+       [
+        "Seal Fate",
+        3
+       ]
+      ],
+      "Combat": [
+       [
+        "Efficient Strikes",
+        2
+       ]
+      ],
+      "Subtlety": [
+       [
+        "Setup",
+        1
+       ],
+       [
+        "Opportunity",
+        5
+       ],
+       [
+        "Dirty Deeds",
+        2
+       ],
+       [
+        "Camouflage",
+        3
+       ],
+       [
+        "Initiative",
+        3
+       ],
+       [
+        "Premeditation",
+        1
+       ],
+       [
+        "Serrated Blades",
+        3
+       ],
+       [
+        "Elusiveness",
+        1
+       ],
+       [
+        "Ghostly Strike",
+        1
+       ],
+       [
+        "Hemorrhage",
+        1
+       ]
+      ]
+     },
+     "split": "28/2/21",
+     "dps": 354.87,
+     "se": 0.0501
+    },
+    {
+     "allocation": {
+      "Assassination": [
+       [
+        "Improved Gouge",
+        2
+       ],
+       [
+        "Malice",
+        5
+       ],
+       [
+        "Ruthlessness",
+        3
+       ],
+       [
+        "Improved Slice and Dice",
+        3
+       ],
+       [
+        "Vigor",
+        2
+       ],
+       [
+        "Blood Splatter",
+        1
+       ],
+       [
+        "Lethality",
+        2
+       ],
+       [
+        "Vile Poisons",
+        1
+       ],
+       [
+        "Cold Blood",
+        1
+       ],
+       [
+        "Relentless Strikes",
+        5
+       ],
+       [
+        "Seal Fate",
+        3
+       ]
+      ],
+      "Combat": [
+       [
+        "Efficient Strikes",
+        2
+       ]
+      ],
+      "Subtlety": [
+       [
+        "Setup",
+        1
+       ],
+       [
+        "Master of Deception",
+        1
+       ],
+       [
+        "Opportunity",
+        5
+       ],
+       [
+        "Dirty Deeds",
+        2
+       ],
+       [
+        "Camouflage",
+        1
+       ],
+       [
+        "Improved Ambush",
+        1
+       ],
+       [
+        "Dirty Tricks",
+        1
+       ],
+       [
+        "Initiative",
+        3
+       ],
+       [
+        "Premeditation",
+        1
+       ],
+       [
+        "Serrated Blades",
+        3
+       ],
+       [
+        "Ghostly Strike",
+        1
+       ],
+       [
+        "Hemorrhage",
+        1
+       ]
+      ]
+     },
+     "split": "28/2/21",
+     "dps": 354.87,
+     "se": 0.0501
+    }
+   ],
+   "runs": [
+    {
+     "entry": "subtlety-raid",
+     "run": 1,
+     "simulated": 1566,
+     "best_screen": 355.57,
+     "best_split": "28/2/21",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 366,
+       "best": 353.88
+      },
+      {
+       "round": 1,
+       "simulated": 566,
+       "best": 354.79,
+       "predicted_top": 352.56
+      },
+      {
+       "round": 2,
+       "simulated": 766,
+       "best": 355.56,
+       "predicted_top": 353.51
+      },
+      {
+       "round": 3,
+       "simulated": 966,
+       "best": 355.57,
+       "predicted_top": 353.84
+      },
+      {
+       "round": 4,
+       "simulated": 1166,
+       "best": 355.57,
+       "predicted_top": 355.49
+      },
+      {
+       "round": 5,
+       "simulated": 1366,
+       "best": 355.57,
+       "predicted_top": 355.54
+      },
+      {
+       "round": 6,
+       "simulated": 1566,
+       "best": 355.57,
+       "predicted_top": 355.56
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      354.89,
+      354.89,
+      354.89,
+      354.89,
+      354.89,
+      354.89
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      354.92,
+      354.92,
+      354.92,
+      354.92,
+      354.92
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      354.87,
+      354.87
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 229,
+     "best_gap": 0.0,
+     "best_move": "1 Vile Poisons -> Improved Poisons"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Dirty Deeds",
+     "importance": 0.5314
+    },
+    {
+     "feature": "Relentless Strikes",
+     "importance": 0.1763
+    },
+    {
+     "feature": "Seal Fate",
+     "importance": 0.0968
+    },
+    {
+     "feature": "Assassination points",
+     "importance": 0.0433
+    },
+    {
+     "feature": "Remorseless Attacks",
+     "importance": 0.0326
+    },
+    {
+     "feature": "Master of Deception",
+     "importance": 0.0246
+    },
+    {
+     "feature": "Efficient Strikes",
+     "importance": 0.0188
+    },
+    {
+     "feature": "Improved Gouge",
+     "importance": 0.0136
+    },
+    {
+     "feature": "Subtlety points",
+     "importance": 0.0129
+    },
+    {
+     "feature": "Improved Expose Armor",
+     "importance": 0.0076
+    },
+    {
+     "feature": "Combat points",
+     "importance": 0.0054
+    },
+    {
+     "feature": "Lightning Reflexes",
+     "importance": 0.0045
+    }
+   ],
+   "simulated_builds": 1809,
+   "signature_check": {
+    "spec": "Subtlety",
+    "ok": false,
+    "core_share": 0.5625,
+    "min_share": 0.6,
+    "uncast": [],
+    "missing_talents": [],
+    "why": "core share 56% under 60% (melee, Hemorrhage, Ghostly Strike, Ambush, Eviscerate, Death Mark)",
+    "filed_as": "Hybrid Assassination/Subtlety"
+   },
+   "simulated_fights": 2666000,
+   "minutes": 9.8,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-subtlety-bis.gear.json",
+   "commit": "2e6e77d84"
+  },
+  "bis-raid": {
+   "class": "rogue",
+   "spec": "Hybrid Assassination/Subtlety",
+   "setting": "raid",
+   "entry": "subtlety-raid",
+   "date": "2026-11-19",
    "constraint": "spec field (entry rotation)",
    "protected": [
     "Blood Splatter",
@@ -1014,525 +1522,23 @@
       ],
       [
        "Master of Deception",
-       1
+       2
       ],
       [
        "Opportunity",
-       5
+       2
       ],
       [
        "Dirty Deeds",
        2
       ],
       [
-       "Dirty Tricks",
-       2
-      ],
-      [
-       "Initiative",
-       3
-      ],
-      [
-       "Premeditation",
+       "Camouflage",
        1
       ],
       [
-       "Serrated Blades",
-       3
-      ],
-      [
-       "Ghostly Strike",
+       "Improved Ambush",
        1
-      ],
-      [
-       "Hemorrhage",
-       1
-      ]
-     ]
-    },
-    "split": "28/2/21",
-    "dps": 358.49,
-    "se": 0.0515,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "28/2/21",
-    "dps": 358.49,
-    "se": 0.0515,
-    "differs": [
-     [
-      "Camouflage",
-      2
-     ],
-     [
-      "Dirty Tricks",
-      2
-     ],
-     [
-      "Improved Ambush",
-      1
-     ],
-     [
-      "Master of Deception",
-      1
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Assassination": [
-       [
-        "Improved Gouge",
-        1
-       ],
-       [
-        "Remorseless Attacks",
-        1
-       ],
-       [
-        "Malice",
-        5
-       ],
-       [
-        "Ruthlessness",
-        3
-       ],
-       [
-        "Improved Slice and Dice",
-        3
-       ],
-       [
-        "Vigor",
-        2
-       ],
-       [
-        "Blood Splatter",
-        1
-       ],
-       [
-        "Lethality",
-        2
-       ],
-       [
-        "Cold Blood",
-        1
-       ],
-       [
-        "Improved Poisons",
-        1
-       ],
-       [
-        "Relentless Strikes",
-        5
-       ],
-       [
-        "Seal Fate",
-        3
-       ]
-      ],
-      "Combat": [
-       [
-        "Efficient Strikes",
-        2
-       ]
-      ],
-      "Subtlety": [
-       [
-        "Setup",
-        2
-       ],
-       [
-        "Master of Deception",
-        1
-       ],
-       [
-        "Opportunity",
-        5
-       ],
-       [
-        "Dirty Deeds",
-        2
-       ],
-       [
-        "Dirty Tricks",
-        2
-       ],
-       [
-        "Initiative",
-        3
-       ],
-       [
-        "Premeditation",
-        1
-       ],
-       [
-        "Serrated Blades",
-        3
-       ],
-       [
-        "Ghostly Strike",
-        1
-       ],
-       [
-        "Hemorrhage",
-        1
-       ]
-      ]
-     },
-     "split": "28/2/21",
-     "dps": 358.49,
-     "se": 0.0515
-    },
-    {
-     "allocation": {
-      "Assassination": [
-       [
-        "Improved Gouge",
-        1
-       ],
-       [
-        "Remorseless Attacks",
-        1
-       ],
-       [
-        "Malice",
-        5
-       ],
-       [
-        "Ruthlessness",
-        3
-       ],
-       [
-        "Improved Slice and Dice",
-        3
-       ],
-       [
-        "Vigor",
-        2
-       ],
-       [
-        "Blood Splatter",
-        1
-       ],
-       [
-        "Lethality",
-        2
-       ],
-       [
-        "Cold Blood",
-        1
-       ],
-       [
-        "Improved Poisons",
-        1
-       ],
-       [
-        "Relentless Strikes",
-        5
-       ],
-       [
-        "Seal Fate",
-        3
-       ]
-      ],
-      "Combat": [
-       [
-        "Efficient Strikes",
-        2
-       ]
-      ],
-      "Subtlety": [
-       [
-        "Setup",
-        2
-       ],
-       [
-        "Opportunity",
-        5
-       ],
-       [
-        "Dirty Deeds",
-        2
-       ],
-       [
-        "Camouflage",
-        2
-       ],
-       [
-        "Improved Ambush",
-        1
-       ],
-       [
-        "Initiative",
-        3
-       ],
-       [
-        "Premeditation",
-        1
-       ],
-       [
-        "Serrated Blades",
-        3
-       ],
-       [
-        "Ghostly Strike",
-        1
-       ],
-       [
-        "Hemorrhage",
-        1
-       ]
-      ]
-     },
-     "split": "28/2/21",
-     "dps": 358.49,
-     "se": 0.0515
-    }
-   ],
-   "runs": [
-    {
-     "entry": "subtlety-raid",
-     "run": 1,
-     "simulated": 1366,
-     "best_screen": 358.92,
-     "best_split": "28/2/21",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 366,
-       "best": 357.59
-      },
-      {
-       "round": 1,
-       "simulated": 566,
-       "best": 358.92,
-       "predicted_top": 356.11
-      },
-      {
-       "round": 2,
-       "simulated": 766,
-       "best": 358.92,
-       "predicted_top": 357.18
-      },
-      {
-       "round": 3,
-       "simulated": 966,
-       "best": 358.92,
-       "predicted_top": 357.34
-      },
-      {
-       "round": 4,
-       "simulated": 1166,
-       "best": 358.92,
-       "predicted_top": 358.21
-      },
-      {
-       "round": 5,
-       "simulated": 1366,
-       "best": 358.92,
-       "predicted_top": 358.91
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      358.63,
-      358.63,
-      358.63,
-      358.63,
-      358.63,
-      358.63
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      358.5,
-      358.5,
-      358.5,
-      358.5,
-      358.5
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      358.49,
-      358.49
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 200,
-     "best_gap": 0.0006,
-     "best_move": "1 Remorseless Attacks -> Improved Poisons"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Dirty Deeds",
-     "importance": 0.5149
-    },
-    {
-     "feature": "Relentless Strikes",
-     "importance": 0.2106
-    },
-    {
-     "feature": "Seal Fate",
-     "importance": 0.0945
-    },
-    {
-     "feature": "Assassination points",
-     "importance": 0.0373
-    },
-    {
-     "feature": "Master of Deception",
-     "importance": 0.027
-    },
-    {
-     "feature": "Improved Gouge",
-     "importance": 0.0229
-    },
-    {
-     "feature": "Efficient Strikes",
-     "importance": 0.019
-    },
-    {
-     "feature": "Remorseless Attacks",
-     "importance": 0.0156
-    },
-    {
-     "feature": "Subtlety points",
-     "importance": 0.0119
-    },
-    {
-     "feature": "Combat points",
-     "importance": 0.005
-    },
-    {
-     "feature": "Preparation",
-     "importance": 0.0042
-    },
-    {
-     "feature": "Improved Expose Armor",
-     "importance": 0.004
-    }
-   ],
-   "simulated_builds": 1580,
-   "signature_check": {
-    "spec": "Subtlety",
-    "ok": false,
-    "core_share": 0.5638,
-    "min_share": 0.6,
-    "uncast": [],
-    "missing_talents": [],
-    "why": "core share 56% under 60% (melee, Hemorrhage, Ghostly Strike, Ambush, Eviscerate, Death Mark)",
-    "filed_as": "Hybrid Assassination/Subtlety"
-   },
-   "simulated_fights": 2379000,
-   "minutes": 16.7,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-subtlety-bis.gear.json",
-   "commit": "ff9babba5"
-  },
-  "bis-raid": {
-   "class": "rogue",
-   "spec": "Hybrid Assassination/Subtlety",
-   "setting": "raid",
-   "entry": "subtlety-raid",
-   "date": "2026-11-12",
-   "constraint": "spec field (entry rotation)",
-   "protected": [
-    "Blood Splatter",
-    "Ghostly Strike",
-    "Hemorrhage"
-   ],
-   "entries_screened": {},
-   "entries_searched": [
-    "subtlety-raid"
-   ],
-   "winner": {
-    "allocation": {
-     "Assassination": [
-      [
-       "Malice",
-       5
-      ],
-      [
-       "Ruthlessness",
-       3
-      ],
-      [
-       "Improved Slice and Dice",
-       3
-      ],
-      [
-       "Vigor",
-       1
-      ],
-      [
-       "Blood Splatter",
-       1
-      ],
-      [
-       "Lethality",
-       2
-      ],
-      [
-       "Vile Poisons",
-       4
-      ],
-      [
-       "Improved Poisons",
-       1
-      ],
-      [
-       "Relentless Strikes",
-       5
-      ],
-      [
-       "Venom",
-       1
-      ],
-      [
-       "Seal Fate",
-       2
-      ]
-     ],
-     "Combat": [
-      [
-       "Efficient Strikes",
-       2
-      ]
-     ],
-     "Subtlety": [
-      [
-       "Master of Deception",
-       1
-      ],
-      [
-       "Opportunity",
-       5
-      ],
-      [
-       "Dirty Deeds",
-       2
-      ],
-      [
-       "Dirty Tricks",
-       2
       ],
       [
        "Initiative",
@@ -1561,42 +1567,46 @@
      ]
     },
     "split": "28/2/21",
-    "dps": 815.36,
-    "se": 0.1108,
+    "dps": 779.67,
+    "se": 0.1048,
     "iterations": 100000
    },
    "runner_up": {
     "split": "28/2/21",
-    "dps": 815.36,
-    "se": 0.1108,
+    "dps": 703.56,
+    "se": 0.0945,
     "differs": [
      [
-      "Camouflage",
+      "Master of Deception",
       1
      ],
      [
-      "Dirty Tricks",
+      "Master of Deception",
       2
      ],
      [
-      "Elusiveness",
-      1
-     ],
-     [
-      "Elusiveness",
+      "Opportunity",
       2
      ],
      [
-      "Setup",
-      2
+      "Opportunity",
+      3
      ]
     ]
    },
-   "gap_to_runner_up": 0.0,
+   "gap_to_runner_up": 0.1082,
    "finalists": [
     {
      "allocation": {
       "Assassination": [
+       [
+        "Improved Gouge",
+        1
+       ],
+       [
+        "Remorseless Attacks",
+        1
+       ],
        [
         "Malice",
         5
@@ -1611,7 +1621,7 @@
        ],
        [
         "Vigor",
-        1
+        2
        ],
        [
         "Blood Splatter",
@@ -1622,8 +1632,8 @@
         2
        ],
        [
-        "Vile Poisons",
-        4
+        "Cold Blood",
+        1
        ],
        [
         "Improved Poisons",
@@ -1634,12 +1644,8 @@
         5
        ],
        [
-        "Venom",
-        1
-       ],
-       [
         "Seal Fate",
-        2
+        3
        ]
       ],
       "Combat": [
@@ -1650,20 +1656,28 @@
       ],
       "Subtlety": [
        [
+        "Setup",
+        2
+       ],
+       [
         "Master of Deception",
-        1
+        2
        ],
        [
         "Opportunity",
-        5
+        2
        ],
        [
         "Dirty Deeds",
         2
        ],
        [
-        "Dirty Tricks",
-        2
+        "Camouflage",
+        1
+       ],
+       [
+        "Improved Ambush",
+        1
        ],
        [
         "Initiative",
@@ -1692,12 +1706,20 @@
       ]
      },
      "split": "28/2/21",
-     "dps": 815.36,
-     "se": 0.1108
+     "dps": 779.67,
+     "se": 0.1048
     },
     {
      "allocation": {
       "Assassination": [
+       [
+        "Improved Gouge",
+        1
+       ],
+       [
+        "Remorseless Attacks",
+        1
+       ],
        [
         "Malice",
         5
@@ -1712,7 +1734,7 @@
        ],
        [
         "Vigor",
-        1
+        2
        ],
        [
         "Blood Splatter",
@@ -1723,8 +1745,8 @@
         2
        ],
        [
-        "Vile Poisons",
-        4
+        "Cold Blood",
+        1
        ],
        [
         "Improved Poisons",
@@ -1735,12 +1757,8 @@
         5
        ],
        [
-        "Venom",
-        1
-       ],
-       [
         "Seal Fate",
-        2
+        3
        ]
       ],
       "Combat": [
@@ -1760,7 +1778,7 @@
        ],
        [
         "Opportunity",
-        5
+        3
        ],
        [
         "Dirty Deeds",
@@ -1768,6 +1786,10 @@
        ],
        [
         "Camouflage",
+        1
+       ],
+       [
+        "Improved Ambush",
         1
        ],
        [
@@ -1784,7 +1806,7 @@
        ],
        [
         "Elusiveness",
-        1
+        2
        ],
        [
         "Ghostly Strike",
@@ -1797,46 +1819,58 @@
       ]
      },
      "split": "28/2/21",
-     "dps": 815.36,
-     "se": 0.1108
+     "dps": 703.56,
+     "se": 0.0945
     }
    ],
    "runs": [
     {
      "entry": "subtlety-raid",
      "run": 1,
-     "simulated": 1172,
-     "best_screen": 817.44,
+     "simulated": 1578,
+     "best_screen": 783.98,
      "best_split": "28/2/21",
      "trace": [
       {
        "round": 0,
-       "simulated": 372,
-       "best": 816.74
+       "simulated": 378,
+       "best": 705.33
       },
       {
        "round": 1,
-       "simulated": 572,
-       "best": 816.74,
-       "predicted_top": 808.3
+       "simulated": 578,
+       "best": 781.8,
+       "predicted_top": 701.85
       },
       {
        "round": 2,
-       "simulated": 772,
-       "best": 817.44,
-       "predicted_top": 814.34
+       "simulated": 778,
+       "best": 783.85,
+       "predicted_top": 762.66
       },
       {
        "round": 3,
-       "simulated": 972,
-       "best": 817.44,
-       "predicted_top": 816.72
+       "simulated": 978,
+       "best": 783.98,
+       "predicted_top": 777.27
       },
       {
        "round": 4,
-       "simulated": 1172,
-       "best": 817.44,
-       "predicted_top": 817.22
+       "simulated": 1178,
+       "best": 783.98,
+       "predicted_top": 782.13
+      },
+      {
+       "round": 5,
+       "simulated": 1378,
+       "best": 783.98,
+       "predicted_top": 782.74
+      },
+      {
+       "round": 6,
+       "simulated": 1578,
+       "best": 783.98,
+       "predicted_top": 783.81
       }
      ],
      "best_stage1_gap": 0.0,
@@ -1849,118 +1883,134 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      815.46,
-      815.46,
-      815.46,
-      815.46,
-      815.46,
-      815.46
+      703.26,
+      703.26,
+      703.26,
+      703.26,
+      703.26,
+      703.26
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      815.63,
-      815.63,
-      815.63,
-      815.63,
-      815.63
+      703.89,
+      703.89,
+      703.89,
+      703.89,
+      703.89
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      815.36,
-      815.36
+      703.56,
+      703.56
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      779.67,
+      703.56
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 197,
-     "best_gap": 0.0011,
-     "best_move": "3 Vile Poisons -> Improved Poisons",
+     "neighbours": 251,
+     "best_gap": 0.1087,
+     "best_move": "1 Opportunity -> Dirty Tricks",
      "raced": [
-      "3 Vile Poisons -> Improved Poisons"
+      "1 Opportunity -> Dirty Tricks",
+      "1 Opportunity -> Improved Ambush",
+      "1 Opportunity -> Camouflage",
+      "1 Opportunity -> Master of Deception"
      ],
-     "confirmed_gap": -0.0001
+     "confirmed_gap": 0.1082
+    },
+    {
+     "neighbours": 244,
+     "best_gap": 0.0,
+     "best_move": "1 Improved Ambush + 2 Elusiveness -> 2 Dirty Tricks + 1 Quick Getaway"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
-     "feature": "Dirty Deeds",
-     "importance": 0.5256
-    },
-    {
      "feature": "Relentless Strikes",
-     "importance": 0.1843
+     "importance": 0.2655
     },
     {
-     "feature": "Assassination points",
-     "importance": 0.0577
-    },
-    {
-     "feature": "Improved Gouge",
-     "importance": 0.0552
-    },
-    {
-     "feature": "Remorseless Attacks",
-     "importance": 0.0542
-    },
-    {
-     "feature": "Venom",
-     "importance": 0.0388
+     "feature": "Dirty Deeds",
+     "importance": 0.256
     },
     {
      "feature": "Seal Fate",
-     "importance": 0.0168
+     "importance": 0.1726
     },
     {
-     "feature": "Improved Expose Armor",
-     "importance": 0.0098
+     "feature": "Improved Gouge",
+     "importance": 0.0481
     },
     {
-     "feature": "Master of Deception",
-     "importance": 0.0072
+     "feature": "Opportunity",
+     "importance": 0.0474
+    },
+    {
+     "feature": "Assassination points",
+     "importance": 0.0419
     },
     {
      "feature": "Efficient Strikes",
-     "importance": 0.0069
-    },
-    {
-     "feature": "Setup",
-     "importance": 0.0054
+     "importance": 0.0331
     },
     {
      "feature": "Subtlety points",
-     "importance": 0.0054
+     "importance": 0.0206
+    },
+    {
+     "feature": "Combat points",
+     "importance": 0.0115
+    },
+    {
+     "feature": "Improved Poisons",
+     "importance": 0.0112
+    },
+    {
+     "feature": "Lethality",
+     "importance": 0.0098
+    },
+    {
+     "feature": "Vile Poisons",
+     "importance": 0.0094
     }
    ],
-   "simulated_builds": 1385,
+   "simulated_builds": 2094,
    "signature_check": {
     "spec": "Subtlety",
     "ok": true,
-    "core_share": 0.6365,
+    "core_share": 0.6016,
     "min_share": 0.6,
     "uncast": [],
     "missing_talents": [],
     "why": "",
     "filed_as": "Hybrid Assassination/Subtlety"
    },
-   "simulated_fights": 2236000,
-   "minutes": 19.7,
+   "simulated_fights": 3729000,
+   "minutes": 13.9,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-subtlety-bis.gear.json",
-   "commit": "ff9babba5"
+   "commit": "2e6e77d84"
   },
   "prebis-dummy": {
    "class": "rogue",
    "spec": "Hybrid Assassination/Subtlety",
    "setting": "dummy",
    "entry": "subtlety-raid",
-   "date": "2026-11-12",
+   "date": "2026-11-19",
    "constraint": "spec field (entry rotation)",
    "protected": [
     "Blood Splatter",
@@ -2004,10 +2054,14 @@
       ],
       [
        "Vile Poisons",
-       2
+       1
       ],
       [
        "Cold Blood",
+       1
+      ],
+      [
+       "Improved Poisons",
        1
       ],
       [
@@ -2016,7 +2070,7 @@
       ],
       [
        "Seal Fate",
-       3
+       2
       ]
      ],
      "Combat": [
@@ -2031,10 +2085,6 @@
        2
       ],
       [
-       "Master of Deception",
-       1
-      ],
-      [
        "Opportunity",
        5
       ],
@@ -2044,10 +2094,10 @@
       ],
       [
        "Camouflage",
-       1
+       2
       ],
       [
-       "Dirty Tricks",
+       "Improved Ambush",
        1
       ],
       [
@@ -2055,15 +2105,19 @@
        3
       ],
       [
+       "Premeditation",
+       1
+      ],
+      [
        "Serrated Blades",
        3
       ],
       [
-       "Elusiveness",
+       "Ghostly Strike",
        1
       ],
       [
-       "Ghostly Strike",
+       "Preparation",
        1
       ],
       [
@@ -2072,34 +2126,26 @@
       ]
      ]
     },
-    "split": "28/2/21",
-    "dps": 352.71,
-    "se": 0.0484,
+    "split": "27/2/22",
+    "dps": 353.88,
+    "se": 0.0453,
     "iterations": 100000
    },
    "runner_up": {
-    "split": "28/2/21",
-    "dps": 352.71,
-    "se": 0.0481,
+    "split": "27/2/22",
+    "dps": 353.88,
+    "se": 0.0453,
     "differs": [
      [
-      "Camouflage",
+      "Improved Ambush",
       1
      ],
      [
-      "Master of Deception",
-      1
+      "Improved Ambush",
+      3
      ],
      [
-      "Master of Deception",
-      2
-     ],
-     [
-      "Remorseless Attacks",
-      2
-     ],
-     [
-      "Vile Poisons",
+      "Setup",
       2
      ]
     ]
@@ -2139,10 +2185,14 @@
        ],
        [
         "Vile Poisons",
-        2
+        1
        ],
        [
         "Cold Blood",
+        1
+       ],
+       [
+        "Improved Poisons",
         1
        ],
        [
@@ -2151,7 +2201,7 @@
        ],
        [
         "Seal Fate",
-        3
+        2
        ]
       ],
       "Combat": [
@@ -2166,9 +2216,110 @@
         2
        ],
        [
-        "Master of Deception",
+        "Opportunity",
+        5
+       ],
+       [
+        "Dirty Deeds",
+        2
+       ],
+       [
+        "Camouflage",
+        2
+       ],
+       [
+        "Improved Ambush",
         1
        ],
+       [
+        "Initiative",
+        3
+       ],
+       [
+        "Premeditation",
+        1
+       ],
+       [
+        "Serrated Blades",
+        3
+       ],
+       [
+        "Ghostly Strike",
+        1
+       ],
+       [
+        "Preparation",
+        1
+       ],
+       [
+        "Hemorrhage",
+        1
+       ]
+      ]
+     },
+     "split": "27/2/22",
+     "dps": 353.88,
+     "se": 0.0453
+    },
+    {
+     "allocation": {
+      "Assassination": [
+       [
+        "Improved Gouge",
+        1
+       ],
+       [
+        "Malice",
+        5
+       ],
+       [
+        "Ruthlessness",
+        3
+       ],
+       [
+        "Improved Slice and Dice",
+        3
+       ],
+       [
+        "Vigor",
+        2
+       ],
+       [
+        "Blood Splatter",
+        1
+       ],
+       [
+        "Lethality",
+        2
+       ],
+       [
+        "Vile Poisons",
+        1
+       ],
+       [
+        "Cold Blood",
+        1
+       ],
+       [
+        "Improved Poisons",
+        1
+       ],
+       [
+        "Relentless Strikes",
+        5
+       ],
+       [
+        "Seal Fate",
+        2
+       ]
+      ],
+      "Combat": [
+       [
+        "Efficient Strikes",
+        2
+       ]
+      ],
+      "Subtlety": [
        [
         "Opportunity",
         5
@@ -2179,26 +2330,30 @@
        ],
        [
         "Camouflage",
-        1
+        2
        ],
        [
-        "Dirty Tricks",
-        1
+        "Improved Ambush",
+        3
        ],
        [
         "Initiative",
         3
        ],
        [
+        "Premeditation",
+        1
+       ],
+       [
         "Serrated Blades",
         3
        ],
        [
-        "Elusiveness",
+        "Ghostly Strike",
         1
        ],
        [
-        "Ghostly Strike",
+        "Preparation",
         1
        ],
        [
@@ -2207,10 +2362,314 @@
        ]
       ]
      },
-     "split": "28/2/21",
-     "dps": 352.71,
-     "se": 0.0484
+     "split": "27/2/22",
+     "dps": 353.88,
+     "se": 0.0453
+    }
+   ],
+   "runs": [
+    {
+     "entry": "subtlety-raid",
+     "run": 1,
+     "simulated": 1364,
+     "best_screen": 355.13,
+     "best_split": "26/3/22",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 364,
+       "best": 353.85
+      },
+      {
+       "round": 1,
+       "simulated": 564,
+       "best": 354.44,
+       "predicted_top": 351.02
+      },
+      {
+       "round": 2,
+       "simulated": 764,
+       "best": 354.44,
+       "predicted_top": 353.6
+      },
+      {
+       "round": 3,
+       "simulated": 964,
+       "best": 354.44,
+       "predicted_top": 354.33
+      },
+      {
+       "round": 4,
+       "simulated": 1164,
+       "best": 355.13,
+       "predicted_top": 354.43
+      },
+      {
+       "round": 5,
+       "simulated": 1364,
+       "best": 355.13,
+       "predicted_top": 354.43
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      353.94,
+      353.94,
+      353.94,
+      353.28,
+      353.28,
+      353.09
+     ]
     },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      353.86,
+      353.86,
+      353.86,
+      353.53,
+      353.53
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      353.88,
+      353.88
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 272,
+     "best_gap": 0.0001,
+     "best_move": "1 Improved Gouge -> Vile Poisons"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Dirty Deeds",
+     "importance": 0.5757
+    },
+    {
+     "feature": "Relentless Strikes",
+     "importance": 0.1423
+    },
+    {
+     "feature": "Seal Fate",
+     "importance": 0.0735
+    },
+    {
+     "feature": "Assassination points",
+     "importance": 0.0515
+    },
+    {
+     "feature": "Remorseless Attacks",
+     "importance": 0.0383
+    },
+    {
+     "feature": "Improved Gouge",
+     "importance": 0.0345
+    },
+    {
+     "feature": "Master of Deception",
+     "importance": 0.0183
+    },
+    {
+     "feature": "Efficient Strikes",
+     "importance": 0.0114
+    },
+    {
+     "feature": "Preparation",
+     "importance": 0.0096
+    },
+    {
+     "feature": "Improved Expose Armor",
+     "importance": 0.0081
+    },
+    {
+     "feature": "Subtlety points",
+     "importance": 0.0067
+    },
+    {
+     "feature": "Combat points",
+     "importance": 0.0043
+    }
+   ],
+   "simulated_builds": 1650,
+   "signature_check": {
+    "spec": "Subtlety",
+    "ok": false,
+    "core_share": 0.5625,
+    "min_share": 0.6,
+    "uncast": [],
+    "missing_talents": [],
+    "why": "core share 56% under 60% (melee, Hemorrhage, Ghostly Strike, Ambush, Eviscerate, Death Mark)",
+    "filed_as": "Hybrid Assassination/Subtlety"
+   },
+   "simulated_fights": 2593000,
+   "minutes": 9.3,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-subtlety-prebis.gear.json",
+   "commit": "2e6e77d84"
+  },
+  "prebis-raid": {
+   "class": "rogue",
+   "spec": "Hybrid Assassination/Subtlety",
+   "setting": "raid",
+   "entry": "subtlety-raid",
+   "date": "2026-11-19",
+   "constraint": "spec field (entry rotation)",
+   "protected": [
+    "Blood Splatter",
+    "Ghostly Strike",
+    "Hemorrhage"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "subtlety-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Assassination": [
+      [
+       "Improved Gouge",
+       1
+      ],
+      [
+       "Remorseless Attacks",
+       1
+      ],
+      [
+       "Malice",
+       5
+      ],
+      [
+       "Ruthlessness",
+       3
+      ],
+      [
+       "Improved Slice and Dice",
+       3
+      ],
+      [
+       "Vigor",
+       2
+      ],
+      [
+       "Blood Splatter",
+       1
+      ],
+      [
+       "Lethality",
+       2
+      ],
+      [
+       "Cold Blood",
+       1
+      ],
+      [
+       "Improved Poisons",
+       1
+      ],
+      [
+       "Relentless Strikes",
+       5
+      ],
+      [
+       "Seal Fate",
+       3
+      ]
+     ],
+     "Combat": [
+      [
+       "Efficient Strikes",
+       2
+      ]
+     ],
+     "Subtlety": [
+      [
+       "Setup",
+       2
+      ],
+      [
+       "Master of Deception",
+       2
+      ],
+      [
+       "Opportunity",
+       3
+      ],
+      [
+       "Dirty Deeds",
+       2
+      ],
+      [
+       "Camouflage",
+       1
+      ],
+      [
+       "Improved Ambush",
+       1
+      ],
+      [
+       "Initiative",
+       3
+      ],
+      [
+       "Serrated Blades",
+       3
+      ],
+      [
+       "Elusiveness",
+       2
+      ],
+      [
+       "Ghostly Strike",
+       1
+      ],
+      [
+       "Hemorrhage",
+       1
+      ]
+     ]
+    },
+    "split": "28/2/21",
+    "dps": 769.79,
+    "se": 0.1042,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "28/2/21",
+    "dps": 769.79,
+    "se": 0.1042,
+    "differs": [
+     [
+      "Improved Ambush",
+      1
+     ],
+     [
+      "Setup",
+      2
+     ],
+     [
+      "Setup",
+      3
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "finalists": [
     {
      "allocation": {
       "Assassination": [
@@ -2220,7 +2679,7 @@
        ],
        [
         "Remorseless Attacks",
-        2
+        1
        ],
        [
         "Malice",
@@ -2251,6 +2710,10 @@
         1
        ],
        [
+        "Improved Poisons",
+        1
+       ],
+       [
         "Relentless Strikes",
         5
        ],
@@ -2276,14 +2739,18 @@
        ],
        [
         "Opportunity",
-        5
+        3
        ],
        [
         "Dirty Deeds",
         2
        ],
        [
-        "Dirty Tricks",
+        "Camouflage",
+        1
+       ],
+       [
+        "Improved Ambush",
         1
        ],
        [
@@ -2296,7 +2763,7 @@
        ],
        [
         "Elusiveness",
-        1
+        2
        ],
        [
         "Ghostly Strike",
@@ -2309,46 +2776,151 @@
       ]
      },
      "split": "28/2/21",
-     "dps": 352.71,
-     "se": 0.0481
+     "dps": 769.79,
+     "se": 0.1042
+    },
+    {
+     "allocation": {
+      "Assassination": [
+       [
+        "Improved Gouge",
+        1
+       ],
+       [
+        "Remorseless Attacks",
+        1
+       ],
+       [
+        "Malice",
+        5
+       ],
+       [
+        "Ruthlessness",
+        3
+       ],
+       [
+        "Improved Slice and Dice",
+        3
+       ],
+       [
+        "Vigor",
+        2
+       ],
+       [
+        "Blood Splatter",
+        1
+       ],
+       [
+        "Lethality",
+        2
+       ],
+       [
+        "Cold Blood",
+        1
+       ],
+       [
+        "Improved Poisons",
+        1
+       ],
+       [
+        "Relentless Strikes",
+        5
+       ],
+       [
+        "Seal Fate",
+        3
+       ]
+      ],
+      "Combat": [
+       [
+        "Efficient Strikes",
+        2
+       ]
+      ],
+      "Subtlety": [
+       [
+        "Setup",
+        3
+       ],
+       [
+        "Master of Deception",
+        2
+       ],
+       [
+        "Opportunity",
+        3
+       ],
+       [
+        "Dirty Deeds",
+        2
+       ],
+       [
+        "Camouflage",
+        1
+       ],
+       [
+        "Initiative",
+        3
+       ],
+       [
+        "Serrated Blades",
+        3
+       ],
+       [
+        "Elusiveness",
+        2
+       ],
+       [
+        "Ghostly Strike",
+        1
+       ],
+       [
+        "Hemorrhage",
+        1
+       ]
+      ]
+     },
+     "split": "28/2/21",
+     "dps": 769.79,
+     "se": 0.1042
     }
    ],
    "runs": [
     {
      "entry": "subtlety-raid",
      "run": 1,
-     "simulated": 1167,
-     "best_screen": 353.13,
+     "simulated": 1178,
+     "best_screen": 771.52,
      "best_split": "28/2/21",
      "trace": [
       {
        "round": 0,
-       "simulated": 367,
-       "best": 352.86
+       "simulated": 378,
+       "best": 771.52
       },
       {
        "round": 1,
-       "simulated": 567,
-       "best": 353.12,
-       "predicted_top": 351.08
+       "simulated": 578,
+       "best": 771.52,
+       "predicted_top": 761.76
       },
       {
        "round": 2,
-       "simulated": 767,
-       "best": 353.12,
-       "predicted_top": 352.56
+       "simulated": 778,
+       "best": 771.52,
+       "predicted_top": 768.27
       },
       {
        "round": 3,
-       "simulated": 967,
-       "best": 353.13,
-       "predicted_top": 353.02
+       "simulated": 978,
+       "best": 771.52,
+       "predicted_top": 771.29
       },
       {
        "round": 4,
-       "simulated": 1167,
-       "best": 353.13,
-       "predicted_top": 353.11
+       "simulated": 1178,
+       "best": 771.52,
+       "predicted_top": 771.5
       }
      ],
      "best_stage1_gap": 0.0,
@@ -2361,131 +2933,123 @@
      "iterations": 10000,
      "seed": 2,
      "dps": [
-      352.64,
-      352.63,
-      352.63,
-      352.63,
-      352.63,
-      352.63
+      769.62,
+      769.62,
+      769.62,
+      769.62,
+      769.62,
+      769.62
      ]
     },
     {
      "iterations": 30000,
      "seed": 3,
      "dps": [
-      352.66,
-      352.66,
-      352.66,
-      352.66,
-      352.66
+      770.1,
+      770.1,
+      770.1,
+      770.1,
+      770.1
      ]
     },
     {
      "iterations": 100000,
      "seed": 4,
      "dps": [
-      352.71,
-      352.71
+      769.79,
+      769.79
      ]
     }
    ],
    "certificate": [
     {
-     "neighbours": 275,
-     "best_gap": 0.0014,
-     "best_move": "2 Vile Poisons -> Improved Poisons",
-     "raced": [
-      "2 Vile Poisons -> Improved Poisons"
-     ],
-     "confirmed_gap": 0.0005
+     "neighbours": 272,
+     "best_gap": 0.0,
+     "best_move": "2 Master of Deception + 2 Elusiveness -> 2 Dirty Tricks + 2 Quick Getaway"
     }
    ],
    "other_entries": [],
    "important_features": [
     {
      "feature": "Dirty Deeds",
-     "importance": 0.6094
+     "importance": 0.286
     },
     {
      "feature": "Relentless Strikes",
-     "importance": 0.1489
+     "importance": 0.2597
     },
     {
      "feature": "Seal Fate",
-     "importance": 0.1005
+     "importance": 0.2024
     },
     {
      "feature": "Assassination points",
-     "importance": 0.0431
+     "importance": 0.057
     },
     {
      "feature": "Improved Gouge",
-     "importance": 0.0195
+     "importance": 0.0468
     },
     {
-     "feature": "Master of Deception",
-     "importance": 0.019
-    },
-    {
-     "feature": "Efficient Strikes",
-     "importance": 0.0091
+     "feature": "Opportunity",
+     "importance": 0.0312
     },
     {
      "feature": "Subtlety points",
-     "importance": 0.0083
+     "importance": 0.0236
     },
     {
-     "feature": "Preparation",
-     "importance": 0.0058
+     "feature": "Efficient Strikes",
+     "importance": 0.0219
     },
     {
-     "feature": "Combat points",
-     "importance": 0.0054
+     "feature": "Improved Poisons",
+     "importance": 0.0085
     },
     {
      "feature": "Improved Expose Armor",
-     "importance": 0.0049
+     "importance": 0.0071
     },
     {
-     "feature": "Camouflage",
-     "importance": 0.0021
+     "feature": "Combat points",
+     "importance": 0.0065
+    },
+    {
+     "feature": "Ruthlessness",
+     "importance": 0.0052
     }
    ],
-   "simulated_builds": 1458,
+   "simulated_builds": 1464,
    "signature_check": {
     "spec": "Subtlety",
-    "ok": false,
-    "core_share": 0.5677,
+    "ok": true,
+    "core_share": 0.6009,
     "min_share": 0.6,
     "uncast": [],
     "missing_talents": [],
-    "why": "core share 57% under 60% (melee, Hemorrhage, Ghostly Strike, Ambush, Eviscerate, Death Mark)",
+    "why": "",
     "filed_as": "Hybrid Assassination/Subtlety"
    },
-   "simulated_fights": 2465000,
-   "minutes": 17.9,
+   "simulated_fights": 2407000,
+   "minutes": 9.6,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-subtlety-prebis.gear.json",
-   "commit": "ff9babba5"
+   "commit": "2e6e77d84"
   },
-  "prebis-raid": {
+  "dungeon-raid": {
    "class": "rogue",
    "spec": "Hybrid Assassination/Subtlety",
    "setting": "raid",
    "entry": "subtlety-raid",
-   "date": "2026-11-12",
-   "constraint": "spec field (entry rotation)",
-   "protected": [
-    "Blood Splatter",
-    "Ghostly Strike",
-    "Hemorrhage"
-   ],
-   "entries_screened": {},
-   "entries_searched": [
-    "subtlety-raid"
-   ],
+   "date": "2026-11-19",
+   "commit": "2e6e77d84",
+   "method": "the record's tier winners raced in the tier's set in a full raid (no search of its own)",
    "winner": {
     "allocation": {
      "Assassination": [
+      [
+       "Improved Gouge",
+       1
+      ],
       [
        "Malice",
        5
@@ -2500,7 +3064,7 @@
       ],
       [
        "Vigor",
-       1
+       2
       ],
       [
        "Blood Splatter",
@@ -2511,20 +3075,24 @@
        2
       ],
       [
+       "Vile Poisons",
+       1
+      ],
+      [
+       "Cold Blood",
+       1
+      ],
+      [
        "Improved Poisons",
-       5
+       1
       ],
       [
        "Relentless Strikes",
        5
       ],
       [
-       "Venom",
-       1
-      ],
-      [
        "Seal Fate",
-       1
+       2
       ]
      ],
      "Combat": [
@@ -2539,10 +3107,6 @@
        2
       ],
       [
-       "Master of Deception",
-       1
-      ],
-      [
        "Opportunity",
        5
       ],
@@ -2552,7 +3116,7 @@
       ],
       [
        "Camouflage",
-       1
+       2
       ],
       [
        "Improved Ambush",
@@ -2585,396 +3149,31 @@
      ]
     },
     "split": "27/2/22",
-    "dps": 805.22,
-    "se": 0.1044,
-    "iterations": 100000
+    "dps": 702.4,
+    "from": "prebis-dummy"
    },
-   "runner_up": {
-    "split": "27/2/22",
-    "dps": 805.22,
-    "se": 0.1044,
-    "differs": [
-     [
-      "Camouflage",
-      1
-     ],
-     [
-      "Master of Deception",
-      1
-     ],
-     [
-      "Master of Deception",
-      2
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Assassination": [
-       [
-        "Malice",
-        5
-       ],
-       [
-        "Ruthlessness",
-        3
-       ],
-       [
-        "Improved Slice and Dice",
-        3
-       ],
-       [
-        "Vigor",
-        1
-       ],
-       [
-        "Blood Splatter",
-        1
-       ],
-       [
-        "Lethality",
-        2
-       ],
-       [
-        "Improved Poisons",
-        5
-       ],
-       [
-        "Relentless Strikes",
-        5
-       ],
-       [
-        "Venom",
-        1
-       ],
-       [
-        "Seal Fate",
-        1
-       ]
-      ],
-      "Combat": [
-       [
-        "Efficient Strikes",
-        2
-       ]
-      ],
-      "Subtlety": [
-       [
-        "Setup",
-        2
-       ],
-       [
-        "Master of Deception",
-        1
-       ],
-       [
-        "Opportunity",
-        5
-       ],
-       [
-        "Dirty Deeds",
-        2
-       ],
-       [
-        "Camouflage",
-        1
-       ],
-       [
-        "Improved Ambush",
-        1
-       ],
-       [
-        "Initiative",
-        3
-       ],
-       [
-        "Premeditation",
-        1
-       ],
-       [
-        "Serrated Blades",
-        3
-       ],
-       [
-        "Ghostly Strike",
-        1
-       ],
-       [
-        "Preparation",
-        1
-       ],
-       [
-        "Hemorrhage",
-        1
-       ]
-      ]
-     },
-     "split": "27/2/22",
-     "dps": 805.22,
-     "se": 0.1044
-    },
-    {
-     "allocation": {
-      "Assassination": [
-       [
-        "Malice",
-        5
-       ],
-       [
-        "Ruthlessness",
-        3
-       ],
-       [
-        "Improved Slice and Dice",
-        3
-       ],
-       [
-        "Vigor",
-        1
-       ],
-       [
-        "Blood Splatter",
-        1
-       ],
-       [
-        "Lethality",
-        2
-       ],
-       [
-        "Improved Poisons",
-        5
-       ],
-       [
-        "Relentless Strikes",
-        5
-       ],
-       [
-        "Venom",
-        1
-       ],
-       [
-        "Seal Fate",
-        1
-       ]
-      ],
-      "Combat": [
-       [
-        "Efficient Strikes",
-        2
-       ]
-      ],
-      "Subtlety": [
-       [
-        "Setup",
-        2
-       ],
-       [
-        "Master of Deception",
-        2
-       ],
-       [
-        "Opportunity",
-        5
-       ],
-       [
-        "Dirty Deeds",
-        2
-       ],
-       [
-        "Improved Ambush",
-        1
-       ],
-       [
-        "Initiative",
-        3
-       ],
-       [
-        "Premeditation",
-        1
-       ],
-       [
-        "Serrated Blades",
-        3
-       ],
-       [
-        "Ghostly Strike",
-        1
-       ],
-       [
-        "Preparation",
-        1
-       ],
-       [
-        "Hemorrhage",
-        1
-       ]
-      ]
-     },
-     "split": "27/2/22",
-     "dps": 805.22,
-     "se": 0.1044
-    }
-   ],
-   "runs": [
-    {
-     "entry": "subtlety-raid",
-     "run": 1,
-     "simulated": 1381,
-     "best_screen": 806.8,
-     "best_split": "27/2/22",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 381,
-       "best": 805.4
-      },
-      {
-       "round": 1,
-       "simulated": 581,
-       "best": 806.8,
-       "predicted_top": 798.91
-      },
-      {
-       "round": 2,
-       "simulated": 781,
-       "best": 806.8,
-       "predicted_top": 803.84
-      },
-      {
-       "round": 3,
-       "simulated": 981,
-       "best": 806.8,
-       "predicted_top": 806.33
-      },
-      {
-       "round": 4,
-       "simulated": 1181,
-       "best": 806.8,
-       "predicted_top": 806.78
-      },
-      {
-       "round": 5,
-       "simulated": 1381,
-       "best": 806.8,
-       "predicted_top": 806.79
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
    "race": [
     {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      805.06,
-      805.06,
-      805.06,
-      805.06,
-      805.06,
-      805.06
-     ]
-    },
-    {
      "iterations": 30000,
-     "seed": 3,
+     "seed": 1,
      "dps": [
-      805.57,
-      805.57,
-      805.57,
-      805.57,
-      805.57
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      805.22,
-      805.22
+      702.4,
+      692.1,
+      691.8,
+      687.2
      ]
     }
    ],
-   "certificate": [
-    {
-     "neighbours": 280,
-     "best_gap": 0.001,
-     "best_move": "1 Improved Poisons -> Vile Poisons"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Dirty Deeds",
-     "importance": 0.5002
-    },
-    {
-     "feature": "Relentless Strikes",
-     "importance": 0.2083
-    },
-    {
-     "feature": "Venom",
-     "importance": 0.0667
-    },
-    {
-     "feature": "Remorseless Attacks",
-     "importance": 0.0633
-    },
-    {
-     "feature": "Improved Gouge",
-     "importance": 0.0392
-    },
-    {
-     "feature": "Assassination points",
-     "importance": 0.0332
-    },
-    {
-     "feature": "Improved Expose Armor",
-     "importance": 0.0129
-    },
-    {
-     "feature": "Seal Fate",
-     "importance": 0.0108
-    },
-    {
-     "feature": "Efficient Strikes",
-     "importance": 0.0104
-    },
-    {
-     "feature": "Combat points",
-     "importance": 0.0071
-    },
-    {
-     "feature": "Subtlety points",
-     "importance": 0.0052
-    },
-    {
-     "feature": "Master of Deception",
-     "importance": 0.0051
-    }
-   ],
-   "simulated_builds": 1675,
-   "signature_check": {
-    "spec": "Subtlety",
-    "ok": true,
-    "core_share": 0.6361,
-    "min_share": 0.6,
-    "uncast": [],
-    "missing_talents": [],
-    "why": "",
-    "filed_as": "Hybrid Assassination/Subtlety"
+   "candidates": {
+    "prebis-raid": 692.1,
+    "bis-raid": 687.2,
+    "prebis-dummy": 702.4,
+    "bis-dummy": 691.8
    },
-   "simulated_fights": 2634000,
-   "minutes": 21.8,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-subtlety-prebis.gear.json",
-   "commit": "ff9babba5"
+   "minutes": 1.7
   }
  },
- "commit": "ff9babba5",
+ "commit": "2e6e77d84",
  "spells_done": {
   "date": "2026-11-12",
   "lines_kept": 0
@@ -2984,31 +3183,31 @@
   "dps": {
    "winner": {
     "entry": "subtlety-raid",
-    "dps": 423.94,
-    "se": 0.061
+    "dps": 420.88,
+    "se": 0.059
    },
    "hybrid-assassination-subtlety-open-raid": {
     "entry": "subtlety-raid",
-    "dps": 460.67,
-    "se": 0.05
+    "dps": 458.85,
+    "se": 0.048
    }
   },
   "best_hand": null,
   "gain_vs_hand": null,
-  "commit": "ff9babba5"
+  "commit": "2e6e77d84"
  },
  "compare_raid": {
   "setting": "raid",
   "dps": {
    "winner": {
     "entry": "subtlety-raid",
-    "dps": 815.64,
-    "se": 0.111
+    "dps": 779.78,
+    "se": 0.105
    },
    "hybrid-assassination-subtlety-open-raid": {
     "entry": "subtlety-raid",
-    "dps": 813.96,
-    "se": 0.098
+    "dps": 828.63,
+    "se": 0.096
    }
   },
   "best_hand": null,
@@ -3017,18 +3216,26 @@
  "signature_check": {
   "spec": "Subtlety",
   "ok": true,
-  "core_share": 0.6363,
+  "core_share": 0.6016,
   "min_share": 0.6,
   "uncast": [],
   "missing_talents": [],
   "why": "",
   "filed_as": "Hybrid Assassination/Subtlety",
   "entry": "subtlety-raid",
-  "dps": 815.2,
-  "date": "2026-11-13",
-  "commit": "ff9babba5",
+  "dps": 779.1,
+  "date": "2026-11-19",
+  "commit": "2e6e77d84",
   "allocation": {
    "Assassination": [
+    [
+     "Improved Gouge",
+     1
+    ],
+    [
+     "Remorseless Attacks",
+     1
+    ],
     [
      "Malice",
      5
@@ -3043,7 +3250,7 @@
     ],
     [
      "Vigor",
-     1
+     2
     ],
     [
      "Blood Splatter",
@@ -3054,8 +3261,8 @@
      2
     ],
     [
-     "Vile Poisons",
-     4
+     "Cold Blood",
+     1
     ],
     [
      "Improved Poisons",
@@ -3066,12 +3273,8 @@
      5
     ],
     [
-     "Venom",
-     1
-    ],
-    [
      "Seal Fate",
-     2
+     3
     ]
    ],
    "Combat": [
@@ -3082,20 +3285,28 @@
    ],
    "Subtlety": [
     [
+     "Setup",
+     2
+    ],
+    [
      "Master of Deception",
-     1
+     2
     ],
     [
      "Opportunity",
-     5
+     2
     ],
     [
      "Dirty Deeds",
      2
     ],
     [
-     "Dirty Tricks",
-     2
+     "Camouflage",
+     1
+    ],
+    [
+     "Improved Ambush",
+     1
     ],
     [
      "Initiative",
@@ -3127,9 +3338,9 @@
  "builds": {
   "written": [],
   "superseded": [],
-  "date": "2026-11-13",
+  "date": "2026-11-19",
   "setting": "raid",
-  "why": "confirms hybrid-assassination-subtlety-open-raid (+0.21% in a full raid)"
+  "why": "confirms hybrid-assassination-subtlety-open-raid (-5.90% in a full raid)"
  },
  "tidied": {
   "bis-dummy": null,

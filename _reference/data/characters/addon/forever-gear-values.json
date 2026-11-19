@@ -1,6 +1,6 @@
 {
  "version": 1,
- "made": "2026-11-18 08:40",
+ "made": "2026-11-19 17:37",
  "status": "complete: two gear points per leveling level (the lab's standard gear and each level's best Forever set), raid, heal and tank values",
  "ratings_per_percent": {
   "hit_rating": 10,
@@ -4312,32 +4312,32 @@
      "dual_wield": false,
      "source": "raid simulator, druid-balance.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "arcane_damage": 0.79848,
-      "crit_rating": 0.67031,
-      "haste_rating": 1.29072,
-      "hit_rating": 1.06892,
-      "intellect": 0.20469,
-      "nature_damage": 0.20168,
+      "arcane_damage": 0.79674,
+      "crit_rating": 0.7162,
+      "haste_rating": 1.25903,
+      "hit_rating": 1.04283,
+      "intellect": 0.21093,
+      "nature_damage": 0.20326,
       "spell_power": 1.0,
-      "spell_penetration": 2.077,
-      "spirit": 0.0,
-      "hit_rating_below_cap": 1.09252,
+      "spell_penetration": 1.99696,
+      "spirit": 0.00016,
+      "hit_rating_below_cap": 1.11122,
       "hit_rating_above_cap": 0.0,
       "spell_damage": 1.0,
       "spell_healing": 0.0,
       "feral_attack_power": 0.0
      },
      "errors": {
-      "arcane_damage": 0.000888,
-      "crit_rating": 0.02051,
-      "haste_rating": 0.078645,
-      "hit_rating": 0.053919,
-      "intellect": 0.013888,
-      "nature_damage": 0.000146,
-      "spell_damage": 0.000913,
-      "spell_penetration": 0.023091,
-      "spell_power": 0.000913,
-      "spirit": 0.002475
+      "arcane_damage": 0.0009,
+      "crit_rating": 0.020453,
+      "haste_rating": 0.078648,
+      "hit_rating": 0.053364,
+      "intellect": 0.012765,
+      "nature_damage": 0.000147,
+      "spell_damage": 0.000921,
+      "spell_penetration": 0.018977,
+      "spell_power": 0.000921,
+      "spirit": 0.001697
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
@@ -4390,37 +4390,39 @@
      "dual_wield": false,
      "source": "raid simulator, druid-feral-combat.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "mh_weapon_dps": 8.77609,
-      "agility": 2.64395,
-      "armor_penetration": 0.3035,
+      "mh_weapon_dps": 8.87565,
+      "agility": 2.63515,
+      "armor_penetration": 0.30603,
       "attack_power": 1.0,
-      "crit_rating": 2.04722,
-      "expertise_rating": 2.05979,
+      "crit_rating": 1.98809,
+      "expertise_rating": 2.02085,
       "feral_attack_power": 1.0,
-      "haste_rating": 0.76466,
-      "hit_rating": 2.16184,
-      "intellect": 0.00114,
-      "spell_penetration": 0.03123,
-      "strength": 2.39947,
-      "hit_rating_below_cap": 1.97601,
+      "haste_rating": 0.86672,
+      "hit_rating": 2.07372,
+      "intellect": 0.00074,
+      "spell_penetration": 0.0309,
+      "spirit": 0.0,
+      "strength": 2.39985,
+      "hit_rating_below_cap": 1.97692,
       "hit_rating_above_cap": 0.0,
       "spell_power": 0.0,
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "agility": 0.039928,
-      "armor_penetration": 0.000298,
-      "attack_power": 0.000541,
-      "crit_rating": 0.040475,
-      "expertise_rating": 0.165992,
-      "feral_attack_power": 0.000541,
-      "haste_rating": 0.13497,
-      "hit_rating": 0.114434,
-      "intellect": 0.000515,
-      "mh_weapon_dps": 0.006326,
-      "spell_penetration": 0.001701,
-      "strength": 0.001299
+      "agility": 0.041726,
+      "armor_penetration": 0.000296,
+      "attack_power": 0.00052,
+      "crit_rating": 0.038963,
+      "expertise_rating": 0.158522,
+      "feral_attack_power": 0.00052,
+      "haste_rating": 0.135355,
+      "hit_rating": 0.11207,
+      "intellect": 0.000442,
+      "mh_weapon_dps": 0.006078,
+      "spell_penetration": 0.001658,
+      "spirit": 0.000246,
+      "strength": 0.001248
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": true,
@@ -4471,7 +4473,7 @@
       "Wild Growth": 1
      },
      "unit": "healing",
-     "source": "healer lab, heallab/heal-values.json (2026-11-17): capacity per point in _reference/data/raidsim/gear_sets/forever/tiers/druid-restoration-bis.gear.json",
+     "source": "healer lab, heallab/heal-values.json (2026-11-19): capacity per point in _reference/data/raidsim/gear_sets/forever/tiers/druid-restoration-bis.gear.json",
      "values": {
       "intellect": 2.5293,
       "spirit": 2.779,
@@ -4536,7 +4538,7 @@
      "Naturalist": 2
     },
     "unit": "stamina",
-    "source": "raid simulator, feral-combat-ml-tank in feral-bear-tank, 2026-11-17: tank value per point (threat, damage taken, effective health)",
+    "source": "raid simulator, feral-combat-ml-tank in feral-bear-tank, 2026-11-19: tank value per point (threat, damage taken, effective health)",
     "values": {
      "strength": 0.66804,
      "agility": 1.09801,
@@ -11734,35 +11736,35 @@
      "dual_wield": false,
      "source": "raid simulator, hunter-beast-mastery.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "ranged_weapon_dps": 8.36594,
-      "agility": 2.98188,
-      "armor_penetration": 0.2885,
-      "crit_rating": 2.71377,
-      "expertise_rating": 1.1558,
-      "haste_rating": 1.9846,
-      "hit_rating": 3.77219,
-      "intellect": 1.12092,
+      "ranged_weapon_dps": 8.35104,
+      "agility": 2.995,
+      "armor_penetration": 0.28565,
+      "crit_rating": 2.73615,
+      "expertise_rating": 1.20981,
+      "haste_rating": 1.94233,
+      "hit_rating": 3.7743,
+      "intellect": 1.10082,
       "ranged_attack_power": 1.0,
-      "spell_penetration": 1.27853,
-      "spirit": 0.01766,
-      "hit_rating_below_cap": 4.38678,
+      "spell_penetration": 1.26612,
+      "spirit": 0.00091,
+      "hit_rating_below_cap": 4.49864,
       "hit_rating_above_cap": 0.0,
       "spell_power": 0.0,
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "agility": 0.025806,
-      "armor_penetration": 0.00027,
-      "crit_rating": 0.037847,
-      "expertise_rating": 0.120508,
-      "haste_rating": 0.152572,
-      "hit_rating": 0.170294,
-      "intellect": 0.005328,
-      "ranged_attack_power": 0.000583,
-      "ranged_weapon_dps": 0.00746,
-      "spell_penetration": 0.011901,
-      "spirit": 0.005585
+      "agility": 0.023472,
+      "armor_penetration": 0.000268,
+      "crit_rating": 0.036745,
+      "expertise_rating": 0.117355,
+      "haste_rating": 0.151246,
+      "hit_rating": 0.165763,
+      "intellect": 0.001078,
+      "ranged_attack_power": 0.000582,
+      "ranged_weapon_dps": 0.007462,
+      "spell_penetration": 0.011815,
+      "spirit": 0.000913
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
@@ -11811,35 +11813,35 @@
      "dual_wield": false,
      "source": "raid simulator, hunter-hybrid-beast-mastery-marksmanship.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "ranged_weapon_dps": 8.50838,
-      "agility": 3.01984,
-      "armor_penetration": 0.29101,
-      "crit_rating": 2.97663,
-      "expertise_rating": 1.1239,
-      "haste_rating": 1.76896,
-      "hit_rating": 3.76102,
-      "intellect": 1.12081,
+      "ranged_weapon_dps": 8.53245,
+      "agility": 3.21589,
+      "armor_penetration": 0.29227,
+      "crit_rating": 3.31788,
+      "expertise_rating": 1.44945,
+      "haste_rating": 1.88433,
+      "hit_rating": 3.89669,
+      "intellect": 1.09978,
       "ranged_attack_power": 1.0,
-      "spell_penetration": 1.29409,
-      "spirit": 0.02381,
-      "hit_rating_below_cap": 4.61199,
+      "spell_penetration": 1.29934,
+      "spirit": 0.0,
+      "hit_rating_below_cap": 4.47461,
       "hit_rating_above_cap": 0.0,
       "spell_power": 0.0,
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "agility": 0.063669,
-      "armor_penetration": 0.000298,
-      "crit_rating": 0.084865,
-      "expertise_rating": 0.188511,
-      "haste_rating": 0.170407,
-      "hit_rating": 0.183466,
-      "intellect": 0.005685,
-      "ranged_attack_power": 0.000653,
-      "ranged_weapon_dps": 0.00831,
-      "spell_penetration": 0.012006,
-      "spirit": 0.007735
+      "agility": 0.076809,
+      "armor_penetration": 0.000303,
+      "crit_rating": 0.10222,
+      "expertise_rating": 0.207612,
+      "haste_rating": 0.180047,
+      "hit_rating": 0.182304,
+      "intellect": 0.00074,
+      "ranged_attack_power": 0.000672,
+      "ranged_weapon_dps": 0.008526,
+      "spell_penetration": 0.012137,
+      "spirit": 0.000474
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
@@ -11886,35 +11888,35 @@
      "dual_wield": false,
      "source": "raid simulator, hunter-marksmanship.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "ranged_weapon_dps": 8.94872,
-      "agility": 2.97016,
-      "armor_penetration": 0.30956,
-      "crit_rating": 2.66154,
-      "expertise_rating": 1.06154,
-      "haste_rating": 2.17296,
-      "hit_rating": 3.94219,
-      "intellect": 1.10023,
+      "ranged_weapon_dps": 9.07949,
+      "agility": 3.01967,
+      "armor_penetration": 0.32718,
+      "crit_rating": 2.84986,
+      "expertise_rating": 0.30711,
+      "haste_rating": 1.78523,
+      "hit_rating": 4.24207,
+      "intellect": 3.43436,
       "ranged_attack_power": 1.0,
-      "spell_penetration": 1.22704,
-      "spirit": 0.0,
-      "hit_rating_below_cap": 4.04382,
+      "spell_penetration": 1.45925,
+      "spirit": 0.7218,
+      "hit_rating_below_cap": 3.40426,
       "hit_rating_above_cap": 0.0,
       "spell_power": 0.0,
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "agility": 0.018294,
-      "armor_penetration": 0.00029,
-      "crit_rating": 0.02921,
-      "expertise_rating": 0.118996,
-      "haste_rating": 0.165169,
-      "hit_rating": 0.148058,
-      "intellect": 0.000702,
-      "ranged_attack_power": 0.000639,
-      "ranged_weapon_dps": 0.008064,
-      "spell_penetration": 0.011532,
-      "spirit": 0.000264
+      "agility": 0.021238,
+      "armor_penetration": 0.000343,
+      "crit_rating": 0.03365,
+      "expertise_rating": 0.209189,
+      "haste_rating": 0.244197,
+      "hit_rating": 0.122739,
+      "intellect": 0.079188,
+      "ranged_attack_power": 0.000729,
+      "ranged_weapon_dps": 0.008634,
+      "spell_penetration": 0.012136,
+      "spirit": 0.097349
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": true,
@@ -11963,39 +11965,39 @@
      "dual_wield": true,
      "source": "raid simulator, hunter-survival.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "mh_weapon_dps": 9.7285,
-      "oh_weapon_dps": 3.54668,
-      "agility": 1.98573,
-      "armor_penetration": 0.40114,
+      "mh_weapon_dps": 9.71246,
+      "oh_weapon_dps": 3.61336,
+      "agility": 1.84517,
+      "armor_penetration": 0.40068,
       "attack_power": 1.0,
-      "crit_rating": 2.05014,
-      "expertise_rating": 3.54219,
-      "haste_rating": 1.98981,
-      "hit_rating": 1.98736,
-      "intellect": 1.17937,
-      "ranged_attack_power": 0.04566,
-      "spell_penetration": 0.37424,
-      "strength": 1.09988,
-      "hit_rating_below_cap": 3.93804,
-      "hit_rating_above_cap": 1.98736,
+      "crit_rating": 2.06083,
+      "expertise_rating": 3.85836,
+      "haste_rating": 2.06593,
+      "hit_rating": 2.51042,
+      "intellect": 1.17907,
+      "ranged_attack_power": 0.04679,
+      "spell_penetration": 0.37771,
+      "strength": 1.09996,
+      "hit_rating_below_cap": 4.20927,
+      "hit_rating_above_cap": 2.51042,
       "spell_power": 0.0,
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "agility": 0.013875,
-      "armor_penetration": 0.000402,
-      "attack_power": 0.000987,
-      "crit_rating": 0.02063,
-      "expertise_rating": 0.19738,
-      "haste_rating": 0.168606,
-      "hit_rating": 0.168465,
-      "intellect": 0.002553,
-      "mh_weapon_dps": 0.010971,
-      "oh_weapon_dps": 0.005835,
-      "ranged_attack_power": 5.1e-05,
-      "spell_penetration": 0.005594,
-      "strength": 0.001086
+      "agility": 0.013784,
+      "armor_penetration": 0.000407,
+      "attack_power": 0.001002,
+      "crit_rating": 0.021216,
+      "expertise_rating": 0.19327,
+      "haste_rating": 0.169451,
+      "hit_rating": 0.167335,
+      "intellect": 0.002416,
+      "mh_weapon_dps": 0.011156,
+      "oh_weapon_dps": 0.00617,
+      "ranged_attack_power": 6.5e-05,
+      "spell_penetration": 0.005688,
+      "strength": 0.001102
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
@@ -18480,31 +18482,31 @@
      "dual_wield": false,
      "source": "raid simulator, mage-arcane.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "arcane_damage": 0.88753,
-      "crit_rating": 0.82634,
-      "fire_damage": 0.11247,
-      "haste_rating": 0.93347,
-      "hit_rating": 1.58654,
-      "intellect": 0.90469,
+      "arcane_damage": 0.80813,
+      "crit_rating": 0.82772,
+      "fire_damage": 0.19187,
+      "haste_rating": 1.22007,
+      "hit_rating": 1.6007,
+      "intellect": 0.98059,
       "spell_power": 1.0,
-      "spell_penetration": 2.68376,
-      "spirit": 0.17385,
-      "hit_rating_below_cap": 1.52573,
+      "spell_penetration": 2.56646,
+      "spirit": 0.17283,
+      "hit_rating_below_cap": 1.41963,
       "hit_rating_above_cap": 0.0,
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "arcane_damage": 0.001003,
-      "crit_rating": 0.016152,
-      "fire_damage": 0.000404,
-      "haste_rating": 0.043465,
-      "hit_rating": 0.067344,
-      "intellect": 0.046443,
-      "spell_damage": 0.00092,
-      "spell_penetration": 0.010923,
-      "spell_power": 0.00092,
-      "spirit": 0.047927
+      "arcane_damage": 0.001006,
+      "crit_rating": 0.02039,
+      "fire_damage": 0.000688,
+      "haste_rating": 0.051401,
+      "hit_rating": 0.061359,
+      "intellect": 0.047344,
+      "spell_damage": 0.000948,
+      "spell_penetration": 0.010431,
+      "spell_power": 0.000948,
+      "spirit": 0.047811
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
@@ -18556,31 +18558,31 @@
      "dual_wield": false,
      "source": "raid simulator, mage-fire.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "arcane_damage": 0.05277,
-      "crit_rating": 0.91458,
-      "fire_damage": 0.94723,
-      "haste_rating": 0.87976,
-      "hit_rating": 1.68106,
-      "intellect": 0.44011,
+      "arcane_damage": 0.12525,
+      "crit_rating": 0.77759,
+      "fire_damage": 0.87475,
+      "haste_rating": 0.90906,
+      "hit_rating": 1.74161,
+      "intellect": 0.43662,
       "spell_power": 1.0,
-      "spell_penetration": 2.24203,
-      "spirit": 0.27205,
-      "hit_rating_below_cap": 1.86738,
+      "spell_penetration": 2.20874,
+      "spirit": 0.10399,
+      "hit_rating_below_cap": 1.81676,
       "hit_rating_above_cap": 0.0,
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "arcane_damage": 0.000436,
-      "crit_rating": 0.050343,
-      "fire_damage": 0.001129,
-      "haste_rating": 0.093886,
-      "hit_rating": 0.100331,
-      "intellect": 0.049291,
-      "spell_damage": 0.001079,
-      "spell_penetration": 0.010276,
-      "spell_power": 0.001079,
-      "spirit": 0.040807
+      "arcane_damage": 0.000475,
+      "crit_rating": 0.042512,
+      "fire_damage": 0.001045,
+      "haste_rating": 0.123277,
+      "hit_rating": 0.089964,
+      "intellect": 0.036029,
+      "spell_damage": 0.00096,
+      "spell_penetration": 0.009812,
+      "spell_power": 0.00096,
+      "spirit": 0.027911
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": true,
@@ -18594,71 +18596,73 @@
       {
        "index": 1,
        "name": "Arcane",
-       "points": 21
+       "points": 15
       },
       {
        "index": 2,
        "name": "Fire",
-       "points": 0
+       "points": 5
       },
       {
        "index": 3,
        "name": "Frost",
-       "points": 30
+       "points": 31
       }
      ],
      "talents": {
-      "Improved Channeling": 5,
-      "Arcane Concentration": 5,
+      "Improved Channeling": 2,
+      "Arcane Resilience": 3,
       "Arcane Subtlety": 2,
-      "Magic Absorption": 2,
+      "Arcane Concentration": 2,
       "Missile Barrage": 2,
-      "Arcane Blast": 1,
       "Arcane Impact": 3,
-      "Arcane Mind": 1,
-      "Frost Warding": 2,
+      "Magic Absorption": 1,
+      "Incineration": 5,
+      "Frost Warding": 1,
       "Improved Frostbolt": 5,
       "Precision": 3,
-      "Frostbite": 3,
       "Ice Shards": 5,
       "Frost Channeling": 3,
       "Ice Lance": 1,
       "Arctic Reach": 2,
+      "Ice Block": 1,
       "Shatter": 3,
       "Cold Snap": 1,
-      "Fingers of Frost": 2
+      "Fingers of Frost": 2,
+      "Winter's Chill": 3,
+      "Ice Barrier": 1
      },
      "unit": "spell_power",
      "dual_wield": false,
      "source": "raid simulator, mage-frost.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "arcane_damage": 0.20338,
-      "crit_rating": 0.65967,
-      "fire_damage": 0.00411,
-      "frost_damage": 0.79251,
-      "haste_rating": 1.23453,
-      "hit_rating": 1.61099,
-      "intellect": 0.16941,
+      "arcane_damage": 0.45974,
+      "crit_rating": 0.66937,
+      "fire_damage": 0.00306,
+      "frost_damage": 0.5372,
+      "haste_rating": 1.39168,
+      "hit_rating": 1.44792,
+      "intellect": 0.46608,
       "spell_power": 1.0,
-      "spell_penetration": 2.36088,
-      "spirit": 0.00087,
-      "hit_rating_below_cap": 1.57399,
+      "spell_penetration": 2.43807,
+      "spirit": 0.0,
+      "hit_rating_below_cap": 1.66302,
       "hit_rating_above_cap": 0.0,
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "arcane_damage": 0.000799,
-      "crit_rating": 0.013703,
-      "fire_damage": 6e-05,
-      "frost_damage": 0.001055,
-      "haste_rating": 0.020616,
-      "hit_rating": 0.051871,
-      "intellect": 0.008294,
-      "spell_damage": 0.000923,
-      "spell_penetration": 0.010328,
-      "spell_power": 0.000923,
-      "spirit": 0.001165
+      "arcane_damage": 0.000803,
+      "crit_rating": 0.013255,
+      "fire_damage": 6.1e-05,
+      "frost_damage": 0.000856,
+      "haste_rating": 0.048289,
+      "hit_rating": 0.063077,
+      "intellect": 0.008735,
+      "spell_damage": 0.000796,
+      "spell_penetration": 0.009637,
+      "spell_power": 0.000796,
+      "spirit": 0.004681
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
@@ -18710,33 +18714,33 @@
      "dual_wield": false,
      "source": "raid simulator, mage-hybrid-arcane-frost.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "arcane_damage": 0.47973,
-      "crit_rating": 0.74511,
-      "fire_damage": 0.00277,
-      "frost_damage": 0.5177,
-      "haste_rating": 1.39767,
-      "hit_rating": 1.54103,
-      "intellect": 0.49713,
+      "arcane_damage": 0.67535,
+      "crit_rating": 0.7595,
+      "fire_damage": 0.00278,
+      "frost_damage": 0.32166,
+      "haste_rating": 1.08872,
+      "hit_rating": 1.46389,
+      "intellect": 0.68172,
       "spell_power": 1.0,
-      "spell_penetration": 2.52185,
-      "spirit": 0.00099,
-      "hit_rating_below_cap": 1.3508,
+      "spell_penetration": 2.50149,
+      "spirit": 0.0006,
+      "hit_rating_below_cap": 1.30615,
       "hit_rating_above_cap": 0.0,
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "arcane_damage": 0.000879,
-      "crit_rating": 0.012919,
-      "fire_damage": 5.7e-05,
-      "frost_damage": 0.000848,
-      "haste_rating": 0.046246,
-      "hit_rating": 0.046243,
-      "intellect": 0.008362,
-      "spell_damage": 0.000868,
-      "spell_penetration": 0.009944,
-      "spell_power": 0.000868,
-      "spirit": 0.002527
+      "arcane_damage": 0.00095,
+      "crit_rating": 0.014633,
+      "fire_damage": 6e-05,
+      "frost_damage": 0.000649,
+      "haste_rating": 0.039801,
+      "hit_rating": 0.044459,
+      "intellect": 0.01096,
+      "spell_damage": 0.000877,
+      "spell_penetration": 0.010567,
+      "spell_power": 0.000877,
+      "spirit": 0.006217
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
@@ -18790,29 +18794,29 @@
      "dual_wield": false,
      "source": "raid simulator, mage-hybrid-fire-frost.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "crit_rating": 1.00686,
+      "crit_rating": 0.9675,
       "fire_damage": 1.0,
-      "haste_rating": 0.96894,
-      "hit_rating": 1.43828,
-      "intellect": 0.4286,
+      "haste_rating": 1.10721,
+      "hit_rating": 1.67052,
+      "intellect": 0.3016,
       "spell_power": 1.0,
-      "spell_penetration": 0.8812,
-      "spirit": 0.10246,
-      "hit_rating_below_cap": 1.87939,
+      "spell_penetration": 1.09566,
+      "spirit": 0.06577,
+      "hit_rating_below_cap": 1.43715,
       "hit_rating_above_cap": 0.0,
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "crit_rating": 0.026477,
-      "fire_damage": 0.00138,
-      "haste_rating": 0.039635,
-      "hit_rating": 0.099307,
-      "intellect": 0.033734,
-      "spell_damage": 0.00138,
-      "spell_penetration": 0.007801,
-      "spell_power": 0.00138,
-      "spirit": 0.029379
+      "crit_rating": 0.046412,
+      "fire_damage": 0.00142,
+      "haste_rating": 0.101707,
+      "hit_rating": 0.074616,
+      "intellect": 0.077083,
+      "spell_damage": 0.00142,
+      "spell_penetration": 0.009171,
+      "spell_power": 0.00142,
+      "spirit": 0.057166
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
@@ -25987,39 +25991,39 @@
      "dual_wield": false,
      "source": "raid simulator, paladin-hybrid-protection-retribution.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "mh_weapon_dps": 9.39445,
-      "agility": 1.08061,
-      "armor_penetration": 0.17248,
-      "attack_power": 0.66592,
-      "crit_rating": 1.52493,
-      "expertise_rating": 2.77915,
-      "haste_rating": 0.27897,
-      "hit_rating": 3.64267,
+      "mh_weapon_dps": 7.77879,
+      "agility": 0.97559,
+      "armor_penetration": 0.16209,
+      "attack_power": 0.58619,
+      "crit_rating": 1.36651,
+      "expertise_rating": 2.2746,
+      "haste_rating": 0.95156,
+      "hit_rating": 3.07246,
       "holy_damage": 1.0,
-      "intellect": 0.02625,
+      "intellect": 0.02708,
       "spell_power": 1.0,
-      "spirit": 0.00037,
-      "strength": 1.59843,
-      "hit_rating_below_cap": 3.66592,
+      "spirit": 0.0,
+      "strength": 1.40656,
+      "hit_rating_below_cap": 2.92296,
       "hit_rating_above_cap": 0.0,
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "agility": 0.023514,
-      "armor_penetration": 0.00031,
-      "attack_power": 0.001022,
-      "crit_rating": 0.022822,
-      "expertise_rating": 0.132338,
-      "haste_rating": 0.132364,
-      "hit_rating": 0.098832,
-      "holy_damage": 0.000972,
-      "intellect": 0.000857,
-      "mh_weapon_dps": 0.014341,
-      "spell_damage": 0.000972,
-      "spell_power": 0.000972,
-      "spirit": 0.000333,
-      "strength": 0.002454
+      "agility": 0.018966,
+      "armor_penetration": 0.000233,
+      "attack_power": 0.000739,
+      "crit_rating": 0.018557,
+      "expertise_rating": 0.099171,
+      "haste_rating": 0.108735,
+      "hit_rating": 0.071235,
+      "holy_damage": 0.001011,
+      "intellect": 0.000891,
+      "mh_weapon_dps": 0.010148,
+      "spell_damage": 0.001011,
+      "spell_power": 0.001011,
+      "spirit": 3e-05,
+      "strength": 0.001774
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
@@ -26072,39 +26076,39 @@
      "dual_wield": false,
      "source": "raid simulator, paladin-retribution.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "mh_weapon_dps": 8.34711,
-      "agility": 1.11189,
-      "armor_penetration": 0.13922,
-      "attack_power": 0.59186,
-      "crit_rating": 1.48093,
-      "expertise_rating": 3.17737,
-      "haste_rating": 1.36968,
-      "hit_rating": 4.08423,
+      "mh_weapon_dps": 6.16854,
+      "agility": 0.93642,
+      "armor_penetration": 0.11804,
+      "attack_power": 0.46456,
+      "crit_rating": 1.27898,
+      "expertise_rating": 2.47003,
+      "haste_rating": 1.63949,
+      "hit_rating": 3.28324,
       "holy_damage": 1.0,
-      "intellect": 0.71233,
+      "intellect": 0.74384,
       "spell_power": 1.0,
-      "spirit": 0.00064,
-      "strength": 1.42085,
-      "hit_rating_below_cap": 2.68023,
+      "spirit": 0.00091,
+      "strength": 1.11469,
+      "hit_rating_below_cap": 2.2446,
       "hit_rating_above_cap": 0.0,
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "agility": 0.021674,
-      "armor_penetration": 0.000264,
-      "attack_power": 0.000956,
-      "crit_rating": 0.020523,
-      "expertise_rating": 0.147937,
-      "haste_rating": 0.149007,
-      "hit_rating": 0.082297,
-      "holy_damage": 0.000971,
-      "intellect": 0.001168,
-      "mh_weapon_dps": 0.013401,
-      "spell_damage": 0.000971,
-      "spell_power": 0.000971,
-      "spirit": 0.000803,
-      "strength": 0.002293
+      "agility": 0.016431,
+      "armor_penetration": 0.000184,
+      "attack_power": 0.000638,
+      "crit_rating": 0.015755,
+      "expertise_rating": 0.115686,
+      "haste_rating": 0.100345,
+      "hit_rating": 0.055881,
+      "holy_damage": 0.000988,
+      "intellect": 0.001243,
+      "mh_weapon_dps": 0.008757,
+      "spell_damage": 0.000988,
+      "spell_power": 0.000988,
+      "spirit": 0.001312,
+      "strength": 0.001531
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": true,
@@ -26258,12 +26262,12 @@
       "Pursuit of Justice": 2
      },
      "unit": "healing",
-     "source": "healer lab, heallab/heal-values.json (2026-11-17): capacity per point in _reference/data/raidsim/gear_sets/forever/tiers/paladin-holy-bis.gear.json",
+     "source": "healer lab, heallab/heal-values.json (2026-11-19): capacity per point in _reference/data/raidsim/gear_sets/forever/tiers/paladin-holy-bis.gear.json",
      "values": {
-      "intellect": 2.7926,
-      "spirit": 1.3699,
-      "mp5": 7.1307,
-      "crit_rating": 1.6135,
+      "intellect": 3.0052,
+      "spirit": 1.2616,
+      "mp5": 6.4897,
+      "crit_rating": 1.345,
       "haste_rating": 0.0,
       "spell_power": 1.0,
       "spell_damage": 0.0,
@@ -26271,11 +26275,11 @@
      },
      "errors": {
       "healing": 0.0,
-      "intellect": 0.3139,
-      "spirit": 0.1982,
-      "mp5": 0.864,
-      "crit_rating": 0.262,
-      "haste_rating": 0.0433
+      "intellect": 0.3292,
+      "spirit": 0.1802,
+      "mp5": 0.7857,
+      "crit_rating": 0.3329,
+      "haste_rating": 0.0494
      },
      "errors_note": "the bootstrap standard error of each value, same unit; for Shift details at most, not the main line",
      "haste_rating_if_gcd_hasted": 0.0,
@@ -26326,7 +26330,7 @@
      "Sacred Arbiter": 1
     },
     "unit": "stamina",
-    "source": "raid simulator, protection-ml-tank in prot-tank, 2026-11-17: tank value per point (threat, damage taken, effective health)",
+    "source": "raid simulator, protection-ml-tank in prot-tank, 2026-11-19: tank value per point (threat, damage taken, effective health)",
     "values": {
      "strength": 0.25329,
      "agility": 0.5754,
@@ -31458,31 +31462,31 @@
      "dual_wield": false,
      "source": "raid simulator, priest-hybrid-discipline-holy.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "crit_rating": 0.40566,
-      "haste_rating": 0.50099,
-      "hit_rating": 0.42326,
-      "holy_damage": 0.69996,
-      "intellect": 0.16456,
-      "shadow_damage": 0.30004,
+      "crit_rating": 0.40901,
+      "haste_rating": 0.51141,
+      "hit_rating": 0.47081,
+      "holy_damage": 0.69441,
+      "intellect": 0.163,
+      "shadow_damage": 0.30559,
       "spell_power": 1.0,
-      "spell_penetration": 0.52769,
-      "spirit": 0.02255,
-      "hit_rating_below_cap": 0.50138,
+      "spell_penetration": 0.54494,
+      "spirit": 0.03009,
+      "hit_rating_below_cap": 0.50495,
       "hit_rating_above_cap": 0.0,
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "crit_rating": 0.006292,
-      "haste_rating": 0.035302,
-      "hit_rating": 0.020049,
-      "holy_damage": 0.000314,
-      "intellect": 0.014215,
-      "shadow_damage": 0.000211,
-      "spell_damage": 0.000376,
-      "spell_penetration": 0.004901,
-      "spell_power": 0.000376,
-      "spirit": 0.012071
+      "crit_rating": 0.006371,
+      "haste_rating": 0.030801,
+      "hit_rating": 0.019527,
+      "holy_damage": 0.000319,
+      "intellect": 0.015919,
+      "shadow_damage": 0.000261,
+      "spell_damage": 0.00041,
+      "spell_penetration": 0.005104,
+      "spell_power": 0.00041,
+      "spirit": 0.013389
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
@@ -31532,29 +31536,29 @@
      "dual_wield": false,
      "source": "raid simulator, priest-shadow.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "crit_rating": 0.94994,
-      "haste_rating": 0.42662,
-      "hit_rating": 1.0959,
-      "intellect": 0.28106,
+      "crit_rating": 0.94722,
+      "haste_rating": 0.60618,
+      "hit_rating": 1.2588,
+      "intellect": 0.26432,
       "shadow_damage": 1.0,
       "spell_power": 1.0,
-      "spell_penetration": 2.23361,
+      "spell_penetration": 2.24059,
       "spirit": 0.0,
-      "hit_rating_below_cap": 1.16164,
+      "hit_rating_below_cap": 1.15323,
       "hit_rating_above_cap": 0.0,
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "crit_rating": 0.012662,
-      "haste_rating": 0.021734,
-      "hit_rating": 0.040078,
-      "intellect": 0.008298,
-      "shadow_damage": 0.000586,
-      "spell_damage": 0.000586,
-      "spell_penetration": 0.010563,
-      "spell_power": 0.000586,
-      "spirit": 0.008597
+      "crit_rating": 0.012697,
+      "haste_rating": 0.022994,
+      "hit_rating": 0.041854,
+      "intellect": 0.008121,
+      "shadow_damage": 0.000603,
+      "spell_damage": 0.000603,
+      "spell_penetration": 0.010809,
+      "spell_power": 0.000603,
+      "spirit": 0.004108
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": true,
@@ -31606,7 +31610,7 @@
       "Litany of Light": 2
      },
      "unit": "healing",
-     "source": "healer lab, heallab/heal-values.json (2026-11-17): capacity per point in _reference/data/raidsim/gear_sets/forever/tiers/priest-discipline-bis.gear.json",
+     "source": "healer lab, heallab/heal-values.json (2026-11-19): capacity per point in _reference/data/raidsim/gear_sets/forever/tiers/priest-discipline-bis.gear.json",
      "values": {
       "intellect": 2.0518,
       "spirit": 2.3258,
@@ -31672,7 +31676,7 @@
       "Spiritual Healing": 3
      },
      "unit": "healing",
-     "source": "healer lab, heallab/heal-values.json (2026-11-17): capacity per point in _reference/data/raidsim/gear_sets/forever/tiers/priest-holy-bis.gear.json",
+     "source": "healer lab, heallab/heal-values.json (2026-11-19): capacity per point in _reference/data/raidsim/gear_sets/forever/tiers/priest-holy-bis.gear.json",
      "values": {
       "intellect": 1.8102,
       "spirit": 2.9797,
@@ -37064,35 +37068,35 @@
      "dual_wield": true,
      "source": "raid simulator, rogue-assassination.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "mh_weapon_dps": 7.70713,
-      "oh_weapon_dps": 3.39784,
-      "agility": 2.04728,
-      "armor_penetration": 0.40625,
+      "mh_weapon_dps": 7.73746,
+      "oh_weapon_dps": 3.42193,
+      "agility": 2.089,
+      "armor_penetration": 0.41626,
       "attack_power": 1.0,
-      "crit_rating": 2.03566,
-      "expertise_rating": 2.72236,
-      "haste_rating": 1.4391,
-      "hit_rating": 2.24599,
-      "spell_penetration": 0.7484,
-      "strength": 1.10016,
-      "hit_rating_below_cap": 3.54207,
-      "hit_rating_above_cap": 2.24599,
+      "crit_rating": 2.04207,
+      "expertise_rating": 2.67476,
+      "haste_rating": 1.41141,
+      "hit_rating": 2.18325,
+      "spell_penetration": 0.71319,
+      "strength": 1.09992,
+      "hit_rating_below_cap": 3.56837,
+      "hit_rating_above_cap": 2.18325,
       "spell_power": 0.0,
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "agility": 0.040055,
-      "armor_penetration": 0.000351,
-      "attack_power": 0.000694,
-      "crit_rating": 0.04599,
-      "expertise_rating": 0.190541,
-      "haste_rating": 0.163238,
-      "hit_rating": 0.133013,
-      "mh_weapon_dps": 0.007419,
-      "oh_weapon_dps": 0.003244,
-      "spell_penetration": 0.004311,
-      "strength": 0.000763
+      "agility": 0.042243,
+      "armor_penetration": 0.000359,
+      "attack_power": 0.000713,
+      "crit_rating": 0.047964,
+      "expertise_rating": 0.185929,
+      "haste_rating": 0.165153,
+      "hit_rating": 0.13428,
+      "mh_weapon_dps": 0.007706,
+      "oh_weapon_dps": 0.003241,
+      "spell_penetration": 0.004258,
+      "strength": 0.000784
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": true,
@@ -37145,35 +37149,35 @@
      "dual_wield": true,
      "source": "raid simulator, rogue-combat.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "mh_weapon_dps": 8.62193,
-      "oh_weapon_dps": 3.78866,
-      "agility": 1.89079,
-      "armor_penetration": 0.36432,
+      "mh_weapon_dps": 8.74956,
+      "oh_weapon_dps": 3.94852,
+      "agility": 1.86213,
+      "armor_penetration": 0.36257,
       "attack_power": 1.0,
-      "crit_rating": 1.62401,
-      "expertise_rating": 2.58608,
-      "haste_rating": 1.77616,
-      "hit_rating": 2.41892,
-      "spell_penetration": 0.57691,
-      "strength": 1.10004,
-      "hit_rating_below_cap": 3.59733,
-      "hit_rating_above_cap": 2.41892,
+      "crit_rating": 1.57373,
+      "expertise_rating": 2.42277,
+      "haste_rating": 1.69503,
+      "hit_rating": 2.09293,
+      "spell_penetration": 0.39136,
+      "strength": 1.09991,
+      "hit_rating_below_cap": 3.83028,
+      "hit_rating_above_cap": 2.09293,
       "spell_power": 0.0,
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "agility": 0.014784,
+      "agility": 0.014467,
       "armor_penetration": 0.000279,
-      "attack_power": 0.000679,
-      "crit_rating": 0.017304,
-      "expertise_rating": 0.123876,
-      "haste_rating": 0.113841,
-      "hit_rating": 0.102743,
-      "mh_weapon_dps": 0.007955,
-      "oh_weapon_dps": 0.004431,
-      "spell_penetration": 0.00383,
-      "strength": 0.000747
+      "attack_power": 0.000677,
+      "crit_rating": 0.016589,
+      "expertise_rating": 0.107486,
+      "haste_rating": 0.101067,
+      "hit_rating": 0.098007,
+      "mh_weapon_dps": 0.008301,
+      "oh_weapon_dps": 0.004037,
+      "spell_penetration": 0.002884,
+      "strength": 0.000745
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
@@ -37227,35 +37231,35 @@
      "dual_wield": true,
      "source": "raid simulator, rogue-hybrid-assassination-combat.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "mh_weapon_dps": 8.35062,
-      "oh_weapon_dps": 3.45879,
-      "agility": 2.0394,
-      "armor_penetration": 0.3848,
+      "mh_weapon_dps": 8.30495,
+      "oh_weapon_dps": 3.34257,
+      "agility": 1.99564,
+      "armor_penetration": 0.40238,
       "attack_power": 1.0,
-      "crit_rating": 1.8846,
-      "expertise_rating": 2.70125,
-      "haste_rating": 1.79051,
-      "hit_rating": 2.34942,
-      "spell_penetration": 0.57137,
-      "strength": 1.10012,
-      "hit_rating_below_cap": 4.14636,
-      "hit_rating_above_cap": 2.34942,
+      "crit_rating": 1.86218,
+      "expertise_rating": 2.49109,
+      "haste_rating": 1.34059,
+      "hit_rating": 2.23406,
+      "spell_penetration": 0.54257,
+      "strength": 1.0998,
+      "hit_rating_below_cap": 4.14178,
+      "hit_rating_above_cap": 2.23406,
       "spell_power": 0.0,
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "agility": 0.041216,
-      "armor_penetration": 0.000353,
-      "attack_power": 0.000731,
-      "crit_rating": 0.048735,
-      "expertise_rating": 0.190929,
-      "haste_rating": 0.167857,
-      "hit_rating": 0.15877,
-      "mh_weapon_dps": 0.008049,
+      "agility": 0.043755,
+      "armor_penetration": 0.000362,
+      "attack_power": 0.000726,
+      "crit_rating": 0.051649,
+      "expertise_rating": 0.193095,
+      "haste_rating": 0.172683,
+      "hit_rating": 0.155914,
+      "mh_weapon_dps": 0.007792,
       "oh_weapon_dps": 0.004262,
-      "spell_penetration": 0.003602,
-      "strength": 0.000804
+      "spell_penetration": 0.003523,
+      "strength": 0.000799
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
@@ -37311,35 +37315,35 @@
      "dual_wield": true,
      "source": "raid simulator, rogue-hybrid-assassination-subtlety.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "mh_weapon_dps": 7.83079,
-      "oh_weapon_dps": 2.11293,
-      "agility": 1.82534,
-      "armor_penetration": 0.29811,
+      "mh_weapon_dps": 7.84602,
+      "oh_weapon_dps": 2.09052,
+      "agility": 1.66823,
+      "armor_penetration": 0.29571,
       "attack_power": 1.0,
-      "crit_rating": 1.45643,
-      "expertise_rating": 3.02614,
-      "haste_rating": 1.00073,
-      "hit_rating": 2.61184,
-      "spell_penetration": 0.24655,
-      "strength": 1.09985,
-      "hit_rating_below_cap": 4.34096,
-      "hit_rating_above_cap": 2.61184,
+      "crit_rating": 1.4075,
+      "expertise_rating": 2.52218,
+      "haste_rating": 1.0559,
+      "hit_rating": 2.24125,
+      "spell_penetration": 0.24702,
+      "strength": 1.09989,
+      "hit_rating_below_cap": 4.31122,
+      "hit_rating_above_cap": 2.24125,
       "spell_power": 0.0,
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "agility": 0.062926,
-      "armor_penetration": 0.000295,
-      "attack_power": 0.000785,
-      "crit_rating": 0.071831,
-      "expertise_rating": 0.242743,
-      "haste_rating": 0.213859,
-      "hit_rating": 0.207059,
-      "mh_weapon_dps": 0.008085,
-      "oh_weapon_dps": 0.002931,
-      "spell_penetration": 0.002245,
-      "strength": 0.000863
+      "agility": 0.048618,
+      "armor_penetration": 0.000266,
+      "attack_power": 0.000684,
+      "crit_rating": 0.054625,
+      "expertise_rating": 0.168079,
+      "haste_rating": 0.148412,
+      "hit_rating": 0.192067,
+      "mh_weapon_dps": 0.007796,
+      "oh_weapon_dps": 0.003082,
+      "spell_penetration": 0.002195,
+      "strength": 0.000752
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
@@ -41894,34 +41898,34 @@
      "dual_wield": false,
      "source": "raid simulator, shaman-elemental.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "crit_rating": 0.75326,
-      "fire_damage": 0.1265,
-      "haste_rating": 1.4845,
-      "hit_rating": 1.66571,
-      "intellect": 0.38002,
-      "nature_damage": 0.8735,
+      "crit_rating": 0.70939,
+      "fire_damage": 0.12766,
+      "haste_rating": 1.51439,
+      "hit_rating": 1.47224,
+      "intellect": 0.36052,
+      "nature_damage": 0.87234,
       "spell_power": 1.0,
-      "spell_penetration": 2.3917,
-      "spirit": 0.11431,
-      "hit_rating_below_cap": 1.38544,
+      "spell_penetration": 2.33533,
+      "spirit": 0.00668,
+      "hit_rating_below_cap": 1.35504,
       "hit_rating_above_cap": 0.0,
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "crit_rating": 0.011961,
-      "fire_damage": 0.000108,
-      "haste_rating": 0.086975,
-      "hit_rating": 0.068239,
-      "intellect": 0.058803,
-      "nature_damage": 0.000839,
-      "spell_damage": 0.000855,
-      "spell_penetration": 0.01188,
-      "spell_power": 0.000855,
-      "spirit": 0.045935
+      "crit_rating": 0.011319,
+      "fire_damage": 0.000112,
+      "haste_rating": 0.089519,
+      "hit_rating": 0.069589,
+      "intellect": 0.062299,
+      "nature_damage": 0.000866,
+      "spell_damage": 0.000886,
+      "spell_penetration": 0.013418,
+      "spell_power": 0.000886,
+      "spirit": 0.044188
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
-     "default": false,
+     "default": true,
      "forms": []
     },
     {
@@ -41969,46 +41973,46 @@
      "dual_wield": false,
      "source": "raid simulator, shaman-enhancement.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "mh_weapon_dps": 11.41391,
-      "agility": 1.00467,
-      "armor_penetration": 0.29911,
-      "attack_power": 0.80635,
-      "crit_rating": 2.08586,
-      "expertise_rating": 3.23005,
-      "fire_damage": 0.39944,
-      "haste_rating": 1.85674,
-      "hit_rating": 1.5399,
-      "intellect": 2.61969,
-      "nature_damage": 0.60103,
+      "mh_weapon_dps": 10.97054,
+      "agility": 1.14119,
+      "armor_penetration": 0.3098,
+      "attack_power": 0.81107,
+      "crit_rating": 2.17471,
+      "expertise_rating": 3.46673,
+      "fire_damage": 0.43017,
+      "haste_rating": 2.10767,
+      "hit_rating": 5.23565,
+      "intellect": 2.00102,
+      "nature_damage": 0.56983,
       "spell_power": 1.0,
-      "spell_penetration": 2.64209,
-      "spirit": 0.07513,
-      "strength": 1.77415,
-      "hit_rating_below_cap": 4.81521,
+      "spell_penetration": 2.57136,
+      "spirit": 0.0,
+      "strength": 1.78466,
+      "hit_rating_below_cap": 4.96851,
       "hit_rating_above_cap": 0.0,
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "agility": 0.06295,
-      "armor_penetration": 0.000538,
-      "attack_power": 0.001303,
-      "crit_rating": 0.068809,
-      "expertise_rating": 0.228345,
-      "fire_damage": 0.000312,
-      "haste_rating": 0.163468,
-      "hit_rating": 0.158309,
-      "intellect": 0.114873,
-      "mh_weapon_dps": 0.018301,
-      "nature_damage": 0.000907,
-      "spell_damage": 0.001016,
-      "spell_penetration": 0.016416,
-      "spell_power": 0.001016,
-      "spirit": 0.031964,
-      "strength": 0.002866
+      "agility": 0.06757,
+      "armor_penetration": 0.000521,
+      "attack_power": 0.001232,
+      "crit_rating": 0.067764,
+      "expertise_rating": 0.24987,
+      "fire_damage": 0.000401,
+      "haste_rating": 0.169603,
+      "hit_rating": 0.171112,
+      "intellect": 0.103155,
+      "mh_weapon_dps": 0.017034,
+      "nature_damage": 0.001091,
+      "spell_damage": 0.001239,
+      "spell_penetration": 0.016395,
+      "spell_power": 0.001239,
+      "spirit": 0.026496,
+      "strength": 0.00271
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
-     "default": true,
+     "default": false,
      "forms": []
     },
     {
@@ -42055,31 +42059,31 @@
      "dual_wield": false,
      "source": "raid simulator, shaman-hybrid-elemental-enhancement.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "crit_rating": 0.46479,
-      "fire_damage": 0.17699,
-      "haste_rating": 1.24342,
-      "hit_rating": 1.53335,
-      "intellect": 0.64815,
-      "nature_damage": 0.82301,
+      "crit_rating": 0.4589,
+      "fire_damage": 0.17805,
+      "haste_rating": 1.21901,
+      "hit_rating": 1.40884,
+      "intellect": 0.71486,
+      "nature_damage": 0.82195,
       "spell_power": 1.0,
-      "spell_penetration": 2.56418,
-      "spirit": 0.00558,
-      "hit_rating_below_cap": 2.69971,
+      "spell_penetration": 2.551,
+      "spirit": 0.00402,
+      "hit_rating_below_cap": 2.41633,
       "hit_rating_above_cap": 0.0,
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "crit_rating": 0.008785,
-      "fire_damage": 0.000118,
-      "haste_rating": 0.0786,
-      "hit_rating": 0.113452,
-      "intellect": 0.029067,
-      "nature_damage": 0.000683,
-      "spell_damage": 0.000703,
-      "spell_penetration": 0.016821,
-      "spell_power": 0.000703,
-      "spirit": 0.005022
+      "crit_rating": 0.008477,
+      "fire_damage": 0.000124,
+      "haste_rating": 0.080829,
+      "hit_rating": 0.115841,
+      "intellect": 0.022518,
+      "nature_damage": 0.00069,
+      "spell_damage": 0.000713,
+      "spell_penetration": 0.016507,
+      "spell_power": 0.000713,
+      "spirit": 0.004225
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
@@ -42125,7 +42129,7 @@
       "Riptide": 1
      },
      "unit": "healing",
-     "source": "healer lab, heallab/heal-values.json (2026-11-17): capacity per point in _reference/data/raidsim/gear_sets/forever/tiers/shaman-restoration-bis.gear.json",
+     "source": "healer lab, heallab/heal-values.json (2026-11-19): capacity per point in _reference/data/raidsim/gear_sets/forever/tiers/shaman-restoration-bis.gear.json",
      "values": {
       "intellect": 2.8493,
       "spirit": 1.824,
@@ -47323,31 +47327,31 @@
      "dual_wield": false,
      "source": "raid simulator, warlock-affliction.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "crit_rating": 0.94507,
-      "fire_damage": 0.10186,
-      "haste_rating": 0.81895,
-      "hit_rating": 1.14923,
-      "intellect": 0.34438,
-      "shadow_damage": 0.89829,
+      "crit_rating": 0.92376,
+      "fire_damage": 0.10272,
+      "haste_rating": 0.74817,
+      "hit_rating": 1.29061,
+      "intellect": 0.33626,
+      "shadow_damage": 0.89728,
       "spell_power": 1.0,
-      "spell_penetration": 1.39538,
-      "spirit": 0.13644,
-      "hit_rating_below_cap": 1.2896,
+      "spell_penetration": 1.36245,
+      "spirit": 0.13755,
+      "hit_rating_below_cap": 1.26749,
       "hit_rating_above_cap": 0.0,
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "crit_rating": 0.016777,
-      "fire_damage": 0.000122,
-      "haste_rating": 0.083964,
-      "hit_rating": 0.073516,
-      "intellect": 0.070364,
-      "shadow_damage": 0.001014,
-      "spell_damage": 0.001028,
-      "spell_penetration": 0.009292,
-      "spell_power": 0.001028,
-      "spirit": 0.048215
+      "crit_rating": 0.016451,
+      "fire_damage": 0.000123,
+      "haste_rating": 0.08467,
+      "hit_rating": 0.072018,
+      "intellect": 0.070745,
+      "shadow_damage": 0.001031,
+      "spell_damage": 0.001043,
+      "spell_penetration": 0.008933,
+      "spell_power": 0.001043,
+      "spirit": 0.048059
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
@@ -47398,31 +47402,31 @@
      "dual_wield": false,
      "source": "raid simulator, warlock-demonology.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "crit_rating": 0.91106,
-      "fire_damage": 0.09917,
-      "haste_rating": 0.89017,
-      "hit_rating": 1.23295,
-      "intellect": 0.39594,
-      "shadow_damage": 0.90083,
+      "crit_rating": 0.92104,
+      "fire_damage": 0.09962,
+      "haste_rating": 0.96916,
+      "hit_rating": 1.24041,
+      "intellect": 0.42341,
+      "shadow_damage": 0.90038,
       "spell_power": 1.0,
-      "spell_penetration": 1.49759,
-      "spirit": 0.06835,
-      "hit_rating_below_cap": 1.50314,
+      "spell_penetration": 1.48642,
+      "spirit": 0.05903,
+      "hit_rating_below_cap": 1.48244,
       "hit_rating_above_cap": 0.0,
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "crit_rating": 0.018817,
-      "fire_damage": 0.000143,
-      "haste_rating": 0.096449,
-      "hit_rating": 0.081683,
-      "intellect": 0.081264,
-      "shadow_damage": 0.00111,
-      "spell_damage": 0.001127,
-      "spell_penetration": 0.010519,
-      "spell_power": 0.001127,
-      "spirit": 0.056302
+      "crit_rating": 0.019149,
+      "fire_damage": 0.000144,
+      "haste_rating": 0.094292,
+      "hit_rating": 0.084041,
+      "intellect": 0.08039,
+      "shadow_damage": 0.001104,
+      "spell_damage": 0.001125,
+      "spell_penetration": 0.010469,
+      "spell_power": 0.001125,
+      "spirit": 0.053673
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": true,
@@ -47471,31 +47475,31 @@
      "dual_wield": false,
      "source": "raid simulator, warlock-destruction.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "crit_rating": 0.81073,
-      "fire_damage": 0.16593,
-      "haste_rating": 0.89412,
-      "hit_rating": 1.23054,
-      "intellect": 0.40586,
-      "shadow_damage": 0.83407,
+      "crit_rating": 0.81943,
+      "fire_damage": 0.16615,
+      "haste_rating": 0.88561,
+      "hit_rating": 1.12839,
+      "intellect": 0.36991,
+      "shadow_damage": 0.83385,
       "spell_power": 1.0,
-      "spell_penetration": 1.53807,
-      "spirit": 0.11413,
-      "hit_rating_below_cap": 1.2859,
+      "spell_penetration": 1.49689,
+      "spirit": 0.01287,
+      "hit_rating_below_cap": 1.3224,
       "hit_rating_above_cap": 0.0,
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "crit_rating": 0.017575,
-      "fire_damage": 0.000251,
-      "haste_rating": 0.085596,
-      "hit_rating": 0.070235,
-      "intellect": 0.075643,
-      "shadow_damage": 0.000982,
-      "spell_damage": 0.001024,
-      "spell_penetration": 0.010287,
-      "spell_power": 0.001024,
-      "spirit": 0.050603
+      "crit_rating": 0.017564,
+      "fire_damage": 0.000248,
+      "haste_rating": 0.082711,
+      "hit_rating": 0.072681,
+      "intellect": 0.07097,
+      "shadow_damage": 0.00097,
+      "spell_damage": 0.001016,
+      "spell_penetration": 0.009963,
+      "spell_power": 0.001016,
+      "spirit": 0.047868
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
@@ -47544,31 +47548,31 @@
      "dual_wield": false,
      "source": "raid simulator, warlock-hybrid-affliction-destruction.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "crit_rating": 0.89982,
-      "fire_damage": 0.09841,
-      "haste_rating": 0.87368,
-      "hit_rating": 1.30156,
-      "intellect": 0.46915,
-      "shadow_damage": 0.90159,
+      "crit_rating": 0.88275,
+      "fire_damage": 0.09908,
+      "haste_rating": 0.94374,
+      "hit_rating": 1.21279,
+      "intellect": 0.35942,
+      "shadow_damage": 0.90092,
       "spell_power": 1.0,
-      "spell_penetration": 1.44536,
-      "spirit": 0.13719,
-      "hit_rating_below_cap": 1.32447,
+      "spell_penetration": 1.43385,
+      "spirit": 0.17321,
+      "hit_rating_below_cap": 1.23582,
       "hit_rating_above_cap": 0.0,
       "spell_damage": 1.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "crit_rating": 0.017478,
-      "fire_damage": 0.000136,
-      "haste_rating": 0.08076,
-      "hit_rating": 0.067708,
-      "intellect": 0.073308,
-      "shadow_damage": 0.001022,
-      "spell_damage": 0.001033,
-      "spell_penetration": 0.010136,
-      "spell_power": 0.001033,
-      "spirit": 0.04745
+      "crit_rating": 0.017361,
+      "fire_damage": 0.000138,
+      "haste_rating": 0.078361,
+      "hit_rating": 0.06655,
+      "intellect": 0.072321,
+      "shadow_damage": 0.001062,
+      "spell_damage": 0.001074,
+      "spell_penetration": 0.010074,
+      "spell_power": 0.001074,
+      "spirit": 0.047136
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
      "default": false,
@@ -51521,33 +51525,33 @@
      "dual_wield": false,
      "source": "raid simulator, warrior-arms.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "mh_weapon_dps": 17.13483,
-      "agility": 1.86046,
-      "armor_penetration": 0.44025,
+      "mh_weapon_dps": 17.19103,
+      "agility": 1.84444,
+      "armor_penetration": 0.4425,
       "attack_power": 1.0,
-      "crit_rating": 2.35613,
-      "expertise_rating": 1.36871,
-      "haste_rating": 1.5055,
-      "strength": 2.20008,
-      "hit_rating_below_cap": 4.66942,
+      "crit_rating": 2.3462,
+      "expertise_rating": 1.48265,
+      "haste_rating": 1.5193,
+      "strength": 2.2,
+      "hit_rating_below_cap": 4.50331,
       "hit_rating_above_cap": 0.0,
       "spell_power": 0.0,
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "agility": 0.067627,
-      "armor_penetration": 0.000535,
-      "attack_power": 0.001075,
-      "crit_rating": 0.06286,
-      "expertise_rating": 0.310465,
-      "haste_rating": 0.260357,
-      "hit_rating": 0.283618,
-      "mh_weapon_dps": 0.020284,
-      "strength": 0.002365
+      "agility": 0.065895,
+      "armor_penetration": 0.000539,
+      "attack_power": 0.001076,
+      "crit_rating": 0.061772,
+      "expertise_rating": 0.306933,
+      "haste_rating": 0.260116,
+      "hit_rating": 0.274557,
+      "mh_weapon_dps": 0.020354,
+      "strength": 0.002368
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
-     "default": true,
+     "default": false,
      "forms": []
     },
     {
@@ -51598,36 +51602,36 @@
      "dual_wield": true,
      "source": "raid simulator, warrior-fury.json (the spec's best build in its phase-1 BiS set, full raid)",
      "values": {
-      "mh_weapon_dps": 9.56937,
-      "oh_weapon_dps": 3.60657,
-      "agility": 1.30496,
-      "armor_penetration": 0.43097,
+      "mh_weapon_dps": 9.91846,
+      "oh_weapon_dps": 3.04526,
+      "agility": 1.3028,
+      "armor_penetration": 0.4357,
       "attack_power": 1.0,
-      "crit_rating": 1.73525,
-      "expertise_rating": 5.90851,
-      "haste_rating": 2.23592,
-      "hit_rating": 3.69638,
-      "strength": 2.20007,
-      "hit_rating_below_cap": 4.94605,
-      "hit_rating_above_cap": 3.69638,
+      "crit_rating": 1.67062,
+      "expertise_rating": 5.32148,
+      "haste_rating": 2.3107,
+      "hit_rating": 5.12213,
+      "strength": 2.20043,
+      "hit_rating_below_cap": 5.37751,
+      "hit_rating_above_cap": 5.12213,
       "spell_power": 0.0,
       "spell_damage": 0.0,
       "spell_healing": 0.0
      },
      "errors": {
-      "agility": 0.13725,
-      "armor_penetration": 0.000438,
-      "attack_power": 0.000873,
-      "crit_rating": 0.120898,
-      "expertise_rating": 0.325638,
-      "haste_rating": 0.239196,
-      "hit_rating": 0.304469,
-      "mh_weapon_dps": 0.011835,
-      "oh_weapon_dps": 0.004345,
-      "strength": 0.00192
+      "agility": 0.135716,
+      "armor_penetration": 0.000451,
+      "attack_power": 0.000915,
+      "crit_rating": 0.119988,
+      "expertise_rating": 0.327211,
+      "haste_rating": 0.238435,
+      "hit_rating": 0.328052,
+      "mh_weapon_dps": 0.012514,
+      "oh_weapon_dps": 0.003554,
+      "strength": 0.002014
      },
      "errors_note": "one standard error of each value, same unit (raid simulator: the value's own stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json: weights_stdev / sqrt(sample_counts) over the unit stat's weight). The unit stat carries its own error, not 0: with every error taken over the same weight, sqrt(sum ((new - old) x error)^2) over a swap's stats is the swap's error where it decides, at a gain of 0 (the ratio's scale error only rescales a gain, never its sign). hit_rating: the error of the value under the cap (the run with the set's hit taken off); a dual-wielder's is the larger of it and the BiS reading's (hit_rating_above_cap). Sum stats' errors as independent: over 12 seeds (weight-errors.json study) real slot swaps spread 0.8-1.1x that sum; per stat the errors are 0.6-1.3x the spread for crit, haste, hit, expertise and the main stats, and up to 1.8x low for spell power, attack power, strength and weapon DPS, whose errors are about 0.1% of their values. A gain inside about two errors is a tie",
-     "default": false,
+     "default": true,
      "forms": []
     }
    ],
@@ -51672,7 +51676,7 @@
      "Shield Slam": 1
     },
     "unit": "stamina",
-    "source": "raid simulator, protection-ml-tank in prot-tank, 2026-11-17: tank value per point (threat, damage taken, effective health)",
+    "source": "raid simulator, protection-ml-tank in prot-tank, 2026-11-19: tank value per point (threat, damage taken, effective health)",
     "values": {
      "strength": 0.41,
      "agility": 0.64114,
@@ -52382,7 +52386,7 @@
     "hit_rating": {
      "cap_pct": 17.0,
      "current_pct": 0.0,
-     "below": 1.09252,
+     "below": 1.11122,
      "above": 0.0
     },
     "expertise_rating": {
@@ -52416,8 +52420,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 13.97496,
-    "pct": 1.397496
+    "score_delta": 14.60574,
+    "pct": 1.460574
    }
   },
   {
@@ -52434,7 +52438,7 @@
     "hit_rating": {
      "cap_pct": 17.0,
      "current_pct": 16.0,
-     "below": 1.09252,
+     "below": 1.11122,
      "above": 0.0
     },
     "expertise_rating": {
@@ -52464,8 +52468,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 10.9252,
-    "pct": 1.09252
+    "score_delta": 11.1122,
+    "pct": 1.11122
    }
   },
   {
@@ -53471,13 +53475,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 0.0,
-     "below": 4.38678,
+     "below": 4.49864,
      "above": 0.0
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 0.0,
-     "below": 1.1558,
+     "below": 1.20981,
      "above": 0.0
     }
    },
@@ -53504,8 +53508,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 64.8297,
-    "pct": 6.48297
+    "score_delta": 65.2611,
+    "pct": 6.52611
    }
   },
   {
@@ -53522,13 +53526,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 7.0,
-     "below": 4.38678,
+     "below": 4.49864,
      "above": 0.0
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 0.0,
-     "below": 1.1558,
+     "below": 1.20981,
      "above": 0.0
     }
    },
@@ -53552,8 +53556,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 43.8678,
-    "pct": 4.38678
+    "score_delta": 44.9864,
+    "pct": 4.49864
    }
   },
   {
@@ -53570,13 +53574,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 0.0,
-     "below": 4.38678,
+     "below": 4.49864,
      "above": 0.0
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 4.5,
-     "below": 1.1558,
+     "below": 1.20981,
      "above": 0.0
     }
    },
@@ -53600,8 +53604,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 23.116,
-    "pct": 2.3116
+    "score_delta": 24.1962,
+    "pct": 2.41962
    }
   },
   {
@@ -53618,13 +53622,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 0.0,
-     "below": 3.93804,
-     "above": 1.98736
+     "below": 4.20927,
+     "above": 2.51042
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 0.0,
-     "below": 3.54219,
+     "below": 3.85836,
      "above": 0.0
     }
    },
@@ -53651,8 +53655,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 55.57473,
-    "pct": 5.557473
+    "score_delta": 54.45855,
+    "pct": 5.445855
    }
   },
   {
@@ -53669,13 +53673,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 7.0,
-     "below": 3.93804,
-     "above": 1.98736
+     "below": 4.20927,
+     "above": 2.51042
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 0.0,
-     "below": 3.54219,
+     "below": 3.85836,
      "above": 0.0
     }
    },
@@ -53699,8 +53703,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 59.254,
-    "pct": 5.9254
+    "score_delta": 67.1969,
+    "pct": 6.71969
    }
   },
   {
@@ -53717,13 +53721,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 0.0,
-     "below": 3.93804,
-     "above": 1.98736
+     "below": 4.20927,
+     "above": 2.51042
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 4.5,
-     "below": 3.54219,
+     "below": 3.85836,
      "above": 0.0
     }
    },
@@ -53747,8 +53751,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 70.8438,
-    "pct": 7.08438
+    "score_delta": 77.1672,
+    "pct": 7.71672
    }
   },
   {
@@ -53765,13 +53769,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 0.0,
-     "below": 3.93804,
-     "above": 1.98736
+     "below": 4.20927,
+     "above": 2.51042
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 0.0,
-     "below": 3.54219,
+     "below": 3.85836,
      "above": 0.0
     }
    },
@@ -53796,8 +53800,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 12.62577,
-    "pct": 1.262577
+    "score_delta": 12.68525,
+    "pct": 1.268525
    }
   },
   {
@@ -54462,7 +54466,7 @@
     "hit_rating": {
      "cap_pct": 17.0,
      "current_pct": 0.0,
-     "below": 1.52573,
+     "below": 1.41963,
      "above": 0.0
     },
     "expertise_rating": {
@@ -54496,8 +54500,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 15.62863,
-    "pct": 1.562863
+    "score_delta": 15.49105,
+    "pct": 1.549105
    }
   },
   {
@@ -54514,7 +54518,7 @@
     "hit_rating": {
      "cap_pct": 17.0,
      "current_pct": 16.0,
-     "below": 1.52573,
+     "below": 1.41963,
      "above": 0.0
     },
     "expertise_rating": {
@@ -54544,8 +54548,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 15.2573,
-    "pct": 1.52573
+    "score_delta": 14.1963,
+    "pct": 1.41963
    }
   },
   {
@@ -55251,13 +55255,13 @@
     "hit_rating": {
      "cap_pct": 17.0,
      "current_pct": 0.0,
-     "below": 3.66592,
+     "below": 2.92296,
      "above": 0.0
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 0.0,
-     "below": 2.77915,
+     "below": 2.2746,
      "above": 0.0
     }
    },
@@ -55285,8 +55289,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 26.29837,
-    "pct": 2.629837
+    "score_delta": 24.07698,
+    "pct": 2.407698
    }
   },
   {
@@ -55303,13 +55307,13 @@
     "hit_rating": {
      "cap_pct": 17.0,
      "current_pct": 16.0,
-     "below": 3.66592,
+     "below": 2.92296,
      "above": 0.0
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 0.0,
-     "below": 2.77915,
+     "below": 2.2746,
      "above": 0.0
     }
    },
@@ -55333,8 +55337,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 36.6592,
-    "pct": 3.66592
+    "score_delta": 29.2296,
+    "pct": 2.92296
    }
   },
   {
@@ -55385,8 +55389,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 38.3274,
-    "pct": 3.83274
+    "score_delta": 35.5388,
+    "pct": 3.55388
    }
   },
   {
@@ -56246,7 +56250,7 @@
     "hit_rating": {
      "cap_pct": 17.0,
      "current_pct": 0.0,
-     "below": 0.50138,
+     "below": 0.50495,
      "above": 0.0
     },
     "expertise_rating": {
@@ -56280,8 +56284,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 10.46287,
-    "pct": 1.046287
+    "score_delta": 10.55059,
+    "pct": 1.055059
    }
   },
   {
@@ -56298,7 +56302,7 @@
     "hit_rating": {
      "cap_pct": 17.0,
      "current_pct": 16.0,
-     "below": 0.50138,
+     "below": 0.50495,
      "above": 0.0
     },
     "expertise_rating": {
@@ -56328,8 +56332,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 5.0138,
-    "pct": 0.50138
+    "score_delta": 5.0495,
+    "pct": 0.50495
    }
   },
   {
@@ -57176,13 +57180,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 0.0,
-     "below": 3.54207,
-     "above": 2.24599
+     "below": 3.56837,
+     "above": 2.18325
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 0.0,
-     "below": 2.72236,
+     "below": 2.67476,
      "above": 0.0
     }
    },
@@ -57209,8 +57213,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 55.92316,
-    "pct": 5.592316
+    "score_delta": 56.39078,
+    "pct": 5.639078
    }
   },
   {
@@ -57227,13 +57231,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 7.0,
-     "below": 3.54207,
-     "above": 2.24599
+     "below": 3.56837,
+     "above": 2.18325
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 0.0,
-     "below": 2.72236,
+     "below": 2.67476,
      "above": 0.0
     }
    },
@@ -57257,8 +57261,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 57.8806,
-    "pct": 5.78806
+    "score_delta": 57.5162,
+    "pct": 5.75162
    }
   },
   {
@@ -57275,13 +57279,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 0.0,
-     "below": 3.54207,
-     "above": 2.24599
+     "below": 3.56837,
+     "above": 2.18325
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 4.5,
-     "below": 2.72236,
+     "below": 2.67476,
      "above": 0.0
     }
    },
@@ -57305,8 +57309,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 54.4472,
-    "pct": 5.44472
+    "score_delta": 53.4952,
+    "pct": 5.34952
    }
   },
   {
@@ -57323,13 +57327,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 0.0,
-     "below": 3.54207,
-     "above": 2.24599
+     "below": 3.56837,
+     "above": 2.18325
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 0.0,
-     "below": 2.72236,
+     "below": 2.67476,
      "above": 0.0
     }
    },
@@ -57354,8 +57358,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 12.2408,
-    "pct": 1.22408
+    "score_delta": 12.35479,
+    "pct": 1.235479
    }
   },
   {
@@ -57372,13 +57376,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 0.0,
-     "below": 3.59733,
-     "above": 2.41892
+     "below": 3.83028,
+     "above": 2.09293
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 0.0,
-     "below": 2.58608,
+     "below": 2.42277,
      "above": 0.0
     }
    },
@@ -57405,8 +57409,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 48.75285,
-    "pct": 4.875285
+    "score_delta": 47.79229,
+    "pct": 4.779229
    }
   },
   {
@@ -57423,13 +57427,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 7.0,
-     "below": 3.59733,
-     "above": 2.41892
+     "below": 3.83028,
+     "above": 2.09293
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 0.0,
-     "below": 2.58608,
+     "below": 2.42277,
      "above": 0.0
     }
    },
@@ -57453,8 +57457,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 60.1625,
-    "pct": 6.01625
+    "score_delta": 59.2321,
+    "pct": 5.92321
    }
   },
   {
@@ -57471,13 +57475,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 0.0,
-     "below": 3.59733,
-     "above": 2.41892
+     "below": 3.83028,
+     "above": 2.09293
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 4.5,
-     "below": 2.58608,
+     "below": 2.42277,
      "above": 0.0
     }
    },
@@ -57501,8 +57505,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 51.7216,
-    "pct": 5.17216
+    "score_delta": 48.4554,
+    "pct": 4.84554
    }
   },
   {
@@ -57519,13 +57523,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 0.0,
-     "below": 3.59733,
-     "above": 2.41892
+     "below": 3.83028,
+     "above": 2.09293
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 0.0,
-     "below": 2.58608,
+     "below": 2.42277,
      "above": 0.0
     }
    },
@@ -57550,8 +57554,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 13.25677,
-    "pct": 1.325677
+    "score_delta": 13.70769,
+    "pct": 1.370769
    }
   },
   {
@@ -58222,7 +58226,7 @@
     "hit_rating": {
      "cap_pct": 17.0,
      "current_pct": 0.0,
-     "below": 1.38544,
+     "below": 1.35504,
      "above": 0.0
     },
     "expertise_rating": {
@@ -58256,8 +58260,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 15.35715,
-    "pct": 1.535715
+    "score_delta": 14.24382,
+    "pct": 1.424382
    }
   },
   {
@@ -58274,7 +58278,7 @@
     "hit_rating": {
      "cap_pct": 17.0,
      "current_pct": 16.0,
-     "below": 1.38544,
+     "below": 1.35504,
      "above": 0.0
     },
     "expertise_rating": {
@@ -58304,8 +58308,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 13.8544,
-    "pct": 1.38544
+    "score_delta": 13.5504,
+    "pct": 1.35504
    }
   },
   {
@@ -59070,7 +59074,7 @@
     "hit_rating": {
      "cap_pct": 17.0,
      "current_pct": 0.0,
-     "below": 1.2896,
+     "below": 1.26749,
      "above": 0.0
     },
     "expertise_rating": {
@@ -59104,8 +59108,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 18.22442,
-    "pct": 1.822442
+    "score_delta": 17.94787,
+    "pct": 1.794787
    }
   },
   {
@@ -59122,7 +59126,7 @@
     "hit_rating": {
      "cap_pct": 17.0,
      "current_pct": 16.0,
-     "below": 1.2896,
+     "below": 1.26749,
      "above": 0.0
     },
     "expertise_rating": {
@@ -59152,8 +59156,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 12.896,
-    "pct": 1.2896
+    "score_delta": 12.6749,
+    "pct": 1.26749
    }
   },
   {
@@ -59894,13 +59898,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 0.0,
-     "below": 4.66942,
+     "below": 4.50331,
      "above": 0.0
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 0.0,
-     "below": 1.36871,
+     "below": 1.48265,
      "above": 0.0
     }
    },
@@ -59927,8 +59931,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 47.72916,
-    "pct": 4.772916
+    "score_delta": 47.44676,
+    "pct": 4.744676
    }
   },
   {
@@ -59945,13 +59949,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 7.0,
-     "below": 4.66942,
+     "below": 4.50331,
      "above": 0.0
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 0.0,
-     "below": 1.36871,
+     "below": 1.48265,
      "above": 0.0
     }
    },
@@ -59975,8 +59979,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 46.6942,
-    "pct": 4.66942
+    "score_delta": 45.0331,
+    "pct": 4.50331
    }
   },
   {
@@ -59993,13 +59997,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 0.0,
-     "below": 4.66942,
+     "below": 4.50331,
      "above": 0.0
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 4.5,
-     "below": 1.36871,
+     "below": 1.48265,
      "above": 0.0
     }
    },
@@ -60023,8 +60027,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 27.3742,
-    "pct": 2.73742
+    "score_delta": 29.653,
+    "pct": 2.9653
    }
   },
   {
@@ -60041,13 +60045,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 0.0,
-     "below": 4.94605,
-     "above": 3.69638
+     "below": 5.37751,
+     "above": 5.12213
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 0.0,
-     "below": 5.90851,
+     "below": 5.32148,
      "above": 0.0
     }
    },
@@ -60074,8 +60078,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 34.03744,
-    "pct": 3.403744
+    "score_delta": 33.10958,
+    "pct": 3.310958
    }
   },
   {
@@ -60092,13 +60096,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 7.0,
-     "below": 4.94605,
-     "above": 3.69638
+     "below": 5.37751,
+     "above": 5.12213
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 0.0,
-     "below": 5.90851,
+     "below": 5.32148,
      "above": 0.0
     }
    },
@@ -60122,8 +60126,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 86.4243,
-    "pct": 8.64243
+    "score_delta": 104.9964,
+    "pct": 10.49964
    }
   },
   {
@@ -60140,13 +60144,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 0.0,
-     "below": 4.94605,
-     "above": 3.69638
+     "below": 5.37751,
+     "above": 5.12213
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 4.5,
-     "below": 5.90851,
+     "below": 5.32148,
      "above": 0.0
     }
    },
@@ -60170,8 +60174,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 118.1702,
-    "pct": 11.81702
+    "score_delta": 106.4296,
+    "pct": 10.64296
    }
   },
   {
@@ -60188,13 +60192,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 0.0,
-     "below": 4.94605,
-     "above": 3.69638
+     "below": 5.37751,
+     "above": 5.12213
     },
     "expertise_rating": {
      "cap_pct": 6.5,
      "current_pct": 0.0,
-     "below": 5.90851,
+     "below": 5.32148,
      "above": 0.0
     }
    },
@@ -60219,8 +60223,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 12.12467,
-    "pct": 1.212467
+    "score_delta": 10.43858,
+    "pct": 1.043858
    }
   },
   {
@@ -60816,16 +60820,16 @@
     "moonkin"
    ],
    "values": {
-    "arcane_damage": 0.79848,
-    "crit_rating": 0.67031,
-    "haste_rating": 1.29072,
-    "hit_rating": 1.06892,
-    "intellect": 0.20469,
-    "nature_damage": 0.20168,
+    "arcane_damage": 0.79674,
+    "crit_rating": 0.7162,
+    "haste_rating": 1.25903,
+    "hit_rating": 1.04283,
+    "intellect": 0.21093,
+    "nature_damage": 0.20326,
     "spell_power": 1.0,
-    "spell_penetration": 2.077,
-    "spirit": 0.0,
-    "hit_rating_below_cap": 1.09252,
+    "spell_penetration": 1.99696,
+    "spirit": 0.00016,
+    "hit_rating_below_cap": 1.11122,
     "hit_rating_above_cap": 0.0,
     "spell_damage": 1.0,
     "spell_healing": 0.0,
@@ -60870,16 +60874,16 @@
     "Natural Instinct": 2
    },
    "expected": {
-    "arcane_damage": 0.79848,
-    "crit_rating": 0.67031,
-    "haste_rating": 1.29072,
-    "hit_rating": 1.06892,
-    "intellect": 0.18608,
-    "nature_damage": 0.20168,
+    "arcane_damage": 0.79674,
+    "crit_rating": 0.7162,
+    "haste_rating": 1.25903,
+    "hit_rating": 1.04283,
+    "intellect": 0.19175,
+    "nature_damage": 0.20326,
     "spell_power": 1.0,
-    "spell_penetration": 2.077,
-    "spirit": 0.0,
-    "hit_rating_below_cap": 1.09252,
+    "spell_penetration": 1.99696,
+    "spirit": 0.00018,
+    "hit_rating_below_cap": 1.11122,
     "hit_rating_above_cap": 0.0,
     "spell_damage": 1.0,
     "spell_healing": 0.0,
@@ -61154,18 +61158,18 @@
    "level": 60,
    "forms": [],
    "values": {
-    "ranged_weapon_dps": 8.36594,
-    "agility": 2.98188,
-    "armor_penetration": 0.2885,
-    "crit_rating": 2.71377,
-    "expertise_rating": 1.1558,
-    "haste_rating": 1.9846,
-    "hit_rating": 3.77219,
-    "intellect": 1.12092,
+    "ranged_weapon_dps": 8.35104,
+    "agility": 2.995,
+    "armor_penetration": 0.28565,
+    "crit_rating": 2.73615,
+    "expertise_rating": 1.20981,
+    "haste_rating": 1.94233,
+    "hit_rating": 3.7743,
+    "intellect": 1.10082,
     "ranged_attack_power": 1.0,
-    "spell_penetration": 1.27853,
-    "spirit": 0.01766,
-    "hit_rating_below_cap": 4.38678,
+    "spell_penetration": 1.26612,
+    "spirit": 0.00091,
+    "hit_rating_below_cap": 4.49864,
     "hit_rating_above_cap": 0.0,
     "spell_power": 0.0,
     "spell_damage": 0.0,
@@ -61211,18 +61215,18 @@
     "Survivalist": 5
    },
    "expected": {
-    "ranged_weapon_dps": 8.36594,
-    "agility": 3.42916,
-    "armor_penetration": 0.2885,
-    "crit_rating": 2.71377,
-    "expertise_rating": 1.1558,
-    "haste_rating": 1.9846,
-    "hit_rating": 3.77219,
-    "intellect": 1.12092,
+    "ranged_weapon_dps": 8.35104,
+    "agility": 3.44425,
+    "armor_penetration": 0.28565,
+    "crit_rating": 2.73615,
+    "expertise_rating": 1.20981,
+    "haste_rating": 1.94233,
+    "hit_rating": 3.7743,
+    "intellect": 1.10082,
     "ranged_attack_power": 1.0,
-    "spell_penetration": 1.27853,
-    "spirit": 0.01766,
-    "hit_rating_below_cap": 4.38678,
+    "spell_penetration": 1.26612,
+    "spirit": 0.00091,
+    "hit_rating_below_cap": 4.49864,
     "hit_rating_above_cap": 0.0,
     "spell_power": 0.0,
     "spell_damage": 0.0,
@@ -61323,16 +61327,16 @@
    "level": 60,
    "forms": [],
    "values": {
-    "arcane_damage": 0.88753,
-    "crit_rating": 0.82634,
-    "fire_damage": 0.11247,
-    "haste_rating": 0.93347,
-    "hit_rating": 1.58654,
-    "intellect": 0.90469,
+    "arcane_damage": 0.80813,
+    "crit_rating": 0.82772,
+    "fire_damage": 0.19187,
+    "haste_rating": 1.22007,
+    "hit_rating": 1.6007,
+    "intellect": 0.98059,
     "spell_power": 1.0,
-    "spell_penetration": 2.68376,
-    "spirit": 0.17385,
-    "hit_rating_below_cap": 1.52573,
+    "spell_penetration": 2.56646,
+    "spirit": 0.17283,
+    "hit_rating_below_cap": 1.41963,
     "hit_rating_above_cap": 0.0,
     "spell_damage": 1.0,
     "spell_healing": 0.0
@@ -61377,16 +61381,16 @@
     "Arcane Resilience": 3
    },
    "expected": {
-    "arcane_damage": 0.88753,
-    "crit_rating": 0.82634,
-    "fire_damage": 0.11247,
-    "haste_rating": 0.93347,
-    "hit_rating": 1.58654,
-    "intellect": 0.82245,
+    "arcane_damage": 0.80813,
+    "crit_rating": 0.82772,
+    "fire_damage": 0.19187,
+    "haste_rating": 1.22007,
+    "hit_rating": 1.6007,
+    "intellect": 0.89145,
     "spell_power": 1.0,
-    "spell_penetration": 2.68376,
-    "spirit": 0.17385,
-    "hit_rating_below_cap": 1.52573,
+    "spell_penetration": 2.56646,
+    "spirit": 0.17283,
+    "hit_rating_below_cap": 1.41963,
     "hit_rating_above_cap": 0.0,
     "spell_damage": 1.0,
     "spell_healing": 0.0
@@ -61492,20 +61496,20 @@
    "level": 60,
    "forms": [],
    "values": {
-    "mh_weapon_dps": 9.39445,
-    "agility": 1.08061,
-    "armor_penetration": 0.17248,
-    "attack_power": 0.66592,
-    "crit_rating": 1.52493,
-    "expertise_rating": 2.77915,
-    "haste_rating": 0.27897,
-    "hit_rating": 3.64267,
+    "mh_weapon_dps": 7.77879,
+    "agility": 0.97559,
+    "armor_penetration": 0.16209,
+    "attack_power": 0.58619,
+    "crit_rating": 1.36651,
+    "expertise_rating": 2.2746,
+    "haste_rating": 0.95156,
+    "hit_rating": 3.07246,
     "holy_damage": 1.0,
-    "intellect": 0.02625,
+    "intellect": 0.02708,
     "spell_power": 1.0,
-    "spirit": 0.00037,
-    "strength": 1.59843,
-    "hit_rating_below_cap": 3.66592,
+    "spirit": 0.0,
+    "strength": 1.40656,
+    "hit_rating_below_cap": 2.92296,
     "hit_rating_above_cap": 0.0,
     "spell_damage": 1.0,
     "spell_healing": 0.0
@@ -61550,20 +61554,20 @@
     "Divine Intellect": 5
    },
    "expected": {
-    "mh_weapon_dps": 9.39445,
-    "agility": 1.08061,
-    "armor_penetration": 0.17248,
-    "attack_power": 0.66592,
-    "crit_rating": 1.52493,
-    "expertise_rating": 2.77915,
-    "haste_rating": 0.27897,
-    "hit_rating": 3.64267,
+    "mh_weapon_dps": 7.77879,
+    "agility": 0.97559,
+    "armor_penetration": 0.16209,
+    "attack_power": 0.58619,
+    "crit_rating": 1.36651,
+    "expertise_rating": 2.2746,
+    "haste_rating": 0.95156,
+    "hit_rating": 3.07246,
     "holy_damage": 1.0,
     "intellect": 0.0,
     "spell_power": 1.0,
-    "spirit": 0.00037,
-    "strength": 1.45312,
-    "hit_rating_below_cap": 3.66592,
+    "spirit": 0.0,
+    "strength": 1.27869,
+    "hit_rating_below_cap": 2.92296,
     "hit_rating_above_cap": 0.0,
     "spell_damage": 1.0,
     "spell_healing": 0.0
@@ -61578,10 +61582,10 @@
    "level": 60,
    "forms": [],
    "values": {
-    "intellect": 2.7926,
-    "spirit": 1.3699,
-    "mp5": 7.1307,
-    "crit_rating": 1.6135,
+    "intellect": 3.0052,
+    "spirit": 1.2616,
+    "mp5": 6.4897,
+    "crit_rating": 1.345,
     "haste_rating": 0.0,
     "spell_power": 1.0,
     "spell_damage": 0.0,
@@ -61632,10 +61636,10 @@
     "Toughness": 5
    },
    "expected": {
-    "intellect": 2.53873,
-    "spirit": 1.3699,
-    "mp5": 7.1307,
-    "crit_rating": 1.6135,
+    "intellect": 2.732,
+    "spirit": 1.2616,
+    "mp5": 6.4897,
+    "crit_rating": 1.345,
     "haste_rating": 0.0,
     "spell_power": 1.0,
     "spell_damage": 0.0,
@@ -61835,16 +61839,16 @@
    "level": 60,
    "forms": [],
    "values": {
-    "crit_rating": 0.40566,
-    "haste_rating": 0.50099,
-    "hit_rating": 0.42326,
-    "holy_damage": 0.69996,
-    "intellect": 0.16456,
-    "shadow_damage": 0.30004,
+    "crit_rating": 0.40901,
+    "haste_rating": 0.51141,
+    "hit_rating": 0.47081,
+    "holy_damage": 0.69441,
+    "intellect": 0.163,
+    "shadow_damage": 0.30559,
     "spell_power": 1.0,
-    "spell_penetration": 0.52769,
-    "spirit": 0.02255,
-    "hit_rating_below_cap": 0.50138,
+    "spell_penetration": 0.54494,
+    "spirit": 0.03009,
+    "hit_rating_below_cap": 0.50495,
     "hit_rating_above_cap": 0.0,
     "spell_damage": 1.0,
     "spell_healing": 0.0
@@ -61891,16 +61895,16 @@
     "Spiritual Guidance": 5
    },
    "expected": {
-    "crit_rating": 0.40566,
-    "haste_rating": 0.50099,
-    "hit_rating": 0.42326,
-    "holy_damage": 0.69996,
-    "intellect": 0.1496,
-    "shadow_damage": 0.30004,
+    "crit_rating": 0.40901,
+    "haste_rating": 0.51141,
+    "hit_rating": 0.47081,
+    "holy_damage": 0.69441,
+    "intellect": 0.14818,
+    "shadow_damage": 0.30559,
     "spell_power": 1.0,
-    "spell_penetration": 0.52769,
-    "spirit": 0.10255,
-    "hit_rating_below_cap": 0.50138,
+    "spell_penetration": 0.54494,
+    "spirit": 0.11009,
+    "hit_rating_below_cap": 0.50495,
     "hit_rating_above_cap": 0.0,
     "spell_damage": 1.0,
     "spell_healing": 0.0
@@ -62077,19 +62081,19 @@
    "level": 60,
    "forms": [],
    "values": {
-    "mh_weapon_dps": 7.70713,
-    "oh_weapon_dps": 3.39784,
-    "agility": 2.04728,
-    "armor_penetration": 0.40625,
+    "mh_weapon_dps": 7.73746,
+    "oh_weapon_dps": 3.42193,
+    "agility": 2.089,
+    "armor_penetration": 0.41626,
     "attack_power": 1.0,
-    "crit_rating": 2.03566,
-    "expertise_rating": 2.72236,
-    "haste_rating": 1.4391,
-    "hit_rating": 2.24599,
-    "spell_penetration": 0.7484,
-    "strength": 1.10016,
-    "hit_rating_below_cap": 3.54207,
-    "hit_rating_above_cap": 2.24599,
+    "crit_rating": 2.04207,
+    "expertise_rating": 2.67476,
+    "haste_rating": 1.41141,
+    "hit_rating": 2.18325,
+    "spell_penetration": 0.71319,
+    "strength": 1.09992,
+    "hit_rating_below_cap": 3.56837,
+    "hit_rating_above_cap": 2.18325,
     "spell_power": 0.0,
     "spell_damage": 0.0,
     "spell_healing": 0.0
@@ -62141,19 +62145,19 @@
     "Opportunity": 2
    },
    "expected": {
-    "mh_weapon_dps": 7.70713,
-    "oh_weapon_dps": 2.71827,
-    "agility": 2.04728,
-    "armor_penetration": 0.40625,
+    "mh_weapon_dps": 7.73746,
+    "oh_weapon_dps": 2.73754,
+    "agility": 2.089,
+    "armor_penetration": 0.41626,
     "attack_power": 1.0,
-    "crit_rating": 2.03566,
-    "expertise_rating": 2.72236,
-    "haste_rating": 1.4391,
-    "hit_rating": 2.24599,
-    "spell_penetration": 0.7484,
-    "strength": 1.10016,
-    "hit_rating_below_cap": 3.54207,
-    "hit_rating_above_cap": 2.24599,
+    "crit_rating": 2.04207,
+    "expertise_rating": 2.67476,
+    "haste_rating": 1.41141,
+    "hit_rating": 2.18325,
+    "spell_penetration": 0.71319,
+    "strength": 1.09992,
+    "hit_rating_below_cap": 3.56837,
+    "hit_rating_above_cap": 2.18325,
     "spell_power": 0.0,
     "spell_damage": 0.0,
     "spell_healing": 0.0
@@ -62269,16 +62273,16 @@
    "level": 60,
    "forms": [],
    "values": {
-    "crit_rating": 0.75326,
-    "fire_damage": 0.1265,
-    "haste_rating": 1.4845,
-    "hit_rating": 1.66571,
-    "intellect": 0.38002,
-    "nature_damage": 0.8735,
+    "crit_rating": 0.70939,
+    "fire_damage": 0.12766,
+    "haste_rating": 1.51439,
+    "hit_rating": 1.47224,
+    "intellect": 0.36052,
+    "nature_damage": 0.87234,
     "spell_power": 1.0,
-    "spell_penetration": 2.3917,
-    "spirit": 0.11431,
-    "hit_rating_below_cap": 1.38544,
+    "spell_penetration": 2.33533,
+    "spirit": 0.00668,
+    "hit_rating_below_cap": 1.35504,
     "hit_rating_above_cap": 0.0,
     "spell_damage": 1.0,
     "spell_healing": 0.0
@@ -62322,16 +62326,16 @@
     "Toughness": 5
    },
    "expected": {
-    "crit_rating": 0.75326,
-    "fire_damage": 0.1265,
-    "haste_rating": 1.4845,
-    "hit_rating": 1.66571,
-    "intellect": 0.65851,
-    "nature_damage": 0.8735,
+    "crit_rating": 0.70939,
+    "fire_damage": 0.12766,
+    "haste_rating": 1.51439,
+    "hit_rating": 1.47224,
+    "intellect": 0.64011,
+    "nature_damage": 0.87234,
     "spell_power": 1.0,
-    "spell_penetration": 2.3917,
-    "spirit": 0.11431,
-    "hit_rating_below_cap": 1.38544,
+    "spell_penetration": 2.33533,
+    "spirit": 0.00668,
+    "hit_rating_below_cap": 1.35504,
     "hit_rating_above_cap": 0.0,
     "spell_damage": 1.0,
     "spell_healing": 0.0
@@ -62494,16 +62498,16 @@
    "level": 60,
    "forms": [],
    "values": {
-    "crit_rating": 0.94507,
-    "fire_damage": 0.10186,
-    "haste_rating": 0.81895,
-    "hit_rating": 1.14923,
-    "intellect": 0.34438,
-    "shadow_damage": 0.89829,
+    "crit_rating": 0.92376,
+    "fire_damage": 0.10272,
+    "haste_rating": 0.74817,
+    "hit_rating": 1.29061,
+    "intellect": 0.33626,
+    "shadow_damage": 0.89728,
     "spell_power": 1.0,
-    "spell_penetration": 1.39538,
-    "spirit": 0.13644,
-    "hit_rating_below_cap": 1.2896,
+    "spell_penetration": 1.36245,
+    "spirit": 0.13755,
+    "hit_rating_below_cap": 1.26749,
     "hit_rating_above_cap": 0.0,
     "spell_damage": 1.0,
     "spell_healing": 0.0
@@ -62543,16 +62547,16 @@
     "Fel Vitality": 3
    },
    "expected": {
-    "crit_rating": 0.94507,
-    "fire_damage": 0.10186,
-    "haste_rating": 0.81895,
-    "hit_rating": 1.14923,
-    "intellect": 0.39604,
-    "shadow_damage": 0.89829,
+    "crit_rating": 0.92376,
+    "fire_damage": 0.10272,
+    "haste_rating": 0.74817,
+    "hit_rating": 1.29061,
+    "intellect": 0.3867,
+    "shadow_damage": 0.89728,
     "spell_power": 1.0,
-    "spell_penetration": 1.39538,
-    "spirit": 0.13644,
-    "hit_rating_below_cap": 1.2896,
+    "spell_penetration": 1.36245,
+    "spirit": 0.13755,
+    "hit_rating_below_cap": 1.26749,
     "hit_rating_above_cap": 0.0,
     "spell_damage": 1.0,
     "spell_healing": 0.0
@@ -62659,15 +62663,15 @@
    "level": 60,
    "forms": [],
    "values": {
-    "mh_weapon_dps": 17.13483,
-    "agility": 1.86046,
-    "armor_penetration": 0.44025,
+    "mh_weapon_dps": 17.19103,
+    "agility": 1.84444,
+    "armor_penetration": 0.4425,
     "attack_power": 1.0,
-    "crit_rating": 2.35613,
-    "expertise_rating": 1.36871,
-    "haste_rating": 1.5055,
-    "strength": 2.20008,
-    "hit_rating_below_cap": 4.66942,
+    "crit_rating": 2.3462,
+    "expertise_rating": 1.48265,
+    "haste_rating": 1.5193,
+    "strength": 2.2,
+    "hit_rating_below_cap": 4.50331,
     "hit_rating_above_cap": 0.0,
     "spell_power": 0.0,
     "spell_damage": 0.0,
@@ -62715,15 +62719,15 @@
     "Dual Wield Specialization": 5
    },
    "expected": {
-    "mh_weapon_dps": 17.13483,
-    "agility": 1.86046,
-    "armor_penetration": 0.44025,
+    "mh_weapon_dps": 17.19103,
+    "agility": 1.84444,
+    "armor_penetration": 0.4425,
     "attack_power": 1.0,
-    "crit_rating": 2.35613,
-    "expertise_rating": 1.36871,
-    "haste_rating": 1.5055,
-    "strength": 2.20008,
-    "hit_rating_below_cap": 4.66942,
+    "crit_rating": 2.3462,
+    "expertise_rating": 1.48265,
+    "haste_rating": 1.5193,
+    "strength": 2.2,
+    "hit_rating_below_cap": 4.50331,
     "hit_rating_above_cap": 0.0,
     "spell_power": 0.0,
     "spell_damage": 0.0,

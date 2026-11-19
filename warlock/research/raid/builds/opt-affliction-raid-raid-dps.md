@@ -60,13 +60,13 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md)** | ours: optimizer | 30/0/21 | 728 | +0.0% | 838 | +0.0% | 0 s |
-| 2 | [`affliction-dot-raid`](affliction-dot-raid.md) | ours: hand draft | 30/0/21 | 722 | -0.8% | 833 | -0.7% | 0 s |
-| 3 | *SM/Ruin* | community simulator | - | 719 | -1.3% | 834 | -0.5% | 0 s |
-| 4 | *Demo (Shadow Brand)* | community simulator | - | 668 | -8.3% | 777 | -7.3% | 0 s |
-| 5 | *Demo (Fire Brand)* | community simulator | - | 650 | -10.7% | 745 | -11.1% | 0 s |
-| 6 | *Destro* | community simulator | - | 619 | -15.1% | 705 | -16.0% | 0 s |
-| 7 | *Aff (Wrack)* | community simulator | - | 608 | -16.6% | 679 | -19.0% | 0 s |
+| 1 | **[`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md)** | ours: optimizer | 30/0/21 | 715 | +0.0% | 824 | +0.0% | 0 s |
+| 2 | [`affliction-dot-raid`](affliction-dot-raid.md) | ours: hand draft | 30/0/21 | 709 | -0.7% | 815 | -1.0% | 0 s |
+| 3 | *SM/Ruin* | community simulator | - | 707 | -1.1% | 818 | -0.7% | 0 s |
+| 4 | *Demo (Shadow Brand)* | community simulator | - | 656 | -8.3% | 762 | -7.5% | 0 s |
+| 5 | *Demo (Fire Brand)* | community simulator | - | 639 | -10.6% | 731 | -11.2% | 0 s |
+| 6 | *Destro* | community simulator | - | 608 | -15.0% | 691 | -16.2% | 0 s |
+| 7 | *Aff (Wrack)* | community simulator | - | 598 | -16.4% | 666 | -19.1% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -96,7 +96,7 @@ Before the pull: at -5s: cast Amplify Curse.
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
-| 6 | if mana % < 10%: cast Life Tap | 6.5 |
+| 6 | if mana % < 10%: cast Life Tap | 6.4 |
 | 7 | cast Amplify Curse | 0.7 |
 | 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
 | 9 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.3 |
@@ -110,7 +110,7 @@ Damage by ability:
 | Ability | [`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md) |
 |---|---|
 | Shadow Bolt | 49% |
-| Bane of Agony | 17% |
+| Bane of Agony | 18% |
 | Corruption | 16% |
 | Immolate | 10% |
 | Pet: Auto Attack | 4% |
