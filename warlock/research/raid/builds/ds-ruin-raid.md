@@ -112,12 +112,9 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 | 6 | if mana % < 10%: cast Life Tap | 7.7 |
 | 7 | cast Amplify Curse | 0.7 |
 | 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
-| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 |
-| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
-| 11 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
-| 12 | cast Shadow Bolt (rank 9) | 14.0 |
+| 9 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
 
-Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Conflagrate (needs the Conflagrate talent); cast Eureka! (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Corruption (rank 6), cast Immolate (rank 7), cast Eureka!, cast Shadow Bolt (its condition never held in these fights); cast Conflagrate (needs the Conflagrate talent).
 
 Damage by ability:
 

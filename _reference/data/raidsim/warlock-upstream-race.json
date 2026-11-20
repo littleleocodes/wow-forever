@@ -1,0 +1,639 @@
+{
+ "affliction-raid": {
+  "tree": "Affliction",
+  "fights": 10000,
+  "rotations": {
+   "ours": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\warlock\\affliction-raid-raid.apl.json",
+   "aff_wrack": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\warlock\\upstream\\aff_wrack.apl.json",
+   "sm_ruin": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\warlock\\upstream\\sm_ruin.apl.json"
+  },
+  "options": {
+   "ours": {
+    "armor": "DemonArmor",
+    "curseOptions": "Elements",
+    "summon": "Succubus",
+    "sacrificedDemon": "Imp"
+   },
+   "up:aff_wrack": {
+    "armor": "DemonArmor",
+    "sacrificedDemon": "Imp",
+    "curseOptions": "Elements"
+   },
+   "up:sm_ruin": {
+    "summon": "Succubus",
+    "armor": "DemonArmor",
+    "curseOptions": "Elements"
+   }
+  },
+  "builds": {
+   "affliction-dot-raid": "2550002013520005--0550035003",
+   "opt-affliction-raid-raid-dps": "2550002013520005--0550305003",
+   "affliction-wrack-raid": "25500020135201351-0050203001-05",
+   "up:sm_ruin": "2550002013520105--0550205003"
+  },
+  "dps": {
+   "ours|ours|affliction-dot-raid": {
+    "1": 804.29,
+    "2": 804.48
+   },
+   "ours|ours|opt-affliction-raid-raid-dps": {
+    "1": 810.13,
+    "2": 809.4
+   },
+   "ours|ours|affliction-wrack-raid": {
+    "1": 674.87,
+    "2": 675.39
+   },
+   "ours|ours|up:sm_ruin": {
+    "1": 804.74,
+    "2": 805.24
+   },
+   "aff_wrack|ours|affliction-dot-raid": {
+    "1": 316.18,
+    "2": 316.77
+   },
+   "aff_wrack|ours|opt-affliction-raid-raid-dps": {
+    "1": 316.18,
+    "2": 316.77
+   },
+   "aff_wrack|ours|affliction-wrack-raid": {
+    "1": 940.24,
+    "2": 940.09
+   },
+   "aff_wrack|ours|up:sm_ruin": {
+    "1": 349.66,
+    "2": 349.59
+   },
+   "sm_ruin|ours|affliction-dot-raid": {
+    "1": 815.73,
+    "2": 815.27
+   },
+   "sm_ruin|ours|opt-affliction-raid-raid-dps": {
+    "1": 821.44,
+    "2": 822.39
+   },
+   "sm_ruin|ours|affliction-wrack-raid": {
+    "1": 702.54,
+    "2": 703.54
+   },
+   "sm_ruin|ours|up:sm_ruin": {
+    "1": 818.23,
+    "2": 819.51
+   },
+   "ours|up:aff_wrack|affliction-dot-raid": {
+    "1": 745.19,
+    "2": 745.47
+   },
+   "ours|up:aff_wrack|opt-affliction-raid-raid-dps": {
+    "1": 750.97,
+    "2": 751.89
+   },
+   "ours|up:aff_wrack|affliction-wrack-raid": {
+    "1": 674.87,
+    "2": 675.39
+   },
+   "ours|up:aff_wrack|up:sm_ruin": {
+    "1": 745.62,
+    "2": 746.51
+   },
+   "aff_wrack|up:aff_wrack|affliction-dot-raid": {
+    "1": 257.08,
+    "2": 257.16
+   },
+   "aff_wrack|up:aff_wrack|opt-affliction-raid-raid-dps": {
+    "1": 257.08,
+    "2": 257.16
+   },
+   "aff_wrack|up:aff_wrack|affliction-wrack-raid": {
+    "1": 940.24,
+    "2": 940.09
+   },
+   "aff_wrack|up:aff_wrack|up:sm_ruin": {
+    "1": 290.31,
+    "2": 290.62
+   },
+   "sm_ruin|up:aff_wrack|affliction-dot-raid": {
+    "1": 757.17,
+    "2": 756.56
+   },
+   "sm_ruin|up:aff_wrack|opt-affliction-raid-raid-dps": {
+    "1": 763.68,
+    "2": 763.34
+   },
+   "sm_ruin|up:aff_wrack|affliction-wrack-raid": {
+    "1": 702.54,
+    "2": 703.54
+   },
+   "sm_ruin|up:aff_wrack|up:sm_ruin": {
+    "1": 759.87,
+    "2": 759.32
+   },
+   "ours|up:sm_ruin|affliction-dot-raid": {
+    "1": 804.29,
+    "2": 804.48
+   },
+   "ours|up:sm_ruin|opt-affliction-raid-raid-dps": {
+    "1": 810.13,
+    "2": 809.4
+   },
+   "ours|up:sm_ruin|affliction-wrack-raid": {
+    "1": 654.06,
+    "2": 654.66
+   },
+   "ours|up:sm_ruin|up:sm_ruin": {
+    "1": 804.74,
+    "2": 805.24
+   },
+   "aff_wrack|up:sm_ruin|affliction-dot-raid": {
+    "1": 316.18,
+    "2": 316.77
+   },
+   "aff_wrack|up:sm_ruin|opt-affliction-raid-raid-dps": {
+    "1": 316.18,
+    "2": 316.77
+   },
+   "aff_wrack|up:sm_ruin|affliction-wrack-raid": {
+    "1": 876.61,
+    "2": 877.2
+   },
+   "aff_wrack|up:sm_ruin|up:sm_ruin": {
+    "1": 349.66,
+    "2": 349.59
+   },
+   "sm_ruin|up:sm_ruin|affliction-dot-raid": {
+    "1": 815.73,
+    "2": 815.27
+   },
+   "sm_ruin|up:sm_ruin|opt-affliction-raid-raid-dps": {
+    "1": 821.44,
+    "2": 822.39
+   },
+   "sm_ruin|up:sm_ruin|affliction-wrack-raid": {
+    "1": 677.3,
+    "2": 677.55
+   },
+   "sm_ruin|up:sm_ruin|up:sm_ruin": {
+    "1": 818.23,
+    "2": 819.51
+   }
+  },
+  "our_best": "ours|ours|opt-affliction-raid-raid-dps",
+  "best": "aff_wrack|ours|affliction-wrack-raid",
+  "gain": 0.161
+ },
+ "demonology-raid": {
+  "tree": "Demonology",
+  "fights": 10000,
+  "rotations": {
+   "ours": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\warlock\\demonology-raid-raid.apl.json",
+   "demo_fire_brand": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\warlock\\upstream\\demo_fire_brand.apl.json",
+   "demo_shadow_brand": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\warlock\\upstream\\demo_shadow_brand.apl.json"
+  },
+  "options": {
+   "ours": {
+    "armor": "DemonArmor",
+    "curseOptions": "Elements",
+    "summon": "Succubus",
+    "pactSacrifice": "Imp"
+   },
+   "up:demo_fire_brand": {
+    "summon": "Imp",
+    "armor": "DemonArmor",
+    "sacrificedDemon": "Succubus",
+    "curseOptions": "Elements"
+   },
+   "up:demo_shadow_brand": {
+    "summon": "Succubus",
+    "armor": "DemonArmor",
+    "sacrificedDemon": "Imp",
+    "curseOptions": "Elements"
+   }
+  },
+  "builds": {
+   "demonology-pact-raid": "101-0035003021220301351-0550005003",
+   "demonology-ml-raid": "011-0025003031220301351-0550005003",
+   "up:demo_fire_brand": "011-0305003201220301351-0050055003",
+   "up:demo_shadow_brand": "011-0005003231220301351-0550005003"
+  },
+  "dps": {
+   "ours|ours|demonology-pact-raid": {
+    "1": 835.36,
+    "2": 834.97
+   },
+   "ours|ours|demonology-ml-raid": {
+    "1": 840.39,
+    "2": 840.32
+   },
+   "ours|ours|up:demo_fire_brand": {
+    "1": 802.16,
+    "2": 802.33
+   },
+   "ours|ours|up:demo_shadow_brand": {
+    "1": 840.39,
+    "2": 840.32
+   },
+   "demo_fire_brand|ours|demonology-pact-raid": {
+    "1": 779.41,
+    "2": 779.26
+   },
+   "demo_fire_brand|ours|demonology-ml-raid": {
+    "1": 786.73,
+    "2": 786.47
+   },
+   "demo_fire_brand|ours|up:demo_fire_brand": {
+    "1": 794.72,
+    "2": 794.43
+   },
+   "demo_fire_brand|ours|up:demo_shadow_brand": {
+    "1": 786.73,
+    "2": 786.47
+   },
+   "demo_shadow_brand|ours|demonology-pact-raid": {
+    "1": 900.77,
+    "2": 900.23
+   },
+   "demo_shadow_brand|ours|demonology-ml-raid": {
+    "1": 908.21,
+    "2": 907.64
+   },
+   "demo_shadow_brand|ours|up:demo_fire_brand": {
+    "1": 878.52,
+    "2": 878.06
+   },
+   "demo_shadow_brand|ours|up:demo_shadow_brand": {
+    "1": 908.21,
+    "2": 907.64
+   },
+   "ours|up:demo_fire_brand|demonology-pact-raid": {
+    "1": 722.38,
+    "2": 722.76
+   },
+   "ours|up:demo_fire_brand|demonology-ml-raid": {
+    "1": 726.47,
+    "2": 726.18
+   },
+   "ours|up:demo_fire_brand|up:demo_fire_brand": {
+    "1": 731.94,
+    "2": 731.59
+   },
+   "ours|up:demo_fire_brand|up:demo_shadow_brand": {
+    "1": 729.15,
+    "2": 729.02
+   },
+   "demo_fire_brand|up:demo_fire_brand|demonology-pact-raid": {
+    "1": 835.4,
+    "2": 835.57
+   },
+   "demo_fire_brand|up:demo_fire_brand|demonology-ml-raid": {
+    "1": 843.72,
+    "2": 843.8
+   },
+   "demo_fire_brand|up:demo_fire_brand|up:demo_fire_brand": {
+    "1": 882.95,
+    "2": 883.0
+   },
+   "demo_fire_brand|up:demo_fire_brand|up:demo_shadow_brand": {
+    "1": 843.72,
+    "2": 843.8
+   },
+   "demo_shadow_brand|up:demo_fire_brand|demonology-pact-raid": {
+    "1": 805.5,
+    "2": 805.84
+   },
+   "demo_shadow_brand|up:demo_fire_brand|demonology-ml-raid": {
+    "1": 811.97,
+    "2": 812.29
+   },
+   "demo_shadow_brand|up:demo_fire_brand|up:demo_fire_brand": {
+    "1": 821.14,
+    "2": 821.35
+   },
+   "demo_shadow_brand|up:demo_fire_brand|up:demo_shadow_brand": {
+    "1": 811.97,
+    "2": 812.29
+   },
+   "ours|up:demo_shadow_brand|demonology-pact-raid": {
+    "1": 835.36,
+    "2": 834.97
+   },
+   "ours|up:demo_shadow_brand|demonology-ml-raid": {
+    "1": 840.39,
+    "2": 840.32
+   },
+   "ours|up:demo_shadow_brand|up:demo_fire_brand": {
+    "1": 802.16,
+    "2": 802.33
+   },
+   "ours|up:demo_shadow_brand|up:demo_shadow_brand": {
+    "1": 840.39,
+    "2": 840.32
+   },
+   "demo_fire_brand|up:demo_shadow_brand|demonology-pact-raid": {
+    "1": 779.41,
+    "2": 779.26
+   },
+   "demo_fire_brand|up:demo_shadow_brand|demonology-ml-raid": {
+    "1": 786.73,
+    "2": 786.47
+   },
+   "demo_fire_brand|up:demo_shadow_brand|up:demo_fire_brand": {
+    "1": 794.72,
+    "2": 794.43
+   },
+   "demo_fire_brand|up:demo_shadow_brand|up:demo_shadow_brand": {
+    "1": 786.73,
+    "2": 786.47
+   },
+   "demo_shadow_brand|up:demo_shadow_brand|demonology-pact-raid": {
+    "1": 900.77,
+    "2": 900.23
+   },
+   "demo_shadow_brand|up:demo_shadow_brand|demonology-ml-raid": {
+    "1": 908.21,
+    "2": 907.64
+   },
+   "demo_shadow_brand|up:demo_shadow_brand|up:demo_fire_brand": {
+    "1": 878.52,
+    "2": 878.06
+   },
+   "demo_shadow_brand|up:demo_shadow_brand|up:demo_shadow_brand": {
+    "1": 908.21,
+    "2": 907.64
+   }
+  },
+  "our_best": "ours|ours|demonology-ml-raid",
+  "best": "demo_shadow_brand|ours|demonology-ml-raid",
+  "gain": 0.0804
+ },
+ "fire-destro-raid": {
+  "tree": "Destruction",
+  "fights": 10000,
+  "rotations": {
+   "ours": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\warlock\\fire-destro-raid-raid.apl.json",
+   "destro": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\warlock\\upstream\\destro.apl.json"
+  },
+  "options": {
+   "ours": {
+    "armor": "DemonArmor",
+    "curseOptions": "Elements",
+    "sacrificeSummon": true,
+    "summon": "Imp"
+   },
+   "up:destro": {
+    "summon": "Succubus",
+    "armor": "DemonArmor",
+    "curseOptions": "Elements"
+   }
+  },
+  "builds": {
+   "destruction-fire-raid": "25500010135-0050203001-0550004103",
+   "opt-fire-destro-raid-raid-dps": "25500000035-2300203001-0550304003",
+   "shadow-bolt-hybrid-fire-open-raid": "252-0050203001-055031500310035",
+   "up:destro": "2550002013--0050355103101351"
+  },
+  "dps": {
+   "ours|ours|destruction-fire-raid": {
+    "1": 719.84,
+    "2": 720.41
+   },
+   "ours|ours|opt-fire-destro-raid-raid-dps": {
+    "1": 725.74,
+    "2": 726.8
+   },
+   "ours|ours|shadow-bolt-hybrid-fire-open-raid": {
+    "1": 771.17,
+    "2": 770.93
+   },
+   "ours|ours|up:destro": {
+    "1": 692.24,
+    "2": 692.6
+   },
+   "destro|ours|destruction-fire-raid": {
+    "1": 563.64,
+    "2": 563.59
+   },
+   "destro|ours|opt-fire-destro-raid-raid-dps": {
+    "1": 562.53,
+    "2": 562.11
+   },
+   "destro|ours|shadow-bolt-hybrid-fire-open-raid": {
+    "1": 606.45,
+    "2": 606.61
+   },
+   "destro|ours|up:destro": {
+    "1": 737.23,
+    "2": 736.95
+   },
+   "ours|up:destro|destruction-fire-raid": {
+    "1": 695.06,
+    "2": 695.58
+   },
+   "ours|up:destro|opt-fire-destro-raid-raid-dps": {
+    "1": 700.66,
+    "2": 700.05
+   },
+   "ours|up:destro|shadow-bolt-hybrid-fire-open-raid": {
+    "1": 749.35,
+    "2": 749.32
+   },
+   "ours|up:destro|up:destro": {
+    "1": 750.38,
+    "2": 751.04
+   },
+   "destro|up:destro|destruction-fire-raid": {
+    "1": 593.39,
+    "2": 592.98
+   },
+   "destro|up:destro|opt-fire-destro-raid-raid-dps": {
+    "1": 593.03,
+    "2": 592.85
+   },
+   "destro|up:destro|shadow-bolt-hybrid-fire-open-raid": {
+    "1": 636.92,
+    "2": 637.04
+   },
+   "destro|up:destro|up:destro": {
+    "1": 795.81,
+    "2": 795.79
+   }
+  },
+  "our_best": "ours|ours|shadow-bolt-hybrid-fire-open-raid",
+  "best": "destro|up:destro|up:destro",
+  "gain": 0.0321
+ },
+ "incinerate-raid": {
+  "tree": "Destruction",
+  "fights": 10000,
+  "rotations": {
+   "ours": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\warlock\\incinerate-raid-raid.apl.json",
+   "destro": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\warlock\\upstream\\destro.apl.json"
+  },
+  "options": {
+   "ours": {
+    "armor": "DemonArmor",
+    "curseOptions": "Elements",
+    "sacrificeSummon": true,
+    "summon": "Imp"
+   },
+   "up:destro": {
+    "summon": "Succubus",
+    "armor": "DemonArmor",
+    "curseOptions": "Elements"
+   }
+  },
+  "builds": {
+   "destruction-incinerate-raid": "153-0050203001-0050245103101351",
+   "destruction-incinerate-open-raid": "253-0050203001-055030500310035",
+   "up:destro": "2550002013--0050355103101351"
+  },
+  "dps": {
+   "ours|ours|destruction-incinerate-raid": {
+    "1": 733.88,
+    "2": 734.49
+   },
+   "ours|ours|destruction-incinerate-open-raid": {
+    "1": 772.34,
+    "2": 772.91
+   },
+   "ours|ours|up:destro": {
+    "1": 692.51,
+    "2": 692.66
+   },
+   "destro|ours|destruction-incinerate-raid": {
+    "1": 727.23,
+    "2": 726.99
+   },
+   "destro|ours|destruction-incinerate-open-raid": {
+    "1": 609.64,
+    "2": 609.65
+   },
+   "destro|ours|up:destro": {
+    "1": 737.23,
+    "2": 736.95
+   },
+   "ours|up:destro|destruction-incinerate-raid": {
+    "1": 716.95,
+    "2": 717.21
+   },
+   "ours|up:destro|destruction-incinerate-open-raid": {
+    "1": 749.27,
+    "2": 750.12
+   },
+   "ours|up:destro|up:destro": {
+    "1": 750.84,
+    "2": 751.22
+   },
+   "destro|up:destro|destruction-incinerate-raid": {
+    "1": 757.3,
+    "2": 757.01
+   },
+   "destro|up:destro|destruction-incinerate-open-raid": {
+    "1": 638.75,
+    "2": 638.92
+   },
+   "destro|up:destro|up:destro": {
+    "1": 795.81,
+    "2": 795.79
+   }
+  },
+  "our_best": "ours|ours|destruction-incinerate-open-raid",
+  "best": "destro|up:destro|up:destro",
+  "gain": 0.03
+ },
+ "sb-raid": {
+  "tree": "Destruction",
+  "fights": 10000,
+  "rotations": {
+   "ours": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\warlock\\sb-raid-raid.apl.json",
+   "destro": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\warlock\\upstream\\destro.apl.json"
+  },
+  "options": {
+   "ours": {
+    "armor": "DemonArmor",
+    "curseOptions": "Elements",
+    "sacrificeSummon": true,
+    "summon": "Imp"
+   },
+   "up:destro": {
+    "summon": "Succubus",
+    "armor": "DemonArmor",
+    "curseOptions": "Elements"
+   }
+  },
+  "builds": {
+   "ds-ruin-raid": "15500020135-0050203001-0550005003",
+   "opt-sb-raid-raid-dps": "25500010135-2300203001-0550005003",
+   "destruction-ml-raid": "252-0050203001-055031500310035",
+   "up:destro": "2550002013--0050355103101351"
+  },
+  "dps": {
+   "ours|ours|ds-ruin-raid": {
+    "1": 761.31,
+    "2": 763.02
+   },
+   "ours|ours|opt-sb-raid-raid-dps": {
+    "1": 759.26,
+    "2": 760.71
+   },
+   "ours|ours|destruction-ml-raid": {
+    "1": 794.56,
+    "2": 795.52
+   },
+   "ours|ours|up:destro": {
+    "1": 717.09,
+    "2": 716.71
+   },
+   "destro|ours|ds-ruin-raid": {
+    "1": 574.93,
+    "2": 574.98
+   },
+   "destro|ours|opt-sb-raid-raid-dps": {
+    "1": 574.84,
+    "2": 574.77
+   },
+   "destro|ours|destruction-ml-raid": {
+    "1": 610.63,
+    "2": 610.79
+   },
+   "destro|ours|up:destro": {
+    "1": 740.73,
+    "2": 740.46
+   },
+   "ours|up:destro|ds-ruin-raid": {
+    "1": 731.91,
+    "2": 731.99
+   },
+   "ours|up:destro|opt-sb-raid-raid-dps": {
+    "1": 730.03,
+    "2": 730.71
+   },
+   "ours|up:destro|destruction-ml-raid": {
+    "1": 769.14,
+    "2": 769.17
+   },
+   "ours|up:destro|up:destro": {
+    "1": 775.04,
+    "2": 775.56
+   },
+   "destro|up:destro|ds-ruin-raid": {
+    "1": 604.02,
+    "2": 603.89
+   },
+   "destro|up:destro|opt-sb-raid-raid-dps": {
+    "1": 604.05,
+    "2": 603.64
+   },
+   "destro|up:destro|destruction-ml-raid": {
+    "1": 640.61,
+    "2": 640.75
+   },
+   "destro|up:destro|up:destro": {
+    "1": 799.83,
+    "2": 799.79
+   }
+  },
+  "our_best": "ours|ours|destruction-ml-raid",
+  "best": "destro|up:destro|up:destro",
+  "gain": 0.006
+ }
+}

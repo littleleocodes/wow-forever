@@ -1917,6 +1917,51 @@
       "notes": ["2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Master Demonologist to Suppression at 41 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Corruption to Curse of Exhaustion at 58 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Curse of Exhaustion to Malevolence at 58 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Aegis to Fel Vitality at 23 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Imp to Fel Vitality at 21 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Imp to Fel Vitality at 20 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).", "2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Master Demonologist to Improved Corruption at 42 (measured: -0.5% seed 3, -0.5% seed 4, level-weighted time per kill); Malevolence to Improved Corruption at 58 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill).", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 30.92; demonology-leveling 31.14. The search simulated 25,765 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Demonology leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/warlock", "https://talentsforever.com/warlock/60/24310020134001-020523021110031135--12"]
+    },
+    {
+      "id": "affliction-wrack-raid",
+      "name": "Affliction — Wrack (the simulator's own build)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Affliction",
+      "preset": "Aff (Wrack)",
+      "summary": "The official wowsims/forever simulator's own Affliction build (its aff_wrack build file, added upstream on 2026-11-11): 35/11/5 around Wrack, the 31-point channel that makes Siphon Life, Corruption and Bane of Agony tick twice as fast while it lasts, with Demonic Sacrifice of the Imp (Forever: +15% Shadow damage) and Improved Shadow Bolt. Added on 2026-11-19 from the independent audit's D1: our warlock entries had raced the simulator's talents under rotations from the deleted ElliotWood fork, which never channel Wrack, so every search valued it at nothing.",
+      "allocation": {
+        "Affliction": [
+          ["Improved Life Tap", 2],
+          ["Suppression", 5],
+          ["Improved Corruption", 5],
+          ["Improved Bane of Agony", 2],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Malevolence", 5],
+          ["Nightfall", 2],
+          ["Siphon Life", 1],
+          ["Soul Siphon", 3],
+          ["Shadow Mastery", 5],
+          ["Wrack", 1]
+        ],
+        "Demonology": [
+          ["Demonic Embrace", 5],
+          ["Demonic Aegis", 2],
+          ["Fel Vitality", 3],
+          ["Demonic Sacrifice", 1]
+        ],
+        "Destruction": [
+          ["Improved Shadow Bolt", 5]
+        ]
+      },
+      "core": [
+        {"talent": "Wrack", "why": "the 31-point channel the rotation is built around: Siphon Life, Corruption and Bane of Agony tick twice as fast while it lasts"},
+        {"talent": "Demonic Sacrifice", "why": "the Imp sacrificed before the pull: +15% Shadow damage"},
+        {"talent": "Shadow Mastery", "why": "+Shadow damage on every dot and Wrack"},
+        {"talent": "Malevolence", "why": "dot damage"},
+        {"talent": "Improved Corruption", "why": "instant Corruption"}
+      ],
+      "flex": [],
+      "notes": ["The Imp is sacrificed before the pull (the entry affliction-raid's sacrificedDemon: Imp); builds without Demonic Sacrifice keep the Succubus out.", "Raced, its rotation tuned and its talents searched in audit step 2 (deep-runs/warlock_raid_1119.sh); numbers on the raid page.", "Simulator numbers are the community's model of the game, not in-game measurements."],
+      "sources": ["https://github.com/wowsims/forever/blob/2e6e77d84/ui/specs/warlock/dps/builds/aff_wrack.build.json"]
     }
   ]
 }

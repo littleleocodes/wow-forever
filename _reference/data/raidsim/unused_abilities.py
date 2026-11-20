@@ -98,10 +98,18 @@ def requires(cls):
 SACRIFICE = {"Imp": "+15% Shadow damage", "Succubus": "+15% Fire damage", "Voidwalker": "2% of your mana every 4 sec", "Felhunter": "3% of your health every 4 sec"}
 
 
-def advice(cls, entry, talent, kind, needed_by):
+def advice(cls, entry, talent, kind, needed_by, flat=None):
     """What the raid page tells the player about a talent the rotation does not cast."""
     if kind == "automatic":
         opts = ((entry.get("spec") or {}).get(cls) or {}).get("options", {}).get("classOptions", {})
+        # the official option (2026-11-19: the Wrack build's Imp): with Demonic Pact the demon is sacrificed while `summon` stays out
+        # (the simulator's resolveSacrifice), without it no demon is out
+        if talent == "Demonic Sacrifice" and opts.get("sacrificedDemon") and opts["sacrificedDemon"] != "NoSummon":
+            d, out = opts["sacrificedDemon"], opts.get("summon", "demon")
+            if (flat or {}).get("Demonic Pact"):
+                return (f"before the pull, summon your {d} and sacrifice it ({SACRIFICE.get(d, 'its buff')}), then summon your {out}: "
+                        f"Demonic Pact keeps the {d}'s buff while another demon is out")
+            return f"before the pull, summon your {d} and sacrifice it ({SACRIFICE.get(d, 'its buff')} for 2 hours; summoning any demon cancels it)"
         if talent == "Demonic Sacrifice" and opts.get("sacrificeSummon"):
             d = opts.get("summon", "Imp")
             return f"before the pull, summon your {d} and sacrifice it ({SACRIFICE.get(d, 'its buff')} for 2 hours; summoning any demon cancels it)"
@@ -179,7 +187,7 @@ def audit(classes, its=12000):
                         kind = "wasted"
                     rows.append({"class": cls, "entry": entry_name, "build": bid, "spec": SM.spec_of(cls, builds[bid]), "talent": t,
                                  "ranks": flat[t], "setting": own[bid], "removal_loss": round(loss, 4), "kind": kind, "needed_by": needed_by,
-                                 "advice": advice(cls, e, t, kind, needed_by), "date": TODAY})
+                                 "advice": advice(cls, e, t, kind, needed_by, flat), "date": TODAY})
     return rows
 
 

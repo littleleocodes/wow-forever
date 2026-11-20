@@ -4,14 +4,14 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `opt-affliction-raid-raid-dps` | 30/0/21 | 715 | 783 | 824 | 824 | 870 |
-| `affliction-dot-raid` | 30/0/21 | 709 | 777 | 815 | 815 | 876 |
-| `opt-affliction-raid-parse` | 30/0/21 | 709 | 777 | 815 | 815 | 876 |
-| sim preset: SM/Ruin | - | 707 | 774 | 818 | 818 | 869 |
-| sim preset: Demo (Shadow Brand) | - | 656 | 742 | 762 | 762 | 803 |
-| sim preset: Demo (Fire Brand) | - | 639 | 716 | 731 | 731 | 767 |
-| sim preset: Destro | - | 608 | 660 | 691 | 691 | 727 |
-| sim preset: Aff (Wrack) | - | 598 | 649 | 666 | 666 | 689 |
+| `opt-affliction-raid-raid-dps` | 30/0/21 | 705 | 772 | 811 | 811 | 851 |
+| `affliction-dot-raid` | 30/0/21 | 700 | 765 | 806 | 806 | 857 |
+| `opt-affliction-raid-parse` | 30/0/21 | 700 | 765 | 806 | 806 | 857 |
+| sim preset: SM/Ruin | - | 697 | 763 | 806 | 806 | 852 |
+| sim preset: Demo (Shadow Brand) | - | 649 | 734 | 753 | 753 | 786 |
+| sim preset: Demo (Fire Brand) | - | 631 | 708 | 722 | 722 | 751 |
+| sim preset: Destro | - | 597 | 649 | 680 | 680 | 712 |
+| sim preset: Aff (Wrack) | - | 587 | 639 | 654 | 654 | 675 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
 - **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
@@ -25,14 +25,14 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| `opt-affliction-raid-raid-dps` | 715 | +5% | +2% | +4% | +1% | +3% | 824 |
-| `affliction-dot-raid` | 709 | +5% | +2% | +4% | +1% | +3% | 815 |
-| `opt-affliction-raid-parse` | 709 | +5% | +2% | +4% | +1% | +3% | 815 |
-| sim preset: SM/Ruin | 707 | +5% | +2% | +4% | +1% | +4% | 818 |
-| sim preset: Demo (Shadow Brand) | 656 | +6% | +2% | +4% | +1% | +3% | 762 |
-| sim preset: Demo (Fire Brand) | 639 | +5% | +2% | +3% | +1% | +3% | 731 |
-| sim preset: Destro | 608 | +4% | +2% | +3% | +1% | +3% | 691 |
-| sim preset: Aff (Wrack) | 598 | +4% | +2% | +4% | +1% | +1% | 666 |
+| `opt-affliction-raid-raid-dps` | 705 | +5% | +2% | +4% | +1% | +3% | 811 |
+| `affliction-dot-raid` | 700 | +5% | +2% | +4% | +1% | +3% | 806 |
+| `opt-affliction-raid-parse` | 700 | +5% | +2% | +4% | +1% | +3% | 806 |
+| sim preset: SM/Ruin | 697 | +5% | +2% | +4% | +1% | +3% | 806 |
+| sim preset: Demo (Shadow Brand) | 649 | +5% | +2% | +4% | +1% | +3% | 753 |
+| sim preset: Demo (Fire Brand) | 631 | +5% | +2% | +3% | +1% | +3% | 722 |
+| sim preset: Destro | 597 | +4% | +2% | +3% | +1% | +3% | 680 |
+| sim preset: Aff (Wrack) | 587 | +4% | +2% | +4% | +1% | +1% | 654 |
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 
@@ -42,14 +42,14 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `opt-affliction-raid-raid-dps` | 781 | 719 | 715 | 706 | 691 |
-| `affliction-dot-raid` | 773 | 713 | 709 | 699 | 686 |
-| `opt-affliction-raid-parse` | 773 | 713 | 709 | 699 | 686 |
-| sim preset: SM/Ruin | 765 | 709 | 707 | 698 | 686 |
-| sim preset: Demo (Shadow Brand) | 710 | 650 | 648 | 633 | 624 |
-| sim preset: Demo (Fire Brand) | 684 | 632 | 632 | 618 | 611 |
-| sim preset: Destro | 659 | 611 | 608 | 601 | 590 |
-| sim preset: Aff (Wrack) | 649 | 600 | 598 | 593 | 582 |
+| `opt-affliction-raid-raid-dps` | 771 | 710 | 705 | 696 | 682 |
+| `affliction-dot-raid` | 763 | 702 | 700 | 690 | 677 |
+| `opt-affliction-raid-parse` | 763 | 702 | 700 | 690 | 677 |
+| sim preset: SM/Ruin | 756 | 699 | 697 | 689 | 677 |
+| sim preset: Demo (Shadow Brand) | 702 | 642 | 642 | 626 | 617 |
+| sim preset: Demo (Fire Brand) | 676 | 624 | 625 | 611 | 603 |
+| sim preset: Destro | 648 | 602 | 597 | 592 | 581 |
+| sim preset: Aff (Wrack) | 639 | 590 | 587 | 584 | 573 |
 
 Gear presets: raid `warlock-dps-mc.p1opt.gear.json`, maximum `warlock-dps-mc.p1opt.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

@@ -96,11 +96,11 @@
  "raid": {
   "class": "warlock",
   "spec": "affliction-raid",
-  "date": "2026-11-17",
+  "date": "2026-11-19",
   "commit": "2e6e77d84",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warlock/dps/apls/affliction.apl.json",
+  "simulator_apl": "_reference/data/raidsim/apls/warlock/upstream/sm_ruin.apl.json",
   "start": "ui\\specs\\warlock\\dps\\apls\\affliction.apl.json",
   "builds": [
    {
@@ -208,31 +208,31 @@
   "final": {
    "raid": {
     "opt-affliction-raid-raid-dps": {
-     "before": 839.6281830254778,
-     "after": 838.851956439629,
-     "base": 839.6281830254778,
+     "before": 822.1798208116043,
+     "after": 822.1798208116043,
+     "base": 822.1798208116043,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.18369394993514787,
-     "oom_after": 0.18369394993514787
+     "oom_before": 0.36161244999921066,
+     "oom_after": 0.36161244999921066
     },
     "sim preset: SM/Ruin": {
-     "before": 830.89422299927,
-     "after": 833.2011232121662,
-     "base": 830.89422299927,
+     "before": 818.9925083261741,
+     "after": 818.9925083261741,
+     "base": 818.9925083261741,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.25108674992379737,
-     "oom_after": 0.25108674992379737
+     "oom_before": 0.4538043499996399,
+     "oom_after": 0.4538043499996399
     },
     "affliction-dot-raid": {
-     "before": 832.7068313046506,
-     "after": 831.9410078659204,
-     "base": 832.7068313046506,
+     "before": 815.8090999312351,
+     "after": 815.8090999312351,
+     "base": 815.8090999312351,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.3513482999016002,
-     "oom_after": 0.3513482999016002
+     "oom_before": 0.5534985999986156,
+     "oom_after": 0.5534985999986156
     }
    }
   },
@@ -245,13 +245,13 @@
     "Corruption"
    ],
    "rejected": {
-    "structure": 37,
+    "structure": 0,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-27",
-  "passes": 11
+  "passes": 12
  }
 }

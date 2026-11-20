@@ -365,7 +365,12 @@ def sim_base(entry, repo):
 
 
 NOT_COMBAT = ("Teleport", "Revive", "Call of the", "Totemic Recall", "Totemic Projection", "Enchanted Flare", "Confounding Flash",
-              "Contingency Plan", "Voice of Truth")
+              "Contingency Plan", "Voice of Truth",
+              # 2026-11-19 (the independent audit, D7 and blind spot 6): Dark Sacrifice is a racial the simulator does not know (the priest
+              # raid rotations carried a dead line of it); the shaman's own Windfury Totem gives the Enhancement shaman a benefit the game
+              # forbids ("disables any benefit you personally receive from Windfury Totem" with Windfury Weapon on the main hand: +11.6% in
+              # upstream's rotation), and a caster nothing
+              "Dark Sacrifice", "Windfury Totem")
 
 
 def new_spell_pool(cls):
@@ -700,7 +705,13 @@ def search(cls, spec, a, repo, N, where=None):
     # and a gain on the tuned build alone was diluted by the number of protected builds (6 builds: +0.6% on the winner read +0.1%).
     tune_idx = [bi for bi, b in enumerate(builds) if not b.get("protect_only")] or list(range(len(builds)))
     tune_labels = [(bi, bi) for bi in tune_idx]
-    base_path = (repo / entry["apl"]) if getattr(a, "fresh", False) and not entry["apl"].startswith("_reference/") else R.apl_path(entry, repo, setting)
+    # --fresh starts from the entry's base wherever it lives: the simulator's checkout, or our own file (2026-11-19: our copies of the
+    # simulator's build-file rotations under apls/<class>/upstream/; the condition had read "not ours", so a fresh tune of an entry with
+    # its own base started from the old tuned rotation instead)
+    if getattr(a, "fresh", False):
+        base_path = (ROOT / entry["apl"]) if entry["apl"].startswith("_reference/") else (repo / entry["apl"])
+    else:
+        base_path = R.apl_path(entry, repo, setting)
     base = json.load(open(base_path, encoding="utf-8"))
     pool = class_pool(repo, entry)
     tag = f"{cls}-{spec}"

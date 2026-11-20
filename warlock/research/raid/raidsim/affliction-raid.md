@@ -4,28 +4,28 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `opt-affliction-raid-raid-dps` | 30/0/21 | 715 | 38 | +0.0% | 596 | 0 | +66.9% |
-| `affliction-dot-raid` | 30/0/21 | 709 | 38 | -0.7% | 596 | 0 | +66.3% |
-| sim preset: SM/Ruin | - | 707 | 37 | -1.1% | 593 | 0 | - |
-| sim preset: Demo (Shadow Brand) | - | 656 | 36 | -8.3% | 633 | 0 | - |
-| sim preset: Demo (Fire Brand) | - | 639 | 28 | -10.6% | 621 | 0 | - |
-| sim preset: Destro | - | 608 | 22 | -15.0% | 510 | 0 | - |
-| sim preset: Aff (Wrack) | - | 598 | 26 | -16.4% | 500 | 0 | - |
+| `opt-affliction-raid-raid-dps` | 30/0/21 | 705 | 38 | +0.0% | 586 | 0 | +66.9% |
+| `affliction-dot-raid` | 30/0/21 | 700 | 37 | -0.7% | 586 | 0 | +66.3% |
+| sim preset: SM/Ruin | - | 697 | 36 | -1.1% | 584 | 0 | - |
+| sim preset: Demo (Shadow Brand) | - | 649 | 36 | -7.9% | 625 | 0 | - |
+| sim preset: Demo (Fire Brand) | - | 631 | 27 | -10.4% | 612 | 0 | - |
+| sim preset: Destro | - | 597 | 22 | -15.3% | 500 | 0 | - |
+| sim preset: Aff (Wrack) | - | 587 | 24 | -16.7% | 489 | 0 | - |
 
 ## Damage shares (`opt-affliction-raid-raid-dps`, simulator actions)
 
 | Action | Share |
 |---|---|
-| Shadow Bolt | 49.2% |
-| Bane of Agony | 17.6% |
-| Corruption | 16.0% |
-| Immolate | 10.1% |
+| Shadow Bolt | 49.8% |
+| Bane of Agony | 17.9% |
+| Corruption | 15.1% |
+| Immolate | 10.0% |
 | Pet: Auto Attack | 4.4% |
 | Demonic Rune | 1.3% |
 | Pet: Lash of Pain | 1.1% |
 | Searing Pain | 0.5% |
 
-Mapped onto the spec model's sources: `shadow_bolt` 50%, `agony` 18%, `corruption` 16%, `immolate` 10%, `imp` 6%; 2% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
+Mapped onto the spec model's sources: `shadow_bolt` 51%, `agony` 18%, `corruption` 15%, `immolate` 10%, `imp` 6%; 2% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:

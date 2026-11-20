@@ -69,13 +69,13 @@ Allocation adopted on 2026-09-27 from `opt-affliction-raid-raid-dps`, the best b
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md) | ours: optimizer | 30/0/21 | 715 | +0.0% | 824 | +0.0% | 0 s |
-| 2 | **[`affliction-dot-raid`](affliction-dot-raid.md)** | ours: hand draft | 30/0/21 | 709 | -0.7% | 815 | -1.0% | 0 s |
-| 3 | *SM/Ruin* | community simulator | - | 707 | -1.1% | 818 | -0.7% | 0 s |
-| 4 | *Demo (Shadow Brand)* | community simulator | - | 656 | -8.3% | 762 | -7.5% | 0 s |
-| 5 | *Demo (Fire Brand)* | community simulator | - | 639 | -10.6% | 731 | -11.2% | 0 s |
-| 6 | *Destro* | community simulator | - | 608 | -15.0% | 691 | -16.2% | 0 s |
-| 7 | *Aff (Wrack)* | community simulator | - | 598 | -16.4% | 666 | -19.1% | 0 s |
+| 1 | [`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md) | ours: optimizer | 30/0/21 | 705 | +0.0% | 811 | +0.0% | 0 s |
+| 2 | **[`affliction-dot-raid`](affliction-dot-raid.md)** | ours: hand draft | 30/0/21 | 700 | -0.7% | 806 | -0.6% | 0 s |
+| 3 | *SM/Ruin* | community simulator | - | 697 | -1.1% | 806 | -0.6% | 0 s |
+| 4 | *Demo (Shadow Brand)* | community simulator | - | 649 | -7.9% | 753 | -7.1% | 0 s |
+| 5 | *Demo (Fire Brand)* | community simulator | - | 631 | -10.4% | 722 | -10.9% | 0 s |
+| 6 | *Destro* | community simulator | - | 597 | -15.3% | 680 | -16.1% | 0 s |
+| 7 | *Aff (Wrack)* | community simulator | - | 587 | -16.7% | 654 | -19.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -84,7 +84,7 @@ Allocation adopted on 2026-09-27 from `opt-affliction-raid-raid-dps`, the best b
   2. threshold 75% -> 55%: if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion (+0.2%, pass 2)
   3. only with 20s or more of the fight left: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.2%, pass 2)
   4. only with 10s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.2%, pass 4)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 11 passes, the last 2026-11-17, 10 changes to the base rotation; third-seed check: opt-affliction-raid-raid-dps 840 -> 839 DPS (-0.1%), sim preset: SM/Ruin 831 -> 833 DPS (+0.3%), affliction-dot-raid 833 -> 832 DPS (-0.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 12 passes, the last 2026-11-19, 10 changes to the base rotation; third-seed check: opt-affliction-raid-raid-dps 822 -> 822 DPS (+0.0%), sim preset: SM/Ruin 819 -> 819 DPS (+0.0%), affliction-dot-raid 816 -> 816 DPS (+0.0%)):
   1. only with 6s or more of the fight left: if mana % < 10%: cast Life Tap (+0.2%, pass 1)
   2. move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.2%, pass 1)
   3. insert before the filler: cast Talisman of Ephemeral Power (+0.4%, pass 5)
@@ -105,12 +105,12 @@ Before the pull: at -5s: cast Amplify Curse.
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.3 |
-| 6 | if mana % < 10%: cast Life Tap | 7.2 |
+| 6 | if mana % < 10%: cast Life Tap | 6.8 |
 | 7 | cast Amplify Curse | 0.7 |
 | 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
-| 9 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.3 |
-| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
-| 11 | cast Shadow Bolt (rank 9) | 14.3 |
+| 9 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption (rank 6) | 3.3 |
+| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate (rank 7) | 3.4 |
+| 11 | cast Shadow Bolt | 14.6 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Siphon Life (needs the Siphon Life talent).
 
@@ -118,9 +118,9 @@ Damage by ability:
 
 | Ability | [`affliction-dot-raid`](affliction-dot-raid.md) |
 |---|---|
-| Shadow Bolt | 48% |
+| Shadow Bolt | 49% |
 | Bane of Agony | 18% |
-| Corruption | 16% |
+| Corruption | 15% |
 | Immolate | 11% |
 | Pet: Auto Attack | 4% |
 | Demonic Rune | 1% |

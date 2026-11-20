@@ -4,10 +4,10 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `demonology-pact-raid` | 2/31/18 | 734 | 830 | 845 | 845 | 884 |
-| `demonology-ml-raid` | 2/31/18 | 731 | 824 | 850 | 850 | 896 |
-| sim preset: Demo (Shadow Brand) | - | 731 | 824 | 850 | 850 | 896 |
-| sim preset: Demo (Fire Brand) | - | 713 | 796 | 813 | 813 | 850 |
+| `demonology-ml-raid` | 2/31/18 | 726 | 817 | 840 | 840 | 878 |
+| sim preset: Demo (Shadow Brand) | - | 726 | 817 | 840 | 840 | 878 |
+| `demonology-pact-raid` | 2/31/18 | 725 | 820 | 836 | 836 | 868 |
+| sim preset: Demo (Fire Brand) | - | 707 | 789 | 802 | 802 | 833 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
 - **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
@@ -21,10 +21,10 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| `demonology-pact-raid` | 734 | +5% | +2% | +3% | +1% | +3% | 845 |
-| `demonology-ml-raid` | 731 | +6% | +2% | +4% | +1% | +4% | 850 |
-| sim preset: Demo (Shadow Brand) | 731 | +6% | +2% | +4% | +1% | +4% | 850 |
-| sim preset: Demo (Fire Brand) | 713 | +5% | +2% | +3% | +1% | +3% | 813 |
+| `demonology-ml-raid` | 726 | +5% | +2% | +4% | +1% | +4% | 840 |
+| sim preset: Demo (Shadow Brand) | 726 | +5% | +2% | +4% | +1% | +4% | 840 |
+| `demonology-pact-raid` | 725 | +5% | +2% | +4% | +1% | +3% | 836 |
+| sim preset: Demo (Fire Brand) | 707 | +5% | +2% | +3% | +1% | +3% | 802 |
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 
@@ -34,10 +34,10 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `demonology-pact-raid` | 778 | 724 | 726 | 711 | 698 |
-| `demonology-ml-raid` | 786 | 723 | 723 | 708 | 694 |
-| sim preset: Demo (Shadow Brand) | 786 | 723 | 723 | 708 | 697 |
-| sim preset: Demo (Fire Brand) | 761 | 706 | 706 | 692 | 681 |
+| `demonology-ml-raid` | 780 | 719 | 719 | 703 | 687 |
+| sim preset: Demo (Shadow Brand) | 780 | 719 | 719 | 703 | 690 |
+| `demonology-pact-raid` | 771 | 717 | 717 | 702 | 690 |
+| sim preset: Demo (Fire Brand) | 754 | 700 | 699 | 685 | 674 |
 
 Gear presets: raid `warlock-dps-mc.p1opt.gear.json`, maximum `warlock-dps-mc.p1opt.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

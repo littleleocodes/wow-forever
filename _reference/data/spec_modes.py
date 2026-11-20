@@ -125,7 +125,7 @@ RAID_ENTRY_TREES = {
     ("mage", "frost-raid"): {"Frost"}, ("mage", "fire-raid"): {"Fire"}, ("mage", "arcane-dps"): {"Arcane"},
     ("mage", "frostfire-raid"): {"Hybrid Fire/Frost"},
     ("priest", "shadow-dps"): {"Shadow"}, ("priest", "smite-dps"): {"Hybrid Discipline/Holy"},
-    ("warlock", "affliction-raid"): {"Affliction"}, ("warlock", "fire-destro-raid"): {"Destruction"}, ("warlock", "sb-raid"): {"Destruction"},
+    ("warlock", "affliction-raid"): {"Affliction"}, ("warlock", "affliction-wrack-raid"): {"Affliction"}, ("warlock", "fire-destro-raid"): {"Destruction"}, ("warlock", "sb-raid"): {"Destruction"},
     ("warlock", "demonology-raid"): {"Demonology"}, ("warlock", "incinerate-raid"): {"Destruction"},
     ("hunter", "mm-raid"): {"Marksmanship"}, ("hunter", "mm-lonewolf-raid"): {"Marksmanship"}, ("hunter", "bm-raid"): {"Beast Mastery"},
     ("hunter", "melee-dps"): {"Survival"},

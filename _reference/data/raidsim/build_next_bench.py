@@ -24,10 +24,12 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--out", default="foreverbench-next.exe" if sys.platform.startswith("win") else "foreverbench-next")
     ap.add_argument("--tools", default=os.environ.get("WOW_FOREVER_TOOLS", str(pathlib.Path.home() / ".wow-forever-tools")))
+    ap.add_argument("--repo", default=os.environ.get("WOW_FOREVER_SIM"), help="the checkout to build in (default WOW_FOREVER_SIM, else the "
+                    "tools folder's wowsims-forever)")
     a = ap.parse_args()
     tools = pathlib.Path(a.tools)
     G = S.GAMES["forever"]
-    repo = tools / G["dir"]
+    repo = pathlib.Path(a.repo) if a.repo else tools / G["dir"]
     exe = ".exe" if sys.platform.startswith("win") else ""
     go_dir, protoc_dir, gopath = tools / "go", tools / "protoc", tools / "gopath"
     go = go_dir / "bin" / f"go{exe}"

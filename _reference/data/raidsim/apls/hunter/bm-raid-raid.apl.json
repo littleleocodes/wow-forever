@@ -33,6 +33,16 @@
  "priorityList": [
   {
    "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 1293527
+     }
+    }
+   },
+   "notes": "moved to the top 2026-11-19 (the independent audit's D5): below the Arcane Shot timing line it never fired in a full raid (Summon Hawk's removal bit-identical for beast-mastery-ml-raid); at the top +1.6% on two seeds; its place is the rotation search's"
+  },
+  {
+   "action": {
     "condition": {
      "cmp": {
       "op": "OpLt",
@@ -139,16 +149,6 @@
      }
     }
    }
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 1293527
-     }
-    }
-   },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see bm-raid-rotation-search.json)"
   },
   {
    "action": {

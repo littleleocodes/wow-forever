@@ -220,7 +220,8 @@
       "profession1": "Enchanting",
       "profession2": "Tailoring",
       "gear": "_reference/data/raidsim/gear_sets/forever/warlock-dps-mc.p1opt.gear.json",
-      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warlock/dps/apls/affliction.apl.json",
+      "apl": "_reference/data/raidsim/apls/warlock/upstream/sm_ruin.apl.json",
+      "rotation_note": "the official simulator's own rotation from its sm_ruin build file (2e6e77d84, trainer ranks), adopted 2026-11-19 (the independent audit's step 2: +1.4% / +1.6% on opt-affliction-raid-raid-dps in a full raid, seeds 1 / 2, same talents and options; deep-runs/warlock_upstream_race.py); before: the deleted fork's affliction rotation. The Wrack build plays upstream's aff_wrack rotation in its own entry, affliction-wrack-raid: each upstream rotation is built for its own build, and our 30/0/21 builds fall to 316 DPS under aff_wrack",
       "spec": {
         "warlock": {
           "options": {
@@ -242,6 +243,29 @@
         "extraMhImbueId": 13603
       },
       "builds": ["affliction-dot-raid", "opt-affliction-raid-raid-dps"]
+    },
+    "affliction-wrack-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/warlock/affliction-wrack-raid-raid.apl.json",
+      "sim_class": "ClassWarlock",
+      "sim_spec": "warlock/dps",
+      "race": "RaceGnome",
+      "distance": 25,
+      "profession1": "Enchanting",
+      "profession2": "Tailoring",
+      "gear": "_reference/data/raidsim/gear_sets/forever/warlock-dps-mc.p1opt.gear.json",
+      "apl": "_reference/data/raidsim/apls/warlock/upstream/aff_wrack.apl.json",
+      "spec": {
+        "warlock": {
+          "options": {
+            "classOptions": {"armor": "DemonArmor", "curseOptions": "Elements", "sacrificedDemon": "Imp"}
+          }
+        }
+      },
+      "consumables": {"flaskId": 13512, "spellPowerElixirId": 13454, "schoolElixirId": 9264, "guardianElixirId": 20007, "zanzaId": 8423, "alcoholId": 21151, "foodId": 18254, "potId": 13444, "conjuredId": 12662, "mhImbueId": 25122, "extraMhImbueId": 13603},
+      "builds": ["affliction-wrack-raid"],
+      "rotation_only": true,
+      "preset_names": ["Aff (Wrack)"],
+      "rotation_note": "Affliction around Wrack (2026-11-19, the independent audit's D1; user: \"Go with the audits recommendations\"): the official simulator's own Aff (Wrack) build file, its rotation (2e6e77d84, trainer ranks) and its option set: the Imp sacrificed before the pull (Forever: +15% Shadow damage), no demon out. Its own entry because each upstream rotation is built for its own build (the Wrack build does 675 DPS under affliction-raid's rotation; our 30/0/21 builds 316 under this one); affliction-raid's gear and consumables. The simulator marks the end of a Wrack channel as unmeasured in game (sim/warlock/wrack.go)."
     },
     "fire-destro-raid": {
       "apl_opt_raid": "_reference/data/raidsim/apls/warlock/fire-destro-raid-raid.apl.json",
@@ -321,7 +345,7 @@
       "profession1": "Enchanting",
       "profession2": "Tailoring",
       "gear": "_reference/data/raidsim/gear_sets/forever/warlock-dps-mc.p1opt.gear.json",
-      "apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warlock/dps/apls/demonic_pact.apl.json",
+      "apl": "_reference/data/raidsim/apls/warlock/upstream/demo_shadow_brand.apl.json",
       "spec": {
         "warlock": {
           "options": {
@@ -345,7 +369,7 @@
       "builds": ["demonology-pact-raid", "demonology-ml-raid"],
       "rotation_only": true,
       "preset_names": ["Demo (Fire Brand)", "Demo (Shadow Brand)"],
-      "rotation_note": "Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs."
+      "rotation_note": "the official simulator's own rotation from its demo_shadow_brand build file (2e6e77d84, trainer ranks), adopted 2026-11-19 (the independent audit's D2: +8.1% on demonology-ml-raid in a full raid, same talents and options; deep-runs/warlock_upstream_race.py); before: the deleted fork's demonic_pact rotation. Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs."
     },
     "incinerate-raid": {
       "apl_opt_raid": "_reference/data/raidsim/apls/warlock/incinerate-raid-raid.apl.json",

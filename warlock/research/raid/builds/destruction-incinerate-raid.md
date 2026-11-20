@@ -105,19 +105,16 @@ Before the pull: at -1.5s: cast Life Tap.
 
 | # | Priority (the first line whose condition holds is cast) | [`destruction-incinerate-raid`](destruction-incinerate-raid.md) casts/min |
 |---|---|---|
-| 1 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.3 |
-| 2 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
-| 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
-| 4 | use every other cooldown when ready | as ready |
-| 5 | if time left in the fight ≤ 3.938: cast Searing Pain | 0.5 |
-| 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
-| 7 | if mana % < 10%: cast Life Tap | 7.3 |
-| 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
-| 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
-| 10 | if Immolate is on the target: cast Conflagrate | 4.0 |
-| 11 | cast Shadow Bolt (rank 9) | 11.7 |
+| 1 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
+| 2 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
+| 3 | use every other cooldown when ready | as ready |
+| 4 | if time left in the fight ≤ 3.938: cast Searing Pain | 0.5 |
+| 5 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
+| 6 | if mana % < 10%: cast Life Tap | 7.3 |
+| 7 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
+| 8 | if Immolate is on the target: cast Conflagrate | 4.0 |
 
-Lines of the simulator's rotation these builds never cast: cast Shadowburn, cast Incinerate (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Corruption (rank 6), cast Shadowburn, cast Immolate (rank 7), cast Shadow Bolt, cast Incinerate (its condition never held in these fights).
 
 Damage by ability:
 

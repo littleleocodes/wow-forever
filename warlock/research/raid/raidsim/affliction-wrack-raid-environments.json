@@ -1,0 +1,192 @@
+{
+ "class": "warlock",
+ "spec": "affliction-wrack-raid",
+ "game": "forever",
+ "date": "2026-11-19",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
+  "commit": "2e6e77d84",
+  "racials": "off",
+  "pet_normalize": false,
+  "simulator": "wowsims/forever",
+  "client": "1.60.1.70938",
+  "gear_raid": "_reference/data/raidsim/gear_sets/forever/warlock-dps-mc.p1opt.gear.json",
+  "gear_max": "F:\\wow-forever\\_reference\\data\\raidsim\\gear_sets\\forever\\warlock-dps-mc.p1opt.gear.json",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)"
+  },
+  "dummy60": {
+   "label": "level-60 dummy",
+   "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 180 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else; none the spec cannot benefit from, such as Enhancement's Windfury Totem), consumables (and the Classic sim's world buffs), 180 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  },
+  "ladder-mana": {
+   "label": "+ mana",
+   "how": "the training dummy plus the raid's mana buffs and debuffs: mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom"
+  },
+  "ladder-armor": {
+   "label": "+ armor",
+   "how": "the training dummy plus the raid's armor buffs and debuffs (and every group before it): sunder_armor, expose_armor, faerie_fire, curse_of_recklessness"
+  },
+  "ladder-physical": {
+   "label": "+ physical",
+   "how": "the training dummy plus the raid's physical buffs and debuffs (and every group before it): battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas"
+  },
+  "ladder-spell": {
+   "label": "+ spell",
+   "how": "the training dummy plus the raid's spell buffs and debuffs (and every group before it): arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader"
+  },
+  "curve60": {
+   "label": "60 s",
+   "how": "the training dummy without execute phases, a 60 s fight (the DPS-over-time curve)"
+  },
+  "curve120": {
+   "label": "120 s",
+   "how": "the training dummy without execute phases, a 120 s fight (the DPS-over-time curve)"
+  },
+  "curve180": {
+   "label": "180 s",
+   "how": "the training dummy without execute phases, a 180 s fight (the DPS-over-time curve)"
+  },
+  "curve240": {
+   "label": "240 s",
+   "how": "the training dummy without execute phases, a 240 s fight (the DPS-over-time curve)"
+  },
+  "curve360": {
+   "label": "360 s",
+   "how": "the training dummy without execute phases, a 360 s fight (the DPS-over-time curve)"
+  }
+ },
+ "results": [
+  {
+   "label": "affliction-wrack-raid",
+   "split": "35/11/5",
+   "ours": true,
+   "dps": {
+    "dummy": 872.948655450619,
+    "dummy60": 912.6080593321681,
+    "ladder-mana": 900.8192735444015,
+    "ladder-armor": 900.8192735444015,
+    "ladder-physical": 926.1091315466965,
+    "ladder-spell": 932.7052339955372,
+    "raid": 940.668798305775,
+    "curve60": 899.8571646251452,
+    "curve120": 888.940776368299,
+    "curve180": 872.948655450619,
+    "curve240": 863.5946272846123,
+    "curve360": 841.5211008210657,
+    "max": 940.668798305775,
+    "max60": 934.2379053209025
+   },
+   "raid_spell_casts": {
+    "18881": 5.299333333333333,
+    "17926": 0.927,
+    "11689": 0.105,
+    "1311680": 1.1016666666666666,
+    "11713": 7.700666666666667,
+    "11672": 9.911,
+    "18288": 1.0,
+    "1316697": 29.417333333333332,
+    "11661": 8.415666666666667
+   },
+   "raid_casts": {
+    "Siphon Life": 5.299333333333333,
+    "Death Coil": 0.927,
+    "Life Tap": 0.105,
+    "Demonic Rune": 2.0,
+    "Curse of the Elements": 1.1016666666666666,
+    "Bane of Agony": 7.700666666666667,
+    "Major Mana Potion": 1.122,
+    "Corruption": 9.911,
+    "OtherActionManaGain": 31.342,
+    "Amplify Curse": 1.0,
+    "Wrack": 29.417333333333332,
+    "item 272438": 1.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Shadow Bolt": 8.415666666666667
+   },
+   "raid_shares": {
+    "Wrack": 0.3694,
+    "Bane of Agony": 0.2604,
+    "Corruption": 0.2227,
+    "Siphon Life": 0.0679,
+    "Shadow Bolt": 0.0648,
+    "Demonic Rune": 0.01,
+    "Death Coil": 0.0047
+   }
+  },
+  {
+   "label": "sim preset: Aff (Wrack)",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 872.948655450619,
+    "dummy60": 912.6080593321681,
+    "ladder-mana": 900.8192735444015,
+    "ladder-armor": 900.8192735444015,
+    "ladder-physical": 926.1091315466965,
+    "ladder-spell": 932.7052339955372,
+    "raid": 940.668798305775,
+    "curve60": 899.8571646251452,
+    "curve120": 888.940776368299,
+    "curve180": 872.948655450619,
+    "curve240": 863.5946272846123,
+    "curve360": 841.5211008210657,
+    "max": 940.668798305775,
+    "max60": 934.2379053209025
+   },
+   "raid_spell_casts": {
+    "1311680": 1.1016666666666666,
+    "11689": 0.105,
+    "11661": 8.415666666666667,
+    "18288": 1.0,
+    "11713": 7.700666666666667,
+    "17926": 0.927,
+    "11672": 9.911,
+    "1316697": 29.417333333333332,
+    "18881": 5.299333333333333
+   },
+   "raid_casts": {
+    "Talisman of Ephemeral Power": 2.0,
+    "Major Mana Potion": 1.122,
+    "Demonic Rune": 2.0,
+    "Curse of the Elements": 1.1016666666666666,
+    "Life Tap": 0.105,
+    "Shadow Bolt": 8.415666666666667,
+    "Amplify Curse": 1.0,
+    "OtherActionManaGain": 31.342,
+    "item 272438": 1.0,
+    "Bane of Agony": 7.700666666666667,
+    "Death Coil": 0.927,
+    "Corruption": 9.911,
+    "Wrack": 29.417333333333332,
+    "Siphon Life": 5.299333333333333
+   },
+   "raid_shares": {
+    "Wrack": 0.3694,
+    "Bane of Agony": 0.2604,
+    "Corruption": 0.2227,
+    "Siphon Life": 0.0679,
+    "Shadow Bolt": 0.0648,
+    "Demonic Rune": 0.01,
+    "Death Coil": 0.0047
+   }
+  }
+ ]
+}

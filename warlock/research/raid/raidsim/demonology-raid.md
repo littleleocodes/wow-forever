@@ -4,21 +4,21 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `demonology-pact-raid` | 2/31/18 | 734 | 42 | +0.0% | 739 | 1 | - |
-| `demonology-ml-raid` | 2/31/18 | 731 | 41 | -0.4% | 706 | 1 | - |
-| sim preset: Demo (Shadow Brand) | - | 731 | 41 | -0.4% | 706 | 1 | - |
-| sim preset: Demo (Fire Brand) | - | 713 | 32 | -2.9% | 692 | 1 | - |
+| `demonology-ml-raid` | 2/31/18 | 726 | 41 | +0.0% | 699 | 0 | - |
+| sim preset: Demo (Shadow Brand) | - | 726 | 41 | +0.0% | 699 | 0 | - |
+| `demonology-pact-raid` | 2/31/18 | 725 | 42 | -0.2% | 727 | 0 | - |
+| sim preset: Demo (Fire Brand) | - | 707 | 32 | -2.7% | 684 | 0 | - |
 
-## Damage shares (`demonology-pact-raid`, simulator actions)
+## Damage shares (`demonology-ml-raid`, simulator actions)
 
 | Action | Share |
 |---|---|
-| Shadow Bolt | 48.8% |
-| Bane of Agony | 16.0% |
-| Corruption | 15.5% |
-| Immolate | 11.0% |
-| Pet: Auto Attack | 4.7% |
-| Pet: Lash of Pain | 1.9% |
+| Shadow Bolt | 49.1% |
+| Bane of Agony | 16.2% |
+| Corruption | 14.7% |
+| Immolate | 10.9% |
+| Pet: Auto Attack | 4.8% |
+| Pet: Lash of Pain | 2.1% |
 | Demonic Rune | 1.6% |
 | Searing Pain | 0.5% |
 | Pet: spell 1293697 | 0.0% |
@@ -28,8 +28,8 @@ Mapped onto the spec model's sources: ; 100% of the damage matched no source (ra
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- demonology-pact-raid: `101-0035003021220301351-0550005003`
 - demonology-ml-raid: `011-0025003031220301351-0550005003`
 - sim preset: Demo (Shadow Brand): `011-0005003231220301351-0550005003`
+- demonology-pact-raid: `101-0035003021220301351-0550005003`
 - sim preset: Demo (Fire Brand): `011-0305003201220301351-0050055003`
 

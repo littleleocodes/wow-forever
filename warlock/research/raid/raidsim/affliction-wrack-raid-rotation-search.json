@@ -1,0 +1,52 @@
+{
+ "raid": {
+  "class": "warlock",
+  "spec": "affliction-wrack-raid",
+  "date": "2026-11-19",
+  "commit": "2e6e77d84",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "_reference/data/raidsim/apls/warlock/upstream/aff_wrack.apl.json",
+  "start": "_reference\\data\\raidsim\\apls\\warlock\\upstream\\aff_wrack.apl.json",
+  "builds": [
+   {
+    "label": "affliction-wrack-raid",
+    "talents": "25500020135201351-0050203001-05"
+   }
+  ],
+  "tuned_on": [
+   "affliction-wrack-raid"
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [],
+  "final": {
+   "raid": {
+    "affliction-wrack-raid": {
+     "before": 940.2768034092128,
+     "after": 940.2768034092128,
+     "base": 940.2768034092128,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.18937665000000045,
+     "oom_after": 0.18937665000000045
+    }
+   }
+  },
+  "signature": {
+   "specs": [
+    "Affliction"
+   ],
+   "required": [
+    "Bane of Agony",
+    "Corruption"
+   ],
+   "rejected": {
+    "structure": 0,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  }
+ }
+}

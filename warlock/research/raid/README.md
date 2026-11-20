@@ -15,6 +15,7 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Affliction/Destruction — Shadow Bolt / Ruin / Shadowburn (simulator winner adopted 2026-09-28)](builds/destruction-fire-raid.md) | 22/11/18 | DPS | — |
 | [Demonology — Demonic Pact (raid)](builds/demonology-pact-raid.md) | 2/31/18 | DPS | — |
 | [Destruction — Incinerate (raid)](builds/destruction-incinerate-raid.md) | 9/11/31 | DPS | — |
+| [Affliction — Wrack (the simulator's own build)](builds/affliction-wrack-raid.md) | 35/11/5 | DPS | — |
 
 Derived and generated builds (🔬 found by this project's searches in the simulators, ⚗ generated where no hand draft exists; the pages pick between them and the hand drafts on the numbers):
 

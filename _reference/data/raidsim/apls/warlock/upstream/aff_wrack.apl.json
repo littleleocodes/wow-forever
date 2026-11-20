@@ -1,0 +1,3092 @@
+{
+ "type": "TypeAPL",
+ "prepullActions": [
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 11661,
+      "rank": 9
+     }
+    }
+   },
+   "doAtValue": {
+    "math": {
+     "op": "OpMul",
+     "lhs": {
+      "math": {
+       "op": "OpAdd",
+       "lhs": {
+        "spellCastTime": {
+         "spellId": {
+          "spellId": 11661,
+          "rank": 9
+         }
+        }
+       },
+       "rhs": {
+        "spellTravelTime": {
+         "spellId": {
+          "spellId": 11661,
+          "rank": 9
+         }
+        }
+       }
+      }
+     },
+     "rhs": {
+      "const": {
+       "val": "-0.9"
+      }
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "petAttack": {}
+   },
+   "doAtValue": {
+    "const": {
+     "val": "-1s"
+    }
+   }
+  }
+ ],
+ "priorityList": [
+  {
+   "action": {
+    "autocastOtherCooldowns": {}
+   }
+  },
+  {
+   "action": {
+    "groupReference": {
+     "groupName": "Single/Multi Target Curse Logic"
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpGt",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "variableRef": {
+           "name": "Doom tick"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGt",
+         "lhs": {
+          "numberTargets": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "1"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 603
+     },
+     "target": {
+      "type": "Target"
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpEq",
+      "lhs": {
+       "numberTargets": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "1"
+       }
+      }
+     }
+    },
+    "groupReference": {
+     "groupName": "Single Target DoT Logic"
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpGt",
+      "lhs": {
+       "numberTargets": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "1"
+       }
+      }
+     }
+    },
+    "groupReference": {
+     "groupName": "Multi Target DoT Logic"
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "or": {
+      "vals": [
+       {
+        "auraIsActive": {
+         "auraId": {
+          "spellId": 17941
+         },
+         "includeReactionTime": true
+        }
+       },
+       {
+        "and": {
+         "vals": [
+          {
+           "variableRef": {
+            "name": "Improved Shadow Bolt Known"
+           }
+          },
+          {
+           "auraIsKnown": {
+            "auraId": {
+             "spellId": 1323392
+            }
+           }
+          },
+          {
+           "auraIsActive": {
+            "auraId": {
+             "spellId": 1323392
+            },
+            "includeReactionTime": true
+           }
+          },
+          {
+           "or": {
+            "vals": [
+             {
+              "auraIsInactive": {
+               "sourceUnit": {
+                "type": "CurrentTarget"
+               },
+               "auraId": {
+                "spellId": 17794
+               },
+               "includeReactionTime": true
+              }
+             },
+             {
+              "cmp": {
+               "op": "OpLt",
+               "lhs": {
+                "auraRemainingTime": {
+                 "sourceUnit": {
+                  "type": "CurrentTarget"
+                 },
+                 "auraId": {
+                  "spellId": 17794
+                 }
+                }
+               },
+               "rhs": {
+                "math": {
+                 "op": "OpAdd",
+                 "lhs": {
+                  "spellCastTime": {
+                   "spellId": {
+                    "spellId": 11661,
+                    "rank": 9
+                   }
+                  }
+                 },
+                 "rhs": {
+                  "spellTravelTime": {
+                   "spellId": {
+                    "spellId": 11661,
+                    "rank": 9
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            ]
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 11661,
+      "rank": 9
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "or": {
+      "vals": [
+       {
+        "and": {
+         "vals": [
+          {
+           "auraIsActive": {
+            "auraId": {
+             "spellId": 17941
+            },
+            "includeReactionTime": true
+           }
+          }
+         ]
+        }
+       },
+       {
+        "and": {
+         "vals": [
+          {
+           "variableRef": {
+            "name": "Improved Shadow Bolt Known"
+           }
+          },
+          {
+           "auraIsKnown": {
+            "auraId": {
+             "spellId": 1323392
+            }
+           }
+          },
+          {
+           "auraIsActive": {
+            "auraId": {
+             "spellId": 1323392
+            },
+            "includeReactionTime": true
+           }
+          },
+          {
+           "or": {
+            "vals": [
+             {
+              "auraIsInactive": {
+               "sourceUnit": {
+                "type": "CurrentTarget"
+               },
+               "auraId": {
+                "spellId": 17794
+               },
+               "includeReactionTime": true
+              }
+             },
+             {
+              "cmp": {
+               "op": "OpLt",
+               "lhs": {
+                "auraRemainingTime": {
+                 "sourceUnit": {
+                  "type": "CurrentTarget"
+                 },
+                 "auraId": {
+                  "spellId": 17794
+                 }
+                }
+               },
+               "rhs": {
+                "math": {
+                 "op": "OpAdd",
+                 "lhs": {
+                  "spellCastTime": {
+                   "spellId": {
+                    "spellId": 11661,
+                    "rank": 9
+                   }
+                  }
+                 },
+                 "rhs": {
+                  "spellTravelTime": {
+                   "spellId": {
+                    "spellId": 11661,
+                    "rank": 9
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            ]
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 11661,
+      "rank": 9
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "or": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpEq",
+         "lhs": {
+          "numberTargets": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "1"
+          }
+         }
+        }
+       },
+       {
+        "and": {
+         "vals": [
+          {
+           "cmp": {
+            "op": "OpLt",
+            "lhs": {
+             "variableRef": {
+              "name": "Amount of Dooms left"
+             }
+            },
+            "rhs": {
+             "const": {
+              "val": "1"
+             }
+            }
+           }
+          },
+          {
+           "not": {
+            "val": {
+             "dotIsActive": {
+              "targetUnit": {
+               "type": "Target"
+              },
+              "spellId": {
+               "spellId": 603
+              }
+             }
+            }
+           }
+          }
+         ]
+        }
+       },
+       {
+        "dotIsActive": {
+         "targetUnit": {
+          "type": "Target"
+         },
+         "spellId": {
+          "spellId": 603
+         }
+        }
+       }
+      ]
+     }
+    },
+    "groupReference": {
+     "groupName": "Cooldowns"
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpGt",
+      "lhs": {
+       "math": {
+        "op": "OpAdd",
+        "lhs": {
+         "spellCastTime": {
+          "spellId": {
+           "spellId": 11661,
+           "rank": 9
+          }
+         }
+        },
+        "rhs": {
+         "spellTravelTime": {
+          "spellId": {
+           "spellId": 11661,
+           "rank": 9
+          }
+         }
+        }
+       }
+      },
+      "rhs": {
+       "remainingTime": {}
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 17926,
+      "rank": 3
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "30%"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGt",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "60s"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 11689,
+      "rank": 6
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "channelSpell": {
+     "spellId": {
+      "spellId": 1316697,
+      "rank": 1
+     },
+     "interruptIf": {
+      "or": {
+       "vals": [
+        {
+         "and": {
+          "vals": [
+           {
+            "cmp": {
+             "op": "OpGe",
+             "lhs": {
+              "spellChanneledTicks": {
+               "spellId": {
+                "spellId": 1316697,
+                "rank": 1
+               }
+              }
+             },
+             "rhs": {
+              "const": {
+               "val": "2"
+              }
+             }
+            }
+           },
+           {
+            "auraIsInactive": {
+             "sourceUnit": {
+              "type": "Target"
+             },
+             "auraId": {
+              "spellId": 11672
+             },
+             "includeReactionTime": true
+            }
+           }
+          ]
+         }
+        },
+        {
+         "and": {
+          "vals": [
+           {
+            "cmp": {
+             "op": "OpGe",
+             "lhs": {
+              "spellChanneledTicks": {
+               "spellId": {
+                "spellId": 1316697,
+                "rank": 1
+               }
+              }
+             },
+             "rhs": {
+              "const": {
+               "val": "2"
+              }
+             }
+            }
+           },
+           {
+            "auraIsInactive": {
+             "sourceUnit": {
+              "type": "Target"
+             },
+             "auraId": {
+              "spellId": 11713
+             },
+             "includeReactionTime": true
+            }
+           },
+           {
+            "auraIsInactive": {
+             "sourceUnit": {
+              "type": "Target"
+             },
+             "auraId": {
+              "spellId": 603
+             },
+             "includeReactionTime": true
+            }
+           }
+          ]
+         }
+        },
+        {
+         "and": {
+          "vals": [
+           {
+            "cmp": {
+             "op": "OpGe",
+             "lhs": {
+              "spellChanneledTicks": {
+               "spellId": {
+                "spellId": 1316697,
+                "rank": 1
+               }
+              }
+             },
+             "rhs": {
+              "const": {
+               "val": "2"
+              }
+             }
+            }
+           },
+           {
+            "variableRef": {
+             "name": "Blood Fury Ready"
+            }
+           },
+           {
+            "or": {
+             "vals": [
+              {
+               "cmp": {
+                "op": "OpEq",
+                "lhs": {
+                 "numberTargets": {}
+                },
+                "rhs": {
+                 "const": {
+                  "val": "1"
+                 }
+                }
+               }
+              },
+              {
+               "cmp": {
+                "op": "OpLe",
+                "lhs": {
+                 "dotRemainingTime": {
+                  "targetUnit": {
+                   "type": "Target"
+                  },
+                  "spellId": {
+                   "spellId": 603
+                  }
+                 }
+                },
+                "rhs": {
+                 "const": {
+                  "val": "15"
+                 }
+                }
+               }
+              }
+             ]
+            }
+           }
+          ]
+         }
+        }
+       ]
+      }
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 11689,
+      "rank": 6
+     }
+    }
+   }
+  }
+ ],
+ "groups": [
+  {
+   "name": "Single/Multi Target Curse Logic",
+   "actions": [
+    {
+     "action": {
+      "condition": {
+       "not": {
+        "val": {
+         "warlockAssignedCurseIsActive": {}
+        }
+       }
+      },
+      "castWarlockAssignedCurse": {}
+     }
+    },
+    {
+     "action": {
+      "condition": {
+       "and": {
+        "vals": [
+         {
+          "warlockAssignedCurseIsActive": {}
+         },
+         {
+          "not": {
+           "val": {
+            "warlockAssignedCurseIsActiveOnAllTargets": {}
+           }
+          }
+         },
+         {
+          "cmp": {
+           "op": "OpGt",
+           "lhs": {
+            "numberTargets": {}
+           },
+           "rhs": {
+            "const": {
+             "val": "1"
+            }
+           }
+          }
+         }
+        ]
+       }
+      },
+      "changeTarget": {
+       "newTarget": {
+        "type": "NextTarget"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "Multi Target DoT Logic",
+   "actions": [
+    {
+     "action": {
+      "condition": {
+       "and": {
+        "vals": [
+         {
+          "not": {
+           "val": {
+            "dotIsActive": {
+             "spellId": {
+              "spellId": 603
+             }
+            }
+           }
+          }
+         },
+         {
+          "or": {
+           "vals": [
+            {
+             "not": {
+              "val": {
+               "spellIsReady": {
+                "spellId": {
+                 "spellId": 603
+                }
+               }
+              }
+             }
+            },
+            {
+             "cmp": {
+              "op": "OpLt",
+              "lhs": {
+               "remainingTime": {}
+              },
+              "rhs": {
+               "variableRef": {
+                "name": "Doom tick"
+               }
+              }
+             }
+            }
+           ]
+          }
+         },
+         {
+          "not": {
+           "val": {
+            "dotIsActive": {
+             "spellId": {
+              "spellId": 11713,
+              "rank": 6
+             }
+            }
+           }
+          }
+         },
+         {
+          "cmp": {
+           "op": "OpLt",
+           "lhs": {
+            "numberTargets": {}
+           },
+           "rhs": {
+            "const": {
+             "val": "5"
+            }
+           }
+          }
+         }
+        ]
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 18288
+       }
+      }
+     }
+    },
+    {
+     "action": {
+      "condition": {
+       "and": {
+        "vals": [
+         {
+          "not": {
+           "val": {
+            "dotIsActive": {
+             "spellId": {
+              "spellId": 603
+             }
+            }
+           }
+          }
+         },
+         {
+          "not": {
+           "val": {
+            "dotIsActive": {
+             "spellId": {
+              "spellId": 11713,
+              "rank": 6
+             }
+            }
+           }
+          }
+         },
+         {
+          "cmp": {
+           "op": "OpLt",
+           "lhs": {
+            "numberTargets": {}
+           },
+           "rhs": {
+            "const": {
+             "val": "5"
+            }
+           }
+          }
+         }
+        ]
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 11713,
+        "rank": 6
+       }
+      }
+     }
+    },
+    {
+     "action": {
+      "condition": {
+       "and": {
+        "vals": [
+         {
+          "or": {
+           "vals": [
+            {
+             "dotIsActive": {
+              "spellId": {
+               "spellId": 11713,
+               "rank": 6
+              }
+             }
+            },
+            {
+             "dotIsActive": {
+              "spellId": {
+               "spellId": 603
+              }
+             }
+            }
+           ]
+          }
+         },
+         {
+          "not": {
+           "val": {
+            "warlockBaneIsActiveOnAllTargets": {}
+           }
+          }
+         },
+         {
+          "or": {
+           "vals": [
+            {
+             "warlockAssignedCurseIsActive": {}
+            },
+            {
+             "warlockIsAssignedCurse": {
+              "curseType": "NoCurse"
+             }
+            }
+           ]
+          }
+         },
+         {
+          "cmp": {
+           "op": "OpLt",
+           "lhs": {
+            "numberTargets": {}
+           },
+           "rhs": {
+            "const": {
+             "val": "5"
+            }
+           }
+          }
+         }
+        ]
+       }
+      },
+      "changeTarget": {
+       "newTarget": {
+        "type": "NextTarget"
+       }
+      }
+     }
+    },
+    {
+     "action": {
+      "condition": {
+       "and": {
+        "vals": [
+         {
+          "not": {
+           "val": {
+            "dotIsActive": {
+             "spellId": {
+              "spellId": 11672,
+              "rank": 6
+             }
+            }
+           }
+          }
+         },
+         {
+          "cmp": {
+           "op": "OpGt",
+           "lhs": {
+            "remainingTime": {}
+           },
+           "rhs": {
+            "dotBaseDuration": {
+             "spellId": {
+              "spellId": 11672,
+              "rank": 6
+             }
+            }
+           }
+          }
+         },
+         {
+          "not": {
+           "val": {
+            "variableRef": {
+             "name": "in 5y range of 3T"
+            }
+           }
+          }
+         }
+        ]
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 11672,
+        "rank": 6
+       }
+      }
+     }
+    },
+    {
+     "action": {
+      "condition": {
+       "and": {
+        "vals": [
+         {
+          "dotIsActive": {
+           "spellId": {
+            "spellId": 11672,
+            "rank": 6
+           }
+          }
+         },
+         {
+          "not": {
+           "val": {
+            "dotIsActiveOnAllTargets": {
+             "spellId": {
+              "spellId": 11672,
+              "rank": 6
+             }
+            }
+           }
+          }
+         },
+         {
+          "or": {
+           "vals": [
+            {
+             "warlockAssignedCurseIsActive": {}
+            },
+            {
+             "warlockIsAssignedCurse": {
+              "curseType": "NoCurse"
+             }
+            }
+           ]
+          }
+         },
+         {
+          "or": {
+           "vals": [
+            {
+             "or": {
+              "vals": [
+               {
+                "dotIsActive": {
+                 "spellId": {
+                  "spellId": 11713,
+                  "rank": 6
+                 }
+                }
+               },
+               {
+                "dotIsActive": {
+                 "spellId": {
+                  "spellId": 603
+                 }
+                }
+               }
+              ]
+             }
+            },
+            {
+             "not": {
+              "val": {
+               "cmp": {
+                "op": "OpLt",
+                "lhs": {
+                 "numberTargets": {}
+                },
+                "rhs": {
+                 "const": {
+                  "val": "5"
+                 }
+                }
+               }
+              }
+             }
+            }
+           ]
+          }
+         },
+         {
+          "and": {
+           "vals": [
+            {
+             "cmp": {
+              "op": "OpGt",
+              "lhs": {
+               "remainingTime": {}
+              },
+              "rhs": {
+               "dotBaseDuration": {
+                "spellId": {
+                 "spellId": 11672,
+                 "rank": 6
+                }
+               }
+              }
+             }
+            },
+            {
+             "not": {
+              "val": {
+               "variableRef": {
+                "name": "in 5y range of 3T"
+               }
+              }
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      },
+      "changeTarget": {
+       "newTarget": {
+        "type": "NextTarget"
+       }
+      }
+     }
+    },
+    {
+     "action": {
+      "condition": {
+       "and": {
+        "vals": [
+         {
+          "or": {
+           "vals": [
+            {
+             "warlockAssignedCurseIsActiveOnAllTargets": {}
+            },
+            {
+             "warlockIsAssignedCurse": {
+              "curseType": "NoCurse"
+             }
+            }
+           ]
+          }
+         },
+         {
+          "or": {
+           "vals": [
+            {
+             "warlockBaneIsActiveOnAllTargets": {}
+            },
+            {
+             "not": {
+              "val": {
+               "cmp": {
+                "op": "OpLt",
+                "lhs": {
+                 "numberTargets": {}
+                },
+                "rhs": {
+                 "const": {
+                  "val": "5"
+                 }
+                }
+               }
+              }
+             }
+            }
+           ]
+          }
+         },
+         {
+          "or": {
+           "vals": [
+            {
+             "dotIsActiveOnAllTargets": {
+              "spellId": {
+               "spellId": 11672,
+               "rank": 6
+              }
+             }
+            },
+            {
+             "cmp": {
+              "op": "OpGt",
+              "lhs": {
+               "remainingTime": {}
+              },
+              "rhs": {
+               "dotBaseDuration": {
+                "spellId": {
+                 "spellId": 11672,
+                 "rank": 6
+                }
+               }
+              }
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      },
+      "changeTarget": {
+       "newTarget": {
+        "type": "Target"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "Single Target DoT Logic",
+   "actions": [
+    {
+     "action": {
+      "condition": {
+       "and": {
+        "vals": [
+         {
+          "not": {
+           "val": {
+            "dotIsActive": {
+             "spellId": {
+              "spellId": 11713,
+              "rank": 6
+             }
+            }
+           }
+          }
+         },
+         {
+          "cmp": {
+           "op": "OpGt",
+           "lhs": {
+            "remainingTime": {}
+           },
+           "rhs": {
+            "const": {
+             "val": "12"
+            }
+           }
+          }
+         }
+        ]
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 18288
+       }
+      }
+     }
+    },
+    {
+     "action": {
+      "condition": {
+       "and": {
+        "vals": [
+         {
+          "not": {
+           "val": {
+            "dotIsActive": {
+             "spellId": {
+              "spellId": 11713,
+              "rank": 6
+             }
+            }
+           }
+          }
+         },
+         {
+          "cmp": {
+           "op": "OpGt",
+           "lhs": {
+            "remainingTime": {}
+           },
+           "rhs": {
+            "const": {
+             "val": "12"
+            }
+           }
+          }
+         }
+        ]
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 11713,
+        "rank": 6
+       }
+      }
+     }
+    },
+    {
+     "action": {
+      "condition": {
+       "and": {
+        "vals": [
+         {
+          "not": {
+           "val": {
+            "dotIsActive": {
+             "spellId": {
+              "spellId": 11672,
+              "rank": 6
+             }
+            }
+           }
+          }
+         },
+         {
+          "cmp": {
+           "op": "OpGt",
+           "lhs": {
+            "remainingTime": {}
+           },
+           "rhs": {
+            "const": {
+             "val": "9"
+            }
+           }
+          }
+         }
+        ]
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 11672,
+        "rank": 6
+       }
+      }
+     }
+    },
+    {
+     "action": {
+      "condition": {
+       "and": {
+        "vals": [
+         {
+          "not": {
+           "val": {
+            "dotIsActive": {
+             "spellId": {
+              "spellId": 18881,
+              "rank": 4
+             }
+            }
+           }
+          }
+         },
+         {
+          "cmp": {
+           "op": "OpGt",
+           "lhs": {
+            "remainingTime": {}
+           },
+           "rhs": {
+            "dotBaseDuration": {
+             "spellId": {
+              "spellId": 18881,
+              "rank": 4
+             }
+            }
+           }
+          }
+         },
+         {
+          "auraIsInactive": {
+           "sourceUnit": {
+            "type": "Target"
+           },
+           "auraId": {
+            "spellId": 17794
+           },
+           "includeReactionTime": true
+          }
+         },
+         {
+          "not": {
+           "val": {
+            "auraIsActive": {
+             "auraId": {
+              "spellId": 20572
+             },
+             "includeReactionTime": true
+            }
+           }
+          }
+         },
+         {
+          "not": {
+           "val": {
+            "spellIsChanneling": {
+             "spellId": {
+              "spellId": 1316697,
+              "rank": 1
+             }
+            }
+           }
+          }
+         }
+        ]
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 18881,
+        "rank": 4
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "Cooldowns",
+   "actions": [
+    {
+     "action": {
+      "condition": {
+       "and": {
+        "vals": [
+         {
+          "or": {
+           "vals": [
+            {
+             "and": {
+              "vals": [
+               {
+                "cmp": {
+                 "op": "OpLt",
+                 "lhs": {
+                  "dotRemainingTime": {
+                   "targetUnit": {
+                    "type": "Target"
+                   },
+                   "spellId": {
+                    "spellId": 603
+                   }
+                  }
+                 },
+                 "rhs": {
+                  "const": {
+                   "val": "15s"
+                  }
+                 }
+                }
+               },
+               {
+                "dotIsActive": {
+                 "targetUnit": {
+                  "type": "Target"
+                 },
+                 "spellId": {
+                  "spellId": 603
+                 }
+                }
+               }
+              ]
+             }
+            },
+            {
+             "not": {
+              "val": {
+               "dotIsActive": {
+                "targetUnit": {
+                 "type": "Target"
+                },
+                "spellId": {
+                 "spellId": 603
+                }
+               }
+              }
+             }
+            }
+           ]
+          }
+         },
+         {
+          "or": {
+           "vals": [
+            {
+             "cmp": {
+              "op": "OpGt",
+              "lhs": {
+               "numberTargets": {}
+              },
+              "rhs": {
+               "const": {
+                "val": "1"
+               }
+              }
+             }
+            },
+            {
+             "and": {
+              "vals": [
+               {
+                "variableRef": {
+                 "name": "Wrack Dots Up"
+                }
+               },
+               {
+                "or": {
+                 "vals": [
+                  {
+                   "variableRef": {
+                    "name": "Amp Agony Up"
+                   }
+                  },
+                  {
+                   "variableRef": {
+                    "name": "Waiting Costs Frozen Heart"
+                   }
+                  }
+                 ]
+                }
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "itemId": 249469
+       }
+      }
+     }
+    },
+    {
+     "action": {
+      "condition": {
+       "and": {
+        "vals": [
+         {
+          "or": {
+           "vals": [
+            {
+             "and": {
+              "vals": [
+               {
+                "cmp": {
+                 "op": "OpLt",
+                 "lhs": {
+                  "dotRemainingTime": {
+                   "targetUnit": {
+                    "type": "Target"
+                   },
+                   "spellId": {
+                    "spellId": 603
+                   }
+                  }
+                 },
+                 "rhs": {
+                  "const": {
+                   "val": "30s"
+                  }
+                 }
+                }
+               },
+               {
+                "dotIsActive": {
+                 "targetUnit": {
+                  "type": "Target"
+                 },
+                 "spellId": {
+                  "spellId": 603
+                 }
+                }
+               }
+              ]
+             }
+            },
+            {
+             "not": {
+              "val": {
+               "dotIsActive": {
+                "targetUnit": {
+                 "type": "Target"
+                },
+                "spellId": {
+                 "spellId": 603
+                }
+               }
+              }
+             }
+            }
+           ]
+          }
+         },
+         {
+          "or": {
+           "vals": [
+            {
+             "cmp": {
+              "op": "OpGt",
+              "lhs": {
+               "numberTargets": {}
+              },
+              "rhs": {
+               "const": {
+                "val": "1"
+               }
+              }
+             }
+            },
+            {
+             "and": {
+              "vals": [
+               {
+                "variableRef": {
+                 "name": "Wrack Dots Up"
+                }
+               },
+               {
+                "or": {
+                 "vals": [
+                  {
+                   "variableRef": {
+                    "name": "Amp Agony Up"
+                   }
+                  },
+                  {
+                   "variableRef": {
+                    "name": "Waiting Costs Potion"
+                   }
+                  }
+                 ]
+                }
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "itemId": 250937
+       }
+      }
+     }
+    },
+    {
+     "action": {
+      "condition": {
+       "and": {
+        "vals": [
+         {
+          "or": {
+           "vals": [
+            {
+             "and": {
+              "vals": [
+               {
+                "cmp": {
+                 "op": "OpLt",
+                 "lhs": {
+                  "dotRemainingTime": {
+                   "targetUnit": {
+                    "type": "Target"
+                   },
+                   "spellId": {
+                    "spellId": 603
+                   }
+                  }
+                 },
+                 "rhs": {
+                  "const": {
+                   "val": "8s"
+                  }
+                 }
+                }
+               },
+               {
+                "dotIsActive": {
+                 "targetUnit": {
+                  "type": "Target"
+                 },
+                 "spellId": {
+                  "spellId": 603
+                 }
+                }
+               }
+              ]
+             }
+            },
+            {
+             "not": {
+              "val": {
+               "dotIsActive": {
+                "targetUnit": {
+                 "type": "Target"
+                },
+                "spellId": {
+                 "spellId": 603
+                }
+               }
+              }
+             }
+            }
+           ]
+          }
+         },
+         {
+          "or": {
+           "vals": [
+            {
+             "cmp": {
+              "op": "OpGt",
+              "lhs": {
+               "numberTargets": {}
+              },
+              "rhs": {
+               "const": {
+                "val": "1"
+               }
+              }
+             }
+            },
+            {
+             "and": {
+              "vals": [
+               {
+                "variableRef": {
+                 "name": "Wrack Dots Up"
+                }
+               },
+               {
+                "or": {
+                 "vals": [
+                  {
+                   "variableRef": {
+                    "name": "Amp Agony Up"
+                   }
+                  },
+                  {
+                   "variableRef": {
+                    "name": "Waiting Costs Eureka"
+                   }
+                  }
+                 ]
+                }
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 1259821
+       }
+      }
+     }
+    },
+    {
+     "action": {
+      "condition": {
+       "and": {
+        "vals": [
+         {
+          "or": {
+           "vals": [
+            {
+             "and": {
+              "vals": [
+               {
+                "cmp": {
+                 "op": "OpLt",
+                 "lhs": {
+                  "dotRemainingTime": {
+                   "targetUnit": {
+                    "type": "Target"
+                   },
+                   "spellId": {
+                    "spellId": 603
+                   }
+                  }
+                 },
+                 "rhs": {
+                  "const": {
+                   "val": "15s"
+                  }
+                 }
+                }
+               },
+               {
+                "dotIsActive": {
+                 "targetUnit": {
+                  "type": "Target"
+                 },
+                 "spellId": {
+                  "spellId": 603
+                 }
+                }
+               }
+              ]
+             }
+            },
+            {
+             "not": {
+              "val": {
+               "dotIsActive": {
+                "targetUnit": {
+                 "type": "Target"
+                },
+                "spellId": {
+                 "spellId": 603
+                }
+               }
+              }
+             }
+            }
+           ]
+          }
+         },
+         {
+          "or": {
+           "vals": [
+            {
+             "cmp": {
+              "op": "OpGt",
+              "lhs": {
+               "numberTargets": {}
+              },
+              "rhs": {
+               "const": {
+                "val": "1"
+               }
+              }
+             }
+            },
+            {
+             "and": {
+              "vals": [
+               {
+                "variableRef": {
+                 "name": "Wrack Dots Up"
+                }
+               },
+               {
+                "or": {
+                 "vals": [
+                  {
+                   "variableRef": {
+                    "name": "Amp Agony Up"
+                   }
+                  },
+                  {
+                   "variableRef": {
+                    "name": "Waiting Costs Blood Fury"
+                   }
+                  }
+                 ]
+                }
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 20572
+       }
+      }
+     }
+    },
+    {
+     "action": {
+      "condition": {
+       "and": {
+        "vals": [
+         {
+          "or": {
+           "vals": [
+            {
+             "cmp": {
+              "op": "OpLt",
+              "lhs": {
+               "dotRemainingTime": {
+                "targetUnit": {
+                 "type": "Target"
+                },
+                "spellId": {
+                 "spellId": 603
+                }
+               }
+              },
+              "rhs": {
+               "const": {
+                "val": "22s"
+               }
+              }
+             }
+            },
+            {
+             "not": {
+              "val": {
+               "dotIsActive": {
+                "targetUnit": {
+                 "type": "Target"
+                },
+                "spellId": {
+                 "spellId": 603
+                }
+               }
+              }
+             }
+            }
+           ]
+          }
+         },
+         {
+          "and": {
+           "vals": [
+            {
+             "cmp": {
+              "op": "OpLt",
+              "lhs": {
+               "currentMana": {}
+              },
+              "rhs": {
+               "const": {
+                "val": "1800"
+               }
+              }
+             }
+            },
+            {
+             "cmp": {
+              "op": "OpGt",
+              "lhs": {
+               "remainingTime": {}
+              },
+              "rhs": {
+               "const": {
+                "val": "60s"
+               }
+              }
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 11689,
+        "rank": 6
+       }
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "valueVariables": [
+  {
+   "name": "Doom tick",
+   "value": {
+    "dotBaseDuration": {
+     "spellId": {
+      "spellId": 603
+     }
+    }
+   }
+  },
+  {
+   "name": "Amount of Dooms left",
+   "value": {
+    "math": {
+     "op": "OpDiv",
+     "lhs": {
+      "math": {
+       "op": "OpSub",
+       "lhs": {
+        "remainingTime": {}
+       },
+       "rhs": {
+        "const": {
+         "val": "5s"
+        }
+       }
+      }
+     },
+     "rhs": {
+      "dotBaseDuration": {
+       "spellId": {
+        "spellId": 603
+       }
+      }
+     }
+    }
+   }
+  },
+  {
+   "name": "Improved Shadow Bolt Known",
+   "value": {
+    "auraIsKnown": {
+     "sourceUnit": {
+      "type": "CurrentTarget"
+     },
+     "auraId": {
+      "spellId": 17794
+     }
+    }
+   }
+  },
+  {
+   "name": "in 5y range of 3T",
+   "value": {
+    "and": {
+     "vals": [
+      {
+       "cmp": {
+        "op": "OpGe",
+        "lhs": {
+         "numberTargets": {}
+        },
+        "rhs": {
+         "const": {
+          "val": "3"
+         }
+        }
+       }
+      },
+      {
+       "cmp": {
+        "op": "OpLe",
+        "lhs": {
+         "unitDistance": {
+          "sourceUnit": {
+           "type": "CurrentTarget"
+          }
+         }
+        },
+        "rhs": {
+         "const": {
+          "val": "5"
+         }
+        }
+       }
+      },
+      {
+       "cmp": {
+        "op": "OpLe",
+        "lhs": {
+         "unitDistance": {
+          "sourceUnit": {
+           "type": "NextTarget"
+          }
+         }
+        },
+        "rhs": {
+         "const": {
+          "val": "5"
+         }
+        }
+       }
+      },
+      {
+       "cmp": {
+        "op": "OpLe",
+        "lhs": {
+         "unitDistance": {
+          "sourceUnit": {
+           "type": "PreviousTarget"
+          }
+         }
+        },
+        "rhs": {
+         "const": {
+          "val": "5"
+         }
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "name": "Blood Fury Ready",
+   "value": {
+    "and": {
+     "vals": [
+      {
+       "spellIsReady": {
+        "spellId": {
+         "spellId": 20572
+        }
+       }
+      },
+      {
+       "auraIsKnown": {
+        "auraId": {
+         "spellId": 20572
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "name": "Wrack Dots Up",
+   "value": {
+    "and": {
+     "vals": [
+      {
+       "dotIsActive": {
+        "targetUnit": {
+         "type": "Target"
+        },
+        "spellId": {
+         "spellId": 11672,
+         "rank": 6
+        }
+       }
+      },
+      {
+       "dotIsActive": {
+        "targetUnit": {
+         "type": "Target"
+        },
+        "spellId": {
+         "spellId": 11713,
+         "rank": 6
+        }
+       }
+      },
+      {
+       "or": {
+        "vals": [
+         {
+          "dotIsActive": {
+           "targetUnit": {
+            "type": "Target"
+           },
+           "spellId": {
+            "spellId": 18881,
+            "rank": 4
+           }
+          }
+         },
+         {
+          "not": {
+           "val": {
+            "spellIsKnown": {
+             "spellId": {
+              "spellId": 18881,
+              "rank": 4
+             }
+            }
+           }
+          }
+         }
+        ]
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "name": "Amp Agony Up",
+   "value": {
+    "and": {
+     "vals": [
+      {
+       "dotIsActive": {
+        "targetUnit": {
+         "type": "Target"
+        },
+        "spellId": {
+         "spellId": 11713,
+         "rank": 6
+        }
+       }
+      },
+      {
+       "not": {
+        "val": {
+         "spellIsReady": {
+          "spellId": {
+           "spellId": 18288
+          }
+         }
+        }
+       }
+      },
+      {
+       "cmp": {
+        "op": "OpLe",
+        "lhs": {
+         "math": {
+          "op": "OpSub",
+          "lhs": {
+           "spellFullCooldown": {
+            "spellId": {
+             "spellId": 18288
+            }
+           }
+          },
+          "rhs": {
+           "spellTimeToReady": {
+            "spellId": {
+             "spellId": 18288
+            }
+           }
+          }
+         }
+        },
+        "rhs": {
+         "math": {
+          "op": "OpAdd",
+          "lhs": {
+           "dotBaseDuration": {
+            "spellId": {
+             "spellId": 11713,
+             "rank": 6
+            }
+           }
+          },
+          "rhs": {
+           "const": {
+            "val": "1.5s"
+           }
+          }
+         }
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "name": "Amp Agony Wait",
+   "value": {
+    "math": {
+     "op": "OpAdd",
+     "lhs": {
+      "spellTimeToReady": {
+       "spellId": {
+        "spellId": 18288
+       }
+      }
+     },
+     "rhs": {
+      "dotBaseDuration": {
+       "spellId": {
+        "spellId": 11713,
+        "rank": 6
+       }
+      }
+     }
+    }
+   }
+  },
+  {
+   "name": "Waiting Costs Frozen Heart",
+   "value": {
+    "or": {
+     "vals": [
+      {
+       "cmp": {
+        "op": "OpLt",
+        "lhs": {
+         "remainingTime": {}
+        },
+        "rhs": {
+         "variableRef": {
+          "name": "Amp Agony Wait"
+         }
+        }
+       }
+      },
+      {
+       "and": {
+        "vals": [
+         {
+          "cmp": {
+           "op": "OpGe",
+           "lhs": {
+            "remainingTime": {}
+           },
+           "rhs": {
+            "spellFullCooldown": {
+             "spellId": {
+              "itemId": 249469
+             }
+            }
+           }
+          }
+         },
+         {
+          "cmp": {
+           "op": "OpLt",
+           "lhs": {
+            "math": {
+             "op": "OpSub",
+             "lhs": {
+              "remainingTime": {}
+             },
+             "rhs": {
+              "variableRef": {
+               "name": "Amp Agony Wait"
+              }
+             }
+            }
+           },
+           "rhs": {
+            "spellFullCooldown": {
+             "spellId": {
+              "itemId": 249469
+             }
+            }
+           }
+          }
+         }
+        ]
+       }
+      },
+      {
+       "and": {
+        "vals": [
+         {
+          "cmp": {
+           "op": "OpGe",
+           "lhs": {
+            "remainingTime": {}
+           },
+           "rhs": {
+            "math": {
+             "op": "OpMul",
+             "lhs": {
+              "const": {
+               "val": "2"
+              }
+             },
+             "rhs": {
+              "spellFullCooldown": {
+               "spellId": {
+                "itemId": 249469
+               }
+              }
+             }
+            }
+           }
+          }
+         },
+         {
+          "cmp": {
+           "op": "OpLt",
+           "lhs": {
+            "math": {
+             "op": "OpSub",
+             "lhs": {
+              "remainingTime": {}
+             },
+             "rhs": {
+              "variableRef": {
+               "name": "Amp Agony Wait"
+              }
+             }
+            }
+           },
+           "rhs": {
+            "math": {
+             "op": "OpMul",
+             "lhs": {
+              "const": {
+               "val": "2"
+              }
+             },
+             "rhs": {
+              "spellFullCooldown": {
+               "spellId": {
+                "itemId": 249469
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        ]
+       }
+      },
+      {
+       "and": {
+        "vals": [
+         {
+          "cmp": {
+           "op": "OpGe",
+           "lhs": {
+            "remainingTime": {}
+           },
+           "rhs": {
+            "math": {
+             "op": "OpMul",
+             "lhs": {
+              "const": {
+               "val": "3"
+              }
+             },
+             "rhs": {
+              "spellFullCooldown": {
+               "spellId": {
+                "itemId": 249469
+               }
+              }
+             }
+            }
+           }
+          }
+         },
+         {
+          "cmp": {
+           "op": "OpLt",
+           "lhs": {
+            "math": {
+             "op": "OpSub",
+             "lhs": {
+              "remainingTime": {}
+             },
+             "rhs": {
+              "variableRef": {
+               "name": "Amp Agony Wait"
+              }
+             }
+            }
+           },
+           "rhs": {
+            "math": {
+             "op": "OpMul",
+             "lhs": {
+              "const": {
+               "val": "3"
+              }
+             },
+             "rhs": {
+              "spellFullCooldown": {
+               "spellId": {
+                "itemId": 249469
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        ]
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "name": "Waiting Costs Potion",
+   "value": {
+    "or": {
+     "vals": [
+      {
+       "cmp": {
+        "op": "OpLt",
+        "lhs": {
+         "remainingTime": {}
+        },
+        "rhs": {
+         "variableRef": {
+          "name": "Amp Agony Wait"
+         }
+        }
+       }
+      },
+      {
+       "and": {
+        "vals": [
+         {
+          "cmp": {
+           "op": "OpGe",
+           "lhs": {
+            "remainingTime": {}
+           },
+           "rhs": {
+            "spellFullCooldown": {
+             "spellId": {
+              "itemId": 250937
+             }
+            }
+           }
+          }
+         },
+         {
+          "cmp": {
+           "op": "OpLt",
+           "lhs": {
+            "math": {
+             "op": "OpSub",
+             "lhs": {
+              "remainingTime": {}
+             },
+             "rhs": {
+              "variableRef": {
+               "name": "Amp Agony Wait"
+              }
+             }
+            }
+           },
+           "rhs": {
+            "spellFullCooldown": {
+             "spellId": {
+              "itemId": 250937
+             }
+            }
+           }
+          }
+         }
+        ]
+       }
+      },
+      {
+       "and": {
+        "vals": [
+         {
+          "cmp": {
+           "op": "OpGe",
+           "lhs": {
+            "remainingTime": {}
+           },
+           "rhs": {
+            "math": {
+             "op": "OpMul",
+             "lhs": {
+              "const": {
+               "val": "2"
+              }
+             },
+             "rhs": {
+              "spellFullCooldown": {
+               "spellId": {
+                "itemId": 250937
+               }
+              }
+             }
+            }
+           }
+          }
+         },
+         {
+          "cmp": {
+           "op": "OpLt",
+           "lhs": {
+            "math": {
+             "op": "OpSub",
+             "lhs": {
+              "remainingTime": {}
+             },
+             "rhs": {
+              "variableRef": {
+               "name": "Amp Agony Wait"
+              }
+             }
+            }
+           },
+           "rhs": {
+            "math": {
+             "op": "OpMul",
+             "lhs": {
+              "const": {
+               "val": "2"
+              }
+             },
+             "rhs": {
+              "spellFullCooldown": {
+               "spellId": {
+                "itemId": 250937
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        ]
+       }
+      },
+      {
+       "and": {
+        "vals": [
+         {
+          "cmp": {
+           "op": "OpGe",
+           "lhs": {
+            "remainingTime": {}
+           },
+           "rhs": {
+            "math": {
+             "op": "OpMul",
+             "lhs": {
+              "const": {
+               "val": "3"
+              }
+             },
+             "rhs": {
+              "spellFullCooldown": {
+               "spellId": {
+                "itemId": 250937
+               }
+              }
+             }
+            }
+           }
+          }
+         },
+         {
+          "cmp": {
+           "op": "OpLt",
+           "lhs": {
+            "math": {
+             "op": "OpSub",
+             "lhs": {
+              "remainingTime": {}
+             },
+             "rhs": {
+              "variableRef": {
+               "name": "Amp Agony Wait"
+              }
+             }
+            }
+           },
+           "rhs": {
+            "math": {
+             "op": "OpMul",
+             "lhs": {
+              "const": {
+               "val": "3"
+              }
+             },
+             "rhs": {
+              "spellFullCooldown": {
+               "spellId": {
+                "itemId": 250937
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        ]
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "name": "Waiting Costs Eureka",
+   "value": {
+    "or": {
+     "vals": [
+      {
+       "cmp": {
+        "op": "OpLt",
+        "lhs": {
+         "remainingTime": {}
+        },
+        "rhs": {
+         "variableRef": {
+          "name": "Amp Agony Wait"
+         }
+        }
+       }
+      },
+      {
+       "and": {
+        "vals": [
+         {
+          "cmp": {
+           "op": "OpGe",
+           "lhs": {
+            "remainingTime": {}
+           },
+           "rhs": {
+            "spellFullCooldown": {
+             "spellId": {
+              "spellId": 1259821
+             }
+            }
+           }
+          }
+         },
+         {
+          "cmp": {
+           "op": "OpLt",
+           "lhs": {
+            "math": {
+             "op": "OpSub",
+             "lhs": {
+              "remainingTime": {}
+             },
+             "rhs": {
+              "variableRef": {
+               "name": "Amp Agony Wait"
+              }
+             }
+            }
+           },
+           "rhs": {
+            "spellFullCooldown": {
+             "spellId": {
+              "spellId": 1259821
+             }
+            }
+           }
+          }
+         }
+        ]
+       }
+      },
+      {
+       "and": {
+        "vals": [
+         {
+          "cmp": {
+           "op": "OpGe",
+           "lhs": {
+            "remainingTime": {}
+           },
+           "rhs": {
+            "math": {
+             "op": "OpMul",
+             "lhs": {
+              "const": {
+               "val": "2"
+              }
+             },
+             "rhs": {
+              "spellFullCooldown": {
+               "spellId": {
+                "spellId": 1259821
+               }
+              }
+             }
+            }
+           }
+          }
+         },
+         {
+          "cmp": {
+           "op": "OpLt",
+           "lhs": {
+            "math": {
+             "op": "OpSub",
+             "lhs": {
+              "remainingTime": {}
+             },
+             "rhs": {
+              "variableRef": {
+               "name": "Amp Agony Wait"
+              }
+             }
+            }
+           },
+           "rhs": {
+            "math": {
+             "op": "OpMul",
+             "lhs": {
+              "const": {
+               "val": "2"
+              }
+             },
+             "rhs": {
+              "spellFullCooldown": {
+               "spellId": {
+                "spellId": 1259821
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        ]
+       }
+      },
+      {
+       "and": {
+        "vals": [
+         {
+          "cmp": {
+           "op": "OpGe",
+           "lhs": {
+            "remainingTime": {}
+           },
+           "rhs": {
+            "math": {
+             "op": "OpMul",
+             "lhs": {
+              "const": {
+               "val": "3"
+              }
+             },
+             "rhs": {
+              "spellFullCooldown": {
+               "spellId": {
+                "spellId": 1259821
+               }
+              }
+             }
+            }
+           }
+          }
+         },
+         {
+          "cmp": {
+           "op": "OpLt",
+           "lhs": {
+            "math": {
+             "op": "OpSub",
+             "lhs": {
+              "remainingTime": {}
+             },
+             "rhs": {
+              "variableRef": {
+               "name": "Amp Agony Wait"
+              }
+             }
+            }
+           },
+           "rhs": {
+            "math": {
+             "op": "OpMul",
+             "lhs": {
+              "const": {
+               "val": "3"
+              }
+             },
+             "rhs": {
+              "spellFullCooldown": {
+               "spellId": {
+                "spellId": 1259821
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        ]
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "name": "Waiting Costs Blood Fury",
+   "value": {
+    "or": {
+     "vals": [
+      {
+       "cmp": {
+        "op": "OpLt",
+        "lhs": {
+         "remainingTime": {}
+        },
+        "rhs": {
+         "variableRef": {
+          "name": "Amp Agony Wait"
+         }
+        }
+       }
+      },
+      {
+       "and": {
+        "vals": [
+         {
+          "cmp": {
+           "op": "OpGe",
+           "lhs": {
+            "remainingTime": {}
+           },
+           "rhs": {
+            "spellFullCooldown": {
+             "spellId": {
+              "spellId": 20572
+             }
+            }
+           }
+          }
+         },
+         {
+          "cmp": {
+           "op": "OpLt",
+           "lhs": {
+            "math": {
+             "op": "OpSub",
+             "lhs": {
+              "remainingTime": {}
+             },
+             "rhs": {
+              "variableRef": {
+               "name": "Amp Agony Wait"
+              }
+             }
+            }
+           },
+           "rhs": {
+            "spellFullCooldown": {
+             "spellId": {
+              "spellId": 20572
+             }
+            }
+           }
+          }
+         }
+        ]
+       }
+      },
+      {
+       "and": {
+        "vals": [
+         {
+          "cmp": {
+           "op": "OpGe",
+           "lhs": {
+            "remainingTime": {}
+           },
+           "rhs": {
+            "math": {
+             "op": "OpMul",
+             "lhs": {
+              "const": {
+               "val": "2"
+              }
+             },
+             "rhs": {
+              "spellFullCooldown": {
+               "spellId": {
+                "spellId": 20572
+               }
+              }
+             }
+            }
+           }
+          }
+         },
+         {
+          "cmp": {
+           "op": "OpLt",
+           "lhs": {
+            "math": {
+             "op": "OpSub",
+             "lhs": {
+              "remainingTime": {}
+             },
+             "rhs": {
+              "variableRef": {
+               "name": "Amp Agony Wait"
+              }
+             }
+            }
+           },
+           "rhs": {
+            "math": {
+             "op": "OpMul",
+             "lhs": {
+              "const": {
+               "val": "2"
+              }
+             },
+             "rhs": {
+              "spellFullCooldown": {
+               "spellId": {
+                "spellId": 20572
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        ]
+       }
+      },
+      {
+       "and": {
+        "vals": [
+         {
+          "cmp": {
+           "op": "OpGe",
+           "lhs": {
+            "remainingTime": {}
+           },
+           "rhs": {
+            "math": {
+             "op": "OpMul",
+             "lhs": {
+              "const": {
+               "val": "3"
+              }
+             },
+             "rhs": {
+              "spellFullCooldown": {
+               "spellId": {
+                "spellId": 20572
+               }
+              }
+             }
+            }
+           }
+          }
+         },
+         {
+          "cmp": {
+           "op": "OpLt",
+           "lhs": {
+            "math": {
+             "op": "OpSub",
+             "lhs": {
+              "remainingTime": {}
+             },
+             "rhs": {
+              "variableRef": {
+               "name": "Amp Agony Wait"
+              }
+             }
+            }
+           },
+           "rhs": {
+            "math": {
+             "op": "OpMul",
+             "lhs": {
+              "const": {
+               "val": "3"
+              }
+             },
+             "rhs": {
+              "spellFullCooldown": {
+               "spellId": {
+                "spellId": 20572
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        ]
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}
