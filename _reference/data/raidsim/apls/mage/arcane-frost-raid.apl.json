@@ -1,0 +1,341 @@
+{
+ "type": "TypeAPL",
+ "prepullActions": [
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 13033
+     }
+    }
+   },
+   "doAtValue": {
+    "const": {
+     "val": "-2s"
+    }
+   }
+  }
+ ],
+ "priorityList": [
+  {
+   "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpLt",
+      "lhs": {
+       "auraRemainingTime": {
+        "auraId": {
+         "spellId": 1326891
+        }
+       }
+      },
+      "rhs": {
+       "const": {
+        "val": "2s"
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 13033
+     }
+    }
+   },
+   "notes": "added 2026-11-19 (user: \"how is Ice Barrier not worth it for Frost ... It increases damage done by 20% while its active\"): Ice Barrier whenever Frigid Power, its +15% Frost damage for 1 min, has under 2 s left; the shield adds 5% while it holds (sim/mage/ice_barrier.go models both). No rotation of ours had cast it, so every search valued the talent at 0 and the Frost builds stopped at 30 Frost points (it is the 31-point talent): one Arcane point into it, the Winter's Chill build 523 -> 588 DPS and frost-ml-raid 613 -> 660 in a full raid (6,000 fights)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpLe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "60%"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "60%"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "itemId": 8008
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-23: changed or added by the rotation search (see frost-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "autocastOtherCooldowns": {}
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "auraIsActive": {
+      "auraId": {
+       "spellId": 400669
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 1240047
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "auraIsKnown": {
+         "auraId": {
+          "spellId": 400589
+         }
+        }
+       },
+       {
+        "auraIsActive": {
+         "auraId": {
+          "spellId": 400589
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 10212
+     }
+    }
+   },
+   "notes": "added 2026-09-28: Arcane Missiles on a Missile Barrage proc, guarded by auraIsKnown so a build without Missile Barrage never casts it"
+  },
+  {
+   "action": {
+    "condition": {
+     "or": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "auraRemainingTime": {
+           "auraId": {
+            "spellId": 400573
+           }
+          }
+         },
+         "rhs": {
+          "spellCastTime": {
+           "spellId": {
+            "spellId": 1239700
+           }
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "auraNumStacks": {
+           "auraId": {
+            "spellId": 400573
+           }
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "2"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 1239700
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-23: changed or added by the rotation search (see frost-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "spellIsReady": {
+      "spellId": {
+       "spellId": 1326082
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 12043
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-23: changed or added by the rotation search (see frost-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "5%"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGt",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "50s"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 12051
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see frost-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 10181
+     }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "remainingTime": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "3s"
+       }
+      }
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-08: changed or added by the rotation search (see frost-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 10199
+     }
+    },
+    "condition": {
+     "or": {
+      "vals": [
+       {
+        "auraIsActive": {
+         "auraId": {
+          "spellId": 12536
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "10%"
+          }
+         }
+        }
+       }
+      ]
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-08: changed or added by the rotation search (see frost-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 1239700
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see frost-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "itemId": 14152
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-23: changed or added by the rotation search (see frost-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 1326055
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-23: changed or added by the rotation search (see frost-raid-rotation-search.json)"
+  }
+ ]
+}

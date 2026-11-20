@@ -132,6 +132,36 @@
     "Shatter": 3,
     "Fingers of Frost": 2
    }
+  },
+  {
+   "class": "mage",
+   "kind": "leveling",
+   "rotation": "frost-leveling",
+   "name": "Frost with Winter's Chill (18/0/33): the official simulator's Frost Med talents",
+   "found": "2026-11-20, the independent audit's condition on the Frost raid decision: Winter's Chill's Cone of Cold bonus is played since the fight-lab pass (WC_TEXT), so the Frost redo starts from a Winter's Chill build too. At level 60 under the frost-leveling rules: 27.36 / 27.20 s per kill, 26.93 / 26.81 without their Cone of Cold veto (seeds 1 / 2, 3,000 fights), against 24.99 / 24.89 for the Ice Barrier start and 26.70 / 26.59 for the page pick",
+   "missed_by": "every leveling search before 2026-11-20 (Winter's Chill's Cone of Cold bonus was not modelled)",
+   "allocation": {
+    "Wand Specialization": 2,
+    "Arcane Resilience": 3,
+    "Arcane Subtlety": 2,
+    "Magic Absorption": 2,
+    "Arcane Concentration": 5,
+    "Arcane Geometry": 1,
+    "Arcane Meditation": 3,
+    "Improved Frostbolt": 5,
+    "Precision": 3,
+    "Ice Shards": 5,
+    "Improved Blizzard": 1,
+    "Ice Lance": 1,
+    "Arctic Reach": 2,
+    "Ice Block": 1,
+    "Shatter": 3,
+    "Improved Cone of Cold": 3,
+    "Cold Snap": 1,
+    "Fingers of Frost": 2,
+    "Winter's Chill": 5,
+    "Ice Barrier": 1
+   }
   }
  ]
 }

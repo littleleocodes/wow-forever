@@ -2,8 +2,6 @@
   "_comment": "Our scorer spec ids -> the ElliotWood/Forever simulator's spec folder (ui/specs/<class>/<spec>), gear preset, rotation (APL), player options (protojson fragment of the Player spec oneof), consumables and race, all taken from that folder's presets.ts on 2026-09-26. `builds` are our proposed-builds.json ids raced by default; the sim's own preset talents are added automatically. buffs_off / debuffs_off: proto field names of the sim's full buff set that the spec itself provides through a talent (Trueshot Aura, Leader of the Pack, Moonkin Aura); the bench clears them so the talent's own value is measured instead of duplicated.",
   "mage": {
     "frost-raid": {
-      "apl_opt_raid": "_reference/data/raidsim/apls/mage/frost-raid-raid.apl.json",
-      "apl_opt": "_reference/data/raidsim/apls/mage/frost-raid.apl.json",
       "sim_class": "ClassMage",
       "sim_spec": "mage/dps",
       "profile": "raid-dps",
@@ -12,7 +10,7 @@
       "profession1": "Alchemy",
       "profession2": "Tailoring",
       "gear": "_reference/data/raidsim/gear_sets/forever/mage-dps-p1.p1opt.gear.json",
-      "apl": "_reference/data/raidsim/apls/mage/frost-raid.base.apl.json",
+      "apl": "_reference/data/raidsim/apls/mage/upstream/frost.apl.json",
       "share_build": "frost-fingers-of-frost-raid",
       "spec": {
         "mage": {
@@ -32,9 +30,42 @@
         "conjuredId": 12662,
         "mhImbueId": 25122
       },
-      "builds": ["frost-arcane-power-raid", "frost-winters-chill-raid", "frost-fingers-of-frost-raid", "opt-frost-raid-raid-dps", "opt-frost-raid-raid-dps-extwc", "frost-ml-raid", "arcane-frost-open-raid"],
-      "tune_builds": ["frost-arcane-power-raid"],
-      "rotation_note": "Base rotation (2026-09-28): the simulator's `frost.apl.json` plus Arcane Missiles on a Missile Barrage proc, guarded by `auraIsKnown` so only builds with Missile Barrage cast it. The simulator's Frost rotation never casts Arcane Missiles, which cost the Arcane Power Frost draft (the one Frost build with Missile Barrage) 13% on the training dummy (484.8 -> 548.0 DPS) and 10% in the raid setting; the Fingers of Frost and Winter's Chill builds are unchanged. The rotation search also tunes on that draft (`tune_builds`)."
+      "builds": ["frost-winters-chill-raid", "frost-fingers-of-frost-raid", "opt-frost-raid-raid-dps", "opt-frost-raid-raid-dps-extwc", "frost-ml-raid"],
+      "rotation_note": "the official simulator's own frost rotation (2e6e77d84, trainer ranks), adopted 2026-11-20 (the independent audit's Frost decision; user: \"Go with the audits recommendations\"): with its Frost Med talents 792.6 / 792.3 DPS in a full raid against our page pick frost-ml-raid under the old rotation, 652.9 / 652.8 (+21.4%; the rotation alone on frost-ml-raid +9.7%). It builds Winter's Chill stacks with Frostbolt and Ice Lance and spends them on Cone of Cold (about 12 casts, a quarter of the damage), with Ice Barrier for Frigid Power. Cone of Cold is a 10-yard cone (12 with Arctic Reach): stand within it (the simulator does not check the cone's range). The Arcane-Frost hybrid and the Arcane Power draft keep the old rotation in arcane-frost-raid. Before: Base rotation (2026-09-28): the simulator's `frost.apl.json` plus Arcane Missiles on a Missile Barrage proc, guarded by `auraIsKnown` so only builds with Missile Barrage cast it. The simulator's Frost rotation never casts Arcane Missiles, which cost the Arcane Power Frost draft (the one Frost build with Missile Barrage) 13% on the training dummy (484.8 -> 548.0 DPS) and 10% in the raid setting; the Fingers of Frost and Winter's Chill builds are unchanged. The rotation search also tunes on that draft (`tune_builds`)."
+    },
+    "arcane-frost-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/mage/arcane-frost-raid-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/mage/arcane-frost-raid.apl.json",
+      "sim_class": "ClassMage",
+      "sim_spec": "mage/dps",
+      "race": "RaceTroll",
+      "distance": 20,
+      "profession1": "Alchemy",
+      "profession2": "Tailoring",
+      "gear": "_reference/data/raidsim/gear_sets/forever/mage-dps-p1.p1opt.gear.json",
+      "apl": "_reference/data/raidsim/apls/mage/frost-raid.base.apl.json",
+      "spec": {
+        "mage": {
+          "options": {
+            "classOptions": {"defaultMageArmor": "MageArmorMageArmor"}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "spellPowerElixirId": 13454,
+        "schoolElixirId": 17708,
+        "guardianElixirId": 20007,
+        "zanzaId": 8423,
+        "foodId": 18254,
+        "potId": 13444,
+        "conjuredId": 12662,
+        "mhImbueId": 25122
+      },
+      "builds": ["arcane-frost-open-raid", "frost-arcane-power-raid"],
+      "rotation_only": true,
+      "preset_names": [],
+      "rotation_note": "Arcane-Frost (2026-11-20, the independent audit's Frost decision; user: \"Go with the audits recommendations\"): the rotations frost-raid had been tuned to until that day (our base: the simulator's old frost rotation plus Arcane Missiles on a Missile Barrage proc, and its passes; record arcane-frost-raid-rotation-search.json, copied), kept for the Arcane-Frost hybrid and the Arcane Power draft: under the official simulator's frost rotation, which frost-raid took, the hybrid falls from 694 to 466 DPS. frost-raid's gear, options and consumables."
     },
     "fire-raid": {
       "apl_opt_raid": "_reference/data/raidsim/apls/mage/fire-raid-raid.apl.json",
@@ -306,7 +337,7 @@
       "spec": {
         "warlock": {
           "options": {
-            "classOptions": {"armor": "DemonArmor", "curseOptions": "Elements", "sacrificeSummon": true, "summon": "Imp"}
+            "classOptions": {"armor": "DemonArmor", "curseOptions": "Elements", "sacrificeSummon": true, "summon": "Imp", "soulShards": 32}
           }
         }
       },
@@ -340,7 +371,7 @@
       "spec": {
         "warlock": {
           "options": {
-            "classOptions": {"armor": "DemonArmor", "curseOptions": "Elements", "sacrificeSummon": true, "summon": "Imp"}
+            "classOptions": {"armor": "DemonArmor", "curseOptions": "Elements", "sacrificeSummon": true, "summon": "Imp", "soulShards": 32}
           }
         }
       },
@@ -373,7 +404,7 @@
       "spec": {
         "warlock": {
           "options": {
-            "classOptions": {"armor": "DemonArmor", "curseOptions": "Elements", "summon": "Succubus", "pactSacrifice": "Imp"}
+            "classOptions": {"armor": "DemonArmor", "curseOptions": "Elements", "summon": "Succubus", "pactSacrifice": "Imp", "soulShards": 32}
           }
         }
       },
@@ -409,7 +440,7 @@
       "spec": {
         "warlock": {
           "options": {
-            "classOptions": {"armor": "DemonArmor", "curseOptions": "Elements", "sacrificeSummon": true, "summon": "Imp"}
+            "classOptions": {"armor": "DemonArmor", "curseOptions": "Elements", "sacrificeSummon": true, "summon": "Imp", "soulShards": 32}
           }
         }
       },

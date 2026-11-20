@@ -123,7 +123,7 @@ def slug(spec):
 # because it is faster there (the cross-rotation races stay as research). The trees each raid entry's rotation is built for:
 RAID_ENTRY_TREES = {
     ("mage", "frost-raid"): {"Frost"}, ("mage", "fire-raid"): {"Fire"}, ("mage", "arcane-dps"): {"Arcane"},
-    ("mage", "frostfire-raid"): {"Hybrid Fire/Frost"},
+    ("mage", "frostfire-raid"): {"Hybrid Fire/Frost"}, ("mage", "arcane-frost-raid"): {"Hybrid Arcane/Frost"},
     ("priest", "shadow-dps"): {"Shadow"}, ("priest", "smite-dps"): {"Hybrid Discipline/Holy"},
     ("warlock", "affliction-raid"): {"Affliction"}, ("warlock", "affliction-wrack-raid"): {"Affliction"}, ("warlock", "destro-raid"): {"Destruction"}, ("warlock", "fire-destro-raid"): {"Destruction"}, ("warlock", "sb-raid"): {"Destruction"},
     ("warlock", "demonology-raid"): {"Demonology"}, ("warlock", "incinerate-raid"): {"Destruction"},
