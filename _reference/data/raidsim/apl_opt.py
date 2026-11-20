@@ -378,12 +378,15 @@ def new_spell_pool(cls):
     p = ROOT / "_reference/data/forever-spells" / f"{cls}.json"
     if not p.exists():
         return []
+    # trainer ranks only (2026-11-19, the audit's H18; trainer_ranks.py): a class book's rank is not the top rank on offer
+    tr = HERE / "trainer-ranks.json"
+    book = {int(b) for b in json.load(open(tr, encoding="utf-8"))["map"]} if tr.exists() else set()
     out = []
     for tab in json.load(open(p, encoding="utf-8")).get("tabs", []):
         if tab.get("name") == "Pets":
             continue
         for sp in tab.get("spells", []):
-            ranks = [r for r in sp.get("ranks", []) if r.get("id")]
+            ranks = [r for r in sp.get("ranks", []) if r.get("id") and int(r["id"]) not in book]
             if not ranks or "Passive" in (ranks[-1].get("rank") or "") or (sp.get("name") not in COMBAT_ALLOW
                                                                             and any(sp.get("name", "").startswith(x) for x in NOT_COMBAT + NOT_COMBAT_SPELLS)):
                 continue

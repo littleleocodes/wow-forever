@@ -747,6 +747,17 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
   e.g. Frost's adds Arcane Missiles on Missile Barrage guarded by `auraIsKnown` (a condition on an aura the build does not know
   vanishes in the simulator: guard any line that only some builds can use). `tune_builds` names builds the search must also protect
   (a draft of another rotation family sharing the entry).
+- **Trainer ranks only** (2026-11-19, the independent audit's H18; user: "Go with the audits recommendations"): the simulator knows the
+  class books' ranks (`sim/core/spelldata/book_ranks.go`: Grimoire of Shadow Bolt X, Tome of Frostbolt XI, Guide: Serpent Sting IX,
+  Tablet of Flame Shock VI, Handbook of Backstab IX ...; Ruins of Ahn'Qiraj in Classic), and 44 rotation files cast them. Assumption
+  (the audit session's, stated in every page footer with raid numbers): Forever has no class books yet. One mapping, book id -> the
+  trainer's top rank by rank number (`raidsim/trainer-ranks.json`; Shadow Bolt 25307 -> 11661: our spellbook lists rank 10 before 9);
+  `raidsim/trainer_ranks.py` lists, `--apply`s (casts and conditions alike: a condition left on the book rank reads an absent spell)
+  or `--reverse`s it in every rotation file of ours and every entry base under presets/. The rotation search's pool leaves book ranks
+  out (`new_spell_pool`) and `apl_validate.py` lists any left ("book"). The full raid's own buffs were already trainer ranks (Battle
+  Shout rank 6, Greater Blessings rank 1). Full raid, same fights, seeds 1-2: Balance -3.0%, hunters -1.7 to -2.8%, Enhancement -1.9
+  to -2.2%, Elemental -1.2 to -1.4%, warlocks -1.0 to -1.8%, dagger rogues -0.5%, warriors 0 to -0.3%. The fight lab and the healer
+  lab follow in the fight-lab pass (both still play the book rank at 60).
 - The bench registers the configured potion and conjured item (2026-09-28): the simulator builds their cooldowns only from the lists
   its UI sends (`potions`, `conjuredItems`), which our configs never filled, so until then no run used a potion, a Demonic Rune or
   Thistle Tea (hunter dummy DPS +8%, warlock +3-4%, Enhancement +4%, combat rogue +2-3%). Raid numbers before that date lack them.

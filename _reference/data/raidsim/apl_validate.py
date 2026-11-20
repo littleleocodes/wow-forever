@@ -20,8 +20,10 @@ import sys
 HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 import run as R  # noqa: E402
+import trainer_ranks as TR  # noqa: E402
 
 ROOT = HERE.parents[2]
+BOOK = TR.load_map() if TR.MAP.exists() else {}
 
 
 def main():
@@ -82,6 +84,10 @@ def main():
                         if msgs:
                             line = json.dumps(prio[int(i)].get("action", {}))[:220] if kind == "priority" and int(i) < len(prio) else ""
                             bad[f"{kind}[{i}]"] = {"messages": sorted(set(msgs)), "line": line}
+                if BOOK:   # trainer ranks only (2026-11-19, the audit's H18; trainer_ranks.py): a class book's rank is listed
+                    hit = TR.named(open(apl, encoding="utf-8").read(), BOOK)
+                    if hit:
+                        bad["book"] = {"messages": [f"book rank {b} ({BOOK[b]['spell']}): trainer_ranks.py --apply" for b in hit], "line": ""}
                 record.setdefault(cls, {})[f"{spec}:{name}"] = bad
                 print(f"== {cls} {spec} {name}: {len(bad)} lines with warnings")
                 for k, v in bad.items():

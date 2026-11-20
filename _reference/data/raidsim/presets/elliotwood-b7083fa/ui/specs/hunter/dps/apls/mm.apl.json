@@ -2,7 +2,7 @@
 	"type": "TypeAPL",
 	"prepullActions": [
 		{
-			"action": { "castSpell": { "spellId": { "spellId": 25296 } } },
+			"action": { "castSpell": { "spellId": { "spellId": 14322 } } },
 			"doAtValue": { "const": { "val": "-10s" } }
 		},
 		{
@@ -89,7 +89,7 @@
 									"op": "OpLt",
 									"lhs": {
 										"dotRemainingTime": {
-											"spellId": { "spellId": 25295 }
+											"spellId": { "spellId": 13555 }
 										}
 									},
 									"rhs": { "const": { "val": "1s" } }
@@ -119,7 +119,7 @@
 						]
 					}
 				},
-				"castSpell": { "spellId": { "spellId": 25295 } }
+				"castSpell": { "spellId": { "spellId": 13555 } }
 			}
 		},
 		{

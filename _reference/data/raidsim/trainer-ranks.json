@@ -1,0 +1,270 @@
+{
+ "assumption": "Spell ranks: trainer ranks only. The class books' ranks (Grimoire of Shadow Bolt X, Tome of Frostbolt XI and the like; Ruins of Ahn'Qiraj in Classic) are assumed not to be in Forever yet.",
+ "source": "sim/core/spelldata/book_ranks.go of the pinned simulator and our spellbooks' rank numbers (trainer_ranks.py --map)",
+ "map": {
+  "25286": {
+   "trainer": 11567,
+   "class": "warrior",
+   "spell": "Heroic Strike",
+   "book_rank": 9,
+   "trainer_rank": 8,
+   "book": "Manual of Heroic Strike IX"
+  },
+  "25288": {
+   "trainer": 11601,
+   "class": "warrior",
+   "spell": "Revenge",
+   "book_rank": 6,
+   "trainer_rank": 5,
+   "book": "Manual of Revenge VI"
+  },
+  "25289": {
+   "trainer": 11551,
+   "class": "warrior",
+   "spell": "Battle Shout",
+   "book_rank": 7,
+   "trainer_rank": 6,
+   "book": "Manual of Battle Shout VII"
+  },
+  "25290": {
+   "trainer": 19854,
+   "class": "paladin",
+   "spell": "Blessing of Wisdom",
+   "book_rank": 6,
+   "trainer_rank": 5,
+   "book": "Libram: Blessing of Wisdom VI"
+  },
+  "25291": {
+   "trainer": 19838,
+   "class": "paladin",
+   "spell": "Blessing of Might",
+   "book_rank": 7,
+   "trainer_rank": 6,
+   "book": "Libram: Blessing of Might VII"
+  },
+  "25292": {
+   "trainer": 10329,
+   "class": "paladin",
+   "spell": "Holy Light",
+   "book_rank": 9,
+   "trainer_rank": 8,
+   "book": "Libram: Holy Light IX"
+  },
+  "25295": {
+   "trainer": 13555,
+   "class": "hunter",
+   "spell": "Serpent Sting",
+   "book_rank": 9,
+   "trainer_rank": 8,
+   "book": "Guide: Serpent Sting IX"
+  },
+  "25296": {
+   "trainer": 14322,
+   "class": "hunter",
+   "spell": "Aspect of the Hawk",
+   "book_rank": 7,
+   "trainer_rank": 6,
+   "book": "Guide: Aspect of the Hawk VII"
+  },
+  "25297": {
+   "trainer": 9889,
+   "class": "druid",
+   "spell": "Healing Touch",
+   "book_rank": 11,
+   "trainer_rank": 10,
+   "book": "Book of Healing Touch XI"
+  },
+  "25298": {
+   "trainer": 9876,
+   "class": "druid",
+   "spell": "Starfire",
+   "book_rank": 7,
+   "trainer_rank": 6,
+   "book": "Book of Starfire VII"
+  },
+  "25299": {
+   "trainer": 9841,
+   "class": "druid",
+   "spell": "Rejuvenation",
+   "book_rank": 11,
+   "trainer_rank": 10,
+   "book": "Book of Rejuvenation XI"
+  },
+  "25300": {
+   "trainer": 11281,
+   "class": "rogue",
+   "spell": "Backstab",
+   "book_rank": 9,
+   "trainer_rank": 8,
+   "book": "Handbook of Backstab IX"
+  },
+  "25302": {
+   "trainer": 11303,
+   "class": "rogue",
+   "spell": "Feint",
+   "book_rank": 5,
+   "trainer_rank": 4,
+   "book": "Handbook of Feint V"
+  },
+  "25304": {
+   "trainer": 10181,
+   "class": "mage",
+   "spell": "Frostbolt",
+   "book_rank": 11,
+   "trainer_rank": 10,
+   "book": "Tome of Frostbolt XI"
+  },
+  "25306": {
+   "trainer": 10151,
+   "class": "mage",
+   "spell": "Fireball",
+   "book_rank": 12,
+   "trainer_rank": 11,
+   "book": "Tome of Fireball XII"
+  },
+  "25307": {
+   "trainer": 11661,
+   "class": "warlock",
+   "spell": "Shadow Bolt",
+   "book_rank": 10,
+   "trainer_rank": 9,
+   "book": "Grimoire of Shadow Bolt X"
+  },
+  "25309": {
+   "trainer": 11668,
+   "class": "warlock",
+   "spell": "Immolate",
+   "book_rank": 8,
+   "trainer_rank": 7,
+   "book": "Grimoire of Immolate VIII"
+  },
+  "25311": {
+   "trainer": 11672,
+   "class": "warlock",
+   "spell": "Corruption",
+   "book_rank": 7,
+   "trainer_rank": 6,
+   "book": "Grimoire of Corruption VII"
+  },
+  "25314": {
+   "trainer": 10965,
+   "class": "priest",
+   "spell": "Greater Heal",
+   "book_rank": 5,
+   "trainer_rank": 4,
+   "book": "Codex of Greater Heal V"
+  },
+  "25315": {
+   "trainer": 10929,
+   "class": "priest",
+   "spell": "Renew",
+   "book_rank": 10,
+   "trainer_rank": 9,
+   "book": "Codex of Renew X"
+  },
+  "25316": {
+   "trainer": 10961,
+   "class": "priest",
+   "spell": "Prayer of Healing",
+   "book_rank": 5,
+   "trainer_rank": 4,
+   "book": "Codex of Prayer of Healing V"
+  },
+  "25345": {
+   "trainer": 10212,
+   "class": "mage",
+   "spell": "Arcane Missiles",
+   "book_rank": 8,
+   "trainer_rank": 7,
+   "book": "Tome of Arcane Missiles VIII"
+  },
+  "25357": {
+   "trainer": 10396,
+   "class": "shaman",
+   "spell": "Healing Wave",
+   "book_rank": 10,
+   "trainer_rank": 9,
+   "book": "Tablet of Healing Wave X"
+  },
+  "25359": {
+   "trainer": 10627,
+   "class": "shaman",
+   "spell": "Grace of Air Totem",
+   "book_rank": 3,
+   "trainer_rank": 2,
+   "book": "Tablet of Grace of Air Totem III"
+  },
+  "25361": {
+   "trainer": 10442,
+   "class": "shaman",
+   "spell": "Strength of Earth Totem",
+   "book_rank": 5,
+   "trainer_rank": 4,
+   "book": "Tablet of Strength of Earth Totem V"
+  },
+  "25916": {
+   "trainer": 25782,
+   "class": "paladin",
+   "spell": "Greater Blessing of Might",
+   "book_rank": 2,
+   "trainer_rank": 1,
+   "book": "Greater Blessing of Might rank 2, the raid's book rank; no item teaches it directly"
+  },
+  "25918": {
+   "trainer": 25894,
+   "class": "paladin",
+   "spell": "Greater Blessing of Wisdom",
+   "book_rank": 2,
+   "trainer_rank": 1,
+   "book": "Greater Blessing of Wisdom rank 2, the raid's book rank; no item teaches it directly"
+  },
+  "28609": {
+   "trainer": 10177,
+   "class": "mage",
+   "spell": "Frost Ward",
+   "book_rank": 5,
+   "trainer_rank": 4,
+   "book": "Tome of Frost Ward V"
+  },
+  "28610": {
+   "trainer": 11740,
+   "class": "warlock",
+   "spell": "Shadow Ward",
+   "book_rank": 4,
+   "trainer_rank": 3,
+   "book": "Grimoire of Shadow Ward IV"
+  },
+  "28612": {
+   "trainer": 10145,
+   "class": "mage",
+   "spell": "Conjure Food",
+   "book_rank": 7,
+   "trainer_rank": 6,
+   "book": "Tome of Conjure Food VII"
+  },
+  "29228": {
+   "trainer": 10448,
+   "class": "shaman",
+   "spell": "Flame Shock",
+   "book_rank": 6,
+   "trainer_rank": 5,
+   "book": "Tablet of Flame Shock VI"
+  },
+  "31016": {
+   "trainer": 11300,
+   "class": "rogue",
+   "spell": "Eviscerate",
+   "book_rank": 9,
+   "trainer_rank": 8,
+   "book": "Manual of Eviscerate IX"
+  },
+  "31018": {
+   "trainer": 22829,
+   "class": "druid",
+   "spell": "Ferocious Bite",
+   "book_rank": 6,
+   "trainer_rank": 5,
+   "book": "Book of Ferocious Bite V, which teaches rank 6"
+  }
+ }
+}
