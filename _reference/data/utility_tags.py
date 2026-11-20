@@ -14,7 +14,7 @@ import re
 HERE = pathlib.Path(__file__).resolve().parent
 TAGS = [("interrupt", r"interrupt|pushback|casting time lost|lose (?:.* )?casting time|avoid interruption"),
         ("threat", r"threat"),
-        ("mana", r"mana cost|reduces the mana|restores? .*mana|mana regeneration|regenerat.* mana"),
+        ("mana", r"mana cost|reduces the mana|restores? .*mana|mana regeneration|regenerat.* mana|mana awarded|gain mana|mana spring"),
         ("range", r"\brange\b|radius"),
         ("survival", r"stamina|armor|damage taken|resistances?|dodge|parry|block|health"),
         # resistance to fear, stun, disorient, charm or silence (2026-11-20, the audit session): after survival, which helps on every

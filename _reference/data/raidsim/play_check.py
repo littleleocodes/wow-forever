@@ -76,8 +76,17 @@ ROLE_SWITCHES = {
     "priest": CASTER,
 }
 NOT_CLASS_OWN = {"mage:arcane-dps": ["curse_of_elements"]}   # entries whose school a listed debuff may not touch: left out
-# a switch the build's own talent supplies (the class turns the raid's copy on itself): not judged for that build
+# a switch the build supplies itself, by a talent (the class turns the raid's copy on: Trueshot Aura, Leader of the Pack, Moonkin Form)
+# or by a spell it casts (its own totem, shout, sunder, judgement or Faerie Fire holds the same category): not judged for that build
 OWN_TALENT = {"trueshot_aura": {"Trueshot Aura"}, "leader_of_the_pack+moonkin_aura": {"Leader of the Pack", "Moonkin Form"}}
+OWN_CAST = {"strength_of_earth_totem": {"Strength of Earth Totem"}, "windfury_totem": {"Windfury Totem"}, "battle_shout": {"Battle Shout"},
+            "judgement_of_the_crusader": {"Seal of the Crusader", "Judgement of the Crusader"},
+            "sunder_armor+expose_armor": {"Sunder Armor", "Expose Armor"}, "faerie_fire+curse_of_recklessness": {"Faerie Fire", "Faerie Fire (Feral)"},
+            "greater_blessing_of_might": {"Blessing of Might", "Greater Blessing of Might"}, "arcane_intellect": {"Arcane Intellect"}}
+# a talent that is the raid buff itself: worth nothing in a full raid that already has the buff, the raid's source in a real one
+RAID_BUFF_TALENT = {"Leader of the Pack": "leader_of_the_pack", "Trueshot Aura": "trueshot_aura", "Moonkin Form": "moonkin_aura"}
+# a spell only for some creature types: never cast on the bench's Elemental (Exorcism, Holy Wrath: Undead and Demons)
+TARGET_TYPE = re.compile(r"\bUndead\b|\bDemons?\b", re.I)
 # a raid debuff the class turns off in favour of its own cast (the official simulator's hunter.go: the mark; warlock.go: the assigned
 # curse, default Elements): the rotation must cast it (D11, 2026-11-20: no hunter rotation of ours had cast the mark)
 CURSES = {"Recklessness": "Curse of Recklessness", "Weakness": "Curse of Weakness", "NoCurse": None}
@@ -316,11 +325,15 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
             if d:
                 conv += [f"{p.name}: {x}" for x in d]
     res["rotation_fail"] = rot_fail + [f"differs from a fresh conversion of upstream's file: {x}" for x in conv]
+    all_cs = {}
+    for b in bids:
+        c = casts_by_id(base.get(b) or {}, names)
+        for src, al in RR.CAST_ALIASES.items():   # Judgement's casts are booked under the judged seal's ids (as the pages count them)
+            c[src] = c.get(src, 0) + sum(c.get(x, 0) for x in al)
+        all_cs[b] = c
     for b in bids:
         row = base.get(b) or {}
-        cs = casts_by_id(row, names)
-        for src, al in RR.CAST_ALIASES.items():   # Judgement's casts are booked under the judged seal's ids (as the pages count them)
-            cs[src] = cs.get(src, 0) + sum(cs.get(x, 0) for x in al)
+        cs = all_cs[b]
         have = flat(data[b]["allocation"])
         f = {"dps": round(row.get("dps") or 0, 2), "never_cast": [], "abilities": [], "zero_talents": [], "inert_switches": [], "fail": []}
         # the build without each talent, first: an ability whose casts are booked under another id (Swift Judgement under the judged
@@ -348,6 +361,10 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
                 why = "talent not taken"
             elif nm in matters:
                 why = booked
+            elif any(all_cs[o].get(sid, 0) > 0 for o in bids if o != b):
+                why = "cast by another build of the entry (the line serves builds that reach it)"
+            elif nm in book and TARGET_TYPE.search(book[nm][1]):
+                why = "needs an Undead or Demon target (the bench's boss is an Elemental)"
             elif cond is not None and false_switch(cond, apl):
                 why = f"switch off ({false_switch(cond, apl)})"
             elif cond is not None:
@@ -374,6 +391,10 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
                 why = "needs a parry or a block"
             if not why and (FA.DEFENSIVE.search(txt) or SHIELD.search(txt)):
                 why = "situational (defensive)"
+            if not why and use.get(t, UT.NONE) < UT.NONE:   # an interrupt, a threat cut, a range tool: pressed when the fight calls for it
+                why = f"situational (utility: {[g for g, _ in UT.TAGS][use[t]]})"
+            if not why and TARGET_TYPE.search(txt):
+                why = "needs an Undead or Demon target (the bench's boss is an Elemental)"
             f["abilities"].append(f"{t}: {why or 'NEVER CAST, no reason'}")
             if why and why != "wasted":
                 reasons[t] = why
@@ -392,6 +413,8 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
                 why = f"ability: {reasons[t]}"
             if not why and use.get(t, UT.NONE) < UT.NONE:   # a raid utility tag (range, survival ...): a filler, not a dead point
                 why = f"utility filler ({[g for g, _ in UT.TAGS][use[t]]})"   # (the audit session's ruling, 2026-11-20: Flame Throwing)
+            if not why and t in RAID_BUFF_TALENT:
+                why = f"the raid's {RAID_BUFF_TALENT[t]} itself (the full raid already holds it; in a real raid this build is its source)"
             f["zero_talents"].append(f"{t} {have[t]}: {why or 'WORTH NOTHING, not a gate or a recorded filler'}")
             if not why:
                 f["fail"].append(f"c: {t} worth nothing and not a gate or a recorded filler")
@@ -399,9 +422,12 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
         f = res["builds"][b]
         have = flat(data[b]["allocation"])
         # d. inert raid switches
+        cs = all_cs[b]
         for s, srows in sw_rows.items():
             if OWN_TALENT.get(s, set()) & set(have):
                 continue
+            if any(cs.get(i, 0) > 0 for n in OWN_CAST.get(s, ()) for i in book.get(n, (set(), ""))[0]):
+                continue   # the build casts the spell that supplies it (its own totem, shout, sunder, judgement)
             r = srows.get(b)
             if r and same(r.get("dps"), (base.get(b) or {}).get("dps")):
                 f["inert_switches"].append(s)
