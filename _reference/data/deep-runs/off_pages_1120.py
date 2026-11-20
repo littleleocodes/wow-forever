@@ -21,6 +21,16 @@ OFF = {
                                           "(frost-med-raid, 796.3) by 37% (504.6; full raid, 3,000 fights, seed 1)",
     ("mage", "arcane-blast-raid"): "fails the play check (Burning Soul and Improved Frostbolt worth nothing, neither a gate) and trails "
                                    "Arcane's pick (arcane-fire-raid, 825.9) by 16% (692.6; full raid, 3,000 fights, seed 1)",
+    ("warlock", "destruction-fire-raid"): "fails the play check (Amplify Curse never cast and worth nothing, no gate) and trails "
+                                          "Destruction's pick (destruction-succubus-raid, 881.5) by 17.5% (726.9)",
+    ("paladin", "ret-raid-dps"): "fails the play check (Precision worth nothing at the hit cap, no gate) and trails Retribution's pick "
+                                 "(767.8) by 17.7% (632.1)",
+    ("paladin", "opt-ret-dps-raid-dps"): "fails the play check (Precision worth nothing at the hit cap, no gate) and trails Retribution's "
+                                         "pick (767.8) by 17.7% (632.1)",
+    ("rogue", "assassination-mutilate-raid"): "fails the play check (Remorseless Attacks worth nothing in a boss fight, no gate) and trails "
+                                              "Assassination's pick (assassination-open-raid, 844.1) by 17.9% (692.8)",
+    ("rogue", "subtlety-hemo-raid"): "fails the play check (Camouflage, Dirty Tricks, Improved Ambush, Master of Deception and Setup worth "
+                                     "nothing in a raid) and trails Subtlety's pick (subtlety-ml-raid, 817.1) by 19% (661.5)",
 }
 
 
