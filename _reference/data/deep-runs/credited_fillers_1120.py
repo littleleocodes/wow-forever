@@ -1,4 +1,4 @@
-"""The filler pass for the credited simulator builds (2026-11-20, the audit session's request after the user's question on Deflection in
+"""The filler pass for the credited simulator builds and six of ours (2026-11-20, the audit session's request after the user's question on Deflection in
 the Survival Raptor build; the user's rule of 2026-11-08: a page pick holds no talent that does nothing).
 
 raidsim/filler_audit.py's search, made exact:
@@ -31,7 +31,12 @@ from filelock import locked  # noqa: E402
 BUILDS = [("mage", "frost-raid", "frost-med-raid"), ("mage", "arcane-dps", "arcane-fire-raid"), ("mage", "frostfire-raid", "frostfire-ffb-raid"),
           ("warlock", "destro-raid", "destruction-succubus-raid"), ("warlock", "affliction-wrack-raid", "affliction-wrack-raid"),
           ("hunter", "survival-pet-raid", "survival-raptor-raid"), ("paladin", "ret-dps", "retribution-unsealed-wrath-raid"),
-          ("paladin", "shockadin-raid", "shockadin-holy-shock-raid"), ("hunter", "mm-lonewolf-raid", "marksmanship-lone-wolf-sim-raid")]
+          ("paladin", "shockadin-raid", "shockadin-holy-shock-raid"), ("hunter", "mm-lonewolf-raid", "marksmanship-lone-wolf-sim-raid"),
+          # ours: builds whose filler audit had moved points into avoidance talents (Deflection, Lightning Reflexes), which give a damage
+          # dealer the boss never attacks nothing (utility_tags.SURVIVAL_DPS, the same day)
+          ("hunter", "melee-dps", "beast-survival-open-raid"), ("paladin", "ret-dps", "prot-ret-ml-raid"), ("paladin", "ret-dps", "retribution-open-raid"),
+          ("paladin", "shockadin-raid", "shockadin-open-raid"), ("rogue", "assassination-raid", "assassination-open-raid"),
+          ("rogue", "combat-daggers-raid", "daggers-split-open-raid")]
 OUT = DATA / "raidsim" / "credited-fillers.json"
 R, A = FA.R, FA.A
 CTX = {"used": set(), "banned": set(), "tal": {}, "names": set()}
@@ -118,10 +123,37 @@ def dummy_prefixes(cls, spec, start, moves):
     return [rows[str(i)]["dps"] for i in range(len(allocs))]
 
 
+def verify(rec):
+    """Each record with moves: the start and the final build raced in a full raid, 10,000 fights, seeds 1 and 2 (the numbers the list
+    gives); `ok` stays only when both seeds are bit for bit the same."""
+    R.set_game("forever")
+    repo = R.repo_path(argparse.Namespace(repo=None))
+    for key, x in rec.items():
+        if not x.get("moves") or x.get("check"):
+            continue
+        cls = key.split("/")[0]
+        entry = R.SPECS[cls][x["entry"]]
+        sim_trees = R.load_trees(repo, cls)
+        chk = {}
+        for seed in (1, 2):
+            rows = A.bench(entry, repo, [{"label": "start", "talents": R.talents_string(sim_trees, flat(x["start"]))},
+                                         {"label": "final", "talents": R.talents_string(sim_trees, flat(x["allocation"]))}],
+                           10000, seed, "raid", f"credfill-{x['entry']}")
+            chk[f"raid seed {seed}"] = [rows["start"]["dps"], rows["final"]["dps"]]
+        x["check"] = chk
+        x["ok"] = bool(x.get("ok")) and all(a == b for a, b in chk.values())
+        print(f"  {key}: " + ", ".join(f"{k} {v[0]:.2f} -> {v[1]:.2f}" for k, v in chk.items()) + ("" if x["ok"] else "  NOT the same"), flush=True)
+        OUT.write_text(json.dumps(rec, indent=1) + "\n", encoding="utf-8")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--apply", action="store_true")
+    ap.add_argument("--verify", action="store_true", help="race each record's moves at 10,000 fights, seeds 1 and 2, before --apply")
     a = ap.parse_args()
+    if a.verify:
+        verify(json.loads(OUT.read_text(encoding="utf-8")))
+        return
     FA.ZERO, FA.GAIN, FA.LOSS = 0.5, 1e9, 0.0   # with exact_value: free = bit for bit; no gain moves; a move must be bit for bit
     A.value = exact_value
     FA.utility = utility
@@ -162,7 +194,7 @@ def main():
     if not a.apply:
         return
     for key, x in rec.items():
-        if not x.get("ok"):
+        if not x.get("ok") or not x.get("check"):   # measured and verified (--verify) first
             continue
         cls, bid = key.split("/")
         bp = paths.builds_json("forever", cls)
@@ -177,11 +209,12 @@ def main():
             for m in x["moves"]:
                 moved[(m["from"], m["to"])] = moved.get((m["from"], m["to"]), 0) + 1
             txt = "; ".join(f"{n} point{'s' if n != 1 else ''} from {f} to {t}" for (f, t), n in moved.items())
+            whose = "the simulator's build with its filler points moved" if b.get("preset") else "filler points moved"
             b.setdefault("notes", []).append(
-                f"{x['date']}: the simulator's build with its filler points moved ({txt}): the same DPS bit for bit in a full raid and on the "
-                "training dummy. The new talents follow the utility order (interrupt protection, threat, mana, range, survival), which the "
-                "simulator cannot measure (deep-runs/credited_fillers_1120.py; the user's rule of 2026-11-08 that a page pick holds no talent "
-                "that does nothing).")
+                f"{x['date']}: {whose} ({txt}): the same DPS bit for bit in a full raid and on the training dummy. The new talents follow "
+                "the utility order (interrupt protection, threat, mana, range, survival; dodge, parry and block count for nothing in a damage "
+                "dealer's raid), which the simulator cannot measure (deep-runs/credited_fillers_1120.py; the user's rule of 2026-11-08 that a "
+                "page pick holds no talent that does nothing).")
             gone = {m["from"] for m in x["moves"]} - set(flat(x["allocation"]))
             b["core"] = [c for c in b.get("core", []) if c.get("talent") not in gone]
             bp.write_text(dumps(data) + "\n", encoding="utf-8")

@@ -176,6 +176,18 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
     ability the build does not cast or a talent that improves only spells it never casts; record raidsim/credited-fillers.json), and
     page_lint.py a `free` check (a raid page's build holding points a measured filler pass moved, not applied). Open: a check after each
     data refresh listing the talents whose utility tag changed, so a reworded tooltip cannot drop out of the order silently again.
+    The same pass found two more tag faults, fixed with the audit session's agreement (raid tags only, tanks unchanged): "survival" matched
+    dodge, parry and block, so Deflection tied Survivalist and the pass moved nothing out of the simulator's Survival build (the user:
+    "Why is Deflection taken? ... Wouldn't that be a wasted talent if your tank has agro?"); for a damage dealer avoidance alone is no tag
+    now (utility_tags.SURVIVAL_DPS, 18 talents), nor is damage returned to an attacker (Eye for an Eye, which "damage taken" had matched:
+    the pass had traded Retribution's Unyielding Faith, fear and disorient, for it). Six of our builds' filler audits had moved points into
+    Deflection or Lightning Reflexes (2026-11-10 to 11-19). The exact pass then moved, each verified bit for bit in a full raid (10,000
+    fights, seeds 1 and 2) and on the dummy: survival-raptor-raid Deflection 3 -> Survivalist 3 (861.74 both seeds), beast-survival-open-raid
+    Deflection 3 -> Survivalist 3 and Expose Prey 1 -> Hawk Eye 1 (818.29 / 819.09), prot-ret-ml-raid Redoubt 2 -> Templar's Bulwark 1 and
+    Toughness 1 (654.12 / 654.17). The other twelve builds hold free points with no more useful legal talent at bit-identical damage and
+    stay as they are. Open: crowd-control resistance has no tag (Unyielding Faith, Stoicism, Iron Will: fears and stuns in Molten Core and
+    Onyxia), so its points count as free; the 11-10 audit's Unyielding Faith -> Deflection moves in retribution-open-raid and
+    shockadin-open-raid stay until the order says where it ranks.
 
 0y. **A rotation search's round as one bench run filled the memory (2026-11-20; open, for the optimality pass)**. Feral's fresh raid
     tune (apl_opt.py druid --spec feral-cat-dps --fresh: 19 actions, 132 pool actions) sent its first round's candidates as one config:

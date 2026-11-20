@@ -20,8 +20,10 @@ TAGS = [("interrupt", r"interrupt|pushback|casting time lost|lose (?:.* )?castin
 NONE = len(TAGS)
 # a damage dealer the boss never attacks gets nothing from avoidance (2026-11-20, the user on the simulator's Survival build: "Why is
 # Deflection taken? ... Wouldn't that be a wasted talent if your tank has agro?"): for a non-tank, dodge, parry or block alone is no
-# survival tag; health, armor, resistances, damage taken and Ice Block's protection are
+# survival tag; health, armor, resistances, damage taken and Ice Block's protection are. Nor is damage returned to an attacker (Eye for an
+# Eye: "critical strikes against you cause 10% of the damage taken to the attacker"), the only such talent
 SURVIVAL_DPS = r"stamina|armor|damage taken|resistances?|health|protecting you"
+REFLECT = r"to the attacker"
 # talents whose tag is true but useless in a raid (a pet's revive or healing, crowd control, distraction): no raid usefulness
 NO_RAID = {"Improved Revive Pet", "Improved Mend Pet", "Improved Health Funnel", "Fel Domination", "Improved Distract", "Scatter Shot",
            "Nature's Focus", "Improved Sprint", "Endurance", "Camouflage", "Master of Deception", "Improved Ghost Wolf", "Pathfinding",
@@ -41,7 +43,8 @@ def usefulness(cls, tank=False):
         for t in tr["talents"]:
             ranks = t.get("ranks") or []
             txt = str(ranks[-1] if ranks else "").lower()
-            tags = [tag for tag, rx in TAGS if re.search(rx, txt) and (tank or tag != "survival" or re.search(SURVIVAL_DPS, txt))]
+            tags = [tag for tag, rx in TAGS if re.search(rx, txt)
+                    and (tank or tag != "survival" or (re.search(SURVIVAL_DPS, txt) and not re.search(REFLECT, txt)))]
             out[t["name"]] = NONE if t["name"] in NO_RAID else min((order.index(g) for g in tags), default=NONE)
     return out
 
