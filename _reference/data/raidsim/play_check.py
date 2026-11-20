@@ -9,9 +9,11 @@ Per raid entry and listed build (full raid, the entry's raid rotation and gear, 
  a. rotation spells never cast: every spell a cast line names (pre-pull, priority list, groups) that the build casts 0 times (Judgement
     counted under the judged seal, as the pages count it). Reasons: "talent not taken" (a talent's ability the build lacks), "used: its
     casts are booked under another id" (removing the talent changes the result: Swift Judgement), "switch off" (the line's condition is
-    a variable held at false), "condition never held" (any other condition), "not a class spell" (a racial or an item; racials are off).
-    A class spell on an unconditional line, never cast, is a FAIL; so is a debuff the class turns off in the raid for its own cast (the
-    hunter's mark, the warlock's assigned curse) that the rotation never casts.
+    a variable held at false), "condition never held" (any other condition), "racial" (an id the simulator's racials.go names; racials
+    are off). A FAIL: a class spell on an unconditional line, never cast; an id that is neither a spell of the class nor a racial (the
+    line can never fire: Lava Burst and Frost Blast, gone from the game, and a trinket's spell cast as a spell sat in our rotations until
+    2026-11-20; the client's own name is shown when the local tables have it); a debuff the class turns off in the raid for its own cast
+    (the hunter's mark, the warlock's assigned curse) that the rotation never casts.
  b. talent abilities never cast: an ability a talent of the build grants, cast 0 times. Reasons: booked under another id (as in a),
     raidsim/unused-abilities.json's kind (automatic, prerequisite, situational), "prerequisite" (removing it breaks the build), a
     defensive tooltip ("situational": an absorb, a heal, damage taken, an immunity such as Ice Block), a parry or block trigger; else a
@@ -52,6 +54,7 @@ import utility_tags as UT  # noqa: E402
 import paths  # noqa: E402
 
 OUT = HERE / "play-check.json"
+RACIALS, CLIENT = None, {}
 # the simulator's exclusive categories (buffs_auto_gen.go, debuffs_auto_gen.go): partners switch off together, or the one left on covers
 # the other (Forever's Leader of the Pack and Moonkin Aura both give every raid member 3% crit; RaidCrit holds one of them)
 MAJOR_ARMOR, MINOR_ARMOR, RAID_CRIT = ("sunder_armor", "expose_armor"), ("faerie_fire", "curse_of_recklessness"), ("leader_of_the_pack", "moonkin_aura")
@@ -80,6 +83,24 @@ OWN_TALENT = {"trueshot_aura": {"Trueshot Aura"}, "leader_of_the_pack+moonkin_au
 CURSES = {"Recklessness": "Curse of Recklessness", "Weakness": "Curse of Weakness", "NoCurse": None}
 # a defensive the filler audit's pattern misses: Ice Block ("protecting you from all physical attacks and spells"), immunities
 SHIELD = re.compile(r"protecting you|immune to|immunity", re.I)
+
+
+def racial_ids(repo):
+    """Every spell id the simulator's racials.go names (racials are off: their lines never fire, by design)."""
+    p = repo / "sim" / "core" / "racials.go"
+    return {int(x) for x in re.findall(r"(?<![0-9])([0-9]{4,7})(?![0-9])", p.read_text(encoding="utf-8"))} if p.exists() else set()
+
+
+def client_names():
+    """The client's spell names, when the local wago tables are there (never in the repository): names a dead line's id."""
+    f = sorted((pathlib.Path.home() / ".wow-forever-tools" / "wago").glob("SpellName-*.csv"))
+    out = {}
+    if f:
+        for ln in f[-1].read_text(encoding="utf-8", errors="replace").splitlines()[1:]:
+            m = re.match(r'(\d+),"?(.*?)"?$', ln)
+            if m:
+                out[int(m.group(1))] = m.group(2)
+    return out
 
 
 def own_debuff(cls, entry):
@@ -259,6 +280,9 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
     strings = {b: R.talents_string(trees_sim, R.alloc_of(data[b])) for b in bids}
     tag = f"playcheck-{ename}"
     use = UT.usefulness(cls, tank)
+    global RACIALS, CLIENT
+    if RACIALS is None:
+        RACIALS, CLIENT = racial_ids(repo), client_names()
     def val(r):   # to the cent; a tank by every number its row carries
         if not tank:
             return round(r.get("dps") or 0, 2)
@@ -312,9 +336,14 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
             if cs.get(sid, 0) > 0 or (sid, cond is None) in seen:
                 continue
             seen.add((sid, cond is None))
-            nm = id_name.get(sid) or names.get(sid) or str(sid)
-            if sid not in id_name:
-                why = "not a class spell (a racial or an item)"
+            nm = id_name.get(sid) or names.get(sid) or CLIENT.get(sid) or str(sid)
+            if sid not in id_name and sid in RACIALS:
+                why = "racial (racials are off)"
+            elif sid not in id_name:
+                why = None   # neither the class's spell nor a racial: Lava Burst, Frost Blast, a trinket's spell cast as a spell
+                f["never_cast"].append(f"{part}[{i}] {nm} ({sid}): NOT A SPELL THE CLASS HAS (a removed spell or a wrong id)")
+                f["fail"].append(f"a: {nm} ({sid}) is no spell of the class and no racial: the line can never fire ({part}[{i}])")
+                continue
             elif nm in talent_names and nm not in have:
                 why = "talent not taken"
             elif nm in matters:
