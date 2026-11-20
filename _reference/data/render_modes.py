@@ -1103,7 +1103,7 @@ def variant_ids(cls, top, builds, nums):
 def fastest_damage_leveling(cls, spec, nums):
     """(spec, build, level-weighted seconds per kill) of the class's fastest leveling damage spec: every spec with a leveling page but
     the healing and tanking ones (LEVEL_AS keys, HEAL_TREES), each by its page pick (2026-11-20)."""
-    g = own_rotation_only(cls, SM.grid(cls, list(rr.builds(cls).values())), nums)
+    g = own_rotation_only(cls, SM.grid(cls, page_list(rr.builds(cls))), nums)
     best = None
     for s2, modes in g.items():
         if s2 == spec or (cls, s2) in SM.LEVEL_AS or s2 in SM.HEAL_TREES.get(cls, ()):
@@ -1163,7 +1163,7 @@ def mode_section(cls, spec, mode, builds, nums, src):
         ords = dv.get("orders") or {}
         rp = B.get(top["raid_path"])
         # 2026-10-15 page audit B8: the raid build's player name, not its id; and say so when the raid page now recommends another build
-        rtop = rank_builds(cls, "raid", SM.grid(cls, list(B.values())).get(spec, {}).get("raid", []), nums)
+        rtop = rank_builds(cls, "raid", SM.grid(cls, page_list(B)).get(spec, {}).get("raid", []), nums)
         rtop = rtop[0] if rtop else None
         same = rp is not None and (rtop is None or rs.flat(rtop) == rs.flat(rp))
         o += [f"> {DER_MARK} These are " + ("your **raid talents**" if same else "the talents of a **raid build**")
@@ -1240,7 +1240,7 @@ def mode_section(cls, spec, mode, builds, nums, src):
         per = L.get(top["id"])
         other = SM.LEVEL_AS.get((cls, spec))
         if per and other:   # a healing or tanking spec's own leveling build, next to the damage spec it could level as instead
-            ob = rank_builds(cls, mode, SM.grid(cls, list(rr.builds(cls).values()))[other]["leveling"], nums)
+            ob = rank_builds(cls, mode, SM.grid(cls, page_list(rr.builds(cls)))[other]["leveling"], nums)
             wo, wm = weighted(L.get(ob[0]["id"]) or {}) if ob else None, weighted(per)
             if wo and wm:
                 r = wm / wo
@@ -1446,7 +1446,7 @@ def mode_section(cls, spec, mode, builds, nums, src):
     # hybrid although one tree has 30 points; 2026-11-20, the audit session: the affliction-raid entry's builds play upstream's SM/Ruin
     # rotation, Shadow Bolt half their damage): listed here only as pointers to the hybrid's page
     if not spec.startswith("Hybrid "):
-        mv = [b2 for b2 in rr.builds(cls).values() if str(b2.get("spec") or "").startswith("Hybrid ") and SM.mode_of(b2) == mode
+        mv = [b2 for b2 in page_list(rr.builds(cls)) if str(b2.get("spec") or "").startswith("Hybrid ") and SM.mode_of(b2) == mode
               and spec in b2["spec"][len("Hybrid "):].split("/") and SM.tree_points(cls, b2).get(spec, 0) >= SM.SPEC_POINTS]
         if mv:
             o += ["## Builds that play as a hybrid", ""]
@@ -1614,9 +1614,16 @@ def raid_pending(cls):
         return {}
 
 
+def page_list(B):
+    """The builds a player page may show: all but those marked `player_page: false` (2026-11-20, the play check's rule for alternatives,
+    the audit session's ruling: a build that fails the check and trails its page's pick by far, or keeps a dead point with no legal home,
+    leaves the player pages and stays in research; its `player_page_why` says why)."""
+    return [b for b in B.values() if b.get("player_page", True) is not False]
+
+
 def class_pages(cls):
     B = rr.builds(cls)
-    g = SM.grid(cls, list(B.values()))
+    g = SM.grid(cls, page_list(B))
     nums = (raid_numbers(cls), leveling_numbers(cls), healer_numbers(cls))
     g = own_rotation_only(cls, g, nums)
     # a hybrid gets pages only with a build in a mode the pages show (2026-10-09: the paladin's Shockadin had pages from its PvP build alone)

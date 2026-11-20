@@ -153,7 +153,13 @@ def main():
     ap.add_argument("--verify", action="store_true", help="race each record's moves at 10,000 fights, seeds 1 and 2, before --apply")
     ap.add_argument("--out", help="the record (default raidsim/credited-fillers.json); a later pass keeps its own")
     ap.add_argument("--only", help="comma-separated build ids of BUILDS")
+    ap.add_argument("--extra", action="append", help="class:entry:build, a build to put through the pass besides BUILDS (the play "
+                    "check's failing alternatives, 2026-11-20)")
     a = ap.parse_args()
+    for x in a.extra or []:
+        cls_, entry_, bid_ = x.split(":")
+        if (cls_, entry_, bid_) not in BUILDS:
+            BUILDS.append((cls_, entry_, bid_))
     if a.out:
         OUT = pathlib.Path(a.out).resolve()
     if a.verify:
