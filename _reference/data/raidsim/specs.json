@@ -78,7 +78,7 @@
       "profession1": "Alchemy",
       "profession2": "Tailoring",
       "gear": "_reference/data/raidsim/gear_sets/forever/mage-dps-p1.p1opt.gear.json",
-      "apl": "ui/specs/mage/dps/apls/arcane.apl.json",
+      "apl": "_reference/data/raidsim/apls/mage/upstream/arcaneFireFill.apl.json",
       "spec": {
         "mage": {
           "options": {
@@ -100,7 +100,7 @@
       "builds": ["arcane-blast-raid", "arcane-open-raid"],
       "rotation_only": true,
       "preset_names": ["Arcane Frost", "Arcane Fire"],
-      "rotation_note": "Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs."
+      "rotation_note": "the official simulator's own arcaneFireFill rotation (2e6e77d84, trainer ranks), adopted 2026-11-20 (the independent audit's D4 and its decision that Arcane may fill with Fire: +4.5% / +4.8% on arcane-open-raid in a full raid, seeds 1 / 2; raidsim/upstream_race.py); before: upstream's arcane rotation. Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs."
     },
     "frostfire-raid": {
       "apl_opt_raid": "_reference/data/raidsim/apls/mage/frostfire-raid-raid.apl.json",
@@ -266,6 +266,30 @@
       "rotation_only": true,
       "preset_names": ["Aff (Wrack)"],
       "rotation_note": "Affliction around Wrack (2026-11-19, the independent audit's D1; user: \"Go with the audits recommendations\"): the official simulator's own Aff (Wrack) build file, its rotation (2e6e77d84, trainer ranks) and its option set: the Imp sacrificed before the pull (Forever: +15% Shadow damage), no demon out. Its own entry because each upstream rotation is built for its own build (the Wrack build does 675 DPS under affliction-raid's rotation; our 30/0/21 builds 316 under this one); affliction-raid's gear and consumables. The simulator marks the end of a Wrack channel as unmeasured in game (sim/warlock/wrack.go)."
+    },
+    "destro-raid": {
+      "apl_opt": "_reference/data/raidsim/apls/warlock/destro-raid.apl.json",
+      "apl_opt_raid": "_reference/data/raidsim/apls/warlock/destro-raid-raid.apl.json",
+      "sim_class": "ClassWarlock",
+      "sim_spec": "warlock/dps",
+      "race": "RaceGnome",
+      "distance": 25,
+      "profession1": "Enchanting",
+      "profession2": "Tailoring",
+      "gear": "_reference/data/raidsim/gear_sets/forever/warlock-dps-mc.p1opt.gear.json",
+      "apl": "_reference/data/raidsim/apls/warlock/upstream/destro.apl.json",
+      "spec": {
+        "warlock": {
+          "options": {
+            "classOptions": {"armor": "DemonArmor", "curseOptions": "Elements", "summon": "Succubus", "soulShards": 32}
+          }
+        }
+      },
+      "consumables": {"flaskId": 13512, "spellPowerElixirId": 13454, "schoolElixirId": 9264, "guardianElixirId": 20007, "zanzaId": 8423, "alcoholId": 21151, "foodId": 18254, "potId": 13444, "conjuredId": 12662, "mhImbueId": 25122, "extraMhImbueId": 13603},
+      "builds": ["destruction-succubus-raid"],
+      "rotation_only": true,
+      "preset_names": ["Destro"],
+      "rotation_note": "Destruction as the simulator ships it (2026-11-20, the independent audit's step-2 decision (4); user: \"Go with the audits recommendations\"): the official simulator's own Destro build file, its rotation (2e6e77d84, trainer ranks) and its option set: the Succubus out, Demon Armor and 32 Soul Shards carried in (Shadowburn spends one, Shadow and Flame refunds it; our entries had carried none, so Shadowburn was never cast), with Curse of the Elements as in every warlock entry. Its own entry because each upstream rotation is built for its own build; sb-raid's gear and consumables. On the Destruction page only if it ends 0.5% ahead of Destruction's best on both seeds after its tune and search."
     },
     "fire-destro-raid": {
       "apl_opt_raid": "_reference/data/raidsim/apls/warlock/fire-destro-raid-raid.apl.json",

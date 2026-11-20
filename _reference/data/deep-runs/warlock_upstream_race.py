@@ -35,6 +35,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("entries", nargs="*")
     ap.add_argument("--fights", type=int, default=10000)
+    ap.add_argument("--shards", type=int, default=0, help="Soul Shards every option set carries into the fight (0: none, as our entries until 2026-11-20; upstream's build files and DefaultOptions carry 32)")
+    ap.add_argument("--out", help="record path (default raidsim/warlock-upstream-race.json)")
     a = ap.parse_args()
     R.set_game("forever")
     repo = R.repo_path(argparse.Namespace(repo=None))
@@ -46,19 +48,23 @@ def main():
         d = json.load(open(f, encoding="utf-8"))
         up[name] = {"talents": d["player"]["talentsString"], "options": d["player"]["warlock"]["options"]["classOptions"],
                     "apl": str(UP / f"{name}.apl.json")}
-    rec = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
+    out = pathlib.Path(a.out) if a.out else OUT
+    rec = json.loads(out.read_text(encoding="utf-8")) if out.exists() else {}
     for e in a.entries or ["affliction-raid", "demonology-raid", "fire-destro-raid", "incinerate-raid", "sb-raid"]:
         entry = R.SPECS["warlock"][e]
         tree = next(iter(SM.RAID_ENTRY_TREES.get(("warlock", e), {"?"})))
         rots = {"ours": str(R.apl_path(entry, repo, "raid"))}
         rots.update({n: u["apl"] for n, u in up.items() if UP_TREE[n] == tree})
-        opts = {"ours": entry["spec"]["warlock"]["options"]["classOptions"]}
+        opts = {"ours": dict(entry["spec"]["warlock"]["options"]["classOptions"])}
         for n, u in up.items():
             if UP_TREE[n] == tree:
                 o = {k: v for k, v in u["options"].items() if k != "soulShards"}
                 o.setdefault("curseOptions", opts["ours"].get("curseOptions", "Elements"))
                 if o not in opts.values():
                     opts[f"up:{n}"] = o
+        if a.shards:   # 2026-11-20: the shards a warlock carries in (Shadowburn and Soul Fire spend one each)
+            for o in opts.values():
+                o["soulShards"] = a.shards
         builds = {}
         for bid in entry.get("builds", []):
             b = ours.get(bid)
@@ -80,12 +86,12 @@ def main():
         mean = {lab: sum(v.values()) / len(v) for lab, v in res.items() if len(v) == 2}
         our_best = max((lab for lab in mean if lab.startswith("ours|ours|")), key=mean.get)
         best = max(mean, key=mean.get)
-        rec[e] = {"tree": tree, "fights": a.fights, "rotations": rots, "options": opts, "builds": builds, "dps": res,
+        rec[e] = {"tree": tree, "fights": a.fights, "shards": a.shards, "rotations": rots, "options": opts, "builds": builds, "dps": res,
                   "our_best": our_best, "best": best, "gain": round(mean[best] / mean[our_best] - 1, 4)}
         for lab in sorted(mean, key=mean.get, reverse=True)[:12]:
             print(f"   {lab:60s} {res[lab]['1']:8.1f} {res[lab]['2']:8.1f}", flush=True)
         print(f"   ours: {our_best} {mean[our_best]:.1f}; best: {best} {mean[best]:.1f} ({rec[e]['gain']:+.2%})", flush=True)
-        OUT.write_text(json.dumps(rec, indent=1) + "\n", encoding="utf-8")
+        out.write_text(json.dumps(rec, indent=1) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

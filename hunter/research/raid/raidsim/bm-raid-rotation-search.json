@@ -230,8 +230,8 @@
  "raid": {
   "class": "hunter",
   "spec": "bm-raid",
-  "date": "2026-11-10",
-  "commit": "16e85426c",
+  "date": "2026-11-20",
+  "commit": "2e6e77d84",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/hunter/dps/apls/bm.apl.json",
@@ -243,7 +243,7 @@
    },
    {
     "label": "sim preset: BM",
-    "talents": "5320001505101251-0052050301-4"
+    "talents": "5320001505101251-00530502014"
    },
    {
     "label": "mm-hawk-raid",
@@ -374,45 +374,53 @@
     "gain_seed2": 0.002234557693348682,
     "candidates": 322,
     "pass": 13
+   },
+   {
+    "round": 15,
+    "change": "only above 60% mana: cast Summon Hawk",
+    "gain_seed1": 0.007411010147202024,
+    "gain_seed2": 0.00758883134927868,
+    "candidates": 298,
+    "pass": 20
    }
   ],
   "final": {
    "raid": {
     "beast-mastery-ml-raid": {
-     "before": 896.9346478571094,
-     "after": 965.6871157749999,
-     "base": 896.9346478571094,
+     "before": 883.2991459176748,
+     "after": 907.0425907352932,
+     "base": 883.2991459176748,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.00132765647185,
-     "oom_after": 0.00132765647185
+     "oom_before": 0,
+     "oom_after": 0
     },
     "sim preset: BM": {
-     "before": 884.6651364372553,
-     "after": 961.8419474072339,
-     "base": 884.6651364372553,
+     "before": 877.9616371171422,
+     "after": 901.339509298355,
+     "base": 877.9616371171422,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.036875028654149995,
-     "oom_after": 0.036875028654149995
+     "oom_before": 0,
+     "oom_after": 0
     },
     "mm-hawk-raid": {
-     "before": 832.5840824064777,
-     "after": 894.5738800159585,
-     "base": 832.5840824064777,
+     "before": 844.7849306533825,
+     "after": 863.6877823829662,
+     "base": 844.7849306533825,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "beast-marks-ml-raid": {
-     "before": 874.0247783242404,
-     "after": 957.3609567468932,
-     "base": 874.0247783242404,
+     "before": 870.5982078906461,
+     "after": 894.3395738977825,
+     "base": 870.5982078906461,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0027181581480999997,
-     "oom_after": 0.0027181581480999997
+     "oom_before": 0,
+     "oom_after": 0
     }
    }
   },
@@ -426,13 +434,13 @@
     "Bestial Wrath"
    ],
    "rejected": {
-    "structure": 20,
+    "structure": 100,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 19
+  "passes": 20
  }
 }

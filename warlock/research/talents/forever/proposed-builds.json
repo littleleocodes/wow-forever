@@ -1962,6 +1962,52 @@
       "flex": [],
       "notes": ["The Imp is sacrificed before the pull (the entry affliction-raid's sacrificedDemon: Imp); builds without Demonic Sacrifice keep the Succubus out.", "Raced, its rotation tuned and its talents searched in audit step 2 (deep-runs/warlock_raid_1119.sh); numbers on the raid page.", "Simulator numbers are the community's model of the game, not in-game measurements."],
       "sources": ["https://github.com/wowsims/forever/blob/2e6e77d84/ui/specs/warlock/dps/builds/aff_wrack.build.json"]
+    },
+    {
+      "id": "destruction-succubus-raid",
+      "name": "Destruction — Incinerate, Succubus out (the simulator's own build)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Destruction",
+      "preset": "Destro",
+      "summary": "The official wowsims/forever simulator's own Destruction build (its destro build file): 18/0/33 around Incinerate and Conflagrate with Shadow and Flame (Shadowburn: +20% Fire damage for 20 sec and its Soul Shard refunded; Conflagrate: +20% Shadow damage for 20 sec and Immolate kept), Ruin and Agonizing Flames; the Succubus out, Demon Armor, Curse of the Elements and 32 Soul Shards carried in, as the build file ships. Added on 2026-11-20 from the independent audit's step-2 decision (4). The same day showed our warlock entries had carried no Soul Shard into a fight, so Shadowburn could never be cast and every Destruction search valued it at nothing (upstream's package: 800 DPS with none, 881 with its 32, in a full raid).",
+      "allocation": {
+        "Affliction": [
+          ["Improved Life Tap", 2],
+          ["Suppression", 5],
+          ["Improved Corruption", 5],
+          ["Improved Bane of Agony", 2],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3]
+        ],
+        "Demonology": [],
+        "Destruction": [
+          ["Bane", 5],
+          ["Cataclysm", 3],
+          ["Aftermath", 5],
+          ["Ruin", 5],
+          ["Shadowburn", 1],
+          ["Agonizing Flames", 3],
+          ["Conflagrate", 1],
+          ["Bane of Havoc", 1],
+          ["Fire and Brimstone", 3],
+          ["Shadow and Flame", 5],
+          ["Incinerate", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Shadow and Flame", "why": "Shadowburn gives +20% Fire damage for 20 sec and refunds its Soul Shard; Conflagrate gives +20% Shadow damage for 20 sec and keeps Immolate"},
+        {"talent": "Incinerate", "why": "the 31-point filler: +25% damage while Immolate is on the target"},
+        {"talent": "Shadowburn", "why": "cast for Shadow and Flame's Fire bonus (needs a Soul Shard in your bags; the talent gives it back)"},
+        {"talent": "Conflagrate", "why": "Shadow and Flame's Shadow bonus without losing Immolate"},
+        {"talent": "Ruin", "why": "+100% critical strike damage bonus on Destruction spells"},
+        {"talent": "Agonizing Flames", "why": "+10% damage on every Destruction spell"}
+      ],
+      "flex": [],
+      "notes": ["Upstream's package: its rotation (2e6e77d84, trainer ranks), its talents and its options; its own entry (destro-raid, sb-raid's gear and consumables) because each upstream rotation is built for its own build.", "On the raid page only if it ends 0.5% ahead of Destruction's best on both seeds after its tune and search (the audit's decision of 2026-11-19).", "Simulator numbers are the community's model of the game, not in-game measurements."],
+      "sources": ["https://github.com/wowsims/forever/blob/2e6e77d84/ui/specs/warlock/dps/builds/destro.build.json"],
+      "open_questions": ["Bane of Havoc copies damage done to other targets: worth nothing on a single boss (a filler here)."]
     }
   ]
 }

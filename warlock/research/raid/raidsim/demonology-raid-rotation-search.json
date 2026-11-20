@@ -144,11 +144,11 @@
  "raid": {
   "class": "warlock",
   "spec": "demonology-raid",
-  "date": "2026-11-17",
+  "date": "2026-11-19",
   "commit": "2e6e77d84",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warlock/dps/apls/demonic_pact.apl.json",
+  "simulator_apl": "_reference/data/raidsim/apls/warlock/upstream/demo_shadow_brand.apl.json",
   "start": "ui\\specs\\warlock\\dps\\apls\\demonic_pact.apl.json",
   "builds": [
    {
@@ -240,31 +240,31 @@
   "final": {
    "raid": {
     "demonology-ml-raid": {
-     "before": 884.2132090900956,
-     "after": 867.301205188155,
-     "base": 884.2132090900956,
+     "before": 908.3470978141896,
+     "after": 908.3470978141896,
+     "base": 908.3470978141896,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.17132999999999743,
-     "oom_after": 0.17132999999999743
+     "oom_before": 0.014685099981900023,
+     "oom_after": 0.014685099981900023
     },
     "sim preset: Demo (Shadow Brand)": {
-     "before": 884.2132090900956,
-     "after": 867.301205188155,
-     "base": 884.2132090900956,
+     "before": 908.3470978141896,
+     "after": 908.3470978141896,
+     "base": 908.3470978141896,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.17132999999999743,
-     "oom_after": 0.17132999999999743
+     "oom_before": 0.014685099981900023,
+     "oom_after": 0.014685099981900023
     },
     "demonology-pact-raid": {
-     "before": 880.4220057689033,
-     "after": 862.2956792153518,
-     "base": 880.4220057689033,
+     "before": 899.7754695613468,
+     "after": 899.7754695613468,
+     "base": 899.7754695613468,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.16512999999999806,
-     "oom_after": 0.16512999999999806
+     "oom_before": 0.01573664998600003,
+     "oom_after": 0.01573664998600003
     }
    }
   },
@@ -281,6 +281,6 @@
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 12
+  "passes": 13
  }
 }

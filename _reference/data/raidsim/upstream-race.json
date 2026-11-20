@@ -1,0 +1,336 @@
+{
+ "mage": {
+  "arcane-dps": {
+   "fights": 10000,
+   "rotations": {
+    "ours": "_reference\\data\\raidsim\\apls\\mage\\arcane-dps-raid.apl.json",
+    "arcane": "_reference\\data\\raidsim\\apls\\mage\\upstream\\arcane.apl.json",
+    "arcaneFireFill": "_reference\\data\\raidsim\\apls\\mage\\upstream\\arcaneFireFill.apl.json"
+   },
+   "builds": {
+    "arcane-blast-raid": "050205203100301531-505001002-043",
+    "arcane-open-raid": "023205203100211531-554000011001-003",
+    "up:Arcane": "050205223101311531-5500003-003",
+    "up:Arcane Fire": "050205203100311531-525000012001-003"
+   },
+   "dps": {
+    "ours|arcane-blast-raid": {
+     "1": 707.71,
+     "2": 708.09
+    },
+    "ours|arcane-open-raid": {
+     "1": 790.36,
+     "2": 789.75
+    },
+    "ours|up:Arcane": {
+     "1": 745.92,
+     "2": 746.06
+    },
+    "ours|up:Arcane Fire": {
+     "1": 777.56,
+     "2": 778.5
+    },
+    "arcane|arcane-blast-raid": {
+     "1": 640.68,
+     "2": 640.03
+    },
+    "arcane|arcane-open-raid": {
+     "1": 767.03,
+     "2": 767.7
+    },
+    "arcane|up:Arcane": {
+     "1": 758.12,
+     "2": 757.88
+    },
+    "arcane|up:Arcane Fire": {
+     "1": 754.57,
+     "2": 754.64
+    },
+    "arcaneFireFill|arcane-blast-raid": {
+     "1": 703.47,
+     "2": 703.2
+    },
+    "arcaneFireFill|arcane-open-raid": {
+     "1": 826.25,
+     "2": 827.53
+    },
+    "arcaneFireFill|up:Arcane": {
+     "1": 738.74,
+     "2": 738.97
+    },
+    "arcaneFireFill|up:Arcane Fire": {
+     "1": 840.92,
+     "2": 841.44
+    }
+   },
+   "our_best": "ours|arcane-open-raid",
+   "best": "arcaneFireFill|up:Arcane Fire",
+   "gain": 0.0647
+  },
+  "fire-raid": {
+   "fights": 10000,
+   "rotations": {
+    "ours": "_reference\\data\\raidsim\\apls\\mage\\fire-raid-raid.apl.json",
+    "deepFire": "_reference\\data\\raidsim\\apls\\mage\\upstream\\deepFire.apl.json"
+   },
+   "builds": {
+    "fire-raid": "0502152000001-35500201230133031-003",
+    "opt-fire-raid-raid-dps": "0502152000003-35500101230133031-002",
+    "fire-open-raid": "2032052001002-55500001230123031-003",
+    "up:Fire": "0502052001001-55500001230133031-003"
+   },
+   "dps": {
+    "ours|fire-raid": {
+     "1": 838.28,
+     "2": 837.63
+    },
+    "ours|opt-fire-raid-raid-dps": {
+     "1": 827.82,
+     "2": 826.91
+    },
+    "ours|fire-open-raid": {
+     "1": 871.45,
+     "2": 871.08
+    },
+    "ours|up:Fire": {
+     "1": 869.9,
+     "2": 869.88
+    },
+    "deepFire|fire-raid": {
+     "1": 830.81,
+     "2": 830.8
+    },
+    "deepFire|opt-fire-raid-raid-dps": {
+     "1": 824.31,
+     "2": 824.98
+    },
+    "deepFire|fire-open-raid": {
+     "1": 865.15,
+     "2": 865.8
+    },
+    "deepFire|up:Fire": {
+     "1": 862.14,
+     "2": 862.91
+    }
+   },
+   "our_best": "ours|fire-open-raid",
+   "best": "ours|fire-open-raid",
+   "gain": 0.0
+  },
+  "frost-raid": {
+   "fights": 10000,
+   "rotations": {
+    "ours": "_reference\\data\\raidsim\\apls\\mage\\frost-raid-raid.apl.json",
+    "frost": "_reference\\data\\raidsim\\apls\\mage\\upstream\\frost.apl.json"
+   },
+   "builds": {
+    "frost-arcane-power-raid": "050205203100311531-3-053500020001",
+    "frost-winters-chill-raid": "041215203000201--25353003002100105",
+    "frost-fingers-of-frost-raid": "0322052030003011--05350003012130024",
+    "opt-frost-raid-raid-dps": "05022520310000153--0535000201013002",
+    "opt-frost-raid-raid-dps-extwc": "20320520310011143-1-0535000301003002",
+    "frost-ml-raid": "023212203-5-153500030121301231",
+    "arcane-frost-open-raid": "02322420310001053-55-0535",
+    "up:Frost Incin": "203205-5-053500011121331251",
+    "up:Frost Med": "2032250100003--053500001121331251"
+   },
+   "dps": {
+    "ours|frost-arcane-power-raid": {
+     "1": 683.64,
+     "2": 682.79
+    },
+    "ours|frost-winters-chill-raid": {
+     "1": 522.92,
+     "2": 522.77
+    },
+    "ours|frost-fingers-of-frost-raid": {
+     "1": 579.02,
+     "2": 579.15
+    },
+    "ours|opt-frost-raid-raid-dps": {
+     "1": 679.1,
+     "2": 679.48
+    },
+    "ours|opt-frost-raid-raid-dps-extwc": {
+     "1": 672.8,
+     "2": 672.33
+    },
+    "ours|frost-ml-raid": {
+     "1": 652.86,
+     "2": 652.79
+    },
+    "ours|arcane-frost-open-raid": {
+     "1": 694.47,
+     "2": 694.09
+    },
+    "ours|up:Frost Incin": {
+     "1": 647.1,
+     "2": 647.36
+    },
+    "ours|up:Frost Med": {
+     "1": 641.75,
+     "2": 641.84
+    },
+    "frost|frost-arcane-power-raid": {
+     "1": 486.3,
+     "2": 486.5
+    },
+    "frost|frost-winters-chill-raid": {
+     "1": 497.83,
+     "2": 497.74
+    },
+    "frost|frost-fingers-of-frost-raid": {
+     "1": 620.38,
+     "2": 621.33
+    },
+    "frost|opt-frost-raid-raid-dps": {
+     "1": 597.0,
+     "2": 597.58
+    },
+    "frost|opt-frost-raid-raid-dps-extwc": {
+     "1": 597.1,
+     "2": 597.63
+    },
+    "frost|frost-ml-raid": {
+     "1": 716.26,
+     "2": 716.08
+    },
+    "frost|arcane-frost-open-raid": {
+     "1": 466.22,
+     "2": 466.4
+    },
+    "frost|up:Frost Incin": {
+     "1": 775.56,
+     "2": 774.48
+    },
+    "frost|up:Frost Med": {
+     "1": 792.6,
+     "2": 792.33
+    }
+   },
+   "our_best": "ours|arcane-frost-open-raid",
+   "best": "frost|up:Frost Med",
+   "gain": 0.1414
+  },
+  "frostfire-raid": {
+   "fights": 10000,
+   "rotations": {
+    "ours": "_reference\\data\\raidsim\\apls\\mage\\frostfire-raid-raid.apl.json",
+    "ffb": "_reference\\data\\raidsim\\apls\\mage\\upstream\\ffb.apl.json"
+   },
+   "builds": {
+    "frostfire-raid": "0410011-32510301230133031-20350003",
+    "frostfire-ml-raid": "-3550000123013303-2135000301113002",
+    "frostfire-fingers-of-frost-raid": "-3551000113013303-2135000301113002",
+    "up:FFB": "-5550000123011303-2035010311013002"
+   },
+   "dps": {
+    "ours|frostfire-raid": {
+     "1": 707.37,
+     "2": 706.49
+    },
+    "ours|frostfire-ml-raid": {
+     "1": 778.79,
+     "2": 778.98
+    },
+    "ours|frostfire-fingers-of-frost-raid": {
+     "1": 769.91,
+     "2": 769.13
+    },
+    "ours|up:FFB": {
+     "1": 784.43,
+     "2": 785.71
+    },
+    "ffb|frostfire-raid": {
+     "1": 704.72,
+     "2": 704.67
+    },
+    "ffb|frostfire-ml-raid": {
+     "1": 777.38,
+     "2": 776.96
+    },
+    "ffb|frostfire-fingers-of-frost-raid": {
+     "1": 766.97,
+     "2": 767.08
+    },
+    "ffb|up:FFB": {
+     "1": 781.1,
+     "2": 781.89
+    }
+   },
+   "our_best": "ours|frostfire-ml-raid",
+   "best": "ours|up:FFB",
+   "gain": 0.0079
+  }
+ },
+ "druid": {
+  "feral-cat-dps": {
+   "fights": 10000,
+   "rotations": {
+    "ours": "_reference\\data\\raidsim\\apls\\druid\\feral-cat-dps-raid.apl.json",
+    "adaptive": "_reference\\data\\raidsim\\apls\\druid\\upstream\\adaptive.apl.json"
+   },
+   "builds": {
+    "feral-cat-dps": "050022-55000332123002123-055",
+    "opt-feral-cat-dps-raid-dps": "050022-25000332023002125-0552",
+    "feral-combat-shifting-power-raid": "050022-55000032123012125001-054",
+    "feral-combat-open-raid": "050022-52000332123012025001-055",
+    "up:Cat": "050021-53200032123012125001-055",
+    "up:Hybrid": "050012-50230302123110125011-055"
+   },
+   "dps": {
+    "ours|feral-cat-dps": {
+     "1": 735.62,
+     "2": 735.91
+    },
+    "ours|opt-feral-cat-dps-raid-dps": {
+     "1": 755.07,
+     "2": 754.59
+    },
+    "ours|feral-combat-shifting-power-raid": {
+     "1": 906.81,
+     "2": 906.92
+    },
+    "ours|feral-combat-open-raid": {
+     "1": 923.13,
+     "2": 923.25
+    },
+    "ours|up:Cat": {
+     "1": 912.6,
+     "2": 912.76
+    },
+    "ours|up:Hybrid": {
+     "1": 789.46,
+     "2": 789.35
+    },
+    "adaptive|feral-cat-dps": {
+     "1": 756.33,
+     "2": 755.5
+    },
+    "adaptive|opt-feral-cat-dps-raid-dps": {
+     "1": 767.83,
+     "2": 768.07
+    },
+    "adaptive|feral-combat-shifting-power-raid": {
+     "1": 914.73,
+     "2": 914.43
+    },
+    "adaptive|feral-combat-open-raid": {
+     "1": 931.2,
+     "2": 930.89
+    },
+    "adaptive|up:Cat": {
+     "1": 919.94,
+     "2": 919.57
+    },
+    "adaptive|up:Hybrid": {
+     "1": 859.79,
+     "2": 859.65
+    }
+   },
+   "our_best": "ours|feral-combat-open-raid",
+   "best": "adaptive|feral-combat-open-raid",
+   "gain": 0.0085
+  }
+ }
+}

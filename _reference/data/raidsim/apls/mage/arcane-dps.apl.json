@@ -3,6 +3,46 @@
  "priorityList": [
   {
    "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "spellIsKnown": {
+         "spellId": {
+          "spellId": 13033
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "auraRemainingTime": {
+           "auraId": {
+            "spellId": 1326891
+           }
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "2s"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 13033
+     }
+    }
+   },
+   "notes": "added 2026-11-20 (the independent audit's H1): Ice Barrier again when Frigid Power, its +15% Frost damage for 1 min, has under 2 s left; guarded by Ice Barrier being known, so builds without the 31-point Frost talent are unchanged"
+  },
+  {
+   "action": {
     "autocastOtherCooldowns": {}
    }
   },
@@ -179,6 +219,29 @@
     }
    },
    "notes": "apl_opt 2026-10-24: changed or added by the rotation search (see arcane-dps-rotation-search.json)"
+  }
+ ],
+ "prepullActions": [
+  {
+   "action": {
+    "condition": {
+     "spellIsKnown": {
+      "spellId": {
+       "spellId": 13033
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 13033
+     }
+    }
+   },
+   "doAtValue": {
+    "const": {
+     "val": "-2s"
+    }
+   }
   }
  ]
 }
