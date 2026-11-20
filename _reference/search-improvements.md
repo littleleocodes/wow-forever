@@ -161,6 +161,12 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 ## Open ideas, ranked by what they could still find
 
+0y. **A rotation search's round as one bench run filled the memory (2026-11-20; open, for the optimality pass)**. Feral's fresh raid
+    tune (apl_opt.py druid --spec feral-cat-dps --fresh: 19 actions, 132 pool actions) sent its first round's candidates as one config:
+    the bench held 10.5 GB and apl_opt 5.5 GB, the machine fell to 1.3 GB free of 32, and Claude Code reaped the session's background
+    shells (the jobs themselves ran on). Batch a round's candidates (a fixed number of rotations per bench run) before the optimality
+    pass's rotation tunes, which run many such rounds.
+
 0x. **Two simulators and two racial settings had run under one name (2026-11-20; found on a number the audit session could not
     reproduce, closed the same day)**. Every lane exports WOW_FOREVER_SIM=<tools>/wowsims-forever-y and WOW_FOREVER_NO_RACIALS=1; a run
     without them (a hand command) fell back to setup.checkout()'s default clone, whose bench dated from 2026-11-16 (before H15's pet
