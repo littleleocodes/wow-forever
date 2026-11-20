@@ -2152,6 +2152,46 @@
       "open_questions": ["A machine-searched Marksmanship build: check it against the community's Marksmanship builds at launch."],
       "sources": ["https://github.com/wowsims/forever"],
       "replaces": "mm-lone-wolf-raid"
+    },
+    {
+      "id": "beast-survival-open-raid",
+      "name": "Beast-Survival — Raid (open talent search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Hybrid Beast Mastery/Survival",
+      "generated": "2026-11-19",
+      "derived": "raid",
+      "summary": "The Beast-Survival (a Beast Mastery/Survival hybrid) raid build: the best Summon Hawk + Expose Prey family of the melee-dps open search (raidsim/family_search.py: every pair of keystones of two trees polished by a short hill climb), raced again on 2026-11-18 in a full raid (every raid buff and debuff) on the current simulator by the hybrid check: 804.6 DPS, +8.9% against melee-survival-raid, the best of our builds in that rotation.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 5],
+          ["Unleashed Fury", 5],
+          ["Summon Hawk", 1]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Careful Aim", 5],
+          ["Lone Wolf", 1]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5],
+          ["Deflection", 3],
+          ["Savage Strikes", 2],
+          ["Clever Traps", 2],
+          ["Surefooted", 3],
+          ["Predator's Edge", 5],
+          ["Expose Prey", 1],
+          ["Survivalist's Discipline", 2],
+          ["Strider Kick", 1]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["Kept from the hybrid check (2026-11-18, `_reference/hybrid-check.md`): an open search writes one build per raid entry, filed under its winner's spec, and the melee-dps entry's winner was another spec's, so Beast-Survival had no raid build. This family passed the raid signature check (core share 64%).", "Simulator numbers are the community's model of the beta (wowsims/forever 2e6e77d (client 70938) with this project's patches), not in-game measurements.", "2026-11-19 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Revive Pet -> Endurance Training (survival); Improved Wing Clip -> Deflection (survival); Improved Wing Clip -> Deflection (survival). Net +0.00% on a third seed."],
+      "open_questions": ["An open-search Beast-Survival build: check it against the community's Beast-Survival builds at launch."],
+      "sources": ["https://talentsforever.com/hunter/60/54001005001-005005001-5102022300500121-12"]
     }
   ]
 }

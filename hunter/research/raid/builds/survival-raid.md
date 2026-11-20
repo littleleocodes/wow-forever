@@ -48,15 +48,16 @@ The Survival raid damage build derived on 2026-09-30 (derive_raid.py): the commu
 
 ## Rank among our builds and the community simulator's
 
-**2 of 5** for `melee-dps` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 6** for `melee-dps` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 363 | +0.0% | 737 | +0.0% | 0 s |
-| 2 | **[`survival-raid`](survival-raid.md)** | ours: derived (simulator search) | 5/16/30 | 346 | -4.7% | 711 | -3.5% | 0 s |
-| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 317 | -12.7% | 694 | -5.8% | 0 s |
-| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 262 | -27.8% | 703 | -4.6% | 97 s |
-| 5 | *SV Melee* | community simulator | - | 231 | -36.6% | 678 | -7.9% | 120 s |
+| 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 363 | +0.0% | 737 | -8.1% | 0 s |
+| 2 | **[`survival-raid`](survival-raid.md)** | ours: derived (simulator search) | 5/16/30 | 346 | -4.7% | 711 | -11.3% | 0 s |
+| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 317 | -12.7% | 694 | -13.4% | 0 s |
+| 4 | [`beast-survival-open-raid`](beast-survival-open-raid.md) | ours: derived (open search) | 16/11/24 | 269 | -25.9% | 802 | +0.0% | 121 s |
+| 5 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 262 | -27.8% | 703 | -12.3% | 97 s |
+| 6 | *SV Melee* | community simulator | - | 231 | -36.6% | 678 | -15.4% | 120 s |
 
 ## Rotation (community simulator, training dummy)
 

@@ -589,6 +589,12 @@ def raid(cls, below, page, werr=None):
         w = ((d.get("gear") or {}).get("bis") or {}).get("weights")
         if not w:
             continue
+        if (page.get(f.stem) or {}).get("weights"):
+            # 2026-11-19: one entry per spec, the page's pick measured on its own talents in the record's BiS set (page_stat_weights.py
+            # --all), written by the page loop below. The record's own entry had carried gear.bis.weights, measured on the search's
+            # starting build, under the record's `best` id, which for most specs was not the page's pick (Arcane: arcane-blast-raid
+            # against the page's arcane-open-raid; Frost's weights were the old 21/0/30's while its page shows 15/5/31)
+            continue
         vals = sim_keys(w)
         in_below = (below.get("specs") or {}).get(f.stem)
         hb = in_below or page.get(f.stem)
@@ -597,9 +603,17 @@ def raid(cls, below, page, werr=None):
         bid = d.get("best") if d.get("best") in B else (page.get(f.stem) or {}).get("build", d.get("best"))
         if bid == d.get("best"):
             measured[f.stem] = bid
-        out.append(raid_row(cls, d["spec"], f.stem.split("-", 1)[1], bid, B, vals,
-                            f"raid simulator, {f.name} (the spec's best build in its phase-1 BiS set, full raid)",
-                            we.get(f"ml:{f.stem}"), we.get(f"{'hit' if in_below else 'pagehit'}:{f.stem}") if hb else None))
+        src = f"raid simulator, {f.name} (the spec's best build in its Raid BiS set, full raid)"
+        err = we.get(f"ml:{f.stem}")
+        pr = page.get(f.stem) or {}
+        if pr.get("weights") and pr.get("build") == bid:
+            # 2026-11-19: the page's pick measured in the record's BiS set (page_stat_weights.py --all). The record's weights were measured
+            # on the search's starting build when its set was picked, which can differ a lot from the pick (Frost: 21/0/30 against 15/5/31)
+            vals = {**sim_keys(pr["weights"]), **({"hit_rating_below_cap": vals["hit_rating_below_cap"]} if "hit_rating_below_cap" in vals else {})}
+            src = f"raid simulator, raidsim/page-stat-weights.json (the page's pick in {pr['gear_why']}, full raid)"
+            err = we.get(f"page:{f.stem}")
+        out.append(raid_row(cls, d["spec"], f.stem.split("-", 1)[1], bid, B, vals, src,
+                            err, we.get(f"{'hit' if in_below else 'pagehit'}:{f.stem}") if hb else None))
     for stem, row in sorted(page.items()):
         if row.get("class") != cls or not row.get("weights"):
             continue

@@ -3,36 +3,66 @@
  "spec": "melee-dps",
  "build": "beast-survival-open-raid",
  "setting": "raid",
- "date": "2026-10-16",
+ "date": "2026-11-19",
  "tank": false,
  "removal": {
-  "Careful Aim": 0.05556995132555709,
-  "Clever Traps": 0.010568108739153592,
-  "Deadly Aspects": 0.07307672500846152,
+  "Careful Aim": 0.05654743966090614,
+  "Clever Traps": 0.023285378715017124,
+  "Deadly Aspects": 0.08364268828301002,
+  "Deflection": -0.0,
   "Endurance Training": -0.0,
-  "Expose Prey": 0.1061190425656161,
-  "Improved Aspect of the Monkey": -0.0,
-  "Improved Tracking": 0.04655261305342662,
-  "Lethal Attacks": 0.04672448939251517,
-  "Lone Wolf": 0.1629341456869925,
-  "Predator's Edge": 0.11543031563363448,
-  "Savage Strikes": 0.013451881010979605,
-  "Strider Kick": 0.05750353021406973,
-  "Summon Hawk": 0.05454454804519626,
-  "Surefooted": 0.022624807665998725,
-  "Survivalist": -0.0,
-  "Survivalist's Discipline": 0.004796064856238846,
-  "Unleashed Fury": 0.01195992121506928
+  "Expose Prey": 0.03145814046644513,
+  "Improved Revive Pet": -0.0,
+  "Improved Tracking": 0.04046649625707455,
+  "Improved Wing Clip": -0.0,
+  "Lethal Attacks": 0.04497600260513479,
+  "Lone Wolf": 0.1617491463371462,
+  "Predator's Edge": 0.07325821424046552,
+  "Savage Strikes": 0.008757562857858447,
+  "Strider Kick": 0.05751013908671876,
+  "Summon Hawk": 0.15259655248115667,
+  "Surefooted": 0.0402173850433708,
+  "Survivalist's Discipline": 0.03455891312578563,
+  "Unleashed Fury": 0.019574121936383748
  },
  "free": [
+  "Deflection",
   "Endurance Training",
-  "Improved Aspect of the Monkey",
-  "Survivalist"
+  "Improved Revive Pet",
+  "Improved Wing Clip"
  ],
  "kept_for_rotation": [],
  "active_never_worth": [],
  "abilities_never_cast": [],
- "moves": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Improved Revive Pet",
+   "to": "Endurance Training",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Improved Wing Clip",
+   "to": "Deflection",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Improved Wing Clip",
+   "to": "Deflection",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  }
+ ],
  "final_seed3": 0.0,
  "start": {
   "Beast Mastery": [
@@ -42,11 +72,11 @@
    ],
    [
     "Endurance Training",
-    2
+    4
    ],
    [
-    "Improved Aspect of the Monkey",
-    3
+    "Improved Revive Pet",
+    1
    ],
    [
     "Unleashed Fury",
@@ -77,12 +107,16 @@
     5
    ],
    [
+    "Deflection",
+    1
+   ],
+   [
     "Savage Strikes",
     2
    ],
    [
-    "Survivalist",
-    3
+    "Improved Wing Clip",
+    2
    ],
    [
     "Clever Traps",
@@ -98,11 +132,11 @@
    ],
    [
     "Expose Prey",
-    2
+    1
    ],
    [
     "Survivalist's Discipline",
-    1
+    2
    ],
    [
     "Strider Kick",
@@ -118,11 +152,7 @@
    ],
    [
     "Endurance Training",
-    2
-   ],
-   [
-    "Improved Aspect of the Monkey",
-    3
+    5
    ],
    [
     "Unleashed Fury",
@@ -153,12 +183,12 @@
     5
    ],
    [
-    "Savage Strikes",
-    2
+    "Deflection",
+    3
    ],
    [
-    "Survivalist",
-    3
+    "Savage Strikes",
+    2
    ],
    [
     "Clever Traps",
@@ -174,11 +204,11 @@
    ],
    [
     "Expose Prey",
-    2
+    1
    ],
    [
     "Survivalist's Discipline",
-    1
+    2
    ],
    [
     "Strider Kick",

@@ -4,10 +4,10 @@
 
 | Build | Split | Tank value | Threat/s | Damage taken/s | DPS | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `protection-ml-tank` | 0/35/16 | 1.023 | 1210 | 280 | 489 | 15 | +52.1% |
-| `prot-tank` | 0/33/18 | 1.000 | 1137 | 275 | 450 | 26 | +53.3% |
-| sim preset: Default | - | 0.999 | 1187 | 289 | 481 | 9 | - |
-| `opt-prot-tank-raid-tank` | 1/34/16 | 0.978 | 1087 | 275 | 432 | 32 | +54.0% |
+| `protection-ml-tank` | 0/35/16 | 1.025 | 1219 | 282 | 489 | 15 | +52.1% |
+| sim preset: Default | - | 1.001 | 1195 | 290 | 482 | 9 | - |
+| `prot-tank` | 0/33/18 | 1.000 | 1144 | 278 | 450 | 26 | +53.3% |
+| `opt-prot-tank-raid-tank` | 1/34/16 | 0.979 | 1090 | 276 | 430 | 32 | +54.0% |
 
 Tank value = 0.5 x threat per second / the hand draft's + 0.5 x the hand draft's damage taken per second / this build's (the raid-tank profile's weights); the shares below are threat shares.
 
@@ -15,28 +15,27 @@ Tank value = 0.5 x threat per second / the hand draft's + 0.5 x the hand draft's
 
 | Action | Share |
 |---|---|
-| Holy Strike | 18.9% |
+| Holy Strike | 19.0% |
 | Holy Shield | 18.5% |
-| Auto Attack | 13.8% |
-| Judgement of Fury | 11.6% |
-| Seal of Fury | 10.6% |
+| Auto Attack | 13.9% |
+| Judgement of Fury | 11.7% |
+| Seal of Fury | 10.8% |
 | Consecration | 9.9% |
-| Lay on Hands | 4.5% |
+| Lay on Hands | 4.6% |
 | Windfury Totem | 4.2% |
 | Judgement of Light | 2.1% |
-| Hammer of Wrath | 1.9% |
+| Hammer of Wrath | 2.0% |
 | Retribution Aura | 1.6% |
-| OtherActionManaGain | 1.2% |
-| spell 22600 | 0.6% |
+| OtherActionManaGain | 1.1% |
 | Thorns | 0.5% |
 
-Mapped onto the spec model's sources: `seal` 35%, `holy_strike` 28%, `white` 20%, `consecration` 14%, `ret_aura` 2%; 31% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
+Mapped onto the spec model's sources: `seal` 36%, `holy_strike` 28%, `white` 20%, `consecration` 14%, `ret_aura` 2%; 31% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
 - protection-ml-tank: `-05311102513301531-52233000001`
-- prot-tank: `-15310112513501031-50233300011`
 - sim preset: Default: `050050002-05302102213301531-502`
+- prot-tank: `-15310112513501031-50233300011`
 - opt-prot-tank-raid-tank: `01-25300132503501031-50033310001`
 

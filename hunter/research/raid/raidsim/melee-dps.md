@@ -7,6 +7,7 @@
 | `melee-survival-raid` | 5/11/35 | 363 | 15 | +0.0% | 370 | 0 | +123.5% |
 | `survival-raid` | 5/16/30 | 346 | 16 | -4.7% | 352 | 0 | +115.9% |
 | `opt-melee-dps-raid-dps` | 5/15/31 | 317 | 16 | -12.7% | 323 | 0 | +126.0% |
+| `beast-survival-open-raid` | 16/11/24 | 269 | 15 | -25.9% | 251 | 121 | +78.2% |
 | `survival-ml-parse` | 5/14/32 | 262 | 15 | -27.8% | 269 | 97 | +99.9% |
 | sim preset: SV Melee | - | 231 | 13 | -36.6% | 217 | 120 | - |
 
@@ -30,6 +31,7 @@ Scorer = the expected-value stats model's score of the same allocation for its r
 - melee-survival-raid: `5-005005001-500230230250222151`
 - survival-raid: `5-005055001-50023023005022213`
 - opt-melee-dps-raid-dps: `5-005045001-500250030050220151`
+- beast-survival-open-raid: `55000005001-005005001-5302002300500121`
 - survival-ml-parse: `5-005035001-050230230150022151`
 - sim preset: SV Melee: `53200005001-004-530200230050022151`
 

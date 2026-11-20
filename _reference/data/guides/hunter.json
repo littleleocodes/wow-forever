@@ -275,7 +275,7 @@
      "**Raptor Strike** first whenever it is ready: it replaces your next main-hand swing and costs no global cooldown. Then **Mongoose Bite** when it lights up and **Strider Kick** on its 8-second cooldown.",
      "**Summon Hawk** next, about 27 times in a 3-minute fight: a dive bomb plus 5% of your ranged attack power, then a hawk that attacks for 18 seconds. Two can be out at once and a new one replaces the one closest to leaving; **Unleashed Fury** makes them hit 15% harder. The simulator measured about 15% more damage in a full raid once the hawk joined the melee rotation, and it counts hawks as guardians, not pets, so **Lone Wolf** stays on while they fly.",
      "**Hunter's Mark** before the pull is for **Expose Prey**: each hit on a marked target has a 10% chance to light up **Mongoose Bite** for 10 seconds, and in a raid you rarely dodge, the bite's only other trigger. Recast the mark when its 2 minutes run out.",
-     "The fire-trap cooldown goes under the boss every 24 seconds (one point in **Survivalist's Discipline**), 30% stronger with **Clever Traps**: **Explosive Trap** while you have 60% mana or more and 20 seconds left (the melee list's 2026-11-10 change), else **Immolation Trap**. With no **Resourcefulness** here, expect more **Immolation Trap** than the Survival build. **Wing Clip** fills the global cooldowns left over, for its small hit and another chance at **Mongoose Bite**."
+     "The fire-trap cooldown goes under the boss every 18 seconds (two points in **Survivalist's Discipline**), 30% stronger with **Clever Traps**: **Explosive Trap** while you have 60% mana or more and 20 seconds left (the melee list's 2026-11-10 change), else **Immolation Trap**. With no **Resourcefulness** here, expect more **Immolation Trap** than the Survival build. **Wing Clip** fills the global cooldowns left over, for its small hit and another chance at **Mongoose Bite**."
     ],
     "caveats": [
      "Mana: this build has no **Resourcefulness**, and each hawk costs 190 mana. In a full raid the simulator needs one mana potion a fight; with only your own buffs it ran out of mana and fell about a quarter behind the Survival builds on the training dummy. Without Blessing of Wisdom or Mana Spring, play Survival.",
@@ -292,7 +292,7 @@
      "bm-raid": "08b392250e22",
      "melee-dps": "88ff0967f0fa"
     },
-    "written": "2026-11-11"
+    "written": "2026-11-19"
    },
    "leveling": {
     "plan": "Beast-Survival levels on **Immolation Trap** and a strong pet: the cat tanks and hits hard, you walk in behind it, drop a trap at your feet and fight beside it with **Raptor Strike** and your white swings. Survival comes first (levels 10-34), then **Lethal Attacks** (35-37) and the pet (38-60).",

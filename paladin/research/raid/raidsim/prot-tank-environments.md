@@ -4,10 +4,10 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `protection-ml-tank` | 0/35/16 | 273 | 310 | 489 | 489 | 494 |
-| `prot-tank` | 0/33/18 | 257 | 290 | 450 | 450 | 461 |
-| `opt-prot-tank-raid-tank` | 1/34/16 | 242 | 274 | 432 | 432 | 442 |
-| sim preset: Default | - | 231 | 265 | 481 | 481 | 482 |
+| `protection-ml-tank` | 0/35/16 | 271 | 307 | 489 | 489 | 493 |
+| `prot-tank` | 0/33/18 | 254 | 286 | 450 | 450 | 460 |
+| `opt-prot-tank-raid-tank` | 1/34/16 | 238 | 270 | 430 | 430 | 441 |
+| sim preset: Default | - | 230 | 263 | 482 | 482 | 481 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
 - **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s

@@ -10,6 +10,11 @@ simulator's stat weights here, for the page's raid pick (render_modes.rank_build
 own phase-1 BiS set (gear_sets/forever/tiers/<class>-<spec slug>-bis.gear.json, or the ML record's), else the BiS set of the ML record of
 the build's biggest tree; hit under the cap with the set's hit taken off (bonus_stats StatHitRating, as hit_below_cap.py). Record
 raidsim/page-stat-weights.json; characters/addon_values.py reads it after the ML records.
+
+--all (2026-11-19) measures every damage page's pick, the ML records' too, in the record's BiS set. A record's gear.bis.weights were
+measured on the search's starting build when its BiS set was picked, which can be far from the page's pick (17 of 29 searches of the
+gear night of 2026-11-18 started from a fallback; Frost's start was the old 21/0/30 with Arcane Blast, its pick 15/5/31 with Ice Barrier).
+addon_values.py uses a page row's weights in place of the record's when both are for the same build.
 """
 import argparse
 import datetime
@@ -53,6 +58,9 @@ def main():
     ap.add_argument("classes", nargs="*")
     ap.add_argument("--iterations", type=int, default=6000)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--all", action="store_true",
+                    help="every damage page's pick, the ML records' too: their BiS weights were measured on the search's starting build "
+                         "(2026-11-19: Frost's on the old 21/0/30 while the page shows 15/5/31)")
     ap.add_argument("--list", action="store_true", help=argparse.SUPPRESS)
     a = ap.parse_args()
     classes = a.classes or "druid hunter mage paladin priest rogue shaman warlock warrior".split()
@@ -80,9 +88,9 @@ def main():
             bis = (ml.get("gear") or {}).get("bis") if isinstance((ml.get("gear") or {}).get("bis"), dict) else None
             builds = {x["id"] for x in json.loads((ROOT / cls / "research" / "talents" / "forever" / "proposed-builds.json").read_text(encoding="utf-8"))["builds"]}
             covered = bool(bis and bis.get("weights")) and ml.get("best") in builds and stem in below
-            if covered:
+            if covered and not a.all:
                 continue
-            need_w = not (bis and bis.get("weights"))
+            need_w = a.all or not (bis and bis.get("weights"))
             own = HERE / "gear_sets" / "forever" / "tiers" / f"{stem}-bis.gear.json"
             if bis and bis.get("gear"):
                 gear_path, why = bis["gear"], "the spec's ML record's BiS set"

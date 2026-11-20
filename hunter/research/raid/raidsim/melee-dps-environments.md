@@ -7,6 +7,7 @@
 | `melee-survival-raid` | 5/11/35 | 363 | 418 | 737 | 737 | 789 |
 | `survival-raid` | 5/16/30 | 346 | 406 | 711 | 711 | 761 |
 | `opt-melee-dps-raid-dps` | 5/15/31 | 317 | 375 | 694 | 694 | 750 |
+| `beast-survival-open-raid` | 16/11/24 | 269 | 331 | 802 | 802 | 835 |
 | `survival-ml-parse` | 5/14/32 | 262 | 316 | 703 | 703 | 751 |
 | sim preset: SV Melee | - | 231 | 281 | 678 | 678 | 711 |
 
@@ -25,6 +26,7 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 | `melee-survival-raid` | 363 | +0% | +33% | +48% | +4% | +17% | 737 |
 | `survival-raid` | 346 | -0% | +33% | +50% | +4% | +18% | 711 |
 | `opt-melee-dps-raid-dps` | 317 | -0% | +38% | +55% | +3% | +22% | 694 |
+| `beast-survival-open-raid` | 269 | +50% | +53% | +63% | +6% | +26% | 802 |
 | `survival-ml-parse` | 262 | +31% | +43% | +64% | +6% | +25% | 703 |
 | sim preset: SV Melee | 231 | +49% | +52% | +64% | +3% | +27% | 678 |
 
@@ -39,6 +41,7 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 | `melee-survival-raid` | 386 | 378 | 363 | 352 | 336 |
 | `survival-raid` | 368 | 359 | 346 | 338 | 336 |
 | `opt-melee-dps-raid-dps` | 345 | 333 | 317 | 308 | 304 |
+| `beast-survival-open-raid` | 378 | 280 | 269 | 245 | 234 |
 | `survival-ml-parse` | 350 | 274 | 262 | 239 | 228 |
 | sim preset: SV Melee | 327 | 243 | 231 | 208 | 196 |
 

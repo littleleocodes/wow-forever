@@ -25,8 +25,8 @@ Between these, your white swings do the rest.
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
 - **Seal of Fury**: part of the rotation (about 6 times a fight)
-- **Templar's Bulwark**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
 - **Lay on Hands**: when you are about to die: a full heal on a long cooldown that empties your mana
+- **Templar's Bulwark**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
 - Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
@@ -65,7 +65,7 @@ Most of your threat is Holy damage, and **Righteous Fury** makes it 90% more thr
 
 ## The numbers
 
-Tank value 1.023 (threat and damage taken under a boss, relative to our reference tank build).
+Tank value 1.025 (threat and damage taken under a boss, relative to our reference tank build).
 
 **The gear** (average item level: Pre-BiS 61.9; Raid BiS 61.9; chosen in the community simulator on tank value, threat and damage taken, for this build in a full raid. The simulator's item database lists base armor for only about one armor item in five; this project's patch fills in the rest from Classic's values (our assumption: Forever may have changed some); each item opens its Wowhead page, with where it drops and its enchant):
 

@@ -23,6 +23,7 @@ DPS in a full raid: a 3-minute fight against a raid boss with every raid buff an
 | **C** | [Rogue: Daggers (split)](rogue/raid/daggers-split.md) | 29/22/0 | 808 | 21.1% |
 | **C** | [Warlock: Destruction](warlock/raid/destruction.md) | 9/11/31 | 806 | 21.2% |
 | **C** | [Paladin: Shockadin](paladin/raid/shockadin.md) | 23/0/28 | 803 | 21.5% |
+| **C** | [Hunter: Beast-Survival](hunter/raid/beast-survival.md) | 16/11/24 | 802 | 21.7% |
 | **C** | [Rogue: Combat](rogue/raid/combat.md) | 21/30/0 | 796 | 22.2% |
 | **C** | [Mage: Arcane](mage/raid/arcane.md) | 31/17/3 | 790 | 22.8% |
 | **C** | [Warlock: Shadow Bolt hybrid](warlock/raid/shadow-bolt-hybrid.md) | 9/11/31 | 785 | 23.3% |
@@ -82,6 +83,7 @@ The tiers above run with racials off. With them on, the race matters by this muc
 | [Rogue: Daggers (split)](rogue/raid/daggers-split.md) | Skyborne (Windshaper) | 6.4% (Dwarf) |
 | [Warlock: Destruction](warlock/raid/destruction.md) | Human | 2.0% (Troll) |
 | [Paladin: Shockadin](paladin/raid/shockadin.md) | Human | 0.6% (Dwarf) |
+| [Hunter: Beast-Survival](hunter/raid/beast-survival.md) | Skyborne (Windshaper) | 6.6% (Dwarf) |
 | [Rogue: Combat](rogue/raid/combat.md) | Skyborne (Windshaper) | 6.4% (Dwarf) |
 | [Mage: Arcane](mage/raid/arcane.md) | Skyborne (High Order) | 5.6% (Troll) |
 | [Warlock: Shadow Bolt hybrid](warlock/raid/shadow-bolt-hybrid.md) | Human | 1.8% (Troll) |

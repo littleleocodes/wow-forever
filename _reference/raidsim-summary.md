@@ -49,7 +49,7 @@ The best of our builds per spec model on the boss-level training dummy with your
 | druid | Classic | `balance-dps` | `balance-moonkin-raid` (35/0/16) | 224 | - | 567 | 740 | 746 | - | Balance 741 |
 | druid | Classic | `feral-cat-dps` | `feral-cat-dps` (14/32/5) | 239 | - | 671 | 1563 | 1666 | - | Feral 1597 |
 | hunter | Forever | `bm-raid` | `beast-mastery-ml-raid` (31/20/0) | 535 | 593 | 1016 | 1016 | 1078 | - | BM 1009 |
-| hunter | Forever | `melee-dps` | `melee-survival-raid` (5/11/35) | 363 | 418 | 737 | 737 | 789 | `survival-ml-parse` 703 | SV Melee 678 |
+| hunter | Forever | `melee-dps` | `beast-survival-open-raid` (16/11/24) | 269 | 331 | 802 | 802 | 835 | `survival-ml-parse` 703 | SV Melee 678 |
 | hunter | Forever | `mm-lonewolf-raid` | `mm-lone-wolf-raid` (5/41/5) | 465 | 489 | 987 | 987 | 1016 | `opt-mm-lonewolf-raid-parse` 929 | MM 982 |
 | hunter | Forever | `mm-raid` | `marksmanship-ml-raid` (7/39/5) | 508 | 549 | 1023 | 1023 | 1081 | `opt-mm-raid-parse` 983 | BM 1001 |
 | hunter | Classic | `mm-raid` | `bm-mm-raid` (20/31/0) | 405 | - | 1049 | 1085 | 1146 | - | Marksmanship 1087 |

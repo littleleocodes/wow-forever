@@ -39,7 +39,10 @@ HYBRID_NAMES = {
                 "short of 30 Beast Mastery points.",   # 2026-11-08 full page read H3: the raid pick 28/21/2 has no Trueshot Aura, Barrage, Sniper Shot
         "leveling": "Marksmanship's shot talents first (Lethal Attacks, Efficiency, Careful Aim, Trueshot Aura), then Beast Mastery's pet talents (Unleashed Fury, Ferocity, Spirit Bond)."}),
     ("hunter", "Hybrid Marksmanship/Survival"): ("Melee (split)", "melee-split", "Dual-wield melee with Marksmanship support, short of 30 Survival points."),
-    ("hunter", "Hybrid Beast Mastery/Survival"): ("Beast-Survival", "beast-survival", "Dual-wield melee with a pet and Beast Mastery's aspect and pet talents, short of 30 Survival points (leveling; the raid version with Summon Hawk and Lone Wolf, 16/11/24, is within half a percent of Melee Survival in a full raid since Lacerating Strikes overwrites as in the game (2026-11-13): a tie, so the raid page keeps Survival)."),
+    ("hunter", "Hybrid Beast Mastery/Survival"): ("Beast-Survival", "beast-survival", {
+        "leveling": "Dual-wield melee with a pet and Beast Mastery's aspect and pet talents, short of 30 Survival points.",
+        "raid": "Dual-wield melee with no pet out: Summon Hawk and Lone Wolf from the other trees (16/11/24), about 9% more damage than "
+                "Melee Survival in a full raid (802 against 737 DPS, 2026-11-19; the hybrid check, kept by open_builds.raid_kept)."}),
     ("mage", "Hybrid Arcane/Frost"): ("Arcane-Frost", "arcane-frost", {
         "raid": "Arcane's Missile Barrage, Arcane Wrath, Arcane Mind and Arcane Instability on a Frostbolt filler (Improved Frostbolt, Ice Shards).",
         "leveling": "Frost's Shatter and Fingers of Frost with Arcane's Missile Barrage: Frostbolt, Ice Lance into the freeze, free Arcane Missiles."}),

@@ -26,6 +26,7 @@ Derived and generated builds (🔬 found by this project's searches in the simul
 | [Beast Mastery — Raid (machine-learning search)](builds/beast-mastery-ml-raid.md) 🔬 | 31/20/0 | DPS |
 | [Beast-Marks — Raid (machine-learning search)](builds/beast-marks-ml-raid.md) 🔬 | 28/21/2 | DPS |
 | [Marksmanship — Raid (machine-learning search)](builds/marksmanship-ml-raid.md) 🔬 | 7/39/5 | DPS |
+| [Beast-Survival — Raid (open talent search)](builds/beast-survival-open-raid.md) 🔬 | 16/11/24 | DPS |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
@@ -83,11 +84,12 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`melee-survival-raid`](builds/melee-survival-raid.md) | ours: hand draft | 5/11/35 | 363 | +0.0% | 737 | +0.0% | 0 s |
-| 2 | [`survival-raid`](builds/survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 346 | -4.7% | 711 | -3.5% | 0 s |
-| 3 | [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 317 | -12.7% | 694 | -5.8% | 0 s |
-| 4 | [`survival-ml-parse`](builds/survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 262 | -27.8% | 703 | -4.6% | 97 s |
-| 5 | *SV Melee* | community simulator | - | 231 | -36.6% | 678 | -7.9% | 120 s |
+| 1 | [`melee-survival-raid`](builds/melee-survival-raid.md) | ours: hand draft | 5/11/35 | 363 | +0.0% | 737 | -8.1% | 0 s |
+| 2 | [`survival-raid`](builds/survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 346 | -4.7% | 711 | -11.3% | 0 s |
+| 3 | [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 317 | -12.7% | 694 | -13.4% | 0 s |
+| 4 | [`beast-survival-open-raid`](builds/beast-survival-open-raid.md) | ours: derived (open search) | 16/11/24 | 269 | -25.9% | 802 | +0.0% | 121 s |
+| 5 | [`survival-ml-parse`](builds/survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 262 | -27.8% | 703 | -12.3% | 97 s |
+| 6 | *SV Melee* | community simulator | - | 231 | -36.6% | 678 | -15.4% | 120 s |
 
 ## DPS by gear tier
 
@@ -140,6 +142,7 @@ The class's best raid DPS build on the training dummy: [`opt-mm-raid-raid-dps`](
 | `melee-dps` | dummy | `melee-survival-raid` | 5/11/35 | 363 | +0.0% | 0 | +124% |
 | `melee-dps` | dummy | `survival-raid` | 5/16/30 | 346 | -4.7% | 0 | +116% |
 | `melee-dps` | dummy | `opt-melee-dps-raid-dps` | 5/15/31 | 317 | -12.7% | 0 | +126% |
+| `melee-dps` | dummy | `beast-survival-open-raid` | 16/11/24 | 269 | -25.9% | 121 | +78% |
 | `melee-dps` | dummy | `survival-ml-parse` | 5/14/32 | 262 | -27.8% | 97 | +100% |
 | `melee-dps` | dummy | sim preset: SV Melee | - | 231 | -36.6% | 120 | - |
 | `mm-lonewolf-raid` | dummy | sim preset: MM | - | 476 | +0.0% | 43 | - |
@@ -180,6 +183,7 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 | `melee-dps` | `melee-survival-raid` | 5/11/35 | 363 | 418 | 737 | 737 | 789 |
 | `melee-dps` | `survival-raid` | 5/16/30 | 346 | 406 | 711 | 711 | 761 |
 | `melee-dps` | `opt-melee-dps-raid-dps` | 5/15/31 | 317 | 375 | 694 | 694 | 750 |
+| `melee-dps` | `beast-survival-open-raid` | 16/11/24 | 269 | 331 | 802 | 802 | 835 |
 | `melee-dps` | `survival-ml-parse` | 5/14/32 | 262 | 316 | 703 | 703 | 751 |
 | `melee-dps` | sim preset: SV Melee | - | 231 | 281 | 678 | 678 | 711 |
 | `mm-lonewolf-raid` | sim preset: MM | - | 476 | 500 | 982 | 982 | 1008 |

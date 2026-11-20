@@ -936,7 +936,7 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
   behind the entry's best build of ours in the same fights. It is written as `<hybrid slug>-open-raid` into the entry, under the entry
   record's `builds.kept`. `open_builds.py <class> --kept-only --only raid --write --race --regen` writes only those builds: a full
   write would also rewrite every open build from older records (the hunter's mm-raid record would add a Marksmanship variant).
-  Only Beast-Survival qualifies. The Marksmanship/Survival split, 5.6% behind Survival, does not. A leveling
+  Only Beast-Survival qualifies. The Marksmanship/Survival split, 5.6% behind Survival, does not. Written on 2026-11-19 and raced in the new gear sets: 802 DPS against Survival's 737. A leveling
   filler pass carries over to a rewrite when the record's winner is a state its chain of one-point moves went through
   (`open_builds.filler_applies`): a chained second pass had stopped matching once the race picked our build after the first pass.
 - Gear presets must be complete (weapon, rings, trinkets, neck, back): some of the simulator's presets list only the armor slots
@@ -1025,6 +1025,13 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
   Honored; no auction house, no Tier 0.5, no PvP (`gear_tiers.DUNGEONS`; the definitions are Claude's, on the user's "Go with your
   recs"). `raidsim/dungeon_tier.py` makes its set per spec and races the record's other tier winners in it (no talent search of its
   own; `search["dungeon-raid"]`). The gear tools ignore factions: a set can hold both cities' reputation rings.
+  **GearCheck's raid values come from the page's own pick** (2026-11-19, `page_stat_weights.py --all`). Before, they were a record's
+  `gear.bis.weights`, measured on the search's starting build when the Raid BiS set was picked. 17 of the 29 searches of the gear
+  night started from a fallback, Frost's from the old 21/0/30 while its page shows 15/5/31. `addon_values.py` now uses a page row's
+  weights whenever it is for the same build, and writes one raid entry per spec, the page's pick. For 17 specs the entry had been the
+  record's `best` id, not the page's pick. The gear night also left out sets of specs with no ML record (the Shockadin's Raid BiS
+  set) and the tanks' standard sets (the paladin's Force Reactive Disk): after a pool change, scan every set file against its tier's
+  rule (`gear_fix_1119.py`, page-audit Q16).
   Each spec gets its own set per tier: the simulator's stat weights for its best build, the best item per
   slot (every slot, or keeping set pieces and items with effects), weights refreshed once, trinket pairs from the class's presets
   raced, the variants raced on seed 1 and confirmed on seed 2; in the BiS tier the spec's specs.json set competes when every item is

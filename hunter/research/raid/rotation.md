@@ -442,34 +442,34 @@ Damage by ability:
 | Wing Clip | 5% | 6% | 7% | 4% |
 | Lacerating Strikes | 2% | 0% | 2% | 2% |
 
-### *SV Melee* (community simulator, 231 DPS)
+### [`beast-survival-open-raid`](builds/beast-survival-open-raid.md) (ours: derived (open search), 269 DPS), *SV Melee* (community simulator, 231 DPS)
 
 Before the pull: at -3s: cast Hunter's Mark.
 
-| # | Priority (the first line whose condition holds is cast) | *SV Melee* casts/min |
-|---|---|---|
-| 1 | if auraIsInactive: cast Summon Hawk | 3.5 |
-| 2 | if auraIsInactive: cast Aspect of the Beast | 0.3 |
-| 3 | cast Mongoose Bite | 3.4 |
-| 4 | cast Raptor Strike | 2.9 |
-| 5 | cast Immolation Trap | 1.3 |
-| 6 | use every other cooldown when ready | as ready |
-| 7 | cast Strider Kick | 2.0 |
-| 8 | cast Major Mana Potion | as ready |
-| 9 | cast Wing Clip | 7.8 |
+| # | Priority (the first line whose condition holds is cast) | [`beast-survival-open-raid`](builds/beast-survival-open-raid.md) casts/min | *SV Melee* casts/min |
+|---|---|---|---|
+| 1 | if auraIsInactive: cast Summon Hawk | 3.5 | 3.5 |
+| 2 | if auraIsInactive: cast Aspect of the Beast | 0.3 | 0.3 |
+| 3 | cast Mongoose Bite | 2.0 | 3.4 |
+| 4 | cast Raptor Strike | 2.9 | 2.9 |
+| 5 | cast Immolation Trap | 1.3 | 1.3 |
+| 6 | use every other cooldown when ready | as ready | as ready |
+| 7 | cast Strider Kick | 2.0 | 2.0 |
+| 8 | cast Major Mana Potion | as ready | as ready |
+| 9 | cast Wing Clip | 8.9 | 7.8 |
 
 Lines of the simulator's rotation these builds never cast: cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
 
 Damage by ability:
 
-| Ability | *SV Melee* |
-|---|---|
-| Auto Attack | 58% |
-| Immolation Trap | 11% |
-| Pet: Auto Attack | 10% |
-| Mongoose Bite | 6% |
-| Raptor Strike | 5% |
-| Summon Hawk | 4% |
-| Strider Kick | 3% |
-| Wing Clip | 2% |
-| Lacerating Strikes | 2% |
+| Ability | [`beast-survival-open-raid`](builds/beast-survival-open-raid.md) | *SV Melee* |
+|---|---|---|
+| Auto Attack | 61% | 58% |
+| Immolation Trap | 10% | 11% |
+| Pet: Auto Attack | 10% | 10% |
+| Mongoose Bite | 4% | 6% |
+| Raptor Strike | 5% | 5% |
+| Summon Hawk | 4% | 4% |
+| Strider Kick | 3% | 3% |
+| Wing Clip | 3% | 2% |
+| Lacerating Strikes | 0% | 2% |

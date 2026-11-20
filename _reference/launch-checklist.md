@@ -237,6 +237,9 @@
 **Marksmanship — Raid (machine-learning search)** (`hunter/research/raid/builds/marksmanship-ml-raid.md`)
 - [ ] A machine-searched Marksmanship build: check it against the community's Marksmanship builds at launch.
 
+**Beast-Survival — Raid (open talent search)** (`hunter/research/raid/builds/beast-survival-open-raid.md`)
+- [ ] An open-search Beast-Survival build: check it against the community's Beast-Survival builds at launch.
+
 ### Mage
 
 **Frost — Arcane Power / Frostbolt (raid DPS)** (`mage/research/raid/builds/frost-arcane-power-raid.md`)
