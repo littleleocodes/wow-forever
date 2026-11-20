@@ -4,30 +4,29 @@
  "guides": {
   "Frost": {
    "raid": {
-    "plan": "Frost in a raid is **Frostbolt** with one buff kept up and two procs spent: **Ice Barrier** before the pull and again whenever its Frigid Power is about to run out, a free **Arcane Missiles** on every **Missile Barrage** proc and **Ice Lance** on every **Fingers of Frost** proc. 652 DPS in a full raid, the fifth mage page (Fire 873); **Ice Barrier** is the reason the build takes 31 Frost points.",
+    "plan": "Frost in a raid builds **Winter's Chill** on the boss with **Frostbolt** and spends it with **Cone of Cold**: every Frostbolt adds a stack, and at five stacks Cone of Cold deals twice its damage plus 35% of your spell damage, a quarter of the build's damage from one cast about every 15 seconds. **Ice Lance** takes the second charge of each **Fingers of Frost** proc, **Ice Barrier** keeps Frigid Power up, and **Cold Snap** buys one more Cone of Cold a fight. Cone of Cold is a cone in front of you: stand within 10 yards of the boss and face it (behind it, with the melee). 796 DPS in a full raid. This is the official simulator's own Frost build and list (wowsims/forever's Frost preset), which the page starts from since 2026-11-20.",
     "why": [
-     "**Ice Barrier** gives Frigid Power on every cast: 15% more Frost damage for a minute, and another 5% while its shield holds, which on a boss that does not hit you it does. Its cooldown is 30 seconds, so the list recasts it once a minute: 4 casts in a 3-minute fight, one before the pull. It is the 31-point Frost talent. Until 2026-11-19 no rotation of ours cast it, so every search valued it at nothing and the Frost builds stopped at 30 points; with one Arcane point moved into it the best Frost build went from 614 to 664 DPS in a full raid.",
-     "**Frostbolt** is the list: 57 casts and 72% of the damage. **Improved Frostbolt** takes its cast to 2.5 seconds, **Ice Shards** doubles its critical bonus, **Frost Channeling** cuts its cost by 15%, and **Precision** adds 6% hit. Each one that lands can set up the next two lines: a 20% chance of **Missile Barrage** and, through its chill, a 15% chance of **Fingers of Frost**.",
-     "**Arcane Missiles** on a **Missile Barrage** proc comes before **Frostbolt**: about 10 casts and 18% of the damage, each free, half as long and firing every half second, with **Arcane Impact**'s 6% crit. **Improved Channeling** at 2 points gives a 40% chance that a hit does not cut it short.",
-     "**Ice Lance** while **Fingers of Frost** is up: about 5 casts and 9% of the damage. The proc makes your next two spells treat the boss as frozen, so **Ice Lance** deals 300% more damage and **Shatter** adds 50% crit chance (**Incineration** another 10%); the list spends both charges on **Ice Lance**.",
-     "Mana holds in a raid: the mana gem (from **Conjure Mana Ruby**) about once a fight and a potion one fight in four; **Evocation** never ran in the simulator. **Arcane Concentration** at 2 points makes 4% of your casts free.",
-     "**Fire Blast** only in the last 3 seconds (under one a fight): a **Frostbolt** started then would still be in the air when the boss dies."
+     "**Frostbolt** is the base: 60 casts and 66% of the damage, at rank 10, the trainer's top rank. **Improved Frostbolt** takes its cast to 2.5 seconds, **Ice Shards** doubles its critical bonus and **Precision** adds 6% hit. With 5 points in **Winter's Chill** every Frostbolt that hits puts a stack on the boss: 20% more damage from your next **Cone of Cold** and 7% of your spell damage added to it, up to 5 stacks.",
+     "**Cone of Cold** at five stacks (12 casts, 25% of the damage): twice its damage and 35% of your spell damage on top, and **Improved Cone of Cold** adds 35%. Its 10-second cooldown is shorter than five Frostbolts, so the list waits for the stacks, not for the cooldown. **Arctic Reach** stretches its reach by 20%.",
+     "**Ice Lance** on the last charge of **Fingers of Frost** (6 casts, 8.5%): each chill has a 15% chance to give you two charges that make your next spells count as cast on a frozen target, which **Shatter** turns into 50% more critical chance. The first charge goes to a Frostbolt; the instant Ice Lance takes the second and adds a Winter's Chill stack of its own.",
+     "**Ice Barrier** before the pull and whenever Frigid Power has under 3 seconds left (4 casts): 15% more Frost damage for a minute, and 5% more while the shield holds.",
+     "**Cold Snap** once a fight, when **Cone of Cold** still has 7 seconds or more of its cooldown left: it ends every other Frost cooldown, so one more five-stack Cone. It also resets **Ice Block**, which this build takes."
     ],
     "caveats": [
-     "The hand-made Winter's Chill build (21/0/30, under Other builds) stops at 30 Frost points, a point short of the 31st row: 523 DPS in a full raid against this build's 652. **Winter's Chill** itself only helps **Cone of Cold** since the 2026-11-02 patch; this build keeps 3 points in it to reach the talents below it.",
-     "The shield's 5% lasts only while it holds. When raid damage breaks it, cast **Ice Barrier** again as soon as its 30-second cooldown allows: the simulator's boss never hits you, so its list recasts only near the end of the minute.",
-     "Several targets: **Blizzard**, **Cone of Cold** (with **Winter's Chill** stacks from your **Frostbolt** hits) and **Arcane Explosion**. The simulator's fights are one boss.",
-     "Moving: **Ice Lance** on a proc, **Fire Blast** and **Ice Barrier** are instant.",
-     "Threat: **Frost Channeling** and **Arcane Subtlety** cut your Frost and Arcane threat by 30%; the simulator ignores threat, so give the tank a few seconds on a fresh pull."
+     "Range: **Cone of Cold** reaches 10 yards in front of you (12 with **Arctic Reach**). Where you cannot stand that close or face the boss, it goes: cast **Frostbolt** instead, and the **Winter's Chill** points add nothing. The simulator's fights stand you at 10 yards.",
+     "Our search's 17/2/32 (under Other builds) is 0.4% ahead in the same fights, under the 0.5% bar, and about 2% ahead in the Raid BiS set that was chosen for its talents (818 against 802), so the gear table shows it there. Which build is better gear by gear is settled in a later pass, each in a set made for it.",
+     "Threat: this build has no **Frost Channeling**, so your Frost spells keep their full threat; **Arcane Subtlety** lowers Arcane threat only.",
+     "Mana: below 5% the list uses your mana gem and channels **Evocation**. With a raid's mana buffs a 3-minute fight never gets there; a long fight does.",
+     "Several targets: **Blizzard**, and **Cone of Cold** hits everything in the cone. The simulator's fights are one boss."
     ],
     "diverge": [
-     "In the last 3 seconds, **Fire Blast** instead of a **Frostbolt**.",
-     "When your shield breaks early, **Ice Barrier** again as soon as it is ready.",
-     "On a pack, **Blizzard**, or five **Frostbolt** hits and then **Cone of Cold** on the **Winter's Chill** stacks."
+     "If you cannot stand within 10 yards of the boss: **Frostbolt** in place of **Cone of Cold**.",
+     "Keep **Cold Snap** for a second **Ice Block** on a fight that needs one.",
+     "When raid damage breaks the shield, recast **Ice Barrier** as soon as its 30-second cooldown allows: the extra 5% lasts only while the shield holds."
     ],
-    "written": "2026-11-19",
+    "written": "2026-11-20",
     "rotations": {
-     "frost-raid": "ce303d213c2f"
+     "frost-raid": "1e4a5acdfa3a"
     }
    },
    "leveling": {
@@ -122,30 +121,28 @@
   },
   "Arcane": {
    "raid": {
-    "plan": "Arcane in a raid keeps its own **Arcane Blast** buff stacked (each cast gives you 12% of your Intellect as spell damage for 18 seconds, up to 4 stacks, at a doubling mana cost), fires **Arcane Wrath** every 6 seconds and **Fire Blast** every 7, spends every **Missile Barrage** proc on a free, fast **Arcane Missiles**, and casts **Pyroblast** once three crits have made it a 1.5-second cast. It is the hungriest mage list: even with a raid's mana buffs the simulator needs **Evocation** in 9 fights of 10. 756 DPS in a full raid.",
+    "plan": "Arcane with a Fire filler: **Fire Blast** on every cooldown and **Pyroblast** whenever three **Heating Up** stacks make it a 1.5-second cast, between the Arcane spells: **Arcane Missiles** on every **Missile Barrage** proc, **Arcane Blast** kept at three stacks of its buff, and **Arcane Wrath**. 826 DPS in a full raid. This is the official simulator's own Arcane build and list (its Arcane Fire preset), which the page starts from since 2026-11-20; our own Arcane build (under Other builds) is 0.4% behind in the same fights.",
     "why": [
-     "**Arcane Missiles** on **Missile Barrage** first (about 15 casts, 29%): **Arcane Blast** procs it 40% of the time, **Arcane Wrath** 20%; the proc makes the next Missiles free, 2.5 seconds long and twice as dense. **Arcane Impact** adds 6% crit, **Arcane Mind** 10% Intellect and a doubled Arcane crit bonus, **Arcane Instability** 3% damage and crit. The list names rank 7, as the simulator's rotation does; a free cast costs the same at any rank.",
-     "**Arcane Wrath** whenever it is ready (17 casts, 28%): 3 seconds with **Accelerant**, a 6-second cooldown, 406-496 damage plus 5% of your maximum mana as spell damage, and a proc roll. Moving it to the top of the list was the search's biggest single gain (+8.9%). Not in the last 10 seconds.",
-     "**Arcane Blast** (37 casts, 22%): keep its buff stacked on you. Cast it when the buff is gone or about to expire and until it has 3 stacks (the full list's conditions), then only while you have more than 25% mana, because the cost doubles with every stack. 1.5 seconds a cast, 10% crit from **Incineration**, and each one rolls 40% for a **Missile Barrage**.",
-     "**Fire Blast** on cooldown (14 casts, 10%): instant, every 7 seconds with one point of **Improved Fire Blast**, 10% crit from **Incineration**, and every hit adds a **Heating Up** stack.",
-     "**Pyroblast** at 3 stacks of **Heating Up** (4 casts, 7%, plus **Ignite**'s 2%): crits from **Fire Blast** and **Fireball** cut its 6-second cast by 25% each, and **Fire Blast** adds a stack on every hit, so three stacks come about every 45 seconds and the cast takes 1.5 seconds. Never hard-cast it otherwise.",
-     "**Arcane Power** and **Presence of Mind** at the pull: 30% more damage for 15 seconds at 30% more mana, and one instant **Arcane Wrath**; both have 3-minute cooldowns.",
-     "Mana: **Evocation** when nearly dry (0.9 casts a fight in the simulator), a mana potion about every 2 minutes, your mana gem (from **Conjure Mana Ruby**) and a Demonic Rune; **Arcane Concentration** makes one cast in ten free, **Arcane Meditation** at 2 points keeps a third of your regeneration going. When nothing above is affordable, **Fireball** rank 11 fills, about once a fight."
+     "**Pyroblast** first, at three **Heating Up** stacks (10-11 casts, 17.5% of the damage): every Fire Blast hit and every critical Fire Blast or Scorch adds a stack, each taking 25% off its cast. **Ignite** adds 40% of each Fire critical strike over 4 seconds (4%).",
+     "**Fire Blast** whenever it is ready (28 casts, 20%): a 6-second cooldown with **Improved Fire Blast**, an instant that feeds Heating Up. **Incineration** adds 10% critical chance to it, to **Arcane Blast** and to **Scorch**.",
+     "**Arcane Missiles** on **Missile Barrage** (12-13 casts, 24%): **Arcane Blast** procs it 40% of the time and **Arcane Wrath** 20%, and the proc makes the next Missiles free and twice as fast. Rank 7 is your top rank.",
+     "**Arcane Blast** to three stacks of its buff (34 casts, 19%): each cast gives you 12% of your Intellect as spell damage for 18 seconds and doubles the next one's mana cost. The list keeps three up and casts a fourth only while your mana is above a share that falls as the fight goes on.",
+     "**Arcane Wrath** whenever it is ready (8 casts, 13%), the first one made instant by **Presence of Mind**: it gains 5% of your maximum mana as spell damage. **Arcane Power** goes out with a Missile Barrage proc or Arcane Wrath.",
+     "**Scorch** is the filler when your mana is short (3 casts)."
     ],
     "caveats": [
-     "A 6-minute fight is a different list: the simulator's DPS falls from 756 at 3 minutes to 412 at 6, because the mana runs out. Longer fights want fewer **Arcane Blast** stacks and an earlier **Evocation**.",
-     "Moving: **Arcane Blast**, **Arcane Wrath** and **Arcane Missiles** all need you to stand. **Fire Blast** is your instant, and **Presence of Mind** makes one cast instant.",
-     "Threat: **Arcane Subtlety** cuts Arcane threat by 30%, but the simulator ignores threat, and **Arcane Power** at the pull is when you are most likely to pull the boss.",
-     "Several targets: **Arcane Explosion** hits everything within 10 yards; **Flamestrike** and **Blizzard** are the rest."
+     "Mana: the list spends fast. Below 10% it uses your mana gem and channels **Evocation**; a fight longer than 3 minutes needs them.",
+     "Moving: **Fire Blast** is instant and **Presence of Mind** makes one cast instant; the rest needs you to stand.",
+     "Threat: **Arcane Subtlety** cuts Arcane threat by 30%; the Fire spells keep theirs.",
+     "Several targets: **Arcane Explosion** and **Flamestrike**. The simulator's fights are one boss."
     ],
     "diverge": [
-     "In the last 10 seconds no **Arcane Wrath**, in the last 3 no **Arcane Blast**: **Fire Blast**, and a free **Arcane Missiles** if you have one.",
-     "Without a raid's mana buffs the simulator's list for playing alone spends two **Arcane Blast** stacks on a **Frostbolt** instead of a fourth cast and casts **Fire Blast** only on cooldown: cheaper and slower.",
-     "In a fight longer than 3 minutes, use **Arcane Power** and **Presence of Mind** again when they are back, and channel **Evocation** below 15% mana while more than 20 seconds remain."
+     "When mana runs short before the end, stop at three **Arcane Blast** stacks and fill with **Scorch**, as the list does below its mana line.",
+     "In a fight longer than 3 minutes, use **Arcane Power** and **Presence of Mind** again when they are back."
     ],
-    "written": "2026-11-04",
+    "written": "2026-11-20",
     "rotations": {
-     "arcane-dps": "2dde8eb89ed4"
+     "arcane-dps": "bb0d0413bb3e"
     }
    },
    "leveling": {
