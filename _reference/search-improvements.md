@@ -161,6 +161,14 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 ## Open ideas, ranked by what they could still find
 
+0u. **Shieldsworn's shield strike in the fight lab (2026-11-20, the independent audit's H10)**. Only Shieldsworn's 4-second Holy
+    Strike cut was modelled. `paladin.SHIELDSWORN_STRIKE` (a mechanic switch, not a rules knob; False = the lab before, bit-identical): a
+    landed Holy Strike deals one Holy Shield hit without spending a charge and rolls Shield Specialization's mana without its 3-second
+    lock, and a caster mob's spells can be blocked for 6 s. The Protection leveling pick (500 fights x seeds 1 and 2, the saved rules):
+    16.0% faster per kill at level 60, the only level where its order holds the talent (5.0% level-weighted). Off for the pages of
+    2026-11-20/21 (their Protection numbers were raced without it); on with the Protection re-races and rules re-tune of the optimality
+    pass, where the order search can also move Shieldsworn earlier.
+
 0t. **Unsealed Wrath and seal twisting in the fight lab (2026-11-20, the independent audit's H3)**. The lab kept one seal up, so
     Unsealed Wrath ("your melee attacks store a copy of your active Seal for 15 sec, stacking up to 3 times; landing an attack with a
     different Seal consumes all stacks, giving the stored Seal its normal chance to activate once per stack") read 0, and the Retribution

@@ -335,7 +335,8 @@ MECHANICS_ALT = dict(MECHANICS, **{
     "Iron Creed": "Holy Strike: -2%/rank damage taken for 6 s (Righteous Fury assumed up)",
     "Holy Shield": "+30% block (the 70291 tooltip) for 10 s or 4 blocks, Holy damage per block, recast when down",
     "Two-Handed Weapon Specialization": "+2%/rank Physical and Holy damage with a two-hander (client 70753)",
-    "Shieldsworn": "-4 s Holy Strike cooldown with a shield (its shield strike's Holy Shield charges, Shield Specialization roll and spell block not modelled)",
+    "Shieldsworn": "-4 s Holy Strike cooldown with a shield; with SHIELDSWORN_STRIKE (2026-11-20) its shield strike: one Holy Shield hit and a Shield "
+                   "Specialization roll per landed Holy Strike (no charge, no lock), spells blocked for 6 s",
 })
 
 
@@ -372,6 +373,12 @@ class PaladinModule(BaseModule):
     SOR_FROM = 61
     TWIST = 0
     TWIST_MANA = 0.4
+    # Shieldsworn's shield strike (2026-11-20, the independent audit's H10: only its cooldown cut was modelled): "Holy Strike now strikes
+    # with your shield, triggering your active Holy Shield and Shield Specialization talents without consuming their charges or
+    # triggering their cooldowns, and allowing you to Block spells for 6 sec". True: a landed Holy Strike deals one Holy Shield hit (no
+    # charge spent) and rolls Shield Specialization's mana (no 3 s lock), and a caster mob's spells can be blocked for 6 s. False = the
+    # lab before (bit-identical); turned on with the Protection re-races of the optimality pass. A mechanic, not a player's choice.
+    SHIELDSWORN_STRIKE = False
 
     def __init__(self, talents, level, spec="ret-dps", gear="leveling"):
         self.t = {k: v for k, v in talents.items() if v > 0}
@@ -1093,6 +1100,11 @@ class PaladinModule(BaseModule):
         melee, self._melee_pending = self._melee_pending, False
         if p.buff("Divine Protection", t):
             return 0.0
+        if (not melee and self.shield and self.SHIELDSWORN_STRIKE and p.buff("Shieldsworn", t)
+                and fight.rng.random() < p.block + self.block_bonus(fight)):   # Shieldsworn: a spell blocked for 6 s after the shield strike
+            blocked = min(dmg, p.block_value)
+            dmg -= blocked
+            fight.note(f"spell blocked {blocked:.0f}")
         if melee and self.shield:
             if not ENGINE_BLOCK and fight.rng.random() < p.block + self.block_bonus(fight):   # older engine: roll the block here
                 blocked = min(dmg, p.block_value)
@@ -1201,6 +1213,14 @@ class PaladinModule(BaseModule):
             if self.rank("Sanctified Judgement") and fight.rng.random() < self.tv("Sanctified Judgement", 0) / 100:
                 p.mana = min(p.mana_max, p.mana + self.tv("Sanctified Judgement", 1) / 100 * self.mana_cost(seal))
             return True
+        if name == "Holy Strike" and self.SHIELDSWORN_STRIKE and self.shield and self.rank("Shieldsworn") and amount > 0:
+            hsb = p.buff("Holy Shield", t)
+            if hsb and hsb["charges"] > 0:   # the shield strike triggers Holy Shield without spending a charge
+                sp = Spell("Holy Shield", "holy")
+                fight.deal(sp, hsb["dmg"] * self.damage_multiplier(sp, False), False)
+            if self.rank("Shield Specialization") and fight.rng.random() < self.tv("Shield Specialization", 1) / 100:
+                p.mana = min(p.mana_max, p.mana + self.tv("Shield Specialization", 2) / 100 * p.mana_max)   # no 3 s lock
+            p.buffs["Shieldsworn"] = {"until": t + 6.0}   # spells can be blocked (_split_damage_taken_alt)
         if name == "Holy Strike" and self.rf and self.rank("Iron Creed"):
             p.buffs["Iron Creed"] = {"until": t + 6.0}
         elif name == "Divine Protection":   # (Hammer of Justice's stun: the engine's apply_control, as in on_hit)
