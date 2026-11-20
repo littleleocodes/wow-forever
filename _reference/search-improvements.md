@@ -161,6 +161,19 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 ## Open ideas, ranked by what they could still find
 
+0v. **Oath of Light, Illumination and Reckoning (2026-11-20, the independent audit's H11 and H12)**. Three switches whose defaults keep
+    the labs before (bit-identical), flipped with the healer and paladin re-runs of the optimality pass:
+    - `heallab.tables.OATH_CRITS` (H11): Oath of Light's bonus healing crits with the heal it rides on (the simulator adds it to the base
+      heal; the lab dealt it as a separate heal that never crits). holy-ml-heal, 60 runs: capacity 0.641 -> 0.629, overheal 13% -> 18%:
+      within the noise, the extra crits land on a full tank;
+    - `heallab.tables.ILLUM_VIGIL` False (H12): no Illumination refund on a Light's Vigil party heal (the client's spell mask, which the
+      simulator follows). holy-ml-heal: capacity 0.641 -> 0.588 (-8.3%), out of mana 24 -> 35 s. The Holy paladin's healer tier may
+      move when the healer pass runs;
+    - `paladin.RECK_SEAL` (H12): Reckoning's extra attacks are auto attacks, so the seal procs on them. The Protection leveling pick: 0.5%
+      faster per kill level-weighted (1.4% at 50).
+    The Holy Power reading (the simulator's x1.5 on the whole crit, 225% at 5/5; a literal reading gives 175%) stays as the simulator
+    has it: a judgment call the audit left open.
+
 0u. **Shieldsworn's shield strike in the fight lab (2026-11-20, the independent audit's H10)**. Only Shieldsworn's 4-second Holy
     Strike cut was modelled. `paladin.SHIELDSWORN_STRIKE` (a mechanic switch, not a rules knob; False = the lab before, bit-identical): a
     landed Holy Strike deals one Holy Shield hit without spending a charge and rolls Shield Specialization's mana without its 3-second

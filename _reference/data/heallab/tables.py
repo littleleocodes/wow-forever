@@ -18,6 +18,12 @@ class_base_mana, class_base_stats, class_mana_regen_tick, class_spell_crit = _FL
 # ranks (Tablet of Healing Wave X, Codex of Greater Heal V, Codex of Renew X, Codex of Prayer of Healing V, Libram: Holy Light IX, Book
 # of Healing Touch XI, Book of Rejuvenation XI) are assumed not to be in Forever yet (raidsim/trainer-ranks.json). False = the lab before.
 TRAINER_RANKS = True
+# The independent audit's H11 and H12 (2026-11-20; False / True = the lab before, bit-identical; flipped with the healer pass's re-runs):
+# OATH_CRITS: Oath of Light's bonus healing crits with the heal it rides on (the simulator adds it to the base heal; the lab had dealt it
+# as a separate heal that never crits). ILLUM_VIGIL: Illumination returns mana on a Light's Vigil party heal (the client's spell mask,
+# which the simulator follows, leaves Light's Vigil out).
+OATH_CRITS = False
+ILLUM_VIGIL = True
 DURATION = 300.0          # seconds: a five-minute boss fight
 DT = 0.1                  # simulation step
 LEVEL = 60

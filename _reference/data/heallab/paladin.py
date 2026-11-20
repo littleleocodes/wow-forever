@@ -173,10 +173,12 @@ class Healer(E.BaseHealer):
         sim.illum_seen = set()     # spells that already returned mana through Illumination in this cast
 
     def on_heal(self, sim, spell, target, amount, crit):
+        self._last_heal = (spell.name, id(target), crit)   # Oath of Light's bonus crits with this heal (T.OATH_CRITS)
         if not crit:
             return
         r = self.rank("Illumination")
-        if r and spell.name in ILLUMINATION_SPELLS and spell.name not in sim.illum_seen:
+        if (r and spell.name in ILLUMINATION_SPELLS and spell.name not in sim.illum_seen
+                and (T.ILLUM_VIGIL or spell.name != "Light's Vigil")):   # T.ILLUM_VIGIL False: the client's mask (H12)
             chance, share = ILLUMINATION[min(r, len(ILLUMINATION)) - 1]
             sim.illum_seen.add(spell.name)
             if chance >= 1.0 or sim.rng.random() < chance:
@@ -188,7 +190,10 @@ class Healer(E.BaseHealer):
         if target.tank and spell.name in BLESSING_OF_LIGHT:
             sim.apply_heal(spell, target, BLESSING_OF_LIGHT[spell.name] * self.heal_mult(spell, target, sim), False, label=spell.name)
         if target.tank and self._oath(spell, target):
-            sim.apply_heal(spell, target, self._oath(spell, target) * self.heal_mult(spell, target, sim), False, label=spell.name)
+            lh = getattr(self, "_last_heal", None)
+            oc = bool(T.OATH_CRITS and lh and lh[0] == spell.name and lh[1] == id(target) and lh[2])   # H11: crits with its heal
+            sim.apply_heal(spell, target, self._oath(spell, target) * self.heal_mult(spell, target, sim) * (self.crit_mult(spell) if oc else 1.0),
+                           oc, label=spell.name)
         if spell.name == "Light's Vigil":
             sim.vigil_target = target
         elif getattr(spell, "vigil", False):

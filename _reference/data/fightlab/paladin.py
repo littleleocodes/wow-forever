@@ -379,6 +379,9 @@ class PaladinModule(BaseModule):
     # charge spent) and rolls Shield Specialization's mana (no 3 s lock), and a caster mob's spells can be blocked for 6 s. False = the
     # lab before (bit-identical); turned on with the Protection re-races of the optimality pass. A mechanic, not a player's choice.
     SHIELDSWORN_STRIKE = False
+    # Reckoning's extra attacks carry the seal (2026-11-20, the independent audit's H12: they are auto attacks, so a seal procs on them as on
+    # any swing; the lab skipped them). False = the lab before (bit-identical); turned on with the optimality pass's paladin re-races.
+    RECK_SEAL = False
 
     def __init__(self, talents, level, spec="ret-dps", gear="leveling"):
         self.t = {k: v for k, v in talents.items() if v > 0}
@@ -799,7 +802,7 @@ class PaladinModule(BaseModule):
             return
         sealb = p.buff("Seal", t)
         seal = self.spells.get(sealb["name"]) if sealb else None
-        if seal is not None and spell.name == "Melee":
+        if seal is not None and (spell.name == "Melee" or (self.RECK_SEAL and spell.name == "Reckoning")):
             if getattr(seal, "seal_pct", 0.0):
                 self._soc_proc(fight, seal)
             elif getattr(seal, "seal_max", 0.0):   # Seal of Righteousness: the client's per-hit rows (SOR_PER_HIT; the Retribution path holds a two-hander)
@@ -1141,7 +1144,7 @@ class PaladinModule(BaseModule):
             return
         sealb = p.buff("Seal", t)
         seal = self.spells.get(sealb["name"]) if sealb else None
-        if seal is not None and spell.name == "Melee":
+        if seal is not None and (spell.name == "Melee" or (self.RECK_SEAL and spell.name == "Reckoning")):
             if getattr(seal, "fury_hit", 0.0):
                 dmg = (seal.fury_hit + seal.fury_coefs[1] * p.spell_power) * self.damage_multiplier(seal, False)
                 if self._melee_roll(fight, False) == "crit":   # crit only on the melee table (the fork's seal_of_fury.go)
