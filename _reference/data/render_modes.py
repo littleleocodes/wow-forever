@@ -18,6 +18,7 @@ Everything technical stays in <class>/research/. Generated: never hand-edit (reb
 """
 import datetime
 import json
+import os
 import re
 import pathlib
 import sys
@@ -378,6 +379,9 @@ def raid_sims(R, ids=None):
 
 # ------------------------------------------------------------------------------------------------ numbers
 STALE_BENCH = set()   # (class, entry) whose full-raid record was raced on another patch set (raid_numbers)
+# Unstamped full-raid records left out too (the audit session, 2026-11-20): switched on at the stage-1 regen, once race-all has written
+# stamped records for every entry, so a record race-all does not rewrite cannot slip through. WOW_FOREVER_REQUIRE_STAMP=1 turns it on.
+REQUIRE_STAMP = os.environ.get("WOW_FOREVER_REQUIRE_STAMP") == "1"
 _PATCH = {}
 
 
@@ -404,11 +408,11 @@ def raid_numbers(cls):
     cur_patch = current_patch_hash()
     for x in rs.raid_rows(cls, "raid"):
         se = (x.get("d") or {}).get("sim_env") or {}
-        if se.get("patch_hash") and cur_patch and se["patch_hash"] != cur_patch:
+        if (se.get("patch_hash") and cur_patch and se["patch_hash"] != cur_patch) or (REQUIRE_STAMP and not se.get("patch_hash")):
             # a record raced on another patch set (2026-11-20, search-improvements 0x: a stale bench had made numbers that read as current)
             if (cls, x["spec"]) not in STALE_BENCH:
                 STALE_BENCH.add((cls, x["spec"]))
-                print(f"WARNING: {cls} {x['spec']}: its full-raid record was raced on patch set {se['patch_hash']}, now {cur_patch}: "
+                print(f"WARNING: {cls} {x['spec']}: its full-raid record was raced on patch set {se.get('patch_hash') or '(no stamp)'}, now {cur_patch}: "
                       "left out of the pages until it is raced again", flush=True)
             continue
         r = x["row"]
