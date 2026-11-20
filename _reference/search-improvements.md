@@ -161,6 +161,15 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 ## Open ideas, ranked by what they could still find
 
+0w. **A Wrath weave for Eclipse in the Balance rotations (2026-11-20, the independent audit's H5)**. Forever's Eclipse ("Your Wrath
+    spell reduces the cast time of your next 2 Starfire spells by 0.50 sec. Stores up to 4 charges") needs Wrath, which no Balance
+    rotation of ours cast: every search read the talent at 0. deep-runs/eclipse_weave_1120.py puts one line before the Starfire filler of
+    both Balance rotations: Wrath (rank 8) while fewer than 2 Eclipse charges are stored, guarded by the Eclipse aura being known (the
+    absent rule would otherwise read the stacks as 0 and cast Wrath forever; apl_validate's "No aura found" on the line is that guard
+    for a build without the talent). Full raid, 6,000 fights, seeds 1 and 2: the page pick (no Eclipse) bit-identical; the pick with
+    Eclipse 3/3 and Improved Wrath 5/5 added unpaid +7.2% / +7.5% (below 1 charge +6.7-6.9%, below 3 +6.0-6.1%). The Balance search
+    that pays the 8 points (they come out of its 18 Restoration points) is the optimality pass's; the line is in place for it.
+
 0v. **Oath of Light, Illumination and Reckoning (2026-11-20, the independent audit's H11 and H12)**. Three switches whose defaults keep
     the labs before (bit-identical), flipped with the healer and paladin re-runs of the optimality pass:
     - `heallab.tables.OATH_CRITS` (H11): Oath of Light's bonus healing crits with the heal it rides on (the simulator adds it to the base

@@ -77,6 +77,46 @@
   },
   {
    "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "auraIsKnown": {
+         "auraId": {
+          "spellId": 408255
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "auraNumStacks": {
+           "auraId": {
+            "spellId": 408255
+           }
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "2"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 9912
+     }
+    }
+   },
+   "notes": "added 2026-11-20 (the independent audit's H5): Wrath while fewer than 2 Eclipse charges are stored, guarded by the Eclipse aura being known, so builds without the talent are unchanged"
+  },
+  {
+   "action": {
     "castSpell": {
      "spellId": {
       "spellId": 9876
