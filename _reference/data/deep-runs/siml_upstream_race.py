@@ -41,10 +41,17 @@ ENTRIES = {
     "mm-raid": {"cls": "hunter", "builds": [], "rots": ["mm"]},        # no upstream Marksmanship build with a pet: its rotation only
     "mm-lonewolf-raid": {"cls": "hunter", "builds": ["mm", "sv"]},
     "melee-dps": {"cls": "hunter", "builds": ["sv_melee"]},
+    "survival-pet-raid": {"cls": "hunter", "builds": ["sv_melee"]},   # (2026-11-20: the simulator's SV Melee with its Raptor, the Survival pick's entry)
     "melee-dps@weave": {"cls": "hunter", "base": "melee-dps", "builds": ["sv_weave"], "distance": 12, "ours_rot": False},
     "ret-dps": {"cls": "paladin", "builds": ["unsealed_wrath"]},
     "shockadin-raid": {"cls": "paladin", "builds": ["holy_shock"]},
 }
+
+
+# Ranks our simulator patches move (raidsim/patches/README.md): Hunter's Mark is rank 3 (14324, +98 ranged attack power against rank 4's
+# +71 in the client data), so a rotation written for the unpatched simulator checks rank 4's aura (14325), never finds it, and casts the
+# mark on every global cooldown (2026-11-20, search-improvements 0p: 121 casts a fight, every upstream hunter rotation at 360-500 DPS)
+PATCH_RANKS = {14325: (14324, 3)}
 
 
 def bench_exe(repo):
@@ -62,6 +69,7 @@ def read_upstream(repo):
     """{class: {build: {talents, options, rotation file}}}, the rotations written with trainer ranks."""
     mp = TR.load_map()
     fwd = {b: (v["trainer"], v["trainer_rank"]) for b, v in mp.items()}
+    fwd.update(PATCH_RANKS)
     commit = subprocess.run(["git", "-C", str(repo), "rev-parse", "--short=9", "HEAD"], capture_output=True, text=True).stdout.strip()
     out = {}
     for cls, (bdir, names) in BUILDS.items():

@@ -244,12 +244,17 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
     mean item level 59.3 or more, none affected. The stopped ML Arcane-Frost run's 246-258 DPS on the dummy at 10:05 is not this (its
     path replays clean): the hybrid's builds under the Frost entry's rotation (0o).
 
-0p. **The simulator's hunter rotations collapse in our bench (2026-11-20, H6; open, first after the pages)**. Read from SIML with the
-    bench's -siml2json (deep-runs/siml_upstream_race.py), every upstream hunter rotation scores 360-500 DPS on every build and option set
-    (turret 376, turret_hawk 485-488, melee 477-499, the weave's default 362-366) against 800-960 under ours: a conversion or setup gap
-    (the SIML pull and walk-in parts, the "simple" settings, or a player setting our bench lacks), not a verdict on them. Until it is
-    found the hunter's parity check is half done: its talents were raced fairly (under our rotations), its rotations not. Recorded in
-    raidsim/siml-upstream-race.json's entries as well.
+0p. **The simulator's hunter rotations collapsed in our bench (2026-11-20, H6; found and fixed the same day: our own patch)**. Read from
+    SIML with the bench's -siml2json (deep-runs/siml_upstream_race.py), every upstream hunter rotation scored 360-500 DPS on every build
+    and option set against 800-960 under ours. The cause: our simulator patch makes Hunter's Mark rank 3 (14324: +98 ranged attack power
+    against rank 4's +71 in the client data; raidsim/patches/README.md), and upstream's rotations keep the mark up with "not auraIsActive
+    (CurrentTarget, 14325)": that aura never appears in our simulator, so they cast the mark on every global cooldown (121 casts a
+    fight) and nothing else but white swings and Raptor Strike. siml_upstream_race.py maps the ranks our patches move (`PATCH_RANKS`,
+    14325 -> 14324 with the trainer-rank swap). Probe (full raid, 2,000 fights): melee-survival-raid in melee-dps 745.1 under our raid
+    rotation, 766.7 under upstream's melee rotation (+2.9%: Serpent Sting from range past the dead zone, 12% of the damage, and
+    Immolation Trap kept up, 12%). The hunter parity race was run again the same day (record raidsim/siml-upstream-race.json). Our own
+    rotations cast 14325 only before the pull, with no aura check, so they were never caught; a rotation from the unpatched simulator
+    needs the same mapping whenever it names a rank a patch moves.
 
 0o. **A search may target an entry that was never raced (2026-11-20, ML Arcane-Frost)**. ml_pipeline's targets step picks the entries
     from the race reports: arcane-frost-raid, new that morning and not raced yet, was invisible, and ML Arcane-Frost targeted frost-raid,
