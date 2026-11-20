@@ -122,6 +122,7 @@ def slug(spec):
 # or one built for the hybrid itself (Frostfire's frostfire-raid, Smite's smite-dps). No step may move a build to another spec's rotation
 # because it is faster there (the cross-rotation races stay as research). The trees each raid entry's rotation is built for:
 RAID_ENTRY_TREES = {
+    ("hunter", "survival-pet-raid"): {"Survival"},
     ("mage", "frost-raid"): {"Frost"}, ("mage", "fire-raid"): {"Fire"}, ("mage", "arcane-dps"): {"Arcane"},
     ("mage", "frostfire-raid"): {"Hybrid Fire/Frost"}, ("mage", "arcane-frost-raid"): {"Hybrid Arcane/Frost"},
     ("priest", "shadow-dps"): {"Shadow"}, ("priest", "smite-dps"): {"Hybrid Discipline/Holy"},

@@ -161,6 +161,20 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 ## Open ideas, ranked by what they could still find
 
+0p. **The simulator's hunter rotations collapse in our bench (2026-11-20, H6; open, first after the pages)**. Read from SIML with the
+    bench's -siml2json (deep-runs/siml_upstream_race.py), every upstream hunter rotation scores 360-500 DPS on every build and option set
+    (turret 376, turret_hawk 485-488, melee 477-499, the weave's default 362-366) against 800-960 under ours: a conversion or setup gap
+    (the SIML pull and walk-in parts, the "simple" settings, or a player setting our bench lacks), not a verdict on them. Until it is
+    found the hunter's parity check is half done: its talents were raced fairly (under our rotations), its rotations not. Recorded in
+    raidsim/siml-upstream-race.json's entries as well.
+
+0o. **A search may target an entry that was never raced (2026-11-20, ML Arcane-Frost)**. ml_pipeline's targets step picks the entries
+    from the race reports: arcane-frost-raid, new that morning and not raced yet, was invisible, and ML Arcane-Frost targeted frost-raid,
+    whose upstream rotation the hybrid collapses under (stopped after 15 minutes). The same family as 0n (a step choosing from a report
+    that does not exist yet or was made under other conditions). Open, for the next change to ml_pipeline.py: a new entry (no race
+    report, or a report older than its builds list or base) is raced before any target step may choose; until then the lanes race
+    each new entry first (audit_raid_1120d.sh).
+
 0n. **A fresh tune after a base change picks its tuning builds from the race of the old rotation (2026-11-20, frost-raid)**.
     apl_opt.main_builds reads the entry's last race and environments report. frost-raid's fresh tune on upstream's frost rotation
     (deep-runs/audit_raid_1120c.sh, 08:25) read the race made under our old rotation and tuned on opt-frost-raid-raid-dps and the

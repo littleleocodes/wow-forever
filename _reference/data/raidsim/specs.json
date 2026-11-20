@@ -2,6 +2,8 @@
   "_comment": "Our scorer spec ids -> the ElliotWood/Forever simulator's spec folder (ui/specs/<class>/<spec>), gear preset, rotation (APL), player options (protojson fragment of the Player spec oneof), consumables and race, all taken from that folder's presets.ts on 2026-09-26. `builds` are our proposed-builds.json ids raced by default; the sim's own preset talents are added automatically. buffs_off / debuffs_off: proto field names of the sim's full buff set that the spec itself provides through a talent (Trueshot Aura, Leader of the Pack, Moonkin Aura); the bench clears them so the talent's own value is measured instead of duplicated.",
   "mage": {
     "frost-raid": {
+      "apl_opt": "_reference/data/raidsim/apls/mage/frost-raid.apl.json",
+      "apl_opt_raid": "_reference/data/raidsim/apls/mage/frost-raid-raid.apl.json",
       "sim_class": "ClassMage",
       "sim_spec": "mage/dps",
       "profile": "raid-dps",
@@ -30,7 +32,7 @@
         "conjuredId": 12662,
         "mhImbueId": 25122
       },
-      "builds": ["frost-winters-chill-raid", "frost-fingers-of-frost-raid", "opt-frost-raid-raid-dps", "opt-frost-raid-raid-dps-extwc", "frost-ml-raid"],
+      "builds": ["frost-winters-chill-raid", "frost-fingers-of-frost-raid", "opt-frost-raid-raid-dps", "opt-frost-raid-raid-dps-extwc", "frost-ml-raid", "frost-med-raid"],
       "rotation_note": "the official simulator's own frost rotation (2e6e77d84, trainer ranks), adopted 2026-11-20 (the independent audit's Frost decision; user: \"Go with the audits recommendations\"): with its Frost Med talents 792.6 / 792.3 DPS in a full raid against our page pick frost-ml-raid under the old rotation, 652.9 / 652.8 (+21.4%; the rotation alone on frost-ml-raid +9.7%). It builds Winter's Chill stacks with Frostbolt and Ice Lance and spends them on Cone of Cold (about 12 casts, a quarter of the damage), with Ice Barrier for Frigid Power. Cone of Cold is a 10-yard cone (12 with Arctic Reach): stand within it: the entry runs at 10 yards (the audit's decision of 2026-11-20; upstream's Frost settings stand at 28 and the simulator does not check the cone's range: upstream frost with Frost Med 795.5 at 10, 792.2 at 20, 792.7 at 28). The Arcane-Frost hybrid and the Arcane Power draft keep the old rotation in arcane-frost-raid. Before: Base rotation (2026-09-28): the simulator's `frost.apl.json` plus Arcane Missiles on a Missile Barrage proc, guarded by `auraIsKnown` so only builds with Missile Barrage cast it. The simulator's Frost rotation never casts Arcane Missiles, which cost the Arcane Power Frost draft (the one Frost build with Missile Barrage) 13% on the training dummy (484.8 -> 548.0 DPS) and 10% in the raid setting; the Fingers of Frost and Winter's Chill builds are unchanged. The rotation search also tunes on that draft (`tune_builds`)."
     },
     "arcane-frost-raid": {
@@ -100,7 +102,6 @@
       "builds": ["fire-raid", "opt-fire-raid-raid-dps", "fire-open-raid"]
     },
     "arcane-dps": {
-      "apl_opt_raid": "_reference/data/raidsim/apls/mage/arcane-dps-raid.apl.json",
       "apl_opt": "_reference/data/raidsim/apls/mage/arcane-dps.apl.json",
       "sim_class": "ClassMage",
       "sim_spec": "mage/dps",
@@ -128,14 +129,12 @@
         "conjuredId": 12662,
         "mhImbueId": 25122
       },
-      "builds": ["arcane-blast-raid", "arcane-open-raid"],
+      "builds": ["arcane-blast-raid", "arcane-open-raid", "arcane-fire-raid"],
       "rotation_only": true,
       "preset_names": ["Arcane Frost", "Arcane Fire"],
       "rotation_note": "the official simulator's own arcaneFireFill rotation (2e6e77d84, trainer ranks), adopted 2026-11-20 (the independent audit's D4 and its decision that Arcane may fill with Fire: +4.5% / +4.8% on arcane-open-raid in a full raid, seeds 1 / 2; raidsim/upstream_race.py); before: upstream's arcane rotation. Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs."
     },
     "frostfire-raid": {
-      "apl_opt_raid": "_reference/data/raidsim/apls/mage/frostfire-raid-raid.apl.json",
-      "apl_opt": "_reference/data/raidsim/apls/mage/frostfire-raid.apl.json",
       "sim_class": "ClassMage",
       "sim_spec": "mage/dps",
       "race": "RaceTroll",
@@ -143,7 +142,7 @@
       "profession1": "Alchemy",
       "profession2": "Tailoring",
       "gear": "_reference/data/raidsim/gear_sets/forever/mage-dps-p1.p1opt.gear.json",
-      "apl": "_reference/data/raidsim/apls/mage/frostfire-raid.base.apl.json",
+      "apl": "_reference/data/raidsim/apls/mage/upstream/ffb.apl.json",
       "spec": {
         "mage": {
           "options": {
@@ -162,10 +161,10 @@
         "conjuredId": 12662,
         "mhImbueId": 25122
       },
-      "builds": ["frostfire-raid", "frostfire-ml-raid", "frostfire-fingers-of-frost-raid"],
+      "builds": ["frostfire-raid", "frostfire-ml-raid", "frostfire-fingers-of-frost-raid", "frostfire-ffb-raid"],
       "rotation_only": true,
       "preset_names": ["FFB"],
-      "rotation_note": "Frostfire Bolt mage (2026-09-28, new-builds survey): a Fire/Frost hybrid built on Frostfire Bolt, which counts as both schools. The community simulator ships Frostfire Bolt as a stub: this target runs on our implementation of it (_reference/data/raidsim/patches/), so its numbers are our model of the beta, not the community's."
+      "rotation_note": "the official simulator's own ffb rotation (2e6e77d84, trainer ranks) with its FFB build, adopted 2026-11-20 (Simulator build first; the audit's (d)): the package 781.5 DPS in a full raid; our rotation with the FFB talents 785.1 (+0.46%) and our frostfire-ml-raid under it 778.9, both under the 0.5% bar, so the simulator's package stands (not to be re-opened for 0.4%). Before: Frostfire Bolt mage (2026-09-28, new-builds survey): a Fire/Frost hybrid built on Frostfire Bolt, which counts as both schools. The community simulator ships Frostfire Bolt as a stub: this target runs on our implementation of it (_reference/data/raidsim/patches/), so its numbers are our model of the beta, not the community's."
     }
   },
   "priest": {
@@ -617,6 +616,46 @@
       "rotation_only": true,
       "preset_names": ["SV Melee"],
       "rotation_note": "Melee hunter (2026-09-27): our melee builds on our own base rotation and a dual-wield version of the hunter's phase-1 gear (Deathbringer and Brutality Blade with Crusader). The simulator models only Aspect of the Hawk; our patch adds Aspect of the Beast (below). The scorer's melee model is not calibrated to these numbers. Traps (2026-09-29, user request): Immolation Trap then Explosive Trap as the last lines of both rotations, cast in combat under the target. No rotation had cast them (the search pools only insert new Forever spells and cooldowns). The simulator gives all traps one shared 30 s cooldown (its author's reading of the demo streams; the beta tooltips say only '30 sec cooldown' and 'only one Fire trap can be active'): with it, +7.7% on the dummy and +3.8% in the raid (Immolation alone; Explosive is then never cast); with separate cooldowns (a temporary patch, not kept) +12.6% and +6.4%. The user's reading (2026-09-29): fire traps share a cooldown with each other and frost traps with each other, so the shared-cooldown numbers apply (Immolation every 30 s; the Explosive line stays for packs). The simulator puts the frost traps on the same timer too, which no rotation here casts. Aspect of the Beast (2026-09-29): our simulator patch (patches/forever/sim/hunter/aspect_of_the_beast.go) adds Aspect of the Beast (+110 melee attack power) and the melee half of Deadly Aspects (10% per melee auto attack, +30% melee speed for 12 s); both rotations open with it: +12.3% dummy, +12.9% raid. Melee hunter numbers from that date rest on this patch (our model)."
+    },
+    "survival-pet-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/hunter/survival-pet-raid-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/hunter/survival-pet-raid.apl.json",
+      "sim_class": "ClassHunter",
+      "sim_spec": "hunter/dps",
+      "race": "RaceTroll",
+      "distance": 5,
+      "profession1": "Engineering",
+      "profession2": "Leatherworking",
+      "gear": "_reference/data/raidsim/gear_sets/forever/hunter-project-hunter_melee_p1.p1opt.gear.json",
+      "apl": "_reference/data/raidsim/apls/hunter/melee-dps.base.apl.json",
+      "spec": {
+        "hunter": {
+          "options": {
+            "classOptions": {"quiverBonus": "AncientSinewWrappedLamina", "ammo": "ThoriumHeadedArrow", "petType": "Raptor", "petUptime": 1, "petAttackSpeed": "FasterAttackII"}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "battleElixirId": 13452,
+        "spellPowerElixirId": 13454,
+        "guardianElixirId": 20007,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8412,
+        "alcoholId": 21151,
+        "dragonbreathChili": true,
+        "foodId": 20452,
+        "potId": 13444,
+        "mhImbueId": 22756,
+        "ohImbueId": 16138
+      },
+      "self_debuffs": {"hunters_mark": true},
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
+      "builds": ["survival-raptor-raid", "melee-survival-raid"],
+      "rotation_only": true,
+      "preset_names": ["SV Melee"],
+      "rotation_note": "Survival with the simulator's option set (2026-11-20, the audit's (a) on H6): melee-dps's gear and tuned rotations (copied, with their record), a Raptor out at Faster Attack II as the simulator's SV Melee build file has it. melee-dps keeps the petless set for Beast-Survival (Lone Wolf): one option set per page."
     }
   },
   "rogue": {
@@ -1008,7 +1047,7 @@
       },
       "self_buffs": {"greater_blessing_of_might": true},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
-      "builds": ["shockadin-open-raid"],
+      "builds": ["shockadin-open-raid", "shockadin-holy-shock-raid"],
       "rotation_only": true,
       "preset_names": [],
       "rotation_note": "2026-10-31 (stage 2, hotfix push 113554): the official simulator's Holy Shock rotation (ui/specs/paladin/retribution/apls/holy_shock.apl.json at 54ceac638, written for the reworked tree; 783 against our signature rotation's 740 DPS for its Holy Shock preset in a full raid) is the base; Shockadin still plays Holy Shock as its main damage (signature rule, user 2026-10-22). Our rotations of the old tree are archived in apls/paladin/pre-113554/. Gear, consumables and self-buffs as ret-dps"

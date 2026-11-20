@@ -610,8 +610,9 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
   - each tree's duel build and battleground version, and the class's community PvP builds;
   - ten blends of the trees' duel builds (each ordered pair at 31/20, each pair at 26/25, all three at 17/17/17; a tree's share is
     its duel build's talents in that tree, lowest rows first), each after a short climb.
-  Then the round-2 search with 30 steps. Record `duellab/unrestricted/<class>.json`; about an hour a class at 10 workers. Queued with
-  the raid and leveling halves after the gear night.
+  Then the round-2 search with 30 steps. Record `duellab/unrestricted/<class>.json`; about an hour a class at 10 workers. **Dropped
+  on 2026-11-20 with the raid and leveling halves** (see "Simulator build first" under Raid sim); the code and the worktrees stay as
+  they are, unrun.
 - User decisions:
   - 2026-11-15, "I want to see the results of PvP before deciding if they go on the page or not". On 2026-11-17, after the report,
     "Go with all your recommendations": the results go on the research pages now, and the PvP player pages after round 2. Each page
@@ -783,6 +784,28 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
   Shout rank 6, Greater Blessings rank 1). Full raid, same fights, seeds 1-2: Balance -3.0%, hunters -1.7 to -2.8%, Enhancement -1.9
   to -2.2%, Elemental -1.2 to -1.4%, warlocks -1.0 to -1.8%, dagger rogues -0.5%, warriors 0 to -0.3%. The fight lab and the healer
   lab follow in the fight-lab pass (both still play the book rank at 60).
+- **Simulator build first** (2026-11-20, the user, first-hand in the lane session after the audit session's recommendation: "I'm just
+  looking for their to be a viable build and rotation for each classes spec. I want to be able to pick any class and then within that
+  class any playable and spec and have a viable build we can use on our page"; "Go with you recommendations. 1 thing is I want any
+  viable hybrid specs to be checked still ... for classes like mage where Frostfire is a very viable and potentially standard build or
+  melee hunter, those need to be checked. And anything like it"). The standing method for raid:
+  - where the official simulator ships a build for a spec (its presets.ts and build files, SIML included: the bench's -siml2json reads
+    them, deep-runs/siml_upstream_race.py), the raid page starts from that build with the simulator's own rotation (trainer ranks, our
+    option rules); ours replaces it only when 0.5% ahead on two seeds and passing the spec's signature and own-rotation rules;
+  - upstream parity at every re-pin (raidsim/upstream_race.py, deep-runs/warlock_upstream_race.py, siml_upstream_race.py): our
+    rotation and theirs x our builds and theirs x the option sets, full raid, entry gear, 10,000 fights, seeds 1 / 2;
+  - a short check, not a multi-hour search, where the pick is a simulator build under its own rotation: the pick's one-move and
+    chain-move neighbours screened in a full raid on common fights, the leaders confirmed on a second seed (raidsim/talent_opt.py
+    --setting raid, two rounds), about half an hour a spec, plus the gear tiers for the pick (gear_tiers.py --set, dungeon_tier.py).
+    The full search (ml_pipeline.py, deep_tank.py) only when the check finds 0.5% confirmed, or when a spec has no simulator build and
+    its rotation, options or model changed materially since its last full search. The same rule for the tanks (upstream's tank builds
+    under their own rotations first);
+  - hybrids: no blanket hybrid search. A hybrid is checked, with the rotation built for it, and keeps its page while it passes its
+    rule when the simulator ships a build for it (Frostfire's FFB, the melee and weave hunter, Arcane Fire, SM/Ruin, the Holy Shock
+    paladin, Smite), it is among talentsforever.com's popular builds for the class, or it already has a named page (Arcane-Frost,
+    Frostfire, Shockadin, Smite, Beast-Survival, Beast-Marks, the rogue, shaman and warlock hybrids). No new hybrid page from a search
+    alone;
+  - the no-rules search (raid, leveling and PvP halves; the user's request of 2026-11-18) is dropped; its code and worktrees stay.
 - **Options against upstream's defaults** (2026-11-20, the independent audit; `raidsim/options_check.py --write` ->
   `_reference/options-check.md`, every row a real gap fixed or a deliberate difference with its measured size; run it after every
   re-pin and after editing an entry's options, next to `spec_check.py`, which only finds names the protos lack). Found by it or on the

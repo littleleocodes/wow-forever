@@ -2192,6 +2192,52 @@
       "notes": ["Kept from the hybrid check (2026-11-18, `_reference/hybrid-check.md`): an open search writes one build per raid entry, filed under its winner's spec, and the melee-dps entry's winner was another spec's, so Beast-Survival had no raid build. This family passed the raid signature check (core share 64%).", "Simulator numbers are the community's model of the beta (wowsims/forever 2e6e77d (client 70938) with this project's patches), not in-game measurements.", "2026-11-19 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Revive Pet -> Endurance Training (survival); Improved Wing Clip -> Deflection (survival); Improved Wing Clip -> Deflection (survival). Net +0.00% on a third seed."],
       "open_questions": ["An open-search Beast-Survival build: check it against the community's Beast-Survival builds at launch."],
       "sources": ["https://talentsforever.com/hunter/60/54001005001-005005001-5102022300500121-12"]
+    },
+    {
+      "id": "survival-raptor-raid",
+      "name": "Survival — melee with a Raptor (the simulator's own build)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Survival",
+      "preset": "SV Melee",
+      "summary": "The official wowsims/forever simulator's own melee Survival build (SV Melee, 16/4/31): dual wield in melee with a Raptor out (Faster Attack II), Summon Hawk and the pet talents of Beast Mastery's first rows, Survival to Lacerating Strikes. Raced under our melee rotation with the simulator's option set: 861.7 / 861.7 DPS against our petless Beast-Survival's 801.8 / 801.3 (full raid, 2026-11-20); the simulator's own melee rotation scores far lower in our bench (a conversion gap, open).",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 3],
+          ["Focused Fire", 2],
+          ["Unleashed Fury", 5],
+          ["Summon Hawk", 1]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 4]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5],
+          ["Deflection", 3],
+          ["Savage Strikes", 2],
+          ["Clever Traps", 2],
+          ["Surefooted", 3],
+          ["Predator's Edge", 5],
+          ["Expose Prey", 2],
+          ["Survivalist's Discipline", 2],
+          ["Strider Kick", 1],
+          ["Lightning Reflexes", 5],
+          ["Lacerating Strikes", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Lacerating Strikes", "why": "Your Mongoose Bite also causes the target to Bleed for damage equal to 40% of the damage done by Mongoose Bite over 21 sec"},
+        {"talent": "Lightning Reflexes", "why": "Increases your Agility by 15%"},
+        {"talent": "Survivalist's Discipline", "why": "Reduces the cooldown of your Trap and Deterrence abilities by 40%"},
+        {"talent": "Strider Kick", "why": "A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec"},
+        {"talent": "Expose Prey", "why": "Grants your melee and ranged attacks against enemies afflicted by Hunter's Mark a 10% chance to allow an activation of Mongoose Bite"}
+      ],
+      "flex": [],
+      "notes": ["The simulator's own build, credited (Simulator build first, 2026-11-20): the page starts from it; ours replaces it only when 0.5% ahead on two seeds and passing the spec's rules.", "Simulator numbers are the community's model of the game, not in-game measurements."],
+      "sources": ["https://github.com/wowsims/forever/blob/2e6e77d84/ui/specs/hunter/dps/builds/sv_melee.siml"],
+      "open_questions": []
     }
   ]
 }

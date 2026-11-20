@@ -1,0 +1,312 @@
+{
+ "dummy": {
+  "class": "hunter",
+  "spec": "melee-dps",
+  "date": "2026-10-05",
+  "commit": "b0f0df3",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "_reference/data/raidsim/apls/hunter/melee-dps.base.apl.json",
+  "start": "_reference/data/raidsim/apls/hunter/melee-dps.apl.json",
+  "builds": [
+   {
+    "label": "open winner",
+    "talents": "50230005001-005005001-5002302300500211"
+   },
+   {
+    "label": "survival-raid",
+    "talents": "5-005055001-50023023005022213"
+   },
+   {
+    "label": "melee-survival-raid",
+    "talents": "5-005005001-050230230250222151"
+   },
+   {
+    "label": "opt-melee-dps-raid-dps",
+    "talents": "5-005045001-500250030050220151"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "insert before the filler: cast Wing Clip",
+    "gain_seed1": 0.07489209272199515,
+    "gain_seed2": 0.07397006786231675,
+    "candidates": 116,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "spell probe: insert at the top: if auraIsInactive: cast Summon Hawk",
+    "gain_seed1": 0.1431,
+    "gain_seed2": 0.1432,
+    "candidates": 36,
+    "pass": 2
+   },
+   {
+    "round": 3,
+    "change": "insert in the middle: cast Major Mana Potion",
+    "gain_seed1": 0.0052153705546074125,
+    "gain_seed2": 0.004141181850107811,
+    "candidates": 274,
+    "pass": 3
+   },
+   {
+    "round": 4,
+    "change": "move to the top: cast Immolation Trap",
+    "gain_seed1": 0.0036951812214256474,
+    "gain_seed2": 0.005241960681592328,
+    "candidates": 281,
+    "pass": 3
+   },
+   {
+    "round": 5,
+    "change": "move to the top: cast Raptor Strike",
+    "gain_seed1": 0.0030192600915179835,
+    "gain_seed2": 0.0030927060542240703,
+    "candidates": 281,
+    "pass": 3
+   },
+   {
+    "round": 6,
+    "change": "move down below 'cast Strider Kick': cast Major Mana Potion",
+    "gain_seed1": 0.002210076667687133,
+    "gain_seed2": 0.0037165661267857253,
+    "candidates": 281,
+    "pass": 4
+   },
+   {
+    "round": 7,
+    "change": "move to the top: cast Mongoose Bite",
+    "gain_seed1": 0.003308750110145864,
+    "gain_seed2": 0.0016804080342853744,
+    "candidates": 281,
+    "pass": 4
+   },
+   {
+    "round": 8,
+    "change": "move to the top: cast Aspect of the Beast",
+    "gain_seed1": 0.0010039933538319445,
+    "gain_seed2": 0.0019679500125477922,
+    "candidates": 281,
+    "pass": 4
+   },
+   {
+    "round": 9,
+    "change": "move to the top: if auraIsInactive: cast Summon Hawk",
+    "gain_seed1": 0.0030210998474804462,
+    "gain_seed2": 0.003040972030365241,
+    "candidates": 281,
+    "pass": 7
+   }
+  ],
+  "final": {
+   "dummy": {
+    "open winner": {
+     "before": 297.9293555187521,
+     "after": 363.1678035885086,
+     "base": 297.9293555187521,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 126.30079238267574,
+     "oom_after": 126.30079238267574
+    },
+    "survival-raid": {
+     "before": 313.46049124244075,
+     "after": 445.36695293151917,
+     "base": 313.46049124244075,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 8.948387912346597,
+     "oom_after": 8.948387912346597
+    },
+    "melee-survival-raid": {
+     "before": 319.48504780203,
+     "after": 423.43966855012604,
+     "base": 319.48504780203,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 44.0139784686227,
+     "oom_after": 44.0139784686227
+    },
+    "opt-melee-dps-raid-dps": {
+     "before": 319.4210131720093,
+     "after": 425.5264962765919,
+     "base": 319.4210131720093,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 7.783218451007452,
+     "oom_after": 7.783218451007452
+    }
+   }
+  },
+  "first_date": "2026-09-29",
+  "passes": 8
+ },
+ "raid": {
+  "class": "hunter",
+  "spec": "melee-dps",
+  "date": "2026-11-10",
+  "commit": "16e85426c",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "_reference/data/raidsim/apls/hunter/melee-dps.base.apl.json",
+  "start": "_reference/data/raidsim/apls/hunter/melee-dps-raid.apl.json",
+  "builds": [
+   {
+    "label": "melee-survival-raid",
+    "talents": "5-005005001-500230230250222151"
+   },
+   {
+    "label": "sim preset: SV Melee",
+    "talents": "53200005001-005005-5302002300500221"
+   },
+   {
+    "label": "opt-melee-dps-raid-dps",
+    "talents": "5-005045001-500250030050220151",
+    "protect_only": true
+   },
+   {
+    "label": "survival-raid",
+    "talents": "5-005055001-50023023005022213",
+    "protect_only": true
+   },
+   {
+    "label": "survival-ml-parse",
+    "talents": "5-005035001-050230230150022151",
+    "protect_only": true
+   }
+  ],
+  "tuned_on": [
+   "melee-survival-raid",
+   "sim preset: SV Melee"
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "insert before the filler: cast Wing Clip",
+    "gain_seed1": 0.107595254925412,
+    "gain_seed2": 0.10286844312328203,
+    "candidates": 116,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "spell probe: insert in the middle: if auraIsInactive: cast Summon Hawk",
+    "gain_seed1": 0.1521,
+    "gain_seed2": 0.1502,
+    "candidates": 36,
+    "pass": 2
+   },
+   {
+    "round": 3,
+    "change": "move down below 'cast Strider Kick': if auraIsInactive: cast Summon Hawk",
+    "gain_seed1": 0.0044426729485642635,
+    "gain_seed2": 0.0028395108705900896,
+    "candidates": 294,
+    "pass": 10
+   },
+   {
+    "round": 4,
+    "change": "move to the top: cast Raptor Strike",
+    "gain_seed1": 0.0019076179115793401,
+    "gain_seed2": 0.002651723143618945,
+    "candidates": 294,
+    "pass": 10
+   },
+   {
+    "round": 5,
+    "change": "move to the top: cast Explosive Trap",
+    "gain_seed1": 0.005206394442938356,
+    "gain_seed2": 0.006147072592055158,
+    "candidates": 319,
+    "pass": 12
+   },
+   {
+    "round": 6,
+    "change": "only above 60% mana: cast Explosive Trap",
+    "gain_seed1": 0.00152004119060134,
+    "gain_seed2": 0.0019685851049335845,
+    "candidates": 271,
+    "pass": 13
+   },
+   {
+    "round": 7,
+    "change": "only with 20s or more of the fight left: if mana % \u2265 60%: cast Explosive Trap",
+    "gain_seed1": 0.0016552312889654974,
+    "gain_seed2": 0.001713550461067026,
+    "candidates": 278,
+    "pass": 14
+   }
+  ],
+  "final": {
+   "raid": {
+    "melee-survival-raid": {
+     "before": 497.15447721739923,
+     "after": 752.3571630783781,
+     "base": 497.15447721739923,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: SV Melee": {
+     "before": 381.41094342520705,
+     "after": 622.921104968059,
+     "base": 381.41094342520705,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.011027553504350002,
+     "oom_after": 0.011027553504350002
+    },
+    "opt-melee-dps-raid-dps": {
+     "before": 497.15447721739923,
+     "after": 702.6155559962522,
+     "base": 497.15447721739923,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "survival-raid": {
+     "before": 467.260021045936,
+     "after": 704.9372509466895,
+     "base": 467.260021045936,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "survival-ml-parse": {
+     "before": 473.99951128522355,
+     "after": 713.5428011694227,
+     "base": 473.99951128522355,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  },
+  "signature": {
+   "specs": [
+    "Hybrid Beast Mastery/Survival",
+    "Survival"
+   ],
+   "required": [],
+   "rejected": {
+    "structure": 0,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
+  "first_date": "2026-09-29",
+  "passes": 17
+ },
+ "copied_from": "melee-dps-rotation-search.json, 2026-11-20: survival-pet-raid took melee-dps's rotations (its own option set: a Raptor out)"
+}
