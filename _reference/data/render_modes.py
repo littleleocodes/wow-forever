@@ -1614,6 +1614,31 @@ def raid_pending(cls):
         return {}
 
 
+_PLAY = {}
+
+
+def play_checking(cls):
+    """{build: [failures]} of the class's builds a page may show whose current play check failed (raidsim/play-check.json through
+    run.play_check_fails: a record of the entry as it is now). Their raid page says "being checked" (2026-11-20, the user's decision
+    on the audit session's recommendations: no build a page shows may fail the play check)."""
+    if cls not in _PLAY:
+        try:
+            import argparse
+            if str(HERE / "raidsim") not in sys.path:
+                sys.path.insert(0, str(HERE / "raidsim"))
+            import run as RUN
+            RUN.set_game("forever")
+            repo = RUN.repo_path(argparse.Namespace(repo=None))
+            out = {}
+            for fails in RUN.play_check_fails(cls, repo).values():
+                for b, f in fails.items():
+                    out.setdefault(b, []).extend(f)
+            _PLAY[cls] = out
+        except Exception:   # noqa: BLE001  (no simulator checkout here: no notice, the push gate still holds)
+            _PLAY[cls] = {}
+    return _PLAY[cls]
+
+
 def page_list(B):
     """The builds a player page may show: all but those marked `player_page: false` (2026-11-20, the play check's rule for alternatives,
     the audit session's ruling: a build that fails the check and trails its page's pick by far, or keeps a dead point with no legal home,
@@ -1649,6 +1674,12 @@ def class_pages(cls):
             if mode == "raid" and spec in raid_pending(cls):
                 o += [f"> **Raid search still running:** {raid_pending(cls)[spec]} The build and numbers on this page will change when it "
                       "ends.", ""]
+            checking = [b for b in g[spec][mode] if b["id"] in play_checking(cls)] if mode == "raid" else []
+            if checking:
+                first = play_checking(cls)[checking[0]["id"]][0].split(": ", 1)[-1]
+                o += [f"> **Being checked:** the play check (what each build presses, and what does nothing) found a problem in "
+                      f"{', '.join(rs.display_name(cls, b) for b in checking)} ({first}). The builds and numbers on this page may change "
+                      "when it is fixed.", ""]
             if (cls, spec) in SM.HYBRID_NAMES:
                 o += [f"*{SM.hybrid_line(cls, spec, mode)}* (a hybrid: {spec.split(' ', 1)[1]}).", ""]   # a line per mode (2026-10-15, audit C5)
             if spec in rec[mode]:

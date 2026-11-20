@@ -857,6 +857,43 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
     sends upstream's 100 with every setting (Arcane -1.1%, Shadow -0.7%, Wrack -0.5%; their rotations re-tuned at 100).
   Kept and measured: reaction time 200 ms, starting rage 0, the hunter's 1.2 s cat, the Imp as the Destruction sacrifice (Forever swaps
   Classic's aspects: the Imp +15% Shadow; the Succubus -6 to -10%), our distances (frost-raid at 10 yards for Cone of Cold).
+- **The play check** (2026-11-20; the user on the audit session's recommendations after D11, the converted official hunter rotations
+  never casting Hunter's Mark: "Go with your recommendations", and first-hand "Go with your recommendation, they probably should?"). We
+  had judged builds by a DPS number two seeds reproduce; nobody read what they pressed, and drops were silent. Standing rules:
+  1. **No page push** until every raid pick has passed the play check and the audit session has read its cast list. Commits of code and
+     records are not affected; only the page regen and its push.
+  2. **Permanent and fatal**: `raidsim/play_check.py [classes] [--entry E] --write` -> `raidsim/play-check.json`, for every build a page
+     may show, on the entry's committed raid rotation in a full raid (3,000 fights, seed 1, compared to the cent; removal runs first):
+     - a. rotation spells never cast, each with its reason: talent not taken; used but booked under another id (its removal changes the
+       result: Swift Judgement); cast by another build of the entry; the entry's starting stance; a class option (useBattleShout); a
+       creature type (Exorcism); a switch held false (Multi-Shot); condition never held; racial. A FAIL: a class spell on an
+       unconditional line never cast; an id that is neither a spell of the class nor a racial (Lava Burst and Frost Blast, gone from the
+       game, and Diamond Flask's spell cast as a spell sat in our rotations until this date); a raid debuff the class turns off for its
+       own cast (hunter.go: Hunter's Mark; warlock.go: the assigned curse) that the rotation never casts.
+     - b. talent abilities never cast: the reasons of (a), unused-abilities.json's kinds, a prerequisite, a parry or block trigger, a
+       defensive (Ice Block), a raid utility tag (Silence, Feral Charge); else a FAIL.
+     - c. talents whose removal changes nothing: a gate (tier points or a prerequisite), a recorded filler, an ability (b) accepts, a raid
+       utility tag, or the raid buff itself (Leader of the Pack: the full raid already holds it); else a FAIL (a dead point).
+     - d. the raid buffs and debuffs the role should feel, switched off with their category partners (Expose and Sunder Armor, Faerie
+       Fire and Recklessness, Leader of the Pack and Moonkin Aura): a FAIL when nothing changes, except what the class or the build
+       supplies itself (a talent: Trueshot Aura; a cast: its own totem, shout, sunder, Seal of the Crusader).
+     - e. a class-book cast the simulator does not register (apl_validate's unknown_cast, fatal for a converted rotation under
+       apls/<class>/upstream/), and a converted official rotation that differs from a fresh conversion of upstream's file.
+     A failure for a build a page may show: `run.py --all` skips the entry while the record is current (run.play_fingerprint:
+     rotations, gear, talents, switches; `--ignore-play-check` overrides), and its raid page says "Being checked"
+     (render_modes.play_checking).
+  3. **Failing alternatives**: through the exact filler pass (deep-runs/credited_fillers_1120.py --extra: a point moves only at
+     bit-identical damage in a full raid and on the dummy, into a more useful legal talent). One that still fails and trails its page's
+     pick by more than 5% leaves the player pages (`player_page: false` with `player_page_why`; render_modes.page_list; research keeps
+     it): seven old builds on 2026-11-20.
+  4. **Leveling next** (to build): the fight lab's play check (a spell the steps name that the lab never presses, a talent worth exactly
+     zero at every level, a rules veto that removes a signature spell); level_guides --check's zero-cast warnings become errors.
+  The day's findings behind it: siml_upstream_race.py had swapped Hunter's Mark's cast along with its aura (PATCH_AURAS moves aura
+  references only); the raid's hunters_mark is off for any hunter by upstream's design, so every hunter rotation carries the two mark
+  lines (deep-runs/mark_lines_1120.py); the raid utility tags (utility_tags.py, the filler audit's order and the scorer's raid
+  tie-break) read Forever's pushback wording ("to not lose casting time"), take avoidance and damage returned to an attacker as nothing
+  for a damage dealer, rank resistance to fear, stun, disorient, charm and silence ("control") after survival, read "mana awarded",
+  "gain mana" and "mana spring" as mana, and a friendly effect's area (Booming Voice) as range (search-improvements 0z).
 - The bench registers the configured potion and conjured item (2026-09-28): the simulator builds their cooldowns only from the lists
   its UI sends (`potions`, `conjuredItems`), which our configs never filled, so until then no run used a potion, a Demonic Rune or
   Thistle Tea (hunter dummy DPS +8%, warlock +3-4%, Enhancement +4%, combat rogue +2-3%). Raid numbers before that date lack them.

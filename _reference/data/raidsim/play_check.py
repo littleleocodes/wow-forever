@@ -268,16 +268,9 @@ def fresh_conversion(cls, path, repo):
 
 
 def fingerprint(entry, repo, builds):
-    """The rotations' and the gear's content, the builds' talents and the simulator's switches: a record is current while it holds."""
-    h = hashlib.sha1()
-    for where in ("raid", "dummy"):
-        h.update(pathlib.Path(R.apl_path(entry, repo, where)).read_bytes())
-    gp = pathlib.Path(R.sim_path(entry["gear"]))
-    gp = gp if gp.is_absolute() else repo / entry["gear"]
-    h.update(gp.read_bytes() if gp.exists() else entry["gear"].encode())
-    h.update(json.dumps(sorted(builds.items())).encode())
-    h.update(json.dumps(R.sim_switches(repo), sort_keys=True).encode())
-    return h.hexdigest()[:16]
+    """The rotations' and the gear's content, the builds' talents and the simulator's switches: a record is current while it holds
+    (run.play_fingerprint, which run.py --all and the pages read too)."""
+    return R.play_fingerprint(entry, repo, builds)
 
 
 def same(a, b):

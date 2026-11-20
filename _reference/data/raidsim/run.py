@@ -1023,6 +1023,51 @@ def cfg_fingerprint(cfg, exe, repo, commit=None):
     return hashlib.sha1(blob.encode("utf-8")).hexdigest()[:16]
 
 
+# The play check (raidsim/play_check.py, 2026-11-20, the user: "Go with your recommendations"): its record, and when it is current
+PLAY_CHECK = HERE / "play-check.json"
+
+
+def play_fingerprint(entry, repo, builds):
+    """A play-check record is current while this holds: the entry's rotations and gear file read for their content, the builds'
+    talents ({id: talent string}) and the simulator's switches."""
+    import hashlib
+    h = hashlib.sha1()
+    for where in ("raid", "dummy"):
+        h.update(pathlib.Path(apl_path(entry, repo, where)).read_bytes())
+    gp = pathlib.Path(sim_path(entry["gear"]))
+    gp = gp if gp.is_absolute() else pathlib.Path(repo) / entry["gear"]
+    h.update(gp.read_bytes() if gp.exists() else entry["gear"].encode())
+    h.update(json.dumps(sorted(builds.items())).encode())
+    h.update(json.dumps(sim_switches(repo), sort_keys=True).encode())
+    return h.hexdigest()[:16]
+
+
+def play_check_fails(cls, repo):
+    """{entry: {build: [failures]}} of the class's raid entries whose play check failed on the entry as it is now (the record's
+    fingerprint current), for builds a page may show (not `player_page: false`). A stale record (something changed since) is no
+    failure: the entry is raced, then checked again."""
+    try:
+        rec = (json.load(open(PLAY_CHECK, encoding="utf-8")).get(cls) or {}) if PLAY_CHECK.exists() else {}
+    except (OSError, ValueError):
+        return {}
+    if not rec:
+        return {}
+    data = {b["id"]: b for b in json.load(open(ROOT / cls / GAMES[GAME]["builds"], encoding="utf-8"))["builds"]}
+    trees = None
+    out = {}
+    for spec, r in rec.items():
+        entry = (SPECS.get(cls) or {}).get(spec)
+        fails = {b: f["fail"] for b, f in (r.get("builds") or {}).items()
+                 if f.get("fail") and b in data and data[b].get("player_page", True) is not False}
+        if not entry or not fails:
+            continue
+        trees = trees or load_trees(repo, cls)
+        strings = {b: talents_string(trees, alloc_of(data[b])) for b in entry.get("builds", []) if b in data}
+        if r.get("fingerprint") == play_fingerprint(entry, repo, strings):
+            out[spec] = fails
+    return out
+
+
 def git_commit(repo):
     try:
         return subprocess.run(["git", "-C", str(repo), "rev-parse", "--short", "HEAD"], capture_output=True, text=True).stdout.strip()
@@ -1108,6 +1153,7 @@ def main():
     ap.add_argument("--env", default="raid", choices=["raid", "environments"], help="environments: the builds on the training dummies, in the raid and at the maximum")
     ap.add_argument("--setting", choices=["dummy", "raid"], help="the main runs' setting (default: the training dummy for Forever DPS specs, the raid for tanks and Classic)")
     ap.add_argument("--preset-candidates", action="store_true", help="save the simulator's presets that compete with our builds as raid candidates (write_preset_candidates) and stop")
+    ap.add_argument("--ignore-play-check", action="store_true", help="with --all: race an entry whose current play check failed")
     a = ap.parse_args()
     set_game(a.game)
     global SETTING_OVERRIDE
@@ -1124,7 +1170,12 @@ def main():
         for cls, specs in SPECS.items():
             if cls.startswith("_"):
                 continue
+            blocked = {} if a.ignore_play_check or GAME != "forever" else play_check_fails(cls, repo)
             for spec in specs:
+                if spec in blocked:   # the play check failed on the entry as it is: fix it first (2026-11-20, the user's decision)
+                    print(f"{cls} {spec}: skipped, the play check failed for {', '.join(blocked[spec])} on the entry as it is "
+                          "(raidsim/play-check.json; --ignore-play-check races it anyway)", flush=True)
+                    continue
                 runner(cls, spec, a, repo)
     else:
         if not a.cls or not a.spec:
