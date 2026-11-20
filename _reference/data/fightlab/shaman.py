@@ -205,8 +205,8 @@ MECHANICS = {
     "Elemental Devastation": "direct damage spell crits (client 70425; was any spell crit): +3%/rank melee crit for 10 s",
     "Elemental Focus": "10% chance after any Fire, Frost or Nature damage spell cast, hit or miss: Clearcasting, the next damage spell is free",
     "Elemental Alacrity": "-0.17 s/rank Lightning Bolt and Chain Lightning cast (0.50 s at 3/3)",
-    "Trial by Fire": "+10%/rank Fire Nova damage, -2 s/rank cooldown, +10 s/rank Magma Totem (client 70425's Improved Fire Nova; pulls of several mobs: "
-                     "single targets never use Fire Nova or Magma Totem)",
+    "Trial by Fire": "+10%/rank Fire Nova damage, -2 s/rank cooldown, +10 s/rank Magma Totem (client 70425's Improved Fire Nova; pulls of several mobs, and "
+                     "single targets as the FIRE_NOVA_SINGLE knob allows since 2026-11-20: Fire Nova while a Fire totem stands, never Magma Totem)",
     "Eye of the Storm": "a 23%/rank chance to ignore a pushback on Lightning Bolt and Chain Lightning (tooltip: 70% at 3/3)",
     "Elemental Reach": "+3 yd/rank Lightning Bolt (longer pulls); its Chain Lightning and Fire Nova range is not used",
     "Call of Thunder": "+5% crit for Lightning Bolt and Chain Lightning (70753: back in Lava Burst's cell)",
@@ -321,7 +321,13 @@ class ShamanModule(BaseModule):
     IMBUE_TOP_FROM = 50
     CL_SINGLE = 0          # Elemental: Chain Lightning on a single mob (0 never, 1 under Lightning Mastery, 2 whenever ready)
     CL_SINGLE_MANA = 0.5   # ... only above this share of the mana
+    # Fire Nova on a single mob (2026-11-20, the independent audit's H4: "single targets never use Fire Nova" was hard-coded, while the raid
+    # Enhancement build casts it 21 times a fight for 8% of its damage): 0 never (the lab before, bit-identical), 1 after the shocks while
+    # a Fire totem stands and the mob is within its 10 yards, above FIRE_NOVA_MANA of the mana
+    FIRE_NOVA_SINGLE = 0
+    FIRE_NOVA_MANA = 0.3
     ROTATION_KNOBS = {"CL_SINGLE": [0, 1, 2], "CL_SINGLE_MANA": [0.0, 0.3, 0.5, 0.7],   # tuned by rotation_opt.py ("knobs" in rotations/shaman-<spec>.json)
+                      "FIRE_NOVA_SINGLE": [0, 1], "FIRE_NOVA_MANA": [0.1, 0.3, 0.5],
                       "IMBUE_EARLY": ["rockbiter", "flametongue", "frostbrand"], "IMBUE_LATE": ["windfury", "rockbiter", "flametongue", "frostbrand"],
                       "IMBUE_TOP": ["windfury", "rockbiter", "flametongue", "frostbrand"], "IMBUE_TOP_FROM": [40, 50, 54]}
 
@@ -475,6 +481,18 @@ class ShamanModule(BaseModule):
     def fire_totem_up(self, t):
         ft = self.fire_totem
         return ft["name"] if ft and ft["until"] > t else None
+
+    def fire_nova_single(self, fight, can):
+        """Fire Nova on a single mob as FIRE_NOVA_SINGLE allows (H4): a Fire totem up (its 10 yards reach the mob beside you), the mob
+        in reach, mana above FIRE_NOVA_MANA, and more health left than half a hit."""
+        if not self.FIRE_NOVA_SINGLE:
+            return None
+        p, m, t = fight.p, fight.m, fight.t
+        fn = self.spells.get("Fire Nova")
+        if (fn is not None and can(fn) and self.fire_totem_up(t) is not None and m.dist <= 10.0
+                and p.mana > self.FIRE_NOVA_MANA * p.mana_max and m.hp > fn.dmg_min * 0.5):
+            return fn
+        return None
 
     def final_cost(self, fight, spell, cost):
         if fight.p.buff("Clearcasting", fight.t) and spell.dmg_max > 0:
@@ -842,6 +860,9 @@ class ShamanModule(BaseModule):
             return fs
         if es and can(es) and hp > es.dmg_min * 0.5:
             return es
+        fn = self.fire_nova_single(fight, can)
+        if fn is not None:
+            return fn
         if lb and can(lb) and p.mana - self.mana_cost(lb) >= reserve and hp > avg_lb * 0.6:
             return lb
         return None
@@ -889,6 +910,9 @@ class ShamanModule(BaseModule):
             return ss
         if es and can(es) and hp > es.dmg_min * 0.5:
             return es
+        fn = self.fire_nova_single(fight, can)
+        if fn is not None:
+            return fn
         if fs and can(fs) and not fight.dot_active("Flame Shock") and p.mana > 0.55 * p.mana_max and hp > 0.4 * m.hp_max:
             return fs
         return None

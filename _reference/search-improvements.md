@@ -161,6 +161,14 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 ## Open ideas, ranked by what they could still find
 
+0r. **Single-target Fire Nova in the fight lab (2026-11-20, the independent audit's H4; the optimality pass's mechanics, done early)**.
+    "single targets never use Fire Nova" was hard-coded in fightlab/shaman.py. It is a rules knob now (`FIRE_NOVA_SINGLE` 0/1 with
+    `FIRE_NOVA_MANA`, in duel.PVE_KNOBS; 0 is the lab before, bit-identical): Fire Nova after the shocks while a Fire totem stands and
+    the mob is within its 10 yards. Measured on both leveling picks (400 fights x seeds 1 and 2, levels 20-60, the saved rules): slower
+    at every mana gate, Enhancement +1.8% to +3.5% time per kill, Elemental +2.9% to +3.7% (most at 40-60: its 520 mana per cast becomes
+    drinking). The knob stays off; the next rules tune may still take it. Trial by Fire stays nearly blind on single pulls: the lab
+    measures it as a choice now, not as an omission.
+
 0q. **gear_tiers.make chose sets of level-29/30 items (2026-11-20; cause found and fixed the same day)**. Twice that morning, both
     through pick_tiers.py: its first Frost Med run at 10:34 wrote mage-frost-bis (528.9 DPS in a full raid against 795 in the entry's
     gear) and then failed on its race, and its first Arcane-Frost run at 10:37 wrote the hybrid's two sets (average required level 29.4

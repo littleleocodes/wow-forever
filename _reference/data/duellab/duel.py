@@ -72,7 +72,7 @@ KEEPS_STEALTH = {"Stealth", "Prowl", "Sap", "Distract", "Pick Pocket", "Vanish",
 # imbue is the duel lab's own. 2026-11-16: the paladin's gear row and seal (CASTER_GEAR_FROM, SOR_FROM: a duel keeps the Holy path's
 # caster gear and Seal of Command, as before).
 PVE_KNOBS = ("IMP_FROM", "MAGE_ARMOR", "POISONS", "IMBUE_EARLY", "IMBUE_LATE", "IMBUE_TOP", "IMBUE_TOP_FROM", "CASTER_GEAR_FROM", "SOR_FROM",
-             "EVO_BELOW", "REST_TOGETHER")
+             "EVO_BELOW", "REST_TOGETHER", "FIRE_NOVA_SINGLE", "FIRE_NOVA_MANA")   # (2026-11-20: the shaman's single-target Fire Nova, H4)
 _GEAR = {"tier": None}
 _RESTORE = {}
 
