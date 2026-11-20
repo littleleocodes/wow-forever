@@ -299,6 +299,14 @@ def steps_html(C, lv):
             items.append(todo(f"talent{lv}", "Spend your talent point", path))
         else:
             items.append(info("Next talents", path))
+        rv = tal.get("respec_value")   # a respec to the page's order (2026-11-20, respec_value.py): the trainer step says whether it pays
+        if rv:
+            import respec_value as RV
+            t = RV.text(rv, lv)
+            if t and rv.get("pays"):
+                items.append(todo(f"respecv{lv}", "A respec pays", esc(t.replace("**A respec pays:** ", ""))))
+            elif t:
+                items.append(info("Respec?", esc(t)))
     steps.append(("Class trainer", "Train", items))
 
     # 7. pick up quests before you leave (without a RestedXP route on this PC; with one, the road list below says when)
