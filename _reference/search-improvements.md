@@ -178,9 +178,11 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
     the same cause through another caller: deep-runs/gear_fix_1119.py loaded the database with the plain `gear_opt.load_db` (and never
     called load_vetted), then ran gear_tiers.make, whose private copy had neither. Every standing caller loads the database through the
     copy whose picker it uses (ml_pipeline, deep_opt, dungeon_tier, family_search, tank_gear, weight_errors, page_stat_weights;
-    pawn_raid_compare supplies its own values and the tier copy's pool). Open for the optimality pass's first step (the audit session):
-    one shared gear_opt module for every copy (registered under one name, or passed in), so the stops are a backstop and not the
-    mechanism. The 105 tier sets on disk:
+    pawn_raid_compare supplies its own values and the tier copy's pool). The trap itself is gone since the same day (the audit
+    session's first step of the optimality pass, done early): gear_tiers.py reuses the gear_opt module registered under that name, or
+    registers its own, so every copy of gear_tiers (ml_pipeline's, family_search's, tank_gear's, heal_gear's) shares one stat map and one
+    vetted list, and its pre-raid vetted list lives on that module too (the replay's broken path then gives item level 63.0); the stops
+    in gear_opt.value, in_pool and the pre-raid pool are the backstop. The 105 tier sets on disk:
     mean item level 59.3 or more, none affected. The stopped ML Arcane-Frost run's 246-258 DPS on the dummy at 10:05 is not this (its
     path replays clean): the hybrid's builds under the Frost entry's rotation (0o).
 

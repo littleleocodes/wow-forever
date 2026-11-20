@@ -45,9 +45,18 @@ sys.path[:0] = [str(ROOT / "_reference/data"), str(HERE)]
 import paths  # noqa: E402
 import spec_modes as SM  # noqa: E402
 
-_s = importlib.util.spec_from_file_location("gear_opt", HERE / "gear_opt.py")
-G = importlib.util.module_from_spec(_s)
-_s.loader.exec_module(G)
+# One gear_opt for every copy of this module (2026-11-20, search-improvements 0q): each copy had loaded its own, with its own item stat
+# map and vetted items, and a copy whose database was loaded through another valued every item at 0 (Frost Med's level-30 set). The
+# module registered as "gear_opt" is reused when it is this file; else this one is loaded and registered (when the name is free).
+_G = sys.modules.get("gear_opt")
+if _G is not None and getattr(_G, "__file__", None) and pathlib.Path(_G.__file__).resolve() == (HERE / "gear_opt.py").resolve():
+    G = _G
+else:
+    _s = importlib.util.spec_from_file_location("gear_opt", HERE / "gear_opt.py")
+    G = importlib.util.module_from_spec(_s)
+    if _G is None:
+        sys.modules["gear_opt"] = G
+    _s.loader.exec_module(G)
 R = G.R
 SETS = HERE / "gear_sets" / "forever" / "tiers"
 TIERS = ("prebis", "bis")
@@ -65,7 +74,8 @@ RAID_QUEST = G.RAID_QUEST
 LATER_PREFIXES = G.LATER_PREFIXES   # gear_opt.py's list (its pool excludes them too since 2026-10-01)
 # - any other crafted item of item level 65 or more is a later-phase recipe unless a community preset of the tier uses it.
 CRAFTED_MAX_ILVL = 64
-VETTED_PRE = set()   # item ids in the simulator's launch and pre-raid presets (every class)
+VETTED_PRE = G.__dict__.setdefault("TIERS_VETTED_PRE", set())   # item ids in the simulator's launch and pre-raid presets (every class),
+# kept on the shared gear_opt module so every copy of this file reads the same set (2026-11-20, 0q)
 PRE_NAMES = ("launch", "p0", "prebis", "preraid", "pre-bis", "pre_raid")
 # Tier 0.5 (Dungeon Set 2, Season of Discovery's reissue; _reference/tier-0.5-research.md, 2026-11-18): a long gold and group project
 # (a level-58 chain that consumes the Tier 0 pieces, 10-player Upper Blackrock Spire, the vendors' gold) whose set bonuses players
@@ -193,6 +203,8 @@ def pool_of(tier, zones, repo=None):
             return False
         if not srcs:
             so = it.get("scalingOptions", {}).get("0", {})
+            if not VETTED_PRE:   # 2026-11-20 (0q): an empty list shut every launch item out of the pre-raid pools without a word
+                raise SystemExit("gear_tiers.VETTED_PRE is empty: load the database through gear_tiers.load_db first")
             return it["id"] in VETTED_PRE and so.get("ilvl", 0) <= G.SOURCELESS_MAX_ILVL
         return True
     return {"bis": bis, "dungeon": dungeon}.get(tier, prebis)
