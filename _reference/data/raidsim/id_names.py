@@ -25,7 +25,8 @@ ROOT = HERE.parents[2]
 OUT = HERE / "id-names.json"
 # ids the client table lacks: the simulator's own (Missile Barrage's aura), our patch's (Quick Strikes, patches/forever) and
 # Classic ids a simulator rotation still names
-MANUAL = {"spells": {"44404": "Missile Barrage", "1299448": "Quick Strikes (Deadly Aspects)", "9846": "Tiger's Fury", "26297": "Berserking"},
+MANUAL = {"spells": {"44404": "Missile Barrage", "1299448": "Quick Strikes (Deadly Aspects)", "9846": "Tiger's Fury", "26297": "Berserking",
+                     "12579": "Winter's Chill"},   # (2026-11-20: the official Frost list stacks the target's Winter's Chill, aura 12579)
           "items": {}}
 sys.path.insert(0, str(HERE))
 import setup as SETUP  # noqa: E402  (raidsim/setup.py: the simulator checkout)

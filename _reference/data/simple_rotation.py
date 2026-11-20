@@ -160,6 +160,11 @@ def _clause(c, spell, ok):
         if any(g and g[0] == "named" for g in got):
             return ("named", "")
         return None
+    # "Cold Snap while Cone of Cold is at least 7 seconds from ready" (2026-11-20: the official simulator's Frost list; the page read a bare
+    # "Cold Snap", since DROP takes every "time until ... is ready ≥" clause)
+    m = re.match(r"time until (.+?) is ready ≥ ([\d.]+)s?$", c)
+    if m and float(m.group(2)) >= 1:
+        return ("when", f"**{m.group(1)}** is at least {_n(m.group(2))} second{"s" if float(m.group(2)) != 1 else ""} from ready")
     if DROP.search(c):
         return None
     m = re.fullmatch(r"(not )?“(.+?)”", c.strip())   # a named condition of the official simulator's rotations (2026-11-11:
@@ -178,6 +183,8 @@ def _clause(c, spell, ok):
     m = re.match(r"time left in the fight (≥|>) ([\d.]+)s?$", c)
     if m:
         return ("until", float(m.group(2))) if float(m.group(2)) >= 10 else None
+    if re.fullmatch(r"time left in the fight (?:>|≥) “.+?”", c):   # a named fight-time threshold (2026-11-20: the official Destruction
+        return ("named", c.split("“", 1)[1].rstrip("”"))             # list's Bane of Doom while its "Doom tick" can still land)
     if c.startswith("time left in the fight"):
         return None
     m = re.match(r"mana ≥ \(time left in the fight × [\d.]+\)$", c)
@@ -230,7 +237,7 @@ def _clause(c, spell, ok):
             return ("when", f"the target has fewer than {n} stacks of {name}")   # a debuff the spell builds (Scorch's Fire Vulnerability)
         n = _count(op, x)
         if op == "=":
-            return ("when", f"{name} has {n} stacks")
+            return ("when", f"{name} has {n} stack{'s' if n != 1 else ''}")
         return ("when", f"{name} has {n} or more stacks")
     m = re.match(r"execute phase \(E(\d+)\)$", c)
     if m:
@@ -370,9 +377,11 @@ def _parse(cls, t):
         return None
     if sp in EMERGENCY:   # the Advanced list says when (advanced())
         return None
-    nt = re.search(r"number of targets (≥|>) ([\d.]+)", cond or "")
-    if nt and _count(nt.group(1), nt.group(2)) >= 2:   # a line for packs: the pages' list is one target (2026-11-08 full page read S4:
-        return None                                     # Magma Totem beside Searing Totem in one fire totem slot)
+    # a line for packs: the pages' list is one target (2026-11-08 full page read S4: Magma Totem beside Searing Totem in one fire totem
+    # slot). Only a required part counts (2026-11-20: Elemental's Chain Lightning, "(2+ targets or mana to spare)", had been dropped)
+    nts = [re.fullmatch(r"number of targets (≥|>) ([\d.]+)", _unwrap(p).strip()) for p in (_cond_parts(cond) if cond else [])]
+    if any(nt and _count(nt.group(1), nt.group(2)) >= 2 for nt in nts):
+        return None
     if swing and sp.startswith("Seal of"):   # seal twisting (a second seal timed to the swing): the Advanced list explains it
         return None
     if sp.startswith("Seal of") and cond:
@@ -396,6 +405,10 @@ def _parse(cls, t):
     if fl and float(fl.group(1)) <= 10 and cooldowns(cls).get(sp) is False:
         FLOOR[0] = (sp, float(fl.group(1)))   # an always-ready spell cast until the last seconds: what follows is end-of-fight play
         return ([sp], f"**{sp}**", swing)
+    # a spell cast only when the filler's cast would not land before the fight ends (2026-11-20: the official Destruction list's Searing
+    # Pain, "(cast time of Incinerate + spellTravelTime) > time left in the fight", had read as a plain line above Incinerate)
+    if re.fullmatch(r"\(?cast time of .+?(?: \+ spellTravelTime)?\)? (?:>|≥) time left in the fight", whole):
+        return ([sp], "LATE:3", swing)
     lm = re.fullmatch(r"time left in the fight (?:≤|<) ([\d.]+)s?", whole)
     if lm:
         left = float(lm.group(1))
@@ -491,13 +504,34 @@ def simplify(cls, texts, late=None, extras=None):
             k, n = _cp_key(txt)
             if n is not None and any(_cp_key(p)[0] == k and (_cp_key(p)[1] or 0) <= n for p in prev):
                 continue   # a stricter copy (Eviscerate at 5 combo points below Eviscerate at 4 or more)
-        if len(out) < LIMIT:
-            out.append(txt)
-            for s in sp:
-                shown.setdefault(s, []).append(txt)
-            if len(sp) == 1 and txt in (f"**{sp[0]}**", f"**{sp[0]}** {REACTIVE.get(sp[0], '')}".strip()):
-                done.add(sp[0])
-            closed = floor
+        out.append(txt)   # the 8-line limit is applied below, after the dot lines are merged (2026-11-20)
+        for s in sp:
+            shown.setdefault(s, []).append(txt)
+        if len(sp) == 1 and txt in (f"**{sp[0]}**", f"**{sp[0]}** {REACTIVE.get(sp[0], '')}".strip()):
+            done.add(sp[0])
+        closed = floor
+    # dots kept on the target, one line (2026-11-20: with the official simulator's groups expanded, Destruction listed Bane of Agony,
+    # Immolate and Corruption on three lines and its filler fell past the limit): consecutive plain "keep it on the target" lines merge
+    merged = []
+    for txt in out:
+        m = re.fullmatch(r"(\*\*.+?\*\*): keep it on the target", txt)
+        pm = re.fullmatch(r"(.+?): keep (?:it|them) on the target", merged[-1]) if merged else None
+        if m and pm and ": keep" in merged[-1] and not re.search(r" when |, until ", merged[-1]):
+            names = re.findall(r"\*\*.+?\*\*", pm.group(1)) + [m.group(1)]
+            merged[-1] = (", ".join(names[:-1]) + " and " + names[-1]) + ": keep them on the target"
+        else:
+            merged.append(txt)
+    out = merged
+    # the filler always ends the list: the last line of an always-ready damage spell with no condition (never a mana tool: a
+    # warlock's closing Life Tap is the out-of-mana fallback), in place of the eighth line when the list is longer
+    fill_ln = next((txt for sp, txt, sw, fl in reversed(parsed)
+                    if len(sp) == 1 and sp[0] not in MANA_TOOLS and cooldowns(cls).get(sp[0]) is False
+                    and re.fullmatch(r"\*\*" + re.escape(sp[0]) + r"\*\*(?: \(rank \d+\))?", txt)), None)
+    if fill_ln and fill_ln not in out and not any(fill_ln[2:].split("**")[0] in done for _ in [0]):
+        out.append(fill_ln)   # dropped above as a plain fallback after a conditioned copy (Demonology's Shadow Bolt): the filler stays
+    if len(out) > LIMIT:
+        head = [x for x in out if x != fill_ln][: LIMIT - (1 if fill_ln in out else 0)]
+        out = head + ([fill_ln] if fill_ln in out else [])
     if extras is not None:
         for (a, b), w in twists.items():
             extras.append(f"**{a}**: seal twisting. While **{b}** is up" + (f" and {w}" if w else "") + f", switch to {a}; just before "

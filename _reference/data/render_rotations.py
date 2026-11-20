@@ -181,7 +181,7 @@ def spell_ids(x):
         for k, v in x.items():
             if k == "condition":
                 continue
-            if k in ("castSpell", "castFriendlySpell", "multidot", "multishield") and isinstance(v, dict):
+            if k in ("castSpell", "castFriendlySpell", "multidot", "strictMultidot", "multishield") and isinstance(v, dict):
                 sid = (v.get("spellId") or {}).get("spellId")
                 if sid:
                     ids.append(int(sid))
@@ -219,6 +219,45 @@ def named_shares(shares):
     return out
 
 
+def expand_groups(apl, depth=4):
+    """The priority list with every group reference replaced by the group's actions, each under the reference's condition and its own
+    (2026-11-20: the official simulator's rotations keep core spells in groups: Destruction's "Single Target DoT Logic" holds Corruption
+    and Bane of Agony, 17% of the build's damage, and the pages' lists had dropped every "groupReference" line). Hidden lines stay out."""
+    groups = {g.get("name"): g.get("actions") or [] for g in apl.get("groups") or []}
+    out = []
+
+    def add(item, outer, d):
+        if item.get("hide"):
+            return
+        act = item.get("action") or {}
+        both = [c for c in (outer, act.get("condition")) if c]
+        cond = {"and": {"vals": both}} if len(both) > 1 else (both[0] if both else None)
+        ref = act.get("groupReference")
+        if ref and d > 0 and ref.get("groupName") in groups:
+            for sub in groups[ref["groupName"]]:
+                add(sub, cond, d - 1)
+            return
+        a = {k: v for k, v in act.items() if k != "condition"}
+        out.append(dict(item, action=({"condition": cond} if cond else {}) | a, **({"_group": True} if d < depth else {})))
+
+    for it in apl.get("priorityList", []):
+        add(it, None, depth)
+    # a group's copy of a spell the main list casts later with no condition goes (the line's use is read from the spell's casts, so a
+    # copy under a condition that rarely holds read as used, came first, and the plain filler below it was dropped: Destruction's
+    # Incinerate "when Bane of Doom has under 15 seconds left")
+    plain_later = set()
+    keep = []
+    for it in reversed(out):
+        act = it.get("action") or {}
+        ids = tuple(sorted(spell_ids(act)))
+        if it.get("_group") and ids and ids in plain_later:
+            continue
+        if not it.get("_group") and ids and not act.get("condition"):
+            plain_later.add(ids)
+        keep.append(it)
+    return [{k: v for k, v in it.items() if k != "_group"} for it in reversed(keep)]
+
+
 @functools.lru_cache(maxsize=None)
 def spec_data(cls, spec, setting="dummy"):
     """Everything the raid pages need for one spec model: the rotation lines and, per build, its lines, casts and damage.
@@ -238,7 +277,7 @@ def spec_data(cls, spec, setting="dummy"):
     pm = presets_mod()
     lines = [{"text": pm.action(it.get("action", {}), N), "ids": spell_ids(it.get("action", {})),
               "kind": next(iter(k for k in it.get("action", {}) if k != "condition"), "")}
-             for it in apl.get("priorityList", []) if not it.get("hide")]
+             for it in expand_groups(apl)]
     pre = [(p.get("doAtValue", {}).get("const", {}).get("val"), pm.action(p.get("action", {}), N)) for p in apl.get("prepullActions") or []]
     grant = talent_of_spell(cls, entry)
     dur = float(rep["sim"].get("duration") or 120.0)

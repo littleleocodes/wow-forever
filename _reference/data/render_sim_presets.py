@@ -198,8 +198,8 @@ def action(a, N, depth=0):
         txt = f"channel {spell_ref(x.get('spellId'), N)}" + (" (interrupt it when a higher line is ready)" if x.get("interruptIf") else "")
     elif k == "castFriendlySpell":
         txt = f"cast {spell_ref(x.get('spellId'), N)} on a friendly target"
-    elif k == "multidot":
-        txt = f"keep {spell_ref(x.get('spellId'), N)} on up to {x.get('maxDots', '?')} targets" + (f" (refresh under {x.get('maxOverlap', {}).get('const', {}).get('val', '?')})" if x.get("maxOverlap") else "")
+    elif k in ("multidot", "strictMultidot"):   # strictMultidot (2026-11-20: the official SM/Ruin list keeps its dots with it): the same words
+        txt = f"keep {spell_ref(x.get('spellId'), N)} on up to {x.get('maxDots', '?')} targets" + (f" (refresh under {x.get('maxOverlap', {}).get('const', {}).get('val', '?')})" if x.get("maxOverlap", {}).get("const") else "")
     elif k == "multishield":
         txt = f"shield up to {x.get('maxShields', '?')} targets with {spell_ref(x.get('spellId'), N)}"
     elif k == "autocastOtherCooldowns":
