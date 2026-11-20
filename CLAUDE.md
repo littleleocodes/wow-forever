@@ -579,8 +579,16 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
     `LS_OFFICIAL` (the orbs can miss, cannot crit); mage `FOF_ONE_ROLL`, `ARCANE_ANY_ROTATION`, `IB_MULTIPLY`, `IB_REFRESH`,
     `FB_IL_SHARED_CD`, `SHATTER_AM`, `WC_TEXT`.
   - kept, noted: base crit (the official table is hand-kept: "No game file ships class base crit"; ours is the Forever client's) and
-    Spirit regeneration. Not in the pass, queued after the re-tunes: seal twisting (H3), Eclipse with Wrath in a raid (H5), single-target
-    Fire Nova (H4), stance and demon knobs (H7), Shieldsworn (H10), the healer lab's Oath of Light and Illumination (H11, H12).
+    Spirit regeneration. Not in the pass; done the same day as the optimality pass's mechanics (search-improvements 0r-0w), each with a
+    default that keeps the lab before (bit-identical), sized with common random numbers on seeds 1-2:
+    - rules knobs (ROTATION_KNOBS and duel.PVE_KNOBS: a rules tune may take them): shaman `FIRE_NOVA_SINGLE`/`FIRE_NOVA_MANA` (H4; slower
+      on both picks, 1.8-3.7%), warrior `BERSERKER_FROM` (H7; Arms 9-11% slower, Fury 1.2-1.6%), paladin `TWIST`/`TWIST_MANA` with
+      Unsealed Wrath modelled (H3; 4.2% faster at 60 with the talent, the Retribution search to pay for it);
+    - mechanic switches, flipped with their re-runs in the optimality pass: paladin `SHIELDSWORN_STRIKE` (H10; the Protection pick 16%
+      faster at 60) and `RECK_SEAL` (H12; 0.5%), healer lab `OATH_CRITS` (H11; noise) and `ILLUM_VIGIL` False (H12; Holy paladin capacity
+      -8.3%);
+    - raid: a guarded Wrath weave for Eclipse in both Balance rotations (H5, deep-runs/eclipse_weave_1120.py; an Eclipse build +7.2-7.5%,
+      the pick unchanged). The warlock's demon choice was measured that morning (`IMP_FROM`: the Imp 22-93% slower).
   - engine hooks: `periodic_crit` (a tick's crit chance and multiplier from the module), `tick_frozen` (Shatter on a channel's tick),
     `ranged_speed_factor` (the quiver). Then every rules file re-tuned from scratch and every record from the 20-60 race on
     (`deep-runs/fl_pass_1120.sh`).
@@ -793,7 +801,9 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
     them, deep-runs/siml_upstream_race.py), the raid page starts from that build with the simulator's own rotation (trainer ranks, our
     option rules); ours replaces it only when 0.5% ahead on two seeds and passing the spec's signature and own-rotation rules;
   - upstream parity at every re-pin (raidsim/upstream_race.py, deep-runs/warlock_upstream_race.py, siml_upstream_race.py): our
-    rotation and theirs x our builds and theirs x the option sets, full raid, entry gear, 10,000 fights, seeds 1 / 2;
+    rotation and theirs x our builds and theirs x the option sets, full raid, entry gear, 10,000 fights, seeds 1 / 2. Their rotations
+    are written for the unpatched simulator: a rank our patches move is mapped when they are converted (`PATCH_RANKS`: Hunter's Mark
+    14325 -> 14324, whose missing aura had made every upstream hunter rotation cast the mark on every global cooldown, search-improvements 0p);
   - a short check, not a multi-hour search, where the pick is a simulator build under its own rotation: the pick's one-move and
     chain-move neighbours screened in a full raid on common fights, the leaders confirmed on a second seed (raidsim/talent_opt.py
     --setting raid, two rounds), about half an hour a spec, plus the gear tiers for the pick (gear_tiers.py --set, dungeon_tier.py).
@@ -814,7 +824,9 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
   2. one point of tolerance at a floor (`FLOOR_TOL` 0.01: a 30% floor passes at 29.0%), and one verdict per build: a raid build's
      full-raid shares are judged once in their setup (build, the entry's raid rotation, options, gear) and stored
      (`raidsim/signature-verdicts.json`, render_modes.raid_sig_check), not re-judged per race; the leveling verdicts were stored already
-     (fightlab/signature_audit.py, fingerprint-dated);
+     (fightlab/signature_audit.py, fingerprint-dated). The key is the race's own config fingerprint (`raid_fp`, run.cfg_fingerprint:
+     the config as sent with its rotation and gear files' content, the bench binary, the simulator commit, the WOW_FOREVER_* switches);
+     a record without one is judged only when newer than the entry's raid rotation and gear files, else the page says "not judged";
   3. the 2% adopt and replace bars go: rebuild.py's adopt steps (fight lab, raid, healer lab: `RACE_MARGIN`), deep_heal's and
      deep_tank's `replaces` use 0.5%, like everything else;
   4. healer and tank leveling pages lead with the faster option: the class's fastest leveling damage spec and how much faster, then
@@ -915,7 +927,9 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
 - **Player rotations are simplified** (2026-09-29, user request: "just the class, no racials or item usage, noob friendly"): raid pages
   run the simulator's rotation through `simple_rotation.py` (only the class's own spells and talents; conditions in plain words; items,
   racials, trinkets, "every other cooldown", fight and swing timers, seal twisting dropped; self-buffs and totems in a "keep up all
-  fight" line; at most 8 lines; a link to the exact list). Since 2026-10-03 the lines after an always-ready filler cast only while N seconds of the fight are left are end-of-fight play,
+  fight" line; at most 8 lines, the dots kept on the target merged into one and the damage filler always last; a link to the exact
+  list). Since 2026-11-20 the official simulator's groups are inlined under their reference's condition (render_rotations.expand_groups:
+  Destruction's dots sat in a group the lists had dropped) and its strictMultidot reads like multidot. Since 2026-10-03 the lines after an always-ready filler cast only while N seconds of the fight are left are end-of-fight play,
   listed under "Advanced" (the Frost raid rotation's Fire Blast had read as the filler); "Advanced" lists only active spells of the beta
   spellbook (a passive talent's effect, Ignite, had read as a cooldown) with the build's casts in the full raid; identical pre-pull and
   keep-up lists print once. Leveling pages print the hand-kept steps in `leveling-steps.json` (per class
