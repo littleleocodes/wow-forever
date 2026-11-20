@@ -4,6 +4,7 @@ A tag read from the beta tooltip, in order of usefulness: interrupt/pushback pro
 (tanks: survival first); a talent with none ranks last. Used by raidsim/filler_audit.py to move zero-value points and by the scorer as
 a tie-break in the raid profiles (TIE_BREAK per point, far below any measured effect), so optimizer builds make the same choice.
 The simulators model no pushback, range, threat limit or (for DPS) incoming damage: the order is our judgment, not a measurement.
+Raid tags only: nothing on the leveling or PvP side reads them (there the character is hit, and dodge, parry and block are survival).
 """
 import functools
 import json
@@ -17,6 +18,10 @@ TAGS = [("interrupt", r"interrupt|pushback|casting time lost|lose (?:.* )?castin
         ("range", r"\brange\b|radius"),
         ("survival", r"stamina|armor|damage taken|resistances?|dodge|parry|block|health")]
 NONE = len(TAGS)
+# a damage dealer the boss never attacks gets nothing from avoidance (2026-11-20, the user on the simulator's Survival build: "Why is
+# Deflection taken? ... Wouldn't that be a wasted talent if your tank has agro?"): for a non-tank, dodge, parry or block alone is no
+# survival tag; health, armor, resistances, damage taken and Ice Block's protection are
+SURVIVAL_DPS = r"stamina|armor|damage taken|resistances?|health|protecting you"
 # talents whose tag is true but useless in a raid (a pet's revive or healing, crowd control, distraction): no raid usefulness
 NO_RAID = {"Improved Revive Pet", "Improved Mend Pet", "Improved Health Funnel", "Fel Domination", "Improved Distract", "Scatter Shot",
            "Nature's Focus", "Improved Sprint", "Endurance", "Camouflage", "Master of Deception", "Improved Ghost Wolf", "Pathfinding",
@@ -36,7 +41,7 @@ def usefulness(cls, tank=False):
         for t in tr["talents"]:
             ranks = t.get("ranks") or []
             txt = str(ranks[-1] if ranks else "").lower()
-            tags = [tag for tag, rx in TAGS if re.search(rx, txt)]
+            tags = [tag for tag, rx in TAGS if re.search(rx, txt) and (tank or tag != "survival" or re.search(SURVIVAL_DPS, txt))]
             out[t["name"]] = NONE if t["name"] in NO_RAID else min((order.index(g) for g in tags), default=NONE)
     return out
 
