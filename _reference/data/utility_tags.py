@@ -1,7 +1,7 @@
 """How useful a talent is in a real raid beyond what the simulators measure (2026-09-29, user question on zero-value fillers).
 
-A tag read from the beta tooltip, in order of usefulness: interrupt/pushback protection, threat reduction, mana cost, range, survival
-(tanks: survival first); a talent with none ranks last. Used by raidsim/filler_audit.py to move zero-value points and by the scorer as
+A tag read from the beta tooltip, in order of usefulness: interrupt/pushback protection, threat reduction, mana cost, range, survival,
+resistance to crowd control (tanks: survival first); a talent with none ranks last. Used by raidsim/filler_audit.py to move zero-value points and by the scorer as
 a tie-break in the raid profiles (TIE_BREAK per point, far below any measured effect), so optimizer builds make the same choice.
 The simulators model no pushback, range, threat limit or (for DPS) incoming damage: the order is our judgment, not a measurement.
 Raid tags only: nothing on the leveling or PvP side reads them (there the character is hit, and dodge, parry and block are survival).
@@ -16,7 +16,10 @@ TAGS = [("interrupt", r"interrupt|pushback|casting time lost|lose (?:.* )?castin
         ("threat", r"threat"),
         ("mana", r"mana cost|reduces the mana|restores? .*mana|mana regeneration|regenerat.* mana"),
         ("range", r"\brange\b|radius"),
-        ("survival", r"stamina|armor|damage taken|resistances?|dodge|parry|block|health")]
+        ("survival", r"stamina|armor|damage taken|resistances?|dodge|parry|block|health"),
+        # resistance to fear, stun, disorient, charm or silence (2026-11-20, the audit session): after survival, which helps on every
+        # fight, and above nothing, since a resisted fear (Onyxia, Magmadar) is damage kept
+        ("control", r"(?:duration of|resist|immune to)[^.]*?\b(?:fears?|stuns?|disorients?|charms?|silences?)\b[^.]*?\byou\b")]
 NONE = len(TAGS)
 # a damage dealer the boss never attacks gets nothing from avoidance (2026-11-20, the user on the simulator's Survival build: "Why is
 # Deflection taken? ... Wouldn't that be a wasted talent if your tank has agro?"): for a non-tank, dodge, parry or block alone is no

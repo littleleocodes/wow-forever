@@ -48,10 +48,42 @@ ENTRIES = {
 }
 
 
-# Ranks our simulator patches move (raidsim/patches/README.md): Hunter's Mark is rank 3 (14324, +98 ranged attack power against rank 4's
-# +71 in the client data), so a rotation written for the unpatched simulator checks rank 4's aura (14325), never finds it, and casts the
-# mark on every global cooldown (2026-11-20, search-improvements 0p: 121 casts a fight, every upstream hunter rotation at 360-500 DPS)
-PATCH_RANKS = {14325: (14324, 3)}
+# Auras our simulator patches move (raidsim/patches/README.md): Hunter's Mark's aura is rank 3 (14324, +98 ranged attack power against
+# rank 4's +71 in the client data), so a rotation written for the unpatched simulator checks rank 4's aura (14325), never finds it, and
+# casts the mark on every global cooldown (2026-11-20, search-improvements 0p: 121 casts a fight, every upstream hunter rotation at 360-500
+# DPS). Only the aura moves: the hunter still casts rank 4 (hunters_mark.go registers HuntersMark.Highest(), 14325), so the casts keep
+# 14325. Until the evening of 2026-11-20 the swap moved the casts too (PATCH_RANKS, a text swap): no spell 14324 is registered, both cast
+# lines were dropped and the boss never carried the mark (hunter entries 1-9% low, Expose Prey reading 0; deep-runs/mark_cast_fix_1120.py).
+PATCH_AURAS = {14325: 14324}
+
+
+def patch_auras(rot):
+    """Every aura reference (a key ending in "auraId") to a PATCH_AURAS spell moved to the aura our patches apply; casts untouched."""
+    n = 0
+    todo = [rot]
+    while todo:
+        x = todo.pop()
+        if isinstance(x, dict):
+            for k, v in x.items():
+                if k.endswith("auraId") and isinstance(v, dict) and v.get("spellId") in PATCH_AURAS:
+                    x[k] = {"spellId": PATCH_AURAS[v["spellId"]]}
+                    n += 1
+                else:
+                    todo.append(v)
+        elif isinstance(x, list):
+            todo += x
+    return n
+
+
+def cast_ids(rot, key):
+    """The spell ids a rotation part (priorityList or prepullActions) casts, with whether the cast line has a condition."""
+    out = []
+    for item in rot.get(key) or []:
+        act = (item or {}).get("action") or {}
+        cs = act.get("castSpell")
+        if cs and isinstance(cs.get("spellId"), dict):
+            out.append((cs["spellId"].get("spellId"), bool(act.get("condition"))))
+    return out
 
 
 def bench_exe(repo):
@@ -69,7 +101,6 @@ def read_upstream(repo):
     """{class: {build: {talents, options, rotation file}}}, the rotations written with trainer ranks."""
     mp = TR.load_map()
     fwd = {b: (v["trainer"], v["trainer_rank"]) for b, v in mp.items()}
-    fwd.update(PATCH_RANKS)
     commit = subprocess.run(["git", "-C", str(repo), "rev-parse", "--short=9", "HEAD"], capture_output=True, text=True).stdout.strip()
     out = {}
     for cls, (bdir, names) in BUILDS.items():
@@ -90,6 +121,7 @@ def read_upstream(repo):
                 use = [ln.split('"')[1] for ln in src.read_text(encoding="utf-8").splitlines() if ln.startswith("use ") and ".apl.siml" in ln]
                 rname = pathlib.Path(use[0]).name.replace(".apl.siml", "") if use else n
             f = dst / f"{rname}.apl.json"
+            patch_auras(rot)
             f.write_text(TR.swap_text(json.dumps(rot, indent=1) + "\n", fwd), encoding="utf-8", newline="")
             out[cls][n] = {"talents": p["talentsString"], "spec_key": spec_key, "options": p[spec_key]["options"].get("classOptions", {}),
                            "rotation": rname, "apl": str(f), "distance": p.get("distanceFromTarget")}

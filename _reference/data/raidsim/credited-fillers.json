@@ -1668,7 +1668,14 @@
     819.0903188164104,
     819.0903188164104
    ]
-  }
+  },
+  "undone": [
+   {
+    "from": "Expose Prey",
+    "to": "Hawk Eye",
+    "why": "2026-11-20: the filler pass's Expose Prey 1 -> Hawk Eye 1 is undone: Expose Prey had measured exactly 0 only because the converted official melee rotation never cast Hunter's Mark (the cast was mapped to rank 3, which no hunter spell answers to; deep-runs/mark_cast_fix_1120.py), and with the mark up it opens Mongoose Bite (about +4% in the audit session's runs). The Deflection 3 -> Survivalist 3 moves stay."
+   }
+  ]
  },
  "rogue/assassination-open-raid": {
   "entry": "assassination-raid",

@@ -147,10 +147,15 @@ def verify(rec):
 
 
 def main():
+    global OUT
     ap = argparse.ArgumentParser()
     ap.add_argument("--apply", action="store_true")
     ap.add_argument("--verify", action="store_true", help="race each record's moves at 10,000 fights, seeds 1 and 2, before --apply")
+    ap.add_argument("--out", help="the record (default raidsim/credited-fillers.json); a later pass keeps its own")
+    ap.add_argument("--only", help="comma-separated build ids of BUILDS")
     a = ap.parse_args()
+    if a.out:
+        OUT = pathlib.Path(a.out).resolve()
     if a.verify:
         verify(json.loads(OUT.read_text(encoding="utf-8")))
         return
@@ -158,7 +163,12 @@ def main():
     A.value = exact_value
     FA.utility = utility
     rec = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
-    for cls, spec, bid in BUILDS:
+    only = set(a.only.split(",")) if a.only else None
+    # --apply applies the record and runs no pass (2026-11-20: an --apply with --out had first run the pass for every build the record
+    # lacked)
+    for cls, spec, bid in ([] if a.apply else BUILDS):
+        if only and bid not in only:
+            continue
         key = f"{cls}/{bid}"
         if key in rec:
             print(f"== {key}: done before", flush=True)

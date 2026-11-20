@@ -24,6 +24,32 @@ import trainer_ranks as TR  # noqa: E402
 
 ROOT = HERE.parents[2]
 BOOK = TR.load_map() if TR.MAP.exists() else {}
+# A cast of a class spell the simulator does not register at that id (2026-11-20, the audit session's step 5 after the Hunter's Mark
+# defect: siml_upstream_race.py had mapped the official rotations' mark cast to rank 3, which no hunter spell answers to, and the line was
+# dropped without a word). Fatal in a converted official rotation (apls/<class>/upstream/), listed as `unknown_cast` elsewhere. Spells
+# the simulator registers only for one race are not the pattern (our priests are Trolls; racials are off).
+RACE_ONLY = {"Dark Sacrifice", "Starshards", "Elune's Grace", "Hex of Weakness", "Shadowguard", "Touch of Weakness", "Chastise",
+             "Desperate Prayer", "Feedback"}
+
+
+def class_book(cls):
+    """{spell id: (name, rank)} of the class's Forever spellbook."""
+    out = {}
+    for tab in json.load(open(ROOT / "_reference/data/forever-spells" / f"{cls}.json", encoding="utf-8")).get("tabs", []):
+        for sp in tab.get("spells", []):
+            for r in sp.get("ranks", []):
+                if r.get("id"):
+                    out[int(r["id"])] = (sp.get("name"), r.get("rank"))
+    return out
+
+
+def cast_id(item):
+    act = (item or {}).get("action") or {}
+    for k in ("castSpell", "channelSpell"):
+        sid = ((act.get(k) or {}).get("spellId") or {}).get("spellId")
+        if sid:
+            return int(sid)
+    return None
 
 
 def main():
@@ -36,7 +62,7 @@ def main():
     a = ap.parse_args()
     repo = pathlib.Path(a.repo)
     exe = repo / ("foreverbench.exe" if (repo / "foreverbench.exe").exists() else "foreverbench")
-    record = {}
+    record, fatal = {}, []
     for cls in a.classes or [c for c in R.SPECS if isinstance(R.SPECS[c], dict)]:
         trees = R.load_trees(repo, cls)
         data = json.load(open(ROOT / cls / R.GAMES["forever"]["builds"], encoding="utf-8"))
@@ -76,14 +102,26 @@ def main():
                                                                               "line": ""}}
                     continue
                 d = rows[0]
-                prio = json.load(open(apl, encoding="utf-8")).get("priorityList", [])
-                bad = {}
+                rot = json.load(open(apl, encoding="utf-8"))
+                prio = rot.get("priorityList", [])
+                book_ids = class_book(cls)
+                bad, unknown = {}, []
                 for kind in ("priority", "prepull"):
+                    items = prio if kind == "priority" else rot.get("prepullActions", [])
                     for i, msgs in (d.get(kind) or {}).items():
                         msgs = [m for m in msgs if not m.startswith("Information")]
                         if msgs:
                             line = json.dumps(prio[int(i)].get("action", {}))[:220] if kind == "priority" and int(i) < len(prio) else ""
                             bad[f"{kind}[{i}]"] = {"messages": sorted(set(msgs)), "line": line}
+                            cid = cast_id(items[int(i)]) if int(i) < len(items) else None
+                            if (cid and f"does not know spell {{SpellID: {cid}}}" in " ".join(msgs) and cid in book_ids
+                                    and book_ids[cid][0] not in RACE_ONLY):
+                                unknown.append(f"{kind}[{i}] casts {book_ids[cid][0]} {book_ids[cid][1]} ({cid}), which the simulator does not "
+                                               "register for the class: the line never fires")
+                if unknown:
+                    bad["unknown_cast"] = {"messages": unknown, "line": ""}
+                    if "/upstream/" in str(apl).replace("\\", "/"):
+                        fatal.extend(f"{cls} {spec} {pathlib.Path(apl).name}: {u}" for u in unknown)
                 if BOOK:   # trainer ranks only (2026-11-19, the audit's H18; trainer_ranks.py): a class book's rank is listed
                     hit = TR.named(open(apl, encoding="utf-8").read(), BOOK)
                     if hit:
@@ -100,6 +138,9 @@ def main():
             record = {c: merged[c] for c in [*R.SPECS, *merged] if c in merged}
         out.write_text(json.dumps(record, indent=1) + "\n", encoding="utf-8")
         print(f"wrote {out}")
+    if fatal:
+        print("FATAL: a converted official rotation casts a spell the simulator does not register for the class:\n  " + "\n  ".join(fatal))
+        sys.exit(1)
 
 
 if __name__ == "__main__":

@@ -484,11 +484,10 @@ def check_free(tree, cls, pages, out):
     allocation is the page's build and whose moves the build does not hold yet. The records are read from the working tree."""
     bs = builds(tree, cls)
     recs = []
-    cred = HERE / "raidsim" / "credited-fillers.json"
-    if cred.exists():
+    for cred in sorted((HERE / "raidsim").glob("credited-fillers*.json")):   # each exact pass keeps its own record
         for k, x in json.load(open(cred, encoding="utf-8")).items():
             if k.startswith(cls + "/") and x.get("ok"):
-                recs.append((k.split("/", 1)[1], x, "the credited builds' exact filler pass"))
+                recs.append((k.split("/", 1)[1], x, f"the exact filler pass ({cred.name})"))
     for f in sorted((ROOT / cls / "research" / "raid" / "raidsim").glob("*-fillers-*.json")):
         try:
             x = json.load(open(f, encoding="utf-8"))
