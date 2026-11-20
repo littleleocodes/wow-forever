@@ -1582,7 +1582,7 @@
       {
        "rank": "Shapeshift",
        "id": 768,
-       "text": "Shapeshift into Cat Form, increasing Attack Power by 12 plus Agility. Also protects the caster from Polymorph effects and allows the use of various cat abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+       "text": "Shapeshift into Cat Form, increasing Attack Power by 120 plus Agility. Also protects the caster from Polymorph effects and allows the use of various cat abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1597,11 +1597,6 @@
         "status": "changed",
         "text": "Shapeshift into cat form, increasing melee attack power by 120 plus Agility. Also protects the caster from Polymorph effects and allows the use of various cat abilities. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
         "change_kind": "reworded"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Shapeshift into Cat Form, increasing Attack Power by 120 plus Agility. Also protects the caster from Polymorph effects and allows the use of various cat abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=768)"
        }
       }
      ]
@@ -1635,7 +1630,7 @@
       {
        "rank": "Rank 1",
        "id": 1082,
-       "text": "Claw the enemy for 140% normal damage plus 27. Awards 1 combo point.",
+       "text": "Claw the enemy for 140% normal damage plus 37. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1650,17 +1645,12 @@
         "status": "changed",
         "text": "Claw the enemy, causing 27 additional damage. Awards 1 combo point.",
         "change_kind": "reworded"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Claw the enemy for 140% normal damage plus 37. Awards 1 combo point.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=1082)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 3029,
-       "text": "Claw the enemy for 140% normal damage plus 39. Awards 1 combo point.",
+       "text": "Claw the enemy for 140% normal damage plus 54. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1675,17 +1665,12 @@
         "status": "changed",
         "text": "Claw the enemy, causing 39 additional damage. Awards 1 combo point.",
         "change_kind": "reworded"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Claw the enemy for 140% normal damage plus 54. Awards 1 combo point.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=3029)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 5201,
-       "text": "Claw the enemy for 140% normal damage plus 57. Awards 1 combo point.",
+       "text": "Claw the enemy for 140% normal damage plus 79. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1700,17 +1685,12 @@
         "status": "changed",
         "text": "Claw the enemy, causing 57 additional damage. Awards 1 combo point.",
         "change_kind": "reworded"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Claw the enemy for 140% normal damage plus 79. Awards 1 combo point.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=5201)"
        }
       },
       {
        "rank": "Rank 4",
        "id": 9849,
-       "text": "Claw the enemy for 140% normal damage plus 88. Awards 1 combo point.",
+       "text": "Claw the enemy for 140% normal damage plus 123. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1725,17 +1705,12 @@
         "status": "changed",
         "text": "Claw the enemy, causing 88 additional damage. Awards 1 combo point.",
         "change_kind": "reworded"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Claw the enemy for 140% normal damage plus 123. Awards 1 combo point.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9849)"
        }
       },
       {
        "rank": "Rank 5",
        "id": 9850,
-       "text": "Claw the enemy for 140% normal damage plus 115. Awards 1 combo point.",
+       "text": "Claw the enemy for 140% normal damage plus 161. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1750,11 +1725,6 @@
         "status": "changed",
         "text": "Claw the enemy, causing 115 additional damage. Awards 1 combo point.",
         "change_kind": "reworded"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Claw the enemy for 140% normal damage plus 161. Awards 1 combo point.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9850)"
        }
       }
      ]
@@ -2831,7 +2801,7 @@
       {
        "rank": "Rank 1",
        "id": 6785,
-       "text": "Ravage the target, causing 435% damage plus 42 to the target. Must be prowling and behind the target. Awards 1 combo point.",
+       "text": "Ravage the target, causing 435% damage plus 182 to the target. Must be prowling and behind the target. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2846,17 +2816,12 @@
         "status": "changed",
         "text": "Ravage the target, causing 350% damage plus 147 to the target. Must be prowling and behind the target. Awards 1 combo point.",
         "change_kind": "numbers"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Ravage the target, causing 435% damage plus 182 to the target. Must be prowling and behind the target. Awards 1 combo point.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=6785)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 6787,
-       "text": "Ravage the target, causing 435% damage plus 62 to the target. Must be prowling and behind the target. Awards 1 combo point.",
+       "text": "Ravage the target, causing 435% damage plus 269 to the target. Must be prowling and behind the target. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2871,17 +2836,12 @@
         "status": "changed",
         "text": "Ravage the target, causing 350% damage plus 217 to the target. Must be prowling and behind the target. Awards 1 combo point.",
         "change_kind": "numbers"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Ravage the target, causing 435% damage plus 269 to the target. Must be prowling and behind the target. Awards 1 combo point.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=6787)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 9866,
-       "text": "Ravage the target, causing 435% damage plus 78 to the target. Must be prowling and behind the target. Awards 1 combo point.",
+       "text": "Ravage the target, causing 435% damage plus 339 to the target. Must be prowling and behind the target. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2896,17 +2856,12 @@
         "status": "changed",
         "text": "Ravage the target, causing 350% damage plus 273 to the target. Must be prowling and behind the target. Awards 1 combo point.",
         "change_kind": "numbers"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Ravage the target, causing 435% damage plus 339 to the target. Must be prowling and behind the target. Awards 1 combo point.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9866)"
        }
       },
       {
        "rank": "Rank 4",
        "id": 9867,
-       "text": "Ravage the target, causing 435% damage plus 98 to the target. Must be prowling and behind the target. Awards 1 combo point.",
+       "text": "Ravage the target, causing 435% damage plus 426 to the target. Must be prowling and behind the target. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -2921,11 +2876,6 @@
         "status": "changed",
         "text": "Ravage the target, causing 350% damage plus 343 to the target. Must be prowling and behind the target. Awards 1 combo point.",
         "change_kind": "numbers"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Ravage the target, causing 435% damage plus 426 to the target. Must be prowling and behind the target. Awards 1 combo point.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9867)"
        }
       }
      ]
@@ -3115,7 +3065,7 @@
       {
        "rank": "Rank 1",
        "id": 5221,
-       "text": "Shred the target, causing 200% damage plus 22 to the target. Must be behind the target. Awards 1 combo point.",
+       "text": "Shred the target, causing 200% damage plus 44 to the target. Must be behind the target. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -3130,17 +3080,12 @@
         "status": "changed",
         "text": "Shred the target, causing 225% damage plus 54 to the target. Must be behind the target. Awards 1 combo point.",
         "change_kind": "numbers"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Shred the target, causing 200% damage plus 44 to the target. Must be behind the target. Awards 1 combo point.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=5221)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 6800,
-       "text": "Shred the target, causing 200% damage plus 32 to the target. Must be behind the target. Awards 1 combo point.",
+       "text": "Shred the target, causing 200% damage plus 64 to the target. Must be behind the target. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -3155,17 +3100,12 @@
         "status": "changed",
         "text": "Shred the target, causing 225% damage plus 72 to the target. Must be behind the target. Awards 1 combo point.",
         "change_kind": "numbers"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Shred the target, causing 200% damage plus 64 to the target. Must be behind the target. Awards 1 combo point.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=6800)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 8992,
-       "text": "Shred the target, causing 200% damage plus 44 to the target. Must be behind the target. Awards 1 combo point.",
+       "text": "Shred the target, causing 200% damage plus 88 to the target. Must be behind the target. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -3180,17 +3120,12 @@
         "status": "changed",
         "text": "Shred the target, causing 225% damage plus 99 to the target. Must be behind the target. Awards 1 combo point.",
         "change_kind": "numbers"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Shred the target, causing 200% damage plus 88 to the target. Must be behind the target. Awards 1 combo point.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=8992)"
        }
       },
       {
        "rank": "Rank 4",
        "id": 9829,
-       "text": "Shred the target, causing 200% damage plus 64 to the target. Must be behind the target. Awards 1 combo point.",
+       "text": "Shred the target, causing 200% damage plus 128 to the target. Must be behind the target. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -3205,17 +3140,12 @@
         "status": "changed",
         "text": "Shred the target, causing 225% damage plus 144 to the target. Must be behind the target. Awards 1 combo point.",
         "change_kind": "numbers"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Shred the target, causing 200% damage plus 128 to the target. Must be behind the target. Awards 1 combo point.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9829)"
        }
       },
       {
        "rank": "Rank 5",
        "id": 9830,
-       "text": "Shred the target, causing 200% damage plus 80 to the target. Must be behind the target. Awards 1 combo point.",
+       "text": "Shred the target, causing 200% damage plus 160 to the target. Must be behind the target. Awards 1 combo point.",
        "school": "Physical",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -3230,11 +3160,6 @@
         "status": "changed",
         "text": "Shred the target, causing 225% damage plus 180 to the target. Must be behind the target. Awards 1 combo point.",
         "change_kind": "numbers"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Shred the target, causing 200% damage plus 160 to the target. Must be behind the target. Awards 1 combo point.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=9830)"
        }
       }
      ]
@@ -4761,7 +4686,7 @@
       {
        "rank": "Rank 3",
        "id": 1238215,
-       "text": "Heals the target and their party for 769 over 7 sec. Party members must be within 43.5 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
+       "text": "Heals the target and their party for 679 over 7 sec. Party members must be within 43.5 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
        "school": "Nature",
        "coefficient": "6.6% of spell power (per tick)",
        "tooltip_source": "beta",
@@ -4775,11 +4700,6 @@
        "classic": {
         "status": "new"
        },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Heals the target and their party for 679 over 7 sec. Party members must be within 43.5 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=1238215)"
-       },
        "hotfix": {
         "date": "2026-11-12",
         "sources": [
@@ -4790,7 +4710,7 @@
         ],
         "before": {
          "1": {
-          "text": "Heals the target and their party for 769 over 7 sec. Party members must be within 43.5 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
+          "text": "Heals the target and their party for 679 over 7 sec. Party members must be within 43.5 yds of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.",
           "coefficient": "3.3% of spell power (per tick)"
          }
         }

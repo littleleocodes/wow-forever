@@ -256,9 +256,9 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   build's text where it changed. Spell numbers: `_reference/data/forever-spells/<class>.json` (build_forever_spells.py)
   rendered to `<class>/research/spells/README.md`. The demo snapshot (2026-09-13) is archived in `raw/2026-09-13-demo/`.
 - **Live client numbers** (`live_spells.py`, 2026-11-10, the client 70862 update): talentsforever's export and Blizzard's notes missed
-  launch-client changes (Lightning Bolt rank 10 196 -> 353 base, Chain Lightning rank 4 123 -> 510, Starfire, the Feral finishers,
-  Backstab's flat 225 -> 150, Holy Strike's Holy damage doubled): the raid simulator had them, the fight lab and the stats model read our
-  stale text. The tool takes every rank's Wowhead Forever tooltip (the live client's wording), brings it to level 60 with the pinned
+  launch-client changes (Lightning Bolt rank 10 196 -> 353 base, Chain Lightning rank 4 123 -> 510, Starfire, the Feral finishers):
+  the raid simulator had them, the fight lab and the stats model read our stale text. (Backstab's "flat 225 -> 150" and Holy Strike's
+  "doubled" Holy damage, listed here until 2026-11-19, were the tool misreading Wowhead: see the guards below.) The tool takes every rank's Wowhead Forever tooltip (the live client's wording), brings it to level 60 with the pinned
   simulator's spell data (Wowhead computes at the spell's MaxLevel: Fireball rank 12 reads 12 high), evaluates its arithmetic and talent
   switches, and writes the live numbers only where the wording matches ours apart from the numbers, never a 0 over a number (server
   values the client's tooltip lacks: Oath of Light); each rank keeps `live` {build, before, source}; build_forever_spells.py applies the
@@ -268,8 +268,20 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   the rank's own effects had been, and the 70888 pull took nine ranks' MaxLevel numbers for changes (Windfury Weapon rank 4: 433 for
   the client's 333; Rockbiter 7, Frostbrand 5, Seal of Command 5, Seal of Fury 7, Light's Vigil 3, Holy Nova 6, Dire Bear Form; and
   Flametongue 6, whose MaxLevel number sat inside Wowhead's arithmetic, "( 3122 / 77 - 1 + 0)": mapped before it is worked out;
-  archive regenerated offline against the pre-live text, 116 changes kept). Regenerate a pull from its own tooltips (`--cache`) with
-  `live_spells.SPELLS` pointed at the spellbooks with each `live.before` restored: against today's text it drops every change taken.
+  archive regenerated offline against the pre-live text, 116 changes kept). Regenerate a pull from its own tooltips with
+  `live_spells.py --pull <pull> --regenerate` (the text of its day: each rank it changed back to its `live.before`; nothing fetched),
+  then `build_forever_spells.py`. **Guards of 2026-11-19** (the independent audit's D8 and D9; 45 of the 70888 pull's 116 changes were
+  misreadings, archive regenerated: 71 kept, 35 refused):
+  - a change is refused and listed when a strike's new flat number is the old one over (or times) its weapon percent ("150% weapon
+    damage plus 225"): Wowhead shows the raw $s1, the client's text the number after the percent, which the game applies to the flat
+    part too (Holy Strike 1-8, Claw 1-5, Shred 1-5, Ravage 1-4, Backstab 1-9, Counterattack 1-4: every paladin leveling pick had been
+    2.2-3.0% too fast);
+  - a periodic total ($o1) at MaxLevel is brought back to 60 (Wild Growth 3, Riptide 3, Lacerate 4);
+  - the one-point fallback never moves a number that does not scale with the level (Flame Shock 6's 320 over 12 sec had become 292);
+  - a spell with no MaxLevel (0) scales on and Wowhead shows its base: Cat Form's 12 attack power is 120 at 60, Stoneclaw Totem's
+    health 206/426, not 50/390.
+  Bear Form's 560 health is its true level-60 (level-40) value; the lab reads a form's health and attack power at its level since the
+  same day (`druid.form_amounts`, referenced rows of Bear, Cat and Dire Bear Form: a level-10 bear had the tooltip's 560 health).
   The same gap in the fight lab: spell_scaling.json scales a rank's own effects only, so a number from a referenced spell is read at
   its level-60 value at every level (the shaman's imbues scale since 2026-11-15 through `--referenced-only` rows and
   `tables.rank_amounts`; the paladin's seal judgements since 2026-11-16 through the referenced "Judgement of <seal>" rows and

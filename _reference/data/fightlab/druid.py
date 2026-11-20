@@ -32,7 +32,7 @@ import re
 
 from engine import parse_interrupt, BaseModule, Player, Spell, Weapon
 from tables import (MOB_SWING, GCD, MELEE_RANGE, class_attack_power, class_base_health, class_base_mana, class_base_stats, class_dodge,
-                    class_health_regen_tick, class_mana_regen_tick, class_melee_crit, class_spell_crit, gear_stats, weapon_dps)
+                    class_health_regen_tick, class_mana_regen_tick, class_melee_crit, class_spell_crit, gear_stats, rank_amounts, weapon_dps)
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 SPELLBOOK = json.load(open(ROOT / "_reference/data/forever-spells/druid.json", encoding="utf-8"))
@@ -56,6 +56,21 @@ FORM_AP = re.compile(r"increasing (?:melee )?attack power by (\d+)", re.I)
 FORM_ARMOR = re.compile(r"armor contribution from items by (\d+)%", re.I)
 FORM_HP = re.compile(r"and health by (\d[\d,]*)", re.I)
 FORMS = {"Cat Form", "Bear Form", "Dire Bear Form"}
+
+
+def form_amounts(form, level):
+    """(health, attack power) a form adds at `level` (2026-11-19, the independent audit's D9): the numbers live in the form's passive and
+    grow with the level (Bear Form (Passive): 20 + 18 health and 30 + 3 attack power a level from 10, capped at 40; Cat Form's: 12 + 2
+    attack power a level from 6, 120 at 60), read from spell_scaling.json's referenced rows (tables.rank_amounts). Without rows: the
+    tooltip's health at every level and its attack power x level / 60, as before (a level-10 bear had the tooltip's 560 health)."""
+    if form is None:
+        return 0.0, 0.0
+    am = rank_amounts("druid", form.name, getattr(form, "level", 0) or 0, level)
+    hp = float(am["health"]) if "health" in am else getattr(form, "form_hp", 0.0)
+    ap = float(am["attack_power"]) if "attack_power" in am else getattr(form, "form_ap", 0.0) * level / 60
+    return hp, ap
+
+
 MAUL = re.compile(r"next attack by (\d+) damage")
 SWARM = re.compile(r"causing (\d[\d,]*) Nature damage over (\d+) sec")
 STARFIRE = re.compile(r"Causes (\d[\d,]*) to (\d[\d,]*) Arcane damage")
@@ -479,7 +494,8 @@ class DruidModule(BaseModule):
         armor = (g["armor"] + thick) * (1 + (moonkin_pct if self.moonkin else getattr(form, "form_armor_pct", 0.0) / 100)) + (_num(mm.group(1)) if mm else 0.0)
         bm = class_base_mana("druid", level)
         cat = self.book.get("Cat Form")
-        p = Player(level=level, hp_max=class_base_health("druid", level) + 10 * stamina + getattr(form, "form_hp", 0.0), hp=0.0, mana_max=bm + 15 * intellect, mana=0.0, base_mana=bm,
+        form_hp, form_ap = form_amounts(form, level)
+        p = Player(level=level, hp_max=class_base_health("druid", level) + 10 * stamina + form_hp, hp=0.0, mana_max=bm + 15 * intellect, mana=0.0, base_mana=bm,
                    spirit=spirit, intellect=intellect, spell_power=g["spell_power"], armor=armor, spell_crit=class_spell_crit("druid", level, intellect),
                    dodge=class_dodge("druid", level, agility) + self.tv("Feral Swiftness", 1) / 100 + self.tv("Natural Reaction", 0) / 100, ranged_crit=0.0)
         p.strength, p.agility, p.stamina = strength, agility, stamina
@@ -487,11 +503,13 @@ class DruidModule(BaseModule):
         # tables.AP_PER_AGI had 1, so Cat Form counted it twice), and the forms' "Attack Power by 120" (Cat, Bear) / 180 (Dire Bear) is the
         # level-60 value of 2 / 3 x level (the ElliotWood/Forever simulator's forms.go: 2 x level for Cat Form, 3 x level for Dire Bear).
         # Before, the form numbers read 0 (FORM_AP), so a cat had +Agility - 2 x level and a bear no form attack power, armor or health.
+        # Since 2026-11-19 both come from the form's passive at the druid's level (form_amounts): the cat's are the same 2 x level, a
+        # bear's 30 + 3 attack power and 20 + 18 health a level from 10 (it had 3 x level - 10 attack power and the tooltip's level-60 health).
         p.attack_power = class_attack_power("druid", level, strength, 0.0) + level * self.tv("Predatory Strikes", 0) / 100
         if self.form == "cat":
-            p.attack_power += getattr(cat, "form_ap", 0.0) * level / 60 + agility
+            p.attack_power += form_amounts(cat, level)[1] + agility
         elif self.form == "bear":
-            p.attack_power += getattr(form, "form_ap", 0.0) * level / 60
+            p.attack_power += form_ap
         p.melee_crit = class_melee_crit("druid", level, agility) + self.tv("Sharpened Claws", 0) / 100 + (0.03 if self.rank("Leader of the Pack") else 0.0) + self.tv("Nature's Majesty", 0) / 100
         p.hit_bonus = self.tv("Nature's Reach", 1) / 100
         dps = weapon_dps(level, "2h") * 0.85   # a cat's paws: assumed 85% of a quest-green two-hander's dps at a 1.0 s swing (a bear's at 2.5 s)

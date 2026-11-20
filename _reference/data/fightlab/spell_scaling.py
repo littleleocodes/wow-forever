@@ -85,8 +85,13 @@ def kinds(sid, effects, depth=0):
 # it references (Seal of Command rank 1: Judgement of Command 20467, 97 at 20 and 141 from 28), written as kind "judgement" (the
 # judgement spell's school damage only: Judgement of Righteousness's per-hit value is SOR_PER_HIT's, Judgement of Fury's dummy values are
 # not read); the paladin module scales each seal's judgement by it (paladin._level_judgement).
+# Since 2026-11-19 (the independent audit's D9) also the druid's forms: a form's attack power and health live in its passive (Bear Form:
+# Bear Form (Passive) 1178, 20 + 18 health and 30 + 3 attack power a level from 10, capped at 40; Cat Form's 3025: 12 + 2 attack power a
+# level from 6, no cap), written as kinds attack_power and health; the druid module reads them at its level (druid.form_amounts). The
+# tooltip's level-60 numbers had been added at every level: a level-10 bear had 560 health from the 70888 pull's text (180 before it).
 REFERENCED = {"shaman": ("Rockbiter Weapon", "Windfury Weapon", "Flametongue Weapon", "Frostbrand Weapon"),
-              "paladin": ("Seal of Command", "Seal of Righteousness", "Seal of Fury")}
+              "paladin": ("Seal of Command", "Seal of Righteousness", "Seal of Fury"),
+              "druid": ("Cat Form", "Bear Form", "Dire Bear Form")}
 
 
 def load_refs(path):
@@ -100,7 +105,7 @@ def load_refs(path):
 
 
 def referenced_kinds(sid, effects, refs, names=None):
-    out = {"attack_power": [], "proc": [], "direct": [], "judgement": []}
+    out = {"attack_power": [], "proc": [], "direct": [], "judgement": [], "health": []}
     for r in refs.get(sid, []):
         judge = (names or {}).get(r, "").startswith("Judgement of")
         for e in effects.get(r, []):
@@ -110,6 +115,8 @@ def referenced_kinds(sid, effects, refs, names=None):
                     out["judgement"].append(row)
             elif e["aura"] == "A_MOD_ATTACK_POWER":
                 out["attack_power"].append(row)
+            elif e["aura"] == "A_MOD_MAX_HEALTH":
+                out["health"].append(row)
             elif e["type"] == "E_DUMMY" and e["ppl"]:
                 out["proc"].append(row)
             elif e["type"] in DIRECT and (e["base"] or e["ppl"]):

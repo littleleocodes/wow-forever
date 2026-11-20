@@ -633,7 +633,7 @@
       {
        "rank": "Rank 6",
        "id": 29228,
-       "text": "Instantly sears the target with fire, causing 292 Fire damage immediately and 292 Fire damage over 12 sec.",
+       "text": "Instantly sears the target with fire, causing 292 Fire damage immediately and 320 Fire damage over 12 sec.",
        "school": "Fire",
        "coefficient": "21.4% of spell power (direct), 10% of spell power (per tick)",
        "tooltip_source": "beta",
@@ -646,11 +646,6 @@
        "level": 60,
        "classic": {
         "status": "same"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Instantly sears the target with fire, causing 292 Fire damage immediately and 320 Fire damage over 12 sec.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=29228)"
        }
       }
      ]
@@ -1320,7 +1315,7 @@
       {
        "rank": "Rank 1",
        "id": 5730,
-       "text": "Summons a Stoneclaw Totem with 50 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
+       "text": "Summons a Stoneclaw Totem with 206 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1333,17 +1328,12 @@
        "level": 8,
        "classic": {
         "status": "same"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Summons a Stoneclaw Totem with 206 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=5730)"
        }
       },
       {
        "rank": "Rank 2",
        "id": 6390,
-       "text": "Summons a Stoneclaw Totem with 150 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
+       "text": "Summons a Stoneclaw Totem with 276 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1356,17 +1346,12 @@
        "level": 18,
        "classic": {
         "status": "same"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Summons a Stoneclaw Totem with 276 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=6390)"
        }
       },
       {
        "rank": "Rank 3",
        "id": 6391,
-       "text": "Summons a Stoneclaw Totem with 220 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
+       "text": "Summons a Stoneclaw Totem with 316 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1379,17 +1364,12 @@
        "level": 28,
        "classic": {
         "status": "same"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Summons a Stoneclaw Totem with 316 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=6391)"
        }
       },
       {
        "rank": "Rank 4",
        "id": 6392,
-       "text": "Summons a Stoneclaw Totem with 280 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
+       "text": "Summons a Stoneclaw Totem with 346 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1402,17 +1382,12 @@
        "level": 38,
        "classic": {
         "status": "same"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Summons a Stoneclaw Totem with 346 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=6392)"
        }
       },
       {
        "rank": "Rank 5",
        "id": 10427,
-       "text": "Summons a Stoneclaw Totem with 390 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
+       "text": "Summons a Stoneclaw Totem with 426 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
        "school": "Nature",
        "coefficient": null,
        "tooltip_source": "beta",
@@ -1425,11 +1400,6 @@
        "level": 48,
        "classic": {
         "status": "same"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Summons a Stoneclaw Totem with 426 health at the feet of the caster for 15 sec that taunts creatures within 8 yards to attack it.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=10427)"
        }
       },
       {
@@ -4013,7 +3983,7 @@
       {
        "rank": "Rank 3",
        "id": 1239243,
-       "text": "Heals a friendly target for 953 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%.",
+       "text": "Heals a friendly target for 805 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%.",
        "school": "Nature",
        "coefficient": "21.4% of spell power (heal), 10% of spell power (per tick)",
        "tooltip_source": "beta",
@@ -4026,11 +3996,6 @@
        "level": 60,
        "classic": {
         "status": "new"
-       },
-       "live": {
-        "build": "1.60.1.70888",
-        "before": "Heals a friendly target for 805 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%.",
-        "source": "Wowhead's Forever tooltip, brought to level 60 with wowsims/forever 3d67a0a1a's spell data (https://www.wowhead.com/forever/spell=1239243)"
        }
       }
      ]

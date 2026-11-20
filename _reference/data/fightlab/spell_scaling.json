@@ -740,6 +740,70 @@
      ],
      "id": 1238215
     }
+   },
+   "Bear Form": {
+    "10": {
+     "attack_power": [
+      [
+       30.0,
+       3.0,
+       10,
+       40
+      ]
+     ],
+     "health": [
+      [
+       20.0,
+       18.0,
+       10,
+       40
+      ]
+     ],
+     "via": [
+      1178
+     ],
+     "id": 5487
+    }
+   },
+   "Cat Form": {
+    "20": {
+     "attack_power": [
+      [
+       12.0,
+       2.0,
+       6,
+       0
+      ]
+     ],
+     "via": [
+      3025
+     ],
+     "id": 768
+    }
+   },
+   "Dire Bear Form": {
+    "40": {
+     "attack_power": [
+      [
+       120.0,
+       3.0,
+       40,
+       70
+      ]
+     ],
+     "health": [
+      [
+       600.0,
+       32.0,
+       40,
+       70
+      ]
+     ],
+     "via": [
+      9635
+     ],
+     "id": 9634
+    }
    }
   },
   "hunter": {
@@ -5410,5 +5474,5 @@
   },
   "warrior": {}
  },
- "referenced_source": "RefIDs' effects in ~\\.wow-forever-tools\\wowsims-forever\\sim\\core\\spelldata\\spells_auto_gen.go for shaman: Rockbiter Weapon, Windfury Weapon, Flametongue Weapon, Frostbrand Weapon; paladin: Seal of Command, Seal of Righteousness, Seal of Fury (spell_scaling.py --referenced-only)"
+ "referenced_source": "RefIDs' effects in ~\\.wow-forever-tools\\wowsims-forever\\sim\\core\\spelldata\\spells_auto_gen.go for shaman: Rockbiter Weapon, Windfury Weapon, Flametongue Weapon, Frostbrand Weapon; paladin: Seal of Command, Seal of Righteousness, Seal of Fury; druid: Cat Form, Bear Form, Dire Bear Form (spell_scaling.py --referenced-only)"
 }
