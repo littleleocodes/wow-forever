@@ -624,6 +624,59 @@ def _stale(cls, entry, rec_path):
 STALE_WHY = "not judged: the last full-raid race of this build predates the entry's current rotation or gear"
 
 
+_PICK_DEC = {}
+
+
+def pick_checked(cls, b, entry):
+    """How a raid page's pick was checked (2026-11-20, the audit session: each pick says "full search" or "short check" with its date):
+    ("short check" | "full search", date, words) or None. A short check is raidsim/talent_opt.py's two rounds from the pick in its entry
+    (candidates/check-<entry>.json, "Simulator build first"); a full search is the talent search that found the build (its summary's
+    date) or, for the simulator's own build, the search whose best it was raced against (raidsim/pick-decisions.json); the newer wins."""
+    import re as _re
+    if not entry:
+        return None
+    if "d" not in _PICK_DEC:
+        f = HERE / "raidsim" / "pick-decisions.json"
+        _PICK_DEC["d"] = json.load(open(f, encoding="utf-8")) if f.exists() else {}
+    found = []
+    f = paths.raidsim_dir(cls) / "candidates" / f"check-{entry}.json"
+    if f.exists():
+        s = (json.load(open(f, encoding="utf-8")).get("search") or {})
+        if s.get("start") == b["id"]:
+            day = datetime.date.fromtimestamp(f.stat().st_mtime).isoformat()
+            g = s.get("gain") or 0.0
+            found.append(("short check", day, "every one-move and chain-move neighbour raced in a full raid, two rounds"
+                          + (f"; the best kept move is {g:+.1%}, under the 0.5% bar" if g > 0 else "; nothing better")))
+    B = rr.builds(cls)
+    dec = _PICK_DEC["d"].get(f"{cls}/{entry}") or {}
+
+    def search_day(x):
+        m = _re.search(r"(?:found|search(?:ed)?)[^.]*? on (20\d\d-\d\d-\d\d)", (x or {}).get("summary") or "")
+        return m.group(1) if (x or {}).get("derived") == "raid" and m else None
+    d0 = search_day(b)
+    if d0:
+        found.append(("full search", d0, "the talent search that found this build"))
+    if dec.get("pick") == b["id"] and dec.get("best_ours"):
+        d1 = search_day(B.get(dec["best_ours"]))
+        gs = dec.get("gain") or []
+        if d1:
+            found.append(("full search", d1, f"the simulator's own build, raced against our search's best ({bname(cls, B[dec['best_ours']])}) on "
+                          f"two seeds, {dec.get('fights', 0):,} fights: ours " + " and ".join(f"{x:+.2%}" for x in gs) + ", not 0.5% ahead on both"))
+    if not found:
+        return None
+    return max(found, key=lambda x: (x[1], x[0] == "full search"))
+
+
+def pick_checked_lines(cls, b, entry):
+    pc = pick_checked(cls, b, entry)
+    if not pc:
+        return ["**How this pick was checked:** no talent search or short check of its own in this entry's current setup; one follows in "
+                "the optimality pass.", ""]
+    kind, day, how = pc
+    return [f"**How this pick was checked:** a {kind} on {day} ({how})."
+            + (" A full search, talents and rotation in turns until stable, follows in the optimality pass." if kind == "short check" else ""), ""]
+
+
 def raid_sig_check(cls, spec, b, entry):
     """A raid build's signature-spell check (user rule 2026-10-22: "The specs should use the spells that make that spec, that spec";
     signature_spells.json, raidsim/raid_signature.py) in its page entry: the environments run's full-raid shares and casts (recorded since
@@ -1177,9 +1230,10 @@ def mode_section(cls, spec, mode, builds, nums, src):
             numbers += support_gear(cls, spec, "heal")
         elif r and r.get("tank"):
             numbers += ["## The numbers", "", f"Tank value {r['value']:.3f} (threat and damage taken under a boss, relative to our reference tank build).", ""]
+            numbers += pick_checked_lines(cls, top, r.get("entry"))
             numbers += support_gear(cls, spec, "tank")
         elif r:
-            numbers += ["## The numbers", "", "| Setting | DPS |", "|---|---|"]
+            numbers += ["## The numbers", ""] + pick_checked_lines(cls, top, r.get("entry")) + ["| Setting | DPS |", "|---|---|"]
             nn = (json.load(open(HERE / "raidsim" / "specs.json", encoding="utf-8")).get(cls, {}).get(r["entry"]) or {}).get("numbers_note")
             if r.get("raid"):
                 numbers.append(f"| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | {r['raid']:.0f} |")
