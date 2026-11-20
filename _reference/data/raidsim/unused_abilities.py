@@ -95,7 +95,10 @@ def requires(cls):
     return out
 
 
-SACRIFICE = {"Imp": "+15% Shadow damage", "Succubus": "+15% Fire damage", "Voidwalker": "2% of your mana every 4 sec", "Felhunter": "3% of your health every 4 sec"}
+SACRIFICE = {"Imp": "+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice",
+             "Succubus": "+15% Fire damage: Forever swapped Classic's aspects, so the Succubus, not the Imp, is the Fire sacrifice",
+             "Voidwalker": "2% of your mana every 4 sec", "Felhunter": "3% of your health every 4 sec"}
+# the swap (2026-11-20, the independent audit): a Classic player sacrifices the Imp for Fire and the Succubus for Shadow; the pages say so
 
 
 def advice(cls, entry, talent, kind, needed_by, flat=None):

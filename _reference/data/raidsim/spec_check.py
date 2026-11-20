@@ -140,6 +140,8 @@ def check_specs(specs, protos):
             if isinstance(entry, dict) and isinstance(entry.get("spec"), dict):
                 n += 1
                 protos.check(entry["spec"], "Player", cls + "/" + name, problems)
+            if isinstance(entry, dict) and isinstance(entry.get("raid_spec"), dict):   # the raid-only options (run.raid_spec, 2026-11-20)
+                protos.check(entry["raid_spec"], "Player", cls + "/" + name + " (raid_spec)", problems)
     return n, problems
 
 

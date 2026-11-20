@@ -783,6 +783,20 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
   Shout rank 6, Greater Blessings rank 1). Full raid, same fights, seeds 1-2: Balance -3.0%, hunters -1.7 to -2.8%, Enhancement -1.9
   to -2.2%, Elemental -1.2 to -1.4%, warlocks -1.0 to -1.8%, dagger rogues -0.5%, warriors 0 to -0.3%. The fight lab and the healer
   lab follow in the fight-lab pass (both still play the book rank at 60).
+- **Options against upstream's defaults** (2026-11-20, the independent audit; `raidsim/options_check.py --write` ->
+  `_reference/options-check.md`, every row a real gap fixed or a deliberate difference with its measured size; run it after every
+  re-pin and after editing an entry's options, next to `spec_check.py`, which only finds names the protos lack). Found by it or on the
+  way, and fixed:
+  - Soul Shards: no warlock entry set `soulShards`, so every fight began with none and Shadowburn was never cast (upstream's Destruction
+    package 800 -> 881 DPS with its 32); every warlock entry carries 32.
+  - The tanks stood behind the boss (no entry set `in_front`): the boss never parried, blocked or parry-hasted their attacks; in front,
+    tank value -8% (paladin) to -17% (bear: damage taken +30%). The tank rotations and searches are redone (`deep-runs/tank_lane_1120.sh`).
+  - `raid_spec` (run.raid_spec, merged over `spec` in the raid settings only; the dummies keep `spec`): Feral's assumeBleedActive (Rend
+    and Tear on a boss a warrior keeps bleeding, +0.5%).
+  - The channel clip delay: the bench had 50 ms hard-coded; it is a config key now (`channelClipDelayMs`, absent = 50) and run.CLIP_MS
+    sends upstream's 100 with every setting (Arcane -1.1%, Shadow -0.7%, Wrack -0.5%; their rotations re-tuned at 100).
+  Kept and measured: reaction time 200 ms, starting rage 0, the hunter's 1.2 s cat, the Imp as the Destruction sacrifice (Forever swaps
+  Classic's aspects: the Imp +15% Shadow; the Succubus -6 to -10%), our distances (frost-raid at 10 yards for Cone of Cold).
 - The bench registers the configured potion and conjured item (2026-09-28): the simulator builds their cooldowns only from the lists
   its UI sends (`potions`, `conjuredItems`), which our configs never filled, so until then no run used a potion, a Demonic Rune or
   Thistle Tea (hunter dummy DPS +8%, warlock +3-4%, Enhancement +4%, combat rogue +2-3%). Raid numbers before that date lack them.

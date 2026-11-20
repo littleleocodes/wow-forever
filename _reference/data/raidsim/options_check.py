@@ -227,8 +227,39 @@ def get(d, path):
     return d
 
 
+# What each kind of row is (2026-11-20, the audit's decisions on the first list; full raid, 3,000 fights, seeds 1 / 2): a real gap fixed,
+# or a deliberate difference with its measured size. Keys: (class, field) first, then the field.
+DECISIONS = {
+    "soulShards": "real gap, fixed 2026-11-20: 32 in every warlock entry (Shadowburn spends one; upstream's Destruction package 800 -> 881)",
+    ("warlock", "sacrificedDemon"): "deliberate (the audit's step-2 decisions per entry); the Destruction entries sacrifice the Imp: Forever's "
+                                    "Imp gives +15% Shadow, and the Succubus is 5.9-10.1% worse on every Destruction build",
+    ("warlock", "summon"): "deliberate: the audit's step-2 decisions per entry (one option set per page)",
+    "preShadowform": "no gap: the raid rotation casts Shadowform before the pull",
+    ("priest", "classOptions.armor"): "no effect: Forever's Inner Fire is armor only (1,395 armor, charges)",
+    "startingRage": "deliberate: 0 (at 50: Fury +0.38% / +0.48%, Arms -0.09% / +0.12%)",
+    "stanceSnapshot": "deliberate: no effect in our rotations (0.00%)",
+    "assumeBleedActive": "real gap, fixed 2026-11-20 in the full raid only (raid_spec): Rend and Tear on a boss a warrior keeps bleeding, "
+                         "+0.52% / +0.51% on the Feral pick; the dummies keep it off",
+    ("hunter", "petUptime"): "deliberate: Lone Wolf and the melee build have no pet",
+    ("hunter", "petAttackSpeed"): "deliberate: the 1.2 s cat (Faster Attack VI, 2026-11-04); upstream's Raptor at II -0.06% to -0.26%",
+    "inFrontOfTarget": "real gap, fixed 2026-11-20: the tanks stand in front of the boss (in_front)",
+    "reactionTimeMs": "deliberate: 200 ms (at 100 ms: at most +0.2% on six specs)",
+    "channelClipDelay": "fixed 2026-11-20: 100 ms, upstream's (run.CLIP_MS; the bench had 50)",
+    "distanceFromTarget": "deliberate: melee entries start in melee; a caster's distance moves only travel time (Frost 795.5 at 10 yd, "
+                          "792.2 at 20, 792.7 at 28); frost-raid at 10 yd for Cone of Cold",
+    "profession1": "deliberate: our professions (no profession bonus in the bench's sets)",
+    "profession2": "deliberate: our professions (no profession bonus in the bench's sets)",
+    "race": "deliberate: racials are off (WOW_FOREVER_NO_RACIALS=1)",
+}
+
+
+def decision(cls, field):
+    short = field.split(".")[-1]
+    return DECISIONS.get((cls, field)) or DECISIONS.get((cls, short)) or DECISIONS.get(field) or DECISIONS.get(short) or "open"
+
+
 # the player options the bench sets for every entry (raidsim/foreverbench/main.go, run.py, apl_opt.py)
-BENCH_PLAYER = {"reactionTimeMs": 200, "channelClipDelay": 50}
+BENCH_PLAYER = {"reactionTimeMs": 200, "channelClipDelay": 100}   # run.CLIP_MS since 2026-11-20 (50 before)
 
 
 def main():
@@ -259,7 +290,7 @@ def main():
                     continue
                 dopt, other = {"classOptions": scls}, spl
                 notes.append(f"{cls}/{e}: {ss} keeps its defaults in defaults.siml (read: its settings block)")
-            frag = ent.get("spec") or {}
+            frag = R.raid_spec(ent) or {}   # the pages' setting: the full raid, with the entry's raid-only options
             ours = legacy(next(iter(frag.values()), {}).get("options", {}) if frag else {})
             for path, uv in leaves(dopt or {}):
                 if zero(uv):
@@ -287,10 +318,10 @@ def main():
         if not rows:
             lines.extend(["None.", ""])
             return
-        lines.append("| " + " | ".join(cols) + " |")
-        lines.append("|" + "---|" * len(cols))
+        lines.append("| " + " | ".join(cols + ["Decision"]) + " |")
+        lines.append("|" + "---|" * (len(cols) + 1))
         for r in rows:
-            lines.append("| " + " | ".join(str(x) if x not in (None, "") else "(unset)" for x in r) + " |")
+            lines.append("| " + " | ".join(str(x) if x not in (None, "") else "(unset)" for x in r) + " | " + decision(r[0], r[3]) + " |")
         lines.append("")
     table("Fields upstream sets that our entry leaves at zero", rows_gap, ["Class", "Entry", "Sim spec", "Field", "Upstream", "Ours"])
     table("Fields both set, to different values", rows_diff, ["Class", "Entry", "Sim spec", "Field", "Upstream", "Ours"])

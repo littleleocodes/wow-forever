@@ -502,8 +502,28 @@ MANA_SURPLUS = {"buffs": {"mana_spring_totem": "TristateEffectImproved", "mana_t
                 "debuffs": {"judgement_of_wisdom": True}}
 
 
+# The delay after a channel's last tick before the next cast, sent with every setting (2026-11-20, the independent audit's decision on the
+# options check: the official simulator uses 100 ms for every spec; the bench had 50 hard-coded, its value when a config leaves it out).
+CLIP_MS = 100
+
+
+def _merge(a, b):
+    out = dict(a)
+    for k, v in b.items():
+        out[k] = _merge(out[k], v) if isinstance(v, dict) and isinstance(out.get(k), dict) else v
+    return out
+
+
+def raid_spec(entry):
+    """The entry's spec fragment in a raid setting (2026-11-20, the independent audit's decision on the options check): `raid_spec`
+    holds options that count only with other players around, merged over `spec`; the training dummies keep `spec`. Feral's
+    assumeBleedActive: Rend and Tear (+15% melee ability damage on a bleeding target) counts on a warrior's Deep Wounds in a raid,
+    where the dummy has no warrior (+0.5% for the Feral page pick in a full raid)."""
+    return _merge(entry.get("spec", {}), entry["raid_spec"]) if entry.get("raid_spec") else entry.get("spec", {})
+
+
 def setting_cfg(entry, name, level=0, no_execute=False):
-    """Bench config fields of a setting: buffs, consumables and the target."""
+    """Bench config fields of a setting: buffs, consumables and the target; in a raid setting also the spec fragment (raid_spec)."""
     if name in ("dummy", "dummy-surplus") or name.startswith("ladder-"):   # your own buffs include your own consumables (flask, elixirs, food, potions, weapon oils and stones)
         sb, sd = dict(entry.get("self_buffs", {})), dict(entry.get("self_debuffs", {}))
         if name == "dummy-surplus":
@@ -518,11 +538,11 @@ def setting_cfg(entry, name, level=0, no_execute=False):
                 sb.pop(k, None)
                 sd.pop(k, None)
         return {"consumables": entry.get("consumables", {}), "buffs": "self", "buffs_on": sb, "debuffs_on": sd,
-                "buffs_off": [], "debuffs_off": [], "targetLevel": level, "noExecute": no_execute}
+                "buffs_off": [], "debuffs_off": [], "targetLevel": level, "noExecute": no_execute, "channelClipDelayMs": CLIP_MS}
     if name == "none":
-        return {"consumables": {}, "buffs": "none", "buffs_off": [], "debuffs_off": [], "targetLevel": level, "noExecute": no_execute}
+        return {"consumables": {}, "buffs": "none", "buffs_off": [], "debuffs_off": [], "targetLevel": level, "noExecute": no_execute, "channelClipDelayMs": CLIP_MS}
     return {"consumables": entry.get("consumables", {}), "buffs": "full", "buffs_off": entry.get("buffs_off", []), "debuffs_off": entry.get("debuffs_off", []),
-            "targetLevel": level, "noExecute": no_execute}
+            "targetLevel": level, "noExecute": no_execute, "channelClipDelayMs": CLIP_MS, **({"spec": raid_spec(entry)} if entry.get("raid_spec") else {})}
 
 
 def setting_text(entry, name):
@@ -810,6 +830,7 @@ def run_environments(cls, spec, a, repo):
     gear_max = sim_path(best_gear(repo, entry))
     base_cfg = {"class": entry["sim_class"], "race": entry.get("race", "RaceHuman"), "apl": str(apl_path(entry, repo)), "spec": entry.get("spec", {}), "profession1": entry.get("profession1", "Engineering"),
                 "profession2": entry.get("profession2", ""), "distanceFromTarget": entry.get("distance", 5), "inFrontOfTarget": entry.get("in_front", False), "reactionTimeMs": 200,
+                "channelClipDelayMs": CLIP_MS,
                 "iterations": a.iterations, "seed": sim_seed(a.seed), "isTank": entry.get("tank", False), "builds": [{"label": b["label"], "talents": b["talents"]} for b in builds]}
     envs = {}
     dummy_apl, raid_apl = str(apl_path(entry, repo, "dummy")), str(apl_path(entry, repo, "raid"))   # each setting runs its own rotation
@@ -829,8 +850,10 @@ def run_environments(cls, spec, a, repo):
     # party's Windfury Totem off for its shaman, so Enhancement's maximum had kept the totem its raid column no longer has)
     never = list(entry.get("never_buffs", []))
     envs.update({
-        "max": dict(base_cfg, gear=gear_max, consumables=entry.get("consumables", {}), buffs="full", buffs_off=never, debuffs_off=[], duration=FIGHT, apl=raid_apl),
-        "max60": dict(base_cfg, gear=gear_max, consumables=entry.get("consumables", {}), buffs="full", buffs_off=never, debuffs_off=[], duration=60.0, apl=raid_apl),
+        "max": dict(base_cfg, gear=gear_max, consumables=entry.get("consumables", {}), buffs="full", buffs_off=never, debuffs_off=[], duration=FIGHT, apl=raid_apl,
+                    spec=raid_spec(entry)),
+        "max60": dict(base_cfg, gear=gear_max, consumables=entry.get("consumables", {}), buffs="full", buffs_off=never, debuffs_off=[], duration=60.0, apl=raid_apl,
+                      spec=raid_spec(entry)),
     })
     bench = GAMES[GAME]["bench"]
     exe = repo / (f"{bench}.exe" if (repo / f"{bench}.exe").exists() else bench)

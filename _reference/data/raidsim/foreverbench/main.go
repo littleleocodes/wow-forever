@@ -90,6 +90,9 @@ type config struct {
 	DistanceFromTarget float64         `json:"distanceFromTarget"`
 	InFrontOfTarget    bool            `json:"inFrontOfTarget"`
 	ReactionTimeMs     int32           `json:"reactionTimeMs"`
+	// The delay after a channel's last tick before the next cast (2026-11-20, the independent audit's decision on the options check: the
+	// official simulator uses 100 ms for every spec; this bench had 50 hard-coded). 0 or absent: 50, the value of every run before.
+	ChannelClipDelayMs int32           `json:"channelClipDelayMs"`
 	Iterations         int32           `json:"iterations"`
 	Duration           float64         `json:"duration"`
 	TargetLevel        int32           `json:"targetLevel"` // 0 = the sim's default raid boss (63); 60 = a training dummy
@@ -402,6 +405,9 @@ func main() {
 		}
 		player.ReactionTimeMs = reaction
 		player.ChannelClipDelayMs = 50
+		if cfg.ChannelClipDelayMs > 0 {
+			player.ChannelClipDelayMs = cfg.ChannelClipDelayMs
+		}
 		player.DistanceFromTarget = cfg.DistanceFromTarget
 		player.InFrontOfTarget = cfg.InFrontOfTarget
 		var raid *proto.Raid
