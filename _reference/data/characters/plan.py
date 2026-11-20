@@ -1745,6 +1745,7 @@ def fightlab_run():
 
 NEXT_TALENTS_WORKERS = 4   # processes for next_talents.race (BelowNormal and the affinity are inherited from the caller)
 LAST_TALENT_RACE = {}      # the last talents_check's race of the next points ({"race": next_talents.race result}), for the page
+LAST_RESPEC = {}           # the last talents_check's respec check ({"r": respec_value.check result}), for the page and the checklist
 
 
 def talents_check(cfg, snap, level):
@@ -1815,6 +1816,17 @@ def talents_check(cfg, snap, level):
             else:
                 respec.append([n, 1])
         path = [(10 + i, n) for i, n in enumerate(pts) if 10 + i > level]
+    # off the page's order with points of its own: whether a respec to the page's order pays (2026-11-20; the user, on Arcea: "Even if I
+    # have to respec"; characters/respec_value.py): her path against the page's order, measured at her level and every 5 levels to 60
+    LAST_RESPEC.clear()
+    if rows and not respec and have and cfg.get("metric") != "tank" and (cfg.get("talent_order") or {}).get("kind") != "tank":
+        import respec_value as RV
+        try:
+            LAST_RESPEC["r"] = RV.check(cfg["class"], rot, have, path,
+                                        lambda L: FR.allocation_at({"allocation": b["allocation"], "order": order}, L), level,
+                                        kills_per_level, min_minutes=cfg.get("min_minutes", MIN_MINUTES), workers=NEXT_TALENTS_WORKERS)
+        except Exception as e:   # noqa: BLE001  (no respec line)
+            print(f"respec check: failed ({type(e).__name__}: {e})", flush=True)
     return b, rot, rows, sum(have.values()), sum(want.values()), path, queue[free + owed:] if not respec else [], respec, want, stale
 
 
@@ -1899,6 +1911,12 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
             o += [f"You stay one point off the page's order; at 60 you go without its last point ({', '.join(tdrop)}), which measures "
                   "least of its talents."]
         o += [""]
+        import respec_value as RV
+        rtxt = RV.text(LAST_RESPEC.get("r"), lv)
+        if rtxt:
+            trees_r, link_r = build_at(cfg["class"], LAST_RESPEC["r"]["build"])
+            o += [rtxt + f" The build at level {lv}: " + "; ".join(f"**{tn}** {pts} ({', '.join(f'{t} {n}' for t, n in got)})" for tn, pts, got in trees_r)
+                  + f". [Open it in the talent calculator]({link_r}).", ""]
     o += [f"- {x}" for x in cfg.get("talent_notes", [])] + ([""] if cfg.get("talent_notes") else [])
     docs = [snap["achievements"]] if snap.get("achievements") else []
     docs += [json.loads(f.read_text(encoding="utf-8")) for f in sorted((ROOT / "_characters").glob("*/armory/achievements.json"))
@@ -1913,6 +1931,7 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
                          "ah_age": PRICES.age_hours() if PRICES else None, "spec": cfg["spec"], "page": cfg["page"],
                          "short": SHORT, "faster": FASTER},
                 "talents": {"diff": tdiff, "path": tpath[:6], "drop": tdrop, "have": have_n, "want": want_n, "respec": respec, "stale": tstale,
+                            "respec_value": LAST_RESPEC.get("r"),
                              "raced": __import__("next_talents").note(LAST_TALENT_RACE["race"]) if LAST_TALENT_RACE.get("race") else None,
                              "link": build_at(cfg["class"], twant)[1] if respec else None}})
     o += change_lines(d, events, lv)
