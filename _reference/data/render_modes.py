@@ -660,11 +660,14 @@ def pick_checked(cls, b, entry):
         d1 = search_day(B.get(dec["best_ours"]))
         gs = dec.get("gain") or []
         if d1:
-            found.append(("full search", d1, f"the simulator's own build, raced against our search's best ({bname(cls, B[dec['best_ours']])}) on "
-                          f"two seeds, {dec.get('fights', 0):,} fights: ours " + " and ".join(f"{x:+.2%}" for x in gs) + ", not 0.5% ahead on both"))
+            # (2026-11-20, the audit session: "full search" is kept for a search's own winner; a simulator build judged against one reads so)
+            verdict = ("the simulator's build ahead" if gs and max(gs) < 0 else "a tie under the 0.5% bar")
+            found.append(("raced", d1, f"{bname(cls, B[dec['best_ours']])}: ours " + " and ".join(f"{x:+.2%}" for x in gs)
+                          + f" on two seeds, {dec.get('fights', 0):,} fights, {verdict}"))
     if not found:
         return None
-    return max(found, key=lambda x: (x[1], x[0] == "full search"))
+    strength = {"full search": 2, "raced": 1, "short check": 0}
+    return max(found, key=lambda x: (x[1], strength[x[0]]))
 
 
 def pick_checked_lines(cls, b, entry):
@@ -673,6 +676,8 @@ def pick_checked_lines(cls, b, entry):
         return ["**How this pick was checked:** no talent search or short check of its own in this entry's current setup; one follows in "
                 "the optimality pass.", ""]
     kind, day, how = pc
+    if kind == "raced":
+        return [f"**How this pick was checked:** raced against a full search's best ({day}, {how}).", ""]
     return [f"**How this pick was checked:** a {kind} on {day} ({how})."
             + (" A full search, talents and rotation in turns until stable, follows in the optimality pass." if kind == "short check" else ""), ""]
 
