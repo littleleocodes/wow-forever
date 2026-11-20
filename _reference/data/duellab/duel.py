@@ -71,7 +71,7 @@ KEEPS_STEALTH = {"Stealth", "Prowl", "Sap", "Distract", "Pick Pocket", "Vanish",
 # and the shaman's imbues (IMBUE_EARLY, IMBUE_LATE, IMBUE_TOP, IMBUE_TOP_FROM: Windfury at 60) became knobs: a PvP choice of poison or
 # imbue is the duel lab's own. 2026-11-16: the paladin's gear row and seal (CASTER_GEAR_FROM, SOR_FROM: a duel keeps the Holy path's
 # caster gear and Seal of Command, as before).
-PVE_KNOBS = ("MAGE_ARMOR", "POISONS", "IMBUE_EARLY", "IMBUE_LATE", "IMBUE_TOP", "IMBUE_TOP_FROM", "CASTER_GEAR_FROM", "SOR_FROM",
+PVE_KNOBS = ("IMP_FROM", "MAGE_ARMOR", "POISONS", "IMBUE_EARLY", "IMBUE_LATE", "IMBUE_TOP", "IMBUE_TOP_FROM", "CASTER_GEAR_FROM", "SOR_FROM",
              "EVO_BELOW", "REST_TOGETHER")
 _GEAR = {"tier": None}
 _RESTORE = {}

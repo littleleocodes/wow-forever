@@ -356,7 +356,7 @@ class WarlockModule(BaseModule):
                 self.spells.pop(sname, None)
         self._fight = None
         self._base_mana = 0.0
-        self.pet_name = "Voidwalker" if level >= 10 else "Imp"
+        self.pet_name = "Voidwalker" if 10 <= level < self.IMP_FROM else "Imp"   # make_pet chooses again (IMP_FROM, a rules knob)
         self.armor_spell_used = "Demon Armor" if "Demon Armor" in self.spells else ("Demon Skin" if "Demon Skin" in self.spells else "none")
         # 2026-09-30: the Demonology and Destruction leveling rotations; every mechanic added for them is gated on `new_rot`
         self.demo = str(spec).startswith("demonology")
@@ -427,6 +427,8 @@ class WarlockModule(BaseModule):
         """The demon. Since 2026-10-08 it inherits from the warlock (`tables.PET_SCALING`: 17% of the spell damage as attack power, 10% as
         spell damage, 35% of the armor, DEMON_HP_PER_STAMINA health per Stamina (2 since client 70753, 7.5 before), the spell crit chance in place of its own: the patch sets the demon's crit to
         the warlock's, audit 2026-10-18 #67), as the raid simulator's demon_scaling patch."""
+        # the demon (2026-11-20, the audit's H7 after the Voidwalker's melee was halved): the Voidwalker from 10, the Imp from IMP_FROM
+        self.pet_name = "Voidwalker" if 10 <= level < self.IMP_FROM else "Imp"
         cfg = PETS[self.pet_name]
         f = (level - 1) / 59.0
         stat = {k: 20 + (cfg[k] - 20) * f for k in ("strength", "agility", "stamina", "intellect", "spirit")}
@@ -513,6 +515,11 @@ class WarlockModule(BaseModule):
     # Conflagrate where taken, the Affliction dots optional; the old dots-first list behind BOLT_FIRST = 0)
     BOLT_FIRST = 1
     DESTRO_DOTS = 0
+    # the demon by level (2026-11-20, the audit's H7 after the Voidwalker's melee was halved): the Imp from IMP_FROM, the Voidwalker from 10
+    # until then; 61 = the Voidwalker from 10 on. The A/B on the four page picks under the fight-lab pass (levels 20-60, 3,000 fights,
+    # seeds 1-2): the Imp 22% to 93% slower per kill at every level of every pick (Affliction +26% at 60, Destruction +93% at 40), so
+    # the Voidwalker stays and the knob is not offered to the tunes (the Succubus is not modelled)
+    IMP_FROM = 61
     ROTATION_KNOBS = {"NUKE_ABOVE": [0.0, 0.2, 0.4, 0.6, 0.8], "BOLT_FIRST": [0, 1], "DESTRO_DOTS": [0, 1]}
     CONFLAG_LEFT = 3.0   # Destruction: Conflagrate (outside the finisher) once Immolate has this many seconds left
     CRIT_BONUS_OF_BASE = 0.5   # new rotations: "increases the critical strike damage bonus by X%" = X% of the 50% bonus (wowsims)

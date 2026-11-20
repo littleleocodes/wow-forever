@@ -73,6 +73,65 @@
    "found": "the user's talentsforever.com link, 2026-10-06; 698 against 684 DPS for the open search's 0/34/17 winner in the Frostfire rotation (full raid, 30,000 fights, seed 2) on b0f0df3; the family search of 2026-10-06 missed it",
    "build": "frostfire-fingers-of-frost-raid",
    "note": "2026-10-30: the saved allocation still held Piercing Ice (removed in client build 70425) and stopped search_check.py (run.py: talents unknown to the simulator); the positive is now the page build it became, repaired by repair_builds.py (2026-10-16 and 2026-10-22), so later tree repairs carry over"
+  },
+  {
+   "class": "mage",
+   "kind": "leveling",
+   "rotation": "frost-leveling",
+   "name": "Frost with Ice Barrier (18/2/31): the Frost page pick one point on",
+   "found": "2026-11-20, the independent audit's H2 and its review of the fight-lab pass: Ice Barrier's Frigid Power is modelled since 2026-11-19 and refreshed mid-pull, its bonuses multiply; no leveling search has held it (the Frost pick stops at 30 Frost)",
+   "missed_by": "every leveling search before 2026-11-19 (the lab valued the shield alone)",
+   "allocation": {
+    "Wand Specialization": 2,
+    "Improved Channeling": 3,
+    "Arcane Resilience": 3,
+    "Arcane Subtlety": 2,
+    "Arcane Concentration": 5,
+    "Arcane Meditation": 3,
+    "Incineration": 2,
+    "Improved Frostbolt": 5,
+    "Precision": 2,
+    "Ice Shards": 5,
+    "Frostbite": 3,
+    "Improved Frost Nova": 2,
+    "Permafrost": 1,
+    "Frost Channeling": 3,
+    "Ice Lance": 1,
+    "Arctic Reach": 2,
+    "Shatter": 3,
+    "Cold Snap": 1,
+    "Fingers of Frost": 2,
+    "Ice Barrier": 1
+   }
+  },
+  {
+   "class": "mage",
+   "kind": "leveling",
+   "rotation": "barrage-frost-leveling",
+   "name": "Arcane-Frost with Arcane Impact (28/0/23)",
+   "found": "2026-11-20, the independent audit's H21 review: Arcane Impact and Arcane Power apply in every mage rotation since the pass (ARCANE_ANY_ROTATION); the Arcane-Frost search had read them at zero",
+   "missed_by": "the Arcane-Frost leveling searches before 2026-11-20",
+   "allocation": {
+    "Wand Specialization": 2,
+    "Improved Channeling": 4,
+    "Arcane Subtlety": 2,
+    "Arcane Concentration": 5,
+    "Missile Barrage": 2,
+    "Arcane Meditation": 3,
+    "Presence of Mind": 1,
+    "Arcane Mind": 3,
+    "Arcane Instability": 3,
+    "Arcane Impact": 3,
+    "Improved Frostbolt": 3,
+    "Precision": 2,
+    "Ice Shards": 4,
+    "Frostbite": 3,
+    "Frost Channeling": 3,
+    "Ice Lance": 1,
+    "Arctic Reach": 2,
+    "Shatter": 3,
+    "Fingers of Frost": 2
+   }
   }
  ]
 }
