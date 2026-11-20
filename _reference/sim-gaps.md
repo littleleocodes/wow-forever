@@ -74,3 +74,27 @@ found nothing to add: every combat spell the simulator implements is either in t
 
 **Race sweep** (`_reference/race-sweep.md`): the best race beats the simulated one by 0-2.6% except Undead Fury warriors (+4.5-4.9%);
 rogues gain 2.2-2.6% as Undead in every spec, mages and warlocks ~1% as Human, paladins ~1% as Undead.
+
+## Pets, party buffs and the armor debuffs (2026-11-20, the audit session's H23 and three readings)
+
+The official simulator applies the raid's buffs to the character only (character.go `applyAllEffects` -> `ApplyBuffs(character, ...)`);
+a pet gets copies of its owner's totem auras (`buffs/totems.go` `inheritTotem`; guardians none), what it inherits from its owner's
+buffed stats, and the debuffs on the boss. Measured by the audit session (survival-raptor-raid in survival-pet-raid, full raid, 4,000
+fights, each buff or debuff off alone; pet 259.1 DPS, hunter 602.5): Battle Shout, Greater Blessing of Might and Strength of Earth reach
+the pet not at all; Grace of Air (-4.2% pet), Kings (-2.4%), Trueshot Aura (-1.4%), Mark of the Wild (-1.0%) and Windfury Totem (-0.9%)
+through the hunter's stats or the totem copy; Gift of Arthas (-6.7% pet) on the boss.
+- In Forever a pet cannot be given a mage's or a paladin's individual buffs (the user, first-hand, 2026-11-20), so the simulator's
+  missing blessings and Arcane Intellect on pets match the game: nothing on the pages.
+- **Open:** whether a pet in the party gets party-wide effects other than totems (Battle Shout, Trueshot Aura, Leader of the Pack). The
+  simulator gives it totems only. Evidence before any patch (a Forever log or a tester's pet pane).
+- **Leader of the Pack** off changed nothing for hunter or pet (0.0 both): check whether the bench's full raid gives it to a hunter's
+  party at all (a party buff that needs a feral druid in the party, or a field the bench does not set).
+- **Strength of Earth** gives the pet's totem copy nothing: the pet's attack power does not come from its own Strength in the simulator's
+  pet model, so zero may be right; to confirm.
+- **Armor debuffs**: each read 0 when switched off alone (Expose Armor -0.3%). Not stacking: the simulator's debuffs_auto_gen.go puts
+  Sunder Armor and Expose Armor in one exclusive category (MajorArmorReduction) and Faerie Fire and Curse of Recklessness in another
+  (MinorArmorReduction), so switching one off leaves its partner. The default boss (level 63, 3,731 armor, test_utils.go) keeps 3,731 -
+  2,550 (Expose Armor) - 640 (Curse of Recklessness) = 541 armor in the full raid: armor talents and penetration still count. **Open:**
+  in Classic, Faerie Fire and Curse of Recklessness stack (to 36 armor); the simulator's minor category does not let them, so physical
+  damage in a full raid may be slightly understated if Forever follows Classic there. Evidence first (a Forever combat log of the boss's
+  armor, or Blizzard's notes).
