@@ -161,6 +161,17 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 ## Open ideas, ranked by what they could still find
 
+0t. **Unsealed Wrath and seal twisting in the fight lab (2026-11-20, the independent audit's H3)**. The lab kept one seal up, so
+    Unsealed Wrath ("your melee attacks store a copy of your active Seal for 15 sec, stacking up to 3 times; landing an attack with a
+    different Seal consumes all stacks, giving the stored Seal its normal chance to activate once per stack") read 0, and the Retribution
+    leveling pick stops a point short of it. Modelled on the Retribution path: landed swings store copies, a swing with the other seal
+    pays them (Seal of Command at its 7 a minute, Seal of Righteousness every hit); `TWIST` (a rules knob, in duel.PVE_KNOBS; 0 = one seal,
+    the lab before, bit-identical even with the talent: the copies never pay) switches Command and Righteousness once three copies are
+    stored, above `TWIST_MANA`. Forever's Judgement does not consume the seal, so each switch is a global cooldown and about 200 mana. At
+    level 60 (1,500 fights x seeds 1 and 2) the pick with the talent added (a 52nd point; the A/B could not pay it legally) and TWIST 1:
+    4.2% faster per kill at a 20% mana gate, 1.4% at 40%, 0.7% at 60% (1.9 seal casts a kill against 1.0). Open for the optimality pass:
+    the Retribution leveling search with TWIST in its rules tune (a 31-point build that pays for the talent).
+
 0s. **Berserker Stance in the fight lab (2026-11-20, the independent audit's H7, the warrior half; the warlock's demon choice waits
     for the leveling lane to leave the warlock module)**. The module chose Battle Stance for Arms and Fury, so Whirlwind, Berserker Rage
     and Improved Whirlwind were blind. `BERSERKER_FROM` (a rules knob, in duel.PVE_KNOBS; 61 = never, the lab before, bit-identical):

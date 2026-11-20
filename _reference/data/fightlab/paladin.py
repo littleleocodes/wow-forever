@@ -261,7 +261,9 @@ MECHANICS = {
     "Vengeance": "+1%/rank Physical and Holy damage per stack after any non-periodic crit (melee, seal, judgement, spell; 5 stacks since client 70753, 30 s)",
     "Repentance": "Humanoids only: not used",
     "Champion of the Light": "+12%/rank of Intellect as spell damage (seals, judgements, Consecration, Holy Shock; not healing), -0.2 s/rank Hammer of Wrath cast",
-    "Unsealed Wrath": "not modelled: stored seal copies pay only when a different seal lands (the lab keeps one seal up)",
+    "Unsealed Wrath": "Retribution path: landed swings store copies of the active seal (15 s, up to 3); a swing with a different seal pays each copy its own "
+                      "chance (Seal of Command 7 a minute, Seal of Righteousness every hit); the TWIST knob switches seals at three copies (2026-11-20; "
+                      "TWIST 0 keeps one seal, where the copies never pay)",
     "Shieldsworn": "no shield",
     "Oath of Light": "healers (an ally's heals)",
     "Boundless Light": "healers (Holy Shock on allies)",
@@ -361,9 +363,15 @@ class PaladinModule(BaseModule):
     #   SOR_FROM: Seal of Righteousness instead of Seal of Command from this level, on every path that would take Seal of Command
     #     (61 = never, the module's own choice until then; 0 = always). The same check: in caster gear Righteousness 1-3% faster at 55-60
     #     for the Shockadin, in melee gear Command as fast or faster at every level.
-    ROTATION_KNOBS = {"CASTER_GEAR_FROM": [0, 40, 50, 61], "SOR_FROM": [61, 0, 50, 55]}
+    #   TWIST (2026-11-20, the independent audit's H3: the lab kept one seal up, so Unsealed Wrath read 0 while the raid simulator values
+    #     it at 13%): with Unsealed Wrath, switch between Seal of Command and Seal of Righteousness once the active seal has stored three
+    #     copies, while the mana is above TWIST_MANA; the next landed swing pays the copies. 0 = one seal (the lab before, bit-identical).
+    #     Retribution path only.
+    ROTATION_KNOBS = {"CASTER_GEAR_FROM": [0, 40, 50, 61], "SOR_FROM": [61, 0, 50, 55], "TWIST": [0, 1], "TWIST_MANA": [0.2, 0.4, 0.6]}
     CASTER_GEAR_FROM = 0
     SOR_FROM = 61
+    TWIST = 0
+    TWIST_MANA = 0.4
 
     def __init__(self, talents, level, spec="ret-dps", gear="leveling"):
         self.t = {k: v for k, v in talents.items() if v > 0}
@@ -730,11 +738,49 @@ class PaladinModule(BaseModule):
         self._base_mana = fight.p.base_mana
         p, t = fight.p, fight.t
         seal = self.seal()
+        self._uw = None   # Unsealed Wrath's stored copies: {"seal", "stacks", "until"} (TWIST)
         if seal is not None and p.mana >= self.mana_cost(seal) + 100:
             p.mana -= self.mana_cost(seal)
             p.fsr_until = t + 5.0
             p.buffs["Seal"] = {"until": t + 30.0, "name": seal.name}
             fight.casts[seal.name] = fight.casts.get(seal.name, 0) + 1
+
+    def _seal_activate(self, fight, seal):
+        """One normal chance of `seal` to activate on a swing (its own proc rule): Unsealed Wrath's stored copies."""
+        p = fight.p
+        if getattr(seal, "seal_pct", 0.0):
+            self._soc_proc(fight, seal)
+        elif getattr(seal, "seal_max", 0.0):
+            base, coef = sor_hit(seal, self.level, p.mh.speed, True)
+            self._seal_hit(fight, seal, (base + coef * p.spell_power) * self.damage_multiplier(seal, False))
+
+    def _unsealed_wrath(self, fight, seal):
+        """A landed swing with `seal` active (Unsealed Wrath): a different stored seal pays its copies, then this seal is stored."""
+        t = fight.t
+        uw = getattr(self, "_uw", None)
+        if uw and uw["until"] > t and uw["seal"] != seal.name and uw["stacks"] > 0:
+            stored = self.spells.get(uw["seal"])
+            if stored is not None:
+                for _ in range(uw["stacks"]):
+                    self._seal_activate(fight, stored)
+            uw = None
+        stacks = min(3, uw["stacks"] + 1) if (uw and uw["seal"] == seal.name and uw["until"] > t) else 1
+        self._uw = {"seal": seal.name, "stacks": stacks, "until": t + 15.0}
+
+    def _twist_seal(self, fight, can):
+        """The other seal to cast (TWIST): the active one has three stored copies, the other is known and affordable above TWIST_MANA."""
+        if not self.TWIST or not self.rank("Unsealed Wrath"):
+            return None
+        p, t = fight.p, fight.t
+        sealb = p.buff("Seal", t)
+        uw = getattr(self, "_uw", None)
+        if not sealb or not uw or uw["seal"] != sealb["name"] or uw["stacks"] < 3 or uw["until"] <= t:
+            return None
+        other = {"Seal of Command": "Seal of Righteousness", "Seal of Righteousness": "Seal of Command"}.get(sealb["name"])
+        o = self.spells.get(other) if other else None
+        if o is not None and can(o) and p.mana > self.TWIST_MANA * p.mana_max:
+            return o
+        return None
 
     def on_swing(self, fight, spell, outcome, amount, hand):
         if self.path != "ret":
@@ -752,6 +798,8 @@ class PaladinModule(BaseModule):
             elif getattr(seal, "seal_max", 0.0):   # Seal of Righteousness: the client's per-hit rows (SOR_PER_HIT; the Retribution path holds a two-hander)
                 base, coef = sor_hit(seal, self.level, p.mh.speed, True)
                 self._seal_hit(fight, seal, (base + coef * p.spell_power) * self.damage_multiplier(seal, False))
+            if self.rank("Unsealed Wrath"):
+                self._unsealed_wrath(fight, seal)
         self._on_landed_melee(fight, spell)
         if outcome == "crit":
             self._vengeance(fight)
@@ -869,6 +917,9 @@ class PaladinModule(BaseModule):
             return seal
         if how and can(how) and hp <= 0.2 * m.hp_max:
             return how
+        tw = self._twist_seal(fight, can) if hp > 0.2 * m.hp_max else None   # Unsealed Wrath (TWIST)
+        if tw is not None:
+            return tw
         # Hammer of Justice into a doubled Seal of Command judgement
         if hoj and can(hoj) and judge and p.ready("Judgement", t) and seal is not None and getattr(seal, "judge_stunned", None) and hp > 0.3 * m.hp_max and not m.stunned(t):
             return hoj

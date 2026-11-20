@@ -73,7 +73,7 @@ KEEPS_STEALTH = {"Stealth", "Prowl", "Sap", "Distract", "Pick Pocket", "Vanish",
 # caster gear and Seal of Command, as before).
 PVE_KNOBS = ("IMP_FROM", "MAGE_ARMOR", "POISONS", "IMBUE_EARLY", "IMBUE_LATE", "IMBUE_TOP", "IMBUE_TOP_FROM", "CASTER_GEAR_FROM", "SOR_FROM",
              "EVO_BELOW", "REST_TOGETHER", "FIRE_NOVA_SINGLE", "FIRE_NOVA_MANA",   # (2026-11-20: the shaman's single-target Fire Nova, H4;
-             "BERSERKER_FROM")                                                # the warrior's Berserker Stance, H7)
+             "BERSERKER_FROM", "TWIST", "TWIST_MANA")                         # the warrior's Berserker Stance, H7; seal twisting, H3)
 _GEAR = {"tier": None}
 _RESTORE = {}
 
