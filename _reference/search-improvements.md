@@ -161,13 +161,23 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 ## Open ideas, ranked by what they could still find
 
-0q. **gear_tiers.make chose sets of level-29/30 items (2026-11-20; open, before any new set is made)**. Twice that morning: the
-    stopped ML Arcane-Frost's gear step at 10:05 (mage-hybrid-arcane-frost-bis/-prebis, average required level 29.4 against the
-    committed 47.8 / 54.0) and pick_tiers.py's first Frost Med run at 10:38 (mage-frost-bis: 528.9 DPS in a full raid against 795 in the
-    entry's gear), while ML Frost's gear step at 08:40 had made a proper set (item level 64) and the night's warlock sets are normal. The
-    pool holds the right items (Spellweaver's Turban, Choker of the Fire Lord); the choice goes wrong. All four sets restored from HEAD;
-    pick_tiers.py races a pick in the spec's existing sets (--make to make new ones). Find the cause before the optimality pass's ML
-    gear steps.
+0q. **gear_tiers.make chose sets of level-29/30 items (2026-11-20; cause found and fixed the same day)**. Twice that morning, both
+    through pick_tiers.py: its first Frost Med run at 10:34 wrote mage-frost-bis (528.9 DPS in a full raid against 795 in the entry's
+    gear) and then failed on its race, and its first Arcane-Frost run at 10:37 wrote the hybrid's two sets (average required level 29.4
+    against 47.8 / 54.0). The cause: gear_tiers.py runs a private copy of gear_opt.py, and the item stat map (STAT) and the vetted launch
+    items (VETTED) live in each copy, filled by that copy's load_db. pick_tiers loaded the database through its own gear_tiers copy and
+    then called ml_pipeline.gear, which runs make() in ml_pipeline's copy: there both were empty, every item was worth 0 by any weights,
+    no launch item was in the pool, and the picker took each slot's first item in the database (Embalmed Shroud, Stygian Bone Amulet,
+    Feline Mantle ... Cookie's Stirring Rod: one list for Frost and the hybrid, whatever their weights). An offline replay of the per-slot
+    step (no simulator run) gives that list exactly, and the same step after ml_pipeline's own load_db gives the proper set (item level
+    62.6). Fixed: pick_tiers loads the database through ml_pipeline's copy; gear_opt.value and in_pool's sourceless branch stop with an
+    error on an empty map or list (both had been silent); make() writes a new set only when it scores at least the old set (or the old
+    set repaired, when it holds items outside the pool) on the confirmation seed and empties no slot; pick_tiers' kept record describes
+    the file as it is (it had carried the level-30 set's names after the restore; the two mage records corrected). Every other caller
+    loads the database through the copy whose picker it uses (ml_pipeline, deep_opt, dungeon_tier, family_search, tank_gear,
+    weight_errors, page_stat_weights; pawn_raid_compare supplies its own values and the tier copy's pool). The 105 tier sets on disk:
+    mean item level 59.3 or more, none affected. The stopped ML Arcane-Frost run's 246-258 DPS on the dummy at 10:05 is not this (its
+    path replays clean): the hybrid's builds under the Frost entry's rotation (0o).
 
 0p. **The simulator's hunter rotations collapse in our bench (2026-11-20, H6; open, first after the pages)**. Read from SIML with the
     bench's -siml2json (deep-runs/siml_upstream_race.py), every upstream hunter rotation scores 360-500 DPS on every build and option set

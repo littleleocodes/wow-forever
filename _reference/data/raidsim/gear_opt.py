@@ -320,6 +320,9 @@ def in_pool(it, zones):
     if it["id"] in VENDOR_ITEMS:
         return True
     if not srcs:   # no dated source (custom items, quest, vendor and PvP rewards): only items a phase-1 community preset uses
+        if not VETTED:   # 2026-11-20 (0q): an empty list shut every launch item out of the pool without a word
+            raise SystemExit("gear_opt.VETTED is empty in this copy of gear_opt: call load_vetted (gear_tiers.load_db does) in the copy "
+                             "whose pool is used")
         if it.get("name") in RAID_QUEST | PHASE1_QUEST:   # 2026-11-18: Onyxia's and Molten Core's quest rewards count unvetted (the
             return True                                     # database lists none of Onyxia's drops, and no preset used her ring)
         return not later_reward(it) and it["id"] in VETTED and (so.get("ilvl", 0) <= SOURCELESS_MAX_ILVL or it.get("name") in PHASE1_QUEST)
@@ -344,6 +347,9 @@ def load_vetted(repo, db):
 
 
 def value(it, w, slot):
+    if not STAT:   # 2026-11-20 (search-improvements 0q): an empty map valued every item at 0, and the picker took each slot's first item
+        raise SystemExit("gear_opt.STAT is empty in this copy of gear_opt: load the database (load_db) through the copy that values the "
+                         "items (gear_tiers.load_db of the same gear_tiers copy)")
     so = it.get("scalingOptions", {}).get("0", {})
     v = sum(w.get(STAT.get(int(k)), 0.0) * x for k, x in so.get("stats", {}).items())
     if it.get("type") in (13, 14) and so.get("weaponDamageMax") and it.get("weaponSpeed"):

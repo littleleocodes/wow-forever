@@ -604,21 +604,24 @@ def _save_sig_store():
 _SPECS_CACHE = {}
 
 
-def _sig_fingerprint(cls, entry, b):
-    """What a stored verdict was judged on: the build's talents, the entry's raid rotation (the file's text), its options, raid-only
-    options, gear, distance and facing."""
-    import hashlib
+def _stale(cls, entry, rec_path):
+    """True when a share record (`rec_path`) is older than the entry's raid rotation or gear file (2026-11-20, the audit session: a drift
+    scan had read records older than the entry's rotation). For records made before the races fingerprinted their configs (run.py's
+    raid_fp); a fingerprinted row is judged by its fingerprint."""
     if "d" not in _SPECS_CACHE:
         _SPECS_CACHE["d"] = json.load(open(HERE / "raidsim" / "specs.json", encoding="utf-8"))
-    e = (_SPECS_CACHE["d"].get(cls) or {}).get(entry)
-    if not e:
-        return None
-    rot = e.get("apl_opt_raid") or e.get("apl") or ""
-    rp = ROOT / rot if rot.startswith("_reference/") else None
-    rtext = rp.read_text(encoding="utf-8") if rp and rp.exists() else rot
-    blob = json.dumps([sorted(rs.flat(b).items()), rtext, e.get("spec"), e.get("raid_spec"), e.get("gear"), e.get("distance"),
-                       e.get("in_front")], sort_keys=True, default=str)
-    return hashlib.sha1(blob.encode("utf-8")).hexdigest()[:16]
+    e = (_SPECS_CACHE["d"].get(cls) or {}).get(entry) or {}
+    if not rec_path.exists():
+        return True
+    t = rec_path.stat().st_mtime
+    for x in (e.get("apl_opt_raid") or e.get("apl"), e.get("gear")):
+        q = ROOT / x if isinstance(x, str) and x.startswith("_reference/") else None
+        if q is not None and q.exists() and q.stat().st_mtime > t:
+            return True
+    return False
+
+
+STALE_WHY = "not judged: the last full-raid race of this build predates the entry's current rotation or gear"
 
 
 def raid_sig_check(cls, spec, b, entry):
@@ -642,22 +645,28 @@ def raid_sig_check(cls, spec, b, entry):
         f = paths.raidsim_dir(cls) / f"{entry}-environments.json"
         _RAID_SIG[key] = {x["label"]: x for x in json.load(open(f, encoding="utf-8"))["results"]} if f.exists() else {}
     row = _RAID_SIG[key].get(b["id"]) or {}
-    # One verdict per build (2026-11-20, recommended by the audit session, accepted by the user): the build's full-raid shares are
-    # judged once, from the race that first measured them in this setup (its build, the entry's raid rotation, options, gear), and stored
-    # in raidsim/signature-verdicts.json; a later race of the same setup does not re-judge them, so a build near its floor stops flipping
-    fp = _sig_fingerprint(cls, entry, b)
-    sk = f"{cls}/{entry}/{b['id']}"
-    st = _SIG_STORE.get(sk)
-    if st and st.get("fingerprint") == fp and st.get("shares"):
-        return RSG.check_shares(cls, spec, st["shares"], st.get("casts"), held)
-    if row.get("raid_shares"):
-        if fp:
-            _SIG_STORE[sk] = {"fingerprint": fp, "shares": row["raid_shares"], "casts": row.get("raid_casts"),
-                              "date": datetime.date.today().isoformat()}
+    stale = {"spec": spec, "ok": True, "stale": True, "core_share": None, "min_share": None, "uncast": [], "missing_talents": [],
+             "why": STALE_WHY}
+    # One verdict per build (2026-11-20, recommended by the audit session, accepted by the user): a build's full-raid shares are judged
+    # once per setup and stored (raidsim/signature-verdicts.json), keyed by the race's config fingerprint (run.cfg_fingerprint: the
+    # config as sent with its rotation and gear files' content, the bench binary, the simulator commit and the WOW_FOREVER_* switches;
+    # the audit session's guard of the same day), so a verdict lasts exactly as long as everything that made its shares
+    fp = row.get("raid_fp")
+    if row.get("raid_shares") and fp:
+        sk = f"{cls}/{entry}/{b['id']}"
+        st = _SIG_STORE.get(sk)
+        if not (st and st.get("fingerprint") == fp and st.get("shares")):
+            st = {"fingerprint": fp, "shares": row["raid_shares"], "casts": row.get("raid_casts"), "judged": datetime.date.today().isoformat()}
+            _SIG_STORE[sk] = st
             _save_sig_store()
-        return RSG.check_shares(cls, spec, row["raid_shares"], row.get("raid_casts"), held)
+        return RSG.check_shares(cls, spec, st["shares"], st.get("casts"), held)
+    if row.get("raid_shares"):   # a race from before the fingerprints: judged only when newer than the entry's rotation and gear
+        f = paths.raidsim_dir(cls) / f"{entry}-environments.json"
+        return stale if _stale(cls, entry, f) else RSG.check_shares(cls, spec, row["raid_shares"], row.get("raid_casts"), held)
     m = ((((_RAID_SIG["audit"].get(cls) or {}).get("entries") or {}).get(entry) or {}).get("builds") or {}).get(b["id"]) or {}
     if m.get("raid_measured_shares"):   # re-checked against the rule as it is now (the audit's own verdict may predate a rule change)
+        if _stale(cls, entry, HERE / "raidsim" / "signature-audit.json"):
+            return stale
         return RSG.check_shares(cls, spec, m["raid_measured_shares"], m.get("raid_measured_casts"), held)
     return None
 
@@ -1077,6 +1086,8 @@ def mode_section(cls, spec, mode, builds, nums, src):
               + ". A starting point, not a proven build.", ""]
     if mode == "raid":
         sc = raid_sig_check(cls, spec, top, (R.get(top["id"]) or {}).get("entry")) if top.get("role") != "healer" else None
+        if sc and sc.get("stale"):   # 2026-11-20: a verdict older than the entry's rotation or gear is not shown as a pass
+            o += [f"> **Signature spells:** {STALE_WHY}; the next race judges it.", ""]
         if sc and not sc.get("ok"):   # the signature-spell rule (2026-10-22): the page says when its build fails it
             o += [f"> **Signature spells: this build fails the check** in a full raid ({sig_text(cls, spec, sc)}). It stays on the page until a build "
                   "of this spec that passes is found; the raid searches since 2026-10-22 look only for such builds (signature_spells.json).", ""]
@@ -1326,10 +1337,23 @@ def mode_section(cls, spec, mode, builds, nums, src):
                 sc = raid_sig_check(cls, spec, b, R[b["id"]].get("entry"))
                 if sc and not sc.get("ok"):   # the signature-spell rule (2026-10-22)
                     extra += f"; fails the signature-spell check: {sc['why']}"
+                elif sc and sc.get("stale"):
+                    extra += "; signature check pending (raced before the entry's current rotation or gear)"
             if mode == "leveling" and weighted(L.get(b["id"]) or {}):
                 extra = f", {weighted(L[b['id']]):.0f} s per kill, level-weighted"   # no nested parentheses (2026-10-15 page audit B17)
             o.append(f"- {link(cls, b, src)} ({rs.split_of(cls, rs.flat(b))}{extra}) — {tree_link(cls, b)}")
         o.append("")
+    # builds with 30+ points in this tree that play as a hybrid (their `spec` field: a build played around another tree's spells is a
+    # hybrid although one tree has 30 points; 2026-11-20, the audit session: the affliction-raid entry's builds play upstream's SM/Ruin
+    # rotation, Shadow Bolt half their damage): listed here only as pointers to the hybrid's page
+    if not spec.startswith("Hybrid "):
+        mv = [b2 for b2 in rr.builds(cls).values() if str(b2.get("spec") or "").startswith("Hybrid ") and SM.mode_of(b2) == mode
+              and spec in b2["spec"][len("Hybrid "):].split("/") and SM.tree_points(cls, b2).get(spec, 0) >= SM.SPEC_POINTS]
+        if mv:
+            o += ["## Builds that play as a hybrid", ""]
+            o += [f"- {bname(cls, b2)} ({rs.split_of(cls, rs.flat(b2))}): {SM.SPEC_POINTS}+ points in {spec}, but it plays as the "
+                  f"[{SM.spec_name(cls, b2['spec'])}]({SM.spec_slug(cls, b2['spec'])}.md); it is ranked there" for b2 in mv]
+            o.append("")
     return o
 
 

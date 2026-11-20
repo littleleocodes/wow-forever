@@ -73,17 +73,27 @@ def main():
         src = pv if (pv.get("search") and not pv.get("pick_tiers")) else {}
     flat_of = lambda al: {n: k for items in al.values() for n, k in items}   # noqa: E731
     alt_rows = {}
-    db = zones = None
+    # the database through the gear_tiers copy whose make() runs (ml_pipeline's): 2026-11-20 (search-improvements 0q) this script loaded
+    # it through its own copy, so the copy that picked the items had an empty stat map and no vetted items, valued every item at 0 and
+    # took each slot's first item in the database (Frost Med's level-30 set)
+    db, zones = MP.GT.load_db(repo)
     for tier in ("bis", "prebis"):
         sp = GT.set_path(a.cls, a.spec, tier)
         if sp.exists() and not a.make:
-            # the spec's own tier set as it stands (made by its search for the spec's best talents): the pick is raced in it.
-            # 2026-11-20: making a set for the pick (gear_tiers.make) gave Frost Med a set of level-30 items (528.9 DPS in a full raid
-            # against 795 in the entry's gear), so a pick's tiers use the spec's sets unless --make
-            g = dict(prev_gear.get(tier) or {}, gear=str(sp.relative_to(ROOT)).replace("\\", "/"), date=today, kept=True)
+            # the spec's own tier set as it stands (made by its search for that search's winner): the pick is raced in it. The record
+            # describes the file as it is: a set kept from an earlier record keeps that record's make() fields only when they name
+            # these items (a carried record had listed the level-30 set's items after the file was restored)
+            rel = str(sp.relative_to(ROOT)).replace("\\", "/")
+            its = json.load(open(sp, encoding="utf-8"))["items"]
+            names = [db[x["id"]]["name"] if x and x.get("id") in db else None for x in its]
+            ils = [db[x["id"]]["scalingOptions"]["0"].get("ilvl", 0) for x in its if x and x.get("id") in db]
+            pg = prev_gear.get(tier) or {}
+            g = dict(pg) if pg.get("names") == names else {k: pg[k] for k in ("entry", "setting") if k in pg}
+            g.update(gear=rel, date=today, kept=True, names=names, ilvl=round(sum(ils) / max(1, len(ils)), 1),
+                     note="the spec's tier set as it stands, made by its last search for that search's winner; not made for this pick")
+            g.setdefault("entry", a.entry)
+            g.setdefault("setting", "raid")
         else:
-            if db is None:
-                db, zones = GT.load_db(repo)
             g = MP.gear(rec, tier, R.alloc_of(b), a.build, a.entry, repo, db, zones)   # gear() takes the flat {talent: ranks}
         rec["gear"][tier] = g
         gpath = g["gear"]

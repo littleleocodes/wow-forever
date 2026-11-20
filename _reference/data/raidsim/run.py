@@ -879,8 +879,14 @@ def run_environments(cls, spec, a, repo):
                     if env == "raid":
                         raid_casts[d["label"]] = action_casts(d.get("actions"), names)
                         raid_shares[d["label"]] = {k: round(v, 4) for k, v in action_shares(d.get("actions"), names, "damage").items()} if d.get("actions") else {}
+    # each build's full-raid config fingerprinted (2026-11-20, the audit session): the stored signature verdicts (render_modes,
+    # raidsim/signature-verdicts.json) are keyed by it, so a verdict lasts exactly as long as everything that made its shares
+    commit = git_commit(repo)
+    fps = {b["label"]: cfg_fingerprint(dict(envs["raid"], builds=[{"label": b["label"], "talents": b["talents"]}]), exe, repo, commit)
+           for b in builds}
     rows = [{"label": b["label"], "split": b["split"], "ours": b["ours"], "dps": dps[b["label"]],
-             "raid_spell_casts": raid_casts[b["label"]][0], "raid_casts": raid_casts[b["label"]][1], "raid_shares": raid_shares[b["label"]]} for b in builds]
+             "raid_spell_casts": raid_casts[b["label"]][0], "raid_casts": raid_casts[b["label"]][1], "raid_shares": raid_shares[b["label"]],
+             "raid_fp": fps[b["label"]]} for b in builds]
     out = {"class": cls, "spec": spec, "game": GAME, "date": datetime.date.today().isoformat(), "sim": {"repo": str(repo), "commit": git_commit(repo), **sim_switches(repo), "gear_raid": entry["gear"], "gear_max": gear_max,
                                                                                                           "iterations": a.iterations, "seed": a.seed}, "environments": ENVIRONMENTS, "results": rows}
     print(f"== {cls} {spec} environments (gear raid {pathlib.Path(entry['gear']).name}, max {pathlib.Path(gear_max).name}):")
@@ -958,6 +964,27 @@ def sim_switches(repo=None):
     also the simulator and its data's client build (2026-10-22, sim_info.identity), so the pages can name what a record ran on."""
     return {"racials": "off" if os.environ.get("WOW_FOREVER_NO_RACIALS") == "1" else "on",
             "pet_normalize": os.environ.get("WOW_FOREVER_PET_NORMALIZE") == "1", **(sim_info.identity(repo) if repo else {})}
+
+
+def cfg_fingerprint(cfg, exe, repo, commit=None):
+    """What a bench run's numbers depend on (2026-11-20, the audit session: a stored signature verdict must change with anything that
+    moves the shares): the config as sent, its rotation and gear files read for their content, the bench binary, the simulator commit
+    and this process's WOW_FOREVER_* switches (racials, the pet rule, the armor fill...)."""
+    import hashlib
+
+    def file_sha(x):
+        q = pathlib.Path(x) if pathlib.Path(x).is_absolute() else pathlib.Path(repo) / x
+        try:
+            return hashlib.sha1(q.read_bytes()).hexdigest()
+        except OSError:
+            return str(x)
+    c = dict(cfg)
+    for k in ("apl", "gear"):
+        if isinstance(c.get(k), str):
+            c[k] = file_sha(c[k])
+    blob = json.dumps([c, file_sha(exe), commit or git_commit(repo),
+                       sorted((k, v) for k, v in os.environ.items() if k.startswith("WOW_FOREVER_"))], sort_keys=True, default=str)
+    return hashlib.sha1(blob.encode("utf-8")).hexdigest()[:16]
 
 
 def git_commit(repo):

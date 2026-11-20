@@ -1121,6 +1121,11 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
   crafts (`gear_opt.LATER_PREFIXES`: Bloodvine, Primal Batskin, the Cenarion and Naxxramas sets), the Scourge Invasion bosses' drops
   (`gear_opt.EVENT_NPCS`: no community preset uses them; the Staff of Balzaphon had entered a pre-BiS set) and crafted items of item
   level 65+ that no tier preset uses.
+  **One module copy per picker** (2026-11-20, search-improvements 0q): gear_tiers.py runs a private copy of gear_opt.py, and its stat
+  map and vetted items live in that copy; load the database (`load_db`) through the gear_tiers copy whose `make()` or `optimize_set()`
+  runs (ml_pipeline's, when you call `ml_pipeline.gear`). pick_tiers.py had loaded it through another copy: every item worth 0, each
+  slot's first item in the database, Frost Med's level-30 set. `gear_opt.value` and `in_pool` stop on an empty map or list since, and
+  `make()` writes a set only when it scores at least the set it replaces (or that set repaired) on the confirmation seed.
   **What the game has now** (2026-11-18; user: "our BiS list is a bit outdated", then "Go with your rec";
   `_reference/tier-0.5-research.md`, page-audit Q10-Q12). The simulator's database dates every item: phase 1 is what Forever has now,
   phase 2 the raids (from 2026-12-09) and later content; every raid drop is phase 2 and every dungeon drop phase 1. 15 later items had

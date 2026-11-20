@@ -122,11 +122,13 @@ def slug(spec):
 # or one built for the hybrid itself (Frostfire's frostfire-raid, Smite's smite-dps). No step may move a build to another spec's rotation
 # because it is faster there (the cross-rotation races stay as research). The trees each raid entry's rotation is built for:
 RAID_ENTRY_TREES = {
+    # (2026-11-20: affliction-raid runs upstream's SM/Ruin rotation, a Shadow Bolt rotation: the Shadow Bolt hybrid's; its builds carry
+    # spec Hybrid Affliction/Destruction, and Affliction's own rotations are affliction-wrack-raid's)
     ("hunter", "survival-pet-raid"): {"Survival"},
     ("mage", "frost-raid"): {"Frost"}, ("mage", "fire-raid"): {"Fire"}, ("mage", "arcane-dps"): {"Arcane"},
     ("mage", "frostfire-raid"): {"Hybrid Fire/Frost"}, ("mage", "arcane-frost-raid"): {"Hybrid Arcane/Frost"},
     ("priest", "shadow-dps"): {"Shadow"}, ("priest", "smite-dps"): {"Hybrid Discipline/Holy"},
-    ("warlock", "affliction-raid"): {"Affliction"}, ("warlock", "affliction-wrack-raid"): {"Affliction"}, ("warlock", "destro-raid"): {"Destruction"}, ("warlock", "fire-destro-raid"): {"Destruction"}, ("warlock", "sb-raid"): {"Destruction"},
+    ("warlock", "affliction-raid"): {"Hybrid Affliction/Destruction"}, ("warlock", "affliction-wrack-raid"): {"Affliction"}, ("warlock", "destro-raid"): {"Destruction"}, ("warlock", "fire-destro-raid"): {"Destruction"}, ("warlock", "sb-raid"): {"Destruction"},
     ("warlock", "demonology-raid"): {"Demonology"}, ("warlock", "incinerate-raid"): {"Destruction"},
     ("hunter", "mm-raid"): {"Marksmanship"}, ("hunter", "mm-lonewolf-raid"): {"Marksmanship"}, ("hunter", "bm-raid"): {"Beast Mastery"},
     ("hunter", "melee-dps"): {"Survival"},
