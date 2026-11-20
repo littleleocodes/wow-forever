@@ -119,6 +119,12 @@ def raid_spec(cls, entry, alloc, data):
     hyb = entry_hybrid(cls, entry, data)
     if hyb and (spec == hyb or spec in hyb.replace("Hybrid ", "").split("/")):
         return hyb
+    if spec.startswith("Hybrid ") and (cls, spec) not in SM.HYBRID_NAMES:
+        # no hybrid slot from a search winner (2026-11-20, rule 5, recommended by the audit session and accepted by the user): a split no
+        # named hybrid takes is written for its biggest tree, where the pages list it as an alternative (spec_modes.grid)
+        pts = {t: sum(r for _, r in items) for t, items in (alloc or {}).items()} if isinstance(alloc, dict) and alloc and \
+            isinstance(next(iter(alloc.values())), list) else SM.tree_points(cls, {"allocation": alloc})
+        return max(pts, key=lambda t: (pts[t], -SM.trees(cls).index(t)))
     return spec
 
 

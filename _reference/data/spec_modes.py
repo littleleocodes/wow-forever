@@ -57,6 +57,9 @@ HYBRID_NAMES = {
     ("priest", "Hybrid Holy/Shadow"): ("Holy-Shadow", "hybrid-holy-shadow", "Points in all three trees: Discipline's Soul Warding, Holy's Searing Light and Shadow's Shadow Weaving."),
     ("rogue", "Hybrid Assassination/Combat"): ("Daggers (split)", "daggers-split", "Daggers with points split between Assassination and Combat."),
     ("rogue", "Hybrid Combat/Subtlety"): ("Combat-Subtlety", "combat-subtlety", "Subtlety's openers, Ghostly Strike and Hemorrhage with Combat's weapon talents (2026-10-08, the open leveling search)."),
+    # 2026-11-20 (rule 5 of the day: a hybrid keeps its page when it qualifies): the subtlety-raid entry's best build is a 27/2/22, and a
+    # 16/12/23 of the same split is third in talentsforever.com's popular rogue builds; its page keeps the slug it had
+    ("rogue", "Hybrid Assassination/Subtlety"): ("Assassination-Subtlety", "hybrid-assassination-subtlety", "Subtlety's rotation (Hemorrhage, Ghostly Strike, the openers) with Assassination's Seal Fate, Lethality and poisons (the open raid search)."),
     ("shaman", "Hybrid Elemental/Enhancement"): ("Elemental-Enhancement", "elemental-enhancement", {
         "leveling": "A Lightning Bolt caster (Lightning Overload) that dips Enhancement for its passive bonuses.",
         "raid": "A melee shaman: Enhancement's Stormstrike and Flurry with Elemental's shock and Fire Nova talents."}),
@@ -245,7 +248,16 @@ def grid(cls, builds):
     """{spec: {mode: [build, ...]}} with the class's three trees first (empty where no build exists), hybrids after."""
     out = {t: {m: [] for m in MODES} for t in trees(cls)}
     for b in builds:
-        out.setdefault(spec_of(cls, b), {m: [] for m in MODES})[mode_of(b)].append(b)
+        sp = spec_of(cls, b)
+        # no automatic hybrid pages (2026-11-20, recommended by the audit session, accepted by the user): a build split under 30 points
+        # in every tree belongs to a named hybrid (HYBRID_NAMES: one that qualifies, i.e. the simulator ships a build for it, it is among
+        # talentsforever.com's popular builds, or it already had a page), else it is an alternative on its biggest tree's page. An
+        # explicit `spec` field is the judgment of a hand or an audit and is kept.
+        if sp.startswith("Hybrid ") and (cls, sp) not in HYBRID_NAMES and not b.get("spec"):
+            pts = tree_points(cls, b)
+            sp = max(pts, key=lambda t: (pts[t], -trees(cls).index(t)))
+            b = dict(b, _alternative=True)   # ranked after the tree's own builds (render_modes.rank_builds)
+        out.setdefault(sp, {m: [] for m in MODES})[mode_of(b)].append(b)
     # 2026-11-06 (user decision on page-audit K7): a hybrid's leveling slot that holds nothing but optimizer exports (`opt-<model>-<profile>`:
     # builds of a tree's stats model whose points happen to split across two trees) is no page. The rogue's "Daggers (split)" leveling
     # page showed the swords model's AoE export, without numbers, as its only build once the daggers rotation's winner became a pure

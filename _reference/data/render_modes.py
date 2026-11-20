@@ -890,16 +890,17 @@ def rank_builds(cls, mode, builds, nums, signature=True):
     def key(b):
         bid = b["id"]
         gen = 1 if b.get("generated") else 0
+        alt = 1 if b.get("_alternative") else 0   # a split no named hybrid takes (spec_modes.grid, rule 5 of 2026-11-20): never the pick
         if mode == "raid":
             if b.get("role") == "healer":
-                return (0, -(H.get(bid, {}).get("capacity") or 0), gen)
+                return (alt, 0, -(H.get(bid, {}).get("capacity") or 0), gen)
             r = R.get(bid) or {}
             # a build with no full-raid number ranks after the measured ones (2026-10-30 self-audit: the Shockadin page recommended
             # opt-ret-dps-parse, a Retribution export with no number and no signature check, over the measured shockadin-open-raid)
-            return (0 if r.get("group") else 1, sig_fail(b), -(r.get("group") or 0), gen)
+            return (alt, 0 if r.get("group") else 1, sig_fail(b), -(r.get("group") or 0), gen)
         if mode == "leveling":
             w = weighted(L.get(bid) or {})
-            return (0 if w else 1, sig_fail(b), w or 0, gen)
+            return (alt, 0 if w else 1, sig_fail(b), w or 0, gen)
         return (0 if b.get("replaces") else 1 + gen, b.get("tier") != "primary", bid)
     parse_ids = set() if mode == "raid" else {b["id"] for b in builds if b["id"].endswith("-parse")}   # raid: a parse build is a raid build
     main = sorted([b for b in builds if b["id"] not in parse_ids], key=key)
