@@ -776,7 +776,7 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
 - **Trainer ranks only** (2026-11-19, the independent audit's H18; user: "Go with the audits recommendations"): the simulator knows the
   class books' ranks (`sim/core/spelldata/book_ranks.go`: Grimoire of Shadow Bolt X, Tome of Frostbolt XI, Guide: Serpent Sting IX,
   Tablet of Flame Shock VI, Handbook of Backstab IX ...; Ruins of Ahn'Qiraj in Classic), and 44 rotation files cast them. Assumption
-  (the audit session's, stated in every page footer with raid numbers): Forever has no class books yet. One mapping, book id -> the
+  (the audit session's, stated in every page footer with raid numbers): Forever has no class books yet; a finding since 2026-11-20 (see "The rules as revised on 2026-11-20"), checked again on 2026-12-09. One mapping, book id -> the
   trainer's top rank by rank number (`raidsim/trainer-ranks.json`; Shadow Bolt 25307 -> 11661: our spellbook lists rank 10 before 9);
   `raidsim/trainer_ranks.py` lists, `--apply`s (casts and conditions alike: a condition left on the book rank reads an absent spell)
   or `--reverse`s it in every rotation file of ours and every entry base under presets/. The rotation search's pool leaves book ranks
@@ -806,6 +806,31 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
     Frostfire, Shockadin, Smite, Beast-Survival, Beast-Marks, the rogue, shaman and warlock hybrids). No new hybrid page from a search
     alone;
   - the no-rules search (raid, leveling and PvP halves; the user's request of 2026-11-18) is dropped; its code and worktrees stay.
+- **The rules as revised on 2026-11-20** (recommended by the audit session, accepted by the user: "Go with all your recommendations",
+  confirmed first-hand in the lane session; the wording is the audit session's):
+  1. signature shares are measured on the character's own damage: the pet's leaves the denominator unless the pet is in the rule's
+     core (Beast Mastery, leveling Survival, Beast-Survival and the warlock demon rules keep it; `raid_signature.core_share`,
+     `signature.core_share`); Windfury Totem's extra swings count as melee (`raid_signature.WHITE_ALIASES`);
+  2. one point of tolerance at a floor (`FLOOR_TOL` 0.01: a 30% floor passes at 29.0%), and one verdict per build: a raid build's
+     full-raid shares are judged once in their setup (build, the entry's raid rotation, options, gear) and stored
+     (`raidsim/signature-verdicts.json`, render_modes.raid_sig_check), not re-judged per race; the leveling verdicts were stored already
+     (fightlab/signature_audit.py, fingerprint-dated);
+  3. the 2% adopt and replace bars go: rebuild.py's adopt steps (fight lab, raid, healer lab: `RACE_MARGIN`), deep_heal's and
+     deep_tank's `replaces` use 0.5%, like everything else;
+  4. healer and tank leveling pages lead with the faster option: the class's fastest leveling damage spec and how much faster, then
+     the page's own build, to level as the healer or tank itself (render only; the raid-path build and order stay);
+  5. no automatic hybrid pages: a build with fewer than 30 points in every tree belongs to a named hybrid when it fits one that
+     qualifies (the simulator ships a build for it, it is among talentsforever.com's popular builds, or it already has a named page),
+     otherwise it is an alternative on its biggest tree's page; open_builds no longer creates a hybrid slot from a search winner;
+  6. in the optimality pass (not before): the search penalty goes (FAIL_STEP and the core-share ratio, raid and leveling); a search
+     ranks on the raw score and keeps two leaders, the best build overall and the best that passes its rule; the polish, the
+     certificate and the page pick work from the passing leader, and the overall leader is recorded as "fails the rule" with what it
+     would have gained.
+  The bar: both builds on the same fights on two seeds; where the order of two builds changes with the gear set, each is judged in a
+  set made for it before one replaces the other (Frost Med against 17/2/32 is the first case; it waits for the gear_tiers fix,
+  search-improvements 0q). Class books: the trainer-ranks assumption is a finding since the same day (the audit's research: the books
+  drop in Classic's Ruins of Ahn'Qiraj, which Forever's roadmap lacks; no source on Wowhead's Forever pages; the simulator's own default),
+  checked again when the raids of 2026-12-09 open (launch checklist).
 - **Options against upstream's defaults** (2026-11-20, the independent audit; `raidsim/options_check.py --write` ->
   `_reference/options-check.md`, every row a real gap fixed or a deliberate difference with its measured size; run it after every
   re-pin and after editing an entry's options, next to `spec_check.py`, which only finds names the protos lack). Found by it or on the

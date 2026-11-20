@@ -269,6 +269,9 @@ def tier_lines(cls, spec, src, top):
         o.append(f"| {name} | {tier_dps(r, f'{t}-raid')} | {tl} |")
     o += ["", "*Each row is in that tier's own gear set; the DPS at the top of the page is this build in the standard set, so the two do "
           "not match.*"]   # 2026-11-08 full page read S9
+    ng = (r.get("pick_tiers") or {}).get("note_gear")
+    if ng:   # 2026-11-20 (the audit): the pick and the search's winner swap places between gear sets
+        o += ["", f"*{ng}*"]
     o.append("")
     if r.get("_prev"):   # 2026-10-15 page audit B2: the previous run keeps the stale caveat when it predates the current simulator
         o += [f"*From the previous search run (searched {tier_date(r) or 'on an earlier date'}); a new run is under way and will replace "
@@ -585,6 +588,39 @@ def raid_casts_of(cls, entry, label):
 _RAID_SIG = {}
 
 
+SIG_STORE_FILE = HERE / "raidsim" / "signature-verdicts.json"
+try:
+    _SIG_STORE = json.load(open(SIG_STORE_FILE, encoding="utf-8")) if SIG_STORE_FILE.exists() else {}
+except (OSError, ValueError):
+    _SIG_STORE = {}
+
+
+def _save_sig_store():
+    tmp = SIG_STORE_FILE.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps(_SIG_STORE, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+    tmp.replace(SIG_STORE_FILE)
+
+
+_SPECS_CACHE = {}
+
+
+def _sig_fingerprint(cls, entry, b):
+    """What a stored verdict was judged on: the build's talents, the entry's raid rotation (the file's text), its options, raid-only
+    options, gear, distance and facing."""
+    import hashlib
+    if "d" not in _SPECS_CACHE:
+        _SPECS_CACHE["d"] = json.load(open(HERE / "raidsim" / "specs.json", encoding="utf-8"))
+    e = (_SPECS_CACHE["d"].get(cls) or {}).get(entry)
+    if not e:
+        return None
+    rot = e.get("apl_opt_raid") or e.get("apl") or ""
+    rp = ROOT / rot if rot.startswith("_reference/") else None
+    rtext = rp.read_text(encoding="utf-8") if rp and rp.exists() else rot
+    blob = json.dumps([sorted(rs.flat(b).items()), rtext, e.get("spec"), e.get("raid_spec"), e.get("gear"), e.get("distance"),
+                       e.get("in_front")], sort_keys=True, default=str)
+    return hashlib.sha1(blob.encode("utf-8")).hexdigest()[:16]
+
+
 def raid_sig_check(cls, spec, b, entry):
     """A raid build's signature-spell check (user rule 2026-10-22: "The specs should use the spells that make that spec, that spec";
     signature_spells.json, raidsim/raid_signature.py) in its page entry: the environments run's full-raid shares and casts (recorded since
@@ -606,7 +642,19 @@ def raid_sig_check(cls, spec, b, entry):
         f = paths.raidsim_dir(cls) / f"{entry}-environments.json"
         _RAID_SIG[key] = {x["label"]: x for x in json.load(open(f, encoding="utf-8"))["results"]} if f.exists() else {}
     row = _RAID_SIG[key].get(b["id"]) or {}
+    # One verdict per build (2026-11-20, recommended by the audit session, accepted by the user): the build's full-raid shares are
+    # judged once, from the race that first measured them in this setup (its build, the entry's raid rotation, options, gear), and stored
+    # in raidsim/signature-verdicts.json; a later race of the same setup does not re-judge them, so a build near its floor stops flipping
+    fp = _sig_fingerprint(cls, entry, b)
+    sk = f"{cls}/{entry}/{b['id']}"
+    st = _SIG_STORE.get(sk)
+    if st and st.get("fingerprint") == fp and st.get("shares"):
+        return RSG.check_shares(cls, spec, st["shares"], st.get("casts"), held)
     if row.get("raid_shares"):
+        if fp:
+            _SIG_STORE[sk] = {"fingerprint": fp, "shares": row["raid_shares"], "casts": row.get("raid_casts"),
+                              "date": datetime.date.today().isoformat()}
+            _save_sig_store()
         return RSG.check_shares(cls, spec, row["raid_shares"], row.get("raid_casts"), held)
     m = ((((_RAID_SIG["audit"].get(cls) or {}).get("entries") or {}).get(entry) or {}).get("builds") or {}).get(b["id"]) or {}
     if m.get("raid_measured_shares"):   # re-checked against the rule as it is now (the audit's own verdict may predate a rule change)
@@ -945,6 +993,23 @@ def variant_ids(cls, top, builds, nums):
     return {lab for lab, _ in variant_best(cls, top, builds, nums)[1].values()}
 
 
+def fastest_damage_leveling(cls, spec, nums):
+    """(spec, build, level-weighted seconds per kill) of the class's fastest leveling damage spec: every spec with a leveling page but
+    the healing and tanking ones (LEVEL_AS keys, HEAL_TREES), each by its page pick (2026-11-20)."""
+    g = own_rotation_only(cls, SM.grid(cls, list(rr.builds(cls).values())), nums)
+    best = None
+    for s2, modes in g.items():
+        if s2 == spec or (cls, s2) in SM.LEVEL_AS or s2 in SM.HEAL_TREES.get(cls, ()):
+            continue
+        ranked = rank_builds(cls, "leveling", modes.get("leveling") or [], nums)
+        if not ranked:
+            continue
+        w = weighted(nums[1].get(ranked[0]["id"]) or {})
+        if w and (best is None or w < best[2]):
+            best = (s2, ranked[0], w)
+    return best
+
+
 def mode_section(cls, spec, mode, builds, nums, src):
     """The body of one spec x mode page."""
     R, L, H = nums
@@ -971,6 +1036,19 @@ def mode_section(cls, spec, mode, builds, nums, src):
             return o
         return ["No build for this spec in this mode yet.", ""]
     top = ranked[0]
+    # healer and tank leveling pages lead with the faster option (2026-11-20, recommended by the audit session, accepted by the user):
+    # which damage spec of the class levels fastest and by how much, then this page's build, to level as the healer or tank itself
+    if mode == "leveling" and (cls, spec) in SM.LEVEL_AS:
+        fl = fastest_damage_leveling(cls, spec, nums)
+        wm = weighted(L.get(top["id"]) or {})
+        if fl and wm:
+            fspec, _, fw = fl
+            job = "healer" if spec in SM.HEAL_TREES.get(cls, ()) else "tank"
+            r = wm / fw
+            how = f"about {r:.1f} times as fast" if r >= 1.5 else f"{r - 1:.0%} faster" if r > 1 else f"{1 - r:.0%} slower"
+            o += [f"> **The fastest way to level:** as **{fspec}** ([{fspec} leveling](../leveling/{SM.spec_slug(cls, fspec)}.md)), "
+                  f"{fw:.0f} s a kill (level-weighted, 20-60) against {wm:.0f} s for this {job} build: {how}. Switch your talents to {spec} "
+                  f"at 60 (a respec at a class trainer). The build below is to level as the {job} itself.", ""]
     o += [f"**{link(cls, top, src)}** ({rs.split_of(cls, rs.flat(top))}) — {tree_link(cls, top)}", ""]
     B = rr.builds(cls)
     if top.get("raid_path"):   # a healer or tank spec levels straight into its raid build (user decision, 2026-09-30)

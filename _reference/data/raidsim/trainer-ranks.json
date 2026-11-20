@@ -1,5 +1,5 @@
 {
- "assumption": "Spell ranks: trainer ranks only. The class books' ranks (Grimoire of Shadow Bolt X, Tome of Frostbolt XI and the like; Ruins of Ahn'Qiraj in Classic) are assumed not to be in Forever yet.",
+ "assumption": "Spell ranks: trainer ranks only. The class books' ranks (Grimoire of Shadow Bolt X, Tome of Frostbolt XI and the like) are not in Forever on the evidence there is (2026-11-20): in Classic every one drops in the Ruins of Ahn'Qiraj, which Forever's roadmap does not have; Wowhead's Forever pages list no source for them; the simulator's own authors leave them off by default. Checked again when the raids of 2026-12-09 open.",
  "source": "sim/core/spelldata/book_ranks.go of the pinned simulator and our spellbooks' rank numbers (trainer_ranks.py --map)",
  "map": {
   "25286": {
@@ -266,5 +266,6 @@
    "trainer_rank": 5,
    "book": "Book of Ferocious Bite V, which teaches rank 6"
   }
- }
+ },
+ "assumption_research": "2026-11-20, the independent audit session's research (user: \"do your own full research on that\"): the client has the book items (Tome of Frostbolt XI 21214, Book of Starfire VII 21295 ...) and lists a book rank's skill row like a trained one; Forever's raids of 2026-12-09 are The Barrow Deeps, Hyjal Summit and Onyxia's Lair; wowsims/forever commit b6657d382 (2026-11-01): \"The class books may not be there at launch, so nothing should need them by default.\""
 }

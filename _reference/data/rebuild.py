@@ -16,7 +16,7 @@ Per class (its module's PIPELINE dict names the scorer model, the hand draft, th
   race        fightlab/run.py: the hand draft against every candidate at every level (the sim decides; printed and logged)
   report      fightlab/run.py --write with --deltas and --gear-tiers for the optimizer build vs the hand draft (+ extra reports)
   sensitivity fightlab/sensitivity.py --write for the optimizer build and the hand draft
-  adopt       (opt-in) if the race winner beats the hand draft by more than RACE_MARGIN (2%, level-weighted mean time per
+  adopt       (opt-in) if the race winner beats the hand draft by more than RACE_MARGIN (0.5% since 2026-11-20, 2% before; level-weighted mean time per
               kill), the hand draft takes the winner's allocation and order before the report runs (the old draft is saved
               as a candidate; core/flex are rebuilt from the sim's talent values, notes and open questions are kept)
   variants    the module's PIPELINE["variants"] (a spec model run with table overrides, e.g. the mage's AoE grinding profile with
@@ -71,7 +71,7 @@ STEPS = ["effects", "calibrate", "race", "adopt", "report", "sensitivity", "vari
 HL = HERE / "heallab"
 HEALERS = {"priest": "priest", "paladin": "paladin", "shaman": "shaman", "druid": "druid"}
 LOG = FL / "last-rebuild.json"
-RACE_MARGIN = 0.02    # adopt the race winner only when it beats the hand draft by more than this (weighted mean time per kill)
+RACE_MARGIN = 0.005   # adopt the race winner only when it beats the hand draft by more than this (weighted mean time per kill)  # 0.5% since 2026-11-20 (recommended by the audit session, accepted by the user: the 2% adopt bar goes; 2% before)
 RACE_NOISE = 0.01     # calibration stop rule: a new build must beat the best so far by more than this
 
 

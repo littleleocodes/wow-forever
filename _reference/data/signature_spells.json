@@ -101,10 +101,12 @@
     "Raptor Strike",
     "Mongoose Bite",
     "Lacerate",
-    "Wing Clip"
+    "Wing Clip",
+    "Strider Kick",
+    "Lacerating Strikes"
    ],
    "min_share": 0.5,
-   "note": "the melee hunter; user 2026-10-24: 'melee hunter doesn't NEED to use Mongoose bite, it just simply need to have majority of it attacks melee ... if the best spec is the 16/11/24 spec or whatever it was that is fine': no required spell, only the melee share; 2026-11-06 (user decision, the one-tree Survival search): while leveling the pet counts, as in the Beast-Survival rule. The pet fights in melee beside the hunter; without it the fastest one-tree build (8/13/30) read 34% and only a build forced to drop Serpent Sting and Immolation Trap passed, 10% slower per kill. The raid rule is unchanged",
+   "note": "the melee hunter; user 2026-10-24: 'melee hunter doesn't NEED to use Mongoose bite, it just simply need to have majority of it attacks melee ... if the best spec is the 16/11/24 spec or whatever it was that is fine': no required spell, only the melee share; 2026-11-06 (user decision, the one-tree Survival search): while leveling the pet counts, as in the Beast-Survival rule. The pet fights in melee beside the hunter; without it the fastest one-tree build (8/13/30) read 34% and only a build forced to drop Serpent Sting and Immolation Trap passed, 10% slower per kill. The raid rule is unchanged 2026-11-20 (decided by the independent audit session under the user's delegation, not the user's own wording): Strider Kick and Lacerating Strikes join the core, raid and leveling (\"Lacerate\" was the talent's old name and stays), and Windfury Totem's extra attacks count as melee for every rule (raid_signature.WHITE_ALIASES): the simulator's melee Survival build with its Raptor read 42.9% before and 57.6% after (82% of the hunter's own damage); the pet stays out of the raid core.",
    "modes": {
     "leveling": {
      "required": [],
@@ -114,7 +116,9 @@
       "Mongoose Bite",
       "Lacerate",
       "Wing Clip",
-      "pet"
+      "pet",
+      "Strider Kick",
+      "Lacerating Strikes"
      ],
      "min_share": 0.5
     }
@@ -154,7 +158,10 @@
     "Raptor Strike",
     "Mongoose Bite",
     "Lacerate",
-    "pet"
+    "pet",
+    "Strider Kick",
+    "Wing Clip",
+    "Lacerating Strikes"
    ],
    "min_share": 0.5,
    "modes": {
@@ -164,7 +171,10 @@
       "melee",
       "Raptor Strike",
       "Mongoose Bite",
-      "pet"
+      "pet",
+      "Strider Kick",
+      "Wing Clip",
+      "Lacerating Strikes"
      ],
      "min_share": 0.5
     },
@@ -175,12 +185,15 @@
       "Raptor Strike",
       "Mongoose Bite",
       "Lacerate",
-      "pet"
+      "pet",
+      "Strider Kick",
+      "Wing Clip",
+      "Lacerating Strikes"
      ],
      "min_share": 0.5
     }
    },
-   "note": "Beast-Survival: melee with Beast Mastery's aspect and pet talents; Summon Hawk with Lone Wolf in a raid; user 2026-10-24: 'melee hunter doesn't NEED to use Mongoose bite, it just simply need to have majority of it attacks melee ... if the best spec is the 16/11/24 spec or whatever it was that is fine': no required spell, only the melee share"
+   "note": "Beast-Survival: melee with Beast Mastery's aspect and pet talents; Summon Hawk with Lone Wolf in a raid; user 2026-10-24: 'melee hunter doesn't NEED to use Mongoose bite, it just simply need to have majority of it attacks melee ... if the best spec is the 16/11/24 spec or whatever it was that is fine': no required spell, only the melee share 2026-11-20: the lists brought in line with the Forever spellbook by the independent audit's drift scan (decided by the audit session under the user's delegation): Strider Kick, Wing Clip and Lacerating Strikes added, as Survival got them."
   }
  },
  "mage": {
@@ -218,11 +231,11 @@
    "core": [
     "Frostbolt",
     "Ice Lance",
-    "Frost Blast",
     "Cone of Cold",
     "Blizzard"
    ],
-   "min_share": 0.6
+   "min_share": 0.6,
+   "note": " 2026-11-20: the lists brought in line with the Forever spellbook by the independent audit's drift scan (decided by the audit session under the user's delegation): 'Frost Blast', no spell or talent now, dropped."
   },
   "Hybrid Arcane/Frost": {
    "required": [
@@ -233,10 +246,11 @@
     "Frostbolt",
     "Arcane Missiles",
     "Ice Lance",
-    "Arcane Blast"
+    "Arcane Blast",
+    "Cone of Cold"
    ],
    "min_share": 0.6,
-   "note": "Missile Barrage with Shatter and Fingers of Frost",
+   "note": "Missile Barrage with Shatter and Fingers of Frost 2026-11-20: the lists brought in line with the Forever spellbook by the independent audit's drift scan (decided by the audit session under the user's delegation): Cone of Cold added (a Frost spell; 16.7% where the hybrid plays upstream's frost).",
    "enabled_by": {
     "Arcane Missiles": "Missile Barrage"
    },
@@ -346,10 +360,11 @@
     "Shadow Word: Pain",
     "Mind Blast",
     "Mind Flay",
-    "Devouring Plague"
+    "Devouring Plague",
+    "Shadow Word: Death"
    ],
    "min_share": 0.6,
-   "note": "the wand is not Shadow"
+   "note": "the wand is not Shadow 2026-11-20: the lists brought in line with the Forever spellbook by the independent audit's drift scan (decided by the audit session under the user's delegation): Shadow Word: Death added (8-9% of Shadow's raid builds)."
   },
   "Holy": {
    "required": [
@@ -665,9 +680,12 @@
     "Rend",
     "Whirlwind",
     "Heroic Strike",
-    "Deep Wounds"
+    "Deep Wounds",
+    "Spearing Strike",
+    "Hamstring"
    ],
-   "min_share": 0.8
+   "min_share": 0.8,
+   "note": " 2026-11-20: the lists brought in line with the Forever spellbook by the independent audit's drift scan (decided by the audit session under the user's delegation): Spearing Strike and Hamstring added."
   },
   "Fury": {
    "required": [
@@ -679,9 +697,11 @@
     "Whirlwind",
     "Heroic Strike",
     "Execute",
-    "Slam"
+    "Slam",
+    "Deep Wounds"
    ],
-   "min_share": 0.8
+   "min_share": 0.8,
+   "note": " 2026-11-20: the lists brought in line with the Forever spellbook by the independent audit's drift scan (decided by the audit session under the user's delegation): the Deep Wounds bleed added (the bench books it as 'Deep Wound', aliased)."
   },
   "Protection": {
    "required": [

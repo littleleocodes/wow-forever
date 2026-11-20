@@ -309,6 +309,37 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
     dropped = G.drop_missing_enchants(r["items"], repo)   # an enchant carried from a set the official database lacks (2026-10-22)
     if dropped:
         r["enchants_dropped"] = dropped
+    # The guard (2026-11-20, search-improvements 0q: sets of level-29/30 items had replaced good ones; the previous set leaves
+    # optimize_set's race when any of its items is outside the tier's pool, and then nothing compared the new set with it): a new set is
+    # written only when it scores at least the set it replaces on the confirmation seed and fills every slot the old one filled; else
+    # the old set stays, loudly.
+    if p.exists():
+        old = json.load(open(p, encoding="utf-8"))["items"]
+        old = [dict(x) if x else {} for x in old] + [{}] * (17 - len(old))
+        new = [dict(x) if x else {} for x in r["items"]] + [{}] * (17 - len(r["items"]))
+        empty = [i for i in range(17) if old[i].get("id") and not new[i].get("id")]
+        # the reference (the audit's refinement, same day): the old set when every item is in the tier's pool; else the old set repaired,
+        # its out-of-pool slots re-filled with the new set's picks and everything else kept (after a pool change a correct new set may
+        # score below the old one); the repaired set also competes: when it wins, it is written
+        out_of_pool = [i for i in range(17) if old[i].get("id") and not (old[i]["id"] in db and pool(db[old[i]["id"]]))]
+        ref = [dict(new[i]) if i in out_of_pool else dict(old[i]) for i in range(17)]
+        rows = G.run_bench(repo, G.bench_cfg(e, repo, [{"label": "new", "talents": talents, "gear_json": {"items": new}},
+                                                        {"label": "previous", "talents": talents, "gear_json": {"items": ref}}],
+                                              a.confirm, 2, setting), f"guard-{cls}-{SM.slug(spec)}-{tier}")
+        nv, ov = (rows.get("new") or {}).get("dps") or 0.0, (rows.get("previous") or {}).get("dps") or 0.0
+        if nv < ov or empty:
+            what = "previous (the guard)" if not out_of_pool else f"previous, repaired in slots {out_of_pool} (the guard)"
+            print(f"  REFUSED {p.name}: the new set ({r.get('chosen')}, item level {r.get('ilvl')}) scores {nv:.1f} against the "
+                  f"{'repaired ' if out_of_pool else ''}previous set's {ov:.1f} on seed 2" + (f" and empties slots {empty}" if empty else "")
+                  + ("; the repaired previous set is written" if out_of_pool else "; the previous set stays"), flush=True)
+            if out_of_pool:
+                p.write_text(json.dumps({"items": ref}, indent=1) + "\n", encoding="utf-8")
+            return dict(r, items=ref, chosen=what,
+                        refused={"new_dps": round(nv, 2), "previous_dps": round(ov, 2), "empty_slots": empty, "repaired_slots": out_of_pool,
+                                 "new_ilvl": r.get("ilvl"), "new_names": r.get("names")},
+                        names=[db.get(x.get("id"), {}).get("name") if x.get("id") else None for x in ref],
+                        entry=entry_name, gear=p.relative_to(ROOT).as_posix(), date=TODAY, setting=setting)
+        r["guard"] = {"new_dps": round(nv, 2), "previous_dps": round(ov, 2), "repaired_slots": out_of_pool}
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps({"items": r["items"]}, indent=1) + "\n", encoding="utf-8")
     return dict(r, entry=entry_name, gear=p.relative_to(ROOT).as_posix(), date=TODAY, setting=setting)

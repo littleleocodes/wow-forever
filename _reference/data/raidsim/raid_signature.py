@@ -35,6 +35,9 @@ SHARE_TOL = 0.005    # rotation search: a candidate may not lower a protected bu
 CAST_KEEP = 0.5      # rotation search: a required spell's casts may not fall below this share of the current rotation's (gated off)
 NON_SPELL = ("pet", "melee", "Auto Shot")
 WHITE = ("Auto Attack", "Melee", "Melee (off-hand)", "Melee (Off Hand)", "Attack")   # "Attack": the bench's name for some white swings
+# Extra white swings booked under another name, counted as "melee" too (2026-11-20, the independent audit's decision under the user's
+# delegation: the character's own weapon swings; it can only raise a melee share): Windfury Totem's extra attacks
+WHITE_ALIASES = ("Windfury Totem",)
 
 
 def enabled():
@@ -231,7 +234,7 @@ def matches(core, name):
     if name.startswith("Pet: "):
         return False
     if core == "melee":
-        return name in WHITE
+        return name in WHITE or name in WHITE_ALIASES
     if core == "Auto Shot":
         return name in ("Auto Shot", "Shoot")
     name = NAME_ALIASES.get(name, name)
@@ -280,11 +283,21 @@ def casts_of(actions, names):
     return out
 
 
+# One point of tolerance at a floor (2026-11-20, recommended by the audit session, accepted by the user): a 30% floor passes at 29.0%
+FLOOR_TOL = 0.01
+
+
 def core_share(cls, spec, shares, mode="raid"):
+    """The core sources' share of the character's own damage (2026-11-20, recommended by the audit session, accepted by the user): the
+    pet's damage leaves the denominator unless the pet is in the rule's core (Beast Mastery, Beast-Survival, the warlock demon rules)."""
     r = rule(cls, spec, mode)
     if not r:
         return None
-    return round(sum(v for k, v in shares.items() if any(matches(c, k) for c in r["core"])), 4)
+    core = sum(v for k, v in shares.items() if any(matches(c, k) for c in r["core"]))
+    if "pet" in r["core"]:
+        return round(core, 4)
+    own = sum(v for k, v in shares.items() if not matches("pet", k))
+    return round(core / own, 4) if own > 0 else 0.0
 
 
 def fight_seconds():
@@ -354,7 +367,7 @@ def check_shares(cls, spec, shares, casts, held=None, mode="raid", trees=None):
     uncast = sorted(s for s in r["required"] if s not in missing and cast is not None and not any(
         (k == s or k.startswith(s + " ")) and v >= 0.5 for k, v in cast.items()))
     cs = core_share(cls, spec, shares or {}, mode) if shares else None
-    low = cs is not None and cs < r["min_share"]
+    low = cs is not None and cs < r["min_share"] - FLOOR_TOL
     cdu = cd_use(r, casts)
     low_cd = cdu is not None and cdu < float(r.get("min_cd_use") or 0.0)
     why = []

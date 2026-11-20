@@ -26,6 +26,9 @@ GLOBAL = [
         "Weapon skill / glancing blows — decides whether rogues and warriors still need +weapon-skill gear now that Weapon Expertise changed.",
         "Spell hit cap vs. +3-level bosses and whether heals can miss (Holy Precision / Divine Precision).",
         "Fire immunity in The Barrow Deeps / Hyjal Summit (Fire Mage, Fire Warlock viability).",
+        "Class books (book-only spell ranks: Tome of Frostbolt XI, Grimoire of Shadow Bolt X ...; Ruins of Ahn'Qiraj in Classic): on "
+        "2026-12-09 check whether The Barrow Deeps or Hyjal Summit drop them (or new ones). If they do, `raidsim/trainer_ranks.py "
+        "--reverse` and re-tune the raid rotations (the pages assume trainer ranks; the audit's research of 2026-11-20).",
         "Threat values of new abilities (Holy Strike, Mangle, Stormstrike, Shield Slam changes).",
     ]),
     ("Performance evidence (needed to promote a draft from 'hypothesis' to 'recommended')", [

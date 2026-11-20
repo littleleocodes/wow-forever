@@ -36,6 +36,7 @@ def main():
     ap.add_argument("--entry", required=True)
     ap.add_argument("--build", required=True)
     ap.add_argument("--iterations", type=int, default=10000)
+    ap.add_argument("--make", action="store_true", help="make new tier sets for the pick (gear_tiers.make) instead of racing it in the spec's sets")
     a = ap.parse_args()
     R.set_game("forever")
     repo = R.repo_path(argparse.Namespace(repo=None))
@@ -47,10 +48,12 @@ def main():
     split = "/".join(str(sum(r for _, r in alloc.get(t["name"], []))) for t in trees)
     slug = SM.slug(a.spec)
     path = HERE / "ml" / f"{a.cls}-{slug}.json"
+    old = {}
     if path.exists():
         (HERE / "ml" / "prev").mkdir(exist_ok=True)
         old = json.load(open(path, encoding="utf-8"))
-        if all(k in (old.get("search") or {}) for k in ("bis-dummy", "bis-raid", "prebis-dummy", "prebis-raid")) and "compare" in old:
+        # a search's finished record goes to ml/prev/ (as ml_pipeline --fresh does); an earlier pick_tiers record never overwrites it
+        if all(k in (old.get("search") or {}) for k in ("bis-dummy", "bis-raid", "prebis-dummy", "prebis-raid")) and "compare" in old                 and not old.get("pick_tiers"):
             shutil.copyfile(path, HERE / "ml" / "prev" / path.name)
     commit = R.git_commit(repo)
     today = datetime.date.today().isoformat()
@@ -58,25 +61,68 @@ def main():
            "any_split": a.spec.startswith("Hybrid"), "date": today, "commit": commit, "gear": {}, "search": {},
            "pick_tiers": {"build": a.build, "date": today, "note": "the page's pick in each tier's gear (the short-check method of "
                           "2026-11-20); no talent search"}}
-    db, zones = GT.load_db(repo)
     entry = R.SPECS[a.cls][a.entry]
+    prev_gear = old.get("gear") or {}
+    # the spec's last search (2026-11-20, the audit: where the pick and the search's winner swap places between gear sets, each tier
+    # shows the better of the two, raced in the same set on the same fights, and the record says the sets were chosen for the search's
+    # winners; the gear-dependent comparison is settled in the optimality pass): the current record when it is a search's, else ml/prev/
+    src = old if (old.get("search") and not old.get("pick_tiers")) else {}
+    pp = HERE / "ml" / "prev" / path.name
+    if not src and pp.exists():
+        pv = json.load(open(pp, encoding="utf-8"))
+        src = pv if (pv.get("search") and not pv.get("pick_tiers")) else {}
+    flat_of = lambda al: {n: k for items in al.values() for n, k in items}   # noqa: E731
+    alt_rows = {}
+    db = zones = None
     for tier in ("bis", "prebis"):
-        g = MP.gear(rec, tier, alloc, a.build, a.entry, repo, db, zones)
+        sp = GT.set_path(a.cls, a.spec, tier)
+        if sp.exists() and not a.make:
+            # the spec's own tier set as it stands (made by its search for the spec's best talents): the pick is raced in it.
+            # 2026-11-20: making a set for the pick (gear_tiers.make) gave Frost Med a set of level-30 items (528.9 DPS in a full raid
+            # against 795 in the entry's gear), so a pick's tiers use the spec's sets unless --make
+            g = dict(prev_gear.get(tier) or {}, gear=str(sp.relative_to(ROOT)).replace("\\", "/"), date=today, kept=True)
+        else:
+            if db is None:
+                db, zones = GT.load_db(repo)
+            g = MP.gear(rec, tier, R.alloc_of(b), a.build, a.entry, repo, db, zones)   # gear() takes the flat {talent: ranks}
         rec["gear"][tier] = g
         gpath = g["gear"]
         for setting in ("dummy", "raid"):
             gp = pathlib.Path(gpath) if pathlib.Path(gpath).is_absolute() else ROOT / gpath
             items = json.load(open(gp, encoding="utf-8"))["items"]
-            rows = A.bench(entry, repo, [{"label": a.build, "talents": talents, "gear_json": {"items": items}}], a.iterations, 1, setting,
-                           f"picktiers-{a.cls}-{slug}-{tier}-{setting}")
+            sw = (((src.get("search") or {}).get(f"{tier}-{setting}") or {}).get("winner") or {})
+            alt_t = R.talents_string(trees, flat_of(sw["allocation"])) if sw.get("allocation") else None
+            bl = [{"label": a.build, "talents": talents, "gear_json": {"items": items}}]
+            if alt_t and alt_t != talents:
+                bl.append({"label": "search winner", "talents": alt_t, "gear_json": {"items": items}})
+            rows = A.bench(entry, repo, bl, a.iterations, 1, setting, f"picktiers-{a.cls}-{slug}-{tier}-{setting}")
             row = rows.get(a.build) or {}
             dps = round(row.get("dps") or 0.0, 2)
             se = round((row.get("dps_stdev") or 0.0) / math.sqrt(max(1, a.iterations)), 3)
+            win = {"allocation": alloc, "split": split, "dps": dps, "se": se, "iterations": a.iterations, "build": a.build}
+            if len(bl) == 2:
+                ar = rows.get("search winner") or {}
+                adps = round(ar.get("dps") or 0.0, 2)
+                alt_rows[f"{tier}-{setting}"] = {"pick_dps": dps, "search_winner_dps": adps, "search_winner_split": sw.get("split"),
+                                                 "better": "search winner" if adps > dps else "pick"}
+                if adps > dps:
+                    win = {"allocation": sw["allocation"], "split": sw.get("split"), "dps": adps,
+                           "se": round((ar.get("dps_stdev") or 0.0) / math.sqrt(max(1, a.iterations)), 3), "iterations": a.iterations,
+                           "build": "the search's winner"}
             rec["search"][f"{tier}-{setting}"] = {"class": a.cls, "spec": a.spec, "setting": setting, "entry": a.entry, "date": today,
-                                                  "winner": {"allocation": alloc, "split": split, "dps": dps, "se": se,
-                                                             "iterations": a.iterations},
-                                                  "gear": gpath, "commit": commit, "pick_tiers": True}
-            print(f"  {tier} {setting}: {a.build} {dps:.1f} (+- {se:.2f}) in {pathlib.Path(gpath).name}", flush=True)
+                                                  "winner": win, "gear": gpath, "commit": commit, "pick_tiers": True}
+            print(f"  {tier} {setting}: {a.build} {dps:.1f} (+- {se:.2f}) in {pathlib.Path(gpath).name}"
+                  + (f"; the search's winner {sw.get('split')} {alt_rows[f'{tier}-{setting}']['search_winner_dps']:.1f}"
+                     if f"{tier}-{setting}" in alt_rows else ""), flush=True)
+    if alt_rows:
+        rec["pick_tiers"]["alt"] = alt_rows
+        # the note only where the pages' rows (full raid) differ by more than the noise: the search's winner 0.5% ahead
+        lead = {k: v for k, v in alt_rows.items() if k.endswith("-raid") and v["search_winner_dps"] > v["pick_dps"] * 1.005}
+        if lead:
+            sp_ = sorted({v["search_winner_split"] for v in lead.values() if v.get("search_winner_split")})
+            rec["pick_tiers"]["note_gear"] = (f"The tier sets were chosen for the search's winning talents ({', '.join(sp_)}), which lead the "
+                                              f"page's pick in them; each tier shows the better of the two. Which is better by gear is "
+                                              f"settled in the optimality pass: each build in a set made for it, raced on two seeds.")
     bd = rec["search"]["bis-dummy"]["winner"]
     rec["best_dps"] = rec["search"]["bis-raid"]["winner"]["dps"]
     rec["compare"] = {"setting": "dummy", "dps": {"winner": {"entry": a.entry, "dps": bd["dps"], "se": bd["se"]}}, "best_hand": a.build,

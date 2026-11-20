@@ -161,6 +161,14 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 ## Open ideas, ranked by what they could still find
 
+0q. **gear_tiers.make chose sets of level-29/30 items (2026-11-20; open, before any new set is made)**. Twice that morning: the
+    stopped ML Arcane-Frost's gear step at 10:05 (mage-hybrid-arcane-frost-bis/-prebis, average required level 29.4 against the
+    committed 47.8 / 54.0) and pick_tiers.py's first Frost Med run at 10:38 (mage-frost-bis: 528.9 DPS in a full raid against 795 in the
+    entry's gear), while ML Frost's gear step at 08:40 had made a proper set (item level 64) and the night's warlock sets are normal. The
+    pool holds the right items (Spellweaver's Turban, Choker of the Fire Lord); the choice goes wrong. All four sets restored from HEAD;
+    pick_tiers.py races a pick in the spec's existing sets (--make to make new ones). Find the cause before the optimality pass's ML
+    gear steps.
+
 0p. **The simulator's hunter rotations collapse in our bench (2026-11-20, H6; open, first after the pages)**. Read from SIML with the
     bench's -siml2json (deep-runs/siml_upstream_race.py), every upstream hunter rotation scores 360-500 DPS on every build and option set
     (turret 376, turret_hawk 485-488, melee 477-499, the weave's default 362-366) against 800-960 under ours: a conversion or setup gap

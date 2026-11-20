@@ -251,9 +251,9 @@ def write_build(cls, spec, entry, hand, st, data, ours, space):
          "open_questions": [f"A machine-searched {SM.spec_name(cls, spec)} tank build: check its threat and survival against the community's "
                             f"tank builds at launch (the simulator models no threat from other players, taunts or tank swaps)."],
          "sources": []}
-    if gain is not None and gain >= 0.02:
+    if gain is not None and gain >= 0.005:   # 0.5% since 2026-11-20 (the 2% bar goes)
         b["replaces"] = hand
-        b["notes"].insert(0, f"{gain:+.1%} tank value over the hand draft {hand} (over the 2% bar: the spec's tank pick; the hand draft stays as the alternative).")
+        b["notes"].insert(0, f"{gain:+.1%} tank value over the hand draft {hand} (over the 0.5% bar: the spec's tank pick; the hand draft stays as the alternative).")
     import builds_io as BIO   # locked, on the file as it is now (2026-11-02: other steps of the class may write the same file in parallel)
     BIO.update(cls, add=[b])
     SB = _load("spec_builds_tank", ROOT / "_reference/data/spec_builds.py")

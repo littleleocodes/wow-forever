@@ -292,15 +292,25 @@ def source_of(name, pets=()):
     return ALIASES.get(name, name)
 
 
+# One point of tolerance at a floor (2026-11-20, recommended by the audit session, accepted by the user): a 30% floor passes at 29.0%
+FLOOR_TOL = 0.01
+
+
 def core_share(shares, rl, pets=()):
-    """The share of the damage the rule's core sources carry. A damage name that extends a core spell's name counts as that spell (the
-    lab books Pyroblast's burn as "Pyroblast burn")."""
+    """The share of the character's own damage the rule's core sources carry. A damage name that extends a core spell's name counts as
+    that spell (the lab books Pyroblast's burn as "Pyroblast burn"). Since 2026-11-20 (recommended by the audit session, accepted by the
+    user) the pet's damage leaves the denominator unless the pet is in the rule's core."""
     core = set(rl["core"])
 
     def is_core(k):
         src = source_of(k, pets)
         return src in core or any(src.startswith(c + " ") for c in core if c not in ("melee", "pet", "wand"))
-    return sum(v for k, v in (shares or {}).items() if is_core(k))
+    sh = shares or {}
+    c = sum(v for k, v in sh.items() if is_core(k))
+    if "pet" in core:
+        return c
+    own = sum(v for k, v in sh.items() if source_of(k, pets) != "pet")
+    return c / own if own > 0 else 0.0
 
 
 def kills_of(r):
@@ -339,7 +349,7 @@ def check_levels(cls, spec, build, per_level, mode="leveling", rl=None):
                 uncast.append((spell, int(L), round(got, 3), round(need, 3)))
     top = max(per_level, key=lambda L: int(L)) if per_level else None
     cs = core_share(per_level[top].get("shares"), rl, per_level[top].get("pet_sources") or ()) if top is not None else None
-    ok = not miss and not uncast and not late and (cs is None or cs >= rl["min_share"])
+    ok = not miss and not uncast and not late and (cs is None or cs >= rl["min_share"] - FLOOR_TOL)
     return {"ok": ok, "rule": rl, "missing_talents": miss, "uncast": uncast, "late": late, "core_share": cs, "min_share": rl["min_share"],
             "level": int(top) if top is not None else None}
 
@@ -354,7 +364,7 @@ def verdict_text(v):
         bits.append("; ".join(f"{s} {g:.2f}/kill at {L} (needs {n:.2f})" for s, L, g, n in v["uncast"]))
     if v.get("late"):
         bits.append("; ".join(f"{s} taken at {g} (its tree allows {e})" for s, g, e in v["late"]))
-    if v["core_share"] is not None and v["core_share"] < v["min_share"]:
+    if v["core_share"] is not None and v["core_share"] < v["min_share"] - FLOOR_TOL:
         bits.append(f"core share {v['core_share']:.0%} < {v['min_share']:.0%}")
     return "OK" if v["ok"] else "FAIL: " + "; ".join(bits)
 

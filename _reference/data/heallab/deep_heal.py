@@ -263,9 +263,9 @@ def write_build(cls, spec, hand, st, data, ours, healers, paths, SM):
                    "The healer lab models one healer keeping a five-member group alive (heallab/tables.py); not an in-game measurement."],
          "open_questions": [f"A machine-searched {spec} build: check it against the community's healing builds at launch."],
          "sources": []}
-    if gain is not None and gain >= 0.02:
+    if gain is not None and gain >= 0.005:   # 0.5% since 2026-11-20 (the 2% bar goes)
         b["replaces"] = hand
-        b["notes"].insert(0, f"{gain:+.1%} capacity over the hand draft {hand} (over the 2% bar: the spec's healing pick; the hand draft stays as the alternative).")
+        b["notes"].insert(0, f"{gain:+.1%} capacity over the hand draft {hand} (over the 0.5% bar: the spec's healing pick; the hand draft stays as the alternative).")
     import builds_io as BIO   # locked, on the file as it is now (2026-11-02: the priest's raid steps write the same file in parallel)
     BIO.update(cls, add=[b])
     st["build"] = {"written": bid, "gain_vs_hand": gain}

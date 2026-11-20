@@ -20,6 +20,7 @@
 - [ ] Weapon skill / glancing blows — decides whether rogues and warriors still need +weapon-skill gear now that Weapon Expertise changed.
 - [ ] Spell hit cap vs. +3-level bosses and whether heals can miss (Holy Precision / Divine Precision).
 - [ ] Fire immunity in The Barrow Deeps / Hyjal Summit (Fire Mage, Fire Warlock viability).
+- [ ] Class books (book-only spell ranks: Tome of Frostbolt XI, Grimoire of Shadow Bolt X ...; Ruins of Ahn'Qiraj in Classic): on 2026-12-09 check whether The Barrow Deeps or Hyjal Summit drop them (or new ones). If they do, `raidsim/trainer_ranks.py --reverse` and re-tune the raid rotations (the pages assume trainer ranks; the audit's research of 2026-11-20).
 - [ ] Threat values of new abilities (Holy Strike, Mangle, Stormstrike, Shield Slam changes).
 
 ## Performance evidence (needed to promote a draft from 'hypothesis' to 'recommended')
@@ -104,14 +105,14 @@
 **Restoration — Raid healing (machine-learning search)** (`druid/research/raid/builds/restoration-ml-heal.md`)
 - [ ] A machine-searched Restoration build: check it against the community's healing builds at launch.
 
+**Restoration — Leveling into the raid build** (`druid/research/leveling/builds/restoration-leveling.md`)
+- [ ] Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
+
 **Balance — Leveling (open talent search)** (`druid/research/leveling/builds/balance-open-leveling.md`)
 - [ ] An open-search Balance leveling build: check it while leveling at launch.
 
 **Feral Combat — Leveling (open talent search)** (`druid/research/leveling/builds/feral-combat-open-leveling.md`)
 - [ ] An open-search Feral Combat leveling build: check it while leveling at launch.
-
-**Restoration — Leveling into the raid build** (`druid/research/leveling/builds/restoration-leveling.md`)
-- [ ] Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 
 ### Hunter
 
@@ -424,6 +425,12 @@
 **Prot-Ret — Raid (machine-learning search)** (`paladin/research/raid/builds/prot-ret-ml-raid.md`)
 - [ ] A machine-searched Prot-Ret build: check it against the community's Prot-Ret builds at launch.
 
+**Holy — Leveling into the raid build** (`paladin/research/leveling/builds/holy-leveling.md`)
+- [ ] Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
+
+**Protection — Leveling into the raid build** (`paladin/research/leveling/builds/protection-leveling.md`)
+- [ ] Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
+
 **Shockadin — Leveling (open talent search)** (`paladin/research/leveling/builds/shockadin-open-leveling.md`)
 - [ ] An open-search Shockadin leveling build: check it while leveling at launch.
 
@@ -432,12 +439,6 @@
 
 **Prot-Ret — Leveling (open talent search)** (`paladin/research/leveling/builds/prot-ret-open-leveling.md`)
 - [ ] An open-search Prot-Ret leveling build: check it while leveling at launch.
-
-**Holy — Leveling into the raid build** (`paladin/research/leveling/builds/holy-leveling.md`)
-- [ ] Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
-
-**Protection — Leveling into the raid build** (`paladin/research/leveling/builds/protection-leveling.md`)
-- [ ] Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 
 ### Priest
 
@@ -495,6 +496,12 @@
 **Shadow — Raid (machine-learning search)** (`priest/research/raid/builds/shadow-ml-raid.md`)
 - [ ] A machine-searched Shadow build: check it against the community's Shadow builds at launch.
 
+**Discipline — Leveling into the raid build** (`priest/research/leveling/builds/discipline-leveling.md`)
+- [ ] Check the Discipline leveling pace at launch; the raid build's talents may cost speed early.
+
+**Holy — Leveling into the raid build** (`priest/research/leveling/builds/holy-leveling.md`)
+- [ ] Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
+
 **Discipline — Leveling (open talent search)** (`priest/research/leveling/builds/discipline-open-leveling.md`)
 - [ ] An open-search Discipline leveling build: check it while leveling at launch.
 
@@ -503,12 +510,6 @@
 
 **Shadow — Leveling (open talent search)** (`priest/research/leveling/builds/shadow-open-leveling.md`)
 - [ ] An open-search Shadow leveling build: check it while leveling at launch.
-
-**Discipline — Leveling into the raid build** (`priest/research/leveling/builds/discipline-leveling.md`)
-- [ ] Check the Discipline leveling pace at launch; the raid build's talents may cost speed early.
-
-**Holy — Leveling into the raid build** (`priest/research/leveling/builds/holy-leveling.md`)
-- [ ] Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
 
 ### Rogue
 
@@ -592,6 +593,9 @@
 **Subtlety — Raid (machine-learning search)** (`rogue/research/raid/builds/subtlety-ml-raid.md`)
 - [ ] A machine-searched Subtlety build: check it against the community's Subtlety builds at launch.
 
+**Combat — Raid (machine-learning search)** (`rogue/research/raid/builds/combat-ml-raid.md`)
+- [ ] A machine-searched Combat build: check it against the community's Combat builds at launch.
+
 **Assassination — Leveling (open talent search)** (`rogue/research/leveling/builds/assassination-open-leveling.md`)
 - [ ] An open-search Assassination leveling build: check it while leveling at launch.
 
@@ -603,9 +607,6 @@
 
 **Subtlety — Leveling (open talent search)** (`rogue/research/leveling/builds/subtlety-open-leveling.md`)
 - [ ] An open-search Subtlety leveling build: check it while leveling at launch.
-
-**Combat — Raid (machine-learning search)** (`rogue/research/raid/builds/combat-ml-raid.md`)
-- [ ] A machine-searched Combat build: check it against the community's Combat builds at launch.
 
 ### Shaman
 
@@ -680,14 +681,14 @@
 **Elemental-Enhancement — Raid (machine-learning search)** (`shaman/research/raid/builds/elemental-enhancement-ml-raid.md`)
 - [ ] A machine-searched Elemental-Enhancement build: check it against the community's Elemental-Enhancement builds at launch.
 
+**Restoration — Leveling into the raid build** (`shaman/research/leveling/builds/restoration-leveling.md`)
+- [ ] Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
+
 **Elemental — Leveling (open talent search)** (`shaman/research/leveling/builds/elemental-open-leveling.md`)
 - [ ] An open-search Elemental leveling build: check it while leveling at launch.
 
 **Enhancement — Leveling (open talent search)** (`shaman/research/leveling/builds/enhancement-open-leveling.md`)
 - [ ] An open-search Enhancement leveling build: check it while leveling at launch.
-
-**Restoration — Leveling into the raid build** (`shaman/research/leveling/builds/restoration-leveling.md`)
-- [ ] Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 
 ### Warlock
 
@@ -789,6 +790,9 @@
 **Demonology — Leveling (open talent search)** (`warlock/research/leveling/builds/demonology-open-leveling.md`)
 - [ ] An open-search Demonology leveling build: check it while leveling at launch.
 
+**Destruction — Incinerate, Succubus out (the simulator's own build)** (`warlock/research/raid/builds/destruction-succubus-raid.md`)
+- [ ] Bane of Havoc copies damage done to other targets: worth nothing on a single boss (a filler here).
+
 ### Warrior
 
 **Fury — Dual Wield (simulator winner adopted 2026-09-26)** (`warrior/research/raid/builds/fury-dw-raid.md`)
@@ -866,6 +870,9 @@
 **Fury — Dual-wield (open talent search)** (`warrior/research/raid/builds/fury-dual-wield-open-raid.md`)
 - [ ] An open-search Fury build: check it against the community's Fury builds at launch.
 
+**Protection — Leveling into the raid build** (`warrior/research/leveling/builds/protection-leveling.md`)
+- [ ] Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
+
 **Arms — Leveling (open talent search)** (`warrior/research/leveling/builds/arms-open-leveling.md`)
 - [ ] An open-search Arms leveling build: check it while leveling at launch.
 
@@ -874,7 +881,4 @@
 
 **Protection — Leveling (open talent search)** (`warrior/research/leveling/builds/protection-open-leveling.md`)
 - [ ] An open-search Protection leveling build: check it while leveling at launch.
-
-**Protection — Leveling into the raid build** (`warrior/research/leveling/builds/protection-leveling.md`)
-- [ ] Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 
