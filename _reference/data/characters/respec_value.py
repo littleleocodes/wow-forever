@@ -70,9 +70,16 @@ def check(cls, rot, have, path, page_at, level, kills_at, min_minutes=20.0, figh
 
 
 def text(r, level):
-    """The planner's line, or None when the respec does not pay."""
-    if not r or not r.get("pays"):
+    """The planner's line: the respec when it pays, else one sentence saying why not (the audit session, 2026-11-20: the character
+    asked, so the page says so); None without a check."""
+    if not r:
         return None
+    if not r.get("pays"):
+        if r["minutes"] <= 0 or r["page"][level] >= r["own"][level]:
+            return ("A respec to the page's order would save nothing to 60: your path is as fast or faster (the fight lab, "
+                    f"{r['page'][level]:.1f} against your {r['own'][level]:.1f} s a kill at {level}).")
+        return (f"A respec to the page's order would save about {r['minutes']:.0f} minutes of killing to 60 ({r['page'][level]:.1f} against "
+                f"your path's {r['own'][level]:.1f} s a kill at {level}, the gap closing as your points fill in): not worth it.")
     L1 = next((L for L in r["levels"] if L > level), None)
     ahead = f", {r['page'][L1]:.1f} against {r['own'][L1]:.1f} at {L1}" if L1 else ""
     return (f"**A respec pays:** the page's build at level {level} kills in {r['page'][level]:.1f} s against your path's "

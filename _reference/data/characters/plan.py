@@ -1913,10 +1913,12 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
         o += [""]
         import respec_value as RV
         rtxt = RV.text(LAST_RESPEC.get("r"), lv)
-        if rtxt:
+        if rtxt and LAST_RESPEC["r"].get("pays"):
             trees_r, link_r = build_at(cfg["class"], LAST_RESPEC["r"]["build"])
             o += [rtxt + f" The build at level {lv}: " + "; ".join(f"**{tn}** {pts} ({', '.join(f'{t} {n}' for t, n in got)})" for tn, pts, got in trees_r)
                   + f". [Open it in the talent calculator]({link_r}).", ""]
+        elif rtxt:   # (the audit session, 2026-11-20: when the line is suppressed, one sentence says so)
+            o += [rtxt, ""]
     o += [f"- {x}" for x in cfg.get("talent_notes", [])] + ([""] if cfg.get("talent_notes") else [])
     docs = [snap["achievements"]] if snap.get("achievements") else []
     docs += [json.loads(f.read_text(encoding="utf-8")) for f in sorted((ROOT / "_characters").glob("*/armory/achievements.json"))
