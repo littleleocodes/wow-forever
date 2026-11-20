@@ -161,6 +161,19 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 ## Open ideas, ranked by what they could still find
 
+0n. **A fresh tune after a base change picks its tuning builds from the race of the old rotation (2026-11-20, frost-raid)**.
+    apl_opt.main_builds reads the entry's last race and environments report. frost-raid's fresh tune on upstream's frost rotation
+    (deep-runs/audit_raid_1120c.sh, 08:25) read the race made under our old rotation and tuned on opt-frost-raid-raid-dps and the
+    simulator's Arcane preset, not on frost-ml-raid (718 under the new rotation) and Frost Med (795); it kept nothing, so the rotation
+    is upstream's as adopted until ML Frost's rotations step tunes it on its winners. Fixed by procedure the same morning: frost-raid
+    and arcane-dps raced on their new bases first (deep-runs/base_race_1120.sh; arcane-dps's tuned raid pointer removed, as frost-raid's
+    had been). Then in code (the audit's request): apl_opt --fresh races every listed build and the entry's presets on the base rotation
+    itself (race_on_base, 3,000 fights, the tune's setting) and picks the tuning builds from that race; a non-fresh run is unchanged.
+    Checked the night's other tunes: affliction-raid, demonology-raid, bm-raid and affliction-wrack-raid were tuned on the best build
+    under their new conditions; the three old Destruction entries (fresh, with shards) on the old report's best, which was not the best
+    at their bases, but sb-raid's and fire-destro-raid's ended best after the tune, and incinerate-raid's best build gets its re-tune in
+    ML Destruction's rotations step.
+
 0m. **The order polish can accept a dead decade (2026-11-20, the independent audit's note on the mage redo)**. The Frostfire pick
     (1/27/23) has a trough at 40: 42.8 s per kill against 32.8 at 30 and 35.6 at 50 (fights of 23 s for 18 at 30; 13 deaths in 600
     fights), and its order spends 31-40 on Accelerant, Ignite and Wand Specialization, taking Pyroblast, Impact, Heating Up and Master

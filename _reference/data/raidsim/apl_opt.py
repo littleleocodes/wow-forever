@@ -550,19 +550,22 @@ def tune_builds(path, cls, trees):
     return out
 
 
-def main_builds(cls, spec, entry, repo, trees, where=None):
+def main_builds(cls, spec, entry, repo, trees, where=None, rows_on_base=None):
     """The builds a spec's rotation is tuned on: our best build and the simulator's best preset in the last race, the entry's
     `tune_builds` (builds whose own lines the rotation carries), and since 2026-10-02 every other build of ours the entry lists (the
     pages show them as alternatives; parse builds only in the raid setting): no change may cost any of them more than --max-loss.
     Before, an alternative was unprotected: the 2026-10-01 pass dropped the Frost rotation's Evocation line and cost the 1/13/37 Frost
-    build, which has no Arcane mana talents, 6.1%."""
+    build, which has no Arcane mana talents, 6.1%.
+    rows_on_base (a fresh tune, 2026-11-20): rows of a race on the base rotation itself (race_on_base), used instead of the last race
+    report, which was made under another rotation (search-improvements 0n: frost-raid's fresh tune on upstream's frost rotation had
+    read the race of our old rotation and tuned on a 598-DPS build and the Arcane preset)."""
     rep_path = paths.raidsim_dir(cls) / f"{spec}.json"
     tank = bool(entry.get("tank"))
     out = []
     data = {b["id"]: b for b in json.load(open(ROOT / cls / "research/talents/forever/proposed-builds.json", encoding="utf-8"))["builds"]}
     raid = (where or R.setting(entry)) == "raid"
-    if rep_path.exists():
-        rep = json.load(open(rep_path, encoding="utf-8"))
+    if rows_on_base is not None or rep_path.exists():
+        rep = {"results": rows_on_base} if rows_on_base is not None else json.load(open(rep_path, encoding="utf-8"))
         # 2026-10-09: only builds the entry still lists (the 70291 re-tune of the Frostfire raid rotation was tuned on frostfire-open-raid,
         # removed days before but still in the last race's report, and missed a +1.0% to +2.4% change for every current build)
         rows = [x for x in rep["results"] if x.get("dps") and not x.get("error") and not x["label"].startswith("cand-")
@@ -572,7 +575,7 @@ def main_builds(cls, spec, entry, repo, trees, where=None):
         # which leads it by 6% in a full raid)
         env = paths.raidsim_dir(cls) / f"{spec}-environments.json"
         rd = {}
-        if raid and not tank and env.exists():
+        if raid and not tank and env.exists() and rows_on_base is None:   # a race on the base is in the tune's own setting already
             rd = {x["label"]: (x.get("dps") or {}).get("raid") for x in json.load(open(env, encoding="utf-8")).get("results", [])}
         keyf = (lambda x: (0, x.get("value") or 0)) if tank else (lambda x: (1, rd[x["label"]]) if rd.get(x["label"]) else (0, x["dps"]))
         ours = sorted([x for x in rows if x["ours"]], key=keyf, reverse=True)
@@ -602,6 +605,42 @@ def main_builds(cls, spec, entry, repo, trees, where=None):
             t = R.talents_string(trees, R.alloc_of(data[bid]))
             if t not in {b["talents"] for b in out}:
                 out.append({"label": bid, "talents": t, "protect_only": True})
+    return out
+
+
+def base_rotation(entry, repo):
+    """The entry's base rotation file wherever it lives: the simulator's checkout or our own file (2026-11-19)."""
+    return (ROOT / entry["apl"]) if entry["apl"].startswith("_reference/") else (repo / entry["apl"])
+
+
+def race_on_base(cls, spec, entry, repo, trees, setting, iterations=3000):
+    """A fresh tune's own race (2026-11-20, search-improvements 0n): every build of ours the entry lists and the simulator's presets for
+    it, on the base rotation, in the tune's setting, 3,000 fights on seed 1, as report rows ({label, talents, dps, ours[, value]}), so
+    the tuning builds are the best under the rotation the tune starts from."""
+    data = {b["id"]: b for b in json.load(open(ROOT / cls / "research/talents/forever/proposed-builds.json", encoding="utf-8"))["builds"]}
+    base = str(base_rotation(entry, repo))
+    bl = [{"label": bid, "talents": R.talents_string(trees, R.alloc_of(data[bid])), "apl": base, "ours": True}
+          for bid in entry.get("builds", []) if bid in data]
+    bl += [{"label": pr["label"], "talents": pr["talents"], "apl": base, "ours": False} for pr in R.sim_presets(repo, entry)]
+    seen, uniq = set(), []
+    for b in bl:
+        if b["label"] not in seen:
+            seen.add(b["label"])
+            uniq.append(b)
+    rows = bench(entry, repo, [{k: v for k, v in b.items() if k != "ours"} for b in uniq], iterations, 1, setting, f"{cls}-{spec}-base")
+    out = []
+    ref = rows.get(uniq[0]["label"]) if uniq else None
+    for b in uniq:
+        r = rows.get(b["label"]) or {}
+        if r.get("error") or not r.get("dps"):
+            continue
+        row = {"label": b["label"], "talents": b["talents"], "dps": r["dps"], "ours": b["ours"]}
+        if entry.get("tank") and ref:
+            row["value"] = R.tank_value(r, ref)
+        out.append(row)
+    best = sorted(out, key=lambda x: -(x.get("value") or x["dps"]))[:4]
+    print(f"  raced on the base ({pathlib.Path(base).name}, {setting}, {iterations} fights): "
+          + ", ".join(f"{x['label']} {x.get('value') or x['dps']:.1f}" for x in best), flush=True)
     return out
 
 
@@ -685,7 +724,8 @@ def search(cls, spec, a, repo, N, where=None):
     tank = bool(entry.get("tank"))
     setting = where or R.setting(entry)
     trees = R.load_trees(repo, cls)
-    builds = main_builds(cls, spec, entry, repo, trees, setting)
+    rows_on_base = race_on_base(cls, spec, entry, repo, trees, setting) if getattr(a, "fresh", False) else None
+    builds = main_builds(cls, spec, entry, repo, trees, setting, rows_on_base=rows_on_base)
     if getattr(a, "tune", None):   # the given builds first; the entry's main builds stay protected (no change may cost them 0.1% either)
         extra = tune_builds(a.tune, cls, trees)
         builds = extra + [dict(b, protect_only=True) for b in builds if b["talents"] not in {x["talents"] for x in extra}]
@@ -709,7 +749,7 @@ def search(cls, spec, a, repo, N, where=None):
     # simulator's build-file rotations under apls/<class>/upstream/; the condition had read "not ours", so a fresh tune of an entry with
     # its own base started from the old tuned rotation instead)
     if getattr(a, "fresh", False):
-        base_path = (ROOT / entry["apl"]) if entry["apl"].startswith("_reference/") else (repo / entry["apl"])
+        base_path = base_rotation(entry, repo)
     else:
         base_path = R.apl_path(entry, repo, setting)
     base = json.load(open(base_path, encoding="utf-8"))
