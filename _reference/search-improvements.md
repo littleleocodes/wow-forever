@@ -161,6 +161,15 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 ## Open ideas, ranked by what they could still find
 
+0s. **Berserker Stance in the fight lab (2026-11-20, the independent audit's H7, the warrior half; the warlock's demon choice waits
+    for the leveling lane to leave the warlock module)**. The module chose Battle Stance for Arms and Fury, so Whirlwind, Berserker Rage
+    and Improved Whirlwind were blind. `BERSERKER_FROM` (a rules knob, in duel.PVE_KNOBS; 61 = never, the lab before, bit-identical):
+    Charge from Battle Stance, then Berserker Stance (+3% crit, 10% more damage taken) once the rage above what Tactical Mastery keeps is
+    spent, Whirlwind after Mortal Strike and Bloodthirst (both weapons for a dual wielder, the off hand with its own penalty). Measured
+    on the leveling picks (400 fights x seeds 1 and 2, levels 20-60, the saved rules): slower from every level tried, Arms +8.8% to
+    +11.3% time per kill (Overpower and Rend need Battle Stance), Fury +1.2% to +1.6% (0.8% faster at 50, 3.9% slower at 60). The
+    knob stays off; the next rules tune can take it (Fury's 50s are the place to look).
+
 0r. **Single-target Fire Nova in the fight lab (2026-11-20, the independent audit's H4; the optimality pass's mechanics, done early)**.
     "single targets never use Fire Nova" was hard-coded in fightlab/shaman.py. It is a rules knob now (`FIRE_NOVA_SINGLE` 0/1 with
     `FIRE_NOVA_MANA`, in duel.PVE_KNOBS; 0 is the lab before, bit-identical): Fire Nova after the shocks while a Fire totem stands and

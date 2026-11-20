@@ -247,8 +247,8 @@ MECHANICS = {
     "Flurry": "crits: +10%/rank attack speed for the next 3 swings (3 ranks, no Death Wish needed: 70753; either hand's landed white swings spend them)",
     "Reckless Swings": "off the global cooldown (assumed) while the warrior is above RECKLESS_ABOVE of its health and the mob above RECKLESS_MOB of its own: 25% of "
                        "base health, the next 4 landed melee attacks (white or ability, either hand) within 8 s give +5 rage each, 15 s cooldown",
-    "Improved Whirlwind": "not used: the Battle Stance and Defensive Stance playstyles never cast Whirlwind (Berserker Stance); the hooks take 1 s/rank off its "
-                          "cooldown and add 15%/rank to the closest mob",
+    "Improved Whirlwind": "Berserker Stance only (the BERSERKER_FROM knob, 2026-11-20; the Battle Stance and Defensive Stance playstyles never cast "
+                          "Whirlwind): 1 s/rank off its cooldown and 15%/rank to the closest mob",
     "Gore Drinker": "after Enrage, Bloodrage, Death Wish or Bloodthirst the next 3 melee attacks heal 0.5%/rank of maximum health",
     "Bloodthirst": "unlocks Bloodthirst (30 rage, 45% AP plus 30..48, 6 s cooldown)",
     "Shield Specialization": "+1%/rank block, 5 rage per block (sword and board; nothing without a shield)",
@@ -336,7 +336,14 @@ class WarriorModule(BaseModule):
     RECKLESS_ABOVE = 0.8   # Reckless Swings only above this share of the warrior's health (2026-11-03, 600 fights at 30-60, Fury and Arms
                            # leveling builds with the talent added: 0.8 -2.3% / -0.5% per kill against never; 0.4-0.6 lose to never on Arms) ...
     RECKLESS_MOB = 0.3     # ... and while the mob has more than this share of its own (the rage has to be spent)
-    ROTATION_KNOBS = {"RECKLESS_ABOVE": [0.5, 0.6, 0.7, 0.8, 0.9, 1.01], "RECKLESS_MOB": [0.0, 0.2, 0.3, 0.5]}   # tuned by rotation_opt.py
+    # Berserker Stance from this level (2026-11-20, the independent audit's H7: the module chose Battle Stance for Arms and Fury, so
+    # Whirlwind, Berserker Rage and Improved Whirlwind were blind in every leveling pick): Charge from Battle Stance, then Berserker
+    # Stance (+3% crit, 10% more damage taken) once the rage above what Tactical Mastery keeps is spent; Whirlwind after Mortal Strike or
+    # Bloodthirst, both weapons for a dual wielder. 61 = never (the lab before, bit-identical). Single mobs only: pulls of several mobs
+    # keep the area priority of the stance they start in.
+    BERSERKER_FROM = 61
+    ROTATION_KNOBS = {"RECKLESS_ABOVE": [0.5, 0.6, 0.7, 0.8, 0.9, 1.01], "RECKLESS_MOB": [0.0, 0.2, 0.3, 0.5],   # tuned by rotation_opt.py
+                      "BERSERKER_FROM": [30, 36, 40, 50, 61]}
 
     AOE = {'direct': ['Whirlwind', 'Thunder Clap', 'Cleave'], 'min_near': 2}
 
@@ -502,6 +509,8 @@ class WarriorModule(BaseModule):
         if spell.name in NO_CRIT:   # Thunder Clap (spell table, no spell crit); Rend's application and Concussion Blow (no damage)
             return -1.0
         c = 0.0
+        if self.stance == "Berserker Stance":   # "Critical strike chance increased by 3%" (BERSERKER_FROM)
+            c += 0.03
         if spell.name == "Overpower":
             c += self.tv("Improved Overpower", 0) / 100
         return c
@@ -532,7 +541,7 @@ class WarriorModule(BaseModule):
             m *= 1 + self.tv("Death Wish", 0) / 100   # "increases your Physical damage done by 20%"
         if spell.name == "Execute" and spell.dmg_max > 0:
             m *= (spell.dmg_max + getattr(spell, "rage_dmg", 0.0) * self.execute_extra) / spell.dmg_max
-        if spell.name == "Whirlwind" and self.rank("Improved Whirlwind") and f and f.m is min(f.alive() or [f.m], key=lambda x: x.dist):
+        if spell.name in ("Whirlwind", "Whirlwind (off-hand)") and self.rank("Improved Whirlwind") and f and f.m is min(f.alive() or [f.m], key=lambda x: x.dist):
             m *= 1 + self.tv("Improved Whirlwind", 1) / 100   # 70753: "increases the damage it deals to the closest enemy by 15/30%"
         return m
 
@@ -560,6 +569,8 @@ class WarriorModule(BaseModule):
     def split_damage_taken(self, fight, dmg):
         if self.prot and self.stance == "Defensive Stance":
             dmg *= 0.90   # Defensive Stance: "Decreases damage taken by 10%" (melee and spells)
+        if self.stance == "Berserker Stance":
+            dmg *= 1.10   # Berserker Stance: "all damage taken is increased by 10%" (BERSERKER_FROM)
         if fight.p.buff("Death Wish", fight.t):
             dmg *= 1 + self.tv("Death Wish", 1) / 100   # Death Wish: "increases all damage you take by 5%"
         return dmg
@@ -632,6 +643,8 @@ class WarriorModule(BaseModule):
         self.flurry_swings = 0
         if self.prot:
             self.prot_fight_start(fight)
+        elif self.zerk() and self.stance != "Battle Stance" and "Charge" in self.spells and p.ready("Charge", t):
+            self._set_stance(fight, "Battle Stance")   # Charge needs Battle Stance; the swap comes before Bloodrage's rage
         br = self.spells.get("Bloodrage")
         if br is not None and p.ready("Bloodrage", t) and p.hp > 0.45 * p.hp_max:
             gain = 10.0 * (1 + self.tv("Improved Bloodrage", 0) / 100)   # "all the Rage generated": the instant 10 and the 10 over 10 s
@@ -768,10 +781,20 @@ class WarriorModule(BaseModule):
     def on_tick(self, fight, spell, amount, crit):
         pass
 
+    def zerk(self):
+        """Whether this fight is played in Berserker Stance (BERSERKER_FROM): Arms and Fury only, once the stance is trained."""
+        return not self.prot and self.level >= self.BERSERKER_FROM and "Berserker Stance" in self.spells
+
     def after_cast(self, fight, spell):
         p, t = fight.p, fight.t
         if spell.cooldown > 0:
             p.cooldowns[spell.name] = t + spell.cooldown
+        if spell.name == "Whirlwind" and p.oh is not None and fight.m is not None and fight.m.hp > 0:
+            # "causing weapon damage from both melee weapons" (BERSERKER_FROM): the off-hand hit, with the off hand's own penalty
+            oh = Spell("Whirlwind (off-hand)", "physical", kind="melee", resource="none")
+            oh.weapon_pct = 1.0
+            oh.hand = "oh"
+            fight.resolve_attack(oh, white=False, hand="oh")
         if spell.name == "Whirlwind" and self.rank("Improved Whirlwind"):   # 70753: "Reduces the cooldown of your Whirlwind ability by 1/2 seconds"
             p.cooldowns[spell.name] = t + max(0.0, spell.cooldown - self.tv("Improved Whirlwind", 0))
         if spell.name == "Overpower":
@@ -863,8 +886,13 @@ class WarriorModule(BaseModule):
 
         charge, shout, vr, execute, over, ms, rend, hs, bt, cb, brage = (sp.get(n) for n in ("Charge", "Battle Shout", "Victory Rush", "Execute", "Overpower", "Mortal Strike", "Rend", "Heroic Strike", "Bloodthirst", "Concussion Blow", "Berserker Rage"))
         slam, spear = sp.get("Slam"), sp.get("Spearing Strike")
+        ww = sp.get("Whirlwind")
         hp = m.hp
         self._bloodrage_tick(fight)
+        # Berserker Stance (BERSERKER_FROM): once in melee, with no Overpower to take and the rage above Tactical Mastery's spent
+        if (in_melee and self.zerk() and self.stance != "Berserker Stance" and p.rage <= self._retain() + 10
+                and not (over and p.buff("Overpower", t))):
+            self._set_stance(fight, "Berserker Stance")
         if not in_melee:
             if charge and can(charge) and 8.0 <= m.dist <= 25.0 and fight.swings == 0 and not m.in_melee:
                 return charge
@@ -886,6 +914,8 @@ class WarriorModule(BaseModule):
             return ms
         if bt and can(bt):
             return bt
+        if ww and can(ww) and m.dist <= 8.0 and hp > 0.1 * m.hp_max:   # Berserker Stance only (can: STANCES)
+            return ww
         if rend and can(rend) and not fight.dot_active("Rend") and hp > 0.35 * m.hp_max and (ms is None or p.rage >= 40 or not p.ready("Mortal Strike", t)):
             return rend
         reserve = 30.0 if (ms and p.cooldowns.get("Mortal Strike", 0) - t < 3.0) else 0.0
