@@ -254,7 +254,11 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
     rotation, 766.7 under upstream's melee rotation (+2.9%: Serpent Sting from range past the dead zone, 12% of the damage, and
     Immolation Trap kept up, 12%). The hunter parity race was run again the same day (record raidsim/siml-upstream-race.json). Our own
     rotations cast 14325 only before the pull, with no aura check, so they were never caught; a rotation from the unpatched simulator
-    needs the same mapping whenever it names a rank a patch moves.
+    needs the same mapping whenever it names a rank a patch moves. The race (10,000 fights, seeds 1 / 2, full raid, our options) and its
+    decisions (deep-runs/hunter_upstream_base_1120.py): bm-raid, mm-raid, mm-lonewolf-raid and melee-dps take upstream's rotation as
+    their base (the page picks +2.1%, +0.7-0.8%, a tie, +3.1% / +2.2%); survival-pet-raid keeps ours (its Raptor build 0.9% ahead under
+    ours on both seeds). Left: on the training dummy the converted rotations cast no Hunter's Mark (the hunter knows rank 4's id
+    only); the full raid's debuff covers it, so only dummy numbers lack the mark (BM on the dummy still 545 against 529 under ours).
 
 0o. **A search may target an entry that was never raced (2026-11-20, ML Arcane-Frost)**. ml_pipeline's targets step picks the entries
     from the race reports: arcane-frost-raid, new that morning and not raced yet, was invisible, and ML Arcane-Frost targeted frost-raid,

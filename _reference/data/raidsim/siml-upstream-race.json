@@ -31,73 +31,73 @@
   },
   "dps": {
    "ours|ours|mm-hawk-raid": {
-    "1": 863.98,
-    "2": 863.6
+    "1": 945.14,
+    "2": 945.52
    },
    "ours|ours|beast-mastery-ml-raid": {
-    "1": 907.08,
-    "2": 907.44
+    "1": 1025.48,
+    "2": 1025.23
    },
    "ours|ours|beast-marks-ml-raid": {
-    "1": 894.07,
-    "2": 894.26
+    "1": 998.41,
+    "2": 998.91
    },
    "ours|ours|up:bm": {
-    "1": 901.37,
-    "2": 901.72
+    "1": 1019.71,
+    "2": 1019.47
    },
    "turret_hawk|ours|mm-hawk-raid": {
-    "1": 456.7,
-    "2": 456.89
+    "1": 967.37,
+    "2": 967.78
    },
    "turret_hawk|ours|beast-mastery-ml-raid": {
-    "1": 484.77,
-    "2": 484.52
+    "1": 1047.5,
+    "2": 1047.11
    },
    "turret_hawk|ours|beast-marks-ml-raid": {
-    "1": 487.52,
-    "2": 487.44
+    "1": 1019.68,
+    "2": 1019.93
    },
    "turret_hawk|ours|up:bm": {
-    "1": 481.85,
-    "2": 481.6
+    "1": 1041.54,
+    "2": 1041.15
    },
    "ours|up:bm|mm-hawk-raid": {
-    "1": 863.42,
-    "2": 863.18
+    "1": 896.6,
+    "2": 896.83
    },
    "ours|up:bm|beast-mastery-ml-raid": {
-    "1": 905.93,
-    "2": 906.31
+    "1": 953.7,
+    "2": 954.1
    },
    "ours|up:bm|beast-marks-ml-raid": {
-    "1": 891.76,
-    "2": 891.43
+    "1": 933.26,
+    "2": 933.6
    },
    "ours|up:bm|up:bm": {
-    "1": 900.22,
-    "2": 900.58
+    "1": 947.95,
+    "2": 948.34
    },
    "turret_hawk|up:bm|mm-hawk-raid": {
-    "1": 456.8,
-    "2": 456.74
+    "1": 918.74,
+    "2": 919.33
    },
    "turret_hawk|up:bm|beast-mastery-ml-raid": {
-    "1": 482.87,
-    "2": 483.04
+    "1": 974.9,
+    "2": 975.06
    },
    "turret_hawk|up:bm|beast-marks-ml-raid": {
-    "1": 485.01,
-    "2": 484.88
+    "1": 954.58,
+    "2": 954.64
    },
    "turret_hawk|up:bm|up:bm": {
-    "1": 479.95,
-    "2": 480.11
+    "1": 968.97,
+    "2": 969.12
    }
   },
   "our_best": "ours|ours|beast-mastery-ml-raid",
-  "best": "ours|ours|beast-mastery-ml-raid",
-  "gain": 0.0,
+  "best": "turret_hawk|ours|beast-mastery-ml-raid",
+  "gain": 0.0214,
   "note": ""
  },
  "mm-raid": {
@@ -125,41 +125,41 @@
   },
   "dps": {
    "ours|ours|bm-mm-raid": {
-    "1": 824.59,
-    "2": 824.92
+    "1": 908.11,
+    "2": 908.56
    },
    "ours|ours|bm-mm-full-buffs-raid": {
-    "1": 834.7,
-    "2": 834.65
+    "1": 917.67,
+    "2": 917.71
    },
    "ours|ours|opt-mm-raid-raid-dps": {
-    "1": 831.35,
-    "2": 831.3
+    "1": 951.93,
+    "2": 951.65
    },
    "ours|ours|marksmanship-ml-raid": {
-    "1": 942.41,
-    "2": 943.2
+    "1": 1009.39,
+    "2": 1010.34
    },
    "turret|ours|bm-mm-raid": {
-    "1": 458.16,
-    "2": 458.02
+    "1": 924.22,
+    "2": 924.96
    },
    "turret|ours|bm-mm-full-buffs-raid": {
-    "1": 459.49,
-    "2": 459.69
+    "1": 933.4,
+    "2": 933.49
    },
    "turret|ours|opt-mm-raid-raid-dps": {
-    "1": 480.75,
-    "2": 480.53
+    "1": 964.65,
+    "2": 964.67
    },
    "turret|ours|marksmanship-ml-raid": {
-    "1": 447.15,
-    "2": 447.07
+    "1": 1017.3,
+    "2": 1017.47
    }
   },
   "our_best": "ours|ours|marksmanship-ml-raid",
-  "best": "ours|ours|marksmanship-ml-raid",
-  "gain": 0.0,
+  "best": "turret|ours|marksmanship-ml-raid",
+  "gain": 0.0074,
   "note": ""
  },
  "mm-lonewolf-raid": {
@@ -194,89 +194,89 @@
   },
   "dps": {
    "ours|ours|mm-lone-wolf-raid": {
-    "1": 961.21,
-    "2": 960.97
+    "1": 967.97,
+    "2": 967.79
    },
    "ours|ours|opt-mm-lonewolf-raid-raid-dps": {
-    "1": 891.18,
-    "2": 891.43
+    "1": 896.38,
+    "2": 896.51
    },
    "ours|ours|marksmanship-ml-raid": {
-    "1": 802.3,
-    "2": 802.09
+    "1": 807.97,
+    "2": 807.85
    },
    "ours|ours|up:mm": {
-    "1": 954.18,
-    "2": 954.01
+    "1": 961.11,
+    "2": 960.9
    },
    "ours|ours|up:sv": {
-    "1": 812.67,
-    "2": 813.07
+    "1": 815.52,
+    "2": 816.3
    },
    "turret|ours|mm-lone-wolf-raid": {
-    "1": 376.49,
-    "2": 376.33
+    "1": 968.14,
+    "2": 967.88
    },
    "turret|ours|opt-mm-lonewolf-raid-raid-dps": {
-    "1": 369.41,
-    "2": 369.25
+    "1": 911.9,
+    "2": 912.0
    },
    "turret|ours|marksmanship-ml-raid": {
-    "1": 314.51,
-    "2": 314.37
+    "1": 808.87,
+    "2": 808.78
    },
    "turret|ours|up:mm": {
-    "1": 376.49,
-    "2": 376.33
+    "1": 968.65,
+    "2": 968.66
    },
    "turret|ours|up:sv": {
-    "1": 348.66,
-    "2": 348.5
+    "1": 824.69,
+    "2": 824.78
    },
    "ours|up:mm|mm-lone-wolf-raid": {
-    "1": 961.21,
-    "2": 960.97
+    "1": 967.97,
+    "2": 967.79
    },
    "ours|up:mm|opt-mm-lonewolf-raid-raid-dps": {
-    "1": 891.18,
-    "2": 891.43
+    "1": 896.38,
+    "2": 896.51
    },
    "ours|up:mm|marksmanship-ml-raid": {
-    "1": 802.3,
-    "2": 802.09
+    "1": 807.97,
+    "2": 807.85
    },
    "ours|up:mm|up:mm": {
-    "1": 954.18,
-    "2": 954.01
+    "1": 961.11,
+    "2": 960.9
    },
    "ours|up:mm|up:sv": {
-    "1": 812.67,
-    "2": 813.07
+    "1": 815.52,
+    "2": 816.3
    },
    "turret|up:mm|mm-lone-wolf-raid": {
-    "1": 376.49,
-    "2": 376.33
+    "1": 968.14,
+    "2": 967.88
    },
    "turret|up:mm|opt-mm-lonewolf-raid-raid-dps": {
-    "1": 369.41,
-    "2": 369.25
+    "1": 911.9,
+    "2": 912.0
    },
    "turret|up:mm|marksmanship-ml-raid": {
-    "1": 314.51,
-    "2": 314.37
+    "1": 808.87,
+    "2": 808.78
    },
    "turret|up:mm|up:mm": {
-    "1": 376.49,
-    "2": 376.33
+    "1": 968.65,
+    "2": 968.66
    },
    "turret|up:mm|up:sv": {
-    "1": 348.66,
-    "2": 348.5
+    "1": 824.69,
+    "2": 824.78
    }
   },
   "our_best": "ours|ours|mm-lone-wolf-raid",
-  "best": "ours|ours|mm-lone-wolf-raid",
-  "gain": 0.0,
+  "best": "turret|ours|up:mm",
+  "gain": 0.0008,
   "note": ""
  },
  "melee-dps": {
@@ -312,105 +312,105 @@
   },
   "dps": {
    "ours|ours|melee-survival-raid": {
-    "1": 737.76,
-    "2": 738.13
+    "1": 743.55,
+    "2": 743.88
    },
    "ours|ours|opt-melee-dps-raid-dps": {
-    "1": 694.83,
-    "2": 695.69
+    "1": 701.1,
+    "2": 700.92
    },
    "ours|ours|survival-raid": {
-    "1": 710.23,
-    "2": 709.32
+    "1": 715.38,
+    "2": 715.61
    },
    "ours|ours|survival-ml-parse": {
-    "1": 703.27,
-    "2": 703.28
+    "1": 709.21,
+    "2": 709.06
    },
    "ours|ours|beast-survival-open-raid": {
-    "1": 801.78,
-    "2": 801.34
+    "1": 806.49,
+    "2": 807.02
    },
    "ours|ours|up:sv_melee": {
-    "1": 678.84,
-    "2": 678.73
+    "1": 682.92,
+    "2": 682.94
    },
    "melee|ours|melee-survival-raid": {
-    "1": 422.99,
-    "2": 422.61
+    "1": 767.07,
+    "2": 767.0
    },
    "melee|ours|opt-melee-dps-raid-dps": {
-    "1": 422.99,
-    "2": 422.61
+    "1": 720.16,
+    "2": 720.01
    },
    "melee|ours|survival-raid": {
-    "1": 415.21,
-    "2": 414.88
+    "1": 745.77,
+    "2": 745.23
    },
    "melee|ours|survival-ml-parse": {
-    "1": 403.29,
-    "2": 402.93
+    "1": 727.32,
+    "2": 727.07
    },
    "melee|ours|beast-survival-open-raid": {
-    "1": 403.84,
-    "2": 403.57
+    "1": 824.22,
+    "2": 824.82
    },
    "melee|ours|up:sv_melee": {
-    "1": 327.6,
-    "2": 327.39
+    "1": 677.53,
+    "2": 678.04
    },
    "ours|up:sv_melee|melee-survival-raid": {
-    "1": 745.17,
-    "2": 744.62
+    "1": 773.93,
+    "2": 773.78
    },
    "ours|up:sv_melee|opt-melee-dps-raid-dps": {
-    "1": 708.97,
-    "2": 708.68
+    "1": 738.13,
+    "2": 737.86
    },
    "ours|up:sv_melee|survival-raid": {
-    "1": 720.08,
-    "2": 719.22
+    "1": 748.54,
+    "2": 748.0
    },
    "ours|up:sv_melee|survival-ml-parse": {
-    "1": 715.91,
-    "2": 715.37
+    "1": 744.62,
+    "2": 745.1
    },
    "ours|up:sv_melee|beast-survival-open-raid": {
-    "1": 812.51,
-    "2": 812.8
+    "1": 843.33,
+    "2": 844.13
    },
    "ours|up:sv_melee|up:sv_melee": {
-    "1": 861.74,
-    "2": 861.74
+    "1": 899.42,
+    "2": 899.64
    },
    "melee|up:sv_melee|melee-survival-raid": {
-    "1": 476.52,
-    "2": 476.92
+    "1": 789.62,
+    "2": 790.2
    },
    "melee|up:sv_melee|opt-melee-dps-raid-dps": {
-    "1": 476.52,
-    "2": 476.92
+    "1": 750.56,
+    "2": 750.43
    },
    "melee|up:sv_melee|survival-raid": {
-    "1": 468.93,
-    "2": 469.27
+    "1": 770.1,
+    "2": 770.38
    },
    "melee|up:sv_melee|survival-ml-parse": {
-    "1": 460.12,
-    "2": 460.5
+    "1": 756.96,
+    "2": 756.69
    },
    "melee|up:sv_melee|beast-survival-open-raid": {
-    "1": 474.16,
-    "2": 474.51
+    "1": 855.88,
+    "2": 856.36
    },
    "melee|up:sv_melee|up:sv_melee": {
-    "1": 498.86,
-    "2": 499.18
+    "1": 891.35,
+    "2": 891.88
    }
   },
   "our_best": "ours|ours|beast-survival-open-raid",
   "best": "ours|up:sv_melee|up:sv_melee",
-  "gain": 0.0751,
+  "gain": 0.115,
   "note": ""
  },
  "melee-dps@weave": {
@@ -445,52 +445,52 @@
   },
   "dps": {
    "default|ours|melee-survival-raid": {
-    "1": 366.16,
-    "2": 366.36
+    "1": 831.27,
+    "2": 830.94
    },
    "default|ours|opt-melee-dps-raid-dps": {
-    "1": 366.16,
-    "2": 366.36
+    "1": 785.27,
+    "2": 785.57
    },
    "default|ours|survival-raid": {
-    "1": 357.91,
-    "2": 358.1
+    "1": 805.85,
+    "2": 805.51
    },
    "default|ours|survival-ml-parse": {
-    "1": 349.03,
-    "2": 349.16
+    "1": 732.82,
+    "2": 732.88
    },
    "default|ours|beast-survival-open-raid": {
-    "1": 345.73,
-    "2": 345.91
+    "1": 707.98,
+    "2": 708.35
    },
    "default|ours|up:sv_weave": {
-    "1": 362.06,
-    "2": 362.56
+    "1": 821.25,
+    "2": 821.11
    },
    "default|up:sv_weave|melee-survival-raid": {
-    "1": 366.16,
-    "2": 366.36
+    "1": 831.27,
+    "2": 830.94
    },
    "default|up:sv_weave|opt-melee-dps-raid-dps": {
-    "1": 366.16,
-    "2": 366.36
+    "1": 785.27,
+    "2": 785.57
    },
    "default|up:sv_weave|survival-raid": {
-    "1": 357.91,
-    "2": 358.1
+    "1": 805.85,
+    "2": 805.51
    },
    "default|up:sv_weave|survival-ml-parse": {
-    "1": 349.03,
-    "2": 349.16
+    "1": 732.82,
+    "2": 732.88
    },
    "default|up:sv_weave|beast-survival-open-raid": {
-    "1": 345.73,
-    "2": 345.91
+    "1": 707.98,
+    "2": 708.35
    },
    "default|up:sv_weave|up:sv_weave": {
-    "1": 362.06,
-    "2": 362.56
+    "1": 821.25,
+    "2": 821.11
    }
   },
   "our_best": null,
@@ -619,5 +619,49 @@
   "gain": 0.0,
   "note": "the Holy Shock rotation's itemSwap lines (the Manual Crowd Pummeler) do nothing here"
  },
- "_open": "2026-11-20 (search-improvements 0p): every upstream hunter rotation scores 360-500 DPS here on every build and option set, against 800-960 under ours: a conversion or setup gap, not a verdict; the hunter's talents were raced fairly (under our rotations), its rotations not. The paladin's rotations ran normally (the Holy Shock one without its Manual Crowd Pummeler swap)."
+ "_open": "2026-11-20 (search-improvements 0p): every upstream hunter rotation scores 360-500 DPS here on every build and option set, against 800-960 under ours: a conversion or setup gap, not a verdict; the hunter's talents were raced fairly (under our rotations), its rotations not. The paladin's rotations ran normally (the Holy Shock one without its Manual Crowd Pummeler swap).",
+ "survival-pet-raid": {
+  "class": "hunter",
+  "fights": 10000,
+  "commit": "2e6e77d84",
+  "rotations": {
+   "ours": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\hunter\\survival-pet-raid-raid.apl.json",
+   "melee": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\hunter\\upstream\\melee.apl.json"
+  },
+  "options": {
+   "ours": {
+    "quiverBonus": "AncientSinewWrappedLamina",
+    "ammo": "ThoriumHeadedArrow",
+    "petType": "Raptor",
+    "petUptime": 1,
+    "petAttackSpeed": "FasterAttackII"
+   }
+  },
+  "builds": {
+   "survival-raptor-raid": "53200005001-004-530200230050022151",
+   "melee-survival-raid": "5-005005001-500230230250222151"
+  },
+  "dps": {
+   "ours|ours|survival-raptor-raid": {
+    "1": 899.42,
+    "2": 899.64
+   },
+   "ours|ours|melee-survival-raid": {
+    "1": 773.93,
+    "2": 773.78
+   },
+   "melee|ours|survival-raptor-raid": {
+    "1": 891.35,
+    "2": 891.88
+   },
+   "melee|ours|melee-survival-raid": {
+    "1": 789.62,
+    "2": 790.2
+   }
+  },
+  "our_best": "ours|ours|survival-raptor-raid",
+  "best": "ours|ours|survival-raptor-raid",
+  "gain": 0.0,
+  "note": ""
+ }
 }
