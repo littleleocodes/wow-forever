@@ -51,6 +51,20 @@ def tools_dir():
     return pathlib.Path(os.environ.get("WOW_FOREVER_TOOLS", pathlib.Path.home() / ".wow-forever-tools"))
 
 
+def patch_hash():
+    """The patch set a Forever bench is built from (2026-11-20, search-improvements 0x): every file under raidsim/patches/forever and
+    raidsim/foreverbench/main.go, by relative path and content (line ends normalized, so a Linux clone hashes as Windows does)."""
+    import hashlib
+    h = hashlib.sha1()
+    files = sorted(p for p in (HERE / "patches" / "forever").rglob("*") if p.is_file()) + [HERE / "foreverbench" / "main.go"]
+    for p in files:
+        h.update(p.relative_to(HERE).as_posix().encode("utf-8") + b"\0" + p.read_bytes().replace(b"\r\n", b"\n") + b"\0")
+    return h.hexdigest()[:16]
+
+
+STAMP = "bench-build.json"   # in a checkout: {"patch_hash", "built", "commit"}, written when setup.py builds its bench
+
+
 def checkout(game="forever"):
     """The simulator checkout scripts read (2026-10-22, sim-port open item 2): WOW_FOREVER_SIM (Classic: WOW_FOREVER_CLASSIC_SIM), else
     <tools>/<GAMES[game]["dir"]>: the official wowsims/forever clone since 2026-10-18 (the fork's <tools>/forever-repo is an archive).
@@ -214,6 +228,10 @@ def main():
     sh([go, "build", "--tags=with_db", "-o", f"wowsimcli{exe}", "./cmd/wowsimcli"], repo, env)
     sh([go, "build", "--tags=with_db", "-o", f"{G['bench']}{exe}", f"./cmd/{G['bench']}"], repo, env)
     commit = sh(["git", "rev-parse", "--short", "HEAD"], repo).stdout.strip()
+    if a.game == "forever":   # the patch set this bench was built from: run.py refuses a bench whose stamp is not the current set (0x)
+        import datetime
+        (repo / STAMP).write_text(json.dumps({"patch_hash": patch_hash(), "built": datetime.datetime.now().isoformat(timespec="seconds"),
+                                              "commit": commit}, indent=1) + "\n", encoding="utf-8")
     print(f"ready: {repo} at {commit}; run.py finds it through WOW_FOREVER_SIM={repo} or the default tools folder")
 
 

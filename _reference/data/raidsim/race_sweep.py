@@ -10,6 +10,8 @@ raw/<date>-talentsforever-popular/data.json when present, else the list below), 
 tank value) and the raid setting, seeds 1 and 2. Writes `_reference/data/race-sweep.json` and `_reference/race-sweep.md` (generated).
 Changing an entry's race is a separate decision: gear presets and weapon types interact with weapon racials.
 """
+import os
+os.environ["WOW_FOREVER_NO_RACIALS"] = "0"   # this sweep measures the races: racials on (run.py's default is off since 2026-11-20)
 import argparse
 import datetime
 import json

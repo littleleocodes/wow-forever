@@ -161,6 +161,21 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 ## Open ideas, ranked by what they could still find
 
+0x. **Two simulators and two racial settings had run under one name (2026-11-20; found on a number the audit session could not
+    reproduce, closed the same day)**. Every lane exports WOW_FOREVER_SIM=<tools>/wowsims-forever-y and WOW_FOREVER_NO_RACIALS=1; a run
+    without them (a hand command) fell back to setup.checkout()'s default clone, whose bench dated from 2026-11-16 (before H15's pet
+    rule and the clip-delay key), with racials on. survival-raptor-raid read 899.5 there against the lanes' 861.6 (the old pet rule
+    +4.4%, Berserking +0.7%). Runs it touched, from the checkouts' bench folders: the first hunter parity race (12:00-12:29, run again
+    in the lanes' setup), the 11:15 measurement behind the SM/Ruin move (the audit's own measurement agrees), the H5 Balance A/B (no pet,
+    no channel: its relative gain stands, its absolute numbers are racials-on) and two probes; the morning SIML race, the warlock and mage
+    upstream races, the hand tier runs, the picks and the checks ran in the -y checkout. Closed: setup.py stamps each bench with its
+    patch set (bench-build.json: a hash of raidsim/patches/forever and foreverbench/main.go); run.repo_path refuses a bench whose stamp
+    is not the current set (unstamped: older than the patch files); run.py makes racials off the default (race_sweep.py sets them on
+    for itself); the environments, pick, check and parity records carry the patch hash and the switches (sim_switches; the pet rule's
+    flag now reads H15's default); render_modes leaves out a full-raid row whose record names another patch set. The default checkout
+    was rebuilt and both are stamped: they now give the same 868.0 on survival-raptor-raid with racials on, and the lanes' 861.6 with
+    them off. The hand-run mage tier records were made again in the lanes' setup.
+
 0w. **A Wrath weave for Eclipse in the Balance rotations (2026-11-20, the independent audit's H5)**. Forever's Eclipse ("Your Wrath
     spell reduces the cast time of your next 2 Starfire spells by 0.50 sec. Stores up to 4 charges") needs Wrath, which no Balance
     rotation of ours cast: every search read the talent at 0. deep-runs/eclipse_weave_1120.py puts one line before the Starfire filler of

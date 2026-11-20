@@ -50,6 +50,7 @@ def main():
     with locked(OUT.with_suffix(".lock")):
         rec = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
         rec[f"{a.cls}/{a.entry}"] = {"date": datetime.date.today().isoformat(), "commit": R.git_commit(repo), "fights": a.fights,
+                                     "sim": {"repo": str(repo), **R.sim_switches(repo)},
                                      "sim": a.sim, "ours": ids[1:], "dps": dps, "best_ours": best_ours,
                                      "gain": [round(g, 4) for g in gains], "pick": pick}
         OUT.write_text(json.dumps(rec, indent=1) + "\n", encoding="utf-8")

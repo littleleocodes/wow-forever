@@ -377,6 +377,23 @@ def raid_sims(R, ids=None):
 
 
 # ------------------------------------------------------------------------------------------------ numbers
+STALE_BENCH = set()   # (class, entry) whose full-raid record was raced on another patch set (raid_numbers)
+_PATCH = {}
+
+
+def current_patch_hash():
+    """The current simulator patch set (raidsim/setup.py's patch_hash), or None."""
+    if "h" not in _PATCH:
+        try:
+            if str(HERE / "raidsim") not in sys.path:
+                sys.path.insert(0, str(HERE / "raidsim"))
+            import setup as _setup
+            _PATCH["h"] = _setup.patch_hash()
+        except Exception:   # noqa: BLE001
+            _PATCH["h"] = None
+    return _PATCH["h"]
+
+
 def raid_numbers(cls):
     """{build id: {"dps", "raid", "group", "value", "entry", "d", "row"}} over every raid entry: a build's best entry by full-raid DPS.
     Since 2026-10-02 (user decision: "raid/parse builds should assume a group setting ... the recommendations should always be what offers
@@ -384,7 +401,16 @@ def raid_numbers(cls):
     dummy's DPS when a build has no raid number; `d`/`row` carry the raid rotation's lines (render_rotations.spec_data, raid view)."""
     out = {}
     B = rr.builds(cls)
+    cur_patch = current_patch_hash()
     for x in rs.raid_rows(cls, "raid"):
+        se = (x.get("d") or {}).get("sim_env") or {}
+        if se.get("patch_hash") and cur_patch and se["patch_hash"] != cur_patch:
+            # a record raced on another patch set (2026-11-20, search-improvements 0x: a stale bench had made numbers that read as current)
+            if (cls, x["spec"]) not in STALE_BENCH:
+                STALE_BENCH.add((cls, x["spec"]))
+                print(f"WARNING: {cls} {x['spec']}: its full-raid record was raced on patch set {se['patch_hash']}, now {cur_patch}: "
+                      "left out of the pages until it is raced again", flush=True)
+            continue
         r = x["row"]
         lab = r["label"]
         own = SM.RAID_ENTRY_TREES.get((cls, x["spec"]))

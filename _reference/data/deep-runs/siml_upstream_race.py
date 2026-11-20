@@ -162,7 +162,8 @@ def main():
         ours_arms = [lab for lab in mean if lab.startswith("ours|ours|")]
         our_best = max(ours_arms, key=mean.get) if ours_arms else None
         best = max(mean, key=mean.get)
-        rec[e] = {"class": cls, "fights": a.fights, "commit": commit, "rotations": rots, "options": opts, "builds": builds, "dps": res,
+        rec[e] = {"class": cls, "fights": a.fights, "commit": commit, "sim": {"repo": str(repo), **R.sim_switches(repo)},
+                  "rotations": rots, "options": opts, "builds": builds, "dps": res,
                   "our_best": our_best, "best": best,
                   "gain": round(mean[best] / mean[our_best] - 1, 4) if our_best else None,
                   "note": ("upstream's weave, reported apart" if "@weave" in e else

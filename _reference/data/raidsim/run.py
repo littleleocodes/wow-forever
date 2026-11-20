@@ -29,6 +29,9 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import id_names  # noqa: E402  (spell and item names the simulator's lists miss)
 import setup as SETUP  # noqa: E402  (the checkout path: setup.checkout)
 import sim_info  # noqa: E402  (_reference/data/sim_info.py: which simulator and client a record ran on)
+# Racials off unless the caller says otherwise (2026-11-20, search-improvements 0x): every lane runs race-neutral
+# (WOW_FOREVER_NO_RACIALS=1), and a manual run without it counted Berserking (0.7% on the Troll hunter); race_sweep.py sets "0" itself
+os.environ.setdefault("WOW_FOREVER_NO_RACIALS", "1")
 GAME = "forever"   # or "classic-era": set by main() from --game; every path below follows it
 GAMES = {"forever": {"specs": "specs.json", "env": "WOW_FOREVER_SIM", "repo": "wowsims-forever", "bench": "foreverbench", "builds": "research/talents/forever/proposed-builds.json",
                      "trees": "ui/sim/talents/trees", "reports": "research/raid/raidsim", "name_key": "fancyName", "ui": "ui/specs"},
@@ -66,7 +69,29 @@ def repo_path(a):
     p = pathlib.Path(a.repo) if a.repo else SETUP.checkout("forever" if GAME == "forever" else "classic")   # setup.py: env override or <tools>/<dir>
     if not (p / f"{g['bench']}.exe").exists() and not (p / g["bench"]).exists():
         raise SystemExit(f"no bench tool in {p}: run _reference/data/raidsim/setup.py{' --game classic' if GAME != 'forever' else ''} (or pass --repo)")
+    if GAME == "forever":
+        bench_current(p)
     return p
+
+
+def bench_current(p):
+    """Refuse a bench built from another patch set (2026-11-20, search-improvements 0x: the default checkout's bench predated the pet rule
+    and the clip-delay key, and every manual run without WOW_FOREVER_SIM used it): its stamp (setup.py's bench-build.json) against the
+    current patch set, or, unstamped, its file time against the newest patch file."""
+    st = p / SETUP.STAMP
+    cur = SETUP.patch_hash()
+    if st.exists():
+        got = (json.loads(st.read_text(encoding="utf-8")) or {}).get("patch_hash")
+        if got != cur:
+            raise SystemExit(f"the bench in {p} was built from another patch set ({got}, now {cur}): rebuild it "
+                             f"(python _reference/data/raidsim/setup.py --rebuild, with WOW_FOREVER_SIM={p} for that checkout)")
+        return
+    exe = p / "foreverbench.exe" if (p / "foreverbench.exe").exists() else p / "foreverbench"
+    files = [f for f in (HERE / "patches" / "forever").rglob("*") if f.is_file()] + [HERE / "foreverbench" / "main.go"]
+    newest = max(f.stat().st_mtime for f in files)
+    if exe.stat().st_mtime < newest:
+        raise SystemExit(f"the bench in {p} is older than the patch files (no bench-build.json stamp): rebuild it "
+                         f"(python _reference/data/raidsim/setup.py --rebuild, with WOW_FOREVER_SIM={p} for that checkout)")
 
 
 def load_trees(repo, cls):
@@ -958,12 +983,23 @@ def scorer_removals(cls, spec, profile, allocs):
     return out
 
 
+def bench_stamp(repo):
+    """The checkout's bench-build.json patch hash, or None."""
+    try:
+        return (json.loads((pathlib.Path(repo) / SETUP.STAMP).read_text(encoding="utf-8")) or {}).get("patch_hash") if repo else None
+    except (OSError, ValueError):
+        return None
+
+
 def sim_switches(repo=None):
     """The patch switches a run was made with (2026-10-18, audit 2 row 96: race-neutral numbers depended on an environment variable no
     report recorded): racials on or off (WOW_FOREVER_NO_RACIALS=1), the pet swing rule (WOW_FOREVER_PET_NORMALIZE=1). With the checkout
     also the simulator and its data's client build (2026-10-22, sim_info.identity), so the pages can name what a record ran on."""
     return {"racials": "off" if os.environ.get("WOW_FOREVER_NO_RACIALS") == "1" else "on",
-            "pet_normalize": os.environ.get("WOW_FOREVER_PET_NORMALIZE") == "1", **(sim_info.identity(repo) if repo else {})}
+            # the pet swing rule (H15, 2026-11-19): normalized, the official simulator's, unless WOW_FOREVER_PET_NORMALIZE=0
+            "pet_normalize": os.environ.get("WOW_FOREVER_PET_NORMALIZE") != "0",
+            **({"patch_hash": bench_stamp(repo)} if repo and bench_stamp(repo) else {}),
+            **(sim_info.identity(repo) if repo else {})}
 
 
 def cfg_fingerprint(cfg, exe, repo, commit=None):
