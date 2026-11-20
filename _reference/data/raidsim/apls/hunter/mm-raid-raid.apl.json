@@ -5,13 +5,14 @@
    "action": {
     "castSpell": {
      "spellId": {
-      "spellId": 14322
+      "spellId": 14325,
+      "rank": 4
      }
     }
    },
    "doAtValue": {
     "const": {
-     "val": "-10s"
+     "val": "-22s"
     }
    }
   },
@@ -19,13 +20,63 @@
    "action": {
     "castSpell": {
      "spellId": {
-      "spellId": 20904
+      "spellId": 14322,
+      "rank": 6
      }
     }
    },
    "doAtValue": {
     "const": {
-     "val": "-2.5s"
+     "val": "-20s"
+    }
+   }
+  },
+  {
+   "action": {
+    "move": {
+     "rangeFromTarget": {
+      "variableRef": {
+       "name": "Pull range"
+      }
+     }
+    }
+   },
+   "doAtValue": {
+    "const": {
+     "val": "-19s"
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "variableRef": {
+      "name": "Use Sniper Shot"
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 1310786,
+      "rank": 3
+     }
+    }
+   },
+   "doAtValue": {
+    "math": {
+     "op": "OpMul",
+     "lhs": {
+      "spellCastTime": {
+       "spellId": {
+        "spellId": 1310786,
+        "rank": 3
+       }
+      }
+     },
+     "rhs": {
+      "const": {
+       "val": "-1"
+      }
+     }
     }
    }
   }
@@ -35,32 +86,40 @@
    "action": {
     "condition": {
      "cmp": {
-      "op": "OpGt",
+      "op": "OpGe",
       "lhs": {
-       "autoTimeToNext": {
-        "autoType": "RangedAuto"
-       }
+       "currentTime": {}
       },
       "rhs": {
        "const": {
-        "val": "0.5s"
+        "val": "5s"
+       }
+      }
+     }
+    },
+    "autocastOtherCooldowns": {}
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "not": {
+      "val": {
+       "auraIsActive": {
+        "sourceUnit": {
+         "type": "CurrentTarget"
+        },
+        "auraId": {
+         "spellId": 14324
+        }
        }
       }
      }
     },
     "castSpell": {
      "spellId": {
-      "spellId": 20904
-     }
-    }
-   },
-   "notes": "apl_opt 2026-10-04: changed or added by the rotation search (see mm-raid-rotation-search.json)"
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 14287
+      "spellId": 14325,
+      "rank": 4
      }
     }
    }
@@ -68,27 +127,111 @@
   {
    "action": {
     "condition": {
+     "not": {
+      "val": {
+       "dotIsActive": {
+        "spellId": {
+         "spellId": 13555,
+         "rank": 8
+        }
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 13555,
+      "rank": 8
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "sequenceIsComplete": {
+      "sequenceName": "HHA"
+     }
+    },
+    "resetSequence": {
+     "sequenceName": "HHA"
+    }
+   },
+   "notes": "apl_opt 2026-11-20: changed or added by the rotation search (see mm-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "sequence": {
+     "name": "HHA",
+     "actions": [
+      {
+       "castSpell": {
+        "spellId": {
+         "spellId": 1293527,
+         "rank": 4
+        }
+       }
+      },
+      {
+       "castSpell": {
+        "spellId": {
+         "spellId": 1293527,
+         "rank": 4
+        }
+       }
+      },
+      {
+       "castSpell": {
+        "spellId": {
+         "spellId": 14287,
+         "rank": 8
+        }
+       }
+      }
+     ]
+    }
+   },
+   "notes": "apl_opt 2026-11-20: changed or added by the rotation search (see mm-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 1293527,
+      "rank": 4
+     }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "currentManaPercent": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "60%"
+       }
+      }
+     }
+    }
+   },
+   "notes": "apl_opt 2026-11-20: changed or added by the rotation search (see mm-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
      "and": {
       "vals": [
        {
-        "auraIsInactive": {
-         "sourceUnit": {
-          "type": "Self"
-         },
-         "auraId": {
-          "spellId": 1293527
-         }
+        "variableRef": {
+         "name": "Use Arcane Shot"
         }
        },
        {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "remainingTime": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "10s"
+        "not": {
+         "val": {
+          "variableRef": {
+           "name": "Use Summon Hawk"
           }
          }
         }
@@ -98,57 +241,32 @@
     },
     "castSpell": {
      "spellId": {
-      "spellId": 1293527
+      "spellId": 14287,
+      "rank": 8
      }
     }
-   },
-   "notes": "apl_opt 2026-10-04: changed or added by the rotation search (see mm-raid-rotation-search.json)"
-  },
-  {
-   "action": {
-    "autocastOtherCooldowns": {}
    }
   },
   {
    "action": {
     "condition": {
-     "cmp": {
-      "op": "OpLt",
-      "lhs": {
-       "autoTimeToNext": {
-        "autoType": "RangedAuto"
-       }
-      },
-      "rhs": {
-       "const": {
-        "val": "0.1"
-       }
-      }
+     "variableRef": {
+      "name": "Use Aimed Shot"
      }
     },
     "castSpell": {
      "spellId": {
-      "spellId": 3045
+      "spellId": 20904,
+      "rank": 6
      }
     }
-   },
-   "notes": "apl_opt 2026-09-27: changed or added by the rotation search (see mm-raid-rotation-search.json)"
+   }
   },
   {
    "action": {
     "condition": {
-     "cmp": {
-      "op": "OpGt",
-      "lhs": {
-       "autoTimeToNext": {
-        "autoType": "RangedAuto"
-       }
-      },
-      "rhs": {
-       "const": {
-        "val": "0.5s"
-       }
-      }
+     "variableRef": {
+      "name": "Use Multi-Shot"
      }
     },
     "castSpell": {
@@ -159,144 +277,240 @@
    }
   },
   {
+   "notes": "The least damage per second of casting, so it waits until none of the shots above is ready.",
    "action": {
     "condition": {
-     "and": {
-      "vals": [
-       {
-        "cmp": {
-         "op": "OpLt",
-         "lhs": {
-          "dotRemainingTime": {
-           "spellId": {
-            "spellId": 13555
-           }
-          }
-         },
-         "rhs": {
-          "const": {
-           "val": "0.75s"
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "spellTimeToReady": {
-           "spellId": {
-            "spellId": 20904
-           }
-          }
-         },
-         "rhs": {
-          "const": {
-           "val": "0.5"
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "spellTimeToReady": {
-           "spellId": {
-            "spellId": 2643
-           }
-          }
-         },
-         "rhs": {
-          "const": {
-           "val": "0.5"
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "remainingTime": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "6s"
-          }
-         }
-        }
-       }
-      ]
+     "variableRef": {
+      "name": "Use Sniper Shot"
      }
     },
     "castSpell": {
      "spellId": {
-      "spellId": 13555
+      "spellId": 1310786,
+      "rank": 3
      }
     }
-   },
-   "notes": "apl_opt 2026-11-04: changed or added by the rotation search (see mm-raid-rotation-search.json)"
+   }
+  },
+  {
+   "notes": "Start of the fight: get to my spot without losing an Auto Shot.",
+   "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpNe",
+      "lhs": {
+       "unitDistance": {
+        "sourceUnit": {
+         "type": "Self"
+        }
+       }
+      },
+      "rhs": {
+       "variableRef": {
+        "name": "Shoot spot"
+       }
+      }
+     }
+    },
+    "groupReference": {
+     "groupName": "Walk in"
+    }
+   }
   },
   {
    "action": {
     "castSpell": {
      "spellId": {
-      "spellId": 19577
+      "itemId": 13444
      }
     }
    },
-   "notes": "apl_opt 2026-10-04: changed or added by the rotation search (see mm-raid-rotation-search.json)"
-  },
+   "notes": "apl_opt 2026-11-20: changed or added by the rotation search (see mm-raid-rotation-search.json)"
+  }
+ ],
+ "groups": [
   {
-   "action": {
-    "condition": {
-     "and": {
-      "vals": [
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "spellTimeToReady": {
-           "spellId": {
-            "spellId": 20904
+   "name": "Walk in",
+   "actions": [
+    {
+     "notes": "Walk to my spot, looking again every reaction time. Stop while my Auto Shot's windup is close or running, and react to each shot before walking on.",
+     "action": {
+      "condition": {
+       "not": {
+        "val": {
+         "and": {
+          "vals": [
+           {
+            "spellInRange": {
+             "spellId": {
+              "spellId": 14287,
+              "rank": 8
+             }
+            }
+           },
+           {
+            "or": {
+             "vals": [
+              {
+               "variableRef": {
+                "name": "Windup close"
+               }
+              },
+              {
+               "variableRef": {
+                "name": "Just shot"
+               }
+              }
+             ]
+            }
            }
-          }
-         },
-         "rhs": {
-          "const": {
-           "val": "2.25"
-          }
+          ]
          }
         }
+       }
+      },
+      "move": {
+       "rangeFromTarget": {
+        "variableRef": {
+         "name": "Shoot spot"
+        }
        },
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "spellTimeToReady": {
-           "spellId": {
-            "spellId": 2643
+       "recheckWhileMoving": true
+      }
+     }
+    },
+    {
+     "notes": "Standing for my Auto Shot.",
+     "action": {
+      "wait": {
+       "duration": {
+        "inputDelay": {}
+       }
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "valueVariables": [
+  {
+   "name": "Use Aimed Shot",
+   "value": {
+    "const": {
+     "val": "true"
+    }
+   }
+  },
+  {
+   "name": "Use Multi-Shot",
+   "value": {
+    "const": {
+     "val": "false"
+    }
+   }
+  },
+  {
+   "name": "Use Arcane Shot",
+   "value": {
+    "const": {
+     "val": "true"
+    }
+   }
+  },
+  {
+   "name": "Use Sniper Shot",
+   "value": {
+    "const": {
+     "val": "true"
+    }
+   }
+  },
+  {
+   "name": "Use Summon Hawk",
+   "value": {
+    "const": {
+     "val": "false"
+    }
+   }
+  },
+  {
+   "name": "Shoot spot",
+   "value": {
+    "const": {
+     "val": "12"
+    }
+   }
+  },
+  {
+   "name": "Pull range",
+   "value": {
+    "const": {
+     "val": "25"
+    }
+   }
+  },
+  {
+   "name": "Windup close",
+   "value": {
+    "or": {
+     "vals": [
+      {
+       "cmp": {
+        "op": "OpLe",
+        "lhs": {
+         "autoTimeToNext": {
+          "autoType": "RangedAuto"
+         }
+        },
+        "rhs": {
+         "inputDelay": {}
+        }
+       }
+      },
+      {
+       "cmp": {
+        "op": "OpGe",
+        "lhs": {
+         "autoTimeToNext": {
+          "autoType": "RangedAuto"
+         }
+        },
+        "rhs": {
+         "math": {
+          "op": "OpSub",
+          "lhs": {
+           "autoSwingTime": {
+            "autoType": "Ranged"
            }
-          }
-         },
-         "rhs": {
-          "const": {
-           "val": "1"
+          },
+          "rhs": {
+           "autoTimeSinceLast": {
+            "autoType": "RangedAuto"
+           }
           }
          }
         }
        }
-      ]
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 1310786
+      }
+     ]
+    }
+   }
+  },
+  {
+   "name": "Just shot",
+   "value": {
+    "cmp": {
+     "op": "OpLt",
+     "lhs": {
+      "autoTimeSinceLast": {
+       "autoType": "RangedAuto"
+      }
+     },
+     "rhs": {
+      "inputDelay": {}
      }
     }
-   },
-   "notes": "apl_opt 2026-11-04: changed or added by the rotation search (see mm-raid-rotation-search.json)"
+   }
   }
  ]
 }

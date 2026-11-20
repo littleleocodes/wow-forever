@@ -1,0 +1,1149 @@
+{
+ "bm-raid": {
+  "fights": 10000,
+  "commit": "2e6e77d84",
+  "sim": {
+   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
+   "racials": "off",
+   "pet_normalize": true,
+   "patch_hash": "125d59c4f975f5df",
+   "simulator": "wowsims/forever",
+   "client": "1.60.1.70938"
+  },
+  "rotations": {
+   "ours": "F:\\wow-forever\\_reference\\data\\deep-runs\\parity-1120b\\bm-raid-ours.apl.json",
+   "ours+mark": "F:\\wow-forever\\_reference\\data\\deep-runs\\parity-1120b\\bm-raid-ours-mark.apl.json",
+   "up:turret_hawk": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\hunter\\upstream\\turret_hawk.apl.json"
+  },
+  "options": {
+   "ours": {
+    "ammo": "ThoriumHeadedArrow",
+    "quiverBonus": "AncientSinewWrappedLamina",
+    "petType": "Cat",
+    "petAttackSpeed": "FasterAttackVI",
+    "petUptime": 1
+   },
+   "up:bm": {
+    "quiverBonus": "AncientSinewWrappedLamina",
+    "ammo": "ThoriumHeadedArrow",
+    "petType": "Raptor",
+    "petUptime": 1,
+    "petAttackSpeed": "FasterAttackII"
+   }
+  },
+  "builds": {
+   "mm-hawk-raid": "53200005051001-105355000150004",
+   "beast-mastery-ml-raid": "5320001505101251-00530502005",
+   "beast-marks-ml-raid": "532000150510123-00530503005-2",
+   "up:bm": "5320001505101251-00530502014"
+  },
+  "dps": {
+   "ours|ours|mm-hawk-raid": {
+    "1": 863.98,
+    "2": 863.6
+   },
+   "ours|ours|beast-mastery-ml-raid": {
+    "1": 907.08,
+    "2": 907.44
+   },
+   "ours|ours|beast-marks-ml-raid": {
+    "1": 894.07,
+    "2": 894.26
+   },
+   "ours|ours|up:bm": {
+    "1": 901.37,
+    "2": 901.72
+   },
+   "ours+mark|ours|mm-hawk-raid": {
+    "1": 880.64,
+    "2": 880.52
+   },
+   "ours+mark|ours|beast-mastery-ml-raid": {
+    "1": 923.81,
+    "2": 924.31
+   },
+   "ours+mark|ours|beast-marks-ml-raid": {
+    "1": 911.98,
+    "2": 911.82
+   },
+   "ours+mark|ours|up:bm": {
+    "1": 917.92,
+    "2": 918.42
+   },
+   "up:turret_hawk|ours|mm-hawk-raid": {
+    "1": 904.72,
+    "2": 904.16
+   },
+   "up:turret_hawk|ours|beast-mastery-ml-raid": {
+    "1": 946.0,
+    "2": 945.52
+   },
+   "up:turret_hawk|ours|beast-marks-ml-raid": {
+    "1": 931.8,
+    "2": 932.27
+   },
+   "up:turret_hawk|ours|up:bm": {
+    "1": 939.92,
+    "2": 939.44
+   },
+   "ours|up:bm|mm-hawk-raid": {
+    "1": 863.42,
+    "2": 863.18
+   },
+   "ours|up:bm|beast-mastery-ml-raid": {
+    "1": 905.93,
+    "2": 906.31
+   },
+   "ours|up:bm|beast-marks-ml-raid": {
+    "1": 891.76,
+    "2": 891.43
+   },
+   "ours|up:bm|up:bm": {
+    "1": 900.22,
+    "2": 900.58
+   },
+   "ours+mark|up:bm|mm-hawk-raid": {
+    "1": 880.45,
+    "2": 880.05
+   },
+   "ours+mark|up:bm|beast-mastery-ml-raid": {
+    "1": 922.8,
+    "2": 923.2
+   },
+   "ours+mark|up:bm|beast-marks-ml-raid": {
+    "1": 908.94,
+    "2": 908.68
+   },
+   "ours+mark|up:bm|up:bm": {
+    "1": 916.91,
+    "2": 917.3
+   },
+   "up:turret_hawk|up:bm|mm-hawk-raid": {
+    "1": 903.89,
+    "2": 903.97
+   },
+   "up:turret_hawk|up:bm|beast-mastery-ml-raid": {
+    "1": 944.2,
+    "2": 944.14
+   },
+   "up:turret_hawk|up:bm|beast-marks-ml-raid": {
+    "1": 929.09,
+    "2": 929.58
+   },
+   "up:turret_hawk|up:bm|up:bm": {
+    "1": 938.11,
+    "2": 938.06
+   }
+  },
+  "casts": {
+   "ours|ours|mm-hawk-raid": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours|ours|beast-mastery-ml-raid": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours|ours|beast-marks-ml-raid": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours|ours|up:bm": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|ours|mm-hawk-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|ours|beast-mastery-ml-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|ours|beast-marks-ml-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|ours|up:bm": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret_hawk|ours|mm-hawk-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret_hawk|ours|beast-mastery-ml-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret_hawk|ours|beast-marks-ml-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret_hawk|ours|up:bm": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "ours|up:bm|mm-hawk-raid": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours|up:bm|beast-mastery-ml-raid": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours|up:bm|beast-marks-ml-raid": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours|up:bm|up:bm": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|up:bm|mm-hawk-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|up:bm|beast-mastery-ml-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|up:bm|beast-marks-ml-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|up:bm|up:bm": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret_hawk|up:bm|mm-hawk-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret_hawk|up:bm|beast-mastery-ml-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret_hawk|up:bm|beast-marks-ml-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret_hawk|up:bm|up:bm": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   }
+  },
+  "best": "up:turret_hawk|ours|beast-mastery-ml-raid",
+  "ours_mark_best": "ours+mark|ours|beast-mastery-ml-raid",
+  "up_best": "up:turret_hawk|ours|beast-mastery-ml-raid",
+  "up_vs_ours_mark": 0.0235,
+  "no_mark_arms": []
+ },
+ "mm-raid": {
+  "fights": 10000,
+  "commit": "2e6e77d84",
+  "sim": {
+   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
+   "racials": "off",
+   "pet_normalize": true,
+   "patch_hash": "125d59c4f975f5df",
+   "simulator": "wowsims/forever",
+   "client": "1.60.1.70938"
+  },
+  "rotations": {
+   "ours": "F:\\wow-forever\\_reference\\data\\deep-runs\\parity-1120b\\mm-raid-ours.apl.json",
+   "ours+mark": "F:\\wow-forever\\_reference\\data\\deep-runs\\parity-1120b\\mm-raid-ours-mark.apl.json",
+   "up:turret": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\hunter\\upstream\\turret.apl.json",
+   "lane-1539": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\hunter\\mm-raid-raid.apl.json"
+  },
+  "options": {
+   "ours": {
+    "ammo": "ThoriumHeadedArrow",
+    "quiverBonus": "AncientSinewWrappedLamina",
+    "petType": "Cat",
+    "petAttackSpeed": "FasterAttackVI",
+    "petUptime": 1
+   }
+  },
+  "builds": {
+   "bm-mm-raid": "53200005041002-005355010150004",
+   "bm-mm-full-buffs-raid": "53200005050001-005155000150305",
+   "opt-mm-raid-raid-dps": "5420001505001251-0050550001-4",
+   "marksmanship-ml-raid": "502-0053252501523051-5"
+  },
+  "dps": {
+   "ours|ours|bm-mm-raid": {
+    "1": 824.59,
+    "2": 824.92
+   },
+   "ours|ours|bm-mm-full-buffs-raid": {
+    "1": 834.7,
+    "2": 834.65
+   },
+   "ours|ours|opt-mm-raid-raid-dps": {
+    "1": 831.35,
+    "2": 831.3
+   },
+   "ours|ours|marksmanship-ml-raid": {
+    "1": 942.41,
+    "2": 943.2
+   },
+   "ours+mark|ours|bm-mm-raid": {
+    "1": 843.2,
+    "2": 843.54
+   },
+   "ours+mark|ours|bm-mm-full-buffs-raid": {
+    "1": 853.61,
+    "2": 853.88
+   },
+   "ours+mark|ours|opt-mm-raid-raid-dps": {
+    "1": 848.86,
+    "2": 848.26
+   },
+   "ours+mark|ours|marksmanship-ml-raid": {
+    "1": 964.53,
+    "2": 964.63
+   },
+   "up:turret|ours|bm-mm-raid": {
+    "1": 863.06,
+    "2": 862.93
+   },
+   "up:turret|ours|bm-mm-full-buffs-raid": {
+    "1": 872.08,
+    "2": 872.18
+   },
+   "up:turret|ours|opt-mm-raid-raid-dps": {
+    "1": 865.32,
+    "2": 865.4
+   },
+   "up:turret|ours|marksmanship-ml-raid": {
+    "1": 973.13,
+    "2": 972.5
+   },
+   "lane-1539|ours|bm-mm-raid": {
+    "1": 905.31,
+    "2": 905.66
+   },
+   "lane-1539|ours|bm-mm-full-buffs-raid": {
+    "1": 872.08,
+    "2": 872.36
+   },
+   "lane-1539|ours|opt-mm-raid-raid-dps": {
+    "1": 865.69,
+    "2": 865.54
+   },
+   "lane-1539|ours|marksmanship-ml-raid": {
+    "1": 981.11,
+    "2": 981.06
+   }
+  },
+  "casts": {
+   "ours|ours|bm-mm-raid": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours|ours|bm-mm-full-buffs-raid": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours|ours|opt-mm-raid-raid-dps": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours|ours|marksmanship-ml-raid": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|ours|bm-mm-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|ours|bm-mm-full-buffs-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|ours|opt-mm-raid-raid-dps": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|ours|marksmanship-ml-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret|ours|bm-mm-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret|ours|bm-mm-full-buffs-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret|ours|opt-mm-raid-raid-dps": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret|ours|marksmanship-ml-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "lane-1539|ours|bm-mm-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "lane-1539|ours|bm-mm-full-buffs-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "lane-1539|ours|opt-mm-raid-raid-dps": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "lane-1539|ours|marksmanship-ml-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   }
+  },
+  "best": "lane-1539|ours|marksmanship-ml-raid",
+  "ours_mark_best": "ours+mark|ours|marksmanship-ml-raid",
+  "up_best": "up:turret|ours|marksmanship-ml-raid",
+  "up_vs_ours_mark": 0.0085,
+  "no_mark_arms": []
+ },
+ "mm-lonewolf-raid": {
+  "fights": 10000,
+  "commit": "2e6e77d84",
+  "sim": {
+   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
+   "racials": "off",
+   "pet_normalize": true,
+   "patch_hash": "125d59c4f975f5df",
+   "simulator": "wowsims/forever",
+   "client": "1.60.1.70938"
+  },
+  "rotations": {
+   "ours": "F:\\wow-forever\\_reference\\data\\deep-runs\\parity-1120b\\mm-lonewolf-raid-ours.apl.json",
+   "ours+mark": "F:\\wow-forever\\_reference\\data\\deep-runs\\parity-1120b\\mm-lonewolf-raid-ours-mark.apl.json",
+   "up:turret": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\hunter\\upstream\\turret.apl.json"
+  },
+  "options": {
+   "ours": {
+    "ammo": "ThoriumHeadedArrow",
+    "quiverBonus": "AncientSinewWrappedLamina",
+    "petType": "PetNone",
+    "petUptime": 0
+   },
+   "up:mm": {
+    "quiverBonus": "AncientSinewWrappedLamina",
+    "ammo": "ThoriumHeadedArrow",
+    "petUptime": 1,
+    "petAttackSpeed": "FasterAttackII",
+    "petType": "PetNone"
+   }
+  },
+  "builds": {
+   "mm-lone-wolf-raid": "5-0053452511513051-5",
+   "opt-mm-lonewolf-raid-raid-dps": "50002-3053552011523051-3",
+   "marksmanship-ml-raid": "502-0053252501523051-5",
+   "marksmanship-lone-wolf-sim-raid": "5-0053452511522051-5",
+   "up:sv": "3-00510503113-52225303000021004"
+  },
+  "dps": {
+   "ours|ours|mm-lone-wolf-raid": {
+    "1": 961.21,
+    "2": 960.97
+   },
+   "ours|ours|opt-mm-lonewolf-raid-raid-dps": {
+    "1": 891.18,
+    "2": 891.43
+   },
+   "ours|ours|marksmanship-ml-raid": {
+    "1": 802.3,
+    "2": 802.09
+   },
+   "ours|ours|marksmanship-lone-wolf-sim-raid": {
+    "1": 954.18,
+    "2": 954.01
+   },
+   "ours|ours|up:sv": {
+    "1": 812.67,
+    "2": 813.07
+   },
+   "ours+mark|ours|mm-lone-wolf-raid": {
+    "1": 986.46,
+    "2": 985.92
+   },
+   "ours+mark|ours|opt-mm-lonewolf-raid-raid-dps": {
+    "1": 916.83,
+    "2": 917.11
+   },
+   "ours+mark|ours|marksmanship-ml-raid": {
+    "1": 823.4,
+    "2": 822.94
+   },
+   "ours+mark|ours|marksmanship-lone-wolf-sim-raid": {
+    "1": 979.5,
+    "2": 979.07
+   },
+   "ours+mark|ours|up:sv": {
+    "1": 834.77,
+    "2": 834.58
+   },
+   "up:turret|ours|mm-lone-wolf-raid": {
+    "1": 988.25,
+    "2": 988.45
+   },
+   "up:turret|ours|opt-mm-lonewolf-raid-raid-dps": {
+    "1": 935.04,
+    "2": 935.35
+   },
+   "up:turret|ours|marksmanship-ml-raid": {
+    "1": 825.74,
+    "2": 825.88
+   },
+   "up:turret|ours|marksmanship-lone-wolf-sim-raid": {
+    "1": 989.05,
+    "2": 989.3
+   },
+   "up:turret|ours|up:sv": {
+    "1": 842.73,
+    "2": 842.37
+   },
+   "ours|up:mm|mm-lone-wolf-raid": {
+    "1": 961.21,
+    "2": 960.97
+   },
+   "ours|up:mm|opt-mm-lonewolf-raid-raid-dps": {
+    "1": 891.18,
+    "2": 891.43
+   },
+   "ours|up:mm|marksmanship-ml-raid": {
+    "1": 802.3,
+    "2": 802.09
+   },
+   "ours|up:mm|marksmanship-lone-wolf-sim-raid": {
+    "1": 954.18,
+    "2": 954.01
+   },
+   "ours|up:mm|up:sv": {
+    "1": 812.67,
+    "2": 813.07
+   },
+   "ours+mark|up:mm|mm-lone-wolf-raid": {
+    "1": 986.46,
+    "2": 985.92
+   },
+   "ours+mark|up:mm|opt-mm-lonewolf-raid-raid-dps": {
+    "1": 916.83,
+    "2": 917.11
+   },
+   "ours+mark|up:mm|marksmanship-ml-raid": {
+    "1": 823.4,
+    "2": 822.94
+   },
+   "ours+mark|up:mm|marksmanship-lone-wolf-sim-raid": {
+    "1": 979.5,
+    "2": 979.07
+   },
+   "ours+mark|up:mm|up:sv": {
+    "1": 834.77,
+    "2": 834.58
+   },
+   "up:turret|up:mm|mm-lone-wolf-raid": {
+    "1": 988.25,
+    "2": 988.45
+   },
+   "up:turret|up:mm|opt-mm-lonewolf-raid-raid-dps": {
+    "1": 935.04,
+    "2": 935.35
+   },
+   "up:turret|up:mm|marksmanship-ml-raid": {
+    "1": 825.74,
+    "2": 825.88
+   },
+   "up:turret|up:mm|marksmanship-lone-wolf-sim-raid": {
+    "1": 989.05,
+    "2": 989.3
+   },
+   "up:turret|up:mm|up:sv": {
+    "1": 842.73,
+    "2": 842.37
+   }
+  },
+  "casts": {
+   "ours|ours|mm-lone-wolf-raid": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours|ours|opt-mm-lonewolf-raid-raid-dps": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours|ours|marksmanship-ml-raid": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours|ours|marksmanship-lone-wolf-sim-raid": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours|ours|up:sv": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|ours|mm-lone-wolf-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|ours|opt-mm-lonewolf-raid-raid-dps": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|ours|marksmanship-ml-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|ours|marksmanship-lone-wolf-sim-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|ours|up:sv": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret|ours|mm-lone-wolf-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret|ours|opt-mm-lonewolf-raid-raid-dps": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret|ours|marksmanship-ml-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret|ours|marksmanship-lone-wolf-sim-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret|ours|up:sv": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "ours|up:mm|mm-lone-wolf-raid": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours|up:mm|opt-mm-lonewolf-raid-raid-dps": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours|up:mm|marksmanship-ml-raid": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours|up:mm|marksmanship-lone-wolf-sim-raid": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours|up:mm|up:sv": {
+    "mark": 0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|up:mm|mm-lone-wolf-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|up:mm|opt-mm-lonewolf-raid-raid-dps": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|up:mm|marksmanship-ml-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|up:mm|marksmanship-lone-wolf-sim-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "ours+mark|up:mm|up:sv": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret|up:mm|mm-lone-wolf-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret|up:mm|opt-mm-lonewolf-raid-raid-dps": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret|up:mm|marksmanship-ml-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret|up:mm|marksmanship-lone-wolf-sim-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   },
+   "up:turret|up:mm|up:sv": {
+    "mark": 2.0,
+    "mongoose_bite": 0
+   }
+  },
+  "best": "up:turret|ours|marksmanship-lone-wolf-sim-raid",
+  "ours_mark_best": "ours+mark|ours|mm-lone-wolf-raid",
+  "up_best": "up:turret|ours|marksmanship-lone-wolf-sim-raid",
+  "up_vs_ours_mark": 0.003,
+  "no_mark_arms": []
+ },
+ "melee-dps": {
+  "fights": 10000,
+  "commit": "2e6e77d84",
+  "sim": {
+   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
+   "racials": "off",
+   "pet_normalize": true,
+   "patch_hash": "125d59c4f975f5df",
+   "simulator": "wowsims/forever",
+   "client": "1.60.1.70938"
+  },
+  "rotations": {
+   "ours": "F:\\wow-forever\\_reference\\data\\deep-runs\\parity-1120b\\melee-dps-ours.apl.json",
+   "ours+mark": "F:\\wow-forever\\_reference\\data\\deep-runs\\parity-1120b\\melee-dps-ours-mark.apl.json",
+   "up:melee": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\hunter\\upstream\\melee.apl.json"
+  },
+  "options": {
+   "ours": {
+    "ammo": "ThoriumHeadedArrow",
+    "quiverBonus": "AncientSinewWrappedLamina",
+    "petType": "PetNone",
+    "petUptime": 0
+   },
+   "up:sv_melee": {
+    "quiverBonus": "AncientSinewWrappedLamina",
+    "ammo": "ThoriumHeadedArrow",
+    "petType": "Raptor",
+    "petUptime": 1,
+    "petAttackSpeed": "FasterAttackII"
+   }
+  },
+  "builds": {
+   "melee-survival-raid": "5-005005001-500230230250222151",
+   "opt-melee-dps-raid-dps": "5-005045001-500250030050220151",
+   "survival-raid": "5-005055001-50023023005022213",
+   "survival-ml-parse": "5-005035001-050230230150022151",
+   "beast-survival-open-raid": "55000005001-005005001-5002302300500121",
+   "up:sv_melee": "53200005001-004-530200230050022151"
+  },
+  "dps": {
+   "ours|ours|melee-survival-raid": {
+    "1": 737.76,
+    "2": 738.13
+   },
+   "ours|ours|opt-melee-dps-raid-dps": {
+    "1": 694.83,
+    "2": 695.69
+   },
+   "ours|ours|survival-raid": {
+    "1": 710.23,
+    "2": 709.32
+   },
+   "ours|ours|survival-ml-parse": {
+    "1": 703.27,
+    "2": 703.28
+   },
+   "ours|ours|beast-survival-open-raid": {
+    "1": 801.78,
+    "2": 801.34
+   },
+   "ours|ours|up:sv_melee": {
+    "1": 678.84,
+    "2": 678.73
+   },
+   "ours+mark|ours|melee-survival-raid": {
+    "1": 762.38,
+    "2": 762.37
+   },
+   "ours+mark|ours|opt-melee-dps-raid-dps": {
+    "1": 718.76,
+    "2": 719.07
+   },
+   "ours+mark|ours|survival-raid": {
+    "1": 730.48,
+    "2": 729.59
+   },
+   "ours+mark|ours|survival-ml-parse": {
+    "1": 726.59,
+    "2": 726.62
+   },
+   "ours+mark|ours|beast-survival-open-raid": {
+    "1": 813.05,
+    "2": 813.07
+   },
+   "ours+mark|ours|up:sv_melee": {
+    "1": 696.85,
+    "2": 696.67
+   },
+   "up:melee|ours|melee-survival-raid": {
+    "1": 836.6,
+    "2": 836.38
+   },
+   "up:melee|ours|opt-melee-dps-raid-dps": {
+    "1": 790.69,
+    "2": 790.08
+   },
+   "up:melee|ours|survival-raid": {
+    "1": 799.21,
+    "2": 798.24
+   },
+   "up:melee|ours|survival-ml-parse": {
+    "1": 793.53,
+    "2": 793.89
+   },
+   "up:melee|ours|beast-survival-open-raid": {
+    "1": 858.13,
+    "2": 857.37
+   },
+   "up:melee|ours|up:sv_melee": {
+    "1": 733.44,
+    "2": 733.36
+   },
+   "ours|up:sv_melee|melee-survival-raid": {
+    "1": 745.17,
+    "2": 744.62
+   },
+   "ours|up:sv_melee|opt-melee-dps-raid-dps": {
+    "1": 708.97,
+    "2": 708.68
+   },
+   "ours|up:sv_melee|survival-raid": {
+    "1": 720.08,
+    "2": 719.22
+   },
+   "ours|up:sv_melee|survival-ml-parse": {
+    "1": 715.91,
+    "2": 715.37
+   },
+   "ours|up:sv_melee|beast-survival-open-raid": {
+    "1": 812.51,
+    "2": 812.8
+   },
+   "ours|up:sv_melee|up:sv_melee": {
+    "1": 861.74,
+    "2": 861.74
+   },
+   "ours+mark|up:sv_melee|melee-survival-raid": {
+    "1": 765.25,
+    "2": 764.95
+   },
+   "ours+mark|up:sv_melee|opt-melee-dps-raid-dps": {
+    "1": 728.46,
+    "2": 728.65
+   },
+   "ours+mark|up:sv_melee|survival-raid": {
+    "1": 736.41,
+    "2": 736.4
+   },
+   "ours+mark|up:sv_melee|survival-ml-parse": {
+    "1": 735.39,
+    "2": 734.67
+   },
+   "ours+mark|up:sv_melee|beast-survival-open-raid": {
+    "1": 822.09,
+    "2": 822.18
+   },
+   "ours+mark|up:sv_melee|up:sv_melee": {
+    "1": 879.67,
+    "2": 879.84
+   },
+   "up:melee|up:sv_melee|melee-survival-raid": {
+    "1": 824.32,
+    "2": 824.25
+   },
+   "up:melee|up:sv_melee|opt-melee-dps-raid-dps": {
+    "1": 785.84,
+    "2": 786.0
+   },
+   "up:melee|up:sv_melee|survival-raid": {
+    "1": 792.14,
+    "2": 791.59
+   },
+   "up:melee|up:sv_melee|survival-ml-parse": {
+    "1": 788.74,
+    "2": 788.34
+   },
+   "up:melee|up:sv_melee|beast-survival-open-raid": {
+    "1": 856.35,
+    "2": 856.85
+   },
+   "up:melee|up:sv_melee|up:sv_melee": {
+    "1": 915.6,
+    "2": 915.26
+   }
+  },
+  "casts": {
+   "ours|ours|melee-survival-raid": {
+    "mark": 1.0,
+    "mongoose_bite": 14.03
+   },
+   "ours|ours|opt-melee-dps-raid-dps": {
+    "mark": 1.0,
+    "mongoose_bite": 14.23
+   },
+   "ours|ours|survival-raid": {
+    "mark": 1.0,
+    "mongoose_bite": 14.05
+   },
+   "ours|ours|survival-ml-parse": {
+    "mark": 1.0,
+    "mongoose_bite": 14.05
+   },
+   "ours|ours|beast-survival-open-raid": {
+    "mark": 1.0,
+    "mongoose_bite": 8.64
+   },
+   "ours|ours|up:sv_melee": {
+    "mark": 1.0,
+    "mongoose_bite": 14.04
+   },
+   "ours+mark|ours|melee-survival-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 21.03
+   },
+   "ours+mark|ours|opt-melee-dps-raid-dps": {
+    "mark": 2.0,
+    "mongoose_bite": 21.23
+   },
+   "ours+mark|ours|survival-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 21.04
+   },
+   "ours+mark|ours|survival-ml-parse": {
+    "mark": 2.0,
+    "mongoose_bite": 21.06
+   },
+   "ours+mark|ours|beast-survival-open-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 12.94
+   },
+   "ours+mark|ours|up:sv_melee": {
+    "mark": 2.0,
+    "mongoose_bite": 21.03
+   },
+   "up:melee|ours|melee-survival-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 19.55
+   },
+   "up:melee|ours|opt-melee-dps-raid-dps": {
+    "mark": 2.0,
+    "mongoose_bite": 19.72
+   },
+   "up:melee|ours|survival-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 19.56
+   },
+   "up:melee|ours|survival-ml-parse": {
+    "mark": 2.0,
+    "mongoose_bite": 19.6
+   },
+   "up:melee|ours|beast-survival-open-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 11.9
+   },
+   "up:melee|ours|up:sv_melee": {
+    "mark": 2.0,
+    "mongoose_bite": 19.74
+   },
+   "ours|up:sv_melee|melee-survival-raid": {
+    "mark": 1.0,
+    "mongoose_bite": 14.04
+   },
+   "ours|up:sv_melee|opt-melee-dps-raid-dps": {
+    "mark": 1.0,
+    "mongoose_bite": 14.22
+   },
+   "ours|up:sv_melee|survival-raid": {
+    "mark": 1.0,
+    "mongoose_bite": 14.08
+   },
+   "ours|up:sv_melee|survival-ml-parse": {
+    "mark": 1.0,
+    "mongoose_bite": 14.06
+   },
+   "ours|up:sv_melee|beast-survival-open-raid": {
+    "mark": 1.0,
+    "mongoose_bite": 8.6
+   },
+   "ours|up:sv_melee|up:sv_melee": {
+    "mark": 1.0,
+    "mongoose_bite": 14.04
+   },
+   "ours+mark|up:sv_melee|melee-survival-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 21.04
+   },
+   "ours+mark|up:sv_melee|opt-melee-dps-raid-dps": {
+    "mark": 2.0,
+    "mongoose_bite": 21.24
+   },
+   "ours+mark|up:sv_melee|survival-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 21.08
+   },
+   "ours+mark|up:sv_melee|survival-ml-parse": {
+    "mark": 2.0,
+    "mongoose_bite": 21.06
+   },
+   "ours+mark|up:sv_melee|beast-survival-open-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 12.92
+   },
+   "ours+mark|up:sv_melee|up:sv_melee": {
+    "mark": 2.0,
+    "mongoose_bite": 21.01
+   },
+   "up:melee|up:sv_melee|melee-survival-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 19.52
+   },
+   "up:melee|up:sv_melee|opt-melee-dps-raid-dps": {
+    "mark": 2.0,
+    "mongoose_bite": 19.68
+   },
+   "up:melee|up:sv_melee|survival-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 19.62
+   },
+   "up:melee|up:sv_melee|survival-ml-parse": {
+    "mark": 2.0,
+    "mongoose_bite": 19.53
+   },
+   "up:melee|up:sv_melee|beast-survival-open-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 11.95
+   },
+   "up:melee|up:sv_melee|up:sv_melee": {
+    "mark": 2.0,
+    "mongoose_bite": 19.74
+   }
+  },
+  "best": "up:melee|up:sv_melee|up:sv_melee",
+  "ours_mark_best": "ours+mark|up:sv_melee|up:sv_melee",
+  "up_best": "up:melee|up:sv_melee|up:sv_melee",
+  "up_vs_ours_mark": 0.0406,
+  "no_mark_arms": []
+ },
+ "survival-pet-raid": {
+  "fights": 10000,
+  "commit": "2e6e77d84",
+  "sim": {
+   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
+   "racials": "off",
+   "pet_normalize": true,
+   "patch_hash": "125d59c4f975f5df",
+   "simulator": "wowsims/forever",
+   "client": "1.60.1.70938"
+  },
+  "rotations": {
+   "ours": "F:\\wow-forever\\_reference\\data\\deep-runs\\parity-1120b\\survival-pet-raid-ours.apl.json",
+   "ours+mark": "F:\\wow-forever\\_reference\\data\\deep-runs\\parity-1120b\\survival-pet-raid-ours-mark.apl.json",
+   "up:melee": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\hunter\\upstream\\melee.apl.json"
+  },
+  "options": {
+   "ours": {
+    "quiverBonus": "AncientSinewWrappedLamina",
+    "ammo": "ThoriumHeadedArrow",
+    "petType": "Raptor",
+    "petUptime": 1,
+    "petAttackSpeed": "FasterAttackII"
+   }
+  },
+  "builds": {
+   "survival-raptor-raid": "53200005001-004-500230230050022151",
+   "melee-survival-raid": "5-005005001-500230230250222151",
+   "up:sv_melee": "53200005001-004-530200230050022151"
+  },
+  "dps": {
+   "ours|ours|survival-raptor-raid": {
+    "1": 879.67,
+    "2": 879.84
+   },
+   "ours|ours|melee-survival-raid": {
+    "1": 765.25,
+    "2": 764.95
+   },
+   "ours|ours|up:sv_melee": {
+    "1": 879.67,
+    "2": 879.84
+   },
+   "ours+mark|ours|survival-raptor-raid": {
+    "1": 879.67,
+    "2": 879.84
+   },
+   "ours+mark|ours|melee-survival-raid": {
+    "1": 765.25,
+    "2": 764.95
+   },
+   "ours+mark|ours|up:sv_melee": {
+    "1": 879.67,
+    "2": 879.84
+   },
+   "up:melee|ours|survival-raptor-raid": {
+    "1": 915.6,
+    "2": 915.26
+   },
+   "up:melee|ours|melee-survival-raid": {
+    "1": 824.32,
+    "2": 824.25
+   },
+   "up:melee|ours|up:sv_melee": {
+    "1": 915.6,
+    "2": 915.26
+   }
+  },
+  "casts": {
+   "ours|ours|survival-raptor-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 21.01
+   },
+   "ours|ours|melee-survival-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 21.04
+   },
+   "ours|ours|up:sv_melee": {
+    "mark": 2.0,
+    "mongoose_bite": 21.01
+   },
+   "ours+mark|ours|survival-raptor-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 21.01
+   },
+   "ours+mark|ours|melee-survival-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 21.04
+   },
+   "ours+mark|ours|up:sv_melee": {
+    "mark": 2.0,
+    "mongoose_bite": 21.01
+   },
+   "up:melee|ours|survival-raptor-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 19.74
+   },
+   "up:melee|ours|melee-survival-raid": {
+    "mark": 2.0,
+    "mongoose_bite": 19.52
+   },
+   "up:melee|ours|up:sv_melee": {
+    "mark": 2.0,
+    "mongoose_bite": 19.74
+   }
+  },
+  "best": "up:melee|ours|survival-raptor-raid",
+  "ours_mark_best": "ours+mark|ours|survival-raptor-raid",
+  "up_best": "up:melee|ours|survival-raptor-raid",
+  "up_vs_ours_mark": 0.0406,
+  "no_mark_arms": []
+ }
+}

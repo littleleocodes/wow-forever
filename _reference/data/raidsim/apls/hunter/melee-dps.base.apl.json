@@ -19,16 +19,31 @@
  "priorityList": [
   {
    "action": {
-    "autocastOtherCooldowns": {}
+    "condition": {
+     "not": {
+      "val": {
+       "auraIsActive": {
+        "sourceUnit": {
+         "type": "CurrentTarget"
+        },
+        "auraId": {
+         "spellId": 14324
+        }
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 14325,
+      "rank": 4
+     }
+    }
    }
   },
   {
    "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 20910
-     }
-    }
+    "autocastOtherCooldowns": {}
    }
   },
   {

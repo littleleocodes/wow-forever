@@ -466,6 +466,7 @@
   },
   "hunter": {
     "mm-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/hunter/mm-raid-raid.apl.json",
       "sim_class": "ClassHunter",
       "sim_spec": "hunter/dps",
       "profile": "raid-dps",
@@ -612,8 +613,6 @@
       "rotation_note": "2026-11-20: base switched to the official simulator's own melee rotation (SIML, trainer ranks, Hunter's Mark mapped to our patch's rank 3; deep-runs/hunter_upstream_base_1120.py): the parity race in a full raid, 10,000 fights, seeds 1 / 2, our options: melee-survival-raid +3.16% / +3.11%, beast-survival-open-raid +2.20% / +2.21% under it. Earlier notes describe the rotation it replaces. Melee hunter (2026-09-27): our melee builds on our own base rotation and a dual-wield version of the hunter's phase-1 gear (Deathbringer and Brutality Blade with Crusader). The simulator models only Aspect of the Hawk; our patch adds Aspect of the Beast (below). The scorer's melee model is not calibrated to these numbers. Traps (2026-09-29, user request): Immolation Trap then Explosive Trap as the last lines of both rotations, cast in combat under the target. No rotation had cast them (the search pools only insert new Forever spells and cooldowns). The simulator gives all traps one shared 30 s cooldown (its author's reading of the demo streams; the beta tooltips say only '30 sec cooldown' and 'only one Fire trap can be active'): with it, +7.7% on the dummy and +3.8% in the raid (Immolation alone; Explosive is then never cast); with separate cooldowns (a temporary patch, not kept) +12.6% and +6.4%. The user's reading (2026-09-29): fire traps share a cooldown with each other and frost traps with each other, so the shared-cooldown numbers apply (Immolation every 30 s; the Explosive line stays for packs). The simulator puts the frost traps on the same timer too, which no rotation here casts. Aspect of the Beast (2026-09-29): our simulator patch (patches/forever/sim/hunter/aspect_of_the_beast.go) adds Aspect of the Beast (+110 melee attack power) and the melee half of Deadly Aspects (10% per melee auto attack, +30% melee speed for 12 s); both rotations open with it: +12.3% dummy, +12.9% raid. Melee hunter numbers from that date rest on this patch (our model)."
     },
     "survival-pet-raid": {
-      "apl_opt_raid": "_reference/data/raidsim/apls/hunter/survival-pet-raid-raid.apl.json",
-      "apl_opt": "_reference/data/raidsim/apls/hunter/survival-pet-raid.apl.json",
       "sim_class": "ClassHunter",
       "sim_spec": "hunter/dps",
       "race": "RaceTroll",
@@ -621,7 +620,7 @@
       "profession1": "Engineering",
       "profession2": "Leatherworking",
       "gear": "_reference/data/raidsim/gear_sets/forever/hunter-project-hunter_melee_p1.p1opt.gear.json",
-      "apl": "_reference/data/raidsim/apls/hunter/melee-dps.base.apl.json",
+      "apl": "_reference/data/raidsim/apls/hunter/upstream/melee.apl.json",
       "spec": {
         "hunter": {
           "options": {
@@ -649,7 +648,7 @@
       "builds": ["survival-raptor-raid", "melee-survival-raid"],
       "rotation_only": true,
       "preset_names": ["SV Melee"],
-      "rotation_note": "Survival with the simulator's option set (2026-11-20, the audit's (a) on H6): melee-dps's gear and tuned rotations (copied, with their record), a Raptor out at Faster Attack II as the simulator's SV Melee build file has it. melee-dps keeps the petless set for Beast-Survival (Lone Wolf): one option set per page."
+      "rotation_note": "2026-11-20 evening: base switched to the official simulator's own melee rotation (hunter_svpet_switch_1120.py): the parity race with Hunter's Mark fixed, full raid, 10,000 fights, seeds 1 / 2, our options: survival-raptor-raid +4.06% (915.6 / 915.3 against 879.7 / 879.8), melee-survival-raid +7.7% under it. Earlier notes describe the rotation it replaces. Survival with the simulator's option set (2026-11-20, the audit's (a) on H6): melee-dps's gear and tuned rotations (copied, with their record), a Raptor out at Faster Attack II as the simulator's SV Melee build file has it. melee-dps keeps the petless set for Beast-Survival (Lone Wolf): one option set per page."
     }
   },
   "rogue": {

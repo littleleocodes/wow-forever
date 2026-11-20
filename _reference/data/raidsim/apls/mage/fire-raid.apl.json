@@ -225,30 +225,6 @@
   {
    "action": {
     "condition": {
-     "cmp": {
-      "op": "OpGe",
-      "lhs": {
-       "currentManaPercent": {}
-      },
-      "rhs": {
-       "const": {
-        "val": "10%"
-       }
-      }
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 10150,
-      "rank": 10
-     }
-    }
-   },
-   "notes": "apl_opt 2026-10-23: changed or added by the rotation search (see fire-raid-rotation-search.json)"
-  },
-  {
-   "action": {
-    "condition": {
      "auraIsActive": {
       "auraId": {
        "spellId": 400589
