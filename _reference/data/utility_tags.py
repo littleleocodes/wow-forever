@@ -11,7 +11,7 @@ import pathlib
 import re
 
 HERE = pathlib.Path(__file__).resolve().parent
-TAGS = [("interrupt", r"interrupt|pushback|casting time lost|lose .* casting time|avoid interruption"),
+TAGS = [("interrupt", r"interrupt|pushback|casting time lost|lose (?:.* )?casting time|avoid interruption"),
         ("threat", r"threat"),
         ("mana", r"mana cost|reduces the mana|restores? .*mana|mana regeneration|regenerat.* mana"),
         ("range", r"\brange\b|radius"),

@@ -1,0 +1,701 @@
+{
+ "date": "2026-11-20",
+ "builds": [
+  {
+   "class": "mage",
+   "entry": "arcane-dps",
+   "build": "arcane-open-raid",
+   "record": "arcane-dps-fillers-arcane-open-raid.json",
+   "moves_undone": [
+    [
+     "Arcane Resilience",
+     "Improved Channeling"
+    ],
+    [
+     "Arcane Resilience",
+     "Improved Channeling"
+    ]
+   ],
+   "dps": {
+    "dummy seed 1": [
+     577.8426638233163,
+     577.8426638233163
+    ],
+    "dummy seed 2": [
+     577.9791543259697,
+     577.9791543259697
+    ],
+    "raid seed 1": [
+     822.4140464456347,
+     822.4140464456347
+    ],
+    "raid seed 2": [
+     823.748687698607,
+     823.748687698607
+    ]
+   },
+   "worst": 0.0,
+   "ok": true,
+   "allocation": {
+    "Arcane": [
+     [
+      "Improved Channeling",
+      4
+     ],
+     [
+      "Arcane Resilience",
+      1
+     ],
+     [
+      "Arcane Subtlety",
+      2
+     ],
+     [
+      "Arcane Concentration",
+      5
+     ],
+     [
+      "Missile Barrage",
+      2
+     ],
+     [
+      "Arcane Impact",
+      3
+     ],
+     [
+      "Arcane Blast",
+      1
+     ],
+     [
+      "Arcane Meditation",
+      2
+     ],
+     [
+      "Arcane Wrath",
+      1
+     ],
+     [
+      "Presence of Mind",
+      1
+     ],
+     [
+      "Arcane Mind",
+      5
+     ],
+     [
+      "Arcane Instability",
+      3
+     ],
+     [
+      "Arcane Power",
+      1
+     ]
+    ],
+    "Fire": [
+     [
+      "Incineration",
+      5
+     ],
+     [
+      "Accelerant",
+      5
+     ],
+     [
+      "Ignite",
+      4
+     ],
+     [
+      "Pyroblast",
+      1
+     ],
+     [
+      "Improved Fire Blast",
+      1
+     ],
+     [
+      "Heating Up",
+      1
+     ]
+    ],
+    "Frost": [
+     [
+      "Precision",
+      3
+     ]
+    ]
+   }
+  },
+  {
+   "class": "mage",
+   "entry": "fire-raid",
+   "build": "fire-open-raid",
+   "record": "fire-raid-fillers-fire-open-raid.json",
+   "moves_undone": [
+    [
+     "Arcane Resilience",
+     "Improved Channeling"
+    ],
+    [
+     "Arcane Resilience",
+     "Improved Channeling"
+    ],
+    [
+     "Arcane Resilience",
+     "Improved Channeling"
+    ]
+   ],
+   "dps": {
+    "dummy seed 1": [
+     577.1962074241037,
+     577.1962074241037
+    ],
+    "dummy seed 2": [
+     576.7143908983553,
+     576.7143908983553
+    ],
+    "raid seed 1": [
+     868.8968427450881,
+     868.8968427450881
+    ],
+    "raid seed 2": [
+     868.5079600035857,
+     868.5079600035857
+    ]
+   },
+   "worst": 0.0,
+   "ok": true,
+   "allocation": {
+    "Arcane": [
+     [
+      "Wand Specialization",
+      2
+     ],
+     [
+      "Arcane Subtlety",
+      2
+     ],
+     [
+      "Arcane Concentration",
+      5
+     ],
+     [
+      "Missile Barrage",
+      2
+     ],
+     [
+      "Arcane Blast",
+      1
+     ],
+     [
+      "Arcane Meditation",
+      2
+     ],
+     [
+      "Improved Channeling",
+      3
+     ]
+    ],
+    "Fire": [
+     [
+      "Incineration",
+      5
+     ],
+     [
+      "Accelerant",
+      5
+     ],
+     [
+      "Ignite",
+      5
+     ],
+     [
+      "Pyroblast",
+      1
+     ],
+     [
+      "Improved Fire Blast",
+      2
+     ],
+     [
+      "Improved Scorch",
+      3
+     ],
+     [
+      "Heating Up",
+      1
+     ],
+     [
+      "Master of Elements",
+      2
+     ],
+     [
+      "Critical Mass",
+      3
+     ],
+     [
+      "Fire Power",
+      3
+     ],
+     [
+      "Combustion",
+      1
+     ]
+    ],
+    "Frost": [
+     [
+      "Precision",
+      3
+     ]
+    ]
+   }
+  },
+  {
+   "class": "mage",
+   "entry": "frost-raid",
+   "build": "arcane-frost-open-raid",
+   "record": "frost-raid-fillers-arcane-frost-open-raid.json",
+   "moves_undone": [
+    [
+     "Arcane Resilience",
+     "Improved Channeling"
+    ]
+   ],
+   "dps": {
+    "dummy seed 1": [
+     418.5217674518827,
+     418.5217674518827
+    ],
+    "dummy seed 2": [
+     418.83844267683105,
+     418.83844267683105
+    ],
+    "raid seed 1": [
+     466.5049717659077,
+     466.5049717659077
+    ],
+    "raid seed 2": [
+     466.83359163945835,
+     466.83359163945835
+    ]
+   },
+   "worst": 0.0,
+   "ok": true,
+   "allocation": {
+    "Arcane": [
+     [
+      "Improved Channeling",
+      3
+     ],
+     [
+      "Arcane Resilience",
+      2
+     ],
+     [
+      "Arcane Subtlety",
+      2
+     ],
+     [
+      "Arcane Concentration",
+      4
+     ],
+     [
+      "Missile Barrage",
+      2
+     ],
+     [
+      "Arcane Impact",
+      3
+     ],
+     [
+      "Arcane Blast",
+      1
+     ],
+     [
+      "Arcane Wrath",
+      1
+     ],
+     [
+      "Arcane Mind",
+      5
+     ],
+     [
+      "Arcane Instability",
+      3
+     ],
+     [
+      "Magic Absorption",
+      2
+     ]
+    ],
+    "Fire": [
+     [
+      "Incineration",
+      5
+     ],
+     [
+      "Accelerant",
+      5
+     ]
+    ],
+    "Frost": [
+     [
+      "Improved Frostbolt",
+      5
+     ],
+     [
+      "Precision",
+      3
+     ],
+     [
+      "Ice Shards",
+      5
+     ]
+    ]
+   }
+  },
+  {
+   "class": "mage",
+   "entry": "frost-raid",
+   "build": "frost-ml-raid",
+   "record": "frost-raid-fillers-frost-ml-raid.json",
+   "moves_undone": [
+    [
+     "Arcane Resilience",
+     "Improved Channeling"
+    ],
+    [
+     "Arcane Resilience",
+     "Improved Channeling"
+    ]
+   ],
+   "dps": {
+    "dummy seed 1": [
+     670.1333403686432,
+     670.1333403686432
+    ],
+    "dummy seed 2": [
+     670.806789363917,
+     670.806789363917
+    ],
+    "raid seed 1": [
+     798.8632083729603,
+     798.8632083729603
+    ],
+    "raid seed 2": [
+     800.3241991865067,
+     800.3241991865067
+    ]
+   },
+   "worst": 0.0,
+   "ok": true,
+   "allocation": {
+    "Arcane": [
+     [
+      "Improved Channeling",
+      4
+     ],
+     [
+      "Arcane Resilience",
+      1
+     ],
+     [
+      "Arcane Subtlety",
+      2
+     ],
+     [
+      "Magic Absorption",
+      1
+     ],
+     [
+      "Arcane Concentration",
+      5
+     ],
+     [
+      "Missile Barrage",
+      2
+     ],
+     [
+      "Arcane Meditation",
+      2
+     ]
+    ],
+    "Fire": [
+     [
+      "Incineration",
+      2
+     ]
+    ],
+    "Frost": [
+     [
+      "Improved Frostbolt",
+      5
+     ],
+     [
+      "Precision",
+      3
+     ],
+     [
+      "Ice Shards",
+      5
+     ],
+     [
+      "Frost Channeling",
+      3
+     ],
+     [
+      "Ice Lance",
+      1
+     ],
+     [
+      "Shatter",
+      3
+     ],
+     [
+      "Improved Cone of Cold",
+      3
+     ],
+     [
+      "Cold Snap",
+      1
+     ],
+     [
+      "Fingers of Frost",
+      2
+     ],
+     [
+      "Winter's Chill",
+      5
+     ],
+     [
+      "Ice Barrier",
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "class": "priest",
+   "entry": "smite-dps",
+   "build": "smite-open-raid",
+   "record": "smite-dps-fillers-smite-open-raid.json",
+   "moves_undone": [
+    [
+     "Spell Warding",
+     "Twilight Focus"
+    ]
+   ],
+   "dps": {
+    "dummy seed 1": [
+     344.139058728343,
+     344.139058728343
+    ],
+    "dummy seed 2": [
+     344.12521409772705,
+     344.12521409772705
+    ],
+    "raid seed 1": [
+     605.2924595200022,
+     605.2924595200022
+    ],
+    "raid seed 2": [
+     605.4050280821539,
+     605.4050280821539
+    ]
+   },
+   "worst": 0.0,
+   "ok": true,
+   "allocation": {
+    "Discipline": [
+     [
+      "Power in Light",
+      5
+     ],
+     [
+      "Twin Disciplines",
+      2
+     ],
+     [
+      "Holy Precision",
+      3
+     ],
+     [
+      "Mental Agility",
+      3
+     ],
+     [
+      "Inner Focus",
+      1
+     ],
+     [
+      "Meditation",
+      3
+     ]
+    ],
+    "Holy": [
+     [
+      "Holy Specialization",
+      5
+     ],
+     [
+      "Divine Fury",
+      5
+     ],
+     [
+      "Holy Nova",
+      1
+     ],
+     [
+      "Blessed Recovery",
+      2
+     ],
+     [
+      "Inspiration",
+      1
+     ],
+     [
+      "Searing Light",
+      2
+     ],
+     [
+      "Twilight Focus",
+      1
+     ]
+    ],
+    "Shadow": [
+     [
+      "Shadow Focus",
+      5
+     ],
+     [
+      "Improved Mind Blast",
+      5
+     ],
+     [
+      "Improved Shadow Word: Pain",
+      2
+     ],
+     [
+      "Mind Flay",
+      1
+     ],
+     [
+      "Shadow Weaving",
+      2
+     ],
+     [
+      "Spirit Tap",
+      2
+     ]
+    ]
+   }
+  },
+  {
+   "class": "shaman",
+   "entry": "elemental-dps",
+   "build": "elemental-ml-raid",
+   "record": "elemental-dps-fillers-elemental-ml-raid.json",
+   "moves_undone": [
+    [
+     "Natural Grace",
+     "Eye of the Storm"
+    ],
+    [
+     "Elemental Reach",
+     "Eye of the Storm"
+    ]
+   ],
+   "dps": {
+    "dummy seed 1": [
+     575.2376944720249,
+     575.2376944720249
+    ],
+    "dummy seed 2": [
+     575.2776743982803,
+     575.2776743982803
+    ],
+    "raid seed 1": [
+     742.4442469469586,
+     742.4442469469586
+    ],
+    "raid seed 2": [
+     743.0881432521959,
+     743.0881432521959
+    ]
+   },
+   "worst": 0.0,
+   "ok": true,
+   "allocation": {
+    "Elemental": [
+     [
+      "Convection",
+      5
+     ],
+     [
+      "Concussion",
+      5
+     ],
+     [
+      "Reverberation",
+      3
+     ],
+     [
+      "Elemental Alacrity",
+      3
+     ],
+     [
+      "Call of Flame",
+      3
+     ],
+     [
+      "Elemental Focus",
+      1
+     ],
+     [
+      "Call of Thunder",
+      1
+     ],
+     [
+      "Lightning Overload",
+      3
+     ],
+     [
+      "Elemental Fury",
+      5
+     ],
+     [
+      "Lightning Mastery",
+      1
+     ],
+     [
+      "Eye of the Storm",
+      2
+     ]
+    ],
+    "Enhancement": [
+     [
+      "Thundering Strikes",
+      5
+     ],
+     [
+      "Ancestral Knowledge",
+      5
+     ],
+     [
+      "Shamanistic Focus",
+      1
+     ]
+    ],
+    "Restoration": [
+     [
+      "Tidal Focus",
+      5
+     ],
+     [
+      "Mindfulness",
+      3
+     ]
+    ]
+   }
+  }
+ ]
+}

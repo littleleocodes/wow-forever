@@ -161,6 +161,22 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 ## Open ideas, ranked by what they could still find
 
+0z. **The raid filler audit's tags missed Forever's pushback wording (2026-11-20; found on the audit session's Deflection question,
+    fixed the same day)**. utility_tags.py's interrupt pattern read `lose .* casting time`, which needs a word between "lose" and "casting
+    time"; Forever's tooltips say "to not lose casting time when you take damage" (Improved Channeling, Ice Barrier, Burning Soul, Spiritual
+    Focus, Twilight Focus, Eye of the Storm, Healing Focus, Fel Concentration, Intensity). The nine read as no tag, so the filler audit and
+    the scorer's raid tie-breaks counted their points as free, against the order the user's question of 2026-09-29 set (pushback
+    protection first; that day's records still moved points into Improved Channeling, so the wording changed under the pattern later).
+    Since 2026-11-03 six records had moved points out of them, all applied: Improved Channeling into Arcane Resilience in arcane-open-raid
+    (2), fire-open-raid (3), arcane-frost-open-raid (1) and frost-ml-raid (2); smite-open-raid's Twilight Focus into Spell Warding;
+    elemental-ml-raid's Eye of the Storm into Natural Grace and Elemental Reach. Fixed: `lose (?:.* )?casting time`;
+    deep-runs/pushback_refill_1120.py put the ten points back (each build the same damage to the decimal in its entry's setting and a full
+    raid, seeds 1 and 2; record raidsim/pushback-refill.json). The same day the credited simulator builds got the filler pass with exact
+    thresholds (deep-runs/credited_fillers_1120.py: a move only at bit-identical damage in a full raid and on the dummy, never into a talent
+    ability the build does not cast or a talent that improves only spells it never casts; record raidsim/credited-fillers.json), and
+    page_lint.py a `free` check (a raid page's build holding points a measured filler pass moved, not applied). Open: a check after each
+    data refresh listing the talents whose utility tag changed, so a reworded tooltip cannot drop out of the order silently again.
+
 0y. **A rotation search's round as one bench run filled the memory (2026-11-20; open, for the optimality pass)**. Feral's fresh raid
     tune (apl_opt.py druid --spec feral-cat-dps --fresh: 19 actions, 132 pool actions) sent its first round's candidates as one config:
     the bench held 10.5 GB and apl_opt 5.5 GB, the machine fell to 1.3 GB free of 32, and Claude Code reaped the session's background
