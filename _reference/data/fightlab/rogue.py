@@ -67,6 +67,9 @@ GARROTE_AP_PER_TICK = 0.03
 GARROTE_TICKS_CRIT = True
 # poisons are spells: they crit at spell crit, about nil for a rogue (the simulator; the lab had melee crit, x2 on Deadly Poison: H13)
 POISON_SPELL_CRIT = True
+# Death Mark (2026-11-20): 12% a combo point with Coup de Grace once, the payout capped (the official simulator); False = 10% a point with
+# Coup de Grace twice and no cap, the lab before (equal at 3/3: 0.10 x 1.2 x 1.2 = 0.12 x 1.2). Read at run time.
+DEATH_MARK_OFFICIAL = True
 TREE = json.load(open(ROOT / "_reference/data/forever-talents/rogue.json", encoding="utf-8"))
 
 NUM = re.compile(r"(\d+(?:\.\d+)?)")
@@ -354,7 +357,7 @@ class RogueModule(BaseModule):
     # Death Mark's storage per combo point: an ASSUMPTION (the 70753 tooltip and Blizzard's notes give no number; Wowhead lists a 6 s periodic
     # aura of value 1 and a server-side script): 10% of the damage dealt to the marked mob per point (50% at 5 points), Garrote and Rupture at
     # twice the rate (100% at 5), times Coup de Grace's storage rate and damage bonus. A sensitivity, not a measurement.
-    DEATH_MARK_STORE = 0.12   # 12% a point: the spell's $ratio (the official simulator's death_mark.go; 0.10, an assumption, until 2026-11-19: H13)
+    DEATH_MARK_STORE = 0.10   # (unused since 2026-11-20: DEATH_MARK_OFFICIAL's 0.12 with Coup de Grace once, or this 0.10 with it twice)
     DEATH_MARK_SECONDS = 6.0
     # global cooldown of the 70753 abilities the client table (tables.spell_gcd, from the raid simulator's store) does not list yet: 1.0 s like
     # every other rogue ability (an assumption: the tooltip does not say whether Shank is off the global cooldown)
@@ -661,16 +664,26 @@ class RogueModule(BaseModule):
         for d in fight.m.dots:
             if d[0] == "Death Mark" and d[2] > 0 and len(d) > 7:
                 d[1] += amount * d[7] * (2.0 if name in BLEEDS else 1.0)
+                if len(d) > 8:   # the payout's cap (DEATH_MARK_OFFICIAL): d[8]
+                    d[1] = min(d[1], d[8])
 
     def death_mark(self, fight):
         cp = max(1, fight.last_combo)
         cdg = 1 + self.tv("Coup de Grace", 1) / 100   # "the damage and storage rate of your Death Mark ability by 7%"
-        rate = self.DEATH_MARK_STORE * cp * cdg * cdg
+        if DEATH_MARK_OFFICIAL:
+            # the official simulator's death_mark.go (2026-11-20, the audit's H13 follow-up): 12% a point with Coup de Grace once, and the
+            # payout capped at (156 + 245 a point + 0.04 x attack power a point) x (1 + melee crit) x Coup de Grace, the tooltip's rank 4
+            rate = 0.12 * cp * cdg
+            cap = (156.0 + 245.0 * cp + 0.04 * cp * fight.p.attack_power) * (1.0 + fight.p.melee_crit) * cdg
+        else:   # the lab before: 10% a point (an assumption) with Coup de Grace twice, no cap
+            rate, cap = 0.10 * cp * cdg * cdg, None
         fight.refresh_dot("Death Mark", 1e-6, 1, self.DEATH_MARK_SECONDS, 0.0, 1.0)   # "cannot crit" (Wowhead)
         for d in fight.m.dots:
             if d[0] == "Death Mark":
                 d[1] = 0.0
                 d.append(rate)   # d[7]: the storage rate (the engine reads d[0..6] only)
+                if cap is not None:
+                    d.append(cap)   # d[8]: the payout's cap
         fight.note(f"Death Mark {cp} points: stores {rate:.0%} for {self.DEATH_MARK_SECONDS:.0f}s")
 
     def on_tick(self, fight, spell, amount, crit):
