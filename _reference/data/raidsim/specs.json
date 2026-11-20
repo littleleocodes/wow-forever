@@ -531,7 +531,7 @@
         "foodId": 20452,
         "potId": 13444
       },
-      "builds": ["mm-lone-wolf-raid", "opt-mm-lonewolf-raid-raid-dps", "marksmanship-ml-raid"],
+      "builds": ["mm-lone-wolf-raid", "opt-mm-lonewolf-raid-raid-dps", "marksmanship-ml-raid", "marksmanship-lone-wolf-sim-raid"],
       "buffs_off": ["trueshot_aura"],
       "self_debuffs": {"hunters_mark": true},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
@@ -970,7 +970,7 @@
         "conjuredId": 12662,
         "mhImbueId": 22756
       },
-      "builds": ["ret-raid-dps", "ret-full-buffs-raid", "opt-ret-dps-raid-dps", "retribution-ml-raid", "retribution-open-raid", "prot-ret-ml-raid"],
+      "builds": ["ret-raid-dps", "ret-full-buffs-raid", "opt-ret-dps-raid-dps", "retribution-ml-raid", "retribution-open-raid", "prot-ret-ml-raid", "retribution-unsealed-wrath-raid"],
       "self_buffs": {"greater_blessing_of_might": true},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
     },

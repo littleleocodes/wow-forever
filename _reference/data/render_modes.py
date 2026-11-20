@@ -947,6 +947,15 @@ def rank_builds(cls, mode, builds, nums, signature=True):
         if others and metric(main[0]) and metric(main[0]) < metric(others[0]) * (1 + DERIVED_BAR):
             main.remove(others[0])
             main.insert(0, others[0])
+    # the simulator's own build first (2026-11-20, "Simulator build first" in CLAUDE.md; the audit session on the Lone Wolf tie): a credited
+    # simulator build of the slot (`preset`) within DERIVED_BAR of a pick of ours leads it, whether ours is derived (handled above) or not
+    if mode == "raid" and signature and main and not main[0].get("preset"):
+        def grp(b):
+            return (R.get(b["id"]) or {}).get("group")
+        pre = [b for b in main[1:] if b.get("preset") and not b.get("generated") and grp(b) and not sig_fail(b)]
+        if pre and grp(main[0]) and grp(main[0]) < grp(pre[0]) * (1 + DERIVED_BAR):
+            main.remove(pre[0])
+            main.insert(0, pre[0])
     # the user's rule (2026-09-30: "the healer and tank leveling order should really just be what the raid specs are"): a healer or tank
     # spec's leveling pick is its raid-path build even when a search build levels faster (2026-11-09 audit W22: the Protection warrior and
     # Discipline priest pages showed their open-leveling winners; those stay under "Other builds" with their times)
