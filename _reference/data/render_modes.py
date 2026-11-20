@@ -1399,6 +1399,20 @@ def own_rotation_only(cls, g, nums):
     return g
 
 
+# Raid searches still running when pages are pushed (2026-11-20, the audit's two-stage push): {class: {spec: note}} in
+# raid-pending.json, hand-kept for the push and emptied when the searches end. A spec listed there gets a one-line notice on its raid
+# page and in its class's raid index; the note says what is still running (and, for an entry not raced on its committed state, that its
+# number is from before the audit).
+PENDING_FILE = ROOT / "_reference" / "data" / "raid-pending.json"
+
+
+def raid_pending(cls):
+    try:
+        return (json.load(open(PENDING_FILE, encoding="utf-8")).get(cls) or {}) if PENDING_FILE.exists() else {}
+    except (OSError, ValueError):
+        return {}
+
+
 def class_pages(cls):
     B = rr.builds(cls)
     g = SM.grid(cls, list(B.values()))
@@ -1424,6 +1438,9 @@ def class_pages(cls):
             src = d / f"{SM.spec_slug(cls, spec)}.md"
             o = [f"# {spec_title(cls, spec)} — {SM.MODE_TITLE[mode]}", "",
                  f"[{cls.capitalize()}](../README.md) > [{SM.MODE_TITLE[mode]}](README.md) > {SM.spec_name(cls, spec)}", ""]
+            if mode == "raid" and spec in raid_pending(cls):
+                o += [f"> **Raid search still running:** {raid_pending(cls)[spec]} The build and numbers on this page will change when it "
+                      "ends.", ""]
             if (cls, spec) in SM.HYBRID_NAMES:
                 o += [f"*{SM.hybrid_line(cls, spec, mode)}* (a hybrid: {spec.split(' ', 1)[1]}).", ""]   # a line per mode (2026-10-15, audit C5)
             if spec in rec[mode]:
@@ -1434,6 +1451,9 @@ def class_pages(cls):
             o += ["---", foot(raid_sims(nums[0], {b["id"] for b in g[spec][mode]}) if mode == "raid" else None), ""]
             src.write_text("\n".join(o) + "\n", encoding="utf-8")
         idx = [f"# {cls.capitalize()} — {SM.MODE_TITLE[mode]}", "", f"[{cls.capitalize()}](../README.md) > {SM.MODE_TITLE[mode]}", ""]
+        if mode == "raid" and raid_pending(cls):
+            idx += ["> **Raid searches still running** for " + ", ".join(f"[{SM.spec_name(cls, sp)}]({SM.spec_slug(cls, sp)}.md)"
+                                                                     for sp in raid_pending(cls)) + ": their numbers below will change.", ""]
         idx += ranking(cls, g, specs, mode, nums)
         if mode == "leveling" and LG.load(cls):   # 2026-11-06 (user request): the rotation from level 1 as each spell arrives
             idx += ["**Level by level:** " + ", ".join(f"[{SM.spec_name(cls, g_['spec'])}]({LG.page_name(cls, g_['spec'])})" for g_ in LG.load(cls)["guides"])
