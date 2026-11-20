@@ -112,6 +112,17 @@ def client_names():
     return out
 
 
+def class_options(entry):
+    return (next(iter(entry["spec"].values())).get("options") or {}).get("classOptions", {}) if entry.get("spec") else {}
+
+
+def stance_of(entry):
+    """The stance the entry starts in ("WarriorStanceDefensive" -> "Defensive Stance"), or None."""
+    s = str(class_options(entry).get("defaultStance") or "")
+    m = re.match(r"WarriorStance(\w+)", s)
+    return f"{m.group(1)} Stance" if m else None
+
+
 def own_debuff(cls, entry):
     if cls == "hunter":
         return "Hunter's Mark"
@@ -363,6 +374,10 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
                 why = booked
             elif any(all_cs[o].get(sid, 0) > 0 for o in bids if o != b):
                 why = "cast by another build of the entry (the line serves builds that reach it)"
+            elif nm.endswith(" Stance") and stance_of(entry) == nm:
+                why = f"already in {nm} (the entry's starting stance; the line returns to it)"
+            elif nm == "Battle Shout" and class_options(entry).get("useBattleShout"):
+                why = "kept up by the class option useBattleShout"
             elif nm in book and TARGET_TYPE.search(book[nm][1]):
                 why = "needs an Undead or Demon target (the bench's boss is an Elemental)"
             elif cond is not None and false_switch(cond, apl):
