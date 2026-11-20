@@ -301,11 +301,37 @@ def main(argv):
             if game == "classic-era":
                 out = write_audit(cls, data, classic[cls], forever[cls])
                 print(f"  audit -> {out.relative_to(ROOT)}")
+    spec_lost = spec_changes(classes)
     if failed:
         print(f"\n{failed} build(s) failed validation")
         return 1
-    print("\nall builds valid")
+    print("\nall builds valid" + (f" ({len(spec_lost)} spec-field warning(s) above)" if spec_lost else ""))
     return 0
+
+
+def spec_changes(classes):
+    """Builds whose `spec` field the committed file (git HEAD) has and the working file lost or changed (2026-11-20, the audit session:
+    a re-export rewrote whole builds, so a build placed under a hybrid by its `spec` could fall back to its points' tree unnoticed).
+    A warning: a deliberate change is fine; say so in the build's notes."""
+    import subprocess
+    out = []
+    for cls in classes:
+        rel = f"{cls}/research/talents/forever/proposed-builds.json"
+        path = ROOT / rel
+        if not path.exists():
+            continue
+        try:
+            r = subprocess.run(["git", "-C", str(ROOT), "show", f"HEAD:{rel}"], capture_output=True, text=True, encoding="utf-8")
+            head = {b["id"]: b.get("spec") for b in json.loads(r.stdout)["builds"]} if r.returncode == 0 and r.stdout else {}
+        except (OSError, ValueError):
+            head = {}
+        now = {b["id"]: b.get("spec") for b in json.load(open(path, encoding="utf-8"))["builds"]}
+        for bid, sp in head.items():
+            if sp and bid in now and now[bid] != sp:
+                out.append((cls, bid, sp, now[bid]))
+                print(f"  WARNING {cls} {bid}: its spec field was {sp!r} in the committed file and is {now[bid]!r} now "
+                      "(a re-export may have dropped it)")
+    return out
 
 
 if __name__ == "__main__":

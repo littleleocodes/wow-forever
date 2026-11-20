@@ -173,9 +173,14 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
     62.6). Fixed: pick_tiers loads the database through ml_pipeline's copy; gear_opt.value and in_pool's sourceless branch stop with an
     error on an empty map or list (both had been silent); make() writes a new set only when it scores at least the old set (or the old
     set repaired, when it holds items outside the pool) on the confirmation seed and empties no slot; pick_tiers' kept record describes
-    the file as it is (it had carried the level-30 set's names after the restore; the two mage records corrected). Every other caller
-    loads the database through the copy whose picker it uses (ml_pipeline, deep_opt, dungeon_tier, family_search, tank_gear,
-    weight_errors, page_stat_weights; pawn_raid_compare supplies its own values and the tier copy's pool). The 105 tier sets on disk:
+    the file as it is (it had carried the level-30 set's names after the restore; the two mage records corrected). The Shockadin's Raid
+    BiS set of 2026-11-19 (item level 42.9, no off hand; removed in de50ed2f, the Shockadin measured in Retribution's set since) had
+    the same cause through another caller: deep-runs/gear_fix_1119.py loaded the database with the plain `gear_opt.load_db` (and never
+    called load_vetted), then ran gear_tiers.make, whose private copy had neither. Every standing caller loads the database through the
+    copy whose picker it uses (ml_pipeline, deep_opt, dungeon_tier, family_search, tank_gear, weight_errors, page_stat_weights;
+    pawn_raid_compare supplies its own values and the tier copy's pool). Open for the optimality pass's first step (the audit session):
+    one shared gear_opt module for every copy (registered under one name, or passed in), so the stops are a backstop and not the
+    mechanism. The 105 tier sets on disk:
     mean item level 59.3 or more, none affected. The stopped ML Arcane-Frost run's 246-258 DPS on the dummy at 10:05 is not this (its
     path replays clean): the hybrid's builds under the Frost entry's rotation (0o).
 

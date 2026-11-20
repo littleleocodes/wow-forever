@@ -78,6 +78,12 @@ def export_build(a, opt, best, best_s, steps):
     }
     if steps:
         entry["order"] = [{"levels": lv, "tree": t, "talent": n, "points": pts} for lv, t, n, pts in opt.compress_order(steps)]
+    # a re-export keeps the build's `spec` field (2026-11-20, the audit session: a build played around another tree's spells carries one,
+    # opt-affliction-raid-raid-dps's Shadow Bolt hybrid, and the export rewrote the whole build)
+    old_b = next((b for b in data["builds"] if b["id"] == bid), None)
+    if old_b and old_b.get("spec"):
+        entry["spec"] = old_b["spec"]
+        entry["notes"] += [x for x in old_b.get("notes", []) if "plays as" in x and x not in entry["notes"]]
     data["builds"] = [b for b in data["builds"] if b["id"] != bid] + [entry]
     path.write_text(dumps(data) + "\n", encoding="utf-8")
     print(f"exported {bid} -> {path.relative_to(ROOT)}")
