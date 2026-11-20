@@ -19,7 +19,7 @@ import tables as T
 
 PIPELINE = {"spec": "holy-heal", "hand": "holy-raid-healer", "opt": "opt-holy-heal-raid-heal", "tag": "holy"}
 
-_SPELLBOOK = json.load(open(E.ROOT / "_reference/data/forever-spells/paladin.json", encoding="utf-8"))
+_SPELLBOOK = E.trainer_ranks_only(json.load(open(E.ROOT / "_reference/data/forever-spells/paladin.json", encoding="utf-8")))
 _TREES = json.load(open(E.ROOT / "_reference/data/forever-talents/paladin.json", encoding="utf-8"))
 
 

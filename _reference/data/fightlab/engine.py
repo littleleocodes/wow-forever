@@ -20,6 +20,7 @@ import statistics
 from dataclasses import dataclass, field
 
 import tables
+UNAVOIDABLE = re.compile(r"cannot be (?:[a-z]+, )*(?:or )?(?:dodged|parried)", re.I)   # Overpower, Counterattack (2026-11-19)
 from tables import (DEATH_TIME, DRINK_BELOW, EAT_BELOW, GCD, LOOT_TIME, MELEE_RANGE, MOB_CRIT_CHANCE, MOB_DMG_SPREAD,
                     MOB_HIT_CHANCE, MOB_HP_SPREAD, MOB_SPEED, MOB_SWING, PARTIAL_RESIST_LOSS, PUSHBACK_FIRST,
                     PUSHBACK_NEXT, ROOT_BREAK_CHANCE, SIT_DOWN, TRAVEL_TIME, WAND_SPEED, armor_mitigation, drink_rate,
@@ -352,6 +353,18 @@ class BaseModule:
     def periodic_can_crit(self, spell):
         return False
 
+    def periodic_crit(self, fight, spell):
+        """(crit chance, crit multiplier) of a periodic effect's ticks, or None for periodic_can_crit's spell crit at x1.5."""
+        return None
+
+    def tick_frozen(self, fight, spell):
+        """Whether a channel's tick reads the target as Frozen (the mage's Shatter on Arcane Missiles); no RNG."""
+        return False
+
+    def ranged_speed_factor(self):
+        """Auto Shot's interval factor beyond swing_speed_factor (the hunter's quiver)."""
+        return 1.0
+
     def scale_rank(self, spell):
         """The rank at the character's level (tables.rank_level_factor, audit of 2026-10-18 row 8): a copy with the tooltip's level-60
         damage, healing and absorb scaled to what the rank gives at self.level; the spell itself when nothing scales (physical
@@ -566,6 +579,7 @@ class Fight:
         self.swinging = None         # the mob whose melee swing is being resolved (mob_swing sets it)
         self.channel_lost = 0.0
         self.queued_swing = None
+        self.last_spent = None   # (spell, cost) of the last energy or rage spend: refund_on_miss
         self.regen_tick = t0 + 2.0
         self.damage = {}             # spell name -> damage dealt
         self.pet_sources = set()     # damage names dealt by the pet or demon (signature_spells.json's "pet" core source, 2026-10-22)
@@ -673,8 +687,11 @@ class Fight:
         power = self.p.attack_power if spell.kind in ("melee", "ranged") else self.p.spell_power
         total = (spell.dot + spell.dot_coef * power * spell.dot_ticks) * self.mod.periodic_multiplier(spell)
         interval = spell.dot_dur / spell.dot_ticks if spell.dot_dur else 3.0
-        crit = (self.p.spell_crit + self.mod.crit_bonus(spell, False)) if self.mod.periodic_can_crit(spell) else 0.0
-        self.refresh_dot(spell.name, total, spell.dot_ticks, interval, crit, 1.5 + self.mod.crit_damage_bonus(spell))
+        pc = self.mod.periodic_crit(self, spell)   # (chance, multiplier) from the module (2026-11-19: Garrote's ticks crit as melee), else:
+        if pc is None:
+            pc = ((self.p.spell_crit + self.mod.crit_bonus(spell, False)) if self.mod.periodic_can_crit(spell) else 0.0,
+                  1.5 + self.mod.crit_damage_bonus(spell))
+        self.refresh_dot(spell.name, total, spell.dot_ticks, interval, pc[0], pc[1])
 
     def apply_control(self, spell):
         m, t = self.m, self.t
@@ -835,6 +852,13 @@ class Fight:
             return "miss"
         r -= miss
         red = self.mod.dodge_parry_reduction() + p.expertise + p.weapon_skill * tables.SKILL_PER_POINT   # Weapon Expertise and the like, gear
+        # an ability whose tooltip says it "cannot be blocked, dodged or parried" (Overpower, Counterattack; 2026-11-19, the audit's H16:
+        # the lab rolled both, the spell row and the simulator do not)
+        unavoidable = getattr(spell, "no_dodge_parry", None)
+        if unavoidable is None and not white:
+            unavoidable = spell.no_dodge_parry = bool(UNAVOIDABLE.search(getattr(spell, "text", "") or ""))
+        if unavoidable and not white and tables.UNAVOIDABLE_RULE:
+            red = 1.0
         dodge = max(0.0, tables.MOB_DODGE - red)
         if r < dodge:
             return "dodge"
@@ -867,6 +891,8 @@ class Fight:
         outcome = self.attack_table(spell, white, hand)
         if outcome in ("miss", "dodge", "parry"):
             self.note(f"{spell.name} {outcome.upper()}")
+            if not white:
+                self.refund_on_miss(spell)
             self.mod.on_swing(self, spell, outcome, 0.0, hand)
             self.mod.on_miss(self, spell)
             return 0.0
@@ -1008,9 +1034,23 @@ class Fight:
         p.gcd_until = max(p.gcd_until, self.t + self.mod.gcd_of(spell))
         return True
 
+    def refund_on_miss(self, spell):
+        """The game's refund of an avoided ability (2026-11-19, the independent audit's D10): an ability the game files flag
+        (tables.MISS_REFUND_RANKS) gives back tables.MISS_REFUND of what this cast cost when it misses or is dodged or parried."""
+        ls = self.last_spent
+        if not tables.MISS_REFUND or not ls or ls[0] is not spell or (spell.name, spell.rank) not in tables.MISS_REFUND_RANKS:
+            return
+        p, back = self.p, tables.MISS_REFUND * ls[1]
+        if spell.resource == "energy":
+            p.energy = min(p.energy_max or 100.0, p.energy + back)
+        elif spell.resource == "rage":
+            p.rage = min(p.rage_max or 100.0, p.rage + back)
+        self.last_spent = None
+
     def spend(self, cost, spell):
         p = self.p
         cost = self.mod.final_cost(self, spell, cost)
+        self.last_spent = (spell, cost) if spell.resource in ("energy", "rage") else None
         if spell.resource == "mana":
             p.mana = max(0.0, p.mana - cost)
             p.fsr_until = self.t + 5.0
@@ -1041,7 +1081,7 @@ class Fight:
         amount = 0.0
         if spell.dot > 0:
             base = spell.dot / max(1, spell.dot_ticks) + spell.dot_coef * power
-            crit = self.rng.random() < (p.spell_crit + self.mod.crit_bonus(spell, False)) if self.mod.periodic_can_crit(spell) else False
+            crit = self.rng.random() < (p.spell_crit + self.mod.crit_bonus(spell, self.mod.tick_frozen(self, spell))) if self.mod.periodic_can_crit(spell) else False
             amount = base * self.mod.periodic_multiplier(spell) * (1.0 - PARTIAL_RESIST_LOSS * self.mod.resist_factor())
             if crit:
                 amount *= 1.5 + self.mod.crit_damage_bonus(spell)
@@ -1125,7 +1165,11 @@ class Fight:
         if r < miss:
             self.note(f"{name} miss")
             return
-        amount = (self.rng.uniform(pet.dmg_min, pet.dmg_max) + pet.attack_power / 14.0 * pet.speed) * pet.dmg_mult
+        ns = getattr(pet, "norm_speed", None)
+        if ns and tables.PET_SWING_NORMALIZED:   # the hunter pet's 2.0 s swing taken over its passive speed (the audit's H15)
+            amount = (self.rng.uniform(pet.dmg_min, pet.dmg_max) + pet.attack_power / 14.0 * 2.0) * (ns / 2.0) * pet.dmg_mult
+        else:
+            amount = (self.rng.uniform(pet.dmg_min, pet.dmg_max) + pet.attack_power / 14.0 * pet.speed) * pet.dmg_mult
         crit = self.rng.random() < pet.crit
         if crit:
             amount *= 2.0
@@ -1285,7 +1329,7 @@ class Fight:
         dmg = self.mod.split_damage_taken(self, dmg)
         p.hp -= dmg
         if p.rage_max > 0:
-            p.rage = min(p.rage_max, p.rage + tables.rage_from_damage_taken(pre * (1.5 if crit_taken else 1.0), m.level))   # crits: as a melee hit's
+            p.rage = min(p.rage_max, p.rage + tables.rage_from_damage_taken(pre * (1.5 if crit_taken else 1.0), m.level, spell=True))   # crits: as a melee hit's; a spell gives twice a melee hit's (H16)
         self.note(f"mob's bolt hits {dmg:.0f}{f' (absorbed {absorbed:.0f})' if absorbed else ''} -> me {max(0, p.hp):.0f}")
         self.damage_taken_effects(dmg, crit_taken)
 
@@ -1566,7 +1610,7 @@ class Fight:
             if self.mod.ranged and p.ranged is not None and (not self.casting or self.casting[0].kind == "ranged") and not self.channel \
                     and t >= self.retreat_until and t >= self.last_move + tables.AUTO_SHOT_STAND_STILL and m.dist >= tables.MIN_RANGED_RANGE and t >= p.shot_at:
                 self.auto_shot()
-                p.shot_at = t + p.ranged.speed * self.mod.swing_speed_factor()
+                p.shot_at = t + p.ranged.speed * self.mod.swing_speed_factor() * self.mod.ranged_speed_factor()
             # player: a cast or channel that ends this step lets the next decision happen in the same step (until 2026-10-18 it waited one
             # step, a hidden 0.1 s after every cast: audit row 70)
             if self.casting:

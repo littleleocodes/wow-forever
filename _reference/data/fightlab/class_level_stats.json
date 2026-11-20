@@ -1,0 +1,4883 @@
+{
+ "source": "Classic 1.12 player_levelstats (race, class, level: attributes) and player_classlevelstats (class, level: basehp) of the CMaNGOS classic-db dump ClassicDB_1_12_1_z2815 (~/.wow-forever-tools/cmangos/ClassicDB.sql.gz); attributes made race-neutral with the official simulator's RaceOffsets (sim/core/base_stats.go) and averaged over the class's races. Checked 2026-11-19 against two characters' Blizzard API values (a human paladin at 22: health 742 = basehp 222 + 20 + 10 x (70 - 20) exactly, base attributes 45/32/43/34/36 against 45/32/43/34/37; a gnome mage at 37: health 827 against 817). fightlab/tables.BASE_STAT_TABLE.",
+ "classes": {
+  "warrior": {
+   "1": {
+    "strength": 23.0,
+    "agility": 20.0,
+    "stamina": 22.0,
+    "intellect": 20.0,
+    "spirit": 20.12,
+    "health": 20,
+    "classic_mana": 0
+   },
+   "2": {
+    "strength": 24.0,
+    "agility": 21.0,
+    "stamina": 23.0,
+    "intellect": 20.12,
+    "spirit": 20.12,
+    "health": 29,
+    "classic_mana": 0
+   },
+   "3": {
+    "strength": 25.0,
+    "agility": 21.0,
+    "stamina": 24.0,
+    "intellect": 20.12,
+    "spirit": 21.12,
+    "health": 38,
+    "classic_mana": 0
+   },
+   "4": {
+    "strength": 26.0,
+    "agility": 22.0,
+    "stamina": 25.0,
+    "intellect": 20.12,
+    "spirit": 21.12,
+    "health": 47,
+    "classic_mana": 0
+   },
+   "5": {
+    "strength": 28.0,
+    "agility": 23.0,
+    "stamina": 26.0,
+    "intellect": 20.12,
+    "spirit": 21.12,
+    "health": 56,
+    "classic_mana": 0
+   },
+   "6": {
+    "strength": 29.0,
+    "agility": 24.0,
+    "stamina": 27.0,
+    "intellect": 21.12,
+    "spirit": 21.12,
+    "health": 65,
+    "classic_mana": 0
+   },
+   "7": {
+    "strength": 30.0,
+    "agility": 24.0,
+    "stamina": 28.0,
+    "intellect": 21.12,
+    "spirit": 22.12,
+    "health": 74,
+    "classic_mana": 0
+   },
+   "8": {
+    "strength": 31.0,
+    "agility": 25.0,
+    "stamina": 29.0,
+    "intellect": 21.12,
+    "spirit": 22.12,
+    "health": 83,
+    "classic_mana": 0
+   },
+   "9": {
+    "strength": 32.0,
+    "agility": 26.0,
+    "stamina": 30.0,
+    "intellect": 21.12,
+    "spirit": 22.12,
+    "health": 92,
+    "classic_mana": 0
+   },
+   "10": {
+    "strength": 33.0,
+    "agility": 26.0,
+    "stamina": 31.0,
+    "intellect": 21.12,
+    "spirit": 23.12,
+    "health": 101,
+    "classic_mana": 0
+   },
+   "11": {
+    "strength": 35.0,
+    "agility": 27.0,
+    "stamina": 33.0,
+    "intellect": 21.12,
+    "spirit": 23.12,
+    "health": 100,
+    "classic_mana": 0
+   },
+   "12": {
+    "strength": 36.0,
+    "agility": 28.0,
+    "stamina": 34.0,
+    "intellect": 21.12,
+    "spirit": 23.12,
+    "health": 109,
+    "classic_mana": 0
+   },
+   "13": {
+    "strength": 37.0,
+    "agility": 29.0,
+    "stamina": 35.0,
+    "intellect": 21.12,
+    "spirit": 24.12,
+    "health": 118,
+    "classic_mana": 0
+   },
+   "14": {
+    "strength": 39.0,
+    "agility": 30.0,
+    "stamina": 36.0,
+    "intellect": 22.12,
+    "spirit": 24.12,
+    "health": 128,
+    "classic_mana": 0
+   },
+   "15": {
+    "strength": 40.0,
+    "agility": 30.0,
+    "stamina": 37.0,
+    "intellect": 22.12,
+    "spirit": 24.12,
+    "health": 139,
+    "classic_mana": 0
+   },
+   "16": {
+    "strength": 41.0,
+    "agility": 31.0,
+    "stamina": 38.0,
+    "intellect": 22.12,
+    "spirit": 25.12,
+    "health": 151,
+    "classic_mana": 0
+   },
+   "17": {
+    "strength": 42.0,
+    "agility": 32.0,
+    "stamina": 40.0,
+    "intellect": 22.12,
+    "spirit": 25.12,
+    "health": 154,
+    "classic_mana": 0
+   },
+   "18": {
+    "strength": 44.0,
+    "agility": 33.0,
+    "stamina": 41.0,
+    "intellect": 22.12,
+    "spirit": 25.12,
+    "health": 168,
+    "classic_mana": 0
+   },
+   "19": {
+    "strength": 44.88,
+    "agility": 33.88,
+    "stamina": 41.88,
+    "intellect": 22.12,
+    "spirit": 26.0,
+    "health": 168,
+    "classic_mana": 0
+   },
+   "20": {
+    "strength": 47.0,
+    "agility": 35.0,
+    "stamina": 43.0,
+    "intellect": 22.12,
+    "spirit": 26.12,
+    "health": 199,
+    "classic_mana": 0
+   },
+   "21": {
+    "strength": 48.0,
+    "agility": 35.0,
+    "stamina": 45.0,
+    "intellect": 23.12,
+    "spirit": 26.12,
+    "health": 206,
+    "classic_mana": 0
+   },
+   "22": {
+    "strength": 49.0,
+    "agility": 36.0,
+    "stamina": 46.0,
+    "intellect": 23.12,
+    "spirit": 27.12,
+    "health": 224,
+    "classic_mana": 0
+   },
+   "23": {
+    "strength": 51.0,
+    "agility": 37.0,
+    "stamina": 47.0,
+    "intellect": 23.12,
+    "spirit": 27.12,
+    "health": 243,
+    "classic_mana": 0
+   },
+   "24": {
+    "strength": 52.0,
+    "agility": 38.0,
+    "stamina": 49.0,
+    "intellect": 23.12,
+    "spirit": 28.12,
+    "health": 253,
+    "classic_mana": 0
+   },
+   "25": {
+    "strength": 54.0,
+    "agility": 39.0,
+    "stamina": 50.0,
+    "intellect": 23.12,
+    "spirit": 28.12,
+    "health": 274,
+    "classic_mana": 0
+   },
+   "26": {
+    "strength": 55.0,
+    "agility": 40.0,
+    "stamina": 51.0,
+    "intellect": 23.12,
+    "spirit": 28.12,
+    "health": 296,
+    "classic_mana": 0
+   },
+   "27": {
+    "strength": 57.0,
+    "agility": 41.0,
+    "stamina": 53.0,
+    "intellect": 23.12,
+    "spirit": 29.12,
+    "health": 309,
+    "classic_mana": 0
+   },
+   "28": {
+    "strength": 58.0,
+    "agility": 42.0,
+    "stamina": 54.0,
+    "intellect": 24.12,
+    "spirit": 29.12,
+    "health": 333,
+    "classic_mana": 0
+   },
+   "29": {
+    "strength": 60.0,
+    "agility": 43.0,
+    "stamina": 56.0,
+    "intellect": 24.12,
+    "spirit": 30.12,
+    "health": 348,
+    "classic_mana": 0
+   },
+   "30": {
+    "strength": 62.0,
+    "agility": 44.0,
+    "stamina": 57.0,
+    "intellect": 24.12,
+    "spirit": 30.12,
+    "health": 374,
+    "classic_mana": 0
+   },
+   "31": {
+    "strength": 63.0,
+    "agility": 45.0,
+    "stamina": 58.0,
+    "intellect": 24.12,
+    "spirit": 30.12,
+    "health": 401,
+    "classic_mana": 0
+   },
+   "32": {
+    "strength": 65.0,
+    "agility": 46.0,
+    "stamina": 60.0,
+    "intellect": 24.12,
+    "spirit": 31.12,
+    "health": 419,
+    "classic_mana": 0
+   },
+   "33": {
+    "strength": 66.0,
+    "agility": 47.0,
+    "stamina": 61.0,
+    "intellect": 24.12,
+    "spirit": 31.12,
+    "health": 448,
+    "classic_mana": 0
+   },
+   "34": {
+    "strength": 68.0,
+    "agility": 48.0,
+    "stamina": 63.0,
+    "intellect": 25.12,
+    "spirit": 32.12,
+    "health": 468,
+    "classic_mana": 0
+   },
+   "35": {
+    "strength": 70.0,
+    "agility": 49.0,
+    "stamina": 64.0,
+    "intellect": 25.12,
+    "spirit": 32.12,
+    "health": 499,
+    "classic_mana": 0
+   },
+   "36": {
+    "strength": 72.0,
+    "agility": 50.0,
+    "stamina": 66.0,
+    "intellect": 25.12,
+    "spirit": 33.12,
+    "health": 521,
+    "classic_mana": 0
+   },
+   "37": {
+    "strength": 73.0,
+    "agility": 51.0,
+    "stamina": 68.0,
+    "intellect": 25.12,
+    "spirit": 33.12,
+    "health": 545,
+    "classic_mana": 0
+   },
+   "38": {
+    "strength": 75.0,
+    "agility": 52.0,
+    "stamina": 69.0,
+    "intellect": 25.12,
+    "spirit": 33.12,
+    "health": 581,
+    "classic_mana": 0
+   },
+   "39": {
+    "strength": 77.0,
+    "agility": 53.0,
+    "stamina": 71.0,
+    "intellect": 26.12,
+    "spirit": 34.12,
+    "health": 609,
+    "classic_mana": 0
+   },
+   "40": {
+    "strength": 79.0,
+    "agility": 54.0,
+    "stamina": 72.0,
+    "intellect": 26.12,
+    "spirit": 34.12,
+    "health": 649,
+    "classic_mana": 0
+   },
+   "41": {
+    "strength": 80.0,
+    "agility": 56.0,
+    "stamina": 74.0,
+    "intellect": 26.12,
+    "spirit": 35.12,
+    "health": 681,
+    "classic_mana": 0
+   },
+   "42": {
+    "strength": 82.0,
+    "agility": 57.0,
+    "stamina": 76.0,
+    "intellect": 26.12,
+    "spirit": 35.12,
+    "health": 715,
+    "classic_mana": 0
+   },
+   "43": {
+    "strength": 84.0,
+    "agility": 58.0,
+    "stamina": 77.0,
+    "intellect": 26.12,
+    "spirit": 36.12,
+    "health": 761,
+    "classic_mana": 0
+   },
+   "44": {
+    "strength": 86.0,
+    "agility": 59.0,
+    "stamina": 79.0,
+    "intellect": 26.12,
+    "spirit": 36.12,
+    "health": 799,
+    "classic_mana": 0
+   },
+   "45": {
+    "strength": 88.0,
+    "agility": 60.0,
+    "stamina": 81.0,
+    "intellect": 27.25,
+    "spirit": 37.12,
+    "health": 839,
+    "classic_mana": 0
+   },
+   "46": {
+    "strength": 90.0,
+    "agility": 61.0,
+    "stamina": 83.0,
+    "intellect": 27.25,
+    "spirit": 37.12,
+    "health": 881,
+    "classic_mana": 0
+   },
+   "47": {
+    "strength": 92.0,
+    "agility": 63.0,
+    "stamina": 84.0,
+    "intellect": 27.25,
+    "spirit": 38.12,
+    "health": 935,
+    "classic_mana": 0
+   },
+   "48": {
+    "strength": 94.0,
+    "agility": 64.0,
+    "stamina": 86.0,
+    "intellect": 27.25,
+    "spirit": 38.12,
+    "health": 981,
+    "classic_mana": 0
+   },
+   "49": {
+    "strength": 96.0,
+    "agility": 65.0,
+    "stamina": 88.0,
+    "intellect": 28.25,
+    "spirit": 39.12,
+    "health": 1029,
+    "classic_mana": 0
+   },
+   "50": {
+    "strength": 98.0,
+    "agility": 66.0,
+    "stamina": 90.0,
+    "intellect": 28.25,
+    "spirit": 39.12,
+    "health": 1079,
+    "classic_mana": 0
+   },
+   "51": {
+    "strength": 100.0,
+    "agility": 68.0,
+    "stamina": 92.0,
+    "intellect": 28.25,
+    "spirit": 40.25,
+    "health": 1131,
+    "classic_mana": 0
+   },
+   "52": {
+    "strength": 102.0,
+    "agility": 69.0,
+    "stamina": 94.0,
+    "intellect": 28.25,
+    "spirit": 40.25,
+    "health": 1185,
+    "classic_mana": 0
+   },
+   "53": {
+    "strength": 104.0,
+    "agility": 70.0,
+    "stamina": 96.0,
+    "intellect": 28.25,
+    "spirit": 41.25,
+    "health": 1241,
+    "classic_mana": 0
+   },
+   "54": {
+    "strength": 106.0,
+    "agility": 72.0,
+    "stamina": 98.0,
+    "intellect": 29.25,
+    "spirit": 42.25,
+    "health": 1299,
+    "classic_mana": 0
+   },
+   "55": {
+    "strength": 109.0,
+    "agility": 73.0,
+    "stamina": 100.0,
+    "intellect": 29.25,
+    "spirit": 42.25,
+    "health": 1359,
+    "classic_mana": 0
+   },
+   "56": {
+    "strength": 111.0,
+    "agility": 74.0,
+    "stamina": 102.0,
+    "intellect": 29.25,
+    "spirit": 43.25,
+    "health": 1421,
+    "classic_mana": 0
+   },
+   "57": {
+    "strength": 113.0,
+    "agility": 76.0,
+    "stamina": 104.0,
+    "intellect": 29.25,
+    "spirit": 43.25,
+    "health": 1485,
+    "classic_mana": 0
+   },
+   "58": {
+    "strength": 115.0,
+    "agility": 77.0,
+    "stamina": 106.0,
+    "intellect": 30.25,
+    "spirit": 44.25,
+    "health": 1551,
+    "classic_mana": 0
+   },
+   "59": {
+    "strength": 118.0,
+    "agility": 79.0,
+    "stamina": 108.0,
+    "intellect": 30.25,
+    "spirit": 44.25,
+    "health": 1619,
+    "classic_mana": 0
+   },
+   "60": {
+    "strength": 120.0,
+    "agility": 80.0,
+    "stamina": 110.0,
+    "intellect": 30.25,
+    "spirit": 45.25,
+    "health": 1689,
+    "classic_mana": 0
+   }
+  },
+  "paladin": {
+   "1": {
+    "strength": 22.0,
+    "agility": 20.0,
+    "stamina": 22.0,
+    "intellect": 20.0,
+    "spirit": 21.5,
+    "health": 28,
+    "classic_mana": 59
+   },
+   "2": {
+    "strength": 23.0,
+    "agility": 21.0,
+    "stamina": 23.0,
+    "intellect": 21.0,
+    "spirit": 22.5,
+    "health": 26,
+    "classic_mana": 64
+   },
+   "3": {
+    "strength": 24.0,
+    "agility": 21.0,
+    "stamina": 24.0,
+    "intellect": 21.0,
+    "spirit": 22.5,
+    "health": 34,
+    "classic_mana": 84
+   },
+   "4": {
+    "strength": 25.0,
+    "agility": 22.0,
+    "stamina": 25.0,
+    "intellect": 22.0,
+    "spirit": 23.5,
+    "health": 42,
+    "classic_mana": 90
+   },
+   "5": {
+    "strength": 26.0,
+    "agility": 22.0,
+    "stamina": 26.0,
+    "intellect": 22.0,
+    "spirit": 24.5,
+    "health": 50,
+    "classic_mana": 112
+   },
+   "6": {
+    "strength": 27.0,
+    "agility": 23.0,
+    "stamina": 27.0,
+    "intellect": 23.0,
+    "spirit": 24.5,
+    "health": 58,
+    "classic_mana": 120
+   },
+   "7": {
+    "strength": 28.0,
+    "agility": 23.0,
+    "stamina": 28.0,
+    "intellect": 24.0,
+    "spirit": 25.5,
+    "health": 66,
+    "classic_mana": 129
+   },
+   "8": {
+    "strength": 29.0,
+    "agility": 24.0,
+    "stamina": 28.0,
+    "intellect": 24.0,
+    "spirit": 25.5,
+    "health": 84,
+    "classic_mana": 154
+   },
+   "9": {
+    "strength": 30.0,
+    "agility": 24.0,
+    "stamina": 29.0,
+    "intellect": 25.0,
+    "spirit": 26.5,
+    "health": 92,
+    "classic_mana": 165
+   },
+   "10": {
+    "strength": 31.0,
+    "agility": 25.0,
+    "stamina": 30.0,
+    "intellect": 25.0,
+    "spirit": 27.5,
+    "health": 100,
+    "classic_mana": 192
+   },
+   "11": {
+    "strength": 32.0,
+    "agility": 25.0,
+    "stamina": 31.0,
+    "intellect": 26.0,
+    "spirit": 28.5,
+    "health": 108,
+    "classic_mana": 205
+   },
+   "12": {
+    "strength": 33.0,
+    "agility": 26.0,
+    "stamina": 32.0,
+    "intellect": 27.0,
+    "spirit": 28.5,
+    "health": 116,
+    "classic_mana": 219
+   },
+   "13": {
+    "strength": 34.0,
+    "agility": 27.0,
+    "stamina": 33.0,
+    "intellect": 27.0,
+    "spirit": 29.5,
+    "health": 124,
+    "classic_mana": 249
+   },
+   "14": {
+    "strength": 35.0,
+    "agility": 27.0,
+    "stamina": 34.0,
+    "intellect": 28.0,
+    "spirit": 30.5,
+    "health": 132,
+    "classic_mana": 265
+   },
+   "15": {
+    "strength": 36.0,
+    "agility": 28.0,
+    "stamina": 36.0,
+    "intellect": 29.0,
+    "spirit": 30.5,
+    "health": 131,
+    "classic_mana": 282
+   },
+   "16": {
+    "strength": 38.0,
+    "agility": 28.0,
+    "stamina": 37.0,
+    "intellect": 29.0,
+    "spirit": 31.5,
+    "health": 141,
+    "classic_mana": 315
+   },
+   "17": {
+    "strength": 39.0,
+    "agility": 29.0,
+    "stamina": 38.0,
+    "intellect": 30.0,
+    "spirit": 32.5,
+    "health": 152,
+    "classic_mana": 334
+   },
+   "18": {
+    "strength": 40.0,
+    "agility": 30.0,
+    "stamina": 39.0,
+    "intellect": 31.0,
+    "spirit": 33.5,
+    "health": 164,
+    "classic_mana": 354
+   },
+   "19": {
+    "strength": 41.0,
+    "agility": 30.0,
+    "stamina": 40.0,
+    "intellect": 31.0,
+    "spirit": 33.5,
+    "health": 177,
+    "classic_mana": 390
+   },
+   "20": {
+    "strength": 42.0,
+    "agility": 31.0,
+    "stamina": 41.0,
+    "intellect": 32.0,
+    "spirit": 34.5,
+    "health": 191,
+    "classic_mana": 412
+   },
+   "21": {
+    "strength": 43.0,
+    "agility": 32.0,
+    "stamina": 42.0,
+    "intellect": 33.0,
+    "spirit": 35.5,
+    "health": 206,
+    "classic_mana": 435
+   },
+   "22": {
+    "strength": 45.0,
+    "agility": 32.0,
+    "stamina": 43.0,
+    "intellect": 34.0,
+    "spirit": 36.5,
+    "health": 222,
+    "classic_mana": 459
+   },
+   "23": {
+    "strength": 46.0,
+    "agility": 33.0,
+    "stamina": 44.0,
+    "intellect": 34.0,
+    "spirit": 37.5,
+    "health": 239,
+    "classic_mana": 499
+   },
+   "24": {
+    "strength": 47.0,
+    "agility": 34.0,
+    "stamina": 46.0,
+    "intellect": 35.0,
+    "spirit": 37.5,
+    "health": 247,
+    "classic_mana": 525
+   },
+   "25": {
+    "strength": 48.0,
+    "agility": 34.0,
+    "stamina": 47.0,
+    "intellect": 36.0,
+    "spirit": 38.5,
+    "health": 266,
+    "classic_mana": 552
+   },
+   "26": {
+    "strength": 50.0,
+    "agility": 35.0,
+    "stamina": 48.0,
+    "intellect": 37.0,
+    "spirit": 39.5,
+    "health": 286,
+    "classic_mana": 579
+   },
+   "27": {
+    "strength": 51.0,
+    "agility": 36.0,
+    "stamina": 49.0,
+    "intellect": 37.0,
+    "spirit": 41.0,
+    "health": 307,
+    "classic_mana": 621
+   },
+   "28": {
+    "strength": 52.0,
+    "agility": 36.0,
+    "stamina": 50.0,
+    "intellect": 38.0,
+    "spirit": 42.0,
+    "health": 329,
+    "classic_mana": 648
+   },
+   "29": {
+    "strength": 54.0,
+    "agility": 37.0,
+    "stamina": 52.0,
+    "intellect": 39.0,
+    "spirit": 43.0,
+    "health": 342,
+    "classic_mana": 675
+   },
+   "30": {
+    "strength": 55.0,
+    "agility": 38.0,
+    "stamina": 53.0,
+    "intellect": 40.0,
+    "spirit": 43.0,
+    "health": 366,
+    "classic_mana": 702
+   },
+   "31": {
+    "strength": 56.0,
+    "agility": 39.0,
+    "stamina": 54.0,
+    "intellect": 41.0,
+    "spirit": 44.0,
+    "health": 391,
+    "classic_mana": 729
+   },
+   "32": {
+    "strength": 58.0,
+    "agility": 39.0,
+    "stamina": 56.0,
+    "intellect": 42.0,
+    "spirit": 45.0,
+    "health": 407,
+    "classic_mana": 756
+   },
+   "33": {
+    "strength": 59.0,
+    "agility": 40.0,
+    "stamina": 57.0,
+    "intellect": 42.0,
+    "spirit": 46.0,
+    "health": 434,
+    "classic_mana": 798
+   },
+   "34": {
+    "strength": 61.0,
+    "agility": 41.0,
+    "stamina": 58.0,
+    "intellect": 43.0,
+    "spirit": 47.0,
+    "health": 462,
+    "classic_mana": 825
+   },
+   "35": {
+    "strength": 62.0,
+    "agility": 42.0,
+    "stamina": 60.0,
+    "intellect": 44.0,
+    "spirit": 48.0,
+    "health": 481,
+    "classic_mana": 852
+   },
+   "36": {
+    "strength": 64.0,
+    "agility": 43.0,
+    "stamina": 61.0,
+    "intellect": 45.0,
+    "spirit": 49.0,
+    "health": 511,
+    "classic_mana": 879
+   },
+   "37": {
+    "strength": 65.0,
+    "agility": 43.0,
+    "stamina": 62.0,
+    "intellect": 46.0,
+    "spirit": 50.0,
+    "health": 542,
+    "classic_mana": 906
+   },
+   "38": {
+    "strength": 67.0,
+    "agility": 44.0,
+    "stamina": 64.0,
+    "intellect": 47.0,
+    "spirit": 51.0,
+    "health": 564,
+    "classic_mana": 933
+   },
+   "39": {
+    "strength": 68.0,
+    "agility": 45.0,
+    "stamina": 65.0,
+    "intellect": 48.0,
+    "spirit": 52.0,
+    "health": 597,
+    "classic_mana": 960
+   },
+   "40": {
+    "strength": 70.0,
+    "agility": 46.0,
+    "stamina": 67.0,
+    "intellect": 49.0,
+    "spirit": 53.0,
+    "health": 621,
+    "classic_mana": 987
+   },
+   "41": {
+    "strength": 71.0,
+    "agility": 47.0,
+    "stamina": 68.0,
+    "intellect": 50.0,
+    "spirit": 54.0,
+    "health": 656,
+    "classic_mana": 1014
+   },
+   "42": {
+    "strength": 73.0,
+    "agility": 47.0,
+    "stamina": 70.0,
+    "intellect": 51.0,
+    "spirit": 55.0,
+    "health": 682,
+    "classic_mana": 1041
+   },
+   "43": {
+    "strength": 74.0,
+    "agility": 48.0,
+    "stamina": 71.0,
+    "intellect": 52.0,
+    "spirit": 56.0,
+    "health": 719,
+    "classic_mana": 1068
+   },
+   "44": {
+    "strength": 76.0,
+    "agility": 49.0,
+    "stamina": 73.0,
+    "intellect": 52.0,
+    "spirit": 57.0,
+    "health": 747,
+    "classic_mana": 1110
+   },
+   "45": {
+    "strength": 78.0,
+    "agility": 50.0,
+    "stamina": 74.0,
+    "intellect": 53.0,
+    "spirit": 58.0,
+    "health": 786,
+    "classic_mana": 1137
+   },
+   "46": {
+    "strength": 79.0,
+    "agility": 51.0,
+    "stamina": 76.0,
+    "intellect": 54.0,
+    "spirit": 59.0,
+    "health": 816,
+    "classic_mana": 1164
+   },
+   "47": {
+    "strength": 81.0,
+    "agility": 52.0,
+    "stamina": 77.0,
+    "intellect": 56.0,
+    "spirit": 60.0,
+    "health": 857,
+    "classic_mana": 1176
+   },
+   "48": {
+    "strength": 83.0,
+    "agility": 53.0,
+    "stamina": 79.0,
+    "intellect": 57.0,
+    "spirit": 61.5,
+    "health": 889,
+    "classic_mana": 1203
+   },
+   "49": {
+    "strength": 84.0,
+    "agility": 54.0,
+    "stamina": 81.0,
+    "intellect": 58.0,
+    "spirit": 63.5,
+    "health": 922,
+    "classic_mana": 1230
+   },
+   "50": {
+    "strength": 86.0,
+    "agility": 55.0,
+    "stamina": 82.0,
+    "intellect": 59.0,
+    "spirit": 64.5,
+    "health": 966,
+    "classic_mana": 1257
+   },
+   "51": {
+    "strength": 88.0,
+    "agility": 56.0,
+    "stamina": 84.0,
+    "intellect": 60.0,
+    "spirit": 65.5,
+    "health": 1001,
+    "classic_mana": 1284
+   },
+   "52": {
+    "strength": 90.0,
+    "agility": 57.0,
+    "stamina": 86.0,
+    "intellect": 61.0,
+    "spirit": 66.5,
+    "health": 1037,
+    "classic_mana": 1311
+   },
+   "53": {
+    "strength": 92.0,
+    "agility": 58.0,
+    "stamina": 87.0,
+    "intellect": 62.0,
+    "spirit": 67.5,
+    "health": 1084,
+    "classic_mana": 1338
+   },
+   "54": {
+    "strength": 93.0,
+    "agility": 59.0,
+    "stamina": 89.0,
+    "intellect": 63.0,
+    "spirit": 68.5,
+    "health": 1122,
+    "classic_mana": 1365
+   },
+   "55": {
+    "strength": 95.0,
+    "agility": 60.0,
+    "stamina": 91.0,
+    "intellect": 64.0,
+    "spirit": 70.5,
+    "health": 1161,
+    "classic_mana": 1392
+   },
+   "56": {
+    "strength": 97.0,
+    "agility": 61.0,
+    "stamina": 93.0,
+    "intellect": 65.0,
+    "spirit": 71.5,
+    "health": 1201,
+    "classic_mana": 1419
+   },
+   "57": {
+    "strength": 99.0,
+    "agility": 62.0,
+    "stamina": 94.0,
+    "intellect": 66.0,
+    "spirit": 72.5,
+    "health": 1252,
+    "classic_mana": 1446
+   },
+   "58": {
+    "strength": 101.0,
+    "agility": 63.0,
+    "stamina": 96.0,
+    "intellect": 68.0,
+    "spirit": 73.5,
+    "health": 1294,
+    "classic_mana": 1458
+   },
+   "59": {
+    "strength": 103.0,
+    "agility": 64.0,
+    "stamina": 98.0,
+    "intellect": 69.0,
+    "spirit": 75.5,
+    "health": 1337,
+    "classic_mana": 1485
+   },
+   "60": {
+    "strength": 105.0,
+    "agility": 65.0,
+    "stamina": 100.0,
+    "intellect": 70.0,
+    "spirit": 76.5,
+    "health": 1381,
+    "classic_mana": 1512
+   }
+  },
+  "hunter": {
+   "1": {
+    "strength": 20.0,
+    "agility": 23.0,
+    "stamina": 21.0,
+    "intellect": 20.0,
+    "spirit": 21.0,
+    "health": 26,
+    "classic_mana": 63
+   },
+   "2": {
+    "strength": 20.0,
+    "agility": 24.0,
+    "stamina": 22.0,
+    "intellect": 21.0,
+    "spirit": 22.0,
+    "health": 33,
+    "classic_mana": 70
+   },
+   "3": {
+    "strength": 21.0,
+    "agility": 25.0,
+    "stamina": 23.0,
+    "intellect": 21.0,
+    "spirit": 22.0,
+    "health": 40,
+    "classic_mana": 91
+   },
+   "4": {
+    "strength": 21.0,
+    "agility": 27.0,
+    "stamina": 23.0,
+    "intellect": 22.0,
+    "spirit": 23.0,
+    "health": 57,
+    "classic_mana": 98
+   },
+   "5": {
+    "strength": 22.0,
+    "agility": 28.0,
+    "stamina": 24.0,
+    "intellect": 22.0,
+    "spirit": 23.0,
+    "health": 64,
+    "classic_mana": 121
+   },
+   "6": {
+    "strength": 22.0,
+    "agility": 29.0,
+    "stamina": 25.0,
+    "intellect": 23.0,
+    "spirit": 24.0,
+    "health": 71,
+    "classic_mana": 130
+   },
+   "7": {
+    "strength": 22.0,
+    "agility": 30.0,
+    "stamina": 26.0,
+    "intellect": 23.0,
+    "spirit": 24.0,
+    "health": 78,
+    "classic_mana": 155
+   },
+   "8": {
+    "strength": 23.0,
+    "agility": 31.0,
+    "stamina": 27.0,
+    "intellect": 24.0,
+    "spirit": 25.0,
+    "health": 85,
+    "classic_mana": 166
+   },
+   "9": {
+    "strength": 23.0,
+    "agility": 33.0,
+    "stamina": 28.0,
+    "intellect": 24.0,
+    "spirit": 26.0,
+    "health": 92,
+    "classic_mana": 193
+   },
+   "10": {
+    "strength": 24.0,
+    "agility": 34.0,
+    "stamina": 28.0,
+    "intellect": 25.0,
+    "spirit": 26.0,
+    "health": 109,
+    "classic_mana": 206
+   },
+   "11": {
+    "strength": 24.0,
+    "agility": 35.0,
+    "stamina": 29.0,
+    "intellect": 25.0,
+    "spirit": 27.0,
+    "health": 116,
+    "classic_mana": 235
+   },
+   "12": {
+    "strength": 25.0,
+    "agility": 37.0,
+    "stamina": 30.0,
+    "intellect": 26.0,
+    "spirit": 28.0,
+    "health": 123,
+    "classic_mana": 250
+   },
+   "13": {
+    "strength": 25.0,
+    "agility": 38.0,
+    "stamina": 31.0,
+    "intellect": 27.0,
+    "spirit": 28.0,
+    "health": 130,
+    "classic_mana": 266
+   },
+   "14": {
+    "strength": 26.0,
+    "agility": 39.0,
+    "stamina": 32.0,
+    "intellect": 27.0,
+    "spirit": 29.0,
+    "health": 138,
+    "classic_mana": 298
+   },
+   "15": {
+    "strength": 26.0,
+    "agility": 41.0,
+    "stamina": 33.0,
+    "intellect": 28.0,
+    "spirit": 29.0,
+    "health": 147,
+    "classic_mana": 316
+   },
+   "16": {
+    "strength": 27.0,
+    "agility": 42.0,
+    "stamina": 34.0,
+    "intellect": 28.0,
+    "spirit": 30.0,
+    "health": 157,
+    "classic_mana": 350
+   },
+   "17": {
+    "strength": 27.0,
+    "agility": 43.0,
+    "stamina": 35.0,
+    "intellect": 29.0,
+    "spirit": 31.0,
+    "health": 168,
+    "classic_mana": 370
+   },
+   "18": {
+    "strength": 28.0,
+    "agility": 45.0,
+    "stamina": 36.0,
+    "intellect": 30.0,
+    "spirit": 32.0,
+    "health": 180,
+    "classic_mana": 391
+   },
+   "19": {
+    "strength": 28.0,
+    "agility": 46.0,
+    "stamina": 37.0,
+    "intellect": 30.0,
+    "spirit": 32.0,
+    "health": 193,
+    "classic_mana": 428
+   },
+   "20": {
+    "strength": 29.0,
+    "agility": 48.0,
+    "stamina": 38.0,
+    "intellect": 31.0,
+    "spirit": 33.0,
+    "health": 207,
+    "classic_mana": 451
+   },
+   "21": {
+    "strength": 29.0,
+    "agility": 49.0,
+    "stamina": 39.0,
+    "intellect": 32.0,
+    "spirit": 34.0,
+    "health": 222,
+    "classic_mana": 475
+   },
+   "22": {
+    "strength": 30.0,
+    "agility": 51.0,
+    "stamina": 40.0,
+    "intellect": 32.0,
+    "spirit": 34.0,
+    "health": 238,
+    "classic_mana": 515
+   },
+   "23": {
+    "strength": 30.0,
+    "agility": 52.0,
+    "stamina": 41.0,
+    "intellect": 33.0,
+    "spirit": 35.0,
+    "health": 255,
+    "classic_mana": 541
+   },
+   "24": {
+    "strength": 31.0,
+    "agility": 54.0,
+    "stamina": 42.0,
+    "intellect": 34.0,
+    "spirit": 36.0,
+    "health": 273,
+    "classic_mana": 568
+   },
+   "25": {
+    "strength": 31.0,
+    "agility": 55.0,
+    "stamina": 43.0,
+    "intellect": 34.0,
+    "spirit": 37.0,
+    "health": 292,
+    "classic_mana": 611
+   },
+   "26": {
+    "strength": 32.0,
+    "agility": 57.0,
+    "stamina": 44.0,
+    "intellect": 35.0,
+    "spirit": 37.0,
+    "health": 312,
+    "classic_mana": 640
+   },
+   "27": {
+    "strength": 32.0,
+    "agility": 59.0,
+    "stamina": 45.0,
+    "intellect": 36.0,
+    "spirit": 38.0,
+    "health": 333,
+    "classic_mana": 670
+   },
+   "28": {
+    "strength": 33.0,
+    "agility": 60.0,
+    "stamina": 46.0,
+    "intellect": 36.0,
+    "spirit": 39.0,
+    "health": 355,
+    "classic_mana": 715
+   },
+   "29": {
+    "strength": 33.0,
+    "agility": 62.0,
+    "stamina": 47.0,
+    "intellect": 37.0,
+    "spirit": 40.0,
+    "health": 378,
+    "classic_mana": 745
+   },
+   "30": {
+    "strength": 34.0,
+    "agility": 64.0,
+    "stamina": 48.0,
+    "intellect": 38.0,
+    "spirit": 40.0,
+    "health": 402,
+    "classic_mana": 775
+   },
+   "31": {
+    "strength": 34.0,
+    "agility": 65.0,
+    "stamina": 50.0,
+    "intellect": 39.0,
+    "spirit": 41.0,
+    "health": 417,
+    "classic_mana": 805
+   },
+   "32": {
+    "strength": 35.0,
+    "agility": 67.0,
+    "stamina": 51.0,
+    "intellect": 39.0,
+    "spirit": 42.0,
+    "health": 443,
+    "classic_mana": 850
+   },
+   "33": {
+    "strength": 36.0,
+    "agility": 69.0,
+    "stamina": 52.0,
+    "intellect": 40.0,
+    "spirit": 43.0,
+    "health": 470,
+    "classic_mana": 880
+   },
+   "34": {
+    "strength": 36.0,
+    "agility": 70.0,
+    "stamina": 53.0,
+    "intellect": 41.0,
+    "spirit": 44.0,
+    "health": 498,
+    "classic_mana": 910
+   },
+   "35": {
+    "strength": 37.0,
+    "agility": 72.0,
+    "stamina": 54.0,
+    "intellect": 42.0,
+    "spirit": 45.0,
+    "health": 527,
+    "classic_mana": 940
+   },
+   "36": {
+    "strength": 38.0,
+    "agility": 74.0,
+    "stamina": 56.0,
+    "intellect": 43.0,
+    "spirit": 46.0,
+    "health": 547,
+    "classic_mana": 970
+   },
+   "37": {
+    "strength": 38.0,
+    "agility": 76.0,
+    "stamina": 57.0,
+    "intellect": 43.0,
+    "spirit": 46.0,
+    "health": 578,
+    "classic_mana": 1015
+   },
+   "38": {
+    "strength": 39.0,
+    "agility": 78.0,
+    "stamina": 58.0,
+    "intellect": 44.0,
+    "spirit": 47.0,
+    "health": 610,
+    "classic_mana": 1045
+   },
+   "39": {
+    "strength": 39.0,
+    "agility": 80.0,
+    "stamina": 59.0,
+    "intellect": 45.0,
+    "spirit": 48.0,
+    "health": 643,
+    "classic_mana": 1075
+   },
+   "40": {
+    "strength": 40.0,
+    "agility": 81.0,
+    "stamina": 61.0,
+    "intellect": 46.0,
+    "spirit": 49.0,
+    "health": 667,
+    "classic_mana": 1105
+   },
+   "41": {
+    "strength": 41.0,
+    "agility": 83.0,
+    "stamina": 62.0,
+    "intellect": 47.0,
+    "spirit": 50.0,
+    "health": 702,
+    "classic_mana": 1135
+   },
+   "42": {
+    "strength": 41.0,
+    "agility": 85.0,
+    "stamina": 63.0,
+    "intellect": 47.0,
+    "spirit": 51.0,
+    "health": 738,
+    "classic_mana": 1180
+   },
+   "43": {
+    "strength": 42.0,
+    "agility": 87.0,
+    "stamina": 64.0,
+    "intellect": 48.0,
+    "spirit": 52.0,
+    "health": 775,
+    "classic_mana": 1210
+   },
+   "44": {
+    "strength": 43.0,
+    "agility": 89.0,
+    "stamina": 66.0,
+    "intellect": 49.0,
+    "spirit": 53.0,
+    "health": 803,
+    "classic_mana": 1240
+   },
+   "45": {
+    "strength": 43.0,
+    "agility": 91.0,
+    "stamina": 67.0,
+    "intellect": 50.0,
+    "spirit": 54.0,
+    "health": 842,
+    "classic_mana": 1270
+   },
+   "46": {
+    "strength": 44.0,
+    "agility": 93.0,
+    "stamina": 69.0,
+    "intellect": 51.0,
+    "spirit": 55.0,
+    "health": 872,
+    "classic_mana": 1300
+   },
+   "47": {
+    "strength": 45.0,
+    "agility": 95.0,
+    "stamina": 70.0,
+    "intellect": 52.0,
+    "spirit": 56.0,
+    "health": 913,
+    "classic_mana": 1330
+   },
+   "48": {
+    "strength": 46.0,
+    "agility": 98.0,
+    "stamina": 71.0,
+    "intellect": 53.0,
+    "spirit": 57.0,
+    "health": 955,
+    "classic_mana": 1360
+   },
+   "49": {
+    "strength": 46.0,
+    "agility": 100.0,
+    "stamina": 73.0,
+    "intellect": 54.0,
+    "spirit": 58.0,
+    "health": 988,
+    "classic_mana": 1390
+   },
+   "50": {
+    "strength": 47.0,
+    "agility": 102.0,
+    "stamina": 74.0,
+    "intellect": 55.0,
+    "spirit": 59.0,
+    "health": 1032,
+    "classic_mana": 1420
+   },
+   "51": {
+    "strength": 48.0,
+    "agility": 104.0,
+    "stamina": 76.0,
+    "intellect": 56.0,
+    "spirit": 60.0,
+    "health": 1067,
+    "classic_mana": 1450
+   },
+   "52": {
+    "strength": 49.0,
+    "agility": 106.0,
+    "stamina": 77.0,
+    "intellect": 57.0,
+    "spirit": 61.0,
+    "health": 1113,
+    "classic_mana": 1480
+   },
+   "53": {
+    "strength": 49.0,
+    "agility": 108.0,
+    "stamina": 79.0,
+    "intellect": 58.0,
+    "spirit": 62.0,
+    "health": 1150,
+    "classic_mana": 1510
+   },
+   "54": {
+    "strength": 50.0,
+    "agility": 111.0,
+    "stamina": 80.0,
+    "intellect": 59.0,
+    "spirit": 63.0,
+    "health": 1198,
+    "classic_mana": 1540
+   },
+   "55": {
+    "strength": 51.0,
+    "agility": 113.0,
+    "stamina": 82.0,
+    "intellect": 60.0,
+    "spirit": 64.0,
+    "health": 1237,
+    "classic_mana": 1570
+   },
+   "56": {
+    "strength": 52.0,
+    "agility": 115.0,
+    "stamina": 83.0,
+    "intellect": 61.0,
+    "spirit": 65.0,
+    "health": 1287,
+    "classic_mana": 1600
+   },
+   "57": {
+    "strength": 53.0,
+    "agility": 118.0,
+    "stamina": 85.0,
+    "intellect": 62.0,
+    "spirit": 67.0,
+    "health": 1328,
+    "classic_mana": 1630
+   },
+   "58": {
+    "strength": 53.0,
+    "agility": 120.0,
+    "stamina": 87.0,
+    "intellect": 63.0,
+    "spirit": 68.0,
+    "health": 1370,
+    "classic_mana": 1660
+   },
+   "59": {
+    "strength": 54.0,
+    "agility": 123.0,
+    "stamina": 88.0,
+    "intellect": 64.0,
+    "spirit": 69.0,
+    "health": 1423,
+    "classic_mana": 1690
+   },
+   "60": {
+    "strength": 55.0,
+    "agility": 125.0,
+    "stamina": 90.0,
+    "intellect": 65.0,
+    "spirit": 70.0,
+    "health": 1467,
+    "classic_mana": 1720
+   }
+  },
+  "rogue": {
+   "1": {
+    "strength": 21.0,
+    "agility": 23.0,
+    "stamina": 21.0,
+    "intellect": 20.0,
+    "spirit": 20.0,
+    "health": 25,
+    "classic_mana": 0
+   },
+   "2": {
+    "strength": 22.0,
+    "agility": 24.0,
+    "stamina": 22.0,
+    "intellect": 20.14,
+    "spirit": 20.14,
+    "health": 32,
+    "classic_mana": 0
+   },
+   "3": {
+    "strength": 22.0,
+    "agility": 25.0,
+    "stamina": 22.0,
+    "intellect": 20.14,
+    "spirit": 21.14,
+    "health": 49,
+    "classic_mana": 0
+   },
+   "4": {
+    "strength": 23.0,
+    "agility": 27.0,
+    "stamina": 23.0,
+    "intellect": 21.14,
+    "spirit": 21.14,
+    "health": 56,
+    "classic_mana": 0
+   },
+   "5": {
+    "strength": 24.0,
+    "agility": 28.0,
+    "stamina": 24.0,
+    "intellect": 21.14,
+    "spirit": 21.14,
+    "health": 63,
+    "classic_mana": 0
+   },
+   "6": {
+    "strength": 24.0,
+    "agility": 29.0,
+    "stamina": 24.0,
+    "intellect": 21.14,
+    "spirit": 22.14,
+    "health": 80,
+    "classic_mana": 0
+   },
+   "7": {
+    "strength": 25.0,
+    "agility": 31.0,
+    "stamina": 25.0,
+    "intellect": 21.14,
+    "spirit": 22.14,
+    "health": 87,
+    "classic_mana": 0
+   },
+   "8": {
+    "strength": 26.0,
+    "agility": 32.0,
+    "stamina": 25.0,
+    "intellect": 21.14,
+    "spirit": 22.14,
+    "health": 104,
+    "classic_mana": 0
+   },
+   "9": {
+    "strength": 27.0,
+    "agility": 33.0,
+    "stamina": 26.0,
+    "intellect": 21.14,
+    "spirit": 23.14,
+    "health": 111,
+    "classic_mana": 0
+   },
+   "10": {
+    "strength": 27.0,
+    "agility": 35.0,
+    "stamina": 27.0,
+    "intellect": 22.14,
+    "spirit": 23.14,
+    "health": 118,
+    "classic_mana": 0
+   },
+   "11": {
+    "strength": 28.0,
+    "agility": 36.0,
+    "stamina": 28.0,
+    "intellect": 22.14,
+    "spirit": 24.14,
+    "health": 125,
+    "classic_mana": 0
+   },
+   "12": {
+    "strength": 29.0,
+    "agility": 37.0,
+    "stamina": 28.0,
+    "intellect": 22.14,
+    "spirit": 24.14,
+    "health": 142,
+    "classic_mana": 0
+   },
+   "13": {
+    "strength": 30.0,
+    "agility": 39.0,
+    "stamina": 29.0,
+    "intellect": 22.14,
+    "spirit": 24.14,
+    "health": 149,
+    "classic_mana": 0
+   },
+   "14": {
+    "strength": 30.0,
+    "agility": 40.0,
+    "stamina": 30.0,
+    "intellect": 22.14,
+    "spirit": 25.14,
+    "health": 156,
+    "classic_mana": 0
+   },
+   "15": {
+    "strength": 31.0,
+    "agility": 42.0,
+    "stamina": 30.0,
+    "intellect": 23.14,
+    "spirit": 25.14,
+    "health": 173,
+    "classic_mana": 0
+   },
+   "16": {
+    "strength": 32.0,
+    "agility": 43.0,
+    "stamina": 31.0,
+    "intellect": 23.14,
+    "spirit": 26.14,
+    "health": 181,
+    "classic_mana": 0
+   },
+   "17": {
+    "strength": 33.0,
+    "agility": 44.0,
+    "stamina": 32.0,
+    "intellect": 23.14,
+    "spirit": 26.14,
+    "health": 190,
+    "classic_mana": 0
+   },
+   "18": {
+    "strength": 34.0,
+    "agility": 46.0,
+    "stamina": 33.0,
+    "intellect": 23.14,
+    "spirit": 26.14,
+    "health": 200,
+    "classic_mana": 0
+   },
+   "19": {
+    "strength": 34.86,
+    "agility": 47.71,
+    "stamina": 33.0,
+    "intellect": 23.14,
+    "spirit": 27.0,
+    "health": 221,
+    "classic_mana": 0
+   },
+   "20": {
+    "strength": 34.86,
+    "agility": 48.57,
+    "stamina": 33.86,
+    "intellect": 24.0,
+    "spirit": 27.0,
+    "health": 233,
+    "classic_mana": 0
+   },
+   "21": {
+    "strength": 36.0,
+    "agility": 51.0,
+    "stamina": 35.0,
+    "intellect": 24.14,
+    "spirit": 28.14,
+    "health": 246,
+    "classic_mana": 0
+   },
+   "22": {
+    "strength": 37.0,
+    "agility": 52.0,
+    "stamina": 36.0,
+    "intellect": 24.14,
+    "spirit": 28.14,
+    "health": 260,
+    "classic_mana": 0
+   },
+   "23": {
+    "strength": 38.0,
+    "agility": 54.0,
+    "stamina": 37.0,
+    "intellect": 24.14,
+    "spirit": 29.14,
+    "health": 275,
+    "classic_mana": 0
+   },
+   "24": {
+    "strength": 39.0,
+    "agility": 55.0,
+    "stamina": 37.0,
+    "intellect": 25.14,
+    "spirit": 29.14,
+    "health": 301,
+    "classic_mana": 0
+   },
+   "25": {
+    "strength": 40.0,
+    "agility": 57.0,
+    "stamina": 38.0,
+    "intellect": 25.14,
+    "spirit": 30.14,
+    "health": 318,
+    "classic_mana": 0
+   },
+   "26": {
+    "strength": 41.0,
+    "agility": 59.0,
+    "stamina": 39.0,
+    "intellect": 25.14,
+    "spirit": 30.14,
+    "health": 336,
+    "classic_mana": 0
+   },
+   "27": {
+    "strength": 42.0,
+    "agility": 60.0,
+    "stamina": 40.0,
+    "intellect": 25.14,
+    "spirit": 30.14,
+    "health": 355,
+    "classic_mana": 0
+   },
+   "28": {
+    "strength": 43.0,
+    "agility": 62.0,
+    "stamina": 41.0,
+    "intellect": 25.14,
+    "spirit": 31.14,
+    "health": 375,
+    "classic_mana": 0
+   },
+   "29": {
+    "strength": 43.0,
+    "agility": 64.0,
+    "stamina": 42.0,
+    "intellect": 26.14,
+    "spirit": 31.14,
+    "health": 396,
+    "classic_mana": 0
+   },
+   "30": {
+    "strength": 44.0,
+    "agility": 66.0,
+    "stamina": 42.0,
+    "intellect": 26.14,
+    "spirit": 32.14,
+    "health": 428,
+    "classic_mana": 0
+   },
+   "31": {
+    "strength": 45.0,
+    "agility": 67.0,
+    "stamina": 43.0,
+    "intellect": 26.14,
+    "spirit": 32.14,
+    "health": 451,
+    "classic_mana": 0
+   },
+   "32": {
+    "strength": 46.0,
+    "agility": 69.0,
+    "stamina": 44.0,
+    "intellect": 26.14,
+    "spirit": 33.14,
+    "health": 475,
+    "classic_mana": 0
+   },
+   "33": {
+    "strength": 47.0,
+    "agility": 71.0,
+    "stamina": 45.0,
+    "intellect": 27.29,
+    "spirit": 33.14,
+    "health": 500,
+    "classic_mana": 0
+   },
+   "34": {
+    "strength": 48.0,
+    "agility": 73.0,
+    "stamina": 46.0,
+    "intellect": 27.29,
+    "spirit": 34.14,
+    "health": 526,
+    "classic_mana": 0
+   },
+   "35": {
+    "strength": 49.0,
+    "agility": 75.0,
+    "stamina": 47.0,
+    "intellect": 27.29,
+    "spirit": 34.14,
+    "health": 553,
+    "classic_mana": 0
+   },
+   "36": {
+    "strength": 51.0,
+    "agility": 77.0,
+    "stamina": 48.0,
+    "intellect": 28.29,
+    "spirit": 35.14,
+    "health": 581,
+    "classic_mana": 0
+   },
+   "37": {
+    "strength": 52.0,
+    "agility": 78.0,
+    "stamina": 49.0,
+    "intellect": 28.29,
+    "spirit": 36.14,
+    "health": 610,
+    "classic_mana": 0
+   },
+   "38": {
+    "strength": 53.0,
+    "agility": 80.0,
+    "stamina": 50.0,
+    "intellect": 28.29,
+    "spirit": 36.14,
+    "health": 640,
+    "classic_mana": 0
+   },
+   "39": {
+    "strength": 54.0,
+    "agility": 82.0,
+    "stamina": 51.0,
+    "intellect": 28.29,
+    "spirit": 37.14,
+    "health": 671,
+    "classic_mana": 0
+   },
+   "40": {
+    "strength": 55.0,
+    "agility": 84.0,
+    "stamina": 52.0,
+    "intellect": 29.29,
+    "spirit": 37.14,
+    "health": 703,
+    "classic_mana": 0
+   },
+   "41": {
+    "strength": 56.0,
+    "agility": 86.0,
+    "stamina": 53.0,
+    "intellect": 29.29,
+    "spirit": 38.14,
+    "health": 736,
+    "classic_mana": 0
+   },
+   "42": {
+    "strength": 57.0,
+    "agility": 88.0,
+    "stamina": 54.0,
+    "intellect": 29.29,
+    "spirit": 38.14,
+    "health": 770,
+    "classic_mana": 0
+   },
+   "43": {
+    "strength": 58.0,
+    "agility": 90.0,
+    "stamina": 55.0,
+    "intellect": 29.29,
+    "spirit": 39.14,
+    "health": 805,
+    "classic_mana": 0
+   },
+   "44": {
+    "strength": 59.0,
+    "agility": 93.0,
+    "stamina": 56.0,
+    "intellect": 30.29,
+    "spirit": 39.14,
+    "health": 841,
+    "classic_mana": 0
+   },
+   "45": {
+    "strength": 61.0,
+    "agility": 95.0,
+    "stamina": 57.0,
+    "intellect": 30.29,
+    "spirit": 40.29,
+    "health": 878,
+    "classic_mana": 0
+   },
+   "46": {
+    "strength": 62.0,
+    "agility": 97.0,
+    "stamina": 58.0,
+    "intellect": 30.29,
+    "spirit": 41.29,
+    "health": 916,
+    "classic_mana": 0
+   },
+   "47": {
+    "strength": 63.0,
+    "agility": 99.0,
+    "stamina": 59.0,
+    "intellect": 31.29,
+    "spirit": 41.29,
+    "health": 955,
+    "classic_mana": 0
+   },
+   "48": {
+    "strength": 64.0,
+    "agility": 101.0,
+    "stamina": 60.0,
+    "intellect": 31.29,
+    "spirit": 42.29,
+    "health": 995,
+    "classic_mana": 0
+   },
+   "49": {
+    "strength": 65.0,
+    "agility": 103.0,
+    "stamina": 62.0,
+    "intellect": 31.29,
+    "spirit": 43.29,
+    "health": 1026,
+    "classic_mana": 0
+   },
+   "50": {
+    "strength": 67.0,
+    "agility": 106.0,
+    "stamina": 63.0,
+    "intellect": 32.29,
+    "spirit": 43.29,
+    "health": 1068,
+    "classic_mana": 0
+   },
+   "51": {
+    "strength": 68.0,
+    "agility": 108.0,
+    "stamina": 64.0,
+    "intellect": 32.29,
+    "spirit": 44.29,
+    "health": 1111,
+    "classic_mana": 0
+   },
+   "52": {
+    "strength": 69.0,
+    "agility": 110.0,
+    "stamina": 65.0,
+    "intellect": 32.29,
+    "spirit": 44.29,
+    "health": 1155,
+    "classic_mana": 0
+   },
+   "53": {
+    "strength": 70.0,
+    "agility": 113.0,
+    "stamina": 66.0,
+    "intellect": 33.29,
+    "spirit": 45.29,
+    "health": 1200,
+    "classic_mana": 0
+   },
+   "54": {
+    "strength": 72.0,
+    "agility": 115.0,
+    "stamina": 67.0,
+    "intellect": 33.29,
+    "spirit": 46.29,
+    "health": 1246,
+    "classic_mana": 0
+   },
+   "55": {
+    "strength": 73.0,
+    "agility": 117.0,
+    "stamina": 69.0,
+    "intellect": 33.29,
+    "spirit": 46.29,
+    "health": 1283,
+    "classic_mana": 0
+   },
+   "56": {
+    "strength": 74.0,
+    "agility": 120.0,
+    "stamina": 70.0,
+    "intellect": 34.29,
+    "spirit": 47.29,
+    "health": 1331,
+    "classic_mana": 0
+   },
+   "57": {
+    "strength": 76.0,
+    "agility": 122.0,
+    "stamina": 71.0,
+    "intellect": 34.29,
+    "spirit": 48.29,
+    "health": 1380,
+    "classic_mana": 0
+   },
+   "58": {
+    "strength": 77.0,
+    "agility": 125.0,
+    "stamina": 72.0,
+    "intellect": 34.29,
+    "spirit": 49.29,
+    "health": 1430,
+    "classic_mana": 0
+   },
+   "59": {
+    "strength": 79.0,
+    "agility": 127.0,
+    "stamina": 74.0,
+    "intellect": 35.29,
+    "spirit": 49.29,
+    "health": 1471,
+    "classic_mana": 0
+   },
+   "60": {
+    "strength": 80.0,
+    "agility": 130.0,
+    "stamina": 75.0,
+    "intellect": 35.29,
+    "spirit": 50.29,
+    "health": 1523,
+    "classic_mana": 0
+   }
+  },
+  "priest": {
+   "1": {
+    "strength": 20.0,
+    "agility": 20.0,
+    "stamina": 20.0,
+    "intellect": 22.0,
+    "spirit": 23.2,
+    "health": 31,
+    "classic_mana": 110
+   },
+   "2": {
+    "strength": 20.0,
+    "agility": 20.0,
+    "stamina": 20.0,
+    "intellect": 23.0,
+    "spirit": 24.2,
+    "health": 37,
+    "classic_mana": 165
+   },
+   "3": {
+    "strength": 20.0,
+    "agility": 20.0,
+    "stamina": 21.0,
+    "intellect": 24.0,
+    "spirit": 25.2,
+    "health": 42,
+    "classic_mana": 189
+   },
+   "4": {
+    "strength": 21.0,
+    "agility": 21.0,
+    "stamina": 21.0,
+    "intellect": 25.0,
+    "spirit": 27.2,
+    "health": 57,
+    "classic_mana": 200
+   },
+   "5": {
+    "strength": 21.0,
+    "agility": 21.0,
+    "stamina": 21.0,
+    "intellect": 27.0,
+    "spirit": 28.2,
+    "health": 72,
+    "classic_mana": 197
+   },
+   "6": {
+    "strength": 21.0,
+    "agility": 21.0,
+    "stamina": 22.0,
+    "intellect": 28.0,
+    "spirit": 29.2,
+    "health": 77,
+    "classic_mana": 210
+   },
+   "7": {
+    "strength": 21.0,
+    "agility": 21.0,
+    "stamina": 22.0,
+    "intellect": 29.0,
+    "spirit": 30.2,
+    "health": 92,
+    "classic_mana": 224
+   },
+   "8": {
+    "strength": 21.0,
+    "agility": 22.0,
+    "stamina": 22.0,
+    "intellect": 30.0,
+    "spirit": 31.2,
+    "health": 107,
+    "classic_mana": 239
+   },
+   "9": {
+    "strength": 21.0,
+    "agility": 22.0,
+    "stamina": 23.0,
+    "intellect": 31.0,
+    "spirit": 33.2,
+    "health": 112,
+    "classic_mana": 255
+   },
+   "10": {
+    "strength": 22.0,
+    "agility": 22.0,
+    "stamina": 23.0,
+    "intellect": 33.0,
+    "spirit": 34.2,
+    "health": 127,
+    "classic_mana": 272
+   },
+   "11": {
+    "strength": 22.0,
+    "agility": 22.0,
+    "stamina": 24.0,
+    "intellect": 34.0,
+    "spirit": 35.2,
+    "health": 132,
+    "classic_mana": 275
+   },
+   "12": {
+    "strength": 22.0,
+    "agility": 23.0,
+    "stamina": 24.0,
+    "intellect": 35.0,
+    "spirit": 37.2,
+    "health": 147,
+    "classic_mana": 294
+   },
+   "13": {
+    "strength": 22.0,
+    "agility": 23.0,
+    "stamina": 24.0,
+    "intellect": 36.0,
+    "spirit": 38.2,
+    "health": 162,
+    "classic_mana": 314
+   },
+   "14": {
+    "strength": 22.0,
+    "agility": 23.0,
+    "stamina": 25.0,
+    "intellect": 38.0,
+    "spirit": 39.2,
+    "health": 167,
+    "classic_mana": 320
+   },
+   "15": {
+    "strength": 23.0,
+    "agility": 23.0,
+    "stamina": 25.0,
+    "intellect": 39.0,
+    "spirit": 41.4,
+    "health": 182,
+    "classic_mana": 342
+   },
+   "16": {
+    "strength": 23.0,
+    "agility": 24.0,
+    "stamina": 26.0,
+    "intellect": 40.0,
+    "spirit": 42.4,
+    "health": 187,
+    "classic_mana": 365
+   },
+   "17": {
+    "strength": 23.0,
+    "agility": 24.0,
+    "stamina": 26.0,
+    "intellect": 42.0,
+    "spirit": 43.4,
+    "health": 202,
+    "classic_mana": 389
+   },
+   "18": {
+    "strength": 23.0,
+    "agility": 24.0,
+    "stamina": 26.0,
+    "intellect": 43.0,
+    "spirit": 45.4,
+    "health": 217,
+    "classic_mana": 399
+   },
+   "19": {
+    "strength": 23.0,
+    "agility": 25.0,
+    "stamina": 27.0,
+    "intellect": 44.0,
+    "spirit": 46.4,
+    "health": 222,
+    "classic_mana": 425
+   },
+   "20": {
+    "strength": 24.0,
+    "agility": 25.0,
+    "stamina": 27.0,
+    "intellect": 46.0,
+    "spirit": 48.4,
+    "health": 237,
+    "classic_mana": 437
+   },
+   "21": {
+    "strength": 24.0,
+    "agility": 25.0,
+    "stamina": 28.0,
+    "intellect": 47.0,
+    "spirit": 49.4,
+    "health": 242,
+    "classic_mana": 465
+   },
+   "22": {
+    "strength": 24.0,
+    "agility": 25.0,
+    "stamina": 28.0,
+    "intellect": 49.0,
+    "spirit": 51.4,
+    "health": 258,
+    "classic_mana": 494
+   },
+   "23": {
+    "strength": 24.0,
+    "agility": 26.0,
+    "stamina": 29.0,
+    "intellect": 50.0,
+    "spirit": 52.4,
+    "health": 265,
+    "classic_mana": 509
+   },
+   "24": {
+    "strength": 25.0,
+    "agility": 26.0,
+    "stamina": 29.0,
+    "intellect": 52.0,
+    "spirit": 54.4,
+    "health": 283,
+    "classic_mana": 540
+   },
+   "25": {
+    "strength": 25.0,
+    "agility": 26.0,
+    "stamina": 30.0,
+    "intellect": 53.0,
+    "spirit": 55.4,
+    "health": 292,
+    "classic_mana": 557
+   },
+   "26": {
+    "strength": 25.0,
+    "agility": 27.0,
+    "stamina": 30.0,
+    "intellect": 55.0,
+    "spirit": 57.4,
+    "health": 312,
+    "classic_mana": 590
+   },
+   "27": {
+    "strength": 25.0,
+    "agility": 27.0,
+    "stamina": 30.0,
+    "intellect": 56.0,
+    "spirit": 59.4,
+    "health": 333,
+    "classic_mana": 609
+   },
+   "28": {
+    "strength": 25.0,
+    "agility": 27.0,
+    "stamina": 31.0,
+    "intellect": 58.0,
+    "spirit": 60.6,
+    "health": 345,
+    "classic_mana": 644
+   },
+   "29": {
+    "strength": 26.0,
+    "agility": 28.0,
+    "stamina": 31.0,
+    "intellect": 59.0,
+    "spirit": 62.6,
+    "health": 368,
+    "classic_mana": 665
+   },
+   "30": {
+    "strength": 26.0,
+    "agility": 28.0,
+    "stamina": 32.0,
+    "intellect": 61.0,
+    "spirit": 64.6,
+    "health": 382,
+    "classic_mana": 687
+   },
+   "31": {
+    "strength": 26.0,
+    "agility": 28.0,
+    "stamina": 32.0,
+    "intellect": 63.0,
+    "spirit": 65.6,
+    "health": 407,
+    "classic_mana": 725
+   },
+   "32": {
+    "strength": 26.0,
+    "agility": 29.0,
+    "stamina": 33.0,
+    "intellect": 64.0,
+    "spirit": 67.6,
+    "health": 423,
+    "classic_mana": 749
+   },
+   "33": {
+    "strength": 27.0,
+    "agility": 29.0,
+    "stamina": 33.0,
+    "intellect": 66.0,
+    "spirit": 69.6,
+    "health": 450,
+    "classic_mana": 788
+   },
+   "34": {
+    "strength": 27.0,
+    "agility": 29.0,
+    "stamina": 34.0,
+    "intellect": 68.0,
+    "spirit": 70.6,
+    "health": 468,
+    "classic_mana": 812
+   },
+   "35": {
+    "strength": 27.0,
+    "agility": 30.0,
+    "stamina": 34.0,
+    "intellect": 69.0,
+    "spirit": 72.6,
+    "health": 497,
+    "classic_mana": 836
+   },
+   "36": {
+    "strength": 28.0,
+    "agility": 30.0,
+    "stamina": 35.0,
+    "intellect": 71.0,
+    "spirit": 74.6,
+    "health": 517,
+    "classic_mana": 860
+   },
+   "37": {
+    "strength": 28.0,
+    "agility": 30.0,
+    "stamina": 36.0,
+    "intellect": 73.0,
+    "spirit": 76.6,
+    "health": 538,
+    "classic_mana": 899
+   },
+   "38": {
+    "strength": 28.0,
+    "agility": 31.0,
+    "stamina": 36.0,
+    "intellect": 75.0,
+    "spirit": 78.6,
+    "health": 570,
+    "classic_mana": 923
+   },
+   "39": {
+    "strength": 28.0,
+    "agility": 31.0,
+    "stamina": 37.0,
+    "intellect": 76.0,
+    "spirit": 80.8,
+    "health": 593,
+    "classic_mana": 947
+   },
+   "40": {
+    "strength": 29.0,
+    "agility": 31.0,
+    "stamina": 37.0,
+    "intellect": 78.0,
+    "spirit": 81.8,
+    "health": 627,
+    "classic_mana": 971
+   },
+   "41": {
+    "strength": 29.0,
+    "agility": 32.0,
+    "stamina": 38.0,
+    "intellect": 80.0,
+    "spirit": 83.8,
+    "health": 652,
+    "classic_mana": 1010
+   },
+   "42": {
+    "strength": 29.0,
+    "agility": 32.0,
+    "stamina": 38.0,
+    "intellect": 82.0,
+    "spirit": 85.8,
+    "health": 688,
+    "classic_mana": 1034
+   },
+   "43": {
+    "strength": 29.0,
+    "agility": 33.0,
+    "stamina": 39.0,
+    "intellect": 84.0,
+    "spirit": 87.8,
+    "health": 715,
+    "classic_mana": 1058
+   },
+   "44": {
+    "strength": 30.0,
+    "agility": 33.0,
+    "stamina": 39.0,
+    "intellect": 86.0,
+    "spirit": 89.8,
+    "health": 753,
+    "classic_mana": 1082
+   },
+   "45": {
+    "strength": 30.0,
+    "agility": 33.0,
+    "stamina": 40.0,
+    "intellect": 88.0,
+    "spirit": 91.8,
+    "health": 782,
+    "classic_mana": 1106
+   },
+   "46": {
+    "strength": 30.0,
+    "agility": 34.0,
+    "stamina": 41.0,
+    "intellect": 90.0,
+    "spirit": 93.8,
+    "health": 812,
+    "classic_mana": 1130
+   },
+   "47": {
+    "strength": 31.0,
+    "agility": 34.0,
+    "stamina": 41.0,
+    "intellect": 92.0,
+    "spirit": 95.8,
+    "health": 853,
+    "classic_mana": 1154
+   },
+   "48": {
+    "strength": 31.0,
+    "agility": 35.0,
+    "stamina": 42.0,
+    "intellect": 94.0,
+    "spirit": 98.8,
+    "health": 885,
+    "classic_mana": 1178
+   },
+   "49": {
+    "strength": 31.0,
+    "agility": 35.0,
+    "stamina": 43.0,
+    "intellect": 96.0,
+    "spirit": 101.0,
+    "health": 918,
+    "classic_mana": 1202
+   },
+   "50": {
+    "strength": 32.0,
+    "agility": 35.0,
+    "stamina": 43.0,
+    "intellect": 98.0,
+    "spirit": 103.0,
+    "health": 962,
+    "classic_mana": 1226
+   },
+   "51": {
+    "strength": 32.0,
+    "agility": 36.0,
+    "stamina": 44.0,
+    "intellect": 100.0,
+    "spirit": 105.0,
+    "health": 997,
+    "classic_mana": 1250
+   },
+   "52": {
+    "strength": 32.0,
+    "agility": 36.0,
+    "stamina": 44.0,
+    "intellect": 102.0,
+    "spirit": 107.0,
+    "health": 1043,
+    "classic_mana": 1274
+   },
+   "53": {
+    "strength": 33.0,
+    "agility": 37.0,
+    "stamina": 45.0,
+    "intellect": 104.0,
+    "spirit": 109.0,
+    "health": 1080,
+    "classic_mana": 1298
+   },
+   "54": {
+    "strength": 33.0,
+    "agility": 37.0,
+    "stamina": 46.0,
+    "intellect": 106.0,
+    "spirit": 112.0,
+    "health": 1118,
+    "classic_mana": 1322
+   },
+   "55": {
+    "strength": 33.0,
+    "agility": 38.0,
+    "stamina": 46.0,
+    "intellect": 109.0,
+    "spirit": 114.0,
+    "health": 1167,
+    "classic_mana": 1331
+   },
+   "56": {
+    "strength": 34.0,
+    "agility": 38.0,
+    "stamina": 47.0,
+    "intellect": 111.0,
+    "spirit": 116.0,
+    "health": 1207,
+    "classic_mana": 1355
+   },
+   "57": {
+    "strength": 34.0,
+    "agility": 39.0,
+    "stamina": 48.0,
+    "intellect": 113.0,
+    "spirit": 119.0,
+    "health": 1248,
+    "classic_mana": 1379
+   },
+   "58": {
+    "strength": 34.0,
+    "agility": 39.0,
+    "stamina": 49.0,
+    "intellect": 115.0,
+    "spirit": 121.2,
+    "health": 1290,
+    "classic_mana": 1403
+   },
+   "59": {
+    "strength": 35.0,
+    "agility": 40.0,
+    "stamina": 49.0,
+    "intellect": 118.0,
+    "spirit": 124.2,
+    "health": 1343,
+    "classic_mana": 1412
+   },
+   "60": {
+    "strength": 35.0,
+    "agility": 40.0,
+    "stamina": 50.0,
+    "intellect": 120.0,
+    "spirit": 126.2,
+    "health": 1387,
+    "classic_mana": 1436
+   }
+  },
+  "shaman": {
+   "1": {
+    "strength": 21.0,
+    "agility": 20.0,
+    "stamina": 21.0,
+    "intellect": 21.0,
+    "spirit": 22.0,
+    "health": 27,
+    "classic_mana": 53
+   },
+   "2": {
+    "strength": 22.0,
+    "agility": 20.0,
+    "stamina": 22.0,
+    "intellect": 22.0,
+    "spirit": 23.0,
+    "health": 34,
+    "classic_mana": 61
+   },
+   "3": {
+    "strength": 22.0,
+    "agility": 21.0,
+    "stamina": 23.0,
+    "intellect": 23.0,
+    "spirit": 24.0,
+    "health": 41,
+    "classic_mana": 68
+   },
+   "4": {
+    "strength": 23.0,
+    "agility": 21.0,
+    "stamina": 24.0,
+    "intellect": 23.0,
+    "spirit": 25.0,
+    "health": 48,
+    "classic_mana": 91
+   },
+   "5": {
+    "strength": 24.0,
+    "agility": 22.0,
+    "stamina": 24.0,
+    "intellect": 24.0,
+    "spirit": 26.0,
+    "health": 65,
+    "classic_mana": 100
+   },
+   "6": {
+    "strength": 25.0,
+    "agility": 22.0,
+    "stamina": 25.0,
+    "intellect": 25.0,
+    "spirit": 27.0,
+    "health": 72,
+    "classic_mana": 110
+   },
+   "7": {
+    "strength": 26.0,
+    "agility": 22.0,
+    "stamina": 26.0,
+    "intellect": 26.0,
+    "spirit": 28.0,
+    "health": 79,
+    "classic_mana": 121
+   },
+   "8": {
+    "strength": 26.0,
+    "agility": 23.0,
+    "stamina": 27.0,
+    "intellect": 27.0,
+    "spirit": 28.0,
+    "health": 86,
+    "classic_mana": 133
+   },
+   "9": {
+    "strength": 27.0,
+    "agility": 23.0,
+    "stamina": 28.0,
+    "intellect": 28.0,
+    "spirit": 29.0,
+    "health": 93,
+    "classic_mana": 161
+   },
+   "10": {
+    "strength": 28.0,
+    "agility": 24.0,
+    "stamina": 29.0,
+    "intellect": 28.0,
+    "spirit": 30.0,
+    "health": 100,
+    "classic_mana": 175
+   },
+   "11": {
+    "strength": 29.0,
+    "agility": 24.0,
+    "stamina": 30.0,
+    "intellect": 29.0,
+    "spirit": 31.0,
+    "health": 107,
+    "classic_mana": 190
+   },
+   "12": {
+    "strength": 30.0,
+    "agility": 25.0,
+    "stamina": 31.0,
+    "intellect": 30.0,
+    "spirit": 32.0,
+    "health": 114,
+    "classic_mana": 206
+   },
+   "13": {
+    "strength": 30.0,
+    "agility": 25.0,
+    "stamina": 32.0,
+    "intellect": 31.0,
+    "spirit": 33.0,
+    "health": 121,
+    "classic_mana": 223
+   },
+   "14": {
+    "strength": 31.0,
+    "agility": 26.0,
+    "stamina": 33.0,
+    "intellect": 32.0,
+    "spirit": 34.0,
+    "health": 128,
+    "classic_mana": 241
+   },
+   "15": {
+    "strength": 32.0,
+    "agility": 26.0,
+    "stamina": 34.0,
+    "intellect": 33.0,
+    "spirit": 36.0,
+    "health": 135,
+    "classic_mana": 260
+   },
+   "16": {
+    "strength": 33.0,
+    "agility": 27.0,
+    "stamina": 35.0,
+    "intellect": 34.0,
+    "spirit": 37.0,
+    "health": 142,
+    "classic_mana": 280
+   },
+   "17": {
+    "strength": 34.0,
+    "agility": 27.0,
+    "stamina": 36.0,
+    "intellect": 35.0,
+    "spirit": 38.0,
+    "health": 150,
+    "classic_mana": 301
+   },
+   "18": {
+    "strength": 35.0,
+    "agility": 28.0,
+    "stamina": 37.0,
+    "intellect": 36.0,
+    "spirit": 39.0,
+    "health": 159,
+    "classic_mana": 323
+   },
+   "19": {
+    "strength": 36.0,
+    "agility": 28.0,
+    "stamina": 38.0,
+    "intellect": 37.0,
+    "spirit": 40.0,
+    "health": 169,
+    "classic_mana": 346
+   },
+   "20": {
+    "strength": 37.0,
+    "agility": 29.0,
+    "stamina": 39.0,
+    "intellect": 38.0,
+    "spirit": 41.0,
+    "health": 180,
+    "classic_mana": 370
+   },
+   "21": {
+    "strength": 38.0,
+    "agility": 29.0,
+    "stamina": 40.0,
+    "intellect": 39.0,
+    "spirit": 42.0,
+    "health": 192,
+    "classic_mana": 395
+   },
+   "22": {
+    "strength": 38.0,
+    "agility": 30.0,
+    "stamina": 41.0,
+    "intellect": 40.0,
+    "spirit": 43.0,
+    "health": 205,
+    "classic_mana": 456
+   },
+   "23": {
+    "strength": 39.0,
+    "agility": 30.0,
+    "stamina": 42.0,
+    "intellect": 41.0,
+    "spirit": 44.0,
+    "health": 219,
+    "classic_mana": 448
+   },
+   "24": {
+    "strength": 40.0,
+    "agility": 31.0,
+    "stamina": 43.0,
+    "intellect": 42.0,
+    "spirit": 46.0,
+    "health": 234,
+    "classic_mana": 476
+   },
+   "25": {
+    "strength": 41.0,
+    "agility": 31.0,
+    "stamina": 45.0,
+    "intellect": 43.0,
+    "spirit": 47.0,
+    "health": 240,
+    "classic_mana": 505
+   },
+   "26": {
+    "strength": 42.0,
+    "agility": 32.0,
+    "stamina": 46.0,
+    "intellect": 44.0,
+    "spirit": 48.0,
+    "health": 257,
+    "classic_mana": 579
+   },
+   "27": {
+    "strength": 43.0,
+    "agility": 32.0,
+    "stamina": 47.0,
+    "intellect": 45.0,
+    "spirit": 49.0,
+    "health": 275,
+    "classic_mana": 566
+   },
+   "28": {
+    "strength": 44.0,
+    "agility": 33.0,
+    "stamina": 48.0,
+    "intellect": 46.0,
+    "spirit": 50.0,
+    "health": 294,
+    "classic_mana": 598
+   },
+   "29": {
+    "strength": 45.0,
+    "agility": 33.0,
+    "stamina": 49.0,
+    "intellect": 47.0,
+    "spirit": 52.0,
+    "health": 314,
+    "classic_mana": 631
+   },
+   "30": {
+    "strength": 46.0,
+    "agility": 34.0,
+    "stamina": 50.0,
+    "intellect": 48.0,
+    "spirit": 53.0,
+    "health": 335,
+    "classic_mana": 718
+   },
+   "31": {
+    "strength": 48.0,
+    "agility": 34.0,
+    "stamina": 52.0,
+    "intellect": 50.0,
+    "spirit": 54.0,
+    "health": 347,
+    "classic_mana": 699
+   },
+   "32": {
+    "strength": 49.0,
+    "agility": 35.0,
+    "stamina": 53.0,
+    "intellect": 51.0,
+    "spirit": 56.0,
+    "health": 370,
+    "classic_mana": 733
+   },
+   "33": {
+    "strength": 50.0,
+    "agility": 36.0,
+    "stamina": 54.0,
+    "intellect": 52.0,
+    "spirit": 57.0,
+    "health": 394,
+    "classic_mana": 767
+   },
+   "34": {
+    "strength": 51.0,
+    "agility": 36.0,
+    "stamina": 55.0,
+    "intellect": 53.0,
+    "spirit": 58.0,
+    "health": 419,
+    "classic_mana": 786
+   },
+   "35": {
+    "strength": 52.0,
+    "agility": 37.0,
+    "stamina": 57.0,
+    "intellect": 54.0,
+    "spirit": 60.0,
+    "health": 435,
+    "classic_mana": 820
+   },
+   "36": {
+    "strength": 53.0,
+    "agility": 38.0,
+    "stamina": 58.0,
+    "intellect": 56.0,
+    "spirit": 61.0,
+    "health": 462,
+    "classic_mana": 854
+   },
+   "37": {
+    "strength": 54.0,
+    "agility": 38.0,
+    "stamina": 59.0,
+    "intellect": 57.0,
+    "spirit": 62.0,
+    "health": 490,
+    "classic_mana": 888
+   },
+   "38": {
+    "strength": 55.0,
+    "agility": 39.0,
+    "stamina": 61.0,
+    "intellect": 58.0,
+    "spirit": 64.0,
+    "health": 509,
+    "classic_mana": 922
+   },
+   "39": {
+    "strength": 56.0,
+    "agility": 39.0,
+    "stamina": 62.0,
+    "intellect": 59.0,
+    "spirit": 65.0,
+    "health": 539,
+    "classic_mana": 941
+   },
+   "40": {
+    "strength": 58.0,
+    "agility": 40.0,
+    "stamina": 63.0,
+    "intellect": 61.0,
+    "spirit": 67.0,
+    "health": 570,
+    "classic_mana": 975
+   },
+   "41": {
+    "strength": 59.0,
+    "agility": 41.0,
+    "stamina": 65.0,
+    "intellect": 62.0,
+    "spirit": 68.0,
+    "health": 592,
+    "classic_mana": 1009
+   },
+   "42": {
+    "strength": 60.0,
+    "agility": 41.0,
+    "stamina": 66.0,
+    "intellect": 63.0,
+    "spirit": 70.0,
+    "health": 625,
+    "classic_mana": 1028
+   },
+   "43": {
+    "strength": 61.0,
+    "agility": 42.0,
+    "stamina": 68.0,
+    "intellect": 64.0,
+    "spirit": 71.0,
+    "health": 649,
+    "classic_mana": 1062
+   },
+   "44": {
+    "strength": 63.0,
+    "agility": 43.0,
+    "stamina": 69.0,
+    "intellect": 66.0,
+    "spirit": 73.0,
+    "health": 684,
+    "classic_mana": 1096
+   },
+   "45": {
+    "strength": 64.0,
+    "agility": 43.0,
+    "stamina": 71.0,
+    "intellect": 67.0,
+    "spirit": 74.0,
+    "health": 710,
+    "classic_mana": 1115
+   },
+   "46": {
+    "strength": 65.0,
+    "agility": 44.0,
+    "stamina": 72.0,
+    "intellect": 69.0,
+    "spirit": 76.0,
+    "health": 747,
+    "classic_mana": 1149
+   },
+   "47": {
+    "strength": 66.0,
+    "agility": 45.0,
+    "stamina": 74.0,
+    "intellect": 70.0,
+    "spirit": 77.0,
+    "health": 775,
+    "classic_mana": 1183
+   },
+   "48": {
+    "strength": 68.0,
+    "agility": 46.0,
+    "stamina": 75.0,
+    "intellect": 71.0,
+    "spirit": 79.0,
+    "health": 814,
+    "classic_mana": 1202
+   },
+   "49": {
+    "strength": 69.0,
+    "agility": 46.0,
+    "stamina": 77.0,
+    "intellect": 73.0,
+    "spirit": 81.0,
+    "health": 844,
+    "classic_mana": 1236
+   },
+   "50": {
+    "strength": 70.0,
+    "agility": 47.0,
+    "stamina": 78.0,
+    "intellect": 74.0,
+    "spirit": 82.0,
+    "health": 885,
+    "classic_mana": 1255
+   },
+   "51": {
+    "strength": 72.0,
+    "agility": 48.0,
+    "stamina": 80.0,
+    "intellect": 76.0,
+    "spirit": 84.0,
+    "health": 917,
+    "classic_mana": 1289
+   },
+   "52": {
+    "strength": 73.0,
+    "agility": 49.0,
+    "stamina": 81.0,
+    "intellect": 77.0,
+    "spirit": 86.0,
+    "health": 960,
+    "classic_mana": 1313
+   },
+   "53": {
+    "strength": 75.0,
+    "agility": 49.0,
+    "stamina": 83.0,
+    "intellect": 79.0,
+    "spirit": 87.0,
+    "health": 994,
+    "classic_mana": 1342
+   },
+   "54": {
+    "strength": 76.0,
+    "agility": 50.0,
+    "stamina": 85.0,
+    "intellect": 80.0,
+    "spirit": 89.0,
+    "health": 1029,
+    "classic_mana": 1376
+   },
+   "55": {
+    "strength": 77.0,
+    "agility": 51.0,
+    "stamina": 86.0,
+    "intellect": 82.0,
+    "spirit": 91.0,
+    "health": 1075,
+    "classic_mana": 1395
+   },
+   "56": {
+    "strength": 79.0,
+    "agility": 52.0,
+    "stamina": 88.0,
+    "intellect": 83.0,
+    "spirit": 93.0,
+    "health": 1112,
+    "classic_mana": 1414
+   },
+   "57": {
+    "strength": 80.0,
+    "agility": 53.0,
+    "stamina": 90.0,
+    "intellect": 85.0,
+    "spirit": 94.0,
+    "health": 1150,
+    "classic_mana": 1448
+   },
+   "58": {
+    "strength": 82.0,
+    "agility": 53.0,
+    "stamina": 91.0,
+    "intellect": 87.0,
+    "spirit": 96.0,
+    "health": 1199,
+    "classic_mana": 1467
+   },
+   "59": {
+    "strength": 83.0,
+    "agility": 54.0,
+    "stamina": 93.0,
+    "intellect": 88.0,
+    "spirit": 98.0,
+    "health": 1239,
+    "classic_mana": 1501
+   },
+   "60": {
+    "strength": 85.0,
+    "agility": 55.0,
+    "stamina": 95.0,
+    "intellect": 90.0,
+    "spirit": 100.0,
+    "health": 1280,
+    "classic_mana": 1520
+   }
+  },
+  "mage": {
+   "1": {
+    "strength": 20.0,
+    "agility": 20.0,
+    "stamina": 20.0,
+    "intellect": 24.5,
+    "spirit": 20.5,
+    "health": 31,
+    "classic_mana": 100
+   },
+   "2": {
+    "strength": 20.0,
+    "agility": 20.0,
+    "stamina": 20.0,
+    "intellect": 24.25,
+    "spirit": 23.25,
+    "health": 37,
+    "classic_mana": 170
+   },
+   "3": {
+    "strength": 20.0,
+    "agility": 20.0,
+    "stamina": 21.0,
+    "intellect": 25.25,
+    "spirit": 24.25,
+    "health": 42,
+    "classic_mana": 181
+   },
+   "4": {
+    "strength": 20.0,
+    "agility": 21.0,
+    "stamina": 21.0,
+    "intellect": 27.5,
+    "spirit": 25.25,
+    "health": 57,
+    "classic_mana": 178
+   },
+   "5": {
+    "strength": 20.0,
+    "agility": 21.0,
+    "stamina": 21.0,
+    "intellect": 28.5,
+    "spirit": 27.25,
+    "health": 72,
+    "classic_mana": 191
+   },
+   "6": {
+    "strength": 21.0,
+    "agility": 21.0,
+    "stamina": 21.0,
+    "intellect": 29.5,
+    "spirit": 28.25,
+    "health": 87,
+    "classic_mana": 205
+   },
+   "7": {
+    "strength": 21.0,
+    "agility": 21.0,
+    "stamina": 22.0,
+    "intellect": 30.5,
+    "spirit": 29.25,
+    "health": 92,
+    "classic_mana": 220
+   },
+   "8": {
+    "strength": 21.0,
+    "agility": 21.0,
+    "stamina": 22.0,
+    "intellect": 31.5,
+    "spirit": 30.25,
+    "health": 107,
+    "classic_mana": 221
+   },
+   "9": {
+    "strength": 21.0,
+    "agility": 21.0,
+    "stamina": 22.0,
+    "intellect": 33.5,
+    "spirit": 31.25,
+    "health": 122,
+    "classic_mana": 238
+   },
+   "10": {
+    "strength": 21.0,
+    "agility": 22.0,
+    "stamina": 23.0,
+    "intellect": 34.5,
+    "spirit": 33.25,
+    "health": 127,
+    "classic_mana": 256
+   },
+   "11": {
+    "strength": 21.0,
+    "agility": 22.0,
+    "stamina": 23.0,
+    "intellect": 35.5,
+    "spirit": 34.25,
+    "health": 142,
+    "classic_mana": 275
+   },
+   "12": {
+    "strength": 21.0,
+    "agility": 22.0,
+    "stamina": 23.0,
+    "intellect": 37.5,
+    "spirit": 35.25,
+    "health": 157,
+    "classic_mana": 280
+   },
+   "13": {
+    "strength": 21.0,
+    "agility": 22.0,
+    "stamina": 24.0,
+    "intellect": 38.5,
+    "spirit": 36.25,
+    "health": 162,
+    "classic_mana": 301
+   },
+   "14": {
+    "strength": 22.0,
+    "agility": 22.0,
+    "stamina": 24.0,
+    "intellect": 39.5,
+    "spirit": 38.25,
+    "health": 177,
+    "classic_mana": 323
+   },
+   "15": {
+    "strength": 22.0,
+    "agility": 23.0,
+    "stamina": 24.0,
+    "intellect": 41.5,
+    "spirit": 39.25,
+    "health": 192,
+    "classic_mana": 331
+   },
+   "16": {
+    "strength": 22.0,
+    "agility": 23.0,
+    "stamina": 25.0,
+    "intellect": 42.5,
+    "spirit": 40.5,
+    "health": 197,
+    "classic_mana": 355
+   },
+   "17": {
+    "strength": 22.0,
+    "agility": 23.0,
+    "stamina": 25.0,
+    "intellect": 43.5,
+    "spirit": 42.5,
+    "health": 212,
+    "classic_mana": 365
+   },
+   "18": {
+    "strength": 22.0,
+    "agility": 23.0,
+    "stamina": 25.0,
+    "intellect": 45.5,
+    "spirit": 43.5,
+    "health": 227,
+    "classic_mana": 391
+   },
+   "19": {
+    "strength": 22.0,
+    "agility": 23.0,
+    "stamina": 26.0,
+    "intellect": 46.5,
+    "spirit": 44.5,
+    "health": 232,
+    "classic_mana": 403
+   },
+   "20": {
+    "strength": 22.0,
+    "agility": 24.0,
+    "stamina": 26.0,
+    "intellect": 48.75,
+    "spirit": 46.5,
+    "health": 247,
+    "classic_mana": 431
+   },
+   "21": {
+    "strength": 23.0,
+    "agility": 24.0,
+    "stamina": 26.0,
+    "intellect": 49.75,
+    "spirit": 47.5,
+    "health": 262,
+    "classic_mana": 445
+   },
+   "22": {
+    "strength": 23.0,
+    "agility": 24.0,
+    "stamina": 27.0,
+    "intellect": 51.75,
+    "spirit": 49.5,
+    "health": 267,
+    "classic_mana": 475
+   },
+   "23": {
+    "strength": 23.0,
+    "agility": 24.0,
+    "stamina": 27.0,
+    "intellect": 52.75,
+    "spirit": 50.5,
+    "health": 282,
+    "classic_mana": 491
+   },
+   "24": {
+    "strength": 23.0,
+    "agility": 25.0,
+    "stamina": 28.0,
+    "intellect": 54.75,
+    "spirit": 52.5,
+    "health": 288,
+    "classic_mana": 523
+   },
+   "25": {
+    "strength": 23.0,
+    "agility": 25.0,
+    "stamina": 28.0,
+    "intellect": 55.75,
+    "spirit": 53.5,
+    "health": 305,
+    "classic_mana": 541
+   },
+   "26": {
+    "strength": 23.0,
+    "agility": 25.0,
+    "stamina": 28.0,
+    "intellect": 57.75,
+    "spirit": 55.5,
+    "health": 323,
+    "classic_mana": 575
+   },
+   "27": {
+    "strength": 23.0,
+    "agility": 25.0,
+    "stamina": 29.0,
+    "intellect": 59.75,
+    "spirit": 56.5,
+    "health": 332,
+    "classic_mana": 595
+   },
+   "28": {
+    "strength": 24.0,
+    "agility": 25.0,
+    "stamina": 29.0,
+    "intellect": 60.75,
+    "spirit": 58.5,
+    "health": 352,
+    "classic_mana": 616
+   },
+   "29": {
+    "strength": 24.0,
+    "agility": 26.0,
+    "stamina": 30.0,
+    "intellect": 62.75,
+    "spirit": 59.5,
+    "health": 363,
+    "classic_mana": 652
+   },
+   "30": {
+    "strength": 24.0,
+    "agility": 26.0,
+    "stamina": 30.0,
+    "intellect": 64.75,
+    "spirit": 61.75,
+    "health": 385,
+    "classic_mana": 673
+   },
+   "31": {
+    "strength": 24.0,
+    "agility": 26.0,
+    "stamina": 30.0,
+    "intellect": 65.75,
+    "spirit": 63.75,
+    "health": 408,
+    "classic_mana": 694
+   },
+   "32": {
+    "strength": 24.0,
+    "agility": 26.0,
+    "stamina": 31.0,
+    "intellect": 68.0,
+    "spirit": 64.75,
+    "health": 422,
+    "classic_mana": 730
+   },
+   "33": {
+    "strength": 24.0,
+    "agility": 27.0,
+    "stamina": 31.0,
+    "intellect": 70.0,
+    "spirit": 66.75,
+    "health": 447,
+    "classic_mana": 751
+   },
+   "34": {
+    "strength": 25.0,
+    "agility": 27.0,
+    "stamina": 32.0,
+    "intellect": 71.0,
+    "spirit": 68.75,
+    "health": 463,
+    "classic_mana": 772
+   },
+   "35": {
+    "strength": 25.0,
+    "agility": 27.0,
+    "stamina": 32.0,
+    "intellect": 73.0,
+    "spirit": 69.75,
+    "health": 490,
+    "classic_mana": 793
+   },
+   "36": {
+    "strength": 25.0,
+    "agility": 28.0,
+    "stamina": 33.0,
+    "intellect": 75.0,
+    "spirit": 71.75,
+    "health": 508,
+    "classic_mana": 814
+   },
+   "37": {
+    "strength": 25.0,
+    "agility": 28.0,
+    "stamina": 33.0,
+    "intellect": 77.0,
+    "spirit": 73.75,
+    "health": 537,
+    "classic_mana": 850
+   },
+   "38": {
+    "strength": 25.0,
+    "agility": 28.0,
+    "stamina": 33.0,
+    "intellect": 79.0,
+    "spirit": 75.75,
+    "health": 567,
+    "classic_mana": 871
+   },
+   "39": {
+    "strength": 26.0,
+    "agility": 28.0,
+    "stamina": 34.0,
+    "intellect": 81.0,
+    "spirit": 76.75,
+    "health": 588,
+    "classic_mana": 892
+   },
+   "40": {
+    "strength": 26.0,
+    "agility": 29.0,
+    "stamina": 34.0,
+    "intellect": 82.0,
+    "spirit": 78.75,
+    "health": 620,
+    "classic_mana": 913
+   },
+   "41": {
+    "strength": 26.0,
+    "agility": 29.0,
+    "stamina": 35.0,
+    "intellect": 84.0,
+    "spirit": 81.0,
+    "health": 643,
+    "classic_mana": 934
+   },
+   "42": {
+    "strength": 26.0,
+    "agility": 29.0,
+    "stamina": 35.0,
+    "intellect": 86.0,
+    "spirit": 83.0,
+    "health": 677,
+    "classic_mana": 955
+   },
+   "43": {
+    "strength": 26.0,
+    "agility": 29.0,
+    "stamina": 36.0,
+    "intellect": 88.25,
+    "spirit": 85.0,
+    "health": 702,
+    "classic_mana": 976
+   },
+   "44": {
+    "strength": 26.0,
+    "agility": 30.0,
+    "stamina": 36.0,
+    "intellect": 90.25,
+    "spirit": 87.0,
+    "health": 738,
+    "classic_mana": 997
+   },
+   "45": {
+    "strength": 27.0,
+    "agility": 30.0,
+    "stamina": 37.0,
+    "intellect": 92.25,
+    "spirit": 89.0,
+    "health": 765,
+    "classic_mana": 1018
+   },
+   "46": {
+    "strength": 27.0,
+    "agility": 30.0,
+    "stamina": 37.0,
+    "intellect": 94.25,
+    "spirit": 91.0,
+    "health": 803,
+    "classic_mana": 1039
+   },
+   "47": {
+    "strength": 27.0,
+    "agility": 31.0,
+    "stamina": 38.0,
+    "intellect": 96.25,
+    "spirit": 93.0,
+    "health": 832,
+    "classic_mana": 1060
+   },
+   "48": {
+    "strength": 27.0,
+    "agility": 31.0,
+    "stamina": 38.0,
+    "intellect": 99.25,
+    "spirit": 95.0,
+    "health": 872,
+    "classic_mana": 1081
+   },
+   "49": {
+    "strength": 28.0,
+    "agility": 31.0,
+    "stamina": 39.0,
+    "intellect": 101.25,
+    "spirit": 97.0,
+    "health": 903,
+    "classic_mana": 1102
+   },
+   "50": {
+    "strength": 28.0,
+    "agility": 32.0,
+    "stamina": 39.0,
+    "intellect": 103.25,
+    "spirit": 99.0,
+    "health": 945,
+    "classic_mana": 1108
+   },
+   "51": {
+    "strength": 28.0,
+    "agility": 32.0,
+    "stamina": 40.0,
+    "intellect": 105.25,
+    "spirit": 101.25,
+    "health": 978,
+    "classic_mana": 1129
+   },
+   "52": {
+    "strength": 28.0,
+    "agility": 32.0,
+    "stamina": 40.0,
+    "intellect": 107.25,
+    "spirit": 103.25,
+    "health": 1022,
+    "classic_mana": 1150
+   },
+   "53": {
+    "strength": 28.0,
+    "agility": 33.0,
+    "stamina": 41.0,
+    "intellect": 109.5,
+    "spirit": 105.25,
+    "health": 1057,
+    "classic_mana": 1171
+   },
+   "54": {
+    "strength": 29.0,
+    "agility": 33.0,
+    "stamina": 42.0,
+    "intellect": 112.5,
+    "spirit": 107.25,
+    "health": 1093,
+    "classic_mana": 1177
+   },
+   "55": {
+    "strength": 29.0,
+    "agility": 33.0,
+    "stamina": 42.0,
+    "intellect": 114.5,
+    "spirit": 110.25,
+    "health": 1140,
+    "classic_mana": 1198
+   },
+   "56": {
+    "strength": 29.0,
+    "agility": 34.0,
+    "stamina": 43.0,
+    "intellect": 116.5,
+    "spirit": 112.25,
+    "health": 1178,
+    "classic_mana": 1219
+   },
+   "57": {
+    "strength": 29.0,
+    "agility": 34.0,
+    "stamina": 43.0,
+    "intellect": 119.5,
+    "spirit": 114.25,
+    "health": 1227,
+    "classic_mana": 1225
+   },
+   "58": {
+    "strength": 30.0,
+    "agility": 34.0,
+    "stamina": 44.0,
+    "intellect": 121.5,
+    "spirit": 116.25,
+    "health": 1267,
+    "classic_mana": 1246
+   },
+   "59": {
+    "strength": 30.0,
+    "agility": 35.0,
+    "stamina": 44.0,
+    "intellect": 124.5,
+    "spirit": 119.25,
+    "health": 1318,
+    "classic_mana": 1252
+   },
+   "60": {
+    "strength": 30.0,
+    "agility": 35.0,
+    "stamina": 45.0,
+    "intellect": 126.25,
+    "spirit": 121.5,
+    "health": 1360,
+    "classic_mana": 1273
+   }
+  },
+  "warlock": {
+   "1": {
+    "strength": 20.0,
+    "agility": 20.0,
+    "stamina": 21.0,
+    "intellect": 22.0,
+    "spirit": 22.0,
+    "health": 23,
+    "classic_mana": 59
+   },
+   "2": {
+    "strength": 20.0,
+    "agility": 20.0,
+    "stamina": 22.0,
+    "intellect": 23.25,
+    "spirit": 23.25,
+    "health": 28,
+    "classic_mana": 98
+   },
+   "3": {
+    "strength": 21.0,
+    "agility": 21.0,
+    "stamina": 22.0,
+    "intellect": 24.25,
+    "spirit": 24.25,
+    "health": 43,
+    "classic_mana": 107
+   },
+   "4": {
+    "strength": 21.0,
+    "agility": 21.0,
+    "stamina": 23.0,
+    "intellect": 25.25,
+    "spirit": 25.25,
+    "health": 48,
+    "classic_mana": 117
+   },
+   "5": {
+    "strength": 21.0,
+    "agility": 21.0,
+    "stamina": 23.0,
+    "intellect": 26.25,
+    "spirit": 26.25,
+    "health": 63,
+    "classic_mana": 128
+   },
+   "6": {
+    "strength": 21.0,
+    "agility": 22.0,
+    "stamina": 24.0,
+    "intellect": 27.5,
+    "spirit": 27.25,
+    "health": 68,
+    "classic_mana": 140
+   },
+   "7": {
+    "strength": 22.0,
+    "agility": 22.0,
+    "stamina": 24.0,
+    "intellect": 28.5,
+    "spirit": 29.25,
+    "health": 83,
+    "classic_mana": 153
+   },
+   "8": {
+    "strength": 22.0,
+    "agility": 22.0,
+    "stamina": 25.0,
+    "intellect": 29.5,
+    "spirit": 30.25,
+    "health": 88,
+    "classic_mana": 167
+   },
+   "9": {
+    "strength": 22.0,
+    "agility": 23.0,
+    "stamina": 25.0,
+    "intellect": 30.5,
+    "spirit": 31.25,
+    "health": 103,
+    "classic_mana": 182
+   },
+   "10": {
+    "strength": 23.0,
+    "agility": 23.0,
+    "stamina": 26.0,
+    "intellect": 31.5,
+    "spirit": 32.25,
+    "health": 108,
+    "classic_mana": 198
+   },
+   "11": {
+    "strength": 23.0,
+    "agility": 24.0,
+    "stamina": 26.0,
+    "intellect": 33.5,
+    "spirit": 33.25,
+    "health": 123,
+    "classic_mana": 200
+   },
+   "12": {
+    "strength": 23.0,
+    "agility": 24.0,
+    "stamina": 27.0,
+    "intellect": 34.5,
+    "spirit": 34.25,
+    "health": 128,
+    "classic_mana": 218
+   },
+   "13": {
+    "strength": 24.0,
+    "agility": 24.0,
+    "stamina": 27.0,
+    "intellect": 35.5,
+    "spirit": 36.25,
+    "health": 143,
+    "classic_mana": 237
+   },
+   "14": {
+    "strength": 24.0,
+    "agility": 25.0,
+    "stamina": 28.0,
+    "intellect": 36.5,
+    "spirit": 37.25,
+    "health": 148,
+    "classic_mana": 257
+   },
+   "15": {
+    "strength": 24.0,
+    "agility": 25.0,
+    "stamina": 29.0,
+    "intellect": 37.5,
+    "spirit": 38.25,
+    "health": 153,
+    "classic_mana": 278
+   },
+   "16": {
+    "strength": 25.0,
+    "agility": 26.0,
+    "stamina": 29.0,
+    "intellect": 38.5,
+    "spirit": 39.25,
+    "health": 168,
+    "classic_mana": 300
+   },
+   "17": {
+    "strength": 25.0,
+    "agility": 26.0,
+    "stamina": 30.0,
+    "intellect": 40.5,
+    "spirit": 41.5,
+    "health": 173,
+    "classic_mana": 308
+   },
+   "18": {
+    "strength": 25.0,
+    "agility": 26.0,
+    "stamina": 30.0,
+    "intellect": 41.5,
+    "spirit": 42.5,
+    "health": 189,
+    "classic_mana": 332
+   },
+   "19": {
+    "strength": 26.0,
+    "agility": 27.0,
+    "stamina": 31.0,
+    "intellect": 42.5,
+    "spirit": 43.5,
+    "health": 196,
+    "classic_mana": 357
+   },
+   "20": {
+    "strength": 26.0,
+    "agility": 27.0,
+    "stamina": 32.0,
+    "intellect": 43.5,
+    "spirit": 45.5,
+    "health": 204,
+    "classic_mana": 383
+   },
+   "21": {
+    "strength": 26.0,
+    "agility": 28.0,
+    "stamina": 32.0,
+    "intellect": 45.5,
+    "spirit": 46.5,
+    "health": 223,
+    "classic_mana": 395
+   },
+   "22": {
+    "strength": 27.0,
+    "agility": 28.0,
+    "stamina": 32.75,
+    "intellect": 46.5,
+    "spirit": 47.5,
+    "health": 233,
+    "classic_mana": 423
+   },
+   "23": {
+    "strength": 27.0,
+    "agility": 29.0,
+    "stamina": 33.75,
+    "intellect": 47.75,
+    "spirit": 49.5,
+    "health": 244,
+    "classic_mana": 452
+   },
+   "24": {
+    "strength": 28.0,
+    "agility": 29.0,
+    "stamina": 33.75,
+    "intellect": 49.75,
+    "spirit": 50.5,
+    "health": 266,
+    "classic_mana": 467
+   },
+   "25": {
+    "strength": 28.0,
+    "agility": 30.0,
+    "stamina": 34.75,
+    "intellect": 50.75,
+    "spirit": 52.5,
+    "health": 279,
+    "classic_mana": 498
+   },
+   "26": {
+    "strength": 28.0,
+    "agility": 30.0,
+    "stamina": 35.75,
+    "intellect": 51.75,
+    "spirit": 53.5,
+    "health": 293,
+    "classic_mana": 530
+   },
+   "27": {
+    "strength": 29.0,
+    "agility": 30.0,
+    "stamina": 35.75,
+    "intellect": 53.75,
+    "spirit": 54.5,
+    "health": 318,
+    "classic_mana": 548
+   },
+   "28": {
+    "strength": 29.0,
+    "agility": 31.0,
+    "stamina": 36.75,
+    "intellect": 54.75,
+    "spirit": 56.5,
+    "health": 334,
+    "classic_mana": 582
+   },
+   "29": {
+    "strength": 30.0,
+    "agility": 31.0,
+    "stamina": 37.75,
+    "intellect": 56.75,
+    "spirit": 57.5,
+    "health": 351,
+    "classic_mana": 602
+   },
+   "30": {
+    "strength": 30.0,
+    "agility": 32.0,
+    "stamina": 37.75,
+    "intellect": 57.75,
+    "spirit": 59.5,
+    "health": 379,
+    "classic_mana": 638
+   },
+   "31": {
+    "strength": 30.0,
+    "agility": 32.0,
+    "stamina": 38.5,
+    "intellect": 58.75,
+    "spirit": 62.0,
+    "health": 398,
+    "classic_mana": 674
+   },
+   "32": {
+    "strength": 31.0,
+    "agility": 33.0,
+    "stamina": 39.75,
+    "intellect": 60.75,
+    "spirit": 62.75,
+    "health": 418,
+    "classic_mana": 695
+   },
+   "33": {
+    "strength": 31.0,
+    "agility": 33.0,
+    "stamina": 40.5,
+    "intellect": 61.75,
+    "spirit": 65.0,
+    "health": 439,
+    "classic_mana": 731
+   },
+   "34": {
+    "strength": 32.0,
+    "agility": 34.0,
+    "stamina": 40.75,
+    "intellect": 63.75,
+    "spirit": 65.75,
+    "health": 471,
+    "classic_mana": 752
+   },
+   "35": {
+    "strength": 32.0,
+    "agility": 34.0,
+    "stamina": 41.75,
+    "intellect": 64.75,
+    "spirit": 67.75,
+    "health": 494,
+    "classic_mana": 788
+   },
+   "36": {
+    "strength": 33.0,
+    "agility": 35.0,
+    "stamina": 42.5,
+    "intellect": 66.75,
+    "spirit": 69.75,
+    "health": 518,
+    "classic_mana": 809
+   },
+   "37": {
+    "strength": 33.0,
+    "agility": 36.0,
+    "stamina": 43.75,
+    "intellect": 69.0,
+    "spirit": 70.5,
+    "health": 543,
+    "classic_mana": 830
+   },
+   "38": {
+    "strength": 33.0,
+    "agility": 36.0,
+    "stamina": 44.75,
+    "intellect": 70.0,
+    "spirit": 72.75,
+    "health": 569,
+    "classic_mana": 866
+   },
+   "39": {
+    "strength": 34.0,
+    "agility": 37.0,
+    "stamina": 44.75,
+    "intellect": 72.0,
+    "spirit": 74.75,
+    "health": 606,
+    "classic_mana": 887
+   },
+   "40": {
+    "strength": 34.0,
+    "agility": 37.0,
+    "stamina": 45.75,
+    "intellect": 73.0,
+    "spirit": 75.75,
+    "health": 634,
+    "classic_mana": 923
+   },
+   "41": {
+    "strength": 35.0,
+    "agility": 38.0,
+    "stamina": 46.5,
+    "intellect": 75.0,
+    "spirit": 77.75,
+    "health": 663,
+    "classic_mana": 944
+   },
+   "42": {
+    "strength": 35.0,
+    "agility": 38.0,
+    "stamina": 47.0,
+    "intellect": 77.0,
+    "spirit": 80.25,
+    "health": 693,
+    "classic_mana": 965
+   },
+   "43": {
+    "strength": 36.0,
+    "agility": 39.0,
+    "stamina": 48.5,
+    "intellect": 78.0,
+    "spirit": 82.25,
+    "health": 724,
+    "classic_mana": 1001
+   },
+   "44": {
+    "strength": 36.0,
+    "agility": 39.0,
+    "stamina": 49.75,
+    "intellect": 80.0,
+    "spirit": 83.0,
+    "health": 756,
+    "classic_mana": 1022
+   },
+   "45": {
+    "strength": 37.0,
+    "agility": 40.0,
+    "stamina": 49.75,
+    "intellect": 82.0,
+    "spirit": 85.0,
+    "health": 799,
+    "classic_mana": 1043
+   },
+   "46": {
+    "strength": 37.0,
+    "agility": 41.0,
+    "stamina": 50.75,
+    "intellect": 84.0,
+    "spirit": 86.75,
+    "health": 823,
+    "classic_mana": 1064
+   },
+   "47": {
+    "strength": 38.0,
+    "agility": 41.0,
+    "stamina": 51.75,
+    "intellect": 85.0,
+    "spirit": 89.0,
+    "health": 868,
+    "classic_mana": 1100
+   },
+   "48": {
+    "strength": 38.0,
+    "agility": 42.0,
+    "stamina": 52.5,
+    "intellect": 87.0,
+    "spirit": 91.0,
+    "health": 904,
+    "classic_mana": 1121
+   },
+   "49": {
+    "strength": 39.0,
+    "agility": 43.0,
+    "stamina": 53.5,
+    "intellect": 89.25,
+    "spirit": 93.0,
+    "health": 941,
+    "classic_mana": 1142
+   },
+   "50": {
+    "strength": 39.0,
+    "agility": 43.0,
+    "stamina": 54.75,
+    "intellect": 91.25,
+    "spirit": 94.75,
+    "health": 979,
+    "classic_mana": 1163
+   },
+   "51": {
+    "strength": 40.0,
+    "agility": 44.0,
+    "stamina": 55.5,
+    "intellect": 93.25,
+    "spirit": 97.0,
+    "health": 1018,
+    "classic_mana": 1184
+   },
+   "52": {
+    "strength": 40.0,
+    "agility": 44.0,
+    "stamina": 56.75,
+    "intellect": 95.25,
+    "spirit": 99.0,
+    "health": 1058,
+    "classic_mana": 1205
+   },
+   "53": {
+    "strength": 41.0,
+    "agility": 45.0,
+    "stamina": 57.75,
+    "intellect": 97.25,
+    "spirit": 101.25,
+    "health": 1089,
+    "classic_mana": 1226
+   },
+   "54": {
+    "strength": 42.0,
+    "agility": 46.0,
+    "stamina": 58.75,
+    "intellect": 99.25,
+    "spirit": 103.25,
+    "health": 1131,
+    "classic_mana": 1247
+   },
+   "55": {
+    "strength": 42.0,
+    "agility": 46.0,
+    "stamina": 59.25,
+    "intellect": 101.25,
+    "spirit": 105.25,
+    "health": 1184,
+    "classic_mana": 1268
+   },
+   "56": {
+    "strength": 43.0,
+    "agility": 47.0,
+    "stamina": 60.75,
+    "intellect": 103.25,
+    "spirit": 107.25,
+    "health": 1228,
+    "classic_mana": 1289
+   },
+   "57": {
+    "strength": 43.0,
+    "agility": 48.0,
+    "stamina": 61.5,
+    "intellect": 105.25,
+    "spirit": 109.0,
+    "health": 1273,
+    "classic_mana": 1310
+   },
+   "58": {
+    "strength": 44.0,
+    "agility": 49.0,
+    "stamina": 62.5,
+    "intellect": 107.25,
+    "spirit": 112.25,
+    "health": 1319,
+    "classic_mana": 1331
+   },
+   "59": {
+    "strength": 44.0,
+    "agility": 49.0,
+    "stamina": 63.75,
+    "intellect": 109.5,
+    "spirit": 113.75,
+    "health": 1366,
+    "classic_mana": 1352
+   },
+   "60": {
+    "strength": 45.0,
+    "agility": 50.0,
+    "stamina": 64.75,
+    "intellect": 111.5,
+    "spirit": 116.25,
+    "health": 1414,
+    "classic_mana": 1373
+   }
+  },
+  "druid": {
+   "1": {
+    "strength": 21.0,
+    "agility": 20.0,
+    "stamina": 20.0,
+    "intellect": 22.0,
+    "spirit": 22.0,
+    "health": 33,
+    "classic_mana": 17
+   },
+   "2": {
+    "strength": 22.0,
+    "agility": 20.0,
+    "stamina": 21.0,
+    "intellect": 23.0,
+    "spirit": 23.0,
+    "health": 41,
+    "classic_mana": 57
+   },
+   "3": {
+    "strength": 22.0,
+    "agility": 21.0,
+    "stamina": 21.0,
+    "intellect": 24.0,
+    "spirit": 24.0,
+    "health": 58,
+    "classic_mana": 65
+   },
+   "4": {
+    "strength": 23.0,
+    "agility": 21.0,
+    "stamina": 22.0,
+    "intellect": 25.0,
+    "spirit": 25.0,
+    "health": 65,
+    "classic_mana": 74
+   },
+   "5": {
+    "strength": 23.0,
+    "agility": 22.0,
+    "stamina": 22.0,
+    "intellect": 26.0,
+    "spirit": 26.0,
+    "health": 82,
+    "classic_mana": 84
+   },
+   "6": {
+    "strength": 24.0,
+    "agility": 22.0,
+    "stamina": 23.0,
+    "intellect": 27.0,
+    "spirit": 27.0,
+    "health": 89,
+    "classic_mana": 95
+   },
+   "7": {
+    "strength": 24.0,
+    "agility": 23.0,
+    "stamina": 24.0,
+    "intellect": 28.0,
+    "spirit": 28.0,
+    "health": 96,
+    "classic_mana": 107
+   },
+   "8": {
+    "strength": 25.0,
+    "agility": 23.0,
+    "stamina": 24.0,
+    "intellect": 28.0,
+    "spirit": 29.0,
+    "health": 113,
+    "classic_mana": 120
+   },
+   "9": {
+    "strength": 25.0,
+    "agility": 24.0,
+    "stamina": 25.0,
+    "intellect": 29.0,
+    "spirit": 30.0,
+    "health": 120,
+    "classic_mana": 134
+   },
+   "10": {
+    "strength": 26.0,
+    "agility": 24.0,
+    "stamina": 25.0,
+    "intellect": 30.0,
+    "spirit": 31.0,
+    "health": 137,
+    "classic_mana": 149
+   },
+   "11": {
+    "strength": 26.0,
+    "agility": 25.0,
+    "stamina": 26.0,
+    "intellect": 31.0,
+    "spirit": 33.0,
+    "health": 144,
+    "classic_mana": 165
+   },
+   "12": {
+    "strength": 27.0,
+    "agility": 25.0,
+    "stamina": 27.0,
+    "intellect": 32.0,
+    "spirit": 34.0,
+    "health": 151,
+    "classic_mana": 182
+   },
+   "13": {
+    "strength": 27.0,
+    "agility": 26.0,
+    "stamina": 27.0,
+    "intellect": 33.0,
+    "spirit": 35.0,
+    "health": 168,
+    "classic_mana": 200
+   },
+   "14": {
+    "strength": 28.0,
+    "agility": 26.0,
+    "stamina": 28.0,
+    "intellect": 34.0,
+    "spirit": 36.0,
+    "health": 175,
+    "classic_mana": 219
+   },
+   "15": {
+    "strength": 29.0,
+    "agility": 27.0,
+    "stamina": 29.0,
+    "intellect": 36.0,
+    "spirit": 37.0,
+    "health": 182,
+    "classic_mana": 239
+   },
+   "16": {
+    "strength": 29.0,
+    "agility": 27.0,
+    "stamina": 29.0,
+    "intellect": 37.0,
+    "spirit": 38.0,
+    "health": 199,
+    "classic_mana": 260
+   },
+   "17": {
+    "strength": 30.0,
+    "agility": 28.0,
+    "stamina": 30.0,
+    "intellect": 38.0,
+    "spirit": 40.0,
+    "health": 206,
+    "classic_mana": 282
+   },
+   "18": {
+    "strength": 30.0,
+    "agility": 29.0,
+    "stamina": 31.0,
+    "intellect": 39.0,
+    "spirit": 41.0,
+    "health": 214,
+    "classic_mana": 305
+   },
+   "19": {
+    "strength": 31.0,
+    "agility": 29.0,
+    "stamina": 31.0,
+    "intellect": 40.0,
+    "spirit": 42.0,
+    "health": 233,
+    "classic_mana": 329
+   },
+   "20": {
+    "strength": 32.0,
+    "agility": 30.0,
+    "stamina": 32.0,
+    "intellect": 41.0,
+    "spirit": 43.0,
+    "health": 243,
+    "classic_mana": 354
+   },
+   "21": {
+    "strength": 32.0,
+    "agility": 30.0,
+    "stamina": 33.0,
+    "intellect": 42.0,
+    "spirit": 45.0,
+    "health": 254,
+    "classic_mana": 380
+   },
+   "22": {
+    "strength": 33.0,
+    "agility": 31.0,
+    "stamina": 34.0,
+    "intellect": 43.0,
+    "spirit": 46.0,
+    "health": 266,
+    "classic_mana": 392
+   },
+   "23": {
+    "strength": 34.0,
+    "agility": 32.0,
+    "stamina": 34.0,
+    "intellect": 44.0,
+    "spirit": 47.0,
+    "health": 289,
+    "classic_mana": 420
+   },
+   "24": {
+    "strength": 34.0,
+    "agility": 32.0,
+    "stamina": 35.0,
+    "intellect": 46.0,
+    "spirit": 49.0,
+    "health": 303,
+    "classic_mana": 449
+   },
+   "25": {
+    "strength": 35.0,
+    "agility": 33.0,
+    "stamina": 36.0,
+    "intellect": 47.0,
+    "spirit": 50.0,
+    "health": 318,
+    "classic_mana": 479
+   },
+   "26": {
+    "strength": 36.0,
+    "agility": 33.0,
+    "stamina": 37.0,
+    "intellect": 48.0,
+    "spirit": 51.0,
+    "health": 334,
+    "classic_mana": 509
+   },
+   "27": {
+    "strength": 36.0,
+    "agility": 34.0,
+    "stamina": 37.0,
+    "intellect": 49.0,
+    "spirit": 53.0,
+    "health": 361,
+    "classic_mana": 524
+   },
+   "28": {
+    "strength": 37.0,
+    "agility": 35.0,
+    "stamina": 38.0,
+    "intellect": 50.0,
+    "spirit": 54.0,
+    "health": 379,
+    "classic_mana": 554
+   },
+   "29": {
+    "strength": 38.0,
+    "agility": 35.0,
+    "stamina": 39.0,
+    "intellect": 52.0,
+    "spirit": 56.0,
+    "health": 398,
+    "classic_mana": 584
+   },
+   "30": {
+    "strength": 38.0,
+    "agility": 36.0,
+    "stamina": 40.0,
+    "intellect": 53.0,
+    "spirit": 57.0,
+    "health": 418,
+    "classic_mana": 614
+   },
+   "31": {
+    "strength": 39.0,
+    "agility": 37.0,
+    "stamina": 41.0,
+    "intellect": 54.0,
+    "spirit": 58.0,
+    "health": 439,
+    "classic_mana": 629
+   },
+   "32": {
+    "strength": 40.0,
+    "agility": 37.0,
+    "stamina": 42.0,
+    "intellect": 56.0,
+    "spirit": 60.0,
+    "health": 461,
+    "classic_mana": 659
+   },
+   "33": {
+    "strength": 41.0,
+    "agility": 38.0,
+    "stamina": 42.0,
+    "intellect": 57.0,
+    "spirit": 61.0,
+    "health": 494,
+    "classic_mana": 689
+   },
+   "34": {
+    "strength": 41.0,
+    "agility": 39.0,
+    "stamina": 43.0,
+    "intellect": 58.0,
+    "spirit": 63.0,
+    "health": 518,
+    "classic_mana": 704
+   },
+   "35": {
+    "strength": 42.0,
+    "agility": 39.0,
+    "stamina": 44.0,
+    "intellect": 60.0,
+    "spirit": 64.0,
+    "health": 543,
+    "classic_mana": 734
+   },
+   "36": {
+    "strength": 43.0,
+    "agility": 40.0,
+    "stamina": 45.0,
+    "intellect": 61.0,
+    "spirit": 66.0,
+    "health": 569,
+    "classic_mana": 749
+   },
+   "37": {
+    "strength": 44.0,
+    "agility": 41.0,
+    "stamina": 46.0,
+    "intellect": 62.0,
+    "spirit": 68.0,
+    "health": 596,
+    "classic_mana": 779
+   },
+   "38": {
+    "strength": 45.0,
+    "agility": 41.0,
+    "stamina": 47.0,
+    "intellect": 64.0,
+    "spirit": 69.0,
+    "health": 624,
+    "classic_mana": 809
+   },
+   "39": {
+    "strength": 45.0,
+    "agility": 42.0,
+    "stamina": 48.0,
+    "intellect": 65.0,
+    "spirit": 71.0,
+    "health": 653,
+    "classic_mana": 824
+   },
+   "40": {
+    "strength": 46.0,
+    "agility": 43.0,
+    "stamina": 49.0,
+    "intellect": 67.0,
+    "spirit": 72.0,
+    "health": 683,
+    "classic_mana": 854
+   },
+   "41": {
+    "strength": 47.0,
+    "agility": 44.0,
+    "stamina": 50.0,
+    "intellect": 68.0,
+    "spirit": 74.0,
+    "health": 714,
+    "classic_mana": 869
+   },
+   "42": {
+    "strength": 48.0,
+    "agility": 44.0,
+    "stamina": 51.0,
+    "intellect": 70.0,
+    "spirit": 76.0,
+    "health": 746,
+    "classic_mana": 899
+   },
+   "43": {
+    "strength": 49.0,
+    "agility": 45.0,
+    "stamina": 52.0,
+    "intellect": 71.0,
+    "spirit": 77.0,
+    "health": 779,
+    "classic_mana": 914
+   },
+   "44": {
+    "strength": 50.0,
+    "agility": 46.0,
+    "stamina": 52.0,
+    "intellect": 73.0,
+    "spirit": 79.0,
+    "health": 823,
+    "classic_mana": 944
+   },
+   "45": {
+    "strength": 50.0,
+    "agility": 47.0,
+    "stamina": 53.0,
+    "intellect": 74.0,
+    "spirit": 81.0,
+    "health": 858,
+    "classic_mana": 959
+   },
+   "46": {
+    "strength": 51.0,
+    "agility": 48.0,
+    "stamina": 54.0,
+    "intellect": 76.0,
+    "spirit": 83.0,
+    "health": 894,
+    "classic_mana": 989
+   },
+   "47": {
+    "strength": 52.0,
+    "agility": 48.0,
+    "stamina": 56.0,
+    "intellect": 77.0,
+    "spirit": 84.0,
+    "health": 921,
+    "classic_mana": 1004
+   },
+   "48": {
+    "strength": 53.0,
+    "agility": 49.0,
+    "stamina": 57.0,
+    "intellect": 79.0,
+    "spirit": 86.0,
+    "health": 959,
+    "classic_mana": 1019
+   },
+   "49": {
+    "strength": 54.0,
+    "agility": 50.0,
+    "stamina": 58.0,
+    "intellect": 81.0,
+    "spirit": 88.0,
+    "health": 998,
+    "classic_mana": 1049
+   },
+   "50": {
+    "strength": 55.0,
+    "agility": 51.0,
+    "stamina": 59.0,
+    "intellect": 82.0,
+    "spirit": 90.0,
+    "health": 1038,
+    "classic_mana": 1064
+   },
+   "51": {
+    "strength": 56.0,
+    "agility": 52.0,
+    "stamina": 60.0,
+    "intellect": 84.0,
+    "spirit": 92.0,
+    "health": 1079,
+    "classic_mana": 1079
+   },
+   "52": {
+    "strength": 57.0,
+    "agility": 53.0,
+    "stamina": 61.0,
+    "intellect": 86.0,
+    "spirit": 94.0,
+    "health": 1121,
+    "classic_mana": 1109
+   },
+   "53": {
+    "strength": 58.0,
+    "agility": 54.0,
+    "stamina": 62.0,
+    "intellect": 87.0,
+    "spirit": 96.0,
+    "health": 1164,
+    "classic_mana": 1124
+   },
+   "54": {
+    "strength": 59.0,
+    "agility": 54.0,
+    "stamina": 63.0,
+    "intellect": 89.0,
+    "spirit": 98.0,
+    "health": 1208,
+    "classic_mana": 1139
+   },
+   "55": {
+    "strength": 60.0,
+    "agility": 55.0,
+    "stamina": 64.0,
+    "intellect": 91.0,
+    "spirit": 100.0,
+    "health": 1253,
+    "classic_mana": 1154
+   },
+   "56": {
+    "strength": 61.0,
+    "agility": 56.0,
+    "stamina": 65.0,
+    "intellect": 93.0,
+    "spirit": 102.0,
+    "health": 1299,
+    "classic_mana": 1169
+   },
+   "57": {
+    "strength": 62.0,
+    "agility": 57.0,
+    "stamina": 66.0,
+    "intellect": 94.0,
+    "spirit": 104.0,
+    "health": 1346,
+    "classic_mana": 1199
+   },
+   "58": {
+    "strength": 63.0,
+    "agility": 58.0,
+    "stamina": 68.0,
+    "intellect": 96.0,
+    "spirit": 106.0,
+    "health": 1384,
+    "classic_mana": 1214
+   },
+   "59": {
+    "strength": 64.0,
+    "agility": 59.0,
+    "stamina": 69.0,
+    "intellect": 98.0,
+    "spirit": 108.0,
+    "health": 1433,
+    "classic_mana": 1229
+   },
+   "60": {
+    "strength": 65.0,
+    "agility": 60.0,
+    "stamina": 70.0,
+    "intellect": 100.0,
+    "spirit": 110.0,
+    "health": 1483,
+    "classic_mana": 1244
+   }
+  }
+ }
+}

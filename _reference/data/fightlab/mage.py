@@ -35,6 +35,16 @@ from tables import (GCD, MELEE_RANGE, SPELL_CRIT_BASE, WAND_SPEED, base_health, 
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 SPELLBOOK = json.load(open(ROOT / "_reference/data/forever-spells/mage.json", encoding="utf-8"))
+import tables as _tables  # noqa: E402
+SPELLBOOK = _tables.trainer_ranks_only(SPELLBOOK)   # no class-book ranks (2026-11-19, the audit's H18)
+FOF_ONE_ROLL = True   # Frostbite and Fingers of Frost share one roll (H21); False = two independent rolls, the lab before
+IB_MULTIPLY = True       # Frigid Power's +15% and the shield's +5% multiply (H21); False = they add, the lab before
+IB_REFRESH = True        # Ice Barrier again mid-pull when Frigid Power has under 2 s left (H21); False = at a pull's start only
+FB_IL_SHARED_CD = True   # Fire Blast and Ice Lance share one cooldown (client category 19; H21); False = apart, the lab before
+SHATTER_AM = True        # Shatter on Arcane Missiles' missiles, each spending a Fingers of Frost charge (H21); False = the lab before
+WC_TEXT = True           # Winter's Chill from the tooltip: +20% and +7% a stack, 5 stacks (H21); False = 5%, +7%, cap from index 2
+ARCANE_ANY_ROTATION = True   # Arcane Impact and Arcane Power work in every mage rotation, not only those named "arcane..." (H21: the
+                             # Arcane-Frost search read them at zero); False = the lab before
 TREE = json.load(open(ROOT / "_reference/data/forever-talents/mage.json", encoding="utf-8"))
 
 NUM = re.compile(r"(\d+(?:\.\d+)?)")
@@ -442,7 +452,7 @@ class MageModule(BaseModule):
         armor = g["armor"] + (armor_spell.armor if armor_spell else 0.0) * (1 + self.tv("Frost Warding", 0) / 100)
         armor += intellect * self.tv("Arcane Resilience", 0) / 100
         bm = base_mana(level)
-        p = Player(level=level, hp_max=base_health(level) + 10 * stamina, hp=0.0, mana_max=bm + 15 * intellect, mana=0.0,
+        p = Player(level=level, hp_max=base_health(level) + _tables.health_from_stamina(stamina), hp=0.0, mana_max=bm + _tables.mana_from_intellect(intellect), mana=0.0,
                    base_mana=bm, spirit=spirit, intellect=intellect, spell_power=g["spell_power"], armor=armor,
                    spell_crit=SPELL_CRIT_BASE + intellect / int_per_spell_crit(level) / 100 + self.tv("Arcane Instability", 1) / 100,
                    dodge=0.04, ranged_crit=0.03)
@@ -532,6 +542,8 @@ class MageModule(BaseModule):
                 cost *= 1 + spell.ab_stack[1] * self.ab_stacks(f)
             if f.p.buff("Arcane Power", f.t):
                 cost *= 1 + self.tv("Arcane Power", 2) / 100
+        elif ARCANE_ANY_ROTATION and self._fight is not None and self._fight.p.buff("Arcane Power", self._fight.t):
+            cost *= 1 + self.tv("Arcane Power", 2) / 100
         return cost
 
     def final_cost(self, fight, spell, cost):
@@ -556,7 +568,7 @@ class MageModule(BaseModule):
             c += self.tv("Critical Mass", 0) / 100
             if f and f.p.buff("Combustion", f.t):
                 c += 0.10 * f.p.buffs["Combustion"].get("hits", 0)
-        if self.is_arcane() and self.sch(spell, "arcane"):
+        if (self.is_arcane() or ARCANE_ANY_ROTATION) and self.sch(spell, "arcane"):
             c += self.tv("Arcane Impact", 0) / 100
         return c
 
@@ -648,7 +660,11 @@ class MageModule(BaseModule):
             fp = f.p.buffs.get("Frigid Power")
             if fp and fp["until"] > f.t:   # each cast's +15% for its minute, +5% more while the shield holds (the duel lab adds them too)
                 pct, _, add = self.ice_barrier_bonus()
-                m *= 1 + pct / 100 + (add / 100 if f.p.absorb > 0 and f.t < f.p.absorb_until else 0.0)
+                shielded = f.p.absorb > 0 and f.t < f.p.absorb_until
+                if IB_MULTIPLY:   # the two bonuses multiply (the official simulator: 1.15 x 1.05; 2026-11-19, the audit's H21)
+                    m *= (1 + pct / 100) * (1 + (add / 100 if shielded else 0.0))
+                else:
+                    m *= 1 + pct / 100 + (add / 100 if shielded else 0.0)
         if self.sch(spell, "fire"):
             if self.rank("Fire Power"):   # per Fire effect, up to the cap (client 70425; a flat 2%/rank before)
                 m *= 1 + min(self.fire_effects() * self.tv("Fire Power", 0), self.tv("Fire Power", 1)) / 100
@@ -665,12 +681,31 @@ class MageModule(BaseModule):
                 n = wc["stacks"]
                 sp = self._fight.p.spell_power + self.sp_bonus(spell)
                 mean = (spell.dmg_min + spell.dmg_max) / 2 + spell.coef * sp
-                m *= (1 + WC_DMG * n) * ((mean + WC_COEF * n * sp) / mean if mean > 0 else 1.0)
-        if self.is_arcane() and self._fight is not None:
+                wd = self.tv("Winter's Chill", 1) / 100 if WC_TEXT else WC_DMG   # the tooltip's +20% and +7% a stack (H21)
+                wcf = self.tv("Winter's Chill", 2) / 100 if WC_TEXT else WC_COEF
+                m *= (1 + wd * n) * ((mean + wcf * n * sp) / mean if mean > 0 else 1.0)
+        if (self.is_arcane() or ARCANE_ANY_ROTATION) and self._fight is not None:
             f = self._fight
             if f.p.buff("Arcane Power", f.t):
                 m *= 1 + self.tv("Arcane Power", 1) / 100
         return m
+
+    def tick_frozen(self, fight, spell):
+        """Shatter reaches Arcane Missiles' missiles (SHATTER_AM; 2026-11-19, the audit's H21, the official simulator's talents_frost.go):
+        a missile against a Frozen target (a root, or Fingers of Frost) rolls Shatter's crit, and one that reads the target Frozen through
+        Fingers of Frost spends a charge. Before, the ticks rolled without Shatter and spent none."""
+        if not SHATTER_AM or spell.name != "Arcane Missiles":
+            return False
+        p, m, t = fight.p, fight.m, fight.t
+        if m is not None and m.frozen(t):
+            return True
+        b = p.buff("Fingers of Frost", t)
+        if b and b.get("charges", 0) > 0:
+            b["charges"] -= 1
+            if b["charges"] <= 0:
+                del p.buffs["Fingers of Frost"]
+            return True
+        return False
 
     def periodic_can_crit(self, spell):
         return spell.name == "Arcane Missiles"   # missiles crit like direct hits; Blizzard ticks and burns do not
@@ -728,7 +763,7 @@ class MageModule(BaseModule):
         elif self.rank("Presence of Mind") and p.ready("Presence of Mind", t):
             p.buffs["Presence of Mind"] = {"until": t + 60.0}
             p.cooldowns["Presence of Mind"] = p.cooldowns["Combustion"] = t + 180.0
-        if self.is_arcane():
+        if self.is_arcane() or (ARCANE_ANY_ROTATION and self.rank("Arcane Power")):
             p.buffs.pop("Arcane Blast", None)   # 15 s from the first stack (70425): spent by the next pull, cleared for simplicity
             if self.rank("Arcane Power") and p.ready("Arcane Power", t) and p.mana >= self.AP_MIN_MANA * p.mana_max:
                 p.buffs["Arcane Power"] = {"until": t + self.tv("Arcane Power", 0)}
@@ -740,10 +775,21 @@ class MageModule(BaseModule):
         if not self.sch(spell, "frost"):   # Frostbite and Fingers of Frost proc from Chill effects: Blast Wave's daze is none (2026-10-17)
             return
         fb = self.tv("Frostbite", 0)
+        fof = self.tv("Fingers of Frost", 0) if self.rank("Fingers of Frost") else 0.0
+        if FOF_ONE_ROLL and fb and fof:
+            # with both talents one roll: Frostbite's grants the Fingers of Frost charges too (the official simulator's
+            # talents_frost.go, "split between Frostbite's roll and the talent's own"; 2026-11-19, the audit's H21: two independent
+            # 15% rolls gave 27.75% of Chills a Frozen source)
+            if rng.random() < max(fb, fof) / 100:
+                if not m.frozen(t):
+                    m.root_until = t + 5.0
+                    fight.note("Frostbite freeze")
+                p.buffs["Fingers of Frost"] = {"until": t + 15.0, "charges": int(self.tv("Fingers of Frost", 1)) or 1}
+            return
         if fb and not m.frozen(t) and rng.random() < fb / 100:
             m.root_until = t + 5.0
             fight.note("Frostbite freeze")
-        if self.rank("Fingers of Frost") and rng.random() < self.tv("Fingers of Frost", 0) / 100:
+        if fof and rng.random() < fof / 100:
             charges = int(self.tv("Fingers of Frost", 1)) or 1
             p.buffs["Fingers of Frost"] = {"until": t + 15.0, "charges": charges}
 
@@ -781,7 +827,7 @@ class MageModule(BaseModule):
         elif self.rank("Winter's Chill") and (spell.name in WC_SOURCES or (spell.name == "Ice Lance" and getattr(self, "_fof_cast", False)))                 and rng.random() < self.tv("Winter's Chill", 0) / 100:
             b = m.debuffs.get("Winter's Chill")
             # client 70425: "stacking up to 5 times" at every rank (70009-70291: up to the rank)
-            stacks = min(int(self.tv("Winter's Chill", 2)) or 5, (b["stacks"] if b and b["until"] > t else 0) + 1)
+            stacks = min(int(self.tv("Winter's Chill", 3 if WC_TEXT else 2)) or 5, (b["stacks"] if b and b["until"] > t else 0) + 1)   # 5 stacks (H21: index 2 read 7)
             m.debuffs["Winter's Chill"] = {"until": t + 15.0, "stacks": stacks}
         if self.rank("Arcane Concentration") and rng.random() < self.tv("Arcane Concentration", 0) / 100:
             p.buffs["Clearcasting"] = {"until": t + 15.0}
@@ -831,6 +877,16 @@ class MageModule(BaseModule):
 
     def after_cast(self, fight, spell):
         p, m, t = fight.p, fight.m, fight.t
+        if spell.name == "Ice Barrier":   # a cast mid-pull (decide's refresh): the shield is the engine's, Frigid Power its minute again
+            pct, dur, _ = self.ice_barrier_bonus()
+            if getattr(self, "ib_damage", ICE_BARRIER_DAMAGE) and pct:
+                p.buffs["Frigid Power"] = {"until": t + dur}
+        if FB_IL_SHARED_CD and spell.name in ("Fire Blast", "Ice Lance"):
+            # one cooldown for both in game (client category 19; the audit's H21): the cast puts the other on it too
+            other = "Ice Lance" if spell.name == "Fire Blast" else "Fire Blast"
+            fb = self.spells.get("Fire Blast")
+            if fb is not None:
+                p.cooldowns[other] = max(p.cooldowns.get(other, 0.0), t + max(0.0, fb.cooldown - self.tv("Improved Fire Blast", 0)))
         cd = spell.cooldown
         if spell.name == "Fire Blast":
             cd = max(0.0, cd - self.tv("Improved Fire Blast", 0))
@@ -886,6 +942,11 @@ class MageModule(BaseModule):
         cs = self.spells.get("Counterspell")
         if m.caster and m.casting(t) and cs is not None and p.ready("Counterspell", t) and p.mana >= self.mana_cost(cs) and m.dist <= cs.range:
             return cs
+        ib = self.spells.get("Ice Barrier")
+        if IB_REFRESH and ib is not None and getattr(self, "ib_damage", ICE_BARRIER_DAMAGE) and p.ready("Ice Barrier", t):
+            fp = p.buffs.get("Frigid Power")
+            if fp and fp["until"] - t < 2.0 and p.mana >= self.mana_cost(ib) + 150:
+                return ib   # (2026-11-19, the audit's H21: cast only at a pull's start before, so Frigid Power lapsed mid-fight)
         if fight.others():
             return self.decide_aoe(fight)
         if self.is_arcane():

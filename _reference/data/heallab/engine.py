@@ -109,9 +109,19 @@ class Heal:
         return (self.heal_min + self.heal_max) / 2
 
 
+def trainer_ranks_only(data):
+    """A forever-spells object without the class books' ranks when T.TRAINER_RANKS (raidsim/trainer-ranks.json; 2026-11-19)."""
+    f = ROOT / "_reference/data/raidsim/trainer-ranks.json"
+    if not getattr(T, "TRAINER_RANKS", False) or not f.exists():
+        return data
+    book = {int(b) for b in json.load(open(f, encoding="utf-8"))["map"]}
+    return dict(data, tabs=[dict(tab, spells=[dict(sp, ranks=[r for r in sp["ranks"] if int(r.get("id") or 0) not in book])
+                                              for sp in tab["spells"]]) for tab in data.get("tabs", [])])
+
+
 def load_book(cls):
-    """Every healing spell rank of the class from the beta spellbook, by name (ranks sorted)."""
-    data = json.load(open(ROOT / "_reference/data/forever-spells" / f"{cls}.json", encoding="utf-8"))
+    """Every healing spell rank of the class from the beta spellbook, by name (ranks sorted); no class-book ranks (trainer_ranks_only)."""
+    data = trainer_ranks_only(json.load(open(ROOT / "_reference/data/forever-spells" / f"{cls}.json", encoding="utf-8")))
     book = {}
     for tab in data["tabs"]:
         for sp in tab["spells"]:

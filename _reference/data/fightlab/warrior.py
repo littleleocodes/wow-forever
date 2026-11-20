@@ -50,6 +50,8 @@ from tables import (GCD, MELEE_RANGE, WEAPON_SPEED, bandage_heal, class_attack_p
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 SPELLBOOK = json.load(open(ROOT / "_reference/data/forever-spells/warrior.json", encoding="utf-8"))
+import tables as _tables  # noqa: E402
+SPELLBOOK = _tables.trainer_ranks_only(SPELLBOOK)   # no class-book ranks (2026-11-19, the audit's H18)
 TREE = json.load(open(ROOT / "_reference/data/forever-talents/warrior.json", encoding="utf-8"))
 
 NUM = re.compile(r"(\d+(?:\.\d+)?)")
@@ -409,7 +411,7 @@ class WarriorModule(BaseModule):
             armor = g["armor"] + sh_armor
         else:
             armor = g["armor"]
-        p = Player(level=level, hp_max=class_base_health("warrior", level) + 10 * stamina, hp=0.0, mana_max=0.0, mana=0.0, base_mana=0.0,
+        p = Player(level=level, hp_max=class_base_health("warrior", level) + _tables.health_from_stamina(stamina), hp=0.0, mana_max=0.0, mana=0.0, base_mana=0.0,
                    spirit=spirit, intellect=base["intellect"], spell_power=0.0, armor=armor, spell_crit=0.0,
                    dodge=class_dodge("warrior", level, agility), ranged_crit=0.0)
         p.strength, p.agility, p.stamina = strength, agility, stamina

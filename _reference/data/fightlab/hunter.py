@@ -25,6 +25,13 @@ from tables import (GCD, MELEE_RANGE, WEAPON_SPEED, ammo_dps, armor_mitigation, 
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 SPELLBOOK = json.load(open(ROOT / "_reference/data/forever-spells/hunter.json", encoding="utf-8"))
+import tables as _tables  # noqa: E402
+SPELLBOOK = _tables.trainer_ranks_only(SPELLBOOK)   # no class-book ranks (2026-11-19, the audit's H18)
+# The quiver (2026-11-19, the independent audit's H14): Auto Shot 10% faster, the vendor quivers every hunter can carry from level 1
+# (Light Quiver and the like; Classic's later quivers give 11-15%: an assumption, a sensitivity knob). The lab had none; the raid
+# simulator's entries carry a 15% quiver. 0 = the lab before.
+QUIVER_HASTE = 0.10
+SERPENT_TICKS_CRIT = True   # Serpent Sting's ticks crit (H14); False = the lab before
 TREE = json.load(open(ROOT / "_reference/data/forever-talents/hunter.json", encoding="utf-8"))
 
 NUM = re.compile(r"(\d+(?:\.\d+)?)")
@@ -411,8 +418,8 @@ class HunterModule(BaseModule):
         rap = class_ranged_ap("hunter", level, agility) + (getattr(hawk, "rap", 0.0) if hawk else 0.0) + (getattr(tsa, "rap", 0.0) if tsa else 0.0)
         ap = class_attack_power("hunter", level, strength, agility)
         careful = intellect * self.tv("Careful Aim", 0) / 100
-        p = Player(level=level, hp_max=(class_base_health("hunter", level) + 10 * stamina) * (1 + self.tv("Survivalist", 0) / 100), hp=0.0,
-                   mana_max=bm + 15 * intellect, mana=0.0, base_mana=bm, spirit=spirit, intellect=intellect, spell_power=0.0, armor=g["armor"],
+        p = Player(level=level, hp_max=(class_base_health("hunter", level) + _tables.health_from_stamina(stamina)) * (1 + self.tv("Survivalist", 0) / 100), hp=0.0,
+                   mana_max=bm + _tables.mana_from_intellect(intellect), mana=0.0, base_mana=bm, spirit=spirit, intellect=intellect, spell_power=0.0, armor=g["armor"],
                    spell_crit=class_spell_crit("hunter", level, intellect), dodge=class_dodge("hunter", level, agility),
                    ranged_crit=class_melee_crit("hunter", level, agility) + self.tv("Lethal Attacks", 0) / 100)
         p.strength, p.agility, p.stamina = strength, agility, stamina
@@ -440,8 +447,8 @@ class HunterModule(BaseModule):
 
     def make_pet(self, level, p=None):
         """The cat. Since 2026-10-08 it inherits from the hunter (`tables.PET_SCALING`: 10% of the higher attack power, the crit chance,
-        30% of the armor, 2 health per Stamina) and swings every `tables.HUNTER_PET_SPEED` seconds with the 2.0 s base hit (Forever does not
-        normalize pet damage by attack speed).
+        30% of the armor, 2 health per Stamina) and swings every `tables.HUNTER_PET_SPEED` seconds; since 2026-11-19 its swing is the
+        simulator's normalized one (tables.PET_SWING_NORMALIZED, EV-0071); before, the whole 2.0 s hit at every speed.
         2026-10-18 (audit 2 #66, #67): focus regenerates 10 a second (client PowerType row FOCUS: RegenPeace 10, RegenCombat 10,
         raw/2026-10-08-beta-70291/client-tables/PowerType_1.60.1.70291.csv; the raid simulator's sim/core/focus.go the same; the lab had 5),
         times Bestial Discipline; the pet's crit is the hunter's melee or ranged crit, whichever is higher (Blizzard's 16 Oct notes: "pets
@@ -462,6 +469,18 @@ class HunterModule(BaseModule):
                   focus=100.0, focus_max=100.0, focus_regen=PET_FOCUS_REGEN * (1 + self.tv("Bestial Discipline", 0) / 100), threat_mult=1.0)
         pet.hit_bonus = k * (p.hit_bonus if p is not None else 0.0)
         pet.dmg_mult = PET["happiness"] * PET["dmg_family"] * (1 + self.tv("Unleashed Fury", 0) / 100) * (1 + self.tv("Focused Fire", 0) / 100)
+        if tables.PET_SWING_NORMALIZED:
+            # the official simulator's swing (tables.PET_SWING_NORMALIZED; the audit's H15): the weapon is the creature dps of the pet's
+            # level less its own attack power over 14, over a 2.0 s swing +-20%; engine.pet_swing takes it and the attack-power part over
+            # the passive's speed (norm_speed), so Frenzy's haste no longer shrinks the attack-power part
+            # EV-0071 (upstream's docs/evidence): the creature dps holds the pet's own attack power, 30% of it, so the weapon is 70% of
+            # the creature dps and the pet's own attack power 0.3 x 14 x the creature dps (252 at 60 here, 254 there); with the Cat's
+            # 10%, happiness's 25% and Unleashed Fury 5/5 a level-30 Cat at 119 attack power swings for 42.4-55.6 (logged 42-55)
+            cdps = tables.CREATURE_DPS.get(str(int(level)), 0.0)
+            avg = 0.7 * cdps * 2.0
+            pet.dmg_min, pet.dmg_max = avg * 0.8, avg * 1.2
+            pet.attack_power = 0.3 * 14.0 * cdps + k * 0.10 * own_ap
+            pet.norm_speed = tables.HUNTER_PET_SPEED
         self.pet_base_speed = pet.speed
         self.pet_base_crit = pet.crit
         return pet
@@ -535,6 +554,13 @@ class HunterModule(BaseModule):
     def periodic_can_crit(self, spell):
         return False
 
+    def periodic_crit(self, fight, spell):
+        """Serpent Sting's ticks crit at ranged crit, with Mortal Shots (the official simulator; 2026-11-19, the independent audit's
+        H14: they could not)."""
+        if spell.name == "Serpent Sting" and SERPENT_TICKS_CRIT:
+            return fight.p.ranged_crit + self.crit_bonus(spell, False), 2.0 + self.tv("Mortal Shots", 0) / 100
+        return None
+
     def swing_speed_factor(self):
         f = 1.0
         if self._fight:
@@ -543,6 +569,10 @@ class HunterModule(BaseModule):
             if self._fight.p.buff("Deadly Aspects", self._fight.t):
                 f /= 1.3
         return f
+
+    def ranged_speed_factor(self):
+        """The quiver's ranged attack speed (QUIVER_HASTE; 2026-11-19, the independent audit's H14: the lab had none)."""
+        return 1.0 / (1.0 + QUIVER_HASTE)
 
     def ranged_haste(self):
         """The hunter's ranged attack speed factor (the hawk's swings follow it): Rapid Fire, and Deadly Aspects' Aspect of the Hawk half."""

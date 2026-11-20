@@ -1,0 +1,305 @@
+{
+ "source": "ATTR_EX_1_DISCOUNT_POWER_ON_MISS (0x8000000 of attribute word 1) in the official simulator's spell store at 2e6e77d84 (assets/db_inputs/spell_store_inputs.json): the game refunds 80% of the cost when the ability misses or is dodged or parried (sim/core/spelldata/attributes.go MissRefund); by our spellbooks' rank ids, as {class: {spell: [rank numbers]}}. Written 2026-11-19 for the independent audit's D10 (fightlab/tables.MISS_REFUND).",
+ "ranks": {
+  "druid": {
+   "Bash": [
+    1,
+    2,
+    3
+   ],
+   "Claw": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "Cower": [
+    1,
+    2,
+    3
+   ],
+   "Ferocious Bite": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "Lacerate": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "Maul": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "Pounce": [
+    1,
+    2,
+    3
+   ],
+   "Primal Bite": [
+    1,
+    2,
+    3
+   ],
+   "Rake": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "Ravage": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "Rip": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "Shred": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  "rogue": {
+   "Ambush": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "Backstab": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "Cheap Shot": [
+    1
+   ],
+   "Death Mark": [
+    1
+   ],
+   "Eviscerate": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "Expose Armor": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "Feint": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "Garrote": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "Ghostly Strike": [
+    1
+   ],
+   "Gouge": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "Hemorrhage": [
+    1
+   ],
+   "Kick": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "Kidney Shot": [
+    1,
+    2
+   ],
+   "Mutilate": [
+    2,
+    3,
+    4
+   ],
+   "Rupture": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "Sap": [
+    1,
+    2,
+    3
+   ],
+   "Sinister Strike": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "Slice and Dice": [
+    1,
+    2
+   ]
+  },
+  "warrior": {
+   "Bloodthirst": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "Concussion Blow": [
+    1
+   ],
+   "Disarm": [
+    1
+   ],
+   "Execute": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "Hamstring": [
+    1,
+    2,
+    3
+   ],
+   "Heroic Strike": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "Mocking Blow": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "Mortal Strike": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "Overpower": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "Pummel": [
+    1,
+    2
+   ],
+   "Rend": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "Revenge": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "Shield Bash": [
+    1,
+    2,
+    3
+   ],
+   "Shield Slam": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "Slam": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "Spearing Strike": [
+    1
+   ],
+   "Sunder Armor": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  }
+ }
+}

@@ -26,6 +26,9 @@ from tables import (DEATH_TIME, GCD, MELEE_RANGE, PARTIAL_RESIST_LOSS, SPELL_HIT
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 SPELLBOOK = json.load(open(ROOT / "_reference/data/forever-spells/shaman.json", encoding="utf-8"))
+import tables as _tables  # noqa: E402
+SPELLBOOK = _tables.trainer_ranks_only(SPELLBOOK)   # no class-book ranks (2026-11-19, the audit's H18)
+LS_OFFICIAL = True   # Lightning Shield's orbs: can miss, cannot crit (the official simulator; H19); False = the lab before
 TREE = json.load(open(ROOT / "_reference/data/forever-talents/shaman.json", encoding="utf-8"))
 
 NUM = re.compile(r"(\d+(?:\.\d+)?)")
@@ -415,8 +418,8 @@ class ShamanModule(BaseModule):
         intellect = (base["intellect"] + g["intellect"]) * (1 + self.tv("Ancestral Knowledge", 0) / 100)
         spirit = base["spirit"] + g["spirit"]
         bm = class_base_mana("shaman", level)
-        p = Player(level=level, hp_max=(class_base_health("shaman", level) + 10 * stamina) * (1 + self.tv("Improved Reincarnation", 1) / 100), hp=0.0,
-                   mana_max=bm + 15 * intellect, mana=0.0, base_mana=bm, spirit=spirit, intellect=intellect,
+        p = Player(level=level, hp_max=(class_base_health("shaman", level) + _tables.health_from_stamina(stamina)) * (1 + self.tv("Improved Reincarnation", 1) / 100), hp=0.0,
+                   mana_max=bm + _tables.mana_from_intellect(intellect), mana=0.0, base_mana=bm, spirit=spirit, intellect=intellect,
                    spell_power=g["spell_power"] + intellect * self.tv("Mental Quickness", 0) / 100, armor=g["armor"],
                    spell_crit=class_spell_crit("shaman", level, intellect) + self.tv("Thundering Strikes", 0) / 100,
                    dodge=class_dodge("shaman", level, agility) + self.tv("Anticipation", 0) / 100, ranged_crit=0.0)
@@ -715,7 +718,10 @@ class ShamanModule(BaseModule):
             sh["icd"] = t + SHIELD_ICD
             if sh["kind"] == "lightning":
                 dmg_out = sh["dmg"] * self.damage_multiplier(Spell("Lightning Shield", "nature"), False)
-                lcrit = fight.rng.random() < p.spell_crit
+                if LS_OFFICIAL and m is not None and fight.rng.random() < _tables.spell_miss(m.level - p.level):
+                    fight.note("Lightning Shield's orb misses")   # the orb is a spell that can miss and cannot crit (the official
+                    return                                       # simulator; the lab let it crit and never miss until 2026-11-19: H19)
+                lcrit = (not LS_OFFICIAL) and fight.rng.random() < p.spell_crit
                 if lcrit:
                     dmg_out *= 1.5 + self.crit_damage_bonus(Spell("Lightning Shield", "nature", kind="spell"))
                 fight.deal(Spell("Lightning Shield", "nature"), dmg_out, lcrit)

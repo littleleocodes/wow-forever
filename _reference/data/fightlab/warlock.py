@@ -31,6 +31,9 @@ from tables import (GCD, MELEE_RANGE, THREAT_SWITCH, WAND_SPEED, class_base_heal
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 SPELLBOOK = json.load(open(ROOT / "_reference/data/forever-spells/warlock.json", encoding="utf-8"))
+import tables as _tables  # noqa: E402
+SPELLBOOK = _tables.trainer_ranks_only(SPELLBOOK)   # no class-book ranks (2026-11-19, the audit's H18)
+AGONY_TICK_2S = True   # Bane of Agony ticks every 2 s, as its spell row (2026-11-19, H20); False = every 3 s, the lab before
 TREE = json.load(open(ROOT / "_reference/data/forever-talents/warlock.json", encoding="utf-8"))
 
 NUM = re.compile(r"(\d+(?:\.\d+)?)")
@@ -135,6 +138,11 @@ def load_spellbook():
                     s.dot_ticks = max(1, int(round(s.dot_dur / 2.0)))   # a tick every 2 s
                 if s.dot > 0 and not s.dot_ticks:
                     s.dot_ticks = max(1, int(round(s.dot_dur / 3.0)))
+                if sp["name"] == "Bane of Agony" and s.dot > 0 and AGONY_TICK_2S:
+                    # the spell row ticks every 2 s (12 ticks over 24 s, each with the tooltip's 13.3% of spell power: 1.60 of it in all; the
+                    # lab had 8 at 3 s, 1.06). 2026-11-19, the independent audit's H20. Its ramp (half the base in the first third, one and
+                    # a half in the last; the official simulator's agony.go) is not modelled: it moves only a Bane cut short.
+                    s.dot_ticks = max(1, int(round(s.dot_dur / 2.0)))
                 if s.dot > 0:
                     s.dot_coef = coefs.get("per tick", 0.0)
                 if channel:
@@ -296,6 +304,7 @@ PETS = {
 # Health a demon gets per point of the warlock's Stamina (tables.PET_SCALING inheritance): 2 since client 70753 (Blizzard's 2 Nov notes:
 # "Pets now gain 2 Health per point of Master's Stamina (was 7.5 ...)"; the hunter's pet already had 2). 7.5 from 2026-10-08 (client 70291 UI).
 DEMON_HP_PER_STAMINA = 2.0
+VOIDWALKER_MELEE = 0.5   # the Voidwalker's melee share (EV-0076, the official simulator); 1.0 = the lab before 2026-11-19
 # Wrack's base per second grows this much a level (Blizzard's 2 Nov notes; 86 at 60): _scale_wrack
 WRACK_PER_LEVEL = 2.5
 # since the hotfix of 2026-11-10: 60 at 60, 25.2 + 1.75 a level from 40 (the official simulator's spell data, effect 1349556 of 1316697)
@@ -307,9 +316,22 @@ def pet_health(level):
     return 0.85 * level * level + 8 * level + 100
 
 
+# Torment's threat by rank (2026-11-19, the independent audit's H20): the client's spell data (effect type 63, threat), base points at the
+# rank's level and 3 more a level for five levels: 70 at 10, 115 at 20, 190 at 30, 320 at 40, 450 at 50, 600 at 60. The lab had 5.3 x level
+# (318 at 60, half the client's at 50-60). TORMENT_TABLE = False restores that line.
+TORMENT_TABLE = True
+TORMENT_RANKS = ((10, 70.0), (20, 115.0), (30, 190.0), (40, 320.0), (50, 450.0), (60, 600.0))
+
+
 def torment_threat(level):
-    """Torment threat per cast: Classic ranks ~45 at 10 to ~320 at 60 (5.3 per level)."""
-    return 5.3 * level
+    """Torment threat per cast at the warlock's level: the highest rank trained (TORMENT_RANKS), else 5.3 per level."""
+    if not TORMENT_TABLE:
+        return 5.3 * level
+    known = [(lv, base) for lv, base in TORMENT_RANKS if lv <= level]
+    if not known:
+        return 5.3 * level
+    lv, base = known[-1]
+    return base + 3.0 * (min(level, lv + 5) - lv)
 
 
 class WarlockModule(BaseModule):
@@ -393,8 +415,8 @@ class WarlockModule(BaseModule):
             self.armor_regen = float(m.group(1)) * 2 / 5 if m else 0.0   # per 2-second tick
         sp = g["spell_power"] + level * self.tv("Demonic Knowledge", 0) / 100
         bm = class_base_mana("warlock", level)
-        p = Player(level=level, hp_max=class_base_health("warlock", level) + 10 * stamina, hp=0.0,
-                   mana_max=(bm + 15 * intellect) * (1 + self.tv("Fel Vitality", 1) / 100), mana=0.0, base_mana=bm, spirit=spirit,
+        p = Player(level=level, hp_max=class_base_health("warlock", level) + _tables.health_from_stamina(stamina), hp=0.0,
+                   mana_max=(bm + _tables.mana_from_intellect(intellect)) * (1 + self.tv("Fel Vitality", 1) / 100), mana=0.0, base_mana=bm, spirit=spirit,
                    intellect=intellect, spell_power=sp, armor=armor, spell_crit=class_spell_crit("warlock", level, intellect), dodge=0.04, ranged_crit=0.03)
         p.hp, p.mana = p.hp_max, p.mana_max
         self._spirit = spirit
@@ -420,6 +442,8 @@ class WarlockModule(BaseModule):
                   mana_max=cfg["mana"] * level / 60.0 * (1 + self.tv("Fel Vitality", 0) / 100), mana_regen=(15 + stat["spirit"] / 5) / 2.0,
                   threat_mult=cfg["threat_mult"], caster=cfg["caster"])
         pet.dmg_mult = (1 + self.tv("Unholy Power", 0) / 100) * (1.03 if self.rank("Soul Link") else 1.0)
+        if self.pet_name == "Voidwalker":   # "its melee is halved" (the official simulator's pets.go, measured in game: its EV-0076; 2026-11-19, H20)
+            pet.dmg_mult *= VOIDWALKER_MELEE
         pet.spell_power = k * 0.10 * sp
         self._pet_armor = pet.armor
         return pet

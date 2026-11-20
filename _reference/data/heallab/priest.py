@@ -25,7 +25,7 @@ NUM = re.compile(r"(\d+(?:\.\d+)?)")
 _TREES = json.load(open(DATA / "forever-talents" / "priest.json", encoding="utf-8"))["trees"]
 TNUM = {t["name"]: [[float(x) for x in NUM.findall((r or "").replace(",", ""))] for r in t["ranks"]] for tr in _TREES for t in tr["talents"]}
 _TALENT_TEXT = {t["name"]: (t["ranks"][-1] or "") for tr in _TREES for t in tr["talents"]}
-_SPELLS = {sp["name"]: sp for tab in json.load(open(DATA / "forever-spells" / "priest.json", encoding="utf-8"))["tabs"] for sp in tab["spells"]}
+_SPELLS = {sp["name"]: sp for tab in E.trainer_ranks_only(json.load(open(DATA / "forever-spells" / "priest.json", encoding="utf-8")))["tabs"] for sp in tab["spells"]}
 
 
 def _spell_text(name):

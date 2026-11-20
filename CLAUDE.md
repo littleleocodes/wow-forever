@@ -559,6 +559,31 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
   horizon (`--lookahead`, 12 for mage, 16 otherwise, 20 warrior) with a rush of each deep talent and keeps the best
   sum of per-level scores (`order_label` in the report). Level-60 raid DPS stays with the scorer and the
   ElliotWood/Forever simulator.
+- **The fight lab against the official simulator** (2026-11-19/20, the independent audit's step 6; user: "Go with the audits
+  recommendations"). One pass, every change behind a knob whose "lab before" value reproduces the old lab bit for bit (checked on every
+  page pick), the audit session's rule: the official simulator wins where it cites in-game evidence; where it carries only Classic's or
+  a placeholder ours stays, noted. The knobs:
+  - `tables`: `TRAINER_RANKS` (no class-book ranks, raidsim/trainer-ranks.json; every module's SPELLBOOK and the healer lab's
+    `load_book`); `MISS_REFUND` 0.8 (an avoided ability flagged ATTR_EX_1_DISCOUNT_POWER_ON_MISS gives back 80% of its cost,
+    `miss_refund.json`, `engine.refund_on_miss`: druid, rogue and warrior attacks); `BASE_STAT_TABLE` (base health and attributes by
+    level from Classic's player_classlevelstats and player_levelstats, `class_level_stats.json`, scaled to the official level-60 values;
+    a human paladin's API values at 22 reproduce exactly, a gnome mage's health at 37 reads 817 for 827, the one known residual; the
+    old straight lines gave a level-20 warrior 585 base health for 199); `STAT_FIRST_20` (the first 20 Stamina and Intellect give 1
+    each: 180 health and 280 mana less at every level; the paladin's mana reproduces exactly); `RAGE_TAKEN_MODEL` "official" (2.5 x
+    (1 - A) x damage / c(attacker level), spells x2: 1.7x the old rage at 20, 3.3x at 60); `UNAVOIDABLE_RULE` (Overpower, Counterattack);
+    `PET_SWING_NORMALIZED` (the hunter pet's swing: H15 above, `CREATURE_DPS` from the client's ExpectedStat).
+  - modules: paladin `VINDICATION_PPM` 5 (EV-0062); warlock `TORMENT_TABLE` (the client's 70-600 threat), `VOIDWALKER_MELEE` 0.5
+    (EV-0076), `AGONY_TICK_2S` (12 ticks, spell power 1.60; the ramp not modelled); rogue `EVIS_AP_PER_POINT` 0.04 and
+    `GARROTE_AP_PER_TICK` 0.03 (EV-0086), `GARROTE_TICKS_CRIT`, `POISON_SPELL_CRIT`, `DEATH_MARK_STORE` 0.12; hunter `QUIVER_HASTE` 10%
+    (an assumption: the level-1 vendor quiver), `SERPENT_TICKS_CRIT`; priest `REGEN_RATES_ADD` (Spirit Tap and Meditation add); shaman
+    `LS_OFFICIAL` (the orbs can miss, cannot crit); mage `FOF_ONE_ROLL`, `ARCANE_ANY_ROTATION`, `IB_MULTIPLY`, `IB_REFRESH`,
+    `FB_IL_SHARED_CD`, `SHATTER_AM`, `WC_TEXT`.
+  - kept, noted: base crit (the official table is hand-kept: "No game file ships class base crit"; ours is the Forever client's) and
+    Spirit regeneration. Not in the pass, queued after the re-tunes: seal twisting (H3), Eclipse with Wrath in a raid (H5), single-target
+    Fire Nova (H4), stance and demon knobs (H7), Shieldsworn (H10), the healer lab's Oath of Light and Illumination (H11, H12).
+  - engine hooks: `periodic_crit` (a tick's crit chance and multiplier from the module), `tick_frozen` (Shatter on a channel's tick),
+    `ranged_speed_factor` (the quiver). Then every rules file re-tuned from scratch and every record from the 20-60 race on
+    (`deep-runs/fl_pass_1120.sh`).
 
 ## Duel lab (`_reference/data/duellab/`, PvP)
 

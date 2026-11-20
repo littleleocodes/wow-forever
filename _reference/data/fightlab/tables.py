@@ -104,6 +104,15 @@ MOBS_PER_PULL = 1        # mobs per pull (the AoE grinding profile runs with 3-5
 # 30 put a 1.2 s cat 42% ahead of a 2.0 s pet), so a faster pet does more damage. Same rules as the raid simulator's patches.
 PET_SCALING = 1.0        # sensitivity knob: scales every stat a pet inherits (0 = pets inherit nothing, the model before 2026-10-08)
 HUNTER_PET_SPEED = 1.2   # the hunter pet's swing time in seconds (the 1.2 s cat of the level-20 forum log; 2.0 = the model before 2026-10-08)
+# The hunter pet's swing (2026-11-19, the independent audit's H15, with the raid simulator): the official simulator's rule. The weapon is the
+# creature auto-attack dps of the pet's level less its own attack power over 14, a 2.0 s swing spanning 20% either side; the swing and its
+# attack-power part are taken over the swing as the Faster Attack passive speeds it (HUNTER_PET_SPEED), so speed alone adds nothing a
+# second, and Frenzy's 30% adds swing rate without shrinking the attack-power part. Upstream's evidence note EV-0071 (a level-30 Cat's
+# combat log, 152 swings) fits it and excludes the rule before (the whole 2.0 s swing every 1.2 s). The creature dps by level is the
+# client's ExpectedStat CreatureAutoAttackDps (build 70291; 60.45 at 60, as the simulator); that a pet takes its own level's value is the
+# assumption. False = the lab before (the fork's pet dps x level / 60, the whole swing at every speed).
+PET_SWING_NORMALIZED = True
+CREATURE_DPS = {"1": 0.7704, "2": 1.1575, "3": 1.6291, "4": 2.2508, "5": 3.0063, "6": 4.004, "7": 5.1836, "8": 6.0241, "9": 6.9057, "10": 7.6196, "11": 8.5995, "12": 9.8359, "13": 10.7127, "14": 11.8083, "15": 12.8548, "16": 13.5871, "17": 14.5639, "18": 15.253, "19": 16.1822, "20": 17.1029, "21": 17.7454, "22": 18.5986, "23": 19.2266, "24": 20.0524, "25": 20.8285, "26": 21.4852, "27": 22.348, "28": 22.9962, "29": 23.8218, "30": 24.6938, "31": 25.3156, "32": 26.0843, "33": 26.7392, "34": 27.5109, "35": 28.2556, "36": 28.9444, "37": 29.8524, "38": 30.626, "39": 31.5893, "40": 32.5856, "41": 34.1425, "42": 36.2859, "43": 38.7075, "44": 41.9137, "45": 43.9925, "46": 44.8954, "47": 46.0214, "48": 46.9292, "49": 48.0297, "50": 49.2017, "51": 50.16, "52": 51.3851, "53": 52.3691, "54": 53.5626, "55": 54.6829, "56": 55.7628, "57": 56.9397, "58": 58.0316, "59": 59.2152, "60": 60.4529, "61": 61.5303, "62": 62.7521, "63": 63.8614, "64": 65.0776, "65": 66.3362, "66": 67.4293, "67": 68.7217, "68": 69.8879, "69": 71.2224, "70": 72.475, "71": 73.6496, "72": 75.0054, "73": 76.2314, "74": 77.5622, "75": 78.8585, "76": 80.1566, "77": 81.5831, "78": 82.797, "79": 84.1871, "80": 85.6416, "81": 87.0529, "82": 88.4703, "83": 89.8326, "84": 91.2956, "85": 92.8708, "86": 94.246, "87": 95.8665, "88": 97.247, "89": 98.7708, "90": 100.3982, "91": 101.8361, "92": 103.5076, "93": 104.992, "94": 106.6808, "95": 108.3197, "96": 109.9636, "97": 111.6918, "98": 113.2956, "99": 114.9937, "100": 116.8731, "101": 77451.7109, "102": 77451.7109, "103": 77451.7109, "104": 77451.7109, "105": 77451.7109, "106": 77451.7109, "107": 77451.7109, "108": 77451.7109, "109": 77451.7109, "110": 77451.7109, "111": 77451.7109, "112": 77451.7109, "113": 77451.7109, "114": 77451.7109, "115": 77451.7109, "116": 77451.7109, "117": 77451.7109, "118": 77451.7109, "119": 77451.7109, "120": 77451.7109, "121": 77451.7109, "122": 77451.7109, "123": 77451.7109, "124": 77451.7109, "125": 77451.7109, "126": 77451.7109, "127": 77451.7109, "128": 77451.7109, "129": 77451.7109, "130": 77451.7109, "131": 77451.7109, "132": 77451.7109, "133": 77451.7109}
 RUNNER_HP = 0.20
 RUNNER_TIME = 5.0
 
@@ -199,6 +208,37 @@ def spell_gcd(cls, name):
 # raid simulator's spell store) holds the rows; engine.scale_rank applies the factor in each module's rank_at. False = the model before.
 RANK_LEVEL_SCALING = True
 TOOLTIP_LEVEL = 60
+
+# Trainer ranks only (2026-11-19, the independent audit's H18, with the raid rotations: raidsim/trainer_ranks.py): the class books'
+# ranks (Grimoire of Shadow Bolt X, Tome of Frostbolt XI, Manual of Eviscerate IX, Codex of Renew X ...; Ruins of Ahn'Qiraj in Classic)
+# are assumed not to be in Forever yet, so no module plays them at 60. One mapping, raidsim/trainer-ranks.json; False = the lab before.
+TRAINER_RANKS = True
+_BOOK_FILE = pathlib.Path(__file__).resolve().parents[1] / "raidsim" / "trainer-ranks.json"
+BOOK_RANK_IDS = {int(b) for b in json.load(open(_BOOK_FILE, encoding="utf-8"))["map"]} if _BOOK_FILE.exists() else set()
+
+
+def trainer_ranks_only(spellbook):
+    """A forever-spells spellbook object without the class books' ranks (TRAINER_RANKS); the object itself when off."""
+    if not TRAINER_RANKS or not BOOK_RANK_IDS:
+        return spellbook
+    out = dict(spellbook, tabs=[dict(tab, spells=[dict(sp, ranks=[r for r in sp["ranks"] if int(r.get("id") or 0) not in BOOK_RANK_IDS])
+                                                  for sp in tab["spells"]]) for tab in spellbook.get("tabs", [])])
+    for tab in out["tabs"]:
+        tab["spells"] = [sp for sp in tab["spells"] if sp["ranks"]]
+    return out
+
+
+# An avoided ability's refund (2026-11-19, the independent audit's D10): an ability the game files flag (ATTR_EX_1_DISCOUNT_POWER_ON_MISS:
+# druid, rogue and warrior attacks, miss_refund.json) gives back this share of what it cost when it misses or is dodged or parried (the
+# official simulator: 80%, sim/core/spelldata/attributes.go MissRefund). 0 = the lab before (rogues 2.7-4.3%, warriors 0.8-3.5% and the
+# cat 4.0% slower per kill, by the audit's measurement).
+MISS_REFUND = 0.8
+# An ability whose tooltip says it "cannot be blocked, dodged or parried" (Overpower, Counterattack) is neither (engine.attack_table;
+# 2026-11-19, the independent audit's H16). False = the lab before (both rolled).
+UNAVOIDABLE_RULE = True
+_REFUND_FILE = pathlib.Path(__file__).resolve().parent / "miss_refund.json"
+MISS_REFUND_RANKS = ({(n, int(r)) for c in json.load(open(_REFUND_FILE, encoding="utf-8"))["ranks"].values() for n, rs in c.items() for r in rs}
+                     if _REFUND_FILE.exists() else set())
 _SCALING_FILE = pathlib.Path(__file__).resolve().parent / "spell_scaling.json"
 _SCALING = json.load(open(_SCALING_FILE, encoding="utf-8"))["classes"] if _SCALING_FILE.exists() else {}
 
@@ -301,11 +341,29 @@ def rage_from_hit(amount, speed, hand, crit, level, two_hand=False):
 RAGE_PER_DAMAGE_TAKEN = 2.5   # Classic: rage from damage taken = 2.5 d / c(L) (RAGE_MODEL = "classic")
 
 
-def rage_from_damage_taken(pre_armor, level):
-    """Rage from a hit taken (pre-armor damage): Forever 10 x damage / the expected creature health at that level; Classic 2.5 d / c(L)."""
+# Rage from damage taken (2026-11-19, the independent audit's H16): the official simulator's rule from combat logs of warriors and bears
+# taking hits from rage-using mobs (sim/core/rage.go, its EV-0048, EV-0034, EV-0035, EV-0050): 2.5 x (1 - A) x the hit's damage before armor
+# / c(the attacker's level), A by the attacker's level (21.8% to 38, 23.9% at 42, 31% from 44), and a spell's damage gives twice that
+# (EV-0052). The fork's 10 x damage / the expected creature health ("forever", until then) gave 1.7x (level 20) to 2.9x (60) less rage.
+# The game gives about half from attackers that use mana or energy (EV-0048); the simulator and the lab give every attacker the full rule.
+RAGE_TAKEN_MODEL = "official"
+_RAGE_TAKEN_ARMOR = ((38, 0.218), (42, 0.239), (44, 0.31))
+
+
+def _rage_taken_armor(level):
+    return interp(_RAGE_TAKEN_ARMOR, level)
+
+
+def rage_from_damage_taken(pre_armor, level, spell=False):
+    """Rage from a hit taken (pre-armor damage) by an attacker of `level`: RAGE_TAKEN_MODEL "official" (above); "forever" 10 x damage / the
+    expected creature health at that level; RAGE_MODEL "classic" 2.5 d / c(L)."""
     if RAGE_MODEL == "classic":
         return pre_armor * RAGE_PER_DAMAGE_TAKEN / rage_conversion(level)
-    return pre_armor * RAGE_TAKEN_FACTOR / EXPECTED_CREATURE_HEALTH[max(1, min(63, int(level)))]
+    L = max(1, min(63, int(level)))
+    if RAGE_TAKEN_MODEL == "official":
+        c = 0.0091107836 * L * L + 3.225598133 * L + 4.2652911   # the simulator's rageConversion
+        return 2.5 * (1.0 - _rage_taken_armor(L)) * pre_armor / c * (2.0 if spell else 1.0)
+    return pre_armor * RAGE_TAKEN_FACTOR / EXPECTED_CREATURE_HEALTH[L]
 
 
 # ------------------------------------------------------------------ pets and threat
@@ -346,16 +404,57 @@ LEVEL1_HEALTH = 60.0
 LEVEL1_MANA = 50.0
 
 
+# Base attributes and health by level (2026-11-19, the independent audit's H17, with in-game evidence): Classic's per-level rows
+# (class_level_stats.json: player_levelstats made race-neutral with the official simulator's race offsets, player_classlevelstats' basehp),
+# scaled to meet the official level-60 values (CLASS_BASE_60; the two differ by 1.5% at most there). Two characters' Blizzard API values
+# confirm them (a human paladin at 22: health 742 = 222 + 20 + 10 x (70 - 20) exactly, base attributes 45/32/43/34/36 against the
+# table's 45/32/43/34/37). Until then the lab drew straight lines from level 1 to 60: base health 2-3x the game's at 10-30 (a level-20
+# warrior 585 for 199) and every attribute 3-6 points high at 20-40. False = those lines.
+BASE_STAT_TABLE = True
+_LEVEL_FILE = pathlib.Path(__file__).resolve().parent / "class_level_stats.json"
+_CLS_LEVEL = json.load(open(_LEVEL_FILE, encoding="utf-8"))["classes"] if _LEVEL_FILE.exists() else {}
+_STAT_KEYS = ("strength", "agility", "stamina", "intellect", "spirit")
+
+
+def _level_row(cls, level):
+    if not BASE_STAT_TABLE or cls not in _CLS_LEVEL:
+        return None
+    return _CLS_LEVEL[cls].get(str(max(1, min(60, int(round(level))))))
+
+
 def class_base_stats(cls, level):
-    """Base Strength/Agility/Stamina/Intellect/Spirit by level: level-60 client values interpolated from ~20 at level 1."""
+    """Base Strength/Agility/Stamina/Intellect/Spirit by level: Classic's per-level row scaled to the level-60 client values
+    (BASE_STAT_TABLE), else those values interpolated from ~20 at level 1."""
     b = CLASS_BASE_60[cls]
+    row = _level_row(cls, level)
+    if row is not None:
+        top = _CLS_LEVEL[cls]["60"]
+        return {k: row[k] * (b[k] / top[k] if top[k] else 1.0) for k in _STAT_KEYS}
     f = (level - 1) / 59.0
-    return {k: LEVEL1_STAT + (b[k] - LEVEL1_STAT) * f for k in ("strength", "agility", "stamina", "intellect", "spirit")}
+    return {k: LEVEL1_STAT + (b[k] - LEVEL1_STAT) * f for k in _STAT_KEYS}
 
 
 def class_base_health(cls, level):
-    """Health before Stamina (10 health per Stamina on top): the client's level-60 value interpolated from 60 at level 1."""
+    """Health before Stamina (health_from_stamina on top): Classic's basehp at the level scaled to the level-60 client value
+    (BASE_STAT_TABLE), else that value interpolated from 60 at level 1."""
+    row = _level_row(cls, level)
+    if row is not None:
+        return row["health"] * CLASS_BASE_60[cls]["health"] / _CLS_LEVEL[cls]["60"]["health"]
     return LEVEL1_HEALTH + (CLASS_BASE_60[cls]["health"] - LEVEL1_HEALTH) * (level - 1) / 59.0
+
+
+# The first 20 points of Stamina give 1 health each and the first 20 of Intellect 1 mana each, every point after that 10 and 15 (the
+# official simulator's health.go and the game: a human paladin at 22 has 689 mana = 459 + 20 + 15 x (34 - 20) exactly; 2026-11-19, the
+# independent audit's H17). The lab had 10 and 15 for every point: 180 health and 280 mana more at every level. False = that.
+STAT_FIRST_20 = True
+
+
+def health_from_stamina(stamina):
+    return min(20.0, stamina) + 10.0 * max(0.0, stamina - 20.0) if STAT_FIRST_20 else 10.0 * stamina
+
+
+def mana_from_intellect(intellect):
+    return min(20.0, intellect) + 15.0 * max(0.0, intellect - 20.0) if STAT_FIRST_20 else 15.0 * intellect
 
 
 # Base mana by class and level from the client's PlayerExpectedStat BaseMana (build 70291; audit of 2026-10-18 row 70: the line from 50 at
@@ -580,8 +679,8 @@ def base_mana(level):
 
 
 def base_health(level):
-    """Health before Stamina: 1,370 at 60 for mages in the Forever client (wowsims Forever base_stats.go); 10 health per Stamina on top."""
-    return 60 + (1370 - 60) * (level - 1) / 59.0
+    """Health before Stamina for mages: class_base_health (1,370 at 60 in the Forever client, wowsims Forever base_stats.go)."""
+    return class_base_health("mage", level)
 
 
 def mana_regen_tick(spirit):

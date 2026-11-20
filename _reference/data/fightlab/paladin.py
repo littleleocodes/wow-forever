@@ -29,6 +29,9 @@ from tables import (GCD, MELEE_MISS, MELEE_RANGE, TOOLTIP_LEVEL, WEAPON_SPEED, c
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 SPELLBOOK = json.load(open(ROOT / "_reference/data/forever-spells/paladin.json", encoding="utf-8"))
+import tables as _tables  # noqa: E402
+SPELLBOOK = _tables.trainer_ranks_only(SPELLBOOK)   # no class-book ranks (2026-11-19, the audit's H18)
+VINDICATION_PPM = 5.0   # Vindication's procs a minute on the weapon's speed (the official simulator, EV-0062); 0 = every landed attack, the lab before 2026-11-19
 TREE = json.load(open(ROOT / "_reference/data/forever-talents/paladin.json", encoding="utf-8"))
 
 NUM = re.compile(r"(\d+(?:\.\d+)?)")
@@ -455,7 +458,7 @@ class PaladinModule(BaseModule):
         bm = class_base_mana("paladin", level)
         might = self.book.get("Blessing of Might")
         self._cotl = intellect * self.tv("Champion of the Light", 0) / 100   # spell damage only (heal_multiplier takes it back out of heals)
-        p = Player(level=level, hp_max=class_base_health("paladin", level) + 10 * stamina, hp=0.0, mana_max=bm + 15 * intellect, mana=0.0, base_mana=bm,
+        p = Player(level=level, hp_max=class_base_health("paladin", level) + _tables.health_from_stamina(stamina), hp=0.0, mana_max=bm + _tables.mana_from_intellect(intellect), mana=0.0, base_mana=bm,
                    spirit=spirit, intellect=intellect, spell_power=g["spell_power"] + self._cotl, armor=armor,
                    spell_crit=class_spell_crit("paladin", level, intellect) + self.tv("Conviction", 0) / 100, dodge=class_dodge("paladin", level, agility), ranged_crit=0.0)
         self._sp_total = p.spell_power
@@ -547,8 +550,17 @@ class PaladinModule(BaseModule):
         return 1 + extra / max(1e-9, weapon)
 
     def _on_landed_melee(self, fight, spell):
-        """Vindication (client and fork: every damaging melee attack that lands procs it, white or special; 30 s)."""
+        """Vindication: a chance on each damaging melee attack that lands, white or special, of 5 procs a minute on the weapon's speed
+        (the official simulator's VINDICATION_PPM, measured in game: its EV-0062; the client's ProcChance column reads 100), and the
+        debuff, a magic spell, can miss (spell hit vs the mob); 30 s. Until 2026-11-19 (the independent audit's H9) every landed attack
+        procced it: about 95% uptime for about 50%."""
         if self.rank("Vindication") and spell.kind == "melee":
+            p, m = fight.p, fight.m
+            speed = p.mh.speed if p.mh is not None else WEAPON_SPEED
+            if VINDICATION_PPM and fight.rng.random() >= VINDICATION_PPM * speed / 60.0:
+                return
+            if VINDICATION_PPM and m is not None and fight.rng.random() < _tables.spell_miss(m.level - p.level):
+                return
             fight.p.buffs["Vindication"] = {"until": fight.t + 30.0}
             red = self._vind_reduction()
             m = fight.m
@@ -944,7 +956,7 @@ class PaladinModule(BaseModule):
         bm = class_base_mana("paladin", level)
         might = self.book.get("Blessing of Might") if self.blessing == "might" else None
         self._cotl = intellect * self.tv("Champion of the Light", 0) / 100   # spell damage only (heal_multiplier takes it back out of heals)
-        p = Player(level=level, hp_max=class_base_health("paladin", level) + 10 * stamina, hp=0.0, mana_max=bm + 15 * intellect, mana=0.0, base_mana=bm,
+        p = Player(level=level, hp_max=class_base_health("paladin", level) + _tables.health_from_stamina(stamina), hp=0.0, mana_max=bm + _tables.mana_from_intellect(intellect), mana=0.0, base_mana=bm,
                    spirit=spirit, intellect=intellect, spell_power=g["spell_power"] + self._cotl, armor=armor,
                    spell_crit=class_spell_crit("paladin", level, intellect) + self.tv("Conviction", 0) / 100, dodge=class_dodge("paladin", level, agility), ranged_crit=0.0)
         self._sp_total = p.spell_power

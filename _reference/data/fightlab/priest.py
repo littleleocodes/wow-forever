@@ -29,6 +29,9 @@ from tables import (GCD, MELEE_RANGE, WAND_SPEED, class_base_health, class_base_
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 SPELLBOOK = json.load(open(ROOT / "_reference/data/forever-spells/priest.json", encoding="utf-8"))
+import tables as _tables  # noqa: E402
+SPELLBOOK = _tables.trainer_ranks_only(SPELLBOOK)   # no class-book ranks (2026-11-19, the audit's H18)
+REGEN_RATES_ADD = True   # Spirit Tap and Meditation add their regeneration while casting (H22); False = the larger, the lab before
 TREE = json.load(open(ROOT / "_reference/data/forever-talents/priest.json", encoding="utf-8"))
 # Mental Agility's "instant cast spells" (tooltip) as the client's class mask 14520 reads in the community simulator
 # (sim/priest/talents_discipline.go at db4d14a): channels and Shadow Word: Death pay full price; Devouring Plague does not.
@@ -347,7 +350,7 @@ class PriestModule(BaseModule):
         self.inner_fire_charges = 20 + int(self.tv("Improved Inner Fire", 1)) if inner else 0
         sp = g["spell_power"] + spirit * self.tv("Spiritual Guidance", 1) / 100
         bm = class_base_mana("priest", level)
-        p = Player(level=level, hp_max=class_base_health("priest", level) + 10 * stamina, hp=0.0, mana_max=bm + 15 * intellect, mana=0.0,
+        p = Player(level=level, hp_max=class_base_health("priest", level) + _tables.health_from_stamina(stamina), hp=0.0, mana_max=bm + _tables.mana_from_intellect(intellect), mana=0.0,
                    base_mana=bm, spirit=spirit, intellect=intellect, spell_power=sp, armor=armor,
                    spell_crit=class_spell_crit("priest", level, intellect), dodge=0.04, ranged_crit=0.03)
         p.hp, p.mana = p.hp_max, p.mana_max
@@ -548,7 +551,9 @@ class PriestModule(BaseModule):
             spirit *= 1 + self.tv("Dark Inspiration", 0) / 100
         if st:
             spirit *= 2.0
-            p.regen_while_casting = max(self.base_regen_while_casting, 0.5)
+            # Spirit Tap's 50% adds to Meditation's, to 100% at most (the official simulator's SpiritRegenRateCasting; the lab took
+            # the larger until 2026-11-19: the independent audit's H22)
+            p.regen_while_casting = min(1.0, self.base_regen_while_casting + 0.5) if REGEN_RATES_ADD else max(self.base_regen_while_casting, 0.5)
         elif p.regen_while_casting != self.base_regen_while_casting:
             p.regen_while_casting = self.base_regen_while_casting
         return class_mana_regen_tick("priest", spirit)

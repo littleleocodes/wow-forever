@@ -36,6 +36,8 @@ from tables import (MOB_SWING, GCD, MELEE_RANGE, class_attack_power, class_base_
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 SPELLBOOK = json.load(open(ROOT / "_reference/data/forever-spells/druid.json", encoding="utf-8"))
+import tables as _tables  # noqa: E402
+SPELLBOOK = _tables.trainer_ranks_only(SPELLBOOK)   # no class-book ranks (2026-11-19, the audit's H18)
 TREE = json.load(open(ROOT / "_reference/data/forever-talents/druid.json", encoding="utf-8"))
 
 NUM = re.compile(r"(\d+(?:\.\d+)?)")
@@ -495,7 +497,7 @@ class DruidModule(BaseModule):
         bm = class_base_mana("druid", level)
         cat = self.book.get("Cat Form")
         form_hp, form_ap = form_amounts(form, level)
-        p = Player(level=level, hp_max=class_base_health("druid", level) + 10 * stamina + form_hp, hp=0.0, mana_max=bm + 15 * intellect, mana=0.0, base_mana=bm,
+        p = Player(level=level, hp_max=class_base_health("druid", level) + _tables.health_from_stamina(stamina) + form_hp, hp=0.0, mana_max=bm + _tables.mana_from_intellect(intellect), mana=0.0, base_mana=bm,
                    spirit=spirit, intellect=intellect, spell_power=g["spell_power"], armor=armor, spell_crit=class_spell_crit("druid", level, intellect),
                    dodge=class_dodge("druid", level, agility) + self.tv("Feral Swiftness", 1) / 100 + self.tv("Natural Reaction", 0) / 100, ranged_crit=0.0)
         p.strength, p.agility, p.stamina = strength, agility, stamina

@@ -58,6 +58,15 @@ from tables import (GCD, MELEE_RANGE, WEAPON_SPEED, armor_mitigation, bandage_he
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 SPELLBOOK = json.load(open(ROOT / "_reference/data/forever-spells/rogue.json", encoding="utf-8"))
+import tables as _tables  # noqa: E402
+SPELLBOOK = _tables.trainer_ranks_only(SPELLBOOK)   # no class-book ranks (2026-11-19, the audit's H18)
+# 2026-11-19, the independent audit's H13, from the official simulator's in-game tests (its EV-0086): Eviscerate takes 0.04 x attack power
+# a combo point (0.03 before), and Garrote 0.03 x attack power a tick (none before), its ticks critting as melee hits (they could not).
+EVIS_AP_PER_POINT = 0.04
+GARROTE_AP_PER_TICK = 0.03
+GARROTE_TICKS_CRIT = True
+# poisons are spells: they crit at spell crit, about nil for a rogue (the simulator; the lab had melee crit, x2 on Deadly Poison: H13)
+POISON_SPELL_CRIT = True
 TREE = json.load(open(ROOT / "_reference/data/forever-talents/rogue.json", encoding="utf-8"))
 
 NUM = re.compile(r"(\d+(?:\.\d+)?)")
@@ -194,6 +203,8 @@ def load_spellbook():
                         s.kind = "melee"
                 if name == "Kick":
                     s.kind = "melee"
+                if name == "Garrote" and s.dot > 0:   # 0.03 x attack power a tick (EV-0086; 2026-11-19, H13)
+                    s.dot_coef = GARROTE_AP_PER_TICK
                 book.setdefault(name, []).append(s)
     for name in book:
         book[name].sort(key=lambda x: (x.level, x.rank))
@@ -343,7 +354,7 @@ class RogueModule(BaseModule):
     # Death Mark's storage per combo point: an ASSUMPTION (the 70753 tooltip and Blizzard's notes give no number; Wowhead lists a 6 s periodic
     # aura of value 1 and a server-side script): 10% of the damage dealt to the marked mob per point (50% at 5 points), Garrote and Rupture at
     # twice the rate (100% at 5), times Coup de Grace's storage rate and damage bonus. A sensitivity, not a measurement.
-    DEATH_MARK_STORE = 0.10
+    DEATH_MARK_STORE = 0.12   # 12% a point: the spell's $ratio (the official simulator's death_mark.go; 0.10, an assumption, until 2026-11-19: H13)
     DEATH_MARK_SECONDS = 6.0
     # global cooldown of the 70753 abilities the client table (tables.spell_gcd, from the raid simulator's store) does not list yet: 1.0 s like
     # every other rogue ability (an assumption: the tooltip does not say whether Shank is off the global cooldown)
@@ -465,7 +476,7 @@ class RogueModule(BaseModule):
         agility = base["agility"] + g["agility"]
         stamina = base["stamina"] + g["stamina"]
         spirit = base["spirit"] + g["spirit"]
-        p = Player(level=level, hp_max=class_base_health("rogue", level) + 10 * stamina, hp=0.0, mana_max=0.0, mana=0.0, base_mana=0.0,
+        p = Player(level=level, hp_max=class_base_health("rogue", level) + _tables.health_from_stamina(stamina), hp=0.0, mana_max=0.0, mana=0.0, base_mana=0.0,
                    spirit=spirit, intellect=base["intellect"], spell_power=0.0, armor=g["armor"], spell_crit=0.0,
                    dodge=class_dodge("rogue", level, agility) + self.tv("Lightning Reflexes", 0) / 100, ranged_crit=0.0)
         p.strength, p.agility, p.stamina = strength, agility, stamina
@@ -524,6 +535,12 @@ class RogueModule(BaseModule):
             c += self.tv("Hack and Slash", 1) / 100                                       # (not the poisons, not a bleed's ticks)
         return c
 
+    def periodic_crit(self, fight, spell):
+        """Garrote's ticks crit as melee hits, at x2 (GARROTE_TICKS_CRIT; the official simulator's TickOutcome)."""
+        if spell.name == "Garrote" and GARROTE_TICKS_CRIT:
+            return fight.p.melee_crit + self.crit_bonus(spell, False), 2.0 + self.crit_damage_bonus(spell)
+        return None
+
     def crit_damage_bonus(self, spell):
         if spell.name in LETHALITY_SPELLS:   # "Grants 10% increased Critical Strike damage" a rank: +0.10 on the x2.0 melee crit, as before 70753
             return self.tv("Lethality", 0) / 100
@@ -541,7 +558,7 @@ class RogueModule(BaseModule):
             cp = max(1, f.last_combo) if f else 5
             lo1, hi1 = spell.evis1
             lo5, hi5 = spell.evis
-            avg = ((lo1 + hi1) / 2 + ((lo5 + hi5) / 2 - (lo1 + hi1) / 2) * (cp - 1) / 4) + 0.03 * cp * (f.p.attack_power if f else 0.0)
+            avg = ((lo1 + hi1) / 2 + ((lo5 + hi5) / 2 - (lo1 + hi1) / 2) * (cp - 1) / 4) + EVIS_AP_PER_POINT * cp * (f.p.attack_power if f else 0.0)
             m *= avg / ((lo5 + hi5) / 2)
         if spell.name in OPPORTUNITY_SPELLS:   # every playstyle: the Combat lists open with Garrote too (its bleed goes through here)
             m *= 1 + self.tv("Opportunity", 0) / 100
@@ -696,7 +713,8 @@ class RogueModule(BaseModule):
             stacks = min(5, (b["stacks"] if b and b["until"] > t else 0) + 1)
             m.debuffs["Deadly Poison"] = {"until": t + dp.dot_dur, "stacks": stacks}
             per_stack = dp.dot + POISON_AP["Deadly Poison"] * p.attack_power   # Blizzard 2026-11-02: 0.009 x attack power a stack
-            fight.refresh_dot("Deadly Poison", per_stack * stacks * self.damage_multiplier(dp, False), dp.dot_ticks, dp.dot_dur / dp.dot_ticks, p.melee_crit, 2.0)
+            fight.refresh_dot("Deadly Poison", per_stack * stacks * self.damage_multiplier(dp, False), dp.dot_ticks, dp.dot_dur / dp.dot_ticks,
+                              *((p.spell_crit, 1.5) if POISON_SPELL_CRIT else (p.melee_crit, 2.0)))
         # extra attacks (Hack and Slash, Axe/Sword: "Your successful melee attacks have a 1% chance to trigger an extra attack": white and
         # yellow hits; daggers get crit instead, crit_bonus), combo points from crits (Seal Fate)
         if (self.weapon_kind == "1h" and spell.kind == "melee" and spell.name != "Hack and Slash" and self.rank("Hack and Slash")
@@ -713,7 +731,7 @@ class RogueModule(BaseModule):
         p, m = fight.p, fight.m
         # Blizzard 2026-11-02: 0.01 x attack power a hit
         amount = (fight.rng.uniform(ip.dmg_min, ip.dmg_max) + POISON_AP["Instant Poison"] * p.attack_power) * self.damage_multiplier(ip, False)
-        crit = fight.rng.random() < p.melee_crit
+        crit = fight.rng.random() < (p.spell_crit if POISON_SPELL_CRIT else p.melee_crit)
         if crit:
             amount *= 1.5
         fight.deal(Spell("Instant Poison", "nature"), amount, crit)
@@ -826,7 +844,7 @@ class RogueModule(BaseModule):
         """An Eviscerate's expected damage at `cp` points after an assumed 35% armor (the kill-shot check)."""
         lo1, hi1 = evis.evis1
         lo5, hi5 = evis.evis
-        return (((lo1 + hi1) / 2 + ((lo5 + hi5) / 2 - (lo1 + hi1) / 2) * (cp - 1) / 4 + 0.03 * cp * p.attack_power)
+        return (((lo1 + hi1) / 2 + ((lo5 + hi5) / 2 - (lo1 + hi1) / 2) * (cp - 1) / 4 + EVIS_AP_PER_POINT * cp * p.attack_power)
                 * (1 + self.tv("Coup de Grace", 0) / 100) * (1 + self.tv("Aggression", 0) / 100) * (1 - 0.35))
 
     def shank_wanted(self, fight, can):

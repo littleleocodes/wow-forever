@@ -14,6 +14,10 @@ _FL = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(_FL)
 class_base_mana, class_base_stats, class_mana_regen_tick, class_spell_crit = _FL.class_base_mana, _FL.class_base_stats, _FL.class_mana_regen_tick, _FL.class_spell_crit
 
+# Trainer ranks only (2026-11-19, the independent audit's H18 and H22, with the raid rotations and the fight lab): the class books' heal
+# ranks (Tablet of Healing Wave X, Codex of Greater Heal V, Codex of Renew X, Codex of Prayer of Healing V, Libram: Holy Light IX, Book
+# of Healing Touch XI, Book of Rejuvenation XI) are assumed not to be in Forever yet (raidsim/trainer-ranks.json). False = the lab before.
+TRAINER_RANKS = True
 DURATION = 300.0          # seconds: a five-minute boss fight
 DT = 0.1                  # simulation step
 LEVEL = 60
