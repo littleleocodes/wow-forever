@@ -88,24 +88,29 @@
  "raid": {
   "class": "priest",
   "spec": "shadow-dps",
-  "date": "2026-11-02",
-  "commit": "bac92dbd5",
+  "date": "2026-11-20",
+  "commit": "2e6e77d84",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/priest/dps/apls/shadow.apl.json",
   "start": "ui\\specs\\priest\\dps\\apls\\shadow.apl.json",
   "builds": [
    {
-    "label": "opt-shadow-dps-raid-dps",
-    "talents": "52500500003--50052101231302051"
+    "label": "shadow-ml-raid",
+    "talents": "005305201--50552001201312251"
    },
    {
     "label": "sim preset: Standard",
     "talents": "00530300103-3-50042201251302051"
+   },
+   {
+    "label": "opt-shadow-dps-raid-dps",
+    "talents": "52500500003--50052101231302051",
+    "protect_only": true
    }
   ],
   "tuned_on": [
-   "opt-shadow-dps-raid-dps",
+   "shadow-ml-raid",
    "sim preset: Standard"
   ],
   "iterations": 3000,
@@ -146,19 +151,28 @@
   ],
   "final": {
    "raid": {
-    "opt-shadow-dps-raid-dps": {
-     "before": 781.9702939036912,
-     "after": 783.2281632800276,
-     "base": 781.9702939036912,
+    "shadow-ml-raid": {
+     "before": 771.7848296809819,
+     "after": 773.0013201366801,
+     "base": 771.7848296809819,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Standard": {
-     "before": 779.9341064225488,
-     "after": 782.0914246449473,
-     "base": 779.9341064225488,
+     "before": 766.5958889417615,
+     "after": 768.3160552520594,
+     "base": 766.5958889417615,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "opt-shadow-dps-raid-dps": {
+     "before": 768.0215905954122,
+     "after": 769.5593866048432,
+     "base": 768.0215905954122,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -176,13 +190,13 @@
     "Shadow Word: Pain"
    ],
    "rejected": {
-    "structure": 42,
+    "structure": 29,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-27",
-  "passes": 8
+  "passes": 9
  }
 }

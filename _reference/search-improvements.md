@@ -161,6 +161,15 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 ## Open ideas, ranked by what they could still find
 
+0m. **The order polish can accept a dead decade (2026-11-20, the independent audit's note on the mage redo)**. The Frostfire pick
+    (1/27/23) has a trough at 40: 42.8 s per kill against 32.8 at 30 and 35.6 at 50 (fights of 23 s for 18 at 30; 13 deaths in 600
+    fights), and its order spends 31-40 on Accelerant, Ignite and Wand Specialization, taking Pyroblast, Impact, Heating Up and Master
+    of Elements only after 40. Fire has the same shape at 30-40 (40-41 s; its 21-40 points go to Frost talents). The order polish
+    (fl_levels.py) looks every ten levels (the race's levels) and scores the level-weighted time, so a decade between two race levels
+    can be played badly at no cost to the score. Check: each mage order at 35 and 45 as well, or an order move that brings the Fire
+    talents forward, raced at 35, 40 and 45; if the trough is the polish's, race the orders at every fifth level (or score the
+    intermediate levels in the order polish).
+
 0l. **One eat line for every level hides a loss at 20-23 (2026-11-17, the eat-and-drink re-tune)**.
     The Enhancement rules took eating below 90% of your health (80% before): 0.95% faster on the level-weighted score. A direct check
     on the page pick (scratchpad `shaman_eat_levels.py`, 3,000 fights, seeds 1-2, everything else as the rules file has it) had the

@@ -28,14 +28,14 @@
          "lhs": {
           "dotRemainingTime": {
            "spellId": {
-            "spellId": 11672
+            "spellId": 11668
            }
           }
          },
          "rhs": {
           "spellCastTime": {
            "spellId": {
-            "spellId": 11672
+            "spellId": 11668
            }
           }
          }
@@ -49,55 +49,7 @@
          },
          "rhs": {
           "const": {
-           "val": "20s"
-          }
-         }
-        }
-       }
-      ]
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 11672
-     }
-    }
-   },
-   "notes": "apl_opt 2026-10-28: changed or added by the rotation search (see incinerate-raid-rotation-search.json)"
-  },
-  {
-   "action": {
-    "condition": {
-     "and": {
-      "vals": [
-       {
-        "cmp": {
-         "op": "OpLe",
-         "lhs": {
-          "dotRemainingTime": {
-           "spellId": {
-            "spellId": 11668
-           }
-          }
-         },
-         "rhs": {
-          "spellCastTime": {
-           "spellId": {
-            "spellId": 11668
-           }
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "currentManaPercent": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "60%"
+           "val": "10s"
           }
          }
         }
@@ -111,30 +63,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-12: changed or added by the rotation search (see incinerate-raid-rotation-search.json)"
-  },
-  {
-   "action": {
-    "condition": {
-     "not": {
-      "val": {
-       "auraIsActive": {
-        "sourceUnit": {
-         "type": "CurrentTarget"
-        },
-        "auraId": {
-         "spellId": 1311680
-        }
-       }
-      }
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 1311680
-     }
-    }
-   }
+   "notes": "apl_opt 2026-11-20: changed or added by the rotation search (see incinerate-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -179,30 +108,59 @@
   },
   {
    "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "15s"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "60%"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "itemId": 12662
+     }
+    }
+   }
+  },
+  {
+   "action": {
     "autocastOtherCooldowns": {}
    }
   },
   {
    "action": {
-    "condition": {
-     "cmp": {
-      "op": "OpLe",
-      "lhs": {
-       "remainingTime": {}
-      },
-      "rhs": {
-       "const": {
-        "val": "1.5"
-       }
-      }
-     }
-    },
     "castSpell": {
      "spellId": {
       "spellId": 18871
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-11-20: changed or added by the rotation search (see incinerate-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -257,35 +215,16 @@
   {
    "action": {
     "condition": {
-     "and": {
-      "vals": [
-       {
-        "cmp": {
-         "op": "OpLt",
-         "lhs": {
-          "currentManaPercent": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "10%"
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "remainingTime": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "6s"
-          }
-         }
-        }
+     "cmp": {
+      "op": "OpLt",
+      "lhs": {
+       "currentManaPercent": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "5%"
        }
-      ]
+      }
      }
     },
     "castSpell": {
@@ -294,55 +233,58 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-12: changed or added by the rotation search (see incinerate-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-11-20: changed or added by the rotation search (see incinerate-raid-rotation-search.json)"
   },
   {
    "action": {
     "condition": {
-     "and": {
-      "vals": [
-       {
-        "cmp": {
-         "op": "OpLe",
-         "lhs": {
-          "dotRemainingTime": {
-           "spellId": {
-            "spellId": 11668
-           }
-          }
-         },
-         "rhs": {
-          "spellCastTime": {
-           "spellId": {
-            "spellId": 11668
-           }
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "remainingTime": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "10s"
-          }
-         }
+     "not": {
+      "val": {
+       "auraIsActive": {
+        "sourceUnit": {
+         "type": "CurrentTarget"
+        },
+        "auraId": {
+         "spellId": 1311680
         }
        }
-      ]
+      }
      }
     },
     "castSpell": {
      "spellId": {
-      "spellId": 11668
+      "spellId": 1311680
      }
     }
-   },
-   "notes": "apl_opt 2026-11-07: changed or added by the rotation search (see incinerate-raid-rotation-search.json)"
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpLe",
+      "lhs": {
+       "dotRemainingTime": {
+        "spellId": {
+         "spellId": 11672
+        }
+       }
+      },
+      "rhs": {
+       "spellCastTime": {
+        "spellId": {
+         "spellId": 11672
+        }
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 11672
+     }
+    }
+   }
   },
   {
    "action": {
@@ -364,24 +306,10 @@
    "action": {
     "castSpell": {
      "spellId": {
-      "spellId": 18871
-     }
-    },
-    "condition": {
-     "cmp": {
-      "op": "OpGe",
-      "lhs": {
-       "remainingTime": {}
-      },
-      "rhs": {
-       "const": {
-        "val": "10s"
-       }
-      }
+      "spellId": 1293813
      }
     }
-   },
-   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see incinerate-raid-rotation-search.json)"
+   }
   },
   {
    "action": {
@@ -391,16 +319,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see incinerate-raid-rotation-search.json)"
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 1293813
-     }
-    }
-   }
+   "notes": "apl_opt 2026-11-20: changed or added by the rotation search (see incinerate-raid-rotation-search.json)"
   }
  ]
 }

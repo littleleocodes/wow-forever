@@ -80,7 +80,7 @@
  "raid": {
   "class": "warlock",
   "spec": "incinerate-raid",
-  "date": "2026-11-17",
+  "date": "2026-11-20",
   "commit": "2e6e77d84",
   "setting": "raid",
   "tank": false,
@@ -203,36 +203,76 @@
     "gain_seed2": 0.002078093192085406,
     "candidates": 523,
     "pass": 6
+   },
+   {
+    "round": 13,
+    "change": "insert at the end: cast Shadow Bolt",
+    "gain_seed1": 0.44148055973753597,
+    "gain_seed2": 0.4405586000506516,
+    "candidates": 455,
+    "pass": 9
+   },
+   {
+    "round": 14,
+    "change": "drop the condition: if time left in the fight \u2264 1.5: cast Shadowburn",
+    "gain_seed1": 0.04433851189676985,
+    "gain_seed2": 0.04536769707134303,
+    "candidates": 474,
+    "pass": 9
+   },
+   {
+    "round": 15,
+    "change": "threshold 20s -> 10s: if time left on Immolate \u2264 cast time of Immolate and time left in the fight \u2265 20s: cast Immolate (rank 7)",
+    "gain_seed1": 0.003999374394394906,
+    "gain_seed2": 0.0037861720910175034,
+    "candidates": 469,
+    "pass": 9
+   },
+   {
+    "round": 16,
+    "change": "move to the top: if time left on Immolate \u2264 cast time of Immolate and time left in the fight \u2265 10s: cast Immolate (rank 7)",
+    "gain_seed1": 0.003946133605823299,
+    "gain_seed2": 0.0029456792047739544,
+    "candidates": 469,
+    "pass": 9
+   },
+   {
+    "round": 17,
+    "change": "threshold 10% -> 5%: if mana % < 10%: cast Life Tap",
+    "gain_seed1": 0.0023189433566335182,
+    "gain_seed2": 0.0028611148705204315,
+    "candidates": 469,
+    "pass": 9
    }
   ],
   "final": {
    "raid": {
     "destruction-incinerate-open-raid": {
-     "before": 424.59041632896464,
-     "after": 802.654535656706,
-     "base": 424.59041632896464,
+     "before": 405.5072140426264,
+     "after": 770.0549138231469,
+     "base": 405.5072140426264,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.16864699998224617,
-     "oom_after": 0.16864699998224617
+     "oom_before": 0,
+     "oom_after": 0.48440300000353154
     },
     "sim preset: Destro": {
-     "before": 729.0046877178023,
-     "after": 720.6266497788658,
-     "base": 729.0046877178023,
+     "before": 706.249419064658,
+     "after": 777.7521925844152,
+     "base": 706.249419064658,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.45190449996511944,
-     "oom_after": 0.45190449996511944
+     "oom_before": 0.020520450000000044,
+     "oom_after": 1.7065703499704872
     },
     "destruction-incinerate-raid": {
-     "before": 723.1003159035424,
-     "after": 761.9796316987298,
-     "base": 723.1003159035424,
+     "before": 701.2876410161986,
+     "after": 778.4694536091106,
+     "base": 701.2876410161986,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.22080429996914253,
-     "oom_after": 0.22080429996914253
+     "oom_before": 0.007649200000000015,
+     "oom_after": 1.5549072999556577
     }
    }
   },
@@ -244,11 +284,11 @@
    "rejected": {
     "structure": 0,
     "casts": 0,
-    "core_share": 0
+    "core_share": 8
    },
    "on": true
   },
   "first_date": "2026-10-09",
-  "passes": 8
+  "passes": 9
  }
 }

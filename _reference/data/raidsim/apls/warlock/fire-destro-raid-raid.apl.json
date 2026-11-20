@@ -19,6 +19,57 @@
  "priorityList": [
   {
    "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 18932
+     }
+    }
+   },
+   "notes": "apl_opt 2026-11-20: changed or added by the rotation search (see fire-destro-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "15s"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLe",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "75%"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "otherId": "OtherActionPotion"
+     }
+    }
+   }
+  },
+  {
+   "action": {
     "condition": {
      "and": {
       "vals": [
@@ -95,7 +146,7 @@
       },
       "rhs": {
        "const": {
-        "val": "5.25"
+        "val": "3.5"
        }
       }
      }
@@ -105,18 +156,7 @@
       "spellId": 17923
      }
     }
-   },
-   "notes": "apl_opt 2026-10-11: changed or added by the rotation search (see fire-destro-raid-rotation-search.json)"
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 18932
-     }
-    }
-   },
-   "notes": "apl_opt 2026-10-01: changed or added by the rotation search (see fire-destro-raid-rotation-search.json)"
+   }
   },
   {
    "action": {
@@ -128,7 +168,7 @@
       },
       "rhs": {
        "const": {
-        "val": "5%"
+        "val": "10%"
        }
       }
      }
@@ -136,35 +176,6 @@
     "castSpell": {
      "spellId": {
       "spellId": 11689
-     }
-    }
-   },
-   "notes": "apl_opt 2026-09-27: changed or added by the rotation search (see fire-destro-raid-rotation-search.json)"
-  },
-  {
-   "action": {
-    "condition": {
-     "cmp": {
-      "op": "OpLe",
-      "lhs": {
-       "dotRemainingTime": {
-        "spellId": {
-         "spellId": 11713
-        }
-       }
-      },
-      "rhs": {
-       "spellCastTime": {
-        "spellId": {
-         "spellId": 11713
-        }
-       }
-      }
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 11713
      }
     }
    }
@@ -176,32 +187,26 @@
       "vals": [
        {
         "cmp": {
-         "op": "OpLe",
+         "op": "OpGe",
          "lhs": {
-          "dotRemainingTime": {
-           "spellId": {
-            "spellId": 11672
-           }
-          }
+          "numberTargets": {}
          },
          "rhs": {
-          "spellCastTime": {
-           "spellId": {
-            "spellId": 11672
-           }
+          "const": {
+           "val": "3"
           }
          }
         }
        },
        {
         "cmp": {
-         "op": "OpGe",
+         "op": "OpLe",
          "lhs": {
-          "remainingTime": {}
+          "unitDistance": {}
          },
          "rhs": {
           "const": {
-           "val": "10s"
+           "val": "10"
           }
          }
         }
@@ -211,11 +216,32 @@
     },
     "castSpell": {
      "spellId": {
-      "spellId": 11672
+      "spellId": 11684
      }
     }
-   },
-   "notes": "apl_opt 2026-10-11: changed or added by the rotation search (see fire-destro-raid-rotation-search.json)"
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "numberTargets": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "4"
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 11678
+     }
+    }
+   }
   },
   {
    "action": {
@@ -243,22 +269,36 @@
   {
    "action": {
     "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "remainingTime": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "60s"
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 603
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
      "and": {
       "vals": [
        {
-        "cmp": {
-         "op": "OpLe",
-         "lhs": {
-          "dotRemainingTime": {
+        "not": {
+         "val": {
+          "dotIsActive": {
            "spellId": {
-            "spellId": 11668
-           }
-          }
-         },
-         "rhs": {
-          "spellCastTime": {
-           "spellId": {
-            "spellId": 11668
+            "spellId": 603
            }
           }
          }
@@ -266,13 +306,19 @@
        },
        {
         "cmp": {
-         "op": "OpGe",
+         "op": "OpLe",
          "lhs": {
-          "remainingTime": {}
+          "dotRemainingTime": {
+           "spellId": {
+            "spellId": 11713
+           }
+          }
          },
          "rhs": {
-          "const": {
-           "val": "10s"
+          "spellCastTime": {
+           "spellId": {
+            "spellId": 11713
+           }
           }
          }
         }
@@ -282,54 +328,97 @@
     },
     "castSpell": {
      "spellId": {
-      "spellId": 11668
+      "spellId": 11713
      }
     }
-   },
-   "notes": "apl_opt 2026-10-11: changed or added by the rotation search (see fire-destro-raid-rotation-search.json)"
+   }
   },
   {
    "action": {
-    "castSpell": {
-     "spellId": {
-      "itemId": 18820
+    "condition": {
+     "cmp": {
+      "op": "OpLe",
+      "lhs": {
+       "dotRemainingTime": {
+        "spellId": {
+         "spellId": 11672
+        }
+       }
+      },
+      "rhs": {
+       "spellCastTime": {
+        "spellId": {
+         "spellId": 11672
+        }
+       }
+      }
      }
     },
+    "castSpell": {
+     "spellId": {
+      "spellId": 11672
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpLe",
+      "lhs": {
+       "dotRemainingTime": {
+        "spellId": {
+         "spellId": 11668
+        }
+       }
+      },
+      "rhs": {
+       "spellCastTime": {
+        "spellId": {
+         "spellId": 11668
+        }
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 11668
+     }
+    }
+   }
+  },
+  {
+   "action": {
     "condition": {
      "cmp": {
       "op": "OpGe",
       "lhs": {
-       "currentManaPercent": {}
+       "numberTargets": {}
       },
       "rhs": {
        "const": {
-        "val": "15%"
+        "val": "3"
        }
       }
      }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 11678
+     }
     }
-   },
-   "notes": "apl_opt 2026-10-11: changed or added by the rotation search (see fire-destro-raid-rotation-search.json)"
+   }
   },
   {
    "action": {
     "castSpell": {
      "spellId": {
-      "spellId": 1259821
+      "spellId": 18871
      }
     }
-   },
-   "notes": "apl_opt 2026-10-09: changed or added by the rotation search (see fire-destro-raid-rotation-search.json)"
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "itemId": 272438
-     }
-    }
-   },
-   "notes": "apl_opt 2026-11-04: changed or added by the rotation search (see fire-destro-raid-rotation-search.json)"
+   }
   },
   {
    "action": {
