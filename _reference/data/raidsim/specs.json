@@ -762,14 +762,13 @@
       "rotation_note": "Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs. Our assassination-mutilate-raid build moves here from combat-daggers-raid (it ran under the combat rotation there)."
     },
     "subtlety-raid": {
-      "apl_opt_raid": "_reference/data/raidsim/apls/rogue/subtlety-raid-raid.apl.json",
       "sim_class": "ClassRogue",
       "sim_spec": "rogue/dps",
       "race": "RaceDwarf",
       "distance": 5,
       "profession1": "Engineering",
       "gear": "_reference/data/raidsim/gear_sets/forever/rogue-dps-combat_sinister_strike_p1_bis.p1opt.gear.json",
-      "apl": "_reference/data/raidsim/apls/rogue/sim-presets/default.apl.json",
+      "apl": "_reference/data/raidsim/apls/rogue/upstream/default.apl.json",
       "spec": {
         "rogue": {
           "options": {
@@ -796,7 +795,7 @@
       "builds": ["subtlety-hemo-raid", "hybrid-assassination-subtlety-open-raid", "subtlety-ml-raid"],
       "rotation_only": true,
       "preset_names": ["Subtlety Hemo", "Subtlety BS"],
-      "rotation_note": "Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs."
+      "rotation_note": "2026-11-20 night: base switched to the official simulator's own rotation (cat_sub_parity_1120.py, the audit session's condition for the raid push): full raid, 10,000 fights, seeds 1 / 2: hybrid-assassination-subtlety-open-raid 823.61 / 823.07 against ours 821.68 / 822.39; subtlety-ml-raid 820.7 / 820.13 against ours 817.57 / 818.26. Earlier notes describe the rotation it replaces. Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs."
     }
   },
   "warrior": {
@@ -1199,8 +1198,6 @@
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
     },
     "feral-cat-dps": {
-      "apl_opt_raid": "_reference/data/raidsim/apls/druid/feral-cat-dps-raid.apl.json",
-      "apl_opt": "_reference/data/raidsim/apls/druid/feral-cat-dps.apl.json",
       "sim_class": "ClassDruid",
       "sim_spec": "druid/feralcat",
       "profile": "raid-dps",
@@ -1209,7 +1206,7 @@
       "profession1": "Engineering",
       "profession2": "Leatherworking",
       "gear": "_reference/data/raidsim/gear_sets/forever/druid-feralcat-launch.p1opt.gear.json",
-      "apl": "ui/specs/druid/feralcat/apls/adaptive.apl.json",
+      "apl": "_reference/data/raidsim/apls/druid/upstream/adaptive.apl.json",
       "spec": {
         "feralCatDruid": {
           "options": {}
@@ -1234,7 +1231,8 @@
       "buffs_off": ["leader_of_the_pack"],
       "gear_note": "2026-09-27: was p0.bis.gear.json, which fills only the armor slots (no weapon, rings, trinkets, neck or back); now the simulator's complete launch preset (its DEFAULT_GEAR p0.bis is the incomplete one).",
       "self_buffs": {"gift_of_the_wild": true},
-      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
+      "rotation_note": "2026-11-20 night: base switched to the official simulator's own rotation (cat_sub_parity_1120.py, the audit session's condition for the raid push): full raid, 10,000 fights, seeds 1 / 2: feral-cat-dps 758.99 / 758.14 against ours 738.99 / 739.27; opt-feral-cat-dps-raid-dps 772.33 / 772.55 against ours 760.42 / 759.9; feral-combat-shifting-power-raid 918.72 / 918.43 against ours 911.43 / 911.49; feral-combat-open-raid 935.26 / 934.96 against ours 927.84 / 927.9. Earlier notes describe the rotation it replaces."
     },
     "feral-bear-tank": {
       "sim_class": "ClassDruid",

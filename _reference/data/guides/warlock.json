@@ -28,7 +28,10 @@
     "rotations": {
      "affliction-raid": "8cea9e03d6ea"
     },
-    "written": "2026-11-08"
+    "written": "2026-11-08",
+    "rewrite": {
+     "affliction-raid": "2026-11-20"
+    }
    },
    "leveling": {
     "plan": "Affliction levels on its damage-over-time spells and the wand while the Voidwalker holds the mob: **Corruption**, **Bane of Agony** and **Immolate** on a healthy mob (**Siphon Life** from level 34), the wand while they finish it, **Drain Life** when you are hurt, and from level 40 **Wrack**, channelled while you have the mana. No **Shadow Bolt** and no **Fear**.",
@@ -85,7 +88,10 @@
     "rotations": {
      "demonology-raid": "e51e64619b71"
     },
-    "written": "2026-11-08"
+    "written": "2026-11-08",
+    "rewrite": {
+     "demonology-raid": "2026-11-20"
+    }
    },
    "leveling": {
     "plan": "Demonology levels on the Voidwalker: its talents make the demon both the tank and a large share of the damage, **Demonic Brand** (levels 27-29) turns **Searing Pain** into extra Voidwalker hits, and your dots from the Affliction points and the wand do the rest. The page judges Demonology by what the demon adds, not by your own spells.",
@@ -194,12 +200,17 @@
      "When healing is tight, each **Life Tap** costs health someone must heal: use your mana potion and Demonic Rune before you tap."
     ],
     "rotations": {
-     "affliction-raid": "8cea9e03d6ea",
-     "fire-destro-raid": "6aef8ea82862",
-     "sb-raid": "e4dd2169691b",
-     "incinerate-raid": "d307253b81ba"
+     "affliction-raid": "b4d849584a42",
+     "affliction-wrack-raid": "ffd6a8ff3d29",
+     "destro-raid": "55e89e684ae2",
+     "fire-destro-raid": "28924e8d3edb",
+     "sb-raid": "12311edeb549",
+     "incinerate-raid": "369cf7f25d10"
     },
-    "written": "2026-11-08"
+    "written": "2026-11-08",
+    "rewrite": {
+     "affliction-raid": "2026-11-20"
+    }
    },
    "leveling": {
     "plan": "A Shadow Bolt hybrid would level with the Destruction list: the Voidwalker holds the mob, **Immolate** goes on a fresh mob and **Shadow Bolt** is the filler. The list casts no **Corruption** or **Bane of Agony**: the Affliction points only make your Shadow spells stronger. No leveling page has a build for this split today.",

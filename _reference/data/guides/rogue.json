@@ -23,7 +23,7 @@
     ],
     "rotations": {
      "combat-swords-raid": "402f621db62a",
-     "combat-daggers-raid": "11c6e97d2996"
+     "combat-daggers-raid": "fddaac01bc75"
     },
     "written": "2026-11-19"
    },
@@ -79,7 +79,7 @@
      "If no warrior keeps Sunder Armor on the target (a small group or a dungeon), keep **Expose Armor** up. The simulator's list has a switch for it, off in a raid: at 5 points, renew it when it has 16 seconds or less left, before any other finisher. An earlier search on the training dummy, where nothing else lowers armor, measured about 9% from it."
     ],
     "rotations": {
-     "assassination-raid": "05c720ea64be"
+     "assassination-raid": "e1f459e750a1"
     },
     "written": "2026-11-10"
    },
@@ -139,7 +139,10 @@
     "rotations": {
      "subtlety-raid": "6b44fa2947d1"
     },
-    "written": "2026-11-10"
+    "written": "2026-11-10",
+    "rewrite": {
+     "subtlety-raid": "2026-11-20"
+    }
    },
    "leveling": {
     "plan": "Subtlety levels on its openers and on dodges: **Premeditation** (24) and a stealth opener put up to 4 points on the mob, a builder makes 5, and **Eviscerate** or **Death Mark** ends the fight. **Ghostly Strike** (25) and **Hemorrhage** (30) are the signature strikes, and **Setup** (12-14) turns the mob's dodged swings into combo points.",
@@ -223,8 +226,8 @@
     "written": "2026-11-10",
     "rotations": {
      "combat-swords-raid": "402f621db62a",
-     "combat-daggers-raid": "11c6e97d2996",
-     "assassination-raid": "05c720ea64be"
+     "combat-daggers-raid": "fddaac01bc75",
+     "assassination-raid": "e1f459e750a1"
     }
    }
   },

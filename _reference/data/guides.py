@@ -101,6 +101,11 @@ def render(cls, spec, mode, label, fingerprint, title="Why this rotation"):
     g = guide(cls, spec, mode)
     if not g:
         return []
+    # a guide whose rotation was replaced wholesale is not printed under a notice (2026-11-20, the audit session: it describes a
+    # rotation the page no longer plays): `rewrite` {rotation label: date} prints a placeholder until the rewrite is stamped
+    rw = (g.get("rewrite") or {}).get(label)
+    if rw:
+        return [f"## {title}", "", f"*Guide being rewritten for the new rotation ({rw}).*", ""]
     o = [f"## {title}", ""]
     if g.get("plan"):
         o += [g["plan"], ""]
@@ -227,6 +232,7 @@ def stamp(cls, spec=None, mode=None):
                     fp[f"leveling:{model}"] = leveling_fingerprint(cls, model)
             g["rotations"] = fp
             g["written"] = g.get("written") or TODAY
+            g.pop("rewrite", None)   # stamped: the text fits the rotations again, the placeholder goes
     (DIR / f"{cls}.json").write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"stamped {cls}")
 

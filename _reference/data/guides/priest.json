@@ -28,7 +28,7 @@
     ],
     "written": "2026-11-04",
     "rotations": {
-     "shadow-dps": "f98eed89871b"
+     "shadow-dps": "216e6e0fa426"
     }
    },
    "leveling": {
@@ -69,14 +69,14 @@
      "**Inner Focus** goes into **Devouring Plague** at the pull: the plague is free that once (985 mana otherwise, which this build cannot halve) and runs 24 seconds. In a longer fight the second **Inner Focus** goes into a **Smite** for its 25% crit bonus.",
      "**Holy Fire** (6 casts, 8%): 184-232 damage plus 75 over 10 seconds in a 3-second cast with **Divine Fury**; one goes out 3 seconds before the pull, and the list recasts it as its burn ends while you have at least 40% mana. **Searing Light** adds 5% Holy damage, **Holy Specialization** 5% crit, **Holy Precision** 18% hit.",
      "**Shadow Word: Death** (10 casts, 8%) on its 18-second cooldown: the list casts rank 3 (the search measured it 0.5% ahead of rank 4: less mana for nearly the same hit).",
-     "**Smite** is the filler (60 casts, 45%): 2 seconds with **Divine Fury**, 280 mana less **Mental Agility**'s 10%, 10% more under your **Shadow Word: Pain** or **Holy Fire**. The page's two **Smite** lines are mana gates: top rank above 25% mana; between 20 and 25% the full list drops to rank 2, under 20% to rank 7, and only when you cannot afford even that does it channel **Mind Flay** (no casts in the simulator's raid fights).",
+     "**Smite** is the filler (60 casts, 45%): 2 seconds with **Divine Fury**, 280 mana less **Mental Agility**'s 10%, 10% more under your **Shadow Word: Pain** or **Holy Fire**. The page's **Smite** lines are mana gates: the top rank above 25% mana; below that rank 4, the lowest rank the trainer teaches at level 20 or above (cheaper, about 29 of your 54 **Smite** casts); in the last 10 seconds the top rank again while you have 20% mana, else rank 7; only when you cannot afford even that does it channel **Mind Flay** (almost never in the simulator's raid fights).",
      "Mana: **Meditation** keeps half your regeneration going while you cast; the simulator's priest also uses two mana potions and two Demonic Runes a fight and still runs dry late. In a 6-minute fight its DPS falls from 602 to 280."
     ],
     "caveats": [
      "This build has no **Penance** (it needs 20 Discipline points) and no **Power Infusion** or **Shadowform**: the full list's lines for them never fire. The Smite page is a showcase for the tree, 24% behind Shadow.",
      "**Shadow Word: Death** hits you for 30% of your maximum health each time the boss survives it, about 10 times a fight: your healers pay for that.",
      "When you must move, use the instants: **Shadow Word: Death**, and **Shadow Word: Pain** if it fell off. **Holy Fire**, **Smite** and **Mind Blast** all need you to stand still.",
-     "Ranks far below your level get much less from your spell power (a Forever change; our model gives rank 2 a small share of it), so the rank-2 **Smite** line is a stopgap, not a mana trick to use early."
+     "Ranks taught below level 20 get much less from your spell power (Classic's rule: 3.75% less a level below 20, so rank 2 at level 6 gets under half). The simulator does not model that yet, so the page uses rank 4 (level 22) as the cheap **Smite**: rank 2 had looked 2.5% better only because of that gap, and without a cheap rank the build runs out of mana for 50 seconds of a 3-minute fight."
     ],
     "diverge": [
      "When the boss has under 3 seconds to live, cast **Smite** rather than a new **Holy Fire**: only a spell that finishes casting does damage.",
@@ -85,7 +85,7 @@
     ],
     "written": "2026-11-04",
     "rotations": {
-     "smite-dps": "15055efffd77"
+     "smite-dps": "00849f9a3fd5"
     }
    },
    "leveling": {

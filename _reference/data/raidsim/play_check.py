@@ -305,20 +305,28 @@ def validate_unknown(cls, entry_name, entry, repo, talents):
     return out
 
 
-def fresh_conversion(cls, path, repo):
-    """A converted official rotation against a fresh conversion of upstream's file (None when its source cannot be found)."""
+def fresh_conversion(cls, path, repo, entry=None):
+    """A converted official rotation against a fresh conversion of upstream's file (None when its source cannot be found). Two specs
+    of a class can ship a rotation of the same name (the druid's feralbear and feralcat adaptive.apl.json, 2026-11-20: the cat's copy
+    was compared with the bear's file): the entry's own spec folder wins (its proto spec key, feralCatDruid -> feralcat)."""
     import siml_upstream_race as SU
     name = path.name.replace(".apl.json", "")
+    key = next(iter((entry or {}).get("spec") or {}), "")
+    want = key.lower().replace(cls, "")
+
+    def ordered(paths):
+        paths = sorted(paths)
+        return [x for x in paths if x.parts[-3] == want] + [x for x in paths if x.parts[-3] != want]
     rot = None
-    for src in sorted(repo.glob(f"ui/specs/{cls}/*/apls/{name}.apl.siml")):
+    for src in ordered(repo.glob(f"ui/specs/{cls}/*/apls/{name}.apl.siml")):
         rot = SU.siml2json(repo, src)
         break
     if rot is None:
-        for src in sorted(repo.glob(f"ui/specs/{cls}/*/apls/{name}.apl.json")):
+        for src in ordered(repo.glob(f"ui/specs/{cls}/*/apls/{name}.apl.json")):
             rot = json.load(open(src, encoding="utf-8"))
             break
     if rot is None:
-        for src in sorted(repo.glob(f"ui/specs/{cls}/*/builds/{name}.build.json")):
+        for src in ordered(repo.glob(f"ui/specs/{cls}/*/builds/{name}.build.json")):
             rot = (json.load(open(src, encoding="utf-8")).get("player") or {}).get("rotation")
             break
     if rot is None:
@@ -399,7 +407,7 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
     for where in ("raid", "dummy"):
         p = pathlib.Path(R.apl_path(entry, repo, where))
         if "/upstream/" in p.as_posix():
-            d = fresh_conversion(cls, p, repo)
+            d = fresh_conversion(cls, p, repo, entry)
             if d:
                 conv += [f"{p.name}: {x}" for x in d]
     res["rotation_fail"] = rot_fail + [f"differs from a fresh conversion of upstream's file: {x}" for x in conv]
@@ -554,12 +562,22 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
                 f["fail"].append(f"b: talent ability {t} never cast" + (" (unused-abilities: wasted)" if why == "wasted" else ""))
         # summed by name over the ranks (the audit session, 2026-11-20: a name-keyed record had let a later rank's row overwrite an
         # earlier one, Lightning Bolt 0.0 for 67.1); the verdicts above read casts by id. The bench's own rows, before the Judgement alias.
-        by_name = {}
-        for k, v in raw_cs[b].items():
-            if v:
-                nm = id_name.get(k) or names.get(k) or str(k)
-                by_name[nm] = by_name.get(nm, 0) + v
-        f["casts"] = {n: round(v, 2) for n, v in sorted(by_name.items(), key=lambda kv: -kv[1])}
+        # 2026-11-20 night (the audit session): the pet's casts apart, and what the rotation never presses (procs, a seal's judgement
+        # booked under its own id, items) apart from what it does: the bench's rows carry all three under the player's id
+        pressed, procs, pet = {}, {}, {}
+        for x in row.get("actions") or []:
+            c = x.get("casts") or 0
+            if not c or not x.get("spellId"):
+                continue
+            nm = id_name.get(x["spellId"]) or names.get(x["spellId"]) or str(x["spellId"])
+            if x.get("pet"):
+                pet[nm] = pet.get(nm, 0) + c
+            elif (x["spellId"], x.get("tag") or 0) in rot_casts:
+                pressed[nm] = pressed.get(nm, 0) + c
+            else:
+                procs[nm] = procs.get(nm, 0) + c
+        srt = lambda d: {n: round(v, 2) for n, v in sorted(d.items(), key=lambda kv: -kv[1])}   # noqa: E731
+        f["casts"], f["procs_and_triggered"], f["pet_casts"] = srt(pressed), srt(procs), srt(pet)
         f["casts_by_id"] = {str(k): round(v, 2) for k, v in sorted(raw_cs[b].items(), key=lambda kv: -kv[1]) if v}
         res["builds"][b] = f
         # c. talents worth nothing

@@ -1,0 +1,5846 @@
+{
+ "hunter": {
+  "mm-raid": {
+   "fingerprint": "a2f645056252e71b",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/hunter/mm-raid-raid.apl.json",
+   "builds": {
+    "bm-mm-raid": {
+     "dps": 904.81,
+     "never_cast": [
+      "prepull[3] Sniper Shot (1310786): talent not taken",
+      "priority[8] Multi-Shot (2643): switch off (Use Multi-Shot)"
+     ],
+     "abilities": [
+      "Trueshot Aura: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Efficiency 5: gate: Trueshot Aura (tier 4) needs 15 points in Marksmanship below it, only 14",
+      "Endurance Training 3: gate: Unleashed Fury (tier 3) needs 10 points in Beast Mastery below it, only 7"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 3.2,
+      "gcd_casts": 67.1
+     },
+     "simulator_rotation": {
+      "DPS": [
+       904.81,
+       905.6,
+       "turret_hawk.apl.json"
+      ]
+     },
+     "casts": {
+      "Claw": 86.0,
+      "Aimed Shot": 22.59,
+      "Summon Hawk": 20.0,
+      "Serpent Sting": 12.0,
+      "Arcane Shot": 9.47,
+      "Hunter's Mark": 2.0,
+      "Bite": 2.0,
+      "Rapid Fire": 1.0,
+      "Aspect of the Hawk": 1.0,
+      "Dash": 1.0
+     },
+     "casts_by_id": {
+      "3009": 86.0,
+      "20904": 22.59,
+      "1293527": 20.0,
+      "13555": 12.0,
+      "14287": 9.47,
+      "14325": 2.0,
+      "17261": 2.0,
+      "3045": 1.0,
+      "14322": 1.0,
+      "23110": 1.0
+     }
+    },
+    "bm-mm-full-buffs-raid": {
+     "dps": 872.54,
+     "never_cast": [
+      "prepull[3] Sniper Shot (1310786): talent not taken",
+      "priority[5] Summon Hawk (1293527): talent not taken",
+      "priority[8] Multi-Shot (2643): switch off (Use Multi-Shot)"
+     ],
+     "abilities": [
+      "Trueshot Aura: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Efficiency 5: gate: Trueshot Aura (tier 4) needs 15 points in Marksmanship below it, only 11",
+      "Endurance Training 3: gate: Unleashed Fury (tier 3) needs 10 points in Beast Mastery below it, only 7"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 3.2,
+      "gcd_casts": 66.5
+     },
+     "simulator_rotation": {
+      "DPS": [
+       872.54,
+       872.62,
+       "turret.apl.json"
+      ]
+     },
+     "casts": {
+      "Claw": 80.46,
+      "Arcane Shot": 29.07,
+      "Aimed Shot": 22.41,
+      "Serpent Sting": 12.0,
+      "Hunter's Mark": 2.0,
+      "Rapid Fire": 1.0,
+      "Aspect of the Hawk": 1.0,
+      "Bite": 1.0,
+      "Dash": 1.0
+     },
+     "casts_by_id": {
+      "3009": 80.46,
+      "14287": 29.07,
+      "20904": 22.41,
+      "13555": 12.0,
+      "14325": 2.0,
+      "3045": 1.0,
+      "14322": 1.0,
+      "17261": 1.0,
+      "23110": 1.0
+     }
+    },
+    "opt-mm-raid-raid-dps": {
+     "dps": 865.93,
+     "never_cast": [
+      "prepull[3] Sniper Shot (1310786): talent not taken",
+      "priority[5] Summon Hawk (1293527): talent not taken",
+      "priority[8] Multi-Shot (2643): switch off (Use Multi-Shot)"
+     ],
+     "abilities": [
+      "Intimidation: prerequisite",
+      "Trueshot Aura: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Bestial Swiftness 1: gate: Intimidation requires Bestial Swiftness 1, have 0",
+      "Efficiency 5: gate: Trueshot Aura (tier 4) needs 15 points in Marksmanship below it, only 10",
+      "Endurance Training 4: gate: Bestial Swiftness (tier 3) needs 10 points in Beast Mastery below it, only 7",
+      "Intimidation 1: gate: Frenzy (tier 6) needs 25 points in Beast Mastery below it, only 24"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 3.2,
+      "gcd_casts": 66.5
+     },
+     "simulator_rotation": {
+      "DPS": [
+       865.93,
+       890.17,
+       "default.apl.json"
+      ]
+     },
+     "casts": {
+      "Claw": 86.0,
+      "Arcane Shot": 29.06,
+      "Aimed Shot": 22.41,
+      "Serpent Sting": 12.0,
+      "Bestial Wrath": 2.0,
+      "Hunter's Mark": 2.0,
+      "Bite": 2.0,
+      "Rapid Fire": 1.0,
+      "Aspect of the Hawk": 1.0,
+      "Dash": 1.0
+     },
+     "casts_by_id": {
+      "3009": 86.0,
+      "14287": 29.06,
+      "20904": 22.41,
+      "13555": 12.0,
+      "19574": 2.0,
+      "14325": 2.0,
+      "17261": 2.0,
+      "3045": 1.0,
+      "14322": 1.0,
+      "23110": 1.0
+     }
+    },
+    "marksmanship-ml-raid": {
+     "dps": 981.31,
+     "never_cast": [
+      "priority[5] Summon Hawk (1293527): talent not taken",
+      "priority[8] Multi-Shot (2643): switch off (Use Multi-Shot)"
+     ],
+     "abilities": [
+      "Trueshot Aura: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Rapid Killing 2: gate: Rapid Recuperation requires Rapid Killing 2, have 0"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 3.2,
+      "gcd_casts": 81.8
+     },
+     "simulator_rotation": {
+      "DPS": [
+       981.31,
+       973.54,
+       "turret.apl.json"
+      ]
+     },
+     "casts": {
+      "Claw": 73.0,
+      "Arcane Shot": 37.82,
+      "Aimed Shot": 19.23,
+      "Serpent Sting": 11.79,
+      "Sniper Shot": 9.98,
+      "Hunter's Mark": 2.0,
+      "Rapid Fire": 1.0,
+      "Aspect of the Hawk": 1.0,
+      "Bite": 1.0,
+      "Dash": 1.0
+     },
+     "casts_by_id": {
+      "3009": 73.0,
+      "14287": 37.82,
+      "20904": 19.23,
+      "13555": 11.79,
+      "1310786": 9.98,
+      "14325": 2.0,
+      "3045": 1.0,
+      "14322": 1.0,
+      "17261": 1.0,
+      "23110": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "default.apl.json, turret.apl.json, turret_hawk.apl.json, melee.apl.json",
+   "fail": [],
+   "date": "2026-11-20"
+  },
+  "mm-lonewolf-raid": {
+   "fingerprint": "fed475cdfc08f6c7",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/hunter/upstream/turret.apl.json",
+   "builds": {
+    "mm-lone-wolf-raid": {
+     "dps": 995.9,
+     "never_cast": [
+      "priority[5] Summon Hawk (1293527): talent not taken",
+      "priority[8] Multi-Shot (2643): switch off (Use Multi-Shot)"
+     ],
+     "abilities": [
+      "Trueshot Aura: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Rapid Killing 2: gate: Rapid Recuperation requires Rapid Killing 2, have 0"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 3.2,
+      "gcd_casts": 81.2
+     },
+     "casts": {
+      "Arcane Shot": 37.04,
+      "Aimed Shot": 19.31,
+      "Serpent Sting": 11.91,
+      "Sniper Shot": 9.9,
+      "Hunter's Mark": 2.0,
+      "Aspect of the Hawk": 1.0,
+      "Rapid Fire": 1.0
+     },
+     "casts_by_id": {
+      "14287": 37.04,
+      "20904": 19.31,
+      "13555": 11.91,
+      "1310786": 9.9,
+      "14325": 2.0,
+      "14322": 1.0,
+      "3045": 1.0
+     }
+    },
+    "opt-mm-lonewolf-raid-raid-dps": {
+     "dps": 935.66,
+     "never_cast": [
+      "priority[5] Summon Hawk (1293527): talent not taken",
+      "priority[8] Multi-Shot (2643): switch off (Use Multi-Shot)"
+     ],
+     "abilities": [
+      "Trueshot Aura: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Hawk Eye 3: utility filler (range)",
+      "Improved Revive Pet 2: WORTH NOTHING, not a gate or a recorded filler",
+      "Rapid Killing 2: gate: Rapid Recuperation requires Rapid Killing 2, have 0"
+     ],
+     "inert_switches": [],
+     "fail": [
+      "c: Improved Revive Pet worth nothing and not a gate or a recorded filler"
+     ],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 3.2,
+      "gcd_casts": 73.4
+     },
+     "casts": {
+      "Arcane Shot": 28.34,
+      "Aimed Shot": 20.81,
+      "Serpent Sting": 11.24,
+      "Sniper Shot": 10.0,
+      "Hunter's Mark": 2.0,
+      "Rapid Fire": 1.0,
+      "Aspect of the Hawk": 1.0
+     },
+     "casts_by_id": {
+      "14287": 28.34,
+      "20904": 20.81,
+      "13555": 11.24,
+      "1310786": 10.0,
+      "14325": 2.0,
+      "3045": 1.0,
+      "14322": 1.0
+     }
+    },
+    "marksmanship-ml-raid": {
+     "dps": 825.61,
+     "never_cast": [
+      "priority[5] Summon Hawk (1293527): talent not taken",
+      "priority[8] Multi-Shot (2643): switch off (Use Multi-Shot)"
+     ],
+     "abilities": [
+      "Trueshot Aura: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Focused Fire 2: WORTH NOTHING, not a gate or a recorded filler",
+      "Rapid Killing 2: gate: Rapid Recuperation requires Rapid Killing 2, have 0"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 3.2,
+      "gcd_casts": 80.3
+     },
+     "casts": {
+      "Arcane Shot": 36.89,
+      "Aimed Shot": 18.99,
+      "Serpent Sting": 11.72,
+      "Sniper Shot": 9.7,
+      "Hunter's Mark": 2.0,
+      "Aspect of the Hawk": 1.0,
+      "Rapid Fire": 1.0
+     },
+     "casts_by_id": {
+      "14287": 36.89,
+      "20904": 18.99,
+      "13555": 11.72,
+      "1310786": 9.7,
+      "14325": 2.0,
+      "14322": 1.0,
+      "3045": 1.0
+     },
+     "notes": [
+      "its page number comes from mm-raid: its failures in mm-lonewolf-raid are notes",
+      "c: Focused Fire worth nothing and not a gate or a recorded filler"
+     ]
+    },
+    "marksmanship-lone-wolf-sim-raid": {
+     "dps": 990.15,
+     "never_cast": [
+      "priority[5] Summon Hawk (1293527): talent not taken",
+      "priority[8] Multi-Shot (2643): switch off (Use Multi-Shot)"
+     ],
+     "abilities": [
+      "Trueshot Aura: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Rapid Killing 2: gate: Rapid Recuperation requires Rapid Killing 2, have 0"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 3.2,
+      "gcd_casts": 81.3
+     },
+     "casts": {
+      "Arcane Shot": 37.06,
+      "Aimed Shot": 19.37,
+      "Serpent Sting": 11.97,
+      "Sniper Shot": 9.93,
+      "Hunter's Mark": 2.0,
+      "Aspect of the Hawk": 1.0,
+      "Rapid Fire": 1.0
+     },
+     "casts_by_id": {
+      "14287": 37.06,
+      "20904": 19.37,
+      "13555": 11.97,
+      "1310786": 9.93,
+      "14325": 2.0,
+      "14322": 1.0,
+      "3045": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "the entry's raid rotation is the simulator's own (turret.apl.json)",
+   "fail": [
+    "opt-mm-lonewolf-raid-raid-dps"
+   ],
+   "date": "2026-11-20"
+  },
+  "bm-raid": {
+   "fingerprint": "b77ce55e44e1b7e4",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/hunter/upstream/turret_hawk.apl.json",
+   "builds": {
+    "mm-hawk-raid": {
+     "dps": 905.12,
+     "never_cast": [
+      "priority[8] Multi-Shot (2643): switch off (Use Multi-Shot)"
+     ],
+     "abilities": [
+      "Trueshot Aura: prerequisite"
+     ],
+     "zero_talents": [
+      "Endurance Training 3: gate: Unleashed Fury (tier 3) needs 10 points in Beast Mastery below it, only 7",
+      "Hawk Eye 1: gate: Ranged Weapon Specialization (tier 6) needs 25 points in Marksmanship below it, ",
+      "Trueshot Aura 1: gate: Ranged Weapon Specialization (tier 6) needs 25 points in Marksmanship below it, "
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 3.2,
+      "gcd_casts": 66.5
+     },
+     "casts": {
+      "Claw": 80.46,
+      "Aimed Shot": 22.42,
+      "Summon Hawk": 20.0,
+      "Serpent Sting": 12.0,
+      "Arcane Shot": 9.06,
+      "Hunter's Mark": 2.0,
+      "Rapid Fire": 1.0,
+      "Aspect of the Hawk": 1.0,
+      "Bite": 1.0,
+      "Dash": 1.0
+     },
+     "casts_by_id": {
+      "3009": 80.46,
+      "20904": 22.42,
+      "1293527": 20.0,
+      "13555": 12.0,
+      "14287": 9.06,
+      "14325": 2.0,
+      "3045": 1.0,
+      "14322": 1.0,
+      "17261": 1.0,
+      "23110": 1.0
+     }
+    },
+    "beast-mastery-ml-raid": {
+     "dps": 946.01,
+     "never_cast": [
+      "priority[8] Multi-Shot (2643): switch off (Use Multi-Shot)"
+     ],
+     "abilities": [
+      "Intimidation: prerequisite"
+     ],
+     "zero_talents": [
+      "Bestial Swiftness 1: gate: Intimidation requires Bestial Swiftness 1, have 0",
+      "Endurance Training 3: gate: Bestial Swiftness (tier 3) needs 10 points in Beast Mastery below it, only 7",
+      "Intimidation 1: gate: Frenzy (tier 6) needs 25 points in Beast Mastery below it, only 24"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 3.2,
+      "gcd_casts": 67.4
+     },
+     "casts": {
+      "Claw": 86.0,
+      "Aimed Shot": 22.61,
+      "Summon Hawk": 20.0,
+      "Serpent Sting": 12.0,
+      "Arcane Shot": 9.83,
+      "Hunter's Mark": 2.0,
+      "Bestial Wrath": 2.0,
+      "Bite": 2.0,
+      "Rapid Fire": 1.0,
+      "Aspect of the Hawk": 1.0,
+      "Dash": 1.0
+     },
+     "casts_by_id": {
+      "3009": 86.0,
+      "20904": 22.61,
+      "1293527": 20.0,
+      "13555": 12.0,
+      "14287": 9.83,
+      "14325": 2.0,
+      "19574": 2.0,
+      "17261": 2.0,
+      "3045": 1.0,
+      "14322": 1.0,
+      "23110": 1.0
+     }
+    },
+    "beast-marks-ml-raid": {
+     "dps": 942.36,
+     "never_cast": [
+      "priority[8] Multi-Shot (2643): switch off (Use Multi-Shot)"
+     ],
+     "abilities": [
+      "Intimidation: prerequisite"
+     ],
+     "zero_talents": [
+      "Bestial Swiftness 1: gate: Intimidation requires Bestial Swiftness 1, have 0",
+      "Endurance Training 3: gate: Bestial Swiftness (tier 3) needs 10 points in Beast Mastery below it, only 7",
+      "Intimidation 1: gate: Frenzy (tier 6) needs 25 points in Beast Mastery below it, only 24"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 3.2,
+      "gcd_casts": 67.4
+     },
+     "casts": {
+      "Claw": 86.0,
+      "Aimed Shot": 22.6,
+      "Summon Hawk": 20.0,
+      "Serpent Sting": 12.0,
+      "Arcane Shot": 9.81,
+      "Hunter's Mark": 2.0,
+      "Bite": 2.0,
+      "Rapid Fire": 1.0,
+      "Aspect of the Hawk": 1.0,
+      "Dash": 1.0
+     },
+     "casts_by_id": {
+      "3009": 86.0,
+      "20904": 22.6,
+      "1293527": 20.0,
+      "13555": 12.0,
+      "14287": 9.81,
+      "14325": 2.0,
+      "17261": 2.0,
+      "3045": 1.0,
+      "14322": 1.0,
+      "23110": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "the entry's raid rotation is the simulator's own (turret_hawk.apl.json)",
+   "fail": [],
+   "date": "2026-11-20"
+  },
+  "melee-dps": {
+   "fingerprint": "9fa2e4a2b5695607",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/hunter/upstream/melee.apl.json",
+   "builds": {
+    "melee-survival-raid": {
+     "dps": 835.87,
+     "never_cast": [
+      "priority[12] Summon Hawk (1293527): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Survivalist 3: gate: Clever Traps (tier 3) needs 10 points in Survival below it, only 7"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 24.3,
+      "white_mh_swings": 76.7,
+      "mh_speed": 1.8,
+      "gcd_casts": 120.4
+     },
+     "casts": {
+      "Wing Clip": 54.52,
+      "Raptor Strike": 24.33,
+      "Strider Kick": 19.85,
+      "Mongoose Bite": 19.52,
+      "Serpent Sting": 10.69,
+      "Immolation Trap": 9.72,
+      "Arcane Shot": 2.08,
+      "Hunter's Mark": 2.0,
+      "Multi-Shot": 1.0,
+      "Aspect of the Beast": 1.0,
+      "Rapid Fire": 1.0
+     },
+     "casts_by_id": {
+      "14268": 54.52,
+      "14266": 24.33,
+      "1317257": 19.85,
+      "14271": 19.52,
+      "13555": 10.69,
+      "14305": 9.72,
+      "14287": 2.08,
+      "14325": 2.0,
+      "2643": 1.0,
+      "1299447": 1.0,
+      "3045": 1.0
+     }
+    },
+    "opt-melee-dps-raid-dps": {
+     "dps": 789.48,
+     "never_cast": [
+      "priority[12] Summon Hawk (1293527): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Efficiency 4: utility filler (mana)",
+      "Survivalist 5: gate: Surefooted (tier 3) needs 10 points in Survival below it, only 7"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 24.3,
+      "white_mh_swings": 76.8,
+      "mh_speed": 1.8,
+      "gcd_casts": 120.4
+     },
+     "casts": {
+      "Wing Clip": 58.04,
+      "Raptor Strike": 24.33,
+      "Strider Kick": 19.84,
+      "Mongoose Bite": 19.72,
+      "Serpent Sting": 10.68,
+      "Immolation Trap": 6.0,
+      "Arcane Shot": 2.09,
+      "Hunter's Mark": 2.0,
+      "Multi-Shot": 1.0,
+      "Aspect of the Beast": 1.0,
+      "Rapid Fire": 1.0
+     },
+     "casts_by_id": {
+      "14268": 58.04,
+      "14266": 24.33,
+      "1317257": 19.84,
+      "14271": 19.72,
+      "13555": 10.68,
+      "14305": 6.0,
+      "14287": 2.09,
+      "14325": 2.0,
+      "2643": 1.0,
+      "1299447": 1.0,
+      "3045": 1.0
+     }
+    },
+    "survival-raid": {
+     "dps": 798.9,
+     "never_cast": [
+      "priority[12] Summon Hawk (1293527): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Efficiency 5: utility filler (mana)",
+      "Survivalist 3: gate: Surefooted (tier 3) needs 10 points in Survival below it, only 7"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 24.4,
+      "white_mh_swings": 76.7,
+      "mh_speed": 1.8,
+      "gcd_casts": 120.4
+     },
+     "casts": {
+      "Wing Clip": 54.52,
+      "Raptor Strike": 24.36,
+      "Strider Kick": 19.85,
+      "Mongoose Bite": 19.53,
+      "Serpent Sting": 10.7,
+      "Immolation Trap": 9.71,
+      "Arcane Shot": 2.07,
+      "Hunter's Mark": 2.0,
+      "Multi-Shot": 1.0,
+      "Aspect of the Beast": 1.0,
+      "Rapid Fire": 1.0
+     },
+     "casts_by_id": {
+      "14268": 54.52,
+      "14266": 24.36,
+      "1317257": 19.85,
+      "14271": 19.53,
+      "13555": 10.7,
+      "14305": 9.71,
+      "14287": 2.07,
+      "14325": 2.0,
+      "2643": 1.0,
+      "1299447": 1.0,
+      "3045": 1.0
+     }
+    },
+    "survival-ml-parse": {
+     "dps": 793.47,
+     "never_cast": [
+      "priority[12] Summon Hawk (1293527): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Deflection 5: gate: Savage Strikes (tier 2) needs 5 points in Survival below it, only 0",
+      "Survivalist 3: gate: Clever Traps (tier 3) needs 10 points in Survival below it, only 7"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 24.3,
+      "white_mh_swings": 76.8,
+      "mh_speed": 1.8,
+      "gcd_casts": 120.4
+     },
+     "casts": {
+      "Wing Clip": 54.43,
+      "Raptor Strike": 24.35,
+      "Strider Kick": 19.84,
+      "Mongoose Bite": 19.67,
+      "Serpent Sting": 10.65,
+      "Immolation Trap": 9.72,
+      "Arcane Shot": 2.08,
+      "Hunter's Mark": 2.0,
+      "Multi-Shot": 1.0,
+      "Aspect of the Beast": 1.0,
+      "Rapid Fire": 1.0
+     },
+     "casts_by_id": {
+      "14268": 54.43,
+      "14266": 24.35,
+      "1317257": 19.84,
+      "14271": 19.67,
+      "13555": 10.65,
+      "14305": 9.72,
+      "14287": 2.08,
+      "14325": 2.0,
+      "2643": 1.0,
+      "1299447": 1.0,
+      "3045": 1.0
+     }
+    },
+    "beast-survival-open-raid": {
+     "dps": 863.57,
+     "never_cast": [],
+     "abilities": [],
+     "zero_talents": [
+      "Endurance Training 5: gate: Unleashed Fury (tier 3) needs 10 points in Beast Mastery below it, only 5",
+      "Survivalist 3: gate: Clever Traps (tier 3) needs 10 points in Survival below it, only 7"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 24.4,
+      "white_mh_swings": 79.4,
+      "mh_speed": 1.8,
+      "gcd_casts": 120.4
+     },
+     "casts": {
+      "Wing Clip": 37.01,
+      "Raptor Strike": 24.42,
+      "Summon Hawk": 21.77,
+      "Strider Kick": 19.78,
+      "Mongoose Bite": 19.76,
+      "Serpent Sting": 8.98,
+      "Immolation Trap": 7.05,
+      "Hunter's Mark": 2.0,
+      "Arcane Shot": 1.73,
+      "Multi-Shot": 1.36,
+      "Aspect of the Beast": 1.0,
+      "Rapid Fire": 1.0
+     },
+     "casts_by_id": {
+      "14268": 37.01,
+      "14266": 24.42,
+      "1293527": 21.77,
+      "1317257": 19.78,
+      "14271": 19.76,
+      "13555": 8.98,
+      "14305": 7.05,
+      "14325": 2.0,
+      "14287": 1.73,
+      "2643": 1.36,
+      "1299447": 1.0,
+      "3045": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "the entry's raid rotation is the simulator's own (melee.apl.json)",
+   "fail": [],
+   "date": "2026-11-20"
+  },
+  "survival-pet-raid": {
+   "fingerprint": "e878d3c3b6811321",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/hunter/upstream/melee.apl.json",
+   "builds": {
+    "survival-raptor-raid": {
+     "dps": 914.93,
+     "never_cast": [],
+     "abilities": [],
+     "zero_talents": [
+      "Endurance Training 3: gate: Unleashed Fury (tier 3) needs 10 points in Beast Mastery below it, only 7",
+      "Survivalist 3: gate: Clever Traps (tier 3) needs 10 points in Survival below it, only 7"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 24.4,
+      "white_mh_swings": 80.1,
+      "mh_speed": 1.8,
+      "gcd_casts": 120.3
+     },
+     "casts": {
+      "Claw": 72.0,
+      "Wing Clip": 34.99,
+      "Raptor Strike": 24.38,
+      "Summon Hawk": 21.61,
+      "Mongoose Bite": 19.75,
+      "Strider Kick": 19.74,
+      "Immolation Trap": 9.57,
+      "Serpent Sting": 8.55,
+      "Hunter's Mark": 2.0,
+      "Arcane Shot": 1.73,
+      "Multi-Shot": 1.36,
+      "Rapid Fire": 1.0,
+      "Aspect of the Beast": 1.0,
+      "Savage Rend": 1.0,
+      "Bite": 1.0
+     },
+     "casts_by_id": {
+      "3009": 72.0,
+      "14268": 34.99,
+      "14266": 24.38,
+      "1293527": 21.61,
+      "14271": 19.75,
+      "1317257": 19.74,
+      "14305": 9.57,
+      "13555": 8.55,
+      "14325": 2.0,
+      "14287": 1.73,
+      "2643": 1.36,
+      "3045": 1.0,
+      "1299447": 1.0,
+      "1265069": 1.0,
+      "17261": 1.0
+     }
+    },
+    "melee-survival-raid": {
+     "dps": 824.02,
+     "never_cast": [
+      "priority[12] Summon Hawk (1293527): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Survivalist 3: gate: Clever Traps (tier 3) needs 10 points in Survival below it, only 7"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 24.3,
+      "white_mh_swings": 76.7,
+      "mh_speed": 1.8,
+      "gcd_casts": 120.3
+     },
+     "casts": {
+      "Claw": 72.0,
+      "Wing Clip": 54.52,
+      "Raptor Strike": 24.34,
+      "Strider Kick": 19.82,
+      "Mongoose Bite": 19.51,
+      "Serpent Sting": 10.67,
+      "Immolation Trap": 9.71,
+      "Arcane Shot": 2.1,
+      "Hunter's Mark": 2.0,
+      "Multi-Shot": 1.0,
+      "Aspect of the Beast": 1.0,
+      "Rapid Fire": 1.0,
+      "Savage Rend": 1.0,
+      "Bite": 1.0
+     },
+     "casts_by_id": {
+      "3009": 72.0,
+      "14268": 54.52,
+      "14266": 24.34,
+      "1317257": 19.82,
+      "14271": 19.51,
+      "13555": 10.67,
+      "14305": 9.71,
+      "14287": 2.1,
+      "14325": 2.0,
+      "2643": 1.0,
+      "1299447": 1.0,
+      "3045": 1.0,
+      "1265069": 1.0,
+      "17261": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "the entry's raid rotation is the simulator's own (melee.apl.json)",
+   "fail": [],
+   "date": "2026-11-20"
+  }
+ },
+ "mage": {
+  "frost-raid": {
+   "fingerprint": "6dfc2506ff41e640",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/mage/frost-raid-raid.apl.json",
+   "builds": {
+    "frost-winters-chill-raid": {
+     "dps": 504.61,
+     "never_cast": [
+      "prepull[0] Ice Barrier (13033): talent not taken",
+      "priority[0] Read Leyline (1259705): racial (racials are off)",
+      "priority[4] Ice Lance (1240047): talent not taken",
+      "priority[6] Ice Barrier (13033): talent not taken",
+      "priority[7] Blizzard (10187): condition never held"
+     ],
+     "abilities": [
+      "Ice Block: prerequisite",
+      "Presence of Mind: NEVER CAST, no reason"
+     ],
+     "zero_talents": [
+      "Arcane Impact 3: gate: Presence of Mind (tier 5) needs 20 points in Arcane below it, only 17",
+      "Arcane Resilience 1: gate: Arcane Concentration (tier 2) needs 5 points in Arcane below it, only 4",
+      "Arctic Reach 2: gate: Winter's Chill (tier 6) needs 25 points in Frost below it, only 23",
+      "Frost Warding 2: gate: Winter's Chill (tier 6) needs 25 points in Frost below it, only 23",
+      "Frostbite 3: gate: Winter's Chill (tier 6) needs 25 points in Frost below it, only 22",
+      "Ice Block 1: gate: Winter's Chill (tier 6) needs 25 points in Frost below it, only 24",
+      "Improved Channeling 4: gate: Arcane Concentration (tier 2) needs 5 points in Arcane below it, only 1",
+      "Magic Absorption 1: gate: Presence of Mind (tier 5) needs 20 points in Arcane below it, only 19",
+      "Presence of Mind 1: WORTH NOTHING, not a gate or a recorded filler"
+     ],
+     "inert_switches": [],
+     "fail": [
+      "b: talent ability Presence of Mind never cast",
+      "c: Presence of Mind worth nothing and not a gate or a recorded filler"
+     ],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 75.4
+     },
+     "simulator_rotation": {
+      "DPS": [
+       504.61,
+       504.61,
+       "frost.apl.json"
+      ]
+     },
+     "casts": {
+      "Frostbolt": 62.87,
+      "Cone of Cold": 11.64,
+      "Cold Snap": 1.0,
+      "Evocation": 0.94
+     },
+     "casts_by_id": {
+      "10181": 62.87,
+      "10161": 11.64,
+      "12472": 1.0,
+      "12051": 0.94
+     }
+    },
+    "frost-fingers-of-frost-raid": {
+     "dps": 622.54,
+     "never_cast": [
+      "prepull[0] Ice Barrier (13033): talent not taken",
+      "priority[0] Read Leyline (1259705): racial (racials are off)",
+      "priority[1] Evocation (12051): cast by another build of the entry (the line serves builds that reach it)",
+      "priority[5] Cold Snap (12472): talent not taken",
+      "priority[6] Ice Barrier (13033): talent not taken",
+      "priority[7] Blizzard (10187): condition never held"
+     ],
+     "abilities": [
+      "Ice Block: prerequisite"
+     ],
+     "zero_talents": [
+      "Arcane Impact 3: gate: Arcane Meditation (tier 4) needs 15 points in Arcane below it, only 14",
+      "Arcane Resilience 2: gate: Arcane Concentration (tier 2) needs 5 points in Arcane below it, only 3",
+      "Arctic Reach 2: gate: Winter's Chill (tier 6) needs 25 points in Frost below it, only 23",
+      "Ice Block 1: gate: Winter's Chill (tier 6) needs 25 points in Frost below it, only 24",
+      "Improved Channeling 3: gate: Arcane Concentration (tier 2) needs 5 points in Arcane below it, only 2"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 79.3
+     },
+     "simulator_rotation": {
+      "DPS": [
+       622.54,
+       622.54,
+       "frost.apl.json"
+      ]
+     },
+     "casts": {
+      "Frostbolt": 63.73,
+      "Cone of Cold": 10.15,
+      "Ice Lance": 5.46,
+      "Presence of Mind": 1.0
+     },
+     "casts_by_id": {
+      "10181": 63.73,
+      "10161": 10.15,
+      "1240047": 5.46,
+      "12043": 1.0
+     }
+    },
+    "opt-frost-raid-raid-dps": {
+     "dps": 598.61,
+     "never_cast": [
+      "prepull[0] Ice Barrier (13033): talent not taken",
+      "priority[0] Read Leyline (1259705): racial (racials are off)",
+      "priority[1] Evocation (12051): cast by another build of the entry (the line serves builds that reach it)",
+      "priority[3] Cone of Cold (10161): cast by another build of the entry (the line serves builds that reach it)",
+      "priority[5] Cold Snap (12472): talent not taken",
+      "priority[6] Ice Barrier (13033): talent not taken",
+      "priority[7] Blizzard (10187): condition never held"
+     ],
+     "abilities": [
+      "Arcane Blast: prerequisite",
+      "Ice Block: prerequisite"
+     ],
+     "zero_talents": [
+      "Arcane Blast 1: gate: Arcane Mind (tier 5) needs 20 points in Arcane below it, only 19",
+      "Arcane Impact 3: gate: Arcane Mind (tier 5) needs 20 points in Arcane below it, only 17",
+      "Ice Block 1: gate: Fingers of Frost (tier 5) needs 20 points in Frost below it, only 19",
+      "Improved Channeling 5: gate: Arcane Concentration (tier 2) needs 5 points in Arcane below it, only 0",
+      "Magic Absorption 2: gate: Arcane Mind (tier 5) needs 20 points in Arcane below it, only 18"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 75.7
+     },
+     "simulator_rotation": {
+      "DPS": [
+       598.61,
+       598.61,
+       "frost.apl.json"
+      ]
+     },
+     "casts": {
+      "Frostbolt": 69.03,
+      "Ice Lance": 6.66,
+      "Presence of Mind": 1.0
+     },
+     "casts_by_id": {
+      "10181": 69.03,
+      "1240047": 6.66,
+      "12043": 1.0
+     }
+    },
+    "opt-frost-raid-raid-dps-extwc": {
+     "dps": 598.23,
+     "never_cast": [
+      "prepull[0] Ice Barrier (13033): talent not taken",
+      "priority[0] Read Leyline (1259705): racial (racials are off)",
+      "priority[1] Evocation (12051): cast by another build of the entry (the line serves builds that reach it)",
+      "priority[3] Cone of Cold (10161): cast by another build of the entry (the line serves builds that reach it)",
+      "priority[5] Cold Snap (12472): talent not taken",
+      "priority[6] Ice Barrier (13033): talent not taken",
+      "priority[7] Blizzard (10187): condition never held"
+     ],
+     "abilities": [
+      "Arcane Blast: prerequisite",
+      "Arcane Wrath: prerequisite"
+     ],
+     "zero_talents": [
+      "Arcane Blast 1: gate: Arcane Wrath requires Arcane Blast 1, have 0",
+      "Arcane Impact 3: gate: Arcane Mind (tier 5) needs 20 points in Arcane below it, only 17",
+      "Arcane Resilience 3: gate: Arcane Concentration (tier 2) needs 5 points in Arcane below it, only 2",
+      "Arcane Wrath 1: gate: Arcane Mind (tier 5) needs 20 points in Arcane below it, only 19",
+      "Wand Specialization 2: gate: Arcane Concentration (tier 2) needs 5 points in Arcane below it, only 3"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 75.7
+     },
+     "simulator_rotation": {
+      "DPS": [
+       598.23,
+       598.23,
+       "frost.apl.json"
+      ]
+     },
+     "casts": {
+      "Frostbolt": 69.07,
+      "Ice Lance": 6.61,
+      "Presence of Mind": 1.0
+     },
+     "casts_by_id": {
+      "10181": 69.07,
+      "1240047": 6.61,
+      "12043": 1.0
+     }
+    },
+    "frost-ml-raid": {
+     "dps": 799.83,
+     "never_cast": [
+      "priority[0] Read Leyline (1259705): racial (racials are off)",
+      "priority[7] Blizzard (10187): condition never held"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Arcane Resilience 1: gate: Arcane Subtlety (tier 2) needs 5 points in Arcane below it, only 4",
+      "Improved Channeling 4: gate: Arcane Subtlety (tier 2) needs 5 points in Arcane below it, only 1"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 82.0
+     },
+     "simulator_rotation": {
+      "DPS": [
+       799.83,
+       799.83,
+       "frost.apl.json"
+      ]
+     },
+     "casts": {
+      "Frostbolt": 60.29,
+      "Cone of Cold": 12.08,
+      "Ice Lance": 5.63,
+      "Ice Barrier": 4.0,
+      "Cold Snap": 1.0,
+      "Evocation": 0.0
+     },
+     "casts_by_id": {
+      "10181": 60.29,
+      "10161": 12.08,
+      "1240047": 5.63,
+      "13033": 4.0,
+      "12472": 1.0,
+      "12051": 0.0
+     }
+    },
+    "frost-med-raid": {
+     "dps": 796.28,
+     "never_cast": [
+      "priority[0] Read Leyline (1259705): racial (racials are off)",
+      "priority[7] Blizzard (10187): condition never held"
+     ],
+     "abilities": [
+      "Ice Block: situational (defensive)"
+     ],
+     "zero_talents": [
+      "Arcane Geometry 1: gate: Arcane Meditation (tier 4) needs 15 points in Arcane below it, only 14",
+      "Arcane Resilience 3: gate: Arcane Subtlety (tier 2) needs 5 points in Arcane below it, only 2",
+      "Arctic Reach 2: gate: Improved Cone of Cold (tier 5) needs 20 points in Frost below it, only 19",
+      "Ice Block 1: ability: situational (defensive)",
+      "Improved Blizzard 1: gate: Arctic Reach (tier 4) needs 15 points in Frost below it, only 14",
+      "Wand Specialization 2: gate: Arcane Subtlety (tier 2) needs 5 points in Arcane below it, only 3"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 81.9
+     },
+     "simulator_rotation": {
+      "DPS": [
+       796.28,
+       796.28,
+       "frost.apl.json"
+      ]
+     },
+     "casts": {
+      "Frostbolt": 60.09,
+      "Cone of Cold": 12.04,
+      "Ice Lance": 5.73,
+      "Ice Barrier": 3.99,
+      "Cold Snap": 1.0,
+      "Evocation": 0.08
+     },
+     "casts_by_id": {
+      "10181": 60.09,
+      "10161": 12.04,
+      "1240047": 5.73,
+      "13033": 3.99,
+      "12472": 1.0,
+      "12051": 0.08
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "frost.apl.json",
+   "fail": [
+    "frost-winters-chill-raid"
+   ],
+   "date": "2026-11-20"
+  },
+  "arcane-frost-raid": {
+   "fingerprint": "1dc3061f98e3387d",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/mage/arcane-frost-raid-raid.apl.json",
+   "builds": {
+    "arcane-frost-open-raid": {
+     "dps": 691.85,
+     "never_cast": [
+      "prepull[0] Ice Barrier (13033): talent not taken",
+      "priority[0] Ice Barrier (13033): talent not taken",
+      "priority[7] Ice Lance (1240047): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Arcane Resilience 2: gate: Arcane Subtlety (tier 2) needs 5 points in Arcane below it, only 3",
+      "Improved Channeling 3: gate: Arcane Subtlety (tier 2) needs 5 points in Arcane below it, only 2",
+      "Magic Absorption 2: gate: Arcane Mind (tier 5) needs 20 points in Arcane below it, only 18"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 78.3
+     },
+     "simulator_rotation": {
+      "DPS": [
+       691.85,
+       705.06,
+       "arcane.apl.json"
+      ]
+     },
+     "casts": {
+      "Arcane Missiles": 27.14,
+      "Frostbolt": 25.93,
+      "Arcane Blast": 24.17,
+      "Arcane Wrath": 14.08,
+      "Fire Blast": 0.6,
+      "Evocation": 0.0
+     },
+     "casts_by_id": {
+      "10181": 25.93,
+      "1239700": 24.17,
+      "1326082": 14.08,
+      "10212": 13.57,
+      "10274": 13.57,
+      "10199": 0.6,
+      "12051": 0.0
+     }
+    },
+    "frost-arcane-power-raid": {
+     "dps": 680.35,
+     "never_cast": [
+      "prepull[0] Ice Barrier (13033): talent not taken",
+      "priority[0] Ice Barrier (13033): talent not taken",
+      "priority[5] Evocation (12051): cast by another build of the entry (the line serves builds that reach it)",
+      "priority[7] Ice Lance (1240047): talent not taken"
+     ],
+     "abilities": [
+      "Ice Block: situational (defensive)"
+     ],
+     "zero_talents": [
+      "Ice Block 1: ability: situational (defensive)",
+      "Improved Channeling 5: gate: Arcane Concentration (tier 2) needs 5 points in Arcane below it, only 0"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 76.5
+     },
+     "simulator_rotation": {
+      "DPS": [
+       680.35,
+       706.89,
+       "arcane.apl.json"
+      ]
+     },
+     "casts": {
+      "Arcane Missiles": 26.82,
+      "Frostbolt": 25.23,
+      "Arcane Blast": 24.87,
+      "Arcane Wrath": 12.54,
+      "Presence of Mind": 1.0,
+      "Arcane Power": 1.0,
+      "Fire Blast": 0.45
+     },
+     "casts_by_id": {
+      "10181": 25.23,
+      "1239700": 24.87,
+      "10274": 13.41,
+      "10212": 13.41,
+      "1326082": 12.54,
+      "12043": 1.0,
+      "12042": 1.0,
+      "10199": 0.45
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "frost.apl.json, arcane.apl.json",
+   "fail": [],
+   "date": "2026-11-20"
+  },
+  "fire-raid": {
+   "fingerprint": "69c7c6d388ab4ad2",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/mage/fire-raid-raid.apl.json",
+   "builds": {
+    "fire-raid": {
+     "dps": 837.94,
+     "never_cast": [
+      "prepull[0] Ice Barrier (13033): talent not taken",
+      "priority[6] Arcane Blast (1239700): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Burning Soul 2: gate: Combustion (tier 7) needs 30 points in Fire below it, only 29",
+      "Improved Channeling 5: gate: Arcane Concentration (tier 2) needs 5 points in Arcane below it, only 0",
+      "Magic Absorption 1: gate: Arcane Meditation (tier 4) needs 15 points in Arcane below it, only 14"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 93.6
+     },
+     "simulator_rotation": {
+      "DPS": [
+       837.94,
+       829.76,
+       "deepFire.apl.json"
+      ]
+     },
+     "casts": {
+      "Fire Blast": 29.22,
+      "Scorch": 23.5,
+      "Fireball": 22.14,
+      "Pyroblast": 14.36,
+      "Arcane Missiles": 8.72,
+      "Combustion": 1.0
+     },
+     "casts_by_id": {
+      "10199": 29.22,
+      "10207": 23.5,
+      "10151": 22.14,
+      "18809": 14.36,
+      "10274": 4.36,
+      "10212": 4.36,
+      "11129": 1.0
+     }
+    },
+    "opt-fire-raid-raid-dps": {
+     "dps": 826.93,
+     "never_cast": [
+      "prepull[0] Ice Barrier (13033): talent not taken",
+      "priority[6] Arcane Blast (1239700): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Burning Soul 1: gate: Combustion (tier 7) needs 30 points in Fire below it, only 29",
+      "Improved Channeling 5: gate: Arcane Concentration (tier 2) needs 5 points in Arcane below it, only 0",
+      "Magic Absorption 1: gate: Arcane Meditation (tier 4) needs 15 points in Arcane below it, only 14"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 93.6
+     },
+     "simulator_rotation": {
+      "DPS": [
+       826.93,
+       825.16,
+       "deepFire.apl.json"
+      ]
+     },
+     "casts": {
+      "Fire Blast": 30.08,
+      "Fireball": 22.92,
+      "Scorch": 21.59,
+      "Pyroblast": 14.43,
+      "Arcane Missiles": 9.11,
+      "Combustion": 1.0
+     },
+     "casts_by_id": {
+      "10199": 30.08,
+      "10151": 22.92,
+      "10207": 21.59,
+      "18809": 14.43,
+      "10274": 4.56,
+      "10212": 4.56,
+      "11129": 1.0
+     }
+    },
+    "fire-open-raid": {
+     "dps": 869.0,
+     "never_cast": [
+      "prepull[0] Ice Barrier (13033): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Improved Channeling 3: gate: Arcane Subtlety (tier 2) needs 5 points in Arcane below it, only 2",
+      "Wand Specialization 2: gate: Arcane Subtlety (tier 2) needs 5 points in Arcane below it, only 3"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 96.2
+     },
+     "simulator_rotation": {
+      "DPS": [
+       869.0,
+       863.14,
+       "deepFire.apl.json"
+      ]
+     },
+     "casts": {
+      "Fire Blast": 29.92,
+      "Fireball": 18.58,
+      "Scorch": 17.99,
+      "Pyroblast": 14.58,
+      "Arcane Missiles": 12.72,
+      "Arcane Blast": 8.77,
+      "Combustion": 1.0
+     },
+     "casts_by_id": {
+      "10199": 29.92,
+      "10151": 18.58,
+      "10207": 17.99,
+      "18809": 14.58,
+      "1239700": 8.77,
+      "10212": 6.36,
+      "10274": 6.36,
+      "11129": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "deepFire.apl.json",
+   "fail": [],
+   "date": "2026-11-20"
+  },
+  "arcane-dps": {
+   "fingerprint": "1876a446bc6ca09a",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/mage/arcane-dps-raid.apl.json",
+   "builds": {
+    "arcane-blast-raid": {
+     "dps": 692.56,
+     "never_cast": [
+      "prepull[0] Ice Barrier (13033): talent not taken",
+      "prepull[1] Read Leyline (1259705): racial (racials are off)",
+      "prepull[2] Arcane Wrath (1326082): talent not taken",
+      "priority[1] Pyroblast (18809): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Burning Soul 1: utility filler (interrupt)",
+      "Improved Channeling 5: gate: Arcane Concentration (tier 2) needs 5 points in Arcane below it, only 0",
+      "Improved Frostbolt 4: WORTH NOTHING, not a gate or a recorded filler"
+     ],
+     "inert_switches": [],
+     "fail": [
+      "c: Improved Frostbolt worth nothing and not a gate or a recorded filler"
+     ],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 105.6
+     },
+     "casts": {
+      "Arcane Blast": 37.8,
+      "Fire Blast": 28.96,
+      "Scorch": 25.49,
+      "Arcane Missiles": 25.11,
+      "Arcane Power": 1.0,
+      "Presence of Mind": 1.0,
+      "Evocation": 0.76
+     },
+     "casts_by_id": {
+      "1239700": 37.8,
+      "10199": 28.96,
+      "10207": 25.49,
+      "10212": 12.55,
+      "10274": 12.55,
+      "12042": 1.0,
+      "12043": 1.0,
+      "12051": 0.76
+     }
+    },
+    "arcane-open-raid": {
+     "dps": 822.39,
+     "never_cast": [
+      "prepull[0] Ice Barrier (13033): talent not taken",
+      "prepull[1] Read Leyline (1259705): racial (racials are off)"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Arcane Resilience 1: gate: Arcane Subtlety (tier 2) needs 5 points in Arcane below it, only 4",
+      "Improved Channeling 4: gate: Arcane Subtlety (tier 2) needs 5 points in Arcane below it, only 1"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 98.6
+     },
+     "casts": {
+      "Arcane Blast": 35.75,
+      "Arcane Missiles": 25.99,
+      "Fire Blast": 23.22,
+      "Arcane Wrath": 10.36,
+      "Pyroblast": 8.92,
+      "Scorch": 6.34,
+      "Presence of Mind": 1.0,
+      "Arcane Power": 1.0,
+      "Evocation": 0.99
+     },
+     "casts_by_id": {
+      "1239700": 35.75,
+      "10199": 23.22,
+      "10274": 12.99,
+      "10212": 12.99,
+      "1326082": 10.36,
+      "18809": 8.92,
+      "10207": 6.34,
+      "12043": 1.0,
+      "12042": 1.0,
+      "12051": 0.99
+     }
+    },
+    "arcane-fire-raid": {
+     "dps": 825.88,
+     "never_cast": [
+      "prepull[0] Ice Barrier (13033): talent not taken",
+      "prepull[1] Read Leyline (1259705): racial (racials are off)"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Improved Channeling 5: gate: Arcane Subtlety (tier 2) needs 5 points in Arcane below it, only 0"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 97.5
+     },
+     "casts": {
+      "Arcane Blast": 34.28,
+      "Fire Blast": 28.05,
+      "Arcane Missiles": 24.99,
+      "Pyroblast": 10.55,
+      "Arcane Wrath": 8.28,
+      "Scorch": 2.85,
+      "Arcane Power": 1.0,
+      "Presence of Mind": 1.0,
+      "Evocation": 0.97
+     },
+     "casts_by_id": {
+      "1239700": 34.28,
+      "10199": 28.05,
+      "10212": 12.49,
+      "10274": 12.49,
+      "18809": 10.55,
+      "1326082": 8.28,
+      "10207": 2.85,
+      "12042": 1.0,
+      "12043": 1.0,
+      "12051": 0.97
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "the entry's raid rotation is the simulator's own (arcaneFireFill.apl.json)",
+   "fail": [
+    "arcane-blast-raid"
+   ],
+   "date": "2026-11-20"
+  },
+  "frostfire-raid": {
+   "fingerprint": "e289913b590d3a89",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/mage/upstream/ffb.apl.json",
+   "builds": {
+    "frostfire-raid": {
+     "dps": 704.08,
+     "never_cast": [],
+     "abilities": [],
+     "zero_talents": [
+      "Arcane Resilience 1: gate: Arcane Concentration (tier 2) needs 5 points in Arcane below it, only 4",
+      "Burning Soul 3: gate: Heating Up (tier 4) needs 15 points in Fire below it, only 14",
+      "Flame Throwing 1: gate: Combustion (tier 7) needs 30 points in Fire below it, only 29",
+      "Frost Warding 2: gate: Ice Shards (tier 2) needs 5 points in Frost below it, only 3",
+      "Improved Channeling 4: gate: Arcane Concentration (tier 2) needs 5 points in Arcane below it, only 1"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 84.9
+     },
+     "casts": {
+      "Frostfire Bolt": 34.54,
+      "Fire Blast": 24.27,
+      "Pyroblast": 12.7,
+      "Scorch": 12.4,
+      "Combustion": 1.0,
+      "Evocation": 1.0
+     },
+     "casts_by_id": {
+      "1237313": 34.54,
+      "10199": 24.27,
+      "18809": 12.7,
+      "10207": 12.4,
+      "11129": 1.0,
+      "12051": 1.0
+     }
+    },
+    "frostfire-ml-raid": {
+     "dps": 777.83,
+     "never_cast": [],
+     "abilities": [
+      "Ice Block: prerequisite",
+      "Ice Lance: prerequisite"
+     ],
+     "zero_talents": [
+      "Arctic Reach 1: gate: Fingers of Frost (tier 5) needs 20 points in Frost below it, only 19",
+      "Frost Warding 2: gate: Ice Shards (tier 2) needs 5 points in Frost below it, only 4",
+      "Ice Block 1: gate: Fingers of Frost (tier 5) needs 20 points in Frost below it, only 19",
+      "Ice Lance 1: gate: Arctic Reach (tier 4) needs 15 points in Frost below it, only 14",
+      "Improved Frostbolt 1: gate: Arctic Reach (tier 4) needs 15 points in Frost below it, only 14"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 89.0
+     },
+     "casts": {
+      "Frostfire Bolt": 40.58,
+      "Fire Blast": 21.38,
+      "Scorch": 13.15,
+      "Pyroblast": 12.86,
+      "Evocation": 1.0
+     },
+     "casts_by_id": {
+      "1237313": 40.58,
+      "10199": 21.38,
+      "10207": 13.15,
+      "18809": 12.86,
+      "12051": 1.0
+     }
+    },
+    "frostfire-fingers-of-frost-raid": {
+     "dps": 767.51,
+     "never_cast": [],
+     "abilities": [
+      "Ice Block: prerequisite",
+      "Ice Lance: prerequisite"
+     ],
+     "zero_talents": [
+      "Arctic Reach 1: gate: Fingers of Frost (tier 5) needs 20 points in Frost below it, only 19",
+      "Burning Soul 1: recorded filler",
+      "Frost Warding 2: gate: Ice Shards (tier 2) needs 5 points in Frost below it, only 4",
+      "Ice Block 1: gate: Fingers of Frost (tier 5) needs 20 points in Frost below it, only 19",
+      "Ice Lance 1: gate: Arctic Reach (tier 4) needs 15 points in Frost below it, only 14",
+      "Improved Frostbolt 1: gate: Arctic Reach (tier 4) needs 15 points in Frost below it, only 14"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 87.3
+     },
+     "casts": {
+      "Frostfire Bolt": 43.0,
+      "Fire Blast": 18.62,
+      "Scorch": 12.66,
+      "Pyroblast": 12.07,
+      "Evocation": 1.0
+     },
+     "casts_by_id": {
+      "1237313": 43.0,
+      "10199": 18.62,
+      "10207": 12.66,
+      "18809": 12.07,
+      "12051": 1.0
+     }
+    },
+    "frostfire-ffb-raid": {
+     "dps": 781.19,
+     "never_cast": [],
+     "abilities": [
+      "Ice Block: prerequisite",
+      "Ice Lance: prerequisite"
+     ],
+     "zero_talents": [
+      "Frost Warding 2: gate: Ice Shards (tier 2) needs 5 points in Frost below it, only 3",
+      "Ice Block 1: gate: Fingers of Frost (tier 5) needs 20 points in Frost below it, only 19",
+      "Ice Lance 1: gate: Fingers of Frost (tier 5) needs 20 points in Frost below it, only 19",
+      "Improved Blizzard 1: gate: Fingers of Frost (tier 5) needs 20 points in Frost below it, only 19",
+      "Improved Frost Nova 1: gate: Fingers of Frost (tier 5) needs 20 points in Frost below it, only 19"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 88.6
+     },
+     "casts": {
+      "Frostfire Bolt": 40.35,
+      "Fire Blast": 21.29,
+      "Pyroblast": 13.09,
+      "Scorch": 12.87,
+      "Evocation": 1.0
+     },
+     "casts_by_id": {
+      "1237313": 40.35,
+      "10199": 21.29,
+      "18809": 13.09,
+      "10207": 12.87,
+      "12051": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "the entry's raid rotation is the simulator's own (ffb.apl.json)",
+   "fail": [],
+   "date": "2026-11-20"
+  }
+ },
+ "warlock": {
+  "affliction-raid": {
+   "fingerprint": "02937f25299b7150",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/warlock/affliction-raid-raid.apl.json",
+   "builds": {
+    "affliction-dot-raid": {
+     "dps": 815.84,
+     "never_cast": [
+      "priority[7] Siphon Life (18881): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 64.5
+     },
+     "casts": {
+      "Shadow Bolt": 50.22,
+      "Lash of Pain": 15.0,
+      "Life Tap": 12.29,
+      "Immolate": 11.41,
+      "Corruption": 9.9,
+      "Bane of Agony": 2.88,
+      "Bane of Doom": 2.0,
+      "Curse of the Elements": 1.1,
+      "Amplify Curse": 1.0
+     },
+     "casts_by_id": {
+      "11661": 50.22,
+      "11780": 15.0,
+      "11689": 12.29,
+      "11668": 11.41,
+      "11672": 9.9,
+      "11713": 2.88,
+      "603": 2.0,
+      "1311680": 1.1,
+      "18288": 1.0
+     }
+    },
+    "opt-affliction-raid-raid-dps": {
+     "dps": 821.92,
+     "never_cast": [
+      "priority[7] Siphon Life (18881): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 63.6
+     },
+     "casts": {
+      "Shadow Bolt": 51.79,
+      "Lash of Pain": 15.0,
+      "Immolate": 11.18,
+      "Corruption": 9.89,
+      "Life Tap": 9.85,
+      "Bane of Agony": 2.91,
+      "Bane of Doom": 2.0,
+      "Curse of the Elements": 1.1,
+      "Amplify Curse": 1.0
+     },
+     "casts_by_id": {
+      "11661": 51.79,
+      "11780": 15.0,
+      "11668": 11.18,
+      "11672": 9.89,
+      "11689": 9.85,
+      "11713": 2.91,
+      "603": 2.0,
+      "1311680": 1.1,
+      "18288": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "the entry's raid rotation is the simulator's own (sm_ruin.apl.json)",
+   "fail": [],
+   "date": "2026-11-20"
+  },
+  "affliction-wrack-raid": {
+   "fingerprint": "ab83da5fbd84a731",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/warlock/affliction-wrack-raid-raid.apl.json",
+   "builds": {
+    "affliction-wrack-raid": {
+     "dps": 940.52,
+     "never_cast": [
+      "priority[7] Bane of Doom (603): condition never held",
+      "priority[19] Eureka! (1259821): racial (racials are off)",
+      "priority[20] Blood Fury (20572): racial (racials are off)"
+     ],
+     "abilities": [
+      "Demonic Sacrifice: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Demonic Aegis 2: gate: Demonic Sacrifice (tier 3) needs 10 points in Demonology below it, only 8",
+      "Demonic Embrace 5: gate: Demonic Aegis (tier 2) needs 5 points in Demonology below it, only 0",
+      "Improved Life Tap 2: utility filler (mana)"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 60.7
+     },
+     "simulator_rotation": {
+      "DPS": [
+       940.52,
+       935.61,
+       "aff_wrack.apl.json"
+      ]
+     },
+     "casts": {
+      "Wrack": 28.36,
+      "Corruption": 10.07,
+      "Shadow Bolt": 8.28,
+      "Bane of Agony": 7.68,
+      "Siphon Life": 5.31,
+      "Curse of the Elements": 1.1,
+      "Amplify Curse": 1.0,
+      "Death Coil": 0.95,
+      "Life Tap": 0.06
+     },
+     "casts_by_id": {
+      "1316697": 28.36,
+      "11672": 10.07,
+      "11661": 8.28,
+      "11713": 7.68,
+      "18881": 5.31,
+      "1311680": 1.1,
+      "18288": 1.0,
+      "17926": 0.95,
+      "11689": 0.06
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "aff_wrack.apl.json, demo_shadow_brand.apl.json, demo_fire_brand.apl.json, destro.apl.json, sm_ruin.apl.json",
+   "fail": [],
+   "date": "2026-11-20"
+  },
+  "destro-raid": {
+   "fingerprint": "43a82dfd354db398",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/warlock/destro-raid-raid.apl.json",
+   "builds": {
+    "destruction-succubus-raid": {
+     "dps": 881.54,
+     "never_cast": [
+      "priority[5] Bane of Havoc (1225228): condition never held",
+      "priority[23] Eureka! (1259821): racial (racials are off)",
+      "priority[24] Blood Fury (20572): racial (racials are off)",
+      "priority[25] Berserking (20554): racial (racials are off)",
+      "priority[27] Hellfire (11684): condition never held",
+      "priority[29] Death Coil (17926): condition never held"
+     ],
+     "abilities": [
+      "Bane of Havoc: prerequisite"
+     ],
+     "zero_talents": [
+      "Bane of Havoc 1: gate: Incinerate requires Bane of Havoc 1, have 0"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 108.0
+     },
+     "casts": {
+      "Incinerate": 40.22,
+      "Conflagrate": 16.19,
+      "Lash of Pain": 15.0,
+      "Immolate": 12.34,
+      "Life Tap": 12.21,
+      "Shadowburn": 10.92,
+      "Corruption": 9.71,
+      "Bane of Agony": 2.67,
+      "Bane of Doom": 2.0,
+      "Curse of the Elements": 1.1,
+      "Soul Fire": 1.0,
+      "Amplify Curse": 0.87,
+      "Searing Pain": 0.72
+     },
+     "casts_by_id": {
+      "1293813": 40.22,
+      "18932": 16.19,
+      "11780": 15.0,
+      "11668": 12.34,
+      "11689": 12.21,
+      "18871": 10.92,
+      "11672": 9.71,
+      "11713": 2.67,
+      "603": 2.0,
+      "1311680": 1.1,
+      "17924": 1.0,
+      "18288": 0.87,
+      "17923": 0.72
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "the entry's raid rotation is the simulator's own (destro.apl.json)",
+   "fail": [],
+   "date": "2026-11-20"
+  },
+  "fire-destro-raid": {
+   "fingerprint": "4b0938b4d341ed24",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/warlock/fire-destro-raid-raid.apl.json",
+   "builds": {
+    "destruction-fire-raid": {
+     "dps": 726.85,
+     "never_cast": [
+      "priority[0] Conflagrate (18932): talent not taken",
+      "priority[7] Hellfire (11684): condition never held",
+      "priority[8] Rain of Fire (11678): condition never held"
+     ],
+     "abilities": [
+      "Amplify Curse: NEVER CAST, no reason",
+      "Demonic Sacrifice: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Amplify Curse 1: WORTH NOTHING, not a gate or a recorded filler",
+      "Demonic Aegis 2: gate: Demonic Sacrifice (tier 3) needs 10 points in Demonology below it, only 8",
+      "Demonic Embrace 5: gate: Fel Vitality (tier 2) needs 5 points in Demonology below it, only 0"
+     ],
+     "inert_switches": [],
+     "fail": [
+      "b: talent ability Amplify Curse never cast",
+      "c: Amplify Curse worth nothing and not a gate or a recorded filler"
+     ],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 95.5
+     },
+     "simulator_rotation": {
+      "DPS": [
+       726.85,
+       744.74,
+       "sm_ruin.apl.json"
+      ]
+     },
+     "casts": {
+      "Shadow Bolt": 41.42,
+      "Life Tap": 13.4,
+      "Immolate": 11.42,
+      "Shadowburn": 10.87,
+      "Corruption": 10.38,
+      "Bane of Agony": 3.65,
+      "Bane of Doom": 2.0,
+      "Searing Pain": 1.29,
+      "Curse of the Elements": 1.1
+     },
+     "casts_by_id": {
+      "11661": 41.42,
+      "11689": 13.4,
+      "11668": 11.42,
+      "18871": 10.87,
+      "11672": 10.38,
+      "11713": 3.65,
+      "603": 2.0,
+      "17923": 1.29,
+      "1311680": 1.1
+     }
+    },
+    "opt-fire-destro-raid-raid-dps": {
+     "dps": 742.51,
+     "never_cast": [
+      "priority[0] Conflagrate (18932): talent not taken",
+      "priority[4] Shadowburn (18871): talent not taken",
+      "priority[7] Hellfire (11684): condition never held",
+      "priority[8] Rain of Fire (11678): condition never held",
+      "priority[15] Shadowburn (18871): talent not taken"
+     ],
+     "abilities": [
+      "Demonic Sacrifice: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Demonic Aegis 2: gate: Demonic Sacrifice (tier 3) needs 10 points in Demonology below it, only 8",
+      "Improved Health Funnel 2: gate: Fel Vitality (tier 2) needs 5 points in Demonology below it, only 3",
+      "Improved Imp 3: gate: Fel Vitality (tier 2) needs 5 points in Demonology below it, only 2"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 89.3
+     },
+     "simulator_rotation": {
+      "DPS": [
+       742.51,
+       747.95,
+       "sm_ruin.apl.json"
+      ]
+     },
+     "casts": {
+      "Shadow Bolt": 50.2,
+      "Immolate": 11.39,
+      "Corruption": 10.02,
+      "Life Tap": 9.73,
+      "Bane of Agony": 3.64,
+      "Bane of Doom": 2.0,
+      "Searing Pain": 1.25,
+      "Curse of the Elements": 1.1
+     },
+     "casts_by_id": {
+      "11661": 50.2,
+      "11668": 11.39,
+      "11672": 10.02,
+      "11689": 9.73,
+      "11713": 3.64,
+      "603": 2.0,
+      "17923": 1.25,
+      "1311680": 1.1
+     }
+    },
+    "shadow-bolt-hybrid-fire-open-raid": {
+     "dps": 790.25,
+     "never_cast": [
+      "priority[4] Shadowburn (18871): talent not taken",
+      "priority[7] Hellfire (11684): condition never held",
+      "priority[8] Rain of Fire (11678): condition never held",
+      "priority[15] Shadowburn (18871): talent not taken"
+     ],
+     "abilities": [
+      "Demonic Sacrifice: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Demonic Aegis 2: gate: Demonic Sacrifice (tier 3) needs 10 points in Demonology below it, only 8",
+      "Demonic Embrace 5: gate: Demonic Aegis (tier 2) needs 5 points in Demonology below it, only 0"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 95.2
+     },
+     "simulator_rotation": {
+      "DPS": [
+       790.25,
+       697.81,
+       "sm_ruin.apl.json"
+      ]
+     },
+     "casts": {
+      "Shadow Bolt": 41.3,
+      "Conflagrate": 15.07,
+      "Immolate": 11.08,
+      "Corruption": 10.13,
+      "Life Tap": 9.94,
+      "Bane of Agony": 3.46,
+      "Bane of Doom": 2.0,
+      "Searing Pain": 1.11,
+      "Curse of the Elements": 1.1
+     },
+     "casts_by_id": {
+      "11661": 41.3,
+      "18932": 15.07,
+      "11668": 11.08,
+      "11672": 10.13,
+      "11689": 9.94,
+      "11713": 3.46,
+      "603": 2.0,
+      "17923": 1.11,
+      "1311680": 1.1
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "aff_wrack.apl.json, demo_shadow_brand.apl.json, demo_fire_brand.apl.json, destro.apl.json, sm_ruin.apl.json",
+   "fail": [
+    "destruction-fire-raid"
+   ],
+   "date": "2026-11-20"
+  },
+  "sb-raid": {
+   "fingerprint": "2d07c5181495c4b8",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/warlock/sb-raid-raid.apl.json",
+   "builds": {
+    "ds-ruin-raid": {
+     "dps": 765.24,
+     "never_cast": [
+      "priority[0] Conflagrate (18932): talent not taken",
+      "priority[4] Shadowburn (18871): talent not taken",
+      "priority[7] Hellfire (11684): condition never held",
+      "priority[8] Rain of Fire (11678): condition never held"
+     ],
+     "abilities": [
+      "Demonic Sacrifice: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Demonic Aegis 2: gate: Demonic Sacrifice (tier 3) needs 10 points in Demonology below it, only 8",
+      "Demonic Embrace 5: gate: Fel Vitality (tier 2) needs 5 points in Demonology below it, only 0"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 90.5
+     },
+     "simulator_rotation": {
+      "DPS": [
+       765.24,
+       775.04,
+       "sm_ruin.apl.json"
+      ]
+     },
+     "casts": {
+      "Shadow Bolt": 48.43,
+      "Life Tap": 12.78,
+      "Immolate": 11.4,
+      "Corruption": 9.97,
+      "Bane of Agony": 3.61,
+      "Bane of Doom": 2.0,
+      "Amplify Curse": 2.0,
+      "Searing Pain": 1.21,
+      "Curse of the Elements": 1.1
+     },
+     "casts_by_id": {
+      "11661": 48.43,
+      "11689": 12.78,
+      "11668": 11.4,
+      "11672": 9.97,
+      "11713": 3.61,
+      "603": 2.0,
+      "18288": 2.0,
+      "17923": 1.21,
+      "1311680": 1.1
+     }
+    },
+    "opt-sb-raid-raid-dps": {
+     "dps": 767.42,
+     "never_cast": [
+      "priority[0] Conflagrate (18932): talent not taken",
+      "priority[4] Shadowburn (18871): talent not taken",
+      "priority[7] Hellfire (11684): condition never held",
+      "priority[8] Rain of Fire (11678): condition never held"
+     ],
+     "abilities": [
+      "Demonic Sacrifice: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Demonic Aegis 2: gate: Demonic Sacrifice (tier 3) needs 10 points in Demonology below it, only 8",
+      "Improved Health Funnel 2: gate: Fel Vitality (tier 2) needs 5 points in Demonology below it, only 3",
+      "Improved Imp 3: gate: Fel Vitality (tier 2) needs 5 points in Demonology below it, only 2"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 90.3
+     },
+     "simulator_rotation": {
+      "DPS": [
+       767.42,
+       777.53,
+       "sm_ruin.apl.json"
+      ]
+     },
+     "casts": {
+      "Shadow Bolt": 48.81,
+      "Life Tap": 12.04,
+      "Immolate": 11.45,
+      "Corruption": 10.04,
+      "Bane of Agony": 3.58,
+      "Bane of Doom": 2.0,
+      "Amplify Curse": 2.0,
+      "Searing Pain": 1.23,
+      "Curse of the Elements": 1.1
+     },
+     "casts_by_id": {
+      "11661": 48.81,
+      "11689": 12.04,
+      "11668": 11.45,
+      "11672": 10.04,
+      "11713": 3.58,
+      "603": 2.0,
+      "18288": 2.0,
+      "17923": 1.23,
+      "1311680": 1.1
+     }
+    },
+    "destruction-ml-raid": {
+     "dps": 812.32,
+     "never_cast": [
+      "prepull[0] Amplify Curse (18288): talent not taken",
+      "priority[4] Shadowburn (18871): talent not taken",
+      "priority[7] Hellfire (11684): condition never held",
+      "priority[8] Rain of Fire (11678): condition never held"
+     ],
+     "abilities": [
+      "Demonic Sacrifice: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Demonic Aegis 2: gate: Demonic Sacrifice (tier 3) needs 10 points in Demonology below it, only 8",
+      "Demonic Embrace 5: gate: Demonic Aegis (tier 2) needs 5 points in Demonology below it, only 0"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 95.2
+     },
+     "simulator_rotation": {
+      "DPS": [
+       812.32,
+       720.07,
+       "sm_ruin.apl.json"
+      ]
+     },
+     "casts": {
+      "Shadow Bolt": 41.3,
+      "Conflagrate": 15.07,
+      "Immolate": 11.08,
+      "Corruption": 10.13,
+      "Life Tap": 9.94,
+      "Bane of Agony": 3.46,
+      "Bane of Doom": 2.0,
+      "Searing Pain": 1.11,
+      "Curse of the Elements": 1.1
+     },
+     "casts_by_id": {
+      "11661": 41.3,
+      "18932": 15.07,
+      "11668": 11.08,
+      "11672": 10.13,
+      "11689": 9.94,
+      "11713": 3.46,
+      "603": 2.0,
+      "17923": 1.11,
+      "1311680": 1.1
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "aff_wrack.apl.json, demo_shadow_brand.apl.json, demo_fire_brand.apl.json, destro.apl.json, sm_ruin.apl.json",
+   "fail": [],
+   "date": "2026-11-20"
+  },
+  "demonology-raid": {
+   "fingerprint": "a5b4272ae8a224fe",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/warlock/demonology-raid-raid.apl.json",
+   "builds": {
+    "demonology-pact-raid": {
+     "dps": 901.63,
+     "never_cast": [
+      "priority[19] Eureka! (1259821): racial (racials are off)",
+      "priority[20] Blood Fury (20572): racial (racials are off)",
+      "priority[21] Berserking (20554): racial (racials are off)",
+      "priority[23] Hellfire (11684): condition never held"
+     ],
+     "abilities": [
+      "Demonic Sacrifice: used: its casts are booked under another id (removing it changes the result)",
+      "Soul Link: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Demonic Embrace 3: gate: Improved Sayaad (tier 3) needs 10 points in Demonology below it, only 8",
+      "Master Summoner 2: gate: Decimation (tier 4) needs 15 points in Demonology below it, only 14"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 95.5
+     },
+     "simulator_rotation": {
+      "DPS": [
+       901.63,
+       900.32,
+       "demo_shadow_brand.apl.json"
+      ]
+     },
+     "casts": {
+      "Shadow Bolt": 40.16,
+      "Searing Pain": 20.24,
+      "Lash of Pain": 15.0,
+      "Life Tap": 10.31,
+      "Immolate": 10.03,
+      "Corruption": 9.26,
+      "Bane of Agony": 3.13,
+      "Bane of Doom": 2.0,
+      "Curse of the Elements": 1.16,
+      "Death Coil": 0.41
+     },
+     "casts_by_id": {
+      "11661": 40.16,
+      "17923": 20.24,
+      "11780": 15.0,
+      "11689": 10.31,
+      "11668": 10.03,
+      "11672": 9.26,
+      "11713": 3.13,
+      "603": 2.0,
+      "1311680": 1.16,
+      "17926": 0.41
+     }
+    },
+    "demonology-ml-raid": {
+     "dps": 908.82,
+     "never_cast": [
+      "priority[19] Eureka! (1259821): racial (racials are off)",
+      "priority[20] Blood Fury (20572): racial (racials are off)",
+      "priority[21] Berserking (20554): racial (racials are off)",
+      "priority[23] Hellfire (11684): condition never held"
+     ],
+     "abilities": [
+      "Demonic Sacrifice: used: its casts are booked under another id (removing it changes the result)",
+      "Soul Link: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Demonic Embrace 2: gate: Improved Sayaad (tier 3) needs 10 points in Demonology below it, only 8",
+      "Master Summoner 2: gate: Decimation (tier 4) needs 15 points in Demonology below it, only 14"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 95.6
+     },
+     "simulator_rotation": {
+      "DPS": [
+       908.82,
+       908.02,
+       "demo_shadow_brand.apl.json"
+      ]
+     },
+     "casts": {
+      "Shadow Bolt": 39.99,
+      "Searing Pain": 20.15,
+      "Lash of Pain": 15.0,
+      "Life Tap": 10.98,
+      "Immolate": 9.91,
+      "Corruption": 9.17,
+      "Bane of Agony": 3.05,
+      "Bane of Doom": 2.0,
+      "Curse of the Elements": 1.16,
+      "Death Coil": 0.34
+     },
+     "casts_by_id": {
+      "11661": 39.99,
+      "17923": 20.15,
+      "11780": 15.0,
+      "11689": 10.98,
+      "11668": 9.91,
+      "11672": 9.17,
+      "11713": 3.05,
+      "603": 2.0,
+      "1311680": 1.16,
+      "17926": 0.34
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "aff_wrack.apl.json, demo_shadow_brand.apl.json, demo_fire_brand.apl.json, destro.apl.json, sm_ruin.apl.json",
+   "fail": [],
+   "date": "2026-11-20"
+  },
+  "incinerate-raid": {
+   "fingerprint": "7d3709a69dffb6d7",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/warlock/incinerate-raid-raid.apl.json",
+   "builds": {
+    "destruction-incinerate-raid": {
+     "dps": 779.03,
+     "never_cast": [
+      "priority[12] Shadow Bolt (11661): cast by another build of the entry (the line serves builds that reach it)"
+     ],
+     "abilities": [
+      "Bane of Havoc: prerequisite",
+      "Demonic Sacrifice: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Bane of Havoc 1: gate: Shadow and Flame (tier 6) needs 25 points in Destruction below it, only 24",
+      "Demonic Aegis 2: gate: Demonic Sacrifice (tier 3) needs 10 points in Demonology below it, only 8",
+      "Demonic Embrace 5: gate: Fel Vitality (tier 2) needs 5 points in Demonology below it, only 0"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 109.6
+     },
+     "simulator_rotation": {
+      "DPS": [
+       779.03,
+       816.24,
+       "destro.apl.json"
+      ]
+     },
+     "casts": {
+      "Incinerate": 39.17,
+      "Life Tap": 13.76,
+      "Conflagrate": 13.31,
+      "Immolate": 11.95,
+      "Shadowburn": 11.66,
+      "Corruption": 9.86,
+      "Bane of Agony": 7.76,
+      "Curse of the Elements": 1.1,
+      "Searing Pain": 1.03
+     },
+     "casts_by_id": {
+      "1293813": 39.17,
+      "11689": 13.76,
+      "18932": 13.31,
+      "11668": 11.95,
+      "18871": 11.66,
+      "11672": 9.86,
+      "11713": 7.76,
+      "1311680": 1.1,
+      "17923": 1.03
+     }
+    },
+    "destruction-incinerate-open-raid": {
+     "dps": 771.27,
+     "never_cast": [
+      "priority[4] Shadowburn (18871): talent not taken",
+      "priority[11] Incinerate (1293813): talent not taken"
+     ],
+     "abilities": [
+      "Demonic Sacrifice: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Demonic Aegis 2: gate: Demonic Sacrifice (tier 3) needs 10 points in Demonology below it, only 8",
+      "Demonic Embrace 5: gate: Fel Vitality (tier 2) needs 5 points in Demonology below it, only 0"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.8,
+      "gcd_casts": 95.9
+     },
+     "simulator_rotation": {
+      "DPS": [
+       771.27,
+       696.73,
+       "sm_ruin.apl.json"
+      ]
+     },
+     "casts": {
+      "Shadow Bolt": 40.57,
+      "Conflagrate": 13.38,
+      "Immolate": 11.88,
+      "Corruption": 10.09,
+      "Life Tap": 9.72,
+      "Bane of Agony": 7.99,
+      "Searing Pain": 1.16,
+      "Curse of the Elements": 1.11
+     },
+     "casts_by_id": {
+      "11661": 40.57,
+      "18932": 13.38,
+      "11668": 11.88,
+      "11672": 10.09,
+      "11689": 9.72,
+      "11713": 7.99,
+      "17923": 1.16,
+      "1311680": 1.11
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "aff_wrack.apl.json, demo_shadow_brand.apl.json, demo_fire_brand.apl.json, destro.apl.json, sm_ruin.apl.json",
+   "fail": [],
+   "date": "2026-11-20"
+  }
+ },
+ "paladin": {
+  "ret-dps": {
+   "fingerprint": "c6cb455f01709bd7",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/paladin/ret-dps-raid.apl.json",
+   "builds": {
+    "ret-raid-dps": {
+     "dps": 632.09,
+     "never_cast": [
+      "priority[9] Seal of Righteousness (20293): cast by another build of the entry (the line serves builds that reach it)",
+      "priority[11] Exorcism (10314): needs an Undead or Demon target (the bench's boss is an Elemental)"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Deflection 1: gate: Champion of the Light (tier 6) needs 25 points in Retribution below it, only 24",
+      "Divine Favor 1: gate: Divine Precision (tier 4) needs 15 points in Holy below it, only 14",
+      "Precision 1: WORTH NOTHING, not a gate or a recorded filler",
+      "Purifying Power 2: gate: Divine Precision (tier 4) needs 15 points in Holy below it, only 13",
+      "Redoubt 5: gate: Precision (tier 2) needs 5 points in Protection below it, only 0",
+      "Reverence 2: gate: Divine Precision (tier 4) needs 15 points in Holy below it, only 13"
+     ],
+     "inert_switches": [],
+     "fail": [
+      "c: Precision worth nothing and not a gate or a recorded filler"
+     ],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 84,
+      "mh_speed": 2.1,
+      "gcd_casts": 52
+     },
+     "simulator_rotation": {
+      "DPS": [
+       632.09,
+       635.17,
+       "default.apl.json"
+      ]
+     },
+     "casts": {
+      "Consecration": 22.0,
+      "Judgement of Command": 22.0,
+      "Holy Strike": 17.0,
+      "Seal of Command": 6.0,
+      "Hammer of Wrath": 5.0,
+      "Divine Favor": 2.0,
+      "Judgement of the Crusader": 1.0,
+      "Retribution Aura": 1.0,
+      "Seal of the Crusader": 1.0
+     },
+     "casts_by_id": {
+      "20924": 22.0,
+      "20968": 22.0,
+      "10333": 17.0,
+      "20920": 6.0,
+      "24239": 5.0,
+      "20216": 2.0,
+      "20303": 1.0,
+      "10301": 1.0,
+      "20308": 1.0
+     }
+    },
+    "ret-full-buffs-raid": {
+     "dps": 628.4,
+     "never_cast": [
+      "priority[9] Seal of Righteousness (20293): cast by another build of the entry (the line serves builds that reach it)",
+      "priority[11] Exorcism (10314): needs an Undead or Demon target (the bench's boss is an Elemental)"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Deflection 1: gate: Champion of the Light (tier 6) needs 25 points in Retribution below it, only 24",
+      "Redoubt 5: gate: Precision (tier 2) needs 5 points in Protection below it, only 0",
+      "Sacred Duty 2: gate: Toughness (tier 3) needs 10 points in Protection below it, only 8",
+      "Toughness 5: utility filler (survival)"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 84,
+      "mh_speed": 2.1,
+      "gcd_casts": 52
+     },
+     "simulator_rotation": {
+      "DPS": [
+       628.4,
+       632.13,
+       "default.apl.json"
+      ]
+     },
+     "casts": {
+      "Judgement of Command": 22.0,
+      "Consecration": 22.0,
+      "Holy Strike": 17.0,
+      "Seal of Command": 6.0,
+      "Hammer of Wrath": 5.0,
+      "Seal of the Crusader": 1.0,
+      "Judgement of the Crusader": 1.0,
+      "Retribution Aura": 1.0
+     },
+     "casts_by_id": {
+      "20968": 22.0,
+      "20924": 22.0,
+      "10333": 17.0,
+      "20920": 6.0,
+      "24239": 5.0,
+      "20308": 1.0,
+      "20303": 1.0,
+      "10301": 1.0
+     }
+    },
+    "opt-ret-dps-raid-dps": {
+     "dps": 632.09,
+     "never_cast": [
+      "priority[9] Seal of Righteousness (20293): cast by another build of the entry (the line serves builds that reach it)",
+      "priority[11] Exorcism (10314): needs an Undead or Demon target (the bench's boss is an Elemental)"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Benediction 5: gate: Conviction (tier 2) needs 5 points in Retribution below it, only 1",
+      "Deflection 1: gate: Champion of the Light (tier 6) needs 25 points in Retribution below it, only 24",
+      "Illumination 1: gate: Divine Precision (tier 4) needs 15 points in Holy below it, only 14",
+      "Precision 1: WORTH NOTHING, not a gate or a recorded filler",
+      "Purifying Power 2: gate: Divine Precision (tier 4) needs 15 points in Holy below it, only 13",
+      "Redoubt 5: gate: Precision (tier 2) needs 5 points in Protection below it, only 0",
+      "Reverence 2: gate: Illumination requires Reverence 2, have 0"
+     ],
+     "inert_switches": [],
+     "fail": [
+      "c: Precision worth nothing and not a gate or a recorded filler"
+     ],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 84,
+      "mh_speed": 2.1,
+      "gcd_casts": 52
+     },
+     "simulator_rotation": {
+      "DPS": [
+       632.09,
+       635.17,
+       "default.apl.json"
+      ]
+     },
+     "casts": {
+      "Judgement of Command": 22.0,
+      "Consecration": 22.0,
+      "Holy Strike": 17.0,
+      "Seal of Command": 6.0,
+      "Hammer of Wrath": 5.0,
+      "Judgement of the Crusader": 1.0,
+      "Retribution Aura": 1.0,
+      "Seal of the Crusader": 1.0
+     },
+     "casts_by_id": {
+      "20968": 22.0,
+      "20924": 22.0,
+      "10333": 17.0,
+      "20920": 6.0,
+      "24239": 5.0,
+      "20303": 1.0,
+      "10301": 1.0,
+      "20308": 1.0
+     }
+    },
+    "retribution-ml-raid": {
+     "dps": 628.92,
+     "never_cast": [
+      "priority[9] Seal of Righteousness (20293): cast by another build of the entry (the line serves builds that reach it)",
+      "priority[11] Exorcism (10314): needs an Undead or Demon target (the bench's boss is an Elemental)"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Deflection 1: gate: Champion of the Light (tier 6) needs 25 points in Retribution below it, only 24",
+      "Redoubt 5: gate: Precision (tier 2) needs 5 points in Protection below it, only 0",
+      "Sacred Duty 2: gate: Toughness (tier 3) needs 10 points in Protection below it, only 8",
+      "Toughness 4: utility filler (survival)"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 84,
+      "mh_speed": 2.1,
+      "gcd_casts": 52
+     },
+     "simulator_rotation": {
+      "DPS": [
+       628.92,
+       632.26,
+       "default.apl.json"
+      ]
+     },
+     "casts": {
+      "Consecration": 22.0,
+      "Judgement of Command": 22.0,
+      "Holy Strike": 17.0,
+      "Seal of Command": 6.0,
+      "Hammer of Wrath": 5.0,
+      "Judgement of the Crusader": 1.0,
+      "Seal of the Crusader": 1.0,
+      "Retribution Aura": 1.0
+     },
+     "casts_by_id": {
+      "20924": 22.0,
+      "20968": 22.0,
+      "10333": 17.0,
+      "20920": 6.0,
+      "24239": 5.0,
+      "20303": 1.0,
+      "20308": 1.0,
+      "10301": 1.0
+     }
+    },
+    "retribution-open-raid": {
+     "dps": 769.35,
+     "never_cast": [
+      "priority[11] Exorcism (10314): needs an Undead or Demon target (the bench's boss is an Elemental)"
+     ],
+     "abilities": [
+      "Repentance: prerequisite"
+     ],
+     "zero_talents": [
+      "Deflection 1: gate: Improved Judgement (tier 2) needs 5 points in Retribution below it, only 4",
+      "Purifying Power 1: gate: Divine Precision (tier 4) needs 15 points in Holy below it, only 14",
+      "Repentance 1: gate: Champion of the Light (tier 6) needs 25 points in Retribution below it, only 24",
+      "Unyielding Faith 2: gate: Repentance (tier 5) needs 20 points in Retribution below it, only 19"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 85,
+      "mh_speed": 2.1,
+      "gcd_casts": 84.5
+     },
+     "simulator_rotation": {
+      "DPS": [
+       769.35,
+       764.73,
+       "default.apl.json"
+      ]
+     },
+     "casts": {
+      "Consecration": 21.88,
+      "Seal of Command": 19.19,
+      "Seal of Righteousness": 18.42,
+      "Holy Strike": 17.03,
+      "Judgement of Command": 14.84,
+      "Judgement of Righteousness": 7.16,
+      "Hammer of Wrath": 6.0,
+      "Judgement of the Crusader": 1.0,
+      "Retribution Aura": 1.0,
+      "Seal of the Crusader": 1.0
+     },
+     "casts_by_id": {
+      "20924": 21.88,
+      "20920": 19.19,
+      "20293": 18.42,
+      "10333": 17.03,
+      "20968": 14.84,
+      "20286": 7.16,
+      "24239": 6.0,
+      "20303": 1.0,
+      "10301": 1.0,
+      "20308": 1.0
+     }
+    },
+    "prot-ret-ml-raid": {
+     "dps": 654.51,
+     "never_cast": [
+      "priority[9] Seal of Righteousness (20293): cast by another build of the entry (the line serves builds that reach it)",
+      "priority[11] Exorcism (10314): needs an Undead or Demon target (the bench's boss is an Elemental)"
+     ],
+     "abilities": [
+      "Templar's Bulwark: situational (defensive)"
+     ],
+     "zero_talents": [
+      "Deflection 1: gate: Champion of the Light (tier 6) needs 25 points in Retribution below it, only 24",
+      "Redoubt 3: gate: Templar's Bulwark (tier 3) needs 10 points in Protection below it, only 7",
+      "Templar's Bulwark 1: ability: situational (defensive)",
+      "Toughness 1: recorded filler",
+      "Unyielding Faith 2: gate: Champion of the Light (tier 6) needs 25 points in Retribution below it, only 23"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 84,
+      "mh_speed": 2.1,
+      "gcd_casts": 53
+     },
+     "simulator_rotation": {
+      "DPS": [
+       654.51,
+       652.86,
+       "default.apl.json"
+      ]
+     },
+     "casts": {
+      "Judgement of Command": 22.0,
+      "Consecration": 22.0,
+      "Holy Strike": 18.0,
+      "Seal of Command": 6.0,
+      "Hammer of Wrath": 5.0,
+      "Judgement of the Crusader": 1.0,
+      "Retribution Aura": 1.0,
+      "Seal of the Crusader": 1.0
+     },
+     "casts_by_id": {
+      "20968": 22.0,
+      "20924": 22.0,
+      "10333": 18.0,
+      "20920": 6.0,
+      "24239": 5.0,
+      "20303": 1.0,
+      "10301": 1.0,
+      "20308": 1.0
+     }
+    },
+    "retribution-unsealed-wrath-raid": {
+     "dps": 767.79,
+     "never_cast": [
+      "priority[11] Exorcism (10314): needs an Undead or Demon target (the bench's boss is an Elemental)"
+     ],
+     "abilities": [
+      "Repentance: prerequisite"
+     ],
+     "zero_talents": [
+      "Repentance 1: gate: Champion of the Light (tier 6) needs 25 points in Retribution below it, only 24",
+      "Unyielding Faith 1: gate: Champion of the Light (tier 6) needs 25 points in Retribution below it, only 24"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 85,
+      "mh_speed": 2.1,
+      "gcd_casts": 84.5
+     },
+     "simulator_rotation": {
+      "DPS": [
+       767.79,
+       762.14,
+       "default.apl.json"
+      ]
+     },
+     "casts": {
+      "Consecration": 21.86,
+      "Seal of Command": 19.2,
+      "Seal of Righteousness": 18.42,
+      "Holy Strike": 17.04,
+      "Judgement of Command": 14.84,
+      "Judgement of Righteousness": 7.16,
+      "Hammer of Wrath": 6.0,
+      "Judgement of the Crusader": 1.0,
+      "Seal of the Crusader": 1.0,
+      "Retribution Aura": 1.0
+     },
+     "casts_by_id": {
+      "20924": 21.86,
+      "20920": 19.2,
+      "20293": 18.42,
+      "10333": 17.04,
+      "20968": 14.84,
+      "20286": 7.16,
+      "24239": 6.0,
+      "20303": 1.0,
+      "20308": 1.0,
+      "10301": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "default.apl.json",
+   "fail": [
+    "opt-ret-dps-raid-dps",
+    "ret-raid-dps"
+   ],
+   "date": "2026-11-20"
+  },
+  "prot-tank": {
+   "fingerprint": "3d9b2decb0e5fd79",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/paladin/prot-tank-raid.apl.json",
+   "builds": {
+    "prot-tank": {
+     "dps": 401.33,
+     "never_cast": [
+      "priority[3] Swift Judgement (1310994): used: its casts are booked under another id (removing it changes the result)",
+      "priority[7] Holy Shock (25903): talent not taken",
+      "priority[12] Exorcism (10314): needs an Undead or Demon target (the bench's boss is an Elemental)"
+     ],
+     "abilities": [
+      "Swift Judgement: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 77.4,
+      "mh_speed": 2.4,
+      "gcd_casts": 72.5
+     },
+     "casts": {
+      "Judgement of Fury": 49.22,
+      "Holy Strike": 29.05,
+      "Holy Shield": 16.35,
+      "Consecration": 15.67,
+      "Seal of Fury": 6.0,
+      "Hammer of Wrath": 1.4,
+      "Judgement of the Crusader": 1.0,
+      "Retribution Aura": 1.0,
+      "Seal of the Crusader": 1.0,
+      "Templar's Bulwark": 1.0,
+      "Lay on Hands": 1.0,
+      "Righteous Fury": 1.0
+     },
+     "casts_by_id": {
+      "10333": 29.05,
+      "20414": 24.61,
+      "20232": 24.61,
+      "20924": 15.67,
+      "1239570": 14.59,
+      "20423": 6.0,
+      "20928": 1.76,
+      "24239": 1.4,
+      "20303": 1.0,
+      "10301": 1.0,
+      "20308": 1.0,
+      "1311015": 1.0,
+      "10310": 1.0,
+      "25780": 1.0
+     }
+    },
+    "opt-prot-tank-raid-tank": {
+     "dps": 381.44,
+     "never_cast": [
+      "priority[3] Swift Judgement (1310994): talent not taken",
+      "priority[7] Holy Shock (25903): talent not taken",
+      "priority[12] Exorcism (10314): needs an Undead or Demon target (the bench's boss is an Elemental)"
+     ],
+     "abilities": [],
+     "zero_talents": [],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 77.4,
+      "mh_speed": 2.4,
+      "gcd_casts": 71.5
+     },
+     "casts": {
+      "Judgement of Fury": 33.75,
+      "Holy Strike": 29.1,
+      "Holy Shield": 16.2,
+      "Consecration": 14.85,
+      "Seal of Fury": 6.0,
+      "Hammer of Wrath": 1.39,
+      "Righteous Fury": 1.0,
+      "Lay on Hands": 1.0,
+      "Seal of the Crusader": 1.0,
+      "Retribution Aura": 1.0,
+      "Templar's Bulwark": 1.0,
+      "Judgement of the Crusader": 1.0
+     },
+     "casts_by_id": {
+      "10333": 29.1,
+      "20232": 16.88,
+      "20414": 16.88,
+      "20924": 14.85,
+      "1239570": 14.12,
+      "20423": 6.0,
+      "20928": 2.08,
+      "24239": 1.39,
+      "25780": 1.0,
+      "10310": 1.0,
+      "20308": 1.0,
+      "10301": 1.0,
+      "1311015": 1.0,
+      "20303": 1.0
+     }
+    },
+    "protection-ml-tank": {
+     "dps": 434.86,
+     "never_cast": [
+      "priority[3] Swift Judgement (1310994): used: its casts are booked under another id (removing it changes the result)",
+      "priority[7] Holy Shock (25903): talent not taken",
+      "priority[12] Exorcism (10314): needs an Undead or Demon target (the bench's boss is an Elemental)"
+     ],
+     "abilities": [
+      "Swift Judgement: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 77.4,
+      "mh_speed": 2.4,
+      "gcd_casts": 74.5
+     },
+     "casts": {
+      "Judgement of Fury": 49.51,
+      "Holy Strike": 28.99,
+      "Consecration": 17.44,
+      "Holy Shield": 16.57,
+      "Seal of Fury": 6.0,
+      "Hammer of Wrath": 1.53,
+      "Judgement of the Crusader": 1.0,
+      "Templar's Bulwark": 1.0,
+      "Seal of the Crusader": 1.0,
+      "Retribution Aura": 1.0,
+      "Lay on Hands": 1.0,
+      "Righteous Fury": 1.0
+     },
+     "casts_by_id": {
+      "10333": 28.99,
+      "20414": 24.76,
+      "20232": 24.76,
+      "20924": 17.44,
+      "1239570": 15.31,
+      "20423": 6.0,
+      "24239": 1.53,
+      "20928": 1.26,
+      "20303": 1.0,
+      "1311015": 1.0,
+      "20308": 1.0,
+      "10301": 1.0,
+      "10310": 1.0,
+      "25780": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "the official simulator ships no rotation for this spec (protection-default.apl.json missing)",
+   "fail": [],
+   "date": "2026-11-20"
+  },
+  "shockadin-raid": {
+   "fingerprint": "adbe1a261c5ea671",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/paladin/shockadin-raid-raid.apl.json",
+   "builds": {
+    "shockadin-open-raid": {
+     "dps": 803.44,
+     "never_cast": [
+      "priority[1] Seal of Command (20920): condition never held",
+      "priority[11] Exorcism (10314): needs an Undead or Demon target (the bench's boss is an Elemental)"
+     ],
+     "abilities": [
+      "Holy Shock: used: its casts are booked under another id (removing it changes the result)",
+      "Seal of Command: prerequisite"
+     ],
+     "zero_talents": [
+      "Deflection 2: gate: Champion of the Light (tier 6) needs 25 points in Retribution below it, only 23",
+      "Purifying Power 2: gate: Consecrated Ground (tier 5) needs 20 points in Holy below it, only 18",
+      "Seal of Command 1: gate: Vengeance requires Seal of Command 1, have 0",
+      "Spiritual Focus 1: gate: Consecrated Ground (tier 5) needs 20 points in Holy below it, only 19",
+      "Unyielding Faith 2: gate: Champion of the Light (tier 6) needs 25 points in Retribution below it, only 23"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 82,
+      "mh_speed": 2.1,
+      "gcd_casts": 74
+     },
+     "simulator_rotation": {
+      "DPS": [
+       803.44,
+       794.92,
+       "holy_shock.apl.json"
+      ]
+     },
+     "casts": {
+      "Judgement of Righteousness": 23.0,
+      "Consecration": 22.0,
+      "Holy Strike": 18.0,
+      "Holy Shock": 17.0,
+      "Seal of Righteousness": 10.0,
+      "Hammer of Wrath": 5.0,
+      "Divine Favor": 2.0,
+      "Retribution Aura": 1.0,
+      "Seal of the Crusader": 1.0
+     },
+     "casts_by_id": {
+      "20286": 23.0,
+      "20924": 22.0,
+      "10333": 18.0,
+      "25902": 17.0,
+      "20293": 10.0,
+      "24239": 5.0,
+      "20216": 2.0,
+      "10301": 1.0,
+      "20308": 1.0
+     }
+    },
+    "shockadin-holy-shock-raid": {
+     "dps": 808.18,
+     "never_cast": [
+      "priority[1] Seal of Command (20920): condition never held",
+      "priority[11] Exorcism (10314): needs an Undead or Demon target (the bench's boss is an Elemental)"
+     ],
+     "abilities": [
+      "Holy Shock: used: its casts are booked under another id (removing it changes the result)",
+      "Seal of Command: prerequisite"
+     ],
+     "zero_talents": [
+      "Infusion of Light 1: gate: Consecrated Ground (tier 5) needs 20 points in Holy below it, only 19",
+      "Purifying Power 2: gate: Consecrated Ground (tier 5) needs 20 points in Holy below it, only 18",
+      "Seal of Command 1: gate: Vengeance requires Seal of Command 1, have 0"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 83,
+      "mh_speed": 2.1,
+      "gcd_casts": 74
+     },
+     "simulator_rotation": {
+      "DPS": [
+       808.18,
+       793.5,
+       "holy_shock.apl.json"
+      ]
+     },
+     "casts": {
+      "Judgement of Righteousness": 23.0,
+      "Consecration": 22.0,
+      "Holy Strike": 18.0,
+      "Holy Shock": 17.0,
+      "Seal of Righteousness": 10.0,
+      "Hammer of Wrath": 5.0,
+      "Divine Favor": 2.0,
+      "Retribution Aura": 1.0,
+      "Seal of the Crusader": 1.0
+     },
+     "casts_by_id": {
+      "20286": 23.0,
+      "20924": 22.0,
+      "10333": 18.0,
+      "25902": 17.0,
+      "20293": 10.0,
+      "24239": 5.0,
+      "20216": 2.0,
+      "10301": 1.0,
+      "20308": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "holy_shock.apl.json",
+   "fail": [],
+   "date": "2026-11-20"
+  }
+ },
+ "rogue": {
+  "combat-swords-raid": {
+   "fingerprint": "cb41d171c10bfcb8",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/rogue/combat-swords-raid-raid.apl.json",
+   "builds": {
+    "combat-swords-raid": {
+     "dps": 694.25,
+     "never_cast": [
+      "prepull[1] Premeditation (14183): talent not taken",
+      "prepull[2] Stealth (1787): switch off (Start In Stealth)",
+      "priority[0] Expose Armor (11198): condition never held",
+      "priority[1] Ambush (11269): condition never held",
+      "priority[5] Preparation (14185): talent not taken",
+      "priority[6] Blood Fury (20572): racial (racials are off)",
+      "priority[11] Adrenaline Rush (13750): talent not taken",
+      "priority[14] Elune's Light (1259799): racial (racials are off)",
+      "priority[15] Eureka! (1259812): racial (racials are off)",
+      "priority[18] Premeditation (14183): talent not taken",
+      "priority[19] Death Mark (1325758): talent not taken",
+      "priority[20] Rupture (11275): condition never held",
+      "priority[24] Ghostly Strike (14278): talent not taken",
+      "priority[25] Hemorrhage (16511): talent not taken",
+      "priority[26] Backstab (11281): condition never held",
+      "priority[27] Mutilate (1241584): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Deflection 3: gate: Aggression (tier 4) needs 15 points in Combat below it, only 13",
+      "Improved Expose Armor 2: gate: Relentless Strikes (tier 5) needs 20 points in Assassination below it, only 18",
+      "Improved Gouge 2: gate: Relentless Strikes (tier 5) needs 20 points in Assassination below it, only 18",
+      "Lightning Reflexes 5: gate: Aggression (tier 4) needs 15 points in Combat below it, only 11"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 131.2,
+      "mh_speed": 1.8,
+      "gcd_casts": 69.3
+     },
+     "simulator_rotation": {
+      "DPS": [
+       694.25,
+       691.22,
+       "default.apl.json"
+      ]
+     },
+     "casts": {
+      "Sinister Strike": 48.29,
+      "11337": 41.66,
+      "25349": 23.75,
+      "Shank": 18.0,
+      "Eviscerate": 11.73,
+      "Slice and Dice": 9.95,
+      "Blade Flurry": 2.0,
+      "Vanish": 1.0,
+      "Garrote": 1.0,
+      "Cold Blood": 0.99
+     },
+     "casts_by_id": {
+      "11294": 48.29,
+      "11337": 41.66,
+      "25349": 23.75,
+      "1329549": 18.0,
+      "11300": 11.73,
+      "6774": 9.95,
+      "13877": 2.0,
+      "1857": 1.0,
+      "11290": 1.0,
+      "14177": 0.99
+     }
+    },
+    "opt-combat-swords-raid-raid-dps": {
+     "dps": 713.4,
+     "never_cast": [
+      "prepull[1] Premeditation (14183): talent not taken",
+      "prepull[2] Stealth (1787): switch off (Start In Stealth)",
+      "priority[0] Expose Armor (11198): condition never held",
+      "priority[1] Ambush (11269): condition never held",
+      "priority[5] Preparation (14185): talent not taken",
+      "priority[6] Blood Fury (20572): racial (racials are off)",
+      "priority[11] Adrenaline Rush (13750): talent not taken",
+      "priority[14] Elune's Light (1259799): racial (racials are off)",
+      "priority[15] Eureka! (1259812): racial (racials are off)",
+      "priority[18] Premeditation (14183): talent not taken",
+      "priority[19] Death Mark (1325758): talent not taken",
+      "priority[20] Rupture (11275): condition never held",
+      "priority[22] Cold Blood (14177): talent not taken",
+      "priority[24] Ghostly Strike (14278): talent not taken",
+      "priority[25] Hemorrhage (16511): talent not taken",
+      "priority[26] Backstab (11281): condition never held",
+      "priority[27] Mutilate (1241584): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Deflection 3: gate: Aggression (tier 4) needs 15 points in Combat below it, only 13",
+      "Lightning Reflexes 5: gate: Aggression (tier 4) needs 15 points in Combat below it, only 11"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 131.3,
+      "mh_speed": 1.8,
+      "gcd_casts": 69.3
+     },
+     "simulator_rotation": {
+      "DPS": [
+       713.4,
+       708.85,
+       "default.apl.json"
+      ]
+     },
+     "casts": {
+      "11337": 62.49,
+      "Sinister Strike": 48.33,
+      "25349": 31.78,
+      "Shank": 18.0,
+      "Eviscerate": 11.72,
+      "Slice and Dice": 9.94,
+      "Blade Flurry": 2.0,
+      "Vanish": 1.0,
+      "Garrote": 1.0
+     },
+     "casts_by_id": {
+      "11337": 62.49,
+      "11294": 48.33,
+      "25349": 31.78,
+      "1329549": 18.0,
+      "11300": 11.72,
+      "6774": 9.94,
+      "13877": 2.0,
+      "1857": 1.0,
+      "11290": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "default.apl.json",
+   "fail": [],
+   "date": "2026-11-20"
+  },
+  "combat-daggers-raid": {
+   "fingerprint": "51d3293dee83f204",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/rogue/combat-daggers-raid-raid.apl.json",
+   "builds": {
+    "combat-daggers-raid": {
+     "dps": 684.84,
+     "never_cast": [
+      "prepull[1] Premeditation (14183): talent not taken",
+      "prepull[2] Stealth (1787): switch off (Start In Stealth)",
+      "priority[0] Expose Armor (11198): condition never held",
+      "priority[1] Ambush (11269): condition never held",
+      "priority[5] Preparation (14185): talent not taken",
+      "priority[6] Blood Fury (20572): racial (racials are off)",
+      "priority[11] Adrenaline Rush (13750): talent not taken",
+      "priority[14] Elune's Light (1259799): racial (racials are off)",
+      "priority[15] Eureka! (1259812): racial (racials are off)",
+      "priority[18] Premeditation (14183): talent not taken",
+      "priority[19] Death Mark (1325758): talent not taken",
+      "priority[20] Rupture (11275): condition never held",
+      "priority[24] Ghostly Strike (14278): talent not taken",
+      "priority[25] Hemorrhage (16511): talent not taken",
+      "priority[27] Mutilate (1241584): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Deflection 2: gate: Aggression (tier 4) needs 15 points in Combat below it, only 14",
+      "Improved Expose Armor 2: gate: Relentless Strikes (tier 5) needs 20 points in Assassination below it, only 18",
+      "Improved Gouge 2: gate: Relentless Strikes (tier 5) needs 20 points in Assassination below it, only 18",
+      "Lightning Reflexes 5: gate: Deflection (tier 2) needs 5 points in Combat below it, only 3"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 146.9,
+      "mh_speed": 1.6,
+      "gcd_casts": 52.3
+     },
+     "simulator_rotation": {
+      "DPS": [
+       684.84,
+       626.34,
+       "default.apl.json"
+      ]
+     },
+     "casts": {
+      "11337": 38.35,
+      "Backstab": 31.29,
+      "25349": 29.36,
+      "Shank": 18.0,
+      "Eviscerate": 13.63,
+      "Slice and Dice": 10.22,
+      "Blade Flurry": 2.0,
+      "Garrote": 1.0,
+      "Vanish": 1.0,
+      "Cold Blood": 0.63
+     },
+     "casts_by_id": {
+      "11337": 38.35,
+      "11281": 31.29,
+      "25349": 29.36,
+      "1329549": 18.0,
+      "11300": 13.63,
+      "6774": 10.22,
+      "13877": 2.0,
+      "11290": 1.0,
+      "1857": 1.0,
+      "14177": 0.63
+     }
+    },
+    "opt-combat-daggers-raid-raid-dps": {
+     "dps": 684.84,
+     "never_cast": [
+      "prepull[1] Premeditation (14183): talent not taken",
+      "prepull[2] Stealth (1787): switch off (Start In Stealth)",
+      "priority[0] Expose Armor (11198): condition never held",
+      "priority[1] Ambush (11269): condition never held",
+      "priority[5] Preparation (14185): talent not taken",
+      "priority[6] Blood Fury (20572): racial (racials are off)",
+      "priority[11] Adrenaline Rush (13750): talent not taken",
+      "priority[14] Elune's Light (1259799): racial (racials are off)",
+      "priority[15] Eureka! (1259812): racial (racials are off)",
+      "priority[18] Premeditation (14183): talent not taken",
+      "priority[19] Death Mark (1325758): talent not taken",
+      "priority[20] Rupture (11275): condition never held",
+      "priority[24] Ghostly Strike (14278): talent not taken",
+      "priority[25] Hemorrhage (16511): talent not taken",
+      "priority[27] Mutilate (1241584): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Deflection 2: gate: Aggression (tier 4) needs 15 points in Combat below it, only 14",
+      "Improved Expose Armor 2: gate: Relentless Strikes (tier 5) needs 20 points in Assassination below it, only 18",
+      "Improved Gouge 2: gate: Relentless Strikes (tier 5) needs 20 points in Assassination below it, only 18",
+      "Lightning Reflexes 5: gate: Deflection (tier 2) needs 5 points in Combat below it, only 3"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 146.9,
+      "mh_speed": 1.6,
+      "gcd_casts": 52.3
+     },
+     "simulator_rotation": {
+      "DPS": [
+       684.84,
+       626.34,
+       "default.apl.json"
+      ]
+     },
+     "casts": {
+      "11337": 38.35,
+      "Backstab": 31.29,
+      "25349": 29.36,
+      "Shank": 18.0,
+      "Eviscerate": 13.63,
+      "Slice and Dice": 10.22,
+      "Blade Flurry": 2.0,
+      "Garrote": 1.0,
+      "Vanish": 1.0,
+      "Cold Blood": 0.63
+     },
+     "casts_by_id": {
+      "11337": 38.35,
+      "11281": 31.29,
+      "25349": 29.36,
+      "1329549": 18.0,
+      "11300": 13.63,
+      "6774": 10.22,
+      "13877": 2.0,
+      "11290": 1.0,
+      "1857": 1.0,
+      "14177": 0.63
+     }
+    },
+    "combat-ml-raid": {
+     "dps": 791.14,
+     "never_cast": [
+      "prepull[1] Premeditation (14183): talent not taken",
+      "prepull[2] Stealth (1787): switch off (Start In Stealth)",
+      "priority[0] Expose Armor (11198): condition never held",
+      "priority[1] Ambush (11269): condition never held",
+      "priority[5] Preparation (14185): talent not taken",
+      "priority[6] Blood Fury (20572): racial (racials are off)",
+      "priority[11] Adrenaline Rush (13750): talent not taken",
+      "priority[14] Elune's Light (1259799): racial (racials are off)",
+      "priority[15] Eureka! (1259812): racial (racials are off)",
+      "priority[18] Premeditation (14183): talent not taken",
+      "priority[19] Death Mark (1325758): talent not taken",
+      "priority[20] Rupture (11275): condition never held",
+      "priority[22] Cold Blood (14177): talent not taken",
+      "priority[24] Ghostly Strike (14278): talent not taken",
+      "priority[25] Hemorrhage (16511): talent not taken",
+      "priority[27] Mutilate (1241584): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Deflection 1: gate: Flawless Execution (tier 4) needs 15 points in Combat below it, only 14",
+      "Lightning Reflexes 5: gate: Puncturing Wounds (tier 2) needs 5 points in Combat below it, only 3"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 147.1,
+      "mh_speed": 1.6,
+      "gcd_casts": 62.6
+     },
+     "simulator_rotation": {
+      "DPS": [
+       791.14,
+       723.48,
+       "default.apl.json"
+      ]
+     },
+     "casts": {
+      "11337": 79.0,
+      "25349": 48.43,
+      "Backstab": 36.59,
+      "Shank": 22.96,
+      "Eviscerate": 15.6,
+      "Slice and Dice": 10.3,
+      "Blade Flurry": 2.0,
+      "Garrote": 1.0,
+      "Vanish": 1.0
+     },
+     "casts_by_id": {
+      "11337": 79.0,
+      "25349": 48.43,
+      "11281": 36.59,
+      "1329549": 22.96,
+      "11300": 15.6,
+      "6774": 10.3,
+      "13877": 2.0,
+      "11290": 1.0,
+      "1857": 1.0
+     }
+    },
+    "daggers-split-open-raid": {
+     "dps": 803.27,
+     "never_cast": [
+      "prepull[0] Blade Flurry (13877): talent not taken",
+      "prepull[1] Premeditation (14183): talent not taken",
+      "prepull[2] Stealth (1787): switch off (Start In Stealth)",
+      "priority[0] Expose Armor (11198): condition never held",
+      "priority[1] Ambush (11269): condition never held",
+      "priority[5] Preparation (14185): talent not taken",
+      "priority[6] Blood Fury (20572): racial (racials are off)",
+      "priority[11] Adrenaline Rush (13750): talent not taken",
+      "priority[14] Elune's Light (1259799): racial (racials are off)",
+      "priority[15] Eureka! (1259812): racial (racials are off)",
+      "priority[18] Premeditation (14183): talent not taken",
+      "priority[19] Death Mark (1325758): talent not taken",
+      "priority[20] Rupture (11275): condition never held",
+      "priority[24] Ghostly Strike (14278): talent not taken",
+      "priority[25] Hemorrhage (16511): talent not taken",
+      "priority[27] Mutilate (1241584): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Lightning Reflexes 4: gate: Puncturing Wounds (tier 2) needs 5 points in Combat below it, only 3"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 142.7,
+      "mh_speed": 1.6,
+      "gcd_casts": 55.5
+     },
+     "simulator_rotation": {
+      "DPS": [
+       803.27,
+       720.02,
+       "default.apl.json"
+      ]
+     },
+     "casts": {
+      "11337": 72.72,
+      "25349": 43.76,
+      "Backstab": 36.55,
+      "Eviscerate": 21.56,
+      "Shank": 18.0,
+      "Slice and Dice": 9.75,
+      "Garrote": 1.0,
+      "Vanish": 1.0,
+      "Cold Blood": 1.0
+     },
+     "casts_by_id": {
+      "11337": 72.72,
+      "25349": 43.76,
+      "11281": 36.55,
+      "11300": 21.56,
+      "1329549": 18.0,
+      "6774": 9.75,
+      "11290": 1.0,
+      "1857": 1.0,
+      "14177": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "default.apl.json",
+   "fail": [],
+   "date": "2026-11-20"
+  },
+  "assassination-raid": {
+   "fingerprint": "884744e92e7671d4",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/rogue/assassination-raid-raid.apl.json",
+   "builds": {
+    "assassination-mutilate-raid": {
+     "dps": 692.81,
+     "never_cast": [
+      "prepull[0] Blade Flurry (13877): talent not taken",
+      "prepull[1] Premeditation (14183): talent not taken",
+      "prepull[2] Stealth (1787): switch off (Start In Stealth)",
+      "priority[0] Expose Armor (11198): condition never held",
+      "priority[1] Ambush (11269): condition never held",
+      "priority[5] Preparation (14185): talent not taken",
+      "priority[6] Blood Fury (20572): racial (racials are off)",
+      "priority[11] Adrenaline Rush (13750): talent not taken",
+      "priority[14] Elune's Light (1259799): racial (racials are off)",
+      "priority[15] Eureka! (1259812): racial (racials are off)",
+      "priority[18] Premeditation (14183): talent not taken",
+      "priority[19] Death Mark (1325758): talent not taken",
+      "priority[20] Rupture (11275): condition never held",
+      "priority[24] Ghostly Strike (14278): talent not taken",
+      "priority[25] Hemorrhage (16511): talent not taken",
+      "priority[27] Mutilate (1241584): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Deflection 1: gate: Aggression (tier 4) needs 15 points in Combat below it, only 14",
+      "Improved Expose Armor 2: gate: Seal Fate (tier 6) needs 25 points in Assassination below it, only 24",
+      "Improved Gouge 3: gate: Seal Fate (tier 6) needs 25 points in Assassination below it, only 23",
+      "Lightning Reflexes 5: gate: Deflection (tier 2) needs 5 points in Combat below it, only 3",
+      "Remorseless Attacks 1: WORTH NOTHING, not a gate or a recorded filler"
+     ],
+     "inert_switches": [],
+     "fail": [
+      "c: Remorseless Attacks worth nothing and not a gate or a recorded filler"
+     ],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 142.0,
+      "mh_speed": 1.6,
+      "gcd_casts": 49.9
+     },
+     "simulator_rotation": {
+      "DPS": [
+       692.81,
+       624.56,
+       "default.apl.json"
+      ]
+     },
+     "casts": {
+      "11337": 42.38,
+      "Backstab": 30.88,
+      "25349": 30.49,
+      "Eviscerate": 18.23,
+      "Shank": 18.0,
+      "Slice and Dice": 9.59,
+      "Vanish": 1.0,
+      "Garrote": 1.0,
+      "Cold Blood": 0.72
+     },
+     "casts_by_id": {
+      "11337": 42.38,
+      "11281": 30.88,
+      "25349": 30.49,
+      "11300": 18.23,
+      "1329549": 18.0,
+      "6774": 9.59,
+      "1857": 1.0,
+      "11290": 1.0,
+      "14177": 0.72
+     }
+    },
+    "assassination-seal-fate-raid": {
+     "dps": 702.44,
+     "never_cast": [
+      "prepull[0] Blade Flurry (13877): talent not taken",
+      "prepull[1] Premeditation (14183): talent not taken",
+      "prepull[2] Stealth (1787): switch off (Start In Stealth)",
+      "priority[0] Expose Armor (11198): condition never held",
+      "priority[1] Ambush (11269): condition never held",
+      "priority[5] Preparation (14185): talent not taken",
+      "priority[6] Blood Fury (20572): racial (racials are off)",
+      "priority[11] Adrenaline Rush (13750): talent not taken",
+      "priority[14] Elune's Light (1259799): racial (racials are off)",
+      "priority[15] Eureka! (1259812): racial (racials are off)",
+      "priority[18] Premeditation (14183): talent not taken",
+      "priority[19] Death Mark (1325758): talent not taken",
+      "priority[20] Rupture (11275): condition never held",
+      "priority[24] Ghostly Strike (14278): talent not taken",
+      "priority[25] Hemorrhage (16511): talent not taken",
+      "priority[27] Mutilate (1241584): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Deflection 1: gate: Aggression (tier 4) needs 15 points in Combat below it, only 14",
+      "Improved Expose Armor 2: gate: Cold Blood (tier 4) needs 15 points in Assassination below it, only 14",
+      "Lightning Reflexes 5: gate: Deflection (tier 2) needs 5 points in Combat below it, only 3"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 142.0,
+      "mh_speed": 1.6,
+      "gcd_casts": 49.8
+     },
+     "simulator_rotation": {
+      "DPS": [
+       702.44,
+       622.79,
+       "default.apl.json"
+      ]
+     },
+     "casts": {
+      "11337": 57.56,
+      "25349": 38.07,
+      "Backstab": 30.79,
+      "Eviscerate": 18.15,
+      "Shank": 18.0,
+      "Slice and Dice": 9.59,
+      "Garrote": 1.0,
+      "Vanish": 1.0,
+      "Cold Blood": 0.75
+     },
+     "casts_by_id": {
+      "11337": 57.56,
+      "25349": 38.07,
+      "11281": 30.79,
+      "11300": 18.15,
+      "1329549": 18.0,
+      "6774": 9.59,
+      "11290": 1.0,
+      "1857": 1.0,
+      "14177": 0.75
+     }
+    },
+    "assassination-ml-raid": {
+     "dps": 711.45,
+     "never_cast": [
+      "prepull[0] Blade Flurry (13877): talent not taken",
+      "prepull[1] Premeditation (14183): talent not taken",
+      "prepull[2] Stealth (1787): switch off (Start In Stealth)",
+      "priority[0] Expose Armor (11198): condition never held",
+      "priority[1] Ambush (11269): condition never held",
+      "priority[5] Preparation (14185): talent not taken",
+      "priority[6] Blood Fury (20572): racial (racials are off)",
+      "priority[11] Adrenaline Rush (13750): talent not taken",
+      "priority[14] Elune's Light (1259799): racial (racials are off)",
+      "priority[15] Eureka! (1259812): racial (racials are off)",
+      "priority[18] Premeditation (14183): talent not taken",
+      "priority[19] Death Mark (1325758): talent not taken",
+      "priority[20] Rupture (11275): condition never held",
+      "priority[24] Ghostly Strike (14278): talent not taken",
+      "priority[25] Hemorrhage (16511): talent not taken",
+      "priority[27] Mutilate (1241584): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Deflection 1: gate: Aggression (tier 4) needs 15 points in Combat below it, only 14",
+      "Improved Expose Armor 2: gate: Seal Fate (tier 6) needs 25 points in Assassination below it, only 24",
+      "Lightning Reflexes 5: gate: Deflection (tier 2) needs 5 points in Combat below it, only 3"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 142.0,
+      "mh_speed": 1.6,
+      "gcd_casts": 49.9
+     },
+     "simulator_rotation": {
+      "DPS": [
+       711.45,
+       642.89,
+       "default.apl.json"
+      ]
+     },
+     "casts": {
+      "11337": 57.86,
+      "25349": 38.13,
+      "Backstab": 30.93,
+      "Eviscerate": 18.24,
+      "Shank": 18.0,
+      "Slice and Dice": 9.59,
+      "Garrote": 1.0,
+      "Vanish": 1.0,
+      "Cold Blood": 0.73
+     },
+     "casts_by_id": {
+      "11337": 57.86,
+      "25349": 38.13,
+      "11281": 30.93,
+      "11300": 18.24,
+      "1329549": 18.0,
+      "6774": 9.59,
+      "11290": 1.0,
+      "1857": 1.0,
+      "14177": 0.73
+     }
+    },
+    "assassination-open-raid": {
+     "dps": 844.15,
+     "never_cast": [
+      "prepull[0] Blade Flurry (13877): talent not taken",
+      "prepull[1] Premeditation (14183): talent not taken",
+      "prepull[2] Stealth (1787): switch off (Start In Stealth)",
+      "priority[0] Expose Armor (11198): condition never held",
+      "priority[1] Ambush (11269): condition never held",
+      "priority[5] Preparation (14185): talent not taken",
+      "priority[6] Blood Fury (20572): racial (racials are off)",
+      "priority[11] Adrenaline Rush (13750): talent not taken",
+      "priority[14] Elune's Light (1259799): racial (racials are off)",
+      "priority[15] Eureka! (1259812): racial (racials are off)",
+      "priority[18] Premeditation (14183): talent not taken",
+      "priority[19] Death Mark (1325758): talent not taken",
+      "priority[20] Rupture (11275): condition never held",
+      "priority[22] Cold Blood (14177): talent not taken",
+      "priority[24] Ghostly Strike (14278): talent not taken",
+      "priority[25] Hemorrhage (16511): talent not taken",
+      "priority[26] Backstab (11281): cast by another build of the entry (the line serves builds that reach it)",
+      "priority[29] Backstab (11281): cast by another build of the entry (the line serves builds that reach it)"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Deflection 1: gate: Flawless Execution (tier 4) needs 15 points in Combat below it, only 14",
+      "Lightning Reflexes 3: gate: Puncturing Wounds (tier 2) needs 5 points in Combat below it, only 3"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 141.9,
+      "mh_speed": 1.6,
+      "gcd_casts": 55.9
+     },
+     "simulator_rotation": {
+      "DPS": [
+       844.15,
+       836.38,
+       "default.apl.json"
+      ]
+     },
+     "casts": {
+      "11337": 85.05,
+      "25349": 56.51,
+      "Mutilate": 36.95,
+      "Eviscerate": 29.48,
+      "Shank": 18.0,
+      "Slice and Dice": 9.14,
+      "Garrote": 1.0,
+      "Vanish": 1.0
+     },
+     "casts_by_id": {
+      "11337": 85.05,
+      "25349": 56.51,
+      "1241584": 36.95,
+      "11300": 29.48,
+      "1329549": 18.0,
+      "6774": 9.14,
+      "11290": 1.0,
+      "1857": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "default.apl.json",
+   "fail": [
+    "assassination-mutilate-raid"
+   ],
+   "date": "2026-11-20"
+  },
+  "subtlety-raid": {
+   "fingerprint": "d21d6e3630c42b7d",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/rogue/upstream/default.apl.json",
+   "builds": {
+    "subtlety-hemo-raid": {
+     "dps": 667.78,
+     "never_cast": [
+      "prepull[0] Blade Flurry (13877): talent not taken",
+      "prepull[2] Stealth (1787): switch off (Start In Stealth)",
+      "priority[0] Expose Armor (11198): condition never held",
+      "priority[1] Ambush (11269): condition never held",
+      "priority[6] Blood Fury (20572): racial (racials are off)",
+      "priority[11] Adrenaline Rush (13750): talent not taken",
+      "priority[14] Elune's Light (1259799): racial (racials are off)",
+      "priority[15] Eureka! (1259812): racial (racials are off)",
+      "priority[19] Death Mark (1325758): talent not taken",
+      "priority[26] Backstab (11281): condition never held",
+      "priority[27] Mutilate (1241584): talent not taken",
+      "priority[29] Sinister Strike (11294): condition never held"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Camouflage 3: WORTH NOTHING, not a gate or a recorded filler",
+      "Dirty Tricks 1: WORTH NOTHING, not a gate or a recorded filler",
+      "Improved Ambush 3: WORTH NOTHING, not a gate or a recorded filler",
+      "Improved Expose Armor 2: gate: Cold Blood (tier 4) needs 15 points in Assassination below it, only 13",
+      "Master of Deception 3: WORTH NOTHING, not a gate or a recorded filler",
+      "Setup 3: WORTH NOTHING, not a gate or a recorded filler"
+     ],
+     "inert_switches": [],
+     "fail": [
+      "c: Camouflage worth nothing and not a gate or a recorded filler",
+      "c: Dirty Tricks worth nothing and not a gate or a recorded filler",
+      "c: Improved Ambush worth nothing and not a gate or a recorded filler",
+      "c: Master of Deception worth nothing and not a gate or a recorded filler",
+      "c: Setup worth nothing and not a gate or a recorded filler"
+     ],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 128.8,
+      "mh_speed": 1.8,
+      "gcd_casts": 73.0
+     },
+     "casts": {
+      "Hemorrhage": 36.28,
+      "Shank": 18.0,
+      "Garrote": 9.58,
+      "Ghostly Strike": 8.13,
+      "Premeditation": 3,
+      "Vanish": 2.0,
+      "Preparation": 1,
+      "Cold Blood": 1.0
+     },
+     "procs_and_triggered": {
+      "11337": 53.71,
+      "25349": 27.99,
+      "Rupture": 11.7,
+      "Slice and Dice": 9.03,
+      "Eviscerate": 2.52
+     },
+     "pet_casts": {},
+     "casts_by_id": {
+      "11337": 53.71,
+      "16511": 36.28,
+      "25349": 27.99,
+      "1329549": 18.0,
+      "11275": 11.7,
+      "11290": 9.58,
+      "6774": 9.03,
+      "14278": 8.13,
+      "14183": 3.0,
+      "11300": 2.52,
+      "1857": 2.0,
+      "14185": 1.0,
+      "14177": 1.0
+     }
+    },
+    "hybrid-assassination-subtlety-open-raid": {
+     "dps": 823.44,
+     "never_cast": [
+      "prepull[0] Blade Flurry (13877): talent not taken",
+      "prepull[2] Stealth (1787): switch off (Start In Stealth)",
+      "priority[0] Expose Armor (11198): condition never held",
+      "priority[1] Ambush (11269): condition never held",
+      "priority[6] Blood Fury (20572): racial (racials are off)",
+      "priority[11] Adrenaline Rush (13750): talent not taken",
+      "priority[14] Elune's Light (1259799): racial (racials are off)",
+      "priority[15] Eureka! (1259812): racial (racials are off)",
+      "priority[19] Death Mark (1325758): talent not taken",
+      "priority[22] Cold Blood (14177): talent not taken",
+      "priority[26] Backstab (11281): condition never held",
+      "priority[27] Mutilate (1241584): talent not taken",
+      "priority[29] Sinister Strike (11294): condition never held"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Camouflage 2: gate: Preparation (tier 5) needs 20 points in Subtlety below it, only 18",
+      "Improved Ambush 1: gate: Preparation (tier 5) needs 20 points in Subtlety below it, only 19",
+      "Setup 2: gate: Preparation (tier 5) needs 20 points in Subtlety below it, only 18"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 129.2,
+      "mh_speed": 1.8,
+      "gcd_casts": 90.2
+     },
+     "casts": {
+      "Hemorrhage": 58.24,
+      "Shank": 17.98,
+      "Garrote": 6.94,
+      "Ghostly Strike": 6.03,
+      "Premeditation": 3,
+      "Vanish": 1.34,
+      "Preparation": 1
+     },
+     "procs_and_triggered": {
+      "11337": 86.45,
+      "25349": 36.62,
+      "Rupture": 8.89,
+      "Eviscerate": 8.56,
+      "Slice and Dice": 8.54
+     },
+     "pet_casts": {},
+     "casts_by_id": {
+      "11337": 86.45,
+      "16511": 58.24,
+      "25349": 36.62,
+      "1329549": 17.98,
+      "11275": 8.89,
+      "11300": 8.56,
+      "6774": 8.54,
+      "11290": 6.94,
+      "14278": 6.03,
+      "14183": 3.0,
+      "1857": 1.34,
+      "14185": 1.0
+     }
+    },
+    "subtlety-ml-raid": {
+     "dps": 820.32,
+     "never_cast": [
+      "prepull[0] Blade Flurry (13877): talent not taken",
+      "prepull[2] Stealth (1787): switch off (Start In Stealth)",
+      "priority[0] Expose Armor (11198): condition never held",
+      "priority[1] Ambush (11269): condition never held",
+      "priority[6] Blood Fury (20572): racial (racials are off)",
+      "priority[11] Adrenaline Rush (13750): talent not taken",
+      "priority[14] Elune's Light (1259799): racial (racials are off)",
+      "priority[15] Eureka! (1259812): racial (racials are off)",
+      "priority[22] Cold Blood (14177): talent not taken",
+      "priority[23] Eviscerate (11300): cast by another build of the entry (the line serves builds that reach it)",
+      "priority[26] Backstab (11281): condition never held",
+      "priority[27] Mutilate (1241584): talent not taken",
+      "priority[29] Sinister Strike (11294): condition never held"
+     ],
+     "abilities": [
+      "Death Mark: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Camouflage 3: gate: Boot Knife (tier 6) needs 25 points in Subtlety below it, only 22",
+      "Master of Deception 2: gate: Boot Knife (tier 6) needs 25 points in Subtlety below it, only 23",
+      "Setup 3: gate: Boot Knife (tier 6) needs 25 points in Subtlety below it, only 22"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 128.2,
+      "mh_speed": 1.8,
+      "gcd_casts": 70.0
+     },
+     "casts": {
+      "Hemorrhage": 38.74,
+      "Shank": 17.32,
+      "Garrote": 6.94,
+      "Ghostly Strike": 6.0,
+      "Premeditation": 3,
+      "Vanish": 1.36,
+      "Preparation": 1
+     },
+     "procs_and_triggered": {
+      "11337": 38.09,
+      "25349": 22.81,
+      "Death Mark": 13.95,
+      "Slice and Dice": 8.84,
+      "Rupture": 8.45
+     },
+     "pet_casts": {},
+     "casts_by_id": {
+      "16511": 38.74,
+      "11337": 38.09,
+      "25349": 22.81,
+      "1329549": 17.32,
+      "1325758": 13.95,
+      "6774": 8.84,
+      "11275": 8.45,
+      "11290": 6.94,
+      "14278": 6.0,
+      "14183": 3.0,
+      "1857": 1.36,
+      "14185": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "the entry's raid rotation is the simulator's own (default.apl.json)",
+   "fail": [
+    "subtlety-hemo-raid"
+   ],
+   "date": "2026-11-20"
+  }
+ },
+ "priest": {
+  "shadow-dps": {
+   "fingerprint": "d4ce95441918f43c",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/priest/shadow-dps-raid.apl.json",
+   "builds": {
+    "opt-shadow-dps-raid-dps": {
+     "dps": 770.27,
+     "never_cast": [],
+     "abilities": [
+      "Vampiric Embrace: prerequisite"
+     ],
+     "zero_talents": [
+      "Martyrdom 2: recorded filler",
+      "Silent Resolve 2: recorded filler",
+      "Spirit Tap 1: gate: Darkness (tier 6) needs 25 points in Shadow below it, only 24",
+      "Twilight Focus 3: recorded filler",
+      "Vampiric Embrace 1: gate: Darkness (tier 6) needs 25 points in Shadow below it, only 24"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.7,
+      "gcd_casts": 85.1
+     },
+     "casts": {
+      "Mind Flay": 37.68,
+      "Mind Blast": 22.2,
+      "Shadow Word: Death": 8.91,
+      "Shadow Word: Pain": 7.79,
+      "Devouring Plague": 7.53,
+      "Shadowform": 1.0
+     },
+     "casts_by_id": {
+      "18807": 37.68,
+      "10947": 22.2,
+      "1309636": 8.91,
+      "10894": 7.79,
+      "19280": 7.53,
+      "15473": 1.0
+     }
+    },
+    "shadow-ml-raid": {
+     "dps": 773.73,
+     "never_cast": [],
+     "abilities": [
+      "Silence: situational (utility: interrupt)",
+      "Vampiric Embrace: prerequisite"
+     ],
+     "zero_talents": [
+      "Martyrdom 2: recorded filler",
+      "Silence 1: recorded filler",
+      "Silent Resolve 3: recorded filler",
+      "Spirit Tap 5: gate: Devouring Contagion (tier 5) needs 20 points in Shadow below it, only 19",
+      "Vampiric Embrace 1: gate: Shadowform requires Vampiric Embrace 1, have 0"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.7,
+      "gcd_casts": 85.1
+     },
+     "casts": {
+      "Mind Flay": 37.82,
+      "Mind Blast": 22.11,
+      "Shadow Word: Death": 9.22,
+      "Shadow Word: Pain": 7.76,
+      "Devouring Plague": 7.14,
+      "Shadowform": 1.0,
+      "Inner Focus": 1.0
+     },
+     "casts_by_id": {
+      "18807": 37.82,
+      "10947": 22.11,
+      "1309636": 9.22,
+      "10894": 7.76,
+      "19280": 7.14,
+      "15473": 1.0,
+      "14751": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "the official simulator ships no rotation for this spec",
+   "fail": [],
+   "date": "2026-11-20"
+  },
+  "smite-dps": {
+   "fingerprint": "0f65e67c55ff42b5",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/priest/smite-dps-raid.apl.json",
+   "builds": {
+    "smite-discipline-raid": {
+     "dps": 573.97,
+     "never_cast": [
+      "priority[13] Shadowform (15473): talent not taken",
+      "priority[15] Mind Flay (18807): talent not taken"
+     ],
+     "abilities": [
+      "Holy Nova: prerequisite",
+      "Penance: prerequisite"
+     ],
+     "zero_talents": [
+      "Holy Nova 1: gate: Searing Light (tier 4) needs 15 points in Holy below it, only 14",
+      "Inspiration 1: gate: Searing Light (tier 4) needs 15 points in Holy below it, only 14",
+      "Martyrdom 2: gate: Power Infusion (tier 7) needs 30 points in Discipline below it, only 28",
+      "Penance 1: gate: Power Infusion (tier 7) needs 30 points in Discipline below it, only 29",
+      "Silent Resolve 2: gate: Power Infusion (tier 7) needs 30 points in Discipline below it, only 28",
+      "Twilight Focus 3: gate: Searing Light (tier 4) needs 15 points in Holy below it, only 12"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.7,
+      "gcd_casts": 96.7
+     },
+     "casts": {
+      "Smite": 53.61,
+      "Mind Blast": 16.12,
+      "Shadow Word: Pain": 10.26,
+      "Shadow Word: Death": 9.17,
+      "Holy Fire": 6.55,
+      "Power Infusion": 1.0,
+      "Inner Focus": 1.0,
+      "Devouring Plague": 1.0
+     },
+     "casts_by_id": {
+      "984": 27.55,
+      "10934": 23.1,
+      "10947": 16.12,
+      "10894": 10.26,
+      "1309635": 9.17,
+      "15261": 6.55,
+      "10933": 2.95,
+      "10060": 1.0,
+      "14751": 1.0,
+      "19280": 1.0
+     }
+    },
+    "smite-open-raid": {
+     "dps": 587.55,
+     "never_cast": [
+      "priority[7] Power Infusion (10060): talent not taken",
+      "priority[13] Shadowform (15473): talent not taken"
+     ],
+     "abilities": [
+      "Holy Nova: prerequisite"
+     ],
+     "zero_talents": [
+      "Blessed Recovery 2: gate: Searing Light (tier 4) needs 15 points in Holy below it, only 13",
+      "Holy Nova 1: gate: Searing Light (tier 4) needs 15 points in Holy below it, only 14",
+      "Inspiration 1: gate: Searing Light (tier 4) needs 15 points in Holy below it, only 14",
+      "Mind Flay 1: gate: Shadow Weaving (tier 4) needs 15 points in Shadow below it, only 14",
+      "Spirit Tap 2: gate: Shadow Weaving (tier 4) needs 15 points in Shadow below it, only 13",
+      "Twilight Focus 1: gate: Searing Light (tier 4) needs 15 points in Holy below it, only 14"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.7,
+      "gcd_casts": 97.0
+     },
+     "casts": {
+      "Smite": 53.74,
+      "Mind Blast": 19.59,
+      "Shadow Word: Death": 8.8,
+      "Shadow Word: Pain": 7.75,
+      "Holy Fire": 6.0,
+      "Devouring Plague": 1.0,
+      "Inner Focus": 1.0,
+      "Mind Flay": 0.08
+     },
+     "casts_by_id": {
+      "984": 29.07,
+      "10934": 21.83,
+      "10947": 19.59,
+      "1309635": 8.8,
+      "10894": 7.75,
+      "15261": 6.0,
+      "10933": 2.84,
+      "19280": 1.0,
+      "14751": 1.0,
+      "18807": 0.08
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "the official simulator ships no rotation for this spec",
+   "fail": [],
+   "date": "2026-11-20"
+  }
+ },
+ "shaman": {
+  "elemental-dps": {
+   "fingerprint": "00c78a6fb12ff637",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/shaman/elemental-dps-raid.apl.json",
+   "builds": {
+    "elemental-raid-dps": {
+     "dps": 741.01,
+     "never_cast": [
+      "priority[1] Magma Totem (10587): condition never held"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Anticipation 3: gate: Toughness (tier 4) needs 15 points in Enhancement below it, only 13",
+      "Earth's Grasp 2: gate: Toughness (tier 4) needs 15 points in Enhancement below it, only 14",
+      "Eye of the Storm 2: gate: Call of Thunder (tier 5) needs 20 points in Elemental below it, only 19",
+      "Toughness 4: gate: Mental Quickness (tier 5) needs 20 points in Enhancement below it, only 16"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 3.4,
+      "gcd_casts": 94.7
+     },
+     "casts": {
+      "Lightning Bolt": 68.17,
+      "Chain Lightning": 13.03,
+      "Flame Shock": 9.47,
+      "Searing Totem": 4.0
+     },
+     "casts_by_id": {
+      "15208": 67.99,
+      "10605": 13.03,
+      "10448": 9.47,
+      "10438": 4.0,
+      "10392": 0.18
+     }
+    },
+    "opt-elemental-dps-raid-dps": {
+     "dps": 739.99,
+     "never_cast": [
+      "priority[1] Magma Totem (10587): condition never held"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Elemental Reach 1: gate: Elemental Fury (tier 6) needs 25 points in Elemental below it, only 24",
+      "Eye of the Storm 3: gate: Call of Thunder (tier 5) needs 20 points in Elemental below it, only 17",
+      "Natural Grace 2: utility filler (threat)"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 3.4,
+      "gcd_casts": 97.0
+     },
+     "casts": {
+      "Lightning Bolt": 68.15,
+      "Chain Lightning": 15.66,
+      "Flame Shock": 9.19,
+      "Searing Totem": 4.0,
+      "Lightning Mastery": 1.04
+     },
+     "casts_by_id": {
+      "15208": 68.1,
+      "10605": 15.66,
+      "10448": 9.19,
+      "10438": 4.0,
+      "16166": 1.04,
+      "10392": 0.05
+     }
+    },
+    "elemental-raid": {
+     "dps": 716.93,
+     "never_cast": [
+      "priority[1] Magma Totem (10587): condition never held"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Elemental Reach 1: gate: Elemental Fury (tier 6) needs 25 points in Elemental below it, only 24",
+      "Eye of the Storm 3: gate: Call of Thunder (tier 5) needs 20 points in Elemental below it, only 17"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 3.4,
+      "gcd_casts": 94.8
+     },
+     "casts": {
+      "Lightning Bolt": 66.59,
+      "Chain Lightning": 15.08,
+      "Flame Shock": 9.17,
+      "Searing Totem": 4.0
+     },
+     "casts_by_id": {
+      "15208": 66.3,
+      "10605": 15.08,
+      "10448": 9.17,
+      "10438": 4.0,
+      "10392": 0.29
+     }
+    },
+    "elemental-ml-raid": {
+     "dps": 743.32,
+     "never_cast": [
+      "priority[1] Magma Totem (10587): condition never held"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Eye of the Storm 2: gate: Elemental Fury (tier 6) needs 25 points in Elemental below it, only 24"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 3.4,
+      "gcd_casts": 97.0
+     },
+     "casts": {
+      "Lightning Bolt": 67.13,
+      "Chain Lightning": 16.68,
+      "Flame Shock": 9.21,
+      "Searing Totem": 4.0,
+      "Lightning Mastery": 1.03
+     },
+     "casts_by_id": {
+      "15208": 67.12,
+      "10605": 16.68,
+      "10448": 9.21,
+      "10438": 4.0,
+      "16166": 1.03,
+      "10392": 0.02
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "the official simulator ships no rotation for this spec",
+   "fail": [],
+   "date": "2026-11-20"
+  },
+  "enhancement-dps": {
+   "fingerprint": "12732241fa0823ed",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/shaman/enhancement-dps-raid.apl.json",
+   "builds": {
+    "enhancement-raid-dps": {
+     "dps": 655.6,
+     "never_cast": [],
+     "abilities": [],
+     "zero_talents": [],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 69.4,
+      "mh_speed": 3.3,
+      "gcd_casts": 72.8
+     },
+     "casts": {
+      "Stormstrike": 21.72,
+      "Earth Shock": 15.21,
+      "Fire Nova": 15.14,
+      "Flame Shock": 12.78,
+      "Lightning Bolt": 11.29,
+      "Magma Totem": 7.26,
+      "Searing Totem": 2.54,
+      "Rage of the Farseer": 1.0,
+      "Strength of Earth Totem": 1.0,
+      "Grace of Air Totem": 1.0
+     },
+     "casts_by_id": {
+      "17364": 21.72,
+      "10414": 15.21,
+      "408345": 15.14,
+      "10448": 12.78,
+      "15208": 11.29,
+      "10587": 7.26,
+      "10438": 2.54,
+      "425336": 1.0,
+      "10442": 1.0,
+      "10627": 1.0
+     }
+    },
+    "opt-enhancement-dps-raid-dps": {
+     "dps": 685.05,
+     "never_cast": [],
+     "abilities": [],
+     "zero_talents": [
+      "Earth's Grasp 1: gate: Stormstrike (tier 4) needs 15 points in Enhancement below it, only 14",
+      "Spirit Weapons 1: gate: Maelstrom Weapon (tier 6) needs 25 points in Enhancement below it, only 24",
+      "Toughness 1: gate: Maelstrom Weapon (tier 6) needs 25 points in Enhancement below it, only 24"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 68.6,
+      "mh_speed": 3.3,
+      "gcd_casts": 76.8
+     },
+     "casts": {
+      "Earth Shock": 23.98,
+      "Stormstrike": 22.1,
+      "Fire Nova": 13.89,
+      "Lightning Bolt": 11.28,
+      "Flame Shock": 8.06,
+      "Magma Totem": 6.46,
+      "Searing Totem": 2.9,
+      "Grace of Air Totem": 1.0,
+      "Rage of the Farseer": 1.0,
+      "Strength of Earth Totem": 1.0
+     },
+     "casts_by_id": {
+      "10414": 23.98,
+      "17364": 22.1,
+      "408345": 13.89,
+      "15208": 11.28,
+      "10448": 8.06,
+      "10587": 6.46,
+      "10438": 2.9,
+      "10627": 1.0,
+      "425336": 1.0,
+      "10442": 1.0
+     }
+    },
+    "enhancement-ml-raid": {
+     "dps": 719.09,
+     "never_cast": [],
+     "abilities": [],
+     "zero_talents": [],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 69.4,
+      "mh_speed": 3.3,
+      "gcd_casts": 69.0
+     },
+     "casts": {
+      "Fire Nova": 23.01,
+      "Stormstrike": 21.51,
+      "Earth Shock": 20.61,
+      "Lightning Bolt": 11.26,
+      "Flame Shock": 7.65,
+      "Magma Totem": 4.14,
+      "Searing Totem": 1.85,
+      "Strength of Earth Totem": 1.0,
+      "Grace of Air Totem": 1.0,
+      "Rage of the Farseer": 1.0
+     },
+     "casts_by_id": {
+      "408345": 23.01,
+      "17364": 21.51,
+      "10414": 20.61,
+      "15208": 11.26,
+      "10448": 7.65,
+      "10587": 4.14,
+      "10438": 1.85,
+      "10442": 1.0,
+      "10627": 1.0,
+      "425336": 1.0
+     }
+    },
+    "elemental-enhancement-ml-raid": {
+     "dps": 718.64,
+     "never_cast": [],
+     "abilities": [],
+     "zero_talents": [],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 66.8,
+      "mh_speed": 3.3,
+      "gcd_casts": 70.6
+     },
+     "casts": {
+      "Earth Shock": 22.83,
+      "Stormstrike": 21.76,
+      "Fire Nova": 21.36,
+      "Lightning Bolt": 9.89,
+      "Flame Shock": 8.07,
+      "Magma Totem": 4.09,
+      "Searing Totem": 1.91,
+      "Strength of Earth Totem": 1.0,
+      "Grace of Air Totem": 1.0
+     },
+     "casts_by_id": {
+      "10414": 22.83,
+      "17364": 21.76,
+      "408345": 21.36,
+      "15208": 9.89,
+      "10448": 8.07,
+      "10587": 4.09,
+      "10438": 1.91,
+      "10442": 1.0,
+      "10627": 1.0
+     }
+    },
+    "enhancement-open-raid": {
+     "dps": 728.6,
+     "never_cast": [],
+     "abilities": [],
+     "zero_talents": [],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 69.5,
+      "mh_speed": 3.3,
+      "gcd_casts": 72.6
+     },
+     "casts": {
+      "Earth Shock": 23.01,
+      "Stormstrike": 21.95,
+      "Fire Nova": 21.36,
+      "Lightning Bolt": 11.33,
+      "Flame Shock": 8.3,
+      "Magma Totem": 4.1,
+      "Searing Totem": 1.9,
+      "Rage of the Farseer": 1.0,
+      "Strength of Earth Totem": 1.0,
+      "Grace of Air Totem": 1.0
+     },
+     "casts_by_id": {
+      "10414": 23.01,
+      "17364": 21.95,
+      "408345": 21.36,
+      "15208": 11.33,
+      "10448": 8.3,
+      "10587": 4.1,
+      "10438": 1.9,
+      "425336": 1.0,
+      "10442": 1.0,
+      "10627": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "the official simulator ships no rotation for this spec",
+   "fail": [],
+   "date": "2026-11-20"
+  }
+ },
+ "druid": {
+  "balance-dps": {
+   "fingerprint": "afce78c09ada6d23",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/druid/balance-dps-raid.apl.json",
+   "builds": {
+    "balance-moonkin-raid": {
+     "dps": 689.1,
+     "never_cast": [
+      "priority[3] Innervate (29166): condition never held",
+      "priority[4] Wrath (9912): condition never held"
+     ],
+     "abilities": [
+      "Moonkin Form: situational (defensive)"
+     ],
+     "zero_talents": [
+      "Moonkin Form 1: ability: situational (defensive)",
+      "Nature's Focus 5: recorded filler"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.0,
+      "gcd_casts": 48.9
+     },
+     "simulator_rotation": {
+      "DPS": [
+       689.1,
+       527.78,
+       "default.apl.json"
+      ]
+     },
+     "notes": [
+      "c2: ours beats the simulator's own rotation (default.apl.json) by 31% in DPS (689.1 against 527.8): explained (2026-11-20 night): the official default casts Starfire only while Eclipse is up (aura 408255) and Wrath otherwise, a rotation for an Eclipse build; these builds have no Eclipse, so under it they spam Wrath (74 a fight) where ours fills with Starfire (49 of about 3 s, plus 24 instants: within the 180 s fight; 2,000 fights, seed 1)"
+     ],
+     "casts": {
+      "Starfire": 48.92,
+      "Moonfire": 12.37,
+      "Insect Swarm": 11.74
+     },
+     "casts_by_id": {
+      "9876": 48.92,
+      "9835": 12.37,
+      "24977": 11.74
+     }
+    },
+    "opt-balance-dps-raid-dps": {
+     "dps": 689.1,
+     "never_cast": [
+      "priority[3] Innervate (29166): condition never held",
+      "priority[4] Wrath (9912): condition never held"
+     ],
+     "abilities": [
+      "Moonkin Form: situational (defensive)"
+     ],
+     "zero_talents": [
+      "Improved Entangling Roots 3: recorded filler",
+      "Moonkin Form 1: ability: situational (defensive)",
+      "Subtlety 2: recorded filler"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 0,
+      "mh_speed": 1.0,
+      "gcd_casts": 48.9
+     },
+     "simulator_rotation": {
+      "DPS": [
+       689.1,
+       527.78,
+       "default.apl.json"
+      ]
+     },
+     "notes": [
+      "c2: ours beats the simulator's own rotation (default.apl.json) by 31% in DPS (689.1 against 527.8): explained (2026-11-20 night): the official default casts Starfire only while Eclipse is up (aura 408255) and Wrath otherwise, a rotation for an Eclipse build; these builds have no Eclipse, so under it they spam Wrath (74 a fight) where ours fills with Starfire (49 of about 3 s, plus 24 instants: within the 180 s fight; 2,000 fights, seed 1)"
+     ],
+     "casts": {
+      "Starfire": 48.92,
+      "Moonfire": 12.37,
+      "Insect Swarm": 11.74
+     },
+     "casts_by_id": {
+      "9876": 48.92,
+      "9835": 12.37,
+      "24977": 11.74
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "default.apl.json",
+   "fail": [],
+   "date": "2026-11-20"
+  },
+  "feral-cat-dps": {
+   "fingerprint": "b4b250505fd743fa",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/druid/upstream/adaptive.apl.json",
+   "builds": {
+    "feral-cat-dps": {
+     "dps": 758.22,
+     "never_cast": [
+      "priority[2] Faerie Fire (9907): condition never held",
+      "priority[7] Cat Form (768): condition never held",
+      "priority[11] Elune's Light (1259799): racial (racials are off)",
+      "priority[14] Shifting Power (1322605): talent not taken",
+      "priority[23] Claw (9850): condition never held",
+      "priority[25] Innervate (29166): condition never held"
+     ],
+     "abilities": [
+      "Feral Charge: situational (utility: interrupt)"
+     ],
+     "zero_talents": [
+      "Feral Charge 1: ability: situational (utility: interrupt)",
+      "Furor 5: gate: Feral Charge (tier 3) needs 10 points in Feral Combat below it, only 8",
+      "Leader of the Pack 1: the raid's leader_of_the_pack itself (the full raid already holds it; in a real raid this build is its source)",
+      "Thick Hide 3: utility filler (survival)"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 181,
+      "mh_speed": 1.0,
+      "gcd_casts": 60.6
+     },
+     "casts": {
+      "Shred": 26.3,
+      "Rake": 18.72,
+      "Rip": 13.69,
+      "Prowl": 1,
+      "Ravage": 1,
+      "Dash": 1,
+      "Ferocious Bite": 0.85
+     },
+     "procs_and_triggered": {},
+     "pet_casts": {},
+     "casts_by_id": {
+      "9830": 26.3,
+      "9904": 18.72,
+      "9896": 13.69,
+      "9913": 1.0,
+      "9867": 1.0,
+      "9821": 1.0,
+      "22829": 0.85
+     }
+    },
+    "opt-feral-cat-dps-raid-dps": {
+     "dps": 772.18,
+     "never_cast": [
+      "priority[2] Faerie Fire (9907): condition never held",
+      "priority[7] Cat Form (768): condition never held",
+      "priority[11] Elune's Light (1259799): racial (racials are off)",
+      "priority[14] Shifting Power (1322605): talent not taken",
+      "priority[23] Claw (9850): condition never held",
+      "priority[25] Innervate (29166): condition never held"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Furor 5: gate: Thick Hide (tier 2) needs 5 points in Feral Combat below it, only 2",
+      "Leader of the Pack 1: gate: Rend and Tear (tier 6) needs 25 points in Feral Combat below it, only 24",
+      "Reflection 2: utility filler (mana)",
+      "Thick Hide 3: gate: Savage Fury (tier 3) needs 10 points in Feral Combat below it, only 7"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 181,
+      "mh_speed": 1.0,
+      "gcd_casts": 59.2
+     },
+     "casts": {
+      "Shred": 25.46,
+      "Rake": 18.52,
+      "Rip": 13.35,
+      "Dash": 1,
+      "Ravage": 1,
+      "Prowl": 1,
+      "Ferocious Bite": 0.83
+     },
+     "procs_and_triggered": {},
+     "pet_casts": {},
+     "casts_by_id": {
+      "9830": 25.46,
+      "9904": 18.52,
+      "9896": 13.35,
+      "9821": 1.0,
+      "9867": 1.0,
+      "9913": 1.0,
+      "22829": 0.83
+     }
+    },
+    "feral-combat-shifting-power-raid": {
+     "dps": 918.43,
+     "never_cast": [
+      "priority[2] Faerie Fire (9907): condition never held",
+      "priority[7] Cat Form (768): condition never held",
+      "priority[11] Elune's Light (1259799): racial (racials are off)",
+      "priority[23] Claw (9850): condition never held",
+      "priority[25] Innervate (29166): condition never held"
+     ],
+     "abilities": [
+      "Feral Charge: situational (utility: interrupt)"
+     ],
+     "zero_talents": [
+      "Feral Charge 1: ability: situational (utility: interrupt)",
+      "Furor 5: gate: Feral Charge (tier 3) needs 10 points in Feral Combat below it, only 5",
+      "Leader of the Pack 1: the raid's leader_of_the_pack itself (the full raid already holds it; in a real raid this build is its source)"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 181,
+      "mh_speed": 1.0,
+      "gcd_casts": 106.2
+     },
+     "casts": {
+      "Shred": 46.83,
+      "Shifting Power": 22.19,
+      "Rake": 18.69,
+      "Rip": 14.29,
+      "Ferocious Bite": 3.18,
+      "Prowl": 1,
+      "Ravage": 1,
+      "Dash": 1
+     },
+     "procs_and_triggered": {},
+     "pet_casts": {},
+     "casts_by_id": {
+      "9830": 46.83,
+      "1322605": 22.19,
+      "9904": 18.69,
+      "9896": 14.29,
+      "22829": 3.18,
+      "9913": 1.0,
+      "9867": 1.0,
+      "9821": 1.0
+     }
+    },
+    "feral-combat-open-raid": {
+     "dps": 934.97,
+     "never_cast": [
+      "priority[2] Faerie Fire (9907): condition never held",
+      "priority[7] Cat Form (768): condition never held",
+      "priority[11] Elune's Light (1259799): racial (racials are off)",
+      "priority[23] Claw (9850): condition never held",
+      "priority[25] Innervate (29166): condition never held"
+     ],
+     "abilities": [
+      "Feral Charge: situational (utility: interrupt)"
+     ],
+     "zero_talents": [
+      "Feral Charge 1: recorded filler",
+      "Furor 2: gate: Shredding Attacks (tier 3) needs 10 points in Feral Combat below it, only 8",
+      "Thick Hide 3: gate: Shredding Attacks (tier 3) needs 10 points in Feral Combat below it, only 7"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 181,
+      "mh_speed": 1.0,
+      "gcd_casts": 106.2
+     },
+     "casts": {
+      "Shred": 46.83,
+      "Shifting Power": 22.19,
+      "Rake": 18.69,
+      "Rip": 14.29,
+      "Ferocious Bite": 3.18,
+      "Prowl": 1,
+      "Dash": 1,
+      "Ravage": 1
+     },
+     "procs_and_triggered": {},
+     "pet_casts": {},
+     "casts_by_id": {
+      "9830": 46.83,
+      "1322605": 22.19,
+      "9904": 18.69,
+      "9896": 14.29,
+      "22829": 3.18,
+      "9913": 1.0,
+      "9821": 1.0,
+      "9867": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "the entry's raid rotation is the simulator's own (adaptive.apl.json)",
+   "fail": [],
+   "date": "2026-11-20"
+  },
+  "feral-bear-tank": {
+   "fingerprint": "aa932b37b3f5b10c",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/druid/upstream/feralbear-adaptive.apl.json",
+   "builds": {
+    "feral-bear-tank": {
+     "dps": 257.17,
+     "never_cast": [
+      "priority[0] Feral Charge (Bear) (16979): used: its casts are booked under another id (removing it changes the result)",
+      "priority[5] Elune's Light (1259799): racial (racials are off)",
+      "priority[13] Faerie Fire (9907): condition never held",
+      "priority[14] Demoralizing Roar (9898): condition never held",
+      "priority[15] Lacerate (1235827): talent not taken",
+      "priority[17] Swipe (9908): condition never held",
+      "priority[18] Primal Bite (1238070): talent not taken"
+     ],
+     "abilities": [
+      "Feral Charge: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 71.6,
+      "white_mh_swings": 0.4,
+      "mh_speed": 2.5,
+      "gcd_casts": 5
+     },
+     "casts": {
+      "Maul": 71.6,
+      "Enrage": 4.0,
+      "Barkskin": 3.0,
+      "Dire Bear Form": 1.0,
+      "Frenzied Regeneration": 1.0
+     },
+     "casts_by_id": {
+      "9881": 71.6,
+      "5229": 4.0,
+      "22812": 3.0,
+      "9634": 1.0,
+      "22842": 1.0
+     }
+    },
+    "opt-feral-bear-tank-raid-tank": {
+     "dps": 363.55,
+     "never_cast": [
+      "prepull[0] Dire Bear Form (9634): cast by another build of the entry (the line serves builds that reach it)",
+      "priority[0] Feral Charge (Bear) (16979): used: its casts are booked under another id (removing it changes the result)",
+      "priority[5] Elune's Light (1259799): racial (racials are off)",
+      "priority[13] Faerie Fire (9907): condition never held",
+      "priority[14] Demoralizing Roar (9898): condition never held",
+      "priority[15] Lacerate (1235827): talent not taken",
+      "priority[17] Swipe (9908): condition never held"
+     ],
+     "abilities": [
+      "Feral Charge: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 70.5,
+      "white_mh_swings": 1.5,
+      "mh_speed": 2.5,
+      "gcd_casts": 34.0
+     },
+     "casts": {
+      "Maul": 70.54,
+      "Primal Bite": 30.0,
+      "Enrage": 4.0,
+      "Barkskin": 3.0,
+      "Frenzied Regeneration": 1.0
+     },
+     "casts_by_id": {
+      "9881": 70.54,
+      "1238070": 30.0,
+      "5229": 4.0,
+      "22812": 3.0,
+      "22842": 1.0
+     }
+    },
+    "feral-combat-ml-tank": {
+     "dps": 262.68,
+     "never_cast": [
+      "priority[0] Feral Charge (Bear) (16979): talent not taken",
+      "priority[5] Elune's Light (1259799): racial (racials are off)",
+      "priority[13] Faerie Fire (9907): condition never held",
+      "priority[14] Demoralizing Roar (9898): condition never held",
+      "priority[15] Lacerate (1235827): talent not taken",
+      "priority[17] Swipe (9908): condition never held",
+      "priority[18] Primal Bite (1238070): talent not taken"
+     ],
+     "abilities": [],
+     "zero_talents": [],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 71.6,
+      "white_mh_swings": 0.4,
+      "mh_speed": 2.5,
+      "gcd_casts": 5
+     },
+     "casts": {
+      "Maul": 71.59,
+      "Enrage": 4.0,
+      "Barkskin": 3.0,
+      "Frenzied Regeneration": 1.0,
+      "Dire Bear Form": 1.0
+     },
+     "casts_by_id": {
+      "9881": 71.59,
+      "5229": 4.0,
+      "22812": 3.0,
+      "22842": 1.0,
+      "9634": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "the entry's raid rotation is the simulator's own (feralbear-adaptive.apl.json)",
+   "fail": [],
+   "date": "2026-11-20"
+  }
+ },
+ "warrior": {
+  "arms-2h-raid": {
+   "fingerprint": "82f749c58074154f",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/warrior/arms-2h-raid-raid.apl.json",
+   "builds": {
+    "arms-2h-raid": {
+     "dps": 899.03,
+     "never_cast": [
+      "priority[3] Sunder Armor (11597): condition never held",
+      "priority[8] Blood Fury (20572): racial (racials are off)",
+      "priority[16] Mortal Strike (21553): talent not taken",
+      "priority[17] Spearing Strike (1310222): talent not taken",
+      "priority[19] Cleave (20569): condition never held",
+      "priority[23] Berserker Rage (18499): condition never held",
+      "priority[24] Reckless Swings (1329555): talent not taken",
+      "priority[25] Berserker Stance (2458): already in Berserker Stance (the entry's starting stance; the line returns to it)"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Blood Craze 3: gate: Death Wish (tier 5) needs 20 points in Fury below it, only 19",
+      "Booming Voice 5: gate: Death Wish (tier 5) needs 20 points in Fury below it, only 17",
+      "Deflection 5: gate: Improved Tactical Mastery (tier 2) needs 5 points in Arms below it, only 3",
+      "Gore Drinker 2: gate: Flurry (tier 6) needs 25 points in Fury below it, only 23",
+      "Improved Rend 3: gate: Anger Management (tier 3) needs 10 points in Arms below it, only 8",
+      "Improved Tactical Mastery 3: gate: Anger Management (tier 3) needs 10 points in Arms below it, only 8",
+      "Iron Will 1: recorded filler",
+      "Lingering Rage 2: gate: Flurry (tier 6) needs 25 points in Fury below it, only 23"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 5.4,
+      "white_mh_swings": 61.4,
+      "mh_speed": 3.5,
+      "gcd_casts": 115.8
+     },
+     "simulator_rotation": {
+      "DPS": [
+       899.03,
+       819.94,
+       "fury.apl.json"
+      ]
+     },
+     "casts": {
+      "Deep Wound": 84.17,
+      "Hamstring": 55.94,
+      "Bloodthirst": 27.27,
+      "Whirlwind": 17.76,
+      "Execute": 12.82,
+      "Heroic Strike": 5.44,
+      "Bloodrage": 2.1,
+      "Death Wish": 1.0,
+      "Recklessness": 1.0
+     },
+     "casts_by_id": {
+      "412609": 84.17,
+      "7373": 55.94,
+      "23894": 27.27,
+      "1680": 17.76,
+      "20662": 12.82,
+      "11567": 5.44,
+      "2687": 2.1,
+      "12328": 1.0,
+      "1719": 1.0
+     }
+    },
+    "opt-arms-2h-raid-raid-dps": {
+     "dps": 912.0,
+     "never_cast": [
+      "priority[3] Sunder Armor (11597): condition never held",
+      "priority[8] Blood Fury (20572): racial (racials are off)",
+      "priority[16] Mortal Strike (21553): talent not taken",
+      "priority[17] Spearing Strike (1310222): talent not taken",
+      "priority[19] Cleave (20569): condition never held",
+      "priority[23] Berserker Rage (18499): condition never held",
+      "priority[24] Reckless Swings (1329555): talent not taken",
+      "priority[25] Berserker Stance (2458): already in Berserker Stance (the entry's starting stance; the line returns to it)"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Blood Craze 3: gate: Dual Wield Specialization (tier 4) needs 15 points in Fury below it, only 12",
+      "Booming Voice 2: gate: Dual Wield Specialization (tier 4) needs 15 points in Fury below it, only 13",
+      "Deflection 5: gate: Improved Tactical Mastery (tier 2) needs 5 points in Arms below it, only 3",
+      "Dual Wield Specialization 3: gate: Death Wish (tier 5) needs 20 points in Fury below it, only 17",
+      "Gore Drinker 2: gate: Flurry (tier 6) needs 25 points in Fury below it, only 23",
+      "Improved Berserker Rage 2: gate: Flurry (tier 6) needs 25 points in Fury below it, only 23",
+      "Improved Rend 3: gate: Anger Management (tier 3) needs 10 points in Arms below it, only 8",
+      "Improved Tactical Mastery 3: gate: Anger Management (tier 3) needs 10 points in Arms below it, only 8"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 5.4,
+      "white_mh_swings": 61.4,
+      "mh_speed": 3.5,
+      "gcd_casts": 115.8
+     },
+     "simulator_rotation": {
+      "DPS": [
+       912.0,
+       838.02,
+       "fury.apl.json"
+      ]
+     },
+     "casts": {
+      "Deep Wound": 84.17,
+      "Hamstring": 55.94,
+      "Bloodthirst": 27.27,
+      "Whirlwind": 17.76,
+      "Execute": 12.82,
+      "Heroic Strike": 5.44,
+      "Bloodrage": 2.1,
+      "Recklessness": 1.0,
+      "Death Wish": 1.0
+     },
+     "casts_by_id": {
+      "412609": 84.17,
+      "7373": 55.94,
+      "23894": 27.27,
+      "1680": 17.76,
+      "20662": 12.82,
+      "11567": 5.44,
+      "2687": 2.1,
+      "1719": 1.0,
+      "12328": 1.0
+     }
+    },
+    "fury-open-raid": {
+     "dps": 920.76,
+     "never_cast": [
+      "priority[3] Sunder Armor (11597): condition never held",
+      "priority[8] Blood Fury (20572): racial (racials are off)",
+      "priority[16] Mortal Strike (21553): talent not taken",
+      "priority[17] Spearing Strike (1310222): talent not taken",
+      "priority[19] Cleave (20569): condition never held",
+      "priority[23] Berserker Rage (18499): condition never held",
+      "priority[25] Berserker Stance (2458): already in Berserker Stance (the entry's starting stance; the line returns to it)"
+     ],
+     "abilities": [
+      "Reckless Swings: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Blood Craze 3: gate: Reckless Swings (tier 4) needs 15 points in Fury below it, only 14",
+      "Deflection 2: gate: Anger Management (tier 3) needs 10 points in Arms below it, only 9",
+      "Enrage 1: gate: Improved Berserker Rage (tier 5) needs 20 points in Fury below it, only 19",
+      "Furious Precision 3: gate: Reckless Swings (tier 4) needs 15 points in Fury below it, only 14",
+      "Gore Drinker 2: gate: Improved Whirlwind (tier 6) needs 25 points in Fury below it, only 23",
+      "Improved Berserker Rage 2: gate: Improved Whirlwind (tier 6) needs 25 points in Fury below it, only 23",
+      "Improved Rend 3: gate: Anger Management (tier 3) needs 10 points in Arms below it, only 8",
+      "Improved Tactical Mastery 3: gate: Anger Management (tier 3) needs 10 points in Arms below it, only 8"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 5.9,
+      "white_mh_swings": 61.0,
+      "mh_speed": 3.5,
+      "gcd_casts": 118.7
+     },
+     "simulator_rotation": {
+      "DPS": [
+       920.76,
+       851.78,
+       "fury.apl.json"
+      ]
+     },
+     "casts": {
+      "Deep Wound": 84.46,
+      "Hamstring": 55.76,
+      "Bloodthirst": 27.6,
+      "Whirlwind": 18.01,
+      "Execute": 12.85,
+      "Heroic Strike": 5.89,
+      "Reckless Swings": 2.48,
+      "Bloodrage": 2.04,
+      "Death Wish": 1.0,
+      "Recklessness": 1.0
+     },
+     "casts_by_id": {
+      "412609": 84.46,
+      "7373": 55.76,
+      "23894": 27.6,
+      "1680": 18.01,
+      "20662": 12.85,
+      "11567": 5.89,
+      "1329555": 2.48,
+      "2687": 2.04,
+      "12328": 1.0,
+      "1719": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "arms.apl.json, fury.apl.json",
+   "fail": [],
+   "date": "2026-11-20"
+  },
+  "fury-dw-raid": {
+   "fingerprint": "779bc513e68bfbea",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/warrior/fury-dw-raid-raid.apl.json",
+   "builds": {
+    "fury-dw-raid": {
+     "dps": 914.24,
+     "never_cast": [
+      "priority[1] Sunder Armor (11597): condition never held",
+      "priority[6] Blood Fury (20572): racial (racials are off)",
+      "priority[10] Reckless Swings (1329555): talent not taken",
+      "priority[15] Mortal Strike (21553): talent not taken",
+      "priority[16] Spearing Strike (1310222): talent not taken",
+      "priority[18] Cleave (20569): condition never held",
+      "priority[24] Berserker Stance (2458): already in Berserker Stance (the entry's starting stance; the line returns to it)"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Blood Craze 3: recorded filler",
+      "Booming Voice 5: recorded filler",
+      "Deflection 2: gate: Anger Management (tier 3) needs 10 points in Arms below it, only 8",
+      "Improved Rend 3: gate: Improved Tactical Mastery (tier 2) needs 5 points in Arms below it, only 4",
+      "Improved Tactical Mastery 3: gate: Anger Management (tier 3) needs 10 points in Arms below it, only 7",
+      "Iron Will 2: recorded filler"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 15.4,
+      "white_mh_swings": 66.4,
+      "mh_speed": 2.8,
+      "gcd_casts": 105.6
+     },
+     "simulator_rotation": {
+      "DPS": [
+       914.24,
+       875.68,
+       "fury.apl.json"
+      ]
+     },
+     "casts": {
+      "Deep Wound": 126.67,
+      "Hamstring": 37.27,
+      "Bloodthirst": 24.03,
+      "Whirlwind": 20.56,
+      "Execute": 18.25,
+      "Heroic Strike": 15.36,
+      "Berserker Rage": 3.5,
+      "Bloodrage": 3.0,
+      "Recklessness": 1.0,
+      "Death Wish": 1.0
+     },
+     "casts_by_id": {
+      "412609": 126.67,
+      "7373": 37.27,
+      "23894": 24.03,
+      "1680": 20.56,
+      "20662": 18.25,
+      "11567": 15.36,
+      "18499": 3.5,
+      "2687": 3.0,
+      "1719": 1.0,
+      "12328": 1.0
+     }
+    },
+    "opt-fury-dw-raid-raid-dps": {
+     "dps": 959.72,
+     "never_cast": [
+      "priority[1] Sunder Armor (11597): condition never held",
+      "priority[6] Blood Fury (20572): racial (racials are off)",
+      "priority[10] Reckless Swings (1329555): talent not taken",
+      "priority[15] Mortal Strike (21553): talent not taken",
+      "priority[16] Spearing Strike (1310222): talent not taken",
+      "priority[18] Cleave (20569): condition never held",
+      "priority[24] Berserker Stance (2458): already in Berserker Stance (the entry's starting stance; the line returns to it)"
+     ],
+     "abilities": [],
+     "zero_talents": [
+      "Blood Craze 3: gate: Dual Wield Specialization (tier 4) needs 15 points in Fury below it, only 13",
+      "Deflection 5: gate: Improved Tactical Mastery (tier 2) needs 5 points in Arms below it, only 3",
+      "Gore Drinker 2: recorded filler",
+      "Improved Rend 3: gate: Anger Management (tier 3) needs 10 points in Arms below it, only 8",
+      "Improved Tactical Mastery 3: gate: Anger Management (tier 3) needs 10 points in Arms below it, only 8"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 15.1,
+      "white_mh_swings": 66.6,
+      "mh_speed": 2.8,
+      "gcd_casts": 105.4
+     },
+     "simulator_rotation": {
+      "DPS": [
+       959.72,
+       909.63,
+       "fury.apl.json"
+      ]
+     },
+     "casts": {
+      "Deep Wound": 126.65,
+      "Hamstring": 37.14,
+      "Bloodthirst": 24.03,
+      "Whirlwind": 20.55,
+      "Execute": 18.21,
+      "Heroic Strike": 15.12,
+      "Berserker Rage": 3.51,
+      "Bloodrage": 3.0,
+      "Death Wish": 1.0,
+      "Recklessness": 1.0
+     },
+     "casts_by_id": {
+      "412609": 126.65,
+      "7373": 37.14,
+      "23894": 24.03,
+      "1680": 20.55,
+      "20662": 18.21,
+      "11567": 15.12,
+      "18499": 3.51,
+      "2687": 3.0,
+      "12328": 1.0,
+      "1719": 1.0
+     }
+    },
+    "fury-dual-wield-open-raid": {
+     "dps": 986.85,
+     "never_cast": [
+      "priority[1] Sunder Armor (11597): condition never held",
+      "priority[6] Blood Fury (20572): racial (racials are off)",
+      "priority[15] Mortal Strike (21553): talent not taken",
+      "priority[16] Spearing Strike (1310222): talent not taken",
+      "priority[18] Cleave (20569): condition never held",
+      "priority[24] Berserker Stance (2458): already in Berserker Stance (the entry's starting stance; the line returns to it)"
+     ],
+     "abilities": [
+      "Reckless Swings: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [
+      "Blood Craze 2: gate: Dual Wield Specialization (tier 4) needs 15 points in Fury below it, only 13",
+      "Deflection 2: gate: Anger Management (tier 3) needs 10 points in Arms below it, only 9",
+      "Improved Rend 3: gate: Anger Management (tier 3) needs 10 points in Arms below it, only 8",
+      "Improved Tactical Mastery 3: gate: Anger Management (tier 3) needs 10 points in Arms below it, only 8"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 25.8,
+      "white_mh_swings": 56.2,
+      "mh_speed": 2.8,
+      "gcd_casts": 112.5
+     },
+     "simulator_rotation": {
+      "DPS": [
+       986.85,
+       935.1,
+       "fury.apl.json"
+      ]
+     },
+     "casts": {
+      "Deep Wound": 124.88,
+      "Hamstring": 33.02,
+      "Heroic Strike": 25.85,
+      "Bloodthirst": 24.58,
+      "Whirlwind": 20.31,
+      "Execute": 17.81,
+      "Reckless Swings": 12.0,
+      "Bloodrage": 2.96,
+      "Berserker Rage": 2.78,
+      "Death Wish": 1.0,
+      "Recklessness": 1.0
+     },
+     "casts_by_id": {
+      "412609": 124.88,
+      "7373": 33.02,
+      "11567": 25.85,
+      "23894": 24.58,
+      "1680": 20.31,
+      "20662": 17.81,
+      "1329555": 12.0,
+      "2687": 2.96,
+      "18499": 2.78,
+      "12328": 1.0,
+      "1719": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "fury.apl.json",
+   "fail": [],
+   "date": "2026-11-20"
+  },
+  "prot-tank": {
+   "fingerprint": "5cc92a84e6e284b4",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/warrior/prot-tank-raid.apl.json",
+   "builds": {
+    "prot-raid-tank": {
+     "dps": 467.88,
+     "never_cast": [
+      "prepull[0] Battle Shout (11551): kept up by the class option useBattleShout",
+      "priority[3] Defensive Stance (71): already in Defensive Stance (the entry's starting stance; the line returns to it)"
+     ],
+     "abilities": [
+      "Concussion Blow: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 56.1,
+      "white_mh_swings": 22.4,
+      "mh_speed": 2.4,
+      "gcd_casts": 114.6
+     },
+     "simulator_rotation": {
+      "DPS": [
+       467.88,
+       476.42,
+       "default.apl.json"
+      ],
+      "threat": [
+       1636.56,
+       1545.91,
+       "default.apl.json"
+      ]
+     },
+     "casts": {
+      "Heroic Strike": 56.07,
+      "Sunder Armor": 44.56,
+      "Shield Block": 35.7,
+      "Revenge": 32.29,
+      "Shield Slam": 27.02,
+      "Rend": 9.76,
+      "Bloodrage": 3.0,
+      "Shield Wall": 1.0
+     },
+     "casts_by_id": {
+      "11567": 56.07,
+      "11597": 44.56,
+      "2565": 35.7,
+      "11601": 32.29,
+      "23925": 27.02,
+      "11574": 9.76,
+      "2687": 3.0,
+      "871": 1.0
+     }
+    },
+    "opt-prot-tank-raid-tank": {
+     "dps": 470.82,
+     "never_cast": [
+      "prepull[0] Battle Shout (11551): kept up by the class option useBattleShout",
+      "priority[3] Defensive Stance (71): already in Defensive Stance (the entry's starting stance; the line returns to it)"
+     ],
+     "abilities": [
+      "Concussion Blow: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 58.3,
+      "white_mh_swings": 20.2,
+      "mh_speed": 2.4,
+      "gcd_casts": 114.6
+     },
+     "simulator_rotation": {
+      "DPS": [
+       470.82,
+       474.08,
+       "default.apl.json"
+      ],
+      "threat": [
+       1645.89,
+       1538.46,
+       "default.apl.json"
+      ]
+     },
+     "casts": {
+      "Heroic Strike": 58.28,
+      "Sunder Armor": 44.37,
+      "Shield Block": 35.65,
+      "Revenge": 32.53,
+      "Shield Slam": 26.89,
+      "Rend": 9.77,
+      "Bloodrage": 3.0,
+      "Shield Wall": 1.0
+     },
+     "casts_by_id": {
+      "11567": 58.28,
+      "11597": 44.37,
+      "2565": 35.65,
+      "11601": 32.53,
+      "23925": 26.89,
+      "11574": 9.77,
+      "2687": 3.0,
+      "871": 1.0
+     }
+    },
+    "protection-ml-tank": {
+     "dps": 486.16,
+     "never_cast": [
+      "prepull[0] Battle Shout (11551): kept up by the class option useBattleShout",
+      "priority[3] Defensive Stance (71): already in Defensive Stance (the entry's starting stance; the line returns to it)"
+     ],
+     "abilities": [
+      "Concussion Blow: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 56.6,
+      "white_mh_swings": 21.9,
+      "mh_speed": 2.4,
+      "gcd_casts": 114.5
+     },
+     "simulator_rotation": {
+      "DPS": [
+       486.16,
+       491.03,
+       "default.apl.json"
+      ],
+      "threat": [
+       1676.54,
+       1574.96,
+       "default.apl.json"
+      ]
+     },
+     "casts": {
+      "Heroic Strike": 56.56,
+      "Sunder Armor": 44.55,
+      "Shield Block": 35.64,
+      "Revenge": 32.48,
+      "Shield Slam": 26.77,
+      "Deep Wound": 24.28,
+      "Rend": 9.75,
+      "Bloodrage": 3.0,
+      "Shield Wall": 1.0
+     },
+     "casts_by_id": {
+      "11567": 56.56,
+      "11597": 44.55,
+      "2565": 35.64,
+      "11601": 32.48,
+      "23925": 26.77,
+      "412609": 24.28,
+      "11574": 9.75,
+      "2687": 3.0,
+      "871": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "default.apl.json",
+   "fail": [],
+   "date": "2026-11-20"
+  },
+  "arms-battle-raid": {
+   "fingerprint": "10ac9ceeea297997",
+   "fights": 3000,
+   "rotation": "_reference/data/raidsim/apls/warrior/arms-battle-raid-raid.apl.json",
+   "builds": {
+    "arms-battle-raid": {
+     "dps": 873.9,
+     "never_cast": [
+      "priority[2] Sunder Armor (11597): condition never held",
+      "priority[5] Death Wish (12328): talent not taken",
+      "priority[7] Blood Fury (20572): racial (racials are off)",
+      "priority[16] Bloodthirst (23894): talent not taken",
+      "priority[17] Cleave (20569): condition never held"
+     ],
+     "abilities": [
+      "Sweeping Strikes: prerequisite"
+     ],
+     "zero_talents": [
+      "Blood Craze 2: recorded filler",
+      "Booming Voice 5: gate: Improved Execute (tier 4) needs 15 points in Fury below it, only 12",
+      "Deflection 3: gate: Improved Overpower (tier 2) needs 5 points in Arms below it, only 3",
+      "Improved Tactical Mastery 3: gate: Anger Management (tier 3) needs 10 points in Arms below it, only 8",
+      "Sweeping Strikes 1: gate: Mortal Strike requires Sweeping Strikes 1, have 0"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 52,
+      "mh_speed": 3.5,
+      "gcd_casts": 120.5
+     },
+     "simulator_rotation": {
+      "DPS": [
+       873.9,
+       853.26,
+       "arms.apl.json"
+      ]
+     },
+     "casts": {
+      "Deep Wound": 81.88,
+      "Hamstring": 38.66,
+      "Mortal Strike": 23.2,
+      "Overpower": 17.53,
+      "Slam": 15.64,
+      "Execute": 10.0,
+      "Rend": 8.74,
+      "Spearing Strike": 6.75,
+      "Bloodrage": 2.25,
+      "Battle Stance": 1.0
+     },
+     "casts_by_id": {
+      "412609": 81.88,
+      "7373": 38.66,
+      "21553": 23.2,
+      "11585": 17.53,
+      "11605": 15.64,
+      "20662": 10.0,
+      "11574": 8.74,
+      "1310222": 6.75,
+      "2687": 2.25,
+      "2457": 1.0
+     }
+    },
+    "arms-community-parse": {
+     "dps": 863.35,
+     "never_cast": [
+      "priority[2] Sunder Armor (11597): condition never held",
+      "priority[5] Death Wish (12328): talent not taken",
+      "priority[7] Blood Fury (20572): racial (racials are off)",
+      "priority[16] Bloodthirst (23894): talent not taken",
+      "priority[17] Cleave (20569): condition never held"
+     ],
+     "abilities": [
+      "Piercing Howl: NEVER CAST, no reason",
+      "Sweeping Strikes: prerequisite"
+     ],
+     "zero_talents": [
+      "Booming Voice 3: recorded filler",
+      "Deflection 5: recorded filler",
+      "Improved Heroic Strike 3: recorded filler",
+      "Improved Tactical Mastery 3: gate: Anger Management requires Improved Tactical Mastery 3, have 0",
+      "Piercing Howl 1: WORTH NOTHING, not a gate or a recorded filler",
+      "Sweeping Strikes 1: gate: Mortal Strike requires Sweeping Strikes 1, have 0"
+     ],
+     "inert_switches": [],
+     "fail": [
+      "b: talent ability Piercing Howl never cast",
+      "c: Piercing Howl worth nothing and not a gate or a recorded filler"
+     ],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 52,
+      "mh_speed": 3.5,
+      "gcd_casts": 120.4
+     },
+     "simulator_rotation": {
+      "DPS": [
+       863.35,
+       844.15,
+       "arms.apl.json"
+      ]
+     },
+     "casts": {
+      "Deep Wound": 81.76,
+      "Hamstring": 39.75,
+      "Mortal Strike": 23.16,
+      "Overpower": 17.5,
+      "Slam": 15.62,
+      "Execute": 8.88,
+      "Rend": 8.73,
+      "Spearing Strike": 6.75,
+      "Bloodrage": 2.25,
+      "Battle Stance": 1.0
+     },
+     "casts_by_id": {
+      "412609": 81.76,
+      "7373": 39.75,
+      "21553": 23.16,
+      "11585": 17.5,
+      "11605": 15.62,
+      "20662": 8.88,
+      "11574": 8.73,
+      "1310222": 6.75,
+      "2687": 2.25,
+      "2457": 1.0
+     }
+    },
+    "arms-ml-raid": {
+     "dps": 866.89,
+     "never_cast": [
+      "priority[2] Sunder Armor (11597): condition never held",
+      "priority[5] Death Wish (12328): talent not taken",
+      "priority[7] Blood Fury (20572): racial (racials are off)",
+      "priority[16] Bloodthirst (23894): talent not taken",
+      "priority[17] Cleave (20569): condition never held"
+     ],
+     "abilities": [
+      "Sweeping Strikes: prerequisite"
+     ],
+     "zero_talents": [
+      "Blood Craze 3: recorded filler",
+      "Improved Heroic Strike 3: gate: Improved Overpower (tier 2) needs 5 points in Arms below it, only 3",
+      "Improved Tactical Mastery 3: gate: Anger Management (tier 3) needs 10 points in Arms below it, only 8",
+      "Iron Will 3: recorded filler",
+      "Sweeping Strikes 1: gate: Mortal Strike requires Sweeping Strikes 1, have 0"
+     ],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 0,
+      "white_mh_swings": 52,
+      "mh_speed": 3.5,
+      "gcd_casts": 120.8
+     },
+     "simulator_rotation": {
+      "DPS": [
+       866.89,
+       848.31,
+       "arms.apl.json"
+      ]
+     },
+     "casts": {
+      "Deep Wound": 81.79,
+      "Hamstring": 39.31,
+      "Mortal Strike": 23.4,
+      "Overpower": 17.54,
+      "Slam": 15.68,
+      "Execute": 9.38,
+      "Rend": 8.73,
+      "Spearing Strike": 6.75,
+      "Bloodrage": 2.26,
+      "Battle Stance": 1.0
+     },
+     "casts_by_id": {
+      "412609": 81.79,
+      "7373": 39.31,
+      "21553": 23.4,
+      "11585": 17.54,
+      "11605": 15.68,
+      "20662": 9.38,
+      "11574": 8.73,
+      "1310222": 6.75,
+      "2687": 2.26,
+      "2457": 1.0
+     }
+    }
+   },
+   "rotation_fail": [],
+   "simulator_rotation": "arms.apl.json",
+   "fail": [
+    "arms-community-parse"
+   ],
+   "date": "2026-11-20"
+  }
+ }
+}

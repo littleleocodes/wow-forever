@@ -16,7 +16,7 @@
     "caveats": [
      "This list is for a full raid. With fewer buffs you will not have the rage for free **Hamstring** casts: the simulator's rotation for a warrior alone on a training dummy never casts it and stacks **Sunder Armor** instead.",
      "Several targets: **Whirlwind** needs **Berserker Stance**, so this list never uses it. With a second target in reach, press **Sweeping Strikes** (30 rage, 30-second cooldown: your next 5 melee attacks also hit a second target), and above 40 rage use **Cleave** in place of **Hamstring**.",
-     "The simulator's full list keeps a **Mocking Blow** line near the bottom that never fires. Never use it on a boss: it forces the boss to attack you for 6 seconds.",
+     "Never use **Mocking Blow** on a boss: it forces the boss to attack you for 6 seconds (the line the simulator's list kept for it never fired and was removed on 2026-11-20).",
      "Stand behind the boss: from the front it can parry and block, and a swing that does not land gives you no rage."
     ],
     "diverge": [
@@ -25,9 +25,9 @@
      "Against Giants and Dragonkin, **Spearing Strike** deals an extra 80% of weapon damage (three times as much), so press it right after **Mortal Strike**. The simulator's boss is neither, so that order is untested."
     ],
     "rotations": {
-     "arms-2h-raid": "815b46e57957",
-     "fury-dw-raid": "f9fcc0877b40",
-     "arms-battle-raid": "6a4ba0b00cca"
+     "arms-2h-raid": "fa2ebb4b40c6",
+     "fury-dw-raid": "1368eba84934",
+     "arms-battle-raid": "13fdeba6cda9"
     },
     "written": "2026-11-09"
    },
@@ -84,8 +84,8 @@
      "With a weapon in each hand (the page's dual-wield option), the simulator's dual-wield raid rotation differs: **Reckless Swings** on cooldown, **Heroic Strike** from 67.5 rage on a single target, **Hamstring** only when **Bloodthirst** is more than a second away and **Whirlwind** more than 2 seconds, **Recklessness** with **Death Wish** in the last 45 seconds, and no **Bloodthirst** in the last 30 seconds. **Whirlwind** hits with both weapons there."
     ],
     "rotations": {
-     "arms-2h-raid": "815b46e57957",
-     "fury-dw-raid": "f9fcc0877b40"
+     "arms-2h-raid": "fa2ebb4b40c6",
+     "fury-dw-raid": "1368eba84934"
     },
     "written": "2026-11-09"
    },

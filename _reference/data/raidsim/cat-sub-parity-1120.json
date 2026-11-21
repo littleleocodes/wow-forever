@@ -1,0 +1,175 @@
+{
+ "fights": 10000,
+ "entries": {
+  "druid:feral-cat-dps": {
+   "official": "adaptive.apl.json",
+   "ours": "feral-cat-dps-raid.apl.json",
+   "builds": {
+    "feral-cat-dps": {
+     "seed 1": {
+      "ours": 738.99,
+      "official": 758.99
+     },
+     "official_signature": {
+      "ok": true,
+      "required_missing": [],
+      "core_share": 0.895,
+      "floor": 0.8
+     },
+     "ours_signature": {
+      "ok": true,
+      "info": {
+       "required_missing": [],
+       "core_share": 0.893,
+       "floor": 0.8
+      }
+     },
+     "seed 2": {
+      "ours": 739.27,
+      "official": 758.14
+     }
+    },
+    "opt-feral-cat-dps-raid-dps": {
+     "seed 1": {
+      "ours": 760.42,
+      "official": 772.33
+     },
+     "official_signature": {
+      "ok": true,
+      "required_missing": [],
+      "core_share": 0.897,
+      "floor": 0.8
+     },
+     "ours_signature": {
+      "ok": true,
+      "info": {
+       "required_missing": [],
+       "core_share": 0.896,
+       "floor": 0.8
+      }
+     },
+     "seed 2": {
+      "ours": 759.9,
+      "official": 772.55
+     }
+    },
+    "feral-combat-shifting-power-raid": {
+     "seed 1": {
+      "ours": 911.43,
+      "official": 918.72
+     },
+     "official_signature": {
+      "ok": true,
+      "required_missing": [],
+      "core_share": 0.908,
+      "floor": 0.8
+     },
+     "ours_signature": {
+      "ok": true,
+      "info": {
+       "required_missing": [],
+       "core_share": 0.906,
+       "floor": 0.8
+      }
+     },
+     "seed 2": {
+      "ours": 911.49,
+      "official": 918.43
+     }
+    },
+    "feral-combat-open-raid": {
+     "seed 1": {
+      "ours": 927.84,
+      "official": 935.26
+     },
+     "official_signature": {
+      "ok": true,
+      "required_missing": [],
+      "core_share": 0.908,
+      "floor": 0.8
+     },
+     "ours_signature": {
+      "ok": true,
+      "info": {
+       "required_missing": [],
+       "core_share": 0.906,
+       "floor": 0.8
+      }
+     },
+     "seed 2": {
+      "ours": 927.9,
+      "official": 934.96
+     }
+    }
+   },
+   "pick": "feral-combat-open-raid",
+   "ours_lead_on_pick": [
+    -0.0079,
+    -0.0076
+   ],
+   "decision": "official: ours does not lead by 0.5% on both seeds",
+   "applied": true
+  },
+  "rogue:subtlety-raid": {
+   "official": "default.apl.json",
+   "ours": "subtlety-raid-raid.apl.json",
+   "builds": {
+    "hybrid-assassination-subtlety-open-raid": {
+     "seed 1": {
+      "ours": 821.68,
+      "official": 823.61
+     },
+     "official_signature": {
+      "ok": false,
+      "required_missing": [],
+      "core_share": 0.543,
+      "floor": 0.6
+     },
+     "ours_signature": {
+      "ok": false,
+      "info": {
+       "required_missing": [],
+       "core_share": 0.547,
+       "floor": 0.6
+      }
+     },
+     "seed 2": {
+      "ours": 822.39,
+      "official": 823.07
+     }
+    },
+    "subtlety-ml-raid": {
+     "seed 1": {
+      "ours": 817.57,
+      "official": 820.7
+     },
+     "official_signature": {
+      "ok": true,
+      "required_missing": [],
+      "core_share": 0.641,
+      "floor": 0.6
+     },
+     "ours_signature": {
+      "ok": true,
+      "info": {
+       "required_missing": [],
+       "core_share": 0.645,
+       "floor": 0.6
+      }
+     },
+     "seed 2": {
+      "ours": 818.26,
+      "official": 820.13
+     }
+    }
+   },
+   "pick": "hybrid-assassination-subtlety-open-raid",
+   "ours_lead_on_pick": [
+    -0.0023,
+    -0.0008
+   ],
+   "decision": "official (applied by hand): ours does not lead by 0.5% on both seeds on the Subtlety pick subtlety-ml-raid (+0.38% / +0.23% for the official), which keeps its signature (core 0.641 against 0.60); the script had judged the hybrid hybrid-assassination-subtlety-open-raid by Subtlety's rule, which is not its own (the hybrid has none)",
+   "applied": true
+  }
+ }
+}
