@@ -60,7 +60,7 @@ Lone Wolf Marksmanship raids with no pet out: keep **Hunter's Mark** and **Serpe
 
 - Two or three targets close together: **Multi-Shot** in place of **Aimed Shot** (it hits 3 targets). For a pack, **Volley**: a 6-second channel with no cooldown.
 - In the last seconds, skip the **Serpent Sting** recast and do not start a **Sniper Shot** that will not land before the boss dies.
-- With a pet instead: the page's With a pet setup (7/39/5: **Focused Fire** in place of **Lone Wolf** and a point of **Efficiency**) plays these shots with a cat out, 981 DPS in a full raid against this build's 996. Its entry runs the official turret file with our search's edits of 2026-11-20; with no **Summon Hawk** talent, the only one that acts for it is a Major Mana Potion line at the end (two potions a fight, not one), and on the official file it does 973.5.
+- With a pet instead: the page's With a pet setup (7/39/5: Focused Fire in place of **Lone Wolf** and a point of **Efficiency**) plays these shots with a cat out, 981 DPS in a full raid against this build's 996. Its entry runs the official turret file with our search's edits of 2026-11-20; with no **Summon Hawk** talent, the only one that acts for it is a Major Mana Potion line at the end (two potions a fight, not one), and on the official file it does 973.5.
 - Short on mana: let **Sniper Shot** go first. In this build's full-raid numbers it does about 1,670 damage for 365 mana, **Aimed Shot** 1,540 for 310, **Arcane Shot** 1,060 for 190, **Serpent Sting** 2,050 for 230.
 
 ## Talents

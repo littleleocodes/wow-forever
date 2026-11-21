@@ -84,7 +84,7 @@ A talent marked as a tier point measures nothing in the simulator's raid fight; 
 
 *Each tier's number is this build in its own tier set, in a lower tier's set, or in the standard set when every item of it is allowed in the tier, whichever is best. The tier sets were chosen for the builds and rotations of before 2026-11-20 and are being made again for this build.*
 
-**The gear** (each tier's own set; average item level: Quests and dungeons 60.9; Pre-BiS 62.3; Raid BiS 63.6; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (each tier's own set; average item level: Quests and dungeons 60.9; Pre-BiS 62.6; Raid BiS 63.6; each item opens its Wowhead page, with where it drops and its enchant):
 
 | Slot | Quests and dungeons | Pre-BiS | Raid BiS |
 |---|---|---|---|

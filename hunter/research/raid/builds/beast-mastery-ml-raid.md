@@ -58,38 +58,8 @@ The Beast Mastery build the machine-learning talent search found in a full raid 
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 10 passes, the last 2026-10-09, 15 changes to the base rotation; third-seed check: open winner 427 -> 473 DPS (+10.7%), beast-marks-open-raid 450 -> 490 DPS (+8.9%), sim preset: Beast Mastery 35/16/0 437 -> 463 DPS (+5.9%), mm-hawk-raid 438 -> 475 DPS (+8.5%), beast-mastery-raid 449 -> 487 DPS (+8.6%), beast-marks-ml-raid 443 -> 480 DPS (+8.3%)):
-  1. drop: use every other cooldown when ready (+3.0%, pass 1)
-  2. drop: if time to the next auto attack > 1s: cast Aimed Shot (+0.5%, pass 1)
-  3. drop: if time to the next auto attack > 0.5s: cast Multi-Shot (+2.1%, pass 1)
-  4. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and mana % ≥ 30%: cast Serpent Sting (+2.8%, pass 1)
-  5. drop the condition: if time to the next auto attack > 1s: cast Summon Hawk (+0.8%, pass 1)
-  6. move down below 'cast Summon Hawk': if time left on Serpent Sting < 1s: cast Serpent Sting (+0.9%, pass 1)
-  7. insert before the filler: use every other cooldown when ready (+3.8%, pass 2)
-  8. threshold 1s -> 2s: if time left on Serpent Sting < 1s: cast Serpent Sting (+0.4%, pass 2)
-  9. threshold 2s -> 4s: if time left on Serpent Sting < 2s: cast Serpent Sting (+1.3%, pass 2)
-  10. spell probe: insert at the end: if auraIsInactive: cast Intimidation (+0.5%, pass 5)
-  11. only above 60% mana: if auraIsInactive: cast Intimidation (+0.2%, pass 7)
-  12. threshold 60% -> 70%: if auraIsInactive and mana % ≥ 60%: cast Intimidation (+0.3%, pass 8)
-  13. insert at the top: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+19.8%, pass 10)
-  14. threshold 30% -> 10%: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+2.9%, pass 10)
-  15. only with 3s or more of the fight left: if time left on Serpent Sting < 4s: cast Serpent Sting (+0.4%, pass 10)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 20 passes, the last 2026-11-20, 15 changes to the base rotation; third-seed check: beast-mastery-ml-raid 883 -> 907 DPS (+2.7%), sim preset: BM 878 -> 901 DPS (+2.7%), mm-hawk-raid 845 -> 864 DPS (+2.2%), beast-marks-ml-raid 871 -> 894 DPS (+2.7%)):
-  1. move to the top: if time to the next auto attack > 0.5s: cast Multi-Shot (+1.9%, pass 1)
-  2. drop the condition: if time to the next auto attack > 1s: cast Summon Hawk (+0.4%, pass 1)
-  3. threshold 1s -> 0.75s: if time left on Serpent Sting < 1s and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 2)
-  4. threshold 0.75s -> 0.25s: if time left on Serpent Sting < 0.75s and mana % ≥ 30%: cast Serpent Sting + move to the top: if time left on Serpent Sting < 0.25s and mana % ≥ 30%: cast Serpent Sting (+0.3%, pass 3)
-  5. drop: if time to the next auto attack > 0.5s: cast Multi-Shot (+0.6%, pass 5)
-  6. insert at the end: if time to the next auto attack > 0.5s: cast Multi-Shot (+0.3%, pass 5)
-  7. move down below 'cast Summon Hawk': if time to the next auto attack > 1s: cast Aimed Shot (+0.4%, pass 5)
-  8. drop the condition: if time to the next auto attack > 1s: cast Aimed Shot (+0.2%, pass 5)
-  9. insert at the top: if time to the next auto attack > 1s: cast Summon Hawk + insert in the middle: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+0.8%, pass 6)
-  10. only with 10s or more of the fight left: if time to the next auto attack > 1s: cast Summon Hawk (+0.2%, pass 6)
-  11. drop: if time to the next auto attack > 1s and time left in the fight ≥ 10s: cast Summon Hawk (+1.1%, pass 10)
-  12. drop the condition: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+0.3%, pass 11)
-  13. spell probe: insert in the middle: if auraIsInactive: cast Sniper Shot (+1.3%, pass 12)
-  14. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 0.25s and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 13)
-  15. only above 60% mana: cast Summon Hawk (+0.8%, pass 20)
+- **The training dummy:** the entry's base rotation (`_reference/data/raidsim/apls/hunter/upstream/turret_hawk.apl.json`), untuned. The rotation search of 2026-09-28 to 2026-10-09 (15 changes, `bm-raid-rotation-search.json`) tuned an earlier base that this entry no longer plays.
+- **A fully buffed raid:** the entry's base rotation (`_reference/data/raidsim/apls/hunter/upstream/turret_hawk.apl.json`), untuned. The rotation search of 2026-09-28 to 2026-11-20 (15 changes, `bm-raid-rotation-search.json`) tuned an earlier base that this entry no longer plays.
 
 Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Hawk (rank 6); at -19s: move to “Pull range” yd.
 

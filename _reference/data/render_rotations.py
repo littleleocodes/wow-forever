@@ -326,6 +326,14 @@ def raid_tuning_lines(cls, spec, setting):
     where = "the training dummy" if setting == "dummy" else "a fully buffed raid"
     if not rec:
         return [f"- **{where.capitalize()}:** the simulator's own rotation (no rotation search recorded)."]
+    # 2026-11-21 (the audit session's A9): a search's history describes the file it tuned; when the entry no longer plays that file (its
+    # base became the official simulator's rotation, 2026-11-20: the cat, Subtlety), the history is the earlier rotation's, said so
+    ent = (raidrun().SPECS.get(cls) or {}).get(spec) or {}
+    if not ent.get("apl_opt_raid" if setting == "raid" else "apl_opt") and rec.get("changes"):
+        base = ent.get("apl") or "the simulator's preset rotation"
+        return [f"- **{where.capitalize()}:** the entry's base rotation (`{base}`), untuned. The rotation search of "
+                f"{rec.get('first_date', rec.get('date', '?'))} to {rec.get('date', '?')} ({len(rec['changes'])} changes, "
+                f"`{spec}-rotation-search.json`) tuned an earlier base that this entry no longer plays."]
     fin = rec.get("final", {}).get(setting, {})
     gains = ", ".join(f"{b} {v['before']:.0f} -> {v['after']:.0f} DPS ({v['after'] / v['before'] - 1:+.1%})" for b, v in fin.items() if v.get("before") and v.get("after"))
     if not rec.get("changes"):

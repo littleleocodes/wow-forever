@@ -7,84 +7,82 @@
  ],
  "best": "survival-raptor-raid",
  "best_entry": "survival-pet-raid",
- "best_dps": 915.48,
+ "best_dps": 932.17,
  "any_split": false,
- "date": "2026-11-20",
+ "date": "2026-11-21",
  "commit": "2e6e77d84",
  "gear": {
   "bis": {
-   "entry": "melee-dps",
+   "entry": "survival-pet-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-bis.gear.json",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "setting": "raid",
    "chosen": "all-slots",
-   "ilvl": 64.3,
+   "ilvl": 64.9,
    "trinkets": [
     "Blackhand's Breadth",
-    "Hand of Justice"
+    "Adaptive Combat Assistant"
    ],
    "names": [
     "Black Dragonscale Helm",
     "Onyxia Tooth Pendant",
     "Theramore Pauldrons",
-    "Howler's Furs",
+    "Cape of the Black Baron",
     "Dawn Armor",
     "Bracers of the Eclipse",
     "Theramore Gloves",
-    "Highlander's Chain Girdle",
+    "Molten Belt",
     "Plaguehound Leggings",
     "Windreaver Greaves",
     "Quick Strike Ring",
     "Warden's Signet of Ferocity",
     "Blackhand's Breadth",
-    "Hand of Justice",
+    "Adaptive Combat Assistant",
     "Blackguard",
-    "Ironwood Blade",
+    "Heartseeker",
     "Rhok'delar, Longbow of the Ancient Keepers"
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.0020355498982934,
-    "keep-sets-and-effects": 1.0004277725057207,
-    "previous": 1.0015884269507718,
-    "previous+trinkets": 1.0004145291444102
+    "all-slots": 1.018466797042157,
+    "keep-sets-and-effects": 1.0069592164343975,
+    "previous": 1.000814115633373,
+    "previous+trinkets": 1.0035761965025034
    },
    "confirm_seed2": {
     "current": 1.0,
-    "all-slots": 1.0019641992918664
+    "all-slots": 1.018391391833192
    },
    "weights": {
-    "PseudoStatMainHandDps": 2.2834,
-    "PseudoStatOffHandDps": 0.8495,
-    "StatAgility": 0.4338,
-    "StatArmorPenetration": 0.0942,
-    "StatAttackPower": 0.2351,
-    "StatCritRating": 0.4845,
-    "StatExpertiseRating": 0.9071,
-    "StatHasteRating": 0.4857,
-    "StatHitRating": 0.5902,
-    "StatIntellect": 0.2772,
-    "StatRangedAttackPower": 0.011,
-    "StatSpellPiercing": 0.0888,
-    "StatStrength": 0.2586
+    "PseudoStatMainHandDps": 1.8328,
+    "PseudoStatOffHandDps": 0.5946,
+    "PseudoStatRangedDps": 0.5195,
+    "StatAgility": 0.6287,
+    "StatArmorPenetration": 0.0795,
+    "StatAttackPower": 0.186,
+    "StatCritRating": 0.5899,
+    "StatExpertiseRating": 0.9684,
+    "StatHasteRating": 0.4293,
+    "StatHitRating": 0.4012,
+    "StatIntellect": 0.1692,
+    "StatRangedAttackPower": 0.0836,
+    "StatSpellPiercing": 0.0422,
+    "StatStrength": 0.2047
    },
    "evaluated_on": [
-    "melee-dps: ml winner"
-   ],
-   "commit": "2e6e77d84",
-   "kept": true,
-   "note": "the spec's tier set as it stands, made by its last search for that search's winner; not made for this pick"
+    "survival-pet-raid: survival-raptor-raid"
+   ]
   },
   "prebis": {
-   "entry": "melee-dps",
+   "entry": "survival-pet-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-prebis.gear.json",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "setting": "raid",
    "chosen": "all-slots",
-   "ilvl": 62.5,
+   "ilvl": 63.0,
    "trinkets": [
     "Blackhand's Breadth",
-    "Hand of Justice"
+    "Adaptive Combat Assistant"
    ],
    "names": [
     "Black Dragonscale Helm",
@@ -94,51 +92,51 @@
     "Dawn Armor",
     "Bracers of the Eclipse",
     "Theramore Gloves",
-    "Highlander's Chain Girdle",
+    "Warpwood Binding",
     "Plaguehound Leggings",
     "Windreaver Greaves",
     "Warden's Signet of Ferocity",
     "Cutthroat's Signet",
     "Blackhand's Breadth",
-    "Hand of Justice",
+    "Adaptive Combat Assistant",
     "Ironwood Blade",
     "Heartseeker",
-    "Satyr's Bow"
+    "Ancient Bone Bow"
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9980807555896518
+    "keep-sets-and-effects": 0.9964836787942328,
+    "previous": 0.9952627529624329,
+    "previous+trinkets": 0.9967702824890406
    },
    "confirm_seed2": {
-    "keep-sets-and-effects": 1.0,
-    "all-slots": 1.000383769590235
+    "previous": 1.0,
+    "all-slots": 1.0040565687557073
    },
    "weights": {
-    "PseudoStatMainHandDps": 2.6522,
-    "PseudoStatOffHandDps": 0.8633,
-    "StatAgility": 0.5031,
-    "StatArmorPenetration": 0.1017,
-    "StatAttackPower": 0.2511,
-    "StatCritRating": 0.5157,
-    "StatExpertiseRating": 0.9501,
-    "StatHasteRating": 0.5478,
-    "StatHitRating": 0.4771,
-    "StatIntellect": 0.2958,
-    "StatRangedAttackPower": 0.0111,
-    "StatSpellPiercing": 0.0924,
-    "StatStrength": 0.2762
+    "PseudoStatMainHandDps": 2.0681,
+    "PseudoStatOffHandDps": 0.5897,
+    "PseudoStatRangedDps": 0.5051,
+    "StatAgility": 0.6547,
+    "StatArmorPenetration": 0.0807,
+    "StatAttackPower": 0.1898,
+    "StatCritRating": 0.6007,
+    "StatExpertiseRating": 1.0592,
+    "StatHasteRating": 0.3706,
+    "StatHitRating": 0.3919,
+    "StatIntellect": 0.1653,
+    "StatRangedAttackPower": 0.0811,
+    "StatSpellPiercing": 0.0366,
+    "StatStrength": 0.2088
    },
    "evaluated_on": [
-    "melee-dps: ml winner (bis)"
-   ],
-   "commit": "2e6e77d84",
-   "kept": true,
-   "note": "the spec's tier set as it stands, made by its last search for that search's winner; not made for this pick"
+    "survival-pet-raid: survival-raptor-raid"
+   ]
   },
   "dungeon": {
    "entry": "survival-pet-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-dungeon.gear.json",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "chosen": "previous",
    "ilvl": 61.9,
    "trinkets": [
@@ -278,7 +276,7 @@
    "spec": "Survival",
    "setting": "dummy",
    "entry": "survival-pet-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "winner": {
     "allocation": {
      "Beast Mastery": [
@@ -357,7 +355,7 @@
      ]
     },
     "split": "5/11/35",
-    "dps": 400.15,
+    "dps": 404.21,
     "se": 0.161,
     "iterations": 10000,
     "build": "the search's winner"
@@ -371,7 +369,7 @@
    "spec": "Survival",
    "setting": "raid",
    "entry": "survival-pet-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "winner": {
     "allocation": {
      "Beast Mastery": [
@@ -450,8 +448,8 @@
      ]
     },
     "split": "16/4/31",
-    "dps": 915.48,
-    "se": 0.32,
+    "dps": 932.17,
+    "se": 0.316,
     "iterations": 10000,
     "build": "survival-raptor-raid"
    },
@@ -464,7 +462,7 @@
    "spec": "Survival",
    "setting": "dummy",
    "entry": "survival-pet-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "winner": {
     "allocation": {
      "Beast Mastery": [
@@ -543,7 +541,7 @@
      ]
     },
     "split": "5/11/35",
-    "dps": 407.3,
+    "dps": 406.39,
     "se": 0.165,
     "iterations": 10000,
     "build": "the search's winner"
@@ -557,7 +555,7 @@
    "spec": "Survival",
    "setting": "raid",
    "entry": "survival-pet-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "winner": {
     "allocation": {
      "Beast Mastery": [
@@ -636,8 +634,8 @@
      ]
     },
     "split": "16/4/31",
-    "dps": 922.51,
-    "se": 0.341,
+    "dps": 927.42,
+    "se": 0.335,
     "iterations": 10000,
     "build": "survival-raptor-raid"
    },
@@ -650,7 +648,7 @@
    "spec": "Survival",
    "setting": "raid",
    "entry": "survival-pet-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "commit": "2e6e77d84",
    "method": "the record's tier winners raced in the tier's set in a full raid (no search of its own)",
    "winner": {
@@ -748,35 +746,35 @@
     "prebis-raid": 848.2,
     "prebis-dummy": 747.9
    },
-   "minutes": 8.6
+   "minutes": 5.0
   }
  },
  "pick_tiers": {
   "build": "survival-raptor-raid",
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "note": "the page's pick in each tier's gear (the short-check method of 2026-11-20); no talent search",
   "alt": {
    "bis-dummy": {
-    "pick_dps": 363.37,
-    "search_winner_dps": 400.15,
+    "pick_dps": 367.51,
+    "search_winner_dps": 404.21,
     "search_winner_split": "5/11/35",
     "better": "search winner"
    },
    "bis-raid": {
-    "pick_dps": 915.48,
-    "search_winner_dps": 822.22,
+    "pick_dps": 932.17,
+    "search_winner_dps": 836.27,
     "search_winner_split": "5/12/34",
     "better": "pick"
    },
    "prebis-dummy": {
-    "pick_dps": 363.56,
-    "search_winner_dps": 407.3,
+    "pick_dps": 362.95,
+    "search_winner_dps": 406.39,
     "search_winner_split": "5/11/35",
     "better": "search winner"
    },
    "prebis-raid": {
-    "pick_dps": 922.51,
-    "search_winner_dps": 833.41,
+    "pick_dps": 927.42,
+    "search_winner_dps": 837.38,
     "search_winner_split": "7/11/33",
     "better": "pick"
    }
@@ -787,7 +785,7 @@
   "dps": {
    "winner": {
     "entry": "survival-pet-raid",
-    "dps": 400.15,
+    "dps": 404.21,
     "se": 0.161
    }
   },

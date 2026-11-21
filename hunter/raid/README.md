@@ -21,7 +21,7 @@
 | [Marksmanship](marksmanship.md) | 894 | 926 | 996 |
 | [Beast-Marks](beast-marks.md) | 861 | 911 | 959 |
 | [Beast Mastery](beast-mastery.md) | 890 | 941 | 956 |
-| [Survival](survival.md) | 848 | 923 | 915 |
+| [Survival](survival.md) | 848 | 927 | 932 |
 
 🔬 = a derived build (searched in a simulator). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

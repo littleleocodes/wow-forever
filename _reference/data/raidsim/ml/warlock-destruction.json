@@ -7,21 +7,21 @@
  ],
  "best": "destruction-succubus-raid",
  "best_entry": "destro-raid",
- "best_dps": 879.27,
+ "best_dps": 887.35,
  "any_split": false,
- "date": "2026-11-20",
+ "date": "2026-11-21",
  "commit": "2e6e77d84",
  "gear": {
   "bis": {
-   "entry": "sb-raid",
+   "entry": "destro-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-bis.gear.json",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "setting": "raid",
    "chosen": "all-slots",
-   "ilvl": 63.9,
+   "ilvl": 64.1,
    "trinkets": [
-    "Talisman of Ephemeral Power",
-    "Eye of the Beast"
+    "Weakness Analyzer",
+    "Talisman of Ephemeral Power"
    ],
    "names": [
     "Spellweaver's Turban",
@@ -36,48 +36,48 @@
     "Omnicast Boots",
     "Ring of Spell Power",
     "Ring of Spell Power",
+    "Weakness Analyzer",
     "Talisman of Ephemeral Power",
-    "Eye of the Beast",
     "Sageblade",
     "Obsidian Bauble",
     "Bonecreeper Stylus"
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.003708245909442,
-    "keep-sets-and-effects": 1.003708245909442
+    "all-slots": 1.0066511815560066,
+    "keep-sets-and-effects": 1.0066511815560066,
+    "previous": 0.9983292528291431,
+    "previous+trinkets": 1.0066511815560066
    },
    "confirm_seed2": {
     "current": 1.0,
-    "all-slots": 1.0017040773327353
+    "all-slots": 1.0073536671197905
    },
    "weights": {
-    "StatCritRating": 0.5795,
-    "StatFireDamage": 0.1175,
-    "StatHasteRating": 0.6263,
-    "StatHitRating": 0.798,
-    "StatIntellect": 0.2616,
-    "StatShadowDamage": 0.5897,
-    "StatSpellDamage": 0.7072,
-    "StatSpellPiercing": 1.0586,
-    "StatSpirit": 0.0091
+    "StatCritRating": 0.5352,
+    "StatFireDamage": 0.4749,
+    "StatHasteRating": 0.6011,
+    "StatHitRating": 0.836,
+    "StatIntellect": 0.2248,
+    "StatShadowDamage": 0.2552,
+    "StatSpellDamage": 0.7302,
+    "StatSpellPiercing": 1.0873,
+    "StatSpirit": 0.1005
    },
    "evaluated_on": [
-    "sb-raid: ml winner"
-   ],
-   "commit": "2e6e77d84",
-   "kept": true
+    "destro-raid: destruction-succubus-raid"
+   ]
   },
   "prebis": {
-   "entry": "sb-raid",
+   "entry": "destro-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-prebis.gear.json",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "setting": "raid",
-   "chosen": "keep-sets-and-effects",
+   "chosen": "previous",
    "ilvl": 62.2,
    "trinkets": [
     "Weakness Analyzer",
-    "Eye of the Beast"
+    "Royal Seal of Eldre'Thalas"
    ],
    "names": [
     "Spellweaver's Turban",
@@ -100,34 +100,34 @@
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0
+    "keep-sets-and-effects": 1.0,
+    "previous": 0.9999550215977782,
+    "previous+trinkets": 1.0
    },
    "confirm_seed2": {
-    "keep-sets-and-effects": 1.0,
-    "all-slots": 1.0
+    "previous": 1.0,
+    "all-slots": 0.9988992711637532
    },
    "weights": {
-    "StatCritRating": 0.5561,
-    "StatFireDamage": 0.1234,
-    "StatHasteRating": 0.5949,
-    "StatHitRating": 0.8376,
-    "StatIntellect": 0.2408,
-    "StatShadowDamage": 0.6157,
-    "StatSpellDamage": 0.7391,
-    "StatSpellPiercing": 1.0425,
-    "StatSpirit": 0.0519
+    "StatCritRating": 0.5178,
+    "StatFireDamage": 0.4961,
+    "StatHasteRating": 0.5383,
+    "StatHitRating": 0.9086,
+    "StatIntellect": 0.204,
+    "StatShadowDamage": 0.2608,
+    "StatSpellDamage": 0.7569,
+    "StatSpellPiercing": 1.0699,
+    "StatSpirit": 0.1026
    },
    "evaluated_on": [
-    "sb-raid: ml winner (bis)"
-   ],
-   "commit": "2e6e77d84",
-   "kept": true
+    "destro-raid: destruction-succubus-raid"
+   ]
   },
   "dungeon": {
    "entry": "destro-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-dungeon.gear.json",
-   "date": "2026-11-20",
-   "chosen": "all-slots",
+   "date": "2026-11-21",
+   "chosen": "previous",
    "ilvl": 59.7,
    "trinkets": [
     "Eye of the Beast",
@@ -232,11 +232,11 @@
    "race_seed1": {
     "all-slots": 1.0,
     "keep-sets-and-effects": 1.0,
-    "previous": 0.9976083485006026
+    "previous": 1.0
    },
    "confirm_seed2": {
     "previous": 1.0,
-    "all-slots": 1.0008821277204984
+    "all-slots": 1.0
    },
    "weights": {
     "StatCritRating": 0.4841,
@@ -261,7 +261,7 @@
    "spec": "Destruction",
    "setting": "dummy",
    "entry": "destro-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "winner": {
     "allocation": {
      "Affliction": [
@@ -339,8 +339,8 @@
      ]
     },
     "split": "18/0/33",
-    "dps": 778.57,
-    "se": 0.341,
+    "dps": 786.17,
+    "se": 0.355,
     "iterations": 10000,
     "build": "destruction-succubus-raid"
    },
@@ -353,7 +353,7 @@
    "spec": "Destruction",
    "setting": "raid",
    "entry": "destro-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "winner": {
     "allocation": {
      "Affliction": [
@@ -431,8 +431,8 @@
      ]
     },
     "split": "18/0/33",
-    "dps": 879.27,
-    "se": 0.382,
+    "dps": 887.35,
+    "se": 0.4,
     "iterations": 10000,
     "build": "destruction-succubus-raid"
    },
@@ -445,7 +445,7 @@
    "spec": "Destruction",
    "setting": "dummy",
    "entry": "destro-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "winner": {
     "allocation": {
      "Affliction": [
@@ -537,7 +537,7 @@
    "spec": "Destruction",
    "setting": "raid",
    "entry": "destro-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "winner": {
     "allocation": {
      "Affliction": [
@@ -629,7 +629,7 @@
    "spec": "Destruction",
    "setting": "raid",
    "entry": "destro-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "commit": "2e6e77d84",
    "method": "the record's tier winners raced in the tier's set in a full raid (no search of its own)",
    "winner": {
@@ -724,23 +724,23 @@
    "candidates": {
     "prebis-raid": 777.4
    },
-   "minutes": 2.2
+   "minutes": 2.8
   }
  },
  "pick_tiers": {
   "build": "destruction-succubus-raid",
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "note": "the page's pick in each tier's gear (the short-check method of 2026-11-20); no talent search",
   "alt": {
    "bis-dummy": {
-    "pick_dps": 778.57,
-    "search_winner_dps": 577.79,
+    "pick_dps": 786.17,
+    "search_winner_dps": 584.41,
     "search_winner_split": "9/11/31",
     "better": "pick"
    },
    "bis-raid": {
-    "pick_dps": 879.27,
-    "search_winner_dps": 645.57,
+    "pick_dps": 887.35,
+    "search_winner_dps": 652.04,
     "search_winner_split": "9/11/31",
     "better": "pick"
    },
@@ -763,165 +763,13 @@
   "dps": {
    "winner": {
     "entry": "destro-raid",
-    "dps": 778.57,
-    "se": 0.341
+    "dps": 786.17,
+    "se": 0.355
    }
   },
   "best_hand": "destruction-succubus-raid",
   "gain_vs_hand": 0.0,
   "commit": "2e6e77d84",
   "pick_tiers": true
- },
- "compare_raid": {
-  "setting": "raid",
-  "dps": {
-   "winner": {
-    "entry": "destro-raid",
-    "dps": 879.51,
-    "se": 0.121
-   },
-   "destruction-succubus-raid": {
-    "entry": "destro-raid",
-    "dps": 879.51,
-    "se": 0.121
-   },
-   "destruction-incinerate-raid": {
-    "entry": "incinerate-raid",
-    "dps": 782.38,
-    "se": 0.104
-   },
-   "destruction-ml-raid": {
-    "entry": "sb-raid",
-    "dps": 807.45,
-    "se": 0.149
-   }
-  },
-  "best_hand": "destruction-succubus-raid",
-  "gain_vs_hand": 0.0
- },
- "signature_check": {
-  "spec": "Destruction",
-  "ok": true,
-  "core_share": 0.7162,
-  "min_share": 0.6,
-  "uncast": [],
-  "missing_talents": [],
-  "why": "",
-  "entry": "destro-raid",
-  "setting": "raid",
-  "iterations": 6000,
-  "dps": 880.3,
-  "date": "2026-11-20",
-  "commit": "2e6e77d84",
-  "shares": {
-   "Incinerate": 0.3516,
-   "Immolate": 0.1291,
-   "Corruption": 0.1191,
-   "Conflagrate": 0.1114,
-   "Bane of Doom": 0.083,
-   "Shadowburn": 0.0646,
-   "Pet: Auto Attack": 0.0585,
-   "Bane of Agony": 0.0515,
-   "Demonic Rune": 0.0112,
-   "Pet: Lash of Pain": 0.0086,
-   "Soul Fire": 0.0083,
-   "Searing Pain": 0.003
-  },
-  "casts": {
-   "Bane of Doom": 2.0,
-   "Searing Pain": 0.71,
-   "Conflagrate": 16.23,
-   "Incinerate": 40.43,
-   "Corruption": 9.64,
-   "Life Tap": 12.01,
-   "Amplify Curse": 0.86,
-   "Shadowburn": 10.96,
-   "Soul Fire": 1.0,
-   "Curse of the Elements": 1.1,
-   "Bane of Agony": 2.69,
-   "Immolate": 12.23
-  },
-  "allocation": {
-   "Affliction": [
-    [
-     "Improved Life Tap",
-     2
-    ],
-    [
-     "Suppression",
-     5
-    ],
-    [
-     "Improved Corruption",
-     5
-    ],
-    [
-     "Improved Bane of Agony",
-     2
-    ],
-    [
-     "Amplify Curse",
-     1
-    ],
-    [
-     "Pandemic",
-     3
-    ]
-   ],
-   "Demonology": [],
-   "Destruction": [
-    [
-     "Bane",
-     5
-    ],
-    [
-     "Cataclysm",
-     3
-    ],
-    [
-     "Aftermath",
-     5
-    ],
-    [
-     "Ruin",
-     5
-    ],
-    [
-     "Shadowburn",
-     1
-    ],
-    [
-     "Agonizing Flames",
-     3
-    ],
-    [
-     "Conflagrate",
-     1
-    ],
-    [
-     "Bane of Havoc",
-     1
-    ],
-    [
-     "Fire and Brimstone",
-     3
-    ],
-    [
-     "Shadow and Flame",
-     5
-    ],
-    [
-     "Incinerate",
-     1
-    ]
-   ]
-  }
- },
- "builds": {
-  "written": [],
-  "superseded": [],
-  "date": "2026-11-20",
-  "setting": "raid",
-  "why": "confirms destruction-succubus-raid (+0.00% in a full raid)"
  }
 }

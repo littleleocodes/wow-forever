@@ -83,19 +83,7 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `bm-mm-raid
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 10 passes, the last 2026-10-09, 12 changes to the base rotation; third-seed check: open winner 418 -> 452 DPS (+8.1%), bm-mm-full-buffs-raid 439 -> 473 DPS (+7.7%), sim preset: Marksmanship 417 -> 454 DPS (+8.9%), bm-mm-raid 443 -> 461 DPS (+3.9%)):
-  1. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+2.3%, pass 1)
-  2. drop: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+1.7%, pass 1)
-  3. threshold 0.5s -> 1s: if time to the next auto attack > 0.5s: cast Multi-Shot (+0.6%, pass 1)
-  4. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.3%, pass 1)
-  5. only with 20s or more of the fight left: if time to the next auto attack > 1s: cast Aimed Shot (+0.2%, pass 2)
-  6. spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+6.4%, pass 5)
-  7. only with 10s or more of the fight left: if auraIsInactive: cast Summon Hawk (+0.3%, pass 6)
-  8. only above 25% mana: if time to the next auto attack > 1s and time left in the fight ≥ 20s: cast Aimed Shot (+0.3%, pass 6)
-  9. threshold 25% -> 20%: if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 25%: cast Aimed Shot (+0.2%, pass 9)
-  10. threshold 10s -> 15s: if auraIsInactive and time left in the fight ≥ 10s: cast Summon Hawk + only above 10% mana: if time to the next auto attack > 1s: cast Multi-Shot (+0.2%, pass 9)
-  11. insert in the middle: cast Intimidation + only above 60% mana: cast Intimidation (+0.3%, pass 9)
-  12. threshold 20% -> 15%: if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 20%: cast Aimed Shot (+0.2%, pass 10)
+- **The training dummy:** the entry's base rotation (`_reference/data/raidsim/apls/hunter/upstream/turret.apl.json`), untuned. The rotation search of 2026-09-27 to 2026-10-09 (12 changes, `mm-raid-rotation-search.json`) tuned an earlier base that this entry no longer plays.
 - **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 19 passes, the last 2026-11-20, 22 changes to the base rotation; third-seed check: marksmanship-ml-raid 973 -> 981 DPS (+0.8%), sim preset: BM 899 -> 939 DPS (+4.5%), bm-mm-raid 863 -> 906 DPS (+5.0%), bm-mm-full-buffs-raid 872 -> 872 DPS (-0.0%), opt-mm-raid-raid-dps 865 -> 865 DPS (+0.0%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.0%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.3%, pass 1)

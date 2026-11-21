@@ -77,49 +77,8 @@ The Assassination/Subtlety hybrid (an Assassination/Subtlety hybrid) raid build 
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 7 passes, the last 2026-10-10, 17 changes to the base rotation; third-seed check: open winner 349 -> 374 DPS (+7.2%), subtlety-hemo-raid 347 -> 399 DPS (+14.9%), sim preset: Subtlety Hemo 15/0/36 319 -> 356 DPS (+11.5%)):
-  1. drop 'combo points ≥ 4' from the condition: if combo points ≥ 4 and not Rupture is on the target and time left in the fight > 8: cast Rupture (+1.8%, pass 1)
-  2. only with 20s or more of the fight left: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9): cast Slice and Dice (+0.6%, pass 1)
-  3. threshold 20s -> 40s: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice (+0.6%, pass 1)
-  4. threshold 40s -> 80s: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 40s: cast Slice and Dice (+0.5%, pass 1)
-  5. insert at the top: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+2.5%, pass 1)
-  6. threshold 4 -> 5: if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (+2.2%, pass 1)
-  7. only with 20s or more of the fight left: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+0.2%, pass 1)
-  8. insert at the top: if energy ≤ 29 and combo points < 5 and time left on Expose Armor ≤ 6 and timeToNextEnergyTick > 1 and not Adrenaline Rush is up: cast Thistle Tea (+0.4%, pass 3)
-  9. threshold 20s -> 10s: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 20s: cast Expose Armor (+0.3%, pass 3)
-  10. threshold 8 -> 12: if not Rupture is on the target and time left in the fight > 8: cast Rupture (+0.2%, pass 3)
-  11. threshold 3 -> 5: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor (+0.2%, pass 3)
-  12. insert in the middle: cast Garrote (+3.0%, pass 4)
-  13. spell probe: insert before the filler: cast Blade Flurry (+0.5%, pass 5)
-  14. threshold 80s -> 160s: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 80s: cast Slice and Dice (+1.8%, pass 6)
-  15. threshold 60 -> 30: if energy ≥ 60 and combo points ≤ 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish (+0.5%, pass 6)
-  16. drop: if energy ≤ 29 and combo points < 5 and time left on Expose Armor ≤ 6 and timeToNextEnergyTick > 1 and not Adrenaline Rush is up: cast Thistle Tea (+3.0%, pass 7)
-  17. insert at the end: cast Preparation (+0.3%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 13 passes, the last 2026-11-10, 24 changes to the base rotation; third-seed check: open winner 789 -> 796 DPS (+0.9%), subtlety-hemo-raid 626 -> 639 DPS (+2.0%), sim preset: Subtlety Hemo 788 -> 788 DPS (+0.0%)):
-  1. drop 'combo points ≥ 4' from the condition: if combo points ≥ 4 and not Rupture is on the target and time left in the fight > 8: cast Rupture (+1.1%, pass 1)
-  2. only with 20s or more of the fight left: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9): cast Slice and Dice (+0.3%, pass 1)
-  3. insert at the top: if combo points ≥ 4 and not Rupture is on the target and time left in the fight > 8: cast Rupture (+0.2%, pass 2)
-  4. threshold 5 -> 3.75: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice (+0.3%, pass 2)
-  5. threshold 4 -> 2: if combo points ≥ 4 and not Rupture is on the target and time left in the fight > 8: cast Rupture (+0.2%, pass 2)
-  6. insert in the middle: if not Garrote is on the target: cast Garrote (+1.7%, pass 4)
-  7. spell probe: insert before the filler: cast Cold Blood (+0.4%, pass 5)
-  8. spell probe: insert before the filler: if auraIsInactive: cast Ghostly Strike (+0.4%, pass 5)
-  9. threshold 1 -> 3: if energy ≥ 60 and combo points ≤ 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish (+0.2%, pass 6)
-  10. move down below 'cast Cold Blood': if auraIsInactive: cast Ghostly Strike (+0.2%, pass 6)
-  11. insert before the filler: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 2 and time left in the fight > 9): cast Slice and Dice (+0.2%, pass 7)
-  12. spell probe: insert before the filler: cast Blade Flurry (+0.3%, pass 9)
-  13. insert in the middle: if (energy ≤ 15 or Eureka! is known and energy ≤ 25 and Eureka! is up) and (combo points < 3 or variableRef or Eureka! is up): cast Thistle Tea (+2.7%, pass 10)
-  14. drop: if auraIsInactive: cast Ghostly Strike (+0.3%, pass 10)
-  15. threshold 3 -> 1: if (energy ≤ 15 or Eureka! is known and energy ≤ 25 and Eureka! is up) and (combo points < 3 or variableRef or Eureka! is up): cast Thistle Tea (+0.3%, pass 10)
-  16. drop: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 3.75 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice (+0.3%, pass 10)
-  17. threshold 60 -> 45: if energy ≥ 60 and combo points ≤ 3 and Slice and Dice is up and time left in the fight > 10: cast Vanish (+0.2%, pass 10)
-  18. insert at the end: if not Vanish is ready: cast Preparation (+0.2%, pass 11)
-  19. insert at the top: if true and not Hemorrhage is up and combo points < 5: cast Hemorrhage (+0.2%, pass 11)
-  20. drop the condition: if not Garrote is on the target: cast Garrote (+0.2%, pass 11)
-  21. threshold 8s -> 6s: if not variableRef and variableRef and (not variableRef or energy > (current cost + current cost) and not variableRef or not variableRef or variableRef or variableRef) and variableRef and (time left on Garrote ≥ 8s or not talentIsKnown): cast Hemorrhage (+0.5%, pass 12)
-  22. threshold 4 -> 5: if (combo points ≥ 5 or combo points = 4 and Mutilate is known or combo points ≥ 4 and time left on Slice and Dice ≤ 6s and not variableRef or combo points ≥ 3 and variableRef) and not variableRef and not talentIsKnown: cast Eviscerate (rank 8) (+0.2%, pass 12)
-  23. drop '(combo points < 3 or variableRef or Eureka! is up)' from the condition: if (energy ≤ 15 and not talentIsKnown or Eureka! is known and energy ≤ 25 and energy ≤ 25 or energy ≤ 25 and Death Mark is on the target) and (combo points < 3 or variableRef or Eureka! is up): cast Thistle Tea (+0.2%, pass 12)
-  24. drop 'variableRef' from the condition: if variableRef and not Hemorrhage is up and variableRef: cast Hemorrhage (+0.2%, pass 12)
+- **The training dummy:** the entry's base rotation (`_reference/data/raidsim/apls/rogue/upstream/default.apl.json`), untuned. The rotation search of 2026-09-28 to 2026-10-10 (17 changes, `subtlety-raid-rotation-search.json`) tuned an earlier base that this entry no longer plays.
+- **A fully buffed raid:** the entry's base rotation (`_reference/data/raidsim/apls/rogue/upstream/default.apl.json`), untuned. The rotation search of 2026-09-28 to 2026-11-10 (24 changes, `subtlety-raid-rotation-search.json`) tuned an earlier base that this entry no longer plays.
 
 Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: if “Start In Stealth”: cast Stealth.
 

@@ -18,9 +18,9 @@
 
 | Spec | Quests and dungeons | Pre-BiS | Raid BiS |
 |---|---|---|---|
-| [Elemental](elemental.md) | 693 | 754 | 774 |
 | [Enhancement](enhancement.md) | 729 | 738 | 773 |
-| [Elemental-Enhancement](elemental-enhancement.md) | 718 | 772 | 761 |
+| [Elemental](elemental.md) | 678 | 733 | 748 |
+| [Elemental-Enhancement](elemental-enhancement.md) | 703 | 757 | 746 |
 
 🔬 = a derived build (searched in a simulator). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

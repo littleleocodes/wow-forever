@@ -10,19 +10,7 @@ Our rotation `turret.apl.json` (wowsims/forever 2e6e77d (client 70938)), 3000 fi
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 10 passes, the last 2026-10-09, 12 changes to the base rotation; third-seed check: open winner 418 -> 452 DPS (+8.1%), bm-mm-full-buffs-raid 439 -> 473 DPS (+7.7%), sim preset: Marksmanship 417 -> 454 DPS (+8.9%), bm-mm-raid 443 -> 461 DPS (+3.9%)):
-  1. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+2.3%, pass 1)
-  2. drop: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+1.7%, pass 1)
-  3. threshold 0.5s -> 1s: if time to the next auto attack > 0.5s: cast Multi-Shot (+0.6%, pass 1)
-  4. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.3%, pass 1)
-  5. only with 20s or more of the fight left: if time to the next auto attack > 1s: cast Aimed Shot (+0.2%, pass 2)
-  6. spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+6.4%, pass 5)
-  7. only with 10s or more of the fight left: if auraIsInactive: cast Summon Hawk (+0.3%, pass 6)
-  8. only above 25% mana: if time to the next auto attack > 1s and time left in the fight ≥ 20s: cast Aimed Shot (+0.3%, pass 6)
-  9. threshold 25% -> 20%: if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 25%: cast Aimed Shot (+0.2%, pass 9)
-  10. threshold 10s -> 15s: if auraIsInactive and time left in the fight ≥ 10s: cast Summon Hawk + only above 10% mana: if time to the next auto attack > 1s: cast Multi-Shot (+0.2%, pass 9)
-  11. insert in the middle: cast Intimidation + only above 60% mana: cast Intimidation (+0.3%, pass 9)
-  12. threshold 20% -> 15%: if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 20%: cast Aimed Shot (+0.2%, pass 10)
+- **The training dummy:** the entry's base rotation (`_reference/data/raidsim/apls/hunter/upstream/turret.apl.json`), untuned. The rotation search of 2026-09-27 to 2026-10-09 (12 changes, `mm-raid-rotation-search.json`) tuned an earlier base that this entry no longer plays.
 - **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 19 passes, the last 2026-11-20, 22 changes to the base rotation; third-seed check: marksmanship-ml-raid 973 -> 981 DPS (+0.8%), sim preset: BM 899 -> 939 DPS (+4.5%), bm-mm-raid 863 -> 906 DPS (+5.0%), bm-mm-full-buffs-raid 872 -> 872 DPS (-0.0%), opt-mm-raid-raid-dps 865 -> 865 DPS (+0.0%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.0%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.3%, pass 1)
@@ -130,31 +118,8 @@ Our rotation `turret.apl.json` (wowsims/forever 2e6e77d (client 70938)), 3000 fi
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 9 passes, the last 2026-10-07, 9 changes to the base rotation; third-seed check: open winner 396 -> 444 DPS (+12.2%), opt-mm-lonewolf-raid-raid-dps 422 -> 463 DPS (+9.5%), sim preset: Beast Mastery 35/16/0 298 -> 381 DPS (+27.8%), mm-lone-wolf-raid 405 -> 457 DPS (+12.8%), marksmanship-ml-raid 403 -> 444 DPS (+10.3%)):
-  1. drop: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+3.3%, pass 1)
-  2. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+2.4%, pass 1)
-  3. threshold 1s -> 0.5s: if time to the next auto attack > 1s: cast Aimed Shot (+0.7%, pass 1)
-  4. threshold 1s -> 2s: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting (+0.2%, pass 1)
-  5. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.5%, pass 2)
-  6. spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+5.5%, pass 4)
-  7. move down below 'cast Arcane Shot': if time to the next auto attack > 0.5s: cast Aimed Shot (+0.4%, pass 6)
-  8. only with 10s or more of the fight left: if auraIsInactive: cast Summon Hawk (+0.2%, pass 6)
-  9. drop: if time to the next auto attack > 0.5s: cast Multi-Shot + only above 10% mana: if time to the next auto attack > 0.5s: cast Aimed Shot (+0.2%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 18 passes, the last 2026-11-10, 14 changes to the base rotation; third-seed check: mm-lone-wolf-raid 870 -> 965 DPS (+10.8%), sim preset: MM 866 -> 958 DPS (+10.6%), opt-mm-lonewolf-raid-raid-dps 858 -> 896 DPS (+4.5%), marksmanship-ml-raid 699 -> 752 DPS (+7.6%)):
-  1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.7%, pass 1)
-  2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.5%, pass 1)
-  3. drop 'time to the next auto attack > 1s' from the condition: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.3%, pass 1)
-  4. drop the condition: if time to the next auto attack > 0.5s: cast Multi-Shot (+0.2%, pass 1)
-  5. spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+2.3%, pass 4)
-  6. insert at the top: if time to the next auto attack > 1s: cast Aimed Shot (+2.7%, pass 5)
-  7. drop the condition: if time to the next auto attack > 1s: cast Aimed Shot (+1.5%, pass 5)
-  8. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+0.9%, pass 5)
-  9. move down below 'if auraIsInactive: cast Summon Hawk': cast Aimed Shot (+0.3%, pass 6)
-  10. drop: if auraIsInactive: cast Summon Hawk (+0.7%, pass 10)
-  11. insert at the top: if time to the next auto attack > 1s: cast Summon Hawk (+0.3%, pass 10)
-  12. only with 20s or more of the fight left: if time to the next auto attack > 1s: cast Summon Hawk (+0.2%, pass 10)
-  13. insert at the end: cast Major Mana Potion (+0.6%, pass 13)
-  14. threshold 1 -> 2: if time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.5%, pass 13)
+- **The training dummy:** the entry's base rotation (`_reference/data/raidsim/apls/hunter/upstream/turret.apl.json`), untuned. The rotation search of 2026-09-27 to 2026-10-07 (9 changes, `mm-lonewolf-raid-rotation-search.json`) tuned an earlier base that this entry no longer plays.
+- **A fully buffed raid:** the entry's base rotation (`_reference/data/raidsim/apls/hunter/upstream/turret.apl.json`), untuned. The rotation search of 2026-09-27 to 2026-11-10 (14 changes, `mm-lonewolf-raid-rotation-search.json`) tuned an earlier base that this entry no longer plays.
 
 ### [`marksmanship-lone-wolf-sim-raid`](builds/marksmanship-lone-wolf-sim-raid.md) (ours: derived (simulator preset), 479 DPS), *MM* (community simulator, 479 DPS), [`opt-mm-lonewolf-raid-raid-dps`](builds/opt-mm-lonewolf-raid-raid-dps.md) (ours: optimizer, 473 DPS), [`mm-lone-wolf-raid`](builds/mm-lone-wolf-raid.md) (ours: hand draft, 472 DPS), [`marksmanship-ml-raid`](builds/marksmanship-ml-raid.md) (ours: derived (ML search), 387 DPS)
 
@@ -216,38 +181,8 @@ Our rotation `turret_hawk.apl.json` (wowsims/forever 2e6e77d (client 70938)), 30
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 10 passes, the last 2026-10-09, 15 changes to the base rotation; third-seed check: open winner 427 -> 473 DPS (+10.7%), beast-marks-open-raid 450 -> 490 DPS (+8.9%), sim preset: Beast Mastery 35/16/0 437 -> 463 DPS (+5.9%), mm-hawk-raid 438 -> 475 DPS (+8.5%), beast-mastery-raid 449 -> 487 DPS (+8.6%), beast-marks-ml-raid 443 -> 480 DPS (+8.3%)):
-  1. drop: use every other cooldown when ready (+3.0%, pass 1)
-  2. drop: if time to the next auto attack > 1s: cast Aimed Shot (+0.5%, pass 1)
-  3. drop: if time to the next auto attack > 0.5s: cast Multi-Shot (+2.1%, pass 1)
-  4. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and mana % ≥ 30%: cast Serpent Sting (+2.8%, pass 1)
-  5. drop the condition: if time to the next auto attack > 1s: cast Summon Hawk (+0.8%, pass 1)
-  6. move down below 'cast Summon Hawk': if time left on Serpent Sting < 1s: cast Serpent Sting (+0.9%, pass 1)
-  7. insert before the filler: use every other cooldown when ready (+3.8%, pass 2)
-  8. threshold 1s -> 2s: if time left on Serpent Sting < 1s: cast Serpent Sting (+0.4%, pass 2)
-  9. threshold 2s -> 4s: if time left on Serpent Sting < 2s: cast Serpent Sting (+1.3%, pass 2)
-  10. spell probe: insert at the end: if auraIsInactive: cast Intimidation (+0.5%, pass 5)
-  11. only above 60% mana: if auraIsInactive: cast Intimidation (+0.2%, pass 7)
-  12. threshold 60% -> 70%: if auraIsInactive and mana % ≥ 60%: cast Intimidation (+0.3%, pass 8)
-  13. insert at the top: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+19.8%, pass 10)
-  14. threshold 30% -> 10%: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+2.9%, pass 10)
-  15. only with 3s or more of the fight left: if time left on Serpent Sting < 4s: cast Serpent Sting (+0.4%, pass 10)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 20 passes, the last 2026-11-20, 15 changes to the base rotation; third-seed check: beast-mastery-ml-raid 883 -> 907 DPS (+2.7%), sim preset: BM 878 -> 901 DPS (+2.7%), mm-hawk-raid 845 -> 864 DPS (+2.2%), beast-marks-ml-raid 871 -> 894 DPS (+2.7%)):
-  1. move to the top: if time to the next auto attack > 0.5s: cast Multi-Shot (+1.9%, pass 1)
-  2. drop the condition: if time to the next auto attack > 1s: cast Summon Hawk (+0.4%, pass 1)
-  3. threshold 1s -> 0.75s: if time left on Serpent Sting < 1s and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 2)
-  4. threshold 0.75s -> 0.25s: if time left on Serpent Sting < 0.75s and mana % ≥ 30%: cast Serpent Sting + move to the top: if time left on Serpent Sting < 0.25s and mana % ≥ 30%: cast Serpent Sting (+0.3%, pass 3)
-  5. drop: if time to the next auto attack > 0.5s: cast Multi-Shot (+0.6%, pass 5)
-  6. insert at the end: if time to the next auto attack > 0.5s: cast Multi-Shot (+0.3%, pass 5)
-  7. move down below 'cast Summon Hawk': if time to the next auto attack > 1s: cast Aimed Shot (+0.4%, pass 5)
-  8. drop the condition: if time to the next auto attack > 1s: cast Aimed Shot (+0.2%, pass 5)
-  9. insert at the top: if time to the next auto attack > 1s: cast Summon Hawk + insert in the middle: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+0.8%, pass 6)
-  10. only with 10s or more of the fight left: if time to the next auto attack > 1s: cast Summon Hawk (+0.2%, pass 6)
-  11. drop: if time to the next auto attack > 1s and time left in the fight ≥ 10s: cast Summon Hawk (+1.1%, pass 10)
-  12. drop the condition: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+0.3%, pass 11)
-  13. spell probe: insert in the middle: if auraIsInactive: cast Sniper Shot (+1.3%, pass 12)
-  14. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 0.25s and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 13)
-  15. only above 60% mana: cast Summon Hawk (+0.8%, pass 20)
+- **The training dummy:** the entry's base rotation (`_reference/data/raidsim/apls/hunter/upstream/turret_hawk.apl.json`), untuned. The rotation search of 2026-09-28 to 2026-10-09 (15 changes, `bm-raid-rotation-search.json`) tuned an earlier base that this entry no longer plays.
+- **A fully buffed raid:** the entry's base rotation (`_reference/data/raidsim/apls/hunter/upstream/turret_hawk.apl.json`), untuned. The rotation search of 2026-09-28 to 2026-11-20 (15 changes, `bm-raid-rotation-search.json`) tuned an earlier base that this entry no longer plays.
 
 ### *BM* (community simulator, 491 DPS), [`mm-hawk-raid`](builds/mm-hawk-raid.md) (ours: hand draft, 482 DPS), [`beast-mastery-ml-raid`](builds/beast-mastery-ml-raid.md) (ours: derived (ML search), 480 DPS), [`beast-marks-ml-raid`](builds/beast-marks-ml-raid.md) (ours: derived (ML search), 477 DPS)
 
@@ -287,24 +222,8 @@ Our rotation `melee.apl.json` (wowsims/forever 2e6e77d (client 70938)), 3000 fig
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 8 passes, the last 2026-10-05, 9 changes to the base rotation; third-seed check: open winner 298 -> 363 DPS (+21.9%), survival-raid 313 -> 445 DPS (+42.1%), melee-survival-raid 319 -> 423 DPS (+32.5%), opt-melee-dps-raid-dps 319 -> 426 DPS (+33.2%)):
-  1. insert before the filler: cast Wing Clip (+7.4%, pass 1)
-  2. spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+14.3%, pass 2)
-  3. insert in the middle: cast Major Mana Potion (+0.4%, pass 3)
-  4. move to the top: cast Immolation Trap (+0.5%, pass 3)
-  5. move to the top: cast Raptor Strike (+0.3%, pass 3)
-  6. move down below 'cast Strider Kick': cast Major Mana Potion (+0.4%, pass 4)
-  7. move to the top: cast Mongoose Bite (+0.2%, pass 4)
-  8. move to the top: cast Aspect of the Beast (+0.2%, pass 4)
-  9. move to the top: if auraIsInactive: cast Summon Hawk (+0.3%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 17 passes, the last 2026-11-10, 7 changes to the base rotation; third-seed check: melee-survival-raid 497 -> 752 DPS (+51.3%), sim preset: SV Melee 381 -> 623 DPS (+63.3%), opt-melee-dps-raid-dps 497 -> 703 DPS (+41.3%), survival-raid 467 -> 705 DPS (+50.9%), survival-ml-parse 474 -> 714 DPS (+50.5%)):
-  1. insert before the filler: cast Wing Clip (+10.3%, pass 1)
-  2. spell probe: insert in the middle: if auraIsInactive: cast Summon Hawk (+15.0%, pass 2)
-  3. move down below 'cast Strider Kick': if auraIsInactive: cast Summon Hawk (+0.3%, pass 10)
-  4. move to the top: cast Raptor Strike (+0.3%, pass 10)
-  5. move to the top: cast Explosive Trap (+0.6%, pass 12)
-  6. only above 60% mana: cast Explosive Trap (+0.2%, pass 13)
-  7. only with 20s or more of the fight left: if mana % ≥ 60%: cast Explosive Trap (+0.2%, pass 14)
+- **The training dummy:** the entry's base rotation (`_reference/data/raidsim/apls/hunter/upstream/melee.apl.json`), untuned. The rotation search of 2026-09-29 to 2026-10-05 (9 changes, `melee-dps-rotation-search.json`) tuned an earlier base that this entry no longer plays.
+- **A fully buffed raid:** the entry's base rotation (`_reference/data/raidsim/apls/hunter/upstream/melee.apl.json`), untuned. The rotation search of 2026-09-29 to 2026-11-10 (7 changes, `melee-dps-rotation-search.json`) tuned an earlier base that this entry no longer plays.
 
 ### [`survival-raid`](builds/survival-raid.md) (ours: derived (simulator search), 398 DPS), [`melee-survival-raid`](builds/melee-survival-raid.md) (ours: hand draft, 394 DPS), [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) (ours: optimizer, 377 DPS), [`survival-ml-parse`](builds/survival-ml-parse.md) (ours: derived (ML search), 300 DPS)
 
@@ -387,24 +306,8 @@ Our rotation `melee.apl.json` (wowsims/forever 2e6e77d (client 70938)), 3000 fig
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 8 passes, the last 2026-10-05, 9 changes to the base rotation; third-seed check: open winner 298 -> 363 DPS (+21.9%), survival-raid 313 -> 445 DPS (+42.1%), melee-survival-raid 319 -> 423 DPS (+32.5%), opt-melee-dps-raid-dps 319 -> 426 DPS (+33.2%)):
-  1. insert before the filler: cast Wing Clip (+7.4%, pass 1)
-  2. spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+14.3%, pass 2)
-  3. insert in the middle: cast Major Mana Potion (+0.4%, pass 3)
-  4. move to the top: cast Immolation Trap (+0.5%, pass 3)
-  5. move to the top: cast Raptor Strike (+0.3%, pass 3)
-  6. move down below 'cast Strider Kick': cast Major Mana Potion (+0.4%, pass 4)
-  7. move to the top: cast Mongoose Bite (+0.2%, pass 4)
-  8. move to the top: cast Aspect of the Beast (+0.2%, pass 4)
-  9. move to the top: if auraIsInactive: cast Summon Hawk (+0.3%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 17 passes, the last 2026-11-10, 7 changes to the base rotation; third-seed check: melee-survival-raid 497 -> 752 DPS (+51.3%), sim preset: SV Melee 381 -> 623 DPS (+63.3%), opt-melee-dps-raid-dps 497 -> 703 DPS (+41.3%), survival-raid 467 -> 705 DPS (+50.9%), survival-ml-parse 474 -> 714 DPS (+50.5%)):
-  1. insert before the filler: cast Wing Clip (+10.3%, pass 1)
-  2. spell probe: insert in the middle: if auraIsInactive: cast Summon Hawk (+15.0%, pass 2)
-  3. move down below 'cast Strider Kick': if auraIsInactive: cast Summon Hawk (+0.3%, pass 10)
-  4. move to the top: cast Raptor Strike (+0.3%, pass 10)
-  5. move to the top: cast Explosive Trap (+0.6%, pass 12)
-  6. only above 60% mana: cast Explosive Trap (+0.2%, pass 13)
-  7. only with 20s or more of the fight left: if mana % ≥ 60%: cast Explosive Trap (+0.2%, pass 14)
+- **The training dummy:** the entry's base rotation (`_reference/data/raidsim/apls/hunter/upstream/melee.apl.json`), untuned. The rotation search of 2026-09-29 to 2026-10-05 (9 changes, `survival-pet-raid-rotation-search.json`) tuned an earlier base that this entry no longer plays.
+- **A fully buffed raid:** the entry's base rotation (`_reference/data/raidsim/apls/hunter/upstream/melee.apl.json`), untuned. The rotation search of 2026-09-29 to 2026-11-10 (7 changes, `survival-pet-raid-rotation-search.json`) tuned an earlier base that this entry no longer plays.
 
 ### [`melee-survival-raid`](builds/melee-survival-raid.md) (ours: hand draft, 402 DPS)
 

@@ -75,18 +75,7 @@ The Assassination raid build the open talent search found on 2026-11-10: every l
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 9 passes, the last 2026-10-14, 11 changes to the base rotation; third-seed check: ):
-  1. insert at the top: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+8.6%, pass 1)
-  2. threshold 5 -> 3.75: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+0.8%, pass 1)
-  3. insert at the top: cast Backstab (+1.6%, pass 1)
-  4. only with 10s or more of the fight left: if time left on Expose Armor < 3 and combo points ≥ 3.75 and time left in the fight ≥ 3: cast Expose Armor (+0.2%, pass 1)
-  5. threshold 6 -> 12: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9): cast Slice and Dice (+0.2%, pass 1)
-  6. threshold 4 -> 5: if combo points ≥ 4 and Slice and Dice is up: cast Cold Blood + drop 'combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9' from the condition: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 12 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9): cast Slice and Dice (+0.3%, pass 1)
-  7. insert at the top: if energy ≤ 29 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea + threshold 29 -> 43.5: if energy ≤ 29 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea (+0.3%, pass 3)
-  8. spell probe: insert at the end: cast Hemorrhage (+8.4%, pass 5)
-  9. spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike (+2.0%, pass 5)
-  10. drop: if energy ≤ 43.5 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea (+2.8%, pass 8)
-  11. spell probe: insert at the top: if auraIsInactive: cast Adrenaline Rush (+1.8%, pass 9)
+- **The training dummy:** the entry's base rotation (`_reference/data/raidsim/apls/rogue/sim-presets/default.apl.json`), untuned. The rotation search of 2026-09-28 to 2026-10-14 (11 changes, `assassination-raid-rotation-search.json`) tuned an earlier base that this entry no longer plays.
 - **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 15 passes, the last 2026-11-09, 11 changes to the base rotation; third-seed check: open winner 804 -> 813 DPS (+1.1%), assassination-seal-fate-raid 609 -> 687 DPS (+12.9%), sim preset: Asn Muti 804 -> 812 DPS (+0.9%), assassination-mutilate-raid 610 -> 679 DPS (+11.2%), assassination-ml-raid 628 -> 696 DPS (+10.7%), daggers-split-open-raid 606 -> 686 DPS (+13.1%)):
   1. insert before the filler: cast Backstab (+0.8%, pass 1)
   2. spell probe: insert at the end: cast Hemorrhage (+9.9%, pass 5)

@@ -19,9 +19,9 @@
 | Spec | Quests and dungeons | Pre-BiS | Raid BiS |
 |---|---|---|---|
 | [Assassination](assassination.md) | 787 | 835 | 846 |
-| [Subtlety](subtlety.md) | 750 | 819 | 818 |
-| [Daggers (split)](daggers-split.md) | 748 | 812 | 808 |
-| [Combat](combat.md) | 732 | 797 | 795 |
+| [Subtlety](subtlety.md) | 752 | 822 | 821 |
+| [Daggers (split)](daggers-split.md) | 744 | 808 | 803 |
+| [Combat](combat.md) | 728 | 794 | 791 |
 | [Assassination-Subtlety](hybrid-assassination-subtlety.md) | 702 | 770 | 780 |
 
 🔬 = a derived build (searched in a simulator). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.

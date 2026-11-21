@@ -84,16 +84,7 @@ Allocation adopted on 2026-09-28 from the community simulator's own preset 'Impr
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-10, 9 changes to the base rotation; third-seed check: open winner 353 -> 392 DPS (+11.1%), combat-swords-raid 343 -> 409 DPS (+19.3%), sim preset: Improved Expose Armor (SS) 343 -> 409 DPS (+19.3%), opt-combat-swords-raid-raid-dps 349 -> 391 DPS (+12.0%)):
-  1. insert at the top: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+9.7%, pass 1)
-  2. only with 10s or more of the fight left: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+0.3%, pass 1)
-  3. only with 20s or more of the fight left: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9): cast Slice and Dice (+0.4%, pass 1)
-  4. threshold 3 -> 6: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor (+0.8%, pass 2)
-  5. threshold 6 -> 12: if time left on Expose Armor < 6 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor (+0.9%, pass 2)
-  6. spell probe: insert before the filler: cast Hemorrhage (+13.1%, pass 4)
-  7. spell probe: insert in the middle: cast Mutilate (+1.2%, pass 4)
-  8. spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike (+2.2%, pass 4)
-  9. move to the top: if Slice and Dice is up: use every other cooldown when ready (+0.2%, pass 5)
+- **The training dummy:** the entry's base rotation (`_reference/data/raidsim/apls/rogue/sim-presets/default.apl.json`), untuned. The rotation search of 2026-09-28 to 2026-10-10 (9 changes, `combat-swords-raid-rotation-search.json`) tuned an earlier base that this entry no longer plays.
 - **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 14 passes, the last 2026-11-09, 12 changes to the base rotation; third-seed check: open winner 779 -> 781 DPS (+0.3%), opt-combat-swords-raid-raid-dps 690 -> 693 DPS (+0.3%), sim preset: Subtlety Hemo 788 -> 788 DPS (+0.0%), combat-swords-raid 673 -> 675 DPS (+0.3%), combat-swords-open-raid 691 -> 693 DPS (+0.3%)):
   1. threshold 5 -> 2.5: if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (+0.5%, pass 1)
   2. spell probe: insert before the filler: cast Mutilate (+0.6%, pass 4)

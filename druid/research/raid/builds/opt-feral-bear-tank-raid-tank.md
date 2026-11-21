@@ -73,15 +73,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-be
 
 ## Rotation (community simulator, raid setting)
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 13 passes, the last 2026-10-29, 8 changes to the base rotation; third-seed check: deep: tank 542 -> 2610 DPS (+381.3%), opt-feral-bear-tank-raid-tank 594 -> 2554 DPS (+330.3%), sim preset: Hybrid 579 -> 1930 DPS (+233.2%), feral-bear-tank 513 -> 2349 DPS (+357.6%), feral-combat-ml-tank 542 -> 2608 DPS (+381.5%)):
-  1. threshold 25 -> 50: if rage ≥ 25: cast Maul (+0.9%, pass 1)
-  2. move down below 'if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate': cast Primal Bite (+0.6%, pass 1)
-  3. insert before the filler: cast Barkskin (+2.2%, pass 3)
-  4. only with 20s or more of the fight left: cast Lacerate (+1.2%, pass 11)
-  5. drop the condition: if rage ≥ 50: cast Maul (+6.6%, pass 12)
-  6. drop: cast Primal Bite (+2.2%, pass 12)
-  7. insert before the filler: if rage < 20: cast Enrage (+1.2%, pass 12)
-  8. drop 'stacks of Lacerate < 5' from the condition: if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate (+0.3%, pass 12)
+- **A fully buffed raid:** the entry's base rotation (`_reference/data/raidsim/apls/druid/upstream/feralbear-adaptive.apl.json`), untuned. The rotation search of 2026-09-28 to 2026-10-29 (8 changes, `feral-bear-tank-rotation-search.json`) tuned an earlier base that this entry no longer plays.
 
 Before the pull: at -10s: if Furor is taken and rage < 10: cast Dire Bear Form; at -10s: cast Enrage; at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 item set; at -0.01s: if not activeItemSwapSet: swap to the Main item set; at -250ms: if number of targets = 3 and rage ≥ current cost: cast Maul.
 

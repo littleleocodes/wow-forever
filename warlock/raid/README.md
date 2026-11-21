@@ -19,7 +19,7 @@
 |---|---|---|---|
 | [Affliction](affliction.md) | - | 904 | 944 |
 | [Demonology](demonology.md) | - | 884 | 916 |
-| [Destruction](destruction.md) | 777 | 850 | 879 |
+| [Destruction](destruction.md) | 777 | 850 | 887 |
 | [Shadow Bolt hybrid](shadow-bolt-hybrid.md) | 675 | 752 | 780 |
 
 🔬 = a derived build (searched in a simulator). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.

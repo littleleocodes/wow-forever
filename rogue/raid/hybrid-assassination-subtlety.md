@@ -32,15 +32,33 @@ Between these, your white swings do the rest.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
+## Why this rotation
 
-**The timing** (the simulator's own named conditions, in its words, until this page's guide is rewritten):
+The Assassination/Subtlety hybrid plays Subtlety's raid list, the official simulator's own rogue rotation (since 2026-11-20, when it ran level with ours on this build in a full raid: 823.6 / 823.1 DPS against 821.7 / 822.4 on two seeds), with Assassination's crit and finisher talents in place of Death Mark, which this build does not take. **Hemorrhage** and **Shank** build combo points, **Garrote** and **Rupture** stay on the boss, **Slice and Dice** stays up, and 5 points go into **Eviscerate**. In a 3-minute raid fight: **Hemorrhage** 58 casts, **Shank** 18, **Rupture**, **Eviscerate** and **Slice and Dice** 9 each, **Garrote** 7, **Ghostly Strike** 6. The conditions the list names (the lines marked "timing: see below") are explained here.
 
-- “Current Points less than 5”: combo points < 5
-- “SnD Fall Imminent”: never (a switch this rotation keeps off)
-- “Boot Knife Known”: Boot Knife is taken
-- “Fight About to End”: time left in the fight ≤ 6s
-- “Expose - Prevent Other Finishers”: never (a switch this rotation keeps off)
-- “Dirty Deeds Known”: Dirty Deeds is taken
+**Why it works**
+
+- **Eviscerate** is your finisher: at 5 combo points, or at 3 or more in the last 6 seconds ("Fight About to End"), and only while **Rupture** has 3 seconds or more left, so **Serrated Blades**' stronger **Rupture** never drops for it. **Relentless Strikes** gives each finisher a 20% chance per point to restore 25 energy, and **Ruthlessness** a 60% chance to add a combo point back.
+- **Rupture** goes on whenever it is off and you have 3 or more points, but not in the last 6 seconds, where it would outlast the boss; "Expose - Prevent Other Finishers" matters only with the Expose Armor switch on (it is off: see below). **Serrated Blades** adds 30% to it and lets your attacks ignore 9% of armor, **Hemorrhage** adds 15% to **Rupture** and **Garrote** for 15 seconds, and **Blood Splatter** gives **Rupture** 6 more seconds.
+- **Slice and Dice** goes back up the moment it drops, with any points you have, after a missing **Rupture** and not in the last 6 seconds; **Improved Slice and Dice** makes it last 45% longer. "SnD Fall Imminent" never holds here: it needs the list's "Prio Slice and Dice" switch, which is off.
+- **Ghostly Strike** lets your next **Garrote** within 7 seconds skip stealth, so **Garrote** stays up all fight: the strike when **Garrote** has 4 seconds or less left (or is off), then **Garrote** as soon as it is off, both below 5 combo points ("Current Points less than 5"). "Dirty Deeds Known": with **Dirty Deeds**, **Garrote** costs 20 less energy and works from the front, so the strike goes from any side. **Blood Splatter** makes **Garrote** last 9 seconds longer, **Initiative** adds a second combo point to it and **Opportunity** 20% damage.
+- **Hemorrhage** is the builder (30 energy with **Efficient Strikes**; 100% weapon damage with the simulated set's sword, 145% with a dagger), below 5 points; **Lethality** adds 20% to its critical damage and **Seal Fate** gives each of its crits a 33% chance to add a second point. While **Garrote** has under 8 seconds left (or is off) the list holds it unless you have 75 energy or more ("In Danger of Energy Capping"), which keeps the energy for **Ghostly Strike** and the next **Garrote**.
+- **Shank** (5 energy, gives back 25, an off-hand strike that cannot miss) goes whenever it is ready and you have 80 energy or less. This build takes no Boot Knife ("Boot Knife Known" is false), so it adds no extra points; with **Venom** each **Shank** raises your poison damage by 30% and your chance to apply them by 20% for 6 seconds.
+- **Premeditation** adds 2 points before the pull, then on its 2-minute cooldown at 3 or fewer points. **Vanish** opens a **Garrote** a second into the fight: it goes when **Garrote** is off and you have its energy and fewer than 5 points ("Use Vanish for Damage" is a switch the list keeps on). **Preparation** follows as soon as **Vanish** is on cooldown and finishes your other rogue cooldowns, so **Premeditation** returns at once. Thistle Tea, an item, goes at 15 energy or less below 3 points.
+
+**Caveats**
+
+- The **Garrote** after **Vanish** needs stealth, and damage you take breaks it: if something hits you right after **Vanish**, the next **Ghostly Strike** opens the **Garrote** instead.
+- Almost all of this works from the front: **Hemorrhage**, **Ghostly Strike**, **Shank**, **Eviscerate**, **Rupture**, and **Garrote** with **Dirty Deeds**. **Ambush** and **Backstab** need a dagger and you behind the target; the list casts neither (switches it keeps off).
+- The numbers are a full raid: every raid buff and debuff, Sunder Armor and Expose Armor on the boss from others, a shaman's Windfury Totem in your group, Instant Poison on the main hand and Deadly Poison on the off hand. **Improved Poisons** makes them land more often and **Vile Poisons** hit harder; **Malice** adds 5% crit to your attacks and poisons.
+- **Setup**, **Camouflage** and **Improved Ambush** are tier points on the way to **Preparation**: nothing in a raid fight uses them.
+- No cleave: on adds, stay on the kill target, and do not **Rupture** a target that dies within a few seconds.
+
+**When to change it**
+
+- Without Sunder Armor or another rogue's Expose Armor on the boss (a small group, a dungeon), keep **Expose Armor** up yourself. The list's switch for it ("Use Expose Armor") is off here; on, it puts **Expose Armor** first at 5 points whenever it is missing or has 16 seconds or less left, and holds the other finishers until it is back.
+- The simulator starts every fight out of stealth ("Start In Stealth" is off). In the game you can start in **Stealth** and open with **Garrote** at the pull; the list's switch for that opener was not simulated.
+- If you pull threat, **Feint** lowers it by a large amount.
 
 ## Talents
 

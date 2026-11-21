@@ -22,7 +22,7 @@
 |---|---|---|---|
 | [Shockadin](shockadin.md) | 734 | 780 | 814 |
 | [Retribution](retribution.md) | 742 | 760 | 771 |
-| [Prot-Ret](prot-ret.md) | 637 | 663 | 647 |
+| [Prot-Ret](prot-ret.md) | 637 | 663 | 658 |
 
 🔬 = a derived build (searched in a simulator). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

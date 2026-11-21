@@ -87,24 +87,8 @@ Forever's melee hunter for raids, built around traps: Survival's melee package (
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 8 passes, the last 2026-10-05, 9 changes to the base rotation; third-seed check: open winner 298 -> 363 DPS (+21.9%), survival-raid 313 -> 445 DPS (+42.1%), melee-survival-raid 319 -> 423 DPS (+32.5%), opt-melee-dps-raid-dps 319 -> 426 DPS (+33.2%)):
-  1. insert before the filler: cast Wing Clip (+7.4%, pass 1)
-  2. spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+14.3%, pass 2)
-  3. insert in the middle: cast Major Mana Potion (+0.4%, pass 3)
-  4. move to the top: cast Immolation Trap (+0.5%, pass 3)
-  5. move to the top: cast Raptor Strike (+0.3%, pass 3)
-  6. move down below 'cast Strider Kick': cast Major Mana Potion (+0.4%, pass 4)
-  7. move to the top: cast Mongoose Bite (+0.2%, pass 4)
-  8. move to the top: cast Aspect of the Beast (+0.2%, pass 4)
-  9. move to the top: if auraIsInactive: cast Summon Hawk (+0.3%, pass 7)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 17 passes, the last 2026-11-10, 7 changes to the base rotation; third-seed check: melee-survival-raid 497 -> 752 DPS (+51.3%), sim preset: SV Melee 381 -> 623 DPS (+63.3%), opt-melee-dps-raid-dps 497 -> 703 DPS (+41.3%), survival-raid 467 -> 705 DPS (+50.9%), survival-ml-parse 474 -> 714 DPS (+50.5%)):
-  1. insert before the filler: cast Wing Clip (+10.3%, pass 1)
-  2. spell probe: insert in the middle: if auraIsInactive: cast Summon Hawk (+15.0%, pass 2)
-  3. move down below 'cast Strider Kick': if auraIsInactive: cast Summon Hawk (+0.3%, pass 10)
-  4. move to the top: cast Raptor Strike (+0.3%, pass 10)
-  5. move to the top: cast Explosive Trap (+0.6%, pass 12)
-  6. only above 60% mana: cast Explosive Trap (+0.2%, pass 13)
-  7. only with 20s or more of the fight left: if mana % ≥ 60%: cast Explosive Trap (+0.2%, pass 14)
+- **The training dummy:** the entry's base rotation (`_reference/data/raidsim/apls/hunter/upstream/melee.apl.json`), untuned. The rotation search of 2026-09-29 to 2026-10-05 (9 changes, `melee-dps-rotation-search.json`) tuned an earlier base that this entry no longer plays.
+- **A fully buffed raid:** the entry's base rotation (`_reference/data/raidsim/apls/hunter/upstream/melee.apl.json`), untuned. The rotation search of 2026-09-29 to 2026-11-10 (7 changes, `melee-dps-rotation-search.json`) tuned an earlier base that this entry no longer plays.
 
 Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Beast; at -19s: groupReference.
 

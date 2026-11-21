@@ -434,7 +434,7 @@
     },
     "bis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-bis.gear.json",
-     "dps": 879.64
+     "dps": 887.19
     },
     "standard": {
      "file": "_reference/data/raidsim/gear_sets/forever/warlock-dps-mc.p1opt.gear.json",
@@ -458,9 +458,9 @@
      "own": 851.02
     },
     "bis": {
-     "set": "standard",
-     "dps": 880.96,
-     "own": 879.64
+     "set": "bis",
+     "dps": 887.19,
+     "own": 887.19
     }
    }
   },
@@ -616,11 +616,11 @@
     },
     "prebis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-prebis.gear.json",
-     "dps": 922.63
+     "dps": 927.42
     },
     "bis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-survival-bis.gear.json",
-     "dps": 915.19
+     "dps": 931.71
     },
     "standard": {
      "file": "_reference/data/raidsim/gear_sets/forever/hunter-project-hunter_melee_p1.p1opt.gear.json",
@@ -640,13 +640,13 @@
     },
     "prebis": {
      "set": "prebis",
-     "dps": 922.63,
-     "own": 922.63
+     "dps": 927.42,
+     "own": 927.42
     },
     "bis": {
-     "set": "prebis",
-     "dps": 922.63,
-     "own": 915.19
+     "set": "bis",
+     "dps": 931.71,
+     "own": 931.71
     }
    }
   },
@@ -874,7 +874,7 @@
     },
     "prebis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-combat-prebis.gear.json",
-     "dps": 792.23
+     "dps": 793.7
     },
     "bis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-combat-bis.gear.json",
@@ -898,12 +898,12 @@
     },
     "prebis": {
      "set": "prebis",
-     "dps": 792.23,
-     "own": 792.23
+     "dps": 793.7,
+     "own": 793.7
     },
     "bis": {
      "set": "prebis",
-     "dps": 792.23,
+     "dps": 793.7,
      "own": 790.73
     }
    }
@@ -920,7 +920,7 @@
     },
     "prebis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-subtlety-prebis.gear.json",
-     "dps": 821.44
+     "dps": 821.19
     },
     "bis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-subtlety-bis.gear.json",
@@ -944,12 +944,12 @@
     },
     "prebis": {
      "set": "prebis",
-     "dps": 821.44,
-     "own": 821.44
+     "dps": 821.19,
+     "own": 821.19
     },
     "bis": {
      "set": "prebis",
-     "dps": 821.44,
+     "dps": 821.19,
      "own": 820.62
     }
    }
@@ -1156,7 +1156,7 @@
     },
     "bis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-hybrid-protection-retribution-bis.gear.json",
-     "dps": 647.21
+     "dps": 658.29
     },
     "standard": {
      "file": "_reference/data/raidsim/gear_sets/forever/paladin-retribution-default.p1opt.gear.json",
@@ -1182,7 +1182,7 @@
     "bis": {
      "set": "prebis",
      "dps": 662.17,
-     "own": 647.21
+     "own": 658.29
     }
    }
   }
@@ -1196,15 +1196,15 @@
    "sets": {
     "dungeon": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-dungeon.gear.json",
-     "dps": 658.53
+     "dps": 670.38
     },
     "prebis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-prebis.gear.json",
-     "dps": 723.02
+     "dps": 732.59
     },
     "bis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-bis.gear.json",
-     "dps": 737.56
+     "dps": 741.59
     },
     "standard": {
      "file": "_reference/data/raidsim/gear_sets/forever/shaman-elemental-phase_1.p1opt.gear.json",
@@ -1219,18 +1219,18 @@
    "tiers": {
     "dungeon": {
      "set": "dungeon",
-     "dps": 658.53,
-     "own": 658.53
+     "dps": 670.38,
+     "own": 670.38
     },
     "prebis": {
      "set": "prebis",
-     "dps": 723.02,
-     "own": 723.02
+     "dps": 732.59,
+     "own": 732.59
     },
     "bis": {
-     "set": "standard",
-     "dps": 740.72,
-     "own": 737.56
+     "set": "bis",
+     "dps": 741.59,
+     "own": 741.59
     }
    }
   },
@@ -1296,7 +1296,7 @@
     },
     "bis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-hybrid-elemental-enhancement-bis.gear.json",
-     "dps": 708.83
+     "dps": 744.65
     },
     "standard": {
      "file": "_reference/data/raidsim/gear_sets/forever/shaman-enhancement-phase_1.p1opt.gear.json",
@@ -1322,7 +1322,7 @@
     "bis": {
      "set": "prebis",
      "dps": 757.07,
-     "own": 708.83
+     "own": 744.65
     }
    }
   }
