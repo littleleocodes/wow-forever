@@ -2007,13 +2007,13 @@
       "summary": "The Frostfire (a Fire/Frost hybrid) leveling build the open leveling search found on 2026-11-20: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the frostfire-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (fire-leveling). ",
       "allocation": {
         "Arcane": [
-          ["Wand Specialization", 1]
+          ["Wand Specialization", 2]
         ],
         "Fire": [
           ["Incineration", 5],
           ["Accelerant", 5],
           ["Ignite", 5],
-          ["Impact", 2],
+          ["Impact", 1],
           ["Pyroblast", 1],
           ["Improved Fire Blast", 2],
           ["Heating Up", 1],
@@ -2021,10 +2021,10 @@
           ["Critical Mass", 3]
         ],
         "Frost": [
-          ["Improved Frostbolt", 3],
+          ["Improved Frostbolt", 4],
           ["Precision", 2],
           ["Ice Shards", 5],
-          ["Frostbite", 2],
+          ["Frostbite", 1],
           ["Improved Frost Nova", 2],
           ["Frost Channeling", 3],
           ["Ice Lance", 1],
@@ -2035,7 +2035,8 @@
       "order": [
         {"levels": "10-11", "tree": "Frost", "talent": "Precision", "points": 2},
         {"levels": "12-14", "tree": "Frost", "talent": "Improved Frostbolt", "points": 3},
-        {"levels": "15-16", "tree": "Frost", "talent": "Frostbite", "points": 2},
+        {"levels": "15", "tree": "Frost", "talent": "Frostbite", "points": 1},
+        {"levels": "16", "tree": "Frost", "talent": "Improved Frostbolt", "points": 1},
         {"levels": "17-19", "tree": "Frost", "talent": "Ice Shards", "points": 3},
         {"levels": "20", "tree": "Frost", "talent": "Ice Lance", "points": 1},
         {"levels": "21-22", "tree": "Frost", "talent": "Ice Shards", "points": 2},
@@ -2058,7 +2059,7 @@
         {"levels": "55", "tree": "Frost", "talent": "Improved Frost Nova", "points": 1},
         {"levels": "56-58", "tree": "Fire", "talent": "Critical Mass", "points": 3},
         {"levels": "59", "tree": "Fire", "talent": "Incineration", "points": 1},
-        {"levels": "60", "tree": "Fire", "talent": "Impact", "points": 1}
+        {"levels": "60", "tree": "Arcane", "talent": "Wand Specialization", "points": 1}
       ],
       "core": [
         {"talent": "Shatter", "why": "+4.7 s per kill at level 60 without it (removal, 3,000 fights)."},
@@ -2071,7 +2072,7 @@
         {"talent": "Master of Elements", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 34.88; . The search simulated 75,576 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Impact to Wand Specialization at 60 (tie-break: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Frostbite to Improved Frostbolt at 16 (gate: -0.4% seed 3, -0.4% seed 4, level-weighted time per kill).", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 34.88; . The search simulated 75,576 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Frostfire leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/mage/60/1-55502001200133-0325220301003002-12"]
     },

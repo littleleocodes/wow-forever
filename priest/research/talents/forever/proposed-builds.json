@@ -1157,20 +1157,19 @@
           ["Inner Focus", 1],
           ["Improved Power Word: Shield", 3],
           ["Meditation", 3],
-          ["Improved Inner Fire", 1],
           ["Soul Warding", 1]
         ],
         "Holy": [
-          ["Improved Renew", 1],
+          ["Twilight Focus", 2],
           ["Holy Specialization", 5],
           ["Divine Fury", 5],
-          ["Holy Nova", 1],
           ["Inspiration", 3],
           ["Improved Healing", 3],
           ["Searing Light", 2],
           ["Spiritual Guidance", 1]
         ],
         "Shadow": [
+          ["Shadow Focus", 1],
           ["Spirit Tap", 5],
           ["Improved Mind Blast", 1],
           ["Improved Shadow Word: Pain", 2]
@@ -1190,12 +1189,12 @@
         {"levels": "31", "tree": "Shadow", "talent": "Spirit Tap", "points": 1},
         {"levels": "32", "tree": "Shadow", "talent": "Improved Mind Blast", "points": 1},
         {"levels": "33", "tree": "Discipline", "talent": "Improved Power Word: Shield", "points": 1},
-        {"levels": "34", "tree": "Holy", "talent": "Improved Renew", "points": 1},
+        {"levels": "34", "tree": "Holy", "talent": "Twilight Focus", "points": 1},
         {"levels": "35-39", "tree": "Holy", "talent": "Holy Specialization", "points": 5},
         {"levels": "40-43", "tree": "Holy", "talent": "Divine Fury", "points": 4},
-        {"levels": "44", "tree": "Holy", "talent": "Holy Nova", "points": 1},
+        {"levels": "44", "tree": "Holy", "talent": "Twilight Focus", "points": 1},
         {"levels": "45-46", "tree": "Discipline", "talent": "Improved Power Word: Shield", "points": 2},
-        {"levels": "47", "tree": "Discipline", "talent": "Improved Inner Fire", "points": 1},
+        {"levels": "47", "tree": "Shadow", "talent": "Shadow Focus", "points": 1},
         {"levels": "48", "tree": "Discipline", "talent": "Soul Warding", "points": 1},
         {"levels": "49", "tree": "Holy", "talent": "Divine Fury", "points": 1},
         {"levels": "50-52", "tree": "Holy", "talent": "Inspiration", "points": 3},
@@ -1215,7 +1214,7 @@
         {"talent": "Improved Shadow Word: Pain", "why": "+0.6 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 49.52; smite-open-leveling 49.96, holy-leveling 56.79. The search simulated 40,040 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Inner Fire to Shadow Focus at 47 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Renew to Twilight Focus at 34 (gate: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Holy Nova to Twilight Focus at 44 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 49.52; smite-open-leveling 49.96, holy-leveling 56.79. The search simulated 40,040 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Smite leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/priest", "https://talentsforever.com/priest/60/52201003133101-015051030320001-00512-12"]
     },
@@ -1232,12 +1231,13 @@
       "allocation": {
         "Discipline": [
           ["Power in Light", 2],
+          ["Wand Specialization", 2],
           ["Twin Disciplines", 5],
-          ["Mental Strength", 3],
-          ["Meditation", 3]
+          ["Mental Strength", 2],
+          ["Meditation", 2]
         ],
         "Holy": [
-          ["Twilight Focus", 2]
+          ["Twilight Focus", 3]
         ],
         "Shadow": [
           ["Shadow Focus", 4],
@@ -1249,7 +1249,7 @@
           ["Dark Inspiration", 5],
           ["Vampiric Embrace", 1],
           ["Shadow Weaving", 3],
-          ["Early Demise", 2],
+          ["Early Demise", 1],
           ["Darkness", 5],
           ["Shadowform", 1]
         ]
@@ -1272,11 +1272,12 @@
         {"levels": "41-42", "tree": "Shadow", "talent": "Darkness", "points": 2},
         {"levels": "43-44", "tree": "Shadow", "talent": "Dark Inspiration", "points": 2},
         {"levels": "45-49", "tree": "Discipline", "talent": "Twin Disciplines", "points": 5},
-        {"levels": "50-51", "tree": "Holy", "talent": "Twilight Focus", "points": 2},
-        {"levels": "52", "tree": "Shadow", "talent": "Early Demise", "points": 1},
-        {"levels": "53-55", "tree": "Discipline", "talent": "Mental Strength", "points": 3},
+        {"levels": "50-52", "tree": "Holy", "talent": "Twilight Focus", "points": 3},
+        {"levels": "53-54", "tree": "Discipline", "talent": "Mental Strength", "points": 2},
+        {"levels": "55", "tree": "Discipline", "talent": "Wand Specialization", "points": 1},
         {"levels": "56-57", "tree": "Discipline", "talent": "Power in Light", "points": 2},
-        {"levels": "58-60", "tree": "Discipline", "talent": "Meditation", "points": 3}
+        {"levels": "58-59", "tree": "Discipline", "talent": "Meditation", "points": 2},
+        {"levels": "60", "tree": "Discipline", "talent": "Wand Specialization", "points": 1}
       ],
       "core": [
         {"talent": "Shadowform", "why": "+10.9 s per kill at level 60 without it (removal, 3,000 fights)."},
@@ -1289,7 +1290,7 @@
         {"talent": "Early Demise", "why": "+0.6 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Twilight Focus to Early Demise at 52 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill).", "+5.0% faster than the hand draft leveling-shadow, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 24.61; opt-shadow-dps-solo-60 25.32, leveling-shadow 25.83, opt-shadow-dps-leveling-aoe 29.10, opt-shadow-dps-leveling-st 31.85. The search simulated 45,475 builds.", "The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Early Demise to Twilight Focus at 52 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Meditation to Wand Specialization at 60 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Mental Strength to Wand Specialization at 55 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).", "2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Twilight Focus to Early Demise at 52 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill).", "+5.0% faster than the hand draft leveling-shadow, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 24.61; opt-shadow-dps-solo-60 25.32, leveling-shadow 25.83, opt-shadow-dps-leveling-aoe 29.10, opt-shadow-dps-leveling-st 31.85. The search simulated 45,475 builds.", "The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Shadow leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/priest", "https://talentsforever.com/priest/60/20500300003-2-40550201251300251-12"],
       "replaces": "leveling-shadow"

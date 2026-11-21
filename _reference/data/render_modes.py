@@ -319,9 +319,50 @@ def tree_legal(cls, alloc):
     return not errors and sum(sum(v.values()) for v in state.values()) <= VB.TOTAL_POINTS
 
 
+TIER_BEST_FILE = HERE / "raidsim" / "tier-best.json"
+TIER_BEST = json.load(open(TIER_BEST_FILE, encoding="utf-8")) if TIER_BEST_FILE.exists() else {}
+SET_NAME = {"dungeon": "the Quests and dungeons set", "prebis": "the Pre-BiS set", "bis": "the Raid BiS set",
+            "standard": "the standard set (the number at the top of the page)"}
+
+
+def tier_best_lines(cls, spec, src, top, tb, r):
+    """The tier table from raidsim/tier_best.py (2026-11-21, the audit session's interim fix): this build in the best set each tier
+    allows, and which set that is, with the gear table of the tier sets below it."""
+    o = [f"**By gear tier** (this build in the best set each tier allows, full raid, {tb.get('fights', 0):,} fights; "
+         f"[every spec]({paths.rel(src, RANKINGS)})):", "", "| Gear | Full raid DPS | In |", "|---|---|---|"]
+    worse = []
+    for t, name in TIER_KEYS:
+        v = (tb.get("tiers") or {}).get(t)
+        if not v:
+            continue
+        where = "its own set" if v["set"] == t else SET_NAME.get(v["set"], v["set"])
+        if v["set"] != t and v.get("own"):
+            where += f" (its own set: {v['own']:.0f})"
+            worse.append(f"{name} ({v['own']:.0f} in its own set, {v['dps']:.0f} in {SET_NAME.get(v['set'], v['set']).split(' (')[0]})")
+        o.append(f"| {name} | {v['dps']:.0f} | {where} |")
+    o += ["", "*Each tier's number is this build in its own tier set, in a lower tier's set, or in the standard set when every item of "
+          "it is allowed in the tier, whichever is best. The tier sets were chosen for the builds and rotations of before 2026-11-20 and "
+          "are being made again for this build.*", ""]
+    gt = gear_tables.table(cls, spec) if r else []
+    if gt:
+        il = "; ".join(f"{name} {(page_gear(r, t) or {}).get('ilvl', '-')}" for t, name in TIER_KEYS if page_gear(r, t))
+        o += [f"**The gear** (each tier's own set; average item level: {il}; each item opens its Wowhead page, with where it drops and its "
+              "enchant):", ""] + gt + [""]
+        if worse:
+            o += ["*This build does better outside its own set in " + "; ".join(worse) + ": those columns show the set made for an "
+                  "earlier build.*", ""]
+        sl = gear_tables.sim_line(cls, spec)
+        if sl:
+            o += [sl, ""]
+    return o
+
+
 def tier_lines(cls, spec, src, top):
     """A spec raid page's DPS by gear tier: the best talents per tier and setting in the spec's own gear, and that gear."""
     r = TIERS.get((cls, spec))
+    tb = (TIER_BEST.get(cls) or {}).get(spec)
+    if tb and tb.get("build") == top.get("id") and tb.get("tiers"):
+        return tier_best_lines(cls, spec, src, top, tb, r)
     if not r:
         return []
     flat = lambda a: {n: k for items in a.values() for n, k in items}   # noqa: E731
@@ -348,6 +389,12 @@ def tier_lines(cls, spec, src, top):
         if tl != "this build" and t == "bis" and f"confirms {top['id']} " in ((r.get("builds") or {}).get("why") or ""):
             tl += " (as good as this build in this gear)"
         o.append(f"| {name} | {tier_dps(r, f'{t}-raid')} | {tl} |")
+    # a table whose tiers read out of order (a higher tier allows every item of a lower one) is held back, not the page (2026-11-21,
+    # the audit session; page_lint's "tiers" check reads the same rows)
+    nums_ = [int(m.group(2)) for m in (re.match(r"\| (Quests and dungeons|Pre-BiS|Raid BiS) \| (\d+)", x) for x in o) if m]
+    if any(b_ < a_ for a_, b_ in zip(nums_, nums_[1:])):
+        return ["**By gear tier:** being made again for this build (its tier sets were chosen for earlier builds and their numbers read out of "
+                "order).", ""]
     o += ["", "*Each row is in that tier's own gear set; the DPS at the top of the page is this build in the standard set, so the two do "
           "not match.*"]   # 2026-11-08 full page read S9
     ng = (r.get("pick_tiers") or {}).get("note_gear")

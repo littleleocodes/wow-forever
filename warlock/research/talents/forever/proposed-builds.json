@@ -1702,27 +1702,29 @@
           ["Improved Life Tap", 2],
           ["Suppression", 5],
           ["Improved Corruption", 5],
-          ["Grim Reach", 2],
-          ["Improved Drains", 2],
+          ["Grim Reach", 1],
+          ["Improved Drains", 1],
           ["Improved Bane of Agony", 2],
-          ["Fel Concentration", 1],
+          ["Fel Concentration", 2],
           ["Amplify Curse", 1],
           ["Pandemic", 3],
           ["Malevolence", 5],
-          ["Curse of Exhaustion", 1],
+          ["Nightfall", 1],
           ["Siphon Life", 1],
           ["Soul Siphon", 3],
           ["Shadow Mastery", 5],
           ["Wrack", 1]
         ],
         "Demonology": [
-          ["Improved Health Funnel", 1],
+          ["Demonic Embrace", 2],
           ["Unholy Power", 5],
           ["Improved Voidwalker", 3],
-          ["Demonic Energies", 2],
-          ["Demonic Sacrifice", 1]
+          ["Demonic Energies", 1]
         ],
-        "Destruction": []
+        "Destruction": [
+          ["Destructive Reach", 1],
+          ["Bane", 1]
+        ]
       },
       "order": [
         {"levels": "10-11", "tree": "Affliction", "talent": "Improved Life Tap", "points": 2},
@@ -1742,18 +1744,19 @@
         {"levels": "35-39", "tree": "Affliction", "talent": "Shadow Mastery", "points": 5},
         {"levels": "40", "tree": "Affliction", "talent": "Wrack", "points": 1},
         {"levels": "41", "tree": "Affliction", "talent": "Soul Siphon", "points": 1},
-        {"levels": "42-43", "tree": "Affliction", "talent": "Improved Drains", "points": 2},
+        {"levels": "42", "tree": "Affliction", "talent": "Improved Drains", "points": 1},
+        {"levels": "43", "tree": "Demonology", "talent": "Demonic Embrace", "points": 1},
         {"levels": "44", "tree": "Affliction", "talent": "Malevolence", "points": 1},
         {"levels": "45-49", "tree": "Demonology", "talent": "Unholy Power", "points": 5},
         {"levels": "50", "tree": "Demonology", "talent": "Demonic Energies", "points": 1},
         {"levels": "51", "tree": "Affliction", "talent": "Fel Concentration", "points": 1},
-        {"levels": "52", "tree": "Demonology", "talent": "Improved Health Funnel", "points": 1},
+        {"levels": "52", "tree": "Affliction", "talent": "Nightfall", "points": 1},
         {"levels": "53-55", "tree": "Demonology", "talent": "Improved Voidwalker", "points": 3},
-        {"levels": "56", "tree": "Affliction", "talent": "Curse of Exhaustion", "points": 1},
+        {"levels": "56", "tree": "Demonology", "talent": "Demonic Embrace", "points": 1},
         {"levels": "57", "tree": "Affliction", "talent": "Grim Reach", "points": 1},
-        {"levels": "58", "tree": "Demonology", "talent": "Demonic Sacrifice", "points": 1},
-        {"levels": "59", "tree": "Affliction", "talent": "Grim Reach", "points": 1},
-        {"levels": "60", "tree": "Demonology", "talent": "Demonic Energies", "points": 1}
+        {"levels": "58", "tree": "Destruction", "talent": "Bane", "points": 1},
+        {"levels": "59", "tree": "Affliction", "talent": "Fel Concentration", "points": 1},
+        {"levels": "60", "tree": "Destruction", "talent": "Destructive Reach", "points": 1}
       ],
       "core": [
         {"talent": "Wrack", "why": "+6.5 s per kill at level 60 without it (removal, 3,000 fights)."},
@@ -1766,7 +1769,7 @@
         {"talent": "Improved Voidwalker", "why": "+0.7 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Destructive Reach to Curse of Exhaustion at 56 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Fel Concentration to Improved Health Funnel at 52 (no loss: +0.1% seed 3, +0.1% seed 4, level-weighted time per kill); Improved Drains to Demonic Sacrifice at 58 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Shadow Bolt to Demonic Energies at 60 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Demonic Aegis to Curse of Exhaustion at 58 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Curse of Exhaustion to Improved Drains at 58 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Fel Concentration to Destructive Reach at 56 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Demonic Embrace to Grim Reach at 57 (no loss: +0.0% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing moved: Improved Drains to Malevolence at 44 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Energies to Fel Concentration at 56 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Sacrifice to Grim Reach at 59 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Demonic Embrace to Demonic Aegis at 58 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Sayaad to Improved Shadow Bolt at 60 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill).", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 31.16; affliction-leveling 35.78. The search simulated 21,543 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Curse of Exhaustion to Demonic Embrace at 56 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Improved Health Funnel to Nightfall at 52 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Demonic Sacrifice to Bane at 58 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Grim Reach to Fel Concentration at 59 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Drains to Demonic Embrace at 43 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Demonic Energies to Destructive Reach at 60 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill).", "2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Destructive Reach to Curse of Exhaustion at 56 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Fel Concentration to Improved Health Funnel at 52 (no loss: +0.1% seed 3, +0.1% seed 4, level-weighted time per kill); Improved Drains to Demonic Sacrifice at 58 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Shadow Bolt to Demonic Energies at 60 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Demonic Aegis to Curse of Exhaustion at 58 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Curse of Exhaustion to Improved Drains at 58 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Fel Concentration to Destructive Reach at 56 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Demonic Embrace to Grim Reach at 57 (no loss: +0.0% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing moved: Improved Drains to Malevolence at 44 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Energies to Fel Concentration at 56 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Sacrifice to Grim Reach at 59 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Demonic Embrace to Demonic Aegis at 58 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Sayaad to Improved Shadow Bolt at 60 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill).", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 31.16; affliction-leveling 35.78. The search simulated 21,543 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Affliction leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/warlock", "https://talentsforever.com/warlock/60/25520221135011351-1005030201--12"]
     },
