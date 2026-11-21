@@ -48,6 +48,12 @@ ZERO = 0.002    # |removal effect| under 0.2%: a free point
 GAIN = 0.0015   # a real DPS gain
 LOSS = 0.001    # a utility move may cost at most 0.1%
 from utility_tags import TAGS, NONE, usefulness  # noqa: E402  (shared with the scorer's raid tie-break)
+# 2026-11-21 (the audit session's gate rule): the exact pass (deep-runs/credited_fillers_1120.py) counts every talent ability the build
+# never casts as free, a prerequisite and a signature talent excepted (a prerequisite has no legal move; a signature talent is
+# protected); a defensive or control ability keeps its place in the utility order, so it moves only to a home at least as useful.
+# Off for every other caller, which keeps the rule below (free only when casting it was shown not to pay).
+UNPRESSED_FREE = False
+CONTROL = [t for t, _ in TAGS].index("control") if "control" in [t for t, _ in TAGS] else None
 
 
 def utility(cls, tank=False):
@@ -179,9 +185,9 @@ def audit(cls, spec, bid, iterations, confirm, alloc=None, setting=None):
                 if act.get("spellId") in book[n][0]:
                     cast[n] = cast.get(n, 0) + (act.get("casts") or 0)
     unused = {n for n in active if not cast.get(n) and not (book[n][0] & around)
-              and (n in not_worth or TRIGGERED.search(book[n][1]) or book[n][0] & listed)}
+              and (UNPRESSED_FREE or n in not_worth or TRIGGERED.search(book[n][1]) or book[n][0] & listed)}
     for n in unused:   # never cast: its tooltip's tags say nothing about the fight, unless a player casts it when needed (a defensive)
-        if TRIGGERED.search(book[n][1]) or not DEFENSIVE.search(book[n][1]):
+        if (TRIGGERED.search(book[n][1]) or not DEFENSIVE.search(book[n][1])) and not (UNPRESSED_FREE and use.get(n) == CONTROL):
             use[n] = NONE
     free = {n for n, e in effect.items() if abs(e) < ZERO and n not in protect and (n not in active or n in unused)}
     flags = sorted(n for n, e in effect.items() if abs(e) < ZERO and n in active and n not in unused)

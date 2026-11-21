@@ -62,12 +62,8 @@ Allocation adopted on 2026-09-28 from `opt-frost-raid-raid-dps`, the best build 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
 | 3 | Arcane Impact | any utility talent legal at that tier | Measures +0.6% DPS in the community simulator (noise): these points are free to move. |
-| 1 | Presence of Mind | any utility talent legal at that tier | Measures +0.6% DPS in the community simulator (noise): these points are free to move. |
-| 1 | Arcane Mind | any utility talent legal at that tier | Measures +0.5% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Improved Channeling | Wand Specialization, Magic Absorption | A free point (worth 0 in the simulator, which models no pushback): Improved Channeling keeps Arcane Missiles from being interrupted by damage 20% of the time, which matters when a boss or its adds hit you. |
 | 2 | Improved Channeling | Arcane Subtlety, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 5 | Arcane Concentration | any utility talent legal at that tier | Measures -0.0% DPS in the community simulator (noise): these points are free to move. |
-| 3 | Arcane Meditation | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Frost Channeling | Arctic Reach (range), Improved Cone of Cold | Cone of Cold is never cast. Frost Channeling makes Frost spells cheaper (+0.2% DPS in 3-minute fights, +0.4% in 6-minute ones); Arctic Reach (longer Frostbolt range) is the other useful choice. |
 
 ## Rank among our builds and the community simulator's
@@ -119,12 +115,12 @@ Before the pull: cast Ice Barrier; cast Frostbolt (rank 10).
 
 | # | Priority (the first line whose condition holds is cast) | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) casts/min |
 |---|---|---|
-| 1 | if mana % ≤ 5%: channel Evocation (interrupt it when a higher line is ready) | as ready |
+| 1 | if mana % ≤ 5%: channel Evocation (stop it when mana % ≥ 99%) | as ready |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if number of targets ≥ 3 and stacks of Fingers of Frost ≥ 1: cast Cone of Cold | 3.2 |
-| 4 | if number of targets ≥ 3 and stacks of Fingers of Frost ≥ 1: cast Ice Lance | 1.9 |
-| 5 | if stacks of Winter's Chill = 5: cast Cone of Cold | 3.2 |
-| 6 | if stacks of Fingers of Frost = 1 and spellIsCasting: cast Ice Lance | 1.9 |
+| 3 | if number of targets ≥ 3 and stacks of Fingers of Frost on you ≥ 1: cast Cone of Cold | 3.2 |
+| 4 | if number of targets ≥ 3 and stacks of Fingers of Frost on you ≥ 1: cast Ice Lance | 1.9 |
+| 5 | if stacks of Winter's Chill on the target = 5: cast Cone of Cold | 3.2 |
+| 6 | if stacks of Fingers of Frost on you = 1 and Frostbolt is being cast: cast Ice Lance | 1.9 |
 | 7 | cast Frostbolt (rank 10) | 20.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Read Leyline, cast Blizzard (its condition never held in these fights); cast Cold Snap (needs the Cold Snap talent); cast Ice Barrier (needs the Ice Barrier talent).
@@ -140,6 +136,7 @@ Damage by ability:
 
 ## Notes
 
+- 2026-11-21: flex entries removed for Presence of Mind (1), Arcane Mind (1), Arcane Concentration (5), Arcane Meditation (3): they said the points measured +0.0% and were free to move, but the raid play check of 2026-11-20 measures these talents as live (their removal changes the full-raid DPS); a point is free only when its removal leaves the DPS the same.
 - Adopted from the community simulator on 2026-09-28: `opt-frost-raid-raid-dps` beat the previous draft by +3.8% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Adopted from the community simulator on 2026-09-27: `opt-frost-raid-raid-dps` beat the previous draft by +6.5% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Loses Arcane Power, Presence of Mind, Arcane Instability, Arcane Mind and Arcane Meditation versus the 31/0/20 build; the trade is burst cooldowns for a Shatter-crit rotation.

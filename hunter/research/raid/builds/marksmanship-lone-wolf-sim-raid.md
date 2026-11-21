@@ -102,17 +102,15 @@ Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Hawk (
 | # | Priority (the first line whose condition holds is cast) | [`marksmanship-lone-wolf-sim-raid`](marksmanship-lone-wolf-sim-raid.md) casts/min |
 |---|---|---|
 | 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready |
-| 2 | if not Hunter's Mark is up: cast Hunter's Mark | 0.7 |
+| 2 | if not Hunter's Mark is on the target: cast Hunter's Mark | 0.7 |
 | 3 | if not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 2.2 |
-| 4 | if “Use Summon Hawk” and “Use Arcane Shot” and the sequence is complete: reset sequence 'HHA' | as ready |
-| 5 | if “Use Summon Hawk” and “Use Arcane Shot”: sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot | 8.7 |
-| 6 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 8.7 |
-| 7 | if “Use Aimed Shot”: cast Aimed Shot | 3.2 |
-| 8 | if “Use Sniper Shot”: cast Sniper Shot | 1.7 |
-| 9 | if unitDistance ≠ “Shoot spot” and not spellInRange and (“Windup close” or “Just shot”): move to “Shoot spot” yd | as ready |
-| 10 | if unitDistance ≠ “Shoot spot”: wait inputDelay | as ready |
+| 4 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 8.7 |
+| 5 | if “Use Aimed Shot”: cast Aimed Shot | 3.2 |
+| 6 | if “Use Sniper Shot”: cast Sniper Shot | 1.7 |
+| 7 | if unitDistance ≠ “Shoot spot” and not (Arcane Shot is in range and (“Windup close” or “Just shot”)): move to “Shoot spot” yd | as ready |
+| 8 | if unitDistance ≠ “Shoot spot”: wait inputDelay | as ready |
 
-Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Multi-Shot (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: reset sequence 'HHA', sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot, cast Summon Hawk, cast Multi-Shot (a switch this rotation keeps off).
 
 Damage by ability:
 

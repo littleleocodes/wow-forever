@@ -135,7 +135,7 @@ Before the pull: at -2s: if Ice Barrier is known: cast Ice Barrier.
 | 2 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 4.0 |
 | 3 | cast Fire Blast | 8.3 |
 | 4 | if Arcane Blast is up and time left on Arcane Blast < cast time of Arcane Blast: cast Arcane Blast | 8.1 |
-| 5 | if stacks of Arcane Blast ≥ 1.5 and time left in the fight ≥ 10s: cast Frostbolt (rank 10) | 7.9 |
+| 5 | if stacks of Arcane Blast on you ≥ 1.5 and time left in the fight ≥ 10s: cast Frostbolt (rank 10) | 7.9 |
 | 6 | cast Arcane Blast | 8.1 |
 | 7 | cast Fireball (rank 11) | 0.1 |
 | 8 | cast Robe of the Archmage | as ready |

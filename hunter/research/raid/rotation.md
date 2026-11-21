@@ -50,7 +50,7 @@ Our rotation `turret.apl.json` (wowsims/forever 2e6e77d (client 70938)), 3000 fi
 The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring change what mana is worth), top priority first:
 
 1. if time into the fight ≥ 5s: use every other cooldown when ready
-2. if not Hunter's Mark is up: cast Hunter's Mark
+2. if not Hunter's Mark is on the target: cast Hunter's Mark
 3. if not Serpent Sting is on the target: cast Serpent Sting (rank 8)
 4. if the sequence is complete: reset sequence 'HHA'
 5. sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot
@@ -71,16 +71,14 @@ Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Hawk (
 | # | Priority (the first line whose condition holds is cast) | [`opt-mm-raid-raid-dps`](builds/opt-mm-raid-raid-dps.md) casts/min | [`bm-mm-raid`](builds/bm-mm-raid.md) casts/min | *BM* casts/min | [`bm-mm-full-buffs-raid`](builds/bm-mm-full-buffs-raid.md) casts/min | *SV Weave* casts/min | *SV* casts/min | *SV Melee* casts/min |
 |---|---|---|---|---|---|---|---|---|
 | 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready | as ready | as ready |
-| 2 | if not Hunter's Mark is up: cast Hunter's Mark | 0.7 | 0.7 | 0.7 | 0.7 | 0.7 | 0.7 | 0.7 |
+| 2 | if not Hunter's Mark is on the target: cast Hunter's Mark | 0.7 | 0.7 | 0.7 | 0.7 | 0.7 | 0.7 | 0.7 |
 | 3 | if not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 2.9 | 2.9 | 2.3 | 2.8 | 2.4 | 2.3 | 2.3 |
-| 4 | if “Use Summon Hawk” and “Use Arcane Shot” and the sequence is complete: reset sequence 'HHA' | as ready | as ready | as ready | as ready | as ready | as ready | as ready |
-| 5 | if “Use Summon Hawk” and “Use Arcane Shot”: sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot | 8.5 | 8.8 | 8.4 | 8.1 | 7.9 | 8.3 | 7.1 |
-| 6 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 8.5 | 8.8 | 8.4 | 8.1 | 7.9 | 8.3 | 7.1 |
-| 7 | if “Use Aimed Shot”: cast Aimed Shot | 4.8 | 5.0 | 3.8 | 4.7 | 4.0 | 3.8 | 3.7 |
-| 8 | if unitDistance ≠ “Shoot spot” and not spellInRange and (“Windup close” or “Just shot”): move to “Shoot spot” yd | as ready | as ready | as ready | as ready | as ready | as ready | as ready |
-| 9 | if unitDistance ≠ “Shoot spot”: wait inputDelay | as ready | as ready | as ready | as ready | as ready | as ready | as ready |
+| 4 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 8.5 | 8.8 | 8.4 | 8.1 | 7.9 | 8.3 | 7.1 |
+| 5 | if “Use Aimed Shot”: cast Aimed Shot | 4.8 | 5.0 | 3.8 | 4.7 | 4.0 | 3.8 | 3.7 |
+| 6 | if unitDistance ≠ “Shoot spot” and not (Arcane Shot is in range and (“Windup close” or “Just shot”)): move to “Shoot spot” yd | as ready | as ready | as ready | as ready | as ready | as ready | as ready |
+| 7 | if unitDistance ≠ “Shoot spot”: wait inputDelay | as ready | as ready | as ready | as ready | as ready | as ready | as ready |
 
-Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Multi-Shot (its condition never held in these fights); cast Sniper Shot (needs the Sniper Shot talent).
+Lines of the simulator's rotation these builds never cast: reset sequence 'HHA', sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot, cast Summon Hawk, cast Multi-Shot (a switch this rotation keeps off); cast Sniper Shot (needs the Sniper Shot talent).
 
 Damage by ability:
 
@@ -101,17 +99,15 @@ Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Hawk (
 | # | Priority (the first line whose condition holds is cast) | [`marksmanship-ml-raid`](builds/marksmanship-ml-raid.md) casts/min | *MM* casts/min |
 |---|---|---|---|
 | 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready | as ready |
-| 2 | if not Hunter's Mark is up: cast Hunter's Mark | 0.7 | 0.7 |
+| 2 | if not Hunter's Mark is on the target: cast Hunter's Mark | 0.7 | 0.7 |
 | 3 | if not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 2.0 | 2.2 |
-| 4 | if “Use Summon Hawk” and “Use Arcane Shot” and the sequence is complete: reset sequence 'HHA' | as ready | as ready |
-| 5 | if “Use Summon Hawk” and “Use Arcane Shot”: sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot | 8.2 | 8.7 |
-| 6 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 8.2 | 8.7 |
-| 7 | if “Use Aimed Shot”: cast Aimed Shot | 2.9 | 3.2 |
-| 8 | if “Use Sniper Shot”: cast Sniper Shot | 1.7 | 1.7 |
-| 9 | if unitDistance ≠ “Shoot spot” and not spellInRange and (“Windup close” or “Just shot”): move to “Shoot spot” yd | as ready | as ready |
-| 10 | if unitDistance ≠ “Shoot spot”: wait inputDelay | as ready | as ready |
+| 4 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 8.2 | 8.7 |
+| 5 | if “Use Aimed Shot”: cast Aimed Shot | 2.9 | 3.2 |
+| 6 | if “Use Sniper Shot”: cast Sniper Shot | 1.7 | 1.7 |
+| 7 | if unitDistance ≠ “Shoot spot” and not (Arcane Shot is in range and (“Windup close” or “Just shot”)): move to “Shoot spot” yd | as ready | as ready |
+| 8 | if unitDistance ≠ “Shoot spot”: wait inputDelay | as ready | as ready |
 
-Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Multi-Shot (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: reset sequence 'HHA', sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot, cast Summon Hawk, cast Multi-Shot (a switch this rotation keeps off).
 
 Damage by ability:
 
@@ -167,17 +163,15 @@ Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Hawk (
 | # | Priority (the first line whose condition holds is cast) | [`marksmanship-lone-wolf-sim-raid`](builds/marksmanship-lone-wolf-sim-raid.md) casts/min | *MM* casts/min | [`opt-mm-lonewolf-raid-raid-dps`](builds/opt-mm-lonewolf-raid-raid-dps.md) casts/min | [`mm-lone-wolf-raid`](builds/mm-lone-wolf-raid.md) casts/min | [`marksmanship-ml-raid`](builds/marksmanship-ml-raid.md) casts/min |
 |---|---|---|---|---|---|---|
 | 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready |
-| 2 | if not Hunter's Mark is up: cast Hunter's Mark | 0.7 | 0.7 | 0.7 | 0.7 | 0.7 |
+| 2 | if not Hunter's Mark is on the target: cast Hunter's Mark | 0.7 | 0.7 | 0.7 | 0.7 | 0.7 |
 | 3 | if not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 2.2 | 2.2 | 2.3 | 2.1 | 2.0 |
-| 4 | if “Use Summon Hawk” and “Use Arcane Shot” and the sequence is complete: reset sequence 'HHA' | as ready | as ready | as ready | as ready | as ready |
-| 5 | if “Use Summon Hawk” and “Use Arcane Shot”: sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot | 8.7 | 8.7 | 7.4 | 8.5 | 8.2 |
-| 6 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 8.7 | 8.7 | 7.4 | 8.5 | 8.2 |
-| 7 | if “Use Aimed Shot”: cast Aimed Shot | 3.2 | 3.2 | 3.9 | 3.1 | 2.9 |
-| 8 | if “Use Sniper Shot”: cast Sniper Shot | 1.7 | 1.7 | 2.0 | 1.7 | 1.7 |
-| 9 | if unitDistance ≠ “Shoot spot” and not spellInRange and (“Windup close” or “Just shot”): move to “Shoot spot” yd | as ready | as ready | as ready | as ready | as ready |
-| 10 | if unitDistance ≠ “Shoot spot”: wait inputDelay | as ready | as ready | as ready | as ready | as ready |
+| 4 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 8.7 | 8.7 | 7.4 | 8.5 | 8.2 |
+| 5 | if “Use Aimed Shot”: cast Aimed Shot | 3.2 | 3.2 | 3.9 | 3.1 | 2.9 |
+| 6 | if “Use Sniper Shot”: cast Sniper Shot | 1.7 | 1.7 | 2.0 | 1.7 | 1.7 |
+| 7 | if unitDistance ≠ “Shoot spot” and not (Arcane Shot is in range and (“Windup close” or “Just shot”)): move to “Shoot spot” yd | as ready | as ready | as ready | as ready | as ready |
+| 8 | if unitDistance ≠ “Shoot spot”: wait inputDelay | as ready | as ready | as ready | as ready | as ready |
 
-Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Multi-Shot (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: reset sequence 'HHA', sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot, cast Summon Hawk, cast Multi-Shot (a switch this rotation keeps off).
 
 Damage by ability:
 
@@ -196,16 +190,14 @@ Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Hawk (
 | # | Priority (the first line whose condition holds is cast) | *SV* casts/min | *SV Weave* casts/min | *BM* casts/min | *SV Melee* casts/min |
 |---|---|---|---|---|---|
 | 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready | as ready | as ready | as ready |
-| 2 | if not Hunter's Mark is up: cast Hunter's Mark | 0.7 | 0.7 | 0.7 | 0.7 |
+| 2 | if not Hunter's Mark is on the target: cast Hunter's Mark | 0.7 | 0.7 | 0.7 | 0.7 |
 | 3 | if not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 2.3 | 2.4 | 2.4 | 2.3 |
-| 4 | if “Use Summon Hawk” and “Use Arcane Shot” and the sequence is complete: reset sequence 'HHA' | as ready | as ready | as ready | as ready |
-| 5 | if “Use Summon Hawk” and “Use Arcane Shot”: sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot | 8.3 | 7.9 | 8.5 | 7.1 |
-| 6 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 8.3 | 7.9 | 8.5 | 7.1 |
-| 7 | if “Use Aimed Shot”: cast Aimed Shot | 3.8 | 4.0 | 4.0 | 3.7 |
-| 8 | if unitDistance ≠ “Shoot spot” and not spellInRange and (“Windup close” or “Just shot”): move to “Shoot spot” yd | as ready | as ready | as ready | as ready |
-| 9 | if unitDistance ≠ “Shoot spot”: wait inputDelay | as ready | as ready | as ready | as ready |
+| 4 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 8.3 | 7.9 | 8.5 | 7.1 |
+| 5 | if “Use Aimed Shot”: cast Aimed Shot | 3.8 | 4.0 | 4.0 | 3.7 |
+| 6 | if unitDistance ≠ “Shoot spot” and not (Arcane Shot is in range and (“Windup close” or “Just shot”)): move to “Shoot spot” yd | as ready | as ready | as ready | as ready |
+| 7 | if unitDistance ≠ “Shoot spot”: wait inputDelay | as ready | as ready | as ready | as ready |
 
-Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Multi-Shot (its condition never held in these fights); cast Sniper Shot (needs the Sniper Shot talent).
+Lines of the simulator's rotation these builds never cast: reset sequence 'HHA', sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot, cast Summon Hawk, cast Multi-Shot (a switch this rotation keeps off); cast Sniper Shot (needs the Sniper Shot talent).
 
 Damage by ability:
 
@@ -264,17 +256,15 @@ Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Hawk (
 | # | Priority (the first line whose condition holds is cast) | *BM* casts/min | [`mm-hawk-raid`](builds/mm-hawk-raid.md) casts/min | [`beast-mastery-ml-raid`](builds/beast-mastery-ml-raid.md) casts/min | [`beast-marks-ml-raid`](builds/beast-marks-ml-raid.md) casts/min |
 |---|---|---|---|---|---|
 | 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready | as ready | as ready | as ready |
-| 2 | if not Hunter's Mark is up: cast Hunter's Mark | 0.7 | 0.7 | 0.7 | 0.7 |
+| 2 | if not Hunter's Mark is on the target: cast Hunter's Mark | 0.7 | 0.7 | 0.7 | 0.7 |
 | 3 | if not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 2.4 | 2.8 | 2.4 | 2.5 |
 | 4 | if “Use Summon Hawk” and “Use Arcane Shot” and the sequence is complete: reset sequence 'HHA' | as ready | as ready | as ready | as ready |
 | 5 | if “Use Summon Hawk” and “Use Arcane Shot”: sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot | 13.2 | 13.5 | 13.2 | 13.4 |
-| 6 | if “Use Summon Hawk” and not “Use Arcane Shot”: cast Summon Hawk | 5.3 | 5.4 | 5.3 | 5.4 |
-| 7 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 2.5 | 2.6 | 2.5 | 2.6 |
-| 8 | if “Use Aimed Shot”: cast Aimed Shot | 4.0 | 4.7 | 4.0 | 4.2 |
-| 9 | if unitDistance ≠ “Shoot spot” and not spellInRange and (“Windup close” or “Just shot”): move to “Shoot spot” yd | as ready | as ready | as ready | as ready |
-| 10 | if unitDistance ≠ “Shoot spot”: wait inputDelay | as ready | as ready | as ready | as ready |
+| 6 | if “Use Aimed Shot”: cast Aimed Shot | 4.0 | 4.7 | 4.0 | 4.2 |
+| 7 | if unitDistance ≠ “Shoot spot” and not (Arcane Shot is in range and (“Windup close” or “Just shot”)): move to “Shoot spot” yd | as ready | as ready | as ready | as ready |
+| 8 | if unitDistance ≠ “Shoot spot”: wait inputDelay | as ready | as ready | as ready | as ready |
 
-Lines of the simulator's rotation these builds never cast: cast Multi-Shot (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Summon Hawk, cast Arcane Shot, cast Multi-Shot (a switch this rotation keeps off).
 
 Damage by ability:
 
@@ -324,12 +314,12 @@ Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Beast;
 |---|---|---|---|---|---|
 | 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready | as ready | as ready | as ready |
 | 2 | cast Raptor Strike | 8.2 | 7.1 | 8.2 | 3.8 |
-| 3 | if not Hunter's Mark is up: cast Hunter's Mark | 0.7 | 0.7 | 0.7 | 0.7 |
+| 3 | if not Hunter's Mark is on the target: cast Hunter's Mark | 0.7 | 0.7 | 0.7 | 0.7 |
 | 4 | if Strider Kick is up and not Serpent Sting is on the target and mana % > 30%: move to “Shoot spot” yd | as ready | as ready | as ready | as ready |
 | 5 | if unitDistance > “Melee range” and not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 2.1 | 1.7 | 2.2 | 1.3 |
 | 6 | if unitDistance > “Melee range”: cast Arcane Shot | 0.7 | 0.7 | 0.7 | 0.7 |
 | 7 | if unitDistance > “Melee range”: cast Multi-Shot | 0.3 | 0.3 | 0.3 | 0.3 |
-| 8 | if unitDistance > “Melee range” and not spellInRange and (“Windup close” or “Just shot”): move to “Melee range” yd | as ready | as ready | as ready | as ready |
+| 8 | if unitDistance > “Melee range” and not (Arcane Shot is in range and (“Windup close” or “Just shot”)): move to “Melee range” yd | as ready | as ready | as ready | as ready |
 | 9 | if unitDistance > “Melee range”: wait inputDelay | as ready | as ready | as ready | as ready |
 | 10 | cast Mongoose Bite | 6.3 | 6.2 | 6.3 | 4.9 |
 | 11 | cast Strider Kick | 6.5 | 5.6 | 6.5 | 3.1 |
@@ -361,12 +351,12 @@ Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Beast;
 |---|---|---|---|
 | 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready | as ready |
 | 2 | cast Raptor Strike | 3.0 | 2.9 |
-| 3 | if not Hunter's Mark is up: cast Hunter's Mark | 0.7 | 0.7 |
+| 3 | if not Hunter's Mark is on the target: cast Hunter's Mark | 0.7 | 0.7 |
 | 4 | if Strider Kick is up and not Serpent Sting is on the target and mana % > 30%: move to “Shoot spot” yd | as ready | as ready |
 | 5 | if unitDistance > “Melee range” and not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 1.3 | 1.3 |
 | 6 | if unitDistance > “Melee range”: cast Arcane Shot | 0.5 | 0.5 |
 | 7 | if unitDistance > “Melee range”: cast Multi-Shot | 0.4 | 0.4 |
-| 8 | if unitDistance > “Melee range” and not spellInRange and (“Windup close” or “Just shot”): move to “Melee range” yd | as ready | as ready |
+| 8 | if unitDistance > “Melee range” and not (Arcane Shot is in range and (“Windup close” or “Just shot”)): move to “Melee range” yd | as ready | as ready |
 | 9 | if unitDistance > “Melee range”: wait inputDelay | as ready | as ready |
 | 10 | cast Mongoose Bite | 4.7 | 4.7 |
 | 11 | cast Strider Kick | 2.5 | 2.5 |
@@ -424,12 +414,12 @@ Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Beast;
 |---|---|---|
 | 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready |
 | 2 | cast Raptor Strike | 7.1 |
-| 3 | if not Hunter's Mark is up: cast Hunter's Mark | 0.7 |
+| 3 | if not Hunter's Mark is on the target: cast Hunter's Mark | 0.7 |
 | 4 | if Strider Kick is up and not Serpent Sting is on the target and mana % > 30%: move to “Shoot spot” yd | as ready |
 | 5 | if unitDistance > “Melee range” and not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 1.7 |
 | 6 | if unitDistance > “Melee range”: cast Arcane Shot | 0.7 |
 | 7 | if unitDistance > “Melee range”: cast Multi-Shot | 0.3 |
-| 8 | if unitDistance > “Melee range” and not spellInRange and (“Windup close” or “Just shot”): move to “Melee range” yd | as ready |
+| 8 | if unitDistance > “Melee range” and not (Arcane Shot is in range and (“Windup close” or “Just shot”)): move to “Melee range” yd | as ready |
 | 9 | if unitDistance > “Melee range”: wait inputDelay | as ready |
 | 10 | cast Mongoose Bite | 6.2 |
 | 11 | cast Strider Kick | 5.6 |
@@ -461,12 +451,12 @@ Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Beast;
 |---|---|---|---|
 | 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready | as ready |
 | 2 | cast Raptor Strike | 3.0 | 3.0 |
-| 3 | if not Hunter's Mark is up: cast Hunter's Mark | 0.7 | 0.7 |
+| 3 | if not Hunter's Mark is on the target: cast Hunter's Mark | 0.7 | 0.7 |
 | 4 | if Strider Kick is up and not Serpent Sting is on the target and mana % > 30%: move to “Shoot spot” yd | as ready | as ready |
 | 5 | if unitDistance > “Melee range” and not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 1.3 | 1.3 |
 | 6 | if unitDistance > “Melee range”: cast Arcane Shot | 0.5 | 0.5 |
 | 7 | if unitDistance > “Melee range”: cast Multi-Shot | 0.4 | 0.4 |
-| 8 | if unitDistance > “Melee range” and not spellInRange and (“Windup close” or “Just shot”): move to “Melee range” yd | as ready | as ready |
+| 8 | if unitDistance > “Melee range” and not (Arcane Shot is in range and (“Windup close” or “Just shot”)): move to “Melee range” yd | as ready | as ready |
 | 9 | if unitDistance > “Melee range”: wait inputDelay | as ready | as ready |
 | 10 | cast Mongoose Bite | 4.7 | 4.7 |
 | 11 | cast Strider Kick | 2.5 | 2.5 |

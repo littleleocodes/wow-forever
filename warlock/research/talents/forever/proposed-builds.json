@@ -46,12 +46,6 @@
       ],
       "flex": [
         {
-          "points": 1,
-          "default": "Amplify Curse",
-          "alternatives": ["any utility talent legal at that tier"],
-          "why": "Measures +0.7% DPS in the community simulator (noise): these points are free to move."
-        },
-        {
           "points": 5,
           "default": "Demonic Embrace",
           "alternatives": ["any utility talent legal at that tier"],
@@ -64,7 +58,7 @@
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-26: opt-sb-raid-raid-dps beat the previous draft by +10.6% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Immolate -> Conflagrate (Shadow and Flame buff) -> Shadow Bolt spam; refresh Immolate/Conflagrate every 20s; Curse per raid assignment.", "Malevolence (+5% Shadow crit, Affliction tier 4) would need 15 Affliction points — see the Affliction build.", "2026-09-27 scenario audit: Siphon Life 1 -> Improved Life Tap 1. The sacrificed-Succubus Shadow Bolt rotation never casts Siphon Life (simulator 0.0%). Improved Life Tap's +20% mana per tap means fewer taps and more Shadow Bolts in long fights (scorer +1.2 points).", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Health Funnel -> Demonic Aegis (survival); Improved Health Funnel -> Demonic Aegis (survival). Net +0.00% on a third seed."],
+      "notes": ["2026-11-21: flex entries removed for Amplify Curse (1): they said the points measured +0.0% and were free to move, but the raid play check of 2026-11-20 measures these talents as live (their removal changes the full-raid DPS); a point is free only when its removal leaves the DPS the same.", "Adopted from the community simulator on 2026-09-26: opt-sb-raid-raid-dps beat the previous draft by +10.6% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Immolate -> Conflagrate (Shadow and Flame buff) -> Shadow Bolt spam; refresh Immolate/Conflagrate every 20s; Curse per raid assignment.", "Malevolence (+5% Shadow crit, Affliction tier 4) would need 15 Affliction points — see the Affliction build.", "2026-09-27 scenario audit: Siphon Life 1 -> Improved Life Tap 1. The sacrificed-Succubus Shadow Bolt rotation never casts Siphon Life (simulator 0.0%). Improved Life Tap's +20% mana per tap means fewer taps and more Shadow Bolts in long fights (scorer +1.2 points).", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Health Funnel -> Demonic Aegis (survival); Improved Health Funnel -> Demonic Aegis (survival). Net +0.00% on a third seed."],
       "open_questions": ["Demonic Sacrifice values per pet in Forever (Classic: Succubus +15% Shadow, Imp +15% Fire).", "Ruin rank scaling (only rank 1 = 20% was read).", "Whether Conflagrate uptime for Shadow and Flame is worth the Immolate casts versus more Shadow Bolts."],
       "sources": ["https://warcraftforever.games/talents/warlock"]
     },
@@ -107,27 +101,8 @@
         {"talent": "Shadow Mastery", "why": "Raid sim (2026-09-27): removing it costs +4% DPS."},
         {"talent": "Improved Corruption", "why": "Raid sim (2026-09-26): removing it costs +4% DPS. Raid sim (2026-09-27): removing it costs +4% DPS."}
       ],
-      "flex": [
-        {
-          "points": 3,
-          "default": "Aftermath",
-          "alternatives": ["any utility talent legal at that tier"],
-          "why": "Measures +0.9% DPS in the community simulator (noise): these points are free to move."
-        },
-        {
-          "points": 1,
-          "default": "Amplify Curse",
-          "alternatives": ["any utility talent legal at that tier"],
-          "why": "Measures +0.5% DPS in the community simulator (noise): these points are free to move."
-        },
-        {
-          "points": 2,
-          "default": "Nightfall",
-          "alternatives": ["any utility talent legal at that tier"],
-          "why": "Measures +0.3% DPS in the community simulator (noise): these points are free to move."
-        }
-      ],
-      "notes": ["2026-11-20: plays as the Shadow Bolt hybrid (`spec`). The affliction-raid entry runs upstream's SM/Ruin rotation (apls/warlock/upstream/sm_ruin.apl.json, tuned): in a full raid Shadow Bolt is 51-52% of this build's damage and Affliction's core (Corruption, Bane of Agony, Siphon Life, Drain Life, Wrack, Drain Soul) 21.6-21.7% of its own damage, against Affliction's 30% floor (raid_signature.measure, 6,000 fights, seeds 1 and 2, the lane and the audit session alike). By the standing rule a build played around another tree's spells is a hybrid although one tree has 30 points; it passes the hybrid's rule (Shadow Bolt 54.6-56.0% of its own damage against 35%). The audit session's recommendation; Affliction's page lists it as a pointer.", "Adopted from the community simulator on 2026-09-27: opt-affliction-raid-raid-dps beat the previous draft by +4.7% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-26: opt-affliction-raid-raid-dps beat the previous draft by +3.2% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Improved Corruption now reduces cast time by 0.4s per rank instead of 0.4s total — 5/5 is instant; not taken here because tier-1 Affliction already holds Suppression + Improved Life Tap. Add it by dropping Malediction if Corruption is cast on every target.", "Debuff-slot limits decide this build's value: it wants Corruption, Bane of Agony, Siphon Life and Drain Hope on the boss."],
+      "flex": [],
+      "notes": ["2026-11-21: flex entries removed for Aftermath (3), Amplify Curse (1), Nightfall (2): they said the points measured +0.0% and were free to move, but the raid play check of 2026-11-20 measures these talents as live (their removal changes the full-raid DPS); a point is free only when its removal leaves the DPS the same.", "2026-11-20: plays as the Shadow Bolt hybrid (`spec`). The affliction-raid entry runs upstream's SM/Ruin rotation (apls/warlock/upstream/sm_ruin.apl.json, tuned): in a full raid Shadow Bolt is 51-52% of this build's damage and Affliction's core (Corruption, Bane of Agony, Siphon Life, Drain Life, Wrack, Drain Soul) 21.6-21.7% of its own damage, against Affliction's 30% floor (raid_signature.measure, 6,000 fights, seeds 1 and 2, the lane and the audit session alike). By the standing rule a build played around another tree's spells is a hybrid although one tree has 30 points; it passes the hybrid's rule (Shadow Bolt 54.6-56.0% of its own damage against 35%). The audit session's recommendation; Affliction's page lists it as a pointer.", "Adopted from the community simulator on 2026-09-27: opt-affliction-raid-raid-dps beat the previous draft by +4.7% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-26: opt-affliction-raid-raid-dps beat the previous draft by +3.2% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Improved Corruption now reduces cast time by 0.4s per rank instead of 0.4s total — 5/5 is instant; not taken here because tier-1 Affliction already holds Suppression + Improved Life Tap. Add it by dropping Malediction if Corruption is cast on every target.", "Debuff-slot limits decide this build's value: it wants Corruption, Bane of Agony, Siphon Life and Drain Hope on the boss."],
       "open_questions": ["Shadow Mastery per-rank value (1% or 2%).", "Does Forever keep a raid debuff cap? Four DoTs per warlock would not fit a Classic-style 16-slot limit.", "Nightfall (Shadow Trance) at 2%/rank — worth 2 points over the fillers?"],
       "sources": ["https://warcraftforever.games/talents/warlock"],
       "spec": "Hybrid Affliction/Destruction"
@@ -176,12 +151,6 @@
       "flex": [
         {
           "points": 1,
-          "default": "Shadowburn",
-          "alternatives": ["any utility talent legal at that tier"],
-          "why": "Measures +0.9% DPS in the community simulator (noise): these points are free to move."
-        },
-        {
-          "points": 1,
           "default": "Amplify Curse",
           "alternatives": ["any utility talent legal at that tier"],
           "why": "Measures +0.7% DPS in the community simulator (noise): these points are free to move."
@@ -205,7 +174,7 @@
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-28: `opt-fire-destro-raid-raid-dps` beat the previous draft by +2.1% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-27: opt-fire-destro-raid-raid-dps beat the previous draft by +2.1% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-26: opt-fire-destro-raid-raid-dps beat the previous draft by +11.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Immolate -> Conflagrate -> Incinerate x2-3 -> Shadowburn (for the Fire buff) -> repeat; Bane of Havoc on a second target.", "No Improved Shadow Bolt: pair with a shadow warlock for the raid's shadow debuff.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Health Funnel -> Demonic Embrace (survival); Improved Health Funnel -> Demonic Embrace (survival); Improved Imp -> Demonic Embrace (survival); Improved Imp -> Demonic Embrace (survival); Improved Imp -> Demonic Embrace (survival). Net +0.00% on a third seed."],
+      "notes": ["2026-11-21: flex entries removed for Shadowburn (1): they said the points measured +0.0% and were free to move, but the raid play check of 2026-11-20 measures these talents as live (their removal changes the full-raid DPS); a point is free only when its removal leaves the DPS the same.", "Adopted from the community simulator on 2026-09-28: `opt-fire-destro-raid-raid-dps` beat the previous draft by +2.1% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-27: opt-fire-destro-raid-raid-dps beat the previous draft by +2.1% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-26: opt-fire-destro-raid-raid-dps beat the previous draft by +11.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Immolate -> Conflagrate -> Incinerate x2-3 -> Shadowburn (for the Fire buff) -> repeat; Bane of Havoc on a second target.", "No Improved Shadow Bolt: pair with a shadow warlock for the raid's shadow debuff.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Health Funnel -> Demonic Embrace (survival); Improved Health Funnel -> Demonic Embrace (survival); Improved Imp -> Demonic Embrace (survival); Improved Imp -> Demonic Embrace (survival); Improved Imp -> Demonic Embrace (survival). Net +0.00% on a third seed."],
       "open_questions": ["Incinerate/Conflagrate damage at level 60 vs. Shadow Bolt with Ruin + Improved Shadow Bolt.", "Does Conflagrate still consume Immolate (demo says yes) — that makes Immolate uptime the rotation's pacing problem.", "Fire resistance/immunity of the new raid bosses."],
       "sources": ["https://warcraftforever.games/talents/warlock"],
       "player_page": false,

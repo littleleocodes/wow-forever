@@ -157,7 +157,7 @@ Before the pull: at -3s: cast Holy Fire.
 | 5 | strict sequence: cast Inner Focus; cast Smite | 0.3 |
 | 6 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5 and mana % < 15%: cast Shadow Word: Pain (rank 4) | 0.1 |
 | 7 | if execute phase (E20): cast Shadow Word: Death (rank 3) | 0.5 |
-| 8 | if auraIsInactive: cast Power Infusion | 0.3 |
+| 8 | if not Power Infusion is up: cast Power Infusion | 0.3 |
 | 9 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5: cast Shadow Word: Pain | 2.8 |
 | 10 | cast Penance (rank 3) | 3.4 |
 | 11 | if not Shadow Word: Pain is on the target and mana % ≥ 30%: cast Shadow Word: Pain | 2.8 |

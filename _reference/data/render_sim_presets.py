@@ -67,6 +67,14 @@ class Names:
         for iid, name in {8008: "Mana Ruby (mana gem)", 10646: "Goblin Sapper Charge", 18641: "Dense Dynamite"}.items():
             self.consumables.setdefault(iid, name)
         self.spells.setdefault(44404, "Missile Barrage")
+        for sid, name in {11337: "Instant Poison VI", 25349: "Deadly Poison V"}.items():   # the poisons' hits (2026-11-21)
+            self.spells.setdefault(sid, name)
+        # and every other id the simulator's own spell data names (2026-11-21, the audit session's A5: Shadow Vulnerability, 17794, the
+        # Wrack list's Siphon Life condition, and Demonic Brand had printed as raw ids)
+        sg = repo / "sim/core/spelldata/spells_auto_gen.go"
+        if sg.exists():
+            for m in re.finditer(r'\{ID: (\d+), Name: "([^"\\]*)"', sg.read_text(encoding="utf-8", errors="replace")):
+                self.spells.setdefault(int(m.group(1)), m.group(2))
         self.unknown = set()
 
     def spell(self, sid):
@@ -99,15 +107,19 @@ def val(v, N):
     if k == "or":
         return "(" + " or ".join(val(y, N) for y in x.get("vals", [])) + ")"
     if k == "not":
-        return "not " + val(x.get("val"), N)
+        inner = val(x.get("val"), N)
+        compound = next(iter((x.get("val") or {}).keys()), "") in ("and", "cmp")
+        return "not (" + inner + ")" if compound and not (inner.startswith("(") and inner.endswith(")")) else "not " + inner
     if k in ("auraIsActive", "auraIsActiveWithReactionTime"):
-        return f"{aura(x, N)} is up"
+        return f"{aura(x, N)} is on the target" if _on_target(x) else f"{aura(x, N)} is up"
+    if k in ("auraIsInactive", "auraIsInactiveWithReactionTime"):   # (2026-11-21, A1: it had printed as a bare word)
+        return f"not {aura(x, N)} is on the target" if _on_target(x) else f"not {aura(x, N)} is up"
     if k == "auraIsKnown":
         return f"{aura(x, N)} is known"
     if k == "auraRemainingTime":
         return f"time left on {aura(x, N)}"
-    if k == "auraNumStacks":
-        return f"stacks of {aura(x, N)}"
+    if k == "auraNumStacks":   # (2026-11-21, A3: Fingers of Frost, a buff on you, had read as stacks on the target)
+        return f"stacks of {aura(x, N)}" + (" on the target" if _on_target(x) else " on you")
     if k == "auraInternalCooldown":
         return f"internal cooldown of {aura(x, N)}"
     if k == "auraIcdIsReady":
@@ -130,6 +142,12 @@ def val(v, N):
         return f"channel time of {spell_ref(x.get('spellId'), N)}"
     if k == "spellNumCharges":
         return f"charges of {spell_ref(x.get('spellId'), N)}"
+    if k == "spellInRange":
+        return f"{spell_ref(x.get('spellId'), N)} is in range"
+    if k == "spellIsCasting":   # (2026-11-21: Frostfire's Scorch, not a second one while one is being cast)
+        return f"{spell_ref(x.get('spellId'), N)} is being cast" if (x or {}).get("spellId") else "a spell is being cast"
+    if k == "spellChanneledTicks":
+        return f"ticks of {spell_ref(x.get('spellId'), N)} channeled"
     if k == "spellIsKnown":
         return f"{spell_ref(x.get('spellId'), N)} is known"
     if k == "spellCpm":
@@ -169,6 +187,36 @@ def val(v, N):
     return k
 
 
+def const_value(v, defs, seen=()):
+    """True or False when an APL condition is a constant (a switch the rotation keeps on or off, and/or/not of such, a named condition
+    that is one), else None. defs: the rotation's valueVariables {name: value} (2026-11-21, the audit session's A6 and B10: a line on a
+    switch the rotation keeps off never fires, yet its spell's casts were credited to it)."""
+    if not isinstance(v, dict) or not v:
+        return None
+    k, x = next(iter(v.items()))
+    if k == "const":
+        t = str((x or {}).get("val", "")).strip().lower()
+        return True if t == "true" else False if t == "false" else None
+    if k == "not":
+        r = const_value((x or {}).get("val"), defs, seen)
+        return None if r is None else not r
+    if k in ("and", "or"):
+        rs = [const_value(y, defs, seen) for y in (x or {}).get("vals", [])]
+        if k == "and":
+            return False if any(r is False for r in rs) else (True if rs and all(r is True for r in rs) else None)
+        return True if any(r is True for r in rs) else (False if rs and all(r is False for r in rs) else None)
+    if k == "variableRef":
+        n = (x or {}).get("name")
+        if n in defs and n not in seen:
+            return const_value(defs[n], defs, seen + (n,))
+    return None
+
+
+def _on_target(x):
+    """Whether an aura condition reads the target's aura (sourceUnit Target or CurrentTarget) rather than yours."""
+    return ((x or {}).get("sourceUnit") or {}).get("type") in ("Target", "CurrentTarget")
+
+
 def aura(x, N):
     a = x.get("auraId") or {}
     if "spellId" in a:
@@ -201,7 +249,7 @@ def action(a, N, depth=0):
         low = getattr(N, "low_rank", {}).get(int(sid)) if sid else None
         txt = f"cast {spell_ref(x.get('spellId'), N)}" + (f" (rank {low})" if low else "") + (f" on {x['target'].get('type', '').lower()}" if x.get("target") and x["target"].get("type") not in (None, "Target", "Unknown") else "")
     elif k == "channelSpell":   # a channel (Mind Flay, Drain Soul): named like a cast (it printed as "channelSpell" until 2026-09-29)
-        txt = f"channel {spell_ref(x.get('spellId'), N)}" + (" (interrupt it when a higher line is ready)" if x.get("interruptIf") else "")
+        txt = f"channel {spell_ref(x.get('spellId'), N)}" + (f" (stop it when {val(x['interruptIf'], N)})" if x.get("interruptIf") else "")
     elif k == "castFriendlySpell":
         txt = f"cast {spell_ref(x.get('spellId'), N)} on a friendly target"
     elif k in ("multidot", "strictMultidot"):   # strictMultidot (2026-11-20: the official SM/Ruin list keeps its dots with it): the same words

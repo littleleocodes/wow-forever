@@ -50,7 +50,7 @@ Before the pull: at -5s: cast Amplify Curse.
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-affliction-raid-raid-dps`](builds/opt-affliction-raid-raid-dps.md) casts/min | [`affliction-dot-raid`](builds/affliction-dot-raid.md) casts/min |
 |---|---|---|---|
-| 1 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 | 0.4 |
+| 1 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 | 0.4 |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 55%: cast Potion | as ready | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready | as ready |
 | 4 | use every other cooldown when ready | as ready | as ready |
@@ -83,7 +83,7 @@ Before the pull: at -5s: cast Amplify Curse.
 
 | # | Priority (the first line whose condition holds is cast) | *SM/Ruin* casts/min | *Aff (Wrack)* casts/min |
 |---|---|---|---|
-| 1 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 | 0.4 |
+| 1 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 | 0.4 |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 55%: cast Potion | as ready | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready | as ready |
 | 4 | use every other cooldown when ready | as ready | as ready |
@@ -118,7 +118,7 @@ Before the pull: at -5s: cast Amplify Curse.
 
 | # | Priority (the first line whose condition holds is cast) | *Demo (Shadow Brand)* casts/min | *Demo (Fire Brand)* casts/min |
 |---|---|---|---|
-| 1 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 | 0.4 |
+| 1 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 | 0.4 |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 55%: cast Potion | as ready | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready | as ready |
 | 4 | use every other cooldown when ready | as ready | as ready |
@@ -151,7 +151,7 @@ Before the pull: at -5s: cast Amplify Curse.
 
 | # | Priority (the first line whose condition holds is cast) | *Destro* casts/min |
 |---|---|---|
-| 1 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
+| 1 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 55%: cast Potion | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
@@ -201,13 +201,13 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 3. use every other cooldown when ready
 4. if time left in the fight > “Doom tick” and number of targets > 1: cast Bane of Doom
 5. if number of targets > 1: groupReference
-6. if (Shadow Trance is up or “Improved Shadow Bolt Known” and spell 1323392 is known and spell 1323392 is up and (auraIsInactive or time left on spell 17794 < (cast time of Shadow Bolt + spellTravelTime))): cast Shadow Bolt
+6. if (Shadow Trance is up or “Improved Shadow Bolt Known” and Revelation is known and Revelation is up and (not Shadow Vulnerability is on the target or time left on Shadow Vulnerability < (cast time of Shadow Bolt + spellTravelTime))): cast Shadow Bolt
 7. cast Weakness Analyzer
-8. if (Shadow Trance is up or “Improved Shadow Bolt Known” and spell 1323392 is known and spell 1323392 is up and (auraIsInactive or time left on spell 17794 < (cast time of Shadow Bolt + spellTravelTime))): cast Shadow Bolt
+8. if (Shadow Trance is up or “Improved Shadow Bolt Known” and Revelation is known and Revelation is up and (not Shadow Vulnerability is on the target or time left on Shadow Vulnerability < (cast time of Shadow Bolt + spellTravelTime))): cast Shadow Bolt
 9. if (number of targets = 1 or “Amount of Dooms left” < 1 and not Bane of Doom is on the target or Bane of Doom is on the target): groupReference
 10. if (cast time of Shadow Bolt + spellTravelTime) > time left in the fight: cast Death Coil
 11. if mana % < 30% and time left in the fight > 60s: cast Life Tap
-12. channel Wrack (interrupt it when a higher line is ready)
+12. channel Wrack (stop it when (ticks of Wrack channeled ≥ 2 and not Corruption is on the target or ticks of Wrack channeled ≥ 2 and not Bane of Agony is on the target and not Bane of Doom is on the target or ticks of Wrack channeled ≥ 2 and “Blood Fury Ready” and (number of targets = 1 or time left on Bane of Doom ≤ 15)))
 13. cast Life Tap
 
 The tables below are the training-dummy rotation, filtered per build:
@@ -226,18 +226,18 @@ Before the pull: cast Shadow Bolt; at -1s: petAttack.
 | 6 | if number of targets = 1 and not Bane of Agony is on the target and time left in the fight > 12: cast Amplify Curse | 0.3 | 0.3 |
 | 7 | if number of targets = 1 and not Bane of Agony is on the target and time left in the fight > 12: cast Bane of Agony | 2.6 | 2.6 |
 | 8 | if number of targets = 1 and not Corruption is on the target and time left in the fight > 9: cast Corruption (rank 6) | 3.3 | 3.3 |
-| 9 | if number of targets = 1 and not Siphon Life is on the target and time left in the fight > dotBaseDuration and auraIsInactive and not Blood Fury is up and not spellIsChanneling: cast Siphon Life | 1.8 | 1.8 |
+| 9 | if number of targets = 1 and not Siphon Life is on the target and time left in the fight > dotBaseDuration and not Shadow Vulnerability is on the target and not Blood Fury is up and not spellIsChanneling: cast Siphon Life | 1.8 | 1.8 |
 | 10 | if number of targets > 1 and not Bane of Doom is on the target and (not Bane of Doom is ready or time left in the fight < “Doom tick”) and not Bane of Agony is on the target and number of targets < 5: cast Amplify Curse | 0.3 | 0.3 |
 | 11 | if number of targets > 1 and not Bane of Doom is on the target and not Bane of Agony is on the target and number of targets < 5: cast Bane of Agony | 2.6 | 2.6 |
 | 12 | if number of targets > 1 and (Bane of Agony is on the target or Bane of Doom is on the target) and not warlockBaneIsActiveOnAllTargets and (warlockAssignedCurseIsActive or warlockIsAssignedCurse) and number of targets < 5: change target | as ready | as ready |
 | 13 | if number of targets > 1 and not Corruption is on the target and time left in the fight > dotBaseDuration and not “in 5y range of 3T”: cast Corruption (rank 6) | 3.3 | 3.3 |
-| 14 | if number of targets > 1 and Corruption is on the target and not dotIsActiveOnAllTargets and (warlockAssignedCurseIsActive or warlockIsAssignedCurse) and ((Bane of Agony is on the target or Bane of Doom is on the target) or not number of targets < 5) and time left in the fight > dotBaseDuration and not “in 5y range of 3T”: change target | as ready | as ready |
-| 15 | if number of targets > 1 and (warlockAssignedCurseIsActiveOnAllTargets or warlockIsAssignedCurse) and (warlockBaneIsActiveOnAllTargets or not number of targets < 5) and (dotIsActiveOnAllTargets or time left in the fight > dotBaseDuration): change target | as ready | as ready |
-| 16 | if (Shadow Trance is up or “Improved Shadow Bolt Known” and spell 1323392 is known and spell 1323392 is up and (auraIsInactive or time left on spell 17794 < (cast time of Shadow Bolt + spellTravelTime))): cast Shadow Bolt | 2.6 | 2.6 |
-| 17 | if (Shadow Trance is up or “Improved Shadow Bolt Known” and spell 1323392 is known and spell 1323392 is up and (auraIsInactive or time left on spell 17794 < (cast time of Shadow Bolt + spellTravelTime))): cast Shadow Bolt | 2.6 | 2.6 |
+| 14 | if number of targets > 1 and Corruption is on the target and not dotIsActiveOnAllTargets and (warlockAssignedCurseIsActive or warlockIsAssignedCurse) and ((Bane of Agony is on the target or Bane of Doom is on the target) or not (number of targets < 5)) and time left in the fight > dotBaseDuration and not “in 5y range of 3T”: change target | as ready | as ready |
+| 15 | if number of targets > 1 and (warlockAssignedCurseIsActiveOnAllTargets or warlockIsAssignedCurse) and (warlockBaneIsActiveOnAllTargets or not (number of targets < 5)) and (dotIsActiveOnAllTargets or time left in the fight > dotBaseDuration): change target | as ready | as ready |
+| 16 | if (Shadow Trance is up or “Improved Shadow Bolt Known” and Revelation is known and Revelation is up and (not Shadow Vulnerability is on the target or time left on Shadow Vulnerability < (cast time of Shadow Bolt + spellTravelTime))): cast Shadow Bolt | 2.6 | 2.6 |
+| 17 | if (Shadow Trance is up or “Improved Shadow Bolt Known” and Revelation is known and Revelation is up and (not Shadow Vulnerability is on the target or time left on Shadow Vulnerability < (cast time of Shadow Bolt + spellTravelTime))): cast Shadow Bolt | 2.6 | 2.6 |
 | 18 | if (cast time of Shadow Bolt + spellTravelTime) > time left in the fight: cast Death Coil | 0.3 | 0.3 |
 | 19 | if mana % < 30% and time left in the fight > 60s: cast Life Tap | 1.8 | 1.8 |
-| 20 | channel Wrack (interrupt it when a higher line is ready) | as ready | as ready |
+| 20 | channel Wrack (stop it when (ticks of Wrack channeled ≥ 2 and not Corruption is on the target or ticks of Wrack channeled ≥ 2 and not Bane of Agony is on the target and not Bane of Doom is on the target or ticks of Wrack channeled ≥ 2 and “Blood Fury Ready” and (number of targets = 1 or time left on Bane of Doom ≤ 15))) | as ready | as ready |
 | 21 | cast Life Tap | 1.8 | 1.8 |
 
 Lines of the simulator's rotation these builds never cast: cast Eureka!, cast Blood Fury, cast Bane of Doom (its condition never held in these fights).
@@ -272,10 +272,10 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 3. if number of targets ≥ 3 and unitDistance > 5 and not unitIsMoving: move to 5 yd
 4. if time left in the fight > “Doom tick”: cast Bane of Doom
 5. if number of targets > 1 and not auraIsActiveOnAnyTarget: cast Bane of Havoc
-6. if Bane of Havoc is up: change target
+6. if Bane of Havoc is on the target: change target
 7. if number of targets = 1: groupReference
 8. if number of targets > 1: groupReference
-9. if (Immolate is on the target or auraIsInactive): cast Conflagrate
+9. if (Immolate is on the target or not Shadow is up): cast Conflagrate
 10. cast Shadowburn
 11. if (“Amount of Dooms left” < 1 and not Bane of Doom is on the target or (Bane of Doom is on the target or “in 5y range of 3T”)): groupReference
 12. if “in 5y range of 3T”: cast Hellfire
@@ -299,20 +299,20 @@ Before the pull: cast Soul Fire; at -1s: petAttack; at -0.1s: cast Immolate (ran
 | 3 | if warlockAssignedCurseIsActive and not warlockAssignedCurseIsActiveOnAllTargets and number of targets > 1: change target | as ready | as ready |
 | 4 | if number of targets ≥ 3 and unitDistance > 5 and not unitIsMoving: move to 5 yd | as ready | as ready |
 | 5 | if time left in the fight > “Doom tick”: cast Bane of Doom | 0.7 | 0.7 |
-| 6 | if Bane of Havoc is up: change target | as ready | as ready |
+| 6 | if Bane of Havoc is on the target: change target | as ready | as ready |
 | 7 | if number of targets = 1 and not Bane of Doom is on the target and (not Bane of Doom is ready or time left in the fight < “Doom tick”) and not Bane of Agony is on the target and time left in the fight > dotBaseDuration: cast Amplify Curse | 0.3 | 0.3 |
 | 8 | if number of targets = 1 and not Bane of Doom is on the target and not Bane of Agony is on the target and time left in the fight > dotBaseDuration: cast Bane of Agony | 0.9 | 0.9 |
 | 9 | if number of targets = 1 and not Immolate is on the target and time left in the fight > dotBaseDuration: cast Immolate (rank 7) | 4.0 | 4.0 |
 | 10 | if number of targets = 1 and not Corruption is on the target and time left in the fight > dotBaseDuration: cast Corruption (rank 6) | 3.2 | 3.2 |
-| 11 | if number of targets > 1 and not Bane of Doom is on the target and (not Bane of Doom is ready or time left in the fight < “Doom tick”) and not Bane of Agony is on the target and not Bane of Havoc is up and number of targets < 5: cast Amplify Curse | 0.3 | 0.3 |
-| 12 | if number of targets > 1 and not Bane of Doom is on the target and not Bane of Agony is on the target and not Bane of Havoc is up and number of targets < 5: cast Bane of Agony | 0.9 | 0.9 |
-| 13 | if number of targets > 1 and (Bane of Agony is on the target or Bane of Doom is on the target or Bane of Havoc is up) and (warlockAssignedCurseIsActive or warlockIsAssignedCurse) and not warlockBaneIsActiveOnAllTargets and number of targets < 5: change target | as ready | as ready |
+| 11 | if number of targets > 1 and not Bane of Doom is on the target and (not Bane of Doom is ready or time left in the fight < “Doom tick”) and not Bane of Agony is on the target and not Bane of Havoc is on the target and number of targets < 5: cast Amplify Curse | 0.3 | 0.3 |
+| 12 | if number of targets > 1 and not Bane of Doom is on the target and not Bane of Agony is on the target and not Bane of Havoc is on the target and number of targets < 5: cast Bane of Agony | 0.9 | 0.9 |
+| 13 | if number of targets > 1 and (Bane of Agony is on the target or Bane of Doom is on the target or Bane of Havoc is on the target) and (warlockAssignedCurseIsActive or warlockIsAssignedCurse) and not warlockBaneIsActiveOnAllTargets and number of targets < 5: change target | as ready | as ready |
 | 14 | if number of targets > 1 and not Immolate is on the target and time left in the fight > dotBaseDuration and not “in 5y range of 3T”: cast Immolate (rank 7) | 4.0 | 4.0 |
-| 15 | if number of targets > 1 and Immolate is on the target and not dotIsActiveOnAllTargets and (warlockAssignedCurseIsActive or warlockIsAssignedCurse) and ((Bane of Agony is on the target or Bane of Doom is on the target) or not number of targets < 5) and time left in the fight > dotBaseDuration and not “in 5y range of 3T”: change target | as ready | as ready |
+| 15 | if number of targets > 1 and Immolate is on the target and not dotIsActiveOnAllTargets and (warlockAssignedCurseIsActive or warlockIsAssignedCurse) and ((Bane of Agony is on the target or Bane of Doom is on the target) or not (number of targets < 5)) and time left in the fight > dotBaseDuration and not “in 5y range of 3T”: change target | as ready | as ready |
 | 16 | if number of targets > 1 and not Corruption is on the target and time left in the fight > dotBaseDuration and not “in 5y range of 3T”: cast Corruption (rank 6) | 3.2 | 3.2 |
-| 17 | if number of targets > 1 and Corruption is on the target and not dotIsActiveOnAllTargets and (warlockAssignedCurseIsActive or warlockIsAssignedCurse) and ((Bane of Agony is on the target or Bane of Doom is on the target) or not number of targets < 5) and Immolate is on the target and time left in the fight > dotBaseDuration and not “in 5y range of 3T”: change target | as ready | as ready |
-| 18 | if number of targets > 1 and (warlockAssignedCurseIsActiveOnAllTargets or warlockIsAssignedCurse) and (warlockBaneIsActiveOnAllTargets or not number of targets < 5) and (dotIsActiveOnAllTargets or not time left in the fight > dotBaseDuration and not “in 5y range of 3T”) and (dotIsActiveOnAllTargets or not time left in the fight > dotBaseDuration and not “in 5y range of 3T”): change target | as ready | as ready |
-| 19 | if (Immolate is on the target or auraIsInactive): cast Conflagrate | 5.2 | 5.2 |
+| 17 | if number of targets > 1 and Corruption is on the target and not dotIsActiveOnAllTargets and (warlockAssignedCurseIsActive or warlockIsAssignedCurse) and ((Bane of Agony is on the target or Bane of Doom is on the target) or not (number of targets < 5)) and Immolate is on the target and time left in the fight > dotBaseDuration and not “in 5y range of 3T”: change target | as ready | as ready |
+| 18 | if number of targets > 1 and (warlockAssignedCurseIsActiveOnAllTargets or warlockIsAssignedCurse) and (warlockBaneIsActiveOnAllTargets or not (number of targets < 5)) and (dotIsActiveOnAllTargets or not (time left in the fight > dotBaseDuration and not “in 5y range of 3T”)) and (dotIsActiveOnAllTargets or not (time left in the fight > dotBaseDuration and not “in 5y range of 3T”)): change target | as ready | as ready |
+| 19 | if (Immolate is on the target or not Shadow is up): cast Conflagrate | 5.2 | 5.2 |
 | 20 | cast Shadowburn | 3.6 | 3.6 |
 | 21 | if (“Amount of Dooms left” < 1 and not Bane of Doom is on the target or (Bane of Doom is on the target or “in 5y range of 3T”)) and (time left on Bane of Doom < 15s and Bane of Doom is on the target or not Bane of Doom is on the target): cast Frozen Heart of the Mountain | as ready | as ready |
 | 22 | if (“Amount of Dooms left” < 1 and not Bane of Doom is on the target or (Bane of Doom is on the target or “in 5y range of 3T”)) and (time left on Bane of Doom < 30s and Bane of Doom is on the target or not Bane of Doom is on the target): cast Major Spellblasting Potion | as ready | as ready |
@@ -388,7 +388,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 7. if mana % < 10%: cast Life Tap
 8. if number of targets ≥ 3 and unitDistance ≤ 10: cast Hellfire
 9. if number of targets ≥ 4: cast Rain of Fire
-10. if not Curse of the Elements is up: cast Curse of the Elements
+10. if not Curse of the Elements is on the target: cast Curse of the Elements
 11. if time left in the fight ≥ 60s: cast Bane of Doom
 12. if not Bane of Doom is on the target and time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony
 13. if time left on Corruption ≤ cast time of Corruption: cast Corruption (rank 6)
@@ -411,7 +411,7 @@ Before the pull: at -1.5s: cast Life Tap.
 | 4 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
 | 5 | if time left on Bane of Agony ≤ cast time of Bane of Agony and time left in the fight ≥ 10s: cast Bane of Agony | 2.6 |
 | 6 | if mana % < 10%: cast Life Tap | 6.1 |
-| 7 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
+| 7 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 |
 | 8 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate (rank 7) | 3.5 |
 | 9 | cast Conflagrate | 3.9 |
 | 10 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
@@ -443,7 +443,7 @@ Before the pull: at -1.5s: cast Life Tap.
 | 4 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 | 0.3 | 0.3 | 0.4 | 0.4 |
 | 5 | if time left on Bane of Agony ≤ cast time of Bane of Agony and time left in the fight ≥ 10s: cast Bane of Agony | 2.6 | 2.6 | 2.6 | 2.7 | 2.7 |
 | 6 | if mana % < 10%: cast Life Tap | 6.0 | 6.7 | 5.6 | 7.6 | 7.6 |
-| 7 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 | 0.4 | 0.4 | 0.4 | 0.4 |
+| 7 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 | 0.4 | 0.4 | 0.4 | 0.4 |
 | 8 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate (rank 7) | 3.5 | 3.4 | 3.5 | 3.5 | 3.5 |
 | 9 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready | as ready | as ready | as ready | as ready |
 | 10 | cast Shadow Bolt | 14.9 | 14.9 | 12.4 | 13.7 | 13.7 |
@@ -474,7 +474,7 @@ Before the pull: at -1.5s: cast Life Tap.
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.3 |
 | 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony and time left in the fight ≥ 10s: cast Bane of Agony | 2.6 |
 | 7 | if mana % < 10%: cast Life Tap | 6.7 |
-| 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
+| 8 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 |
 | 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate (rank 7) | 3.5 |
 | 10 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
 | 11 | cast Shadow Bolt | 14.5 |
@@ -506,7 +506,7 @@ Before the pull: at -1.5s: cast Life Tap.
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
 | 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony and time left in the fight ≥ 10s: cast Bane of Agony | 2.6 |
 | 7 | if mana % < 10%: cast Life Tap | 6.4 |
-| 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
+| 8 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 |
 | 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate (rank 7) | 3.4 |
 | 10 | cast Conflagrate | 3.9 |
 | 11 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
@@ -563,7 +563,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 7. if mana % < 10%: cast Life Tap
 8. if number of targets ≥ 3 and unitDistance ≤ 10: cast Hellfire
 9. if number of targets ≥ 4: cast Rain of Fire
-10. if not Curse of the Elements is up: cast Curse of the Elements
+10. if not Curse of the Elements is on the target: cast Curse of the Elements
 11. cast Amplify Curse
 12. if time left in the fight ≥ 60s: cast Bane of Doom
 13. if not Bane of Doom is on the target and time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony
@@ -580,7 +580,7 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 
 | # | Priority (the first line whose condition holds is cast) | [`destruction-ml-raid`](builds/destruction-ml-raid.md) casts/min |
 |---|---|---|
-| 1 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
+| 1 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
@@ -613,7 +613,7 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 
 | # | Priority (the first line whose condition holds is cast) | [`ds-ruin-raid`](builds/ds-ruin-raid.md) casts/min | [`opt-sb-raid-raid-dps`](builds/opt-sb-raid-raid-dps.md) casts/min | *SM/Ruin* casts/min | *Aff (Wrack)* casts/min |
 |---|---|---|---|---|---|
-| 1 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 | 0.4 | 0.4 | 0.4 |
+| 1 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 | 0.4 | 0.4 | 0.4 |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready | as ready | as ready | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready | as ready | as ready | as ready |
 | 4 | use every other cooldown when ready | as ready | as ready | as ready | as ready |
@@ -645,7 +645,7 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 
 | # | Priority (the first line whose condition holds is cast) | *Destro* casts/min |
 |---|---|---|
-| 1 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
+| 1 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
@@ -681,7 +681,7 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 
 | # | Priority (the first line whose condition holds is cast) | *Demo (Shadow Brand)* casts/min | *Demo (Fire Brand)* casts/min |
 |---|---|---|---|
-| 1 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 | 0.4 |
+| 1 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 | 0.4 |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready | as ready |
 | 4 | use every other cooldown when ready | as ready | as ready |
@@ -750,7 +750,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 7. if number of targets = 1: groupReference
 8. if number of targets > 1: groupReference
 9. if (“Amount of Dooms left” < 1 and not Bane of Doom is on the target or (Bane of Doom is on the target or “in 5y range of 3T”)): groupReference
-10. if “Improved Shadow Bolt Known” and spell 1323392 is known and spell 1323392 is up and (auraIsInactive or time left on spell 17794 < (cast time of Shadow Bolt + spellTravelTime)) and not spellIsCasting: cast Shadow Bolt
+10. if “Improved Shadow Bolt Known” and Revelation is known and Revelation is up and (not Shadow Vulnerability is on the target or time left on Shadow Vulnerability < (cast time of Shadow Bolt + spellTravelTime)) and not Shadow Bolt is being cast: cast Shadow Bolt
 11. if “in 5y range of 3T”: cast Hellfire
 12. if (cast time of Shadow Bolt + spellTravelTime) > time left in the fight: cast Searing Pain
 13. if mana % < 50% and time left in the fight > 60s: cast Life Tap
@@ -765,7 +765,7 @@ The tables below are the training-dummy rotation, filtered per build:
 |---|---|---|---|---|---|
 | 1 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption (rank 6) | 3.5 | 3.5 | 3.5 | 3.5 |
 | 2 | cast Eye of the Beast | as ready | as ready | as ready | as ready |
-| 3 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 | 0.4 | 0.4 | 0.4 |
+| 3 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 | 0.4 | 0.4 | 0.4 |
 | 4 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready | as ready | as ready | as ready |
 | 5 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready | as ready | as ready | as ready |
 | 6 | use every other cooldown when ready | as ready | as ready | as ready | as ready |
@@ -831,7 +831,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 6. if time left in the fight ≤ 3.5: cast Searing Pain
 7. if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony
 8. if mana % < 5%: cast Life Tap
-9. if not Curse of the Elements is up: cast Curse of the Elements
+9. if not Curse of the Elements is on the target: cast Curse of the Elements
 10. if time left on Corruption ≤ cast time of Corruption: cast Corruption (rank 6)
 11. if Immolate is on the target: cast Conflagrate
 12. cast Incinerate
@@ -852,7 +852,7 @@ Before the pull: at -1.5s: cast Life Tap.
 | 5 | if time left in the fight ≤ 3.938: cast Searing Pain | 0.5 |
 | 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
 | 7 | if mana % < 10%: cast Life Tap | 6.2 |
-| 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
+| 8 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 |
 | 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate (rank 7) | 3.4 |
 | 10 | if Immolate is on the target: cast Conflagrate | 3.9 |
 | 11 | cast Shadow Bolt | 12.4 |
@@ -885,7 +885,7 @@ Before the pull: at -1.5s: cast Life Tap.
 | 6 | if time left in the fight ≤ 3.938: cast Searing Pain | 0.5 | 0.5 |
 | 7 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 | 2.6 |
 | 8 | if mana % < 10%: cast Life Tap | 6.9 | 6.5 |
-| 9 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 | 0.4 |
+| 9 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 | 0.4 |
 | 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate (rank 7) | 3.5 | 3.4 |
 | 11 | if Immolate is on the target: cast Conflagrate | 4.0 | 3.9 |
 | 12 | cast Shadow Bolt | 11.9 | 12.3 |

@@ -139,6 +139,50 @@ def _raidsim_run():
     return mod
 
 
+# buffs a rotation can ask for that come from gear, by the enchant (effect id) that gives them (the simulator's enchants.go)
+GEAR_AURAS = {"Revelation": 8217}
+
+
+def gear_missing(cls, entry_name):
+    """The GEAR_AURAS names the entry's gear set does not give (no item there carries the enchant)."""
+    import argparse
+    try:
+        RUN = _raidsim_run()
+        RUN.set_game("forever")
+        repo = RUN.repo_path(argparse.Namespace(repo=None))
+        g = RUN.SPECS[cls][entry_name].get("gear")
+        gp = pathlib.Path(RUN.sim_path(g)) if g else None
+        gp = gp if gp and gp.is_absolute() else (repo / g if g else None)
+        items = json.load(open(gp, encoding="utf-8")).get("items") or [] if gp and gp.exists() else []
+    except Exception as e:   # noqa: BLE001
+        print(f"WARNING: gear_missing({cls}, {entry_name}): {type(e).__name__}: {e}", file=sys.stderr)
+        return set(GEAR_AURAS)
+    have = {it.get("enchant") for it in items if isinstance(it, dict)}
+    return {n for n, eid in GEAR_AURAS.items() if eid not in have}
+
+
+def const_named(cls, entry_name):
+    """{name: True/False} for the named conditions of the entry's raid rotation that are constants (switches it keeps on or off, and
+    named conditions made of them): simple_rotation reads them as always or never (2026-11-21, B10: Subtlety's "Use Backstab" line)."""
+    import argparse
+    try:
+        RUN = _raidsim_run()
+        RUN.set_game("forever")
+        repo = RUN.repo_path(argparse.Namespace(repo=None))
+        apl = json.load(open(RUN.apl_path(RUN.SPECS[cls][entry_name], repo, "raid"), encoding="utf-8"))
+        import render_sim_presets as RSP
+    except Exception as e:   # noqa: BLE001
+        print(f"WARNING: const_named({cls}, {entry_name}): {type(e).__name__}: {e}", file=sys.stderr)
+        return {}
+    defs = {v.get("name"): v.get("value") for v in apl.get("valueVariables") or []}
+    out = {}
+    for n, v in defs.items():
+        c = RSP.const_value(v, defs)
+        if c is not None:
+            out[n] = c
+    return out
+
+
 def timing_lines(cls, entry_name, texts, shown_spells=None):
     """The named conditions a raid page's list leans on ("(timing: see below)"), each with its definition from the rotation's
     valueVariables and the names those definitions use in turn, for a page whose guide does not explain them (2026-11-20, the audit
@@ -263,9 +307,21 @@ def setup_line(cls, entry, held, named=()):
     if cls == "warrior" and stance and not any("Stance" in x for x in named):
         return f"**Setup, before the pull:** **{stance}**: the simulator starts the fight in it, and the rotation below assumes it."
     s = co.get("summon")
-    if cls == "warlock" and s:
+    if cls == "warlock" and (s or co.get("sacrificedDemon")):
         armor = {"DemonArmor": "Demon Armor", "DemonSkin": "Demon Skin"}.get(co.get("armor"))
         arm = f" Keep **{armor}** on you." if armor else ""
+        # the official simulator's options (2026-11-21, the audit session's B11: the Wrack page had no setup line and no Demon Armor):
+        # sacrificedDemon, a demon sacrificed and none out; pactSacrifice, one sacrificed and another out under Demonic Pact
+        sd = co.get("sacrificedDemon")
+        if sd and "Demonic Sacrifice" in held:
+            return (f"**Setup, before the pull:** **Summon {sd}**, then **Demonic Sacrifice** it: you fight with its buff and no demon, "
+                    "which the rotation below assumes." + arm)
+        ps = co.get("pactSacrifice")
+        if s and ps and "Demonic Sacrifice" in held:
+            return (f"**Setup, before the pull:** **Summon {ps}** and **Demonic Sacrifice** it, then **Summon {s}** and keep it out all "
+                    "fight" + (": **Demonic Pact** keeps the sacrifice's buff while it is out." if "Demonic Pact" in held else ".") + arm)
+        if not s:
+            return None
         if co.get("sacrificeSummon") and "Demonic Sacrifice" in held:
             return (f"**Setup, before the pull:** **Summon {s}**, then **Demonic Sacrifice** it: you fight with its buff and no demon, which the "
                     "rotation below assumes." + arm)
@@ -275,39 +331,64 @@ def setup_line(cls, entry, held, named=()):
     return None
 
 
-def idle_note(cls, b, text):
+def idle_note(cls, b, text, entry=None, spec=None):
     """Talents of the page's build that do nothing on this page (2026-11-08, user: "the resto druid talent spec says to take Improved
-    Wrath. Why would that ever be a thing? ... Check things like that constantly"): `page_lint.dead_talents` finds them (a talent that
-    only improves spells or forms the page never uses, a talent ability it never uses), `classify_dead` says which points only open a
-    deeper talent and which are free. The page says so in one line; free points stay a finding of the page audit until the build moves
-    them."""
-    import page_lint as PL
-    m = PL.TF.match(rs.tf_link(cls, rs.flat(b)))
-    if not m:
+    Wrath. Why would that ever be a thing? ... Check things like that constantly"). Since 2026-11-21 (the audit session's B13) from one
+    source, a removal run (zero_talents.py: the raid play check's zero talents; the leveling filler pass's record on the build's order),
+    never from a reading of the tooltips (the Marksmanship page had listed Trueshot Aura, whose removal changes the result). The page says
+    in one line which points are there for a deeper talent and which found no more useful legal home; a raid utility point says so."""
+    import zero_talents as ZT
+    if b.get("content") in ("raid", "dungeon"):
+        zero = ZT.raid(cls, b["id"], entry)
+    else:
+        zero = ZT.leveling(cls, SM.spec_slug(cls, spec) if spec else None, b.get("order"))
+    held = {n: r for items in (b.get("allocation") or {}).values() for n, r in items if r}
+    zero = {t: w for t, w in zero.items() if t in held}
+    if not zero:
         return []
-    dead = PL.dead_talents(cls, text, m.group(2))
-    if not dead:
-        return []
-    why = PL.classify_dead(cls, m.group(2), dead)
     names = lambda xs: (", ".join(xs[:-1]) + " and " + xs[-1]) if len(xs) > 1 else xs[0]   # noqa: E731
-    gates, free, util = {}, [], []
-    for n, r, _, _ in dead:
-        w = why[n]
-        if w["gate"]:
-            gates.setdefault(tuple(sorted(w["opens"])), []).append(f"**{n}** ({w['gate']})")
-        u = PL.raid_utility(cls, n) if b.get("content") in ("raid", "dungeon") else None
-        if w["free"] and u:   # the raid filler audit's utility point (2026-11-09: Feral Charge, an interrupt, read "does nothing")
-            util.append(f"**{n}** ({r}) is not in the rotation: it is there for {u}, which the raid simulator does not measure")
-        elif w["free"]:
-            free.append(f"**{n}** ({w['free']})")
-    parts = [f"{names(v)} only count{'s' if len(v) == 1 else ''} toward the points the tree needs before "
-             + (names([f"**{x}**" for x in k]) if k else "a deeper row") for k, v in gates.items()]
-    if free:
-        parts.append(f"{names(free)} open{'s' if len(free) == 1 else ''} nothing and could go to any talent")
-    out = [f"{PL.IDLE_LINE} " + "; ".join(parts) + ".", ""] if parts else []
+    gates, needs, stays, util = {}, {}, [], []
+    # a gate is named by the function the talent tables use (gate_kind on the page's own build), so the line and the table agree; the
+    # play check of 2026-11-20 wrote its gates as the validator's errors ("gate: Death Wish (tier 5) needs 20 points ...") (2026-11-21)
+    import gate_kind as GK
+    import validate_builds as VB
+    trees, st = VB.load_forever()[cls], GK.state_of(b.get("allocation") or {})
+    for t, w in sorted(zero.items()):
+        r = held[t]
+        kind = GK.gate_kind(trees, st, t) if (w.startswith("gate:") or "tier point" in w or "prerequisite" in w) else None
+        mt = re.match(r"tier point for (.+?) \(tier \d+\)", kind or "") or re.search(r"tier point for (.+?) \(tier \d+\)", w)
+        mp = re.match(r"prerequisite of (.+)", kind or "") or re.search(r"prerequisite of (.+?)(?:;|$)", w)
+        mu = re.search(r"utility filler \((.+?)\)", w)
+        if not mu and w.startswith("recorded filler") and b.get("content") in ("raid", "dungeon"):   # with a raid utility tag (Feral Charge's interrupt)
+            import page_lint as PL
+            u = PL.raid_utility(cls, t)
+            mu = re.match(r"(.+)", u) if u else None
+        if mt:
+            gates.setdefault(mt.group(1), []).append(f"**{t}** ({r})")
+        elif mp:
+            needs.setdefault(mp.group(1).strip(), []).append(f"**{t}** ({r})")
+        elif mu:
+            import page_lint as PL
+            if t in set(PL.LG.book(cls)):   # a talent ability (Silence, Feral Charge)
+                util.append(f"**{t}** ({r}) is not in the rotation: it is there for {mu.group(1)}, which the raid simulator does not measure")
+            else:   # a passive (Martyrdom, Flame Throwing): nothing to press (2026-11-21)
+                util.append(f"**{t}** ({r}) changes nothing the raid simulator measures: it is there for {mu.group(1)}")
+        elif re.search(r"the raid's .+ itself|ability: |kept: utility", w):
+            continue   # the raid's own buff, a situational ability, a value the lab cannot see: not "nothing"
+        else:
+            stays.append(f"**{t}** ({r})")
+    parts = [f"{names(v)} only count{'s' if len(v) == 1 else ''} toward the points the tree needs before **{k}**" for k, v in gates.items()]
+    parts += [f"{names(v)} {'is' if len(v) == 1 else 'are'} needed for **{k}**" for k, v in needs.items()]
+    if stays:
+        parts.append(f"{names(stays)} {'does' if len(stays) == 1 else 'do'} nothing here, and no more useful legal talent was found for "
+                     f"{('its point' if stays[0].endswith('(1)') else 'its points') if len(stays) == 1 else 'their points'}")
+    out = [f"{PL_IDLE_LINE} " + "; ".join(parts) + ".", ""] if parts else []
     if util:
         out += ["**Taken for raid utility:** " + "; ".join(util) + ".", ""]
     return out
+
+
+PL_IDLE_LINE = "**Points that do nothing for this spec:**"   # page_lint.IDLE_LINE (the check reads around it)
 
 
 def tree_legal(cls, alloc):
@@ -1244,6 +1325,48 @@ def fastest_damage_leveling(cls, spec, nums):
     return best
 
 
+# --- points without effect (2026-11-21, the audit session: a point that does nothing and stays, because no legal talent that helps can
+# take it, is marked on the page with what it is there for, so a reader knows why it is in the build)
+def _idle_text(cls, alloc, t):
+    import gate_kind as GK
+    import validate_builds as VB
+    kind = GK.gate_kind(VB.load_forever()[cls], GK.state_of(alloc), t)
+    m = re.match(r"tier point for (.+?) \(tier \d+\)", kind or "")
+    if m:
+        return f"tier point: needed to reach {m.group(1)}"
+    m = re.match(r"prerequisite of (.+)", kind or "")
+    if m:
+        return f"needed for {m.group(1)}"
+    return "no effect in the fight lab; the talent order needs a point here"
+
+
+def idle_points(cls, spec, top, mode):
+    """{talent: note} for the page's build: the points the filler pass (leveling: fightlab/fl_filler_pass.py's record made on this
+    build's order) or the raid play check (raidsim/play-check.json, its zero talents and never-cast abilities that are gates) found to
+    do nothing, with no legal home that helps."""
+    out = {}
+    try:
+        if mode == "leveling":
+            f = HERE / "fightlab" / "filler" / f"{cls}-{SM.spec_slug(cls, spec)}.json"
+            x = json.load(open(f, encoding="utf-8")) if f.exists() else {}
+            if x.get("final_order") == top.get("order"):
+                for t, e in (x.get("no_better_home") or {}).items():   # only a removal that leaves the times identical marks a point
+                    if e.get("exact", e.get("kind") != "zero point") and any(n == t and r for items in top["allocation"].values() for n, r in items):
+                        out[t] = _idle_text(cls, top["allocation"], t)
+        elif mode == "raid":
+            rec = json.load(open(HERE / "raidsim" / "play-check.json", encoding="utf-8")).get(cls) or {}
+            for e in rec.values():
+                b = (e.get("builds") or {}).get(top["id"])
+                for line in (b or {}).get("zero_talents") or []:
+                    t, _, why = line.partition(": ")
+                    t = re.sub(r" \d+$", "", t)
+                    if why.startswith("gate:") or "NO RECORD OF ITS HOMES" in why:
+                        out.setdefault(t, _idle_text(cls, top["allocation"], t))
+    except (OSError, ValueError, KeyError):
+        return {}
+    return out
+
+
 def mode_section(cls, spec, mode, builds, nums, src):
     """The body of one spec x mode page."""
     R, L, H = nums
@@ -1325,12 +1448,22 @@ def mode_section(cls, spec, mode, builds, nums, src):
         rows = [(t, [(n, r) for n, r in items if r]) for t, items in (top.get("allocation") or {}).items()]
         rows = [(t, xs) for t, xs in rows if xs]
         if rows:
+            idle = idle_points(cls, spec, top, "raid")
             talents += ["## Talents", "", "| Tree | Points | Talents (ranks) |", "|---|---|---|"]
-            talents += [f"| {t} | {sum(r for _, r in xs)} | " + ", ".join(f"{n} {r}" for n, r in xs) + " |" for t, xs in rows] + [""]
+            talents += [f"| {t} | {sum(r for _, r in xs)} | " + ", ".join(f"{n} {r}" + (f" ({idle[n]})" if n in idle else "") for n, r in xs) + " |"
+                        for t, xs in rows] + [""]
+            if idle:
+                talents += ["A talent marked as a tier point measures nothing in the simulator's raid fight; the build holds it for the tier "
+                            "it opens (or the talent it is needed for).", ""]
     if mode == "leveling":
         if top.get("order"):
+            idle = idle_points(cls, spec, top, "leveling")
             talents += ["## Talents while leveling", "", "One point per level from 10, in this order:", "", "| Levels | Talent | Points |", "|---|---|---|"]
-            talents += [f"| {s['levels']} | {s['talent']} ({s['tree']}) | {s['points']} |" for s in top["order"]] + [""]
+            talents += [f"| {s['levels']} | {s['talent']} ({s['tree']})" + (f" ({idle[s['talent']]})" if s["talent"] in idle else "")
+                        + f" | {s['points']} |" for s in top["order"]] + [""]
+            if idle:
+                talents += ["A talent marked as a tier point does nothing in the fight lab's leveling fights; it is in the build because no legal "
+                            "talent that helps can take that point.", ""]
         spec_model = level_rotation(cls, top)   # (2026-11-04: one rule for the steps, the signature lines and signature_audit.py)
         st = STEPS.get(cls, {}).get(spec_model)
         if st:
@@ -1429,6 +1562,8 @@ def mode_section(cls, spec, mode, builds, nums, src):
         if r:
             texts = [ln["text"] for ln, pl in zip(r["d"]["lines"], r["row"]["lines"]) if pl["used"]]
             late, twists = [], []   # end-of-fight extras after the filler; seal twisting (simple_rotation.simplify)
+            simple_rotation.CONST_NAMED = const_named(cls, r["entry"])   # switches the rotation keeps on or off (2026-11-21)
+            simple_rotation.GEAR_MISSING = gear_missing(cls, r["entry"])   # gear buffs the entry's set does not have
             keep, prio = simple_rotation.simplify(cls, texts, late, twists)
             held = {n for items in top["allocation"].values() for n, k in items if k}
             pre = simple_rotation.pre_pull(cls, r["d"]["pre"], held)
@@ -1486,9 +1621,15 @@ def mode_section(cls, spec, mode, builds, nums, src):
                             and sp not in ("Auto Shot", "Attack", "Shoot") and not simple_rotation.is_self(sp)]
                     if cand:
                         fill = max(cand)[1]
-                        prio.append(f"**{fill}**")
-                        play.append(f"{len(prio)}. **{fill}**")
+                        # its own line, with its conditions (2026-11-21, the audit session's B10: Subtlety's Hemorrhage, cast only below 5
+                        # combo points, had read as an unconditional filler): the first line of the list that casts it
+                        ftxt = next((x[1] for t in texts for x in [simple_rotation._parse(cls, t)] if x and x[0] == [fill]
+                                     and not x[1].startswith(("LATE:", "KEEP:", "TWIST:"))), f"**{fill}**")
+                        prio.append(ftxt)
+                        play.append(f"{len(prio)}. {ftxt}")
                         shown.add(fill)
+                        if ftxt != f"**{fill}**":   # a line with conditions is no filler that fills every gap
+                            fill = None
                 extra = [f"**{x}**: in the last {n:g} seconds of the fight, when there is no time left for another **{f}**" for x, n, f in late]
                 extra += twists
                 extra += simple_rotation.advanced(cls, casts, shown, simple_rotation.mcd_window(texts))
@@ -1541,7 +1682,7 @@ def mode_section(cls, spec, mode, builds, nums, src):
         play += timing_lines(cls, *timing_src)   # the named conditions, where no guide text below explains them
     o += play + gl + talents + numbers
     if not (mode == "leveling" and top.get("raid_path")):   # a healer's or tank's leveling build is its raid build: the raid page explains it
-        o += idle_note(cls, top, "\n".join(o))
+        o += idle_note(cls, top, "\n".join(o), entry=(R.get(top["id"]) or {}).get("entry") if mode == "raid" else None, spec=spec)
     if mode == "raid" and not (R.get(top["id"]) or {}).get("tank"):
         # a damage spec that also holds the class's tank builds (the druid's bear in Feral Combat, 2026-10-15): the best tank build with
         # its numbers and gear, as on the Protection pages

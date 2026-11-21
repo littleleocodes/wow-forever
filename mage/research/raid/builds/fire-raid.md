@@ -64,7 +64,6 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
-| 2 | Improved Fire Blast | any utility talent legal at that tier | Measures +0.5% DPS in the community simulator (noise): these points are free to move. (Wake of Fire until build 70425; the client renamed it Improved Fire Blast in place.) |
 | 5 | Burning Soul | Arcane Focus, any utility talent legal at that tier | Measures +0.1% DPS in the community simulator (noise): these points are free to move. |
 | 2 | Improved Channeling | Wand Specialization, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 2 | Improved Channeling | Magic Absorption, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
@@ -140,11 +139,11 @@ Before the pull: at -2s: if Ice Barrier is known: cast Ice Barrier.
 
 | # | Priority (the first line whose condition holds is cast) | [`fire-raid`](fire-raid.md) casts/min |
 |---|---|---|
-| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 6.5 |
+| 1 | if (stacks of Fire Vulnerability on the target < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 6.5 |
 | 2 | if mana % ≤ 60% and mana % ≥ 25%: cast Mana Ruby | as ready |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 5 | if stacks of Heating Up = 3: cast Pyroblast | 5.2 |
+| 5 | if stacks of Heating Up on you = 3: cast Pyroblast | 5.2 |
 | 6 | cast Fire Blast | 6.0 |
 | 7 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 0.7 |
 | 8 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 5.6 |
@@ -167,6 +166,7 @@ Damage by ability:
 
 ## Notes
 
+- 2026-11-21: flex entries removed for Improved Fire Blast (2): they said the points measured +0.0% and were free to move, but the raid play check of 2026-11-20 measures these talents as live (their removal changes the full-raid DPS); a point is free only when its removal leaves the DPS the same.
 - Adopted from the community simulator on 2026-09-28: `cand-fire-raid-r5` beat the previous draft by +2.7% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Rotation hypothesis: Scorch to 5 stacks -> Fireball -> Pyroblast at 3 Hot Streak stacks (if a 1.5s Pyroblast beats a Fireball) -> Fire Blast on the move.
 - Fire immunity in the new raids is unknown; in Classic this build was AQ40/Naxx only.

@@ -66,8 +66,6 @@ Healing capacity 0.70 (the raid damage it heals through in this project's healer
 | Main hand | [Gift of the Elven Magi](https://www.wowhead.com/forever/item=13360) · *Balnazzar, Stratholme*<br>+ [Enchant Weapon - Mighty Spirit](https://www.wowhead.com/forever/spell=23797) | [Gift of the Elven Magi](https://www.wowhead.com/forever/item=13360) · *Balnazzar, Stratholme*<br>+ [Enchant Weapon - Mighty Spirit](https://www.wowhead.com/forever/spell=23797) |
 | Off hand | [Thaurissan's Royal Scepter](https://www.wowhead.com/forever/item=11928) · *Emperor Dagran Thaurissan, Blackrock Depths* | [Thaurissan's Royal Scepter](https://www.wowhead.com/forever/item=11928) · *Emperor Dagran Thaurissan, Blackrock Depths* |
 
-**Points that do nothing for this spec:** **Improved Wrath** (2) only counts toward the points the tree needs before **Nature's Splendor**.
-
 ## Other builds of this spec
 
 - [Restoration — Raid Healer](../research/raid/builds/resto-raid-healer.md) (11/0/40) — [open the talent tree](https://talentsforever.com/druid/60/05302001--5553005053113031-12)

@@ -30,6 +30,9 @@ GLOBAL = [
         "2026-12-09 check whether The Barrow Deeps or Hyjal Summit drop them (or new ones). If they do, `raidsim/trainer_ranks.py "
         "--reverse` and re-tune the raid rotations (the pages assume trainer ranks; the audit's research of 2026-11-20).",
         "Threat values of new abilities (Holy Strike, Mangle, Stormstrike, Shield Slam changes).",
+        "Hunter's Mark: our beta tooltip gives rank 4 +143 ranged attack power, the simulator's spell data +71 (2026-11-21, the audit "
+        "session's C17). Read the rank the trainer teaches at 60 and its bonus in game; until then the hunter raid guides say to take "
+        "whichever rank your tooltip shows higher, and the raid numbers are the simulator's.",
     ]),
     ("Performance evidence (needed to promote a draft from 'hypothesis' to 'recommended')", [
         "Combat logs / parses at 60 for the head-to-head questions: BM/MM vs. Lone Wolf, Combat daggers vs. Mutilate, Frost AP vs. Fingers of Frost, DS/Ruin vs. Affliction DoT vs. Destruction fire, Fury DW vs. Arms 2H.",

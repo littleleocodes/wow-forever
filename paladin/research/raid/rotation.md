@@ -15,7 +15,7 @@ Our rotation `ret-dps.apl.json` (our base rotation `retribution-default.apl.json
 
 The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring change what mana is worth), top priority first:
 
-1. if not spellInRange: groupReference
+1. if not Holy Strike is in range: groupReference
 2. if “WF guard”: cast Judgement
 3. if time into the fight ≥ “Delay Major CDs”: use every other cooldown when ready
 4. if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath
@@ -34,18 +34,17 @@ Before the pull: at -20s: groupReference; at -20s: move to “Pull range” yd; 
 
 | # | Priority (the first line whose condition holds is cast) | [`retribution-unsealed-wrath-raid`](builds/retribution-unsealed-wrath-raid.md) casts/min | *Unsealed Wrath* casts/min | [`retribution-open-raid`](builds/retribution-open-raid.md) casts/min |
 |---|---|---|---|---|
-| 1 | if not spellInRange and “Has assigned judgement” and Seal of Command is taken and (“Use Seal of Command” or not “Use Seal of Righteousness” or Unsealed Wrath is taken) and not the sequence is complete: sequence 'move1': move to “Melee range” yd; wait until spellInRange; cast Judgement; wait inputDelay; cast Seal of Command; wait until spellInRange | 12.8 | 12.8 | 11.9 |
-| 2 | if not spellInRange and “Has assigned judgement” and (not Unsealed Wrath is taken or not Seal of Command is taken or not “Use Seal of Command”) and not the sequence is complete: sequence 'move2': move to “Melee range” yd; wait until spellInRange; cast Judgement; wait inputDelay; cast Seal of Righteousness; wait until spellInRange | 12.6 | 12.6 | 11.7 |
-| 3 | if not spellInRange and not “Has assigned judgement” and not the sequence is complete: sequence 'move3': move to “Melee range” yd; wait until spellInRange; cast Judgement; wait until spellInRange | 7.2 | 7.2 | 7.0 |
-| 4 | if “WF guard”: cast Judgement | 7.2 | 7.2 | 7.0 |
-| 5 | if time into the fight ≥ “Delay Major CDs”: use every other cooldown when ready | as ready | as ready | as ready |
-| 6 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 1.2 | 1.2 | 1.3 |
-| 7 | if “WF guard” and not Judgement is ready and “Judge realism protection”: cast Holy Strike | 5.8 | 5.8 | 5.7 |
-| 8 | if “Should refresh SoC”: cast Seal of Command | 5.6 | 5.6 | 4.9 |
-| 9 | if “Should refresh SoR”: cast Seal of Righteousness | 5.4 | 5.4 | 4.7 |
-| 10 | if time to the next auto attack > 1.5s and mana % ≥ 10% and not Judgement is ready and not Holy Strike is ready: cast Consecration | 4.7 | 4.7 | 4.2 |
+| 1 | if not Holy Strike is in range and “Has assigned judgement” and Seal of Command is taken and (“Use Seal of Command” or not “Use Seal of Righteousness” or Unsealed Wrath is taken) and not the sequence is complete: sequence 'move1': move to “Melee range” yd; wait until Judgement is in range; cast Judgement; wait inputDelay; cast Seal of Command; wait until Holy Strike is in range | 12.8 | 12.8 | 11.9 |
+| 2 | if not Holy Strike is in range and “Has assigned judgement” and (not Unsealed Wrath is taken or not Seal of Command is taken or not “Use Seal of Command”) and not the sequence is complete: sequence 'move2': move to “Melee range” yd; wait until Judgement is in range; cast Judgement; wait inputDelay; cast Seal of Righteousness; wait until Holy Strike is in range | 12.6 | 12.6 | 11.7 |
+| 3 | if “WF guard”: cast Judgement | 7.2 | 7.2 | 7.0 |
+| 4 | if time into the fight ≥ “Delay Major CDs”: use every other cooldown when ready | as ready | as ready | as ready |
+| 5 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 1.2 | 1.2 | 1.3 |
+| 6 | if “WF guard” and not Judgement is ready and “Judge realism protection”: cast Holy Strike | 5.8 | 5.8 | 5.7 |
+| 7 | if “Should refresh SoC”: cast Seal of Command | 5.6 | 5.6 | 4.9 |
+| 8 | if “Should refresh SoR”: cast Seal of Righteousness | 5.4 | 5.4 | 4.7 |
+| 9 | if time to the next auto attack > 1.5s and mana % ≥ 10% and not Judgement is ready and not Holy Strike is ready: cast Consecration | 4.7 | 4.7 | 4.2 |
 
-Lines of the simulator's rotation these builds never cast: cast Exorcism (its condition never held in these fights); cast Divine Favor (needs the Divine Favor talent).
+Lines of the simulator's rotation these builds never cast: sequence 'move3': move to “Melee range” yd; wait until Judgement is in range; cast Judgement; wait until Holy Strike is in range (a switch this rotation keeps off); cast Exorcism (its condition never held in these fights); cast Divine Favor (needs the Divine Favor talent).
 
 Damage by ability:
 
@@ -67,18 +66,17 @@ Before the pull: at -20s: groupReference; at -20s: move to “Pull range” yd; 
 
 | # | Priority (the first line whose condition holds is cast) | *Holy Shock* casts/min | [`ret-raid-dps`](builds/ret-raid-dps.md) casts/min |
 |---|---|---|---|
-| 1 | if not spellInRange and “Has assigned judgement” and Seal of Command is taken and (“Use Seal of Command” or not “Use Seal of Righteousness” or Unsealed Wrath is taken) and not the sequence is complete: sequence 'move1': move to “Melee range” yd; wait until spellInRange; cast Judgement; wait inputDelay; cast Seal of Command; wait until spellInRange | 9.7 | 9.7 |
-| 2 | if not spellInRange and “Has assigned judgement” and (not Unsealed Wrath is taken or not Seal of Command is taken or not “Use Seal of Command”) and not the sequence is complete: sequence 'move2': move to “Melee range” yd; wait until spellInRange; cast Judgement; wait inputDelay; cast Seal of Righteousness; wait until spellInRange | 7.7 | 7.7 |
-| 3 | if not spellInRange and not “Has assigned judgement” and not the sequence is complete: sequence 'move3': move to “Melee range” yd; wait until spellInRange; cast Judgement; wait until spellInRange | 7.7 | 7.7 |
-| 4 | if “WF guard”: cast Judgement | 7.7 | 7.7 |
-| 5 | if time into the fight ≥ “Delay Major CDs”: use every other cooldown when ready | as ready | as ready |
-| 6 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 2.0 | 2.0 |
-| 7 | if “WF guard” and not Judgement is ready and “Judge realism protection”: cast Holy Strike | 6.0 | 6.0 |
-| 8 | if “Should refresh SoC”: cast Seal of Command | 2.0 | 2.0 |
-| 9 | if time to the next auto attack > 1.5s and mana % ≥ 10% and not Judgement is ready and not Holy Strike is ready: cast Consecration | 6.7 | 6.7 |
-| 10 | cast Divine Favor | 0.7 | 0.7 |
+| 1 | if not Holy Strike is in range and “Has assigned judgement” and Seal of Command is taken and (“Use Seal of Command” or not “Use Seal of Righteousness” or Unsealed Wrath is taken) and not the sequence is complete: sequence 'move1': move to “Melee range” yd; wait until Judgement is in range; cast Judgement; wait inputDelay; cast Seal of Command; wait until Holy Strike is in range | 9.7 | 9.7 |
+| 2 | if not Holy Strike is in range and “Has assigned judgement” and (not Unsealed Wrath is taken or not Seal of Command is taken or not “Use Seal of Command”) and not the sequence is complete: sequence 'move2': move to “Melee range” yd; wait until Judgement is in range; cast Judgement; wait inputDelay; cast Seal of Righteousness; wait until Holy Strike is in range | 7.7 | 7.7 |
+| 3 | if “WF guard”: cast Judgement | 7.7 | 7.7 |
+| 4 | if time into the fight ≥ “Delay Major CDs”: use every other cooldown when ready | as ready | as ready |
+| 5 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 2.0 | 2.0 |
+| 6 | if “WF guard” and not Judgement is ready and “Judge realism protection”: cast Holy Strike | 6.0 | 6.0 |
+| 7 | if “Should refresh SoC”: cast Seal of Command | 2.0 | 2.0 |
+| 8 | if time to the next auto attack > 1.5s and mana % ≥ 10% and not Judgement is ready and not Holy Strike is ready: cast Consecration | 6.7 | 6.7 |
+| 9 | cast Divine Favor | 0.7 | 0.7 |
 
-Lines of the simulator's rotation these builds never cast: cast Seal of Righteousness, cast Exorcism (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: sequence 'move3': move to “Melee range” yd; wait until Judgement is in range; cast Judgement; wait until Holy Strike is in range (a switch this rotation keeps off); cast Seal of Righteousness, cast Exorcism (its condition never held in these fights).
 
 Damage by ability:
 
@@ -98,17 +96,16 @@ Before the pull: at -20s: groupReference; at -20s: move to “Pull range” yd; 
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) casts/min | [`prot-ret-ml-raid`](builds/prot-ret-ml-raid.md) casts/min | [`retribution-ml-raid`](builds/retribution-ml-raid.md) casts/min | [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) casts/min |
 |---|---|---|---|---|---|
-| 1 | if not spellInRange and “Has assigned judgement” and Seal of Command is taken and (“Use Seal of Command” or not “Use Seal of Righteousness” or Unsealed Wrath is taken) and not the sequence is complete: sequence 'move1': move to “Melee range” yd; wait until spellInRange; cast Judgement; wait inputDelay; cast Seal of Command; wait until spellInRange | 9.7 | 9.4 | 9.3 | 9.3 |
-| 2 | if not spellInRange and “Has assigned judgement” and (not Unsealed Wrath is taken or not Seal of Command is taken or not “Use Seal of Command”) and not the sequence is complete: sequence 'move2': move to “Melee range” yd; wait until spellInRange; cast Judgement; wait inputDelay; cast Seal of Righteousness; wait until spellInRange | 7.7 | 7.3 | 7.3 | 7.2 |
-| 3 | if not spellInRange and not “Has assigned judgement” and not the sequence is complete: sequence 'move3': move to “Melee range” yd; wait until spellInRange; cast Judgement; wait until spellInRange | 7.7 | 7.3 | 7.3 | 7.2 |
-| 4 | if “WF guard”: cast Judgement | 7.7 | 7.3 | 7.3 | 7.2 |
-| 5 | if time into the fight ≥ “Delay Major CDs”: use every other cooldown when ready | as ready | as ready | as ready | as ready |
-| 6 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 2.0 | 0.9 | 0.8 | 0.8 |
-| 7 | if “WF guard” and not Judgement is ready and “Judge realism protection”: cast Holy Strike | 6.0 | 5.8 | 5.9 | 5.8 |
-| 8 | if “Should refresh SoC”: cast Seal of Command | 2.0 | 2.1 | 2.0 | 2.1 |
-| 9 | if time to the next auto attack > 1.5s and mana % ≥ 10% and not Judgement is ready and not Holy Strike is ready: cast Consecration | 6.7 | 5.1 | 5.1 | 5.0 |
+| 1 | if not Holy Strike is in range and “Has assigned judgement” and Seal of Command is taken and (“Use Seal of Command” or not “Use Seal of Righteousness” or Unsealed Wrath is taken) and not the sequence is complete: sequence 'move1': move to “Melee range” yd; wait until Judgement is in range; cast Judgement; wait inputDelay; cast Seal of Command; wait until Holy Strike is in range | 9.7 | 9.4 | 9.3 | 9.3 |
+| 2 | if not Holy Strike is in range and “Has assigned judgement” and (not Unsealed Wrath is taken or not Seal of Command is taken or not “Use Seal of Command”) and not the sequence is complete: sequence 'move2': move to “Melee range” yd; wait until Judgement is in range; cast Judgement; wait inputDelay; cast Seal of Righteousness; wait until Holy Strike is in range | 7.7 | 7.3 | 7.3 | 7.2 |
+| 3 | if “WF guard”: cast Judgement | 7.7 | 7.3 | 7.3 | 7.2 |
+| 4 | if time into the fight ≥ “Delay Major CDs”: use every other cooldown when ready | as ready | as ready | as ready | as ready |
+| 5 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 2.0 | 0.9 | 0.8 | 0.8 |
+| 6 | if “WF guard” and not Judgement is ready and “Judge realism protection”: cast Holy Strike | 6.0 | 5.8 | 5.9 | 5.8 |
+| 7 | if “Should refresh SoC”: cast Seal of Command | 2.0 | 2.1 | 2.0 | 2.1 |
+| 8 | if time to the next auto attack > 1.5s and mana % ≥ 10% and not Judgement is ready and not Holy Strike is ready: cast Consecration | 6.7 | 5.1 | 5.1 | 5.0 |
 
-Lines of the simulator's rotation these builds never cast: cast Seal of Righteousness, cast Exorcism (its condition never held in these fights); cast Divine Favor (needs the Divine Favor talent).
+Lines of the simulator's rotation these builds never cast: sequence 'move3': move to “Melee range” yd; wait until Judgement is in range; cast Judgement; wait until Holy Strike is in range (a switch this rotation keeps off); cast Seal of Righteousness, cast Exorcism (its condition never held in these fights); cast Divine Favor (needs the Divine Favor talent).
 
 Damage by ability:
 
@@ -143,7 +140,7 @@ Before the pull: at -20s: cast Righteous Fury; at -18.5s: cast Retribution Aura;
 | 1 | if autoTimeSinceLast ≥ 0.1s and time to the next auto attack ≥ 0.1s and not Judgement is ready and time until Judgement is ready ≤ (spellFullCooldown − inputDelay): cast Holy Strike | 9.7 | 9.7 | 9.7 | 9.7 |
 | 2 | use every other cooldown when ready | as ready | as ready | as ready | as ready |
 | 3 | cast Judgement | 0.3 | 0.3 | 0.3 | 0.3 |
-| 4 | if time left on Seal of Fury < time to the next auto attack and auraIsInactive: cast Seal of Fury | 2.0 | 2.0 | 2.0 | 2.0 |
+| 4 | if time left on Seal of Fury < time to the next auto attack and not Seal of Fury is up: cast Seal of Fury | 2.0 | 2.0 | 2.0 | 2.0 |
 | 5 | cast Consecration | 5.8 | 5.2 | 6.2 | 4.9 |
 | 6 | cast Holy Shield | 5.1 | 4.9 | 4.8 | 4.7 |
 | 7 | cast Holy Shield (rank 3) | 0.4 | 0.6 | 0.5 | 0.7 |
@@ -214,7 +211,7 @@ Before the pull: at -20s: groupReference; at -30s: if Manual Crowd Pummeler is k
 | 9 | cast Holy Shock | 4.3 | 4.3 |
 | 10 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 0.8 | 0.8 |
 
-Lines of the simulator's rotation these builds never cast: cast Seal of Command, cast Exorcism (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Seal of Command (a switch this rotation keeps off); cast Exorcism (its condition never held in these fights).
 
 Damage by ability:
 

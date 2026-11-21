@@ -61,11 +61,8 @@ Allocation adopted on 2026-09-26 from `opt-balance-dps-raid-dps`, the best build
 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
-| 3 | Moonglow | any utility talent legal at that tier | Measures +0.8% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Moonkin Form | any utility talent legal at that tier | Measures +0.4% DPS in the community simulator (noise): these points are free to move. |
-| 2 | Heart of the Wild | any utility talent legal at that tier | Measures +0.2% DPS in the community simulator (noise): these points are free to move. |
 | 5 | Nature's Focus | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 2 | Heart of the Wild | Subtlety, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 
 ## Rank among our builds and the community simulator's
 
@@ -116,6 +113,7 @@ Damage by ability:
 
 ## Notes
 
+- 2026-11-21: flex entries removed for Moonglow (3), Heart of the Wild (2), Heart of the Wild (2): they said the points measured +0.0% and were free to move, but the raid play check of 2026-11-20 measures these talents as live (their removal changes the full-raid DPS); a point is free only when its removal leaves the DPS the same.
 - Adopted from the community simulator on 2026-09-26: opt-balance-dps-raid-dps beat the previous draft by +6.3% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Rotation hypothesis: Insect Swarm + Moonfire up, then Wrath -> Starfire x2 (Eclipse) alternating Nature/Arcane for Balance of Nature.
 - Beta client 1.60.1.69893 removed Balance of Nature (5 points): re-spent as Improved Entangling Roots 3 + Overgrowth 2 (control utility; the optimizer build says where the model would put them).

@@ -131,18 +131,17 @@ The Fury raid build the open talent search found on 2026-11-08: every legal 51-p
 | 4 | if time left in the fight ≤ 33.75s: cast Recklessness | 0.3 |
 | 5 | cast Goblin Sapper Charge | as ready |
 | 6 | cast Dense Dynamite | as ready |
-| 7 | if false: cast Recklessness | 0.3 |
-| 8 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
-| 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
+| 7 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
+| 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
+| 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 10 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
-| 11 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
-| 12 | if (time left in the fight ≤ 33.75s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
-| 13 | cast Whirlwind | 5.4 |
-| 14 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 5.4 |
-| 15 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 |
-| 16 | if stacks of Sunder Armor < 5: cast Sunder Armor | 6.5 |
+| 11 | if (time left in the fight ≤ 33.75s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
+| 12 | cast Whirlwind | 5.4 |
+| 13 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 5.4 |
+| 14 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 |
+| 15 | if stacks of Sunder Armor on the target < 5: cast Sunder Armor | 6.5 |
 
-Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Heroic Strike (rank 8), cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
+Lines of the simulator's rotation these builds never cast: cast Recklessness (a switch this rotation keeps off); cast Blood Fury, cast Heroic Strike (rank 8), cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
 Damage by ability:
 

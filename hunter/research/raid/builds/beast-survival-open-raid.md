@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Beast-Survival (a Beast Mastery/Survival hybrid) raid build: the best Summon Hawk + Expose Prey family of the melee-dps open search (raidsim/family_search.py: every pair of keystones of two trees polished by a short hill climb), raced again on 2026-11-18 in a full raid (every raid buff and debuff) on the current simulator by the hybrid check: 804.6 DPS, +8.9% against melee-survival-raid, the best of our builds in that rotation.
+The Beast-Survival (a Beast Mastery/Survival hybrid) raid build: the best Summon Hawk + Expose Prey family of the melee-dps open search (raidsim/family_search.py: every pair of keystones of two trees polished by a short hill climb), kept by the raid keep rule of 2026-11-19. Under the simulator's own melee rotation (since 2026-11-20) it does 863.6 DPS in a full raid, 3.3% above melee-survival-raid (835.9) in the same entry; the Survival page's pick, survival-raptor-raid with a Raptor out, does 914.9 in its own entry.
 
 ## Point allocation
 
@@ -86,12 +86,12 @@ Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Beast;
 |---|---|---|
 | 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready |
 | 2 | cast Raptor Strike | 3.0 |
-| 3 | if not Hunter's Mark is up: cast Hunter's Mark | 0.7 |
+| 3 | if not Hunter's Mark is on the target: cast Hunter's Mark | 0.7 |
 | 4 | if Strider Kick is up and not Serpent Sting is on the target and mana % > 30%: move to “Shoot spot” yd | as ready |
 | 5 | if unitDistance > “Melee range” and not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 1.3 |
 | 6 | if unitDistance > “Melee range”: cast Arcane Shot | 0.5 |
 | 7 | if unitDistance > “Melee range”: cast Multi-Shot | 0.4 |
-| 8 | if unitDistance > “Melee range” and not spellInRange and (“Windup close” or “Just shot”): move to “Melee range” yd | as ready |
+| 8 | if unitDistance > “Melee range” and not (Arcane Shot is in range and (“Windup close” or “Just shot”)): move to “Melee range” yd | as ready |
 | 9 | if unitDistance > “Melee range”: wait inputDelay | as ready |
 | 10 | cast Mongoose Bite | 4.7 |
 | 11 | cast Strider Kick | 2.5 |

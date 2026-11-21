@@ -92,7 +92,7 @@ Before the pull: at -1s: cast Battle Shout (rank 6).
 | 4 | cast Revenge (rank 5) | 10.8 |
 | 5 | if rage < 90: cast Bloodrage | 1.0 |
 | 6 | cast Shield Slam | 9.0 |
-| 7 | if stacks of Sunder Armor < 5: cast Sunder Armor | 14.8 |
+| 7 | if stacks of Sunder Armor on the target < 5: cast Sunder Armor | 14.8 |
 | 8 | if rage ≥ 33.75: cast Heroic Strike (rank 8) | 19.4 |
 | 9 | if not Rend is on the target: cast Rend | 3.3 |
 | 10 | cast Sunder Armor | 14.8 |

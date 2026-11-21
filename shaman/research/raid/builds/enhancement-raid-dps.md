@@ -58,12 +58,6 @@ Allocation adopted on 2026-09-27 from `opt-enhancement-dps-raid-dps`, the best b
 7. **Mental Dexterity** — New: attack power from Intellect (33%/rank read). Raid sim (2026-09-27): removing it costs +4% DPS.
 8. **Convection** — Raid sim (2026-09-27): removing it costs +3% DPS.
 
-## Flex points
-
-| Pts | Default | Alternatives | Why |
-|---|---|---|---|
-| 2 | Concussion | any utility talent legal at that tier | Measures +0.3% DPS in the community simulator (noise): these points are free to move. |
-
 ## Rank among our builds and the community simulator's
 
 **6 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
@@ -109,7 +103,7 @@ Before the pull: at -4.5s: cast Strength of Earth Totem (rank 4); at -3s: cast G
 | 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem (rank 2) | 0.3 |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | cast Stormstrike | 7.2 |
-| 5 | if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt | 4.4 |
+| 5 | if stacks of Maelstrom Weapon on you ≥ 3.75: cast Lightning Bolt | 4.4 |
 | 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.3 |
 | 7 | if not Flame Shock is on the target: cast Flame Shock (rank 5) | 4.1 |
 | 8 | cast Earth Shock | 4.3 |
@@ -129,6 +123,7 @@ Damage by ability:
 
 ## Notes
 
+- 2026-11-21: flex entries removed for Concussion (2): they said the points measured +0.0% and were free to move, but the raid play check of 2026-11-20 measures these talents as live (their removal changes the full-raid DPS); a point is free only when its removal leaves the DPS the same.
 - Adopted from the community simulator on 2026-09-27: `opt-enhancement-dps-raid-dps` beat the previous draft by +2.8% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Two-Handed Axes and Maces is no longer a talent — check whether shamans can still use two-handers baseline; this build assumes dual wield or a two-hander with Windfury either way.
 - Windfury Totem can no longer be improved — the melee-group support reason for bringing an Enhancement shaman is gone; the spec must stand on its own DPS.

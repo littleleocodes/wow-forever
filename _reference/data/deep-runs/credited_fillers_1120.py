@@ -74,9 +74,9 @@ def utility(cls, tank=False):
     for n in list(use):
         if n in CTX["banned"]:
             use[n] = FA.NONE
-        elif n in book:   # a talent that grants an ability: a destination only when the build casts it or it is defensive
-            txt = book[n][1]
-            if n not in CTX["used"] and (FA.TRIGGERED.search(txt) or not FA.DEFENSIVE.search(txt)):
+        elif n in book:   # a talent that grants an ability: a destination only when the build casts it or it is defensive (or, since
+            txt = book[n][1]   # 2026-11-21, control: a never-cast control ability keeps its place in the utility order)
+            if n not in CTX["used"] and (FA.TRIGGERED.search(txt) or not FA.DEFENSIVE.search(txt)) and use.get(n) != FA.CONTROL:
                 use[n] = FA.NONE
         elif n in CTX["tal"] and improves_only_unused(CTX["tal"][n], CTX["used"]):
             use[n] = FA.NONE
@@ -166,6 +166,8 @@ def main():
         verify(json.loads(OUT.read_text(encoding="utf-8")))
         return
     FA.ZERO, FA.GAIN, FA.LOSS = 0.5, 1e9, 0.0   # with exact_value: free = bit for bit; no gain moves; a move must be bit for bit
+    FA.UNPRESSED_FREE = True   # 2026-11-21 (the audit session): every never-cast talent ability is free (prerequisites and signature
+    # talents excepted: no legal move, protected), a defensive or control one moves only to a home at least as useful
     A.value = exact_value
     FA.utility = utility
     rec = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}

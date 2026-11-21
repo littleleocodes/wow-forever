@@ -131,11 +131,11 @@ Before the pull: at -2s: if Ice Barrier is known: cast Ice Barrier.
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 6.5 |
+| 1 | if (stacks of Fire Vulnerability on the target < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 6.5 |
 | 2 | if mana % ≤ 60% and mana % ≥ 25%: cast Mana Ruby | as ready |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 5 | if stacks of Heating Up = 3: cast Pyroblast | 5.1 |
+| 5 | if stacks of Heating Up on you = 3: cast Pyroblast | 5.1 |
 | 6 | cast Fire Blast | 6.0 |
 | 7 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 0.8 |
 | 8 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 5.8 |

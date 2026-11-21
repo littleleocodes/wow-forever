@@ -105,7 +105,7 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 2 | if “Drop Prowl for this opener”: cancel Prowl | as ready |
 | 3 | if Faerie Fire is known and Faerie Fire should be refreshed: cast Faerie Fire | 1.9 |
 | 4 | if unitDistance > 5: move to 5 yd | as ready |
-| 5 | if unitDistance > 5: wait until not unitDistance > 5 | as ready |
+| 5 | if unitDistance > 5: wait until not (unitDistance > 5) | as ready |
 | 6 | if “Ready to activate MCP”: cast Manual Crowd Pummeler | as ready |
 | 7 | if not Cat Form is up: cast Cat Form | 0.3 |
 | 8 | if “Final-global Bite”: cast Ferocious Bite (rank 5) | 0.6 |

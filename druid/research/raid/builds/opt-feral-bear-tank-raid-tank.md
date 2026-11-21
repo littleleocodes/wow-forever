@@ -88,7 +88,7 @@ Before the pull: at -10s: if Furor is taken and rage < 10: cast Dire Bear Form; 
 | # | Priority (the first line whose condition holds is cast) | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) casts/min |
 |---|---|---|
 | 1 | if unitDistance > 5: move to 5 yd | as ready |
-| 2 | if unitDistance > 5: wait until not unitDistance > 5 | as ready |
+| 2 | if unitDistance > 5: wait until not (unitDistance > 5) | as ready |
 | 3 | if unitDistance ≤ 5: cast Manual Crowd Pummeler | as ready |
 | 4 | if health % ≤ “Barkskin health threshold”: cast Barkskin | 1.0 |
 | 5 | if Goblin Sapper Charge is known: cast Goblin Sapper Charge | as ready |
@@ -99,7 +99,7 @@ Before the pull: at -10s: if Furor is taken and rage < 10: cast Dire Bear Form; 
 | 10 | if “Ready to return to the main weapon”: swap to the Main item set | as ready |
 | 11 | if number of targets = 2 and “Enough rage to queue Maul in cleave”: cast Maul | 191.1 |
 | 12 | if number of targets = 3 and “Enough rage to queue Maul for three-target Swipe”: cast Maul | 191.1 |
-| 13 | if not number of targets = 3 and not number of targets = 2 and “Enough rage to queue Maul”: cast Maul | 191.1 |
+| 13 | if not (number of targets = 3) and not (number of targets = 2) and “Enough rage to queue Maul”: cast Maul | 191.1 |
 
 Lines of the simulator's rotation these builds never cast: cast Feral Charge (Bear), cast Elune's Light, cast Frenzied Regeneration, cast Faerie Fire, cast Demoralizing Roar, cast Swipe, cast Primal Bite (rank 3) (its condition never held in these fights); cast Lacerate on currenttarget, cast Lacerate (needs the Lacerate talent).
 

@@ -61,7 +61,6 @@ Allocation adopted on 2026-09-28 from `opt-fire-destro-raid-raid-dps`, the best 
 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
-| 1 | Shadowburn | any utility talent legal at that tier | Measures +0.9% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Amplify Curse | any utility talent legal at that tier | Measures +0.7% DPS in the community simulator (noise): these points are free to move. |
 | 2 | Demonic Embrace | Improved Health Funnel, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 3 | Demonic Embrace | Improved Imp, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
@@ -126,7 +125,7 @@ Before the pull: at -1.5s: cast Life Tap.
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.3 |
 | 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony and time left in the fight ≥ 10s: cast Bane of Agony | 2.6 |
 | 7 | if mana % < 10%: cast Life Tap | 6.7 |
-| 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
+| 8 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 |
 | 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate (rank 7) | 3.5 |
 | 10 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
 | 11 | cast Shadow Bolt | 14.5 |
@@ -147,6 +146,7 @@ Damage by ability:
 
 ## Notes
 
+- 2026-11-21: flex entries removed for Shadowburn (1): they said the points measured +0.0% and were free to move, but the raid play check of 2026-11-20 measures these talents as live (their removal changes the full-raid DPS); a point is free only when its removal leaves the DPS the same.
 - Adopted from the community simulator on 2026-09-28: `opt-fire-destro-raid-raid-dps` beat the previous draft by +2.1% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Adopted from the community simulator on 2026-09-27: opt-fire-destro-raid-raid-dps beat the previous draft by +2.1% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Adopted from the community simulator on 2026-09-26: opt-fire-destro-raid-raid-dps beat the previous draft by +11.5% DPS; the rationale below predates the adoption where it names talents no longer taken.

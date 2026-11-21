@@ -10,7 +10,7 @@
 
 ## How to play
 
-**Before the pull:** **Searing Totem**.
+**Before the pull:** **Strength of Earth Totem**, **Grace of Air Totem**, **Searing Totem**.
 
 **Keep up all fight:** **Strength of Earth Totem**, **Grace of Air Totem**, **Magma Totem**, **Searing Totem**.
 
@@ -18,7 +18,7 @@
 
 1. **Flame Shock**: keep it on the target, until the last 10 seconds of the fight
 2. **Stormstrike**
-3. **Lightning Bolt** when Maelstrom Weapon has 5 or more stacks
+3. **Lightning Bolt** when you have 5 or more stacks of Maelstrom Weapon
 4. **Earth Shock**
 5. **Fire Nova** when you have at least 10% mana
 

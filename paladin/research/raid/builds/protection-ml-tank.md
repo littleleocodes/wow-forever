@@ -75,7 +75,7 @@ Before the pull: at -20s: cast Righteous Fury; at -18.5s: cast Retribution Aura;
 | 1 | if autoTimeSinceLast ≥ 0.1s and time to the next auto attack ≥ 0.1s and not Judgement is ready and time until Judgement is ready ≤ (spellFullCooldown − inputDelay): cast Holy Strike | 9.7 |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | cast Judgement | 0.3 |
-| 4 | if time left on Seal of Fury < time to the next auto attack and auraIsInactive: cast Seal of Fury | 2.0 |
+| 4 | if time left on Seal of Fury < time to the next auto attack and not Seal of Fury is up: cast Seal of Fury | 2.0 |
 | 5 | cast Consecration | 5.8 |
 | 6 | cast Holy Shield | 5.1 |
 | 7 | cast Holy Shield (rank 3) | 0.4 |

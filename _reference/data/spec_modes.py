@@ -64,7 +64,7 @@ HYBRID_NAMES = {
         "leveling": "A Lightning Bolt caster (Lightning Overload) that dips Enhancement for its passive bonuses.",
         "raid": "A melee shaman: Enhancement's Stormstrike and Flurry with Elemental's shock and Fire Nova talents."}),
     ("warlock", "Hybrid Affliction/Destruction"): ("Shadow Bolt hybrid", "shadow-bolt-hybrid", {
-        "raid": "Shadow Bolt with Affliction's Malevolence and Destruction's Agonizing Flames, points in all three trees.",
+        "raid": "Shadow Bolt with Affliction's Malevolence and Destruction's Agonizing Flames.",   # (2026-11-21, B12: the pick is 30/0/21)
         "leveling": "Shadow Bolt and dots with Affliction's Malevolence, Siphon Life and Shadow Mastery, a few Demonology and Destruction points."}),
     ("warlock", "Hybrid Affliction/Demonology"): ("Affliction-Demonology", "affliction-demonology", "Dots and Siphon Life with a demon tanking (Soul Link, Demonic Knowledge): the classic warlock leveling split."),
 }

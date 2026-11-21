@@ -55,14 +55,6 @@ Allocation adopted on 2026-09-27 from `opt-affliction-raid-raid-dps`, the best b
 7. **Shadow Mastery** — Raid sim (2026-09-27): removing it costs +4% DPS.
 8. **Improved Corruption** — Raid sim (2026-09-26): removing it costs +4% DPS. Raid sim (2026-09-27): removing it costs +4% DPS.
 
-## Flex points
-
-| Pts | Default | Alternatives | Why |
-|---|---|---|---|
-| 3 | Aftermath | any utility talent legal at that tier | Measures +0.9% DPS in the community simulator (noise): these points are free to move. |
-| 1 | Amplify Curse | any utility talent legal at that tier | Measures +0.5% DPS in the community simulator (noise): these points are free to move. |
-| 2 | Nightfall | any utility talent legal at that tier | Measures +0.3% DPS in the community simulator (noise): these points are free to move. |
-
 ## Rank among our builds and the community simulator's
 
 **2 of 7** for `affliction-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
@@ -100,7 +92,7 @@ Before the pull: at -5s: cast Amplify Curse.
 
 | # | Priority (the first line whose condition holds is cast) | [`affliction-dot-raid`](affliction-dot-raid.md) casts/min |
 |---|---|---|
-| 1 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
+| 1 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 55%: cast Potion | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
@@ -129,6 +121,7 @@ Damage by ability:
 
 ## Notes
 
+- 2026-11-21: flex entries removed for Aftermath (3), Amplify Curse (1), Nightfall (2): they said the points measured +0.0% and were free to move, but the raid play check of 2026-11-20 measures these talents as live (their removal changes the full-raid DPS); a point is free only when its removal leaves the DPS the same.
 - 2026-11-20: plays as the Shadow Bolt hybrid (`spec`). The affliction-raid entry runs upstream's SM/Ruin rotation (apls/warlock/upstream/sm_ruin.apl.json, tuned): in a full raid Shadow Bolt is 51-52% of this build's damage and Affliction's core (Corruption, Bane of Agony, Siphon Life, Drain Life, Wrack, Drain Soul) 21.6-21.7% of its own damage, against Affliction's 30% floor (raid_signature.measure, 6,000 fights, seeds 1 and 2, the lane and the audit session alike). By the standing rule a build played around another tree's spells is a hybrid although one tree has 30 points; it passes the hybrid's rule (Shadow Bolt 54.6-56.0% of its own damage against 35%). The audit session's recommendation; Affliction's page lists it as a pointer.
 - Adopted from the community simulator on 2026-09-27: opt-affliction-raid-raid-dps beat the previous draft by +4.7% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Adopted from the community simulator on 2026-09-26: opt-affliction-raid-raid-dps beat the previous draft by +3.2% DPS; the rationale below predates the adoption where it names talents no longer taken.

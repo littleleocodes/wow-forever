@@ -61,7 +61,6 @@ Allocation adopted on 2026-09-26 from `opt-sb-raid-raid-dps`, the best build in 
 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
-| 1 | Amplify Curse | any utility talent legal at that tier | Measures +0.7% DPS in the community simulator (noise): these points are free to move. |
 | 5 | Demonic Embrace | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 2 | Demonic Aegis | Improved Health Funnel, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 
@@ -105,7 +104,7 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 
 | # | Priority (the first line whose condition holds is cast) | [`ds-ruin-raid`](ds-ruin-raid.md) casts/min |
 |---|---|---|
-| 1 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
+| 1 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
@@ -133,6 +132,7 @@ Damage by ability:
 
 ## Notes
 
+- 2026-11-21: flex entries removed for Amplify Curse (1): they said the points measured +0.0% and were free to move, but the raid play check of 2026-11-20 measures these talents as live (their removal changes the full-raid DPS); a point is free only when its removal leaves the DPS the same.
 - Adopted from the community simulator on 2026-09-26: opt-sb-raid-raid-dps beat the previous draft by +10.6% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Rotation hypothesis: Immolate -> Conflagrate (Shadow and Flame buff) -> Shadow Bolt spam; refresh Immolate/Conflagrate every 20s; Curse per raid assignment.
 - Malevolence (+5% Shadow crit, Affliction tier 4) would need 15 Affliction points — see the Affliction build.

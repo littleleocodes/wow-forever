@@ -61,7 +61,6 @@ Allocation adopted on 2026-10-02 from `opt-mm-raid-raid-dps`, the best build in 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
 | 3 | Endurance Training | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 1 | Improved Arcane Shot | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 
 ## Rank among our builds and the community simulator's
 
@@ -123,16 +122,14 @@ Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Hawk (
 | # | Priority (the first line whose condition holds is cast) | [`bm-mm-raid`](bm-mm-raid.md) casts/min |
 |---|---|---|
 | 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready |
-| 2 | if not Hunter's Mark is up: cast Hunter's Mark | 0.7 |
+| 2 | if not Hunter's Mark is on the target: cast Hunter's Mark | 0.7 |
 | 3 | if not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 2.9 |
-| 4 | if “Use Summon Hawk” and “Use Arcane Shot” and the sequence is complete: reset sequence 'HHA' | as ready |
-| 5 | if “Use Summon Hawk” and “Use Arcane Shot”: sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot | 8.8 |
-| 6 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 8.8 |
-| 7 | if “Use Aimed Shot”: cast Aimed Shot | 5.0 |
-| 8 | if unitDistance ≠ “Shoot spot” and not spellInRange and (“Windup close” or “Just shot”): move to “Shoot spot” yd | as ready |
-| 9 | if unitDistance ≠ “Shoot spot”: wait inputDelay | as ready |
+| 4 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 8.8 |
+| 5 | if “Use Aimed Shot”: cast Aimed Shot | 5.0 |
+| 6 | if unitDistance ≠ “Shoot spot” and not (Arcane Shot is in range and (“Windup close” or “Just shot”)): move to “Shoot spot” yd | as ready |
+| 7 | if unitDistance ≠ “Shoot spot”: wait inputDelay | as ready |
 
-Lines of the simulator's rotation these builds never cast: cast Summon Hawk, cast Multi-Shot (its condition never held in these fights); cast Sniper Shot (needs the Sniper Shot talent).
+Lines of the simulator's rotation these builds never cast: reset sequence 'HHA', sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot, cast Summon Hawk, cast Multi-Shot (a switch this rotation keeps off); cast Sniper Shot (needs the Sniper Shot talent).
 
 Damage by ability:
 
@@ -148,6 +145,7 @@ Damage by ability:
 
 ## Notes
 
+- 2026-11-21: flex entries removed for Improved Arcane Shot (1): they said the points measured +0.0% and were free to move, but the raid play check of 2026-11-20 measures these talents as live (their removal changes the full-raid DPS); a point is free only when its removal leaves the DPS the same.
 - Adopted from the community simulator on 2026-10-02: `opt-mm-raid-raid-dps` beat the previous draft by +5.1% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Adopted from the community simulator on 2026-09-27: opt-mm-raid-raid-dps beat the previous draft by +7.6% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Aimed Shot is no longer a talent — either baseline or gone; Barrage's tooltip still names it, which suggests baseline.

@@ -86,7 +86,7 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 
 | # | Priority (the first line whose condition holds is cast) | [`destruction-ml-raid`](destruction-ml-raid.md) casts/min |
 |---|---|---|
-| 1 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
+| 1 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |

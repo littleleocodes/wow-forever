@@ -118,7 +118,7 @@ Before the pull: at -1.5s: cast Life Tap.
 | 6 | if time left in the fight ≤ 3.938: cast Searing Pain | 0.5 |
 | 7 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 |
 | 8 | if mana % < 10%: cast Life Tap | 6.9 |
-| 9 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
+| 9 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 |
 | 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate (rank 7) | 3.5 |
 | 11 | if Immolate is on the target: cast Conflagrate | 4.0 |
 | 12 | cast Shadow Bolt | 11.9 |

@@ -124,7 +124,7 @@ The Fury raid build the open talent search found on 2026-11-08: every legal 51-p
 | 7 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
 | 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
 | 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
-| 10 | if stacks of Sunder Armor < 4 and not Expose Armor is up: cast Sunder Armor | 7.2 |
+| 10 | if stacks of Sunder Armor on the target < 4 and not Expose Armor is on the target: cast Sunder Armor | 7.2 |
 | 11 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 12 | if (time left in the fight ≤ 25.5s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
 | 13 | cast Whirlwind | 4.8 |
@@ -132,7 +132,7 @@ The Fury raid build the open talent search found on 2026-11-08: every legal 51-p
 | 15 | cast Death Wish | 0.3 |
 | 16 | cast Whirlwind | 4.8 |
 | 17 | if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring | 1.1 |
-| 18 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.2 |
+| 18 | if stacks of Sunder Armor on the target < 5: cast Sunder Armor | 7.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 

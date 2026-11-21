@@ -2,7 +2,7 @@
 
 [Warlock](../README.md) > [Raid (group)](README.md) > Shadow Bolt hybrid
 
-*Shadow Bolt with Affliction's Malevolence and Destruction's Agonizing Flames, points in all three trees.* (a hybrid: Affliction/Destruction).
+*Shadow Bolt with Affliction's Malevolence and Destruction's Agonizing Flames.* (a hybrid: Affliction/Destruction).
 
 **[Shadow Bolt hybrid (optimized)](../research/raid/builds/opt-affliction-raid-raid-dps.md)** (30/0/21) — [open the talent tree](https://talentsforever.com/warlock/60/2550002013520005--0550305003-12)
 
@@ -19,7 +19,7 @@
 
 1. **Bane of Doom** (timing: see below)
 2. **Shadow Bolt** when Shadow Trance is active
-3. **Amplify Curse**: keep it on the target (timing: see below); no global cooldown, so press it alongside the others
+3. **Amplify Curse**: keep it up (timing: see below); no global cooldown, so press it alongside the others
 4. **Bane of Agony**, **Corruption** and **Immolate**: keep them on the target
 5. **Life Tap** when your mana is below 30%, until the last 60 seconds of the fight
 6. **Shadow Bolt**
@@ -32,14 +32,34 @@
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
-
-**The timing** (the simulator's own named conditions, in its words, until this page's guide is rewritten):
-
-- “Agony time”: not Bane of Doom is on the target and not Bane of Agony is on the target and (time left in the fight < 60s or not Bane of Doom is ready) and spellExpectedDpet > “DPET Non DoT”
-
 ## Why this rotation
 
-*Guide being rewritten for the new rotation (2026-11-20).*
+The Shadow Bolt hybrid takes Affliction's Shadow talents (30 points) and Destruction's **Shadow Bolt** talents (21), with no Demonology: no sacrifice, and the Succubus out all fight as a plain demon. In the fight you keep **Curse of the Elements** on the boss, cast **Bane of Doom** every minute while at least a minute is left and **Bane of Agony** after it, keep **Corruption** and **Immolate** up, spend each Shadow Trance on an instant **Shadow Bolt** before any dot, and cast **Shadow Bolt** the rest of the time. This is the official simulator's own SM/Ruin rotation, unchanged: adopted on 2026-11-19 (+1.4% / +1.6% over the rotation it replaced on this build in a full raid, seeds 1 / 2), and a rotation search from it the same day found nothing to change. In a 3-minute raid fight: **Shadow Bolt** 52 casts, **Immolate** 11, **Corruption** 10, **Life Tap** 10, **Bane of Agony** 3, **Bane of Doom** 2, **Curse of the Elements** and **Amplify Curse** once each, and the Succubus' Lash of Pain 15; **Shadow Bolt** 52% of the damage, **Corruption** 14%, **Bane of Doom** 10%, **Immolate** 10%, **Bane of Agony** 6%, the Succubus 7%.
+
+**Why it works**
+
+- Before the pull: **Summon Succubus** and put on **Demon Armor**. With no Demonology points she is a plain demon: 7% of your damage (her melee 6%, Lash of Pain 1%).
+- **Curse of the Elements** goes up first, about once a fight: 5 minutes of 10% more magic damage taken. The simulator turns the raid's own copy off and leaves it to you. As a Curse it sits beside your Bane.
+- **Bane of Doom** whenever it is ready and at least a minute of the fight is left: it deals its damage after exactly one minute, 10% of yours from two casts.
+- A Shadow Trance comes next: **Nightfall** (2 points) gives each **Corruption** tick a 4% chance to make your next **Shadow Bolt** instant, and the list spends it before any dot.
+- "Agony time": **Bane of Agony** takes the Bane slot only when neither Bane is on the boss and **Bane of Doom** cannot go up (on cooldown, or less than a minute left), and only while it beats "DPET Non DoT" (next line). In a 3-minute fight that is after the second Doom lands, about two minutes in. **Amplify Curse** (off the global cooldown, once a fight) goes just before it and makes it 50% stronger; **Bane of Agony** builds up over its 24 seconds, so it is recast only once it has run out.
+- "DPET Non DoT" is the damage per second of casting of your best direct spell (**Shadow Bolt**, **Searing Pain** or **Death Coil**). **Corruption** (instant with 5 points in **Improved Corruption**) and **Immolate** go on only while one cast of them, counting only the ticks that land before the boss dies, beats it: near the end of the fight they stop and you cast **Shadow Bolt**. **Corruption** is recast once it has run out, **Immolate** when less than its 1.5-second cast is left on it.
+- **Shadow Bolt** is the filler: **Bane** cuts its cast to 2.5 seconds, **Shadow Mastery** adds 10% to your Shadow damage and **Agonizing Flames** 10% to your Destruction spells, **Shadow Bolt** and **Immolate** among them; **Malevolence** adds 5% to your Shadow crit chance, **Ruin** makes its crits deal double damage, and each crit puts **Improved Shadow Bolt**'s 20% more Shadow damage from you on the boss for 12 seconds, your dots included. **Cataclysm** takes 10% off its mana cost.
+- **Life Tap** below 30% mana while more than a minute is left, and when nothing else can be cast: about 10 taps a fight, each 20% bigger with **Improved Life Tap**. **Pandemic** doubles the crit bonus of **Corruption** and both Banes.
+
+**Caveats**
+
+- The Succubus is a plain demon here. If she dies with little of the fight left, finish without her: **Summon Succubus** is a 10-second cast (this build has no **Master Summoner**) and costs a Soul Shard.
+- Moving: **Bane of Doom**, **Bane of Agony**, **Corruption**, **Curse of the Elements**, **Amplify Curse**, **Life Tap** and a Shadow Trance **Shadow Bolt** are instant.
+- Several targets: the list keeps **Bane of Agony**, **Corruption** and **Immolate** on up to 10 targets, by the same test as on one; the simulated fights are one boss.
+- Ranks: the list casts **Corruption** at rank 6, **Immolate** at rank 7 and **Shadow Bolt** at rank 9, the trainer's top ranks: the class books' ranks above them are not in Forever on the evidence there is (2026-11-20; checked again when the raids open on 2026-12-09).
+- The other setups at the top of the page (the 9/11/31 Fire build and the 22/11/18 Shadow Bolt build) play their own entries' lists, shown on the research rotation page.
+
+**When to change it**
+
+- In the last minute start no **Bane of Doom**: it would not land before the boss dies.
+- A boss needs only one **Curse of the Elements** (in Classic two never stacked): if another warlock keeps it up, take the curse your raid gives you, such as **Curse of Recklessness** for the physical fighters.
+- When healing is tight, each **Life Tap** costs health someone must heal: use your mana potion and Demonic Rune before you tap.
 
 ## Talents
 

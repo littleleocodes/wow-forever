@@ -4,35 +4,35 @@
  "guides": {
   "Affliction": {
    "raid": {
-    "plan": "Before the pull, with your buffs, wizard oil and Spellstone on, summon the Succubus, put on **Demon Armor** and cast **Amplify Curse**. In the fight keep **Curse of the Elements** and three damage-over-time spells on the boss and fill every gap with **Shadow Bolt**. Apart from **Amplify Curse**, your Affliction talents add no buttons: they make your dots and Shadow spells hit harder.",
+    "plan": "You fight without a demon: before the pull you sacrifice the Imp with **Demonic Sacrifice**. In the fight you keep **Curse of the Elements**, **Bane of Agony**, **Corruption** and **Siphon Life** on the boss and channel **Wrack** whenever none of them needs putting back: while you channel it, your three damage-over-time spells tick twice as fast. This is the official simulator's own Aff (Wrack) rotation, played with its own build and options since 2026-11-19, with two changes from our rotation search of 2026-11-20: the curse and the dots come before the trinkets and potions, and Weakness Analyzer is used whenever it is ready (together +0.6% for this build in a full raid on a third seed). In a 3-minute raid fight: **Wrack** 28 channels, **Corruption** 10 casts, **Shadow Bolt** 8, **Bane of Agony** 8, **Siphon Life** 5, and **Curse of the Elements**, **Amplify Curse** and **Death Coil** about once each; **Wrack** 37% of the damage, **Bane of Agony** 26%, **Corruption** 23%, **Siphon Life** 7%, **Shadow Bolt** 6%.",
     "why": [
-     "Before the pull: **Create Spellstone** and put it on your weapon on top of the wizard oil (Forever lets them stack), then **Summon Succubus**: in this project's model a demon copies its share of your spell damage when it is summoned, so buffs and oil come first. This build has no Demonology points, so she adds only her own hits and **Lash of Pain**. It does not sacrifice a demon (**Demonic Sacrifice** is a Demonology talent).",
-     "**Curse of the Elements** goes up first: one cast lasts 5 minutes and makes the boss take 10% more damage from every magic school, Shadow and Fire alike (Curse of Shadow is gone in Forever). It is a Curse and **Bane of Agony** is a Bane, so both stay on the boss together; the simulator measured the curse better at the top of the list.",
-     "**Life Tap** waits until you are below 10% mana: every tap is a global cooldown with no damage, so the later you tap, the less mana you leave unspent when the boss dies. It stops 6 seconds before the end, and a mana potion below 65% mana or a Demonic Rune below 60% comes first (neither in the last 15 seconds).",
-     "**Amplify Curse** goes before the pull and again whenever it comes back (3-minute cooldown): it makes your next **Bane of Agony** 50% stronger. Its 30 seconds outlast the 24-second Bane, so pressing it early never wastes it.",
-     "**Bane of Agony** starts weak and grows over its 24 seconds, so recast it only once it has run out: refreshing it early throws away its strongest ticks. **Corruption** is instant with 5 points in **Improved Corruption**, so it goes back up the moment it drops; it and **Immolate** are not started in the last 10 seconds.",
-     "Start a new **Immolate** when less time is left on the old one than its cast (1.5 seconds with the **Bane** talent), so the new one lands about as the old one ends.",
-     "**Shadow Bolt** is the filler. Its critical strikes trigger **Improved Shadow Bolt** (20% more Shadow damage from you for 12 seconds, your dots included), **Malevolence** and **Ruin** make those crits more frequent and bigger, **Shadow Mastery** adds 10% to your Shadow damage and **Pandemic** doubles the crit bonus of your dots. **Nightfall** (4% at 2 ranks, from **Corruption** ticks) makes your next **Shadow Bolt** instant: the list needs no change, and both Affliction builds on this page take it."
+     "Before the pull: **Summon Imp**, then **Demonic Sacrifice**: +15% Shadow damage for 2 hours (Forever swapped Classic's aspects, so the Imp is the Shadow sacrifice). Summoning any demon ends it, so you play the fight without one. The 11 Demonology points are there for the sacrifice: of the points on the way only **Fel Vitality** (15% more mana) adds anything, and the simulator finds no change without **Demonic Embrace** or **Demonic Aegis**. Then start a **Shadow Bolt** so it lands as the fight begins.",
+     "**Curse of the Elements** comes first, about once a fight: 5 minutes of 10% more magic damage taken, Shadow included (Curse of Shadow is gone in Forever). The simulator turns the raid's own copy of the curse off and leaves it to you. It is a Curse and **Bane of Agony** is a Bane, so both stay on the boss together.",
+     "Then the dots, each only once it is off the boss: **Amplify Curse** and **Bane of Agony** while more than 12 seconds of the fight are left, **Corruption** while more than 9 are left, **Siphon Life** while more than its own 30 seconds are left. **Bane of Agony** starts weak and builds up over its 24 seconds, so it is never refreshed early; **Amplify Curse** (off the global cooldown, a 3-minute cooldown, so once a fight) makes it 50% stronger and **Improved Bane of Agony** adds 10%. **Corruption** is instant with 5 points in **Improved Corruption**.",
+     "**Siphon Life** waits for the channel: the list never breaks a **Wrack** for it, and it holds it while Shadow Vulnerability, your **Improved Shadow Bolt** debuff, is on the boss.",
+     "**Wrack** is the filler. While you channel it, your **Corruption**, **Bane of Agony** and **Siphon Life** on the boss deal their periodic damage 100% faster (in the simulator every extra tick is a full one and each dot still ends when it would have), and **Soul Siphon** (3 points) adds 12% to **Wrack** for each of those three dots on the boss, up to 36%. So the dots go up first and you channel the rest of the time: **Wrack**'s own hits are 37% of your damage, and the three dots, which tick twice as fast under it, another 55%. A channel costs 200 mana for 6 seconds.",
+     "A channel ends early, after at least 2 ticks, when **Corruption** has fallen off the boss, or **Bane of Agony** has (with no **Bane of Doom** up): you put the dot back and channel again.",
+     "In the fight, **Shadow Bolt** only with a Shadow Trance: **Nightfall** (2 points) gives each **Corruption** and **Wrack** tick a 4% chance to make your next **Shadow Bolt** instant, and the list casts it before the next channel. Its crits put **Improved Shadow Bolt**'s 20% more Shadow damage from you on the boss for 12 seconds, **Wrack** and the dots included; **Malevolence** adds 5% to your Shadow crit chance, **Shadow Mastery** 10% to your Shadow damage, and **Pandemic** doubles the crit bonus of **Wrack** and your dots.",
+     "**Life Tap** only below 1,800 mana or 30% with more than a minute left, or when you cannot pay for anything else: 0.06 taps a fight in a full raid, so **Improved Life Tap**'s 2 points change nothing there. **Death Coil** (instant) goes in at the end, when a **Shadow Bolt** started then would land too late.",
+     "The simulated gear holds two on-use trinkets: Talisman of Ephemeral Power goes with the other cooldowns (twice a fight) and Weakness Analyzer whenever it is ready (once)."
     ],
     "caveats": [
-     "**Searing Pain** has no cooldown: the rotation casts it only in the last 3.5 seconds, where its 1.5-second cast lands before the boss dies and a **Shadow Bolt** might not. Never use it as a filler: it does less damage per second of casting than **Shadow Bolt** and causes a high amount of threat.",
-     "Without Demonology talents the Succubus is a plain demon. If she dies with little of the fight left, finish without her: her 10-second **Summon Succubus** (this build has no **Master Summoner**) costs about as much damage as she would add.",
-     "Moving costs you **Shadow Bolt** casts, so move with your instants: **Corruption**, **Bane of Agony**, **Curse of the Elements**, **Amplify Curse** and **Life Tap**.",
-     "The simulator measured only one boss. On a second target that lives a while, an instant **Corruption** and **Bane of Agony** add damage for one global cooldown each; **Bane of Doom** takes the same Bane slot and deals its damage only after a full minute, and the simulated rotations keep **Bane of Agony**."
+     "No demon: summoning any demon ends **Demonic Sacrifice**'s 15%. If you die, summon the Imp and sacrifice it again before the next pull.",
+     "Moving: **Wrack** is a channel and moving ends it. Your dots, **Curse of the Elements**, **Amplify Curse**, **Death Coil**, **Life Tap** and a Shadow Trance **Shadow Bolt** are instant: use them on the move, and channel again as soon as you stand still, since the dots tick faster only while you channel.",
+     "The simulator's authors measured in game how the faster ticks start when you begin a **Wrack** (their evidence note EV-0085); what happens at the instant a channel ends is their assumption, not yet measured.",
+     "Several targets (the simulated fights are one boss): with two or more the list puts **Bane of Doom** on your target while more than a minute is left, spreads **Bane of Agony** (on up to four targets, the first with **Amplify Curse**) and **Corruption** over the others, changing target to place them, and casts no **Siphon Life**.",
+     "Ranks: the list casts **Corruption** at rank 6 and **Shadow Bolt** at rank 9, the trainer's top ranks: the books for **Corruption** rank 7 and **Shadow Bolt** rank 10 are not in Forever on the evidence there is (2026-11-20; checked again when the raids open on 2026-12-09).",
+     "The official list also times Frozen Heart of the Mountain, a Major Spellblasting Potion and the racials Eureka! and Blood Fury to your dots (its **Siphon Life** line also waits while Blood Fury, the orc racial, is up). The simulated setup has none of them (a gnome with racials off, Major Mana Potions), so the list above leaves those conditions out.",
+     "The 30/0/21 builds under \"Builds that play as a hybrid\" play another list, SM/Ruin, which leads with **Bane of Doom** and fills with **Shadow Bolt**: see the Shadow Bolt hybrid page."
     ],
     "diverge": [
-     "Near the end of a fight, start no dot the boss will not outlive: the list starts no **Corruption** or **Immolate** in the last 10 seconds. Cast **Shadow Bolt** then, and **Searing Pain** in the last 3.5 seconds.",
-     "A boss needs only one **Curse of the Elements** (in Classic two never stacked): if another warlock keeps it up, take the curse your raid gives you, such as **Curse of Recklessness** for the physical fighters or **Curse of Tongues** on a caster boss.",
-     "When healing is tight, each **Life Tap** costs health someone must heal: use your mana potion and Demonic Rune before you tap."
+     "Near the end: the list starts no **Bane of Agony** in the last 12 seconds, no **Corruption** in the last 9 and no **Siphon Life** in the last 30. Keep channelling **Wrack**, and use **Death Coil** when a **Shadow Bolt** would no longer land.",
+     "A boss needs only one **Curse of the Elements** (in Classic two never stacked): if another warlock keeps it up, take the curse your raid gives you, such as **Curse of Recklessness** for the physical fighters or **Curse of Tongues** on a caster boss."
     ],
     "rotations": {
-     "affliction-raid": "8cea9e03d6ea"
+     "affliction-wrack-raid": "ffd6a8ff3d29"
     },
-    "written": "2026-11-08",
-    "rewrite": {
-     "affliction-raid": "2026-11-20",
-     "affliction-wrack-raid": "2026-11-20"
-    }
+    "written": "2026-11-21"
    },
    "leveling": {
     "plan": "Affliction levels on its damage-over-time spells and the wand while the Voidwalker holds the mob: **Corruption**, **Bane of Agony** and **Immolate** on a healthy mob (**Siphon Life** from level 34), the wand while they finish it, **Drain Life** when you are hurt, and from level 40 **Wrack**, channelled while you have the mana. No **Shadow Bolt** and no **Fear**.",
@@ -67,32 +67,36 @@
   },
   "Demonology": {
    "raid": {
-    "plan": "Before the pull: summon the Imp, use **Demonic Sacrifice** (+15% Shadow damage for 2 hours, worth about 10% of your damage in the simulator), then summon the Succubus and turn on **Soul Link**. **Demonic Pact** keeps the sacrifice while she fights. In the fight keep **Curse of the Elements** and your dots up and cast **Shadow Bolt**.",
+    "plan": "Before the pull you sacrifice the Imp with **Demonic Sacrifice**, then fight with the Succubus out and **Soul Link** on; **Demonic Pact** keeps the sacrifice while she is out. In the fight you keep **Curse of the Elements** on the boss, cast **Bane of Doom** every minute while more than a minute is left, keep **Corruption** and **Immolate** up and **Demonic Brand** up with **Searing Pain**, and cast **Shadow Bolt** the rest of the time. This is the official simulator's own Demo (Shadow Brand) rotation, played since 2026-11-19 (+8.1% over the rotation it replaced on this build in a full raid), with two changes from our rotation search of 2026-11-20: **Death Coil** at the top of the list and **Life Tap** below 50% mana instead of 30% (+0.2% for this build on a third seed). In a 3-minute raid fight: **Shadow Bolt** 40 casts, **Searing Pain** 20, **Life Tap** 11, **Immolate** 10, **Corruption** 9, **Bane of Agony** 3, **Bane of Doom** 2, and the Succubus' Lash of Pain 15; **Shadow Bolt** 41% of the damage, **Corruption** 11%, **Bane of Doom** 10%, **Demonic Brand**'s hits 8%, **Immolate** 8%, **Searing Pain** 8%, the Succubus' melee 6%, **Bane of Agony** 5%.",
     "why": [
-     "Put your buffs, wizard oil and Spellstone (**Create Spellstone**) on first: in this project's model a demon copies its share of your spell damage when it is summoned. Then **Summon Imp**, **Demonic Sacrifice**, **Summon Succubus** (6 seconds with **Master Summoner**) and **Soul Link**. **Demonic Pact** keeps the sacrifice while a different demon is out, but summoning the Imp again cancels it.",
-     "The Succubus earns her place: while she is out, **Master Demonologist** gives you and her 10% more Shadow damage, **Soul Link** 3% more damage and **Demonic Knowledge** 60 more spell damage at level 60. She takes 17% of your spell damage as attack power and 10% as spell damage, and her attacks and **Lash of Pain** add to your total.",
-     "**Curse of the Elements** goes up first: 10% more damage from every magic school for 5 minutes, and as a Curse it sits beside your **Bane of Agony**. **Life Tap** waits until you are below 5% mana: every tap is a global cooldown with no damage, and the simulator measured tapping at 5% better than at 10%.",
-     "**Bane of Agony** grows over its 24 seconds, so recast it only once it has run out. **Corruption** (a 1.6-second cast with this build's single point of **Improved Corruption**) goes back up when less time is left on it than its cast, but not in the last 10 seconds.",
-     "**Immolate** is Fire, so the sacrifice and your other Shadow bonuses do not reach it, and it only just pays: the simulator measured this spec better without it when it was recast to the very end, and better with it when you stop 20 seconds before the end. Start it when less than its 1.5-second cast is left on the old one.",
-     "**Shadow Bolt** is the filler because every bonus you stacked is Shadow: the sacrificed Imp, **Master Demonologist** and **Improved Shadow Bolt**'s 20% after your own crits. **Decimation** adds 6% to it once the boss is below 35% health."
+     "Before the pull: **Summon Imp**, **Demonic Sacrifice** (+15% Shadow damage for 2 hours: Forever's Imp is the Shadow sacrifice), then **Summon Succubus** (6 seconds with 2 points in **Master Summoner**) and **Soul Link**. Open with a **Shadow Bolt** timed to land as the fight starts and **Corruption** right at the pull.",
+     "The Succubus earns her place: while she is out, **Master Demonologist** gives you and her 10% more Shadow damage, **Soul Link** 3% more damage and **Demonic Knowledge** 60 more spell damage (100% of your level). In the official simulator her attack power (17% of your spell damage) and spell damage (10%) follow yours all fight; her melee is 6% of your damage and her Lash of Pain 2%.",
+     "**Curse of the Elements** goes up first, about once a fight: 5 minutes of 10% more magic damage taken. The simulator turns the raid's own copy off and leaves it to you. As a Curse it sits beside your Bane.",
+     "**Bane of Doom** next, whenever it is ready and more than a minute of the fight is left: it deals its damage after exactly one minute, 10% of yours from two casts. It holds the Bane slot, so **Bane of Agony** goes on only while no Doom is on the boss and more than 24 seconds are left: in a 3-minute fight, after the second Doom lands.",
+     "**Searing Pain** (\"Searing Pain for Brand\") whenever **Demonic Brand** is off the boss or has under 2.5 seconds left: each cast brands the boss for 10 seconds, and the Succubus' next 6 attacks there deal extra Shadow damage. That is why the list casts it 20 times a fight: **Searing Pain** is 8% of your damage and the brand's hits another 8%.",
+     "**Corruption** (a 1.6-second cast with this build's one point in **Improved Corruption**) and **Immolate** go back up once they are off the boss, unless the fight ends before they would run out: no **Corruption** in the last 18 seconds, no **Immolate** in the last 15, no **Bane of Agony** in the last 24.",
+     "**Shadow Bolt** is the filler because nearly everything you stacked is Shadow: the sacrificed Imp's 15%, **Master Demonologist**'s 10% and **Improved Shadow Bolt**'s 20% for 12 seconds after your own crits, and **Ruin** makes those crits deal double damage. **Bane** cuts its cast to 2.5 seconds, **Agonizing Flames** adds 10% to it (and to **Immolate** and **Searing Pain**), and **Decimation** 6% once the boss is below 35% health.",
+     "**Life Tap** (a global cooldown with no damage) below 50% mana while more than a minute is left, and in the last minute only when nothing else can be cast: 11 taps a fight. The list saves Talisman of Ephemeral Power for the last 15 seconds of a **Bane of Doom** (or a stretch with none up), and in a Doom's last 15 seconds it casts **Shadow Bolt** ahead of tapping.",
+     "At the very end: **Searing Pain** when a **Shadow Bolt** would no longer land, and **Death Coil** (instant) in the last 1.5 seconds, when not even a **Searing Pain** would finish."
     ],
     "caveats": [
-     "**Searing Pain** has no cooldown: the rotation casts it only in the last 3.5 seconds, when its 1.5-second cast lands before the boss dies and a **Shadow Bolt** might not. So **Demonic Brand** and the **Soul Fire** half of **Decimation** do nothing here: they are points on the way to deeper talents, and the simulator found **Soul Fire** a loss wherever it tried it.",
-     "If the Succubus dies, summon her again unless the boss is about to die and turn **Soul Link** back on: without a demon you lose **Master Demonologist**, **Soul Link**, **Demonic Knowledge** and her own damage. Never summon the Imp during the fight: that cancels your sacrifice even with **Demonic Pact**.",
-     "Forever lets the Spellstone stack with the oil, and the simulator measured about 3% more damage from it.",
-     "On the move, **Bane of Agony**, **Curse of the Elements** and **Life Tap** are instant; **Corruption** keeps a 1.6-second cast in this build, so put it back when you stand still."
+     "If the Succubus dies, summon her again (6 seconds and a Soul Shard) unless the boss is about to die, and turn **Soul Link** back on: without her you lose **Master Demonologist**, **Soul Link**, **Demonic Knowledge**, **Demonic Brand**'s hits and her own damage. Never summon the Imp in the fight: that cancels your sacrifice even with **Demonic Pact**.",
+     "Threat: **Searing Pain** causes a high amount of threat. **Demonic Brand** halves it, but the brand's Shadow hits carry high threat of their own.",
+     "Moving: **Bane of Doom**, **Bane of Agony**, **Curse of the Elements**, **Death Coil** and **Life Tap** are instant; **Corruption** keeps a 1.6-second cast in this build.",
+     "Several targets (the simulated fights are one boss): with two or more, the list spreads **Bane of Agony** (on up to four targets), **Corruption** and **Immolate** over them, changing target to place them; with three or more it moves you within 5 yards and, once three stand that close, channels **Hellfire**, which burns you as well.",
+     "The official list also has a **Shadow Bolt** line for the Enchant Weapon - Revelation: its buff makes your next spell a critical strike, and the list spends it on a **Shadow Bolt** when Shadow Vulnerability, your **Improved Shadow Bolt** debuff, is off the boss or about to run out. The simulated weapon carries Enchant Weapon - Spell Power, so that line never fires and the list above leaves it out. The list's other cooldown lines (a Major Spellblasting Potion, the racials Eureka!, Blood Fury and Berserking) do not apply either: the simulated warlock is a gnome with racials off and drinks Major Mana Potions.",
+     "Ranks: the list casts **Corruption** at rank 6, **Immolate** at rank 7 and **Shadow Bolt** at rank 9, the trainer's top ranks: the class books' ranks above them are not in Forever on the evidence there is (2026-11-20; checked again when the raids open on 2026-12-09).",
+     "The list never casts **Soul Fire**, so **Decimation**'s Soul Fire half does nothing here; **Demonic Embrace** and **Master Summoner** only count toward the points the tree needs (the simulator finds no change without them)."
     ],
     "diverge": [
-     "In the last 20 seconds start no new **Immolate**, and in the last 10 no **Corruption**: cast **Shadow Bolt**, then **Searing Pain** in the last 3.5 seconds.",
-     "A boss needs only one **Curse of the Elements** (in Classic two never stacked): if another warlock keeps it up, take the curse your raid gives you, such as **Curse of Recklessness** for the physical fighters."
+     "In the last minute start no **Bane of Doom**: it would not land. In the last 24 seconds start no **Bane of Agony**, in the last 18 no **Corruption** and in the last 15 no **Immolate**: cast **Shadow Bolt**, then **Searing Pain** and **Death Coil** at the very end.",
+     "A boss needs only one **Curse of the Elements** (in Classic two never stacked): if another warlock keeps it up, take the curse your raid gives you, such as **Curse of Recklessness** for the physical fighters.",
+     "If your threat nears the tank's, stop the brand's **Searing Pain** casts first: the tooltips give them and the brand's Shadow hits high threat."
     ],
     "rotations": {
-     "demonology-raid": "e51e64619b71"
+     "demonology-raid": "f6be2909a51e"
     },
-    "written": "2026-11-08",
-    "rewrite": {
-     "demonology-raid": "2026-11-20"
-    }
+    "written": "2026-11-21"
    },
    "leveling": {
     "plan": "Demonology levels on the Voidwalker: its talents make the demon both the tank and a large share of the damage, **Demonic Brand** (levels 27-29) turns **Searing Pain** into extra Voidwalker hits, and your dots from the Affliction points and the wand do the rest. The page judges Demonology by what the demon adds, not by your own spells.",
@@ -181,22 +185,26 @@
   },
   "Hybrid Affliction/Destruction": {
    "raid": {
-    "plan": "The Shadow Bolt hybrid is the classic DS/Ruin warlock (**Demonic Sacrifice** plus **Ruin**) with Destruction's **Conflagrate** and **Shadow and Flame**: before the pull put on **Demon Armor**, summon the Imp, use **Demonic Sacrifice** (+15% Shadow damage for 2 hours, worth about 10% of your damage in the simulator) and **Life Tap** once. Then keep **Curse of the Elements** and your dots on the boss, use **Conflagrate** when it is ready and cast **Shadow Bolt** the rest of the time.",
+    "plan": "The Shadow Bolt hybrid takes Affliction's Shadow talents (30 points) and Destruction's **Shadow Bolt** talents (21), with no Demonology: no sacrifice, and the Succubus out all fight as a plain demon. In the fight you keep **Curse of the Elements** on the boss, cast **Bane of Doom** every minute while at least a minute is left and **Bane of Agony** after it, keep **Corruption** and **Immolate** up, spend each Shadow Trance on an instant **Shadow Bolt** before any dot, and cast **Shadow Bolt** the rest of the time. This is the official simulator's own SM/Ruin rotation, unchanged: adopted on 2026-11-19 (+1.4% / +1.6% over the rotation it replaced on this build in a full raid, seeds 1 / 2), and a rotation search from it the same day found nothing to change. In a 3-minute raid fight: **Shadow Bolt** 52 casts, **Immolate** 11, **Corruption** 10, **Life Tap** 10, **Bane of Agony** 3, **Bane of Doom** 2, **Curse of the Elements** and **Amplify Curse** once each, and the Succubus' Lash of Pain 15; **Shadow Bolt** 52% of the damage, **Corruption** 14%, **Bane of Doom** 10%, **Immolate** 10%, **Bane of Agony** 6%, the Succubus 7%.",
     "why": [
-     "Before the pull: summon the Imp, use **Demonic Sacrifice** (summoning any demon ends it), then **Life Tap** once so you start full. Put a Spellstone (**Create Spellstone**) on your weapon on top of your wizard oil: Forever lets them stack, and the simulator measured about 3% more damage.",
-     "**Curse of the Elements** goes up first: one cast lasts 5 minutes and makes the boss take 10% more damage from every magic school (Curse of Shadow is gone in Forever). As a Curse it sits beside your **Bane of Agony**.",
-     "**Life Tap** waits until you are below 5% mana: every tap is a global cooldown with no damage. **Improved Life Tap** adds 20% to each tap, and the list uses a mana potion or a Demonic Rune when your mana runs low, never in the last 15 seconds.",
-     "**Bane of Agony** grows over its 24 seconds, so recast it only once it has run out. **Corruption** (a 1.2-second cast with this build's 2 points in **Improved Corruption**) goes back up when it drops, except in the last 10 seconds.",
-     "Start a new **Immolate** when less time is left on the old one than its cast (1.5 seconds with the **Bane** talent), so it lands as the old one ends: **Conflagrate** needs it on the boss. With 5 points in **Shadow and Flame** a **Conflagrate** no longer uses it up and gives you 20% more Shadow damage for 20 seconds.",
-     "**Shadow Bolt** is the filler: its crits trigger **Improved Shadow Bolt** (20% more Shadow damage from you for 12 seconds, your dots included) and **Ruin** doubles their bonus."
+     "Before the pull: **Summon Succubus** and put on **Demon Armor**. With no Demonology points she is a plain demon: 7% of your damage (her melee 6%, Lash of Pain 1%).",
+     "**Curse of the Elements** goes up first, about once a fight: 5 minutes of 10% more magic damage taken. The simulator turns the raid's own copy off and leaves it to you. As a Curse it sits beside your Bane.",
+     "**Bane of Doom** whenever it is ready and at least a minute of the fight is left: it deals its damage after exactly one minute, 10% of yours from two casts.",
+     "A Shadow Trance comes next: **Nightfall** (2 points) gives each **Corruption** tick a 4% chance to make your next **Shadow Bolt** instant, and the list spends it before any dot.",
+     "\"Agony time\": **Bane of Agony** takes the Bane slot only when neither Bane is on the boss and **Bane of Doom** cannot go up (on cooldown, or less than a minute left), and only while it beats \"DPET Non DoT\" (next line). In a 3-minute fight that is after the second Doom lands, about two minutes in. **Amplify Curse** (off the global cooldown, once a fight) goes just before it and makes it 50% stronger; **Bane of Agony** builds up over its 24 seconds, so it is recast only once it has run out.",
+     "\"DPET Non DoT\" is the damage per second of casting of your best direct spell (**Shadow Bolt**, **Searing Pain** or **Death Coil**). **Corruption** (instant with 5 points in **Improved Corruption**) and **Immolate** go on only while one cast of them, counting only the ticks that land before the boss dies, beats it: near the end of the fight they stop and you cast **Shadow Bolt**. **Corruption** is recast once it has run out, **Immolate** when less than its 1.5-second cast is left on it.",
+     "**Shadow Bolt** is the filler: **Bane** cuts its cast to 2.5 seconds, **Shadow Mastery** adds 10% to your Shadow damage and **Agonizing Flames** 10% to your Destruction spells, **Shadow Bolt** and **Immolate** among them; **Malevolence** adds 5% to your Shadow crit chance, **Ruin** makes its crits deal double damage, and each crit puts **Improved Shadow Bolt**'s 20% more Shadow damage from you on the boss for 12 seconds, your dots included. **Cataclysm** takes 10% off its mana cost.",
+     "**Life Tap** below 30% mana while more than a minute is left, and when nothing else can be cast: about 10 taps a fight, each 20% bigger with **Improved Life Tap**. **Pandemic** doubles the crit bonus of **Corruption** and both Banes."
     ],
     "caveats": [
-     "**Searing Pain** has no cooldown: the rotation casts it only in the last few seconds, when a **Shadow Bolt** would not finish before the boss dies. Never use it as a filler.",
-     "With the Imp sacrificed you play without a demon: any summon ends the buff, so if you die, summon the Imp and sacrifice it again before the next pull.",
-     "On the move, use the instants: **Bane of Agony**, **Curse of the Elements**, **Conflagrate** and **Life Tap**; **Corruption** has a 1.2-second cast in this build."
+     "The Succubus is a plain demon here. If she dies with little of the fight left, finish without her: **Summon Succubus** is a 10-second cast (this build has no **Master Summoner**) and costs a Soul Shard.",
+     "Moving: **Bane of Doom**, **Bane of Agony**, **Corruption**, **Curse of the Elements**, **Amplify Curse**, **Life Tap** and a Shadow Trance **Shadow Bolt** are instant.",
+     "Several targets: the list keeps **Bane of Agony**, **Corruption** and **Immolate** on up to 10 targets, by the same test as on one; the simulated fights are one boss.",
+     "Ranks: the list casts **Corruption** at rank 6, **Immolate** at rank 7 and **Shadow Bolt** at rank 9, the trainer's top ranks: the class books' ranks above them are not in Forever on the evidence there is (2026-11-20; checked again when the raids open on 2026-12-09).",
+     "The other setups at the top of the page (the 9/11/31 Fire build and the 22/11/18 Shadow Bolt build) play their own entries' lists, shown on the research rotation page."
     ],
     "diverge": [
-     "Near the end of a fight start no dot the boss will not outlive: the list tells you the last seconds in which **Immolate** and **Corruption** are still started. Cast **Shadow Bolt** then.",
+     "In the last minute start no **Bane of Doom**: it would not land before the boss dies.",
      "A boss needs only one **Curse of the Elements** (in Classic two never stacked): if another warlock keeps it up, take the curse your raid gives you, such as **Curse of Recklessness** for the physical fighters.",
      "When healing is tight, each **Life Tap** costs health someone must heal: use your mana potion and Demonic Rune before you tap."
     ],
@@ -208,10 +216,7 @@
      "sb-raid": "12311edeb549",
      "incinerate-raid": "369cf7f25d10"
     },
-    "written": "2026-11-08",
-    "rewrite": {
-     "affliction-raid": "2026-11-20"
-    }
+    "written": "2026-11-21"
    },
    "leveling": {
     "plan": "A Shadow Bolt hybrid would level with the Destruction list: the Voidwalker holds the mob, **Immolate** goes on a fresh mob and **Shadow Bolt** is the filler. The list casts no **Corruption** or **Bane of Agony**: the Affliction points only make your Shadow spells stronger. No leveling page has a build for this split today.",

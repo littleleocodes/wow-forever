@@ -29,7 +29,7 @@
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Mind Flay**: now and then (in about 1 of 10 fights)
+- **Mind Flay**: now and then (in about 1 of 12 fights)
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
@@ -65,8 +65,10 @@ Smite in a raid keeps **Shadow Word: Pain** on the boss, fires **Mind Blast** ev
 | Tree | Points | Talents (ranks) |
 |---|---|---|
 | Discipline | 17 | Power in Light 5, Twin Disciplines 2, Holy Precision 3, Mental Agility 3, Inner Focus 1, Meditation 3 |
-| Holy | 17 | Holy Specialization 5, Divine Fury 5, Holy Nova 1, Blessed Recovery 2, Inspiration 1, Searing Light 2, Twilight Focus 1 |
-| Shadow | 17 | Shadow Focus 5, Improved Mind Blast 5, Improved Shadow Word: Pain 2, Mind Flay 1, Shadow Weaving 2, Spirit Tap 2 |
+| Holy | 17 | Holy Specialization 5, Divine Fury 5, Holy Nova 1 (tier point: needed to reach Searing Light), Blessed Recovery 2 (tier point: needed to reach Searing Light), Inspiration 1 (tier point: needed to reach Searing Light), Searing Light 2, Twilight Focus 1 (tier point: needed to reach Searing Light) |
+| Shadow | 17 | Shadow Focus 5, Improved Mind Blast 5, Improved Shadow Word: Pain 2, Mind Flay 1 (tier point: needed to reach Shadow Weaving), Shadow Weaving 2, Spirit Tap 2 (tier point: needed to reach Shadow Weaving) |
+
+A talent marked as a tier point measures nothing in the simulator's raid fight; the build holds it for the tier it opens (or the talent it is needed for).
 
 ## The numbers
 
@@ -109,6 +111,8 @@ Smite in a raid keeps **Shadow Word: Pain** on the boss, fires **Mind Blast** ev
 | Ranged/relic | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* |
 
 **Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Quests and dungeons: [full raid](https://wowsims.com/forever/priest/dps/#eJzEVk9oI1UYn+/NJPPly26Nz3U7OywyG1eJkYlvXhpp10Oye1r2oIsw4EGxySbdZN38oROw6iULexBZ05KD0lKpiFIRrF4sxZsWIYLYevHipVREvWmR9qYy+VMl7THNfoc3b943j9/v+/2+gY/OI0TAAAtiMA1FqEED4E2A9wE+BuCnOlnmZyfB/P00YiRgVknH1RYYv4RJw913gTS895m/rs0D6fjDPBg/j5GOXy2A8dMYqfjNTdJwaxkoiHsz/rUgrr1ozOuk4j9ZUvFOjlRcKJOGHy34H90rG+2HSMXGS6Ti3u3ok5F2KfZ9E8R+7vrbH8BbwO6WWsD2c0vAfr38Ceiry/D51WZpB+6WrmCHMmTgS3YxJaRICpF0RNJ2REqkHOkIIe2UECkphCOFkG0G2yy8y/4K0xkKmToFYojvvRrVKUCqnfR4C/h0tnb75Wqtbkkhn7bFlC0nL1k3itnKzULeqs5a2Xy+kLdyr1n1YsGardaz9VK1YnmF7OyNohXzCgXLK5fqBTtf8+x+2u6mE7e8auUJM0GP8gt0OhqmkOxSaLoUiY9hkLNrihkkjZgjeuyaLi+PgFNXjBBuuvyNEcCNy4dJNwOk4opHZCIFY0Hcfge4ZrJLCl8ZtMERtpwaModnSPAEnYuPo8pDt/q94HMhTSRSHj0Yf8C3JKf42pA6IR477BhumGflmf9K6PfSussrI5Cvq5iKmwfP8VeOSiWGjdet87tneWMUxpwfVF6m+sqvu9wxn6KLPDr4/wxcSR6a1XRHzPpaj4IjPH8TY7il8UeOqeqQ4rrLw2a3hXT8wj3WUmfIdLuW/jl3FMyxRfIkwCL7Of760cqciSGDnaVTUSKUQdLwoAVm72mov7E2/MHyd1SlExOZr0EzGSnRv1nIP1AaM5lzS4t+fJu+MNOJH9NyhxmalY5vMOW+RD3T351oPP7pieFMddbnP8xc7h1kpv2xYxE6L8pOOq7ixviV/00nAiYhA1fhOrwARajBHMyxfwcAcbMLtg==); Pre-BiS: [full raid](https://wowsims.com/forever/priest/dps/#eJzEVk+IG1UYn+/NJPPlS7uOz9qdDkWmsUqMTHzzspHdekjaU+lBizDgzU2a2Sa1TcJOwFUvq/QgooksUmmtVEVQhIIXw+JNFyGKaLx48bKsrH9ARFfZPQgikz+rZPeYjd/hzZv38fH7fb/f9+DRcQQDTLAhCfNQhjosA7wI8BbA+wD8UC/LwuwsWL8eRjQiVoN0/Os2mJtx0nDjdSAN/3gtXN/oGqTjNy0wv58iHT95FczvpkjFzy6ShpstoChuLYRlOl772TBbOmn4xdthZfMXgzRsdw1S8QWfdPzhJpidu0jDl1tAKm5dTjxodCrJr5ogtovnX3kHXgJ2tbICbLt4A9iPpz8A/b2b8OHZZmUdrlbOYI835OFjdjIrpMgIkXFFxhEi62Zd6QohnayQWSmEK4SQHQZdFt9gf8bpCMUsnSJJxDefTugUIdXJBHwF+HyhfvnJWr1hSyEfdsScI2dP2RfKhepFv2TXFu1CqeSX7OIzdqPs24u1RqFRqVXtwC8sXijbycD37eBKpeE7pXrgDNNOP52+FNSqD1hpupefoMOJOMVkn0LTIyM1hVHOzilWlDRirhiwa3r8ygQ49cWI4ZrHn5sA3LS8m3QrQireCogspGgyit1rwDWLnVL4rVEbXOHIuTFzeIQET9Ox1DSqPHZpOAshF9JEOhvQnak7QkuKSqgNqTPivt2J4aZ1VB75t4XhLLU9Xp2AfH3FVFzbeYw/tVcqMW68fp9fPsqXJ2HM8VHlZXaofNvjrvUQneSJ0fszUpLZNavpTZj1uQEFVwThJsnwa43fs09XuxTbHo9b/RHS8SNvX0vdMdPtW/r70l4w1xGZgwAztov82b2duTNjBjtKhxJEKKOk4c4KWIOvqf7EOvAbKz2vKr2YyX8KmsVISfzNYuGBsryQP3bjehif504s9OLbnFxnpmbnUqtM+V+ikR/uDjTuv31gOHO99fF386cHB/n58O1xHXo/ynoupeLq9Jn/PFEEzEIezsJ5eALKUIclWGL/DADgUA8R); Raid BiS: [full raid](https://wowsims.com/forever/priest/dps/#eJzEVk1oK1UUnnNnkrk5ea/G6/N13vCQefEpMTLxzk0jbV0k7ap0oUUYcGeTJm1S2yR0glbdVOhCRBOJttBaqYqgCAU3huJOixB/0LpxI0JR6s+u/tAuhCIzSaqkXabxLM7cuYc733e+7wxcvEkhBBoYEIFpyEMZVgBeBHgL4H0AdsWrErc6DPrRVUpDPv1pVOnfO6AdBlGhp3VAhf75upvf2A+hSr+tgfbTAKr0k1dB+34AZfrZHCr0sAao0h/WvHMqXf8tpNVUVOiXa+7RL9528+prbm54n/l5C7TmXajQl2uAMv1jIfxgqFmIfF0FfpyZeuUdeAnIaqEO5DizCeSXsQ9AfW8LPpyoFg5gtTBOPeaQgo/J7QQXPM553OJxk/OElbCExbkwE1wkBOcW51w0CeyT4I/kryBew4Cuoi9C6ZvPhFX0oWzGHVYHNp0uLzxZKlcMwcXDJh8xxfCoMZNPF+dyWaO0ZKSz2VzWyDxrVPI5Y6lUSVcKpaLh5NJLM3kj4uRyhrNYqOTMbNkxO2WzVY7NO6XiA3oM72W38Go4iAHRolC1MRQdoH5GJiXdjwoSi7fZVW222AdOLTECdM9mz/cBblDcjaruQ5luO4g6RX/ET/fXgSk6GZXYdrcNFjfFSI85PIKcxfBGdJDKLDDfmQWXCyo8lnDwzugdriUZydUG5SF+39nEME2/Lq7920Jnlho2K/ZBvpZiMt07eYw9dV4q3mu8Vp9fPcpW+mHMzW7lRaKjfMNmlv4Q3mbh7v+n60j8zKyq3WfWk20KFnfcRYTQbxR2zwVdnVFs2Cyot0ZIpR/ZF1pq9Zhuy9Lfl8+DWSaPXwZY6DjDnjvfmTXUY7DreCWMSIUfFXpSB7391ORfSROOSPYFWfJiKPUpKDpBKXxKAu6GtDKburG54cbnyVuzXnyXFAdEU4xkdJdI/0tUUp3Vpcb9O5eGM+Llx99NjbU3UtPu7WMDvBfpIBmV6e7g+H8uKRyGIQUTMAVPQB7KsAzL5J8BACzjD1E=).
+
+**Points that do nothing for this spec:** **Blessed Recovery** (2), **Holy Nova** (1), **Inspiration** (1) and **Twilight Focus** (1) only count toward the points the tree needs before **Searing Light**; **Mind Flay** (1) and **Spirit Tap** (2) only count toward the points the tree needs before **Shadow Weaving**.
 
 ## Other builds of this spec
 

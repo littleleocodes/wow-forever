@@ -92,7 +92,7 @@ Before the pull: at -20s: groupReference; at -30s: if Manual Crowd Pummeler is k
 | 9 | cast Holy Shock | 4.3 |
 | 10 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 0.8 |
 
-Lines of the simulator's rotation these builds never cast: cast Seal of Command, cast Exorcism (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Seal of Command (a switch this rotation keeps off); cast Exorcism (its condition never held in these fights).
 
 Damage by ability:
 

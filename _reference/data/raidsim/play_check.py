@@ -53,6 +53,7 @@ import validate_builds as VB  # noqa: E402
 import utility_tags as UT  # noqa: E402
 import paths  # noqa: E402
 import flags_bench as FB  # noqa: E402  (the audit's D12 guard a, 2026-11-20)
+import gate_kind as GK  # noqa: E402  (2026-11-21)
 
 OUT = HERE / "play-check.json"
 RACIALS, CLIENT = None, {}
@@ -119,6 +120,9 @@ def client_names():
 # rotation's casts on the global cooldown cannot exceed one a second; c2: our rotation beating the simulator's own rotation for the same
 # build by more than TOO_GOOD is suspect until raidsim/too-good-notes.json explains the casts ({class: {entry: {build or "*": why}}}).
 TOO_GOOD = 0.20
+# 2026-11-21 (the audit session's gate rule): a tier point that does nothing passes only with the filler record of its homes
+# (no_better_home). Off until the records for the page builds are made; --tier-gates runs with it on (no push depended on it that night)
+TIER_GATE_RULE = False
 TOO_GOOD_NOTES = HERE / "too-good-notes.json"
 OFF_GCD = json.load(open(DATA / "fightlab" / "spell_gcd.json", encoding="utf-8")).get("off_gcd", {})
 _DB = {}
@@ -247,6 +251,33 @@ def gate(trees, alloc, talent):
     errors = []
     VB.check_state(trees, st, "x", errors)
     return errors[0] if errors else None
+
+
+def no_better_home(cls, bid, have):
+    """{talent: record}: the free points a filler record made on this allocation tried every legal move for and kept (raidsim/
+    filler_audit.py and the exact pass, deep-runs/credited_fillers_1120.py: one point at a time into a DPS gain or, at no loss, into a
+    talent higher in the utility order). The record's final allocation is the build's, or its start is and no move left the talent. A
+    talent the record moved points into, its final allocation being the build's, is the home the pass chose as the most useful legal one
+    (the Survival Raptor build's Survivalist, Deflection's three points). 2026-11-21, the audit session's gate rule: the evidence a tier
+    point needs."""
+    out = {}
+    recs = [(f.name, json.load(open(f, encoding="utf-8"))) for f in (ROOT / cls / "research" / "raid" / "raidsim").glob(f"*-fillers-{bid}.json")]
+    for f in HERE.glob("credited-fillers*.json"):
+        x = json.load(open(f, encoding="utf-8")).get(f"{cls}/{bid}")
+        if x:
+            recs.append((f.name, x))
+    for name, x in recs:
+        final = flat(x.get("allocation")) == have
+        start = flat(x.get("start")) == have
+        left = {m.get("from") for m in x.get("moves") or []}
+        for n in x.get("free") or []:
+            if n in have and (final or (start and n not in left)):
+                out.setdefault(n, name)
+        if final:
+            for m in x.get("moves") or []:
+                if m.get("to") in have:
+                    out.setdefault(m["to"], f"{name}: chosen as the home of {m.get('from')}'s point")
+    return out
 
 
 def filler_records(cls, bid, have):
@@ -457,6 +488,7 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
         row = base.get(b) or {}
         cs = all_cs[b]
         have = flat(data[b]["allocation"])
+        nbh = no_better_home(cls, b, have)
         f = {"dps": round(row.get("dps") or 0, 2), "never_cast": [], "abilities": [], "zero_talents": [], "inert_switches": [], "fail": []}
         acts = [x for x in (row.get("actions") or []) if not x.get("pet")]   # the character's own rows (the bench marks a pet's "pet": true)
         # b2: swings (Maul's damage cast directly read 227 hits on top of 72 white swings; a 2.5 s weapon makes 72 in 180 s)
@@ -544,7 +576,18 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
             txt = book[t][1]
             why = booked if t in matters else None
             if not why and gate(trees, data[b]["allocation"], t):   # before unused-abilities' kind: its "wasted" can predate the build
-                why = "prerequisite"
+                # 2026-11-21 (the audit session): a prerequisite can be nowhere else; a tier point needs the filler record of its homes
+                # (TIER_GATE_RULE; until it is on, the kind is reported and the gate still passes)
+                kind = GK.gate_kind(trees, GK.state_of(data[b]["allocation"]), t)
+                if GK.is_prerequisite(kind) or not TIER_GATE_RULE:
+                    why = f"gate: {kind}"
+                elif t in nbh:
+                    why = f"gate: {kind}; no more useful legal home ({nbh[t]})"
+                else:
+                    f["fail"].append(f"b: talent ability {t} never cast and only a {kind}: no filler record on this allocation shows a more "
+                                     f"useful legal home was tried")
+                    f["abilities"].append(f"{t}: {kind}, NO RECORD OF ITS HOMES")
+                    continue
             if not why:
                 why = kinds.get(t)
             if not why and FA.TRIGGERED.search(txt):
@@ -586,7 +629,16 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
             if t in matters or not rm.get(t):
                 continue
             g = gate(trees, data[b]["allocation"], t)
-            why = ("gate: " + g.split(": ", 1)[-1][:80]) if g else ("recorded filler" if t in recorded else None)
+            kind = GK.gate_kind(trees, GK.state_of(data[b]["allocation"]), t) if g else None
+            if GK.is_tier(kind) and TIER_GATE_RULE:   # 2026-11-21: a tier point is excused only by the record of its homes
+                if t in nbh:
+                    f["zero_talents"].append(f"{t} {have[t]}: gate: {kind}; no more useful legal home ({nbh[t]})")
+                else:
+                    f["zero_talents"].append(f"{t} {have[t]}: {kind}, NO RECORD OF ITS HOMES")
+                    f["fail"].append(f"c: {t} worth nothing and only a {kind}: no filler record on this allocation shows a more useful "
+                                     f"legal home was tried")
+                continue
+            why = (f"gate: {kind}") if g else ("recorded filler" if t in recorded else None)
             if not why and t in reasons:   # an ability (b) accepts: automatic, situational, a prerequisite
                 why = f"ability: {reasons[t]}"
             if not why and use.get(t, UT.NONE) < UT.NONE:   # a raid utility tag (range, survival ...): a filler, not a dead point
@@ -641,7 +693,11 @@ def main():
     ap.add_argument("--fights", type=int, default=3000)
     ap.add_argument("--skip-switches", action="store_true")
     ap.add_argument("--write", action="store_true")
+    ap.add_argument("--tier-gates", action="store_true", help="a tier point that does nothing needs the filler record of its homes "
+                    "(TIER_GATE_RULE, the audit session's rule of 2026-11-21)")
     a = ap.parse_args()
+    global TIER_GATE_RULE
+    TIER_GATE_RULE = TIER_GATE_RULE or a.tier_gates
     R.set_game("forever")
     repo = R.repo_path(argparse.Namespace(repo=None))
     rec = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}

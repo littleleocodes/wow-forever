@@ -100,8 +100,8 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 3. if time left on the totem ≤ 0s: cast Grace of Air Totem (rank 2)
 4. use every other cooldown when ready
 5. cast Stormstrike
-6. if auraIsInactive and mana % ≥ 25%: cast Magma Totem
-7. if stacks of Maelstrom Weapon ≥ 4.218: cast Lightning Bolt
+6. if not Magma Totem is up and mana % ≥ 25%: cast Magma Totem
+7. if stacks of Maelstrom Weapon on you ≥ 4.218: cast Lightning Bolt
 8. if time left on the totem ≤ 0s: cast Searing Totem
 9. cast Earth Shock
 10. if mana % ≥ 10%: cast Fire Nova
@@ -118,7 +118,7 @@ Before the pull: at -4.5s: cast Strength of Earth Totem (rank 4); at -3s: cast G
 | 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem (rank 2) | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 |
 | 3 | use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready | as ready |
 | 4 | cast Stormstrike | 7.3 | 7.4 | 7.3 | 7.3 | 7.4 | 7.2 |
-| 5 | if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt | 4.4 | 4.4 | 4.5 | 3.9 | 4.4 | 4.4 |
+| 5 | if stacks of Maelstrom Weapon on you ≥ 3.75: cast Lightning Bolt | 4.4 | 4.4 | 4.5 | 3.9 | 4.4 | 4.4 |
 | 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 | 1.3 |
 | 7 | if not Flame Shock is on the target: cast Flame Shock (rank 5) | 2.7 | 2.7 | 2.6 | 2.7 | 2.5 | 4.1 |
 | 8 | cast Earth Shock | 6.5 | 6.7 | 6.4 | 6.6 | 6.5 | 4.3 |

@@ -13,19 +13,20 @@
 
 **Setup, before the pull:** **Summon Succubus** and keep it out all fight. Keep **Demon Armor** on you.
 
-**Before the pull:** **Soul Fire**.
+**Before the pull:** **Soul Fire**, **Immolate**.
 
 **Talents with no line below:** **Bane of Havoc**: taken because Incinerate requires it.
 
 **Then press the first one that is ready**, top to bottom:
 
 1. **Bane of Doom** (timing: see below)
-2. **Amplify Curse**; no global cooldown, so press it alongside the others
-3. **Bane of Agony**, **Immolate** and **Corruption**: keep them on the target
-4. **Conflagrate** when Immolate is on the target
-5. **Shadowburn**
-6. **Life Tap** when your mana is below 35%, until the last 60 seconds of the fight
-7. **Incinerate**
+2. **Amplify Curse** when Bane of Doom is not on the target and Bane of Agony is not on the target (timing: see below); no global cooldown, so press it alongside the others
+3. **Bane of Agony**: keep it on the target, when Bane of Doom is not on the target
+4. **Immolate** and **Corruption**: keep them on the target
+5. **Conflagrate** when Immolate is on the target or Shadow is not active
+6. **Shadowburn**
+7. **Life Tap** when your mana is below 35%, until the last 60 seconds of the fight
+8. **Incinerate**
 
 **Incinerate** is your filler: cast it whenever nothing above is ready.
 
@@ -68,7 +69,9 @@ Destruction in a raid keeps its dots and a bane on the boss and fills with **Inc
 | Tree | Points | Talents (ranks) |
 |---|---|---|
 | Affliction | 18 | Improved Life Tap 2, Suppression 5, Improved Corruption 5, Improved Bane of Agony 2, Amplify Curse 1, Pandemic 3 |
-| Destruction | 33 | Bane 5, Cataclysm 3, Aftermath 5, Ruin 5, Shadowburn 1, Agonizing Flames 3, Conflagrate 1, Bane of Havoc 1, Fire and Brimstone 3, Shadow and Flame 5, Incinerate 1 |
+| Destruction | 33 | Bane 5, Cataclysm 3, Aftermath 5, Ruin 5, Shadowburn 1, Agonizing Flames 3, Conflagrate 1, Bane of Havoc 1 (needed for Incinerate), Fire and Brimstone 3, Shadow and Flame 5, Incinerate 1 |
+
+A talent marked as a tier point measures nothing in the simulator's raid fight; the build holds it for the tier it opens (or the talent it is needed for).
 
 ## The numbers
 
@@ -113,6 +116,8 @@ Destruction in a raid keeps its dots and a bane on the boss and fills with **Inc
 *This build does better outside its own set in Raid BiS (880 in its own set, 881 in the standard set): those columns show the set made for an earlier build.*
 
 **Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Quests and dungeons: [full raid](https://wowsims.com/forever/warlock/dps/#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); Pre-BiS: [full raid](https://wowsims.com/forever/warlock/dps/#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); Raid BiS: [full raid](https://wowsims.com/forever/warlock/dps/#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).
+
+**Points that do nothing for this spec:** **Bane of Havoc** (1) is needed for **Incinerate**.
 
 ## Other builds of this spec
 

@@ -104,7 +104,7 @@ Before the pull: at -4.5s: cast Strength of Earth Totem (rank 4); at -3s: cast G
 | 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem (rank 2) | 0.3 |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | cast Stormstrike | 7.4 |
-| 5 | if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt | 4.4 |
+| 5 | if stacks of Maelstrom Weapon on you ≥ 3.75: cast Lightning Bolt | 4.4 |
 | 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.3 |
 | 7 | if not Flame Shock is on the target: cast Flame Shock (rank 5) | 2.5 |
 | 8 | cast Earth Shock | 6.5 |

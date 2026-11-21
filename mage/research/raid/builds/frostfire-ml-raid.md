@@ -125,14 +125,14 @@ Before the pull: cast Pyroblast.
 
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-ml-raid`](frostfire-ml-raid.md) casts/min |
 |---|---|---|
-| 1 | if mana < current cost and (not Read Leyline is known or not Read Leyline is ready or Energized is up): channel Evocation (interrupt it when a higher line is ready) | as ready |
-| 2 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability < 4 or not spellIsCasting): cast Scorch | 4.3 |
-| 3 | if stacks of Fire Vulnerability = 5: use every other cooldown when ready | as ready |
-| 4 | if stacks of Heating Up = 3 and not spellIsCasting: cast Pyroblast | 3.1 |
-| 5 | if stacks of Fingers of Frost < 2: cast Fire Blast | 5.4 |
+| 1 | if mana < current cost and (not Read Leyline is known or not Read Leyline is ready or Energized is up): channel Evocation (stop it when mana % ≥ 99%) | as ready |
+| 2 | if (stacks of Fire Vulnerability on the target < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability on the target < 4 or not Scorch is being cast): cast Scorch | 4.3 |
+| 3 | if stacks of Fire Vulnerability on the target = 5: use every other cooldown when ready | as ready |
+| 4 | if stacks of Heating Up on you = 3 and not Pyroblast is being cast: cast Pyroblast | 3.1 |
+| 5 | if stacks of Fingers of Frost on you < 2: cast Fire Blast | 5.4 |
 | 6 | cast Frostfire Bolt | 10.4 |
 
-Lines of the simulator's rotation these builds never cast: strict sequence: cast Read Leyline; channel Evocation (interrupt it when a higher line is ready) (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: strict sequence: cast Read Leyline; channel Evocation (stop it when mana % ≥ 99%) (its condition never held in these fights).
 
 Damage by ability:
 

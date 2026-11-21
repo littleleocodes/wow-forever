@@ -61,12 +61,7 @@ Allocation adopted on 2026-09-26 from `opt-mm-lonewolf-raid-raid-dps`, the best 
 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
-| 3 | Improved Arcane Shot | Hawk Eye, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 3 | Efficiency | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 2 | Rapid Killing | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 1 | Trueshot Aura | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 2 | Rapid Recuperation | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 5 | Improved Tracking | Endurance Training, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 
 ## Rank among our builds and the community simulator's
 
@@ -117,17 +112,15 @@ Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Hawk (
 | # | Priority (the first line whose condition holds is cast) | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) casts/min |
 |---|---|---|
 | 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready |
-| 2 | if not Hunter's Mark is up: cast Hunter's Mark | 0.7 |
+| 2 | if not Hunter's Mark is on the target: cast Hunter's Mark | 0.7 |
 | 3 | if not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 2.1 |
-| 4 | if “Use Summon Hawk” and “Use Arcane Shot” and the sequence is complete: reset sequence 'HHA' | as ready |
-| 5 | if “Use Summon Hawk” and “Use Arcane Shot”: sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot | 8.5 |
-| 6 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 8.5 |
-| 7 | if “Use Aimed Shot”: cast Aimed Shot | 3.1 |
-| 8 | if “Use Sniper Shot”: cast Sniper Shot | 1.7 |
-| 9 | if unitDistance ≠ “Shoot spot” and not spellInRange and (“Windup close” or “Just shot”): move to “Shoot spot” yd | as ready |
-| 10 | if unitDistance ≠ “Shoot spot”: wait inputDelay | as ready |
+| 4 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 8.5 |
+| 5 | if “Use Aimed Shot”: cast Aimed Shot | 3.1 |
+| 6 | if “Use Sniper Shot”: cast Sniper Shot | 1.7 |
+| 7 | if unitDistance ≠ “Shoot spot” and not (Arcane Shot is in range and (“Windup close” or “Just shot”)): move to “Shoot spot” yd | as ready |
+| 8 | if unitDistance ≠ “Shoot spot”: wait inputDelay | as ready |
 
-Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Multi-Shot (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: reset sequence 'HHA', sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot, cast Summon Hawk, cast Multi-Shot (a switch this rotation keeps off).
 
 Damage by ability:
 
@@ -141,6 +134,8 @@ Damage by ability:
 
 ## Notes
 
+- 2026-11-21: flex entries removed for Efficiency (3), Trueshot Aura (1), Rapid Recuperation (2), Improved Tracking (5): they said the points measured +0.0% and were free to move, but the raid play check of 2026-11-20 measures these talents as live (their removal changes the full-raid DPS); a point is free only when its removal leaves the DPS the same.
+- 2026-11-21: the flex entry "Improved Arcane Shot, 3 points, +0.0% (noise)" is gone: the build holds 5 points and the simulator's own rotation (since 2026-11-20) casts Arcane Shot 37 times a fight; the raid play check's only zero talent here is Rapid Killing 2.
 - Adopted from the community simulator on 2026-09-26: opt-mm-lonewolf-raid-raid-dps beat the previous draft by +13.8% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - No pet means no Focused Fire, no pet damage, but also no pet management, no Growl pulls and no dead-pet downtime.
 - 2026-09-27 scenario audit: Improved Revive Pet 2 -> Efficiency 2. Improved Revive Pet speeds up reviving a pet this build never has out (Lone Wolf). Efficiency's cheaper shots and stings are mana over a long fight (scorer +0.4 points; the simulator's 120 s fight shows no mana shortage).

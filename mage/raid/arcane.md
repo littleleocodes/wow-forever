@@ -10,10 +10,10 @@
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Pyroblast** when Heating Up has 3 stacks
+1. **Pyroblast** when you have exactly 3 stacks of Heating Up and you are not already casting Pyroblast
 2. **Fire Blast**
 3. **Arcane Missiles** (rank 7) when Missile Barrage is active
-4. **Arcane Blast**: stack its buff to 3 on you
+4. **Arcane Blast** (timing: see below)
 5. **Arcane Wrath**
 6. **Scorch**
 
@@ -57,9 +57,11 @@ Arcane with a Fire filler: **Fire Blast** on every cooldown and **Pyroblast** wh
 
 | Tree | Points | Talents (ranks) |
 |---|---|---|
-| Arcane | 32 | Improved Channeling 5, Arcane Subtlety 2, Arcane Concentration 5, Missile Barrage 2, Arcane Impact 3, Arcane Blast 1, Arcane Meditation 3, Arcane Wrath 1, Presence of Mind 1, Arcane Mind 5, Arcane Instability 3, Arcane Power 1 |
+| Arcane | 32 | Improved Channeling 5 (tier point: needed to reach Arcane Subtlety), Arcane Subtlety 2, Arcane Concentration 5, Missile Barrage 2, Arcane Impact 3, Arcane Blast 1, Arcane Meditation 3, Arcane Wrath 1, Presence of Mind 1, Arcane Mind 5, Arcane Instability 3, Arcane Power 1 |
 | Fire | 16 | Incineration 5, Accelerant 2, Ignite 5, Pyroblast 1, Improved Fire Blast 2, Heating Up 1 |
 | Frost | 3 | Precision 3 |
+
+A talent marked as a tier point measures nothing in the simulator's raid fight; the build holds it for the tier it opens (or the talent it is needed for).
 
 ## The numbers
 
@@ -102,6 +104,8 @@ Arcane with a Fire filler: **Fire Blast** on every cooldown and **Pyroblast** wh
 | Ranged/relic | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* |
 
 **Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Quests and dungeons: [full raid](https://wowsims.com/forever/mage/dps/#eJzEVU1sG1UQ9rx17fEYSvta2uU1glcHk8SJy+66Lk1AihuJkJaiRJyQEKXr7MZeNVlH9pqEWxp6QAXSKnBJBBKKkIqACsmnJlKRqIQUkEBQifbAgaj830gOVbkUtOtNnUqIW8Uc/Pxm5ptv5htbj9oQdoAKEjrhJJRhEmYAXgd4H+BDAH5fEGV+9DCIrxKIO1CMUxwvzIP6S5Ki+NqnQAp+ViYFL09THL87B+pP2ymOn58H9YftpOAXJVJw7kWK4caYj4nj9YugnouTgn+bpODpIil4foIUfK9EMXxzQl3dRQrOvEQKboynenasOp3fzIF2szjy1hKcBXbGmQd2s7gI7LcjHwFeeBc+OQtzzhqccQYwaBgKsMLatbxmaHlDy+maltP1fE7P5o28pmmabmiantW03CqDb1nyBrsWpzbaSXg1uo0U/MMWzSMVp22kZI0aHSIUMYri8vrxVKbBOlDh+xpMReCJReYHZm+NiMRiPMzxc4lldXo0xM3eGkmpDfYgKlsBYRZfYPxXMC3LtqShGYeyup41NNnplW3puJY9abuW7XrSrFuO11GTQ3pXnzw6assBs1p17Ko0S6bjyqmy7crBqlNyLDlSmbKrPdLxarJbz6flYLVS86RlTpglW45VqlKXE47bI8tmTdZdy65KQ9bkuD3mPSlLdbNq2ZYsvnoXSdF23JI85Vam3B5Zq8hi3Rm3anLK8cqVuif9ZnN6drLiuF5I55njQdtVW9bd0bLplmxLHKA0b28pTXszgSgr4Ivy8e1QFKMWroA/IfLUzbtIzexB4MkrgBTF9WVVBT+DIEf3p5KU2Ajwf82DCE+eEHE/A68P83axn3ZmHsAoZ8WICJaqa+kbkKTE069URk3PqbhciodJCJWSjYDia5+CEksQLqsvwveI3XdFg/I/D/OUkFsSjV3UJH7jRGv5fEKcIlO8THsyu/1xrwRlLy+rm0OIjNqSwfeHP5N3vn+WunjH1iF917+XOSjCOCfRoh4Sg/RUpg9jwfRGgz2OwAMRDC0tUg32CCp8Z4Nt9/U5FvFxxPSaQIpRVD+QS9+puinpj8OqklmCreodFc9QGxfNPhtBWyurz1HiajT8SxgdoRrL68dp3yyopODbJ4S/llhrLb29aX5MDFG36GqWuoNvXpsq+9cWyX/U+p2twp/MOq1EAjtYCPDEEFK3WcJ3RWbGCg8tLvj2Zf/+scCu9RtrTI3K/swlFvlfzCtsfrun9tjFe8bTG3w+/0HhSOgonPTflQUILpG1/oyCl/YObHl+NDgMBRiCEXgByjAJ0zDN/hkAL/gt9A==); Pre-BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzEVU1sG1UQ9rzd2s9jKM5rSZfXCF4dTBInLrvrujQBKW4kQlqKEnHiVLrObuxVk3XkXZNyK6EHVKCpSoWUwAEiJBAQkHxATSQO5GSQQKES7YEDUaH8XSA5VEVIFdr1pk4lxK1iDrt+M/PNN/ONVw87KCRBAQHdcALKMA2nAV4BeAfgAwB2TxAlfvQQ8G/jlCYpdzFG/14C5XoCZfryp4Ay/f2i/3xrLYlR2nCUH3dijH5xHpTvd6JEVx2U6fU5wCjdnPBRMXp1CZS5GMr0zbUkyvSrd334Z2tJlOj5KYzRPz4BpbELZfraHKBENydTfcmG3f3NOVBvFMdeX4SzQM7YF4DcKC4A+eXwh0Dffxs+Pgvn7HU4Yw/RoG8owArpVPOqruZ1Naepak7T8jktm9fzqqqqmq6qWlZVcw0CayRxjVyJYQe2Ib0s70CJ/mbx5isVwx0oZXUXDyLlUZTp8saxVKZOuqjE9taJQoHFF4gfmL05xuMLsTDHz0WS1fDhEDd7cyyl1Mn9VNoOCLPYPGE/g2Galil0VT+Y1bSsropur2wJ2zGtacsxLccTRs20vS5XjGg9A+LIuCWGjGrVtqrCKBm2I2bKliOGq3bJNsVYZcaq9gnbc0Wvlk+L4WrF9YRpTBklS0xUqkITU7bTJ8qGK2qOaVWFLlwxaU14j4tSzaialimKL95BUrRspyROOpUZp0+4FVGs2ZOmK2Zsr1ypecJvNqdlpyu244V0njEZtF21RM0ZLxtOyTL5fkyzzpbSuCcTiLICvigf3QpF0d1wBewxnsde1oNKpp0CS6wCRZluLCsK+BkIObw3lcD4ZoD/6wLw8M3iPOZn0KujrJPvw7bMfVRmpBjhwVI1NX0NEhh/8oXKuOHZFYcJ/iByrmCiHlB87VNgfBHCZQ1EWDvffUc0KP/TKEtxsS1R34VN4lePt5bPpvhJNPjz2J7Z7Y+7GpT9fFnZGoJnlJYMvj/8m1z87mnsYV3bh/Rd/17mAA/jDHmLeoQP4xOZARoNptfr5FEKLBBBV9M8VScPUYm11clOX5+jER+HRHM5xSjK2v5c+nbVLUl/GFWkzCJsV+8Ifwo7GG/2WQ/aWmk8g/HLcvhJ6F2hGssbx3DvLCgo0TeOc38t0dZa+vvT7CgfwV7e0yx1G988NlX2jy2S/6j1K2nAn8R8SYoEdqAQ4JFQSN0icd8VOT1ReGBh3rcvB/dNBHZlUF8niiwGM5dI5H8xr7D1667aI0t3jac/eD77XuFw6Cic8K+XeQgOkfXBjEQv7RnadgupcAgKMAJj8ByUYRpOwSnyzwA+rTGR); Raid BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzEVU9sG8UX9htv4/HzL/2509Iu0wimDiaJE5fddV2agBQ3EiEtRYk4cSpdZzf2qsk6stdNuZUoB1SgkdKClMABRUggIBx8QE0kLj0ZIVBUQXvgQFQo/xQJEomqCClCs97UqYS4VbzDrOf9+b73vufVYhuFOKggoBPOQBEm4QLAqwDvAnwAwP7nR4mMHgP+dZTSOOXnMEL/WgL1dgwVujUHqNBfr8jz7dU4ttC6q36/GyN0Y71V/XY3KnRzvRUVensWMEL/WG+VdRF6cwnU2Qgq9K3VOCr0izclwMxleX66GscI/e0TUOt7UaGvzwKG6eZ4oidedzq/ugTanfzIG4twEciMMwfkTn4ByE/HPwT6/jvw8UW45KzBjDNA/dYhByukXctqhpY1tIyuaRldz2b0dNbIapqm6Yam6WlNy9QJrJLYLXIjgm24B+l1ZReG6S82bzwSEdyF4bRRwaNIeQsqdHnjVCJVIx00zA7WiEqBRReIDEzfHeHRhUiQI3ORpHV8LKibvjuSUGvkIRreWRBksXnCfgTTsmxLGJpxNK3raUMTnV7RFo5r2ZO2a9muJ8yq5XgdFTGkd/WJE6O2GDDLZccuC7NgOq6YKtquGCw7BccSI6Upu9wjHK8iuvVsUgyWSxVPWOaEWbDFWKksdDHhuD2iaFZE1bXssjBERYzbY95TolA1y5ZtifzL95HkbcctiLNuacrtEZWSyFedcasiphyvWKp6Qjab0dOTJcf1AjrPHPfbLtui6o4WTbdgW/wwJll7U2k8kPJFWQEpykdbgShGJVgBe5JnsZt1oZraT4HFrgFFhW4sqyrIDIQMtiZiGN306/+cAx48WZRHZAa9Ocza+SHck/o/VRjJh7i/VF1L3oIYRp85Vxo1PafkMsEfQc5VjNV8ii8lBUYXIVhWX4jt5/vui/rwPwyzBBc7Eo292CB+7XRz+WyCn0WTv4T7U/vkuNd82M+W1e0heEptyiD9wd/kyjfPYRfr2DmkdP0zzBEexBnyJvUQH8SnU320xZ/eqJEnKDBfBENL8kSNPErDbE+N7Jb6nAzJOiR6hVNsQUU/nEneQ92W9LthNZxahJ3qneDPYhvjjT5rflsr9ecxel0JXgmjI1BjeeMUHpwGFcP08mku19LSXEtvb5Kd5EPYzbsaUPfqG9eGyvLaJPkXrJ9JHX4n1ivhkG9Hcn49EgqJLRKVrtCFsdzDC/PSPu8/NObbjX5jjaiK6E9dJaH/xLzc9q8Hao8vPTCeXv984b3c8cCROyO/MPPgX0Jr/akwvXpgYMeHSINjkIMhGIEXoQiTcB7Ok78HAHJsM/E=).
+
+**Points that do nothing for this spec:** **Improved Channeling** (5) only counts toward the points the tree needs before **Arcane Subtlety**.
 
 ## Other builds of this spec
 

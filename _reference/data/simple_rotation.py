@@ -143,15 +143,33 @@ DROP = re.compile(r"time to the next auto attack|time until .* is ready (?:<|≤
                   r"the global cooldown|is known|current cost|excess cat energy|^false$|^true$|mana \+|internal cooldown|energy (?:<|≤)")
 
 
-TECH_NAMED = re.compile(r"guard|realism|range\b|delay|^has |^use |assigned", re.I)
+TECH_NAMED = re.compile(r"guard|realism|range\b|delay|^has |^use |assigned|eureka|racial", re.I)
+# racial buffs (2026-11-21, the audit session's A4: the Wrack page's Siphon Life read "when Blood Fury is not active", an orc racial; the
+# pages assume no racials): a condition on one never holds when it asks for the buff, and always holds when it asks for its absence
+RACIAL_AURAS = {"Blood Fury", "Berserking", "Stoneform", "Will of the Forsaken", "Shadowmeld", "Perception", "Escape Artist",
+                "War Stomp", "Cannibalize", "Arcane Torrent", "Mana Tap", "Gift of the Naaru", "Every Man for Himself"}
 
 
 def _clause(c, spell, ok):
     """One condition clause -> (kind, plain text) or None to drop it. Kinds: keep, stack, when, until."""
     c = _unwrap(c)
     ors = _split_top(c, " or ")
-    if len(ors) > 1:   # an either-or group: every part a player can see, joined with "or" (parts the page cannot show are dropped)
-        got = [g for g in (_clause(p, spell, ok) for p in ors) if g]
+    if len(ors) > 1:   # an either-or group: every part a player can see, joined with "or"
+        raw = [_clause(p, spell, ok) for p in ors]
+        if any(g and g[0] == "true" for g in raw):   # a part that always holds: so does the group
+            return ("true", None)
+        raw = [g for g in raw if not (g and g[0] == "false")]   # a part that never holds drops out
+        if not raw:
+            return ("false", None)
+        # 2026-11-21 (the audit session's A2): a part the page cannot word is not dropped from an either-or, since the rest alone is a
+        # stricter rule than the rotation's (Frostfire's Scorch had read "fewer than 4 stacks", where the rule only blocks a second
+        # Scorch while one is being cast): the line says its timing is in the guide
+        hidden = [g for g in raw if g is None or g[0] == "drop"]
+        if hidden and len(hidden) == len(raw):   # nothing of it can be worded (a swing-timing guard): fine tuning, left out
+            return None
+        if hidden:
+            return ("named", "")
+        got = raw
         whens = list(dict.fromkeys(v for k, v in got if k == "when"))
         if len(whens) > 1:
             return ("when", EITHER + " or ".join(w.replace(EITHER, "") for w in whens))   # marked: _parse says "either" beside other conditions
@@ -160,6 +178,11 @@ def _clause(c, spell, ok):
         return next((g for g in got if g[0] in ("keep", "stack", "named")), None)
     if len(_cond_parts(c)) > 1:   # a group inside an either-or part: all of it or nothing
         got = [_clause(p, spell, ok) for p in _cond_parts(c)]
+        if any(g and g[0] == "false" for g in got):
+            return ("false", None)
+        got = [g for g in got if not (g and g[0] == "true")]
+        if not got:
+            return ("true", None)
         if got and all(g and g[0] == "when" for g in got):
             return ("when", " and ".join(g[1] for g in got))
         if any(g and g[0] == "named" for g in got):
@@ -170,9 +193,23 @@ def _clause(c, spell, ok):
     m = re.match(r"time until (.+?) is ready ≥ ([\d.]+)s?$", c)
     if m and float(m.group(2)) >= 1:
         return ("when", f"**{m.group(1)}** is at least {_sec(m.group(2))} second{"s" if _sec(m.group(2)) != "1" else ""} from ready")
+    m = re.fullmatch(r"(not )?(.+?) is (?:up|on the target|active)", c)
+    if m and m.group(2) in RACIAL_AURAS:
+        return ("true", None) if m.group(1) else ("false", None)
+    # an aura the page cannot name (an item's or an enchant's buff: the Demonology list's Shadow Bolt on Revelation, spell 1323392): the line
+    # needs gear the page does not assume, so it never fires there (2026-11-21, the audit session's A5)
+    m = re.fullmatch(r"(not )?spell \d+ is (?:up|on the target)", c)
+    if m:   # an aura no data names: a line that needs it is left out; its absence is not worded
+        return None if m.group(1) else ("false", None)
+    m = re.fullmatch(r"(not )?(.+?) is (?:up|on the target)", c)
+    if m and m.group(2) in GEAR_MISSING:   # a buff of gear the page's set does not have (Revelation, a weapon enchant)
+        return ("true", None) if m.group(1) else ("false", None)
     if DROP.search(c):
-        return None
+        return ("drop", None)
     m = re.fullmatch(r"(not )?“(.+?)”", c.strip())   # a named condition of the official simulator's rotations (2026-11-11:
+    if m and CONST_NAMED.get(m.group(2)) is not None:              # a switch: always or never
+        v = CONST_NAMED[m.group(2)] != bool(m.group(1))
+        return ("true", None) if v else ("false", None)
     if m:                                                        # Feral's "Rip due", "Midfight Bite is worthwhile")
         if TECH_NAMED.search(m.group(2)):   # a timing guard or a setting (Retribution's "WF guard", "Judge realism protection";
             return None                     # a rogue's "Use Ambush Opener"): dropped like the swing timers it stands for
@@ -180,6 +217,16 @@ def _clause(c, spell, ok):
     m = re.match(r"time until (.+?) is ready > 0s?$", c)
     if m:
         return ("when", f"{m.group(1)} is on cooldown")
+    m = re.fullmatch(r"(not )?(.+?) is ready", c)   # (2026-11-21, B10: Subtlety's Preparation, once Vanish is on cooldown)
+    if m and m.group(2) != spell:
+        return ("when", f"{m.group(2)} is on cooldown" if m.group(1) else f"{m.group(2)} is ready")
+    m = re.fullmatch(r"(not )?(.+?) is being cast", c)
+    if m:
+        return ("when", f"you are not already casting {m.group(2)}" if m.group(1) else f"you are casting {m.group(2)}")
+    m = re.fullmatch(r"ticks of (.+?) channeled (≥|>) ([\d.]+)", c)
+    if m:
+        n = _count(m.group(2), m.group(3))
+        return ("when", f"{n} tick{'s' if n != 1 else ''} of it have landed")
     # "Whirlwind while Bloodthirst is more than 1.5 seconds away" (2026-11-09: the Fury page listed Whirlwind above Bloodthirst with no
     # condition, since this clause fell through and was dropped)
     m = re.match(r"time until (.+?) is ready > ([\d.]+)s?$", c)
@@ -216,6 +263,9 @@ def _clause(c, spell, ok):
         if m.group(1) == spell:
             return ("keep", spell)
         return ("when", f"{m.group(1)} has under {_n(m.group(3))} seconds left")
+    m = re.fullmatch(r"not (.+?) is on the target", c)
+    if m and m.group(1) != spell:
+        return ("when", f"{m.group(1)} is not on the target")
     m = re.match(r"(?:time left on (.+?) (?:≤|<) .+|not (.+?) is on the target|(.+?) should be refreshed)$", c)
     if m:
         x = next(g for g in m.groups() if g)
@@ -228,22 +278,23 @@ def _clause(c, spell, ok):
     m = re.match(r"(not )?(.+?) is up$", c)
     if m:
         if m.group(2) == spell:
-            return ("keep", spell) if m.group(1) else None
+            return ("keepself", spell) if m.group(1) else None   # "is up" is your own aura (render_sim_presets: a target's reads "on the target")
         if m.group(2) not in ok and m.group(2) in other_class_spells(CUR[0]):   # another class's buff (a rogue's Expose Armor for a warrior)
             return None
         return ("when", f"{m.group(2)} is {'not ' if m.group(1) else ''}active")
-    m = re.match(r"stacks of (.+?) (≥|>|=|<|≤) ([\d.]+)$", c)
-    if m:
-        name, op, x = m.groups()
+    m = re.match(r"stacks of (.+?)( on the target| on you)? (≥|>|=|<|≤) ([\d.]+)$", c)
+    if m:   # whose stacks: the target's (Scorch's Fire Vulnerability) or yours (Fingers of Frost; 2026-11-21, the audit session's A3)
+        name, where, op, x = m.groups()
+        who = "you have" if where == " on you" else "the target has"
         if op in ("<", "≤"):
             n = math.ceil(float(x) - 1e-9) if op == "<" else math.floor(float(x) + 1e-9) + 1   # "fewer than n"
             if name == spell:
                 return ("stack", f"{n - 1}")
-            return ("when", f"the target has fewer than {n} stacks of {name}")   # a debuff the spell builds (Scorch's Fire Vulnerability)
+            return ("when", f"{who} fewer than {n} stacks of {name}")
         n = _count(op, x)
         if op == "=":
-            return ("when", f"{name} has {n} stack{'s' if n != 1 else ''}")
-        return ("when", f"{name} has {n} or more stacks")
+            return ("when", f"{who} exactly {n} stack{'s' if n != 1 else ''} of {name}")
+        return ("when", f"{who} {n} or more stacks of {name}")
     m = re.match(r"execute phase \(E(\d+)\)$", c)
     if m:
         return ("when", f"the target is below {m.group(1)}% health")
@@ -339,6 +390,12 @@ KEEP_UP = {"Summon Hawk", "Ghostly Strike"}   # kept up on you (or as your pet),
 SELF_STACK = {"Arcane Blast": "keep its buff stacked on you"}
 MANA_TOOLS = {"Evocation", "Life Tap", "Innervate", "Mana Tide Totem", "Dark Pact", "Shadowfiend", "Aspect of the Viper", "Dark Sacrifice"}
 CUR = [None]   # the class being parsed (for _clause's other-class test)
+# the rotation's named conditions that are constants, {name: True/False} (render_modes sets it for each page from the rotation file;
+# 2026-11-21: Subtlety's "Use Backstab" line, a switch the rotation keeps off, had read as a line of the list)
+CONST_NAMED = {}
+# buffs of gear (an enchant, an item) that the page's gear set does not have: a line that needs one never fires there (render_modes sets
+# it per page; 2026-11-21, A5: the Demonology list's Shadow Bolt on Revelation, an enchant the simulated weapon lacks)
+GEAR_MISSING = set()
 FLOOR = [None]   # (spell, seconds) when the line just parsed is an always-ready spell cast while more than that many seconds are left
 
 
@@ -371,10 +428,11 @@ def _parse(cls, t):
     if km:
         sp = km.group(1).strip()
         return ([sp], f"**{sp}**: " + SELF_STACK.get(sp, "keep it on the target"), swing) if sp in ok else None
-    cm = re.match(r"^(?:[Cc]ast|[Cc]hannel) (.+?)(?: \(interrupt.*)?$", act)
+    cm = re.match(r"^(?:[Cc]ast|[Cc]hannel) (.+?)(?: \((?:interrupt|stop it when) (.*)\))?$", act)
     if not cm:
         return None
     sp = cm.group(1).strip()
+    stop = cm.group(2)
     rk = re.search(r" \(rank (\d+)\)$", sp)   # a lower rank (render_sim_presets, 2026-10-15): named on the line
     if rk:
         sp = sp[:rk.start()]
@@ -414,8 +472,9 @@ def _parse(cls, t):
         return ([sp], f"**{sp}**", swing)
     # a spell cast only when the filler's cast would not land before the fight ends (2026-11-20: the official Destruction list's Searing
     # Pain, "(cast time of Incinerate + spellTravelTime) > time left in the fight", had read as a plain line above Incinerate)
-    if re.fullmatch(r"\(?cast time of .+?(?: \+ spellTravelTime)?\)? (?:>|≥) time left in the fight", whole):
-        return ([sp], "LATE:3", swing)
+    lf = re.fullmatch(r"\(?cast time of (.+?)(?: \+ spellTravelTime)?\)? (?:>|≥) time left in the fight", whole)
+    if lf:   # named for the spell whose cast would not land (2026-11-21, B11: Death Coil said "another Wrack"; it is a Shadow Bolt)
+        return ([sp], f"LATE:3:{lf.group(1)}", swing)
     lm = re.fullmatch(r"time left in the fight (?:≤|<) ([\d.]+)s?", whole)
     if lm:
         left = float(lm.group(1))
@@ -425,7 +484,10 @@ def _parse(cls, t):
     win = _window(cond)
     if win:
         return ([sp], f"**{sp}**: a big cooldown, {win}", swing)
-    clauses = [c for c in (_clause(x, sp, ok) for x in (_cond_parts(cond) if cond else [])) if c]
+    raw = [_clause(x, sp, ok) for x in (_cond_parts(cond) if cond else [])]
+    if any(c and c[0] == "false" for c in raw):   # a condition that never holds on the page's setup (a racial's buff, gear's buff)
+        return None
+    clauses = [c for c in raw if c and c[0] not in ("true", "drop")]
     kinds = dict((k, v) for k, v in clauses if k not in ("when", "until", "named"))
     named = any(k == "named" for k, v in clauses)
     whens = list(dict.fromkeys(v for k, v in clauses if k == "when"))
@@ -433,9 +495,9 @@ def _parse(cls, t):
     if "stack" in kinds:
         n = int(kinds['stack']) + 1 if int(kinds['stack']) < 5 else 5
         txt = f"**{sp}**: stack its buff to {n} on you" if sp in SELF_STACK else f"**{sp}**: stack it to {n} on the target"
-    elif "keep" in kinds:
+    elif "keep" in kinds or "keepself" in kinds:
         txt = f"**{sp}**: " + ("keep it down" if sp.endswith("Totem") else SELF_STACK[sp] if sp in SELF_STACK
-                               else "keep it up" if is_self(sp) or sp in KEEP_UP else "keep it on the target")
+                               else "keep it up" if is_self(sp) or sp in KEEP_UP or "keepself" in kinds else "keep it on the target")
     else:
         txt = f"**{sp}**"
     if rk and txt == f"**{sp}**":
@@ -453,6 +515,12 @@ def _parse(cls, t):
         txt += (" when " if txt in (f"**{sp}**", f"**{sp}** (rank {rk.group(1) if rk else ''})") else ", when ") + " and ".join(whens).replace(" and you have ", " and ")
     if until:
         txt += f"{',' if txt != f'**{sp}**' else ''} until the last {_n(until)} seconds of the fight"
+    if stop:   # a channel's stop rule (2026-11-21, the audit session's A8)
+        sc = _clause(stop, sp, ok)
+        if sc and sc[0] == "when":
+            txt += f"; stop it when {sc[1].replace(EITHER, '')}"
+        else:
+            named = True
     if named:   # a condition the rotation names (official simulator rotations): the guide below says when
         txt += " (timing: see below)"   # (the page's guide, or the link to the full rotation under the list)
     return ([sp], txt, swing)
@@ -521,7 +589,8 @@ def simplify(cls, texts, late=None, extras=None):
         if sw and all(s in plain for s in sp):
             continue
         if txt.startswith("LATE:"):
-            pend.append((sp[0], float(txt[5:]), None))
+            lt = txt[5:].split(":", 1)
+            pend.append((sp[0], float(lt[0]), lt[1] if len(lt) > 1 else None))
             continue
         if txt.startswith("TWIST:"):
             a, b, w = txt[6:].split("|")
@@ -612,7 +681,13 @@ def pre_pull(cls, pre, held=None):
     talent (`held`: the build's talent names; 2026-10-09: Amplify Curse was listed for builds without it)."""
     ok = class_spells(cls)
     tal = talent_names(cls)
-    names = [m.group(1).strip() for _, a in pre for m in [re.match(r"^(?:cast|channel|activate) (.+)$", a)] if m]
+    def on(a):   # a pre-pull line behind a switch the rotation keeps on (2026-11-21, B15: Marksmanship's "Use Sniper Shot")
+        m = re.match(r"^if (not )?“(.+?)”: (.+)$", a)
+        if not m:
+            return a
+        v = CONST_NAMED.get(m.group(2))
+        return m.group(3) if v is not None and v != bool(m.group(1)) else ""
+    names = [m.group(1).strip() for _, a in pre for m in [re.match(r"^(?:cast|channel|activate) (.+?)(?: \(rank \d+\))?(?: on [a-z ]+)?$", on(a))] if m]
     return [n for n in dict.fromkeys(names) if n in ok and n not in RACIAL and (held is None or n not in tal or n in held)]
 
 
@@ -630,6 +705,11 @@ def mcd_window(texts):
 ADV_TEXT = {"Preparation": "once a fight, right after **Vanish**: it finishes the cooldown on your other rogue abilities, so you can Vanish again",
             "Swift Judgement": "whenever it is ready: it finishes the cooldown on **Judgement** and makes the next one free, so judge again at once",
             "Readiness": "once a fight, right after your other cooldowns: it finishes their cooldowns"}
+
+
+def _often(n):
+    """How often a spell is needed, from its casts a fight: "in about 3 of 10 fights", or below one in ten "in about 1 of 17 fights"."""
+    return f"in about {round(n * 10)} of 10 fights" if n >= 0.095 else f"in about 1 of {max(11, round(1 / max(n, 1e-6)))} fights"
 
 
 def advanced(cls, casts, shown, window=None):
@@ -651,9 +731,9 @@ def advanced(cls, casts, shown, window=None):
         elif is_self(sp):   # an aura, a seal or a form is no cooldown (2026-11-08 full page read S1: "Retribution Aura: a cooldown")
             out.append(f"**{sp}**: " + ("put it up at the start and keep it up" if n < 2 else f"part of the rotation ({times})"))
         elif n < 8 and cooldowns(cls).get(sp) is False:   # no cooldown: say how often, not "whenever it is ready"
-            out.append(f"**{sp}**: {times}" if n >= 0.95 else f"**{sp}**: now and then (in about {round(n * 10)} of 10 fights)")
+            out.append(f"**{sp}**: {times}" if n >= 0.95 else f"**{sp}**: now and then (" + _often(n) + ")")
         elif sp in MANA_TOOLS:
-            out.append(f"**{sp}**: when you run out of mana (needed in about {min(10, round(n * 10))} of 10 fights)" if n < 0.95 else
+            out.append(f"**{sp}**: when you run out of mana (needed " + _often(n) + ")" if n < 0.95 else
                        f"**{sp}**: when you run low on mana ({times})")
         elif n >= 8:   # a regular spell the short list had no room for
             out.append(f"**{sp}**: part of the rotation (about {n:.0f} times a fight)")
@@ -666,5 +746,5 @@ def advanced(cls, casts, shown, window=None):
             else:
                 out.append(f"**{sp}**: a cooldown, use it at the start of the fight and again whenever it is ready ({times})")
         else:
-            out.append(f"**{sp}**: now and then (in about {round(n * 10)} of 10 fights)")
+            out.append(f"**{sp}**: now and then (" + _often(n) + ")")
     return out

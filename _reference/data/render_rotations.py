@@ -275,8 +275,10 @@ def spec_data(cls, spec, setting="dummy"):
     apl = json.load(open(raidrun().apl_path(entry, repo(), "raid" if raid_view else None), encoding="utf-8"))   # ours when apl_opt.py found a better one
     N = names()
     pm = presets_mod()
+    defs = {v.get("name"): v.get("value") for v in apl.get("valueVariables") or []}
     lines = [{"text": pm.action(it.get("action", {}), N), "ids": spell_ids(it.get("action", {})),
-              "kind": next(iter(k for k in it.get("action", {}) if k != "condition"), "")}
+              "kind": next(iter(k for k in it.get("action", {}) if k != "condition"), ""),
+              "never": pm.const_value(it.get("action", {}).get("condition"), defs) is False}
              for it in expand_groups(apl)]
     pre = [(p.get("doAtValue", {}).get("const", {}).get("val"), pm.action(p.get("action", {}), N)) for p in apl.get("prepullActions") or []]
     grant = talent_of_spell(cls, entry)
@@ -290,6 +292,9 @@ def spec_data(cls, spec, setting="dummy"):
         alloc = decode(cls, x.get("talents"))
         per_line = []
         for ln in lines:
+            if ln.get("never"):   # a switch the rotation keeps off: the line never fires, whatever its spell's casts elsewhere
+                per_line.append({"used": False, "cpm": 0.0, "why": "a switch this rotation keeps off"})
+                continue
             if not ln["ids"]:
                 per_line.append({"used": True, "cpm": None, "why": ""})
                 continue

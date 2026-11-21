@@ -62,7 +62,6 @@ Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best bui
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
 | 5 | Furor | any utility talent legal at that tier | Measures +0.5% DPS in the community simulator (noise): these points are free to move. |
-| 5 | Ferocity | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Feral Charge | Feral Swiftness, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Leader of the Pack | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 
@@ -112,7 +111,7 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 2 | if “Drop Prowl for this opener”: cancel Prowl | as ready |
 | 3 | if Faerie Fire is known and Faerie Fire should be refreshed: cast Faerie Fire | 1.9 |
 | 4 | if unitDistance > 5: move to 5 yd | as ready |
-| 5 | if unitDistance > 5: wait until not unitDistance > 5 | as ready |
+| 5 | if unitDistance > 5: wait until not (unitDistance > 5) | as ready |
 | 6 | if “Ready to activate MCP”: cast Manual Crowd Pummeler | as ready |
 | 7 | if “Final-global Bite”: cast Ferocious Bite (rank 5) | 0.3 |
 | 8 | use every other cooldown when ready | as ready |
@@ -203,6 +202,7 @@ Damage by ability:
 
 ## Notes
 
+- 2026-11-21: flex entries removed for Ferocity (5): they said the points measured +0.0% and were free to move, but the raid play check of 2026-11-20 measures these talents as live (their removal changes the full-raid DPS); a point is free only when its removal leaves the DPS the same.
 - Adopted from the community simulator on 2026-09-26: opt-feral-cat-dps-raid-dps beat the previous draft by +7.9% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Powershifting: with Furor retaining energy on shift and Omen of Clarity baseline, the Wolfshead Helm loop may not exist — the rotation must be re-learned.
 - Mangle in the demo requires Bear Form; cats keep Shred/Claw.

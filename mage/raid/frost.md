@@ -6,15 +6,15 @@
 
 ## How to play
 
-**Before the pull:** **Ice Barrier**.
+**Before the pull:** **Ice Barrier**, **Frostbolt**.
 
 **Talents with no line below:** **Ice Block**: a defensive for emergencies, so it has no line.
 
 **Then press the first one that is ready**, top to bottom:
 
 1. **Cold Snap** when **Cone of Cold** is at least 7 seconds from ready; no global cooldown, so press it alongside the others
-2. **Cone of Cold** when Winter's Chill has 5 stacks
-3. **Ice Lance** when Fingers of Frost has 1 stack
+2. **Cone of Cold** when the target has exactly 5 stacks of Winter's Chill
+3. **Ice Lance** when you have exactly 1 stack of Fingers of Frost and you are casting Frostbolt
 4. **Ice Barrier** when Frigid Power has under 3 seconds left
 5. **Frostbolt** (rank 10)
 
@@ -22,7 +22,7 @@
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Evocation**: when you run out of mana (needed in about 1 of 10 fights)
+- **Evocation**: when you run out of mana (needed in about 1 of 12 fights)
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
@@ -56,8 +56,10 @@ Frost in a raid builds **Winter's Chill** on the boss with **Frostbolt** and spe
 
 | Tree | Points | Talents (ranks) |
 |---|---|---|
-| Arcane | 18 | Wand Specialization 2, Arcane Resilience 3, Arcane Subtlety 2, Magic Absorption 2, Arcane Concentration 5, Arcane Geometry 1, Arcane Meditation 3 |
-| Frost | 33 | Improved Frostbolt 5, Precision 3, Ice Shards 5, Improved Blizzard 1, Ice Lance 1, Arctic Reach 2, Ice Block 1, Shatter 3, Improved Cone of Cold 3, Cold Snap 1, Fingers of Frost 2, Winter's Chill 5, Ice Barrier 1 |
+| Arcane | 18 | Wand Specialization 2 (tier point: needed to reach Arcane Subtlety), Arcane Resilience 3 (tier point: needed to reach Arcane Subtlety), Arcane Subtlety 2, Magic Absorption 2, Arcane Concentration 5, Arcane Geometry 1 (tier point: needed to reach Arcane Meditation), Arcane Meditation 3 |
+| Frost | 33 | Improved Frostbolt 5, Precision 3, Ice Shards 5, Improved Blizzard 1 (tier point: needed to reach Arctic Reach), Ice Lance 1, Arctic Reach 2 (tier point: needed to reach Improved Cone of Cold), Ice Block 1, Shatter 3, Improved Cone of Cold 3, Cold Snap 1, Fingers of Frost 2, Winter's Chill 5, Ice Barrier 1 |
+
+A talent marked as a tier point measures nothing in the simulator's raid fight; the build holds it for the tier it opens (or the talent it is needed for).
 
 ## The numbers
 
@@ -100,6 +102,8 @@ Frost in a raid builds **Winter's Chill** on the boss with **Frostbolt** and spe
 | Ranged/relic | [Wand of Biting Cold](https://www.wowhead.com/forever/item=19108) · *quest: The Legend of Korrak* | [Wand of Biting Cold](https://www.wowhead.com/forever/item=19108) · *quest: The Legend of Korrak* | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* |
 
 **Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Quests and dungeons: [full raid](https://wowsims.com/forever/mage/dps/#eJzEVE1oY1UUznfvy8vJyZDJ3DqdlzujpjEdy8PKywtxJm6SDgqCSoq4EPxhEmxnAtYWdNFla4tI0bZUBBssSC1U6h/NqnZnIRARRDcKurBERLtSu+iyyn1JrIp0VzyLd8875zv3ft/H5fIVQgIOUhjCTdzGFGaA14B3gfcBdS7oCtO9Dt20iRKkJzhCmytwfoqxRXOfgCW9+gxb9PES2KYfas6PcY7QZ8twvo+zpOYtlrT4NNt0OG5mIjS3BGcpwpL+qLCk2SpLWp5gSWu32KbXJ5xWH0uaeZYt2ngL6fsSrdrQl4vwjqqjb6xjAWK+tgJxVK1D/DyyBdp8Bx8uYLG2j/naDQoYo4Rdkfazvu/nvazneZ4/7A97+Vze87ycqeRyWT+fbQl8JWJt8bXFD3FEh1nSwVi60BAPkFRuQ9xLUMmG6CcoqgvTbpY1bf2V1SMmOxjTNlsshrOc6+7SLKeHGmKQ5Gnj3SF1jx7ghBsnS4lqqLNVfrCNc8yPV16spJ6cnHzhJXVBn+dYA8QWre06Dh4MqStaB3O2km2EzLmMXBthliPlh1VK38UX3T6yFW2ZGm2XO5BrZqGdirqqM3zZTRJUfA8xlvReVYlE2IEBMPJmoe2y8vT9nFFp7nfvIKjoHuwOCdNnZJkOcaKIfv32UTWg7w7QloruBugPjke7/Lomq6juOeVI99o/pLIm4wJ9+vtj6k59+RU4LOnN5/QF9zzZgUcRDrMsFAbdt9ERayx03H6yVWzvxKMuwZ6OjE6fAupxN6ikuvTf3uV73l3Ufczf2eYWH4w5+LeqL8q/iBZ+E8/PylAQmdK6MYIFIX0soqYUmhkvJeurJj4vDowH8U3R3xeOlSq6OyL0v8TLpV52pnH1ozM7pxB8n9gojXQLpZvmSVtF8BPaL7qSdi7d+NvL5+E6SngEo3gKtzGFaUyLPwcAAAa3cw==); Pre-BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzEVE1oY1UUznffy3snJ0Pmza3TebkzahrTsTysvLwQZ+Im6aAgqKSIC1cyDU6ZgHYKdtFl1S6kaFv8KTYqSC0o1SrNQmp3BgoRReJGQTclUrQiVLvoRihyXxKrIt2VOYtzzz3nO+ee71tcvkRw4CKFIVzHTUxiBngZeA/4EJBnwqrQ1atQX1tEDqkptunPdbi7cTbppU/BJv36hvZvtxy2qDnh/pRgm75YhPtjgg1qTLBJuwtgiw7GdZdNS3uOu2CzSfO/OWzSUkv7z1oOG7T4HNu0/wncZh+b9MqCHrz6JtL3Oc3q0Dfz8A8ro6+uYA5itvoaxGGlBvHzyBrog3fw8RzmqzuYrV6jcHGUsCXSQTYIgryf9X3fD4aDYT+fy/u+n9OZXC4b5LNNgZaIt8W3Jj/EtoqyQXs30oW6eIAM6dXFvQSZrIt+gqSa0OXtsqK1v6OaraO9G8pik8VwlnPdKdvl9FBdDJJxUnu3Sd6jBtjxEmRKUYl0RuUH2zjD/PjYxFjqyVu3nn1enlNnOV4HsUnvbrkuHozIS0qFfZY02ojodxm5NqJsjJQflil1F5/3+siStKZztFHuQK7ogzbH5GWV4YtekiATDcTZoPcrUjhRFxrAyOuDNsrSV/dzRqa537uDIGMNWJ0ldJ2RZTrAMSPa//5ROaDuDtGmjG2F6I+ORrv7dUWWMdVTyjW8K/+iyoq0CvT5H4/JO9XFF+GyQa8/rc55Z8kKNbI5ykahMOi9hQ5ZLaHr9ZMl441jjboL9nhkVPoEUG93jUrKC/+vXb6n3XnVx/yDZYdkXPyX1VflX0QTv4tnXjAioWVKK1oIFoT0kYjpVGRmvJSsLWv7sjgwHtp3xWBHuGaq6G2KyG2xqVIvOlW7vH5q7xRC/8RqaaSbKF3XP9sywktkp+gZtHnh2j8+QB9XUcIjGMVTuIlJTGNa/DUA8Gm7/g==); Raid BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzEVEFoY1UUzXn/5/+bm5lM5tXp/LwZNY3pWD5Wfn6IM3GTdFAQVFLEhSuZBmdooLQFRbqs0oUUbaG1YKOCVEGpVmgWUrssFCKFUjcWFKFEilYKtV10IxR5P0mrIt0V7+L+++89971zzuLxTUIcDpLowT0MYhTjwDvAJ8AXgLwUTIWe3oHatIjipN5km/5cgrMbZZNOZsAm/f6+zh9uxdmi+rDzS4xtOty/7PwUY5OO9i+zSbvTYJt+ngv2bNpegjNts0kbczjNE7M6f7MVZ5sOvoZT72CT3p0GG3Q0lHoiXq/0bE7BOy73v7eASYiJygzEcbkK8WvfIujzj/DVJKYqO5io3KWAOopYFSk/4/t+zst4nuf5vX6vl8vmPM/L6k42m/FzmbrAlog2xPcmP8O2CrNBe/dT+Zp4igzp1sTjBJmoiU6CpKrQ4/WSosXTqmrrau++sthk0ZvhbOuU9VKqpya6yThvvbUkH1NdHHdjZEpRDjWPynU3cIn5xYHhgeTLIyNDr8ur6gpHayA26eNVx8HTIXlTqWDPkkYDIX0vI9tAmI2+0rMyqR7ha24HWZIWdY+WS03Ibf2hlQF5S6X5hpsgyNgaomzQp2Up4mEHGsDI6Q8tl6SnnuS0THGn+xBBRtZgNUnoOSPDdIQzRXSw/bzsUo8GaFNGVgP0lyf9LX4tk2VEtZ1yDPf2P6SyIu0CfXv4gnxY3XgbDhs0+6q66l4hK/DI5jAb+Xy3+wGaYrWFjttJloyunXnUItjWkVapc0Bt7hqVkNf/27tc27trqoP5R8sOxDj4t6qN0m+ijj/Ea28ZoSDSxQVtBAtC6kREdCs0/qCYqM7r+K7Q9SCIHwr+jnDMZMFdEaH/Jd4otqsLjVtLF3ZPPsgvfVbsazWK9/TbNo/gJ7RTcA1auX73b0+ghzso4jn04xUMYhRjGBN/DQCYRL3H).
+
+**Points that do nothing for this spec:** **Arcane Geometry** (1) only counts toward the points the tree needs before **Arcane Meditation**; **Arcane Resilience** (3) and **Wand Specialization** (2) only count toward the points the tree needs before **Arcane Subtlety**; **Arctic Reach** (2) only counts toward the points the tree needs before **Improved Cone of Cold**; **Improved Blizzard** (1) only counts toward the points the tree needs before **Arctic Reach**.
 
 ## Other builds of this spec
 

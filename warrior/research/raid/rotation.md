@@ -51,7 +51,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 1. if execute phase (E20): cast Recklessness
 2. if time until Bloodthirst is ready > 1.5s: cast Whirlwind
 3. cast Bloodthirst
-4. if stacks of Sunder Armor < 1 and not Expose Armor is up: cast Sunder Armor
+4. if stacks of Sunder Armor on the target < 1 and not Expose Armor is on the target: cast Sunder Armor
 5. cast Goblin Sapper Charge
 6. cast Dense Dynamite
 7. if (time left in the fight ≤ 45s or time left in the fight ≥ 211.5s): cast Death Wish
@@ -90,7 +90,7 @@ The tables below are the training-dummy rotation, filtered per build:
 | 7 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready | as ready | as ready | as ready |
 | 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready | as ready | as ready | as ready |
 | 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready | as ready | as ready | as ready |
-| 10 | if stacks of Sunder Armor < 4 and not Expose Armor is up: cast Sunder Armor | 7.2 | 7.2 | 7.2 | 7.2 |
+| 10 | if stacks of Sunder Armor on the target < 4 and not Expose Armor is on the target: cast Sunder Armor | 7.2 | 7.2 | 7.2 | 7.2 |
 | 11 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready | as ready | as ready | as ready |
 | 12 | if (time left in the fight ≤ 25.5s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready | as ready | as ready | as ready |
 | 13 | cast Whirlwind | 4.8 | 4.8 | 4.7 | 4.8 |
@@ -98,7 +98,7 @@ The tables below are the training-dummy rotation, filtered per build:
 | 15 | cast Death Wish | 0.3 | 0.3 | 0.3 | 0.3 |
 | 16 | cast Whirlwind | 4.8 | 4.8 | 4.7 | 4.8 |
 | 17 | if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring | 1.1 | 1.1 | 0.8 | 1.2 |
-| 18 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.2 | 7.2 | 7.2 | 7.2 |
+| 18 | if stacks of Sunder Armor on the target < 5: cast Sunder Armor | 7.2 | 7.2 | 7.2 | 7.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
@@ -125,14 +125,14 @@ Damage by ability:
 | 6 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
 | 7 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
 | 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
-| 9 | if stacks of Sunder Armor < 4 and not Expose Armor is up: cast Sunder Armor | 7.2 |
+| 9 | if stacks of Sunder Armor on the target < 4 and not Expose Armor is on the target: cast Sunder Armor | 7.2 |
 | 10 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 11 | if (time left in the fight ≤ 25.5s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
 | 12 | cast Whirlwind | 3.9 |
 | 13 | cast Mortal Strike | 4.7 |
 | 14 | cast Whirlwind | 3.9 |
 | 15 | if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring | 0.7 |
-| 16 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.2 |
+| 16 | if stacks of Sunder Armor on the target < 5: cast Sunder Armor | 7.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Blood Fury, cast Spearing Strike, cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Bloodthirst (needs the Bloodthirst talent).
 
@@ -204,7 +204,7 @@ Our rotation `fury-dw-raid.apl.json` (our base rotation `dps_no_reck.apl.json` w
 The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring change what mana is worth), top priority first:
 
 1. if time left in the fight ≥ 30s: cast Bloodthirst
-2. if stacks of Sunder Armor < 1 and not Expose Armor is up: cast Sunder Armor
+2. if stacks of Sunder Armor on the target < 1 and not Expose Armor is on the target: cast Sunder Armor
 3. cast Goblin Sapper Charge
 4. cast Dense Dynamite
 5. if (time left in the fight ≤ 45s or time left in the fight ≥ 211.5s): cast Death Wish
@@ -241,18 +241,17 @@ The tables below are the training-dummy rotation, filtered per build:
 | 4 | if time left in the fight ≤ 33.75s: cast Recklessness | 0.3 | 0.3 | 0.3 | 0.3 |
 | 5 | cast Goblin Sapper Charge | as ready | as ready | as ready | as ready |
 | 6 | cast Dense Dynamite | as ready | as ready | as ready | as ready |
-| 7 | if false: cast Recklessness | 0.3 | 0.3 | 0.3 | 0.3 |
-| 8 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready | as ready | as ready | as ready |
-| 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready | as ready | as ready | as ready |
+| 7 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready | as ready | as ready | as ready |
+| 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready | as ready | as ready | as ready |
+| 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready | as ready | as ready | as ready |
 | 10 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready | as ready | as ready | as ready |
-| 11 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready | as ready | as ready | as ready |
-| 12 | if (time left in the fight ≤ 33.75s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready | as ready | as ready | as ready |
-| 13 | cast Whirlwind | 5.4 | 5.3 | 5.3 | 5.3 |
-| 14 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 5.4 | 5.3 | 5.3 | 5.3 |
-| 15 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 | 0.3 | 0.3 | 0.3 |
-| 16 | if stacks of Sunder Armor < 5: cast Sunder Armor | 6.5 | 6.6 | 6.6 | 6.6 |
+| 11 | if (time left in the fight ≤ 33.75s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready | as ready | as ready | as ready |
+| 12 | cast Whirlwind | 5.4 | 5.3 | 5.3 | 5.3 |
+| 13 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 5.4 | 5.3 | 5.3 | 5.3 |
+| 14 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 | 0.3 | 0.3 | 0.3 |
+| 15 | if stacks of Sunder Armor on the target < 5: cast Sunder Armor | 6.5 | 6.6 | 6.6 | 6.6 |
 
-Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Heroic Strike (rank 8), cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
+Lines of the simulator's rotation these builds never cast: cast Recklessness (a switch this rotation keeps off); cast Blood Fury, cast Heroic Strike (rank 8), cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
 Damage by ability:
 
@@ -272,19 +271,18 @@ Damage by ability:
 | 2 | if time left in the fight ≤ 33.75s: cast Recklessness | 0.3 |
 | 3 | cast Goblin Sapper Charge | as ready |
 | 4 | cast Dense Dynamite | as ready |
-| 5 | if false: cast Recklessness | 0.3 |
-| 6 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
-| 7 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
+| 5 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
+| 6 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
+| 7 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
-| 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
-| 10 | if (time left in the fight ≤ 33.75s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
-| 11 | cast Whirlwind | 4.2 |
-| 12 | cast Mortal Strike | 5.0 |
-| 13 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 4.2 |
-| 14 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 |
-| 15 | if stacks of Sunder Armor < 5: cast Sunder Armor | 6.7 |
+| 9 | if (time left in the fight ≤ 33.75s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
+| 10 | cast Whirlwind | 4.2 |
+| 11 | cast Mortal Strike | 5.0 |
+| 12 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 4.2 |
+| 13 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 |
+| 14 | if stacks of Sunder Armor on the target < 5: cast Sunder Armor | 6.7 |
 
-Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Bloodthirst (needs the Bloodthirst talent); cast Blood Fury, cast Spearing Strike, cast Heroic Strike (rank 8), cast Cleave, cast Berserker Stance (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Bloodthirst (needs the Bloodthirst talent); cast Recklessness (a switch this rotation keeps off); cast Blood Fury, cast Spearing Strike, cast Heroic Strike (rank 8), cast Cleave, cast Berserker Stance (its condition never held in these fights).
 
 Damage by ability:
 
@@ -325,7 +323,7 @@ Before the pull: at -1s: cast Battle Shout (rank 6).
 | 4 | cast Revenge (rank 5) | 10.8 | 10.8 | 10.8 | 10.8 |
 | 5 | if rage < 90: cast Bloodrage | 1.0 | 1.0 | 1.0 | 1.0 |
 | 6 | cast Shield Slam | 8.8 | 8.9 | 9.0 | 9.0 |
-| 7 | if stacks of Sunder Armor < 5: cast Sunder Armor | 14.5 | 14.9 | 14.8 | 14.9 |
+| 7 | if stacks of Sunder Armor on the target < 5: cast Sunder Armor | 14.5 | 14.9 | 14.8 | 14.9 |
 | 8 | if rage ≥ 33.75: cast Heroic Strike (rank 8) | 15.5 | 18.9 | 19.4 | 18.7 |
 | 9 | if not Rend is on the target: cast Rend | 3.3 | 3.2 | 3.3 | 3.3 |
 | 10 | cast Sunder Armor | 14.5 | 14.9 | 14.8 | 14.9 |
@@ -391,7 +389,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 1. cast Overpower
 2. cast Slam
-3. if stacks of Sunder Armor < 1 and not Expose Armor is up: cast Sunder Armor
+3. if stacks of Sunder Armor on the target < 1 and not Expose Armor is on the target: cast Sunder Armor
 4. cast Goblin Sapper Charge
 5. cast Dense Dynamite
 6. if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish
@@ -436,7 +434,7 @@ Before the pull: at -1s: cast Battle Stance.
 | 14 | if not Rend is on the target: cast Rend | 2.4 | 2.4 | 2.5 | 2.5 |
 | 15 | cast Slam | 3.5 | 3.5 | 3.5 | 3.5 |
 | 16 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 | 0.3 | 0.3 | 0.3 |
-| 17 | if stacks of Sunder Armor < 5: cast Sunder Armor | 5.8 | 5.5 | 5.7 | 5.4 |
+| 17 | if stacks of Sunder Armor on the target < 5: cast Sunder Armor | 5.8 | 5.5 | 5.7 | 5.4 |
 | 18 | if not Berserker Stance is up: cast Berserker Stance | 26.1 | 26.2 | 26.2 | 26.2 |
 | 19 | cast Spearing Strike | 1.2 | 1.2 | 1.2 | 1.1 |
 | 20 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 0.9 | 0.8 | 0.9 | 0.8 |

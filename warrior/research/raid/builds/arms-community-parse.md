@@ -113,7 +113,7 @@ Before the pull: at -1s: cast Battle Stance.
 | 14 | if not Rend is on the target: cast Rend | 2.5 |
 | 15 | cast Slam | 3.5 |
 | 16 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 |
-| 17 | if stacks of Sunder Armor < 5: cast Sunder Armor | 5.4 |
+| 17 | if stacks of Sunder Armor on the target < 5: cast Sunder Armor | 5.4 |
 | 18 | if not Berserker Stance is up: cast Berserker Stance | 26.2 |
 | 19 | cast Spearing Strike | 1.1 |
 | 20 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 0.8 |

@@ -55,7 +55,7 @@ The official wowsims/forever simulator's own Frostfire build (FFB, 0/29/22) for 
 2. **Fingers of Frost** — Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen
 3. **Critical Mass** — Increases the critical strike chance of your Fire spells by 6%
 4. **Shatter** — Increases the critical strike chance of all your spells against Frozen targets by 50%
-5. **Master of Elements** — Your Fire and Frost critical strikes will refund 30% of their base mana cost
+5. **Master of Elements** — Your Fire and Frost critical strikes refund 10% of their base mana cost at this build's 1 point (30% at 3)
 
 ## Rank among our builds and the community simulator's
 
@@ -133,14 +133,14 @@ Before the pull: cast Pyroblast.
 
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-ffb-raid`](frostfire-ffb-raid.md) casts/min |
 |---|---|---|
-| 1 | if mana < current cost and (not Read Leyline is known or not Read Leyline is ready or Energized is up): channel Evocation (interrupt it when a higher line is ready) | as ready |
-| 2 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability < 4 or not spellIsCasting): cast Scorch | 4.4 |
-| 3 | if stacks of Fire Vulnerability = 5: use every other cooldown when ready | as ready |
-| 4 | if stacks of Heating Up = 3 and not spellIsCasting: cast Pyroblast | 2.9 |
-| 5 | if stacks of Fingers of Frost < 2: cast Fire Blast | 5.1 |
+| 1 | if mana < current cost and (not Read Leyline is known or not Read Leyline is ready or Energized is up): channel Evocation (stop it when mana % ≥ 99%) | as ready |
+| 2 | if (stacks of Fire Vulnerability on the target < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability on the target < 4 or not Scorch is being cast): cast Scorch | 4.4 |
+| 3 | if stacks of Fire Vulnerability on the target = 5: use every other cooldown when ready | as ready |
+| 4 | if stacks of Heating Up on you = 3 and not Pyroblast is being cast: cast Pyroblast | 2.9 |
+| 5 | if stacks of Fingers of Frost on you < 2: cast Fire Blast | 5.1 |
 | 6 | cast Frostfire Bolt | 9.8 |
 
-Lines of the simulator's rotation these builds never cast: strict sequence: cast Read Leyline; channel Evocation (interrupt it when a higher line is ready) (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: strict sequence: cast Read Leyline; channel Evocation (stop it when mana % ≥ 99%) (its condition never held in these fights).
 
 Damage by ability:
 

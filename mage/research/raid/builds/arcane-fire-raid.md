@@ -125,7 +125,7 @@ Before the pull: at -2s: if Ice Barrier is known: cast Ice Barrier.
 | 3 | cast Fire Blast | 7.9 |
 | 4 | if Arcane Blast is up and time left on Arcane Blast < cast time of Arcane Blast: cast Arcane Blast | 6.8 |
 | 5 | cast Arcane Wrath | 5.3 |
-| 6 | if stacks of Arcane Blast ≥ 1.5 and time left in the fight ≥ 10s: cast Frostbolt (rank 10) | 2.6 |
+| 6 | if stacks of Arcane Blast on you ≥ 1.5 and time left in the fight ≥ 10s: cast Frostbolt (rank 10) | 2.6 |
 | 7 | cast Arcane Blast | 6.8 |
 | 8 | cast Robe of the Archmage | as ready |
 | 9 | cast Mana Citrine | as ready |

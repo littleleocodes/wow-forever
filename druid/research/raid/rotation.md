@@ -27,7 +27,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 2. keep Insect Swarm on up to 1 targets (refresh under 0ms)
 3. use every other cooldown when ready
 4. if mana % ≤ 10%: cast Innervate
-5. if Eclipse is known and stacks of Eclipse < 2: cast Wrath
+5. if Eclipse is known and stacks of Eclipse on you < 2: cast Wrath
 6. cast Starfire (rank 6)
 
 The tables below are the training-dummy rotation, filtered per build:
@@ -42,7 +42,7 @@ Before the pull: at -10s: activate Moonkin Form.
 | 2 | if mana % ≤ 30%: cast Innervate | 0.3 |
 | 3 | if time left in the fight ≥ 10s: keep Insect Swarm on up to 1 targets (refresh under 0ms) | 3.8 |
 | 4 | keep Moonfire on up to 1 targets (refresh under 0ms) | 4.1 |
-| 5 | if Eclipse is known and stacks of Eclipse < 2: cast Wrath | 8.8 |
+| 5 | if Eclipse is known and stacks of Eclipse on you < 2: cast Wrath | 8.8 |
 | 6 | cast Starfire (rank 6) | 14.2 |
 | 7 | if mana % < 15%: cast Starfire (rank 6) | 14.2 |
 | 8 | cast Wrath | 8.8 |
@@ -121,7 +121,7 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 2 | if “Drop Prowl for this opener”: cancel Prowl | as ready | as ready | as ready |
 | 3 | if Faerie Fire is known and Faerie Fire should be refreshed: cast Faerie Fire | 1.9 | 1.9 | 1.9 |
 | 4 | if unitDistance > 5: move to 5 yd | as ready | as ready | as ready |
-| 5 | if unitDistance > 5: wait until not unitDistance > 5 | as ready | as ready | as ready |
+| 5 | if unitDistance > 5: wait until not (unitDistance > 5) | as ready | as ready | as ready |
 | 6 | if “Ready to activate MCP”: cast Manual Crowd Pummeler | as ready | as ready | as ready |
 | 7 | if not Cat Form is up: cast Cat Form | 0.3 | 0.3 | 0.3 |
 | 8 | if “Final-global Bite”: cast Ferocious Bite (rank 5) | 0.7 | 0.7 | 0.6 |
@@ -235,7 +235,7 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 2 | if “Drop Prowl for this opener”: cancel Prowl | as ready |
 | 3 | if Faerie Fire is known and Faerie Fire should be refreshed: cast Faerie Fire | 1.9 |
 | 4 | if unitDistance > 5: move to 5 yd | as ready |
-| 5 | if unitDistance > 5: wait until not unitDistance > 5 | as ready |
+| 5 | if unitDistance > 5: wait until not (unitDistance > 5) | as ready |
 | 6 | if “Ready to activate MCP”: cast Manual Crowd Pummeler | as ready |
 | 7 | if not Cat Form is up: cast Cat Form | 0.3 |
 | 8 | if “Final-global Bite”: cast Ferocious Bite (rank 5) | 0.3 |
@@ -364,7 +364,7 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 2 | if “Drop Prowl for this opener”: cancel Prowl | as ready | as ready |
 | 3 | if Faerie Fire is known and Faerie Fire should be refreshed: cast Faerie Fire | 1.9 | 1.9 |
 | 4 | if unitDistance > 5: move to 5 yd | as ready | as ready |
-| 5 | if unitDistance > 5: wait until not unitDistance > 5 | as ready | as ready |
+| 5 | if unitDistance > 5: wait until not (unitDistance > 5) | as ready | as ready |
 | 6 | if “Ready to activate MCP”: cast Manual Crowd Pummeler | as ready | as ready |
 | 7 | if “Final-global Bite”: cast Ferocious Bite (rank 5) | 0.3 | 0.3 |
 | 8 | use every other cooldown when ready | as ready | as ready |
@@ -478,7 +478,7 @@ Before the pull: at -10s: if Furor is taken and rage < 10: cast Dire Bear Form; 
 | # | Priority (the first line whose condition holds is cast) | [`opt-feral-bear-tank-raid-tank`](builds/opt-feral-bear-tank-raid-tank.md) casts/min | [`feral-combat-ml-tank`](builds/feral-combat-ml-tank.md) casts/min | [`feral-bear-tank`](builds/feral-bear-tank.md) casts/min |
 |---|---|---|---|---|
 | 1 | if unitDistance > 5: move to 5 yd | as ready | as ready | as ready |
-| 2 | if unitDistance > 5: wait until not unitDistance > 5 | as ready | as ready | as ready |
+| 2 | if unitDistance > 5: wait until not (unitDistance > 5) | as ready | as ready | as ready |
 | 3 | if unitDistance ≤ 5: cast Manual Crowd Pummeler | as ready | as ready | as ready |
 | 4 | if health % ≤ “Barkskin health threshold”: cast Barkskin | 1.0 | 1.0 | 1.0 |
 | 5 | if Goblin Sapper Charge is known: cast Goblin Sapper Charge | as ready | as ready | as ready |
@@ -489,7 +489,7 @@ Before the pull: at -10s: if Furor is taken and rage < 10: cast Dire Bear Form; 
 | 10 | if “Ready to return to the main weapon”: swap to the Main item set | as ready | as ready | as ready |
 | 11 | if number of targets = 2 and “Enough rage to queue Maul in cleave”: cast Maul | 191.1 | 163.6 | 161.8 |
 | 12 | if number of targets = 3 and “Enough rage to queue Maul for three-target Swipe”: cast Maul | 191.1 | 163.6 | 161.8 |
-| 13 | if not number of targets = 3 and not number of targets = 2 and “Enough rage to queue Maul”: cast Maul | 191.1 | 163.6 | 161.8 |
+| 13 | if not (number of targets = 3) and not (number of targets = 2) and “Enough rage to queue Maul”: cast Maul | 191.1 | 163.6 | 161.8 |
 
 Lines of the simulator's rotation these builds never cast: cast Feral Charge (Bear), cast Elune's Light, cast Frenzied Regeneration, cast Faerie Fire, cast Demoralizing Roar, cast Swipe, cast Primal Bite (rank 3) (its condition never held in these fights); cast Lacerate on currenttarget, cast Lacerate (needs the Lacerate talent).
 
@@ -512,7 +512,7 @@ Before the pull: at -10s: if Furor is taken and rage < 10: cast Dire Bear Form; 
 | # | Priority (the first line whose condition holds is cast) | *Bear* casts/min | *Hybrid* casts/min |
 |---|---|---|---|
 | 1 | if unitDistance > 5: move to 5 yd | as ready | as ready |
-| 2 | if unitDistance > 5: wait until not unitDistance > 5 | as ready | as ready |
+| 2 | if unitDistance > 5: wait until not (unitDistance > 5) | as ready | as ready |
 | 3 | if unitDistance ≤ 5: cast Manual Crowd Pummeler | as ready | as ready |
 | 4 | if health % ≤ “Barkskin health threshold”: cast Barkskin | 1.0 | 1.0 |
 | 5 | if Goblin Sapper Charge is known: cast Goblin Sapper Charge | as ready | as ready |
@@ -521,13 +521,13 @@ Before the pull: at -10s: if Furor is taken and rage < 10: cast Dire Bear Form; 
 | 8 | if selectedConjured and health % ≤ “Healthstone health threshold”: cast Major Healthstone on self | as ready | as ready |
 | 9 | if “Enrage can rescue the next attack”: cast Enrage | 1.0 | 1.0 |
 | 10 | if “Ready to return to the main weapon”: swap to the Main item set | as ready | as ready |
-| 11 | if number of targets = 2 and not druidBleedIsActive and auraIsInactive: cast Lacerate on currenttarget | 6.2 | 6.2 |
+| 11 | if number of targets = 2 and not druidBleedIsActive and not Lacerate is on the target: cast Lacerate on currenttarget | 6.2 | 6.2 |
 | 12 | if number of targets = 2 and “Enough rage to queue Maul in cleave”: cast Maul | 143.5 | 120.4 |
 | 13 | if number of targets = 3 and “Enough rage to queue Maul for three-target Swipe”: cast Maul | 143.5 | 120.4 |
-| 14 | if number of targets = 3 and not druidBleedIsActive and auraIsInactive: cast Lacerate on currenttarget | 6.2 | 6.2 |
-| 15 | if not number of targets = 3 and not number of targets = 2 and “Five-stack Lacerate is near expiry”: cast Lacerate | 6.2 | 6.2 |
-| 16 | if not number of targets = 3 and not number of targets = 2: cast Lacerate | 6.2 | 6.2 |
-| 17 | if not number of targets = 3 and not number of targets = 2 and “Enough rage to queue Maul”: cast Maul | 143.5 | 120.4 |
+| 14 | if number of targets = 3 and not druidBleedIsActive and not Lacerate is on the target: cast Lacerate on currenttarget | 6.2 | 6.2 |
+| 15 | if not (number of targets = 3) and not (number of targets = 2) and “Five-stack Lacerate is near expiry”: cast Lacerate | 6.2 | 6.2 |
+| 16 | if not (number of targets = 3) and not (number of targets = 2): cast Lacerate | 6.2 | 6.2 |
+| 17 | if not (number of targets = 3) and not (number of targets = 2) and “Enough rage to queue Maul”: cast Maul | 143.5 | 120.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Feral Charge (Bear), cast Elune's Light, cast Frenzied Regeneration, cast Faerie Fire, cast Demoralizing Roar, cast Swipe, cast Primal Bite (rank 3) (its condition never held in these fights).
 

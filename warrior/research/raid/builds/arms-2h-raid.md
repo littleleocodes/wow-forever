@@ -64,7 +64,6 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
-| 1 | Impale | any utility talent legal at that tier | Measures +0.6% DPS in the community simulator (noise): these points are free to move. |
 | 3 | Deflection | Improved Heroic Strike, any utility talent legal at that tier | Measures +0.4% DPS in the community simulator (noise): these points are free to move. |
 | 3 | Improved Rend | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 5 | Improved Tactical Mastery | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
@@ -134,7 +133,7 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
 | 7 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
 | 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
 | 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
-| 10 | if stacks of Sunder Armor < 4 and not Expose Armor is up: cast Sunder Armor | 7.2 |
+| 10 | if stacks of Sunder Armor on the target < 4 and not Expose Armor is on the target: cast Sunder Armor | 7.2 |
 | 11 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 12 | if (time left in the fight ≤ 25.5s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
 | 13 | cast Whirlwind | 4.7 |
@@ -142,7 +141,7 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
 | 15 | cast Death Wish | 0.3 |
 | 16 | cast Whirlwind | 4.7 |
 | 17 | if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring | 0.8 |
-| 18 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.2 |
+| 18 | if stacks of Sunder Armor on the target < 5: cast Sunder Armor | 7.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
@@ -159,6 +158,7 @@ Damage by ability:
 
 ## Notes
 
+- 2026-11-21: flex entries removed for Impale (1), Enrage (5): they said the points measured +0.0% and were free to move, but the raid play check of 2026-11-20 measures these talents as live (their removal changes the full-raid DPS); a point is free only when its removal leaves the DPS the same.
 - Adopted from the community simulator on 2026-09-26: opt-arms-2h-raid-raid-dps beat the previous draft by +8.5% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Rotation hypothesis: Rend up -> Mortal Strike on cooldown -> Overpower when Bloodthrill procs -> Slam filler -> Heroic Strike when rage-capped.
 - This is a Battle Stance build; Sweeping Strikes is both the cleave and the Mortal Strike prerequisite.

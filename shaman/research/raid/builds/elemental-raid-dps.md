@@ -67,7 +67,6 @@ Allocation adopted on 2026-09-26 from `cand-elemental-dps-r1`, the best build in
 | 2 | Anticipation | Guardian Totems, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Anticipation | Elemental Weapons, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Toughness | Stormstrike, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 4 | Reverberation | any utility talent legal at that tier | Measures -0.7% DPS in the community simulator (noise): these points are free to move. |
 
 ## Rank among our builds and the community simulator's
 
@@ -128,6 +127,7 @@ Damage by ability:
 
 ## Notes
 
+- 2026-11-21: flex entries removed for Reverberation (4): they said the points measured +0.0% and were free to move, but the raid play check of 2026-11-20 measures these talents as live (their removal changes the full-raid DPS); a point is free only when its removal leaves the DPS the same.
 - Adopted from the community simulator on 2026-09-26: cand-elemental-dps-r1 beat the previous draft by +5.4% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Rotation hypothesis: Flame Shock -> Lava Burst on cooldown -> Lightning Bolt filler; Chain Lightning on 2+ targets.
 - Thundering Strikes (Enhancement tier 1) is now +5% crit with all spells — a 5/31/15 variant that drops Mana Tide for it is plausible.

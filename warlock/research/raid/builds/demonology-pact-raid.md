@@ -114,7 +114,7 @@ Demonology to Demonic Pact, a Forever talent that keeps Demonic Sacrifice's effe
 |---|---|---|
 | 1 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption (rank 6) | 3.5 |
 | 2 | cast Eye of the Beast | as ready |
-| 3 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
+| 3 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 |
 | 4 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
 | 5 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 6 | use every other cooldown when ready | as ready |

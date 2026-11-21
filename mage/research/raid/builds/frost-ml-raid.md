@@ -98,15 +98,15 @@ Before the pull: cast Ice Barrier; cast Frostbolt (rank 10).
 
 | # | Priority (the first line whose condition holds is cast) | [`frost-ml-raid`](frost-ml-raid.md) casts/min |
 |---|---|---|
-| 1 | if mana % ≤ 5%: channel Evocation (interrupt it when a higher line is ready) | as ready |
+| 1 | if mana % ≤ 5%: channel Evocation (stop it when mana % ≥ 99%) | as ready |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if number of targets ≥ 3 and stacks of Fingers of Frost ≥ 1: cast Cone of Cold | 3.8 |
-| 4 | if number of targets ≥ 3 and stacks of Fingers of Frost ≥ 1: cast Ice Lance | 1.8 |
+| 3 | if number of targets ≥ 3 and stacks of Fingers of Frost on you ≥ 1: cast Cone of Cold | 3.8 |
+| 4 | if number of targets ≥ 3 and stacks of Fingers of Frost on you ≥ 1: cast Ice Lance | 1.8 |
 | 5 | if number of targets ≥ 3 and time until Cone of Cold is ready ≥ 5: cast Cold Snap | 0.3 |
-| 6 | if number of targets ≥ 3 and auraIsInactive: cast Ice Barrier | 1.3 |
+| 6 | if number of targets ≥ 3 and not Ice Barrier is up: cast Ice Barrier | 1.3 |
 | 7 | if time until Cone of Cold is ready ≥ 7: cast Cold Snap | 0.3 |
-| 8 | if stacks of Winter's Chill = 5: cast Cone of Cold | 3.8 |
-| 9 | if stacks of Fingers of Frost = 1 and spellIsCasting: cast Ice Lance | 1.8 |
+| 8 | if stacks of Winter's Chill on the target = 5: cast Cone of Cold | 3.8 |
+| 9 | if stacks of Fingers of Frost on you = 1 and Frostbolt is being cast: cast Ice Lance | 1.8 |
 | 10 | if time left on Frigid Power ≤ 3: cast Ice Barrier | 1.3 |
 | 11 | cast Frostbolt (rank 10) | 19.2 |
 

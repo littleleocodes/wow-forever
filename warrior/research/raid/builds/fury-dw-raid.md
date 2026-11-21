@@ -64,7 +64,6 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
-| 2 | Improved Heroic Strike | any utility talent legal at that tier | Measures +0.3% DPS in the community simulator (noise): these points are free to move. |
 | 3 | Improved Rend | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 5 | Improved Tactical Mastery | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 2 | Booming Voice | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
@@ -140,18 +139,17 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
 | 4 | if time left in the fight ≤ 33.75s: cast Recklessness | 0.3 |
 | 5 | cast Goblin Sapper Charge | as ready |
 | 6 | cast Dense Dynamite | as ready |
-| 7 | if false: cast Recklessness | 0.3 |
-| 8 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
-| 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
+| 7 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
+| 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
+| 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 10 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
-| 11 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
-| 12 | if (time left in the fight ≤ 33.75s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
-| 13 | cast Whirlwind | 5.3 |
-| 14 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 5.3 |
-| 15 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 |
-| 16 | if stacks of Sunder Armor < 5: cast Sunder Armor | 6.6 |
+| 11 | if (time left in the fight ≤ 33.75s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
+| 12 | cast Whirlwind | 5.3 |
+| 13 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 5.3 |
+| 14 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 |
+| 15 | if stacks of Sunder Armor on the target < 5: cast Sunder Armor | 6.6 |
 
-Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Heroic Strike (rank 8), cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
+Lines of the simulator's rotation these builds never cast: cast Recklessness (a switch this rotation keeps off); cast Blood Fury, cast Heroic Strike (rank 8), cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
 Damage by ability:
 
@@ -165,6 +163,7 @@ Damage by ability:
 
 ## Notes
 
+- 2026-11-21: flex entries removed for Improved Heroic Strike (2), Enrage (5): they said the points measured +0.0% and were free to move, but the raid play check of 2026-11-20 measures these talents as live (their removal changes the full-raid DPS); a point is free only when its removal leaves the DPS the same.
 - Adopted from the community simulator on 2026-09-26: opt-fury-dw-raid-raid-dps beat the previous draft by +5.5% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Weaponmaster (the Sword/Axe Specialization replacement) sits at Arms tier 5 (20 points) — unreachable without dropping Bloodthirst, exactly like Classic.
 - Improved Battle Shout and Improved Demoralizing Shout are gone: raid Battle Shout is no longer a talent responsibility.

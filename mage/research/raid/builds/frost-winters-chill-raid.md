@@ -113,12 +113,12 @@ Before the pull: cast Ice Barrier; cast Frostbolt (rank 10).
 
 | # | Priority (the first line whose condition holds is cast) | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) casts/min |
 |---|---|---|
-| 1 | if mana % ≤ 5%: channel Evocation (interrupt it when a higher line is ready) | as ready |
+| 1 | if mana % ≤ 5%: channel Evocation (stop it when mana % ≥ 99%) | as ready |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if number of targets ≥ 3 and stacks of Fingers of Frost ≥ 1: cast Cone of Cold | 3.9 |
+| 3 | if number of targets ≥ 3 and stacks of Fingers of Frost on you ≥ 1: cast Cone of Cold | 3.9 |
 | 4 | if number of targets ≥ 3 and time until Cone of Cold is ready ≥ 5: cast Cold Snap | 0.3 |
 | 5 | if time until Cone of Cold is ready ≥ 7: cast Cold Snap | 0.3 |
-| 6 | if stacks of Winter's Chill = 5: cast Cone of Cold | 3.9 |
+| 6 | if stacks of Winter's Chill on the target = 5: cast Cone of Cold | 3.9 |
 | 7 | cast Frostbolt (rank 10) | 20.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Read Leyline, cast Blizzard (its condition never held in these fights); cast Ice Lance (needs the Ice Lance talent); cast Ice Barrier (needs the Ice Barrier talent).

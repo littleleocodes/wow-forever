@@ -161,6 +161,12 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 ## Open ideas, ranked by what they could still find
 
+1a. **Three raid rotation leads for the optimality pass (2026-11-21, the audit session's C18-C20 from its player read of the raid
+    pages; noted, not run)**. C18: the alternative that loses 2.7% to the official rotation. C19: the Demonology dummy rotation, below
+    its base. C20: the Arcane-Frost dummy rotation, without Arcane Wrath. Each wants the parity race of the 2026-11-20 rule (ours and
+    the official rotation x our builds and theirs, full raid, 10,000 fights, seeds 1 / 2) or, for a dummy rotation, a search from the
+    file's own base; the pages are unaffected until then (the dummy rotations rank nothing on a player page).
+
 0z. **The raid filler audit's tags missed Forever's pushback wording (2026-11-20; found on the audit session's Deflection question,
     fixed the same day)**. utility_tags.py's interrupt pattern read `lose .* casting time`, which needs a word between "lose" and "casting
     time"; Forever's tooltips say "to not lose casting time when you take damage" (Improved Channeling, Ice Barrier, Burning Soul, Spiritual

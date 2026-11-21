@@ -38,8 +38,8 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 2. if Fingers of Frost is up: use every other cooldown when ready
 3. if number of targets ≥ 3: groupReference
 4. if time until Cone of Cold is ready ≥ 7: cast Cold Snap
-5. if stacks of Winter's Chill = 5: cast Cone of Cold
-6. if stacks of Fingers of Frost = 1 and spellIsCasting: cast Ice Lance
+5. if stacks of Winter's Chill on the target = 5: cast Cone of Cold
+6. if stacks of Fingers of Frost on you = 1 and Frostbolt is being cast: cast Ice Lance
 7. if time left on Frigid Power ≤ 3: cast Ice Barrier
 8. cast Frostbolt (rank 10)
 
@@ -51,15 +51,15 @@ Before the pull: cast Ice Barrier; cast Frostbolt (rank 10).
 
 | # | Priority (the first line whose condition holds is cast) | [`frost-ml-raid`](builds/frost-ml-raid.md) casts/min | [`frost-med-raid`](builds/frost-med-raid.md) casts/min | *Frost Med* casts/min | *Frost Incin* casts/min |
 |---|---|---|---|---|---|
-| 1 | if mana % ≤ 5%: channel Evocation (interrupt it when a higher line is ready) | as ready | as ready | as ready | as ready |
+| 1 | if mana % ≤ 5%: channel Evocation (stop it when mana % ≥ 99%) | as ready | as ready | as ready | as ready |
 | 2 | use every other cooldown when ready | as ready | as ready | as ready | as ready |
-| 3 | if number of targets ≥ 3 and stacks of Fingers of Frost ≥ 1: cast Cone of Cold | 3.8 | 3.6 | 3.6 | 3.5 |
-| 4 | if number of targets ≥ 3 and stacks of Fingers of Frost ≥ 1: cast Ice Lance | 1.8 | 1.7 | 1.7 | 1.6 |
+| 3 | if number of targets ≥ 3 and stacks of Fingers of Frost on you ≥ 1: cast Cone of Cold | 3.8 | 3.6 | 3.6 | 3.5 |
+| 4 | if number of targets ≥ 3 and stacks of Fingers of Frost on you ≥ 1: cast Ice Lance | 1.8 | 1.7 | 1.7 | 1.6 |
 | 5 | if number of targets ≥ 3 and time until Cone of Cold is ready ≥ 5: cast Cold Snap | 0.3 | 0.3 | 0.3 | 0.3 |
-| 6 | if number of targets ≥ 3 and auraIsInactive: cast Ice Barrier | 1.3 | 1.3 | 1.3 | 1.3 |
+| 6 | if number of targets ≥ 3 and not Ice Barrier is up: cast Ice Barrier | 1.3 | 1.3 | 1.3 | 1.3 |
 | 7 | if time until Cone of Cold is ready ≥ 7: cast Cold Snap | 0.3 | 0.3 | 0.3 | 0.3 |
-| 8 | if stacks of Winter's Chill = 5: cast Cone of Cold | 3.8 | 3.6 | 3.6 | 3.5 |
-| 9 | if stacks of Fingers of Frost = 1 and spellIsCasting: cast Ice Lance | 1.8 | 1.7 | 1.7 | 1.6 |
+| 8 | if stacks of Winter's Chill on the target = 5: cast Cone of Cold | 3.8 | 3.6 | 3.6 | 3.5 |
+| 9 | if stacks of Fingers of Frost on you = 1 and Frostbolt is being cast: cast Ice Lance | 1.8 | 1.7 | 1.7 | 1.6 |
 | 10 | if time left on Frigid Power ≤ 3: cast Ice Barrier | 1.3 | 1.3 | 1.3 | 1.3 |
 | 11 | cast Frostbolt (rank 10) | 19.2 | 18.7 | 18.7 | 18.2 |
 
@@ -80,10 +80,10 @@ Before the pull: cast Ice Barrier; cast Frostbolt (rank 10).
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-frost-raid-raid-dps-extwc`](builds/opt-frost-raid-raid-dps-extwc.md) casts/min | [`opt-frost-raid-raid-dps`](builds/opt-frost-raid-raid-dps.md) casts/min | *FFB* casts/min |
 |---|---|---|---|---|
-| 1 | if mana % ≤ 5%: channel Evocation (interrupt it when a higher line is ready) | as ready | as ready | as ready |
+| 1 | if mana % ≤ 5%: channel Evocation (stop it when mana % ≥ 99%) | as ready | as ready | as ready |
 | 2 | use every other cooldown when ready | as ready | as ready | as ready |
-| 3 | if number of targets ≥ 3 and stacks of Fingers of Frost ≥ 1: cast Ice Lance | 2.5 | 2.3 | 2.1 |
-| 4 | if stacks of Fingers of Frost = 1 and spellIsCasting: cast Ice Lance | 2.5 | 2.3 | 2.1 |
+| 3 | if number of targets ≥ 3 and stacks of Fingers of Frost on you ≥ 1: cast Ice Lance | 2.5 | 2.3 | 2.1 |
+| 4 | if stacks of Fingers of Frost on you = 1 and Frostbolt is being cast: cast Ice Lance | 2.5 | 2.3 | 2.1 |
 | 5 | cast Frostbolt (rank 10) | 22.9 | 22.1 | 19.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Read Leyline, cast Cone of Cold, cast Blizzard (its condition never held in these fights); cast Cold Snap (needs the Cold Snap talent); cast Ice Barrier (needs the Ice Barrier talent).
@@ -102,12 +102,12 @@ Before the pull: cast Ice Barrier; cast Frostbolt (rank 10).
 
 | # | Priority (the first line whose condition holds is cast) | [`frost-fingers-of-frost-raid`](builds/frost-fingers-of-frost-raid.md) casts/min |
 |---|---|---|
-| 1 | if mana % ≤ 5%: channel Evocation (interrupt it when a higher line is ready) | as ready |
+| 1 | if mana % ≤ 5%: channel Evocation (stop it when mana % ≥ 99%) | as ready |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if number of targets ≥ 3 and stacks of Fingers of Frost ≥ 1: cast Cone of Cold | 3.2 |
-| 4 | if number of targets ≥ 3 and stacks of Fingers of Frost ≥ 1: cast Ice Lance | 1.9 |
-| 5 | if stacks of Winter's Chill = 5: cast Cone of Cold | 3.2 |
-| 6 | if stacks of Fingers of Frost = 1 and spellIsCasting: cast Ice Lance | 1.9 |
+| 3 | if number of targets ≥ 3 and stacks of Fingers of Frost on you ≥ 1: cast Cone of Cold | 3.2 |
+| 4 | if number of targets ≥ 3 and stacks of Fingers of Frost on you ≥ 1: cast Ice Lance | 1.9 |
+| 5 | if stacks of Winter's Chill on the target = 5: cast Cone of Cold | 3.2 |
+| 6 | if stacks of Fingers of Frost on you = 1 and Frostbolt is being cast: cast Ice Lance | 1.9 |
 | 7 | cast Frostbolt (rank 10) | 20.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Read Leyline, cast Blizzard (its condition never held in these fights); cast Cold Snap (needs the Cold Snap talent); cast Ice Barrier (needs the Ice Barrier talent).
@@ -127,12 +127,12 @@ Before the pull: cast Ice Barrier; cast Frostbolt (rank 10).
 
 | # | Priority (the first line whose condition holds is cast) | [`frost-winters-chill-raid`](builds/frost-winters-chill-raid.md) casts/min |
 |---|---|---|
-| 1 | if mana % ≤ 5%: channel Evocation (interrupt it when a higher line is ready) | as ready |
+| 1 | if mana % ≤ 5%: channel Evocation (stop it when mana % ≥ 99%) | as ready |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if number of targets ≥ 3 and stacks of Fingers of Frost ≥ 1: cast Cone of Cold | 3.9 |
+| 3 | if number of targets ≥ 3 and stacks of Fingers of Frost on you ≥ 1: cast Cone of Cold | 3.9 |
 | 4 | if number of targets ≥ 3 and time until Cone of Cold is ready ≥ 5: cast Cold Snap | 0.3 |
 | 5 | if time until Cone of Cold is ready ≥ 7: cast Cold Snap | 0.3 |
-| 6 | if stacks of Winter's Chill = 5: cast Cone of Cold | 3.9 |
+| 6 | if stacks of Winter's Chill on the target = 5: cast Cone of Cold | 3.9 |
 | 7 | cast Frostbolt (rank 10) | 20.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Read Leyline, cast Blizzard (its condition never held in these fights); cast Ice Lance (needs the Ice Lance talent); cast Ice Barrier (needs the Ice Barrier talent).
@@ -151,7 +151,7 @@ Before the pull: cast Ice Barrier; cast Frostbolt (rank 10).
 
 | # | Priority (the first line whose condition holds is cast) | *Arcane* casts/min | *Arcane Fire* casts/min | *Fire Skyborne GT 180* casts/min | *Fire* casts/min | *Fire Skyborne LT 180* casts/min |
 |---|---|---|---|---|---|---|
-| 1 | if mana % ≤ 5%: channel Evocation (interrupt it when a higher line is ready) | as ready | as ready | as ready | as ready | as ready |
+| 1 | if mana % ≤ 5%: channel Evocation (stop it when mana % ≥ 99%) | as ready | as ready | as ready | as ready | as ready |
 | 2 | use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready |
 | 3 | cast Frostbolt (rank 10) | 20.3 | 20.3 | 20.3 | 20.3 | 20.3 |
 
@@ -197,7 +197,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 1. if time left on Frigid Power < 2s: cast Ice Barrier
 2. if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles (rank 7)
-3. if (time left on Arcane Blast < cast time of Arcane Blast or stacks of Arcane Blast < 2): cast Arcane Blast
+3. if (time left on Arcane Blast < cast time of Arcane Blast or stacks of Arcane Blast on you < 2): cast Arcane Blast
 4. if mana % ≤ 80%: cast Mana Ruby
 5. use every other cooldown when ready
 6. if mana % < 20% and time left in the fight > 25s: cast Evocation
@@ -217,7 +217,7 @@ Before the pull: at -2s: cast Ice Barrier.
 | 1 | if mana % ≤ 60% and mana % ≥ 60%: cast Mana Ruby | as ready |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles (rank 7) | 4.7 |
-| 4 | if (time left on Arcane Blast < cast time of Arcane Blast or stacks of Arcane Blast < 2): cast Arcane Blast | 8.3 |
+| 4 | if (time left on Arcane Blast < cast time of Arcane Blast or stacks of Arcane Blast on you < 2): cast Arcane Blast | 8.3 |
 | 5 | if Arcane Wrath is ready: cast Presence of Mind | 0.3 |
 | 6 | if time left in the fight ≥ 3s: cast Frostbolt (rank 10) | 13.9 |
 | 7 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.1 |
@@ -245,7 +245,7 @@ Before the pull: at -2s: cast Ice Barrier.
 | 1 | if mana % ≤ 60% and mana % ≥ 60%: cast Mana Ruby | as ready |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles (rank 7) | 4.5 |
-| 4 | if (time left on Arcane Blast < cast time of Arcane Blast or stacks of Arcane Blast < 2): cast Arcane Blast | 8.3 |
+| 4 | if (time left on Arcane Blast < cast time of Arcane Blast or stacks of Arcane Blast on you < 2): cast Arcane Blast | 8.3 |
 | 5 | if mana % < 5% and time left in the fight > 50s: cast Evocation | 0.2 |
 | 6 | if time left in the fight ≥ 3s: cast Frostbolt (rank 10) | 13.0 |
 | 7 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.1 |
@@ -321,11 +321,11 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 1. if Ice Barrier is known and time left on Frigid Power < 2s: cast Ice Barrier
 2. cast Major Mana Potion
-3. if stacks of Heating Up = 3 and not spellIsCasting: cast Pyroblast
+3. if stacks of Heating Up on you = 3 and not Pyroblast is being cast: cast Pyroblast
 4. cast Fire Blast
-5. if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability < 2 or not spellIsCasting): cast Scorch
-6. if stacks of Fire Vulnerability = 5: use every other cooldown when ready
-7. if (auraIsInactive or time left on Arcane Blast < cast time of Arcane Blast) and not spellIsCasting: cast Arcane Blast
+5. if (stacks of Fire Vulnerability on the target < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability on the target < 2 or not Scorch is being cast): cast Scorch
+6. if stacks of Fire Vulnerability on the target = 5: use every other cooldown when ready
+7. if (not Arcane Blast is up or time left on Arcane Blast < cast time of Arcane Blast) and not Arcane Blast is being cast: cast Arcane Blast
 8. if Missile Barrage is up: cast Arcane Missiles (rank 7)
 9. if time until Fire Blast is ready ≥ cast time of Fireball: cast Fireball (rank 11)
 10. cast Scorch
@@ -338,11 +338,11 @@ Before the pull: at -2s: if Ice Barrier is known: cast Ice Barrier.
 
 | # | Priority (the first line whose condition holds is cast) | [`fire-open-raid`](builds/fire-open-raid.md) casts/min | *Fire Skyborne GT 180* casts/min | *Fire* casts/min | *Fire Skyborne LT 180* casts/min | [`fire-raid`](builds/fire-raid.md) casts/min | [`opt-fire-raid-raid-dps`](builds/opt-fire-raid-raid-dps.md) casts/min |
 |---|---|---|---|---|---|---|---|
-| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 6.5 | 6.4 | 6.5 | 6.4 | 6.5 | 6.5 |
+| 1 | if (stacks of Fire Vulnerability on the target < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 6.5 | 6.4 | 6.5 | 6.4 | 6.5 | 6.5 |
 | 2 | if mana % ≤ 60% and mana % ≥ 25%: cast Mana Ruby | as ready | as ready | as ready | as ready | as ready | as ready |
 | 3 | use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready | as ready |
 | 4 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 |
-| 5 | if stacks of Heating Up = 3: cast Pyroblast | 5.3 | 5.3 | 5.3 | 5.3 | 5.2 | 5.1 |
+| 5 | if stacks of Heating Up on you = 3: cast Pyroblast | 5.3 | 5.3 | 5.3 | 5.3 | 5.2 | 5.1 |
 | 6 | cast Fire Blast | 5.9 | 5.9 | 5.9 | 5.8 | 6.0 | 6.0 |
 | 7 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 0.7 | 0.7 | 0.7 | 0.7 | 0.7 | 0.8 |
 | 8 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 5.6 | 5.6 | 5.5 | 5.5 | 5.6 | 5.8 |
@@ -369,11 +369,11 @@ Before the pull: at -2s: if Ice Barrier is known: cast Ice Barrier.
 
 | # | Priority (the first line whose condition holds is cast) | *FFB* casts/min |
 |---|---|---|
-| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 7.2 |
+| 1 | if (stacks of Fire Vulnerability on the target < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 7.2 |
 | 2 | if mana % ≤ 60% and mana % ≥ 25%: cast Mana Ruby | as ready |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 5 | if stacks of Heating Up = 3: cast Pyroblast | 4.4 |
+| 5 | if stacks of Heating Up on you = 3: cast Pyroblast | 4.4 |
 | 6 | cast Fire Blast | 4.9 |
 | 7 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 5.1 |
 | 8 | cast Robe of the Archmage | as ready |
@@ -398,7 +398,7 @@ Before the pull: at -2s: if Ice Barrier is known: cast Ice Barrier.
 
 | # | Priority (the first line whose condition holds is cast) | *Arcane Fire* casts/min | *Arcane* casts/min |
 |---|---|---|---|
-| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 39.7 | 39.7 |
+| 1 | if (stacks of Fire Vulnerability on the target < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 39.7 | 39.7 |
 | 2 | if mana % ≤ 60% and mana % ≥ 25%: cast Mana Ruby | as ready | as ready |
 | 3 | use every other cooldown when ready | as ready | as ready |
 | 4 | cast Robe of the Archmage | as ready | as ready |
@@ -421,7 +421,7 @@ Before the pull: at -2s: if Ice Barrier is known: cast Ice Barrier.
 | # | Priority (the first line whose condition holds is cast) | *Frost Incin* casts/min | *Frost Med* casts/min |
 |---|---|---|---|
 | 1 | if Ice Barrier is known and time left on Frigid Power < 2s: cast Ice Barrier | 1.3 | 1.3 |
-| 2 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 37.1 | 37.5 |
+| 2 | if (stacks of Fire Vulnerability on the target < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 37.1 | 37.5 |
 | 3 | if mana % ≤ 60% and mana % ≥ 25%: cast Mana Ruby | as ready | as ready |
 | 4 | use every other cooldown when ready | as ready | as ready |
 | 5 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 | 0.2 |
@@ -494,13 +494,13 @@ the official simulator's own arcaneFireFill rotation (2e6e77d84, trainer ranks),
 The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring change what mana is worth), top priority first:
 
 1. if Ice Barrier is known and time left on Frigid Power < 2s: cast Ice Barrier
-2. if stacks of Heating Up = 3 and not spellIsCasting: cast Pyroblast
+2. if stacks of Heating Up on you = 3 and not Pyroblast is being cast: cast Pyroblast
 3. cast Fire Blast
 4. if mana % ≤ 10%: groupReference
 5. if (Missile Barrage is up or Arcane Wrath is ready): use every other cooldown when ready
 6. if Missile Barrage is up: cast Arcane Missiles (rank 7)
 7. if Arcane Wrath is ready: strict sequence: cast Presence of Mind; cast Arcane Wrath
-8. if (stacks of Arcane Blast < 3 or time left on Arcane Blast < cast time of Arcane Blast or not spellIsCasting and stacks of Arcane Blast < 4): cast Arcane Blast
+8. if (stacks of Arcane Blast on you < 3 or time left on Arcane Blast < cast time of Arcane Blast or not Arcane Blast is being cast and stacks of Arcane Blast on you < 4): cast Arcane Blast
 9. cast Arcane Wrath
 10. if mana % ≥ (20% + ((time left in the fight ÷ 1s) × 1.3%)): cast Arcane Blast
 11. cast Scorch
@@ -518,7 +518,7 @@ Before the pull: at -2s: if Ice Barrier is known: cast Ice Barrier.
 | 3 | cast Fire Blast | 7.1 | 7.9 | 7.9 |
 | 4 | if Arcane Blast is up and time left on Arcane Blast < cast time of Arcane Blast: cast Arcane Blast | 6.3 | 6.8 | 6.8 |
 | 5 | cast Arcane Wrath | 5.5 | 5.3 | 5.3 |
-| 6 | if stacks of Arcane Blast ≥ 1.5 and time left in the fight ≥ 10s: cast Frostbolt (rank 10) | 3.5 | 2.6 | 2.6 |
+| 6 | if stacks of Arcane Blast on you ≥ 1.5 and time left in the fight ≥ 10s: cast Frostbolt (rank 10) | 3.5 | 2.6 | 2.6 |
 | 7 | cast Arcane Blast | 6.3 | 6.8 | 6.8 |
 | 8 | cast Robe of the Archmage | as ready | as ready | as ready |
 | 9 | cast Mana Citrine | as ready | as ready | as ready |
@@ -548,7 +548,7 @@ Before the pull: at -2s: if Ice Barrier is known: cast Ice Barrier.
 | 2 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 4.0 |
 | 3 | cast Fire Blast | 8.3 |
 | 4 | if Arcane Blast is up and time left on Arcane Blast < cast time of Arcane Blast: cast Arcane Blast | 8.1 |
-| 5 | if stacks of Arcane Blast ≥ 1.5 and time left in the fight ≥ 10s: cast Frostbolt (rank 10) | 7.9 |
+| 5 | if stacks of Arcane Blast on you ≥ 1.5 and time left in the fight ≥ 10s: cast Frostbolt (rank 10) | 7.9 |
 | 6 | cast Arcane Blast | 8.1 |
 | 7 | cast Fireball (rank 11) | 0.1 |
 | 8 | cast Robe of the Archmage | as ready |
@@ -640,14 +640,14 @@ Before the pull: cast Pyroblast.
 
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-fingers-of-frost-raid`](builds/frostfire-fingers-of-frost-raid.md) casts/min | [`frostfire-ml-raid`](builds/frostfire-ml-raid.md) casts/min | [`frostfire-raid`](builds/frostfire-raid.md) casts/min | [`frostfire-ffb-raid`](builds/frostfire-ffb-raid.md) casts/min | *FFB* casts/min |
 |---|---|---|---|---|---|---|
-| 1 | if mana < current cost and (not Read Leyline is known or not Read Leyline is ready or Energized is up): channel Evocation (interrupt it when a higher line is ready) | as ready | as ready | as ready | as ready | as ready |
-| 2 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability < 4 or not spellIsCasting): cast Scorch | 4.3 | 4.3 | 4.4 | 4.4 | 4.4 |
-| 3 | if stacks of Fire Vulnerability = 5: use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready |
-| 4 | if stacks of Heating Up = 3 and not spellIsCasting: cast Pyroblast | 2.9 | 3.1 | 3.2 | 2.9 | 2.9 |
-| 5 | if stacks of Fingers of Frost < 2: cast Fire Blast | 4.8 | 5.4 | 6.3 | 5.1 | 5.1 |
+| 1 | if mana < current cost and (not Read Leyline is known or not Read Leyline is ready or Energized is up): channel Evocation (stop it when mana % ≥ 99%) | as ready | as ready | as ready | as ready | as ready |
+| 2 | if (stacks of Fire Vulnerability on the target < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability on the target < 4 or not Scorch is being cast): cast Scorch | 4.3 | 4.3 | 4.4 | 4.4 | 4.4 |
+| 3 | if stacks of Fire Vulnerability on the target = 5: use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready |
+| 4 | if stacks of Heating Up on you = 3 and not Pyroblast is being cast: cast Pyroblast | 2.9 | 3.1 | 3.2 | 2.9 | 2.9 |
+| 5 | if stacks of Fingers of Frost on you < 2: cast Fire Blast | 4.8 | 5.4 | 6.3 | 5.1 | 5.1 |
 | 6 | cast Frostfire Bolt | 11.3 | 10.4 | 9.3 | 9.8 | 9.8 |
 
-Lines of the simulator's rotation these builds never cast: strict sequence: cast Read Leyline; channel Evocation (interrupt it when a higher line is ready) (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: strict sequence: cast Read Leyline; channel Evocation (stop it when mana % ≥ 99%) (its condition never held in these fights).
 
 Damage by ability:
 
