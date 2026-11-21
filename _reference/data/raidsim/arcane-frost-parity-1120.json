@@ -1,0 +1,80 @@
+{
+ "entry": "arcane-frost-raid",
+ "fights": 10000,
+ "rotation": "arcane-frost-raid-raid.apl.json",
+ "dps": {
+  "arcane-frost-open-raid": {
+   "ours": {
+    "seed 1": 691.65,
+    "seed 2": 691.32
+   },
+   "frost": {
+    "seed 1": 466.22,
+    "seed 2": 466.4
+   },
+   "arcane": {
+    "seed 1": 704.73,
+    "seed 2": 705.61
+   },
+   "arcaneFireFill": {
+    "seed 1": 698.16,
+    "seed 2": 697.95
+   }
+  },
+  "frost-arcane-power-raid": {
+   "ours": {
+    "seed 1": 679.61,
+    "seed 2": 678.49
+   },
+   "frost": {
+    "seed 1": 486.3,
+    "seed 2": 486.5
+   },
+   "arcane": {
+    "seed 1": 706.82,
+    "seed 2": 707.48
+   },
+   "arcaneFireFill": {
+    "seed 1": 713.58,
+    "seed 2": 714.18
+   }
+  }
+ },
+ "best": {
+  "arcane-frost-open-raid": {
+   "rotation": "arcane",
+   "lead_both_seeds": 0.0189
+  },
+  "frost-arcane-power-raid": {
+   "rotation": "arcaneFireFill",
+   "lead_both_seeds": 0.05
+  }
+ },
+ "decision": "ours stays (2026-11-20 night): the official arcane and arcaneFireFill rotations lead by 1.9-5.3% on both seeds, but they play the hybrid as an Arcane mage: no Frostbolt cast (the Arcane/Frost signature requires Frostbolt and Arcane Missiles) and 52% of the damage from the core spells against the 60% floor (ours 74-76%), 3,000 fights, seed 1. The user's rules: each spec plays its own rotation; a hybrid plays its signature spells. Lead for a guarded re-tune: the official rotation weaves Fire Blast 18 times a fight (14% of its damage), ours once.",
+ "signature": {
+  "arcane-frost-open-raid": {
+   "ours": {
+    "dps": 691.8,
+    "core": 0.74,
+    "frostbolt_casts": 26
+   },
+   "arcane": {
+    "dps": 705.1,
+    "core": 0.524,
+    "frostbolt_casts": 0
+   }
+  },
+  "frost-arcane-power-raid": {
+   "ours": {
+    "dps": 680.4,
+    "core": 0.76,
+    "frostbolt_casts": 25
+   },
+   "arcane": {
+    "dps": 706.9,
+    "core": 0.522,
+    "frostbolt_casts": 0
+   }
+  }
+ }
+}
