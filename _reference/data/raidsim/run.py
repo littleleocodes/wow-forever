@@ -1038,6 +1038,8 @@ def cfg_fingerprint(cfg, exe, repo, commit=None):
 
 # The play check (raidsim/play_check.py, 2026-11-20, the user: "Go with your recommendations"): its record, and when it is current
 PLAY_CHECK = HERE / "play-check.json"
+PLAY_HOLD = HERE / "play-check-hold.json"   # {class: {entry: why}}: entries held as being checked by hand (2026-11-20 night: the three
+# tank entries until the tank lane has redone them after the audit's D12, the bear's Maul cast off the swing timer)
 
 
 def play_fingerprint(entry, repo, builds):
@@ -1061,13 +1063,18 @@ def play_check_fails(cls, repo):
     failure: the entry is raced, then checked again."""
     try:
         rec = (json.load(open(PLAY_CHECK, encoding="utf-8")).get(cls) or {}) if PLAY_CHECK.exists() else {}
+        hold = (json.load(open(PLAY_HOLD, encoding="utf-8")).get(cls) or {}) if PLAY_HOLD.exists() else {}
     except (OSError, ValueError):
         return {}
-    if not rec:
+    if not rec and not hold:
         return {}
     data = {b["id"]: b for b in json.load(open(ROOT / cls / GAMES[GAME]["builds"], encoding="utf-8"))["builds"]}
     trees = None
     out = {}
+    for spec, why in hold.items():   # held by hand: every build a page may show is being checked, whatever the record says
+        entry = (SPECS.get(cls) or {}).get(spec)
+        if entry:
+            out[spec] = {b: [f"held: {why}"] for b in entry.get("builds", []) if b in data and data[b].get("player_page", True) is not False}
     for spec, r in rec.items():
         entry = (SPECS.get(cls) or {}).get(spec)
         fails = {b: f["fail"] for b, f in (r.get("builds") or {}).items()
@@ -1076,7 +1083,7 @@ def play_check_fails(cls, repo):
             continue
         trees = trees or load_trees(repo, cls)
         strings = {b: talents_string(trees, alloc_of(data[b])) for b in entry.get("builds", []) if b in data}
-        if r.get("fingerprint") == play_fingerprint(entry, repo, strings):
+        if r.get("fingerprint") == play_fingerprint(entry, repo, strings) and spec not in out:
             out[spec] = fails
     return out
 
