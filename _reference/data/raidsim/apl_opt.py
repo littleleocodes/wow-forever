@@ -208,6 +208,37 @@ def spell_ranks(cls):
     return out
 
 
+@functools.lru_cache(maxsize=None)
+def rank_levels(cls):
+    """{spell id: the level the trainer teaches that rank} from the beta spellbook."""
+    out = {}
+    p = ROOT / "_reference/data/forever-spells" / f"{cls}.json"
+    if p.exists():
+        for tab in json.load(open(p, encoding="utf-8")).get("tabs", []):
+            for sp in tab.get("spells", []):
+                for r in sp.get("ranks", []):
+                    if r.get("id"):
+                        out[int(r["id"])] = int(r.get("level") or 1)
+    return out
+
+
+def rank_level(cls, sid):
+    return rank_levels(cls).get(int(sid), 60)
+
+
+def low_ranks(cls, apl):
+    """[(part, index, id, level)]: casts of a rank the trainer teaches below level 20 of a spell that has a rank taught at 20 or above
+    (a deliberate low rank; single-rank abilities such as Judgement or Bloodrage are not one). The simulator does not model Classic's
+    penalty for them (2026-11-20)."""
+    import flags_bench as FB
+    sr, lv = spell_ranks(cls), rank_levels(cls)
+    out = []
+    for part, i, sid, tag in FB.casts(apl):
+        if sid in sr and lv.get(sid, 60) < 20 and any(lv.get(i2, 0) >= 20 for _, i2 in sr[sid][2]):
+            out.append((part, i, sid, lv[sid]))
+    return out
+
+
 def key(item):
     return json.dumps({k: v for k, v in item.items() if k != "notes"}, sort_keys=True)
 
@@ -302,7 +333,11 @@ def neighbors(apl, pool, N):
         if not info:
             continue
         name, rk, ranks, cooldown = info
-        lower = sorted({r for r in (rk - 1, rk - 2, max(1, rk // 2)) if any(r == x for x, _ in ranks) and r < rk}, reverse=True)
+        # only ranks the trainer teaches at level 20 or above (2026-11-20, the audit session): the simulator gives a rank taught below 20
+        # its full spell power coefficient, where Classic's rule cuts it by 3.75% a level below 20 (Smite rank 2, level 6: x0.475), so
+        # a low rank won as a mana tool on a model gap; the rule goes in as a simulator patch at the next re-pin, and the low ranks with it
+        lower = sorted({r for r in (rk - 1, rk - 2, max(1, rk // 2)) if any(r == x for x, _ in ranks) and r < rk
+                        and rank_level(cls, next(i2 for x, i2 in ranks if x == r)) >= 20}, reverse=True)
         for r in lower:
             rid = next(i2 for x, i2 in ranks if x == r)
             low = copy.deepcopy(it)

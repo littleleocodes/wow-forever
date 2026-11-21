@@ -1,0 +1,306 @@
+{
+ "rotation": "smite-dps-raid.apl.json",
+ "dropped_lines": [
+  10
+ ],
+ "fights": 10000,
+ "low_rank_casts": [
+  {
+   "file": "raidsim/apls/druid/feral-bear-tank-raid.apl.json",
+   "line": "priorityList[6]",
+   "spell": "Enrage",
+   "rank": "",
+   "level": 12
+  },
+  {
+   "file": "raidsim/apls/hunter/bm-raid-raid.apl.json",
+   "line": "priorityList[7]",
+   "spell": "Multi-Shot",
+   "rank": "",
+   "level": 18
+  },
+  {
+   "file": "raidsim/apls/hunter/mm-lonewolf-raid-raid.apl.json",
+   "line": "priorityList[4]",
+   "spell": "Multi-Shot",
+   "rank": "",
+   "level": 18
+  },
+  {
+   "file": "raidsim/apls/hunter/mm-raid-raid.apl.json",
+   "line": "priorityList[8]",
+   "spell": "Multi-Shot",
+   "rank": "",
+   "level": 18
+  },
+  {
+   "file": "raidsim/apls/hunter/mm-raid.apl.json",
+   "line": "priorityList[6]",
+   "spell": "Multi-Shot",
+   "rank": "",
+   "level": 18
+  },
+  {
+   "file": "raidsim/apls/paladin/prot-tank-raid.apl.json",
+   "line": "prepullActions[0]",
+   "spell": "Righteous Fury",
+   "rank": "",
+   "level": 10
+  },
+  {
+   "file": "raidsim/apls/paladin/prot-tank-raid.apl.json",
+   "line": "priorityList[2]",
+   "spell": "Judgement",
+   "rank": "",
+   "level": 4
+  },
+  {
+   "file": "raidsim/apls/paladin/ret-dps-raid.apl.json",
+   "line": "priorityList[1]",
+   "spell": "Judgement",
+   "rank": "",
+   "level": 4
+  },
+  {
+   "file": "raidsim/apls/paladin/ret-dps-raid.apl.json",
+   "line": "group Move to melee[0]",
+   "spell": "Judgement",
+   "rank": "",
+   "level": 4
+  },
+  {
+   "file": "raidsim/apls/paladin/ret-dps-raid.apl.json",
+   "line": "group Move to melee[1]",
+   "spell": "Judgement",
+   "rank": "",
+   "level": 4
+  },
+  {
+   "file": "raidsim/apls/paladin/ret-dps-raid.apl.json",
+   "line": "group Move to melee[2]",
+   "spell": "Judgement",
+   "rank": "",
+   "level": 4
+  },
+  {
+   "file": "raidsim/apls/paladin/ret-dps.apl.json",
+   "line": "priorityList[1]",
+   "spell": "Judgement",
+   "rank": "",
+   "level": 4
+  },
+  {
+   "file": "raidsim/apls/paladin/ret-dps.apl.json",
+   "line": "group Move to melee[0]",
+   "spell": "Judgement",
+   "rank": "",
+   "level": 4
+  },
+  {
+   "file": "raidsim/apls/paladin/ret-dps.apl.json",
+   "line": "group Move to melee[1]",
+   "spell": "Judgement",
+   "rank": "",
+   "level": 4
+  },
+  {
+   "file": "raidsim/apls/paladin/ret-dps.apl.json",
+   "line": "group Move to melee[2]",
+   "spell": "Judgement",
+   "rank": "",
+   "level": 4
+  },
+  {
+   "file": "raidsim/apls/paladin/shockadin-raid-raid.apl.json",
+   "line": "priorityList[4]",
+   "spell": "Judgement",
+   "rank": "",
+   "level": 4
+  },
+  {
+   "file": "raidsim/apls/paladin/shockadin-raid-raid.apl.json",
+   "line": "group Move to melee[0]",
+   "spell": "Judgement",
+   "rank": "",
+   "level": 4
+  },
+  {
+   "file": "raidsim/apls/priest/smite-dps-raid.apl.json",
+   "line": "priorityList[10]",
+   "spell": "Smite",
+   "rank": "Rank 2",
+   "level": 6
+  },
+  {
+   "file": "raidsim/apls/priest/smite-dps.apl.json",
+   "line": "priorityList[12]",
+   "spell": "Smite",
+   "rank": "Rank 2",
+   "level": 6
+  },
+  {
+   "file": "raidsim/apls/warrior/arms-2h-raid-raid.apl.json",
+   "line": "priorityList[24]",
+   "spell": "Bloodrage",
+   "rank": "",
+   "level": 10
+  },
+  {
+   "file": "raidsim/apls/warrior/arms-battle-raid-raid.apl.json",
+   "line": "prepullActions[0]",
+   "spell": "Battle Stance",
+   "rank": "",
+   "level": 1
+  },
+  {
+   "file": "raidsim/apls/warrior/arms-battle-raid-raid.apl.json",
+   "line": "priorityList[20]",
+   "spell": "Bloodrage",
+   "rank": "",
+   "level": 10
+  },
+  {
+   "file": "raidsim/apls/warrior/arms-battle-raid-raid.apl.json",
+   "line": "priorityList[23]",
+   "spell": "Battle Stance",
+   "rank": "",
+   "level": 1
+  },
+  {
+   "file": "raidsim/apls/warrior/arms-battle-raid.apl.json",
+   "line": "prepullActions[0]",
+   "spell": "Battle Stance",
+   "rank": "",
+   "level": 1
+  },
+  {
+   "file": "raidsim/apls/warrior/arms-battle-raid.apl.json",
+   "line": "priorityList[0]",
+   "spell": "Battle Stance",
+   "rank": "",
+   "level": 1
+  },
+  {
+   "file": "raidsim/apls/warrior/arms-battle-raid.apl.json",
+   "line": "priorityList[13]",
+   "spell": "Bloodrage",
+   "rank": "",
+   "level": 10
+  },
+  {
+   "file": "raidsim/apls/warrior/arms-battle-raid.base.apl.json",
+   "line": "prepullActions[0]",
+   "spell": "Battle Stance",
+   "rank": "",
+   "level": 1
+  },
+  {
+   "file": "raidsim/apls/warrior/arms-battle-raid.base.apl.json",
+   "line": "priorityList[24]",
+   "spell": "Battle Stance",
+   "rank": "",
+   "level": 1
+  },
+  {
+   "file": "raidsim/apls/warrior/fury-dw-raid-raid.apl.json",
+   "line": "priorityList[21]",
+   "spell": "Bloodrage",
+   "rank": "",
+   "level": 10
+  },
+  {
+   "file": "raidsim/apls/warrior/fury-dw-raid-raid.apl.json",
+   "line": "priorityList[24]",
+   "spell": "Bloodrage",
+   "rank": "",
+   "level": 10
+  },
+  {
+   "file": "raidsim/apls/warrior/prot-tank-raid.apl.json",
+   "line": "priorityList[0]",
+   "spell": "Shield Block",
+   "rank": "",
+   "level": 16
+  },
+  {
+   "file": "raidsim/apls/warrior/prot-tank-raid.apl.json",
+   "line": "priorityList[3]",
+   "spell": "Defensive Stance",
+   "rank": "",
+   "level": 10
+  },
+  {
+   "file": "raidsim/apls/warrior/prot-tank-raid.apl.json",
+   "line": "priorityList[5]",
+   "spell": "Bloodrage",
+   "rank": "",
+   "level": 10
+  }
+ ],
+ "builds": {
+  "smite-discipline-raid": {
+   "seed 1": {
+    "with": 586.22,
+    "without": 517.58,
+    "smite_with": {
+     "rank 8": 26.4,
+     "rank 2": 30.7,
+     "rank 7": 2.6
+    },
+    "smite_without": {
+     "rank 7": 21.5,
+     "rank 8": 23.8
+    },
+    "oom_with": 0.4,
+    "oom_without": 41.3
+   },
+   "seed 2": {
+    "with": 586.22,
+    "without": 517.42,
+    "smite_with": {
+     "rank 7": 2.6,
+     "rank 2": 30.6,
+     "rank 8": 26.4
+    },
+    "smite_without": {
+     "rank 7": 21.6,
+     "rank 8": 23.8
+    },
+    "oom_with": 0.4,
+    "oom_without": 41.4
+   }
+  },
+  "smite-open-raid": {
+   "seed 1": {
+    "with": 605.41,
+    "without": 518.22,
+    "smite_with": {
+     "rank 7": 2.1,
+     "rank 8": 24.3,
+     "rank 2": 33.7
+    },
+    "smite_without": {
+     "rank 7": 17.7,
+     "rank 8": 23.3
+    },
+    "oom_with": 1.1,
+    "oom_without": 50.6
+   },
+   "seed 2": {
+    "with": 605.37,
+    "without": 518.07,
+    "smite_with": {
+     "rank 2": 33.8,
+     "rank 7": 2.1,
+     "rank 8": 24.2
+    },
+    "smite_without": {
+     "rank 7": 17.7,
+     "rank 8": 23.3
+    },
+    "oom_with": 1.1,
+    "oom_without": 50.7
+   }
+  }
+ }
+}

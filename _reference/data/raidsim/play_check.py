@@ -416,6 +416,12 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
         reg_ids = {sid for part, i, sid, tg, v in fv.get(str(R.apl_path(entry, repo, "raid")), []) if v == "rotation"}
     except SystemExit as e:
         res["rotation_fail"].append(f"the internal-cast check could not run ({e})")
+    # a: a rank the trainer teaches below level 20 of a spell with a rank taught at 20 or above (2026-11-20, the audit session): the
+    # simulator gives it its full spell power coefficient, Classic's rule a cut of 3.75% a level below 20 (Smite rank 2 at level 6 had won
+    # as a mana tool on the gap); allowed again when the rule is patched in at the next re-pin
+    sr = A.spell_ranks(cls)
+    res["rotation_fail"] += [f"{part}[{i}] casts {sr[sid][0]} rank {sr[sid][1]} (taught at level {lv}): below-20 rank, penalty not modelled"
+                             for part, i, sid, lv in A.low_ranks(cls, apl)]
     # c2: the simulator's own rotation on the same builds and fights
     sims, simname = simulator_rotations(cls, ename, repo, apl)
     sim_rows = {}   # {build: [row under each simulator rotation]}
