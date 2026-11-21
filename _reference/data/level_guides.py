@@ -179,8 +179,16 @@ def _job(a):
     except Exception as e:   # noqa: BLE001
         return {"error": f"{type(e).__name__}: {e}"}
     k = max(1, r.get("kills") or 1)
+    t = r.get("time_per_kill") or 0
+    # 2026-11-20 (the leveling play check, fightlab/play_check.py: Li survival and idle, Lj the pet): the share of the time per kill spent
+    # out of the fight (drinking, eating, waiting), the damage shares (a pet's sources included) and the pet's deaths per 100 pulls
     return {"seconds": round(r["time_per_kill"], 1), "deaths_per_100": r.get("deaths_per_100"),
-            "casts": {s: round(n / k, 2) for s, n in (r.get("casts") or {}).items() if n / k >= 0.05}}
+            "casts": {s: round(n / k, 2) for s, n in (r.get("casts") or {}).items() if n / k >= 0.05},
+            "idle_share": round((r.get("downtime_per_kill") or 0) / t, 3) if t else None,
+            "drink_per_kill": round(r.get("drink_per_kill") or 0, 2), "eat_per_kill": round(r.get("eat_per_kill") or 0, 2),
+            "shares": {s: round(v, 3) for s, v in (r.get("shares") or {}).items() if v >= 0.005},
+            "pet_sources": sorted(r.get("pet_sources") or []) if isinstance(r.get("pet_sources"), (list, set, tuple, dict)) else None,
+            "pet_deaths_per_100": r.get("pet_deaths_per_100")}
 
 
 def measure(cls, jobs):
