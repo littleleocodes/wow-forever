@@ -23,8 +23,8 @@ it (standard gear, single pulls, the guide's stage levels; `level_guides.py <cla
      waiting), at a measured level: FAIL for a look (the audit session's thresholds, to tune on the spread).
  Lj  the pet: at a measured level where the build keeps one (pet sources in the damage shares), the pet under 5% of the damage, or dead in
      more than 10 of 100 pulls: FAIL.
- Lk  what is kept up (the class's armor, aspect, seal, imbue, poisons, stance or form, self buffs): not built yet (each module applies
-     them its own way); listed as open.
+ Lk  what is kept up: the module's standing effects (the lab's armor_spell field: armor, aura, stance, aspect, imbue, form, poisons) at each
+     measured level from the class's first one (FIRST_STANDING), and Hunter's Mark cast where the build holds Expose Prey: FAIL.
  Ll  parsing: fightlab/module_lint.py's rows for the class (a name the data lacks, a tooltip number that parses to 0): FAIL.
 The record (fightlab/play-check.json) carries each pick's presses per kill by measured level (its cast list, for the audit's reading) and a
 fingerprint of what the numbers depend on (the class module, engine, tables, run.py, the rules file, the class's talent and spell data,
@@ -144,6 +144,49 @@ def zero_talents(cls, rot, b, pool, fights):
     return out
 
 
+def book_ranks(cls):
+    """{spell: sorted trainer levels of its ranks}."""
+    out = {}
+    for tab in json.load(open(DATA / "forever-spells" / f"{cls}.json", encoding="utf-8")).get("tabs", []):
+        for sp in tab.get("spells", []):
+            lv = sorted(int(r.get("level") or 1) for r in sp.get("ranks", []) if r.get("id"))
+            if lv:
+                out[sp["name"]] = lv
+    return out
+
+
+def what_changed(cls, bb, a, c, casts_c):
+    """What differs between two measured levels (the audit session: a jump from a talent order or a missing rank is the one to catch):
+    the build's points, the ranks of the spells pressed at the later level, the gear's main stats and the mob."""
+    out = []
+    A, C = FR.allocation_at(bb, a), FR.allocation_at(bb, c)
+    pts = [f"{n} {A.get(n, 0)}->{r}" for n, r in sorted(C.items()) if r and r != A.get(n, 0)]
+    out.append("points: " + (", ".join(pts) if pts else "none"))
+    br = book_ranks(cls)
+    rk = [f"{sp} rank {sum(1 for x in br[sp] if x <= a)}->{sum(1 for x in br[sp] if x <= c)}" for sp in sorted(casts_c or {})
+          if sp in br and sum(1 for x in br[sp] if x <= a) != sum(1 for x in br[sp] if x <= c)]
+    out.append("ranks: " + (", ".join(rk) if rk else "none new"))
+    try:
+        import tables as T
+        ga, gc = T.gear_stats(a, cls=cls), T.gear_stats(c, cls=cls)
+        main = lambda g: sum(g.get(s, 0) for s in ("intellect", "stamina", "agility", "strength", "spirit"))   # noqa: E731
+        out.append(f"gear main stats {main(ga):.0f}->{main(gc):.0f}")
+    except Exception:   # noqa: BLE001
+        pass
+    try:
+        mob = json.load(open(HERE / "mob_stats.json", encoding="utf-8"))["by_level"]
+        ma, mc = mob[str(a)], mob[str(c)]
+        out.append(f"mob health {ma['health']:.0f}->{mc['health']:.0f} ({mc['health'] / ma['health'] - 1:+.0%}), "
+                   f"swing {ma['dmg']:.0f}->{mc['dmg']:.0f}, armor {ma['armor']:.0f}->{mc['armor']:.0f}")
+    except Exception:   # noqa: BLE001
+        pass
+    return "; ".join(out)
+
+
+# Lk: the level from which the class keeps a standing effect up (its first armor, aura, stance, aspect, imbue, form or poison)
+FIRST_STANDING = {"mage": 1, "warrior": 1, "paladin": 1, "hunter": 10, "rogue": 20, "shaman": 1, "druid": 10, "priest": 12, "warlock": 1}
+
+
 def is_gate(cls, b, talent):
     st = {t: {n: r for n, r in v if r and n != talent} for t, v in b["allocation"].items()}
     errors = []
@@ -234,7 +277,20 @@ def check_class(cls, pool, fights, removal):
             s0, s1 = lv[a]["seconds"], lv[c]["seconds"]
             if s0 and s1 / s0 - 1 > JUMP:
                 why = ((notes.get(spec) or {}).get("jump") or {}).get(f"{a}-{c}")
-                (f["notes"] if why else f["fail"]).append(f"Lh: {s0} s a kill at {a}, {s1} at {c} (+{s1 / s0 - 1:.0%})" + (f": {why}" if why else ""))
+                (f["notes"] if why else f["fail"]).append(f"Lh: {s0} s a kill at {a}, {s1} at {c} (+{s1 / s0 - 1:.0%})"
+                                                          + (f": {why}" if why else "") + f" [{what_changed(cls, bb, a, c, lv[c].get('casts'))}]")
+        # Lk: what is kept up (the module's standing effects, the lab's armor_spell field), and Hunter's Mark where a talent keys on it
+        if not any("standing" in r for r in lv.values()):
+            f["notes"].append("Lk: the measured record predates the standing-effects field (level_guides --measure again)")
+        else:
+            for L, r in sorted(lv.items()):
+                if L >= FIRST_STANDING.get(cls, 1) and not r.get("standing"):
+                    f["fail"].append(f"Lk: no standing effect kept up at {L} (the class trains one from {FIRST_STANDING.get(cls, 1)})")
+            f["standing"] = {str(L): r.get("standing") for L, r in sorted(lv.items())}
+        if cls == "hunter":
+            for L, r in sorted(lv.items()):
+                if L >= 10 and "Expose Prey" in held_at(bb, L) and not (r.get("casts") or {}).get("Hunter's Mark"):
+                    f["fail"].append(f"Lk: the build holds Expose Prey at {L}, which keys on Hunter's Mark, and the lab never casts the mark there")
         # Li: survival and idle
         for L, r in sorted(lv.items()):
             if L < 10:
@@ -275,7 +331,7 @@ def check_class(cls, pool, fights, removal):
         for x in lint_rows:
             why = next((w for k, w in (LINT_RETIRED.get(cls) or {}).items() if f"`{k}`" in x), None)
             (f["notes"] if why else f["fail"]).append(f"Ll: {x}" + (f" ({why})" if why else ""))
-        f["notes"].append("Lk (what is kept up) is not built yet")
+
         # Lc: talents worth nothing at every level held
         if removal:
             zt = zero_talents(cls, rot, bb, pool, fights)

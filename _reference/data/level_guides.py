@@ -188,7 +188,8 @@ def _job(a):
             "drink_per_kill": round(r.get("drink_per_kill") or 0, 2), "eat_per_kill": round(r.get("eat_per_kill") or 0, 2),
             "shares": {s: round(v, 3) for s, v in (r.get("shares") or {}).items() if v >= 0.005},
             "pet_sources": sorted(r.get("pet_sources") or []) if isinstance(r.get("pet_sources"), (list, set, tuple, dict)) else None,
-            "pet_deaths_per_100": r.get("pet_deaths_per_100")}
+            "pet_deaths_per_100": r.get("pet_deaths_per_100"),
+            "standing": r.get("armor_spell")}   # the class's standing effects the module keeps up (armor, aspect, aura, stance, form, imbue, poisons)
 
 
 def measure(cls, jobs):
