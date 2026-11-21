@@ -37,6 +37,7 @@ sys.path.insert(0, str(ROOT / "_reference/data"))
 import paths  # noqa: E402
 sys.path.insert(0, str(HERE))
 import raid_signature as SIG  # noqa: E402  (signature spells, user rule 2026-10-22)
+import flags_bench as FB  # noqa: E402  (internal sub-actions a rotation must not cast, 2026-11-20)
 
 
 def _load(name, path):
@@ -718,6 +719,26 @@ class Signature:
 
 
 # ------------------------------------------------------------------------------------------------ search
+def internal_casts(entry, repo, trees, setting):
+    """(id, tag) pairs the character registers only without SpellFlagAPL, with every talent at full rank (flags_bench.py, 2026-11-20,
+    the audit's D12: the simulator's rotation lookup falls back to such a spell without a warning, and the bear's rotation had fired
+    Maul's swing damage off the swing timer). Empty, with a warning, when the flags bench is not built in this checkout."""
+    full = "-".join("".join(str(t["maxPoints"]) for t in tr["talents"]) for tr in trees)
+    try:
+        reg = FB.registered(entry, repo, [{"label": "all", "talents": full}], setting).get("all") or {}
+    except SystemExit as e:
+        print(f"  WARNING: no internal-cast guard ({e})", flush=True)
+        return set()
+    return {k for k, flagged in reg.items() if not flagged}
+
+
+def no_internal(cands, internal):
+    """The candidates whose rotation casts no internal sub-action."""
+    if not internal:
+        return cands
+    return [(d, ap) for d, ap in cands if not any((x[2], x[3]) in internal for x in FB.casts(ap))]
+
+
 def search(cls, spec, a, repo, N, where=None):
     entry = R.SPECS[cls][spec]
     CLASS[0] = cls
@@ -753,6 +774,11 @@ def search(cls, spec, a, repo, N, where=None):
     else:
         base_path = R.apl_path(entry, repo, setting)
     base = json.load(open(base_path, encoding="utf-8"))
+    internal = internal_casts(entry, repo, trees, setting)
+    bad_base = [x for x in FB.casts(base) if (x[2], x[3]) in internal]
+    if bad_base:
+        raise SystemExit(f"{base_path.name} casts spells the simulator registers only as internal sub-actions (flags_bench.py; the audit's "
+                         f"D12): {', '.join(f'{p}[{i}] {sid} tag {t}' for p, i, sid, t in bad_base)}: fix the rotation before tuning it")
     pool = class_pool(repo, entry)
     tag = f"{cls}-{spec}"
     sim_apl = sim_base(entry, repo)
@@ -766,6 +792,7 @@ def search(cls, spec, a, repo, N, where=None):
     pool += news
     if INSERT_ONLY[0]:
         pool = news
+    pool = [c for c in pool if not any((x[2], x[3]) in internal for x in FB.casts({"priorityList": [c]}))]
     print(f"== {cls} {spec}: {len(items(base))} actions from {base_path.name}, {len(pool)} pool actions ({len(cds)} cooldowns, {len(news)} spellbook spells), tuned on "
           + ", ".join(builds[bi]["label"] for bi in tune_idx)
           + (("; protected: " + ", ".join(b["label"] for bi, b in enumerate(builds) if bi not in tune_idx)) if len(tune_idx) < len(builds) else "")
@@ -789,7 +816,7 @@ def search(cls, spec, a, repo, N, where=None):
     start_rows = {1: cur1, 2: per_build(run_set([cur], a.confirm, 2), 0)}
     log = []
     for rnd in range(1, a.rounds + 1):
-        cands = sig.structural(cur, neighbors(cur, pool, N))
+        cands = no_internal(sig.structural(cur, neighbors(cur, pool, N)), internal)
         rows = run_set([ap for _, ap in cands], a.iterations, 1, tune_idx)
         scored = []
         for ci, (d, ap) in enumerate(cands):
@@ -805,7 +832,7 @@ def search(cls, spec, a, repo, N, where=None):
             seeds_ = scored[: a.lookahead]
             pairs = []
             for sc_a, ci_a, d_a, ap_a in seeds_:
-                for d_b, ap_b in sig.structural(cur, neighbors(ap_a, pool, N)):
+                for d_b, ap_b in no_internal(sig.structural(cur, neighbors(ap_a, pool, N)), internal):
                     pairs.append((f"{d_a} + {d_b}", ap_b))
             prow = run_set([ap for _, ap in pairs], a.iterations, 1, tune_idx)
             ps = []

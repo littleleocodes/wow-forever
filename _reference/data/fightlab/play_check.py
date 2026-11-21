@@ -16,7 +16,8 @@ it (standard gear, single pulls, the guide's stage levels; `level_guides.py <cla
  Lg  never tried: a damaging, absorbing or resource ability the character has (the class's spellbook by trainer level, the build's talent
      abilities by its order) that the lab presses 0 times at every measured level from the one it arrives and no rule vetoes: FAIL "never
      tried" unless fightlab/never-tried.json records a verdict for the class and rotation ("forced into the priority on <date>: slower by
-     X%"). Area spells are left to the AoE variants (tables.AOE_SPELLS), the class's pet tab to the pet.
+     X%", written by fightlab/force_run.py; a "LEAD" verdict or a spell the module cannot cast stays a FAIL). Area spells are left to the
+     AoE variants (tables.AOE_SPELLS), the class's pet tab to the pet.
  Lh  a jump: time per kill rising more than 5% from one measured level to the next (levels at 10 and up): FAIL until
      fightlab/play-check-notes.json explains it or the order is repaired.
  Li  survival and idle: more than 2 deaths per 100 kills, or more than 40% of the time per kill out of the fight (drinking, eating,
@@ -323,8 +324,11 @@ def check_class(cls, pool, fights, removal):
                 continue
             if not any(L >= arrive for L in lv):
                 continue
-            if ver.get(sp):
-                f["notes"].append(f"Lg: {sp} never pressed: {ver[sp]}")
+            v = ver.get(sp)
+            if v and not v.startswith(("LEAD", "never cast when forced")):   # force_run.py's verdict: tried and slower
+                f["notes"].append(f"Lg: {sp} never pressed: {v}")
+            elif v:   # faster when forced (a lead for the rotation tune), or the module could not cast it: still open
+                f["fail"].append(f"Lg: {sp} (from level {arrive}) is never pressed; forced: {v}")
             else:
                 f["fail"].append(f"Lg: {sp} (from level {arrive}) is never pressed, no rule vetoes it, and no verdict says it was tried")
         # Ll: parsing (a retired mechanism behind an off switch is a note, with its reason)

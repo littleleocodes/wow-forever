@@ -1237,7 +1237,6 @@
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
     },
     "feral-bear-tank": {
-      "apl_opt_raid": "_reference/data/raidsim/apls/druid/feral-bear-tank-raid.apl.json",
       "sim_class": "ClassDruid",
       "sim_spec": "druid/feralbear",
       "profile": "raid-tank",
@@ -1249,7 +1248,7 @@
       "tank": true,
       "gear": "ui/specs/druid/feralbear/gear_sets/default.gear.json",
       "gear_note": "2026-10-22 (the port to wowsims/forever, _reference/sim-port.md): the official simulator's Level 60 preset (it carries no idol); the fork's launch preset (vendored under raidsim/presets/elliotwood-b7083fa/) held five items the official database lacks (Glowing Mantle of the Dawn, Blood Guard's Dragonhide Grips, Fine Dawn Treaders, Blackhand's Breadth, Idol of Ferocity).",
-      "apl": "ui/specs/druid/feralbear/apls/adaptive.apl.json",
+      "apl": "_reference/data/raidsim/apls/druid/upstream/feralbear-adaptive.apl.json",
       "spec": {
         "feralBearDruid": {
           "options": {"startingRage": 0}
@@ -1270,7 +1269,8 @@
         "foodId": 20452
       },
       "builds": ["feral-bear-tank", "opt-feral-bear-tank-raid-tank", "feral-combat-ml-tank"],
-      "buffs_off": ["leader_of_the_pack"]
+      "buffs_off": ["leader_of_the_pack"],
+      "rotation_note": "2026-11-20 night: base switched to the official simulator's own bear rotation (bear_upstream_switch_1120.py, the audit's D12): our tuned raid rotation had cast Maul's swing-damage spell (9881 tag 1) since 2026-10-27, about seven times the threat; with the queue spell it trails the simulator's rotation in every arm. Earlier notes describe the rotation it replaces."
     }
   },
   "_dummy_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."

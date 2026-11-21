@@ -161,26 +161,39 @@ def apl_key(entry, where=None):
 # top of the swings: the melee hunter rotations cast Raptor Strike so from the port (2026-10-18) to 2026-10-31 (melee Survival +11.5% in a
 # full raid), and the rotation search's lower-rank edit dropped Heroic Strike's tag (Fury +17%). Their spell texts have no cast time.
 QUEUE_SPELLS = ("Heroic Strike", "Cleave", "Maul", "Raptor Strike")
+# The tag of each on-next-swing attack's rotation press in the official simulator at the pin (2026-11-20, the audit's D12): Heroic Strike
+# and Cleave (warrior/heroic_strike_cleave.go) and Raptor Strike (hunter/raptor_strike.go) queue through tag 1, the untagged id being the
+# hit itself (registered without the rotation flag); Maul (druid/maul.go) the reverse: the untagged id queues and tag 1 is the swing's
+# damage. Every Maul cast had been tagged 1 since 2026-10-31, so the bear's rotation fired Maul's damage off the swing timer (about seven
+# times the threat) from the re-pin of 2026-11-16 on.
+QUEUE_TAG = {"Heroic Strike": 1, "Cleave": 1, "Raptor Strike": 1, "Maul": 0}
 
 
 def queue_ids(cls):
-    """Every rank's spell id of the class's on-next-swing attacks (forever-spells/<class>.json)."""
+    """{spell id: the tag of its rotation press} for every rank of the class's on-next-swing attacks (forever-spells/<class>.json)."""
     p = HERE.parent / "forever-spells" / f"{cls}.json"
     if not p.exists():
-        return set()
-    return {int(r["id"]) for tab in json.load(open(p, encoding="utf-8")).get("tabs", []) for sp in tab.get("spells", [])
-            if sp.get("name") in QUEUE_SPELLS for r in sp.get("ranks", []) if r.get("id")}
+        return {}
+    return {int(r["id"]): QUEUE_TAG[sp["name"]] for tab in json.load(open(p, encoding="utf-8")).get("tabs", []) for sp in tab.get("spells", [])
+            if sp.get("name") in QUEUE_TAG for r in sp.get("ranks", []) if r.get("id")}
 
 
 def queue_tag(apl, ids):
-    """Tags every cast of an on-next-swing attack in a rotation (or one of its lines) as 1, in place; returns how many it changed."""
+    """Gives every cast of an on-next-swing attack in a rotation (or one of its lines) the tag of its rotation press (QUEUE_TAG), in
+    place; returns how many it changed. `ids` is queue_ids' {id: tag}; a plain set means tag 1 (the call before 2026-11-20)."""
+    if not isinstance(ids, dict):
+        ids = {i: 1 for i in ids}
     n = 0
     if isinstance(apl, dict):
         for k, v in apl.items():
             if k in ("castSpell", "channelSpell") and isinstance(v, dict):
                 sid = v.get("spellId") or {}
-                if sid.get("spellId") in ids and sid.get("tag") != 1:
-                    sid["tag"] = 1
+                want = ids.get(sid.get("spellId"))
+                if want is not None and want and sid.get("tag") != want:
+                    sid["tag"] = want
+                    n += 1
+                elif want is not None and not want and sid.get("tag"):
+                    del sid["tag"]
                     n += 1
             n += queue_tag(v, ids)
     elif isinstance(apl, list):

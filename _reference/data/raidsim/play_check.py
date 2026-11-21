@@ -52,6 +52,7 @@ import trainer_ranks as TR  # noqa: E402
 import validate_builds as VB  # noqa: E402
 import utility_tags as UT  # noqa: E402
 import paths  # noqa: E402
+import flags_bench as FB  # noqa: E402  (the audit's D12 guard a, 2026-11-20)
 
 OUT = HERE / "play-check.json"
 RACIALS, CLIENT = None, {}
@@ -110,6 +111,80 @@ def client_names():
             if m:
                 out[int(m.group(1))] = m.group(2)
     return out
+
+
+# The audit's D12 guards (2026-11-20 night): the bear's rotation had cast Maul's swing-damage spell off the swing timer for four days
+# (about seven times the threat) and nothing physical was checked. b2: an on-next-swing attack's hits and the white main-hand swings
+# together cannot exceed twice the swings the weapon makes in the fight (haste and extra attacks stay well under that); b3: the
+# rotation's casts on the global cooldown cannot exceed one a second; c2: our rotation beating the simulator's own rotation for the same
+# build by more than TOO_GOOD is suspect until raidsim/too-good-notes.json explains the casts ({class: {entry: {build or "*": why}}}).
+TOO_GOOD = 0.20
+TOO_GOOD_NOTES = HERE / "too-good-notes.json"
+OFF_GCD = json.load(open(DATA / "fightlab" / "spell_gcd.json", encoding="utf-8")).get("off_gcd", {})
+_DB = {}
+
+
+def mh_speed(cls, entry, repo):
+    """The main hand's swing time in the entry's gear: Bear Form swings 2.5 s, Cat Form 1.0 s (the forms replace the weapon)."""
+    if cls == "druid":
+        return 2.5 if entry.get("tank") else 1.0
+    try:
+        g = R.sim_path(entry["gear"])
+        g = pathlib.Path(g) if pathlib.Path(g).is_absolute() else repo / entry["gear"]
+        items = json.load(open(g, encoding="utf-8")).get("items") or []
+        mh = (items[14] or {}).get("id") if len(items) > 14 else None
+        if not _DB:
+            _DB.update({int(x["id"]): x for x in json.load(open(repo / "assets/database/db.json", encoding="utf-8")).get("items", [])})
+        return (_DB.get(int(mh)) or {}).get("weaponSpeed") if mh else None
+    except (OSError, ValueError, KeyError, TypeError):
+        return None
+
+
+U = "_reference/data/raidsim/apls/"
+# The official simulator's own rotations for each entry's spec (2026-11-20; c2 compares ours with the best of them): our converted copies
+# under apls/<class>/upstream/ (trainer ranks, the hunter's mark rank; the hunter's and paladin's are SIML upstream), else its JSON files
+# under ui/specs/ (trainer ranks swapped here). The official simulator ships none for the priest and the shaman.
+SIM_ROTATIONS = {
+    "mage": {"frost-raid": [U + "mage/upstream/frost.apl.json"], "arcane-dps": [U + "mage/upstream/arcane.apl.json", U + "mage/upstream/arcaneFireFill.apl.json"],
+             "fire-raid": [U + "mage/upstream/deepFire.apl.json"], "frostfire-raid": [U + "mage/upstream/ffb.apl.json"],
+             "arcane-frost-raid": [U + "mage/upstream/frost.apl.json", U + "mage/upstream/arcane.apl.json"]},
+    "druid": {"balance-dps": ["ui/specs/druid/balance/apls/default.apl.json"], "feral-cat-dps": [U + "druid/upstream/adaptive.apl.json"],
+              "feral-bear-tank": [U + "druid/upstream/feralbear-adaptive.apl.json"]},
+    "hunter": {e: [U + f"hunter/upstream/{n}.apl.json" for n in ("default", "turret", "turret_hawk", "melee")]
+               for e in ("mm-raid", "mm-lonewolf-raid", "bm-raid", "melee-dps", "survival-pet-raid")},
+    "paladin": {"ret-dps": [U + "paladin/upstream/default.apl.json"], "shockadin-raid": [U + "paladin/upstream/holy_shock.apl.json"],
+                "prot-tank": [U + "paladin/upstream/protection-default.apl.json"]},
+    "rogue": {e: ["ui/specs/rogue/dps/apls/default.apl.json"] for e in ("combat-swords-raid", "combat-daggers-raid", "assassination-raid", "subtlety-raid")},
+    "warrior": {"arms-2h-raid": ["ui/specs/warrior/dps/apls/arms.apl.json", "ui/specs/warrior/dps/apls/fury.apl.json"],
+                "arms-battle-raid": ["ui/specs/warrior/dps/apls/arms.apl.json"], "fury-dw-raid": ["ui/specs/warrior/dps/apls/fury.apl.json"],
+                "prot-tank": ["ui/specs/warrior/protection/apls/default.apl.json"]},
+    "warlock": {"affliction-raid": [U + "warlock/upstream/aff_wrack.apl.json"], "affliction-wrack-raid": [U + "warlock/upstream/aff_wrack.apl.json"],
+                "demonology-raid": [U + "warlock/upstream/demo_shadow_brand.apl.json", U + "warlock/upstream/demo_fire_brand.apl.json"],
+                "destro-raid": [U + "warlock/upstream/destro.apl.json"], "fire-destro-raid": [U + "warlock/upstream/destro.apl.json"],
+                "incinerate-raid": [U + "warlock/upstream/destro.apl.json"], "sb-raid": [U + "warlock/upstream/sm_ruin.apl.json", U + "warlock/upstream/destro.apl.json"]},
+}
+
+
+def simulator_rotations(cls, ename, repo, ours):
+    """[(rotation, label)] of the simulator's own rotations for the entry (SIM_ROTATIONS) that differ from ours, and a note."""
+    out, skipped = [], []
+    fwd = None
+    for ap in (SIM_ROTATIONS.get(cls) or {}).get(ename) or []:
+        p = (repo / ap) if ap.startswith("ui/") else (ROOT / ap)
+        if not p.exists():
+            skipped.append(f"{p.name} missing")
+            continue
+        rot = json.loads(p.read_text(encoding="utf-8"))
+        if ap.startswith("ui/"):
+            if fwd is None:
+                fwd = {b: (v["trainer"], v["trainer_rank"]) for b, v in TR.load_map().items()}
+            rot = json.loads(TR.swap_text(json.dumps(rot), fwd))
+        if json.dumps(rot, sort_keys=True) == json.dumps(ours, sort_keys=True):
+            return [], f"the entry's raid rotation is the simulator's own ({p.name})"
+        out.append((rot, p.name))
+    if not out:
+        return [], "the official simulator ships no rotation for this spec" + (f" ({'; '.join(skipped)})" if skipped else "")
+    return out, ", ".join(x[1] for x in out)
 
 
 def class_options(entry):
@@ -329,9 +404,39 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
             if d:
                 conv += [f"{p.name}: {x}" for x in d]
     res["rotation_fail"] = rot_fail + [f"differs from a fresh conversion of upstream's file: {x}" for x in conv]
-    all_cs = {}
+    # a: a cast the simulator registers only as an internal sub-action (D12; flags_bench.py), and which ids the character registers at
+    # all (every talent at full rank): an id it registers is the class's, whatever our spellbook calls it (Feral Charge (Bear) 16979)
+    reg_ids = None
+    try:
+        fv = FB.verdicts(cls, ename, entry, repo)
+        for path, rws in fv.items():
+            res["rotation_fail"] += [f"{pathlib.Path(path).name}: {part}[{i}] casts {names.get(sid, sid)} ({sid}{f' tag {tg}' if tg else ''}), "
+                                     "which the simulator registers only as an internal sub-action (it fires outside the game's rules)"
+                                     for part, i, sid, tg, v in rws if v == "INTERNAL"]
+        reg_ids = {sid for part, i, sid, tg, v in fv.get(str(R.apl_path(entry, repo, "raid")), []) if v == "rotation"}
+    except SystemExit as e:
+        res["rotation_fail"].append(f"the internal-cast check could not run ({e})")
+    # c2: the simulator's own rotation on the same builds and fights
+    sims, simname = simulator_rotations(cls, ename, repo, apl)
+    sim_rows = {}   # {build: [row under each simulator rotation]}
+    for k, (srot, sname) in enumerate(sims):
+        rr = A.bench(entry, repo, [{"label": b, "talents": t, "apl_json": srot} for b, t in strings.items()], fights, 1, "raid", f"{tag}-sim{k}")
+        for b in strings:
+            if rr.get(b) and not rr[b].get("error"):
+                sim_rows.setdefault(b, []).append((sname, rr[b]))
+    res["simulator_rotation"] = simname
+    try:
+        too_good_notes = ((json.loads(TOO_GOOD_NOTES.read_text(encoding="utf-8")) if TOO_GOOD_NOTES.exists() else {}).get(cls) or {}).get(ename) or {}
+    except ValueError:
+        too_good_notes = {}
+    qtag = R.queue_ids(cls)
+    spd = mh_speed(cls, entry, repo)
+    rot_casts = {(x[2], x[3]) for x in FB.casts(apl)}
+    offg = set(OFF_GCD.get(cls) or [])
+    all_cs, raw_cs = {}, {}
     for b in bids:
         c = casts_by_id(base.get(b) or {}, names)
+        raw_cs[b] = dict(c)
         for src, al in RR.CAST_ALIASES.items():   # Judgement's casts are booked under the judged seal's ids (as the pages count them)
             c[src] = c.get(src, 0) + sum(c.get(x, 0) for x in al)
         all_cs[b] = c
@@ -340,6 +445,33 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
         cs = all_cs[b]
         have = flat(data[b]["allocation"])
         f = {"dps": round(row.get("dps") or 0, 2), "never_cast": [], "abilities": [], "zero_talents": [], "inert_switches": [], "fail": []}
+        acts = row.get("actions") or []
+        # b2: swings (Maul's damage cast directly read 227 hits on top of 72 white swings; a 2.5 s weapon makes 72 in 180 s)
+        queued = sum(x.get("casts") or 0 for x in acts if x.get("spellId") in qtag and (x.get("tag") or 0) != qtag[x["spellId"]])
+        white = sum(x.get("casts") or 0 for x in acts if x.get("other") == "OtherActionAttack" and x.get("tag") == 14)
+        if queued and spd and queued + white > 2.0 * R.FIGHT / spd:
+            f["fail"].append(f"b2: {queued:.0f} on-next-swing hits plus {white:.0f} white main-hand swings in a {R.FIGHT} s fight, more than "
+                             f"twice the {R.FIGHT / spd:.0f} swings a {spd} s weapon makes: a line fires the hit itself")
+        # b3: the global cooldown (one cast a second at the fastest)
+        on_gcd = sum(x.get("casts") or 0 for x in acts if x.get("spellId") and (x["spellId"], x.get("tag") or 0) in rot_casts
+                     and x["spellId"] not in qtag and (names.get(x["spellId"]) or id_name.get(x["spellId"]) or "") not in offg)
+        if on_gcd > R.FIGHT * 1.02 + 2:
+            f["fail"].append(f"b3: the rotation's casts on the global cooldown add up to {on_gcd:.0f} in a {R.FIGHT} s fight, more than one a second")
+        f["physical"] = {"queued_hits": round(queued, 1), "white_mh_swings": round(white, 1), "mh_speed": spd, "gcd_casts": round(on_gcd, 1)}
+        # c2: too good against the simulator's own rotation
+        srows = sim_rows.get(b) or []
+        if srows:
+            best = {k: max(srows, key=lambda x: x[1].get(k) or 0) for k in (("dps", "threat") if tank else ("dps",))}
+            pairs = [("DPS" if k == "dps" else "threat", row.get(k) or 0, best[k][1].get(k) or 0, best[k][0]) for k in best]
+            f["simulator_rotation"] = {k: [round(o, 2), round(t_, 2), nm] for k, o, t_, nm in pairs}
+            for k, o, t_, nm in pairs:
+                if t_ > 0 and o / t_ - 1 > TOO_GOOD:
+                    why = too_good_notes.get(b) or too_good_notes.get("*")
+                    txt = (f"c2: ours beats the simulator's own rotation ({nm}) by {o / t_ - 1:.0%} in {k} ({o:.1f} against {t_:.1f})")
+                    if why:
+                        f.setdefault("notes", []).append(txt + f": {why}")
+                    else:
+                        f["fail"].append(txt + ": suspect until the casts explain it (raidsim/too-good-notes.json)")
         # the build without each talent, first: an ability whose casts are booked under another id (Swift Judgement under the judged
         # seal, as Judgement) is used when its removal changes the result
         rm = A.bench(entry, repo, [{"label": t, "talents": R.talents_string(trees_sim, {k: v for k, v in have.items() if k != t})} for t in have],
@@ -356,17 +488,19 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
             nm = id_name.get(sid) or names.get(sid) or CLIENT.get(sid) or str(sid)
             # a talent's ability under an id the beta spellbook lacks is the class's (Death Mark 1325758, Reckless Swings 1329555: the
             # simulator names them, the talent data holds them); a removed spell or an item's spell is not (Lava Burst, Jom Gabbar)
-            talent_ability = sid not in id_name and nm in talent_names
-            if sid not in id_name and not talent_ability and sid in RACIALS:
+            bn = re.sub(r" [(](Bear|Cat)[)]$", "", nm)   # Feral Charge (Bear): the talent Feral Charge's bear spell
+            talent_ability = sid not in id_name and (nm in talent_names or bn in talent_names)
+            known = sid in id_name or talent_ability or (reg_ids is not None and sid in reg_ids)
+            if not known and sid in RACIALS:
                 why = "racial (racials are off)"
-            elif sid not in id_name and not talent_ability:
+            elif not known:
                 why = None   # neither the class's spell nor a racial: Lava Burst, Frost Blast, a trinket's spell cast as a spell
                 f["never_cast"].append(f"{part}[{i}] {nm} ({sid}): NOT A SPELL THE CLASS HAS (a removed spell or a wrong id)")
                 f["fail"].append(f"a: {nm} ({sid}) is no spell of the class and no racial: the line can never fire ({part}[{i}])")
                 continue
-            elif nm in talent_names and nm not in have:
+            elif (nm in talent_names and nm not in have) or (bn != nm and bn in talent_names and bn not in have):
                 why = "talent not taken"
-            elif nm in matters:
+            elif nm in matters or bn in matters:
                 why = booked
             elif any(all_cs[o].get(sid, 0) > 0 for o in bids if o != b):
                 why = "cast by another build of the entry (the line serves builds that reach it)"
@@ -413,7 +547,15 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
                 reasons[t] = why
             if not why or why == "wasted":
                 f["fail"].append(f"b: talent ability {t} never cast" + (" (unused-abilities: wasted)" if why == "wasted" else ""))
-        f["casts"] = {(id_name.get(k) or names.get(k) or str(k)): round(v, 2) for k, v in sorted(cs.items(), key=lambda kv: -kv[1]) if v}
+        # summed by name over the ranks (the audit session, 2026-11-20: a name-keyed record had let a later rank's row overwrite an
+        # earlier one, Lightning Bolt 0.0 for 67.1); the verdicts above read casts by id. The bench's own rows, before the Judgement alias.
+        by_name = {}
+        for k, v in raw_cs[b].items():
+            if v:
+                nm = id_name.get(k) or names.get(k) or str(k)
+                by_name[nm] = by_name.get(nm, 0) + v
+        f["casts"] = {n: round(v, 2) for n, v in sorted(by_name.items(), key=lambda kv: -kv[1])}
+        f["casts_by_id"] = {str(k): round(v, 2) for k, v in sorted(raw_cs[b].items(), key=lambda kv: -kv[1]) if v}
         res["builds"][b] = f
         # c. talents worth nothing
         recorded = filler_records(cls, b, have)

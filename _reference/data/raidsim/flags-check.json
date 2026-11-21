@@ -1,0 +1,837 @@
+{
+ "date": "2026-11-20",
+ "classes": {
+  "mage": {
+   "frost-raid": {
+    "raidsim/apls/mage/frost-raid-raid.apl.json": [
+     {
+      "part": "group Mana Tools",
+      "index": 0,
+      "id": 1259705,
+      "tag": 0,
+      "name": "Read Leyline",
+      "verdict": "unknown"
+     }
+    ],
+    "raidsim/apls/mage/frost-raid.apl.json": [
+     {
+      "part": "group Mana Tools",
+      "index": 0,
+      "id": 1259705,
+      "tag": 0,
+      "name": "Read Leyline",
+      "verdict": "unknown"
+     }
+    ]
+   },
+   "arcane-frost-raid": {
+    "raidsim/apls/mage/arcane-frost-raid-raid.apl.json": [],
+    "raidsim/apls/mage/arcane-frost-raid.apl.json": []
+   },
+   "fire-raid": {
+    "raidsim/apls/mage/fire-raid-raid.apl.json": [
+     {
+      "part": "group Evocation",
+      "index": 0,
+      "id": 1259705,
+      "tag": 0,
+      "name": "Read Leyline",
+      "verdict": "unknown"
+     }
+    ],
+    "raidsim/apls/mage/fire-raid.apl.json": []
+   },
+   "arcane-dps": {
+    "raidsim/apls/mage/arcane-dps-raid.apl.json": [
+     {
+      "part": "prepullActions",
+      "index": 1,
+      "id": 1259705,
+      "tag": 0,
+      "name": "Read Leyline",
+      "verdict": "unknown"
+     },
+     {
+      "part": "group Evocation",
+      "index": 0,
+      "id": 1259705,
+      "tag": 0,
+      "name": "Read Leyline",
+      "verdict": "unknown"
+     }
+    ],
+    "raidsim/apls/mage/arcane-dps.apl.json": []
+   },
+   "frostfire-raid": {
+    "raidsim/apls/mage/upstream/ffb.apl.json": [
+     {
+      "part": "group Evocation",
+      "index": 0,
+      "id": 1259705,
+      "tag": 0,
+      "name": "Read Leyline",
+      "verdict": "unknown"
+     }
+    ]
+   }
+  },
+  "priest": {
+   "shadow-dps": {
+    "raidsim/apls/priest/shadow-dps-raid.apl.json": [],
+    "raidsim/apls/priest/shadow-dps.apl.json": []
+   },
+   "smite-dps": {
+    "raidsim/apls/priest/smite-dps-raid.apl.json": [],
+    "raidsim/apls/priest/smite-dps.apl.json": []
+   }
+  },
+  "warlock": {
+   "affliction-raid": {
+    "raidsim/apls/warlock/affliction-raid-raid.apl.json": [],
+    "raidsim/apls/warlock/affliction-raid.apl.json": []
+   },
+   "affliction-wrack-raid": {
+    "raidsim/apls/warlock/affliction-wrack-raid-raid.apl.json": [
+     {
+      "part": "group Cooldowns",
+      "index": 2,
+      "id": 1259821,
+      "tag": 0,
+      "name": "Eureka!",
+      "verdict": "unknown"
+     },
+     {
+      "part": "group Cooldowns",
+      "index": 3,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     }
+    ],
+    "raidsim/apls/warlock/affliction-wrack-raid.apl.json": [
+     {
+      "part": "group Cooldowns",
+      "index": 2,
+      "id": 1259821,
+      "tag": 0,
+      "name": "Eureka!",
+      "verdict": "unknown"
+     },
+     {
+      "part": "group Cooldowns",
+      "index": 3,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     }
+    ]
+   },
+   "destro-raid": {
+    "raidsim/apls/warlock/destro-raid-raid.apl.json": [
+     {
+      "part": "group Cooldowns",
+      "index": 2,
+      "id": 1259821,
+      "tag": 0,
+      "name": "Eureka!",
+      "verdict": "unknown"
+     },
+     {
+      "part": "group Cooldowns",
+      "index": 3,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "group Cooldowns",
+      "index": 4,
+      "id": 20554,
+      "tag": 0,
+      "name": "Berserking",
+      "verdict": "unknown"
+     }
+    ],
+    "raidsim/apls/warlock/upstream/destro.apl.json": [
+     {
+      "part": "group Cooldowns",
+      "index": 2,
+      "id": 1259821,
+      "tag": 0,
+      "name": "Eureka!",
+      "verdict": "unknown"
+     },
+     {
+      "part": "group Cooldowns",
+      "index": 3,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "group Cooldowns",
+      "index": 4,
+      "id": 20554,
+      "tag": 0,
+      "name": "Berserking",
+      "verdict": "unknown"
+     }
+    ]
+   },
+   "fire-destro-raid": {
+    "raidsim/apls/warlock/fire-destro-raid-raid.apl.json": [],
+    "raidsim/apls/warlock/fire-destro-raid.apl.json": [
+     {
+      "part": "priorityList",
+      "index": 11,
+      "id": 1259821,
+      "tag": 0,
+      "name": "Eureka!",
+      "verdict": "unknown"
+     }
+    ]
+   },
+   "sb-raid": {
+    "raidsim/apls/warlock/sb-raid-raid.apl.json": [],
+    "raidsim/apls/warlock/sb-raid.apl.json": [
+     {
+      "part": "priorityList",
+      "index": 13,
+      "id": 1259821,
+      "tag": 0,
+      "name": "Eureka!",
+      "verdict": "unknown"
+     }
+    ]
+   },
+   "demonology-raid": {
+    "raidsim/apls/warlock/demonology-raid-raid.apl.json": [
+     {
+      "part": "group Cooldowns",
+      "index": 2,
+      "id": 1259821,
+      "tag": 0,
+      "name": "Eureka!",
+      "verdict": "unknown"
+     },
+     {
+      "part": "group Cooldowns",
+      "index": 3,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "group Cooldowns",
+      "index": 4,
+      "id": 20554,
+      "tag": 0,
+      "name": "Berserking",
+      "verdict": "unknown"
+     }
+    ],
+    "raidsim/apls/warlock/demonology-raid.apl.json": []
+   },
+   "incinerate-raid": {
+    "raidsim/apls/warlock/incinerate-raid-raid.apl.json": [],
+    "raidsim/apls/warlock/incinerate-raid.apl.json": []
+   }
+  },
+  "hunter": {
+   "mm-raid": {
+    "raidsim/apls/hunter/mm-raid-raid.apl.json": [],
+    "raidsim/apls/hunter/upstream/turret.apl.json": []
+   },
+   "mm-lonewolf-raid": {
+    "raidsim/apls/hunter/upstream/turret.apl.json": []
+   },
+   "bm-raid": {
+    "raidsim/apls/hunter/upstream/turret_hawk.apl.json": []
+   },
+   "melee-dps": {
+    "raidsim/apls/hunter/upstream/melee.apl.json": []
+   },
+   "survival-pet-raid": {
+    "raidsim/apls/hunter/upstream/melee.apl.json": []
+   }
+  },
+  "rogue": {
+   "combat-swords-raid": {
+    "raidsim/apls/rogue/combat-swords-raid-raid.apl.json": [
+     {
+      "part": "priorityList",
+      "index": 6,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 7,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 12,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 13,
+      "id": 1259799,
+      "tag": 0,
+      "name": "Elune's Light",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 14,
+      "id": 1259799,
+      "tag": 0,
+      "name": "Elune's Light",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 15,
+      "id": 1259812,
+      "tag": 0,
+      "name": "Eureka!",
+      "verdict": "unknown"
+     }
+    ],
+    "raidsim/apls/rogue/sim-presets/default.apl.json": [
+     {
+      "part": "priorityList",
+      "index": 6,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 7,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 12,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 13,
+      "id": 1259799,
+      "tag": 0,
+      "name": "Elune's Light",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 14,
+      "id": 1259799,
+      "tag": 0,
+      "name": "Elune's Light",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 15,
+      "id": 1259812,
+      "tag": 0,
+      "name": "Eureka!",
+      "verdict": "unknown"
+     }
+    ]
+   },
+   "combat-daggers-raid": {
+    "raidsim/apls/rogue/combat-daggers-raid-raid.apl.json": [
+     {
+      "part": "priorityList",
+      "index": 6,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 7,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 12,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 13,
+      "id": 1259799,
+      "tag": 0,
+      "name": "Elune's Light",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 14,
+      "id": 1259799,
+      "tag": 0,
+      "name": "Elune's Light",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 15,
+      "id": 1259812,
+      "tag": 0,
+      "name": "Eureka!",
+      "verdict": "unknown"
+     }
+    ],
+    "raidsim/apls/rogue/sim-presets/default.apl.json": [
+     {
+      "part": "priorityList",
+      "index": 6,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 7,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 12,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 13,
+      "id": 1259799,
+      "tag": 0,
+      "name": "Elune's Light",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 14,
+      "id": 1259799,
+      "tag": 0,
+      "name": "Elune's Light",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 15,
+      "id": 1259812,
+      "tag": 0,
+      "name": "Eureka!",
+      "verdict": "unknown"
+     }
+    ]
+   },
+   "assassination-raid": {
+    "raidsim/apls/rogue/assassination-raid-raid.apl.json": [
+     {
+      "part": "priorityList",
+      "index": 6,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 7,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 12,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 13,
+      "id": 1259799,
+      "tag": 0,
+      "name": "Elune's Light",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 14,
+      "id": 1259799,
+      "tag": 0,
+      "name": "Elune's Light",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 15,
+      "id": 1259812,
+      "tag": 0,
+      "name": "Eureka!",
+      "verdict": "unknown"
+     }
+    ],
+    "raidsim/apls/rogue/sim-presets/default.apl.json": [
+     {
+      "part": "priorityList",
+      "index": 6,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 7,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 12,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 13,
+      "id": 1259799,
+      "tag": 0,
+      "name": "Elune's Light",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 14,
+      "id": 1259799,
+      "tag": 0,
+      "name": "Elune's Light",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 15,
+      "id": 1259812,
+      "tag": 0,
+      "name": "Eureka!",
+      "verdict": "unknown"
+     }
+    ]
+   },
+   "subtlety-raid": {
+    "raidsim/apls/rogue/subtlety-raid-raid.apl.json": [
+     {
+      "part": "priorityList",
+      "index": 6,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 7,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 12,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 13,
+      "id": 1259799,
+      "tag": 0,
+      "name": "Elune's Light",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 14,
+      "id": 1259799,
+      "tag": 0,
+      "name": "Elune's Light",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 15,
+      "id": 1259812,
+      "tag": 0,
+      "name": "Eureka!",
+      "verdict": "unknown"
+     }
+    ],
+    "raidsim/apls/rogue/sim-presets/default.apl.json": [
+     {
+      "part": "priorityList",
+      "index": 6,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 7,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 12,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 13,
+      "id": 1259799,
+      "tag": 0,
+      "name": "Elune's Light",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 14,
+      "id": 1259799,
+      "tag": 0,
+      "name": "Elune's Light",
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 15,
+      "id": 1259812,
+      "tag": 0,
+      "name": "Eureka!",
+      "verdict": "unknown"
+     }
+    ]
+   }
+  },
+  "warrior": {
+   "arms-2h-raid": {
+    "raidsim/apls/warrior/arms-2h-raid-raid.apl.json": [
+     {
+      "part": "priorityList",
+      "index": 9,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     }
+    ],
+    "raidsim/apls/warrior/arms-2h-raid.apl.json": [
+     {
+      "part": "priorityList",
+      "index": 8,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     }
+    ]
+   },
+   "fury-dw-raid": {
+    "raidsim/apls/warrior/fury-dw-raid-raid.apl.json": [
+     {
+      "part": "priorityList",
+      "index": 7,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     }
+    ],
+    "raidsim/apls/warrior/fury-dw-raid.apl.json": [
+     {
+      "part": "priorityList",
+      "index": 9,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     }
+    ]
+   },
+   "prot-tank": {
+    "raidsim/apls/warrior/prot-tank-raid.apl.json": []
+   },
+   "arms-battle-raid": {
+    "raidsim/apls/warrior/arms-battle-raid-raid.apl.json": [
+     {
+      "part": "priorityList",
+      "index": 8,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     }
+    ],
+    "raidsim/apls/warrior/arms-battle-raid.apl.json": [
+     {
+      "part": "priorityList",
+      "index": 8,
+      "id": 20572,
+      "tag": 0,
+      "name": "Blood Fury",
+      "verdict": "unknown"
+     }
+    ]
+   }
+  },
+  "paladin": {
+   "ret-dps": {
+    "raidsim/apls/paladin/ret-dps-raid.apl.json": [],
+    "raidsim/apls/paladin/ret-dps.apl.json": []
+   },
+   "prot-tank": {
+    "raidsim/apls/paladin/prot-tank-raid.apl.json": []
+   },
+   "shockadin-raid": {
+    "raidsim/apls/paladin/shockadin-raid-raid.apl.json": [],
+    "raidsim/apls/paladin/sim-presets/retribution-holy_shock.apl.json": []
+   }
+  },
+  "shaman": {
+   "elemental-dps": {
+    "raidsim/apls/shaman/elemental-dps-raid.apl.json": [],
+    "raidsim/apls/shaman/elemental-dps.apl.json": []
+   },
+   "enhancement-dps": {
+    "raidsim/apls/shaman/enhancement-dps-raid.apl.json": [],
+    "raidsim/apls/shaman/enhancement-dps.apl.json": []
+   },
+   "stormcaller-dps": {
+    "raidsim/apls/shaman/stormcaller-dps-raid.apl.json": [
+     {
+      "part": "priorityList",
+      "index": 4,
+      "id": 20554,
+      "tag": 0,
+      "name": "Berserking",
+      "verdict": "unknown"
+     }
+    ],
+    "raidsim/apls/shaman/stormcaller-dps.apl.json": []
+   }
+  },
+  "druid": {
+   "balance-dps": {
+    "raidsim/apls/druid/balance-dps-raid.apl.json": [],
+    "raidsim/apls/druid/balance-dps.apl.json": []
+   },
+   "feral-cat-dps": {
+    "raidsim/apls/druid/feral-cat-dps-raid.apl.json": [
+     {
+      "part": "priorityList",
+      "index": 11,
+      "id": 1259799,
+      "tag": 0,
+      "name": "Elune's Light",
+      "verdict": "unknown"
+     }
+    ],
+    "raidsim/apls/druid/feral-cat-dps.apl.json": [
+     {
+      "part": "priorityList",
+      "index": 1,
+      "id": 13494,
+      "tag": 0,
+      "name": null,
+      "verdict": "unknown"
+     },
+     {
+      "part": "priorityList",
+      "index": 10,
+      "id": 23724,
+      "tag": 0,
+      "name": null,
+      "verdict": "unknown"
+     }
+    ]
+   },
+   "feral-bear-tank": {
+    "raidsim/apls/druid/upstream/feralbear-adaptive.apl.json": [
+     {
+      "part": "priorityList",
+      "index": 5,
+      "id": 1259799,
+      "tag": 0,
+      "name": "Elune's Light",
+      "verdict": "unknown"
+     },
+     {
+      "part": "group Optional on-use items",
+      "index": 3,
+      "id": 29602,
+      "tag": 0,
+      "name": null,
+      "verdict": "unknown"
+     }
+    ]
+   }
+  }
+ }
+}
