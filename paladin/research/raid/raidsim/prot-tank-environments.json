@@ -7,7 +7,8 @@
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
   "commit": "2e6e77d84",
   "racials": "off",
-  "pet_normalize": false,
+  "pet_normalize": true,
+  "patch_hash": "125d59c4f975f5df",
   "simulator": "wowsims/forever",
   "client": "1.60.1.70938",
   "gear_raid": "_reference/data/raidsim/gear_sets/forever/paladin-protection-default.gear.json",
@@ -86,38 +87,38 @@
     "max60": 412.3439979446291
    },
    "raid_spell_casts": {
+    "25780": 1.0,
     "20423": 6.0,
-    "1311015": 1.0,
-    "20308": 1.0,
-    "10310": 1.0,
-    "20414": 24.610333333333333,
-    "20928": 1.7633333333333334,
-    "20303": 1.0,
     "10301": 1.0,
+    "10310": 1.0,
     "10333": 29.051666666666666,
     "20232": 24.610333333333333,
-    "25780": 1.0,
-    "1239570": 14.591333333333333,
+    "24239": 1.4023333333333334,
     "20924": 15.670666666666667,
-    "24239": 1.4023333333333334
+    "1311015": 1.0,
+    "20303": 1.0,
+    "20308": 1.0,
+    "20414": 24.610333333333333,
+    "20928": 1.7633333333333334,
+    "1239570": 14.591333333333333
    },
    "raid_casts": {
-    "Seal of Fury": 6.0,
-    "Templar's Bulwark": 1.0,
-    "Seal of the Crusader": 1.0,
-    "Lay on Hands": 1.0,
-    "Judgement of Fury": 49.220666666666666,
-    "Holy Shield": 16.354666666666667,
-    "Auto Attack": 77.38333333333334,
-    "Judgement of the Crusader": 1.0,
-    "Retribution Aura": 1.0,
-    "Holy Strike": 29.051666666666666,
-    "item 19024": 1.0,
-    "item 272440": 1.0,
-    "OtherActionManaGain": 67.53466666666667,
     "Righteous Fury": 1.0,
+    "Seal of Fury": 6.0,
+    "Retribution Aura": 1.0,
+    "Lay on Hands": 1.0,
+    "Holy Strike": 29.051666666666666,
+    "Judgement of Fury": 49.220666666666666,
+    "Auto Attack": 77.38333333333334,
+    "Hammer of Wrath": 1.4023333333333334,
     "Consecration": 15.670666666666667,
-    "Hammer of Wrath": 1.4023333333333334
+    "OtherActionManaGain": 67.53466666666667,
+    "Templar's Bulwark": 1.0,
+    "Judgement of the Crusader": 1.0,
+    "Seal of the Crusader": 1.0,
+    "item 272440": 1.0,
+    "item 19024": 1.0,
+    "Holy Shield": 16.354666666666667
    },
    "raid_shares": {
     "Auto Attack": 0.2342,
@@ -131,7 +132,8 @@
     "Hammer of Wrath": 0.0163,
     "Thorns": 0.012,
     "Eye for an Eye": 0.0015
-   }
+   },
+   "raid_fp": "40f9b415ef739348"
   },
   {
    "label": "opt-prot-tank-raid-tank",
@@ -145,38 +147,38 @@
     "max60": 391.05441760461923
    },
    "raid_spell_casts": {
-    "20232": 16.876,
-    "20928": 2.0793333333333335,
+    "10310": 1.0,
+    "20414": 16.876,
     "20924": 14.849,
+    "20308": 1.0,
+    "24239": 1.3933333333333333,
     "20303": 1.0,
-    "25780": 1.0,
     "10333": 29.096666666666668,
     "20423": 6.0,
-    "1311015": 1.0,
-    "24239": 1.3933333333333333,
-    "10310": 1.0,
-    "10301": 1.0,
-    "20308": 1.0,
     "1239570": 14.116333333333333,
-    "20414": 16.876
+    "10301": 1.0,
+    "20928": 2.0793333333333335,
+    "20232": 16.876,
+    "25780": 1.0,
+    "1311015": 1.0
    },
    "raid_casts": {
-    "Judgement of Fury": 33.752,
-    "Holy Shield": 16.195666666666668,
-    "Consecration": 14.849,
-    "Judgement of the Crusader": 1.0,
-    "Righteous Fury": 1.0,
-    "item 19024": 1.0,
-    "Holy Strike": 29.096666666666668,
-    "OtherActionManaGain": 63.437333333333335,
-    "Seal of Fury": 6.0,
-    "Templar's Bulwark": 1.0,
-    "Hammer of Wrath": 1.3933333333333333,
     "Lay on Hands": 1.0,
+    "Judgement of Fury": 33.752,
     "Auto Attack": 77.41566666666667,
+    "Consecration": 14.849,
+    "Seal of the Crusader": 1.0,
+    "Hammer of Wrath": 1.3933333333333333,
+    "Judgement of the Crusader": 1.0,
+    "OtherActionManaGain": 63.437333333333335,
+    "Holy Strike": 29.096666666666668,
+    "Seal of Fury": 6.0,
+    "Holy Shield": 16.195666666666668,
     "Retribution Aura": 1.0,
+    "Righteous Fury": 1.0,
     "item 272440": 1.0,
-    "Seal of the Crusader": 1.0
+    "item 19024": 1.0,
+    "Templar's Bulwark": 1.0
    },
    "raid_shares": {
     "Auto Attack": 0.249,
@@ -189,7 +191,8 @@
     "Retribution Aura": 0.0215,
     "Hammer of Wrath": 0.0171,
     "Thorns": 0.0126
-   }
+   },
+   "raid_fp": "9d40ff74ae031dc5"
   },
   {
    "label": "protection-ml-tank",
@@ -203,38 +206,38 @@
     "max60": 440.51706546468597
    },
    "raid_spell_casts": {
-    "1239570": 15.308666666666667,
-    "25780": 1.0,
+    "20928": 1.258,
+    "20924": 17.442666666666668,
     "10301": 1.0,
     "1311015": 1.0,
+    "10310": 1.0,
     "20423": 6.0,
-    "20303": 1.0,
-    "20924": 17.442666666666668,
     "24239": 1.5326666666666666,
-    "10333": 28.994666666666667,
-    "20308": 1.0,
-    "20232": 24.75733333333333,
     "20414": 24.75733333333333,
-    "20928": 1.258,
-    "10310": 1.0
+    "20232": 24.75733333333333,
+    "25780": 1.0,
+    "20308": 1.0,
+    "10333": 28.994666666666667,
+    "1239570": 15.308666666666667,
+    "20303": 1.0
    },
    "raid_casts": {
     "Holy Shield": 16.566666666666666,
-    "Righteous Fury": 1.0,
+    "Consecration": 17.442666666666668,
+    "OtherActionManaGain": 74.76966666666667,
+    "item 272440": 1.0,
     "Retribution Aura": 1.0,
     "Templar's Bulwark": 1.0,
+    "Lay on Hands": 1.0,
     "Seal of Fury": 6.0,
-    "OtherActionManaGain": 74.76966666666667,
-    "item 19024": 1.0,
-    "Judgement of the Crusader": 1.0,
-    "Consecration": 17.442666666666668,
     "Hammer of Wrath": 1.5326666666666666,
-    "Holy Strike": 28.994666666666667,
-    "Seal of the Crusader": 1.0,
+    "item 19024": 1.0,
     "Judgement of Fury": 49.51466666666666,
     "Auto Attack": 91.86600000000001,
-    "item 272440": 1.0,
-    "Lay on Hands": 1.0
+    "Righteous Fury": 1.0,
+    "Seal of the Crusader": 1.0,
+    "Holy Strike": 28.994666666666667,
+    "Judgement of the Crusader": 1.0
    },
    "raid_shares": {
     "Auto Attack": 0.2572,
@@ -247,7 +250,8 @@
     "Retribution Aura": 0.0192,
     "Hammer of Wrath": 0.0164,
     "Thorns": 0.0113
-   }
+   },
+   "raid_fp": "f8cfb50b11bcbf32"
   },
   {
    "label": "sim preset: Default",
@@ -261,38 +265,38 @@
     "max60": 427.1757774195201
    },
    "raid_spell_casts": {
-    "1239570": 14.515333333333333,
-    "20414": 24.721,
     "10310": 1.0,
-    "20423": 6.0,
-    "20924": 18.581333333333333,
-    "10301": 1.0,
     "10333": 28.994333333333334,
     "25780": 1.0,
-    "20308": 1.0,
+    "10301": 1.0,
+    "20423": 6.0,
     "1311015": 1.0,
     "20232": 24.721,
     "24239": 2.0096666666666665,
-    "20928": 1.606,
-    "20303": 1.0
+    "1239570": 14.515333333333333,
+    "20303": 1.0,
+    "20924": 18.581333333333333,
+    "20414": 24.721,
+    "20308": 1.0,
+    "20928": 1.606
    },
    "raid_casts": {
-    "Holy Shield": 16.121333333333332,
     "Auto Attack": 91.343,
-    "Judgement of Fury": 49.442,
     "Lay on Hands": 1.0,
-    "Seal of Fury": 6.0,
-    "Consecration": 18.581333333333333,
-    "Retribution Aura": 1.0,
     "Holy Strike": 28.994333333333334,
-    "item 272440": 1.0,
     "Righteous Fury": 1.0,
-    "Seal of the Crusader": 1.0,
-    "OtherActionManaGain": 75.49833333333333,
+    "Retribution Aura": 1.0,
+    "Seal of Fury": 6.0,
     "Templar's Bulwark": 1.0,
+    "Judgement of Fury": 49.442,
     "Hammer of Wrath": 2.0096666666666665,
+    "OtherActionManaGain": 75.49833333333333,
+    "Holy Shield": 16.121333333333332,
+    "item 19024": 1.0,
     "Judgement of the Crusader": 1.0,
-    "item 19024": 1.0
+    "Consecration": 18.581333333333333,
+    "Seal of the Crusader": 1.0,
+    "item 272440": 1.0
    },
    "raid_shares": {
     "Auto Attack": 0.2518,
@@ -305,7 +309,8 @@
     "Hammer of Wrath": 0.0208,
     "Retribution Aura": 0.0196,
     "Thorns": 0.0115
-   }
+   },
+   "raid_fp": "33299766f621fcf0"
   }
  ]
 }

@@ -1,0 +1,3103 @@
+{
+ "druid/balance-dps/balance-moonkin-raid": {
+  "casts": {
+   "Insect Swarm": 11.737333333333334,
+   "Major Mana Potion": 1.0,
+   "Moonfire": 12.371333333333334,
+   "OtherActionManaGain": 33.839333333333336,
+   "Starfire": 48.91866666666667,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 272438": 1.0
+  },
+  "fingerprint": "47ce86efdf10e2b1",
+  "judged": "2026-11-20",
+  "shares": {
+   "Insect Swarm": 0.159,
+   "Moonfire": 0.1762,
+   "Starfire": 0.6647
+  }
+ },
+ "druid/balance-dps/opt-balance-dps-raid-dps": {
+  "casts": {
+   "Insect Swarm": 11.737333333333334,
+   "Major Mana Potion": 1.0,
+   "Moonfire": 12.371333333333334,
+   "OtherActionManaGain": 33.839333333333336,
+   "Starfire": 48.91866666666667,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 272438": 1.0
+  },
+  "fingerprint": "c1eef4d76d46b8b3",
+  "judged": "2026-11-20",
+  "shares": {
+   "Insect Swarm": 0.159,
+   "Moonfire": 0.1762,
+   "Starfire": 0.6647
+  }
+ },
+ "druid/feral-cat-dps/feral-cat-dps": {
+  "casts": {
+   "Auto Attack": 181.0,
+   "Dash": 1.0,
+   "Ferocious Bite": 0.8536666666666667,
+   "Goblin Sapper Charge": 1.0,
+   "Prowl": 1.0,
+   "Rake": 18.715666666666667,
+   "Ravage": 1.0,
+   "Rip": 13.686,
+   "Shred": 26.300666666666668,
+   "item 13965": 1.0
+  },
+  "fingerprint": "92d43b2e621ffc60",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2782,
+   "Ferocious Bite": 0.0092,
+   "Goblin Sapper Charge": 0.0095,
+   "Rake": 0.1827,
+   "Ravage": 0.0133,
+   "Rip": 0.269,
+   "Shred": 0.1561,
+   "Windfury Totem": 0.0786,
+   "spell 18211": 0.0035
+  }
+ },
+ "druid/feral-cat-dps/feral-combat-open-raid": {
+  "casts": {
+   "Auto Attack": 181.0,
+   "Dash": 1.0,
+   "Ferocious Bite": 3.182,
+   "Goblin Sapper Charge": 1.0,
+   "OtherActionManaGain": 133.151,
+   "Prowl": 1.0,
+   "Rake": 18.687666666666665,
+   "Ravage": 1.0,
+   "Rip": 14.287333333333333,
+   "Shifting Power": 22.194333333333333,
+   "Shred": 46.825,
+   "item 13965": 1.0,
+   "item 18371": 0.985
+  },
+  "fingerprint": "15dd1249ccce12ff",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2265,
+   "Ferocious Bite": 0.0331,
+   "Goblin Sapper Charge": 0.0077,
+   "Rake": 0.1561,
+   "Ravage": 0.0114,
+   "Rip": 0.254,
+   "Shred": 0.2386,
+   "Windfury Totem": 0.0696,
+   "spell 18211": 0.003
+  }
+ },
+ "druid/feral-cat-dps/feral-combat-shifting-power-raid": {
+  "casts": {
+   "Auto Attack": 181.0,
+   "Dash": 1.0,
+   "Ferocious Bite": 3.182,
+   "Goblin Sapper Charge": 1.0,
+   "OtherActionManaGain": 133.151,
+   "Prowl": 1.0,
+   "Rake": 18.687666666666665,
+   "Ravage": 1.0,
+   "Rip": 14.287333333333333,
+   "Shifting Power": 22.194333333333333,
+   "Shred": 46.825,
+   "item 13965": 1.0,
+   "item 18371": 0.985
+  },
+  "fingerprint": "6057b8156ea77a97",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2266,
+   "Ferocious Bite": 0.0331,
+   "Goblin Sapper Charge": 0.0077,
+   "Rake": 0.1561,
+   "Ravage": 0.0114,
+   "Rip": 0.2539,
+   "Shred": 0.2385,
+   "Windfury Totem": 0.0696,
+   "spell 18211": 0.003
+  }
+ },
+ "druid/feral-cat-dps/opt-feral-cat-dps-raid-dps": {
+  "casts": {
+   "Auto Attack": 181.0,
+   "Dash": 1.0,
+   "Ferocious Bite": 0.828,
+   "Goblin Sapper Charge": 1.0,
+   "Prowl": 1.0,
+   "Rake": 18.516666666666666,
+   "Ravage": 1.0,
+   "Rip": 13.346666666666666,
+   "Shred": 25.463666666666665,
+   "item 13965": 1.0
+  },
+  "fingerprint": "127899f5161c823f",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2732,
+   "Ferocious Bite": 0.0092,
+   "Goblin Sapper Charge": 0.0093,
+   "Rake": 0.1862,
+   "Ravage": 0.0138,
+   "Rip": 0.2722,
+   "Shred": 0.1561,
+   "Windfury Totem": 0.0766,
+   "spell 18211": 0.0034
+  }
+ },
+ "hunter/bm-raid/beast-marks-ml-raid": {
+  "casts": {
+   "Aimed Shot": 22.601,
+   "Arcane Shot": 9.812666666666667,
+   "Aspect of the Hawk": 1.0,
+   "Auto Shot": 82.41266666666667,
+   "Hunter's Mark": 2.0,
+   "Major Mana Potion": 1.0,
+   "OtherActionManaGain": 74.50966666666666,
+   "OtherActionMove": 3.096,
+   "Pet: Auto Attack": 384.86,
+   "Pet: Bite": 2.0,
+   "Pet: Claw": 86.0,
+   "Pet: Dash": 1.0,
+   "Pet: OtherActionMove": 1.0,
+   "Rapid Fire": 1.0,
+   "Serpent Sting": 12.0,
+   "Summon Hawk": 20.0,
+   "item 13965": 1.0
+  },
+  "fingerprint": "85ff857103799d9b",
+  "judged": "2026-11-20",
+  "shares": {
+   "Aimed Shot": 0.1544,
+   "Arcane Shot": 0.0479,
+   "Auto Shot": 0.3214,
+   "Pet: Auto Attack": 0.2796,
+   "Pet: Bite": 0.0019,
+   "Pet: Claw": 0.0487,
+   "Serpent Sting": 0.1158,
+   "Summon Hawk": 0.0301
+  }
+ },
+ "hunter/bm-raid/beast-mastery-ml-raid": {
+  "casts": {
+   "Aimed Shot": 22.612,
+   "Arcane Shot": 9.829,
+   "Aspect of the Hawk": 1.0,
+   "Auto Shot": 82.419,
+   "Bestial Wrath": 2.0,
+   "Hunter's Mark": 2.0,
+   "Major Mana Potion": 1.0,
+   "OtherActionManaGain": 74.46233333333333,
+   "OtherActionMove": 3.096,
+   "Pet: Auto Attack": 394.145,
+   "Pet: Bite": 2.0,
+   "Pet: Claw": 86.0,
+   "Pet: Dash": 1.0,
+   "Pet: OtherActionMove": 1.0,
+   "Rapid Fire": 1.0,
+   "Serpent Sting": 12.0,
+   "Summon Hawk": 20.0,
+   "item 13965": 1.0
+  },
+  "fingerprint": "045ad54adc458a79",
+  "judged": "2026-11-20",
+  "shares": {
+   "Aimed Shot": 0.1373,
+   "Arcane Shot": 0.0468,
+   "Auto Shot": 0.3141,
+   "Pet: Auto Attack": 0.3039,
+   "Pet: Bite": 0.0023,
+   "Pet: Claw": 0.053,
+   "Serpent Sting": 0.113,
+   "Summon Hawk": 0.0294
+  }
+ },
+ "hunter/bm-raid/mm-hawk-raid": {
+  "casts": {
+   "Aimed Shot": 22.419666666666668,
+   "Arcane Shot": 9.062333333333333,
+   "Aspect of the Hawk": 1.0,
+   "Auto Shot": 82.44566666666667,
+   "Hunter's Mark": 2.0,
+   "Major Mana Potion": 0.9983333333333333,
+   "OtherActionManaGain": 73.81,
+   "OtherActionMove": 3.096,
+   "Pet: Auto Attack": 347.1723333333333,
+   "Pet: Bite": 1.0,
+   "Pet: Claw": 80.45766666666667,
+   "Pet: Dash": 1.0,
+   "Pet: OtherActionMove": 1.0,
+   "Rapid Fire": 1.0,
+   "Serpent Sting": 12.0,
+   "Summon Hawk": 20.0,
+   "item 13965": 1.0
+  },
+  "fingerprint": "0388e58e0cff1ed9",
+  "judged": "2026-11-20",
+  "shares": {
+   "Aimed Shot": 0.1477,
+   "Arcane Shot": 0.0473,
+   "Auto Shot": 0.3413,
+   "Pet: Auto Attack": 0.2589,
+   "Pet: Bite": 0.001,
+   "Pet: Claw": 0.0476,
+   "Serpent Sting": 0.1241,
+   "Summon Hawk": 0.032
+  }
+ },
+ "hunter/melee-dps/beast-survival-open-raid": {
+  "casts": {
+   "Arcane Shot": 1.729,
+   "Aspect of the Beast": 1.0,
+   "Auto Attack": 156.367,
+   "Auto Shot": 9.982333333333333,
+   "Hunter's Mark": 2.0,
+   "Immolation Trap": 7.052333333333333,
+   "Major Mana Potion": 0.9643333333333334,
+   "Mongoose Bite": 19.75733333333333,
+   "Multi-Shot": 1.3646666666666667,
+   "OtherActionManaGain": 145.71533333333332,
+   "OtherActionMove": 19.009,
+   "Pet: Auto Attack": 161.56166666666667,
+   "Rapid Fire": 1.0,
+   "Raptor Strike": 24.420333333333332,
+   "Serpent Sting": 8.985,
+   "Strider Kick": 19.783666666666665,
+   "Summon Hawk": 21.765,
+   "Wing Clip": 37.009,
+   "item 13965": 1.0
+  },
+  "fingerprint": "a07e6585e6b349a4",
+  "judged": "2026-11-20",
+  "shares": {
+   "Arcane Shot": 0.0103,
+   "Auto Attack": 0.2889,
+   "Auto Shot": 0.0471,
+   "Immolation Trap": 0.0698,
+   "Mongoose Bite": 0.0783,
+   "Multi-Shot": 0.0063,
+   "Pet: Auto Attack": 0.1117,
+   "Raptor Strike": 0.0836,
+   "Serpent Sting": 0.0914,
+   "Strider Kick": 0.0677,
+   "Summon Hawk": 0.0406,
+   "Windfury Totem": 0.0852,
+   "Wing Clip": 0.0191
+  }
+ },
+ "hunter/melee-dps/melee-survival-raid": {
+  "casts": {
+   "Arcane Shot": 2.08,
+   "Aspect of the Beast": 1.0,
+   "Auto Attack": 151.04033333333334,
+   "Auto Shot": 11.652,
+   "Hunter's Mark": 2.0,
+   "Immolation Trap": 9.718333333333334,
+   "Mongoose Bite": 19.515333333333334,
+   "Multi-Shot": 1.0,
+   "OtherActionManaGain": 112.69666666666667,
+   "OtherActionMove": 22.432333333333332,
+   "Rapid Fire": 0.9996666666666667,
+   "Raptor Strike": 24.332,
+   "Serpent Sting": 10.692,
+   "Strider Kick": 19.845333333333333,
+   "Wing Clip": 54.52066666666666,
+   "item 13965": 0.9996666666666667
+  },
+  "fingerprint": "284b0f29e822cfae",
+  "judged": "2026-11-20",
+  "shares": {
+   "Arcane Shot": 0.0135,
+   "Auto Attack": 0.3028,
+   "Auto Shot": 0.0607,
+   "Immolation Trap": 0.1081,
+   "Lacerating Strikes": 0.0182,
+   "Mongoose Bite": 0.0834,
+   "Multi-Shot": 0.0051,
+   "Raptor Strike": 0.0899,
+   "Serpent Sting": 0.114,
+   "Strider Kick": 0.0739,
+   "Windfury Totem": 0.1006,
+   "Wing Clip": 0.0296
+  }
+ },
+ "hunter/melee-dps/opt-melee-dps-raid-dps": {
+  "casts": {
+   "Arcane Shot": 2.089,
+   "Aspect of the Beast": 1.0,
+   "Auto Attack": 151.31033333333335,
+   "Auto Shot": 11.645,
+   "Hunter's Mark": 2.0,
+   "Immolation Trap": 5.995,
+   "Mongoose Bite": 19.72,
+   "Multi-Shot": 1.0,
+   "OtherActionManaGain": 107.35366666666667,
+   "OtherActionMove": 22.423333333333332,
+   "Rapid Fire": 0.9993333333333333,
+   "Raptor Strike": 24.334666666666667,
+   "Serpent Sting": 10.683333333333334,
+   "Strider Kick": 19.840333333333334,
+   "Wing Clip": 58.03633333333333,
+   "item 13965": 0.9993333333333333
+  },
+  "fingerprint": "0e61e58daaf41170",
+  "judged": "2026-11-20",
+  "shares": {
+   "Arcane Shot": 0.0144,
+   "Auto Attack": 0.3205,
+   "Auto Shot": 0.0642,
+   "Immolation Trap": 0.0511,
+   "Lacerating Strikes": 0.0194,
+   "Mongoose Bite": 0.0892,
+   "Multi-Shot": 0.0054,
+   "Raptor Strike": 0.0951,
+   "Serpent Sting": 0.121,
+   "Strider Kick": 0.0781,
+   "Windfury Totem": 0.1081,
+   "Wing Clip": 0.0333
+  }
+ },
+ "hunter/melee-dps/survival-ml-parse": {
+  "casts": {
+   "Arcane Shot": 2.0803333333333334,
+   "Aspect of the Beast": 1.0,
+   "Auto Attack": 151.32166666666666,
+   "Auto Shot": 11.61,
+   "Hunter's Mark": 2.0,
+   "Immolation Trap": 9.722666666666667,
+   "Major Mana Potion": 0.141,
+   "Mongoose Bite": 19.666666666666668,
+   "Multi-Shot": 1.0,
+   "OtherActionManaGain": 144.294,
+   "OtherActionMove": 22.364,
+   "Rapid Fire": 0.999,
+   "Raptor Strike": 24.346666666666668,
+   "Serpent Sting": 10.650333333333334,
+   "Strider Kick": 19.839,
+   "Wing Clip": 54.43266666666667,
+   "item 13965": 0.999
+  },
+  "fingerprint": "f627109182c5895a",
+  "judged": "2026-11-20",
+  "shares": {
+   "Arcane Shot": 0.0136,
+   "Auto Attack": 0.3045,
+   "Auto Shot": 0.0609,
+   "Immolation Trap": 0.1043,
+   "Lacerating Strikes": 0.0183,
+   "Mongoose Bite": 0.0842,
+   "Multi-Shot": 0.0051,
+   "Raptor Strike": 0.0899,
+   "Serpent Sting": 0.1143,
+   "Strider Kick": 0.0741,
+   "Windfury Totem": 0.101,
+   "Wing Clip": 0.0297
+  }
+ },
+ "hunter/melee-dps/survival-raid": {
+  "casts": {
+   "Arcane Shot": 2.070666666666667,
+   "Aspect of the Beast": 1.0,
+   "Auto Attack": 151.14166666666665,
+   "Auto Shot": 11.665,
+   "Hunter's Mark": 2.0,
+   "Immolation Trap": 9.707333333333333,
+   "Mongoose Bite": 19.527333333333335,
+   "Multi-Shot": 1.0,
+   "OtherActionManaGain": 107.108,
+   "OtherActionMove": 22.448,
+   "Rapid Fire": 1.0,
+   "Raptor Strike": 24.355333333333334,
+   "Serpent Sting": 10.704333333333333,
+   "Strider Kick": 19.847333333333335,
+   "Wing Clip": 54.521,
+   "item 13965": 1.0
+  },
+  "fingerprint": "d66b3199580b5459",
+  "judged": "2026-11-20",
+  "shares": {
+   "Arcane Shot": 0.0139,
+   "Auto Attack": 0.3108,
+   "Auto Shot": 0.0619,
+   "Immolation Trap": 0.1027,
+   "Mongoose Bite": 0.0857,
+   "Multi-Shot": 0.0052,
+   "Raptor Strike": 0.0926,
+   "Serpent Sting": 0.1172,
+   "Strider Kick": 0.076,
+   "Windfury Totem": 0.1033,
+   "Wing Clip": 0.0307
+  }
+ },
+ "hunter/mm-lonewolf-raid/marksmanship-lone-wolf-sim-raid": {
+  "casts": {
+   "Aimed Shot": 19.366333333333333,
+   "Arcane Shot": 37.06166666666667,
+   "Aspect of the Hawk": 1.0,
+   "Auto Shot": 82.406,
+   "Hunter's Mark": 2.0,
+   "Major Mana Potion": 1.0026666666666666,
+   "OtherActionManaGain": 81.466,
+   "OtherActionMove": 3.092,
+   "Rapid Fire": 1.0,
+   "Serpent Sting": 11.971333333333334,
+   "Sniper Shot": 9.93,
+   "item 13965": 1.0
+  },
+  "fingerprint": "0147dc2cb403364e",
+  "judged": "2026-11-20",
+  "shares": {
+   "Aimed Shot": 0.1601,
+   "Arcane Shot": 0.2212,
+   "Auto Shot": 0.3881,
+   "Serpent Sting": 0.1371,
+   "Sniper Shot": 0.0935
+  }
+ },
+ "hunter/mm-lonewolf-raid/mm-lone-wolf-raid": {
+  "casts": {
+   "Aimed Shot": 19.305333333333333,
+   "Arcane Shot": 37.038666666666664,
+   "Aspect of the Hawk": 1.0,
+   "Auto Shot": 82.40766666666667,
+   "Hunter's Mark": 2.0,
+   "Major Mana Potion": 1.013,
+   "OtherActionManaGain": 81.238,
+   "OtherActionMove": 3.092,
+   "Rapid Fire": 1.0,
+   "Serpent Sting": 11.91,
+   "Sniper Shot": 9.898333333333333,
+   "item 13965": 1.0
+  },
+  "fingerprint": "b8471656f7b02641",
+  "judged": "2026-11-20",
+  "shares": {
+   "Aimed Shot": 0.1657,
+   "Arcane Shot": 0.2198,
+   "Auto Shot": 0.3859,
+   "Serpent Sting": 0.1362,
+   "Sniper Shot": 0.0924
+  }
+ },
+ "hunter/mm-lonewolf-raid/opt-mm-lonewolf-raid-raid-dps": {
+  "casts": {
+   "Aimed Shot": 20.812666666666665,
+   "Arcane Shot": 28.342,
+   "Aspect of the Hawk": 1.0,
+   "Auto Shot": 82.36566666666667,
+   "Hunter's Mark": 2.0,
+   "Major Mana Potion": 1.0,
+   "OtherActionManaGain": 77.21866666666666,
+   "OtherActionMove": 3.092,
+   "Rapid Fire": 1.0,
+   "Serpent Sting": 11.245,
+   "Sniper Shot": 10.0,
+   "item 13965": 1.0
+  },
+  "fingerprint": "2a8bb711dc0eede2",
+  "judged": "2026-11-20",
+  "shares": {
+   "Aimed Shot": 0.1867,
+   "Arcane Shot": 0.1754,
+   "Auto Shot": 0.4024,
+   "Serpent Sting": 0.1378,
+   "Sniper Shot": 0.0976
+  }
+ },
+ "hunter/mm-raid/bm-mm-full-buffs-raid": {
+  "casts": {
+   "Aimed Shot": 22.406,
+   "Arcane Shot": 29.065,
+   "Aspect of the Hawk": 1.0,
+   "Auto Shot": 82.41533333333334,
+   "Hunter's Mark": 2.0,
+   "Major Mana Potion": 2.0,
+   "OtherActionManaGain": 73.66,
+   "OtherActionMove": 3.096,
+   "Pet: Auto Attack": 155.71466666666666,
+   "Pet: Bite": 1.0,
+   "Pet: Claw": 80.45766666666667,
+   "Pet: Dash": 1.0,
+   "Pet: OtherActionMove": 1.0,
+   "Rapid Fire": 1.0,
+   "Serpent Sting": 12.0,
+   "item 13965": 1.0
+  },
+  "fingerprint": "6e0ea5a863d86e6d",
+  "judged": "2026-11-20",
+  "shares": {
+   "Aimed Shot": 0.1776,
+   "Arcane Shot": 0.1593,
+   "Auto Shot": 0.3575,
+   "Pet: Auto Attack": 0.1403,
+   "Pet: Bite": 0.001,
+   "Pet: Claw": 0.0493,
+   "Serpent Sting": 0.1149
+  }
+ },
+ "hunter/mm-raid/bm-mm-raid": {
+  "casts": {
+   "Aimed Shot": 22.594333333333335,
+   "Arcane Shot": 9.469666666666667,
+   "Aspect of the Hawk": 1.0,
+   "Auto Shot": 82.33333333333333,
+   "Hunter's Mark": 2.0,
+   "Major Mana Potion": 2.0,
+   "OtherActionManaGain": 72.80166666666666,
+   "OtherActionMove": 3.096,
+   "Pet: Auto Attack": 347.807,
+   "Pet: Bite": 2.0,
+   "Pet: Claw": 86.0,
+   "Pet: Dash": 1.0,
+   "Pet: OtherActionMove": 1.0,
+   "Rapid Fire": 1.0,
+   "Serpent Sting": 12.0,
+   "Summon Hawk": 20.0,
+   "item 13965": 1.0
+  },
+  "fingerprint": "521ad589149485e7",
+  "judged": "2026-11-20",
+  "shares": {
+   "Aimed Shot": 0.1488,
+   "Arcane Shot": 0.0488,
+   "Auto Shot": 0.3408,
+   "Pet: Auto Attack": 0.2543,
+   "Pet: Bite": 0.002,
+   "Pet: Claw": 0.05,
+   "Serpent Sting": 0.1236,
+   "Summon Hawk": 0.0318
+  }
+ },
+ "hunter/mm-raid/marksmanship-ml-raid": {
+  "casts": {
+   "Aimed Shot": 19.231,
+   "Arcane Shot": 37.818333333333335,
+   "Aspect of the Hawk": 1.0,
+   "Auto Shot": 82.411,
+   "Hunter's Mark": 2.0,
+   "Major Mana Potion": 2.0,
+   "OtherActionManaGain": 81.723,
+   "OtherActionMove": 3.1,
+   "Pet: Auto Attack": 155.72333333333333,
+   "Pet: Bite": 1.0,
+   "Pet: Claw": 73.0,
+   "Pet: Dash": 1.0,
+   "Pet: OtherActionMove": 1.0,
+   "Rapid Fire": 1.0,
+   "Serpent Sting": 11.785666666666666,
+   "Sniper Shot": 9.977666666666666,
+   "item 13965": 1.0
+  },
+  "fingerprint": "449402d8465b7684",
+  "judged": "2026-11-20",
+  "shares": {
+   "Aimed Shot": 0.1427,
+   "Arcane Shot": 0.1941,
+   "Auto Shot": 0.3329,
+   "Pet: Auto Attack": 0.0998,
+   "Pet: Bite": 0.0007,
+   "Pet: Claw": 0.0324,
+   "Serpent Sting": 0.1167,
+   "Sniper Shot": 0.0806
+  }
+ },
+ "hunter/survival-pet-raid/melee-survival-raid": {
+  "casts": {
+   "Aspect of the Beast": 1.0,
+   "Auto Attack": 190.27033333333333,
+   "Explosive Trap": 9.0,
+   "Hunter's Mark": 1.0,
+   "Immolation Trap": 1.0,
+   "Mongoose Bite": 14.011333333333333,
+   "OtherActionManaGain": 110.97066666666667,
+   "Pet: Auto Attack": 136.521,
+   "Pet: Bite": 1.0,
+   "Pet: Claw": 72.0,
+   "Pet: Savage Rend": 1.0,
+   "Rapid Fire": 1.0,
+   "Raptor Strike": 25.117333333333335,
+   "Strider Kick": 19.881666666666668,
+   "Wing Clip": 75.107,
+   "item 13965": 1.0
+  },
+  "fingerprint": "2719fc3d81c3a86c",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.3592,
+   "Explosive Trap": 0.0824,
+   "Immolation Trap": 0.011,
+   "Lacerating Strikes": 0.0136,
+   "Mongoose Bite": 0.0561,
+   "Pet: Auto Attack": 0.1309,
+   "Pet: Bite": 0.0008,
+   "Pet: Claw": 0.0363,
+   "Pet: Savage Rend": 0.002,
+   "Raptor Strike": 0.0873,
+   "Strider Kick": 0.07,
+   "Windfury Totem": 0.1114,
+   "Wing Clip": 0.039
+  }
+ },
+ "hunter/survival-pet-raid/survival-raptor-raid": {
+  "casts": {
+   "Arcane Shot": 1.7323333333333333,
+   "Aspect of the Beast": 1.0,
+   "Auto Attack": 157.71766666666667,
+   "Auto Shot": 9.554333333333334,
+   "Hunter's Mark": 2.0,
+   "Immolation Trap": 9.566666666666666,
+   "Major Mana Potion": 0.9906666666666667,
+   "Mongoose Bite": 19.752666666666666,
+   "Multi-Shot": 1.36,
+   "OtherActionManaGain": 145.85866666666666,
+   "OtherActionMove": 18.133666666666667,
+   "Pet: Auto Attack": 294.6383333333334,
+   "Pet: Bite": 1.0,
+   "Pet: Claw": 72.0,
+   "Pet: Savage Rend": 1.0,
+   "Rapid Fire": 1.0,
+   "Raptor Strike": 24.376,
+   "Serpent Sting": 8.553,
+   "Strider Kick": 19.737333333333332,
+   "Summon Hawk": 21.613,
+   "Wing Clip": 34.989,
+   "item 13965": 1.0
+  },
+  "fingerprint": "1a6dbf0c4ab39c94",
+  "judged": "2026-11-20",
+  "shares": {
+   "Arcane Shot": 0.0083,
+   "Auto Attack": 0.2268,
+   "Auto Shot": 0.0362,
+   "Immolation Trap": 0.074,
+   "Lacerating Strikes": 0.0131,
+   "Mongoose Bite": 0.0605,
+   "Multi-Shot": 0.0051,
+   "Pet: Auto Attack": 0.2308,
+   "Pet: Bite": 0.0009,
+   "Pet: Claw": 0.0396,
+   "Pet: Savage Rend": 0.0021,
+   "Raptor Strike": 0.0656,
+   "Serpent Sting": 0.0706,
+   "Strider Kick": 0.0523,
+   "Summon Hawk": 0.0326,
+   "Windfury Totem": 0.0665,
+   "Wing Clip": 0.0149
+  }
+ },
+ "mage/arcane-dps/arcane-blast-raid": {
+  "casts": {
+   "Arcane Blast": 37.803,
+   "Arcane Missiles": 25.108,
+   "Arcane Power": 1.0,
+   "Demonic Rune": 1.4266666666666667,
+   "Evocation": 0.756,
+   "Fire Blast": 28.961,
+   "Major Mana Potion": 1.2426666666666666,
+   "Mana Citrine": 0.007,
+   "Mana Ruby": 0.502,
+   "OtherActionManaGain": 83.97766666666666,
+   "Presence of Mind": 1.0,
+   "Robe of the Archmage": 1.0,
+   "Scorch": 25.486333333333334,
+   "Talisman of Ephemeral Power": 1.999
+  },
+  "fingerprint": "383a0fd750435e91",
+  "judged": "2026-11-20",
+  "shares": {
+   "Arcane Blast": 0.2514,
+   "Arcane Missiles": 0.293,
+   "Demonic Rune": 0.0088,
+   "Fire Blast": 0.2438,
+   "Ignite": 0.0574,
+   "Scorch": 0.1457
+  }
+ },
+ "mage/arcane-dps/arcane-fire-raid": {
+  "casts": {
+   "Arcane Blast": 34.279333333333334,
+   "Arcane Missiles": 24.989333333333335,
+   "Arcane Power": 1.0,
+   "Arcane Wrath": 8.284333333333333,
+   "Demonic Rune": 1.3333333333333333,
+   "Evocation": 0.9673333333333334,
+   "Fire Blast": 28.054333333333332,
+   "Major Mana Potion": 1.7923333333333333,
+   "Mana Citrine": 0.005666666666666667,
+   "Mana Ruby": 0.6606666666666666,
+   "OtherActionManaGain": 80.738,
+   "Presence of Mind": 1.0,
+   "Pyroblast": 10.549333333333333,
+   "Robe of the Archmage": 1.0,
+   "Scorch": 2.855,
+   "Talisman of Ephemeral Power": 2.0
+  },
+  "fingerprint": "d53798d6213a6dba",
+  "judged": "2026-11-20",
+  "shares": {
+   "Arcane Blast": 0.1919,
+   "Arcane Missiles": 0.2383,
+   "Arcane Wrath": 0.1331,
+   "Demonic Rune": 0.0069,
+   "Fire Blast": 0.1974,
+   "Ignite": 0.0433,
+   "Pyroblast": 0.1748,
+   "Scorch": 0.0143
+  }
+ },
+ "mage/arcane-dps/arcane-open-raid": {
+  "casts": {
+   "Arcane Blast": 35.751,
+   "Arcane Missiles": 25.988666666666667,
+   "Arcane Power": 1.0,
+   "Arcane Wrath": 10.355,
+   "Demonic Rune": 1.4696666666666667,
+   "Evocation": 0.9873333333333333,
+   "Fire Blast": 23.218666666666667,
+   "Major Mana Potion": 1.8323333333333334,
+   "Mana Ruby": 0.5303333333333333,
+   "OtherActionManaGain": 82.568,
+   "Presence of Mind": 1.0,
+   "Pyroblast": 8.923,
+   "Robe of the Archmage": 1.0,
+   "Scorch": 6.3373333333333335,
+   "Talisman of Ephemeral Power": 2.0
+  },
+  "fingerprint": "7d58df54372567b5",
+  "judged": "2026-11-20",
+  "shares": {
+   "Arcane Blast": 0.2013,
+   "Arcane Missiles": 0.2506,
+   "Arcane Wrath": 0.1654,
+   "Demonic Rune": 0.0076,
+   "Fire Blast": 0.1635,
+   "Ignite": 0.0311,
+   "Pyroblast": 0.1488,
+   "Scorch": 0.0317
+  }
+ },
+ "mage/arcane-frost-raid/arcane-frost-open-raid": {
+  "casts": {
+   "Arcane Blast": 24.169333333333334,
+   "Arcane Missiles": 27.138,
+   "Arcane Wrath": 14.078666666666667,
+   "Demonic Rune": 0.578,
+   "Evocation": 0.0003333333333333333,
+   "Fire Blast": 0.5996666666666667,
+   "Frostbolt": 25.93166666666667,
+   "Major Mana Potion": 0.978,
+   "Mana Citrine": 0.08833333333333333,
+   "Mana Ruby": 1.0,
+   "OtherActionManaGain": 72.58866666666667,
+   "Robe of the Archmage": 1.0,
+   "Talisman of Ephemeral Power": 2.0
+  },
+  "fingerprint": "66bd2a7d72232473",
+  "judged": "2026-11-20",
+  "shares": {
+   "Arcane Blast": 0.1561,
+   "Arcane Missiles": 0.2948,
+   "Arcane Wrath": 0.2514,
+   "Demonic Rune": 0.0035,
+   "Fire Blast": 0.0048,
+   "Frostbolt": 0.2893
+  }
+ },
+ "mage/arcane-frost-raid/frost-arcane-power-raid": {
+  "casts": {
+   "Arcane Blast": 24.871,
+   "Arcane Missiles": 26.818,
+   "Arcane Power": 1.0,
+   "Arcane Wrath": 12.535,
+   "Demonic Rune": 0.09633333333333334,
+   "Fire Blast": 0.45166666666666666,
+   "Frostbolt": 25.234,
+   "Major Mana Potion": 0.21633333333333332,
+   "Mana Citrine": 0.10333333333333333,
+   "Mana Ruby": 0.9616666666666667,
+   "OtherActionManaGain": 68.314,
+   "Presence of Mind": 1.0,
+   "Robe of the Archmage": 1.0,
+   "Talisman of Ephemeral Power": 2.0
+  },
+  "fingerprint": "0843ec226801e3f6",
+  "judged": "2026-11-20",
+  "shares": {
+   "Arcane Blast": 0.1609,
+   "Arcane Missiles": 0.3037,
+   "Arcane Wrath": 0.2359,
+   "Demonic Rune": 0.0006,
+   "Fire Blast": 0.0037,
+   "Frostbolt": 0.2953
+  }
+ },
+ "mage/fire-raid/fire-open-raid": {
+  "casts": {
+   "Arcane Blast": 8.766,
+   "Arcane Missiles": 12.724666666666666,
+   "Combustion": 1.0,
+   "Demonic Rune": 0.993,
+   "Fire Blast": 29.916666666666668,
+   "Fireball": 18.584666666666667,
+   "Major Mana Potion": 2.0,
+   "Mana Citrine": 0.004,
+   "Mana Ruby": 0.9813333333333333,
+   "OtherActionManaGain": 86.93,
+   "Pyroblast": 14.581333333333333,
+   "Robe of the Archmage": 1.0,
+   "Scorch": 17.987666666666666,
+   "Talisman of Ephemeral Power": 2.0
+  },
+  "fingerprint": "36278ac92cb42c7c",
+  "judged": "2026-11-20",
+  "shares": {
+   "Arcane Blast": 0.0351,
+   "Arcane Missiles": 0.0863,
+   "Demonic Rune": 0.0048,
+   "Fire Blast": 0.226,
+   "Fireball": 0.2111,
+   "Ignite": 0.0998,
+   "Pyroblast": 0.2535,
+   "Scorch": 0.0834
+  }
+ },
+ "mage/fire-raid/fire-raid": {
+  "casts": {
+   "Arcane Missiles": 8.718666666666667,
+   "Combustion": 1.0,
+   "Demonic Rune": 1.0283333333333333,
+   "Fire Blast": 29.215333333333334,
+   "Fireball": 22.144666666666666,
+   "Major Mana Potion": 2.0,
+   "Mana Citrine": 0.0003333333333333333,
+   "Mana Ruby": 0.963,
+   "OtherActionManaGain": 81.41466666666666,
+   "Pyroblast": 14.360333333333333,
+   "Robe of the Archmage": 1.0,
+   "Scorch": 23.495333333333335,
+   "Talisman of Ephemeral Power": 2.0
+  },
+  "fingerprint": "f4b5cf4e53bdf805",
+  "judged": "2026-11-20",
+  "shares": {
+   "Arcane Missiles": 0.0599,
+   "Demonic Rune": 0.0051,
+   "Fire Blast": 0.2206,
+   "Fireball": 0.2521,
+   "Ignite": 0.1016,
+   "Pyroblast": 0.2521,
+   "Scorch": 0.1085
+  }
+ },
+ "mage/fire-raid/opt-fire-raid-raid-dps": {
+  "casts": {
+   "Arcane Missiles": 9.114666666666666,
+   "Combustion": 1.0,
+   "Demonic Rune": 0.957,
+   "Fire Blast": 30.078333333333333,
+   "Fireball": 22.920666666666666,
+   "Major Mana Potion": 2.0,
+   "Mana Citrine": 0.008,
+   "Mana Ruby": 0.992,
+   "OtherActionManaGain": 79.79666666666667,
+   "Pyroblast": 14.434666666666667,
+   "Robe of the Archmage": 1.0,
+   "Scorch": 21.586,
+   "Talisman of Ephemeral Power": 2.0
+  },
+  "fingerprint": "5f805c612bd6d3ea",
+  "judged": "2026-11-20",
+  "shares": {
+   "Arcane Missiles": 0.0618,
+   "Demonic Rune": 0.0048,
+   "Fire Blast": 0.225,
+   "Fireball": 0.2577,
+   "Ignite": 0.1015,
+   "Pyroblast": 0.2502,
+   "Scorch": 0.0989
+  }
+ },
+ "mage/frost-raid/frost-fingers-of-frost-raid": {
+  "casts": {
+   "Cone of Cold": 10.150666666666666,
+   "Demonic Rune": 0.316,
+   "Frostbolt": 63.727666666666664,
+   "Ice Lance": 5.464333333333333,
+   "Major Mana Potion": 0.6396666666666667,
+   "Mana Citrine": 0.115,
+   "Mana Ruby": 0.8276666666666667,
+   "OtherActionManaGain": 40.58866666666667,
+   "Presence of Mind": 1.0,
+   "Robe of the Archmage": 0.9996666666666667,
+   "Talisman of Ephemeral Power": 1.984
+  },
+  "fingerprint": "68eb5089eddf4f86",
+  "judged": "2026-11-20",
+  "shares": {
+   "Cone of Cold": 0.1672,
+   "Demonic Rune": 0.0022,
+   "Frostbolt": 0.7447,
+   "Ice Lance": 0.086
+  }
+ },
+ "mage/frost-raid/frost-med-raid": {
+  "casts": {
+   "Cold Snap": 1.0,
+   "Cone of Cold": 12.038666666666666,
+   "Demonic Rune": 1.049,
+   "Evocation": 0.082,
+   "Frostbolt": 60.092666666666666,
+   "Ice Barrier": 3.993333333333333,
+   "Ice Lance": 5.731,
+   "Major Mana Potion": 0.9896666666666667,
+   "Mana Citrine": 0.0006666666666666666,
+   "Mana Ruby": 0.6693333333333333,
+   "OtherActionManaGain": 40.92066666666667,
+   "Robe of the Archmage": 1.0,
+   "Talisman of Ephemeral Power": 1.9826666666666666
+  },
+  "fingerprint": "df63702722566a3a",
+  "judged": "2026-11-20",
+  "shares": {
+   "Cone of Cold": 0.2518,
+   "Demonic Rune": 0.0003,
+   "Frostbolt": 0.6625,
+   "Ice Lance": 0.0854
+  }
+ },
+ "mage/frost-raid/frost-ml-raid": {
+  "casts": {
+   "Cold Snap": 1.0,
+   "Cone of Cold": 12.079,
+   "Demonic Rune": 0.7703333333333333,
+   "Evocation": 0.004,
+   "Frostbolt": 60.291,
+   "Ice Barrier": 4.0,
+   "Ice Lance": 5.631,
+   "Major Mana Potion": 0.9786666666666667,
+   "Mana Citrine": 0.014333333333333333,
+   "Mana Ruby": 0.776,
+   "OtherActionManaGain": 40.82633333333333,
+   "Robe of the Archmage": 1.0,
+   "Talisman of Ephemeral Power": 1.9793333333333334
+  },
+  "fingerprint": "63d4ee6170ffec12",
+  "judged": "2026-11-20",
+  "shares": {
+   "Cone of Cold": 0.2521,
+   "Demonic Rune": 0.0002,
+   "Frostbolt": 0.6622,
+   "Ice Lance": 0.0855
+  }
+ },
+ "mage/frost-raid/frost-winters-chill-raid": {
+  "casts": {
+   "Cold Snap": 1.0,
+   "Cone of Cold": 11.637,
+   "Evocation": 0.936,
+   "Frostbolt": 62.866,
+   "OtherActionManaGain": 35.656
+  },
+  "fingerprint": "b3628bebcd7a563e",
+  "judged": "2026-11-20",
+  "shares": {
+   "Cone of Cold": 0.2076,
+   "Frostbolt": 0.7924
+  }
+ },
+ "mage/frost-raid/opt-frost-raid-raid-dps": {
+  "casts": {
+   "Demonic Rune": 0.539,
+   "Frostbolt": 69.035,
+   "Ice Lance": 6.661333333333333,
+   "Major Mana Potion": 0.8766666666666667,
+   "Mana Citrine": 0.10733333333333334,
+   "Mana Ruby": 0.7886666666666666,
+   "OtherActionManaGain": 39.525333333333336,
+   "Presence of Mind": 1.0,
+   "Robe of the Archmage": 1.0,
+   "Talisman of Ephemeral Power": 1.9776666666666667
+  },
+  "fingerprint": "ab53b5a2d5e96609",
+  "judged": "2026-11-20",
+  "shares": {
+   "Demonic Rune": 0.0038,
+   "Frostbolt": 0.8819,
+   "Ice Lance": 0.1143
+  }
+ },
+ "mage/frost-raid/opt-frost-raid-raid-dps-extwc": {
+  "casts": {
+   "Demonic Rune": 0.259,
+   "Frostbolt": 69.07233333333333,
+   "Ice Lance": 6.606,
+   "Major Mana Potion": 0.20366666666666666,
+   "Mana Citrine": 0.05266666666666667,
+   "Mana Ruby": 0.7993333333333333,
+   "OtherActionManaGain": 38.480333333333334,
+   "Presence of Mind": 1.0,
+   "Robe of the Archmage": 1.0,
+   "Talisman of Ephemeral Power": 1.976
+  },
+  "fingerprint": "5baab715d0386e1b",
+  "judged": "2026-11-20",
+  "shares": {
+   "Demonic Rune": 0.0018,
+   "Frostbolt": 0.8834,
+   "Ice Lance": 0.1148
+  }
+ },
+ "mage/frostfire-raid/frostfire-ffb-raid": {
+  "casts": {
+   "Demonic Rune": 1.0,
+   "Evocation": 1.0,
+   "Fire Blast": 21.292666666666666,
+   "Frostfire Bolt": 40.34733333333333,
+   "Major Mana Potion": 1.968,
+   "Mana Ruby": 1.0,
+   "OtherActionManaGain": 73.84166666666667,
+   "Pyroblast": 13.09,
+   "Robe of the Archmage": 1.0,
+   "Scorch": 12.873,
+   "Talisman of Ephemeral Power": 2.0
+  },
+  "fingerprint": "db7b495aa034fdcf",
+  "judged": "2026-11-20",
+  "shares": {
+   "Demonic Rune": 0.0052,
+   "Fire Blast": 0.1695,
+   "Frostfire Bolt": 0.3972,
+   "Ignite": 0.1366,
+   "Pyroblast": 0.2322,
+   "Scorch": 0.0592
+  }
+ },
+ "mage/frostfire-raid/frostfire-fingers-of-frost-raid": {
+  "casts": {
+   "Demonic Rune": 1.0,
+   "Evocation": 1.0,
+   "Fire Blast": 18.616666666666667,
+   "Frostfire Bolt": 42.998,
+   "Major Mana Potion": 1.243,
+   "Mana Ruby": 1.0,
+   "OtherActionManaGain": 71.07966666666667,
+   "Pyroblast": 12.074333333333334,
+   "Robe of the Archmage": 1.0,
+   "Scorch": 12.658,
+   "Talisman of Ephemeral Power": 2.0
+  },
+  "fingerprint": "905ce1bcf5b93178",
+  "judged": "2026-11-20",
+  "shares": {
+   "Demonic Rune": 0.0053,
+   "Fire Blast": 0.1486,
+   "Frostfire Bolt": 0.4315,
+   "Ignite": 0.136,
+   "Pyroblast": 0.2203,
+   "Scorch": 0.0583
+  }
+ },
+ "mage/frostfire-raid/frostfire-ml-raid": {
+  "casts": {
+   "Demonic Rune": 1.0,
+   "Evocation": 1.0,
+   "Fire Blast": 21.375333333333334,
+   "Frostfire Bolt": 40.58,
+   "Major Mana Potion": 1.4833333333333334,
+   "Mana Ruby": 1.0,
+   "OtherActionManaGain": 72.38533333333334,
+   "Pyroblast": 12.864,
+   "Robe of the Archmage": 1.0,
+   "Scorch": 13.151333333333334,
+   "Talisman of Ephemeral Power": 2.0
+  },
+  "fingerprint": "1bdd51a0a609e9f3",
+  "judged": "2026-11-20",
+  "shares": {
+   "Demonic Rune": 0.0053,
+   "Fire Blast": 0.1682,
+   "Frostfire Bolt": 0.4029,
+   "Ignite": 0.1333,
+   "Pyroblast": 0.2308,
+   "Scorch": 0.0595
+  }
+ },
+ "mage/frostfire-raid/frostfire-raid": {
+  "casts": {
+   "Combustion": 1.0,
+   "Demonic Rune": 1.0,
+   "Evocation": 1.0,
+   "Fire Blast": 24.266666666666666,
+   "Frostfire Bolt": 34.543,
+   "Major Mana Potion": 1.0966666666666667,
+   "Mana Ruby": 1.0,
+   "OtherActionManaGain": 64.70466666666667,
+   "Pyroblast": 12.7,
+   "Robe of the Archmage": 1.0,
+   "Scorch": 12.402,
+   "Talisman of Ephemeral Power": 2.0
+  },
+  "fingerprint": "d554d58ed619cb75",
+  "judged": "2026-11-20",
+  "shares": {
+   "Demonic Rune": 0.0058,
+   "Fire Blast": 0.2075,
+   "Frostfire Bolt": 0.359,
+   "Ignite": 0.1159,
+   "Pyroblast": 0.2505,
+   "Scorch": 0.0613
+  }
+ },
+ "paladin/prot-tank/opt-prot-tank-raid-tank": {
+  "casts": {
+   "Auto Attack": 77.41566666666667,
+   "Consecration": 14.849,
+   "Hammer of Wrath": 1.3933333333333333,
+   "Holy Shield": 16.195666666666668,
+   "Holy Strike": 29.096666666666668,
+   "Judgement of Fury": 33.752,
+   "Judgement of the Crusader": 1.0,
+   "Lay on Hands": 1.0,
+   "OtherActionManaGain": 63.437333333333335,
+   "Retribution Aura": 1.0,
+   "Righteous Fury": 1.0,
+   "Seal of Fury": 6.0,
+   "Seal of the Crusader": 1.0,
+   "Templar's Bulwark": 1.0,
+   "item 19024": 1.0,
+   "item 272440": 1.0
+  },
+  "fingerprint": "9d40ff74ae031dc5",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.249,
+   "Consecration": 0.0996,
+   "Hammer of Wrath": 0.0171,
+   "Holy Shield": 0.1765,
+   "Holy Strike": 0.1589,
+   "Judgement of Fury": 0.1009,
+   "Retribution Aura": 0.0215,
+   "Seal of Fury": 0.0974,
+   "Thorns": 0.0126,
+   "Windfury Totem": 0.0667
+  }
+ },
+ "paladin/prot-tank/prot-tank": {
+  "casts": {
+   "Auto Attack": 77.38333333333334,
+   "Consecration": 15.670666666666667,
+   "Hammer of Wrath": 1.4023333333333334,
+   "Holy Shield": 16.354666666666667,
+   "Holy Strike": 29.051666666666666,
+   "Judgement of Fury": 49.220666666666666,
+   "Judgement of the Crusader": 1.0,
+   "Lay on Hands": 1.0,
+   "OtherActionManaGain": 67.53466666666667,
+   "Retribution Aura": 1.0,
+   "Righteous Fury": 1.0,
+   "Seal of Fury": 6.0,
+   "Seal of the Crusader": 1.0,
+   "Templar's Bulwark": 1.0,
+   "item 19024": 1.0,
+   "item 272440": 1.0
+  },
+  "fingerprint": "40f9b415ef739348",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2342,
+   "Consecration": 0.0999,
+   "Eye for an Eye": 0.0015,
+   "Hammer of Wrath": 0.0163,
+   "Holy Shield": 0.1711,
+   "Holy Strike": 0.1494,
+   "Judgement of Fury": 0.1393,
+   "Retribution Aura": 0.0205,
+   "Seal of Fury": 0.0923,
+   "Thorns": 0.012,
+   "Windfury Totem": 0.0634
+  }
+ },
+ "paladin/prot-tank/protection-ml-tank": {
+  "casts": {
+   "Auto Attack": 91.86600000000001,
+   "Consecration": 17.442666666666668,
+   "Hammer of Wrath": 1.5326666666666666,
+   "Holy Shield": 16.566666666666666,
+   "Holy Strike": 28.994666666666667,
+   "Judgement of Fury": 49.51466666666666,
+   "Judgement of the Crusader": 1.0,
+   "Lay on Hands": 1.0,
+   "OtherActionManaGain": 74.76966666666667,
+   "Retribution Aura": 1.0,
+   "Righteous Fury": 1.0,
+   "Seal of Fury": 6.0,
+   "Seal of the Crusader": 1.0,
+   "Templar's Bulwark": 1.0,
+   "item 19024": 1.0,
+   "item 272440": 1.0
+  },
+  "fingerprint": "f8cfb50b11bcbf32",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2572,
+   "Consecration": 0.1025,
+   "Hammer of Wrath": 0.0164,
+   "Holy Shield": 0.1611,
+   "Holy Strike": 0.1379,
+   "Judgement of Fury": 0.1294,
+   "Retribution Aura": 0.0192,
+   "Seal of Fury": 0.1005,
+   "Thorns": 0.0113,
+   "Windfury Totem": 0.0645
+  }
+ },
+ "paladin/ret-dps/opt-ret-dps-raid-dps": {
+  "casts": {
+   "Auto Attack": 84.0,
+   "Consecration": 22.0,
+   "Hammer of Wrath": 5.0,
+   "Holy Strike": 17.0,
+   "Judgement of Command": 22.0,
+   "Judgement of the Crusader": 1.0,
+   "OtherActionManaGain": 79.342,
+   "OtherActionMove": 2.0,
+   "Retribution Aura": 1.0,
+   "Seal of Command": 6.0,
+   "Seal of the Crusader": 1.0,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 13965": 1.0
+  },
+  "fingerprint": "f503ddc4b4e2121f",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2825,
+   "Consecration": 0.1492,
+   "Hammer of Wrath": 0.0522,
+   "Holy Strike": 0.1214,
+   "Judgement of Command": 0.1561,
+   "Seal of Command": 0.1313,
+   "Windfury Totem": 0.1073
+  }
+ },
+ "paladin/ret-dps/prot-ret-ml-raid": {
+  "casts": {
+   "Auto Attack": 84.0,
+   "Consecration": 22.0,
+   "Demonic Rune": 1.066,
+   "Hammer of Wrath": 5.0,
+   "Holy Strike": 18.0,
+   "Judgement of Command": 22.0,
+   "Judgement of the Crusader": 1.0,
+   "Major Mana Potion": 0.9956666666666667,
+   "OtherActionManaGain": 95.71333333333334,
+   "OtherActionMove": 2.0,
+   "Retribution Aura": 1.0,
+   "Seal of Command": 6.0,
+   "Seal of the Crusader": 1.0,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 13965": 1.0
+  },
+  "fingerprint": "063c70a769e5cad8",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2708,
+   "Consecration": 0.1399,
+   "Demonic Rune": 0.0073,
+   "Hammer of Wrath": 0.0512,
+   "Holy Strike": 0.1263,
+   "Judgement of Command": 0.1642,
+   "Seal of Command": 0.1363,
+   "Windfury Totem": 0.1041
+  }
+ },
+ "paladin/ret-dps/ret-full-buffs-raid": {
+  "casts": {
+   "Auto Attack": 84.0,
+   "Consecration": 22.0,
+   "Demonic Rune": 1.064,
+   "Hammer of Wrath": 5.0,
+   "Holy Strike": 17.0,
+   "Judgement of Command": 22.0,
+   "Judgement of the Crusader": 1.0,
+   "Major Mana Potion": 0.9833333333333333,
+   "OtherActionManaGain": 95.156,
+   "OtherActionMove": 2.0,
+   "Retribution Aura": 1.0,
+   "Seal of Command": 6.0,
+   "Seal of the Crusader": 1.0,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 13965": 1.0
+  },
+  "fingerprint": "cb8625a8a50eaad6",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.282,
+   "Consecration": 0.1427,
+   "Demonic Rune": 0.0076,
+   "Hammer of Wrath": 0.0522,
+   "Holy Strike": 0.1214,
+   "Judgement of Command": 0.1559,
+   "Seal of Command": 0.1309,
+   "Windfury Totem": 0.1072
+  }
+ },
+ "paladin/ret-dps/ret-raid-dps": {
+  "casts": {
+   "Auto Attack": 84.0,
+   "Consecration": 22.0,
+   "Divine Favor": 2.0,
+   "Hammer of Wrath": 5.0,
+   "Holy Strike": 17.0,
+   "Judgement of Command": 22.0,
+   "Judgement of the Crusader": 1.0,
+   "OtherActionManaGain": 80.11966666666666,
+   "OtherActionMove": 2.0,
+   "Retribution Aura": 1.0,
+   "Seal of Command": 6.0,
+   "Seal of the Crusader": 1.0,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 13965": 1.0
+  },
+  "fingerprint": "d26d748622affdd6",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2825,
+   "Consecration": 0.1492,
+   "Hammer of Wrath": 0.0522,
+   "Holy Strike": 0.1214,
+   "Judgement of Command": 0.1561,
+   "Seal of Command": 0.1313,
+   "Windfury Totem": 0.1073
+  }
+ },
+ "paladin/ret-dps/retribution-ml-raid": {
+  "casts": {
+   "Auto Attack": 84.0,
+   "Consecration": 22.0,
+   "Demonic Rune": 1.0056666666666667,
+   "Hammer of Wrath": 5.0,
+   "Holy Strike": 17.0,
+   "Judgement of Command": 22.0,
+   "Judgement of the Crusader": 1.0,
+   "Major Mana Potion": 0.807,
+   "OtherActionManaGain": 94.74433333333333,
+   "OtherActionMove": 2.0,
+   "Retribution Aura": 1.0,
+   "Seal of Command": 6.0,
+   "Seal of the Crusader": 1.0,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 13965": 1.0
+  },
+  "fingerprint": "d97b7242d7b6777a",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2825,
+   "Consecration": 0.1426,
+   "Demonic Rune": 0.0071,
+   "Hammer of Wrath": 0.052,
+   "Holy Strike": 0.1212,
+   "Judgement of Command": 0.1562,
+   "Seal of Command": 0.1309,
+   "Windfury Totem": 0.1075
+  }
+ },
+ "paladin/ret-dps/retribution-open-raid": {
+  "casts": {
+   "Auto Attack": 85.0,
+   "Consecration": 21.875333333333334,
+   "Demonic Rune": 1.18,
+   "Hammer of Wrath": 5.999333333333333,
+   "Holy Strike": 17.030333333333335,
+   "Judgement of Command": 14.842666666666666,
+   "Judgement of Righteousness": 7.157333333333334,
+   "Judgement of the Crusader": 1.0,
+   "Major Mana Potion": 0.9993333333333333,
+   "OtherActionManaGain": 100.722,
+   "OtherActionMove": 2.0,
+   "Retribution Aura": 1.0,
+   "Seal of Command": 19.186666666666667,
+   "Seal of Righteousness": 18.421333333333333,
+   "Seal of the Crusader": 1.0,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 13965": 1.0
+  },
+  "fingerprint": "0dd969e733d2a1b3",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2356,
+   "Consecration": 0.122,
+   "Demonic Rune": 0.0068,
+   "Hammer of Wrath": 0.0532,
+   "Holy Strike": 0.104,
+   "Judgement of Command": 0.0968,
+   "Judgement of Righteousness": 0.0458,
+   "Seal of Command": 0.1568,
+   "Seal of Righteousness": 0.0901,
+   "Windfury Totem": 0.0888
+  }
+ },
+ "paladin/ret-dps/retribution-unsealed-wrath-raid": {
+  "casts": {
+   "Auto Attack": 85.0,
+   "Consecration": 21.863666666666667,
+   "Demonic Rune": 1.003,
+   "Hammer of Wrath": 5.998333333333333,
+   "Holy Strike": 17.037,
+   "Judgement of Command": 14.839,
+   "Judgement of Righteousness": 7.161,
+   "Judgement of the Crusader": 1.0,
+   "Major Mana Potion": 0.4776666666666667,
+   "OtherActionManaGain": 99.10033333333334,
+   "OtherActionMove": 2.0,
+   "Retribution Aura": 1.0,
+   "Seal of Command": 19.196,
+   "Seal of Righteousness": 18.420333333333332,
+   "Seal of the Crusader": 1.0,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 13965": 1.0
+  },
+  "fingerprint": "7e116b4a079920f9",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2369,
+   "Consecration": 0.1189,
+   "Demonic Rune": 0.0058,
+   "Hammer of Wrath": 0.0535,
+   "Holy Strike": 0.1044,
+   "Judgement of Command": 0.0974,
+   "Judgement of Righteousness": 0.0461,
+   "Seal of Command": 0.1568,
+   "Seal of Righteousness": 0.0909,
+   "Windfury Totem": 0.0894
+  }
+ },
+ "paladin/shockadin-raid/shockadin-holy-shock-raid": {
+  "casts": {
+   "Auto Attack": 83.0,
+   "Consecration": 22.0,
+   "Demonic Rune": 1.0073333333333334,
+   "Divine Favor": 2.0,
+   "Hammer of Wrath": 5.0,
+   "Holy Shock": 17.0,
+   "Holy Strike": 18.0,
+   "Judgement of Righteousness": 23.0,
+   "Major Mana Potion": 0.8246666666666667,
+   "OtherActionManaGain": 91.10266666666666,
+   "OtherActionMove": 2.0,
+   "Retribution Aura": 1.0,
+   "Seal of Righteousness": 10.0,
+   "Seal of the Crusader": 1.0,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 13965": 1.0
+  },
+  "fingerprint": "fceae2defb283c32",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2195,
+   "Consecration": 0.128,
+   "Demonic Rune": 0.0056,
+   "Hammer of Wrath": 0.0448,
+   "Holy Shock": 0.116,
+   "Holy Strike": 0.1108,
+   "Judgement of Righteousness": 0.141,
+   "Seal of Righteousness": 0.1733,
+   "Windfury Totem": 0.061
+  }
+ },
+ "paladin/shockadin-raid/shockadin-open-raid": {
+  "casts": {
+   "Auto Attack": 82.0,
+   "Consecration": 22.0,
+   "Demonic Rune": 1.0086666666666666,
+   "Divine Favor": 2.0,
+   "Hammer of Wrath": 5.0,
+   "Holy Shock": 17.0,
+   "Holy Strike": 18.0,
+   "Judgement of Righteousness": 23.0,
+   "Major Mana Potion": 0.821,
+   "OtherActionManaGain": 90.63766666666666,
+   "OtherActionMove": 2.0,
+   "Retribution Aura": 1.0,
+   "Seal of Righteousness": 10.0,
+   "Seal of the Crusader": 1.0,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 13965": 1.0
+  },
+  "fingerprint": "9a429145f75bb894",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2182,
+   "Consecration": 0.1289,
+   "Demonic Rune": 0.0056,
+   "Hammer of Wrath": 0.0448,
+   "Holy Shock": 0.117,
+   "Holy Strike": 0.1115,
+   "Judgement of Righteousness": 0.1411,
+   "Seal of Righteousness": 0.1722,
+   "Windfury Totem": 0.0607
+  }
+ },
+ "priest/shadow-dps/opt-shadow-dps-raid-dps": {
+  "casts": {
+   "Demonic Rune": 1.0016666666666667,
+   "Devouring Plague": 7.527666666666667,
+   "Major Mana Potion": 0.13533333333333333,
+   "Mind Blast": 22.196666666666665,
+   "Mind Flay": 37.681666666666665,
+   "OtherActionManaGain": 49.08833333333333,
+   "Shadow Word: Death": 8.914333333333333,
+   "Shadow Word: Pain": 7.791333333333333,
+   "Shadowform": 1.0,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 11819": 1.0
+  },
+  "fingerprint": "f554690ad10245d6",
+  "judged": "2026-11-20",
+  "shares": {
+   "Demonic Rune": 0.0067,
+   "Devouring Plague": 0.1166,
+   "Mind Blast": 0.1977,
+   "Mind Flay": 0.4005,
+   "Shadow Word: Death": 0.0804,
+   "Shadow Word: Pain": 0.1982
+  }
+ },
+ "priest/shadow-dps/shadow-ml-raid": {
+  "casts": {
+   "Demonic Rune": 1.3703333333333334,
+   "Devouring Plague": 7.14,
+   "Inner Focus": 1.0,
+   "Major Mana Potion": 1.0,
+   "Mind Blast": 22.111,
+   "Mind Flay": 37.82266666666667,
+   "OtherActionManaGain": 50.11066666666667,
+   "Shadow Word: Death": 9.216666666666667,
+   "Shadow Word: Pain": 7.7603333333333335,
+   "Shadowform": 1.0,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 11819": 1.0
+  },
+  "fingerprint": "4417321e2d828af5",
+  "judged": "2026-11-20",
+  "shares": {
+   "Demonic Rune": 0.0091,
+   "Devouring Plague": 0.1138,
+   "Mind Blast": 0.1948,
+   "Mind Flay": 0.3993,
+   "Shadow Word: Death": 0.0869,
+   "Shadow Word: Pain": 0.196
+  }
+ },
+ "priest/smite-dps/smite-discipline-raid": {
+  "casts": {
+   "Demonic Rune": 2.0,
+   "Devouring Plague": 1.0,
+   "Holy Fire": 6.554333333333333,
+   "Inner Focus": 1.0,
+   "Major Mana Potion": 2.0,
+   "Mind Blast": 16.120333333333335,
+   "OtherActionManaGain": 58.96233333333333,
+   "Power Infusion": 1.0,
+   "Shadow Word: Death": 9.165333333333333,
+   "Shadow Word: Pain": 10.262333333333334,
+   "Smite": 53.60666666666667,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 11819": 1.0
+  },
+  "fingerprint": "1eb441b61ea8b3d0",
+  "judged": "2026-11-20",
+  "shares": {
+   "Demonic Rune": 0.0162,
+   "Devouring Plague": 0.0179,
+   "Holy Fire": 0.0891,
+   "Mind Blast": 0.1318,
+   "Shadow Word: Death": 0.0701,
+   "Shadow Word: Pain": 0.1788,
+   "Smite": 0.4961
+  }
+ },
+ "priest/smite-dps/smite-open-raid": {
+  "casts": {
+   "Demonic Rune": 2.0,
+   "Devouring Plague": 1.0,
+   "Holy Fire": 6.001666666666667,
+   "Inner Focus": 1.0,
+   "Major Mana Potion": 2.0,
+   "Mind Blast": 19.593333333333334,
+   "Mind Flay": 0.08133333333333333,
+   "OtherActionManaGain": 58.46633333333333,
+   "Shadow Word: Death": 8.800666666666666,
+   "Shadow Word: Pain": 7.7476666666666665,
+   "Smite": 53.742666666666665,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 11819": 1.0
+  },
+  "fingerprint": "19915f89f44c5a63",
+  "judged": "2026-11-20",
+  "shares": {
+   "Demonic Rune": 0.0144,
+   "Devouring Plague": 0.0162,
+   "Holy Fire": 0.0774,
+   "Mind Blast": 0.1682,
+   "Mind Flay": 0.0003,
+   "Shadow Word: Death": 0.0689,
+   "Shadow Word: Pain": 0.1795,
+   "Smite": 0.4752
+  }
+ },
+ "rogue/assassination-raid/assassination-ml-raid": {
+  "casts": {
+   "Auto Attack": 261.128,
+   "Backstab": 30.926333333333332,
+   "Cold Blood": 0.7253333333333334,
+   "Eviscerate": 18.237666666666666,
+   "Garrote": 1.0,
+   "Goblin Sapper Charge": 1.0,
+   "Shank": 18.0,
+   "Slice and Dice": 9.585333333333333,
+   "Thistle Tea": 1.0,
+   "Vanish": 1.0,
+   "item 13965": 1.0,
+   "spell 11337": 57.864,
+   "spell 25349": 38.12833333333333
+  },
+  "fingerprint": "f7f4e3a6a54840d3",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.3998,
+   "Backstab": 0.2038,
+   "Eviscerate": 0.1746,
+   "Garrote": 0.0091,
+   "Goblin Sapper Charge": 0.0092,
+   "Shank": 0.0123,
+   "Windfury Totem": 0.0744,
+   "spell 11337": 0.0561,
+   "spell 25349": 0.0606
+  }
+ },
+ "rogue/assassination-raid/assassination-mutilate-raid": {
+  "casts": {
+   "Auto Attack": 261.134,
+   "Backstab": 30.878,
+   "Cold Blood": 0.7166666666666667,
+   "Eviscerate": 18.233,
+   "Garrote": 1.0,
+   "Goblin Sapper Charge": 1.0,
+   "Shank": 18.0,
+   "Slice and Dice": 9.587,
+   "Thistle Tea": 1.0,
+   "Vanish": 1.0,
+   "item 13965": 1.0,
+   "spell 11337": 42.37566666666667,
+   "spell 25349": 30.494666666666667
+  },
+  "fingerprint": "91b22f125c0d5d1e",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.4095,
+   "Backstab": 0.2091,
+   "Eviscerate": 0.1793,
+   "Garrote": 0.0094,
+   "Goblin Sapper Charge": 0.0094,
+   "Shank": 0.0126,
+   "Windfury Totem": 0.0764,
+   "spell 11337": 0.0422,
+   "spell 25349": 0.052
+  }
+ },
+ "rogue/assassination-raid/assassination-open-raid": {
+  "casts": {
+   "Auto Attack": 260.8826666666667,
+   "Eviscerate": 29.484333333333336,
+   "Garrote": 1.0,
+   "Goblin Sapper Charge": 1.0,
+   "Mutilate": 36.94866666666667,
+   "Shank": 18.0,
+   "Slice and Dice": 9.141,
+   "Thistle Tea": 1.0,
+   "Vanish": 1.0,
+   "item 13965": 1.0,
+   "spell 11337": 85.046,
+   "spell 25349": 56.50533333333333
+  },
+  "fingerprint": "3f99aac95029c8e2",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.287,
+   "Eviscerate": 0.2417,
+   "Garrote": 0.008,
+   "Goblin Sapper Charge": 0.0078,
+   "Mutilate": 0.1933,
+   "Shank": 0.0104,
+   "Windfury Totem": 0.077,
+   "spell 11337": 0.0952,
+   "spell 25349": 0.0796
+  }
+ },
+ "rogue/assassination-raid/assassination-seal-fate-raid": {
+  "casts": {
+   "Auto Attack": 261.05400000000003,
+   "Backstab": 30.790666666666667,
+   "Cold Blood": 0.7493333333333333,
+   "Eviscerate": 18.152333333333335,
+   "Garrote": 1.0,
+   "Goblin Sapper Charge": 1.0,
+   "Shank": 18.0,
+   "Slice and Dice": 9.588000000000001,
+   "Thistle Tea": 1.0,
+   "Vanish": 1.0,
+   "item 13965": 1.0,
+   "spell 11337": 57.556,
+   "spell 25349": 38.06666666666667
+  },
+  "fingerprint": "6f10ed8eff35e710",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.3776,
+   "Backstab": 0.2221,
+   "Eviscerate": 0.1759,
+   "Garrote": 0.01,
+   "Goblin Sapper Charge": 0.0093,
+   "Shank": 0.0124,
+   "Windfury Totem": 0.0749,
+   "spell 11337": 0.0566,
+   "spell 25349": 0.0613
+  }
+ },
+ "rogue/combat-daggers-raid/combat-daggers-raid": {
+  "casts": {
+   "Auto Attack": 270.0686666666667,
+   "Backstab": 31.294333333333334,
+   "Blade Flurry": 2.0,
+   "Cold Blood": 0.6316666666666667,
+   "Eviscerate": 13.627333333333334,
+   "Garrote": 1.0,
+   "Goblin Sapper Charge": 1.0,
+   "Shank": 18.0,
+   "Slice and Dice": 10.218333333333332,
+   "Thistle Tea": 1.0,
+   "Vanish": 1.0,
+   "item 13965": 1.0,
+   "spell 11337": 38.348,
+   "spell 25349": 29.355
+  },
+  "fingerprint": "7578b3e64b1ac962",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.4481,
+   "Backstab": 0.2217,
+   "Eviscerate": 0.1346,
+   "Garrote": 0.0099,
+   "Goblin Sapper Charge": 0.0097,
+   "Shank": 0.0128,
+   "Windfury Totem": 0.0804,
+   "spell 11337": 0.0358,
+   "spell 25349": 0.047
+  }
+ },
+ "rogue/combat-daggers-raid/combat-ml-raid": {
+  "casts": {
+   "Auto Attack": 270.55100000000004,
+   "Backstab": 36.587666666666664,
+   "Blade Flurry": 2.0,
+   "Eviscerate": 15.598333333333333,
+   "Garrote": 1.0,
+   "Goblin Sapper Charge": 1.0,
+   "Shank": 22.963,
+   "Slice and Dice": 10.303333333333335,
+   "Thistle Tea": 1.0,
+   "Vanish": 1.0,
+   "item 13965": 1.0,
+   "spell 11337": 79.005,
+   "spell 25349": 48.434333333333335
+  },
+  "fingerprint": "4274c6173b9dbe0d",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.3795,
+   "Backstab": 0.2197,
+   "Eviscerate": 0.1264,
+   "Garrote": 0.0125,
+   "Goblin Sapper Charge": 0.0084,
+   "Shank": 0.0141,
+   "Windfury Totem": 0.0707,
+   "spell 11337": 0.09,
+   "spell 25349": 0.0788
+  }
+ },
+ "rogue/combat-daggers-raid/daggers-split-open-raid": {
+  "casts": {
+   "Auto Attack": 262.41066666666666,
+   "Backstab": 36.54566666666667,
+   "Cold Blood": 0.9953333333333333,
+   "Eviscerate": 21.563000000000002,
+   "Garrote": 1.0,
+   "Goblin Sapper Charge": 1.0,
+   "Shank": 18.0,
+   "Slice and Dice": 9.753333333333332,
+   "Thistle Tea": 1.0,
+   "Vanish": 1.0,
+   "item 13965": 1.0,
+   "spell 11337": 72.71933333333334,
+   "spell 25349": 43.76166666666666
+  },
+  "fingerprint": "5ed1e568c242d5cf",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.3524,
+   "Backstab": 0.2111,
+   "Eviscerate": 0.1916,
+   "Garrote": 0.0121,
+   "Goblin Sapper Charge": 0.0082,
+   "Shank": 0.0109,
+   "Windfury Totem": 0.068,
+   "spell 11337": 0.0765,
+   "spell 25349": 0.0693
+  }
+ },
+ "rogue/combat-daggers-raid/opt-combat-daggers-raid-raid-dps": {
+  "casts": {
+   "Auto Attack": 270.0686666666667,
+   "Backstab": 31.294333333333334,
+   "Blade Flurry": 2.0,
+   "Cold Blood": 0.6316666666666667,
+   "Eviscerate": 13.627333333333333,
+   "Garrote": 1.0,
+   "Goblin Sapper Charge": 1.0,
+   "Shank": 18.0,
+   "Slice and Dice": 10.218333333333332,
+   "Thistle Tea": 1.0,
+   "Vanish": 1.0,
+   "item 13965": 1.0,
+   "spell 11337": 38.348,
+   "spell 25349": 29.355
+  },
+  "fingerprint": "c2442677d1e9f700",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.4481,
+   "Backstab": 0.2217,
+   "Eviscerate": 0.1346,
+   "Garrote": 0.0099,
+   "Goblin Sapper Charge": 0.0097,
+   "Shank": 0.0128,
+   "Windfury Totem": 0.0804,
+   "spell 11337": 0.0358,
+   "spell 25349": 0.047
+  }
+ },
+ "rogue/combat-swords-raid/combat-swords-raid": {
+  "casts": {
+   "Auto Attack": 242.74933333333334,
+   "Blade Flurry": 2.0,
+   "Cold Blood": 0.9936666666666667,
+   "Eviscerate": 11.733666666666666,
+   "Garrote": 1.0,
+   "Goblin Sapper Charge": 1.0,
+   "Shank": 18.0,
+   "Sinister Strike": 48.29266666666667,
+   "Slice and Dice": 9.952333333333334,
+   "Thistle Tea": 1.0,
+   "Vanish": 1.0,
+   "item 13965": 1.0,
+   "spell 11337": 41.66433333333333,
+   "spell 25349": 23.751
+  },
+  "fingerprint": "0f9b7a0ee95a96e8",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.4628,
+   "Eviscerate": 0.1273,
+   "Garrote": 0.0093,
+   "Goblin Sapper Charge": 0.0094,
+   "Shank": 0.016,
+   "Sinister Strike": 0.2062,
+   "Windfury Totem": 0.0929,
+   "spell 11337": 0.0387,
+   "spell 25349": 0.0374
+  }
+ },
+ "rogue/combat-swords-raid/opt-combat-swords-raid-raid-dps": {
+  "casts": {
+   "Auto Attack": 242.78300000000002,
+   "Blade Flurry": 2.0,
+   "Eviscerate": 11.722999999999999,
+   "Garrote": 1.0,
+   "Goblin Sapper Charge": 1.0,
+   "Shank": 18.0,
+   "Sinister Strike": 48.32866666666666,
+   "Slice and Dice": 9.941333333333333,
+   "Thistle Tea": 1.0,
+   "Vanish": 1.0,
+   "item 13965": 1.0,
+   "spell 11337": 62.487,
+   "spell 25349": 31.777333333333335
+  },
+  "fingerprint": "bad6b368cd908374",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.451,
+   "Eviscerate": 0.118,
+   "Garrote": 0.0091,
+   "Goblin Sapper Charge": 0.0092,
+   "Shank": 0.0155,
+   "Sinister Strike": 0.2008,
+   "Windfury Totem": 0.0905,
+   "spell 11337": 0.0564,
+   "spell 25349": 0.0495
+  }
+ },
+ "rogue/subtlety-raid/hybrid-assassination-subtlety-open-raid": {
+  "casts": {
+   "Auto Attack": 225.69766666666666,
+   "Eviscerate": 8.563,
+   "Garrote": 6.944333333333334,
+   "Ghostly Strike": 6.0263333333333335,
+   "Goblin Sapper Charge": 1.0,
+   "Hemorrhage": 58.24333333333333,
+   "Premeditation": 3.0,
+   "Preparation": 1.0,
+   "Rupture": 8.885666666666665,
+   "Shank": 17.976333333333333,
+   "Slice and Dice": 8.544999999999998,
+   "Thistle Tea": 0.9933333333333333,
+   "Vanish": 1.3443333333333334,
+   "item 13965": 1.0,
+   "spell 11337": 86.45333333333333,
+   "spell 25349": 36.615
+  },
+  "fingerprint": "62e1cd341ca2e190",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.3012,
+   "Eviscerate": 0.0705,
+   "Garrote": 0.1019,
+   "Ghostly Strike": 0.0194,
+   "Goblin Sapper Charge": 0.0078,
+   "Hemorrhage": 0.1515,
+   "Rupture": 0.1115,
+   "Shank": 0.0137,
+   "Windfury Totem": 0.0815,
+   "spell 11337": 0.083,
+   "spell 25349": 0.058
+  }
+ },
+ "rogue/subtlety-raid/subtlety-hemo-raid": {
+  "casts": {
+   "Auto Attack": 225.07033333333334,
+   "Cold Blood": 0.9973333333333333,
+   "Eviscerate": 2.5153333333333334,
+   "Garrote": 9.580333333333334,
+   "Ghostly Strike": 8.133,
+   "Goblin Sapper Charge": 1.0,
+   "Hemorrhage": 36.282666666666664,
+   "Premeditation": 3.0,
+   "Preparation": 1.0,
+   "Rupture": 11.701333333333334,
+   "Shank": 17.999333333333333,
+   "Slice and Dice": 9.032333333333334,
+   "Thistle Tea": 1.0,
+   "Vanish": 1.9996666666666667,
+   "item 13965": 1.0,
+   "spell 11337": 53.714666666666666,
+   "spell 25349": 27.989333333333335
+  },
+  "fingerprint": "050191b9352a1e1d",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.3695,
+   "Eviscerate": 0.0294,
+   "Garrote": 0.1151,
+   "Ghostly Strike": 0.0323,
+   "Goblin Sapper Charge": 0.0096,
+   "Hemorrhage": 0.1157,
+   "Rupture": 0.1264,
+   "Shank": 0.0168,
+   "Windfury Totem": 0.0897,
+   "spell 11337": 0.0502,
+   "spell 25349": 0.0452
+  }
+ },
+ "rogue/subtlety-raid/subtlety-ml-raid": {
+  "casts": {
+   "Auto Attack": 224.09066666666666,
+   "Death Mark": 13.952666666666666,
+   "Garrote": 6.944333333333334,
+   "Ghostly Strike": 5.999333333333333,
+   "Goblin Sapper Charge": 1.0,
+   "Hemorrhage": 38.736333333333334,
+   "Premeditation": 3.0,
+   "Preparation": 1.0,
+   "Rupture": 8.452,
+   "Shank": 17.322666666666667,
+   "Slice and Dice": 8.842,
+   "Thistle Tea": 1.0,
+   "Vanish": 1.3633333333333333,
+   "item 13965": 1.0,
+   "spell 11337": 38.089,
+   "spell 25349": 22.809
+  },
+  "fingerprint": "3297627069eb152c",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.3097,
+   "Death Mark": 0.2173,
+   "Garrote": 0.1019,
+   "Ghostly Strike": 0.0183,
+   "Goblin Sapper Charge": 0.008,
+   "Hemorrhage": 0.0962,
+   "Rupture": 0.0978,
+   "Shank": 0.0132,
+   "Windfury Totem": 0.0774,
+   "spell 11337": 0.0299,
+   "spell 25349": 0.0303
+  }
+ },
+ "shaman/elemental-dps/elemental-ml-raid": {
+  "casts": {
+   "Chain Lightning": 16.67866666666667,
+   "Demonic Rune": 1.994,
+   "Flame Shock": 9.214333333333334,
+   "Lightning Bolt": 67.13233333333334,
+   "Lightning Mastery": 1.027,
+   "Major Mana Potion": 1.6996666666666667,
+   "OtherActionManaGain": 46.02433333333333,
+   "Searing Totem": 4.0,
+   "Talisman of Ephemeral Power": 2.003,
+   "item 272438": 1.0
+  },
+  "fingerprint": "256a2cfc825f9b39",
+  "judged": "2026-11-20",
+  "shares": {
+   "Chain Lightning": 0.1744,
+   "Demonic Rune": 0.0118,
+   "Flame Shock": 0.1206,
+   "Lightning Bolt": 0.648,
+   "Searing Totem": 0.0452
+  }
+ },
+ "shaman/elemental-dps/elemental-raid": {
+  "casts": {
+   "Chain Lightning": 15.077333333333334,
+   "Demonic Rune": 1.975,
+   "Flame Shock": 9.166,
+   "Lightning Bolt": 66.59366666666668,
+   "Major Mana Potion": 1.5153333333333334,
+   "OtherActionManaGain": 44.667,
+   "Searing Totem": 4.0,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 272438": 1.0
+  },
+  "fingerprint": "bc659b11f400c626",
+  "judged": "2026-11-20",
+  "shares": {
+   "Chain Lightning": 0.1625,
+   "Demonic Rune": 0.0122,
+   "Flame Shock": 0.1231,
+   "Lightning Bolt": 0.6554,
+   "Searing Totem": 0.0468
+  }
+ },
+ "shaman/elemental-dps/elemental-raid-dps": {
+  "casts": {
+   "Chain Lightning": 13.033666666666667,
+   "Demonic Rune": 1.9993333333333334,
+   "Flame Shock": 9.469333333333333,
+   "Lightning Bolt": 68.16933333333333,
+   "Major Mana Potion": 1.9183333333333332,
+   "OtherActionManaGain": 42.946333333333335,
+   "Searing Totem": 4.0,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 272438": 1.0
+  },
+  "fingerprint": "56583207a7503381",
+  "judged": "2026-11-20",
+  "shares": {
+   "Chain Lightning": 0.1396,
+   "Demonic Rune": 0.012,
+   "Flame Shock": 0.1279,
+   "Lightning Bolt": 0.6766,
+   "Searing Totem": 0.0439
+  }
+ },
+ "shaman/elemental-dps/opt-elemental-dps-raid-dps": {
+  "casts": {
+   "Chain Lightning": 15.663333333333334,
+   "Demonic Rune": 1.998,
+   "Flame Shock": 9.194666666666667,
+   "Lightning Bolt": 68.14633333333333,
+   "Lightning Mastery": 1.0363333333333333,
+   "Major Mana Potion": 1.8703333333333334,
+   "OtherActionManaGain": 46.307,
+   "Searing Totem": 4.0,
+   "Talisman of Ephemeral Power": 2.0046666666666666,
+   "item 272438": 1.0
+  },
+  "fingerprint": "d8c600d1db848916",
+  "judged": "2026-11-20",
+  "shares": {
+   "Chain Lightning": 0.1643,
+   "Demonic Rune": 0.0119,
+   "Flame Shock": 0.12,
+   "Lightning Bolt": 0.6583,
+   "Searing Totem": 0.0454
+  }
+ },
+ "shaman/enhancement-dps/elemental-enhancement-ml-raid": {
+  "casts": {
+   "Auto Attack": 66.76166666666667,
+   "Earth Shock": 22.827,
+   "Fire Nova": 21.361333333333334,
+   "Flame Shock": 8.066666666666666,
+   "Grace of Air Totem": 1.0,
+   "Lightning Bolt": 9.891,
+   "Magma Totem": 4.0906666666666665,
+   "Major Mana Potion": 1.934,
+   "OtherActionManaGain": 77.91,
+   "Searing Totem": 1.9116666666666666,
+   "Stormstrike": 21.764,
+   "Strength of Earth Totem": 1.0,
+   "Talisman of Ephemeral Power": 2.0
+  },
+  "fingerprint": "225146534f84867f",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2563,
+   "Earth Shock": 0.1702,
+   "Fire Nova": 0.0834,
+   "Flame Shock": 0.0912,
+   "Lightning Bolt": 0.0733,
+   "Magma Totem": 0.0674,
+   "Searing Totem": 0.0048,
+   "Stormstrike": 0.0923,
+   "Windfury Weapon": 0.1609
+  }
+ },
+ "shaman/enhancement-dps/enhancement-ml-raid": {
+  "casts": {
+   "Auto Attack": 69.446,
+   "Earth Shock": 20.609666666666666,
+   "Fire Nova": 23.006666666666668,
+   "Flame Shock": 7.652,
+   "Grace of Air Totem": 1.0,
+   "Lightning Bolt": 11.262666666666666,
+   "Magma Totem": 4.142,
+   "Major Mana Potion": 1.829,
+   "OtherActionManaGain": 78.441,
+   "Rage of the Farseer": 1.0,
+   "Searing Totem": 1.8476666666666666,
+   "Stormstrike": 21.506333333333334,
+   "Strength of Earth Totem": 1.0,
+   "Talisman of Ephemeral Power": 2.0
+  },
+  "fingerprint": "91aa936ba02a44b3",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2668,
+   "Earth Shock": 0.1506,
+   "Fire Nova": 0.0879,
+   "Flame Shock": 0.0851,
+   "Lightning Bolt": 0.0819,
+   "Magma Totem": 0.0659,
+   "Searing Totem": 0.0048,
+   "Stormstrike": 0.0916,
+   "Windfury Weapon": 0.1654
+  }
+ },
+ "shaman/enhancement-dps/enhancement-open-raid": {
+  "casts": {
+   "Auto Attack": 69.47433333333333,
+   "Earth Shock": 23.011,
+   "Fire Nova": 21.359666666666666,
+   "Flame Shock": 8.304,
+   "Grace of Air Totem": 1.0,
+   "Lightning Bolt": 11.330666666666668,
+   "Magma Totem": 4.100666666666666,
+   "Major Mana Potion": 1.8763333333333334,
+   "OtherActionManaGain": 80.151,
+   "Rage of the Farseer": 1.0,
+   "Searing Totem": 1.896,
+   "Stormstrike": 21.945,
+   "Strength of Earth Totem": 1.0,
+   "Talisman of Ephemeral Power": 2.0
+  },
+  "fingerprint": "d48b8cd126454210",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2646,
+   "Earth Shock": 0.164,
+   "Fire Nova": 0.08,
+   "Flame Shock": 0.09,
+   "Lightning Bolt": 0.0808,
+   "Magma Totem": 0.0641,
+   "Searing Totem": 0.005,
+   "Stormstrike": 0.0925,
+   "Windfury Weapon": 0.159
+  }
+ },
+ "shaman/enhancement-dps/enhancement-raid-dps": {
+  "casts": {
+   "Auto Attack": 69.421,
+   "Earth Shock": 15.207,
+   "Fire Nova": 15.143,
+   "Flame Shock": 12.779,
+   "Grace of Air Totem": 1.0,
+   "Lightning Bolt": 11.288333333333334,
+   "Magma Totem": 7.258333333333334,
+   "Major Mana Potion": 1.881,
+   "OtherActionManaGain": 78.85433333333333,
+   "Rage of the Farseer": 1.0,
+   "Searing Totem": 2.5403333333333333,
+   "Stormstrike": 21.724666666666668,
+   "Strength of Earth Totem": 1.0,
+   "Talisman of Ephemeral Power": 2.0
+  },
+  "fingerprint": "eca750dea9624724",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2927,
+   "Earth Shock": 0.1226,
+   "Fire Nova": 0.0472,
+   "Flame Shock": 0.0995,
+   "Lightning Bolt": 0.0907,
+   "Magma Totem": 0.0568,
+   "Searing Totem": 0.0065,
+   "Stormstrike": 0.1021,
+   "Windfury Weapon": 0.1818
+  }
+ },
+ "shaman/enhancement-dps/opt-enhancement-dps-raid-dps": {
+  "casts": {
+   "Auto Attack": 68.62,
+   "Earth Shock": 23.975666666666665,
+   "Fire Nova": 13.889666666666667,
+   "Flame Shock": 8.061,
+   "Grace of Air Totem": 1.0,
+   "Lightning Bolt": 11.280333333333333,
+   "Magma Totem": 6.463333333333333,
+   "Major Mana Potion": 1.983,
+   "OtherActionManaGain": 80.79933333333334,
+   "Rage of the Farseer": 1.0,
+   "Searing Totem": 2.900333333333333,
+   "Stormstrike": 22.10033333333333,
+   "Strength of Earth Totem": 1.0,
+   "Talisman of Ephemeral Power": 2.0
+  },
+  "fingerprint": "63014e199c25c0d0",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2681,
+   "Earth Shock": 0.1777,
+   "Fire Nova": 0.0477,
+   "Flame Shock": 0.096,
+   "Lightning Bolt": 0.0842,
+   "Magma Totem": 0.0563,
+   "Searing Totem": 0.0107,
+   "Stormstrike": 0.0967,
+   "Windfury Weapon": 0.1626
+  }
+ },
+ "warlock/affliction-raid/affliction-dot-raid": {
+  "casts": {
+   "Amplify Curse": 1.0,
+   "Bane of Agony": 2.880333333333333,
+   "Bane of Doom": 2.0,
+   "Corruption": 9.901,
+   "Curse of the Elements": 1.098,
+   "Demonic Rune": 2.0,
+   "Immolate": 11.405666666666667,
+   "Life Tap": 12.29,
+   "Major Mana Potion": 2.0,
+   "OtherActionManaGain": 50.895,
+   "Pet: Auto Attack": 89.0,
+   "Pet: Lash of Pain": 15.0,
+   "Pet: OtherActionManaGain": 22.128666666666668,
+   "Pet: OtherActionMove": 1.0,
+   "Shadow Bolt": 50.220666666666666,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 272438": 1.0
+  },
+  "fingerprint": "15d06cedcc45d36d",
+  "judged": "2026-11-20",
+  "shares": {
+   "Bane of Agony": 0.0631,
+   "Bane of Doom": 0.1033,
+   "Corruption": 0.1392,
+   "Demonic Rune": 0.0102,
+   "Immolate": 0.1084,
+   "Pet: Auto Attack": 0.0617,
+   "Pet: Lash of Pain": 0.0094,
+   "Shadow Bolt": 0.5047
+  }
+ },
+ "warlock/affliction-raid/opt-affliction-raid-raid-dps": {
+  "casts": {
+   "Amplify Curse": 1.0,
+   "Bane of Agony": 2.9113333333333333,
+   "Bane of Doom": 2.0,
+   "Corruption": 9.889,
+   "Curse of the Elements": 1.098,
+   "Demonic Rune": 2.0,
+   "Immolate": 11.184333333333333,
+   "Life Tap": 9.845333333333333,
+   "Major Mana Potion": 2.0,
+   "OtherActionManaGain": 49.148,
+   "Pet: Auto Attack": 89.0,
+   "Pet: Lash of Pain": 15.0,
+   "Pet: OtherActionManaGain": 22.156333333333333,
+   "Pet: OtherActionMove": 1.0,
+   "Shadow Bolt": 51.79,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 272438": 1.0
+  },
+  "fingerprint": "ef94b30f94a1480e",
+  "judged": "2026-11-20",
+  "shares": {
+   "Bane of Agony": 0.0634,
+   "Bane of Doom": 0.1017,
+   "Corruption": 0.139,
+   "Demonic Rune": 0.0101,
+   "Immolate": 0.0975,
+   "Pet: Auto Attack": 0.0613,
+   "Pet: Lash of Pain": 0.0094,
+   "Shadow Bolt": 0.5176
+  }
+ },
+ "warlock/affliction-wrack-raid/affliction-wrack-raid": {
+  "casts": {
+   "Amplify Curse": 1.0,
+   "Bane of Agony": 7.6803333333333335,
+   "Corruption": 10.067666666666666,
+   "Curse of the Elements": 1.1016666666666666,
+   "Death Coil": 0.9496666666666667,
+   "Demonic Rune": 1.9956666666666667,
+   "Life Tap": 0.057,
+   "Major Mana Potion": 1.1156666666666666,
+   "OtherActionManaGain": 30.825666666666667,
+   "Shadow Bolt": 8.276,
+   "Siphon Life": 5.308,
+   "Talisman of Ephemeral Power": 2.0,
+   "Wrack": 28.359,
+   "item 272438": 1.0
+  },
+  "fingerprint": "c3d5f11117967bf7",
+  "judged": "2026-11-20",
+  "shares": {
+   "Bane of Agony": 0.2598,
+   "Corruption": 0.2256,
+   "Death Coil": 0.0049,
+   "Demonic Rune": 0.0099,
+   "Shadow Bolt": 0.0634,
+   "Siphon Life": 0.0675,
+   "Wrack": 0.369
+  }
+ },
+ "warlock/demonology-raid/demonology-ml-raid": {
+  "casts": {
+   "Bane of Agony": 3.046,
+   "Bane of Doom": 2.0,
+   "Corruption": 9.173666666666668,
+   "Curse of the Elements": 1.1593333333333333,
+   "Death Coil": 0.344,
+   "Demonic Rune": 2.0,
+   "Immolate": 9.905333333333333,
+   "Life Tap": 10.981666666666667,
+   "Major Mana Potion": 2.0,
+   "OtherActionManaGain": 51.69166666666667,
+   "Pet: Auto Attack": 90.0,
+   "Pet: Lash of Pain": 15.0,
+   "Pet: OtherActionManaGain": 28.893,
+   "Pet: OtherActionMove": 1.0,
+   "Searing Pain": 20.152,
+   "Shadow Bolt": 39.989,
+   "Talisman of Ephemeral Power": 1.8643333333333334,
+   "item 272438": 1.0
+  },
+  "fingerprint": "a50fce87d9cb267a",
+  "judged": "2026-11-20",
+  "shares": {
+   "Bane of Agony": 0.0487,
+   "Bane of Doom": 0.096,
+   "Corruption": 0.111,
+   "Death Coil": 0.0006,
+   "Demonic Rune": 0.0118,
+   "Immolate": 0.0811,
+   "Pet: Auto Attack": 0.0622,
+   "Pet: Lash of Pain": 0.0171,
+   "Pet: spell 1293697": 0.0847,
+   "Searing Pain": 0.077,
+   "Shadow Bolt": 0.4097
+  }
+ },
+ "warlock/demonology-raid/demonology-pact-raid": {
+  "casts": {
+   "Bane of Agony": 3.1286666666666667,
+   "Bane of Doom": 2.0,
+   "Corruption": 9.262333333333334,
+   "Curse of the Elements": 1.1633333333333333,
+   "Death Coil": 0.41133333333333333,
+   "Demonic Rune": 2.0,
+   "Immolate": 10.028,
+   "Life Tap": 10.306666666666667,
+   "Major Mana Potion": 2.0,
+   "OtherActionManaGain": 50.88733333333333,
+   "Pet: Auto Attack": 90.0,
+   "Pet: Lash of Pain": 15.0,
+   "Pet: OtherActionManaGain": 28.65,
+   "Pet: OtherActionMove": 1.0,
+   "Searing Pain": 20.240333333333332,
+   "Shadow Bolt": 40.156,
+   "Talisman of Ephemeral Power": 1.855,
+   "item 272438": 1.0
+  },
+  "fingerprint": "ef7f6973ca224a8f",
+  "judged": "2026-11-20",
+  "shares": {
+   "Bane of Agony": 0.0503,
+   "Bane of Doom": 0.0955,
+   "Corruption": 0.1116,
+   "Death Coil": 0.0008,
+   "Demonic Rune": 0.0119,
+   "Immolate": 0.0812,
+   "Pet: Auto Attack": 0.0622,
+   "Pet: Lash of Pain": 0.0157,
+   "Pet: spell 1293697": 0.0835,
+   "Searing Pain": 0.077,
+   "Shadow Bolt": 0.4103
+  }
+ },
+ "warlock/destro-raid/destruction-succubus-raid": {
+  "casts": {
+   "Amplify Curse": 0.8696666666666667,
+   "Bane of Agony": 2.673,
+   "Bane of Doom": 2.0,
+   "Conflagrate": 16.191666666666666,
+   "Corruption": 9.707333333333333,
+   "Curse of the Elements": 1.0973333333333333,
+   "Demonic Rune": 2.0,
+   "Immolate": 12.336333333333334,
+   "Incinerate": 40.219,
+   "Life Tap": 12.205333333333334,
+   "Major Mana Potion": 2.0,
+   "OtherActionManaGain": 59.739,
+   "Pet: Auto Attack": 90.0,
+   "Pet: Lash of Pain": 15.0,
+   "Pet: OtherActionManaGain": 22.249,
+   "Pet: OtherActionMove": 1.0,
+   "Searing Pain": 0.717,
+   "Shadowburn": 10.921666666666667,
+   "Soul Fire": 1.0,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 272438": 1.0
+  },
+  "fingerprint": "ee591b4abb848069",
+  "judged": "2026-11-20",
+  "shares": {
+   "Bane of Agony": 0.0522,
+   "Bane of Doom": 0.0901,
+   "Conflagrate": 0.1094,
+   "Corruption": 0.1206,
+   "Demonic Rune": 0.0111,
+   "Immolate": 0.1284,
+   "Incinerate": 0.3466,
+   "Pet: Auto Attack": 0.0576,
+   "Pet: Lash of Pain": 0.0086,
+   "Searing Pain": 0.003,
+   "Shadowburn": 0.0642,
+   "Soul Fire": 0.0083
+  }
+ },
+ "warlock/fire-destro-raid/destruction-fire-raid": {
+  "casts": {
+   "Bane of Agony": 3.6496666666666666,
+   "Bane of Doom": 2.0,
+   "Corruption": 10.378666666666666,
+   "Curse of the Elements": 1.0976666666666666,
+   "Demonic Rune": 2.0,
+   "Immolate": 11.424666666666667,
+   "Life Tap": 13.398666666666667,
+   "Major Mana Potion": 2.0,
+   "OtherActionManaGain": 53.03,
+   "Searing Pain": 1.2916666666666667,
+   "Shadow Bolt": 41.421,
+   "Shadowburn": 10.866333333333333,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 272438": 1.0
+  },
+  "fingerprint": "6fcca65f1ad718ea",
+  "judged": "2026-11-20",
+  "shares": {
+   "Bane of Agony": 0.0591,
+   "Bane of Doom": 0.1145,
+   "Corruption": 0.1567,
+   "Demonic Rune": 0.0129,
+   "Immolate": 0.1094,
+   "Searing Pain": 0.0056,
+   "Shadow Bolt": 0.46,
+   "Shadowburn": 0.0818
+  }
+ },
+ "warlock/fire-destro-raid/opt-fire-destro-raid-raid-dps": {
+  "casts": {
+   "Bane of Agony": 3.6433333333333335,
+   "Bane of Doom": 2.0,
+   "Corruption": 10.021333333333333,
+   "Curse of the Elements": 1.0976666666666666,
+   "Demonic Rune": 1.9993333333333334,
+   "Immolate": 11.391,
+   "Life Tap": 9.730333333333334,
+   "Major Mana Potion": 2.0,
+   "OtherActionManaGain": 48.166666666666664,
+   "Searing Pain": 1.2536666666666667,
+   "Shadow Bolt": 50.19866666666667,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 272438": 1.0
+  },
+  "fingerprint": "000c86d8a56e5902",
+  "judged": "2026-11-20",
+  "shares": {
+   "Bane of Agony": 0.0557,
+   "Bane of Doom": 0.1138,
+   "Corruption": 0.1542,
+   "Demonic Rune": 0.0126,
+   "Immolate": 0.1071,
+   "Searing Pain": 0.0053,
+   "Shadow Bolt": 0.5514
+  }
+ },
+ "warlock/fire-destro-raid/shadow-bolt-hybrid-fire-open-raid": {
+  "casts": {
+   "Bane of Agony": 3.463,
+   "Bane of Doom": 2.0,
+   "Conflagrate": 15.073333333333334,
+   "Corruption": 10.127666666666666,
+   "Curse of the Elements": 1.0976666666666666,
+   "Demonic Rune": 2.0,
+   "Immolate": 11.082,
+   "Life Tap": 9.938666666666666,
+   "Major Mana Potion": 2.0,
+   "OtherActionManaGain": 51.054,
+   "Searing Pain": 1.1143333333333334,
+   "Shadow Bolt": 41.30466666666667,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 272438": 1.0
+  },
+  "fingerprint": "ea582d8fe95461b3",
+  "judged": "2026-11-20",
+  "shares": {
+   "Bane of Agony": 0.0533,
+   "Bane of Doom": 0.1104,
+   "Conflagrate": 0.0969,
+   "Corruption": 0.1409,
+   "Demonic Rune": 0.0141,
+   "Immolate": 0.1022,
+   "Searing Pain": 0.0045,
+   "Shadow Bolt": 0.4777
+  }
+ },
+ "warlock/incinerate-raid/destruction-incinerate-open-raid": {
+  "casts": {
+   "Bane of Agony": 7.992,
+   "Conflagrate": 13.380666666666666,
+   "Corruption": 10.093333333333334,
+   "Curse of the Elements": 1.11,
+   "Demonic Rune": 1.998,
+   "Immolate": 11.880666666666666,
+   "Life Tap": 9.719333333333333,
+   "Major Mana Potion": 2.0,
+   "OtherActionManaGain": 51.24466666666667,
+   "Searing Pain": 1.1603333333333334,
+   "Shadow Bolt": 40.56933333333333,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 272438": 1.0
+  },
+  "fingerprint": "64f4308a040c33b1",
+  "judged": "2026-11-20",
+  "shares": {
+   "Bane of Agony": 0.1523,
+   "Conflagrate": 0.0885,
+   "Corruption": 0.1468,
+   "Demonic Rune": 0.0143,
+   "Immolate": 0.1101,
+   "Searing Pain": 0.0048,
+   "Shadow Bolt": 0.4832
+  }
+ },
+ "warlock/incinerate-raid/destruction-incinerate-raid": {
+  "casts": {
+   "Bane of Agony": 7.758,
+   "Conflagrate": 13.308666666666667,
+   "Corruption": 9.863333333333333,
+   "Curse of the Elements": 1.096,
+   "Demonic Rune": 2.0,
+   "Immolate": 11.946,
+   "Incinerate": 39.169333333333334,
+   "Life Tap": 13.763,
+   "Major Mana Potion": 2.0,
+   "OtherActionManaGain": 59.818333333333335,
+   "Searing Pain": 1.0273333333333334,
+   "Shadowburn": 11.657333333333334,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 272438": 1.0
+  },
+  "fingerprint": "cd2e14d64eec50c4",
+  "judged": "2026-11-20",
+  "shares": {
+   "Bane of Agony": 0.1393,
+   "Conflagrate": 0.1033,
+   "Corruption": 0.1311,
+   "Demonic Rune": 0.0143,
+   "Immolate": 0.144,
+   "Incinerate": 0.379,
+   "Searing Pain": 0.005,
+   "Shadowburn": 0.0842
+  }
+ },
+ "warlock/sb-raid/destruction-ml-raid": {
+  "casts": {
+   "Bane of Agony": 3.463,
+   "Bane of Doom": 2.0,
+   "Conflagrate": 15.073333333333334,
+   "Corruption": 10.127666666666666,
+   "Curse of the Elements": 1.0976666666666666,
+   "Demonic Rune": 2.0,
+   "Immolate": 11.082,
+   "Life Tap": 9.938666666666666,
+   "Major Mana Potion": 2.0,
+   "OtherActionManaGain": 51.054,
+   "Searing Pain": 1.1143333333333334,
+   "Shadow Bolt": 41.30466666666667,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 272438": 1.0
+  },
+  "fingerprint": "33a3a3f91dafef50",
+  "judged": "2026-11-20",
+  "shares": {
+   "Bane of Agony": 0.0538,
+   "Bane of Doom": 0.1109,
+   "Conflagrate": 0.0936,
+   "Corruption": 0.1424,
+   "Demonic Rune": 0.0137,
+   "Immolate": 0.0987,
+   "Searing Pain": 0.0043,
+   "Shadow Bolt": 0.4826
+  }
+ },
+ "warlock/sb-raid/ds-ruin-raid": {
+  "casts": {
+   "Amplify Curse": 2.0,
+   "Bane of Agony": 3.6096666666666666,
+   "Bane of Doom": 2.0,
+   "Corruption": 9.968333333333334,
+   "Curse of the Elements": 1.0976666666666666,
+   "Demonic Rune": 2.0,
+   "Immolate": 11.404333333333334,
+   "Life Tap": 12.776666666666667,
+   "Major Mana Potion": 2.0,
+   "OtherActionManaGain": 50.413666666666664,
+   "Searing Pain": 1.2063333333333333,
+   "Shadow Bolt": 48.43333333333333,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 272438": 1.0
+  },
+  "fingerprint": "14fc8a90ecb35902",
+  "judged": "2026-11-20",
+  "shares": {
+   "Bane of Agony": 0.0627,
+   "Bane of Doom": 0.1149,
+   "Corruption": 0.1545,
+   "Demonic Rune": 0.0122,
+   "Immolate": 0.1044,
+   "Searing Pain": 0.005,
+   "Shadow Bolt": 0.5463
+  }
+ },
+ "warlock/sb-raid/opt-sb-raid-raid-dps": {
+  "casts": {
+   "Amplify Curse": 2.0,
+   "Bane of Agony": 3.5803333333333334,
+   "Bane of Doom": 2.0,
+   "Corruption": 10.043666666666667,
+   "Curse of the Elements": 1.0976666666666666,
+   "Demonic Rune": 2.0,
+   "Immolate": 11.445,
+   "Life Tap": 12.042,
+   "Major Mana Potion": 2.0,
+   "OtherActionManaGain": 49.93633333333333,
+   "Searing Pain": 1.2303333333333333,
+   "Shadow Bolt": 48.812666666666665,
+   "Talisman of Ephemeral Power": 2.0,
+   "item 272438": 1.0
+  },
+  "fingerprint": "4339fedacab279c5",
+  "judged": "2026-11-20",
+  "shares": {
+   "Bane of Agony": 0.0596,
+   "Bane of Doom": 0.1144,
+   "Corruption": 0.1548,
+   "Demonic Rune": 0.0122,
+   "Immolate": 0.1043,
+   "Searing Pain": 0.005,
+   "Shadow Bolt": 0.5498
+  }
+ },
+ "warrior/arms-2h-raid/arms-2h-raid": {
+  "casts": {
+   "Auto Attack": 63.25933333333333,
+   "Bloodrage": 2.102333333333333,
+   "Bloodthirst": 27.266,
+   "Death Wish": 1.0,
+   "Deep Wound": 84.17266666666667,
+   "Execute": 12.822333333333333,
+   "Hamstring": 55.93866666666667,
+   "Heroic Strike": 5.437,
+   "Mighty Rage Potion": 2.0,
+   "OtherActionRageGain": 92.77233333333334,
+   "Recklessness": 1.0,
+   "Whirlwind": 17.759333333333334,
+   "item 13965": 1.0
+  },
+  "fingerprint": "6dbefc0a20a9c6f0",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2759,
+   "Bloodthirst": 0.1674,
+   "Deep Wound": 0.0799,
+   "Execute": 0.1242,
+   "Hamstring": 0.0218,
+   "Heroic Strike": 0.0314,
+   "Whirlwind": 0.111,
+   "Windfury Totem": 0.1885
+  }
+ },
+ "warrior/arms-2h-raid/fury-open-raid": {
+  "casts": {
+   "Auto Attack": 62.835,
+   "Bloodrage": 2.041,
+   "Bloodthirst": 27.602333333333334,
+   "Death Wish": 1.0,
+   "Deep Wound": 84.456,
+   "Execute": 12.849666666666666,
+   "Hamstring": 55.763,
+   "Heroic Strike": 5.8853333333333335,
+   "Mighty Rage Potion": 2.0,
+   "OtherActionRageGain": 97.80833333333334,
+   "Reckless Swings": 2.484,
+   "Recklessness": 1.0,
+   "Whirlwind": 18.012,
+   "item 13965": 1.0
+  },
+  "fingerprint": "350e5d1c7541be54",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2681,
+   "Bloodthirst": 0.1703,
+   "Deep Wound": 0.0782,
+   "Execute": 0.1289,
+   "Hamstring": 0.0218,
+   "Heroic Strike": 0.0342,
+   "Whirlwind": 0.1131,
+   "Windfury Totem": 0.1854
+  }
+ },
+ "warrior/arms-2h-raid/opt-arms-2h-raid-raid-dps": {
+  "casts": {
+   "Auto Attack": 63.25933333333333,
+   "Bloodrage": 2.102333333333333,
+   "Bloodthirst": 27.266,
+   "Death Wish": 1.0,
+   "Deep Wound": 84.17266666666667,
+   "Execute": 12.822333333333333,
+   "Hamstring": 55.93866666666667,
+   "Heroic Strike": 5.437,
+   "Mighty Rage Potion": 2.0,
+   "OtherActionRageGain": 92.77233333333334,
+   "Recklessness": 1.0,
+   "Whirlwind": 17.759333333333334,
+   "item 13965": 1.0
+  },
+  "fingerprint": "9dfec6d642a6148a",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2719,
+   "Bloodthirst": 0.1699,
+   "Deep Wound": 0.0787,
+   "Execute": 0.1273,
+   "Hamstring": 0.0221,
+   "Heroic Strike": 0.0318,
+   "Whirlwind": 0.1125,
+   "Windfury Totem": 0.1858
+  }
+ },
+ "warrior/arms-battle-raid/arms-battle-raid": {
+  "casts": {
+   "Auto Attack": 53.781333333333336,
+   "Battle Stance": 1.0,
+   "Bloodrage": 2.251333333333333,
+   "Deep Wound": 81.88266666666667,
+   "Execute": 9.997,
+   "Hamstring": 38.65833333333333,
+   "Mighty Rage Potion": 2.0,
+   "Mortal Strike": 23.203666666666667,
+   "OtherActionRageGain": 82.41066666666667,
+   "Overpower": 17.533666666666665,
+   "Rend": 8.736,
+   "Slam": 15.644,
+   "Spearing Strike": 6.751333333333333
+  },
+  "fingerprint": "d53f8d48210970b1",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2331,
+   "Deep Wound": 0.0766,
+   "Execute": 0.0748,
+   "Hamstring": 0.016,
+   "Mortal Strike": 0.1404,
+   "Overpower": 0.1342,
+   "Rend": 0.0432,
+   "Slam": 0.0883,
+   "Spearing Strike": 0.0243,
+   "Windfury Totem": 0.1689
+  }
+ },
+ "warrior/arms-battle-raid/arms-community-parse": {
+  "casts": {
+   "Auto Attack": 53.77066666666666,
+   "Battle Stance": 1.0,
+   "Bloodrage": 2.2516666666666665,
+   "Deep Wound": 81.758,
+   "Execute": 8.880666666666666,
+   "Hamstring": 39.745333333333335,
+   "Mighty Rage Potion": 2.0,
+   "Mortal Strike": 23.162,
+   "OtherActionRageGain": 82.366,
+   "Overpower": 17.500333333333334,
+   "Rend": 8.733,
+   "Slam": 15.624666666666666,
+   "Spearing Strike": 6.751333333333333
+  },
+  "fingerprint": "93fae7a0188c4668",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.236,
+   "Deep Wound": 0.0775,
+   "Execute": 0.0646,
+   "Hamstring": 0.0167,
+   "Mortal Strike": 0.142,
+   "Overpower": 0.1355,
+   "Rend": 0.0437,
+   "Slam": 0.0892,
+   "Spearing Strike": 0.0246,
+   "Windfury Totem": 0.1702
+  }
+ },
+ "warrior/arms-battle-raid/arms-ml-raid": {
+  "casts": {
+   "Auto Attack": 53.757666666666665,
+   "Battle Stance": 1.0,
+   "Bloodrage": 2.263,
+   "Deep Wound": 81.78766666666667,
+   "Execute": 9.383666666666667,
+   "Hamstring": 39.31166666666667,
+   "Mighty Rage Potion": 2.0,
+   "Mortal Strike": 23.398333333333333,
+   "OtherActionRageGain": 82.37433333333334,
+   "Overpower": 17.543,
+   "Rend": 8.727333333333334,
+   "Slam": 15.677666666666667,
+   "Spearing Strike": 6.748666666666667
+  },
+  "fingerprint": "d0f62f75f784bd20",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2352,
+   "Deep Wound": 0.0771,
+   "Execute": 0.0673,
+   "Hamstring": 0.0164,
+   "Mortal Strike": 0.1423,
+   "Overpower": 0.1357,
+   "Rend": 0.0434,
+   "Slam": 0.0891,
+   "Spearing Strike": 0.0246,
+   "Windfury Totem": 0.1688
+  }
+ },
+ "warrior/fury-dw-raid/fury-dual-wield-open-raid": {
+  "casts": {
+   "Auto Attack": 151.24833333333333,
+   "Berserker Rage": 2.78,
+   "Bloodrage": 2.964,
+   "Bloodthirst": 24.584,
+   "Death Wish": 1.0,
+   "Deep Wound": 124.879,
+   "Execute": 17.809333333333335,
+   "Hamstring": 33.02133333333333,
+   "Heroic Strike": 25.846333333333334,
+   "Mighty Rage Potion": 2.0,
+   "OtherActionRageGain": 196.56366666666668,
+   "Reckless Swings": 12.0,
+   "Recklessness": 1.0,
+   "Whirlwind": 20.306,
+   "item 13965": 1.0
+  },
+  "fingerprint": "a0563eb5cf329cad",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.2779,
+   "Bloodthirst": 0.1397,
+   "Deep Wound": 0.0561,
+   "Execute": 0.1497,
+   "Hamstring": 0.0118,
+   "Heroic Strike": 0.1099,
+   "Whirlwind": 0.1298,
+   "Windfury Totem": 0.1251
+  }
+ },
+ "warrior/fury-dw-raid/fury-dw-raid": {
+  "casts": {
+   "Auto Attack": 161.272,
+   "Berserker Rage": 3.503,
+   "Bloodrage": 2.9983333333333335,
+   "Bloodthirst": 24.027,
+   "Death Wish": 1.0,
+   "Deep Wound": 126.67033333333333,
+   "Execute": 18.25,
+   "Hamstring": 37.273666666666664,
+   "Heroic Strike": 15.357,
+   "Mighty Rage Potion": 2.0,
+   "OtherActionRageGain": 156.37333333333333,
+   "Recklessness": 1.0,
+   "Whirlwind": 20.555333333333333,
+   "item 13965": 1.0
+  },
+  "fingerprint": "4d0d1249223526f1",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.3258,
+   "Bloodthirst": 0.1391,
+   "Deep Wound": 0.0419,
+   "Execute": 0.1415,
+   "Hamstring": 0.0138,
+   "Heroic Strike": 0.0678,
+   "Whirlwind": 0.1336,
+   "Windfury Totem": 0.1364
+  }
+ },
+ "warrior/fury-dw-raid/opt-fury-dw-raid-raid-dps": {
+  "casts": {
+   "Auto Attack": 161.45166666666665,
+   "Berserker Rage": 3.5126666666666666,
+   "Bloodrage": 2.998666666666667,
+   "Bloodthirst": 24.026333333333334,
+   "Death Wish": 1.0,
+   "Deep Wound": 126.652,
+   "Execute": 18.211666666666666,
+   "Hamstring": 37.14266666666666,
+   "Heroic Strike": 15.120666666666667,
+   "Mighty Rage Potion": 2.0,
+   "OtherActionRageGain": 156.52133333333333,
+   "Recklessness": 1.0,
+   "Whirlwind": 20.552,
+   "item 13965": 1.0
+  },
+  "fingerprint": "e0590684a1d8af5b",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.311,
+   "Bloodthirst": 0.1403,
+   "Deep Wound": 0.0584,
+   "Execute": 0.1442,
+   "Hamstring": 0.0138,
+   "Heroic Strike": 0.0675,
+   "Whirlwind": 0.135,
+   "Windfury Totem": 0.1298
+  }
+ },
+ "warrior/prot-tank/opt-prot-tank-raid-tank": {
+  "casts": {
+   "Auto Attack": 20.227,
+   "Bloodrage": 3.0,
+   "Heroic Strike": 58.279333333333334,
+   "OtherActionRageGain": 102.05266666666667,
+   "Rend": 9.769,
+   "Revenge": 32.531333333333336,
+   "Shield Block": 35.646,
+   "Shield Slam": 26.890333333333334,
+   "Shield Wall": 1.0,
+   "Sunder Armor": 44.370666666666665,
+   "item 272440": 1.0
+  },
+  "fingerprint": "309062a3a5febfc2",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.0635,
+   "Heroic Strike": 0.2861,
+   "Rend": 0.0416,
+   "Retribution Aura": 0.0099,
+   "Revenge": 0.2544,
+   "Shield Slam": 0.2127,
+   "Thorns": 0.0089,
+   "Windfury Totem": 0.1231
+  }
+ },
+ "warrior/prot-tank/prot-raid-tank": {
+  "casts": {
+   "Auto Attack": 22.424666666666667,
+   "Bloodrage": 3.0,
+   "Heroic Strike": 56.07,
+   "OtherActionRageGain": 138.269,
+   "Rend": 9.755333333333333,
+   "Revenge": 32.290333333333336,
+   "Shield Block": 35.704,
+   "Shield Slam": 27.018,
+   "Shield Wall": 1.0,
+   "Sunder Armor": 44.563,
+   "item 272440": 1.0
+  },
+  "fingerprint": "fc04afd64a74b359",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.0708,
+   "Heroic Strike": 0.2772,
+   "Rend": 0.0421,
+   "Retribution Aura": 0.01,
+   "Revenge": 0.2534,
+   "Shield Slam": 0.2143,
+   "Thorns": 0.0089,
+   "Windfury Totem": 0.1235
+  }
+ },
+ "warrior/prot-tank/protection-ml-tank": {
+  "casts": {
+   "Auto Attack": 21.938666666666666,
+   "Bloodrage": 3.0,
+   "Deep Wound": 24.275333333333332,
+   "Heroic Strike": 56.56366666666667,
+   "OtherActionRageGain": 102.73633333333333,
+   "Rend": 9.749666666666666,
+   "Revenge": 32.478,
+   "Shield Block": 35.635666666666665,
+   "Shield Slam": 26.770333333333333,
+   "Shield Wall": 1.0,
+   "Sunder Armor": 44.550333333333334,
+   "item 272440": 1.0
+  },
+  "fingerprint": "61c2a6c91298a466",
+  "judged": "2026-11-20",
+  "shares": {
+   "Auto Attack": 0.065,
+   "Deep Wound": 0.0198,
+   "Heroic Strike": 0.2724,
+   "Rend": 0.0534,
+   "Retribution Aura": 0.0096,
+   "Revenge": 0.2472,
+   "Shield Slam": 0.2077,
+   "Thorns": 0.0087,
+   "Windfury Totem": 0.1162
+  }
+ }
+}

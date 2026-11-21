@@ -67,11 +67,11 @@ The Fury raid build the open talent search found on 2026-11-08: every legal 51-p
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`fury-dual-wield-open-raid`](fury-dual-wield-open-raid.md)** | ours: derived (open search) | 17/32/2 | 504 | +0.0% | 990 | +0.0% | 0 s |
-| 2 | *Fury* | community simulator | - | 502 | -0.4% | 988 | -0.2% | 0 s |
-| 3 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 18/33/0 | 501 | -0.6% | 962 | -2.9% | 0 s |
-| 4 | [`fury-dw-raid`](fury-dw-raid.md) | ours: hand draft | 13/38/0 | 474 | -5.8% | 916 | -7.5% | 0 s |
-| 5 | *Arms* | community simulator | - | 355 | -29.6% | 671 | -32.2% | 0 s |
+| 1 | **[`fury-dual-wield-open-raid`](fury-dual-wield-open-raid.md)** | ours: derived (open search) | 17/32/2 | 499 | +0.0% | 987 | +0.0% | 0 s |
+| 2 | *Fury* | community simulator | - | 497 | -0.4% | 984 | -0.2% | 0 s |
+| 3 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 17/34/0 | 496 | -0.6% | 960 | -2.8% | 0 s |
+| 4 | [`fury-dw-raid`](fury-dw-raid.md) | ours: hand draft | 13/36/2 | 470 | -5.8% | 914 | -7.4% | 0 s |
+| 5 | *Arms* | community simulator | - | 352 | -29.5% | 671 | -32.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -139,10 +139,10 @@ The Fury raid build the open talent search found on 2026-11-08: every legal 51-p
 | 12 | if (time left in the fight ≤ 33.75s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
 | 13 | cast Whirlwind | 5.4 |
 | 14 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 5.4 |
-| 15 | if not Battle Shout is up: cast Battle Shout | 0.3 |
+| 15 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 |
 | 16 | if stacks of Sunder Armor < 5: cast Sunder Armor | 6.5 |
 
-Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Heroic Strike, cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
+Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Heroic Strike (rank 8), cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
 Damage by ability:
 
@@ -150,7 +150,7 @@ Damage by ability:
 |---|---|
 | Auto Attack | 42% |
 | Execute | 24% |
-| Bloodthirst | 16% |
+| Bloodthirst | 15% |
 | Whirlwind | 13% |
 | Deep Wound | 6% |
 

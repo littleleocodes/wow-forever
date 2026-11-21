@@ -67,14 +67,15 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 5** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 7/31/13 | 482 | +0.0% | 708 | -9.7% | 20 s |
-| 2 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 474 | -1.8% | 771 | -1.7% | 28 s |
-| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 0/29/22 | 469 | -2.7% | 779 | -0.6% | 30 s |
-| 4 | *FFB* | community simulator | - | 459 | -4.8% | 784 | +0.0% | 36 s |
+| 1 | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) | ours: hand draft | 0/29/22 | 532 | +0.0% | 768 | -1.8% | 38 s |
+| 2 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 0/29/22 | 527 | -0.9% | 778 | -0.4% | 42 s |
+| 3 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 7/31/13 | 505 | -5.1% | 704 | -9.9% | 35 s |
+| 4 | [`frostfire-ffb-raid`](frostfire-ffb-raid.md) | ours: derived (simulator preset) | 0/29/22 | 501 | -5.9% | 781 | +0.0% | 50 s |
+| 5 | *FFB* | community simulator | - | 501 | -5.9% | 781 | +0.0% | 50 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -136,37 +137,29 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
   36. insert at the end: cast Scorch (+0.2%, pass 20)
   37. only with 3s or more of the fight left: cast Frostfire Bolt (+0.2%, pass 20)
 
+Before the pull: cast Pyroblast.
+
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-raid`](frostfire-raid.md) casts/min |
 |---|---|---|
-| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 6.8 |
-| 2 | cast Fire Blast | 5.5 |
-| 3 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 6.8 |
-| 4 | if mana % ≤ 80%: cast Mana Ruby | as ready |
-| 5 | use every other cooldown when ready | as ready |
-| 6 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 7 | if stacks of Heating Up = 2: cast Pyroblast | 5.7 |
-| 8 | if stacks of Heating Up = 3: cast Pyroblast | 5.7 |
-| 9 | cast Combustion | 0.3 |
-| 10 | cast Mana Citrine | as ready |
-| 11 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 2.4 |
-| 12 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 0.1 |
-| 13 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 1.3 |
-| 14 | cast Robe of the Archmage | as ready |
-| 15 | cast Scorch | 6.8 |
+| 1 | if mana < current cost and (not Read Leyline is known or not Read Leyline is ready or Energized is up): channel Evocation (interrupt it when a higher line is ready) | as ready |
+| 2 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability < 4 or not spellIsCasting): cast Scorch | 4.4 |
+| 3 | if stacks of Fire Vulnerability = 5: use every other cooldown when ready | as ready |
+| 4 | if stacks of Heating Up = 3 and not spellIsCasting: cast Pyroblast | 3.2 |
+| 5 | if stacks of Fingers of Frost < 2: cast Fire Blast | 6.3 |
+| 6 | cast Frostfire Bolt | 9.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Arcane Power (needs the Arcane Power talent); cast Berserking (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent).
+Lines of the simulator's rotation these builds never cast: strict sequence: cast Read Leyline; channel Evocation (interrupt it when a higher line is ready) (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`frostfire-raid`](frostfire-raid.md) |
 |---|---|
-| Pyroblast | 41% |
-| Fire Blast | 18% |
-| Scorch | 15% |
-| Frostfire Bolt | 10% |
-| Ignite | 9% |
-| Fireball | 6% |
-| Arcane Missiles | 1% |
+| Frostfire Bolt | 36% |
+| Pyroblast | 24% |
+| Fire Blast | 20% |
+| Ignite | 11% |
+| Scorch | 8% |
+| Demonic Rune | 1% |
 
 ## Notes
 

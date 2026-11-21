@@ -2,110 +2,95 @@
 
 [Warlock](../README.md) > [Raid (group)](README.md) > Affliction
 
-**[Affliction (optimized)](../research/raid/builds/opt-affliction-raid-raid-dps.md)** (30/0/21) — [open the talent tree](https://talentsforever.com/warlock/60/2550002013520005--0550305003-12)
+**✅ Recommended** for raid (the best warlock spec here, or within 3% of it).
+
+**[Affliction — Wrack](../research/raid/builds/affliction-wrack-raid.md)** (35/11/5) — [open the talent tree](https://talentsforever.com/warlock/60/25500020135201351-0050203001-05-12)
 
 ## How to play
 
-**Setup, before the pull:** **Summon Succubus** and keep it out all fight. Keep **Demon Armor** on you.
+**Before the pull:** **Shadow Bolt**.
 
-**Before the pull:** **Amplify Curse**.
+**Talents with no line below:** **Demonic Sacrifice**: before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice for 2 hours; summoning any demon cancels it).
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Curse of the Elements**: keep it on the target
-2. **Life Tap** when your mana is below 10%
-3. **Amplify Curse**; no global cooldown, so press it alongside the others
-4. **Bane of Agony**: keep it on the target
-5. **Corruption**: keep it on the target, until the last 10 seconds of the fight
-6. **Immolate**: keep it on the target, until the last 10 seconds of the fight
-7. **Shadow Bolt** (rank 9)
+1. **Amplify Curse** until the last 12 seconds of the fight; no global cooldown, so press it alongside the others
+2. **Bane of Agony**: keep it on the target, until the last 12 seconds of the fight
+3. **Corruption**: keep it on the target
+4. **Siphon Life**: keep it on the target, when Blood Fury is not active
+5. **Shadow Bolt** when Shadow Trance is active
+6. **Wrack**
 
-**Shadow Bolt** is your filler: cast it whenever nothing above is ready.
+**Wrack** is your filler: cast it whenever nothing above is ready.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Searing Pain**: in the last 3.5 seconds of the fight, when there is no time left for another **Shadow Bolt**
+- **Death Coil**: in the last 3 seconds of the fight, when there is no time left for another **Wrack**
+- **Curse of the Elements**: about 1 time a fight
+- **Life Tap**: now and then (in about 1 of 10 fights)
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
 ## Why this rotation
 
-Before the pull, with your buffs, wizard oil and Spellstone on, summon the Succubus, put on **Demon Armor** and cast **Amplify Curse**. In the fight keep **Curse of the Elements** and three damage-over-time spells on the boss and fill every gap with **Shadow Bolt**. Apart from **Amplify Curse**, your Affliction talents add no buttons: they make your dots and Shadow spells hit harder.
-
-**Why it works**
-
-- Before the pull: **Create Spellstone** and put it on your weapon on top of the wizard oil (Forever lets them stack), then **Summon Succubus**: in this project's model a demon copies its share of your spell damage when it is summoned, so buffs and oil come first. This build has no Demonology points, so she adds only her own hits and **Lash of Pain**. It does not sacrifice a demon (**Demonic Sacrifice** is a Demonology talent).
-- **Curse of the Elements** goes up first: one cast lasts 5 minutes and makes the boss take 10% more damage from every magic school, Shadow and Fire alike (Curse of Shadow is gone in Forever). It is a Curse and **Bane of Agony** is a Bane, so both stay on the boss together; the simulator measured the curse better at the top of the list.
-- **Life Tap** waits until you are below 10% mana: every tap is a global cooldown with no damage, so the later you tap, the less mana you leave unspent when the boss dies. It stops 6 seconds before the end, and a mana potion below 65% mana or a Demonic Rune below 60% comes first (neither in the last 15 seconds).
-- **Amplify Curse** goes before the pull and again whenever it comes back (3-minute cooldown): it makes your next **Bane of Agony** 50% stronger. Its 30 seconds outlast the 24-second Bane, so pressing it early never wastes it.
-- **Bane of Agony** starts weak and grows over its 24 seconds, so recast it only once it has run out: refreshing it early throws away its strongest ticks. **Corruption** is instant with 5 points in **Improved Corruption**, so it goes back up the moment it drops; it and **Immolate** are not started in the last 10 seconds.
-- Start a new **Immolate** when less time is left on the old one than its cast (1.5 seconds with the **Bane** talent), so the new one lands about as the old one ends.
-- **Shadow Bolt** is the filler. Its critical strikes trigger **Improved Shadow Bolt** (20% more Shadow damage from you for 12 seconds, your dots included), **Malevolence** and **Ruin** make those crits more frequent and bigger, **Shadow Mastery** adds 10% to your Shadow damage and **Pandemic** doubles the crit bonus of your dots. **Nightfall** (4% at 2 ranks, from **Corruption** ticks) makes your next **Shadow Bolt** instant: the list needs no change, and both Affliction builds on this page take it.
-
-**Caveats**
-
-- **Searing Pain** has no cooldown: the rotation casts it only in the last 3.5 seconds, where its 1.5-second cast lands before the boss dies and a **Shadow Bolt** might not. Never use it as a filler: it does less damage per second of casting than **Shadow Bolt** and causes a high amount of threat.
-- Without Demonology talents the Succubus is a plain demon. If she dies with little of the fight left, finish without her: her 10-second **Summon Succubus** (this build has no **Master Summoner**) costs about as much damage as she would add.
-- Moving costs you **Shadow Bolt** casts, so move with your instants: **Corruption**, **Bane of Agony**, **Curse of the Elements**, **Amplify Curse** and **Life Tap**.
-- The simulator measured only one boss. On a second target that lives a while, an instant **Corruption** and **Bane of Agony** add damage for one global cooldown each; **Bane of Doom** takes the same Bane slot and deals its damage only after a full minute, and the simulated rotations keep **Bane of Agony**.
-
-**When to change it**
-
-- Near the end of a fight, start no dot the boss will not outlive: the list starts no **Corruption** or **Immolate** in the last 10 seconds. Cast **Shadow Bolt** then, and **Searing Pain** in the last 3.5 seconds.
-- A boss needs only one **Curse of the Elements** (in Classic two never stacked): if another warlock keeps it up, take the curse your raid gives you, such as **Curse of Recklessness** for the physical fighters or **Curse of Tongues** on a caster boss.
-- When healing is tight, each **Life Tap** costs health someone must heal: use your mana potion and Demonic Rune before you tap.
+*Guide being rewritten for the new rotation (2026-11-20).*
 
 ## Talents
 
 | Tree | Points | Talents (ranks) |
 |---|---|---|
-| Affliction | 30 | Suppression 5, Improved Corruption 5, Improved Life Tap 2, Improved Bane of Agony 2, Pandemic 3, Amplify Curse 1, Malevolence 5, Nightfall 2, Shadow Mastery 5 |
-| Destruction | 21 | Bane 5, Improved Shadow Bolt 5, Cataclysm 3, Ruin 5, Agonizing Flames 3 |
+| Affliction | 35 | Improved Life Tap 2, Suppression 5, Improved Corruption 5, Improved Bane of Agony 2, Amplify Curse 1, Pandemic 3, Malevolence 5, Nightfall 2, Siphon Life 1, Soul Siphon 3, Shadow Mastery 5, Wrack 1 |
+| Demonology | 11 | Demonic Embrace 5, Demonic Aegis 2, Fel Vitality 3, Demonic Sacrifice 1 |
+| Destruction | 5 | Improved Shadow Bolt 5 |
 
 ## The numbers
 
+**How this pick was checked:** no talent search or short check of its own in this entry's current setup; one follows in the optimality pass.
+
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 824 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 941 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 2e6e77d (client 70938); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Quests and dungeons | 716 | this build |
-| Pre-BiS | 794 | this build |
-| Raid BiS | 822 | this build |
+| Pre-BiS | 904 | [34/11/6](https://talentsforever.com/warlock/60/25400020135201351-0050203001-05001-12) |
+| Raid BiS | 944 | [34/11/6](https://talentsforever.com/warlock/60/25400020135201351-0050203001-05001-12) (as good as this build in this gear) |
 
 *Each row is in that tier's own gear set; the DPS at the top of the page is this build in the standard set, so the two do not match.*
 
-**The gear** (average item level: Quests and dungeons 60.5; Pre-BiS 62.2; Raid BiS 63.9; each item opens its Wowhead page, with where it drops and its enchant):
+**The gear** (average item level: Pre-BiS 61.8; Raid BiS 63.4; each item opens its Wowhead page, with where it drops and its enchant):
 
-| Slot | Quests and dungeons | Pre-BiS | Raid BiS |
-|---|---|---|---|
-| Head | [Crimson Felt Hat](https://www.wowhead.com/forever/item=18727) · *Magistrate Barthilas, Stratholme*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Spellweaver's Turban](https://www.wowhead.com/forever/item=22267) · *General Drakkisath, Blackrock Spire*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Spellweaver's Turban](https://www.wowhead.com/forever/item=22267) · *General Drakkisath, Blackrock Spire*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
-| Neck | [Orb of the Darkmoon](https://www.wowhead.com/forever/item=19426) · *quest: 1200 Tickets - Orb of the Darkmoon* | [Nacreous Shell Necklace](https://www.wowhead.com/forever/item=22403) · *Cannon Master Willey, Stratholme* | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
-| Shoulders | [Shroud of the Nathrezim](https://www.wowhead.com/forever/item=18720) · *Balnazzar, Stratholme* | [Mantle of the Timbermaw](https://www.wowhead.com/forever/item=19050) · *Tailoring* | [Mantle of the Timbermaw](https://www.wowhead.com/forever/item=19050) · *Tailoring* |
-| Back | [Spritecaster Cape](https://www.wowhead.com/forever/item=11623) · *Houndmaster Grebmar, Blackrock Depths* | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411) · *sold by Pix Xizzix* | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411) · *sold by Pix Xizzix* |
-| Chest | [Robe of Everlasting Night](https://www.wowhead.com/forever/item=18385) · *Immol'thar, Dire Maul*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Robe of the Void](https://www.wowhead.com/forever/item=14153) · *Tailoring*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Robe of the Void](https://www.wowhead.com/forever/item=14153) · *Tailoring*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
-| Wrist | [Sublime Wristguards](https://www.wowhead.com/forever/item=18497) · *Guard Mol'dar, Dire Maul*<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) | [Sublime Wristguards](https://www.wowhead.com/forever/item=18497) · *Guard Mol'dar, Dire Maul*<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) | [Sublime Wristguards](https://www.wowhead.com/forever/item=18497) · *Guard Mol'dar, Dire Maul*<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) |
-| Hands | [Hands of Power](https://www.wowhead.com/forever/item=13253) · *Quartermaster Zigris, Blackrock Spire* | [Gloves of Spell Mastery](https://www.wowhead.com/forever/item=14146) · *Tailoring* | [Gloves of Spell Mastery](https://www.wowhead.com/forever/item=14146) · *Tailoring* |
-| Waist | [Highlander's Cloth Girdle](https://www.wowhead.com/forever/item=20047) · *sold by Samuel Hawke* | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* |
-| Legs | [Skyshroud Leggings](https://www.wowhead.com/forever/item=13170) · *Highlord Omokk, Blackrock Spire*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Leggings of Torment](https://www.wowhead.com/forever/item=22342) · *Lord Valthalak, Blackrock Spire*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Flarecore Leggings](https://www.wowhead.com/forever/item=19165) · *Tailoring*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
-| Feet | [Omnicast Boots](https://www.wowhead.com/forever/item=11822) · *Golem Lord Argelmach, Blackrock Depths*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Omnicast Boots](https://www.wowhead.com/forever/item=11822) · *Golem Lord Argelmach, Blackrock Depths*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Venomspew Footpads](https://www.wowhead.com/forever/item=275606) · *Tailoring*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
-| Finger | [Songstone of Ironforge](https://www.wowhead.com/forever/item=12543) · *quest: The Princess's Surprise* | [Warden's Signet of Brilliance](https://www.wowhead.com/forever/item=275982) | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
-| Finger | [Eye of Orgrimmar](https://www.wowhead.com/forever/item=12545) · *quest: The Princess Saved?* | [Elemental Focus Band](https://www.wowhead.com/forever/item=20682) · *Prince Skaldrenox, Silithus* | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
-| Trinket | [Eye of the Beast](https://www.wowhead.com/forever/item=13968) · *quest: For The Horde!* | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) · *sold by Pix Xizzix* | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) · *sold by Pix Xizzix* |
-| Trinket | [Royal Seal of Eldre'Thalas](https://www.wowhead.com/forever/item=18467) · *quest: Harnessing Shadows* | [Eye of the Beast](https://www.wowhead.com/forever/item=13968) · *quest: For The Horde!* | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
-| Main hand | [Witchblade](https://www.wowhead.com/forever/item=13964) · *Darkmaster Gandling, Scholomance*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Sageblade](https://www.wowhead.com/forever/item=22383) · *Blacksmithing*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Sageblade](https://www.wowhead.com/forever/item=22383) · *Blacksmithing*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
-| Off hand | [Spirit of Aquementas](https://www.wowhead.com/forever/item=11904) · *quest: It's Dangerous to Go Alone* | [Obsidian Bauble](https://www.wowhead.com/forever/item=18316) | [Obsidian Bauble](https://www.wowhead.com/forever/item=18316) |
-| Ranged/relic | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* | [Skul's Ghastly Touch](https://www.wowhead.com/forever/item=13396) · *Skul, Stratholme* | [Skul's Ghastly Touch](https://www.wowhead.com/forever/item=13396) · *Skul, Stratholme* |
+| Slot | Pre-BiS | Raid BiS |
+|---|---|---|
+| Head | [Spellweaver's Turban](https://www.wowhead.com/forever/item=22267) · *General Drakkisath, Blackrock Spire*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Spellweaver's Turban](https://www.wowhead.com/forever/item=22267) · *General Drakkisath, Blackrock Spire*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
+| Neck | [Orb of the Darkmoon](https://www.wowhead.com/forever/item=19426) · *quest: 1200 Tickets - Orb of the Darkmoon* | [Choker of the Fire Lord](https://www.wowhead.com/forever/item=18814) · *Ragnaros, Molten Core* |
+| Shoulders | [Mantle of the Timbermaw](https://www.wowhead.com/forever/item=19050) · *Tailoring* | [Mantle of the Timbermaw](https://www.wowhead.com/forever/item=19050) · *Tailoring* |
+| Back | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411) · *sold by Pix Xizzix* | [Arcanoweave Cloak](https://www.wowhead.com/forever/item=272411) · *sold by Pix Xizzix* |
+| Chest | [Robe of the Void](https://www.wowhead.com/forever/item=14153) · *Tailoring*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) | [Robe of the Void](https://www.wowhead.com/forever/item=14153) · *Tailoring*<br>+ [Enchant Chest - Greater Stats](https://www.wowhead.com/forever/spell=19988) |
+| Wrist | [Netherpearl Cuffs](https://www.wowhead.com/forever/item=254067) · *Tailoring*<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) | [Netherpearl Cuffs](https://www.wowhead.com/forever/item=254067) · *Tailoring*<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) |
+| Hands | [Felcloth Gloves](https://www.wowhead.com/forever/item=18407) · *Tailoring* | [Felcloth Gloves](https://www.wowhead.com/forever/item=18407) · *Tailoring* |
+| Waist | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* |
+| Legs | [Leggings of Torment](https://www.wowhead.com/forever/item=22342) · *Lord Valthalak, Blackrock Spire*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Flarecore Leggings](https://www.wowhead.com/forever/item=19165) · *Tailoring*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
+| Feet | [Omnicast Boots](https://www.wowhead.com/forever/item=11822) · *Golem Lord Argelmach, Blackrock Depths*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Omnicast Boots](https://www.wowhead.com/forever/item=11822) · *Golem Lord Argelmach, Blackrock Depths*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
+| Finger | [Warden's Signet of Brilliance](https://www.wowhead.com/forever/item=275982) | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
+| Finger | [Elemental Focus Band](https://www.wowhead.com/forever/item=20682) · *Prince Skaldrenox, Silithus* | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
+| Trinket | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) · *sold by Pix Xizzix* | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) · *sold by Pix Xizzix* |
+| Trinket | [Royal Seal of Eldre'Thalas](https://www.wowhead.com/forever/item=18467) · *quest: Harnessing Shadows* | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
+| Main hand | [Sageblade](https://www.wowhead.com/forever/item=22383) · *Blacksmithing*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Sageblade](https://www.wowhead.com/forever/item=22383) · *Blacksmithing*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
+| Off hand | [Obsidian Bauble](https://www.wowhead.com/forever/item=18316) | [Obsidian Bauble](https://www.wowhead.com/forever/item=18316) |
+| Ranged/relic | [Skul's Ghastly Touch](https://www.wowhead.com/forever/item=13396) · *Skul, Stratholme* | [Skul's Ghastly Touch](https://www.wowhead.com/forever/item=13396) · *Skul, Stratholme* |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Quests and dungeons: [full raid](https://wowsims.com/forever/warlock/dps/#eJzElUFMM0UUx/tmtu30oXz7zRfDsmCyNinWJkumWxcplxZOxHggnoxoZEtb2gbapu0BbxAxGoNA4GBoSCSCQU0wxIMST3JoUi+KFw8SIoEYPBIOHNXstgWTYuKlfO+w+/a9Nzu//7yXDPYzkEEBDYIwBRkowgLAhwDbAF8A8GecLLGzw6D+1sWo7FPz6GV766D80YUSO/8EUGLb64CUXb6JXvbLKigX3ehlR2ugnHQjZbUZlNjPW4Aedp22V3nY128pq16k7G8LKVtMIGVrcyixnTW7aHlOqT9ByhbeRsquZ/2GXM8Gf1oBcZOY+Pgz+AjIUnYdyE2iCu7L0U8/h6/Au7cFB+Mr2QPYyZ3BUnaMOeAQh+9Jv2GaQghDhCOmIYQwdV2YpogIU4hIndBj0nVOLnz4BJnqQYldrYDfi26kulnmz6t9+Nj/CJ/9BhAl9sMHE5zIbqfO9qvA01Zx9p1CsaIZwhjSw0I3hke06YyVn0kltUJJs5LJVFJLvKtVMimtVKhYlWwhr5VTVmk6owXLqZRmpdOz2Wk7rJesbFJvFemNosFcuZB/SRUY5AP4OPSIeTh51aU6iGGz7IQkThLN0JAZUCUkisIjavj/rhEB1Y1UvklwSSUjrobsxn9vlw2ajuzvNuC+dKSZfm8Z2k9FRHXjlQ6dyos84LDQOzlhEUA51N0U7UEJyVDZFsi+nOSo3raZ+1UNe0LPMYl7c3b6aFJlVdL0Gi++29bisC46I2YEBR/E3lAPkzjL2ZC/10D1VUnTbeukKKvNFN99uElsxzy9wzz9b8zTGvD378EU0Y5g9rU4WmNhmAH7uOSlDeClB8NoTNv+9Wvte4Z18XLn9pS/PZZvp/2kBgr9k9ThihiL1OVYNF4lDG06qhH/X8RnB10L6XhvddO2H2MvpB37NWacEUXSYqFD4noqVom3vI7awH7H9ok6z9d346PNQHzKvmc3wflwncVClB32jP3rOhYwDHEYhwl4AzJQhHmYJ/8MAHQQov4=); Pre-BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzElU1IK1cUx3PuTDI3x1bHK8VxtDANxKaBkZtJxxo3ia6kdCFdFSzUxCRNgk1CJgu7s2hpKTZK7ca00C9LP0ArXVjpqhYssYuSRelGRKlISyk8eQs3Dx6PmST6ID54m/jO4ubknHvm/v73HLg4REEGBTQIwCxkoAiLAO8DfA7wLQB7yskSOzsG6kkXFWSvaqFE722Bct6FIl36AVCk/31sr5/UZfTQw7xy1o0S3V8D5agbBfprHkV6vgoo0d+2nTIP3X5dWZVQpJX/ZRTp71/Y5bt1GQW69hZK9M42KLU+FOnKKqBA/8z4DLmWDfxRAX6ZmP7wS/gAyHL2IyCXiSq4/5n47Gv4HqRvPoWdqUp2B77KncJydpI69BCDn8mQYZqcc4OHwqbBOTd1nZsmD3OT83CNCHXS9Tc582IfUtWDIr2ogE9CNwq6abFn1UHs9fXg0z8Cokh/eW+aEdnt7LP9KrB0vDj/RqFY1gxujOohrhtj49pcJp5/M5XUCiUtnkymklriba2cSWmlQjlezhbympWKl+YyWsBKpbR4Oj2fnbPDeimeTeqtTXpj00jOKuRfUDkG2DD2Bnuoh5GXXaqDGDItJyQykmiGRk2/KiJRFBZWQ49bw/2qGwX5MsFElYy7GrIb370qGzEd2T+tw03pcDO9tALtt8IjuvFSh27leeZ3WIRrOSHuRznY3RTtQRHJqGULpN/NMFSv2sx8qob9wWeoyKScnd6fUWmVNL3GD9tsa3FI550RM46cjeBAsJ+KjOZsyJMDUL1V0nTbOskttZlim7c3ie2Yx9eYx4/GPD4A9u4NmDzSEczBFkdrLAzTb1+XvLwOrHRrGI1p27r7SvuZIZ2/2Lkz5d26fDXtRwegCP+SGlwQ4x3B5VgkViUUbTpBI777xGsHXYvp2EB1w7bD6HNpx/6KGqdEEbVocI+4noiVYy2voza81bFzIs766mZsohmIzdqP7QY4f1yn0aBA9/onH3qTOYxBDKZgGl6DDBRhARbIgwEAn3elkg==); Raid BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzElU1IK1cUx3PuTDI3x1bHK8VxtDANxKaBkZtJxxo3ia6kdCFdFVzUxCRNgiQhScHuLE1pKVaL1oJpoaW19AMs0oWVrmpBiBRKFqUbCbVP5H1snryFmwfymMmHD+KDt4nvLG5Ozjl37u9/z4GLIxRkUEADH8xDCvKwDPAxwDcAPwKw5+wssbIToP7fQwXZrb6LEn24A8pZD4r0ch1QpPc+t9YvazK66FFWOe1FiR58BspxLwr0zyyK9GwNUKL1TXubRL+4KytrEor0r01or3s1GUVa3rAq7/8CSnUARbqyBijQf1IeQ66mfX+vAr+IzX76LXwCpJxeB3IRq4Dz9tTX38PPIP3wFezOrKZ34bvMCZTT09Tmhwj8TkYM0+ScGzwQNA3Ouanr3DR5kJucB6tEqJGeW+TUjQNIVReK9HwVPBI6UdDNIntRHcZ+Tx8+/ysgivSPj2YZkZ12neVXgCWj+cW3c/mSZnBjXA9w3ZiY1BZS0ew7ibiWK2jReDwR12LvaaVUQivkStFSOpfVioloYSGl+YqJhBZNJhfTC1ZYL0TTcb1VpDeKxjLFXPYVlaOPjWK/v4+6GHndodqIAbNoh0RGYs3QuOlVRSSKwoJq4Gn3cK/qREG+iDFRJZOOhuzGd9vbxkxb9m8bcF062Ex/sAKdt8JDuvFal27lZea1WYQrOQHuRdnf2xTtQhHJeNESSH+aY6i228w8qoaD/heoyKSMlT6YU2mFNL3GD9vuaHFA590RM4mcjeGQf5CKjGYsyP8OQXVXSNPt6CQvqs0U2765SezErF9h1p+MWT8E9uE1mDzUFczhFkdrLAzTa12XXN4AVrgxjMa07Tx4o/PMgM5f7d6Z8l5Nbk/78SEowh1ShXNivC84bAtFKoSiRSdoxHNJ3FbQsZyMDFW2LDsKv5S07d+wcUIUUQv794njmVgp0vK6aqM7XTsnZK9vbkemmoHIvPXcboH9x3ES9gt0f3D6sVeZwwREYAZm4S1IQR6WYIk8GgDBFaZg).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/warlock/dps/#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); Raid BiS: [full raid](https://wowsims.com/forever/warlock/dps/#eJzMWG9sU9f59nvu9fXx68QxLzSYQ/lxcSkNFxyurzHiTykJ/36M0S5qaZkaBDixkxiCb2Q7A/aJITpNHQUJxgQMqSyja0oFQ9nGgE9jnyiTJobWTaVMQmEVUzVpqJP6IdO66R7/J04CZFV3P1z5vuc8533Oc8553pPg0xwCEAQdmmAH9EAf7Af4HsAZgEEAqpOtzGldCuKN+VwJeEU/evg/z0PwEx+q/IujgCr/9AfO+0c3A6jxD9LBe3708H/8uiH4sR9Vfv+I0/jJEUAP//NxidP4ha3BIx5U+W+PQ+l96WYAVX7wmNPx7xcgeH0qqvzQEUCF/6EnZAWup5p+dxjMzzva3hqAN4EdTB0F9nnHKXDfb337HTgHnndPw8UNh1MX4Sc778LB1Gou+UMLXGUhK7bYNE3LjERj8hUJm2bMtMyoaUbCZsw0I9eZcpP5htm/5+EK9AoPupu8/K32UPMQW8AVmjXEBAfCU6zYIvBc+TdHDdWw2bwM/ah8Bq6QB92ohCNZmifmDsMcnP1KKt3dm1z0Yn9vLqVvjme6kzl9TX8mm9Q32d2pTjJFMwYMPwdShsEl3KggRIZhBk7PI4uYtfbmAkIVbLmLVooV2EwLMWg0cjexjS7hH9F86F1r27v1XKpzlxzVXTmq8KLCP1aJBRgtEuHRHYYhiI1VTMtZ3wVxFvAEiOOAviHgqPLjhyAI+AbQAcDZI9rTKL62uy9jfyuZ0F/piSfsPfpquzenfz1t70mj94aqocr332srwvffawsC/r9Yhw23tTpU+YHvA7GAOwhoGSZXqP4qYDksJliK4g/aS73xvt7tdl9Ot0xrSTgSCVvmcr2zJ57uTiZ0O6PHE4lkQu/Yp+d6knrGzsVzKTutZ5PxTGeP3pRNJvV4V1dvqtMJh/dk4p27wpl4KhEudg3nuzbvzNrp+YILDdXApZsBeh/EIOBpECcBG6j+f1ynPpHGbWLr6N2HK2gZzjPmcoVmjGiNOK11t92fzul2l+7srqzem+zKFfs2hOrRZ5V3VtXHMPjQu8a2exP2nnSWYiKKzxnPcvdEx8rZzhy1JoV/9xBIWBPNwylGA1eIdbicU4pK1HxWhvK7X4aWmFmnrUnj77XTfRB/gQNwF1BrAv7RhTbxIYhbgAvJkKdGI98NhZca5Xws9N/WfKjwE+3OZIKAz9PyiXtfK/YufOelCAImqGMc9FMjGmFgda9tJ/T1/Zl9+svJeGIfFs9m9aLMMKZzlXw7y+o6+w5ZJEY+4S1NO6gY2yd2Hb+oQ0/IjcptxfUpuGihMDBEuvwuNHDXaIPYqCILeI2/qWPaRI/owq30OvpCXvRYbskVDdGEdSFEPgCFiKOJUtO16kM+9Fr52VxrlxSUCgoxZ9L8wWGQBmhSc3WmCdHFJvqGeBHX0RpsFNMqEaWRpAi3uAsdqaQs7jc54+roMfOiUJt4CddQaxWFE+04zaCCP+NRTykqQkFsHNGm4pRUWo/t0zOONzkHLLq5sJIn2mkAxNuAPwQ6BpUj+kN1iFe18vdDBJ2KMtaspoVo9ARwMVmPz7Mw7bjYjlvo1QILXmIxS8zM61c75VwRqppEzfQyBTNOsrGLoXNWnqE5tRY+P1z+jFilbeOo80iAYpMslc7ZqEScaMcGo76AkCouK6/bTtEjz4BcKMs59Sq/dgzwKWNqAeE76imHq1zdMRFpqfnScecMFAO/qfCPEtj4SKs02CsgLgG+DzQI2CJewAU0H4UR5Eq1b0ivjMSy1cY9yskToqOgS3nlIvgSbUIa0RqwfotTGfW1di6rv9qHS8RinDKi+bGudXef3tptp/c54XzB2xJP5VLpbn2Nnc1l9fUZ+9vJtL4hGc/kHL0D/zrdQD8HcRHwHaCBiblHzYm4FwtbNfcNtL4md2dT1OCer37V3NvsXMpOS9ZXBhtoCMTPAM8C/RhwlViJBjVJp36ItdyFS78y0uv6M8ldcYc0P//ZJvoViF8Avgf00//GNukQO2qw3kQba7JeLKxarGeNaAKD1azLhVEyv3MGaJdI4TbaKkvkWIwtKzua5Hx6DskIOPeH1+XdAtXIUtMc7wJhPVVRl4gf9eQrg7W89oWIQkNsNldpyhDzc1a2klhWlLELxrv7Uf0NteIiZ+2q4br0Gm2WamsVakele6vkuaE5jukummxV1FszygtRa+HoiwgFqRG9A1AQv3g1vXMGrNceWlZySmm95StaoCN58TN/OcJnxBz0W3VF5yrvpVtqyc6svuptQTto28PjSBvOk3pwGPAF43mu0swhFuSMvAOeQlx4zxW7CNkIVCos1wp/t0WaY1mrGf3ljM7+o6eH2AwOVDFABdL6ExvPzegyE79kOMuYWbjeTB3RAg9nkCd6qjGFa7JLnrTjgbjICHOF/m+IzeRsTHglwLlfzjFmF0aaPsSmcYXkilqV3VYaKx5h3DHhY2eJTi5LJdz6PavttZPQ9MrgY2p6ZXC82ZZEuTL4JLO1Hi1LdHJZKuE1NM2XgifX1Ckgj6WpBEysqez25JpOkCU6uSyVcOtDNnahmoSujsM+lq4O4BF0dbpNQtfxs0Qnl6US/ld2HR6wxHcUl3yWtZxiiBw1nbXABj30BfM6Ydf+rpYZp046zwer5nTJ54+rrLssqOqrjMvM9ZU8uZbiry/1mXf+S8uzTL5fPtvSWgi07HD+JXwS5Ifr7ipD4Zenr674z7EJS6EFNkAbfBN6oA/2wl72nwEAjQEXnw==).
 
-## Other builds of this spec
+**Points that do nothing for this spec:** **Demonic Aegis** (2) only counts toward the points the tree needs before **Demonic Sacrifice**.
 
-- [Affliction — DoT / Malevolence / Nightfall](../research/raid/builds/affliction-dot-raid.md) (30/0/21, 815 DPS in a full raid) — [open the talent tree](https://talentsforever.com/warlock/60/2550002013520005--0550035003-12)
+## Builds that play as a hybrid
+
+- Shadow Bolt hybrid — SM/Ruin with Affliction's dots (30/0/21): 30+ points in Affliction, but it plays as the [Shadow Bolt hybrid](shadow-bolt-hybrid.md); it is ranked there
+- Shadow Bolt hybrid (optimized) (30/0/21): 30+ points in Affliction, but it plays as the [Shadow Bolt hybrid](shadow-bolt-hybrid.md); it is ranked there
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-19 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 2e6e77d (client 1.60.1.70938)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-20 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 2e6e77d (client 1.60.1.70938)). Simulations, not in-game measurements. Spell ranks: trainer ranks only. The class books' ranks (Grimoire of Shadow Bolt X, Tome of Frostbolt XI and the like) are not in Forever on the evidence there is (2026-11-20): in Classic every one drops in the Ruins of Ahn'Qiraj, which Forever's roadmap does not have; Wowhead's Forever pages list no source for them; the simulator's own authors leave them off by default. Checked again when the raids of 2026-12-09 open. Do not hand-edit.*
 

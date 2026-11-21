@@ -59,18 +59,19 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonew
 
 ## Rank among our builds and the community simulator's
 
-**2 of 8** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 9** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *MM* | community simulator | - | 476 | +0.0% | 982 | -0.6% | 43 s |
-| 2 | **[`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md)** | ours: optimizer | 7/41/3 | 468 | -1.8% | 917 | -7.1% | 25 s |
-| 3 | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) | ours: hand draft | 5/41/5 | 465 | -2.3% | 987 | +0.0% | 48 s |
-| 4 | *SV* | community simulator | - | 416 | -12.7% | 836 | -15.4% | 46 s |
-| 5 | *SV Weave* | community simulator | - | 415 | -12.9% | 799 | -19.1% | 38 s |
-| 6 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 385 | -19.1% | 824 | -16.5% | 50 s |
-| 7 | *BM* | community simulator | - | 335 | -29.6% | 676 | -31.5% | 31 s |
-| 8 | *SV Melee* | community simulator | - | 289 | -39.4% | 608 | -38.4% | 46 s |
+| 1 | [`marksmanship-lone-wolf-sim-raid`](marksmanship-lone-wolf-sim-raid.md) | ours: derived (simulator preset) | 5/41/5 | 479 | +0.0% | 990 | -0.6% | 89 s |
+| 2 | *MM* | community simulator | - | 479 | +0.0% | 990 | -0.6% | 89 s |
+| 3 | **[`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md)** | ours: optimizer | 7/41/3 | 473 | -1.3% | 936 | -6.0% | 78 s |
+| 4 | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) | ours: hand draft | 5/41/5 | 472 | -1.4% | 996 | +0.0% | 93 s |
+| 5 | *SV* | community simulator | - | 424 | -11.4% | 843 | -15.4% | 83 s |
+| 6 | *SV Weave* | community simulator | - | 424 | -11.5% | 820 | -17.7% | 77 s |
+| 7 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 387 | -19.1% | 826 | -17.1% | 96 s |
+| 8 | *BM* | community simulator | - | 345 | -28.0% | 659 | -33.9% | 77 s |
+| 9 | *SV Melee* | community simulator | - | 302 | -36.9% | 596 | -40.2% | 86 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -100,26 +101,32 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonew
   13. insert at the end: cast Major Mana Potion (+0.6%, pass 13)
   14. threshold 1 -> 2: if time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.5%, pass 13)
 
-Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
+Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Hawk (rank 6); at -19s: move to “Pull range” yd; if “Use Sniper Shot”: cast Sniper Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | use every other cooldown when ready | as ready |
-| 2 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
-| 3 | cast Arcane Shot | 8.7 |
-| 4 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Aimed Shot | 4.9 |
-| 5 | if time left on Serpent Sting < 2s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.7 |
+| 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready |
+| 2 | if not Hunter's Mark is up: cast Hunter's Mark | 0.7 |
+| 3 | if not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 2.3 |
+| 4 | if “Use Summon Hawk” and “Use Arcane Shot” and the sequence is complete: reset sequence 'HHA' | as ready |
+| 5 | if “Use Summon Hawk” and “Use Arcane Shot”: sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot | 7.4 |
+| 6 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 7.4 |
+| 7 | if “Use Aimed Shot”: cast Aimed Shot | 3.9 |
+| 8 | if “Use Sniper Shot”: cast Sniper Shot | 2.0 |
+| 9 | if unitDistance ≠ “Shoot spot” and not spellInRange and (“Windup close” or “Just shot”): move to “Shoot spot” yd | as ready |
+| 10 | if unitDistance ≠ “Shoot spot”: wait inputDelay | as ready |
 
-Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent).
+Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Multi-Shot (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) |
 |---|---|
-| Auto Shot | 44% |
-| Arcane Shot | 24% |
-| Serpent Sting | 17% |
-| Aimed Shot | 14% |
+| Auto Shot | 45% |
+| Arcane Shot | 21% |
+| Serpent Sting | 14% |
+| Aimed Shot | 13% |
+| Sniper Shot | 7% |
 
 ## Notes
 

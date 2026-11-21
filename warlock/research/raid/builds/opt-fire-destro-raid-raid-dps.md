@@ -59,14 +59,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-des
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`shadow-bolt-hybrid-fire-open-raid`](shadow-bolt-hybrid-fire-open-raid.md) | ours: derived (open search) | 9/11/31 | 700 | +0.0% | 785 | +0.0% | 1 s |
-| 2 | **[`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md)** | ours: optimizer | 20/11/20 | 660 | -5.6% | 739 | -5.8% | 1 s |
-| 3 | [`destruction-fire-raid`](destruction-fire-raid.md) | ours: hand draft | 22/11/18 | 653 | -6.6% | 731 | -6.8% | 1 s |
-| 4 | *SM/Ruin* | community simulator | - | 647 | -7.5% | 721 | -8.2% | 1 s |
-| 5 | *Destro* | community simulator | - | 636 | -9.0% | 703 | -10.5% | 1 s |
-| 6 | *Aff (Wrack)* | community simulator | - | 600 | -14.2% | 658 | -16.2% | 1 s |
-| 7 | *Demo (Shadow Brand)* | community simulator | - | 568 | -18.7% | 639 | -18.6% | 1 s |
-| 8 | *Demo (Fire Brand)* | community simulator | - | 556 | -20.6% | 615 | -21.7% | 1 s |
+| 1 | [`shadow-bolt-hybrid-fire-open-raid`](shadow-bolt-hybrid-fire-open-raid.md) | ours: derived (open search) | 9/11/31 | 689 | +0.0% | 790 | +0.0% | 1 s |
+| 2 | **[`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md)** | ours: optimizer | 20/11/20 | 649 | -5.8% | 743 | -6.0% | 1 s |
+| 3 | [`destruction-fire-raid`](destruction-fire-raid.md) | ours: hand draft | 22/11/18 | 645 | -6.4% | 727 | -8.0% | 1 s |
+| 4 | *SM/Ruin* | community simulator | - | 637 | -7.6% | 722 | -8.7% | 1 s |
+| 5 | *Destro* | community simulator | - | 629 | -8.8% | 735 | -6.9% | 1 s |
+| 6 | *Aff (Wrack)* | community simulator | - | 589 | -14.5% | 653 | -17.3% | 1 s |
+| 7 | *Demo (Shadow Brand)* | community simulator | - | 560 | -18.7% | 644 | -18.5% | 1 s |
+| 8 | *Demo (Fire Brand)* | community simulator | - | 547 | -20.6% | 618 | -21.8% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -86,7 +86,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-des
   13. drop: if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion (+0.2%, pass 5)
   14. only with 20s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.2%, pass 5)
   15. only with 10s or more of the fight left: if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony (+0.2%, pass 5)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 13 passes, the last 2026-11-17, 12 changes to the base rotation; third-seed check: shadow-bolt-hybrid-open-raid 721 -> 801 DPS (+11.1%), sim preset: SM/Ruin 749 -> 738 DPS (-1.5%), destruction-fire-raid 762 -> 748 DPS (-1.8%), opt-fire-destro-raid-raid-dps 772 -> 755 DPS (-2.2%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 14 passes, the last 2026-11-20, 13 changes to the base rotation; third-seed check: shadow-bolt-hybrid-fire-open-raid 694 -> 791 DPS (+14.0%), sim preset: SM/Ruin 722 -> 722 DPS (+0.0%), destruction-fire-raid 726 -> 726 DPS (+0.0%), opt-fire-destro-raid-raid-dps 743 -> 743 DPS (+0.0%)):
   1. drop: cast Shadowburn (+0.8%, pass 1)
   2. threshold 10% -> 5%: if mana % < 10%: cast Life Tap (+0.4%, pass 1)
   3. move down below 'if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony': if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 1)
@@ -99,28 +99,32 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-des
   10. only with 10s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption + move down below 'if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption': if not Curse of the Elements is up: cast Curse of the Elements (+0.2%, pass 7)
   11. drop: if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion (+0.3%, pass 8)
   12. insert before the filler: cast Weakness Analyzer (+0.4%, pass 10)
+  13. insert at the top: cast Conflagrate (+7.0%, pass 14)
 
 Before the pull: at -1.5s: cast Life Tap.
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
-| 2 | use every other cooldown when ready | as ready |
-| 3 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
-| 4 | if time left on Bane of Agony ≤ cast time of Bane of Agony and time left in the fight ≥ 10s: cast Bane of Agony | 2.6 |
-| 5 | if mana % < 10%: cast Life Tap | 6.4 |
-| 6 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
-| 7 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
+| 1 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 20s: cast Corruption (rank 6) | 3.3 |
+| 2 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
+| 3 | use every other cooldown when ready | as ready |
+| 4 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
+| 5 | if time left on Bane of Agony ≤ cast time of Bane of Agony and time left in the fight ≥ 10s: cast Bane of Agony | 2.6 |
+| 6 | if mana % < 10%: cast Life Tap | 6.0 |
+| 7 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
+| 8 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate (rank 7) | 3.5 |
+| 9 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
+| 10 | cast Shadow Bolt | 14.9 |
 
-Lines of the simulator's rotation these builds never cast: cast Corruption (rank 6), cast Immolate (rank 7), cast Eureka!, cast Shadow Bolt (its condition never held in these fights); cast Shadowburn (needs the Shadowburn talent); cast Conflagrate (needs the Conflagrate talent).
+Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Conflagrate (needs the Conflagrate talent); cast Eureka! (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md) |
 |---|---|
-| Shadow Bolt | 53% |
-| Corruption | 18% |
-| Bane of Agony | 16% |
+| Shadow Bolt | 54% |
+| Corruption | 17% |
+| Bane of Agony | 17% |
 | Immolate | 11% |
 | Demonic Rune | 2% |
 | Searing Pain | 0% |

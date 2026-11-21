@@ -1,5 +1,7 @@
 # Mage
 
+> **2026-11-20:** the raid pages were updated after the play check (what each build presses, checked build by build). The rankings and picks on this page update with the leveling pages on Sunday 2026-11-22; until then the raid pages are newer.
+
 > Classic: Frost for Molten Core and Blackwing Lair, Fire once fire immunity stops mattering, one Winter's Chill mage per raid.
 > Forever adds Ice Lance, Fingers of Frost and a 3-rank Shatter to Frost, Heating Up to Fire, Arcane Blast, Missile Barrage and Arcane
 > Wrath to Arcane, and the new Frostfire Bolt; Improved Scorch becomes a personal debuff and Winter's Chill (client 70753) a stacking

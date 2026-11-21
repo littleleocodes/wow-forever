@@ -56,14 +56,34 @@
  "priorityList": [
   {
    "action": {
-    "autocastOtherCooldowns": {}
+    "groupReference": {
+     "groupName": "Single/Multi Target Curse Logic"
+    }
    }
   },
   {
    "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpEq",
+      "lhs": {
+       "numberTargets": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "1"
+       }
+      }
+     }
+    },
     "groupReference": {
-     "groupName": "Single/Multi Target Curse Logic"
+     "groupName": "Single Target DoT Logic"
     }
+   }
+  },
+  {
+   "action": {
+    "autocastOtherCooldowns": {}
    }
   },
   {
@@ -107,26 +127,6 @@
      "target": {
       "type": "Target"
      }
-    }
-   }
-  },
-  {
-   "action": {
-    "condition": {
-     "cmp": {
-      "op": "OpEq",
-      "lhs": {
-       "numberTargets": {}
-      },
-      "rhs": {
-       "const": {
-        "val": "1"
-       }
-      }
-     }
-    },
-    "groupReference": {
-     "groupName": "Single Target DoT Logic"
     }
    }
   },
@@ -252,6 +252,16 @@
      }
     }
    }
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "itemId": 272438
+     }
+    }
+   },
+   "notes": "apl_opt 2026-11-20: changed or added by the rotation search (see affliction-wrack-raid-rotation-search.json)"
   },
   {
    "action": {

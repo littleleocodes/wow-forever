@@ -253,14 +253,14 @@
  },
  "warlock/demonology-raid": {
   "rc": 0,
-  "minutes": 49.7,
-  "date": "2026-10-01",
+  "minutes": 73.2,
+  "date": "2026-11-20",
   "tail": [
-   "  round 4: no single edit ahead; 1356 two-edit candidates, 6 ahead on seed 1",
-   "  round 4: 459 candidates, 6 ahead on seed 1, none confirmed on seed 2 (best +0.11%)",
-   "  raid   ml: Demonology                                  827.2 ->    832.1 DPS (+0.59%)",
-   "  raid   demonology-pact-raid                            823.7 ->    831.4 DPS (+0.94%)",
-   "  raid   sim preset: Demonic Pact 2/31/18                795.2 ->    801.5 DPS (+0.79%)",
+   "  round 2: 460 candidates, 1 ahead on seed 1, none confirmed on seed 2 (best +0.03%)",
+   "  raid   ml: Demonology                                  908.1 ->    909.9 DPS (+0.19%)",
+   "  raid   demonology-ml-raid                              908.3 ->    910.0 DPS (+0.19%)",
+   "  raid   sim preset: Demo (Shadow Brand)                 908.3 ->    910.0 DPS (+0.19%)",
+   "  raid   demonology-pact-raid                            899.8 ->    902.2 DPS (+0.27%)",
    "  wrote _reference\\data\\raidsim\\apls\\warlock\\demonology-raid-raid.apl.json and warlock\\research\\raid\\raidsim\\demonology-raid-rotation-search.json"
   ],
   "stderr": ""
@@ -304,6 +304,20 @@
    "  raid   fury-dw-raid                                    681.9 ->    706.7 DPS (+3.64%)",
    "  raid   sim preset: DPS                                 661.4 ->    683.0 DPS (+3.26%)",
    "  wrote _reference\\data\\raidsim\\apls\\warrior\\fury-dw-raid-raid.apl.json and warrior\\research\\raid\\raidsim\\fury-dw-raid-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "warlock/affliction-wrack-raid": {
+  "rc": 0,
+  "minutes": 26.4,
+  "date": "2026-11-20",
+  "tail": [
+   "== warlock affliction-wrack-raid: 13 actions from affliction-wrack-raid-raid.apl.json, 45 pool actions (4 cooldowns, 41 spellbook spells), tuned on ml: Affliction; protected: affliction-wrack-raid (raid)",
+   "  signature spells kept (Affliction): Bane of Agony, Corruption",
+   "  round 1: 423 candidates, none ahead on seed 1 (best +0.01%: drop: if mana % < 30% and time left in the fight > 60s: cast Life Tap)",
+   "  raid   ml: Affliction                                  942.9 ->    942.9 DPS (+0.00%)",
+   "  raid   affliction-wrack-raid                           940.1 ->    940.1 DPS (+0.00%)",
+   "  wrote _reference\\data\\raidsim\\apls\\warlock\\affliction-wrack-raid-raid.apl.json and warlock\\research\\raid\\raidsim\\affliction-wrack-raid-rotation-search.json"
   ],
   "stderr": ""
  }

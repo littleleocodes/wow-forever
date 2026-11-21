@@ -7,7 +7,8 @@
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
   "commit": "2e6e77d84",
   "racials": "off",
-  "pet_normalize": false,
+  "pet_normalize": true,
+  "patch_hash": "125d59c4f975f5df",
   "simulator": "wowsims/forever",
   "client": "1.60.1.70938",
   "gear_raid": "ui/specs/warrior/protection/gear_sets/prebis.gear.json",
@@ -86,27 +87,27 @@
     "max60": 451.4976645115729
    },
    "raid_spell_casts": {
-    "2565": 35.704,
-    "11597": 44.563,
-    "11601": 32.290333333333336,
-    "23925": 27.018,
-    "11574": 9.755333333333333,
-    "11567": 56.07,
     "2687": 3.0,
-    "871": 1.0
+    "11597": 44.563,
+    "11567": 56.07,
+    "871": 1.0,
+    "11574": 9.755333333333333,
+    "11601": 32.290333333333336,
+    "2565": 35.704,
+    "23925": 27.018
    },
    "raid_casts": {
     "OtherActionRageGain": 138.269,
-    "Shield Block": 35.704,
-    "Sunder Armor": 44.563,
-    "Revenge": 32.290333333333336,
-    "Auto Attack": 22.424666666666667,
-    "Shield Slam": 27.018,
-    "Rend": 9.755333333333333,
-    "Heroic Strike": 56.07,
     "Bloodrage": 3.0,
+    "Sunder Armor": 44.563,
+    "Heroic Strike": 56.07,
+    "Shield Wall": 1.0,
+    "Auto Attack": 22.424666666666667,
+    "Rend": 9.755333333333333,
+    "Revenge": 32.290333333333336,
+    "Shield Block": 35.704,
     "item 272440": 1.0,
-    "Shield Wall": 1.0
+    "Shield Slam": 27.018
    },
    "raid_shares": {
     "Heroic Strike": 0.2772,
@@ -117,7 +118,8 @@
     "Rend": 0.0421,
     "Retribution Aura": 0.01,
     "Thorns": 0.0089
-   }
+   },
+   "raid_fp": "fc04afd64a74b359"
   },
   {
    "label": "opt-prot-tank-raid-tank",
@@ -131,27 +133,27 @@
     "max60": 454.070948582303
    },
    "raid_spell_casts": {
-    "11574": 9.769,
+    "871": 1.0,
     "23925": 26.890333333333334,
-    "11597": 44.370666666666665,
-    "2687": 3.0,
-    "11567": 58.279333333333334,
-    "2565": 35.646,
     "11601": 32.531333333333336,
-    "871": 1.0
+    "2687": 3.0,
+    "11597": 44.370666666666665,
+    "2565": 35.646,
+    "11567": 58.279333333333334,
+    "11574": 9.769
    },
    "raid_casts": {
-    "Rend": 9.769,
+    "Shield Wall": 1.0,
     "Shield Slam": 26.890333333333334,
-    "Sunder Armor": 44.370666666666665,
-    "Auto Attack": 20.227,
-    "Bloodrage": 3.0,
-    "Heroic Strike": 58.279333333333334,
-    "OtherActionRageGain": 102.05266666666667,
-    "Shield Block": 35.646,
-    "item 272440": 1.0,
     "Revenge": 32.531333333333336,
-    "Shield Wall": 1.0
+    "Bloodrage": 3.0,
+    "Sunder Armor": 44.370666666666665,
+    "item 272440": 1.0,
+    "Shield Block": 35.646,
+    "Auto Attack": 20.227,
+    "Heroic Strike": 58.279333333333334,
+    "Rend": 9.769,
+    "OtherActionRageGain": 102.05266666666667
    },
    "raid_shares": {
     "Heroic Strike": 0.2861,
@@ -162,7 +164,8 @@
     "Rend": 0.0416,
     "Retribution Aura": 0.0099,
     "Thorns": 0.0089
-   }
+   },
+   "raid_fp": "309062a3a5febfc2"
   },
   {
    "label": "protection-ml-tank",
@@ -176,29 +179,29 @@
     "max60": 466.63525465036105
    },
    "raid_spell_casts": {
-    "23925": 26.770333333333333,
-    "11597": 44.550333333333334,
     "11567": 56.56366666666667,
-    "11601": 32.478,
-    "2687": 3.0,
-    "2565": 35.635666666666665,
     "871": 1.0,
+    "2687": 3.0,
+    "11601": 32.478,
+    "412609": 24.275333333333332,
+    "23925": 26.770333333333333,
     "11574": 9.749666666666666,
-    "412609": 24.275333333333332
+    "11597": 44.550333333333334,
+    "2565": 35.635666666666665
    },
    "raid_casts": {
-    "Shield Slam": 26.770333333333333,
-    "Sunder Armor": 44.550333333333334,
     "Heroic Strike": 56.56366666666667,
-    "Revenge": 32.478,
-    "OtherActionRageGain": 102.73633333333333,
-    "Bloodrage": 3.0,
-    "Shield Block": 35.635666666666665,
-    "Auto Attack": 21.938666666666666,
-    "item 272440": 1.0,
     "Shield Wall": 1.0,
+    "Bloodrage": 3.0,
+    "Revenge": 32.478,
+    "Deep Wound": 24.275333333333332,
+    "OtherActionRageGain": 102.73633333333333,
+    "Shield Slam": 26.770333333333333,
     "Rend": 9.749666666666666,
-    "Deep Wound": 24.275333333333332
+    "Sunder Armor": 44.550333333333334,
+    "item 272440": 1.0,
+    "Shield Block": 35.635666666666665,
+    "Auto Attack": 21.938666666666666
    },
    "raid_shares": {
     "Heroic Strike": 0.2724,
@@ -210,7 +213,8 @@
     "Deep Wound": 0.0198,
     "Retribution Aura": 0.0096,
     "Thorns": 0.0087
-   }
+   },
+   "raid_fp": "61c2a6c91298a466"
   },
   {
    "label": "sim preset: Protection",
@@ -224,29 +228,29 @@
     "max60": 469.73308675138986
    },
    "raid_spell_casts": {
-    "871": 1.0,
-    "11597": 43.575,
     "2565": 35.52633333333333,
-    "23925": 26.395333333333333,
     "12975": 1.0,
-    "11601": 32.468,
     "11574": 9.8,
+    "11597": 43.575,
+    "2687": 3.0,
+    "23925": 26.395333333333333,
+    "871": 1.0,
     "11567": 46.35633333333333,
-    "2687": 3.0
+    "11601": 32.468
    },
    "raid_casts": {
-    "Shield Wall": 1.0,
-    "Auto Attack": 32.117666666666665,
-    "Sunder Armor": 43.575,
-    "Shield Block": 35.52633333333333,
     "OtherActionRageGain": 119.20466666666667,
-    "item 272440": 1.0,
-    "Shield Slam": 26.395333333333333,
+    "Shield Block": 35.52633333333333,
     "Last Stand": 1.0,
-    "Revenge": 32.468,
     "Rend": 9.8,
+    "Sunder Armor": 43.575,
+    "item 272440": 1.0,
+    "Bloodrage": 3.0,
+    "Auto Attack": 32.117666666666665,
+    "Shield Slam": 26.395333333333333,
+    "Shield Wall": 1.0,
     "Heroic Strike": 46.35633333333333,
-    "Bloodrage": 3.0
+    "Revenge": 32.468
    },
    "raid_shares": {
     "Revenge": 0.26,
@@ -257,7 +261,8 @@
     "Rend": 0.0428,
     "Retribution Aura": 0.0096,
     "Thorns": 0.0086
-   }
+   },
+   "raid_fp": "a86c202a28c81579"
   }
  ]
 }

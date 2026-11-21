@@ -14,32 +14,9 @@
      "val": "-1.0s"
     }
    }
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 5217
-     }
-    }
-   },
-   "doAtValue": {
-    "const": {
-     "val": "-3.5s"
-    }
-   }
   }
  ],
  "priorityList": [
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 5217
-     }
-    }
-   }
-  },
   {
    "action": {
     "condition": {

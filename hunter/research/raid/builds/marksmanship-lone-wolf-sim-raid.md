@@ -1,0 +1,137 @@
+# Marksmanship — Lone Wolf (the simulator's own build) — 5/41/5
+
+*[Hunter](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
+
+| | |
+|---|---|
+| **Build** | 5/41/5 (Beast Mastery / Marksmanship / Survival) |
+| **Role** | DPS — Raid |
+| **Status** | Draft |
+| **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+
+## Summary
+
+The official wowsims/forever simulator's own Marksmanship build (MM, 5/41/5), played without a pet (Lone Wolf) in the mm-lonewolf-raid entry on the simulator's own turret rotation: 963.6 / 963.6 in a full raid against our Lone Wolf build's 962.8 / 963.3 (2026-11-20, 10,000 fights, seeds 1 / 2): a tie.
+
+## Point allocation
+
+### Beast Mastery (5)
+
+| Talent | Pts | vs Classic | Effect at this rank |
+|---|---|---|---|
+| **Deadly Aspects** | 5/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec. |
+
+### Marksmanship (41)
+
+| Talent | Pts | vs Classic | Effect at this rank |
+|---|---|---|---|
+| **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
+| **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
+| **Efficiency** | 4/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 12%. |
+| **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
+| **Rapid Killing** | 2/2 | **NEW** | Reduces the cooldown on your Rapid Fire ability by 2 min. In addition, when you kill a non-trivial enemy or it dies while afflicted by your Serpent Sting, you gain Rapid Killing, increasing the damage of your next Shot ability within 20 sec by 20%. |
+| **Improved Arcane Shot** | 5/5 | changed | Reduces the cooldown of your Arcane Shot by 1.5 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot. |
+| **Lone Wolf** | 1/1 | **NEW** | You deal 20% increased damage with all attacks while you do not have an active pet. |
+| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party or raid members within 45 yds by 20. |
+| **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
+| **Rapid Recuperation** | 2/2 | **NEW** | Afflicting a target with Serpent Sting allows 50% of your Mana Regeneration to continue while casting for 15 sec, increased to 100% when Rapid Killing is consumed. |
+| **Barrage** | 2/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 10%. |
+| **Ranged Weapon Specialization** | 5/5 | unchanged | Increases the damage you deal with ranged weapons by 5%. |
+| **Sniper Shot** | 1/1 | **NEW** | A long-range shot that deals ranged damage plus 160 and increases the range of your next 3 Shots by 10 yards for 10 sec. |
+
+### Survival (5)
+
+| Talent | Pts | vs Classic | Effect at this rank |
+|---|---|---|---|
+| **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
+
+## Core talents (priority order)
+
+1. **Sniper Shot** — A long-range shot that deals ranged damage plus 160 and increases the range of your next 3 Shots by 10 yards for 10 sec
+2. **Ranged Weapon Specialization** — Increases the damage you deal with ranged weapons by 5%
+3. **Rapid Recuperation** — Afflicting a target with Serpent Sting allows 50% of your Mana Regeneration to continue while casting for 15 sec, increased to 100% when Rapid Killing is consumed
+4. **Barrage** — Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 15%
+5. **Trueshot Aura** — Increases the Ranged Attack Power of party or raid members within 45 yds by 20
+
+## Rank among our builds and the community simulator's
+
+**1 of 9** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+
+| Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
+|---|---|---|---|---|---|---|---|---|
+| 1 | **[`marksmanship-lone-wolf-sim-raid`](marksmanship-lone-wolf-sim-raid.md)** | ours: derived (simulator preset) | 5/41/5 | 479 | +0.0% | 990 | -0.6% | 89 s |
+| 2 | *MM* | community simulator | - | 479 | +0.0% | 990 | -0.6% | 89 s |
+| 3 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 7/41/3 | 473 | -1.3% | 936 | -6.0% | 78 s |
+| 4 | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) | ours: hand draft | 5/41/5 | 472 | -1.4% | 996 | +0.0% | 93 s |
+| 5 | *SV* | community simulator | - | 424 | -11.4% | 843 | -15.4% | 83 s |
+| 6 | *SV Weave* | community simulator | - | 424 | -11.5% | 820 | -17.7% | 77 s |
+| 7 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 387 | -19.1% | 826 | -17.1% | 96 s |
+| 8 | *BM* | community simulator | - | 345 | -28.0% | 659 | -33.9% | 77 s |
+| 9 | *SV Melee* | community simulator | - | 302 | -36.9% | 596 | -40.2% | 86 s |
+
+## Rotation (community simulator, training dummy)
+
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 9 passes, the last 2026-10-07, 9 changes to the base rotation; third-seed check: open winner 396 -> 444 DPS (+12.2%), opt-mm-lonewolf-raid-raid-dps 422 -> 463 DPS (+9.5%), sim preset: Beast Mastery 35/16/0 298 -> 381 DPS (+27.8%), mm-lone-wolf-raid 405 -> 457 DPS (+12.8%), marksmanship-ml-raid 403 -> 444 DPS (+10.3%)):
+  1. drop: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+3.3%, pass 1)
+  2. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+2.4%, pass 1)
+  3. threshold 1s -> 0.5s: if time to the next auto attack > 1s: cast Aimed Shot (+0.7%, pass 1)
+  4. threshold 1s -> 2s: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting (+0.2%, pass 1)
+  5. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.5%, pass 2)
+  6. spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+5.5%, pass 4)
+  7. move down below 'cast Arcane Shot': if time to the next auto attack > 0.5s: cast Aimed Shot (+0.4%, pass 6)
+  8. only with 10s or more of the fight left: if auraIsInactive: cast Summon Hawk (+0.2%, pass 6)
+  9. drop: if time to the next auto attack > 0.5s: cast Multi-Shot + only above 10% mana: if time to the next auto attack > 0.5s: cast Aimed Shot (+0.2%, pass 7)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 18 passes, the last 2026-11-10, 14 changes to the base rotation; third-seed check: mm-lone-wolf-raid 870 -> 965 DPS (+10.8%), sim preset: MM 866 -> 958 DPS (+10.6%), opt-mm-lonewolf-raid-raid-dps 858 -> 896 DPS (+4.5%), marksmanship-ml-raid 699 -> 752 DPS (+7.6%)):
+  1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.7%, pass 1)
+  2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.5%, pass 1)
+  3. drop 'time to the next auto attack > 1s' from the condition: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.3%, pass 1)
+  4. drop the condition: if time to the next auto attack > 0.5s: cast Multi-Shot (+0.2%, pass 1)
+  5. spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+2.3%, pass 4)
+  6. insert at the top: if time to the next auto attack > 1s: cast Aimed Shot (+2.7%, pass 5)
+  7. drop the condition: if time to the next auto attack > 1s: cast Aimed Shot (+1.5%, pass 5)
+  8. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+0.9%, pass 5)
+  9. move down below 'if auraIsInactive: cast Summon Hawk': cast Aimed Shot (+0.3%, pass 6)
+  10. drop: if auraIsInactive: cast Summon Hawk (+0.7%, pass 10)
+  11. insert at the top: if time to the next auto attack > 1s: cast Summon Hawk (+0.3%, pass 10)
+  12. only with 20s or more of the fight left: if time to the next auto attack > 1s: cast Summon Hawk (+0.2%, pass 10)
+  13. insert at the end: cast Major Mana Potion (+0.6%, pass 13)
+  14. threshold 1 -> 2: if time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.5%, pass 13)
+
+Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Hawk (rank 6); at -19s: move to “Pull range” yd; if “Use Sniper Shot”: cast Sniper Shot.
+
+| # | Priority (the first line whose condition holds is cast) | [`marksmanship-lone-wolf-sim-raid`](marksmanship-lone-wolf-sim-raid.md) casts/min |
+|---|---|---|
+| 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready |
+| 2 | if not Hunter's Mark is up: cast Hunter's Mark | 0.7 |
+| 3 | if not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 2.2 |
+| 4 | if “Use Summon Hawk” and “Use Arcane Shot” and the sequence is complete: reset sequence 'HHA' | as ready |
+| 5 | if “Use Summon Hawk” and “Use Arcane Shot”: sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot | 8.7 |
+| 6 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 8.7 |
+| 7 | if “Use Aimed Shot”: cast Aimed Shot | 3.2 |
+| 8 | if “Use Sniper Shot”: cast Sniper Shot | 1.7 |
+| 9 | if unitDistance ≠ “Shoot spot” and not spellInRange and (“Windup close” or “Just shot”): move to “Shoot spot” yd | as ready |
+| 10 | if unitDistance ≠ “Shoot spot”: wait inputDelay | as ready |
+
+Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Multi-Shot (its condition never held in these fights).
+
+Damage by ability:
+
+| Ability | [`marksmanship-lone-wolf-sim-raid`](marksmanship-lone-wolf-sim-raid.md) |
+|---|---|
+| Auto Shot | 46% |
+| Arcane Shot | 25% |
+| Serpent Sting | 13% |
+| Aimed Shot | 10% |
+| Sniper Shot | 6% |
+
+## Notes
+
+- The simulator's own build, credited (Simulator build first, 2026-11-20): the page starts from it; ours replaces it only when 0.5% ahead on two seeds and passing the spec's rules.
+- Simulator numbers are the community's model of the game, not in-game measurements.
+
+## Sources
+
+- <https://github.com/wowsims/forever/blob/2e6e77d844dc4d6790f984b9a1817fc583f7ca2e/ui/specs/hunter/dps/builds/mm.siml>
+
+---
+*Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

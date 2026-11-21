@@ -1,5 +1,7 @@
 # Paladin
 
+> **2026-11-20:** the raid pages were updated after the play check (what each build presses, checked build by build). The rankings and picks on this page update with the leveling pages on Sunday 2026-11-22; until then the raid pages are newer.
+
 > Classic: the Alliance raid healer (Holy, with Protection and Retribution dips for raid blessings); Retribution and Protection were
 > dungeon and PvP specs. Forever makes Kings and Consecration baseline, gives Retribution stored seals (Unsealed Wrath, called Twist of Light until build 70753), gives
 > Protection a full tank kit (Holy Shield, Templar's Bulwark, Iron Creed, Swift Judgement) and adds Undead paladins to the Horde.

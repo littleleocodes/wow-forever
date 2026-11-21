@@ -1,5 +1,7 @@
 # WoW: Forever class guides
 
+> **2026-11-20:** the raid pages were updated after the play check (what each build presses, checked build by build). The rankings and picks on this page update with the leveling pages on Sunday 2026-11-22; until then the raid pages are newer.
+
 The best talents and the best way to play every class in **World of Warcraft: Forever** (the Classic+ release, launching 2026-11-04), worked out from the beta's talent trees and simulations: the community's combat simulator for raids and this project's own simulators for leveling and healing.
 
 **How to use it:** pick your class below. Its page has a grid of every spec against leveling, raid and PvP, the recommended picks marked, and a ranking of the specs for each. Every link in the grid opens a build page: the talents (with a talent calculator link), the order to take them while leveling, and what to press.

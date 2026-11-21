@@ -1,0 +1,101 @@
+{
+ "id": "check-survival-pet-raid-survival-raptor-raid",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    3
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Summon Hawk",
+    1
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    4
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ],
+   [
+    "Savage Strikes",
+    2
+   ],
+   [
+    "Clever Traps",
+    2
+   ],
+   [
+    "Surefooted",
+    3
+   ],
+   [
+    "Predator's Edge",
+    5
+   ],
+   [
+    "Expose Prey",
+    2
+   ],
+   [
+    "Survivalist's Discipline",
+    2
+   ],
+   [
+    "Strider Kick",
+    1
+   ],
+   [
+    "Lightning Reflexes",
+    5
+   ],
+   [
+    "Lacerating Strikes",
+    1
+   ],
+   [
+    "Survivalist",
+    3
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-11-20) for survival-pet-raid from survival-raptor-raid in the raid setting: 915.3 -> 915.3 DPS on a third seed.",
+ "search": {
+  "start": "survival-raptor-raid",
+  "setting": "raid",
+  "kept": [
+   "Strider Kick"
+  ],
+  "moves": [],
+  "dps_start": 915.3470943457935,
+  "dps_end": 915.3470943457935,
+  "gain": 0.0,
+  "tank": false,
+  "date": "2026-11-20",
+  "sim": {
+   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
+   "racials": "off",
+   "pet_normalize": true,
+   "patch_hash": "125d59c4f975f5df",
+   "simulator": "wowsims/forever",
+   "client": "1.60.1.70938"
+  }
+ }
+}

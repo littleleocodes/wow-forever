@@ -4,7 +4,9 @@
 
 **✅ Recommended** for raid (the best priest spec here, or within 3% of it).
 
-**[Shadow (optimized)](../research/raid/builds/opt-shadow-dps-raid-dps.md)** (20/0/31) — [open the talent tree](https://talentsforever.com/priest/60/52500500003--50052101231302051-12)
+**[Shadow — Raid](../research/raid/builds/shadow-ml-raid.md)** (16/0/35) — [open the talent tree](https://talentsforever.com/priest/60/005305201--50552001201312251-12)
+
+> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (raid BiS gear, then raced against the spec's builds). A model of the beta, to check at launch.
 
 ## How to play
 
@@ -57,14 +59,16 @@ Shadow in a raid is **Shadowform** before the pull, **Mind Blast** every time it
 
 | Tree | Points | Talents (ranks) |
 |---|---|---|
-| Discipline | 20 | Power in Light 5, Twin Disciplines 5, Wand Specialization 2, Mental Strength 5, Meditation 3 |
-| Shadow | 31 | Shadow Focus 5, Improved Mind Blast 5, Improved Shadow Word: Pain 2, Shadow Reach 1, Improved Mind Flay 2, Mind Flay 1, Dark Inspiration 3, Shadow Weaving 3, Vampiric Embrace 1, Devouring Contagion 2, Darkness 5, Shadowform 1 |
+| Discipline | 16 | Twin Disciplines 5, Mental Strength 5, Inner Focus 1, Martyrdom 2, Silent Resolve 3 |
+| Shadow | 35 | Shadow Focus 5, Improved Mind Blast 5, Improved Shadow Word: Pain 2, Mind Flay 1, Improved Mind Flay 2, Vampiric Embrace 1, Shadow Weaving 3, Devouring Contagion 2, Early Demise 2, Darkness 5, Shadowform 1, Silence 1, Spirit Tap 5 |
 
 ## The numbers
 
+**How this pick was checked:** a full search on 2026-11-03 (the talent search that found this build).
+
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 776 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 774 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 2e6e77d (client 70938); [every spec](../../_reference/dps-rankings.md)):
 
@@ -72,7 +76,7 @@ Shadow in a raid is **Shadowform** before the pull, **Mind Blast** every time it
 |---|---|---|
 | Quests and dungeons | 721 | [14/4/33](https://talentsforever.com/priest/60/00500500103-202-50052001231312251-12) |
 | Pre-BiS | 773 | [18/0/33](https://talentsforever.com/priest/60/00530521101--50352001201312251-12) |
-| Raid BiS | 788 | [18/0/33](https://talentsforever.com/priest/60/00530520102--50352001201312251-12) |
+| Raid BiS | 788 | [18/0/33](https://talentsforever.com/priest/60/00530520102--50352001201312251-12) (as good as this build in this gear) |
 
 *Each row is in that tier's own gear set; the DPS at the top of the page is this build in the standard set, so the two do not match.*
 
@@ -98,12 +102,14 @@ Shadow in a raid is **Shadowform** before the pull, **Mind Blast** every time it
 | Off hand | [Spirit of Aquementas](https://www.wowhead.com/forever/item=11904) · *quest: It's Dangerous to Go Alone* | [Obsidian Bauble](https://www.wowhead.com/forever/item=18316) | [Obsidian Bauble](https://www.wowhead.com/forever/item=18316) |
 | Ranged/relic | [Skul's Ghastly Touch](https://www.wowhead.com/forever/item=13396) · *Skul, Stratholme* | [Skul's Ghastly Touch](https://www.wowhead.com/forever/item=13396) · *Skul, Stratholme* | [Skul's Ghastly Touch](https://www.wowhead.com/forever/item=13396) · *Skul, Stratholme* |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Quests and dungeons: [full raid](https://wowsims.com/forever/priest/dps/#eJzElN1LFF8Yx/c5Z3bm2WdVlvnxw/HQxbhBbMbImTHDvNnRKwkiCYSIImfd1dlIZ3EWsjstLyJIZS8CxUiiMIJeLqW73mC7KYPophtJwi57Ab0IKmZU6B+wvhwO5/t8OOd7OHAe2oeQAQNMyMEg+FCBSYCrAEsA9wD0hpiyiHaBWFcQM0kxShou18D4lCYFrzwCUnCpBsRx4zRp+HYWjPUm0vDpHBgfmojjyxFS8M0ikIrfhqNdKj48Y8xqxPGXRxynCsRxbpQ43hwhFe/6Rv0/4jh5lji+87OHMvVy7vUMyM1C//XbcA3YdLkGbLOwAGyj5z5oy4vwuG+mvAbT5V6MLwwuPGGtUnbGw5YdliMdK3KOlLbTYXfYjtNp1xmssvRH9p2RTppIEsevE1mNksQtO9TTIiU0SuZS+HxAVwTrTuhStNN+vZUas2lKORFEnBmgTFsTqjo7lhAqKcRsKXaR3iKanf93Dr8VEgkkNafi6g3QG8S2U/DF1gk90D2vcuFcUKmajnSOWLa0ZFe3OeR7YyOlohmMm16xWCqahUtm1S+Z40HVq5aDMTMseeNDvpkLSyUz9L1icNEqVkJrl1vbvP18GIwd3Ancjm8U6csQ5au4VQN99G/kY/RAOPfjuME/szp8Yc4UT8Q67D4DRTBKZH+yVFRITA67LQvzkV7lW4djvc87a8xQzHzbCkv8E1Xd3dWe6sCDPcs5Gs8n77g9OwV3MPrw8xCbxFq+jeNKc+8ffUFCF7jQB/1wCnyowARMsN8DAAFNuMQ=); Pre-BiS: [full raid](https://wowsims.com/forever/priest/dps/#eJzElN9LFF0Yx/c5Ozvz7LPqO8xLOB4ixg1iM0bOjG2YNzt6JUEkgdBFkKO7Nhu5szgL2Z2VFxG1ikSgCf0gKAKtq5CuwiK2LmIvoptupNAiuigEvRAiZlToH7C+Fw/zPB/mfA4HzqG9CCroYEAGBsCDMowDXAW4C/AIQGuIKAtpJ/BVCVFN8IAU3JwHfSVFEl55AiTht5thvV1XScbFkv65iRRce/Gf/rGJ4rhUIglXJoEUfL0Q/Sbjwml9UiEJq99VkvDtPaA4To2QhM/qKim4Ogd67X+S8PpkSN576UNqrZh5VwWxPth34z5cAzZRnAa2PjgL7Ev3Y1AezsHT3mpxGSaKPRhtGxx4zvYJke0QWduyhGWaWdGRtYWwbGF1WLadtWoM6iz1ia0x0kjhCYrjz7G0QgmKm1agpXiSK5TIJPFlvyZx1hXTBG+n/VorNaZTlLRDiFjtJ7WtCWWNHYtxmSRiluA7SGvhzfae7cXvBEQcSc7IWL8FWgPf6iR8tXFC8zXXLZ8/45crhi3sI6YlTNHZZQx5bulsIW/4o4abzxfyxuBFo+IVjFG/4laKfskICu7okGdkgkLBCDw3718w8+XA3OHmFm8/F/ilg9vCLX0jT12G0C/jxjRoI3/Dj+EB4dTmcT3+ldXgB7MvxWNRDjtLIHFGsfQvlgwHsfFhp2V2JsybXOtwlA85e5npkpFrW2Sxf5KKs/O1qzkwv2ueo1E9+cDp3h44A+Gdn4GoiS3n2uK42Nzzx9MgoBMc6IU+OAUelGEMxtjvAQDPXbuO); Raid BiS: [full raid](https://wowsims.com/forever/priest/dps/#eJzElNFLFG0Uxve8Mztz9qz6DfPx4fjy8THuB7EZI++MbZg3O3olQSSB0EWQo7s2G7WzOAvZnYUXEbWGZaAJRQRFYHQV0lVYFxtB7EV0E4EUZkQXhaAXgsSMCv0D1nNxOOf8OO/z8sJ76F8EDQwwIQtD4EMFJgAuA9wFeAigN8WURbQb+KqMqCV5lVTcXABjJU0ybk0Dyfj1ZhRvNzRScLFsfGohFdee/2W8byEJl8ok48oUkIofZuIxBR+fNKZUkvH1TDRY+6aRjJM3ovxpQyMVP8+DUf+bZLw6BSThWz9zQKuXsm9qINaHB67dgyvAJkvTwNaH54Ct9j4C9cE8POmvlZZhstSH8b3BhWfsPyFyXSLnCFs4lpUTXTlHCNsRdpftODm7zqDB0h/ZGiOdVJ4kCX+MZ1RKkmTZoZ7mKa5SMpvCF4O6zFlPQhe8k/7X26k5k6aUE0HE2iBpHS2o6OxIgiskE7MF30V6G291/tk5/E5IxJGUrIKNW6A38e1Kxpcbx/RA97zK2VNBpWo6wjlk2cIS3T3miO+VTxcLZjBmeoVCsWAOXzCrftEcC6petRSUzbDojY34ZjYsFs3Q9wrBeatQCa1dbm3zzjNhUN6/Y7ht38zTlyDyV3BjGvRzv8MfowfC65tHDekLq8N35lyUErEOuksgc0aJzBZLRY3ExKjbNjcb6VW+fTTWu7yzzAzZzHcsssQfUdXdzfZU+xb2zOdwHI/fd3t3Gu5Q9OlnIS4Sy/kOCRdb+37ZDQK6wYV+GIAT4EMFxmGc/RwAoju7/Q==).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Quests and dungeons: [full raid](https://wowsims.com/forever/priest/dps/#eJzEk81LFV8Yx+9zztyZ5z5X5TI/fjgeWow3iJsxcmbMMDd3dCVtkkCIKHKuc3VupHNxLmQ7LRcRpHIXgWIkURhBL0tp1xvcNmUQbdpIEbasCN1VzKjQPyB9OBzO83w453s2Dx1AyIEBJhRgGAKowjTANYAVgPsAelNiWWx7QPzkiLm0GCcNV+tgfMmSglcfAym4UgfiuHmGNHw3D8bnFtLw2QIYH1uI46sxUvDtMpCKP0bjWyo+OmvMa8Txt0ccZ0rEcWGcON4aIxXvBUbjP+I4fY44vg/yR3KNSuHNHMit0uCNO3Ad2GylDmyrtARss+8BaKvL8GRgrrIBs5V+TD4MLjxl7VJ2J8uWXZYjHSuuHCltp8vush2n224wWGfZT2yWkU6aSBPH71N5jdLELTvSsyIjNEoXMvhiSFcE603pUnTSQb2dmvNZyjixRJwbolxHC6o6O5ESKinEbCn2lN4mWp3/dx+/HREJJLWg4vpN0JvETqXgy+2Teqh7XvXi+bBaMx3pHLNsacmeXnMk8CbGyr4ZTpqe75d9s3TZrAVlczKsebVKOGFGZW9yJDALUblsRoHnh5csvxpZe97a8Z0XonDi8G7gTnyzyF6BOF/F7ToY/CtrwDfmz/BUwlH3OSiCUSr/i2XiRmp61G1bWox5XWwfTfhQdDaYoZjFjjWW+ifU3L3TvnLo4b7lHE/2U3fdvt2GOxxP4CIkRWqj2MFxrbX/r0GV0AMuDMAgnIYAqjAFU+zPAMDhk9A=); Pre-BiS: [full raid](https://wowsims.com/forever/priest/dps/#eJzEk89r1FoUx+fcZJIzZ9q+kMej6eUh6QgyVlJuUkdqN5N2VdxYhIILwabN1IzoZGgGrLuqXYjoVIoIrQV/IChCqysprqSKjC5kFuLGTVGqIi4UoV0IIklb8B8ofhaHe86He793c+h/BA0MMCEPIxBAFaYALgLcArgPoLcklsW2F/iGhKileUQq/lwEYy1LMl54CCTjl2txvdHUSMHlivGhjVT88fQf410bSbhSIRnXZoBUfLGUXFNw6Zgxo5KM9a8ayfjqNpCEV0+TjI+bGqn4cQGMxr8k4+WZ2LwJcvu0Rjn/ug5ifXToyh24BGy6PAtsfXQe2Kf+B6DeW4BHg/XyKkyXBzD5NrjwhO0SotAjCo5tC9uyCqKn4AhhO8LusR2nYDcYNFn2PZtmpJPK0yTh98mcSmmSLDvSszzDVUrnM/hsWJc560vpgnfTbr2TWnNZyjixRKwPk9bVhorODqW4QjIxW/BtpXfwdue/rcdvRkQcSckr2LwOegvf7GR8vnFYD3XPq546HlZrpiOcA5YtLNHbZ44FXuVEyTfDCdPz/ZJvjp41a0HJnAhrXq0cVsyo5E2MBWY+KpXMKPD88IzlVyNr21ubvvtkFFb2bgVuxrfy7HmI8xXcmAVD+swa8I3556RUwn53BWTOKJX7xTLxIDU17nbMz8W8LHaOJ7wtOqvMkM1i1zJL/RVq7vZpR9mzuGM5B5N65K7bvzVwR+IlnIOkSa0WuyRcbh/4Y1cF9IILgzAERyGAKkzCJPs9AFmLlpo=); Raid BiS: [full raid](https://wowsims.com/forever/priest/dps/#eJzEk8Fr1FoUxufcZJIzZ9q+kMej6eXxSOeBjJWUm9SR2s2kXRU3FqHgQrBpMzUjMhmaAeuuyixEdArVCq0FRQRFqLiS4kqqixFBZiFuRChKVcSFIrSCUCRpC/4DxW9xOOf8OPe7m4/+RdDAABPyMAYBVGEG4CLALYB7AHpbQllM+4H/kBC1NK+Rij+XwVjPkoxbc0Ayfr4W1xstjRRcqRjvO0jF70/+Mt50kISrFZJxfRZIxbfzyZmCD04YsyrJ+GI+Pmx80UjG+tW4f9TSSMUPS2A0/yYZL88CSfgqyB3QmuX8ywaIjfGRK7fhErB6eQ7YxvgisI+D90G9uwQPhxvlNaiXhzD5N7jwmP0nRKFPFBxhC8eyCqKv4AhhO8Lusx2nYDcZtFj2Hasz0knlaZLw23ROpTRJlh3pWZ7hKqXzGXw6qsucDaR0wXvpf72b2nNZyjgxRGyMktbTgYrOjqS4QjIxW/BdpHfxTuefncdvRkQcSckr2LoOehvfnmR8tnlUD3XPq545GVZrpiOcQ5YtLNE/YE4EXuVUyTfDKdPz/ZJvjp8za0HJnAprXq0cVsyo5E1NBGY+KpXMKPD88KzlVyNrl1vbvPd0FFb27xhu27fz7AWI/RXcnAND+sSa8JX556VUooPuKsicUSq3xTLxIjUz6XYtLsR6XuyeTPS66KwxQzaLPSss9UdUc3e7PdW+5T3zOZzUY3fcwZ2FOxancAGSIbVW7JFwpXPot7AK6AcXhmEEjkMAVZiGafZrAPxJlwk=).
+
+**Taken for raid utility:** **Silence** (1) is not in the rotation: it is there for its interrupt, which the raid simulator does not measure.
 
 ## Other builds of this spec
 
-- [Shadow — Raid](../research/raid/builds/shadow-ml-raid.md) (16/0/35, 779 DPS in a full raid) — [open the talent tree](https://talentsforever.com/priest/60/005305201--50552001201312251-12)
+- [Shadow (optimized)](../research/raid/builds/opt-shadow-dps-raid-dps.md) (17/3/31) — [open the talent tree](https://talentsforever.com/priest/60/00520520003-3-50152001231302051-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-19 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 2e6e77d (client 1.60.1.70938)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-20 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 2e6e77d (client 1.60.1.70938)). Simulations, not in-game measurements. Spell ranks: trainer ranks only. The class books' ranks (Grimoire of Shadow Bolt X, Tome of Frostbolt XI and the like) are not in Forever on the evidence there is (2026-11-20): in Classic every one drops in the Ruins of Ahn'Qiraj, which Forever's roadmap does not have; Wowhead's Forever pages list no source for them; the simulator's own authors leave them off by default. Checked again when the raids of 2026-12-09 open. Do not hand-edit.*
 

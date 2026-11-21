@@ -1,5 +1,7 @@
 # Druid
 
+> **2026-11-20:** the raid pages were updated after the play check (what each build presses, checked build by build). The rankings and picks on this page update with the leveling pages on Sunday 2026-11-22; until then the raid pages are newer.
+
 > Classic's hybrid: Restoration raid healer, Feral off-tank and powershifting cat, one Moonkin per raid for the crit aura.
 > Forever makes Omen of Clarity and Faerie Fire in forms baseline, gives the cat Shifting Power, Rend and Tear and Berserk,
 > gives Balance Eclipse and Genesis, and moves Swiftmend to Restoration tier 4 under a Wild Growth capstone. Skyborne druids

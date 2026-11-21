@@ -1,5 +1,7 @@
 # Shaman
 
+> **2026-11-20:** the raid pages were updated after the play check (what each build presses, checked build by build). The rankings and picks on this page update with the leveling pages on Sunday 2026-11-22; until then the raid pages are newer.
+
 > Classic's Horde raid healer, with Elemental as a late-game caster and Enhancement as a Windfury support hybrid. Forever
 > gives Elemental Lava Burst and Lightning Overload (and, since client 70425, a reworked Elemental Mastery as its 31-point talent),
 > turns Enhancement into a real melee spec (Stormstrike, Maelstrom Weapon, Rage of the Farseer) and gives Restoration Riptide and

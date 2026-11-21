@@ -261,8 +261,8 @@
    "action": {
     "castSpell": {
      "spellId": {
-      "spellId": 591,
-      "rank": 2
+      "spellId": 984,
+      "rank": 4
      }
     },
     "condition": {
@@ -279,7 +279,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-29: changed or added by the rotation search (see smite-dps-rotation-search.json)"
+   "notes": "2026-11-20 (the audit session: no rank taught below 20 while the simulator gives it the full coefficient): rank 4 in place of rank 2, smite_downrank_1120.py. apl_opt 2026-10-29: changed or added by the rotation search (see smite-dps-rotation-search.json)"
   },
   {
    "action": {

@@ -1,5 +1,7 @@
 # Hunter
 
+> **2026-11-20:** the raid pages were updated after the play check (what each build presses, checked build by build). The rankings and picks on this page update with the leveling pages on Sunday 2026-11-22; until then the raid pages are newer.
+
 > Classic's ranged physical DPS: Beast Mastery/Marksmanship in raids for Trueshot Aura and personal damage, Marksmanship/Survival
 > in PvP. Forever makes Aimed Shot a trained spell, moves Trueshot Aura to tier 4 as a party buff you cast, adds Lone Wolf (no pet),
 > Sniper Shot and Summon Hawk, gives pets a share of the hunter's stats, and turns Survival into a dual-wield melee tree. Human and

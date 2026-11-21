@@ -1,0 +1,111 @@
+{
+ "id": "check-arcane-dps",
+ "allocation": {
+  "Arcane": [
+   [
+    "Improved Channeling",
+    5
+   ],
+   [
+    "Arcane Subtlety",
+    2
+   ],
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Missile Barrage",
+    2
+   ],
+   [
+    "Arcane Impact",
+    3
+   ],
+   [
+    "Arcane Blast",
+    1
+   ],
+   [
+    "Arcane Meditation",
+    2
+   ],
+   [
+    "Arcane Wrath",
+    1
+   ],
+   [
+    "Presence of Mind",
+    1
+   ],
+   [
+    "Arcane Mind",
+    5
+   ],
+   [
+    "Arcane Instability",
+    3
+   ],
+   [
+    "Arcane Power",
+    1
+   ]
+  ],
+  "Fire": [
+   [
+    "Incineration",
+    5
+   ],
+   [
+    "Accelerant",
+    3
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Pyroblast",
+    1
+   ],
+   [
+    "Improved Fire Blast",
+    2
+   ],
+   [
+    "Heating Up",
+    1
+   ]
+  ],
+  "Frost": [
+   [
+    "Precision",
+    3
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-11-20) for arcane-dps from arcane-fire-raid in the raid setting: 826.3 -> 827.5 DPS on a third seed.",
+ "search": {
+  "start": "arcane-fire-raid",
+  "setting": "raid",
+  "kept": [
+   "Arcane Blast",
+   "Heating Up",
+   "Missile Barrage",
+   "Presence of Mind"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Arcane Meditation -> Accelerant",
+    "gain_seed1": 0.0010621481709911507,
+    "gain_seed2": 0.0016964592486166108,
+    "split": "31/17/3"
+   }
+  ],
+  "dps_start": 826.3271525060601,
+  "dps_end": 827.4622336746792,
+  "gain": 0.0013736462189057885,
+  "tank": false
+ }
+}

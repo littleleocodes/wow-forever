@@ -19,13 +19,12 @@ The Fire raid build the open talent search found on 2026-11-11: every legal 51-p
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Wand Specialization** | 2/2 | moved | Increases your damage with Wands by 25%. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Arcane Blast** | 1/1 | **NEW** | Blasts the target with energy, dealing 34 to 38 Arcane damage. Each time you cast Arcane Blast, you gain 12% of your Intellect as Spell Damage and the mana cost of Arcane Blast is increased by 100%. Effect stacks up to 4 times and lasts 18 sec from time of initial application. |
 | **Arcane Meditation** | 2/3 | changed | Allows 33% of your Mana regeneration to continue while casting. |
-| **Arcane Resilience** | 3/3 | changed | Increases your Armor by an amount equal to 75% of your Intellect. |
+| **Improved Channeling** | 5/5 | **NEW** | Gives your Arcane Missiles spell a 100% chance and your Arcane Blast and Arcane Wrath spells a 70% chance to not lose casting time when you take damage. |
 
 ### Fire (31)
 
@@ -66,17 +65,17 @@ The Fire raid build the open talent search found on 2026-11-11: every legal 51-p
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`fire-open-raid`](fire-open-raid.md)** | ours: derived (open search) | 17/31/3 | 577 | +0.0% | 873 | +0.0% | 3 s |
-| 2 | *Fire Skyborne GT 180* | community simulator | - | 576 | -0.3% | 862 | -1.3% | 2 s |
-| 3 | *Fire* | community simulator | - | 575 | -0.3% | 871 | -0.2% | 4 s |
-| 4 | *Fire Skyborne LT 180* | community simulator | - | 571 | -1.0% | 861 | -1.4% | 3 s |
-| 5 | [`fire-raid`](fire-raid.md) | ours: hand draft | 16/32/3 | 569 | -1.4% | 837 | -4.1% | 4 s |
-| 6 | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) | ours: optimizer | 18/31/2 | 565 | -2.2% | 828 | -5.2% | 1 s |
-| 7 | *FFB* | community simulator | - | 478 | -17.3% | 626 | -28.2% | 30 s |
-| 8 | *Arcane Fire* | community simulator | - | 406 | -29.7% | 595 | -31.8% | 1 s |
-| 9 | *Arcane* | community simulator | - | 360 | -37.7% | 430 | -50.7% | 1 s |
-| 10 | *Frost Incin* | community simulator | - | 321 | -44.3% | 383 | -56.1% | 0 s |
-| 11 | *Frost Med* | community simulator | - | 318 | -45.0% | 392 | -55.0% | 0 s |
+| 1 | **[`fire-open-raid`](fire-open-raid.md)** | ours: derived (open search) | 17/31/3 | 577 | +0.0% | 869 | +0.0% | 3 s |
+| 2 | *Fire Skyborne GT 180* | community simulator | - | 575 | -0.4% | 859 | -1.1% | 2 s |
+| 3 | *Fire* | community simulator | - | 575 | -0.4% | 868 | -0.2% | 4 s |
+| 4 | *Fire Skyborne LT 180* | community simulator | - | 571 | -1.1% | 859 | -1.2% | 3 s |
+| 5 | [`fire-raid`](fire-raid.md) | ours: hand draft | 16/32/3 | 569 | -1.4% | 838 | -3.6% | 4 s |
+| 6 | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) | ours: optimizer | 18/31/2 | 564 | -2.2% | 827 | -4.8% | 1 s |
+| 7 | *FFB* | community simulator | - | 478 | -17.3% | 626 | -27.9% | 30 s |
+| 8 | *Arcane Fire* | community simulator | - | 406 | -29.7% | 595 | -31.5% | 1 s |
+| 9 | *Arcane* | community simulator | - | 360 | -37.7% | 430 | -50.5% | 1 s |
+| 10 | *Frost Incin* | community simulator | - | 314 | -45.7% | 363 | -58.3% | 0 s |
+| 11 | *Frost Med* | community simulator | - | 302 | -47.6% | 383 | -55.9% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -127,6 +126,8 @@ The Fire raid build the open talent search found on 2026-11-11: every legal 51-p
   31. threshold 4 -> 2: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability < 4 or not spellIsCasting): cast Scorch (+0.2%, pass 14)
   32. drop: if mana < current cost: groupReference (+0.4%, pass 15)
 
+Before the pull: at -2s: if Ice Barrier is known: cast Ice Barrier.
+
 | # | Priority (the first line whose condition holds is cast) | [`fire-open-raid`](fire-open-raid.md) casts/min |
 |---|---|---|
 | 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 6.5 |
@@ -140,7 +141,7 @@ The Fire raid build the open talent search found on 2026-11-11: every legal 51-p
 | 9 | cast Robe of the Archmage | as ready |
 | 10 | cast Scorch | 6.5 |
 
-Lines of the simulator's rotation these builds never cast: cast Fireball (rank 10), cast spell 1326055 (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Ice Barrier (needs the Ice Barrier talent).
 
 Damage by ability:
 
@@ -163,6 +164,8 @@ Damage by ability:
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Wand Specialization, Improved Channeling.
 - Simulator numbers are the community's model of the beta (wowsims/forever ff9babb (client 70888) with this project's patches), not in-game measurements.
 - 2026-11-11 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Channeling -> Arcane Resilience (survival); Improved Channeling -> Arcane Resilience (survival); Improved Channeling -> Arcane Resilience (survival). Net +0.00% on a third seed.
+- 2026-11-20: 3 points back in Improved Channeling (pushback protection): the filler audit of fire-raid-fillers-fire-open-raid.json had taken them for free because its tags missed Forever's wording ("to not lose casting time"; utility_tags.py fixed the same day). The same damage within 0.1% (worst +0.00% over the entry's setting and a full raid, seeds 1 and 2).
+- 2026-11-20: filler points moved (2 points from Wand Specialization to Improved Channeling): the same DPS bit for bit in a full raid and on the training dummy. The new talents follow the utility order (interrupt protection, threat, mana, range, survival; dodge, parry and block count for nothing in a damage dealer's raid), which the simulator cannot measure (deep-runs/credited_fillers_1120.py; the user's rule of 2026-11-08 that a page pick holds no talent that does nothing).
 
 ## Open questions (verify in the live game)
 

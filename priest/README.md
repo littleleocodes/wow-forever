@@ -1,5 +1,7 @@
 # Priest
 
+> **2026-11-20:** the raid pages were updated after the play check (what each build presses, checked build by build). The rankings and picks on this page update with the leveling pages on Sunday 2026-11-22; until then the raid pages are newer.
+
 > Classic: the primary raid healer (Holy with a Discipline dip for Divine Spirit) and a solo and PvP Shadow spec. Forever removes
 > Divine Spirit and Healing Focus as talents, adds the talents Prayer of Mending and Holy Binding to Holy and Penance, Divine Aegis and
 > Renewed Hope to Discipline (Binding Heal itself is a spell, trained at 25), makes Shadow Weaving a debuff only your own Shadow damage benefits from and gives every priest Devouring Plague and

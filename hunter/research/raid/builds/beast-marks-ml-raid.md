@@ -1,10 +1,10 @@
-# Beast-Marks — Raid (machine-learning search) — 28/21/2
+# Beast-Marks — Raid (machine-learning search) — 27/22/2
 
 *[Hunter](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 28/21/2 (Beast Mastery / Marksmanship / Survival) |
+| **Build** | 27/22/2 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -15,7 +15,7 @@ The Beast-Marks build the machine-learning talent search found in a full raid (e
 
 ## Point allocation
 
-### Beast Mastery (28)
+### Beast Mastery (27)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -28,17 +28,18 @@ The Beast-Marks build the machine-learning talent search found in a full raid (e
 | **Summon Hawk** | 1/1 | **NEW** | Command a hawk to dive-bomb your targeted enemy, dealing 32 plus 5% of your Ranged Attack Power Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot. |
 | **Intimidation** | 1/1 | changed | Command your pet to Stun the target for 3 sec on its next successful attack, which also gains 100% increased critical strike chance. Generates high threat. |
 | **Bestial Discipline** | 2/2 | changed | Increases the Focus regeneration of your pets by 20% and allows 50% of your Mana regeneration to continue while casting. |
-| **Frenzy** | 3/5 | unchanged | Gives your pet a 60% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike. |
+| **Frenzy** | 2/5 | unchanged | Gives your pet a 40% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike. |
 
-### Marksmanship (21)
+### Marksmanship (22)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
 | **Improved Stings** | 3/3 | **NEW** | Increases the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
-| **Improved Arcane Shot** | 3/5 | changed | Reduces the cooldown of your Arcane Shot by 0.9 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot. |
+| **Improved Arcane Shot** | 2/5 | changed | Reduces the cooldown of your Arcane Shot by 0.6 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
+| **Barrage** | 2/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 10%. |
 
 ### Survival (2)
 
@@ -52,10 +53,10 @@ The Beast-Marks build the machine-learning talent search found in a full raid (e
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *BM* | community simulator | - | 546 | +0.0% | 1009 | -0.7% | 33 s |
-| 2 | [`beast-mastery-ml-raid`](beast-mastery-ml-raid.md) | ours: derived (ML search) | 31/20/0 | 535 | -2.1% | 1016 | +0.0% | 33 s |
-| 3 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 526 | -3.8% | 937 | -7.8% | 15 s |
-| 4 | **[`beast-marks-ml-raid`](beast-marks-ml-raid.md)** | ours: derived (ML search) | 28/21/2 | 522 | -4.6% | 1005 | -1.1% | 30 s |
+| 1 | *BM* | community simulator | - | 491 | +0.0% | 940 | -0.6% | 82 s |
+| 2 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 482 | -1.8% | 905 | -4.3% | 64 s |
+| 3 | [`beast-mastery-ml-raid`](beast-mastery-ml-raid.md) | ours: derived (ML search) | 31/20/0 | 480 | -2.2% | 946 | +0.0% | 82 s |
+| 4 | **[`beast-marks-ml-raid`](beast-marks-ml-raid.md)** | ours: derived (ML search) | 27/22/2 | 477 | -2.8% | 942 | -0.4% | 73 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -75,7 +76,7 @@ The Beast-Marks build the machine-learning talent search found in a full raid (e
   13. insert at the top: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+19.8%, pass 10)
   14. threshold 30% -> 10%: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+2.9%, pass 10)
   15. only with 3s or more of the fight left: if time left on Serpent Sting < 4s: cast Serpent Sting (+0.4%, pass 10)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 19 passes, the last 2026-11-10, 14 changes to the base rotation; third-seed check: beast-mastery-ml-raid 897 -> 966 DPS (+7.7%), sim preset: BM 885 -> 962 DPS (+8.7%), mm-hawk-raid 833 -> 895 DPS (+7.4%), beast-marks-ml-raid 874 -> 957 DPS (+9.5%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 20 passes, the last 2026-11-20, 15 changes to the base rotation; third-seed check: beast-mastery-ml-raid 883 -> 907 DPS (+2.7%), sim preset: BM 878 -> 901 DPS (+2.7%), mm-hawk-raid 845 -> 864 DPS (+2.2%), beast-marks-ml-raid 871 -> 894 DPS (+2.7%)):
   1. move to the top: if time to the next auto attack > 0.5s: cast Multi-Shot (+1.9%, pass 1)
   2. drop the condition: if time to the next auto attack > 1s: cast Summon Hawk (+0.4%, pass 1)
   3. threshold 1s -> 0.75s: if time left on Serpent Sting < 1s and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 2)
@@ -90,28 +91,36 @@ The Beast-Marks build the machine-learning talent search found in a full raid (e
   12. drop the condition: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+0.3%, pass 11)
   13. spell probe: insert in the middle: if auraIsInactive: cast Sniper Shot (+1.3%, pass 12)
   14. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 0.25s and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 13)
+  15. only above 60% mana: cast Summon Hawk (+0.8%, pass 20)
 
-Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
+Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Hawk (rank 6); at -19s: move to “Pull range” yd.
 
 | # | Priority (the first line whose condition holds is cast) | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) casts/min |
 |---|---|---|
-| 1 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Arcane Shot | 5.5 |
-| 2 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 |
-| 3 | cast Summon Hawk | 4.7 |
-| 4 | use every other cooldown when ready | as ready |
-| 5 | if time left on Serpent Sting < 4s and time left in the fight ≥ 3s: cast Serpent Sting | 4.2 |
-| 6 | if auraIsInactive and mana % ≥ 70%: cast Intimidation | 0.4 |
+| 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready |
+| 2 | if not Hunter's Mark is up: cast Hunter's Mark | 0.7 |
+| 3 | if not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 2.5 |
+| 4 | if “Use Summon Hawk” and “Use Arcane Shot” and the sequence is complete: reset sequence 'HHA' | as ready |
+| 5 | if “Use Summon Hawk” and “Use Arcane Shot”: sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot | 13.4 |
+| 6 | if “Use Summon Hawk” and not “Use Arcane Shot”: cast Summon Hawk | 5.4 |
+| 7 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 2.6 |
+| 8 | if “Use Aimed Shot”: cast Aimed Shot | 4.2 |
+| 9 | if unitDistance ≠ “Shoot spot” and not spellInRange and (“Windup close” or “Just shot”): move to “Shoot spot” yd | as ready |
+| 10 | if unitDistance ≠ “Shoot spot”: wait inputDelay | as ready |
+
+Lines of the simulator's rotation these builds never cast: cast Multi-Shot (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) |
 |---|---|
-| Pet: Auto Attack | 38% |
-| Auto Shot | 30% |
-| Serpent Sting | 14% |
-| Arcane Shot | 11% |
-| Pet: Claw | 5% |
-| Summon Hawk | 2% |
+| Auto Shot | 34% |
+| Pet: Auto Attack | 29% |
+| Serpent Sting | 11% |
+| Aimed Shot | 10% |
+| Pet: Claw | 6% |
+| Arcane Shot | 6% |
+| Summon Hawk | 3% |
 | Pet: Bite | 0% |
 
 ## Notes
@@ -122,6 +131,7 @@ Damage by ability:
 - Simulator numbers are the community's model of the beta (wowsims/forever 54ceac6 (client 70707) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.
 - Pre-BiS gear: 28/20/3 at 798.8 DPS in a full raid (the same talents).
 - Alone on the training dummy (only your own buffs) the search's best is 29/18/4 at 415.0 DPS.
+- 2026-11-20: the short check's confirmed moves applied ahead of the full search (raidsim/talent_opt.py --setting raid --rounds 2 from this build in bm-raid, full raid, seeds 1 / 2): Improved Arcane Shot -> Barrage (+0.98% / +0.85%); Frenzy -> Barrage (+0.12% / +0.22%); +1.06% in all (932.4 -> 942.3 DPS on a third seed.). The audit session's call: a page should not ship a pick with a confirmed better neighbour; the full search stays for the optimality pass.
 
 ## Open questions (verify in the live game)
 

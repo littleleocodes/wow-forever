@@ -178,20 +178,20 @@
  "raid": {
   "class": "hunter",
   "spec": "mm-raid",
-  "date": "2026-11-10",
-  "commit": "16e85426c",
+  "date": "2026-11-20",
+  "commit": "2e6e77d84",
   "setting": "raid",
   "tank": false,
-  "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/hunter/dps/apls/mm.apl.json",
+  "simulator_apl": "_reference/data/raidsim/apls/hunter/upstream/turret.apl.json",
   "start": "ui\\specs\\hunter\\dps\\apls\\mm.apl.json",
   "builds": [
    {
     "label": "marksmanship-ml-raid",
-    "talents": "53200001-0053250501503051-5"
+    "talents": "502-0053252501523051-5"
    },
    {
     "label": "sim preset: BM",
-    "talents": "5320001505101251-0052050301-4"
+    "talents": "5320001505101251-00530502014"
    },
    {
     "label": "bm-mm-raid",
@@ -351,50 +351,90 @@
     "gain_seed2": 0.016163877593013964,
     "candidates": 357,
     "pass": 17
+   },
+   {
+    "round": 18,
+    "change": "drop the condition: if \u201cUse Summon Hawk\u201d and not \u201cUse Arcane Shot\u201d: cast Summon Hawk",
+    "gain_seed1": 0.009811972499918387,
+    "gain_seed2": 0.009303354213922033,
+    "candidates": 327,
+    "pass": 18
+   },
+   {
+    "round": 19,
+    "change": "only above 60% mana: cast Summon Hawk",
+    "gain_seed1": 0.0038512439692584,
+    "gain_seed2": 0.0037804392199598524,
+    "candidates": 324,
+    "pass": 18
+   },
+   {
+    "round": 20,
+    "change": "drop the condition: if \u201cUse Summon Hawk\u201d and \u201cUse Arcane Shot\u201d: sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot",
+    "gain_seed1": 0.0012988201016446155,
+    "gain_seed2": 0.0017567800879483286,
+    "candidates": 331,
+    "pass": 18
+   },
+   {
+    "round": 21,
+    "change": "drop '\u201cUse Summon Hawk\u201d and \u201cUse Arcane Shot\u201d' from the condition: if \u201cUse Summon Hawk\u201d and \u201cUse Arcane Shot\u201d and the sequence is complete: reset sequence 'HHA'",
+    "gain_seed1": 0.010647794513105602,
+    "gain_seed2": 0.010205228514762021,
+    "candidates": 328,
+    "pass": 18
+   },
+   {
+    "round": 22,
+    "change": "insert at the end: cast Major Mana Potion",
+    "gain_seed1": 0.0037047474210631925,
+    "gain_seed2": 0.003567525417866424,
+    "candidates": 326,
+    "pass": 18
    }
   ],
   "final": {
    "raid": {
     "marksmanship-ml-raid": {
-     "before": 889.7905016170308,
-     "after": 963.3768167499313,
-     "base": 889.7905016170308,
+     "before": 973.0524308662852,
+     "after": 980.8259508935977,
+     "base": 973.0524308662852,
      "before_value": null,
      "after_value": null,
-     "oom_before": 27.644387640392083,
-     "oom_after": 15.074050563295497
+     "oom_before": 0.6471085774072511,
+     "oom_after": 0.6471085774072511
     },
     "sim preset: BM": {
-     "before": 910.7895880731971,
-     "after": 955.0507509711728,
-     "base": 910.7895880731971,
+     "before": 898.9090511668669,
+     "after": 939.4744102496028,
+     "base": 898.9090511668669,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
-     "oom_after": 0.02662361679805
+     "oom_after": 0
     },
     "bm-mm-raid": {
-     "before": 863.3612785853795,
-     "after": 878.3220970352551,
-     "base": 863.3612785853795,
+     "before": 862.6719152698851,
+     "after": 905.6351426931551,
+     "base": 862.6719152698851,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "bm-mm-full-buffs-raid": {
-     "before": 875.9297911593429,
-     "after": 888.5742443008401,
-     "base": 875.9297911593429,
+     "before": 872.2812306404305,
+     "after": 872.0803836991154,
+     "base": 872.2812306404305,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-mm-raid-raid-dps": {
-     "before": 898.6835712929102,
-     "after": 911.690582122804,
-     "base": 898.6835712929102,
+     "before": 865.0719621741991,
+     "after": 865.4651914649179,
+     "base": 865.0719621741991,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -411,13 +451,13 @@
     "Aimed Shot"
    ],
    "rejected": {
-    "structure": 20,
+    "structure": 76,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-27",
-  "passes": 17
+  "passes": 19
  }
 }

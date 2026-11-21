@@ -25,7 +25,6 @@ A Frostfire Bolt build the user brought on 2026-10-06 (talentsforever.com link):
 |---|---|---|---|
 | **Accelerant** | 5/5 | changed | Reduces the casting time of your Fireball, Frostfire Bolt, and Arcane Wrath spells by 0.5 sec. |
 | **Incineration** | 3/5 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 6%. |
-| **Flame Throwing** | 1/2 | unchanged | Increases the range of your Fire spells by 3 yards. |
 | **Ignite** | 5/5 | unchanged | Your critical strikes from Fire damage spells cause the target to burn for an additional 40% of your spell's damage over 4 sec. |
 | **Improved Fire Blast** | 1/2 | **NEW** | Reduces the cooldown of your Fire Blast spell by 1 sec and increases its range by 8 yards. |
 | **Pyroblast** | 1/1 | changed | Hurls an immense fiery boulder that causes 101 to 131 Fire damage and an additional 44 Fire damage over 12 sec. |
@@ -34,6 +33,7 @@ A Frostfire Bolt build the user brought on 2026-10-06 (talentsforever.com link):
 | **Master of Elements** | 3/3 | changed | Your Fire and Frost critical strikes will refund 30% of their base mana cost. |
 | **Critical Mass** | 3/3 | unchanged | Increases the critical strike chance of your Fire spells by 6%. |
 | **Fire Power** | 3/3 | unchanged | Increases the damage done by your Fire spells by 3% per your Fire effects on the target, up to a maximum increase of 12%. Effects which mix multiple schools of magic do not qualify. |
+| **Burning Soul** | 1/3 | changed | Gives your Fire spells a 23% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 10%. |
 
 ### Frost (22)
 
@@ -60,14 +60,15 @@ A Frostfire Bolt build the user brought on 2026-10-06 (talentsforever.com link):
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 5** for `frostfire-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 7/31/13 | 482 | +0.0% | 708 | -9.7% | 20 s |
-| 2 | **[`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md)** | ours: hand draft | 0/29/22 | 474 | -1.8% | 771 | -1.7% | 28 s |
-| 3 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 0/29/22 | 469 | -2.7% | 779 | -0.6% | 30 s |
-| 4 | *FFB* | community simulator | - | 459 | -4.8% | 784 | +0.0% | 36 s |
+| 1 | **[`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md)** | ours: hand draft | 0/29/22 | 532 | +0.0% | 768 | -1.8% | 38 s |
+| 2 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: derived (ML search) | 0/29/22 | 527 | -0.9% | 778 | -0.4% | 42 s |
+| 3 | [`frostfire-raid`](frostfire-raid.md) | ours: hand draft | 7/31/13 | 505 | -5.1% | 704 | -9.9% | 35 s |
+| 4 | [`frostfire-ffb-raid`](frostfire-ffb-raid.md) | ours: derived (simulator preset) | 0/29/22 | 501 | -5.9% | 781 | +0.0% | 50 s |
+| 5 | *FFB* | community simulator | - | 501 | -5.9% | 781 | +0.0% | 50 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -129,34 +130,29 @@ A Frostfire Bolt build the user brought on 2026-10-06 (talentsforever.com link):
   36. insert at the end: cast Scorch (+0.2%, pass 20)
   37. only with 3s or more of the fight left: cast Frostfire Bolt (+0.2%, pass 20)
 
+Before the pull: cast Pyroblast.
+
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) casts/min |
 |---|---|---|
-| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 7.8 |
-| 2 | cast Fire Blast | 4.9 |
-| 3 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 7.8 |
-| 4 | if mana % ≤ 80%: cast Mana Ruby | as ready |
-| 5 | use every other cooldown when ready | as ready |
-| 6 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 7 | if stacks of Heating Up = 2: cast Pyroblast | 5.2 |
-| 8 | if stacks of Heating Up = 3: cast Pyroblast | 5.2 |
-| 9 | cast Mana Citrine | as ready |
-| 10 | if mana % ≥ 10% and time left in the fight ≥ 6s and mana % ≥ 25%: cast Frostfire Bolt | 2.9 |
-| 11 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 1.2 |
-| 12 | cast Robe of the Archmage | as ready |
-| 13 | cast Scorch | 7.8 |
+| 1 | if mana < current cost and (not Read Leyline is known or not Read Leyline is ready or Energized is up): channel Evocation (interrupt it when a higher line is ready) | as ready |
+| 2 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability < 4 or not spellIsCasting): cast Scorch | 4.3 |
+| 3 | if stacks of Fire Vulnerability = 5: use every other cooldown when ready | as ready |
+| 4 | if stacks of Heating Up = 3 and not spellIsCasting: cast Pyroblast | 2.9 |
+| 5 | if stacks of Fingers of Frost < 2: cast Fire Blast | 4.8 |
+| 6 | cast Frostfire Bolt | 11.3 |
 
-Lines of the simulator's rotation these builds never cast: cast Arcane Power (needs the Arcane Power talent); cast Berserking, cast Arcane Missiles (rank 7) (its condition never held in these fights); cast Arcane Blast (needs the Arcane Blast talent); cast Combustion (needs the Combustion talent).
+Lines of the simulator's rotation these builds never cast: strict sequence: cast Read Leyline; channel Evocation (interrupt it when a higher line is ready) (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`frostfire-fingers-of-frost-raid`](frostfire-fingers-of-frost-raid.md) |
 |---|---|
-| Pyroblast | 39% |
-| Fire Blast | 17% |
-| Scorch | 16% |
-| Frostfire Bolt | 12% |
-| Ignite | 10% |
-| Fireball | 6% |
+| Frostfire Bolt | 44% |
+| Pyroblast | 21% |
+| Fire Blast | 15% |
+| Ignite | 12% |
+| Scorch | 8% |
+| Demonic Rune | 1% |
 
 ## Notes
 
@@ -166,6 +162,7 @@ Damage by ability:
 - 2026-10-16 (repair_builds.py, client build 70425 trees): 0/29/22 -> 0/29/22; Fire Power 4 -> 3 (rank cap); refill +1 Improved Fire Blast (refill: the fire-raid model, raid-dps).
 - 2026-10-22 (repair_builds.py, client build 70425 trees): 0/29/22 -> 0/29/22; Elemental Precision 5 -> 3 (rank cap); Piercing Ice 3 gone; +1 Frost Warding (tier gating for Ice Shards); +1 Frost Warding (tier gating for Ice Shards); +1 Improved Frostbolt (tier gating for Shatter); +1 Ice Block (tier gating for Fingers of Frost); +1 Arctic Reach (tier gating for Fingers of Frost) (refill: the fire-raid model, raid-dps).
 - 2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 0/29/22 -> 0/29/22; Improved Fireball -> Accelerant (renamed); Elemental Precision -> Precision (renamed) (refill: the fire-raid model, raid-dps).
+- 2026-11-20: filler points moved (1 point from Flame Throwing to Burning Soul): the same DPS bit for bit in a full raid and on the training dummy. The new talents follow the utility order (interrupt protection, threat, mana, range, survival; dodge, parry and block count for nothing in a damage dealer's raid), which the simulator cannot measure (deep-runs/credited_fillers_1120.py; the user's rule of 2026-11-08 that a page pick holds no talent that does nothing).
 
 ## Open questions (verify in the live game)
 

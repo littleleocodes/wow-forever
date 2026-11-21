@@ -1,0 +1,57 @@
+{
+ "mage/frost-raid": {
+  "date": "2026-11-20",
+  "commit": "2e6e77d84",
+  "fights": 10000,
+  "sim": "frost-med-raid",
+  "ours": [
+   "frost-ml-raid"
+  ],
+  "dps": {
+   "frost-med-raid": {
+    "1": 796.28,
+    "2": 796.23
+   },
+   "frost-ml-raid": {
+    "1": 799.18,
+    "2": 800.56
+   }
+  },
+  "best_ours": "frost-ml-raid",
+  "gain": [
+   0.0036,
+   0.0054
+  ],
+  "pick": "frost-med-raid"
+ },
+ "mage/arcane-dps": {
+  "date": "2026-11-20",
+  "commit": "2e6e77d84",
+  "fights": 10000,
+  "sim": "arcane-fire-raid",
+  "ours": [
+   "arcane-open-raid",
+   "arcane-blast-raid"
+  ],
+  "dps": {
+   "arcane-fire-raid": {
+    "1": 825.68,
+    "2": 826.35
+   },
+   "arcane-open-raid": {
+    "1": 822.75,
+    "2": 823.82
+   },
+   "arcane-blast-raid": {
+    "1": 692.65,
+    "2": 692.64
+   }
+  },
+  "best_ours": "arcane-open-raid",
+  "gain": [
+   -0.0035,
+   -0.0031
+  ],
+  "pick": "arcane-fire-raid"
+ }
+}

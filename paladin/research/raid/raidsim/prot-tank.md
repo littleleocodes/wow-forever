@@ -4,7 +4,7 @@
 
 | Build | Split | Tank value | Threat/s | Damage taken/s | DPS | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `protection-ml-tank` | 0/35/16 | 1.025 | 1096 | 299 | 435 | 24 | +52.1% |
+| `protection-ml-tank` | 0/35/16 | 1.025 | 1096 | 299 | 435 | 24 | +52.2% |
 | `prot-tank` | 0/33/18 | 1.000 | 1032 | 295 | 401 | 37 | +53.3% |
 | sim preset: Default | - | 0.996 | 1069 | 309 | 426 | 19 | - |
 | `opt-prot-tank-raid-tank` | 1/34/16 | 0.976 | 979 | 294 | 381 | 43 | +54.0% |

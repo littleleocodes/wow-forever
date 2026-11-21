@@ -1,5 +1,7 @@
 # Warlock
 
+> **2026-11-20:** the raid pages were updated after the play check (what each build presses, checked build by build). The rankings and picks on this page update with the leveling pages on Sunday 2026-11-22; until then the raid pages are newer.
+
 > Classic's Shadow Bolt turret (DS/Ruin or SM/Ruin) with a pet for utility. Forever rebuilds all three trees (21 new talents,
 > 19 Classic talents gone) into a damage-over-time Affliction (Pandemic, Wrack), a demon Demonology (Demonic Pact, Demonic
 > Knowledge, demons that scale from your gear) and a fire Destruction (Conflagrate, Shadow and Flame, Incinerate). Playable by

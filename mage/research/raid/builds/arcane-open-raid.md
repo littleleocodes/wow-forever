@@ -19,8 +19,8 @@ The Arcane raid build the open talent search found on 2026-11-11: every legal 51
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Channeling** | 2/5 | **NEW** | Gives your Arcane Missiles spell a 40% chance and your Arcane Blast and Arcane Wrath spells a 28% chance to not lose casting time when you take damage. |
-| **Arcane Resilience** | 3/3 | changed | Increases your Armor by an amount equal to 75% of your Intellect. |
+| **Improved Channeling** | 4/5 | **NEW** | Gives your Arcane Missiles spell a 80% chance and your Arcane Blast and Arcane Wrath spells a 56% chance to not lose casting time when you take damage. |
+| **Arcane Resilience** | 1/3 | changed | Increases your Armor by an amount equal to 25% of your Intellect. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Missile Barrage** | 2/2 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Arcane Wrath, Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
@@ -63,13 +63,14 @@ The Arcane raid build the open talent search found on 2026-11-11: every legal 51
 
 ## Rank among our builds and the community simulator's
 
-**2 of 3** for `arcane-dps` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 4** for `arcane-dps` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Arcane Fire* | community simulator | - | 581 | +0.0% | 778 | -1.6% | 3 s |
-| 2 | **[`arcane-open-raid`](arcane-open-raid.md)** | ours: derived (open search) | 31/17/3 | 580 | -0.0% | 790 | +0.0% | 5 s |
-| 3 | [`arcane-blast-raid`](arcane-blast-raid.md) | ours: hand draft | 31/13/7 | 560 | -3.6% | 707 | -10.5% | 4 s |
+| 1 | **[`arcane-open-raid`](arcane-open-raid.md)** | ours: derived (open search) | 31/17/3 | 579 | +0.0% | 822 | -0.4% | 4 s |
+| 2 | [`arcane-fire-raid`](arcane-fire-raid.md) | ours: derived (simulator preset) | 32/16/3 | 578 | -0.2% | 826 | +0.0% | 3 s |
+| 3 | *Arcane Fire* | community simulator | - | 578 | -0.2% | 826 | +0.0% | 3 s |
+| 4 | [`arcane-blast-raid`](arcane-blast-raid.md) | ours: hand draft | 31/13/7 | 557 | -3.8% | 693 | -16.1% | 4 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -88,7 +89,7 @@ The Arcane raid build the open talent search found on 2026-11-11: every legal 51
   12. move down below 'if Missile Barrage is up: cast Arcane Missiles (rank 7)': cast Fire Blast (+0.2%, pass 6)
   13. only with 10s or more of the fight left: if stacks of Arcane Blast ≥ 1.5: cast Frostbolt (rank 10) (+0.2%, pass 6)
   14. insert before the filler: cast Mana Citrine (+0.3%, pass 6)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 15 passes, the last 2026-11-11, 29 changes to the base rotation; third-seed check: arcane-open-raid 752 -> 773 DPS (+2.8%), sim preset: Arcane Fire 739 -> 761 DPS (+2.9%), arcane-blast-raid 622 -> 693 DPS (+11.4%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 16 passes, the last 2026-11-20, 29 changes to the base rotation; third-seed check: arcane-fire-raid 826 -> 826 DPS (+0.0%), arcane-blast-raid 693 -> 693 DPS (+0.0%), arcane-open-raid 823 -> 823 DPS (+0.0%)):
   1. threshold 3 -> 1.5: if (stacks of Arcane Blast ≥ 3 or mana % < 40%): cast Frostbolt (+0.2%, pass 1)
   2. insert in the middle: if mana ≥ (time left in the fight × 110): cast Fire Blast (+2.3%, pass 2)
   3. drop the condition: if mana ≥ (time left in the fight × 110): cast Fire Blast (+2.4%, pass 2)
@@ -119,29 +120,31 @@ The Arcane raid build the open talent search found on 2026-11-11: every legal 51
   28. drop the condition: if time left in the fight ≥ 40s: cast Fire Blast (+0.5%, pass 13)
   29. drop: cast Mana Citrine (+0.2%, pass 13)
 
+Before the pull: at -2s: if Ice Barrier is known: cast Ice Barrier.
+
 | # | Priority (the first line whose condition holds is cast) | [`arcane-open-raid`](arcane-open-raid.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 3.6 |
-| 3 | cast Fire Blast | 7.2 |
-| 4 | if Arcane Blast is up and time left on Arcane Blast < cast time of Arcane Blast: cast Arcane Blast | 6.5 |
-| 5 | cast Arcane Wrath | 5.2 |
-| 6 | if stacks of Arcane Blast ≥ 1.5 and time left in the fight ≥ 10s: cast Frostbolt (rank 10) | 3.7 |
-| 7 | cast Arcane Blast | 6.5 |
+| 3 | cast Fire Blast | 7.1 |
+| 4 | if Arcane Blast is up and time left on Arcane Blast < cast time of Arcane Blast: cast Arcane Blast | 6.3 |
+| 5 | cast Arcane Wrath | 5.5 |
+| 6 | if stacks of Arcane Blast ≥ 1.5 and time left in the fight ≥ 10s: cast Frostbolt (rank 10) | 3.5 |
+| 7 | cast Arcane Blast | 6.3 |
 | 8 | cast Robe of the Archmage | as ready |
 | 9 | cast Mana Citrine | as ready |
 
-Lines of the simulator's rotation these builds never cast: cast Fireball (rank 11), cast spell 1326055 (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Ice Barrier (needs the Ice Barrier talent); cast Fireball (rank 11) (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`arcane-open-raid`](arcane-open-raid.md) |
 |---|---|
-| Arcane Wrath | 29% |
+| Arcane Wrath | 30% |
 | Arcane Missiles | 25% |
-| Fire Blast | 19% |
-| Arcane Blast | 14% |
-| Frostbolt | 12% |
+| Fire Blast | 18% |
+| Arcane Blast | 13% |
+| Frostbolt | 11% |
 | Ignite | 2% |
 | Demonic Rune | 1% |
 | Fireball | 0% |
@@ -155,6 +158,7 @@ Damage by ability:
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Improved Channeling, Arcane Resilience.
 - Simulator numbers are the community's model of the beta (wowsims/forever ff9babb (client 70888) with this project's patches), not in-game measurements.
 - 2026-11-11 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Channeling -> Arcane Resilience (survival); Improved Channeling -> Arcane Resilience (survival). Net +0.00% on a third seed.
+- 2026-11-20: 2 points back in Improved Channeling (pushback protection): the filler audit of arcane-dps-fillers-arcane-open-raid.json had taken them for free because its tags missed Forever's wording ("to not lose casting time"; utility_tags.py fixed the same day). The same damage within 0.1% (worst +0.00% over the entry's setting and a full raid, seeds 1 and 2).
 
 ## Open questions (verify in the live game)
 

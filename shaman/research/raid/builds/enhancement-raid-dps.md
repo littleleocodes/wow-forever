@@ -70,12 +70,12 @@ Allocation adopted on 2026-09-27 from `opt-enhancement-dps-raid-dps`, the best b
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`enhancement-open-raid`](enhancement-open-raid.md) | ours: derived (open search) | 18/31/2 | 434 | +0.0% | 745 | +0.0% | 20 s |
-| 2 | *Standard* | community simulator | - | 434 | -0.1% | 744 | -0.1% | 20 s |
-| 3 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: derived (ML search) | 17/31/3 | 430 | -0.9% | 733 | -1.5% | 11 s |
-| 4 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 17/29/5 | 427 | -1.5% | 732 | -1.7% | 21 s |
-| 5 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 14/31/6 | 417 | -3.8% | 698 | -6.2% | 26 s |
-| 6 | **[`enhancement-raid-dps`](enhancement-raid-dps.md)** | ours: hand draft | 11/31/9 | 397 | -8.5% | 670 | -10.0% | 20 s |
+| 1 | *Standard* | community simulator | - | 425 | +0.0% | 730 | +0.0% | 18 s |
+| 2 | [`enhancement-open-raid`](enhancement-open-raid.md) | ours: derived (open search) | 18/31/2 | 425 | -0.1% | 729 | -0.2% | 18 s |
+| 3 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: derived (ML search) | 17/31/3 | 423 | -0.6% | 719 | -1.5% | 8 s |
+| 4 | [`elemental-enhancement-ml-raid`](elemental-enhancement-ml-raid.md) | ours: derived (ML search) | 17/29/5 | 420 | -1.3% | 719 | -1.6% | 18 s |
+| 5 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 14/31/6 | 409 | -3.7% | 685 | -6.2% | 24 s |
+| 6 | **[`enhancement-raid-dps`](enhancement-raid-dps.md)** | ours: hand draft | 11/31/9 | 391 | -8.1% | 656 | -10.2% | 15 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -101,18 +101,18 @@ Allocation adopted on 2026-09-27 from `opt-enhancement-dps-raid-dps`, the best b
   13. move to the top: if not Flame Shock is on the target and time left in the fight ≥ 10s: cast Flame Shock (+0.2%, pass 13)
   14. drop: if auraIsInactive: cast Rockbiter Weapon (+9.8%, pass 16)
 
-Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of Air Totem; at -1.5s: cast Searing Totem.
+Before the pull: at -4.5s: cast Strength of Earth Totem (rank 4); at -3s: cast Grace of Air Totem (rank 2); at -1.5s: cast Searing Totem.
 
 | # | Priority (the first line whose condition holds is cast) | [`enhancement-raid-dps`](enhancement-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | if time left on the totem ≤ 0s: cast Strength of Earth Totem | 0.3 |
-| 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem | 0.3 |
+| 1 | if time left on the totem ≤ 0s: cast Strength of Earth Totem (rank 4) | 0.3 |
+| 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem (rank 2) | 0.3 |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | cast Stormstrike | 7.2 |
 | 5 | if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt | 4.4 |
 | 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.3 |
-| 7 | if not Flame Shock is on the target: cast Flame Shock | 3.9 |
-| 8 | cast Earth Shock | 4.1 |
+| 7 | if not Flame Shock is on the target: cast Flame Shock (rank 5) | 4.1 |
+| 8 | cast Earth Shock | 4.3 |
 | 9 | if number of targets = 1 and time left on the totem ≤ 0s: cast Searing Totem | 1.3 |
 
 Damage by ability:
@@ -121,9 +121,9 @@ Damage by ability:
 |---|---|
 | Auto Attack | 24% |
 | Windfury Weapon | 16% |
-| Lightning Bolt | 15% |
-| Flame Shock | 15% |
-| Earth Shock | 14% |
+| Lightning Bolt | 16% |
+| Earth Shock | 15% |
+| Flame Shock | 14% |
 | Stormstrike | 9% |
 | Searing Totem | 6% |
 

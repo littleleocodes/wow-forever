@@ -47,14 +47,14 @@ The Beast Mastery build the machine-learning talent search found in a full raid 
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `bm-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 4** for `bm-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *BM* | community simulator | - | 546 | +0.0% | 1009 | -0.7% | 33 s |
-| 2 | **[`beast-mastery-ml-raid`](beast-mastery-ml-raid.md)** | ours: derived (ML search) | 31/20/0 | 535 | -2.1% | 1016 | +0.0% | 33 s |
-| 3 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 526 | -3.8% | 937 | -7.8% | 15 s |
-| 4 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: derived (ML search) | 28/21/2 | 522 | -4.6% | 1005 | -1.1% | 30 s |
+| 1 | *BM* | community simulator | - | 491 | +0.0% | 940 | -0.6% | 82 s |
+| 2 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 482 | -1.8% | 905 | -4.3% | 64 s |
+| 3 | **[`beast-mastery-ml-raid`](beast-mastery-ml-raid.md)** | ours: derived (ML search) | 31/20/0 | 480 | -2.2% | 946 | +0.0% | 82 s |
+| 4 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: derived (ML search) | 27/22/2 | 477 | -2.8% | 942 | -0.4% | 73 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -74,7 +74,7 @@ The Beast Mastery build the machine-learning talent search found in a full raid 
   13. insert at the top: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+19.8%, pass 10)
   14. threshold 30% -> 10%: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+2.9%, pass 10)
   15. only with 3s or more of the fight left: if time left on Serpent Sting < 4s: cast Serpent Sting (+0.4%, pass 10)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 19 passes, the last 2026-11-10, 14 changes to the base rotation; third-seed check: beast-mastery-ml-raid 897 -> 966 DPS (+7.7%), sim preset: BM 885 -> 962 DPS (+8.7%), mm-hawk-raid 833 -> 895 DPS (+7.4%), beast-marks-ml-raid 874 -> 957 DPS (+9.5%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 20 passes, the last 2026-11-20, 15 changes to the base rotation; third-seed check: beast-mastery-ml-raid 883 -> 907 DPS (+2.7%), sim preset: BM 878 -> 901 DPS (+2.7%), mm-hawk-raid 845 -> 864 DPS (+2.2%), beast-marks-ml-raid 871 -> 894 DPS (+2.7%)):
   1. move to the top: if time to the next auto attack > 0.5s: cast Multi-Shot (+1.9%, pass 1)
   2. drop the condition: if time to the next auto attack > 1s: cast Summon Hawk (+0.4%, pass 1)
   3. threshold 1s -> 0.75s: if time left on Serpent Sting < 1s and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 2)
@@ -89,28 +89,36 @@ The Beast Mastery build the machine-learning talent search found in a full raid 
   12. drop the condition: if time to the next auto attack > 0.5s and mana % ≥ 30%: cast Arcane Shot (+0.3%, pass 11)
   13. spell probe: insert in the middle: if auraIsInactive: cast Sniper Shot (+1.3%, pass 12)
   14. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 0.25s and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 13)
+  15. only above 60% mana: cast Summon Hawk (+0.8%, pass 20)
 
-Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
+Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Hawk (rank 6); at -19s: move to “Pull range” yd.
 
 | # | Priority (the first line whose condition holds is cast) | [`beast-mastery-ml-raid`](beast-mastery-ml-raid.md) casts/min |
 |---|---|---|
-| 1 | if time to the next auto attack > 0.5s and mana % ≥ 10%: cast Arcane Shot | 5.2 |
-| 2 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 |
-| 3 | cast Summon Hawk | 4.6 |
-| 4 | use every other cooldown when ready | as ready |
-| 5 | if time left on Serpent Sting < 4s and time left in the fight ≥ 3s: cast Serpent Sting | 4.2 |
-| 6 | if auraIsInactive and mana % ≥ 70%: cast Intimidation | 0.3 |
+| 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready |
+| 2 | if not Hunter's Mark is up: cast Hunter's Mark | 0.7 |
+| 3 | if not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 2.4 |
+| 4 | if “Use Summon Hawk” and “Use Arcane Shot” and the sequence is complete: reset sequence 'HHA' | as ready |
+| 5 | if “Use Summon Hawk” and “Use Arcane Shot”: sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot | 13.2 |
+| 6 | if “Use Summon Hawk” and not “Use Arcane Shot”: cast Summon Hawk | 5.3 |
+| 7 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 2.5 |
+| 8 | if “Use Aimed Shot”: cast Aimed Shot | 4.0 |
+| 9 | if unitDistance ≠ “Shoot spot” and not spellInRange and (“Windup close” or “Just shot”): move to “Shoot spot” yd | as ready |
+| 10 | if unitDistance ≠ “Shoot spot”: wait inputDelay | as ready |
+
+Lines of the simulator's rotation these builds never cast: cast Multi-Shot (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`beast-mastery-ml-raid`](beast-mastery-ml-raid.md) |
 |---|---|
-| Pet: Auto Attack | 40% |
-| Auto Shot | 29% |
-| Serpent Sting | 13% |
-| Arcane Shot | 10% |
+| Auto Shot | 34% |
+| Pet: Auto Attack | 32% |
+| Serpent Sting | 11% |
+| Aimed Shot | 9% |
 | Pet: Claw | 6% |
-| Summon Hawk | 2% |
+| Arcane Shot | 5% |
+| Summon Hawk | 3% |
 | Pet: Bite | 0% |
 
 ## Notes

@@ -3,79 +3,49 @@
  "spec": "frost-raid",
  "build": "frost-ml-raid",
  "setting": "raid",
- "date": "2026-11-19",
+ "date": "2026-11-20",
  "tank": false,
  "removal": {
-  "Arcane Concentration": -0.00040633019416680405,
-  "Arcane Impact": 0.004733803567188111,
+  "Arcane Concentration": 0.0003423862857869775,
+  "Arcane Meditation": 0.0015211240707720952,
   "Arcane Resilience": -0.0,
-  "Arcane Subtlety": 0.027609242498083608,
-  "Arctic Reach": -0.0,
-  "Cold Snap": -0.0,
-  "Fingers of Frost": 0.09836752445676211,
-  "Frost Channeling": -0.0005415192395530344,
-  "Frost Warding": 1.6156631372776786e-05,
-  "Ice Barrier": 0.11896593450364412,
-  "Ice Block": -0.0,
-  "Ice Lance": 0.034328332847260556,
-  "Ice Shards": 0.08369213431298195,
+  "Arcane Subtlety": 0.027432491154982475,
+  "Cold Snap": 0.0004897489909240216,
+  "Fingers of Frost": 0.20962133722538112,
+  "Frost Channeling": 0.010552164121008123,
+  "Ice Barrier": 0.15111170369029758,
+  "Ice Lance": 0.054056818112609206,
+  "Ice Shards": 0.11926833834345896,
   "Improved Channeling": -0.0,
-  "Improved Frostbolt": 0.1402334861100879,
-  "Incineration": 0.00549196186346701,
-  "Missile Barrage": 0.009218347922392178,
-  "Precision": 0.06709696249922537,
-  "Shatter": 0.06958638634005543,
-  "Winter's Chill": -0.0008722755424865891
+  "Improved Cone of Cold": 0.06536146887165994,
+  "Improved Frostbolt": 0.14657450751045342,
+  "Incineration": 0.0020586394686109566,
+  "Magic Absorption": 2.8088093665834535e-05,
+  "Missile Barrage": -0.0003714951973645686,
+  "Precision": 0.07617901277504935,
+  "Shatter": 0.12322090921982132,
+  "Winter's Chill": 0.16659673208734904
  },
  "free": [
   "Arcane Concentration",
+  "Arcane Meditation",
   "Arcane Resilience",
-  "Arctic Reach",
-  "Frost Channeling",
-  "Frost Warding",
   "Improved Channeling",
-  "Winter's Chill"
+  "Magic Absorption",
+  "Missile Barrage"
  ],
  "kept_for_rotation": [
   "Fingers of Frost",
   "Ice Barrier",
-  "Missile Barrage"
+  "Winter's Chill"
  ],
  "active_never_worth": [
-  "Cold Snap",
-  "Ice Block"
+  "Cold Snap"
  ],
  "abilities_never_cast": [],
  "moves": [
   {
    "round": 1,
-   "kind": "utility",
-   "from": "Arcane Concentration",
-   "to": "Frost Channeling",
-   "seed1": -0.00035953168292501836,
-   "seed2": -0.0002964687330371252,
-   "utility": "threat"
-  },
-  {
-   "round": 2,
-   "kind": "utility",
-   "from": "Arctic Reach",
-   "to": "Magic Absorption",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "mana"
-  },
-  {
-   "round": 3,
-   "kind": "utility",
-   "from": "Frost Warding",
-   "to": "Arctic Reach",
-   "seed1": 0.0,
-   "seed2": -2.3596707231510194e-06,
-   "utility": "range"
-  },
-  {
-   "round": 4,
    "kind": "utility",
    "from": "Improved Channeling",
    "to": "Arcane Resilience",
@@ -84,7 +54,7 @@
    "utility": "survival"
   },
   {
-   "round": 5,
+   "round": 2,
    "kind": "utility",
    "from": "Improved Channeling",
    "to": "Arcane Resilience",
@@ -93,7 +63,7 @@
    "utility": "survival"
   }
  ],
- "final_seed3": 0.0004205448078182794,
+ "final_seed3": 0.0,
  "start": {
   "Arcane": [
    [
@@ -109,29 +79,29 @@
     2
    ],
    [
+    "Magic Absorption",
+    1
+   ],
+   [
     "Arcane Concentration",
-    3
+    5
    ],
    [
     "Missile Barrage",
     2
    ],
    [
-    "Arcane Impact",
-    3
+    "Arcane Meditation",
+    2
    ]
   ],
   "Fire": [
    [
     "Incineration",
-    5
+    2
    ]
   ],
   "Frost": [
-   [
-    "Frost Warding",
-    2
-   ],
    [
     "Improved Frostbolt",
     5
@@ -146,22 +116,18 @@
    ],
    [
     "Frost Channeling",
-    2
+    3
    ],
    [
     "Ice Lance",
     1
    ],
    [
-    "Arctic Reach",
-    2
-   ],
-   [
-    "Ice Block",
-    1
-   ],
-   [
     "Shatter",
+    3
+   ],
+   [
+    "Improved Cone of Cold",
     3
    ],
    [
@@ -174,7 +140,7 @@
    ],
    [
     "Winter's Chill",
-    3
+    5
    ],
    [
     "Ice Barrier",
@@ -197,33 +163,29 @@
     2
    ],
    [
+    "Magic Absorption",
+    1
+   ],
+   [
     "Arcane Concentration",
-    2
+    5
    ],
    [
     "Missile Barrage",
     2
    ],
    [
-    "Arcane Impact",
-    3
-   ],
-   [
-    "Magic Absorption",
-    1
+    "Arcane Meditation",
+    2
    ]
   ],
   "Fire": [
    [
     "Incineration",
-    5
+    2
    ]
   ],
   "Frost": [
-   [
-    "Frost Warding",
-    1
-   ],
    [
     "Improved Frostbolt",
     5
@@ -245,15 +207,11 @@
     1
    ],
    [
-    "Arctic Reach",
-    2
-   ],
-   [
-    "Ice Block",
-    1
-   ],
-   [
     "Shatter",
+    3
+   ],
+   [
+    "Improved Cone of Cold",
     3
    ],
    [
@@ -266,7 +224,7 @@
    ],
    [
     "Winter's Chill",
-    3
+    5
    ],
    [
     "Ice Barrier",

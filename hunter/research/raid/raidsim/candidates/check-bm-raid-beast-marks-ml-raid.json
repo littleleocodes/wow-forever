@@ -1,0 +1,114 @@
+{
+ "id": "check-bm-raid-beast-marks-ml-raid",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    3
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Bestial Swiftness",
+    1
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Summon Hawk",
+    1
+   ],
+   [
+    "Intimidation",
+    1
+   ],
+   [
+    "Bestial Discipline",
+    2
+   ],
+   [
+    "Frenzy",
+    2
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Improved Arcane Shot",
+    2
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Barrage",
+    2
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    2
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-11-20) for bm-raid from beast-marks-ml-raid in the raid setting: 932.4 -> 942.3 DPS on a third seed.",
+ "search": {
+  "start": "beast-marks-ml-raid",
+  "setting": "raid",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Improved Arcane Shot -> Barrage",
+    "gain_seed1": 0.009757083158594249,
+    "gain_seed2": 0.008450735609038418,
+    "split": "28/21/2"
+   },
+   {
+    "round": 2,
+    "move": "1 point Frenzy -> Barrage",
+    "gain_seed1": 0.0012146276588886895,
+    "gain_seed2": 0.0022489056791252793,
+    "split": "27/22/2"
+   }
+  ],
+  "dps_start": 932.4024437159512,
+  "dps_end": 942.3070410610497,
+  "gain": 0.01062266343449858,
+  "tank": false,
+  "date": "2026-11-20",
+  "sim": {
+   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
+   "racials": "off",
+   "pet_normalize": true,
+   "patch_hash": "125d59c4f975f5df",
+   "simulator": "wowsims/forever",
+   "client": "1.60.1.70938"
+  }
+ }
+}

@@ -1,0 +1,189 @@
+{
+ "class": "mage",
+ "spec": "arcane-frost-raid",
+ "game": "forever",
+ "date": "2026-11-20",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
+  "commit": "2e6e77d84",
+  "racials": "off",
+  "pet_normalize": true,
+  "patch_hash": "125d59c4f975f5df",
+  "simulator": "wowsims/forever",
+  "client": "1.60.1.70938",
+  "gear_raid": "_reference/data/raidsim/gear_sets/forever/mage-dps-p1.p1opt.gear.json",
+  "gear_max": "F:\\wow-forever\\_reference\\data\\raidsim\\gear_sets\\forever\\mage-dps-p1.p1opt.gear.json",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)"
+  },
+  "dummy60": {
+   "label": "level-60 dummy",
+   "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 180 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else; none the spec cannot benefit from, such as Enhancement's Windfury Totem), consumables (and the Classic sim's world buffs), 180 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  },
+  "ladder-mana": {
+   "label": "+ mana",
+   "how": "the training dummy plus the raid's mana buffs and debuffs: mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom"
+  },
+  "ladder-armor": {
+   "label": "+ armor",
+   "how": "the training dummy plus the raid's armor buffs and debuffs (and every group before it): sunder_armor, expose_armor, faerie_fire, curse_of_recklessness"
+  },
+  "ladder-physical": {
+   "label": "+ physical",
+   "how": "the training dummy plus the raid's physical buffs and debuffs (and every group before it): battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas"
+  },
+  "ladder-spell": {
+   "label": "+ spell",
+   "how": "the training dummy plus the raid's spell buffs and debuffs (and every group before it): arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader"
+  },
+  "curve60": {
+   "label": "60 s",
+   "how": "the training dummy without execute phases, a 60 s fight (the DPS-over-time curve)"
+  },
+  "curve120": {
+   "label": "120 s",
+   "how": "the training dummy without execute phases, a 120 s fight (the DPS-over-time curve)"
+  },
+  "curve180": {
+   "label": "180 s",
+   "how": "the training dummy without execute phases, a 180 s fight (the DPS-over-time curve)"
+  },
+  "curve240": {
+   "label": "240 s",
+   "how": "the training dummy without execute phases, a 240 s fight (the DPS-over-time curve)"
+  },
+  "curve360": {
+   "label": "360 s",
+   "how": "the training dummy without execute phases, a 360 s fight (the DPS-over-time curve)"
+  }
+ },
+ "results": [
+  {
+   "label": "arcane-frost-open-raid",
+   "split": "28/10/13",
+   "ours": true,
+   "dps": {
+    "dummy": 536.3715862188897,
+    "dummy60": 560.0975808194468,
+    "ladder-mana": 566.8024879457512,
+    "ladder-armor": 566.8024879457512,
+    "ladder-physical": 580.846691969142,
+    "ladder-spell": 638.9313611660543,
+    "raid": 691.8488052783711,
+    "curve60": 562.8371871691954,
+    "curve120": 565.0693232991742,
+    "curve180": 536.3715862188897,
+    "curve240": 518.7123532041599,
+    "curve360": 455.68203701969844,
+    "max": 691.8488052783711,
+    "max60": 682.2080790367063
+   },
+   "raid_spell_casts": {
+    "10212": 13.569,
+    "10274": 13.569,
+    "10181": 25.93166666666667,
+    "10199": 0.5996666666666667,
+    "12051": 0.0003333333333333333,
+    "1239700": 24.169333333333334,
+    "1326082": 14.078666666666667
+   },
+   "raid_casts": {
+    "Major Mana Potion": 0.978,
+    "Mana Ruby": 1.0,
+    "Mana Citrine": 0.08833333333333333,
+    "Arcane Missiles": 27.138,
+    "OtherActionManaGain": 72.58866666666667,
+    "Frostbolt": 25.93166666666667,
+    "Fire Blast": 0.5996666666666667,
+    "Demonic Rune": 0.578,
+    "Evocation": 0.0003333333333333333,
+    "Robe of the Archmage": 1.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Arcane Blast": 24.169333333333334,
+    "Arcane Wrath": 14.078666666666667
+   },
+   "raid_shares": {
+    "Arcane Missiles": 0.2948,
+    "Frostbolt": 0.2893,
+    "Arcane Wrath": 0.2514,
+    "Arcane Blast": 0.1561,
+    "Fire Blast": 0.0048,
+    "Demonic Rune": 0.0035
+   },
+   "raid_fp": "66bd2a7d72232473"
+  },
+  {
+   "label": "frost-arcane-power-raid",
+   "split": "32/3/16",
+   "ours": true,
+   "dps": {
+    "dummy": 570.7714776495163,
+    "dummy60": 595.8800553977462,
+    "ladder-mana": 576.2091310463827,
+    "ladder-armor": 576.2091310463827,
+    "ladder-physical": 590.3090629892531,
+    "ladder-spell": 649.3399692881788,
+    "raid": 680.3537319184736,
+    "curve60": 596.2831299377793,
+    "curve120": 585.5773040242071,
+    "curve180": 570.7714776495163,
+    "curve240": 570.4820181178837,
+    "curve360": 551.2341965123131,
+    "max": 680.3537319184736,
+    "max60": 702.2593781850113
+   },
+   "raid_spell_casts": {
+    "10212": 13.409,
+    "12042": 1.0,
+    "10199": 0.45166666666666666,
+    "1326082": 12.535,
+    "10181": 25.234,
+    "10274": 13.409,
+    "1239700": 24.871,
+    "12043": 1.0
+   },
+   "raid_casts": {
+    "Talisman of Ephemeral Power": 2.0,
+    "Arcane Missiles": 26.818,
+    "OtherActionManaGain": 68.314,
+    "Arcane Power": 1.0,
+    "Fire Blast": 0.45166666666666666,
+    "Robe of the Archmage": 1.0,
+    "Arcane Wrath": 12.535,
+    "Frostbolt": 25.234,
+    "Arcane Blast": 24.871,
+    "Presence of Mind": 1.0,
+    "Major Mana Potion": 0.21633333333333332,
+    "Mana Ruby": 0.9616666666666667,
+    "Mana Citrine": 0.10333333333333333,
+    "Demonic Rune": 0.09633333333333334
+   },
+   "raid_shares": {
+    "Arcane Missiles": 0.3037,
+    "Frostbolt": 0.2953,
+    "Arcane Wrath": 0.2359,
+    "Arcane Blast": 0.1609,
+    "Fire Blast": 0.0037,
+    "Demonic Rune": 0.0006
+   },
+   "raid_fp": "0843ec226801e3f6"
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "raid": {
+  "class": "warlock",
+  "spec": "destro-raid",
+  "date": "2026-11-20",
+  "commit": "2e6e77d84",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "_reference/data/raidsim/apls/warlock/upstream/destro.apl.json",
+  "start": "_reference\\data\\raidsim\\apls\\warlock\\upstream\\destro.apl.json",
+  "builds": [
+   {
+    "label": "destruction-succubus-raid",
+    "talents": "2550002013--0050355103101351"
+   }
+  ],
+  "tuned_on": [
+   "destruction-succubus-raid"
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [],
+  "final": {
+   "raid": {
+    "destruction-succubus-raid": {
+     "before": 881.2378362068524,
+     "after": 881.2378362068524,
+     "base": 881.2378362068524,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.0040106000009,
+     "oom_after": 0.0040106000009
+    }
+   }
+  },
+  "signature": {
+   "specs": [
+    "Destruction"
+   ],
+   "required": [],
+   "rejected": {
+    "structure": 0,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  }
+ }
+}

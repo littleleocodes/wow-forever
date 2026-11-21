@@ -1,5 +1,7 @@
 # Rogue
 
+> **2026-11-20:** the raid pages were updated after the play check (what each build presses, checked build by build). The rankings and picks on this page update with the leveling pages on Sunday 2026-11-22; until then the raid pages are newer.
+
 > Classic's pure melee DPS: Combat swords or daggers in raids, Seal Fate and Hemorrhage builds in PvP. Forever folds the
 > weapon specializations into Hack and Slash, replaces Improved Backstab with Puncturing Wounds, builds Assassination around
 > Mutilate and Venom and turns Subtlety into a Rupture spec. Playable by Dwarves, Gnomes, Humans, Night Elves, Orcs, Trolls,

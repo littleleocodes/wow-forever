@@ -53,10 +53,10 @@ The Shadow build the machine-learning talent search found in a full raid (every 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md) | ours: optimizer | 20/0/31 | 677 | +0.0% | 776 | -0.5% | 1 s |
-| 2 | *Standard* | community simulator | - | 633 | -6.5% | 775 | -0.5% | 0 s |
-| 3 | **[`shadow-ml-raid`](shadow-ml-raid.md)** | ours: derived (ML search) | 16/0/35 | 603 | -10.9% | 779 | +0.0% | 17 s |
-| 4 | *Smite* | community simulator | - | 226 | -66.6% | 307 | -60.6% | 9 s |
+| 1 | [`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md) | ours: optimizer | 20/0/31 | 673 | +0.0% | 770 | -0.4% | 1 s |
+| 2 | *Standard* | community simulator | - | 628 | -6.8% | 769 | -0.6% | 0 s |
+| 3 | **[`shadow-ml-raid`](shadow-ml-raid.md)** | ours: derived (ML search) | 16/0/35 | 601 | -10.7% | 774 | +0.0% | 16 s |
+| 4 | *Smite* | community simulator | - | 226 | -66.4% | 307 | -60.3% | 9 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -64,7 +64,7 @@ The Shadow build the machine-learning talent search found in a full raid (every 
   1. always rank 2 instead of rank 4: cast Shadow Word: Death (+1.7%, pass 1)
   2. move down below 'cast Shadow Word: Death': cast Mind Blast (+0.3%, pass 1)
   3. insert in the middle: cast Shadow Word: Death (+1.1%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 8 passes, the last 2026-11-02, 4 changes to the base rotation; third-seed check: opt-shadow-dps-raid-dps 782 -> 783 DPS (+0.2%), sim preset: Standard 780 -> 782 DPS (+0.3%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 9 passes, the last 2026-11-20, 4 changes to the base rotation; third-seed check: shadow-ml-raid 772 -> 773 DPS (+0.2%), sim preset: Standard 767 -> 768 DPS (+0.2%), opt-shadow-dps-raid-dps 768 -> 770 DPS (+0.2%)):
   1. move down below 'cast Shadow Word: Death': cast Mind Blast (+0.4%, pass 1)
   2. insert before the filler: cast Devouring Plague (+2.5%, pass 5)
   3. insert at the end: cast Dark Sacrifice (+0.3%, pass 5)
@@ -78,7 +78,7 @@ Before the pull: at -1s: cast Shadowform.
 | 2 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain | 2.6 |
 | 3 | strict sequence: cast Inner Focus; cast Devouring Plague | 0.7 |
 | 4 | cast Shadow Word: Death | 3.1 |
-| 5 | cast Shadow Word: Death (rank 2) | 0.3 |
+| 5 | cast Shadow Word: Death (rank 2) | 0.2 |
 | 6 | cast Mind Blast | 6.4 |
 | 7 | channel Mind Flay | as ready |
 

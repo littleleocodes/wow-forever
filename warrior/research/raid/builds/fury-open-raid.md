@@ -67,11 +67,11 @@ The Fury raid build the open talent search found on 2026-11-08: every legal 51-p
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`fury-open-raid`](fury-open-raid.md)** | ours: derived (open search) | 20/31/0 | 403 | +0.0% | 922 | +0.0% | 0 s |
-| 2 | [`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 403 | -0.0% | 913 | -1.0% | 0 s |
-| 3 | [`arms-2h-raid`](arms-2h-raid.md) | ours: hand draft | 19/32/0 | 391 | -3.1% | 900 | -2.4% | 0 s |
-| 4 | *Fury* | community simulator | - | 382 | -5.3% | 871 | -5.5% | 0 s |
-| 5 | *Arms* | community simulator | - | 333 | -17.3% | 755 | -18.1% | 0 s |
+| 1 | **[`fury-open-raid`](fury-open-raid.md)** | ours: derived (open search) | 20/31/0 | 400 | +0.0% | 921 | +0.0% | 0 s |
+| 2 | [`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 399 | -0.0% | 912 | -1.0% | 0 s |
+| 3 | [`arms-2h-raid`](arms-2h-raid.md) | ours: hand draft | 19/31/1 | 387 | -3.1% | 899 | -2.4% | 0 s |
+| 4 | *Fury* | community simulator | - | 378 | -5.3% | 870 | -5.5% | 0 s |
+| 5 | *Arms* | community simulator | - | 331 | -17.2% | 755 | -18.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -116,7 +116,7 @@ The Fury raid build the open talent search found on 2026-11-08: every legal 51-p
 | # | Priority (the first line whose condition holds is cast) | [`fury-open-raid`](fury-open-raid.md) casts/min |
 |---|---|---|
 | 1 | cast Berserker Rage | 2.0 |
-| 2 | if not Battle Shout is up: cast Battle Shout | 0.3 |
+| 2 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 |
 | 3 | if execute phase (E20): cast Execute | 5.1 |
 | 4 | cast Goblin Sapper Charge | as ready |
 | 5 | cast Dense Dynamite | as ready |
@@ -134,7 +134,7 @@ The Fury raid build the open talent search found on 2026-11-08: every legal 51-p
 | 17 | if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring | 1.1 |
 | 18 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.2 |
 
-Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
+Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
 Damage by ability:
 

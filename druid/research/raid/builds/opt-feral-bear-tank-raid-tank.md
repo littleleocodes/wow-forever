@@ -65,11 +65,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-be
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | **[`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md)** | ours: optimizer | 9/37/5 | 1.157 | +0.0% | 8055 | 376 |
-| 2 | *Bear* | community simulator | - | 1.120 | -3.3% | 8012 | 403 |
-| 3 | *Hybrid* | community simulator | - | 1.009 | -12.8% | 6587 | 401 |
-| 4 | [`feral-combat-ml-tank`](feral-combat-ml-tank.md) | ours: derived (ML search) | 9/35/7 | 1.008 | -12.9% | 6481 | 396 |
-| 5 | [`feral-bear-tank`](feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | -13.6% | 6380 | 396 |
+| 1 | **[`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md)** | ours: optimizer | 9/37/5 | 1.143 | +0.0% | 8049 | 501 |
+| 2 | *Bear* | community simulator | - | 1.060 | -7.3% | 7110 | 511 |
+| 3 | [`feral-combat-ml-tank`](feral-combat-ml-tank.md) | ours: derived (ML search) | 9/35/7 | 1.017 | -11.1% | 6622 | 516 |
+| 4 | [`feral-bear-tank`](feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | -12.5% | 6415 | 517 |
+| 5 | *Hybrid* | community simulator | - | 0.985 | -13.9% | 5987 | 498 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -83,22 +83,33 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-be
   7. insert before the filler: if rage < 20: cast Enrage (+1.2%, pass 12)
   8. drop 'stacks of Lacerate < 5' from the condition: if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate (+0.3%, pass 12)
 
+Before the pull: at -10s: if talentIsKnown and rage < 10: cast Dire Bear Form; at -10s: cast Enrage; at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 item set; at -0.01s: if not activeItemSwapSet: swap to the Main item set; at -250ms: if number of targets = 3 and rage ≥ current cost: cast Maul.
+
 | # | Priority (the first line whose condition holds is cast) | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) casts/min |
 |---|---|---|
-| 1 | use every other cooldown when ready | as ready |
-| 2 | cast Maul | 178.0 |
-| 3 | cast Barkskin | 1.0 |
-| 4 | if rage < 20: cast Enrage | 1.0 |
+| 1 | if unitDistance > 5: move to 5 yd | as ready |
+| 2 | if unitDistance > 5: wait until not unitDistance > 5 | as ready |
+| 3 | if unitDistance ≤ 5: cast Manual Crowd Pummeler | as ready |
+| 4 | if health % ≤ “Barkskin health threshold”: cast Barkskin | 1.0 |
+| 5 | if Goblin Sapper Charge is known: cast Goblin Sapper Charge | as ready |
+| 6 | if DefensivePotion is known: cast DefensivePotion | as ready |
+| 7 | if “Offensive potion is useful without a defensive potion”: cast OffensivePotion | as ready |
+| 8 | if selectedConjured and health % ≤ “Healthstone health threshold”: cast Major Healthstone on self | as ready |
+| 9 | if “Enrage can rescue the next attack”: cast Enrage | 1.0 |
+| 10 | if “Ready to return to the main weapon”: swap to the Main item set | as ready |
+| 11 | if number of targets = 2 and “Enough rage to queue Maul in cleave”: cast Maul | 191.1 |
+| 12 | if number of targets = 3 and “Enough rage to queue Maul for three-target Swipe”: cast Maul | 191.1 |
+| 13 | if not number of targets = 3 and not number of targets = 2 and “Enough rage to queue Maul”: cast Maul | 191.1 |
 
-Lines of the simulator's rotation these builds never cast: cast Faerie Fire, cast Demoralizing Roar (its condition never held in these fights); cast Lacerate (needs the Lacerate talent).
+Lines of the simulator's rotation these builds never cast: cast Feral Charge (Bear), cast Elune's Light, cast Frenzied Regeneration, cast Faerie Fire, cast Demoralizing Roar, cast Swipe, cast Primal Bite (rank 3) (its condition never held in these fights); cast Lacerate on currenttarget, cast Lacerate (needs the Lacerate talent).
 
 Damage by ability (threat for tanks):
 
 | Ability | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) |
 |---|---|
-| Maul | 87% |
-| Windfury Totem | 6% |
-| Auto Attack | 4% |
+| Maul | 90% |
+| Windfury Totem | 5% |
+| Auto Attack | 3% |
 | Judgement of Light | 1% |
 | OtherActionRageGain | 1% |
 | Retribution Aura | 0% |

@@ -38,7 +38,7 @@ The Shockadin (a Holy/Retribution hybrid) raid build the open talent search foun
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Deflection** | 4/5 | moved | Increases your Parry chance by 4%. |
+| **Deflection** | 2/5 | moved | Increases your Parry chance by 2%. |
 | **Benediction** | 5/5 | changed | Reduces the Mana cost of all instant cast spells and abilities by 10%. |
 | **Improved Judgement** | 2/2 | changed | Decreases the cooldown of your Judgement ability by 2 sec. |
 | **Conviction** | 3/3 | changed | Improves your chance to get a critical strike with all spells and attacks by 6%. |
@@ -48,6 +48,7 @@ The Shockadin (a Holy/Retribution hybrid) raid build the open talent search foun
 | **Two-Handed Weapon Specialization** | 3/3 | unchanged | Increases the Holy and Physical damage you deal by 6%, and reduces all threat you generate by 20% while a two-handed melee weapon is equipped. |
 | **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 5 times. |
 | **Champion of the Light** | 3/5 | **NEW** | Increases your spell damage by up to 36% of your Intellect, and reduces the cast time of your Hammer of Wrath by 0.6 sec. |
+| **Unyielding Faith** | 2/2 | changed | Reduces the duration of Fear and Disorient effects on you by 30%. |
 
 ## Core talents (priority order)
 
@@ -62,11 +63,12 @@ The Shockadin (a Holy/Retribution hybrid) raid build the open talent search foun
 
 ## Rank among our builds and the community simulator's
 
-**1 of 1** for `shockadin-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 2** for `shockadin-raid` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`shockadin-open-raid`](shockadin-open-raid.md)** | ours: derived (open search) | 23/0/28 | 479 | +0.0% | 803 | +0.0% | 48 s |
+| 1 | [`shockadin-holy-shock-raid`](shockadin-holy-shock-raid.md) | ours: derived (simulator preset) | 23/0/28 | 479 | +0.0% | 808 | +0.0% | 48 s |
+| 2 | **[`shockadin-open-raid`](shockadin-open-raid.md)** | ours: derived (open search) | 23/0/28 | 479 | -0.1% | 803 | -0.6% | 48 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -79,18 +81,18 @@ Before the pull: at -20s: groupReference; at -30s: if Manual Crowd Pummeler is k
 
 | # | Priority (the first line whose condition holds is cast) | [`shockadin-open-raid`](shockadin-open-raid.md) casts/min |
 |---|---|---|
-| 1 | groupReference | as ready |
-| 2 | if time into the fight ≥ “Delay Major CDs”: use every other cooldown when ready | as ready |
-| 3 | groupReference | as ready |
+| 1 | if time into the fight ≥ “Delay Major CDs”: use every other cooldown when ready | as ready |
+| 2 | if “Should swap from MCP”: swap to the Main item set | as ready |
+| 3 | if “Should swap to MCP”: swap to the Swap1 item set | as ready |
 | 4 | cast Judgement | 6.9 |
 | 5 | cast Consecration | 5.6 |
-| 6 | if “Should refresh seal”: groupReference | as ready |
+| 6 | if “Should refresh seal” and “Is using Seal of Righteousness”: cast Seal of Righteousness | 2.7 |
 | 7 | cast Holy Strike | 6.0 |
 | 8 | if Holy Shock is ready: cast Divine Favor | 0.6 |
 | 9 | cast Holy Shock | 4.3 |
 | 10 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 0.8 |
 
-Lines of the simulator's rotation these builds never cast: cast Exorcism (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Seal of Command, cast Exorcism (its condition never held in these fights).
 
 Damage by ability:
 
@@ -114,6 +116,7 @@ Damage by ability:
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Spiritual Focus, Purifying Power, Infusion of Light, Deflection, Unyielding Faith, Seal of Command, Turn Evil.
 - Simulator numbers are the community's model of the beta (wowsims/forever 16e8542 (client 70790) with this project's patches), not in-game measurements.
 - 2026-11-10 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Infusion of Light -> Purifying Power (mana); Deflection -> Benediction (mana); Deflection -> Benediction (mana); Deflection -> Benediction (mana); Turn Evil -> Deflection (survival); Unyielding Faith -> Deflection (survival); Unyielding Faith -> Deflection (survival). Net -0.01% on a third seed.
+- 2026-11-20: filler points moved (2 points from Deflection to Unyielding Faith): the same DPS bit for bit in a full raid and on the training dummy. The new talents follow the utility order (interrupt protection, threat, mana, range, survival; dodge, parry and block count for nothing in a damage dealer's raid), which the simulator cannot measure (deep-runs/credited_fillers_1120.py; the user's rule of 2026-11-08 that a page pick holds no talent that does nothing).
 
 ## Open questions (verify in the live game)
 

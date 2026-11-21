@@ -2,12 +2,13 @@
  "class": "druid",
  "spec": "balance-dps",
  "game": "forever",
- "date": "2026-11-19",
+ "date": "2026-11-20",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
   "commit": "2e6e77d84",
   "racials": "off",
-  "pet_normalize": false,
+  "pet_normalize": true,
+  "patch_hash": "125d59c4f975f5df",
   "simulator": "wowsims/forever",
   "client": "1.60.1.70938",
   "gear_raid": "_reference/data/raidsim/gear_sets/forever/druid-balance-p1.p1opt.gear.json",
@@ -79,162 +80,167 @@
    "split": "33/0/18",
    "ours": true,
    "dps": {
-    "dummy": 630.3599245622087,
-    "dummy60": 690.5233757844522,
-    "ladder-mana": 634.7306451815165,
-    "ladder-armor": 634.7306451815165,
-    "ladder-physical": 634.4954529025644,
-    "ladder-spell": 701.9384901905802,
-    "raid": 710.6525815715826,
-    "curve60": 624.35089428804,
-    "curve120": 632.6707093373554,
-    "curve180": 630.3599245622087,
-    "curve240": 562.9247553579028,
-    "curve360": 468.24449912737487,
-    "max": 710.6525815715826,
-    "max60": 701.2800280564625
+    "dummy": 611.5260872009214,
+    "dummy60": 669.0253591634212,
+    "ladder-mana": 616.3499643713966,
+    "ladder-armor": 616.3499643713966,
+    "ladder-physical": 615.5598113767328,
+    "ladder-spell": 680.8204580344468,
+    "raid": 689.1021132932328,
+    "curve60": 604.7382381031349,
+    "curve120": 613.8660013061549,
+    "curve180": 611.5260872009214,
+    "curve240": 572.9839862411709,
+    "curve360": 476.2335159727017,
+    "max": 689.1021132932328,
+    "max60": 680.2937859473818
    },
    "raid_spell_casts": {
-    "9835": 12.379666666666667,
-    "24977": 11.711666666666666,
-    "25298": 48.92933333333333
+    "9835": 12.371333333333334,
+    "24977": 11.737333333333334,
+    "9876": 48.91866666666667
    },
    "raid_casts": {
     "Talisman of Ephemeral Power": 2.0,
-    "OtherActionManaGain": 33.932,
-    "item 272438": 1.0,
-    "Major Mana Potion": 1.0026666666666666,
-    "Moonfire": 12.379666666666667,
-    "Insect Swarm": 11.711666666666666,
-    "Starfire": 48.92933333333333
+    "Major Mana Potion": 1.0,
+    "Moonfire": 12.371333333333334,
+    "Insect Swarm": 11.737333333333334,
+    "Starfire": 48.91866666666667,
+    "OtherActionManaGain": 33.839333333333336,
+    "item 272438": 1.0
    },
    "raid_shares": {
-    "Starfire": 0.6749,
-    "Moonfire": 0.1708,
-    "Insect Swarm": 0.1543
-   }
+    "Starfire": 0.6647,
+    "Moonfire": 0.1762,
+    "Insect Swarm": 0.159
+   },
+   "raid_fp": "47ce86efdf10e2b1"
   },
   {
    "label": "opt-balance-dps-raid-dps",
    "split": "33/0/18",
    "ours": true,
    "dps": {
-    "dummy": 630.3599245622087,
-    "dummy60": 690.5233757844522,
-    "ladder-mana": 634.7306451815165,
-    "ladder-armor": 634.7306451815165,
-    "ladder-physical": 634.4954529025644,
-    "ladder-spell": 701.9384901905802,
-    "raid": 710.6525815715826,
-    "curve60": 624.35089428804,
-    "curve120": 632.6707093373554,
-    "curve180": 630.3599245622087,
-    "curve240": 562.9247553579028,
-    "curve360": 468.24449912737487,
-    "max": 710.6525815715826,
-    "max60": 701.2800280564625
+    "dummy": 611.5260872009214,
+    "dummy60": 669.0253591634212,
+    "ladder-mana": 616.3499643713966,
+    "ladder-armor": 616.3499643713966,
+    "ladder-physical": 615.5598113767328,
+    "ladder-spell": 680.8204580344468,
+    "raid": 689.1021132932328,
+    "curve60": 604.7382381031349,
+    "curve120": 613.8660013061549,
+    "curve180": 611.5260872009214,
+    "curve240": 572.9839862411709,
+    "curve360": 476.2335159727017,
+    "max": 689.1021132932328,
+    "max60": 680.2937859473818
    },
    "raid_spell_casts": {
-    "25298": 48.92933333333333,
-    "9835": 12.379666666666667,
-    "24977": 11.711666666666666
+    "9876": 48.91866666666667,
+    "24977": 11.737333333333334,
+    "9835": 12.371333333333334
    },
    "raid_casts": {
-    "Talisman of Ephemeral Power": 2.0,
-    "OtherActionManaGain": 33.932,
-    "Major Mana Potion": 1.0026666666666666,
-    "Starfire": 48.92933333333333,
-    "Moonfire": 12.379666666666667,
+    "Starfire": 48.91866666666667,
     "item 272438": 1.0,
-    "Insect Swarm": 11.711666666666666
+    "Insect Swarm": 11.737333333333334,
+    "Major Mana Potion": 1.0,
+    "Moonfire": 12.371333333333334,
+    "OtherActionManaGain": 33.839333333333336,
+    "Talisman of Ephemeral Power": 2.0
    },
    "raid_shares": {
-    "Starfire": 0.6749,
-    "Moonfire": 0.1708,
-    "Insect Swarm": 0.1543
-   }
+    "Starfire": 0.6647,
+    "Moonfire": 0.1762,
+    "Insect Swarm": 0.159
+   },
+   "raid_fp": "c1eef4d76d46b8b3"
   },
   {
    "label": "opt-balance-dps-parse",
    "split": "33/0/18",
    "ours": true,
    "dps": {
-    "dummy": 630.3599245622087,
-    "dummy60": 690.5233757844522,
-    "ladder-mana": 634.7306451815165,
-    "ladder-armor": 634.7306451815165,
-    "ladder-physical": 634.4954529025644,
-    "ladder-spell": 701.9384901905802,
-    "raid": 710.6525815715826,
-    "curve60": 624.35089428804,
-    "curve120": 632.6707093373554,
-    "curve180": 630.3599245622087,
-    "curve240": 562.9247553579028,
-    "curve360": 468.24449912737487,
-    "max": 710.6525815715826,
-    "max60": 701.2800280564625
+    "dummy": 611.5260872009214,
+    "dummy60": 669.0253591634212,
+    "ladder-mana": 616.3499643713966,
+    "ladder-armor": 616.3499643713966,
+    "ladder-physical": 615.5598113767328,
+    "ladder-spell": 680.8204580344468,
+    "raid": 689.1021132932328,
+    "curve60": 604.7382381031349,
+    "curve120": 613.8660013061549,
+    "curve180": 611.5260872009214,
+    "curve240": 572.9839862411709,
+    "curve360": 476.2335159727017,
+    "max": 689.1021132932328,
+    "max60": 680.2937859473818
    },
    "raid_spell_casts": {
-    "25298": 48.92933333333333,
-    "24977": 11.711666666666666,
-    "9835": 12.379666666666667
+    "24977": 11.737333333333334,
+    "9876": 48.91866666666667,
+    "9835": 12.371333333333334
    },
    "raid_casts": {
-    "Starfire": 48.92933333333333,
-    "Talisman of Ephemeral Power": 2.0,
-    "Insect Swarm": 11.711666666666666,
-    "OtherActionManaGain": 33.932,
-    "Moonfire": 12.379666666666667,
+    "OtherActionManaGain": 33.839333333333336,
     "item 272438": 1.0,
-    "Major Mana Potion": 1.0026666666666666
+    "Major Mana Potion": 1.0,
+    "Insect Swarm": 11.737333333333334,
+    "Starfire": 48.91866666666667,
+    "Moonfire": 12.371333333333334,
+    "Talisman of Ephemeral Power": 2.0
    },
    "raid_shares": {
-    "Starfire": 0.6749,
-    "Moonfire": 0.1708,
-    "Insect Swarm": 0.1543
-   }
+    "Starfire": 0.6647,
+    "Moonfire": 0.1762,
+    "Insect Swarm": 0.159
+   },
+   "raid_fp": "58ff70109c7ed637"
   },
   {
    "label": "sim preset: Moonkin",
    "split": "",
    "ours": false,
    "dps": {
-    "dummy": 618.5424807888561,
-    "dummy60": 678.627281295891,
-    "ladder-mana": 621.5192529621879,
-    "ladder-armor": 621.5192529621879,
-    "ladder-physical": 621.1705941841219,
-    "ladder-spell": 687.3086777641454,
-    "raid": 695.3687329251314,
-    "curve60": 612.1461829556492,
-    "curve120": 619.9108837000022,
-    "curve180": 618.5424807888561,
-    "curve240": 569.6569305521793,
-    "curve360": 510.34752703757096,
-    "max": 695.3687329251314,
-    "max60": 686.4368825625429
+    "dummy": 643.1748021653558,
+    "dummy60": 709.0543615399396,
+    "ladder-mana": 647.521353273782,
+    "ladder-armor": 647.521353273782,
+    "ladder-physical": 648.1037269048975,
+    "ladder-spell": 716.6136709743649,
+    "raid": 725.6857439295073,
+    "curve60": 639.5081828421288,
+    "curve120": 650.1771365087803,
+    "curve180": 643.1748021653558,
+    "curve240": 608.5205916789129,
+    "curve360": 538.4201028419296,
+    "max": 725.6857439295073,
+    "max60": 716.7191983668365
    },
    "raid_spell_casts": {
-    "24977": 11.699666666666667,
-    "9835": 12.396333333333333,
-    "25298": 48.89533333333333,
-    "29166": 0.0006666666666666666
+    "9876": 42.67666666666667,
+    "9835": 13.190666666666667,
+    "9912": 26.077333333333332,
+    "24977": 12.121333333333334
    },
    "raid_casts": {
+    "Starfire": 42.67666666666667,
     "item 272438": 1.0,
-    "OtherActionManaGain": 33.915,
-    "Insect Swarm": 11.699666666666667,
-    "Moonfire": 12.396333333333333,
+    "Moonfire": 13.190666666666667,
+    "Wrath": 26.077333333333332,
+    "OtherActionManaGain": 43.40866666666667,
     "Talisman of Ephemeral Power": 2.0,
-    "Major Mana Potion": 1.003,
-    "Starfire": 48.89533333333333,
-    "Innervate": 0.0006666666666666666
+    "Insect Swarm": 12.121333333333334,
+    "Major Mana Potion": 0.9996666666666667
    },
    "raid_shares": {
-    "Starfire": 0.6851,
-    "Moonfire": 0.1666,
-    "Insect Swarm": 0.1482
-   }
+    "Starfire": 0.5476,
+    "Moonfire": 0.1672,
+    "Insect Swarm": 0.1453,
+    "Wrath": 0.1398
+   },
+   "raid_fp": "6b094abce4e4682c"
   }
  ]
 }

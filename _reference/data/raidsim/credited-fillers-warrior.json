@@ -1,0 +1,1993 @@
+{
+ "warrior/arms-2h-raid": {
+  "entry": "arms-2h-raid",
+  "date": "2026-11-20",
+  "free": [
+   "Booming Voice",
+   "Deflection",
+   "Enrage",
+   "Improved Rend",
+   "Improved Tactical Mastery",
+   "Lingering Rage"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "kind": "utility",
+    "from": "Enrage",
+    "to": "Blood Craze",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "survival"
+   },
+   {
+    "round": 2,
+    "kind": "utility",
+    "from": "Enrage",
+    "to": "Blood Craze",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "survival"
+   },
+   {
+    "round": 3,
+    "kind": "utility",
+    "from": "Enrage",
+    "to": "Blood Craze",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "survival"
+   },
+   {
+    "round": 4,
+    "kind": "utility",
+    "from": "Enrage",
+    "to": "Gore Drinker",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "survival"
+   },
+   {
+    "round": 5,
+    "kind": "utility",
+    "from": "Enrage",
+    "to": "Gore Drinker",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "survival"
+   },
+   {
+    "round": 6,
+    "kind": "utility",
+    "from": "Lingering Rage",
+    "to": "Iron Will",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "control"
+   }
+  ],
+  "final_seed3_same": true,
+  "start": {
+   "Arms": [
+    [
+     "Deflection",
+     5
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Tactical Mastery",
+     3
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ],
+    [
+     "Impale",
+     1
+    ],
+    [
+     "Two-Handed Weapon Specialization",
+     3
+    ]
+   ],
+   "Fury": [
+    [
+     "Booming Voice",
+     5
+    ],
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Lingering Rage",
+     3
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ],
+    [
+     "Enrage",
+     5
+    ],
+    [
+     "Improved Execute",
+     2
+    ],
+    [
+     "Death Wish",
+     1
+    ],
+    [
+     "Flurry",
+     3
+    ],
+    [
+     "Improved Whirlwind",
+     2
+    ],
+    [
+     "Bloodthirst",
+     1
+    ]
+   ],
+   "Protection": []
+  },
+  "allocation": {
+   "Arms": [
+    [
+     "Deflection",
+     5
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Tactical Mastery",
+     3
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ],
+    [
+     "Impale",
+     1
+    ],
+    [
+     "Two-Handed Weapon Specialization",
+     3
+    ]
+   ],
+   "Fury": [
+    [
+     "Booming Voice",
+     5
+    ],
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Lingering Rage",
+     2
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ],
+    [
+     "Improved Execute",
+     2
+    ],
+    [
+     "Death Wish",
+     1
+    ],
+    [
+     "Flurry",
+     3
+    ],
+    [
+     "Improved Whirlwind",
+     2
+    ],
+    [
+     "Bloodthirst",
+     1
+    ],
+    [
+     "Blood Craze",
+     3
+    ],
+    [
+     "Gore Drinker",
+     2
+    ]
+   ],
+   "Protection": [
+    [
+     "Iron Will",
+     1
+    ]
+   ]
+  },
+  "kept_for_rotation": [
+   "Bloodthirst"
+  ],
+  "banned": [],
+  "dummy": [
+   387.627328593388,
+   387.627328593388,
+   387.627328593388,
+   387.627328593388,
+   387.627328593388,
+   387.627328593388,
+   387.627328593388
+  ],
+  "ok": true,
+  "check": {
+   "raid seed 1": [
+    897.3799872009033,
+    897.3799872009033
+   ],
+   "raid seed 2": [
+    898.6565618195601,
+    898.6565618195601
+   ]
+  }
+ },
+ "warrior/opt-arms-2h-raid-raid-dps": {
+  "entry": "arms-2h-raid",
+  "date": "2026-11-20",
+  "free": [
+   "Blood Craze",
+   "Booming Voice",
+   "Deflection",
+   "Dual Wield Specialization",
+   "Improved Rend",
+   "Improved Tactical Mastery"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "kind": "utility",
+    "from": "Dual Wield Specialization",
+    "to": "Gore Drinker",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "survival"
+   },
+   {
+    "round": 2,
+    "kind": "utility",
+    "from": "Dual Wield Specialization",
+    "to": "Gore Drinker",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "survival"
+   }
+  ],
+  "final_seed3_same": true,
+  "start": {
+   "Arms": [
+    [
+     "Deflection",
+     5
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Tactical Mastery",
+     3
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ],
+    [
+     "Impale",
+     2
+    ],
+    [
+     "Two-Handed Weapon Specialization",
+     3
+    ]
+   ],
+   "Fury": [
+    [
+     "Booming Voice",
+     2
+    ],
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ],
+    [
+     "Blood Craze",
+     3
+    ],
+    [
+     "Dual Wield Specialization",
+     5
+    ],
+    [
+     "Improved Execute",
+     2
+    ],
+    [
+     "Death Wish",
+     1
+    ],
+    [
+     "Improved Berserker Rage",
+     2
+    ],
+    [
+     "Flurry",
+     3
+    ],
+    [
+     "Improved Whirlwind",
+     2
+    ],
+    [
+     "Bloodthirst",
+     1
+    ]
+   ],
+   "Protection": []
+  },
+  "allocation": {
+   "Arms": [
+    [
+     "Deflection",
+     5
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Tactical Mastery",
+     3
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ],
+    [
+     "Impale",
+     2
+    ],
+    [
+     "Two-Handed Weapon Specialization",
+     3
+    ]
+   ],
+   "Fury": [
+    [
+     "Booming Voice",
+     2
+    ],
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ],
+    [
+     "Blood Craze",
+     3
+    ],
+    [
+     "Dual Wield Specialization",
+     3
+    ],
+    [
+     "Improved Execute",
+     2
+    ],
+    [
+     "Death Wish",
+     1
+    ],
+    [
+     "Improved Berserker Rage",
+     2
+    ],
+    [
+     "Flurry",
+     3
+    ],
+    [
+     "Improved Whirlwind",
+     2
+    ],
+    [
+     "Bloodthirst",
+     1
+    ],
+    [
+     "Gore Drinker",
+     2
+    ]
+   ],
+   "Protection": []
+  },
+  "kept_for_rotation": [
+   "Bloodthirst",
+   "Improved Berserker Rage"
+  ],
+  "banned": [
+   "Booming Voice"
+  ],
+  "dummy": [
+   399.3471378034042,
+   399.3471378034042,
+   399.3471378034042
+  ],
+  "ok": true,
+  "check": {
+   "raid seed 1": [
+    910.33310989026,
+    910.33310989026
+   ],
+   "raid seed 2": [
+    911.6279566733095,
+    911.6279566733095
+   ]
+  }
+ },
+ "warrior/fury-open-raid": {
+  "entry": "arms-2h-raid",
+  "date": "2026-11-20",
+  "free": [
+   "Blood Craze",
+   "Deflection",
+   "Enrage",
+   "Furious Precision",
+   "Improved Rend",
+   "Improved Tactical Mastery"
+  ],
+  "moves": [],
+  "final_seed3_same": true,
+  "start": {
+   "Arms": [
+    [
+     "Improved Heroic Strike",
+     3
+    ],
+    [
+     "Deflection",
+     2
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Tactical Mastery",
+     3
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ],
+    [
+     "Two-Handed Weapon Specialization",
+     3
+    ],
+    [
+     "Impale",
+     2
+    ]
+   ],
+   "Fury": [
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ],
+    [
+     "Furious Precision",
+     3
+    ],
+    [
+     "Blood Craze",
+     3
+    ],
+    [
+     "Enrage",
+     1
+    ],
+    [
+     "Reckless Swings",
+     1
+    ],
+    [
+     "Improved Execute",
+     2
+    ],
+    [
+     "Improved Berserker Rage",
+     2
+    ],
+    [
+     "Death Wish",
+     1
+    ],
+    [
+     "Gore Drinker",
+     2
+    ],
+    [
+     "Improved Whirlwind",
+     2
+    ],
+    [
+     "Flurry",
+     3
+    ],
+    [
+     "Bloodthirst",
+     1
+    ]
+   ],
+   "Protection": []
+  },
+  "allocation": {
+   "Arms": [
+    [
+     "Improved Heroic Strike",
+     3
+    ],
+    [
+     "Deflection",
+     2
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Tactical Mastery",
+     3
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ],
+    [
+     "Two-Handed Weapon Specialization",
+     3
+    ],
+    [
+     "Impale",
+     2
+    ]
+   ],
+   "Fury": [
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ],
+    [
+     "Furious Precision",
+     3
+    ],
+    [
+     "Blood Craze",
+     3
+    ],
+    [
+     "Enrage",
+     1
+    ],
+    [
+     "Reckless Swings",
+     1
+    ],
+    [
+     "Improved Execute",
+     2
+    ],
+    [
+     "Improved Berserker Rage",
+     2
+    ],
+    [
+     "Death Wish",
+     1
+    ],
+    [
+     "Gore Drinker",
+     2
+    ],
+    [
+     "Improved Whirlwind",
+     2
+    ],
+    [
+     "Flurry",
+     3
+    ],
+    [
+     "Bloodthirst",
+     1
+    ]
+   ],
+   "Protection": []
+  },
+  "kept_for_rotation": [
+   "Bloodthirst",
+   "Improved Berserker Rage"
+  ],
+  "banned": [
+   "Booming Voice"
+  ],
+  "ok": false
+ },
+ "warrior/fury-dw-raid": {
+  "entry": "fury-dw-raid",
+  "date": "2026-11-20",
+  "free": [
+   "Booming Voice",
+   "Deflection",
+   "Enrage",
+   "Improved Rend",
+   "Improved Tactical Mastery"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "kind": "utility",
+    "from": "Enrage",
+    "to": "Blood Craze",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "survival"
+   },
+   {
+    "round": 2,
+    "kind": "utility",
+    "from": "Enrage",
+    "to": "Blood Craze",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "survival"
+   },
+   {
+    "round": 3,
+    "kind": "utility",
+    "from": "Enrage",
+    "to": "Blood Craze",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "survival"
+   },
+   {
+    "round": 4,
+    "kind": "utility",
+    "from": "Enrage",
+    "to": "Iron Will",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "control"
+   },
+   {
+    "round": 5,
+    "kind": "utility",
+    "from": "Enrage",
+    "to": "Iron Will",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "control"
+   }
+  ],
+  "final_seed3_same": true,
+  "start": {
+   "Arms": [
+    [
+     "Deflection",
+     2
+    ],
+    [
+     "Improved Heroic Strike",
+     2
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Tactical Mastery",
+     3
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     2
+    ]
+   ],
+   "Fury": [
+    [
+     "Booming Voice",
+     5
+    ],
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ],
+    [
+     "Enrage",
+     5
+    ],
+    [
+     "Furious Precision",
+     3
+    ],
+    [
+     "Dual Wield Specialization",
+     5
+    ],
+    [
+     "Improved Execute",
+     2
+    ],
+    [
+     "Death Wish",
+     1
+    ],
+    [
+     "Improved Berserker Rage",
+     1
+    ],
+    [
+     "Flurry",
+     3
+    ],
+    [
+     "Improved Whirlwind",
+     2
+    ],
+    [
+     "Bloodthirst",
+     1
+    ]
+   ],
+   "Protection": []
+  },
+  "allocation": {
+   "Arms": [
+    [
+     "Deflection",
+     2
+    ],
+    [
+     "Improved Heroic Strike",
+     2
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Tactical Mastery",
+     3
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     2
+    ]
+   ],
+   "Fury": [
+    [
+     "Booming Voice",
+     5
+    ],
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ],
+    [
+     "Furious Precision",
+     3
+    ],
+    [
+     "Dual Wield Specialization",
+     5
+    ],
+    [
+     "Improved Execute",
+     2
+    ],
+    [
+     "Death Wish",
+     1
+    ],
+    [
+     "Improved Berserker Rage",
+     1
+    ],
+    [
+     "Flurry",
+     3
+    ],
+    [
+     "Improved Whirlwind",
+     2
+    ],
+    [
+     "Bloodthirst",
+     1
+    ],
+    [
+     "Blood Craze",
+     3
+    ]
+   ],
+   "Protection": [
+    [
+     "Iron Will",
+     2
+    ]
+   ]
+  },
+  "kept_for_rotation": [
+   "Bloodthirst",
+   "Improved Berserker Rage"
+  ],
+  "banned": [],
+  "dummy": [
+   470.11338583742867,
+   470.11338583742867,
+   470.11338583742867,
+   470.11338583742867,
+   470.11338583742867,
+   470.11338583742867
+  ],
+  "ok": true,
+  "check": {
+   "raid seed 1": [
+    915.2440234991018,
+    915.2440234991018
+   ],
+   "raid seed 2": [
+    915.3857914207297,
+    915.3857914207297
+   ]
+  }
+ },
+ "warrior/opt-fury-dw-raid-raid-dps": {
+  "entry": "fury-dw-raid",
+  "date": "2026-11-20",
+  "free": [
+   "Blood Craze",
+   "Deflection",
+   "Improved Rend",
+   "Improved Tactical Mastery",
+   "Spearing Strike"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "kind": "utility",
+    "from": "Spearing Strike",
+    "to": "Gore Drinker",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "survival"
+   }
+  ],
+  "final_seed3_same": true,
+  "start": {
+   "Arms": [
+    [
+     "Deflection",
+     5
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Tactical Mastery",
+     3
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ],
+    [
+     "Impale",
+     2
+    ],
+    [
+     "Spearing Strike",
+     1
+    ]
+   ],
+   "Fury": [
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ],
+    [
+     "Blood Craze",
+     3
+    ],
+    [
+     "Furious Precision",
+     3
+    ],
+    [
+     "Dual Wield Specialization",
+     5
+    ],
+    [
+     "Improved Execute",
+     2
+    ],
+    [
+     "Death Wish",
+     1
+    ],
+    [
+     "Gore Drinker",
+     1
+    ],
+    [
+     "Improved Berserker Rage",
+     2
+    ],
+    [
+     "Flurry",
+     3
+    ],
+    [
+     "Improved Whirlwind",
+     2
+    ],
+    [
+     "Bloodthirst",
+     1
+    ]
+   ],
+   "Protection": []
+  },
+  "allocation": {
+   "Arms": [
+    [
+     "Deflection",
+     5
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Tactical Mastery",
+     3
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ],
+    [
+     "Impale",
+     2
+    ]
+   ],
+   "Fury": [
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ],
+    [
+     "Blood Craze",
+     3
+    ],
+    [
+     "Furious Precision",
+     3
+    ],
+    [
+     "Dual Wield Specialization",
+     5
+    ],
+    [
+     "Improved Execute",
+     2
+    ],
+    [
+     "Death Wish",
+     1
+    ],
+    [
+     "Gore Drinker",
+     2
+    ],
+    [
+     "Improved Berserker Rage",
+     2
+    ],
+    [
+     "Flurry",
+     3
+    ],
+    [
+     "Improved Whirlwind",
+     2
+    ],
+    [
+     "Bloodthirst",
+     1
+    ]
+   ],
+   "Protection": []
+  },
+  "kept_for_rotation": [
+   "Bloodthirst",
+   "Improved Berserker Rage"
+  ],
+  "banned": [
+   "Booming Voice"
+  ],
+  "dummy": [
+   496.3977757294788,
+   496.3977757294788
+  ],
+  "ok": true,
+  "check": {
+   "raid seed 1": [
+    960.1541370801415,
+    960.1541370801415
+   ],
+   "raid seed 2": [
+    960.0825210595395,
+    960.0825210595395
+   ]
+  }
+ },
+ "warrior/fury-dual-wield-open-raid": {
+  "entry": "fury-dw-raid",
+  "date": "2026-11-20",
+  "free": [
+   "Blood Craze",
+   "Deflection",
+   "Improved Rend",
+   "Improved Tactical Mastery"
+  ],
+  "moves": [],
+  "final_seed3_same": true,
+  "start": {
+   "Arms": [
+    [
+     "Improved Heroic Strike",
+     3
+    ],
+    [
+     "Deflection",
+     2
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Tactical Mastery",
+     3
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ],
+    [
+     "Impale",
+     2
+    ]
+   ],
+   "Fury": [
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ],
+    [
+     "Furious Precision",
+     3
+    ],
+    [
+     "Dual Wield Specialization",
+     5
+    ],
+    [
+     "Reckless Swings",
+     1
+    ],
+    [
+     "Improved Execute",
+     2
+    ],
+    [
+     "Improved Berserker Rage",
+     2
+    ],
+    [
+     "Death Wish",
+     1
+    ],
+    [
+     "Improved Whirlwind",
+     2
+    ],
+    [
+     "Flurry",
+     3
+    ],
+    [
+     "Bloodthirst",
+     1
+    ],
+    [
+     "Blood Craze",
+     2
+    ]
+   ],
+   "Protection": [
+    [
+     "Improved Bloodrage",
+     2
+    ]
+   ]
+  },
+  "allocation": {
+   "Arms": [
+    [
+     "Improved Heroic Strike",
+     3
+    ],
+    [
+     "Deflection",
+     2
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Tactical Mastery",
+     3
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ],
+    [
+     "Impale",
+     2
+    ]
+   ],
+   "Fury": [
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ],
+    [
+     "Furious Precision",
+     3
+    ],
+    [
+     "Dual Wield Specialization",
+     5
+    ],
+    [
+     "Reckless Swings",
+     1
+    ],
+    [
+     "Improved Execute",
+     2
+    ],
+    [
+     "Improved Berserker Rage",
+     2
+    ],
+    [
+     "Death Wish",
+     1
+    ],
+    [
+     "Improved Whirlwind",
+     2
+    ],
+    [
+     "Flurry",
+     3
+    ],
+    [
+     "Bloodthirst",
+     1
+    ],
+    [
+     "Blood Craze",
+     2
+    ]
+   ],
+   "Protection": [
+    [
+     "Improved Bloodrage",
+     2
+    ]
+   ]
+  },
+  "kept_for_rotation": [
+   "Bloodthirst",
+   "Improved Berserker Rage"
+  ],
+  "banned": [
+   "Booming Voice"
+  ],
+  "ok": false
+ },
+ "warrior/arms-battle-raid": {
+  "entry": "arms-battle-raid",
+  "date": "2026-11-20",
+  "free": [
+   "Booming Voice",
+   "Deflection",
+   "Improved Tactical Mastery"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "kind": "utility",
+    "from": "Deflection",
+    "to": "Blood Craze",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "survival"
+   },
+   {
+    "round": 2,
+    "kind": "utility",
+    "from": "Deflection",
+    "to": "Blood Craze",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "survival"
+   }
+  ],
+  "final_seed3_same": true,
+  "start": {
+   "Arms": [
+    [
+     "Deflection",
+     5
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Overpower",
+     2
+    ],
+    [
+     "Improved Tactical Mastery",
+     3
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ],
+    [
+     "Impale",
+     2
+    ],
+    [
+     "Spearing Strike",
+     1
+    ],
+    [
+     "Two-Handed Weapon Specialization",
+     3
+    ],
+    [
+     "Bloodthrill",
+     2
+    ],
+    [
+     "Sweeping Strikes",
+     1
+    ],
+    [
+     "Weaponmaster",
+     5
+    ],
+    [
+     "Improved Slam",
+     2
+    ],
+    [
+     "Mortal Strike",
+     1
+    ]
+   ],
+   "Fury": [
+    [
+     "Booming Voice",
+     5
+    ],
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ],
+    [
+     "Improved Execute",
+     2
+    ]
+   ],
+   "Protection": []
+  },
+  "allocation": {
+   "Arms": [
+    [
+     "Deflection",
+     3
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Overpower",
+     2
+    ],
+    [
+     "Improved Tactical Mastery",
+     3
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ],
+    [
+     "Impale",
+     2
+    ],
+    [
+     "Spearing Strike",
+     1
+    ],
+    [
+     "Two-Handed Weapon Specialization",
+     3
+    ],
+    [
+     "Bloodthrill",
+     2
+    ],
+    [
+     "Sweeping Strikes",
+     1
+    ],
+    [
+     "Weaponmaster",
+     5
+    ],
+    [
+     "Improved Slam",
+     2
+    ],
+    [
+     "Mortal Strike",
+     1
+    ]
+   ],
+   "Fury": [
+    [
+     "Booming Voice",
+     5
+    ],
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ],
+    [
+     "Improved Execute",
+     2
+    ],
+    [
+     "Blood Craze",
+     2
+    ]
+   ],
+   "Protection": []
+  },
+  "kept_for_rotation": [
+   "Mortal Strike"
+  ],
+  "banned": [],
+  "dummy": [
+   403.60913465508315,
+   403.60913465508315,
+   403.60913465508315
+  ],
+  "ok": true,
+  "check": {
+   "raid seed 1": [
+    872.9512333176,
+    872.9512333176
+   ],
+   "raid seed 2": [
+    872.9480292145973,
+    872.9480292145973
+   ]
+  }
+ },
+ "warrior/arms-community-parse": {
+  "entry": "arms-battle-raid",
+  "date": "2026-11-20",
+  "free": [
+   "Booming Voice",
+   "Deflection",
+   "Improved Heroic Strike",
+   "Improved Tactical Mastery"
+  ],
+  "moves": [],
+  "final_seed3_same": true,
+  "start": {
+   "Arms": [
+    [
+     "Deflection",
+     5
+    ],
+    [
+     "Improved Heroic Strike",
+     3
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Overpower",
+     2
+    ],
+    [
+     "Improved Tactical Mastery",
+     3
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ],
+    [
+     "Impale",
+     2
+    ],
+    [
+     "Spearing Strike",
+     1
+    ],
+    [
+     "Two-Handed Weapon Specialization",
+     3
+    ],
+    [
+     "Bloodthrill",
+     2
+    ],
+    [
+     "Sweeping Strikes",
+     1
+    ],
+    [
+     "Weaponmaster",
+     5
+    ],
+    [
+     "Improved Slam",
+     2
+    ],
+    [
+     "Mortal Strike",
+     1
+    ]
+   ],
+   "Fury": [
+    [
+     "Booming Voice",
+     3
+    ],
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ],
+    [
+     "Piercing Howl",
+     1
+    ]
+   ],
+   "Protection": []
+  },
+  "allocation": {
+   "Arms": [
+    [
+     "Deflection",
+     5
+    ],
+    [
+     "Improved Heroic Strike",
+     3
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Overpower",
+     2
+    ],
+    [
+     "Improved Tactical Mastery",
+     3
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ],
+    [
+     "Impale",
+     2
+    ],
+    [
+     "Spearing Strike",
+     1
+    ],
+    [
+     "Two-Handed Weapon Specialization",
+     3
+    ],
+    [
+     "Bloodthrill",
+     2
+    ],
+    [
+     "Sweeping Strikes",
+     1
+    ],
+    [
+     "Weaponmaster",
+     5
+    ],
+    [
+     "Improved Slam",
+     2
+    ],
+    [
+     "Mortal Strike",
+     1
+    ]
+   ],
+   "Fury": [
+    [
+     "Booming Voice",
+     3
+    ],
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ],
+    [
+     "Piercing Howl",
+     1
+    ]
+   ],
+   "Protection": []
+  },
+  "kept_for_rotation": [
+   "Mortal Strike"
+  ],
+  "banned": [
+   "Blood Craze",
+   "Booming Voice",
+   "Iron Will"
+  ],
+  "ok": false
+ },
+ "warrior/arms-ml-raid": {
+  "entry": "arms-battle-raid",
+  "date": "2026-11-20",
+  "free": [
+   "Deflection",
+   "Improved Charge",
+   "Improved Heroic Strike",
+   "Improved Tactical Mastery"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "kind": "utility",
+    "from": "Deflection",
+    "to": "Blood Craze",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "survival"
+   },
+   {
+    "round": 2,
+    "kind": "utility",
+    "from": "Deflection",
+    "to": "Blood Craze",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "survival"
+   },
+   {
+    "round": 3,
+    "kind": "utility",
+    "from": "Deflection",
+    "to": "Blood Craze",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "survival"
+   },
+   {
+    "round": 4,
+    "kind": "utility",
+    "from": "Deflection",
+    "to": "Iron Will",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "control"
+   },
+   {
+    "round": 5,
+    "kind": "utility",
+    "from": "Deflection",
+    "to": "Iron Will",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "control"
+   },
+   {
+    "round": 6,
+    "kind": "utility",
+    "from": "Improved Charge",
+    "to": "Iron Will",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "control"
+   }
+  ],
+  "final_seed3_same": true,
+  "start": {
+   "Arms": [
+    [
+     "Deflection",
+     5
+    ],
+    [
+     "Improved Heroic Strike",
+     3
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Charge",
+     1
+    ],
+    [
+     "Improved Overpower",
+     2
+    ],
+    [
+     "Improved Tactical Mastery",
+     3
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ],
+    [
+     "Impale",
+     2
+    ],
+    [
+     "Spearing Strike",
+     1
+    ],
+    [
+     "Two-Handed Weapon Specialization",
+     3
+    ],
+    [
+     "Bloodthrill",
+     2
+    ],
+    [
+     "Sweeping Strikes",
+     1
+    ],
+    [
+     "Weaponmaster",
+     5
+    ],
+    [
+     "Improved Hamstring",
+     1
+    ],
+    [
+     "Improved Slam",
+     2
+    ],
+    [
+     "Mortal Strike",
+     1
+    ]
+   ],
+   "Fury": [
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ]
+   ],
+   "Protection": [
+    [
+     "Improved Bloodrage",
+     2
+    ]
+   ]
+  },
+  "allocation": {
+   "Arms": [
+    [
+     "Improved Heroic Strike",
+     3
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Overpower",
+     2
+    ],
+    [
+     "Improved Tactical Mastery",
+     3
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ],
+    [
+     "Impale",
+     2
+    ],
+    [
+     "Spearing Strike",
+     1
+    ],
+    [
+     "Two-Handed Weapon Specialization",
+     3
+    ],
+    [
+     "Bloodthrill",
+     2
+    ],
+    [
+     "Sweeping Strikes",
+     1
+    ],
+    [
+     "Weaponmaster",
+     5
+    ],
+    [
+     "Improved Hamstring",
+     1
+    ],
+    [
+     "Improved Slam",
+     2
+    ],
+    [
+     "Mortal Strike",
+     1
+    ]
+   ],
+   "Fury": [
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ],
+    [
+     "Blood Craze",
+     3
+    ]
+   ],
+   "Protection": [
+    [
+     "Improved Bloodrage",
+     2
+    ],
+    [
+     "Iron Will",
+     3
+    ]
+   ]
+  },
+  "kept_for_rotation": [
+   "Mortal Strike"
+  ],
+  "banned": [
+   "Booming Voice"
+  ],
+  "dummy": [
+   398.5501862273647,
+   398.5501862273647,
+   398.5501862273647,
+   398.5501862273647,
+   398.5501862273647,
+   398.5501862273647,
+   398.5501862273647
+  ],
+  "ok": true,
+  "check": {
+   "raid seed 1": [
+    867.1875762038261,
+    867.1875762038261
+   ],
+   "raid seed 2": [
+    867.441775716766,
+    867.441775716766
+   ]
+  }
+ }
+}

@@ -113,6 +113,10 @@ def render(cls, spec, mode, label, fingerprint, title="Why this rotation"):
         if g.get(key):
             o += [f"**{head}**", ""] + [f"- {x}" for x in g[key]] + [""]
     stamped = (g.get("rotations") or {}).get(label)
+    if fingerprint and not stamped and label and label != "healer-policy" and g.get("rotations"):
+        # the page plays a rotation this guide was never stamped for (2026-11-20: the Affliction page's pick plays the Wrack entry, its
+        # guide was written for affliction-raid and printed with no notice)
+        o += ["*This guide was written for another of this spec's rotations; follow the list where the two differ.*", ""]
     if fingerprint and stamped and stamped != fingerprint:
         o += [f"*This guide was written for the rotation of {g.get('written', 'an earlier date')}; the list above was re-tuned since, so "
               "follow the list where the two differ.*", ""]

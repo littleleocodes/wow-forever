@@ -1,23 +1,26 @@
 {
  "mage": {
-  "frost-raid:frost-raid.apl.json": {
-   "priority[11]": {
+  "frost-raid:frost-raid.apl.json": {},
+  "frost-raid:frost-raid-raid.apl.json": {},
+  "frost-raid:frost.apl.json": {},
+  "arcane-frost-raid:arcane-frost-raid.apl.json": {
+   "priority[12]": {
     "messages": [
      "Warning:  (#1) does not know spell {SpellID: 1326055}"
     ],
     "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1326055}}}"
    }
   },
-  "frost-raid:frost-raid-raid.apl.json": {},
-  "frost-raid:frost-raid.base.apl.json": {},
+  "arcane-frost-raid:arcane-frost-raid-raid.apl.json": {},
+  "arcane-frost-raid:frost-raid.base.apl.json": {},
   "fire-raid:fire-raid.apl.json": {
-   "priority[11]": {
+   "priority[12]": {
     "messages": [
      "Warning:  (#1) does not know spell {SpellID: 1326055}"
     ],
     "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1326055}}}"
    },
-   "priority[6]": {
+   "priority[7]": {
     "messages": [
      "Warning:  (#1) does not know spell {SpellID: 10150}"
     ],
@@ -27,14 +30,6 @@
   "fire-raid:fire-raid-raid.apl.json": {},
   "fire-raid:fire.apl.json": {},
   "arcane-dps:arcane-dps.apl.json": {
-   "priority[10]": {
-    "messages": [
-     "Warning:  (#1) does not know spell {SpellID: 1326055}"
-    ],
-    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1326055}}}"
-   }
-  },
-  "arcane-dps:arcane-dps-raid.apl.json": {
    "priority[11]": {
     "messages": [
      "Warning:  (#1) does not know spell {SpellID: 1326055}"
@@ -42,8 +37,8 @@
     "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1326055}}}"
    }
   },
-  "arcane-dps:arcane.apl.json": {
-   "prepull[0]": {
+  "arcane-dps:arcane-dps-raid.apl.json": {
+   "prepull[1]": {
     "messages": [
      "Warning:  (#1) does not know spell {SpellID: 1259705}",
      "Warning: 'Do At' needs a time, ignoring this Prepull Action"
@@ -51,16 +46,16 @@
     "line": ""
    }
   },
-  "frostfire-raid:frostfire-raid.apl.json": {
-   "priority[3]": {
+  "arcane-dps:arcaneFireFill.apl.json": {
+   "prepull[1]": {
     "messages": [
-     "Warning:  (#1) does not know spell {SpellID: 20554}"
+     "Warning:  (#1) does not know spell {SpellID: 1259705}",
+     "Warning: 'Do At' needs a time, ignoring this Prepull Action"
     ],
-    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 20554}}}"
+    "line": ""
    }
   },
-  "frostfire-raid:frostfire-raid-raid.apl.json": {},
-  "frostfire-raid:frostfire-raid.base.apl.json": {}
+  "frostfire-raid:ffb.apl.json": {}
  },
  "priest": {
   "shadow-dps:shadow-dps.apl.json": {},
@@ -87,14 +82,136 @@
  "warlock": {
   "affliction-raid:affliction-raid.apl.json": {},
   "affliction-raid:affliction-raid-raid.apl.json": {
-   "priority[12]": {
+   "priority[6]": {
     "messages": [
-     "Warning:  (#1) does not know spell {SpellID: 1259821}"
+     "Warning: Encounter only has 1 targets. Using that for Max Dots instead of 10"
     ],
-    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1259821}}}"
+    "line": "{\"condition\": {\"variableRef\": {\"name\": \"Agony time\"}}, \"strictMultidot\": {\"spellId\": {\"spellId\": 11713}, \"maxDots\": 10, \"maxOverlap\": {\"spellCastTime\": {\"spellId\": {\"spellId\": 11713}}}}}"
+   },
+   "priority[7]": {
+    "messages": [
+     "Warning: Encounter only has 1 targets. Using that for Max Dots instead of 10"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpGt\", \"lhs\": {\"spellExpectedDpet\": {\"spellId\": {\"spellId\": 11672}}}, \"rhs\": {\"variableRef\": {\"name\": \"DPET Non DoT\"}}}}, \"strictMultidot\": {\"spellId\": {\"spellId\": 11672}, \"maxDots\": 10, \"ma"
+   },
+   "priority[8]": {
+    "messages": [
+     "Warning: Encounter only has 1 targets. Using that for Max Dots instead of 10"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpGt\", \"lhs\": {\"spellExpectedDpet\": {\"spellId\": {\"spellId\": 18881}}}, \"rhs\": {\"variableRef\": {\"name\": \"DPET Non DoT\"}}}}, \"strictMultidot\": {\"spellId\": {\"spellId\": 18881}, \"maxDots\": 10, \"ma"
+   },
+   "priority[9]": {
+    "messages": [
+     "Warning: Encounter only has 1 targets. Using that for Max Dots instead of 10"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpGt\", \"lhs\": {\"spellExpectedDpet\": {\"spellId\": {\"spellId\": 11668}}}, \"rhs\": {\"variableRef\": {\"name\": \"DPET Non DoT\"}}}}, \"strictMultidot\": {\"spellId\": {\"spellId\": 11668}, \"maxDots\": 10, \"ma"
    }
   },
-  "affliction-raid:affliction.apl.json": {},
+  "affliction-raid:sm_ruin.apl.json": {
+   "priority[6]": {
+    "messages": [
+     "Warning: Encounter only has 1 targets. Using that for Max Dots instead of 10"
+    ],
+    "line": "{\"condition\": {\"variableRef\": {\"name\": \"Agony time\"}}, \"strictMultidot\": {\"spellId\": {\"spellId\": 11713}, \"maxDots\": 10, \"maxOverlap\": {\"spellCastTime\": {\"spellId\": {\"spellId\": 11713}}}}}"
+   },
+   "priority[7]": {
+    "messages": [
+     "Warning: Encounter only has 1 targets. Using that for Max Dots instead of 10"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpGt\", \"lhs\": {\"spellExpectedDpet\": {\"spellId\": {\"spellId\": 11672}}}, \"rhs\": {\"variableRef\": {\"name\": \"DPET Non DoT\"}}}}, \"strictMultidot\": {\"spellId\": {\"spellId\": 11672}, \"maxDots\": 10, \"ma"
+   },
+   "priority[8]": {
+    "messages": [
+     "Warning: Encounter only has 1 targets. Using that for Max Dots instead of 10"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpGt\", \"lhs\": {\"spellExpectedDpet\": {\"spellId\": {\"spellId\": 18881}}}, \"rhs\": {\"variableRef\": {\"name\": \"DPET Non DoT\"}}}}, \"strictMultidot\": {\"spellId\": {\"spellId\": 18881}, \"maxDots\": 10, \"ma"
+   },
+   "priority[9]": {
+    "messages": [
+     "Warning: Encounter only has 1 targets. Using that for Max Dots instead of 10"
+    ],
+    "line": "{\"condition\": {\"cmp\": {\"op\": \"OpGt\", \"lhs\": {\"spellExpectedDpet\": {\"spellId\": {\"spellId\": 11668}}}, \"rhs\": {\"variableRef\": {\"name\": \"DPET Non DoT\"}}}}, \"strictMultidot\": {\"spellId\": {\"spellId\": 11668}, \"maxDots\": 10, \"ma"
+   }
+  },
+  "affliction-wrack-raid:affliction-wrack-raid.apl.json": {
+   "priority[10]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}",
+     "Warning: No aura found on  (#1) for: {SpellID: 20572}"
+    ],
+    "line": "{\"channelSpell\": {\"spellId\": {\"spellId\": 1316697, \"rank\": 1}, \"interruptIf\": {\"or\": {\"vals\": [{\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"spellChanneledTicks\": {\"spellId\": {\"spellId\": 1316697, \"rank\": 1}}}, \"rhs\": "
+   },
+   "priority[6]": {
+    "messages": [
+     "Warning: No aura found on  (#1) for: {SpellID: 1323392}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"auraIsActive\": {\"auraId\": {\"spellId\": 17941}, \"includeReactionTime\": true}}, {\"and\": {\"vals\": [{\"variableRef\": {\"name\": \"Improved Shadow Bolt Known\"}}, {\"auraIsKnown\": {\"auraId\": {\"spellI"
+   },
+   "priority[7]": {
+    "messages": [
+     "Warning: No aura found on  (#1) for: {SpellID: 1323392}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"and\": {\"vals\": [{\"auraIsActive\": {\"auraId\": {\"spellId\": 17941}, \"includeReactionTime\": true}}]}}, {\"and\": {\"vals\": [{\"variableRef\": {\"name\": \"Improved Shadow Bolt Known\"}}, {\"auraIsKnown\""
+   }
+  },
+  "affliction-wrack-raid:affliction-wrack-raid-raid.apl.json": {
+   "priority[11]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}",
+     "Warning: No aura found on  (#1) for: {SpellID: 20572}"
+    ],
+    "line": "{\"channelSpell\": {\"spellId\": {\"spellId\": 1316697, \"rank\": 1}, \"interruptIf\": {\"or\": {\"vals\": [{\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"spellChanneledTicks\": {\"spellId\": {\"spellId\": 1316697, \"rank\": 1}}}, \"rhs\": "
+   },
+   "priority[5]": {
+    "messages": [
+     "Warning: No aura found on  (#1) for: {SpellID: 1323392}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"auraIsActive\": {\"auraId\": {\"spellId\": 17941}, \"includeReactionTime\": true}}, {\"and\": {\"vals\": [{\"variableRef\": {\"name\": \"Improved Shadow Bolt Known\"}}, {\"auraIsKnown\": {\"auraId\": {\"spellI"
+   },
+   "priority[7]": {
+    "messages": [
+     "Warning: No aura found on  (#1) for: {SpellID: 1323392}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"and\": {\"vals\": [{\"auraIsActive\": {\"auraId\": {\"spellId\": 17941}, \"includeReactionTime\": true}}]}}, {\"and\": {\"vals\": [{\"variableRef\": {\"name\": \"Improved Shadow Bolt Known\"}}, {\"auraIsKnown\""
+   }
+  },
+  "affliction-wrack-raid:aff_wrack.apl.json": {
+   "priority[10]": {
+    "messages": [
+     "Warning:  (#1) does not know spell {SpellID: 20572}",
+     "Warning: No aura found on  (#1) for: {SpellID: 20572}"
+    ],
+    "line": "{\"channelSpell\": {\"spellId\": {\"spellId\": 1316697, \"rank\": 1}, \"interruptIf\": {\"or\": {\"vals\": [{\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"spellChanneledTicks\": {\"spellId\": {\"spellId\": 1316697, \"rank\": 1}}}, \"rhs\": "
+   },
+   "priority[5]": {
+    "messages": [
+     "Warning: No aura found on  (#1) for: {SpellID: 1323392}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"auraIsActive\": {\"auraId\": {\"spellId\": 17941}, \"includeReactionTime\": true}}, {\"and\": {\"vals\": [{\"variableRef\": {\"name\": \"Improved Shadow Bolt Known\"}}, {\"auraIsKnown\": {\"auraId\": {\"spellI"
+   },
+   "priority[6]": {
+    "messages": [
+     "Warning: No aura found on  (#1) for: {SpellID: 1323392}"
+    ],
+    "line": "{\"condition\": {\"or\": {\"vals\": [{\"and\": {\"vals\": [{\"auraIsActive\": {\"auraId\": {\"spellId\": 17941}, \"includeReactionTime\": true}}]}}, {\"and\": {\"vals\": [{\"variableRef\": {\"name\": \"Improved Shadow Bolt Known\"}}, {\"auraIsKnown\""
+   }
+  },
+  "destro-raid:destro.apl.json": {
+   "priority[4]": {
+    "messages": [
+     "Warning: No unit found matching reference: type:Target  index:1"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGt\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"1\"}}}}, {\"not\": {\"val\": {\"auraIsActiveOnAnyTarget\": {\"auraId\": {\"spellId\": 1225228}}}}}]}}, \"castSpell\": {\"sp"
+   }
+  },
+  "destro-raid:destro-raid-raid.apl.json": {
+   "priority[4]": {
+    "messages": [
+     "Warning: No unit found matching reference: type:Target  index:1"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"cmp\": {\"op\": \"OpGt\", \"lhs\": {\"numberTargets\": {}}, \"rhs\": {\"const\": {\"val\": \"1\"}}}}, {\"not\": {\"val\": {\"auraIsActiveOnAnyTarget\": {\"auraId\": {\"spellId\": 1225228}}}}}]}}, \"castSpell\": {\"sp"
+   }
+  },
   "fire-destro-raid:fire-destro-raid.apl.json": {
    "priority[11]": {
     "messages": [
@@ -103,14 +220,7 @@
     "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1259821}}}"
    }
   },
-  "fire-destro-raid:fire-destro-raid-raid.apl.json": {
-   "priority[11]": {
-    "messages": [
-     "Warning:  (#1) does not know spell {SpellID: 1259821}"
-    ],
-    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1259821}}}"
-   }
-  },
+  "fire-destro-raid:fire-destro-raid-raid.apl.json": {},
   "fire-destro-raid:destruction.apl.json": {},
   "sb-raid:sb-raid.apl.json": {
    "priority[13]": {
@@ -122,59 +232,41 @@
   },
   "sb-raid:sb-raid-raid.apl.json": {},
   "sb-raid:ds_ruin.apl.json": {},
-  "demonology-raid:demonology-raid.apl.json": {},
-  "demonology-raid:demonology-raid-raid.apl.json": {
-   "priority[10]": {
+  "demonology-raid:demonology-raid.apl.json": {
+   "priority[1]": {
     "messages": [
-     "Warning:  (#1) does not know spell {SpellID: 1259821}"
+     "Warning:  (#1) does not know spell {ItemID: 13968}"
     ],
-    "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 1259821}}}"
+    "line": "{\"castSpell\": {\"spellId\": {\"itemId\": 13968}}}"
    }
   },
-  "demonology-raid:demonic_pact.apl.json": {},
+  "demonology-raid:demonology-raid-raid.apl.json": {
+   "priority[9]": {
+    "messages": [
+     "Warning: No aura found on  (#1) for: {SpellID: 1323392}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"variableRef\": {\"name\": \"Improved Shadow Bolt Known\"}}, {\"auraIsKnown\": {\"auraId\": {\"spellId\": 1323392}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 1323392}, \"includeReactionTime\": true}},"
+   }
+  },
+  "demonology-raid:demo_shadow_brand.apl.json": {
+   "priority[8]": {
+    "messages": [
+     "Warning: No aura found on  (#1) for: {SpellID: 1323392}"
+    ],
+    "line": "{\"condition\": {\"and\": {\"vals\": [{\"variableRef\": {\"name\": \"Improved Shadow Bolt Known\"}}, {\"auraIsKnown\": {\"auraId\": {\"spellId\": 1323392}}}, {\"auraIsActive\": {\"auraId\": {\"spellId\": 1323392}, \"includeReactionTime\": true}},"
+   }
+  },
   "incinerate-raid:incinerate-raid.apl.json": {},
   "incinerate-raid:incinerate-raid-raid.apl.json": {},
   "incinerate-raid:incinerate-raid.base.apl.json": {}
  },
  "hunter": {
-  "mm-raid:mm-raid.apl.json": {
-   "priority[0]": {
-    "messages": [
-     "Warning: No aura found on  (#1) for: {SpellID: 1293527}"
-    ],
-    "line": "{\"condition\": {\"and\": {\"vals\": [{\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 1293527}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"15s\"}}}}]}}, \"castSpell"
-   }
-  },
-  "mm-raid:mm-raid-raid.apl.json": {
-   "priority[2]": {
-    "messages": [
-     "Warning: No aura found on  (#1) for: {SpellID: 1293527}"
-    ],
-    "line": "{\"condition\": {\"and\": {\"vals\": [{\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 1293527}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"10s\"}}}}]}}, \"castSpell"
-   }
-  },
-  "mm-raid:mm.apl.json": {},
-  "mm-lonewolf-raid:mm-lonewolf-raid.apl.json": {
-   "priority[0]": {
-    "messages": [
-     "Warning: No aura found on  (#1) for: {SpellID: 1293527}"
-    ],
-    "line": "{\"condition\": {\"and\": {\"vals\": [{\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 1293527}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"remainingTime\": {}}, \"rhs\": {\"const\": {\"val\": \"10s\"}}}}]}}, \"castSpell"
-   }
-  },
-  "mm-lonewolf-raid:mm-lonewolf-raid-raid.apl.json": {},
-  "mm-lonewolf-raid:mm.apl.json": {},
-  "bm-raid:bm-raid.apl.json": {
-   "priority[5]": {
-    "messages": [
-     "Warning: No aura found on  (#1) for: {SpellID: 19577}"
-    ],
-    "line": "{\"condition\": {\"and\": {\"vals\": [{\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 19577}}}, {\"cmp\": {\"op\": \"OpGe\", \"lhs\": {\"currentManaPercent\": {}}, \"rhs\": {\"const\": {\"val\": \"70%\"}}}}]}}, \"castSp"
-   }
-  },
-  "bm-raid:bm-raid-raid.apl.json": {},
-  "bm-raid:bm.apl.json": {},
-  "melee-dps:melee-dps.apl.json": {
+  "mm-raid:turret.apl.json": {},
+  "mm-raid:mm-raid-raid.apl.json": {},
+  "mm-lonewolf-raid:turret.apl.json": {},
+  "bm-raid:turret_hawk.apl.json": {},
+  "melee-dps:melee.apl.json": {},
+  "survival-pet-raid:survival-pet-raid.apl.json": {
    "priority[0]": {
     "messages": [
      "Warning: No aura found on  (#1) for: {SpellID: 1293527}"
@@ -188,7 +280,7 @@
     "line": "{\"castSpell\": {\"spellId\": {\"spellId\": 20910}}}"
    }
   },
-  "melee-dps:melee-dps-raid.apl.json": {
+  "survival-pet-raid:survival-pet-raid-raid.apl.json": {
    "priority[4]": {
     "messages": [
      "Warning:  (#1) does not know spell {SpellID: 20910}"
@@ -202,7 +294,7 @@
     "line": "{\"condition\": {\"auraIsInactive\": {\"sourceUnit\": {\"type\": \"Self\"}, \"auraId\": {\"spellId\": 1293527}}}, \"castSpell\": {\"spellId\": {\"spellId\": 1293527}}}"
    }
   },
-  "melee-dps:melee-dps.base.apl.json": {
+  "survival-pet-raid:melee-dps.base.apl.json": {
    "priority[1]": {
     "messages": [
      "Warning:  (#1) does not know spell {SpellID: 20910}"

@@ -36,7 +36,7 @@ The Smite (a Discipline/Holy hybrid) raid build the open talent search found on 
 | **Blessed Recovery** | 2/3 | changed | After being struck by a melee or ranged critical hit, or suffering more than 30% of your maximum Health from a single attack, heal 17% of the damage taken over 6 sec. Refreshing this effect carries over any remaining healing. |
 | **Inspiration** | 1/3 | changed | Your non-periodic critical heals increase your target's Armor by 8% for 15 sec. |
 | **Searing Light** | 2/2 | changed | Increases your Holy damage done by 5%, and gives a 10% chance each time your Holy Fire spell deals periodic damage for your next Holy Nova to cost no Mana. |
-| **Spell Warding** | 1/5 | unchanged | Reduces all spell damage taken by 2%. |
+| **Twilight Focus** | 1/3 | **NEW** | Gives your spells a 23% chance to not lose casting time when you take damage. |
 
 ### Shadow (17)
 
@@ -66,9 +66,9 @@ The Smite (a Discipline/Holy hybrid) raid build the open talent search found on 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`smite-discipline-raid`](smite-discipline-raid.md) | ours: hand draft | 31/17/3 | 375 | +0.0% | 586 | -3.1% | 38 s |
-| 2 | *Smite* | community simulator | - | 375 | +0.0% | 586 | -3.1% | 38 s |
-| 3 | **[`smite-open-raid`](smite-open-raid.md)** | ours: derived (open search) | 17/17/17 | 345 | -8.1% | 605 | +0.0% | 39 s |
+| 1 | [`smite-discipline-raid`](smite-discipline-raid.md) | ours: hand draft | 31/17/3 | 354 | +0.0% | 574 | -2.3% | 49 s |
+| 2 | *Smite* | community simulator | - | 354 | +0.0% | 574 | -2.3% | 49 s |
+| 3 | **[`smite-open-raid`](smite-open-raid.md)** | ours: derived (open search) | 17/17/17 | 344 | -2.8% | 588 | +0.0% | 37 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -150,9 +150,9 @@ Before the pull: at -3s: cast Holy Fire.
 | 8 | if not Mind Flay is on the target: cast Mind Flay | 10.8 |
 | 9 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5: cast Shadow Word: Pain | 2.4 |
 | 10 | if not Shadow Word: Pain is on the target and mana % ≥ 30%: cast Shadow Word: Pain | 2.4 |
-| 11 | if mana % < 15%: cast Smite (rank 5) | 2.2 |
+| 11 | if mana % < 15%: cast Smite (rank 5) | 2.1 |
 
-Lines of the simulator's rotation these builds never cast: cast Power Infusion (needs the Power Infusion talent); cast Penance (rank 3) (needs the Penance talent); cast Smite (rank 2), cast Smite (rank 7) (its condition never held in these fights); cast Shadowform (needs the Shadowform talent).
+Lines of the simulator's rotation these builds never cast: cast Power Infusion (needs the Power Infusion talent); cast Penance (rank 3) (needs the Penance talent); cast Smite (rank 4), cast Smite (rank 7) (its condition never held in these fights); cast Shadowform (needs the Shadowform talent).
 
 Damage by ability:
 
@@ -161,10 +161,10 @@ Damage by ability:
 | Mind Flay | 41% |
 | Shadow Word: Pain | 26% |
 | Holy Fire | 20% |
-| Smite | 7% |
+| Smite | 6% |
 | Demonic Rune | 3% |
 | Devouring Plague | 2% |
-| Shadow Word: Death | 2% |
+| Shadow Word: Death | 1% |
 
 ## Notes
 
@@ -175,6 +175,7 @@ Damage by ability:
 - Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Twilight Focus, Holy Nova, Blessed Recovery, Inspiration, Mind Flay, Improved Mind Flay.
 - Simulator numbers are the community's model of the beta (wowsims/forever bac92db (client 70707) with this project's patches), not in-game measurements.
 - 2026-11-03 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Mind Flay -> Spirit Tap (mana); Improved Mind Flay -> Spirit Tap (mana); Twilight Focus -> Spell Warding (survival). Net -0.00% on a third seed.
+- 2026-11-20: 1 point back in Twilight Focus (pushback protection): the filler audit of smite-dps-fillers-smite-open-raid.json had taken it for free because its tags missed Forever's wording ("to not lose casting time"; utility_tags.py fixed the same day). The same damage within 0.1% (worst +0.00% over the entry's setting and a full raid, seeds 1 and 2).
 
 ## Open questions (verify in the live game)
 

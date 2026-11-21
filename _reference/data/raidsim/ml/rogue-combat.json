@@ -3159,7 +3159,7 @@
  "signature_check": {
   "spec": "Combat",
   "ok": true,
-  "core_share": 0.7268,
+  "core_share": 0.796,
   "min_share": 0.7,
   "uncast": [],
   "missing_talents": [],
@@ -3167,30 +3167,30 @@
   "entry": "combat-daggers-raid",
   "setting": "raid",
   "iterations": 6000,
-  "dps": 794.9,
-  "date": "2026-11-19",
+  "dps": 790.4,
+  "date": "2026-11-20",
   "commit": "2e6e77d84",
   "shares": {
-   "Auto Attack": 0.3772,
-   "Backstab": 0.2241,
-   "Eviscerate": 0.1255,
-   "Instant Poison VI": 0.0897,
-   "Deadly Poison V": 0.0784,
-   "Windfury Totem": 0.0704,
+   "Auto Attack": 0.3793,
+   "Backstab": 0.2197,
+   "Eviscerate": 0.1262,
+   "Instant Poison VI": 0.0902,
+   "Deadly Poison V": 0.0789,
+   "Windfury Totem": 0.0708,
    "Shank": 0.0141,
-   "Garrote": 0.0124,
-   "Goblin Sapper Charge": 0.0083
+   "Garrote": 0.0125,
+   "Goblin Sapper Charge": 0.0084
   },
   "casts": {
    "Slice and Dice": 10.32,
-   "Garrote": 1.0,
-   "Blade Flurry": 2.0,
-   "Eviscerate": 15.55,
-   "Vanish": 1.0,
-   "spell 11337": 79.13,
    "Backstab": 36.6,
+   "Eviscerate": 15.55,
    "spell 25349": 48.32,
-   "Shank": 22.97
+   "Vanish": 1.0,
+   "Shank": 22.97,
+   "spell 11337": 79.13,
+   "Blade Flurry": 2.0,
+   "Garrote": 1.0
   },
   "allocation": {
    "Assassination": [
@@ -3237,12 +3237,8 @@
      3
     ],
     [
-     "Efficient Strikes",
-     2
-    ],
-    [
      "Lightning Reflexes",
-     3
+     5
     ],
     [
      "Puncturing Wounds",
@@ -3401,7 +3397,7 @@
    "combat-ml-raid"
   ],
   "superseded": [],
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "setting": "raid"
  },
  "tidied": {

@@ -1,0 +1,91 @@
+{
+ "id": "check-mm-raid-marksmanship-ml-raid",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Focused Fire",
+    2
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Efficiency",
+    2
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Rapid Killing",
+    2
+   ],
+   [
+    "Improved Arcane Shot",
+    5
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Rapid Recuperation",
+    2
+   ],
+   [
+    "Barrage",
+    3
+   ],
+   [
+    "Ranged Weapon Specialization",
+    5
+   ],
+   [
+    "Sniper Shot",
+    1
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-11-20) for mm-raid from marksmanship-ml-raid in the raid setting: 980.8 -> 980.8 DPS on a third seed.",
+ "search": {
+  "start": "marksmanship-ml-raid",
+  "setting": "raid",
+  "kept": [],
+  "moves": [],
+  "dps_start": 980.8259508935977,
+  "dps_end": 980.8259508935977,
+  "gain": 0.0,
+  "tank": false,
+  "date": "2026-11-20",
+  "sim": {
+   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
+   "racials": "off",
+   "pet_normalize": true,
+   "patch_hash": "125d59c4f975f5df",
+   "simulator": "wowsims/forever",
+   "client": "1.60.1.70938"
+  }
+ }
+}

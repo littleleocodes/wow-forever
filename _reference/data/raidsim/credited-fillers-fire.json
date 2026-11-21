@@ -1,0 +1,218 @@
+{
+ "mage/fire-open-raid": {
+  "entry": "fire-raid",
+  "date": "2026-11-20",
+  "free": [
+   "Improved Channeling",
+   "Wand Specialization"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "kind": "utility",
+    "from": "Wand Specialization",
+    "to": "Improved Channeling",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "interrupt"
+   },
+   {
+    "round": 2,
+    "kind": "utility",
+    "from": "Wand Specialization",
+    "to": "Improved Channeling",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "interrupt"
+   }
+  ],
+  "final_seed3_same": true,
+  "start": {
+   "Arcane": [
+    [
+     "Wand Specialization",
+     2
+    ],
+    [
+     "Arcane Subtlety",
+     2
+    ],
+    [
+     "Arcane Concentration",
+     5
+    ],
+    [
+     "Missile Barrage",
+     2
+    ],
+    [
+     "Arcane Blast",
+     1
+    ],
+    [
+     "Arcane Meditation",
+     2
+    ],
+    [
+     "Improved Channeling",
+     3
+    ]
+   ],
+   "Fire": [
+    [
+     "Incineration",
+     5
+    ],
+    [
+     "Accelerant",
+     5
+    ],
+    [
+     "Ignite",
+     5
+    ],
+    [
+     "Pyroblast",
+     1
+    ],
+    [
+     "Improved Fire Blast",
+     2
+    ],
+    [
+     "Improved Scorch",
+     3
+    ],
+    [
+     "Heating Up",
+     1
+    ],
+    [
+     "Master of Elements",
+     2
+    ],
+    [
+     "Critical Mass",
+     3
+    ],
+    [
+     "Fire Power",
+     3
+    ],
+    [
+     "Combustion",
+     1
+    ]
+   ],
+   "Frost": [
+    [
+     "Precision",
+     3
+    ]
+   ]
+  },
+  "allocation": {
+   "Arcane": [
+    [
+     "Arcane Subtlety",
+     2
+    ],
+    [
+     "Arcane Concentration",
+     5
+    ],
+    [
+     "Missile Barrage",
+     2
+    ],
+    [
+     "Arcane Blast",
+     1
+    ],
+    [
+     "Arcane Meditation",
+     2
+    ],
+    [
+     "Improved Channeling",
+     5
+    ]
+   ],
+   "Fire": [
+    [
+     "Incineration",
+     5
+    ],
+    [
+     "Accelerant",
+     5
+    ],
+    [
+     "Ignite",
+     5
+    ],
+    [
+     "Pyroblast",
+     1
+    ],
+    [
+     "Improved Fire Blast",
+     2
+    ],
+    [
+     "Improved Scorch",
+     3
+    ],
+    [
+     "Heating Up",
+     1
+    ],
+    [
+     "Master of Elements",
+     2
+    ],
+    [
+     "Critical Mass",
+     3
+    ],
+    [
+     "Fire Power",
+     3
+    ],
+    [
+     "Combustion",
+     1
+    ]
+   ],
+   "Frost": [
+    [
+     "Precision",
+     3
+    ]
+   ]
+  },
+  "kept_for_rotation": [
+   "Arcane Blast",
+   "Heating Up",
+   "Missile Barrage",
+   "Pyroblast"
+  ],
+  "banned": [],
+  "dummy": [
+   577.1962074241037,
+   577.1962074241037,
+   577.1962074241037
+  ],
+  "ok": true,
+  "check": {
+   "raid seed 1": [
+    868.5240461985516,
+    868.5240461985516
+   ],
+   "raid seed 2": [
+    868.4452119915234,
+    868.4452119915234
+   ]
+  }
+ }
+}

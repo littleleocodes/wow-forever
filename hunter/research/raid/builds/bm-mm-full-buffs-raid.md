@@ -71,15 +71,15 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `bm-mm-raid
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 31/16/4 | 557 | +0.0% | 958 | -6.4% | 31 s |
-| 2 | *BM* | community simulator | - | 544 | -2.4% | 1001 | -2.2% | 42 s |
-| 3 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 524 | -5.9% | 921 | -10.0% | 16 s |
-| 4 | **[`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md)** | ours: hand draft | 21/30/0 | 521 | -6.5% | 931 | -9.1% | 24 s |
-| 5 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 508 | -8.8% | 1023 | +0.0% | 48 s |
-| 6 | *MM* | community simulator | - | 490 | -12.1% | 974 | -4.8% | 41 s |
-| 7 | *SV Weave* | community simulator | - | 443 | -20.5% | 826 | -19.2% | 37 s |
-| 8 | *SV* | community simulator | - | 442 | -20.8% | 856 | -16.3% | 44 s |
-| 9 | *SV Melee* | community simulator | - | 427 | -23.4% | 808 | -21.1% | 44 s |
+| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 31/16/4 | 495 | +0.0% | 866 | -11.8% | 63 s |
+| 2 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 489 | -1.4% | 905 | -7.8% | 58 s |
+| 3 | *BM* | community simulator | - | 482 | -2.6% | 939 | -4.3% | 86 s |
+| 4 | **[`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md)** | ours: hand draft | 21/30/0 | 480 | -3.1% | 873 | -11.1% | 64 s |
+| 5 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: derived (ML search) | 7/39/5 | 472 | -4.8% | 981 | +0.0% | 96 s |
+| 6 | *MM* | community simulator | - | 463 | -6.6% | 938 | -4.4% | 89 s |
+| 7 | *SV Weave* | community simulator | - | 418 | -15.6% | 796 | -18.9% | 77 s |
+| 8 | *SV* | community simulator | - | 418 | -15.7% | 813 | -17.1% | 83 s |
+| 9 | *SV Melee* | community simulator | - | 396 | -20.1% | 792 | -19.3% | 86 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -96,7 +96,7 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `bm-mm-raid
   10. threshold 10s -> 15s: if auraIsInactive and time left in the fight ≥ 10s: cast Summon Hawk + only above 10% mana: if time to the next auto attack > 1s: cast Multi-Shot (+0.2%, pass 9)
   11. insert in the middle: cast Intimidation + only above 60% mana: cast Intimidation (+0.3%, pass 9)
   12. threshold 20% -> 15%: if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 20%: cast Aimed Shot (+0.2%, pass 10)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 17 passes, the last 2026-11-10, 17 changes to the base rotation; third-seed check: marksmanship-ml-raid 890 -> 963 DPS (+8.3%), sim preset: BM 911 -> 955 DPS (+4.9%), bm-mm-raid 863 -> 878 DPS (+1.7%), bm-mm-full-buffs-raid 876 -> 889 DPS (+1.4%), opt-mm-raid-raid-dps 899 -> 912 DPS (+1.4%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 19 passes, the last 2026-11-20, 22 changes to the base rotation; third-seed check: marksmanship-ml-raid 973 -> 981 DPS (+0.8%), sim preset: BM 899 -> 939 DPS (+4.5%), bm-mm-raid 863 -> 906 DPS (+5.0%), bm-mm-full-buffs-raid 872 -> 872 DPS (-0.0%), opt-mm-raid-raid-dps 865 -> 865 DPS (+0.0%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.0%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.3%, pass 1)
   3. only with 6s or more of the fight left: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 1)
@@ -114,31 +114,38 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `bm-mm-raid
   15. threshold 1s -> 0.75s: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and time left in the fight ≥ 6s: cast Serpent Sting (+0.2%, pass 15)
   16. threshold 3 -> 2.25: if time until Aimed Shot is ready ≥ 3 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.2%, pass 16)
   17. drop: cast Major Mana Potion (+1.6%, pass 17)
+  18. drop the condition: if “Use Summon Hawk” and not “Use Arcane Shot”: cast Summon Hawk (+0.9%, pass 18)
+  19. only above 60% mana: cast Summon Hawk (+0.4%, pass 18)
+  20. drop the condition: if “Use Summon Hawk” and “Use Arcane Shot”: sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot (+0.2%, pass 18)
+  21. drop '“Use Summon Hawk” and “Use Arcane Shot”' from the condition: if “Use Summon Hawk” and “Use Arcane Shot” and the sequence is complete: reset sequence 'HHA' (+1.0%, pass 18)
+  22. insert at the end: cast Major Mana Potion (+0.4%, pass 18)
 
-Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
+Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Hawk (rank 6); at -19s: move to “Pull range” yd; if “Use Sniper Shot”: cast Sniper Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Arcane Shot | 8.7 |
-| 2 | use every other cooldown when ready | as ready |
-| 3 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
-| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s and mana % ≥ 15%: cast Aimed Shot | 3.9 |
-| 5 | if time to the next auto attack > 1s and mana % ≥ 10%: cast Multi-Shot | 0.9 |
-| 6 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.6 |
+| 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready |
+| 2 | if not Hunter's Mark is up: cast Hunter's Mark | 0.7 |
+| 3 | if not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 2.8 |
+| 4 | if “Use Summon Hawk” and “Use Arcane Shot” and the sequence is complete: reset sequence 'HHA' | as ready |
+| 5 | if “Use Summon Hawk” and “Use Arcane Shot”: sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot | 8.1 |
+| 6 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 8.1 |
+| 7 | if “Use Aimed Shot”: cast Aimed Shot | 4.7 |
+| 8 | if unitDistance ≠ “Shoot spot” and not spellInRange and (“Windup close” or “Just shot”): move to “Shoot spot” yd | as ready |
+| 9 | if unitDistance ≠ “Shoot spot”: wait inputDelay | as ready |
 
-Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Intimidation (needs the Intimidation talent).
+Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Multi-Shot (its condition never held in these fights); cast Sniper Shot (needs the Sniper Shot talent).
 
 Damage by ability:
 
 | Ability | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) |
 |---|---|
-| Auto Shot | 33% |
-| Pet: Auto Attack | 24% |
-| Arcane Shot | 18% |
+| Auto Shot | 37% |
+| Arcane Shot | 19% |
+| Pet: Auto Attack | 15% |
+| Aimed Shot | 12% |
 | Serpent Sting | 11% |
-| Aimed Shot | 8% |
 | Pet: Claw | 5% |
-| Multi-Shot | 1% |
 | Pet: Bite | 0% |
 
 ## Notes

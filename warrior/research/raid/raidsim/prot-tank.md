@@ -6,7 +6,7 @@
 |---|---|---|---|---|---|---|---|
 | sim preset: Protection | - | 1.014 | 1676 | 315 | 485 | 0 | - |
 | `protection-ml-tank` | 17/3/31 | 1.010 | 1677 | 317 | 486 | 0 | +44.2% |
-| `opt-prot-tank-raid-tank` | 8/5/38 | 1.003 | 1646 | 316 | 471 | 0 | +45.2% |
+| `opt-prot-tank-raid-tank` | 8/5/38 | 1.003 | 1646 | 316 | 471 | 0 | +45.3% |
 | `prot-raid-tank` | 12/5/34 | 1.000 | 1637 | 316 | 468 | 0 | +43.7% |
 
 Tank value = 0.5 x threat per second / the hand draft's + 0.5 x the hand draft's damage taken per second / this build's (the raid-tank profile's weights); the shares below are threat shares.

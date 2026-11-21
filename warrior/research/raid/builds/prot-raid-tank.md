@@ -72,14 +72,14 @@ Allocation adopted on 2026-09-27 from `opt-prot-tank-raid-tank`, the best build 
 
 ## Rank among our builds and the community simulator's
 
-**3 of 4** for `prot-tank` by tank value in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 4** for `prot-tank` by tank value in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 17/3/31 | 1.011 | +0.0% | 1990 | 287 |
-| 2 | *Protection* | community simulator | - | 1.011 | -0.0% | 1982 | 286 |
-| 3 | **[`prot-raid-tank`](prot-raid-tank.md)** | ours: hand draft | 12/5/34 | 1.000 | -1.1% | 1940 | 286 |
-| 4 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 8/5/38 | 1.000 | -1.1% | 1953 | 288 |
+| 1 | *Protection* | community simulator | - | 1.014 | +0.0% | 1676 | 315 |
+| 2 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 17/3/31 | 1.010 | -0.4% | 1677 | 317 |
+| 3 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 8/5/38 | 1.003 | -1.0% | 1646 | 316 |
+| 4 | **[`prot-raid-tank`](prot-raid-tank.md)** | ours: hand draft | 12/5/34 | 1.000 | -1.4% | 1637 | 316 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -94,20 +94,20 @@ Allocation adopted on 2026-09-27 from `opt-prot-tank-raid-tank`, the best build 
   8. insert at the top: if (rage ≥ 40 or auraIsInactive and time until Revenge is ready ≤ 1.5s): cast Shield Block (+8.4%, pass 9)
   9. drop the condition: if (rage ≥ 40 or auraIsInactive and time until Revenge is ready ≤ 1.5s): cast Shield Block (+2.2%, pass 9)
 
-Before the pull: at -1s: cast Battle Shout.
+Before the pull: at -1s: cast Battle Shout (rank 6).
 
 | # | Priority (the first line whose condition holds is cast) | [`prot-raid-tank`](prot-raid-tank.md) casts/min |
 |---|---|---|
 | 1 | cast Shield Block | 11.9 |
 | 2 | cast Shield Wall | 0.3 |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | cast Revenge | 10.8 |
+| 4 | cast Revenge (rank 5) | 10.8 |
 | 5 | if rage < 90: cast Bloodrage | 1.0 |
-| 6 | cast Shield Slam | 8.9 |
-| 7 | if stacks of Sunder Armor < 5: cast Sunder Armor | 15.1 |
-| 8 | if rage ≥ 33.75: cast Heroic Strike | 15.7 |
-| 9 | if not Rend is on the target: cast Rend | 2.8 |
-| 10 | cast Sunder Armor | 15.1 |
+| 6 | cast Shield Slam | 9.0 |
+| 7 | if stacks of Sunder Armor < 5: cast Sunder Armor | 14.9 |
+| 8 | if rage ≥ 33.75: cast Heroic Strike (rank 8) | 18.7 |
+| 9 | if not Rend is on the target: cast Rend | 3.3 |
+| 10 | cast Sunder Armor | 14.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Defensive Stance (its condition never held in these fights).
 
@@ -115,16 +115,16 @@ Damage by ability (threat for tanks):
 
 | Ability | [`prot-raid-tank`](prot-raid-tank.md) |
 |---|---|
-| Revenge | 37% |
-| Heroic Strike | 19% |
+| Revenge | 35% |
+| Heroic Strike | 22% |
 | Shield Slam | 17% |
-| Windfury Totem | 9% |
+| Windfury Totem | 8% |
 | Sunder Armor | 7% |
-| Auto Attack | 5% |
-| Rend | 2% |
+| Auto Attack | 4% |
+| Rend | 3% |
 | Judgement of Light | 2% |
 | OtherActionRageGain | 1% |
-| Retribution Aura | 0% |
+| Retribution Aura | 1% |
 
 ## Notes
 

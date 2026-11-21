@@ -52,14 +52,14 @@ The Destruction build the machine-learning talent search found in a full raid (e
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`destruction-ml-raid`](destruction-ml-raid.md)** | ours: derived (ML search) | 9/11/31 | 713 | +0.0% | 806 | +0.0% | 0 s |
-| 2 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 683 | -4.3% | 772 | -4.2% | 0 s |
-| 3 | [`ds-ruin-raid`](ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 681 | -4.5% | 775 | -3.9% | 0 s |
-| 4 | *SM/Ruin* | community simulator | - | 670 | -6.1% | 752 | -6.6% | 0 s |
-| 5 | *Destro* | community simulator | - | 654 | -8.3% | 727 | -9.8% | 0 s |
-| 6 | *Aff (Wrack)* | community simulator | - | 625 | -12.5% | 689 | -14.5% | 0 s |
-| 7 | *Demo (Shadow Brand)* | community simulator | - | 578 | -19.0% | 659 | -18.2% | 0 s |
-| 8 | *Demo (Fire Brand)* | community simulator | - | 565 | -20.8% | 632 | -21.6% | 0 s |
+| 1 | **[`destruction-ml-raid`](destruction-ml-raid.md)** | ours: derived (ML search) | 9/11/31 | 703 | +0.0% | 812 | +0.0% | 0 s |
+| 2 | [`ds-ruin-raid`](ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 673 | -4.3% | 765 | -5.8% | 0 s |
+| 3 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 673 | -4.3% | 767 | -5.5% | 0 s |
+| 4 | *SM/Ruin* | community simulator | - | 660 | -6.1% | 746 | -8.2% | 0 s |
+| 5 | *Destro* | community simulator | - | 648 | -7.8% | 726 | -10.6% | 0 s |
+| 6 | *Aff (Wrack)* | community simulator | - | 614 | -12.7% | 676 | -16.8% | 0 s |
+| 7 | *Demo (Shadow Brand)* | community simulator | - | 572 | -18.6% | 665 | -18.2% | 0 s |
+| 8 | *Demo (Fire Brand)* | community simulator | - | 558 | -20.6% | 636 | -21.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -70,7 +70,7 @@ The Destruction build the machine-learning talent search found in a full raid (e
   4. insert before the filler: cast Talisman of Ephemeral Power (+0.6%, pass 6)
   5. only above 25% mana: cast Talisman of Ephemeral Power (+0.4%, pass 6)
   6. insert before the filler: cast Eureka! (+0.2%, pass 6)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 14 passes, the last 2026-11-17, 9 changes to the base rotation; third-seed check: destruction-ml-raid 743 -> 825 DPS (+11.0%), sim preset: SM/Ruin 773 -> 768 DPS (-0.7%), ds-ruin-raid 792 -> 790 DPS (-0.2%), opt-sb-raid-raid-dps 795 -> 788 DPS (-0.8%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 15 passes, the last 2026-11-20, 10 changes to the base rotation; third-seed check: destruction-ml-raid 716 -> 813 DPS (+13.6%), sim preset: SM/Ruin 746 -> 746 DPS (+0.0%), ds-ruin-raid 764 -> 764 DPS (+0.0%), opt-sb-raid-raid-dps 766 -> 766 DPS (+0.0%)):
   1. threshold 10% -> 5%: if mana % < 10%: cast Life Tap (+0.4%, pass 1)
   2. move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 1)
   3. only with 20s or more of the fight left: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.2%, pass 1)
@@ -80,6 +80,7 @@ The Destruction build the machine-learning talent search found in a full raid (e
   7. insert before the filler: cast Talisman of Ephemeral Power (+0.5%, pass 6)
   8. only above 25% mana: cast Talisman of Ephemeral Power (+0.2%, pass 12)
   9. insert before the filler: cast Weakness Analyzer (+0.3%, pass 12)
+  10. insert at the top: cast Conflagrate (+6.8%, pass 15)
 
 Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 
@@ -90,20 +91,23 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
-| 6 | if mana % < 10%: cast Life Tap | 6.5 |
-| 7 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
-| 8 | cast Conflagrate | 3.9 |
-| 9 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
+| 6 | if mana % < 10%: cast Life Tap | 6.2 |
+| 7 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 |
+| 8 | if time left on Corruption ≤ cast time of Corruption: cast Corruption (rank 6) | 3.3 |
+| 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate (rank 7) | 3.4 |
+| 10 | cast Conflagrate | 3.9 |
+| 11 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
+| 12 | cast Shadow Bolt | 12.4 |
 
-Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Amplify Curse (needs the Amplify Curse talent); cast Corruption (rank 6), cast Immolate (rank 7), cast Eureka!, cast Shadow Bolt (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Amplify Curse (needs the Amplify Curse talent); cast Eureka! (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`destruction-ml-raid`](destruction-ml-raid.md) |
 |---|---|
 | Shadow Bolt | 47% |
+| Bane of Agony | 17% |
 | Corruption | 16% |
-| Bane of Agony | 16% |
 | Immolate | 10% |
 | Conflagrate | 8% |
 | Demonic Rune | 2% |

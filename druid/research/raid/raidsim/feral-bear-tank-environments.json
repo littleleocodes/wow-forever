@@ -7,7 +7,8 @@
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
   "commit": "2e6e77d84",
   "racials": "off",
-  "pet_normalize": false,
+  "pet_normalize": true,
+  "patch_hash": "125d59c4f975f5df",
   "simulator": "wowsims/forever",
   "client": "1.60.1.70938",
   "gear_raid": "ui/specs/druid/feralbear/gear_sets/default.gear.json",
@@ -86,16 +87,16 @@
     "max60": 1797.1615079431112
    },
    "raid_spell_casts": {
-    "9881": 485.42466666666667,
     "22812": 3.009333333333333,
-    "5229": 3.009333333333333
+    "5229": 3.009333333333333,
+    "9881": 485.42466666666667
    },
    "raid_casts": {
-    "Maul": 485.42466666666667,
-    "OtherActionRageGain": 143.878,
     "Barkskin": 3.009333333333333,
     "Enrage": 3.009333333333333,
-    "Auto Attack": 72.00533333333334
+    "OtherActionRageGain": 143.878,
+    "Auto Attack": 72.00533333333334,
+    "Maul": 485.42466666666667
    },
    "raid_shares": {
     "Maul": 0.8382,
@@ -103,7 +104,8 @@
     "Auto Attack": 0.0691,
     "Retribution Aura": 0.0039,
     "Thorns": 0.0035
-   }
+   },
+   "raid_fp": "8f82755ec25d16fd"
   },
   {
    "label": "opt-feral-bear-tank-raid-tank",
@@ -117,16 +119,16 @@
     "max60": 2229.70379112199
    },
    "raid_spell_casts": {
+    "9881": 573.181,
     "5229": 3.009333333333333,
-    "22812": 3.009333333333333,
-    "9881": 573.181
+    "22812": 3.009333333333333
    },
    "raid_casts": {
-    "OtherActionRageGain": 269.94966666666664,
+    "Maul": 573.181,
     "Enrage": 3.009333333333333,
+    "OtherActionRageGain": 269.94966666666664,
     "Auto Attack": 72.00533333333334,
-    "Barkskin": 3.009333333333333,
-    "Maul": 573.181
+    "Barkskin": 3.009333333333333
    },
    "raid_shares": {
     "Maul": 0.8568,
@@ -134,7 +136,8 @@
     "Auto Attack": 0.0562,
     "Retribution Aura": 0.0029,
     "Thorns": 0.0026
-   }
+   },
+   "raid_fp": "0b609e73cc78bca3"
   },
   {
    "label": "feral-combat-ml-tank",
@@ -148,15 +151,15 @@
     "max60": 1853.0051828004093
    },
    "raid_spell_casts": {
-    "5229": 3.009333333333333,
     "9881": 490.743,
+    "5229": 3.009333333333333,
     "22812": 3.009333333333333
    },
    "raid_casts": {
-    "Enrage": 3.009333333333333,
-    "Auto Attack": 72.00533333333334,
     "OtherActionRageGain": 150.93433333333334,
     "Maul": 490.743,
+    "Enrage": 3.009333333333333,
+    "Auto Attack": 72.00533333333334,
     "Barkskin": 3.009333333333333
    },
    "raid_shares": {
@@ -165,7 +168,8 @@
     "Auto Attack": 0.0701,
     "Retribution Aura": 0.0038,
     "Thorns": 0.0034
-   }
+   },
+   "raid_fp": "69bcba86a570d0e6"
   },
   {
    "label": "sim preset: Bear",
@@ -179,18 +183,18 @@
     "max60": 1923.9719767717238
    },
    "raid_spell_casts": {
-    "22812": 3.0063333333333335,
+    "9881": 430.393,
     "5229": 3.007,
     "1235827": 18.657,
-    "9881": 430.393
+    "22812": 3.0063333333333335
    },
    "raid_casts": {
-    "Barkskin": 3.0063333333333335,
-    "Auto Attack": 72.00533333333334,
+    "Maul": 430.393,
     "Enrage": 3.007,
+    "Auto Attack": 72.00533333333334,
     "OtherActionRageGain": 115.24766666666666,
     "Lacerate": 18.657,
-    "Maul": 430.393
+    "Barkskin": 3.0063333333333335
    },
    "raid_shares": {
     "Maul": 0.8115,
@@ -199,7 +203,8 @@
     "Lacerate": 0.0279,
     "Retribution Aura": 0.0038,
     "Thorns": 0.0034
-   }
+   },
+   "raid_fp": "8e8d644afc6182b5"
   },
   {
    "label": "sim preset: Hybrid",
@@ -213,18 +218,18 @@
     "max60": 1619.4794290286966
    },
    "raid_spell_casts": {
-    "5229": 3.0073333333333334,
-    "1235827": 18.629666666666665,
     "22812": 3.006,
-    "9881": 361.29566666666665
+    "5229": 3.0073333333333334,
+    "9881": 361.29566666666665,
+    "1235827": 18.629666666666665
    },
    "raid_casts": {
-    "Enrage": 3.0073333333333334,
-    "Auto Attack": 72.00533333333334,
-    "Lacerate": 18.629666666666665,
     "OtherActionRageGain": 33.007333333333335,
     "Barkskin": 3.006,
-    "Maul": 361.29566666666665
+    "Enrage": 3.0073333333333334,
+    "Maul": 361.29566666666665,
+    "Auto Attack": 72.00533333333334,
+    "Lacerate": 18.629666666666665
    },
    "raid_shares": {
     "Maul": 0.7928,
@@ -233,7 +238,8 @@
     "Lacerate": 0.0316,
     "Retribution Aura": 0.0044,
     "Thorns": 0.0039
-   }
+   },
+   "raid_fp": "559d975f79243039"
   }
  ]
 }

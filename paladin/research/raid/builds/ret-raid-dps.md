@@ -70,18 +70,19 @@ Allocation adopted on 2026-09-27 from `cand-ret-dps-r1`, the best build in the c
 
 ## Rank among our builds and the community simulator's
 
-**4 of 8** for `ret-dps` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**5 of 9** for `ret-dps` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *Unsealed Wrath* | community simulator | - | 442 | +0.0% | 768 | -0.2% | 32 s |
-| 2 | *Holy Shock* | community simulator | - | 431 | -2.6% | 680 | -11.6% | 0 s |
-| 3 | [`retribution-open-raid`](retribution-open-raid.md) | ours: derived (open search) | 16/4/31 | 426 | -3.7% | 769 | +0.0% | 45 s |
-| 4 | **[`ret-raid-dps`](ret-raid-dps.md)** | ours: hand draft | 17/6/28 | 396 | -10.4% | 632 | -17.8% | 0 s |
-| 5 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 17/6/28 | 396 | -10.4% | 632 | -17.8% | 0 s |
-| 6 | [`prot-ret-ml-raid`](prot-ret-ml-raid.md) | ours: derived (ML search) | 10/12/29 | 366 | -17.1% | 655 | -14.9% | 9 s |
-| 7 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: derived (ML search) | 9/14/28 | 351 | -20.7% | 629 | -18.3% | 9 s |
-| 8 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 8/15/28 | 348 | -21.2% | 628 | -18.3% | 12 s |
+| 1 | [`retribution-unsealed-wrath-raid`](retribution-unsealed-wrath-raid.md) | ours: derived (simulator preset) | 14/6/31 | 442 | +0.0% | 768 | -0.2% | 32 s |
+| 2 | *Unsealed Wrath* | community simulator | - | 442 | +0.0% | 768 | -0.2% | 32 s |
+| 3 | *Holy Shock* | community simulator | - | 431 | -2.6% | 680 | -11.6% | 0 s |
+| 4 | [`retribution-open-raid`](retribution-open-raid.md) | ours: derived (open search) | 16/4/31 | 426 | -3.7% | 769 | +0.0% | 45 s |
+| 5 | **[`ret-raid-dps`](ret-raid-dps.md)** | ours: hand draft | 17/6/28 | 396 | -10.4% | 632 | -17.8% | 0 s |
+| 6 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 17/6/28 | 396 | -10.4% | 632 | -17.8% | 0 s |
+| 7 | [`prot-ret-ml-raid`](prot-ret-ml-raid.md) | ours: derived (ML search) | 10/12/29 | 366 | -17.1% | 655 | -14.9% | 9 s |
+| 8 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: derived (ML search) | 9/14/28 | 351 | -20.7% | 629 | -18.3% | 9 s |
+| 9 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 8/15/28 | 348 | -21.2% | 628 | -18.3% | 12 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -94,17 +95,18 @@ Before the pull: at -20s: groupReference; at -20s: move to “Pull range” yd; 
 
 | # | Priority (the first line whose condition holds is cast) | [`ret-raid-dps`](ret-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | if not spellInRange: groupReference | as ready |
-| 2 | if “WF guard”: cast Judgement | 7.7 |
-| 3 | if time into the fight ≥ “Delay Major CDs”: use every other cooldown when ready | as ready |
-| 4 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 2.0 |
-| 5 | if “WF guard” and not Judgement is ready and “Judge realism protection”: cast Holy Strike | 6.0 |
-| 6 | if “Should refresh SoC”: cast Seal of Command | 2.0 |
-| 7 | groupReference | as ready |
-| 8 | groupReference | as ready |
-| 9 | cast Divine Favor | 0.7 |
+| 1 | if not spellInRange and “Has assigned judgement” and talentIsKnown and (“Use Seal of Command” or not “Use Seal of Righteousness” or talentIsKnown) and not the sequence is complete: sequence 'move1': move to “Melee range” yd; wait until spellInRange; cast Judgement; wait inputDelay; cast Seal of Command; wait until spellInRange | 9.7 |
+| 2 | if not spellInRange and “Has assigned judgement” and (not talentIsKnown or not talentIsKnown or not “Use Seal of Command”) and not the sequence is complete: sequence 'move2': move to “Melee range” yd; wait until spellInRange; cast Judgement; wait inputDelay; cast Seal of Righteousness; wait until spellInRange | 7.7 |
+| 3 | if not spellInRange and not “Has assigned judgement” and not the sequence is complete: sequence 'move3': move to “Melee range” yd; wait until spellInRange; cast Judgement; wait until spellInRange | 7.7 |
+| 4 | if “WF guard”: cast Judgement | 7.7 |
+| 5 | if time into the fight ≥ “Delay Major CDs”: use every other cooldown when ready | as ready |
+| 6 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 2.0 |
+| 7 | if “WF guard” and not Judgement is ready and “Judge realism protection”: cast Holy Strike | 6.0 |
+| 8 | if “Should refresh SoC”: cast Seal of Command | 2.0 |
+| 9 | if time to the next auto attack > 1.5s and mana % ≥ 10% and not Judgement is ready and not Holy Strike is ready: cast Consecration | 6.7 |
+| 10 | cast Divine Favor | 0.7 |
 
-Lines of the simulator's rotation these builds never cast: cast Seal of Righteousness (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Seal of Righteousness, cast Exorcism (its condition never held in these fights).
 
 Damage by ability:
 

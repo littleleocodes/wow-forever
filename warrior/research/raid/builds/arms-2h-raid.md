@@ -1,10 +1,10 @@
-# Fury — Two-Handed (Improved Slam / Bloodthrill) — 19/32/0
+# Fury — Two-Handed (Improved Slam / Bloodthrill) — 19/31/1
 
 *[Warrior](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 19/32/0 (Arms / Fury / Protection) |
+| **Build** | 19/31/1 (Arms / Fury / Protection) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -28,24 +28,27 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
 | **Impale** | 1/2 | changed | Increases the critical strike damage bonus of your abilities by 10%. |
 | **Two-Handed Weapon Specialization** | 3/3 | changed | Increases the damage you deal with two-handed melee weapons by 6%. |
 
-### Fury (32)
+### Fury (31)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Booming Voice** | 5/5 | changed | Increases the area of effect of your Shouts by 50% and reduces their Rage cost by 25%. Also reduces the Rage cost of Piercing Howl by 25%. |
 | **Cruelty** | 5/5 | changed | Improves your chance to get a critical strike with melee attacks by 5%. |
-| **Lingering Rage** | 3/5 | changed | Increases the time before your Rage begins to decay after leaving combat by 6 sec. |
+| **Lingering Rage** | 2/5 | changed | Increases the time before your Rage begins to decay after leaving combat by 4 sec. |
 | **Unbridled Wrath** | 5/5 | changed | Gives you a 60% chance to generate 1 additional Rage when you deal melee damage with a weapon. |
-| **Enrage** | 5/5 | changed | Gives you a 30% chance to deal 10% increased Physical damage for 12 sec after being the victim of any damaging attack. |
 | **Improved Execute** | 2/2 | changed | Reduces the Rage cost of your Execute ability by 5. |
 | **Death Wish** | 1/1 | changed | When activated, increases your Physical damage done by 20% and makes you immune to Fear effects, but increases all damage you take by 5%. Lasts 30 sec. |
 | **Flurry** | 3/3 | changed | Increases your melee attack speed by 30% for your next 3 swings after dealing a melee critical strike. |
 | **Improved Whirlwind** | 2/2 | **NEW** | Reduces the cooldown of your Whirlwind ability by 2 seconds and increases the damage it deals to the closest enemy by 30%. |
 | **Bloodthirst** | 1/1 | changed | Instantly attack the target causing damage equal to 45% of your Attack Power plus 30 and increasing your movement speed by 10% for 10 sec. |
+| **Blood Craze** | 3/3 | changed | Regenerates 3% of your total Health over 6 sec after being the victim of a critical strike or suffering more than 20% of your maximum Health from a single attack. |
+| **Gore Drinker** | 2/2 | **NEW** | Your Enrage, Berserker Rage, Bloodrage, Death Wish, and Bloodthirst abilities cause your next 3 melee attacks to restore 1.0% of your maximum Health. |
 
-### Protection (0)
+### Protection (1)
 
-*No points.*
+| Talent | Pts | vs Classic | Effect at this rank |
+|---|---|---|---|
+| **Iron Will** | 1/5 | changed | Reduces the duration of Stun and Fear effects inflicted on you by 3%. |
 
 ## Core talents (priority order)
 
@@ -67,7 +70,6 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
 | 5 | Improved Tactical Mastery | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 2 | Booming Voice | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 3 | Booming Voice | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 5 | Enrage | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 
 ## Rank among our builds and the community simulator's
 
@@ -75,11 +77,11 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`fury-open-raid`](fury-open-raid.md) | ours: derived (open search) | 20/31/0 | 403 | +0.0% | 922 | +0.0% | 0 s |
-| 2 | [`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 403 | -0.0% | 913 | -1.0% | 0 s |
-| 3 | **[`arms-2h-raid`](arms-2h-raid.md)** | ours: hand draft | 19/32/0 | 391 | -3.1% | 900 | -2.4% | 0 s |
-| 4 | *Fury* | community simulator | - | 382 | -5.3% | 871 | -5.5% | 0 s |
-| 5 | *Arms* | community simulator | - | 333 | -17.3% | 755 | -18.1% | 0 s |
+| 1 | [`fury-open-raid`](fury-open-raid.md) | ours: derived (open search) | 20/31/0 | 400 | +0.0% | 921 | +0.0% | 0 s |
+| 2 | [`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 399 | -0.0% | 912 | -1.0% | 0 s |
+| 3 | **[`arms-2h-raid`](arms-2h-raid.md)** | ours: hand draft | 19/31/1 | 387 | -3.1% | 899 | -2.4% | 0 s |
+| 4 | *Fury* | community simulator | - | 378 | -5.3% | 870 | -5.5% | 0 s |
+| 5 | *Arms* | community simulator | - | 331 | -17.2% | 755 | -18.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -124,7 +126,7 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
 | # | Priority (the first line whose condition holds is cast) | [`arms-2h-raid`](arms-2h-raid.md) casts/min |
 |---|---|---|
 | 1 | cast Berserker Rage | 2.0 |
-| 2 | if not Battle Shout is up: cast Battle Shout | 0.3 |
+| 2 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 |
 | 3 | if execute phase (E20): cast Execute | 5.0 |
 | 4 | cast Goblin Sapper Charge | as ready |
 | 5 | cast Dense Dynamite | as ready |
@@ -142,7 +144,7 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
 | 17 | if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring | 0.8 |
 | 18 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.2 |
 
-Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
+Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
 Damage by ability:
 
@@ -151,7 +153,7 @@ Damage by ability:
 | Auto Attack | 45% |
 | Execute | 16% |
 | Whirlwind | 16% |
-| Bloodthirst | 16% |
+| Bloodthirst | 15% |
 | Deep Wound | 7% |
 | Hamstring | 0% |
 
@@ -166,6 +168,7 @@ Damage by ability:
 - 2026-10-17 (audit of 2026-10-17, finding 26): flex alternative Boundless Rage dropped (removed in build 70170).
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 19/32/0 -> 19/32/0; Improved Tactical Mastery 5 -> 3 (rank cap); Flurry 5 -> 3 (rank cap); +1 Deflection (tier gating for Anger Management); +1 Deflection (tier gating for Impale); +1 Raging Blows (tier gating for Bloodthirst); +1 Improved Whirlwind (back into Fury) (refill: the arms-2h-raid model, raid-dps).
 - 2026-11-03 (repair_builds.py, client build 1.60.1.70753 trees): 19/32/0 -> 19/32/0; Raging Blows 1 gone; +1 Improved Whirlwind (back into Fury) (refill: the arms-2h-raid model, raid-dps).
+- 2026-11-20: filler points moved (3 points from Enrage to Blood Craze; 2 points from Enrage to Gore Drinker; 1 point from Lingering Rage to Iron Will): the same DPS bit for bit in a full raid and on the training dummy. The new talents follow the utility order (interrupt protection, threat, mana, range, survival; dodge, parry and block count for nothing in a damage dealer's raid), which the simulator cannot measure (deep-runs/credited_fillers_1120.py; the user's rule of 2026-11-08 that a page pick holds no talent that does nothing).
 
 ## Open questions (verify in the live game)
 

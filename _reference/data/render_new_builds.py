@@ -122,6 +122,8 @@ def search_changes(cls):
         rec = json.load(open(p, encoding="utf-8"))
         rec = {rec.get("setting", "dummy"): rec} if "changes" in rec else rec
         for st, r in rec.items():
+            if not isinstance(r, dict):   # a note such as "copied_from" (2026-11-20), not a setting's record
+                continue
             for c in (r or {}).get("changes", []):
                 out.append((p.name[: -len("-rotation-search.json")], st, c))
     return out

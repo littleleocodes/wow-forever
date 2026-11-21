@@ -1,0 +1,321 @@
+{
+ "class": "hunter",
+ "spec": "survival-pet-raid",
+ "game": "forever",
+ "date": "2026-11-20",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
+  "commit": "2e6e77d84",
+  "racials": "off",
+  "pet_normalize": true,
+  "patch_hash": "125d59c4f975f5df",
+  "simulator": "wowsims/forever",
+  "client": "1.60.1.70938",
+  "gear_raid": "_reference/data/raidsim/gear_sets/forever/hunter-project-hunter_melee_p1.p1opt.gear.json",
+  "gear_max": "F:\\wow-forever\\_reference\\data\\raidsim\\gear_sets\\forever\\hunter-project-hunter_melee_p1.p1opt.gear.json",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)"
+  },
+  "dummy60": {
+   "label": "level-60 dummy",
+   "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 180 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else; none the spec cannot benefit from, such as Enhancement's Windfury Totem), consumables (and the Classic sim's world buffs), 180 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  },
+  "ladder-mana": {
+   "label": "+ mana",
+   "how": "the training dummy plus the raid's mana buffs and debuffs: mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom"
+  },
+  "ladder-armor": {
+   "label": "+ armor",
+   "how": "the training dummy plus the raid's armor buffs and debuffs (and every group before it): sunder_armor, expose_armor, faerie_fire, curse_of_recklessness"
+  },
+  "ladder-physical": {
+   "label": "+ physical",
+   "how": "the training dummy plus the raid's physical buffs and debuffs (and every group before it): battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas"
+  },
+  "ladder-spell": {
+   "label": "+ spell",
+   "how": "the training dummy plus the raid's spell buffs and debuffs (and every group before it): arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader"
+  },
+  "curve60": {
+   "label": "60 s",
+   "how": "the training dummy without execute phases, a 60 s fight (the DPS-over-time curve)"
+  },
+  "curve120": {
+   "label": "120 s",
+   "how": "the training dummy without execute phases, a 120 s fight (the DPS-over-time curve)"
+  },
+  "curve180": {
+   "label": "180 s",
+   "how": "the training dummy without execute phases, a 180 s fight (the DPS-over-time curve)"
+  },
+  "curve240": {
+   "label": "240 s",
+   "how": "the training dummy without execute phases, a 240 s fight (the DPS-over-time curve)"
+  },
+  "curve360": {
+   "label": "360 s",
+   "how": "the training dummy without execute phases, a 360 s fight (the DPS-over-time curve)"
+  }
+ },
+ "results": [
+  {
+   "label": "survival-raptor-raid",
+   "split": "16/4/31",
+   "ours": true,
+   "dps": {
+    "dummy": 363.782716545144,
+    "dummy60": 430.36999665555305,
+    "ladder-mana": 477.0883761073605,
+    "ladder-armor": 638.3822770224875,
+    "ladder-physical": 809.5943152161157,
+    "ladder-spell": 825.1292104411843,
+    "raid": 914.9284618941716,
+    "curve60": 494.3015373825473,
+    "curve120": 377.394786531478,
+    "curve180": 363.782716545144,
+    "curve240": 337.7954339825171,
+    "curve360": 325.12776588334094,
+    "max": 914.9284618941716,
+    "max60": 952.2541484589946
+   },
+   "raid_spell_casts": {
+    "14266": 24.376,
+    "13555": 8.553,
+    "1299447": 1.0,
+    "14268": 34.989,
+    "3045": 1.0,
+    "1293527": 21.613,
+    "2643": 1.36,
+    "1317257": 19.737333333333332,
+    "14287": 1.7323333333333333,
+    "14271": 19.752666666666666,
+    "14325": 2.0,
+    "14305": 9.566666666666666,
+    "17261": 1.0,
+    "3009": 72.0,
+    "1265069": 1.0
+   },
+   "raid_casts": {
+    "Raptor Strike": 24.376,
+    "OtherActionManaGain": 145.85866666666666,
+    "Serpent Sting": 8.553,
+    "Aspect of the Beast": 1.0,
+    "Major Mana Potion": 0.9906666666666667,
+    "Wing Clip": 34.989,
+    "Rapid Fire": 1.0,
+    "Summon Hawk": 21.613,
+    "Multi-Shot": 1.36,
+    "Strider Kick": 19.737333333333332,
+    "Arcane Shot": 1.7323333333333333,
+    "OtherActionMove": 18.133666666666667,
+    "Auto Shot": 9.554333333333334,
+    "Mongoose Bite": 19.752666666666666,
+    "Hunter's Mark": 2.0,
+    "Auto Attack": 157.71766666666667,
+    "item 13965": 1.0,
+    "Immolation Trap": 9.566666666666666,
+    "Pet: Bite": 1.0,
+    "Pet: Claw": 72.0,
+    "Pet: Savage Rend": 1.0,
+    "Pet: Auto Attack": 294.6383333333334
+   },
+   "raid_shares": {
+    "Pet: Auto Attack": 0.2308,
+    "Auto Attack": 0.2268,
+    "Immolation Trap": 0.074,
+    "Serpent Sting": 0.0706,
+    "Windfury Totem": 0.0665,
+    "Raptor Strike": 0.0656,
+    "Mongoose Bite": 0.0605,
+    "Strider Kick": 0.0523,
+    "Pet: Claw": 0.0396,
+    "Auto Shot": 0.0362,
+    "Summon Hawk": 0.0326,
+    "Wing Clip": 0.0149,
+    "Lacerating Strikes": 0.0131,
+    "Arcane Shot": 0.0083,
+    "Multi-Shot": 0.0051,
+    "Pet: Savage Rend": 0.0021,
+    "Pet: Bite": 0.0009
+   },
+   "raid_fp": "1a6dbf0c4ab39c94"
+  },
+  {
+   "label": "melee-survival-raid",
+   "split": "5/11/35",
+   "ours": true,
+   "dps": {
+    "dummy": 401.9422733158175,
+    "dummy60": 458.485876191524,
+    "ladder-mana": 439.87888377923866,
+    "ladder-armor": 570.5847085478604,
+    "ladder-physical": 721.3805895486927,
+    "ladder-spell": 742.3114803770818,
+    "raid": 824.0208736157953,
+    "curve60": 460.93142023945376,
+    "curve120": 431.1940714691275,
+    "curve180": 401.9422733158175,
+    "curve240": 386.37115882085146,
+    "curve360": 372.02536000278036,
+    "max": 824.0208736157953,
+    "max60": 865.6432282655691
+   },
+   "raid_spell_casts": {
+    "14266": 24.335333333333335,
+    "14287": 2.1043333333333334,
+    "2643": 1.0,
+    "14271": 19.51,
+    "14325": 2.0,
+    "1317257": 19.823,
+    "14305": 9.710666666666667,
+    "14268": 54.522666666666666,
+    "1299447": 1.0,
+    "3045": 1.0,
+    "13555": 10.673,
+    "17261": 1.0,
+    "1265069": 1.0,
+    "3009": 72.0
+   },
+   "raid_casts": {
+    "Raptor Strike": 24.335333333333335,
+    "OtherActionMove": 22.392,
+    "Arcane Shot": 2.1043333333333334,
+    "Multi-Shot": 1.0,
+    "Mongoose Bite": 19.51,
+    "Hunter's Mark": 2.0,
+    "Auto Shot": 11.628666666666666,
+    "item 13965": 1.0,
+    "Auto Attack": 151.067,
+    "Strider Kick": 19.823,
+    "Immolation Trap": 9.710666666666667,
+    "Wing Clip": 54.522666666666666,
+    "Aspect of the Beast": 1.0,
+    "Rapid Fire": 1.0,
+    "OtherActionManaGain": 112.851,
+    "Serpent Sting": 10.673,
+    "Pet: Bite": 1.0,
+    "Pet: Savage Rend": 1.0,
+    "Pet: Auto Attack": 133.8,
+    "Pet: Claw": 72.0
+   },
+   "raid_shares": {
+    "Auto Attack": 0.2569,
+    "Pet: Auto Attack": 0.116,
+    "Serpent Sting": 0.0968,
+    "Immolation Trap": 0.0914,
+    "Windfury Totem": 0.0858,
+    "Raptor Strike": 0.0764,
+    "Mongoose Bite": 0.0703,
+    "Strider Kick": 0.0624,
+    "Auto Shot": 0.0514,
+    "Pet: Claw": 0.0328,
+    "Wing Clip": 0.0256,
+    "Lacerating Strikes": 0.0154,
+    "Arcane Shot": 0.0117,
+    "Multi-Shot": 0.0044,
+    "Pet: Savage Rend": 0.0018,
+    "Pet: Bite": 0.0007
+   },
+   "raid_fp": "57a4de088970cfb7"
+  },
+  {
+   "label": "sim preset: SV Melee",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 363.782716545144,
+    "dummy60": 430.36999665555305,
+    "ladder-mana": 477.0883761073605,
+    "ladder-armor": 638.3822770224875,
+    "ladder-physical": 809.5943152161157,
+    "ladder-spell": 825.1292104411843,
+    "raid": 914.9284618941716,
+    "curve60": 494.3015373825473,
+    "curve120": 377.394786531478,
+    "curve180": 363.782716545144,
+    "curve240": 337.7954339825171,
+    "curve360": 325.12776588334094,
+    "max": 914.9284618941716,
+    "max60": 952.2541484589946
+   },
+   "raid_spell_casts": {
+    "1317257": 19.737333333333332,
+    "14268": 34.989,
+    "3045": 1.0,
+    "2643": 1.36,
+    "14305": 9.566666666666666,
+    "14325": 2.0,
+    "14271": 19.752666666666666,
+    "1293527": 21.613,
+    "14287": 1.7323333333333333,
+    "14266": 24.376,
+    "13555": 8.553,
+    "1299447": 1.0,
+    "1265069": 1.0,
+    "17261": 1.0,
+    "3009": 72.0
+   },
+   "raid_casts": {
+    "Strider Kick": 19.737333333333332,
+    "Wing Clip": 34.989,
+    "Rapid Fire": 1.0,
+    "Major Mana Potion": 0.9906666666666667,
+    "Multi-Shot": 1.36,
+    "Immolation Trap": 9.566666666666666,
+    "Hunter's Mark": 2.0,
+    "OtherActionMove": 18.133666666666667,
+    "Auto Attack": 157.71766666666667,
+    "Mongoose Bite": 19.752666666666666,
+    "OtherActionManaGain": 145.85866666666666,
+    "Summon Hawk": 21.613,
+    "Auto Shot": 9.554333333333334,
+    "Arcane Shot": 1.7323333333333333,
+    "item 13965": 1.0,
+    "Raptor Strike": 24.376,
+    "Serpent Sting": 8.553,
+    "Aspect of the Beast": 1.0,
+    "Pet: Savage Rend": 1.0,
+    "Pet: Auto Attack": 294.6383333333334,
+    "Pet: Bite": 1.0,
+    "Pet: Claw": 72.0
+   },
+   "raid_shares": {
+    "Pet: Auto Attack": 0.2308,
+    "Auto Attack": 0.2268,
+    "Immolation Trap": 0.074,
+    "Serpent Sting": 0.0706,
+    "Windfury Totem": 0.0665,
+    "Raptor Strike": 0.0656,
+    "Mongoose Bite": 0.0605,
+    "Strider Kick": 0.0523,
+    "Pet: Claw": 0.0396,
+    "Auto Shot": 0.0362,
+    "Summon Hawk": 0.0326,
+    "Wing Clip": 0.0149,
+    "Lacerating Strikes": 0.0131,
+    "Arcane Shot": 0.0083,
+    "Multi-Shot": 0.0051,
+    "Pet: Savage Rend": 0.0021,
+    "Pet: Bite": 0.0009
+   },
+   "raid_fp": "b1d47fcd236fd1d6"
+  }
+ ]
+}

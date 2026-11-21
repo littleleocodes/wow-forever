@@ -238,28 +238,6 @@
   {
    "action": {
     "condition": {
-     "cmp": {
-      "op": "OpLe",
-      "lhs": {
-       "remainingTime": {}
-      },
-      "rhs": {
-       "const": {
-        "val": "60s"
-       }
-      }
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 24427
-     }
-    }
-   }
-  },
-  {
-   "action": {
-    "condition": {
      "or": {
       "vals": [
        {
@@ -294,47 +272,6 @@
     "castSpell": {
      "spellId": {
       "itemId": 21180
-     }
-    }
-   }
-  },
-  {
-   "action": {
-    "condition": {
-     "or": {
-      "vals": [
-       {
-        "cmp": {
-         "op": "OpLe",
-         "lhs": {
-          "remainingTime": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "30s"
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "remainingTime": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "130s"
-          }
-         }
-        }
-       }
-      ]
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 29602
      }
     }
    }
@@ -482,29 +419,6 @@
   },
   {
    "action": {
-    "condition": {
-     "cmp": {
-      "op": "OpGt",
-      "lhs": {
-       "numberTargets": {}
-      },
-      "rhs": {
-       "const": {
-        "val": "1"
-       }
-      }
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 1680,
-      "tag": 14
-     }
-    }
-   }
-  },
-  {
-   "action": {
     "castSpell": {
      "spellId": {
       "spellId": 11574
@@ -585,17 +499,6 @@
      }
     }
    }
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 1680,
-      "tag": 14
-     }
-    }
-   },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see arms-2h-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -736,16 +639,6 @@
      }
     }
    }
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 20560
-     }
-    }
-   },
-   "notes": "apl_opt 2026-09-29: changed or added by the rotation search (see arms-battle-raid-rotation-search.json)"
   },
   {
    "action": {

@@ -2,12 +2,13 @@
  "class": "paladin",
  "spec": "ret-dps",
  "game": "forever",
- "date": "2026-11-19",
+ "date": "2026-11-20",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
   "commit": "2e6e77d84",
   "racials": "off",
-  "pet_normalize": false,
+  "pet_normalize": true,
+  "patch_hash": "125d59c4f975f5df",
   "simulator": "wowsims/forever",
   "client": "1.60.1.70938",
   "gear_raid": "_reference/data/raidsim/gear_sets/forever/paladin-retribution-default.p1opt.gear.json",
@@ -95,31 +96,31 @@
     "max60": 623.0275570044066
    },
    "raid_spell_casts": {
-    "20920": 6.0,
-    "20216": 2.0,
-    "20303": 1.0,
-    "20924": 22.0,
-    "20968": 22.0,
-    "10333": 17.0,
-    "10301": 1.0,
+    "20308": 1.0,
     "24239": 5.0,
-    "20308": 1.0
+    "10301": 1.0,
+    "20968": 22.0,
+    "20303": 1.0,
+    "20216": 2.0,
+    "20920": 6.0,
+    "20924": 22.0,
+    "10333": 17.0
    },
    "raid_casts": {
-    "Seal of Command": 6.0,
-    "Divine Favor": 2.0,
-    "Judgement of the Crusader": 1.0,
-    "Consecration": 22.0,
-    "Judgement of Command": 22.0,
-    "Holy Strike": 17.0,
-    "Retribution Aura": 1.0,
-    "Hammer of Wrath": 5.0,
-    "item 13965": 1.0,
-    "OtherActionManaGain": 80.11966666666666,
     "Seal of the Crusader": 1.0,
-    "OtherActionMove": 2.0,
+    "Hammer of Wrath": 5.0,
+    "OtherActionManaGain": 80.11966666666666,
+    "Retribution Aura": 1.0,
     "Auto Attack": 84.0,
-    "Talisman of Ephemeral Power": 2.0
+    "Judgement of Command": 22.0,
+    "Judgement of the Crusader": 1.0,
+    "OtherActionMove": 2.0,
+    "Divine Favor": 2.0,
+    "Seal of Command": 6.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "item 13965": 1.0,
+    "Consecration": 22.0,
+    "Holy Strike": 17.0
    },
    "raid_shares": {
     "Auto Attack": 0.2825,
@@ -129,7 +130,8 @@
     "Holy Strike": 0.1214,
     "Windfury Totem": 0.1073,
     "Hammer of Wrath": 0.0522
-   }
+   },
+   "raid_fp": "d26d748622affdd6"
   },
   {
    "label": "ret-full-buffs-raid",
@@ -152,31 +154,31 @@
     "max60": 620.0833544376476
    },
    "raid_spell_casts": {
-    "20920": 6.0,
-    "10301": 1.0,
-    "20968": 22.0,
     "20924": 22.0,
-    "20303": 1.0,
-    "10333": 17.0,
+    "24239": 5.0,
+    "20968": 22.0,
+    "10301": 1.0,
     "20308": 1.0,
-    "24239": 5.0
+    "20920": 6.0,
+    "20303": 1.0,
+    "10333": 17.0
    },
    "raid_casts": {
-    "Major Mana Potion": 0.9833333333333333,
-    "Seal of Command": 6.0,
-    "Retribution Aura": 1.0,
-    "Judgement of Command": 22.0,
     "Consecration": 22.0,
-    "Judgement of the Crusader": 1.0,
+    "Major Mana Potion": 0.9833333333333333,
     "Demonic Rune": 1.064,
-    "Holy Strike": 17.0,
-    "Seal of the Crusader": 1.0,
-    "OtherActionMove": 2.0,
-    "Auto Attack": 84.0,
     "Hammer of Wrath": 5.0,
-    "OtherActionManaGain": 95.156,
+    "Auto Attack": 84.0,
+    "Talisman of Ephemeral Power": 2.0,
     "item 13965": 1.0,
-    "Talisman of Ephemeral Power": 2.0
+    "Judgement of Command": 22.0,
+    "Retribution Aura": 1.0,
+    "OtherActionManaGain": 95.156,
+    "Seal of the Crusader": 1.0,
+    "Seal of Command": 6.0,
+    "Judgement of the Crusader": 1.0,
+    "Holy Strike": 17.0,
+    "OtherActionMove": 2.0
    },
    "raid_shares": {
     "Auto Attack": 0.282,
@@ -187,7 +189,8 @@
     "Windfury Totem": 0.1072,
     "Hammer of Wrath": 0.0522,
     "Demonic Rune": 0.0076
-   }
+   },
+   "raid_fp": "cb8625a8a50eaad6"
   },
   {
    "label": "opt-ret-dps-raid-dps",
@@ -210,29 +213,29 @@
     "max60": 623.0275570044066
    },
    "raid_spell_casts": {
-    "20924": 22.0,
-    "10333": 17.0,
-    "20920": 6.0,
-    "20308": 1.0,
+    "20303": 1.0,
     "10301": 1.0,
+    "20924": 22.0,
     "24239": 5.0,
     "20968": 22.0,
-    "20303": 1.0
+    "10333": 17.0,
+    "20920": 6.0,
+    "20308": 1.0
    },
    "raid_casts": {
+    "Judgement of the Crusader": 1.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Retribution Aura": 1.0,
+    "OtherActionManaGain": 79.342,
     "Consecration": 22.0,
+    "Hammer of Wrath": 5.0,
+    "OtherActionMove": 2.0,
+    "Judgement of Command": 22.0,
+    "Auto Attack": 84.0,
     "Holy Strike": 17.0,
     "item 13965": 1.0,
-    "OtherActionMove": 2.0,
     "Seal of Command": 6.0,
-    "Seal of the Crusader": 1.0,
-    "Retribution Aura": 1.0,
-    "Hammer of Wrath": 5.0,
-    "OtherActionManaGain": 79.342,
-    "Auto Attack": 84.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Judgement of Command": 22.0,
-    "Judgement of the Crusader": 1.0
+    "Seal of the Crusader": 1.0
    },
    "raid_shares": {
     "Auto Attack": 0.2825,
@@ -242,7 +245,8 @@
     "Holy Strike": 0.1214,
     "Windfury Totem": 0.1073,
     "Hammer of Wrath": 0.0522
-   }
+   },
+   "raid_fp": "f503ddc4b4e2121f"
   },
   {
    "label": "retribution-ml-raid",
@@ -265,31 +269,31 @@
     "max60": 620.1001288117982
    },
    "raid_spell_casts": {
-    "20924": 22.0,
     "20308": 1.0,
-    "10301": 1.0,
-    "20303": 1.0,
+    "20968": 22.0,
     "20920": 6.0,
     "10333": 17.0,
-    "24239": 5.0,
-    "20968": 22.0
+    "20924": 22.0,
+    "20303": 1.0,
+    "10301": 1.0,
+    "24239": 5.0
    },
    "raid_casts": {
-    "item 13965": 1.0,
-    "Consecration": 22.0,
+    "Demonic Rune": 1.0056666666666667,
     "Seal of the Crusader": 1.0,
     "Auto Attack": 84.0,
-    "Retribution Aura": 1.0,
-    "Judgement of the Crusader": 1.0,
-    "Seal of Command": 6.0,
-    "Holy Strike": 17.0,
-    "Hammer of Wrath": 5.0,
-    "Demonic Rune": 1.0056666666666667,
-    "OtherActionMove": 2.0,
-    "OtherActionManaGain": 94.74433333333333,
-    "Major Mana Potion": 0.807,
     "Judgement of Command": 22.0,
-    "Talisman of Ephemeral Power": 2.0
+    "Major Mana Potion": 0.807,
+    "Seal of Command": 6.0,
+    "item 13965": 1.0,
+    "Holy Strike": 17.0,
+    "Consecration": 22.0,
+    "Judgement of the Crusader": 1.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "OtherActionManaGain": 94.74433333333333,
+    "Retribution Aura": 1.0,
+    "Hammer of Wrath": 5.0,
+    "OtherActionMove": 2.0
    },
    "raid_shares": {
     "Auto Attack": 0.2825,
@@ -300,7 +304,8 @@
     "Windfury Totem": 0.1075,
     "Hammer of Wrath": 0.052,
     "Demonic Rune": 0.0071
-   }
+   },
+   "raid_fp": "d97b7242d7b6777a"
   },
   {
    "label": "retribution-open-raid",
@@ -323,35 +328,35 @@
     "max60": 750.6738977244788
    },
    "raid_spell_casts": {
-    "20920": 19.186666666666667,
     "20308": 1.0,
-    "10333": 17.030333333333335,
-    "20924": 21.875333333333334,
+    "24239": 5.999333333333333,
     "20293": 18.421333333333333,
+    "10333": 17.030333333333335,
     "20968": 14.842666666666666,
-    "10301": 1.0,
     "20286": 7.157333333333334,
-    "20303": 1.0,
-    "24239": 5.999333333333333
+    "20924": 21.875333333333334,
+    "20920": 19.186666666666667,
+    "10301": 1.0,
+    "20303": 1.0
    },
    "raid_casts": {
-    "Seal of Command": 19.186666666666667,
-    "Auto Attack": 85.0,
-    "OtherActionManaGain": 100.722,
-    "Seal of the Crusader": 1.0,
-    "Demonic Rune": 1.18,
-    "Holy Strike": 17.030333333333335,
-    "Consecration": 21.875333333333334,
-    "Seal of Righteousness": 18.421333333333333,
-    "Judgement of Command": 14.842666666666666,
-    "Retribution Aura": 1.0,
     "OtherActionMove": 2.0,
     "item 13965": 1.0,
-    "Judgement of Righteousness": 7.157333333333334,
+    "Seal of the Crusader": 1.0,
     "Major Mana Potion": 0.9993333333333333,
-    "Judgement of the Crusader": 1.0,
     "Hammer of Wrath": 5.999333333333333,
-    "Talisman of Ephemeral Power": 2.0
+    "Seal of Righteousness": 18.421333333333333,
+    "Holy Strike": 17.030333333333335,
+    "Judgement of Command": 14.842666666666666,
+    "Talisman of Ephemeral Power": 2.0,
+    "Judgement of Righteousness": 7.157333333333334,
+    "Consecration": 21.875333333333334,
+    "OtherActionManaGain": 100.722,
+    "Seal of Command": 19.186666666666667,
+    "Retribution Aura": 1.0,
+    "Judgement of the Crusader": 1.0,
+    "Auto Attack": 85.0,
+    "Demonic Rune": 1.18
    },
    "raid_shares": {
     "Auto Attack": 0.2356,
@@ -364,7 +369,8 @@
     "Hammer of Wrath": 0.0532,
     "Judgement of Righteousness": 0.0458,
     "Demonic Rune": 0.0068
-   }
+   },
+   "raid_fp": "0dd969e733d2a1b3"
   },
   {
    "label": "prot-ret-ml-raid",
@@ -387,31 +393,31 @@
     "max60": 639.5148827487944
    },
    "raid_spell_casts": {
-    "24239": 5.0,
+    "10301": 1.0,
     "10333": 18.0,
+    "20303": 1.0,
     "20924": 22.0,
     "20920": 6.0,
-    "20308": 1.0,
     "20968": 22.0,
-    "10301": 1.0,
-    "20303": 1.0
+    "24239": 5.0,
+    "20308": 1.0
    },
    "raid_casts": {
-    "Hammer of Wrath": 5.0,
-    "Holy Strike": 18.0,
-    "Demonic Rune": 1.066,
-    "Consecration": 22.0,
-    "Seal of Command": 6.0,
-    "Seal of the Crusader": 1.0,
-    "Major Mana Potion": 0.9956666666666667,
-    "Talisman of Ephemeral Power": 2.0,
-    "Judgement of Command": 22.0,
-    "item 13965": 1.0,
     "Retribution Aura": 1.0,
-    "Judgement of the Crusader": 1.0,
-    "Auto Attack": 84.0,
+    "Demonic Rune": 1.066,
+    "Holy Strike": 18.0,
     "OtherActionManaGain": 95.71333333333334,
-    "OtherActionMove": 2.0
+    "Judgement of the Crusader": 1.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "OtherActionMove": 2.0,
+    "item 13965": 1.0,
+    "Consecration": 22.0,
+    "Auto Attack": 84.0,
+    "Seal of Command": 6.0,
+    "Major Mana Potion": 0.9956666666666667,
+    "Judgement of Command": 22.0,
+    "Hammer of Wrath": 5.0,
+    "Seal of the Crusader": 1.0
    },
    "raid_shares": {
     "Auto Attack": 0.2708,
@@ -422,7 +428,73 @@
     "Windfury Totem": 0.1041,
     "Hammer of Wrath": 0.0512,
     "Demonic Rune": 0.0073
-   }
+   },
+   "raid_fp": "063c70a769e5cad8"
+  },
+  {
+   "label": "retribution-unsealed-wrath-raid",
+   "split": "14/6/31",
+   "ours": true,
+   "dps": {
+    "dummy": 442.14422352689814,
+    "dummy60": 465.7729632436212,
+    "ladder-mana": 483.77308720201455,
+    "ladder-armor": 525.178741033755,
+    "ladder-physical": 652.0904309412113,
+    "ladder-spell": 701.4047698187875,
+    "raid": 767.7897207771795,
+    "curve60": 437.8308078569813,
+    "curve120": 443.9390999978711,
+    "curve180": 427.25767537604355,
+    "curve240": 417.4914947994649,
+    "curve360": 407.8285017854389,
+    "max": 767.7897207771795,
+    "max60": 749.3726351869698
+   },
+   "raid_spell_casts": {
+    "20286": 7.161,
+    "10301": 1.0,
+    "10333": 17.037,
+    "20303": 1.0,
+    "20293": 18.420333333333332,
+    "20308": 1.0,
+    "20924": 21.863666666666667,
+    "20968": 14.839,
+    "24239": 5.998333333333333,
+    "20920": 19.196
+   },
+   "raid_casts": {
+    "Major Mana Potion": 0.4776666666666667,
+    "Judgement of Righteousness": 7.161,
+    "item 13965": 1.0,
+    "Retribution Aura": 1.0,
+    "Holy Strike": 17.037,
+    "Talisman of Ephemeral Power": 2.0,
+    "Judgement of the Crusader": 1.0,
+    "Seal of Righteousness": 18.420333333333332,
+    "Seal of the Crusader": 1.0,
+    "Consecration": 21.863666666666667,
+    "Auto Attack": 85.0,
+    "Judgement of Command": 14.839,
+    "Hammer of Wrath": 5.998333333333333,
+    "OtherActionMove": 2.0,
+    "OtherActionManaGain": 99.10033333333334,
+    "Demonic Rune": 1.003,
+    "Seal of Command": 19.196
+   },
+   "raid_shares": {
+    "Auto Attack": 0.2369,
+    "Seal of Command": 0.1568,
+    "Consecration": 0.1189,
+    "Holy Strike": 0.1044,
+    "Judgement of Command": 0.0974,
+    "Seal of Righteousness": 0.0909,
+    "Windfury Totem": 0.0894,
+    "Hammer of Wrath": 0.0535,
+    "Judgement of Righteousness": 0.0461,
+    "Demonic Rune": 0.0058
+   },
+   "raid_fp": "7e116b4a079920f9"
   },
   {
    "label": "opt-ret-dps-parse",
@@ -445,29 +517,29 @@
     "max60": 623.0275570044066
    },
    "raid_spell_casts": {
-    "20968": 22.0,
-    "20924": 22.0,
     "10333": 17.0,
-    "20308": 1.0,
-    "20920": 6.0,
     "24239": 5.0,
+    "20308": 1.0,
     "10301": 1.0,
-    "20303": 1.0
+    "20968": 22.0,
+    "20303": 1.0,
+    "20924": 22.0,
+    "20920": 6.0
    },
    "raid_casts": {
-    "Judgement of Command": 22.0,
-    "Auto Attack": 84.0,
-    "Consecration": 22.0,
-    "OtherActionManaGain": 79.342,
     "Holy Strike": 17.0,
-    "Seal of the Crusader": 1.0,
-    "Seal of Command": 6.0,
     "Hammer of Wrath": 5.0,
-    "item 13965": 1.0,
+    "Seal of the Crusader": 1.0,
     "Retribution Aura": 1.0,
+    "Judgement of Command": 22.0,
     "Judgement of the Crusader": 1.0,
-    "OtherActionMove": 2.0,
-    "Talisman of Ephemeral Power": 2.0
+    "item 13965": 1.0,
+    "Consecration": 22.0,
+    "Seal of Command": 6.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Auto Attack": 84.0,
+    "OtherActionManaGain": 79.342,
+    "OtherActionMove": 2.0
    },
    "raid_shares": {
     "Auto Attack": 0.2825,
@@ -477,7 +549,8 @@
     "Holy Strike": 0.1214,
     "Windfury Totem": 0.1073,
     "Hammer of Wrath": 0.0522
-   }
+   },
+   "raid_fp": "209b0798812c3173"
   },
   {
    "label": "sim preset: Unsealed Wrath",
@@ -500,35 +573,35 @@
     "max60": 749.3726351869698
    },
    "raid_spell_casts": {
-    "20924": 21.863666666666667,
     "10333": 17.037,
-    "20303": 1.0,
-    "20968": 14.839,
     "20920": 19.196,
-    "20293": 18.420333333333332,
-    "10301": 1.0,
-    "20308": 1.0,
+    "20924": 21.863666666666667,
     "24239": 5.998333333333333,
-    "20286": 7.161
+    "20293": 18.420333333333332,
+    "20286": 7.161,
+    "20308": 1.0,
+    "10301": 1.0,
+    "20968": 14.839,
+    "20303": 1.0
    },
    "raid_casts": {
-    "Consecration": 21.863666666666667,
-    "Major Mana Potion": 0.4776666666666667,
     "Holy Strike": 17.037,
-    "Judgement of the Crusader": 1.0,
-    "OtherActionManaGain": 99.10033333333334,
-    "item 13965": 1.0,
-    "Judgement of Command": 14.839,
-    "Demonic Rune": 1.003,
     "Seal of Command": 19.196,
-    "Seal of Righteousness": 18.420333333333332,
-    "OtherActionMove": 2.0,
-    "Retribution Aura": 1.0,
-    "Auto Attack": 85.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Seal of the Crusader": 1.0,
+    "Major Mana Potion": 0.4776666666666667,
+    "Demonic Rune": 1.003,
+    "Consecration": 21.863666666666667,
     "Hammer of Wrath": 5.998333333333333,
-    "Judgement of Righteousness": 7.161
+    "Seal of Righteousness": 18.420333333333332,
+    "Judgement of Righteousness": 7.161,
+    "Seal of the Crusader": 1.0,
+    "item 13965": 1.0,
+    "Retribution Aura": 1.0,
+    "Judgement of Command": 14.839,
+    "OtherActionManaGain": 99.10033333333334,
+    "Talisman of Ephemeral Power": 2.0,
+    "OtherActionMove": 2.0,
+    "Auto Attack": 85.0,
+    "Judgement of the Crusader": 1.0
    },
    "raid_shares": {
     "Auto Attack": 0.2369,
@@ -541,7 +614,8 @@
     "Hammer of Wrath": 0.0535,
     "Judgement of Righteousness": 0.0461,
     "Demonic Rune": 0.0058
-   }
+   },
+   "raid_fp": "d535c2b278e392a9"
   },
   {
    "label": "sim preset: Holy Shock",
@@ -564,31 +638,31 @@
     "max60": 670.990490572389
    },
    "raid_spell_casts": {
-    "20920": 6.0,
-    "24239": 5.0,
-    "10333": 17.0,
-    "20216": 2.0,
-    "20308": 1.0,
-    "20968": 22.0,
     "20924": 22.0,
+    "24239": 5.0,
+    "20308": 1.0,
+    "10333": 17.0,
+    "20968": 22.0,
     "10301": 1.0,
-    "20303": 1.0
+    "20216": 2.0,
+    "20303": 1.0,
+    "20920": 6.0
    },
    "raid_casts": {
-    "Seal of Command": 6.0,
-    "item 13965": 1.0,
-    "Hammer of Wrath": 5.0,
-    "Holy Strike": 17.0,
-    "Divine Favor": 2.0,
-    "Seal of the Crusader": 1.0,
-    "Judgement of Command": 22.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "OtherActionMove": 2.0,
-    "OtherActionManaGain": 79.99066666666667,
-    "Auto Attack": 84.0,
     "Consecration": 22.0,
+    "Hammer of Wrath": 5.0,
+    "Seal of the Crusader": 1.0,
+    "Holy Strike": 17.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Judgement of Command": 22.0,
     "Retribution Aura": 1.0,
-    "Judgement of the Crusader": 1.0
+    "Auto Attack": 84.0,
+    "item 13965": 1.0,
+    "OtherActionMove": 2.0,
+    "Divine Favor": 2.0,
+    "OtherActionManaGain": 79.99066666666667,
+    "Judgement of the Crusader": 1.0,
+    "Seal of Command": 6.0
    },
    "raid_shares": {
     "Auto Attack": 0.2624,
@@ -598,7 +672,8 @@
     "Holy Strike": 0.1241,
     "Windfury Totem": 0.0997,
     "Hammer of Wrath": 0.0534
-   }
+   },
+   "raid_fp": "1f180398ffcd11d1"
   }
  ]
 }

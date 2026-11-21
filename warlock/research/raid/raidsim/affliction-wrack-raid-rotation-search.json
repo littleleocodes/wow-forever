@@ -2,34 +2,141 @@
  "raid": {
   "class": "warlock",
   "spec": "affliction-wrack-raid",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "commit": "2e6e77d84",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/warlock/upstream/aff_wrack.apl.json",
-  "start": "_reference\\data\\raidsim\\apls\\warlock\\upstream\\aff_wrack.apl.json",
+  "start": "_reference\\data\\raidsim\\apls\\warlock\\affliction-wrack-raid-raid.apl.json",
   "builds": [
    {
+    "label": "ml: Affliction",
+    "talents": "25400020135201351-0050203001-05001",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-affliction-bis.gear.json"
+   },
+   {
     "label": "affliction-wrack-raid",
-    "talents": "25500020135201351-0050203001-05"
+    "talents": "25500020135201351-0050203001-05",
+    "protect_only": true
    }
   ],
   "tuned_on": [
-   "affliction-wrack-raid"
+   "ml: Affliction"
   ],
   "iterations": 3000,
   "confirm": 20000,
-  "changes": [],
+  "changes": [
+   {
+    "round": 1,
+    "change": "move to the top: if number of targets = 1: groupReference + move to the top: groupReference",
+    "gain_seed1": 0.00332475957217504,
+    "gain_seed2": 0.003526226456149084,
+    "candidates": 416,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "insert in the middle: cast Weakness Analyzer",
+    "gain_seed1": 0.0020960752492815704,
+    "gain_seed2": 0.0021417075767800053,
+    "candidates": 416,
+    "pass": 1
+   }
+  ],
   "final": {
    "raid": {
-    "affliction-wrack-raid": {
-     "before": 940.2768034092128,
-     "after": 940.2768034092128,
-     "base": 940.2768034092128,
+    "ml: Affliction": {
+     "before": 937.9600961677406,
+     "after": 942.9488750887433,
+     "base": 937.9600961677406,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.18937665000000045,
-     "oom_after": 0.18937665000000045
+     "oom_before": 0.11326600000000017,
+     "oom_after": 0.11326600000000017
+    },
+    "affliction-wrack-raid": {
+     "before": 934.8466313986145,
+     "after": 940.0717154003456,
+     "base": 934.8466313986145,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.10492034999999994,
+     "oom_after": 0.10492034999999994
+    }
+   }
+  },
+  "signature": {
+   "specs": [
+    "Affliction"
+   ],
+   "required": [
+    "Bane of Agony",
+    "Corruption"
+   ],
+   "rejected": {
+    "structure": 0,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
+  "first_date": "2026-11-20",
+  "passes": 3
+ },
+ "dummy": {
+  "class": "warlock",
+  "spec": "affliction-wrack-raid",
+  "date": "2026-11-20",
+  "commit": "2e6e77d84",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "_reference/data/raidsim/apls/warlock/upstream/aff_wrack.apl.json",
+  "start": "_reference\\data\\raidsim\\apls\\warlock\\affliction-wrack-raid.apl.json",
+  "builds": [
+   {
+    "label": "ml: Affliction",
+    "talents": "25400020135201351-0050203001-05001",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-affliction-bis.gear.json"
+   },
+   {
+    "label": "affliction-wrack-raid",
+    "talents": "25500020135201351-0050203001-05",
+    "protect_only": true
+   }
+  ],
+  "tuned_on": [
+   "ml: Affliction"
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "move to the top: if (number of targets = 1 or \u201cAmount of Dooms left\u201d < 1 and not Bane of Doom is on the target or Bane of Doom is on the target): groupReference",
+    "gain_seed1": 0.001998618917418593,
+    "gain_seed2": 0.0017956765753506243,
+    "candidates": 416
+   }
+  ],
+  "final": {
+   "dummy": {
+    "ml: Affliction": {
+     "before": 869.1779459050914,
+     "after": 870.6933096412822,
+     "base": 869.1779459050914,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.7893192500000714,
+     "oom_after": 1.5216606000000816
+    },
+    "affliction-wrack-raid": {
+     "before": 868.3518146527058,
+     "after": 869.8438278475486,
+     "base": 868.3518146527058,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.4385192000000537,
+     "oom_after": 1.2669677000000346
     }
    }
   },

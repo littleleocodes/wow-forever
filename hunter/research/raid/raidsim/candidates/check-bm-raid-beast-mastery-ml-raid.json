@@ -1,0 +1,96 @@
+{
+ "id": "check-bm-raid-beast-mastery-ml-raid",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    3
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Bestial Swiftness",
+    1
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Summon Hawk",
+    1
+   ],
+   [
+    "Intimidation",
+    1
+   ],
+   [
+    "Bestial Discipline",
+    2
+   ],
+   [
+    "Frenzy",
+    5
+   ],
+   [
+    "Bestial Wrath",
+    1
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Improved Arcane Shot",
+    2
+   ],
+   [
+    "Mortal Shots",
+    5
+   ]
+  ],
+  "Survival": []
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-11-20) for bm-raid from beast-mastery-ml-raid in the raid setting: 945.7 -> 945.7 DPS on a third seed.",
+ "search": {
+  "start": "beast-mastery-ml-raid",
+  "setting": "raid",
+  "kept": [
+   "Bestial Wrath"
+  ],
+  "moves": [],
+  "dps_start": 945.6654536021161,
+  "dps_end": 945.6654536021161,
+  "gain": 0.0,
+  "tank": false,
+  "date": "2026-11-20",
+  "sim": {
+   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
+   "racials": "off",
+   "pet_normalize": true,
+   "patch_hash": "125d59c4f975f5df",
+   "simulator": "wowsims/forever",
+   "client": "1.60.1.70938"
+  }
+ }
+}

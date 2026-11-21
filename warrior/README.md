@@ -1,5 +1,7 @@
 # Warrior
 
+> **2026-11-20:** the raid pages were updated after the play check (what each build presses, checked build by build). The rankings and picks on this page update with the leveling pages on Sunday 2026-11-22; until then the raid pages are newer.
+
 > Classic's raid melee DPS (Fury) and default raid tank (Protection). Forever turns Arms into a raid spec around Bloodthrill,
 > Overpower and Slam, folds the weapon specializations into Weaponmaster, makes Tactical Mastery baseline, and gives Protection
 > Vanguard, Focused Rage and Bastion. Rage is normalized to weapon speed. Playable by 9 races including the new Skyborne.

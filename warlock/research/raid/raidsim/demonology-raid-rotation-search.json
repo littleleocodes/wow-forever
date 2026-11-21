@@ -2,26 +2,36 @@
  "dummy": {
   "class": "warlock",
   "spec": "demonology-raid",
-  "date": "2026-10-02",
-  "commit": "40be98e",
+  "date": "2026-11-20",
+  "commit": "2e6e77d84",
   "setting": "dummy",
   "tank": false,
-  "simulator_apl": "ui/specs/warlock/dps/apls/demonic_pact.apl.json",
+  "simulator_apl": "_reference/data/raidsim/apls/warlock/upstream/demo_shadow_brand.apl.json",
   "start": "ui\\specs\\warlock\\dps\\apls\\demonic_pact.apl.json",
   "builds": [
    {
     "label": "ml: Demonology",
-    "talents": "101-0115003031220301351-0550005003",
+    "talents": "101-0025003031220301351-0550005003",
     "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-demonology-bis.gear.json"
    },
    {
-    "label": "demonology-pact-raid",
-    "talents": "101-0035003021220301351-0550005003"
+    "label": "demonology-ml-raid",
+    "talents": "011-0025003031220301351-0550005003",
+    "protect_only": true
    },
    {
-    "label": "sim preset: Demonic Pact 2/31/18",
-    "talents": "113-0005003221220311351-0550005"
+    "label": "sim preset: Demo (Shadow Brand)",
+    "talents": "011-0005003231220301351-0550005003",
+    "protect_only": true
+   },
+   {
+    "label": "demonology-pact-raid",
+    "talents": "101-0035003021220301351-0550005003",
+    "protect_only": true
    }
+  ],
+  "tuned_on": [
+   "ml: Demonology"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -105,46 +115,91 @@
     "gain_seed2": 0.002471031129601675,
     "candidates": 441,
     "pass": 5
+   },
+   {
+    "round": 11,
+    "change": "only with 20s or more of the fight left: if time left on Immolate \u2264 cast time of Immolate: cast Immolate (rank 7)",
+    "gain_seed1": 0.0020954334354437165,
+    "gain_seed2": 0.002839764129607625,
+    "candidates": 444,
+    "pass": 6
+   },
+   {
+    "round": 12,
+    "change": "insert at the top: cast Eye of the Beast",
+    "gain_seed1": 0.002595942035859,
+    "gain_seed2": 0.0025852973903621734,
+    "candidates": 455,
+    "pass": 6
+   },
+   {
+    "round": 13,
+    "change": "move to the top: if time left on Corruption \u2264 cast time of Corruption and time left in the fight \u2265 10s: cast Corruption (rank 6)",
+    "gain_seed1": 0.003056214948999436,
+    "gain_seed2": 0.003634748490159767,
+    "candidates": 462,
+    "pass": 6
    }
   ],
   "final": {
    "dummy": {
     "ml: Demonology": {
-     "before": 681.3831277780245,
-     "after": 687.5268791436378,
-     "base": 681.3831277780245,
+     "before": 800.496068086905,
+     "after": 731.1923148072717,
+     "base": 800.496068086905,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.3867299999999927,
-     "oom_after": 2.158769999999982
+     "oom_before": 0.31005704989738747,
+     "oom_after": 0.21597419993909645
+    },
+    "demonology-ml-raid": {
+     "before": 797.0867027166067,
+     "after": 729.7668344073938,
+     "base": 797.0867027166067,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.431281449848133,
+     "oom_after": 0.34581694988873435
+    },
+    "sim preset: Demo (Shadow Brand)": {
+     "before": 797.0867027166067,
+     "after": 729.7668344073938,
+     "base": 797.0867027166067,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.431281449848133,
+     "oom_after": 0.34581694988873435
     },
     "demonology-pact-raid": {
-     "before": 682.0733131318016,
-     "after": 687.5539564828497,
-     "base": 682.0733131318016,
+     "before": 794.1122192076133,
+     "after": 729.1281340572685,
+     "base": 794.1122192076133,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.43815499999999885,
-     "oom_after": 1.1142199999999962
-    },
-    "sim preset: Demonic Pact 2/31/18": {
-     "before": 660.2374161533264,
-     "after": 664.6181799786812,
-     "base": 660.2374161533264,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 1.02,
-     "oom_after": 1.1236699999999988
+     "oom_before": 0.39657594987303535,
+     "oom_after": 0.31516599991498806
     }
    }
   },
+  "signature": {
+   "specs": [
+    "Demonology"
+   ],
+   "required": [],
+   "rejected": {
+    "structure": 0,
+    "casts": 0,
+    "core_share": 0
+   },
+   "on": true
+  },
   "first_date": "2026-09-28",
-  "passes": 5
+  "passes": 6
  },
  "raid": {
   "class": "warlock",
   "spec": "demonology-raid",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "commit": "2e6e77d84",
   "setting": "raid",
   "tank": false,
@@ -152,12 +207,19 @@
   "start": "ui\\specs\\warlock\\dps\\apls\\demonic_pact.apl.json",
   "builds": [
    {
+    "label": "ml: Demonology",
+    "talents": "101-0025003031220301351-0550005003",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-demonology-bis.gear.json"
+   },
+   {
     "label": "demonology-ml-raid",
-    "talents": "011-0025003031220301351-0550005003"
+    "talents": "011-0025003031220301351-0550005003",
+    "protect_only": true
    },
    {
     "label": "sim preset: Demo (Shadow Brand)",
-    "talents": "011-0005003231220301351-0550005003"
+    "talents": "011-0005003231220301351-0550005003",
+    "protect_only": true
    },
    {
     "label": "demonology-pact-raid",
@@ -166,8 +228,7 @@
    }
   ],
   "tuned_on": [
-   "demonology-ml-raid",
-   "sim preset: Demo (Shadow Brand)"
+   "ml: Demonology"
   ],
   "iterations": 3000,
   "confirm": 20000,
@@ -235,36 +296,53 @@
     "gain_seed2": 0.0016200399128663001,
     "candidates": 461,
     "pass": 11
+   },
+   {
+    "round": 9,
+    "change": "move to the top: if cast time of Searing Pain > time left in the fight: cast Death Coil + threshold 30% -> 50%: if mana % < 30% and time left in the fight > 60s: cast Life Tap",
+    "gain_seed1": 0.0013883940202912282,
+    "gain_seed2": 0.0017065724532010496,
+    "candidates": 460,
+    "pass": 14
    }
   ],
   "final": {
    "raid": {
+    "ml: Demonology": {
+     "before": 908.1303240598697,
+     "after": 909.8617141286755,
+     "base": 908.1303240598697,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.014713849987300026,
+     "oom_after": 0.0028329999971500016
+    },
     "demonology-ml-raid": {
      "before": 908.3470978141896,
-     "after": 908.3470978141896,
+     "after": 910.0429999624569,
      "base": 908.3470978141896,
      "before_value": null,
      "after_value": null,
      "oom_before": 0.014685099981900023,
-     "oom_after": 0.014685099981900023
+     "oom_after": 0.003447999995600003
     },
     "sim preset: Demo (Shadow Brand)": {
      "before": 908.3470978141896,
-     "after": 908.3470978141896,
+     "after": 910.0429999624569,
      "base": 908.3470978141896,
      "before_value": null,
      "after_value": null,
      "oom_before": 0.014685099981900023,
-     "oom_after": 0.014685099981900023
+     "oom_after": 0.003447999995600003
     },
     "demonology-pact-raid": {
      "before": 899.7754695613468,
-     "after": 899.7754695613468,
+     "after": 902.2096500315724,
      "base": 899.7754695613468,
      "before_value": null,
      "after_value": null,
      "oom_before": 0.01573664998600003,
-     "oom_after": 0.01573664998600003
+     "oom_after": 0.003816449996000004
     }
    }
   },
@@ -281,6 +359,6 @@
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 13
+  "passes": 14
  }
 }

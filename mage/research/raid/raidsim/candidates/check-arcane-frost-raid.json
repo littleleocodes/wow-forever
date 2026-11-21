@@ -1,0 +1,89 @@
+{
+ "id": "check-arcane-frost-raid",
+ "allocation": {
+  "Arcane": [
+   [
+    "Improved Channeling",
+    2
+   ],
+   [
+    "Arcane Resilience",
+    3
+   ],
+   [
+    "Arcane Subtlety",
+    2
+   ],
+   [
+    "Arcane Concentration",
+    4
+   ],
+   [
+    "Missile Barrage",
+    2
+   ],
+   [
+    "Arcane Impact",
+    3
+   ],
+   [
+    "Arcane Blast",
+    1
+   ],
+   [
+    "Arcane Wrath",
+    1
+   ],
+   [
+    "Arcane Mind",
+    5
+   ],
+   [
+    "Arcane Instability",
+    3
+   ],
+   [
+    "Magic Absorption",
+    2
+   ]
+  ],
+  "Fire": [
+   [
+    "Incineration",
+    5
+   ],
+   [
+    "Accelerant",
+    5
+   ]
+  ],
+  "Frost": [
+   [
+    "Improved Frostbolt",
+    5
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Ice Shards",
+    5
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-11-20) for arcane-frost-raid from arcane-frost-open-raid in the raid setting: 692.0 -> 692.0 DPS on a third seed.",
+ "search": {
+  "start": "arcane-frost-open-raid",
+  "setting": "raid",
+  "kept": [
+   "Arcane Blast",
+   "Missile Barrage"
+  ],
+  "moves": [],
+  "dps_start": 691.9620801775358,
+  "dps_end": 691.9620801775358,
+  "gain": 0.0,
+  "tank": false
+ }
+}

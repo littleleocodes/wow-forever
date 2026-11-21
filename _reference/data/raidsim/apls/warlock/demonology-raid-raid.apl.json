@@ -67,6 +67,30 @@
  "priorityList": [
   {
    "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpGt",
+      "lhs": {
+       "spellCastTime": {
+        "spellId": {
+         "spellId": 17923
+        }
+       }
+      },
+      "rhs": {
+       "remainingTime": {}
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 17926
+     }
+    }
+   }
+  },
+  {
+   "action": {
     "autocastOtherCooldowns": {}
    }
   },
@@ -437,30 +461,6 @@
   {
    "action": {
     "condition": {
-     "cmp": {
-      "op": "OpGt",
-      "lhs": {
-       "spellCastTime": {
-        "spellId": {
-         "spellId": 17923
-        }
-       }
-      },
-      "rhs": {
-       "remainingTime": {}
-      }
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 17926
-     }
-    }
-   }
-  },
-  {
-   "action": {
-    "condition": {
      "and": {
       "vals": [
        {
@@ -471,7 +471,7 @@
          },
          "rhs": {
           "const": {
-           "val": "30%"
+           "val": "50%"
           }
          }
         }
@@ -497,7 +497,8 @@
       "spellId": 11689
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-11-20: changed or added by the rotation search (see demonology-raid-rotation-search.json)"
   },
   {
    "action": {

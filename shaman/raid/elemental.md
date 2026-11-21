@@ -4,7 +4,7 @@
 
 **✅ Recommended** for raid (the best shaman spec here, or within 3% of it).
 
-**[Elemental (optimized)](../research/raid/builds/opt-elemental-dps-raid-dps.md)** (31/11/9) — [open the talent tree](https://talentsforever.com/shaman/60/5500331003011351-05500001-0522-12)
+**[Elemental — Lightning Overload / Elemental Fury](../research/raid/builds/elemental-raid-dps.md)** (29/22/0) — [open the talent tree](https://talentsforever.com/shaman/60/550233100200134-255000013400002--12)
 
 ## How to play
 
@@ -15,57 +15,31 @@
 **Then press the first one that is ready**, top to bottom:
 
 1. **Flame Shock**: keep it on the target
-2. **Lightning Bolt**
+2. **Chain Lightning** when there are 2 or more targets or you have mana to spare for the rest of the fight
+3. **Lightning Bolt**
 
 **Lightning Bolt** is your filler: cast it whenever nothing above is ready.
-
-**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
-
-- **Chain Lightning**: part of the rotation (about 15 times a fight)
-- **Lightning Mastery**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
-- Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
 ## Why this rotation
 
-**Lightning Bolt** fills every gap. Around it you keep **Flame Shock** ticking and a **Searing Totem** down, cast **Chain Lightning** when two or more enemies stand together or when you have mana to spare, and press **Lightning Mastery** whenever it is ready. You play the same list from pull to kill. Lava Burst was removed on 2026-11-02 and **Lightning Mastery** took the place of Elemental Mastery; this list is the one tuned for that client.
-
-**Why it works**
-
-- **Flame Shock** comes first so it never drops: about 15% of your damage in the simulator. With 3 points in **Call of Flame** it lasts 21 seconds, so recast it only after it falls off. The shock cooldown is 6 seconds, so it is ready by then.
-- **Chain Lightning** (6-second cooldown, about 8% of your damage) goes in whenever two or more enemies stand close, and on one target whenever you hold more than 50 mana for every second of the fight left (3,000 mana with a minute to go). Tuning that mana threshold down from 200 to 50 measured about 3% better. **Elemental Focus** sometimes makes your next damage spell free: nothing to change, the next line takes it.
-- **Lightning Bolt** is the filler, always at the top rank, and about 70% of your damage. The list drops to rank 8 only when you cannot pay for the top rank. With a full raid's mana buffs the simulator does not run you dry in a 3-minute fight. Start the first bolt 2 seconds before the pull so it lands as the fight starts.
-- **Lightning Mastery** (3-minute cooldown) takes 0.5 seconds off each **Lightning Bolt** and removes the cooldown of **Chain Lightning** for 15 seconds. Press it at the start of the fight and again whenever it is ready. It is not off the global cooldown, so it costs a cast.
-- **Searing Totem** shoots the boss for about 5% of your damage. It lasts 55 seconds at the top rank, so drop a new one when it expires, and stand within 20 yards of the boss: that is as far as it shoots.
-- The rest of the build feeds the bolt: **Concussion** adds 5% damage to your bolts and **Earth Shock**, **Call of Thunder** 5% crit to **Lightning Bolt** and **Chain Lightning**, **Lightning Overload** gives each of them a 30% chance of a second, half-strength cast, and **Elemental Fury** raises the damage of your spell crits from 150% to 200%. From Enhancement, **Thundering Strikes** adds 5% crit and **Ancestral Knowledge** 10% Intellect.
-
-**Caveats**
-
-- Several targets: with two or more enemies close together the list casts **Chain Lightning** whenever it is ready (3 targets, each jump 30% weaker) and swaps **Searing Totem** for **Magma Totem**. Magma Totem lasts 20 seconds and only hits enemies within 8 yards of it; **Totemic Call** brings all your totems back to you.
-- Mana: in a full raid you will not run dry in 3 minutes. Alone, or in much longer fights, cast **Chain Lightning** only on two or more targets or when Clearcasting makes it free, and drink a mana potion instead of downranking: Forever gives ranks far below your level much less from spell power (Blizzard's beta notes; the exact rule is not published).
-- Moving: **Flame Shock** (20 yards) and your totems are instant, so use them while you move. **Elemental Reach** (1 point) lengthens only your bolts and **Chain Lightning**. If you must keep moving, an **Earth Shock** beats casting nothing as long as Flame Shock has more than 6 seconds left: the two share a cooldown.
-- Your other totems: the simulator's full raid already counts **Mana Spring Totem**, **Strength of Earth Totem** and **Windfury Totem** as up, so this list drops only your Fire totem. If you are your group's shaman, drop what your group needs at the pull; they last 5 minutes.
-
-**When to change it**
-
-- In the last 10 seconds, do not drop a new **Searing Totem**: it would shoot only a few times. Cast a **Lightning Bolt** instead.
-- When mana is short (a long fight, or no mana buffs from the raid), cast **Chain Lightning** only on two or more targets or when Clearcasting makes it free.
-- If the boss will die before a 2-second cast can finish, only an instant still lands: an **Earth Shock**, which hits harder at once than **Flame Shock**.
+*Guide being rewritten for the new rotation (2026-11-20).*
 
 ## Talents
 
 | Tree | Points | Talents (ranks) |
 |---|---|---|
-| Elemental | 31 | Concussion 5, Convection 5, Call of Flame 3, Elemental Alacrity 3, Elemental Focus 1, Eye of the Storm 3, Call of Thunder 1, Elemental Reach 1, Lightning Overload 3, Elemental Fury 5, Lightning Mastery 1 |
-| Enhancement | 11 | Ancestral Knowledge 5, Thundering Strikes 5, Shamanistic Focus 1 |
-| Restoration | 9 | Tidal Focus 5, Mindfulness 2, Natural Grace 2 |
+| Elemental | 29 | Concussion 5, Convection 5, Call of Flame 3, Elemental Alacrity 3, Reverberation 2, Elemental Focus 1, Eye of the Storm 2, Call of Thunder 1, Lightning Overload 3, Elemental Fury 4 |
+| Enhancement | 22 | Ancestral Knowledge 5, Earth's Grasp 2, Thundering Strikes 5, Anticipation 3, Shamanistic Focus 1, Toughness 4, Mental Quickness 2 |
 
 ## The numbers
 
+**How this pick was checked:** no talent search or short check of its own in this entry's current setup; one follows in the optimality pass.
+
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 751 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 741 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 2e6e77d (client 70938); [every spec](../../_reference/dps-rankings.md)):
 
@@ -98,14 +72,16 @@
 | Main hand | [Headmaster's Charge](https://www.wowhead.com/forever/item=13937) · *Darkmaster Gandling, Scholomance*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Ironbark Staff](https://www.wowhead.com/forever/item=20069) · *sold by Samuel Hawke*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Ironbark Staff](https://www.wowhead.com/forever/item=20069) · *sold by Samuel Hawke*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
 | Ranged/relic | [Totem of the Storm](https://www.wowhead.com/forever/item=23199) | [Totem of the Storm](https://www.wowhead.com/forever/item=23199) | [Totem of the Storm](https://www.wowhead.com/forever/item=23199) |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Quests and dungeons: [full raid](https://wowsims.com/forever/shaman/elemental/#eJzEVUFIHFcYnv+9ceb5V7brE9pxWuh0oe26MPpm1inrUthVKJT2op6KhdZZd3S3rLtbdyn2ptRDEaoSCEQjJJiAISgBISC5J2xyCMklFwNZTEQvgcSDuSVhJitI9LrJd5h5897//u/j++bx8EsGYdDAgCiMQg7KMAPwH8BlgGsAvC1YJf5qAvTzrYyFVT2PCnuc0/Y+QZn9ewOQsq3fkbL9EVTZw0XQnoZQYRcntJ0QUnZ7Ailb+A0Vdjjub1FZfRO0RRUpe+MiZbMZlNn6kt9laRIV9rKg1TpQQpldugmRnnAtH72/AOIoM/j/GswDmcufA3KUWQHlirvh7vdfB3V9FfashXwd5vIDLBAMabhFvnIcEY/HLWEJIay4Y5nCcYQ/NoUTF1aN0AcEdsm6ihxVvQUpO/g7omILUtOu8E3gWbdc+KNUrhq2sL83LcsUdtIYy7nFCS9rlKYMN5v1skbmH6Oa84ypUtWt5ktFo+K5U2M5I1rxPMMreJNeseoWzGy5Yh6XmO9Kuv+slIpd+o/4A09iOBZiwOkuSL4SBAs7Yu1M5i3zlDCqKygjsSvYHvuUKZz8LOmBUEtU/HJ2Z4j36jZ28e+CRsqJRvYZjRq7doa5pn+GbRFEZisos41noDfeXNZJUuLlD2QCC3ifvBrks6d8F6btNIGyMzCTcpJpmJkQ3+gyEk3j2NCzeu8XvnbWf9DbBD1JtPSeM+L7ItbpRz4i6e1bJMRokH4QoyOCGJ8P89Jpz0RfEzQeHxP+13uEos+0E00gbPWjiRJ2YUijB6QGL4g9S6UA3elDkDlBKfKatPoT0sx4unNl2cfd1NfjAR6l7DrRZCMV2ybSR0E1fTxqKr7dbBpPX/Acvprub0ykR/0rYhmCD6meilG2/fnAiZtEQALS8BMMwq+QgzJMwzR5OwA951oz); Pre-BiS: [full raid](https://wowsims.com/forever/shaman/elemental/#eJzEVc9rE00Y3nd2m52+X0nTKXzfdj+RNaCmgW1nN42kQUhaEEQvbU/ixW6abRNpk9gEqbdWe5CCrYiI/QFKFSrSIIhK8Q8o0YPkJEIPhmqwiIJ4qAdBZNcUiu01+hxmZ2feeZ+H59ll8AAFHyigQQAGIQU5mAS4CnAX4AEAa3J3ibMbAXWxkVKfrOZQpt+LoFT/QYleeQQo0Y83nXGx7EMPvZxS3nnRQxdHlA0vivRNAiVanQOU6fqTZueUTCtFUOZklOitsg8lOvvJGZ+VfSjS62Mo0+oSKKVWFFCid56Cv9NXSgdezQLfTvRdW4YZINPpG0C2EwvguWetWh96HoK8sgRVYzZdgel0L3V1Qxyek4PhMDdDIYNzgxtGKGzoPBzmnHNnEjJKRCwT2CQrMjKU1QYU6dZFv4wNKOpmnhWBJa3c6LlsrqCZ3DymG4bOzag2lLIyI3ZSy45rVjJpJ7XEJa2QsrXxbMEqpLMZLW9b40MpLZC3bc0etcfsTMEa1ZO5vL5Tov8q6Tifz2ba1RN4nEXRF/RSYOImCI4SBANbgy1UYg0zIqGi6kEJiZnHlmAz9TBySlBdoQbPO+V0vZ91qSa2s6NuI8+uRuY+jWqnNgaYov6LTX5EanpQoqvvQa09maSSqMByf8gE6vK+/dbHpvb4znUzXAfKNtdMkZFEzcwIP6xKSBSFYU3P0svTbHm/76CrDnqiaKid+8T3f7DNifysoLY8Jl4quum7MYa5G+PnAZbd6xnvroPGnd+EXfiNkHfrZqQOhI1ONAFCb/cr4hYpwRdiTomCi474V5AYQcH/gzQ6C8LkcLxtYd7Bi9ihYRevY2aFKJIWC64R4a+gEN+Z1RVHinXj6XbHgfvxntpCfNC5KObBfREqsaBI1/7r3XWfcIhAHE5CH5yBFORgAibIzwEA0bZcuA==); Raid BiS: [full raid](https://wowsims.com/forever/shaman/elemental/#eJzEVU9IG1kcnt+bMfP8rcT4hN1xdmFnA7sbA6NvJs4Sw0KisLDsXtRT6aVOzNikaJImodibFg9FqIr9Q7XSFluwFHMpLdjeepG0heKpFw8NtqFSKJQe7KEgZaYRpHpN+x3evHm/937fx/fN8PAXCgFQQIMQDEMa8jAJcB7gJsAdANbiVYlbjYJ6vZnSgKwWUKafyqDUfkCJ7i0ASvTtJXe8thlAHz2XVl75UaaP50HZ8qNEH864xdocoEw37re652RaLYMyJ6NEn112q1c2AyjR6YuAIp0fR5nWlkGptKOAEr3xAILdgUom9HwW+G5y4MIKzACZziwA2U0uge+WvWa/6bsL8uoy1IzZTBWmM/3UUw4JeER+tSweiUQMbnDOjYhl6NyyuDvXuRXhRoWImwS2yaqMDGW1CUW6cyYoYxOKullkZWApOz92IpcvaSY3/9INQ+dmTBtJ29mTTkrLFTQ7lXJSWvKsVko7WiFXskuZXFYrOnZhJK2Fio6jOWPOuJMt2WN6Kl/U97foX7Z0nSrmsp3qP/g3i2Eg7KfAxG0QXCUIBraH26jEmmZEQkXVhxISs4ht4VbqY+Q/QfWEGrzobqcbg6xHNbGT/ek18h1oZB7RqH5qa4gp6o/YEkSkpg8luvYa1PqTSSqJCSz/jUygHu/LjwNs6pDvXDetBlB2eGaKjCTrZkb576qERFEY1vUsP/2frRz1HfQ0QE8MDbX7iPh+Dne4kR8X1LZ7xE9FL30vRot7Mb4bYrnDnvHeBmjc/03Y6a8Iea9uRhtA2OxGEyL06qAi7pAKvCfmlCh46Ep8AIkRFIJ7pNldECZHEx1Liy6exH8b9fAiblaJImnx8DoRvgtKif1ZQ/FHuWE8vd44dDvRV19IDLt3xSJ4L0I1Hhbp+k/9B64UDlFIwL8wAMcgDXmYgAnyeQD7UV0B).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Quests and dungeons: [full raid](https://wowsims.com/forever/shaman/elemental/#eJzEVUFII1cYnv+9ceblt6TxWdpxWug00DYGRt9MnBJDIVEolPZiPBULrRMzmpSYpCYUe1PqoQhVaS/VCi22xWVZWRAWZO+7ZPewuJe9uLDBRfSysOvBve0uMxtBVq/Z/Q7h5X//+/5vvm+Ghx8wiIAGBsRgHApQhTmAXwH+AbgEwN8Kdom/mwT9jxBjEVUvosLuF7SDTpTZL1cBKdv+Dik7HEOV3V0G7WEYFfbXlLYXRspuTCFlS9+iwo4n/SMqa26BtqwiZc9dpGw+hzLbXPFZVqZRYU9KWqMbJZTZ39cg2h9pFGN3lkCc5EZ+24BFIAvF34Gc5NZA+de94h4OXQZ1cx0OrKViExaKwywQDBm4Tj50HJFIJCxhCSGshGOZwnGEvzaFkxBWg9BdAvvkfxU5qnoHUnb0U1TFDqSmXeNbwPNutfR9pVo3bGF/ZlqWKeyUMVFwy1Ne3qjMGG4+7+WN3M9GveAZM5W6Wy9WykbNc2cmCkas5nmGV/KmvXLdLZn5as08bTFftvT9UKuUe/Uv8HOewkg8zIDTfZB8JQgWdse7mMw7FilhVFdQRmLXsCv+NlM4+UrSA6GWqPnt7GaWD+g29vJPAyLlDJF9AVHr1N4of1d/BzujIVRtn2Y3G9R3s1zWSUri1ddkAfOfjz14OsLnz7kuTNtpw8iewErKSa5lZVJ8rMtINI1jS8/67a/5xkVvwUAb9KTQ0vsvCO/9eI8f+Jikd22TMKNB9kGIjgjCejTKK+c9E4Nt0Hj6kfAfXxkoBk072YaBIT+aGGF/ZjV6RBrwmOTnqRSgL3MMMicoRZ+RkF+Q5iYzPWurPm6lP5oMcC9tN4kmG+n4DpHeCOqZ01Vb8clW2+YMBr+j/2WGWoXMuH9BrELwR2qm45TtvDd85h4RkIQMfAkj8A0UoAqzMEteDACToVl2); Pre-BiS: [full raid](https://wowsims.com/forever/shaman/elemental/#eJzEVc9rE1sUnnNnmrk5faTp7eO96bzHY17gPdPAtHcmjaRBSFoQRDdNV+LGTpppE2mT2ASpu1a7kIKtiIj9AUpVFDEIolL8A0p0IVmJ0IWhEiyiIC7qQhCZMYViu41+i8Odc88955vvm+Hi3xT8oIAGQRiGDBRgGuACwA2AuwDsN3eXOLtRUBe9lPpltYAy/VIGpd6KEj3/AFCi7644cbnqRw89l1He+NBDl8eUDR+K9FUKJVpfAJTp+qM255RMa2VQFmSU6NWqHyU6/96JT6p+FOmlCZRpfQWUSgcKKNHrjyHQ469kgy/mgW+nBi+uwhyQ2exlINupJfDctO5bb/vvgXxnBerGfLYGs9kB6vKGBDwl/0Qi3AyHDc4NbhjhiKHzSIRzzp1F2KgQsUpgk9yWkaGstqBIt84EZGxBUTeLrAwsbRXGT+YLJc3k5kHdMHRuxrSRjJUbs9NaflKz0mk7raXOaqWMrU3mS1Ypm89pRduaHMlowaJta/a4PWHnSta4ni4U9Z0S/XtJ96liPtelHsZDLIb+kI8CEzdBcJggGNgRaqcSa5kTCRVVD0pIzCK2h9qoh5GjguoSNXjRKafrSdarmtjFDriNPLsamfs0apzaGGJ/qL9ja8CLsum0qSbdfDXJJJXEBFb4SRJQ5/3o68+DbGaP6lw3I00Y2elKKTKSakgZ5f+pEhJFYdjgs/L8GFvd7yvobQKfGBpqzz7m/RXqdAw/IajtD4mPiq73rokR7pr1YYjl92rG+5rAcecnYad/GMj7dDPahIFex5ogodeSirhFKvCRpGdEwUV34hNIjKAQ+Eq8TkKYHk10Li06eBb/d9TFy7hZI4qkxUNrRPglKCV2Vk3F/+Wmzelz49CtRH8jkRh2rolFcB+EWjwk0rU/B3bdJhyikIAjMAjHIQMFmIIp8m0AImlb+w==); Raid BiS: [full raid](https://wowsims.com/forever/shaman/elemental/#eJzEVU1oG0cU3je71o6eiyyPS7veFroVtJUFa8+uvEUWBcmGQmkvlk+ll3plrSsVW1IlUdybXXwohtrG+SF2BAlOQkKILiEBJ7dcjJJA0CkXHyIcREwgEHJwDgETdiODiX1V8h2G2ffevPft9+0y+CWFICigQRgmIQtFmAf4D+AiwDUA9omXJW42BmrVT2lQVkso0zc1UFrdKNGDNUCJPj/trucbQfTRf7PK0wDK9N4qKDsBlOidJTfZWgGU6fatHvecTJs1UFZklOjDM272bCOIEl08BSjS1VmUaasKSr0PBZTohdsQGgrWc+FHy8D30+P/b8ISkMXcGpD99Ab4Ltk37Gej10G+WoWWsZxrwmJujHrMIQl3yVeWxaPRqMENzrkRtQydWxZ39zq3otyoE7FBYJdckZGhrHahSPf+DsnYhaJullkNWMYuzvxeKFY0k5vf64ahczOuTWXt/B9ORiuUNDuTcTJa+h+tknW0UqFiV3KFvFZ27NJUVguXHUdzZpxZJ1+xZ/RMsawflujvSgb/LBfyA+qP+AOLYzASoMDEXRBcJggG9kV6qcS6lkRCRdWHEhKzjL2RHupj5GdB9YgavOyW0+0UG1ZNHGDfeY18RxqZJzRqn9qZYJ+pn2J3yI+y6bZppLx4I8UklcQFVvxAElD3/eiT1+Ns4ZjqXDetDozs96QUGUm3pYzxb1QJiaIwbPOpPviFbZ70FQx3gE8cDXXoBPO+iPS7hv8mqL03SYCKnveeiRb3zHoxwQrHNeMjHeB4+JOwv94byEd0M9aBgX7XmjCh51KKuEfq8JJkFkTBw2DyFUiMoBA6IH43IMxPJ/s31l3cT3w97eFxwmwSRdISkS0ifBRUkoe7juLbWsfmjHjrxOXkaDuQnHRvinXwHoRmIiLSrc/HjlwoHGKQhJ9gHH6FLBRhDubI2wEAS2xcRA==).
+
+**Points that do nothing for this spec:** **Earth's Grasp** (2) only counts toward the points the tree needs before **Mental Quickness**.
 
 ## Other builds of this spec
 
-- [Elemental — Raid](../research/raid/builds/elemental-ml-raid.md) (31/11/9, 752 DPS in a full raid) — [open the talent tree](https://talentsforever.com/shaman/60/5503331000011351-05500001-0531-12)
-- [Elemental — Lightning Overload / Elemental Fury](../research/raid/builds/elemental-raid-dps.md) (29/22/0, 750 DPS in a full raid) — [open the talent tree](https://talentsforever.com/shaman/60/550233100200134-255000013400002--12)
-- [Elemental — Raid](../research/raid/builds/elemental-raid.md) (30/8/13, 726 DPS in a full raid) — [open the talent tree](https://talentsforever.com/shaman/60/550033100301135-053-05305-12)
+- [Elemental — Raid](../research/raid/builds/elemental-ml-raid.md) (32/11/8, 743 DPS in a full raid) — [open the talent tree](https://talentsforever.com/shaman/60/5503331002001351-05500001-053-12)
+- [Elemental (optimized)](../research/raid/builds/opt-elemental-dps-raid-dps.md) (31/11/9, 740 DPS in a full raid) — [open the talent tree](https://talentsforever.com/shaman/60/5500331003011351-05500001-0522-12)
+- [Elemental — Raid](../research/raid/builds/elemental-raid.md) (30/8/13, 717 DPS in a full raid) — [open the talent tree](https://talentsforever.com/shaman/60/550033100301135-053-05305-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-19 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 2e6e77d (client 1.60.1.70938)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-20 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 2e6e77d (client 1.60.1.70938)). Simulations, not in-game measurements. Spell ranks: trainer ranks only. The class books' ranks (Grimoire of Shadow Bolt X, Tome of Frostbolt XI and the like) are not in Forever on the evidence there is (2026-11-20): in Classic every one drops in the Ruins of Ahn'Qiraj, which Forever's roadmap does not have; Wowhead's Forever pages list no source for them; the simulator's own authors leave them off by default. Checked again when the raids of 2026-12-09 open. Do not hand-edit.*
 

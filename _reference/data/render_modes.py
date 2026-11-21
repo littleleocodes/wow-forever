@@ -102,6 +102,23 @@ def unused_talents():
     if p.exists():
         for r in json.load(open(p, encoding="utf-8")).get("rows", []):
             out.setdefault((r["class"], r["build"]), []).append(r)
+    # the play check's own verdicts fill in what that record lacks (2026-11-20: today's Frost and Prot-Ret picks hold Ice Block and
+    # Templar's Bulwark, which it never measured): a talent ability the full raid never casts and the check judged defensive. A build
+    # in several entries is read in its home entry (its highest full-raid number).
+    pc = HERE / "raidsim" / "play-check.json"
+    if pc.exists():
+        home = {}
+        for cls, ents in json.load(open(pc, encoding="utf-8")).items():
+            for e, r in (ents or {}).items():
+                for b, f in ((r or {}).get("builds") or {}).items():
+                    if f.get("dps") is not None and ((cls, b) not in home or f["dps"] > home[(cls, b)][0]):
+                        home[(cls, b)] = (f["dps"], f)
+        for (cls, b), (_, f) in home.items():
+            have = {u["talent"] for u in out.get((cls, b), [])}
+            for x in f.get("abilities") or []:
+                t, _, why = x.partition(": ")
+                if why.startswith("situational (defensive)") and t not in have:
+                    out.setdefault((cls, b), []).append({"talent": t, "kind": "situational", "advice": "a defensive for emergencies, so it has no line"})
     return out
 
 
@@ -1624,9 +1641,17 @@ def play_checking(cls):
     if cls not in _PLAY:
         try:
             import argparse
+            import importlib.util
             if str(HERE / "raidsim") not in sys.path:
                 sys.path.insert(0, str(HERE / "raidsim"))
-            import run as RUN
+            # by its path under its own name (2026-11-20): the leveling pages import the fight lab's run.py first, so `import run` here
+            # returned that module, play_check_fails failed, and the except below dropped every notice (the held tanks showed none)
+            RUN = sys.modules.get("raidsim_run")
+            if RUN is None:
+                spec = importlib.util.spec_from_file_location("raidsim_run", HERE / "raidsim" / "run.py")
+                RUN = importlib.util.module_from_spec(spec)
+                sys.modules["raidsim_run"] = RUN
+                spec.loader.exec_module(RUN)
             RUN.set_game("forever")
             repo = RUN.repo_path(argparse.Namespace(repo=None))
             out = {}
@@ -1634,7 +1659,8 @@ def play_checking(cls):
                 for b, f in fails.items():
                     out.setdefault(b, []).extend(f)
             _PLAY[cls] = out
-        except Exception:   # noqa: BLE001  (no simulator checkout here: no notice, the push gate still holds)
+        except Exception as e:   # noqa: BLE001  (no simulator checkout here: no notice, the push gate still holds)
+            print(f"WARNING: play_checking({cls}): {type(e).__name__}: {e}", file=sys.stderr)
             _PLAY[cls] = {}
     return _PLAY[cls]
 
@@ -1676,10 +1702,14 @@ def class_pages(cls):
                       "ends.", ""]
             checking = [b for b in g[spec][mode] if b["id"] in play_checking(cls)] if mode == "raid" else []
             if checking:
-                first = play_checking(cls)[checking[0]["id"]][0].split(": ", 1)[-1]
-                o += [f"> **Being checked:** the play check (what each build presses, and what does nothing) found a problem in "
-                      f"{', '.join(rs.display_name(cls, b) for b in checking)} ({first}). The builds and numbers on this page may change "
-                      "when it is fixed.", ""]
+                raw = play_checking(cls)[checking[0]["id"]][0]
+                first = raw.split(": ", 1)[-1]
+                if raw.startswith("held: "):   # held by hand (raidsim/play-check-hold.json): a re-run on its way, not a failure found
+                    o += [f"> **Being checked:** {first[0].upper() + first[1:]}. The builds and numbers on this page may change when it is done.", ""]
+                else:
+                    o += [f"> **Being checked:** the play check (what each build presses, and what does nothing) found a problem in "
+                          f"{', '.join(rs.display_name(cls, b) for b in checking)} ({first}). The builds and numbers on this page may change "
+                          "when it is fixed.", ""]
             if (cls, spec) in SM.HYBRID_NAMES:
                 o += [f"*{SM.hybrid_line(cls, spec, mode)}* (a hybrid: {spec.split(' ', 1)[1]}).", ""]   # a line per mode (2026-10-15, audit C5)
             if spec in rec[mode]:

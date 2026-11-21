@@ -5,6 +5,64 @@
   {
    "action": {
     "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpLe",
+         "lhs": {
+          "dotRemainingTime": {
+           "spellId": {
+            "spellId": 11672
+           }
+          }
+         },
+         "rhs": {
+          "spellCastTime": {
+           "spellId": {
+            "spellId": 11672
+           }
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "10s"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 11672
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see demonology-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "itemId": 13968
+     }
+    }
+   },
+   "notes": "apl_opt 2026-11-20: changed or added by the rotation search (see demonology-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
      "not": {
       "val": {
        "auraIsActive": {
@@ -169,54 +227,6 @@
       "vals": [
        {
         "cmp": {
-         "op": "OpLe",
-         "lhs": {
-          "dotRemainingTime": {
-           "spellId": {
-            "spellId": 11672
-           }
-          }
-         },
-         "rhs": {
-          "spellCastTime": {
-           "spellId": {
-            "spellId": 11672
-           }
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "remainingTime": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "10s"
-          }
-         }
-        }
-       }
-      ]
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 11672
-     }
-    }
-   },
-   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see demonology-raid-rotation-search.json)"
-  },
-  {
-   "action": {
-    "condition": {
-     "and": {
-      "vals": [
-       {
-        "cmp": {
          "op": "OpLt",
          "lhs": {
           "currentManaPercent": {}
@@ -255,22 +265,41 @@
   {
    "action": {
     "condition": {
-     "cmp": {
-      "op": "OpLe",
-      "lhs": {
-       "dotRemainingTime": {
-        "spellId": {
-         "spellId": 11668
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpLe",
+         "lhs": {
+          "dotRemainingTime": {
+           "spellId": {
+            "spellId": 11668
+           }
+          }
+         },
+         "rhs": {
+          "spellCastTime": {
+           "spellId": {
+            "spellId": 11668
+           }
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "20s"
+          }
+         }
         }
        }
-      },
-      "rhs": {
-       "spellCastTime": {
-        "spellId": {
-         "spellId": 11668
-        }
-       }
-      }
+      ]
      }
     },
     "castSpell": {
@@ -279,7 +308,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see demonology-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-11-20: changed or added by the rotation search (see demonology-raid-rotation-search.json)"
   },
   {
    "action": {

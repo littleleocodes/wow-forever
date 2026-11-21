@@ -144,7 +144,9 @@
       ],
       "notes": ["Adopted from the community simulator on 2026-09-27: cand-ret-dps-r1 beat the previous draft by +2.9% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Seal of Command auto-attacks, Judgement on cooldown, Holy Strike (refreshes Judgements), Consecration/Exorcism (Holy Conduit) as mana allows, seal twists for Echoes.", "Consecration is baseline in Forever.", "Build 1.60.1.70009 removed Crusade: its 2 points go to Vindication 2 (+2% attack power self-buff on melee hits), which also keeps the 20 points below tier 5.", "2026-09-27 scenario audit: Repentance 1 -> Holy Conduit 1. Repentance incapacitates a Humanoid; raid bosses are immune and it gates nothing. Holy Conduit's second rank returns more mana on Consecration and Exorcism; the simulator's best Retribution build takes it (ElliotWood/Forever 40be98e: +1.8% with Vindication 3).", "Companion build `ret-full-buffs-raid` (restored 2026-09-27): in a raid with Blessing of Wisdom and Mana Spring it does 748 DPS against this build's 729 (+2.7%, ElliotWood/Forever 40be98e, 3000 iterations); this build wins on the training dummy (307 vs 298).", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 17/0/34 -> 17/6/28; Divine Intellect 5 gone (moved to Protection); Reverence 3 -> 2 (rank cap); Holy Conduit 2 gone (moved to Holy); Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; Twist of Light 1 gone; +1 Deflection (tier gating for Champion of the Light); refill +2 Holy Conduit, +2 Purifying Power, +2 Divine Precision, +5 Redoubt, +1 Precision (refill: the ret-dps model, raid-dps).", "2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Twist of Light; a tree change or a repair took them out)."],
       "open_questions": ["How Unsealed Wrath's stored seal copies (Twist of Light until build 70753) interact with Seal of Command procs.", "Holy Strike's damage/cooldown (new baseline ability) and whether Improved Holy Strike (Holy tier 1) beats Divine Strength.", "Vengeance stacking uptime with 5-10% crit."],
-      "sources": ["https://warcraftforever.games/talents/paladin"]
+      "sources": ["https://warcraftforever.games/talents/paladin"],
+      "player_page": false,
+      "player_page_why": "2026-11-20: off the player pages, kept in research: fails the play check (Precision worth nothing at the hit cap, no gate) and trails Retribution's pick (767.8) by 17.7% (632.1)."
     },
     {
       "id": "ret-full-buffs-raid",
@@ -969,7 +971,9 @@
       "flex": [],
       "notes": ["Allocation taken from cand-ret-dps-r4 on 2026-10-26: the optimizer's earlier round beat its last export in the community simulator (383 vs 349 DPS; the calibration moved the model past the better build).", "Report: paladin/research/talents/forever/optimizer/ret-dps-raid-dps.md", "2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 17/0/34 -> 17/6/28; Divine Intellect 5 gone (moved to Protection); Reverence 3 -> 2 (rank cap); Holy Conduit 2 gone (moved to Holy); Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; Twist of Light 1 gone; +1 Deflection (tier gating for Champion of the Light); refill +2 Holy Conduit, +2 Purifying Power, +2 Divine Precision, +5 Redoubt, +1 Precision (refill: the ret-dps model, raid-dps)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/paladin"]
+      "sources": ["https://warcraftforever.games/talents/paladin"],
+      "player_page": false,
+      "player_page_why": "2026-11-20: off the player pages, kept in research: fails the play check (Precision worth nothing at the hit cap, no gate) and trails Retribution's pick (767.8) by 17.7% (632.1)."
     },
     {
       "id": "opt-ret-dps-parse",
@@ -1180,7 +1184,7 @@
           ["Divine Intellect", 4]
         ],
         "Retribution": [
-          ["Deflection", 3],
+          ["Deflection", 1],
           ["Benediction", 4],
           ["Improved Judgement", 2],
           ["Conviction", 3],
@@ -1192,7 +1196,8 @@
           ["Repentance", 1],
           ["Vengeance", 3],
           ["Champion of the Light", 5],
-          ["Unsealed Wrath", 1]
+          ["Unsealed Wrath", 1],
+          ["Unyielding Faith", 2]
         ]
       },
       "core": [
@@ -1206,7 +1211,7 @@
         {"talent": "Improved Judgement", "why": "34 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Open search result (ret-dps, full raid): 16/4/31 (Retribution) at 839.0 DPS; ret-raid-dps 673.5, opt-ret-dps-raid-dps 673.5, ret-full-buffs-raid 671.4, retribution-ml-raid 671.3 in the same fights; 2,050 builds simulated, 1 independent runs reached the top.", "The ret-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): shockadin-raid -17.8%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Illumination, Deflection, Sanctified Judgement, Unyielding Faith, Repentance.", "Simulator numbers are the community's model of the beta (wowsims/forever 16e8542 (client 70790) with this project's patches), not in-game measurements.", "2026-11-10 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Illumination -> Purifying Power (mana); Deflection -> Benediction (mana); Deflection -> Benediction (mana); Unyielding Faith -> Deflection (survival); Unyielding Faith -> Deflection (survival). Net -0.02% on a third seed."],
+      "notes": ["Open search result (ret-dps, full raid): 16/4/31 (Retribution) at 839.0 DPS; ret-raid-dps 673.5, opt-ret-dps-raid-dps 673.5, ret-full-buffs-raid 671.4, retribution-ml-raid 671.3 in the same fights; 2,050 builds simulated, 1 independent runs reached the top.", "The ret-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): shockadin-raid -17.8%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Illumination, Deflection, Sanctified Judgement, Unyielding Faith, Repentance.", "Simulator numbers are the community's model of the beta (wowsims/forever 16e8542 (client 70790) with this project's patches), not in-game measurements.", "2026-11-10 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Illumination -> Purifying Power (mana); Deflection -> Benediction (mana); Deflection -> Benediction (mana); Unyielding Faith -> Deflection (survival); Unyielding Faith -> Deflection (survival). Net -0.02% on a third seed.", "2026-11-20: filler points moved (2 points from Deflection to Unyielding Faith): the same DPS bit for bit in a full raid and on the training dummy. The new talents follow the utility order (interrupt protection, threat, mana, range, survival; dodge, parry and block count for nothing in a damage dealer's raid), which the simulator cannot measure (deep-runs/credited_fillers_1120.py; the user's rule of 2026-11-08 that a page pick holds no talent that does nothing)."],
       "open_questions": ["An open-search Retribution build: check it against the community's Retribution builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/paladin/60/0502500121-4-32232021201301351-7"]
     },
@@ -1235,7 +1240,7 @@
         ],
         "Protection": [],
         "Retribution": [
-          ["Deflection", 4],
+          ["Deflection", 2],
           ["Benediction", 5],
           ["Improved Judgement", 2],
           ["Conviction", 3],
@@ -1244,7 +1249,8 @@
           ["Sacred Arbiter", 1],
           ["Two-Handed Weapon Specialization", 3],
           ["Vengeance", 3],
-          ["Champion of the Light", 3]
+          ["Champion of the Light", 3],
+          ["Unyielding Faith", 2]
         ]
       },
       "core": [
@@ -1258,7 +1264,7 @@
         {"talent": "Champion of the Light", "why": "30 DPS lost without it (4% of the build in a full raid; removal, 12,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Open search result (shockadin-raid, full raid): 23/0/28 (Shockadin (a Holy/Retribution hybrid)) at 796.2 DPS; shockadin-open-raid 784.3 in the same fights; 2,020 builds simulated, 1 independent runs reached the top.", "The shockadin-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): ret-dps -8.6%; none adopted.", "A phase-1 BiS set picked for this family (_reference/data/raidsim/gear_sets/forever/tiers/paladin-hybrid-holy-retribution-bis.gear.json, item level 64.0): 815.0 DPS against 796.5 in the rotation's standard set: a lead for the gear sets (not applied).", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Spiritual Focus, Purifying Power, Infusion of Light, Deflection, Unyielding Faith, Seal of Command, Turn Evil.", "Simulator numbers are the community's model of the beta (wowsims/forever 16e8542 (client 70790) with this project's patches), not in-game measurements.", "2026-11-10 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Infusion of Light -> Purifying Power (mana); Deflection -> Benediction (mana); Deflection -> Benediction (mana); Deflection -> Benediction (mana); Turn Evil -> Deflection (survival); Unyielding Faith -> Deflection (survival); Unyielding Faith -> Deflection (survival). Net -0.01% on a third seed."],
+      "notes": ["Open search result (shockadin-raid, full raid): 23/0/28 (Shockadin (a Holy/Retribution hybrid)) at 796.2 DPS; shockadin-open-raid 784.3 in the same fights; 2,020 builds simulated, 1 independent runs reached the top.", "The shockadin-raid raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): ret-dps -8.6%; none adopted.", "A phase-1 BiS set picked for this family (_reference/data/raidsim/gear_sets/forever/tiers/paladin-hybrid-holy-retribution-bis.gear.json, item level 64.0): 815.0 DPS against 796.5 in the rotation's standard set: a lead for the gear sets (not applied).", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Spiritual Focus, Purifying Power, Infusion of Light, Deflection, Unyielding Faith, Seal of Command, Turn Evil.", "Simulator numbers are the community's model of the beta (wowsims/forever 16e8542 (client 70790) with this project's patches), not in-game measurements.", "2026-11-10 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Infusion of Light -> Purifying Power (mana); Deflection -> Benediction (mana); Deflection -> Benediction (mana); Deflection -> Benediction (mana); Turn Evil -> Deflection (survival); Unyielding Faith -> Deflection (survival); Unyielding Faith -> Deflection (survival). Net -0.01% on a third seed.", "2026-11-20: filler points moved (2 points from Deflection to Unyielding Faith): the same DPS bit for bit in a full raid and on the training dummy. The new talents follow the utility order (interrupt protection, threat, mana, range, survival; dodge, parry and block count for nothing in a damage dealer's raid), which the simulator cannot measure (deep-runs/credited_fillers_1120.py; the user's rule of 2026-11-08 that a page pick holds no talent that does nothing)."],
       "open_questions": ["An open-search Shockadin build: check it against the community's Shockadin builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/paladin/60/15025110221021--4223302100131033-7"]
     },
@@ -1279,11 +1285,13 @@
         ],
         "Protection": [
           ["Divine Intellect", 5],
-          ["Redoubt", 5],
-          ["Precision", 2]
+          ["Redoubt", 3],
+          ["Precision", 2],
+          ["Templar's Bulwark", 1],
+          ["Toughness", 1]
         ],
         "Retribution": [
-          ["Deflection", 3],
+          ["Deflection", 1],
           ["Benediction", 5],
           ["Improved Judgement", 2],
           ["Conviction", 3],
@@ -1293,153 +1301,16 @@
           ["Sacred Arbiter", 1],
           ["Two-Handed Weapon Specialization", 3],
           ["Vengeance", 3],
-          ["Champion of the Light", 4]
+          ["Champion of the Light", 4],
+          ["Unyielding Faith", 2]
         ]
       },
       "core": [],
       "flex": [],
-      "notes": ["Against the best hand draft ret-full-buffs-raid in a full raid, same gear and fights (100,000, one seed): +3.5% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow ret-full-buffs-raid: Pursuit of Justice → Deflection, Guardian's Favor → Redoubt (2 points), Templar's Bulwark → Redoubt (within 0.00% of the search winner 10/12/29 on one seed, 30,000 fights).", "Search result (full raid): 10/12/29 at 682.0 ± 0.13 DPS over 100,000 fights; runner-up 10/12/29 (+0.00%; the winner takes Templar's Bulwark 1, Vindication 3; the runner-up Deflection 1, Sacred Duty 1, Vindication 2); 1,616 builds simulated; certificate: none of its 216 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (wowsims/forever ff9babb (client 70888) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 10/12/29 at 676.9 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 13/14/24 at 410.2 DPS.", "2026-11-13 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Vindication -> Deflection (survival); Vindication -> Deflection (survival). Net +0.00% on a third seed."],
+      "notes": ["Against the best hand draft ret-full-buffs-raid in a full raid, same gear and fights (100,000, one seed): +3.5% (over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow ret-full-buffs-raid: Pursuit of Justice → Deflection, Guardian's Favor → Redoubt (2 points), Templar's Bulwark → Redoubt (within 0.00% of the search winner 10/12/29 on one seed, 30,000 fights).", "Search result (full raid): 10/12/29 at 682.0 ± 0.13 DPS over 100,000 fights; runner-up 10/12/29 (+0.00%; the winner takes Templar's Bulwark 1, Vindication 3; the runner-up Deflection 1, Sacred Duty 1, Vindication 2); 1,616 builds simulated; certificate: none of its 216 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (wowsims/forever ff9babb (client 70888) with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 10/12/29 at 676.9 DPS in a full raid (other talents: _reference/dps-rankings.md).", "Alone on the training dummy (only your own buffs) the search's best is 13/14/24 at 410.2 DPS.", "2026-11-13 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Vindication -> Deflection (survival); Vindication -> Deflection (survival). Net +0.00% on a third seed.", "2026-11-20: filler points moved (1 point from Redoubt to Templar's Bulwark; 1 point from Redoubt to Toughness): the same DPS bit for bit in a full raid and on the training dummy. The new talents follow the utility order (interrupt protection, threat, mana, range, survival; dodge, parry and block count for nothing in a damage dealer's raid), which the simulator cannot measure (deep-runs/credited_fillers_1120.py; the user's rule of 2026-11-08 that a page pick holds no talent that does nothing).", "2026-11-20: filler points moved (2 points from Deflection to Unyielding Faith): the same DPS bit for bit in a full raid and on the training dummy. The new talents follow the utility order (interrupt protection, threat, mana, range, survival; dodge, parry and block count for nothing in a damage dealer's raid), which the simulator cannot measure (deep-runs/credited_fillers_1120.py; the user's rule of 2026-11-08 that a page pick holds no talent that does nothing)."],
       "open_questions": ["A machine-searched Prot-Ret build: check it against the community's Prot-Ret builds at launch."],
       "sources": ["https://github.com/wowsims/forever"],
       "replaces": "ret-full-buffs-raid"
-    },
-    {
-      "id": "holy-leveling",
-      "name": "Holy — Leveling into the raid build",
-      "role": "dps",
-      "content": "leveling",
-      "tier": "draft",
-      "spec": "Holy",
-      "generated": "2026-11-17",
-      "derived": "leveling",
-      "raid_path": "holy-ml-heal",
-      "summary": "Level with the talents of the Holy raid build (holy-ml-heal) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (stats model's order: 34 s per kill over levels 20-60, the holy-leveling rotation).",
-      "allocation": {
-        "Holy": [
-          ["Spiritual Focus", 5],
-          ["Divine Strength", 4],
-          ["Healing Light", 3],
-          ["Reverence", 2],
-          ["Purifying Power", 2],
-          ["Divine Favor", 1],
-          ["Illumination", 5],
-          ["Infusion of Light", 1],
-          ["Oath of Light", 1],
-          ["Holy Shock", 1],
-          ["Boundless Light", 1],
-          ["Holy Power", 5],
-          ["Light's Vigil", 1]
-        ],
-        "Protection": [
-          ["Divine Intellect", 5]
-        ],
-        "Retribution": [
-          ["Deflection", 2],
-          ["Benediction", 5],
-          ["Conviction", 3],
-          ["Unyielding Faith", 2],
-          ["Pursuit of Justice", 2]
-        ]
-      },
-      "order": [
-        {"levels": "10-13", "tree": "Holy", "talent": "Divine Strength", "points": 4},
-        {"levels": "14", "tree": "Holy", "talent": "Spiritual Focus", "points": 1},
-        {"levels": "15-16", "tree": "Holy", "talent": "Reverence", "points": 2},
-        {"levels": "17-18", "tree": "Holy", "talent": "Purifying Power", "points": 2},
-        {"levels": "19", "tree": "Holy", "talent": "Spiritual Focus", "points": 1},
-        {"levels": "20-24", "tree": "Holy", "talent": "Illumination", "points": 5},
-        {"levels": "25-27", "tree": "Holy", "talent": "Spiritual Focus", "points": 3},
-        {"levels": "28-29", "tree": "Holy", "talent": "Healing Light", "points": 2},
-        {"levels": "30", "tree": "Holy", "talent": "Holy Shock", "points": 1},
-        {"levels": "31-35", "tree": "Retribution", "talent": "Benediction", "points": 5},
-        {"levels": "36-38", "tree": "Retribution", "talent": "Conviction", "points": 3},
-        {"levels": "39-40", "tree": "Retribution", "talent": "Deflection", "points": 2},
-        {"levels": "41-42", "tree": "Retribution", "talent": "Pursuit of Justice", "points": 2},
-        {"levels": "43-47", "tree": "Protection", "talent": "Divine Intellect", "points": 5},
-        {"levels": "48-49", "tree": "Retribution", "talent": "Unyielding Faith", "points": 2},
-        {"levels": "50", "tree": "Holy", "talent": "Healing Light", "points": 1},
-        {"levels": "51", "tree": "Holy", "talent": "Divine Favor", "points": 1},
-        {"levels": "52", "tree": "Holy", "talent": "Infusion of Light", "points": 1},
-        {"levels": "53", "tree": "Holy", "talent": "Oath of Light", "points": 1},
-        {"levels": "54-58", "tree": "Holy", "talent": "Holy Power", "points": 5},
-        {"levels": "59", "tree": "Holy", "talent": "Boundless Light", "points": 1},
-        {"levels": "60", "tree": "Holy", "talent": "Light's Vigil", "points": 1}
-      ],
-      "core": [],
-      "flex": [],
-      "notes": ["2026-11-17 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 34 s; own tree first 35 s; own tree last 34 s. First Holy point at level 10.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
-      "open_questions": ["Check the Holy leveling pace at launch; the raid build's talents may cost speed early."],
-      "sources": []
-    },
-    {
-      "id": "protection-leveling",
-      "name": "Protection — Leveling into the raid build",
-      "role": "dps",
-      "content": "leveling",
-      "tier": "draft",
-      "spec": "Protection",
-      "generated": "2026-11-17",
-      "derived": "leveling",
-      "raid_path": "protection-ml-tank",
-      "summary": "Level with the talents of the Protection raid build (protection-ml-tank) so you arrive at 60 ready to tank; the order is the fastest of three the fight lab raced (stats model's order: 30 s per kill over levels 20-60, the prot-leveling rotation).",
-      "allocation": {
-        "Holy": [],
-        "Protection": [
-          ["Redoubt", 5],
-          ["Precision", 3],
-          ["Guardian's Favor", 1],
-          ["Sacred Duty", 1],
-          ["Templar's Bulwark", 1],
-          ["Shield Specialization", 2],
-          ["Toughness", 5],
-          ["Swift Judgement", 1],
-          ["Improved Righteous Fury", 3],
-          ["Anticipation", 3],
-          ["Holy Shield", 1],
-          ["Reckoning", 5],
-          ["Iron Creed", 3],
-          ["Shieldsworn", 1]
-        ],
-        "Retribution": [
-          ["Deflection", 5],
-          ["Benediction", 2],
-          ["Improved Judgement", 2],
-          ["Conviction", 3],
-          ["Sanctified Judgement", 3],
-          ["Sacred Arbiter", 1]
-        ]
-      },
-      "order": [
-        {"levels": "10-14", "tree": "Protection", "talent": "Redoubt", "points": 5},
-        {"levels": "15-17", "tree": "Protection", "talent": "Precision", "points": 3},
-        {"levels": "18", "tree": "Protection", "talent": "Sacred Duty", "points": 1},
-        {"levels": "19", "tree": "Protection", "talent": "Guardian's Favor", "points": 1},
-        {"levels": "20", "tree": "Protection", "talent": "Templar's Bulwark", "points": 1},
-        {"levels": "21-22", "tree": "Protection", "talent": "Shield Specialization", "points": 2},
-        {"levels": "23-24", "tree": "Protection", "talent": "Toughness", "points": 2},
-        {"levels": "25", "tree": "Protection", "talent": "Swift Judgement", "points": 1},
-        {"levels": "26-28", "tree": "Protection", "talent": "Anticipation", "points": 3},
-        {"levels": "29", "tree": "Protection", "talent": "Toughness", "points": 1},
-        {"levels": "30", "tree": "Protection", "talent": "Holy Shield", "points": 1},
-        {"levels": "31-32", "tree": "Retribution", "talent": "Benediction", "points": 2},
-        {"levels": "33-35", "tree": "Retribution", "talent": "Deflection", "points": 3},
-        {"levels": "36-38", "tree": "Retribution", "talent": "Sanctified Judgement", "points": 3},
-        {"levels": "39-41", "tree": "Retribution", "talent": "Conviction", "points": 3},
-        {"levels": "42-43", "tree": "Retribution", "talent": "Improved Judgement", "points": 2},
-        {"levels": "44-45", "tree": "Retribution", "talent": "Deflection", "points": 2},
-        {"levels": "46", "tree": "Retribution", "talent": "Sacred Arbiter", "points": 1},
-        {"levels": "47-48", "tree": "Protection", "talent": "Toughness", "points": 2},
-        {"levels": "49-51", "tree": "Protection", "talent": "Improved Righteous Fury", "points": 3},
-        {"levels": "52-55", "tree": "Protection", "talent": "Reckoning", "points": 4},
-        {"levels": "56", "tree": "Protection", "talent": "Shieldsworn", "points": 1},
-        {"levels": "57", "tree": "Protection", "talent": "Reckoning", "points": 1},
-        {"levels": "58-60", "tree": "Protection", "talent": "Iron Creed", "points": 3}
-      ],
-      "core": [],
-      "flex": [],
-      "notes": ["2026-11-17 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 30 s; own tree first 31 s; own tree last 30 s. First Protection point at level 10.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
-      "open_questions": ["Check the Protection leveling pace at launch; the raid build's talents may cost speed early."],
-      "sources": []
     },
     {
       "id": "shockadin-open-leveling",
@@ -1780,6 +1651,144 @@
       "flex": [],
       "notes": ["The simulator's own build, credited (Simulator build first, 2026-11-20): the page starts from it; ours replaces it only when 0.5% ahead on two seeds and passing the spec's rules.", "Within 0.3% of our open-search build (769.3) under the same rotation: Retribution's full search of the optimality pass, with the seal-twist knob in the rotation search, settles which leads.", "Simulator numbers are the community's model of the game, not in-game measurements."],
       "sources": ["https://github.com/wowsims/forever/blob/2e6e77d844dc4d6790f984b9a1817fc583f7ca2e/ui/specs/paladin/retribution/builds/unsealed_wrath.siml"]
+    },
+    {
+      "id": "holy-leveling",
+      "name": "Holy — Leveling into the raid build",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Holy",
+      "generated": "2026-11-20",
+      "derived": "leveling",
+      "raid_path": "holy-ml-heal",
+      "summary": "Level with the talents of the Holy raid build (holy-ml-heal) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (stats model's order: 35 s per kill over levels 20-60, the holy-leveling rotation).",
+      "allocation": {
+        "Holy": [
+          ["Spiritual Focus", 5],
+          ["Divine Strength", 4],
+          ["Healing Light", 3],
+          ["Reverence", 2],
+          ["Purifying Power", 2],
+          ["Divine Favor", 1],
+          ["Illumination", 5],
+          ["Infusion of Light", 1],
+          ["Oath of Light", 1],
+          ["Holy Shock", 1],
+          ["Boundless Light", 1],
+          ["Holy Power", 5],
+          ["Light's Vigil", 1]
+        ],
+        "Protection": [
+          ["Divine Intellect", 5]
+        ],
+        "Retribution": [
+          ["Deflection", 2],
+          ["Benediction", 5],
+          ["Conviction", 3],
+          ["Unyielding Faith", 2],
+          ["Pursuit of Justice", 2]
+        ]
+      },
+      "order": [
+        {"levels": "10-13", "tree": "Holy", "talent": "Divine Strength", "points": 4},
+        {"levels": "14", "tree": "Holy", "talent": "Spiritual Focus", "points": 1},
+        {"levels": "15-16", "tree": "Holy", "talent": "Reverence", "points": 2},
+        {"levels": "17-18", "tree": "Holy", "talent": "Purifying Power", "points": 2},
+        {"levels": "19", "tree": "Holy", "talent": "Spiritual Focus", "points": 1},
+        {"levels": "20-24", "tree": "Holy", "talent": "Illumination", "points": 5},
+        {"levels": "25-27", "tree": "Holy", "talent": "Spiritual Focus", "points": 3},
+        {"levels": "28-29", "tree": "Holy", "talent": "Healing Light", "points": 2},
+        {"levels": "30", "tree": "Holy", "talent": "Holy Shock", "points": 1},
+        {"levels": "31-35", "tree": "Retribution", "talent": "Benediction", "points": 5},
+        {"levels": "36-38", "tree": "Retribution", "talent": "Conviction", "points": 3},
+        {"levels": "39-40", "tree": "Retribution", "talent": "Deflection", "points": 2},
+        {"levels": "41-42", "tree": "Retribution", "talent": "Pursuit of Justice", "points": 2},
+        {"levels": "43-47", "tree": "Protection", "talent": "Divine Intellect", "points": 5},
+        {"levels": "48-49", "tree": "Retribution", "talent": "Unyielding Faith", "points": 2},
+        {"levels": "50", "tree": "Holy", "talent": "Healing Light", "points": 1},
+        {"levels": "51", "tree": "Holy", "talent": "Divine Favor", "points": 1},
+        {"levels": "52", "tree": "Holy", "talent": "Infusion of Light", "points": 1},
+        {"levels": "53", "tree": "Holy", "talent": "Oath of Light", "points": 1},
+        {"levels": "54-58", "tree": "Holy", "talent": "Holy Power", "points": 5},
+        {"levels": "59", "tree": "Holy", "talent": "Boundless Light", "points": 1},
+        {"levels": "60", "tree": "Holy", "talent": "Light's Vigil", "points": 1}
+      ],
+      "core": [],
+      "flex": [],
+      "notes": ["2026-11-20 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 35 s; own tree first 36 s; own tree last 35 s. First Holy point at level 10.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
+      "open_questions": ["Check the Holy leveling pace at launch; the raid build's talents may cost speed early."],
+      "sources": []
+    },
+    {
+      "id": "protection-leveling",
+      "name": "Protection — Leveling into the raid build",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Protection",
+      "generated": "2026-11-20",
+      "derived": "leveling",
+      "raid_path": "protection-ml-tank",
+      "summary": "Level with the talents of the Protection raid build (protection-ml-tank) so you arrive at 60 ready to tank; the order is the fastest of three the fight lab raced (stats model's order: 31 s per kill over levels 20-60, the prot-leveling rotation).",
+      "allocation": {
+        "Holy": [],
+        "Protection": [
+          ["Redoubt", 5],
+          ["Precision", 3],
+          ["Guardian's Favor", 1],
+          ["Sacred Duty", 1],
+          ["Templar's Bulwark", 1],
+          ["Shield Specialization", 2],
+          ["Toughness", 5],
+          ["Swift Judgement", 1],
+          ["Improved Righteous Fury", 3],
+          ["Anticipation", 3],
+          ["Holy Shield", 1],
+          ["Reckoning", 5],
+          ["Iron Creed", 3],
+          ["Shieldsworn", 1]
+        ],
+        "Retribution": [
+          ["Deflection", 5],
+          ["Benediction", 2],
+          ["Improved Judgement", 2],
+          ["Conviction", 3],
+          ["Sanctified Judgement", 3],
+          ["Sacred Arbiter", 1]
+        ]
+      },
+      "order": [
+        {"levels": "10-14", "tree": "Protection", "talent": "Redoubt", "points": 5},
+        {"levels": "15-17", "tree": "Protection", "talent": "Precision", "points": 3},
+        {"levels": "18", "tree": "Protection", "talent": "Sacred Duty", "points": 1},
+        {"levels": "19", "tree": "Protection", "talent": "Guardian's Favor", "points": 1},
+        {"levels": "20", "tree": "Protection", "talent": "Templar's Bulwark", "points": 1},
+        {"levels": "21-22", "tree": "Protection", "talent": "Shield Specialization", "points": 2},
+        {"levels": "23-24", "tree": "Protection", "talent": "Toughness", "points": 2},
+        {"levels": "25", "tree": "Protection", "talent": "Swift Judgement", "points": 1},
+        {"levels": "26-28", "tree": "Protection", "talent": "Anticipation", "points": 3},
+        {"levels": "29", "tree": "Protection", "talent": "Toughness", "points": 1},
+        {"levels": "30", "tree": "Protection", "talent": "Holy Shield", "points": 1},
+        {"levels": "31-32", "tree": "Retribution", "talent": "Benediction", "points": 2},
+        {"levels": "33-35", "tree": "Retribution", "talent": "Deflection", "points": 3},
+        {"levels": "36-38", "tree": "Retribution", "talent": "Sanctified Judgement", "points": 3},
+        {"levels": "39-41", "tree": "Retribution", "talent": "Conviction", "points": 3},
+        {"levels": "42-43", "tree": "Retribution", "talent": "Improved Judgement", "points": 2},
+        {"levels": "44-45", "tree": "Retribution", "talent": "Deflection", "points": 2},
+        {"levels": "46", "tree": "Retribution", "talent": "Sacred Arbiter", "points": 1},
+        {"levels": "47-48", "tree": "Protection", "talent": "Toughness", "points": 2},
+        {"levels": "49-51", "tree": "Protection", "talent": "Improved Righteous Fury", "points": 3},
+        {"levels": "52-55", "tree": "Protection", "talent": "Reckoning", "points": 4},
+        {"levels": "56", "tree": "Protection", "talent": "Shieldsworn", "points": 1},
+        {"levels": "57", "tree": "Protection", "talent": "Reckoning", "points": 1},
+        {"levels": "58-60", "tree": "Protection", "talent": "Iron Creed", "points": 3}
+      ],
+      "core": [],
+      "flex": [],
+      "notes": ["2026-11-20 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 31 s; own tree first 33 s; own tree last 31 s. First Protection point at level 10.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
+      "open_questions": ["Check the Protection leveling pace at launch; the raid build's talents may cost speed early."],
+      "sources": []
     }
   ]
 }

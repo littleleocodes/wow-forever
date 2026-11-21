@@ -2,6 +2,8 @@
 
 [Warrior](../README.md) > [Raid (group)](README.md) > Protection
 
+> **Being checked:** The tank lane re-tunes, checks and races the tanks after the audit's D12 (2026-11-20). The builds and numbers on this page may change when it is done.
+
 **[Protection — Raid tank](../research/raid/builds/protection-ml-tank.md)** (17/3/31) — [open the talent tree](https://talentsforever.com/warrior/60/35300103002-03-050530020330001351-12)
 
 > 🔬 Derived build: found by this project's deep search over every legal build of the spec in the community's raid simulator, on tank value (threat and damage taken), then raced against the spec's builds. A model of the beta, to check at launch.
@@ -10,19 +12,18 @@
 
 **Setup, before the pull:** **Defensive Stance**: the simulator starts the fight in it, and the rotation below assumes it.
 
-**Before the pull, then keep up all fight:** **Battle Shout**.
-
 **Then press the first one that is ready**, top to bottom:
 
 1. **Shield Block**; no global cooldown, so press it alongside the others
-2. **Revenge** after you block, dodge or parry
+2. **Revenge** (rank 5) after you block, dodge or parry
 3. **Bloodrage** when you have less than 90 rage; no global cooldown, so press it alongside the others
 4. **Shield Slam**
 5. **Sunder Armor**: stack it to 5 on the target
-6. **Heroic Strike** when you have 34+ rage; no global cooldown, so press it alongside the others
+6. **Heroic Strike** (rank 8) when you have 34+ rage; no global cooldown, so press it alongside the others
 7. **Rend**: keep it on the target
+8. **Sunder Armor**
 
-Between these, your white swings do the rest.
+**Sunder Armor** is your filler: cast it whenever nothing above is ready.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
@@ -57,6 +58,8 @@ Protection tanks in **Defensive Stance** with a shield: **Shield Block** every t
 - Press **Shield Wall** for the worst moments: an enrage, a healer down, your health low.
 - Adds: **Thunder Clap** hits up to 4 targets, **Challenging Shout** (10-minute cooldown) turns everything within 10 yards onto you for 6 seconds, and **Taunt** (8-second cooldown in Forever) takes back a single target.
 
+*This guide was written for the rotation of 2026-11-09; the list above was re-tuned since, so follow the list where the two differ.*
+
 ## Talents
 
 | Tree | Points | Talents (ranks) |
@@ -67,7 +70,9 @@ Protection tanks in **Defensive Stance** with a shield: **Shield Block** every t
 
 ## The numbers
 
-Tank value 1.011 (threat and damage taken under a boss, relative to our reference tank build).
+Tank value 1.010 (threat and damage taken under a boss, relative to our reference tank build).
+
+**How this pick was checked:** a full search on 2026-10-28 (the talent search that found this build).
 
 **The gear** (average item level: Pre-BiS 62.2; Raid BiS 61.3; chosen in the community simulator on tank value, threat and damage taken, for this build in a full raid. The simulator's item database lists base armor for only about one armor item in five; this project's patch fills in the rest from Classic's values (our assumption: Forever may have changed some); each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -91,15 +96,15 @@ Tank value 1.011 (threat and damage taken under a boss, relative to our referenc
 | Off hand | [Evergreen Shield](https://www.wowhead.com/forever/item=279262) · *Blacksmithing*<br>+ [Enchant Shield - Greater Stamina](https://www.wowhead.com/forever/item=16217) | [Evergreen Shield](https://www.wowhead.com/forever/item=279262) · *Blacksmithing*<br>+ [Enchant Shield - Greater Stamina](https://www.wowhead.com/forever/item=16217) |
 | Ranged/relic | [Ancient Bone Bow](https://www.wowhead.com/forever/item=18680) · *Instructor Malicia, Scholomance* | [Ancient Bone Bow](https://www.wowhead.com/forever/item=18680) · *Instructor Malicia, Scholomance* |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/warrior/protection/#eJzEVEFoE1sUzX0zmbm5KWE6P58/fb8fplmU+YEpLzPk/6abpN38vxRxId3YaZOaWElikkUFhSoEuuii4sZWoYIKIrpxUUqXYksLit0oVGytWtBFF7oQ1IXKTI0I3dp6FjPvnXMf97zz4FInggYGmGDBEBShChMAkwBXAW4C6G2Byny1F/iqikwDfoYU3Bo2tqMk4cdRknH9CpCKj6bBeBEjBTeOGK/8/2TBuKySivcfaMbzGMl4cU0jFZ+dB/+siuvTsMtfWtNIxqkdjSTcOEUyLgSFG812YydGKm42241Nv/DDBUh0assla3sOZiFyzbvtPe2fuwG3QJkqvfurWRrAwDDkYJF1uWlXiJRwhXBs4doiLXzCEa4rhEi56dQKk1+yx2H6nYgjKZaCq0uQUClMkp2q62P6kFc9eaxSbZiOcP6xU8J2evvMkaJXPl7Im5Wa6eXzhbw5fNpsFAtmrdLwGqVK2awXvNpI0bTqhYJZrVUadsMrj9kt2d6Ve07UK+W/ucrDJGEzvqeZyNhOZl+avVZ0mbO+kI5c4TIx/E9v460AVpZAP7v33qn0T7bSQVoyhpLOaiGukEwsIwJzX+I6cfQpfL8IusW76c9kB0p67B5EKWyF8eGgzrSwX0yQ5mqLa8IBuO6i35LtqASuI6RS2HV7/k1zIjTBQlxeAn38AN4xTtFEhFTHD2x+0I8C5wf1KI98j8OQ3rAVeMucc1IoQDx3l0UpQioyC8QnSHxmEZ8PTYzmOmZnfKxmu0YDPMk6W8yQzWxygYV+CRq51mpf0X1n3/pkgu/h67n+b0RuyB+rMxBsQlvZpIQLf/QxDQZ+mMACeiEH/8MhOApFqMI4jLOvAwD5YSar); Raid BiS: [full raid](https://wowsims.com/forever/warrior/protection/#eJzEVDFoE20Yzvvd5e7Nm5L/en9+/utZ4ZqhnIErX+6INl2SdtFRxEG62GuTmlhJYpKhgkIdgg4dKirYKlTQgoguDqV0FFtaUOxioUJr1IIOHXQQ1EHlrkaErrY+w8vd87x37/M9H7zUjqCABgaYMAB5KMMYwGWA2wD3ANQWX2We2g36soxMAf08SdgY1DbDJOCXYRJx7RaQjM8nQHsdIQnXj2tvIyTj6sw/2k2ZZHzyVNFeRUjEqysKSXgp530r49oEbNM3VhQScXzLqyvXgARcP0syNq6DtuX9aKPeqm14jZ+vQKxdWSyYm9MwBaE77gP3Ze/0DNwHabzwcX+90Ie+YcjAPOtwkg7nCe5wblvcsXiSe4TNHYdznnCSiSUmvmEvgvQfkY4kmRIuL0BMpiAJVqKqjqgDbvnMyVK5ZtjcPmgluGV39xhDebd4Kpc1ShXDzWZzWWPwnFHL54xKqebWCqWiUc25laG8YVZzOaNcKdWsmlscsZqytS13na6Wigd0WQ+SgPXojmE8ZdmpXRn2TlJFnfUEVNQlXSSGh9UWvRnA0gKoF3aeO5H8w1baSIlHUFBZJaBLJBJLcd/c96hKOnoUfpoH1dQ7aV+8DQU18hjCFDSD+KxfZUrQayZI6nKTq8MeuO6gf+OtKPmuQyRT0HG6DiV1IjTARFxcAHV0D+4xSuFYiGTbC2y234sCZ/vVsB76FYcmvGdL8IHZF4WAj2jmEQtTiGRkJvCvEPvGQh4fGBvOtE1NelhOdwz7WE3bDaaJRjo+xwJ/BbVM82lX0flw1+ak/Hrsbqb3J5EZ8NbqJPgvgUY6LuDc/z1Mgb7fNjCHbsjAETgKJyAPZRiFUfZjAOgyJqU=).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/warrior/protection/#eJzEVEFoE10Qzrzd7E4mP2G7f+Df7l9hm0OJgS0vu0SbXpL2okcRD7IXu21SEytJTPZQQaGKgR56qHixVaiggogieCilRxFpwWL1IFRsrVrQQw96EKoHld22UOjV1u+w+973zWO+mYGhNgQFNDAgCX1QghqMAIwC3AK4B6D+E6jMV7tAn5eRKaBfIAlX+7W1KAn4fZBEXLoJJOOLcdDex0jC5RPaR/8/WtRuyCTj0+eK9i5GIl5bVEjGt5fBfyvj0jhs8tcXFRJxbF0hAZfPkYgzQeBys0Vbj5GMK80WbcUP3LgKiTblWTm5NgWTELntPnDf9EzdhfsgjZW/HmiWezEwDHmYZe12xuY8zW3OLZPbJs9wn7C4bXPO03YmPcfED+xVmOIU0WUKJyWcchIyhUkw0w11SO1za2dPVWueYXHrkJnmptXVbQyU3MrpYsGo1g23UCgWjP7zhlcqGvWq53rlasVoFN36QMlINopFo1aveqbnVobMbdnclDvPNKqVg7qsh0nAZnxXMp41reyeJPskqaLOukMq6pIuEsMjalTfrD+MLx314u6y05k/7KSVlFQMBZXVQ7pEIrEsD7z9iquko0/ht1lQk3oH/Z9qRUGNPYFoYHDBUZkS9oMJMlumFxz1CuyDa4P+TbWgFLiOkExh2+48nNEjJBuQRHzkqMP7MMU4RRMRki2/X9OO3wmcdnaMcMHRhM9sDr6wwgaDS0IoQDz/mEUpQjKyJPAfkPjJIj4fGhnMt05O+JjPtQ8GeJ2zVpkmGrnUDAv9FXj57dOeouPhnuXJBt/jd/I9W0S+z1+rExBcQqu5lIAz/3UzBXp3bGAOXZCHo3AMTkIJajAMw+z3AAGbJkw=); Raid BiS: [full raid](https://wowsims.com/forever/warrior/protection/#eJzEVEFIFH8U3veb2Zm3b//sf5wWGieDcQ+yLYz8doYt18uuXuoY0SHmkqO7tpuxu+3uwaDAIKmDB6OCtMCghIgi6CDiMSIUkqyDYKBtJdTBQx0C61Axo4LgNe07PGa+7828770Hj1oQFNDAgDj0QAEqMARwDeAewEMA9T9fZZ7aAfqcjEwB/SJJ2OjVVsMk4I9+EnHpLpCMr0dB+xAhCZdPap8iJOPi5P/aHZlkfPFK0d5HSMQbCwpJeDXvfSvj0ihs0LcXFBJxZM2LCzeBBFw+TzI2boG25v1oZbhJW/ES169DrEV5WYyvTsA4hO67j913XROT8AikkeK3g8PFbvQNQxZmWKudsjlPcptzy+S2yVPcIyxu25zzpJ1KzjLxI3sbpCiFdJmCcQknnJhMQRLMZE0dUHvcyrnT5UrdsLh12Exy0+roNPoKbulMPmeUq4aby+VzRu8Fo17IG9Vy3a0XyyWjlnerfQUjXsvnjUq1XDfrbmnA3JLNDbn9bK1cOqTLepAEHI7uKMbTppXelWKfJVXUWWdARV3SRWJ4VA3rG/0H8Y2jXtrZdjL1l500k5KIoKCyakCXSCSW5r6331GVdPQo/D4DalxvowOJZhTUyHMI+wbnHZUpQS+ZILVpet5Rr8AeuDZoX6IJJd91iGQK2nb7kZQeItmAOOJTRx3cgy1GKRwLkWx585pyvEnglLNthfOOJnxhs/CV5dYZXBYCPqLZZyxMIZKRxYH/hNgvFvL4wFB/tnl8zMNcprXfx2LGajBNNDKJaRb4J6hnt552FW1Pdq1O2o8nHmS7Nolsj3dWx8B/CTQyCQGn93cyBbq3XWAOHZCFY3AcTkEBKjAIg+zPAPBdJkY=).
 
 **Points that do nothing for this spec:** **Improved Overpower** (1) only counts toward the points the tree needs before **Impale**; **Concussion Blow** (1) only counts toward the points the tree needs before **Bastion** and **Shield Slam**.
 
 ## Other builds of this spec
 
-- [Protection — Raid Tank](../research/raid/builds/prot-raid-tank.md) (12/5/34) — [open the talent tree](https://talentsforever.com/warrior/60/3500301-05-150533020311001351-12)
 - [Protection (optimized)](../research/raid/builds/opt-prot-tank-raid-tank.md) (8/5/38) — [open the talent tree](https://talentsforever.com/warrior/60/35-05-250530022331201351-12)
+- [Protection — Raid Tank](../research/raid/builds/prot-raid-tank.md) (12/5/34) — [open the talent tree](https://talentsforever.com/warrior/60/3500301-05-150533020311001351-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-19 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 2e6e77d (client 1.60.1.70938)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-20 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 2e6e77d (client 1.60.1.70938)). Simulations, not in-game measurements. Spell ranks: trainer ranks only. The class books' ranks (Grimoire of Shadow Bolt X, Tome of Frostbolt XI and the like) are not in Forever on the evidence there is (2026-11-20): in Classic every one drops in the Ruins of Ahn'Qiraj, which Forever's roadmap does not have; Wowhead's Forever pages list no source for them; the simulator's own authors leave them off by default. Checked again when the raids of 2026-12-09 open. Do not hand-edit.*
 

@@ -1,0 +1,113 @@
+{
+ "id": "check-frostfire-raid",
+ "allocation": {
+  "Arcane": [],
+  "Fire": [
+   [
+    "Incineration",
+    5
+   ],
+   [
+    "Accelerant",
+    5
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Pyroblast",
+    1
+   ],
+   [
+    "Improved Fire Blast",
+    2
+   ],
+   [
+    "Improved Scorch",
+    3
+   ],
+   [
+    "Heating Up",
+    1
+   ],
+   [
+    "Master of Elements",
+    1
+   ],
+   [
+    "Critical Mass",
+    3
+   ],
+   [
+    "Fire Power",
+    3
+   ]
+  ],
+  "Frost": [
+   [
+    "Frost Warding",
+    2
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Ice Shards",
+    5
+   ],
+   [
+    "Improved Frost Nova",
+    1
+   ],
+   [
+    "Frost Channeling",
+    3
+   ],
+   [
+    "Improved Blizzard",
+    1
+   ],
+   [
+    "Ice Lance",
+    1
+   ],
+   [
+    "Ice Block",
+    1
+   ],
+   [
+    "Shatter",
+    3
+   ],
+   [
+    "Fingers of Frost",
+    2
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-11-20) for frostfire-raid from frostfire-ffb-raid in the raid setting: 781.9 -> 781.9 DPS on a third seed.",
+ "search": {
+  "start": "frostfire-ffb-raid",
+  "setting": "raid",
+  "kept": [
+   "Fingers of Frost",
+   "Heating Up"
+  ],
+  "moves": [],
+  "dps_start": 781.9367223018692,
+  "dps_end": 781.9367223018692,
+  "gain": 0.0,
+  "tank": false,
+  "date": "2026-11-20",
+  "sim": {
+   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
+   "racials": "off",
+   "pet_normalize": true,
+   "patch_hash": "125d59c4f975f5df",
+   "simulator": "wowsims/forever",
+   "client": "1.60.1.70938"
+  }
+ }
+}

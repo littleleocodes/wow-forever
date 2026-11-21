@@ -876,18 +876,19 @@
       "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `raid-dps`: score +685.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Discipline": [
-          ["Power in Light", 5],
           ["Twin Disciplines", 5],
-          ["Wand Specialization", 2],
           ["Mental Strength", 5],
-          ["Meditation", 3]
+          ["Meditation", 3],
+          ["Martyrdom", 2],
+          ["Silent Resolve", 2]
         ],
-        "Holy": [],
+        "Holy": [
+          ["Twilight Focus", 3]
+        ],
         "Shadow": [
           ["Shadow Focus", 5],
           ["Improved Mind Blast", 5],
           ["Improved Shadow Word: Pain", 2],
-          ["Shadow Reach", 1],
           ["Improved Mind Flay", 2],
           ["Mind Flay", 1],
           ["Dark Inspiration", 3],
@@ -895,7 +896,8 @@
           ["Vampiric Embrace", 1],
           ["Devouring Contagion", 2],
           ["Darkness", 5],
-          ["Shadowform", 1]
+          ["Shadowform", 1],
+          ["Spirit Tap", 1]
         ]
       },
       "core": [
@@ -909,7 +911,7 @@
         {"talent": "Improved Shadow Word: Pain", "why": "Removing it costs 21.8 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Allocation taken from cand-shadow-dps-r3 on 2026-10-29: the optimizer's earlier round beat its last export in the community simulator (695 vs 656 DPS; the calibration moved the model past the better build).", "Report: priest/research/talents/forever/optimizer/shadow-dps-raid-dps.md"],
+      "notes": ["Allocation taken from cand-shadow-dps-r3 on 2026-10-29: the optimizer's earlier round beat its last export in the community simulator (695 vs 656 DPS; the calibration moved the model past the better build).", "Report: priest/research/talents/forever/optimizer/shadow-dps-raid-dps.md", "2026-11-20: filler points moved (2 points from Power in Light to Martyrdom; 3 points from Power in Light to Twilight Focus; 2 points from Wand Specialization to Silent Resolve; 1 point from Shadow Reach to Spirit Tap): the same DPS bit for bit in a full raid and on the training dummy. The new talents follow the utility order (interrupt protection, threat, mana, range, survival; dodge, parry and block count for nothing in a damage dealer's raid), which the simulator cannot measure (deep-runs/credited_fillers_1120.py; the user's rule of 2026-11-08 that a page pick holds no talent that does nothing)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/priest"]
     },
@@ -988,7 +990,7 @@
           ["Blessed Recovery", 2],
           ["Inspiration", 1],
           ["Searing Light", 2],
-          ["Spell Warding", 1]
+          ["Twilight Focus", 1]
         ],
         "Shadow": [
           ["Shadow Focus", 5],
@@ -1010,7 +1012,7 @@
         {"talent": "Searing Light", "why": "13 DPS lost without it (2% of the build in a full raid; removal, 12,000 fights)."}
       ],
       "flex": [],
-      "notes": ["+2.9% over the best hand draft of the spec, smite-discipline-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (smite-dps, full raid): 17/17/17 (Smite (a Discipline/Holy hybrid)) at 611.1 DPS; smite-open-raid 605.0, smite-discipline-raid 593.7 in the same fights; 2,354 builds simulated, 1 independent runs reached the top.", "The smite-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): shadow-dps -18.3%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Twilight Focus, Holy Nova, Blessed Recovery, Inspiration, Mind Flay, Improved Mind Flay.", "Simulator numbers are the community's model of the beta (wowsims/forever bac92db (client 70707) with this project's patches), not in-game measurements.", "2026-11-03 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Mind Flay -> Spirit Tap (mana); Improved Mind Flay -> Spirit Tap (mana); Twilight Focus -> Spell Warding (survival). Net -0.00% on a third seed."],
+      "notes": ["+2.9% over the best hand draft of the spec, smite-discipline-raid, over the replacement bar: this build is the spec's raid pick, the hand draft stays as the alternative.", "Open search result (smite-dps, full raid): 17/17/17 (Smite (a Discipline/Holy hybrid)) at 611.1 DPS; smite-open-raid 605.0, smite-discipline-raid 593.7 in the same fights; 2,354 builds simulated, 1 independent runs reached the top.", "The smite-dps raid rotation was re-tuned on this build (a pass in its rotation-search record); the numbers use it.", "Sibling rotations tried on it (10,000 fights): shadow-dps -18.3%; none adopted.", "Talents the simulator measures at 0 DPS in this build (tier fillers; the filler audit may move them): Twilight Focus, Holy Nova, Blessed Recovery, Inspiration, Mind Flay, Improved Mind Flay.", "Simulator numbers are the community's model of the beta (wowsims/forever bac92db (client 70707) with this project's patches), not in-game measurements.", "2026-11-03 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Mind Flay -> Spirit Tap (mana); Improved Mind Flay -> Spirit Tap (mana); Twilight Focus -> Spell Warding (survival). Net -0.00% on a third seed.", "2026-11-20: 1 point back in Twilight Focus (pushback protection): the filler audit of smite-dps-fillers-smite-open-raid.json had taken it for free because its tags missed Forever's wording (\"to not lose casting time\"; utility_tags.py fixed the same day). The same damage within 0.1% (worst +0.00% over the entry's setting and a full raid, seeds 1 and 2)."],
       "open_questions": ["An open-search Smite build: check it against the community's Smite builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever", "https://talentsforever.com/priest/60/50203003103-10505121002-500520012002-7"],
       "replaces": "smite-discipline-raid"
@@ -1063,9 +1065,9 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Discipline",
-      "generated": "2026-11-17",
+      "generated": "2026-11-20",
       "derived": "leveling",
-      "summary": "The Discipline leveling build the open leveling search found on 2026-11-17: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the discipline-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). ",
+      "summary": "The Discipline leveling build the open leveling search found on 2026-11-20: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the discipline-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). ",
       "allocation": {
         "Discipline": [
           ["Power in Light", 5],
@@ -1121,17 +1123,17 @@
         {"levels": "59-60", "tree": "Discipline", "talent": "Improved Mana Burn", "points": 2}
       ],
       "core": [
-        {"talent": "Meditation", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Spirit Tap", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Devouring Contagion", "why": "+1.0 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Shadow Focus", "why": "+0.7 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Mental Agility", "why": "+0.6 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Meditation", "why": "+2.3 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Spirit Tap", "why": "+2.2 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Devouring Contagion", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Shadow Focus", "why": "+0.8 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Mental Agility", "why": "+0.7 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Wand Specialization", "why": "+0.5 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Twin Disciplines", "why": "+0.5 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Improved Shadow Word: Pain", "why": "+0.4 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 41.25; discipline-leveling 45.88. The search simulated 23,417 builds.", "The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 40.84; discipline-leveling 46.09. The search simulated 23,417 builds.", "The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Discipline leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/priest", "https://talentsforever.com/priest/60/525020231133201--42522000020301-12"]
     },
@@ -1142,35 +1144,36 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Hybrid Discipline/Holy",
-      "generated": "2026-11-17",
+      "generated": "2026-11-20",
       "derived": "leveling",
-      "summary": "The Smite (a Discipline/Holy hybrid) leveling build the open leveling search found on 2026-11-17: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the holy-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). +12.7% faster per kill than holy-leveling, the fastest of our leveling builds in that race.",
+      "summary": "The Smite (a Discipline/Holy hybrid) leveling build the open leveling search found on 2026-11-20: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the holy-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). +0.9% faster per kill than smite-open-leveling, the fastest of our leveling builds in that race.",
       "allocation": {
         "Discipline": [
           ["Power in Light", 5],
           ["Wand Specialization", 2],
-          ["Twin Disciplines", 3],
+          ["Twin Disciplines", 2],
           ["Holy Precision", 1],
           ["Mental Agility", 3],
           ["Inner Focus", 1],
           ["Improved Power Word: Shield", 3],
           ["Meditation", 3],
+          ["Improved Inner Fire", 1],
           ["Soul Warding", 1]
         ],
         "Holy": [
-          ["Twilight Focus", 3],
           ["Improved Renew", 1],
           ["Holy Specialization", 5],
           ["Divine Fury", 5],
           ["Holy Nova", 1],
+          ["Inspiration", 3],
           ["Improved Healing", 3],
           ["Searing Light", 2],
-          ["Spiritual Guidance", 2]
+          ["Spiritual Guidance", 1]
         ],
         "Shadow": [
           ["Spirit Tap", 5],
           ["Improved Mind Blast", 1],
-          ["Improved Shadow Word: Pain", 1]
+          ["Improved Shadow Word: Pain", 2]
         ]
       },
       "order": [
@@ -1180,38 +1183,41 @@
         {"levels": "19", "tree": "Discipline", "talent": "Holy Precision", "points": 1},
         {"levels": "20-21", "tree": "Discipline", "talent": "Mental Agility", "points": 2},
         {"levels": "22-24", "tree": "Discipline", "talent": "Meditation", "points": 3},
-        {"levels": "25", "tree": "Discipline", "talent": "Mental Agility", "points": 1},
-        {"levels": "26", "tree": "Discipline", "talent": "Inner Focus", "points": 1},
-        {"levels": "27-29", "tree": "Discipline", "talent": "Improved Power Word: Shield", "points": 3},
-        {"levels": "30", "tree": "Discipline", "talent": "Twin Disciplines", "points": 1},
-        {"levels": "31", "tree": "Discipline", "talent": "Soul Warding", "points": 1},
-        {"levels": "32-36", "tree": "Shadow", "talent": "Spirit Tap", "points": 5},
-        {"levels": "37-39", "tree": "Holy", "talent": "Twilight Focus", "points": 3},
-        {"levels": "40", "tree": "Shadow", "talent": "Improved Mind Blast", "points": 1},
-        {"levels": "41", "tree": "Holy", "talent": "Improved Renew", "points": 1},
-        {"levels": "42-46", "tree": "Holy", "talent": "Holy Specialization", "points": 5},
-        {"levels": "47", "tree": "Holy", "talent": "Divine Fury", "points": 1},
-        {"levels": "48", "tree": "Holy", "talent": "Holy Nova", "points": 1},
-        {"levels": "49-52", "tree": "Holy", "talent": "Divine Fury", "points": 4},
+        {"levels": "25-27", "tree": "Shadow", "talent": "Spirit Tap", "points": 3},
+        {"levels": "28", "tree": "Discipline", "talent": "Mental Agility", "points": 1},
+        {"levels": "29", "tree": "Shadow", "talent": "Spirit Tap", "points": 1},
+        {"levels": "30", "tree": "Discipline", "talent": "Inner Focus", "points": 1},
+        {"levels": "31", "tree": "Shadow", "talent": "Spirit Tap", "points": 1},
+        {"levels": "32", "tree": "Shadow", "talent": "Improved Mind Blast", "points": 1},
+        {"levels": "33", "tree": "Discipline", "talent": "Improved Power Word: Shield", "points": 1},
+        {"levels": "34", "tree": "Holy", "talent": "Improved Renew", "points": 1},
+        {"levels": "35-39", "tree": "Holy", "talent": "Holy Specialization", "points": 5},
+        {"levels": "40-43", "tree": "Holy", "talent": "Divine Fury", "points": 4},
+        {"levels": "44", "tree": "Holy", "talent": "Holy Nova", "points": 1},
+        {"levels": "45-46", "tree": "Discipline", "talent": "Improved Power Word: Shield", "points": 2},
+        {"levels": "47", "tree": "Discipline", "talent": "Improved Inner Fire", "points": 1},
+        {"levels": "48", "tree": "Discipline", "talent": "Soul Warding", "points": 1},
+        {"levels": "49", "tree": "Holy", "talent": "Divine Fury", "points": 1},
+        {"levels": "50-52", "tree": "Holy", "talent": "Inspiration", "points": 3},
         {"levels": "53-55", "tree": "Holy", "talent": "Improved Healing", "points": 3},
         {"levels": "56-57", "tree": "Holy", "talent": "Searing Light", "points": 2},
-        {"levels": "58", "tree": "Shadow", "talent": "Improved Shadow Word: Pain", "points": 1},
-        {"levels": "59-60", "tree": "Holy", "talent": "Spiritual Guidance", "points": 2}
+        {"levels": "58", "tree": "Holy", "talent": "Spiritual Guidance", "points": 1},
+        {"levels": "59-60", "tree": "Shadow", "talent": "Improved Shadow Word: Pain", "points": 2}
       ],
       "core": [
-        {"talent": "Meditation", "why": "+2.0 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Mental Agility", "why": "+1.7 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Divine Fury", "why": "+1.6 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Spirit Tap", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Meditation", "why": "+2.5 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Spirit Tap", "why": "+1.8 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Mental Agility", "why": "+1.8 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Divine Fury", "why": "+1.5 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Power in Light", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Searing Light", "why": "+0.8 s per kill at level 60 without it (removal, 3,000 fights)."},
         {"talent": "Holy Precision", "why": "+0.7 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Soul Warding", "why": "+0.5 s per kill at level 60 without it (removal, 3,000 fights)."}
+        {"talent": "Improved Shadow Word: Pain", "why": "+0.6 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Shadow Word: Pain to Shadow Focus at 59 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Shadow Focus to Spiritual Guidance at 59 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Inner Fire to Twin Disciplines at 30 (no loss: +0.1% seed 3, +0.1% seed 4, level-weighted time per kill).", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 49.96; holy-leveling 56.32. The search simulated 40,040 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 49.52; smite-open-leveling 49.96, holy-leveling 56.79. The search simulated 40,040 builds.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Smite leveling build: check it while leveling at launch."],
-      "sources": ["https://talentsforever.com/priest", "https://talentsforever.com/priest/60/52201003133101-315051000320001-00512-12"]
+      "sources": ["https://talentsforever.com/priest", "https://talentsforever.com/priest/60/52201003133101-015051030320001-00512-12"]
     },
     {
       "id": "shadow-open-leveling",
@@ -1220,9 +1226,9 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Shadow",
-      "generated": "2026-11-17",
+      "generated": "2026-11-20",
       "derived": "leveling",
-      "summary": "The Shadow leveling build the open leveling search found on 2026-11-17: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the shadow-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). ",
+      "summary": "The Shadow leveling build the open leveling search found on 2026-11-20: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the shadow-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). ",
       "allocation": {
         "Discipline": [
           ["Power in Light", 2],
@@ -1273,19 +1279,19 @@
         {"levels": "58-60", "tree": "Discipline", "talent": "Meditation", "points": 3}
       ],
       "core": [
-        {"talent": "Shadowform", "why": "+12.6 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Mind Flay", "why": "+6.7 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Spirit Tap", "why": "+4.1 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Meditation", "why": "+1.4 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Darkness", "why": "+1.4 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Improved Mind Flay", "why": "+1.3 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Dark Inspiration", "why": "+1.2 s per kill at level 60 without it (removal, 3,000 fights)."},
-        {"talent": "Improved Mind Blast", "why": "+0.9 s per kill at level 60 without it (removal, 3,000 fights)."}
+        {"talent": "Shadowform", "why": "+10.9 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Mind Flay", "why": "+6.0 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Spirit Tap", "why": "+4.0 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Meditation", "why": "+1.6 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Darkness", "why": "+1.1 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Improved Mind Blast", "why": "+0.8 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Improved Mind Flay", "why": "+0.7 s per kill at level 60 without it (removal, 3,000 fights)."},
+        {"talent": "Early Demise", "why": "+0.6 s per kill at level 60 without it (removal, 3,000 fights)."}
       ],
       "flex": [],
-      "notes": ["2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Twilight Focus to Early Demise at 52 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill).", "+6.8% faster than the hand draft leveling-shadow, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 23.93; opt-shadow-dps-solo-60 24.66, leveling-shadow 25.55, opt-shadow-dps-leveling-aoe 28.88, opt-shadow-dps-leveling-st 31.60. The search simulated 45,475 builds.", "The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
+      "notes": ["2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Twilight Focus to Early Demise at 52 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill).", "+5.0% faster than the hand draft leveling-shadow, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.", "Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 24.61; opt-shadow-dps-solo-60 25.32, leveling-shadow 25.83, opt-shadow-dps-leveling-aoe 29.10, opt-shadow-dps-leveling-st 31.85. The search simulated 45,475 builds.", "The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.", "Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements."],
       "open_questions": ["An open-search Shadow leveling build: check it while leveling at launch."],
-      "sources": ["https://talentsforever.com/priest", "https://talentsforever.com/priest/60/20500300003-3-40550201251300151-12"],
+      "sources": ["https://talentsforever.com/priest", "https://talentsforever.com/priest/60/20500300003-2-40550201251300251-12"],
       "replaces": "leveling-shadow"
     },
     {
@@ -1295,7 +1301,7 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Discipline",
-      "generated": "2026-11-17",
+      "generated": "2026-11-20",
       "derived": "leveling",
       "raid_path": "discipline-ml-heal",
       "summary": "Level with the talents of the Discipline raid build (discipline-ml-heal) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (stats model's order: 46 s per kill over levels 20-60, the discipline-leveling rotation).",
@@ -1353,7 +1359,7 @@
       ],
       "core": [],
       "flex": [],
-      "notes": ["2026-11-17 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 46 s; own tree first 46 s; own tree last 46 s. First Discipline point at level 10.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
+      "notes": ["2026-11-20 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 46 s; own tree first 46 s; own tree last 46 s. First Discipline point at level 10.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
       "open_questions": ["Check the Discipline leveling pace at launch; the raid build's talents may cost speed early."],
       "sources": []
     },
@@ -1364,10 +1370,10 @@
       "content": "leveling",
       "tier": "draft",
       "spec": "Holy",
-      "generated": "2026-11-17",
+      "generated": "2026-11-20",
       "derived": "leveling",
       "raid_path": "holy-raid-healer",
-      "summary": "Level with the talents of the Holy raid build (holy-raid-healer) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (own tree last: 56 s per kill over levels 20-60, the holy-leveling rotation).",
+      "summary": "Level with the talents of the Holy raid build (holy-raid-healer) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (own tree last: 57 s per kill over levels 20-60, the holy-leveling rotation).",
       "allocation": {
         "Discipline": [
           ["Twin Disciplines", 5],
@@ -1427,7 +1433,7 @@
         {"talent": "Mental Agility", "why": "Healer lab (2026-09-26): removing it costs +1% healing capacity."}
       ],
       "flex": [],
-      "notes": ["2026-11-17 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): own tree last 56 s; stats model's order 57 s; own tree first 58 s. First Holy point at level 32.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
+      "notes": ["2026-11-20 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): own tree last 57 s; stats model's order 57 s; own tree first 58 s. First Holy point at level 32.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
       "open_questions": ["Check the Holy leveling pace at launch; the raid build's talents may cost speed early."],
       "sources": ["https://warcraftforever.games/talents/priest"]
     }

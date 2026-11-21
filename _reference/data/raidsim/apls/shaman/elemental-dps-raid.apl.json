@@ -144,16 +144,6 @@
   },
   {
    "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 1326047
-     }
-    }
-   },
-   "notes": "apl_opt 2026-11-02: changed or added by the rotation search (see elemental-dps-rotation-search.json)"
-  },
-  {
-   "action": {
     "condition": {
      "cmp": {
       "op": "OpLt",
@@ -174,15 +164,6 @@
     }
    },
    "notes": "apl_opt 2026-10-25: changed or added by the rotation search (see elemental-dps-rotation-search.json)"
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 1238300
-     }
-    }
-   }
   },
   {
    "action": {

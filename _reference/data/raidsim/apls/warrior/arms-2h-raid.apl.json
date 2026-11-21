@@ -215,28 +215,6 @@
   {
    "action": {
     "condition": {
-     "cmp": {
-      "op": "OpLe",
-      "lhs": {
-       "remainingTime": {}
-      },
-      "rhs": {
-       "const": {
-        "val": "60s"
-       }
-      }
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 24427
-     }
-    }
-   }
-  },
-  {
-   "action": {
-    "condition": {
      "or": {
       "vals": [
        {
@@ -271,47 +249,6 @@
     "castSpell": {
      "spellId": {
       "itemId": 21180
-     }
-    }
-   }
-  },
-  {
-   "action": {
-    "condition": {
-     "or": {
-      "vals": [
-       {
-        "cmp": {
-         "op": "OpLe",
-         "lhs": {
-          "remainingTime": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "30s"
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "remainingTime": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "130s"
-          }
-         }
-        }
-       }
-      ]
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 29602
      }
     }
    }
@@ -719,5 +656,6 @@
     }
    }
   }
- ]
+ ],
+ "prepullActions": []
 }

@@ -1,0 +1,101 @@
+{
+ "fights": 10000,
+ "builds": {
+  "smite-discipline-raid": {
+   "rank 2 (now)": {
+    "seed 1": {
+     "dps": 586.22,
+     "oom": 0.4
+    },
+    "seed 2": {
+     "dps": 586.22,
+     "oom": 0.4
+    }
+   },
+   "rank 4": {
+    "seed 1": {
+     "dps": 573.99,
+     "oom": 4.0
+    },
+    "seed 2": {
+     "dps": 574.19,
+     "oom": 3.9
+    }
+   },
+   "rank 5": {
+    "seed 1": {
+     "dps": 559.49,
+     "oom": 20.7
+    },
+    "seed 2": {
+     "dps": 559.69,
+     "oom": 20.6
+    }
+   },
+   "no line": {
+    "seed 1": {
+     "dps": 517.58,
+     "oom": 41.3
+    },
+    "seed 2": {
+     "dps": 517.42,
+     "oom": 41.4
+    }
+   }
+  },
+  "smite-open-raid": {
+   "rank 2 (now)": {
+    "seed 1": {
+     "dps": 605.41,
+     "oom": 1.1
+    },
+    "seed 2": {
+     "dps": 605.37,
+     "oom": 1.1
+    }
+   },
+   "rank 4": {
+    "seed 1": {
+     "dps": 587.9,
+     "oom": 4.9
+    },
+    "seed 2": {
+     "dps": 588.15,
+     "oom": 4.9
+    }
+   },
+   "rank 5": {
+    "seed 1": {
+     "dps": 569.74,
+     "oom": 28.4
+    },
+    "seed 2": {
+     "dps": 570.26,
+     "oom": 28.3
+    }
+   },
+   "no line": {
+    "seed 1": {
+     "dps": 518.22,
+     "oom": 50.6
+    },
+    "seed 2": {
+     "dps": 518.07,
+     "oom": 50.7
+    }
+   }
+  }
+ },
+ "mean": {
+  "rank 2 (now)": 595.81,
+  "rank 4": 581.06,
+  "rank 5": 564.8,
+  "no line": 517.82
+ },
+ "best_allowed": "rank 4",
+ "gap": 0.0248,
+ "applied": [
+  "smite-dps-raid.apl.json",
+  "smite-dps.apl.json"
+ ]
+}

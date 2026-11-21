@@ -1,0 +1,715 @@
+{
+ "mage/frostfire-fingers-of-frost-raid": {
+  "entry": "frostfire-raid",
+  "date": "2026-11-20",
+  "free": [
+   "Arctic Reach",
+   "Flame Throwing",
+   "Frost Warding",
+   "Ice Lance",
+   "Improved Frostbolt"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "kind": "utility",
+    "from": "Flame Throwing",
+    "to": "Burning Soul",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "interrupt"
+   }
+  ],
+  "final_seed3_same": true,
+  "start": {
+   "Arcane": [],
+   "Fire": [
+    [
+     "Accelerant",
+     5
+    ],
+    [
+     "Incineration",
+     3
+    ],
+    [
+     "Flame Throwing",
+     1
+    ],
+    [
+     "Ignite",
+     5
+    ],
+    [
+     "Improved Fire Blast",
+     1
+    ],
+    [
+     "Pyroblast",
+     1
+    ],
+    [
+     "Heating Up",
+     1
+    ],
+    [
+     "Improved Scorch",
+     3
+    ],
+    [
+     "Master of Elements",
+     3
+    ],
+    [
+     "Critical Mass",
+     3
+    ],
+    [
+     "Fire Power",
+     3
+    ]
+   ],
+   "Frost": [
+    [
+     "Frost Warding",
+     2
+    ],
+    [
+     "Improved Frostbolt",
+     1
+    ],
+    [
+     "Precision",
+     3
+    ],
+    [
+     "Ice Shards",
+     5
+    ],
+    [
+     "Frost Channeling",
+     3
+    ],
+    [
+     "Ice Lance",
+     1
+    ],
+    [
+     "Arctic Reach",
+     1
+    ],
+    [
+     "Ice Block",
+     1
+    ],
+    [
+     "Shatter",
+     3
+    ],
+    [
+     "Fingers of Frost",
+     2
+    ]
+   ]
+  },
+  "allocation": {
+   "Arcane": [],
+   "Fire": [
+    [
+     "Accelerant",
+     5
+    ],
+    [
+     "Incineration",
+     3
+    ],
+    [
+     "Ignite",
+     5
+    ],
+    [
+     "Improved Fire Blast",
+     1
+    ],
+    [
+     "Pyroblast",
+     1
+    ],
+    [
+     "Heating Up",
+     1
+    ],
+    [
+     "Improved Scorch",
+     3
+    ],
+    [
+     "Master of Elements",
+     3
+    ],
+    [
+     "Critical Mass",
+     3
+    ],
+    [
+     "Fire Power",
+     3
+    ],
+    [
+     "Burning Soul",
+     1
+    ]
+   ],
+   "Frost": [
+    [
+     "Frost Warding",
+     2
+    ],
+    [
+     "Improved Frostbolt",
+     1
+    ],
+    [
+     "Precision",
+     3
+    ],
+    [
+     "Ice Shards",
+     5
+    ],
+    [
+     "Frost Channeling",
+     3
+    ],
+    [
+     "Ice Lance",
+     1
+    ],
+    [
+     "Arctic Reach",
+     1
+    ],
+    [
+     "Ice Block",
+     1
+    ],
+    [
+     "Shatter",
+     3
+    ],
+    [
+     "Fingers of Frost",
+     2
+    ]
+   ]
+  },
+  "kept_for_rotation": [
+   "Fingers of Frost",
+   "Heating Up"
+  ],
+  "banned": [],
+  "dummy": [
+   531.3019024373668,
+   531.3019024373668
+  ],
+  "ok": true,
+  "check": {
+   "raid seed 1": [
+    766.9662873161798,
+    766.9662873161798
+   ],
+   "raid seed 2": [
+    767.0848829880484,
+    767.0848829880484
+   ]
+  }
+ },
+ "priest/opt-shadow-dps-raid-dps": {
+  "entry": "shadow-dps",
+  "date": "2026-11-20",
+  "free": [
+   "Power in Light",
+   "Shadow Reach",
+   "Vampiric Embrace",
+   "Wand Specialization"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "kind": "utility",
+    "from": "Power in Light",
+    "to": "Martyrdom",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "interrupt"
+   },
+   {
+    "round": 2,
+    "kind": "utility",
+    "from": "Power in Light",
+    "to": "Martyrdom",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "interrupt"
+   },
+   {
+    "round": 3,
+    "kind": "utility",
+    "from": "Power in Light",
+    "to": "Twilight Focus",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "interrupt"
+   },
+   {
+    "round": 4,
+    "kind": "utility",
+    "from": "Power in Light",
+    "to": "Twilight Focus",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "interrupt"
+   },
+   {
+    "round": 5,
+    "kind": "utility",
+    "from": "Power in Light",
+    "to": "Twilight Focus",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "interrupt"
+   },
+   {
+    "round": 6,
+    "kind": "utility",
+    "from": "Wand Specialization",
+    "to": "Silent Resolve",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "threat"
+   },
+   {
+    "round": 7,
+    "kind": "utility",
+    "from": "Wand Specialization",
+    "to": "Silent Resolve",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "threat"
+   },
+   {
+    "round": 8,
+    "kind": "utility",
+    "from": "Shadow Reach",
+    "to": "Spirit Tap",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "mana"
+   }
+  ],
+  "final_seed3_same": true,
+  "start": {
+   "Discipline": [
+    [
+     "Power in Light",
+     5
+    ],
+    [
+     "Twin Disciplines",
+     5
+    ],
+    [
+     "Wand Specialization",
+     2
+    ],
+    [
+     "Mental Strength",
+     5
+    ],
+    [
+     "Meditation",
+     3
+    ]
+   ],
+   "Holy": [],
+   "Shadow": [
+    [
+     "Shadow Focus",
+     5
+    ],
+    [
+     "Improved Mind Blast",
+     5
+    ],
+    [
+     "Improved Shadow Word: Pain",
+     2
+    ],
+    [
+     "Shadow Reach",
+     1
+    ],
+    [
+     "Improved Mind Flay",
+     2
+    ],
+    [
+     "Mind Flay",
+     1
+    ],
+    [
+     "Dark Inspiration",
+     3
+    ],
+    [
+     "Shadow Weaving",
+     3
+    ],
+    [
+     "Vampiric Embrace",
+     1
+    ],
+    [
+     "Devouring Contagion",
+     2
+    ],
+    [
+     "Darkness",
+     5
+    ],
+    [
+     "Shadowform",
+     1
+    ]
+   ]
+  },
+  "allocation": {
+   "Discipline": [
+    [
+     "Twin Disciplines",
+     5
+    ],
+    [
+     "Mental Strength",
+     5
+    ],
+    [
+     "Meditation",
+     3
+    ],
+    [
+     "Martyrdom",
+     2
+    ],
+    [
+     "Silent Resolve",
+     2
+    ]
+   ],
+   "Holy": [
+    [
+     "Twilight Focus",
+     3
+    ]
+   ],
+   "Shadow": [
+    [
+     "Shadow Focus",
+     5
+    ],
+    [
+     "Improved Mind Blast",
+     5
+    ],
+    [
+     "Improved Shadow Word: Pain",
+     2
+    ],
+    [
+     "Improved Mind Flay",
+     2
+    ],
+    [
+     "Mind Flay",
+     1
+    ],
+    [
+     "Dark Inspiration",
+     3
+    ],
+    [
+     "Shadow Weaving",
+     3
+    ],
+    [
+     "Vampiric Embrace",
+     1
+    ],
+    [
+     "Devouring Contagion",
+     2
+    ],
+    [
+     "Darkness",
+     5
+    ],
+    [
+     "Shadowform",
+     1
+    ],
+    [
+     "Spirit Tap",
+     1
+    ]
+   ]
+  },
+  "kept_for_rotation": [
+   "Mind Flay"
+  ],
+  "banned": [],
+  "dummy": [
+   673.0320839186713,
+   673.0320839186713,
+   673.0320839186713,
+   673.0320839186713,
+   673.0320839186713,
+   673.0320839186713,
+   673.0320839186713,
+   673.0320839186713,
+   673.0320839186713
+  ],
+  "ok": true,
+  "check": {
+   "raid seed 1": [
+    769.6351215707423,
+    769.6351215707423
+   ],
+   "raid seed 2": [
+    769.7748153716728,
+    769.7748153716728
+   ]
+  }
+ },
+ "druid/opt-balance-dps-raid-dps": {
+  "entry": "balance-dps",
+  "date": "2026-11-20",
+  "free": [
+   "Nature's Focus"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "kind": "utility",
+    "from": "Nature's Focus",
+    "to": "Improved Entangling Roots",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "interrupt"
+   },
+   {
+    "round": 2,
+    "kind": "utility",
+    "from": "Nature's Focus",
+    "to": "Improved Entangling Roots",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "interrupt"
+   },
+   {
+    "round": 3,
+    "kind": "utility",
+    "from": "Nature's Focus",
+    "to": "Improved Entangling Roots",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "interrupt"
+   },
+   {
+    "round": 4,
+    "kind": "utility",
+    "from": "Nature's Focus",
+    "to": "Subtlety",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "threat"
+   },
+   {
+    "round": 5,
+    "kind": "utility",
+    "from": "Nature's Focus",
+    "to": "Subtlety",
+    "seed1": 0.0,
+    "seed2": 0.0,
+    "utility": "threat"
+   }
+  ],
+  "final_seed3_same": true,
+  "start": {
+   "Balance": [
+    [
+     "Genesis",
+     5
+    ],
+    [
+     "Improved Moonfire",
+     2
+    ],
+    [
+     "Moonglow",
+     3
+    ],
+    [
+     "Nature's Majesty",
+     2
+    ],
+    [
+     "Nature's Reach",
+     2
+    ],
+    [
+     "Nature's Splendor",
+     1
+    ],
+    [
+     "Improved Starfire",
+     5
+    ],
+    [
+     "Insect Swarm",
+     1
+    ],
+    [
+     "Vengeance",
+     5
+    ],
+    [
+     "Nature's Grace",
+     1
+    ],
+    [
+     "Moonfury",
+     5
+    ],
+    [
+     "Moonkin Form",
+     1
+    ]
+   ],
+   "Feral Combat": [],
+   "Restoration": [
+    [
+     "Heart of the Wild",
+     5
+    ],
+    [
+     "Nature's Focus",
+     5
+    ],
+    [
+     "Naturalist",
+     5
+    ],
+    [
+     "Reflection",
+     3
+    ]
+   ]
+  },
+  "allocation": {
+   "Balance": [
+    [
+     "Genesis",
+     5
+    ],
+    [
+     "Improved Moonfire",
+     2
+    ],
+    [
+     "Moonglow",
+     3
+    ],
+    [
+     "Nature's Majesty",
+     2
+    ],
+    [
+     "Nature's Reach",
+     2
+    ],
+    [
+     "Nature's Splendor",
+     1
+    ],
+    [
+     "Improved Starfire",
+     5
+    ],
+    [
+     "Insect Swarm",
+     1
+    ],
+    [
+     "Vengeance",
+     5
+    ],
+    [
+     "Nature's Grace",
+     1
+    ],
+    [
+     "Moonfury",
+     5
+    ],
+    [
+     "Moonkin Form",
+     1
+    ],
+    [
+     "Improved Entangling Roots",
+     3
+    ]
+   ],
+   "Feral Combat": [],
+   "Restoration": [
+    [
+     "Heart of the Wild",
+     5
+    ],
+    [
+     "Naturalist",
+     5
+    ],
+    [
+     "Reflection",
+     3
+    ],
+    [
+     "Subtlety",
+     2
+    ]
+   ]
+  },
+  "kept_for_rotation": [],
+  "banned": [],
+  "dummy": [
+   611.3779638026192,
+   611.3779638026192,
+   611.3779638026192,
+   611.3779638026192,
+   611.3779638026192,
+   611.3779638026192
+  ],
+  "ok": true,
+  "check": {
+   "raid seed 1": [
+    688.7367193792862,
+    688.7367193792862
+   ],
+   "raid seed 2": [
+    688.9464039352415,
+    688.9464039352415
+   ]
+  }
+ }
+}

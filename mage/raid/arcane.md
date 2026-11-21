@@ -2,81 +2,80 @@
 
 [Mage](../README.md) > [Raid (group)](README.md) > Arcane
 
-**[Arcane — Raid](../research/raid/builds/arcane-open-raid.md)** (31/17/3) — [open the talent tree](https://talentsforever.com/mage/60/023205203100211531-554000011001-003-12)
-
-> 🔬 Derived build: found by this project's open talent search (every legal build, no tree rule, in the community's raid simulator in a full raid, raced against the rotation's builds); it beat the hand-made build (Arcane — Arcane Blast), which stays below as the alternative. A model of the beta, to check at launch.
+**[Arcane — Fire filler](../research/raid/builds/arcane-fire-raid.md)** (32/16/3) — [open the talent tree](https://talentsforever.com/mage/60/050205203100311531-525000012001-003-12)
 
 ## How to play
 
-**Press the first one that is ready**, top to bottom:
+**Before the pull:** **Arcane Wrath**.
 
-1. **Arcane Missiles** (rank 7) when Missile Barrage is active
-2. **Arcane Wrath** until the last 10 seconds of the fight
-3. **Arcane Blast**: keep its buff stacked on you
-4. **Pyroblast** when Heating Up has 3 stacks
-5. **Fire Blast**
-6. **Arcane Blast** when you have at least 25% mana
-7. **Fireball** (rank 11)
+**Then press the first one that is ready**, top to bottom:
 
-**Fireball** is your filler: cast it whenever nothing above is ready.
+1. **Pyroblast** when Heating Up has 3 stacks
+2. **Fire Blast**
+3. **Arcane Missiles** (rank 7) when Missile Barrage is active
+4. **Arcane Blast**: stack its buff to 3 on you
+5. **Arcane Wrath**
+6. **Scorch**
+
+**Scorch** is your filler: cast it whenever nothing above is ready.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Arcane Power**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
 - **Presence of Mind**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
-- **Evocation**: when you run out of mana (needed in about 9 of 10 fights)
+- **Arcane Power**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
+- **Evocation**: when you run low on mana (about 1 time a fight)
 - Use your trinkets and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
 ## Why this rotation
 
-Arcane in a raid keeps its own **Arcane Blast** buff stacked (each cast gives you 12% of your Intellect as spell damage for 18 seconds, up to 4 stacks, at a doubling mana cost), fires **Arcane Wrath** every 6 seconds and **Fire Blast** every 7, spends every **Missile Barrage** proc on a free, fast **Arcane Missiles**, and casts **Pyroblast** once three crits have made it a 1.5-second cast. It is the hungriest mage list: even with a raid's mana buffs the simulator needs **Evocation** in 9 fights of 10. 756 DPS in a full raid.
+Arcane with a Fire filler: **Fire Blast** on every cooldown and **Pyroblast** whenever three **Heating Up** stacks make it a 1.5-second cast, between the Arcane spells: **Arcane Missiles** on every **Missile Barrage** proc, **Arcane Blast** kept at three stacks of its buff, and **Arcane Wrath**. 826 DPS in a full raid. This is the official simulator's own Arcane build and list (its Arcane Fire preset), which the page starts from since 2026-11-20; our own Arcane build (under Other builds) is 0.4% behind in the same fights.
 
 **Why it works**
 
-- **Arcane Missiles** on **Missile Barrage** first (about 15 casts, 29%): **Arcane Blast** procs it 40% of the time, **Arcane Wrath** 20%; the proc makes the next Missiles free, 2.5 seconds long and twice as dense. **Arcane Impact** adds 6% crit, **Arcane Mind** 10% Intellect and a doubled Arcane crit bonus, **Arcane Instability** 3% damage and crit. The list names rank 7, as the simulator's rotation does; a free cast costs the same at any rank.
-- **Arcane Wrath** whenever it is ready (17 casts, 28%): 3 seconds with **Accelerant**, a 6-second cooldown, 406-496 damage plus 5% of your maximum mana as spell damage, and a proc roll. Moving it to the top of the list was the search's biggest single gain (+8.9%). Not in the last 10 seconds.
-- **Arcane Blast** (37 casts, 22%): keep its buff stacked on you. Cast it when the buff is gone or about to expire and until it has 3 stacks (the full list's conditions), then only while you have more than 25% mana, because the cost doubles with every stack. 1.5 seconds a cast, 10% crit from **Incineration**, and each one rolls 40% for a **Missile Barrage**.
-- **Fire Blast** on cooldown (14 casts, 10%): instant, every 7 seconds with one point of **Improved Fire Blast**, 10% crit from **Incineration**, and every hit adds a **Heating Up** stack.
-- **Pyroblast** at 3 stacks of **Heating Up** (4 casts, 7%, plus **Ignite**'s 2%): crits from **Fire Blast** and **Fireball** cut its 6-second cast by 25% each, and **Fire Blast** adds a stack on every hit, so three stacks come about every 45 seconds and the cast takes 1.5 seconds. Never hard-cast it otherwise.
-- **Arcane Power** and **Presence of Mind** at the pull: 30% more damage for 15 seconds at 30% more mana, and one instant **Arcane Wrath**; both have 3-minute cooldowns.
-- Mana: **Evocation** when nearly dry (0.9 casts a fight in the simulator), a mana potion about every 2 minutes, your mana gem (from **Conjure Mana Ruby**) and a Demonic Rune; **Arcane Concentration** makes one cast in ten free, **Arcane Meditation** at 2 points keeps a third of your regeneration going. When nothing above is affordable, **Fireball** rank 11 fills, about once a fight.
+- **Pyroblast** first, at three **Heating Up** stacks (10-11 casts, 17.5% of the damage): every Fire Blast hit and every critical Fire Blast or Scorch adds a stack, each taking 25% off its cast. **Ignite** adds 40% of each Fire critical strike over 4 seconds (4%).
+- **Fire Blast** whenever it is ready (28 casts, 20%): a 6-second cooldown with **Improved Fire Blast**, an instant that feeds Heating Up. **Incineration** adds 10% critical chance to it, to **Arcane Blast** and to **Scorch**.
+- **Arcane Missiles** on **Missile Barrage** (12-13 casts, 24%): **Arcane Blast** procs it 40% of the time and **Arcane Wrath** 20%, and the proc makes the next Missiles free and twice as fast. Rank 7 is your top rank.
+- **Arcane Blast** to three stacks of its buff (34 casts, 19%): each cast gives you 12% of your Intellect as spell damage for 18 seconds and doubles the next one's mana cost. The list keeps three up and casts a fourth only while your mana is above a share that falls as the fight goes on.
+- **Arcane Wrath** whenever it is ready (8 casts, 13%), the first one made instant by **Presence of Mind**: it gains 5% of your maximum mana as spell damage. **Arcane Power** goes out with a Missile Barrage proc or Arcane Wrath.
+- **Scorch** is the filler when your mana is short (3 casts).
 
 **Caveats**
 
-- A 6-minute fight is a different list: the simulator's DPS falls from 756 at 3 minutes to 412 at 6, because the mana runs out. Longer fights want fewer **Arcane Blast** stacks and an earlier **Evocation**.
-- Moving: **Arcane Blast**, **Arcane Wrath** and **Arcane Missiles** all need you to stand. **Fire Blast** is your instant, and **Presence of Mind** makes one cast instant.
-- Threat: **Arcane Subtlety** cuts Arcane threat by 30%, but the simulator ignores threat, and **Arcane Power** at the pull is when you are most likely to pull the boss.
-- Several targets: **Arcane Explosion** hits everything within 10 yards; **Flamestrike** and **Blizzard** are the rest.
+- Mana: the list spends fast. Below 10% it uses your mana gem and channels **Evocation**; a fight longer than 3 minutes needs them.
+- Moving: **Fire Blast** is instant and **Presence of Mind** makes one cast instant; the rest needs you to stand.
+- Threat: **Arcane Subtlety** cuts Arcane threat by 30%; the Fire spells keep theirs.
+- Several targets: **Arcane Explosion** and **Flamestrike**. The simulator's fights are one boss.
 
 **When to change it**
 
-- In the last 10 seconds no **Arcane Wrath**, in the last 3 no **Arcane Blast**: **Fire Blast**, and a free **Arcane Missiles** if you have one.
-- Without a raid's mana buffs the simulator's list for playing alone spends two **Arcane Blast** stacks on a **Frostbolt** instead of a fourth cast and casts **Fire Blast** only on cooldown: cheaper and slower.
-- In a fight longer than 3 minutes, use **Arcane Power** and **Presence of Mind** again when they are back, and channel **Evocation** below 15% mana while more than 20 seconds remain.
+- When mana runs short before the end, stop at three **Arcane Blast** stacks and fill with **Scorch**, as the list does below its mana line.
+- In a fight longer than 3 minutes, use **Arcane Power** and **Presence of Mind** again when they are back.
 
 ## Talents
 
 | Tree | Points | Talents (ranks) |
 |---|---|---|
-| Arcane | 31 | Improved Channeling 2, Arcane Resilience 3, Arcane Subtlety 2, Arcane Concentration 5, Missile Barrage 2, Arcane Impact 3, Arcane Blast 1, Arcane Meditation 2, Arcane Wrath 1, Presence of Mind 1, Arcane Mind 5, Arcane Instability 3, Arcane Power 1 |
-| Fire | 17 | Incineration 5, Accelerant 5, Ignite 4, Pyroblast 1, Improved Fire Blast 1, Heating Up 1 |
+| Arcane | 32 | Improved Channeling 5, Arcane Subtlety 2, Arcane Concentration 5, Missile Barrage 2, Arcane Impact 3, Arcane Blast 1, Arcane Meditation 3, Arcane Wrath 1, Presence of Mind 1, Arcane Mind 5, Arcane Instability 3, Arcane Power 1 |
+| Fire | 16 | Incineration 5, Accelerant 2, Ignite 5, Pyroblast 1, Improved Fire Blast 2, Heating Up 1 |
 | Frost | 3 | Precision 3 |
 
 ## The numbers
 
+**How this pick was checked:** a short check on 2026-11-20 (every one-move and chain-move neighbour raced in a full raid, two rounds; the best kept move is +0.1%, under the 0.5% bar). A full search, talents and rotation in turns until stable, follows in the optimality pass.
+
 | Setting | DPS |
 |---|---|
-| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 790 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 826 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator, wowsims/forever 2e6e77d (client 70938); [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Full raid DPS | Best talents |
 |---|---|---|
-| Quests and dungeons | 714 | [32/16/3](https://talentsforever.com/mage/60/041205203100311531-553000011001-003-12) |
-| Pre-BiS | 778 | [32/16/3](https://talentsforever.com/mage/60/041205203100311531-553000011001-003-12) |
-| Raid BiS | 800 | [32/16/3](https://talentsforever.com/mage/60/041205203100311531-553000011001-003-12) (as good as this build in this gear) |
+| Quests and dungeons | 748 | this build |
+| Pre-BiS | 815 | this build |
+| Raid BiS | 836 | this build |
 
 *Each row is in that tier's own gear set; the DPS at the top of the page is this build in the standard set, so the two do not match.*
 
@@ -92,22 +91,26 @@ Arcane in a raid keeps its own **Arcane Blast** buff stacked (each cast gives yo
 | Wrist | [Sublime Wristguards](https://www.wowhead.com/forever/item=18497) · *Guard Mol'dar, Dire Maul*<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) | [Sublime Wristguards](https://www.wowhead.com/forever/item=18497) · *Guard Mol'dar, Dire Maul*<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) | [Sorcerer's Bindings](https://www.wowhead.com/forever/item=226929) · *sold by Mokvar*<br>+ [Enchant Bracer - Greater Intellect](https://www.wowhead.com/forever/spell=13825) |
 | Hands | [Hands of Power](https://www.wowhead.com/forever/item=13253) · *Quartermaster Zigris, Blackrock Spire* | [Gloves of Spell Mastery](https://www.wowhead.com/forever/item=14146) · *Tailoring* | [Sorcerer's Gauntlets](https://www.wowhead.com/forever/item=226930) · *sold by Mokvar* |
 | Waist | [Ban'thok Sash](https://www.wowhead.com/forever/item=11662) · *Ok'thor the Breaker, Blackrock Depths* | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* | [Belt of the Archmage](https://www.wowhead.com/forever/item=18405) · *Tailoring* |
-| Legs | [Magister's Leggings](https://www.wowhead.com/forever/item=16687) · *Baron Rivendare, Stratholme*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Skyshroud Leggings](https://www.wowhead.com/forever/item=13170) · *Highlord Omokk, Blackrock Spire*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Sorcerer's Leggings](https://www.wowhead.com/forever/item=226933) · *sold by Mokvar*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
+| Legs | [Skyshroud Leggings](https://www.wowhead.com/forever/item=13170) · *Highlord Omokk, Blackrock Spire*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Skyshroud Leggings](https://www.wowhead.com/forever/item=13170) · *Highlord Omokk, Blackrock Spire*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) | [Sorcerer's Leggings](https://www.wowhead.com/forever/item=226933) · *sold by Mokvar*<br>+ [Lesser Arcane Amalgamation](https://www.wowhead.com/forever/item=11648) |
 | Feet | [Kayser's Boots of Precision](https://www.wowhead.com/forever/item=22231) · *War Master Voone, Blackrock Spire*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Kayser's Boots of Precision](https://www.wowhead.com/forever/item=22231) · *War Master Voone, Blackrock Spire*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) | [Kayser's Boots of Precision](https://www.wowhead.com/forever/item=22231) · *War Master Voone, Blackrock Spire*<br>+ [Enchant Boots - Minor Speed](https://www.wowhead.com/forever/spell=13889) |
 | Finger | [Songstone of Ironforge](https://www.wowhead.com/forever/item=12543) · *quest: The Princess's Surprise* | [Channeler's Ring](https://www.wowhead.com/forever/item=272406) · *sold by Pix Xizzix* | [Channeler's Ring](https://www.wowhead.com/forever/item=272406) · *sold by Pix Xizzix* |
 | Finger | [Eye of Orgrimmar](https://www.wowhead.com/forever/item=12545) · *quest: The Princess Saved?* | [Elemental Focus Band](https://www.wowhead.com/forever/item=20682) · *Prince Skaldrenox, Silithus* | [Ring of Spell Power](https://www.wowhead.com/forever/item=19147) · *Lucifron, Molten Core* |
 | Trinket | [Eye of the Beast](https://www.wowhead.com/forever/item=13968) · *quest: For The Horde!* | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) · *sold by Pix Xizzix* | [Talisman of Ephemeral Power](https://www.wowhead.com/forever/item=18820) · *Magmadar, Molten Core* |
-| Trinket | [Royal Seal of Eldre'Thalas](https://www.wowhead.com/forever/item=18468) · *quest: The Arcanist's Cookbook* | [Eye of the Beast](https://www.wowhead.com/forever/item=13968) · *quest: For The Horde!* | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) · *sold by Pix Xizzix* |
+| Trinket | [Smolderweb's Eye](https://www.wowhead.com/forever/item=13213) · *Mother Smolderweb, Blackrock Spire* | [Eye of the Beast](https://www.wowhead.com/forever/item=13968) · *quest: For The Horde!* | [Weakness Analyzer](https://www.wowhead.com/forever/item=272438) · *sold by Pix Xizzix* |
 | Main hand | [Witchblade](https://www.wowhead.com/forever/item=13964) · *Darkmaster Gandling, Scholomance*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Sageblade](https://www.wowhead.com/forever/item=22383) · *Blacksmithing*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) | [Sageblade](https://www.wowhead.com/forever/item=22383) · *Blacksmithing*<br>+ [Enchant Weapon - Spell Power](https://www.wowhead.com/forever/spell=22747) |
-| Off hand | [Cloud Stone](https://www.wowhead.com/forever/item=17737) · *Landslide, Maraudon* | [Obsidian Bauble](https://www.wowhead.com/forever/item=18316) | [Obsidian Bauble](https://www.wowhead.com/forever/item=18316) |
+| Off hand | [Spirit of Aquementas](https://www.wowhead.com/forever/item=11904) · *quest: It's Dangerous to Go Alone* | [Obsidian Bauble](https://www.wowhead.com/forever/item=18316) | [Obsidian Bauble](https://www.wowhead.com/forever/item=18316) |
 | Ranged/relic | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* | [Bonecreeper Stylus](https://www.wowhead.com/forever/item=13938) · *Darkmaster Gandling, Scholomance* |
 
-**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Quests and dungeons: [full raid](https://wowsims.com/forever/mage/dps/#eJzElU9MG0cUxv1mF+/zM6XuFLXbbQ9bWgq4dTW7ayPKxYZL/x2w2kulHsoaG+wKbMv2gd6AoqpFLSBUVcXqoUJIRFEQUk6ARKREimQOiZJDgpRcUP6IHBMOJLkk0W5sghIU5QDOd9iZnU+7+9tv5unRBwgBUEGHduiHNORhDOB3gP8BTgDwRtdljtsF2m+NiAHUcqTg0hyot/0k468rQBKeSZOEG6Ok4OUZUG82kYJnZ0G93kQSnh8iCad/JAVXJtyHFNxaBnVGIQkf2yTheIIknB0hGRdngbz454haeZtk3JxyXr073PJZoJJpvzgNYi8R/2sBpoBNZuaA7SXKwHZ6TgIu/QenpmA6sw2TmV50mSEG6+wjETZMETGFZQhhGUbEMkKRiCWEEIYhhBESwqowuMT8N9gMcVlj3R7erHHynQYvyXhhTdUaSMJbfXwMuG3nh3/K5Uu6KczOkCFCZrhbH0jb2aFUUs8VdDuZTCX1xC96KZ3SC7mSXcrksnoxZRcG0np7MZXS7cKAnU2FkvliqOaHnvqf/1zMZTu09+mt4Jvo5ewbj6ZQA0mGKGoOycSDOC/XBSFCn2od5L/mRZJxY01VgbSgihL3rbuZbKypmq/MnOnfV77VqiP/4xA4yzhquI9fiWW1Lizf09f8S+rUwi9joneCzShz37l9r4EkApPeaPGTbxeeR/+3LugWdfA2Fw1qaPdqaNZBtIdzoFVHPvwimeg6ajLFgcCtPv5PXQ67QW28lQLBpmrNeUkmZhVrVZioVqEZad3fId8zxkMSMa3jSWSpj4/UIxB0/3PnflyV7rAK3GXmuORxFY4tOKeVGELLI+Zzljxjg7H3yvOONqMfDrq6GjW3mSrr0eAq87wWlWK12bHqk+Vj+84X7vW7xVhPdSHW7/TkeXBvPNvRoISr7/YeaN0CuiAGX0EcfoA05GEURtmTAQA6dNP7); Pre-BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzElU9MG0cUxv1mF/v5mVJ3itrttoctLQXcuprdtRHlYsOl/w5Y7aW3ssamdgW2ZftAb7Tl0KIWI4RQcXtoUSWiKCRSDhEgcQgnJ1IiXxKk5IKSIKJcknAgiSJF0W5sghIU5QDOd5iZnU+j/e238/ToPQQ/KKBBJwxCCnIwDvAbwL8AxwB4s+My2+0BdbIZ0Y9qgTz4cAmULR/J+OspIBlvzdrj31U/ubGSUa63kAfPToNytYUkXM+QjFslIDfuDNunPLixBErJQzLOVf0k4/n/7ONnqn6ScHqUPHj7JCiVN0nGP0pAEu6MtH3ir6Q7L06B2I3H/lyASWAT6Rlgu/EysO2+44CL/8CJSZhKb8JEuh8dbojCKvtAhHRDhA1h6kKYuh429WA4bAohhK4LoQeFMCsMqsx3jZWIyyrrdfFWlZP3NLhJxgsritpEEt4Y4OPALSs38n02V9QMYXQHdRE0Qr3aUMrK/JBMaNm8ZiUSyYQW/0krppJaPlu0iulsRiskrfxQSussJJOalR+yMslgIlcI1v3gE//THwvZTJf6Lr0ReB3dnH3lUj3URJIuCqpN8sv9GC83BCFMH6td5LviRpJxbUVRgNSAghL3rjqZrK0oqrfM7OXspa/V2sx/PwDO1A8b7sOXYlluCMu39CX/nLrV0IuY6K1AK8rcu77nNZFEYNBrbT7y7sCz6H81BN2kLt7hoEEd7W4dzdyP9mAG1NrMR54nEz2HTeaxIXBjgM815LLr1MHbyR9oqdWcm2RiZqFehfFaFRrh9r0/5H3KeEAihnk0iSwO8NFGBILOd27fiynSTVaBO8z4WXI5CkUX7NtKDKHtEfPaW67x4eg75Xlb5yLvDzu6HDE2mSJrkcAyc70SFaP11ZHqo6Uje89nzvjN/9G+2kZ00O7L8+A8uDYjAQmX3+7f174F9EAUvoAYfAcpyMEYjLHHAwByvdcN); Raid BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzElU9ME1kcx/t7M3Ref6Vs9y3ZnZ3dwyy7LNDdbt7MtITl0sJl/x1odi97W6a0bGuwbdrG4A0NByVCE0Qi1YMhJhgjHjwYIOHiqcZoelESvRCVYAyJQiJqTIiZsUWixHiA+j383pv3zcx85jvvl4ffUvCCDCq0Qi8kIANDAMcAzgFcAGD1tksstwOU0XpKvVQ5hBJ9NQvyihtFujUOKNLHE1Y9U/aik5ZS8oMGlOj6mke+14Ai3VjzoEhXCoASfbbmse6T6NIsyAUJRTpZ9qJIb5yyHjB80qpXy16U6JPLIJe+QJGeKAAKdGOg6WdvKdl6awz4ZjQyOg0jQIaT40A2o0Ugq10Xgc6chUsjMJZchuFkN7XRIQwL5Hse0HQe1LmhcW5oWtDQ/MGgwTnnmsa55ufcKBEoE/d9UkAmKqTTwRoVhq4r4ESR3pyXlToU6MMeNgTMNDMD/6UzeVXnertf43490Kn2JczU//GYms6qZiwWj6nRw2o+EVez6byZT6ZTai5uZvsSamsuHlfNbJ+ZivtjmZy/6vvf+L8cyKVTbco3+LnvM+pk5E+HImEdChrPKRbJ0RcRVqwJQhB/UtrQfddJUaSL87IMqPhkKjDXgp3J4rysuIrEmk7c/kupjOz4LnCGttdwP3wUy1xNWP7BP9hv2K4EPsSEX/oaqchc17a9OhQQdPQ0udG1Ae+in64JuoFtrMVGgyraehXN2In2chyUysgG3ifjHXtNJlkQdKmHTdZks2vYwprR62uo9JwTRSRGrtqF0UoX6sHm7T/kesu4SyK6sT+JzPSwg7UIhNrfufo8IguPSAmeEv2I4LAVCE9buxUJhaYt4rKWHEP94a+LU5auh77rt3UnpC8TWVRDvjni+CTKh6uzfdWPs/v2nl/t+vf5cFdlIdxrHc1TYF84lkM+gc591b3jBOfQAWH4HSLwLyQgA4MwSF4PAI092W0=).
+**Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Quests and dungeons: [full raid](https://wowsims.com/forever/mage/dps/#eJzEVU1sG1UQ9rx17fEYSvta2uU1glcHk8SJy+66Lk1AihuJkJaiRJyQEKXr7MZeNVlH9pqEWxp6QAXSKnBJBBKKkIqACsmnJlKRqIQUkEBQifbAgaj830gOVbkUtOtNnUqIW8Uc/Pxm5ptv5htbj9oQdoAKEjrhJJRhEmYAXgd4H+BDAH5fEGV+9DCIrxKIO1CMUxwvzIP6S5Ki+NqnQAp+ViYFL09THL87B+pP2ymOn58H9YftpOAXJVJw7kWK4caYj4nj9YugnouTgn+bpODpIil4foIUfK9EMXxzQl3dRQrOvEQKboynenasOp3fzIF2szjy1hKcBXbGmQd2s7gI7LcjHwFeeBc+OQtzzhqccQYwaBgKsMLatbxmaHlDy+maltP1fE7P5o28pmmabmiantW03CqDb1nyBrsWpzbaSXg1uo0U/MMWzSMVp22kZI0aHSIUMYri8vrxVKbBOlDh+xpMReCJReYHZm+NiMRiPMzxc4lldXo0xM3eGkmpDfYgKlsBYRZfYPxXMC3LtqShGYeyup41NNnplW3puJY9abuW7XrSrFuO11GTQ3pXnzw6assBs1p17Ko0S6bjyqmy7crBqlNyLDlSmbKrPdLxarJbz6flYLVS86RlTpglW45VqlKXE47bI8tmTdZdy65KQ9bkuD3mPSlLdbNq2ZYsvnoXSdF23JI85Vam3B5Zq8hi3Rm3anLK8cqVuif9ZnN6drLiuF5I55njQdtVW9bd0bLplmxLHKA0b28pTXszgSgr4Ivy8e1QFKMWroA/IfLUzbtIzexB4MkrgBTF9WVVBT+DIEf3p5KU2Ajwf82DCE+eEHE/A68P83axn3ZmHsAoZ8WICJaqa+kbkKTE069URk3PqbhciodJCJWSjYDia5+CEksQLqsvwveI3XdFg/I/D/OUkFsSjV3UJH7jRGv5fEKcIlO8THsyu/1xrwRlLy+rm0OIjNqSwfeHP5N3vn+WunjH1iF917+XOSjCOCfRoh4Sg/RUpg9jwfRGgz2OwAMRDC0tUg32CCp8Z4Nt9/U5FvFxxPSaQIpRVD+QS9+puinpj8OqklmCreodFc9QGxfNPhtBWyurz1HiajT8SxgdoRrL68dp3yyopODbJ4S/llhrLb29aX5MDFG36GqWuoNvXpsq+9cWyX/U+p2twp/MOq1EAjtYCPDEEFK3WcJ3RWbGCg8tLvj2Zf/+scCu9RtrTI3K/swlFvlfzCtsfrun9tjFe8bTG3w+/0HhSOgonPTflQUILpG1/oyCl/YObHl+NDgMBRiCEXgByjAJ0zDN/hkAL/gt9A==); Pre-BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzEVU1sG1UQ9rzd2s9jKM5rSZfXCF4dTBInLrvrujQBKW4kQlqKEnHiVLrObuxVk3XkXZNyK6EHVKCpSoWUwAEiJBAQkHxATSQO5GSQQKES7YEDUaH8XSA5VEVIFdr1pk4lxK1iDrt+M/PNN/ONVw87KCRBAQHdcALKMA2nAV4BeAfgAwB2TxAlfvQQ8G/jlCYpdzFG/14C5XoCZfryp4Ay/f2i/3xrLYlR2nCUH3dijH5xHpTvd6JEVx2U6fU5wCjdnPBRMXp1CZS5GMr0zbUkyvSrd334Z2tJlOj5KYzRPz4BpbELZfraHKBENydTfcmG3f3NOVBvFMdeX4SzQM7YF4DcKC4A+eXwh0Dffxs+Pgvn7HU4Yw/RoG8owArpVPOqruZ1Naepak7T8jktm9fzqqqqmq6qWlZVcw0CayRxjVyJYQe2Ib0s70CJ/mbx5isVwx0oZXUXDyLlUZTp8saxVKZOuqjE9taJQoHFF4gfmL05xuMLsTDHz0WS1fDhEDd7cyyl1Mn9VNoOCLPYPGE/g2Galil0VT+Y1bSsropur2wJ2zGtacsxLccTRs20vS5XjGg9A+LIuCWGjGrVtqrCKBm2I2bKliOGq3bJNsVYZcaq9gnbc0Wvlk+L4WrF9YRpTBklS0xUqkITU7bTJ8qGK2qOaVWFLlwxaU14j4tSzaialimKL95BUrRspyROOpUZp0+4FVGs2ZOmK2Zsr1ypecJvNqdlpyu244V0njEZtF21RM0ZLxtOyTL5fkyzzpbSuCcTiLICvigf3QpF0d1wBewxnsde1oNKpp0CS6wCRZluLCsK+BkIObw3lcD4ZoD/6wLw8M3iPOZn0KujrJPvw7bMfVRmpBjhwVI1NX0NEhh/8oXKuOHZFYcJ/iByrmCiHlB87VNgfBHCZQ1EWDvffUc0KP/TKEtxsS1R34VN4lePt5bPpvhJNPjz2J7Z7Y+7GpT9fFnZGoJnlJYMvj/8m1z87mnsYV3bh/Rd/17mAA/jDHmLeoQP4xOZARoNptfr5FEKLBBBV9M8VScPUYm11clOX5+jER+HRHM5xSjK2v5c+nbVLUl/GFWkzCJsV+8Ifwo7GG/2WQ/aWmk8g/HLcvhJ6F2hGssbx3DvLCgo0TeOc38t0dZa+vvT7CgfwV7e0yx1G988NlX2jy2S/6j1K2nAn8R8SYoEdqAQ4JFQSN0icd8VOT1ReGBh3rcvB/dNBHZlUF8niiwGM5dI5H8xr7D1667aI0t3jac/eD77XuFw6Cic8K+XeQgOkfXBjEQv7RnadgupcAgKMAJj8ByUYRpOwSnyzwA+rTGR); Raid BiS: [full raid](https://wowsims.com/forever/mage/dps/#eJzEVU9sG8UX9htv4/HzL/2509Iu0wimDiaJE5fddV2agBQ3EiEtRYk4cSpdZzf2qsk6stdNuZUoB1SgkdKClMABRUggIBx8QE0kLj0ZIVBUQXvgQFQo/xQJEomqCClCs97UqYS4VbzDrOf9+b73vufVYhuFOKggoBPOQBEm4QLAqwDvAnwAwP7nR4mMHgP+dZTSOOXnMEL/WgL1dgwVujUHqNBfr8jz7dU4ttC6q36/GyN0Y71V/XY3KnRzvRUVensWMEL/WG+VdRF6cwnU2Qgq9K3VOCr0izclwMxleX66GscI/e0TUOt7UaGvzwKG6eZ4oidedzq/ugTanfzIG4twEciMMwfkTn4ByE/HPwT6/jvw8UW45KzBjDNA/dYhByukXctqhpY1tIyuaRldz2b0dNbIapqm6Yam6WlNy9QJrJLYLXIjgm24B+l1ZReG6S82bzwSEdyF4bRRwaNIeQsqdHnjVCJVIx00zA7WiEqBRReIDEzfHeHRhUiQI3ORpHV8LKibvjuSUGvkIRreWRBksXnCfgTTsmxLGJpxNK3raUMTnV7RFo5r2ZO2a9muJ8yq5XgdFTGkd/WJE6O2GDDLZccuC7NgOq6YKtquGCw7BccSI6Upu9wjHK8iuvVsUgyWSxVPWOaEWbDFWKksdDHhuD2iaFZE1bXssjBERYzbY95TolA1y5ZtifzL95HkbcctiLNuacrtEZWSyFedcasiphyvWKp6Qjab0dOTJcf1AjrPHPfbLtui6o4WTbdgW/wwJll7U2k8kPJFWQEpykdbgShGJVgBe5JnsZt1oZraT4HFrgFFhW4sqyrIDIQMtiZiGN306/+cAx48WZRHZAa9Ocza+SHck/o/VRjJh7i/VF1L3oIYRp85Vxo1PafkMsEfQc5VjNV8ii8lBUYXIVhWX4jt5/vui/rwPwyzBBc7Eo292CB+7XRz+WyCn0WTv4T7U/vkuNd82M+W1e0heEptyiD9wd/kyjfPYRfr2DmkdP0zzBEexBnyJvUQH8SnU320xZ/eqJEnKDBfBENL8kSNPErDbE+N7Jb6nAzJOiR6hVNsQUU/nEneQ92W9LthNZxahJ3qneDPYhvjjT5rflsr9ecxel0JXgmjI1BjeeMUHpwGFcP08mku19LSXEtvb5Kd5EPYzbsaUPfqG9eGyvLaJPkXrJ9JHX4n1ivhkG9Hcn49EgqJLRKVrtCFsdzDC/PSPu8/NObbjX5jjaiK6E9dJaH/xLzc9q8Hao8vPTCeXv984b3c8cCROyO/MPPgX0Jr/akwvXpgYMeHSINjkIMhGIEXoQiTcB7Ok78HAHJsM/E=).
 
 ## Other builds of this spec
 
-- [Arcane — Arcane Blast](../research/raid/builds/arcane-blast-raid.md) (31/13/7, 707 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/050205203100301531-505001002-043-12)
+- [Arcane — Raid](../research/raid/builds/arcane-open-raid.md) (31/17/3, 822 DPS in a full raid) — [open the talent tree](https://talentsforever.com/mage/60/041205203100211531-554000011001-003-12)
+
+## Builds that play as a hybrid
+
+- Frost — Arcane Power / Frostbolt (32/3/16): 30+ points in Arcane, but it plays as the [Arcane-Frost](arcane-frost.md); it is ranked there
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-19 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 2e6e77d (client 1.60.1.70938)). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-20 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 2e6e77d (client 1.60.1.70938)). Simulations, not in-game measurements. Spell ranks: trainer ranks only. The class books' ranks (Grimoire of Shadow Bolt X, Tome of Frostbolt XI and the like) are not in Forever on the evidence there is (2026-11-20): in Classic every one drops in the Ruins of Ahn'Qiraj, which Forever's roadmap does not have; Wowhead's Forever pages list no source for them; the simulator's own authors leave them off by default. Checked again when the raids of 2026-12-09 open. Do not hand-edit.*
 

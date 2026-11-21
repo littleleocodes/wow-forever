@@ -1315,7 +1315,7 @@
    "date": "2026-11-20"
   },
   "fire-raid": {
-   "fingerprint": "69c7c6d388ab4ad2",
+   "fingerprint": "f811d068ded2f466",
    "fights": 3000,
    "rotation": "_reference/data/raidsim/apls/mage/fire-raid-raid.apl.json",
    "builds": {
@@ -1351,16 +1351,20 @@
       "Scorch": 23.5,
       "Fireball": 22.14,
       "Pyroblast": 14.36,
-      "Arcane Missiles": 8.72,
-      "Combustion": 1.0
+      "Arcane Missiles": 4.36
      },
+     "procs_and_triggered": {
+      "Arcane Missiles": 4.36,
+      "Combustion": 1
+     },
+     "pet_casts": {},
      "casts_by_id": {
       "10199": 29.22,
       "10207": 23.5,
       "10151": 22.14,
       "18809": 14.36,
-      "10274": 4.36,
       "10212": 4.36,
+      "10274": 4.36,
       "11129": 1.0
      }
     },
@@ -1396,16 +1400,20 @@
       "Fireball": 22.92,
       "Scorch": 21.59,
       "Pyroblast": 14.43,
-      "Arcane Missiles": 9.11,
-      "Combustion": 1.0
+      "Arcane Missiles": 4.56
      },
+     "procs_and_triggered": {
+      "Arcane Missiles": 4.56,
+      "Combustion": 1
+     },
+     "pet_casts": {},
      "casts_by_id": {
       "10199": 30.08,
       "10151": 22.92,
       "10207": 21.59,
       "18809": 14.43,
-      "10274": 4.56,
       "10212": 4.56,
+      "10274": 4.56,
       "11129": 1.0
      }
     },
@@ -1416,8 +1424,7 @@
      ],
      "abilities": [],
      "zero_talents": [
-      "Improved Channeling 3: gate: Arcane Subtlety (tier 2) needs 5 points in Arcane below it, only 2",
-      "Wand Specialization 2: gate: Arcane Subtlety (tier 2) needs 5 points in Arcane below it, only 3"
+      "Improved Channeling 5: gate: Arcane Subtlety (tier 2) needs 5 points in Arcane below it, only 0"
      ],
      "inert_switches": [],
      "fail": [],
@@ -1439,18 +1446,22 @@
       "Fireball": 18.58,
       "Scorch": 17.99,
       "Pyroblast": 14.58,
-      "Arcane Missiles": 12.72,
       "Arcane Blast": 8.77,
-      "Combustion": 1.0
+      "Arcane Missiles": 6.36
      },
+     "procs_and_triggered": {
+      "Arcane Missiles": 6.36,
+      "Combustion": 1
+     },
+     "pet_casts": {},
      "casts_by_id": {
       "10199": 29.92,
       "10151": 18.58,
       "10207": 17.99,
       "18809": 14.58,
       "1239700": 8.77,
-      "10212": 6.36,
       "10274": 6.36,
+      "10212": 6.36,
       "11129": 1.0
      }
     }

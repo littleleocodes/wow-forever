@@ -76,10 +76,10 @@ Allocation adopted on 2026-09-28 from `opt-prot-tank-raid-tank`, the best build 
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 0/35/16 | 1.023 | +0.0% | 1210 | 280 |
-| 2 | **[`prot-tank`](prot-tank.md)** | ours: hand draft | 0/33/18 | 1.000 | -2.3% | 1137 | 275 |
-| 3 | *Default* | community simulator | - | 0.999 | -2.4% | 1187 | 289 |
-| 4 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 1/34/16 | 0.978 | -4.4% | 1087 | 275 |
+| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 0/35/16 | 1.025 | +0.0% | 1096 | 299 |
+| 2 | **[`prot-tank`](prot-tank.md)** | ours: hand draft | 0/33/18 | 1.000 | -2.4% | 1032 | 295 |
+| 3 | *Default* | community simulator | - | 0.996 | -2.8% | 1069 | 309 |
+| 4 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 1/34/16 | 0.976 | -4.7% | 979 | 294 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -97,9 +97,9 @@ Before the pull: at -20s: cast Righteous Fury; at -18.5s: cast Retribution Aura;
 | 2 | use every other cooldown when ready | as ready |
 | 3 | cast Judgement | 0.3 |
 | 4 | if time left on Seal of Fury < time to the next auto attack and auraIsInactive: cast Seal of Fury | 2.0 |
-| 5 | cast Consecration | 5.7 |
-| 6 | cast Holy Shield | 5.1 |
-| 7 | cast Holy Shield (rank 3) | 0.4 |
+| 5 | cast Consecration | 5.2 |
+| 6 | cast Holy Shield | 4.9 |
+| 7 | cast Holy Shield (rank 3) | 0.6 |
 | 8 | cast Holy Strike | 9.7 |
 | 9 | cast Lay on Hands | 0.3 |
 | 10 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 0.5 |
@@ -110,16 +110,16 @@ Damage by ability (threat for tanks):
 
 | Ability | [`prot-tank`](prot-tank.md) |
 |---|---|
-| Holy Strike | 20% |
-| Holy Shield | 19% |
+| Holy Shield | 20% |
+| Holy Strike | 19% |
+| Judgement of Fury | 14% |
 | Auto Attack | 12% |
-| Judgement of Fury | 12% |
-| Seal of Fury | 10% |
 | Consecration | 10% |
+| Seal of Fury | 9% |
 | Lay on Hands | 5% |
-| Windfury Totem | 4% |
-| Judgement of Light | 2% |
+| Windfury Totem | 3% |
 | Retribution Aura | 2% |
+| Judgement of Light | 2% |
 
 ## Notes
 

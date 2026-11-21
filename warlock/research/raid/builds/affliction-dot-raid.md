@@ -1,4 +1,4 @@
-# Affliction — DoT / Malevolence / Nightfall (simulator winner adopted 2026-09-27) — 30/0/21
+# Shadow Bolt hybrid — SM/Ruin with Affliction's dots (the Affliction DoT draft of 2026-09-27) — 30/0/21
 
 *[Warlock](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
@@ -69,13 +69,13 @@ Allocation adopted on 2026-09-27 from `opt-affliction-raid-raid-dps`, the best b
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md) | ours: optimizer | 30/0/21 | 705 | +0.0% | 811 | +0.0% | 0 s |
-| 2 | **[`affliction-dot-raid`](affliction-dot-raid.md)** | ours: hand draft | 30/0/21 | 700 | -0.7% | 806 | -0.6% | 0 s |
-| 3 | *SM/Ruin* | community simulator | - | 697 | -1.1% | 806 | -0.6% | 0 s |
-| 4 | *Demo (Shadow Brand)* | community simulator | - | 649 | -7.9% | 753 | -7.1% | 0 s |
-| 5 | *Demo (Fire Brand)* | community simulator | - | 631 | -10.4% | 722 | -10.9% | 0 s |
-| 6 | *Destro* | community simulator | - | 597 | -15.3% | 680 | -16.1% | 0 s |
-| 7 | *Aff (Wrack)* | community simulator | - | 587 | -16.7% | 654 | -19.3% | 0 s |
+| 1 | [`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md) | ours: optimizer | 30/0/21 | 705 | +0.0% | 822 | +0.0% | 0 s |
+| 2 | **[`affliction-dot-raid`](affliction-dot-raid.md)** | ours: hand draft | 30/0/21 | 700 | -0.7% | 816 | -0.7% | 0 s |
+| 3 | *SM/Ruin* | community simulator | - | 697 | -1.1% | 819 | -0.4% | 0 s |
+| 4 | *Demo (Shadow Brand)* | community simulator | - | 649 | -7.9% | 772 | -6.0% | 0 s |
+| 5 | *Demo (Fire Brand)* | community simulator | - | 631 | -10.4% | 738 | -10.2% | 0 s |
+| 6 | *Destro* | community simulator | - | 600 | -14.9% | 687 | -16.4% | 0 s |
+| 7 | *Aff (Wrack)* | community simulator | - | 587 | -16.7% | 677 | -17.6% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -129,6 +129,7 @@ Damage by ability:
 
 ## Notes
 
+- 2026-11-20: plays as the Shadow Bolt hybrid (`spec`). The affliction-raid entry runs upstream's SM/Ruin rotation (apls/warlock/upstream/sm_ruin.apl.json, tuned): in a full raid Shadow Bolt is 51-52% of this build's damage and Affliction's core (Corruption, Bane of Agony, Siphon Life, Drain Life, Wrack, Drain Soul) 21.6-21.7% of its own damage, against Affliction's 30% floor (raid_signature.measure, 6,000 fights, seeds 1 and 2, the lane and the audit session alike). By the standing rule a build played around another tree's spells is a hybrid although one tree has 30 points; it passes the hybrid's rule (Shadow Bolt 54.6-56.0% of its own damage against 35%). The audit session's recommendation; Affliction's page lists it as a pointer.
 - Adopted from the community simulator on 2026-09-27: opt-affliction-raid-raid-dps beat the previous draft by +4.7% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Adopted from the community simulator on 2026-09-26: opt-affliction-raid-raid-dps beat the previous draft by +3.2% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Improved Corruption now reduces cast time by 0.4s per rank instead of 0.4s total — 5/5 is instant; not taken here because tier-1 Affliction already holds Suppression + Improved Life Tap. Add it by dropping Malediction if Corruption is cast on every target.

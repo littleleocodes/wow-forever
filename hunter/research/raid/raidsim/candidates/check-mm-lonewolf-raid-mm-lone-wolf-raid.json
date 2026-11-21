@@ -1,0 +1,99 @@
+{
+ "id": "check-mm-lonewolf-raid-mm-lone-wolf-raid",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Efficiency",
+    3
+   ],
+   [
+    "Lone Wolf",
+    1
+   ],
+   [
+    "Rapid Killing",
+    2
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Barrage",
+    3
+   ],
+   [
+    "Rapid Recuperation",
+    2
+   ],
+   [
+    "Ranged Weapon Specialization",
+    5
+   ],
+   [
+    "Sniper Shot",
+    1
+   ],
+   [
+    "Improved Arcane Shot",
+    5
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-11-20) for mm-lonewolf-raid from mm-lone-wolf-raid in the raid setting: 988.4 -> 995.6 DPS on a third seed.",
+ "search": {
+  "start": "mm-lone-wolf-raid",
+  "setting": "raid",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Efficiency -> Rapid Recuperation",
+    "gain_seed1": 0.008001684224338668,
+    "gain_seed2": 0.006737924575638932,
+    "split": "5/41/5"
+   }
+  ],
+  "dps_start": 988.3750976790676,
+  "dps_end": 995.6445067532819,
+  "gain": 0.0073549091749525175,
+  "tank": false,
+  "date": "2026-11-20",
+  "sim": {
+   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
+   "racials": "off",
+   "pet_normalize": true,
+   "patch_hash": "125d59c4f975f5df",
+   "simulator": "wowsims/forever",
+   "client": "1.60.1.70938"
+  }
+ }
+}

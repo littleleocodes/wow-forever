@@ -74,16 +74,16 @@ Forever's melee hunter for raids, built around traps: Survival's melee package (
 
 ## Rank among our builds and the community simulator's
 
-**1 of 6** for `melee-dps` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 6** for `melee-dps` by training-dummy DPS in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`melee-survival-raid`](melee-survival-raid.md)** | ours: hand draft | 5/11/35 | 363 | +0.0% | 737 | -8.1% | 0 s |
-| 2 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 346 | -4.7% | 711 | -11.3% | 0 s |
-| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 317 | -12.7% | 694 | -13.4% | 0 s |
-| 4 | [`beast-survival-open-raid`](beast-survival-open-raid.md) | ours: derived (open search) | 16/11/24 | 269 | -25.9% | 802 | +0.0% | 121 s |
-| 5 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 262 | -27.8% | 703 | -12.3% | 97 s |
-| 6 | *SV Melee* | community simulator | - | 231 | -36.6% | 678 | -15.4% | 120 s |
+| 1 | [`survival-raid`](survival-raid.md) | ours: derived (simulator search) | 5/16/30 | 398 | +0.0% | 799 | -7.5% | 1 s |
+| 2 | **[`melee-survival-raid`](melee-survival-raid.md)** | ours: hand draft | 5/11/35 | 394 | -1.0% | 836 | -3.2% | 20 s |
+| 3 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 377 | -5.1% | 789 | -8.6% | 1 s |
+| 4 | [`beast-survival-open-raid`](beast-survival-open-raid.md) | ours: derived (open search) | 16/11/24 | 303 | -23.9% | 864 | +0.0% | 100 s |
+| 5 | [`survival-ml-parse`](survival-ml-parse.md) | ours: derived (ML search) | 5/14/32 | 300 | -24.6% | 793 | -8.1% | 86 s |
+| 6 | *SV Melee* | community simulator | - | 256 | -35.7% | 734 | -15.1% | 101 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -106,31 +106,39 @@ Forever's melee hunter for raids, built around traps: Survival's melee package (
   6. only above 60% mana: cast Explosive Trap (+0.2%, pass 13)
   7. only with 20s or more of the fight left: if mana % ≥ 60%: cast Explosive Trap (+0.2%, pass 14)
 
-Before the pull: at -3s: cast Hunter's Mark.
+Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Beast; at -19s: groupReference.
 
 | # | Priority (the first line whose condition holds is cast) | [`melee-survival-raid`](melee-survival-raid.md) casts/min |
 |---|---|---|
-| 1 | if auraIsInactive: cast Aspect of the Beast | 0.3 |
-| 2 | cast Mongoose Bite | 4.4 |
-| 3 | cast Raptor Strike | 8.4 |
-| 4 | cast Immolation Trap | 3.3 |
-| 5 | use every other cooldown when ready | as ready |
-| 6 | cast Strider Kick | 6.6 |
-| 7 | cast Major Mana Potion | as ready |
-| 8 | cast Wing Clip | 25.3 |
+| 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready |
+| 2 | cast Raptor Strike | 7.1 |
+| 3 | if not Hunter's Mark is up: cast Hunter's Mark | 0.7 |
+| 4 | if Strider Kick is up and not Serpent Sting is on the target and mana % > 30%: move to “Shoot spot” yd | as ready |
+| 5 | if unitDistance > “Melee range” and not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 1.7 |
+| 6 | if unitDistance > “Melee range”: cast Arcane Shot | 0.7 |
+| 7 | if unitDistance > “Melee range”: cast Multi-Shot | 0.3 |
+| 8 | if unitDistance > “Melee range” and not spellInRange and (“Windup close” or “Just shot”): move to “Melee range” yd | as ready |
+| 9 | if unitDistance > “Melee range”: wait inputDelay | as ready |
+| 10 | cast Mongoose Bite | 6.2 |
+| 11 | cast Strider Kick | 5.6 |
+| 12 | cast Immolation Trap | 2.8 |
+| 13 | cast Wing Clip | 19.4 |
 
-Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent).
 
 Damage by ability:
 
 | Ability | [`melee-survival-raid`](melee-survival-raid.md) |
 |---|---|
-| Auto Attack | 44% |
-| Immolation Trap | 23% |
-| Raptor Strike | 11% |
-| Strider Kick | 8% |
-| Mongoose Bite | 7% |
-| Wing Clip | 5% |
+| Auto Attack | 37% |
+| Immolation Trap | 18% |
+| Serpent Sting | 9% |
+| Raptor Strike | 9% |
+| Mongoose Bite | 9% |
+| Strider Kick | 7% |
+| Wing Clip | 4% |
+| Auto Shot | 4% |
+| Arcane Shot | 2% |
 | Lacerating Strikes | 2% |
 
 ## Notes

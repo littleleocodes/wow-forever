@@ -4,7 +4,7 @@
   "fights": 10000,
   "commit": "2e6e77d84",
   "rotations": {
-   "ours": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\hunter\\bm-raid-raid.apl.json",
+   "ours": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\hunter\\upstream\\turret_hawk.apl.json",
    "turret_hawk": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\hunter\\upstream\\turret_hawk.apl.json"
   },
   "options": {
@@ -31,73 +31,73 @@
   },
   "dps": {
    "ours|ours|mm-hawk-raid": {
-    "1": 945.14,
-    "2": 945.52
+    "1": 885.86,
+    "2": 885.75
    },
    "ours|ours|beast-mastery-ml-raid": {
-    "1": 1025.48,
-    "2": 1025.23
+    "1": 929.56,
+    "2": 928.89
    },
    "ours|ours|beast-marks-ml-raid": {
-    "1": 998.41,
-    "2": 998.91
+    "1": 916.02,
+    "2": 916.05
    },
    "ours|ours|up:bm": {
-    "1": 1019.71,
-    "2": 1019.47
+    "1": 923.64,
+    "2": 922.98
    },
    "turret_hawk|ours|mm-hawk-raid": {
-    "1": 967.37,
-    "2": 967.78
+    "1": 885.86,
+    "2": 885.75
    },
    "turret_hawk|ours|beast-mastery-ml-raid": {
-    "1": 1047.5,
-    "2": 1047.11
+    "1": 929.56,
+    "2": 928.89
    },
    "turret_hawk|ours|beast-marks-ml-raid": {
-    "1": 1019.68,
-    "2": 1019.93
+    "1": 916.02,
+    "2": 916.05
    },
    "turret_hawk|ours|up:bm": {
-    "1": 1041.54,
-    "2": 1041.15
+    "1": 923.64,
+    "2": 922.98
    },
    "ours|up:bm|mm-hawk-raid": {
-    "1": 896.6,
-    "2": 896.83
+    "1": 884.98,
+    "2": 885.15
    },
    "ours|up:bm|beast-mastery-ml-raid": {
-    "1": 953.7,
-    "2": 954.1
+    "1": 928.03,
+    "2": 927.65
    },
    "ours|up:bm|beast-marks-ml-raid": {
-    "1": 933.26,
-    "2": 933.6
+    "1": 912.81,
+    "2": 912.88
    },
    "ours|up:bm|up:bm": {
-    "1": 947.95,
-    "2": 948.34
+    "1": 922.11,
+    "2": 921.73
    },
    "turret_hawk|up:bm|mm-hawk-raid": {
-    "1": 918.74,
-    "2": 919.33
+    "1": 884.98,
+    "2": 885.15
    },
    "turret_hawk|up:bm|beast-mastery-ml-raid": {
-    "1": 974.9,
-    "2": 975.06
+    "1": 928.03,
+    "2": 927.65
    },
    "turret_hawk|up:bm|beast-marks-ml-raid": {
-    "1": 954.58,
-    "2": 954.64
+    "1": 912.81,
+    "2": 912.88
    },
    "turret_hawk|up:bm|up:bm": {
-    "1": 968.97,
-    "2": 969.12
+    "1": 922.11,
+    "2": 921.73
    }
   },
   "our_best": "ours|ours|beast-mastery-ml-raid",
-  "best": "turret_hawk|ours|beast-mastery-ml-raid",
-  "gain": 0.0214,
+  "best": "ours|ours|beast-mastery-ml-raid",
+  "gain": 0.0,
   "note": ""
  },
  "mm-raid": {
@@ -105,7 +105,7 @@
   "fights": 10000,
   "commit": "2e6e77d84",
   "rotations": {
-   "ours": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\hunter\\mm-raid-raid.apl.json",
+   "ours": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\hunter\\upstream\\turret.apl.json",
    "turret": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\hunter\\upstream\\turret.apl.json"
   },
   "options": {
@@ -125,41 +125,41 @@
   },
   "dps": {
    "ours|ours|bm-mm-raid": {
-    "1": 908.11,
-    "2": 908.56
+    "1": 844.33,
+    "2": 843.76
    },
    "ours|ours|bm-mm-full-buffs-raid": {
-    "1": 917.67,
-    "2": 917.71
+    "1": 851.13,
+    "2": 851.35
    },
    "ours|ours|opt-mm-raid-raid-dps": {
-    "1": 951.93,
-    "2": 951.65
+    "1": 846.6,
+    "2": 846.96
    },
    "ours|ours|marksmanship-ml-raid": {
-    "1": 1009.39,
-    "2": 1010.34
+    "1": 951.42,
+    "2": 951.36
    },
    "turret|ours|bm-mm-raid": {
-    "1": 924.22,
-    "2": 924.96
+    "1": 844.33,
+    "2": 843.76
    },
    "turret|ours|bm-mm-full-buffs-raid": {
-    "1": 933.4,
-    "2": 933.49
+    "1": 851.13,
+    "2": 851.35
    },
    "turret|ours|opt-mm-raid-raid-dps": {
-    "1": 964.65,
-    "2": 964.67
+    "1": 846.6,
+    "2": 846.96
    },
    "turret|ours|marksmanship-ml-raid": {
-    "1": 1017.3,
-    "2": 1017.47
+    "1": 951.42,
+    "2": 951.36
    }
   },
   "our_best": "ours|ours|marksmanship-ml-raid",
-  "best": "turret|ours|marksmanship-ml-raid",
-  "gain": 0.0074,
+  "best": "ours|ours|marksmanship-ml-raid",
+  "gain": 0.0,
   "note": ""
  },
  "mm-lonewolf-raid": {
@@ -167,7 +167,7 @@
   "fights": 10000,
   "commit": "2e6e77d84",
   "rotations": {
-   "ours": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\hunter\\mm-lonewolf-raid-raid.apl.json",
+   "ours": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\hunter\\upstream\\turret.apl.json",
    "turret": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\hunter\\upstream\\turret.apl.json"
   },
   "options": {
@@ -194,89 +194,89 @@
   },
   "dps": {
    "ours|ours|mm-lone-wolf-raid": {
-    "1": 967.97,
-    "2": 967.79
+    "1": 962.77,
+    "2": 963.28
    },
    "ours|ours|opt-mm-lonewolf-raid-raid-dps": {
-    "1": 896.38,
-    "2": 896.51
+    "1": 910.01,
+    "2": 909.95
    },
    "ours|ours|marksmanship-ml-raid": {
-    "1": 807.97,
-    "2": 807.85
+    "1": 804.54,
+    "2": 804.79
    },
    "ours|ours|up:mm": {
-    "1": 961.11,
-    "2": 960.9
+    "1": 963.6,
+    "2": 963.59
    },
    "ours|ours|up:sv": {
-    "1": 815.52,
-    "2": 816.3
+    "1": 820.82,
+    "2": 820.92
    },
    "turret|ours|mm-lone-wolf-raid": {
-    "1": 968.14,
-    "2": 967.88
+    "1": 962.77,
+    "2": 963.28
    },
    "turret|ours|opt-mm-lonewolf-raid-raid-dps": {
-    "1": 911.9,
-    "2": 912.0
+    "1": 910.01,
+    "2": 909.95
    },
    "turret|ours|marksmanship-ml-raid": {
-    "1": 808.87,
-    "2": 808.78
+    "1": 804.54,
+    "2": 804.79
    },
    "turret|ours|up:mm": {
-    "1": 968.65,
-    "2": 968.66
+    "1": 963.6,
+    "2": 963.59
    },
    "turret|ours|up:sv": {
-    "1": 824.69,
-    "2": 824.78
+    "1": 820.82,
+    "2": 820.92
    },
    "ours|up:mm|mm-lone-wolf-raid": {
-    "1": 967.97,
-    "2": 967.79
+    "1": 962.77,
+    "2": 963.28
    },
    "ours|up:mm|opt-mm-lonewolf-raid-raid-dps": {
-    "1": 896.38,
-    "2": 896.51
+    "1": 910.01,
+    "2": 909.95
    },
    "ours|up:mm|marksmanship-ml-raid": {
-    "1": 807.97,
-    "2": 807.85
+    "1": 804.54,
+    "2": 804.79
    },
    "ours|up:mm|up:mm": {
-    "1": 961.11,
-    "2": 960.9
+    "1": 963.6,
+    "2": 963.59
    },
    "ours|up:mm|up:sv": {
-    "1": 815.52,
-    "2": 816.3
+    "1": 820.82,
+    "2": 820.92
    },
    "turret|up:mm|mm-lone-wolf-raid": {
-    "1": 968.14,
-    "2": 967.88
+    "1": 962.77,
+    "2": 963.28
    },
    "turret|up:mm|opt-mm-lonewolf-raid-raid-dps": {
-    "1": 911.9,
-    "2": 912.0
+    "1": 910.01,
+    "2": 909.95
    },
    "turret|up:mm|marksmanship-ml-raid": {
-    "1": 808.87,
-    "2": 808.78
+    "1": 804.54,
+    "2": 804.79
    },
    "turret|up:mm|up:mm": {
-    "1": 968.65,
-    "2": 968.66
+    "1": 963.6,
+    "2": 963.59
    },
    "turret|up:mm|up:sv": {
-    "1": 824.69,
-    "2": 824.78
+    "1": 820.82,
+    "2": 820.92
    }
   },
-  "our_best": "ours|ours|mm-lone-wolf-raid",
-  "best": "turret|ours|up:mm",
-  "gain": 0.0008,
+  "our_best": "ours|ours|up:mm",
+  "best": "ours|ours|up:mm",
+  "gain": 0.0,
   "note": ""
  },
  "melee-dps": {
@@ -284,7 +284,7 @@
   "fights": 10000,
   "commit": "2e6e77d84",
   "rotations": {
-   "ours": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\hunter\\melee-dps-raid.apl.json",
+   "ours": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\hunter\\upstream\\melee.apl.json",
    "melee": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\hunter\\upstream\\melee.apl.json"
   },
   "options": {
@@ -312,105 +312,105 @@
   },
   "dps": {
    "ours|ours|melee-survival-raid": {
-    "1": 743.55,
-    "2": 743.88
+    "1": 761.98,
+    "2": 761.7
    },
    "ours|ours|opt-melee-dps-raid-dps": {
-    "1": 701.1,
-    "2": 700.92
+    "1": 714.23,
+    "2": 713.85
    },
    "ours|ours|survival-raid": {
-    "1": 715.38,
-    "2": 715.61
+    "1": 740.3,
+    "2": 740.51
    },
    "ours|ours|survival-ml-parse": {
-    "1": 709.21,
-    "2": 709.06
+    "1": 721.93,
+    "2": 722.38
    },
    "ours|ours|beast-survival-open-raid": {
-    "1": 806.49,
-    "2": 807.02
+    "1": 818.29,
+    "2": 819.09
    },
    "ours|ours|up:sv_melee": {
-    "1": 682.92,
-    "2": 682.94
+    "1": 672.69,
+    "2": 673.32
    },
    "melee|ours|melee-survival-raid": {
-    "1": 767.07,
-    "2": 767.0
+    "1": 761.98,
+    "2": 761.7
    },
    "melee|ours|opt-melee-dps-raid-dps": {
-    "1": 720.16,
-    "2": 720.01
+    "1": 714.23,
+    "2": 713.85
    },
    "melee|ours|survival-raid": {
-    "1": 745.77,
-    "2": 745.23
+    "1": 740.3,
+    "2": 740.51
    },
    "melee|ours|survival-ml-parse": {
-    "1": 727.32,
-    "2": 727.07
+    "1": 721.93,
+    "2": 722.38
    },
    "melee|ours|beast-survival-open-raid": {
-    "1": 824.22,
-    "2": 824.82
+    "1": 818.29,
+    "2": 819.09
    },
    "melee|ours|up:sv_melee": {
-    "1": 677.53,
-    "2": 678.04
+    "1": 672.69,
+    "2": 673.32
    },
    "ours|up:sv_melee|melee-survival-raid": {
-    "1": 773.93,
-    "2": 773.78
+    "1": 761.35,
+    "2": 761.75
    },
    "ours|up:sv_melee|opt-melee-dps-raid-dps": {
-    "1": 738.13,
-    "2": 737.86
+    "1": 722.09,
+    "2": 721.67
    },
    "ours|up:sv_melee|survival-raid": {
-    "1": 748.54,
-    "2": 748.0
+    "1": 742.44,
+    "2": 742.81
    },
    "ours|up:sv_melee|survival-ml-parse": {
-    "1": 744.62,
-    "2": 745.1
+    "1": 728.79,
+    "2": 729.07
    },
    "ours|up:sv_melee|beast-survival-open-raid": {
-    "1": 843.33,
-    "2": 844.13
+    "1": 824.3,
+    "2": 823.98
    },
    "ours|up:sv_melee|up:sv_melee": {
-    "1": 899.42,
-    "2": 899.64
+    "1": 853.8,
+    "2": 853.48
    },
    "melee|up:sv_melee|melee-survival-raid": {
-    "1": 789.62,
-    "2": 790.2
+    "1": 761.35,
+    "2": 761.75
    },
    "melee|up:sv_melee|opt-melee-dps-raid-dps": {
-    "1": 750.56,
-    "2": 750.43
+    "1": 722.09,
+    "2": 721.67
    },
    "melee|up:sv_melee|survival-raid": {
-    "1": 770.1,
-    "2": 770.38
+    "1": 742.44,
+    "2": 742.81
    },
    "melee|up:sv_melee|survival-ml-parse": {
-    "1": 756.96,
-    "2": 756.69
+    "1": 728.79,
+    "2": 729.07
    },
    "melee|up:sv_melee|beast-survival-open-raid": {
-    "1": 855.88,
-    "2": 856.36
+    "1": 824.3,
+    "2": 823.98
    },
    "melee|up:sv_melee|up:sv_melee": {
-    "1": 891.35,
-    "2": 891.88
+    "1": 853.8,
+    "2": 853.48
    }
   },
   "our_best": "ours|ours|beast-survival-open-raid",
   "best": "ours|up:sv_melee|up:sv_melee",
-  "gain": 0.115,
+  "gain": 0.0427,
   "note": ""
  },
  "melee-dps@weave": {
@@ -502,6 +502,14 @@
   "class": "paladin",
   "fights": 10000,
   "commit": "2e6e77d84",
+  "sim": {
+   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
+   "racials": "off",
+   "pet_normalize": true,
+   "patch_hash": "125d59c4f975f5df",
+   "simulator": "wowsims/forever",
+   "client": "1.60.1.70938"
+  },
   "rotations": {
    "ours": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\paladin\\ret-dps-raid.apl.json",
    "default": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\paladin\\upstream\\default.apl.json"
@@ -585,6 +593,14 @@
   "class": "paladin",
   "fights": 10000,
   "commit": "2e6e77d84",
+  "sim": {
+   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
+   "racials": "off",
+   "pet_normalize": true,
+   "patch_hash": "125d59c4f975f5df",
+   "simulator": "wowsims/forever",
+   "client": "1.60.1.70938"
+  },
   "rotations": {
    "ours": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\paladin\\shockadin-raid-raid.apl.json",
    "holy_shock": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\paladin\\upstream\\holy_shock.apl.json"
@@ -594,14 +610,14 @@
   },
   "builds": {
    "shockadin-open-raid": "15025210220021--4523300100130033",
-   "up:holy_shock": "05025210221021--0523330110130033"
+   "shockadin-holy-shock-raid": "05025210221021--0523330110130033"
   },
   "dps": {
    "ours|ours|shockadin-open-raid": {
     "1": 803.81,
     "2": 804.34
    },
-   "ours|ours|up:holy_shock": {
+   "ours|ours|shockadin-holy-shock-raid": {
     "1": 808.79,
     "2": 808.5
    },
@@ -609,13 +625,13 @@
     "1": 795.01,
     "2": 794.42
    },
-   "holy_shock|ours|up:holy_shock": {
+   "holy_shock|ours|shockadin-holy-shock-raid": {
     "1": 794.27,
     "2": 794.86
    }
   },
-  "our_best": "ours|ours|up:holy_shock",
-  "best": "ours|ours|up:holy_shock",
+  "our_best": "ours|ours|shockadin-holy-shock-raid",
+  "best": "ours|ours|shockadin-holy-shock-raid",
   "gain": 0.0,
   "note": "the Holy Shock rotation's itemSwap lines (the Manual Crowd Pummeler) do nothing here"
  },
@@ -643,20 +659,20 @@
   },
   "dps": {
    "ours|ours|survival-raptor-raid": {
-    "1": 899.42,
-    "2": 899.64
+    "1": 861.74,
+    "2": 861.74
    },
    "ours|ours|melee-survival-raid": {
-    "1": 773.93,
-    "2": 773.78
+    "1": 745.17,
+    "2": 744.62
    },
    "melee|ours|survival-raptor-raid": {
-    "1": 891.35,
-    "2": 891.88
+    "1": 853.8,
+    "2": 853.48
    },
    "melee|ours|melee-survival-raid": {
-    "1": 789.62,
-    "2": 790.2
+    "1": 761.35,
+    "2": 761.75
    }
   },
   "our_best": "ours|ours|survival-raptor-raid",

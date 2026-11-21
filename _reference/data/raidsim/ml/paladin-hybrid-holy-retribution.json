@@ -1,0 +1,1000 @@
+{
+ "class": "paladin",
+ "spec": "Hybrid Holy/Retribution",
+ "slug": "hybrid-holy-retribution",
+ "entries": [
+  "shockadin-raid"
+ ],
+ "best": "shockadin-holy-shock-raid",
+ "best_entry": "shockadin-raid",
+ "best_dps": 813.8,
+ "any_split": true,
+ "date": "2026-11-20",
+ "commit": "2e6e77d84",
+ "gear": {
+  "bis": {
+   "entry": "shockadin-raid",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-hybrid-holy-retribution-bis.gear.json",
+   "date": "2026-11-20",
+   "setting": "raid",
+   "chosen": "all-slots",
+   "ilvl": 63.2,
+   "trinkets": [
+    "Talisman of Ephemeral Power",
+    "Weakness Analyzer"
+   ],
+   "names": [
+    "Stalwart Helm",
+    "Onyxia Tooth Pendant",
+    "Truestrike Shoulders",
+    "Arcanoweave Cloak",
+    "Dawn Armor",
+    "Battleborn Armbraces",
+    "Storm Gauntlets",
+    "Belt of the Archmage",
+    "Titanic Leggings",
+    "Bloodmail Boots",
+    "Channeler's Ring",
+    "Ring of Spell Power",
+    "Talisman of Ephemeral Power",
+    "Weakness Analyzer",
+    "Blackfury",
+    null,
+    "Libram of Law"
+   ],
+   "race_seed1": {
+    "current": 1.0,
+    "all-slots": 1.0065930111789727,
+    "keep-sets-and-effects": 1.0045987737773037
+   },
+   "confirm_seed2": {
+    "current": 1.0,
+    "all-slots": 1.006481747300785
+   },
+   "weights": {
+    "PseudoStatMainHandDps": 1.4906,
+    "StatAgility": 0.2979,
+    "StatArmorPenetration": 0.0322,
+    "StatAttackPower": 0.1155,
+    "StatCritRating": 0.4389,
+    "StatExpertiseRating": 0.5603,
+    "StatHasteRating": 0.6441,
+    "StatHitRating": 0.878,
+    "StatHolyDamage": 0.426,
+    "StatIntellect": 0.1846,
+    "StatSpellDamage": 0.426,
+    "StatSpirit": 0.0039,
+    "StatStrength": 0.2888
+   },
+   "evaluated_on": [
+    "shockadin-raid: shockadin-holy-shock-raid"
+   ]
+  },
+  "prebis": {
+   "entry": "shockadin-raid",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-hybrid-holy-retribution-prebis.gear.json",
+   "date": "2026-11-20",
+   "setting": "raid",
+   "chosen": "all-slots",
+   "ilvl": 62.5,
+   "trinkets": [
+    "Weakness Analyzer",
+    "Blackhand's Breadth"
+   ],
+   "names": [
+    "Stalwart Helm",
+    "Nacreous Shell Necklace",
+    "Truestrike Shoulders",
+    "Arcanoweave Cloak",
+    "Dawn Armor",
+    "Battleborn Armbraces",
+    "Storm Gauntlets",
+    "Belt of the Archmage",
+    "Titanic Leggings",
+    "Bloodmail Boots",
+    "Channeler's Ring",
+    "Warden's Signet of Brilliance",
+    "Weakness Analyzer",
+    "Blackhand's Breadth",
+    "Treant's Bane",
+    null,
+    "Libram of Law"
+   ],
+   "race_seed1": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 0.9920966138289588
+   },
+   "confirm_seed2": {
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.0085989472163692
+   },
+   "weights": {
+    "PseudoStatMainHandDps": 1.6056,
+    "StatAgility": 0.2795,
+    "StatArmorPenetration": 0.0325,
+    "StatAttackPower": 0.1193,
+    "StatCritRating": 0.4158,
+    "StatExpertiseRating": 0.5862,
+    "StatHasteRating": 0.2565,
+    "StatHitRating": 0.8194,
+    "StatHolyDamage": 0.3998,
+    "StatIntellect": 0.1743,
+    "StatSpellDamage": 0.3998,
+    "StatSpirit": -0.0032,
+    "StatStrength": 0.2862
+   },
+   "evaluated_on": [
+    "shockadin-raid: shockadin-holy-shock-raid"
+   ]
+  },
+  "dungeon": {
+   "entry": "shockadin-raid",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-hybrid-holy-retribution-dungeon.gear.json",
+   "date": "2026-11-20",
+   "chosen": "keep-sets-and-effects",
+   "ilvl": 60.1,
+   "trinkets": [
+    "Blackhand's Breadth",
+    "Sanctified Orb"
+   ],
+   "trinket_screen": {
+    "Blackhand's Breadth (13965)": 1.0056,
+    "Sanctified Orb (20512)": 1.0036,
+    "Hand of Justice (11815)": 1.0026,
+    "Adaptive Combat Assistant (272437)": 1.0021,
+    "Counterattack Lodestone (18537)": 1.0001,
+    "Everlook Pathcarver (274759)": 1.0001,
+    "Thunderbrew's Boot Flask (744)": 1.0,
+    "Vigilance Charm (18370)": 0.9994,
+    "Smokey's Lighter (13171)": 0.9992,
+    "Royal Seal of Eldre'Thalas (18472)": 0.999,
+    "Everlook Delivery Bot (274760)": 0.9983,
+    "Second Wind (11819)": 0.9981,
+    "Rune of the Guard Captain (19120)": 0.9974,
+    "Eye of the Beast (13968)": 0.9966,
+    "Enriched Seal (271905)": 0.9955,
+    "Darkspear Voodoo Seal (272059)": 0.9955,
+    "Roogug's Severed Head (274152)": 0.9953,
+    "Evonice's Landin' Pilla (18951)": 0.9953,
+    "Worgenbane Talisman (273643)": 0.9952,
+    "Enriched Seal (271903)": 0.9952,
+    "Darkspear Voodoo Seal (272061)": 0.9952,
+    "Shard of the Splithooves (10659)": 0.9952,
+    "Theka's Last Breath (274641)": 0.9952,
+    "Guardian Talisman (1490)": 0.995,
+    "Nifty Stopwatch (2820)": 0.995,
+    "Dog Whistle (3456)": 0.995,
+    "Smotts' Compass (4130)": 0.995,
+    "Glimmering Mithril Insignia (10418)": 0.995,
+    "Chained Essence of Eranikus (10455)": 0.995,
+    "Demon's Blood (10779)": 0.995,
+    "Carrot on a Stick (11122)": 0.995,
+    "Force of Will (11810)": 0.995,
+    "Linken's Boomerang (11905)": 0.995,
+    "Ward of the Elements (12065)": 0.995,
+    "Heart of the Scale (13164)": 0.995,
+    "Seal of the Dawn (13209)": 0.995,
+    "Smolderweb's Eye (13213)": 0.995,
+    "Cannonball Runner (13382)": 0.995,
+    "Ramstein's Lightning Bolts (13515)": 0.995,
+    "Spectral Essence (13544)": 0.995,
+    "Mark of Tyranny (13966)": 0.995,
+    "Barov Peasant Caller (14022)": 0.995,
+    "Barov Peasant Caller (14023)": 0.995,
+    "Prismcharm (15867)": 0.995,
+    "Ragged John's Neverending Cup (15873)": 0.995,
+    "Heart of Noxxion (17744)": 0.995,
+    "Mark of Resolution (17759)": 0.995,
+    "Mark of the Chosen (17774)": 0.995,
+    "Arena Grand Master (19024)": 0.995,
+    "Luffa (19141)": 0.995,
+    "Rune of the Dawn (19812)": 0.995,
+    "Hook of the Master Angler (19979)": 0.995,
+    "Talisman of Arathor (20071)": 0.995,
+    "Defiler's Talisman (20072)": 0.995,
+    "Defiler's Talisman (21115)": 0.995,
+    "Defiler's Talisman (21116)": 0.995,
+    "Talisman of Arathor (21117)": 0.995,
+    "Talisman of Arathor (21118)": 0.995,
+    "Talisman of Arathor (21119)": 0.995,
+    "Defiler's Talisman (21120)": 0.995,
+    "Defender of the Timbermaw (21326)": 0.995,
+    "Heart of Wyrmthalak (22321)": 0.995,
+    "Volunteer's Lucky Seal (271904)": 0.995,
+    "Volunteer's Lucky Seal (271906)": 0.995,
+    "Relentless Raider's Seal (272060)": 0.995,
+    "Relentless Raider's Seal (272062)": 0.995,
+    "Cursed Murloc Eye (273840)": 0.995,
+    "The Desert Rose (274648)": 0.995,
+    "Parachute-Priest Pager (274761)": 0.995,
+    "Transformative Cocoon (276895)": 0.995,
+    "Satchel of Potions (280766)": 0.995,
+    "Lookie's Spyglass (273298)": 0.9949,
+    "Burst of Knowledge (11832)": 0.9948,
+    "Mindtap Talisman (18371)": 0.9867
+   },
+   "names": [
+    "Mask of the Unforgiven",
+    "Nacreous Shell Necklace",
+    "Wyrmhide Spaulders",
+    "Heliotrope Cloak",
+    "Savage Gladiator Chain",
+    "Slashclaw Bracers",
+    "Voone's Vice Grips",
+    "Highlander's Cloth Girdle",
+    "Skyshroud Leggings",
+    "Greaves of Withering Despair",
+    "Tracker's Signet of Ferocity",
+    "Tarnished Elven Ring",
+    "Blackhand's Breadth",
+    "Sanctified Orb",
+    "Treant's Bane",
+    null,
+    "Libram of Law"
+   ],
+   "race_seed1": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0074988431586414
+   },
+   "confirm_seed2": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0074262971258838
+   },
+   "weights": {
+    "PseudoStatMainHandDps": 1.6155,
+    "StatAgility": 0.2633,
+    "StatArmorPenetration": 0.0315,
+    "StatAttackPower": 0.1201,
+    "StatCritRating": 0.3848,
+    "StatExpertiseRating": 0.539,
+    "StatHasteRating": 0.2721,
+    "StatHitRating": 0.7518,
+    "StatHolyDamage": 0.398,
+    "StatIntellect": 0.1712,
+    "StatSpellDamage": 0.398,
+    "StatSpirit": -0.0011,
+    "StatStrength": 0.2883
+   },
+   "evaluated_on": [
+    "shockadin-raid: ml winner (pre-BiS, full raid)"
+   ],
+   "commit": "2e6e77d84"
+  }
+ },
+ "search": {
+  "bis-dummy": {
+   "class": "paladin",
+   "spec": "Hybrid Holy/Retribution",
+   "setting": "dummy",
+   "entry": "shockadin-raid",
+   "date": "2026-11-20",
+   "winner": {
+    "allocation": {
+     "Holy": [
+      [
+       "Divine Strength",
+       5
+      ],
+      [
+       "Reverence",
+       2
+      ],
+      [
+       "Improved Seals",
+       5
+      ],
+      [
+       "Purifying Power",
+       2
+      ],
+      [
+       "Divine Favor",
+       1
+      ],
+      [
+       "Holy Conduit",
+       2
+      ],
+      [
+       "Divine Precision",
+       2
+      ],
+      [
+       "Infusion of Light",
+       1
+      ],
+      [
+       "Consecrated Ground",
+       2
+      ],
+      [
+       "Holy Shock",
+       1
+      ]
+     ],
+     "Protection": [],
+     "Retribution": [
+      [
+       "Benediction",
+       5
+      ],
+      [
+       "Improved Judgement",
+       2
+      ],
+      [
+       "Conviction",
+       3
+      ],
+      [
+       "Sanctified Judgement",
+       3
+      ],
+      [
+       "Vindication",
+       3
+      ],
+      [
+       "Seal of Command",
+       1
+      ],
+      [
+       "Pursuit of Justice",
+       1
+      ],
+      [
+       "Sacred Arbiter",
+       1
+      ],
+      [
+       "Two-Handed Weapon Specialization",
+       3
+      ],
+      [
+       "Vengeance",
+       3
+      ],
+      [
+       "Champion of the Light",
+       3
+      ]
+     ]
+    },
+    "split": "23/0/28",
+    "dps": 456.44,
+    "se": 0.178,
+    "iterations": 10000,
+    "build": "shockadin-holy-shock-raid"
+   },
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-hybrid-holy-retribution-bis.gear.json",
+   "commit": "2e6e77d84",
+   "pick_tiers": true
+  },
+  "bis-raid": {
+   "class": "paladin",
+   "spec": "Hybrid Holy/Retribution",
+   "setting": "raid",
+   "entry": "shockadin-raid",
+   "date": "2026-11-20",
+   "winner": {
+    "allocation": {
+     "Holy": [
+      [
+       "Divine Strength",
+       5
+      ],
+      [
+       "Reverence",
+       2
+      ],
+      [
+       "Improved Seals",
+       5
+      ],
+      [
+       "Purifying Power",
+       2
+      ],
+      [
+       "Divine Favor",
+       1
+      ],
+      [
+       "Holy Conduit",
+       2
+      ],
+      [
+       "Divine Precision",
+       2
+      ],
+      [
+       "Infusion of Light",
+       1
+      ],
+      [
+       "Consecrated Ground",
+       2
+      ],
+      [
+       "Holy Shock",
+       1
+      ]
+     ],
+     "Protection": [],
+     "Retribution": [
+      [
+       "Benediction",
+       5
+      ],
+      [
+       "Improved Judgement",
+       2
+      ],
+      [
+       "Conviction",
+       3
+      ],
+      [
+       "Sanctified Judgement",
+       3
+      ],
+      [
+       "Vindication",
+       3
+      ],
+      [
+       "Seal of Command",
+       1
+      ],
+      [
+       "Pursuit of Justice",
+       1
+      ],
+      [
+       "Sacred Arbiter",
+       1
+      ],
+      [
+       "Two-Handed Weapon Specialization",
+       3
+      ],
+      [
+       "Vengeance",
+       3
+      ],
+      [
+       "Champion of the Light",
+       3
+      ]
+     ]
+    },
+    "split": "23/0/28",
+    "dps": 813.8,
+    "se": 0.283,
+    "iterations": 10000,
+    "build": "shockadin-holy-shock-raid"
+   },
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-hybrid-holy-retribution-bis.gear.json",
+   "commit": "2e6e77d84",
+   "pick_tiers": true
+  },
+  "prebis-dummy": {
+   "class": "paladin",
+   "spec": "Hybrid Holy/Retribution",
+   "setting": "dummy",
+   "entry": "shockadin-raid",
+   "date": "2026-11-20",
+   "winner": {
+    "allocation": {
+     "Holy": [
+      [
+       "Divine Strength",
+       5
+      ],
+      [
+       "Reverence",
+       2
+      ],
+      [
+       "Improved Seals",
+       5
+      ],
+      [
+       "Purifying Power",
+       2
+      ],
+      [
+       "Divine Favor",
+       1
+      ],
+      [
+       "Holy Conduit",
+       2
+      ],
+      [
+       "Divine Precision",
+       2
+      ],
+      [
+       "Infusion of Light",
+       1
+      ],
+      [
+       "Consecrated Ground",
+       2
+      ],
+      [
+       "Holy Shock",
+       1
+      ]
+     ],
+     "Protection": [],
+     "Retribution": [
+      [
+       "Benediction",
+       5
+      ],
+      [
+       "Improved Judgement",
+       2
+      ],
+      [
+       "Conviction",
+       3
+      ],
+      [
+       "Sanctified Judgement",
+       3
+      ],
+      [
+       "Vindication",
+       3
+      ],
+      [
+       "Seal of Command",
+       1
+      ],
+      [
+       "Pursuit of Justice",
+       1
+      ],
+      [
+       "Sacred Arbiter",
+       1
+      ],
+      [
+       "Two-Handed Weapon Specialization",
+       3
+      ],
+      [
+       "Vengeance",
+       3
+      ],
+      [
+       "Champion of the Light",
+       3
+      ]
+     ]
+    },
+    "split": "23/0/28",
+    "dps": 442.31,
+    "se": 0.177,
+    "iterations": 10000,
+    "build": "shockadin-holy-shock-raid"
+   },
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-hybrid-holy-retribution-prebis.gear.json",
+   "commit": "2e6e77d84",
+   "pick_tiers": true
+  },
+  "prebis-raid": {
+   "class": "paladin",
+   "spec": "Hybrid Holy/Retribution",
+   "setting": "raid",
+   "entry": "shockadin-raid",
+   "date": "2026-11-20",
+   "winner": {
+    "allocation": {
+     "Holy": [
+      [
+       "Divine Strength",
+       5
+      ],
+      [
+       "Reverence",
+       2
+      ],
+      [
+       "Improved Seals",
+       5
+      ],
+      [
+       "Purifying Power",
+       2
+      ],
+      [
+       "Divine Favor",
+       1
+      ],
+      [
+       "Holy Conduit",
+       2
+      ],
+      [
+       "Divine Precision",
+       2
+      ],
+      [
+       "Infusion of Light",
+       1
+      ],
+      [
+       "Consecrated Ground",
+       2
+      ],
+      [
+       "Holy Shock",
+       1
+      ]
+     ],
+     "Protection": [],
+     "Retribution": [
+      [
+       "Benediction",
+       5
+      ],
+      [
+       "Improved Judgement",
+       2
+      ],
+      [
+       "Conviction",
+       3
+      ],
+      [
+       "Sanctified Judgement",
+       3
+      ],
+      [
+       "Vindication",
+       3
+      ],
+      [
+       "Seal of Command",
+       1
+      ],
+      [
+       "Pursuit of Justice",
+       1
+      ],
+      [
+       "Sacred Arbiter",
+       1
+      ],
+      [
+       "Two-Handed Weapon Specialization",
+       3
+      ],
+      [
+       "Vengeance",
+       3
+      ],
+      [
+       "Champion of the Light",
+       3
+      ]
+     ]
+    },
+    "split": "23/0/28",
+    "dps": 780.03,
+    "se": 0.3,
+    "iterations": 10000,
+    "build": "shockadin-holy-shock-raid"
+   },
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-hybrid-holy-retribution-prebis.gear.json",
+   "commit": "2e6e77d84",
+   "pick_tiers": true
+  },
+  "dungeon-raid": {
+   "class": "paladin",
+   "spec": "Hybrid Holy/Retribution",
+   "setting": "raid",
+   "entry": "shockadin-raid",
+   "date": "2026-11-20",
+   "commit": "2e6e77d84",
+   "method": "the record's tier winners raced in the tier's set in a full raid (no search of its own)",
+   "winner": {
+    "allocation": {
+     "Holy": [
+      [
+       "Divine Strength",
+       5
+      ],
+      [
+       "Reverence",
+       2
+      ],
+      [
+       "Improved Seals",
+       5
+      ],
+      [
+       "Purifying Power",
+       2
+      ],
+      [
+       "Divine Favor",
+       1
+      ],
+      [
+       "Holy Conduit",
+       2
+      ],
+      [
+       "Divine Precision",
+       2
+      ],
+      [
+       "Infusion of Light",
+       1
+      ],
+      [
+       "Consecrated Ground",
+       2
+      ],
+      [
+       "Holy Shock",
+       1
+      ]
+     ],
+     "Protection": [],
+     "Retribution": [
+      [
+       "Benediction",
+       5
+      ],
+      [
+       "Improved Judgement",
+       2
+      ],
+      [
+       "Conviction",
+       3
+      ],
+      [
+       "Sanctified Judgement",
+       3
+      ],
+      [
+       "Vindication",
+       3
+      ],
+      [
+       "Seal of Command",
+       1
+      ],
+      [
+       "Pursuit of Justice",
+       1
+      ],
+      [
+       "Sacred Arbiter",
+       1
+      ],
+      [
+       "Two-Handed Weapon Specialization",
+       3
+      ],
+      [
+       "Vengeance",
+       3
+      ],
+      [
+       "Champion of the Light",
+       3
+      ]
+     ]
+    },
+    "split": "23/0/28",
+    "dps": 733.5,
+    "from": "prebis-raid"
+   },
+   "race": [
+    {
+     "iterations": 30000,
+     "seed": 1,
+     "dps": [
+      733.5
+     ]
+    }
+   ],
+   "candidates": {
+    "prebis-raid": 733.5
+   },
+   "minutes": 4.0
+  }
+ },
+ "pick_tiers": {
+  "build": "shockadin-holy-shock-raid",
+  "date": "2026-11-20",
+  "note": "the page's pick in each tier's gear (the short-check method of 2026-11-20); no talent search"
+ },
+ "compare": {
+  "setting": "dummy",
+  "dps": {
+   "winner": {
+    "entry": "shockadin-raid",
+    "dps": 456.44,
+    "se": 0.178
+   }
+  },
+  "best_hand": "shockadin-holy-shock-raid",
+  "gain_vs_hand": 0.0,
+  "commit": "2e6e77d84",
+  "pick_tiers": true
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "shockadin-raid",
+    "dps": 813.94,
+    "se": 0.09
+   },
+   "shockadin-holy-shock-raid": {
+    "entry": "shockadin-raid",
+    "dps": 813.94,
+    "se": 0.09
+   },
+   "ret-raid-dps": {
+    "entry": "ret-dps",
+    "dps": 639.82,
+    "se": 0.098
+   },
+   "shockadin-open-raid": {
+    "entry": "shockadin-raid",
+    "dps": 809.69,
+    "se": 0.089
+   }
+  },
+  "best_hand": "shockadin-holy-shock-raid",
+  "gain_vs_hand": 0.0
+ },
+ "signature_check": {
+  "spec": "Hybrid Holy/Retribution",
+  "ok": true,
+  "core_share": 0.1144,
+  "min_share": 0.0,
+  "cd_use": 0.9444,
+  "min_cd_use": 0.9,
+  "uncast": [],
+  "missing_talents": [],
+  "why": "",
+  "entry": "shockadin-raid",
+  "setting": "raid",
+  "iterations": 6000,
+  "dps": 814.4,
+  "date": "2026-11-20",
+  "commit": "2e6e77d84",
+  "shares": {
+   "Auto Attack": 0.2199,
+   "Seal of Righteousness": 0.1735,
+   "Judgement of Righteousness": 0.1408,
+   "Consecration": 0.126,
+   "Holy Shock": 0.1144,
+   "Holy Strike": 0.111,
+   "Windfury Totem": 0.0614,
+   "Hammer of Wrath": 0.0449,
+   "Demonic Rune": 0.0055,
+   "spell 16614": 0.0027
+  },
+  "casts": {
+   "Hammer of Wrath": 5.0,
+   "Judgement of Righteousness": 23.0,
+   "Holy Strike": 18.0,
+   "Seal of Righteousness": 10.0,
+   "Retribution Aura": 1.0,
+   "Holy Shock": 17.0,
+   "Seal of the Crusader": 1.0,
+   "Consecration": 22.0,
+   "Divine Favor": 2.0
+  },
+  "allocation": {
+   "Holy": [
+    [
+     "Divine Strength",
+     5
+    ],
+    [
+     "Reverence",
+     2
+    ],
+    [
+     "Improved Seals",
+     5
+    ],
+    [
+     "Purifying Power",
+     2
+    ],
+    [
+     "Divine Favor",
+     1
+    ],
+    [
+     "Holy Conduit",
+     2
+    ],
+    [
+     "Divine Precision",
+     2
+    ],
+    [
+     "Infusion of Light",
+     1
+    ],
+    [
+     "Consecrated Ground",
+     2
+    ],
+    [
+     "Holy Shock",
+     1
+    ]
+   ],
+   "Protection": [],
+   "Retribution": [
+    [
+     "Benediction",
+     5
+    ],
+    [
+     "Improved Judgement",
+     2
+    ],
+    [
+     "Conviction",
+     3
+    ],
+    [
+     "Sanctified Judgement",
+     3
+    ],
+    [
+     "Vindication",
+     3
+    ],
+    [
+     "Seal of Command",
+     1
+    ],
+    [
+     "Pursuit of Justice",
+     1
+    ],
+    [
+     "Sacred Arbiter",
+     1
+    ],
+    [
+     "Two-Handed Weapon Specialization",
+     3
+    ],
+    [
+     "Vengeance",
+     3
+    ],
+    [
+     "Champion of the Light",
+     3
+    ]
+   ]
+  }
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-11-20",
+  "setting": "raid",
+  "why": "confirms shockadin-holy-shock-raid (+0.00% in a full raid)"
+ }
+}

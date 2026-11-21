@@ -66,17 +66,17 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`fire-open-raid`](fire-open-raid.md) | ours: derived (open search) | 17/31/3 | 577 | +0.0% | 873 | +0.0% | 3 s |
-| 2 | *Fire Skyborne GT 180* | community simulator | - | 576 | -0.3% | 862 | -1.3% | 2 s |
-| 3 | *Fire* | community simulator | - | 575 | -0.3% | 871 | -0.2% | 4 s |
-| 4 | *Fire Skyborne LT 180* | community simulator | - | 571 | -1.0% | 861 | -1.4% | 3 s |
-| 5 | [`fire-raid`](fire-raid.md) | ours: hand draft | 16/32/3 | 569 | -1.4% | 837 | -4.1% | 4 s |
-| 6 | **[`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md)** | ours: optimizer | 18/31/2 | 565 | -2.2% | 828 | -5.2% | 1 s |
-| 7 | *FFB* | community simulator | - | 478 | -17.3% | 626 | -28.2% | 30 s |
-| 8 | *Arcane Fire* | community simulator | - | 406 | -29.7% | 595 | -31.8% | 1 s |
-| 9 | *Arcane* | community simulator | - | 360 | -37.7% | 430 | -50.7% | 1 s |
-| 10 | *Frost Incin* | community simulator | - | 321 | -44.3% | 383 | -56.1% | 0 s |
-| 11 | *Frost Med* | community simulator | - | 318 | -45.0% | 392 | -55.0% | 0 s |
+| 1 | [`fire-open-raid`](fire-open-raid.md) | ours: derived (open search) | 17/31/3 | 577 | +0.0% | 869 | +0.0% | 3 s |
+| 2 | *Fire Skyborne GT 180* | community simulator | - | 575 | -0.4% | 859 | -1.1% | 2 s |
+| 3 | *Fire* | community simulator | - | 575 | -0.4% | 868 | -0.2% | 4 s |
+| 4 | *Fire Skyborne LT 180* | community simulator | - | 571 | -1.1% | 859 | -1.2% | 3 s |
+| 5 | [`fire-raid`](fire-raid.md) | ours: hand draft | 16/32/3 | 569 | -1.4% | 838 | -3.6% | 4 s |
+| 6 | **[`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md)** | ours: optimizer | 18/31/2 | 564 | -2.2% | 827 | -4.8% | 1 s |
+| 7 | *FFB* | community simulator | - | 478 | -17.3% | 626 | -27.9% | 30 s |
+| 8 | *Arcane Fire* | community simulator | - | 406 | -29.7% | 595 | -31.5% | 1 s |
+| 9 | *Arcane* | community simulator | - | 360 | -37.7% | 430 | -50.5% | 1 s |
+| 10 | *Frost Incin* | community simulator | - | 314 | -45.7% | 363 | -58.3% | 0 s |
+| 11 | *Frost Med* | community simulator | - | 302 | -47.6% | 383 | -55.9% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -127,6 +127,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
   31. threshold 4 -> 2: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability < 5) and (stacks of Fire Vulnerability < 4 or not spellIsCasting): cast Scorch (+0.2%, pass 14)
   32. drop: if mana < current cost: groupReference (+0.4%, pass 15)
 
+Before the pull: at -2s: if Ice Barrier is known: cast Ice Barrier.
+
 | # | Priority (the first line whose condition holds is cast) | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) casts/min |
 |---|---|---|
 | 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 6.5 |
@@ -140,7 +142,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 | 9 | cast Robe of the Archmage | as ready |
 | 10 | cast Scorch | 6.5 |
 
-Lines of the simulator's rotation these builds never cast: cast Fireball (rank 10), cast spell 1326055 (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Ice Barrier (needs the Ice Barrier talent).
 
 Damage by ability:
 

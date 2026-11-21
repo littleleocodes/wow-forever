@@ -1,0 +1,92 @@
+{
+ "id": "check-destro-raid",
+ "allocation": {
+  "Affliction": [
+   [
+    "Improved Life Tap",
+    2
+   ],
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Corruption",
+    5
+   ],
+   [
+    "Improved Bane of Agony",
+    2
+   ],
+   [
+    "Amplify Curse",
+    1
+   ],
+   [
+    "Pandemic",
+    3
+   ]
+  ],
+  "Demonology": [],
+  "Destruction": [
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Cataclysm",
+    3
+   ],
+   [
+    "Aftermath",
+    5
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Shadowburn",
+    1
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ],
+   [
+    "Conflagrate",
+    1
+   ],
+   [
+    "Bane of Havoc",
+    1
+   ],
+   [
+    "Fire and Brimstone",
+    3
+   ],
+   [
+    "Shadow and Flame",
+    5
+   ],
+   [
+    "Incinerate",
+    1
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-11-20) for destro-raid from destruction-succubus-raid in the raid setting: 881.2 -> 881.2 DPS on a third seed.",
+ "search": {
+  "start": "destruction-succubus-raid",
+  "setting": "raid",
+  "kept": [
+   "Bane of Havoc",
+   "Shadow and Flame"
+  ],
+  "moves": [],
+  "dps_start": 881.2378362068524,
+  "dps_end": 881.2378362068524,
+  "gain": 0.0,
+  "tank": false
+ }
+}

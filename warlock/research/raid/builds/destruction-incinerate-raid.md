@@ -76,9 +76,9 @@ Destruction to Incinerate, the Forever capstone (Fire damage, +25% on a target w
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`destruction-incinerate-open-raid`](destruction-incinerate-open-raid.md) | ours: derived (open search) | 10/11/30 | 695 | +0.0% | 785 | +0.0% | 1 s |
-| 2 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 669 | -3.8% | 746 | -5.0% | 1 s |
-| 3 | *Destro* | community simulator | - | 633 | -9.0% | 705 | -10.2% | 1 s |
+| 1 | [`destruction-incinerate-open-raid`](destruction-incinerate-open-raid.md) | ours: derived (open search) | 10/11/30 | 685 | +0.0% | 771 | -1.0% | 1 s |
+| 2 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 663 | -3.3% | 779 | +0.0% | 1 s |
+| 3 | *Destro* | community simulator | - | 626 | -8.7% | 778 | -0.1% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -87,7 +87,7 @@ Destruction to Incinerate, the Forever capstone (Fire damage, +25% on a target w
   2. move to the top: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.8%)
   3. threshold 3.5 -> 5.25: if time left in the fight ≤ 3.5: cast Searing Pain (+0.2%)
   4. only with 10s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption + threshold 5.25 -> 3.938: if time left in the fight ≤ 5.25: cast Searing Pain (+0.2%)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-09, 8 passes, the last 2026-11-17, 12 changes to the base rotation; third-seed check: destruction-incinerate-open-raid 425 -> 803 DPS (+89.0%), sim preset: Destro 729 -> 721 DPS (-1.1%), destruction-incinerate-raid 723 -> 762 DPS (+5.4%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-09, 9 passes, the last 2026-11-20, 17 changes to the base rotation; third-seed check: destruction-incinerate-open-raid 406 -> 770 DPS (+89.9%), sim preset: Destro 706 -> 778 DPS (+10.1%), destruction-incinerate-raid 701 -> 778 DPS (+11.0%)):
   1. insert before the filler: cast Shadowburn (+6.9%, pass 1)
   2. insert before the filler: cast Shadow Bolt (+1.8%, pass 1)
   3. insert at the top: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.4%, pass 1)
@@ -100,33 +100,43 @@ Destruction to Incinerate, the Forever capstone (Fire damage, +25% on a target w
   10. drop: if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune (+0.2%, pass 4)
   11. move down below 'if time left on Immolate ≤ cast time of Immolate and mana % ≥ 60%: cast Immolate': if not Curse of the Elements is up: cast Curse of the Elements (+0.2%, pass 6)
   12. threshold 20s -> 10s: if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate (+0.2%, pass 6)
+  13. insert at the end: cast Shadow Bolt (+44.1%, pass 9)
+  14. drop the condition: if time left in the fight ≤ 1.5: cast Shadowburn (+4.5%, pass 9)
+  15. threshold 20s -> 10s: if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate (rank 7) (+0.4%, pass 9)
+  16. move to the top: if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 10s: cast Immolate (rank 7) (+0.3%, pass 9)
+  17. threshold 10% -> 5%: if mana % < 10%: cast Life Tap (+0.3%, pass 9)
 
 Before the pull: at -1.5s: cast Life Tap.
 
 | # | Priority (the first line whose condition holds is cast) | [`destruction-incinerate-raid`](destruction-incinerate-raid.md) casts/min |
 |---|---|---|
-| 1 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
-| 2 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
-| 3 | use every other cooldown when ready | as ready |
-| 4 | if time left in the fight ≤ 3.938: cast Searing Pain | 0.5 |
-| 5 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
-| 6 | if mana % < 10%: cast Life Tap | 7.3 |
-| 7 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
-| 8 | if Immolate is on the target: cast Conflagrate | 4.0 |
+| 1 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption (rank 6) | 3.3 |
+| 2 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
+| 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
+| 4 | use every other cooldown when ready | as ready |
+| 5 | if time left in the fight ≤ 1.5: cast Shadowburn | 0.2 |
+| 6 | if time left in the fight ≤ 3.938: cast Searing Pain | 0.5 |
+| 7 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 |
+| 8 | if mana % < 10%: cast Life Tap | 6.9 |
+| 9 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
+| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate (rank 7) | 3.5 |
+| 11 | if Immolate is on the target: cast Conflagrate | 4.0 |
+| 12 | cast Shadow Bolt | 11.9 |
 
-Lines of the simulator's rotation these builds never cast: cast Corruption (rank 6), cast Shadowburn, cast Immolate (rank 7), cast Shadow Bolt, cast Incinerate (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Incinerate (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`destruction-incinerate-raid`](destruction-incinerate-raid.md) |
 |---|---|
 | Shadow Bolt | 44% |
-| Corruption | 17% |
 | Bane of Agony | 16% |
+| Corruption | 16% |
 | Immolate | 12% |
 | Conflagrate | 9% |
 | Demonic Rune | 2% |
 | Searing Pain | 1% |
+| Shadowburn | 1% |
 
 ## Notes
 

@@ -61,31 +61,44 @@ The official wowsims/forever simulator's own Affliction build (its aff_wrack bui
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`affliction-wrack-raid`](affliction-wrack-raid.md)** | ours: derived (simulator preset) | 35/11/5 | 873 | +0.0% | 941 | +0.0% | 2 s |
-| 2 | *Aff (Wrack)* | community simulator | - | 873 | +0.0% | 941 | +0.0% | 2 s |
+| 1 | **[`affliction-wrack-raid`](affliction-wrack-raid.md)** | ours: derived (simulator preset) | 35/11/5 | 869 | +0.0% | 941 | +0.0% | 1 s |
+| 2 | *Aff (Wrack)* | community simulator | - | 869 | +0.0% | 941 | +0.0% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** the simulator's own rotation (no rotation search recorded).
-- **A fully buffed raid:** the simulator's own rotation: no single change (and no pair of changes) beat it on two seeds (`raidsim/apl_opt.py`, 2026-11-19).
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-11-20, 1 changes to the base rotation; third-seed check: ml: Affliction 869 -> 871 DPS (+0.2%), affliction-wrack-raid 868 -> 870 DPS (+0.2%)):
+  1. move to the top: if (number of targets = 1 or “Amount of Dooms left” < 1 and not Bane of Doom is on the target or Bane of Doom is on the target): groupReference (+0.2%)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-11-20, 3 passes, the last 2026-11-20, 2 changes to the base rotation; third-seed check: ml: Affliction 938 -> 943 DPS (+0.5%), affliction-wrack-raid 935 -> 940 DPS (+0.6%)):
+  1. move to the top: if number of targets = 1: groupReference + move to the top: groupReference (+0.4%, pass 1)
+  2. insert in the middle: cast Weakness Analyzer (+0.2%, pass 1)
 
 Before the pull: cast Shadow Bolt; at -1s: petAttack.
 
 | # | Priority (the first line whose condition holds is cast) | [`affliction-wrack-raid`](affliction-wrack-raid.md) casts/min |
 |---|---|---|
-| 1 | use every other cooldown when ready | as ready |
-| 2 | groupReference | as ready |
-| 3 | if number of targets = 1: groupReference | as ready |
-| 4 | if number of targets > 1: groupReference | as ready |
-| 5 | if (Shadow Trance is up or “Improved Shadow Bolt Known” and spell 1323392 is known and spell 1323392 is up and (auraIsInactive or time left on spell 17794 < (cast time of Shadow Bolt + spellTravelTime))): cast Shadow Bolt | 2.7 |
-| 6 | if (Shadow Trance is up or “Improved Shadow Bolt Known” and spell 1323392 is known and spell 1323392 is up and (auraIsInactive or time left on spell 17794 < (cast time of Shadow Bolt + spellTravelTime))): cast Shadow Bolt | 2.7 |
-| 7 | if (number of targets = 1 or “Amount of Dooms left” < 1 and not Bane of Doom is on the target or Bane of Doom is on the target): groupReference | as ready |
-| 8 | if (cast time of Shadow Bolt + spellTravelTime) > time left in the fight: cast Death Coil | 0.3 |
-| 9 | if mana % < 30% and time left in the fight > 60s: cast Life Tap | 1.9 |
-| 10 | channel Wrack (interrupt it when a higher line is ready) | as ready |
-| 11 | cast Life Tap | 1.9 |
+| 1 | if (number of targets = 1 or “Amount of Dooms left” < 1 and not Bane of Doom is on the target or Bane of Doom is on the target) and (time left on Bane of Doom < 15s and Bane of Doom is on the target or not Bane of Doom is on the target) and (number of targets > 1 or “Wrack Dots Up” and (“Amp Agony Up” or “Waiting Costs Frozen Heart”)): cast Frozen Heart of the Mountain | as ready |
+| 2 | if (number of targets = 1 or “Amount of Dooms left” < 1 and not Bane of Doom is on the target or Bane of Doom is on the target) and (time left on Bane of Doom < 30s and Bane of Doom is on the target or not Bane of Doom is on the target) and (number of targets > 1 or “Wrack Dots Up” and (“Amp Agony Up” or “Waiting Costs Potion”)): cast Major Spellblasting Potion | as ready |
+| 3 | use every other cooldown when ready | as ready |
+| 4 | if not warlockAssignedCurseIsActive: castWarlockAssignedCurse | as ready |
+| 5 | if warlockAssignedCurseIsActive and not warlockAssignedCurseIsActiveOnAllTargets and number of targets > 1: change target | as ready |
+| 6 | if number of targets = 1 and not Bane of Agony is on the target and time left in the fight > 12: cast Amplify Curse | 0.3 |
+| 7 | if number of targets = 1 and not Bane of Agony is on the target and time left in the fight > 12: cast Bane of Agony | 2.6 |
+| 8 | if number of targets = 1 and not Corruption is on the target and time left in the fight > 9: cast Corruption (rank 6) | 3.3 |
+| 9 | if number of targets = 1 and not Siphon Life is on the target and time left in the fight > dotBaseDuration and auraIsInactive and not Blood Fury is up and not spellIsChanneling: cast Siphon Life | 1.8 |
+| 10 | if number of targets > 1 and not Bane of Doom is on the target and (not Bane of Doom is ready or time left in the fight < “Doom tick”) and not Bane of Agony is on the target and number of targets < 5: cast Amplify Curse | 0.3 |
+| 11 | if number of targets > 1 and not Bane of Doom is on the target and not Bane of Agony is on the target and number of targets < 5: cast Bane of Agony | 2.6 |
+| 12 | if number of targets > 1 and (Bane of Agony is on the target or Bane of Doom is on the target) and not warlockBaneIsActiveOnAllTargets and (warlockAssignedCurseIsActive or warlockIsAssignedCurse) and number of targets < 5: change target | as ready |
+| 13 | if number of targets > 1 and not Corruption is on the target and time left in the fight > dotBaseDuration and not “in 5y range of 3T”: cast Corruption (rank 6) | 3.3 |
+| 14 | if number of targets > 1 and Corruption is on the target and not dotIsActiveOnAllTargets and (warlockAssignedCurseIsActive or warlockIsAssignedCurse) and ((Bane of Agony is on the target or Bane of Doom is on the target) or not number of targets < 5) and time left in the fight > dotBaseDuration and not “in 5y range of 3T”: change target | as ready |
+| 15 | if number of targets > 1 and (warlockAssignedCurseIsActiveOnAllTargets or warlockIsAssignedCurse) and (warlockBaneIsActiveOnAllTargets or not number of targets < 5) and (dotIsActiveOnAllTargets or time left in the fight > dotBaseDuration): change target | as ready |
+| 16 | if (Shadow Trance is up or “Improved Shadow Bolt Known” and spell 1323392 is known and spell 1323392 is up and (auraIsInactive or time left on spell 17794 < (cast time of Shadow Bolt + spellTravelTime))): cast Shadow Bolt | 2.6 |
+| 17 | if (Shadow Trance is up or “Improved Shadow Bolt Known” and spell 1323392 is known and spell 1323392 is up and (auraIsInactive or time left on spell 17794 < (cast time of Shadow Bolt + spellTravelTime))): cast Shadow Bolt | 2.6 |
+| 18 | if (cast time of Shadow Bolt + spellTravelTime) > time left in the fight: cast Death Coil | 0.3 |
+| 19 | if mana % < 30% and time left in the fight > 60s: cast Life Tap | 1.8 |
+| 20 | channel Wrack (interrupt it when a higher line is ready) | as ready |
+| 21 | cast Life Tap | 1.8 |
 
-Lines of the simulator's rotation these builds never cast: cast Bane of Doom (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Eureka!, cast Blood Fury, cast Bane of Doom (its condition never held in these fights).
 
 Damage by ability:
 
