@@ -444,19 +444,26 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
                 f["fail"].append(f"d: the raid's {s} changes nothing for it")
         if res["rotation_fail"]:
             f["fail"] += [f"e: {x}" for x in res["rotation_fail"]]
-    # a build listed in several entries is judged where its page number comes from (render_modes.raid_numbers' entry): a pet build in
-    # the Lone Wolf entry, for one, holds pet talents worth nothing there
-    try:
-        import render_modes as RM
-        home = {b: (RM.raid_numbers(cls).get(b) or {}).get("entry") for b in bids}
-    except Exception:   # noqa: BLE001
-        home = {}
-    for b, f in res["builds"].items():
-        if home.get(b) and home[b] != ename and f["fail"]:
-            f["notes"] = [f"its page number comes from {home[b]}: its failures in {ename} are notes"] + f["fail"]
-            f["fail"] = []
     res["fail"] = sorted({b for b, f in res["builds"].items() if f["fail"]})
     return res
+
+
+def judge_at_home(cls_rec):
+    """A build listed in several entries is judged where its page number comes from: the entry with its highest full-raid number, as
+    render_modes.raid_numbers takes it (a pet build in the Lone Wolf entry holds pet talents worth nothing there). Its failures in the
+    other entries become notes. `cls_rec` is {entry: record} for one class."""
+    best = {}
+    for e, r in cls_rec.items():
+        for b, f in (r.get("builds") or {}).items():
+            if f.get("dps") and (b not in best or f["dps"] > best[b][1]):
+                best[b] = (e, f["dps"])
+    for e, r in cls_rec.items():
+        for b, f in (r.get("builds") or {}).items():
+            home = best.get(b, (e,))[0]
+            if home != e and f.get("fail"):
+                f["notes"] = [f"its page number comes from {home}: its failures in {e} are notes"] + f["fail"] + list(f.get("notes") or [])
+                f["fail"] = []
+        r["fail"] = sorted({b for b, f in (r.get("builds") or {}).items() if f.get("fail")})
 
 
 def main():
@@ -472,22 +479,28 @@ def main():
     rec = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
     classes = a.classes or [c for c in R.SPECS if isinstance(R.SPECS[c], dict)]
     for cls in classes:
+        done = {}
         for ename, entry in R.SPECS[cls].items():
             if not isinstance(entry, dict) or not entry.get("apl") or (a.entry and ename not in a.entry):
                 continue
             res = check_entry(cls, ename, entry, repo, a.fights, switches=not a.skip_switches)
-            if res is None:
-                continue
-            res["date"] = datetime.date.today().isoformat()
+            if res is not None:
+                res["date"] = datetime.date.today().isoformat()
+                done[ename] = res
+        # judged at home over the class's whole record (the entries this run checked, the others as last written)
+        merged = {**(rec.get(cls) or {}), **done}
+        judge_at_home(merged)
+        for ename, res in done.items():
+            res = merged[ename]
             print(f"== {cls} {ename} ({res['rotation']}): " + (f"FAIL in {', '.join(res['fail'])}" if res["fail"] else "pass"), flush=True)
             for b, f in res["builds"].items():
                 print(f"   {b} {f['dps']:.2f}: " + ("; ".join(f["fail"]) if f["fail"] else "pass"), flush=True)
                 for k in ("never_cast", "abilities", "zero_talents"):
                     for x in f[k]:
                         print(f"      {k}: {x}", flush=True)
-            if a.write:
-                rec.setdefault(cls, {})[ename] = res
-                OUT.write_text(json.dumps(rec, indent=1) + "\n", encoding="utf-8")
+        if a.write and done:
+            rec[cls] = merged
+            OUT.write_text(json.dumps(rec, indent=1) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":
