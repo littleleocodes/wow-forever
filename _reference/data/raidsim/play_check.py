@@ -158,10 +158,9 @@ SIM_ROTATIONS = {
     "warrior": {"arms-2h-raid": ["ui/specs/warrior/dps/apls/arms.apl.json", "ui/specs/warrior/dps/apls/fury.apl.json"],
                 "arms-battle-raid": ["ui/specs/warrior/dps/apls/arms.apl.json"], "fury-dw-raid": ["ui/specs/warrior/dps/apls/fury.apl.json"],
                 "prot-tank": ["ui/specs/warrior/protection/apls/default.apl.json"]},
-    "warlock": {"affliction-raid": [U + "warlock/upstream/aff_wrack.apl.json"], "affliction-wrack-raid": [U + "warlock/upstream/aff_wrack.apl.json"],
-                "demonology-raid": [U + "warlock/upstream/demo_shadow_brand.apl.json", U + "warlock/upstream/demo_fire_brand.apl.json"],
-                "destro-raid": [U + "warlock/upstream/destro.apl.json"], "fire-destro-raid": [U + "warlock/upstream/destro.apl.json"],
-                "incinerate-raid": [U + "warlock/upstream/destro.apl.json"], "sb-raid": [U + "warlock/upstream/sm_ruin.apl.json", U + "warlock/upstream/destro.apl.json"]},
+    # each official warlock rotation is written for one build (Wrack, a demon brand, Destruction, SM/Ruin): every entry against the best
+    "warlock": {e: [U + f"warlock/upstream/{n}.apl.json" for n in ("aff_wrack", "demo_shadow_brand", "demo_fire_brand", "destro", "sm_ruin")]
+                for e in ("affliction-raid", "affliction-wrack-raid", "demonology-raid", "destro-raid", "fire-destro-raid", "incinerate-raid", "sb-raid")},
 }
 
 
@@ -451,7 +450,7 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
         cs = all_cs[b]
         have = flat(data[b]["allocation"])
         f = {"dps": round(row.get("dps") or 0, 2), "never_cast": [], "abilities": [], "zero_talents": [], "inert_switches": [], "fail": []}
-        acts = row.get("actions") or []
+        acts = [x for x in (row.get("actions") or []) if not x.get("pet")]   # the character's own rows (the bench marks a pet's "pet": true)
         # b2: swings (Maul's damage cast directly read 227 hits on top of 72 white swings; a 2.5 s weapon makes 72 in 180 s)
         queued = sum(x.get("casts") or 0 for x in acts if x.get("spellId") in qtag and (x.get("tag") or 0) != qtag[x["spellId"]])
         white = sum(x.get("casts") or 0 for x in acts if x.get("other") == "OtherActionAttack" and x.get("tag") == 14)
