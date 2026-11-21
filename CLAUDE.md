@@ -885,9 +885,27 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
   3. **Failing alternatives**: through the exact filler pass (deep-runs/credited_fillers_1120.py --extra: a point moves only at
      bit-identical damage in a full raid and on the dummy, into a more useful legal talent). One that still fails and trails its page's
      pick by more than 5% leaves the player pages (`player_page: false` with `player_page_why`; render_modes.page_list; research keeps
-     it): seven old builds on 2026-11-20.
-  4. **Leveling next** (to build): the fight lab's play check (a spell the steps name that the lab never presses, a talent worth exactly
-     zero at every level, a rules veto that removes a signature spell); level_guides --check's zero-cast warnings become errors.
+     it): nine old builds on 2026-11-20 (deep-runs/off_pages_1120.py). A build listed in several entries is judged in the entry its page
+     number comes from (its highest full-raid number); its failures elsewhere are notes.
+  4. **Leveling**: `fightlab/play_check.py` (La-Ll; a flagged jump says what changed between the two levels: points, ranks pressed, gear,
+     mob); Lg's "never tried" verdicts come from `fightlab/force_run.py` (a spell forced into the priority at the top and in place of the
+     filler, in its own process; a LEAD or a spell the module cannot cast stays a FAIL), in `fightlab/never-tried.json`.
+  5. **The audit's D12 guards** (2026-11-20 night): the bear's rotation had cast Maul's swing damage (9881 tag 1) off the swing timer
+     since the re-pin of 2026-11-16 (about seven times the threat): run.queue_tag gave every queued strike tag 1, the press of Heroic
+     Strike, Cleave and Raptor Strike, where Maul's press is untagged (sim/druid/maul.go; `run.QUEUE_TAG`), and the simulator's rotation
+     lookup falls back silently to a spell registered without SpellFlagAPL (core/apl_helpers.go). Since then:
+     - `raidsim/flags_bench.py` builds `foreverbench-flags.exe` (a separate binary: the main bench, its stamp and every race fingerprint
+       stay as they are) whose spells mode lists each registered spell's tag and rotation flag; every cast of our rotation files is
+       "rotation", "INTERNAL" (a FAIL) or "unknown" (`raidsim/flags-check.json`); apl_opt refuses a base with an internal cast and keeps
+       such casts out of its pool and candidates; the play check's dead-line rule asks it which ids the character registers.
+     - b2: on-next-swing hits plus white main-hand swings within twice the swings the weapon makes (Bear Form 2.5 s, Cat Form 1.0 s);
+       b3: the rotation's casts on the global cooldown within one a second; c2: ours more than 20% ahead of the best official rotation
+       for the entry (play_check.SIM_ROTATIONS; none ships for the priest and the shaman) is suspect until `raidsim/too-good-notes.json`
+       explains the casts. Casts are recorded summed by name over the ranks, with a by-id list beside.
+     - No rank the trainer teaches below level 20 of a spell with a rank at 20 or above, while the simulator gives such ranks their full
+       coefficient (Classic's rule: 3.75% less a level below 20); the rotation search's lower-rank edit offers ranks taught at 20 or above
+       only (apl_opt.low_ranks); the play check fails such a cast "below-20 rank, penalty not modelled". Smite rank 2 had won 12-14% as a
+       mana tool on the gap. The rule goes in as a simulator patch at the next re-pin, and the low ranks with it.
   The day's findings behind it: siml_upstream_race.py had swapped Hunter's Mark's cast along with its aura (PATCH_AURAS moves aura
   references only); the raid's hunters_mark is off for any hunter by upstream's design, so every hunter rotation carries the two mark
   lines (deep-runs/mark_lines_1120.py); the raid utility tags (utility_tags.py, the filler audit's order and the scorer's raid
