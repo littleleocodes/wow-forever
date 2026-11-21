@@ -23,8 +23,8 @@
     "id": 47
    },
    "standing": {
-    "raw": 14300,
-    "value": 5300,
+    "raw": 14425,
+    "value": 5425,
     "max": 12000,
     "tier": 5,
     "name": "Honored"
@@ -39,11 +39,27 @@
     "id": 577
    },
    "standing": {
-    "raw": 550,
-    "value": 550,
+    "raw": 827,
+    "value": 827,
     "max": 3000,
     "tier": 3,
     "name": "Neutral"
+   }
+  },
+  {
+   "faction": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/reputation-faction/87?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Bloodsail Buccaneers",
+    "id": 87
+   },
+   "standing": {
+    "raw": -6625,
+    "value": 35375,
+    "max": 36000,
+    "tier": 0,
+    "name": "Hated"
    }
   },
   {
@@ -55,8 +71,8 @@
     "id": 470
    },
    "standing": {
-    "raw": 600,
-    "value": 600,
+    "raw": 1027,
+    "value": 1027,
     "max": 3000,
     "tier": 3,
     "name": "Neutral"
@@ -71,8 +87,8 @@
     "id": 69
    },
    "standing": {
-    "raw": 10840,
-    "value": 1840,
+    "raw": 11002,
+    "value": 2002,
     "max": 12000,
     "tier": 5,
     "name": "Honored"
@@ -87,8 +103,8 @@
     "id": 72
    },
    "standing": {
-    "raw": 14646,
-    "value": 5646,
+    "raw": 15033,
+    "value": 6033,
     "max": 12000,
     "tier": 5,
     "name": "Honored"
@@ -103,8 +119,8 @@
     "id": 21
    },
    "standing": {
-    "raw": 550,
-    "value": 550,
+    "raw": 955,
+    "value": 955,
     "max": 3000,
     "tier": 3,
     "name": "Neutral"
@@ -119,8 +135,8 @@
     "id": 54
    },
    "standing": {
-    "raw": 13601,
-    "value": 4601,
+    "raw": 13801,
+    "value": 4801,
     "max": 12000,
     "tier": 5,
     "name": "Honored"
@@ -167,8 +183,8 @@
     "id": 369
    },
    "standing": {
-    "raw": 650,
-    "value": 650,
+    "raw": 927,
+    "value": 927,
     "max": 3000,
     "tier": 3,
     "name": "Neutral"
@@ -199,8 +215,8 @@
     "id": 2827
    },
    "standing": {
-    "raw": 550,
-    "value": 550,
+    "raw": 827,
+    "value": 827,
     "max": 3000,
     "tier": 3,
     "name": "Neutral"

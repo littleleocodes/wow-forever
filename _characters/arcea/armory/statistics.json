@@ -4,8 +4,8 @@
    "href": "https://us.api.blizzard.com/profile/wow/character/arcea-fizzlegan/statistics?namespace=profile-forever-us"
   }
  },
- "health": 827,
- "power": 2504,
+ "health": 857,
+ "power": 2495,
  "power_type": {
   "key": {
    "href": "https://us.api.blizzard.com/data/wow/power-type/0?namespace=static-1.60.1_70399-forever-us"
@@ -27,8 +27,8 @@
   "effective": 31
  },
  "intellect": {
-  "base": 79,
-  "effective": 125
+  "base": 81,
+  "effective": 123
  },
  "stamina": {
   "base": 32,
@@ -36,7 +36,7 @@
  },
  "melee_crit": {
   "rating_bonus": 0.0,
-  "value": 0.3533003,
+  "value": 0.1533003,
   "rating_normalized": 0
  },
  "melee_haste": {
@@ -73,22 +73,22 @@
  "off_hand_damage_max": 0.0,
  "off_hand_speed": 2.0,
  "off_hand_dps": 0.0,
- "spell_power": 92,
+ "spell_power": 97,
  "spell_penetration": 4,
  "spell_crit": {
   "rating_bonus": 0.0,
-  "value": 3.9250002,
+  "value": 3.7793,
   "rating_normalized": 0
  },
- "mana_regen": 90.0,
- "mana_regen_combat": 5.0,
+ "mana_regen": 89.0,
+ "mana_regen_combat": 3.0,
  "armor": {
-  "base": 31,
-  "effective": 380
+  "base": 30,
+  "effective": 379
  },
  "dodge": {
   "rating_bonus": 0.0,
-  "value": 4.6333,
+  "value": 4.5933,
   "rating_normalized": 0
  },
  "parry": {
@@ -103,7 +103,7 @@
  },
  "ranged_crit": {
   "rating_bonus": 0.0,
-  "value": 4.9533,
+  "value": 5.0733,
   "rating_normalized": 0
  },
  "ranged_haste": {
@@ -126,12 +126,12 @@
   "slug": "arcea-fizzlegan"
  },
  "spirit": {
-  "base": 73,
-  "effective": 87
+  "base": 75,
+  "effective": 89
  },
  "defense": {
-  "base": 171,
-  "effective": 171
+  "base": 175,
+  "effective": 175
  },
  "fire_resistance": {
   "base": 0,
@@ -155,12 +155,12 @@
  },
  "movement_speed": 100.0,
  "ranged_attack_power": 0,
- "ranged_damage_min": 46.25,
- "ranged_damage_max": 86.25,
+ "ranged_damage_min": 28.75,
+ "ranged_damage_max": 55.0,
  "expertise": 0.0,
  "off_hand_expertise": 0.0,
  "armor_penetration": 0.0,
- "spell_healing": 98,
+ "spell_healing": 103,
  "melee_hit": {
   "rating_bonus": 0.0,
   "value": 0.0,

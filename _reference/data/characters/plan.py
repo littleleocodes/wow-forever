@@ -3033,6 +3033,16 @@ def main():
     PROFS.update(profs)
     global MIN_LASTS, MIN_MINUTES, PRICES, GOLD
     GOLD = addon_gold if addon_gold is not None else character_gold(cfg)
+    if GOLD is None:
+        # 2026-11-20 (Arcea at 38): the bag add-on's record was 3 minutes older than Blizzard's logout and Blizzard's own gold needs the
+        # day-long login, so the page had read "log in for gold" and planned the mount from nothing; the older record beats no gold
+        older = BG.record(cfg, snap["profile"]["name"])
+        if older and older.get("money") is not None:
+            GOLD = older["money"]
+            seen = (snap["profile"].get("last_login_timestamp") or 0) / 1000
+            NOTICES.append(f"Gold is your bag add-on's of {older['when']}, before your logout at "
+                           f"{datetime.datetime.fromtimestamp(seen).strftime('%Y-%m-%d %H:%M') if seen else 'an unknown time'}: "
+                           "anything you spent or looted after it is not in it.")
     global QPL
     lv0 = snap["profile"]["level"]
     QPL = len((snap.get("quests-completed") or {}).get("quests") or []) / max(1, lv0 - 1)
