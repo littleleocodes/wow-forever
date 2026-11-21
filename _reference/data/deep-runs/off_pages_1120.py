@@ -31,6 +31,8 @@ OFF = {
                                               "Assassination's pick (assassination-open-raid, 844.1) by 17.9% (692.8)",
     ("rogue", "subtlety-hemo-raid"): "fails the play check (Camouflage, Dirty Tricks, Improved Ambush, Master of Deception and Setup worth "
                                      "nothing in a raid) and trails Subtlety's pick (subtlety-ml-raid, 817.1) by 19% (661.5)",
+    ("hunter", "opt-mm-lonewolf-raid-raid-dps"): "fails the play check (Improved Revive Pet worth nothing, a raid has no use for it) and "
+                                                 "trails the Lone Wolf pick (995.9) by 6.0% (935.7)",
 }
 
 

@@ -392,9 +392,11 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
             if t not in book or sum(cs.get(i, 0) for i in book[t][0]) > 0:
                 continue
             txt = book[t][1]
-            why = booked if t in matters else kinds.get(t)
-            if not why and gate(trees, data[b]["allocation"], t):
+            why = booked if t in matters else None
+            if not why and gate(trees, data[b]["allocation"], t):   # before unused-abilities' kind: its "wasted" can predate the build
                 why = "prerequisite"
+            if not why:
+                why = kinds.get(t)
             if not why and FA.TRIGGERED.search(txt):
                 why = "needs a parry or a block"
             if not why and (FA.DEFENSIVE.search(txt) or SHIELD.search(txt)):
@@ -442,6 +444,17 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
                 f["fail"].append(f"d: the raid's {s} changes nothing for it")
         if res["rotation_fail"]:
             f["fail"] += [f"e: {x}" for x in res["rotation_fail"]]
+    # a build listed in several entries is judged where its page number comes from (render_modes.raid_numbers' entry): a pet build in
+    # the Lone Wolf entry, for one, holds pet talents worth nothing there
+    try:
+        import render_modes as RM
+        home = {b: (RM.raid_numbers(cls).get(b) or {}).get("entry") for b in bids}
+    except Exception:   # noqa: BLE001
+        home = {}
+    for b, f in res["builds"].items():
+        if home.get(b) and home[b] != ename and f["fail"]:
+            f["notes"] = [f"its page number comes from {home[b]}: its failures in {ename} are notes"] + f["fail"]
+            f["fail"] = []
     res["fail"] = sorted({b for b, f in res["builds"].items() if f["fail"]})
     return res
 
