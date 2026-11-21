@@ -32,6 +32,16 @@
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
+
+**The timing** (the simulator's own named conditions, in its words, until this page's guide is rewritten):
+
+- “Current Points less than 5”: combo points < 5
+- “SnD Fall Imminent”: never (a switch this rotation keeps off)
+- “Boot Knife Known”: Boot Knife is taken
+- “Fight About to End”: time left in the fight ≤ 6s
+- “Expose - Prevent Other Finishers”: never (a switch this rotation keeps off)
+- “Dirty Deeds Known”: Dirty Deeds is taken
+
 ## Talents
 
 | Tree | Points | Talents (ranks) |

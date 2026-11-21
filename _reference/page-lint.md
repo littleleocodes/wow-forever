@@ -8,9 +8,10 @@
 | talents | 0 |
 | links | 0 |
 | guide | 0 |
-| build | 9 |
-| dead | 2 |
+| build | 8 |
+| dead | 0 |
 | free | 0 |
+| timing | 0 |
 | keys | 0 |
 | steps | 0 |
 | macros | 0 |
@@ -21,16 +22,10 @@
 
 - hunter: hunter/leveling/survival.md: the guide names Deadly Aspects, which the page's build does not take
 - mage: mage/leveling/fire.md: the guide names Improved Scorch, which the page's build does not take
-- mage: mage/leveling/frost.md: the guide names Frostbite, Incineration, which the page's build does not take
 - paladin: paladin/leveling/prot-ret.md: the guide names Benediction, which the page's build does not take
 - paladin: paladin/leveling/prot-ret.md: the guide says the build lacks Redoubt, which the page's build takes
 - priest: priest/leveling/smite.md: the guide names Twilight Focus, which the page's build does not take
 - warlock: warlock/leveling/affliction-demonology.md: the guide names Demonic Aegis, Demonic Brand, Grim Reach, Improved Felhunter, Improved Sayaad, Master Demonologist, Master Summoner, which the page's build does not take
 - warlock: warlock/leveling/demonology.md: the guide names Fel Vitality, Improved Sayaad, which the page's build does not take
 - warlock: warlock/leveling/destruction.md: the guide names Improved Voidwalker, Pyroclasm, which the page's build does not take
-
-## dead
-
-- mage: mage/leveling/frost.md: Arcane Wrath (1) is a talent ability the page never uses; 1 of its points could go elsewhere
-- mage: mage/leveling/frost.md: Ice Block (1) is a talent ability the page never uses; 1 of its points could go elsewhere
 

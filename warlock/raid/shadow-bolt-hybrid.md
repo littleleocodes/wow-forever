@@ -32,6 +32,11 @@
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
+
+**The timing** (the simulator's own named conditions, in its words, until this page's guide is rewritten):
+
+- “Agony time”: not Bane of Doom is on the target and not Bane of Agony is on the target and (time left in the fight < 60s or not Bane of Doom is ready) and spellExpectedDpet > “DPET Non DoT”
+
 ## Why this rotation
 
 *Guide being rewritten for the new rotation (2026-11-20).*

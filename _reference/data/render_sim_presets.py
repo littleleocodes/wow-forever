@@ -157,6 +157,12 @@ def val(v, N):
         return label
     if k == "runeCooldown" or k == "nextRuneCooldown":
         return "rune cooldown"
+    if k == "talentIsKnown":   # the talent by name (2026-11-20: Subtlety's page printed "talentIsKnown or talentIsKnown ...")
+        tid = ((x or {}).get("talentId") or {}).get("spellId")
+        try:
+            return f"{N.spell(int(tid))} is taken" if tid else "a talent is taken"
+        except Exception:   # noqa: BLE001
+            return f"talent {tid} is taken"
     if k == "variableRef":   # a named condition of the official simulator's rotations (2026-11-11: Feral's "Rip due", "Midfight Bite is
         return f"“{(x or {}).get('name') or 'a rotation variable'}”"   # worthwhile"... had printed as a bare "variableRef";
         # quoted, so simple_rotation keeps it as a named condition)

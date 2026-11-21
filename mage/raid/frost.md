@@ -28,7 +28,29 @@
 
 ## Why this rotation
 
-*Guide being rewritten for the new rotation (2026-11-20).*
+Frost in a raid builds **Winter's Chill** on the boss with **Frostbolt** and spends it with **Cone of Cold**: every Frostbolt adds a stack, and at five stacks Cone of Cold deals twice its damage plus 35% of your spell damage, a quarter of the build's damage from one cast about every 15 seconds. **Ice Lance** takes the second charge of each **Fingers of Frost** proc, **Ice Barrier** keeps Frigid Power up, and **Cold Snap** buys one more Cone of Cold a fight. Cone of Cold is a cone in front of you: stand within 10 yards of the boss and face it (behind it, with the melee). 796 DPS in a full raid. This is the official simulator's own Frost build and list (wowsims/forever's Frost preset), which the page starts from since 2026-11-20.
+
+**Why it works**
+
+- **Frostbolt** is the base: 60 casts and 66% of the damage, at rank 10, the trainer's top rank. **Improved Frostbolt** takes its cast to 2.5 seconds, **Ice Shards** doubles its critical bonus and **Precision** adds 6% hit. With 5 points in **Winter's Chill** every Frostbolt that hits puts a stack on the boss: 20% more damage from your next **Cone of Cold** and 7% of your spell damage added to it, up to 5 stacks.
+- **Cone of Cold** at five stacks (12 casts, 25% of the damage): twice its damage and 35% of your spell damage on top, and **Improved Cone of Cold** adds 35%. Its 10-second cooldown is shorter than five Frostbolts, so the list waits for the stacks, not for the cooldown. **Arctic Reach** stretches its reach by 20%.
+- **Ice Lance** on the last charge of **Fingers of Frost** (6 casts, 8.5%): each chill has a 15% chance to give you two charges that make your next spells count as cast on a frozen target, which **Shatter** turns into 50% more critical chance. The first charge goes to a Frostbolt; the instant Ice Lance takes the second and adds a Winter's Chill stack of its own.
+- **Ice Barrier** before the pull and whenever Frigid Power has under 3 seconds left (4 casts): 15% more Frost damage for a minute, and 5% more while the shield holds.
+- **Cold Snap** once a fight, when **Cone of Cold** still has 7 seconds or more of its cooldown left: it ends every other Frost cooldown, so one more five-stack Cone. It also resets **Ice Block**, which this build takes.
+
+**Caveats**
+
+- Range: **Cone of Cold** reaches 10 yards in front of you (12 with **Arctic Reach**). Where you cannot stand that close or face the boss, it goes: cast **Frostbolt** instead, and the **Winter's Chill** points add nothing. The simulator's fights stand you at 10 yards.
+- Our search's 17/2/32 (under Other builds) is 0.4% ahead in the same fights, under the 0.5% bar, and about 2% ahead in the Raid BiS set that was chosen for its talents (818 against 802), so the gear table shows it there. Which build is better gear by gear is settled in a later pass, each in a set made for it.
+- Threat: this build has no **Frost Channeling**, so your Frost spells keep their full threat; **Arcane Subtlety** lowers Arcane threat only.
+- Mana: below 5% the list uses your mana gem and channels **Evocation**. With a raid's mana buffs a 3-minute fight never gets there; a long fight does.
+- Several targets: **Blizzard**, and **Cone of Cold** hits everything in the cone. The simulator's fights are one boss.
+
+**When to change it**
+
+- If you cannot stand within 10 yards of the boss: **Frostbolt** in place of **Cone of Cold**.
+- Keep **Cold Snap** for a second **Ice Block** on a fight that needs one.
+- When raid damage breaks the shield, recast **Ice Barrier** as soon as its 30-second cooldown allows: the extra 5% lasts only while the shield holds.
 
 ## Talents
 

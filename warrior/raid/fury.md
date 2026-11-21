@@ -23,7 +23,7 @@
 3. **Reckless Swings**
 4. **Whirlwind**
 5. **Execute** when the target is below 20% health
-6. **Hamstring** when **Bloodthirst** is more than 1.125 seconds from ready and **Whirlwind** is more than 2 seconds from ready
+6. **Hamstring** when **Bloodthirst** is more than 1.1 seconds from ready and **Whirlwind** is more than 2 seconds from ready
 7. **Bloodrage** when you have less than 23 rage; no global cooldown, so press it alongside the others
 8. **Heroic Strike** (rank 8) when you have 68+ rage; no global cooldown, so press it alongside the others
 

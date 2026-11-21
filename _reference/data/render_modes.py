@@ -123,6 +123,69 @@ def unused_talents():
 
 
 UNUSED = unused_talents()
+
+
+def _raidsim_run():
+    """raidsim/run.py, loaded by its path under its own name: the fight lab's run.py may already sit in sys.modules as "run"."""
+    import importlib.util
+    if str(HERE / "raidsim") not in sys.path:
+        sys.path.insert(0, str(HERE / "raidsim"))
+    mod = sys.modules.get("raidsim_run")
+    if mod is None:
+        spec = importlib.util.spec_from_file_location("raidsim_run", HERE / "raidsim" / "run.py")
+        mod = importlib.util.module_from_spec(spec)
+        sys.modules["raidsim_run"] = mod
+        spec.loader.exec_module(mod)
+    return mod
+
+
+def timing_lines(cls, entry_name, texts, shown_spells=None):
+    """The named conditions a raid page's list leans on ("(timing: see below)"), each with its definition from the rotation's
+    valueVariables and the names those definitions use in turn, for a page whose guide does not explain them (2026-11-20, the audit
+    session: the cat's list marked seven of its eight lines, Subtlety's four, and both guides are placeholders). Technical names (guards,
+    settings) stay out, as on the list."""
+    import argparse
+    try:
+        RUN = _raidsim_run()
+        RUN.set_game("forever")
+        repo = RUN.repo_path(argparse.Namespace(repo=None))
+        apl = json.load(open(RUN.apl_path(RUN.SPECS[cls][entry_name], repo, "raid"), encoding="utf-8"))
+        import render_sim_presets as RSP
+        N = RSP.Names(repo)
+    except Exception as e:   # noqa: BLE001
+        print(f"WARNING: timing_lines({cls}, {entry_name}): {type(e).__name__}: {e}", file=sys.stderr)
+        return []
+    defs = {v.get("name"): v.get("value") for v in apl.get("valueVariables") or []}
+    consts = {n: str(v["const"].get("val")) for n, v in defs.items() if isinstance(v, dict) and "const" in v}
+    shown = set(shown_spells or [])
+    # only the lines the page shows: single target (no "number of targets = 2"), a spell of the list, no item, potion or cleave name
+    skip = re.compile(r"targets:|Cleave|[Pp]otion|Rune|Tea\b|MCP|item|Elune|Eureka", re.I)
+    names = []
+    for t in texts:
+        m = re.search(r":\s*cast (.+?)(?: \(rank \d+\))?\s*$", t)
+        if not m or (shown and m.group(1) not in shown):
+            continue
+        if re.search(r"number of targets (?:=|≥|>) ?[2-9]", t) and not re.search(r"not \(number of targets = [2-9]", t):
+            continue
+        for n in re.findall(r"“(.+?)”", t):
+            if n not in names:
+                names.append(n)
+    out = []
+    for n in names:
+        if n not in defs or n in consts or simple_rotation.TECH_NAMED.search(n) or skip.search(n):
+            continue
+        txt = RSP.val(defs[n], N)
+        for c, v in consts.items():   # a named constant written in place: "combo points ≥ “Rip target CP”" -> "combo points ≥ 4"
+            txt = txt.replace(f"“{c}”", v)
+        txt = re.sub(r"\(([^()]+?)(?: or \1)+\)", r"\1", txt)   # one talent's ranks: "(Boot Knife is taken or Boot Knife is taken ...)"
+        if re.search(r"(?:^| and )false(?: and |$)", txt):
+            txt = "never (a switch this rotation keeps off)"
+        out.append(f"- “{n}”: {txt}")
+        if len(out) >= 10:
+            break
+    if not out:
+        return []
+    return ["", "**The timing** (the simulator's own named conditions, in its words, until this page's guide is rewritten):", ""] + out + [""]
 TIER_KEYS = (("dungeon", "Quests and dungeons"), ("prebis", "Pre-BiS"), ("bis", "Raid BiS"))   # (2026-11-18: the third tier; "Phase 1 BiS" before)
 SLOTS = ["Head", "Neck", "Shoulders", "Back", "Chest", "Wrist", "Hands", "Waist", "Legs", "Feet", "Finger", "Finger", "Trinket", "Trinket",
          "Main hand", "Off hand", "Ranged/relic"]
@@ -1138,6 +1201,7 @@ def mode_section(cls, spec, mode, builds, nums, src):
     """The body of one spec x mode page."""
     R, L, H = nums
     o = []
+    timing_src = None   # (entry, used texts) when the press list marks lines "(timing: see below)"
     ranked = rank_builds(cls, mode, builds, nums)
     # 2026-10-15 page audit B10: a hybrid without a leveling build takes the hybrid branch below (the Smite priest's leveling page had
     # read "No leveling build for this spec yet")
@@ -1338,7 +1402,12 @@ def mode_section(cls, spec, mode, builds, nums, src):
                 if keep:
                     play += ["**Keep up all fight:** " + keep_text + ".", ""]
             quiet, seen = [], set()
+            # a form, stance or aura the build plays in, or anything the setup lines above already name, is no idle talent (2026-11-20, the
+            # audit session: Balance's page listed Moonkin Form "a defensive for emergencies" under the line that says to keep it up)
+            setup_named = set(pre) | set(keep_names)
             for u in UNUSED.get((cls, top["id"]), []):   # one line per talent: a build raced in two entries has a row in each
+                if u["talent"] in setup_named or re.search(r"(?:Form|Stance|Aura|Presence)$", u["talent"]):
+                    continue
                 if u["kind"] != "wasted" and u["talent"] not in seen:   # (2026-11-18: Trueshot Aura twice on the Marksmanship page)
                     seen.add(u["talent"])
                     quiet.append(u)
@@ -1352,10 +1421,16 @@ def mode_section(cls, spec, mode, builds, nums, src):
                              and "no global cooldown" not in x else "") for x in prio]
                 then = play[-2:] != ["## How to play", ""]
                 play += [("**Then press" if then else "**Press") + " the first one that is ready**, top to bottom:", ""] + [f"{i}. {x}" for i, x in enumerate(prio, 1)]
+                if any("(timing: see below)" in x for x in prio):
+                    timing_src = (r["entry"], texts, [m for x in prio for m in re.findall(r"\*\*(.+?)\*\*", x)])
+                mv = simple_rotation.moving_line()   # the melee hunter's shots out of melee (2026-11-20, the audit session)
+                if mv:
+                    play += ["", mv]
                 # the filler: the last line when it has no condition and no cooldown (2026-10-09: Bloodrage, Aimed Shot, Fire Nova had been
                 # called fillers); else what fills the gaps on its own (Auto Shot, white swings)
                 fill = simple_rotation.filler(cls, prio)
-                shown = set(pre) | set(keep_names) | {m for x in prio for m in re.findall(r"\*\*(.+?)\*\*", x)} | {x for x, _, _ in late}
+                shown = (set(pre) | set(keep_names) | {m for x in prio for m in re.findall(r"\*\*(.+?)\*\*", x)} | {x for x, _, _ in late}
+                         | set(simple_rotation.MOVING))   # the out-of-melee shots have their own line (2026-11-20)
                 # the build's casts in the full raid the page ranks on (the dummy race's when the environments run has none)
                 casts = raid_casts_of(cls, r["entry"], top["id"]) or casts_of(cls, r["entry"], top["id"])
                 if not fill:   # the build's most-cast always-ready spell the list left out is its filler (2026-11-08 full page read S7:
@@ -1415,6 +1490,8 @@ def mode_section(cls, spec, mode, builds, nums, src):
     elif mode == "leveling":
         mdl = LEVEL_MODEL.get((cls, top["id"])) or (GEN.get(cls, {}).get(top["id"], {}) or {}).get("model") or rs.leveling_pick(cls)[1]
         gl = guides.render(cls, spec, mode, f"leveling:{mdl}", guides.leveling_fingerprint(cls, mdl))
+    if timing_src and (not gl or any("Guide being rewritten" in x for x in gl)):
+        play += timing_lines(cls, *timing_src)   # the named conditions, where no guide text below explains them
     o += play + gl + talents + numbers
     if not (mode == "leveling" and top.get("raid_path")):   # a healer's or tank's leveling build is its raid build: the raid page explains it
         o += idle_note(cls, top, "\n".join(o))

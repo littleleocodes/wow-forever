@@ -8,8 +8,6 @@
 
 **Before the pull, then keep up all fight:** **Moonkin Form**.
 
-**Talents with no line below:** **Moonkin Form**: a defensive for emergencies, so it has no line.
-
 **Then press the first one that is ready**, top to bottom:
 
 1. **Moonfire** and **Insect Swarm**: keep them on the target

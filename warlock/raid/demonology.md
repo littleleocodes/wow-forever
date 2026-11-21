@@ -33,6 +33,13 @@
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
+
+**The timing** (the simulator's own named conditions, in its words, until this page's guide is rewritten):
+
+- “Doom tick”: dotBaseDuration
+- “Searing Pain for Brand”: (not Demonic Brand is up or time left on Demonic Brand < 2.5s) and not spellIsCasting and not “in 5y range of 3T”
+- “Improved Shadow Bolt Known”: spell 17794 is known
+
 ## Why this rotation
 
 *Guide being rewritten for the new rotation (2026-11-20).*

@@ -15,10 +15,13 @@
 **Then press the first one that is ready**, top to bottom:
 
 1. **Flame Shock**: keep it on the target
-2. **Chain Lightning** when there are 2 or more targets or you have mana to spare for the rest of the fight
-3. **Lightning Bolt**
+2. **Lightning Bolt**
 
 **Lightning Bolt** is your filler: cast it whenever nothing above is ready.
+
+**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
+
+- **Chain Lightning**: part of the rotation (about 13 times a fight)
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 

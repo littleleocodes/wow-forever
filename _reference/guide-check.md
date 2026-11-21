@@ -6,7 +6,7 @@
 
 - none
 
-Guides whose rotation changed since they were stamped (29; rewrite or confirm, then `--stamp`):
+Guides whose rotation changed since they were stamped (28; rewrite or confirm, then `--stamp`):
 
 - druid Balance leveling: leveling:balance-dps, leveling:feral-cat-dps
 - druid Feral Combat raid: feral-bear-tank, feral-cat-dps
@@ -17,7 +17,6 @@ Guides whose rotation changed since they were stamped (29; rewrite or confirm, t
 - hunter Survival raid: melee-dps
 - hunter Hybrid Beast Mastery/Marksmanship raid: bm-raid, mm-lonewolf-raid, mm-raid
 - hunter Hybrid Beast Mastery/Survival raid: bm-raid, melee-dps
-- mage Frost raid: frost-raid
 - mage Frost leveling: leveling:barrage-frost-leveling, leveling:fire-leveling, leveling:frost-leveling, leveling:frostfire-leveling
 - mage Hybrid Arcane/Frost raid: frost-raid
 - mage Hybrid Arcane/Frost leveling: leveling:barrage-frost-leveling, leveling:fire-leveling, leveling:frost-leveling, leveling:frostfire-leveling
@@ -61,7 +60,7 @@ Leveling steps that name a spell the tuned rules never cast (1; `fightlab/rotati
 | hunter | Hybrid Marksmanship/Survival | leveling | 2026-10-26 | leveling:bm-leveling 77f174ea0a4d, leveling:melee-dps c91e51504eb8, leveling:mm-raid 2ed9006ff9b5 |
 | hunter | Hybrid Beast Mastery/Survival | raid | 2026-11-19 | bm-raid 08b392250e22, melee-dps 88ff0967f0fa |
 | hunter | Hybrid Beast Mastery/Survival | leveling | 2026-11-15 | leveling:bm-leveling 77f174ea0a4d, leveling:melee-dps c91e51504eb8, leveling:mm-raid 2ed9006ff9b5 |
-| mage | Frost | raid | 2026-11-20 | frost-raid 1e4a5acdfa3a |
+| mage | Frost | raid | 2026-11-20 | frost-raid 42c56f53d8e8 |
 | mage | Frost | leveling | 2026-11-15 | leveling:arcane-leveling 48b0f2bbbab2, leveling:barrage-frost-leveling 410cf796f661, leveling:fire-leveling 6b74c3c92a05, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 0f2f740aa890, leveling:frostfire-leveling 46f76c659cce |
 | mage | Hybrid Arcane/Frost | raid | 2026-11-20 | arcane-dps bb0d0413bb3e, arcane-frost-raid ce303d213c2f, frost-raid 1e4a5acdfa3a |
 | mage | Hybrid Arcane/Frost | leveling | 2026-11-15 | leveling:arcane-leveling 48b0f2bbbab2, leveling:barrage-frost-leveling 410cf796f661, leveling:fire-leveling 6b74c3c92a05, leveling:frost-aoe 2943a8d95023, leveling:frost-leveling 0f2f740aa890, leveling:frostfire-leveling 46f76c659cce |

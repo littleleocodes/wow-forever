@@ -112,6 +112,11 @@ def _n(x):
     return f"{float(x):g}"
 
 
+def _sec(x):
+    """Seconds as the page shows them: one decimal (Fury's Hamstring gate, 1.125 -> "1.1"; 2026-11-20, the audit session)."""
+    return f"{round(float(x), 1):g}"
+
+
 def _count(op, x):
     """The whole count (stacks, combo points) a comparison needs: "≥ 4.218" is 5 or more, "> 2" is 3 or more, "≤ 3.5" is 3 or fewer."""
     x = float(x)
@@ -164,7 +169,7 @@ def _clause(c, spell, ok):
     # "Cold Snap", since DROP takes every "time until ... is ready ≥" clause)
     m = re.match(r"time until (.+?) is ready ≥ ([\d.]+)s?$", c)
     if m and float(m.group(2)) >= 1:
-        return ("when", f"**{m.group(1)}** is at least {_n(m.group(2))} second{"s" if float(m.group(2)) != 1 else ""} from ready")
+        return ("when", f"**{m.group(1)}** is at least {_sec(m.group(2))} second{"s" if _sec(m.group(2)) != "1" else ""} from ready")
     if DROP.search(c):
         return None
     m = re.fullmatch(r"(not )?“(.+?)”", c.strip())   # a named condition of the official simulator's rotations (2026-11-11:
@@ -179,7 +184,7 @@ def _clause(c, spell, ok):
     # condition, since this clause fell through and was dropped)
     m = re.match(r"time until (.+?) is ready > ([\d.]+)s?$", c)
     if m:
-        return ("when", f"**{m.group(1)}** is more than {_n(m.group(2))} seconds from ready")
+        return ("when", f"**{m.group(1)}** is more than {_sec(m.group(2))} second{"s" if _sec(m.group(2)) != "1" else ""} from ready")
     m = re.match(r"time left in the fight (≥|>) ([\d.]+)s?$", c)
     if m:
         return ("until", float(m.group(2))) if float(m.group(2)) >= 10 else None
@@ -316,7 +321,9 @@ LINE = re.compile(r"^(?:[Ii]f (.+): )?((?:cast|channel|keep|use|strict sequence|
 
 
 # abilities that only light up after something happens: said so when the rotation line has no condition of its own
-REACTIVE = {"Mongoose Bite": "after you dodge",   # Forever 70291: "Can only be performed after you dodge" (not the target's dodge)
+REACTIVE = {"Mongoose Bite": "when it lights up (Expose Prey on your marked target; a dodge of yours too)",   # Forever: after you dodge,
+            # or for 10 sec when Expose Prey procs off your Hunter's Mark (2026-11-20: a raid page read "after you dodge", which a hunter
+            # beside the tank almost never does)
             "Overpower": "when it lights up (after the target dodges)",
             "Riposte": "after you parry", "Counterattack": "after you parry", "Revenge": "after you block, dodge or parry",
             "Victory Rush": "after a kill", "Hammer of Wrath": "when the target is below 20% health", "Shadow Word: Death": "",
@@ -457,13 +464,50 @@ def _cp_key(txt):
     return (re.sub(r"you have \d+(?: or more)? combo points", "you have CP combo points", txt), int(m.group(1)) if m else None)
 
 
+MOVING = []   # spells the last simplify() found cast only out of melee range, in order (the melee hunter's step out and back)
+STEP_OUT = [None]   # the buff the rotation steps out under ("Strider Kick"), when a move line names one
+
+
+def moving_line():
+    """The page's sentence for MOVING (2026-11-20, the audit session: the melee hunter's Arcane Shot and Multi-Shot had printed with no
+    condition above Mongoose Bite; the official melee rotation casts them only on the walk back into melee, and Serpent Sting only on a
+    step out past the dead zone), or None."""
+    sp = list(dict.fromkeys(MOVING))
+    if not sp:
+        return None
+    rest = [x for x in sp if x != "Serpent Sting"]
+    b = lambda xs: " and ".join(f"**{x}**" for x in xs)   # noqa: E731
+    if "Serpent Sting" in sp:
+        why = f" while **{STEP_OUT[0]}**'s speed is up" if STEP_OUT[0] else ""
+        return (f"**Out of melee:** step out to re-apply **Serpent Sting** when it falls off{why}"
+                + (f", and shoot {b(rest)} on the way back in" if rest else "") + "; never step out only to shoot.")
+    return f"**Out of melee:** {b(rest)} only while you are out of melee range (on the way back in)."
+
+
 def simplify(cls, texts, late=None, extras=None):
     """(keep up all fight, the priority list) for a build's used rotation lines (the translated APL texts, in priority order).
     A line after an always-ready spell cast only while some seconds of the fight are left (the Frost raid rotation's Frostbolt while 3+
     seconds are left, then Fire Blast), and a line cast only in the last seconds (Searing Pain), is end-of-fight play, not the filler:
-    it goes to `late` as (spell, seconds, the filler). Seal twisting goes to `extras` as plain lines."""
+    it goes to `late` as (spell, seconds, the filler). Seal twisting goes to `extras` as plain lines. A line cast only out of melee range
+    goes to MOVING (moving_line() words it)."""
+    MOVING.clear()
+    STEP_OUT[0] = None
     parsed = []
     for t in texts:
+        # a line for two or more targets never fires in the pages' one-boss fight (2026-11-20: the official cat rotation's cleave lines
+        # come first, so the cat's list had been read from its 2-target conditions and the single-target lines dropped as repeats)
+        if re.search(r"number of targets (?:=|≥|>) ?[2-9]", t) and not re.search(r"not \(number of targets = [2-9]", t):
+            continue   # (the official cat's single-target lines carry "not (number of targets = 2 or ... = 3)": those stay)
+        if re.search(r"unitDistance > “[^”]*range[^”]*”", t):
+            m = re.search(r":\s*cast (.+?)(?: \(rank \d+\))?\s*$", t)
+            if m:
+                MOVING.append(m.group(1))
+                continue
+        if re.search(r"move to “", t):
+            mo = re.search(r"if ([A-Z][\w' ]+?) is up(?![a-z])", t)
+            if mo:
+                STEP_OUT[0] = mo.group(1)
+            continue
         FLOOR[0] = None
         x = _parse(cls, t)
         if x:

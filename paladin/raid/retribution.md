@@ -12,12 +12,10 @@
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Judgement**, then straight away **Seal of Command**; no global cooldown, so press it alongside the others
-2. **Judgement**, then straight away **Seal of Righteousness**; no global cooldown, so press it alongside the others
-3. **Judgement**; no global cooldown, so press it alongside the others
-4. **Hammer of Wrath** when the target is below 20% health
-5. **Consecration**
-6. **Holy Strike**
+1. **Judgement**; no global cooldown, so press it alongside the others
+2. **Hammer of Wrath** when the target is below 20% health
+3. **Consecration**
+4. **Holy Strike**
 
 Between these, your white swings do the rest.
 

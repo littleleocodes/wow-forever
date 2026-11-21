@@ -75,8 +75,8 @@ Before the pull: at -20s: groupReference; at -20s: move to “Pull range” yd; 
 
 | # | Priority (the first line whose condition holds is cast) | [`retribution-ml-raid`](retribution-ml-raid.md) casts/min |
 |---|---|---|
-| 1 | if not spellInRange and “Has assigned judgement” and talentIsKnown and (“Use Seal of Command” or not “Use Seal of Righteousness” or talentIsKnown) and not the sequence is complete: sequence 'move1': move to “Melee range” yd; wait until spellInRange; cast Judgement; wait inputDelay; cast Seal of Command; wait until spellInRange | 9.3 |
-| 2 | if not spellInRange and “Has assigned judgement” and (not talentIsKnown or not talentIsKnown or not “Use Seal of Command”) and not the sequence is complete: sequence 'move2': move to “Melee range” yd; wait until spellInRange; cast Judgement; wait inputDelay; cast Seal of Righteousness; wait until spellInRange | 7.3 |
+| 1 | if not spellInRange and “Has assigned judgement” and Seal of Command is taken and (“Use Seal of Command” or not “Use Seal of Righteousness” or Unsealed Wrath is taken) and not the sequence is complete: sequence 'move1': move to “Melee range” yd; wait until spellInRange; cast Judgement; wait inputDelay; cast Seal of Command; wait until spellInRange | 9.3 |
+| 2 | if not spellInRange and “Has assigned judgement” and (not Unsealed Wrath is taken or not Seal of Command is taken or not “Use Seal of Command”) and not the sequence is complete: sequence 'move2': move to “Melee range” yd; wait until spellInRange; cast Judgement; wait inputDelay; cast Seal of Righteousness; wait until spellInRange | 7.3 |
 | 3 | if not spellInRange and not “Has assigned judgement” and not the sequence is complete: sequence 'move3': move to “Melee range” yd; wait until spellInRange; cast Judgement; wait until spellInRange | 7.3 |
 | 4 | if “WF guard”: cast Judgement | 7.3 |
 | 5 | if time into the fight ≥ “Delay Major CDs”: use every other cooldown when ready | as ready |

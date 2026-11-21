@@ -89,7 +89,7 @@ Allocation adopted on 2026-09-27 from `opt-feral-bear-tank-raid-tank`, the best 
   7. insert before the filler: if rage < 20: cast Enrage (+1.2%, pass 12)
   8. drop 'stacks of Lacerate < 5' from the condition: if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate (+0.3%, pass 12)
 
-Before the pull: at -10s: if talentIsKnown and rage < 10: cast Dire Bear Form; at -10s: cast Enrage; at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 item set; at -0.01s: if not activeItemSwapSet: swap to the Main item set; at -250ms: if number of targets = 3 and rage ≥ current cost: cast Maul.
+Before the pull: at -10s: if Furor is taken and rage < 10: cast Dire Bear Form; at -10s: cast Enrage; at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 item set; at -0.01s: if not activeItemSwapSet: swap to the Main item set; at -250ms: if number of targets = 3 and rage ≥ current cost: cast Maul.
 
 | # | Priority (the first line whose condition holds is cast) | [`feral-bear-tank`](feral-bear-tank.md) casts/min |
 |---|---|---|

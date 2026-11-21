@@ -13,19 +13,19 @@
 **Then press the first one that is ready**, top to bottom:
 
 1. **Raptor Strike**; no global cooldown, so press it alongside the others
-2. **Hunter's Mark** and **Serpent Sting**: keep them on the target
-3. **Arcane Shot**
-4. **Multi-Shot**
-5. **Mongoose Bite** after you dodge
-6. **Strider Kick**
-7. **Immolation Trap**
-8. **Wing Clip**
+2. **Hunter's Mark**: keep it on the target
+3. **Mongoose Bite** when it lights up (Expose Prey on your marked target; a dodge of yours too)
+4. **Strider Kick**
+5. **Immolation Trap**
+6. **Summon Hawk**
+7. **Wing Clip**
+
+**Out of melee:** step out to re-apply **Serpent Sting** when it falls off while **Strider Kick**'s speed is up, and shoot **Arcane Shot** and **Multi-Shot** on the way back in; never step out only to shoot.
 
 **Wing Clip** is your filler: cast it whenever nothing above is ready.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Summon Hawk**: part of the rotation (about 22 times a fight)
 - **Rapid Fire**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
 - Use your trinkets and a potion together with your big cooldowns.
 

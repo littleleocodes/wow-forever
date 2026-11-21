@@ -119,14 +119,14 @@ Before the pull: at -3: cast Blade Flurry; at -2s: cast Premeditation; at -1s: i
 | 6 | if “Gnome Eureka - Should Cast”: strict sequence: wait until energy ≥ 90 | as ready |
 | 7 | if (“Boot Knife Known” and combo points ≤ 3 and energy ≤ 80 or not “Boot Knife Known” and energy ≤ 80): cast Shank | 5.8 |
 | 8 | if (not Blade Flurry is known or Blade Flurry is up): cast OffensivePotion | as ready |
-| 9 | if (energy ≤ 15 and not talentIsKnown or Eureka! is known and energy ≤ 25 and energy ≤ 25 or energy ≤ 25 and Death Mark is on the target) and (combo points < 3 or “Expose - Low Duration” or Eureka! is up): cast Thistle Tea | as ready |
+| 9 | if (energy ≤ 15 and not Death Mark is taken or Eureka! is known and energy ≤ 25 and energy ≤ 25 or energy ≤ 25 and Death Mark is on the target) and (combo points < 3 or “Expose - Low Duration” or Eureka! is up): cast Thistle Tea | as ready |
 | 10 | if combo points ≤ 3: cast Premeditation | 1.0 |
 | 11 | if combo points ≥ 4: cast Death Mark | 4.7 |
-| 12 | if (talentIsKnown or talentIsKnown) and (combo points ≥ 3) and not Rupture is on the target and not “Fight About to End” and not “Expose - Prevent Other Finishers” and not talentIsKnown: cast Rupture | 2.8 |
+| 12 | if (Blood Splatter is taken or Hemorrhage is taken) and (combo points ≥ 3) and not Rupture is on the target and not “Fight About to End” and not “Expose - Prevent Other Finishers” and not Flawless Execution is taken: cast Rupture | 2.8 |
 | 13 | if “At or Below SnD Clipping Threshold” and “Above SnD Point Threshold” and not “Fight About to End” and not “Expose - Prevent Other Finishers”: cast Slice and Dice | 2.9 |
 | 14 | if “Current Points less than 5” and (not in front of the target or “Dirty Deeds Known”) and time left on Garrote ≤ 4s: cast Ghostly Strike | 2.0 |
 | 15 | if “Use Backstab” and not Hemorrhage is up and “Current Points less than 5”: cast Hemorrhage | 12.9 |
-| 16 | if not “Use Backstab” and “Current Points less than 5” and (not “SnD Fall Imminent” or energy > (current cost + current cost) and not “SnD Fall Imminent” or not “Above SnD Point Threshold” or “In Danger of Energy Capping” or “Expose - Low Duration”) and “Gnome Eureka - Active or Not Ready” and (time left on Garrote ≥ 8s or not talentIsKnown or “In Danger of Energy Capping”): cast Hemorrhage | 12.9 |
+| 16 | if not “Use Backstab” and “Current Points less than 5” and (not “SnD Fall Imminent” or energy > (current cost + current cost) and not “SnD Fall Imminent” or not “Above SnD Point Threshold” or “In Danger of Energy Capping” or “Expose - Low Duration”) and “Gnome Eureka - Active or Not Ready” and (time left on Garrote ≥ 8s or not Ghostly Strike is taken or “In Danger of Energy Capping”): cast Hemorrhage | 12.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Expose Armor, cast Ambush, cast Blood Fury, cast Elune's Light, cast Eureka!, cast Eviscerate (rank 8), cast Backstab (rank 8), cast Sinister Strike (its condition never held in these fights); strict sequence: cast Blood Fury; cast Blade Flurry (needs the Blade Flurry talent); cast Adrenaline Rush, strict sequence: cast Blood Fury; cast Adrenaline Rush, strict sequence: cast Elune's Light; cast Adrenaline Rush (needs the Adrenaline Rush talent); cast Cold Blood (needs the Cold Blood talent); cast Mutilate (needs the Mutilate talent).
 

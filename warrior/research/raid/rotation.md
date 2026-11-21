@@ -59,7 +59,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 9. if (time left in the fight ≤ 20s or time left in the fight ≥ 141.5s): cast Blood Fury
 10. if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike
 11. if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest
-12. if not execute phase (E20) and rage ≥ 90 and not talentIsKnown: cast Heroic Strike (rank 8)
+12. if not execute phase (E20) and rage ≥ 90 and not Improved Slam is taken: cast Heroic Strike (rank 8)
 13. if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest
 14. if time left in the fight ≤ 33.75s: use every other cooldown when ready
 15. if number of targets > 1: cast Whirlwind
@@ -226,7 +226,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 21. if rage < 22.5: cast Bloodrage
 22. if number of targets = 1 and rage ≥ 67.5: cast Heroic Strike (rank 8)
 23. if rage < 67.5: cast Bloodrage
-24. if time until Bloodthirst is ready ≥ spellGcdHastedDuration and time until Whirlwind is ready ≥ spellGcdHastedDuration and talentIsKnown: cast Berserker Rage
+24. if time until Bloodthirst is ready ≥ spellGcdHastedDuration and time until Whirlwind is ready ≥ spellGcdHastedDuration and Improved Berserker Rage is taken: cast Berserker Rage
 25. if not Berserker Stance is up: cast Berserker Stance
 
 The tables below are the training-dummy rotation, filtered per build:
