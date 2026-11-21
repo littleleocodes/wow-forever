@@ -33,6 +33,10 @@ OFF = {
                                      "nothing in a raid) and trails Subtlety's pick (subtlety-ml-raid, 817.1) by 19% (661.5)",
     ("hunter", "opt-mm-lonewolf-raid-raid-dps"): "fails the play check (Improved Revive Pet worth nothing, a raid has no use for it) and "
                                                  "trails the Lone Wolf pick (995.9) by 6.0% (935.7)",
+    ("warrior", "arms-community-parse"): "fails the play check (Piercing Howl, a snare with no damage, never cast and worth nothing in a "
+                                         "raid; the exact filler pass moves no ability talent the probe never tried) and trails Arms' pick "
+                                         "(opt-arms-2h-raid-raid-dps, 912.0) by 5.3% (863.4); the community's build itself, unchanged, stays "
+                                         "in research",
 }
 
 

@@ -354,9 +354,12 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
                 continue
             seen.add((sid, cond is None))
             nm = id_name.get(sid) or names.get(sid) or CLIENT.get(sid) or str(sid)
-            if sid not in id_name and sid in RACIALS:
+            # a talent's ability under an id the beta spellbook lacks is the class's (Death Mark 1325758, Reckless Swings 1329555: the
+            # simulator names them, the talent data holds them); a removed spell or an item's spell is not (Lava Burst, Jom Gabbar)
+            talent_ability = sid not in id_name and nm in talent_names
+            if sid not in id_name and not talent_ability and sid in RACIALS:
                 why = "racial (racials are off)"
-            elif sid not in id_name:
+            elif sid not in id_name and not talent_ability:
                 why = None   # neither the class's spell nor a racial: Lava Burst, Frost Blast, a trinket's spell cast as a spell
                 f["never_cast"].append(f"{part}[{i}] {nm} ({sid}): NOT A SPELL THE CLASS HAS (a removed spell or a wrong id)")
                 f["fail"].append(f"a: {nm} ({sid}) is no spell of the class and no racial: the line can never fire ({part}[{i}])")

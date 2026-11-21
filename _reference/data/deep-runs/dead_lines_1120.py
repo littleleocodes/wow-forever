@@ -6,7 +6,8 @@ them). Each removal is behaviour-neutral: the simulator cannot cast the line, so
   70755, not from 70790 on): Lava Burst (1238300, 1326047) in the Elemental and Stormcaller rotations, Frost Blast (1326055) in three
   mage dummy rotations; Classic's Tiger's Fury rank 1 (5217) in the cat's dummy rotation (Forever's ranks have other ids).
 - Diamond Flask's spell (24427) cast as a spell in the warrior rotations: a trinket's use is cast by its item id, and no warrior gear
-  set holds the flask.
+  set holds the flask. Jom Gabbar's (29602) the same evening (the clean play check; the simulator registers the trinket by its item
+  23570, and no warrior set holds that Ahn'Qiraj trinket).
 - Arms in Battle Stance's raid rotation: Whirlwind needs Berserker Stance, which the rotation never takes, and its unconditional
   Mocking Blow never fired in any build of the entry.
 The converted official copies (apls/<class>/upstream/) keep every line: they must equal a fresh conversion (play_check.py's (e)).
@@ -19,7 +20,7 @@ import pathlib
 
 DATA = pathlib.Path(__file__).resolve().parents[1]
 NAMES = {1953: "Blink", 1238300: "Lava Burst", 1326047: "Lava Burst", 1326055: "Frost Blast", 5217: "Tiger's Fury rank 1",
-         24427: "Diamond Flask (spell)", 1680: "Whirlwind", 20560: "Mocking Blow"}
+         24427: "Diamond Flask (spell)", 29602: "Jom Gabbar (spell)", 1680: "Whirlwind", 20560: "Mocking Blow"}
 DEAD = {"raidsim/apls/mage/frost-raid-raid.apl.json": [1953], "raidsim/apls/mage/frost-raid.apl.json": [1953],
         "raidsim/apls/shaman/elemental-dps-raid.apl.json": [1238300, 1326047], "raidsim/apls/shaman/elemental-dps.apl.json": [1238300, 1326047],
         "raidsim/apls/shaman/stormcaller-dps-raid.apl.json": [1238300, 1326047], "raidsim/apls/shaman/stormcaller-dps.apl.json": [1238300, 1326047],
@@ -28,9 +29,11 @@ DEAD = {"raidsim/apls/mage/frost-raid-raid.apl.json": [1953], "raidsim/apls/mage
         **{f"raidsim/apls/warrior/{n}.apl.json": [24427] for n in ("arms-2h-raid-raid", "arms-2h-raid", "arms-battle-raid-raid",
                                                                     "arms-battle-raid", "arms-battle-raid.base", "fury-dw-raid-raid",
                                                                     "fury-dw-raid")},
+        **{f"raidsim/apls/warrior/{n}.apl.json": [24427, 29602] for n in ("arms-2h-raid-raid", "arms-2h-raid", "arms-battle-raid",
+                                                                           "arms-battle-raid.base", "fury-dw-raid-raid", "fury-dw-raid")},
         # Arms in Battle Stance never leaves it (no Berserker Stance in the file): its two Whirlwind lines can never fire, and its
         # unconditional Mocking Blow never fired in any build of the entry (the play check, full raid)
-        "raidsim/apls/warrior/arms-battle-raid-raid.apl.json": [24427, 1680, 20560]}
+        "raidsim/apls/warrior/arms-battle-raid-raid.apl.json": [24427, 29602, 1680, 20560]}
 
 
 def cast_of(x):
