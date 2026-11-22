@@ -4,11 +4,11 @@
 > refresh with the same command. Item values are seconds per kill from this project's fight lab for the leveling page build
 > ([Hybrid Arcane/Frost](../../mage/leveling/arcane-frost.md), its own rotation; your talent path plays `frost-leveling` at this level), a model of the beta, not a measurement.
 
-Level **42** Gnome Mage, Alliance. Professions: Tailoring 177/225, Enchanting 165/225, Cooking 161/225, Fishing 116/150, First Aid 56/150. Gold: **14g 4s 84c**.
+Level **43** Gnome Mage, Alliance. Professions: Tailoring 177/225, Enchanting 165/225, Cooking 161/225, Fishing 116/150, First Aid 56/150. Gold: **22g 63s 47c**.
 
-> **Heads up:** Gold is your bag add-on's (2026-11-22 16:57): Blizzard's data are from your logout at 2026-11-22 13:54.
+> **Heads up:** Level 43 is your bag add-on's record of 2026-11-22 18:55: Blizzard's data are from your logout at 2026-11-22 13:54 (level 42), and the gold is the bag add-on's (2026-11-22 18:55). Talents, quests and worn gear are as of that logout where your add-ons do not say otherwise. Log out once and refresh to bring them up to date.
 > **Heads up:** The project's leveling model was updated on 2026-11-21 and 2026-11-22: your own regeneration keeps running while you eat and drink. The item percentages still use the stat values from before it until GearCheck's are remade, which is in progress.
-> **Heads up:** Catch up with your guide is off for this refresh: your quest log is Blizzard's from your logout at 2026-11-22 13:54, older than your guide's position (saved 2026-11-22 16:57), so it cannot tell which quests you picked up since. Log out once and refresh.
+> **Heads up:** Catch up with your guide is off for this refresh: your quest log is Blizzard's from your logout at 2026-11-22 13:54, older than your guide's position (saved 2026-11-22 18:56), so it cannot tell which quests you picked up since. Log out once and refresh.
 
 ## Talents
 
@@ -18,11 +18,11 @@ Your own talent path, **Deep Frost with the defensive tools** (chosen 2026-11-22
 - You play the Frost page's rotation until 46, then the Arcane-Frost one from 47 (Arcane Missiles on Missile Barrage).
 - Item values stay the Arcane-Frost page build's (the stats a frost mage wants are the same).
 
-Your 33 points are not your chosen path yet. Respec at a trainer on your next city visit, then take these 33 points in this order: **Improved Frostbolt** 5, **Precision** 2, **Ice Shards** 5, **Frostbite** 3, **Improved Frost Nova** 1, **Permafrost** 1, **Frost Channeling** 3, **Ice Lance** 1, **Arctic Reach** 2, **Ice Block** 1, **Shatter** 3, **Cold Snap** 1, **Fingers of Frost** 2, **Ice Barrier** 1, **Wand Specialization** 2.
+Your 33 points are not your chosen path yet. Respec at a trainer on your next city visit, then take these 34 points in this order: **Improved Frostbolt** 5, **Precision** 2, **Ice Shards** 5, **Frostbite** 3, **Improved Frost Nova** 1, **Permafrost** 1, **Frost Channeling** 3, **Ice Lance** 1, **Arctic Reach** 2, **Ice Block** 1, **Shatter** 3, **Cold Snap** 1, **Fingers of Frost** 2, **Ice Barrier** 1, **Wand Specialization** 2, **Improved Channeling** 1.
 
-The build at level 42: **Frost** 31 (Improved Frostbolt 5, Precision 2, Ice Shards 5, Frostbite 3, Improved Frost Nova 1, Permafrost 1, Frost Channeling 3, Ice Lance 1, Arctic Reach 2, Ice Block 1, Shatter 3, Cold Snap 1, Fingers of Frost 2, Ice Barrier 1); **Arcane** 2 (Wand Specialization 2). [Open it in the talent calculator](https://talentsforever.com/mage/60/2--052531130121301201-12).
+The build at level 43: **Frost** 31 (Improved Frostbolt 5, Precision 2, Ice Shards 5, Frostbite 3, Improved Frost Nova 1, Permafrost 1, Frost Channeling 3, Ice Lance 1, Arctic Reach 2, Ice Block 1, Shatter 3, Cold Snap 1, Fingers of Frost 2, Ice Barrier 1); **Arcane** 3 (Wand Specialization 2, Improved Channeling 1). [Open it in the talent calculator](https://talentsforever.com/mage/60/21--052531130121301201-12).
 
-After your respec, your next talents: 43 Improved Channeling, 44 Improved Channeling, 45 Arcane Resilience, 46 Missile Barrage, 47 Missile Barrage, 48 Improved Frost Nova.
+After your respec, your next talents: 44 Improved Channeling, 45 Arcane Resilience, 46 Missile Barrage, 47 Missile Barrage, 48 Improved Frost Nova, 49 Permafrost.
 
 ## Your keys: questing and PvP
 
@@ -30,7 +30,7 @@ One layout for questing and for fighting players: your two bars and three keys o
 
 **Action bar 1**
 
-| Key | At level 42 | How you press it | Why here |
+| Key | At level 43 | How you press it | Why here |
 |---|---|---|---|
 | Q | Frostbolt (Eureka! macro) | set-up cast | The key you press most in both: about 3.3-4.2 Frostbolts a kill questing, 1.6 a duel. Your habit since level 4. |
 | E | Frost Nova (macro) | reaction | A reaction in both: the mob or the player reaches you (0.8 a kill questing). Your habit. The macro puts it out in the middle of a bolt; press E only when Frost Nova is lit, since on cooldown the macro still throws your bolt away. |
@@ -47,7 +47,7 @@ One layout for questing and for fighting players: your two bars and three keys o
 
 **Action bar 2 (Shift)**
 
-| Key | At level 42 | How you press it | Why here |
+| Key | At level 43 | How you press it | Why here |
 |---|---|---|---|
 | Shift+Q | Frostbolt Rank 1 | set-up cast, quick | Frostbolt Rank 1, your choice: with Improved Frostbolt a 1.0-second cast for 25 mana that puts the 40% slow on. Questing and PvP: fish for Fingers of Frost now, and Missile Barrage from 46-47. PvP: the fast, cheap slow on a runner. Shift on your bolt key: the small bolt. Whether a Rank 1 bolt rolls Fingers of Frost, Frostbite and Missile Barrage at their full chance in Forever is unknown: the official simulator gives every rank the full chance, but Warcraft Logs show the server scaling another spell-hit proc (the Revelation enchant) by the spell's level, which would give a Rank 1 bolt no chance at your level. Watch for the procs in game. |
 | Shift+E | Arcane Explosion | while moving | Arcane Explosion: packs in questing; in PvP, a rogue or druid vanishing or stealthing within 10 yards. Your habit. |
@@ -64,7 +64,7 @@ One layout for questing and for fighting players: your two bars and three keys o
 
 **Third bar: V, X and Shift+V**
 
-| Key | At level 42 | How you press it | Why here |
+| Key | At level 43 | How you press it | Why here |
 |---|---|---|---|
 | V | Polymorph (macro) | set-up cast, in a hurry | Polymorph where you point: the healer or a second player in PvP, the second mob questing. The bottom row is quick for you; 2 was the 23rd-fastest key. With the right mouse button held there is no pointer: V then sheeps your focus (Ctrl+V sets it), else your target. |
 | X | Ice Barrier | once a fight | Ice Barrier: at every pull questing (0.17 a kill on the Frost page), and in PvP again each time it breaks, while you move. It was on Shift+1, the 25th key. |
@@ -225,7 +225,7 @@ Blocks at once, even in the middle of a cast. To leave the block early, press F 
 /use item:247240
 ```
 
-Every healing potion you can get from 42 to 60, ranked by the health you keep. Forever's Discolored potions heal more at once, then hand 75% back as a 6-second poison or a 12-second disease, so they rank by the quarter you keep. Every potion shares one 2-minute cooldown, so only the best one you carry goes off. Left out: Minor and Lesser Healing Potion (not worth the shared cooldown at your level); the battleground draughts (they work only inside a battleground); Restored and Perishable Healing Potion, Forever's own (no source found); and a second Major Healing Potion (item 223913, not confirmed in Forever). 172 characters; with RestCue the first line becomes #showtooltip item:N (184).
+Every healing potion you can get from 42 to 60, ranked by the health you keep. Forever's Discolored potions heal more at once, then take three quarters of it back as a 6-second poison or a 12-second disease (from the client's spell data, not seen in game), so they rank by the quarter you keep; for a last-second save, press a Discolored potion by hand from your bags. Every potion shares one 2-minute cooldown, so only the best one you carry goes off. Left out: Minor and Lesser Healing Potion (not worth the shared cooldown at your level); the battleground draughts (they work only inside a battleground); Restored and Perishable Healing Potion, Forever's own (no source found); and a second Major Healing Potion (item 223913, not confirmed in Forever). 172 characters; with RestCue the first line becomes #showtooltip item:N (184).
 
 | Line | Potion: health, level, where from |
 |---|---|
@@ -321,119 +321,111 @@ Order: Thrill of Adventure 5 → Well Rested 5 → Talented 5 → Gourmand 1. Yo
 
 Fight lab (2026-11-10, the page build): time per kill saved by Thrill of Adventure 5/5 / Talented 5/5 at level 23 12% / 11%, 26 13% / 15%, 29 13% / 8%, 32 15% / 5%, 35 14% / 11%, 40 14% / 4%, 45 13% / 6%, 50 13% / 2%, 55 11% / 2%, 60 11% / 0%. From 26 to 60: Thrill about 446 min of killing, Talented about 161 min if held from 26, both 580 (of 3452 min of killing). A model of the beta, not a measurement.
 
-Closest next points: Experienced Mage: Arcea 42/45; Novice Paladin: Tara 22/25; Novice Spelunker: 5 of 6 dungeons; left: Shadowfang Keep; Expert Tailor: Tailoring 177/225; Expert Enchanter: Enchanting 165/225.
+Closest next points: Experienced Mage: Arcea 43/45; Novice Paladin: Tara 22/25; Novice Spelunker: 5 of 6 dungeons; left: Shadowfang Keep; Expert Tailor: Tailoring 177/225; Expert Enchanter: Enchanting 165/225.
 
 ## Since your last refresh (2026-11-21 20:35, level 40)
 
-- Gold: 51g 94s 2c then, 14g 4s 84c now.
-- New in the plan: Gossamer Headpiece of Frozen Wrath (head, level 42).
-- Left the plan: Dreamweave Vest (chest: worn now), Dreamweave Gloves (hands: worn now), Darkmist Wizard Hat of Frozen Wrath (head: Gossamer Headpiece of Frozen Wrath at level 42 replaces it), Regal Mantle of Frozen Wrath (shoulder: worn now).
-- Moved: Icefury Wand (ranged) level 40 to 42.
+- Gold: 51g 94s 2c then, 22g 63s 47c now.
+- New in the plan: Dreambough Wand (ranged, level 43), Dreamweave Circlet (head, level 45).
+- Left the plan: Dreamweave Vest (chest: worn now), Dreamweave Gloves (hands: worn now), Darkmist Wizard Hat of Frozen Wrath (head: Dreamweave Circlet at level 45 replaces it), Icefury Wand (ranged: Dreambough Wand at level 43 replaces it), Regal Mantle of Frozen Wrath (shoulder: worn now).
 
 ## Gold plan
 
-Gold now: **14g 4s 84c**. Training you need now and at the next two levels: **8g 30s**. Free for gear now: **5g 74s 84c**.
+Gold now: **22g 63s 47c**. Training you need now and at the next two levels: **8g 30s**. Free for gear now: **14g 33s 47c**.
 
-Your spellbook (ForeverTape, 2026-11-22 15:48) lacks, at your level or below: Conjure Mana Jade (38, 1g 40s): 1g 40s, train them first. Optional ranks it lacks: Detect Magic, Scorch (rank 1), Flamestrike (rank 2), Fireball (rank 5), Dampen Magic (rank 2), Scorch (rank 2), Fireball (rank 6), Amplify Magic (rank 2), Flamestrike (rank 3), Scorch (rank 3), Fireball (rank 7), Dampen Magic (rank 3), Flamestrike (rank 4), Scorch (rank 4), Portal: Stormwind, Portal: Ironforge, Frostfire Bolt (rank 1), Fireball (rank 8), Amplify Magic (rank 3) (20g 52s 50c).
+Your spellbook (ForeverTape, 2026-11-22 18:02) lacks, at your level or below: Conjure Mana Jade (38, 1g 40s): 1g 40s, train them first. Optional ranks it lacks: Detect Magic, Scorch (rank 1), Flamestrike (rank 2), Fireball (rank 5), Dampen Magic (rank 2), Scorch (rank 2), Fireball (rank 6), Amplify Magic (rank 2), Flamestrike (rank 3), Scorch (rank 3), Fireball (rank 7), Dampen Magic (rank 3), Flamestrike (rank 4), Scorch (rank 4), Portal: Stormwind, Portal: Ironforge, Frostfire Bolt (rank 1), Fireball (rank 8), Amplify Magic (rank 3) (20g 52s 50c).
 
-Income is an estimate from Classic's data: coin and loot from about 198 kills a level (cloth, greens and other trade goods at the auction house's usual sale price after its cut, the rest at vendor prices), plus your pace of 14.0 quests a level at Classic's quest money. It assumes you sell what drops or use it in place of buying it. "Training" counts the spells your rotation and kit use; optional ones (spells your build does not press, teleports) are listed apart. Only spells your race can learn are counted, and a talent's spell only once your build has the talent. Spells new in Forever (Frostfire Bolt, Ice Lance, Teleport: Dalaran) are not in Classic's trainer table: their price here is Classic's usual price for the level, an estimate.
+Income is an estimate from Classic's data: coin and loot from about 204 kills a level (cloth, greens and other trade goods at the auction house's usual sale price after its cut, the rest at vendor prices), plus your pace of 13.7 quests a level at Classic's quest money. It assumes you sell what drops or use it in place of buying it. "Training" counts the spells your rotation and kit use; optional ones (spells your build does not press, teleports) are listed apart. Only spells your race can learn are counted, and a talent's spell only once your build has the talent. Spells new in Forever (Frostfire Bolt, Ice Lance, Teleport: Dalaran) are not in Classic's trainer table: their price here is Classic's usual price for the level, an estimate.
 
 | Level | Income (estimate) | Training you need at the next level | Optional training |
 |---|---|---|---|
-| 42 | 18g 9s 5c | - | - |
-| 43 | 20g 98s 48c | 6g 90s (Frostbolt, Blizzard, Mana Shield) | - |
-| 44 | 26g 29s 42c | - | - |
-| 45 | 22g 66s 7c | 8g 65s (Fire Blast, Arcane Explosion, Ice Barrier, Mage Armor) | 2g 60s |
-| 46 | 26g 35s 47c | - | - |
-| 47 | 25g 27s 91c | 8g 40s (Conjure Mana Citrine, Arcane Missiles, Ice Lance) | 8g 40s |
-| 48 | 37g 46s 89c | - | - |
-| 49 | 35g 22s 79c | 16g (Conjure Water, Cone of Cold, Frostbolt, Ice Armor, Fire Ward) | 9g 60s |
-| 50 | 38g 92s 36c | - | - |
-| 51 | 50g 54s 31c | 14g 87s 50c (Conjure Food, Frost Ward, Blizzard, Mana Shield, Ice Barrier) | 3g 50s |
-| 52 | 51g 27s 4c | - | - |
-| 53 | 60g 60s 82c | 10g 80s (Fire Blast, Arcane Explosion, Frost Nova) | 7g 20s |
-| 54 | 53g 52s 40c | - | - |
-| 55 | 62g 88s 50c | 15g 20s (Arcane Intellect, Frostbolt, Arcane Missiles, Ice Lance) | 3g 80s |
+| 43 | 20g 94s 5c | 6g 90s (Frostbolt, Blizzard, Mana Shield) | - |
+| 44 | 26g 20s 58c | - | - |
+| 45 | 22g 56s 73c | 8g 65s (Fire Blast, Arcane Explosion, Ice Barrier, Mage Armor) | 2g 60s |
+| 46 | 26g 30s 25c | - | - |
+| 47 | 25g 23s 90c | 8g 40s (Conjure Mana Citrine, Arcane Missiles, Ice Lance) | 8g 40s |
+| 48 | 37g 29s 32c | - | - |
+| 49 | 35g 12s 52c | 16g (Conjure Water, Cone of Cold, Frostbolt, Ice Armor, Fire Ward) | 9g 60s |
+| 50 | 38g 85s 37c | - | - |
+| 51 | 50g 42s 40c | 14g 87s 50c (Conjure Food, Frost Ward, Blizzard, Mana Shield, Ice Barrier) | 3g 50s |
+| 52 | 51g 15s 69c | - | - |
+| 53 | 60g 48s 2c | 10g 80s (Fire Blast, Arcane Explosion, Frost Nova) | 7g 20s |
+| 54 | 53g 42s 15c | - | - |
+| 55 | 62g 82s 20c | 15g 20s (Arcane Intellect, Frostbolt, Arcane Missiles, Ice Lance) | 3g 80s |
+| 56 | 80g 30s 33c | - | - |
 
-Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Gnomeregan Exiles; Forever's not confirmed). At this income you would have about 12g 64s 84c by 40 after training and the plan's gear, enough for the mount at 47.
+Mount at 40: about **92g** (Classic prices: riding 20g and the mount 80g, 10% off at Honored with Gnomeregan Exiles; Forever's not confirmed). At this income you would have about 21g 23s 47c by 40 after training and the plan's gear, enough for the mount at 47.
 
-Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 0c before 40 and 2g 99s in all; you would reach 60 with about 655g 41s 3c after the mount.
+Gear budget: the gold above the next two levels' training now, then 33% of each level's income after training (character.json "gear_share"); the rest saves for the mount and for 60. Every bought or crafted upgrade below fits it. The plan's buys and crafts come to 0c before 40 and 4g 48s 45c in all; you would reach 60 with about 642g 63s 41c after the mount.
 
 Measured from your refreshes: 3g 31s 57c net a level (gold change after what you spent, 15.9 levels from 2026-11-09 14:38 to 2026-11-22 14:53).
 
-## Now (level 42)
+## Now (level 43)
 
 Everything below is worth doing at your level or within 3 levels: items you can wear now, and items you can get now and wear a level or two later. Percentages are how much faster you kill a mob of your level once the item replaces what you wear (fight lab).
 
 ### Judging a drop or an auction find
 
-Count a piece's stats in spell power: 1 intellect = 0.13, 1 spirit = 0.55, 1 stamina = 0.06, 1 mana per 5 sec = 1.04, 100 armor = 0.50; school damage counts by your build's share (frost 85%, arcane 15%: +10 frost damage counts 8.5), "spell damage and healing" in full. A find is worth wearing when it reaches the number below: enough to save 20 minutes before the plan's next upgrade of the slot.
+Count a piece's stats in spell power: 1 intellect = 0.13, 1 spirit = 0.54, 1 stamina = 0.07, 1 mana per 5 sec = 0.97, 100 armor = 0.59; school damage counts by your build's share (frost 85%, arcane 15%: +10 frost damage counts 8.5), "spell damage and healing" in full. A find is worth wearing when it reaches the number below: enough to save 20 minutes before the plan's next upgrade of the slot.
 
 | Slot | You wear (or the plan's next piece) | Worth (spell power) | A find must reach | Next planned upgrade |
 |---|---|---|---|---|
-| head | Gossamer Headpiece of Frozen Wrath (planned, level 42) | 25 | 31 | - |
+| head | Dreamweave Circlet (planned, level 45) | 29 | 37 | - |
 | neck | Tellurium Necklace of the Channeler | 7 | 13 | - |
-| shoulder | Regal Mantle of Frozen Wrath | 16 | 22 | - |
-| back | Azure Silk Cloak | 10 | 16 | - |
-| chest | Dreamweave Vest | 27 | 33 | - |
-| wrist | Spidertank Oilrag | 12 | 18 | - |
+| shoulder | Regal Mantle of Frozen Wrath | 16 | 23 | - |
+| back | Azure Silk Cloak | 10 | 17 | - |
+| chest | Dreamweave Vest | 27 | 34 | - |
+| wrist | Spidertank Oilrag | 12 | 19 | - |
 | hands | Dreamweave Gloves | 23 | 29 | - |
-| waist | Elder's Sash of Frozen Wrath | 11 | 17 | - |
-| legs | Durable Pants of Frozen Wrath | 16 | 22 | - |
-| feet | Spidersilk Boots | 8 | 14 | - |
-| finger1 | Ring of Forlorn Spirits | 8 | 14 | - |
-| finger2 | Runemender's Seal | 7 | 13 | - |
-| trinket1 | Satchel of Potions | 0 | 6 | - |
-| trinket2 | empty | 0 | 6 | - |
-| weapon | Debt Collector | 34 | 40 | - |
-| ranged | Icefury Wand (planned, level 42) | 26 | 32 | - |
+| waist | Elder's Sash of Frozen Wrath | 11 | 18 | - |
+| legs | Durable Pants of Frozen Wrath | 16 | 23 | - |
+| feet | Spidersilk Boots | 8 | 15 | - |
+| finger1 | Ring of Forlorn Spirits | 8 | 15 | - |
+| finger2 | Runemender's Seal | 7 | 14 | - |
+| trinket1 | Satchel of Potions | 0 | 7 | - |
+| trinket2 | empty | 0 | 7 | - |
+| weapon | Debt Collector | 34 | 41 | - |
+| ranged | Dreambough Wand (planned, level 43) | 27 | 33 | - |
 
 ### Enchant
 
 - **Spidertank Oilrag** (wrist): skip, Enchant Bracer - Spirit saves only about 8 min of killing before you replace it.
 - **Dreamweave Vest** (chest): skip, Enchant Chest - Minor Stats saves only about 2 min of killing before you replace it.
-- **Debt Collector** (weapon): At Enchanting 190: Enchant Weapon - Winter's Might (pattern: Formula: Enchant Weapon - Winter's Might), 2.2% faster kills.
+- **Debt Collector** (weapon): At Enchanting 190: Enchant Weapon - Winter's Might (pattern: Formula: Enchant Weapon - Winter's Might), 2.1% faster kills.
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 1.5 hours old). "For your trip": enough to keep it up for about 4.5 hours of play, to your next training at level 44 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 1.6 hours old). "For your trip": enough to keep it up for about 2.8 hours of play, to your next training at level 44 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|
-| Weapon oil | Wizard Oil | +24 spell power | 4.1% | 30 min | buy (you make it at Enchanting 275; you have 165) | 33s 98c | ×9 (3g 5s 82c) | no: saves 1.2 min an hour, costs 6.2 |
-| Weapon oil | Lesser Wizard Oil | +16 spell power | 2.7% | 30 min | buy (you make it at Enchanting 200; you have 165) | 10s 79c | ×9 (97s 11c) | no: saves 0.8 min an hour, costs 2.0 |
-| Weapon oil | Minor Wizard Oil | +8 spell power | 1.4% | 30 min | make it (Enchanting 45) | 3s 14c | ×9 (28s 26c) | no: saves 0.4 min an hour, costs 0.6 |
-| Food | Spotted Yellowtail | +22 spell power, +5% kill experience | 3.8% | 15 min | buy (you make it at Cooking 225; you have 161) | 80c | ×18 (14s 40c) | yes: saves 2.6 min an hour, costs 0.3 |
-| Food | Nightfin Soup | +22 spell power, +5% kill experience | 3.8% | 15 min | buy (you make it at Cooking 250; you have 161) | 5s 41c | ×18 (97s 38c) | yes: saves 2.6 min an hour, costs 2.0 |
-| Food | Briny Seafood Stew | +14 spell power, +5% kill experience | 2.4% | 15 min | buy | 10s 99c | ×18 (1g 97s 82c) | no: saves 2.2 min an hour, costs 4.0 |
-| Elixir | Arcane Elixir | +20 spell power | 3.4% | 30 min | buy | 21s 55c | ×9 (1g 93s 95c) | no: saves 1.0 min an hour, costs 3.9 |
-| Elixir | Lesser Arcane Elixir | +15 spell power | 2.6% | 30 min | buy | 11s 88c | ×9 (1g 6s 92c) | no: saves 0.8 min an hour, costs 2.2 |
-| Elixir | Elixir of Frost Power | +12.75 spell power | 2.2% | 30 min | buy | no price | ? | ? |
-| Scroll | Scroll of Spirit III | +11 spirit | 1.0% | 30 min | buy | 2s 99c | ×9 (26s 91c) | no: saves 0.3 min an hour, costs 0.5 |
-| Scroll | Scroll of Spirit II | +7 spirit | 0.7% | 30 min | buy | 1s 24c | ×9 (11s 16c) | no: saves 0.2 min an hour, costs 0.2 |
+| Weapon oil | Wizard Oil | +24 spell power | 4.0% | 30 min | buy (you make it at Enchanting 275; you have 165) | 33s 98c | ×6 (2g 3s 88c) | no: saves 1.2 min an hour, costs 5.5 |
+| Weapon oil | Lesser Wizard Oil | +16 spell power | 2.6% | 30 min | buy (you make it at Enchanting 200; you have 165) | 10s 79c | ×6 (64s 74c) | no: saves 0.8 min an hour, costs 1.7 |
+| Weapon oil | Minor Wizard Oil | +8 spell power | 1.3% | 30 min | make it (Enchanting 45) | 3s 14c | ×6 (18s 84c) | no: saves 0.4 min an hour, costs 0.5 |
+| Food | Spotted Yellowtail | +22 spell power, +5% kill experience | 3.6% | 15 min | buy (you make it at Cooking 225; you have 161) | 80c | ×12 (9s 60c) | yes: saves 2.6 min an hour, costs 0.3 |
+| Food | Nightfin Soup | +22 spell power, +5% kill experience | 3.6% | 15 min | buy (you make it at Cooking 250; you have 161) | 5s 41c | ×12 (64s 92c) | yes: saves 2.6 min an hour, costs 1.7 |
+| Food | Briny Seafood Stew | +14 spell power, +5% kill experience | 2.3% | 15 min | buy | 10s 99c | ×12 (1g 31s 88c) | no: saves 2.2 min an hour, costs 3.5 |
+| Elixir | Arcane Elixir | +20 spell power | 3.3% | 30 min | buy | 21s 55c | ×6 (1g 29s 30c) | no: saves 1.0 min an hour, costs 3.5 |
+| Elixir | Lesser Arcane Elixir | +15 spell power | 2.5% | 30 min | buy | 11s 88c | ×6 (71s 28c) | no: saves 0.7 min an hour, costs 1.9 |
+| Elixir | Elixir of Frost Power | +12.75 spell power | 2.1% | 30 min | buy | no price | ? | ? |
+| Scroll | Scroll of Spirit III | +11 spirit | 1.0% | 30 min | buy | 2s 99c | ×6 (17s 94c) | no: saves 0.3 min an hour, costs 0.5 |
+| Scroll | Scroll of Spirit II | +7 spirit | 0.6% | 30 min | buy | 1s 24c | ×6 (7s 44c) | no: saves 0.2 min an hour, costs 0.2 |
 
 One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience is extra: a food's +5% speeds up the experience you get from kills, not from quests. Elixirs: Classic lets several stack; Forever's rule is not confirmed.
 
-### Quests to do
+### Buy on the Auction House (listed now; prices change hourly; most minutes saved per gold first)
 
-- **ranged**: Icefury Wand, 2.3% faster kills, replaces Wand of Eventide (wear it right away; best to the end of leveling; saves about 29 min of killing). quest "Mage's Wand" (level 40; the chain starts with "Journey to the Marsh" from Deino / Jennea Cannon, level 30). Not on your RestedXP route: from Tabetha (Dustwallow Marsh 46.0, 57.1). Why it stays: Dragon Finger of Frozen Wrath at 55, 1.2% faster, saves about 6 min before 60; Dragon Finger of Magic at 55, 1.2% faster, saves about 5 min before 60; Greater Eternal Wand at 55, 1.2% faster, saves about 5 min before 60.
-
-### Look for on the Auction House (not listed this hour, usually is; usual prices)
-
-- **head**: Gossamer Headpiece of Frozen Wrath, 2.6% faster kills, replaces Silk Headband (wear it right away; best to the end of leveling; saves about 31 min of killing). Auction House: usually listed (in 29% of the hourly snapshots), about 2g 99s, not this hour. Why it stays: Dreamweave Circlet at 45, 0.6% faster, saves about 5 min before 60; Master's Hat of Frozen Wrath at 58, 0.8% faster, saves about 2 min before 60. Saves about 31 min of killing; earning its price takes about 27 min of play. Fits your gear budget (2g 75s 84c left after it).
+- **ranged**: Dreambough Wand, 2.3% faster kills, replaces Wand of Eventide (wear it right away; best to the end of leveling; saves about 28 min of killing). Enchanting: learn it first (a Forever recipe: where it is taught is not in the data yet; turns yellow at 235 in the client's data; you have 165); Auction House now: 2g 70s. Why it stays: Dragon Finger of Frozen Wrath at 55, 1.2% faster, saves about 6 min before 60; Dragon Finger of Magic at 55, 1.1% faster, saves about 5 min before 60; Greater Eternal Wand at 55, 1.1% faster, saves about 5 min before 60. Saves about 28 min of killing; earning its price takes about 12 min of play. Fits your gear budget (12g 81s 19c left after it).
+- **head**: Dreamweave Circlet, 2.9% faster kills, replaces Silk Headband (wear at 45; best to the end of leveling; saves about 31 min of killing). Tailoring: learn it first (trainer; Classic asked skill 250, Forever often less; you have 177); Auction House now: 3g 79s 69c. Why it stays: Master's Hat of Frozen Wrath at 58, 0.6% faster, saves about 1 min before 60. Saves about 31 min of killing; earning its price takes about 23 min of play. Fits your gear budget (9g 85s 2c left after it).
 
 ### Dungeon runs
 
 Run each once, with its quests in your log first: the quests' experience is the main reward. A drop that beats what the plan has you wear is a bonus; the plan works without it.
 
-- **Scarlet Monastery** (30-45), run at level 42: your RestedXP guide runs it then.
-- **Razorfen Downs** (37-46), run at level 40: your RestedXP guide runs it then and picks up 3 of its quests.
-
-### Off the guide
-
-In your RestedXP route's order (the full list: Off the guide, below).
-
-- **Level 42, step 4 of the guide's 42-44 part**, when the guide has you pick up "Vital Supplies" from High Sorcerer Andromath (Stormwind City 37.5, 81.6): **Mage's Wand** (for the gear). Rewards Icefury Wand; start with "Journey to the Marsh" from Jennea Cannon (Stormwind City 36.9, 81.1).
+- **Scarlet Monastery** (30-45), run at level 43: your RestedXP guide runs it then.
+- **Razorfen Downs** (37-46), run at level 40: your RestedXP guide runs it then and picks up 1 of its quests.
+- **Uldaman** (41-51), run at level 46: your RestedXP guide runs it then.
+  - Pick up first: Indurium Ore (level 42, from Pozzik (Thousand Needles 80.2, 75.9)); Back to Uldaman → Restoring the Necklace (3 parts, level 42-44, start with "The Shattered Necklace", which starts from Shattered Necklace, an 8% drop from 6 kinds of mobs in Badlands); Wild Leather Shoulders (level 45, start with "Wild Leather Armor" from Pratt McGrubben (Feralas 30.6, 42.7))
 
 ### Talents and the rest
 
@@ -504,48 +496,40 @@ Materials: Linen Cloth x332, Peacebloom x55, Empty Vial x55, Mild Spices x55.
 
 | Slot | Item | Worth at your level | Replaced at |
 |---|---|---|---|
-| head | Silk Headband | 1.6% faster kills | level 42: Gossamer Headpiece of Frozen Wrath |
+| head | Silk Headband | 1.6% faster kills | level 45: Dreamweave Circlet |
 | neck | Tellurium Necklace of the Channeler | 1.1% faster kills | not before 60 by 0.5% |
-| shoulder | Regal Mantle of Frozen Wrath | 2.8% faster kills | not before 60 by 0.5% |
-| back | Azure Silk Cloak | 1.8% faster kills | not before 60 by 0.5% |
-| chest | Dreamweave Vest | 4.7% faster kills | not before 60 by 0.5% |
-| wrist | Spidertank Oilrag | 2.1% faster kills | not before 60 by 0.5% |
-| hands | Dreamweave Gloves | 3.9% faster kills | not before 60 by 0.5% |
-| waist | Elder's Sash of Frozen Wrath | 1.9% faster kills | not before 60 by 0.5% |
-| legs | Durable Pants of Frozen Wrath | 2.8% faster kills | not before 60 by 0.5% |
-| feet | Spidersilk Boots | 1.4% faster kills | not before 60 by 0.5% |
-| finger1 | Ring of Forlorn Spirits | 1.4% faster kills | not before 60 by 0.5% |
+| shoulder | Regal Mantle of Frozen Wrath | 2.7% faster kills | not before 60 by 0.5% |
+| back | Azure Silk Cloak | 1.7% faster kills | not before 60 by 0.5% |
+| chest | Dreamweave Vest | 4.5% faster kills | not before 60 by 0.5% |
+| wrist | Spidertank Oilrag | 2.0% faster kills | not before 60 by 0.5% |
+| hands | Dreamweave Gloves | 3.7% faster kills | not before 60 by 0.5% |
+| waist | Elder's Sash of Frozen Wrath | 1.8% faster kills | not before 60 by 0.5% |
+| legs | Durable Pants of Frozen Wrath | 2.7% faster kills | not before 60 by 0.5% |
+| feet | Spidersilk Boots | 1.3% faster kills | not before 60 by 0.5% |
+| finger1 | Ring of Forlorn Spirits | 1.3% faster kills | not before 60 by 0.5% |
 | finger2 | Runemender's Seal | 1.2% faster kills | not before 60 by 0.5% |
 | trinket1 | Satchel of Potions | 0.0% faster kills | not before 60 by 0.5% |
 | trinket2 | **empty** | 0 | nothing worth 0.5% before 60 |
-| main hand | Debt Collector | 5.8% faster kills | not before 60 by 0.5% |
+| main hand | Debt Collector | 5.6% faster kills | not before 60 by 0.5% |
 | off hand | Orb of Mystic Insight | 1.3% faster kills | not before 60 by 0.5% |
-| ranged | Wand of Eventide | 2.1% faster kills | level 42: Icefury Wand |
+| ranged | Wand of Eventide | 2.1% faster kills | level 43: Dreambough Wand |
 
 ## Level by level
 
 Each upgrade worth 0.5% faster kills or more, under the level at which you can go and get it, with the level you can wear it when that is later. Dungeon drops carry Classic's drop chance and a fallback if they do not drop; auction house items on later visits are ones the house usually lists, at their usual price.
 
-## Off the guide
-
-Only what is worth stepping off your RestedXP route for, in the route's order: catching up with your guide, and gear the plan counts on that the route leaves out (its quests, a side trip for a reward or drops). The route is a good leveling path as it is: side quests for experience (a few minutes each, inside the estimate's own error) and the guide's own dungeons are left to it (2026-11-15). Each is tied to the moment in the guide it starts from: the quest it has you hand in or pick up there (the step number is the guide's own count within that part, an estimate). Do it, then pick the guide up where you left it.
-
-Checked against your RestedXP add-on: you are on step 63 of its 39-40 part; the add-on's own step id matches the guide text on this PC.
-
-- **Level 42, step 4 of the guide's 42-44 part**, when the guide has you pick up "Vital Supplies" from High Sorcerer Andromath (Stormwind City 37.5, 81.6): **Mage's Wand** (for the gear). Rewards Icefury Wand; start with "Journey to the Marsh" from Jennea Cannon (Stormwind City 36.9, 81.1).
-
 ## Dungeon runs
 
 Every leveling dungeon you have not outgrown, once, at the level its quests fit: pick the quests up first. Drops are bonuses over what the plan has you wear: wear one if it drops, the plan goes on as written if not. Drop chances are Classic's (25% where it has none); "about N min" is a drop's minutes of killing saved over the plan's item, and a run's drops are worth that times their chances. Minutes assume 50% of your experience comes from kills.
 
-- **Scarlet Monastery** (30-45), run at level 42: your RestedXP guide runs it then.
-- **Razorfen Downs** (37-46), run at level 40: your RestedXP guide runs it then and picks up 3 of its quests.
+- **Scarlet Monastery** (30-45), run at level 43: your RestedXP guide runs it then.
+- **Razorfen Downs** (37-46), run at level 40: your RestedXP guide runs it then and picks up 1 of its quests.
 - **Uldaman** (41-51), run at level 46: your RestedXP guide runs it then.
   - Pick up first: Indurium Ore (level 42, from Pozzik (Thousand Needles 80.2, 75.9)); Back to Uldaman → Restoring the Necklace (3 parts, level 42-44, start with "The Shattered Necklace", which starts from Shattered Necklace, an 8% drop from 6 kinds of mobs in Badlands); Wild Leather Shoulders (level 45, start with "Wild Leather Armor" from Pratt McGrubben (Feralas 30.6, 42.7))
 - **Zul'Farrak** (44-54), run at level 47: your RestedXP guide runs it then and picks up 4 of its quests.
   - Pick up first: The Prophecy of Mosh'aru (level 47, start with "Screecher Spirits" from Yeh'kinya (Tanaris 67.0, 22.4))
 - **Maraudon** (46-55), run at level 53: your RestedXP guide runs it then and picks up 2 of its quests; its drops are worth about 15 min on average.
-  - Drop: Inventor's Focal Sword + Darkmist Orb of Frozen Wrath (weapon, from level 48; Tinkerer Gizlock, 33% drop): over your Debt Collector + Orb of Mystic Insight, 4.1% faster, about 44 min saved if it drops
+  - Drop: Inventor's Focal Sword + Darkmist Orb of Frozen Wrath (weapon, from level 48; Tinkerer Gizlock, 33% drop): over your Debt Collector + Orb of Mystic Insight, 4.2% faster, about 45 min saved if it drops
 - **Sunken Temple** (50-56), run at level 56: your RestedXP guide runs it then and picks up 2 of its quests.
   - Pick up first: Jammal'an the Prophet (level 53, from Atal'ai Exile)
 - **Blackrock Depths** (52-60), run at level 57: your RestedXP guide runs it then and picks up 14 of its quests.
@@ -559,12 +543,12 @@ Every leveling dungeon you have not outgrown, once, at the level its quests fit:
 
 ## Detours off your route
 
-Quests your RestedXP route leaves out, played as a detour from where the route is at that level: walk to the giver, do it at the nearest spots, hand it in, walk back. Three kinds: **clear win** (20% faster than your usual leveling pace and 3 minutes saved), **worth it if you like it** (at your pace or a bit better), and **for the gear** (its reward is in your gear plan; a little slower than your pace is fine). Estimates: straight-line travel with a margin, Classic's quest positions, your fight-lab time per kill. 104 quests scored; 60 could not be placed (an item starts them, or a target has no known spot); Forever's own quests have no positions here.
+Quests your RestedXP route leaves out, played as a detour from where the route is at that level: walk to the giver, do it at the nearest spots, hand it in, walk back. Three kinds: **clear win** (20% faster than your usual leveling pace and 3 minutes saved), **worth it if you like it** (at your pace or a bit better), and **for the gear** (its reward is in your gear plan; a little slower than your pace is fine). Estimates: straight-line travel with a margin, Classic's quest positions, your fight-lab time per kill. 102 quests scored; 62 could not be placed (an item starts them, or a target has no known spot); Forever's own quests have no positions here.
 
-### Level 42
+### Level 43
 
-- **The Karnitol Shipwreck** (clear win): already in your log, around level 42 while your route is in Ironforge. About 2,250 experience for about 0 min (0 of it walking); saves about 3 min against your usual pace.
-- **Mai'Zoth** (worth it if you like it): from Brother Nimetz (Stranglethorn Vale 37.8, 3.6), around level 42 while your route is in Duskwood. About 5,356 experience for about 7 min (6 of it walking); saves about 2 min against your usual pace.
+- **The Karnitol Shipwreck** (worth it if you like it): already in your log, around level 43 while your route is in Ironforge. About 2,250 experience for about 2 min (1 of it walking); saves about 2 min against your usual pace.
+- **Mai'Zoth** (worth it if you like it): from Brother Nimetz (Stranglethorn Vale 37.8, 3.6), around level 43 while your route is in Duskwood. About 5,362 experience for about 7 min (6 of it walking); saves about 2 min against your usual pace.
 
 ### Level 51
 

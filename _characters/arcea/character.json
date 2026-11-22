@@ -665,7 +665,7 @@
      "/use item:247241",
      "/use item:247240"
     ],
-    "note": "Every healing potion you can get from 42 to 60, ranked by the health you keep. Forever's Discolored potions heal more at once, then hand 75% back as a 6-second poison or a 12-second disease, so they rank by the quarter you keep. Every potion shares one 2-minute cooldown, so only the best one you carry goes off. Left out: Minor and Lesser Healing Potion (not worth the shared cooldown at your level); the battleground draughts (they work only inside a battleground); Restored and Perishable Healing Potion, Forever's own (no source found); and a second Major Healing Potion (item 223913, not confirmed in Forever). 172 characters; with RestCue the first line becomes #showtooltip item:N (184).",
+    "note": "Every healing potion you can get from 42 to 60, ranked by the health you keep. Forever's Discolored potions heal more at once, then take three quarters of it back as a 6-second poison or a 12-second disease (from the client's spell data, not seen in game), so they rank by the quarter you keep; for a last-second save, press a Discolored potion by hand from your bags. Every potion shares one 2-minute cooldown, so only the best one you carry goes off. Left out: Minor and Lesser Healing Potion (not worth the shared cooldown at your level); the battleground draughts (they work only inside a battleground); Restored and Perishable Healing Potion, Forever's own (no source found); and a second Major Healing Potion (item 223913, not confirmed in Forever). 172 characters; with RestCue the first line becomes #showtooltip item:N (184).",
     "table": [
      [
       "Line",
