@@ -39,7 +39,7 @@ One layout for questing and for fighting players: your two bars and three keys o
 | Mouse 5 | Fire Blast | while moving | Fire Blast: the instant you press most in PvP (1.7 a duel), cast while strafing either way; a thumb never leaves the movement keys. Questing presses it about 0.1 a kill. Your habit. Ice Block stays off this button: a 5-minute spell on a key you press every 8 seconds invites misfires. |
 | Mouse 4 | Counterspell (macro) | reaction | Counterspell: the fastest reaction in PvP (a heal, a Fear, a Polymorph), about 0.1 a kill questing (casters). Your habit. The macro lands it while you cast; on cooldown it still throws your cast away. |
 | 1 | free (Arcane Missiles from 47) | set-up cast | Arcane Missiles from 47, when Missile Barrage lights up (0.65 a kill questing with the Arcane-Frost rotation). PvP rarely presses it, so a slow key is enough. |
-| 2 | Mana gem (macro) | restore | The mana gem: instant mana with no global cooldown, mid-fight in PvP or after a long pull. The slow row holds the restores (2 mana gem, 3 Satchel, 4 Evocation): nothing there is timed. |
+| 2 | Mana gem (macro) | restore | The mana gem: instant mana with no global cooldown, mid-fight in PvP or after a long pull. The slow row holds the restores (2 mana gem, 3 your top trinket, 4 Evocation): nothing there is timed. |
 | 3 | Top trinket (macro): Satchel of Potions | restore | Your top trinket's on-use (slot 13): any on-use trinket you wear in the top slot takes this key by itself, so it never needs re-doing when your gear changes. Today that is Satchel of Potions: a random one of a 520 heal, 520 mana, 50% more speed or 215 damage (the client's data; the item's text says it is luck which), every 10 minutes. On the slow row with the other restores. |
 | 4 | Evocation | between fights | Evocation: questing between fights, below 15% mana when it is ready (every 8 minutes). No time limit, so a slow key. Your habit. |
 | C | Cone of Cold | while moving | Cone of Cold: the kiting slow in PvP (0.9 a duel) and packs in questing. The bottom row is quick for you. Your habit. |
@@ -342,7 +342,7 @@ Count a piece's stats in spell power: 1 intellect = 0.13, 1 spirit = 0.55, 1 sta
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 1.9 hours old). "For your trip": enough to keep it up for about 4.5 hours of play, to your next training at level 44 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 2.0 hours old). "For your trip": enough to keep it up for about 4.5 hours of play, to your next training at level 44 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|
