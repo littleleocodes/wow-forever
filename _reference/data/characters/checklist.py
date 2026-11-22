@@ -14,6 +14,8 @@ import json
 import pathlib
 import re
 
+import own_keys as OWNK
+
 HERE = pathlib.Path(__file__).resolve().parent
 DATA = HERE.parent
 SHORT_WORD = "faster"   # "better" for a tank (render sets it from the plan)
@@ -123,6 +125,27 @@ def with_own_keys(g, extra):
             if k.get("role"):
                 slot["role"] = k["role"]
     return g
+
+
+def own_keys_html(k, lv):
+    """Under a character's own bars: the rebind list (until character.json says it is done), the set-up and the macros."""
+    if not k:
+        return ""
+    out = []
+    moved = [s for bar in k["bars"] for s in bar.get("slots") or [] if s.get("was")]
+    if moved and not k.get("rebound"):
+        items = "".join(f'<li><span class="kbd">{esc(s["key"])}</span> {md(s["was"])}</li>' for s in moved)
+        items += "".join(f"<li>{md(x)}</li>" for x in k.get("rebind_extra") or [])
+        out.append(f'<details class="keynotes" open><summary>Rebind once</summary><ul class="small">{items}</ul></details>')
+    if k.get("setup"):
+        out.append('<details class="keynotes"><summary>Set up once</summary><ol class="small">'
+                   + "".join(f"<li>{md(x)}</li>" for x in k["setup"]) + "</ol></details>")
+    if k.get("macros"):
+        mac = "".join(f'<div class="macro"><h4><span class="kbd">{esc(m["key"])}</span> {esc(m["name"])}</h4>'
+                      f'<pre>{esc(chr(10).join(m["lines"]))}</pre><p class="small muted">{md(m.get("note", ""))}</p></div>'
+                      for m in k["macros"])
+        out.append(f'<details class="keynotes"><summary>Your macros (none tested in game yet)</summary>{mac}</details>')
+    return "".join(out)
 
 
 def bars_html(g, lv):
@@ -431,6 +454,11 @@ def render(cfg, C):
     g = (json.load(open(DATA.parent.parent / cfg["guide"], encoding="utf-8")) if cfg.get("guide") and (DATA.parent.parent / cfg["guide"]).exists()
          else guide(cfg["class"], h["spec"]))
     g = with_own_keys(g, C.get("keys_extra"))
+    own = OWNK.block(cfg)   # the character's own key layout replaces the guide's keys (2026-11-22, Arcea: questing and PvP)
+    if own:
+        g = dict(g or {})
+        g["keys"] = OWNK.resolved(own, C.get("worn_names"))   # (a trinket key names the trinket worn in its slot)
+    keynotes = own_keys_html(own, lv)
     soon, later = C.get("soon") or [], C.get("later") or []
     gold = C.get("gold") or {}
     town, road = steps_html(C, lv)
@@ -506,7 +534,7 @@ def render(cfg, C):
         free=coins(gold.get("spend")) if gold.get("spend") is not None else "?", reserve=coins(gold.get("reserve")),
         ah=ah, profs=profs, changes=changes, town=town, road=road or '<p class="muted">Nothing to leave the guide for in the next levels.</p>',
         legacy=leg, legacy_badge=f' <span class="count" aria-label="{leg_n} points">{leg_n}</span>' if leg_n else "", bars=bars or '<p class="muted">No keybind plan for this spec yet.</p>',
-        coming=f'<h4>Coming to your bars</h4><ul class="coming">{coming_html}</ul>' if coming_html else "",
+        coming=f'<h4>Coming to your bars</h4><ul class="coming">{coming_html}</ul>' if coming_html else "", keynotes=keynotes,
         stage=stage_html(g, lv, not h.get("chosen")), jrows=jrows,
         rates=esc(", ".join((f"{k} = {v}" if k[:1].isdigit() else f"1 {k.replace('mp5', 'mana per 5 sec')} = {v}")   # ("1 100 armor", 2026-11-14)
                             for k, v in rates.items() if k != "armor")),
@@ -600,6 +628,12 @@ ul.list {{ list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }}
 .cap, .kbd {{ display: inline-block; font: 700 .78rem var(--display); min-width: 1.6em; text-align: center; padding: 0 4px; border-radius: 4px; background: var(--ink); color: var(--panel); }}
 .spell {{ display: block; font-size: .84rem; line-height: 1.25; margin-top: 4px; overflow-wrap: anywhere; }}
 ul.coming {{ margin: 0; padding-left: 18px; }}
+.keynotes {{ margin-top: 12px; }}
+.keynotes summary {{ cursor: pointer; font-weight: 600; }}
+.keynotes ul, .keynotes ol {{ margin: 6px 0 0; padding-left: 20px; display: grid; gap: 3px; }}
+.macro h4 {{ margin: 10px 0 4px; font-size: .9rem; }}
+.macro pre {{ margin: 0; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); font: .8rem ui-monospace, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; }}
+.macro p {{ margin: 4px 0 0; }}
 .stage-title {{ font: 700 1.1rem var(--display); margin: 0 0 6px; }}
 ol.press {{ margin: 0; padding-left: 20px; display: grid; gap: 4px; }}
 ul.notes {{ margin: 10px 0 0; padding-left: 18px; color: var(--muted); font-size: .88rem; }}
@@ -664,7 +698,7 @@ footer {{ color: var(--muted); font-size: .8rem; margin-top: 28px; }}
   <section class="panel" id="fight" role="tabpanel" aria-labelledby="tab-fight" hidden>
   <h2>Your fight at level {lv}</h2>
   <div class="board">
-      <section class="card"><h3><span class="where">Your bars</span>Keys at level {lv}</h3>{bars}{coming}</section>
+      <section class="card"><h3><span class="where">Your bars</span>Keys at level {lv}</h3>{bars}{coming}{keynotes}</section>
       <section class="card"><h3><span class="where">The fight</span>What to press</h3>{stage}</section>
   </div>
   </section>

@@ -149,27 +149,598 @@
     "Hybrid Arcane/Frost"
    ]
   ],
-  "keys": [
-   {
-    "key": "Shift+F",
-    "spell": "Ice Block",
-    "from": 40,
-    "role": "PvP: the big escape (Shift on your escape key)"
-   },
-   {
-    "key": "Shift+1",
-    "spell": "Ice Barrier",
-    "from": 40,
-    "role": "The shield before a pull (the fight lab presses it)"
-   },
-   {
-    "key": "Shift+2",
-    "spell": "Cold Snap",
-    "from": 40,
-    "role": "PvP: a second Frost Nova or Ice Block"
-   }
-  ],
   "note": "Hand-kept (2026-11-22). plan.py: chosen_order builds the order (the respec's points row by row from 10, then one a level from 41; every level checked legal); a respec is shown until Blizzard's talents match the path at your level; no race of the next points.",
   "source": "the user, 2026-11-22, relayed by the audit session: \"I participate in a lot of open world PvP, and want to be able to fight back but also want to be able to quest somewhat fast\"; the audit session's recommendation, which the user took"
+ },
+ "keys": {
+  "name": "Questing and PvP",
+  "decided": "2026-11-22",
+  "intro": "One layout for questing and for fighting players: your two bars and three keys of a third (V, X and Shift+V). Where the two want the same key, PvP's reactions take the fast keys: a late quest press costs a second, a late Ice Block costs the fight. Questing presses with no time limit (Evocation, the wand) sit on slow keys. Questing numbers are the fight lab's presses per kill for the page builds that play your two rotations (Frost to 46, Arcane-Frost from 47); PvP numbers are the duel lab's Frost build's presses per duel. A model, not a measurement.",
+  "bars": [
+   {
+    "title": "Action bar 1",
+    "slots": [
+     {
+      "key": "Q",
+      "kind": "set-up cast",
+      "role": "Your bolt, the key you press most",
+      "why": "The key you press most in both: about 3.3-4.2 Frostbolts a kill questing, 1.6 a duel. Your habit since level 4.",
+      "binds": [
+       {
+        "from": 4,
+        "text": "**Frostbolt** (Eureka! macro)"
+       }
+      ]
+     },
+     {
+      "key": "E",
+      "kind": "reaction",
+      "role": "Frost Nova: the mob or the player reaches you",
+      "why": "A reaction in both: the mob or the player reaches you (0.8 a kill questing). Your habit. The macro puts it out in the middle of a bolt; press E only when Frost Nova is lit, since on cooldown the macro still throws your bolt away.",
+      "binds": [
+       {
+        "from": 10,
+        "text": "**Frost Nova** (macro)"
+       }
+      ],
+      "was": "Frost Nova: make it the mid-cast macro"
+     },
+     {
+      "key": "R",
+      "kind": "while moving",
+      "role": "Ice Lance into every freeze",
+      "why": "Ice Lance into every freeze (Frost Nova, Frostbite, Fingers of Frost): questing's second key (1.4-1.5 a kill), and in PvP the instant you throw while strafing. Your habit.",
+      "binds": [
+       {
+        "from": 20,
+        "spell": "Ice Lance"
+       }
+      ]
+     },
+     {
+      "key": "F",
+      "kind": "reaction",
+      "role": "Blink, your Flash; inside Ice Block it leaves the block",
+      "why": "Blink, your Flash: out of stuns and roots (Forever's tooltip). The macro Blinks in the middle of a cast, and inside Ice Block it leaves the block and Blinks. Press F only when Blink is lit: on cooldown it still stops your cast, and inside the block it still ends the block.",
+      "binds": [
+       {
+        "from": 20,
+        "text": "**Blink** (macro)"
+       }
+      ],
+      "was": "Blink: make it the macro (it also leaves Ice Block)"
+     },
+     {
+      "key": "Mouse 5",
+      "kind": "while moving",
+      "role": "Fire Blast: the instant while you move",
+      "why": "Fire Blast: the instant you press most in PvP (1.7 a duel), cast while strafing either way; a thumb never leaves the movement keys. Questing presses it about 0.1 a kill. Your habit. Ice Block stays off this button: a 5-minute spell on a key you press every 8 seconds invites misfires.",
+      "binds": [
+       {
+        "from": 6,
+        "spell": "Fire Blast"
+       }
+      ]
+     },
+     {
+      "key": "Mouse 4",
+      "kind": "reaction",
+      "role": "Counterspell: their heal, Fear or Polymorph",
+      "why": "Counterspell: the fastest reaction in PvP (a heal, a Fear, a Polymorph), about 0.1 a kill questing (casters). Your habit. The macro lands it while you cast; on cooldown it still throws your cast away.",
+      "binds": [
+       {
+        "from": 24,
+        "text": "**Counterspell** (macro)"
+       }
+      ],
+      "was": "Counterspell: make it the mid-cast macro"
+     },
+     {
+      "key": "1",
+      "kind": "set-up cast",
+      "role": "Arcane Missiles when Missile Barrage lights up (from 47)",
+      "why": "Arcane Missiles from 47, when Missile Barrage lights up (0.65 a kill questing with the Arcane-Frost rotation). PvP rarely presses it, so a slow key is enough.",
+      "binds": [
+       {
+        "from": 47,
+        "spell": "Arcane Missiles"
+       }
+      ],
+      "free": "Arcane Missiles from 47"
+     },
+     {
+      "key": "2",
+      "kind": "restore",
+      "role": "The best mana gem you carry",
+      "why": "The mana gem: instant mana with no global cooldown, mid-fight in PvP or after a long pull. The slow row holds the restores (2 mana gem, 3 Satchel, 4 Evocation): nothing there is timed.",
+      "binds": [
+       {
+        "from": 28,
+        "text": "Mana gem (macro)"
+       }
+      ],
+      "was": "Polymorph moves to V: put the mana gem macro here"
+     },
+     {
+      "key": "3",
+      "kind": "restore",
+      "role": "Your top trinket's on-use",
+      "why": "Your top trinket's on-use (slot 13): any on-use trinket you wear in the top slot takes this key by itself, so it never needs re-doing when your gear changes. Today that is Satchel of Potions: a random one of a 520 heal, 520 mana, 50% more speed or 215 damage (the client's data; the item's text says it is luck which), every 10 minutes. On the slow row with the other restores.",
+      "binds": [
+       {
+        "from": 1,
+        "text": "Top trinket (macro)"
+       }
+      ],
+      "was": "Mana Shield moves to Shift+X: put the top-trinket macro here",
+      "item_slot": "trinket1"
+     },
+     {
+      "key": "4",
+      "kind": "between fights",
+      "role": "Evocation between fights",
+      "why": "Evocation: questing between fights, below 15% mana when it is ready (every 8 minutes). No time limit, so a slow key. Your habit.",
+      "binds": [
+       {
+        "from": 20,
+        "spell": "Evocation"
+       }
+      ]
+     },
+     {
+      "key": "C",
+      "kind": "while moving",
+      "role": "Cone of Cold: the kiting slow",
+      "why": "Cone of Cold: the kiting slow in PvP (0.9 a duel) and packs in questing. The bottom row is quick for you. Your habit.",
+      "binds": [
+       {
+        "from": 26,
+        "spell": "Cone of Cold"
+       }
+      ]
+     },
+     {
+      "key": "Middle mouse",
+      "kind": "filler",
+      "role": "The wand: finishing hits",
+      "why": "The wand: questing's third key (1.1-1.5 a kill, finishing a mob). Once V and X hold Polymorph and Ice Barrier, no PvP reaction needs this button, so it stays. If a middle click is hard with the right button held, see Options.",
+      "binds": [
+       {
+        "from": 1,
+        "text": "Wand (macro)"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Action bar 2 (Shift)",
+    "slots": [
+     {
+      "key": "Shift+Q",
+      "kind": "set-up cast, quick",
+      "role": "Frostbolt Rank 1: fish for procs, a quick cheap slow",
+      "why": "Frostbolt Rank 1, your choice: with Improved Frostbolt a 1.0-second cast for 25 mana that puts the 40% slow on. Questing and PvP: fish for Fingers of Frost now, and Missile Barrage from 46-47. PvP: the fast, cheap slow on a runner. Shift on your bolt key: the small bolt. Whether a Rank 1 bolt rolls Fingers of Frost, Frostbite and Missile Barrage at their full chance in Forever is unknown: the official simulator gives every rank the full chance, but Warcraft Logs show the server scaling another spell-hit proc (the Revelation enchant) by the spell's level, which would give a Rank 1 bolt no chance at your level. Watch for the procs in game.",
+      "binds": [
+       {
+        "from": 42,
+        "text": "**Frostbolt** Rank 1"
+       }
+      ],
+      "was": "free until now: Frostbolt Rank 1 (drag Rank 1 from the spellbook, or the macro below)"
+     },
+     {
+      "key": "Shift+E",
+      "kind": "while moving",
+      "role": "Arcane Explosion: packs, and stealth",
+      "why": "Arcane Explosion: packs in questing; in PvP, a rogue or druid vanishing or stealthing within 10 yards. Your habit.",
+      "binds": [
+       {
+        "from": 14,
+        "spell": "Arcane Explosion"
+       }
+      ]
+     },
+     {
+      "key": "Shift+R",
+      "kind": "set-up cast",
+      "role": "Blizzard: packs and battleground groups",
+      "why": "Blizzard: packs, and groups in battlegrounds. Your habit.",
+      "binds": [
+       {
+        "from": 20,
+        "spell": "Blizzard"
+       }
+      ]
+     },
+     {
+      "key": "Shift+F",
+      "kind": "reaction",
+      "role": "Your bottom trinket's on-use: the PvP insignia",
+      "why": "Your bottom trinket's on-use (slot 14). Empty today, so the key does nothing yet: wear the PvP insignia in the bottom slot when you get it (fear, Polymorph and slows; 5 minutes), and Shift+F is always your break-out key. Feared or sheeped you cannot move, so the key's speed matters less than finding it: F frees you from stuns and roots, Shift+F from fear, Polymorph and slows.",
+      "binds": [
+       {
+        "from": 1,
+        "text": "Bottom trinket (macro)"
+       }
+      ],
+      "was": "Ice Block moves to Shift+Mouse 4: put the bottom-trinket macro here (it does nothing until you wear an on-use trinket there)",
+      "item_slot": "trinket2"
+     },
+     {
+      "key": "Shift+Mouse 5",
+      "kind": "reaction",
+      "role": "Escape Artist: out of a slow or a root",
+      "why": "Escape Artist, your Gnome racial: out of a slow or a root and 3 seconds immune, every 2 minutes. You press it while running, and a thumb leaves the movement keys alone. A Fire Blast pressed with Shift still held fires this instead: the cost is a 2-minute racial.",
+      "binds": [
+       {
+        "from": 1,
+        "spell": "Escape Artist"
+       }
+      ],
+      "was": "Fire Ward moves to Shift+1: put Escape Artist here"
+     },
+     {
+      "key": "Shift+Mouse 4",
+      "kind": "reaction",
+      "role": "Ice Block",
+      "why": "Ice Block: the costliest late press in PvP, on a thumb with no movement finger. It sits under Counterspell (pressed once in 30 seconds), not under Fire Blast, so a Shift held from Shift+E never fires it. The macro blocks in the middle of a cast; to leave early, press F or right-click the buff.",
+      "binds": [
+       {
+        "from": 40,
+        "text": "**Ice Block** (macro)"
+       }
+      ],
+      "was": "Frost Ward moves to Shift+2: put the Ice Block macro here"
+     },
+     {
+      "key": "Shift+1",
+      "kind": "once a fight",
+      "role": "Fire Ward against a fire caster",
+      "why": "Fire Ward: before or early in a fight with a Fire mage, a Destruction warlock or a shaman's Flame Shock. You cast it ahead of time, so a slow key is enough.",
+      "binds": [
+       {
+        "from": 20,
+        "spell": "Fire Ward"
+       }
+      ],
+      "was": "Ice Barrier moves to X: put Fire Ward here"
+     },
+     {
+      "key": "Shift+2",
+      "kind": "once a fight",
+      "role": "Frost Ward against a frost caster",
+      "why": "Frost Ward: against a Frost mage or a shaman's Frost Shock. The same reason.",
+      "binds": [
+       {
+        "from": 22,
+        "spell": "Frost Ward"
+       }
+      ],
+      "was": "Cold Snap moves to Shift+V: put Frost Ward here"
+     },
+     {
+      "key": "Shift+3",
+      "kind": "once a fight",
+      "role": "Remove Lesser Curse",
+      "why": "Remove Lesser Curse: Curse of Tongues, Curse of Exhaustion, a Bane. With an enemy targeted it lands on you (Auto Self Cast). Your habit.",
+      "binds": [
+       {
+        "from": 18,
+        "spell": "Remove Lesser Curse"
+       }
+      ]
+     },
+     {
+      "key": "Shift+4",
+      "kind": "free",
+      "role": "Free",
+      "why": "Left free.",
+      "binds": []
+     },
+     {
+      "key": "Shift+C",
+      "kind": "restore",
+      "role": "The best healing potion you carry",
+      "why": "The best healing potion you carry: every potion shares one 2-minute cooldown. Your habit.",
+      "binds": [
+       {
+        "from": 1,
+        "text": "Healing potion (macro)"
+       }
+      ]
+     },
+     {
+      "key": "Shift+X",
+      "kind": "once a fight",
+      "role": "Mana Shield when Ice Barrier is down, against physical damage",
+      "why": "Mana Shield: the shield when Ice Barrier is down, against melee players and hunters only (Forever's Mana Shield absorbs physical damage only). A key of its own, so X never spends mana on it while Ice Barrier still holds.",
+      "binds": [
+       {
+        "from": 20,
+        "spell": "Mana Shield"
+       }
+      ],
+      "was": "free until now: put Mana Shield here (it was on 3)"
+     }
+    ]
+   },
+   {
+    "title": "Third bar: V, X and Shift+V",
+    "slots": [
+     {
+      "key": "V",
+      "kind": "set-up cast, in a hurry",
+      "role": "Polymorph where you point",
+      "why": "Polymorph where you point: the healer or a second player in PvP, the second mob questing. The bottom row is quick for you; 2 was the 23rd-fastest key. With the right mouse button held there is no pointer: V then sheeps your focus (Ctrl+V sets it), else your target.",
+      "binds": [
+       {
+        "from": 8,
+        "text": "**Polymorph** (macro)"
+       }
+      ],
+      "was": "new key: the Polymorph macro (Polymorph leaves 2)"
+     },
+     {
+      "key": "X",
+      "kind": "once a fight",
+      "role": "Ice Barrier",
+      "why": "Ice Barrier: at every pull questing (0.17 a kill on the Frost page), and in PvP again each time it breaks, while you move. It was on Shift+1, the 25th key.",
+      "binds": [
+       {
+        "from": 40,
+        "spell": "Ice Barrier"
+       }
+      ],
+      "was": "new key: Ice Barrier (it leaves Shift+1)"
+     },
+     {
+      "key": "Shift+V",
+      "kind": "reaction",
+      "role": "Cold Snap: Frost Nova or Ice Block again",
+      "why": "Cold Snap: in PvP a second Frost Nova or Ice Block (press it, then E or Shift+Mouse 4); questing, Nova again on a bad pull. It was on Shift+2, the slowest key.",
+      "binds": [
+       {
+        "from": 40,
+        "spell": "Cold Snap"
+       }
+      ],
+      "was": "new key: Cold Snap (it leaves Shift+2)"
+     }
+    ]
+   }
+  ],
+  "ahead": [
+   [
+    47,
+    "**1**: Arcane Missiles. Missile Barrage comes at 46 and 47 on your path, and from 47 you play the Arcane-Frost rotation: press it when Missile Barrage lights up."
+   ],
+   [
+    48,
+    "**2** takes Mana Citrine (the macro lists every gem). Improved Frost Nova 2: Frost Nova every 21 seconds."
+   ],
+   [
+    50,
+    "Permafrost 3: your chills slow 10% more and last a third longer."
+   ],
+   [
+    58,
+    "**2** takes Mana Ruby."
+   ],
+   [
+    59,
+    "Improved Counterspell: **Mouse 4** also silences, 2 seconds from 59 and 4 from 60."
+   ],
+   [
+    null,
+    "The PvP insignia, the day you buy it: wear it in the bottom trinket slot, and **Shift+F** uses it."
+   ]
+  ],
+  "rebound": false,
+  "rebind_extra": [
+   "Ctrl+V: Focus Target (Esc, Options, Keybindings, Targeting)",
+   "Shift+Tab: Target Nearest Enemy Player (Targeting); Tab stays as it is"
+  ],
+  "setup": [
+   "Put the Polymorph macro, Ice Barrier and Cold Snap on three free buttons of a bar you already show: your right-hand click bar has room. If it has none free, turn on another action bar in the action-bar settings.",
+   "Esc, Options, Keybindings, Action Bars: find that bar by its number (Action Bar 4 is usually the right-hand bar). Click the key box of each of the three buttons and press V (Polymorph), X (Ice Barrier) and Shift+V (Cold Snap).",
+   "Taking X and V moves Sit/Move Down off X and the nameplate toggle off V (and Friendly Nameplates off Shift+V, if it was there). Set nameplates to always show in the nameplate options, or bind the toggle to another key. Swimming down then uses the camera.",
+   "Keybindings, Targeting: Focus Target on Ctrl+V, and Target Nearest Enemy Player on Shift+Tab (Tab stays for questing; pets and totems drop out of the cycle). Clear any binding WoW already has on Ctrl+V first.",
+   "Make the macros below and drag each onto its key; Escape Artist comes from your spellbook, Satchel of Potions from your character pane.",
+   "Interface, Combat: Auto Self Cast on, self-cast key Alt, as on your leveling bars."
+  ],
+  "macros": [
+   {
+    "key": "Q",
+    "name": "Frostbolt with Eureka!",
+    "lines": [
+     "#showtooltip Frostbolt",
+     "/cast Eureka!",
+     "/cast Frostbolt"
+    ],
+    "note": "Eureka! (your Gnome racial, every 2 minutes) has no global cooldown, so it goes out with the bolt whenever it is ready; the rest of the time its line fails and the bolt still casts."
+   },
+   {
+    "key": "Shift+Q",
+    "name": "Frostbolt Rank 1",
+    "lines": [
+     "#showtooltip",
+     "/cast Frostbolt(Rank 1)"
+    ],
+    "note": "Or drag Rank 1 itself from the spellbook: tick show all spell ranks in its settings menu (Forever's spellbook has the option). The (Rank 1) syntax is untested in Forever's client; if the macro casts your top rank, use the dragged spell. Whether a Rank 1 bolt rolls Fingers of Frost, Frostbite and Missile Barrage at their full chance in Forever is unknown: the official simulator gives every rank the full chance, but Warcraft Logs show the server scaling another spell-hit proc (the Revelation enchant) by the spell's level, which would give a Rank 1 bolt no chance at your level. Watch for the procs in game."
+   },
+   {
+    "key": "E",
+    "name": "Frost Nova, mid-cast",
+    "lines": [
+     "#showtooltip Frost Nova",
+     "/stopcasting",
+     "/cast Frost Nova"
+    ],
+    "note": "Puts the Nova out in the middle of a bolt. Press E only when Frost Nova is lit: /stopcasting runs even when Nova is on cooldown, so the bolt you were casting is thrown away and nothing comes out. If you lose bolts while questing, put plain Frost Nova back on E."
+   },
+   {
+    "key": "F",
+    "name": "Blink, mid-cast or out of Ice Block",
+    "lines": [
+     "#showtooltip Blink",
+     "/cancelaura Ice Block",
+     "/stopcasting",
+     "/cast Blink"
+    ],
+    "note": "Blinks in the middle of a cast, and inside Ice Block it leaves the block and Blinks: the deliberate way out (right-clicking the Ice Block buff also leaves it). Press F only when Blink is lit: on cooldown it still stops your cast, and inside the block it still ends the block."
+   },
+   {
+    "key": "Mouse 4",
+    "name": "Counterspell, mid-cast",
+    "lines": [
+     "#showtooltip Counterspell",
+     "/stopcasting",
+     "/cast Counterspell"
+    ],
+    "note": "Lands the interrupt on the first press while you cast. The same cost: on cooldown it still throws your cast away."
+   },
+   {
+    "key": "V",
+    "name": "Polymorph where you point",
+    "lines": [
+     "#showtooltip Polymorph",
+     "/cast [@mouseover,harm,nodead][@focus,harm,nodead][] Polymorph"
+    ],
+    "note": "Sheeps the enemy under your mouse pointer (its model or its portrait), else your focus, else your target. An enemy under the pointer wins over your target, so move the pointer off enemies to sheep your target. While you hold the right mouse button the pointer is hidden and there is no mouseover: V then sheeps your focus, else your target, so let go of the right button for that moment to sheep what you point at."
+   },
+   {
+    "key": "2",
+    "name": "Best mana gem",
+    "lines": [
+     "#showtooltip",
+     "/use Mana Ruby",
+     "/use Mana Citrine",
+     "/use Mana Jade",
+     "/use Mana Agate"
+    ],
+    "note": "Every mana gem shares one 2-minute cooldown with every Healthstone (Forever's client data), so only the best gem you carry goes off. No global cooldown."
+   },
+   {
+    "key": "3",
+    "name": "Top trinket",
+    "lines": [
+     "#showtooltip 13",
+     "/use 13"
+    ],
+    "note": "Uses the trinket in your top slot: Satchel of Potions today. A lone number after /use is an equipment slot in Forever's UI code (13 the top trinket, 14 the bottom one), so the key uses whatever you wear there; #showtooltip with a slot number is untested in Forever's client."
+   },
+   {
+    "key": "Shift+F",
+    "name": "Bottom trinket",
+    "lines": [
+     "#showtooltip 14",
+     "/use 14"
+    ],
+    "note": "Uses the trinket in your bottom slot: wear the PvP insignia there. A lone number after /use is an equipment slot in Forever's UI code (13 the top trinket, 14 the bottom one), so the key uses whatever you wear there; #showtooltip with a slot number is untested in Forever's client."
+   },
+   {
+    "key": "Shift+Mouse 4",
+    "name": "Ice Block, mid-cast",
+    "lines": [
+     "#showtooltip Ice Block",
+     "/stopcasting",
+     "/cast Ice Block"
+    ],
+    "note": "Blocks at once, even in the middle of a cast. To leave the block early, press F (it Blinks too) or right-click the buff."
+   },
+   {
+    "key": "Shift+C",
+    "name": "Best healing potion",
+    "lines": [
+     "#showtooltip",
+     "/use Major Healing Potion",
+     "/use Superior Healing Potion",
+     "/use Greater Healing Potion",
+     "/use Healing Potion",
+     "/use Lesser Healing Potion",
+     "/use Minor Healing Potion"
+    ],
+    "note": "Every potion shares one 2-minute cooldown (the mana and Free Action potions too), so only the best one you carry goes off."
+   },
+   {
+    "key": "Middle mouse",
+    "name": "A wand that stays on",
+    "lines": [
+     "#showtooltip Shoot",
+     "/cast !Shoot"
+    ],
+    "note": "Plain Shoot stops the wand on a second press; the ! keeps it shooting."
+   }
+  ],
+  "options": [
+   "Counterspell your focus: make the Mouse 4 macro's last line /cast [mod:ctrl,@focus,harm,nodead][] Counterspell, and Ctrl+Mouse 4 interrupts your focus without changing target (clear any binding on Ctrl+Mouse 4 first).",
+   "Ice Block that leaves on a second press: put /cancelaura Ice Block above /cast Ice Block in the Shift+Mouse 4 macro. A panicked double tap then leaves the block at once.",
+   "If a middle click is hard with the right mouse button held, the wand moves to 1 until 47 and to Shift+4 from 47.",
+   "Plain Frost Nova on E, if the mid-cast macro costs you bolts while questing."
+  ],
+  "no_key": [
+   [
+    "Fireball",
+    "Frostbolt does more for your talents, and Fire Blast is your Fire spell when Frost is locked out."
+   ],
+   [
+    "Frostfire Bolt",
+    "Your rotation never casts it; your talents are for Frostbolt."
+   ],
+   [
+    "Scorch",
+    "A Fire cast for a Frost lockout; Fire Blast already covers it."
+   ],
+   [
+    "Flamestrike",
+    "A Fire area spell; Blizzard and Arcane Explosion cover packs."
+   ],
+   [
+    "Arcane Missiles before 47",
+    "Your rotation skips it until Missile Barrage; from 47 it is on 1."
+   ],
+   [
+    "Amplify Magic",
+    "A buff that raises the spell damage and the healing a party member takes: out of combat, for a group with a healer; never in PvP."
+   ],
+   [
+    "Dampen Magic",
+    "A buff that lowers the spell damage and the healing its target takes (up to 135 and 270 at its last rank). In PvP, click it on yourself before a fight with casters (warlocks, mages, priests) when no healer is with you."
+   ],
+   [
+    "Slow Fall",
+    "30 seconds of slow falling, a Light Feather each. In PvP, click it as you jump off a ledge to break a chase: a melee player who follows takes the fall damage."
+   ],
+   [
+    "Frost Armor, Ice Armor, Mage Armor",
+    "Clicked between fights: Mage Armor for questing; against melee players Ice Armor (armor, and a chill on whoever hits you), against casters Mage Armor (resistances)."
+   ],
+   [
+    "Arcane Intellect, Arcane Brilliance",
+    "Buffs, between fights."
+   ],
+   [
+    "Conjure Water, Conjure Food, the Conjure Mana gems",
+    "Between fights; the gem itself is on 2."
+   ],
+   [
+    "Teleports and portals",
+    "Travel."
+   ],
+   [
+    "Talents you do not take",
+    "Pyroblast, Presence of Mind, Arcane Power, Blast Wave, Combustion, Arcane Blast and Arcane Wrath are not on your path."
+   ]
+  ],
+  "needs": [
+   "Conjure Mana Agate",
+   "Conjure Mana Jade",
+   "Conjure Mana Citrine",
+   "Conjure Mana Ruby"
+  ],
+  "ranking": "How fast each key is to press while strafing with A/D and steering with the right button held, fastest first: Mouse 5 and Mouse 4; Shift+Mouse 5 and Shift+Mouse 4 (the pinky on Shift is not a movement finger); E, Q, F, R; C, V, X; the middle button; Shift+E, Shift+C, Shift+V, Shift+X, Shift+Q, Shift+F, Shift+R; 4, 1, 3, 2; Shift+4, Shift+1, Shift+3, Shift+2. This order is our assumption: your own reach test overrides it.",
+  "source": "The user, 2026-11-22, to the audit session: \"I want the keybinds to be both practical for Arcea questing and PvP. This doesn't need tyo be the default for everything, just specific for this case\", then \"I think X, C, and V can be utlized more.\" Then, for Shift+Q: \"Sihft+Q is going to be frostbolt rank 1 because you can use it to fish for Fingers and Missile Barrage procs\". Drafted by the lane session, read by the audit session (six changes taken).",
+  "note": "Hand-kept (2026-11-22). _reference/data/characters/own_keys.py reads it: it replaces the guide's keys on the checklist and writes \"Your keys\" in the README. Set rebound to true once the user has rebound in game (the rebind list then leaves the pages). The class keybinds pages and the by-level guides are untouched."
  }
 }

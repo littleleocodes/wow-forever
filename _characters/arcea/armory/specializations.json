@@ -127,11 +127,11 @@
          "name": "Improved Frostbolt",
          "id": 11070
         },
-        "description": "Reduces the casting time of your Frostbolt spell by 0.4 sec.",
+        "description": "Reduces the casting time of your Frostbolt spell by 0.5 sec.",
         "cast_time": "Passive",
         "power_cost": null
        },
-       "talent_rank": 4
+       "talent_rank": 5
       },
       {
        "talent": {
@@ -217,6 +217,21 @@
       },
       {
        "talent": {
+        "name": "Arctic Reach",
+        "id": 135300
+       },
+       "spell_tooltip": {
+        "spell": {
+         "name": "Arctic Reach",
+         "id": 16757
+        },
+        "description": "Increases the range of your Frostbolt, Ice Lance, and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%.",
+        "cast_time": "Passive"
+       },
+       "talent_rank": 1
+      },
+      {
+       "talent": {
         "name": "Shatter",
         "id": 135298
        },
@@ -248,7 +263,7 @@
       }
      ],
      "specialization_name": "Frost",
-     "spent_points": 23
+     "spent_points": 25
     }
    ]
   }

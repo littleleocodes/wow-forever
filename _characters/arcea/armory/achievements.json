@@ -450,6 +450,82 @@
    }
   },
   {
+   "id": 62354,
+   "achievement": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/achievement/62354?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Explore Riverglades",
+    "id": 62354
+   },
+   "criteria": {
+    "id": 232119,
+    "is_completed": false,
+    "child_criteria": [
+     {
+      "id": 232120,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 232121,
+      "amount": 1,
+      "is_completed": true
+     },
+     {
+      "id": 232122,
+      "amount": 1,
+      "is_completed": true
+     },
+     {
+      "id": 232123,
+      "amount": 1,
+      "is_completed": true
+     },
+     {
+      "id": 232124,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 232125,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 232126,
+      "amount": 1,
+      "is_completed": true
+     },
+     {
+      "id": 232127,
+      "amount": 1,
+      "is_completed": true
+     },
+     {
+      "id": 232128,
+      "amount": 1,
+      "is_completed": true
+     },
+     {
+      "id": 232129,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 232130,
+      "amount": 1,
+      "is_completed": true
+     },
+     {
+      "id": 232131,
+      "amount": 0,
+      "is_completed": false
+     }
+    ]
+   }
+  },
+  {
    "id": 627,
    "achievement": {
     "key": {
@@ -1224,6 +1300,37 @@
    }
   },
   {
+   "id": 777,
+   "achievement": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/achievement/777?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Explore Deadwind Pass",
+    "id": 777
+   },
+   "criteria": {
+    "id": 127901,
+    "is_completed": false,
+    "child_criteria": [
+     {
+      "id": 127902,
+      "amount": 1,
+      "is_completed": true
+     },
+     {
+      "id": 127903,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 127904,
+      "amount": 0,
+      "is_completed": false
+     }
+    ]
+   }
+  },
+  {
    "id": 778,
    "achievement": {
     "key": {
@@ -1482,8 +1589,8 @@
      },
      {
       "id": 123715,
-      "amount": 0,
-      "is_completed": false
+      "amount": 1,
+      "is_completed": true
      },
      {
       "id": 123716,
@@ -1517,8 +1624,8 @@
      },
      {
       "id": 123722,
-      "amount": 0,
-      "is_completed": false
+      "amount": 1,
+      "is_completed": true
      },
      {
       "id": 123723,
@@ -1527,8 +1634,8 @@
      },
      {
       "id": 123724,
-      "amount": 0,
-      "is_completed": false
+      "amount": 1,
+      "is_completed": true
      },
      {
       "id": 123725,
@@ -1557,8 +1664,8 @@
      },
      {
       "id": 123730,
-      "amount": 0,
-      "is_completed": false
+      "amount": 1,
+      "is_completed": true
      },
      {
       "id": 123731,
@@ -1594,6 +1701,77 @@
       "id": 123737,
       "amount": 0,
       "is_completed": false
+     }
+    ]
+   }
+  },
+  {
+   "id": 782,
+   "achievement": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/achievement/782?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Explore Swamp of Sorrows",
+    "id": 782
+   },
+   "criteria": {
+    "id": 123738,
+    "is_completed": false,
+    "child_criteria": [
+     {
+      "id": 123739,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123740,
+      "amount": 1,
+      "is_completed": true
+     },
+     {
+      "id": 123741,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123742,
+      "amount": 1,
+      "is_completed": true
+     },
+     {
+      "id": 123743,
+      "amount": 1,
+      "is_completed": true
+     },
+     {
+      "id": 123744,
+      "amount": 1,
+      "is_completed": true
+     },
+     {
+      "id": 123745,
+      "amount": 1,
+      "is_completed": true
+     },
+     {
+      "id": 123746,
+      "amount": 1,
+      "is_completed": true
+     },
+     {
+      "id": 123747,
+      "amount": 1,
+      "is_completed": true
+     },
+     {
+      "id": 123748,
+      "amount": 0,
+      "is_completed": false
+     },
+     {
+      "id": 123749,
+      "amount": 1,
+      "is_completed": true
      }
     ]
    }

@@ -23,8 +23,8 @@
     "id": 47
    },
    "standing": {
-    "raw": 15425,
-    "value": 6425,
+    "raw": 15593,
+    "value": 6593,
     "max": 12000,
     "tier": 5,
     "name": "Honored"
@@ -39,8 +39,8 @@
     "id": 577
    },
    "standing": {
-    "raw": 1207,
-    "value": 1207,
+    "raw": 1307,
+    "value": 1307,
     "max": 3000,
     "tier": 3,
     "name": "Neutral"
@@ -71,8 +71,8 @@
     "id": 87
    },
    "standing": {
-    "raw": -10000,
-    "value": 32000,
+    "raw": -11000,
+    "value": 31000,
     "max": 36000,
     "tier": 0,
     "name": "Hated"
@@ -87,8 +87,8 @@
     "id": 470
    },
    "standing": {
-    "raw": 1445,
-    "value": 1445,
+    "raw": 1545,
+    "value": 1545,
     "max": 3000,
     "tier": 3,
     "name": "Neutral"
@@ -103,8 +103,8 @@
     "id": 69
    },
    "standing": {
-    "raw": 11815,
-    "value": 2815,
+    "raw": 11983,
+    "value": 2983,
     "max": 12000,
     "tier": 5,
     "name": "Honored"
@@ -119,8 +119,8 @@
     "id": 72
    },
    "standing": {
-    "raw": 15846,
-    "value": 6846,
+    "raw": 16371,
+    "value": 7371,
     "max": 12000,
     "tier": 5,
     "name": "Honored"
@@ -135,8 +135,8 @@
     "id": 21
    },
    "standing": {
-    "raw": 1677,
-    "value": 1677,
+    "raw": 1877,
+    "value": 1877,
     "max": 3000,
     "tier": 3,
     "name": "Neutral"
@@ -151,8 +151,8 @@
     "id": 54
    },
    "standing": {
-    "raw": 14338,
-    "value": 5338,
+    "raw": 14507,
+    "value": 5507,
     "max": 12000,
     "tier": 5,
     "name": "Honored"
@@ -199,8 +199,8 @@
     "id": 369
    },
    "standing": {
-    "raw": 1307,
-    "value": 1307,
+    "raw": 1407,
+    "value": 1407,
     "max": 3000,
     "tier": 3,
     "name": "Neutral"
@@ -220,6 +220,22 @@
     "max": 36000,
     "tier": 0,
     "name": "Hated"
+   }
+  },
+  {
+   "faction": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/reputation-faction/2826?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Brotherhood of the Horse",
+    "id": 2826
+   },
+   "standing": {
+    "raw": 2916,
+    "value": 2916,
+    "max": 3000,
+    "tier": 3,
+    "name": "Neutral"
    }
   },
   {
@@ -247,8 +263,8 @@
     "id": 2827
    },
    "standing": {
-    "raw": 1207,
-    "value": 1207,
+    "raw": 1307,
+    "value": 1307,
     "max": 3000,
     "tier": 3,
     "name": "Neutral"

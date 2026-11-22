@@ -16,6 +16,13 @@
  "in_progress": [
   {
    "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/95912?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "WANTED: Blademaster Kaijo",
+   "id": 95912
+  },
+  {
+   "key": {
     "href": "https://us.api.blizzard.com/data/wow/quest/1187?namespace=static-1.60.1_70399-forever-us"
    },
    "name": "Razzeric's Tweaking",
@@ -30,6 +37,20 @@
   },
   {
    "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/94928?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "A Few Furs for Friz",
+   "id": 94928
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/1448?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "In Search of The Temple",
+   "id": 1448
+  },
+  {
+   "key": {
     "href": "https://us.api.blizzard.com/data/wow/quest/340?namespace=static-1.60.1_70399-forever-us"
    },
    "name": "Chapter II",
@@ -37,31 +58,10 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/7905?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/193?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "The Darkmoon Faire",
-   "id": 7905
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/577?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "Some Assembly Required",
-   "id": 577
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/97048?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "Returning to Port",
-   "id": 97048
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/98310?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "Gleaning Our Future",
-   "id": 98310
+   "name": "Panther Mastery",
+   "id": 193
   },
   {
    "key": {
@@ -72,6 +72,13 @@
   },
   {
    "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/95426?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Rog'mar Supplies",
+   "id": 95426
+  },
+  {
+   "key": {
     "href": "https://us.api.blizzard.com/data/wow/quest/342?namespace=static-1.60.1_70399-forever-us"
    },
    "name": "Chapter IV",
@@ -79,10 +86,17 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/94213?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/196?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Craftsman's Writ: Lesser Mana Potion",
-   "id": 94213
+   "name": "Raptor Mastery",
+   "id": 196
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/1364?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Mazen's Behest",
+   "id": 1364
   },
   {
    "key": {
@@ -100,10 +114,66 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/195?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/95147?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Raptor Mastery",
-   "id": 195
+   "name": "The Lost Scout",
+   "id": 95147
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/95913?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Fit for a Princess",
+   "id": 95913
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/94843?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "From Seed to Sprout",
+   "id": 94843
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/96125?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "In Need of Relief",
+   "id": 96125
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/602?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Magical Analysis",
+   "id": 602
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/94907?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "A Small Favor",
+   "id": 94907
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/94678?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Gnoll Infestation",
+   "id": 94678
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/94887?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Saving Marshal Ryan",
+   "id": 94887
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/94931?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Stolen Saws",
+   "id": 94931
   },
   {
    "key": {
@@ -114,24 +184,38 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/97328?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/95991?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Anything of Value",
-   "id": 97328
+   "name": "WANTED: Ghostmaw",
+   "id": 95991
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/601?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/97332?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Water Elementals",
-   "id": 601
+   "name": "Twice Misplaced Trust",
+   "id": 97332
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/188?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/94679?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Tiger Mastery",
-   "id": 188
+   "name": "Snargl's Snout",
+   "id": 94679
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/202?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Colonel Kurzen",
+   "id": 202
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/96009?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "High Stakes",
+   "id": 96009
   },
   {
    "key": {
@@ -142,17 +226,31 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/192?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/205?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Panther Mastery",
-   "id": 192
+   "name": "Troll Witchery",
+   "id": 205
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/574?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/96084?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Special Forces",
-   "id": 574
+   "name": "Something's in the Water",
+   "id": 96084
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/95064?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Preventative Measures",
+   "id": 95064
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/1260?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Morgan Stern",
+   "id": 1260
   },
   {
    "key": {
@@ -163,10 +261,10 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/207?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/94886?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Kurzen's Mystery",
-   "id": 207
+   "name": "The Western Front",
+   "id": 94886
   },
   {
    "key": {

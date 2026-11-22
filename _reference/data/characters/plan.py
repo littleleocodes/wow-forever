@@ -37,6 +37,7 @@ import rxp_guide as RXG  # noqa: E402
 import detours as DT  # noqa: E402
 import legacy as LEG  # noqa: E402
 import bags as BG  # noqa: E402
+import own_keys as OWNK  # noqa: E402
 
 UPGRADE = 0.005        # an upgrade worth less than 0.5% of the time per kill is not listed
 MIN_CHANCE = 0.05      # a dungeon drop under 5% is not worth planning around
@@ -1988,6 +1989,8 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
         elif rtxt:   # (the audit session, 2026-11-20: when the line is suppressed, one sentence says so)
             o += [rtxt, ""]
     o += [f"- {x}" for x in cfg.get("talent_notes", [])] + ([""] if cfg.get("talent_notes") else [])
+    worn_names = {s: (eq.get(s) or {}).get("name") for s in ("trinket1", "trinket2")}   # (the trinket keys are slot macros)
+    o += OWNK.readme(cfg, lv, worn_names)   # the character's own key layout (2026-11-22, Arcea: questing and PvP in one), else nothing
     docs = [snap["achievements"]] if snap.get("achievements") else []
     docs += [json.loads(f.read_text(encoding="utf-8")) for f in sorted((ROOT / "_characters").glob("*/armory/achievements.json"))
              if f.parent.parent != d]   # the account's other characters (achievements come per character)
@@ -2004,7 +2007,7 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
                             "respec_value": LAST_RESPEC.get("r"),
                              "raced": __import__("next_talents").note(LAST_TALENT_RACE["race"]) if LAST_TALENT_RACE.get("race") else None,
                              "link": build_at(cfg["class"], twant)[1] if respec else None},
-                "keys_extra": (chosen(cfg) or {}).get("keys") or []})
+                "keys_extra": (chosen(cfg) or {}).get("keys") or [], "worn_names": worn_names})
     o += change_lines(d, events, lv)
     # now: the upgrades to go after at this level or within LOOKAHEAD levels, by what you do for them
     wl = at(lv)
@@ -2352,6 +2355,7 @@ def needed_at(cfg, L):
                 x = guide_of(cfg, lv)
                 always = bold({k: x.get(k) for k in ("intro", "between", "other")}) | ESSENTIALS.get(cfg["class"], set())
                 always |= {k["spell"] for k in (chosen(cfg) or {}).get("keys") or []}   # a chosen path's own keys (Ice Block for PvP)
+                always |= OWNK.spells(cfg)   # the character's own key layout (2026-11-22)
                 spans = []
                 stages = sorted(x.get("stages") or [], key=lambda s: s["from"])
                 for i, st in enumerate(stages):
@@ -2386,7 +2390,7 @@ def needed_spells(cfg):
         specs = {cfg["spec"]} | {s for _, _, s in (chosen(cfg) or {}).get("rotations") or []}   # (every guide a chosen path plays)
         x = [x for x in g["guides"] if x["spec"] in specs]
     return (set(re.findall(r"\*\*([^*]+)\*\*", json.dumps(x))) | ESSENTIALS.get(cfg["class"], set())
-            | {k["spell"] for k in (chosen(cfg) or {}).get("keys") or []})
+            | {k["spell"] for k in (chosen(cfg) or {}).get("keys") or []} | OWNK.spells(cfg))
 
 
 def loot_value(item, quality, klass, sell):
