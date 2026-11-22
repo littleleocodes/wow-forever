@@ -2,8 +2,6 @@
 
 [Warrior](../README.md) > [Raid (group)](README.md) > Protection
 
-> **Being checked:** The tank lane re-tunes, checks and races the tanks after the audit's D12 (2026-11-20). The builds and numbers on this page may change when it is done.
-
 **[Protection — Raid tank](../research/raid/builds/protection-ml-tank.md)** (17/3/31) — [open the talent tree](https://talentsforever.com/warrior/60/35300103002-03-050530020330001351-12)
 
 > 🔬 Derived build: found by this project's deep search over every legal build of the spec in the community's raid simulator, on tank value (threat and damage taken), then raced against the spec's builds. A model of the beta, to check at launch.
@@ -16,19 +14,20 @@
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Shield Block**; no global cooldown, so press it alongside the others
-2. **Revenge** (rank 5) after you block, dodge or parry
-3. **Bloodrage** when you have less than 90 rage; no global cooldown, so press it alongside the others
-4. **Shield Slam**
-5. **Sunder Armor**: stack it to 5 on the target
-6. **Heroic Strike** (rank 8) when you have 34+ rage; no global cooldown, so press it alongside the others
-7. **Rend**: keep it on the target
+1. **Heroic Strike** when you have 40+ rage; no global cooldown, so press it alongside the others
+2. **Shield Block**; no global cooldown, so press it alongside the others
+3. **Revenge** after you block, dodge or parry
+4. **Bloodrage** when you have less than 90 rage; no global cooldown, so press it alongside the others
+5. **Shield Slam**
+6. **Sunder Armor**: stack it to 5 on the target
+7. **Heroic Strike** when you have 34+ rage; no global cooldown, so press it alongside the others
 8. **Sunder Armor**
 
 **Sunder Armor** is your filler: cast it whenever nothing above is ready.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
+- **Rend**: part of the rotation (about 10 times a fight)
 - **Shield Wall**: when a hit could kill you: much less damage taken for a few seconds, on a long cooldown
 - Use your trinkets and a potion together with your big cooldowns.
 
@@ -36,16 +35,16 @@
 
 ## Why this rotation
 
-Protection tanks in **Defensive Stance** with a shield: **Shield Block** every time it is ready, **Revenge** whenever it lights up, **Shield Slam** on cooldown, **Sunder Armor** in the gaps and **Heroic Strike** whenever 34 rage is spare. **Thunder Clap** and **Demoralizing Shout** are not on the list, and **Shield Wall** is yours to time.
+Protection tanks in **Defensive Stance** with a shield: **Shield Block** every time it is ready, **Revenge** right after it whenever it lights up, **Shield Slam** on cooldown, **Sunder Armor** in the gaps and **Heroic Strike** queued with the rage left over: at 40 rage, or at 34 when **Shield Block**, **Revenge** and **Shield Slam** are not ready. **Thunder Clap** and **Demoralizing Shout** are not on the list, and **Shield Wall** is yours to time.
 
 **Why it works**
 
-- **Shield Block** (10 rage, 5-second cooldown) leads the list: 75% more block chance for 7 seconds or 2 blocks, and each block gives 5 rage with **Shield Specialization** and opens **Revenge**. The simulator presses it about 35 times a fight; adding it measured 8.4% more tank value, and pressing it without waiting for 40 rage 2.2% more.
-- **Revenge** is your first attack: 5 rage (2 with **Focused Rage**) for high threat, usable only for 5 seconds after you block, dodge or parry, so a missed window is lost. It is two fifths of your threat in the simulator, which measured it slightly better above **Shield Slam**.
+- **Shield Block** (10 rage, 5-second cooldown) comes first among your presses: 75% more block chance for 7 seconds or 2 blocks, and each block gives 5 rage with **Shield Specialization** and opens **Revenge**. The simulator presses it about 35 times a fight; adding it measured 8.4% more tank value, and pressing it without waiting for 40 rage 2.2% more.
+- **Revenge** is your first attack: 5 rage (2 with **Focused Rage**) for high threat, usable only for 5 seconds after you block, dodge or parry, so a missed window is lost. It is over a third of your threat in the simulator, which measured it better right after **Shield Block** and above **Shield Slam**.
 - **Shield Slam** (20 rage, 17 with **Focused Rage**, 6-second cooldown) is your hardest hit, made stronger by your block value, and causes very high threat; the simulator casts it about 26 times a fight, almost every time it is ready.
-- **Heroic Strike** is about a fifth of your threat in the simulator. It goes on your next swing, off the global cooldown, so you can queue it on top of everything else; waiting for 34 rage keeps enough for **Shield Slam** and **Revenge**.
-- **Sunder Armor** (stacked to 5, then as the filler) takes the remaining global cooldowns for 8% of your threat, and **Rend** (kept on the boss) adds a little, worth 0.5% of tank value in the simulator. Use **Bloodrage** whenever you are under 90 rage, about 3 times a fight.
-- **Shield Wall** (60% less damage for 12 seconds, 15-minute cooldown) is at the top of the simulator's full list only because its boss hits the same all fight, so any use saves the same damage there (3.2% of tank value). In a real fight, save it for the dangerous moment.
+- **Heroic Strike** is about a fifth of your threat in the simulator. It goes on your next swing, off the global cooldown, so you can queue it on top of everything else; queueing it at 40 rage, or at 34 only while **Shield Block**, **Revenge** and **Shield Slam** are not ready, keeps enough rage for them. The re-tune of 2026-11-21 added the 40-rage rule above the others, and the re-tune on trainer ranks of 2026-11-22 kept it (no change measured ahead of it); once the boss is below 20% of its health, only the 34-rage one is left.
+- **Sunder Armor** (stacked to 5, then as the filler) takes the remaining global cooldowns for 7% of your threat, and **Rend** (kept on the boss) adds a little, worth 0.5% of tank value in the simulator. Use **Bloodrage** whenever you are under 90 rage, about 3 times a fight.
+- **Shield Wall** (60% less damage for 12 seconds, 15-minute cooldown) is near the top of the simulator's full list only because its boss hits the same all fight, so any use saves the same damage there (3.2% of tank value). In a real fight, save it for the dangerous moment.
 
 **Caveats**
 
@@ -60,8 +59,6 @@ Protection tanks in **Defensive Stance** with a shield: **Shield Block** every t
 - Press **Shield Wall** for the worst moments: an enrage, a healer down, your health low.
 - Adds: **Thunder Clap** hits up to 4 targets, **Challenging Shout** (10-minute cooldown) turns everything within 10 yards onto you for 6 seconds, and **Taunt** (8-second cooldown in Forever) takes back a single target.
 
-*This guide was written for the rotation of 2026-11-09; the list above was re-tuned since, so follow the list where the two differ.*
-
 ## Talents
 
 | Tree | Points | Talents (ranks) |
@@ -72,9 +69,9 @@ Protection tanks in **Defensive Stance** with a shield: **Shield Block** every t
 
 ## The numbers
 
-Tank value 1.010 (threat and damage taken under a boss, relative to our reference tank build).
+Tank value 1.012 (threat and damage taken under a boss, relative to our reference tank build).
 
-**How this pick was checked:** a full search on 2026-10-28 (the talent search that found this build).
+**How this pick was checked:** a short check on 2026-11-22 (every one-move and chain-move neighbour raced in a full raid, two rounds; nothing better). A full search, talents and rotation in turns until stable, follows in the optimality pass.
 
 **The gear** (average item level: Pre-BiS 62.2; Raid BiS 61.3; chosen in the community simulator on tank value, threat and damage taken, for this build in a full raid. The simulator's item database lists base armor for only about one armor item in five; this project's patch fills in the rest from Classic's values (our assumption: Forever may have changed some); each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -106,5 +103,7 @@ Tank value 1.010 (threat and damage taken under a boss, relative to our referenc
 - [Protection — Raid Tank](../research/raid/builds/prot-raid-tank.md) (12/5/34) — [open the talent tree](https://talentsforever.com/warrior/60/3500301-05-150533020311001351-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-21 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 2e6e77d (client 1.60.1.70938)). Simulations, not in-game measurements. Spell ranks: trainer ranks only. The class books' ranks (Grimoire of Shadow Bolt X, Tome of Frostbolt XI and the like) are not in Forever on the evidence there is (2026-11-20): in Classic every one drops in the Ruins of Ahn'Qiraj, which Forever's roadmap does not have; Wowhead's Forever pages list no source for them; the simulator's own authors leave them off by default. Checked again when the raids of 2026-12-09 open. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-22 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938; raid numbers: the official wowsims/forever simulator at 2e6e77d (client 1.60.1.70938)). Simulations, not in-game measurements. Spell ranks: trainer ranks only. The class books' ranks (Grimoire of Shadow Bolt X, Tome of Frostbolt XI and the like) are not in Forever on the evidence there is (2026-11-20): in Classic every one drops in the Ruins of Ahn'Qiraj, which Forever's roadmap does not have; Wowhead's Forever pages list no source for them; the simulator's own authors leave them off by default. Checked again when the raids of 2026-12-09 open. Do not hand-edit.*
+
+*The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows. Windfury Totem's buff changed in client 1.60.1.71037 and the raid simulator used here predates it: full-raid numbers of melee builds assume the old totem.*
 

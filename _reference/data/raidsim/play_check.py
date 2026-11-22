@@ -210,6 +210,75 @@ def own_debuff(cls, entry):
     return None
 
 
+COOLDOWN_TXT = re.compile(r"([\d.]+) (sec|min) cooldown")
+CD_TALENT = re.compile(r"[Rr]educes the cooldown (?:of|on) (?:your )?(.+?)(?: abilit(?:y|ies)| spells?| talents?)? by ([\d.]+) (sec|min)")
+
+
+def spell_cooldowns(cls):
+    """{spell id: (name, cooldown seconds)} from the beta spellbook's rank texts (forever-spells/<class>.json)."""
+    out = {}
+    sp = json.load(open(DATA / "forever-spells" / f"{cls}.json", encoding="utf-8"))
+    for tab in sp.get("tabs", []):
+        for s in tab.get("spells", []):
+            for r in s.get("ranks", []):
+                m = COOLDOWN_TXT.search(r.get("cooldown") or "")
+                if r.get("id") and m:
+                    out[int(r["id"])] = (s["name"], float(m.group(1)) * (60 if m.group(2) == "min" else 1))
+    return out
+
+
+def cooldown_talents(cls):
+    """{talent: {spell name or family word: {rank: seconds off}}} from the talents' tooltips ("Reduces the cooldown of your Holy Strike ability
+    by 4 sec": Shieldsworn; "Divine Shield, Divine Protection, and Templar's Bulwark": Sacred Duty; "Shock spells": Reverberation)."""
+    out = {}
+    t = json.load(open(DATA / "forever-talents" / f"{cls}.json", encoding="utf-8"))
+    for tree in (t if isinstance(t, list) else t.get("trees")):
+        for x in tree["talents"]:
+            per = {}
+            for i, txt in enumerate(x.get("ranks") or []):
+                for m in CD_TALENT.finditer(txt):
+                    secs = float(m.group(2)) * (60 if m.group(3) == "min" else 1)
+                    for target in re.split(r",\s*(?:and\s+)?|\s+and\s+", m.group(1)):
+                        if target.strip():
+                            per.setdefault(target.strip(), {})[i + 1] = secs
+            if per:
+                out[x["name"]] = per
+    return out
+
+
+def cooldown_bound(cls, have, casts, fight):
+    """b4 (2026-11-22, the audit session): each spell's casts a fight against what its cooldown allows (one at the pull and one each
+    cooldown after), with the build's cooldown talents read from their tooltips. More casts than that is "explain", not a fail: a reset, a
+    proc, or a talent whose tooltip words it another way (the paladin tank's 29 Holy Strikes against a 10-second cooldown had read as a fault
+    until Shieldsworn's 4 seconds were found). Returns (rows, explain lines)."""
+    cds, tal = spell_cooldowns(cls), cooldown_talents(cls)
+    rows, explain = [], []
+    for sid, n in sorted(casts.items(), key=lambda kv: -kv[1]):
+        if not isinstance(sid, int) or sid not in cds or n < 1:
+            continue
+        name, base = cds[sid]
+        if base < 2:
+            continue
+        off, by = 0.0, []
+        for t, per in tal.items():
+            rk = have.get(t, 0)
+            for target, ranks in per.items():
+                if rk and (name == target or name.endswith(" " + target)) and ranks.get(rk):
+                    off += ranks[rk]
+                    by.append(f"{t} -{ranks[rk]:g} s")
+        eff = max(base - off, 1.0)
+        most = int(fight // eff) + 1
+        row = {"spell": name, "id": sid, "casts": round(n, 2), "cooldown": base, "effective": eff, "at_most": most}
+        if by:
+            row["by"] = by
+        rows.append(row)
+        if n > most + 0.05:
+            explain.append(f"b4: {name} ({sid}) cast {n:.1f} times a fight against its {base:g}-second cooldown"
+                           + (f" ({eff:g} s with {', '.join(by)})" if by else "") + f": at most {most} in a {fight:g} s fight; a reset, a "
+                           "proc or a talent whose tooltip words it another way")
+    return rows, explain
+
+
 def flat(al):
     return {n: r for items in (al or {}).values() for n, r in items if r}
 
@@ -629,6 +698,7 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
         srt = lambda d: {n: round(v, 2) for n, v in sorted(d.items(), key=lambda kv: -kv[1])}   # noqa: E731
         f["casts"], f["procs_and_triggered"], f["pet_casts"] = srt(pressed), srt(procs), srt(pet)
         f["casts_by_id"] = {str(k): round(v, 2) for k, v in sorted(raw_cs[b].items(), key=lambda kv: -kv[1]) if v}
+        f["cooldown_bound"], f["explain"] = cooldown_bound(cls, have, raw_cs[b], R.FIGHT)   # b4: "explain", never a fail
         res["builds"][b] = f
         # c. talents worth nothing
         recorded = filler_records(cls, b, have)
@@ -726,8 +796,8 @@ def main():
             print(f"== {cls} {ename} ({res['rotation']}): " + (f"FAIL in {', '.join(res['fail'])}" if res["fail"] else "pass"), flush=True)
             for b, f in res["builds"].items():
                 print(f"   {b} {f['dps']:.2f}: " + ("; ".join(f["fail"]) if f["fail"] else "pass"), flush=True)
-                for k in ("never_cast", "abilities", "zero_talents"):
-                    for x in f[k]:
+                for k in ("never_cast", "abilities", "zero_talents", "explain"):
+                    for x in f.get(k) or []:
                         print(f"      {k}: {x}", flush=True)
         if a.write and done:
             rec[cls] = merged

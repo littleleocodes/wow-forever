@@ -20,6 +20,58 @@
  "priorityList": [
   {
    "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpEq",
+         "lhs": {
+          "numberTargets": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "1"
+          }
+         }
+        }
+       },
+       {
+        "not": {
+         "val": {
+          "isExecutePhase": {
+           "threshold": "E20"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentRage": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "40"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 11567,
+      "tag": 1
+     }
+    }
+   },
+   "notes": "apl_opt 2026-11-21: changed or added by the rotation search (see prot-tank-rotation-search.json)"
+  },
+  {
+   "action": {
     "castSpell": {
      "spellId": {
       "spellId": 2565
@@ -27,6 +79,17 @@
     }
    },
    "notes": "apl_opt 2026-10-28: changed or added by the rotation search (see prot-tank-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 11601,
+      "rank": 5
+     }
+    }
+   },
+   "notes": "apl_opt 2026-11-21: changed or added by the rotation search (see prot-tank-rotation-search.json)"
   },
   {
    "action": {
@@ -48,16 +111,6 @@
     "castSpell": {
      "spellId": {
       "spellId": 71
-     }
-    }
-   }
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 11601,
-      "rank": 5
      }
     }
    }

@@ -1,0 +1,101 @@
+{
+ "id": "check-prot-tank",
+ "allocation": {
+  "Arms": [
+   [
+    "Improved Heroic Strike",
+    3
+   ],
+   [
+    "Deflection",
+    5
+   ],
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Overpower",
+    1
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Impale",
+    2
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    3
+   ]
+  ],
+  "Protection": [
+   [
+    "Shield Specialization",
+    5
+   ],
+   [
+    "Anticipation",
+    5
+   ],
+   [
+    "Improved Revenge",
+    3
+   ],
+   [
+    "Master of Defense",
+    2
+   ],
+   [
+    "Defiance",
+    3
+   ],
+   [
+    "Improved Sunder Armor",
+    3
+   ],
+   [
+    "Concussion Blow",
+    1
+   ],
+   [
+    "Focused Rage",
+    3
+   ],
+   [
+    "Bastion",
+    5
+   ],
+   [
+    "Shield Slam",
+    1
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-11-22) for prot-tank from protection-ml-tank in the raid setting: 486.5 -> 486.5 DPS on a third seed.",
+ "search": {
+  "start": "protection-ml-tank",
+  "setting": "raid",
+  "kept": [
+   "Shield Slam"
+  ],
+  "moves": [],
+  "dps_start": 486.45028276963086,
+  "dps_end": 486.45028276963086,
+  "gain": 0.0,
+  "tank": true,
+  "date": "2026-11-22",
+  "sim": {
+   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
+   "racials": "off",
+   "pet_normalize": true,
+   "patch_hash": "125d59c4f975f5df",
+   "simulator": "wowsims/forever",
+   "client": "1.60.1.70938"
+  }
+ }
+}

@@ -120,14 +120,14 @@
   },
   "Protection": {
    "raid": {
-    "plan": "Protection tanks in **Defensive Stance** with a shield: **Shield Block** every time it is ready, **Revenge** whenever it lights up, **Shield Slam** on cooldown, **Sunder Armor** in the gaps and **Heroic Strike** whenever 34 rage is spare. **Thunder Clap** and **Demoralizing Shout** are not on the list, and **Shield Wall** is yours to time.",
+    "plan": "Protection tanks in **Defensive Stance** with a shield: **Shield Block** every time it is ready, **Revenge** right after it whenever it lights up, **Shield Slam** on cooldown, **Sunder Armor** in the gaps and **Heroic Strike** queued with the rage left over: at 40 rage, or at 34 when **Shield Block**, **Revenge** and **Shield Slam** are not ready. **Thunder Clap** and **Demoralizing Shout** are not on the list, and **Shield Wall** is yours to time.",
     "why": [
-     "**Shield Block** (10 rage, 5-second cooldown) leads the list: 75% more block chance for 7 seconds or 2 blocks, and each block gives 5 rage with **Shield Specialization** and opens **Revenge**. The simulator presses it about 35 times a fight; adding it measured 8.4% more tank value, and pressing it without waiting for 40 rage 2.2% more.",
-     "**Revenge** is your first attack: 5 rage (2 with **Focused Rage**) for high threat, usable only for 5 seconds after you block, dodge or parry, so a missed window is lost. It is two fifths of your threat in the simulator, which measured it slightly better above **Shield Slam**.",
+     "**Shield Block** (10 rage, 5-second cooldown) comes first among your presses: 75% more block chance for 7 seconds or 2 blocks, and each block gives 5 rage with **Shield Specialization** and opens **Revenge**. The simulator presses it about 35 times a fight; adding it measured 8.4% more tank value, and pressing it without waiting for 40 rage 2.2% more.",
+     "**Revenge** is your first attack: 5 rage (2 with **Focused Rage**) for high threat, usable only for 5 seconds after you block, dodge or parry, so a missed window is lost. It is over a third of your threat in the simulator, which measured it better right after **Shield Block** and above **Shield Slam**.",
      "**Shield Slam** (20 rage, 17 with **Focused Rage**, 6-second cooldown) is your hardest hit, made stronger by your block value, and causes very high threat; the simulator casts it about 26 times a fight, almost every time it is ready.",
-     "**Heroic Strike** is about a fifth of your threat in the simulator. It goes on your next swing, off the global cooldown, so you can queue it on top of everything else; waiting for 34 rage keeps enough for **Shield Slam** and **Revenge**.",
-     "**Sunder Armor** (stacked to 5, then as the filler) takes the remaining global cooldowns for 8% of your threat, and **Rend** (kept on the boss) adds a little, worth 0.5% of tank value in the simulator. Use **Bloodrage** whenever you are under 90 rage, about 3 times a fight.",
-     "**Shield Wall** (60% less damage for 12 seconds, 15-minute cooldown) is at the top of the simulator's full list only because its boss hits the same all fight, so any use saves the same damage there (3.2% of tank value). In a real fight, save it for the dangerous moment."
+     "**Heroic Strike** is about a fifth of your threat in the simulator. It goes on your next swing, off the global cooldown, so you can queue it on top of everything else; queueing it at 40 rage, or at 34 only while **Shield Block**, **Revenge** and **Shield Slam** are not ready, keeps enough rage for them. The re-tune of 2026-11-21 added the 40-rage rule above the others, and the re-tune on trainer ranks of 2026-11-22 kept it (no change measured ahead of it); once the boss is below 20% of its health, only the 34-rage one is left.",
+     "**Sunder Armor** (stacked to 5, then as the filler) takes the remaining global cooldowns for 7% of your threat, and **Rend** (kept on the boss) adds a little, worth 0.5% of tank value in the simulator. Use **Bloodrage** whenever you are under 90 rage, about 3 times a fight.",
+     "**Shield Wall** (60% less damage for 12 seconds, 15-minute cooldown) is near the top of the simulator's full list only because its boss hits the same all fight, so any use saves the same damage there (3.2% of tank value). In a real fight, save it for the dangerous moment."
     ],
     "caveats": [
      "The list has no **Thunder Clap** or **Demoralizing Shout** because the simulator's raid already has those debuffs on the boss (a druid's Demoralizing Roar stands in for the shout), so casting them only cost rage there; dropping **Thunder Clap** measured 0.8% better. In a real raid they are usually yours.",
@@ -141,7 +141,7 @@
      "Adds: **Thunder Clap** hits up to 4 targets, **Challenging Shout** (10-minute cooldown) turns everything within 10 yards onto you for 6 seconds, and **Taunt** (8-second cooldown in Forever) takes back a single target."
     ],
     "rotations": {
-     "prot-tank": "a5f9b9b1dd63"
+     "prot-tank": "cf9561d78081"
     },
     "written": "2026-11-09"
    },

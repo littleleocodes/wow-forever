@@ -1,6 +1,6 @@
 {
  "version": 1,
- "made": "2026-11-22 07:07",
+ "made": "2026-11-22 08:35",
  "status": "complete: two gear points per leveling level (the lab's standard gear and each level's best Forever set), raid, heal and tank values",
  "ratings_per_percent": {
   "hit_rating": 10,
@@ -52375,45 +52375,45 @@
      "Shield Slam": 1
     },
     "unit": "stamina",
-    "source": "raid simulator, protection-ml-tank in prot-tank, 2026-11-19: tank value per point (threat, damage taken, effective health)",
+    "source": "raid simulator, protection-ml-tank in prot-tank, 2026-11-22: tank value per point (threat, damage taken, effective health)",
     "values": {
-     "strength": 0.41,
-     "agility": 0.64114,
+     "strength": 0.41795,
+     "agility": 0.61125,
      "stamina": 1.0,
      "intellect": 0.0,
      "spirit": 0.0,
      "spell_power": 0.0,
-     "attack_power": 0.17693,
-     "hit_rating": 0.00545,
-     "crit_rating": 0.35841,
-     "haste_rating": 0.30364,
-     "expertise_rating": 0.72886,
-     "defense_rating": 0.46068,
-     "block_rating": 0.01159,
-     "block_value": 0.41341,
-     "dodge_rating": 0.33989,
-     "parry_rating": 0.27045,
-     "armor": 0.04625,
+     "attack_power": 0.18057,
+     "hit_rating": 0.00705,
+     "crit_rating": 0.36602,
+     "haste_rating": 0.13341,
+     "expertise_rating": 1.61443,
+     "defense_rating": 0.4858,
+     "block_rating": 0.01977,
+     "block_value": 0.4133,
+     "dodge_rating": 0.35955,
+     "parry_rating": 0.30659,
+     "armor": 0.04614,
      "mp5": 0.0,
-     "mh_weapon_dps": 1.01341,
+     "mh_weapon_dps": 1.02045,
      "spell_damage": 0.0,
      "spell_healing": 0.0
     },
     "errors": {
-     "agility": 0.021743,
-     "armor": 4.4e-05,
-     "attack_power": 0.000191,
-     "block_rating": 0.011662,
-     "block_value": 0.000556,
-     "crit_rating": 0.012542,
-     "defense_rating": 0.026478,
-     "dodge_rating": 0.019747,
-     "expertise_rating": 0.043334,
-     "haste_rating": 0.034527,
-     "hit_rating": 0.000151,
-     "mh_weapon_dps": 0.001431,
-     "parry_rating": 0.015279,
-     "strength": 0.000428
+     "agility": 0.025005,
+     "armor": 4e-05,
+     "attack_power": 0.000227,
+     "block_rating": 0.013683,
+     "block_value": 0.000572,
+     "crit_rating": 0.014858,
+     "defense_rating": 0.030006,
+     "dodge_rating": 0.022336,
+     "expertise_rating": 0.05133,
+     "haste_rating": 0.04087,
+     "hit_rating": 0.000179,
+     "mh_weapon_dps": 0.001698,
+     "parry_rating": 0.017217,
+     "strength": 0.000505
     },
     "errors_note": "one standard error of each value, same unit (raid simulator: tank_weights.py's stat-weights run repeated with its standard errors, raidsim/weight_errors.py, weight-errors.json): each stat's threat and damage-taken errors combined as tank_weights.py combines the weights (0.5 x / TPS, 0.25 x / DTPS, taken as independent; effective health is exact), over Stamina's share. Stamina carries its own error where the simulator weighed it; a stat with no key has none (the warrior's and the druid's Stamina: its share is effective health alone). spell_power: spell damage's and healing's errors together. Sum stats' errors as independent. Over 12 seeds (weight-errors.json study, the paladin) the shares spread 0.9x these errors overall; dodge, parry, block rating and defense about half of them (their threat and damage-taken readings move together), so those are conservative. A gain inside about two errors is a tie",
     "forms": []
@@ -60940,13 +60940,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 0.0,
-     "below": 0.00545,
+     "below": 0.00705,
      "above": 0.0
     },
     "expertise_rating": {
      "cap_pct": 20.5,
      "current_pct": 0.0,
-     "below": 0.72886,
+     "below": 1.61443,
      "above": 0.0
     }
    },
@@ -60973,8 +60973,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 8.2266,
-    "pct": 0.82266
+    "score_delta": 8.05743,
+    "pct": 0.805743
    }
   },
   {
@@ -60991,13 +60991,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 7.0,
-     "below": 0.00545,
+     "below": 0.00705,
      "above": 0.0
     },
     "expertise_rating": {
      "cap_pct": 20.5,
      "current_pct": 0.0,
-     "below": 0.72886,
+     "below": 1.61443,
      "above": 0.0
     }
    },
@@ -61021,8 +61021,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": -1.9455,
-    "pct": -0.19455
+    "score_delta": -1.9295,
+    "pct": -0.19295
    }
   },
   {
@@ -61039,13 +61039,13 @@
     "hit_rating": {
      "cap_pct": 8.0,
      "current_pct": 0.0,
-     "below": 0.00545,
+     "below": 0.00705,
      "above": 0.0
     },
     "expertise_rating": {
      "cap_pct": 20.5,
      "current_pct": 18.5,
-     "below": 0.72886,
+     "below": 1.61443,
      "above": 0.0
     }
    },
@@ -61069,8 +61069,8 @@
    "level": 60,
    "equipped_score": 1000.0,
    "expected": {
-    "score_delta": 12.5772,
-    "pct": 1.25772
+    "score_delta": 30.2886,
+    "pct": 3.02886
    }
   }
  ],
@@ -63840,25 +63840,25 @@
    "level": 60,
    "forms": [],
    "values": {
-    "strength": 0.41,
-    "agility": 0.64114,
+    "strength": 0.41795,
+    "agility": 0.61125,
     "stamina": 1.0,
     "intellect": 0.0,
     "spirit": 0.0,
     "spell_power": 0.0,
-    "attack_power": 0.17693,
-    "hit_rating": 0.00545,
-    "crit_rating": 0.35841,
-    "haste_rating": 0.30364,
-    "expertise_rating": 0.72886,
-    "defense_rating": 0.46068,
-    "block_rating": 0.01159,
-    "block_value": 0.41341,
-    "dodge_rating": 0.33989,
-    "parry_rating": 0.27045,
-    "armor": 0.04625,
+    "attack_power": 0.18057,
+    "hit_rating": 0.00705,
+    "crit_rating": 0.36602,
+    "haste_rating": 0.13341,
+    "expertise_rating": 1.61443,
+    "defense_rating": 0.4858,
+    "block_rating": 0.01977,
+    "block_value": 0.4133,
+    "dodge_rating": 0.35955,
+    "parry_rating": 0.30659,
+    "armor": 0.04614,
     "mp5": 0.0,
-    "mh_weapon_dps": 1.01341,
+    "mh_weapon_dps": 1.02045,
     "spell_damage": 0.0,
     "spell_healing": 0.0
    },
@@ -63902,25 +63902,25 @@
     "Dual Wield Specialization": 5
    },
    "expected": {
-    "strength": 0.41,
-    "agility": 0.64114,
+    "strength": 0.41795,
+    "agility": 0.61125,
     "stamina": 1.0,
     "intellect": 0.0,
     "spirit": 0.0,
     "spell_power": 0.0,
-    "attack_power": 0.17693,
-    "hit_rating": 0.00545,
-    "crit_rating": 0.35841,
-    "haste_rating": 0.30364,
-    "expertise_rating": 0.72886,
-    "defense_rating": 0.46068,
-    "block_rating": 0.01159,
-    "block_value": 0.41341,
-    "dodge_rating": 0.33989,
-    "parry_rating": 0.27045,
-    "armor": 0.04625,
+    "attack_power": 0.18057,
+    "hit_rating": 0.00705,
+    "crit_rating": 0.36602,
+    "haste_rating": 0.13341,
+    "expertise_rating": 1.61443,
+    "defense_rating": 0.4858,
+    "block_rating": 0.01977,
+    "block_value": 0.4133,
+    "dodge_rating": 0.35955,
+    "parry_rating": 0.30659,
+    "armor": 0.04614,
     "mp5": 0.0,
-    "mh_weapon_dps": 1.01341,
+    "mh_weapon_dps": 1.02045,
     "spell_damage": 0.0,
     "spell_healing": 0.0
    },

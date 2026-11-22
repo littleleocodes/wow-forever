@@ -2,8 +2,8 @@
  "raid": {
   "class": "warrior",
   "spec": "prot-tank",
-  "date": "2026-11-08",
-  "commit": "16e85426c",
+  "date": "2026-11-22",
+  "commit": "2e6e77d84",
   "setting": "raid",
   "tank": true,
   "simulator_apl": "_reference/data/raidsim/presets/elliotwood-b7083fa/ui/specs/warrior/protection/apls/protection.apl.json",
@@ -106,41 +106,65 @@
     "gain_seed2": 0.021751720149861598,
     "candidates": 605,
     "pass": 9
+   },
+   {
+    "round": 10,
+    "change": "insert at the top: cast Revenge",
+    "gain_seed1": 0.009992556905781047,
+    "gain_seed2": 0.009863116140030215,
+    "candidates": 717,
+    "pass": 11
+   },
+   {
+    "round": 11,
+    "change": "insert at the top: if (number of targets = 1 and not execute phase (E20) and rage \u2265 40 or time until Bloodthirst is ready \u2265 spellGcdHastedDuration and time until Whirlwind is ready \u2265 spellGcdHastedDuration and rage > 60): cast Heroic Strike",
+    "gain_seed1": 0.0029319659121342934,
+    "gain_seed2": 0.002588010880373748,
+    "candidates": 727,
+    "pass": 11
+   },
+   {
+    "round": 12,
+    "change": "move down below 'cast Shield Block': cast Revenge",
+    "gain_seed1": 0.0019411592037363867,
+    "gain_seed2": 0.00211735792558132,
+    "candidates": 770,
+    "pass": 11
    }
   ],
   "final": {
    "raid": {
     "protection-ml-tank": {
-     "before": 438.0686505592252,
-     "after": 467.73626318330804,
-     "base": 438.0686505592252,
+     "before": 454.63498876484215,
+     "after": 486.45028276963086,
+     "base": 454.63498876484215,
      "before_value": 1.0,
      "after_value": 1.0,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Protection": {
-     "before": 442.16224039494824,
-     "after": 460.94054548295867,
-     "base": 442.16224039494824,
+     "before": 463.8318563554086,
+     "after": 485.23263151601327,
+     "base": 463.8318563554086,
      "before_value": 1.0,
      "after_value": 1.0,
      "oom_before": 0,
      "oom_after": 0
     },
     "prot-raid-tank": {
-     "before": 434.2022318744746,
-     "after": 446.241986636493,
-     "base": 434.2022318744746,
+     "before": 451.1528203037733,
+     "after": 467.87094528444186,
+     "base": 451.1528203037733,
      "before_value": 1.0,
      "after_value": 1.0,
      "oom_before": 0,
      "oom_after": 0
     },
     "opt-prot-tank-raid-tank": {
-     "before": 425.4308382511642,
-     "after": 449.2739257157568,
-     "base": 425.4308382511642,
+     "before": 443.83026145604987,
+     "after": 469.88497282743333,
+     "base": 443.83026145604987,
      "before_value": 1.0,
      "after_value": 1.0,
      "oom_before": 0,
@@ -156,13 +180,13 @@
     "Shield Slam"
    ],
    "rejected": {
-    "structure": 2,
+    "structure": 12,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-09-28",
-  "passes": 10
+  "passes": 12
  }
 }
